@@ -1,61 +1,58 @@
+
+<template>
+  <div>
+    <div>
+      <Input v-model="search" label="Search" />
+    </div>
+    <div class="flex flex-wrap gap-1 overflow-y-auto text-center">
+      <div
+        v-for="{item: world} in worldsFiltered"
+        :key="world.rating + (world.worldName || 'none')"
+        class="p-2 rounded cursor-pointer flex-grow text-gray-100 text-shadow"
+        border="2 gray-400 hover:orange-600"
+        :class="WORLD_COLORS[world.rating - 1]"
+      >
+        <h3>{{ world.worldName }}</h3>
+        <div>Rating: {{ world.rating }} Budget: {{ WORLD_RATINGS[world.rating - 1].budget }}</div>
+        <div v-if="world.condition">
+          {{ world.condition }}
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
 <script lang="ts">
+import Fuse from 'fuse.js'
+import { WORLD_COLORS, WORLD_RATINGS } from '~/data/constatnts'
+import worlds from '~/data/worlds.json'
+
 export default defineComponent({
   setup() {
-    const name = ref('')
-
     const router = useRouter()
-    const go = () => {
-      if (name.value)
-        router.push(`/hi/${encodeURIComponent(name.value)}`)
+    const search = ref('')
+
+    const options = {
+      findAllMatches: true,
+      threshold: 0.1,
+      keys: ['worldName'],
     }
+
+    const fuse = new Fuse(worlds, options)
+
+    const worldsFiltered = computed(() => {
+      return fuse.search(search.value)
+    })
+
+    const worldsSorted = worlds.sort((a, b) => a.rating - b.rating)
     return {
-      name,
       router,
-      go,
+      search,
+      worldsSorted,
+      worldsFiltered,
+      WORLD_COLORS,
+      WORLD_RATINGS,
     }
   },
 })
 </script>
-
-<template>
-  <div>
-    <p class="text-4xl">
-      <carbon-campsite class="inline-block" />
-    </p>
-    <p>
-      <a rel="noreferrer" href="https://github.com/antfu/vitesse-lite" target="_blank">
-        Vitesse Lite
-      </a>
-    </p>
-    <p>
-      <em class="text-sm opacity-75">Opinionated Vite Starter Template</em>
-    </p>
-
-    <div class="py-4" />
-
-    <input
-      id="input"
-      v-model="name"
-      placeholder="What's your name?"
-      type="text"
-      autocomplete="false"
-      p="x-4 y-2"
-      w="250px"
-      text="center"
-      bg="transparent"
-      border="~ rounded gray-200 dark:gray-700"
-      outline="none active:none"
-      @keydown.enter="go"
-    >
-
-    <div>
-      <button
-        class="m-3 text-sm btn"
-        :disabled="!name"
-        @click="go"
-      >
-        Go
-      </button>
-    </div>
-  </div>
-</template>

@@ -1,6 +1,10 @@
 <template>
-  <main class="px-4 py-10 text-center text-gray-700 dark:text-gray-200">
-    <router-view />
+  <main
+    class="inset-0 absolute flex flex-col"
+    text="gray-700 dark:gray-200"
+  >
+    <Navigation />
+    <router-view class="flex-grow min-h-0" />
     <Footer />
   </main>
 </template>

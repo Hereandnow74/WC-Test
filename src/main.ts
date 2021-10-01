@@ -9,6 +9,7 @@ import 'virtual:windi-base.css'
 import 'virtual:windi-components.css'
 import './styles/main.css'
 import 'virtual:windi-utilities.css'
+import 'tippy.js/dist/tippy.css'
 
 const app = createApp(App)
 const router = createRouter({

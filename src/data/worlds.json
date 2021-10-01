@@ -1,0 +1,1198 @@
+[
+  {
+    "rating": 4,
+    "worldName": "Zero no Tsukaima",
+    "condition": [
+      {
+        "name": "standard",
+        "rating": 4
+      },
+      {
+        "name": "Windstone Crisis",
+        "rating": 7
+      }
+    ]
+  },
+  {
+    "rating": 6,
+    "worldName": "Xenoblade Chronicles 2",
+    "condition": "Main story"
+  },
+  {
+    "rating": 8,
+    "worldName": "Worm"
+  },
+  {
+    "rating": 7,
+    "worldName": "World of Darkness",
+    "condition": [
+      {
+        "name": "New",
+        "rating": 7
+      },
+      {
+        "name": "Old",
+        "rating": 9
+      }
+    ]
+  },
+  {
+    "rating": 9,
+    "worldName": "Warhammer Fantasy",
+    "condition": [
+      {
+        "name": "Mousillon, Chaos Wastes, etc.",
+        "rating": 8
+      },
+      {
+        "name": "No active crisis",
+        "rating": 7
+      },
+      {
+        "name": "Standard",
+        "rating": 9
+      }
+    ]
+  },
+  {
+    "rating": 10,
+    "worldName": "Warhammer 40K"
+  },
+  {
+    "rating": 8,
+    "worldName": "Warframe"
+  },
+  {
+    "rating": 7,
+    "worldName": "Warcraft",
+    "condition": "No active crisis"
+  },
+  {
+    "rating": 7,
+    "worldName": "Touhou"
+  },
+  {
+    "rating": 7,
+    "worldName": "Torchlight"
+  },
+  {
+    "rating": 5,
+    "worldName": "Tolkien's Legendarium",
+    "condition": [
+      {
+        "name": "Third Age 3018 (War of the Ring)",
+        "rating": 5
+      },
+      {
+        "name": "Year of Trees 1497 (War of Jewels)",
+        "rating": 8
+      },
+      {
+        "name": "First Age 500 (Gondolin)",
+        "rating": 9
+      }
+    ]
+  },
+  {
+    "rating": 1,
+    "worldName": "To Love-Ru",
+    "condition": [
+      {
+        "name": "Earth",
+        "rating": 1
+      },
+      {
+        "name": "Space",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "rating": 6,
+    "worldName": "To Aru verse"
+  },
+  {
+    "rating": 7,
+    "worldName": "Titan Quest"
+  },
+  {
+    "rating": 5,
+    "worldName": "The Witcher",
+    "condition": [
+      {
+        "name": "Toussaint, peaceful regions",
+        "rating": 5
+      },
+      {
+        "name": "prewar Northern Kingdoms, TW3",
+        "rating": 6
+      }
+    ]
+  },
+  {
+    "rating": 5,
+    "worldName": "The Elder Scrolls",
+    "condition": [
+      {
+        "name": "No active crisis",
+        "rating": 5
+      },
+      {
+        "name": "Events of Skyrim",
+        "rating": 8
+      },
+      {
+        "name": "Oblivion Crisis",
+        "rating": 8
+      },
+      {
+        "name": "C0DA",
+        "rating": 10
+      }
+    ]
+  },
+  {
+    "rating": 8,
+    "worldName": "Symphogear",
+    "condition": [
+      {
+        "name": "Anime",
+        "rating": 8
+      },
+      {
+        "name": "XDU",
+        "rating": 10
+      }
+    ]
+  },
+  {
+    "rating": 3,
+    "worldName": "Stargate",
+    "condition": "SG1/SGA modern Earth"
+  },
+  {
+    "rating": 4,
+    "worldName": "Starcraft",
+    "condition": [
+      {
+        "name": "pre-SC1, post-HotS",
+        "rating": 4
+      },
+      {
+        "name": "During SC1, SC2",
+        "rating": 6
+      }
+    ]
+  },
+  {
+    "rating": 4,
+    "worldName": "Star Wars",
+    "condition": [
+      {
+        "name": "Empire Era, OT",
+        "rating": 4
+      },
+      {
+        "name": "Old Republic era, Prequels era",
+        "rating": 5
+      },
+      {
+        "name": "Legends post-OT",
+        "rating": 6
+      }
+    ]
+  },
+  {
+    "rating": 2,
+    "worldName": "Star Trek",
+    "condition": [
+      {
+        "name": "Federation during peacetime",
+        "rating": 2
+      },
+      {
+        "name": "Online",
+        "rating": 7
+      }
+    ]
+  },
+  {
+    "rating": 9,
+    "worldName": "Soulsborne",
+    "condition": "Demon's Souls, Dark Souls 1-3"
+  },
+  {
+    "rating": 5,
+    "worldName": "Skies of Arcadia"
+  },
+  {
+    "rating": 10,
+    "worldName": "Shin Megami Tensei",
+    "condition": [
+      {
+        "name": "Mainline series",
+        "rating": 10
+      },
+      {
+        "name": "Persona 3",
+        "rating": 5
+      },
+      {
+        "name": "Persona 5",
+        "rating": 4
+      },
+      {
+        "name": "Persona 4",
+        "rating": 3
+      }
+    ]
+  },
+  {
+    "rating": 8,
+    "worldName": "Shield Hero"
+  },
+  {
+    "rating": 3,
+    "worldName": "Sekirei",
+    "condition": [
+      {
+        "name": "Shinto Teito",
+        "rating": 3
+      },
+      {
+        "name": "Outside Shinto Teito",
+        "rating": 2
+      }
+    ]
+  },
+  {
+    "rating": 6,
+    "worldName": "Sailor Moon"
+  },
+  {
+    "rating": 6,
+    "worldName": "RWBY"
+  },
+  {
+    "rating": 7,
+    "worldName": "Rumic World",
+    "additional": "Sango has Kirara as a familiar. Kikyou has up to eight soul collectors as familiars.",
+    "condition": "Inuyasha (Sengoku Jidai)"
+  },
+  {
+    "rating": 10,
+    "worldName": "Rifts"
+  },
+  {
+    "rating": 6,
+    "worldName": "Resident Evil",
+    "condition": "Games verse"
+  },
+  {
+    "rating": 7,
+    "worldName": "Reincarnated as a Slime",
+    "condition": [
+      {
+        "rating": 7,
+        "name": "LNs 1-4"
+      },
+      {
+        "rating": 9,
+        "name": "LNs 5+"
+      }
+    ]
+  },
+  {
+    "rating": 2,
+    "worldName": "Real Life/History",
+    "condition": [
+      {
+        "name": "Modern developed countries",
+        "rating": 2
+      },
+      {
+        "name": "19th century and earlier (no crisis)",
+        "rating": 3
+      },
+      {
+        "name": "19th century and earlier (crisis)",
+        "rating": 4
+      },
+      {
+        "name": "World Wars (Occupied Europe/Asia)",
+        "rating": 4
+      }
+    ]
+  },
+  {
+    "rating": 1,
+    "worldName": "Pokémon",
+    "condition": [
+      {
+        "name": "Standard",
+        "rating": 1
+      },
+      {
+        "name": "Anime (canon storyline)",
+        "rating": 3
+      },
+      {
+        "name": "Adventures/Special (manga)",
+        "rating": 6
+      }
+    ]
+  },
+  {
+    "rating": 9,
+    "worldName": "Overlord (LN)"
+  },
+  {
+    "rating": 5,
+    "worldName": "One Piece",
+    "condition": [
+      {
+        "name": "Four Seas",
+        "rating": 5
+      },
+      {
+        "name": "Grand Line - Paradise",
+        "rating": 6
+      },
+      {
+        "name": "New World",
+        "rating": 8
+      }
+    ]
+  },
+  {
+    "rating": 3,
+    "worldName": "No Game No Life",
+    "condition": [
+      {
+        "name": "Post-Pledges (canon era)",
+        "rating": 3
+      },
+      {
+        "name": "Pre-Pledges (Zero era)",
+        "rating": 9
+      }
+    ]
+  },
+  {
+    "rating": 7,
+    "worldName": "Nier",
+    "condition": "Automata"
+  },
+  {
+    "rating": 6,
+    "worldName": "Nasuverse",
+    "condition": [
+      {
+        "name": "KNK/Grail Wars/Case Files",
+        "rating": 6
+      },
+      {
+        "name": "'Historical' settings",
+        "rating": 7
+      },
+      {
+        "name": "Tsukihime/Melty Blood",
+        "rating": 7
+      },
+      {
+        "name": "Moon Cell",
+        "rating": 7
+      },
+      {
+        "name": "Notes",
+        "rating": 8
+      },
+      {
+        "name": "Grand Order Parts 1",
+        "rating": 8
+      },
+      {
+        "name": "Cosmos in the Lostbelt",
+        "rating": 9
+      }
+    ]
+  },
+  {
+    "rating": 6,
+    "worldName": "Naruto",
+    "condition": [
+      {
+        "name": "Standard",
+        "rating": 6
+      },
+      {
+        "name": "Kaguya or Otsutsuki active",
+        "rating": 7
+      }
+    ]
+  },
+  {
+    "rating": 4,
+    "worldName": "My Hero Academia",
+    "condition": [
+      {
+        "name": "Start of canon",
+        "rating": 4
+      },
+      {
+        "name": "post-Retirement",
+        "rating": 5
+      },
+      {
+        "name": "pre-All Might",
+        "rating": 6
+      }
+    ]
+  },
+  {
+    "rating": 2,
+    "worldName": "Monster Musume"
+  },
+  {
+    "rating": 6,
+    "worldName": "Monster Hunter",
+    "condition": [
+      {
+        "name": "No active crisis",
+        "rating": 6
+      },
+      {
+        "name": "Elder Dragons active",
+        "rating": 7
+      }
+    ]
+  },
+  {
+    "rating": 2,
+    "worldName": "Monster Girl Encyclopedia",
+    "condition": [
+      {
+        "name": "Canon ver., Mamono territory",
+        "rating": 2
+      },
+      {
+        "name": "Canon ver., Order territory",
+        "rating": 4
+      },
+      {
+        "name": "Dark and Serious ver.",
+        "rating": 6
+      }
+    ]
+  },
+  {
+    "rating": 4,
+    "worldName": "Mass Effect",
+    "condition": [
+      {
+        "name": "No active crisis",
+        "rating": 4
+      },
+      {
+        "name": "Shanxi incident",
+        "rating": 5
+      },
+      {
+        "name": "Rachni Wars",
+        "rating": 6
+      },
+      {
+        "name": "Reaper invasion",
+        "rating": 9
+      }
+    ]
+  },
+  {
+    "rating": 8,
+    "worldName": "Marvel",
+    "condition": [
+      {
+        "name": "Mainline comics (Earth-616)",
+        "rating": 8
+      },
+      {
+        "name": "Big Hero Six (Earth-14123)",
+        "rating": 7
+      },
+      {
+        "name": "Animated Universe (90s cartoons)",
+        "rating": 6
+      },
+      {
+        "name": "Cinematic Universe (TVA present)",
+        "rating": 6
+      },
+      {
+        "name": "Cinematic Universe (no TVA)",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "rating": 10,
+    "worldName": "Magic: The Gathering",
+    "condition": [
+      {
+        "name": "Phyrexia",
+        "rating": 10
+      },
+      {
+        "name": "Zendikar (Eldrazi Awakening)",
+        "rating": 9
+      },
+      {
+        "name": "Amonkhet",
+        "rating": 8
+      },
+      {
+        "name": "Zendikar (default)",
+        "rating": 8
+      },
+      {
+        "name": "Alara (Grixis)",
+        "rating": 7
+      },
+      {
+        "name": "Ikoria",
+        "rating": 7
+      },
+      {
+        "name": "Innistrad",
+        "rating": 7
+      },
+      {
+        "name": "Tarkir",
+        "rating": 7
+      },
+      {
+        "name": "Alara (Jund)",
+        "rating": 6
+      },
+      {
+        "name": "Ravnica",
+        "rating": 6
+      },
+      {
+        "name": "Shadowmoor",
+        "rating": 6
+      },
+      {
+        "name": "Theros",
+        "rating": 6
+      },
+      {
+        "name": "Alara (Esper)",
+        "rating": 5
+      },
+      {
+        "name": "Fiora",
+        "rating": 5
+      },
+      {
+        "name": "Ixalan",
+        "rating": 5
+      },
+      {
+        "name": "Kamigawa",
+        "rating": 5
+      },
+      {
+        "name": "Alara (Naya)",
+        "rating": 4
+      },
+      {
+        "name": "Eldraine",
+        "rating": 4
+      },
+      {
+        "name": "Kaladesh",
+        "rating": 4
+      },
+      {
+        "name": "Lowryn",
+        "rating": 4
+      },
+      {
+        "name": "Alara (Bant)",
+        "rating": 3
+      },
+      {
+        "name": "Arcavios",
+        "rating": 3
+      },
+      {
+        "name": "Kylem",
+        "rating": 3
+      },
+      {
+        "name": "Segovia",
+        "rating": 3
+      }
+    ]
+  },
+  {
+    "rating": 4,
+    "worldName": "Madoka Magica",
+    "condition": [
+      {
+        "name": "TOS, Magia Record (in Kamihama)",
+        "rating": 4
+      },
+      {
+        "name": "Tart Magica",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "rating": 6,
+    "worldName": "Made in Abyss"
+  },
+  {
+    "rating": 4,
+    "worldName": "Macross",
+    "condition": "Zero",
+    "additional": "Micronization: Zentraedi and Meltrandi characters are Microne (human)-sized by default. The presence of one will add a Micronization chamber to your Grand Manor, if you have one. Advanced Tempest Runes (Body) allows them, and any other member of our retinue who’s used a Micronization chamber, to shift between Microne and Macrone forms on the fly. Body Talent is enough to let Klan Klein maintain her adult figure while micronized. Additionally, all Zentraedi and Meltrandi combatants have a personal Pocket Space for their battlesuits. Battlesuits stored this way will automatically resize themselves to fit their wearer, regardless of whether the wearer is in Microne or Macrone form. Other: Mylene has her pet… tribble(?) Guvava as a familiar. We don’t actually know what Guvava is, just that it’s cute and fuzzy. Ranka has her squirrel-like pet Ai-kun as a familiar."
+  },
+  {
+    "rating": 2,
+    "worldName": "Lyrical Nanoha",
+    "condition": [
+      {
+        "name": "No active crisis (Vivid, Vivid Strike)",
+        "rating": 2
+      },
+      {
+        "name": "TOS, A's, StrikerS",
+        "rating": 3
+      }
+    ]
+  },
+  {
+    "rating": 9,
+    "worldName": "Iain Banks' Culture",
+    "condition": "Outside The Culture"
+  },
+  {
+    "rating": 9,
+    "worldName": "Honkai Impact 3rd",
+    "condition": [
+      {
+        "name": "Previous Era",
+        "rating": 9
+      },
+      {
+        "name": "Second Eruption",
+        "rating": 9
+      },
+      {
+        "name": "Pre-Second Eruption",
+        "rating": 8
+      },
+      {
+        "name": "Start of canon",
+        "rating": 8
+      }
+    ]
+  },
+  {
+    "rating": 8,
+    "worldName": "Grim Dawn"
+  },
+  {
+    "rating": 8,
+    "worldName": "Girl Genius",
+    "condition": "Europa (wartime)"
+  },
+  {
+    "rating": 8,
+    "worldName": "Fire Emblem",
+    "condition": "Awakening (Doomed Future)"
+  },
+  {
+    "rating": 8,
+    "worldName": "Final Fantasy X",
+    "condition": "Permanent crisis"
+  },
+  {
+    "rating": 8,
+    "worldName": "Final Fantasy VIII",
+    "condition": "Permanent crisis"
+  },
+  {
+    "rating": 10,
+    "worldName": "Exalted"
+  },
+  {
+    "rating": 9,
+    "worldName": "Eclipse Phase"
+  },
+  {
+    "rating": 9,
+    "worldName": "Dragonball"
+  },
+  {
+    "rating": 10,
+    "worldName": "Doctor Who"
+  },
+  {
+    "rating": 10,
+    "worldName": "Disgaea",
+    "condition": [
+      {
+        "name": "Disgaea 5, Disgaea 6",
+        "rating": 10
+      },
+      {
+        "name": "Disgaea 4, Makai Kingdom",
+        "rating": 9
+      },
+      {
+        "name": "Disgaea 2, Disgaea 3",
+        "rating": 8
+      },
+      {
+        "rating": 7,
+        "name": "Disgaea 1"
+      },
+      {
+        "rating": 6,
+        "name": "La Pucelle, Phantom Brave"
+      }
+    ]
+  },
+  {
+    "rating": 10,
+    "worldName": "Diablo",
+    "condition": "Diablo 3"
+  },
+  {
+    "rating": 8,
+    "worldName": "DC",
+    "condition": [
+      {
+        "rating": 8,
+        "name": "Mainline comics"
+      },
+      {
+        "rating": 7,
+        "name": "Young Justice"
+      },
+      {
+        "rating": 6,
+        "name": "DCAU"
+      }
+    ]
+  },
+  {
+    "rating": 8,
+    "worldName": "Chrono Trigger",
+    "condition": [
+      {
+        "rating": 7,
+        "name": "1999 CE"
+      },
+      {
+        "rating": 7,
+        "name": "Zeal (12)"
+      },
+      {
+        "rating": 6,
+        "name": "65"
+      },
+      {
+        "rating": 5,
+        "name": "600 CE"
+      },
+      {
+        "rating": 4,
+        "name": "1000 CE"
+      }
+    ]
+  },
+  {
+    "rating": 6,
+    "worldName": "Chainsaw Man",
+    "additional": "Devil Contractors have their devils as familiars.",
+    "condition": [
+      {
+        "name": "Earth",
+        "rating": 6
+      },
+      {
+        "name": "Hell",
+        "rating": 8
+      }
+    ]
+  },
+  {
+    "rating": 7,
+    "worldName": "Cautious Hero",
+    "condition": [
+      {
+        "name": "Gaeabrande",
+        "rating": 7
+      },
+      {
+        "name": "Ixphoria",
+        "rating": 8
+      }
+    ]
+  },
+  {
+    "rating": 6,
+    "worldName": "Borderlands",
+    "condition": [
+      {
+        "name": "Pandora (no active Vault)",
+        "rating": 6
+      },
+      {
+        "name": "Pandora (active Vault)",
+        "rating": 7
+      }
+    ]
+  },
+  {
+    "rating": 6,
+    "worldName": "Bleach",
+    "condition": [
+      {
+        "name": "Standard",
+        "rating": 6
+      },
+      {
+        "name": "Hueco Mundo",
+        "rating": 8
+      }
+    ]
+  },
+  {
+    "rating": 10,
+    "worldName": "BlazBlue"
+  },
+  {
+    "rating": 5,
+    "worldName": "Black Clover",
+    "condition": "Start of canon"
+  },
+  {
+    "rating": 5,
+    "worldName": "Babylon 5"
+  },
+  {
+    "rating": 4,
+    "worldName": "Avatar: The Last Airbender"
+  },
+  {
+    "rating": 8,
+    "worldName": "Arpeggio of Blue Steel"
+  },
+  {
+    "rating": 6,
+    "worldName": "Arknights",
+    "condition": "Chernobog, Kazdel"
+  },
+  {
+    "rating": 5,
+    "worldName": "Arknights"
+  },
+  {
+    "rating": 6,
+    "worldName": "Akame ga Kill!"
+  },
+  {
+    "rating": 4,
+    "worldName": "Ace Combat",
+    "condition": [
+      {
+        "name": "Standard",
+        "rating": 4
+      },
+      {
+        "name": "AC 7",
+        "rating": 5
+      },
+      {
+        "name": "AC 4",
+        "rating": 3
+      }
+    ]
+  },
+  {
+    "rating": 4,
+    "worldName": "A Song of Ice and Fire",
+    "condition": "Books continuity"
+  },
+  {
+    "rating": 1,
+    "worldName": "(Slice of Life anime/manga)"
+  },
+  {
+    "rating": 4,
+    "worldName": "Log Horizon",
+    "condition": [
+      {
+        "name": "Akibahara",
+        "rating": 4
+      },
+      {
+        "name": "Yamato Server (not Akibahara)",
+        "rating": 5
+      },
+      {
+        "name": "Outside Yamato Server",
+        "rating": 6
+      }
+    ]
+  },
+  {
+    "rating": 4,
+    "worldName": "Legend of Zelda",
+    "condition": "Breath of the Wild"
+  },
+  {
+    "rating": 4,
+    "worldName": "Legend of the Galactic Heroes",
+    "condition": "Canon era"
+  },
+  {
+    "rating": 6,
+    "worldName": "League of Legends"
+  },
+  {
+    "rating": 5,
+    "worldName": "Konosuba",
+    "additional": "If you have Grand Manor, Luna gets her Adventurer Card-issuing equipment as a workshop. Purchased versions of Luna will carry five blank cards to hold her buyer over until then."
+  },
+  {
+    "rating": 7,
+    "worldName": "Kingdom Hearts"
+  },
+  {
+    "rating": 5,
+    "worldName": "Kimetsu no Yaiba/Demon Slayer",
+    "condition": "Taishou-era Japan"
+  },
+  {
+    "rating": 1,
+    "worldName": "Iain Banks' Culture",
+    "condition": "Within The Culture"
+  },
+  {
+    "rating": 6,
+    "worldName": "High School DxD",
+    "additional": "Purchased and captured Angels, including Fallen, may Fall and Rise at your discretion. High-class Devils do not have their own Evil Pieces, nor do Angels have their Brave Saint cards. If you purchase Ophis, or capture her before her spawn Lilith exists, you will get Lilith for free. Lilith will not be worth capture credits if you acquire her in this way.",
+    "condition": [
+      {
+        "name": "Standard",
+        "rating": 6
+      },
+      {
+        "name": "LNs 3-12",
+        "rating": 7
+      },
+      {
+        "rating": 8,
+        "name": "LNs 13-21"
+      }
+    ]
+  },
+  {
+    "rating": 4,
+    "worldName": "Hearts of Iron 4",
+    "condition": [
+      {
+        "name": "Mod: Red Flood",
+        "rating": 4
+      },
+      {
+        "name": "Mod: Red World",
+        "rating": 4
+      },
+      {
+        "name": "Mod: Thousand-Week Reich",
+        "rating": 4
+      },
+      {
+        "name": "Mod: The New Order",
+        "rating": 5
+      },
+      {
+        "name": "Mod: Equestria at War",
+        "rating": 6
+      }
+    ]
+  },
+  {
+    "rating": 7,
+    "worldName": "Guild Wars",
+    "condition": [
+      {
+        "name": "Dragons awake",
+        "rating": 7
+      },
+      {
+        "name": "Cantha pre-Jade Wind",
+        "rating": 6
+      },
+      {
+        "name": "Several dragons awake",
+        "rating": 6
+      },
+      {
+        "name": "Elder Dragons asleep",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "rating": 7,
+    "worldName": "Girl Genius",
+    "condition": "Europa (peacetime)"
+  },
+  {
+    "rating": 3,
+    "worldName": "Game of Thrones",
+    "condition": "Show continuity"
+  },
+  {
+    "rating": 3,
+    "worldName": "Fullmetal Alchemist",
+    "additional": "Lust has her 2003 characterization. Izumi and Julia’s bodies are fully intact."
+  },
+  {
+    "rating": 5,
+    "worldName": "Fire Emblem",
+    "condition": [
+      {
+        "name": "Awakening (present)",
+        "rating": 5
+      },
+      {
+        "name": "Three Houses (post-timeskip)",
+        "rating": 5
+      },
+      {
+        "name": "Three Houses (pre-timeskip)",
+        "rating": 4
+      }
+    ]
+  },
+  {
+    "rating": 5,
+    "worldName": "Final Fantasy XV",
+    "condition": [
+      {
+        "name": "pre-crystal",
+        "rating": 5
+      },
+      {
+        "name": "during timeskip",
+        "rating": 6
+      },
+      {
+        "name": "post-timeskip",
+        "rating": 7
+      }
+    ]
+  },
+  {
+    "rating": 5,
+    "worldName": "Final Fantasy XIV",
+    "condition": [
+      {
+        "name": "The Source",
+        "rating": 5
+      },
+      {
+        "name": "The First",
+        "rating": 6
+      }
+    ]
+  },
+  {
+    "rating": 7,
+    "worldName": "Final Fantasy VII"
+  },
+  {
+    "rating": 7,
+    "worldName": "Final Fantasy IX"
+  },
+  {
+    "rating": 7,
+    "worldName": "Fallout"
+  },
+  {
+    "rating": 5,
+    "worldName": "Fairy Tail",
+    "additional": "Mavis has control over her death magic. Purchasing Irene gets you Heine & Juliet for free as her familiars. Kinana can assume her Cubellios form at will."
+  },
+  {
+    "rating": 7,
+    "worldName": "Evangelion",
+    "additional": "The “Curse of EVA,” that halts pilots’ aging in Rebuild, does not apply. All pilots can learn to manipulate their AT fields; this counts as a mystical art and is affected by Soul Talent and Advanced Template Stacking (Enlightened). Akagi Naoko may be captured posthumously by attacking MAGI instead; if so, she will be a set of triplet software AIs for whom separate bodies may be built to contain. Ikari Yui and Souryuu Kyoko Zeppelin have their full scientific knowledge, full control over their AT fields, and can transform into EVA-01 and -02, respectively. When transformed, their AT strengths are both on par with the stronger canon Angels. They can also manifest shipgirl-style avatars inside their cockpits, so you can ride them while you ride them. Original and Rebuild characters will recognize each other, if shared-timeline versions of themselves would have met.",
+    "condition": [
+      {
+        "rating": 7,
+        "name": "main series"
+      },
+      {
+        "rating": 8,
+        "name": "End, post-timeskip Rebuild"
+      }
+    ]
+  },
+  {
+    "rating": 6,
+    "worldName": "Dune",
+    "condition": "First book"
+  },
+  {
+    "rating": 5,
+    "worldName": "Dresden Files"
+  },
+  {
+    "rating": 7,
+    "worldName": "Drakengard",
+    "condition": "Drakengard 3"
+  },
+  {
+    "rating": 6,
+    "worldName": "Dragon Age"
+  },
+  {
+    "rating": 5,
+    "worldName": "Danmachi",
+    "additional": "Non-goddess waifus can have their Falnas updated through an app on the company smart device. If you visit this setting or have at least one deity from it, any deities in your retinue from other settings can learn how to grant and manipulate Falnas. If your starting build has Extra or Paper Trail and a foreign deity, that deity will already know how. All deities in your retinue who know how to manipulate Falnas can update any of your group’s normally, as a shared pool. This also applies to you, if you have a Falna for any reason. You will qualify as a deity yourself if you have the Heritage perks Elder Dragon, Essence Upload, or Prophet of Paradox, or achieve godhood by any other means.",
+    "condition": [
+      {
+        "rating": 5,
+        "name": "Canon Orario"
+      },
+      {
+        "rating": 7,
+        "name": "Uncapped dungeon"
+      }
+    ]
+  },
+  {
+    "rating": 3,
+    "worldName": "Danganronpa",
+    "condition": [
+      {
+        "rating": 3,
+        "name": "Standard"
+      },
+      {
+        "rating": 4,
+        "name": "Ultra Despair Girls, V3"
+      }
+    ]
+  }
+]

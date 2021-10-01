@@ -1,19 +1,27 @@
 {
   "private": true,
   "scripts": {
-    "dev": "vite --port 3333 --open",
+    "dev": "vite --port 3333",
     "build": "cross-env NODE_ENV=production vite build",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@popperjs/core": "^2.10.1",
+    "@vee-validate/zod": "^4.5.0",
     "@vueuse/core": "^6.0.0",
+    "fuse.js": "^6.4.6",
+    "lodash-es": "^4.17.21",
+    "tippy.js": "^6.3.1",
+    "vee-validate": "^4.5.0",
     "vue": "^3.2.6",
     "vue-demi": "^0.11.3",
-    "vue-router": "^4.0.11"
+    "vue-router": "^4.0.11",
+    "zod": "^3.2.0-beta"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.7.0",
     "@iconify/json": "^1.1.395",
+    "@types/lodash-es": "^4.17.5",
     "@types/node": "^16.7.6",
     "@typescript-eslint/eslint-plugin": "^4.29.3",
     "@vitejs/plugin-vue": "^1.6.0",
