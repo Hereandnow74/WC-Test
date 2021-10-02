@@ -794,6 +794,10 @@
     "worldName": "Chrono Trigger",
     "condition": [
       {
+        "rating": 8,
+        "name": "Standard"
+      },
+      {
         "rating": 7,
         "name": "1999 CE"
       },

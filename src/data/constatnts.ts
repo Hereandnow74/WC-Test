@@ -25,12 +25,25 @@ export const TOOLTIPS = {
   'Warranty Plan': 'desc',
   'Conjunction': 'desc',
   'Apportation': 'desc',
-  'Wild': 'desc',
-  'Body': 'desc',
+  'Everlasting': 'Basic Talent. Cost: 10. Weak immortality',
+  'Body': 'Basic Talent. Cost: 10. Fitness and health',
+  'Martial': 'Basic Talent. Cost: 10. Fighting ability',
+  'Wild': 'Basic Talent. Cost: 5. Living in wilderness',
+  'Science': 'Basic Talent. Cost: 20. All sorts of Knowledge',
+  'Engineering': 'Basic Talent. Cost: 30. Apply knowledge to practice',
+  'Aesthetic': 'Basic Talent. Cost: 10. Design stuff',
+  'Communication': 'Basic Talent. Cost: 10. Social mastery',
+  'Performance': 'Basic Talent. Cost: 10. Acting, dancing, music',
+  'Soul': 'Basic Talent. Cost: 10. Ki and other Mystic arts',
+  'Blessed': 'Basic Talent. Cost: 30. Higher powers',
+  'Psychic': 'Basic Talent. Cost: 20. Telepathy, telekinesis etc.',
+  'Covert': 'Basic Talent. Cost: 10. Lie, cheat, steal mastery',
+  'Inexhaustible': 'Basic Talent. Cost: 140. Infinite energy',
   'Universal Calibration': 'desc',
-  'Rule 63': 'desc',
+  'Rule 63': 'Genderbend',
   'Stamp': 'desc',
   'Choker': 'desc',
+  'Lure': 'desc',
   'T1': 'Cost: 1',
   'T2': 'Cost: 2',
   'T3': 'Cost: 5',
@@ -48,5 +61,4 @@ export const TOOLTIPS = {
 }
 
 const str = Object.keys(TOOLTIPS).sort((a, b) => b.length - a.length).join('|')
-console.log(str)
 export const TOOLTIPS_REG = new RegExp(str, 'g')

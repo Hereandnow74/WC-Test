@@ -1,6 +1,6 @@
 <template>
   <div class="p-2">
-    <p class="p-2 mb-4 max-w-4xl bg-warm-gray-300 dark:bg-warm-gray-800 mx-auto" v-html="desc" />
+    <Desc class="p-2 mb-4 max-w-4xl bg-warm-gray-300 dark:bg-warm-gray-800 mx-auto" :desc="desc" />
     <div class="lg:column-count-2">
       <div v-for="binding in bindings" :key="binding.title" class="mb-2 inline-block bg-rose-200 dark:bg-rose-900">
         <h3 class="text-center text-xl">
@@ -14,9 +14,12 @@
 
 <script lang='ts'>
 import { desc, bindings } from '~/data/binding'
+import { useTooltips } from '~/logic/misc'
 
 export default defineComponent({
   setup() {
+    onMounted(() => useTooltips())
+
     return {
       desc,
       bindings,

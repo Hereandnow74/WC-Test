@@ -6,56 +6,45 @@
         <Input v-model.number="rating" label="Rating" class="w-24" :error-message="errors.rating" />
       </div>
       <Input v-model="image" placeholder="Image URL" :error-message="errors.image" />
-      <div>
-        <div class="flex justify-between border-b border-gray-300 dark:border-gray-200 mb-2 leading-snug">
-          <h4 class="">
-            Setting specifing rules
-          </h4>
-          <div class="hover:text-blue-500 cursor-pointer" @click="() => toggleSpecific()">
-            <codicon:fold-up v-if="showSpecific" />
-            <codicon:fold-down v-else />
-          </div>
-        </div>
+      <Foldable title="Setting specifing rules">
         <span v-if="errors.additional" class="text-xs">{{ errors.additional }}</span>
-        <TextArea v-if="showSpecific" v-model="additional" place-holder="Some specific change in the wolrd so it would fit the Company theme more." />
-      </div>
-      <div class="flex gap-1 border-b border-gray-300 dark:border-gray-200 mb-2 leading-none">
-        <h4>
-          Conditions
-        </h4>
-        <div class="hover:text-blue-500 cursor-pointer" @click="addCondition">
-          <fluent:add-12-filled />
-        </div>
-        <div class="hover:text-blue-500 cursor-pointer ml-auto" @click="() => toggleCondition()">
-          <codicon:fold-up v-if="showCondition" />
-          <codicon:fold-down v-else />
-        </div>
-      </div>
-      <div v-if="showCondition" class="overflow-y-auto flex flex-col gap-2">
-        <div v-for="condition, i in conditions" :key="i" class="flex gap-2">
-          <Input
-            v-model="condition.name"
-            :placeholder="'Condition #' + i"
-            :error-message="errors[`conditions[${i}].name`]"
-          />
-          <Input
-            v-model.number="condition.rating"
-            label="Rating"
-            class="w-24 text-center"
-            :error-message="errors[`conditions[${i}].rating`]"
-          />
-          <div
-            class="cursor-pointer inline-block leading-none pt-0.5"
-            text="gray-500 dark:gray-300 hover:red-500 xl"
-            @click="removeCondition(i)"
-          >
-            <fluent:delete-20-filled />
+        <TextArea
+          v-model="additional"
+          place-holder="Some specific change in the wolrd so it would fit the Company theme more."
+        />
+      </Foldable>
+      <Foldable title="Conditions" :is-open="isOpen">
+        <template #buttons>
+          <div class="cursor-pointer hover:text-green-500" @click="addCondition">
+            <fluent:add-12-filled />
+          </div>
+        </template>
+        <div class="overflow-y-auto flex flex-col gap-2">
+          <div v-for="condition, i in conditions" :key="i" class="flex gap-2">
+            <Input
+              v-model="condition.name"
+              :placeholder="'Condition #' + i"
+              :error-message="errors[`conditions[${i}].name`]"
+            />
+            <Input
+              v-model.number="condition.rating"
+              label="Rating"
+              class="w-24 text-center"
+              :error-message="errors[`conditions[${i}].rating`]"
+            />
+            <div
+              class="cursor-pointer inline-block leading-none pt-0.5"
+              text="gray-500 dark:gray-300 hover:red-500 xl"
+              @click="removeCondition(i)"
+            >
+              <fluent:delete-20-filled />
+            </div>
+          </div>
+          <div v-if="conditions.length === 0" class="text-center">
+            empty
           </div>
         </div>
-        <div v-if="conditions.length === 0" class="text-center">
-          empty
-        </div>
-      </div>
+      </Foldable>
       <div class="flex gap-2">
         <Checkbox label="Local save" />
         <Checkbox label="Propose to global" />
@@ -79,8 +68,7 @@ export default defineComponent({
     //   rating: number
     // }
     // const conditions = ref([] as Condition[])
-    const [showSpecific, toggleSpecific] = useToggle()
-    const [showCondition, toggleCondition] = useToggle()
+    const isOpen = ref(false)
 
     const schema = toFormValidator(
       zod.object({
@@ -113,7 +101,7 @@ export default defineComponent({
     const { value: conditions } = useField<any[]>('conditions')
 
     function addCondition() {
-      showCondition.value = true
+      isOpen.value = true
       conditions.value.push({
         name: '',
         rating: 1,
@@ -136,10 +124,7 @@ export default defineComponent({
       addWorld,
       addCondition,
       removeCondition,
-      showSpecific,
-      toggleSpecific,
-      showCondition,
-      toggleCondition,
+      isOpen,
     }
   },
 })

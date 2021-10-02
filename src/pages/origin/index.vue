@@ -1,8 +1,6 @@
 <template>
   <div class="p-2">
-    <p class="p-2 bg-gray-200 dark:bg-teal-900 max-w-4xl mx-auto">
-      {{ desc }}
-    </p>
+    <Desc class="p-2 bg-gray-200 dark:bg-teal-900 max-w-4xl mx-auto" :desc="desc" />
     <div class="flex flex-wrap justify-between mt-4">
       <div
         v-for="item in origin"
@@ -14,9 +12,7 @@
             {{ item.title }} <span text="gray-600 dark:gray-400">(Cost: {{ item.cost }})</span>
           </h4>
           <img class="max-h-[400px] w-1/2 object-contain self-center inline-block float-right" :src="item.image" :alt="item.title">
-          <p class="">
-            {{ item.desc }}
-          </p>
+          <Desc class="" :desc="item.desc" />
         </div>
       </div>
     </div>
@@ -25,9 +21,12 @@
 
 <script lang='ts'>
 import { desc, origin } from '~/data/origin'
+import { useTooltips } from '~/logic/misc'
 
 export default defineComponent({
   setup() {
+    onMounted(() => useTooltips())
+
     return {
       desc,
       origin,

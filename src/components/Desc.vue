@@ -1,5 +1,5 @@
 <template>
-  <p class="" v-html="formattedDesc" />
+  <p class="p-2" v-html="formattedDesc" />
 </template>
 
 <script lang='ts'>

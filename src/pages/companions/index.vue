@@ -1,10 +1,10 @@
 
 <template>
-  <div class="flex flex-col">
+  <div class="flex flex-col p-2">
     <h3 class="text-xl">
       Choose your companions
     </h3>
-    <div class="flex gap-4 my-2">
+    <div v-if="!loading" class="flex gap-4 my-2">
       <Input
         v-model="search"
         label="Search"
@@ -12,12 +12,15 @@
       />
       <Input v-model.number="limit" />
     </div>
-    <div class="flex flex-wrap flex-grow overflow-y-auto">
+    <div v-else class="">
+      Loading... <span class="inline-block text-xl"><eos-icons:bubble-loading /></span>
+    </div>
+    <div class="flex flex-wrap flex-grow overflow-y-auto text-gray-200 pb-8">
       <div
         v-for="{ item: char } in filteredCharacters"
         :key="char.uid"
-        class="p-1 border rouded w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5  h-2/5"
-        :style="`background-image: url(${char.image2})`"
+        class="p-1 border rouded w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5  h-2/5 bg-black bg-opacity-20"
+        :style="`background-image: url(${char.image})`"
         bg="center no-repeat contain"
         @click="showInfo(char)"
       >
@@ -36,7 +39,7 @@
     </div>
     <aside
       v-if="showSidebar"
-      class="absolute h-full w-full md:w-[400px] bg-gray-800 right-0"
+      class="absolute h-full w-full md:w-[400px] bg-gray-800 right-0 text-gray-200"
       @click="showSidebar = false"
     >
       <h4 class="text-xl">
@@ -48,7 +51,6 @@
       </div>
       <div>Tier: {{ charToShow.tier }}</div>
       <div>Cost: {{ charToShow.cost }}</div>
-      <mdi-light-alert />
       <img
         class="object-cover mx-auto relative"
         :src="charToShow.image"
@@ -61,16 +63,25 @@
 
 <script lang="ts">
 import Fuse from 'fuse.js'
-import characters from '~/data/characters.json'
+// import characters from '~/data/characters.json'
 
 export default defineComponent({
   setup() {
-    const router = useRouter()
-    // const chars = Object.values(characters).slice(0, 30)
     const search = ref('')
     const limit = ref(10)
     const showSidebar = ref(false)
     const charToShow = ref()
+
+    const characters = ref({})
+    const loading = ref(true)
+    const loadChars = () => import('~/data/characters.json')
+    const charArr = ref([] as any[])
+
+    onMounted(async() => {
+      characters.value = (await loadChars()).default
+      charArr.value = Object.values(characters.value)
+      loading.value = false
+    })
 
     const options = {
       includeScore: true,
@@ -79,15 +90,15 @@ export default defineComponent({
       keys: ['name', 'world'],
     }
 
-    const charArr = Object.values(characters)
-    const fuse = new Fuse(charArr, options)
+    // const charArr = computed(() => Object.values(characters))
+    const fuse = computed(() => new Fuse(charArr.value, options))
 
     const filteredCharacters = computed(() => {
-      return fuse.search(search.value, { limit: limit.value })
+      return fuse.value.search(search.value, { limit: limit.value })
       // return Object.values(characters).filter(char => char.sourceImage).slice(0, 30)
     })
 
-    function showInfo(char: typeof charArr[number]) {
+    function showInfo(char: typeof charArr.value[number]) {
       showSidebar.value = true
       charToShow.value = char
     }
@@ -95,7 +106,7 @@ export default defineComponent({
     return {
       search,
       limit,
-      router,
+      loading,
       filteredCharacters,
       charToShow,
       showSidebar,

@@ -1,7 +1,6 @@
 <template>
   <div class="p-2">
     <Desc class="p-2 dark:bg-gray-800 bg-blue-gray-300 rounded" :desc="desc" />
-    <Tooltip />
     <div class="mt-4 pb-8 lg:column-count-2">
       <div
         v-for="rule in intensity"
@@ -32,6 +31,7 @@
 <script lang='ts'>
 import { intersection } from 'lodash-es'
 import { desc, intensity } from '~/data/intensity'
+import { useTooltips } from '~/logic/misc'
 import { useStore } from '~/store/store'
 
 export default defineComponent({
@@ -48,6 +48,10 @@ export default defineComponent({
       if (intersection(rule.whitelist, allEffects.value).length !== (rule.needed || rule.whitelist?.length || 0)) return false
       return true
     }
+
+    onMounted(() => {
+      useTooltips()
+    })
 
     return {
       desc,
