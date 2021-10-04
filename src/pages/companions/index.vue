@@ -10,7 +10,9 @@
         label="Search"
         placeholder="Name or World"
       />
-      <Input v-model.number="limit" />
+      <Select v-model="tier" />
+      <Input v-model.number="limit" class="w-16" />
+      <div>Characters in database - {{ charArr.length }}</div>
     </div>
     <div v-else class="">
       Loading... <span class="inline-block text-xl"><eos-icons:bubble-loading /></span>
@@ -69,6 +71,7 @@ export default defineComponent({
   setup() {
     const search = ref('')
     const limit = ref(10)
+    const tier = ref('0')
     const showSidebar = ref(false)
     const charToShow = ref()
 
@@ -94,8 +97,8 @@ export default defineComponent({
     const fuse = computed(() => new Fuse(charArr.value, options))
 
     const filteredCharacters = computed(() => {
-      return fuse.value.search(search.value, { limit: limit.value })
-      // return Object.values(characters).filter(char => char.sourceImage).slice(0, 30)
+      if (tier.value === '0') return fuse.value.search(search.value, { limit: limit.value })
+      else return charArr.value.filter(char => char.tier === tier.value).slice(0, limit.value).map(x => ({ item: x }))
     })
 
     function showInfo(char: typeof charArr.value[number]) {
@@ -106,10 +109,12 @@ export default defineComponent({
     return {
       search,
       limit,
+      tier,
       loading,
       filteredCharacters,
       charToShow,
       showSidebar,
+      charArr,
       showInfo,
     }
   },

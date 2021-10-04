@@ -58,6 +58,7 @@
 import * as zod from 'zod'
 import { useForm, useField } from 'vee-validate'
 import { toFormValidator } from '@vee-validate/zod'
+import { useStore } from '~/store/store'
 
 export default defineComponent({
   name: 'AddWorld',
@@ -69,6 +70,8 @@ export default defineComponent({
     // }
     // const conditions = ref([] as Condition[])
     const isOpen = ref(false)
+
+    const { userWorlds } = useStore()
 
     const schema = toFormValidator(
       zod.object({
@@ -112,7 +115,9 @@ export default defineComponent({
       conditions.value.splice(index, 1)
     }
 
-    const addWorld = handleSubmit(values => console.log(values))
+    const addWorld = handleSubmit((values) => {
+      userWorlds.value.push(values)
+    })
 
     return {
       worldName,

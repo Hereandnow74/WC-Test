@@ -11,9 +11,9 @@
       >{{ navItem }}</span>
       <span
         v-if="i !== (items.length - 1)"
-        class="px-2"
+        class="px-2 top-1 relative"
         :class="i <= activeIndex - 1 ? 'text-teal-600 dark:text-teal-400': ''"
-      ><el:arrow-right class="top-1 relative" /></span>
+      ><el:arrow-right /></span>
     </div>
     <slot />
   </nav>

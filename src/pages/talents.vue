@@ -3,7 +3,7 @@
     <div class="flex px-2">
       <Navigation
         :items="['ride', 'home', 'talent', 'defense', 'perks', 'specific']"
-        :titles="['Ride', 'Home', 'Talent', 'Defense', 'Perks', 'Waifu Perks']"
+        :titles="['Ride', 'Home', 'Talents', 'Defense', 'Perks', 'Waifu Perks']"
         prefix="talents"
       />
     </div>
