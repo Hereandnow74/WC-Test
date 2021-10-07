@@ -4,6 +4,7 @@
     <div class="lg:column-count-2">
       <div
         v-for="talent in talents.talents"
+        :id="talent.title"
         :key="talent.title"
         class="bg-green-200 dark:bg-green-900 p-2 mb-2 inline-block"
       >

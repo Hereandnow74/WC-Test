@@ -2,7 +2,7 @@
   <div>
     <div class="flex justify-between border-b border-gray-300 dark:border-gray-200 mb-2 leading-snug">
       <div class="flex gap-2">
-        <h4 class="">
+        <h4 class="cursor-pointer" @click="() => toggleFolded()">
           {{ title }}
         </h4>
         <slot name="buttons" />

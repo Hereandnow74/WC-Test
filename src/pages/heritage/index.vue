@@ -4,6 +4,7 @@
     <div class="column-count-2">
       <div
         v-for="heritage in heritages"
+        :id="heritage.title"
         :key="heritage.title"
         class="bg-fuchsia-200 dark:bg-fuchsia-900 p-2 mb-2 inline-block"
       >

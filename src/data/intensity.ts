@@ -1,3 +1,5 @@
+import { defineComponent } from 'vue'
+
 export const desc
 = `The company is a multiversal organization. You are hardly their only contractor, though the multiverse is certainly
 expansive enough that you can live many lifetimes and never once meet one of your peers. The perks in this section
@@ -16,18 +18,20 @@ interface Intensity {
 }
 export const intensity: Intensity[] = []
 
-intensity.push(
-  {
-    title: 'Me and My Girlfriend(s)(PvE)',
-    intensity: 0,
-    special: 'Chargen only',
-    blacklist: [] as string[],
-    whitelist: [] as string[],
-    desc: 'Proceed directly to the Origins section. You may still encounter other contractors, but the multiverse is big, really big. You just won\'t believe how vastly, hugely, mind-bogglingly big it is. I mean, you may think it\'s a long way down the road to the chemist, but that\'s just peanuts to the multiverse. You can easily go entire lifetimes without meeting even one.',
-    requires: '',
-    needed: 0,
-  },
-)
+export const MeAndMy = defineComponent({
+  template: `
+    <div> <div>Hello</div>
+        <router-link class="icon-text-btn mx-2" to="/credits">
+      Credits
+    </router-link></div>`,
+})
+
+intensity.push({
+  title: 'Me and My Girlfriend(s)(PvE)',
+  intensity: 0,
+  special: 'Chargen only',
+  desc: 'Proceed directly to the Origins section. You may still encounter other contractors, but the multiverse is big, really big. You just won\'t believe how vastly, hugely, mind-bogglingly big it is. I mean, you may think it\'s a long way down the road to the chemist, but that\'s just peanuts to the multiverse. You can easily go entire lifetimes without meeting even one.',
+})
 intensity.push({
   title: 'With A Little Help From My Friends(Cooperative)',
   intensity: 20,

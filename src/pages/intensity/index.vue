@@ -1,13 +1,15 @@
 <template>
   <div class="p-2">
-    <Desc class="p-2 dark:bg-gray-800 bg-blue-gray-300 rounded" :desc="desc" />
-    <div class="mt-4 pb-8 lg:column-count-2">
+    <Desc class="p-2 max-w-screen-md mx-auto dark:bg-gray-800 bg-blue-gray-300 rounded" :desc="desc" />
+    <MeAndMy />
+    <div class="mt-4 pb-8 sm:column-count-2 lg:column-count-3">
       <div
         v-for="rule in intensity"
+        :id="rule.title"
         :key="rule.title"
         class="p-1 rounded cursor-pointer relative mb-2 inline-block"
         :bg="requirementsMet(rule) ? 'blue-100 dark:gray-700 hover:blue-200 dark:hover:gray-800' : 'gray-400'"
-        @click="choose(rule.title)"
+        @click="choose(rule)"
       >
         <h3 class="text-xl text-center">
           {{ rule.title }}
@@ -30,17 +32,23 @@
 
 <script lang='ts'>
 import { intersection } from 'lodash-es'
-import { desc, intensity } from '~/data/intensity'
+import { desc, intensity, MeAndMy } from '~/data/intensity'
 import { useTooltips } from '~/logic/misc'
 import { useStore } from '~/store/store'
 
 export default defineComponent({
+  components: {
+    MeAndMy,
+  },
+
   setup() {
     const { allEffects } = useStore()
 
-    function choose(title: string) {
-      if (allEffects.value.includes(title)) allEffects.value.splice(allEffects.value.indexOf(title), 1)
-      else allEffects.value.push(title)
+    function choose(rule: typeof intensity[number]) {
+      if (requirementsMet(rule)) {
+        if (allEffects.value.includes(rule.title)) allEffects.value.splice(allEffects.value.indexOf(rule.title), 1)
+        else allEffects.value.push(rule.title)
+      }
     }
 
     function requirementsMet(rule: typeof intensity[number]): boolean {

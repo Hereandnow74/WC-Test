@@ -20,17 +20,17 @@
           </div>
         </template>
         <div class="overflow-y-auto flex flex-col gap-2">
-          <div v-for="condition, i in conditions" :key="i" class="flex gap-2">
+          <div v-for="condition, i in condition" :key="i" class="flex gap-2">
             <Input
               v-model="condition.name"
               :placeholder="'Condition #' + i"
-              :error-message="errors[`conditions[${i}].name`]"
+              :error-message="errors[`condition[${i}].name`]"
             />
             <Input
               v-model.number="condition.rating"
               label="Rating"
               class="w-24 text-center"
-              :error-message="errors[`conditions[${i}].rating`]"
+              :error-message="errors[`condition[${i}].rating`]"
             />
             <div
               class="cursor-pointer inline-block leading-none pt-0.5"
@@ -40,13 +40,13 @@
               <fluent:delete-20-filled />
             </div>
           </div>
-          <div v-if="conditions.length === 0" class="text-center">
+          <div v-if="condition.length === 0" class="text-center">
             empty
           </div>
         </div>
       </Foldable>
       <div class="flex gap-2">
-        <Checkbox label="Local save" />
+        <Checkbox v-model="localSave" label="Local save" />
         <Checkbox label="Propose to global" />
         <Button label="Add" class="flex-grow" bg-color="bg-red-700" @click="addWorld" />
       </div>
@@ -59,41 +59,46 @@ import * as zod from 'zod'
 import { useForm, useField } from 'vee-validate'
 import { toFormValidator } from '@vee-validate/zod'
 import { useStore } from '~/store/store'
+import { toggleShowAddWorld } from '~/logic'
 
 export default defineComponent({
   name: 'AddWorld',
+  props: {
+    editMode: {
+      type: Boolean,
+      default: false,
+    },
+    world: {
+      type: Object,
+      default: () => ({}),
+    },
+  },
 
-  setup() {
-    // interface Condition {
-    //   name: string
-    //   rating: number
-    // }
-    // const conditions = ref([] as Condition[])
+  setup(props) {
     const isOpen = ref(false)
-
-    const { userWorlds } = useStore()
+    const localSave = ref(true)
+    const { userWorlds, localUserWorlds } = useStore()
 
     const schema = toFormValidator(
       zod.object({
         worldName: zod.string().nonempty('World name is required'),
         rating: zod.number().min(1, { message: 'Minimum World rating is 1' }).max(10, { message: 'Maximum World level is 10' }),
-        image: zod.string().url({ message: 'Must be a valid URL' }),
+        image: zod.string().url({ message: 'Must be a valid URL' }).optional().or(zod.literal('')),
         additional: zod.string(),
-        conditions: zod.object({
+        condition: zod.object({
           name: zod.string().nonempty('Condition is required'),
           rating: zod.number().min(1, { message: 'Minimum World rating is 1' }).max(10, { message: 'Maximum World level is 10' }),
         }).array(),
       }),
     )
-
     const { errors, handleSubmit } = useForm({
       validationSchema: schema,
       initialValues: {
-        conditions: [],
-        rating: 1,
-        worldName: '',
-        additional: '',
-        image: '',
+        condition: props.world.condition || [],
+        rating: props.world.rating || 1,
+        worldName: props.world.worldName || '',
+        additional: props.world.additional || '',
+        image: props.world.image || '',
       },
     })
 
@@ -101,22 +106,25 @@ export default defineComponent({
     const { value: rating } = useField<number>('rating')
     const { value: additional } = useField<string>('additional')
     const { value: image } = useField<string>('image')
-    const { value: conditions } = useField<any[]>('conditions')
+    const { value: condition } = useField<any[]>('condition')
 
     function addCondition() {
       isOpen.value = true
-      conditions.value.push({
+      condition.value.push({
         name: '',
         rating: 1,
       })
     }
 
     function removeCondition(index: number) {
-      conditions.value.splice(index, 1)
+      condition.value.splice(index, 1)
     }
 
     const addWorld = handleSubmit((values) => {
-      userWorlds.value.push(values)
+      if (props.editMode) values.worldName = `${values.worldName} (AU)`
+      if (localSave.value) localUserWorlds.value.push(values)
+      else userWorlds.value.push(values)
+      toggleShowAddWorld()
     })
 
     return {
@@ -124,12 +132,13 @@ export default defineComponent({
       rating,
       additional,
       image,
-      conditions,
+      condition,
       errors,
       addWorld,
       addCondition,
       removeCondition,
       isOpen,
+      localSave,
     }
   },
 })

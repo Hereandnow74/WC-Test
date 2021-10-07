@@ -13,9 +13,18 @@ export default defineConfig({
             'column-count': '2',
             'column-gap': '0.5rem',
           },
+          '.column-count-3': {
+            'column-count': '3',
+            'column-gap': '0.5rem',
+          },
         },
         '.column-count-2': {
           'column-count': '2',
+          'column-gap': '0.5rem',
+        },
+
+        '.column-count-3': {
+          'column-count': '3',
           'column-gap': '0.5rem',
         },
       })

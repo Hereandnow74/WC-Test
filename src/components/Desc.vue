@@ -1,9 +1,11 @@
 <template>
-  <p class="p-2" v-html="formattedDesc" />
+  <p class="p-2">
+    <component :is="MeAndMy" />
+  </p>
 </template>
 
 <script lang='ts'>
-import { TOOLTIPS, TOOLTIPS_REG } from '~/data/constatnts'
+import { TOOLTIPS, TOOLTIPS_REG, LINKS, LINKS_REG } from '~/data/constatnts'
 
 export default defineComponent({
   name: 'Desc',
@@ -15,13 +17,26 @@ export default defineComponent({
   },
 
   setup(props) {
-    const formattedDesc = computed(() => props.desc.replace(TOOLTIPS_REG,
-      word => `<span data-tippy-content="${TOOLTIPS[word as keyof typeof TOOLTIPS]}"
-        class="text-blue-500">${word}</span>`,
-    ))
+    const formattedDesc = computed(() => {
+      let desc = props.desc.replace(TOOLTIPS_REG,
+        word => `<span data-tippy-content="${TOOLTIPS[word as keyof typeof TOOLTIPS]}"
+        class="text-green-500">${word}</span>`,
+      )
+
+      desc = desc.replace(LINKS_REG,
+        match => `<router-link class="text-blue-500" :to="{ path: '/${LINKS.value[match]}', hash: '#${match}' }">${match}</router-link>`,
+      )
+
+      return desc
+    })
+
+    const MeAndMy = defineComponent({
+      template: formattedDesc.value,
+    })
 
     return {
       formattedDesc,
+      MeAndMy,
     }
   },
 })

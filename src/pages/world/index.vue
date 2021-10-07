@@ -1,48 +1,54 @@
 
 <template>
   <div class="p-2">
-    <div class="max-w-4xl p-2 mx-auto flex gap-4">
+    <div class="max-w-4xl p-2 mx-auto flex gap-2 items-center">
       <Input
-        v-model=" search"
+        v-model="search"
         label="Search"
         placeholder="World name"
         class="w-full"
       />
-      <span class="whitespace-nowrap">Worlds in database: {{ worldsCount }}</span>
+      <clarity:eraser-solid class="icon-btn w-8" @click="search = ''" />
+      <span class="pl-4 whitespace-nowrap">Worlds in database: {{ worldsCount }}</span>
     </div>
-    <div v-if="userWorlds.length">
-      <div v-for="world in userWorlds" :key="world.worldName">
-        {{ world }}
+    <Foldable v-if="allUserWorlds.length" class="text-lg mb-2" title="User Worlds">
+      <div class="mb-4 flex flex-wrap gap-1 overflow-y-auto">
+        <WorldCard v-for="world in allUserWorlds" :key="world.worldName" :world="world" :is-user-world="true" />
       </div>
-    </div>
+    </Foldable>
+    <h3 v-if="allUserWorlds.length && worldsFiltered.length" class="text-lg border-b mb-2">
+      Canon Worlds
+    </h3>
     <div class="flex flex-wrap gap-1 overflow-y-auto pb-8">
       <WorldCard
         v-for="{item: world} in worldsFiltered"
         :key="world.worldName + (world.condition || 'none')"
         :world="world"
+        @edit-world="editWorld"
       />
       <div v-if="!worldsFiltered.length" class="text-center flex-grow">
         <p>No worlds found.</p>
-        <Button label="Add World" @click="toggleShowAddWorld" />
+        <Button label="Add World" @click="() => (editMode = false, toggleShowAddWorld())" />
       </div>
     </div>
-    <AddWorld v-if="showAddWorld" @click="toggleShowAddWorld" />
+    <AddWorld v-if="showAddWorld" :world="worldToEdit" :edit-mode="editMode" @click="toggleShowAddWorld" />
   </div>
 </template>
 
 <script lang="ts">
 import Fuse from 'fuse.js'
-import { WORLD_COLORS, WORLD_RATINGS } from '~/data/constatnts'
 import worlds from '~/data/worlds.json'
 import { useStore } from '~/store/store'
+import { toggleShowAddWorld, showAddWorld } from '~/logic'
 
 export default defineComponent({
   setup() {
     const search = ref('')
     const worldsReac = ref(worlds)
+    const worldToEdit = ref({})
+    const editMode = ref(false)
 
-    const { budget, baseBudget, startingWorld, userWorlds } = useStore()
-    const [showAddWorld, toggleShowAddWorld] = useToggle()
+    const { userWorlds, localUserWorlds } = useStore()
 
     const options = {
       findAllMatches: true,
@@ -53,25 +59,26 @@ export default defineComponent({
     const fuse = new Fuse(worldsReac.value, options)
 
     const worldsCount = computed(() => worlds.length)
+    const allUserWorlds = computed(() => userWorlds.value.concat(localUserWorlds.value))
 
     const worldsFiltered = computed(() => {
       return fuse.search(search.value)
     })
 
-    function pickWorld(world: typeof worlds[number]) {
-      startingWorld.value = world
-      budget.value = WORLD_RATINGS[world.rating - 1].budget || 0
-      baseBudget.value = budget.value
+    function editWorld(world: typeof worlds[number]) {
+      worldToEdit.value = world
+      editMode.value = true
+      toggleShowAddWorld()
     }
 
     return {
       search,
       worldsCount,
       worldsFiltered,
-      WORLD_COLORS,
-      WORLD_RATINGS,
-      userWorlds,
-      pickWorld,
+      allUserWorlds,
+      worldToEdit,
+      editMode,
+      editWorld,
       showAddWorld,
       toggleShowAddWorld,
     }

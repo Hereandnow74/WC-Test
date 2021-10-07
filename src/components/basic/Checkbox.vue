@@ -5,8 +5,8 @@
       type="checkbox"
       :name="label"
       class="px-2 self-center"
-      :value="modelValue"
-      @change="$emit('update:modelValue', $event?.target?.value)"
+      :checked="modelValue"
+      @change="$emit('update:modelValue', $event?.target?.checked)"
     >
   </div>
 </template>

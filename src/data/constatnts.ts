@@ -1,3 +1,9 @@
+import { intensity } from '~/data/intensity'
+import { origin } from '~/data/origin'
+import { bindings } from '~/data/binding'
+import { heritages } from '~/data/heritage'
+import { rides, homePerks, defenses, talents, perks } from '~/data/talents'
+
 export const WORLD_COLORS = ['bg-green-600', 'bg-teal-600', 'bg-cyan-600',
   'bg-blue-500', 'bg-indigo-500', 'bg-purple-500', 'bg-amber-600',
   'bg-orange-500', 'bg-red-500', 'bg-true-gray-700']
@@ -16,34 +22,37 @@ export const WORLD_RATINGS = [
   // { rating: 11, title: 'One', budget: 'Tier 11 ticket' },
 ]
 
+export const CHAR_COSTS = [1, 2, 5, 10, 20, 50, 100, 200, 500, 1000]
+
 export const TOOLTIPS = {
-  'Exit Stage Left': 'Travel Perk. Cost: 5',
+  // 'Exit Stage Left': 'Travel Perk. Cost: 5',
   'Chargen only': 'Only during character generation stage',
-  'Rainbow Bridge': 'Home Perk. Cost: 30',
-  'Donut Steel': 'Meta Talent. Cost 10 per use. Let you copy powers.',
-  'Template Stacking': 'Meta Talent. Cost 10 per use. Let you copy generic powers.',
-  'Warranty Plan': 'desc',
-  'Conjunction': 'desc',
-  'Apportation': 'desc',
-  'Everlasting': 'Basic Talent. Cost: 10. Weak immortality',
-  'Body': 'Basic Talent. Cost: 10. Fitness and health',
-  'Martial': 'Basic Talent. Cost: 10. Fighting ability',
-  'Wild': 'Basic Talent. Cost: 5. Living in wilderness',
-  'Science': 'Basic Talent. Cost: 20. All sorts of Knowledge',
-  'Engineering': 'Basic Talent. Cost: 30. Apply knowledge to practice',
-  'Aesthetic': 'Basic Talent. Cost: 10. Design stuff',
-  'Communication': 'Basic Talent. Cost: 10. Social mastery',
-  'Performance': 'Basic Talent. Cost: 10. Acting, dancing, music',
-  'Soul': 'Basic Talent. Cost: 10. Ki and other Mystic arts',
-  'Blessed': 'Basic Talent. Cost: 30. Higher powers',
-  'Psychic': 'Basic Talent. Cost: 20. Telepathy, telekinesis etc.',
-  'Covert': 'Basic Talent. Cost: 10. Lie, cheat, steal mastery',
-  'Inexhaustible': 'Basic Talent. Cost: 140. Infinite energy',
+  // 'Rainbow Bridge': 'Home Perk. Cost: 30',
+  // 'Donut Steel': 'Meta Talent. Cost 10 per use. Let you copy powers.',
+  // 'Template Stacking': 'Meta Talent. Cost 10 per use. Let you copy generic powers.',
+  // 'Warranty Plan': 'desc',
+  // 'Conjunction': 'desc',
+  // 'Apportation': 'desc',
+  // 'Everlasting': 'Basic Talent. Cost: 10. Weak immortality',
+  // 'Body': 'Basic Talent. Cost: 10. Fitness and health',
+  // 'Martial': 'Basic Talent. Cost: 10. Fighting ability',
+  // 'Wild': 'Basic Talent. Cost: 5. Living in wilderness',
+  // 'Science': 'Basic Talent. Cost: 20. All sorts of Knowledge',
+  // 'Engineering': 'Basic Talent. Cost: 30. Apply knowledge to practice',
+  // 'Aesthetic': 'Basic Talent. Cost: 10. Design stuff',
+  // 'Communication': 'Basic Talent. Cost: 10. Social mastery',
+  // 'Performance': 'Basic Talent. Cost: 10. Acting, dancing, music',
+  // 'Soul': 'Basic Talent. Cost: 10. Ki and other Mystic arts',
+  // 'Blessed': 'Basic Talent. Cost: 30. Higher powers',
+  // 'Psychic': 'Basic Talent. Cost: 20. Telepathy, telekinesis etc.',
+  // 'Covert': 'Basic Talent. Cost: 10. Lie, cheat, steal mastery',
+  // 'Inexhaustible': 'Basic Talent. Cost: 140. Infinite energy',
   'Universal Calibration': 'desc',
   'Rule 63': 'Genderbend',
   'Stamp': 'desc',
   'Choker': 'desc',
   'Lure': 'desc',
+  '~104.45 AU': '1 AU equals distance between the Sun and Earth',
   'T1': 'Cost: 1',
   'T2': 'Cost: 2',
   'T3': 'Cost: 5',
@@ -60,5 +69,26 @@ export const TOOLTIPS = {
   'Enemy': 'Enemies - when you and an enemy are first connected to the same world, your smart devices will receive alerts with each other’s name and face: as you look at that moment, minus any makeup. Like rivals, enemies will also pursue you across worlds. Assume that every enemy you encounter seeks to stripmine your visited worlds of all credit value, claim your retinue as their own, or even sell them off for credits. The only choice is to kill or be killed.',
 }
 
+export const LINKS = computed(() => {
+  const links = {} as Record<string, string>
+  const allCats = {
+    intensity,
+    origin,
+    'binding': bindings,
+    'heritage': heritages,
+    'talents/ride': rides,
+    'talents/home': homePerks,
+    'talents/defense': defenses,
+    'talents/talent': talents,
+    'talents/perks': perks,
+  }
+  for (const category of Object.entries(allCats)) {
+    for (const entry of category[1])
+      links[entry.title] = category[0]
+  }
+  return links
+})
+
 const str = Object.keys(TOOLTIPS).sort((a, b) => b.length - a.length).join('|')
 export const TOOLTIPS_REG = new RegExp(str, 'g')
+export const LINKS_REG = new RegExp(Object.keys(LINKS.value).join('|'), 'g')

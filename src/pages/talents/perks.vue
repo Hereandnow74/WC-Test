@@ -1,9 +1,10 @@
 <template>
   <div class="">
     <Desc :desc="talents.genericDesc" class="p-2 mb-4 max-w-4xl mx-auto bg-violet-200 dark:bg-violet-900" />
-    <div class="column-count-2">
+    <div class="lg:column-count-2 pb-8">
       <div
         v-for="perk in talents.perks"
+        :id="perk.title"
         :key="perk.title"
         class="bg-light-blue-200 dark:bg-light-blue-900 p-2 mb-2 inline-block"
       >

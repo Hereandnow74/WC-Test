@@ -1,12 +1,14 @@
 <template>
   <div
-    class="rounded cursor-pointer flex-grow text-gray-100 text-shadow flex flex-col gap-2"
+    class="rounded cursor-pointer flex-grow text-gray-100 text-shadow flex flex-col gap-2 max-w-sm"
     border="2 gray-400 hover:orange-600"
     :class="WORLD_COLORS[world.rating - 1] ||'bg-gray-600'"
     @click="pickWorld(world)"
   >
-    <h3 class="text-xl text-center bg-black bg-opacity-10">
+    <h3 class="text-xl text-center bg-black bg-opacity-10 flex items-center px-2">
       {{ world.worldName }}
+      <bx:bxs-edit class="ml-auto hover:text-yellow-600" @click="$emit('editWorld', world)" />
+      <fluent:delete-20-filled v-if="isUserWorld" class="hover:text-red-500 ml-2" @click="deleteWorld" />
     </h3>
     <div class="flex justify-between font-medium px-2">
       <div>
@@ -53,21 +55,31 @@ export default defineComponent({
       type: Object as PropType<World>,
       default: () => {},
     },
+    isUserWorld: {
+      type: Boolean,
+      default: false,
+    },
   },
+  emits: ['editWorld'],
 
-  setup() {
-    const { budget, baseBudget, startingWorld } = useStore()
+  setup(props) {
+    const { baseBudget, startingWorld, localUserWorlds } = useStore()
 
     function pickWorld(world: World) {
       startingWorld.value = world
-      budget.value = WORLD_RATINGS[world.rating - 1]?.budget || 0
-      baseBudget.value = budget.value
+      baseBudget.value = WORLD_RATINGS[world.rating - 1]?.budget || 0
+    }
+
+    function deleteWorld() {
+      if (localUserWorlds.value.includes(props.world))
+        localUserWorlds.value.splice(localUserWorlds.value.indexOf(props.world), 1)
     }
 
     return {
       WORLD_COLORS,
       WORLD_RATINGS,
       pickWorld,
+      deleteWorld,
     }
   },
 })

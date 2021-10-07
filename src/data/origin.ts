@@ -5,11 +5,73 @@ export const desc = `Pick one and only one of these five options at the start of
   Like all company - supplied powers, abilities gained through Substitute, Possess, or Extra cannot be nullified,
   copied, or stolen.`
 
-const first = {
+export interface Origin {
+  title: string
+  cost: number
+  image: string
+  desc: string
+  blacklist?: string[]
+  variants?: {
+    title: string
+    cost: number
+  }[]
+  character?: boolean
+  max?: number
+}
+
+export const origin: Origin[] = []
+
+origin.push({
+  title: 'Drop-In',
+  cost: 0,
+  image: '/img/origin/dropin2.jpg',
+  desc: `You are you. You have no documentation, no social advantages,
+    nothing in your new world save the clothes on your back, your knowledge of
+    fiction, personal skills, and of course any Company products you purchase.`,
+  blacklist: [],
+})
+
+origin.push({
+  title: 'Walk-In',
+  cost: 0,
+  image: '/img/origin/walkin2.jpg',
+  desc: `You are not... you, not precisely. You are instead a canon character from some
+    established work. This acts as a blend of Drop-In and Substitute: canon characters do
+    not need to pay extra to be themselves, but their only knowledge of any world they
+    might visit comes from any works they may have experienced personally and
+    whatever spoilers they've encountered while browsing Company systems.`,
+  blacklist: [],
+})
+
+origin.push({
+  title: 'Extra',
+  cost: 0,
+  image: '/img/origin/extra2.jpg',
+  variants: [{ title: 'T4-T6', cost: 10 }, { title: 'T7-T9', cost: 100 }],
+  desc: `You reincarnate into a non-canon "normie" character from
+    your starting world, the equivalent of a tier 1 husbando or waifu,
+    an alternate you who grew up in your starting world. (If you're
+    naturally a T2 or T3 instead, your IRL skill set will not be removed
+    or otherwise reduced.) Your original memories are downloaded
+    into the new you's head at some point before the start of your
+    story, but not before puberty. You can distinguish between the two
+    sets of memories without difficulty.
+    If your starting world is one where even the "normie"
+    characters have in-born special abilities equivalent to a
+    copper-star waifu, the local you will have some low-superhuman
+    ability that fits the setting and this origin costs 10 credits. If the
+    "normie" characters are instead equivalent to silver-star waifus,
+    you will be equivalent to them and this origin will cost 100 credits.`,
+  blacklist: [],
+})
+
+origin.push({
   title: 'Substitute',
-  cost: 'Variable',
+  cost: 0,
   blacklist: ['Gauntlet PvP'],
   image: '/img/origin/substitute2.jpg',
+  character: true,
+  max: 20,
   desc: `You reincarnate into a canon character from your starting
     world, whether that's a waifu or husbando. You will be them, for
     all intents and purposes, with your original memories adding to
@@ -33,59 +95,13 @@ const first = {
     This will often be lower than their listed price. You may not
     spend more than 20% of your starting budget, after drawbacks,
     on this perk`,
-}
-
-export const origin: typeof first[] = []
-
-origin.push({
-  title: 'Drop-In',
-  cost: '0',
-  image: '/img/origin/dropin2.jpg',
-  desc: `You are you. You have no documentation, no social advantages,
-    nothing in your new world save the clothes on your back, your knowledge of
-    fiction, personal skills, and of course any Company products you purchase.`,
-  blacklist: [],
 })
-
-origin.push({
-  title: 'Walk-In',
-  cost: '0',
-  image: '/img/origin/walkin2.jpg',
-  desc: `You are not... you, not precisely. You are instead a canon character from some
-    established work. This acts as a blend of Drop-In and Substitute: canon characters do
-    not need to pay extra to be themselves, but their only knowledge of any world they
-    might visit comes from any works they may have experienced personally and
-    whatever spoilers they've encountered while browsing Company systems.`,
-  blacklist: [],
-})
-
-origin.push({
-  title: 'Extra',
-  cost: '0',
-  image: '/img/origin/extra2.jpg',
-  desc: `You reincarnate into a non-canon "normie" character from
-    your starting world, the equivalent of a tier 1 husbando or waifu,
-    an alternate you who grew up in your starting world. (If you're
-    naturally a T2 or T3 instead, your IRL skill set will not be removed
-    or otherwise reduced.) Your original memories are downloaded
-    into the new you's head at some point before the start of your
-    story, but not before puberty. You can distinguish between the two
-    sets of memories without difficulty.
-    If your starting world is one where even the "normie"
-    characters have in-born special abilities equivalent to a
-    copper-star waifu, the local you will have some low-superhuman
-    ability that fits the setting and this origin costs 10 credits. If the
-    "normie" characters are instead equivalent to silver-star waifus,
-    you will be equivalent to them and this origin will cost 100 credits.`,
-  blacklist: [],
-})
-
-origin.push(first)
 
 origin.push({
   title: 'Possess',
-  cost: '0',
+  cost: 0,
   image: '/img/origin/possess2.jpg',
+  character: true,
   desc: `Be the waifu or husbando. Your self will be downloaded
     into the body of one a waifu or husbando, completely replacing
     theirs. Rule 63 variants are available for every choice imaginable.

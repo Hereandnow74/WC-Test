@@ -8,7 +8,7 @@
         border="~ gray-800"
         :placeholder="placeholder"
         :value="modelValue"
-        @input="$emit('update:modelValue', ($event.target as HTMLInputElement).value)"
+        @change="$emit('update:modelValue', ($event.target as HTMLInputElement).value)"
       >
         <option value="0">Any</option>
         <option v-for="tier in 11" :key="tier" :value="tier">{{ tier }}</option>
