@@ -2,7 +2,7 @@ import { intensity } from '~/data/intensity'
 import { origin } from '~/data/origin'
 import { bindings } from '~/data/binding'
 import { heritages } from '~/data/heritage'
-import { rides, homePerks, defenses, talents, perks } from '~/data/talents'
+import { rides, homes, defenses, talents, perks } from '~/data/talents'
 
 export const WORLD_COLORS = ['bg-green-600', 'bg-teal-600', 'bg-cyan-600',
   'bg-blue-500', 'bg-indigo-500', 'bg-purple-500', 'bg-amber-600',
@@ -26,7 +26,7 @@ export const CHAR_COSTS = [1, 2, 5, 10, 20, 50, 100, 200, 500, 1000]
 
 export const TOOLTIPS = {
   // 'Exit Stage Left': 'Travel Perk. Cost: 5',
-  'Chargen only': 'Only during character generation stage',
+  'Chargen': 'Only during character generation stage',
   // 'Rainbow Bridge': 'Home Perk. Cost: 30',
   // 'Donut Steel': 'Meta Talent. Cost 10 per use. Let you copy powers.',
   // 'Template Stacking': 'Meta Talent. Cost 10 per use. Let you copy generic powers.',
@@ -47,12 +47,11 @@ export const TOOLTIPS = {
   // 'Psychic': 'Basic Talent. Cost: 20. Telepathy, telekinesis etc.',
   // 'Covert': 'Basic Talent. Cost: 10. Lie, cheat, steal mastery',
   // 'Inexhaustible': 'Basic Talent. Cost: 140. Infinite energy',
-  'Universal Calibration': 'desc',
   'Rule 63': 'Genderbend',
-  'Stamp': 'desc',
-  'Choker': 'desc',
-  'Lure': 'desc',
-  '~104.45 AU': '1 AU equals distance between the Sun and Earth',
+  'Stamp': 'Binding.',
+  'Choker': 'Binding.',
+  '104.45 AU': '1 AU equals distance between the Sun and Earth',
+  'AU': 'Alternative Universe or Astronomical Unit(distance between the Sun and Earth)',
   'T1': 'Cost: 1',
   'T2': 'Cost: 2',
   'T3': 'Cost: 5',
@@ -77,7 +76,7 @@ export const LINKS = computed(() => {
     'binding': bindings,
     'heritage': heritages,
     'talents/ride': rides,
-    'talents/home': homePerks,
+    'talents/home': homes,
     'talents/defense': defenses,
     'talents/talent': talents,
     'talents/perks': perks,

@@ -24,7 +24,7 @@ export default defineComponent({
       )
 
       desc = desc.replace(LINKS_REG,
-        match => `<router-link class="text-blue-500" :to="{ path: '/${LINKS.value[match]}', hash: '#${match}' }">${match}</router-link>`,
+        match => `<router-link @click.stop class="dark:text-blue-300 text-blue-600" :to="{ path: '/${LINKS.value[match]}', hash: '#${match}' }">${match}</router-link>`,
       )
 
       return desc

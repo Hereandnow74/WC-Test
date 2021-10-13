@@ -1,9 +1,6 @@
 <template>
   <div class="p-2">
     <Desc class="p-2 bg-gray-200 dark:bg-teal-900 max-w-4xl mx-auto" :desc="desc" />
-    <router-link :to="{ path: '/intensity', hash: '#Come At Me Bro' }">
-      Marathon
-    </router-link>
     <div class="flex flex-wrap justify-between mt-4">
       <div
         v-for="item in origin"
@@ -88,7 +85,7 @@ export default defineComponent({
 
     onMounted(() => useTooltips())
 
-    watch(choosedOrigin, (old, nw) => {
+    watch(choosedOrigin, () => {
       if (['Substitute', 'Possess'].includes(choosedOrigin.title))
         choosedOrigin.cost = CHAR_COSTS[choosedOrigin.tier - 1] || 0
     })

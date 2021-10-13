@@ -1,6 +1,7 @@
-interface Heritage {
+export interface Heritage {
   title: string
   type?: string
+  tree: 'Dragon' | 'Transhuman' | 'Outsider' | 'None'
   cost: number
   whitelist?: string[]
   desc: string
@@ -15,12 +16,14 @@ Heritages marked as under construction already exist in-universe but are not yet
 heritages.push({
   title: 'Ancestral Diversity',
   cost: 11111,
-  whitelist: ['Dragon', 'Transhuman', 'Outsider'],
+  tree: 'None',
+  // whitelist: ['Dragon', 'Transhuman', 'Outsider'],
   desc: 'You may now purchase the perks in a second Heritage tree. You must still spend the credits as normal. This perk may be purchased multiple times. Its price will increase by 1 ticket each time.',
 })
 
 heritages.push({
   title: 'Dragon Heart',
+  tree: 'Dragon',
   type: 'Root',
   cost: 80,
   desc: `You have a dragon’s blood. Take Everlasting Talent, Body Talent, Martial Talent, Wild Talent, and two copies each of Body Defense and Wild Defense for free. You can transform into, effectively, a dragon-shaped mecha.  It’s bipedal with wings, roughly 3m tall, and maximizes your improved strength and protection at that size without sacrificing any finesse or maneuverability. Its color scheme is your choice.
@@ -29,6 +32,7 @@ You must also choose an elemental affinity. Available "elements" include the cla
 
 heritages.push({
   title: 'Dragon Scale',
+  tree: 'Dragon',
   type: 'Self',
   cost: 95,
   whitelist: ['Dragon Heart'],
@@ -39,6 +43,7 @@ When you buy this perk, you get one chance to change your dragon element; use it
 
 heritages.push({
   title: 'Dragon Aura',
+  tree: 'Dragon',
   type: 'Lure',
   cost: 200,
   whitelist: ['Dragon Scale'],
@@ -50,6 +55,7 @@ The behind - the - scenes mechanics of this perk are described in detail in the 
 
 heritages.push({
   title: 'Dragon Thrall',
+  tree: 'Dragon',
   type: 'Party',
   cost: 150,
   whitelist: ['Dragon Scale'],
@@ -61,6 +67,7 @@ PvP note: If another contractor, whether they captured you or you captured them,
 
 heritages.push({
   title: 'Dragon Blood',
+  tree: 'Dragon',
   type: 'Party',
   cost: 150,
   whitelist: ['Dragon Thrall'],
@@ -70,6 +77,7 @@ PvP note: If another contractor, whether they captured you or you captured them,
 
 heritages.push({
   title: 'Treasure Hoard',
+  tree: 'Dragon',
   type: 'Other Control',
   cost: 20,
   whitelist: ['Dragon Scale'],
@@ -78,6 +86,7 @@ heritages.push({
 
 heritages.push({
   title: 'Dragon Cabin',
+  tree: 'Dragon',
   type: 'Party',
   cost: 30,
   whitelist: ['Dragon Scale'],
@@ -87,6 +96,7 @@ You may learn to freely manipulate the walls, floor, and ceiling of the cabin or
 
 heritages.push({
   title: 'Dragon Bifurcation',
+  tree: 'Dragon',
   type: 'Self',
   cost: 25,
   whitelist: ['Dragon Cabin'],
@@ -95,6 +105,7 @@ heritages.push({
 
 heritages.push({
   title: 'Dragon Break',
+  tree: 'Dragon',
   type: 'Self',
   cost: 50,
   whitelist: ['Dragon Cabin', 'We Will Meet Again'],
@@ -103,6 +114,7 @@ heritages.push({
 
 heritages.push({
   title: 'Double Dragon',
+  tree: 'Dragon',
   type: 'Self',
   cost: 200,
   whitelist: ['Dragon Scale'],
@@ -111,6 +123,7 @@ heritages.push({
 
 heritages.push({
   title: 'Elder Dragon',
+  tree: 'Dragon',
   type: 'Self',
   cost: 11111,
   whitelist: ['Double Dragon', 'Dragon Blood'],
@@ -119,6 +132,7 @@ heritages.push({
 
 heritages.push({
   title: 'First Augmentation',
+  tree: 'Transhuman',
   type: 'Root',
   cost: 80,
   desc: `You have begun to exceed the limitations of the human form. Select one Transhuman type. For all types, your Smart Device is now part of you and accessible with a thought via a customizable HUD. You are still able to summon a device for waifus to interact with should you wish. Your strength, speed, durability, reaction times and senses have all been improved beyond human limits. Additionally, your body is able to store energy beyond its normal limits, as well as discharge it as electricity if you could not already do so. Your body is modified to handle a wide range of further modifications of a type based on the specific form of Transhumanism you select. Take Body Talent and two copies of Stress Defense for free, as well as other perks based on your Transhuman type. Choose your method of escaping human limitations:
@@ -129,6 +143,7 @@ heritages.push({
 
 heritages.push({
   title: 'Networking',
+  tree: 'Transhuman',
   type: 'Lure, Other Control',
   cost: 30,
   whitelist: ['First Augmentation'],
@@ -140,6 +155,7 @@ heritages.push({
 
 heritages.push({
   title: 'Full Conversion',
+  tree: 'Transhuman',
   type: 'Self',
   cost: 100,
   whitelist: ['First Augmentation'],
@@ -153,6 +169,7 @@ Regardless of your Transhuman Type, take Everlasting Talent, two copies each of 
 
 heritages.push({
   title: 'Essence Reactor',
+  tree: 'Transhuman',
   type: 'Self',
   cost: 90,
   whitelist: ['Full Conversion'],
@@ -167,6 +184,7 @@ Cybermorph: Take one copy of Information Defense for free, due to the fractal ca
 
 heritages.push({
   title: 'Evolutionary Engine Array',
+  tree: 'Transhuman',
   type: 'Self',
   cost: 50,
   whitelist: ['Essence Reactor'],
@@ -177,6 +195,7 @@ If you have previously purchased OC Donut Steel or Template Stacking I, take a r
 
 heritages.push({
   title: 'Essence Upload',
+  tree: 'Transhuman',
   type: 'Self',
   cost: 170,
   whitelist: ['Full Conversion'],
@@ -195,6 +214,7 @@ If you possess Ritual Circles, you gain a special circle that can convert someon
 
 heritages.push({
   title: 'Philosopher’s Transmortality Engine',
+  tree: 'Transhuman',
   type: 'Party',
   cost: 0,
   whitelist: ['Full Conversion'],
@@ -207,9 +227,10 @@ PvP note: If another contractor, whether they captured you or you captured them,
 
 heritages.push({
   title: 'Multicore Neural Leyline',
+  tree: 'Transhuman',
   type: 'Party',
   cost: 165,
-  whitelist: ['Essence Upload and Essence Reactor'],
+  whitelist: ['Essence Upload', 'Essence Reactor'],
   desc: `You are no longer limited to a single line of consciousness. At this stage, your mind has expanded even further, the specifics of this vary by Transhuman Type. Take one copy each of Trace Defense and Destiny Defense for free.
 You may upgrade or combine your Cores into larger, more powerful forms, expanding the limit on the number of active consciousness you have at any moment in time. The effort and mass these possess is measured in Least Cores. Each Core has a range, given in parenthesis.
 Unless stated otherwise, larger cores are identical in function to Least Cores. Lesser Cores and larger have an Essence Reactor at their center. Greater Cores and larger allow for additional Essence Reactors to be active at a time: 1 per Greater Core and 10 per Grand Core. If you possess an Elemental Shroud, anything within range of a Greater Core or larger is considered to be in light contact with your Shroud, even if you do not possess Elemental Loom.
@@ -234,13 +255,14 @@ If you have a Burial Shroud, you may replicate the above effect by infusing a po
 
 heritages.push({
   title: 'Incandescent Ascendancy Machine',
+  tree: 'Transhuman',
   type: 'Self',
   cost: 195,
   whitelist: ['Multicore Neural Leylines', 'Pocket Apartment'],
   desc: `Rudimentary creatures of form and flesh, simplistic souls of machine and magic, they touch your mind, fumbling in ignorance, incapable of understanding. There is a realm of existence so far beyond their own that they cannot even imagine it.
 You are beyond their comprehension.
     You. Are.
-You have transcended the purely physical and are now a radiant being of energy and patterns and information. Take one copy each of Fatality Defense and Paradox Defense for free. Your upper and lower bounds of consciousness have been expanded. You may now create a Master Core, which requires 100, 000 Least Cores’ worth of effort and mass to create. A Master Core is about the size of a modern zeppelin(75 m) and has a range of 312, 500, 000 km(~104. 45 AU). Each Master Core allows 100 additional Essence Reactors to be active at a time.
+You have transcended the purely physical and are now a radiant being of energy and patterns and information. Take one copy each of Fatality Defense and Paradox Defense for free. Your upper and lower bounds of consciousness have been expanded. You may now create a Master Core, which requires 100, 000 Least Cores’ worth of effort and mass to create. A Master Core is about the size of a modern zeppelin(75 m) and has a range of 312,500,000 km(~104.45 AU). Each Master Core allows 100 additional Essence Reactors to be active at a time.
     Biomorph: You are purely psionic, anchored to the physical world by your genetic code. Take Engineering Talent and one copy of Mind Defense for free. If a single example of your genetics continues to exist, so too shall your mind persist, though the amount of your consciousness and power that you can bring to bear is limited by the available biomass and neural tissue. All of your cores, even Least Cores, act as individual consciousnesses and relays for your true self, but you are able to guide even the smallest instances of your being even outside of that range. Fine control is limited while outside the range of a core; you can give them goals, but not control specific actions.
 Possession of a Master Core removes the credit cap on vehicles created via Symbiote larvae or your Primal Shroud. Any morph with a Greater Core or higher may now freely draw and dismiss things within it to and from the Pocket Apartment. You may use this material to repair your true form. Master Cores spread creep at a rate of about 36. 169 m per second, up to a limit of 3, 125 km. A Master Core’s presence in a continuous bed of creep will reduce the effective tier of neutral and hostile blue- star sapient beings by 2, copper - stars by 5, silver - stars by 4, gold - stars by 3, and T11s by 2, to a minimum of Tier 1.  This debuff applies at step 6.  Master Cores partially warp reality around themselves. Unless you allow otherwise, any entity within an area equal to the size of your Pocket Apartment(with upgrades) has its effective tier reduced by an additional 1, to a minimum of 1, stacking with the effects of creep. This affects even T11 targets.
 If you have Alterzelu Symbiotes, a capture target who trespasses on your creep risks being encased by creep and pulled into the nearest Medium Core or larger with spare capacity in that network, where they will be pumped full of transformative fluid and captured like anyone else.  Medium Cores can only hold one victim at a time, Greater Cores a few dozen, Grand Cores around a thousand, and Master Cores can hold tens of thousands. Your Medium and larger cores count as you for the purpose of confirming a symbiote capture. Each Master Core counts as 1000 Medium Cores for the purpose of larva production and 100 Greater Cores for the purpose of your support queen cap.
@@ -256,6 +278,7 @@ If you have a Burial Shroud, when creating places of power, targets that are lar
 
 heritages.push({
   title: 'Singularity',
+  tree: 'Transhuman',
   type: 'Self',
   cost: 11111,
   whitelist: ['Incandescent Ascendancy Machine'],
@@ -264,6 +287,7 @@ heritages.push({
 
 heritages.push({
   title: 'Lurking On The Threshold',
+  tree: 'Outsider',
   type: 'Root',
   cost: 100,
   desc: `The Outsider is a figure of countless contradictions - unknowable by nature yet known to itself, an enemy to the natural order and an agent of a greater symphony. Such paradoxes should define it inexorably out of existence and see it chased to the thresholds of possibility by the power of reason, but now they find a new resolution: a resolution in you. Emerging from the chrysalis and the cage of your former self, you are both well at home in the chaoskampf beyond the symbolic order and transcendent above the petty and limpid hazards of a base reality. Take Body Talent and one copy each of Mind Defense, Wild Defense, and Environmental Defense for free.
@@ -272,6 +296,7 @@ heritages.push({
 
 heritages.push({
   title: 'I Wear No Mask',
+  tree: 'Outsider',
   type: 'Self',
   cost: 45,
   whitelist: ['Lurking On The Threshold'],
@@ -282,6 +307,7 @@ Though exceedingly flexible and powerful, the veil of this power is borne of you
 
 heritages.push({
   title: 'Sanity - Shattering Instruction',
+  tree: 'Outsider',
   type: 'Lure, Party',
   cost: 100,
   whitelist: ['Lurking On The Threshold'],
@@ -292,6 +318,7 @@ While lesser beings have to warp their devotees into new configurations just to 
 
 heritages.push({
   title: 'Endless Gospels Unspoken',
+  tree: 'Outsider',
   type: 'Lure, Party',
   cost: 30,
   whitelist: ['Sanity - Shattering Instruction'],
@@ -301,6 +328,7 @@ Those you teach or instruct on any matter no longer need to be able to understan
 
 heritages.push({
   title: 'Beyond The Wall Of Sleep',
+  tree: 'Outsider',
   type: 'Lure, Party',
   cost: 100,
   whitelist: ['Sanity - Shattering Instruction'],
@@ -312,6 +340,7 @@ As with the prerequisite perk, this power isn’t limited to your retinue. In ab
 
 heritages.push({
   title: 'Prophet Of Paradox',
+  tree: 'Outsider',
   type: 'Self, Lure',
   cost: 145,
   whitelist: ['Sanity - Shattering Instruction', 'I Wear No Mask'],
@@ -322,6 +351,7 @@ Take Psychic Talent and one copy each of Soul Defense and Paradox Defense for fr
 
 heritages.push({
   title: 'Everywhere And Nowhere',
+  tree: 'Outsider',
   type: 'Self',
   cost: 150,
   whitelist: ['Lurking On The Threshold'],
@@ -333,6 +363,7 @@ You have some power and control over your Omen. Treat this as an elemental affin
 
 heritages.push({
   title: 'Elder Sign',
+  tree: 'Outsider',
   type: 'Other Control',
   cost: 30,
   whitelist: ['Everywhere And Nowhere'],
@@ -343,6 +374,7 @@ heritages.push({
 
 heritages.push({
   title: 'Branded By Possibility',
+  tree: 'Outsider',
   type: 'Self',
   cost: 150,
   whitelist: ['Everywhere And Nowhere'],
@@ -353,6 +385,7 @@ If you have an appropriate Shroud, then you may use a distortion sustained by th
 
 heritages.push({
   title: 'The Gate And The Key',
+  tree: 'Outsider',
   type: 'Self',
   cost: 150,
   whitelist: ['Everywhere And Nowhere', 'I Wear No Mask'],
@@ -363,6 +396,7 @@ Your connection to your Omens stretches across all of time and space, and you ha
 
 heritages.push({
   title: 'An Answer To Reason',
+  tree: 'Outsider',
   type: 'Self',
   cost: 11111,
   whitelist: ['Prophet Of Paradox', 'The Gate And The Key'],

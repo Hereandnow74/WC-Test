@@ -15,8 +15,8 @@
 
 export default defineComponent({
   setup() {
-    // const router = useRouter()
-    // router.replace('/talents/ride')
+    const router = useRouter()
+    router.replace('/talents/ride')
   },
 })
 </script>

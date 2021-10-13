@@ -1,7 +1,7 @@
 export const rideDesc = `You purchase a fully-functional, full-size replica of well-known land, sea, air, and space vehicles from various universes. Land vehicles tend to range from 5 credits to 20, while sea and air vehicles typically cost 20 to 100 credits each. Space vehicles start at 100 credits and only go up from there. Some vehicles have special variants that may cost more or less than the listed price; their prices are noted in their entries. Others have addons that can be purchased and applied to any existing copy of that vehicle, even ones you acquired outside of this catalog. You may purchase as many separate vehicles from the showroom as you can afford.
 If you have Exit Stage Left and the portal’s time limit runs out while your vehicle is only part way through, the event horizon will stretch and swallow the rest of it before the portal closes. People touching the vehicle, whose weight is not supported by it, will be left behind, as will all hostiles.`
 
-interface Ride {
+export interface Ride {
   title: string
   cost: string | number
   desc: string
@@ -11,6 +11,38 @@ interface Ride {
   Variants?: string[]
   Example?: string
 }
+
+export interface HomePerk {
+  title: string
+  cost: number
+  desc: string
+  whitelist?: string[]
+}
+
+export interface Talent {
+  title: string
+  cost: string | number
+  desc: string
+  whitelist?: string[]
+}
+
+export interface Defense {
+  title: string
+  cost: string | number
+  desc: string
+  condition?: string
+  blacklist?: string[]
+  whitelist?: string[]
+}
+
+export interface Perk {
+  title: string
+  cost: number | string
+  desc: string
+  whitelist?: string[]
+  special?: string
+}
+
 // Environment: Land
 export const rides: Ride[] = []
 
@@ -32,7 +64,7 @@ rides.push({
   title: 'Regalia',
   Source: 'Final Fantasy XV',
   cost: 5,
-  desc: '',
+  desc: 'desc',
   addons: ['Type-D upgrade (off-road) (+5)', 'Type-F upgrade (flight capability, unlimited fuel) (+10)'],
 })
 
@@ -290,24 +322,17 @@ These clones initially lack their own sense of identity, but over time will come
 For exceptionally large vehicles, typically those that cost 300 credits or more, this perk will be applied for free. If you have such a vehicle, a clone production facility will be integrated into the ship so you may replace your losses manually. This facility may also be used for other cloning programs if necessary. Otherwise, new replacement crew members will be shipped to you like any other purchased waifu.`,
 })
 
-interface HomePerk {
-  title: string
-  cost: number
-  desc: string
-  whitelist?: string[]
-}
-
 export const homeDesc = 'Like all company-supplied powers, the powers granted by these perks cannot be nullified, copied, or stolen.'
-export const homePerks: HomePerk[] = []
+export const homes: HomePerk[] = []
 
-homePerks.push({
+homes.push({
   title: 'Pocket Space',
   cost: 5,
   desc: `You now possess a timeless extradimensional inventory space. This inventory may be accessed via an app on your smart device, Apportation, or certain Heritage perks. Transferring an item into the inventory via the app requires it to be in contact with you before transport. An item pulled from the inventory via the app will be deposited into your hand or within one meter of your position.
 Your Inventory has a volume of 1m by 1m by 3m. Living beings may be stored within, but not any resisting or unwilling ones. Stamped or otherwise bound retinue members always count as willing and unresisting. Time does not pass within your Inventory, for good or ill.`,
 })
 
-homePerks.push({
+homes.push({
   title: 'Pocket Apartment',
   cost: 20,
   whitelist: ['Pocket Space'],
@@ -317,28 +342,28 @@ Some independent multiverse travelers may enter your universe directly, but only
 Your inventory becomes a sealed vault inside the apartment. You may open the vault while in your Pocket Space, but doing so subjects its contents to the passage of time. If you or a resisting or unwilling subject is inside the vault when it is sealed again, time will continue to pass.`,
 })
 
-homePerks.push({
+homes.push({
   title: 'All Roads Lead to Home',
   cost: 10,
   whitelist: ['Pocket Apartment'],
   desc: 'Your purchased and captured retinue members may now create portals to your apartment. Multiple portals are now allowed. Portals will automatically close when not in use, but their locations will be saved into memory for you and your retinue to sense and re-open later.',
 })
 
-homePerks.push({
+homes.push({
   title: 'Sweet Home',
   cost: 10,
   whitelist: ['Pocket Apartment'],
   desc: 'Your residence is double the size: 200 sq m, equivalent to a small house. It has a master suite (one large bedroom and one attached large bathroom), three other medium bedrooms, one and a half other bathrooms, a large living area, full-size kitchen with attached eating area, closet spaces, and one each of very large, large, and medium rooms that you can decide how to use: dojo, garage, library, a shared workshop, extra bedrooms, separate dining room, etc. You may also repurpose unneeded bedrooms until they’re filled. You may now make your Pocket Space any clearly delineated space within your Sweet Home, and not simply a physical vault.',
 })
 
-homePerks.push({
+homes.push({
   title: 'Grand Manor',
   cost: 20,
   whitelist: ['Sweet Home'],
   desc: 'Your living space is significantly larger, at 1,000 sq m, with every living, training, and workshop area you and your waifus might need. A control room deep in the mansion will allow you to customize the structure however you like. Specialized workshop equipment and exotic resources will only be available if you have someone who knows how to use them, whether that’s a purchased or captured retinue member, your Substitute or Possess target, or by some other means. For safety reasons, all personnel and important items will be ejected from areas undergoing rearrangement.',
 })
 
-homePerks.push({
+homes.push({
   title: 'Life’s A Beach',
   cost: 10,
   whitelist: ['Sweet Home'],
@@ -346,35 +371,35 @@ homePerks.push({
 If you bring a vehicle into the pocket dimension via Rainbow Bridge or some other method, regardless of whether the vehicle was purchased through this catalog, your dimension will have an appropriately-sized garage, dock, or hangar for it. If you have a starship from Catch-a-Ride, Heavenbuilt Proto, or third-party sources, it will be able to enter and land in your pocket universe even without a multiversal drive. Especially large dreadnoughts may require some geographic rearrangement first.`,
 })
 
-homePerks.push({
+homes.push({
   title: 'Warehouse District',
   cost: 20,
   whitelist: ['Grand Manor', 'Life’s A Beach'],
   desc: 'The basic Grand Manor offers an automatically replenishing supply of resources for each workshop, but only a limited amount at a time. Each warehouse in this district is 20 m tall and has about 50,000 sq m of floor space, enough to hold… a lot of materials. You can have as many individual warehouses as you have workshops, though this is also capped by your dimension’s physical space. New resources will appear here, in entire pallets at a time. Your retinue members’ workshops will now pull their materials from this central stockpile instead of generating their own.',
 })
 
-homePerks.push({
+homes.push({
   title: 'Sweet Home Expansion',
   cost: 50,
   whitelist: ['Life’s A Beach.'],
   desc: 'Each purchase of this perk will double the surface area of your personal world. This perk may be purchased up to 25 times, with the final purchase expanding the world into, ultimately, a round planet the size of Earth. Warning: the mansion’s control room can only manage the weather and climate of the core region. Weather patterns in the outer areas will emerge naturally.',
 })
 
-homePerks.push({
+homes.push({
   title: 'Pocket Star',
   cost: 11111,
   whitelist: ['Sweet Home Expansion (25x)'],
   desc: 'Your planet is no longer alone in its universe. This expands the pocket space’s radius to the same range as a Transhuman Master Core (~104.45 AU) and places a yellow star at the center with your planet orbiting around it. No additional planets or other features are included in this perk.',
 })
 
-homePerks.push({
+homes.push({
   title: 'Niven? Never Heard of Him',
   cost: 1200,
   whitelist: ['Pocket Star'],
   desc: 'Your planet is now a full-size ringworld, a solid mass roughly 1.6 million km across and stretching across the entirety of its 940 million km orbital circumference. Including the inner shade ring, the contained atmosphere, and the regularly-placed stations on the outside of the ring - with their own reversed artificial gravity and access to the inner surface - it’s nearly 30 km thick. Even with significant immigration, a contractor’s ringworld may last millions of years before overpopulation ever becomes an issue.',
 })
 
-homePerks.push({
+homes.push({
   title: 'Adjustment Field',
   cost: 200,
   whitelist: ['Grand Manor',
@@ -387,20 +412,13 @@ homePerks.push({
 The Adjustment Field’s modification suite is identical to that of Advanced Tempest Runes (Mind). You can apply separate sets of effects to inhabitants, visitors, and intruders, or more specific categories beyond that, and cycle between them as desired. The Adjustment Field is blocked by both Polymorph and Wyldscape Defense.`,
 })
 
-homePerks.push({
+homes.push({
   title: 'Rainbow Bridge',
   cost: 30,
   whitelist: ['All Roads Lead to Home', 'Exit Stage Left', 'Sweet Home'],
   desc: `A dedicated portal room allows pedestrian or vehicle access to your starting world and anywhere else you travel to. You and your retinue may no longer, and need no longer, create portals manually. Instead, portal sites are procedurally generated in each world, generally appearing near locations that are important or useful to you or your purchased and captured waifus. Portals will activate automatically when approached by a valid user: you, your waifus, and friendlies you invite, and deactivate automatically when not used. You and your retinue can sense the nearest portal’s location even without a map, and more precisely the closer you are to it. This is no replacement for a true map. Neutral, hostile, and uninvited eyes will not notice a portal’s presence, activation, or use, and cannot pass through.
 Your first portal will only lead to your starting world. After that, new worlds will slowly unlock according to the same rules as Exit Stage Left. You may also unlock new worlds by either traveling there yourself or capturing a waifu who’s been there personally. All purchased waifus, without the Yoink or Slightly Used perks, have only been to two worlds: the world you bought them in and the factory where they were made. Don’t bother trying to go there. It’s employees-only.`,
 })
-
-interface Talent {
-  title: string
-  cost: string | number
-  desc: string
-  whitelist?: string[]
-}
 
 export const talentsDesc = 'Like all company-supplied powers, the powers granted by these perks cannot be nullified, copied, or stolen. Some of these perks may be partly or entirely redundant, depending on your choice of Origin.'
 export const talents: Talent[] = []
@@ -564,15 +582,6 @@ The descriptions for each Defense represent the starting points for each defense
 Each Defense has an associated discount, conditional on the traits of your Origin and retinue members, equal to the list price of the qualifying individual’s effective tier after step 3 and capped at 40% of the list price of each Defense stage. This also applies if you only meet the condition after you started your contract - in which case the discount is always 40% - or a retinue member (purchased or captured) only does so while in your service. One individual can qualify you for multiple discounts.
 If you have multiple separate discounts for the same Defense, they’ll stack: three full discounts to the same Defense will make one stage of it free, while a total of five full discounts will make both stages free. If that happens, any extraneous free copies of that Defense from your Controls or Heritage perks will instead discount those perks by the Defense’s full value, up to the standard cap on that kind of discount. If you sell or otherwise lose a retinue member whose presence granted you a discount, you’ll lose the discount as well.`
 
-interface Defense {
-  title: string
-  cost: string | number
-  desc: string
-  condition?: string
-  blacklist?: string[]
-  whitelist?: string[]
-}
-
 export const defenses: Defense[] = []
 
 defenses.push({
@@ -707,14 +716,6 @@ defenses.push({
   desc: `You are the master of your timeline. Temporal slowdowns will have increasingly weaker effects on you the stronger they are - a weak slowing effect will be even weaker, but a stronger one and even a total time-stop will not leave you completely unable to react. You will retain memories of previous timelines, loops, or other resets, even if they are faded or incomplete, and any attempts to spy on or change your timeline will have the same problems mentioned under Information, Trace, and Destiny Defenses. Attempts to erase you entirely will merely leave you weakened, faded, or flickering into and out of existence randomly.
 This perk also blocks forced unwanted teleportation, whether that involves sending you somewhere else or sending something into your current position. Resistance to such effects may make the teleport require more effort or send you somewhere inconvenient to both yourself and the teleporter.`,
 })
-
-interface Perk {
-  title: string
-  cost: number | string
-  desc: string
-  whitelist?: string[]
-  special?: string
-}
 
 export const perks: Perk[] = []
 

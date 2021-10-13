@@ -20,7 +20,7 @@ export const desc = `<p>All bindings ensure a waifu's loyalty, friendship, and r
     turn active when higher bindings are removed. If you have any binding, but capture a waifu using only Lures,
     the Stamp’s effects will apply regardless and her full tattoo will appear immediately.</p>`
 
-interface Binding {
+export interface Binding {
   title: string
   effect?: string
   desc: string
@@ -30,14 +30,6 @@ interface Binding {
 }
 
 export const bindings: Binding[] = []
-
-bindings.push({
-  title: 'No Bindings',
-  effect: 'All waifus of tiers 2-10 are discounted by one full rank.',
-  desc: 'None of your waifus will be affected by any of the effects common to all company bindings. This is your warning. If you purchase and use a real binding method later, the discount will disappear and you will go into debt. You do not need to bind your previously-purchased waifus immediately. Capturing any waifu without bindings will award you the standard capture value of her original tier, before this option’s purchase discount. It will also give her a dormant tattoo, which you can activate at any time by using the Stamp (should you purchase it) or removing a higher Binding. If you instead switch to this option after already having bound waifus, the basic effects common to all bindings will persist in your retinue members until interactions or events change their minds naturally.',
-  cost: 0,
-  whitelist: [] as string[],
-})
 
 bindings.push({
   title: 'Company Stamp',
@@ -52,7 +44,7 @@ The stamp never runs out of ink and cannot be used accidentally. If you are stam
 bindings.push({
   title: 'Megapixel',
   cost: 150,
-  whitelist: ['Stamp'],
+  whitelist: ['Company Stamp'],
   desc: 'Favored by stalkers everywhere, your stamp is now a digital app for your smart device. Just take a photo of the target waifu, rotate, zoom, and pan around a generated 3D model of her until you’ve found the right place for your tattoo, and apply the tattoo remotely. The same 72-hour waiting period and all of the related rules apply for the camera app as they do for the stamp. This is a company app and benefits from all such protections.',
 })
 
@@ -335,4 +327,189 @@ bindings.push({
   desc: `Your Shroud is no longer merely an extension of your will, but part of your being. You are able to transform portions of yourself into your element(s) and heal or recharge yourself by absorbing manifestations of said element that you didn't create. If you had not already been capable of flight with your Shroud, you are now capable of such.
 Once again, controlling an elemental manifestation that has a will of its own involves usurping said will with your own like any other sapient target. Individuals absorbed in such a manner, such as a gynoid via the Cyber Shroud, or a normal human via the Primal Shroud, may be bound like anyone else, recreated and released from your service, or their form stolen. This process is instant if performed on a shroud-bound retinue member. This process is based on the Possess Origin. New skills, traits, and abilities gained via this method are added to your true form as if you had Possessed the character. You also gain the target’s episodic memory, as if you had Substituted into them.
 Manifestations whose forms were stolen count as captured, but you do not get a credit reward for doing so. You may still sell a stolen form to the company afterward like any other target for 20% of the list price for the target’s effective tier after step 4, rounded up to the nearest whole number. This will remove the form from your library.`,
+})
+
+export const lureDesc = 'Lure-type controls are more subtle than bindings, but cannot directly capture targets. All lures work equally well on male, female, and other targets, and instead only obey the user’s orientation. You may purchase any number of lures. Like all company-supplied powers, lures cannot be nullified, copied, or stolen.'
+
+export interface Lure {
+  title: string
+  cost: number
+  desc: string
+  whitelist?: string[]
+}
+
+export const lures: Lure[] = []
+
+lures.push({
+  title: 'Sticky Fingers',
+  cost: 5,
+  desc: 'You know all the points that make a waifu melt. You can play her like a piano. Your very touch is electrifying. You are also a sexual savant. Keep a waifu on the edge long enough, and she’ll promise anything to make it stop. With your skills, she’ll be sure to keep that promise. This lure cannot affect targets who lack a sense of touch.',
+})
+
+lures.push({
+  title: 'Faerie Feast',
+  cost: 10,
+  desc: `Your cooking is supernaturally good, capable of making miracles from the worst ingredients. Just one taste is enough to hook a waifu for life - assuming, of course, that she can taste. Even if she doesn't like you, she'll be unable to imagine a world where she can't eat your cooking every day, and stay with you for that alone. Over time, you can leverage this dependence into obedience through simple operant conditioning and, in turn, create real affection by enforcing faked affection.
+The quality of your ingredients doesn’t matter, but they must be real ingredients. This lure will not let you cook without the proper tools, unless you have an adequate substitute. This lure also covers drink-mixing, butchery, and chemical food processing, but does not help with gardening, farming, animal husbandry, fishing, etc. - that’s biology, not chemistry. If you want to use this lure’s gifts as a professional skill, you can dial your ability down to world-class-chef levels, enough to ensure great business (and plenty of repeat customers) without tripping any "this food might be literally addictive" alarms.
+This lure cannot affect targets who lack a sense of taste.`,
+})
+
+lures.push({
+  title: 'Don’t Stand So Close to Me',
+  cost: 15,
+  desc: `Hot for Teacher. Targets that either teach you or are taught by you, no matter the subject, will start to fall for you. They’ll find themselves thinking about the subject matter, about your instruction, about the next lesson, and you yourself will worm your way to the forefront of their thoughts, even as worrying about their next lesson, getting good grades, or encouraging learning twists itself into a more romantic or sexual nature.
+The longer, more personal, and more intense the instruction, the greater the effect. Students already interested in the subject matter are particularly susceptible. This perk is optimized for 1 on 1 instruction.`,
+})
+
+lures.push({
+  title: 'Arlo',
+  cost: 15,
+  whitelist: ['at least one retinue member whose apparent age is younger than yourself.'],
+  desc: `The sight of a cute kid calling a new haremette “mama” has real power. Select a retinue member whose apparent age is younger than yourself to act as bait and approach the target together. This need not be the same individual every time. The bait acts as your child or younger sibling, playing the target’s parental/nurturing instincts against them by signaling that you have a need for a caretaker in your household - and the bait would prefer that caretaker to be the candidate right in front of them. This lure is stronger if:
+The target has stronger parental/nurturing instincts.
+The bait is your direct descendant or younger relative, or registered as adopted through our systems.
+The bait is cuter or more vulnerable - or at least appears so.
+The bait’s apparent age is sufficiently younger than the target’s real age.
+This lure will not affect targets whose race (human, kitsune, vulcan, etc.) is naturally incapable of having children.`,
+})
+
+lures.push({
+  title: 'Alluring Whisper',
+  cost: 20,
+  desc: 'Your voice is supernaturally alluring. Merely whisper in a target’s ear, and her heart (and panties) will turn to goo. Better results will come with vocal training and improved phrasing. (You can also use this perk to become an ASMR superstar. We won’t judge.) Beings with sufficient willpower can resist or even block this lure. It will never affect someone who lacks a sense of hearing.',
+})
+
+lures.push({
+  title: 'Love Spot',
+  cost: 20,
+  desc: `Just like Diarmuid's in Fate/Zero: you gain a mole under one of your eyes that fascinates any woman who sees it and makes them infatuated with you on the... spot. If you already have a mole in such a location, you don't get a second one. If you’d rather not have a beauty mark, this lure can be re-fluffed to make any one body part supernaturally alluring. The charm effect relies on line-of-sight: it may be blocked by covering up the alluring asset, but not turned off. The effect intensifies with exposure.
+This lure may be reduced or nullified if the target has enough magic resistance. It will never affect targets who lack a sense of sight.`,
+})
+
+lures.push({
+  title: 'Potpourri',
+  cost: 20,
+  desc: `Your sense of smell is more acute than most, detecting and cataloging scents and their origin, and studying others to see their reactions to them. You have also gained some control over how you smell, letting you manipulate others on a level that most would never notice and the rest might just think unusual. From the scent of roses to call up some passion in a romance, to that of freshly baked cookies to aid in relaxing others, you have figured out how to use those scents to alter their emotions, often convincing them to let their guard down or spark conflicts between others. This also allows you to pick up on pheromonal cues and scent based languages/markings, if you have some experience with them. You can also choose to "tune out" specific scents after some experience.
+This perk cannot affect targets who lack a sense of smell.`,
+})
+
+lures.push({
+  title: 'Zenryoku Zenkai',
+  cost: 20,
+  desc: `Full Power! Total Destruction! Targets you defeat in combat or another contest, whether physical, mental, or social in nature, will fall for you all the harder. You’ll be at the forefront of all their thoughts as their wish to meet you again to even the score twists itself into a more romantic or sexual yearning. The more decisive and dramatic your victory, and the higher the perceived stakes for each of you, the stronger this lure’s effect. Defeating a target in a training spar will have only negligible results, but stopping a villainess in a life-or-death battle for the fate of a universe will add her to your harem practically the moment she wakes up.
+This lure is optimized for symmetric 1v1 duels in the target’s specialty field. The contest must be initiated or otherwise freely accepted by the target, even implicitly. This lure drops in effectiveness the more you rely on equal teammates; in contests of leadership ability, from team sports to military command, any unit who follows your instructions or plans will not count as a teammate. If your target catches you cheating in a match that has strict rules, this lure will not apply to the result even if you nominally win. If you catch your opponent cheating in such a match, this lure will still apply to the result even if you nominally lose.`,
+})
+
+// If you ever trade in a lure, any expansion you bought for it will be refunded automatically at the standard rate. Like all company-supplied powers, the powers granted by these perks cannot be nullified, copied, or stolen.
+
+lures.push({
+  title: 'Sticky Fingers: Brown Sugar',
+  cost: 15,
+  whitelist: ['Sticky Fingers'],
+  desc: 'A natural aphrodisiac flows through your veins, further enhancing any sexual experience in which your fluids are involved. You are immune to this aphrodisiac even without Body Defense. Additionally, if you have male genitalia, you can secrete a natural lubricant from it when aroused. This aphrodisiac will be included in that as well.',
+})
+
+lures.push({
+  title: 'Faerie Feast: Master Chef',
+  cost: 10,
+  whitelist: ['Faerie Feast'],
+  desc: 'When you are in charge of, or at a minimum supervising, the staff of a cooking facility, the benefits of your Faerie Feast perk will apply to the end product as though you had personally produced any food cooked there. If the staff primarily consists of your waifus, you don’t even need to be present, provided they follow a specific menu and set of guidelines that you’ve instructed them in. These guidelines can include extraneous non-food related steps. This does not apply to industrial-scale food production or ingredients that are not themselves edible.',
+})
+
+lures.push({
+  title: 'Faerie Feast: The Secret Ingredient is Love',
+  cost: 5,
+  whitelist: ['Master Chef'],
+  desc: 'Members of your retinue that are already skilled at cooking no longer need your guidance to benefit from Faerie Feast, provided at least part of the meal is intended for consumption by you or other members of your retinue.',
+})
+
+lures.push({
+  title: 'Alluring Whisper: Siren’s Song',
+  cost: 80,
+  whitelist: ['Alluring Whisper'],
+  desc: 'Your voice is supernaturally compelling. As an active effect, you can empower your words to give specific commands to individuals, or rally a crowd with a song. Additionally, take Performance Talent for free. Beings with sufficient willpower can resist or even block this lure. It will never affect someone who lacks a sense of hearing.',
+})
+
+export const lureExpansionDesc = 'These perks are either expansions to multiple Bindings or serve as alternative methods to capturing or controlling your retinue. Like all company-supplied powers, the powers granted by these perks cannot be nullified, copied, or stolen.'
+
+export interface LureExpansion {
+  title: string
+  cost: number
+  whitelist?: string[]
+  desc: string
+  image?: string
+}
+
+export const lureExpansions: LureExpansion[] = []
+
+lureExpansions.push({
+  title: 'Conjunction',
+  cost: 25,
+  whitelist: ['Second-Generation Symbiote or Complementary Colors'],
+  desc: `In addition to its other effects, the Binding method you use now adds its subjects to an empathic and telepathic group mind centered on yourself. This group mind operates on two levels: the higher, active, level allows everyone connected to participate in the telepathic equivalent of a chatroom, regardless of distance or barriers, such that you could even communicate between different multiverses. Your retinue members may actively share and experience each others’ senses through this network. The deeper, passive, level gives your waifus a full awareness of your activity and needs, such that they may even respond to orders that you haven't consciously given yet.
+This is only a group mind, not a hive mind. You and all your waifus retain your full individuality within the network and have no risk of forgetting whose life is whose. Any morality shifts that your waifus may develop are simply the result of close mental proximity to, and enforced empathy for, people with vastly different backgrounds and life experiences than their own.
+If you have the Symbiote, higher-ranked hosts in the swarm’s hierarchy will have more privilege in this network than lower-ranked hosts. As the person at the top of the hierarchy, you can demand access to the sensory feeds of anyone in the network and receive it without question. If you have the Shroud, your ability to read the minds of your waifus and access their senses is not so intuitive - at least not with this perk alone.
+Additionally, retinue members bound through the method you used to unlock this expansion, whose powers rely on a background magic field and are operating outside of one will no longer be hampered when outside your presence. With this perk, they are always in your presence, no matter the distance.`,
+})
+
+lureExpansions.push({
+  title: 'Apportation',
+  cost: 25,
+  whitelist: ['Basic Tempest Runes or Shroud of Power'],
+  desc: `You and the retinue members you’ve bound, through the method you used to unlock this expansion, are now capable of teleporting yourselves, or anything in hand, to anyone else within your retinue as a whole with a few moments’ concentration. Doing this without some method of advance warning may be ill-advised. If you have Pocket Apartment or higher, you may teleport objects into appropriate spaces in the apartment instead of dropping directly in on someone else. If you have All Roads Lead To Home or Rainbow Bridge, you and your waifus may always teleport into the apartment instead of opening portals therein. If you do so personally and then try to open a portal out, you must still place the exit reasonably close to your previous outside-world location.
+Teleporting something you have in hand does not require ownership, but certain conceptual limitations and the time required to initiate and complete the teleportation prevent this ability from being used as an attack or defense vector. You can’t strip your enemies of their Infinity+1 armor by grabbing hold of them, let alone telefrag people, nor shunt incoming bullets into a containment unit back at home.
+A person or item held by your or a retinue member’s telekinesis, Shroud, or insides (or some other method) may be teleported as if it’s literally in hand. Merely encompassing it with subtle manifestations of the Shroud (as enabled by Elemental Loom) doesn’t count. The Tempest Jewelry version of this perk uses the jewelry pieces themselves as beacons and cannot work through any deactivated pieces.`,
+})
+
+lureExpansions.push({
+  title: 'Hotel California',
+  cost: 20,
+  desc: `This seemingly-innocuous entertainment or hospitality venue uses a legitimate business of your choice as a cover for mind control. Options include, but are not limited to, a pub, restaurant, amusement park, music venue, circus, casino, and luxury resort. Strip clubs in particular are a perennial favorite. Most customers are only compelled to spend more and bring their friends when they come back, but a very different fate is in store for those you select as capture targets. As they spend time within your walls, they’ll be beautified according to a blend of your standards and the establishment’s overt purpose.
+After some time, your staff will offer each of your targets the chance to experience your business from the other side by helping out with a short performance, or other task, that lasts no more than ten minutes. The building’s compulsion will make them agree; a skill download during the run-up time will more than compensate for any lack of experience or talent. As they do their task, they’ll be further transformed to match your chosen theme and become yours when they’re done. Waifus acquired in this way are considered captured like anyone else.
+Themes can be changed at any time, but require you to have at least three purchased or captured waifus who already fit that theme pre-transformation. If you want a robots theme, you need at least three cyborgs, gynoids, or software AIs; if you want maids, you need at least three actual maids or characters who dressed as maids at least once in canon or official art.
+The actual building exists in a secure dimensional space. Its front entrance uses applied quantum uncertainty to open in random-but-fateful locations throughout the multiverse. Customers will always return to the same universe they came from and won’t notice anything strange about any customers from other worlds that they may encounter within. A side door allows you and your waifus access to your local universe.
+You are immune to your own building’s effects, but will be required to experience every one of your employee’s jobs firsthand at least once. (Temporary genderbending and other transformations will be provided if necessary.) Your employees are immune to repeat or any further transformations, unless you reassign them to other positions or choose a new theme, in which case they’ll be changed to fit their new role.
+If you have the Alterzelu Symbiote, any of your employees who are both not bonded with a symbiote and are alone in an employees-only room for more than a few minutes risk getting attacked by a stray larval symbiote. Your waifus who are already bonded with one will not help the newbies until it’s over.`,
+})
+
+lureExpansions.push({
+  title: 'Command Seals',
+  cost: 'Special (5 per set)',
+  whitelist: ['At least one Nasuverse Servant'],
+  desc: `These sets of three Command Seals each will appear somewhere on your body, forming an abstract design unique to you. Each Command Seal allows you to give one unbreakable order to a Servant under your control, along with a power boost for the duration of the order. The more specific the order and the shorter its duration, the stronger the boost and according compulsion, and vice versa. General orders with indefinite durations can, eventually, be ignored, but a specific command with an instant duration will offer the Servant no chance to resist. One spent Command Seal will regenerate every 24 hours. You may have as many sets of seals as you have purchased or captured Servants, counting only the characters denoted as Servants in this CYOA. The first set of seals is free.
+If you purchase or capture an eligible Master from a published Fate/ work, and have at least one Servant per Master, you can delegate a single Servant to each. Canon Master-Servant pairs take priority. Delegate Masters' Command Seals are free and regenerate independently at the same rate as yours, but still count against your total and cannot be directly used by you. If you ever find yourself in an actual Holy Grail War, and all of your Command Seals are delegated, you will still have an inert set of Seals that may be used to summon, or contract with, a Servant locally. A locally summoned or contracted Servant will not be bound unless you apply a Binding-type control.
+Each Ruler-class Servant you summon may carry six additional sets of Seals on their body. These extra Seals must be paid for, regenerate independently from any others, and may be used by yourself or any delegate Master.`,
+})
+
+lureExpansions.push({
+  title: 'Command Seals: General Seals',
+  cost: 10,
+  whitelist: ['At least one set of Command Seals. Retroactively removes the previous control’s Nasuverse Servant requirement.'],
+  desc: 'Command Seals may now be used on any purchased or captured waifu, not just Servants. Your Command Seals purchase limit now counts all non-canon Servants of any tier and all non-Servant retinue members of tier 6 or higher, in addition to all Servants. This ignores all effective tier changes after step 4.',
+})
+
+lureExpansions.push({
+  title: 'Divine Marking',
+  cost: 20,
+  whitelist: ['At least one deity from the Danmachi setting'],
+  image: 'https://static.wikia.nocookie.net/powerlisting/images/5/5d/Danmachi_Gods_Falna_Blessings.png/revision/latest?cb=20190707034500',
+  desc: 'A deity in your service who grants or updates a Falna, including non-Danmachi deities who’ve learned how to do so, are considered to be applying a Stamp to the Falna’s holder, even if you lack that binding. The Falna itself will seem no different than normal. This Falna-Stamp requires the normal three-day period to fully bind the recipient.',
+})
+
+lureExpansions.push({
+  title: 'Space Truckin’',
+  cost: 100,
+  whitelist: ['At least one of each of the following:',
+    'Land vehicle purchased or registered through Catch-a-Ride',
+    'Retinue member who is a deity or capable of true resurrection'],
+  image: 'https://i.imgur.com/cNBAVke.png',
+  desc: `The legendary Truck-kun is your vehicle. When you or one of your retinue members drives a land vehicle that’s been registered with us as yours, anyone you run over with it will be captured, as if by the Stamp, and sent to a random world that you do not already have access to. Your target must actually die from the impact, but not necessarily immediately. The capture will fail if the target evades your vehicle or survives the impact. The maximum number of active isekai victims you can manage simultaneously scales with the number and tier of deities in your retinue after step 5, as shown in the chart. Your total cap is the sum of the individual caps of each deity in your retinue.
+Worlds your isekai targets are sent to will not become accessible to the rest of your retinue through Exit Stage Left or other company perks until the target completes a local storyline (charges Exit Stage Left to completion). This will count as you charging Exit Stage Left yourself. If the target dies before they can do so and you have Warranty Plan, they will respawn in your demiplane (if you have one) or otherwise near you, where they can be bound through your other means. If you have We Will Meet Again or Rainbow Bridge, they can then return to the world they were sent to, with any reinforcements or other support you choose to give them. Neither successful nor failed isekais are “active” and will not continue to count against your cap above.`,
+})
+
+lureExpansions.push({
+  title: 'Space Truckin’: Highway Star',
+  cost: 100,
+  whitelist: ['Space Truckin’'],
+  desc: 'Active isekai victims from Space Truckin’ will now act as proxies for your own captures. Until the victim completes a local storyline or dies in the process, sincere love confessions delivered to them will bind the confessor to you just as one that you received directly. Your isekai victim will also experience the full benefits of your Lures and Lure Expansions for this duration, as if they were you.',
 })

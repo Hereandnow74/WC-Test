@@ -9,12 +9,13 @@
       <Table :headers="worldTitles" :rows="worldData" class="" />
       <Table :headers="waifuTitles" :rows="waifuData" class="" />
     </div>
+    <Desc class="bg-red-100 dark:bg-gray-800" :desc="pvpRules" />
   </div>
 </template>
 
 <script lang="ts">
 import { WORLD_RATINGS } from '~/data/constatnts'
-import { startingDesc } from '~/data/rules'
+import { startingDesc, pvpRules } from '~/data/rules'
 
 export default defineComponent({
   setup() {
@@ -38,6 +39,7 @@ export default defineComponent({
     ]
     return {
       startingDesc,
+      pvpRules,
       worldTitles,
       worldData,
       waifuTitles,

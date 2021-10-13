@@ -35,6 +35,10 @@ const props = defineProps({
     type: String,
     default: '',
   },
+  level: {
+    type: Number,
+    default: 0,
+  },
 })
 
 const router = useRouter()
@@ -44,7 +48,11 @@ const activeIndex = ref(0)
 
 onMounted(() => {
   const arr = window.location.pathname?.split('/') || []
-  const name = arr[arr.length - 1]
+  let name = ''
+  if (arr.length > 2)
+    name = arr[arr.length - 1 - props.level]
+  else
+    name = arr[arr.length - 1]
   const ind = props.items.indexOf(name)
   if (ind !== -1) scrollInto(ind)
 })

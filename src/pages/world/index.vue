@@ -1,7 +1,7 @@
 
 <template>
   <div class="p-2">
-    <div class="max-w-4xl p-2 mx-auto flex gap-2 items-center">
+    <div class="max-w-4xl md:p-2 mx-auto flex gap-2 items-center">
       <Input
         v-model="search"
         label="Search"
@@ -9,7 +9,7 @@
         class="w-full"
       />
       <clarity:eraser-solid class="icon-btn w-8" @click="search = ''" />
-      <span class="pl-4 whitespace-nowrap">Worlds in database: {{ worldsCount }}</span>
+      <span class="hidden md:block pl-4 whitespace-nowrap">Worlds in database: {{ worldsCount }}</span>
     </div>
     <Foldable v-if="allUserWorlds.length" class="text-lg mb-2" title="User Worlds">
       <div class="mb-4 flex flex-wrap gap-1 overflow-y-auto">
