@@ -7,7 +7,7 @@
         :id="heritage.title"
         :key="heritage.title"
         class="p-2 mb-2 inline-block"
-        :class="isAvailable(heritage) ? heritageColors[heritage.tree]: 'bg-gray-400 dark:bg-gray-600'"
+        :class="isAvailable(heritage) ? heritageColors[heritage.tree]: 'bg-gray-200 dark:bg-gray-600'"
         @click="pickHeritage(heritage)"
       >
         <h3 class="text-center text-xl relative">
@@ -17,6 +17,9 @@
             class="absolute right-1 top-1 text-green-500"
           />
         </h3>
+        <h6 v-if="heritage.tree !== 'None'" class="text-center font-sm text-gray-600 dark:text-gray-400">
+          ({{ heritage.tree }})
+        </h6>
         <Desc :desc="heritage.desc" />
         <div v-if="heritage.whitelist">
           Requirements: [

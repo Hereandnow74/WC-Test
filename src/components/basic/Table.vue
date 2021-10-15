@@ -1,5 +1,5 @@
 <template>
-  <table class="border-collapse bg-amber-300 text-gray-600">
+  <table class="border-collapse bg-amber-200 text-gray-600">
     <thead>
       <th v-for="header in headers" :key="header" class="border border-gray-600 px-2">
         {{ header }}

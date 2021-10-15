@@ -32,6 +32,11 @@ const binding = ref([] as {
   cost: number
 }[])
 
+const luresBought = ref([] as {
+  title: string
+  cost: number
+}[])
+
 const heritage = ref([] as {
   title: string
   cost: number
@@ -89,6 +94,9 @@ const baseBudgetAfter = computed(
 const flags = reactive({
   noBindings: true,
   noHeritage: true,
+  danger11Start: false,
+  pvpEnabled: false,
+  chargen: true,
 })
 
 const budget = computed(() => {
@@ -105,12 +113,13 @@ const budget = computed(() => {
   const defensesCost = defensePerks.value.reduce((a, x) => a += x.cost, 0)
   const miscPerksCost = miscPerks.value.reduce((a, x) => a += x.cost, 0)
   const waifuPerksCost = waifuPerks.value.reduce((a, x) => a += x.cost, 0)
+  const luresCost = luresBought.value.reduce((a, x) => a += x.cost, 0)
 
   const tierMod = flags.noBindings ? 2 : 1
   const companionsCost = companions.value.reduce((a, x) => a += CHAR_COSTS[x.tier - tierMod] || 1, 0)
 
   return (baseBudget.value + intensityFlat) * (1 + intenMultiplier) - startingOrigin.value.cost
-         - bindingCost - heritageCost - ridePerksCost - homePerksCost - talentsCost - defensesCost
+         - bindingCost - heritageCost - luresCost - ridePerksCost - homePerksCost - talentsCost - defensesCost
          - miscPerksCost - waifuPerksCost - companionsCost
 })
 
@@ -126,6 +135,7 @@ export function useStore() {
     localUserWorlds,
     intensities,
     binding,
+    luresBought,
     heritage,
     ridePerks,
     homePerks,

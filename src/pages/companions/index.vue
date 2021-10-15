@@ -29,7 +29,7 @@
           <div class="flex-grow relative">
             <img class="rounded absolute object-cover h-full w-full object-top" :src="char.image" :alt="char.name">
             <icon-park-outline:full-screen-one
-              class="absolute top-1 right-1 hover:text-blue-400 cursor-pointer"
+              class="absolute top-1 right-1 hover:text-blue-400 cursor-pointer mix-blend-difference"
               @click="() => (showModal = true, modalImage=char.image)"
             />
           </div>

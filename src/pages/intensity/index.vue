@@ -7,11 +7,19 @@
         :id="rule.title"
         :key="rule.title"
         class="p-1 rounded cursor-pointer relative mb-2 inline-block pb-4"
-        :bg="requirementsMet(rule) ? 'blue-100 dark:gray-700 hover:blue-200 dark:hover:gray-800' : 'gray-300 dark:gray-600'"
+        :bg="requirementsMet(rule) ? 'blue-100 dark:gray-700 hover:blue-200 dark:hover:gray-800' : 'gray-200 dark:gray-600'"
         @click="choose(rule)"
       >
         <h3 class="text-xl text-center">
           {{ rule.title }}
+          <span v-if="rule.pvp" class="text-base">(
+            <router-link
+              :to="{path: '/', hash:'#pvp'}"
+              class="text-blue-700 dark:text-blue-300"
+              @click.stop
+            >
+              PvP
+            </router-link>)</span>
         </h3>
         <div v-if="rule.intensity" class="px-2">
           Bonus for intensity: {{ rule.intensity <= 1 ? baseBudgetAfter * rule.intensity : rule.intensity }}
@@ -20,8 +28,9 @@
         <div v-if="rule.special" class="px-2">
           Special: {{ rule.special }}
         </div>
-        <div v-if="rule.requires" class="px-2">
-          Req: {{ rule.requires }}
+        <div v-if="rule.whitelist" class="px-2 flex gap-2">
+          Requires:
+          <Enum :list="rule.whitelist.map(x => ({title: x}))" path="/intensity" />
         </div>
         <bi:check-lg
           v-if="allEffects.includes(rule.title)"

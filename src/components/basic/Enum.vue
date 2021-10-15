@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div @click.stop>
     <div v-if="list.length" class="">
       [
       <router-link v-for="el, i in list" :key="el.title" :to="{path, hash:'#'+el.title}">

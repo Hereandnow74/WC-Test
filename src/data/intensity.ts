@@ -7,11 +7,11 @@ starting build: your <b>char</b>acter <b>gen</b>eration, not your retinue member
 export interface Intensity {
   title: string
   intensity: number
+  pvp?: boolean
   special?: string
   blacklist?: string[]
   whitelist?: string[]
   desc: string
-  requires?: string
   needed?: number
 }
 export const intensity: Intensity[] = []
@@ -53,6 +53,7 @@ intensity.push({
 intensity.push({
   title: 'One In Ten',
   intensity: 50,
+  pvp: true,
   special: 'Gauntlet only, mutually exclusive with Fight For Your Right',
   blacklist: ['Fight For Your Right'],
   desc: 'This is the most basic option. You are only locked into PvP for 10 rounds. Negotiable opponents will  appear from round 1 to round 9 and you will face a Rival in round 10. You will not face any Enemies. Members of your retinue rated T11 may not directly participate. Your prize for survival is 200 credits.',
@@ -60,6 +61,7 @@ intensity.push({
 intensity.push({
   title: 'Fight For Your Right',
   intensity: 0.2,
+  pvp: true,
   special: 'Gauntlet only, mutually exclusive with One In Ten',
   blacklist: ['One In Ten'],
   desc: `This is the default option. You are locked into PVP for 20 rounds. Negotiable opponents may appear from round 1 to round 15, Rivals may appear from round 11 to round 19, and you will always face an Enemy on round 20. Members of your retinue rated T11 may not directly participate. Your prize for survival is one T11 ticket.
@@ -68,7 +70,7 @@ You may transition to this challenge after completing One In Ten. If you do so, 
 intensity.push({
   title: 'Survivalism',
   intensity: 0.2,
-  requires: 'Fight For Your Right',
+  pvp: true,
   whitelist: ['Fight For Your Right'],
   desc: `You are locked into PVP for 50 rounds. Negotiable opponents may appear from round 1 to round 25, Rivals may appear from round 16 to round 40, and Enemies may appear starting on round 36. This scaling overrides the effect of the previous challenge. Members of your retinue rated T11 may not directly participate before round 46. Your prize for survival is three additional T11 tickets, on top of the reward for the previous challenge.
 You may transition to this challenge after completing Fight For Your Right. The additional budget increase will be applied according to the highest - danger world you’ve visited.`,
@@ -76,7 +78,7 @@ You may transition to this challenge after completing Fight For Your Right. The 
 intensity.push({
   title: 'Marathon',
   intensity: 0.4,
-  requires: 'Survivalism',
+  pvp: true,
   whitelist: ['Survivalism'],
   desc: `You are locked into PVP for 100 rounds. Negotiable opponents may appear from round 1 to round 40, Rivals may appear from round 31 to round 70, and Enemies may appear starting on round 61. This scaling overrides the effects of the previous two challenges. Members of your retinue rated T11 may not directly participate before round 91. Your prize for survival is six additional T11 tickets, on top of the rewards for the previous challenges, plus the dimensional coordinates to your original homeworld in a format compatible with Rainbow Bridge or your other travel methods.
 You may transition to this challenge after completing Survivalism, or together with Survivalism after completing Fight For Your Right. If you choose the latter, the reward for completing Survivalism will be added to this challenge’s reward, so the total prize is still 10 T11 tickets. The additional budget increase will be applied according to the highest - danger world you’ve visited.`,
@@ -84,7 +86,7 @@ You may transition to this challenge after completing Survivalism, or together w
 intensity.push({
   title: 'Come At Me Bro',
   intensity: 0.2,
-  requires: 'Fight For Your Right',
+  pvp: true,
   special: 'Mutually exclusive with Arena',
   whitelist: ['Fight For Your Right'],
   blacklist: ['Arena I'],
@@ -93,7 +95,7 @@ intensity.push({
 intensity.push({
   title: 'Arena I',
   intensity: 0.2,
-  requires: 'One In Ten or Fight For Your Right',
+  pvp: true,
   special: 'Mutually exclusive with Come At Me Bro',
   whitelist: ['One In Ten', 'Fight For Your Right'],
   needed: 1,
@@ -103,49 +105,49 @@ intensity.push({
 intensity.push({
   title: 'Arena II',
   intensity: 0.2,
-  requires: 'Arena, Fight For Your Right',
+  pvp: true,
   whitelist: ['Arena I', 'Fight For Your Right'],
   desc: 'You will face five opponents at a time instead of three. Their budgets are determined by the number of defeated opponents, regardless of who eliminated them. The rest period timer will trigger whenever the number of active contestants, including you, ever falls below six or the number of remaining rounds(whichever is lower).',
 })
 intensity.push({
   title: 'Arena III',
   intensity: 0.2,
-  requires: 'Arena II, Survivalism',
+  pvp: true,
   whitelist: ['Arena II', 'Survivalism'],
   desc: 'You will face seven opponents at a time instead of five. Their budgets are determined by the number of defeated opponents, regardless of who eliminated them. The rest period timer will trigger whenever the number of active contestants, including you, ever falls below eight or the number of remaining rounds(whichever is lower).',
 })
 intensity.push({
   title: 'Arena IV',
   intensity: 0.2,
-  requires: 'Arena III',
+  pvp: true,
   whitelist: ['Arena III'],
   desc: 'You will face nine opponents at a time instead of seven. Their budgets are determined by the number of defeated opponents, regardless of who eliminated them. The rest period timer will trigger whenever the number of active contestants, including you, ever falls below ten or the number of remaining rounds(whichever is lower).',
 })
 intensity.push({
   title: 'Arena V',
   intensity: 0.2,
-  requires: 'Arena IV, Marathon',
+  pvp: true,
   whitelist: ['Arena IV', 'Marathon'],
   desc: 'You will face eleven opponents at a time instead of nine. Their budgets are determined by the number of defeated opponents, regardless of who eliminated them. The rest period timer will trigger whenever the number of active contestants, including you, ever falls below twelve or the number of remaining rounds(whichever is lower).',
 })
 intensity.push({
   title: 'Deathmatch',
   intensity: 0.4,
-  requires: 'Fight For Your Right',
+  pvp: true,
   whitelist: ['Fight For Your Right'],
   desc: 'Negotiable opponents are disabled. Rivals will appear from round 1 to round 15(Fight For Your Right), 35(Survivalism), or 75(Marathon). Enemies will appear starting on round 11(Fight For Your Right), 26(Survivalism), or 51(Marathon). Retinue members rated T11 may not directly participate before round 16(Fight For Your Right), 36(Survivalism), or 76(Marathon). The cap on your opponents’ experience and skill is removed.',
 })
 intensity.push({
   title: 'No Future',
   intensity: 0.4,
-  requires: 'Deathmatch',
+  pvp: true,
   whitelist: ['Deathmatch'],
   desc: 'Rivals are disabled. Every opponent you encounter will be an enemy. Retinue members rated T11 may participate in any round. Your opponents’ experience and skill will increase more quickly, hitting the original cap at round 20, the equivalent of round 100 on Deathmatch at round 50, and beyond.',
 })
 intensity.push({
   title: 'Non - Stop Infinite Climax',
   intensity: 0.4,
-  requires: 'Fight For Your Right',
+  pvp: true,
   whitelist: ['Fight For Your Right'],
   desc: `You no longer benefit from rest periods. New opponents, including your first, will enter your present world immediately after the last is defeated, though not necessarily in a location near you.
 If taken with Arena, this will completely disable d - travel for the duration of the PVP challenge. Warranty Plan resurrections will occur when you or your retinue defeat an opponent, even if others are still active; you do not need to defeat every active opponent simultaneously. Unwanted thefts may not be sold until the challenge is over.`,

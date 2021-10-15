@@ -20,7 +20,7 @@ export default defineComponent({
     const formattedDesc = computed(() => {
       let desc = props.desc.replace(TOOLTIPS_REG,
         word => `<span data-tippy-content="${TOOLTIPS[word as keyof typeof TOOLTIPS]}"
-        class="text-green-500">${word}</span>`,
+        class="text-green-600 dark:text-green-300">${word}</span>`,
       )
 
       desc = desc.replace(LINKS_REG,

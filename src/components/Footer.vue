@@ -1,9 +1,9 @@
 
 <template>
-  <div class="fixed bottom-0 w-full" @click="visible = false">
+  <div class="fixed bottom-0 w-full text-gray-100" @click="visible = false">
     <div
       class="min-w-[320px] max-w-[440px] rounded-t-3xl mx-auto border relative transition-all"
-      bg="dark:gray-900 green-300"
+      bg="gray-900"
       :class="visible ? 'h-[568px] lg:h-[720px]': 'h-6'"
       @click.stop
     >
@@ -54,11 +54,21 @@
           <h3 class="text-lg text-gray-400">
             Binding & Lure
           </h3>
-          <Enum :list="binding" path="/binding" empty-message="" />
-          <div v-if="!binding.length">
-            <router-link :to="{path: '/binding', hash:'#No Bindings'}">
-              <span class="text-blue-500">No Bindings</span>
-            </router-link>
+          <div class="flex gap-1">
+            <span class="text-gray-300">Bindings:</span>
+            <Enum :list="binding" path="/binding" empty-message="" />
+            <div v-if="!binding.length">
+              <router-link :to="{path: '/binding', hash:'#No Bindings'}">
+                <span class="text-blue-500">No Bindings</span>
+              </router-link>
+            </div>
+          </div>
+          <div class="flex gap-1">
+            <span class="text-gray-300">Lures:</span>
+            <Enum :list="luresBought" path="/binding" empty-message="" />
+            <div v-if="!luresBought.length">
+              No Lures
+            </div>
           </div>
         </div>
         <div id="Heritage">
@@ -150,7 +160,7 @@ import { useStore } from '~/store/store'
 
 const {
   budget, startingWorld, startingOrigin, intensities, binding, homePerks, defensePerks,
-  companions, heritage, talentPerks, waifuPerks, ridePerks, miscPerks,
+  companions, heritage, talentPerks, waifuPerks, ridePerks, miscPerks, luresBought,
 } = useStore()
 
 const originText = computed(() => {

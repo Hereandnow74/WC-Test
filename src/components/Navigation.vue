@@ -4,11 +4,14 @@
     class="flex w-max mx-auto font-semibold overflow-x-auto no-scrollbar"
   >
     <div v-for="navItem, i in titles" :key="navItem" class="whitespace-nowrap">
-      <span
+      <router-link
         class="cursor-pointer hover:text-green-500"
         :class="i <= activeIndex ? 'text-teal-700 dark:text-teal-500': ''"
-        @click="go(i)"
-      >{{ navItem }}</span>
+        :to="links[i]"
+        @click="scrollInto(i)"
+      >
+        {{ navItem }}
+      </router-link>
       <span
         v-if="i !== (items.length - 1)"
         class="px-2 top-1 relative"
@@ -41,31 +44,32 @@ const props = defineProps({
   },
 })
 
-const router = useRouter()
-
 const navBar = ref(null as any)
 const activeIndex = ref(0)
 
+const loc = useBrowserLocation()
+
 onMounted(() => {
-  const arr = window.location.pathname?.split('/') || []
+  const arr = loc.value.pathname?.split('/') || []
   let name = ''
   if (arr.length > 2)
     name = arr[arr.length - 1 - props.level]
   else
     name = arr[arr.length - 1]
   const ind = props.items.indexOf(name)
-  if (ind !== -1) scrollInto(ind)
+  if (ind !== -1) {
+    if (navBar.value) scrollInto(ind)
+    activeIndex.value = ind
+  }
+})
+
+const links = computed(() => {
+  return props.items.map(x => props.prefix.length > 0 ? `/${props.prefix}/${x}` : `/${x}`)
 })
 
 function scrollInto(index: number) {
-  (navBar.value as HTMLElement).children[index].scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' })
+  (navBar.value as HTMLElement).children[index].scrollIntoView({ block: 'center', inline: 'center' })
   activeIndex.value = index
-}
-
-function go(index: number) {
-  scrollInto(index)
-  if (props.prefix.length > 0) router.push(`/${props.prefix}/${props.items[index]}`)
-  else router.push(`/${props.items[index]}`)
 }
 </script>
 

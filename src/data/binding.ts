@@ -335,7 +335,9 @@ export interface Lure {
   title: string
   cost: number
   desc: string
+  special?: string
   whitelist?: string[]
+  image?: string
 }
 
 export const lures: Lure[] = []
@@ -364,7 +366,7 @@ The longer, more personal, and more intense the instruction, the greater the eff
 lures.push({
   title: 'Arlo',
   cost: 15,
-  whitelist: ['at least one retinue member whose apparent age is younger than yourself.'],
+  special: 'at least one retinue member whose apparent age is younger than yourself.',
   desc: `The sight of a cute kid calling a new haremette “mama” has real power. Select a retinue member whose apparent age is younger than yourself to act as bait and approach the target together. This need not be the same individual every time. The bait acts as your child or younger sibling, playing the target’s parental/nurturing instincts against them by signaling that you have a need for a caretaker in your household - and the bait would prefer that caretaker to be the candidate right in front of them. This lure is stronger if:
 The target has stronger parental/nurturing instincts.
 The bait is your direct descendant or younger relative, or registered as adopted through our systems.
@@ -432,20 +434,12 @@ lures.push({
 
 export const lureExpansionDesc = 'These perks are either expansions to multiple Bindings or serve as alternative methods to capturing or controlling your retinue. Like all company-supplied powers, the powers granted by these perks cannot be nullified, copied, or stolen.'
 
-export interface LureExpansion {
-  title: string
-  cost: number
-  whitelist?: string[]
-  desc: string
-  image?: string
-}
-
-export const lureExpansions: LureExpansion[] = []
+export const lureExpansions: Lure[] = []
 
 lureExpansions.push({
   title: 'Conjunction',
   cost: 25,
-  whitelist: ['Second-Generation Symbiote or Complementary Colors'],
+  whitelist: ['Second-Generation Symbiote', 'Complementary Colors'],
   desc: `In addition to its other effects, the Binding method you use now adds its subjects to an empathic and telepathic group mind centered on yourself. This group mind operates on two levels: the higher, active, level allows everyone connected to participate in the telepathic equivalent of a chatroom, regardless of distance or barriers, such that you could even communicate between different multiverses. Your retinue members may actively share and experience each others’ senses through this network. The deeper, passive, level gives your waifus a full awareness of your activity and needs, such that they may even respond to orders that you haven't consciously given yet.
 This is only a group mind, not a hive mind. You and all your waifus retain your full individuality within the network and have no risk of forgetting whose life is whose. Any morality shifts that your waifus may develop are simply the result of close mental proximity to, and enforced empathy for, people with vastly different backgrounds and life experiences than their own.
 If you have the Symbiote, higher-ranked hosts in the swarm’s hierarchy will have more privilege in this network than lower-ranked hosts. As the person at the top of the hierarchy, you can demand access to the sensory feeds of anyone in the network and receive it without question. If you have the Shroud, your ability to read the minds of your waifus and access their senses is not so intuitive - at least not with this perk alone.
@@ -455,7 +449,7 @@ Additionally, retinue members bound through the method you used to unlock this e
 lureExpansions.push({
   title: 'Apportation',
   cost: 25,
-  whitelist: ['Basic Tempest Runes or Shroud of Power'],
+  whitelist: ['Basic Tempest Runes', 'Shroud of Power'],
   desc: `You and the retinue members you’ve bound, through the method you used to unlock this expansion, are now capable of teleporting yourselves, or anything in hand, to anyone else within your retinue as a whole with a few moments’ concentration. Doing this without some method of advance warning may be ill-advised. If you have Pocket Apartment or higher, you may teleport objects into appropriate spaces in the apartment instead of dropping directly in on someone else. If you have All Roads Lead To Home or Rainbow Bridge, you and your waifus may always teleport into the apartment instead of opening portals therein. If you do so personally and then try to open a portal out, you must still place the exit reasonably close to your previous outside-world location.
 Teleporting something you have in hand does not require ownership, but certain conceptual limitations and the time required to initiate and complete the teleportation prevent this ability from being used as an attack or defense vector. You can’t strip your enemies of their Infinity+1 armor by grabbing hold of them, let alone telefrag people, nor shunt incoming bullets into a containment unit back at home.
 A person or item held by your or a retinue member’s telekinesis, Shroud, or insides (or some other method) may be teleported as if it’s literally in hand. Merely encompassing it with subtle manifestations of the Shroud (as enabled by Elemental Loom) doesn’t count. The Tempest Jewelry version of this perk uses the jewelry pieces themselves as beacons and cannot work through any deactivated pieces.`,
@@ -474,8 +468,8 @@ If you have the Alterzelu Symbiote, any of your employees who are both not bonde
 
 lureExpansions.push({
   title: 'Command Seals',
-  cost: 'Special (5 per set)',
-  whitelist: ['At least one Nasuverse Servant'],
+  cost: 5,
+  special: 'At least one Nasuverse Servant',
   desc: `These sets of three Command Seals each will appear somewhere on your body, forming an abstract design unique to you. Each Command Seal allows you to give one unbreakable order to a Servant under your control, along with a power boost for the duration of the order. The more specific the order and the shorter its duration, the stronger the boost and according compulsion, and vice versa. General orders with indefinite durations can, eventually, be ignored, but a specific command with an instant duration will offer the Servant no chance to resist. One spent Command Seal will regenerate every 24 hours. You may have as many sets of seals as you have purchased or captured Servants, counting only the characters denoted as Servants in this CYOA. The first set of seals is free.
 If you purchase or capture an eligible Master from a published Fate/ work, and have at least one Servant per Master, you can delegate a single Servant to each. Canon Master-Servant pairs take priority. Delegate Masters' Command Seals are free and regenerate independently at the same rate as yours, but still count against your total and cannot be directly used by you. If you ever find yourself in an actual Holy Grail War, and all of your Command Seals are delegated, you will still have an inert set of Seals that may be used to summon, or contract with, a Servant locally. A locally summoned or contracted Servant will not be bound unless you apply a Binding-type control.
 Each Ruler-class Servant you summon may carry six additional sets of Seals on their body. These extra Seals must be paid for, regenerate independently from any others, and may be used by yourself or any delegate Master.`,
@@ -484,14 +478,15 @@ Each Ruler-class Servant you summon may carry six additional sets of Seals on th
 lureExpansions.push({
   title: 'Command Seals: General Seals',
   cost: 10,
-  whitelist: ['At least one set of Command Seals. Retroactively removes the previous control’s Nasuverse Servant requirement.'],
+  special: 'Retroactively removes the previous control’s Nasuverse Servant requirement.',
+  whitelist: ['Command Seals'],
   desc: 'Command Seals may now be used on any purchased or captured waifu, not just Servants. Your Command Seals purchase limit now counts all non-canon Servants of any tier and all non-Servant retinue members of tier 6 or higher, in addition to all Servants. This ignores all effective tier changes after step 4.',
 })
 
 lureExpansions.push({
   title: 'Divine Marking',
   cost: 20,
-  whitelist: ['At least one deity from the Danmachi setting'],
+  special: 'At least one deity from the Danmachi setting',
   image: 'https://static.wikia.nocookie.net/powerlisting/images/5/5d/Danmachi_Gods_Falna_Blessings.png/revision/latest?cb=20190707034500',
   desc: 'A deity in your service who grants or updates a Falna, including non-Danmachi deities who’ve learned how to do so, are considered to be applying a Stamp to the Falna’s holder, even if you lack that binding. The Falna itself will seem no different than normal. This Falna-Stamp requires the normal three-day period to fully bind the recipient.',
 })
@@ -499,9 +494,11 @@ lureExpansions.push({
 lureExpansions.push({
   title: 'Space Truckin’',
   cost: 100,
-  whitelist: ['At least one of each of the following:',
-    'Land vehicle purchased or registered through Catch-a-Ride',
-    'Retinue member who is a deity or capable of true resurrection'],
+  special: `At least one of each of the following:
+    <ul class="list-disc list-inside">
+      <li>Land vehicle purchased or registered through Catch-a-Ride</li>
+      <li>Retinue member who is a deity or capable of true resurrection</li>
+    </ul>`,
   image: 'https://i.imgur.com/cNBAVke.png',
   desc: `The legendary Truck-kun is your vehicle. When you or one of your retinue members drives a land vehicle that’s been registered with us as yours, anyone you run over with it will be captured, as if by the Stamp, and sent to a random world that you do not already have access to. Your target must actually die from the impact, but not necessarily immediately. The capture will fail if the target evades your vehicle or survives the impact. The maximum number of active isekai victims you can manage simultaneously scales with the number and tier of deities in your retinue after step 5, as shown in the chart. Your total cap is the sum of the individual caps of each deity in your retinue.
 Worlds your isekai targets are sent to will not become accessible to the rest of your retinue through Exit Stage Left or other company perks until the target completes a local storyline (charges Exit Stage Left to completion). This will count as you charging Exit Stage Left yourself. If the target dies before they can do so and you have Warranty Plan, they will respawn in your demiplane (if you have one) or otherwise near you, where they can be bound through your other means. If you have We Will Meet Again or Rainbow Bridge, they can then return to the world they were sent to, with any reinforcements or other support you choose to give them. Neither successful nor failed isekais are “active” and will not continue to count against your cap above.`,
