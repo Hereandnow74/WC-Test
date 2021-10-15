@@ -16,7 +16,7 @@
 export default defineComponent({
   setup() {
     const router = useRouter()
-    router.replace('/talents/ride')
+    onMounted(() => document.location.pathname === '/talents' ? router.replace('/talents/ride') : null)
   },
 })
 </script>

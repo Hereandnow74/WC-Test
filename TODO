@@ -1,7 +1,7 @@
 1. Select a difficulty of the world -- Done
-2. Add world images
+2. Add world images?
 3. Create a new world if none exist -- Done
-4. Add a rules book
+4. Add a rules book -- Done
 5. Async load of Companions json -- Done
 6. Foldable click by label -- Done
 7. Discord server -- Done
@@ -9,3 +9,24 @@
 9. Properly highlight options in Navigation
 10. Dragon Heart choose Element
 11. Properly handle Tier 11 tickets
+
+Check list:
+1. Rules -- Done-
+2. World -- 80%
+3. Intensity -- Done-
+4. Origin -- Done-
+5. Binding & Lure --70%
+6. Heritage --70%
+7. Talents & Perks --20%
+  7.1 Ride --Done-
+  7.2 Home --20%
+  7.3 Talents --20%
+  7.4 Defenses --20%
+  7.5 Misc Perks --20%
+  7.6 Waifu Perks --15%
+8. Overall functionality --20%
+  8.1 Storage --40%
+  8.2 Local Storage --10%
+  8.3 Global Storage --0%
+  8.4 Share Build --0%
+  8.5 Save&Load --0%

@@ -4,6 +4,7 @@
     <div
       class="min-w-[320px] max-w-[440px] rounded-t-3xl mx-auto border relative transition-all"
       bg="gray-900"
+      border="2 gray-400"
       :class="visible ? 'h-[568px] lg:h-[720px]': 'h-6'"
       @click.stop
     >
@@ -82,6 +83,7 @@
             Talents & Perks
           </h3>
           <ul>
+            <!-- TODO: Display addons and variant  -->
             <li class="flex gap-2 text-gray-300">
               Ride: <Enum
                 class="text-gray-200"

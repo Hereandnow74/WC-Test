@@ -10,13 +10,13 @@ export const useTooltips = () => tippy('[data-tippy-content]', {
   },
 })
 
-export function genericChoose<T>(lure: T, isAllowed: (lure: T) => boolean, arr: any[]) {
+export function genericChoose<T>(item: T, isAllowed: (item: T) => boolean, arr: any[]) {
   const { allEffects } = useStore()
-  if (isAllowed(lure)) {
-    const ind = findIndex(arr, { title: lure.title })
+  if (isAllowed(item)) {
+    const ind = findIndex(arr, { title: item.title })
     if (ind === -1) {
-      allEffects.value.push(lure.title)
-      arr.push({ title: lure.title, cost: lure.cost })
+      allEffects.value.push(item.title)
+      arr.push({ title: item.title, cost: item.cost })
     }
     else {
       const del = arr.splice(ind)

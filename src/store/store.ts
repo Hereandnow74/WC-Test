@@ -46,6 +46,8 @@ const heritage = ref([] as {
 const ridePerks = ref([] as {
   title: string
   cost: number
+  addons?: any[]
+  variant?: string
 }[])
 
 const homePerks = ref([] as {
@@ -97,6 +99,7 @@ const flags = reactive({
   danger11Start: false,
   pvpEnabled: false,
   chargen: true,
+  hasARide: false,
 })
 
 const budget = computed(() => {

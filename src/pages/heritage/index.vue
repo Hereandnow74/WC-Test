@@ -1,7 +1,7 @@
 <template>
   <div class="md:p-2 pb-8">
     <Desc :desc="desc" class="p-2 mb-4 max-w-4xl mx-auto bg-violet-200 dark:bg-violet-900" />
-    <div class="md:column-count-2 lg:column-count-3">
+    <div class="md:column-count-2 lg:column-count-3 pb-8">
       <div
         v-for="heritage in heritages"
         :id="heritage.title"

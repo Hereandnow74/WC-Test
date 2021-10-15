@@ -47,10 +47,10 @@ const props = defineProps({
 const navBar = ref(null as any)
 const activeIndex = ref(0)
 
-const loc = useBrowserLocation()
+// const loc = useBrowserLocation()
 
 onMounted(() => {
-  const arr = loc.value.pathname?.split('/') || []
+  const arr = document.location.pathname?.split('/') || []
   let name = ''
   if (arr.length > 2)
     name = arr[arr.length - 1 - props.level]

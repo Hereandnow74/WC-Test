@@ -2,7 +2,7 @@
   <div @click.stop>
     <div v-if="list.length" class="">
       [
-      <router-link v-for="el, i in list" :key="el.title" :to="{path, hash:'#'+el.title}">
+      <router-link v-for="el, i in list" :key="el.title" :to="{path: '/'+LINKS[el.title], hash:'#'+el.title}">
         <span v-if="i != 0">, </span><span class="text-blue-500">{{ el.title }}</span>
       </router-link>
       ]
@@ -15,6 +15,7 @@
 
 <script lang='ts' setup>
 import type { PropType } from 'vue'
+import { LINKS } from '~/data/constatnts'
 
 defineProps({
   list: {
@@ -25,9 +26,9 @@ defineProps({
     type: String,
     default: 'Empty',
   },
-  path: {
-    type: String,
-    default: '/',
-  },
+  // path: {
+  //   type: String,
+  //   default: '/',
+  // },
 })
 </script>
