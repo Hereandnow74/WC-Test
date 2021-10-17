@@ -19,30 +19,39 @@ export interface HomePerk {
   cost: number
   desc: string
   whitelist?: string[]
+  multiple?: boolean
+  requires?: string
+  flag?: string
+  needed?: number
 }
 
 export interface Talent {
   title: string
-  cost: string | number
+  cost: number
   desc: string
   whitelist?: string[]
+  special?: string
+  needed?: number
 }
 
 export interface Defense {
   title: string
-  cost: string | number
+  cost: number
   desc: string
-  condition?: string
+  special?: string
   blacklist?: string[]
   whitelist?: string[]
+  needed?: number
 }
 
 export interface Perk {
   title: string
-  cost: number | string
+  cost: number
   desc: string
   whitelist?: string[]
   special?: string
+  target?: string
+  blacklist?: string[]
 }
 
 // Environment: Land
@@ -384,7 +393,8 @@ homes.push({
 homes.push({
   title: 'Sweet Home Expansion',
   cost: 50,
-  whitelist: ['Life’s A Beach.'],
+  whitelist: ['Life’s A Beach'],
+  multiple: true,
   desc: 'Each purchase of this perk will double the surface area of your personal world. This perk may be purchased up to 25 times, with the final purchase expanding the world into, ultimately, a round planet the size of Earth. Warning: the mansion’s control room can only manage the weather and climate of the core region. Weather patterns in the outer areas will emerge naturally.',
 })
 
@@ -405,12 +415,15 @@ homes.push({
 homes.push({
   title: 'Adjustment Field',
   cost: 200,
+  requires: 'Need a sufficiently large Catch-a-Ride Replica',
   whitelist: ['Grand Manor',
     'Dragon Cabin',
     'Incandescent Ascendancy Machine',
     'Branded by Possibility',
     'Heavenbuilt Proto',
-    'a sufficiently large Catch-a-Ride Replica'],
+  ],
+  flag: 'hasARide',
+  needed: 1,
   desc: `The central console for your mansion now includes the body-modification functions for everyone inside. If you have Basic Tempest Runes, take its expansion Advanced Tempest Runes (Body) for free. If you already have Advanced Tempest Runes (Body) when you buy Adjustment Field, take its expansion Advanced Tempest Runes (Mind) for free. If you already have Advanced Tempest Runes (Mind) when you buy Adjustment Field, you may claim a discount equal to the total value of all Tempest Runes you have already purchased. This perk may also apply to Heritage-granted inner worlds such as the Dragon Cabin, the Biomorph’s creep zone, or the Cybermorph’s digital world.
 The Adjustment Field’s modification suite is identical to that of Advanced Tempest Runes (Mind). You can apply separate sets of effects to inhabitants, visitors, and intruders, or more specific categories beyond that, and cycle between them as desired. The Adjustment Field is blocked by both Polymorph and Wyldscape Defense.`,
 })
@@ -516,7 +529,7 @@ talents.push({
 })
 
 talents.push({
-  title: 'Talent Sharing (___________ Talent)',
+  title: 'Talent Sharing',
   cost: 10,
   desc: 'The effects of one of your purchased Basic Talents now apply equally to every member of your retinue, as if you had shared them through a Binding or Heritage perk. This must be purchased separately for each valid Talent: Martial, Wild, Science, Engineering, Aesthetic, Communication, Performance, Soul, Blessed, Psychic, Covert, and Sticky Fingers (as “Tantric Talent”). Everlasting and Body are always shareable. This perk is obsoleted by Controls or Heritage perks that share Talents and may be refunded completely after such purchases.',
 })
@@ -529,16 +542,18 @@ talents.push({
 })
 
 talents.push({
-  title: 'OC Donut Steel (___________)',
-  cost: '10. Must be repurchased for each, use.',
+  title: 'OC Donut Steel',
+  cost: 10,
+  special: 'Must be repurchased for each, use.',
   desc: `Sometimes you just want to copy a specific individual’s powerset. This perk lets you do just that, for any individual short of Tier 11. If you purchase this perk for yourself at chargen or for a retinue member at the time you purchase them, you get the power outright. The exact capabilities at the time of purchase will be scaled to Tier 4 and can be trained higher with the appropriate Basic Talent - regardless of whether the original version is rated at Tiers 4, 5, or 10. You will also receive a skill framework for your purchase, identical in principle to the ones that “early” captures receive to ensure they learn their missing abilities. This applies to technological “abilities” as well. For characters that are made from multiple other characters, including the purchasable versions of many Nasuverse Servants in this catalog, each component must be bought separately.
 If you purchase this perk for yourself after chargen, or, for a retinue member, after the time of purchase or capture, you may need to recreate the original user’s empowering event, if there was one. You will not make any mistakes or experience unwanted side-effects in the process. This perk is not necessary for any powers that your purchased or captured retinue members might grant you via surgery, ritual, or other means. Note that some origins suck more than others: speaking Truck-kun’s name into a mirror three times in a row is not recommended. Abilities found elsewhere in this catalog are not available through this perk, nor are abilities found only in other CYOAs.
 For abilities that are generic in their source but are expressed uniquely, such as Sacred Gears, Semblances, Academy City Esper powers, Quirks, or the results of the X-gene, this perk will grant you the exact individual’s power you seek. This perk and Template Stacking I together may generate no more than one of each such power per individual.`,
 })
 
 talents.push({
-  title: 'Template Stacking I (___________)',
-  cost: '10. Must be repurchased for each use.',
+  title: 'Template Stacking I',
+  cost: 10,
+  special: 'Must be repurchased for each use.',
   desc: `Sometimes you want to copy a generic powerset. This perk lets you do just that, for any power short of Tier 11. If you purchase this perk for yourself at chargen, or for a retinue member at the time you purchase them, you get the powerset outright. The exact capabilities at the time of purchase will be scaled to Tier 4, equivalent to the 10 credit version of Extra. Stacked Templates can then be trained higher with the appropriate Basic Talent, regardless of whether the original version is rated at Tiers 4, 5, or 10. You will also receive a skill framework for your purchase, identical in principle to the ones that “early” captures receive to ensure they learn their missing abilities. This applies to technological “abilities” as well.
 If you purchase this perk for yourself after chargen, or, for a retinue member, after the time of purchase or capture, you may need to recreate an original user’s empowering event, if there was one. You will not make any mistakes or experience unwanted side-effects in the process. This perk is not necessary for any powers that your purchased or captured retinue members might grant you via surgery, ritual, or other means. Note that some origins suck more than others: speaking Truck-kun’s name into a mirror three times in a row is not recommended.
 Racial templates (Kryptonian, Metallic Dragon, Newtype, Saiyan, etc.) can only be stacked in a starting build and will not be equivalent to a Heritage version of that template. Unlike Advanced Tempest Runes (Body), a living, natural example of that template is not necessary. Stacking multiple racial templates together will produce the same diminishing returns as Advanced Tempest Runes (Hybrid). Other powers that are only available to those who were born with them, such as hereditary magic systems, may be acquired through this perk at any time. In that case, there is no empowering event to recreate and thus no requirement for one. Abilities found elsewhere in this catalog are not available through this perk, nor are abilities found only in other CYOAs.
@@ -547,18 +562,20 @@ If you purchase the same non-racial template for any ten of your retinue members
 })
 
 talents.push({
-  title: 'Template Stacking II (___________)',
-  cost: '10. Must be repurchased for each use.',
-  whitelist: ['Matching copy of:',
-    'Origin: Extra (10c version)',
+  title: 'Template Stacking II',
+  cost: 10,
+  special: 'Must be repurchased for each use.',
+  whitelist: [
+    'Extra',
     'OC Donut Steel',
     'Template Stacking I'],
+  needed: 1,
   desc: 'You or your chosen retinue member’s template is upgraded to a version of the template rated at Tier 5. This is a flat increase to power and skill. As with Template Stacking I, the ability can then be trained higher with the appropriate Basic Talent, regardless of whether the original version is rated at Tier 4, 5, or 10. This perk also grants requisite gear for the chosen template. Advanced functionality beyond Tier 5 capabilities will be locked, at first, and become available with training.',
 })
 
 talents.push({
   title: 'Advanced Template Stacking (Arcane)',
-  cost: '100/individual',
+  cost: 100,
   whitelist: ['Science Talent', 'Soul Talent'],
   desc: `The entire spectrum of scientific magic styles is now available to you without further restriction. You must still encounter such styles before you can use them, whether in the field, buying them with OC Donut Steel or Template Stacking, or through the purchase of a retinue member who has one. Additionally, such styles are more effective when you use them and easier to develop. 
 This perk consolidates all purchases of OC Donut Steel and Template Stacking I that fall under its theme into a single item. Take a refund on all such purchases for the person this is applied to.`,
@@ -566,7 +583,7 @@ This perk consolidates all purchases of OC Donut Steel and Template Stacking I t
 
 talents.push({
   title: 'Advanced Template Stacking (Enlightened)',
-  cost: '100/individual',
+  cost: 100,
   whitelist: ['(Psychic Talent OR (Body Talent and Martial Talent))', 'Soul Talent'],
   desc: `The entire spectrum of ki arts and personal mystical powers are now available to you without further restriction. You must still encounter any such arts and styles before you can use them, whether in the field, buying them with OC Donut Steel or Template Stacking, or through the purchase of a retinue member who has one. Additionally, such arts and styles are more effective and easier to control. This also applies to the inner powers gained from certain Heritages.
 This perk consolidates all purchases of OC Donut Steel and Template Stacking I that fall under its theme into a single item. Take a refund on all such purchases for the person this is applied to.`,
@@ -574,7 +591,7 @@ This perk consolidates all purchases of OC Donut Steel and Template Stacking I t
 
 talents.push({
   title: 'Advanced Template Stacking (Green)',
-  cost: '100/individual',
+  cost: 100,
   whitelist: ['Wild Talent', 'Soul Talent'],
   desc: `The entire spectrum of magical styles that draw mystical power from one’s surroundings are now available to you without further restriction. This includes, but is not limited to, Warhammer’s Winds, a Planeswalker’s Lands, Geomancy, or anything powered by leylines or background magical fields. You must still encounter any such styles before you can use them, whether in the field, buying them with OC Donut Steel or Template Stacking, or through the purchase of a retinue member who has one. Additionally, such arts and styles are more effective and easier to control.
 This perk consolidates all purchases of OC Donut Steel and Template Stacking I that fall under its theme into a single item. Take a refund on all such purchases for the person this is applied to.`,
@@ -589,8 +606,8 @@ export const defenses: Defense[] = []
 
 defenses.push({
   title: 'Body Defense',
-  condition: '<Individual> is known for handling disease, chemical medicine, or poisons.',
-  cost: '5 (10)',
+  special: '<Individual> is known for handling disease, chemical medicine, or poisons.',
+  cost: 5,
   whitelist: ['Body Talent'],
   desc: `You have protection from all diseases, toxins, and targeted radiation. Lethal or crippling afflictions will leave you sick enough to most likely stay in bed, unless you really have to move - because you're attacked, for example. Anything short of that will leave you weakened and uncomfortable, but functional.
 Additionally, you get an extra one-time full heal, identical to the one offered by Body Talent, with each purchase of this Defense. These are counted separately for each member of your retinue, including yourself and anyone acquired after the purchase of this Defense. These may be kept for future use.
@@ -599,75 +616,76 @@ This perk still does not protect against injury or provide any sort of healing f
 
 defenses.push({
   title: 'Wild Defense',
-  condition: '<Individual> hails from a harsh climate.',
-  cost: '5 (10)',
+  special: '<Individual> hails from a harsh climate.',
+  cost: 5,
   desc: 'You are equally comfortable on a glacier as you are in a sandy desert, steamy jungle, irradiated wasteland, or temperate floodplain. Combined with Body Defense, you are never at risk of suffocation in a gaseous atmosphere. You can dive far deeper than any human, provided you bring an air supply with you. At the base level, survival will not necessarily be pleasant. Non-fatal/crippling injuries (burns, crush or decompression injuries) are a real possibility.',
 })
 
 defenses.push({
   title: 'Environmental Defense',
-  condition: '<Individual> can ignore hazardous environments.',
-  cost: '25 (50)',
+  special: '<Individual> can ignore hazardous environments.',
+  cost: 25,
   whitelist: ['Wild Defense'],
   desc: 'Wild Defense’s protections now apply to true extremes. allowing you to enter the oceanic abyss or hard vacuum, or even go sun-diving and live. This also protects against purposeless, degenerative, relatively mundane mutations. This perk does not protect against injuries.',
 })
 
 defenses.push({
   title: 'Creature Defense',
-  condition: '<Individual> is known as a monster-tamer or otherwise being good with animals.',
-  cost: '10 (20)',
+  special: '<Individual> is known as a monster-tamer or otherwise being good with animals.',
+  cost: 10,
   desc: 'Non-sapient living things - beasts, flora, or fungi - will not attack you without provocation, i.e. coming too close to it, its family, its food, or its territory, or appearing too threatening, such by making sudden moves or loud noises. Wildlife will always attempt to obviously scare you off before attacking, including through speech (for creatures capable of it). Extremely hungry wildlife may still approach or stalk you to size you up, but will not ambush you, and you can scare them off with some effort.',
 })
 
 defenses.push({
   title: 'Stress Defense',
-  condition: '<Individual> is known for keeping a cool head or having great willpower.',
-  cost: '5 (10)',
+  special: '<Individual> is known for keeping a cool head or having great willpower.',
+  cost: 5,
   desc: 'Get that dirt off your shoulder. You can act calmly under pressure and are protected from degenerative mental effects.',
 })
 
 defenses.push({
   title: 'Addiction Defense',
-  condition: '<Individual> known for having a material vice.',
-  cost: '10 (20)',
+  special: '<Individual> known for having a material vice.',
+  cost: 10,
   whitelist: ['Stress Defense'],
   desc: '“The key word in that sentence is functional!” You can indulge in the joys of life without risking any sort of physiological or psychological dependence. At the resistance level, you will still experience cravings and withdrawal, but in a relatively mild form that you can push through with a bit of effort. This Defense also protects you from the relevant effects of your own lures, notably Faerie Feast and the Tantric Talent form of Sticky Fingers.',
 })
 
 defenses.push({
   title: 'Mind Defense',
-  condition: '<Individual> is known as a psychic or mind-manipulator.',
-  cost: '25 (50)',
+  special: '<Individual> is known as a psychic or mind-manipulator.',
+  cost: 25,
   desc: 'You are protected from all mind control effects from outside of your retinue and unwanted attempts from within. Attempts to influence you will be weaker and you have an easier time noticing them and fighting them off. At least part of your mind will always remain beyond any control, leaving you free to fight your controller from within - creatively reinterpreting orders, temporarily suppressing or weakening their influence, leaving part or all of your body locked in indecisive spasms, or even throwing off their control entirely if what they\'re trying to make you do goes too far against your true self. Successful mind control within your retinue will require your consent, not the victim’s. Friendly psychics may still contact you or your retinue through telepathy.',
 })
 
 defenses.push({
   title: 'Possession Defense',
-  condition: '<Individual> is known for bodyjacking others.',
-  cost: '10 (20)',
-  whitelist: ['One of Body or Mind Defense'],
+  special: '<Individual> is known for bodyjacking others.',
+  cost: 10,
+  whitelist: ['One of Body', 'Mind Defense'],
+  needed: 1,
   desc: 'Nobody controls your body except you. You are protected from parasites, spiritual possession, remote body control, and body-swapping shenanigans, whether you’re conscious or not. The same forms of resistance from Mind Defense can manifest with this perk as well.',
 })
 
 defenses.push({
   title: 'Soul Defense',
-  condition: '<Individual> can drain or feed on life, mana, or souls.',
-  cost: '25 (50)',
+  special: '<Individual> can drain or feed on life, mana, or souls.',
+  cost: 25,
   desc: 'You are the master of your soul. You are protected from all vitality-, mana-, and soul-draining effects. At the resistance level, attempts to feed on you will have diminishing returns, leaving your attacker unable to drain you completely. Waifus who feed on souls or lifeforce can get all the nutrition they need from you or your other waifus without causing harm, even from side effects such as loss of fluids. This protects you and your retinue from third parties, but not vice versa. This perk does not reduce the energy use from your own efforts in any way - you want Inexhaustible for that.',
 })
 
 defenses.push({
   title: 'Fatality Defense',
-  condition: '<Individual> is known for inflicting instant death or not dying even when killed.',
-  cost: '50 (100)',
+  special: '<Individual> is known for inflicting instant death or not dying even when killed.',
+  cost: 50,
   whitelist: ['Everlasting Talent'],
   desc: 'Conceptual instant death and other soul-destroying effects may hurt and weaken you, but never kill you. Alternatively, you will be able to cling to life as a disembodied shade until your retinue can produce a replacement body for you to inhabit, or you simply force yourself to resurrect after some time.',
 })
 
 defenses.push({
   title: 'Polymorph Defense',
-  condition: '<Individual> is known for polymorphing others.',
-  cost: '50 (100)',
+  special: '<Individual> is known for polymorphing others.',
+  cost: 50,
   whitelist: [' One of Body Defense', 'Wyldscape Defense', 'Corruption Defense'],
   desc: `You can resist targeted supernatural transformations. Such attacks will take more effort and tend to remain incomplete and weaken you less than they should unless repeated for long enough. For example, an attempt to turn you into a tiny newt may turn you into a giant newt or a still-functional newt-man. Any loss of strength, durability, or similar traits from transformation will experience diminishing returns.
 At the immunity level, If you are transformed in such a way, even before you were protected by this perk, you may easily reverse the effect, entirely or in piecemeal, at will. All detransformations in your retinue will require your consent, not the victim’s. Contagious transformations that you allow will not spread from you or your retinue to third parties unless you choose to let that happen as well.`,
@@ -675,8 +693,8 @@ At the immunity level, If you are transformed in such a way, even before you wer
 
 defenses.push({
   title: 'Wyldscape Defense',
-  condition: '<Individual> hails from a region where the local reality is unstable.',
-  cost: '50 (100)',
+  special: '<Individual> hails from a region where the local reality is unstable.',
+  cost: 50,
   whitelist: ['One of Environmental Defense', 'Polymorph Defense', 'Corruption Defense'],
   desc: `You can resist ongoing supernatural transformations that just affect anyone who enters the area of effect.  The same forms of resistance from Polymorph Defense can manifest with this perk as well.
 At the immunity level, if you are transformed in such a way, even before you were protected by this perk, you may easily reverse the effect, entirely or in piecemeal, at will. All detransformations in your retinue require your consent, not the victim’s. Contagious transformations that you allow will not spread from you or your retinue to third parties unless you choose to let that happen as well.`,
@@ -684,38 +702,38 @@ At the immunity level, if you are transformed in such a way, even before you wer
 
 defenses.push({
   title: 'Corruption Defense',
-  condition: '<Individual> is known for forcibly bringing out others’ dark sides.',
-  cost: '50 (100)',
+  special: '<Individual> is known for forcibly bringing out others’ dark sides.',
+  cost: 50,
   whitelist: ['One of Soul Defense', 'Polymorph Defense', 'Wyldscape Defense'],
   desc: 'Metaphysically corruptive effects, whether environmental or targeted in nature, are slower to affect you, with diminishing returns the farther the corruption would take you from your fundamental self. After they wear off, you may choose to retain effects that would normally be permanent (plus any attendant transformations, if you have those defenses) as a sort of superpowered evil side, or a separate alter ego to converse with. These remain fundamentally you, just a different version of you seen through a different lens. Other Defenses such as Body, Stress, Addiction, Mind, and Soul may prove extremely useful, depending on the specifics of such a scenario.',
 })
 
 defenses.push({
   title: 'Information Defense',
-  condition: '<Individual> is known for their ability to read or sense people.',
-  cost: '25 (50)',
+  special: '<Individual> is known for their ability to read or sense people.',
+  cost: 25,
   desc: 'Scouters can’t read your power level. Information about you, from mind-reading, super-analysis, or metaphysical senses will tend to be unclear, incomplete, misleading or even flat-out wrong, or similarly unreliable - the more important any secret of yours is, or the more dangerous to you, the more difficult it will be to perceive, much less perceive accurately. This applies to both attempts from outside of your retinue and unwanted attempts from within, but not Conjunction. You may still allow friendly or neutral third parties to use such abilities on you.',
 })
 
 defenses.push({
   title: 'Trace Defense',
-  condition: '<Individual> is known for using divination or other non-technological remote viewing.',
-  cost: '50 (100)',
+  special: '<Individual> is known for using divination or other non-technological remote viewing.',
+  cost: 50,
   desc: 'You are the master of your trail. Hostile and neutral remote viewing attempts: precognition, postcognition, scrying, dream visitation, etc. will have a harder time perceiving you. The same forms of resistance from Information Defense can manifest with this perk as well. At the immunity level, supernatural observers might only see a world where you don’t exist. This does not apply to direct naked-eye observation, other forms of mundane (technological) surveillance and analysis, or Dragon Aura’s pull on higher-tier waifus.',
 })
 
 defenses.push({
   title: 'Destiny Defense',
-  condition: '<Individual> is known as a fate- or luck-manipulator.',
-  cost: '50 (100)',
+  special: '<Individual> is known as a fate- or luck-manipulator.',
+  cost: 50,
   desc: `You are the master of your fate. Attempts to change your fate or luck will be more difficult, less reliable, and weaker than they would normally be - increasingly so the more directly they target you instead of just your surroundings, the more improbable they are, and the more precision they require. Changes that do go through will be more easy to reverse than they would be otherwise.
 As with the other Defense perks, you may still experience any beneficial effects of these sorts of manipulation even if you have the second perk for immunity.`,
 })
 
 defenses.push({
   title: 'Paradox Defense',
-  condition: '<Individual> is known as a time-manipulator.',
-  cost: '50 (100)',
+  special: '<Individual> is known as a time-manipulator.',
+  cost: 50,
   desc: `You are the master of your timeline. Temporal slowdowns will have increasingly weaker effects on you the stronger they are - a weak slowing effect will be even weaker, but a stronger one and even a total time-stop will not leave you completely unable to react. You will retain memories of previous timelines, loops, or other resets, even if they are faded or incomplete, and any attempts to spy on or change your timeline will have the same problems mentioned under Information, Trace, and Destiny Defenses. Attempts to erase you entirely will merely leave you weakened, faded, or flickering into and out of existence randomly.
 This perk also blocks forced unwanted teleportation, whether that involves sending you somewhere else or sending something into your current position. Resistance to such effects may make the teleport require more effort or send you somewhere inconvenient to both yourself and the teleporter.`,
 })
@@ -752,7 +770,7 @@ perks.push({
 
 perks.push({
   title: 'Fertility Calibration II',
-  cost: '6 (36)',
+  cost: 6,
   whitelist: ['Fertility Calibration I'],
   desc: 'You can now ensure that a sexual encounter involving you or a member of your harem results in twins. This perk may be purchased up to six times, with each purchase allowing you to guarantee up to twice as many fetuses: second purchase quadruplets, third purchase octuplets, fourth purchase 16, etc. This perk does not apply to Symbiote larvae or other spawn with a different body structure than yourself.',
 })
@@ -851,20 +869,21 @@ export const genericDesc = `Upgrades, downgrades, and other premium options for 
 If a Waifu Perk is listed with a tier rating, its price will be affected by the No Bindings discount, if you qualify for it. If you already qualify for Mirage Master’s regular discount, it cannot be discounted a second time. Waifu Perks that lack tier ratings are not affected by the No Bindings Discount.
 Generic waifu perks may be purchased more than once and applied to any waifu or husbando that qualifies.`
 
-const genericPerks = []
+export const genericPerks: Perk[] = []
 
 genericPerks.push({
   title: 'Yoink',
-  Waifu: '(Any)',
-  cost: '20% of the regular price for waifu’s tier, minimum 1',
-  Special: 'Chargen only. Not available in Gauntlet PvP. Cannot be taken with Slightly Used.',
+  target: 'Any',
+  cost: 1,
+  special: '20% of the regular price for waifu’s tier, minimum 1 <br> Chargen only. Not available in Gauntlet PvP. Cannot be taken with Slightly Used.',
   desc: 'Your purchased waifu is actually a local capture from your starting world. She is teleported to your starting location and Bound (or not) the same as all the other waifus you purchased. You may purchase this perk once for each purchased waifu who happens to be from your starting world. If you purchase this together with Extra or Substitute, the relevant waifus will all have been brought to your starting location by fate or coincidence, not teleportation. You may not apply this perk to a target valued at more than 20% of your starting budget, after drawbacks, unless otherwise specified.',
 })
 
 genericPerks.push({
   title: 'Slightly Used',
-  Waifu: '(Any non-T11)',
-  Pricing: 'See Additional Rules, minimum 1',
+  target: '<11',
+  cost: 1,
+  special: 'See Additional Rules, minimum 1',
   blacklist: ['Yoink'],
   desc: `This waifu is an original version, captured by a previous contractor and resold to you. All direct effects of previous contractors' controls and perks are removed during reprocessing. This includes Defenses, Talents, and Binding benefits, but not any non-baseline abilities they trained in using their former contractor’s Talents, equipment they wield, or Heritage upgrades applied to them. When you select this perk for a purchase, you will see three options for which specific version of the subject you wish to buy.
 Author directions: roll 6 six-sided dice for each option, twice. (Just use an autoroller.) The sum of the first set of rolls determines the subject’s effective tier after step 4: higher rolls mean both higher tiers and higher prices. Compare to the names you recognize in the regular Catalog to determine what kinds of extra abilities or equipment a used purchase has compared to their baseline self. The sum of the second set of rolls determines the subject’s physical, mental, and/or spiritual state after their experiences with their previous owner: higher rolls mean both more trauma and steeper discounts. The full chart is in the Additional Rules section. A used purchase’s extra abilities and/or equipment will be listed in full for the contractor to see, but their current state will not be visible, beyond its effect on their price.
@@ -873,30 +892,30 @@ Unlike fresh clones, subjects bought used have been to their homeworlds personal
 
 genericPerks.push({
   title: 'Canvas',
-  cost: '1 / subject(10)',
+  cost: 1,
   whitelist: ['Hotel California', 'any higher Binding- type control'],
   desc: 'The Stamp’s tattoos are now permanently visible, even after the purchase of higher bindings. This option is purely aesthetic. Once you’ve purchased this perk ten times, it will apply to every member of your retinue.',
 })
 
 genericPerks.push({
   title: 'Adoption',
-  Waifu: '(Any)',
-  cost: '1 / subject',
+  target: 'Any',
+  cost: 1,
   desc: 'You may find yourself adopting a kid - and not just because you killed one parent and captured the other into your retinue. Under normal circumstances, that kid will forever be your familiar, never equal to your true-blooded offspring. This perk will tell our systems to treat them as your descendants and follow the relevant Offspring rules instead.',
 })
 
 genericPerks.push({
   title: 'Paper Trail',
-  cost: '1 / subject(10)',
+  cost: 1,
   desc: `In some worlds, anonymity is a danger in and of itself. This perk retroactively modifies all records (paper, digital, and even memories) to create a legal existence for your waifu. Where applicable, the waifu will receive any real documentation she would be expected to have. You may also purchase and apply this perk to yourself; the all-waifus package will always apply it to you. If you chose the Extra or Substitute origins, this perk will not apply to you until you visit your second world. Similarly, this cannot give a captured or Yoinked retinue member a new identity in their own homeworld. Once you’ve purchased this perk ten times, it will apply to every member of your retinue.,
 By default, this history is of a middle-class or analogous citizen. If plausible and desired, they will instead be of a social class that can associate with you. Under the same conditions, any powers they have may be documented in a way that best fits your needs. If you have Trace Defense, any attempt at remote viewing where failure or invisibility would itself be a red flag will seemingly succeed, showing either a convincing match to their documented past or a present or future with nothing important to note.`,
 })
 
 genericPerks.push({
   title: 'Third-Party Riggings',
-  Waifu: '(Any Azur Lane collaboration shipgirl)',
-  cost: '20 / waifu(200)',
-  Special: 'Requires at least one first - party Azur Lane shipgirl',
+  target: '(Any Azur Lane collaboration shipgirl)',
+  cost: 20,
+  special: 'Requires at least one first - party Azur Lane shipgirl',
   desc: `Dead or Alive, Neptunia, Utawarerumono, Hololive, and others have all had guest appearances on the high seas. This perk grants these characters their shipgirl riggings, allowing them to play by those rules instead and making them eligible for Bifurcation and Space Shipgirl below. If a collaboration shipgirl’s tier after step 1a is less than the following, it will be raised to that value.
 T4: 22, 33, Akizuki Ritsuko, Futami Ami, Futami Mami
 T5: All other collaboration shipgirls
@@ -906,8 +925,9 @@ T7: Minase Iori`,
 
 genericPerks.push({
   title: 'Retrofit',
-  Waifu: '(Any eligible Azur Lane shipgirl)',
-  cost: '0(T4 → T4, T5 → T5, T6 → T6), 10(T4 → T5), 30(T5 → T6), or 50(T6 → T7)',
+  target: '(Any eligible Azur Lane shipgirl)',
+  cost: 0,
+  special: '0(T4 → T4, T5 → T5, T6 → T6), 10(T4 → T5), 30(T5 → T6), or 50(T6 → T7)',
   desc: `Your shipgirl is her post-retrofit version, with updated abilities, hull, and rigging. This perk is free for all eligible shipgirls except the following, whose tiers are changed as a result:
 T4 → T5: Cassin, Downes, Sims, Hammann, Pamiat Merkuria
 T5 → T6: San Diego, Leipzig, Newcastle, Independence
@@ -916,8 +936,8 @@ T6 → T7: Fusou, Yamashiro, Ise, Hyuuga`,
 
 genericPerks.push({
   title: 'Bifurcation',
-  Waifu: '(Any Azur Lane Shipgirl)',
-  cost: '15 / waifu(150)',
+  target: '(Any Azur Lane Shipgirl)',
+  cost: 15,
   desc: `Your chosen Shipgirl’s Wisdom Cube receives a slight boost to its power, allowing her to manifest her rigging and full ship forms simultaneously. This lets her enter the fray personally while still allowing usage of her ship for transport, defense, support, etc., opening up many new tactical options.
 There is a price to pay for this convenience. First, the strain of manifesting both her rigging and full ship form at once will reduce the performance of both by approximately 50%. This can be returned to normal levels with appropriate training. Second, while both forms are manifested, any damage the ship form takes will immediately be reflected upon the Shipgirl’s rigging, and vice versa.
 Upon ten purchases of this perk, all Shipgirls you may purchase will automatically have this perk applied to them.`,
@@ -925,8 +945,8 @@ Upon ten purchases of this perk, all Shipgirls you may purchase will automatical
 
 genericPerks.push({
   title: 'Space Shipgirl',
-  Waifu: '(Any Azur Lane shipgirl)',
-  cost: '30 / waifu(300)',
+  target: '(Any Azur Lane shipgirl)',
+  cost: 30,
   desc: `Just as a group of humans once revived the mighty battleship Yamato as a spaceship in order to save humanity, so do the shipgirls under your command gain the ability to traverse the final frontier. The chosen shipgirl’s full-size hull is refurbished to be completely spaceworthy: the insides of the hull are sealed against the vacuum of space, all their armaments are perfectly capable of functioning in space, and even planes from carriers can fly just as well in the vacuum of space as they do in air. If you don’t want a naval-ships-in-space aesthetic, shipgirl hulls are also available in space counterpart culture varieties. For example, Star Trek’s Federation designs are suitable for Eagle Union and Royal Navy, while the Klingon look is appropriate for Sakura Empire and Romulans for Dragon Empery. Further upgrades may be installed if you have another source of space-era technology.
 While her rigging is manifested, the shipgirl retains all upgrades made to her armaments. Should you lack Wild Defense, she gains a personal atmospheric bubble that allows her to survive in space for a time.
 Upon ten purchases of this perk, all Shipgirls you may purchase will automatically have this perk applied to them.`,
@@ -934,17 +954,17 @@ Upon ten purchases of this perk, all Shipgirls you may purchase will automatical
 
 genericPerks.push({
   title: 'I\'m on a Boat',
-  Waifu: '(Any Kantai Collection Shipgirl)',
-  cost: '10 / waifu(100)',
+  target: '(Any Kantai Collection Shipgirl)',
+  cost: 10,
   desc: `Your chosen Shipgirl may now summon her full ship form under her instead of just manifesting her rigging. This lets her carry other members of your retinue around and lets her fairy crew take on human size and be interacted with. Understanding their speech, of course, requires Communication Talent. Additionally, Kancolle Shipgirls with this perk become eligible for Bifurcation and Space Shipgirl.
 Upon ten purchases of this perk, all Kancolle Shipgirls you may purchase will automatically have this perk applied to them.`,
 })
 
 genericPerks.push({
   title: 'Mirage Master',
-  Waifu: '(Any T1- T3 waifu + any Fire Emblem character rated T6 or below)',
-  cost: '50 / pair(500)',
-  Art: 'link',
+  target: '(Any T1- T3 waifu + any Fire Emblem character rated T6 or below)',
+  cost: 50,
+  image: 'link',
   desc: `Your list of Mirage users is no longer limited to canon. If you have a blue-star waifu and any Fire Emblem character rated T6 or below, you may convert the Fire Emblem character into a Mirage who’ll serve as the blue-star waifu’s partner. (Mirages of an unwanted gender may be subject to Rule 63.) The duo now operate on Tokyo Mirage Sessions rules and will, with few exceptions, be stronger than the Fire Emblem waifu on her own.
 Most types of enhancement methods for Mirages, however, must be administered by a Fire Emblem divine dragon rated T7 or higher (e.g. Naga, Nagi, Mila) and will not be available otherwise. Tiki has prior experience with this, from the canon events of Tokyo Mirage Sessions, but the others will have to figure it out as they go. If you have an eligible Mirage administrator, the cost of each application of this perk will be discounted to only 20/pair, with the difference refunded back into your account.
 Upon ten purchases of this perk, you may apply this perk as many more times as you want at no further cost.`,
@@ -952,30 +972,30 @@ Upon ten purchases of this perk, you may apply this perk as many more times as y
 
 genericPerks.push({
   title: 'Unison',
-  Waifu: '(Any Pokémon trainer)',
-  cost: '40 / trainer',
-  Art: 'link',
+  target: '(Any Pokémon trainer)',
+  cost: 40,
+  image: 'link',
   desc: 'The enhanced spiritual bond between your Trainer waifu and her mons allows her to blend with one of them, take on its physical traits, and operate as one being, raising her tier at step 6 to the higher of her own or the blended mon’s. Any of her mons are eligible for this, but only one at a time. She will also receive her seventh most iconic or strongest mon from her canon appearances, if she has one, so she can have a full party of six alongside the one she’s blended with.',
 })
 
 genericPerks.push({
   title: 'Galactic Presence',
-  Waifu: '(Any Warhammer Fantasy deity)',
-  cost: '500(T9 → T10)',
+  target: '(Any Warhammer Fantasy deity)',
+  cost: 50,
   desc: 'Malleus and the year 40,000 are both Warhammer, but operate on vastly different scales. This perk pulls one of the Fantasy goddesses up to the same level as her galactic counterpart. It must be purchased separately for each one you have.',
 })
 
 genericPerks.push({
   title: 'Four Seasons',
-  Waifu: '(Any female RWBY character of T6 or below)',
-  cost: '20 / mantle',
-  Mdesc: 'Maidenhood is special on Remnant, but not particularly so. Anyone can become one under the right circumstances. By default, this perk may be purchased up to four times, once for each temperate season (Spring, Summer, Fall, Winter). Purchasing this twice for the same character will elevate her to T6, if she isn’t already, and four times to T7. Additional sets of Maiden mantles become available with each member of your retinue, including yourself, whose effective tier after step five is at least T8: one for each T8, two for each T9, five for each T10, and ten for each T11. If one of your waifus is already a Maiden when you capture her, that counts against your total, unless you take a refund for this perk. If this puts you over your cap for a particular mantle, you may not buy any more of that mantle until you’ve raised the cap further.',
+  target: '(Any female RWBY character of T6 or below)',
+  cost: 20,
+  desc: 'Maidenhood is special on Remnant, but not particularly so. Anyone can become one under the right circumstances. By default, this perk may be purchased up to four times, once for each temperate season (Spring, Summer, Fall, Winter). Purchasing this twice for the same character will elevate her to T6, if she isn’t already, and four times to T7. Additional sets of Maiden mantles become available with each member of your retinue, including yourself, whose effective tier after step five is at least T8: one for each T8, two for each T9, five for each T10, and ten for each T11. If one of your waifus is already a Maiden when you capture her, that counts against your total, unless you take a refund for this perk. If this puts you over your cap for a particular mantle, you may not buy any more of that mantle until you’ve raised the cap further.',
 })
 
 genericPerks.push({
   title: 'Salvation',
-  Waifu: '(Any Puella Magi)',
-  cost: '20 / meguca',
+  target: '(Any Puella Magi)',
+  cost: 20,
   desc: `When your waifu's soul gem darkens completely, she may choose to manifest her Doppel: a materialization of her witch-self which may take the form of an discrete projection, an extension of her body, or even a partial physical transformation, depending upon the details of her relationship to her witch-self and what it represents. An activated Doppel is extremely powerful in its own right, but draws upon the darkness in its master's soul gem to manifest, quickly and completely purifying its master's gem until she can no longer support it - leaving her Doppel as a briefly activated trump card or a simple magic recharge mechanic unless it's somehow further refined. If you have Inexhaustible, any meguca in your retinue, whom this perk has been applied to, will only benefit from this perk.
 If you have Madokami, Akuma Homura, Satomi Touka, Lapin, or any other meguca who is canonically capable of breaking the balance of hope and despair in your retinue, then this perk is free. If you already have this perk when you acquire a relevant waifu, then take a full refund on the value of this perk for as many times as you've purchased it.
 Upon ten purchases of this perk, all meguca you may purchase will automatically have this perk applied to them.`,

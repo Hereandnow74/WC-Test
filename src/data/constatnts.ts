@@ -2,7 +2,7 @@ import { intensity } from '~/data/intensity'
 import { origin } from '~/data/origin'
 import { bindings } from '~/data/binding'
 import { heritages } from '~/data/heritage'
-import { rides, homes, defenses, talents, perks } from '~/data/talents'
+import { rides, homes, defenses, talents, perks, genericPerks } from '~/data/talents'
 
 export const WORLD_COLORS = ['bg-green-600', 'bg-teal-600', 'bg-cyan-600',
   'bg-blue-500', 'bg-indigo-500', 'bg-purple-500', 'bg-amber-600',
@@ -84,6 +84,7 @@ export const LINKS = computed(() => {
     'talents/defense': defenses,
     'talents/talent': talents,
     'talents/perks': perks,
+    'talents/specific': genericPerks,
   }
   for (const category of Object.entries(allCats)) {
     for (const entry of category[1])

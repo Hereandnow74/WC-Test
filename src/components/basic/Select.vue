@@ -8,10 +8,11 @@
         border="~ gray-800"
         :placeholder="placeholder"
         :value="modelValue"
+        required
         @change="$emit('update:modelValue', ($event.target as HTMLInputElement).value)"
       >
-        <option value="0">Any</option>
-        <option v-for="tier in 11" :key="tier" :value="tier">{{ tier }}</option>
+        <option value="" disabled selected hidden>{{ placeholder }}</option>
+        <option v-for="option in options" :key="option.name" :value="option.value">{{ option.name }}</option>
       </select>
     </label>
     <span v-if="errorMessage" class="text-xs text-red-600 dark:text-red-300">
@@ -42,11 +43,15 @@ export default defineComponent({
       type: String,
       default: '',
     },
-    type: {
-      type: String,
-      default: 'text',
+    options: {
+      type: Array,
+      default: () => [],
     },
   },
   emits: ['update:modelValue'],
 })
 </script>
+
+<style>
+select:invalid { color: rgb(160, 160, 160); }
+</style>

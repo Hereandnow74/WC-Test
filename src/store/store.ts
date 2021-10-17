@@ -8,6 +8,14 @@ export interface World {
   image?: string
 }
 
+export interface Character {
+  name: string
+  world: string
+  tier: number
+  image: string
+  image_nsfw?: string
+}
+
 const baseBudget = ref(55)
 
 const startingWorld = ref({} as World)
@@ -53,6 +61,7 @@ const ridePerks = ref([] as {
 const homePerks = ref([] as {
   title: string
   cost: number
+  count: number
 }[])
 
 const talentPerks = ref([] as {
@@ -68,6 +77,12 @@ const defensePerks = ref([] as {
 
 const miscPerks = ref([] as {
   title: string
+  cost: number
+}[])
+
+const genericWaifuPerks = ref([] as {
+  title: string
+  waifu: string
   cost: number
 }[])
 
@@ -88,6 +103,9 @@ const allEffects = ref([] as string[])
 
 const userWorlds = ref([] as World[])
 const localUserWorlds = useStorage<World[]>('localUserWorlds', [])
+
+const userCharacters = ref([] as Character[])
+const localUserCharacters = useStorage<Character[]>('localUserCharacters', [])
 
 const baseBudgetAfter = computed(
   () => baseBudget.value + intensities.value.reduce((a, x) => x.intensity > 1 ? a + x.intensity : a, 0),
@@ -116,6 +134,7 @@ const budget = computed(() => {
   const defensesCost = defensePerks.value.reduce((a, x) => a += x.cost, 0)
   const miscPerksCost = miscPerks.value.reduce((a, x) => a += x.cost, 0)
   const waifuPerksCost = waifuPerks.value.reduce((a, x) => a += x.cost, 0)
+  const genericWaifuPerksCost = genericWaifuPerks.value.reduce((a, x) => a += x.cost, 0)
   const luresCost = luresBought.value.reduce((a, x) => a += x.cost, 0)
 
   const tierMod = flags.noBindings ? 2 : 1
@@ -123,7 +142,7 @@ const budget = computed(() => {
 
   return (baseBudget.value + intensityFlat) * (1 + intenMultiplier) - startingOrigin.value.cost
          - bindingCost - heritageCost - luresCost - ridePerksCost - homePerksCost - talentsCost - defensesCost
-         - miscPerksCost - waifuPerksCost - companionsCost
+         - miscPerksCost - waifuPerksCost - genericWaifuPerksCost - companionsCost
 })
 
 export function useStore() {
@@ -146,7 +165,10 @@ export function useStore() {
     defensePerks,
     miscPerks,
     waifuPerks,
+    genericWaifuPerks,
     companions,
+    userCharacters,
+    localUserCharacters,
     flags,
   }
 }

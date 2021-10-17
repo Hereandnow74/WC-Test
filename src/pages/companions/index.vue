@@ -1,16 +1,17 @@
 
 <template>
-  <div class="flex flex-col p-2">
+  <div class="flex flex-col sm:p-2">
     <h3 class="text-xl">
       Choose your companions
     </h3>
-    <div v-if="!loading" class="flex gap-4 my-2">
+    <div v-if="!loading" class="flex items-center gap-4 my-2">
       <Input
         v-model="search"
         label="Search"
         placeholder="Name or World"
       />
-      <Select v-model.number="tier" />
+      <clarity:eraser-solid class="icon-btn w-8" @click="search = ''" />
+      <Select v-model.number="tier" :options="tierOptions" />
       <Input v-model.number="limit" class="w-16" />
       <div class="hidden md:block">
         Characters in database - {{ charArr.length }}
@@ -19,55 +20,32 @@
     <div v-else class="">
       Loading... <span class="inline-block text-xl"><eos-icons:bubble-loading /></span>
     </div>
-    <div class="flex flex-wrap flex-grow overflow-y-auto text-gray-200 pb-8">
-      <div
+    <Foldable v-if="allUserCharacters.length" class="text-lg mb-2" title="User Characters">
+      <div class="mb-4 flex flex-wrap overflow-y-auto">
+        <CompanionCard v-for="char in allUserCharacters" :key="char.name" :char="char" :is-user-char="true" />
+      </div>
+    </Foldable>
+    <div class="flex flex-wrap flex-grow overflow-y-auto pb-8">
+      <CompanionCard
         v-for="{ item: char } in filteredCharacters"
         :key="char.uid"
-        class="py-1 md:p-1 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 h-[500px]"
-      >
-        <div class="bg-gray-800 h-full flex flex-col rounded">
-          <div class="flex-grow relative">
-            <img class="rounded absolute object-cover h-full w-full object-top" :src="char.image" :alt="char.name">
-            <icon-park-outline:full-screen-one
-              class="absolute top-1 right-1 hover:text-blue-400 cursor-pointer mix-blend-difference"
-              @click="() => (showModal = true, modalImage=char.image)"
-            />
-          </div>
-          <div class="py-2 h-max">
-            <h4 class="text-xl text-center ">
-              {{ char.name }} (<span class="text-blue-200">{{ char.world[0] }}</span>)
-            </h4>
-            <div class="flex justify-between px-4">
-              <div class="text-gray-400">
-                Tier: <span class="text-amber-300">{{ char.tier }}</span>
-              </div>
-              <div class="text-gray-400">
-                Cost: <span class="text-amber-300">{{ char.cost }}</span>
-                <span v-if="flags.noBindings" title="Discount from No Binding">({{ CHAR_COSTS[char.tier - 2] }})</span>
-              </div>
-            </div>
-            <div class="flex justify-center gap-4">
-              <Button v-if="!isAlredyBought(char.uid)" size="Small" label="buy" @click="buyCompanion(char)" />
-              <Button v-else size="Small" label="undo" @click="undoBuying(char.uid)" />
-              <a v-if="char.sourceImage" class="px-1 rounded bg-blue-600" :href="char.sourceImage" target="_blank" rel="noopener noreferrer">Image Source</a>
-            </div>
-          </div>
-        </div>
+        :char="char"
+      />
+      <div v-if="!filteredCharacters.length" class="text-center flex-grow">
+        <p>No characters found.</p>
+        <Button label="Add Character" @click="() => (editMode = false, toggleShowAddCharacter())" />
       </div>
     </div>
-    <div v-if="showModal" class="absolute inset-0 bg-black bg-opacity-10 flex place-content-center" @click="showModal = false">
-      <div class="overflow-auto max-h-screen max-w-screen flex place-content-center">
-        <img class="object-none" :src="modalImage" alt="full image">
-      </div>
-    </div>
+    <AddCharacter v-if="showAddCharacter" :world="characterToEdit" :edit-mode="editMode" @click="toggleShowAddCharacter" />
   </div>
 </template>
 
-<script lang="ts">
+<script lang="ts" setup>
 import Fuse from 'fuse.js'
-import { findIndex } from 'lodash'
 import { useStore } from '~/store/store'
-import { CHAR_COSTS } from '~/data/constatnts'
+
+import { toggleShowAddCharacter, showAddCharacter } from '~/logic'
+import CompanionCard from '~/components/CompanionCard.vue'
 
 interface Character {
   uid: number
@@ -79,69 +57,56 @@ interface Character {
   world: string[]
 }
 
-export default defineComponent({
-  setup() {
-    const search = ref('')
-    const limit = ref(10)
-    const tier = ref(0)
-    const modalImage = ref('')
-    const showModal = ref(false)
+const search = ref('')
+const limit = ref(10)
+const tier = ref(0)
 
-    const characters = ref({})
-    const loading = ref(true)
-    const loadChars = () => import('~/data/characters.json')
-    const charArr = ref([] as Character[])
+const characters = ref({})
+const loading = ref(true)
+const loadChars = () => import('~/data/characters.json')
+const charArr = ref([] as Character[])
 
-    const { flags, companions } = useStore()
+const editMode = ref(false)
+const characterToEdit = ref({})
 
-    onMounted(async() => {
-      characters.value = (await loadChars()).default
-      charArr.value = Object.values(characters.value)
-      loading.value = false
-    })
+const tierOptions = [
+  { name: 'Any', value: 0 },
+  { name: '1', value: 1 },
+  { name: '2', value: 2 },
+  { name: '3', value: 3 },
+  { name: '4', value: 4 },
+  { name: '5', value: 5 },
+  { name: '6', value: 6 },
+  { name: '7', value: 7 },
+  { name: '8', value: 8 },
+  { name: '9', value: 9 },
+  { name: '10', value: 10 },
+  { name: '11', value: 11 },
+]
 
-    const options = {
-      includeScore: true,
-      findAllMatches: true,
-      threshold: 0.1,
-      keys: ['name', 'world'],
-    }
+const { localUserCharacters, userCharacters } = useStore()
 
-    // const charArr = computed(() => Object.values(characters))
-    const fuse = computed(() => new Fuse(charArr.value, options))
-
-    const filteredCharacters = computed(() => {
-      if (tier.value === 0) return fuse.value.search(search.value, { limit: limit.value })
-      else return charArr.value.filter(char => char.tier === tier.value).slice(0, limit.value).map(x => ({ item: x }))
-    })
-
-    function buyCompanion(char: Character) {
-      companions.value.push({ uid: char.uid, name: char.name, world: char.world[0], tier: char.tier })
-    }
-
-    function undoBuying(uid: number) {
-      companions.value.splice(findIndex(companions.value, { uid }), 1)
-    }
-
-    function isAlredyBought(uid: number): boolean {
-      return findIndex(companions.value, { uid }) > -1
-    }
-
-    return {
-      CHAR_COSTS,
-      search,
-      limit,
-      tier,
-      loading,
-      filteredCharacters,
-      charArr,
-      buyCompanion,
-      undoBuying,
-      isAlredyBought,
-      flags,
-      modalImage,
-      showModal,
-    }
-  },
+onMounted(async() => {
+  characters.value = (await loadChars()).default
+  charArr.value = Object.values(characters.value)
+  loading.value = false
 })
+
+const options = {
+  includeScore: true,
+  findAllMatches: true,
+  threshold: 0.1,
+  keys: ['name', 'world'],
+}
+
+// const charArr = computed(() => Object.values(characters))
+const fuse = computed(() => new Fuse(charArr.value, options))
+
+const filteredCharacters = computed(() => {
+  if (tier.value === 0) return fuse.value.search(search.value, { limit: limit.value })
+  else return charArr.value.filter(char => char.tier === tier.value).slice(0, limit.value).map(x => ({ item: x }))
+})
+
+const allUserCharacters = computed(() => userCharacters.value.concat(localUserCharacters.value))
+
 </script>

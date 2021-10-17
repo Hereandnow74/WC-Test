@@ -125,6 +125,14 @@
               />
             </li>
             <li class="flex gap-2 text-gray-300">
+              Generic: <Enum
+                class="text-gray-100"
+                :list="genericWaifuPerks"
+                path="/talents/specific"
+                empty-message="No Generic Perks"
+              />
+            </li>
+            <li class="flex gap-2 text-gray-300">
               Waifu: <Enum
                 class="text-gray-100"
                 :list="waifuPerks"
@@ -162,7 +170,7 @@ import { useStore } from '~/store/store'
 
 const {
   budget, startingWorld, startingOrigin, intensities, binding, homePerks, defensePerks,
-  companions, heritage, talentPerks, waifuPerks, ridePerks, miscPerks, luresBought,
+  companions, heritage, talentPerks, waifuPerks, ridePerks, miscPerks, luresBought, genericWaifuPerks,
 } = useStore()
 
 const originText = computed(() => {

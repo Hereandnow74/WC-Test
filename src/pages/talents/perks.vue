@@ -1,29 +1,28 @@
 <template>
   <div class="">
-    <Desc :desc="genericDesc" class="p-2 mb-4 max-w-4xl mx-auto bg-violet-200 dark:bg-violet-900" />
+    <Desc :desc="talentsDesc" class="p-2 mb-4 max-w-4xl mx-auto bg-violet-200 dark:bg-violet-900" />
     <div class="md:column-count-2 lg:column-count-3 pb-8">
-      <div
+      <PerkCard
         v-for="perk in perks"
-        :id="perk.title"
         :key="perk.title"
-        class="bg-light-blue-200 dark:bg-light-blue-900 p-2 mb-2 inline-block"
-        @click="pickPerk(perk)"
-      >
-        <h3 class="relative text-center text-xl">
-          {{ perk.title }} <span text="gray-600 dark:gray-400">(Cost: {{ perk.cost }})</span>
-          <bi:check-lg v-if="findIndex(miscPerks, {title: perk.title}) !== -1" class="absolute top-1 right-1" />
-        </h3>
-        <Desc :desc="perk.desc" />
-      </div>
+        :perk="perk"
+        :bg="isAvailable(perk) ? 'light-blue-200 dark:light-blue-900 hover:(light-blue-100 dark:light-blue-800)'
+          : 'gray-200 dark:gray-600'"
+        :is-available="isAvailable(perk)"
+        :is-active="findIndex(miscPerks, {title: perk.title}) !== -1"
+        @pickPerk="pickPerk(perk)"
+      ></PerkCard>
     </div>
   </div>
 </template>
 
 <script lang='ts' setup>
 import { findIndex, intersection } from 'lodash-es'
-import { perks, genericDesc, Perk } from '~/data/talents'
+import { perks, talentsDesc, Perk } from '~/data/talents'
 import { useTooltips } from '~/logic/misc'
 import { useStore } from '~/store/store'
+
+import PerkCard from '~/components/PerkCard.vue'
 
 const { allEffects, miscPerks } = useStore()
 

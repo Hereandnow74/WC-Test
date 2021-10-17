@@ -258,7 +258,7 @@ heritages.push({
   tree: 'Transhuman',
   type: 'Self',
   cost: 195,
-  whitelist: ['Multicore Neural Leylines', 'Pocket Apartment'],
+  whitelist: ['Multicore Neural Leyline', 'Pocket Apartment'],
   desc: `Rudimentary creatures of form and flesh, simplistic souls of machine and magic, they touch your mind, fumbling in ignorance, incapable of understanding. There is a realm of existence so far beyond their own that they cannot even imagine it.
 You are beyond their comprehension.
     You. Are.
@@ -373,7 +373,7 @@ heritages.push({
 })
 
 heritages.push({
-  title: 'Branded By Possibility',
+  title: 'Branded by Possibility',
   tree: 'Outsider',
   type: 'Self',
   cost: 150,

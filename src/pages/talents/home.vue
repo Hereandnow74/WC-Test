@@ -2,19 +2,18 @@
   <div class="">
     <Desc :desc="homeDesc" class="p-2 mb-4 max-w-4xl mx-auto bg-violet-200 dark:bg-violet-900" />
     <div class="md:column-count-2 lg:column-count-3 pb-8">
-      <div
+      <component
+        :is="homePerk.multiple ? PerkCardMultiple : PerkCard"
         v-for="homePerk in homes"
-        :id="homePerk.title"
         :key="homePerk.title"
-        class="bg-yellow-200 dark:bg-yellow-900 p-2 mb-2 inline-block"
-        @click="pickHome(homePerk)"
-      >
-        <h3 class="relative text-center text-xl">
-          {{ homePerk.title }} <span text="gray-600 dark:gray-400">(Cost: {{ homePerk.cost }})</span>
-          <bi:check-lg v-if="findIndex(homePerks, {title: homePerk.title}) !== -1" class="absolute top-1 right-1" />
-        </h3>
-        <Desc :desc="homePerk.desc" />
-      </div>
+        :perk="homePerk"
+        :bg="isAvailable(homePerk) ? 'yellow-200 dark:yellow-900 hover:(yellow-100 dark:yellow-800)'
+          : 'gray-200 dark:gray-600'"
+        :is-available="isAvailable(homePerk)"
+        :is-active="findIndex(homePerks, {title: homePerk.title}) !== -1"
+        @count="count = $event"
+        @pickPerk="pickHome(homePerk)"
+      />
     </div>
   </div>
 </template>
@@ -25,27 +24,42 @@ import { homes, homeDesc, HomePerk } from '~/data/talents'
 import { useTooltips } from '~/logic/misc'
 import { useStore } from '~/store/store'
 
-const { allEffects, homePerks } = useStore()
+import PerkCard from '~/components/PerkCard.vue'
+import PerkCardMultiple from '~/components/PerkCardMultiple.vue'
+
+const { allEffects, homePerks, flags } = useStore()
 
 function isAvailable(home: HomePerk): boolean {
-  if (!home.whitelist) { return true }
-  else {
-    if (intersection(home.whitelist, allEffects.value).length === home?.whitelist?.length)
+  if (home.whitelist) {
+    // TODO: Do it better
+    if (home.whitelist[0].match(/\(\d+x\)/) && findIndex(homePerks.value, { count: 25 }) !== -1)
       return true
+    if (intersection(home.whitelist, allEffects.value).length === (home.needed ? home.needed : home.whitelist.length))
+      return true
+    if (home.flag) return flags[home.flag]
+    return false
   }
-
   return true
 }
 
+const count = ref(0)
+
 function pickHome(home: HomePerk) {
   if (isAvailable(home)) {
-    if (allEffects.value.includes(home.title)) {
-      const heritageToDelete = homePerks.value.splice(findIndex(homePerks.value, { title: home.title }))
-      heritageToDelete.forEach(x => allEffects.value.splice(allEffects.value.indexOf(x.title), 1))
+    const ind = findIndex(homePerks.value, { title: home.title })
+    if (ind !== -1) {
+      if (home.multiple && count.value !== 0) {
+        homePerks.value[ind].count = count.value
+        homePerks.value[ind].cost = home.cost * count.value
+      }
+      else {
+        const toDel = homePerks.value.splice(ind)
+        toDel.forEach(x => allEffects.value.splice(allEffects.value.indexOf(x.title), 1))
+      }
     }
     else {
       allEffects.value.push(home.title)
-      homePerks.value.push({ title: home.title, cost: home.cost })
+      homePerks.value.push({ title: home.title, cost: home.cost, count: count.value })
     }
   }
 }
