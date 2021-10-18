@@ -1,6 +1,6 @@
 import { intensity } from '~/data/intensity'
 import { origin } from '~/data/origin'
-import { bindings } from '~/data/binding'
+import { bindings, lures, lureExpansions } from '~/data/binding'
 import { heritages } from '~/data/heritage'
 import { rides, homes, defenses, talents, perks, genericPerks } from '~/data/talents'
 
@@ -19,34 +19,13 @@ export const WORLD_RATINGS = [
   { rating: 8, title: 'All Nightmare Long', budget: 955 },
   { rating: 9, title: 'Frayed Ends of Sanity', budget: 1545 },
   { rating: 10, title: 'To Live is to Die', budget: 2500 },
-  // { rating: 11, title: 'One', budget: 'Tier 11 ticket' },
+  { rating: 11, title: 'One', budget: 11111 },
 ]
 
-export const CHAR_COSTS = [1, 2, 5, 10, 20, 50, 100, 200, 500, 1000]
+export const CHAR_COSTS = [1, 2, 5, 10, 20, 50, 100, 200, 500, 1000, 11111]
 
 export const TOOLTIPS = {
-  // 'Exit Stage Left': 'Travel Perk. Cost: 5',
   'Chargen': 'Only during character generation stage',
-  // 'Rainbow Bridge': 'Home Perk. Cost: 30',
-  // 'Donut Steel': 'Meta Talent. Cost 10 per use. Let you copy powers.',
-  // 'Template Stacking': 'Meta Talent. Cost 10 per use. Let you copy generic powers.',
-  // 'Warranty Plan': 'desc',
-  // 'Conjunction': 'desc',
-  // 'Apportation': 'desc',
-  // 'Everlasting': 'Basic Talent. Cost: 10. Weak immortality',
-  // 'Body': 'Basic Talent. Cost: 10. Fitness and health',
-  // 'Martial': 'Basic Talent. Cost: 10. Fighting ability',
-  // 'Wild': 'Basic Talent. Cost: 5. Living in wilderness',
-  // 'Science': 'Basic Talent. Cost: 20. All sorts of Knowledge',
-  // 'Engineering': 'Basic Talent. Cost: 30. Apply knowledge to practice',
-  // 'Aesthetic': 'Basic Talent. Cost: 10. Design stuff',
-  // 'Communication': 'Basic Talent. Cost: 10. Social mastery',
-  // 'Performance': 'Basic Talent. Cost: 10. Acting, dancing, music',
-  // 'Soul': 'Basic Talent. Cost: 10. Ki and other Mystic arts',
-  // 'Blessed': 'Basic Talent. Cost: 30. Higher powers',
-  // 'Psychic': 'Basic Talent. Cost: 20. Telepathy, telekinesis etc.',
-  // 'Covert': 'Basic Talent. Cost: 10. Lie, cheat, steal mastery',
-  // 'Inexhaustible': 'Basic Talent. Cost: 140. Infinite energy',
   'Rule 63': 'Genderbend',
   'Stamp': 'Binding.',
   'Choker': 'Binding.',
@@ -74,10 +53,11 @@ export const TOOLTIPS = {
 
 export const LINKS = computed(() => {
   const links = {} as Record<string, string>
+  const outside = {}
   const allCats = {
     intensity,
     origin,
-    'binding': bindings,
+    'binding': [...bindings, ...lures, ...lureExpansions],
     'heritage': heritages,
     'talents/ride': rides,
     'talents/home': homes,
@@ -89,7 +69,16 @@ export const LINKS = computed(() => {
   for (const category of Object.entries(allCats)) {
     for (const entry of category[1])
       links[entry.title] = category[0]
+      // if (outside[category[0]])
+      //   outside[category[0]].push(...(entry?.whitelist || []))
+      // else
+      //   outside[category[0]] = [...(entry?.whitelist || [])]
   }
+  // console.log(outside)
+  // for (const key in outside) {
+  //   if (Object.prototype.hasOwnProperty.call(outside, key))
+  //     console.log(outside[key].filter(x => !links[x]))
+  // }
   return links
 })
 

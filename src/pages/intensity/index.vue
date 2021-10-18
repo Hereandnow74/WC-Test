@@ -52,11 +52,10 @@ export default defineComponent({
     const { allEffects, intensities, baseBudgetAfter } = useStore()
 
     function choose(rule: Intensity) {
-      if (allEffects.value.includes(rule.title)) {
-        const start = findIndex(intensities.value, { title: rule.title })
-        const end = intensities.value.length - start
-        allEffects.value.splice(allEffects.value.indexOf(rule.title), end)
-        intensities.value.splice(start)
+      const ind = findIndex(intensities.value, { title: rule.title })
+      if (ind !== -1) {
+        const toDel = intensities.value.splice(ind)
+        toDel.forEach(x => allEffects.value.splice(allEffects.value.indexOf(x.title), 1))
       }
       else {
         if (requirementsMet(rule)) {

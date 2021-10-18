@@ -2,8 +2,7 @@
   <div class="">
     <Desc :desc="homeDesc" class="p-2 mb-4 max-w-4xl mx-auto bg-violet-200 dark:bg-violet-900" />
     <div class="md:column-count-2 lg:column-count-3 pb-8">
-      <component
-        :is="homePerk.multiple ? PerkCardMultiple : PerkCard"
+      <PerkCard
         v-for="homePerk in homes"
         :key="homePerk.title"
         :perk="homePerk"
@@ -11,9 +10,12 @@
           : 'gray-200 dark:gray-600'"
         :is-available="isAvailable(homePerk)"
         :is-active="findIndex(homePerks, {title: homePerk.title}) !== -1"
-        @count="count = $event"
-        @pickPerk="pickHome(homePerk)"
-      />
+        @pickPerk="pickHome"
+      >
+        <template v-if="homePerk.multiple" #title>
+          <NumberInput v-model="count" :min="0" :max="25" class="text-base ml-2" />
+        </template>
+      </PerkCard>
     </div>
   </div>
 </template>
@@ -23,9 +25,6 @@ import { findIndex, intersection } from 'lodash-es'
 import { homes, homeDesc, HomePerk } from '~/data/talents'
 import { useTooltips } from '~/logic/misc'
 import { useStore } from '~/store/store'
-
-import PerkCard from '~/components/PerkCard.vue'
-import PerkCardMultiple from '~/components/PerkCardMultiple.vue'
 
 const { allEffects, homePerks, flags } = useStore()
 

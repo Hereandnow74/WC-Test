@@ -12,7 +12,7 @@
       />
       <clarity:eraser-solid class="icon-btn w-8" @click="search = ''" />
       <Select v-model.number="tier" :options="tierOptions" />
-      <Input v-model.number="limit" class="w-16" />
+      <Input v-model.number="limit" class="px-1" :style="`width: ${(''+limit).length + 3}ch`" />
       <div class="hidden md:block">
         Characters in database - {{ charArr.length }}
       </div>
@@ -32,7 +32,9 @@
         :char="char"
       />
       <div v-if="!filteredCharacters.length" class="text-center flex-grow">
-        <p>No characters found.</p>
+        <p v-if="search !== ''">
+          No characters found.
+        </p>
         <Button label="Add Character" @click="() => (editMode = false, toggleShowAddCharacter())" />
       </div>
     </div>

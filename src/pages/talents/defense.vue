@@ -1,9 +1,8 @@
 <template>
-  <div class="">
+  <div class="md:p-2">
     <Desc :desc="defenceDesc" class="p-2 mb-4 max-w-4xl mx-auto bg-violet-200 dark:bg-violet-900" />
     <div class="md:column-count-2 lg:column-count-3 pb-8">
-      <component
-        :is="PerkCardMultiple"
+      <PerkCard
         v-for="defense in defenses"
         :key="defense.title"
         :perk="defense"
@@ -16,9 +15,10 @@
         @pickPerk="pickDefense(defense)"
       >
         <template #title>
-          <Select placeholder="For whom" class="inline-block text-base" :options="targetList" @click.stop />
+          <Select placeholder="For whom" class="inline-block text-base ml-2" :options="targetList" @click.stop />
+          <NumberInput v-model="count" :min="0" :max="2" class="text-base ml-2" />
         </template>
-      </component>
+      </PerkCard>
     </div>
   </div>
 </template>
@@ -29,8 +29,6 @@ import { defenses, defenceDesc, Defense } from '~/data/talents'
 import { useTooltips } from '~/logic/misc'
 import { useStore } from '~/store/store'
 
-import PerkCardMultiple from '~/components/PerkCardMultiple.vue'
-
 const targetList = ref([{ name: 'You', value: 'You' }])
 const count = ref(0)
 
@@ -40,11 +38,10 @@ companions.value.forEach(x => targetList.value.push({ name: x.name, value: x.nam
 function isAvailable(def: Defense): boolean {
   if (!def.whitelist) { return true }
   else {
-    if (intersection(def.whitelist, allEffects.value).length === def?.whitelist?.length)
+    if (intersection(def.whitelist, allEffects.value).length === (def.needed || def.whitelist.length))
       return true
   }
-
-  return true
+  return false
 }
 
 function pickDefense(def: Defense) {
@@ -61,8 +58,10 @@ function pickDefense(def: Defense) {
       }
     }
     else {
-      allEffects.value.push(def.title)
-      defensePerks.value.push({ title: def.title, cost: def.cost, count: 1 })
+      if (count.value > 0) {
+        allEffects.value.push(def.title)
+        defensePerks.value.push({ title: def.title, cost: def.cost, count: count.value })
+      }
     }
   }
 }

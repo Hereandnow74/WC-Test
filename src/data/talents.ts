@@ -662,7 +662,7 @@ defenses.push({
   title: 'Possession Defense',
   special: '<Individual> is known for bodyjacking others.',
   cost: 10,
-  whitelist: ['One of Body', 'Mind Defense'],
+  whitelist: ['Body Defense', 'Mind Defense'],
   needed: 1,
   desc: 'Nobody controls your body except you. You are protected from parasites, spiritual possession, remote body control, and body-swapping shenanigans, whether you’re conscious or not. The same forms of resistance from Mind Defense can manifest with this perk as well.',
 })
@@ -686,7 +686,8 @@ defenses.push({
   title: 'Polymorph Defense',
   special: '<Individual> is known for polymorphing others.',
   cost: 50,
-  whitelist: [' One of Body Defense', 'Wyldscape Defense', 'Corruption Defense'],
+  whitelist: ['Body Defense', 'Wyldscape Defense', 'Corruption Defense'],
+  needed: 1,
   desc: `You can resist targeted supernatural transformations. Such attacks will take more effort and tend to remain incomplete and weaken you less than they should unless repeated for long enough. For example, an attempt to turn you into a tiny newt may turn you into a giant newt or a still-functional newt-man. Any loss of strength, durability, or similar traits from transformation will experience diminishing returns.
 At the immunity level, If you are transformed in such a way, even before you were protected by this perk, you may easily reverse the effect, entirely or in piecemeal, at will. All detransformations in your retinue will require your consent, not the victim’s. Contagious transformations that you allow will not spread from you or your retinue to third parties unless you choose to let that happen as well.`,
 })
@@ -695,7 +696,8 @@ defenses.push({
   title: 'Wyldscape Defense',
   special: '<Individual> hails from a region where the local reality is unstable.',
   cost: 50,
-  whitelist: ['One of Environmental Defense', 'Polymorph Defense', 'Corruption Defense'],
+  whitelist: ['Environmental Defense', 'Polymorph Defense', 'Corruption Defense'],
+  needed: 1,
   desc: `You can resist ongoing supernatural transformations that just affect anyone who enters the area of effect.  The same forms of resistance from Polymorph Defense can manifest with this perk as well.
 At the immunity level, if you are transformed in such a way, even before you were protected by this perk, you may easily reverse the effect, entirely or in piecemeal, at will. All detransformations in your retinue require your consent, not the victim’s. Contagious transformations that you allow will not spread from you or your retinue to third parties unless you choose to let that happen as well.`,
 })
@@ -704,7 +706,8 @@ defenses.push({
   title: 'Corruption Defense',
   special: '<Individual> is known for forcibly bringing out others’ dark sides.',
   cost: 50,
-  whitelist: ['One of Soul Defense', 'Polymorph Defense', 'Wyldscape Defense'],
+  whitelist: ['Soul Defense', 'Polymorph Defense', 'Wyldscape Defense'],
+  needed: 1,
   desc: 'Metaphysically corruptive effects, whether environmental or targeted in nature, are slower to affect you, with diminishing returns the farther the corruption would take you from your fundamental self. After they wear off, you may choose to retain effects that would normally be permanent (plus any attendant transformations, if you have those defenses) as a sort of superpowered evil side, or a separate alter ego to converse with. These remain fundamentally you, just a different version of you seen through a different lens. Other Defenses such as Body, Stress, Addiction, Mind, and Soul may prove extremely useful, depending on the specifics of such a scenario.',
 })
 
@@ -832,7 +835,7 @@ perks.push({
 perks.push({
   title: 'Memoria',
   cost: 5,
-  whitelist: ['Possession Origin'],
+  whitelist: ['Possess'],
   special: 'Chargen only',
   desc: 'You… actually want the episodic memories and emotional connections of your Possess target? We can do that. The extra data will be downloaded into your Possess target alongside your own personality. As with Extra and Substitute, you can distinguish between your original memories and those of your Possess target without difficulty.',
 })

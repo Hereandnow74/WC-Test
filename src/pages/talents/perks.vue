@@ -29,22 +29,33 @@ const { allEffects, miscPerks } = useStore()
 function isAvailable(perk: Perk): boolean {
   if (!perk.whitelist) { return true }
   else {
-    if (intersection(perk.whitelist, allEffects.value).length === perk?.whitelist?.length)
+    if (intersection(perk.whitelist, allEffects.value).length === (perk.needed || perk.whitelist.length))
       return true
   }
 
-  return true
+  return false
 }
+
+const count = ref(0)
 
 function pickPerk(perk: Perk) {
   if (isAvailable(perk)) {
-    if (allEffects.value.includes(perk.title)) {
-      const heritageToDelete = miscPerks.value.splice(findIndex(miscPerks.value, { title: perk.title }))
-      heritageToDelete.forEach(x => allEffects.value.splice(allEffects.value.indexOf(x.title), 1))
+    const ind = findIndex(miscPerks.value, { title: perk.title })
+    if (ind !== -1) {
+      if (count.value !== 0) {
+        miscPerks.value[ind].count = count.value
+        miscPerks.value[ind].cost = perk.cost * count.value
+      }
+      else {
+        const heritageToDelete = miscPerks.value.splice(findIndex(miscPerks.value, { title: perk.title }))
+        heritageToDelete.forEach(x => allEffects.value.splice(allEffects.value.indexOf(x.title), 1))
+      }
     }
     else {
-      allEffects.value.push(perk.title)
-      miscPerks.value.push({ title: perk.title, cost: perk.cost })
+      if (count.value > 0) {
+        allEffects.value.push(perk.title)
+        miscPerks.value.push({ title: perk.title, cost: perk.cost })
+      }
     }
   }
 }

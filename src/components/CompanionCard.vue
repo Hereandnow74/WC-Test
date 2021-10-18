@@ -13,14 +13,14 @@
       <div class="py-2 h-max">
         <h4 class="text-xl justify-center flex items-center">
           {{ char.name }} (<span class="text-blue-200">{{ char.world }}</span>)
-          <fluent:delete-20-filled v-if="isUserChar" class="hover:text-red-500 ml-2" @click="deleteCharacter" />
+          <fluent:delete-20-filled v-if="isUserChar" class="hover:text-red-500 ml-2 cursor-pointer" @click="deleteCharacter" />
         </h4>
         <div class="flex justify-between px-4">
           <div class="text-gray-400">
             Tier: <span class="text-amber-300">{{ char.tier }}</span>
           </div>
           <div class="text-gray-400">
-            Cost: <span class="text-amber-300">{{ char.cost === 11111 ? 'Tier 11 Ticket' : char.cost }}</span>
+            Cost: <span class="text-amber-300">{{ CHAR_COSTS[char.tier - 1] }}</span>
             <span
               v-if="flags.noBindings && char.tier !== 11 && char.tier !== 1"
               title="Discount from No Binding"
@@ -64,7 +64,7 @@ const showModal = ref(false)
 const { flags, companions, localUserCharacters } = useStore()
 
 function buyCompanion(char: any) {
-  companions.value.push({ uid: char.uid, name: char.name, world: char.world[0], tier: char.tier })
+  companions.value.push({ uid: char.uid, name: char.name, world: char.world, tier: char.tier })
 }
 
 function undoBuying(uid: number) {

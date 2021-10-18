@@ -242,7 +242,7 @@ bindings.push({
   title: 'Third-Generation Symbiote',
   type: 'Expansion',
   cost: 60,
-  whitelist: ['Second Generation'],
+  whitelist: ['Second-Generation Symbiote'],
   desc: `One of our lab’s attempts to hybridize our symbiotes with wild shoggoths has borne fruit. (All interns involved in the incident have been safely restored from backups.) This upgrade allows your symbiote hosts, including yourself, to melt into a semisolid amoeboid form for better infiltration, whether by flowing through vents, along a ceiling or wall, or hitching a ride on a person. Symbiote hosts obey conservation of mass in their slime forms and must remain contiguous. The form may be maintained indefinitely and they otherwise have full control over the form's shape, texture, and coloration. Symbiote hosts that have innate supernatural abilities of biological or genetic origin (ex. X-gene, Quirks, hereditary magic potential, alien racial abilities, etc.) retain them in their slime form. If they have enough room, they may revert to their original or symbiote forms at will, and may also assume a solid "armor" form around another similarly-sized being.
 By doing so, a symbiote host who comes into contact with a capture target can bind them on their own, without aid from a larva. The slime form flows under the target's clothes and equipment, fully encasing them and keeping them compliant with sexual stimulation while injecting symbiote transformative fluid into blood vessels close to the skin and pumping into the digestive or (for female targets) reproductive systems. In this state, the slime form can also mentally converse with the target and speak with their voice, use their slime body as natural weapons, etc., until the target is converted (captured and symbiote-bound). This conversion method obeys the same timeframe and interruption rules as a full-cocoon Shroud binding and may be hastened with all-the-way-through penetration. This will allow symbiote transformative fluid to be absorbed by every part of the target’s digestive system at once. After conversion, the two may separate to reveal the new capture's symbiote form with the same body growth as the other types of symbiote capture. Additional sex is not needed to confim a capture that used this method. Finally, a slime-form may overload their wearer's mind by spiking their libido and sensitivity. This also overloads their own mind, cannot be undone manually, and will only reverse itself when the duo are fully satisfied.
 If more than one member of your symbiote swarm has entered their slime form, they can combine into a larger slime with one body, two minds, and one will. swarm members may freely enter and exit such fusions without any negative side-effects. If any members of such a fusion have innate biological or genetic abilities, this will catalyze the appearance of those in the others. The specific expressions of these gifts will not always be consistent between subjects. For example, a Quirk user in such a fusion would cause others in it to gain Quirks of their own, and not necessarily similar ones. This feature cannot copy Heritage powers.`,
@@ -421,7 +421,7 @@ lures.push({
 lures.push({
   title: 'Faerie Feast: The Secret Ingredient is Love',
   cost: 5,
-  whitelist: ['Master Chef'],
+  whitelist: ['Faerie Feast: Master Chef'],
   desc: 'Members of your retinue that are already skilled at cooking no longer need your guidance to benefit from Faerie Feast, provided at least part of the meal is intended for consumption by you or other members of your retinue.',
 })
 

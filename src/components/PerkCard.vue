@@ -4,11 +4,11 @@
     class="p-2 mb-2 inline-block cursor-pointer"
     @click="$emit('pickPerk', perk)"
   >
-    <h3 class="relative flex-wrap flex justify-center text-xl">
+    <h3 class="relative flex-wrap flex justify-center items-center text-xl">
       <span class="whitespace-nowrap">{{ perk.title }}</span>
       <slot name="title" />
       <span text="gray-500 dark:gray-400" class="whitespace-nowrap">
-        (Cost: <span text="green-600 dark:green-300">{{ perk.cost }}</span>)
+        (Cost: <span text="green-600 dark:green-300">{{ displayedCost }}</span>)
       </span>
       <bi:check-lg
         v-if="isActive"
@@ -24,14 +24,14 @@
     </div>
     <div v-if="perk.whitelist" class="flex gap-2 mx-2">
       Require:
-      <Enum :list="perk.whitelist.map(x => ({title: x}))" />
+      <Enum :list="perk.whitelist" />
     </div>
   </div>
 </template>
 
 <script lang='ts' setup>
 
-defineProps({
+const props = defineProps({
   perk: {
     type: Object,
     default: () => ({}),
@@ -44,6 +44,15 @@ defineProps({
     type: Boolean,
     default: false,
   },
+  calculatedCost: {
+    type: Number,
+    default: 0,
+  },
+})
+
+const displayedCost = computed(() => {
+  const cost = props.calculatedCost || props.perk.cost
+  return cost === 11111 ? 'Tier 11 ticket' : cost
 })
 
 </script>

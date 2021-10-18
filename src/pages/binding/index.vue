@@ -24,94 +24,61 @@
           All waifus of tiers 2-10 are discounted by one full rank.
         </div>
       </div>
-      <div
-        v-for="binding in bindings"
-        :id="binding.title"
-        :key="binding.title"
-        class="mb-2 pb-2 inline-block bg-light-400 dark:bg-rose-900 "
-        :class="isAllowed(binding) ? 'filter hover:(bg-light-700 dark:bg-rose-700) cursor-pointer': 'dark:bg-gray-600'"
-        @click="choose(binding)"
+      <PerkCard
+        v-for="bnd in bindings"
+        :key="bnd.title"
+        :perk="bnd"
+        :bg="isAllowed(bnd) ? 'light-400 dark:rose-900 hover:(yellow-100 dark:rose-800)'
+          : 'gray-200 dark:gray-600'"
+        :is-available="isAllowed(bnd)"
+        :is-active="findIndex(binding, {title: bnd.title}) !== -1"
+        @pickPerk="choose"
       >
-        <h3 class="text-center text-xl flex justify-between px-2 items-center">
-          <span>{{ binding.title }} <span text="gray-600 dark:gray-400">(Cost: {{ binding.cost }})</span></span>
-          <bi:check-lg v-if="allEffects.includes(binding.title)" class="text-green-500" />
-        </h3>
-        <Desc :desc="binding.desc" />
-        <div v-if="binding.effect" class="text-yellow-300 px-2">
-          Effect: {{ binding.effect }}
-        </div>
-        <div v-if="binding.type" class="text-red-300 px-2">
-          Type: {{ binding.type }}
-        </div>
-        <div v-if="binding.whitelist" class="flex gap-2 px-2" @click.stop>
-          Requires:
-          <Enum :list="binding.whitelist.map(x => ({title: x}))" path="/binding" />
-        </div>
-      </div>
+      </PerkCard>
     </div>
     <h3 id="lures" class="text-2xl text-center">
       Lures <router-link
         :to="{path:'/binding', hash:'#expansions'}"
-        class="text-base text-gray-600 dark:text-gray-400"
+        class="text-base text-blue-600 dark:text-blue-400"
       >
         (go to Expansions)
       </router-link>
     </h3>
     <Desc :desc="lureDesc" class="bg-gray-200 dark:bg-gray-600 max-w-screen-md my-4 mx-auto" />
     <div class="md:column-count-2 lg:column-count-3">
-      <div
-        v-for="lure in lures"
-        :id="lure.title"
-        :key="lure.title"
-        class="mb-2 pb-2 inline-block bg-pink-100 dark:bg-pink-900 "
-        :class="isLureAllowed(lure) ? 'hover:(bg-pink-200 dark:bg-pink-800) cursor-pointer': 'bg-gray-300 dark:bg-gray-600'"
-        @click="chooseLure(lure)"
+      <PerkCard
+        v-for="bnd in lures"
+        :key="bnd.title"
+        :perk="bnd"
+        :bg="isLureAllowed(bnd) ? 'pink-100 dark:pink-900 hover:(pink-200 dark:rose-800)'
+          : 'gray-200 dark:gray-600'"
+        :is-available="isLureAllowed(bnd)"
+        :is-active="findIndex(luresBought, {title: bnd.title}) !== -1"
+        @pickPerk="chooseLure"
       >
-        <h3 class="text-center text-xl flex justify-between px-2 items-center">
-          <span>{{ lure.title }} <span text="gray-600 dark:gray-400">(Cost: {{ lure.cost }})</span></span>
-          <bi:check-lg v-if="findIndex(luresBought, {title: lure.title}) !== -1" class="text-green-500" />
-        </h3>
-        <Desc :desc="lure.desc" />
-        <div v-if="lure.special" class="p-2">
-          Special: <span class="text-yellow-800 dark:text-yellow-200" v-html="lure.special"></span>
-        </div>
-        <div v-if="lure.whitelist" class="flex gap-2 px-2" @click.stop>
-          Requires:
-          <Enum :list="lure.whitelist.map(x => ({title: x}))" path="/binding" />
-        </div>
-      </div>
+      </PerkCard>
     </div>
     <h3 id="expansions" class="text-2xl text-center">
       Lure Expansions  <router-link
         :to="{path:'/binding', hash:'#bindings'}"
-        class="text-base text-gray-600 dark:text-gray-400"
+        class="text-base text-blue-600 dark:text-blue-400"
       >
         (go to Bindings)
       </router-link>
     </h3>
     <Desc :desc="lureExpansionDesc" class="bg-gray-200 dark:bg-gray-600 max-w-screen-md my-4 mx-auto" />
     <div class="md:column-count-2 lg:column-count-3">
-      <div
-        v-for="lureExp in lureExpansions"
-        :id="lureExp.title"
-        :key="lureExp.title"
-        class="mb-2 pb-2 inline-block bg-rose-100 dark:bg-rose-900 "
-        :class="isLureAllowed(lureExp) ? 'hover:(bg-pink-200 dark:bg-pink-800) cursor-pointer': 'bg-gray-300 dark:bg-gray-600'"
-        @click="chooseLure(lureExp)"
+      <PerkCard
+        v-for="bnd in lureExpansions"
+        :key="bnd.title"
+        :perk="bnd"
+        :bg="isLureAllowed(bnd) ? 'pink-100 dark:pink-900 hover:(pink-200 dark:rose-800)'
+          : 'gray-200 dark:gray-600'"
+        :is-available="isLureAllowed(bnd)"
+        :is-active="findIndex(luresBought, {title: bnd.title}) !== -1"
+        @pickPerk="chooseLure"
       >
-        <h3 class="text-center text-xl flex justify-between px-2 items-center">
-          <span>{{ lureExp.title }} <span text="gray-600 dark:gray-400">(Cost: {{ lureExp.cost }})</span></span>
-          <bi:check-lg v-if="findIndex(luresBought, {title: lureExp.title}) !== -1" class="text-green-500" />
-        </h3>
-        <Desc :desc="lureExp.desc" />
-        <div v-if="lureExp.special" class="p-2">
-          Special: <span class="text-fuchsia-700 dark:text-yellow-200" v-html="lureExp.special"></span>
-        </div>
-        <div v-if="lureExp.whitelist" class="flex gap-2 px-2" @click.stop>
-          Requires:
-          <Enum :list="lureExp.whitelist.map(x => ({title: x}))" path="/binding" />
-        </div>
-      </div>
+      </PerkCard>
     </div>
   </div>
 </template>
@@ -121,6 +88,7 @@ import { findIndex, intersection } from 'lodash-es'
 import { desc, bindings, Binding, lureDesc, lures, lureExpansionDesc, lureExpansions, Lure } from '~/data/binding'
 import { genericChoose, useTooltips } from '~/logic/misc'
 import { useStore } from '~/store/store'
+import PerkCard from '~/components/PerkCard.vue'
 
 const { allEffects, binding, luresBought, flags } = useStore()
 

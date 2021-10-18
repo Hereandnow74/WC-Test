@@ -78,7 +78,7 @@ export default defineComponent({
       title: '',
       cost: 0,
       character: '',
-      tier: '',
+      tier: 1,
     })
 
     const { allEffects, startingOrigin } = useStore()
