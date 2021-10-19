@@ -22,7 +22,7 @@
       <Desc :desc="world.additional" />
     </Foldable>
     <template v-if="world.condition">
-      <div v-if="typeof world.condition === 'object'" class="px-2 pb-2">
+      <div v-if="typeof world.condition === 'object' && world.condition.length" class="px-2 pb-2">
         Condition:
         <select
           id="condition"
@@ -35,7 +35,7 @@
           </option>
         </select>
       </div>
-      <div v-else class="px-2 pb-2">
+      <div v-else-if="world.condition.length" class="px-2 pb-2">
         {{ world.condition }}
       </div>
     </template>

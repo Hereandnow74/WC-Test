@@ -51,7 +51,7 @@ const props = defineProps({
 })
 
 const displayedCost = computed(() => {
-  const cost = props.calculatedCost || props.perk.cost
+  const cost = props.isActive ? (props.calculatedCost || props.perk.cost) : props.perk.cost
   return cost === 11111 ? 'Tier 11 ticket' : cost
 })
 

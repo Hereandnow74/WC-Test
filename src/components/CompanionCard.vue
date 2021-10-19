@@ -11,8 +11,8 @@
         />
       </div>
       <div class="py-2 h-max">
-        <h4 class="text-xl justify-center flex items-center">
-          {{ char.name }} (<span class="text-blue-200">{{ char.world }}</span>)
+        <h4 class="text-xl justify-center flex items-center px-1">
+          <span>{{ char.name }} (<span class="text-blue-200">{{ char.world }}</span>)</span>
           <fluent:delete-20-filled v-if="isUserChar" class="hover:text-red-500 ml-2 cursor-pointer" @click="deleteCharacter" />
         </h4>
         <div class="flex justify-between px-4">

@@ -10,27 +10,26 @@
       />
       <clarity:eraser-solid class="icon-btn w-8" @click="search = ''" />
       <span class="hidden md:block pl-4 whitespace-nowrap">Worlds in database: {{ worldsCount }}</span>
+      <Button size="Small" label="Add World" class="whitespace-nowrap" @click="() => (editMode = false, toggleShowAddWorld())" />
     </div>
     <Foldable v-if="allUserWorlds.length" class="text-lg mb-2" title="User Worlds">
       <div class="mb-4 flex flex-wrap gap-1 overflow-y-auto">
         <WorldCard v-for="world in allUserWorlds" :key="world.worldName" :world="world" :is-user-world="true" />
       </div>
     </Foldable>
-    <h3 v-if="allUserWorlds.length && worldsFiltered.length" class="text-lg border-b mb-2">
-      Canon Worlds
-    </h3>
-    <div class="flex flex-wrap gap-1 overflow-y-auto pb-8">
-      <WorldCard
-        v-for="{item: world} in worldsFiltered"
-        :key="world.worldName + (world.condition || 'none')"
-        :world="world"
-        @edit-world="editWorld"
-      />
-      <div v-if="!worldsFiltered.length" class="text-center flex-grow">
-        <p>No worlds found.</p>
-        <Button label="Add World" @click="() => (editMode = false, toggleShowAddWorld())" />
+    <Foldable v-if="allUserWorlds.length && worldsFiltered.length" class="text-lg mb-2" title="Canon Worlds" :is-open="true">
+      <div class="flex flex-wrap gap-1 overflow-y-auto pb-8">
+        <WorldCard
+          v-for="world in worldsFiltered"
+          :key="world.worldName + (world.condition || 'none')"
+          :world="world"
+          @edit-world="editWorld"
+        />
+        <div v-if="!worldsFiltered.length" class="text-center flex-grow">
+          <p>No worlds found.</p>
+        </div>
       </div>
-    </div>
+    </Foldable>
     <AddWorld v-if="showAddWorld" :world="worldToEdit" :edit-mode="editMode" @click="toggleShowAddWorld" />
   </div>
 </template>
@@ -62,7 +61,10 @@ export default defineComponent({
     const allUserWorlds = computed(() => userWorlds.value.concat(localUserWorlds.value))
 
     const worldsFiltered = computed(() => {
-      return fuse.search(search.value)
+      if (search.value)
+        return fuse.search(search.value).map(x => x.item)
+      else
+        return worldsReac.value
     })
 
     function editWorld(world: typeof worlds[number]) {

@@ -33,7 +33,7 @@ export default defineComponent({
     },
   },
   setup(props) {
-    const isFolded = ref(false)
+    const isFolded = ref(props.isOpen)
 
     watch(() => props.isOpen, () => isFolded.value = props.isOpen)
 

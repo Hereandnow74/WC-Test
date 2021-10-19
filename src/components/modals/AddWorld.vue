@@ -82,12 +82,12 @@ export default defineComponent({
     const schema = toFormValidator(
       zod.object({
         worldName: zod.string().nonempty('World name is required'),
-        rating: zod.number().min(1, { message: 'Minimum World rating is 1' }).max(10, { message: 'Maximum World level is 10' }),
+        rating: zod.number().min(1, { message: 'Minimum World rating is 1' }).max(11, { message: 'Maximum World level is 11' }),
         image: zod.string().url({ message: 'Must be a valid URL' }).optional().or(zod.literal('')),
         additional: zod.string(),
         condition: zod.object({
           name: zod.string().nonempty('Condition is required'),
-          rating: zod.number().min(1, { message: 'Minimum World rating is 1' }).max(10, { message: 'Maximum World level is 10' }),
+          rating: zod.number().min(1, { message: 'Minimum World rating is 1' }).max(11, { message: 'Maximum World level is 11' }),
         }).array(),
       }),
     )

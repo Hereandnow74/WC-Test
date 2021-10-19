@@ -82,6 +82,14 @@ export const LINKS = computed(() => {
   return links
 })
 
+let chars = null
+
+export async function getChars() {
+  if (!chars)
+    chars = Object.values((await import('~/data/characters.json')).default)
+  return chars
+}
+
 const str = Object.keys(TOOLTIPS).sort((a, b) => b.length - a.length).join('|')
 export const TOOLTIPS_REG = new RegExp(str, 'g')
 export const LINKS_REG = new RegExp(Object.keys(LINKS.value).join('|'), 'g')

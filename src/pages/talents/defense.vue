@@ -11,7 +11,7 @@
         :is-available="isAvailable(defense)"
         :is-active="findIndex(defensePerks, {title: defense.title}) !== -1"
         :max="2"
-        @count="count = $event"
+        :calculated-cost="defense.cost*count"
         @pickPerk="pickDefense(defense)"
       >
         <template #title>

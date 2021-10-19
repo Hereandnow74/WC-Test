@@ -1,6 +1,7 @@
 // register vue composition api globally
-import { createApp } from 'vue'
+// import { createApp } from 'vue'
 import { createRouter, createWebHistory } from 'vue-router'
+// import { ViteSSG } from 'vite-ssg'
 import routes from 'virtual:generated-pages'
 import App from './App.vue'
 
@@ -10,6 +11,27 @@ import 'virtual:windi-components.css'
 import './styles/main.css'
 import 'virtual:windi-utilities.css'
 import 'tippy.js/dist/tippy.css'
+
+// `export const createApp` is required
+// export const createApp = ViteSSG(
+//   // the root component
+//   App,
+//   // vue-router options
+//   {
+//     routes,
+//     scrollBehavior(to, from, savedPosition) {
+//       if (to.hash) {
+//         return {
+//           el: to.hash,
+//         }
+//       }
+//       if (savedPosition)
+//         return savedPosition
+//       return { top: 0 }
+//     },
+//   },
+//   // function to have custom setups
+// )
 
 const app = createApp(App)
 const router = createRouter({

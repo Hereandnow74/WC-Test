@@ -13,7 +13,7 @@
       >
         <div class="">
           <div class="flex gap-1 items-center">
-            <h4 class="text-xl mb-1 mr-auto">
+            <h4 class="text-xl mb-1 mr-auto px-2">
               {{ item.title }}
               <span text="gray-600 dark:gray-400">
                 (Cost: {{ choosedOrigin.title === item.title ? choosedOrigin.cost : item.cost }})
@@ -31,7 +31,11 @@
               </select>
             </div>
             <div v-if="item.character && choosedOrigin.title === item.title" class="flex gap-1">
-              <Input v-model="choosedOrigin.character" placeholder="Char name" />
+              <CharacterInput
+                v-model="choosedOrigin.character"
+                :error-message="costError"
+                @updateTier="choosedOrigin.tier = $event"
+              />
               <Input
                 v-model="choosedOrigin.tier"
                 class="w-12"
@@ -80,8 +84,9 @@ export default defineComponent({
       character: '',
       tier: 1,
     })
+    const costError = ref('')
 
-    const { allEffects, startingOrigin } = useStore()
+    const { allEffects, startingOrigin, baseBudget } = useStore()
 
     onMounted(() => useTooltips())
 
@@ -99,14 +104,20 @@ export default defineComponent({
     }
 
     function pickOrigin() {
-      allEffects.value.push(choosedOrigin.title)
-      Object.assign(startingOrigin.value, choosedOrigin)
+      if (choosedOrigin.title === 'Substitute' && choosedOrigin.cost > baseBudget.value * 0.2) {
+        costError.value = 'Cost should be less than 20% of your starting budget'
+      }
+      else {
+        costError.value = ''
+        allEffects.value.push(choosedOrigin.title)
+        Object.assign(startingOrigin.value, choosedOrigin)
+      }
     }
 
     return {
-      CHAR_COSTS,
       desc,
       origin,
+      costError,
       chooseOrigin,
       choosedOrigin,
       startingOrigin,

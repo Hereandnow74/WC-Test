@@ -34,6 +34,10 @@
         :is-active="findIndex(binding, {title: bnd.title}) !== -1"
         @pickPerk="choose"
       >
+        <template v-if="['Elemental Shroud', 'Prismatic Shroud'].includes(bnd.title)" #title>
+          <span v-if="bnd.element">({{ bnd.element }})</span>
+          <Button size="Small" label="element" class="mx-1" @click.stop="chooseElement(bnd)" />
+        </template>
       </PerkCard>
     </div>
     <h3 id="lures" class="text-2xl text-center">
@@ -80,25 +84,42 @@
       >
       </PerkCard>
     </div>
+    <Modal v-if="showElements" label="Choose Element" @click="toggleElements">
+      <div class="h-full md:h-3/4 bg-gray-200 dark:bg-gray-600 overflow-y-auto min-h-0 flex flex-col gap-2">
+        <div
+          v-for="element in shroudElements"
+          :key="element.title"
+          class="flex flex-col gap-1 bg-gray-300 dark:bg-gray-700 m-2 rounded cursor-pointer"
+          @click="currentBinding.element = element.title"
+        >
+          <div v-for="item, key in element" :key="item">
+            <span class="px-2 text-orange-500 dark:text-orange-300 font-semibold">{{ key }}</span>:
+            <span>{{ item }}</span>
+          </div>
+        </div>
+      </div>
+    </Modal>
   </div>
 </template>
 
 <script lang='ts' setup>
 import { findIndex, intersection } from 'lodash-es'
-import { desc, bindings, Binding, lureDesc, lures, lureExpansionDesc, lureExpansions, Lure } from '~/data/binding'
+import { desc, bindings, Binding, lureDesc, lures, lureExpansionDesc, lureExpansions, shroudElements } from '~/data/binding'
 import { genericChoose, useTooltips } from '~/logic/misc'
 import { useStore } from '~/store/store'
 import PerkCard from '~/components/PerkCard.vue'
 
 const { allEffects, binding, luresBought, flags } = useStore()
+const [showElements, toggleElements] = useToggle()
+const currentBinding = ref<Binding|null>(null)
 
 onMounted(() => useTooltips())
 
 function choose(bin: Binding) {
   if (!isAllowed(bin)) return
-
-  if (allEffects.value.includes(bin.title)) {
-    const del = binding.value.splice(findIndex(binding.value, { title: bin.title }))
+  const ind = findIndex(binding.value, { title: bin.title })
+  if (ind !== -1) {
+    const del = binding.value.splice(ind)
     del.forEach(x => allEffects.value.splice(allEffects.value.indexOf(x.title), 1))
     if (binding.value.length === 0) flags.noBindings = true
   }
@@ -123,13 +144,18 @@ function isAllowed(bin: Binding): boolean {
   return false
 }
 
-function isLureAllowed(lure: Lure): boolean {
+function isLureAllowed(lure: Binding): boolean {
   if (lure.whitelist)
     return intersection(lure.whitelist, allEffects.value).length >= 1
   return true
 }
 
-function chooseLure(lure: Lure) {
+function chooseLure(lure: Binding) {
   genericChoose(lure, isLureAllowed, luresBought.value)
+}
+
+function chooseElement(bnd: Binding) {
+  showElements.value = true
+  currentBinding.value = bnd
 }
 </script>

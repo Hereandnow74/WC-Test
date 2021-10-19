@@ -27,6 +27,9 @@ export interface Binding {
   cost: number
   whitelist?: string[]
   type?: string
+  element?: string
+  special?: string
+  image?: string
 }
 
 export const bindings: Binding[] = []
@@ -271,10 +274,109 @@ These always retain the standard company protections on devices and may be recal
 This Perk may be repurchased multiple times. With the ninth purchase, your Shroud will develop to the point that you may separate as many portions from it as you would like.`,
 })
 
+export const shroudElements = [
+  {
+    'title': 'Glorious (Light)',
+    'Elemental Ability': 'Light and plasma generation and control. Constructs made from it glow intensely and tend to be very crisp hard light. Intense usage tends to be plasma or brilliant lasers. Subtle usage can be nearly imperceptible changes in brightness or electromagnetic fields.',
+    'Body Effects': 'Glowing golden sclera, glowing tribalistic tattoos over face and body.',
+    'Streamlined costume features': 'A formal suit, dress, or robes in a consistent white and gold color scheme.',
+    'Heavy costume features': 'Full coverage hard light armor with shoulder-attached cape. Masculine and feminine styles only differ in curvature.',
+    'Freebies': ['Communication Talent, Performance Talent, Blessed Talent'],
+  },
+  {
+    'title': 'Fearful (Shadow)',
+    'Elemental Ability': 'Shadow and gravity generation and control. Constructs made from it tend to be hazy and semi-transparent. Intense effects tend to involve black voids and inky clouds of shadow, while subtle usage can be dimming of ambient light, or subtle shifts in gravity.',
+    'Body Effects': 'Black sclera and lips, dark facial tattoos, sharpened black finger- and toenails.',
+    'Streamlined costume features': 'All gothic black leather and fishnet. Often has black leather gloves and boots.',
+    'Heavy costume features': 'Dark overlord style full armor with menacing spikes, shoulder-attached cape, and a full face-concealing helmet. Feminine design only differs in curvature.',
+    'Freebies': ['Covert Talent, Performance Talent, Blessed Talent'],
+  },
+  {
+    'title': 'Volcanic (Fire)',
+    'Elemental Ability': 'Fire and magma generation and control, with practice also able to inflame passions and emotions. Intense manifestations are things such as embers, flames, and magma, while subtle usages can alter ambient temperatures, ashes, and embers.',
+    'Body Effects': 'Constantly-flushed skin, heightened body temperature. Faint smell of smoke, incense, or ash. Eyes glow like embers.',
+    'Streamlined costume features': 'Glowing oranges, orange trim on black backgrounds, flame patterns.',
+    'Heavy costume features': 'Full body armor, seemingly melted into place with a burning inner glow.',
+    'Freebies': ['Martial Talent, Wild Talent, Wild Defense (2x), Environmental Defense'],
+  },
+  {
+    'title': 'Boreal (Ice)',
+    'Elemental Ability': 'Ice and snow generation and control, with practice also able to cool passions and emotions. Intense usage involves things like snow and ice. Subtle usage can lower ambient temperature, be the misting of breath, or hints of rime and frost.',
+    'Body Effects': 'Skin tinted blue from lower body temperature. Faint smell of pine needles. Eyes glow like ice.',
+    'Streamlined costume features': 'Lace, white and blues, sheer materials.',
+    'Heavy costume features': 'Fur, heavy materials, layers of silks.',
+    'Freebies': ['Martial Talent, Wild Talent, Wild Defense (2x), Environmental Defense'],
+  },
+  {
+    'title': 'Xeric (Land)',
+    'Elemental Ability': 'Earth, stone, and gem generation and control. These materials last the longest of the Shroud-generated materials when separated from the Shroud. Intense manifestations involve soil, rock, stone, gemstones, or mud, while subtle manifestations can be such as imperceptibly spread through the ground beneath your feet, dust in the air.',
+    'Body Effects': 'Richly tanned skin if otherwise lighter. Smell of moist clay or loam. Eyes sparkle as gemstones of the same color.',
+    'Streamlined costume features': 'Brightly-colored silk, veils, jewelry-as-lingerie.',
+    'Heavy costume features': 'Metal plating, gemstones.',
+    'Freebies': ['Martial Talent, Wild Talent, Wild Defense (2x), Environmental Defense'],
+  },
+  {
+    'title': 'Pelagic (Sea)',
+    'Elemental Ability': 'Water and natural fluid generation and control. Constructs tend to be surprisingly solid and slightly springy shapes made of water or coral. Obvious manifestations include torrents of water, fresh or otherwise, as well as other more natural liquids such as oil. Subtle manifestations include dew, mist and dampness. You may ‘harden’ portions of the Shroud into ice.',
+    'Body Effects': 'Mermaid alt-form automatically activates when entering water - can be based on any sea creature, not just fish. Skin tinted blue-green, sometimes a deeper black. Smell of salty ocean spray. Can have watery eyes or perpetually damp hair. Presence leaves condensation on nearby surfaces.',
+    'Streamlined costume features': 'Neck-down bodysuit matching mermaid form. Kelp-like materials. Bathing suits.',
+    'Heavy costume features': 'A diving suit with attached helmet, a full wetsuit, coral plating',
+    'Freebies': ['Martial Talent, Wild Talent, Wild Defense (2x), Environmental Defense'],
+  },
+  {
+    'title': 'Storm (Sky)',
+    'Elemental Ability': 'Wind, lightning, and cloud generation and control. Constructs tend to be compressed wind or semi-solid clouds. Intense manifestations tend to be clouds, lightning, or howling winds, while subtle manifestations of the Storm Shroud are some of the most versatile out there, able to alter the weather, and manipulate the very air currents.',
+    'Body Effects': 'Smell of fresh breeze or ozone. Eyes crackle with lightning at times. A dramatic wind always occurs when needed. Head wings.',
+    'Streamlined costume features': 'Both designs have a leather coat and winged boots. Feminine design has bikini; boots are thigh-highs. Masculine design has tight pants and no shirt. Fishnet and scarf optional.',
+    'Heavy costume features': 'Scarves, tassels, flowing robes',
+    'Freebies': ['Martial Talent, Wild Talent, Wild Defense (2x), Environmental Defense'],
+  },
+  {
+    'title': 'Primal (Fauna)',
+    'Elemental Ability': 'Animal biomass generation and control. Constructs tend to be actual living creatures or masses of tendrils and tentacles. Intense effects tend to be flesh, muscles, spines, and biomass alteration. The line between intense and subtle effects is particularly blurry for the Primal and Jungle Shrouds and is primarily found in the fidelity of control. Both elements gain the ability to control fungi and, thus, spores and mycelium once Elemental Loom is purchased.',
+    'Body Effects': 'Individual gets a kemonomimi mode based on a natural animal, from your or individual’s homeworld and appropriate to individual’s personality. Kemonomimi mode shifts to bestial warform as the volume of active constructs increases.',
+    'Streamlined costume features': 'Slight amounts of tendrils or bone, form-fitting bodysuits with support',
+    'Heavy costume features': 'Interweaved exoskeletons, heavy leather with fur trim',
+    'Freebies': ['Everlasting Talent, Wild Talent, Body Defense, Wild Defense (2x), Creature Defense (2x)'],
+  },
+  {
+    'title': 'Jungle (Flora)',
+    'Elemental Ability': 'Floral generation and control. Constructs tend to be actual living creatures, or masses of roots, bark, and vines. Intense effects tend to be vines, flowers, leaves, and trees. The line between intense and subtle effects is particularly blurry for the Primal and Jungle Shrouds and is primarily found in the fidelity of control. Both elements gain the ability to control fungi and, thus, spores and mycelium once Elemental Loom is purchased.',
+    'Body Effects': 'Green-tinted skin, hair, lips, sometimes blood. Often green eyes. Smell like flowers, fresh fruit, or other plants. Can have leaves and flowers grow in hair. Extreme cases develop a layer of bark on skin, usually along the back and shoulders.',
+    'Streamlined costume features': 'Leaves and vines, green lace. Cotton.',
+    'Heavy costume features': 'Flowers, bark, and petals as well as thick vines.',
+    'Freebies': ['Everlasting Talent, Wild Talent, Body Defense, Wild Defense (2x), Creature Defense (2x)'],
+  },
+  {
+    'title': 'Burial (Death)',
+    'Elemental Ability': 'Ectoplasm, soul, and entropic generation and control. Constructs tend to be translucent ectoplasm. Intense manifestations tend to be ectoplasm or intense visual distortions of concentrated entropy, while subtle effects are gentle alterations to entropy or ambient soul field around oneself.',
+    'Body Effects': 'Several hitodama orbit you. Can turn intangible at will, also become monochrome for the duration.',
+    'Streamlined costume features': 'Veils and shrouds, bone jewelry or lingerie',
+    'Heavy costume features': 'Bone plating, tattered shrouds, robes, and veils, original outfits but tattered and ragged',
+    'Freebies': ['Everlasting Talent. Body Defense (2x), Stress Defense, Soul Defense'],
+  },
+  {
+    'title': 'Cyber (Technology)',
+    'Elemental Ability': 'Nanite/Technology/Digital generation and control. Constructs are built from liquid nanite metal, which often has digital circuitry designs along it unless compressed into a known technological form such as a gun or tablet. Blatant uses generally involve the creation and manipulation of technology via the nanites that make up the base of the Shroud, or interfacing with technology being indicated by glowing circuit-designs appearing on the item, while subtle uses involve manipulating the digital space or accessing technology at a distance.',
+    'Body effects': 'Seam-like skin indentations over the entire body from neck down. Symbol-shaped pupils; bilateral symmetry recommended but not required. Pupils can instead be the same design as your tattoo’s central emblem.',
+    'Streamlined costume features': 'The most common form is a skintight leotard, elbow-length gloves, and knee-high stiletto heels for the feminine, and a full neck-down bodysuit with flat soles for the masculine. Something for the heads-up display to be projected upon and earpiece is mandatory. Neon patterns resembling circuitry are standard across all body pieces.',
+    'Heavy costume features': 'Both designs have neck-down bodysuit beneath shoulder pads, wrist-to-elbow gauntlets, torso and hip armor, and knee-high boots. Feminine design’s boots perfectly hide tall wedge heels. Masculine design armors thighs as well. Heads-up display projected onto bulky head-mounted display, completely hiding eyes. Headpiece completely attached to headset, with aesthetic antenna spikes pointed up and behind ears (at least two spikes on each side). Neon patterns resembling circuitry are standard across all body pieces.',
+    'Freebies': ['Science Talent, Engineering Talent'],
+  },
+  {
+    'title': 'Void (Space-Time)',
+    'Elemental Ability': 'Spatial warping and temporal generation and control. Constructs appear to be starry voids. Intense effects tend to visually involve those starry voids, loud ticking of a clock, or even dancing stars around the user, while subtle effects can involve simple effects like flight and temporal acceleration without any obvious signifiers. The Void Shroud has been consistently rated as the single most difficult Shroud to master by 4.231638 * 10^97 users, as the automatic defenses against harming unintended things with the Shroud make it difficult to fully utilize. Purchase with caution!',
+    'Body effects': 'My god, it’s full of stars! Specifically the pupils, which seem to go on forever. The insides of orifices may also seem to hint at further cosmos within, and the user appearing larger or smaller than they truly should out of the corner of one’s eye.',
+    'Streamlined costume features': 'Semi-sheer material that glitters and sparkles, feminine designs tend to involve deep cleavage, while masculine tend to involve black latex.',
+    'Heavy costume features': 'Dark, spacesuit-like outfit, the material glittering with pinpricks of light like stars.',
+    'Freebies': ['Paradox Defense'],
+  }]
+
 bindings.push({
-  title: 'Elemental Shroud (___________)',
+  title: 'Elemental Shroud',
   cost: 96,
   whitelist: ['Shroud of Power'],
+  element: '',
   desc: `Congratulations! Your Shroud has been upgraded to the elemental manifestation type! Choose one element for your personal Shroud from the list in the Additional Rules section. (Your retinues’ cloaks are not affected.) No longer purely physical, the Shroud is an elemental manifestation of your will, granting you a noticeable buff to your affinity with that element, as well as allowing you to generate and control significant amounts of it. The cap on the effective tier of subjects you can successfully bind is raised by one.
 Your Shroud’s manifestation is always intense and obvious, such as a black void for Fearful Shrouds, burning flames or magma for a Volcanic Shroud, or a seemingly star-filled cosmos for the Void Shroud. As an extension of your will, it will only harm that which you wish it to harm. You may take control of a natural manifestation of your element by mixing in some of your Shroud into it. Manifestations of the element with a will of their own must be infused with your will the same way a waifu must. However, a willing manifestation may allow you to manipulate them, such as using a Cyber Shroud to repair a willing gynoid. Willful manifestations must either be bound like any other capture or released when you have no further need of their substance.
 These elemental shapes and tendrils must be contiguous with you or each other. Portions of Shroud that lose contact begin to dissipate, generally within ten to thirty seconds. Your waifus, their Cloaks, and waifus in multiple bodies all count as “you” for the purposes of Shroud sustenance. As an example, you can create a ring with the Xeric Shroud that would quickly crumble into nothingness if it left your body, but it would not if one of your waifus wore it.
@@ -283,9 +385,10 @@ Finally, you get the Body and Soul Talents for free. Each specific element, addi
 })
 
 bindings.push({
-  title: 'Prismatic Shroud (___________)',
-  cost: 0,
+  title: 'Prismatic Shroud',
+  cost: 56,
   whitelist: ['Elemental Shroud'],
+  element: '',
   desc: `Choose an additional element for your Shroud. It may now express either of these elements or themes, but only one at a time. True mergers of multiple elements are not possible, but practice will let you rapidly switch between them and keep the previous element’s manifestations active for longer afterwards. Doing so with directly-conflicting elements, such as the Volcanic and Boreal or Primal and Burial Shrouds, requires much more practice.
 This expansion may be repurchased as many times as desired, until all listed Shrouds are acquired. Each purchase costs 54 credits, plus 10 credits for each element you already have, including the element from Elemental Shroud.`,
 })
@@ -331,16 +434,7 @@ Manifestations whose forms were stolen count as captured, but you do not get a c
 
 export const lureDesc = 'Lure-type controls are more subtle than bindings, but cannot directly capture targets. All lures work equally well on male, female, and other targets, and instead only obey the user’s orientation. You may purchase any number of lures. Like all company-supplied powers, lures cannot be nullified, copied, or stolen.'
 
-export interface Lure {
-  title: string
-  cost: number
-  desc: string
-  special?: string
-  whitelist?: string[]
-  image?: string
-}
-
-export const lures: Lure[] = []
+export const lures: Binding[] = []
 
 lures.push({
   title: 'Sticky Fingers',
@@ -434,7 +528,7 @@ lures.push({
 
 export const lureExpansionDesc = 'These perks are either expansions to multiple Bindings or serve as alternative methods to capturing or controlling your retinue. Like all company-supplied powers, the powers granted by these perks cannot be nullified, copied, or stolen.'
 
-export const lureExpansions: Lure[] = []
+export const lureExpansions: Binding[] = []
 
 lureExpansions.push({
   title: 'Conjunction',

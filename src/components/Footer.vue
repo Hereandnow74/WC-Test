@@ -9,6 +9,7 @@
       @click.stop
     >
       <div class="text-center">
+        <span v-if="tier11tickets !== 0" class="mr-2">T11 tickets: {{ tier11tickets }}</span>
         <span>Budget: {{ budget }}</span>
         <span v-if="budget < 0" class="text-red-500 px-2">You are in debt</span>
         <span
@@ -171,6 +172,7 @@ import { useStore } from '~/store/store'
 const {
   budget, startingWorld, startingOrigin, intensities, binding, homePerks, defensePerks,
   companions, heritage, talentPerks, waifuPerks, ridePerks, miscPerks, luresBought, genericWaifuPerks,
+  tier11tickets,
 } = useStore()
 
 const originText = computed(() => {
