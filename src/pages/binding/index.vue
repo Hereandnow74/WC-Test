@@ -12,12 +12,12 @@
     <div class="md:column-count-2 lg:column-count-3">
       <div
         id="No Bindings"
-        class="mb-2 pb-2 inline-block bg-light-400 dark:bg-rose-900"
-        :class="flags.noBindings ? 'filter hover:(bg-light-700 dark:bg-rose-700) cursor-pointer': 'dark:bg-gray-600'"
+        class="mb-2 p-2 inline-block bg-light-400 dark:bg-rose-900"
+        :class="flags.noBindings ? 'hover:(yellow-100 dark:bg-rose-800) cursor-pointer': 'dark:bg-gray-600'"
       >
-        <h3 class="text-center text-xl flex justify-between px-2 items-center">
+        <h3 class="text-center text-xl px-2 relative">
           <span>No Bindings</span>
-          <bi:check-lg v-if="flags.noBindings" class="text-green-500" />
+          <fa-solid:check v-if="flags.noBindings" class="text-green-500 absolute top-1 right-1" />
         </h3>
         <Desc desc="None of your waifus will be affected by any of the effects common to all company bindings. This is your warning. If you purchase and use a real binding method later, the discount will disappear and you will go into debt. You do not need to bind your previously-purchased waifus immediately. Capturing any waifu without bindings will award you the standard capture value of her original tier, before this option’s purchase discount. It will also give her a dormant tattoo, which you can activate at any time by using the Stamp (should you purchase it) or removing a higher Binding. If you instead switch to this option after already having bound waifus, the basic effects common to all bindings will persist in your retinue members until interactions or events change their minds naturally." />
         <div class="text-violet-700 dark:text-yellow-200 px-2">
@@ -32,11 +32,17 @@
           : 'gray-200 dark:gray-600'"
         :is-available="isAllowed(bnd)"
         :is-active="findIndex(binding, {title: bnd.title}) !== -1"
+        :is-multiple="!!bnd.multiple"
+        :max="bnd.max || 100"
+        :increment="!!bnd.increment"
         @pickPerk="choose"
       >
         <template v-if="['Elemental Shroud', 'Prismatic Shroud'].includes(bnd.title)" #title>
           <span v-if="bnd.element">({{ bnd.element }})</span>
           <Button size="Small" label="element" class="mx-1" @click.stop="chooseElement(bnd)" />
+        </template>
+        <template v-if="bnd.title" #rules>
+          <span v-if="bnd.type === 'ritual'" class="mx-2" @click.stop="toggleRitual()">Rules: <span class="text-red-500 hover:underline">ritual parameters</span></span>
         </template>
       </PerkCard>
     </div>
@@ -99,6 +105,7 @@
         </div>
       </div>
     </Modal>
+    <RitualCircle v-if="showRitual" @click="toggleRitual" />
   </div>
 </template>
 
@@ -108,23 +115,31 @@ import { desc, bindings, Binding, lureDesc, lures, lureExpansionDesc, lureExpans
 import { genericChoose, useTooltips } from '~/logic/misc'
 import { useStore } from '~/store/store'
 import PerkCard from '~/components/PerkCard.vue'
+import RitualCircle from '~/components/RitualCircle.vue'
 
 const { allEffects, binding, luresBought, flags } = useStore()
 const [showElements, toggleElements] = useToggle()
+const [showRitual, toggleRitual] = useToggle()
 const currentBinding = ref<Binding|null>(null)
 
 onMounted(() => useTooltips())
 
-function choose(bin: Binding) {
+function choose(bin: Binding, count = 0, cost: number) {
   if (!isAllowed(bin)) return
   const ind = findIndex(binding.value, { title: bin.title })
   if (ind !== -1) {
-    const del = binding.value.splice(ind)
-    del.forEach(x => allEffects.value.splice(allEffects.value.indexOf(x.title), 1))
-    if (binding.value.length === 0) flags.noBindings = true
+    if (binding.value[ind].count !== count && count > 0) {
+      binding.value[ind].count = count
+      binding.value[ind].cost = cost
+    }
+    else {
+      const del = binding.value.splice(ind)
+      del.forEach(x => allEffects.value.splice(allEffects.value.indexOf(x.title), 1))
+      if (binding.value.length === 0) flags.noBindings = true
+    }
   }
   else {
-    binding.value.push({ title: bin.title, cost: bin.cost })
+    binding.value.push({ title: bin.title, cost, count, freebies: bin.freebies })
     allEffects.value.push(bin.title)
     flags.noBindings = false
   }

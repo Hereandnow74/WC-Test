@@ -1,14 +1,18 @@
 
 <template>
-  <div class="fixed bottom-0 w-full text-gray-100" @click="visible = false">
+  <div
+    class="fixed bottom-0 w-full text-gray-100 transition-transform transform"
+    :class="visible ? 'translate-y-0' : 'translate-y-[calc(100%-1.8rem)]'"
+    @click="visible = false"
+  >
     <div
-      class="min-w-[320px] max-w-[440px] rounded-t-3xl mx-auto border relative transition-all"
+      class="min-w-[320px] max-w-[440px] h-[568px] md:h-[720px] rounded-3xl mx-auto border relative flex flex-col"
       bg="gray-900"
       border="2 gray-400"
-      :class="visible ? 'h-[568px] lg:h-[720px]': 'h-6'"
+
       @click.stop
     >
-      <div class="text-center">
+      <div class="text-center pb-1">
         <span v-if="tier11tickets !== 0" class="mr-2">T11 tickets: {{ tier11tickets }}</span>
         <span>Budget: {{ budget }}</span>
         <span v-if="budget < 0" class="text-red-500 px-2">You are in debt</span>
@@ -19,7 +23,30 @@
           <ic:round-unfold-more />
         </span>
       </div>
-      <div class="p-2 flex flex-col gap-2">
+      <div class="flex gap-4 mx-2 border-b-1">
+        <div
+          class="border-t-2 border-green-500 flex-grow rounded-t cursor-pointer flex items-center justify-center"
+          :class="activeTab=='Build' ? 'bg-green-600': 'hover:bg-gray-800'"
+          @click="activeTab = 'Build'"
+        >
+          <bx:bx-spreadsheet />Build
+        </div>
+        <div
+          class="border-t-2 border-green-500 flex-grow rounded-t cursor-pointer flex items-center justify-center"
+          :class="activeTab=='Spendings' ? 'bg-green-600': 'hover:bg-gray-800'"
+          @click="activeTab = 'Spendings'"
+        >
+          <la:coins />Spendings
+        </div>
+        <div
+          class="border-t-2 border-green-500 flex-grow rounded-t cursor-pointer flex items-center justify-center"
+          :class="activeTab=='Manual' ? 'bg-green-600': 'hover:bg-gray-800'"
+          @click="activeTab = 'Manual'"
+        >
+          <fluent:wrench-16-filled />Manual
+        </div>
+      </div>
+      <div v-if="activeTab === 'Build'" class="px-2 flex flex-col gap-2 overflow-y-auto min-h-0">
         <div id="World">
           <h3 class="text-lg text-gray-400">
             World
@@ -161,18 +188,62 @@
           </Foldable>
         </div>
       </div>
+      <div v-if="activeTab === 'Spendings'" class="text-gray-300">
+        <div class="font-semibold flex justify-between mx-4 border-b border-gray-700">
+          Heritage: <span class="text-orange-500">{{ heritageCost }}</span>
+        </div>
+        <div class="font-semibold flex justify-between mx-4 border-b border-gray-700">
+          Binding: <span class="text-orange-500">{{ bindingCost }}</span>
+        </div>
+        <div class="font-semibold flex justify-between mx-4 border-b border-gray-700">
+          Lures: <span class="text-orange-500">{{ luresCost }}</span>
+        </div>
+        <div class="font-semibold flex justify-between mx-4 border-b border-gray-700">
+          Rides: <span class="text-orange-500">{{ ridePerksCost }}</span>
+        </div>
+        <div class="font-semibold flex justify-between mx-4 border-b border-gray-700">
+          Home: <span class="text-orange-500">{{ homePerksCost }}</span>
+        </div>
+        <div class="font-semibold flex justify-between mx-4 border-b border-gray-700">
+          Talents: <span class="text-orange-500">{{ talentsCost }}</span>
+        </div>
+        <div class="font-semibold flex justify-between mx-4 border-b border-gray-700">
+          Defenses: <span class="text-orange-500">{{ defensesCost }}</span>
+        </div>
+        <div class="font-semibold flex justify-between mx-4 border-b border-gray-700">
+          Misc Perks: <span class="text-orange-500">{{ miscPerksCost }}</span>
+        </div>
+        <div class="font-semibold flex justify-between mx-4 border-b border-gray-700">
+          Waifu Perks: <span class="text-orange-500">{{ waifuPerksCost + genericWaifuPerksCost }}</span>
+        </div>
+        <div class="font-semibold flex justify-between mx-4 border-b border-gray-700">
+          Companions: <span class="text-orange-500">{{ companionsCost }}</span>
+        </div>
+        <div class="font-semibold flex justify-between mx-4 border-b border-gray-700">
+          Total: <span class="text-green-500">{{ heritageCost + bindingCost + ridePerksCost+homePerksCost+talentsCost+defensesCost+miscPerksCost+waifuPerksCost+genericWaifuPerksCost+luresCost+companionsCost }}</span>
+        </div>
+      </div>
+      <div class="flex h-8 justify-between mt-auto">
+        <div></div>
+        <div class="cursor-pointer hover:text-amber-500" @click="toggleFull()">
+          <akar-icons:circle />
+        </div>
+        <div></div>
+      </div>
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
-import { findIndex } from 'lodash'
 import { useStore } from '~/store/store'
+
+const activeTab = ref('Build')
 
 const {
   budget, startingWorld, startingOrigin, intensities, binding, homePerks, defensePerks,
   companions, heritage, talentPerks, waifuPerks, ridePerks, miscPerks, luresBought, genericWaifuPerks,
-  tier11tickets,
+  tier11tickets, heritageCost, bindingCost, ridePerksCost, homePerksCost, talentsCost, defensesCost,
+  miscPerksCost, waifuPerksCost, genericWaifuPerksCost, luresCost, companionsCost,
 } = useStore()
 
 const originText = computed(() => {

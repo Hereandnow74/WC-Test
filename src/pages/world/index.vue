@@ -17,7 +17,7 @@
         <WorldCard v-for="world in allUserWorlds" :key="world.worldName" :world="world" :is-user-world="true" />
       </div>
     </Foldable>
-    <Foldable v-if="allUserWorlds.length && worldsFiltered.length" class="text-lg mb-2" title="Canon Worlds" :is-open="true">
+    <Foldable v-if="worldsFiltered.length" class="text-lg mb-2" title="Canon Worlds" :is-open="true">
       <div class="flex flex-wrap gap-1 overflow-y-auto pb-8">
         <WorldCard
           v-for="world in worldsFiltered"

@@ -22,7 +22,7 @@
             </router-link>)</span>
         </h3>
         <div v-if="rule.intensity" class="px-2">
-          Bonus for intensity: {{ rule.intensity <= 1 ? baseBudgetAfter * rule.intensity : rule.intensity }}
+          Bonus: <span text="green-600 dark:green-300">{{ rule.intensity <= 1 ? baseBudgetAfter * rule.intensity : rule.intensity }}</span> credits.
         </div>
         <Desc :desc="rule.desc" />
         <div v-if="rule.special" class="px-2">

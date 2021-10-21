@@ -1,6 +1,9 @@
 
 <template>
   <div class="max-w-screen-lg mx-auto flex flex-col gap-4 mt-4 mb-8">
+    <div class="texl-lg font-bold mx-auto bg-red-500 bg-opacity-30 rounded border-3 border-red-500 p-2">
+      Waifu Catalog Interactive currently are in early Alpha stage, so a lot of stuff don't work properly yet.
+    </div>
     <h1 id="rules" class="text-xl text-center">
       Rules
     </h1>

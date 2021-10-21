@@ -10,7 +10,7 @@
       <Input v-model="image_nsfw" placeholder="NSFW Image URL" :error-message="errors.image_nsfw" />
       <div class="flex gap-2">
         <Checkbox v-model="localSave" label="Local save" />
-        <Checkbox label="Propose to global" />
+        <Checkbox v-model="serverSave" label="Propose to global" />
         <Button label="Add" class="flex-grow" bg-color="bg-red-700" @click="addCharacter" />
       </div>
     </div>
@@ -22,7 +22,7 @@ import * as zod from 'zod'
 import { useForm, useField } from 'vee-validate'
 import { toFormValidator } from '@vee-validate/zod'
 import { useStore } from '~/store/store'
-import { toggleShowAddCharacter } from '~/logic'
+import { proposeCompanion, toggleShowAddCharacter } from '~/logic'
 
 const props = defineProps({
   editMode: {
@@ -36,14 +36,15 @@ const props = defineProps({
 })
 
 const localSave = ref(true)
+const serverSave = ref(false)
 const { userCharacters, localUserCharacters } = useStore()
 
 const schema = toFormValidator(
   zod.object({
     name: zod.string().nonempty('Character name is required'),
     world: zod.string().nonempty('World name is required'),
-    tier: zod.number().min(1, { message: 'Minimum tier is 1' }).max(10, { message: 'Maximum World level is 10' }),
-    image: zod.string().url({ message: 'Must be a valid URL' }).optional().or(zod.literal('')),
+    tier: zod.number().min(1, { message: 'Minimum tier is 1' }).max(11, { message: 'Maximum tier is 11' }),
+    image: zod.string().url({ message: 'Must be a valid URL' }),
     image_nsfw: zod.string().url({ message: 'Must be a valid URL' }).optional().or(zod.literal('')),
   }),
 )
@@ -65,6 +66,7 @@ const { value: image } = useField<string>('image')
 const { value: image_nsfw } = useField<string>('image_nsfw')
 
 const addCharacter = handleSubmit((values) => {
+  if (serverSave.value) proposeCompanion(values)
   if (localSave.value) localUserCharacters.value.push(values)
   else userCharacters.value.push(values)
   toggleShowAddCharacter()

@@ -24,3 +24,11 @@ export function genericChoose<T>(item: T, isAllowed: (item: T) => boolean, arr: 
     }
   }
 }
+
+export function addFreebies(list: string[]) {
+//
+}
+
+export function deleteFreebies(list: string[]) {
+//
+}

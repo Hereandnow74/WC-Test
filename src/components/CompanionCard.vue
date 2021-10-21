@@ -30,6 +30,7 @@
         <div class="flex justify-center gap-4">
           <Button v-if="!isAlredyBought(char.uid)" size="Small" label="buy" @click="buyCompanion(char)" />
           <Button v-else size="Small" label="undo" @click="undoBuying(char.uid)" />
+          <Button size="Small" label="capture" @click="captureCompanion(char)" />
           <a v-if="char.sourceImage" class="px-1 rounded bg-blue-600" :href="char.sourceImage" target="_blank" rel="noopener noreferrer">Image Source</a>
         </div>
       </div>
@@ -64,7 +65,11 @@ const showModal = ref(false)
 const { flags, companions, localUserCharacters } = useStore()
 
 function buyCompanion(char: any) {
-  companions.value.push({ uid: char.uid, name: char.name, world: char.world, tier: char.tier })
+  companions.value.push({ uid: char.uid, name: char.name, world: char.world, tier: char.tier, method: 'buy' })
+}
+
+function captureCompanion(char: any) {
+  companions.value.push({ uid: char.uid, name: char.name, world: char.world, tier: char.tier, method: 'capture' })
 }
 
 function undoBuying(uid: number) {

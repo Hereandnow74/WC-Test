@@ -47,12 +47,12 @@ function pickPerk(perk: Perk) {
         miscPerks.value[ind].cost = perk.cost * count.value
       }
       else {
-        const heritageToDelete = miscPerks.value.splice(findIndex(miscPerks.value, { title: perk.title }))
-        heritageToDelete.forEach(x => allEffects.value.splice(allEffects.value.indexOf(x.title), 1))
+        const toDel = miscPerks.value.splice(findIndex(miscPerks.value, { title: perk.title }))
+        toDel.forEach(x => allEffects.value.splice(allEffects.value.indexOf(x.title), 1))
       }
     }
     else {
-      if (count.value > 0) {
+      if (count.value === 0) {
         allEffects.value.push(perk.title)
         miscPerks.value.push({ title: perk.title, cost: perk.cost })
       }

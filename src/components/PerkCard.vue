@@ -2,19 +2,21 @@
   <div
     :id="perk.title"
     class="p-2 mb-2 inline-block cursor-pointer"
-    @click="$emit('pickPerk', perk)"
+    @click="$emit('pickPerk', perk, count, cost)"
   >
     <h3 class="relative flex-wrap flex justify-center items-center text-xl">
       <span class="whitespace-nowrap">{{ perk.title }}</span>
+      <NumberInput v-if="isMultiple" v-model="count" :min="0" :max="max" class="text-base ml-2" />
       <slot name="title" />
       <span text="gray-500 dark:gray-400" class="whitespace-nowrap">
         (Cost: <span text="green-600 dark:green-300">{{ displayedCost }}</span>)
       </span>
-      <bi:check-lg
+      <fa-solid:check
         v-if="isActive"
         class="absolute top-1 right-1 text-green-500"
       />
     </h3>
+    <slot name="rules" />
     <div v-if="perk.special" class="mx-2">
       Special: <span class="text-purple-500 dark:text-purple-300">{{ perk.special }}</span>
     </div>
@@ -44,15 +46,37 @@ const props = defineProps({
     type: Boolean,
     default: false,
   },
+  isMultiple: {
+    type: Boolean,
+    default: false,
+  },
   calculatedCost: {
     type: Number,
     default: 0,
   },
+  max: {
+    type: Number,
+    default: 100,
+  },
+  increment: {
+    type: Boolean,
+    default: false,
+  },
+})
+
+const count = ref(0)
+
+const cost = computed(() => {
+  let cost = props.isActive ? (props.calculatedCost || props.perk.cost) : props.perk.cost
+  if (props.increment)
+    cost = (count.value / 2) * (cost * 2 + (count.value - 1) * cost)
+  else
+    cost = count.value ? cost * count.value : cost
+  return cost
 })
 
 const displayedCost = computed(() => {
-  const cost = props.isActive ? (props.calculatedCost || props.perk.cost) : props.perk.cost
-  return cost === 11111 ? 'Tier 11 ticket' : cost
+  return cost.value === 11111 ? 'Tier 11 ticket' : cost.value
 })
 
 </script>

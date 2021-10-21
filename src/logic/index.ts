@@ -1,1 +1,35 @@
+import { initializeApp } from 'firebase/app'
+import { getFirestore, collection, addDoc } from 'firebase/firestore/lite'
+
 export * from './toggles'
+export * from './misc'
+
+const app = initializeApp({
+  apiKey: 'AIzaSyDpZ7zOTs_IRFs1_OQLR9T45tGl2hOkt5Y',
+  authDomain: 'waifu-catalog.firebaseapp.com',
+  projectId: 'waifu-catalog',
+  storageBucket: 'waifu-catalog.appspot.com',
+  messagingSenderId: '737852257331',
+  appId: '1:737852257331:web:23b6b85a56fe8776a75f46',
+  measurementId: 'G-21TPKY0M0Y',
+})
+
+const db = getFirestore(app)
+
+export function proposeWorld(world: any) {
+  try {
+    addDoc(collection(db, 'worlds'), world).then(docRef => console.log(`Successfully proposed world id: ${docRef.id}`))
+  }
+  catch (e) {
+    console.error('Error proposing a world: ', e)
+  }
+}
+
+export function proposeCompanion(companion: any) {
+  try {
+    addDoc(collection(db, 'companions'), companion).then(docRef => console.log(`Successfully proposed companion id: ${docRef.id}`))
+  }
+  catch (e) {
+    console.error('Error proposing a companion: ', e)
+  }
+}

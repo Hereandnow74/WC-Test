@@ -47,7 +47,7 @@
       </Foldable>
       <div class="flex gap-2">
         <Checkbox v-model="localSave" label="Local save" />
-        <Checkbox label="Propose to global" />
+        <Checkbox v-model="proposeGlobal" label="Propose to global" />
         <Button label="Add" class="flex-grow" bg-color="bg-red-700" @click="addWorld" />
       </div>
     </div>
@@ -58,8 +58,9 @@
 import * as zod from 'zod'
 import { useForm, useField } from 'vee-validate'
 import { toFormValidator } from '@vee-validate/zod'
+
 import { useStore } from '~/store/store'
-import { toggleShowAddWorld } from '~/logic'
+import { proposeWorld, toggleShowAddWorld } from '~/logic'
 
 export default defineComponent({
   name: 'AddWorld',
@@ -77,6 +78,7 @@ export default defineComponent({
   setup(props) {
     const isOpen = ref(false)
     const localSave = ref(true)
+    const proposeGlobal = ref(false)
     const { userWorlds, localUserWorlds } = useStore()
 
     const schema = toFormValidator(
@@ -121,6 +123,9 @@ export default defineComponent({
     }
 
     const addWorld = handleSubmit((values) => {
+      if (proposeGlobal.value)
+        proposeWorld(values)
+
       if (props.editMode) values.worldName = `${values.worldName} (AU)`
       if (localSave.value) localUserWorlds.value.push(values)
       else userWorlds.value.push(values)
@@ -139,6 +144,7 @@ export default defineComponent({
       removeCondition,
       isOpen,
       localSave,
+      proposeGlobal,
     }
   },
 })
