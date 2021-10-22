@@ -1,3 +1,4 @@
+import { findIndex } from 'lodash'
 import { CHAR_COSTS } from '~/data/constatnts'
 
 export interface World {
@@ -26,6 +27,8 @@ export interface Perk {
   variant?: string
   waifu?: string
   freebies?: object
+  refund?: number
+  secondary?: string
 }
 
 export interface Origin {
@@ -97,6 +100,13 @@ const baseBudgetAfter = computed(
   () => baseBudget.value + intensities.value.reduce((a, x) => x.intensity > 1 ? a + x.intensity : a, 0),
 )
 
+const budgetMods = reactive({
+  plus: 0,
+  minus: 0,
+  plus11: 0,
+  minus11: 0,
+})
+
 const flags = reactive({
   noBindings: true,
   noHeritage: true,
@@ -110,8 +120,18 @@ const flags = reactive({
 watchEffect(() => {
   binding.value.forEach((x) => {
     if (x.freebies) {
-      for (const [key, perk] of Object.entries(x.freebies))
-        perk.forEach(n => allForSave[key].value.push({ title: n, cost: 0 }))
+      for (const [key, perk] of Object.entries(x.freebies)) {
+        perk.forEach((n) => {
+          const ind = findIndex(allForSave[key].value, { title: n })
+          if (ind === -1) { allForSave[key].value.push({ title: n, cost: 0 }) }
+          else {
+            if (allForSave[key].value[ind].count)
+              allForSave[key].value[ind].count += 1
+            else
+              allForSave[key].value[ind].cost = 0
+          }
+        })
+      }
     }
   })
 })
@@ -124,7 +144,7 @@ const homePerksCost = computed(() => homePerks.value.reduce((a, x) => a += x.cos
 const talentsCost = computed(() => talentPerks.value.reduce((a, x) => a += x.cost === 11111 ? 0 : x.cost, 0))
 const defensesCost = computed(() => defensePerks.value.reduce((a, x) => a += x.cost === 11111 ? 0 : x.cost, 0))
 const miscPerksCost = computed(() => miscPerks.value.reduce((a, x) => a += x.cost === 11111 ? 0 : x.cost, 0))
-const waifuPerksCost = computed(() => waifuPerks.value.reduce((a, x) => a += x.cost === 11111 ? 0 : x.cost, 0))
+const waifuPerksCost = computed(() => waifuPerks.value.reduce((a, x) => a += x.cost === 11111 ? -(x.refund || 0) : x.cost - (x.refund || 0), 0))
 const genericWaifuPerksCost = computed(() => genericWaifuPerks.value.reduce((a, x) => a += x.cost === 11111 ? 0 : x.cost, 0))
 const luresCost = computed(() => luresBought.value.reduce((a, x) => a += x.cost === 11111 ? 0 : x.cost, 0))
 
@@ -150,7 +170,7 @@ const budget = computed(() => {
   return (bd + intensityFlat) * (1 + intenMultiplier) - startingOrigin.value.cost
       - bindingCost.value - heritageCost.value - luresCost.value - ridePerksCost.value - homePerksCost.value
       - talentsCost.value - defensesCost.value - miscPerksCost.value - waifuPerksCost.value
-      - genericWaifuPerksCost.value - companionsCost.value
+      - genericWaifuPerksCost.value - companionsCost.value - budgetMods.minus + budgetMods.plus
 })
 
 const tier11tickets = computed(() => {
@@ -168,12 +188,12 @@ const tier11tickets = computed(() => {
   const genericWaifuPerksCost = genericWaifuPerks.value.reduce((a, x) => a += x.cost === 11111 ? 1 : 0, 0)
   const luresCost = luresBought.value.reduce((a, x) => a += x.cost === 11111 ? 1 : 0, 0)
   const companionsCost = companions.value.reduce((a, x) => {
-    if (x.method === 'capture') return x.tier === 11 ? a -= 1 : a || 1
+    if (x.method === 'capture') return x.tier === 11 ? a -= 1 : a
     return x.tier === 11 ? a += 1 : a
   }, 0)
 
   return ticket - heritageCost - ridePerksCost - homePerksCost - talentsCost - defensesCost - miscPerksCost
-    - waifuPerksCost - genericWaifuPerksCost - luresCost - companionsCost
+    - waifuPerksCost - genericWaifuPerksCost - luresCost - companionsCost - budgetMods.minus11 + budgetMods.plus11
 })
 
 export function useStore() {
@@ -213,5 +233,6 @@ export function useStore() {
     genericWaifuPerksCost,
     luresCost,
     companionsCost,
+    budgetMods,
   }
 }

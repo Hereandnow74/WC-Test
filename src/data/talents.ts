@@ -52,6 +52,7 @@ export interface Perk {
   special?: string
   target?: string
   blacklist?: string[]
+  needed?: number
 }
 
 // Environment: Land

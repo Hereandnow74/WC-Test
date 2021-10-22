@@ -252,6 +252,9 @@ bindings.push({
   title: 'Second-Generation Symbiote',
   type: 'Expansion',
   cost: 30,
+  freebies: {
+    talentPerks: ['Psychic Talent', 'Talent Sharing (Psychic)'],
+  },
   whitelist: ['Alterzelu Symbiote'],
   desc: 'This adds a number of upgrades to the symbiote’s functionality. You and all waifus benefit from Psychic Talent, as if you had purchased Basic Talent Sharing (Psychic). (Take Psychic Talent for free. If you already have Basic Talent Sharing (Psychic), take a full refund for it.) The lowest tier of targets that can fight off a symbiote larva will increase by 1 for each effective tier after step 6) that the queen is above 7: Tier 6 targets can no longer fight off a Tier 8 queen’s larvae, while only Tier 10 and 11 targets can fight off larvae produced by a Tier 11 queen. On the target side, use their effective tier after step 6, but skip steps 4 and 5. Finally, symbiote larvae now emit a weak psychic field that reduces a target’s willingness to resist future attacks every time she fights one off. This reduction stacks indefinitely until she finally gives in.',
 })
@@ -296,7 +299,8 @@ export const shroudElements = [
     'Body Effects': 'Glowing golden sclera, glowing tribalistic tattoos over face and body.',
     'Streamlined costume features': 'A formal suit, dress, or robes in a consistent white and gold color scheme.',
     'Heavy costume features': 'Full coverage hard light armor with shoulder-attached cape. Masculine and feminine styles only differ in curvature.',
-    'Freebies': ['Communication Talent, Performance Talent, Blessed Talent'],
+    'Freebies': 'Communication Talent, Performance Talent, Blessed Talent',
+    'freebies': { talentPerks: ['Communication Talent', 'Performance Talent', 'Blessed Talent'] },
   },
   {
     'title': 'Fearful (Shadow)',
@@ -305,6 +309,7 @@ export const shroudElements = [
     'Streamlined costume features': 'All gothic black leather and fishnet. Often has black leather gloves and boots.',
     'Heavy costume features': 'Dark overlord style full armor with menacing spikes, shoulder-attached cape, and a full face-concealing helmet. Feminine design only differs in curvature.',
     'Freebies': ['Covert Talent, Performance Talent, Blessed Talent'],
+    'freebies': { talentPerks: ['Covert Talent', 'Performance Talent', 'Blessed Talent'] },
   },
   {
     'title': 'Volcanic (Fire)',
@@ -313,6 +318,10 @@ export const shroudElements = [
     'Streamlined costume features': 'Glowing oranges, orange trim on black backgrounds, flame patterns.',
     'Heavy costume features': 'Full body armor, seemingly melted into place with a burning inner glow.',
     'Freebies': ['Martial Talent, Wild Talent, Wild Defense (2x), Environmental Defense'],
+    'freebies': {
+      talentPerks: ['Martial Talent', 'Wild Talent'],
+      defensePerks: ['Wild Defense', 'Wild Defense', 'Environmental Defense'],
+    },
   },
   {
     'title': 'Boreal (Ice)',
@@ -321,6 +330,10 @@ export const shroudElements = [
     'Streamlined costume features': 'Lace, white and blues, sheer materials.',
     'Heavy costume features': 'Fur, heavy materials, layers of silks.',
     'Freebies': ['Martial Talent, Wild Talent, Wild Defense (2x), Environmental Defense'],
+    'freebies': {
+      talentPerks: ['Martial Talent', 'Wild Talent'],
+      defensePerks: ['Wild Defense', 'Wild Defense', 'Environmental Defense'],
+    },
   },
   {
     'title': 'Xeric (Land)',
@@ -329,6 +342,10 @@ export const shroudElements = [
     'Streamlined costume features': 'Brightly-colored silk, veils, jewelry-as-lingerie.',
     'Heavy costume features': 'Metal plating, gemstones.',
     'Freebies': ['Martial Talent, Wild Talent, Wild Defense (2x), Environmental Defense'],
+    'freebies': {
+      talentPerks: ['Martial Talent', 'Wild Talent'],
+      defensePerks: ['Wild Defense', 'Wild Defense', 'Environmental Defense'],
+    },
   },
   {
     'title': 'Pelagic (Sea)',
@@ -337,6 +354,10 @@ export const shroudElements = [
     'Streamlined costume features': 'Neck-down bodysuit matching mermaid form. Kelp-like materials. Bathing suits.',
     'Heavy costume features': 'A diving suit with attached helmet, a full wetsuit, coral plating',
     'Freebies': ['Martial Talent, Wild Talent, Wild Defense (2x), Environmental Defense'],
+    'freebies': {
+      talentPerks: ['Martial Talent', 'Wild Talent'],
+      defensePerks: ['Wild Defense', 'Wild Defense', 'Environmental Defense'],
+    },
   },
   {
     'title': 'Storm (Sky)',
@@ -345,6 +366,10 @@ export const shroudElements = [
     'Streamlined costume features': 'Both designs have a leather coat and winged boots. Feminine design has bikini; boots are thigh-highs. Masculine design has tight pants and no shirt. Fishnet and scarf optional.',
     'Heavy costume features': 'Scarves, tassels, flowing robes',
     'Freebies': ['Martial Talent, Wild Talent, Wild Defense (2x), Environmental Defense'],
+    'freebies': {
+      talentPerks: ['Martial Talent', 'Wild Talent'],
+      defensePerks: ['Wild Defense', 'Wild Defense', 'Environmental Defense'],
+    },
   },
   {
     'title': 'Primal (Fauna)',
@@ -353,6 +378,10 @@ export const shroudElements = [
     'Streamlined costume features': 'Slight amounts of tendrils or bone, form-fitting bodysuits with support',
     'Heavy costume features': 'Interweaved exoskeletons, heavy leather with fur trim',
     'Freebies': ['Everlasting Talent, Wild Talent, Body Defense, Wild Defense (2x), Creature Defense (2x)'],
+    'freebies': {
+      talentPerks: ['Everlasting Talent', 'Wild Talent'],
+      defensePerks: ['Body Defens', 'Wild Defense', 'Wild Defense', 'Creature Defense', 'Creature Defense'],
+    },
   },
   {
     'title': 'Jungle (Flora)',
@@ -361,6 +390,10 @@ export const shroudElements = [
     'Streamlined costume features': 'Leaves and vines, green lace. Cotton.',
     'Heavy costume features': 'Flowers, bark, and petals as well as thick vines.',
     'Freebies': ['Everlasting Talent, Wild Talent, Body Defense, Wild Defense (2x), Creature Defense (2x)'],
+    'freebies': {
+      talentPerks: ['Everlasting Talent', 'Wild Talent'],
+      defensePerks: ['Body Defens', 'Wild Defense', 'Wild Defense', 'Creature Defense', 'Creature Defense'],
+    },
   },
   {
     'title': 'Burial (Death)',
@@ -369,22 +402,30 @@ export const shroudElements = [
     'Streamlined costume features': 'Veils and shrouds, bone jewelry or lingerie',
     'Heavy costume features': 'Bone plating, tattered shrouds, robes, and veils, original outfits but tattered and ragged',
     'Freebies': ['Everlasting Talent. Body Defense (2x), Stress Defense, Soul Defense'],
+    'freebies': {
+      talentPerks: ['Everlasting Talent'],
+      defensePerks: ['Body Defens', 'Body Defense', 'Stress Defense', 'Soul Defense'],
+    },
   },
   {
     'title': 'Cyber (Technology)',
     'Elemental Ability': 'Nanite/Technology/Digital generation and control. Constructs are built from liquid nanite metal, which often has digital circuitry designs along it unless compressed into a known technological form such as a gun or tablet. Blatant uses generally involve the creation and manipulation of technology via the nanites that make up the base of the Shroud, or interfacing with technology being indicated by glowing circuit-designs appearing on the item, while subtle uses involve manipulating the digital space or accessing technology at a distance.',
-    'Body effects': 'Seam-like skin indentations over the entire body from neck down. Symbol-shaped pupils; bilateral symmetry recommended but not required. Pupils can instead be the same design as your tattoo’s central emblem.',
+    'Body Effects': 'Seam-like skin indentations over the entire body from neck down. Symbol-shaped pupils; bilateral symmetry recommended but not required. Pupils can instead be the same design as your tattoo’s central emblem.',
     'Streamlined costume features': 'The most common form is a skintight leotard, elbow-length gloves, and knee-high stiletto heels for the feminine, and a full neck-down bodysuit with flat soles for the masculine. Something for the heads-up display to be projected upon and earpiece is mandatory. Neon patterns resembling circuitry are standard across all body pieces.',
     'Heavy costume features': 'Both designs have neck-down bodysuit beneath shoulder pads, wrist-to-elbow gauntlets, torso and hip armor, and knee-high boots. Feminine design’s boots perfectly hide tall wedge heels. Masculine design armors thighs as well. Heads-up display projected onto bulky head-mounted display, completely hiding eyes. Headpiece completely attached to headset, with aesthetic antenna spikes pointed up and behind ears (at least two spikes on each side). Neon patterns resembling circuitry are standard across all body pieces.',
     'Freebies': ['Science Talent, Engineering Talent'],
+    'freebies': {
+      talentPerks: ['Science Talent', 'Engineering Talent'],
+    },
   },
   {
     'title': 'Void (Space-Time)',
     'Elemental Ability': 'Spatial warping and temporal generation and control. Constructs appear to be starry voids. Intense effects tend to visually involve those starry voids, loud ticking of a clock, or even dancing stars around the user, while subtle effects can involve simple effects like flight and temporal acceleration without any obvious signifiers. The Void Shroud has been consistently rated as the single most difficult Shroud to master by 4.231638 * 10^97 users, as the automatic defenses against harming unintended things with the Shroud make it difficult to fully utilize. Purchase with caution!',
-    'Body effects': 'My god, it’s full of stars! Specifically the pupils, which seem to go on forever. The insides of orifices may also seem to hint at further cosmos within, and the user appearing larger or smaller than they truly should out of the corner of one’s eye.',
+    'Body Effects': 'My god, it’s full of stars! Specifically the pupils, which seem to go on forever. The insides of orifices may also seem to hint at further cosmos within, and the user appearing larger or smaller than they truly should out of the corner of one’s eye.',
     'Streamlined costume features': 'Semi-sheer material that glitters and sparkles, feminine designs tend to involve deep cleavage, while masculine tend to involve black latex.',
     'Heavy costume features': 'Dark, spacesuit-like outfit, the material glittering with pinpricks of light like stars.',
     'Freebies': ['Paradox Defense'],
+    'freebies': { defensePerks: ['Paradox Defens'] },
   }]
 
 bindings.push({
@@ -401,7 +442,7 @@ Finally, you get the Body and Soul Talents for free. Each specific element, addi
 
 bindings.push({
   title: 'Prismatic Shroud',
-  cost: 56,
+  cost: 64,
   whitelist: ['Elemental Shroud'],
   element: '',
   desc: `Choose an additional element for your Shroud. It may now express either of these elements or themes, but only one at a time. True mergers of multiple elements are not possible, but practice will let you rapidly switch between them and keep the previous element’s manifestations active for longer afterwards. Doing so with directly-conflicting elements, such as the Volcanic and Boreal or Primal and Burial Shrouds, requires much more practice.
@@ -412,20 +453,25 @@ bindings.push({
   title: 'Complementary Colors',
   cost: 25,
   whitelist: ['Elemental Shroud'],
-  desc: `Select a member of your retinue. They are now shroud-bound, bypassing the tier limit, with a cloak that has elemental properties much like your own. Unless you deign to allow them an element you personally possess, one will be extrapolated from their current affinities and hypothetical developmental trajectories. Your waifus may have unique elements not found on the standard list, whether hybridized from standard elements or entirely new. If you buy this perk for a waifu when you purchase her, she will be shroud-bound before delivery, bypassing the tier limit.
-In this way, your waifu will gain all the benefits like your own Elemental Shroud, that is, aesthetic harmonization for their constructs and cloak, an affinity for the element in other power systems, and the ability to generate and control said element. Unlike you, retinue members may only have a single element. This increases the Shroud tier boost for your retinue members to +3 for blue-stars, +2 for copper, and +1 for silver. Your retinue members who benefit from this perk do not receive the free Talents or Defenses that you get from Elemental Shroud or each particular element.
-Additionally, with the first purchase of this perk, you can project your own Shroud through shroud-bound members of your retinue. This bypasses the usual limitation against your retinue members binding others using your shroud, but requires a powerful multitasking ability or extreme amount of practice to do so effectively.
-Once you’ve purchased this perk ten times, all new shroud-bound waifus will automatically receive an Element without any further purchases. The cap on the effective tier of subjects you can successfully bind will be raised by one. Additionally, all new purchased waifus will be shroud-bound before delivery. This removes the shroud-binding tier limit for all purchases and consenting captures. If you buy ten copies of this perk in your starting build, this will apply to all waifus purchased at that time as well.`,
+  desc: `
+<p>Select a member of your retinue. They are now shroud-bound, bypassing the tier limit, with a cloak that has elemental properties much like your own. Unless you deign to allow them an element you personally possess, one will be extrapolated from their current affinities and hypothetical developmental trajectories. Your waifus may have unique elements not found on the standard list, whether hybridized from standard elements or entirely new. If you buy this perk for a waifu when you purchase her, she will be shroud-bound before delivery, bypassing the tier limit.</p>
+<p>In this way, your waifu will gain all the benefits like your own Elemental Shroud, that is, aesthetic harmonization for their constructs and cloak, an affinity for the element in other power systems, and the ability to generate and control said element. Unlike you, retinue members may only have a single element. This increases the Shroud tier boost for your retinue members to +3 for blue-stars, +2 for copper, and +1 for silver. Your retinue members who benefit from this perk do not receive the free Talents or Defenses that you get from Elemental Shroud or each particular element.</p>
+<p>Additionally, with the first purchase of this perk, you can project your own Shroud through shroud-bound members of your retinue. This bypasses the usual limitation against your retinue members binding others using your shroud, but requires a powerful multitasking ability or extreme amount of practice to do so effectively.</p>
+<p>Once you’ve purchased this perk ten times, all new shroud-bound waifus will automatically receive an Element without any further purchases. The cap on the effective tier of subjects you can successfully bind will be raised by one. Additionally, all new purchased waifus will be shroud-bound before delivery. This removes the shroud-binding tier limit for all purchases and consenting captures. If you buy ten copies of this perk in your starting build, this will apply to all waifus purchased at that time as well.</p>`,
 })
 
 bindings.push({
   title: 'Grand Tapestry',
   cost: 100,
   whitelist: ['Complementary Colors', 'Conjunction'],
-  desc: `You and your waifus with elemental shrouds are now able to access each other’s elements through the sympathetic bond your Shroud represents. On a basic level, drawing on another’s Element allows you to generate and manipulate things within their purview as if the element was your own, complete with aesthetic palette swaps and altered material profiles as appropriate.
-Affinities granted by someone else’s element, however, are capped by the intimacy - or at least, the intensity - of one’s relationship with them, which can complicate attempts to squeeze waifus for power. Conversely, maximizing social links through careful harem management (or blunt mind control) will allow even diametrically opposed and incompatible themes to be reconciled and harmonized with each other as one through the strength of shared affinities. These bonds also support your ability to bind more powerful subjects, raising the cap on the effective tier of subjects you can successfully bind by one.
-Take Psychic Talent for free. Shroud-bound retinue members will benefit from the effects of it and all other Basic Talents you have that do not otherwise apply to your retinue, whether you have Talent Sharing or not. (Take a full refund on all previous purchases of Talent Sharing. Those purchases will continue to apply to non-shroud retinue members.)
-Skill at manipulating constructs and phenomena is tracked separately and individually for each theme. Juggling and utilizing multiple themes at once is also a skill to be mastered.`,
+  freebies: {
+    talentPerks: ['Psychic Talent'],
+  },
+  desc: `
+<p>You and your waifus with elemental shrouds are now able to access each other’s elements through the sympathetic bond your Shroud represents. On a basic level, drawing on another’s Element allows you to generate and manipulate things within their purview as if the element was your own, complete with aesthetic palette swaps and altered material profiles as appropriate.</p>
+<p>Affinities granted by someone else’s element, however, are capped by the intimacy - or at least, the intensity - of one’s relationship with them, which can complicate attempts to squeeze waifus for power. Conversely, maximizing social links through careful harem management (or blunt mind control) will allow even diametrically opposed and incompatible themes to be reconciled and harmonized with each other as one through the strength of shared affinities. These bonds also support your ability to bind more powerful subjects, raising the cap on the effective tier of subjects you can successfully bind by one.</p>
+<p>Take Psychic Talent for free. Shroud-bound retinue members will benefit from the effects of it and all other Basic Talents you have that do not otherwise apply to your retinue, whether you have Talent Sharing or not. (Take a full refund on all previous purchases of Talent Sharing. Those purchases will continue to apply to non-shroud retinue members.)</p>
+<p>Skill at manipulating constructs and phenomena is tracked separately and individually for each theme. Juggling and utilizing multiple themes at once is also a skill to be mastered.</p>`,
 })
 
 bindings.push({
@@ -538,6 +584,9 @@ lures.push({
   title: 'Alluring Whisper: Siren’s Song',
   cost: 80,
   whitelist: ['Alluring Whisper'],
+  freebies: {
+    talentPerks: ['Performance Talent'],
+  },
   desc: 'Your voice is supernaturally compelling. As an active effect, you can empower your words to give specific commands to individuals, or rally a crowd with a song. Additionally, take Performance Talent for free. Beings with sufficient willpower can resist or even block this lure. It will never affect someone who lacks a sense of hearing.',
 })
 
@@ -603,11 +652,10 @@ lureExpansions.push({
 lureExpansions.push({
   title: 'Space Truckin’',
   cost: 100,
-  special: `At least one of each of the following:
-    <ul class="list-disc list-inside">
-      <li>Land vehicle purchased or registered through Catch-a-Ride</li>
-      <li>Retinue member who is a deity or capable of true resurrection</li>
-    </ul>`,
+  special: `
+      Land vehicle purchased or registered through Catch-a-Ride and
+      Retinue member who is a deity or capable of true resurrection
+`,
   image: 'https://i.imgur.com/cNBAVke.png',
   desc: `The legendary Truck-kun is your vehicle. When you or one of your retinue members drives a land vehicle that’s been registered with us as yours, anyone you run over with it will be captured, as if by the Stamp, and sent to a random world that you do not already have access to. Your target must actually die from the impact, but not necessarily immediately. The capture will fail if the target evades your vehicle or survives the impact. The maximum number of active isekai victims you can manage simultaneously scales with the number and tier of deities in your retinue after step 5, as shown in the chart. Your total cap is the sum of the individual caps of each deity in your retinue.
 Worlds your isekai targets are sent to will not become accessible to the rest of your retinue through Exit Stage Left or other company perks until the target completes a local storyline (charges Exit Stage Left to completion). This will count as you charging Exit Stage Left yourself. If the target dies before they can do so and you have Warranty Plan, they will respawn in your demiplane (if you have one) or otherwise near you, where they can be bound through your other means. If you have We Will Meet Again or Rainbow Bridge, they can then return to the world they were sent to, with any reinforcements or other support you choose to give them. Neither successful nor failed isekais are “active” and will not continue to count against your cap above.`,

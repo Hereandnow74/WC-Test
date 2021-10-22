@@ -71,7 +71,7 @@
           <h3 class="text-lg text-gray-400">
             Intensity
           </h3>
-          <Enum :list="intensities" path="/intensity" empty-message="PvE Mode" />
+          <Enum color="text-blue-500 hover:text-blue-400" :list="intensities" path="/intensity" empty-message="PvE Mode" />
         </div>
         <div id="Origin">
           <h3 class="text-lg text-gray-400">
@@ -85,7 +85,7 @@
           </h3>
           <div class="flex gap-1">
             <span class="text-gray-300">Bindings:</span>
-            <Enum :list="binding" path="/binding" empty-message="" />
+            <Enum color="text-blue-400 hover:text-blue-300" :list="binding" path="/binding" empty-message="" />
             <div v-if="!binding.length">
               <router-link :to="{path: '/binding', hash:'#No Bindings'}">
                 <span class="text-blue-500">No Bindings</span>
@@ -94,7 +94,7 @@
           </div>
           <div class="flex gap-1">
             <span class="text-gray-300">Lures:</span>
-            <Enum :list="luresBought" path="/binding" empty-message="" />
+            <Enum color="text-blue-400 hover:text-blue-300" :list="luresBought" path="/binding" empty-message="" />
             <div v-if="!luresBought.length">
               No Lures
             </div>
@@ -104,7 +104,7 @@
           <h3 class="text-lg text-gray-400">
             Heritage
           </h3>
-          <Enum :list="heritage" path="/heritage" empty-message="No Heritage" />
+          <Enum color="text-blue-400 hover:text-blue-300" :list="heritage" path="/heritage" empty-message="No Heritage" />
         </div>
         <div id="Talents & Perks">
           <h3 class="text-lg text-gray-400">
@@ -114,6 +114,7 @@
             <!-- TODO: Display addons and variant  -->
             <li class="flex gap-2 text-gray-300">
               Ride: <Enum
+                color="text-blue-400 hover:text-blue-300"
                 class="text-gray-200"
                 :list="ridePerks"
                 path="/talents/ride"
@@ -122,6 +123,7 @@
             </li>
             <li class="flex gap-2 text-gray-300">
               Home: <Enum
+                color="text-blue-400 hover:text-blue-300"
                 class="text-gray-100"
                 :list="homePerks"
                 path="/talents/home"
@@ -130,6 +132,7 @@
             </li>
             <li class="flex gap-2 text-gray-300">
               Talents: <Enum
+                color="text-blue-400 hover:text-blue-300"
                 class="text-gray-100"
                 :list="talentPerks"
                 path="/talents/talent"
@@ -138,6 +141,7 @@
             </li>
             <li class="flex gap-2 text-gray-300">
               Defenses: <Enum
+                color="text-blue-400 hover:text-blue-300"
                 class="text-gray-100"
                 :list="defensePerks"
                 path="/talents/defense"
@@ -146,6 +150,7 @@
             </li>
             <li class="flex gap-2 text-gray-300">
               Misc: <Enum
+                color="text-blue-400 hover:text-blue-300"
                 class="text-gray-100"
                 :list="miscPerks"
                 path="/talents/perks"
@@ -154,6 +159,7 @@
             </li>
             <li class="flex gap-2 text-gray-300">
               Generic: <Enum
+                color="text-blue-400 hover:text-blue-300"
                 class="text-gray-100"
                 :list="genericWaifuPerks"
                 path="/talents/specific"
@@ -162,6 +168,7 @@
             </li>
             <li class="flex gap-2 text-gray-300">
               Waifu: <Enum
+                color="text-blue-400 hover:text-blue-300"
                 class="text-gray-100"
                 :list="waifuPerks"
                 path="/talents/specific"
@@ -181,7 +188,7 @@
                   <span class="text-green-500">{{ char.tier }}</span>
                 </div>
                 <div>
-                  <Button label="sell" size="Small" bg-color="bg-orange-500" @click="sellCompanion(char.uid, char.tier)" />
+                  <Button label="return" size="Small" bg-color="bg-orange-500" @click="sellCompanion(char.uid, char.tier)" />
                 </div>
               </div>
             </div>
@@ -217,10 +224,31 @@
           Waifu Perks: <span class="text-orange-500">{{ waifuPerksCost + genericWaifuPerksCost }}</span>
         </div>
         <div class="font-semibold flex justify-between mx-4 border-b border-gray-700">
+          Other Perks Total: <span class="text-green-500">{{ miscPerksCost + waifuPerksCost + genericWaifuPerksCost }}</span>
+        </div>
+        <div class="font-semibold flex justify-between mx-4 border-b border-gray-700">
           Companions: <span class="text-orange-500">{{ companionsCost }}</span>
         </div>
         <div class="font-semibold flex justify-between mx-4 border-b border-gray-700">
           Total: <span class="text-green-500">{{ heritageCost + bindingCost + ridePerksCost+homePerksCost+talentsCost+defensesCost+miscPerksCost+waifuPerksCost+genericWaifuPerksCost+luresCost+companionsCost }}</span>
+        </div>
+      </div>
+      <div v-if="activeTab === 'Manual'" class="text-gray-300 mx-2 mt-2 flex flex-col gap-2">
+        <div class="flex justify-between">
+          Plus credits
+          <Input v-model.number="budgetMods.plus" class="w-24" />
+        </div>
+        <div class="flex justify-between">
+          Minus credits
+          <Input v-model.number="budgetMods.minus" class="w-24" />
+        </div>
+        <div class="flex justify-between">
+          Plus T11 tickets
+          <NumberInput v-model="budgetMods.plus11" :min="0" class="w-24" />
+        </div>
+        <div class="flex justify-between">
+          Minus T11 tickets
+          <NumberInput v-model="budgetMods.minus11" :min="0" class="w-24" />
         </div>
       </div>
       <div class="flex h-8 justify-between mt-auto">
@@ -235,6 +263,7 @@
 </template>
 
 <script lang="ts" setup>
+import { findIndex } from 'lodash-es'
 import { useStore } from '~/store/store'
 
 const activeTab = ref('Build')
@@ -243,7 +272,7 @@ const {
   budget, startingWorld, startingOrigin, intensities, binding, homePerks, defensePerks,
   companions, heritage, talentPerks, waifuPerks, ridePerks, miscPerks, luresBought, genericWaifuPerks,
   tier11tickets, heritageCost, bindingCost, ridePerksCost, homePerksCost, talentsCost, defensesCost,
-  miscPerksCost, waifuPerksCost, genericWaifuPerksCost, luresCost, companionsCost,
+  miscPerksCost, waifuPerksCost, genericWaifuPerksCost, luresCost, companionsCost, budgetMods,
 } = useStore()
 
 const originText = computed(() => {
@@ -266,7 +295,7 @@ const originText = computed(() => {
 const [visible, toggleFull] = useToggle()
 
 function sellCompanion(uid: number, tier: number) {
-  // companions.value.splice(findIndex(companions.value, { uid }), 1)
+  companions.value.splice(findIndex(companions.value, { uid }), 1)
 }
 
 </script>

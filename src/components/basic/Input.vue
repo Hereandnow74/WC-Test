@@ -1,7 +1,7 @@
 <template>
   <div>
     <label class="flex gap-2">
-      <span v-if="label">{{ label }}</span>
+      <span v-if="label" class="whitespace-nowrap">{{ label }}</span>
       <input
         :type="type"
         class="rounded text-gray-800 px-2 w-full"

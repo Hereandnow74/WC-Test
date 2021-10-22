@@ -25,7 +25,7 @@ waifu_perks.push({
   title: 'Just Monika',
   waifu: 'Monika',
   from: 'Doki Doki Literature Club',
-  image: 'https://i.imgur.com/Iea8EN9.jpg',
+  image: 'https://i.imgur.com/Iea8EN9.jpg?1',
   discount: 1,
   cost: 11111,
   desc: 'Monika has learned how to manipulate reality as if it were her game. She\'ll need training to master this ability. The more complicated the world, the more she\'ll have to work to implement any changes or modifications. Captured copies of Monika will never have this perk. She needs a senpai with admin access to a world\'s operating system to teach her the basics first. Potential senpai candidates include BB from the Nasuverse and the higher-ups from Ah My Goddess',
@@ -85,7 +85,7 @@ waifu_perks.push({
   title: 'Eye of the Tiger',
   waifu: 'Hanekawa Tsubasa',
   from: 'Monogatari',
-  image: 'https://i.imgur.com/AQ74QBy.jpg',
+  image: 'https://i.imgur.com/AQ74QBy.jpg?1',
   discount: 20,
   desc: 'Tsubasa can now summon the manifestation of her envy, Kako, a “Hysteria Tiger“ with a penchant for arson. This version of Kako is much better-controlled than the original, only burning what his master directs him to burn, and will disappear back into Tsubasa\'s mind when she no longer needs his services. Tsubasa\'s hair will also gain a natural black-and-white tiger-stripe pattern. If Tsubasa is captured after the events of Tsubasa Tiger, she will always have this perk',
 })
@@ -133,7 +133,7 @@ waifu_perks.push({
   title: 'Dea est Machina',
   waifu: 'Iwakura Lain',
   from: 'Serial Experiments Lain',
-  image: 'https://i.imgur.com/9FUjNzR.gif',
+  image: 'https://i.imgur.com/9FUjNzR.gif?1',
   cost: 11111,
   discount: 10,
   desc: 'Lain has absorbed her shadow and ascended to become an omnipotent and omnipresent goddess of the internet and cyberspace. Without this perk. Lain will only be a skilled coder, hacker, and technopath, with significant psychic potential.',
@@ -178,7 +178,7 @@ waifu_perks.push({
   title: 'Darkness',
   waifu: 'Konjiki no Yami',
   from: 'To Love-Ru',
-  image: 'https://i.imgur.com/KsUMMAWm.jpg',
+  image: 'https://i.imgur.com/KsUMMAWm.jpg?1',
   cost: 950,
   desc: 'Konjiki no Yami was created as a transformation weapon, but her creators left a hidden Darkness transformation in her that would activate if she ever felt a sense of peace in her heart. This form is so powerful that it can slice planets in half and (allegedly) destroy the universe itself. The purchase of this perk enables Yami to change into this mode at will. This form may also be forcibly activated via the Company smart device, which will also result in the more hyperactive and perverted personality associated with this form coming to the fore. If you capture Yami in setting, you will automatically receive this perk and the capture value of a T10',
 })
@@ -242,7 +242,7 @@ waifu_perks.push({
   title: 'Dancing on Snow',
   waifu: 'Ysayle Darigoulain',
   from: 'Final Fantasy XIV',
-  image: 'https://i.imgur.com/fviNHAf.jpg',
+  image: 'https://i.imgur.com/fviNHAf.jpg?1',
   discount: 40,
   desc: 'Through admiration and determined effort, Ysayle can now channel the spirit of Shiva by taking on her form. Shiva may also be purchased separately, in her own body and with any version’s appearance, for 50 credits.',
 })
@@ -330,7 +330,7 @@ waifu_perks.push({
   title: 'Metroid DNA',
   waifu: 'Samus Aran',
   from: 'Metroid',
-  image: 'https://i.imgur.com/BPOzyIY.jpg',
+  image: 'https://i.imgur.com/BPOzyIY.jpg?1',
   cost: 50,
   desc: 'The Metroid DNA from Fusion is active in Samus\'s system, turning her into a succuboid with incredible psychic potential. Lifeforce is a required part of her diet. She\'ll gradually mutate into a human-Metroid hybrid, then follow the SR-388 Metroids\' life-cycle into the queen stage... or perhaps beyond. Once she\'s become a Metroid queen, she may lay Metroid eggs, but only voluntarily and not without extreme persuasion. Her Metroid offspring will also follow the SR-388 life-cycle and are limited to stages lower than her own. Metroid Samus qualifies for special Alterzelu Symbiote theming. If you already have Justin Bailey, you may still buy this perk, pre-applied to a new Samus, for 100 credits. ',
 })
@@ -370,7 +370,7 @@ waifu_perks.push({
   title: 'Machina',
   waifu: 'Fiora',
   from: 'Xenoblade Chronicles 1',
-  image: 'https://i.imgur.com/g2pOTww.jpeg',
+  image: 'https://i.imgur.com/g2pOTww.jpeg?1',
   cost: 180,
   desc: 'Fiora has been rebuilt: better, faster, stronger. Her half-Mechon body is also the host to Lady Meyneth, the goddess-avatar of the continent-sized kaiju known as Mechonis. Meyneth may instead be purchased separately, in her own body, for 200 credits.',
 })
@@ -394,7 +394,7 @@ waifu_perks.push({
   title: 'The Girl in the Tower',
   waifu: 'Salem',
   from: 'RWBY',
-  image: 'https://cs9.pikabu.ru/post_img/2019/03/30/5/155392965916952586.jpg',
+  image: 'https://i.imgur.com/KHe692N.png?1',
   discount: 100,
   desc: 'Instead of the Grimm-corrupted Salem of the canon era, your Salem is her younger self with strong immortality, magical talent, and no command over the nightmare creatures that plague her homeworld. Light Salem isn\'t necessarily any better of a person than Dark Salem, but at least you have a way to troll her ex-husband. ',
 })
@@ -411,7 +411,7 @@ waifu_perks.push({
   title: 'Herrscher of the Void',
   waifu: 'Kiana Kaslana',
   from: 'Honkai Impact',
-  image: 'https://i.imgur.com/aZWHJsn.jpg',
+  image: 'https://i.imgur.com/aZWHJsn.jpg?1',
   cost: 100,
   desc: 'Kiana has mastered the powers of the Void and is no longer haunted by the Herrscher personality of Sirin, her past life. Purchased versions of Kiana will always have this perk, as will any captured after the events of Chapter 25',
 })
@@ -427,7 +427,7 @@ waifu_perks.push({
   title: 'See You in the Next World',
   waifu: 'Sirin Kaslana',
   from: 'Honkai Impact',
-  image: 'https://i.imgur.com/7B4S9kk.png',
+  image: 'https://i.imgur.com/7B4S9kk.png?1',
   cost: 11111,
   discount: 600,
   desc: 'Sirin Kaslana, or a Sirin with K423\'s body, has been given all the abilities she has displayed in Honkai Gakuen II: Guns Girl Z and its DLCs. In this case, she gets the abilities of God Kiana, an immensely powerful being empowered by the Honkai that destroyed and recreated the Guns Girl Z universe, before creating the Imaginary Tree and the Sea of Quanta - i.e. the Honkai, Genshin, and Bubble Universes. May or may not be the 14th Herrscher. You may only apply this perk to one of Kiana or Sirin at a time.',
@@ -436,7 +436,7 @@ waifu_perks.push({
   title: 'Captain Mei',
   waifu: 'Raiden Mei',
   from: 'Honkai Impact',
-  image: 'https://i.imgur.com/F8Xgxj1.png',
+  image: 'https://i.imgur.com/F8Xgxj1.png?1',
   cost: 20,
   desc: 'Mei gets access to her combat experience and abilities from the APHO Bubble Universe. This does not increase Mei\'s tier rating. ',
 })
@@ -444,7 +444,7 @@ waifu_perks.push({
   title: 'Dr. MEI',
   waifu: 'Raiden Mei',
   from: 'Honkai Impact',
-  image: 'https://i.imgur.com/rTYff6g.png',
+  image: 'https://i.imgur.com/rTYff6g.png?1',
   cost: 100,
   desc: 'Mei gets access to her memories, experience and knowledge from her Previous Era self, Dr. MEI. This includes a complete database of Previous Era technology, the hollow armor Divine Key, and, as an additional bonus, the Previous Era Gem of Conquest and Serenity. Dr. MEI may instead be purchased in her own body, as a Tier 7, for 100 credits.',
 })
@@ -452,7 +452,7 @@ waifu_perks.push({
   title: 'Bronie Zaychik: Haxxor Bunny',
   waifu: 'Bronya Zaychik',
   from: 'Honkai Impact',
-  image: 'https://i.imgur.com/pvx4EEw.png',
+  image: 'https://i.imgur.com/pvx4EEw.png?1',
   cost: 20,
   desc: 'Bronya gets access to her memories and experience from an alternate bubble universe where she is known as Bronie, a hacker that also uses the alias Haxxor Bunny. This does not increase Bronya\'s tier rating.',
 })
@@ -461,7 +461,7 @@ waifu_perks.push({
   waifu: 'Bronya Zaychik',
   from: 'Honkai Impact',
   requires: 'Must have Dr. MEI (Honkai Impact, T8)',
-  image: 'https://i.imgur.com/MtfgIBo.png',
+  image: 'https://i.imgur.com/MtfgIBo.png?1',
   cost: 100,
   desc: 'While Bronya did not exist in the Previous Era, the Super Al known as Prometheus bears a stunning resemblance to the girl. As such the Company has deemed the similarity sufficient enough to model Prometheus in this way. This perk greatly increases Bronya’s computing ability and Haxxor Bunny\'s own skill (if that perk is also applied).',
 })
@@ -469,7 +469,7 @@ waifu_perks.push({
   title: 'HUA: Wings of Origin',
   waifu: 'Fu Hua',
   from: 'Honkai Impact',
-  image: 'https://i.imgur.com/dzYkNAa.png',
+  image: 'https://i.imgur.com/dzYkNAa.png?1',
   cost: 100,
   desc: 'Fu Hua gets access to all her memories of the past without any negative effects or periodic cleaning with Fenghuang Down, as well as the physicals of her time as a MANTIS Warrior. May not be applied to the same Fu Hua as Herrscher of Sentience. If you already have the Herrscher of Sentience, you may still purchase this, pre-applied to a new Fu Hua, for 200 credits. Fu Hua will not have the battlesuits Phoenix or Azure Empyrea without this perk.',
 })
@@ -477,7 +477,7 @@ waifu_perks.push({
   title: 'Herrscher of Sentience',
   waifu: 'Fu Hua',
   from: 'Honkai Impact',
-  image: 'https://i.imgur.com/u93yj3H.png',
+  image: 'https://i.imgur.com/u93yj3H.png?1',
   cost: 400,
   desc: 'While rather child-like and immature, this nascent Herrscher is the strongest incarnation of Fu Hua to date, having bodied both Kevin and Durandal. May not be applied to the same Fu Hua as HUA: Wings of Origin. If you already have a Fu Hua with Wings of Origin, you may still purchase this, pre-applied to a new Fu Hua, for 500 credits.',
 })
@@ -493,7 +493,7 @@ waifu_perks.push({
   title: 'Zhuge Kongming',
   waifu: 'Theresa Apocalypse',
   from: 'Honkai Impact',
-  image: 'https://i.imgur.com/LFFM8xi.png',
+  image: 'https://i.imgur.com/LFFM8xi.png?1',
   cost: 20,
   desc: 'Theresa gains access to her memories and abilities of Zhuge Kongming, an alternate self from the Captainverse/Cap’s Bizarre Adventure. She will not have the battlesuit Starlit Astrologos without this perk. This does not increase Theresa\'s tier rating.',
 })
@@ -501,7 +501,7 @@ waifu_perks.push({
   title: 'SAKURA',
   waifu: 'Yae Sakura',
   from: 'Honkai Impact',
-  image: 'https://i.imgur.com/yhfirE3.png',
+  image: 'https://i.imgur.com/yhfirE3.png?1',
   cost: 100,
   desc: 'Yae Sakura gains access to the memories and experiences of the previous era MANTIS Warrior SAKURA. Sakura will not have the battlesuit Goushinnso Memento without this perk.',
 })
@@ -509,7 +509,7 @@ waifu_perks.push({
   title: 'Kasumi',
   waifu: 'Yae Sakura',
   from: 'Honkai Impact',
-  image: 'https://i.imgur.com/JKBmpOE.png',
+  image: 'https://i.imgur.com/JKBmpOE.png?1',
   cost: 20,
   desc: 'Yae Sakura gains the memories of her clone, Yae Kasumi. Sakura will not have the battlesuit Darkbolt Jonin without this perk.This does not increase Sakura\'s tier rating. Kasumi may instead be purchased separately, in her own body, for 100 credits.',
 })
@@ -517,7 +517,7 @@ waifu_perks.push({
   title: 'Irene Adler',
   waifu: 'Rita Rossweisse',
   from: 'Honkai Impact',
-  image: 'https://i.imgur.com/0Ev0XIY.jpg',
+  image: 'https://i.imgur.com/0Ev0XIY.jpg?1',
   cost: 20,
   desc: 'Rita gains access to her Captainverse counterpart, the detective known as Irene Adler. Rita will not have the battlesuit Fallen Rosemary without this perk. This does not increase Rita\'s tier rating. Irene may instead be purchased separately, in her own body, for 100 credits.',
 })
@@ -525,7 +525,7 @@ waifu_perks.push({
   title: 'Rita Kaslana',
   waifu: 'Rita Rossweisse',
   from: 'Honkai Impact',
-  image: 'https://i.imgur.com/4K3oU4Q.png',
+  image: 'https://i.imgur.com/4K3oU4Q.png?1',
   cost: 400,
   desc: 'Rita gets access to Kevin Kaslana\'s powers and abilities from the bubble universe/Su\'s illusion where she became Humanity\'s strongest warrior and took Kevin\'s place. This perk also gives Rita the Judgement of Shamash pistols.',
 })
@@ -533,7 +533,7 @@ waifu_perks.push({
   title: 'Sumeru Durandal',
   waifu: 'Durandal',
   from: 'Honkai Impact',
-  image: 'https://i.imgur.com/xjYR2Yy.png',
+  image: 'https://i.imgur.com/xjYR2Yy.png?1',
   cost: 20,
   desc: 'Durandal gains access to the memories and abilities of Sumeru. Kevin\'s friend who lived as an assistant to Doctor Mei. This perk also gives Durandal the Star of Eden pistols and the Second Divine Key, Interdimensional Locomotive. This does not increase Durendal\'s tier rating. ',
 })
@@ -557,7 +557,7 @@ waifu_perks.push({
   title: 'Delta',
   waifu: 'Rozaliya Olenyeva',
   from: 'Honkai Impact',
-  image: 'https://i.imgur.com/xfuY391.png',
+  image: 'https://i.imgur.com/xfuY391.png?1',
   cost: 50,
   desc: 'Rozaliya gains access to the memories and abilities of her older, much more cynical self from another bubble universe, known as Delta. Rozaliya will not have the battlesuit Fervent Tempo without this perk.',
 })
@@ -573,7 +573,7 @@ waifu_perks.push({
   title: 'Rimestar',
   waifu: 'Ana Schariac',
   from: 'Honkai Impact',
-  image: 'https://i.imgur.com/h1HSXoX.png',
+  image: 'https://i.imgur.com/h1HSXoX.png?1',
   cost: 100,
   desc: 'Ana gains the abilities of the Herrscher of Rimestar, a form that combined her core with that of Owl\'s Herrscher of the Earth. Not only does she retain her Ice manipulation, she also gains gravity manipulation and black hole creation. This does not change Ana\'s tier rating. ',
 })
@@ -581,7 +581,7 @@ waifu_perks.push({
   title: 'Ich Liebe Dich',
   waifu: 'Sirin',
   from: 'Honkai Impact',
-  image: 'https://i.imgur.com/HyNKujz.jpg',
+  image: 'https://i.imgur.com/HyNKujz.jpg?1',
   cost: 20,
   desc: 'Bom from Sirin\'s wish to have another chance at life as Cecilia Schariac\'s daughter, Sirin instead awakens in the body of K423. Unlike what transpires originally, she retains her memories in full and the Herrscher personality that would normally develop within K423 - born of Sirin\'s hatred for humanity - is never created as a result. In addition, Sirin will obtain all equipment and signature outfits Kiana Kaslana (K423) would have if purchased at base, as well as any combative abilities she has - skills such as the Kaslana gun kata and the Edge of Taixuan. ',
 })
@@ -589,7 +589,7 @@ waifu_perks.push({
   title: 'Fj',
   waifu: 'Ryougi Shiki',
   from: 'Fate Grand Order',
-  image: 'https://i.imgur.com/ls7nSA3.png',
+  image: 'https://i.imgur.com/ls7nSA3.png?1',
   cost: 400,
   desc: 'The personality in Shiki\'s body is neither the male one that sacrificed itself to save her life in high school, nor the female one that was in control for most of her adult life and guest-starred in FGO as an Assassin, but the technically-nameless embodiment of Void that guest-starred in FGO as a Saber. Without this perk, the only personality present in Shiki\'s body will be the female one. ',
 })
@@ -597,7 +597,7 @@ waifu_perks.push({
   title: 'Sion TATARI',
   waifu: 'Sion Eltnam Atlasia',
   from: 'Nasuverse',
-  image: 'https://i.imgur.com/KfE5NMx.png',
+  image: 'https://i.imgur.com/KfE5NMx.png?1',
   cost: 50,
   desc: 'Sion is fused with the 13th Dead Apostle Ancestor, the Night of Wallachia aka TATARI. She has White Len as a familiar, if you don\'t already have a White Len via Aozaki Aoko, and qualifies for special Alterzelu Symbiote theming. ',
 })
@@ -605,7 +605,7 @@ waifu_perks.push({
   title: 'The Future King',
   waifu: 'Artoria Pendragon',
   from: 'Nasuverse',
-  image: 'https://i.imgur.com/9Pl5qiV.jpg',
+  image: 'https://i.imgur.com/9Pl5qiV.jpg?1',
   discount: 50,
   desc: 'Instead of the detached King of Knights, there is only Saber Lily. Artoria\'s personality now more accurately reflects the idealistic youth who first drew Caliburn and qualifies for special Alterzelu Symbiote (purification) theming. Her outfits, skills, and Noble Phantasms are changed accordingly. This perk may also be applied to the male Arthur Pendragon of Fate/Prototype, but not an Artoria or Arthur who already has The Everdistant Utopia. If you already have Avalon, you may still purchase this perk, pre-applied to a new Artoria or Arthur, for 50 credits. ',
 })
@@ -613,7 +613,7 @@ waifu_perks.push({
   title: 'The Everdistant Utopia',
   waifu: 'Artoria Pendragon',
   from: 'Nasuverse',
-  image: 'https://i.imgur.com/4MKhpON.png',
+  image: 'https://i.imgur.com/4MKhpON.png?1',
   cost: 100,
   desc: 'Artoria has her sheath, Avalon, granting her enormous health regeneration and other lore effects. This perk may not be applied to the same Artoria as The Future King. If you already have Artoria Lily, you may still purchase this, pre-applied to a new Artoria, for 200 credits. The male Arthur Pendragon of Fate/Prototype is also eligible for this perk.',
 })
@@ -629,7 +629,7 @@ waifu_perks.push({
   title: 'Nameless Red Devil',
   waifu: ['Tohsaka Rin', 'Tohsaka Sakura'],
   from: 'Nasuverse',
-  image: 'https://i.imgur.com/eyZuB9e.png',
+  image: 'https://i.imgur.com/eyZuB9e.png?1',
   cost: 80,
   desc: 'Maybe it was a Demi-Servanting gone wrong. Maybe it was Class Card overuse. Either way, Rin - or a Sakura who would have owned the Jeweled Pendant - now has all the abilities of the Archer-class EMIYA or Nameless, albeit with a slightly... airier costume. You may only apply this perk to one of the two. This perk may not be applied to the same Rin as Mistress of Heaven. Swapped Vessel, or Kaleidostick Magical Ruby. If you have any of those perks and want Archer Rin, you may still purchase this, pre applied to a new Rin, for 100 credits. ',
 })
@@ -637,7 +637,7 @@ waifu_perks.push({
   title: 'Mistress of Heaven',
   waifu: 'Tohsaka Rin',
   from: 'Nasuverse',
-  image: 'https://i.imgur.com/xWa5x3i.png',
+  image: 'https://i.imgur.com/xWa5x3i.png?1',
   cost: 80,
   desc: 'Rin is instead the Archer-class Pseudo-Servant Ishtar, the Mesopotamian goddess of love and war, with additional access to Summer Ishtar\'s outfits, skills, and Noble Phantasms. If you purchase or capture Rin first and apply this perk later, Rin will gain Ishtar\'s memories and emotional connections; their two personalities are so alike that Ishtar can\'t even tell that Rm\'s better traits aren’t her own. if you purchase Rin and this perk simultaneously, you will only get Ishtar. If you capture Ishtar or Ereshkigal within the Babylonia Singularity while they share a body, the one who isn\'t in control at the time will be ejected and rendered vulnerable to an immediate Binding. This perk may not be applied to the same Rin as Swapped Vessel, Nameless Red Devil, or Kaleidostick Magical Ruby. If you already have any of those perks and want Ishtar, you may still purchase this, pre-applied to a new Rin, for 100 credits.',
 })
@@ -645,7 +645,7 @@ waifu_perks.push({
   title: 'Bull of Heaven',
   waifu: 'Ishtar',
   from: 'Nasuverse',
-  image: 'https://i.imgur.com/haMwMjv.png',
+  image: 'https://i.imgur.com/haMwMjv.png?1',
   cost: 500,
   desc: 'Ishtar\'s familiar, Gugalanna. was the greatest of the Mesopotamian Divine Beasts. The bull the size of a mountain required Gilgamesh and Enkidu to work together to defeat it. Ordinarily. Gugalanna is only available for capture during the Snowfield Grail War, as the version of Ishtar at the Babylonian Singularity and Chaldea sheepishly admitted that she lost her pet - though she later manifested it as a diminutive mascot. This perk restores "Gugalanna Lily* to its full power, but does not raise Ishtar\'s tier. ',
 })
@@ -653,7 +653,7 @@ waifu_perks.push({
   title: 'Tainted Vessel',
   waifu: ['Matou Sakura', 'Matou Rin '],
   from: 'Nasuverse',
-  image: 'https://i.imgur.com/bDrHkOw.png',
+  image: 'https://i.imgur.com/bDrHkOw.png?1',
   cost: 498,
   desc: 'The adopted daughter of the Matou, whether Sakura or Rin, has been corrupted by Angra Mainyu as per the events of Heaven\'s Feel. The subject of this perk only counts as directly captured if she\'s already experienced her gothic makeover. Otherwise, you\'ll still only have regular Matou Sakura or Matou Rin. Dark Sakura and Dark Rin both qualify for special Alterzelu Symbiote theming. If you already have Undivided, Knight of the Cherry Blossom, or Kouhai of Light and want Dark Sakura, you may still purchase this, pre-applied to a new Sakura, for 500 credits. If you already have Nameless Red Devil or Mistress of Heaven, or created Kaleido Ruby and want Dark Rin. you may still purchase this, pre-applied to a new Rin, for 500 credits. ',
 })
@@ -661,7 +661,7 @@ waifu_perks.push({
   title: 'All the World\'s Evils',
   waifu: ['Dark Sakura', 'Dark Rin'],
   from: 'Nasuverse',
-  image: 'https://i.imgur.com/db85iO2.png',
+  image: 'https://i.imgur.com/db85iO2.png?1',
   cost: 500,
   desc: 'Dark Sakura or Dark Rin has fully merged with Angra Mainyu to become the Beast of Retribution. Even if you have both Dark Sakura and Dark Rin, you may only apply this perk to one of them. Beast Sakura and Beast Rin both qualify for special Alterzelu Symbiote theming. ',
 })
@@ -669,7 +669,7 @@ waifu_perks.push({
   title: 'Undivided',
   waifu: 'Matou Sakura',
   from: 'Nasuverse',
-  image: 'https://i.imgur.com/lyLZeeR.png',
+  image: 'https://i.imgur.com/lyLZeeR.png?1',
   cost: 18,
   desc: 'Sakura is instead the non-canon Tohsaka Sakura, a version who was trained in her Imaginary Numbers element and may or may not have separated from her sister. If you already have Matou Rin alongside this Sakura, they will recognize each other. This perk may not be applied to the same Sakura as Tainted Vessel, Knight of the Cherry Blossom, or Kouhai of Light. If you already have either of those perks and want Tohsaka Sakura, you may still purchase this, pre-applied to a new Sakura, for 20 credits.',
 })
@@ -677,7 +677,7 @@ waifu_perks.push({
   title: 'Knight of the Cherry Blossom',
   waifu: 'Matou Sakura',
   from: 'Nasuverse',
-  image: 'https://i.imgur.com/xTfsODX.png',
+  image: 'https://i.imgur.com/xTfsODX.png?1',
   cost: 98,
   desc: 'Sakura (Matou) is grafted with the Berserker Class Card of Lancelot du Lac. She will see you as her Senpai at all times. When she has Lancelot\'s card equipped, her morality will recede until only your wants and safety are on her mind. If you capture the Miyuverse version of Sakura, even before the Ainsworth Grail War, she will already have this. This perk may not be applied to the same Sakura as Tainted Vessel, Kouhai of Light, or Undivided. If you already have any of those perks and want Berserker Sakura, you may still purchase this, pre-applied to a new Sakura, for 100 credits.',
 })
@@ -685,7 +685,7 @@ waifu_perks.push({
   title: 'Kouhai of Light',
   waifu: 'Matou Sakura',
   from: 'Nasuverse',
-  image: 'https://i.imgur.com/xapAe6N.png',
+  image: 'https://i.imgur.com/xapAe6N.png?1',
   cost: 198,
   desc: 'Sakura or Tsubone is instead the Lancer-class Pseudo-Servant Parvati, the Hindu goddess and wife of Shiva as portrayed in Fate/Grand Order. If you purchase or capture the intended host first and apply this perk later, Parvati will keep her host\'s memories and a blend of both host and Servant\'s personalities, as if she had taken Substitute into her host\'s life; if you purchase the host and this perk simultaneously, you will only get Parvati. This perk may not be applied to the same Sakura as Tainted Vessel. Undivided, or Knight of the Cherry Blossom',
 })
@@ -693,7 +693,7 @@ waifu_perks.push({
   title: 'Snow Fairy',
   waifu: 'lllyasviel von Einzbem',
   from: 'Nasuverse',
-  image: 'https://i.imgur.com/EC2avVn.jpg',
+  image: 'https://i.imgur.com/EC2avVn.jpg?1',
   cost: 50,
   desc: 'Iliya Is instead the Alter Ego-class Pseudo-Servant Sitonai, an amalgamation of herself, the Ainu Heroic Spirit, the Finnish witch-queen Louhi, and the Norse love goddess Freyja. She also has her pet polar bear, Shirou, as a familiar. If you purchase or capture Iliya first and apply this perk later, Sitonai will keep Iliya\'s memories, as if she had taken Substitute into her host\'s life; if you purchase Iliya and this perk simultaneously, you will only get Sitonai. This perk may not be applied to the same Iliya as Kaleidostick Magical Ruby. If you already have Prisma Iliya and want Sitonai. you may still purchase this, pre applied to a new Iliya, for 100 credits.',
 })
@@ -701,7 +701,7 @@ waifu_perks.push({
   title: 'Jungle Beast',
   waifu: 'Fujimura Taiga',
   from: 'Nasuverse',
-  image: 'https://i.imgur.com/eTtImVQ.jpg',
+  image: 'https://i.imgur.com/eTtImVQ.jpg?1',
   cost: 48,
   desc: 'Taiga is instead the Lancer-class Pseudo-Servant Jaguarman, an amalgamation of jaguar-related Mesoamerican deities. If you purchase or capture Taiga first and apply this perk later, Jaguarman will keep Taiga\'s memories, as if she had taken Substitute into her host’s life; if you purchase Taiga and this perk simultaneously, you will only get Jaguarman. If you have Quetzalcoatl or anyone else involved in the Babylonia singularity alongside Jaguarman, they will recognize each other. ',
 })
@@ -709,7 +709,7 @@ waifu_perks.push({
   title: 'Scales of Justice',
   waifu: 'Luvia Edelfelt',
   from: 'Nasuverse',
-  image: 'https://i.imgur.com/QbDtkDu.png',
+  image: 'https://i.imgur.com/QbDtkDu.png?1',
   cost: 80,
   desc: 'Luvia is instead the Ruler-class Pseudo-Servant Astraea, the Greek goddess of justice as portrayed in Fate/Grand Order. If you purchase or capture Luvia first and apply this perk later, Astraea will keep Luvia\'s memories, as if she had taken Substitute into her host\'s life; if you purchase Luvia and this perk simultaneously, you will only get Astraea. This perk may not be applied to the same Luvia as Kaleidostick Magical Sapphire. If you already have Kaleido Sapphire and want Astraea, you may still purchase this, pre-applied to a second Luvia, for 100 credits.',
 })
@@ -717,7 +717,7 @@ waifu_perks.push({
   title: 'Calling Agape',
   waifu: 'Caren Hortensia',
   from: 'Nasuverse',
-  image: 'https://i.imgur.com/r32iuWY.png',
+  image: 'https://i.imgur.com/r32iuWY.png?1',
   cost: 98,
   desc: 'Caren is instead the host of Ruler-class Pseudo-Servant Amor, better known as Cupid, as portrayed in Fate/Grand Order. If you purchase or capture Caren first and apply this perk later, Amor will keep Caren\'s memories, as if she had taken Substitute into her host’s life; if you purchase Caren and this perk simultaneously, you will only get Amor.',
 })
@@ -726,7 +726,7 @@ waifu_perks.push({
   waifu: 'Laeticia',
   from: 'Nasuverse',
   tier: 6,
-  image: 'https://i.imgur.com/Kz0Ra2K.jpg',
+  image: 'https://i.imgur.com/Kz0Ra2K.jpg?1',
   cost: 49,
   desc: 'Laeticia is one again host to the Ruler-class Maiden of France, Jeanne d\'Arc. If you purchase or capture Laeticia first and apply this perk later, Jeanne will keep Laeticia\'s memories, as if she had taken Substitute into her host\'s life; if you purchase Laeticia and this perk simultaneously, you will only get Jeanne. If you have Mordred or anyone else involved in the Grand Holy Grail War, Marie Antoinette or anyone else involved in the Orleans singularity, or Altera or anyone else involved in the Extella timeline alongside Jeanne, they and Jeanne will recognize each other. ',
 })
@@ -735,7 +735,7 @@ waifu_perks.push({
   waifu: 'Semiramis',
   from: 'Nasuverse',
   tier: 7,
-  image: 'https://i.imgur.com/Oiuc8yV.png',
+  image: 'https://i.imgur.com/Oiuc8yV.png?1',
   cost: 50,
   desc: 'Semiramis\'s Noble Phantasm, the Hanging Gardens of "Babylon/ normally requires genuine Mesopotamian materials in its construction. As such, it is impossible to construct in a world where Mesopotamia doesn\'t exist. This perk bypasses that restriction, allowing you to witness the power of the fully armed and operational battle station in any setting.',
 })
@@ -744,7 +744,7 @@ waifu_perks.push({
   waifu: 'Altera',
   from: 'Nasuverse',
   tier: 10,
-  image: 'https://i.imgur.com/08F0QsU.png',
+  image: 'https://i.imgur.com/08F0QsU.png?1',
   cost: 800,
   desc: 'Altera may now access her original form, Velber 02, the White Titan Sefar. She will maintain her original mind and control her size while in this form, without any compulsion to destroy everything or self-destruct after doing so. If you have ten purchases of Bifurcation, Altera will benefit from that perk as well. If you have Demeter or any of the gods Altera killed in this form, or Hakuno or anyone else involved in the Extella timeline alongside Altera, they and Altera will recognize each other. If your Altera has this perk, you will also receive the T6 Servant Altera Larva for free. ',
 })
@@ -753,7 +753,7 @@ waifu_perks.push({
   waifu: ['Altrouge Brunestud', 'Mash Kyrielight'],
   tier: 10,
   from: 'Nasuverse',
-  image: 'https://i.imgur.com/xgs8Ohe.png',
+  image: 'https://i.imgur.com/xgs8Ohe.png?1',
   cost: 1000,
   desc: 'Altrouge\'s or Mash\'s pet. known by the former as Primate Murder and the latter as just Fou, is no mere familiar, but the dormant form of Beast IV (Comparison). When either of its mistresses is purchased or captured, it will appear in its non-sapient, depowered form as their familiar; merely applying a binding will not bypass the purchase of this perk, even if you capture the real Primate Murder/Fou before it\'s depowered. This perk restores its intelligence and powers to their full potential and allows it to assume a humanoid form if desired. You may only have one Beast IV at a time, whether or not this perk is applied; if you have both Altrouge and Mash, they will both take care of it. This perk will not affect Altrouge\'s or Mash\'s own tier ratings.',
 })
@@ -762,7 +762,7 @@ waifu_perks.push({
   waifu: ['Tohsaka Rin', 'lllyasviel von Emzbern '],
   from: 'Nasuverse',
   tier: 7,
-  image: 'https://i.imgur.com/D1P53XP.png',
+  image: 'https://i.imgur.com/D1P53XP.png?1',
   cost: 50,
   desc: 'The perverted and troublesome Mystical Code, capable of taking its user between worlds in the same local multiverse May be given to Rin to create Kaleido Ruby or Iliya to create Prisma Iliya, but not both. If you purchase or capture Rin or Iliya first and apply this perk later, the recipient will not receive any new memories from the Prisma Iliya timeline; if you purchase Rin or Ulya and this perk simultaneously, you will only get the version from the Prisma Iliya timeline. This perk may not be applied to the same Rin as Swapped Vessel, Nameless Red Devil, or Mistress of Heaven, or the same Iliya as Snow Fairy If you already have any of those perks for Rin and want Kaleido Ruby, or have Sitonai and want Prisma Ulya, you may still purchase this, pre-applied to a new Rin or Iliya as appropriate, for 100 credits.',
 })
@@ -771,7 +771,7 @@ waifu_perks.push({
   waifu: 'Luvia Edelfelt',
   from: 'Nasuverse',
   tier: 7,
-  image: 'https://i.imgur.com/oo2RCAH.png',
+  image: 'https://i.imgur.com/oo2RCAH.png?1',
   cost: 80,
   desc: 'The perverted and troublesome Mystical Code, capable of taking its user between worlds in the same local multiverse. May be given to Luvia to create Kaleido Sapphire. If you purchase or capture Luvia first and apply this perk later, she will not receive any new memories from the Prisma Iliya timeline; if you purchase Luvia and this perk simultaneously, you will only get the version from the Prisma Iliya timeline. Miyu Edelfelt is assumed to always have Magical Sapphire, so this perk is not available if you have her. This perk may not be applied to the same Luvia as Scales of Justice. If you already have Astraea and want Kaleido Sapphire (but don\'t have Miyu), you may still purchase this, pre-applied to a second Luvia, for 100 credits.',
 })
@@ -780,7 +780,7 @@ waifu_perks.push({
   waifu: 'Reines El-Melloi Archisorte',
   from: 'Nasuverse',
   tier: 6,
-  image: 'https://i.imgur.com/8tccdTz.png',
+  image: 'https://i.imgur.com/8tccdTz.png?1',
   cost: 30,
   desc: 'Reines is the host to the Rider-class Pseudo-Servant Sima Yi, a general of the Three Kingdoms era as portrayed in Fate/Grand Order. Unlike most other Pseudo-Servants, the two explicitly share her body in FGO canon.',
 })
@@ -789,7 +789,7 @@ waifu_perks.push({
   waifu: 'Jinako Carigiri',
   from: 'Nasuverse',
   tier: 7,
-  image: '',
+  image: 'https://i.imgur.com/ky2TFC6.jpg?1',
   cost: 90,
   desc: 'Jinako is instead the Moon Cancer-class Pseudo-Servant Ganesha, the Hindu god of beginnings and wisdom as portrayed in Fate/Grand Order - and yes, she really is that plump. It\'s canon. If you purchase or capture Jinako first and apply this perk later, Ganesha will keep Jinako\'s memories, as if she had taken Substitute into her host\'s life; if you purchase Jinako and this perk simultaneously, you will only get Ganesha. If you have Lakshmibai or anyone else involved in the fourth Lostbelt, Yuga Kshetra, they will recognize each other.',
 })
@@ -797,7 +797,7 @@ waifu_perks.push({
   title: 'Ruyi Jingu Bang',
   waifu: 'Fujimaru Ritsuka ',
   from: 'Nasuverse',
-  image: '/img/waifu_perks/bang.jpg',
+  image: 'https://i.imgur.com/dBTgBkJ.jpg?1',
   cost: 480,
   desc: 'The Female Master of Chaldea has blended with the Monkey King, Sun Wukong, to become a Lancer-class Pseudo-Servant. We\'re not quite sure how it happened either • the Research Department\'s best guess is that it had something to do with the Journey to the West event and the pair’s extreme compatibility. The Male Master of Chaldea is not eligible for this perk',
 })
@@ -808,10 +808,6 @@ waifu_perks.push({
   image: '',
   cost: 150,
   desc: 'The Round Table, a gathering place for heroes: the round shape of Mash\'s shield and its direct connection to the original Round Table are the catalyst for Chaldea\'s FATE Servant-summoning system. This perk allows you to roll on Fate/Grand Order’s infamous gacha both in- and outside of the Nasuverse. Servants summoned using this perk are not automatically bound, but may be controlled using the same Command Seals that you acquired elsewhere in the Nasuverse or purchased in the Other Controls section. This perk does not alter Mash\'s tier rating. Individuals summoned through Lord Camelot will not award credits upon capture or sale. You get one free 10-roll when you purchase this perk and can earn additional Saint Quartz under the same rules as Exit Stage Left, at a rate of 1 SQ per 5% progression. Saint Quartz may also be purchased with company credits. The rates on offer may be found in the chart to the right. <h3 class="text-lg">Other Gachas</h3><p>If you have at least one character in your retinue who’s from a world that started as a mobile game, that gacha’s roll list will be added to Grand Order\'s. For example, having Eula Lawrence or Beidou will add the Genshin Impact roll list, having Enterprise or Zuikaku will add the Azur Lane roll list, and having Siege or Ch’en will add the Arknights roll list. </p>',
-  table: [
-    [1, 2, 5, 10, 20, 50, 100, 200, 500, 1000],
-    [1, 2, 7, 15, 34, 96, 210, 454, 1251, 2677],
-  ],
 })
 waifu_perks.push({
   title: 'Beautiful Journey',
@@ -826,7 +822,7 @@ waifu_perks.push({
   waifu: 'Kama',
   from: 'Nasuverse',
   tier: 10,
-  image: '',
+  image: 'https://i.imgur.com/tfJAhlu.png?1',
   cost: 800,
   desc: 'Kama\'s other half, Mara, the true Demon King of the Sixth Heaven, has awakened as Beast 11 l/L (Lapse), an Evil of Humanity. Kama/Mara is the true counterpart to Beast lll/R (Rapture) Sessyoin Kiara and qualifies for special Alterzelu Symbiote theming. ',
 })
@@ -853,7 +849,7 @@ waifu_perks.push({
   waifu: 'Reinforce Zwei ',
   from: 'Magical Girl Lyrical Nanoha',
   tier: 8,
-  image: '/img/waifu_perks/eins.jpg',
+  image: 'https://i.imgur.com/arMoaPl.png?1',
   cost: 150,
   desc: 'Instead of the second Reinforce, you have the original. This upgrades the Tome of the Night Sky to its full power, including a non-rampant NachtWal. (NachtWal is not a waifu.) If you have Reinforce Zwei and all four Wolkenritter, this upgrade only costs 100. If you captured Reinforce Zwei or there was any amount of time between buying her and this upgrade, Zwei will gain the complete Tome, NachtWal, and Eins\' full-size adult form, costumes, and memories, but her personality will not be affected. ',
 })
@@ -861,7 +857,7 @@ waifu_perks.push({
   title: 'Duotheism',
   waifu: 'Kaname Madoka & Akemi Homura',
   from: 'Madoka Magica',
-  image: '/img/waifu_perks/duo.jpg',
+  image: 'https://i.imgur.com/xBJElWv.png?1',
   cost: 11111,
   discount: 150,
   desc: 'The two lead magical girls have ascended into their goddess forms, becoming Ultimate Madoka ("Madokami") and Akuma Homura (“Homucifer”). You must have both Madoka and Homura to buy this perk as an upgrade; the single T11 ticket will pay for both. Madoka will usually be the sole queen of an Alterzelu Symbiote swarm, due to Homura\'s dedication to her partner, and qualifies for special theming. When this is purchased as an upgrade, the two will experience no changes to their personalities. If this is purchased outright, Akuma Homura may instead have her Original Series or "Moemura" personalities, depending on contractor preference. Madoka\'s divine ascension was the result of a wish to grant hope to all magical girls. A Madoka captured normally will already be a magical girl and thus cannot make a second wish, so some builds may find this perk impossible to earn. In that event, if you already have Homura in your retinue, and capture Madoka before or during Walpurgisnacht’s attack, this perk wil bel earned when Madoka joins the battle.',
@@ -876,11 +872,11 @@ waifu_perks.push({
   desc: 'A duplicate of the Mirror\'s Cup prize Mitama crafted using energy from the Mirror Witch\'s Labyrinth, then stolen by one of her Familiars copying Shizuku and her magic. The original opened a portal that brought Nanoha, Fate, and Hayate to Kamihama City. With this orb, the size and range of the portals Shizuku can create are increased, enabling her to open portals to other worlds and travel the multiverse instead of just one planet. ',
 })
 waifu_perks.push({
-  title: 'Uwasa Of Kamihama\'s Holy Maiden',
+  title: 'Uwasa Of Kamihamas Holy Maiden',
   waifu: 'Tomoe Mami ',
   from: 'Madoka Magica',
   tier: 8,
-  image: '/img/waifu_perks/maiden.jpg',
+  image: 'https://i.imgur.com/FkgLJiC.png?1',
   cost: 150,
   desc: 'Mami is fused with the Uwasa Of Kamihama\'s Holy Maiden, greatly increasing her magical power and stamina. She can freely switch between it and her normal magical girl outfit, with the change being purely cosmetic. ',
 })
@@ -889,7 +885,7 @@ waifu_perks.push({
   waifu: 'Chibiusa',
   from: 'Sailor Moon',
   tier: 8,
-  image: '/img/waifu_perks/moon.jpg',
+  image: 'https://i.imgur.com/XnXrpIo.png?1',
   cost: 100,
   desc: 'Chibiusa is instead Black Lady, her brainwashed Black Moon alter-ego with massive parental issues. Black Lady qualifies for special Alterzelu Symbiote theming.lf you captured Chibiusa or there was any amount of time between buying her and this upgrade, she will gain Black Lady\'s form, costumes, and additional power, but her personality will not be affected. Strangely, Black Lady x Mistress 9 is a frequent ship in the Sailor Moon fanart community, despite the two never meeting or even appearing in the same seasons.',
 })
@@ -898,7 +894,7 @@ waifu_perks.push({
   waifu: 'Tomoe Hotaru',
   from: 'Sailor Moon',
   tier: 9,
-  image: '',
+  image: 'https://i.imgur.com/TyYQzwt.png?1',
   cost: 300,
   desc: 'Hotaru is instead the Messiah of Silence, Mistress 9, with the corresponding power boost and no connection to Pharaoh 90. Mistress 9 qualifies for special Alterzelu Symbiote theming. If you captured Hotaru or there was any amount of time between buying her and this upgrade, she will gain Mistress 9\'s form, costumes, and additional power, but her personality will not be affected. Strangely, Black Lady x Mistress 9 is a frequent ship in the Sailor Moon fanart community, despite the two never meeting or even appearing in the same seasons.',
 })
@@ -907,7 +903,7 @@ waifu_perks.push({
   waifu: 'Tsukino Usagi',
   from: 'Sailor Moon',
   tier: 11,
-  image: '',
+  image: 'https://i.imgur.com/6onERUp.png?1',
   cost: 11111,
   discount: 500,
   desc: 'deThe 90s anime made Sailor Moon popular worldwide, but its divergent narrative left out lore from the later manga arcs that made the title character even more potent than she already was. This perk elevates your anime version of Usagi to the same heights. If you capture the manga/Crystal version of Usagi, she will always have this perk. Both versions of Usagi qualify for special Alterzelu Symbiote theming.sc',
@@ -917,7 +913,7 @@ waifu_perks.push({
   waifu: 'Kohinata Miku',
   from: 'Symphogear',
   tier: 9,
-  image: '',
+  image: 'https://i.imgur.com/eGO8M3L.png?1',
   cost: 300,
   desc: 'Miku is now the host to Shem-Ha Mephorash, the devil who betrayed her fellow Custodians, attempted to enslave humanity, and survived her defeat by embedding herself within human language. Shem-Ha may instead be purchased separately, in her own body, for 500 credits. Both versions of Shem-Ha qualify for special Alterzelu Symbiote theming. ',
 })

@@ -28,9 +28,11 @@
           </div>
         </div>
         <div class="flex justify-center gap-4">
-          <Button v-if="!isAlredyBought(char.uid)" size="Small" label="buy" @click="buyCompanion(char)" />
+          <template v-if="!isAlredyBought(char.uid)">
+            <Button size="Small" label="buy" @click="buyCompanion(char)" />
+            <Button size="Small" label="capture" @click="captureCompanion(char)" />
+          </template>
           <Button v-else size="Small" label="undo" @click="undoBuying(char.uid)" />
-          <Button size="Small" label="capture" @click="captureCompanion(char)" />
           <a v-if="char.sourceImage" class="px-1 rounded bg-blue-600" :href="char.sourceImage" target="_blank" rel="noopener noreferrer">Image Source</a>
         </div>
       </div>

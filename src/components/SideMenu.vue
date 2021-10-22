@@ -50,6 +50,9 @@
     <router-link class="icon-text-btn mx-2" to="/about">
       <fa-solid:info-circle />About
     </router-link>
+    <router-link class="icon-text-btn mx-2" to="/changelog">
+      <entypo:new />Changelog
+    </router-link>
   </div>
 </template>
 

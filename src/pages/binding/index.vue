@@ -91,16 +91,37 @@
       </PerkCard>
     </div>
     <Modal v-if="showElements" label="Choose Element" @click="toggleElements">
-      <div class="h-full md:h-3/4 bg-gray-200 dark:bg-gray-600 overflow-y-auto min-h-0 flex flex-col gap-2">
+      <div class="h-full md:h-3/4 bg-gray-300 dark:bg-gray-600 overflow-y-auto min-h-0 flex flex-col gap-2">
         <div
           v-for="element in shroudElements"
           :key="element.title"
-          class="flex flex-col gap-1 bg-gray-300 dark:bg-gray-700 m-2 rounded cursor-pointer"
-          @click="currentBinding.element = element.title"
+          class="flex flex-col gap-1 m-2 rounded cursor-pointer p-2"
+          bg="gray-200 dark:gray-700 hover:(gray-100 dark:gray-800)"
+          @click="toggleCurrentElement(element.title)"
         >
-          <div v-for="item, key in element" :key="item">
-            <span class="px-2 text-orange-500 dark:text-orange-300 font-semibold">{{ key }}</span>:
-            <span>{{ item }}</span>
+          <h3 class="relative text-lg font-semibold text-center">
+            {{ element.title }}
+            <fa-solid:check v-if="currentBinding?.element === element.title" class="text-green-500 absolute top-1 right-1" />
+          </h3>
+          <div>
+            <span class="px-2 text-orange-500 dark:text-orange-300 font-semibold">Elemental Ability</span>:
+            <span>{{ element['Elemental Ability'] }}</span>
+          </div>
+          <div>
+            <span class="px-2 text-orange-500 dark:text-orange-300 font-semibold">Body Effects</span>:
+            <span>{{ element['Body Effects'] }}</span>
+          </div>
+          <div>
+            <span class="px-2 text-orange-500 dark:text-orange-300 font-semibold">Streamlined costume features</span>:
+            <span>{{ element['Streamlined costume features'] }}</span>
+          </div>
+          <div>
+            <span class="px-2 text-orange-500 dark:text-orange-300 font-semibold">Heavy costume features</span>:
+            <span>{{ element['Heavy costume features'] }}</span>
+          </div>
+          <div>
+            <span class="px-2 text-orange-500 dark:text-orange-300 font-semibold">Freebies</span>:
+            <span>{{ element.Freebies }}</span>
           </div>
         </div>
       </div>
@@ -139,7 +160,13 @@ function choose(bin: Binding, count = 0, cost: number) {
     }
   }
   else {
-    binding.value.push({ title: bin.title, cost, count, freebies: bin.freebies })
+    const secondary = bin.element
+    if (bin.element) {
+      const i = findIndex(shroudElements, { title: bin.element })
+      bin.freebies = shroudElements[i].freebies
+      console.log(bin.freebies)
+    }
+    binding.value.push({ title: bin.title, secondary, cost, count, freebies: bin.freebies })
     allEffects.value.push(bin.title)
     flags.noBindings = false
   }
@@ -172,5 +199,14 @@ function chooseLure(lure: Binding) {
 function chooseElement(bnd: Binding) {
   showElements.value = true
   currentBinding.value = bnd
+}
+
+function toggleCurrentElement(title: string) {
+  if (currentBinding.value) {
+    if (currentBinding.value.element === title)
+      currentBinding.value.element = ''
+    else
+      currentBinding.value.element = title
+  }
 }
 </script>

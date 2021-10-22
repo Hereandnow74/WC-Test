@@ -21,18 +21,48 @@
     </h3>
     <div
       v-for="waifu in waifu_perks"
+      :id="waifu.title"
       :key="waifu.title"
-      class="self-center bg-amber-200 dark:bg-amber-800 p-2 max-w-screen-md"
+      class="relative self-center p-2 max-w-screen-md cursor-pointer"
+      bg="amber-200 dark:amber-800"
+      border="2 hover:amber-400 gray-800"
       @click="pickWaifuPerk(waifu)"
     >
       <img
         v-if="waifu.image !==''"
-        class="max-h-[300px] max-w-1/2 object-contain ml-auto inline-block float-right"
+        class="max-h-[300px] max-w-1/2 object-contain ml-auto pl-1 inline-block float-right"
         :src="waifu.image"
         :alt="waifu.title"
-      >
-      <h3 class="text-lg font-bold">
+      />
+      <icon-park-outline:full-screen-one
+        v-if="waifu.image !==''"
+        class="absolute z-10 top-3 right-3 text-gray-200 hover:text-blue-400 cursor-pointer mix-blend-difference"
+        @click.stop="() => (showModal = true, modalImage=waifu.image)"
+      />
+      <table v-if="waifu.title === 'Lord Camelot'" class="float-right m-2">
+        <thead>
+          <th class="pr-4 border-2 border-gray-700">
+            Credits Paid
+          </th>
+          <th class="pr-4 border-2 border-gray-700">
+            Saint Quartz
+          </th>
+        </thead>
+        <tr v-for="n in 10" :key="n">
+          <td class="border-2 border-gray-700">
+            {{ gachaTable[0][n - 1] }}
+          </td>
+          <td class="border-2 border-gray-700">
+            {{ gachaTable[1][n - 1] }}
+          </td>
+        </tr>
+      </table>
+      <h3 class="text-lg font-bold relative">
         {{ waifu.title }}
+        <fa-solid:check
+          v-if="findIndex(waifuPerks, { title: waifu.title }) !== -1"
+          class="inline text-green-500"
+        />
       </h3>
       <div><span class="font-bold">Waifu:</span> {{ waifu.waifu }} from {{ waifu.from }}</div>
       <div class="flex gap-4">
@@ -41,11 +71,16 @@
       </div>
       <Desc :desc="waifu.desc" class="p-0" />
     </div>
+    <div v-if="showModal" class="fixed inset-0 bg-black bg-opacity-10 flex place-content-center" @click="showModal = false">
+      <div class="overflow-auto max-h-screen max-w-screen flex place-content-center">
+        <img class="object-none" :src="modalImage" alt="full image">
+      </div>
+    </div>
   </div>
 </template>
 
 <script lang='ts' setup>
-import { findIndex } from 'lodash-es'
+import { findIndex, intersection } from 'lodash-es'
 import { waifu_perks, WaifuPerk } from '~/data/waifu_perks'
 import { genericPerks, genericDesc, Perk } from '~/data/talents'
 import { useTooltips } from '~/logic/misc'
@@ -55,23 +90,36 @@ import PerkCard from '~/components/PerkCard.vue'
 
 const { waifuPerks, companions, genericWaifuPerks, allEffects } = useStore()
 
+const gachaTable = [
+  [1, 2, 5, 10, 20, 50, 100, 200, 500, 1000],
+  [1, 2, 7, 15, 34, 96, 210, 454, 1251, 2677],
+]
+
+const showModal = ref(false)
+const modalImage = ref('')
+
 function isAvailable(perk: WaifuPerk): boolean {
   if (findIndex(companions.value, { name: typeof perk.waifu === 'string' ? perk.waifu : perk.waifu[0] }) !== -1)
     return true
-  else return false
+  else return true
 }
 
 function genericIsAvailable(perk: Perk): boolean {
-  return true
+  if (!perk.whitelist) { return true }
+  else {
+    if (intersection(perk.whitelist, allEffects.value).length === (perk.needed || perk.whitelist.length))
+      return true
+  }
+
+  return false
 }
 
 function pickWaifuPerk(perk: WaifuPerk) {
   if (isAvailable(perk)) {
     const ind = findIndex(waifuPerks.value, { title: perk.title })
-    if (ind !== -1)
-      waifuPerks.value.splice(ind, 1)
+    if (ind !== -1) waifuPerks.value.splice(ind, 1)
     else
-      waifuPerks.value.push({ title: perk.title, waifu: perk.waifu, cost: perk.cost })
+      waifuPerks.value.push({ title: perk.title, waifu: perk.waifu[0] || perk.waifu, cost: perk.cost || 0, refund: perk.discount || 0 })
   }
 }
 
