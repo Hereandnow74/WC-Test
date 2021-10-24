@@ -93,4 +93,4 @@ export async function getChars() {
 
 const str = Object.keys(TOOLTIPS).sort((a, b) => b.length - a.length).join('|')
 export const TOOLTIPS_REG = new RegExp(str, 'g')
-export const LINKS_REG = new RegExp(Object.keys(LINKS.value).join('|'), 'g')
+export const LINKS_REG = new RegExp(Object.keys(LINKS.value).sort((a, b) => b.length - a.length).join('|'), 'g')

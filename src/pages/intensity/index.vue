@@ -32,7 +32,7 @@
           Requires:
           <Enum :list="rule.whitelist.map(x => ({title: x}))" path="/intensity" />
         </div>
-        <bi:check-lg
+        <fa-solid:check
           v-if="allEffects.includes(rule.title)"
           class="absolute right-0 top-0 m-2 text-green-500"
         />

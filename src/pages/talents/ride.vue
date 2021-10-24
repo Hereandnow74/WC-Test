@@ -24,7 +24,7 @@
             bg-color="bg-blue-500"
             @click.stop="pickRide(ride)"
           />
-          <bi:check-lg v-if="findIndex(ridePerks, {title: ride.title}) !== -1" class="absolute top-1 right-1 text-green-500" />
+          <fa-solid:check v-if="findIndex(ridePerks, {title: ride.title}) !== -1" class="absolute top-1 right-1 text-green-500" />
         </h3>
         <div v-if="ride.source" class="px-2">
           <span class="font-semibold">From:</span> {{ ride.source }}

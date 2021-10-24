@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col gap-2 pb-8 md:p-2">
+  <div ref="waifuList" class="flex flex-col gap-2 pb-8 md:p-2">
     <Desc :desc="genericDesc" class="p-2 mb-4 max-w-4xl mx-auto bg-violet-200 dark:bg-violet-900" />
     <h3 class="text-xl font-semibold text-center">
       Generic Waifu Perks
@@ -31,7 +31,7 @@
       <img
         v-if="waifu.image !==''"
         class="max-h-[300px] max-w-1/2 object-contain ml-auto pl-1 inline-block float-right"
-        :src="waifu.image"
+        :data-src="waifu.image"
         :alt="waifu.title"
       />
       <icon-park-outline:full-screen-one
@@ -83,7 +83,7 @@
 import { findIndex, intersection } from 'lodash-es'
 import { waifu_perks, WaifuPerk } from '~/data/waifu_perks'
 import { genericPerks, genericDesc, Perk } from '~/data/talents'
-import { useTooltips } from '~/logic/misc'
+import { lazyLoadImg, useTooltips } from '~/logic/misc'
 import { useStore } from '~/store/store'
 
 import PerkCard from '~/components/PerkCard.vue'
@@ -96,7 +96,10 @@ const gachaTable = [
 ]
 
 const showModal = ref(false)
+const waifuList = ref<HTMLElement|null>(null)
 const modalImage = ref('')
+
+onMounted(() => lazyLoadImg(waifuList.value))
 
 function isAvailable(perk: WaifuPerk): boolean {
   if (findIndex(companions.value, { name: typeof perk.waifu === 'string' ? perk.waifu : perk.waifu[0] }) !== -1)
@@ -117,16 +120,19 @@ function genericIsAvailable(perk: Perk): boolean {
 function pickWaifuPerk(perk: WaifuPerk) {
   if (isAvailable(perk)) {
     const ind = findIndex(waifuPerks.value, { title: perk.title })
-    if (ind !== -1) waifuPerks.value.splice(ind, 1)
-    else
-      waifuPerks.value.push({ title: perk.title, waifu: perk.waifu[0] || perk.waifu, cost: perk.cost || 0, refund: perk.discount || 0 })
+    if (ind !== -1) { waifuPerks.value.splice(ind, 1) }
+    else {
+      waifuPerks.value.push(
+        { title: perk.title, waifu: perk.waifu[0] || perk.waifu, cost: perk.cost || 0, refund: perk.discount || 0 })
+    }
   }
 }
 
 function pickGenericPerk(perk: Perk) {
   if (genericIsAvailable(perk)) {
     if (allEffects.value.includes(perk.title)) {
-      const heritageToDelete = genericWaifuPerks.value.splice(findIndex(genericWaifuPerks.value, { title: perk.title }))
+      const heritageToDelete = genericWaifuPerks.value.splice(
+        findIndex(genericWaifuPerks.value, { title: perk.title }))
       heritageToDelete.forEach(x => allEffects.value.splice(allEffects.value.indexOf(x.title), 1))
     }
     else {

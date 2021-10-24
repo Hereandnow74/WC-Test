@@ -25,7 +25,7 @@
         <CompanionCard v-for="char in allUserCharacters" :key="char.name" :char="char" :is-user-char="true" />
       </div>
     </Foldable>
-    <div class="flex flex-wrap flex-grow overflow-y-auto pb-8">
+    <div ref="waifuList" class="flex flex-wrap flex-grow overflow-y-auto pb-8">
       <CompanionCard
         v-for="{ item: char } in filteredCharacters"
         :key="char.uid"
@@ -46,7 +46,7 @@
 import Fuse from 'fuse.js'
 import { useStore } from '~/store/store'
 
-import { toggleShowAddCharacter, showAddCharacter } from '~/logic'
+import { toggleShowAddCharacter, showAddCharacter, lazyLoadImg } from '~/logic'
 import CompanionCard from '~/components/CompanionCard.vue'
 
 interface Character {
@@ -70,6 +70,7 @@ const charArr = ref([] as Character[])
 
 const editMode = ref(false)
 const characterToEdit = ref({})
+const waifuList = ref<HTMLElement|null>(null)
 
 const tierOptions = [
   { name: 'Any', value: 0 },
@@ -108,6 +109,8 @@ const filteredCharacters = computed(() => {
   if (tier.value === 0) return fuse.value.search(search.value, { limit: limit.value })
   else return charArr.value.filter(char => char.tier === tier.value).slice(0, limit.value).map(x => ({ item: x }))
 })
+
+watch(filteredCharacters, () => nextTick(() => lazyLoadImg(waifuList.value)))
 
 const allUserCharacters = computed(() => userCharacters.value.concat(localUserCharacters.value))
 

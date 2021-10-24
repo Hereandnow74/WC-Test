@@ -4,6 +4,15 @@
       Changelog
     </h2>
     <h3 class="text-lg font-semibold">
+      Data
+    </h3>
+    <ul class="list-decimal list-inside">
+      <li>Lazy loading for images</li>
+      <li>Free stuff gets properly deleted if you unselect perk that gave them.</li>
+      <li>Sorting for Worlds by name and rating</li>
+      <li>Added most of Heritage freebies except Transhuman types, formatting of heritage text</li>
+    </ul>
+    <h3 class="text-lg font-semibold">
       22 October 2021
     </h3>
     <ul class="list-decimal list-inside">
@@ -19,6 +28,7 @@
       <li>You will receive free talents and defenses in Bindings, but they will not be deleted if you unselect Binding keep that in mind. </li>
       <li>You can view Ritual circle parameters in Bindings</li>
       <li>Some small stuff's that I don't remember</li>
+      <li>Changelog</li>
       <li>Added new bugs</li>
     </ul>
   </div>

@@ -117,24 +117,10 @@ const flags = reactive({
 })
 
 // Give all the freebies
-watchEffect(() => {
-  binding.value.forEach((x) => {
-    if (x.freebies) {
-      for (const [key, perk] of Object.entries(x.freebies)) {
-        perk.forEach((n) => {
-          const ind = findIndex(allForSave[key].value, { title: n })
-          if (ind === -1) { allForSave[key].value.push({ title: n, cost: 0 }) }
-          else {
-            if (allForSave[key].value[ind].count)
-              allForSave[key].value[ind].count += 1
-            else
-              allForSave[key].value[ind].cost = 0
-          }
-        })
-      }
-    }
-  })
-})
+// watchEffect(() => {
+//   binding.value.forEach(addFreebies)
+//   heritage.value.forEach(addFreebies)
+// })
 
 const bindingCost = computed(() => binding.value.reduce((a, x) => a += x.cost, 0))
 const heritageCost = computed(() => heritage.value.reduce((a, x) => a += x.cost === 11111 ? 0 : x.cost, 0))
@@ -234,5 +220,6 @@ export function useStore() {
     luresCost,
     companionsCost,
     budgetMods,
+    allForSave,
   }
 }

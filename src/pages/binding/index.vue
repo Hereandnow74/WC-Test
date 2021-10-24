@@ -133,7 +133,7 @@
 <script lang='ts' setup>
 import { findIndex, intersection } from 'lodash-es'
 import { desc, bindings, Binding, lureDesc, lures, lureExpansionDesc, lureExpansions, shroudElements } from '~/data/binding'
-import { genericChoose, useTooltips } from '~/logic/misc'
+import { addFreebies, deleteFreebies, useTooltips } from '~/logic/misc'
 import { useStore } from '~/store/store'
 import PerkCard from '~/components/PerkCard.vue'
 import RitualCircle from '~/components/RitualCircle.vue'
@@ -154,8 +154,11 @@ function choose(bin: Binding, count = 0, cost: number) {
       binding.value[ind].cost = cost
     }
     else {
-      const del = binding.value.splice(ind)
-      del.forEach(x => allEffects.value.splice(allEffects.value.indexOf(x.title), 1))
+      const toDel = binding.value.splice(ind)
+      toDel.forEach((x) => {
+        if (x.freebies) deleteFreebies(x.freebies)
+        allEffects.value.splice(allEffects.value.indexOf(x.title), 1)
+      })
       if (binding.value.length === 0) flags.noBindings = true
     }
   }
@@ -164,10 +167,10 @@ function choose(bin: Binding, count = 0, cost: number) {
     if (bin.element) {
       const i = findIndex(shroudElements, { title: bin.element })
       bin.freebies = shroudElements[i].freebies
-      console.log(bin.freebies)
     }
     binding.value.push({ title: bin.title, secondary, cost, count, freebies: bin.freebies })
     allEffects.value.push(bin.title)
+    if (bin.freebies) addFreebies(bin.freebies)
     flags.noBindings = false
   }
 }
@@ -193,7 +196,18 @@ function isLureAllowed(lure: Binding): boolean {
 }
 
 function chooseLure(lure: Binding) {
-  genericChoose(lure, isLureAllowed, luresBought.value)
+  const { allEffects } = useStore()
+  if (isLureAllowed(lure)) {
+    const ind = findIndex(luresBought.value, { title: lure.title })
+    if (ind === -1) {
+      allEffects.value.push(lure.title)
+      luresBought.value.push({ title: lure.title, cost: lure.cost })
+    }
+    else {
+      const del = luresBought.value.splice(ind)
+      del.forEach(x => allEffects.value.splice(allEffects.value.indexOf(x.title), 1))
+    }
+  }
 }
 
 function chooseElement(bnd: Binding) {

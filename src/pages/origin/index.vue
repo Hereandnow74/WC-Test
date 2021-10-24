@@ -59,7 +59,7 @@
               </button>
             </div>
             <div v-if="startingOrigin.title === item.title">
-              <bi:check-lg />
+              <fa-solid:check class="text-green-500" />
             </div>
           </div>
           <img class="max-h-[400px] w-1/2 object-contain self-center inline-block float-right mt-4" :src="item.image" :alt="item.title">

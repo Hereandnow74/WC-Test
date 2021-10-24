@@ -41,7 +41,7 @@ const listComputed = computed(() => {
 
 const listTitles = computed(() => {
   if (props.list.length > 0 && typeof props.list[0] === 'object')
-    return props.list.map(x => x.title + (x.secondary ? `(${x.secondary})` : '') + (x.count ? `(x${x.count})` : ''))
+    return props.list.map(x => x.title + (x.secondary ? `(${x.secondary})` : '') + (x.count && x.count > 1 ? `(x${x.count})` : ''))
   return []
 })
 </script>

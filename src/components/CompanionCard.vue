@@ -4,7 +4,7 @@
   >
     <div class="bg-gray-800 border border-gray-800 h-full flex flex-col rounded">
       <div class="flex-grow relative">
-        <img class="rounded absolute object-cover h-full w-full object-top" :src="char.image" :alt="char.name">
+        <img class="rounded absolute object-cover h-full w-full object-top" :data-src="char.image" :alt="char.name">
         <icon-park-outline:full-screen-one
           class="absolute top-1 right-1 hover:text-blue-400 cursor-pointer mix-blend-difference"
           @click="() => (showModal = true, modalImage=char.image)"
