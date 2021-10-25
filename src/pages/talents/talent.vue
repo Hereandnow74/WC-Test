@@ -45,7 +45,7 @@ companions.value.forEach(x => targetList.value.push({ name: x.name, value: x.nam
 function isAvailable(tlt: Talent): boolean {
   if (!tlt.whitelist) { return true }
   else {
-    if (intersection(tlt.whitelist, allEffects.value).length === (tlt.needed ? tlt.needed : tlt.whitelist.length))
+    if (intersection(tlt.whitelist, allEffects.value).length >= (tlt.needed || tlt.whitelist.length))
       return true
   }
 

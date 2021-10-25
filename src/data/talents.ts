@@ -6,11 +6,11 @@ export interface Ride {
   cost: number
   desc: string
   source?: string
-  addons?: (string|number)[][]
+  addons?: (string | number)[][]
   requires?: string
   whitelist?: string[]
   flag?: string
-  variants?: (string|number)[][]
+  variants?: (string | number)[][]
   example?: string
 }
 
@@ -321,18 +321,20 @@ rides.push({
   cost: 5,
   requires: 'at least one Replica Showroom vehicle',
   flag: 'hasARide',
-  desc: `We at the company fully realize that, in some cases, you and your waifus may lack the necessary skills needed to properly operate or maintain your chosen ride, which would make using them impractical at best and impossible at worst. To rectify that, for a small fee you can opt to have your newly purchased waifus undergo a 24 hour training course, during which all the skills needed to properly operate, repair, and maintain all your purchased rides will be downloaded into their brains. Delivery of waifus will be delayed until completion of the course
-For captured or pre-existing purchased waifus, you can opt to have them undergo an 8-hour training program via a company-approved VR system, during which they will gain the skills needed for proper manning of your rides. Purchase of additional vehicles may require further courses, should the tech bases be significantly different.`,
+  desc: `
+<p>We at the company fully realize that, in some cases, you and your waifus may lack the necessary skills needed to properly operate or maintain your chosen ride, which would make using them impractical at best and impossible at worst. To rectify that, for a small fee you can opt to have your newly purchased waifus undergo a 24 hour training course, during which all the skills needed to properly operate, repair, and maintain all your purchased rides will be downloaded into their brains. Delivery of waifus will be delayed until completion of the course</p>
+<p>For captured or pre-existing purchased waifus, you can opt to have them undergo an 8-hour training program via a company-approved VR system, during which they will gain the skills needed for proper manning of your rides. Purchase of additional vehicles may require further courses, should the tech bases be significantly different.</p>`,
 })
 
 rides.push({
   title: 'Catch-A-Ride Crew Production Program',
   cost: 20,
   whitelist: ['Catch-A-Ride Crew Training Program'],
-  desc: `Your basic manpower problems are over. Now your rides come with a full crew of company-issued clones, Each one is equivalent to a T2 waifu and comes with all the skills needed to properly maintain and repair your ride, while also being capable of rapidly acclimating to any upgrades that may be done. Combat-wise they are equal to the average soldier in a modern professional military and may require further training to be an effective combat force in a given alternate world.
-All clones come with a demi-tattoo, establishing them as yours. See the Offspring section below. They will not provide points should a higher binding be applied.
-These clones initially lack their own sense of identity, but over time will come to develop their own unique personalities, interests and dislikes, as well deciding names for themselves, if they have not been given one. This process is hastened via interactions with yourself and your waifus, even influencing their own development.
-For exceptionally large vehicles, typically those that cost 300 credits or more, this perk will be applied for free. If you have such a vehicle, a clone production facility will be integrated into the ship so you may replace your losses manually. This facility may also be used for other cloning programs if necessary. Otherwise, new replacement crew members will be shipped to you like any other purchased waifu.`,
+  desc: `
+<p>Your basic manpower problems are over. Now your rides come with a full crew of company-issued clones, Each one is equivalent to a T2 waifu and comes with all the skills needed to properly maintain and repair your ride, while also being capable of rapidly acclimating to any upgrades that may be done. Combat-wise they are equal to the average soldier in a modern professional military and may require further training to be an effective combat force in a given alternate world.</p>
+<p>All clones come with a demi-tattoo, establishing them as yours. See the Offspring section below. They will not provide points should a higher binding be applied.</p>
+<p>These clones initially lack their own sense of identity, but over time will come to develop their own unique personalities, interests and dislikes, as well deciding names for themselves, if they have not been given one. This process is hastened via interactions with yourself and your waifus, even influencing their own development.</p>
+<p>For exceptionally large vehicles, typically those that cost 300 credits or more, this perk will be applied for free. If you have such a vehicle, a clone production facility will be integrated into the ship so you may replace your losses manually. This facility may also be used for other cloning programs if necessary. Otherwise, new replacement crew members will be shipped to you like any other purchased waifu.</p>`,
 })
 
 export const homeDesc = 'Like all company-supplied powers, the powers granted by these perks cannot be nullified, copied, or stolen.'
@@ -341,18 +343,20 @@ export const homes: HomePerk[] = []
 homes.push({
   title: 'Pocket Space',
   cost: 5,
-  desc: `You now possess a timeless extradimensional inventory space. This inventory may be accessed via an app on your smart device, Apportation, or certain Heritage perks. Transferring an item into the inventory via the app requires it to be in contact with you before transport. An item pulled from the inventory via the app will be deposited into your hand or within one meter of your position.
-Your Inventory has a volume of 1m by 1m by 3m. Living beings may be stored within, but not any resisting or unwilling ones. Stamped or otherwise bound retinue members always count as willing and unresisting. Time does not pass within your Inventory, for good or ill.`,
+  desc: `
+<p>You now possess a timeless extradimensional inventory space. This inventory may be accessed via an app on your smart device, Apportation, or certain Heritage perks. Transferring an item into the inventory via the app requires it to be in contact with you before transport. An item pulled from the inventory via the app will be deposited into your hand or within one meter of your position.</p>
+<p>Your Inventory has a volume of 1m by 1m by 3m. Living beings may be stored within, but not any resisting or unwilling ones. Stamped or otherwise bound retinue members always count as willing and unresisting. Time does not pass within your Inventory, for good or ill.</p>`,
 })
 
 homes.push({
   title: 'Pocket Apartment',
   cost: 20,
   whitelist: ['Pocket Space'],
-  desc: `A 100 sq m extradimensional residence, for when you need a place to crash. It has all the basics: two medium bedrooms, one bathroom, a living area, kitchenette, and closet space. All characters with alternate outfits, shown in any official source, will find them stored in their room or closet.
-Access it by plopping a portal onto any reasonably flat surface. Only one portal may exist at a time and you may close it with a thought at any time, whether you’re in or out of the apartment; if you’re inside when the portal is closed, the new exit must be reasonably close to the previous entrance.
-Some independent multiverse travelers may enter your universe directly, but only requires dedicated and deliberate effort and a beacon to follow.
-Your inventory becomes a sealed vault inside the apartment. You may open the vault while in your Pocket Space, but doing so subjects its contents to the passage of time. If you or a resisting or unwilling subject is inside the vault when it is sealed again, time will continue to pass.`,
+  desc: `
+<p>A 100 sq m extradimensional residence, for when you need a place to crash. It has all the basics: two medium bedrooms, one bathroom, a living area, kitchenette, and closet space. All characters with alternate outfits, shown in any official source, will find them stored in their room or closet.</p>
+<p>Access it by plopping a portal onto any reasonably flat surface. Only one portal may exist at a time and you may close it with a thought at any time, whether you’re in or out of the apartment; if you’re inside when the portal is closed, the new exit must be reasonably close to the previous entrance.</p>
+<p>Some independent multiverse travelers may enter your universe directly, but only requires dedicated and deliberate effort and a beacon to follow.</p>
+<p>Your inventory becomes a sealed vault inside the apartment. You may open the vault while in your Pocket Space, but doing so subjects its contents to the passage of time. If you or a resisting or unwilling subject is inside the vault when it is sealed again, time will continue to pass.</p>`,
 })
 
 homes.push({
@@ -380,8 +384,9 @@ homes.push({
   title: 'Life’s A Beach',
   cost: 10,
   whitelist: ['Sweet Home'],
-  desc: `Your Sweet Home now has a lawn - 15.2 sq km of it. A control center deep in the apartment will allow you to customize the landscape however you like: the default is a tropical island paradise with a standard equatorial day/night cycle and perfect weather all the time. This is the same control system as what Grand Manor provides. With this perk, your starting position will be within 30 minutes’ walk of the mansion, with a clear view of and path toward your destination so you don’t get lost. However you set the landscape, the edge of your pocket dimension will be selectively-permeable, allowing biome-appropriate wildlife to wander in from worlds that you and your retinue have visited or call home, without any issues from invasive species, implanted transmitters, pollutants, unwanted predators, etc. For safety reasons, all personnel and important items will be ejected from areas undergoing rearrangement.
-If you bring a vehicle into the pocket dimension via Rainbow Bridge or some other method, regardless of whether the vehicle was purchased through this catalog, your dimension will have an appropriately-sized garage, dock, or hangar for it. If you have a starship from Catch-a-Ride, Heavenbuilt Proto, or third-party sources, it will be able to enter and land in your pocket universe even without a multiversal drive. Especially large dreadnoughts may require some geographic rearrangement first.`,
+  desc: `
+<p>Your Sweet Home now has a lawn - 15.2 sq km of it. A control center deep in the apartment will allow you to customize the landscape however you like: the default is a tropical island paradise with a standard equatorial day/night cycle and perfect weather all the time. This is the same control system as what Grand Manor provides. With this perk, your starting position will be within 30 minutes’ walk of the mansion, with a clear view of and path toward your destination so you don’t get lost. However you set the landscape, the edge of your pocket dimension will be selectively-permeable, allowing biome-appropriate wildlife to wander in from worlds that you and your retinue have visited or call home, without any issues from invasive species, implanted transmitters, pollutants, unwanted predators, etc. For safety reasons, all personnel and important items will be ejected from areas undergoing rearrangement.</p>
+<p>If you bring a vehicle into the pocket dimension via Rainbow Bridge or some other method, regardless of whether the vehicle was purchased through this catalog, your dimension will have an appropriately-sized garage, dock, or hangar for it. If you have a starship from Catch-a-Ride, Heavenbuilt Proto, or third-party sources, it will be able to enter and land in your pocket universe even without a multiversal drive. Especially large dreadnoughts may require some geographic rearrangement first.</p>`,
 })
 
 homes.push({
@@ -425,16 +430,18 @@ homes.push({
   ],
   flag: 'hasARide',
   needed: 1,
-  desc: `The central console for your mansion now includes the body-modification functions for everyone inside. If you have Basic Tempest Runes, take its expansion Advanced Tempest Runes (Body) for free. If you already have Advanced Tempest Runes (Body) when you buy Adjustment Field, take its expansion Advanced Tempest Runes (Mind) for free. If you already have Advanced Tempest Runes (Mind) when you buy Adjustment Field, you may claim a discount equal to the total value of all Tempest Runes you have already purchased. This perk may also apply to Heritage-granted inner worlds such as the Dragon Cabin, the Biomorph’s creep zone, or the Cybermorph’s digital world.
-The Adjustment Field’s modification suite is identical to that of Advanced Tempest Runes (Mind). You can apply separate sets of effects to inhabitants, visitors, and intruders, or more specific categories beyond that, and cycle between them as desired. The Adjustment Field is blocked by both Polymorph and Wyldscape Defense.`,
+  desc: `
+<p>The central console for your mansion now includes the body-modification functions for everyone inside. If you have Basic Tempest Runes, take its expansion Advanced Tempest Runes (Body) for free. If you already have Advanced Tempest Runes (Body) when you buy Adjustment Field, take its expansion Advanced Tempest Runes (Mind) for free. If you already have Advanced Tempest Runes (Mind) when you buy Adjustment Field, you may claim a discount equal to the total value of all Tempest Runes you have already purchased. This perk may also apply to Heritage-granted inner worlds such as the Dragon Cabin, the Biomorph’s creep zone, or the Cybermorph’s digital world.</p>
+<p>The Adjustment Field’s modification suite is identical to that of Advanced Tempest Runes (Mind). You can apply separate sets of effects to inhabitants, visitors, and intruders, or more specific categories beyond that, and cycle between them as desired. The Adjustment Field is blocked by both Polymorph and Wyldscape Defense.</p>`,
 })
 
 homes.push({
   title: 'Rainbow Bridge',
   cost: 30,
   whitelist: ['All Roads Lead to Home', 'Exit Stage Left', 'Sweet Home'],
-  desc: `A dedicated portal room allows pedestrian or vehicle access to your starting world and anywhere else you travel to. You and your retinue may no longer, and need no longer, create portals manually. Instead, portal sites are procedurally generated in each world, generally appearing near locations that are important or useful to you or your purchased and captured waifus. Portals will activate automatically when approached by a valid user: you, your waifus, and friendlies you invite, and deactivate automatically when not used. You and your retinue can sense the nearest portal’s location even without a map, and more precisely the closer you are to it. This is no replacement for a true map. Neutral, hostile, and uninvited eyes will not notice a portal’s presence, activation, or use, and cannot pass through.
-Your first portal will only lead to your starting world. After that, new worlds will slowly unlock according to the same rules as Exit Stage Left. You may also unlock new worlds by either traveling there yourself or capturing a waifu who’s been there personally. All purchased waifus, without the Yoink or Slightly Used perks, have only been to two worlds: the world you bought them in and the factory where they were made. Don’t bother trying to go there. It’s employees-only.`,
+  desc: `
+<p>A dedicated portal room allows pedestrian or vehicle access to your starting world and anywhere else you travel to. You and your retinue may no longer, and need no longer, create portals manually. Instead, portal sites are procedurally generated in each world, generally appearing near locations that are important or useful to you or your purchased and captured waifus. Portals will activate automatically when approached by a valid user: you, your waifus, and friendlies you invite, and deactivate automatically when not used. You and your retinue can sense the nearest portal’s location even without a map, and more precisely the closer you are to it. This is no replacement for a true map. Neutral, hostile, and uninvited eyes will not notice a portal’s presence, activation, or use, and cannot pass through.</p>
+<p>Your first portal will only lead to your starting world. After that, new worlds will slowly unlock according to the same rules as Exit Stage Left. You may also unlock new worlds by either traveling there yourself or capturing a waifu who’s been there personally. All purchased waifus, without the Yoink or Slightly Used perks, have only been to two worlds: the world you bought them in and the factory where they were made. Don’t bother trying to go there. It’s employees-only.</p>`,
 })
 
 export const talentsDesc = 'Like all company-supplied powers, the powers granted by these perks cannot be nullified, copied, or stolen. Some of these perks may be partly or entirely redundant, depending on your choice of Origin.'
@@ -449,11 +456,12 @@ talents.push({
 talents.push({
   title: 'Body Talent',
   cost: 10,
-  desc: `You lift. Your body is now in perfect fitness and health, with significant muscle growth, within healthy human standards. If your natural height was less, you are now between 170 and 210 cm tall - or will be, if you aren’t yet fully grown. Your clothes are all resized and your muscle memory adjusted to fit. (You may opt out of this height boost.) In the event of a mismatch, your body will change to match your gender identity, reflecting what you might have looked like if you’d been born as such, unless you created or maintained a mismatch with your choice of targets for Substitute or Possess. (You knew what you were getting into when you did that.)
-All unwanted pre-existing medical conditions, from skin blemishes and unwanted body hair to chronic disease, missing limbs, detrimental genetic irregularities, and physical transformations are erased. (Cyborgs will find their reproductive system restored and augmentations optimized within their technological base.) This full heal will automatically trigger only once for each member of your retinue, including yourself: when you first purchase Body Talent or when the person joins your retinue, whichever happens second.
-You are immune to further minor illnesses, but not diseases or injuries. All healing or medical operations performed on you will complete without complications, residual pain, or unwanted scars.
-Additionally, you can rapidly learn any non-supernatural athletic skills you encounter: acrobatics, physical sports, parkour, swimming, etc. Skills directly related to combat fall under Martial Talent instead, while supernatural extensions of skill are affected by Psychic or Soul Talents. This is an experience and skill acquisition multiplier, not a flat improvement, and scales to the strength and skill of your opponents and trainers: the better they are than you, the faster you learn, until you’ve caught up to them.
-The individual benefits of this Talent may also apply, at your discretion, to any/all of your purchased and captured waifus. Unwanted conditions are erased according to your wants, not theirs. If you purchased Extra, Substitute, or Possess, this perk will be retroactively applied to your new body, with the exception noted above.`,
+  desc: `
+<p>You lift. Your body is now in perfect fitness and health, with significant muscle growth, within healthy human standards. If your natural height was less, you are now between 170 and 210 cm tall - or will be, if you aren’t yet fully grown. Your clothes are all resized and your muscle memory adjusted to fit. (You may opt out of this height boost.) In the event of a mismatch, your body will change to match your gender identity, reflecting what you might have looked like if you’d been born as such, unless you created or maintained a mismatch with your choice of targets for Substitute or Possess. (You knew what you were getting into when you did that.)</p>
+<p>All unwanted pre-existing medical conditions, from skin blemishes and unwanted body hair to chronic disease, missing limbs, detrimental genetic irregularities, and physical transformations are erased. (Cyborgs will find their reproductive system restored and augmentations optimized within their technological base.) This full heal will automatically trigger only once for each member of your retinue, including yourself: when you first purchase Body Talent or when the person joins your retinue, whichever happens second.</p>
+<p>You are immune to further minor illnesses, but not diseases or injuries. All healing or medical operations performed on you will complete without complications, residual pain, or unwanted scars.</p>
+<p>Additionally, you can rapidly learn any non-supernatural athletic skills you encounter: acrobatics, physical sports, parkour, swimming, etc. Skills directly related to combat fall under Martial Talent instead, while supernatural extensions of skill are affected by Psychic or Soul Talents. This is an experience and skill acquisition multiplier, not a flat improvement, and scales to the strength and skill of your opponents and trainers: the better they are than you, the faster you learn, until you’ve caught up to them.</p>
+<p>The individual benefits of this Talent may also apply, at your discretion, to any/all of your purchased and captured waifus. Unwanted conditions are erased according to your wants, not theirs. If you purchased Extra, Substitute, or Possess, this perk will be retroactively applied to your new body, with the exception noted above.</p>`,
 })
 
 talents.push({
@@ -490,8 +498,9 @@ talents.push({
 talents.push({
   title: 'Communication Talent',
   cost: 10,
-  desc: `You understand. You can read a room, spot deceit or employ your own, know when to speak and when to hold your tongue, and find the right words to say for good or ill. You will neither be That Guy whom women warn their friends about, nor the otaku nerd whose obsessions drive others away. This does not lend any additional power to your words - that’s what Siren’s Song is for - nor will it make you enjoy social interactions for their own sake. It only guarantees knowledge and competence.
-Additionally, you are immediately fluent in any spoken language you encounter and will speak it like any native in only a few days, with mastery of the written form taking a week on average; this part always applies to your retinue as well. Finally, you have a prodigious talent for writing, regardless of whether the subject is fiction or nonfiction. Depending on the skill of your trainer, cohorts, and rivals, you can elevate your own skill beyond ordinary human ability, following the same rules as the other Talents.`,
+  desc: `
+<p>You understand. You can read a room, spot deceit or employ your own, know when to speak and when to hold your tongue, and find the right words to say for good or ill. You will neither be That Guy whom women warn their friends about, nor the otaku nerd whose obsessions drive others away. This does not lend any additional power to your words - that’s what Siren’s Song is for - nor will it make you enjoy social interactions for their own sake. It only guarantees knowledge and competence.</p>
+<p>Additionally, you are immediately fluent in any spoken language you encounter and will speak it like any native in only a few days, with mastery of the written form taking a week on average; this part always applies to your retinue as well. Finally, you have a prodigious talent for writing, regardless of whether the subject is fiction or nonfiction. Depending on the skill of your trainer, cohorts, and rivals, you can elevate your own skill beyond ordinary human ability, following the same rules as the other Talents.</p>`,
 })
 
 talents.push({
@@ -510,23 +519,26 @@ talents.push({
   title: 'Blessed Talent',
   cost: 30,
   whitelist: ['Communication Talent', 'Soul Talent'],
-  desc: `Fortuna and her peers smile upon you. Higher powers, whether they’re deities, demons, or merely greater elementals or other spirits, will warm up to you more quickly than just anyone. Blessings or gifts given to you will be more powerful or useful, and curses or smitings aimed at your enemies will be more effective, scaling to how much the specific higher power likes you compared to who- or whatever you’re calling upon them for.
-If you are a god, the use of your own godly powers benefits from Soul Talent instead. In that case, if you also have Talent Sharing for this perk, it will remain useful for anyone in your retinue who calls upon your power.`,
+  desc: `
+<p>Fortuna and her peers smile upon you. Higher powers, whether they’re deities, demons, or merely greater elementals or other spirits, will warm up to you more quickly than just anyone. Blessings or gifts given to you will be more powerful or useful, and curses or smitings aimed at your enemies will be more effective, scaling to how much the specific higher power likes you compared to who- or whatever you’re calling upon them for.</p>
+<p>If you are a god, the use of your own godly powers benefits from Soul Talent instead. In that case, if you also have Talent Sharing for this perk, it will remain useful for anyone in your retinue who calls upon your power.</p>`,
 })
 
 talents.push({
   title: 'Psychic Talent',
   cost: 20,
-  desc: `You think. You have prodigious psychic talent and can rapidly learn any psychic abilities you encounter: from the telepathy and telekinesis that are so common in otherwise-hard sci-fi to Academy City esper powers, Biotics, and even the extremes typical of western comic-book psychics. This applies to traditional psychic abilities only: telepathy, telekinesis, remote viewing, astral projection, prescience, pyrokinesis, technopathy, etc., provided their trappings are neither magical nor technological.
-Projections such as Stands or Personas are subject to this Talent, not Soul. If you were not already capable of manifesting one, you are now theoretically capable of doing so, provided you have a Stand Arrow, someone who can awaken your Persona, etc. You can only have one such projection; if you already have a Persona when you’re pierced with a Stand Arrow, the Arrow will upgrade the Persona, and vice versa. Wild Cards (typically, those who Substituted or Possessed a Persona protagonist) are subject to their usual limit instead.
-This is an experience and skill acquisition multiplier, not a flat improvement, and scales to the strength and skill of your opponents and trainers: the better they are than you, the faster you learn, until you’ve caught up to them.`,
+  desc: `
+<p>You think. You have prodigious psychic talent and can rapidly learn any psychic abilities you encounter: from the telepathy and telekinesis that are so common in otherwise-hard sci-fi to Academy City esper powers, Biotics, and even the extremes typical of western comic-book psychics. This applies to traditional psychic abilities only: telepathy, telekinesis, remote viewing, astral projection, prescience, pyrokinesis, technopathy, etc., provided their trappings are neither magical nor technological.</p>
+<p>Projections such as Stands or Personas are subject to this Talent, not Soul. If you were not already capable of manifesting one, you are now theoretically capable of doing so, provided you have a Stand Arrow, someone who can awaken your Persona, etc. You can only have one such projection; if you already have a Persona when you’re pierced with a Stand Arrow, the Arrow will upgrade the Persona, and vice versa. Wild Cards (typically, those who Substituted or Possessed a Persona protagonist) are subject to their usual limit instead.</p>
+<p>This is an experience and skill acquisition multiplier, not a flat improvement, and scales to the strength and skill of your opponents and trainers: the better they are than you, the faster you learn, until you’ve caught up to them.</p>`,
 })
 
 talents.push({
   title: 'Covert Talent',
   cost: 10,
-  desc: `You lie, cheat, and steal. You have a prodigious talent for larceny, trespassing, theft, espionage, counterintelligence, and other forms of covert activity, whether it’s performed on a government’s dime or not. You can disappear into any crowd, no matter how sparse. With Engineering Talent, you can learn to hack any device. With Communication or Performance Talents, you can grift the best con artists out of their money. With Aesthetic Talent, you can make perfect forgeries of any artist’s style. Body Talent’s boost to athleticism also synergizes with this perk.
- This is an experience and skill acquisition multiplier, not a flat improvement, and scales to the strength and skill of your opponents, rivals, and trainers: the better they are than you, the faster you learn, until you’ve caught up to them.`,
+  desc: `
+<p>You lie, cheat, and steal. You have a prodigious talent for larceny, trespassing, theft, espionage, counterintelligence, and other forms of covert activity, whether it’s performed on a government’s dime or not. You can disappear into any crowd, no matter how sparse. With Engineering Talent, you can learn to hack any device. With Communication or Performance Talents, you can grift the best con artists out of their money. With Aesthetic Talent, you can make perfect forgeries of any artist’s style. Body Talent’s boost to athleticism also synergizes with this perk.</p>
+<p>This is an experience and skill acquisition multiplier, not a flat improvement, and scales to the strength and skill of your opponents, rivals, and trainers: the better they are than you, the faster you learn, until you’ve caught up to them.</p>`,
 })
 
 talents.push({
@@ -543,23 +555,47 @@ talents.push({
 })
 
 talents.push({
-  title: 'OC Donut Steel',
-  cost: 10,
-  special: 'Must be repurchased for each, use.',
-  desc: `Sometimes you just want to copy a specific individual’s powerset. This perk lets you do just that, for any individual short of Tier 11. If you purchase this perk for yourself at chargen or for a retinue member at the time you purchase them, you get the power outright. The exact capabilities at the time of purchase will be scaled to Tier 4 and can be trained higher with the appropriate Basic Talent - regardless of whether the original version is rated at Tiers 4, 5, or 10. You will also receive a skill framework for your purchase, identical in principle to the ones that “early” captures receive to ensure they learn their missing abilities. This applies to technological “abilities” as well. For characters that are made from multiple other characters, including the purchasable versions of many Nasuverse Servants in this catalog, each component must be bought separately.
-If you purchase this perk for yourself after chargen, or, for a retinue member, after the time of purchase or capture, you may need to recreate the original user’s empowering event, if there was one. You will not make any mistakes or experience unwanted side-effects in the process. This perk is not necessary for any powers that your purchased or captured retinue members might grant you via surgery, ritual, or other means. Note that some origins suck more than others: speaking Truck-kun’s name into a mirror three times in a row is not recommended. Abilities found elsewhere in this catalog are not available through this perk, nor are abilities found only in other CYOAs.
-For abilities that are generic in their source but are expressed uniquely, such as Sacred Gears, Semblances, Academy City Esper powers, Quirks, or the results of the X-gene, this perk will grant you the exact individual’s power you seek. This perk and Template Stacking I together may generate no more than one of each such power per individual.`,
+  title: 'Template Stacking 0: Added Potential',
+  cost: 5,
+  special: 'Must be repurchased for each use.',
+  desc: `
+<p>The rules of other worlds often bar just anyone from learning or developing special powers. Travelers often find themselves unable to learn any local abilities, even with the help of Science or Soul Talent, simply because they weren’t born in that world. This perk bypasses this limitation, allowing the person it’s bought for, whether yourself or a retinue member, to develop a single local ability, just like anyone else who would normally do so. “A single ability” can be quite broad, ranging from an X-mutation or Quirk unique to the individual, to Remnant-style Aura or Nasuverse Magecraft. These are all generic abilities, in the context of their home worlds; Tier 11 abilities are not eligible.</p>
+<p>Unlike Template Stacking, this perk does not grant practical power immediately: all purchases start from level zero, as it were, and must be trained before they’ll become usable. Self-study can help in some circumstances, but is no substitute for a proper trainer, whether purchased or a local.</p>
+<p>Abilities that are generic in their source but are expressed uniquely, such as Sacred Gears, Semblances, Academy City Esper powers, Quirks, or the results of the X-gene, will be unique to you as well. This perk and other Meta-Talents together may generate no more than one of each such power per individual.</p>
+<p>If you purchase the same template for any ten of your retinue members including yourself, including through Template Stacking 1 or OC Donut Steel, the rest of your retinue will gain this perk for that specific template for free.</p>
+`,
 })
 
 talents.push({
   title: 'Template Stacking I',
   cost: 10,
   special: 'Must be repurchased for each use.',
-  desc: `Sometimes you want to copy a generic powerset. This perk lets you do just that, for any power short of Tier 11. If you purchase this perk for yourself at chargen, or for a retinue member at the time you purchase them, you get the powerset outright. The exact capabilities at the time of purchase will be scaled to Tier 4, equivalent to the 10 credit version of Extra. Stacked Templates can then be trained higher with the appropriate Basic Talent, regardless of whether the original version is rated at Tiers 4, 5, or 10. You will also receive a skill framework for your purchase, identical in principle to the ones that “early” captures receive to ensure they learn their missing abilities. This applies to technological “abilities” as well.
-If you purchase this perk for yourself after chargen, or, for a retinue member, after the time of purchase or capture, you may need to recreate an original user’s empowering event, if there was one. You will not make any mistakes or experience unwanted side-effects in the process. This perk is not necessary for any powers that your purchased or captured retinue members might grant you via surgery, ritual, or other means. Note that some origins suck more than others: speaking Truck-kun’s name into a mirror three times in a row is not recommended.
-Racial templates (Kryptonian, Metallic Dragon, Newtype, Saiyan, etc.) can only be stacked in a starting build and will not be equivalent to a Heritage version of that template. Unlike Advanced Tempest Runes (Body), a living, natural example of that template is not necessary. Stacking multiple racial templates together will produce the same diminishing returns as Advanced Tempest Runes (Hybrid). Other powers that are only available to those who were born with them, such as hereditary magic systems, may be acquired through this perk at any time. In that case, there is no empowering event to recreate and thus no requirement for one. Abilities found elsewhere in this catalog are not available through this perk, nor are abilities found only in other CYOAs.
-Abilities that are generic in their source but are expressed uniquely, such as Sacred Gears, Semblances, Academy City Esper powers, Quirks, or the results of the X-gene, will be unique to you as well. This perk and OC Donut Steel together may generate no more than one of each such power per individual.
-If you purchase the same non-racial template for any ten of your retinue members including yourself, including specific examples of that template through OC Donut Steel, the rest of your retinue may gain this perk for that specific template for free. You can control the specifics through your smart device.`,
+  desc: `
+<p>Sometimes you want to copy a generic powerset. This perk lets you do just that, for any power short of Tier 11. If you purchase this perk for yourself at chargen, or for a retinue member at the time you purchase them, you get the powerset outright. The exact capabilities at the time of purchase will be scaled to Tier 4, equivalent to the 10 credit version of Extra. Stacked Templates can then be trained higher with the appropriate Basic Talent, regardless of whether the original version is rated at Tiers 4, 5, or 10. You will also receive a skill framework for your purchase, identical in principle to the ones that “early” captures receive to ensure they learn their missing abilities. This applies to technological “abilities” as well.</p>
+<p>If you purchase this perk for yourself after chargen, or, for a retinue member, after the time of purchase or capture, you may need to recreate an original user’s empowering event, if there was one. You will not make any mistakes or experience unwanted side-effects in the process. This perk is not necessary for any powers that your purchased or captured retinue members might grant you via surgery, ritual, or other means. Note that some origins suck more than others: speaking Truck-kun’s name into a mirror three times in a row is not recommended.</p>
+<p>Racial templates (Kryptonian, Metallic Dragon, Newtype, Saiyan, etc.) can only be stacked in a starting build and will not be equivalent to a Heritage version of that template. Unlike Advanced Tempest Runes (Body), a living, natural example of that template is not necessary. Stacking multiple racial templates together will produce the same diminishing returns as Advanced Tempest Runes (Hybrid). Other powers that are only available to those who were born with them, such as hereditary magic systems, may be acquired through this perk at any time. In that case, there is no empowering event to recreate and thus no requirement for one. Abilities found elsewhere in this catalog are not available through this perk, nor are abilities found only in other CYOAs.</p>
+<p>Abilities that are generic in their source but are expressed uniquely, such as Sacred Gears, Semblances, Academy City Esper powers, Quirks, or the results of the X-gene, will be unique to you as well. This perk and OC Donut Steel together may generate no more than one of each such power per individual.</p>
+<p>If you purchase the same non-racial template for any ten of your retinue members including yourself, including specific examples of that template through OC Donut Steel, the rest of your retinue may gain this perk for that specific template for free. You can control the specifics through your smart device.`,
+})
+
+talents.push({
+  title: 'Racial Template',
+  cost: 20,
+  special: 'Chargen only (self). Moment of purchase only (retinue). Must be repurchased for each use.',
+  desc: `
+  <p>Racial templates (Kryptonian, Metallic Dragon, Newtype, Saiyan, etc.) have additional rules that distinguish them from other kinds. Templates that align with Heritages will not be equivalent to their counterparts. Unlike Advanced Tempest Runes (Body), a living, natural example of that template is not required for your selection with this perk. This perk may not be applied to your captures, nor to purchase Tier 11 racial templates. Your starting version of any racial template will be limited to Tier 4; you can train it up to its natural state in the same ways as other Meta-Talents.</p>
+  <p>Purchases of this perk are limited to one per individual and will overwrite the individual’s original race for all purposes. Advanced Tempest Runes (Hybrid) or a geneticist, biomanipulator, or polymorpher of your own are required for creating hybrids.</p>
+`,
+})
+
+talents.push({
+  title: 'OC Donut Steel',
+  cost: 10,
+  special: 'Must be repurchased for each, use.',
+  desc: `
+<p>Sometimes you just want to copy a specific individual’s powerset. This perk lets you do just that, for any individual short of Tier 11. If you purchase this perk for yourself at chargen or for a retinue member at the time you purchase them, you get the power outright. The exact capabilities at the time of purchase will be scaled to Tier 4 and can be trained higher with the appropriate Basic Talent - regardless of whether the original version is rated at Tiers 4, 5, or 10. You will also receive a skill framework for your purchase, identical in principle to the ones that “early” captures receive to ensure they learn their missing abilities. This applies to technological “abilities” as well. For characters that are made from multiple other characters, including the purchasable versions of many Nasuverse Servants in this catalog, each component must be bought separately.</p>
+<p>If you purchase this perk for yourself after chargen, or, for a retinue member, after the time of purchase or capture, you may need to recreate the original user’s empowering event, if there was one. You will not make any mistakes or experience unwanted side-effects in the process. This perk is not necessary for any powers that your purchased or captured retinue members might grant you via surgery, ritual, or other means. Note that some origins suck more than others: speaking Truck-kun’s name into a mirror three times in a row is not recommended. Abilities found elsewhere in this catalog are not available through this perk, nor are abilities found only in other CYOAs.</p>
+<p>For abilities that are generic in their source but are expressed uniquely, such as Sacred Gears, Semblances, Academy City Esper powers, Quirks, or the results of the X-gene, this perk will grant you the exact individual’s power you seek. This perk and Template Stacking I together may generate no more than one of each such power per individual.</p>`,
 })
 
 talents.push({
@@ -578,30 +614,34 @@ talents.push({
   title: 'Advanced Template Stacking (Arcane)',
   cost: 100,
   whitelist: ['Science Talent', 'Soul Talent'],
-  desc: `The entire spectrum of scientific magic styles is now available to you without further restriction. You must still encounter such styles before you can use them, whether in the field, buying them with OC Donut Steel or Template Stacking, or through the purchase of a retinue member who has one. Additionally, such styles are more effective when you use them and easier to develop. 
-This perk consolidates all purchases of OC Donut Steel and Template Stacking I that fall under its theme into a single item. Take a refund on all such purchases for the person this is applied to.`,
+  desc: `
+<p>The entire spectrum of scientific magic styles is now available to you without further restriction. You must still encounter such styles before you can use them, whether in the field, buying them with OC Donut Steel or Template Stacking, or through the purchase of a retinue member who has one. Additionally, such styles are more effective when you use them and easier to develop. </p>
+<p>This perk consolidates all purchases of OC Donut Steel and Template Stacking I that fall under its theme into a single item. Take a refund on all such purchases for the person this is applied to.</p>`,
 })
 
 talents.push({
   title: 'Advanced Template Stacking (Enlightened)',
   cost: 100,
   whitelist: ['(Psychic Talent OR (Body Talent and Martial Talent))', 'Soul Talent'],
-  desc: `The entire spectrum of ki arts and personal mystical powers are now available to you without further restriction. You must still encounter any such arts and styles before you can use them, whether in the field, buying them with OC Donut Steel or Template Stacking, or through the purchase of a retinue member who has one. Additionally, such arts and styles are more effective and easier to control. This also applies to the inner powers gained from certain Heritages.
-This perk consolidates all purchases of OC Donut Steel and Template Stacking I that fall under its theme into a single item. Take a refund on all such purchases for the person this is applied to.`,
+  desc: `
+<p>The entire spectrum of ki arts and personal mystical powers are now available to you without further restriction. You must still encounter any such arts and styles before you can use them, whether in the field, buying them with OC Donut Steel or Template Stacking, or through the purchase of a retinue member who has one. Additionally, such arts and styles are more effective and easier to control. This also applies to the inner powers gained from certain Heritages.</p>
+<p>This perk consolidates all purchases of OC Donut Steel and Template Stacking I that fall under its theme into a single item. Take a refund on all such purchases for the person this is applied to.</p>`,
 })
 
 talents.push({
   title: 'Advanced Template Stacking (Green)',
   cost: 100,
   whitelist: ['Wild Talent', 'Soul Talent'],
-  desc: `The entire spectrum of magical styles that draw mystical power from one’s surroundings are now available to you without further restriction. This includes, but is not limited to, Warhammer’s Winds, a Planeswalker’s Lands, Geomancy, or anything powered by leylines or background magical fields. You must still encounter any such styles before you can use them, whether in the field, buying them with OC Donut Steel or Template Stacking, or through the purchase of a retinue member who has one. Additionally, such arts and styles are more effective and easier to control.
-This perk consolidates all purchases of OC Donut Steel and Template Stacking I that fall under its theme into a single item. Take a refund on all such purchases for the person this is applied to.`,
+  desc: `
+<p>The entire spectrum of magical styles that draw mystical power from one’s surroundings are now available to you without further restriction. This includes, but is not limited to, Warhammer’s Winds, a Planeswalker’s Lands, Geomancy, or anything powered by leylines or background magical fields. You must still encounter any such styles before you can use them, whether in the field, buying them with OC Donut Steel or Template Stacking, or through the purchase of a retinue member who has one. Additionally, such arts and styles are more effective and easier to control.</p>
+<p>This perk consolidates all purchases of OC Donut Steel and Template Stacking I that fall under its theme into a single item. Take a refund on all such purchases for the person this is applied to.</p>`,
 })
 
-export const defenceDesc = `Defense perks protect you and your retinue members, regardless of whether they were purchased or captured, from the relevant effects. All Defenses are purchased in two stages. The first stage, or copy, of a Defense offers resistance to the effects it covers, and the second expands that to total immunity. Both purchases are the same price. The total cost of both copies appears in parentheses. No lasting effect inflicted on you that is covered by an active defense will ever be permanent - everything will wear off over time, depending on circumstance or the effect’s strength.
-The descriptions for each Defense represent the starting points for each defense. At the resistance level, exposure to any specific effect will allow you to gradually increase your resistance to it, making that effect weaker, less unreliable, and/or faster to wear off. Immunities are built separately for each specific type of effect, even if they both fall under the same defense - a single toxin or disease, a single method of divination or mind control, etc. At most, resistance to one effect may partially apply to closely related other ones, such as a family of toxins with similar properties, a closely related family of pathogens, or a narrow school of divination or type of mind control method. Building up immunities to every effect can take centuries, for each member of your retinue, and those immunities will not be permanent. The second purchase of a Defense bypasses all of this, giving you blanket immunity to everything it covers..
-Each Defense has an associated discount, conditional on the traits of your Origin and retinue members, equal to the list price of the qualifying individual’s effective tier after step 3 and capped at 40% of the list price of each Defense stage. This also applies if you only meet the condition after you started your contract - in which case the discount is always 40% - or a retinue member (purchased or captured) only does so while in your service. One individual can qualify you for multiple discounts.
-If you have multiple separate discounts for the same Defense, they’ll stack: three full discounts to the same Defense will make one stage of it free, while a total of five full discounts will make both stages free. If that happens, any extraneous free copies of that Defense from your Controls or Heritage perks will instead discount those perks by the Defense’s full value, up to the standard cap on that kind of discount. If you sell or otherwise lose a retinue member whose presence granted you a discount, you’ll lose the discount as well.`
+export const defenceDesc = `
+<p>Defense perks protect you and your retinue members, regardless of whether they were purchased or captured, from the relevant effects. All Defenses are purchased in two stages. The first stage, or copy, of a Defense offers resistance to the effects it covers, and the second expands that to total immunity. Both purchases are the same price. The total cost of both copies appears in parentheses. No lasting effect inflicted on you that is covered by an active defense will ever be permanent - everything will wear off over time, depending on circumstance or the effect’s strength.</p>
+<p>The descriptions for each Defense represent the starting points for each defense. At the resistance level, exposure to any specific effect will allow you to gradually increase your resistance to it, making that effect weaker, less unreliable, and/or faster to wear off. Immunities are built separately for each specific type of effect, even if they both fall under the same defense - a single toxin or disease, a single method of divination or mind control, etc. At most, resistance to one effect may partially apply to closely related other ones, such as a family of toxins with similar properties, a closely related family of pathogens, or a narrow school of divination or type of mind control method. Building up immunities to every effect can take centuries, for each member of your retinue, and those immunities will not be permanent. The second purchase of a Defense bypasses all of this, giving you blanket immunity to everything it covers..</p>
+<p>Each Defense has an associated discount, conditional on the traits of your Origin and retinue members, equal to the list price of the qualifying individual’s effective tier after step 3 and capped at 40% of the list price of each Defense stage. This also applies if you only meet the condition after you started your contract - in which case the discount is always 40% - or a retinue member (purchased or captured) only does so while in your service. One individual can qualify you for multiple discounts.</p>
+<p>If you have multiple separate discounts for the same Defense, they’ll stack: three full discounts to the same Defense will make one stage of it free, while a total of five full discounts will make both stages free. If that happens, any extraneous free copies of that Defense from your Controls or Heritage perks will instead discount those perks by the Defense’s full value, up to the standard cap on that kind of discount. If you sell or otherwise lose a retinue member whose presence granted you a discount, you’ll lose the discount as well.</p>`
 
 export const defenses: Defense[] = []
 
@@ -610,9 +650,10 @@ defenses.push({
   special: '<Individual> is known for handling disease, chemical medicine, or poisons.',
   cost: 5,
   whitelist: ['Body Talent'],
-  desc: `You have protection from all diseases, toxins, and targeted radiation. Lethal or crippling afflictions will leave you sick enough to most likely stay in bed, unless you really have to move - because you're attacked, for example. Anything short of that will leave you weakened and uncomfortable, but functional.
-Additionally, you get an extra one-time full heal, identical to the one offered by Body Talent, with each purchase of this Defense. These are counted separately for each member of your retinue, including yourself and anyone acquired after the purchase of this Defense. These may be kept for future use.
-This perk still does not protect against injury or provide any sort of healing factor; if you want one, you’ll have to find it yourself.`,
+  desc: `
+<p>You have protection from all diseases, toxins, and targeted radiation. Lethal or crippling afflictions will leave you sick enough to most likely stay in bed, unless you really have to move - because you're attacked, for example. Anything short of that will leave you weakened and uncomfortable, but functional.</p>
+<p>Additionally, you get an extra one-time full heal, identical to the one offered by Body Talent, with each purchase of this Defense. These are counted separately for each member of your retinue, including yourself and anyone acquired after the purchase of this Defense. These may be kept for future use.</p>
+<p>This perk still does not protect against injury or provide any sort of healing factor; if you want one, you’ll have to find it yourself.</p>`,
 })
 
 defenses.push({
@@ -689,8 +730,9 @@ defenses.push({
   cost: 50,
   whitelist: ['Body Defense', 'Wyldscape Defense', 'Corruption Defense'],
   needed: 1,
-  desc: `You can resist targeted supernatural transformations. Such attacks will take more effort and tend to remain incomplete and weaken you less than they should unless repeated for long enough. For example, an attempt to turn you into a tiny newt may turn you into a giant newt or a still-functional newt-man. Any loss of strength, durability, or similar traits from transformation will experience diminishing returns.
-At the immunity level, If you are transformed in such a way, even before you were protected by this perk, you may easily reverse the effect, entirely or in piecemeal, at will. All detransformations in your retinue will require your consent, not the victim’s. Contagious transformations that you allow will not spread from you or your retinue to third parties unless you choose to let that happen as well.`,
+  desc: `
+<p>You can resist targeted supernatural transformations. Such attacks will take more effort and tend to remain incomplete and weaken you less than they should unless repeated for long enough. For example, an attempt to turn you into a tiny newt may turn you into a giant newt or a still-functional newt-man. Any loss of strength, durability, or similar traits from transformation will experience diminishing returns.</p>
+<p>At the immunity level, If you are transformed in such a way, even before you were protected by this perk, you may easily reverse the effect, entirely or in piecemeal, at will. All detransformations in your retinue will require your consent, not the victim’s. Contagious transformations that you allow will not spread from you or your retinue to third parties unless you choose to let that happen as well.</p>`,
 })
 
 defenses.push({
@@ -699,8 +741,9 @@ defenses.push({
   cost: 50,
   whitelist: ['Environmental Defense', 'Polymorph Defense', 'Corruption Defense'],
   needed: 1,
-  desc: `You can resist ongoing supernatural transformations that just affect anyone who enters the area of effect.  The same forms of resistance from Polymorph Defense can manifest with this perk as well.
-At the immunity level, if you are transformed in such a way, even before you were protected by this perk, you may easily reverse the effect, entirely or in piecemeal, at will. All detransformations in your retinue require your consent, not the victim’s. Contagious transformations that you allow will not spread from you or your retinue to third parties unless you choose to let that happen as well.`,
+  desc: `
+<p>You can resist ongoing supernatural transformations that just affect anyone who enters the area of effect.  The same forms of resistance from Polymorph Defense can manifest with this perk as well.</p>
+<p>At the immunity level, if you are transformed in such a way, even before you were protected by this perk, you may easily reverse the effect, entirely or in piecemeal, at will. All detransformations in your retinue require your consent, not the victim’s. Contagious transformations that you allow will not spread from you or your retinue to third parties unless you choose to let that happen as well.</p>`,
 })
 
 defenses.push({
@@ -730,16 +773,18 @@ defenses.push({
   title: 'Destiny Defense',
   special: '<Individual> is known as a fate- or luck-manipulator.',
   cost: 50,
-  desc: `You are the master of your fate. Attempts to change your fate or luck will be more difficult, less reliable, and weaker than they would normally be - increasingly so the more directly they target you instead of just your surroundings, the more improbable they are, and the more precision they require. Changes that do go through will be more easy to reverse than they would be otherwise.
-As with the other Defense perks, you may still experience any beneficial effects of these sorts of manipulation even if you have the second perk for immunity.`,
+  desc: `
+<p>You are the master of your fate. Attempts to change your fate or luck will be more difficult, less reliable, and weaker than they would normally be - increasingly so the more directly they target you instead of just your surroundings, the more improbable they are, and the more precision they require. Changes that do go through will be more easy to reverse than they would be otherwise.</p>
+<p>As with the other Defense perks, you may still experience any beneficial effects of these sorts of manipulation even if you have the second perk for immunity.</p>`,
 })
 
 defenses.push({
   title: 'Paradox Defense',
   special: '<Individual> is known as a time-manipulator.',
   cost: 50,
-  desc: `You are the master of your timeline. Temporal slowdowns will have increasingly weaker effects on you the stronger they are - a weak slowing effect will be even weaker, but a stronger one and even a total time-stop will not leave you completely unable to react. You will retain memories of previous timelines, loops, or other resets, even if they are faded or incomplete, and any attempts to spy on or change your timeline will have the same problems mentioned under Information, Trace, and Destiny Defenses. Attempts to erase you entirely will merely leave you weakened, faded, or flickering into and out of existence randomly.
-This perk also blocks forced unwanted teleportation, whether that involves sending you somewhere else or sending something into your current position. Resistance to such effects may make the teleport require more effort or send you somewhere inconvenient to both yourself and the teleporter.`,
+  desc: `
+<p>You are the master of your timeline. Temporal slowdowns will have increasingly weaker effects on you the stronger they are - a weak slowing effect will be even weaker, but a stronger one and even a total time-stop will not leave you completely unable to react. You will retain memories of previous timelines, loops, or other resets, even if they are faded or incomplete, and any attempts to spy on or change your timeline will have the same problems mentioned under Information, Trace, and Destiny Defenses. Attempts to erase you entirely will merely leave you weakened, faded, or flickering into and out of existence randomly.</p>
+<p>This perk also blocks forced unwanted teleportation, whether that involves sending you somewhere else or sending something into your current position. Resistance to such effects may make the teleport require more effort or send you somewhere inconvenient to both yourself and the teleporter.</p>`,
 })
 
 export const perks: Perk[] = []
@@ -754,9 +799,10 @@ perks.push({
   title: 'Universal Calibration',
   cost: 20,
   whitelist: ['Temporal Calibration'],
-  desc: `The targeting algorithms for your methods of multiversal travel are biased in your favor. Whether you use the Exit Stage Left or Rainbow Bridge perks, multiversal Heritage abilities, your waifus’ powers, or even local technology, you will usually end up in a place where the population is more… suited to your tastes. All inhabitants will be more attractive to you, personally. This includes and builds upon the effects of Temporal Calibration. Additionally, your sexual fetishes and other preferences will be unusually common on the worlds you visit, with listed capture targets sharing at least some compatible interests… unless that runs counter to your own.
-The above standard calibration is a best-guess preset based on your likes. You can fine-tune the specific settings, define and swap among multiple presets, and even reset all conditions to the default, in an app on your smart device. Your currently-chosen calibration, whatever the specifics, will modify every world that you visit for as long as it remains active. This includes worlds that you’ve visited previously: you’re actually entering a parallel worldline that’s identical in every way except for your presence and the effects of the calibration. To visit a previous calibration-worldline, simply exit the world, close the portal if there is one, recalibrate, and re-enter.
-Neither your Pocket Apartment nor your vehicles granted by Catch-a-Ride or Heavenbuilt Proto can be affected by recalibration. If left behind in an old worldline when you recalibrate, the vehicles will bounce forward into the new one; if you have Life's a Beach, the vehicles may instead return to their parking/docking/landing site.`,
+  desc: `
+<p>The targeting algorithms for your methods of multiversal travel are biased in your favor. Whether you use the Exit Stage Left or Rainbow Bridge perks, multiversal Heritage abilities, your waifus’ powers, or even local technology, you will usually end up in a place where the population is more… suited to your tastes. All inhabitants will be more attractive to you, personally. This includes and builds upon the effects of Temporal Calibration. Additionally, your sexual fetishes and other preferences will be unusually common on the worlds you visit, with listed capture targets sharing at least some compatible interests… unless that runs counter to your own.</p>
+<p>The above standard calibration is a best-guess preset based on your likes. You can fine-tune the specific settings, define and swap among multiple presets, and even reset all conditions to the default, in an app on your smart device. Your currently-chosen calibration, whatever the specifics, will modify every world that you visit for as long as it remains active. This includes worlds that you’ve visited previously: you’re actually entering a parallel worldline that’s identical in every way except for your presence and the effects of the calibration. To visit a previous calibration-worldline, simply exit the world, close the portal if there is one, recalibrate, and re-enter.</p>
+<p>Neither your Pocket Apartment nor your vehicles granted by Catch-a-Ride or Heavenbuilt Proto can be affected by recalibration. If left behind in an old worldline when you recalibrate, the vehicles will bounce forward into the new one; if you have Life's a Beach, the vehicles may instead return to their parking/docking/landing site.</p>`,
 })
 
 perks.push({
@@ -784,8 +830,9 @@ perks.push({
 perks.push({
   title: 'Mapper',
   cost: 10,
-  desc: `This app offers maps of the current world you’re on, with points of interest annotated. No information that could not be discovered by casually asking around is listed, so while a public facing organization like a merchant's guild will be annotated, the local thieves' guild will not. This map will update itself if you discover a point of interest that would normally be left off of the map. You are also able to search for points of interest. Tapping on a point of interest (or the equivalent for your smart device) will bring up a short description of it. You can add any number of your own annotations to the descriptions. Descriptions will update in real time if there are significant changes, such as a store closing.,
-If you have Rainbow Bridge, you can toggle to any world you have access to at the current time.`,
+  desc: `
+<p>This app offers maps of the current world you’re on, with points of interest annotated. No information that could not be discovered by casually asking around is listed, so while a public facing organization like a merchant's guild will be annotated, the local thieves' guild will not. This map will update itself if you discover a point of interest that would normally be left off of the map. You are also able to search for points of interest. Tapping on a point of interest (or the equivalent for your smart device) will bring up a short description of it. You can add any number of your own annotations to the descriptions. Descriptions will update in real time if there are significant changes, such as a store closing.,</p>
+<p>If you have Rainbow Bridge, you can toggle to any world you have access to at the current time.</p>`,
 })
 
 perks.push({
@@ -850,8 +897,9 @@ perks.push({
 perks.push({
   title: 'Heavenbuilt Proto',
   cost: 11111,
-  desc: `Run the Built in the Heavens CYOA, (interactive version), ignoring the origins choice and all personal perks. The only allowed complications are the ones that grant followers. These followers will count as their original inspirations: Broken Toy (YorHa A2), Jewelled Collar (Starfire and Blackfire), All According to Plan (Taldeer), Yan Yan Dere Dere (Monika), Forgotten and Lost (Dragon from Worm, in the body of Cibo from Blame!), From Heights Brought Low (Shub-Niggurath), or A Loyal Vizier (Caster Tamamo-no-Mae). These followers cannot be refunded for credits, so you should only take the ones you want. Otherwise, follow its rules as written. You will start aboard your ship, in the same star system as your starting world, unless you also purchased Life’s A Beach. Your ship's AI counts as a purchased waifu of Tier 6. Alternatively, you may plug one of your purchased or captured waifus into your ship to make her a pseudo-AI or shipgirl and take a 50-credit toward future purchases, you monster. All characters with alternate outfits, shown in any official source, will find them stored in their room or closet.,
-In addition to the ship’s Tier 11-granted multiversal capability, if you have a time-travel-capable waifu, she'll be able to channel her power through your ship so it can make such journeys too, even if you keep the Heavenbuilt AI as a separate waifu.`,
+  desc: `
+<p>Run the Built in the Heavens CYOA, (interactive version), ignoring the origins choice and all personal perks. The only allowed complications are the ones that grant followers. These followers will count as their original inspirations: Broken Toy (YorHa A2), Jewelled Collar (Starfire and Blackfire), All According to Plan (Taldeer), Yan Yan Dere Dere (Monika), Forgotten and Lost (Dragon from Worm, in the body of Cibo from Blame!), From Heights Brought Low (Shub-Niggurath), or A Loyal Vizier (Caster Tamamo-no-Mae). These followers cannot be refunded for credits, so you should only take the ones you want. Otherwise, follow its rules as written. You will start aboard your ship, in the same star system as your starting world, unless you also purchased Life’s A Beach. Your ship's AI counts as a purchased waifu of Tier 6. Alternatively, you may plug one of your purchased or captured waifus into your ship to make her a pseudo-AI or shipgirl and take a 50-credit toward future purchases, you monster. All characters with alternate outfits, shown in any official source, will find them stored in their room or closet.,</p>
+<p>In addition to the ship’s Tier 11-granted multiversal capability, if you have a time-travel-capable waifu, she'll be able to channel her power through your ship so it can make such journeys too, even if you keep the Heavenbuilt AI as a separate waifu.</p>`,
 })
 
 perks.push({
@@ -863,15 +911,17 @@ perks.push({
 perks.push({
   title: 'Warranty Plan',
   cost: 200,
-  desc: `Any purchased or captured retinue member who dies on you will be re-delivered to you at no additional cost. This perk will not help if you die, even if you took the Substitute or Possess origins. The default respawn time for your waifus is 72 hours. Respawned waifus will retain all of their previous incarnation’s memories, including anything related to their previous incarnation’s cause of death, except for some minor trauma reduction. All relevant effects of Lures, Binds, Perks, and waifu perks will be re-applied before shipment. If a member of your retinue was host to a Core from the Transhuman heritage when they died, a new Core will only be implanted before shipment if they’ve benefitted from the third level of Philosopher’s Transmortality Engine. If you have Everlasting Talent, characters whom you’ve blacklisted from it will be considered expendable and their automatic respawn will likewise be disabled; you may still trigger it manually.,
-Each amazon you purchase or capture will reduce the respawn timer by 3 hours, to a soft limit of 18 hours. Additional amazons in your retinue after  the first 18 will still decrease the timer, but are subject to diminishing returns. 
-If a waifu has a soulbound artifact along the lines of an Exaltation or Sacred Gear, an exact duplicate of the artifact will be produced for her specifically, and persist through respawns, and the original one released back into the waifu’s homeworld; you will also benefit from this feature if one of your retinue members resurrects you with their own abilities. If a waifu you’ve Stamped dies (through no fault of your own) before the full tattoo can complete, the company will send you a fresh copy of her, free of charge. This is not affected by the amazon respawn bonus above. If one of your waifus is merely mission-killed in a way that’s prohibitively difficult to undo (petrified, stuck in a black hole, etc.), an option in the company app will let you actually-kill her current body and force a respawn.`,
+  desc: `
+<p>Any purchased or captured retinue member who dies on you will be re-delivered to you at no additional cost. This perk will not help if you die, even if you took the Substitute or Possess origins. The default respawn time for your waifus is 72 hours. Respawned waifus will retain all of their previous incarnation’s memories, including anything related to their previous incarnation’s cause of death, except for some minor trauma reduction. All relevant effects of Lures, Binds, Perks, and waifu perks will be re-applied before shipment. If a member of your retinue was host to a Core from the Transhuman heritage when they died, a new Core will only be implanted before shipment if they’ve benefitted from the third level of Philosopher’s Transmortality Engine. If you have Everlasting Talent, characters whom you’ve blacklisted from it will be considered expendable and their automatic respawn will likewise be disabled; you may still trigger it manually.,</p>
+<p>Each amazon you purchase or capture will reduce the respawn timer by 3 hours, to a soft limit of 18 hours. Additional amazons in your retinue after  the first 18 will still decrease the timer, but are subject to diminishing returns. </p>
+<p>If a waifu has a soulbound artifact along the lines of an Exaltation or Sacred Gear, an exact duplicate of the artifact will be produced for her specifically, and persist through respawns, and the original one released back into the waifu’s homeworld; you will also benefit from this feature if one of your retinue members resurrects you with their own abilities. If a waifu you’ve Stamped dies (through no fault of your own) before the full tattoo can complete, the company will send you a fresh copy of her, free of charge. This is not affected by the amazon respawn bonus above. If one of your waifus is merely mission-killed in a way that’s prohibitively difficult to undo (petrified, stuck in a black hole, etc.), an option in the company app will let you actually-kill her current body and force a respawn.</p>`,
 })
 
 // Generic Waifu Perks
-export const genericDesc = `Upgrades, downgrades, and other premium options for your waifus are available in this and the next section. If your Origin choice is compatible with a Waifu Perk of any kind, you can buy it for yourself, even in a starting build. (If you have Substitute and apply a Waifu Perk to yourself, the perk-modified cost of your target cannot exceed 20% of your intensity-modified budget. This limitation only applies at chargen.) Unlike other purchased abilities, your waifus do not lose access to waifu perks if you die.
-If a Waifu Perk is listed with a tier rating, its price will be affected by the No Bindings discount, if you qualify for it. If you already qualify for Mirage Master’s regular discount, it cannot be discounted a second time. Waifu Perks that lack tier ratings are not affected by the No Bindings Discount.
-Generic waifu perks may be purchased more than once and applied to any waifu or husbando that qualifies.`
+export const genericDesc = `
+<p>Upgrades, downgrades, and other premium options for your waifus are available in this and the next section. If your Origin choice is compatible with a Waifu Perk of any kind, you can buy it for yourself, even in a starting build. (If you have Substitute and apply a Waifu Perk to yourself, the perk-modified cost of your target cannot exceed 20% of your intensity-modified budget. This limitation only applies at chargen.) Unlike other purchased abilities, your waifus do not lose access to waifu perks if you die.</p>
+<p>If a Waifu Perk is listed with a tier rating, its price will be affected by the No Bindings discount, if you qualify for it. If you already qualify for Mirage Master’s regular discount, it cannot be discounted a second time. Waifu Perks that lack tier ratings are not affected by the No Bindings Discount.</p>
+<p>Generic waifu perks may be purchased more than once and applied to any waifu or husbando that qualifies.</p>`
 
 export const genericPerks: Perk[] = []
 
@@ -889,9 +939,10 @@ genericPerks.push({
   cost: 1,
   special: 'See Additional Rules, minimum 1',
   blacklist: ['Yoink'],
-  desc: `This waifu is an original version, captured by a previous contractor and resold to you. All direct effects of previous contractors' controls and perks are removed during reprocessing. This includes Defenses, Talents, and Binding benefits, but not any non-baseline abilities they trained in using their former contractor’s Talents, equipment they wield, or Heritage upgrades applied to them. When you select this perk for a purchase, you will see three options for which specific version of the subject you wish to buy.
-Author directions: roll 6 six-sided dice for each option, twice. (Just use an autoroller.) The sum of the first set of rolls determines the subject’s effective tier after step 4: higher rolls mean both higher tiers and higher prices. Compare to the names you recognize in the regular Catalog to determine what kinds of extra abilities or equipment a used purchase has compared to their baseline self. The sum of the second set of rolls determines the subject’s physical, mental, and/or spiritual state after their experiences with their previous owner: higher rolls mean both more trauma and steeper discounts. The full chart is in the Additional Rules section. A used purchase’s extra abilities and/or equipment will be listed in full for the contractor to see, but their current state will not be visible, beyond its effect on their price.
-Unlike fresh clones, subjects bought used have been to their homeworlds personally. Most people have others who care about them, who will likely have strong reactions to the sudden return of a missing person…`,
+  desc: `
+<p>This waifu is an original version, captured by a previous contractor and resold to you. All direct effects of previous contractors' controls and perks are removed during reprocessing. This includes Defenses, Talents, and Binding benefits, but not any non-baseline abilities they trained in using their former contractor’s Talents, equipment they wield, or Heritage upgrades applied to them. When you select this perk for a purchase, you will see three options for which specific version of the subject you wish to buy.</p>
+<p>Author directions: roll 6 six-sided dice for each option, twice. (Just use an autoroller.) The sum of the first set of rolls determines the subject’s effective tier after step 4: higher rolls mean both higher tiers and higher prices. Compare to the names you recognize in the regular Catalog to determine what kinds of extra abilities or equipment a used purchase has compared to their baseline self. The sum of the second set of rolls determines the subject’s physical, mental, and/or spiritual state after their experiences with their previous owner: higher rolls mean both more trauma and steeper discounts. The full chart is in the Additional Rules section. A used purchase’s extra abilities and/or equipment will be listed in full for the contractor to see, but their current state will not be visible, beyond its effect on their price.</p>
+<p>Unlike fresh clones, subjects bought used have been to their homeworlds personally. Most people have others who care about them, who will likely have strong reactions to the sudden return of a missing person…</p>`,
 })
 
 genericPerks.push({
@@ -911,8 +962,9 @@ genericPerks.push({
 genericPerks.push({
   title: 'Paper Trail',
   cost: 1,
-  desc: `In some worlds, anonymity is a danger in and of itself. This perk retroactively modifies all records (paper, digital, and even memories) to create a legal existence for your waifu. Where applicable, the waifu will receive any real documentation she would be expected to have. You may also purchase and apply this perk to yourself; the all-waifus package will always apply it to you. If you chose the Extra or Substitute origins, this perk will not apply to you until you visit your second world. Similarly, this cannot give a captured or Yoinked retinue member a new identity in their own homeworld. Once you’ve purchased this perk ten times, it will apply to every member of your retinue.,
-By default, this history is of a middle-class or analogous citizen. If plausible and desired, they will instead be of a social class that can associate with you. Under the same conditions, any powers they have may be documented in a way that best fits your needs. If you have Trace Defense, any attempt at remote viewing where failure or invisibility would itself be a red flag will seemingly succeed, showing either a convincing match to their documented past or a present or future with nothing important to note.`,
+  desc: `
+<p>In some worlds, anonymity is a danger in and of itself. This perk retroactively modifies all records (paper, digital, and even memories) to create a legal existence for your waifu. Where applicable, the waifu will receive any real documentation she would be expected to have. You may also purchase and apply this perk to yourself; the all-waifus package will always apply it to you. If you chose the Extra or Substitute origins, this perk will not apply to you until you visit your second world. Similarly, this cannot give a captured or Yoinked retinue member a new identity in their own homeworld. Once you’ve purchased this perk ten times, it will apply to every member of your retinue.,</p>
+<p>By default, this history is of a middle-class or analogous citizen. If plausible and desired, they will instead be of a social class that can associate with you. Under the same conditions, any powers they have may be documented in a way that best fits your needs. If you have Trace Defense, any attempt at remote viewing where failure or invisibility would itself be a red flag will seemingly succeed, showing either a convincing match to their documented past or a present or future with nothing important to note.</p>`,
 })
 
 genericPerks.push({
@@ -921,10 +973,12 @@ genericPerks.push({
   cost: 20,
   special: 'Requires at least one first - party Azur Lane shipgirl',
   desc: `Dead or Alive, Neptunia, Utawarerumono, Hololive, and others have all had guest appearances on the high seas. This perk grants these characters their shipgirl riggings, allowing them to play by those rules instead and making them eligible for Bifurcation and Space Shipgirl below. If a collaboration shipgirl’s tier after step 1a is less than the following, it will be raised to that value.
-T4: 22, 33, Akizuki Ritsuko, Futami Ami, Futami Mami
-T5: All other collaboration shipgirls
-T6: All other collaboration battleships and full aircraft carriers except Fumiruiru
-T7: Minase Iori`,
+<ul class="list-disc list-inside">
+  <li>T4: 22, 33, Akizuki Ritsuko, Futami Ami, Futami Mami</li>
+  <li>T5: All other collaboration shipgirls</li>
+  <li>T6: All other collaboration battleships and full aircraft carriers except Fumiruiru</li>
+  <li>T7: Minase Iori</li>
+</ul>`,
 })
 
 genericPerks.push({

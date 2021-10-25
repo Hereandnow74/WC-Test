@@ -29,7 +29,7 @@ const { allEffects, miscPerks } = useStore()
 function isAvailable(perk: Perk): boolean {
   if (!perk.whitelist) { return true }
   else {
-    if (intersection(perk.whitelist, allEffects.value).length === (perk.needed || perk.whitelist.length))
+    if (intersection(perk.whitelist, allEffects.value).length >= (perk.needed || perk.whitelist.length))
       return true
   }
 

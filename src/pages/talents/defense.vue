@@ -38,7 +38,7 @@ companions.value.forEach(x => targetList.value.push({ name: x.name, value: x.nam
 function isAvailable(def: Defense): boolean {
   if (!def.whitelist) { return true }
   else {
-    if (intersection(def.whitelist, allEffects.value).length === (def.needed || def.whitelist.length))
+    if (intersection(def.whitelist, allEffects.value).length >= (def.needed || def.whitelist.length))
       return true
   }
   return false

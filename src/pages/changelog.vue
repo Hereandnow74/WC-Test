@@ -4,13 +4,18 @@
       Changelog
     </h2>
     <h3 class="text-lg font-semibold">
-      Data
+      25 October 2021
     </h3>
     <ul class="list-decimal list-inside">
+      <li>Persistent state, now your current build will be saved even when you press F5 or close the tab. You can clear current build in 'smartphone'</li>
       <li>Lazy loading for images</li>
       <li>Free stuff gets properly deleted if you unselect perk that gave them.</li>
       <li>Sorting for Worlds by name and rating</li>
       <li>Added most of Heritage freebies except Transhuman types, formatting of heritage text</li>
+      <li>Index of Everything</li>
+      <li>Infinite scrolling of Companions</li>
+      <li>Better formatting for some perks</li>
+      <li>Bug fixes, adding more new bugs.</li>
     </ul>
     <h3 class="text-lg font-semibold">
       22 October 2021

@@ -124,7 +124,7 @@ export default defineComponent({
 
     const addWorld = handleSubmit((values) => {
       if (proposeGlobal.value)
-        proposeWorld(values)
+        proposeWorld({ ...values, date: new Date().toString() })
 
       if (props.editMode) values.worldName = `${values.worldName} (AU)`
       if (localSave.value) localUserWorlds.value.push(values)

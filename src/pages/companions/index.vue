@@ -16,29 +16,30 @@
       <div class="hidden md:block">
         Characters in database - {{ charArr.length }}
       </div>
+      <Button label="Add Character" @click="() => (editMode = false, toggleShowAddCharacter())" />
     </div>
     <div v-else class="">
       Loading... <span class="inline-block text-xl"><eos-icons:bubble-loading /></span>
     </div>
     <Foldable v-if="allUserCharacters.length" class="text-lg mb-2" title="User Characters">
       <div class="mb-4 flex flex-wrap overflow-y-auto">
-        <CompanionCard v-for="char in allUserCharacters" :key="char.name" :char="char" :is-user-char="true" />
+        <CompanionCard v-for="char in allUserCharacters" :key="char.name" :char="char" :is-user-char="true" :lazy="false" />
       </div>
     </Foldable>
-    <div ref="waifuList" class="flex flex-wrap flex-grow overflow-y-auto pb-8">
+    <div ref="waifuList" class="flex flex-wrap flex-grow overflow-y-auto pb-8" @edit-companion="editCompanion">
       <CompanionCard
         v-for="{ item: char } in filteredCharacters"
-        :key="char.uid"
+        :key="char.u"
         :char="char"
+        @edit-companion="editCompanion"
       />
       <div v-if="!filteredCharacters.length" class="text-center flex-grow">
         <p v-if="search !== ''">
           No characters found.
         </p>
-        <Button label="Add Character" @click="() => (editMode = false, toggleShowAddCharacter())" />
       </div>
     </div>
-    <AddCharacter v-if="showAddCharacter" :world="characterToEdit" :edit-mode="editMode" @click="toggleShowAddCharacter" />
+    <AddCharacter v-if="showAddCharacter" :character="characterToEdit" :edit-mode="editMode" @click="toggleShowAddCharacter" />
   </div>
 </template>
 
@@ -98,20 +99,46 @@ onMounted(async() => {
 const options = {
   includeScore: true,
   findAllMatches: true,
+  useExtendedSearch: true,
   threshold: 0.1,
-  keys: ['name', 'world'],
+  keys: ['n', 'w', 't'],
 }
 
 // const charArr = computed(() => Object.values(characters))
 const fuse = computed(() => new Fuse(charArr.value, options))
 
 const filteredCharacters = computed(() => {
-  if (tier.value === 0) return fuse.value.search(search.value, { limit: limit.value })
-  else return charArr.value.filter(char => char.tier === tier.value).slice(0, limit.value).map(x => ({ item: x }))
+  const sr = search.value || '!^xcv'
+  const sopt = {
+    $and: [{ t: tier.value !== 0 ? `${tier.value}` : '!z' }, { $or: [{ n: sr }, { w: sr }] }],
+  }
+  return fuse.value.search(sopt, { limit: limit.value })
 })
 
 watch(filteredCharacters, () => nextTick(() => lazyLoadImg(waifuList.value)))
 
 const allUserCharacters = computed(() => userCharacters.value.concat(localUserCharacters.value))
+
+const handleScroll = () => {
+  if (waifuList.value) {
+    const element = waifuList.value
+    if (element.scrollHeight - element.scrollTop <= element.clientHeight)
+      limit.value += 10
+  }
+}
+
+onMounted(() => {
+  waifuList?.value?.addEventListener('scroll', handleScroll)
+})
+
+onUnmounted(() => {
+  waifuList?.value?.removeEventListener('scroll', handleScroll)
+})
+
+function editCompanion(char: any) {
+  characterToEdit.value = char
+  editMode.value = true
+  toggleShowAddCharacter()
+}
 
 </script>

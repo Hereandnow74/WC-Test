@@ -52,6 +52,27 @@ export const TOOLTIPS = {
   'Enemy': 'Enemies - when you and an enemy are first connected to the same world, your smart devices will receive alerts with each other’s name and face: as you look at that moment, minus any makeup. Like rivals, enemies will also pursue you across worlds. Assume that every enemy you encounter seeks to stripmine your visited worlds of all credit value, claim your retinue as their own, or even sell them off for credits. The only choice is to kill or be killed.',
 }
 
+export const rulesList = [
+  { title: 'starting', title2: 'Creating Your Build' },
+  { title: 'captures', title2: 'Extending Your Build: Captures' },
+  { title: 'familiars', title2: 'Familiars' },
+  { title: 'purchases', title2: 'Extending Your Build: Purchases' },
+  { title: 'sales', title2: 'Extending Your Build: Sales' },
+  { title: 'waifu11', title2: 'These Waifus Go Up to 11' },
+  { title: 'danger11', title2: 'Danger Rating 11 Build Rules' },
+  { title: 'pvp', title2: 'Gauntlet(Continuous PvP)' },
+  { title: 'services', title2: 'Company Services' },
+  { title: 'salary', title2: 'Contractor Salary' },
+  { title: 'helpDesk', title2: 'Help Desk Hotline' },
+  { title: 'loans', title2: 'Loans and Credit Debt' },
+  { title: 'missions', title2: 'Missions' },
+  { title: 'refund', title2: 'Refund and Return Policy' },
+  { title: 'arranged', title2: 'Come Out and Play (Arranged PvP)' },
+  { title: 'arrangedConditions', title2: 'Arranged Match Wagers, Victory Conditions, and Risk' },
+  { title: 'arrangedTeam', title2: 'Arranged Team Matches and Prizes' },
+  { title: 'arrangedSpecial', title2: 'Special Arranged Match Rules' },
+]
+
 export const LINKS = computed(() => {
   const links = {} as Record<string, string>
   // const outside = {}

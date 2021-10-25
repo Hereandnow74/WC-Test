@@ -3,8 +3,8 @@
     <div class="p-2 flex flex-col gap-2 min-h-0">
       <div class="flex gap-2">
         <Input v-model="name" placeholder="Name" class="w-3/4" :error-message="errors.name" />
-        <Input v-model="world" placeholder="World Name" class="w-3/4" :error-message="errors.world" />
         <NumberInput v-model="tier" label="Tier" :max="11" :error-message="errors.tier" />
+        <Input v-model="world" placeholder="World Name" class="w-3/4" :error-message="errors.world" />
       </div>
       <Input v-model="image" placeholder="Image URL" :error-message="errors.image" />
       <Input v-model="image_nsfw" placeholder="NSFW Image URL" :error-message="errors.image_nsfw" />
@@ -51,11 +51,11 @@ const schema = toFormValidator(
 const { errors, handleSubmit } = useForm({
   validationSchema: schema,
   initialValues: {
-    tier: props.character.tier || 1,
-    world: props.character.world || '',
-    name: props.character.name || '',
-    image: props.character.image || '',
-    image_nsfw: props.character.image_nsfw || '',
+    tier: props.character.t || 1,
+    world: props.character.w || '',
+    name: props.character.n || '',
+    image: props.character.i || '',
+    image_nsfw: props.character.in || '',
   },
 })
 
@@ -66,7 +66,9 @@ const { value: image } = useField<string>('image')
 const { value: image_nsfw } = useField<string>('image_nsfw')
 
 const addCharacter = handleSubmit((values) => {
-  if (serverSave.value) proposeCompanion(values)
+  if (serverSave.value)
+    proposeCompanion({ ...values, date: new Date().toString() })
+
   if (localSave.value) localUserCharacters.value.push(values)
   else userCharacters.value.push(values)
   toggleShowAddCharacter()

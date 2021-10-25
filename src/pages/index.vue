@@ -2,12 +2,28 @@
 <template>
   <div class="max-w-screen-lg mx-auto flex flex-col gap-4 mt-4 mb-8">
     <div class="texl-lg font-bold mx-auto bg-red-500 bg-opacity-30 rounded border-3 border-red-500 p-2">
-      Waifu Catalog Interactive currently are in early Alpha stage, so a lot of stuff don't work properly yet.
+      Waifu Catalog Interactive currently are in a early Alpha stage, so a lot of stuff don't work properly yet.
     </div>
-    <h1 id="rules" class="text-xl text-center">
+    <h1 id="rules" class="text-xl font-bold text-center">
       Rules
     </h1>
-    <Desc class="bg-warm-gray-200 dark:bg-gray-800" :desc="startingDesc" />
+    <div class="flex flex-col ">
+      <h3 class="text-xl font-semibold">
+        Rules Index
+      </h3>
+      <router-link to="/everything" class="text-green-600 dark:text-green-400 hover:underline text-lg w-max">
+        List of Everything
+      </router-link>
+      <router-link
+        v-for="rule in rulesList"
+        :key="rule.title"
+        :to="{path: '/', hash:'#'+rule.title}"
+        class="text-blue-600 dark:text-blue-400 hover:underline text-lg w-max"
+      >
+        {{ rule.title2 }}
+      </router-link>
+    </div>
+    <Desc id="starting" class="bg-warm-gray-200 dark:bg-gray-800" :desc="startingDesc" />
     <div class="lg:flex bg-amber-100 dark:bg-gray-800 p-4 gap-4 w-full mx-auto">
       <Table :headers="worldTitles" :rows="worldData" class />
       <Table :headers="waifuTitles" :rows="waifuData" class />
@@ -31,7 +47,7 @@
     <Desc id="loans" :desc="loans" class="bg-warm-gray-200 dark:bg-gray-800" />
     <Desc id="missions" :desc="missions" class="bg-warm-gray-200 dark:bg-gray-800" />
     <Desc id="refund" :desc="refund" class="bg-warm-gray-200 dark:bg-gray-800" />
-    <h2 id="services" class="text-xl text-center">
+    <h2 id="arranged" class="text-xl text-center">
       Come Out and Play (Arranged PvP)
     </h2>
     <div class="">
@@ -46,7 +62,7 @@
 </template>
 
 <script lang="ts" setup>
-import { WORLD_RATINGS } from '~/data/constatnts'
+import { WORLD_RATINGS, rulesList } from '~/data/constatnts'
 import {
   startingDesc, pvpRules, effectiveTiers, captures, familiars, purchases, sales, waifu11,
   danger11, services, salary, helpDesk, loans, missions, refund, arranged, arrangedConditions,

@@ -41,6 +41,9 @@
     <h3 class="mx-2 opacity-50 border-b">
       Menu
     </h3>
+    <router-link class="icon-text-btn mx-2" to="/everything">
+      <bi:list-ul />Index
+    </router-link>
     <router-link class="icon-text-btn mx-2" to="/">
       <codicon:book />Rules
     </router-link>

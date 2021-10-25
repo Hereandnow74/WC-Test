@@ -33,7 +33,7 @@ function isAvailable(home: HomePerk): boolean {
     // TODO: Do it better
     if (home.whitelist[0].match(/\(\d+x\)/) && findIndex(homePerks.value, { count: 25 }) !== -1)
       return true
-    if (intersection(home.whitelist, allEffects.value).length === (home.needed ? home.needed : home.whitelist.length))
+    if (intersection(home.whitelist, allEffects.value).length >= (home.needed || home.whitelist.length))
       return true
     if (home.flag) return flags[home.flag]
     return false

@@ -253,12 +253,14 @@
           </div>
         </div>
       </div>
-      <div class="flex h-8 justify-between mt-auto">
-        <div></div>
+      <div class="flex h-8 justify-between items-center px-6 mt-auto">
+        <div class="cursor-pointer hover:text-amber-500" title="Clear Build" @click="clearBuild">
+          <ant-design:clear-outlined />
+        </div>
         <div class="cursor-pointer hover:text-amber-500" @click="toggleFull()">
           <akar-icons:circle />
         </div>
-        <div></div>
+        <div class="w-4"></div>
       </div>
     </div>
   </div>
@@ -274,7 +276,7 @@ const {
   budget, startingWorld, startingOrigin, intensities, binding, homePerks, defensePerks,
   companions, heritage, talentPerks, waifuPerks, ridePerks, miscPerks, luresBought, genericWaifuPerks,
   tier11tickets, heritageCost, bindingCost, ridePerksCost, homePerksCost, talentsCost, defensesCost,
-  miscPerksCost, waifuPerksCost, genericWaifuPerksCost, luresCost, companionsCost, budgetMods,
+  miscPerksCost, waifuPerksCost, genericWaifuPerksCost, luresCost, companionsCost, budgetMods, baseBudget, allEffects,
 } = useStore()
 
 const originText = computed(() => {
@@ -298,6 +300,31 @@ const [visible, toggleFull] = useToggle()
 
 function sellCompanion(uid: number, tier: number) {
   companions.value.splice(findIndex(companions.value, { uid }), 1)
+}
+
+function clearBuild() {
+  baseBudget.value = 55
+  startingWorld.value = {
+    worldName: 'Current world',
+    rating: 2,
+  }
+  startingOrigin.value = {
+    title: '',
+    cost: 0,
+  }
+  intensities.value = []
+  binding.value = []
+  luresBought.value = []
+  heritage.value = []
+  ridePerks.value = []
+  homePerks.value = []
+  talentPerks.value = []
+  defensePerks.value = []
+  miscPerks.value = []
+  genericWaifuPerks.value = []
+  waifuPerks.value = []
+  companions.value = []
+  allEffects.value = []
 }
 
 </script>

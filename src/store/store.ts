@@ -1,4 +1,3 @@
-import { findIndex } from 'lodash'
 import { CHAR_COSTS } from '~/data/constatnts'
 
 export interface World {
@@ -38,44 +37,44 @@ export interface Origin {
   tier?: number
 }
 
-const baseBudget = ref(55)
+const baseBudget = useStorage('baseBudget', 55)
 
-const startingWorld = ref<World>({
+const startingWorld = useStorage<World>('startingWorld', {
   worldName: 'Current world',
   rating: 2,
 })
 
-const startingOrigin = ref<Origin>({
+const startingOrigin = useStorage<Origin>('startingOrigin', {
   title: '',
   cost: 0,
 })
 
-const intensities = ref([] as {
+const intensities = useStorage('intensities', [] as {
   title: string
   intensity: number
 }[])
 
-const binding = ref<Perk[]>([])
+const binding = useStorage<Perk[]>('binding', [])
 
-const luresBought = ref<Perk[]>([])
+const luresBought = useStorage<Perk[]>('luresBought', [])
 
-const heritage = ref<Perk[]>([])
+const heritage = useStorage<Perk[]>('heritage', [])
 
-const ridePerks = ref<Perk[]>([])
+const ridePerks = useStorage<Perk[]>('ridePerks', [])
 
-const homePerks = ref<Perk[]>([])
+const homePerks = useStorage<Perk[]>('homePerks', [])
 
-const talentPerks = ref<Perk[]>([])
+const talentPerks = useStorage<Perk[]>('talentPerks', [])
 
-const defensePerks = ref<Perk[]>([])
+const defensePerks = useStorage<Perk[]>('defensePerks', [])
 
-const miscPerks = ref<Perk[]>([])
+const miscPerks = useStorage<Perk[]>('miscPerks', [])
 
-const genericWaifuPerks = ref<Perk[]>([])
+const genericWaifuPerks = useStorage<Perk[]>('genericWaifuPerks', [])
 
-const waifuPerks = ref<Perk[]>([])
+const waifuPerks = useStorage<Perk[]>('waifuPerks', [])
 
-const companions = ref([] as {
+const companions = useStorage('companions', [] as {
   uid: number
   name: string
   world: string
@@ -88,17 +87,13 @@ const allForSave = {
   defensePerks,
 }
 
-const allEffects = ref([] as string[])
+const allEffects = useStorage('allEffects', [] as string[])
 
 const userWorlds = ref([] as World[])
 const localUserWorlds = useStorage<World[]>('localUserWorlds', [])
 
 const userCharacters = ref([] as Character[])
 const localUserCharacters = useStorage<Character[]>('localUserCharacters', [])
-
-const baseBudgetAfter = computed(
-  () => baseBudget.value + intensities.value.reduce((a, x) => x.intensity > 1 ? a + x.intensity : a, 0),
-)
 
 const budgetMods = reactive({
   plus: 0,
@@ -121,6 +116,10 @@ const flags = reactive({
 //   binding.value.forEach(addFreebies)
 //   heritage.value.forEach(addFreebies)
 // })
+
+const baseBudgetAfter = computed(
+  () => baseBudget.value + intensities.value.reduce((a, x) => x.intensity > 1 ? a + x.intensity : a, 0),
+)
 
 const bindingCost = computed(() => binding.value.reduce((a, x) => a += x.cost, 0))
 const heritageCost = computed(() => heritage.value.reduce((a, x) => a += x.cost === 11111 ? 0 : x.cost, 0))

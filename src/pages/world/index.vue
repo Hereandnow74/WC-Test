@@ -1,15 +1,17 @@
 
 <template>
   <div class="p-2">
-    <div class="max-w-4xl md:p-2 mx-auto flex gap-2 items-center">
-      <Input
-        v-model="search"
-        label="Search"
-        placeholder="World name"
-        class="w-full"
-      />
-      <clarity:eraser-solid class="icon-btn w-8" @click="search = ''" />
-      <span class="hidden md:block pl-4 whitespace-nowrap">Worlds in database: {{ worldsCount }}</span>
+    <div class="max-w-4xl md:p-2 mx-auto flex gap-2 flex-wrap md:flex-nowrap">
+      <div class="flex items-center flex-grow">
+        <Input
+          v-model="search"
+          label="Search"
+          placeholder="World name"
+          class="w-full"
+        />
+        <clarity:eraser-solid class="icon-btn w-8" @click="search = ''" />
+      </div>
+      <span class="hidden md:block whitespace-nowrap">Worlds in database: {{ worldsCount }}</span>
       <div class="flex gap-1 border rounded px-1 select-none">
         <span class="whitespace-nowrap font-bold">Sort By:</span>
         <div

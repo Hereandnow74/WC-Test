@@ -194,7 +194,7 @@ waifu_perks.push({
   title: 'Prime Evil',
   waifu: 'Leah',
   from: 'Diablo',
-  image: 'https://static12.hentai-img.com/upload/20210505/769/786822/530.jpg',
+  image: 'https://i.imgur.com/hPeeYdy.png',
   discount: 980,
   desc: 'Leah is possessed by Diablo, the Prime Evil from her home plane. Their personalities are fused together, creating a new Leah who is still recognizable but (without controls) just as powerful and evil as her father. Leah/Diablo qualifies for special Alterzelu Symbiote theming.',
 })
@@ -290,7 +290,7 @@ waifu_perks.push({
   title: 'The Fodlan Star',
   waifu: 'Byleth',
   from: 'Fire Emblem: Three Houses',
-  image: 'https://static8.hentai-img.com/upload/20200309/619/633737/p=700/44.jpg',
+  image: 'https://i.imgur.com/7kkfOTQ.png',
   cost: 180,
   desc: 'Byleth has come into her own as a vessel of the goddess Sothis. You and your retinue can sense and interact with Sothis normally at all times. The goddess may instead be purchased separately, in her own body, for 200 credits.',
 })
