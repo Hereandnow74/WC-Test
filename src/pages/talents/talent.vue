@@ -14,14 +14,14 @@
         @pickPerk="pickTalent(talent)"
       >
         <template v-if="talent.title === 'Talent Sharing'" #title>
-          <Select class="inline-block" :options="talentPerks.map(x => ({name:x.title, value:x.title}))" @click.stop />
+          <Select class="inline-block ml-1" :options="talentPerks.map(x => ({name:x.title, value:x.title}))" @click.stop />
         </template>
-        <template v-else-if="['OC Donut Steel', 'Template Stacking I', 'Template Stacking II'].includes(talent.title)" #title>
-          <Input placeholder="Power name" class="inline-block w-32 text-base" @click.stop />
-          <Select placeholder="For whom" class="inline-block text-base" :options="targetList" @click.stop />
+        <template v-else-if="talent.power !== undefined" #title>
+          <Input placeholder="Power name" class="inline-block w-32 text-base ml-1" @click.stop />
+          <Select placeholder="For whom" class="inline-block text-base ml-1" :options="targetList" @click.stop />
         </template>
-        <template v-else-if="['Advanced Template Stacking (Arcane)', 'Advanced Template Stacking (Enlightened)', 'Advanced Template Stacking (Green)'].includes(talent.title)" #title>
-          <Select placeholder="For whom" class="inline-block text-base" :options="targetList" @click.stop />
+        <template v-else-if="talent.target !== undefined" #title>
+          <Select placeholder="For whom" class="inline-block text-base ml-1" :options="targetList" @click.stop />
         </template>
       </component>
     </div>

@@ -32,6 +32,8 @@ export interface Talent {
   whitelist?: string[]
   special?: string
   needed?: number
+  target?: string
+  power?: string
 }
 
 export interface Defense {
@@ -557,6 +559,8 @@ talents.push({
 talents.push({
   title: 'Template Stacking 0: Added Potential',
   cost: 5,
+  target: '',
+  power: '',
   special: 'Must be repurchased for each use.',
   desc: `
 <p>The rules of other worlds often bar just anyone from learning or developing special powers. Travelers often find themselves unable to learn any local abilities, even with the help of Science or Soul Talent, simply because they weren’t born in that world. This perk bypasses this limitation, allowing the person it’s bought for, whether yourself or a retinue member, to develop a single local ability, just like anyone else who would normally do so. “A single ability” can be quite broad, ranging from an X-mutation or Quirk unique to the individual, to Remnant-style Aura or Nasuverse Magecraft. These are all generic abilities, in the context of their home worlds; Tier 11 abilities are not eligible.</p>
@@ -570,17 +574,21 @@ talents.push({
   title: 'Template Stacking I',
   cost: 10,
   special: 'Must be repurchased for each use.',
+  target: '',
+  power: '',
   desc: `
 <p>Sometimes you want to copy a generic powerset. This perk lets you do just that, for any power short of Tier 11. If you purchase this perk for yourself at chargen, or for a retinue member at the time you purchase them, you get the powerset outright. The exact capabilities at the time of purchase will be scaled to Tier 4, equivalent to the 10 credit version of Extra. Stacked Templates can then be trained higher with the appropriate Basic Talent, regardless of whether the original version is rated at Tiers 4, 5, or 10. You will also receive a skill framework for your purchase, identical in principle to the ones that “early” captures receive to ensure they learn their missing abilities. This applies to technological “abilities” as well.</p>
 <p>If you purchase this perk for yourself after chargen, or, for a retinue member, after the time of purchase or capture, you may need to recreate an original user’s empowering event, if there was one. You will not make any mistakes or experience unwanted side-effects in the process. This perk is not necessary for any powers that your purchased or captured retinue members might grant you via surgery, ritual, or other means. Note that some origins suck more than others: speaking Truck-kun’s name into a mirror three times in a row is not recommended.</p>
 <p>Racial templates (Kryptonian, Metallic Dragon, Newtype, Saiyan, etc.) can only be stacked in a starting build and will not be equivalent to a Heritage version of that template. Unlike Advanced Tempest Runes (Body), a living, natural example of that template is not necessary. Stacking multiple racial templates together will produce the same diminishing returns as Advanced Tempest Runes (Hybrid). Other powers that are only available to those who were born with them, such as hereditary magic systems, may be acquired through this perk at any time. In that case, there is no empowering event to recreate and thus no requirement for one. Abilities found elsewhere in this catalog are not available through this perk, nor are abilities found only in other CYOAs.</p>
 <p>Abilities that are generic in their source but are expressed uniquely, such as Sacred Gears, Semblances, Academy City Esper powers, Quirks, or the results of the X-gene, will be unique to you as well. This perk and OC Donut Steel together may generate no more than one of each such power per individual.</p>
-<p>If you purchase the same non-racial template for any ten of your retinue members including yourself, including specific examples of that template through OC Donut Steel, the rest of your retinue may gain this perk for that specific template for free. You can control the specifics through your smart device.`,
+<p>If you purchase the same non-racial template for any ten of your retinue members including yourself, including specific examples of that template through OC Donut Steel, the rest of your retinue may gain this perk for that specific template for free. You can control the specifics through your smart device.</p>`,
 })
 
 talents.push({
   title: 'Racial Template',
   cost: 20,
+  target: '',
+  power: '',
   special: 'Chargen only (self). Moment of purchase only (retinue). Must be repurchased for each use.',
   desc: `
   <p>Racial templates (Kryptonian, Metallic Dragon, Newtype, Saiyan, etc.) have additional rules that distinguish them from other kinds. Templates that align with Heritages will not be equivalent to their counterparts. Unlike Advanced Tempest Runes (Body), a living, natural example of that template is not required for your selection with this perk. This perk may not be applied to your captures, nor to purchase Tier 11 racial templates. Your starting version of any racial template will be limited to Tier 4; you can train it up to its natural state in the same ways as other Meta-Talents.</p>
@@ -591,6 +599,8 @@ talents.push({
 talents.push({
   title: 'OC Donut Steel',
   cost: 10,
+  target: '',
+  power: '',
   special: 'Must be repurchased for each, use.',
   desc: `
 <p>Sometimes you just want to copy a specific individual’s powerset. This perk lets you do just that, for any individual short of Tier 11. If you purchase this perk for yourself at chargen or for a retinue member at the time you purchase them, you get the power outright. The exact capabilities at the time of purchase will be scaled to Tier 4 and can be trained higher with the appropriate Basic Talent - regardless of whether the original version is rated at Tiers 4, 5, or 10. You will also receive a skill framework for your purchase, identical in principle to the ones that “early” captures receive to ensure they learn their missing abilities. This applies to technological “abilities” as well. For characters that are made from multiple other characters, including the purchasable versions of many Nasuverse Servants in this catalog, each component must be bought separately.</p>
@@ -613,6 +623,7 @@ talents.push({
 talents.push({
   title: 'Advanced Template Stacking (Arcane)',
   cost: 100,
+  target: '',
   whitelist: ['Science Talent', 'Soul Talent'],
   desc: `
 <p>The entire spectrum of scientific magic styles is now available to you without further restriction. You must still encounter such styles before you can use them, whether in the field, buying them with OC Donut Steel or Template Stacking, or through the purchase of a retinue member who has one. Additionally, such styles are more effective when you use them and easier to develop. </p>
@@ -622,6 +633,7 @@ talents.push({
 talents.push({
   title: 'Advanced Template Stacking (Enlightened)',
   cost: 100,
+  target: '',
   whitelist: ['(Psychic Talent OR (Body Talent and Martial Talent))', 'Soul Talent'],
   desc: `
 <p>The entire spectrum of ki arts and personal mystical powers are now available to you without further restriction. You must still encounter any such arts and styles before you can use them, whether in the field, buying them with OC Donut Steel or Template Stacking, or through the purchase of a retinue member who has one. Additionally, such arts and styles are more effective and easier to control. This also applies to the inner powers gained from certain Heritages.</p>
@@ -631,6 +643,7 @@ talents.push({
 talents.push({
   title: 'Advanced Template Stacking (Green)',
   cost: 100,
+  target: '',
   whitelist: ['Wild Talent', 'Soul Talent'],
   desc: `
 <p>The entire spectrum of magical styles that draw mystical power from one’s surroundings are now available to you without further restriction. This includes, but is not limited to, Warhammer’s Winds, a Planeswalker’s Lands, Geomancy, or anything powered by leylines or background magical fields. You must still encounter any such styles before you can use them, whether in the field, buying them with OC Donut Steel or Template Stacking, or through the purchase of a retinue member who has one. Additionally, such arts and styles are more effective and easier to control.</p>

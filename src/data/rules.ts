@@ -1,5 +1,5 @@
 export const startingDesc = `<h3 class="font-bold text-lg">Creating Your Build</h3>
-<p>First, pick a starting world. Depending on that world’s danger rating, measured on a scale from 1 to 10, you’ll be assigned a number of credits with which to make the rest of your purchases. Danger ratings are weighed based on the power of the typical combatants, the average danger level to ordinary people living in that world, and especially the actual cost of what might be needed to survive in that world. Additionally, as you may choose when you enter a world, doing so during an active apocalyptic scenario may raise a world’s rating by one or even two tiers. Specific worlds and their ratings are listed in the second page of the spreadsheet.</p>
+<p>First, pick a starting world. Depending on that world’s danger rating, measured on a scale from 1 to 10, you’ll be assigned a number of credits with which to make the rest of your purchases. Danger ratings are weighed based on the power of the typical combatants, the average danger level to ordinary people living in that world, and especially the actual cost of what might be needed to survive in that world. Additionally, as you may choose when you enter a world, doing so during an active apocalyptic scenario may raise a world’s rating by one or even two tiers. Specific worlds and their ratings are listed <router-link class='text-blue-500' to='/world'>here</router-link>.</p>
 <p>Next, modify your starting budget by your intensity multiplier. The base multiplier is 1x. This multiplier is modified using the co-operative and PvP options found in the CYOA Modes section. All changes to the intensity multiplier are additive.</p>
 <p>Now that you know your budget, pick an Origin, one Binding-type control, and as many of the Lure-type controls, Perks, and waifus or husbandos as you can afford. The company’s Waifus and Husbandos are all clones manufactured on demand, except where noted. They come packaged with their iconic outfits, personal equipment, and familiars or treasured pets, when appropriate. The largest equipment normally allowed are motorcycles, but there are some rare exceptions. For your own ease of accounting, you may only purchase one copy of any distinct entry at a time. They are sorted into eleven tiers, each of which has a different cost. </p>
 `
@@ -62,6 +62,10 @@ export const danger11 = `<h3 class="font-bold text-lg">Danger Rating 11 Build Ru
 Once your build is finalized, any leftover credits will carry forward to your regular account. This remainder may not be accessed before seven days (168 hours) have passed and may be used for any purpose. You may start in any world you like, regardless of the above Danger restrictions. If you start in your waifu’s homeworld, Yoink will automatically be applied at no cost. Go anywhere you want, follow the special rules, and have fun.
 `
 
+export const creditValue = `
+<h3 class="font-bold text-lg">PvP Credit Value</h3>
+<p>This is the sum of the list prices for you and your retinue’s effective tiers after step 5, plus the combined list prices of your Controls, Catch-a-Ride vehicles, Talents & Defenses, and Demiplanes & Dungeons perks. Tier 11s are valued at their tickets' exchange rate of 2000 credits.</p>
+`
 export const pvpRules = `
   <h3 class="font-bold text-lg">Gauntlet(Continuous PvP)</h3>
   Starting one week into your journey, another contractor will appear in your current world, with their own
@@ -69,11 +73,12 @@ export const pvpRules = `
   are equal to your PvP credit value, at chargen or the end of the previous round, plus 1 % of that sum per
   contractor you’ve defeated(non - compounding) and then rounded up to the next whole number.
 
-  In formula form:
-
-    P(1 + E100)
-  P = Your PvP credit value
-  E = Number of eliminated Contractors
+  <div class="my-4">
+    <p>In formula form:</p>
+      <code class="text-xl ml-4">P * (1 + E / 100)</code>
+    <p>P = Your PvP credit value</p>
+    <p>E = Number of eliminated Contractors</p>
+  </div>
 
   <p>Each time you defeat or otherwise handle another contractor, you will have seven days to rest before encountering a
   new one, with more experience and skill than the last. Their expenses will be more optimized; their retinue members
@@ -177,6 +182,10 @@ export const arranged = `<p>Smaller-scale PvP matchmaking is available for contr
 <p>Arranged PvP matches take place in pocket dimensions similar to a contractor’s Demiplane. Any biome for this may be chosen as a preference, whether a cityscape, forest, plain, desert, ocean, mountain range, or even a colonized asteroid or other space setting. The size of an arranged match’s arena and number of usable structures scales to the number of participants, so that every contractor has a starting home turf, all spaced roughly equally far apart from each other. Sufficiently large arenas are likely to have multiple biomes, to accommodate the many contractors’ varying preferences.</p>
 `
 
+export const assetValue = `
+<h3 class="font-bold text-lg">PvP Asset Value</h3>
+This is the sum of the list prices for you and your retinue’s effective tiers after step 5, plus the combined list prices of your Catch-a-Ride vehicles.
+`
 export const arrangedConditions = `<h3 class="font-bold text-lg">Arranged Match Wagers, Victory Conditions, and Risk</h3>
 <p>Each participant in an arranged match wagers a percent of their PvP credit value upon entering a match. Casual opponents will wager 5%, Average opponents 10%, and Hardcore opponents 15%, all arounded to the nearest multiple of 5. Player contractors are assumed to be Average and thus wager 10%. This is taken out of their accounts when the match starts.</p>
 <p>The default victory method in arranged matches is regicide: defeat (capture or kill) all opposing contractors. Their retinues are only a concern as far as they can protect their contractor and will be ejected from the arena. Other styles are also available, including but not limited to:</p>

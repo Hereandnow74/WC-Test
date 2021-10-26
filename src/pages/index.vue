@@ -29,7 +29,7 @@
       <Table :headers="waifuTitles" :rows="waifuData" class />
     </div>
     <div>
-      <Desc :desc="effectiveTiers" class="bg-amber-200 text-gray-800 max-w-sm float-right mt-8" />
+      <Desc :desc="effectiveTiers" class="bg-amber-200 text-gray-800 max-w-sm float-right mt-8 mx-2 border-3 border-gray-900" />
       <Desc id="captures" :desc="captures" class="bg-warm-gray-200 dark:bg-gray-800" />
     </div>
     <Desc id="familiars" :desc="familiars" class="bg-warm-gray-200 dark:bg-gray-800" />
@@ -37,7 +37,10 @@
     <Desc id="sales" :desc="sales" class="bg-warm-gray-200 dark:bg-gray-800" />
     <Desc id="waifu11" :desc="waifu11" class="bg-warm-gray-200 dark:bg-gray-800" />
     <Desc id="danger11" :desc="danger11" class="bg-warm-gray-200 dark:bg-gray-800" />
-    <Desc id="pvp" class="bg-warm-gray-200 dark:bg-gray-800" :desc="pvpRules" />
+    <div>
+      <Desc :desc="creditValue" class="bg-amber-200 text-gray-800 max-w-sm float-right mt-8 mx-2 border-3 border-gray-900" />
+      <Desc id="pvp" class="bg-warm-gray-200 dark:bg-gray-800" :desc="pvpRules" />
+    </div>
     <h2 id="services" class="text-xl text-center">
       Company Services
     </h2>
@@ -54,7 +57,10 @@
       <Table :headers="powerHeaders" :rows="powerTier" class="float-right m-4" />
       <Desc id="arranged" :desc="arranged" class="bg-warm-gray-200 dark:bg-gray-800" />
     </div>
-    <Desc id="arrangedConditions" :desc="arrangedConditions" class="bg-warm-gray-200 dark:bg-gray-800" />
+    <div>
+      <Desc :desc="assetValue" class="bg-amber-200 text-gray-800 max-w-sm float-right mt-8 mx-2 border-3 border-gray-900" />
+      <Desc id="arrangedConditions" :desc="arrangedConditions" class="bg-warm-gray-200 dark:bg-gray-800" />
+    </div>
     <Desc id="arrangedTeam" :desc="arrangedTeam" class="bg-warm-gray-200 dark:bg-gray-800" />
     <Desc id="arrangedSpecial" :desc="arrangedSpecial" class="bg-warm-gray-200 dark:bg-gray-800" />
     <div class="pt-4"></div>
@@ -66,7 +72,7 @@ import { WORLD_RATINGS, rulesList } from '~/data/constatnts'
 import {
   startingDesc, pvpRules, effectiveTiers, captures, familiars, purchases, sales, waifu11,
   danger11, services, salary, helpDesk, loans, missions, refund, arranged, arrangedConditions,
-  arrangedSpecial, arrangedTeam,
+  arrangedSpecial, arrangedTeam, creditValue, assetValue,
 } from '~/data/rules'
 import { useTooltips } from '~/logic/misc'
 

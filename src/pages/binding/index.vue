@@ -3,7 +3,7 @@
     <h3 id="bindings" class="text-2xl text-center">
       Bindings <router-link
         :to="{path:'/binding', hash:'#lures'}"
-        class="text-base text-gray-600 dark:text-gray-400"
+        class="text-base text-blue-600 dark:text-blue-400  hover:underline"
       >
         (go to Lures)
       </router-link>
@@ -49,7 +49,7 @@
     <h3 id="lures" class="text-2xl text-center">
       Lures <router-link
         :to="{path:'/binding', hash:'#expansions'}"
-        class="text-base text-blue-600 dark:text-blue-400"
+        class="text-base text-blue-600 dark:text-blue-400 hover:underline"
       >
         (go to Expansions)
       </router-link>
@@ -71,7 +71,7 @@
     <h3 id="expansions" class="text-2xl text-center">
       Lure Expansions  <router-link
         :to="{path:'/binding', hash:'#bindings'}"
-        class="text-base text-blue-600 dark:text-blue-400"
+        class="text-base text-blue-600 dark:text-blue-400 hover:underline"
       >
         (go to Bindings)
       </router-link>
