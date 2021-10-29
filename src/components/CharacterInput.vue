@@ -11,11 +11,11 @@
     <div ref="listEl" hidden>
       <div
         v-for="name in searchResult"
-        :key="name.item.uid"
+        :key="name.item.u"
         class="hover:bg-gray-600"
         @click="chooseChar(name)"
       >
-        {{ name.item.name }} (<span class="text-green-400">T{{ name.item.tier }}</span>) (<span class="text-gray-400">{{ name.item.world }}</span>)
+        {{ name.item.n }} (<span class="text-green-400">T{{ name.item.t }}</span>) (<span class="text-gray-400">{{ name.item.w }}</span>)
       </div>
     </div>
   </div>
@@ -42,7 +42,7 @@ const options = {
   includeScore: true,
   findAllMatches: true,
   threshold: 0.1,
-  keys: ['name', 'world'],
+  keys: ['n', 'w'],
 }
 const fuse = ref(null)
 const listEl = ref<HTMLElement|null>(null)
@@ -76,7 +76,7 @@ const emit = defineEmits(['update:modelValue', 'updateTier'])
 watch(value, () => emit('update:modelValue', value.value))
 
 function chooseChar(char: any) {
-  value.value = char.item.name
-  emit('updateTier', char.item.tier)
+  value.value = char.item.n
+  emit('updateTier', char.item.t)
 }
 </script>

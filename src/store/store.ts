@@ -27,7 +27,7 @@ export interface Perk {
   waifu?: string
   freebies?: object
   refund?: number
-  secondary?: string
+  anything?: string
 }
 
 export interface Origin {
@@ -79,7 +79,9 @@ const companions = useStorage('companions', [] as {
   name: string
   world: string
   tier: number
-  method: 'buy' | 'capture' | 'steal' | 'yoink'
+  priceTier: number
+  sold?: boolean
+  method: 'buy' | 'capture' | 'steal' | 'yoink' | 'used'
 }[])
 
 const allForSave = {
@@ -95,27 +97,22 @@ const localUserWorlds = useStorage<World[]>('localUserWorlds', [])
 const userCharacters = ref([] as Character[])
 const localUserCharacters = useStorage<Character[]>('localUserCharacters', [])
 
-const budgetMods = reactive({
+const budgetMods = useStorage('budgetMods', {
   plus: 0,
   minus: 0,
   plus11: 0,
   minus11: 0,
 })
 
-const flags = reactive({
+const flags = useStorage('flags', {
   noBindings: true,
   noHeritage: true,
   danger11Start: false,
   pvpEnabled: false,
   chargen: true,
   hasARide: false,
+  skipUsed: undefined,
 })
-
-// Give all the freebies
-// watchEffect(() => {
-//   binding.value.forEach(addFreebies)
-//   heritage.value.forEach(addFreebies)
-// })
 
 const baseBudgetAfter = computed(
   () => baseBudget.value + intensities.value.reduce((a, x) => x.intensity > 1 ? a + x.intensity : a, 0),
@@ -134,10 +131,33 @@ const genericWaifuPerksCost = computed(() => genericWaifuPerks.value.reduce((a, 
 const luresCost = computed(() => luresBought.value.reduce((a, x) => a += x.cost === 11111 ? 0 : x.cost, 0))
 
 const companionsCost = computed(() => {
-  const tierMod = flags.noBindings ? 2 : 1
   return companions.value.reduce((a, x) => {
-    if (x.method === 'capture') return x.tier === 11 ? a += 0 : a -= CHAR_COSTS[x.tier - 1] * 0.6 || 1
-    return x.tier === 11 ? a += 0 : a += CHAR_COSTS[x.tier - tierMod] || 1
+    if (x.method === 'buy' && x.tier !== 11)
+      return a += CHAR_COSTS[x.priceTier - 1] || 1
+    if (x.method === 'yoink' && x.tier !== 11)
+      return a += (x.tier - 1) <= 1 ? 2 : (CHAR_COSTS[x.priceTier - 1] || 1) * 1.2
+    if (x.method === 'used' && x.priceTier !== 11)
+      return a += CHAR_COSTS[x.priceTier - 1] || 1
+    return a
+  }, 0)
+})
+
+const companionProfit = computed(() => {
+  return companions.value.reduce((a, x) => {
+    if (x.method === 'capture' && x.tier !== 11) {
+      let captureCost = CHAR_COSTS[x.tier - 1] * 0.6
+      captureCost = captureCost < 1 ? 1 : captureCost
+      return a += captureCost
+    }
+    return a
+  }, 0)
+})
+
+const companionProfitSold = computed(() => {
+  return companions.value.reduce((a, x) => {
+    if (x.sold && x.tier !== 11)
+      return a += Math.round(CHAR_COSTS[x.tier - 1] * 0.2)
+    return a
   }, 0)
 })
 
@@ -149,13 +169,20 @@ const budget = computed(() => {
   let bd = baseBudget.value
   if (bd === 11111) {
     bd = 0
-    flags.danger11Start = true
+    flags.value.danger11Start = true
   }
 
   return (bd + intensityFlat) * (1 + intenMultiplier) - startingOrigin.value.cost
       - bindingCost.value - heritageCost.value - luresCost.value - ridePerksCost.value - homePerksCost.value
       - talentsCost.value - defensesCost.value - miscPerksCost.value - waifuPerksCost.value
-      - genericWaifuPerksCost.value - companionsCost.value - budgetMods.minus + budgetMods.plus
+      - genericWaifuPerksCost.value - companionsCost.value
+      - budgetMods.value.minus + budgetMods.value.plus + companionProfit.value + companionProfitSold.value
+})
+
+const companionTicketProfit = computed(() => {
+  return companions.value.reduce((a, x) => {
+    return x.priceTier === 11 && x.method === 'capture' ? a += 1 : a
+  }, 0)
 })
 
 const tier11tickets = computed(() => {
@@ -173,12 +200,20 @@ const tier11tickets = computed(() => {
   const genericWaifuPerksCost = genericWaifuPerks.value.reduce((a, x) => a += x.cost === 11111 ? 1 : 0, 0)
   const luresCost = luresBought.value.reduce((a, x) => a += x.cost === 11111 ? 1 : 0, 0)
   const companionsCost = companions.value.reduce((a, x) => {
-    if (x.method === 'capture') return x.tier === 11 ? a -= 1 : a
-    return x.tier === 11 ? a += 1 : a
+    return x.priceTier === 11 && x.method !== 'capture' ? a += 1 : a
   }, 0)
 
   return ticket - heritageCost - ridePerksCost - homePerksCost - talentsCost - defensesCost - miscPerksCost
-    - waifuPerksCost - genericWaifuPerksCost - luresCost - companionsCost - budgetMods.minus11 + budgetMods.plus11
+    - waifuPerksCost - genericWaifuPerksCost - luresCost - companionsCost
+    - budgetMods.value.minus11 + budgetMods.value.plus11 + companionTicketProfit.value
+})
+
+const targetWaifuList = computed(() => {
+  return companions.value.map(x => ({ name: x.name, value: x.name }))
+})
+
+const targetList = computed(() => {
+  return [{ name: 'You', value: 'You' }, ...targetWaifuList.value]
 })
 
 export function useStore() {
@@ -220,5 +255,9 @@ export function useStore() {
     companionsCost,
     budgetMods,
     allForSave,
+    targetList,
+    targetWaifuList,
+    companionProfit,
+    companionProfitSold,
   }
 }

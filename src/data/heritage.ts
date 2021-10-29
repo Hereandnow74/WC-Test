@@ -6,6 +6,9 @@ export interface Heritage {
   whitelist?: string[]
   desc: string
   freebies?: object
+  table?: string[][]
+  additionalDesc?: string
+  costVariants?: number[]
 }
 
 export const heritages: Heritage[] = []
@@ -268,6 +271,7 @@ heritages.push({
   tree: 'Transhuman',
   type: 'Party',
   cost: 0,
+  costVariants: [0, 5, 15, 20],
   whitelist: ['Full Conversion'],
   desc: `
 <p>As a one- way process, you are able to bring your retinue down the same transhumanism path as you. These upgrades must be done in sequence for a waifu. After spending 120 credits on this perk, you may upgrade your retinue freely yourself without further purchases. Each step in the process takes an hour of effort to accomplish on your own.</p>
@@ -286,6 +290,14 @@ heritages.push({
     defensePerks: ['Trace Defense', 'Destiny Defense', 'Wyldscape Defense'],
   },
   whitelist: ['Essence Upload', 'Essence Reactor'],
+  table: [
+    ['Core Size', 'Mass', 'Core size', 'Range'],
+    ['Least', '1x', 'Baseball', '1km'],
+    ['Lesser', '10x', 'Beachball', '50km'],
+    ['Medium', '100x', 'Grizzly bear', '2,500km'],
+    ['Greater', '1,000x', 'London bus', '(8m) 125,000km'],
+    ['Grand', '10.000X', 'Large hot-air balloon (25m)', '6,250,000km (-2.09 AU)'],
+  ],
   desc: `
 <p>You are no longer limited to a single line of consciousness. At this stage, your mind has expanded even further, the specifics of this vary by Transhuman Type. Take one copy each of Trace Defense and Destiny Defense for free.</p>
 <p>You may upgrade or combine your Cores into larger, more powerful forms, expanding the limit on the number of active consciousness you have at any moment in time. The effort and mass these possess is measured in Least Cores. Each Core has a range, given in parenthesis.</p>
@@ -411,6 +423,15 @@ heritages.push({
     defensePerks: ['Body Defense', 'Body Defense', 'Stress Defense', 'Stress Defense', 'Fatality Defense'],
   },
   whitelist: ['Sanity - Shattering Instruction'],
+  additionalDesc: `
+  <h3 class="text-lg font-semibold text-center">Keyword: Madness</h3>
+  <p>Of the fall to insanity, much is written, but even less is known. If guidelines are desired for the purposes of the Outsider heritage, then the following classes of people may count as mad:</p>
+  <ul class="list-disc list-inside">
+    <li>Those battered and skewered against the rocks of reality: the deluded, the deranged, the deviant, and more. That such maladies are always relative, for what passions strike a man mad in one world may be necessary and righteous in another, is almost academic - it's not the illness itself but the estrangement that calls out to the Outsider, the experience of being a stranger in a strange land and knowing one belongs to the world of some distant star.</li>
+    <li>Those warped and crushed in spirit by the senseless whims of other men: people made strangers to themselves by ongoing supernatural mental influence or twisted into horrifying new shapes by sufficiently comprehensive but ultimately banal evils. Naturally, one's retinue as an Outsider always falls into this category, even in the rare case that those in question would have good reason to contest descriptions of themselves as bent and warped.</li>
+    <li>Those turned against their own nature and spurred to writhing futility. This includes all those who are fundamentally tortured by their own existences, no matter if they're pinned beneath the weight of some part of their own being or if they're asphyxiating in the void which is naively called the 'search for meaning'. In their own way, such people are always acutely closer to the undiluted reality that the Outsider inhabits than any other.</li>
+  </ul>
+  `,
   desc: `
 <p>The puissance of dream lies not in its domestication as a mere hallucination, but in the mystery that presides when it is left to run wild - every encounter with the border of consciousness is a journey to the limits of the world, neither memorable nor possible to forget. But the Outsider is of that place, and the Outsider never leaves.</p>
 <p>You and all of your pupils now treat all time sleeping, in a trance, or otherwise similarly inactive, as if it were time spent training under your own direct instruction; this requires no amount of mental attention on your part to sustain, and doesn’t strain your students or otherwise detract from the recuperative benefits of rest. In extremis, death - that is, the cessation of existence - always counts as a form of inactivity for purposes of this power.</p>

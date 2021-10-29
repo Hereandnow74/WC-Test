@@ -12,7 +12,11 @@
         @change="$emit('update:modelValue', ($event.target as HTMLInputElement).value)"
       >
         <option value="" disabled selected hidden>{{ placeholder }}</option>
-        <option v-for="option in options" :key="option.name" :value="option.value">{{ option.name }}</option>
+        <option
+          v-for="opt in options"
+          :key="opt.name !== undefined ? opt.name : opt"
+          :value="opt.value !== undefined ? opt.value : opt"
+        >{{ opt.name !== undefined ? opt.name : opt }}</option>
       </select>
     </label>
     <span v-if="errorMessage" class="text-xs text-red-600 dark:text-red-300">

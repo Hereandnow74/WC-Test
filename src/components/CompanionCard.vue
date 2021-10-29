@@ -4,37 +4,50 @@
   >
     <div class="bg-gray-800 border border-gray-800 h-full flex flex-col rounded">
       <div class="flex-grow relative">
-        <img ref="companionEl" class="rounded absolute object-cover h-full w-full object-top" :data-src="char.image || char.i || 'img/placeholder.jpg'" :alt="char.name || char.n">
+        <img ref="companionEl" class="rounded absolute object-cover h-full w-full object-top" :data-src="charData.image || 'img/placeholder.jpg'" :alt="charData.name">
         <icon-park-outline:full-screen-one
           class="absolute top-1 right-1 hover:text-blue-400 cursor-pointer mix-blend-difference"
-          @click="() => (showModal = true, modalImage=char.image || char.i)"
+          @click="() => (showModal = true, modalImage=charData.image)"
         />
       </div>
       <div class="py-2 h-max">
         <h4 class="text-xl justify-center flex items-center px-1">
-          <span>{{ char.name || char.n }} (<span class="text-blue-200">{{ char.world || char.w }}</span>)</span>
-          <bx:bxs-edit class="ml-auto hover:text-yellow-600 cursor-pointer" @click="$emit('editCompanion', char)" />
-          <fluent:delete-20-filled v-if="isUserChar" class="hover:text-red-500 ml-2 cursor-pointer" @click="deleteCharacter" />
+          <span>{{ charData.name }} (<span class="text-blue-200">{{ charData.world }}</span>)</span>
+          <div class="flex items-center ml-auto">
+            <a
+              v-if="charData.sourceImage"
+              class="block h-6"
+              :href="charData.sourceImage"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Source"
+            >
+              <eva:external-link-fill class="hover:text-blue-600 cursor-pointer" />
+            </a>
+            <bx:bxs-edit class="hover:text-yellow-600 cursor-pointer" @click="$emit('editCompanion', charData)" />
+            <fluent:delete-20-filled v-if="isUserChar" class="hover:text-red-500 ml-2 cursor-pointer" @click="deleteCharacter" />
+          </div>
         </h4>
         <div class="flex justify-between px-4">
           <div class="text-gray-400">
-            Tier: <span class="text-amber-300">{{ (char.tier || char.t) }}</span>
+            Tier: <span class="text-amber-300">{{ (charData.tier) }}</span>
           </div>
           <div class="text-gray-400">
-            Cost: <span class="text-amber-300">{{ CHAR_COSTS[(char.tier || char.t) - 1] }}</span>
+            Cost: <span class="text-amber-300">{{ charData.tier === 11 ? 'Tier 11 ticket' : CHAR_COSTS[charData.tier - 1] }}</span>
             <span
-              v-if="flags.noBindings && (char.tier || char.t) !== 11 && (char.tier || char.t) !== 1"
+              v-if="flags.noBindings && (charData.tier) !== 11 && (charData.tier) !== 1"
               title="Discount from No Binding"
-            >({{ CHAR_COSTS[(char.tier || char.t) - 2] }})</span>
+            >({{ CHAR_COSTS[(charData.tier) - 2] }})</span>
           </div>
         </div>
         <div class="flex justify-center gap-4">
-          <template v-if="!isAlredyBought(char.uid || char.u)">
-            <Button size="Small" label="buy" @click="buyCompanion(char)" />
-            <Button size="Small" label="capture" @click="captureCompanion(char)" />
+          <template v-if="!isAlredyBought(charData.uid)">
+            <Button size="Small" bg-color="bg-red-500" label="buy" @click="buyCompanion" />
+            <Button size="Small" bg-color="bg-orange-500" label="yoink" @click="yoinkCompanion" />
+            <Button v-if="charData.tier !== 11" size="Small" bg-color="bg-violet-600" label="used" @click="usedModal = true" />
+            <Button size="Small" label="capture" @click="captureCompanion" />
           </template>
-          <Button v-else size="Small" label="undo" @click="undoBuying(char.uid || char.u)" />
-          <a v-if="char.sourceImage" class="px-1 rounded bg-blue-600" :href="char.sourceImage" target="_blank" rel="noopener noreferrer">Image Source</a>
+          <Button v-else size="Small" label="undo" @click="undoBuying(charData.uid)" />
         </div>
       </div>
     </div>
@@ -43,6 +56,9 @@
         <img class="object-none" :src="modalImage" alt="full image">
       </div>
     </div>
+    <teleport to="#app">
+      <SlightlyUsed v-if="usedModal" :char="charData" @click="usedModal = false" @buyUsed="slightlyCompanion" />
+    </teleport>
   </div>
 </template>
 
@@ -68,16 +84,34 @@ const props = defineProps({
 
 const modalImage = ref('')
 const showModal = ref(false)
+const usedModal = ref(false)
 const companionEl = ref<HTMLImageElement| null>(null)
+const charData = props.char.t ? { uid: props.char.u, name: props.char.n, world: props.char.w, tier: props.char.t, image: props.char.i, sourceImage: props.char.s } : props.char
 
 const { flags, companions, localUserCharacters } = useStore()
 
-function buyCompanion(char: any) {
-  companions.value.push({ uid: char.uid || char.u, name: char.name || char.n, world: char.world || char.w, tier: (char.tier || char.t), method: 'buy' })
+const priceTier = (t: number): number => flags.value.noBindings && t !== 11 && t !== 1 ? t - 1 : t
+
+function buyCompanion() {
+  const char = charData
+  companions.value.push({ uid: char.uid, name: char.name, world: char.world, tier: char.tier, priceTier: priceTier(char.tier), method: 'buy' })
 }
 
-function captureCompanion(char: any) {
-  companions.value.push({ uid: char.uid || char.u, name: char.name || char.n, world: char.world || char.w, tier: (char.tier || char.t), method: 'capture' })
+function captureCompanion() {
+  const char = charData
+  companions.value.push({ uid: char.uid, name: char.name, world: char.world, tier: char.tier, priceTier: priceTier(char.tier), method: 'capture' })
+}
+
+function yoinkCompanion() {
+  const char = charData
+  companions.value.push({ uid: char.uid, name: char.name, world: char.world, tier: char.tier, priceTier: priceTier(char.tier), method: 'yoink' })
+}
+
+function slightlyCompanion(slightlyUsedData: any) {
+  const char = charData
+  const tier = charData.tier + slightlyUsedData.tier
+  const pt = priceTier(charData.tier + slightlyUsedData.tier - slightlyUsedData.traumaTier)
+  companions.value.push({ uid: char.uid, name: char.name, world: char.world, tier, priceTier: pt, method: 'used' })
 }
 
 function undoBuying(uid: number) {

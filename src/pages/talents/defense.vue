@@ -1,6 +1,9 @@
 <template>
   <div class="md:p-2">
-    <Desc :desc="defenceDesc" class="p-2 mb-4 max-w-4xl mx-auto bg-violet-200 dark:bg-violet-900" />
+    <div class=" mb-4 max-w-4xl mx-auto">
+      <Desc :desc="additionalDefenseDesc" class="bg-amber-200 text-gray-800 text-sm md:text-base w-3/5 float-right mt-8 mx-2 border-3 border-gray-900" />
+      <Desc :desc="defenceDesc" class="p-2 bg-violet-200 dark:bg-violet-900" />
+    </div>
     <div class="md:column-count-2 lg:column-count-3 pb-8">
       <PerkCard
         v-for="defense in defenses"
@@ -10,14 +13,10 @@
           : 'gray-200 dark:gray-600'"
         :is-available="isAvailable(defense)"
         :is-active="findIndex(defensePerks, {title: defense.title}) !== -1"
+        :is-multiple="true"
         :max="2"
-        :calculated-cost="defense.cost*count"
-        @pickPerk="pickDefense(defense)"
+        @pickPerk="pickDefense"
       >
-        <template #title>
-          <Select placeholder="For whom" class="inline-block text-base ml-2" :options="targetList" @click.stop />
-          <NumberInput v-model="count" :min="0" :max="2" class="text-base ml-2" />
-        </template>
       </PerkCard>
     </div>
   </div>
@@ -25,17 +24,13 @@
 
 <script lang='ts' setup>
 import { findIndex, intersection } from 'lodash-es'
-import { defenses, defenceDesc, Defense } from '~/data/talents'
+import { defenses, defenceDesc, additionalDefenseDesc, PerkFull } from '~/data/talents'
 import { useTooltips } from '~/logic/misc'
-import { useStore } from '~/store/store'
+import { Perk, useStore } from '~/store/store'
 
-const targetList = ref([{ name: 'You', value: 'You' }])
-const count = ref(0)
+const { allEffects, defensePerks } = useStore()
 
-const { allEffects, defensePerks, companions } = useStore()
-companions.value.forEach(x => targetList.value.push({ name: x.name, value: x.name }))
-
-function isAvailable(def: Defense): boolean {
+function isAvailable(def: PerkFull): boolean {
   if (!def.whitelist) { return true }
   else {
     if (intersection(def.whitelist, allEffects.value).length >= (def.needed || def.whitelist.length))
@@ -44,13 +39,13 @@ function isAvailable(def: Defense): boolean {
   return false
 }
 
-function pickDefense(def: Defense) {
+function pickDefense(def: PerkFull, saveData: Perk) {
   if (isAvailable(def)) {
     const ind = findIndex(defensePerks.value, { title: def.title })
     if (ind !== -1) {
-      if (count.value !== 0) {
-        defensePerks.value[ind].count = count.value
-        defensePerks.value[ind].cost = def.cost * count.value
+      if (saveData.count !== 0) {
+        defensePerks.value[ind].count = saveData.count
+        defensePerks.value[ind].cost = saveData.cost
       }
       else {
         const heritageToDelete = defensePerks.value.splice(findIndex(defensePerks.value, { title: def.title }))
@@ -58,9 +53,9 @@ function pickDefense(def: Defense) {
       }
     }
     else {
-      if (count.value > 0) {
+      if (saveData.count && saveData.count > 0) {
         allEffects.value.push(def.title)
-        defensePerks.value.push({ title: def.title, cost: def.cost, count: count.value })
+        defensePerks.value.push(saveData)
       }
     }
   }

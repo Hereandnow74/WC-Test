@@ -101,6 +101,7 @@ export const LINKS = computed(() => {
   //   if (Object.prototype.hasOwnProperty.call(outside, key))
   //     console.log(outside[key].filter(x => !links[x]))
   // }
+  links['Directly in Companions'] = 'companions'
   return links
 })
 

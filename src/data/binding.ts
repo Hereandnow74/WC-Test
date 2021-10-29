@@ -35,6 +35,7 @@ export interface Binding {
   max?: number
   freebies?: object
   additionalDesc?: string
+  table?: string[][]
 }
 
 export const bindings: Binding[] = []
@@ -280,7 +281,7 @@ bindings.push({
   whitelist: ['Second-Generation Symbiote'],
   desc: `
 <p>One of our lab’s attempts to hybridize our symbiotes with wild shoggoths has borne fruit. (All interns involved in the incident have been safely restored from backups.) This upgrade allows your symbiote hosts, including yourself, to melt into a semisolid amoeboid form for better infiltration, whether by flowing through vents, along a ceiling or wall, or hitching a ride on a person. Symbiote hosts obey conservation of mass in their slime forms and must remain contiguous. The form may be maintained indefinitely and they otherwise have full control over the form's shape, texture, and coloration. Symbiote hosts that have innate supernatural abilities of biological or genetic origin (ex. X-gene, Quirks, hereditary magic potential, alien racial abilities, etc.) retain them in their slime form. If they have enough room, they may revert to their original or symbiote forms at will, and may also assume a solid "armor" form around another similarly-sized being.</p>
-<p>By doing so, a symbiote host who comes into contact with a capture target can bind them on their own, without aid from a larva. The slime form flows under the target's clothes and equipment, fully encasing them and keeping them compliant with sexual stimulation while injecting symbiote transformative fluid into blood vessels close to the skin and pumping into the digestive or (for female targets) reproductive systems. In this state, the slime form can also mentally converse with the target and speak with their voice, use their slime body as natural weapons, etc., until the target is converted (captured and symbiote-bound). This conversion method obeys the same timeframe and interruption rules as a full-cocoon Shroud binding and may be hastened with all-the-way-through penetration. This will allow symbiote transformative fluid to be absorbed by every part of the target’s digestive system at once. After conversion, the two may separate to reveal the new capture's symbiote form with the same body growth as the other types of symbiote capture. Additional sex is not needed to confim a capture that used this method. Finally, a slime-form may overload their wearer's mind by spiking their libido and sensitivity. This also overloads their own mind, cannot be undone manually, and will only reverse itself when the duo are fully satisfied.</p>
+<p>By doing so, a symbiote host who comes into contact with a capture target can bind them on their own, without aid from a larva. The slime form flows under the target's clothes and equipment, fully encasing them and keeping them compliant with sexual stimulation while injecting symbiote transformative fluid into blood vessels close to the skin and pumping into the digestive or (for female targets) reproductive systems. In this state, the slime form can also mentally converse with the target and speak with their voice, use their slime body as natural weapons, etc., until the target is converted (captured and symbiote-bound). This conversion method obeys the same timeframe and interruption rules as a full-cocoon Shroud binding and may be hastened with all-the-way-through penetration. This will allow symbiote transformative fluid to be absorbed by every part of the target’s digestive system at once. After conversion, the two may separate to reveal the new capture's symbiote form with the same body growth as the other types of symbiote capture. Additional sex is not needed to confirm a capture that used this method. Finally, a slime-form may overload their wearer's mind by spiking their libido and sensitivity. This also overloads their own mind, cannot be undone manually, and will only reverse itself when the duo are fully satisfied.</p>
 <p>If more than one member of your symbiote swarm has entered their slime form, they can combine into a larger slime with one body, two minds, and one will. swarm members may freely enter and exit such fusions without any negative side-effects. If any members of such a fusion have innate biological or genetic abilities, this will catalyze the appearance of those in the others. The specific expressions of these gifts will not always be consistent between subjects. For example, a Quirk user in such a fusion would cause others in it to gain Quirks of their own, and not necessarily similar ones. This feature cannot copy Heritage powers.</p>`,
 })
 
@@ -397,7 +398,7 @@ export const shroudElements = [
     'Freebies': ['Everlasting Talent, Wild Talent, Body Defense, Wild Defense (2x), Creature Defense (2x)'],
     'freebies': {
       talentPerks: ['Everlasting Talent', 'Wild Talent'],
-      defensePerks: ['Body Defens', 'Wild Defense', 'Wild Defense', 'Creature Defense', 'Creature Defense'],
+      defensePerks: ['Body Defense', 'Wild Defense', 'Wild Defense', 'Creature Defense', 'Creature Defense'],
     },
   },
   {
@@ -409,7 +410,7 @@ export const shroudElements = [
     'Freebies': ['Everlasting Talent, Wild Talent, Body Defense, Wild Defense (2x), Creature Defense (2x)'],
     'freebies': {
       talentPerks: ['Everlasting Talent', 'Wild Talent'],
-      defensePerks: ['Body Defens', 'Wild Defense', 'Wild Defense', 'Creature Defense', 'Creature Defense'],
+      defensePerks: ['Body Defense', 'Wild Defense', 'Wild Defense', 'Creature Defense', 'Creature Defense'],
     },
   },
   {
@@ -421,7 +422,7 @@ export const shroudElements = [
     'Freebies': ['Everlasting Talent. Body Defense (2x), Stress Defense, Soul Defense'],
     'freebies': {
       talentPerks: ['Everlasting Talent'],
-      defensePerks: ['Body Defens', 'Body Defense', 'Stress Defense', 'Soul Defense'],
+      defensePerks: ['Body Defense', 'Body Defense', 'Stress Defense', 'Soul Defense'],
     },
   },
   {
@@ -442,7 +443,7 @@ export const shroudElements = [
     'Streamlined costume features': 'Semi-sheer material that glitters and sparkles, feminine designs tend to involve deep cleavage, while masculine tend to involve black latex.',
     'Heavy costume features': 'Dark, spacesuit-like outfit, the material glittering with pinpricks of light like stars.',
     'Freebies': ['Paradox Defense'],
-    'freebies': { defensePerks: ['Paradox Defens'] },
+    'freebies': { defensePerks: ['Paradox Defense'] },
   }]
 
 bindings.push({
@@ -610,6 +611,16 @@ lures.push({
 })
 
 lures.push({
+  title: 'Alluring Whisper: Dirty Minds',
+  cost: 20,
+  whitelist: ['Alluring Whisper'],
+  desc: `
+  <p>That’s not what you said…? When speaking in person to someone you find sexually appealing, they may miss your actual words entirely, hear lewd suggestions instead, and then agree to them. These suggestions will never be activities that you or the target would never do or would interfere with either of your professional duties. Other individuals present may hear either a normal conversation or the same suggestions as the target, only, but not always, hearing the latter if they’re a valid target as well. This perk is a psychic effect and can be resisted by skilled psychics or sufficient density. Targets with crippling self-image issues or sufficient purity will still be affected, but the full impact will only be felt with repeat applications as they rationalize the actions they took while under the influence.</p>
+  <p>For an additional 10 credits, you have full control over this ability’s activation and can trigger it at will against any number of valid targets in a scene.</p>
+`,
+})
+
+lures.push({
   title: 'Alluring Whisper: Siren’s Song',
   cost: 80,
   whitelist: ['Alluring Whisper'],
@@ -660,6 +671,19 @@ lureExpansions.push({
   title: 'Command Seals',
   cost: 5,
   special: 'At least one Nasuverse Servant',
+  table: [
+    ['Master', ' Canon Servant'],
+    ['Rin', 'Artoria (Saber)'],
+    ['Sakura', 'Medusa'],
+    ['Dark Sakura', 'Artoria (Salter)'],
+    ['Irisviel', 'Artoria (Saber)'],
+    ['Reika', 'Jackie'],
+    ['Kohaku', ' Okita'],
+    ['Ritsuka', 'Mash'],
+    ['Hakuno', 'Nero (Saber)'],
+    ['Hakuno', 'Tamamo (Caster)'],
+    ['Hakuno', 'Altera'],
+  ],
   desc: `
 <p>These sets of three Command Seals each will appear somewhere on your body, forming an abstract design unique to you. Each Command Seal allows you to give one unbreakable order to a Servant under your control, along with a power boost for the duration of the order. The more specific the order and the shorter its duration, the stronger the boost and according compulsion, and vice versa. General orders with indefinite durations can, eventually, be ignored, but a specific command with an instant duration will offer the Servant no chance to resist. One spent Command Seal will regenerate every 24 hours. You may have as many sets of seals as you have purchased or captured Servants, counting only the characters denoted as Servants in this CYOA. The first set of seals is free.</p>
 <p>If you purchase or capture an eligible Master from a published Fate/ work, and have at least one Servant per Master, you can delegate a single Servant to each. Canon Master-Servant pairs take priority. Delegate Masters' Command Seals are free and regenerate independently at the same rate as yours, but still count against your total and cannot be directly used by you. If you ever find yourself in an actual Holy Grail War, and all of your Command Seals are delegated, you will still have an inert set of Seals that may be used to summon, or contract with, a Servant locally. A locally summoned or contracted Servant will not be bound unless you apply a Binding-type control.</p>
@@ -690,6 +714,17 @@ lureExpansions.push({
       Retinue member who is a deity or capable of true resurrection
 `,
   image: 'https://i.imgur.com/cNBAVke.png',
+  table: [
+    ['Tier', 'Cap'],
+    ['4', '1'],
+    ['5', '2'],
+    ['6', '5'],
+    ['7', '10'],
+    ['8', '20'],
+    ['9', '50'],
+    ['10', '100'],
+    ['11', 'No limit'],
+  ],
   desc: `
 <p>The legendary Truck-kun is your vehicle. When you or one of your retinue members drives a land vehicle that’s been registered with us as yours, anyone you run over with it will be captured, as if by the Stamp, and sent to a random world that you do not already have access to. Your target must actually die from the impact, but not necessarily immediately. The capture will fail if the target evades your vehicle or survives the impact. The maximum number of active isekai victims you can manage simultaneously scales with the number and tier of deities in your retinue after step 5, as shown in the chart. Your total cap is the sum of the individual caps of each deity in your retinue.</p>
 <p>Worlds your isekai targets are sent to will not become accessible to the rest of your retinue through Exit Stage Left or other company perks until the target completes a local storyline (charges Exit Stage Left to completion). This will count as you charging Exit Stage Left yourself. If the target dies before they can do so and you have Warranty Plan, they will respawn in your demiplane (if you have one) or otherwise near you, where they can be bound through your other means. If you have We Will Meet Again or Rainbow Bridge, they can then return to the world they were sent to, with any reinforcements or other support you choose to give them. Neither successful nor failed isekais are “active” and will not continue to count against your cap above.</p>`,

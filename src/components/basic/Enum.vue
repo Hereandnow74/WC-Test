@@ -2,9 +2,12 @@
   <div @click.stop>
     <div v-if="list.length" class="">
       [
-      <router-link v-for="el, i in listComputed" :key="el" :to="{path: path || '/'+LINKS[el], hash:'#'+el}" :class="color">
+      <router-link v-for="el, i in list" :key="el.title || el" :to="{path: path || '/'+LINKS[el.title || el], hash:'#'+(el.title || el)}" :class="color">
         <span v-if="i != 0" class="text-orange-500">, </span>
-        <span class="hover:underline">{{ listTitles[i] || el }}</span>
+        <span class="hover:underline">{{ el.title2 || el.title || el }}</span>
+        <span v-if="el.anything">({{ el.anything }})</span>
+        <span v-if="el.count && el.count > 1" class="">(x{{ el.count }})</span>
+        <span v-if="el.target || el.waifu" class="">({{ el.target || el.waifu }})</span>
       </router-link>
       ]
     </div>
@@ -37,17 +40,17 @@ const props = defineProps({
   },
 })
 
-const listComputed = computed(() => {
-  if (props.list.length > 0)
-    if (typeof props.list[0] === 'object') return props.list.map(x => x.title)
-  return props.list
-})
+// const listComputed = computed(() => {
+//   if (props.list.length > 0)
+//     if (typeof props.list[0] === 'object') return props.list.map(x => x.title)
+//   return props.list
+// })
 
-const listTitles = computed(() => {
-  if (props.list.length > 0 && props.list[0].title2)
-    return props.list.map(x => x.title2)
-  if (props.list.length > 0 && typeof props.list[0] === 'object')
-    return props.list.map(x => x.title + (x.secondary ? `(${x.secondary})` : '') + (x.count && x.count > 1 ? `(x${x.count})` : ''))
-  return []
-})
+// const listTitles = computed(() => {
+//   if (props.list.length > 0 && props.list[0].title2)
+//     return props.list.map(x => x.title2)
+//   if (props.list.length > 0 && typeof props.list[0] === 'object')
+//     return props.list.map(x => x.title + (x.secondary ? `(${x.secondary})` : '') + (x.count && x.count > 1 ? `(x${x.count})` : ''))
+//   return []
+// })
 </script>

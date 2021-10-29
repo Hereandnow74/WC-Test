@@ -14,16 +14,10 @@
         :key="hr.title"
         :class="isAvailable(hr) ? heritageColors[hr.tree]: 'bg-gray-200 dark:bg-gray-600'"
         :perk="hr"
-        :bg="isAvailable(hr) ? heritageColors[hr.tree]
-          : 'gray-200 dark:gray-600'"
         :is-available="isAvailable(hr)"
         :is-active="findIndex(heritage, {title: hr.title}) !== -1"
-        :calculated-cost="hr.cost || cost"
         @pickPerk="pickHeritage"
       >
-        <template v-if="hr.cost === 0" #title>
-          <Input v-model.number="cost" placeholder="Cost" class="text-base w-14 px-1" @click.stop />
-        </template>
         <template #rules>
           <h6 v-if="hr.tree !== 'None'" class="text-center font-sm text-gray-600 dark:text-gray-400">
             ({{ hr.tree }})
@@ -38,9 +32,8 @@
 import { findIndex, intersection } from 'lodash'
 import { desc, heritages, Heritage } from '~/data/heritage'
 import { addFreebies, deleteFreebies, useTooltips } from '~/logic/misc'
-import { useStore } from '~/store/store'
+import { Perk, useStore } from '~/store/store'
 
-const cost = ref(0)
 const { heritage, allEffects, flags } = useStore()
 onMounted(() => useTooltips())
 
@@ -53,7 +46,7 @@ const heritageColors = {
 }
 
 function isAvailable(hr: Heritage): boolean {
-  if (flags.noHeritage && !hr.whitelist) { return true }
+  if (flags.value.noHeritage && !hr.whitelist) { return true }
   else {
     if (intersection(hr.whitelist, allEffects.value).length === hr?.whitelist?.length)
       return true
@@ -62,7 +55,7 @@ function isAvailable(hr: Heritage): boolean {
   return false
 }
 
-function pickHeritage(hr: Heritage) {
+function pickHeritage(hr: Heritage, saveData: Perk) {
   if (isAvailable(hr)) {
     const ind = findIndex(heritage.value, { title: hr.title })
     if (ind !== -1) {
@@ -74,7 +67,7 @@ function pickHeritage(hr: Heritage) {
     }
     else {
       allEffects.value.push(hr.title)
-      heritage.value.push({ title: hr.title, cost: hr.cost || cost.value, tree: hr.tree, freebies: hr.freebies })
+      heritage.value.push(saveData)
       if (hr.freebies) addFreebies(hr.freebies)
     }
   }

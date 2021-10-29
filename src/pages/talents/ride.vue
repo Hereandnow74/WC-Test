@@ -126,7 +126,7 @@ function isAvailable(perk: Ride): boolean {
     if (intersection(perk.whitelist, allEffects.value).length === perk.whitelist.length) return true
     else return false
   }
-  if (perk.flag) return flags[perk.flag]
+  if (perk.flag) return flags.value[perk.flag]
   return true
 }
 
@@ -136,12 +136,12 @@ function pickRide(ride: Ride) {
     if (ind === -1) {
       allEffects.value.push(selectedRide.title)
       ridePerks.value.push({ ...selectedRide })
-      flags.hasARide = true
+      flags.value.hasARide = true
     }
     else {
       const del = ridePerks.value.splice(ind)
       del.forEach(x => allEffects.value.splice(allEffects.value.indexOf(x.title), 1))
-      flags.hasARide = !!ridePerks.value.length
+      flags.value.hasARide = !!ridePerks.value.length
     }
   }
 }

@@ -84,8 +84,8 @@
             <h3 class="text-lg text-gray-400">
               Binding & Lure
             </h3>
-            <div class="flex gap-1">
-              <span class="text-gray-300">Bindings:</span>
+            <div class="">
+              <span class="text-gray-300 float-left mr-2">Bindings:</span>
               <Enum color="text-blue-400 hover:text-blue-300" :list="binding" path="/binding" empty-message="" />
               <div v-if="!binding.length">
                 <router-link :to="{path: '/binding', hash:'#No Bindings'}">
@@ -93,8 +93,8 @@
                 </router-link>
               </div>
             </div>
-            <div class="flex gap-1">
-              <span class="text-gray-300">Lures:</span>
+            <div class="">
+              <span class="text-gray-300 float-left mr-2">Lures:</span>
               <Enum color="text-blue-400 hover:text-blue-300" :list="luresBought" path="/binding" empty-message="" />
               <div v-if="!luresBought.length">
                 No Lures
@@ -113,8 +113,11 @@
             </h3>
             <ul>
               <!-- TODO: Display addons and variant  -->
-              <li class="flex gap-2 text-gray-300">
-                Ride: <Enum
+              <li class=" text-gray-300">
+                <div class="float-left mr-2">
+                  Ride:
+                </div>
+                <Enum
                   color="text-blue-400 hover:text-blue-300"
                   class="text-gray-200"
                   :list="ridePerks"
@@ -122,8 +125,11 @@
                   empty-message="No Ride"
                 />
               </li>
-              <li class="flex gap-2 text-gray-300">
-                Home: <Enum
+              <li class=" text-gray-300">
+                <div class="float-left mr-2">
+                  Home:
+                </div>
+                <Enum
                   color="text-blue-400 hover:text-blue-300"
                   class="text-gray-100"
                   :list="homePerks"
@@ -131,8 +137,11 @@
                   empty-message="No Home"
                 />
               </li>
-              <li class="flex gap-2 text-gray-300">
-                Talents: <Enum
+              <li class="text-gray-300">
+                <div class="float-left mr-2">
+                  Talents:
+                </div>
+                <Enum
                   color="text-blue-400 hover:text-blue-300"
                   class="text-gray-100"
                   :list="talentPerks"
@@ -140,8 +149,11 @@
                   empty-message="No Talents"
                 />
               </li>
-              <li class="flex gap-2 text-gray-300">
-                Defenses: <Enum
+              <li class="text-gray-300">
+                <div class="float-left mr-2">
+                  Defenses:
+                </div>
+                <Enum
                   color="text-blue-400 hover:text-blue-300"
                   class="text-gray-100"
                   :list="defensePerks"
@@ -149,8 +161,11 @@
                   empty-message="No Defenses"
                 />
               </li>
-              <li class="flex gap-2 text-gray-300">
-                Misc: <Enum
+              <li class="text-gray-300">
+                <div class="float-left mr-2">
+                  Misc:
+                </div>
+                <Enum
                   color="text-blue-400 hover:text-blue-300"
                   class="text-gray-100"
                   :list="miscPerks"
@@ -158,8 +173,11 @@
                   empty-message="No Misc Perks"
                 />
               </li>
-              <li class="flex gap-2 text-gray-300">
-                Generic: <Enum
+              <li class="text-gray-300">
+                <div class="float-left mr-2">
+                  Generic:
+                </div>
+                <Enum
                   color="text-blue-400 hover:text-blue-300"
                   class="text-gray-100"
                   :list="genericWaifuPerks"
@@ -167,8 +185,11 @@
                   empty-message="No Generic Perks"
                 />
               </li>
-              <li class="flex gap-2 text-gray-300">
-                Waifu: <Enum
+              <li class="text-gray-300">
+                <div class="float-left mr-2">
+                  Waifu:
+                </div>
+                <Enum
                   color="text-blue-400 hover:text-blue-300"
                   class="text-gray-100"
                   :list="waifuPerks"
@@ -179,17 +200,24 @@
             </ul>
           </div>
           <div id="Companions">
+            <!-- TODO: Clickable Name and World -->
             <Foldable title="Companions" class="text-lg text-gray-400" :is-open="true">
               <div class="flex flex-col gap-1 text-gray-200 text-base">
-                <div v-for="char in companions" :key="char.uid" class="flex justify-between">
+                <div
+                  v-for="char in companions"
+                  :key="char.uid"
+                  class="flex justify-between"
+                  :class="char.sold ? 'text-gray-600': ''"
+                >
                   <div>
                     {{ char.name }}
                     <span class="text-gray-500"> from </span>{{ char.world }}
                     <span class="text-gray-500"> Tier: </span>
                     <span class="text-green-500">{{ char.tier }}</span>
+                    <span class="px-2 text-red-500">SOLD</span>
                   </div>
-                  <div>
-                    <Button label="return" size="Small" bg-color="bg-orange-500" @click="sellCompanion(char.uid, char.tier)" />
+                  <div v-if="!char.sold">
+                    <Button label="sell" size="Small" bg-color="bg-red-500" @click="sellCompanion(char.uid)" />
                   </div>
                 </div>
               </div>
@@ -197,6 +225,9 @@
           </div>
         </div>
         <div v-if="activeTab === 'Spendings'" class="text-gray-300">
+          <h3 class="mt-4 text-xl mx-4 text-gray-400">
+            Spendings
+          </h3>
           <div class="font-semibold flex justify-between mx-4 border-b border-gray-700">
             Heritage: <span class="text-orange-500">{{ heritageCost }}</span>
           </div>
@@ -233,6 +264,15 @@
           <div class="font-semibold flex justify-between mx-4 border-b border-gray-700">
             Total: <span class="text-green-500">{{ heritageCost + bindingCost + ridePerksCost+homePerksCost+talentsCost+defensesCost+miscPerksCost+waifuPerksCost+genericWaifuPerksCost+luresCost+companionsCost }}</span>
           </div>
+          <h3 class="mt-4 text-xl mx-4 text-gray-400">
+            Profits
+          </h3>
+          <div class="font-semibold flex justify-between mx-4 border-b border-gray-700">
+            Profit from Capturing: <span class="text-yellow-500">{{ companionProfit }}</span>
+          </div>
+          <div class="font-semibold flex justify-between mx-4 border-b border-gray-700">
+            Profit from Selling: <span class="text-yellow-500">{{ companionProfitSold }}</span>
+          </div>
         </div>
         <div v-if="activeTab === 'Manual'" class="text-gray-300 mx-2 mt-2 flex flex-col gap-2">
           <div class="flex justify-between">
@@ -260,7 +300,9 @@
         <div class="cursor-pointer hover:text-amber-500" @click="toggleFull()">
           <akar-icons:circle />
         </div>
-        <div class="w-4"></div>
+        <div class="cursor-pointer hover:text-amber-500" title="Copy Text of Build" @click="copyText">
+          <bx:bx-copy-alt />
+        </div>
       </div>
     </div>
   </div>
@@ -268,7 +310,7 @@
 
 <script lang="ts" setup>
 import { findIndex } from 'lodash-es'
-import { useStore } from '~/store/store'
+import { Perk, useStore } from '~/store/store'
 
 const activeTab = ref('Build')
 
@@ -276,7 +318,8 @@ const {
   budget, startingWorld, startingOrigin, intensities, binding, homePerks, defensePerks,
   companions, heritage, talentPerks, waifuPerks, ridePerks, miscPerks, luresBought, genericWaifuPerks,
   tier11tickets, heritageCost, bindingCost, ridePerksCost, homePerksCost, talentsCost, defensesCost,
-  miscPerksCost, waifuPerksCost, genericWaifuPerksCost, luresCost, companionsCost, budgetMods, baseBudget, allEffects,
+  miscPerksCost, waifuPerksCost, genericWaifuPerksCost, luresCost, companionsCost, budgetMods, baseBudget,
+  allEffects, flags, companionProfit, companionProfitSold,
 } = useStore()
 
 const originText = computed(() => {
@@ -291,15 +334,10 @@ const originText = computed(() => {
   return variants[startingOrigin.value.title]
 })
 
-// const intensityText = computed(() => {
-//   if (intensities.value.length === 0) return 'Base Intensity'
-//   else return `[${intensities.value.map(x => x.title).join(', ')}]`
-// })
-
 const [visible, toggleFull] = useToggle()
 
-function sellCompanion(uid: number, tier: number) {
-  companions.value.splice(findIndex(companions.value, { uid }), 1)
+function sellCompanion(uid: number) {
+  companions.value[findIndex(companions.value, { uid })].sold = true
 }
 
 function clearBuild() {
@@ -325,6 +363,61 @@ function clearBuild() {
   waifuPerks.value = []
   companions.value = []
   allEffects.value = []
+  flags.value = {
+    noBindings: true,
+    noHeritage: true,
+    danger11Start: false,
+    pvpEnabled: false,
+    chargen: true,
+    skipUsed: undefined,
+    hasARide: false,
+  }
+  budgetMods.value = {
+    plus: 0,
+    minus: 0,
+    plus11: 0,
+    minus11: 0,
+  }
+}
+
+function buildString(title: string, items: Perk[], left: object) {
+  let str = `${title}\n`
+  items.forEach((x) => {
+    left.c -= x.cost
+    const count = x.count && x.count > 1 ? ` x${x.count} ` : ''
+    str += `${x.title}${count} -${x.cost} [${left.c}]\n`
+  })
+  return str
+}
+
+function copyText() {
+  const fullCost = { c: baseBudget.value }
+  let full = `Starting World: ${startingWorld.value.worldName}\nStarting budget ${fullCost.c}\n\n`
+
+  full += intensities.value.length
+    ? `Intensity \n${intensities.value.reduce((a, x) =>
+      a += `${x.title} +${fullCost.c * x.intensity} [${(fullCost.c += x.intensity * fullCost.c, fullCost.c)}]\n\n`
+    , '')}`
+    : ''
+
+  full += originText.value ? `${originText.value}\n\n` : ''
+  full += heritage.value.length ? `${buildString('Heritage', heritage.value, fullCost)}\n` : ''
+  full += binding.value.length ? `${buildString('Bindings', binding.value, fullCost)}\n` : ''
+  full += luresBought.value.length ? `${buildString('Lures', luresBought.value, fullCost)}\n` : ''
+  full += ridePerks.value.length ? `${buildString('Rides', ridePerks.value, fullCost)}\n` : ''
+  full += homePerks.value.length ? `${buildString('Home Perks', homePerks.value, fullCost)}\n` : ''
+  full += talentPerks.value.length ? `${buildString('Talents', talentPerks.value, fullCost)}\n` : ''
+  full += defensePerks.value.length ? `${buildString('Defenses', defensePerks.value, fullCost)}\n` : ''
+  full += miscPerks.value.length ? `${buildString('Misc Perks', miscPerks.value, fullCost)}\n` : ''
+  full += genericWaifuPerks.value.length ? `${buildString('Generic Waifu Perks', genericWaifuPerks.value, fullCost)}\n` : ''
+  full += waifuPerks.value.length ? `${buildString('Waifu Perks', waifuPerks.value, fullCost)}\n` : ''
+  full += companions.value.length
+    ? `Companions -${companionsCost.value} [${fullCost.c - companionsCost.value}]\n${companions.value.reduce((a, x) =>
+      a += `${x.name}(T${x.tier}) from ${x.world}\n`
+    , '')}`
+    : ''
+
+  navigator.clipboard.writeText(full)
 }
 
 </script>

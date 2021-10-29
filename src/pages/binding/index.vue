@@ -1,5 +1,5 @@
 <template>
-  <div class="p-2">
+  <div class="sm:p-2">
     <h3 id="bindings" class="text-2xl text-center">
       Bindings <router-link
         :to="{path:'/binding', hash:'#lures'}"
@@ -32,8 +32,6 @@
           : 'gray-200 dark:gray-600'"
         :is-available="isAllowed(bnd)"
         :is-active="findIndex(binding, {title: bnd.title}) !== -1"
-        :is-multiple="!!bnd.multiple"
-        :max="bnd.max || 100"
         :increment="!!bnd.increment"
         @pickPerk="choose"
       >
@@ -134,7 +132,7 @@
 import { findIndex, intersection } from 'lodash-es'
 import { desc, bindings, Binding, lureDesc, lures, lureExpansionDesc, lureExpansions, shroudElements } from '~/data/binding'
 import { addFreebies, deleteFreebies, useTooltips } from '~/logic/misc'
-import { useStore } from '~/store/store'
+import { Perk, useStore } from '~/store/store'
 import PerkCard from '~/components/PerkCard.vue'
 import RitualCircle from '~/components/RitualCircle.vue'
 
@@ -145,13 +143,13 @@ const currentBinding = ref<Binding|null>(null)
 
 onMounted(() => useTooltips())
 
-function choose(bin: Binding, count = 0, cost: number) {
+function choose(bin: Binding, saveData: Perk) {
   if (!isAllowed(bin)) return
   const ind = findIndex(binding.value, { title: bin.title })
   if (ind !== -1) {
-    if (binding.value[ind].count !== count && count > 0) {
-      binding.value[ind].count = count
-      binding.value[ind].cost = cost
+    if (binding.value[ind].count !== saveData.count && saveData.count > 0) {
+      binding.value[ind].count = saveData.count
+      binding.value[ind].cost = saveData.cost
     }
     else {
       const toDel = binding.value.splice(ind)
@@ -159,7 +157,7 @@ function choose(bin: Binding, count = 0, cost: number) {
         if (x.freebies) deleteFreebies(x.freebies)
         allEffects.value.splice(allEffects.value.indexOf(x.title), 1)
       })
-      if (binding.value.length === 0) flags.noBindings = true
+      if (binding.value.length === 0) flags.value.noBindings = true
     }
   }
   else {
@@ -168,15 +166,15 @@ function choose(bin: Binding, count = 0, cost: number) {
       const i = findIndex(shroudElements, { title: bin.element })
       bin.freebies = shroudElements[i].freebies
     }
-    binding.value.push({ title: bin.title, secondary, cost, count, freebies: bin.freebies })
+    binding.value.push({ anything: secondary, ...saveData })
     allEffects.value.push(bin.title)
     if (bin.freebies) addFreebies(bin.freebies)
-    flags.noBindings = false
+    flags.value.noBindings = false
   }
 }
 
 function isAllowed(bin: Binding): boolean {
-  if (flags.noBindings) {
+  if (flags.value.noBindings) {
     if (bin.whitelist) return false
     return true
   }

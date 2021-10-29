@@ -11,17 +11,14 @@
           : 'gray-200 dark:gray-600'"
         :is-available="isAvailable(talent)"
         :is-active="findIndex(talentPerks, {title: talent.title}) !== -1"
-        @pickPerk="pickTalent(talent)"
+        @pickPerk="pickTalent"
       >
         <template v-if="talent.title === 'Talent Sharing'" #title>
-          <Select class="inline-block ml-1" :options="talentPerks.map(x => ({name:x.title, value:x.title}))" @click.stop />
-        </template>
-        <template v-else-if="talent.power !== undefined" #title>
-          <Input placeholder="Power name" class="inline-block w-32 text-base ml-1" @click.stop />
-          <Select placeholder="For whom" class="inline-block text-base ml-1" :options="targetList" @click.stop />
-        </template>
-        <template v-else-if="talent.target !== undefined" #title>
-          <Select placeholder="For whom" class="inline-block text-base ml-1" :options="targetList" @click.stop />
+          <Select
+            class="text-base inline-block ml-1"
+            :options="talentPerks.filter(x=> x.title.includes('Talent')).map(x => ({name:x.title, value:x.title}))"
+            @click.stop
+          />
         </template>
       </component>
     </div>
@@ -30,37 +27,38 @@
 
 <script lang='ts' setup>
 import { findIndex, intersection } from 'lodash-es'
-import { talents, talentsDesc, Talent } from '~/data/talents'
+import { talents, talentsDesc, PerkFull } from '~/data/talents'
 import { useTooltips } from '~/logic/misc'
-import { useStore } from '~/store/store'
+import { Perk, useStore } from '~/store/store'
 
 import PerkCard from '~/components/PerkCard.vue'
 
-const targetList = ref([{ name: 'You', value: 'You' }])
+const { allEffects, talentPerks, defensePerks } = useStore()
 
-const { allEffects, talentPerks, companions } = useStore()
-
-companions.value.forEach(x => targetList.value.push({ name: x.name, value: x.name }))
-
-function isAvailable(tlt: Talent): boolean {
+function isAvailable(tlt: PerkFull): boolean {
   if (!tlt.whitelist) { return true }
   else {
     if (intersection(tlt.whitelist, allEffects.value).length >= (tlt.needed || tlt.whitelist.length))
+      return true
+    if (tlt.title === 'Inexhaustible'
+          && findIndex(talentPerks.value, { title: tlt.whitelist[0] }) !== -1
+          && findIndex(defensePerks.value, { title: 'Soul Defense', count: 2 }) !== -1)
       return true
   }
 
   return false
 }
 
-function pickTalent(tlt: Talent) {
+function pickTalent(tlt: PerkFull, saveData: Perk) {
   if (isAvailable(tlt)) {
-    if (allEffects.value.includes(tlt.title)) {
-      const heritageToDelete = talentPerks.value.splice(findIndex(talentPerks.value, { title: tlt.title }))
-      heritageToDelete.forEach(x => allEffects.value.splice(allEffects.value.indexOf(x.title), 1))
+    const ind = findIndex(talentPerks.value, { title: tlt.title })
+    if (ind !== -1) {
+      const toDel = talentPerks.value.splice(ind)
+      toDel.forEach(x => allEffects.value.splice(allEffects.value.indexOf(x.title), 1))
     }
     else {
       allEffects.value.push(tlt.title)
-      talentPerks.value.push({ title: tlt.title, cost: tlt.cost })
+      talentPerks.value.push(saveData)
     }
   }
 }

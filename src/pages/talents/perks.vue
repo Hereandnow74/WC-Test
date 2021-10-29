@@ -10,7 +10,7 @@
           : 'gray-200 dark:gray-600'"
         :is-available="isAvailable(perk)"
         :is-active="findIndex(miscPerks, {title: perk.title}) !== -1"
-        @pickPerk="pickPerk(perk)"
+        @pickPerk="pickPerk"
       ></PerkCard>
     </div>
   </div>
@@ -18,15 +18,15 @@
 
 <script lang='ts' setup>
 import { findIndex, intersection } from 'lodash-es'
-import { perks, talentsDesc, Perk } from '~/data/talents'
+import { perks, talentsDesc, PerkFull } from '~/data/talents'
 import { useTooltips } from '~/logic/misc'
-import { useStore } from '~/store/store'
+import { Perk, useStore } from '~/store/store'
 
 import PerkCard from '~/components/PerkCard.vue'
 
 const { allEffects, miscPerks } = useStore()
 
-function isAvailable(perk: Perk): boolean {
+function isAvailable(perk: PerkFull): boolean {
   if (!perk.whitelist) { return true }
   else {
     if (intersection(perk.whitelist, allEffects.value).length >= (perk.needed || perk.whitelist.length))
@@ -36,15 +36,13 @@ function isAvailable(perk: Perk): boolean {
   return false
 }
 
-const count = ref(0)
-
-function pickPerk(perk: Perk) {
+function pickPerk(perk: PerkFull, saveData: Perk) {
   if (isAvailable(perk)) {
     const ind = findIndex(miscPerks.value, { title: perk.title })
     if (ind !== -1) {
-      if (count.value !== 0) {
-        miscPerks.value[ind].count = count.value
-        miscPerks.value[ind].cost = perk.cost * count.value
+      if (miscPerks.value[ind].count !== saveData.count && saveData.count > 0) {
+        miscPerks.value[ind].count = saveData.count
+        miscPerks.value[ind].cost = perk.cost * saveData.count
       }
       else {
         const toDel = miscPerks.value.splice(findIndex(miscPerks.value, { title: perk.title }))
@@ -52,10 +50,8 @@ function pickPerk(perk: Perk) {
       }
     }
     else {
-      if (count.value === 0) {
-        allEffects.value.push(perk.title)
-        miscPerks.value.push({ title: perk.title, cost: perk.cost })
-      }
+      allEffects.value.push(perk.title)
+      miscPerks.value.push(saveData)
     }
   }
 }

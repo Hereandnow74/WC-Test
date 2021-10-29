@@ -12,9 +12,6 @@
         :is-active="findIndex(homePerks, {title: homePerk.title}) !== -1"
         @pickPerk="pickHome"
       >
-        <template v-if="homePerk.multiple" #title>
-          <NumberInput v-model="count" :min="0" :max="25" class="text-base ml-2" />
-        </template>
       </PerkCard>
     </div>
   </div>
@@ -22,34 +19,32 @@
 
 <script lang='ts' setup>
 import { findIndex, intersection } from 'lodash-es'
-import { homes, homeDesc, HomePerk } from '~/data/talents'
+import { homes, homeDesc, PerkFull } from '~/data/talents'
 import { useTooltips } from '~/logic/misc'
-import { useStore } from '~/store/store'
+import { Perk, useStore } from '~/store/store'
 
 const { allEffects, homePerks, flags } = useStore()
 
-function isAvailable(home: HomePerk): boolean {
+function isAvailable(home: PerkFull): boolean {
   if (home.whitelist) {
     // TODO: Do it better
     if (home.whitelist[0].match(/\(\d+x\)/) && findIndex(homePerks.value, { count: 25 }) !== -1)
       return true
     if (intersection(home.whitelist, allEffects.value).length >= (home.needed || home.whitelist.length))
       return true
-    if (home.flag) return flags[home.flag]
+    if (home.flag) return flags.value[home.flag]
     return false
   }
   return true
 }
 
-const count = ref(0)
-
-function pickHome(home: HomePerk) {
+function pickHome(home: PerkFull, saveData: Perk) {
   if (isAvailable(home)) {
     const ind = findIndex(homePerks.value, { title: home.title })
     if (ind !== -1) {
-      if (home.multiple && count.value !== 0) {
-        homePerks.value[ind].count = count.value
-        homePerks.value[ind].cost = home.cost * count.value
+      if (home.multiple && saveData.count !== 0) {
+        homePerks.value[ind].count = saveData.count
+        homePerks.value[ind].cost = home.cost * saveData.count
       }
       else {
         const toDel = homePerks.value.splice(ind)
@@ -58,7 +53,7 @@ function pickHome(home: HomePerk) {
     }
     else {
       allEffects.value.push(home.title)
-      homePerks.value.push({ title: home.title, cost: home.cost, count: count.value })
+      homePerks.value.push(saveData)
     }
   }
 }

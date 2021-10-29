@@ -122,7 +122,7 @@ const allUserCharacters = computed(() => userCharacters.value.concat(localUserCh
 const handleScroll = () => {
   if (waifuList.value) {
     const element = waifuList.value
-    if (element.scrollHeight - element.scrollTop <= element.clientHeight)
+    if (element.scrollHeight - element.scrollTop - 50 <= element.clientHeight)
       limit.value += 10
   }
 }
@@ -140,5 +140,4 @@ function editCompanion(char: any) {
   editMode.value = true
   toggleShowAddCharacter()
 }
-
 </script>

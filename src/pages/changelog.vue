@@ -4,6 +4,16 @@
       Changelog
     </h2>
     <h3 class="text-lg font-semibold">
+      29 October 2021
+    </h3>
+    <ul class="list-decimal list-inside">
+      <li>Better formating, author notes, Info tables.</li>
+      <li>You can Yoink and buy Slightly used waifus</li>
+      <li>You can sell companions for 20% of their cost</li>
+      <li>All perks should be purchaseable, some mechanics still don't work</li>
+      <li>Copy Text of A build button</li>
+    </ul>
+    <h3 class="text-lg font-semibold">
       25 October 2021
     </h3>
     <ul class="list-decimal list-inside">

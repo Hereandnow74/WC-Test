@@ -24,12 +24,12 @@
       </router-link>
     </div>
     <Desc id="starting" class="bg-warm-gray-200 dark:bg-gray-800" :desc="startingDesc" />
-    <div class="lg:flex bg-amber-100 dark:bg-gray-800 p-4 gap-4 w-full mx-auto">
-      <Table :headers="worldTitles" :rows="worldData" class />
-      <Table :headers="waifuTitles" :rows="waifuData" class />
+    <div class="lg:flex bg-amber-100 dark:bg-gray-800 p-1 md:p-4 gap-4 w-full mx-auto">
+      <Table :headers="worldTitles" :rows="worldData" class="text-sm md:text-base" />
+      <Table :headers="waifuTitles" :rows="waifuData" class="text-sm md:text-base w-min flex-grow" />
     </div>
     <div>
-      <Desc :desc="effectiveTiers" class="bg-amber-200 text-gray-800 max-w-sm float-right mt-8 mx-2 border-3 border-gray-900" />
+      <Desc :desc="effectiveTiers" class="bg-amber-200 text-gray-800 sm:w-1/2 sm:float-right mt-8 mx-2 border-3 border-gray-900" />
       <Desc id="captures" :desc="captures" class="bg-warm-gray-200 dark:bg-gray-800" />
     </div>
     <Desc id="familiars" :desc="familiars" class="bg-warm-gray-200 dark:bg-gray-800" />
@@ -38,7 +38,7 @@
     <Desc id="waifu11" :desc="waifu11" class="bg-warm-gray-200 dark:bg-gray-800" />
     <Desc id="danger11" :desc="danger11" class="bg-warm-gray-200 dark:bg-gray-800" />
     <div>
-      <Desc :desc="creditValue" class="bg-amber-200 text-gray-800 max-w-sm float-right mt-8 mx-2 border-3 border-gray-900" />
+      <Desc :desc="creditValue" class="bg-amber-200 text-gray-800 md:w-1/2 lg:w-1/3 sm:float-right mt-8 mx-2 border-3 border-gray-900" />
       <Desc id="pvp" class="bg-warm-gray-200 dark:bg-gray-800" :desc="pvpRules" />
     </div>
     <h2 id="services" class="text-xl text-center">
@@ -58,7 +58,7 @@
       <Desc id="arranged" :desc="arranged" class="bg-warm-gray-200 dark:bg-gray-800" />
     </div>
     <div>
-      <Desc :desc="assetValue" class="bg-amber-200 text-gray-800 max-w-sm float-right mt-8 mx-2 border-3 border-gray-900" />
+      <Desc :desc="assetValue" class="bg-amber-200 text-gray-800 sm:w-1/2 sm:float-right mt-8 mx-2 border-3 border-gray-900" />
       <Desc id="arrangedConditions" :desc="arrangedConditions" class="bg-warm-gray-200 dark:bg-gray-800" />
     </div>
     <Desc id="arrangedTeam" :desc="arrangedTeam" class="bg-warm-gray-200 dark:bg-gray-800" />
@@ -77,10 +77,10 @@ import {
 import { useTooltips } from '~/logic/misc'
 
 const worldTitles = ['Danger Rating', 'Difficulty Title', 'Budget']
-const worldData = WORLD_RATINGS.map(x => [x.rating, x.title, x.budget])
+const worldData = WORLD_RATINGS.slice(0, 10).map(x => [x.rating, x.title, x.budget])
 worldData.push([11, 'One', 'Tier 11 ticket'])
 
-const waifuTitles = ['Waifu Tier', 'Cost', 'Steal', 'Capture', 'Capture+Sale', 'Shorthand']
+const waifuTitles = ['Waifu Tier', 'Cost', 'Steal', 'Capture', 'Capture + Sale', 'Short']
 const waifuData = [
   ['T1', '1', '1', '1', '1', ['★', 'text-blue-600']],
   ['T2', '2', '1', '2', '2', ['★★', 'text-blue-600']],
