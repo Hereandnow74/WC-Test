@@ -37,44 +37,52 @@ export interface Origin {
   tier?: number
 }
 
-const baseBudget = useStorage('baseBudget', 55)
+const params = useUrlSearchParams('history')
+const mode = ref<('local' | 'remote' | 'done')>('local')
+if (params.load?.length)
+  mode.value = 'remote'
 
-const startingWorld = useStorage<World>('startingWorld', {
+function storeType<T>(name: string, value: T) {
+  return mode.value === 'local' ? useStorage<T>(name, value) : ref<T>(value)
+}
+const baseBudget = storeType('baseBudget', 55)
+
+const startingWorld = storeType<World>('startingWorld', {
   worldName: 'Current world',
   rating: 2,
 })
 
-const startingOrigin = useStorage<Origin>('startingOrigin', {
+const startingOrigin = storeType<Origin>('startingOrigin', {
   title: '',
   cost: 0,
 })
 
-const intensities = useStorage('intensities', [] as {
+const intensities = storeType('intensities', [] as {
   title: string
   intensity: number
 }[])
 
-const binding = useStorage<Perk[]>('binding', [])
+const binding = storeType<Perk[]>('binding', [])
 
-const luresBought = useStorage<Perk[]>('luresBought', [])
+const luresBought = storeType<Perk[]>('luresBought', [])
 
-const heritage = useStorage<Perk[]>('heritage', [])
+const heritage = storeType<Perk[]>('heritage', [])
 
-const ridePerks = useStorage<Perk[]>('ridePerks', [])
+const ridePerks = storeType<Perk[]>('ridePerks', [])
 
-const homePerks = useStorage<Perk[]>('homePerks', [])
+const homePerks = storeType<Perk[]>('homePerks', [])
 
-const talentPerks = useStorage<Perk[]>('talentPerks', [])
+const talentPerks = storeType<Perk[]>('talentPerks', [])
 
-const defensePerks = useStorage<Perk[]>('defensePerks', [])
+const defensePerks = storeType<Perk[]>('defensePerks', [])
 
-const miscPerks = useStorage<Perk[]>('miscPerks', [])
+const miscPerks = storeType<Perk[]>('miscPerks', [])
 
-const genericWaifuPerks = useStorage<Perk[]>('genericWaifuPerks', [])
+const genericWaifuPerks = storeType<Perk[]>('genericWaifuPerks', [])
 
-const waifuPerks = useStorage<Perk[]>('waifuPerks', [])
+const waifuPerks = storeType<Perk[]>('waifuPerks', [])
 
-const companions = useStorage('companions', [] as {
+const companions = storeType('companions', [] as {
   uid: number
   name: string
   world: string
@@ -84,27 +92,16 @@ const companions = useStorage('companions', [] as {
   method: 'buy' | 'capture' | 'steal' | 'yoink' | 'used'
 }[])
 
-const allForSave = {
-  talentPerks,
-  defensePerks,
-}
+const allEffects = storeType('allEffects', [] as string[])
 
-const allEffects = useStorage('allEffects', [] as string[])
-
-const userWorlds = ref([] as World[])
-const localUserWorlds = useStorage<World[]>('localUserWorlds', [])
-
-const userCharacters = ref([] as Character[])
-const localUserCharacters = useStorage<Character[]>('localUserCharacters', [])
-
-const budgetMods = useStorage('budgetMods', {
+const budgetMods = storeType('budgetMods', {
   plus: 0,
   minus: 0,
   plus11: 0,
   minus11: 0,
 })
 
-const flags = useStorage('flags', {
+const flags = storeType('flags', {
   noBindings: true,
   noHeritage: true,
   danger11Start: false,
@@ -112,7 +109,21 @@ const flags = useStorage('flags', {
   chargen: true,
   hasARide: false,
   skipUsed: undefined,
+  isTranshuman: false,
+  transhumanType: undefined,
 })
+
+const allForSave = {
+  talentPerks,
+  defensePerks,
+  miscPerks,
+}
+
+const userWorlds = ref([] as World[])
+const localUserWorlds = useStorage<World[]>('localUserWorlds', [])
+
+const userCharacters = ref([] as Character[])
+const localUserCharacters = useStorage<Character[]>('localUserCharacters', [])
 
 const baseBudgetAfter = computed(
   () => baseBudget.value + intensities.value.reduce((a, x) => x.intensity > 1 ? a + x.intensity : a, 0),
@@ -172,7 +183,7 @@ const budget = computed(() => {
     flags.value.danger11Start = true
   }
 
-  return (bd + intensityFlat) * (1 + intenMultiplier) - startingOrigin.value.cost
+  return Math.round((bd + intensityFlat) * (1 + intenMultiplier)) - startingOrigin.value.cost
       - bindingCost.value - heritageCost.value - luresCost.value - ridePerksCost.value - homePerksCost.value
       - talentsCost.value - defensesCost.value - miscPerksCost.value - waifuPerksCost.value
       - genericWaifuPerksCost.value - companionsCost.value
@@ -207,6 +218,8 @@ const tier11tickets = computed(() => {
     - waifuPerksCost - genericWaifuPerksCost - luresCost - companionsCost
     - budgetMods.value.minus11 + budgetMods.value.plus11 + companionTicketProfit.value
 })
+
+const totalCost = computed(() => heritageCost.value + bindingCost.value + ridePerksCost.value + homePerksCost.value + talentsCost.value + defensesCost.value + miscPerksCost.value + waifuPerksCost.value + genericWaifuPerksCost.value + luresCost.value + companionsCost.value)
 
 const targetWaifuList = computed(() => {
   return companions.value.map(x => ({ name: x.name, value: x.name }))
@@ -259,5 +272,8 @@ export function useStore() {
     targetWaifuList,
     companionProfit,
     companionProfitSold,
+    totalCost,
+    mode,
+    params,
   }
 }

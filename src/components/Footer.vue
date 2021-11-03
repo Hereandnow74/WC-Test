@@ -52,7 +52,7 @@
             <h3 class="text-lg text-gray-400">
               World
             </h3>
-            <div class="flex gap-2">
+            <div class="flex flex-wrap whitespace-nowrap gap-2">
               <div class="flex gap-2">
                 <span class="text-gray-500 dark:text-gray-400">Name:</span>
                 <span>{{ startingWorld.worldName || 'Unknown' }}</span>
@@ -72,7 +72,7 @@
             <h3 class="text-lg text-gray-400">
               Intensity
             </h3>
-            <Enum color="text-blue-500 hover:text-blue-400" :list="intensities" path="/intensity" empty-message="PvE Mode" />
+            <Enum color="text-blue-400 hover:text-blue-300" :list="intensities" path="/intensity" empty-message="PvE Mode" />
           </div>
           <div id="Origin">
             <h3 class="text-lg text-gray-400">
@@ -210,7 +210,9 @@
                   :class="char.sold ? 'text-gray-600': ''"
                 >
                   <div>
-                    {{ char.name }}
+                    <router-link :to="`/companions/?name=${char.name}`" class="hover:underline">
+                      {{ char.name }}
+                    </router-link>
                     <span class="text-gray-500"> from </span>{{ char.world }}
                     <span class="text-gray-500"> Tier: </span>
                     <span class="text-green-500">{{ char.tier }}</span>
@@ -262,7 +264,7 @@
             Companions: <span class="text-orange-500">{{ companionsCost }}</span>
           </div>
           <div class="font-semibold flex justify-between mx-4 border-b border-gray-700">
-            Total: <span class="text-green-500">{{ heritageCost + bindingCost + ridePerksCost+homePerksCost+talentsCost+defensesCost+miscPerksCost+waifuPerksCost+genericWaifuPerksCost+luresCost+companionsCost }}</span>
+            Total: <span class="text-green-500">{{ totalCost }}</span>
           </div>
           <h3 class="mt-4 text-xl mx-4 text-gray-400">
             Profits
@@ -294,17 +296,29 @@
         </div>
       </div>
       <div class="flex h-8 justify-between items-center px-6 mt-auto">
-        <div class="cursor-pointer hover:text-amber-500" title="Clear Build" @click="clearBuild">
+        <div class="w-16 cursor-pointer hover:text-amber-500" title="Clear Build" @click="clearBuild">
           <ant-design:clear-outlined />
         </div>
         <div class="cursor-pointer hover:text-amber-500" @click="toggleFull()">
           <akar-icons:circle />
         </div>
-        <div class="cursor-pointer hover:text-amber-500" title="Copy Text of Build" @click="copyText">
-          <bx:bx-copy-alt />
+        <div class="flex gap-1">
+          <div class="cursor-pointer hover:text-amber-500" title="Save & Load" @click="showSaveLoad = true">
+            <fluent:save-24-regular />
+          </div>
+          <div class="cursor-pointer hover:text-amber-500" title="Share" @click="showShare = true">
+            <ant-design:share-alt-outlined />
+          </div>
+          <div class="cursor-pointer hover:text-amber-500" title="Copy Text of Build" @click="copyText">
+            <bx:bx-copy-alt />
+          </div>
         </div>
       </div>
     </div>
+    <teleport to="#app">
+      <SaveLoad v-if="showSaveLoad" class="z-20" @click="showSaveLoad = !showSaveLoad" />
+      <Share v-if="showShare" class="z-20" @click="showShare = !showShare" />
+    </teleport>
   </div>
 </template>
 
@@ -313,13 +327,15 @@ import { findIndex } from 'lodash-es'
 import { Perk, useStore } from '~/store/store'
 
 const activeTab = ref('Build')
+const showSaveLoad = ref(false)
+const showShare = ref(false)
 
 const {
   budget, startingWorld, startingOrigin, intensities, binding, homePerks, defensePerks,
   companions, heritage, talentPerks, waifuPerks, ridePerks, miscPerks, luresBought, genericWaifuPerks,
   tier11tickets, heritageCost, bindingCost, ridePerksCost, homePerksCost, talentsCost, defensesCost,
   miscPerksCost, waifuPerksCost, genericWaifuPerksCost, luresCost, companionsCost, budgetMods, baseBudget,
-  allEffects, flags, companionProfit, companionProfitSold,
+  allEffects, flags, companionProfit, companionProfitSold, totalCost,
 } = useStore()
 
 const originText = computed(() => {
@@ -329,6 +345,18 @@ const originText = computed(() => {
     'Extra': `'Extra' with <b>${startingOrigin.value.cost}</b> additional cost`,
     'Substitute': `Substitue as a <b>${startingOrigin.value.character}</b> of T${startingOrigin.value.tier}`,
     'Possess': `Possess a <b>${startingOrigin.value.character}</b> of T${startingOrigin.value.tier}`,
+  } as Record<string, string>
+
+  return variants[startingOrigin.value.title]
+})
+
+const originTextClean = computed(() => {
+  const variants = {
+    'Drop-In': 'Dropped-In',
+    'Walk-In': 'Walked-In',
+    'Extra': `'Extra' with ${startingOrigin.value.cost} additional cost`,
+    'Substitute': `Substitue as a ${startingOrigin.value.character} of T${startingOrigin.value.tier}`,
+    'Possess': `Possess a ${startingOrigin.value.character} of T${startingOrigin.value.tier}`,
   } as Record<string, string>
 
   return variants[startingOrigin.value.title]
@@ -400,7 +428,8 @@ function copyText() {
     , '')}`
     : ''
 
-  full += originText.value ? `${originText.value}\n\n` : ''
+  fullCost.c -= startingOrigin.value.cost || 0
+  full += originTextClean.value ? `${originTextClean.value} -${startingOrigin.value.cost} [${fullCost.c}]\n\n` : ''
   full += heritage.value.length ? `${buildString('Heritage', heritage.value, fullCost)}\n` : ''
   full += binding.value.length ? `${buildString('Bindings', binding.value, fullCost)}\n` : ''
   full += luresBought.value.length ? `${buildString('Lures', luresBought.value, fullCost)}\n` : ''

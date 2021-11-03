@@ -4,7 +4,7 @@
     <h3 class="text-xl">
       Choose your companions
     </h3>
-    <div v-if="!loading" class="flex items-center gap-4 my-2">
+    <div v-if="!loading" class="flex items-center flex-wrap gap-4 my-2">
       <Input
         v-model="search"
         label="Search"
@@ -13,6 +13,12 @@
       <clarity:eraser-solid class="icon-btn w-8" @click="search = ''" />
       <Select v-model.number="tier" :options="tierOptions" />
       <Input v-model.number="limit" class="px-1" :style="`width: ${(''+limit).length + 3}ch`" />
+      <Checkbox
+        v-if="startingWorld.worldName !== 'Current world'"
+        v-model="isLimited"
+        :label="`Limit to ${startingWorld.worldName}`"
+        class="border rounded px-1 border-gray-300 dark:border-gray-500"
+      />
       <div class="hidden md:block">
         Characters in database - {{ charArr.length }}
       </div>
@@ -49,24 +55,28 @@ import { useStore } from '~/store/store'
 
 import { toggleShowAddCharacter, showAddCharacter, lazyLoadImg } from '~/logic'
 import CompanionCard from '~/components/CompanionCard.vue'
+import Checkbox from '~/components/basic/Checkbox.vue'
 
 interface Character {
-  uid: number
-  name: string
-  tier: number
-  cost: number
-  image: string
-  sourceImage: string
-  world: string[]
+  u: number
+  n: string
+  t: number
+  c?: number
+  i?: string
+  in?: string
+  s?: string
+  w?: string[]
 }
 
-const search = ref('')
+const search = ref(' ')
 const limit = ref(10)
 const tier = ref(0)
+const isLimited = ref(false)
 
-const characters = ref({})
+// const characters = ref({})
 const loading = ref(true)
 const loadChars = () => import('~/data/characters.json')
+const loadUsersChars = () => import('~/data/userCharacters.json')
 const charArr = ref([] as Character[])
 
 const editMode = ref(false)
@@ -88,13 +98,7 @@ const tierOptions = [
   { name: '11', value: 11 },
 ]
 
-const { localUserCharacters, userCharacters } = useStore()
-
-onMounted(async() => {
-  characters.value = (await loadChars()).default
-  charArr.value = Object.values(characters.value)
-  loading.value = false
-})
+const { localUserCharacters, userCharacters, startingWorld, params } = useStore()
 
 const options = {
   includeScore: true,
@@ -104,15 +108,28 @@ const options = {
   keys: ['n', 'w', 't'],
 }
 
-// const charArr = computed(() => Object.values(characters))
-const fuse = computed(() => new Fuse(charArr.value, options))
+const fuse = new Fuse(charArr.value, options)
+
+onMounted(async() => {
+  // characters.value = (await loadChars()).default
+  charArr.value.push(...Object.values((await loadUsersChars()).default))
+  charArr.value.push(...Object.values((await loadChars()).default))
+  fuse.setCollection(charArr.value)
+  loading.value = false
+  if (params.name)
+    search.value = params.name
+  else
+    search.value = ''
+})
 
 const filteredCharacters = computed(() => {
   const sr = search.value || '!^xcv'
-  const sopt = {
-    $and: [{ t: tier.value !== 0 ? `${tier.value}` : '!z' }, { $or: [{ n: sr }, { w: sr }] }],
-  }
-  return fuse.value.search(sopt, { limit: limit.value })
+  let sopt: any = {}
+  if (isLimited.value)
+    sopt = { $and: [{ t: tier.value !== 0 ? `${tier.value}` : '!z' }, { w: startingWorld.value.worldName }, { n: sr }] }
+  else
+    sopt = { $and: [{ t: tier.value !== 0 ? `${tier.value}` : '!z' }, { $or: [{ n: sr }, { w: sr }] }] }
+  return fuse.search(sopt, { limit: limit.value })
 })
 
 watch(filteredCharacters, () => nextTick(() => lazyLoadImg(waifuList.value)))

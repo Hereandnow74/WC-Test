@@ -5,18 +5,18 @@
   >
     <div v-for="navItem, i in titles" :key="navItem" class="whitespace-nowrap">
       <router-link
-        class="cursor-pointer hover:text-green-500"
+        class="cursor-pointer hover:text-green-500 flex items-center"
         :class="i <= activeIndex ? 'text-teal-700 dark:text-teal-500': ''"
         :to="links[i]"
         @click="scrollInto(i)"
       >
-        {{ navItem }}
+        <span>{{ navItem }}</span>
+        <el:arrow-right
+          v-if="i !== (items.length - 1)"
+          class="w-[3ch]"
+          :class="i <= activeIndex - 1 ? 'text-teal-600 dark:text-teal-400': 'text-gray-800 dark:text-gray-200'"
+        />
       </router-link>
-      <span
-        v-if="i !== (items.length - 1)"
-        class="px-2 top-1 relative"
-        :class="i <= activeIndex - 1 ? 'text-teal-600 dark:text-teal-400': ''"
-      ><el:arrow-right /></span>
     </div>
     <slot />
   </nav>

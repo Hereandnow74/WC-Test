@@ -66,7 +66,7 @@
       </h3>
       <div><span class="font-bold">Waifu:</span> {{ waifu.waifu }} from {{ waifu.from }}</div>
       <div class="flex gap-4">
-        <span v-if="waifu.cost"><span class="font-bold">Cost:</span> {{ waifu.cost }} </span>
+        <span v-if="waifu.cost"><span class="font-bold">Cost:</span> {{ waifu.cost===11111 ? 'Tier 11 ticket' : waifu.cost }} </span>
         <span v-if="waifu.discount"><span class="font-bold">Refund:</span> {{ waifu.discount }}</span>
       </div>
       <Desc :desc="waifu.desc" class="p-0" />

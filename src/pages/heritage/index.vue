@@ -18,9 +18,20 @@
         :is-active="findIndex(heritage, {title: hr.title}) !== -1"
         @pickPerk="pickHeritage"
       >
+        <template #title>
+          <Select
+            v-if="hr.title === 'First Augmentation'"
+            v-model="flags.transhumanType"
+            :options="['Biomorph', 'Cybermorph', 'Aethermorph']"
+            placeholder="Transhuman type"
+            class="ml-1"
+            @click.stop
+          />
+        </template>
         <template #rules>
           <h6 v-if="hr.tree !== 'None'" class="text-center font-sm text-gray-600 dark:text-gray-400">
-            ({{ hr.tree }})
+            (<span>{{ hr.tree }}</span>
+            <span v-if="flags.isTranshuman && hr.tree === 'Transhuman'"> - {{ flags.transhumanType }}</span>)
           </h6>
         </template>
       </PerkCard>
@@ -33,6 +44,7 @@ import { findIndex, intersection } from 'lodash'
 import { desc, heritages, Heritage } from '~/data/heritage'
 import { addFreebies, deleteFreebies, useTooltips } from '~/logic/misc'
 import { Perk, useStore } from '~/store/store'
+import Select from '~/components/basic/Select.vue'
 
 const { heritage, allEffects, flags } = useStore()
 onMounted(() => useTooltips())
@@ -59,6 +71,12 @@ function pickHeritage(hr: Heritage, saveData: Perk) {
   if (isAvailable(hr)) {
     const ind = findIndex(heritage.value, { title: hr.title })
     if (ind !== -1) {
+      if (hr.typeFreebies)
+        deleteFreebies(hr.typeFreebies[flags.value.transhumanType])
+      if (hr.title === 'First Augmentation') {
+        flags.value.isTranshuman = false
+        flags.value.transhumanType = undefined
+      }
       const toDel = heritage.value.splice(ind)
       toDel.forEach((x) => {
         if (x.freebies) deleteFreebies(x.freebies)
@@ -66,6 +84,13 @@ function pickHeritage(hr: Heritage, saveData: Perk) {
       })
     }
     else {
+      if (hr.title === 'First Augmentation') {
+        flags.value.isTranshuman = true
+        flags.value.transhumanType = flags.value.transhumanType || 'Biomorph'
+        saveData.anything = flags.value.transhumanType
+      }
+      if (hr.typeFreebies)
+        addFreebies(hr.typeFreebies[flags.value.transhumanType])
       allEffects.value.push(hr.title)
       heritage.value.push(saveData)
       if (hr.freebies) addFreebies(hr.freebies)

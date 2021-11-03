@@ -1,9 +1,6 @@
 
 <template>
   <div class="max-w-screen-lg mx-auto flex flex-col gap-4 mt-4 mb-8">
-    <div class="texl-lg font-bold mx-auto bg-red-500 bg-opacity-30 rounded border-3 border-red-500 p-2">
-      Waifu Catalog Interactive currently are in a early Alpha stage, so a lot of stuff don't work properly yet.
-    </div>
     <h1 id="rules" class="text-xl font-bold text-center">
       Rules
     </h1>
@@ -11,6 +8,9 @@
       <h3 class="text-xl font-semibold">
         Rules Index
       </h3>
+      <router-link to="/help" class="text-green-600 dark:text-green-400 hover:underline text-lg w-max">
+        Help
+      </router-link>
       <router-link to="/everything" class="text-green-600 dark:text-green-400 hover:underline text-lg w-max">
         List of Everything
       </router-link>
@@ -64,6 +64,7 @@
     <Desc id="arrangedTeam" :desc="arrangedTeam" class="bg-warm-gray-200 dark:bg-gray-800" />
     <Desc id="arrangedSpecial" :desc="arrangedSpecial" class="bg-warm-gray-200 dark:bg-gray-800" />
     <div class="pt-4"></div>
+    <ShareLoad />
   </div>
 </template>
 
@@ -74,6 +75,7 @@ import {
   danger11, services, salary, helpDesk, loans, missions, refund, arranged, arrangedConditions,
   arrangedSpecial, arrangedTeam, creditValue, assetValue,
 } from '~/data/rules'
+
 import { useTooltips } from '~/logic/misc'
 
 const worldTitles = ['Danger Rating', 'Difficulty Title', 'Budget']

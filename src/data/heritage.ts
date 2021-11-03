@@ -9,6 +9,9 @@ export interface Heritage {
   table?: string[][]
   additionalDesc?: string
   costVariants?: number[]
+  multiple?: boolean
+  max?: number
+  typeFreebies?: any
 }
 
 export const heritages: Heritage[] = []
@@ -170,6 +173,19 @@ heritages.push({
     talentPerks: ['Body Talent'],
     defensePerks: ['Stress Defense', 'Stress Defense'],
   },
+  typeFreebies: {
+    Biomorph: {
+      talentPerks: ['Wild Talent', 'Psychic Talent'],
+      miscPerks: ['Sexual Calibration', 'Fertility Calibration I'],
+      defensePerks: ['Body Defense'],
+    },
+    Cybermorph: {
+      talentPerks: ['Science Talent', 'Martial Talent'],
+    },
+    Aethermorph: {
+      talentPerks: ['Soul Talent', 'Aesthetic Talent'],
+    },
+  },
   desc: `
 <p>You have begun to exceed the limitations of the human form. Select one Transhuman type. For all types, your Smart Device is now part of you and accessible with a thought via a customizable HUD. You are still able to summon a device for waifus to interact with should you wish. Your strength, speed, durability, reaction times and senses have all been improved beyond human limits. Additionally, your body is able to store energy beyond its normal limits, as well as discharge it as electricity if you could not already do so. Your body is modified to handle a wide range of further modifications of a type based on the specific form of Transhumanism you select. Take Body Talent and two copies of Stress Defense for free, as well as other perks based on your Transhuman type. Choose your method of escaping human limitations:</p>
 <p><b>Biomorph</b>: You seek perfection via biological and genetic means. You gain additional organs and cell types, which give you a magnetic sense, expanded visual range, the ability to generate neurotoxins of a potency of your choosing, and the ability to regrow lost limbs. Your base genetics and body are capable of having any biological system safely integrated into it via surgery or injection. Take Wild Talent, Psychic Talent, Sexual Calibration, Fertility Calibration I, and one copy of Body Defense for free. You may also reduce the time of pregnancies to one third their normal time.</p>
@@ -220,6 +236,17 @@ heritages.push({
   freebies: {
     defensePerks: ['Possession Defense', 'Soul Defense'],
   },
+  typeFreebies: {
+    Biomorph: {
+      defensePerks: ['Mind Defense'],
+    },
+    Cybermorph: {
+      defensePerks: ['Information Defense'],
+    },
+    Aethermorph: {
+      defensePerks: ['Soul Defense'],
+    },
+  },
   whitelist: ['Full Conversion'],
   desc: `
 <p>You now have the power requirements for expanded forms down! You possess an Essence Reactor, a concentrated system which draws power from interdimensional space, allowing for infinite energy production, though not infinite output or storage. Its shape corresponds with your mark that forms the center of your stamp. The reactor must be at least the size of a human heart, and has the output of a nuclear reactor, but its maximum output and storage scales upwards linearly as its volume increases.</p>
@@ -250,6 +277,17 @@ heritages.push({
   cost: 170,
   freebies: {
     defensePerks: ['Possession Defense', 'Polymorph Defense', 'Wyldscape Defense'],
+  },
+  typeFreebies: {
+    Biomorph: {
+      talentPerks: ['Performance Talent'],
+    },
+    Cybermorph: {
+      defensePerks: ['Mind Defense'],
+    },
+    Aethermorph: {
+      defensePerks: ['Information Defense'],
+    },
   },
   whitelist: ['Full Conversion'],
   desc: `
@@ -288,6 +326,18 @@ heritages.push({
   cost: 165,
   freebies: {
     defensePerks: ['Trace Defense', 'Destiny Defense', 'Wyldscape Defense'],
+  },
+  typeFreebies: {
+    Biomorph: {
+      talentPerks: ['Science Talent', 'Martial Talent'],
+    },
+    Cybermorph: {
+      defensePerks: ['Mind Defense'],
+    },
+    Aethermorph: {
+      talentPerks: ['Psychic Talent', 'Martial Talent'],
+      defensePerks: ['Information Defense'],
+    },
   },
   whitelist: ['Essence Upload', 'Essence Reactor'],
   table: [
@@ -328,6 +378,19 @@ heritages.push({
   cost: 195,
   freebies: {
     defensePerks: ['Fatality Defense', 'Paradox Defense'],
+  },
+  typeFreebies: {
+    Biomorph: {
+      talentPerks: ['Engineering Talent'],
+      defensePerks: ['Mind Defense'],
+    },
+    Cybermorph: {
+      talentPerks: ['Engineering Talent', 'Soul Talent'],
+      defensePerks: ['Body Defense'],
+    },
+    Aethermorph: {
+      defensePerks: ['Destiny Defense'],
+    },
   },
   whitelist: ['Multicore Neural Leyline', 'Pocket Apartment'],
   desc: `

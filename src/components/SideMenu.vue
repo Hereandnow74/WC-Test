@@ -56,6 +56,9 @@
     <router-link class="icon-text-btn mx-2" to="/changelog">
       <entypo:new />Changelog
     </router-link>
+    <router-link class="icon-text-btn mx-2" to="/help">
+      <bx:bx-help-circle />Help
+    </router-link>
   </div>
 </template>
 

@@ -1,5 +1,5 @@
 import { initializeApp } from 'firebase/app'
-import { getFirestore, collection, addDoc } from 'firebase/firestore/lite'
+import { getFirestore, collection, addDoc, doc, getDoc } from 'firebase/firestore/lite'
 
 export * from './toggles'
 export * from './misc'
@@ -32,4 +32,21 @@ export function proposeCompanion(companion: any) {
   catch (e) {
     console.error('Error proposing a companion: ', e)
   }
+}
+
+export function shareLink(buildData: any, callback: any) {
+  try {
+    addDoc(collection(db, 'builds'), buildData).then(callback)
+  }
+  catch (e) {
+    console.error('Error proposing a companion: ', e)
+  }
+}
+
+export function getBuild(id: string, callback: any) {
+  const docRef = doc(db, 'builds', id)
+  getDoc(docRef).then((docSnap) => {
+    if (docSnap.exists()) callback(docSnap.data())
+    else callback()
+  })
 }

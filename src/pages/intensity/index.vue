@@ -22,7 +22,10 @@
             </router-link>)</span>
         </h3>
         <div v-if="rule.intensity" class="px-2">
-          Bonus: <span text="green-600 dark:green-300">{{ rule.intensity <= 1 ? baseBudgetAfter * rule.intensity : rule.intensity }}</span> credits.
+          Bonus:
+          <span v-if="rule.intensity < 1" text="green-600 dark:green-300">{{ Math.round(baseBudgetAfter * rule.intensity) }} ({{ rule.intensity * 100 }}%)</span>
+          <span v-else text="green-600 dark:green-300">{{ rule.intensity }}</span>
+          credits.
         </div>
         <Desc :desc="rule.desc" />
         <div v-if="rule.special" class="px-2">
@@ -30,7 +33,7 @@
         </div>
         <div v-if="rule.whitelist" class="px-2 flex gap-2">
           Requires:
-          <Enum :list="rule.whitelist.map(x => ({title: x}))" path="/intensity" />
+          <Enum :list="rule.whitelist" path="/intensity" />
         </div>
         <fa-solid:check
           v-if="allEffects.includes(rule.title)"
@@ -41,48 +44,36 @@
   </div>
 </template>
 
-<script lang='ts'>
+<script lang='ts' setup>
 import { findIndex, intersection } from 'lodash-es'
 import { desc, intensity, Intensity } from '~/data/intensity'
 import { useTooltips } from '~/logic/misc'
 import { useStore } from '~/store/store'
 
-export default defineComponent({
-  setup() {
-    const { allEffects, intensities, baseBudgetAfter } = useStore()
+const { allEffects, intensities, baseBudgetAfter } = useStore()
 
-    function choose(rule: Intensity) {
-      const ind = findIndex(intensities.value, { title: rule.title })
-      if (ind !== -1) {
-        const toDel = intensities.value.splice(ind)
-        toDel.forEach(x => allEffects.value.splice(allEffects.value.indexOf(x.title), 1))
-      }
-      else {
-        if (requirementsMet(rule)) {
-          allEffects.value.push(rule.title)
-          intensities.value.push({ title: rule.title, intensity: rule.intensity })
-        }
-      }
+function choose(rule: Intensity) {
+  const ind = findIndex(intensities.value, { title: rule.title })
+  if (ind !== -1) {
+    const toDel = intensities.value.splice(ind)
+    toDel.forEach(x => allEffects.value.splice(allEffects.value.indexOf(x.title), 1))
+  }
+  else {
+    if (requirementsMet(rule)) {
+      allEffects.value.push(rule.title)
+      intensities.value.push({ title: rule.title, intensity: rule.intensity })
     }
+  }
+}
 
-    function requirementsMet(rule: Intensity): boolean {
-      if (intersection(rule.blacklist, allEffects.value).length) return false
-      if (intersection(rule.whitelist, allEffects.value).length !== (rule.needed || rule.whitelist?.length || 0)) return false
-      return true
-    }
+function requirementsMet(rule: Intensity): boolean {
+  if (intersection(rule.blacklist, allEffects.value).length) return false
+  if (intersection(rule.whitelist, allEffects.value).length !== (rule.needed || rule.whitelist?.length || 0)) return false
+  return true
+}
 
-    onMounted(() => {
-      useTooltips()
-    })
-
-    return {
-      desc,
-      intensity,
-      allEffects,
-      baseBudgetAfter,
-      requirementsMet,
-      choose,
-    }
-  },
+onMounted(() => {
+  useTooltips()
 })
+
 </script>

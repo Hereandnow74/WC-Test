@@ -44,8 +44,8 @@ const schema = toFormValidator(
     name: zod.string().nonempty('Character name is required'),
     world: zod.string().nonempty('World name is required'),
     tier: zod.number().min(1, { message: 'Minimum tier is 1' }).max(11, { message: 'Maximum tier is 11' }),
-    image: zod.string().url({ message: 'Must be a valid URL' }),
-    image_nsfw: zod.string().url({ message: 'Must be a valid URL' }).optional().or(zod.literal('')),
+    image: zod.string().url({ message: 'Must be a valid URL' }).max(256, { message: 'Maximum length is 256 chars' }),
+    image_nsfw: zod.string().url({ message: 'Must be a valid URL' }).max(256, { message: 'Maximum length is 256 chars' }).optional().or(zod.literal('')),
   }),
 )
 const { errors, handleSubmit } = useForm({

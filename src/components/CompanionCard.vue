@@ -4,7 +4,7 @@
   >
     <div class="bg-gray-800 border border-gray-800 h-full flex flex-col rounded">
       <div class="flex-grow relative">
-        <img ref="companionEl" class="rounded absolute object-cover h-full w-full object-top" :data-src="charData.image || 'img/placeholder.jpg'" :alt="charData.name">
+        <img ref="companionEl" class="rounded absolute object-cover h-full w-full object-top" :data-src="charData.image || '/img/placeholder.jpg'" :alt="charData.name">
         <icon-park-outline:full-screen-one
           class="absolute top-1 right-1 hover:text-blue-400 cursor-pointer mix-blend-difference"
           @click="() => (showModal = true, modalImage=charData.image)"
@@ -51,13 +51,13 @@
         </div>
       </div>
     </div>
-    <div v-if="showModal" class="absolute inset-0 bg-black bg-opacity-10 flex place-content-center" @click="showModal = false">
-      <div class="overflow-auto max-h-screen max-w-screen flex place-content-center">
-        <img class="object-none" :src="modalImage" alt="full image">
+    <div v-if="showModal" class="absolute inset-0 bg-black bg-opacity-10 flex place-content-center z-20" @click="showModal = false">
+      <div class="overflow-auto h-screen w-max flex place-content-center items-center">
+        <img class="object-contain max-h-screen" :src="modalImageCmp" alt="full image">
       </div>
     </div>
     <teleport to="#app">
-      <SlightlyUsed v-if="usedModal" :char="charData" @click="usedModal = false" @buyUsed="slightlyCompanion" />
+      <SlightlyUsed v-if="usedModal" :char="charData" class="z-20" @click="usedModal = false" @buyUsed="slightlyCompanion" />
     </teleport>
   </div>
 </template>
@@ -89,6 +89,16 @@ const companionEl = ref<HTMLImageElement| null>(null)
 const charData = props.char.t ? { uid: props.char.u, name: props.char.n, world: props.char.w, tier: props.char.t, image: props.char.i, sourceImage: props.char.s } : props.char
 
 const { flags, companions, localUserCharacters } = useStore()
+
+const modalImageCmp = computed(() => {
+  if (modalImage.value.includes('imgur') && modalImage.value.split('.').slice(-2, -1)[0].slice(-1) === 'm') {
+    const pcs = modalImage.value.split('m')
+    const lastPc = pcs.pop()
+    return pcs.join('m') + lastPc
+  }
+
+  return modalImage.value
+})
 
 const priceTier = (t: number): number => flags.value.noBindings && t !== 11 && t !== 1 ? t - 1 : t
 
