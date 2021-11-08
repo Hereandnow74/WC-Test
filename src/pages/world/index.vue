@@ -35,9 +35,15 @@
       </div>
       <Button size="Small" label="Add World" class="whitespace-nowrap" @click="() => (editMode = false, toggleShowAddWorld())" />
     </div>
-    <Foldable v-if="allUserWorlds.length" class="text-lg mb-2" title="User Worlds">
+    <Foldable v-if="allUserWorlds.length" class="text-lg mb-2" title="Your Worlds">
       <div class="mb-4 flex flex-wrap gap-1 overflow-y-auto">
-        <WorldCard v-for="world in allUserWorlds" :key="world.worldName" :world="world" :is-user-world="true" />
+        <WorldCard
+          v-for="world in allUserWorlds"
+          :key="world.worldName"
+          :world="world"
+          :is-user-world="true"
+          class="max-w-sm"
+        />
       </div>
     </Foldable>
     <Foldable v-if="worldsFiltered.length" class="text-lg mb-2" title="Canon Worlds" :is-open="true">
@@ -46,6 +52,22 @@
           v-for="world in worldsFiltered"
           :key="world.worldName + (world.condition || 'none')"
           :world="world"
+          class="max-w-sm"
+          @edit-world="editWorld"
+        />
+        <div v-if="!worldsFiltered.length" class="text-center flex-grow">
+          <p>No worlds found.</p>
+        </div>
+      </div>
+    </Foldable>
+    <Foldable v-if="userWorldsFiltered.length" class="text-lg mb-2" title="Worlds submitted by Users" :is-open="true">
+      <div class="grid grid-cols-1 grid-flow-row-dense xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-2 overflow-y-auto pb-8">
+        <WorldCard
+          v-for="world in userWorldsFiltered"
+          :key="world.worldName + (world.condition || 'none')"
+          :world="world"
+          class="w-full"
+          :class="{'row-span-2 min-h-48': world.image, 'col-span-2': world.additional, 'row-span-4': world.image && world.additional}"
           @edit-world="editWorld"
         />
         <div v-if="!worldsFiltered.length" class="text-center flex-grow">
@@ -60,11 +82,13 @@
 <script lang="ts" setup>
 import Fuse from 'fuse.js'
 import worlds from '~/data/worlds.json'
+import subWorlds from '~/data/userWorlds.json'
 import { useStore } from '~/store/store'
 import { toggleShowAddWorld, showAddWorld, threeToggle } from '~/logic'
 
 const search = ref('')
 const worldsReac = ref(worlds)
+const worldsSubReac = ref(subWorlds)
 const worldToEdit = ref({})
 const editMode = ref(false)
 
@@ -74,12 +98,14 @@ const sortRating = ref<number>(0)
 
 const options = {
   findAllMatches: true,
-  threshold: 0.1,
+  threshold: 0.2,
   keys: ['worldName', 'condition.name'],
 }
 
 const fuse = new Fuse(worldsReac.value, options)
+const subFuse = new Fuse(worldsSubReac.value, options)
 
+console.log(subWorlds.length)
 const worldsCount = computed(() => worlds.length)
 const allUserWorlds = computed(() => userWorlds.value.concat(localUserWorlds.value))
 
@@ -90,6 +116,13 @@ const worldsFiltered = computed(() => {
     return fuse.search(search.value).map(x => x.item).sort(sortingFunc)
   else
     return [...worldsReac.value].sort(sortingFunc)
+})
+
+const userWorldsFiltered = computed(() => {
+  if (search.value)
+    return subFuse.search(search.value).map(x => x.item).sort(sortingFunc)
+  else
+    return [...worldsSubReac.value].sort(sortingFunc)
 })
 
 function editWorld(world: typeof worlds[number]) {

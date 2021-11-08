@@ -57,9 +57,9 @@
                 <span class="text-gray-500 dark:text-gray-400">Name:</span>
                 <span>{{ startingWorld.worldName || 'Unknown' }}</span>
               </div>
-              <div v-if="startingWorld.condition" class="flex gap-2">
+              <div v-if="startingWorld?.condition?.length" class="flex gap-2">
                 <span class="text-gray-500 dark:text-gray-400">Condition:</span>
-                <span>{{ startingWorld.condition?.length ?
+                <span>{{ isArray(startingWorld.condition) ?
                   startingWorld.condition[0].name : startingWorld.condition }}</span>
               </div>
               <div class="flex gap-2">
@@ -326,7 +326,7 @@
 </template>
 
 <script lang="ts" setup>
-import { findIndex } from 'lodash-es'
+import { findIndex, isArray } from 'lodash-es'
 import { Perk, useStore } from '~/store/store'
 
 const activeTab = ref('Build')
@@ -440,7 +440,8 @@ function buildString(title: string, items: Perk[], left: object) {
 }
 
 function copyText() {
-  const fullCost = { c: baseBudget.value }
+  const fullCost = { c: baseBudget.value === 11111 ? 0 : baseBudget.value }
+
   let full = `Starting World: ${startingWorld.value.worldName}\nStarting budget ${fullCost.c}\n\n`
 
   full += intensities.value.length

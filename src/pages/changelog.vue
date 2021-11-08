@@ -5,6 +5,15 @@
     </h2>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
+        08 November 2021
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>Added 32 user submitted worlds.</li>
+        <li>Bug fixes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
         07 November 2021
       </h3>
       <ul class="list-decimal list-inside">

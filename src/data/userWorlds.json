@@ -1,3 +1,306 @@
 [
-  
+  {
+    "worldName": "Against the Gods",
+    "rating": 9
+  },
+  {
+    "worldName": "Battletech",
+    "rating": 4,
+    "condition": [
+      {
+        "name": "Amaris Coup (in the Hegemony)/First Succession War/Second Succession War",
+        "rating": 6
+      },
+      {
+        "name": "Third Succession War/\"Peacetime\"",
+        "rating": 3
+      },
+      {
+        "name": "Fourth Succession War/Clan Invasion",
+        "rating": 4
+      },
+      {
+        "rating": 5,
+        "name": "Jihad/Dark Age(?)"
+      }
+    ]
+  },
+  {
+    "worldName": "Bloodborne",
+    "rating": 3,
+    "additional": "Azriel has her full power. Shiro will believe you to be her sibling and cannot be convinced otherwise. Holou is the depowered form from LNs 9+.",
+    "condition": [
+      {
+        "name": "Post-Pledges (canon era)",
+        "rating": 3
+      },
+      {
+        "rating": 9,
+        "name": "Pre-Pledges (Zero era)"
+      }
+    ]
+  },
+  {
+    "worldName": "Claymore",
+    "rating": 7
+  },
+  {
+    "worldName": "Code Geass",
+    "rating": 5
+  },
+  {
+    "worldName": "Cradle (Will Wight)",
+    "rating": 10,
+    "condition": [
+      {
+        "name": "No active crisis",
+        "rating": 6
+      },
+      {
+        "name": "Elder Dragons active",
+        "rating": 7
+      }
+    ]
+  },
+  {
+    "worldName": "Date A Live",
+    "rating": 8
+  },
+  {
+    "worldName": "Devil May Cry",
+    "rating": 8
+  },
+  {
+    "worldName": "Dragonball",
+    "rating": 9,
+    "condition": [
+      {
+        "name": "Saiyans Attack",
+        "rating": 7
+      },
+      {
+        "name": "Androids Awaken",
+        "rating": 8
+      },
+      {
+        "name": "Majin Buu unsealed",
+        "rating": 10
+      }
+    ]
+  },
+  {
+    "worldName": "Farscape",
+    "rating": 6
+  },
+  {
+    "worldName": "Generator Rex",
+    "rating": 6
+  },
+  {
+    "worldName": "Genshin Impact",
+    "rating": 6,
+    "image": "https://i.redd.it/bkyksnvilea61.png",
+    "additional": "Lumine (and Aether) has the T1 version of Paimon as a humanoid familiar. If you have both, they’ll share her."
+  },
+  {
+    "worldName": "Goblin Slayer",
+    "rating": 7
+  },
+  {
+    "worldName": "Golarion/Pathfinder",
+    "rating": 9,
+    "condition": [
+      {
+        "name": "Wrath of the Righteous",
+        "rating": 9
+      },
+      {
+        "name": "Kingmaker",
+        "rating": 9
+      }
+    ]
+  },
+  {
+    "worldName": "Halo",
+    "rating": 7,
+    "additional": "Cortana, regardless of whether she yet exists, will be plugged into your smart device and be completely immune to rampancy. The Tier 5 version of her reflects her status at the end of the original trilogy. Body Talent will give Spartans a functioning sex drive, and guarantees the level of no lower than Spartan-II physiology.",
+    "condition": [
+      {
+        "name": "Precursor Golden Age",
+        "rating": 2
+      },
+      {
+        "rating": 8,
+        "name": "Forerunner-Precursor War"
+      },
+      {
+        "rating": 3,
+        "name": "Ancient Humanity Golden Age"
+      },
+      {
+        "rating": 8,
+        "name": "Human-Forerunner War"
+      },
+      {
+        "name": "Forerunner-Flood War",
+        "rating": 10
+      },
+      {
+        "name": "Human-Covenant War (Original Trilogy)",
+        "rating": 7
+      },
+      {
+        "name": "Post Covanent War (Halo 4 and 5)",
+        "rating": 6
+      }
+    ]
+  },
+  {
+    "worldName": "Harry Potter",
+    "rating": 3,
+    "condition": [
+      {
+        "rating": 3,
+        "name": "First book"
+      },
+      {
+        "rating": 4,
+        "name": "Fifth book"
+      }
+    ]
+  },
+  {
+    "worldName": "Hololive",
+    "rating": 6,
+    "additional": "All characters are drawn from the Hololive Alternative setting. Haato and Haachama can merge into one body and split back into two at will; as long as one is alive, the other will resurrect as if you have Warranty Plan.\nIf you choose the Almost Real Life condition, you will heading to a world mimicing your own modern world, but with the occasional Demi-human and some alternative Dimensions / worlds. Such as Dragon World and the Afterlife.",
+    "condition": [
+      {
+        "rating": 6,
+        "name": "Hololive Alternative"
+      },
+      {
+        "name": "Almost Real Life.",
+        "rating": 4
+      }
+    ]
+  },
+  {
+    "worldName": "Horizon: Zero Dawn",
+    "rating": 5,
+    "condition": [
+      {
+        "name": "Pre-Derangement",
+        "rating": 3
+      }
+    ]
+  },
+  {
+    "worldName": "Jojo's Bizzare Adventure",
+    "rating": 2
+  },
+  {
+    "worldName": "Lazy Dungeon Master",
+    "rating": 6,
+    "image": "https://i.imgur.com/HVlhAnqm.png"
+  },
+  {
+    "worldName": "Minecraft",
+    "rating": 2
+  },
+  {
+    "worldName": "Monster Girl Quest",
+    "rating": 6,
+    "condition": [
+      {
+        "rating": 6,
+        "name": "Original Trilogy, normal situation"
+      },
+      {
+        "name": "Original Trilogy, MGQ 3",
+        "rating": 8
+      },
+      {
+        "name": "Paradox, Normal Situation",
+        "rating": 6
+      }
+    ]
+  },
+  {
+    "worldName": "My Little Pony ",
+    "rating": 1
+  },
+  {
+    "worldName": "Nanatsu No Taizai/Seven Deadly Sins",
+    "rating": 7,
+    "additional": "Captured copies of Elizabeth and Meliodas(Excluding Holy War(Past)) will remain affected by their respective curses unless both stages of Destiny Defense are bought for them>",
+    "condition": [
+      {
+        "name": "Start of Canon",
+        "rating": 7
+      },
+      {
+        "rating": 8,
+        "name": "Holy War"
+      },
+      {
+        "name": "Holy War(Past)",
+        "rating": 8
+      }
+    ]
+  },
+  {
+    "worldName": "Pacific Rim",
+    "rating": 6,
+    "condition": [
+      {
+        "name": "The Black",
+        "rating": 8
+      }
+    ]
+  },
+  {
+    "worldName": "Pathfinder ",
+    "rating": 9,
+    "condition": [
+      {
+        "name": "Planar Crisis",
+        "rating": 10
+      }
+    ]
+  },
+  {
+    "worldName": "Release That Witch",
+    "rating": 5,
+    "image": "https://i.imgur.com/9km50Lrm.png"
+  },
+  {
+    "worldName": "Rick Riordan-verse",
+    "rating": 5
+  },
+  {
+    "worldName": "Rune Factory",
+    "rating": 4
+  },
+  {
+    "worldName": "Shadowrun",
+    "rating": 5,
+    "condition": [
+      {
+        "name": "Crash 2.0 ",
+        "rating": 5
+      },
+      {
+        "rating": 6,
+        "name": "Dragonfall"
+      }
+    ]
+  },
+  {
+    "worldName": "Tower of God",
+    "rating": 8
+  },
+  {
+    "worldName": "Yamada-kun and the Seven Witches",
+    "rating": 3
+  }
 ]
