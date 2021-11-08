@@ -9,10 +9,25 @@
       </router-link>
     </h3>
     <Desc class="p-2 mb-4 max-w-4xl bg-warm-gray-200 dark:bg-warm-gray-800 mx-auto" :desc="desc" />
+
+    <div class="flex gap-4 mx-auto w-max mb-4">
+      <div
+        v-for="type in Object.keys(bindingByType)"
+        :key="type"
+        class="px-2 py-1 border-2 rounded cursor-pointer hover:border-orange-400"
+        :class="activeType === type ? 'border-orange-400': ''"
+        @click="activeType = type"
+      >
+        <h3>{{ type }}</h3>
+        <div>Total perks: <span>{{ bindingByType[type].length }}</span></div>
+      </div>
+    </div>
+
     <div class="md:column-count-2 lg:column-count-3">
       <div
+
         id="No Bindings"
-        class="mb-2 p-2 inline-block bg-light-400 dark:bg-rose-900"
+        class="mb-2 p-2 bg-light-400 dark:bg-rose-900"
         :class="flags.noBindings ? 'hover:(yellow-100 dark:bg-rose-800) cursor-pointer': 'dark:bg-gray-600'"
       >
         <h3 class="text-center text-xl px-2 relative">
@@ -25,25 +40,32 @@
         </div>
       </div>
       <PerkCard
-        v-for="bnd in bindings"
+        v-for="bnd in bindingByType[activeType]"
         :key="bnd.title"
         :perk="bnd"
         :bg="isAllowed(bnd) ? 'light-400 dark:rose-900 hover:(yellow-100 dark:rose-800)'
           : 'gray-200 dark:gray-600'"
         :is-available="isAllowed(bnd)"
-        :is-active="findIndex(binding, {title: bnd.title}) !== -1"
+        :is-active="!!allBindings[bnd.title]"
         :increment="!!bnd.increment"
+        :saved-perk="allBindings[bnd.title]"
+        :flavor-list="bnd.title === 'Prismatic Shroud' ? shroudElements.map(x => ({flavor:x.title})) : []"
         @pickPerk="choose"
       >
-        <template v-if="['Elemental Shroud', 'Prismatic Shroud'].includes(bnd.title)" #title>
-          <span v-if="bnd.element">({{ bnd.element }})</span>
+        <template v-if="['Elemental Shroud'].includes(bnd.title)" #title>
           <Button size="Small" label="element" class="mx-1" @click.stop="chooseElement(bnd)" />
         </template>
         <template v-if="bnd.title" #rules>
-          <span v-if="bnd.type === 'ritual'" class="mx-2" @click.stop="toggleRitual()">Rules: <span class="text-red-500 hover:underline">ritual parameters</span></span>
+          <span v-if="bnd.type === 'Ritual'" class="mx-2" @click.stop="toggleRitual()">Rules: <span class="text-red-500 hover:underline">ritual parameters</span></span>
         </template>
       </PerkCard>
     </div>
+    <Desc
+      v-if="activeType === 'Symbiote'"
+      :desc="symbioteRules"
+      class="p-2 my-4 max-w-4xl bg-warm-gray-200 dark:bg-warm-gray-800 mx-auto"
+    />
+
     <h3 id="lures" class="text-2xl text-center">
       Lures <router-link
         :to="{path:'/binding', hash:'#expansions'}"
@@ -66,12 +88,13 @@
       >
       </PerkCard>
     </div>
+
     <h3 id="expansions" class="text-2xl text-center">
       Lure Expansions  <router-link
-        :to="{path:'/binding', hash:'#bindings'}"
+        :to="{path:'/binding', hash:'#other'}"
         class="text-base text-blue-600 dark:text-blue-400 hover:underline"
       >
-        (go to Bindings)
+        (go to Other controls)
       </router-link>
     </h3>
     <Desc :desc="lureExpansionDesc" class="bg-gray-200 dark:bg-gray-600 max-w-screen-md my-4 mx-auto" />
@@ -88,6 +111,30 @@
       >
       </PerkCard>
     </div>
+
+    <h3 id="other" class="text-2xl text-center">
+      Other controls  <router-link
+        :to="{path:'/binding', hash:'#bindings'}"
+        class="text-base text-blue-600 dark:text-blue-400 hover:underline"
+      >
+        (go to Bindings)
+      </router-link>
+    </h3>
+    <Desc :desc="otherDesc" class="bg-gray-200 dark:bg-gray-600 max-w-screen-md my-4 mx-auto" />
+    <div class="md:column-count-2 lg:column-count-3 pb-8">
+      <PerkCard
+        v-for="bnd in otherControls"
+        :key="bnd.title"
+        :perk="bnd"
+        :bg="isLureAllowed(bnd) ? 'pink-100 dark:pink-900 hover:(pink-200 dark:rose-800)'
+          : 'gray-200 dark:gray-600'"
+        :is-available="isLureAllowed(bnd)"
+        :is-active="findIndex(luresBought, {title: bnd.title}) !== -1"
+        @pickPerk="chooseLure"
+      >
+      </PerkCard>
+    </div>
+
     <Modal v-if="showElements" label="Choose Element" @click="toggleElements">
       <div class="h-full md:h-3/4 bg-gray-300 dark:bg-gray-600 overflow-y-auto min-h-0 flex flex-col gap-2">
         <div
@@ -99,7 +146,7 @@
         >
           <h3 class="relative text-lg font-semibold text-center">
             {{ element.title }}
-            <fa-solid:check v-if="currentBinding?.element === element.title" class="text-green-500 absolute top-1 right-1" />
+            <fa-solid:check v-if="elementBought(element.title)" class="text-green-500 absolute top-1 right-1" />
           </h3>
           <div>
             <span class="px-2 text-orange-500 dark:text-orange-300 font-semibold">Elemental Ability</span>:
@@ -129,8 +176,12 @@
 </template>
 
 <script lang='ts' setup>
-import { findIndex, intersection } from 'lodash-es'
-import { desc, bindings, Binding, lureDesc, lures, lureExpansionDesc, lureExpansions, shroudElements } from '~/data/binding'
+import { findIndex, intersection, isArray, merge, mergeWith } from 'lodash-es'
+import { onBeforeRouteUpdate } from 'vue-router'
+import {
+  desc, bindings, Binding, lureDesc, lures, lureExpansionDesc, lureExpansions, shroudElements,
+  otherControls, otherDesc, symbioteRules,
+} from '~/data/binding'
 import { addFreebies, deleteFreebies, useTooltips } from '~/logic/misc'
 import { Perk, useStore } from '~/store/store'
 import PerkCard from '~/components/PerkCard.vue'
@@ -139,17 +190,66 @@ import RitualCircle from '~/components/RitualCircle.vue'
 const { allEffects, binding, luresBought, flags } = useStore()
 const [showElements, toggleElements] = useToggle()
 const [showRitual, toggleRitual] = useToggle()
+
 const currentBinding = ref<Binding|null>(null)
+
+const activeType = ref('Stamp')
+
+const bindingByType = computed(() => {
+  const res = {
+    Stamp: [] as Binding[],
+    Jewelry: [] as Binding[],
+    Ritual: [] as Binding[],
+    Symbiote: [] as Binding[],
+    Shroud: [] as Binding[],
+  }
+  bindings.forEach(x => x.type ? res[x.type].push(x) : null)
+  return res
+})
 
 onMounted(() => useTooltips())
 
+const params = useUrlSearchParams('history')
+
+if (params.q) activeType.value = params.q
+
+onBeforeRouteUpdate((to, from, next) => {
+  if (to.query.q)
+    activeType.value = to.query.q
+
+  setTimeout(next, 1)
+})
+
+const allBindings = computed(() => {
+  const res: any = {}
+  binding.value.forEach(x => res[x.title] = x)
+  return res
+})
+
+function elementBought(title: string) {
+  return findIndex(binding.value, { anything: title }) !== -1
+}
+
 function choose(bin: Binding, saveData: Perk) {
   if (!isAllowed(bin)) return
+  const freebies = {}
+  if (bin.complex) {
+    mergeWith(freebies,
+      ...shroudElements.filter(x => findIndex(saveData.complex, { flavor: x.title }) !== -1).map(x => x.freebies),
+      (a, b) => { if (isArray(a)) return a.concat(b) })
+  }
   const ind = findIndex(binding.value, { title: bin.title })
   if (ind !== -1) {
     if (binding.value[ind].count !== saveData.count && saveData.count > 0) {
-      binding.value[ind].count = saveData.count
-      binding.value[ind].cost = saveData.cost
+      if (bin.complex) {
+        deleteFreebies(binding.value[ind].freebies)
+        if (saveData.complex.length > 1) saveData.cost += 10 * (saveData.complex.length)
+        saveData.freebies = freebies
+        addFreebies(saveData.freebies)
+      }
+      binding.value[ind] = saveData
+
+      // binding.value[ind].cost = saveData.cost
     }
     else {
       const toDel = binding.value.splice(ind)
@@ -161,16 +261,18 @@ function choose(bin: Binding, saveData: Perk) {
     }
   }
   else {
-    const secondary = bin.element
+    const anything = bin.element
     if (bin.element) {
       const i = findIndex(shroudElements, { title: bin.element })
-      bin.freebies = shroudElements[i].freebies
+      saveData.freebies = shroudElements[i].freebies
     }
-    binding.value.push({ anything: secondary, ...saveData })
     allEffects.value.push(bin.title)
-    if (bin.freebies) addFreebies(bin.freebies)
+    if (bin.complex) saveData.freebies = freebies
+    if (saveData.freebies) addFreebies(saveData.freebies)
+    binding.value.push({ anything, ...saveData })
     flags.value.noBindings = false
   }
+  console.log(allEffects.value)
 }
 
 function isAllowed(bin: Binding): boolean {
@@ -179,9 +281,9 @@ function isAllowed(bin: Binding): boolean {
     return true
   }
   else {
-    if (bin.whitelist && intersection(allEffects.value, bin.whitelist).length === bin.whitelist.length)
+    if (bin.whitelist && intersection(allEffects.value, bin.whitelist).length === (bin.needed || bin.whitelist.length))
       return true
-    if (allEffects.value.includes(bin.title))
+    if (allBindings.value[bin.title])
       return true
   }
   return false
@@ -220,5 +322,6 @@ function toggleCurrentElement(title: string) {
     else
       currentBinding.value.element = title
   }
+  toggleElements()
 }
 </script>

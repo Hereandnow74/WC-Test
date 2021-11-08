@@ -26,7 +26,6 @@ export interface Binding {
   desc: string
   cost: number
   whitelist?: string[]
-  type?: string
   element?: string
   special?: string
   image?: string
@@ -36,6 +35,9 @@ export interface Binding {
   freebies?: object
   additionalDesc?: string
   table?: string[][]
+  needed?: number
+  type?: 'Stamp' | 'Jewelry' | 'Symbiote' | 'Shroud' | 'Ritual'
+  waifu?: string
 }
 
 export const bindings: Binding[] = []
@@ -43,6 +45,7 @@ export const bindings: Binding[] = []
 bindings.push({
   title: 'Company Stamp',
   cost: 0,
+  type: 'Stamp',
   desc: `
 <p>This permanent magical tattoo instills only the mental effects common to all bindings. To capture targets, you may apply this tattoo using a thumb-sized ink stamp. You can only have one stamp at a time, and only you and your retinue members can perceive the stamp when it’s not in use. The inked part, on one end, contains the tattoo’s core, a circular design that serves as your emblem.</p>
 <p>Stamping requires 3 seconds of sustained contact with the target’s skin, from the stamper’s perception, to start the tattoo-creation process. You must apply enough pressure to make the ink transfer properly. The most popular stamping sites are typically the pubic region, lower back, or back of the neck. Newly-applied tattoos require 72 hours to ramp up to their full effect, from the perception of the person stamped.</p>
@@ -54,6 +57,7 @@ bindings.push({
 bindings.push({
   title: 'Megapixel',
   cost: 150,
+  type: 'Stamp',
   whitelist: ['Company Stamp'],
   desc: 'Favored by stalkers everywhere, your stamp is now a digital app for your smart device. Just take a photo of the target waifu, rotate, zoom, and pan around a generated 3D model of her until you’ve found the right place for your tattoo, and apply the tattoo remotely. The same 72-hour waiting period and all of the related rules apply for the camera app as they do for the stamp. This is a company app and benefits from all such protections.',
 })
@@ -61,6 +65,7 @@ bindings.push({
 bindings.push({
   title: 'Tempest Jewelry',
   cost: 10,
+  type: 'Jewelry',
   desc: `
 <p>Magitech chokers, bracelets, or anklets that enforce absolute obedience. Items are available in ruby, orange topaz, citrine, emerald, sapphire, amethyst, alexandrite, and clear and black diamond varieties. Bands may be leather, silk, or metal. This binding will be applied to purchased waifus before delivery. You receive one new choker each day, up to a limit in reserve of 5 plus the number of items currently worn by yourself or members of your retinue.</p>
 <p>Wearers’ libido is highly enhanced, as is submissiveness to both their masters and any more dominant members of the same retinue. Obedience is rewarded through pleasure. Several options are available for punishing disobedience, including inducement of emotional numbness or preventing a wearer from experiencing release for a set time. You are your own master and not subject to any unwanted side-effects of your own equipment.</p>
@@ -73,6 +78,7 @@ bindings.push({
 bindings.push({
   title: 'Basic Tempest Runes',
   cost: 10,
+  type: 'Jewelry',
   whitelist: ['Tempest Jewelry'],
   desc: `
 <p>Tempest Chokers (bracelets, anklets) now have a built-in translator function, giving their wearers the ability to speak any language you also speak, plus the standard and/or trade languages of any place they visit. This knowledge persists after they leave the area where the language is spoken. The chokers also gain a communications and monitoring system, allowing you to track their locations and vitals and speak with them (and them with each other) remotely from any distance, even between different multiverses. These comms are not telepathic and will not work without actual speech or third-party thought-to-comms devices.</p>
@@ -82,6 +88,7 @@ bindings.push({
 bindings.push({
   title: 'Advanced Tempest Runes (Body)',
   cost: 20,
+  type: 'Jewelry',
   whitelist: ['Basic Tempest Runes'],
   freebies: { talentPerks: ['Body Talent'] },
   desc: `
@@ -94,6 +101,7 @@ bindings.push({
 bindings.push({
   title: 'Advanced Tempest Runes (Mind)',
   cost: 10,
+  type: 'Jewelry',
   whitelist: ['Advanced Tempest Runes (Body)'],
   desc: 'Mental transformations for all retinue members are now unlocked in the jewelry app. In addition to libido and submissiveness, attention span and intelligence may also be altered, as well as hobbies, likes and dislikes, fetishes, personality traits, memories, fashion preferences, etc. This is extremely useful for anyone who wants to fine-tune their close harem or play around with individual members’ roles. Your retinue members cannot modify their own orders or apply mental transformations to your profile without express permission. These functions otherwise work the same as their physical counterparts.',
 })
@@ -101,6 +109,7 @@ bindings.push({
 bindings.push({
   title: 'Advanced Tempest Runes (Hybrid)',
   cost: 20,
+  type: 'Jewelry',
   whitelist: ['Advanced Tempest Runes (Body)'],
   desc: 'You can now alter the members of your retinue into hybrid races (human, kitsune, vulcan, etc.), limited by the natural examples of such races that you have in your retinue. There is no theoretical limit on how many races you can hybridize into one individual. However, the result having all of the strengths of both sides and none of their weaknesses is only guaranteed when there are only two donor races present. More complex combinations are increasingly unreliable. The effects of party-wide Heritage perks such as Dragon Thrall do not count against this limit.',
 })
@@ -108,6 +117,7 @@ bindings.push({
 bindings.push({
   title: 'Absolute Order',
   cost: 40,
+  type: 'Jewelry',
   whitelist: ['Tempest Jewelry'],
   desc: `
 <p>Disobedience is no longer allowed. Captured jewelry wearers will perform any intentional, direct order you give them, within the realm of physical or mental possibility. Orders do not need to be consciously possible. Will-saves, intelligence-saves, or reinterpretations are not allowed. Even if a wearer wants to resist, their body or mind will perform as ordered regardless. Unlike other controls, this enforces your exact words, not your intent: “Do X” and “Make and follow a plan to do X” can have vastly different results.</p>
@@ -118,6 +128,7 @@ bindings.push({
 bindings.push({
   title: 'Additional Stock',
   cost: 5,
+  type: 'Jewelry',
   whitelist: ['Tempest Jewelry'],
   multiple: true,
   desc: 'You receive an additional Tempest item each day. Your reserve cap increases by 5. This may be repurchased for the same effect any number of times.',
@@ -126,6 +137,7 @@ bindings.push({
 bindings.push({
   title: 'Jewels of Discord',
   cost: 25,
+  type: 'Jewelry',
   whitelist: ['Tempest Jewelry'],
   desc: `
 <p>Tempest items can now adjust their appearance to better match the rest of the wearer’s clothing. Anyone attempting to remove one, other than you and retinue members you order to do so, will fail to do so, then miss the fact that it’s still there afterwards. This applies to both used and unused chokers (bracelets, anklets).</p>
@@ -135,6 +147,7 @@ bindings.push({
 bindings.push({
   title: 'Aggressive Initiations',
   cost: 20,
+  type: 'Jewelry',
   whitelist: ['Tempest Jewelry'],
   desc: 'The minimum time required to confirm a target’s capture is removed. A subject’s capture may now be greatly accelerated through sexual submission to yourself or more dominant members of your retinue. The more and stronger orgasms the subject experiences at their dominator’s hand, the faster the capture will progress. Transformations from Advanced Runes (Body) and (Mind) also benefit from this perk, regardless of the subject’s capture state.',
 })
@@ -142,7 +155,7 @@ bindings.push({
 bindings.push({
   title: 'Ritual Circle',
   cost: 30,
-  type: 'ritual',
+  type: 'Ritual',
   desc: `
 <p>An app on your company-granted smart device that will allow you to design special runic circles for binding your waifus. Some assembly is required.</p>
 <p>Your circles may be drawn in any material: chalk, ink, carvings, sticks on the ground, blood, or even light. The circle's area of effect may either be a sphere, which the circle rings, or a cylinder reaching out twice as high as its diameter in one direction. The target must remain within the circle for the time required. If they leave the area of effect before the binding is complete, its progress will stop and begin to reverse. If they are not brought back within the area of effect within 24 hours, progress is reset. The circle only affects those with the parameters set upon its design, whether that's an individual or category. Binding circles will always exclude you and your retinue members who are already bound through a circle, even when set to "Affect all."</p>
@@ -154,6 +167,7 @@ bindings.push({
 bindings.push({
   title: 'Greater Bandwidth',
   cost: 5,
+  type: 'Ritual',
   whitelist: ['Ritual Circle'],
   multiple: true,
   increment: true,
@@ -164,7 +178,7 @@ bindings.push({
 bindings.push({
   title: 'Transformation Circle I',
   cost: 20,
-  type: 'ritual',
+  type: 'Ritual',
   whitelist: ['Ritual Circle'],
   desc: `
 <p>An additional function has been unlocked for your circle designs. These functions are identical to the modification suite of Advanced Tempest Runes (Body), with the addition of being able to change the target’s clothing as well. These changes cannot be made on the fly with the company app, but may be cancelled at any time. After cancelling a transformation, it must be reapplied manually. Body Talent is not part of the modification suite and thus not included.</p>
@@ -174,6 +188,7 @@ bindings.push({
 bindings.push({
   title: 'Transformation Circle II',
   cost: 20,
+  type: 'Ritual',
   whitelist: ['Transformation Circle I'],
   desc: 'Your transformation circle now has additional functionality, equivalent to the modification suite of Advanced Tempest Runes (Mind), and may even turn targets into inanimate objects. Awareness is optional during such a state.',
 })
@@ -181,7 +196,7 @@ bindings.push({
 bindings.push({
   title: 'Teleportation Circle',
   cost: 25,
-  type: 'ritual',
+  type: 'Ritual',
   whitelist: ['Ritual Circle'],
   desc: `
 <p>This enables two new types of circles, depending on the new Network parameter. Without any points in Network, the resulting circle will be one-way only, sending you to a set destination given the provided time invested to activate it.</p>
@@ -191,6 +206,7 @@ bindings.push({
 bindings.push({
   title: 'Portal Runes',
   cost: 10,
+  type: 'Ritual',
   whitelist: ['Teleportation Circle'],
   desc: 'You may now set a duration for your teleportation circles, turning them into portals. This effect’s duration works the same as that of Transformation Circles. Anyone can walk through an active portal, but they are only obvious to you, your circle-bound retinue members, and waifus of the parameter-set Tier or above.',
 })
@@ -198,6 +214,7 @@ bindings.push({
 bindings.push({
   title: 'Geometric Magic',
   cost: 5,
+  type: 'Ritual',
   whitelist: ['Ritual Circle'],
   desc: 'This service upgrade package lets you use triangles! And squares. And pentagons! And any crazy shape your brain can come up with. You are no longer limited to circles and may make walls, lines, rooms, and other shapes with the designs. The effect must originate at some point along the designs, and may affect a volume of space no greater than that of the parameter-determined cylinder or sphere.',
 })
@@ -205,6 +222,7 @@ bindings.push({
 bindings.push({
   title: 'Destruction Circle',
   cost: 5,
+  type: 'Ritual',
   whitelist: ['Ritual Circle'],
   desc: 'You gain an additional setting on which to design your circles. You may, instead of setting them to bind targets, set them to destroy things of the selected parameters within them. You may set the parameters to "Anything without a will" to avoid destroying potential capture targets, alternatively you may set it to All to create a general destruction spell circle to end particularly stubborn problems. Requirement determines how long it takes to completely destroy the targeted items within the area of effect.',
 })
@@ -212,6 +230,7 @@ bindings.push({
 bindings.push({
   title: 'Warding Circle',
   cost: 5,
+  type: 'Ritual',
   whitelist: ['Ritual Circle'],
   desc: 'You gain an additional setting on which to design your circles. Warding Circles instead prevent the passage of things with the selected parameters from crossing their borders, for a period of time determined by the investment in Effect. The level of being this may affect is set by the Tier. Beings affected by the circle cannot directly interact with the circle. For best results, place your warding circle inside a binding circle, not the other way around.',
 })
@@ -219,15 +238,28 @@ bindings.push({
 bindings.push({
   title: 'Ritual Anchor',
   cost: 15,
+  type: 'Ritual',
   whitelist: ['Ritual Circle'],
   desc: `
 <p>Instead of having to draw a circle, you are able to inscribe runes upon an item. The item acts as the center of the circle for the sphere as an ambient field, or may be at any designated point within the cylinder setting. More powerful circles require larger anchors. A circle with 6 points or less spent on it can be infused into something the size of a marble (10mm). Something the size of a heart or baseball could handle 12 points. Something the size of a basketball or head could handle 18, and a torso or beachball could handle 24.</p>
 <p>Objects infused with Teleport Circles transport those that touch them. Objects infused with Destruction Circles are not damaged by the effect, even if they are within the radius.</p>`,
 })
 
+export const symbioteRules = `
+<h3 class="font-semibold text-xl py-4">Symbiote: Eggs</h3>
+<p>A set of black eggs appear scattered around your starting location or safe-house, one for each of your purchased waifus. Each one contains an alien symbiote guided by your mental commands, which will instinctively attack and merge with their targets in a sexual manner. In addition to their basic effects, the default binding tattoos will prevent purchased waifus from lethally harming your symbiote larvae. Waifus captured in other ways will usually accept the symbiote outright if they know you want them to. if you do not purchase any waifus in your starting build, you will start with no more than five larvae. The first target to fall victim to one of your symbiotes or be transformed by any other symbiote-related binding method will automatically become your queen.</p>
+<p>Additional eggs, and thus larvae, come from your queen. First, you must fertilize your queen in the traditional human fashion. If you have Fertility Calibration, you may choose between egg production, live humanoid births - see the Offspring section under Additional Rules - and contraception. Results will be random otherwise. In an all-yuri swarm, a symbiote host’s tail may act as a phallus substitute for this purpose, provided it isn’t the queen’s own tail. Either way, the queen will produce one egg, about the size of an ostrich’s, every two days, for the next four weeks. Symbiote eggs will hatch after two weeks of incubation, depending on ambient temperature: warmer is faster, up to a limit.</p>
+<h3 class="font-semibold text-xl py-4">Symbiote: Larvae and Capturing</h3>
+<p>By default, symbiote larvae are obligate carnivores and may require up to five days to feed and grow large enough to take hosts. Your first larvae, however, will hatch fully-grown. Larvae are comparable in size and intelligence to a small dog or wild cat, such as a beagle or lynx. Larvae are not truly sapient, living only to merge with a future host. However, they are somewhat intelligent and capable of using tactics and trickery to more effectively attack more dangerous targets.</p>
+<p>Larvae are perfectly concealed until they initiate a capture. They cannot be fought off by any target of effective tier (after step 6) 5 or below. When a larva strikes, it will latch onto the target’s back, aligning its spine with hers before penetrating her with its tail and engulfing her head with its own. It pumps a transformative fluid into her from both ends, merging their bodies together into a more idealized, sexual form. The normally-phallic tip of a larva’s tail can invert itself for use against male targets.</p>
+<p>Against all targets, this initial transformation causes significant increases in muscle definition, particularly in the arms, abdominals, glutes, and legs. For female targets, it also causes severe non-muscular growth of the breasts, rear and thighs. Against male targets, it instead has a greater effect on muscles, including the pectorals, and adds to penis size and girth. Regardless of gender, the target sizes for any trait are roughly 100% on the scales defined in Advanced Tempest Runes (Body), with up to 20% error for any direction. If desired, symbiote masters may subject themselves to the same growth, according to their gender, as their swarm members. This must be manually triggered with the aid of a larva or swarm member. This growth may be re-triggered for any swarm member in the same way, at any time.</p>
+<p>This initial growth is not optional, but may recede after the fact at a rate of 3 percentage points every 5 hours. The full extent of this recession, if any, depends on practical concerns and your personal preference.The initial transformation will also induce a surge of lust that will only fade when satisfied by you or another symbiote host whose lust surge has previously been satisfied. Capture credits are rewarded once this lust has faded.</p>
+<p>As an alternative, even without any spare larvae, you and your queen may also convert a target in person by transmitting the same transformative fluid from her mouth or tail. This trades speed and immediate effect for subtlety; you or your queen can let your tail out without the rest of the armor, make out or have sex with the conversion target, and then leave before the real transformation begins.</p>`
+
 bindings.push({
   title: 'Alterzelu Symbiote',
   cost: 100,
+  type: 'Symbiote',
   freebies: {
     talentPerks: ['Everlasting Talent', 'Body Talent', 'Martial Talent', 'Wild Talent'],
     defensePerks: ['Body Defense', 'Wild Defense', 'Environmental Defense'],
@@ -238,15 +270,7 @@ bindings.push({
 <p>One single waifu in your initial purchase will be the queen to your king. You and her both will already be merged with your symbiotes when you arrive in your first world. Symbiosis alters the target’s mind, making her see you as either her mate or king, whose orders are to be obeyed and whose survival is paramount to the species. If you are naturally female or Possessed or Substituted a female vessel, you may act as your own queen, with no need for a king - just consorts at most. A lone female in an otherwise all-male swarm will always be the queen, while an all-male swarm will have to externalize its egg production by some means. If your queen is part of a set that can only be purchased together, the actual queen is the most dominant one according to their natural personalities; if the members of the set are truly co-equal, then they’ll serve as co-equal queens.</p>
 <p>Alternative Symbiote Theming: Xenomorphs aren’t for everyone, and that’s okay. If your chosen queen is canonically associated with metaphysical corruption or purification, or are known for polymorphing others or spawning or controlling large numbers of mooks, all stages of the symbiote life cycle will follow their aesthetic and theming instead in all stages of the symbiote life cycle: egg, larva, or bonded host. Such queens include (but are not limited to) Salem, Madokami, most versions of Circe, and the subjects of certain waifu perks.</p>
 <p>All symbiote hosts besides yourself will see the queen as the first among them, regardless of previous relationships, and arrange themselves into a pyramidal hierarchy beneath her. Symbiote hosts’ personalities are otherwise unchanged.</p>
-<h3 class="font-semibold">Symbiote: Eggs</h3>
-<p>A set of black eggs appear scattered around your starting location or safe-house, one for each of your purchased waifus. Each one contains an alien symbiote guided by your mental commands, which will instinctively attack and merge with their targets in a sexual manner. In addition to their basic effects, the default binding tattoos will prevent purchased waifus from lethally harming your symbiote larvae. Waifus captured in other ways will usually accept the symbiote outright if they know you want them to. if you do not purchase any waifus in your starting build, you will start with no more than five larvae. The first target to fall victim to one of your symbiotes or be transformed by any other symbiote-related binding method will automatically become your queen.</p>
-<p>Additional eggs, and thus larvae, come from your queen. First, you must fertilize your queen in the traditional human fashion. If you have Fertility Calibration, you may choose between egg production, live humanoid births - see the Offspring section under Additional Rules - and contraception. Results will be random otherwise. In an all-yuri swarm, a symbiote host’s tail may act as a phallus substitute for this purpose, provided it isn’t the queen’s own tail. Either way, the queen will produce one egg, about the size of an ostrich’s, every two days, for the next four weeks. Symbiote eggs will hatch after two weeks of incubation, depending on ambient temperature: warmer is faster, up to a limit.</p>
-<h3 class="font-semibold">Symbiote: Larvae and Capturing</h3>
-<p>By default, symbiote larvae are obligate carnivores and may require up to five days to feed and grow large enough to take hosts. Your first larvae, however, will hatch fully-grown. Larvae are comparable in size and intelligence to a small dog or wild cat, such as a beagle or lynx. Larvae are not truly sapient, living only to merge with a future host. However, they are somewhat intelligent and capable of using tactics and trickery to more effectively attack more dangerous targets.</p>
-<p>Larvae are perfectly concealed until they initiate a capture. They cannot be fought off by any target of effective tier (after step 6) 5 or below. When a larva strikes, it will latch onto the target’s back, aligning its spine with hers before penetrating her with its tail and engulfing her head with its own. It pumps a transformative fluid into her from both ends, merging their bodies together into a more idealized, sexual form. The normally-phallic tip of a larva’s tail can invert itself for use against male targets.</p>
-<p>Against all targets, this initial transformation causes significant increases in muscle definition, particularly in the arms, abdominals, glutes, and legs. For female targets, it also causes severe non-muscular growth of the breasts, rear and thighs. Against male targets, it instead has a greater effect on muscles, including the pectorals, and adds to penis size and girth. Regardless of gender, the target sizes for any trait are roughly 100% on the scales defined in Advanced Tempest Runes (Body), with up to 20% error for any direction. If desired, symbiote masters may subject themselves to the same growth, according to their gender, as their swarm members. This must be manually triggered with the aid of a larva or swarm member. This growth may be re-triggered for any swarm member in the same way, at any time.</p>
-<p>This initial growth is not optional, but may recede after the fact at a rate of 3 percentage points every 5 hours. The full extent of this recession, if any, depends on practical concerns and your personal preference.The initial transformation will also induce a surge of lust that will only fade when satisfied by you or another symbiote host whose lust surge has previously been satisfied. Capture credits are rewarded once this lust has faded.</p>
-<p>As an alternative, even without any spare larvae, you and your queen may also convert a target in person by transmitting the same transformative fluid from her mouth or tail. This trades speed and immediate effect for subtlety; you or your queen can let your tail out without the rest of the armor, make out or have sex with the conversion target, and then leave before the real transformation begins.</p>`,
+`,
   additionalDesc: `
 <h3 class="font-bold text-lg">Alternative Hive Arrangements</h3>
 If you Possessed or Substituted a waifu or are otherwise female, you may act as your own queen, with no need for a king - just consorts at most. A lone female in an otherwise all-male hive will always be the queen, while an all-male hive will have to externalize its egg production by some means. If your queen is part of a set that can only be purchased together, the actual queen is the most dominant one according to their natural personalities; if the members of the set are truly co-equal, then they'll serve as co-equal queens.
@@ -255,8 +279,9 @@ If you Possessed or Substituted a waifu or are otherwise female, you may act as 
 
 bindings.push({
   title: 'Universal Bus',
-  type: 'Expansion',
+  // type: 'Expansion',
   cost: 50,
+  type: 'Symbiote',
   whitelist: ['Alterzelu Symbiote'],
   desc: `
 <p>Symbiote larvae may now target digital entities. A larva changes the shape of its “tongue”  to interface with any external computer port, then projects itself into a representation of virtual space. (If a virtual space already exists, the larva will simply enter that instead.) Once there, it may stalk and convert the locals as normal. Software AI or brain uploads that do not have physical bodies will manifest into one at the real-world location of the larva, skipping to the penultimate stage of the normal process.</p>
@@ -265,8 +290,9 @@ bindings.push({
 
 bindings.push({
   title: 'Second-Generation Symbiote',
-  type: 'Expansion',
+  // type: 'Expansion',
   cost: 30,
+  type: 'Symbiote',
   freebies: {
     talentPerks: ['Psychic Talent', 'Talent Sharing (Psychic)'],
   },
@@ -276,8 +302,9 @@ bindings.push({
 
 bindings.push({
   title: 'Third-Generation Symbiote',
-  type: 'Expansion',
+  // type: 'Expansion',
   cost: 60,
+  type: 'Symbiote',
   whitelist: ['Second-Generation Symbiote'],
   desc: `
 <p>One of our lab’s attempts to hybridize our symbiotes with wild shoggoths has borne fruit. (All interns involved in the incident have been safely restored from backups.) This upgrade allows your symbiote hosts, including yourself, to melt into a semisolid amoeboid form for better infiltration, whether by flowing through vents, along a ceiling or wall, or hitching a ride on a person. Symbiote hosts obey conservation of mass in their slime forms and must remain contiguous. The form may be maintained indefinitely and they otherwise have full control over the form's shape, texture, and coloration. Symbiote hosts that have innate supernatural abilities of biological or genetic origin (ex. X-gene, Quirks, hereditary magic potential, alien racial abilities, etc.) retain them in their slime form. If they have enough room, they may revert to their original or symbiote forms at will, and may also assume a solid "armor" form around another similarly-sized being.</p>
@@ -288,6 +315,7 @@ bindings.push({
 bindings.push({
   title: 'Shroud of Power',
   cost: 80,
+  type: 'Shroud',
   desc: `
 <p>You gain a semi-sapient cape of solidified magic that acts as an extension of your will. It shifts and transforms at a thought, even unconscious ones. By draping it over or wrapping up a waifu with it, you are able to infuse your target with your will and bind them to it.</p>
 <p>This cape is subject to the same protections as the company smart device. It can shift its form and texture into a wide variety of shapes and imitate any other outfit, ropes, tendrils, hands, blades, and similar forms. The constructs of the Shroud may have the textures and forms of textiles like leathers, latex, or other forms of clothing. The shroud is extremely durable and capable of significant amounts of strength and speed, and you gain a form of tactile feedback from it.</p>
@@ -303,6 +331,7 @@ bindings.push({
 bindings.push({
   title: 'Three-Piece Suit',
   cost: 15,
+  type: 'Shroud',
   whitelist: ['Shroud of Power'],
   desc: `
 <p>Your Shroud may now be split and sectioned off, such that you functionally have multiple Shrouds. You could give a target an article of clothing to wear while still retaining the power of your personal Shroud. If your Shroud is elemental, you may separate one portion of it without worrying about it dissolving. This can only be created from yourself or extant manifestations of your Shroud.</p>
@@ -449,8 +478,10 @@ export const shroudElements = [
 bindings.push({
   title: 'Elemental Shroud',
   cost: 96,
+  type: 'Shroud',
   whitelist: ['Shroud of Power'],
   element: '',
+  // complex: 'flavor',
   desc: `
 <p>Congratulations! Your Shroud has been upgraded to the elemental manifestation type! Choose one element for your personal Shroud from the list in the Additional Rules section. (Your retinues’ cloaks are not affected.) No longer purely physical, the Shroud is an elemental manifestation of your will, granting you a noticeable buff to your affinity with that element, as well as allowing you to generate and control significant amounts of it. The cap on the effective tier of subjects you can successfully bind is raised by one.</p>
 <p>Your Shroud’s manifestation is always intense and obvious, such as a black void for Fearful Shrouds, burning flames or magma for a Volcanic Shroud, or a seemingly star-filled cosmos for the Void Shroud. As an extension of your will, it will only harm that which you wish it to harm. You may take control of a natural manifestation of your element by mixing in some of your Shroud into it. Manifestations of the element with a will of their own must be infused with your will the same way a waifu must. However, a willing manifestation may allow you to manipulate them, such as using a Cyber Shroud to repair a willing gynoid. Willful manifestations must either be bound like any other capture or released when you have no further need of their substance.</p>
@@ -462,8 +493,11 @@ bindings.push({
 bindings.push({
   title: 'Prismatic Shroud',
   cost: 64,
+  type: 'Shroud',
   whitelist: ['Elemental Shroud'],
-  element: '',
+  // element: '',
+  complex: 'flavor',
+  anything: 'Shroud Element',
   desc: `
 <p>Choose an additional element for your Shroud. It may now express either of these elements or themes, but only one at a time. True mergers of multiple elements are not possible, but practice will let you rapidly switch between them and keep the previous element’s manifestations active for longer afterwards. Doing so with directly-conflicting elements, such as the Volcanic and Boreal or Primal and Burial Shrouds, requires much more practice.</p>
 <p>This expansion may be repurchased as many times as desired, until all listed Shrouds are acquired. Each purchase costs 54 credits, plus 10 credits for each element you already have, including the element from Elemental Shroud.</p>`,
@@ -472,6 +506,8 @@ bindings.push({
 bindings.push({
   title: 'Complementary Colors',
   cost: 25,
+  waifu: 'any',
+  type: 'Shroud',
   whitelist: ['Elemental Shroud'],
   desc: `
 <p>Select a member of your retinue. They are now shroud-bound, bypassing the tier limit, with a cloak that has elemental properties much like your own. Unless you deign to allow them an element you personally possess, one will be extrapolated from their current affinities and hypothetical developmental trajectories. Your waifus may have unique elements not found on the standard list, whether hybridized from standard elements or entirely new. If you buy this perk for a waifu when you purchase her, she will be shroud-bound before delivery, bypassing the tier limit.</p>
@@ -483,6 +519,7 @@ bindings.push({
 bindings.push({
   title: 'Grand Tapestry',
   cost: 100,
+  type: 'Shroud',
   whitelist: ['Complementary Colors', 'Conjunction'],
   freebies: {
     talentPerks: ['Psychic Talent'],
@@ -497,6 +534,7 @@ bindings.push({
 bindings.push({
   title: 'Elemental Loom',
   cost: 50,
+  type: 'Shroud',
   whitelist: ['Elemental Shroud'],
   desc: `
 <p>Your Shroud has been upgraded into a gaseous aura and its manifestations no longer need to be obvious and intense. A Volcanic Shroud no longer needs to create flames, but instead be a temperature change; the Primal Shroud can create and manipulate bacteria and viruses, the Cyber Shroud can affect purely digital code, etc.</p>
@@ -508,6 +546,7 @@ bindings.push({
 bindings.push({
   title: 'Deep Weave',
   cost: 25,
+  type: 'Shroud',
   whitelist: ['Elemental Loom'],
   desc: `
 <p>Your Shroud is no longer merely an extension of your will, but part of your being. You are able to transform portions of yourself into your element(s) and heal or recharge yourself by absorbing manifestations of said element that you didn't create. If you had not already been capable of flight with your Shroud, you are now capable of such.</p>
@@ -587,30 +626,32 @@ lures.push({
 <p>This lure is optimized for symmetric 1v1 duels in the target’s specialty field. The contest must be initiated or otherwise freely accepted by the target, even implicitly. This lure drops in effectiveness the more you rely on equal teammates; in contests of leadership ability, from team sports to military command, any unit who follows your instructions or plans will not count as a teammate. If your target catches you cheating in a match that has strict rules, this lure will not apply to the result even if you nominally win. If you catch your opponent cheating in such a match, this lure will still apply to the result even if you nominally lose.</p>`,
 })
 
-// If you ever trade in a lure, any expansion you bought for it will be refunded automatically at the standard rate. Like all company-supplied powers, the powers granted by these perks cannot be nullified, copied, or stolen.
+export const lureExpansionDesc = 'If you ever trade in a lure, any expansion you bought for it will be refunded automatically at the standard rate. Like all company-supplied powers, the powers granted by these perks cannot be nullified, copied, or stolen.'
 
-lures.push({
+export const lureExpansions: Binding[] = []
+
+lureExpansions.push({
   title: 'Sticky Fingers: Brown Sugar',
   cost: 15,
   whitelist: ['Sticky Fingers'],
   desc: 'A natural aphrodisiac flows through your veins, further enhancing any sexual experience in which your fluids are involved. You are immune to this aphrodisiac even without Body Defense. Additionally, if you have male genitalia, you can secrete a natural lubricant from it when aroused. This aphrodisiac will be included in that as well.',
 })
 
-lures.push({
+lureExpansions.push({
   title: 'Faerie Feast: Master Chef',
   cost: 10,
   whitelist: ['Faerie Feast'],
   desc: 'When you are in charge of, or at a minimum supervising, the staff of a cooking facility, the benefits of your Faerie Feast perk will apply to the end product as though you had personally produced any food cooked there. If the staff primarily consists of your waifus, you don’t even need to be present, provided they follow a specific menu and set of guidelines that you’ve instructed them in. These guidelines can include extraneous non-food related steps. This does not apply to industrial-scale food production or ingredients that are not themselves edible.',
 })
 
-lures.push({
+lureExpansions.push({
   title: 'Faerie Feast: The Secret Ingredient is Love',
   cost: 5,
   whitelist: ['Faerie Feast: Master Chef'],
   desc: 'Members of your retinue that are already skilled at cooking no longer need your guidance to benefit from Faerie Feast, provided at least part of the meal is intended for consumption by you or other members of your retinue.',
 })
 
-lures.push({
+lureExpansions.push({
   title: 'Alluring Whisper: Dirty Minds',
   cost: 20,
   whitelist: ['Alluring Whisper'],
@@ -620,7 +661,7 @@ lures.push({
 `,
 })
 
-lures.push({
+lureExpansions.push({
   title: 'Alluring Whisper: Siren’s Song',
   cost: 80,
   whitelist: ['Alluring Whisper'],
@@ -630,14 +671,13 @@ lures.push({
   desc: 'Your voice is supernaturally compelling. As an active effect, you can empower your words to give specific commands to individuals, or rally a crowd with a song. Additionally, take Performance Talent for free. Beings with sufficient willpower can resist or even block this lure. It will never affect someone who lacks a sense of hearing.',
 })
 
-export const lureExpansionDesc = 'These perks are either expansions to multiple Bindings or serve as alternative methods to capturing or controlling your retinue. Like all company-supplied powers, the powers granted by these perks cannot be nullified, copied, or stolen.'
-
-export const lureExpansions: Binding[] = []
-
-lureExpansions.push({
+export const otherDesc = 'These perks are either expansions to multiple Bindings or serve as alternative methods to capturing or controlling your retinue. Like all company-supplied powers, the powers granted by these perks cannot be nullified, copied, or stolen.'
+export const otherControls: Binding[] = []
+otherControls.push({
   title: 'Conjunction',
   cost: 25,
   whitelist: ['Second-Generation Symbiote', 'Complementary Colors'],
+  needed: 1,
   desc: `
 <p>In addition to its other effects, the Binding method you use now adds its subjects to an empathic and telepathic group mind centered on yourself. This group mind operates on two levels: the higher, active, level allows everyone connected to participate in the telepathic equivalent of a chatroom, regardless of distance or barriers, such that you could even communicate between different multiverses. Your retinue members may actively share and experience each others’ senses through this network. The deeper, passive, level gives your waifus a full awareness of your activity and needs, such that they may even respond to orders that you haven't consciously given yet.</p>
 <p>This is only a group mind, not a hive mind. You and all your waifus retain your full individuality within the network and have no risk of forgetting whose life is whose. Any morality shifts that your waifus may develop are simply the result of close mental proximity to, and enforced empathy for, people with vastly different backgrounds and life experiences than their own.</p>
@@ -645,17 +685,18 @@ lureExpansions.push({
 <p>Additionally, retinue members bound through the method you used to unlock this expansion, whose powers rely on a background magic field and are operating outside of one will no longer be hampered when outside your presence. With this perk, they are always in your presence, no matter the distance.</p>`,
 })
 
-lureExpansions.push({
+otherControls.push({
   title: 'Apportation',
   cost: 25,
   whitelist: ['Basic Tempest Runes', 'Shroud of Power'],
+  needed: 1,
   desc: `
 <p>You and the retinue members you’ve bound, through the method you used to unlock this expansion, are now capable of teleporting yourselves, or anything in hand, to anyone else within your retinue as a whole with a few moments’ concentration. Doing this without some method of advance warning may be ill-advised. If you have Pocket Apartment or higher, you may teleport objects into appropriate spaces in the apartment instead of dropping directly in on someone else. If you have All Roads Lead To Home or Rainbow Bridge, you and your waifus may always teleport into the apartment instead of opening portals therein. If you do so personally and then try to open a portal out, you must still place the exit reasonably close to your previous outside-world location.</p>
 <p>Teleporting something you have in hand does not require ownership, but certain conceptual limitations and the time required to initiate and complete the teleportation prevent this ability from being used as an attack or defense vector. You can’t strip your enemies of their Infinity+1 armor by grabbing hold of them, let alone telefrag people, nor shunt incoming bullets into a containment unit back at home.</p>
 <p>A person or item held by your or a retinue member’s telekinesis, Shroud, or insides (or some other method) may be teleported as if it’s literally in hand. Merely encompassing it with subtle manifestations of the Shroud (as enabled by Elemental Loom) doesn’t count. The Tempest Jewelry version of this perk uses the jewelry pieces themselves as beacons and cannot work through any deactivated pieces.</p>`,
 })
 
-lureExpansions.push({
+otherControls.push({
   title: 'Hotel California',
   cost: 20,
   desc: `
@@ -667,7 +708,7 @@ lureExpansions.push({
 <p>If you have the Alterzelu Symbiote, any of your employees who are both not bonded with a symbiote and are alone in an employees-only room for more than a few minutes risk getting attacked by a stray larval symbiote. Your waifus who are already bonded with one will not help the newbies until it’s over.</p>`,
 })
 
-lureExpansions.push({
+otherControls.push({
   title: 'Command Seals',
   cost: 5,
   special: 'At least one Nasuverse Servant',
@@ -690,7 +731,7 @@ lureExpansions.push({
 <p>Each Ruler-class Servant you summon may carry six additional sets of Seals on their body. These extra Seals must be paid for, regenerate independently from any others, and may be used by yourself or any delegate Master.</p>`,
 })
 
-lureExpansions.push({
+otherControls.push({
   title: 'Command Seals: General Seals',
   cost: 10,
   special: 'Retroactively removes the previous control’s Nasuverse Servant requirement.',
@@ -698,7 +739,7 @@ lureExpansions.push({
   desc: 'Command Seals may now be used on any purchased or captured waifu, not just Servants. Your Command Seals purchase limit now counts all non-canon Servants of any tier and all non-Servant retinue members of tier 6 or higher, in addition to all Servants. This ignores all effective tier changes after step 4.',
 })
 
-lureExpansions.push({
+otherControls.push({
   title: 'Divine Marking',
   cost: 20,
   special: 'At least one deity from the Danmachi setting',
@@ -706,7 +747,7 @@ lureExpansions.push({
   desc: 'A deity in your service who grants or updates a Falna, including non-Danmachi deities who’ve learned how to do so, are considered to be applying a Stamp to the Falna’s holder, even if you lack that binding. The Falna itself will seem no different than normal. This Falna-Stamp requires the normal three-day period to fully bind the recipient.',
 })
 
-lureExpansions.push({
+otherControls.push({
   title: 'Space Truckin’',
   cost: 100,
   special: `
@@ -730,7 +771,7 @@ lureExpansions.push({
 <p>Worlds your isekai targets are sent to will not become accessible to the rest of your retinue through Exit Stage Left or other company perks until the target completes a local storyline (charges Exit Stage Left to completion). This will count as you charging Exit Stage Left yourself. If the target dies before they can do so and you have Warranty Plan, they will respawn in your demiplane (if you have one) or otherwise near you, where they can be bound through your other means. If you have We Will Meet Again or Rainbow Bridge, they can then return to the world they were sent to, with any reinforcements or other support you choose to give them. Neither successful nor failed isekais are “active” and will not continue to count against your cap above.</p>`,
 })
 
-lureExpansions.push({
+otherControls.push({
   title: 'Space Truckin’: Highway Star',
   cost: 100,
   whitelist: ['Space Truckin’'],

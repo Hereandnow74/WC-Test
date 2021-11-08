@@ -4,11 +4,21 @@
   >
     <div class="bg-gray-800 border border-gray-800 h-full flex flex-col rounded">
       <div class="flex-grow relative">
-        <img ref="companionEl" class="rounded absolute object-cover h-full w-full object-top" :data-src="charData.image || '/img/placeholder.jpg'" :alt="charData.name">
+        <img
+          ref="companionEl"
+          class="rounded absolute object-cover h-full w-full object-top"
+          :data-src="charData.image || '/img/placeholder.jpg'"
+          :alt="charData.name"
+        >
         <icon-park-outline:full-screen-one
           class="absolute top-1 right-1 hover:text-blue-400 cursor-pointer mix-blend-difference"
-          @click="() => (showModal = true, modalImage=charData.image)"
+          @click="() => (showModal = true, modalImage=(nsfw ? charData.image_nsfw : charData.image))"
         />
+        <span
+          v-if="charData.image_nsfw"
+          class="absolute top-1 right-8 hover:text-blue-400 cursor-pointer mix-blend-difference"
+          @click="nsfw = !nsfw"
+        >{{ nsfw ? 'NSFW' : 'SFW' }}</span>
       </div>
       <div class="py-2 h-max">
         <h4 class="text-xl justify-center flex items-center px-1">
@@ -28,6 +38,14 @@
             <fluent:delete-20-filled v-if="isUserChar" class="hover:text-red-500 ml-2 cursor-pointer" @click="deleteCharacter" />
           </div>
         </h4>
+        <div class="flex gap-1 justify-center">
+          <span
+            v-for="tag in charData.tags"
+            :key="tag"
+            class="px-1 rounded-md"
+            :class="tagColors[tag]"
+          >{{ tagNames[tag] }}</span>
+        </div>
         <div class="flex justify-between px-4">
           <div class="text-gray-400">
             Tier: <span class="text-amber-300">{{ (charData.tier) }}</span>
@@ -63,7 +81,7 @@
 </template>
 
 <script lang='ts' setup>
-import { findIndex } from 'lodash-es'
+import { findIndex, random } from 'lodash-es'
 import { CHAR_COSTS } from '~/data/constatnts'
 import { useStore } from '~/store/store'
 
@@ -85,10 +103,17 @@ const props = defineProps({
 const modalImage = ref('')
 const showModal = ref(false)
 const usedModal = ref(false)
+const nsfw = ref(false)
 const companionEl = ref<HTMLImageElement| null>(null)
-const charData = props.char.t ? { uid: props.char.u, name: props.char.n, world: props.char.w, tier: props.char.t, image: props.char.i, sourceImage: props.char.s } : props.char
+const charData = props.char.t ? { uid: props.char.u, name: props.char.n, world: props.char.w, tier: props.char.t, image: props.char.i, image_nsfw: props.char.in, sourceImage: props.char.s, tags: props.char.b } : props.char
+if (!charData.uid) charData.uid = random(10000000, 99999999)
+
+const tagNames = { F: 'Female', M: 'Male', O: 'Other', C: 'Canon', U: 'By User' }
+const tagColors = { F: 'bg-pink-500', M: 'bg-blue-500', C: 'bg-yellow-400', O: 'bg-fuchsia-700', U: 'bg-warm-gray-600' }
 
 const { flags, companions, localUserCharacters } = useStore()
+
+watch(nsfw, () => companionEl.value.src = nsfw.value ? charData.image_nsfw : charData.image)
 
 const modalImageCmp = computed(() => {
   if (modalImage.value.includes('imgur') && modalImage.value.split('.').slice(-2, -1)[0].slice(-1) === 'm') {

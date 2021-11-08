@@ -43,7 +43,7 @@ waifu_perks.push({
   title: 'Shikinami-Type',
   waifu: 'Souryuu Asuka Langley',
   from: 'Evangelion',
-  image: 'https://cdn.statically.io/gh/klassekatze/waifucatimg/master/imagecache_thumb/sample_932e9b4752b56439631bc5783f04de1f.jpg',
+  image: 'https://i.imgur.com/OV6lXQM.png',
   cost: 45,
   desc: 'Asuka is instead Shikinami Asuka from Rebuild. Compared to Souryuu Asuka, she has greater piloting experience, her ground combat ability and personal Lance of Longinus from the Honkai Impact 3rd collaboration, and a remnant of Bardiel in her eye that gives her a greater talent for AT Field manipulation. She can also activate the remnant to enter a berserker mode that temporarily raises her tier rating at step 6. If Asuka\'s tier before activating this Angel Blood is T9 or below, it will add one tier to her rating; if she\'s already T10, it will double her power but not raise her tier any further Without practice, Angel Blood can only be activated for five minutes at at a time and has a cooldown of one week (168 hours).',
 })
@@ -211,7 +211,7 @@ waifu_perks.push({
   waifu: 'Minfilia Warde',
   from: 'Final Fantasy XIV',
   image: '/img/waifu_perks/mother_word.jpg',
-  discount: 998,
+  cost: 998,
   desc: 'Above and beyond her own power, Minfilia channels the existence of the Primal most ancient and famous - Hydaelyn. Bound together in body and spirit, what kind of person will this union create?',
 })
 waifu_perks.push({
@@ -586,7 +586,7 @@ waifu_perks.push({
   desc: 'Bom from Sirin\'s wish to have another chance at life as Cecilia Schariac\'s daughter, Sirin instead awakens in the body of K423. Unlike what transpires originally, she retains her memories in full and the Herrscher personality that would normally develop within K423 - born of Sirin\'s hatred for humanity - is never created as a result. In addition, Sirin will obtain all equipment and signature outfits Kiana Kaslana (K423) would have if purchased at base, as well as any combative abilities she has - skills such as the Kaslana gun kata and the Edge of Taixuan. ',
 })
 waifu_perks.push({
-  title: 'Fj',
+  title: '「」',
   waifu: 'Ryougi Shiki',
   from: 'Fate Grand Order',
   image: 'https://i.imgur.com/ls7nSA3.png?1',
@@ -669,7 +669,7 @@ waifu_perks.push({
   title: 'Undivided',
   waifu: 'Matou Sakura',
   from: 'Nasuverse',
-  image: 'https://i.imgur.com/lyLZeeR.png?1',
+  image: 'https://i.imgur.com/zI7FLcjm.png', // https://i.imgur.com/lyLZeeR.png?1
   cost: 18,
   desc: 'Sakura is instead the non-canon Tohsaka Sakura, a version who was trained in her Imaginary Numbers element and may or may not have separated from her sister. If you already have Matou Rin alongside this Sakura, they will recognize each other. This perk may not be applied to the same Sakura as Tainted Vessel, Knight of the Cherry Blossom, or Kouhai of Light. If you already have either of those perks and want Tohsaka Sakura, you may still purchase this, pre-applied to a new Sakura, for 20 credits.',
 })

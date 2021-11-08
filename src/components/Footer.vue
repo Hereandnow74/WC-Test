@@ -200,7 +200,6 @@
             </ul>
           </div>
           <div id="Companions">
-            <!-- TODO: Clickable Name and World -->
             <Foldable title="Companions" class="text-lg text-gray-400" :is-open="true">
               <div class="flex flex-col gap-1 text-gray-200 text-base">
                 <div
@@ -210,13 +209,14 @@
                   :class="char.sold ? 'text-gray-600': ''"
                 >
                   <div>
+                    <span class="text-gray-500 mr-1">{{ methods[char.method] }}</span>
                     <router-link :to="`/companions/?name=${char.name}`" class="hover:underline">
                       {{ char.name }}
                     </router-link>
                     <span class="text-gray-500"> from </span>{{ char.world }}
                     <span class="text-gray-500"> Tier: </span>
                     <span class="text-green-500">{{ char.tier }}</span>
-                    <span class="px-2 text-red-500">SOLD</span>
+                    <span v-if="char.sold" class="px-2 text-red-500">SOLD</span>
                   </div>
                   <div v-if="!char.sold">
                     <Button label="sell" size="Small" bg-color="bg-red-500" @click="sellCompanion(char.uid)" />
@@ -230,6 +230,9 @@
           <h3 class="mt-4 text-xl mx-4 text-gray-400">
             Spendings
           </h3>
+          <div class="font-semibold flex justify-between mx-4 border-b border-gray-700">
+            Origin: <span class="text-orange-500">{{ startingOrigin.cost }}</span>
+          </div>
           <div class="font-semibold flex justify-between mx-4 border-b border-gray-700">
             Heritage: <span class="text-orange-500">{{ heritageCost }}</span>
           </div>
@@ -338,6 +341,13 @@ const {
   allEffects, flags, companionProfit, companionProfitSold, totalCost,
 } = useStore()
 
+const methods = {
+  buy: 'Bought',
+  capture: 'Captured',
+  used: 'Bought slightly used',
+  yoink: 'Yoinked',
+}
+
 const originText = computed(() => {
   const variants = {
     'Drop-In': 'Dropped-In',
@@ -413,7 +423,18 @@ function buildString(title: string, items: Perk[], left: object) {
   items.forEach((x) => {
     left.c -= x.cost
     const count = x.count && x.count > 1 ? ` x${x.count} ` : ''
-    str += `${x.title}${count} -${x.cost} [${left.c}]\n`
+    let complexFlavor = ''
+    let complexCompanion = ''
+    let complexBoth = ''
+    if (x.complex) {
+      if (x.complex[0].flavor && x.complex[0].target)
+        complexBoth = `[${x.complex.map(x => `${x.target} has ${x.flavor}`).join(', ')}]`
+      if (x.complex[0].flavor)
+        complexFlavor = `[${x.complex.map(x => `${x.flavor}`).join(', ')}]`
+      if (x.complex[0].target)
+        complexCompanion = `[${x.complex.map(x => `${x.target}`).join(', ')}]`
+    }
+    str += `${x.title}${count}${complexBoth || complexCompanion || complexFlavor} -${x.cost} [${left.c}]\n`
   })
   return str
 }
@@ -424,7 +445,7 @@ function copyText() {
 
   full += intensities.value.length
     ? `Intensity \n${intensities.value.reduce((a, x) =>
-      a += `${x.title} +${fullCost.c * x.intensity} [${(fullCost.c += x.intensity * fullCost.c, fullCost.c)}]\n\n`
+      a += `${x.title} +${baseBudget.value * x.intensity} [${(fullCost.c += x.intensity * baseBudget.value, fullCost.c)}]\n\n`
     , '')}`
     : ''
 
@@ -440,8 +461,20 @@ function copyText() {
   full += miscPerks.value.length ? `${buildString('Misc Perks', miscPerks.value, fullCost)}\n` : ''
   full += genericWaifuPerks.value.length ? `${buildString('Generic Waifu Perks', genericWaifuPerks.value, fullCost)}\n` : ''
   full += waifuPerks.value.length ? `${buildString('Waifu Perks', waifuPerks.value, fullCost)}\n` : ''
-  full += companions.value.length
-    ? `Companions -${companionsCost.value} [${fullCost.c - companionsCost.value}]\n${companions.value.reduce((a, x) =>
+
+  const companionsBought = companions.value.filter(x => x.method !== 'capture')
+  const companionsCaptured = companions.value.filter(x => x.method === 'capture')
+
+  full += companionsBought.length
+    ? `Companions bought -${companionsCost.value} [${fullCost.c - companionsCost.value}]\n${companionsBought.reduce((a, x) =>
+      a += `${x.name}(T${x.tier})[${x.method}] from ${x.world}\n`
+    , '')}`
+    : ''
+
+  fullCost.c -= companionsCost.value
+
+  full += companionsCaptured.length
+    ? `\nCompanions captured +${companionProfit.value} [${fullCost.c + companionProfit.value}]\n${companionsCaptured.reduce((a, x) =>
       a += `${x.name}(T${x.tier}) from ${x.world}\n`
     , '')}`
     : ''

@@ -8,14 +8,37 @@
       />
       <Desc :desc="desc" class="p-2 bg-violet-200 dark:bg-violet-900" />
     </div>
+    <div class="flex gap-4 mx-auto w-max mb-4">
+      <div
+        v-for="tree in Object.keys(heritageByTree) as 'Dragon'[]"
+        :key="tree"
+        class="px-2 py-1 border-2 rounded cursor-pointer hover:border-orange-400"
+        :class="activeTree === tree ? 'border-orange-400': ''"
+        @click="activeTree = tree"
+      >
+        <h3>{{ tree }}</h3>
+        <div>Total perks: <span>{{ heritageByTree[tree].length }}</span></div>
+      </div>
+    </div>
     <div class="md:column-count-2 lg:column-count-3 pb-8">
       <PerkCard
-        v-for="hr in heritages"
+        :key="heritages[0].title"
+        :class="isAvailable(heritages[0]) ? heritageColors[heritages[0].tree]: 'bg-gray-200 dark:bg-gray-600'"
+        :perk="heritages[0]"
+        :is-available="isAvailable(heritages[0])"
+        :is-active="!!allHeritages[heritages[0].title]"
+        :saved-perk="allHeritages[heritages[0].title]"
+        :increment="true"
+        @pickPerk="pickHeritage"
+      />
+      <PerkCard
+        v-for="hr in heritageByTree[activeTree]"
         :key="hr.title"
         :class="isAvailable(hr) ? heritageColors[hr.tree]: 'bg-gray-200 dark:bg-gray-600'"
         :perk="hr"
         :is-available="isAvailable(hr)"
-        :is-active="findIndex(heritage, {title: hr.title}) !== -1"
+        :is-active="!!allHeritages[hr.title]"
+        :saved-perk="allHeritages[hr.title]"
         @pickPerk="pickHeritage"
       >
         <template #title>
@@ -34,6 +57,18 @@
             <span v-if="flags.isTranshuman && hr.tree === 'Transhuman'"> - {{ flags.transhumanType }}</span>)
           </h6>
         </template>
+        <template #underDesc>
+          <Foldable
+            v-for="type, key in hr.types"
+            :key="key"
+            :title="key"
+            class="px-2"
+            :is-open="flags.transhumanType === key"
+            @click.stop
+          >
+            <Desc :desc="type" class="p-0" />
+          </Foldable>
+        </template>
       </PerkCard>
     </div>
   </div>
@@ -41,6 +76,7 @@
 
 <script lang='ts' setup>
 import { findIndex, intersection } from 'lodash'
+import { onBeforeRouteUpdate } from 'vue-router'
 import { desc, heritages, Heritage } from '~/data/heritage'
 import { addFreebies, deleteFreebies, useTooltips } from '~/logic/misc'
 import { Perk, useStore } from '~/store/store'
@@ -56,6 +92,34 @@ const heritageColors = {
   Outsider: 'bg-fuchsia-200 dark:bg-fuchsia-900 hover:(bg-fuchsia-300 dark:bg-fuchsia-800)',
   None: 'bg-warm-gray-200 dark:bg-warm-gray-700 hover:(bg-warm-gray-100 dark:bg-warm-gray-800)',
 }
+const activeTree = ref<'Dragon' | 'Transhuman' | 'Outsider'>('Dragon')
+
+const heritageByTree = computed(() => {
+  const res = {
+    Dragon: [] as Heritage[],
+    Transhuman: [] as Heritage[],
+    Outsider: [] as Heritage[],
+  }
+  heritages.forEach(x => x.tree !== 'None' ? res[x.tree].push(x) : null)
+  return res
+})
+
+const allHeritages = computed(() => {
+  const res: any = {}
+  heritage.value.forEach(x => res[x.title] = x)
+  return res
+})
+
+const params = useUrlSearchParams('history')
+
+if (params.q) activeTree.value = params.q
+
+onBeforeRouteUpdate((to, from, next) => {
+  if (to.query.q)
+    activeTree.value = to.query.q
+
+  nextTick(next)
+})
 
 function isAvailable(hr: Heritage): boolean {
   if (flags.value.noHeritage && !hr.whitelist) { return true }

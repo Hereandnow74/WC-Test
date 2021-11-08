@@ -75,7 +75,6 @@ export const rulesList = [
 
 export const LINKS = computed(() => {
   const links = {} as Record<string, string>
-  // const outside = {}
   const allCats = {
     intensity,
     origin,
@@ -91,21 +90,25 @@ export const LINKS = computed(() => {
   for (const category of Object.entries(allCats)) {
     for (const entry of category[1])
       links[entry.title] = category[0]
-      // if (outside[category[0]])
-      //   outside[category[0]].push(...(entry?.whitelist || []))
-      // else
-      //   outside[category[0]] = [...(entry?.whitelist || [])]
   }
-  // console.log(outside)
-  // for (const key in outside) {
-  //   if (Object.prototype.hasOwnProperty.call(outside, key))
-  //     console.log(outside[key].filter(x => !links[x]))
-  // }
   links['Directly in Companions'] = 'companions'
   return links
 })
 
-let chars = null
+export const QUERIES = computed(() => {
+  const links = {} as Record<string, string>
+  const allCats = {
+    binding: bindings,
+    heritage: heritages,
+  }
+  for (const category of Object.entries(allCats)) {
+    for (const entry of category[1])
+      links[entry.title] = entry?.tree || entry?.type
+  }
+  return links
+})
+
+let chars: any = null
 
 export async function getChars() {
   if (!chars)
@@ -115,4 +118,7 @@ export async function getChars() {
 
 const str = Object.keys(TOOLTIPS).sort((a, b) => b.length - a.length).join('|')
 export const TOOLTIPS_REG = new RegExp(str, 'g')
-export const LINKS_REG = new RegExp(Object.keys(LINKS.value).sort((a, b) => b.length - a.length).join('|'), 'g')
+export const LINKS_REG = new RegExp(Object.keys(LINKS.value)
+  .map((x) => { x = x.replace('(', '\\('); x = x.replace(')', '\\)'); return x })
+  .sort((a, b) => b.length - a.length)
+  .join('|'), 'g')

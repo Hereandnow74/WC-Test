@@ -13,6 +13,45 @@
       <clarity:eraser-solid class="icon-btn w-8" @click="search = ''" />
       <Select v-model.number="tier" :options="tierOptions" />
       <Input v-model.number="limit" class="px-1" :style="`width: ${(''+limit).length + 3}ch`" />
+      <div class="flex rounded bg-gray-600 cursor-pointer">
+        <div
+          :class="gender==='F' ? 'bg-gray-700':''"
+          class="hover:bg-gray-700 text-pink-300 px-2 rounded-l"
+          @click="gender='F'"
+        >
+          F
+        </div>
+        <div
+          :class="gender==='M' ? 'bg-gray-700':''"
+          class="border-l border-r px-2 hover:bg-gray-700 text-blue-400"
+          @click="gender='M'"
+        >
+          M
+        </div>
+        <div
+          :class="gender==='' ? 'bg-gray-700':''"
+          class="hover:bg-gray-700 px-2 text-gray-200 rounded-r"
+          @click="gender=''"
+        >
+          A
+        </div>
+      </div>
+      <div class="flex rounded bg-gray-600 cursor-pointer">
+        <div
+          :class="image==='' ? 'bg-gray-700':''"
+          class="hover:bg-gray-700 text-green-300 px-2 rounded-l"
+          @click="image=''"
+        >
+          all
+        </div>
+        <div
+          :class="image==='^h' ? 'bg-gray-700':''"
+          class="border-l px-2 hover:bg-gray-700 text-gray-200 rounded-r"
+          @click="image='^h'"
+        >
+          img
+        </div>
+      </div>
       <Checkbox
         v-if="startingWorld.worldName !== 'Current world'"
         v-model="isLimited"
@@ -28,11 +67,18 @@
       Loading... <span class="inline-block text-xl"><eos-icons:bubble-loading /></span>
     </div>
     <Foldable v-if="allUserCharacters.length" class="text-lg mb-2" title="User Characters">
-      <div class="mb-4 flex flex-wrap overflow-y-auto">
-        <CompanionCard v-for="char in allUserCharacters" :key="char.name" :char="char" :is-user-char="true" :lazy="false" />
+      <div class="mb-4 flex flex-wrap overflow-y-auto text-base">
+        <CompanionCard
+          v-for="char in allUserCharacters"
+          :key="char.name"
+          :char="char"
+          :is-user-char="true"
+          :lazy="false"
+          @edit-companion="editCompanion"
+        />
       </div>
     </Foldable>
-    <div ref="waifuList" class="flex flex-wrap flex-grow overflow-y-auto pb-8" @edit-companion="editCompanion">
+    <div ref="waifuList" class="flex flex-wrap flex-grow overflow-y-auto pb-8">
       <CompanionCard
         v-for="{ item: char } in filteredCharacters"
         :key="char.u"
@@ -73,6 +119,9 @@ const limit = ref(10)
 const tier = ref(0)
 const isLimited = ref(false)
 
+const gender = ref('')
+const image = ref('')
+
 // const characters = ref({})
 const loading = ref(true)
 const loadChars = () => import('~/data/characters.json')
@@ -84,18 +133,18 @@ const characterToEdit = ref({})
 const waifuList = ref<HTMLElement|null>(null)
 
 const tierOptions = [
-  { name: 'Any', value: 0 },
-  { name: '1', value: 1 },
-  { name: '2', value: 2 },
-  { name: '3', value: 3 },
-  { name: '4', value: 4 },
-  { name: '5', value: 5 },
-  { name: '6', value: 6 },
-  { name: '7', value: 7 },
-  { name: '8', value: 8 },
-  { name: '9', value: 9 },
-  { name: '10', value: 10 },
-  { name: '11', value: 11 },
+  { label: 'Any', value: 0 },
+  { label: '1', value: 1 },
+  { label: '2', value: 2 },
+  { label: '3', value: 3 },
+  { label: '4', value: 4 },
+  { label: '5', value: 5 },
+  { label: '6', value: 6 },
+  { label: '7', value: 7 },
+  { label: '8', value: 8 },
+  { label: '9', value: 9 },
+  { label: '10', value: 10 },
+  { label: '11', value: 11 },
 ]
 
 const { localUserCharacters, userCharacters, startingWorld, params } = useStore()
@@ -104,15 +153,15 @@ const options = {
   includeScore: true,
   findAllMatches: true,
   useExtendedSearch: true,
-  threshold: 0.1,
-  keys: ['n', 'w', 't'],
+  threshold: 0.4,
+  keys: ['n', 'w', 't', 'b', 'i'],
 }
 
 const fuse = new Fuse(charArr.value, options)
 
 onMounted(async() => {
   // characters.value = (await loadChars()).default
-  charArr.value.push(...Object.values((await loadUsersChars()).default))
+  charArr.value.push(...Object.values((await loadUsersChars()).default).map(x => ((x.b ? x.b.push('U') : x.b = ['U']), x)))
   charArr.value.push(...Object.values((await loadChars()).default))
   fuse.setCollection(charArr.value)
   loading.value = false
@@ -125,10 +174,28 @@ onMounted(async() => {
 const filteredCharacters = computed(() => {
   const sr = search.value || '!^xcv'
   let sopt: any = {}
-  if (isLimited.value)
-    sopt = { $and: [{ t: tier.value !== 0 ? `${tier.value}` : '!z' }, { w: startingWorld.value.worldName }, { n: sr }] }
-  else
-    sopt = { $and: [{ t: tier.value !== 0 ? `${tier.value}` : '!z' }, { $or: [{ n: sr }, { w: sr }] }] }
+  if (isLimited.value) {
+    sopt = {
+      $and: [
+        { t: tier.value !== 0 ? `${tier.value}` : '!z' },
+        { n: sr },
+        { w: startingWorld.value.worldName },
+      ],
+    }
+  }
+  else {
+    sopt = {
+      $and: [
+        { t: tier.value !== 0 ? `${tier.value}` : '!z' },
+        {
+          $or: [
+            { w: sr }, { n: sr }],
+        },
+      ],
+    }
+  }
+  if (gender.value) sopt.$and.push({ b: gender.value })
+  if (image.value) sopt.$and.push({ i: image.value })
   return fuse.search(sopt, { limit: limit.value })
 })
 

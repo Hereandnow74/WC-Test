@@ -3,20 +3,19 @@
     <label class="flex gap-2">
       <span v-if="label">{{ label }}</span>
       <select
+        v-model="model"
         class="rounded text-gray-800 px-2 w-full"
         outline="dark:(none active:none)"
         border="~ gray-800"
         :placeholder="placeholder"
-        :value="modelValue"
         required
-        @change="$emit('update:modelValue', ($event.target as HTMLInputElement).value)"
       >
         <option value="" disabled selected hidden>{{ placeholder }}</option>
         <option
           v-for="opt in options"
-          :key="opt.name !== undefined ? opt.name : opt"
+          :key="opt.label !== undefined ? opt.label : opt"
           :value="opt.value !== undefined ? opt.value : opt"
-        >{{ opt.name !== undefined ? opt.name : opt }}</option>
+        >{{ opt.label !== undefined ? opt.label : opt }}</option>
       </select>
     </label>
     <span v-if="errorMessage" class="text-xs text-red-600 dark:text-red-300">
@@ -25,37 +24,41 @@
   </div>
 </template>
 
-<script lang='ts'>
-import { defineComponent } from 'vue'
-
-export default defineComponent({
-  name: 'Input',
-  props: {
-    modelValue: {
-      type: [String, Number],
-      default: '',
-    },
-    label: {
-      type: String,
-      default: '',
-    },
-    placeholder: {
-      type: String,
-      default: '',
-    },
-    errorMessage: {
-      type: String,
-      default: '',
-    },
-    options: {
-      type: Array,
-      default: () => [],
-    },
+<script lang='ts' setup>
+const props = defineProps({
+  modelValue: {
+    type: [String, Number, Array],
+    default: '',
   },
-  emits: ['update:modelValue'],
+  label: {
+    type: String,
+    default: '',
+  },
+  placeholder: {
+    type: String,
+    default: '',
+  },
+  errorMessage: {
+    type: String,
+    default: '',
+  },
+  options: {
+    type: Array,
+    default: () => [],
+  },
+})
+const emit = defineEmits(['update:modelValue'])
+
+const model = computed({
+  get() {
+    return props.modelValue
+  },
+  set(value) {
+    emit('update:modelValue', value)
+  },
 })
 </script>
 
 <style>
-select:invalid { color: rgb(160, 160, 160); }
+select:invalid { color: rgb(134, 133, 133); }
 </style>

@@ -1,11 +1,10 @@
 <template>
-  <nav class="text-xl flex px-2">
-    <div class="relative top-1 pr-2 cursor-pointer hover:text-green-500" @click="() => toggleSideMenu()">
-      <ci:hamburger />
-    </div>
+  <nav class="text-xl flex justify-between items-center px-2 fixed w-full top-0 bg-white dark:bg-[#121212] z-20">
+    <ci:hamburger class="cursor-pointer hover:text-green-500" @click="() => toggleSideMenu()" />
+
     <Navigation :items="routes" :titles="titles" :level="1" class="text-base md:text-xl">
-      <ModeButton class="hidden fixed lg:block right-0 z-20" />
     </Navigation>
+    <ModeButton class="hidden lg:block" />
     <SideMenu :class="showSideMenu ? 'translate-x-0' : '-translate-x-36'" />
   </nav>
 </template>

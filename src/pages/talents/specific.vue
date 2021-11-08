@@ -12,7 +12,7 @@
         :bg="genericIsAvailable(perk) ? 'lime-200 dark:lime-900 hover:(lime-100 dark:lime-800)'
           : 'gray-200 dark:gray-600'"
         :is-available="genericIsAvailable(perk)"
-        :is-active="findIndex(genericWaifuPerks, {title: perk.title}) !== -1"
+        :saved-perk="allGeneric[perk.title]"
         @pickPerk="pickGenericPerk"
       ></PerkCard>
     </div>
@@ -83,7 +83,7 @@
 import { findIndex, intersection } from 'lodash-es'
 import { waifu_perks, WaifuPerk } from '~/data/waifu_perks'
 import { genericPerks, genericDesc, PerkFull } from '~/data/talents'
-import { lazyLoadImg, useTooltips } from '~/logic/misc'
+import { lazyLoadImg, pickSimplePerk, useTooltips } from '~/logic/misc'
 import { Perk, useStore } from '~/store/store'
 
 import PerkCard from '~/components/PerkCard.vue'
@@ -100,6 +100,12 @@ const waifuList = ref<HTMLElement|null>(null)
 const modalImage = ref('')
 
 onMounted(() => lazyLoadImg(waifuList.value))
+
+const allGeneric = computed(() => {
+  const res: any = {}
+  genericWaifuPerks.value.forEach(x => res[x.title] = x)
+  return res
+})
 
 function isAvailable(perk: WaifuPerk): boolean {
   if (findIndex(companions.value, { name: typeof perk.waifu === 'string' ? perk.waifu : perk.waifu[0] }) !== -1)
@@ -132,23 +138,7 @@ function pickWaifuPerk(perk: WaifuPerk) {
 }
 
 function pickGenericPerk(perk: PerkFull, saveData: Perk) {
-  if (genericIsAvailable(perk)) {
-    const ind = findIndex(genericWaifuPerks.value, { title: perk.title })
-    if (ind !== -1) {
-      if (saveData.count !== 0) {
-        genericWaifuPerks.value[ind].count = saveData.count
-        genericWaifuPerks.value[ind].cost = saveData.cost
-      }
-      else {
-        const toDel = genericWaifuPerks.value.splice(ind)
-        toDel.forEach(x => allEffects.value.splice(allEffects.value.indexOf(x.title), 1))
-      }
-    }
-    else {
-      allEffects.value.push(perk.title)
-      genericWaifuPerks.value.push(saveData)
-    }
-  }
+  pickSimplePerk(perk, saveData, genericIsAvailable, genericWaifuPerks.value)
 }
 
 onMounted(() => useTooltips())

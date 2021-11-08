@@ -1,24 +1,29 @@
 <template>
   <div
-    :id="perk.title"
-    class="sm:p-2 mb-2 inline-block cursor-pointer"
+    class="sm:p-2 mb-2 column-block cursor-pointer"
     @click="sendPerk"
   >
-    <h3 class="relative flex-wrap flex justify-center items-center text-xl">
+    <h3 :id="perk.title" class="relative flex-wrap flex justify-center items-center text-xl">
       <span class="whitespace-nowrap">{{ perk.title }}</span>
-      <Select
-        v-if="targetAble || perk.target !== undefined || perk.waifu !== undefined"
-        v-model="perkToSave.target"
+      <span v-if="savedPerk.anything">({{ savedPerk.anything }})</span>
+      <AnythingInput
+        v-if="complexFields.target"
+        v-model="complex.target"
         placeholder="For whom"
-        class="inline-block text-base ml-2"
-        :options="perk.waifu ? targetWaifuList: targetList"
+        class="text-base ml-2 w-42"
+        :list="targetList"
+        :bought-list="savedPerk.complex"
         @click.stop
-      />
-      <Input
-        v-if="perk.anything !== undefined"
-        v-model="perkToSave.anything"
+      >
+      </AnythingInput>
+      <AnythingInput
+        v-if="complexFields.flavor"
+        v-model="complex.flavor"
+        :list="flavorList.length ? flavorList : savedPerk.complex"
+        :bought-list="savedPerk.complex"
         :placeholder="perk.anything"
         class="text-base mx-1 w-42"
+        @click.stop
       />
       <NumberInput
         v-if="isMultiple || perk.multiple"
@@ -26,6 +31,7 @@
         :min="0"
         :max="perk.max || max || 100"
         class="text-base ml-2"
+        @click.stop
       />
       <slot name="title" />
       <Select
@@ -39,7 +45,7 @@
         (Cost: <span text="green-600 dark:green-300">{{ displayedCost }}</span>)
       </span>
       <fa-solid:check
-        v-if="isActive"
+        v-if="perkExist"
         class="absolute top-1 right-1 text-green-500"
       />
     </h3>
@@ -60,6 +66,7 @@
         class="sm:float-right sm:mt-4"
       />
       <Desc :desc="perk.desc" />
+      <slot name="underDesc" />
     </div>
     <div v-if="perk.requires" class="mx-2">
       Require: <span class="text-orange-500 dark:text-orange-300">{{ perk.requires }}</span>
@@ -73,7 +80,10 @@
   </div>
 </template>
 
-<script lang='ts' setup>import Select from './basic/Select.vue'
+<script lang='ts' setup>
+import { findIndex, remove, without } from 'lodash-es'
+import Select from './basic/Select.vue'
+import AnythingInput from './AnythingInput.vue'
 import { useStore } from '~/store/store'
 
 const props = defineProps({
@@ -93,10 +103,6 @@ const props = defineProps({
     type: Boolean,
     default: false,
   },
-  calculatedCost: {
-    type: Number,
-    default: 0,
-  },
   max: {
     type: Number,
     default: 100,
@@ -109,38 +115,63 @@ const props = defineProps({
     type: Boolean,
     default: false,
   },
+  flavorList: {
+    type: Array,
+    default: () => [],
+  },
+  savedPerk: {
+    type: Object,
+    default: () => ({}),
+  },
 })
 
 const emit = defineEmits(['pickPerk'])
 
-const { targetList, targetWaifuList } = useStore()
+const { targetList } = useStore()
 const cost = ref(0)
+// const count = ref(props.savedPerk.count - (props.savedPerk?.target?.length || 0) - (props.savedPerk?.anything?.length) || 0)
+
+const complexFields = {
+  target: ['target', 'target_f', 'target_c'].includes(props.perk.complex),
+  flavor: ['flavor', 'target_f'].includes(props.perk.complex),
+  count: ['target_c'].includes(props.perk.complex),
+}
+
+const complex = reactive({
+  target: '',
+  flavor: '',
+  count: 0,
+})
 
 const perkToSave = reactive({
   title: props.perk.title,
-  count: 0,
+  count: props.savedPerk.count || 0,
   cost: computed(() => {
-    let cs = props.calculatedCost || cost.value || props.perk.cost
+    let cs = cost.value || props.perk.cost
     if (props.increment)
       cs = (perkToSave.count / 2) * (cs * 2 + (perkToSave.count - 1) * cs)
     else
       cs = perkToSave.count ? cs * perkToSave.count : cs
     return cs
   }),
-  target: undefined,
-  anything: undefined,
+  target: '',
+  anything: '',
   freebies: props.perk.freebies,
 })
 
+// watch(perkToSave, () => perkToSave.target.length ? perkToSave.count = perkToSave.target.length : null)
+
+// if (props.savedPerk.count) perkToSave.count = props.savedPerk.count
+
 const displayedCost = computed(() => {
-  return perkToSave.cost === 11111 ? 'Tier 11 ticket' : perkToSave.cost
+  return perkToSave.cost >= 11111 ? `${perkToSave.cost / 11111} T11 ticket` : perkToSave.cost
 })
 
 function filterObject(obj: any) {
   const ret: any = {}
   Object.keys(obj)
     .forEach((key) => {
-      if (obj[key] !== undefined) {
+      if ((obj[key] !== undefined && obj[key]) || key === 'cost') {
         if (obj[key].value)
           ret[key] = obj[key].value
         else
@@ -151,6 +182,40 @@ function filterObject(obj: any) {
 }
 
 function sendPerk() {
-  emit('pickPerk', props.perk, filterObject(perkToSave))
+  const obj = filterObject(perkToSave)
+  if (props.perk.complex) {
+    if (props.savedPerk.complex) {
+      const filComplex = filterObject(complex)
+      const ind = findIndex(props.savedPerk.complex, filComplex)
+      if (ind !== -1)
+        obj.complex = [...props.savedPerk.complex.filter((_, i: number) => i !== ind)]
+      else
+        obj.complex = [...props.savedPerk.complex, filComplex]
+    }
+    else { obj.complex = [filterObject(complex)] }
+    if (complexFields.count) {
+      if (obj.complex[obj.complex.length - 1])
+        obj.complex[obj.complex.length - 1].count = perkToSave.count
+      obj.count = obj.complex.reduce((a, x) => a += x.count, 0)
+    }
+    else {
+      obj.count = obj.complex.length
+      perkToSave.count = obj.count
+    }
+    obj.cost = (props.perk.cost || cost.value) * obj.count
+  }
+
+  emit('pickPerk', props.perk, obj)
 }
+
+const perkExist = computed(() => {
+  return props.perk.complex ? findIndex(props.savedPerk.complex, filterObject(complex)) !== -1 : !!props.savedPerk.title
+})
 </script>
+
+<style>
+.column-block {
+  break-inside: avoid-column;
+  page-break-inside: avoid;
+}
+</style>

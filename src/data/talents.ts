@@ -540,6 +540,7 @@ talents.push({
 talents.push({
   title: 'Talent Sharing',
   cost: 10,
+  complex: 'flavor',
   desc: 'The effects of one of your purchased Basic Talents now apply equally to every member of your retinue, as if you had shared them through a Binding or Heritage perk. This must be purchased separately for each valid Talent: Martial, Wild, Science, Engineering, Aesthetic, Communication, Performance, Soul, Blessed, Psychic, Covert, and Sticky Fingers (as “Tantric Talent”). Everlasting and Body are always shareable. This perk is obsoleted by Controls or Heritage perks that share Talents and may be refunded completely after such purchases.',
 })
 
@@ -553,7 +554,7 @@ talents.push({
 talents.push({
   title: 'Template Stacking 0: Added Potential',
   cost: 5,
-  target: '',
+  complex: 'target_f',
   anything: 'Power Name',
   special: 'Must be repurchased for each use.',
   desc: `
@@ -568,7 +569,7 @@ talents.push({
   title: 'Template Stacking I',
   cost: 10,
   special: 'Must be repurchased for each use.',
-  target: '',
+  complex: 'target_f',
   anything: 'Power Name',
   desc: `
 <p>Sometimes you want to copy a generic powerset. This perk lets you do just that, for any power short of Tier 11. If you purchase this perk for yourself at chargen, or for a retinue member at the time you purchase them, you get the powerset outright. The exact capabilities at the time of purchase will be scaled to Tier 4, equivalent to the 10 credit version of Extra. Stacked Templates can then be trained higher with the appropriate Basic Talent, regardless of whether the original version is rated at Tiers 4, 5, or 10. You will also receive a skill framework for your purchase, identical in principle to the ones that “early” captures receive to ensure they learn their missing abilities. This applies to technological “abilities” as well.</p>
@@ -581,7 +582,7 @@ talents.push({
 talents.push({
   title: 'Racial Template',
   cost: 20,
-  target: '',
+  complex: 'target_f',
   anything: 'Power Name',
   special: 'Chargen only (self). Moment of purchase only (retinue). Must be repurchased for each use.',
   desc: `
@@ -593,7 +594,7 @@ talents.push({
 talents.push({
   title: 'OC Donut Steel',
   cost: 10,
-  target: '',
+  complex: 'target_f',
   anything: 'Power Name',
   special: 'Must be repurchased for each, use.',
   desc: `
@@ -606,6 +607,7 @@ talents.push({
   title: 'Template Stacking II',
   cost: 10,
   special: 'Must be repurchased for each use.',
+  complex: 'target',
   whitelist: [
     'Extra',
     'OC Donut Steel',
@@ -988,6 +990,7 @@ genericPerks.push({
 genericPerks.push({
   title: 'Adoption',
   anything: 'Kid Name',
+  complex: 'flavor',
   cost: 1,
   desc: 'You may find yourself adopting a kid - and not just because you killed one parent and captured the other into your retinue. Under normal circumstances, that kid will forever be your familiar, never equal to your true-blooded offspring. This perk will tell our systems to treat them as your descendants and follow the relevant Offspring rules instead.',
 })
@@ -996,6 +999,7 @@ genericPerks.push({
   title: 'Paper Trail',
   cost: 1,
   target: 'Any',
+  complex: 'target',
   max: 10,
   desc: `
 <p>In some worlds, anonymity is a danger in and of itself. This perk retroactively modifies all records (paper, digital, and even memories) to create a legal existence for your waifu. Where applicable, the waifu will receive any real documentation she would be expected to have. You may also purchase and apply this perk to yourself; the all-waifus package will always apply it to you. If you chose the Extra or Substitute origins, this perk will not apply to you until you visit your second world. Similarly, this cannot give a captured or Yoinked retinue member a new identity in their own homeworld. Once you’ve purchased this perk ten times, it will apply to every member of your retinue.,</p>
@@ -1005,7 +1009,7 @@ genericPerks.push({
 genericPerks.push({
   title: 'Third-Party Riggings',
   special: 'Requires at least one first - party Azur Lane shipgirl.',
-  waifu: 'any',
+  complex: 'target',
   requires: '(Any Azur Lane collaboration shipgirl)',
   cost: 20,
   desc: `Dead or Alive, Neptunia, Utawarerumono, Hololive, and others have all had guest appearances on the high seas. This perk grants these characters their shipgirl riggings, allowing them to play by those rules instead and making them eligible for Bifurcation and Space Shipgirl below. If a collaboration shipgirl’s tier after step 1a is less than the following, it will be raised to that value.
@@ -1020,7 +1024,7 @@ genericPerks.push({
 genericPerks.push({
   title: 'Retrofit',
   requires: '(Any eligible Azur Lane shipgirl)',
-  waifu: 'any',
+  complex: 'target',
   cost: 0,
   costVariants: [0, 10, 30, 50],
   special: '0(T4 → T4, T5 → T5, T6 → T6), 10(T4 → T5), 30(T5 → T6), or 50(T6 → T7)',
@@ -1035,7 +1039,7 @@ genericPerks.push({
 genericPerks.push({
   title: 'Bifurcation',
   requires: '(Any Azur Lane Shipgirl)',
-  waifu: 'any',
+  complex: 'target',
   cost: 15,
   desc: `
 <p>Your chosen Shipgirl’s Wisdom Cube receives a slight boost to its power, allowing her to manifest her rigging and full ship forms simultaneously. This lets her enter the fray personally while still allowing usage of her ship for transport, defense, support, etc., opening up many new tactical options.</p>
@@ -1046,7 +1050,7 @@ genericPerks.push({
 genericPerks.push({
   title: 'Space Shipgirl',
   requires: '(Any Azur Lane shipgirl)',
-  waifu: 'any',
+  complex: 'target',
   cost: 30,
   desc: `
 <p>Just as a group of humans once revived the mighty battleship Yamato as a spaceship in order to save humanity, so do the shipgirls under your command gain the ability to traverse the final frontier. The chosen shipgirl’s full-size hull is refurbished to be completely spaceworthy: the insides of the hull are sealed against the vacuum of space, all their armaments are perfectly capable of functioning in space, and even planes from carriers can fly just as well in the vacuum of space as they do in air. If you don’t want a naval-ships-in-space aesthetic, shipgirl hulls are also available in space counterpart culture varieties. For example, Star Trek’s Federation designs are suitable for Eagle Union and Royal Navy, while the Klingon look is appropriate for Sakura Empire and Romulans for Dragon Empery. Further upgrades may be installed if you have another source of space-era technology.</p>
@@ -1057,7 +1061,7 @@ genericPerks.push({
 genericPerks.push({
   title: 'I\'m on a Boat',
   requires: '(Any Kantai Collection Shipgirl)',
-  waifu: 'any',
+  complex: 'target',
   cost: 10,
   desc: `
 <p>Your chosen Shipgirl may now summon her full ship form under her instead of just manifesting her rigging. This lets her carry other members of your retinue around and lets her fairy crew take on human size and be interacted with. Understanding their speech, of course, requires Communication Talent. Additionally, Kancolle Shipgirls with this perk become eligible for Bifurcation and Space Shipgirl.</p>
@@ -1067,7 +1071,7 @@ genericPerks.push({
 genericPerks.push({
   title: 'Mirage Master',
   requires: '(Any T1- T3 waifu + any Fire Emblem character rated T6 or below)',
-  waifu: 'any',
+  complex: 'target',
   cost: 50,
   image: 'https://pbs.twimg.com/media/DuZ3wQ_XgAAu09w.jpg',
   desc: `
@@ -1079,7 +1083,7 @@ genericPerks.push({
 genericPerks.push({
   title: 'Unison',
   requires: '(Any Pokémon trainer)',
-  waifu: 'any',
+  complex: 'target',
   cost: 40,
   image: 'link',
   desc: 'The enhanced spiritual bond between your Trainer waifu and her mons allows her to blend with one of them, take on its physical traits, and operate as one being, raising her tier at step 6 to the higher of her own or the blended mon’s. Any of her mons are eligible for this, but only one at a time. She will also receive her seventh most iconic or strongest mon from her canon appearances, if she has one, so she can have a full party of six alongside the one she’s blended with.',
@@ -1088,7 +1092,7 @@ genericPerks.push({
 genericPerks.push({
   title: 'Galactic Presence',
   requires: '(Any Warhammer Fantasy deity)',
-  waifu: 'any',
+  complex: 'target',
   cost: 50,
   desc: 'Malleus and the year 40,000 are both Warhammer, but operate on vastly different scales. This perk pulls one of the Fantasy goddesses up to the same level as her galactic counterpart. It must be purchased separately for each one you have.',
 })
@@ -1096,7 +1100,7 @@ genericPerks.push({
 genericPerks.push({
   title: 'Four Seasons',
   requires: '(Any female RWBY character of T6 or below)',
-  waifu: 'any',
+  complex: 'target_c',
   multiple: true,
   cost: 20,
   desc: 'Maidenhood is special on Remnant, but not particularly so. Anyone can become one under the right circumstances. By default, this perk may be purchased up to four times, once for each temperate season (Spring, Summer, Fall, Winter). Purchasing this twice for the same character will elevate her to T6, if she isn’t already, and four times to T7. Additional sets of Maiden mantles become available with each member of your retinue, including yourself, whose effective tier after step five is at least T8: one for each T8, two for each T9, five for each T10, and ten for each T11. If one of your waifus is already a Maiden when you capture her, that counts against your total, unless you take a refund for this perk. If this puts you over your cap for a particular mantle, you may not buy any more of that mantle until you’ve raised the cap further.',
@@ -1105,7 +1109,7 @@ genericPerks.push({
 genericPerks.push({
   title: 'Salvation',
   requires: '(Any Puella Magi)',
-  waifu: 'any',
+  complex: 'target',
   costVariants: [0, 20],
   cost: 0,
   desc: `

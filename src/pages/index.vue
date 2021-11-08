@@ -1,10 +1,10 @@
 
 <template>
   <div class="max-w-screen-lg mx-auto flex flex-col gap-4 mt-4 mb-8">
-    <h1 id="rules" class="text-xl font-bold text-center">
+    <h1 id="rules" class="text-xl font-bold text-center mt-4">
       Rules
     </h1>
-    <div class="flex flex-col ">
+    <div class="flex flex-col mx-2">
       <h3 class="text-xl font-semibold">
         Rules Index
       </h3>
@@ -27,6 +27,12 @@
     <div class="lg:flex bg-amber-100 dark:bg-gray-800 p-1 md:p-4 gap-4 w-full mx-auto">
       <Table :headers="worldTitles" :rows="worldData" class="text-sm md:text-base" />
       <Table :headers="waifuTitles" :rows="waifuData" class="text-sm md:text-base w-min flex-grow" />
+    </div>
+    <div id="pandora" class="bg-amber-100 dark:bg-gray-800 p-1 md:p-4 w-full mx-auto">
+      <h3 class="text-lg text-center mb-2">
+        Pandora’s Alternate Tier Ranks (by <a class="text-blue-500 hover:underline" href="https://forum.questionablequesting.com/threads/r34-economy-cyoa-thread.11289/page-63%23post-3167059&sa=D&source=editors&ust=1636169921608000&usg=AOvVaw3lNgOZSmmHTK3NPa9X_SOQ" target="_blank" rel="noopener noreferrer">Pandora12</a>)
+      </h3>
+      <Table :headers="pandoraTitles" :rows="pandoraData" class="text-sm md:text-base w-full flex-grow text-black" />
     </div>
     <div>
       <Desc :desc="effectiveTiers" class="bg-amber-200 text-gray-800 sm:w-1/2 sm:float-right mt-8 mx-2 border-3 border-gray-900" />
@@ -95,6 +101,21 @@ const waifuData = [
   ['T9', '500', '50', '300', '400', ['★★★', 'text-gray-400']],
   ['T10', '1000', '100', '600', '800', ['★', 'text-yellow-500']],
   ['T11', 'T11 ticket', 'T11 ticket', 'T11 ticket', '2 T11 tickets'],
+]
+
+const pandoraTitles = ['Waifu Tier', 'Tier Name', 'Tier Meaning']
+const pandoraData = [
+  ['T1', 'Muggle Tier', 'Completely baseline human, no special abilities or talents to speak of. Normie character.'],
+  ['T2', 'Talented Tier', 'Someone who has some fighting skill, or political clout, but not exceptionally so, falling between tiers one and three.'],
+  ['T3', 'Badass Normal Tier', 'Peak human. These characters are Made of Iron Badass Normals who can push the upper limits of what a human is capable of. They may have gotten Training from Hell, or are experts at martial arts, Good Old Fisticuffs, Gun Kata, Le Parkour, Improbable Weapon Usage and the like, or is part of the Red Shirt Army. Basically, this is a character anyone could become, bar the setting.'],
+  ['T4', 'Abnormal Tier', 'Characters in this weight class have an ability, trait, or talent that is supernatural or superhuman, but are otherwise comparable to normal humans. Their abilities are generally very specific and limited and may be useless in some situations, rendering the characters just as helpless as normal un-powered humans. Usually, characters of this type lack the Required Secondary Powers to optimize or protect themselves from their own powers. Perhaps their only powers are to cancel other powers. Most of the time, their ability is something we can mimic or even surpass using common science or low-grade cybernetics.'],
+  ['T5', 'Super Tier', 'Characters in this weight class can no longer be considered normal. Their powers, even if they are limited, may be used in a variety of ways, and tend to have Required Secondary Powers. Most of your run-of-the-mill Super Heroes, Shounen characters, and Mages will likely start here, possibly being pushed higher as they continue their adventures.'],
+  ['T6', 'Peak Super Tier', 'Someone who qualifies as a Rank 5 character, but who is especially talented even within that tier. Typically, those who can leverage their powers to affect entire cities or at least large portions of them are at least this level.'],
+  ['T7', 'Hyper Tier', 'These characters typically can cause, stop, or reverse large scale disasters, break the laws of or flat out warp physics with their powers. Those who can affect large regions encompassing multiple cities are typically at this tier.'],
+  ['T8', 'Ultra Tier', 'These characters have abilities that can affect entire worlds (such as Earth or others comparable to it in size) either positively or negatively, or may even be a manifestation of a planet, with all that implies. Those who can reach into other dimensions go here.'],
+  ['T9', 'Demigod Tier', 'These characters are powerful enough to be considered lesser gods, and are nigh-unchallenged in power in their setting.'],
+  ['T10', 'God Tier', 'Characters that are this powerful aren\'t so much characters as forces of nature, wielding power beyond observable human science.'],
+  ['T11', 'Author Tier', 'Characters in this weight class are absolutely Omnipotent and likely Omniscient. They are capable of exerting their will on all of reality and the entire universe (or even the totality of the multiverse) without exception. Destiny/Fate is their play-thing. They cannot be killed/destroyed by any means. Any limits they have are self-imposed.'],
 ]
 
 const powerHeaders = ['Strength', 'Multiplier']

@@ -23,7 +23,7 @@
         If you like the job I done so far and want to support my work on this project and any and all similar
         projects that I can do in the future you can do so via
         <a
-          href="https://forum.questionablequesting.com/members/swiftrosenthal.1795/"
+          href="https://www.patreon.com/interactiveapps"
           target="_blank"
           rel="noopener noreferrer"
           class="text-red-500 hover:underline"
@@ -40,10 +40,3 @@
     </div>
   </div>
 </template>
-
-<script lang='ts'>
-import { defineComponent } from 'vue'
-
-export default defineComponent({
-})
-</script>

@@ -5,6 +5,21 @@
     </h2>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
+        07 November 2021
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>You now can buy multiple instances of perks like Template Stacking, Paper Trail etc.</li>
+        <li>Gender and Submitted by User tags for characters</li>
+        <li>Filter characters by gender and image</li>
+        <li>37 new new user submitted characters</li>
+        <li>Added Companions tier descriptions in rules</li>
+        <li>Grouping of Heritages and Bindings</li>
+        <li>Bug fixes</li>
+        <li>Added Even More bugs</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
         2 November 2021
       </h3>
       <ul class="list-decimal list-inside">

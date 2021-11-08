@@ -19,13 +19,28 @@
               @click.stop
             >
               PvP
-            </router-link>)</span>
+            </router-link>)
+          </span>
         </h3>
-        <div v-if="rule.intensity" class="px-2">
+        <div v-if="rule.intensity" class="px-2 flex gap-2">
           Bonus:
-          <span v-if="rule.intensity < 1" text="green-600 dark:green-300">{{ Math.round(baseBudgetAfter * rule.intensity) }} ({{ rule.intensity * 100 }}%)</span>
+          <span
+            v-if="rule.intensity < 1"
+            text="green-600 dark:green-300"
+          >{{ Math.round(baseBudgetAfter * (rule.title === 'With A Little Help From My Friends(Cooperative)'
+            ? coopIntensity : rule.intensity)) }}
+            ({{ Math.round((rule.title === 'With A Little Help From My Friends(Cooperative)'
+              ? coopIntensity : rule.intensity) * 100) }}%)
+          </span>
           <span v-else text="green-600 dark:green-300">{{ rule.intensity }}</span>
           credits.
+          <NumberInput
+            v-if="rule.title === 'With A Little Help From My Friends(Cooperative)'"
+            v-model="coopCount"
+            class="inline"
+            :min="0"
+            @click.stop
+          />
         </div>
         <Desc :desc="rule.desc" />
         <div v-if="rule.special" class="px-2">
@@ -52,6 +67,10 @@ import { useStore } from '~/store/store'
 
 const { allEffects, intensities, baseBudgetAfter } = useStore()
 
+const coopCount = ref(0)
+
+const coopIntensity = computed(() => coopCount.value * 0.2)
+
 function choose(rule: Intensity) {
   const ind = findIndex(intensities.value, { title: rule.title })
   if (ind !== -1) {
@@ -61,7 +80,8 @@ function choose(rule: Intensity) {
   else {
     if (requirementsMet(rule)) {
       allEffects.value.push(rule.title)
-      intensities.value.push({ title: rule.title, intensity: rule.intensity })
+      const inten = rule.title === 'With A Little Help From My Friends(Cooperative)' ? coopIntensity.value : rule.intensity
+      intensities.value.push({ title: rule.title, intensity: inten, count: rule.title === 'With A Little Help From My Friends(Cooperative)' ? coopCount.value : 0 })
     }
   }
 }

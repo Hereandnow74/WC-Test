@@ -5,7 +5,7 @@
 </template>
 
 <script lang='ts'>
-import { TOOLTIPS, TOOLTIPS_REG, LINKS, LINKS_REG } from '~/data/constatnts'
+import { TOOLTIPS, TOOLTIPS_REG, LINKS, LINKS_REG, QUERIES } from '~/data/constatnts'
 
 export default defineComponent({
   name: 'Desc',
@@ -24,7 +24,7 @@ export default defineComponent({
       )
 
       desc = desc.replace(LINKS_REG,
-        match => `<router-link @click.stop class="dark:text-blue-300 text-blue-600" :to="{ path: '/${LINKS.value[match]}', hash: '#${match}' }">${match}</router-link>`,
+        match => `<router-link @click.stop class="dark:text-blue-300 text-blue-600" :to="{ path: '/${LINKS.value[match]}', hash: '#${match}', query: {q: '${QUERIES.value[match]}'} }">${match}</router-link>`,
       )
 
       return desc

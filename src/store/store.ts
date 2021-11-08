@@ -24,7 +24,7 @@ export interface Perk {
   tree?: string
   addons?: any[]
   variant?: string
-  waifu?: string
+  target?: string[]
   freebies?: object
   refund?: number
   anything?: string
@@ -60,6 +60,7 @@ const startingOrigin = storeType<Origin>('startingOrigin', {
 const intensities = storeType('intensities', [] as {
   title: string
   intensity: number
+  count: number
 }[])
 
 const binding = storeType<Perk[]>('binding', [])
@@ -130,7 +131,7 @@ const baseBudgetAfter = computed(
 )
 
 const bindingCost = computed(() => binding.value.reduce((a, x) => a += x.cost, 0))
-const heritageCost = computed(() => heritage.value.reduce((a, x) => a += x.cost === 11111 ? 0 : x.cost, 0))
+const heritageCost = computed(() => heritage.value.reduce((a, x) => a += x.cost >= 11111 ? 0 : x.cost, 0))
 
 const ridePerksCost = computed(() => ridePerks.value.reduce((a, x) => a += x.cost === 11111 ? 0 : x.cost, 0))
 const homePerksCost = computed(() => homePerks.value.reduce((a, x) => a += x.cost === 11111 ? 0 : x.cost, 0))
@@ -156,7 +157,7 @@ const companionsCost = computed(() => {
 const companionProfit = computed(() => {
   return companions.value.reduce((a, x) => {
     if (x.method === 'capture' && x.tier !== 11) {
-      let captureCost = CHAR_COSTS[x.tier - 1] * 0.6
+      let captureCost = Math.ceil(CHAR_COSTS[x.tier - 1] * 0.6)
       captureCost = captureCost < 1 ? 1 : captureCost
       return a += captureCost
     }
@@ -175,7 +176,7 @@ const companionProfitSold = computed(() => {
 const budget = computed(() => {
   let intensityFlat = 0
   const intenMultiplier = intensities.value
-    .reduce((a, x) => x.intensity < 1 ? a += x.intensity : (intensityFlat += x.intensity, a), 0)
+    .reduce((a, x) => x.intensity < 10 ? a += x.intensity : (intensityFlat += x.intensity, a), 0)
 
   let bd = baseBudget.value
   if (bd === 11111) {
@@ -200,7 +201,7 @@ const tier11tickets = computed(() => {
   let ticket = 0
   if (baseBudget.value === 11111) ticket += 1
 
-  const heritageCost = heritage.value.reduce((a, x) => a += x.cost === 11111 ? 1 : 0, 0)
+  const heritageCost = heritage.value.reduce((a, x) => a += x.cost >= 11111 ? x.cost / 11111 : 0, 0)
 
   const ridePerksCost = ridePerks.value.reduce((a, x) => a += x.cost === 11111 ? 1 : 0, 0)
   const homePerksCost = homePerks.value.reduce((a, x) => a += x.cost === 11111 ? 1 : 0, 0)
@@ -219,14 +220,13 @@ const tier11tickets = computed(() => {
     - budgetMods.value.minus11 + budgetMods.value.plus11 + companionTicketProfit.value
 })
 
-const totalCost = computed(() => heritageCost.value + bindingCost.value + ridePerksCost.value + homePerksCost.value + talentsCost.value + defensesCost.value + miscPerksCost.value + waifuPerksCost.value + genericWaifuPerksCost.value + luresCost.value + companionsCost.value)
-
-const targetWaifuList = computed(() => {
-  return companions.value.map(x => ({ name: x.name, value: x.name }))
-})
+const totalCost = computed(() => startingOrigin.value.cost + heritageCost.value + bindingCost.value + ridePerksCost.value + homePerksCost.value + talentsCost.value + defensesCost.value + miscPerksCost.value + waifuPerksCost.value + genericWaifuPerksCost.value + luresCost.value + companionsCost.value)
 
 const targetList = computed(() => {
-  return [{ name: 'You', value: 'You' }, ...targetWaifuList.value]
+  let comps = companions.value.map(x => (x.name))
+  if (['Substitute', 'Possess'].includes(startingOrigin.value.title))
+    comps = ['You', ...comps]
+  return comps
 })
 
 export function useStore() {
@@ -269,7 +269,6 @@ export function useStore() {
     budgetMods,
     allForSave,
     targetList,
-    targetWaifuList,
     companionProfit,
     companionProfitSold,
     totalCost,

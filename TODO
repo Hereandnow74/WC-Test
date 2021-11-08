@@ -33,9 +33,23 @@ Check list:
   7.4 Defenses --Done
   7.5 Misc Perks --Done
   7.6 Waifu Perks --Done
-8. Overall functionality --80%
+8. Overall functionality --100%
   8.1 Storage --Done
   8.2 Local Storage --Done
   8.3 Global Storage --Done
-  8.4 Share Build --0%
+  8.4 Share Build --Done
   8.5 Save&Load --Done
+
+  TODO:
+  Intensity coop
+  Binding and heritages separated
+
+  Picking General Seals should cause the Nasuverse Servant requirement in Command Seals to be crossed out
+  or you can check "I'm getting General Seals instead" in the Command Seals box
+
+  No binding discount applied after should go in debt
+
+  Elements for companions
+  Tier 11 perk in heritage
+  Different categories for companions in copy text
+  Prismatic shroud

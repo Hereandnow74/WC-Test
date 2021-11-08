@@ -1,12 +1,12 @@
 <template>
-  <div class="text-gray-800 inline-flex w-min">
+  <div class="inline-flex w-min">
     <label v-if="label" for="" class="mr-2">{{ label }}</label>
     <div class="rounded-l-lg bg-blue-500 hover:bg-orange-500 w-4 cursor-pointer" @click="minus" />
     <input
       id=""
       type="text"
       name=""
-      class="focus:outline-none text-center"
+      class="focus:outline-none text-center text-gray-800"
       :style="width"
       :value="value"
     >
@@ -34,7 +34,7 @@ const props = defineProps({
   },
 })
 
-const value = ref(props.min)
+const value = ref(props.modelValue || props.min)
 
 const emit = defineEmits(['update:modelValue'])
 
