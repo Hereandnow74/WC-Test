@@ -209,7 +209,7 @@ function sendPerk() {
 }
 
 const perkExist = computed(() => {
-  return props.perk.complex ? findIndex(props.savedPerk.complex, filterObject(complex)) !== -1 : !!props.savedPerk.title
+  return props.perk.complex ? findIndex(props.savedPerk.complex, filterObject(complex)) !== -1 : props.isActive
 })
 </script>
 

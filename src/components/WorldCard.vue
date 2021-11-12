@@ -15,24 +15,21 @@
       >
     </div>
     <h3 class="text-xl text-center bg-black bg-opacity-10 flex items-center px-2">
-      {{ world.worldName }}
+      <span class="font-semibold">{{ world.worldName }}</span>
       <bx:bxs-edit class="ml-auto hover:text-yellow-600" @click="$emit('editWorld', world)" />
       <fluent:delete-20-filled v-if="isUserWorld" class="hover:text-red-500 ml-2" @click="deleteWorld" />
     </h3>
-    <div class="flex justify-between font-medium px-2">
+    <div class="flex gap-4 justify-between text-gray-200 px-2">
       <div>
-        Rating: <span class="text-amber-200">{{ world.rating || 'Unknown' }}</span>
+        Rating: <span class="text-amber-200 font-medium">{{ world.rating || 'Unknown' }}</span>
       </div>
       <div>
-        Budget: <span class="text-green-200">{{ WORLD_RATINGS[world.rating - 1]?.budget || 'None' }}</span>
+        Budget: <span class="text-green-200 font-medium">{{ WORLD_RATINGS[world.rating - 1]?.budget || 'None' }}</span>
       </div>
     </div>
-    <Foldable v-if="world.additional" title="Setting Specific Rules" class="px-2" @click.stop>
-      <Desc :desc="world.additional" class="p-0" />
-    </Foldable>
     <template v-if="world.condition">
       <div v-if="typeof world.condition === 'object' && world.condition.length" class="px-2 pb-2">
-        Condition:
+        <span class="text-gray-200 mr-2">Condition:</span>
         <select
           id="condition"
           name="condition"
@@ -49,10 +46,13 @@
           </option>
         </select>
       </div>
-      <div v-else-if="world.condition.length" class="px-2 pb-2">
-        {{ world.condition }}
+      <div v-else-if="world.condition.length" class="px-2">
+        <span class="text-gray-200 mr-2">Condition:</span> {{ world.condition }}
       </div>
     </template>
+    <Foldable v-if="world.additional" title="Setting Specific Rules" class="px-2 pb-2" @click.stop>
+      <Desc :desc="world.additional" class="p-1 rounded bg-black bg-opacity-20" />
+    </Foldable>
   </div>
 </template>
 

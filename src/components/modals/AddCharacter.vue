@@ -16,9 +16,13 @@
       <Input v-model="image_nsfw" placeholder="NSFW Image URL" :error-message="errors.image_nsfw" />
       <div class="flex gap-2 items-center">
         <span>Sex: </span>
-        <label class="text-pink-500">Female<input v-model="sex" type="radio" name="gender" value="F" class="ml-2"></label>
-        <label class="text-blue-500">Male<input v-model="sex" type="radio" name="gender" value="M" class="ml-2"></label>
-        <label class="text-gray-500">Other<input v-model="sex" type="radio" name="gender" value="O" class="ml-2"></label>
+        <label class="text-pink-500 dark:text-pink-300">Female<input v-model="sex" type="radio" name="gender" value="F" class="ml-2"></label>
+        <label class="text-blue-500 dark:text-blue-300">Male<input v-model="sex" type="radio" name="gender" value="M" class="ml-2"></label>
+        <label class="text-gray-500 dark:text-gray-300">Other<input v-model="sex" type="radio" name="gender" value="O" class="ml-2"></label>
+      </div>
+      <Input v-if="serverSave" v-model="nickname" placeholder="Your nickname" :error-message="errors.nickname" />
+      <div v-if="tierError" class="text-red-400 font-semibold">
+        {{ tierError }}
       </div>
       <div class="flex gap-2">
         <Checkbox v-model="localSave" label="Local save" />
@@ -33,6 +37,7 @@
 import * as zod from 'zod'
 import { useForm, useField } from 'vee-validate'
 import { toFormValidator } from '@vee-validate/zod'
+import { random } from 'lodash-es'
 import { useStore } from '~/store/store'
 import { proposeCompanion, toggleShowAddCharacter } from '~/logic'
 
@@ -50,17 +55,24 @@ const props = defineProps({
 const localSave = ref(true)
 const serverSave = ref(false)
 const sex = ref('F')
+
+const tierError = ref('')
+const tierConfirm = ref(false)
+
 const { userCharacters, localUserCharacters } = useStore()
 
-const schema = toFormValidator(
-  zod.object({
-    name: zod.string().nonempty('Character name is required'),
-    world: zod.string().nonempty('World name is required'),
-    tier: zod.number().min(1, { message: 'Minimum tier is 1' }).max(11, { message: 'Maximum tier is 11' }),
-    image: zod.string().url({ message: 'Must be a valid URL' }).max(256, { message: 'Maximum length is 256 chars' }),
-    image_nsfw: zod.string().url({ message: 'Must be a valid URL' }).max(256, { message: 'Maximum length is 256 chars' }).optional().or(zod.literal('')),
-  }),
-)
+const zodObject = zod.object({
+  name: zod.string().nonempty('Character name is required'),
+  world: zod.string().nonempty('World name is required'),
+  tier: zod.number().min(1, { message: 'Minimum tier is 1' }).max(11, { message: 'Maximum tier is 11' }),
+  image: zod.string().url({ message: 'Must be a valid URL' }).max(256, { message: 'Maximum length is 256 chars' }),
+  image_nsfw: zod.string().url({ message: 'Must be a valid URL' }).max(256, { message: 'Maximum length is 256 chars' }).optional().or(zod.literal('')),
+})
+
+const zodGlobal = zodObject.extend({ nickname: zod.string().nonempty('Nickname is required') })
+
+const schema = computed(() => serverSave.value ? toFormValidator(zodGlobal) : toFormValidator(zodObject))
+
 const { errors, handleSubmit } = useForm({
   validationSchema: schema,
   initialValues: {
@@ -77,15 +89,28 @@ const { value: world } = useField<string>('world')
 const { value: tier } = useField<number>('tier')
 const { value: image } = useField<string>('image')
 const { value: image_nsfw } = useField<string>('image_nsfw')
+const { value: nickname } = useField<string>('nickname')
 
 const addCharacter = handleSubmit((values) => {
-  values.tags = [sex.value]
-  if (serverSave.value)
-    proposeCompanion({ ...values, date: new Date().toString() })
+  if (values.tier === 1 && !tierConfirm.value) {
+    tierError.value = 'Are you sure that Tier = 1 if yes click "Add" again'
+    tierConfirm.value = true
+  }
+  else {
+    tierError.value = ''
+    tierConfirm.value = false
 
-  if (localSave.value) localUserCharacters.value.push(values)
-  else userCharacters.value.push(values)
-  toggleShowAddCharacter()
+    values.tags = [sex.value]
+    values.uid = random(10000000, 99999999)
+    if (serverSave.value)
+      proposeCompanion({ ...values, date: new Date().toString() })
+
+    if (localSave.value)
+      localUserCharacters.value.push(values)
+    else
+      userCharacters.value.push(values)
+    toggleShowAddCharacter()
+  }
 })
 
 </script>

@@ -5,6 +5,7 @@
   >
     <Header />
     <router-view class="flex-grow min-h-0 mt-8" />
+    <SideApps />
     <Footer />
   </main>
 </template>

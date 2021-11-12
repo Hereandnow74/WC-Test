@@ -70,7 +70,7 @@
       <div class="mb-4 flex flex-wrap overflow-y-auto text-base">
         <CompanionCard
           v-for="char in allUserCharacters"
-          :key="char.name"
+          :key="char.uid"
           :char="char"
           :is-user-char="true"
           :lazy="false"
@@ -102,6 +102,7 @@ import { useStore } from '~/store/store'
 import { toggleShowAddCharacter, showAddCharacter, lazyLoadImg } from '~/logic'
 import CompanionCard from '~/components/CompanionCard.vue'
 import Checkbox from '~/components/basic/Checkbox.vue'
+import { getChars } from '~/data/constatnts'
 
 interface Character {
   u: number
@@ -124,7 +125,7 @@ const image = ref('')
 
 // const characters = ref({})
 const loading = ref(true)
-const loadChars = () => import('~/data/characters.json')
+// const loadChars = () => import('~/data/characters.json')
 const loadUsersChars = () => import('~/data/userCharacters.json')
 const charArr = ref([] as Character[])
 
@@ -147,7 +148,7 @@ const tierOptions = [
   { label: '11', value: 11 },
 ]
 
-const { localUserCharacters, userCharacters, startingWorld, params } = useStore()
+const { localUserCharacters, userCharacters, startingWorld } = useStore()
 
 const options = {
   includeScore: true,
@@ -161,14 +162,20 @@ const fuse = new Fuse(charArr.value, options)
 
 onMounted(async() => {
   // characters.value = (await loadChars()).default
-  charArr.value.push(...Object.values((await loadUsersChars()).default).map(x => ((x.b ? x.b.push('U') : x.b = ['U']), x)))
-  charArr.value.push(...Object.values((await loadChars()).default))
+  const userChars = Object.values((await loadUsersChars()).default)
+  if (userChars[0].b) {
+    if (!userChars[0].b.includes('U'))
+      userChars.forEach(x => x.b.push('U'))
+  }
+  else { userChars.forEach(x => x.b = ['U']) }
+  // charArr.value.push(userChars)
+  charArr.value = Array.prototype.concat(userChars, (await getChars()))
   fuse.setCollection(charArr.value)
   loading.value = false
+  const params = useUrlSearchParams('history')
   if (params.name)
-    search.value = params.name
-  else
-    search.value = ''
+    nextTick(() => search.value = params.name)
+  else search.value = ''
 })
 
 const filteredCharacters = computed(() => {
@@ -186,7 +193,7 @@ const filteredCharacters = computed(() => {
   else {
     sopt = {
       $and: [
-        { t: tier.value !== 0 ? `${tier.value}` : '!z' },
+        { t: tier.value !== 0 ? `=${tier.value}` : '!z' },
         {
           $or: [
             { w: sr }, { n: sr }],

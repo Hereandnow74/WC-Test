@@ -506,7 +506,7 @@ bindings.push({
 bindings.push({
   title: 'Complementary Colors',
   cost: 25,
-  waifu: 'any',
+  complex: 'target',
   type: 'Shroud',
   whitelist: ['Elemental Shroud'],
   desc: `

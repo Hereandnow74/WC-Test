@@ -64,4 +64,18 @@ export default defineConfig({
       'vue-demi',
     ],
   },
+
+  json: {
+    stringify: true,
+  },
+
+  build: {
+    rollupOptions: {
+      output: {
+        chunkFileNames: 'assets/[name].js',
+        assetFileNames: 'assets/[name][extname]',
+        entryFileNames: 'assets/[name].js',
+      },
+    },
+  },
 })

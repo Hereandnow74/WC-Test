@@ -25,7 +25,8 @@
       :key="waifu.title"
       class="relative self-center p-2 max-w-screen-md cursor-pointer"
       bg="amber-200 dark:amber-800"
-      border="2 hover:amber-400 gray-800"
+      border="2 gray-800"
+      :class="{'hover:border-amber-400': isAvailable(waifu)}"
       @click="pickWaifuPerk(waifu)"
     >
       <img
@@ -64,10 +65,22 @@
           class="inline text-green-500"
         />
       </h3>
-      <div><span class="font-bold">Waifu:</span> {{ waifu.waifu }} from {{ waifu.from }}</div>
+      <div>
+        <span class="font-bold">Waifu: </span>
+        <span v-if="isArray(waifu.waifu)" class="inline-flex gap-2 text-blue-600 dark:text-blue-200">
+          <router-link v-for="wf in waifu.waifu" :key="wf" :to="`/companions/?name=${wf}`" class="hover:underline">
+            {{ wf }}
+          </router-link>
+        </span>
+        <router-link v-else :to="`/companions/?name=${waifu.waifu}`" class="hover:underline text-blue-600 dark:text-blue-200">
+          {{ waifu.waifu }}
+        </router-link>
+        from {{ waifu.from }}
+      </div>
       <div class="flex gap-4">
         <span v-if="waifu.cost"><span class="font-bold">Cost:</span> {{ waifu.cost===11111 ? 'Tier 11 ticket' : waifu.cost }} </span>
         <span v-if="waifu.discount"><span class="font-bold">Refund:</span> {{ waifu.discount }}</span>
+        <span v-if="waifu.tier"><span class="font-bold">Become:</span> T{{ waifu.tier }}</span>
       </div>
       <Desc :desc="waifu.desc" class="p-0" />
     </div>
@@ -80,15 +93,20 @@
 </template>
 
 <script lang='ts' setup>
-import { findIndex, intersection } from 'lodash-es'
+import { findIndex, intersection, isArray, intersectionWith } from 'lodash-es'
 import { waifu_perks, WaifuPerk } from '~/data/waifu_perks'
 import { genericPerks, genericDesc, PerkFull } from '~/data/talents'
 import { lazyLoadImg, pickSimplePerk, useTooltips } from '~/logic/misc'
 import { Perk, useStore } from '~/store/store'
 
 import PerkCard from '~/components/PerkCard.vue'
+import { getCharsObject } from '~/data/constatnts'
 
 const { waifuPerks, companions, genericWaifuPerks, allEffects, flags } = useStore()
+
+const charObject = ref({})
+
+getCharsObject().then(val => charObject.value = val)
 
 const gachaTable = [
   [1, 2, 5, 10, 20, 50, 100, 200, 500, 1000],
@@ -108,9 +126,16 @@ const allGeneric = computed(() => {
 })
 
 function isAvailable(perk: WaifuPerk): boolean {
-  if (findIndex(companions.value, { name: typeof perk.waifu === 'string' ? perk.waifu : perk.waifu[0] }) !== -1)
+  if (isArray(perk.uid)) {
+    if (intersectionWith(companions.value, perk.uid, (a, b) => a.uid === b).length)
+      return true
+  }
+  else
+  if (findIndex(companions.value, { uid: perk.uid }) !== -1) {
     return true
-  else return true
+  }
+
+  return false
 }
 
 function genericIsAvailable(perk: PerkFull): boolean {

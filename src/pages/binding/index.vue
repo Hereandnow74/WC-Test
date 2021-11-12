@@ -232,12 +232,14 @@ function elementBought(title: string) {
 
 function choose(bin: Binding, saveData: Perk) {
   if (!isAllowed(bin)) return
+
   const freebies = {}
   if (bin.complex) {
     mergeWith(freebies,
       ...shroudElements.filter(x => findIndex(saveData.complex, { flavor: x.title }) !== -1).map(x => x.freebies),
       (a, b) => { if (isArray(a)) return a.concat(b) })
   }
+
   const ind = findIndex(binding.value, { title: bin.title })
   if (ind !== -1) {
     if (binding.value[ind].count !== saveData.count && saveData.count > 0) {
@@ -248,8 +250,6 @@ function choose(bin: Binding, saveData: Perk) {
         addFreebies(saveData.freebies)
       }
       binding.value[ind] = saveData
-
-      // binding.value[ind].cost = saveData.cost
     }
     else {
       const toDel = binding.value.splice(ind)
@@ -272,7 +272,6 @@ function choose(bin: Binding, saveData: Perk) {
     binding.value.push({ anything, ...saveData })
     flags.value.noBindings = false
   }
-  console.log(allEffects.value)
 }
 
 function isAllowed(bin: Binding): boolean {

@@ -7,7 +7,7 @@
         <img
           ref="companionEl"
           class="rounded absolute object-cover h-full w-full object-top"
-          :data-src="charData.image || '/img/placeholder.jpg'"
+          :data-src="imageLink"
           :alt="charData.name"
         >
         <icon-park-outline:full-screen-one
@@ -125,6 +125,19 @@ const modalImageCmp = computed(() => {
   return modalImage.value
 })
 
+const imageLink = computed(() => {
+  if (charData.image) {
+    if (charData.image.startsWith('http'))
+      return charData.image
+    else
+      return `https://cdn.statically.io/gh/klassekatze/waifucatimg/master/imagecache_thumb/${charData.image}`
+  }
+  else {
+    return 'img/placeholder.jpg'
+  }
+},
+)
+
 const priceTier = (t: number): number => flags.value.noBindings && t !== 11 && t !== 1 ? t - 1 : t
 
 function buyCompanion() {
@@ -158,7 +171,7 @@ function isAlredyBought(uid: number): boolean {
 }
 
 function deleteCharacter() {
-  const ind = findIndex(localUserCharacters.value, { name: props.char.name })
+  const ind = findIndex(localUserCharacters.value, { uid: charData.uid })
   if (ind !== -1)
     localUserCharacters.value.splice(ind, 1)
 }

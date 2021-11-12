@@ -109,10 +109,17 @@ export const QUERIES = computed(() => {
 })
 
 let chars: any = null
+let charsObject: any = null
+
+export async function getCharsObject() {
+  if (!charsObject)
+    charsObject = (await import('~/data/characters.json')).default
+  return charsObject
+}
 
 export async function getChars() {
   if (!chars)
-    chars = Object.values((await import('~/data/characters.json')).default)
+    chars = Object.values(await getCharsObject())
   return chars
 }
 

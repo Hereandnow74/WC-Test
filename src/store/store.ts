@@ -183,6 +183,9 @@ const budget = computed(() => {
     bd = 0
     flags.value.danger11Start = true
   }
+  else {
+    flags.value.danger11Start = false
+  }
 
   return Math.round((bd + intensityFlat) * (1 + intenMultiplier)) - startingOrigin.value.cost
       - bindingCost.value - heritageCost.value - luresCost.value - ridePerksCost.value - homePerksCost.value

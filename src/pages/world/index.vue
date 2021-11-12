@@ -67,7 +67,7 @@
           :key="world.worldName + (world.condition || 'none')"
           :world="world"
           class="w-full"
-          :class="{'row-span-2 min-h-48': world.image, 'col-span-2': world.additional, 'row-span-4': world.image && world.additional}"
+          :class="{'row-span-2 min-h-72': world.image, 'sm:col-span-2': world.additional, 'sm:row-span-4': world.image && world.additional}"
           @edit-world="editWorld"
         />
         <div v-if="!worldsFiltered.length" class="text-center flex-grow">
