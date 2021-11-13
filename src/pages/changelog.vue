@@ -5,6 +5,18 @@
     </h2>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
+        13 November 2021
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>Added 11 user submitted worlds.</li>
+        <li>Danger 11 rules helper.</li>
+        <li>Waifu perks now purchasable only if you have the right waifu.</li>
+        <li>164 new user submitted Characters.</li>
+        <li>Bug fixes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
         08 November 2021
       </h3>
       <ul class="list-decimal list-inside">

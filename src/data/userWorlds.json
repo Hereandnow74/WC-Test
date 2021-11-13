@@ -112,7 +112,7 @@
     "condition": [
       {
         "name": "Wrath of the Righteous",
-        "rating": 9
+        "rating": 10
       },
       {
         "name": "Kingmaker",
@@ -203,10 +203,7 @@
     "rating": 6,
     "image": "https://i.imgur.com/HVlhAnqm.png"
   },
-  {
-    "worldName": "Minecraft",
-    "rating": 2
-  },
+  {"worldName":"Minecraft","rating":2,"condition":[{"name":"RL-Craft","rating":7}]},
   {
     "worldName": "Monster Girl Quest",
     "rating": 6,
@@ -273,10 +270,7 @@
     "rating": 5,
     "image": "https://i.imgur.com/9km50Lrm.png"
   },
-  {
-    "worldName": "Rick Riordan-verse",
-    "rating": 5
-  },
+  {"worldName":"Rick Riordan","rating":8,"condition":[{"rating":6,"name":"Percy Jackson and the Olympians"},{"name":"The Heroes of Olympus","rating":7},{"name":"Ancient Greece","rating":7},{"rating":6,"name":"Roman Empire"}]},
   {
     "worldName": "Rune Factory",
     "rating": 4
@@ -302,5 +296,16 @@
   {
     "worldName": "Yamada-kun and the Seven Witches",
     "rating": 3
-  }
+  },
+  {"worldName":"Cyberpunk 2077","rating":7},
+  {"worldName":"Darksiders","rating":8,"condition":[{"name":"Darksiders 1 Timeline","rating":8},{"name":"Darksiders 2 Timeline","rating":7},{"name":"Darksiders 3 Timeline","rating":7},{"name":"Nephilim Purge","rating":7}]},
+  {"worldName":"Douluo Dalu","rating":8,"image":"https://m.media-amazon.com/images/M/MV5BZDFhNTVlM2ItOWRiMy00ZmI2LWIxY2EtZjRmOWFkNDhkYWE3XkEyXkFqcGdeQXVyOTE4NzcwNzI@._V1_.jpg","condition":[{"name":"Douluo Dalu 1","rating":8},{"rating":10,"name":"Douluo Dalu 2.5"},{"name":"Douluo Dalu 2","rating":8},{"rating":10,"name":"Douluo Dalu 3.5"},{"name":"Douluo Dalu 3","rating":8},{"name":"Douluo Dalu 4","rating":10}]},
+  {"worldName":"God of War","rating":8,"condition":[{"rating":7,"name":"Pre Ares Death"},{"rating":7,"name":"After Olympus Fall"},{"name":"Main Storyline Events","rating":8},{"rating":7,"name":"Midgard"}]},
+  {"worldName":"Highschool of the Dead","rating":3},
+  {"worldName":"Hunter x Hunter","rating":4,"condition":[{"name":"Known World (human continents)","rating":4},{"name":"Dark Continent","rating":5}]},
+  {"worldName":"I Shall Seal The Heavens","rating":10},
+  {"worldName":"Invincible","rating":4,"condition":[{"rating":6,"name":"Invincible Comics"}]},
+  {"worldName":"Mushoku Tensei","rating":4,"condition":[{"name":"Outside the Demon Continent","rating":4},{"name":"Demon Continent","rating":5}]},
+  {"worldName":"Negima!","rating":5,"condition":[{"rating":5,"name":"Earth"},{"rating":7,"name":"Magic World (aka Mundus Magicus)"},{"rating":8,"name":"UQ Holder timeline"}]},
+  {"worldName":"Shinza Bansho","rating":10,"condition":[{"name":"Paradise Lost","rating":9},{"name":"Dies Irae","rating":8},{"rating":10,"name":"Kajiri Kamui Kagura"},{"name":"Avesta of Black and White","rating":9}]}
 ]

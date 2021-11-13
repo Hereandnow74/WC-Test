@@ -12,7 +12,7 @@
         >
         <icon-park-outline:full-screen-one
           class="absolute top-1 right-1 hover:text-blue-400 cursor-pointer mix-blend-difference"
-          @click="() => (showModal = true, modalImage=(nsfw ? charData.image_nsfw : charData.image))"
+          @click="() => (showModal = true, modalImage=(nsfw ? charData.image_nsfw : imageLink))"
         />
         <span
           v-if="charData.image_nsfw"
@@ -113,8 +113,6 @@ const tagColors = { F: 'bg-pink-500', M: 'bg-blue-500', C: 'bg-yellow-400', O: '
 
 const { flags, companions, localUserCharacters } = useStore()
 
-watch(nsfw, () => companionEl.value.src = nsfw.value ? charData.image_nsfw : charData.image)
-
 const modalImageCmp = computed(() => {
   if (modalImage.value.includes('imgur') && modalImage.value.split('.').slice(-2, -1)[0].slice(-1) === 'm') {
     const pcs = modalImage.value.split('m')
@@ -127,10 +125,12 @@ const modalImageCmp = computed(() => {
 
 const imageLink = computed(() => {
   if (charData.image) {
-    if (charData.image.startsWith('http'))
-      return charData.image
-    else
+    if (charData.image.startsWith('http')) { return charData.image }
+    else {
+      if (charData?.tags?.includes('U'))
+        return `https://cdn.statically.io/gh/Om1cr0n/cat_thumb/main/docs/thumbs/${charData.image}`
       return `https://cdn.statically.io/gh/klassekatze/waifucatimg/master/imagecache_thumb/${charData.image}`
+    }
   }
   else {
     return 'img/placeholder.jpg'
@@ -139,6 +139,8 @@ const imageLink = computed(() => {
 )
 
 const priceTier = (t: number): number => flags.value.noBindings && t !== 11 && t !== 1 ? t - 1 : t
+
+watch(nsfw, () => companionEl.value.src = nsfw.value ? charData.image_nsfw : imageLink.value)
 
 function buyCompanion() {
   const char = charData

@@ -54,7 +54,7 @@ const props = defineProps({
 
 const localSave = ref(true)
 const serverSave = ref(false)
-const sex = ref('F')
+const sex = ref(props.character.tags[0])
 
 const tierError = ref('')
 const tierConfirm = ref(false)
@@ -93,24 +93,31 @@ const { value: nickname } = useField<string>('nickname')
 
 const addCharacter = handleSubmit((values) => {
   if (values.tier === 1 && !tierConfirm.value) {
-    tierError.value = 'Are you sure that Tier = 1 if yes click "Add" again'
+    tierError.value = 'Are you sure that Tier=1, if yes click "Add" again'
     tierConfirm.value = true
+    return
   }
-  else {
-    tierError.value = ''
-    tierConfirm.value = false
-
-    values.tags = [sex.value]
-    values.uid = random(10000000, 99999999)
-    if (serverSave.value)
-      proposeCompanion({ ...values, date: new Date().toString() })
-
-    if (localSave.value)
-      localUserCharacters.value.push(values)
-    else
-      userCharacters.value.push(values)
-    toggleShowAddCharacter()
+  if (serverSave.value) {
+    if (values.image.includes('wiki') && !tierConfirm.value) {
+      tierError.value = 'Do you really want to add a plain image from wiki? If yes click "Add" again'
+      tierConfirm.value = true
+      return
+    }
   }
+
+  tierError.value = ''
+  tierConfirm.value = false
+
+  values.tags = [sex.value]
+  values.uid = random(10000000, 99999999)
+  if (serverSave.value)
+    proposeCompanion({ ...values, date: new Date().toString() })
+
+  if (localSave.value)
+    localUserCharacters.value.push(values)
+  else
+    userCharacters.value.push(values)
+  toggleShowAddCharacter()
 })
 
 </script>

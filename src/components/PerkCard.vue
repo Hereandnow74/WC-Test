@@ -33,6 +33,14 @@
         class="text-base ml-2"
         @click.stop
       />
+      <Select
+        v-if="discount"
+        v-model="discountValue"
+        :options="discounts[discount]"
+        class="mx-1 inline-block text-base"
+        placeholder="Discount"
+        @click.stop
+      />
       <slot name="title" />
       <Select
         v-if="perk.costVariants"
@@ -123,18 +131,32 @@ const props = defineProps({
     type: Object,
     default: () => ({}),
   },
+  discount: {
+    type: String,
+    default: '',
+  },
 })
 
 const emit = defineEmits(['pickPerk'])
 
 const { targetList } = useStore()
-const cost = ref(0)
+const cost = ref(props.perk.cost)
+const discountValue = ref<number | string>('')
 // const count = ref(props.savedPerk.count - (props.savedPerk?.target?.length || 0) - (props.savedPerk?.anything?.length) || 0)
 
 const complexFields = {
   target: ['target', 'target_f', 'target_c'].includes(props.perk.complex),
   flavor: ['flavor', 'target_f'].includes(props.perk.complex),
   count: ['target_c'].includes(props.perk.complex),
+}
+
+const discounts = {
+  defense: [
+    { label: 'None', value: 0 },
+    { label: '40%', value: 0.4 },
+    { label: '1 free', value: 1 },
+    { label: '2 free', value: 2 },
+  ],
 }
 
 const complex = reactive({
@@ -147,7 +169,7 @@ const perkToSave = reactive({
   title: props.perk.title,
   count: props.savedPerk.count || 0,
   cost: computed(() => {
-    let cs = cost.value || props.perk.cost
+    let cs = cost.value
     if (props.increment)
       cs = (perkToSave.count / 2) * (cs * 2 + (perkToSave.count - 1) * cs)
     else
@@ -181,6 +203,28 @@ function filterObject(obj: any) {
   return ret
 }
 
+watch(discountValue, () => {
+  if (discountValue.value === 0) {
+    cost.value = props.perk.cost
+    setTimeout(sendPerk)
+  }
+  if (discountValue.value === 0.4) {
+    perkToSave.count = 1
+    cost.value = Math.round(props.perk.cost * 0.6)
+    setTimeout(sendPerk)
+  }
+  if (discountValue.value === 1) {
+    perkToSave.count = 1
+    cost.value = 0
+    setTimeout(sendPerk)
+  }
+  if (discountValue.value === 2) {
+    perkToSave.count = 2
+    cost.value = 0
+    setTimeout(sendPerk)
+  }
+})
+
 function sendPerk() {
   const obj = filterObject(perkToSave)
   if (props.perk.complex) {
@@ -204,6 +248,10 @@ function sendPerk() {
     }
     obj.cost = (props.perk.cost || cost.value) * obj.count
   }
+
+  // Set count to 0 to delete perk if clicked twice
+  if (props.savedPerk.count === obj.count && obj.count > 0)
+    obj.count = 0
 
   emit('pickPerk', props.perk, obj)
 }

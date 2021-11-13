@@ -41,7 +41,7 @@
         <h3 class="text-lg font-semibold">
           Lures
         </h3>
-        <Enum :list="[...lures, lureExpansions]" :color="color" />
+        <Enum :list="[...lures, ...lureExpansions]" :color="color" />
       </div>
 
       <div>

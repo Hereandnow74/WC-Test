@@ -16,6 +16,7 @@
         :saved-perk="allDefenses[defense.title]"
         :is-multiple="true"
         :max="2"
+        discount="defense"
         @pickPerk="pickDefense"
       >
       </PerkCard>

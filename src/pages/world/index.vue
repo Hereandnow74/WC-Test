@@ -105,7 +105,6 @@ const options = {
 const fuse = new Fuse(worldsReac.value, options)
 const subFuse = new Fuse(worldsSubReac.value, options)
 
-console.log(subWorlds.length)
 const worldsCount = computed(() => worlds.length)
 const allUserWorlds = computed(() => userWorlds.value.concat(localUserWorlds.value))
 

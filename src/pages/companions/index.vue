@@ -29,6 +29,13 @@
           M
         </div>
         <div
+          :class="gender==='O' ? 'bg-gray-700':''"
+          class="border-l border-r px-2 hover:bg-gray-700 text-violet-400"
+          @click="gender='O'"
+        >
+          O
+        </div>
+        <div
           :class="gender==='' ? 'bg-gray-700':''"
           class="hover:bg-gray-700 px-2 text-gray-200 rounded-r"
           @click="gender=''"
@@ -45,9 +52,9 @@
           all
         </div>
         <div
-          :class="image==='^h' ? 'bg-gray-700':''"
+          :class="image==='!cvxz' ? 'bg-gray-700':''"
           class="border-l px-2 hover:bg-gray-700 text-gray-200 rounded-r"
-          @click="image='^h'"
+          @click="image='!cvxz'"
         >
           img
         </div>
@@ -161,14 +168,13 @@ const options = {
 const fuse = new Fuse(charArr.value, options)
 
 onMounted(async() => {
-  // characters.value = (await loadChars()).default
   const userChars = Object.values((await loadUsersChars()).default)
   if (userChars[0].b) {
     if (!userChars[0].b.includes('U'))
       userChars.forEach(x => x.b.push('U'))
   }
   else { userChars.forEach(x => x.b = ['U']) }
-  // charArr.value.push(userChars)
+
   charArr.value = Array.prototype.concat(userChars, (await getChars()))
   fuse.setCollection(charArr.value)
   loading.value = false
