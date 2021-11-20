@@ -18,7 +18,7 @@
 const props = defineProps({
   modelValue: {
     type: Number,
-    default: 1,
+    default: 0,
   },
   label: {
     type: String,
@@ -39,6 +39,8 @@ const value = ref(props.modelValue || props.min)
 const emit = defineEmits(['update:modelValue'])
 
 const width = computed(() => `width: ${`${value.value}`.length + 1}ch`)
+
+watch(props, () => value.value = props.modelValue)
 
 function plus() {
   if (value.value < props.max) {

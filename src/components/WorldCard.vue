@@ -4,7 +4,7 @@
     border="2 gray-400 hover:orange-600"
     :class="world.worldName === startingWorld.worldName || startingWorld.worldName === 'Current world' ?
       WORLD_COLORS[world.rating - 1] || 'bg-gray-600' : 'bg-gray-600'"
-    @click="pickWorld(world)"
+    @click="pickAble ? pickWorld(world) : null"
   >
     <div v-if="world.image" class="flex-grow relative">
       <img
@@ -70,6 +70,10 @@ const props = defineProps({
   isUserWorld: {
     type: Boolean,
     default: false,
+  },
+  pickAble: {
+    type: Boolean,
+    default: true,
   },
 })
 

@@ -24,7 +24,7 @@
 <script lang='ts' setup>
 import Fuse from 'fuse.js'
 import tippy from 'tippy.js'
-import { getChars } from '~/data/constatnts'
+import { getChars, getUserChars } from '~/data/constatnts'
 
 const props = defineProps({
   modelValue: {
@@ -44,15 +44,20 @@ const options = {
   threshold: 0.1,
   keys: ['n', 'w'],
 }
-const fuse = ref(null)
+const fuse = new Fuse(allChars, options)
 const listEl = ref<HTMLElement|null>(null)
 const value = ref(props.modelValue)
 
-const searchResult = computed(() => fuse.value?.search(value.value, { limit: 10 }))
+const searchResult = computed(() => fuse.search(value.value, { limit: 10 }))
 
 getChars().then((val) => {
   allChars.push(...val)
-  fuse.value = new Fuse(allChars, options)
+  fuse.setCollection(allChars)
+})
+
+getUserChars().then((val) => {
+  allChars.push(...val)
+  fuse.setCollection(allChars)
 })
 
 let list = null

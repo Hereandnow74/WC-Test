@@ -38,7 +38,7 @@
       <Desc :desc="effectiveTiers" class="bg-amber-200 text-gray-800 sm:w-1/2 sm:float-right mt-8 mx-2 border-3 border-gray-900" />
       <Desc id="captures" :desc="captures" class="bg-warm-gray-200 dark:bg-gray-800" />
     </div>
-    <Desc id="familiars" :desc="familiars" class="bg-warm-gray-200 dark:bg-gray-800" />
+    <Desc id="familiar" :desc="familiars" class="bg-warm-gray-200 dark:bg-gray-800" />
     <Desc id="purchases" :desc="purchases" class="bg-warm-gray-200 dark:bg-gray-800" />
     <Desc id="sales" :desc="sales" class="bg-warm-gray-200 dark:bg-gray-800" />
     <Desc id="waifu11" :desc="waifu11" class="bg-warm-gray-200 dark:bg-gray-800" />
@@ -54,7 +54,7 @@
     <Desc id="salary" :desc="salary" class="bg-warm-gray-200 dark:bg-gray-800" />
     <Desc id="helpDesk" :desc="helpDesk" class="bg-warm-gray-200 dark:bg-gray-800" />
     <Desc id="loans" :desc="loans" class="bg-warm-gray-200 dark:bg-gray-800" />
-    <Desc id="missions" :desc="missions" class="bg-warm-gray-200 dark:bg-gray-800" />
+    <Desc id="Missions" :desc="missions" class="bg-warm-gray-200 dark:bg-gray-800" />
     <Desc id="refund" :desc="refund" class="bg-warm-gray-200 dark:bg-gray-800" />
     <h2 id="arranged" class="text-xl text-center">
       Come Out and Play (Arranged PvP)
@@ -69,6 +69,11 @@
     </div>
     <Desc id="arrangedTeam" :desc="arrangedTeam" class="bg-warm-gray-200 dark:bg-gray-800" />
     <Desc id="arrangedSpecial" :desc="arrangedSpecial" class="bg-warm-gray-200 dark:bg-gray-800" />
+    <h2 id="additional" class="text-xl text-center">
+      Additional Rules
+    </h2>
+    <Desc id="RIP" :desc="rip" class="bg-warm-gray-200 dark:bg-gray-800" />
+    <Desc id="Offspring" :desc="offspring" class="bg-warm-gray-200 dark:bg-gray-800" />
     <div class="pt-4"></div>
     <ShareLoad />
   </div>
@@ -79,7 +84,7 @@ import { WORLD_RATINGS, rulesList } from '~/data/constatnts'
 import {
   startingDesc, pvpRules, effectiveTiers, captures, familiars, purchases, sales, waifu11,
   danger11, services, salary, helpDesk, loans, missions, refund, arranged, arrangedConditions,
-  arrangedSpecial, arrangedTeam, creditValue, assetValue,
+  arrangedSpecial, arrangedTeam, creditValue, assetValue, rip, offspring,
 } from '~/data/rules'
 
 import { useTooltips } from '~/logic/misc'

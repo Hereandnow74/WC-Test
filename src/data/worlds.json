@@ -403,7 +403,7 @@
     "additional": "Tohno Shiki has Len as a familiar. Aoko has White Len as a familiar. If you already have Len when you buy Shiki or White Len when you buy Aoko, you’ll be refunded the appropriate familiars’ full costs.",
     "condition": [
       {
-        "name": "KNK/Grail Wars/Case Files",
+        "name": "Grail Wars/Case Files",
         "rating": 6
       },
       {
@@ -412,10 +412,6 @@
       },
       {
         "name": "Tsukihime/Melty Blood",
-        "rating": 7
-      },
-      {
-        "name": "Moon Cell",
         "rating": 7
       },
       {
@@ -543,6 +539,10 @@
       },
       {
         "name": "Cinematic Universe (no TVA)",
+        "rating": 5
+      },
+      {
+        "name": "X-Men Evolution",
         "rating": 5
       }
     ]
@@ -1420,7 +1420,7 @@
     "additional": "This entry represents both original works and modern adaptations such as Demonbane or Haiyore! Nyaruko-san. All such published works are true for T11s from the mythos, just not necessarily at the same time."
   },
   {
-    "rating": 0,
+    "rating": 6,
     "worldName": "Kara no Kyoukai",
     "additional": "Kokutou Azaka will believe you to be her sibling and cannot be convinced otherwise. If you go to KnK and capture Shiki there, she will always be the basic Tier 7 version; this does not apply to the Saber-class guest-star at Chaldea."
   },
@@ -1430,9 +1430,19 @@
     "additional": "Body Talent will cure Fiore’s paralysis without requiring her to lose her Magic Circuits."
   },
   {
-    "rating": 7,
+    "rating": 6,
     "worldName": "Prisma Illya",
-    "additional": "Prisma Illya has the Saber (Artoria classic, but with Lily’s dress), Assassin (Hundred Faces), Berserker (Heracles), and Rider (Medusa) Class Cards. Miyu has the Saber (Artoria classic), Assassin (Serenity), Caster (Medea), and Lancer (Cú Chulainn classic) Class Cards. Angelica has her real body, Archer (Gilgamesh)’s Class Card, and a fully-stocked Gate of Babylon. She can use her version of Ea just as easily as the real Gilgamesh. Beatrice has Berserker (Magni)’s Class Card.   Class Cards (general): A sufficiently capable mage can produce more Class Cards with access to examples of the originals. If you have Mash Kyrielight with the Lord Camelot perk and at least one holder of Class Cards, unwanted Servants may appear as Class Cards instead. This also includes unwanted summons from other gacha titles; their class titles and card designs will reflect their home setting instead of the Nasuverse."
+    "additional": "Prisma Illya has the Saber (Artoria classic, but with Lily’s dress), Assassin (Hundred Faces), Berserker (Heracles), and Rider (Medusa) Class Cards. Miyu has the Saber (Artoria classic), Assassin (Serenity), Caster (Medea), and Lancer (Cú Chulainn classic) Class Cards. Angelica has her real body, Archer (Gilgamesh)’s Class Card, and a fully-stocked Gate of Babylon. She can use her version of Ea just as easily as the real Gilgamesh. Beatrice has Berserker (Magni)’s Class Card.   Class Cards (general): A sufficiently capable mage can produce more Class Cards with access to examples of the originals. If you have Mash Kyrielight with the Lord Camelot perk and at least one holder of Class Cards, unwanted Servants may appear as Class Cards instead. This also includes unwanted summons from other gacha titles; their class titles and card designs will reflect their home setting instead of the Nasuverse.",
+    "condition": [
+      {
+        "name": "Illya’s World (Start of Canon/2wei)",
+        "rating": 6
+      },
+      {
+        "name": "Miyu’s World (3rei/Oath Under Snow)",
+        "rating": 7
+      }
+    ]
   },
   {
     "rating": 8,

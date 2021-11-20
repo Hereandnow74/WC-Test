@@ -54,7 +54,7 @@ const props = defineProps({
 
 const localSave = ref(true)
 const serverSave = ref(false)
-const sex = ref(props.character.tags[0])
+const sex = ref(props?.character?.tags?.[0] || 'F')
 
 const tierError = ref('')
 const tierConfirm = ref(false)

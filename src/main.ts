@@ -5,6 +5,8 @@ import routes from 'virtual:generated-pages'
 import vSelect from 'vue-select'
 import App from './App.vue'
 
+import '@purge-icons/generated'
+
 // windicss layers
 import 'virtual:windi-base.css'
 import 'virtual:windi-components.css'

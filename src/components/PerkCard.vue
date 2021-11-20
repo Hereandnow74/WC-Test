@@ -89,9 +89,7 @@
 </template>
 
 <script lang='ts' setup>
-import { findIndex, remove, without } from 'lodash-es'
-import Select from './basic/Select.vue'
-import AnythingInput from './AnythingInput.vue'
+import { findIndex } from 'lodash-es'
 import { useStore } from '~/store/store'
 
 const props = defineProps({
@@ -100,10 +98,6 @@ const props = defineProps({
     default: () => ({}),
   },
   isActive: {
-    type: Boolean,
-    default: false,
-  },
-  isAvailable: {
     type: Boolean,
     default: false,
   },
@@ -116,10 +110,6 @@ const props = defineProps({
     default: 100,
   },
   increment: {
-    type: Boolean,
-    default: false,
-  },
-  targetAble: {
     type: Boolean,
     default: false,
   },
@@ -170,20 +160,20 @@ const perkToSave = reactive({
   count: props.savedPerk.count || 0,
   cost: computed(() => {
     let cs = cost.value
-    if (props.increment)
-      cs = (perkToSave.count / 2) * (cs * 2 + (perkToSave.count - 1) * cs)
-    else
-      cs = perkToSave.count ? cs * perkToSave.count : cs
+    if (props.increment) { cs = (perkToSave.count / 2) * (cs * 2 + (perkToSave.count - 1) * cs) }
+    else {
+      let countMod = 0
+      if (discountValue.value === 0.4) cs = Math.round(cs * 0.6)
+      if (discountValue.value === 1) countMod = 1
+      if (discountValue.value === 2) countMod = 2
+      cs = perkToSave.count ? cs * (perkToSave.count - countMod) : cs
+    }
     return cs
   }),
   target: '',
   anything: '',
   freebies: props.perk.freebies,
 })
-
-// watch(perkToSave, () => perkToSave.target.length ? perkToSave.count = perkToSave.target.length : null)
-
-// if (props.savedPerk.count) perkToSave.count = props.savedPerk.count
 
 const displayedCost = computed(() => {
   return perkToSave.cost >= 11111 ? `${perkToSave.cost / 11111} T11 ticket` : perkToSave.cost
@@ -204,25 +194,11 @@ function filterObject(obj: any) {
 }
 
 watch(discountValue, () => {
-  if (discountValue.value === 0) {
-    cost.value = props.perk.cost
-    setTimeout(sendPerk)
-  }
-  if (discountValue.value === 0.4) {
+  if (discountValue.value === 1)
     perkToSave.count = 1
-    cost.value = Math.round(props.perk.cost * 0.6)
-    setTimeout(sendPerk)
-  }
-  if (discountValue.value === 1) {
-    perkToSave.count = 1
-    cost.value = 0
-    setTimeout(sendPerk)
-  }
-  if (discountValue.value === 2) {
+
+  if (discountValue.value === 2)
     perkToSave.count = 2
-    cost.value = 0
-    setTimeout(sendPerk)
-  }
 })
 
 function sendPerk() {

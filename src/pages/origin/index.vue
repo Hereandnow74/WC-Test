@@ -70,59 +70,46 @@
   </div>
 </template>
 
-<script lang='ts'>
+<script lang='ts' setup>
 import { CHAR_COSTS } from '~/data/constatnts'
 import { desc, origin, Origin } from '~/data/origin'
 import { useTooltips } from '~/logic/misc'
 import { useStore } from '~/store/store'
 
-export default defineComponent({
-  setup() {
-    const choosedOrigin = reactive({
-      title: '',
-      cost: 0,
-      character: '',
-      tier: 1,
-    })
-    const costError = ref('')
-
-    const { allEffects, startingOrigin, baseBudget } = useStore()
-
-    onMounted(() => useTooltips())
-
-    watch(choosedOrigin, () => {
-      if (['Substitute', 'Possess'].includes(choosedOrigin.title))
-        choosedOrigin.cost = CHAR_COSTS[choosedOrigin.tier - 1] || 0
-    })
-
-    function chooseOrigin(item: Origin) {
-      choosedOrigin.title = item.title
-      choosedOrigin.cost = item.cost
-
-      if (startingOrigin.value.title === choosedOrigin.title)
-        Object.assign(choosedOrigin, startingOrigin.value)
-    }
-
-    function pickOrigin() {
-      if (choosedOrigin.title === 'Substitute' && choosedOrigin.cost > baseBudget.value * 0.2) {
-        costError.value = 'Cost should be less than 20% of your starting budget'
-      }
-      else {
-        costError.value = ''
-        allEffects.value.push(choosedOrigin.title)
-        Object.assign(startingOrigin.value, choosedOrigin)
-      }
-    }
-
-    return {
-      desc,
-      origin,
-      costError,
-      chooseOrigin,
-      choosedOrigin,
-      startingOrigin,
-      pickOrigin,
-    }
-  },
+const choosedOrigin = reactive({
+  title: '',
+  cost: 0,
+  character: '',
+  tier: 1,
 })
+const costError = ref('')
+
+const { allEffects, startingOrigin, baseBudget } = useStore()
+
+onMounted(() => useTooltips())
+
+watch(choosedOrigin, () => {
+  if (['Substitute', 'Possess'].includes(choosedOrigin.title))
+    choosedOrigin.cost = CHAR_COSTS[choosedOrigin.tier - 1] || 0
+})
+
+function chooseOrigin(item: Origin) {
+  choosedOrigin.title = item.title
+  choosedOrigin.cost = item.cost
+
+  if (startingOrigin.value.title === choosedOrigin.title)
+    Object.assign(choosedOrigin, startingOrigin.value)
+}
+
+function pickOrigin() {
+  if (choosedOrigin.title === 'Substitute' && choosedOrigin.cost > baseBudget.value * 0.2) {
+    costError.value = 'Cost should be less than 20% of your starting budget'
+  }
+  else {
+    costError.value = ''
+    allEffects.value.push(choosedOrigin.title)
+    Object.assign(startingOrigin.value, choosedOrigin)
+  }
+}
+
 </script>

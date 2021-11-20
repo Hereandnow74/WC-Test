@@ -1,13 +1,14 @@
 <template>
   <div class="md:p-2">
-    <Desc :desc="rideDesc" class="p-2 mb-4 max-w-4xl mx-auto bg-violet-200 dark:bg-violet-900" />
+    <Desc :desc="rideDesc" class="p-2 mb-2 max-w-4xl mx-auto bg-violet-200 dark:bg-violet-900" />
+    <Button label="Create A Ride" class="mx-auto mb-2 block" bg-color="bg-blue-500" @click="toggleShowAddRide" />
     <div class="flex flex-wrap gap-2 mx-auto justify-center pb-8">
       <div
-        v-for="ride in rides"
+        v-for="ride in allRides"
         :id="ride.title"
         :key="ride.title"
         class="p-2 inline-block max-w-md flex-grow border rounded dark:border-gray-600 cursor-pointer"
-        :bg="isAvailable(ride) ? 'light-200 dark:dark-500 hover:(light-700 dark:dark-700)' : 'gray-300 dark:gray-500'"
+        :bg="rideAvailable(ride) ? 'light-200 dark:dark-500 hover:(light-700 dark:dark-700)' : 'gray-300 dark:gray-500'"
         @click="selectRide(ride)"
       >
         <h3 class="relative text-center text-xl">
@@ -23,6 +24,14 @@
             size="Small"
             bg-color="bg-blue-500"
             @click.stop="pickRide(ride)"
+          />
+          <Button
+            v-if="findIndex(localUserRides, {title: ride.title}) !== -1"
+            class="text-base ml-2"
+            label="delete"
+            size="Small"
+            bg-color="bg-red-500"
+            @click.stop="deleteRide(ride)"
           />
           <fa-solid:check v-if="findIndex(ridePerks, {title: ride.title}) !== -1" class="absolute top-1 right-1 text-green-500" />
         </h3>
@@ -70,17 +79,33 @@
         </div>
       </div>
     </div>
+    <h3 class="text-lg text-center">
+      Ride Perks
+    </h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-2 pb-8">
+      <PerkCard
+        v-for="ridePerk in rides.slice(-2)"
+        :key="ridePerk.title"
+        :perk="ridePerk"
+        :bg="rideAvailable(ridePerk) ? 'true-gray-100 dark:true-gray-900 hover:(true-gray-200 dark:true-gray-800)'
+          : 'gray-200 dark:gray-600'"
+        :is-active="findIndex(ridePerks, {title: ridePerk.title}) !== -1"
+        @pickPerk="pickRidePerk"
+      >
+      </PerkCard>
+    </div>
   </div>
+  <AddRide v-if="showAddRide" @click="toggleShowAddRide" />
 </template>
 
 <script lang='ts' setup>
-import { findIndex, intersection } from 'lodash-es'
-import { rides, rideDesc, Ride } from '~/data/talents'
+import { findIndex } from 'lodash-es'
+import { rides, rideDesc, Ride, PerkFull } from '~/data/talents'
 import { useTooltips } from '~/logic/misc'
-import { useStore } from '~/store/store'
-import Enum from '~/components/basic/Enum.vue'
+import { Perk, useStore } from '~/store/store'
+import { toggleShowAddRide, showAddRide, pickSimplePerk, chooseRide, rideAvailable } from '~/logic'
 
-const { allEffects, ridePerks, flags } = useStore()
+const { ridePerks, userRides, localUserRides } = useStore()
 
 const selectedRide = reactive({
   title: '',
@@ -88,6 +113,8 @@ const selectedRide = reactive({
   addons: [] as string[],
   variant: '',
 })
+
+const allRides = computed(() => Array.prototype.concat(userRides.value, localUserRides.value, rides.slice(0, -2)))
 
 function selectRide(perk: Ride) {
   if (selectedRide.title !== perk.title) {
@@ -121,29 +148,17 @@ function pickRideVariant(variant: any[]) {
   }
 }
 
-function isAvailable(perk: Ride): boolean {
-  if (perk.whitelist) {
-    if (intersection(perk.whitelist, allEffects.value).length === perk.whitelist.length) return true
-    else return false
-  }
-  if (perk.flag) return flags.value[perk.flag]
-  return true
+function pickRide(perk: Ride) {
+  chooseRide(perk, selectedRide)
 }
 
-function pickRide(ride: Ride) {
-  if (isAvailable(ride)) {
-    const ind = findIndex(ridePerks.value, { title: selectedRide.title })
-    if (ind === -1) {
-      allEffects.value.push(selectedRide.title)
-      ridePerks.value.push({ ...selectedRide })
-      flags.value.hasARide = true
-    }
-    else {
-      const del = ridePerks.value.splice(ind)
-      del.forEach(x => allEffects.value.splice(allEffects.value.indexOf(x.title), 1))
-      flags.value.hasARide = !!ridePerks.value.length
-    }
-  }
+function deleteRide(ride: Ride) {
+  const ind = findIndex(localUserRides.value, { title: ride.title })
+  localUserRides.value.splice(ind, 1)
+}
+
+function pickRidePerk(perk: PerkFull, saveData: Perk) {
+  pickSimplePerk(perk, saveData, rideAvailable, ridePerks.value)
 }
 
 onMounted(() => useTooltips())

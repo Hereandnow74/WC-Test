@@ -23,23 +23,21 @@
     <div class="md:column-count-2 lg:column-count-3 pb-8">
       <PerkCard
         :key="heritages[0].title"
-        :class="isAvailable(heritages[0]) ? heritageColors[heritages[0].tree]: 'bg-gray-200 dark:bg-gray-600'"
+        :class="heritageAvailable(heritages[0]) ? heritageColors[heritages[0].tree]: 'bg-gray-200 dark:bg-gray-600'"
         :perk="heritages[0]"
-        :is-available="isAvailable(heritages[0])"
         :is-active="!!allHeritages[heritages[0].title]"
         :saved-perk="allHeritages[heritages[0].title]"
         :increment="true"
-        @pickPerk="pickHeritage"
+        @pickPerk="chooseHeritage"
       />
       <PerkCard
         v-for="hr in heritageByTree[activeTree]"
         :key="hr.title"
-        :class="isAvailable(hr) ? heritageColors[hr.tree]: 'bg-gray-200 dark:bg-gray-600'"
+        :class="heritageAvailable(hr) ? heritageColors[hr.tree]: 'bg-gray-200 dark:bg-gray-600'"
         :perk="hr"
-        :is-available="isAvailable(hr)"
         :is-active="!!allHeritages[hr.title]"
         :saved-perk="allHeritages[hr.title]"
-        @pickPerk="pickHeritage"
+        @pickPerk="chooseHeritage"
       >
         <template #title>
           <Select
@@ -75,14 +73,15 @@
 </template>
 
 <script lang='ts' setup>
-import { findIndex, intersection } from 'lodash'
+
 import { onBeforeRouteUpdate } from 'vue-router'
 import { desc, heritages, Heritage } from '~/data/heritage'
-import { addFreebies, deleteFreebies, useTooltips } from '~/logic/misc'
-import { Perk, useStore } from '~/store/store'
+import { useTooltips } from '~/logic/misc'
+import { useStore } from '~/store/store'
 import Select from '~/components/basic/Select.vue'
+import { chooseHeritage, heritageAvailable } from '~/logic'
 
-const { heritage, allEffects, flags } = useStore()
+const { heritage, flags } = useStore()
 onMounted(() => useTooltips())
 
 // const availableClasses = 'cursor-pointer'
@@ -120,46 +119,5 @@ onBeforeRouteUpdate((to, from, next) => {
 
   nextTick(next)
 })
-
-function isAvailable(hr: Heritage): boolean {
-  if (flags.value.noHeritage && !hr.whitelist) { return true }
-  else {
-    if (intersection(hr.whitelist, allEffects.value).length === hr?.whitelist?.length)
-      return true
-  }
-
-  return false
-}
-
-function pickHeritage(hr: Heritage, saveData: Perk) {
-  if (isAvailable(hr)) {
-    const ind = findIndex(heritage.value, { title: hr.title })
-    if (ind !== -1) {
-      if (hr.typeFreebies)
-        deleteFreebies(hr.typeFreebies[flags.value.transhumanType])
-      if (hr.title === 'First Augmentation') {
-        flags.value.isTranshuman = false
-        flags.value.transhumanType = undefined
-      }
-      const toDel = heritage.value.splice(ind)
-      toDel.forEach((x) => {
-        if (x.freebies) deleteFreebies(x.freebies)
-        allEffects.value.splice(allEffects.value.indexOf(x.title), 1)
-      })
-    }
-    else {
-      if (hr.title === 'First Augmentation') {
-        flags.value.isTranshuman = true
-        flags.value.transhumanType = flags.value.transhumanType || 'Biomorph'
-        saveData.anything = flags.value.transhumanType
-      }
-      if (hr.typeFreebies)
-        addFreebies(hr.typeFreebies[flags.value.transhumanType])
-      allEffects.value.push(hr.title)
-      heritage.value.push(saveData)
-      if (hr.freebies) addFreebies(hr.freebies)
-    }
-  }
-}
 
 </script>

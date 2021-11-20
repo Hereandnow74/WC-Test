@@ -332,6 +332,8 @@ bindings.push({
   title: 'Three-Piece Suit',
   cost: 15,
   type: 'Shroud',
+  multiple: true,
+  max: 9,
   whitelist: ['Shroud of Power'],
   desc: `
 <p>Your Shroud may now be split and sectioned off, such that you functionally have multiple Shrouds. You could give a target an article of clothing to wear while still retaining the power of your personal Shroud. If your Shroud is elemental, you may separate one portion of it without worrying about it dissolving. This can only be created from yourself or extant manifestations of your Shroud.</p>
@@ -482,6 +484,9 @@ bindings.push({
   whitelist: ['Shroud of Power'],
   element: '',
   // complex: 'flavor',
+  freebies: {
+    talentPerks: ['Body Talent', 'Soul Talent'],
+  },
   desc: `
 <p>Congratulations! Your Shroud has been upgraded to the elemental manifestation type! Choose one element for your personal Shroud from the list in the Additional Rules section. (Your retinues’ cloaks are not affected.) No longer purely physical, the Shroud is an elemental manifestation of your will, granting you a noticeable buff to your affinity with that element, as well as allowing you to generate and control significant amounts of it. The cap on the effective tier of subjects you can successfully bind is raised by one.</p>
 <p>Your Shroud’s manifestation is always intense and obvious, such as a black void for Fearful Shrouds, burning flames or magma for a Volcanic Shroud, or a seemingly star-filled cosmos for the Void Shroud. As an extension of your will, it will only harm that which you wish it to harm. You may take control of a natural manifestation of your element by mixing in some of your Shroud into it. Manifestations of the element with a will of their own must be infused with your will the same way a waifu must. However, a willing manifestation may allow you to manipulate them, such as using a Cyber Shroud to repair a willing gynoid. Willful manifestations must either be bound like any other capture or released when you have no further need of their substance.</p>
@@ -691,7 +696,7 @@ otherControls.push({
   whitelist: ['Basic Tempest Runes', 'Shroud of Power'],
   needed: 1,
   desc: `
-<p>You and the retinue members you’ve bound, through the method you used to unlock this expansion, are now capable of teleporting yourselves, or anything in hand, to anyone else within your retinue as a whole with a few moments’ concentration. Doing this without some method of advance warning may be ill-advised. If you have Pocket Apartment or higher, you may teleport objects into appropriate spaces in the apartment instead of dropping directly in on someone else. If you have All Roads Lead To Home or Rainbow Bridge, you and your waifus may always teleport into the apartment instead of opening portals therein. If you do so personally and then try to open a portal out, you must still place the exit reasonably close to your previous outside-world location.</p>
+<p>You and the retinue members you’ve bound, through the method you used to unlock this expansion, are now capable of teleporting yourselves, or anything in hand, to anyone else within your retinue as a whole with a few moments’ concentration. Doing this without some method of advance warning may be ill-advised. If you have Pocket Apartment or higher, you may teleport objects into appropriate spaces in the apartment instead of dropping directly in on someone else. If you have All Roads Lead to Home or Rainbow Bridge, you and your waifus may always teleport into the apartment instead of opening portals therein. If you do so personally and then try to open a portal out, you must still place the exit reasonably close to your previous outside-world location.</p>
 <p>Teleporting something you have in hand does not require ownership, but certain conceptual limitations and the time required to initiate and complete the teleportation prevent this ability from being used as an attack or defense vector. You can’t strip your enemies of their Infinity+1 armor by grabbing hold of them, let alone telefrag people, nor shunt incoming bullets into a containment unit back at home.</p>
 <p>A person or item held by your or a retinue member’s telekinesis, Shroud, or insides (or some other method) may be teleported as if it’s literally in hand. Merely encompassing it with subtle manifestations of the Shroud (as enabled by Elemental Loom) doesn’t count. The Tempest Jewelry version of this perk uses the jewelry pieces themselves as beacons and cannot work through any deactivated pieces.</p>`,
 })

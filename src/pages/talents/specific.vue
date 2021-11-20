@@ -11,7 +11,6 @@
         :perk="perk"
         :bg="genericIsAvailable(perk) ? 'lime-200 dark:lime-900 hover:(lime-100 dark:lime-800)'
           : 'gray-200 dark:gray-600'"
-        :is-available="genericIsAvailable(perk)"
         :saved-perk="allGeneric[perk.title]"
         @pickPerk="pickGenericPerk"
       ></PerkCard>
@@ -33,6 +32,12 @@
         v-if="waifu.image !==''"
         class="max-h-[300px] max-w-1/2 object-contain ml-auto pl-1 inline-block float-right"
         :data-src="waifu.image"
+        :alt="waifu.title"
+      />
+      <img
+        v-if="waifu.image_2"
+        class="max-h-[300px] max-w-1/2 object-contain ml-auto pl-1 inline-block float-right"
+        :src="waifu.image_2"
         :alt="waifu.title"
       />
       <icon-park-outline:full-screen-one
@@ -96,17 +101,13 @@
 import { findIndex, intersection, isArray, intersectionWith } from 'lodash-es'
 import { waifu_perks, WaifuPerk } from '~/data/waifu_perks'
 import { genericPerks, genericDesc, PerkFull } from '~/data/talents'
-import { lazyLoadImg, pickSimplePerk, useTooltips } from '~/logic/misc'
+import { lazyLoadImg, useTooltips } from '~/logic/misc'
 import { Perk, useStore } from '~/store/store'
 
 import PerkCard from '~/components/PerkCard.vue'
-import { getCharsObject } from '~/data/constatnts'
+import { pickSimplePerk } from '~/logic'
 
 const { waifuPerks, companions, genericWaifuPerks, allEffects, flags } = useStore()
-
-const charObject = ref({})
-
-getCharsObject().then(val => charObject.value = val)
 
 const gachaTable = [
   [1, 2, 5, 10, 20, 50, 100, 200, 500, 1000],

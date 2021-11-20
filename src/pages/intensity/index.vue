@@ -7,8 +7,8 @@
         :id="rule.title"
         :key="rule.title"
         class="p-1 rounded cursor-pointer relative mb-2 inline-block pb-4"
-        :bg="requirementsMet(rule) ? 'blue-100 dark:gray-700 hover:blue-200 dark:hover:gray-800' : 'gray-200 dark:gray-600'"
-        @click="choose(rule)"
+        :bg="intensityAvailable(rule) ? 'blue-100 dark:gray-700 hover:blue-200 dark:hover:gray-800' : 'gray-200 dark:gray-600'"
+        @click="chooseIntensityCoop(rule)"
       >
         <h3 class="text-xl text-center">
           {{ rule.title }}
@@ -60,40 +60,21 @@
 </template>
 
 <script lang='ts' setup>
-import { findIndex, intersection } from 'lodash-es'
-import { desc, intensity, Intensity } from '~/data/intensity'
+import { desc, intensity } from '~/data/intensity'
 import { useTooltips } from '~/logic/misc'
 import { useStore } from '~/store/store'
 
-const { allEffects, intensities, baseBudgetAfter } = useStore()
+import { chooseIntensity, intensityAvailable } from '~/logic/'
 
 const coopCount = ref(0)
-
 const coopIntensity = computed(() => coopCount.value * 0.2)
 
-function choose(rule: Intensity) {
-  const ind = findIndex(intensities.value, { title: rule.title })
-  if (ind !== -1) {
-    const toDel = intensities.value.splice(ind)
-    toDel.forEach(x => allEffects.value.splice(allEffects.value.indexOf(x.title), 1))
-  }
-  else {
-    if (requirementsMet(rule)) {
-      allEffects.value.push(rule.title)
-      const inten = rule.title === 'With A Little Help From My Friends(Cooperative)' ? coopIntensity.value : rule.intensity
-      intensities.value.push({ title: rule.title, intensity: inten, count: rule.title === 'With A Little Help From My Friends(Cooperative)' ? coopCount.value : 0 })
-    }
-  }
-}
-
-function requirementsMet(rule: Intensity): boolean {
-  if (intersection(rule.blacklist, allEffects.value).length) return false
-  if (intersection(rule.whitelist, allEffects.value).length !== (rule.needed || rule.whitelist?.length || 0)) return false
-  return true
-}
+const { allEffects, baseBudgetAfter } = useStore()
 
 onMounted(() => {
   useTooltips()
 })
+
+const chooseIntensityCoop = val => chooseIntensity(val, coopIntensity.value, coopCount.value)
 
 </script>

@@ -5,6 +5,21 @@
     </h2>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
+        19 November 2021
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>69(nice!) new user submitted Characters.</li>
+        <li>Added 9 user submitted worlds.</li>
+        <li>Missions app(WIP)</li>
+        <li>Exit stage Left app(WIP)</li>
+        <li>Yo now can add your own Ride</li>
+        <li>Dice Machine app</li>
+        <li>Random World, Random Character app</li>
+        <li>Bug fixes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
         13 November 2021
       </h3>
       <ul class="list-decimal list-inside">

@@ -43,14 +43,13 @@
         v-for="bnd in bindingByType[activeType]"
         :key="bnd.title"
         :perk="bnd"
-        :bg="isAllowed(bnd) ? 'light-400 dark:rose-900 hover:(yellow-100 dark:rose-800)'
+        :bg="bindingAvailable(bnd) ? 'light-400 dark:rose-900 hover:(yellow-100 dark:rose-800)'
           : 'gray-200 dark:gray-600'"
-        :is-available="isAllowed(bnd)"
         :is-active="!!allBindings[bnd.title]"
         :increment="!!bnd.increment"
         :saved-perk="allBindings[bnd.title]"
         :flavor-list="bnd.title === 'Prismatic Shroud' ? shroudElements.map(x => ({flavor:x.title})) : []"
-        @pickPerk="choose"
+        @pickPerk="chooseBinding"
       >
         <template v-if="['Elemental Shroud'].includes(bnd.title)" #title>
           <Button size="Small" label="element" class="mx-1" @click.stop="chooseElement(bnd)" />
@@ -77,13 +76,12 @@
     <Desc :desc="lureDesc" class="bg-gray-200 dark:bg-gray-600 max-w-screen-md my-4 mx-auto" />
     <div class="md:column-count-2 lg:column-count-3">
       <PerkCard
-        v-for="bnd in lures"
-        :key="bnd.title"
-        :perk="bnd"
-        :bg="isLureAllowed(bnd) ? 'pink-100 dark:pink-900 hover:(pink-200 dark:rose-800)'
+        v-for="lr in lures"
+        :key="lr.title"
+        :perk="lr"
+        :bg="lureAvailable(lr) ? 'pink-100 dark:pink-900 hover:(pink-200 dark:rose-800)'
           : 'gray-200 dark:gray-600'"
-        :is-available="isLureAllowed(bnd)"
-        :is-active="findIndex(luresBought, {title: bnd.title}) !== -1"
+        :is-active="allLures[lr.title]"
         @pickPerk="chooseLure"
       >
       </PerkCard>
@@ -100,13 +98,12 @@
     <Desc :desc="lureExpansionDesc" class="bg-gray-200 dark:bg-gray-600 max-w-screen-md my-4 mx-auto" />
     <div class="md:column-count-2 lg:column-count-3">
       <PerkCard
-        v-for="bnd in lureExpansions"
-        :key="bnd.title"
-        :perk="bnd"
-        :bg="isLureAllowed(bnd) ? 'pink-100 dark:pink-900 hover:(pink-200 dark:rose-800)'
+        v-for="lr in lureExpansions"
+        :key="lr.title"
+        :perk="lr"
+        :bg="lureAvailable(lr) ? 'pink-100 dark:pink-900 hover:(pink-200 dark:rose-800)'
           : 'gray-200 dark:gray-600'"
-        :is-available="isLureAllowed(bnd)"
-        :is-active="findIndex(luresBought, {title: bnd.title}) !== -1"
+        :is-active="allLures[lr.title]"
         @pickPerk="chooseLure"
       >
       </PerkCard>
@@ -123,13 +120,12 @@
     <Desc :desc="otherDesc" class="bg-gray-200 dark:bg-gray-600 max-w-screen-md my-4 mx-auto" />
     <div class="md:column-count-2 lg:column-count-3 pb-8">
       <PerkCard
-        v-for="bnd in otherControls"
-        :key="bnd.title"
-        :perk="bnd"
-        :bg="isLureAllowed(bnd) ? 'pink-100 dark:pink-900 hover:(pink-200 dark:rose-800)'
+        v-for="other in otherControls"
+        :key="other.title"
+        :perk="other"
+        :bg="lureAvailable(other) ? 'pink-100 dark:pink-900 hover:(pink-200 dark:rose-800)'
           : 'gray-200 dark:gray-600'"
-        :is-available="isLureAllowed(bnd)"
-        :is-active="findIndex(luresBought, {title: bnd.title}) !== -1"
+        :is-active="allLures[other.title]"
         @pickPerk="chooseLure"
       >
       </PerkCard>
@@ -176,18 +172,17 @@
 </template>
 
 <script lang='ts' setup>
-import { findIndex, intersection, isArray, merge, mergeWith } from 'lodash-es'
+import { findIndex } from 'lodash-es'
 import { onBeforeRouteUpdate } from 'vue-router'
 import {
   desc, bindings, Binding, lureDesc, lures, lureExpansionDesc, lureExpansions, shroudElements,
   otherControls, otherDesc, symbioteRules,
 } from '~/data/binding'
-import { addFreebies, deleteFreebies, useTooltips } from '~/logic/misc'
-import { Perk, useStore } from '~/store/store'
-import PerkCard from '~/components/PerkCard.vue'
-import RitualCircle from '~/components/RitualCircle.vue'
+import { useTooltips } from '~/logic/misc'
+import { chooseLure, lureAvailable, bindingAvailable, chooseBinding } from '~/logic'
+import { useStore } from '~/store/store'
 
-const { allEffects, binding, luresBought, flags } = useStore()
+const { binding, luresBought, flags } = useStore()
 const [showElements, toggleElements] = useToggle()
 const [showRitual, toggleRitual] = useToggle()
 
@@ -226,87 +221,14 @@ const allBindings = computed(() => {
   return res
 })
 
+const allLures = computed(() => {
+  const res: any = {}
+  luresBought.value.forEach(x => res[x.title] = x)
+  return res
+})
+
 function elementBought(title: string) {
   return findIndex(binding.value, { anything: title }) !== -1
-}
-
-function choose(bin: Binding, saveData: Perk) {
-  if (!isAllowed(bin)) return
-
-  const freebies = {}
-  if (bin.complex) {
-    mergeWith(freebies,
-      ...shroudElements.filter(x => findIndex(saveData.complex, { flavor: x.title }) !== -1).map(x => x.freebies),
-      (a, b) => { if (isArray(a)) return a.concat(b) })
-  }
-
-  const ind = findIndex(binding.value, { title: bin.title })
-  if (ind !== -1) {
-    if (binding.value[ind].count !== saveData.count && saveData.count > 0) {
-      if (bin.complex) {
-        deleteFreebies(binding.value[ind].freebies)
-        if (saveData.complex.length > 1) saveData.cost += 10 * (saveData.complex.length)
-        saveData.freebies = freebies
-        addFreebies(saveData.freebies)
-      }
-      binding.value[ind] = saveData
-    }
-    else {
-      const toDel = binding.value.splice(ind)
-      toDel.forEach((x) => {
-        if (x.freebies) deleteFreebies(x.freebies)
-        allEffects.value.splice(allEffects.value.indexOf(x.title), 1)
-      })
-      if (binding.value.length === 0) flags.value.noBindings = true
-    }
-  }
-  else {
-    const anything = bin.element
-    if (bin.element) {
-      const i = findIndex(shroudElements, { title: bin.element })
-      saveData.freebies = shroudElements[i].freebies
-    }
-    allEffects.value.push(bin.title)
-    if (bin.complex) saveData.freebies = freebies
-    if (saveData.freebies) addFreebies(saveData.freebies)
-    binding.value.push({ anything, ...saveData })
-    flags.value.noBindings = false
-  }
-}
-
-function isAllowed(bin: Binding): boolean {
-  if (flags.value.noBindings) {
-    if (bin.whitelist) return false
-    return true
-  }
-  else {
-    if (bin.whitelist && intersection(allEffects.value, bin.whitelist).length === (bin.needed || bin.whitelist.length))
-      return true
-    if (allBindings.value[bin.title])
-      return true
-  }
-  return false
-}
-
-function isLureAllowed(lure: Binding): boolean {
-  if (lure.whitelist)
-    return intersection(lure.whitelist, allEffects.value).length >= 1
-  return true
-}
-
-function chooseLure(lure: Binding) {
-  const { allEffects } = useStore()
-  if (isLureAllowed(lure)) {
-    const ind = findIndex(luresBought.value, { title: lure.title })
-    if (ind === -1) {
-      allEffects.value.push(lure.title)
-      luresBought.value.push({ title: lure.title, cost: lure.cost })
-    }
-    else {
-      const del = luresBought.value.splice(ind)
-      del.forEach(x => allEffects.value.splice(allEffects.value.indexOf(x.title), 1))
-    }
-  }
 }
 
 function chooseElement(bnd: Binding) {

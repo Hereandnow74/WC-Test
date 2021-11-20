@@ -1,3 +1,4 @@
+import { findIndex } from 'lodash'
 import { CHAR_COSTS } from '~/data/constatnts'
 
 export interface World {
@@ -28,6 +29,7 @@ export interface Perk {
   freebies?: object
   refund?: number
   anything?: string
+  complex?: any
 }
 
 export interface Origin {
@@ -125,6 +127,9 @@ const localUserWorlds = useStorage<World[]>('localUserWorlds', [])
 
 const userCharacters = ref([] as Character[])
 const localUserCharacters = useStorage<Character[]>('localUserCharacters', [])
+
+const userRides = ref([] as Perk[])
+const localUserRides = useStorage<Perk[]>('localUserRides', [])
 
 const baseBudgetAfter = computed(
   () => baseBudget.value + intensities.value.reduce((a, x) => x.intensity > 1 ? a + x.intensity : a, 0),
@@ -232,6 +237,18 @@ const targetList = computed(() => {
   return comps
 })
 
+// const availableHeritages = computed(() => {
+//   const trees = {}
+//   let availableCount = 1
+//   heritage.value.forEach(x => x.tree && x.tree !== 'None' && !trees.hasOwnProperty(x.tree)
+//     ? trees[x.tree] = true
+//     : null)
+//   const ind = findIndex(heritage.value, { title: 'Ancestral Diversity' })
+//   if (ind !== -1)
+//     availableCount += heritage.value[ind].count || 1
+//   return availableCount - Object.keys(trees).length
+// })
+
 export function useStore() {
   return {
     budget,
@@ -277,5 +294,7 @@ export function useStore() {
     totalCost,
     mode,
     params,
+    userRides,
+    localUserRides,
   }
 }

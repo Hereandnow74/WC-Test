@@ -1,9 +1,6 @@
 
 <template>
   <div class="flex flex-col sm:p-2">
-    <h3 class="text-xl">
-      Choose your companions
-    </h3>
     <div v-if="!loading" class="flex items-center flex-wrap gap-4 my-2">
       <Input
         v-model="search"
@@ -17,6 +14,7 @@
         <div
           :class="gender==='F' ? 'bg-gray-700':''"
           class="hover:bg-gray-700 text-pink-300 px-2 rounded-l"
+          title="Female"
           @click="gender='F'"
         >
           F
@@ -24,6 +22,7 @@
         <div
           :class="gender==='M' ? 'bg-gray-700':''"
           class="border-l border-r px-2 hover:bg-gray-700 text-blue-400"
+          title="Male"
           @click="gender='M'"
         >
           M
@@ -31,6 +30,7 @@
         <div
           :class="gender==='O' ? 'bg-gray-700':''"
           class="border-l border-r px-2 hover:bg-gray-700 text-violet-400"
+          title="Other"
           @click="gender='O'"
         >
           O
@@ -38,6 +38,7 @@
         <div
           :class="gender==='' ? 'bg-gray-700':''"
           class="hover:bg-gray-700 px-2 text-gray-200 rounded-r"
+          title="All"
           @click="gender=''"
         >
           A
@@ -74,22 +75,27 @@
       Loading... <span class="inline-block text-xl"><eos-icons:bubble-loading /></span>
     </div>
     <Foldable v-if="allUserCharacters.length" class="text-lg mb-2" title="User Characters">
-      <div class="mb-4 flex flex-wrap overflow-y-auto text-base">
+      <div class="mb-4 grid sm:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-1 overflow-y-auto text-base">
         <CompanionCard
           v-for="char in allUserCharacters"
           :key="char.uid"
           :char="char"
           :is-user-char="true"
           :lazy="false"
+          class="h-[500px]"
           @edit-companion="editCompanion"
         />
       </div>
     </Foldable>
-    <div ref="waifuList" class="flex flex-wrap flex-grow overflow-y-auto pb-8">
+    <div
+      ref="waifuList"
+      class="grid sm:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-1 overflow-y-auto pb-8"
+    >
       <CompanionCard
         v-for="{ item: char } in filteredCharacters"
         :key="char.u"
         :char="char"
+        class="h-[500px]"
         @edit-companion="editCompanion"
       />
       <div v-if="!filteredCharacters.length" class="text-center flex-grow">
@@ -109,7 +115,7 @@ import { useStore } from '~/store/store'
 import { toggleShowAddCharacter, showAddCharacter, lazyLoadImg } from '~/logic'
 import CompanionCard from '~/components/CompanionCard.vue'
 import Checkbox from '~/components/basic/Checkbox.vue'
-import { getChars } from '~/data/constatnts'
+import { getChars, getUserChars } from '~/data/constatnts'
 
 interface Character {
   u: number
@@ -132,8 +138,7 @@ const image = ref('')
 
 // const characters = ref({})
 const loading = ref(true)
-// const loadChars = () => import('~/data/characters.json')
-const loadUsersChars = () => import('~/data/userCharacters.json')
+
 const charArr = ref([] as Character[])
 
 const editMode = ref(false)
@@ -168,7 +173,7 @@ const options = {
 const fuse = new Fuse(charArr.value, options)
 
 onMounted(async() => {
-  const userChars = Object.values((await loadUsersChars()).default)
+  const userChars = await getUserChars()
   if (userChars[0].b) {
     if (!userChars[0].b.includes('U'))
       userChars.forEach(x => x.b.push('U'))

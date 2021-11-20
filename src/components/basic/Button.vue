@@ -1,9 +1,10 @@
 <template>
   <button
-    class="text-gray-100 font-medium rounded filter hover:hue-rotate-15 transition-colors"
+    class="text-gray-100 font-medium rounded filter hover:hue-rotate-15 transition-colors flex items-center justify-center gap-1"
     :class="[bgColor, sizes[size]]"
   >
-    {{ label }}
+    <span v-if="icon" class="iconify" :data-icon="icon"></span>
+    <span v-if="label">{{ label }}</span>
   </button>
 </template>
 
@@ -22,6 +23,10 @@ defineProps({
   size: {
     type: String as PropType<'Normal' | 'Small' | 'Big'>,
     default: 'Normal',
+  },
+  icon: {
+    type: String,
+    default: '',
   },
 })
 

@@ -13,7 +13,7 @@
           place-holder="Some specific change in the wolrd so it would fit the Company theme more."
         />
       </Foldable>
-      <Foldable title="Conditions" :is-open="isOpen">
+      <Foldable title="Conditions" :is-open="isOpen" class="flex flex-col min-h-0">
         <template #buttons>
           <div class="cursor-pointer hover:text-green-500" @click="addCondition">
             <fluent:add-12-filled />

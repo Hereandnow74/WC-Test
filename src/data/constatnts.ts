@@ -1,9 +1,14 @@
+import { isArray } from 'lodash'
 import { intensity } from '~/data/intensity'
 import { origin } from '~/data/origin'
 import { bindings, lures, lureExpansions } from '~/data/binding'
 import { heritages } from '~/data/heritage'
 import { rides, homes, defenses, talents, perks, genericPerks } from '~/data/talents'
 import { waifu_perks } from '~/data/waifu_perks'
+
+import worlds from '~/data/worlds.json'
+import subWorlds from '~/data/userWorlds.json'
+import { useStore } from '~/store/store'
 
 export const WORLD_COLORS = ['bg-green-600', 'bg-teal-600', 'bg-cyan-600',
   'bg-blue-500', 'bg-indigo-500', 'bg-purple-500', 'bg-amber-600',
@@ -92,6 +97,9 @@ export const LINKS = computed(() => {
       links[entry.title] = category[0]
   }
   links['Directly in Companions'] = 'companions'
+  links.Offspring = ''
+  links.Missions = ''
+  links.familiar = ''
   return links
 })
 
@@ -109,19 +117,48 @@ export const QUERIES = computed(() => {
 })
 
 let chars: any = null
-let charsObject: any = null
+// let charsObject: any = null
+let userChars: any = null
 
-export async function getCharsObject() {
-  if (!charsObject)
-    charsObject = (await import('~/data/characters.json')).default
-  return charsObject
-}
+// export async function getCharsObject() {
+//   if (!charsObject)
+//     charsObject = (await import('~/data/characters.json')).default
+//   return charsObject
+// }
 
 export async function getChars() {
   if (!chars)
-    chars = Object.values(await getCharsObject())
+    chars = (await import('~/data/characters.json')).default // chars = Object.values(await getCharsObject())
   return chars
 }
+
+export async function getUserChars() {
+  if (!userChars)
+    userChars = Object.values((await import('~/data/userCharacters.json')).default)
+  return userChars
+}
+
+export const allWorlds = computed(() => {
+  const { userWorlds, localUserWorlds } = useStore()
+  return Array.prototype.concat(userWorlds.value, localUserWorlds.value, worlds, subWorlds)
+})
+
+export const allWorldsNoCondition = computed(() => {
+  const worlds: any[] = []
+
+  const addConditions = (x) => {
+    x.condition.forEach(c => worlds.push({ worldName: x.worldName, condition: c.name, rating: c.rating }))
+  }
+
+  allWorlds.value.forEach((x) => {
+    if (isArray(x.condition))
+      addConditions(x)
+
+    delete x.condition
+    worlds.push(x)
+  })
+  return worlds
+})
 
 const str = Object.keys(TOOLTIPS).sort((a, b) => b.length - a.length).join('|')
 export const TOOLTIPS_REG = new RegExp(str, 'g')

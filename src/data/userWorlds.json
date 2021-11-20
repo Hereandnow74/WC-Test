@@ -304,8 +304,16 @@
   {"worldName":"Highschool of the Dead","rating":3},
   {"worldName":"Hunter x Hunter","rating":4,"condition":[{"name":"Known World (human continents)","rating":4},{"name":"Dark Continent","rating":5}]},
   {"worldName":"I Shall Seal The Heavens","rating":10},
-  {"worldName":"Invincible","rating":4,"condition":[{"rating":6,"name":"Invincible Comics"}]},
   {"worldName":"Mushoku Tensei","rating":4,"condition":[{"name":"Outside the Demon Continent","rating":4},{"name":"Demon Continent","rating":5}]},
   {"worldName":"Negima!","rating":5,"condition":[{"rating":5,"name":"Earth"},{"rating":7,"name":"Magic World (aka Mundus Magicus)"},{"rating":8,"name":"UQ Holder timeline"}]},
-  {"worldName":"Shinza Bansho","rating":10,"condition":[{"name":"Paradise Lost","rating":9},{"name":"Dies Irae","rating":8},{"rating":10,"name":"Kajiri Kamui Kagura"},{"name":"Avesta of Black and White","rating":9}]}
+  {"worldName":"Invincible","rating":5,"image":"https://i2.wp.com/www.popsfera.com.br/wp-content/uploads/2020/07/guardians-of-the-globe-destaque.jpg?resize=800%2C445&ssl=1","condition":[{"rating":7,"name":"Invincible Comics"}]},
+  {"worldName":"Shinza Bansho","rating":10,"condition":[{"name":"Paradise Lost","rating":9},{"name":"Dies Irae","rating":8},{"rating":10,"name":"Kajiri Kamui Kagura"},{"name":"Avesta of Black and White","rating":9}]},
+  {"worldName":"Gate: And thus the JSDF fought there","rating":4,"condition":[{"rating":2,"name":"Pre open-gate: Ginza"},{"name":"Initial opening of the gate: Ginza","rating":4},{"rating":5,"name":"Falmart"}]},
+  {"worldName":"Grrlpower","rating":4},
+  {"worldName":"Hellsing Abridged","rating":3},
+  {"worldName":"Inheritance","rating":5},
+  {"worldName":"Interspecies Reviewers","rating":5},
+  {"worldName":"Kuroinu","rating":5},
+  {"worldName":"Mushroom Kingdom","rating":3},
+  {"worldName":"SCP","rating":10}
 ]

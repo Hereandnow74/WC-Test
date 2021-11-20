@@ -4,7 +4,7 @@ If you have Exit Stage Left and the portal’s time limit runs out while your ve
 export interface Ride {
   title: string
   cost: number
-  desc: string
+  desc?: string
   source?: string
   addons?: (string | number)[][]
   requires?: string
@@ -583,7 +583,7 @@ talents.push({
   title: 'Racial Template',
   cost: 20,
   complex: 'target_f',
-  anything: 'Power Name',
+  anything: 'Race Name',
   special: 'Chargen only (self). Moment of purchase only (retinue). Must be repurchased for each use.',
   desc: `
   <p>Racial templates (Kryptonian, Metallic Dragon, Newtype, Saiyan, etc.) have additional rules that distinguish them from other kinds. Templates that align with Heritages will not be equivalent to their counterparts. Unlike Advanced Tempest Runes (Body), a living, natural example of that template is not required for your selection with this perk. This perk may not be applied to your captures, nor to purchase Tier 11 racial templates. Your starting version of any racial template will be limited to Tier 4; you can train it up to its natural state in the same ways as other Meta-Talents.</p>
@@ -595,7 +595,7 @@ talents.push({
   title: 'OC Donut Steel',
   cost: 10,
   complex: 'target_f',
-  anything: 'Power Name',
+  anything: 'Character name',
   special: 'Must be repurchased for each, use.',
   desc: `
 <p>Sometimes you just want to copy a specific individual’s powerset. This perk lets you do just that, for any individual short of Tier 11. If you purchase this perk for yourself at chargen or for a retinue member at the time you purchase them, you get the power outright. The exact capabilities at the time of purchase will be scaled to Tier 4 and can be trained higher with the appropriate Basic Talent - regardless of whether the original version is rated at Tiers 4, 5, or 10. You will also receive a skill framework for your purchase, identical in principle to the ones that “early” captures receive to ensure they learn their missing abilities. This applies to technological “abilities” as well. For characters that are made from multiple other characters, including the purchasable versions of many Nasuverse Servants in this catalog, each component must be bought separately.</p>

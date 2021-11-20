@@ -3,6 +3,7 @@ import { getFirestore, collection, addDoc, doc, getDoc } from 'firebase/firestor
 
 export * from './toggles'
 export * from './misc'
+export * from './perksLogic'
 
 const app = initializeApp({
   apiKey: 'AIzaSyDpZ7zOTs_IRFs1_OQLR9T45tGl2hOkt5Y',
@@ -31,6 +32,15 @@ export function proposeCompanion(companion: any) {
   }
   catch (e) {
     console.error('Error proposing a companion: ', e)
+  }
+}
+
+export function proposeRide(ride: any) {
+  try {
+    addDoc(collection(db, 'rides'), ride).then(docRef => console.log(`Successfully proposed ride id: ${docRef.id}`))
+  }
+  catch (e) {
+    console.error('Error proposing a ride: ', e)
   }
 }
 

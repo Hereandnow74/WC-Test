@@ -27,8 +27,7 @@ heritages.push({
   cost: 11111,
   tree: 'None',
   multiple: true,
-  max: 3,
-  // whitelist: ['Dragon', 'Transhuman', 'Outsider'],
+  max: 12,
   desc: 'You may now purchase the perks in a second Heritage tree. You must still spend the credits as normal. This perk may be purchased multiple times. Its price will increase by 1 ticket each time.',
 })
 
@@ -146,6 +145,7 @@ heritages.push({
   tree: 'Dragon',
   type: 'Self',
   cost: 50,
+  costVariants: [50, 40, 20],
   whitelist: ['Dragon Cabin', 'We Will Meet Again'],
   desc: 'You no longer need your app to transition between worlds; your nature is enough. You and everything you’re carrying will blink out of one world and into your destination. This includes beings riding upon or inside you and is subject to the same limitations as whichever of We Will Meet Again and the associated perks that you’ve purchased. This perk is discounted by 10 credits if you’ve encountered a world- traveler who is neither one of your waifus nor a company contractor. If one of your waifus can travel between worlds, the discount increases to 30 credits. This discount is not available on DR11 starts. ',
 })
@@ -318,7 +318,7 @@ heritages.push({
     Cybermorph: `<p><b>Cybermorph</b>: A freshly made core takes an hour to properly imprint your quantum consciousness state onto it. However, with sufficient infrastructure and materials, you may mass produce the blackboxes without further input from yourself. You must backup and update your memories by joining the network they are on. Morphs must be mechanically or biologically feasible. Unsleeved morphs or hosts remain in a hibernative sleep state when not in use. Finally, regardless of your morph and given enough time, you are capable of freely entering and hacking any digital space to give yourself admin privileges. Additionally, take one copy of Mind Defense for free.</p>
                   <p>If you have Tempest Jewelry, you are able to combine 32 separate pieces to create a special piece that must be at least the size of a helmet. This piece will modify the target over the course of two weeks, developing a Least Core within them.</p>`,
     Aethermorph: `<p><b>Aethermorph</b>: Your true form has finally begun to leave behind your old tethers. Any object may act as a receptacle for your phylactery, and you’ll maintain a pseudo - telekinetic control of it. Objects you possess are capable of movement when they otherwise wouldn’t be, such as a statue moving like a person. Morphs you are not actively possessing are reduced to simple automatons. A living phylactery, such as someone you have safely implanted a core into, retains much of their original personality and cognition, but moves through life like in a trance until directed otherwise by you. No amount of corporeal damage damages your true self, as you exist in astral space. Influencing the corporeal world directly from astral space is difficult. However, entities able to interact with astral space are capable of attacking and harming you there, and death in astral space results in true death regardless of how many phylacteries you possess. You may, upon purchase, change your elemental affinity as per Dragon Scale. Additionally, take one copy of Information Defense for free.</p>
-                  p>If you possess Ritual Circles, you gain a special circle that can convert someone into a living phylactery. Multiply the time Requirement factor of the circle by 3.  Other people may inscribe and activate circles for you, though doing so without your input takes precise instructions and takes ten times longer than doing it yourself.</p> `,
+                  <p>If you possess Ritual Circles, you gain a special circle that can convert someone into a living phylactery. Multiply the time Requirement factor of the circle by 3.  Other people may inscribe and activate circles for you, though doing so without your input takes precise instructions and takes ten times longer than doing it yourself.</p>`,
   },
   desc: `
 <p>Your form is no longer purely physical, though the specifics of your partial transcendence is based on your Transhuman type. If your current body becomes damaged, obsolete, or inconvenient, just switch to a new one. Members of high- risk professions, such as criminals or firewall sentinels, can be killed multiple times on a mission only to be brought back and sent into the field again and again. Take one copy each of Polymorph Defense, Wyldscape Defense, and Possession Defense for free. Your body is called a sleeve or morph, and the process of changing morphs is resleeving. Resleeving generally takes an hour, during which time both bodies are incapacitated. Only one active instance of your consciousness can exist at a time.</p>
