@@ -71,7 +71,7 @@ export function pickSimplePerk(perk: PerkFull, saveData: Perk, isAvailable: (arg
 
 export function simpleIsAvailable(perk: PerkFull) {
   if (!perk.whitelist) return true
-  if (perk.whitelist && intersection(allEffects.value, perk.whitelist).length === (perk.needed || perk.whitelist.length))
+  if (perk.whitelist && intersection(allEffects.value, perk.whitelist).length >= (perk.needed || perk.whitelist.length))
     return true
   return false
 }

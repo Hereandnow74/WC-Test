@@ -134,7 +134,7 @@ export async function getChars() {
 
 export async function getUserChars() {
   if (!userChars)
-    userChars = Object.values((await import('~/data/userCharacters.json')).default)
+    userChars = (await import('~/data/userCharacters.json')).default.reverse()
   return userChars
 }
 

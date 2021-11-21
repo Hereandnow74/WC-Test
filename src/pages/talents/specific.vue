@@ -107,7 +107,7 @@ import { Perk, useStore } from '~/store/store'
 import PerkCard from '~/components/PerkCard.vue'
 import { pickSimplePerk } from '~/logic'
 
-const { waifuPerks, companions, genericWaifuPerks, allEffects, flags } = useStore()
+const { waifuPerks, companions, genericWaifuPerks, allEffects, flags, startingOrigin } = useStore()
 
 const gachaTable = [
   [1, 2, 5, 10, 20, 50, 100, 200, 500, 1000],
@@ -131,9 +131,15 @@ function isAvailable(perk: WaifuPerk): boolean {
     if (intersectionWith(companions.value, perk.uid, (a, b) => a.uid === b).length)
       return true
   }
-  else
-  if (findIndex(companions.value, { uid: perk.uid }) !== -1) {
-    return true
+  else {
+    if (findIndex(companions.value, { uid: perk.uid }) !== -1)
+      return true
+  }
+  if (startingOrigin.value.character) {
+    const name = startingOrigin.value.character.split(' ')[0]
+    if (isArray(perk.waifu))
+      return perk.waifu.join('').includes(name)
+    else return perk.waifu.includes(name)
   }
 
   return false
