@@ -10,7 +10,7 @@
     </h3>
     <Desc class="p-2 mb-4 max-w-4xl bg-warm-gray-200 dark:bg-warm-gray-800 mx-auto" :desc="desc" />
 
-    <div class="flex gap-4 mx-auto w-max mb-4">
+    <div class="flex flex-wrap gap-x-4 gap-y-2 justify-center mb-4">
       <div
         v-for="type in Object.keys(bindingByType)"
         :key="type"
@@ -132,7 +132,7 @@
     </div>
 
     <Modal v-if="showElements" label="Choose Element" @click="toggleElements">
-      <div class="h-full md:h-3/4 bg-gray-300 dark:bg-gray-600 overflow-y-auto min-h-0 flex flex-col gap-2">
+      <div class="h-screen md:h-3/4 bg-gray-300 dark:bg-gray-600 overflow-y-auto min-h-0 flex flex-col gap-2">
         <div
           v-for="element in shroudElements"
           :key="element.title"

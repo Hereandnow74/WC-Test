@@ -8,7 +8,7 @@
       />
       <Desc :desc="desc" class="p-2 bg-violet-200 dark:bg-violet-900" />
     </div>
-    <div class="flex gap-4 mx-auto w-max mb-4">
+    <div class="flex gap-x-4 gap-y-2 gap flex-wrap justify-center mb-4">
       <div
         v-for="tree in Object.keys(heritageByTree) as 'Dragon'[]"
         :key="tree"
