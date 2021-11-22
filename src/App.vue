@@ -4,7 +4,7 @@
     text="gray-700 dark:gray-200"
   >
     <Header />
-    <router-view class="flex-grow min-h-0 mt-8" />
+    <router-view class="flex-grow min-h-0 mt-6 sm:mt-8" />
     <SideApps />
     <Footer />
   </main>

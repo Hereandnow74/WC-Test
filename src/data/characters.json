@@ -24203,17 +24203,6 @@
     ]
   },
   {
-    "u": 1815,
-    "n": "Bruce Wayne (Batman)",
-    "t": 4,
-    "c": 10,
-    "i": "https://i.imgur.com/PQaC2Oxm.jpg",
-    "w": "DC (Gotham)",
-    "b": [
-      "M"
-    ]
-  },
-  {
     "u": 1816,
     "n": "Joker",
     "t": 4,
@@ -24364,7 +24353,10 @@
     "c": 10,
     "i": "sample_7a9118e5c9cf2696ca00a92733883168.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/7170560",
-    "w": "DC (Gotham)"
+    "w": "DC (Gotham)",
+    "b": [
+      "M"
+    ]
   },
   {
     "u": 13817,
@@ -24373,7 +24365,10 @@
     "c": 5,
     "i": "sample_1c5673a1e3e9091fa5820c2f75062c7c.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/1866872",
-    "w": "DC (Gotham)"
+    "w": "DC (Gotham)",
+    "b": [
+      "M"
+    ]
   },
   {
     "u": 13818,
@@ -24384,7 +24379,7 @@
     "s": "https://chan.sankakucomplex.com/post/show/648640",
     "w": "DC (Gotham)",
     "b": [
-      "F"
+      "M"
     ]
   },
   {
@@ -92128,7 +92123,7 @@
     "n": "Shimura Nana",
     "t": 6,
     "c": 50,
-    "i": "safechibi.png",
+    "i": "https://i.imgur.com/flRezY4m.png",
     "s": "https://safebooru.org/index.php?page=post&s=view&id=2992389",
     "w": "My Hero Academia",
     "b": [

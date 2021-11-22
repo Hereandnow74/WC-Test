@@ -1,13 +1,14 @@
 
 <template>
   <div class="flex flex-col sm:p-2">
-    <div v-if="!loading" class="flex items-center flex-wrap gap-4 my-2">
-      <Input
-        v-model="search"
-        label="Search"
-        placeholder="Name or World"
-      />
-      <clarity:eraser-solid class="icon-btn w-8" @click="search = ''" />
+    <div v-if="!loading" class="flex items-center justify-center flex-wrap gap-x-4 gap-y-1 mb-1 md:mb-2">
+      <div class="flex items-center">
+        <Input
+          v-model="search"
+          placeholder="Name or World"
+        />
+        <clarity:eraser-solid class="icon-btn w-8" @click="search = ''" />
+      </div>
       <Select v-model.number="tier" :options="tierOptions" />
       <Input v-model.number="limit" class="px-1" :style="`width: ${(''+limit).length + 3}ch`" />
       <div class="flex rounded bg-gray-600 cursor-pointer">
@@ -69,7 +70,7 @@
       <div class="hidden md:block">
         Characters in database - {{ charArr.length }}
       </div>
-      <Button label="Add Character" @click="() => (editMode = false, toggleShowAddCharacter())" />
+      <Button label="Add Character" size="Small" @click="() => (editMode = false, toggleShowAddCharacter())" />
     </div>
     <div v-else class="">
       Loading... <span class="inline-block text-xl"><eos-icons:bubble-loading /></span>

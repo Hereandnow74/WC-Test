@@ -1,6 +1,6 @@
 <template>
   <nav class="text-xl flex justify-between items-center px-2 fixed w-full top-0 bg-white dark:bg-[#121212] z-20">
-    <ci:hamburger class="cursor-pointer hover:text-green-500" @click="() => toggleSideMenu()" />
+    <ci:hamburger class="cursor-pointer min-w-6 hover:text-green-500" @click="() => toggleSideMenu()" />
 
     <Navigation :items="routes" :titles="titles" :level="1" class="text-base md:text-xl">
     </Navigation>
