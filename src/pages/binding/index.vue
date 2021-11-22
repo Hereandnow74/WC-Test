@@ -243,6 +243,7 @@ function toggleCurrentElement(title: string) {
     else
       currentBinding.value.element = title
   }
+  chooseBinding(currentBinding.value, { cost: 95, title: 'Elemental Shroud', freebies: { talentPerks: ['Body Talent', 'Soul Talent'] } })
   toggleElements()
 }
 </script>

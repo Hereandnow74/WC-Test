@@ -1,4 +1,3 @@
-import { findIndex } from 'lodash'
 import { CHAR_COSTS } from '~/data/constatnts'
 
 export interface World {
@@ -236,18 +235,6 @@ const targetList = computed(() => {
     comps = ['You', ...comps]
   return comps
 })
-
-// const availableHeritages = computed(() => {
-//   const trees = {}
-//   let availableCount = 1
-//   heritage.value.forEach(x => x.tree && x.tree !== 'None' && !trees.hasOwnProperty(x.tree)
-//     ? trees[x.tree] = true
-//     : null)
-//   const ind = findIndex(heritage.value, { title: 'Ancestral Diversity' })
-//   if (ind !== -1)
-//     availableCount += heritage.value[ind].count || 1
-//   return availableCount - Object.keys(trees).length
-// })
 
 export function useStore() {
   return {

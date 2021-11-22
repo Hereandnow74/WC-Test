@@ -1,6 +1,6 @@
 <template>
   <div class="px-2 flex flex-col gap-2 overflow-y-auto min-h-0 scrollbar">
-    <Foldable title="Starting Build" class="text-lg text-gray-400 mt-1" :is-open="true">
+    <Foldable title="Starting Build" class="text-gray-400 mt-1" :is-open="true">
       <div id="World" class="text-gray-200">
         <h3 class="text-lg text-gray-400">
           World

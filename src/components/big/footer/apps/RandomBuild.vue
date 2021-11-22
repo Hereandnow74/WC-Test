@@ -1,5 +1,9 @@
 <template>
   <div>Under construction</div>
+  <div class="flex gap-4 flex-wrap p-1">
+    <!-- <Input v-model.number="targetBudget" label="Target budget" class="w-44" />
+    <Button label="Generate" size="Small" @click="generateRandomBuild" /> -->
+  </div>
   <Button label="Back" icon="akar-icons:arrow-back-thick" size="Small" @click="toggleAppMode" />
 </template>
 

@@ -9,10 +9,10 @@
         v-for="perk in genericPerks"
         :key="perk.title"
         :perk="perk"
-        :bg="genericIsAvailable(perk) ? 'lime-200 dark:lime-900 hover:(lime-100 dark:lime-800)'
+        :bg="genericAvailable(perk) ? 'lime-200 dark:lime-900 hover:(lime-100 dark:lime-800)'
           : 'gray-200 dark:gray-600'"
         :saved-perk="allGeneric[perk.title]"
-        @pickPerk="pickGenericPerk"
+        @pickPerk="chooseGenericPerk"
       ></PerkCard>
     </div>
     <h3 class="text-xl font-semibold text-center">
@@ -24,9 +24,9 @@
       :key="waifu.title"
       class="relative self-center p-2 max-w-screen-md cursor-pointer"
       bg="amber-200 dark:amber-800"
-      border="2 gray-800"
-      :class="{'hover:border-amber-400': isAvailable(waifu)}"
-      @click="pickWaifuPerk(waifu)"
+      border="3 gray-700"
+      :class="{'!border-green-600 !hover:border-amber-400': specificAvailable(waifu)}"
+      @click="chooseWaifuPerk(waifu)"
     >
       <img
         v-if="waifu.image !==''"
@@ -105,7 +105,7 @@ import { lazyLoadImg, useTooltips } from '~/logic/misc'
 import { Perk, useStore } from '~/store/store'
 
 import PerkCard from '~/components/PerkCard.vue'
-import { pickSimplePerk } from '~/logic'
+import { chooseGenericPerk, chooseWaifuPerk, genericAvailable, specificAvailable } from '~/logic'
 
 const { waifuPerks, companions, genericWaifuPerks, allEffects, flags, startingOrigin } = useStore()
 
@@ -125,53 +125,6 @@ const allGeneric = computed(() => {
   genericWaifuPerks.value.forEach(x => res[x.title] = x)
   return res
 })
-
-function isAvailable(perk: WaifuPerk): boolean {
-  if (isArray(perk.uid)) {
-    if (intersectionWith(companions.value, perk.uid, (a, b) => a.uid === b).length)
-      return true
-  }
-  else {
-    if (findIndex(companions.value, { uid: perk.uid }) !== -1)
-      return true
-  }
-  if (startingOrigin.value.character) {
-    const name = startingOrigin.value.character.split(' ')[0]
-    if (isArray(perk.waifu))
-      return perk.waifu.join('').includes(name)
-    else return perk.waifu.includes(name)
-  }
-
-  return false
-}
-
-function genericIsAvailable(perk: PerkFull): boolean {
-  if (!perk.whitelist) { return true }
-  else {
-    if (intersection(perk.whitelist, allEffects.value).length >= (perk.needed || perk.whitelist.length)) {
-      if (perk.title === 'Canvas')
-        return !flags.value.noBindings
-      return true
-    }
-  }
-
-  return false
-}
-
-function pickWaifuPerk(perk: WaifuPerk) {
-  if (isAvailable(perk)) {
-    const ind = findIndex(waifuPerks.value, { title: perk.title })
-    if (ind !== -1) { waifuPerks.value.splice(ind, 1) }
-    else {
-      waifuPerks.value.push(
-        { title: perk.title, waifu: perk.waifu[0] || perk.waifu, cost: perk.cost || 0, refund: perk.discount || 0 })
-    }
-  }
-}
-
-function pickGenericPerk(perk: PerkFull, saveData: Perk) {
-  pickSimplePerk(perk, saveData, genericIsAvailable, genericWaifuPerks.value)
-}
 
 onMounted(() => useTooltips())
 </script>

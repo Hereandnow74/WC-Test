@@ -7,5 +7,6 @@
     <router-view class="flex-grow min-h-0 mt-6 sm:mt-8" />
     <SideApps />
     <Footer />
+    <ConfirmDialog class="z-20" />
   </main>
 </template>

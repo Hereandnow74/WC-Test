@@ -1,5 +1,5 @@
 1. Select a difficulty of the world -- Done
-2. Add world images?
+2. Add world images? --Done
 3. Create a new world if none exist -- Done
 4. Add a rules book -- Done
 5. Async load of Companions json -- Done
@@ -7,9 +7,9 @@
 7. Discord server -- Done
 8. Rules, About, Options pages in side menu -- Done
 9. Properly highlight options in Navigation
-10. Dragon Heart choose Element
+10. Dragon Heart choose Element --Done
 11. Properly handle Tier 11 tickets -- Done
-12. Cooperative intensity more than 1
+12. Cooperative intensity more than 1 --Done
 13. Heritages for T11 tickets more
 14. Custom field for Perks handling
 15. DR11 Start
@@ -48,12 +48,6 @@ or you can check "I'm getting General Seals instead" in the Command Seals box
 No binding discount applied after should go in debt
 
 Elements for companions
-
-Different categories for companions in copy text
-
-Sold Companions in copy text
-
-Dragon Break discount
 
 DLC's:
 https://docs.google.com/document/d/17HrAj1iosBsuDgm_VInp8mvDCd4N1dHO_iLaDLLrz4c/edit (lot of expansion on working functionalities). Very expansive DLC. https://docs.google.com/document/d/1j9emHb4IWvOTnp13RASTAuINAFuKDMSSQyQ-7ta9sjA/edit# Merior's stuff is bit smaller but also has some nice additions and would probably be faster to implement, especially if you filter out outdated perks. https://docs.google.com/document/u/0/d/1iRs2MlrmcUoVDwCcKhAvDejtHwthDQelldYli6w1X2U/mobilebasic KatanaSoul's stuff is also relatively slim. https://docs.google.com/spreadsheets/d/1FM6PNbDEyZV4T4rVLWjPYBc3O0jmmwd1obkFD7jLDt8/edit#gid=1422010498 Celestial Dragon has some stuff as well... I feel like these four could be great start.

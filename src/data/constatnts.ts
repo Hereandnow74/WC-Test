@@ -1,7 +1,7 @@
 import { isArray } from 'lodash'
 import { intensity } from '~/data/intensity'
 import { origin } from '~/data/origin'
-import { bindings, lures, lureExpansions } from '~/data/binding'
+import { bindings, lures, lureExpansions, otherControls } from '~/data/binding'
 import { heritages } from '~/data/heritage'
 import { rides, homes, defenses, talents, perks, genericPerks } from '~/data/talents'
 import { waifu_perks } from '~/data/waifu_perks'
@@ -83,7 +83,7 @@ export const LINKS = computed(() => {
   const allCats = {
     intensity,
     origin,
-    'binding': [...bindings, ...lures, ...lureExpansions],
+    'binding': [...bindings, ...lures, ...lureExpansions, ...otherControls],
     'heritage': heritages,
     'talents/ride': rides,
     'talents/home': homes,

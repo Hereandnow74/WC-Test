@@ -1,13 +1,15 @@
-import { findIndex, intersection, isArray, mergeWith } from 'lodash-es'
+import { findIndex, intersection, intersectionWith, isArray, mergeWith } from 'lodash-es'
 import { Binding, shroudElements } from '~/data/binding'
 import { Heritage } from '~/data/heritage'
 import { Intensity } from '~/data/intensity'
 import { PerkFull, Ride } from '~/data/talents'
+import { WaifuPerk } from '~/data/waifu_perks'
 import { Perk, useStore } from '~/store/store'
 
 const {
   allEffects, intensities, luresBought, binding, flags, allForSave, heritage,
-  ridePerks, homePerks, talentPerks, defensePerks, miscPerks,
+  ridePerks, homePerks, talentPerks, defensePerks, miscPerks, genericWaifuPerks, companions, startingOrigin,
+  waifuPerks,
 } = useStore()
 
 // General functions
@@ -264,6 +266,7 @@ export function chooseHome(home: PerkFull, saveData: Perk) {
   pickSimplePerk(home, saveData, homeAvailable, homePerks.value)
 }
 
+// Talents
 export function talentAvailable(tlt: PerkFull): boolean {
   if (!tlt.whitelist) { return true }
   else {
@@ -271,7 +274,7 @@ export function talentAvailable(tlt: PerkFull): boolean {
       return true
     if (tlt.title === 'Inexhaustible'
           && findIndex(talentPerks.value, { title: tlt.whitelist[0] }) !== -1
-          && findIndex(defensePerks.value, { title: 'Soul Defense', count: 2 }) !== -1)
+          && findIndex(defensePerks.value, x => x.title === 'Soul Defense' && x.count && x.count >= 2) !== -1)
       return true
   }
 
@@ -298,21 +301,53 @@ export function miscAvailable(perk: PerkFull): boolean {
 
 export function choosePerk(perk: PerkFull, saveData: Perk) {
   pickSimplePerk(perk, saveData, miscAvailable, miscPerks.value)
-  // if (isAvailable(perk)) {
-  //   const ind = findIndex(miscPerks.value, { title: perk.title })
-  //   if (ind !== -1) {
-  //     if (miscPerks.value[ind].count !== saveData.count && saveData.count > 0) {
-  //       miscPerks.value[ind].count = saveData.count
-  //       miscPerks.value[ind].cost = perk.cost * saveData.count
-  //     }
-  //     else {
-  //       const toDel = miscPerks.value.splice(findIndex(miscPerks.value, { title: perk.title }))
-  //       toDel.forEach(x => allEffects.value.splice(allEffects.value.indexOf(x.title), 1))
-  //     }
-  //   }
-  //   else {
-  //     allEffects.value.push(perk.title)
-  //     miscPerks.value.push(saveData)
-  //   }
-  // }
+}
+
+// Generic Waifu Perks
+export function genericAvailable(perk: PerkFull): boolean {
+  if (!perk.whitelist) { return true }
+  else {
+    if (intersection(perk.whitelist, allEffects.value).length >= (perk.needed || perk.whitelist.length)) {
+      if (perk.title === 'Canvas')
+        return !flags.value.noBindings
+      return true
+    }
+  }
+
+  return false
+}
+
+export function chooseGenericPerk(perk: PerkFull, saveData: Perk) {
+  pickSimplePerk(perk, saveData, genericAvailable, genericWaifuPerks.value)
+}
+
+// Specific Waifu Perks
+export function specificAvailable(perk: WaifuPerk): boolean {
+  if (isArray(perk.uid)) {
+    if (intersectionWith(companions.value, perk.uid, (a, b) => a.uid === b).length)
+      return true
+  }
+  else {
+    if (findIndex(companions.value, { uid: perk.uid }) !== -1)
+      return true
+  }
+  if (startingOrigin.value.character) {
+    const name = startingOrigin.value.character.split(' ')[0]
+    if (isArray(perk.waifu))
+      return perk.waifu.join('').includes(name)
+    else return perk.waifu.includes(name)
+  }
+
+  return false
+}
+
+export function chooseWaifuPerk(perk: WaifuPerk) {
+  if (specificAvailable(perk)) {
+    const ind = findIndex(waifuPerks.value, { title: perk.title })
+    if (ind !== -1) { waifuPerks.value.splice(ind, 1) }
+    else {
+      waifuPerks.value.push(
+        { title: perk.title, waifu: perk.waifu[0] || perk.waifu, cost: perk.cost || 0, refund: perk.discount || 0 })
+    }
+  }
 }

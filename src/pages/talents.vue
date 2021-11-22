@@ -1,13 +1,13 @@
 <template>
   <div>
-    <div class="flex px-2">
+    <div class="flex px-2 fixed top-5 md:top-7 justify-center w-full bg-white dark:bg-[#121212] z-20">
       <Navigation
         :items="['ride', 'home', 'talent', 'defense', 'perks', 'specific']"
         :titles="['Ride', 'Home', 'Talents', 'Defense', 'Perks', 'Waifu Perks']"
         prefix="talents"
       />
     </div>
-    <router-view />
+    <router-view class="mt-4" />
   </div>
 </template>
 

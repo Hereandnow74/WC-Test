@@ -172,7 +172,7 @@ const perkToSave = reactive({
   }),
   target: '',
   anything: '',
-  freebies: props.perk.freebies,
+  freebies: { ...props.perk.freebies } || undefined,
 })
 
 const displayedCost = computed(() => {
@@ -187,7 +187,7 @@ function filterObject(obj: any) {
         if (obj[key].value)
           ret[key] = obj[key].value
         else
-          ret[key] = obj[key]
+          ret[key] = JSON.parse(JSON.stringify(obj[key]))
       }
     })
   return ret
@@ -228,7 +228,6 @@ function sendPerk() {
   // Set count to 0 to delete perk if clicked twice
   if (props.savedPerk.count === obj.count && obj.count > 0)
     obj.count = 0
-
   emit('pickPerk', props.perk, obj)
 }
 

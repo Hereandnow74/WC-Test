@@ -6,7 +6,7 @@
     @click="visible = false"
   >
     <div
-      class="min-w-[320px] h-[568px] md:h-[720px] rounded-3xl mx-auto border relative flex flex-col transition-all"
+      class="min-w-[320px] h-[568px] sm:h-[calc(100vh-3.4rem)] rounded-3xl mx-auto border relative flex flex-col transition-all"
       bg="gray-900"
       border="2 gray-400"
       :class="orientation ? 'max-w-[940px]' : 'max-w-[440px]'"
@@ -76,6 +76,7 @@
 <script lang="ts" setup>
 import { Perk, useStore } from '~/store/store'
 import { orientation } from '~/logic'
+import { confirmDialog } from '~/logic/dialog'
 
 const activeTab = ref('Build')
 const showSaveLoad = ref(false)
@@ -109,7 +110,9 @@ const originTextClean = computed(() => {
 
 const [visible, toggleFull] = useToggle()
 
-function clearBuild() {
+async function clearBuild() {
+  const res = await confirmDialog('This action will clear your build, proceed?')
+  if (!res) return
   baseBudget.value = 55
   startingWorld.value = {
     worldName: 'Current world',
