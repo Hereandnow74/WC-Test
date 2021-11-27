@@ -16,35 +16,24 @@
   </div>
 </template>
 
-<script lang='ts'>
-import { defineComponent } from 'vue'
+<script lang='ts' setup>
 
-export default defineComponent({
-  name: 'Name',
-
-  props: {
-    title: {
-      type: String,
-      default: 'Title',
-    },
-    isOpen: {
-      type: Boolean,
-      default: false,
-    },
+const props = defineProps({
+  title: {
+    type: String,
+    default: 'Title',
   },
-  setup(props) {
-    const isFolded = ref(props.isOpen)
-
-    watch(() => props.isOpen, () => isFolded.value = props.isOpen)
-
-    function toggleFolded() {
-      isFolded.value = !isFolded.value
-    }
-
-    return {
-      isFolded,
-      toggleFolded,
-    }
+  isOpen: {
+    type: Boolean,
+    default: false,
   },
 })
+
+const isFolded = ref(props.isOpen)
+
+watch(() => props.isOpen, () => isFolded.value = props.isOpen)
+
+function toggleFolded() {
+  isFolded.value = !isFolded.value
+}
 </script>

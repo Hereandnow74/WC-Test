@@ -1,6 +1,6 @@
 import { findIndex, intersection, random } from 'lodash-es'
 import tippy from 'tippy.js'
-import { allWorldsNoCondition, getChars, getUserChars } from '~/data/constatnts'
+import { allWorldsNoCondition, CHAR_COSTS, getChars, getUserChars } from '~/data/constatnts'
 import { PerkFull } from '~/data/talents'
 import { Perk, useStore } from '~/store/store'
 
@@ -33,9 +33,10 @@ export function lazyLoadImg(list: HTMLElement| null) {
   }
 }
 
-export async function randomChar(withImg: boolean) {
+export async function randomChar(withImg: boolean, maxCost: number) {
   let chars = Array.prototype.concat(await getChars(), await getUserChars())
   if (withImg) chars = chars.filter(x => x.i && x.i.length)
+  if (maxCost) chars = chars.filter(x => (CHAR_COSTS[x.t - 1] || 0) <= maxCost)
   const randomNumber = random(0, chars.length)
 
   return chars[randomNumber]

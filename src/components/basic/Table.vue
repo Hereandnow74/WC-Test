@@ -20,20 +20,18 @@
   </table>
 </template>
 
-<script lang='ts'>
+<script lang='ts' setup>
 import type { PropType } from '@vue/runtime-core'
 
-export default defineComponent({
-  name: 'Table',
-  props: {
-    headers: {
-      type: Array as PropType<string[]>,
-      default: () => [],
-    },
-    rows: {
-      type: Array as PropType<string[][]>,
-      default: () => [[]],
-    },
+defineProps({
+  headers: {
+    type: Array as PropType<string[]>,
+    default: () => [],
+  },
+  rows: {
+    type: Array as PropType<string[][]>,
+    default: () => [[]],
   },
 })
+
 </script>

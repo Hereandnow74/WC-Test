@@ -1,12 +1,12 @@
 <template>
   <div
-    class="rounded cursor-pointer flex-grow text-gray-100 text-shadow flex flex-col gap-2"
+    class="rounded cursor-pointer flex-grow text-gray-100 text-shadow flex flex-col gap-1"
     border="2 gray-400 hover:orange-600"
     :class="world.worldName === startingWorld.worldName || startingWorld.worldName === 'Current world' ?
       WORLD_COLORS[world.rating - 1] || 'bg-gray-600' : 'bg-gray-600'"
     @click="pickAble ? pickWorld(world) : null"
   >
-    <div v-if="world.image" class="flex-grow relative">
+    <div v-if="world.image" class="flex-grow relative min-h-[170px]">
       <img
         ref="companionEl"
         class="rounded absolute object-cover h-full w-full object-center"
@@ -22,13 +22,14 @@
     <div class="flex gap-4 justify-between text-gray-200 px-2">
       <div>
         Rating: <span class="text-amber-200 font-medium">{{ world.rating || 'Unknown' }}</span>
+        <span v-if="world.q" class="text-red-400 cursor-help font-bold hover:text-red-300" @click.stop="showInfo">?</span>
       </div>
       <div>
         Budget: <span class="text-green-200 font-medium">{{ WORLD_RATINGS[world.rating - 1]?.budget || 'None' }}</span>
       </div>
     </div>
     <template v-if="world.condition">
-      <div v-if="typeof world.condition === 'object' && world.condition.length" class="px-2 pb-2">
+      <div v-if="typeof world.condition === 'object' && world.condition.length" class="px-2">
         <span class="text-gray-200 mr-2">Condition:</span>
         <select
           id="condition"
@@ -60,6 +61,7 @@
 import { findIndex } from 'lodash-es'
 import type { PropType } from 'vue'
 import { WORLD_COLORS, WORLD_RATINGS } from '~/data/constatnts'
+import { confirmDialog } from '~/logic/dialog'
 import { useStore, World } from '~/store/store'
 
 const props = defineProps({
@@ -112,6 +114,10 @@ function changeCondition(event: any) {
     condition.rating = props.world.condition[ind].rating
     props.world.rating = condition.rating
   }
+}
+
+function showInfo() {
+  confirmDialog('Rating is based on average user submitted rating. If you don\'t agree with it you can make your case over <a href="https://discord.gg/cZf4U5rmPV" target="_blank" rel="noopener noreferrer" class="text-blue-400">Discord</a>', 'info')
 }
 
 </script>

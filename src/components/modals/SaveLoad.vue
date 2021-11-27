@@ -51,7 +51,7 @@ const { savesList } = useSaves()
 const {
   startingWorld, startingOrigin, intensities, binding, homePerks, defensePerks,
   companions, heritage, talentPerks, waifuPerks, ridePerks, miscPerks, luresBought, genericWaifuPerks,
-  budgetMods, baseBudget, allEffects, flags, totalCost,
+  budgetMods, baseBudget, allEffects, flags, totalCost, otherPerks,
 } = useStore()
 
 const name = ref('')
@@ -65,6 +65,7 @@ const save = {
   intensities: intensities.value,
   binding: binding.value,
   luresBought: luresBought.value,
+  otherPerks: otherPerks.value,
   heritage: heritage.value,
   ridePerks: ridePerks.value,
   homePerks: homePerks.value,
@@ -99,6 +100,7 @@ function loadBuld(uid: number) {
   startingOrigin.value = build.startingOrigin
   intensities.value = build.intensities
   binding.value = build.binding
+  otherPerks.value = build.otherPerks
   luresBought.value = build.luresBought
   heritage.value = build.heritage
   ridePerks.value = build.ridePerks

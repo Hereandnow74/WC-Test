@@ -68,6 +68,8 @@ const binding = storeType<Perk[]>('binding', [])
 
 const luresBought = storeType<Perk[]>('luresBought', [])
 
+const otherPerks = storeType<Perk[]>('otherPerks', [])
+
 const heritage = storeType<Perk[]>('heritage', [])
 
 const ridePerks = storeType<Perk[]>('ridePerks', [])
@@ -145,6 +147,7 @@ const miscPerksCost = computed(() => miscPerks.value.reduce((a, x) => a += x.cos
 const waifuPerksCost = computed(() => waifuPerks.value.reduce((a, x) => a += x.cost === 11111 ? -(x.refund || 0) : x.cost - (x.refund || 0), 0))
 const genericWaifuPerksCost = computed(() => genericWaifuPerks.value.reduce((a, x) => a += x.cost === 11111 ? 0 : x.cost, 0))
 const luresCost = computed(() => luresBought.value.reduce((a, x) => a += x.cost === 11111 ? 0 : x.cost, 0))
+const otherCost = computed(() => otherPerks.value.reduce((a, x) => a += x.cost === 11111 ? 0 : x.cost, 0))
 
 const companionsCost = computed(() => {
   return companions.value.reduce((a, x) => {
@@ -171,8 +174,10 @@ const companionProfit = computed(() => {
 
 const companionProfitSold = computed(() => {
   return companions.value.reduce((a, x) => {
-    if (x.sold && x.tier !== 11)
+    if (x.sold && x.tier !== 11 && ['capture', 'yoink'].includes(x.method))
       return a += Math.round(CHAR_COSTS[x.tier - 1] * 0.2)
+    if (x.sold && x.tier !== 11 && ['buy', 'used'].includes(x.method))
+      return a += Math.round(CHAR_COSTS[x.tier - 1] * 0.8)
     return a
   }, 0)
 })
@@ -194,7 +199,7 @@ const budget = computed(() => {
   return Math.round((bd + intensityFlat) * (1 + intenMultiplier)) - startingOrigin.value.cost
       - bindingCost.value - heritageCost.value - luresCost.value - ridePerksCost.value - homePerksCost.value
       - talentsCost.value - defensesCost.value - miscPerksCost.value - waifuPerksCost.value
-      - genericWaifuPerksCost.value - companionsCost.value
+      - genericWaifuPerksCost.value - companionsCost.value - otherCost.value
       - budgetMods.value.minus + budgetMods.value.plus + companionProfit.value + companionProfitSold.value
 })
 
@@ -227,7 +232,9 @@ const tier11tickets = computed(() => {
     - budgetMods.value.minus11 + budgetMods.value.plus11 + companionTicketProfit.value
 })
 
-const totalCost = computed(() => startingOrigin.value.cost + heritageCost.value + bindingCost.value + ridePerksCost.value + homePerksCost.value + talentsCost.value + defensesCost.value + miscPerksCost.value + waifuPerksCost.value + genericWaifuPerksCost.value + luresCost.value + companionsCost.value)
+const totalCost = computed(() => startingOrigin.value.cost + heritageCost.value + bindingCost.value
++ ridePerksCost.value + homePerksCost.value + talentsCost.value + defensesCost.value + miscPerksCost.value
++ waifuPerksCost.value + genericWaifuPerksCost.value + luresCost.value + companionsCost.value + otherCost.value)
 
 const targetList = computed(() => {
   let comps = companions.value.map(x => (x.name))
@@ -249,6 +256,7 @@ export function useStore() {
     intensities,
     binding,
     luresBought,
+    otherPerks,
     heritage,
     ridePerks,
     homePerks,
@@ -263,6 +271,7 @@ export function useStore() {
     flags,
     tier11tickets,
     bindingCost,
+    otherCost,
     heritageCost,
     ridePerksCost,
     homePerksCost,

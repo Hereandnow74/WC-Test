@@ -45,7 +45,7 @@
             v-model="flags.transhumanType"
             :options="['Biomorph', 'Cybermorph', 'Aethermorph']"
             placeholder="Transhuman type"
-            class="ml-1"
+            class="ml-1 text-base"
             @click.stop
           />
         </template>
@@ -82,7 +82,6 @@ import Select from '~/components/basic/Select.vue'
 import { chooseHeritage, heritageAvailable } from '~/logic'
 
 const { heritage, flags } = useStore()
-onMounted(() => useTooltips())
 
 // const availableClasses = 'cursor-pointer'
 const heritageColors = {
@@ -112,6 +111,10 @@ const allHeritages = computed(() => {
 const params = useUrlSearchParams('history')
 
 if (params.q) activeTree.value = params.q
+
+onMounted(() => useTooltips())
+
+watch(activeTree, () => nextTick(useTooltips))
 
 onBeforeRouteUpdate((to, from, next) => {
   if (to.query.q)

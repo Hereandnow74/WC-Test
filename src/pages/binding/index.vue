@@ -81,7 +81,7 @@
         :perk="lr"
         :bg="lureAvailable(lr) ? 'pink-100 dark:pink-900 hover:(pink-200 dark:rose-800)'
           : 'gray-200 dark:gray-600'"
-        :is-active="allLures[lr.title]"
+        :is-active="!!allLures[lr.title]"
         @pickPerk="chooseLure"
       >
       </PerkCard>
@@ -103,7 +103,7 @@
         :perk="lr"
         :bg="lureAvailable(lr) ? 'pink-100 dark:pink-900 hover:(pink-200 dark:rose-800)'
           : 'gray-200 dark:gray-600'"
-        :is-active="allLures[lr.title]"
+        :is-active="!!allLures[lr.title]"
         @pickPerk="chooseLure"
       >
       </PerkCard>
@@ -125,8 +125,8 @@
         :perk="other"
         :bg="lureAvailable(other) ? 'pink-100 dark:pink-900 hover:(pink-200 dark:rose-800)'
           : 'gray-200 dark:gray-600'"
-        :is-active="allLures[other.title]"
-        @pickPerk="chooseLure"
+        :is-active="!!allOther[other.title]"
+        @pickPerk="chooseOther"
       >
       </PerkCard>
     </div>
@@ -179,10 +179,10 @@ import {
   otherControls, otherDesc, symbioteRules,
 } from '~/data/binding'
 import { useTooltips } from '~/logic/misc'
-import { chooseLure, lureAvailable, bindingAvailable, chooseBinding } from '~/logic'
+import { chooseLure, lureAvailable, bindingAvailable, chooseBinding, chooseOther } from '~/logic'
 import { useStore } from '~/store/store'
 
-const { binding, luresBought, flags } = useStore()
+const { binding, luresBought, flags, otherPerks } = useStore()
 const [showElements, toggleElements] = useToggle()
 const [showRitual, toggleRitual] = useToggle()
 
@@ -224,6 +224,12 @@ const allBindings = computed(() => {
 const allLures = computed(() => {
   const res: any = {}
   luresBought.value.forEach(x => res[x.title] = x)
+  return res
+})
+
+const allOther = computed(() => {
+  const res: any = {}
+  otherPerks.value.forEach(x => res[x.title] = x)
   return res
 })
 

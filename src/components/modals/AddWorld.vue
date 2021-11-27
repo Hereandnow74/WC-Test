@@ -54,7 +54,7 @@
   </Modal>
 </template>
 
-<script lang='ts'>
+<script lang='ts' setup>
 import * as zod from 'zod'
 import { useForm, useField } from 'vee-validate'
 import { toFormValidator } from '@vee-validate/zod'
@@ -62,90 +62,71 @@ import { toFormValidator } from '@vee-validate/zod'
 import { useStore } from '~/store/store'
 import { proposeWorld, toggleShowAddWorld } from '~/logic'
 
-export default defineComponent({
-  name: 'AddWorld',
-  props: {
-    editMode: {
-      type: Boolean,
-      default: false,
-    },
-    world: {
-      type: Object,
-      default: () => ({}),
-    },
+const props = defineProps({
+  editMode: {
+    type: Boolean,
+    default: false,
   },
-
-  setup(props) {
-    const isOpen = ref(false)
-    const localSave = ref(true)
-    const proposeGlobal = ref(false)
-    const { userWorlds, localUserWorlds } = useStore()
-
-    const schema = toFormValidator(
-      zod.object({
-        worldName: zod.string().nonempty('World name is required'),
-        rating: zod.number().min(1, { message: 'Minimum World rating is 1' }).max(11, { message: 'Maximum World level is 11' }),
-        image: zod.string().url({ message: 'Must be a valid URL' }).max(256, { message: 'Maximum length is 256 chars' }).optional().or(zod.literal('')),
-        additional: zod.string(),
-        condition: zod.object({
-          name: zod.string().nonempty('Condition is required'),
-          rating: zod.number().min(1, { message: 'Minimum World rating is 1' }).max(11, { message: 'Maximum World level is 11' }),
-        }).array(),
-      }),
-    )
-    const { errors, handleSubmit } = useForm({
-      validationSchema: schema,
-      initialValues: {
-        condition: props.world.condition || [],
-        rating: props.world.rating || 1,
-        worldName: props.world.worldName || '',
-        additional: props.world.additional || '',
-        image: props.world.image || '',
-      },
-    })
-
-    const { value: worldName } = useField<string>('worldName')
-    const { value: rating } = useField<number>('rating')
-    const { value: additional } = useField<string>('additional')
-    const { value: image } = useField<string>('image')
-    const { value: condition } = useField<any[]>('condition')
-
-    function addCondition() {
-      isOpen.value = true
-      condition.value.push({
-        name: '',
-        rating: 1,
-      })
-    }
-
-    function removeCondition(index: number) {
-      condition.value.splice(index, 1)
-    }
-
-    const addWorld = handleSubmit((values) => {
-      if (proposeGlobal.value)
-        proposeWorld({ ...values, date: new Date().toString() })
-
-      if (props.editMode) values.worldName = `${values.worldName} (AU)`
-      if (localSave.value) localUserWorlds.value.push(values)
-      else userWorlds.value.push(values)
-      toggleShowAddWorld()
-    })
-
-    return {
-      worldName,
-      rating,
-      additional,
-      image,
-      condition,
-      errors,
-      addWorld,
-      addCondition,
-      removeCondition,
-      isOpen,
-      localSave,
-      proposeGlobal,
-    }
+  world: {
+    type: Object,
+    default: () => ({}),
   },
 })
+
+const isOpen = ref(false)
+const localSave = ref(true)
+const proposeGlobal = ref(false)
+const { userWorlds, localUserWorlds } = useStore()
+
+const schema = toFormValidator(
+  zod.object({
+    worldName: zod.string().nonempty('World name is required'),
+    rating: zod.number().min(1, { message: 'Minimum World rating is 1' }).max(11, { message: 'Maximum World level is 11' }),
+    image: zod.string().url({ message: 'Must be a valid URL' }).max(256, { message: 'Maximum length is 256 chars' }).optional().or(zod.literal('')),
+    additional: zod.string(),
+    condition: zod.object({
+      name: zod.string().nonempty('Condition is required'),
+      rating: zod.number().min(1, { message: 'Minimum World rating is 1' }).max(11, { message: 'Maximum World level is 11' }),
+    }).array(),
+  }),
+)
+const { errors, handleSubmit } = useForm({
+  validationSchema: schema,
+  initialValues: {
+    condition: props.world.condition || [],
+    rating: props.world.rating || 1,
+    worldName: props.world.worldName || '',
+    additional: props.world.additional || '',
+    image: props.world.image || '',
+  },
+})
+
+const { value: worldName } = useField<string>('worldName')
+const { value: rating } = useField<number>('rating')
+const { value: additional } = useField<string>('additional')
+const { value: image } = useField<string>('image')
+const { value: condition } = useField<any[]>('condition')
+
+function addCondition() {
+  isOpen.value = true
+  condition.value.push({
+    name: '',
+    rating: 1,
+  })
+}
+
+function removeCondition(index: number) {
+  condition.value.splice(index, 1)
+}
+
+const addWorld = handleSubmit((values) => {
+  if (proposeGlobal.value)
+    proposeWorld({ ...values, date: new Date().toString() })
+
+  if (props.editMode) values.worldName = `${values.worldName} (AU)`
+  if (localSave.value) localUserWorlds.value.push(values)
+  else userWorlds.value.push(values)
+  toggleShowAddWorld()
+})
+
 </script>

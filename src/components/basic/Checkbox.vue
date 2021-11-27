@@ -11,21 +11,17 @@
   </div>
 </template>
 
-<script lang='ts'>
-import { defineComponent } from 'vue'
-
-export default defineComponent({
-  name: 'Checkbox',
-  props: {
-    modelValue: {
-      type: Boolean,
-      default: false,
-    },
-    label: {
-      type: String,
-      default: '',
-    },
+<script lang='ts' setup>
+defineProps({
+  modelValue: {
+    type: Boolean,
+    default: false,
   },
-  emits: ['update:modelValue'],
+  label: {
+    type: String,
+    default: '',
+  },
 })
+
+defineEmits(['update:modelValue'])
 </script>

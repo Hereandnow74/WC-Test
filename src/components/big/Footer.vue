@@ -29,22 +29,20 @@
         </span>
       </div>
       <div class="flex flex-col border m-1 py-1 border-gray-600 flex-grow rounded-sm bg-gray-800 min-h-0">
-        <div class="flex gap-4 mx-2 border-b-1">
+        <div class="flex gap-1 mx-2 border-b-1">
           <div
-            v-for="tab in tabs"
+            v-for="tab, i in tabs"
             :key="tab"
-            class="border-t-2 border-green-500 flex-grow rounded-t cursor-pointer flex items-center justify-center"
-            :class="activeTab==tab ? 'bg-green-600': 'hover:text-orange-400'"
-            @click="activeTab = tab"
+            class="flex-grow rounded-t cursor-pointer flex items-center justify-center"
+            border="t-2 green-500"
+            :class="activeTab === i ? 'bg-green-600': 'hover:text-orange-400'"
+            @click="activeTab = i"
           >
-            <span class="iconify" :data-icon="tabIcons[tab]"></span>
+            <span class="iconify" :data-icon="tabIcons[i]"></span>
             {{ tab }}
           </div>
         </div>
-        <Build v-if="activeTab === 'Build'" />
-        <Apps v-if="activeTab === 'Apps'" />
-        <Spendings v-if="activeTab === 'Spendings'" />
-        <Manual v-if="activeTab === 'Manual'" />
+        <component :is="tabComponents[activeTab]" />
       </div>
       <div class="flex h-8 justify-between items-center px-6 mt-auto">
         <div class="w-16 cursor-pointer hover:text-amber-500" title="Clear Build" @click="clearBuild">
@@ -75,25 +73,27 @@
 
 <script lang="ts" setup>
 import { Perk, useStore } from '~/store/store'
-import { orientation } from '~/logic'
+import { activeTab, clearAll, orientation } from '~/logic'
 import { confirmDialog } from '~/logic/dialog'
 
-const activeTab = ref('Build')
 const showSaveLoad = ref(false)
 const showShare = ref(false)
 
-const tabs = ['Build', 'Apps', 'Spendings', 'Manual']
-const tabIcons = {
-  Build: 'bx:bx-spreadsheet',
-  Apps: 'ion:apps-sharp',
-  Spendings: 'la:coins',
-  Manual: 'fluent:wrench-16-filled',
-}
+const tabs = ['Build', 'Companions', 'Apps', 'Spendings', '']
+const tabIcons = ['bx:bx-spreadsheet', 'bx:bx-spreadsheet', 'ion:apps-sharp', 'la:coins', 'fluent:wrench-16-filled']
+
+const tabComponents = [
+  defineAsyncComponent(() => import('./footer/Build.vue')),
+  defineAsyncComponent(() => import('./footer/Companions.vue')),
+  defineAsyncComponent(() => import('./footer/Apps.vue')),
+  defineAsyncComponent(() => import('./footer/Spendings.vue')),
+  defineAsyncComponent(() => import('./footer/Manual.vue')),
+]
 
 const {
   budget, startingWorld, startingOrigin, intensities, binding, homePerks, defensePerks,
   companions, heritage, talentPerks, waifuPerks, ridePerks, miscPerks, luresBought, genericWaifuPerks,
-  tier11tickets, companionsCost, budgetMods, baseBudget, allEffects, flags, companionProfit, companionProfitSold,
+  tier11tickets, companionsCost, baseBudget, companionProfit, companionProfitSold, otherPerks,
 } = useStore()
 
 const originTextClean = computed(() => {
@@ -113,45 +113,7 @@ const [visible, toggleFull] = useToggle()
 async function clearBuild() {
   const res = await confirmDialog('This action will clear your build, proceed?')
   if (!res) return
-  baseBudget.value = 55
-  startingWorld.value = {
-    worldName: 'Current world',
-    rating: 2,
-  }
-  startingOrigin.value = {
-    title: '',
-    cost: 0,
-  }
-  intensities.value = []
-  binding.value = []
-  luresBought.value = []
-  heritage.value = []
-  ridePerks.value = []
-  homePerks.value = []
-  talentPerks.value = []
-  defensePerks.value = []
-  miscPerks.value = []
-  genericWaifuPerks.value = []
-  waifuPerks.value = []
-  companions.value = []
-  allEffects.value = []
-  flags.value = {
-    noBindings: true,
-    noHeritage: true,
-    danger11Start: false,
-    pvpEnabled: false,
-    chargen: true,
-    skipUsed: undefined,
-    hasARide: false,
-    isTranshuman: false,
-    transhumanType: undefined,
-  }
-  budgetMods.value = {
-    plus: 0,
-    minus: 0,
-    plus11: 0,
-    minus11: 0,
-  }
+  clearAll()
 }
 
 function buildString(title: string, items: Perk[], left: object) {
@@ -191,6 +153,7 @@ function copyText() {
   full += heritage.value.length ? `${buildString('Heritage', heritage.value, fullCost)}\n` : ''
   full += binding.value.length ? `${buildString('Bindings', binding.value, fullCost)}\n` : ''
   full += luresBought.value.length ? `${buildString('Lures', luresBought.value, fullCost)}\n` : ''
+  full += otherPerks.value.length ? `${buildString('Other Controls', otherPerks.value, fullCost)}\n` : ''
   full += ridePerks.value.length ? `${buildString('Rides', ridePerks.value, fullCost)}\n` : ''
   full += homePerks.value.length ? `${buildString('Home Perks', homePerks.value, fullCost)}\n` : ''
   full += talentPerks.value.length ? `${buildString('Talents', talentPerks.value, fullCost)}\n` : ''

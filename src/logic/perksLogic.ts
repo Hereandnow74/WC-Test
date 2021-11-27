@@ -1,4 +1,4 @@
-import { findIndex, intersection, intersectionWith, isArray, mergeWith } from 'lodash-es'
+import { findIndex, intersection, intersectionWith, isArray, mergeWith, sample, uniqBy } from 'lodash-es'
 import { Binding, shroudElements } from '~/data/binding'
 import { Heritage } from '~/data/heritage'
 import { Intensity } from '~/data/intensity'
@@ -9,7 +9,7 @@ import { Perk, useStore } from '~/store/store'
 const {
   allEffects, intensities, luresBought, binding, flags, allForSave, heritage,
   ridePerks, homePerks, talentPerks, defensePerks, miscPerks, genericWaifuPerks, companions, startingOrigin,
-  waifuPerks,
+  waifuPerks, baseBudget, startingWorld, budgetMods, otherPerks,
 } = useStore()
 
 // General functions
@@ -32,11 +32,11 @@ export function deleteFreebies(freebies: object) {
 
 export function addFreebies(freebies: object) {
   for (const [key, perk] of Object.entries(freebies) as [keyof typeof allForSave, string[]][]) {
-    perk.forEach((n: string) => {
-      const ind = findIndex(allForSave[key].value, { title: n })
+    perk.forEach((title: string) => {
+      const ind = findIndex(allForSave[key].value, { title })
       if (ind === -1) {
-        allForSave[key].value.push({ title: n, cost: 0, count: 1 })
-        allEffects.value.push(n)
+        allForSave[key].value.push({ title, cost: 0, count: 1 })
+        allEffects.value.push(title)
       }
       else {
         if (allForSave[key].value[ind].count)
@@ -178,19 +178,37 @@ export function chooseLure(lure: Binding) {
   }
 }
 
+export function chooseOther(other: Binding, saveData: Perk) {
+  pickSimplePerk(other, saveData, lureAvailable, otherPerks.value)
+}
+
 export function lureAvailable(lure: Binding): boolean {
   return simpleIsAvailable(lure)
 }
 
 // Heritages
+const heritageTrees = computed(() => uniqBy(heritage.value, 'tree').map(x => x.tree).filter(x => x !== 'None'))
+
 export function heritageAvailable(hr: Heritage): boolean {
-  if (flags.value.noHeritage && !hr.whitelist) return true
-  else
-    return simpleIsAvailable(hr)
+  if ((heritageTrees.value.length === 0 || hr.title === 'Ancestral Diversity') && !hr.whitelist) { return true }
+  else {
+    if (heritageTrees.value.includes(hr.tree))
+      return simpleIsAvailable(hr)
+    const ind = findIndex(heritage.value, { title: 'Ancestral Diversity' })
+    if (ind !== -1 && heritage.value[ind].count >= heritageTrees.value.length)
+      return simpleIsAvailable(hr)
+  }
+  return false
 }
 
 export function chooseHeritage(hr: Heritage, saveData: Perk) {
   if (heritageAvailable(hr)) {
+    if (saveData.title === 'Philosopher’s Transmortality Engine') {
+      saveData.tree = 'Transhuman'
+      pickSimplePerk(hr, saveData, heritageAvailable, heritage.value)
+      return
+    }
+
     const ind = findIndex(heritage.value, { title: hr.title })
     if (ind !== -1) {
       if (hr.typeFreebies)
@@ -206,9 +224,10 @@ export function chooseHeritage(hr: Heritage, saveData: Perk) {
       })
     }
     else {
+      if (saveData.cost === 0) return
       if (hr.title === 'First Augmentation') {
         flags.value.isTranshuman = true
-        flags.value.transhumanType = flags.value.transhumanType || 'Biomorph'
+        flags.value.transhumanType = flags.value.transhumanType || sample(['Biomorph', 'Cybermorph', 'Aethermorph'])
         saveData.anything = flags.value.transhumanType
       }
       if (hr.typeFreebies)
@@ -349,5 +368,48 @@ export function chooseWaifuPerk(perk: WaifuPerk) {
       waifuPerks.value.push(
         { title: perk.title, waifu: perk.waifu[0] || perk.waifu, cost: perk.cost || 0, refund: perk.discount || 0 })
     }
+  }
+}
+
+export function clearAll() {
+  baseBudget.value = 55
+  startingWorld.value = {
+    worldName: 'Current world',
+    rating: 2,
+  }
+  startingOrigin.value = {
+    title: '',
+    cost: 0,
+  }
+  intensities.value = []
+  binding.value = []
+  luresBought.value = []
+  otherPerks.value = []
+  heritage.value = []
+  ridePerks.value = []
+  homePerks.value = []
+  talentPerks.value = []
+  defensePerks.value = []
+  miscPerks.value = []
+  genericWaifuPerks.value = []
+  waifuPerks.value = []
+  companions.value = []
+  allEffects.value = []
+  flags.value = {
+    noBindings: true,
+    noHeritage: true,
+    danger11Start: false,
+    pvpEnabled: false,
+    chargen: true,
+    skipUsed: undefined,
+    hasARide: false,
+    isTranshuman: false,
+    transhumanType: undefined,
+  }
+  budgetMods.value = {
+    plus: 0,
+    minus: 0,
+    plus11: 0,
+    minus11: 0,
   }
 }

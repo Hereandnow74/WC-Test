@@ -168,10 +168,12 @@ const options = {
   findAllMatches: true,
   useExtendedSearch: true,
   threshold: 0.4,
-  keys: ['n', 'w', 't', 'b', 'i'],
+  keys: ['n', 'w', 't', 'b', 'i', 'd'],
 }
 
 const fuse = new Fuse(charArr.value, options)
+const params = useUrlSearchParams('history')
+const route = useRoute()
 
 onMounted(async() => {
   const userChars = await getUserChars()
@@ -184,11 +186,12 @@ onMounted(async() => {
   charArr.value = Array.prototype.concat(userChars, (await getChars()))
   fuse.setCollection(charArr.value)
   loading.value = false
-  const params = useUrlSearchParams('history')
   if (params.name)
     nextTick(() => search.value = params.name)
   else search.value = ''
 })
+
+watch(route, x => search.value = x.query.name || '')
 
 const filteredCharacters = computed(() => {
   const sr = search.value || '!^xcv'
@@ -198,7 +201,10 @@ const filteredCharacters = computed(() => {
       $and: [
         { t: tier.value !== 0 ? `${tier.value}` : '!z' },
         { n: sr },
-        { w: startingWorld.value.worldName },
+        {
+          $or: [
+            { w: startingWorld.value.worldName }, { d: startingWorld.value.worldName }],
+        },
       ],
     }
   }
@@ -208,7 +214,7 @@ const filteredCharacters = computed(() => {
         { t: tier.value !== 0 ? `=${tier.value}` : '!z' },
         {
           $or: [
-            { w: sr }, { n: sr }],
+            { w: sr }, { n: sr }, { d: sr }],
         },
       ],
     }

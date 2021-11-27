@@ -18,33 +18,29 @@
   </div>
 </template>
 
-<script lang='ts'>
-import { defineComponent } from 'vue'
-
-export default defineComponent({
-  name: 'Input',
-  props: {
-    modelValue: {
-      type: [String, Number],
-      default: '',
-    },
-    label: {
-      type: String,
-      default: '',
-    },
-    placeholder: {
-      type: String,
-      default: '',
-    },
-    errorMessage: {
-      type: String,
-      default: '',
-    },
-    type: {
-      type: String,
-      default: 'text',
-    },
+<script lang='ts' setup>
+defineProps({
+  modelValue: {
+    type: [String, Number],
+    default: '',
   },
-  emits: ['update:modelValue'],
+  label: {
+    type: String,
+    default: '',
+  },
+  placeholder: {
+    type: String,
+    default: '',
+  },
+  errorMessage: {
+    type: String,
+    default: '',
+  },
+  type: {
+    type: String,
+    default: 'text',
+  },
 })
+
+defineEmits(['update:modelValue'])
 </script>

@@ -8,6 +8,7 @@ export const [showAddRide, toggleShowAddRide] = useToggle()
 
 export const [appMode, toggleAppMode] = useToggle()
 export const orientation = ref(false)
+export const activeTab = ref(0)
 
 export function threeToggle(val: number) {
   switch (val) {

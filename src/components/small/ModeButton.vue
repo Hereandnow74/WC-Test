@@ -16,17 +16,6 @@
   </div>
 </template>
 
-<script lang='ts'>
+<script lang='ts' setup>
 import { isDark, toggleDark } from '~/logic'
-
-export default defineComponent({
-  name: 'ModeButton',
-
-  setup() {
-    return {
-      isDark,
-      toggleDark,
-    }
-  },
-})
 </script>

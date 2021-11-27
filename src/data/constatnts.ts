@@ -19,7 +19,7 @@ export const WORLD_RATINGS = [
   { rating: 2, title: 'Turn the Page', budget: 55 },
   { rating: 3, title: 'No Remorse', budget: 85 },
   { rating: 4, title: 'Hit the Lights', budget: 140 },
-  { rating: 5, title: 'Moth Into Flame', budget: 224 },
+  { rating: 5, title: 'Moth Into Flame', budget: 225 },
   { rating: 6, title: 'Trapped Under Ice', budget: 365 },
   { rating: 7, title: 'Disposable Heroes', budget: 590 },
   { rating: 8, title: 'All Nightmare Long', budget: 955 },

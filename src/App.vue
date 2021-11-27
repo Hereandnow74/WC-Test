@@ -8,5 +8,6 @@
     <SideApps />
     <Footer />
     <ConfirmDialog class="z-20" />
+    <InfoDialog class="z-20" />
   </main>
 </template>

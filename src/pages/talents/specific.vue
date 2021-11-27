@@ -98,16 +98,16 @@
 </template>
 
 <script lang='ts' setup>
-import { findIndex, intersection, isArray, intersectionWith } from 'lodash-es'
-import { waifu_perks, WaifuPerk } from '~/data/waifu_perks'
-import { genericPerks, genericDesc, PerkFull } from '~/data/talents'
+import { findIndex, isArray } from 'lodash-es'
+import { waifu_perks } from '~/data/waifu_perks'
+import { genericPerks, genericDesc } from '~/data/talents'
 import { lazyLoadImg, useTooltips } from '~/logic/misc'
-import { Perk, useStore } from '~/store/store'
+import { useStore } from '~/store/store'
 
 import PerkCard from '~/components/PerkCard.vue'
 import { chooseGenericPerk, chooseWaifuPerk, genericAvailable, specificAvailable } from '~/logic'
 
-const { waifuPerks, companions, genericWaifuPerks, allEffects, flags, startingOrigin } = useStore()
+const { waifuPerks, genericWaifuPerks } = useStore()
 
 const gachaTable = [
   [1, 2, 5, 10, 20, 50, 100, 200, 500, 1000],

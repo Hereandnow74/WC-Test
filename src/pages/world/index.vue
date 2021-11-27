@@ -50,7 +50,7 @@
       <div class="flex flex-wrap gap-1 overflow-y-auto pb-8">
         <WorldCard
           v-for="world in worldsFiltered"
-          :key="world.worldName + (world.condition || 'none')"
+          :key="world.worldName"
           :world="world"
           class="max-w-sm"
           @edit-world="editWorld"
@@ -64,7 +64,7 @@
       <div class="grid grid-cols-1 grid-flow-row-dense xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-2 overflow-y-auto pb-8">
         <WorldCard
           v-for="world in userWorldsFiltered"
-          :key="world.worldName + (world.condition || 'none')"
+          :key="world.worldName"
           :world="world"
           class="w-full"
           :class="{'row-span-2 min-h-72': world.image, 'sm:col-span-2': world.additional, 'sm:row-span-4': world.image && world.additional}"

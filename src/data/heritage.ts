@@ -334,7 +334,8 @@ heritages.push({
   tree: 'Transhuman',
   type: 'Party',
   cost: 0,
-  costVariants: [0, 5, 15, 20],
+  complex: 'target',
+  costVariants: [0, 5, 20, 40],
   whitelist: ['Full Conversion'],
   desc: `
 <p>As a one- way process, you are able to bring your retinue down the same transhumanism path as you. These upgrades must be done in sequence for a waifu. After spending 120 credits on this perk, you may upgrade your retinue freely yourself without further purchases. Each step in the process takes an hour of effort to accomplish on your own.</p>

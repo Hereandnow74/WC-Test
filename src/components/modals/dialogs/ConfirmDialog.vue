@@ -1,5 +1,5 @@
 <template>
-  <Modal v-if="showInfo" label="Confirm ?">
+  <Modal v-if="showConfirm" label="Confirm ?" @click="cancel">
     <div class="text-lg p-2">
       {{ dialogMessage }}
     </div>
@@ -13,17 +13,17 @@
 <script lang="ts" setup>
 import { useDialogs } from '~/logic/dialog'
 
-const { showInfo, dialogBus, dialogMessage } = useDialogs()
+const { showConfirm, dialogBus, dialogMessage } = useDialogs()
 
 function confirm() {
   dialogBus.emit('confirm')
   dialogBus.reset()
-  showInfo.value = false
+  showConfirm.value = false
 }
 
 function cancel() {
   dialogBus.emit('cancel')
   dialogBus.reset()
-  showInfo.value = false
+  showConfirm.value = false
 }
 </script>

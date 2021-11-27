@@ -32,10 +32,10 @@
           <Button v-else size="Small" label="undo" @click="undoBuying(charData.uid)" />
         </div>
       </div>
-      <div class="py-2 h-max">
-        <h4 class="justify-center flex items-center px-1" :class="fontSize">
-          <span>{{ charData.name }} (<span class="text-blue-200">{{ charData.world }}</span>)</span>
-          <div v-if="showTiers" class="flex items-center ml-auto">
+      <div class="py-1 h-max">
+        <h4 id="title" class="flex px-1 leading-none relative" :class="fontSize">
+          <span class="flex-grow text-center">{{ charData.name }}</span>
+          <div v-if="showTiers" class="flex items-center ml-auto absolute right-1 edit-icons bg-black bg-opacity-50">
             <a
               v-if="charData.sourceImage"
               class="flex items-center"
@@ -44,12 +44,16 @@
               rel="noopener noreferrer"
               title="Source"
             >
-              <eva:external-link-fill class="hover:text-blue-600 cursor-pointer" />
+              <eva:external-link-fill class="text-blue-200 hover:text-blue-500 cursor-pointer" />
             </a>
-            <bx:bxs-edit class="hover:text-yellow-600 cursor-pointer" @click="$emit('editCompanion', charData)" />
-            <fluent:delete-20-filled v-if="isUserChar" class="hover:text-red-500 ml-2 cursor-pointer" @click="deleteCharacter" />
+            <bx:bxs-edit class="text-yellow-200 hover:text-yellow-600 cursor-pointer" @click="$emit('editCompanion', charData)" />
+            <fluent:delete-20-filled v-if="isUserChar" class="text-red-200 hover:text-red-500 ml-2 cursor-pointer" @click="deleteCharacter" />
           </div>
         </h4>
+        <div class="text-center leading-none text-blue-300">
+          <span>{{ charData.world }}</span>
+          <span v-if="charData.sub" class="text-blue-200"> - {{ charData.sub }}</span>
+        </div>
         <div v-if="charData.nickname" class="ml-2 mb-1 text-xs text-gray-400 leading-none">
           by @{{ charData.nickname }}
         </div>
@@ -65,7 +69,7 @@
             >({{ CHAR_COSTS[(charData.tier) - 2] }})</span>
           </div>
         </div>
-        <div v-if="showTags" class="flex gap-1 justify-center">
+        <div v-if="showTags" class="flex gap-1 text-sm justify-center">
           <span
             v-for="tag in charData.tags"
             :key="tag"
@@ -133,6 +137,7 @@ const charData = computed(() => {
       uid: props.char.u,
       name: props.char.n,
       world: props.char.w,
+      sub: props.char.d,
       tier: props.char.t,
       image: props.char.i,
       image_nsfw: props.char.in,
@@ -172,8 +177,7 @@ const imageLink = computed(() => {
   else {
     return '/img/placeholder.jpg'
   }
-},
-)
+})
 
 const priceTier = (t: number): number => flags.value.noBindings && t !== 11 && t !== 1 ? t - 1 : t
 
@@ -223,3 +227,12 @@ onMounted(() => {
 watch(imageLink, () => companionEl.value ? companionEl.value.src = imageLink.value : null)
 
 </script>
+
+<style>
+#title .edit-icons {
+  visibility: hidden;
+}
+#title:hover .edit-icons {
+  visibility: visible;
+}
+</style>

@@ -16,6 +16,9 @@
       Lures: <span class="text-orange-500">{{ luresCost }}</span>
     </div>
     <div class="font-semibold flex justify-between mx-4 border-b border-gray-700">
+      Other Controls: <span class="text-orange-500">{{ otherCost }}</span>
+    </div>
+    <div class="font-semibold flex justify-between mx-4 border-b border-gray-700">
       Rides: <span class="text-orange-500">{{ ridePerksCost }}</span>
     </div>
     <div class="font-semibold flex justify-between mx-4 border-b border-gray-700">
@@ -31,10 +34,13 @@
       Misc Perks: <span class="text-orange-500">{{ miscPerksCost }}</span>
     </div>
     <div class="font-semibold flex justify-between mx-4 border-b border-gray-700">
-      Waifu Perks: <span class="text-orange-500">{{ waifuPerksCost + genericWaifuPerksCost }}</span>
+      Generic Waifu Perks: <span class="text-orange-500">{{ genericWaifuPerksCost }}</span>
     </div>
     <div class="font-semibold flex justify-between mx-4 border-b border-gray-700">
-      Other Perks Total: <span class="text-green-500">{{ miscPerksCost + waifuPerksCost + genericWaifuPerksCost }}</span>
+      Waifu Perks: <span class="text-orange-500">{{ waifuPerksCost }}</span>
+    </div>
+    <div class="font-semibold flex justify-between mx-4 border-b border-gray-700">
+      Other Perks Total: <span class="text-green-500">{{ otherCost + miscPerksCost + waifuPerksCost + genericWaifuPerksCost }}</span>
     </div>
     <div class="font-semibold flex justify-between mx-4 border-b border-gray-700">
       Companions: <span class="text-orange-500">{{ companionsCost }}</span>
@@ -65,7 +71,7 @@ import { useStore } from '~/store/store'
 const {
   startingOrigin, heritageCost, bindingCost, ridePerksCost, homePerksCost, talentsCost, defensesCost,
   miscPerksCost, waifuPerksCost, genericWaifuPerksCost, luresCost, companionsCost, companionProfit,
-  companionProfitSold, totalCost, companions,
+  companionProfitSold, totalCost, companions, otherCost,
 } = useStore()
 
 const companionTotalCredits = computed(() => {

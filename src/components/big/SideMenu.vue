@@ -62,23 +62,10 @@
   </div>
 </template>
 
-<script lang='ts'>
+<script lang='ts' setup>
 import { isDark, toggleDark, toggleSideMenu, showSideMenu } from '~/logic'
 
-export default defineComponent({
-  name: 'SideMenu',
+const sidemenu = ref(null)
 
-  setup() {
-    const sidemenu = ref(null)
-
-    onClickOutside(sidemenu, event => showSideMenu.value = false)
-
-    return {
-      sidemenu,
-      isDark,
-      toggleDark,
-      toggleSideMenu,
-    }
-  },
-})
+onClickOutside(sidemenu, event => showSideMenu.value = false)
 </script>

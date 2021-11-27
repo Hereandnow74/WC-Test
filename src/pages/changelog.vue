@@ -5,6 +5,24 @@
     </h2>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
+        27 November 2021
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li><b>Rem Knight</b> provided 44 images for Girls Frontline characters.</li>
+        <li><b>PokeAdmirer</b> provided 23 images for Pokemon Expansion characters.</li>
+        <li>181 new user submitted Characters.</li>
+        <li>Added 16 user submitted worlds.</li>
+        <li>Added ratings for All Unknown Rating Worlds</li>
+        <li>Random Build App</li>
+        <li>Made separate tab for Companions and added more functions to companion management</li>
+        <li>Added subcategory for Companions World</li>
+        <li>World and World subcategory in Add Character now have hints</li>
+        <li>Ancestral Diversity perk should work properly</li>
+        <li>Bug fixes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
         19 November 2021
       </h3>
       <ul class="list-decimal list-inside">

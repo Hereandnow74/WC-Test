@@ -11,12 +11,8 @@
   </div>
 </template>
 
-<script lang='ts'>
+<script lang='ts' setup>
 
-export default defineComponent({
-  setup() {
-    const router = useRouter()
-    onMounted(() => document.location.pathname === '/talents' ? router.replace('/talents/ride') : null)
-  },
-})
+const router = useRouter()
+onMounted(() => document.location.pathname === '/talents' ? router.replace('/talents/ride') : null)
 </script>

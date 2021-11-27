@@ -166,7 +166,8 @@
       {
         "rating": 4,
         "name": "Fifth book"
-      }
+      },
+      {"rating":6,"name":"1971 (Open Warfare)"}
     ]
   },
   {
@@ -196,7 +197,7 @@
   },
   {
     "worldName": "Jojo's Bizzare Adventure",
-    "rating": 2
+    "rating": 5
   },
   {
     "worldName": "Lazy Dungeon Master",
@@ -311,9 +312,24 @@
   {"worldName":"Gate: And thus the JSDF fought there","rating":4,"condition":[{"rating":2,"name":"Pre open-gate: Ginza"},{"name":"Initial opening of the gate: Ginza","rating":4},{"rating":5,"name":"Falmart"}]},
   {"worldName":"Grrlpower","rating":4},
   {"worldName":"Hellsing Abridged","rating":3},
+  {"worldName":"Shinmai Maou","rating":6,"image":"https://i.imgur.com/4QrkujBl.png?1","additional":"Body Defense will protect you from all the negatives effects of the Master-Servant Contract."},
   {"worldName":"Inheritance","rating":5},
   {"worldName":"Interspecies Reviewers","rating":5},
   {"worldName":"Kuroinu","rating":5},
   {"worldName":"Mushroom Kingdom","rating":3},
-  {"worldName":"SCP","rating":10}
+  {"worldName":"SCP","rating":10},
+  {"worldName":"Dark Souls","rating":8,"image":"https://i.imgur.com/ZvNFdGol.png","additional":"You can use bonfires as they are intended.","condition":[{"name":"Dark Souls 1","rating":8},{"name":"Dark Souls 2","rating":8},{"name":"Dark Souls 3","rating":8}]},
+    {"worldName":"Divinity","rating":5},
+  {"worldName":"Hellsing Abridged","rating":3},
+  {"worldName":"Highschool of the Dead","rating":4,"condition":[{"rating":4,"name":"Starting from Z-Day"}]},
+  {"worldName":"How Not to Summon a Demon Lord ","rating":8},
+  {"worldName":"Inheritance","rating":5,"additional":"When capturing a rider one also captures their dragon."},
+  {"worldName":"Interspecies Reviewers","rating":5},
+  {"worldName":"JoJo's Bizarre Adventure","rating":3,"image":"https://i.imgur.com/Y8qbM7Xl.png","condition":[{"name":"Phantom Blood","rating":3},{"name":"Parts 3,4,7,8","rating":4},{"rating":5,"name":"Battle Tendency, Golden Wind"},{"rating":6,"name":"Stone Ocean"}]},
+  {"worldName":"Jump Force","rating":9},
+  {"worldName":"Maken-Ki","rating":6},
+  {"worldName":"Pokegirls","rating":6},
+  {"worldName":"Re:Monster","rating":4},
+  {"worldName":"Scooby Doo","rating":1,"condition":[{"name":"Ghoul School","rating":3}]},
+  {"worldName":"Toriko","rating":6,"condition":[{"rating":6,"name":"Human World"},{"name":"Gourmet World","rating":9}]}
 ]

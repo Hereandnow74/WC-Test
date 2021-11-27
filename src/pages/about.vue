@@ -6,8 +6,8 @@
       </h3>
       <div>
         Time I spend on Interactive Waifu Catalog so far -
-        <span class="text-amber-500">263</span> hours in
-        <span class="text-amber-500">66</span> days.
+        <span class="text-amber-500">291</span> hours in
+        <span class="text-amber-500">71</span> days.
       </div>
       <div>
         If you have any questions about Interactive, suggestions, collaborations or you want to hire me

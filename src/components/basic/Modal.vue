@@ -22,16 +22,13 @@
   </div>
 </template>
 
-<script lang='ts'>
-export default defineComponent({
-  name: 'Modal',
-
-  props: {
-    label: {
-      type: String,
-      default: 'Modal Window',
-    },
+<script lang='ts' setup>
+defineProps({
+  label: {
+    type: String,
+    default: 'Modal Window',
   },
-  emits: ['click'],
 })
+defineEmits(['click'])
+
 </script>

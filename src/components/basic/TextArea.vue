@@ -15,34 +15,29 @@
   </div>
 </template>
 
-<script lang='ts'>
-import { defineComponent } from 'vue'
-
-export default defineComponent({
-  name: 'TextArea',
-
-  props: {
-    modelValue: {
-      type: String,
-      default: '',
-    },
-    label: {
-      type: String,
-      default: '',
-    },
-    placeHolder: {
-      type: String,
-      default: 'Type here',
-    },
-    rows: {
-      type: String,
-      default: '10',
-    },
-    errorMessage: {
-      type: String,
-      default: '',
-    },
+<script lang='ts' setup>
+defineProps({
+  modelValue: {
+    type: String,
+    default: '',
   },
-  emits: ['update:modelValue'],
+  label: {
+    type: String,
+    default: '',
+  },
+  placeHolder: {
+    type: String,
+    default: 'Type here',
+  },
+  rows: {
+    type: String,
+    default: '10',
+  },
+  errorMessage: {
+    type: String,
+    default: '',
+  },
 })
+
+defineEmits(['update:modelValue'])
 </script>

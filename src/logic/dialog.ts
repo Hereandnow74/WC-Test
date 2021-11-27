@@ -5,10 +5,13 @@ const dialogMessage = ref('')
 
 const dialogBus = useEventBus<string>('')
 
-export function confirmDialog(msg: text) {
+export function confirmDialog(msg: string, type: 'info' | 'confirm' = 'confirm') {
   dialogMessage.value = msg
   return new Promise((resolve, reject) => {
-    showInfo.value = true
+    if (type === 'confirm')
+      showConfirm.value = true
+    else
+      showInfo.value = true
     dialogBus.on(val => val === 'confirm' ? resolve(true) : resolve(false))
   })
 }

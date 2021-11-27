@@ -114,7 +114,4 @@ function chooseItem(item: string) {
   @apply text-gray-800;
   @apply rounded-none rounded-b;
 }
-.tippy-content[data-theme~='light'] {
-
-}
 </style>
