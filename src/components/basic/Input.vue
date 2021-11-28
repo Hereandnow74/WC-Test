@@ -4,6 +4,7 @@
       <span v-if="label" class="whitespace-nowrap">{{ label }}</span>
       <input
         :type="type"
+        :name="name"
         class="rounded text-gray-800 px-2 w-full"
         outline="dark:(none active:none)"
         border="~ gray-800"
@@ -39,6 +40,10 @@ defineProps({
   type: {
     type: String,
     default: 'text',
+  },
+  name: {
+    type: String,
+    default: '',
   },
 })
 

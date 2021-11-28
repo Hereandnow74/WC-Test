@@ -190,7 +190,7 @@ function buyCompanion() {
 
 function captureCompanion() {
   const char = charData.value
-  companions.value.push({ uid: char.uid, name: char.name, world: char.world, tier: char.tier, priceTier: priceTier(char.tier), method: 'capture' })
+  companions.value.push({ uid: char.uid, name: char.name, world: char.world, tier: char.tier, priceTier: char.tier, method: 'capture' })
 }
 
 function yoinkCompanion() {

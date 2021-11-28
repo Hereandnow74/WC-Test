@@ -37,7 +37,7 @@
         <label class="text-blue-500 dark:text-blue-300">Male<input v-model="sex" type="radio" name="gender" value="M" class="ml-2"></label>
         <label class="text-gray-500 dark:text-gray-300">Other<input v-model="sex" type="radio" name="gender" value="O" class="ml-2"></label>
       </div>
-      <Input v-if="serverSave" v-model="nickname" placeholder="Your nickname" :error-message="errors.nickname" />
+      <Input v-if="serverSave" v-model="nickname" placeholder="Your nickname" :error-message="errors.nickname" name="login" />
       <div v-if="tierError" class="text-red-400 font-semibold">
         {{ tierError }}
       </div>

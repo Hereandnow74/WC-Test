@@ -1,8 +1,6 @@
-import { findIndex, intersection, random } from 'lodash-es'
+import { random } from 'lodash-es'
 import tippy from 'tippy.js'
 import { allWorldsNoCondition, CHAR_COSTS, getChars, getUserChars } from '~/data/constatnts'
-import { PerkFull } from '~/data/talents'
-import { Perk, useStore } from '~/store/store'
 
 export const useTooltips = () => tippy('[data-tippy-content]', {
   animation: false,

@@ -95,23 +95,23 @@ function saveBuild() {
 
 function loadBuld(uid: number) {
   const build = saves.value[uid]
-  baseBudget.value = build.baseBudget
+  baseBudget.value = build.baseBudget || 0
   startingWorld.value = build.startingWorld
   startingOrigin.value = build.startingOrigin
-  intensities.value = build.intensities
+  intensities.value = build.intensities || []
   binding.value = build.binding
-  otherPerks.value = build.otherPerks
-  luresBought.value = build.luresBought
-  heritage.value = build.heritage
-  ridePerks.value = build.ridePerks
-  homePerks.value = build.homePerks
-  talentPerks.value = build.talentPerks
-  defensePerks.value = build.defensePerks
-  miscPerks.value = build.miscPerks
-  genericWaifuPerks.value = build.genericWaifuPerks
-  waifuPerks.value = build.waifuPerks
-  companions.value = build.companions
-  allEffects.value = build.allEffects
+  otherPerks.value = build.otherPerks || []
+  luresBought.value = build.luresBought || []
+  heritage.value = build.heritage || []
+  ridePerks.value = build.ridePerks || []
+  homePerks.value = build.homePerks || []
+  talentPerks.value = build.talentPerks || []
+  defensePerks.value = build.defensePerks || []
+  miscPerks.value = build.miscPerks || []
+  genericWaifuPerks.value = build.genericWaifuPerks || []
+  waifuPerks.value = build.waifuPerks || []
+  companions.value = build.companions || []
+  allEffects.value = build.allEffects || []
   flags.value = build.flags
   budgetMods.value = build.budgetMods
 }

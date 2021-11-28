@@ -144,7 +144,7 @@ function copyText() {
 
   full += intensities.value.length
     ? `Intensity \n${intensities.value.reduce((a, x) =>
-      a += `${x.title} +${baseBudget.value * x.intensity} [${(fullCost.c += x.intensity * baseBudget.value, fullCost.c)}]\n\n`
+      a += `${x.title} +${x.intensity > 10 ? x.intensity : baseBudget.value * x.intensity} [${(fullCost.c += x.intensity > 10 ? x.intensity : baseBudget.value * x.intensity, fullCost.c)}]\n\n`
     , '')}`
     : ''
 

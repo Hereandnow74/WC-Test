@@ -29,19 +29,15 @@ import { origin } from '~/data/origin'
 import { defenses, homes, perks, rides, genericPerks, talents } from '~/data/talents'
 import { waifu_perks } from '~/data/waifu_perks'
 import { useStore } from '~/store/store'
-import worlds from '~/data/worlds.json'
-import subWorlds from '~/data/userWorlds.json'
 import { allWorldsNoCondition, CHAR_COSTS, WORLD_RATINGS } from '~/data/constatnts'
-
-const allCats = ['World', 'Intensity', 'Origin', 'Heritage', 'Bindings', 'Lures', 'Rides', 'Home',
-  'Talents', 'Defenses', 'Generic', 'Waifu Perks']
+import { confirmDialog } from '~/logic/dialog'
 
 const targetBudget = ref(55)
 
 const {
-  userWorlds, localUserWorlds, budget, startingWorld, startingOrigin, intensities, binding, homePerks, defensePerks,
+  budget, startingWorld, startingOrigin, intensities, binding, homePerks, defensePerks,
   companions, heritage, talentPerks, waifuPerks, ridePerks, miscPerks, luresBought, genericWaifuPerks,
-  tier11tickets, companionsCost, budgetMods, baseBudget, allEffects, flags, companionProfit, otherPerks,
+  budgetMods, baseBudget, otherPerks,
 } = useStore()
 
 async function randomWorld(maxPrice: number) {
@@ -161,6 +157,7 @@ async function randomCompanion(max: number) {
 }
 
 async function generateRandomBuild() {
+  if (!(await confirmDialog('This action will clear your current build and all unsaved progress will be lost.'))) return
   clearAll()
   const clampedTarget = clamp(targetBudget.value, 10, 10000)
   activeTab.value = 0
