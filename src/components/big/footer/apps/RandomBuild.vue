@@ -224,6 +224,5 @@ async function generateRandomBuild() {
         break
     }
   }
-  console.log('End')
 }
 </script>

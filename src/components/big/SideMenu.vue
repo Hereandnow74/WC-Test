@@ -2,7 +2,7 @@
   <div
     ref="sidemenu"
     class="fixed left-0 top-0 bottom-0 bg-gray-200 dark:bg-gray-700 flex flex-col gap-2 items-start pt-2
-    transition-transform transform z-10"
+    transition-transform transform z-30"
   >
     <button class="icon-btn mx-2 !outline-none hover:text-red-400" @click="() => toggleSideMenu()">
       <fa-regular:window-close />

@@ -205,7 +205,11 @@ const budget = computed(() => {
 
 const companionTicketProfit = computed(() => {
   return companions.value.reduce((a, x) => {
-    return x.priceTier === 11 && x.method === 'capture' ? a += 1 : a
+    if (x.priceTier === 11) {
+      if (x.method === 'capture') a += 1
+      if (x.sold) a += 1
+    }
+    return a
   }, 0)
 })
 

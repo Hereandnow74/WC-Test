@@ -74,8 +74,8 @@
             v-for="tag in charData.tags"
             :key="tag"
             class="px-1 rounded-md"
-            :class="tagColors[tag]"
-          >{{ tagNames[tag] }}</span>
+            :class="tagColors[tag] || 'bg-teal-600'"
+          >{{ tagNames[tag] || tag }}</span>
         </div>
       </div>
     </div>

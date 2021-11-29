@@ -413,3 +413,24 @@ export function clearAll() {
     minus11: 0,
   }
 }
+
+export function assignBuildData(data: any) {
+  startingWorld.value = data.startingWorld
+  startingOrigin.value = data.startingOrigin
+  intensities.value = data.intensities
+  binding.value = data.binding
+  homePerks.value = data.homePerks
+  defensePerks.value = data.defensePerks
+  companions.value = data.companions
+  heritage.value = data.heritage
+  talentPerks.value = data.talentPerks
+  waifuPerks.value = data.waifuPerks
+  ridePerks.value = data.ridePerks
+  miscPerks.value = data.miscPerks
+  luresBought.value = data.luresBought
+  genericWaifuPerks.value = data.genericWaifuPerks
+  budgetMods.value = data.budgetMods
+  baseBudget.value = data.baseBudget
+  allEffects.value = data.allEffects
+  flags.value = data.flags
+}

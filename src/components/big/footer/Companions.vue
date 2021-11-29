@@ -31,8 +31,20 @@
           <span class="text-gray-500">From: <span class="text-gray-400">{{ char.world }}</span></span>
           <NumberInput v-if="!char.sold" v-model="char.tier" :max="11" label="Change tier" class="whitespace-nowrap" />
           <div v-if="!char.sold" class="flex gap-2 mt-auto justify-end">
-            <Button v-if="['capture', 'yoink'].includes(char.method)" :label="`sell ${Math.floor(CHAR_COSTS[char.tier - 1] * 0.2)}c`" size="Small" bg-color="bg-red-500" @click="sellCompanion(char.uid)" />
-            <Button v-if="['buy', 'used'].includes(char.method)" :label="`return ${Math.round(CHAR_COSTS[char.priceTier - 1] * 0.8)}c`" size="Small" bg-color="bg-yellow-600" @click="sellCompanion(char.uid)" />
+            <Button
+              v-if="['capture', 'yoink'].includes(char.method)"
+              :label="`sell ${char.tier === 11 ? '1 ticket' : Math.floor(CHAR_COSTS[char.tier - 1] * 0.2) + 'c'}`"
+              size="Small"
+              bg-color="bg-red-500"
+              @click="sellCompanion(char.uid)"
+            />
+            <Button
+              v-if="['buy', 'used'].includes(char.method)"
+              :label="`return ${char.tier === 11 ? '1 ticket' : Math.round(CHAR_COSTS[char.priceTier - 1] * 0.8) + 'c'}`"
+              size="Small"
+              bg-color="bg-yellow-600"
+              @click="sellCompanion(char.uid)"
+            />
           </div>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import { initializeApp } from 'firebase/app'
-import { getFirestore, collection, addDoc, doc, getDoc } from 'firebase/firestore/lite'
+import { getFirestore, collection, addDoc, doc, getDoc, getDocs, query } from 'firebase/firestore/lite'
 
 export * from './toggles'
 export * from './misc'
@@ -55,6 +55,14 @@ export function shareLink(buildData: any, callback: any) {
 
 export function getBuild(id: string, callback: any) {
   const docRef = doc(db, 'builds', id)
+  getDoc(docRef).then((docSnap) => {
+    if (docSnap.exists()) callback(docSnap.data())
+    else callback()
+  })
+}
+
+export function getBuilds(callback: any) {
+  const docRef = doc(db, 'buildsList', 'currentList')
   getDoc(docRef).then((docSnap) => {
     if (docSnap.exists()) callback(docSnap.data())
     else callback()

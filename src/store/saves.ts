@@ -9,8 +9,11 @@ interface SaveListItem {
 
 const savesList = useStorage<SaveListItem[]>('savesList', [])
 
+const buildList = ref([])
+
 export function useSaves() {
   return {
     savesList,
+    buildList,
   }
 }

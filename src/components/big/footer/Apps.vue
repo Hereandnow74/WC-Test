@@ -26,6 +26,7 @@ const apps = [
   { icon: 'fa-solid:dice', name: 'Dice Machine', component: 'DiceMachine', color: 'white' },
   { icon: 'gis:search-globe-alt', name: 'Random World', component: 'RandomWorld', color: '#ff8888' },
   { icon: 'fluent:person-question-mark-16-regular', name: 'Random Character', component: 'RandomChar', color: '#f9ec52' },
+  { icon: 'bx:bx-spreadsheet', name: 'Users builds', component: 'UserBuilds', color: '#3a64b1' },
 ]
 
 const appComponents = {
@@ -36,6 +37,7 @@ const appComponents = {
   RandomBuild: defineAsyncComponent(() => import('./apps/RandomBuild.vue')),
   DiceMachine: defineAsyncComponent(() => import('./apps/DiceMachine.vue')),
   RandomWorld: defineAsyncComponent(() => import('./apps/RandomWorld.vue')),
+  UserBuilds: defineAsyncComponent(() => import('./apps/UserBuilds.vue')),
 }
 
 const appName = ref('')
