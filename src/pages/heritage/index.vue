@@ -3,7 +3,7 @@
     <div class="mb-4 max-w-4xl mx-auto">
       <Table
         :headers="['&sum;', 'Tier']"
-        :rows="[[4, 4], [16, 5], [38, 6], [80, 7], [160, 8], [380, 9], [800, 10]]"
+        :rows="heritageTiers"
         class="float-right m-2 mt-4"
       />
       <Desc :desc="desc" class="p-2 bg-violet-200 dark:bg-violet-900" />
@@ -80,6 +80,7 @@ import { useTooltips } from '~/logic/misc'
 import { useStore } from '~/store/store'
 import Select from '~/components/basic/Select.vue'
 import { chooseHeritage, heritageAvailable } from '~/logic'
+import { heritageTiers } from '~/data/constatnts'
 
 const { heritage, flags } = useStore()
 

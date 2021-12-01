@@ -42,7 +42,9 @@
             {{ tab }}
           </div>
         </div>
-        <component :is="tabComponents[activeTab]" />
+        <transition name="slide">
+          <component :is="tabComponents[activeTab]" />
+        </transition>
       </div>
       <div class="flex h-8 justify-between items-center px-6 mt-auto">
         <div class="w-16 cursor-pointer hover:text-amber-500" title="Clear Build" @click="clearBuild">
@@ -207,5 +209,18 @@ function copyText() {
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: rgb(54, 54, 54);
+}
+
+.slide-enter-active,
+.slide-leave-active {
+  @apply transition-opacity;
+  @apply ease-in;
+}
+
+.slide-enter-from{
+  opacity: 0;
+}
+.slide-leave-to {
+  opacity: 0;
 }
 </style>

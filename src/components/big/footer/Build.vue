@@ -78,7 +78,7 @@
     </div>
     <div id="Heritage">
       <h3 class="text-lg text-gray-400">
-        Heritage
+        Heritage <span v-if="yourTier > 0" class="font-semibold">( Your tier - <span class="text-orange-300">T{{ yourTier }}</span> )</span>
       </h3>
       <Enum
         color="text-blue-400 hover:text-blue-300"
@@ -148,7 +148,7 @@
             path="/talents/defense"
             empty-message="No Defenses"
             :edit-mode="editMode"
-            @deletePerk="(el: any) => chooseDefense(el, el)"
+            @deletePerk="(el: any) => (el.count = 0, chooseDefense(el, el))"
           />
         </li>
         <li class="text-gray-300">
@@ -209,7 +209,7 @@ import {
 const {
   startingWorld, startingOrigin, intensities, binding, homePerks, defensePerks,
   heritage, talentPerks, waifuPerks, ridePerks, miscPerks, luresBought, genericWaifuPerks,
-  otherPerks,
+  otherPerks, yourTier,
 } = useStore()
 
 const editMode = ref(false)

@@ -29,6 +29,7 @@ export const WORLD_RATINGS = [
 ]
 
 export const CHAR_COSTS = [1, 2, 5, 10, 20, 50, 100, 200, 500, 1000, 11111]
+export const heritageTiers = [[4, 4], [16, 5], [38, 6], [80, 7], [160, 8], [380, 9], [800, 10]]
 
 export const TOOLTIPS = {
   'Chargen': 'Only during character generation stage',

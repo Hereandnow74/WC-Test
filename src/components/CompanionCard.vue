@@ -153,7 +153,7 @@ const charData = computed(() => {
 const tagNames = { F: 'Female', M: 'Male', O: 'Other', C: 'Canon', U: 'By User' }
 const tagColors = { F: 'bg-pink-500', M: 'bg-blue-500', C: 'bg-yellow-400', O: 'bg-fuchsia-700', U: 'bg-warm-gray-600' }
 
-const { flags, companions, localUserCharacters } = useStore()
+const { flags, companions, localUserCharacters, companionsUIDs } = useStore()
 
 const modalImageCmp = computed(() => {
   if (modalImage.value.includes('imgur') && modalImage.value.split('.').slice(-2, -1)[0].slice(-1) === 'm') {
@@ -210,7 +210,7 @@ function undoBuying(uid: number) {
 }
 
 function isAlredyBought(uid: number): boolean {
-  return findIndex(companions.value, { uid }) > -1
+  return companionsUIDs.value[uid]
 }
 
 function deleteCharacter() {

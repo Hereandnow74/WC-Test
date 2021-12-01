@@ -4,6 +4,7 @@ import { Heritage } from '~/data/heritage'
 import { Intensity } from '~/data/intensity'
 import { PerkFull, Ride } from '~/data/talents'
 import { WaifuPerk } from '~/data/waifu_perks'
+import { usePlayStore } from '~/store/play'
 import { Perk, useStore } from '~/store/store'
 
 const {
@@ -11,6 +12,8 @@ const {
   ridePerks, homePerks, talentPerks, defensePerks, miscPerks, genericWaifuPerks, companions, startingOrigin,
   waifuPerks, baseBudget, startingWorld, budgetMods, otherPerks,
 } = useStore()
+
+const { currentWorld, jumpChain, rdnWorld } = usePlayStore()
 
 // General functions
 export function deleteFreebies(freebies: object) {
@@ -412,6 +415,9 @@ export function clearAll() {
     plus11: 0,
     minus11: 0,
   }
+  jumpChain.value = []
+  currentWorld.value = startingWorld.value
+  rdnWorld.value = []
 }
 
 export function assignBuildData(data: any) {

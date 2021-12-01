@@ -619,7 +619,7 @@ talents.push({
 talents.push({
   title: 'Advanced Template Stacking (Arcane)',
   cost: 100,
-  target: '',
+  complex: 'target',
   whitelist: ['Science Talent', 'Soul Talent'],
   desc: `
 <p>The entire spectrum of scientific magic styles is now available to you without further restriction. You must still encounter such styles before you can use them, whether in the field, buying them with OC Donut Steel or Template Stacking, or through the purchase of a retinue member who has one. Additionally, such styles are more effective when you use them and easier to develop. </p>
@@ -629,7 +629,7 @@ talents.push({
 talents.push({
   title: 'Advanced Template Stacking (Enlightened)',
   cost: 100,
-  target: '',
+  complex: 'target',
   whitelist: ['Psychic Talent', 'Body Talent', 'Martial Talent', 'Soul Talent'],
   needed: 2,
   desc: `
@@ -640,7 +640,7 @@ talents.push({
 talents.push({
   title: 'Advanced Template Stacking (Green)',
   cost: 100,
-  target: '',
+  complex: 'target',
   whitelist: ['Wild Talent', 'Soul Talent'],
   desc: `
 <p>The entire spectrum of magical styles that draw mystical power from one’s surroundings are now available to you without further restriction. This includes, but is not limited to, Warhammer’s Winds, a Planeswalker’s Lands, Geomancy, or anything powered by leylines or background magical fields. You must still encounter any such styles before you can use them, whether in the field, buying them with OC Donut Steel or Template Stacking, or through the purchase of a retinue member who has one. Additionally, such arts and styles are more effective and easier to control.</p>

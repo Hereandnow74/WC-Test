@@ -1,4 +1,4 @@
-import { CHAR_COSTS } from '~/data/constatnts'
+import { CHAR_COSTS, heritageTiers } from '~/data/constatnts'
 
 export interface World {
   worldName: string
@@ -151,10 +151,10 @@ const otherCost = computed(() => otherPerks.value.reduce((a, x) => a += x.cost =
 
 const companionsCost = computed(() => {
   return companions.value.reduce((a, x) => {
-    if (x.method === 'buy' && x.tier !== 11)
+    if (x.method === 'buy' && x.priceTier !== 11)
       return a += CHAR_COSTS[x.priceTier - 1] || 1
-    if (x.method === 'yoink' && x.tier !== 11)
-      return a += (x.tier - 1) <= 1 ? 2 : (CHAR_COSTS[x.priceTier - 1] || 1) * 1.2
+    if (x.method === 'yoink' && x.priceTier !== 11)
+      return a += (x.priceTier - 1) <= 1 ? 2 : (CHAR_COSTS[x.priceTier - 1] || 1) * 1.2
     if (x.method === 'used' && x.priceTier !== 11)
       return a += CHAR_COSTS[x.priceTier - 1] || 1
     return a
@@ -163,8 +163,8 @@ const companionsCost = computed(() => {
 
 const companionProfit = computed(() => {
   return companions.value.reduce((a, x) => {
-    if (x.method === 'capture' && x.tier !== 11) {
-      let captureCost = Math.ceil(CHAR_COSTS[x.tier - 1] * 0.6)
+    if (x.method === 'capture' && x.priceTier !== 11) {
+      let captureCost = Math.ceil(CHAR_COSTS[x.priceTier - 1] * 0.6)
       captureCost = captureCost < 1 ? 1 : captureCost
       return a += captureCost
     }
@@ -174,10 +174,10 @@ const companionProfit = computed(() => {
 
 const companionProfitSold = computed(() => {
   return companions.value.reduce((a, x) => {
-    if (x.sold && x.tier !== 11 && ['capture', 'yoink'].includes(x.method))
+    if (x.sold && x.tier !== 11 && ['capture'].includes(x.method))
       return a += Math.round(CHAR_COSTS[x.tier - 1] * 0.2)
-    if (x.sold && x.tier !== 11 && ['buy', 'used'].includes(x.method))
-      return a += Math.round(CHAR_COSTS[x.tier - 1] * 0.8)
+    if (x.sold && x.priceTier !== 11 && ['buy', 'used', 'yoink'].includes(x.method))
+      return a += Math.round(CHAR_COSTS[x.priceTier - 1] * 0.8)
     return a
   }, 0)
 })
@@ -205,10 +205,8 @@ const budget = computed(() => {
 
 const companionTicketProfit = computed(() => {
   return companions.value.reduce((a, x) => {
-    if (x.priceTier === 11) {
-      if (x.method === 'capture') a += 1
-      if (x.sold) a += 1
-    }
+    if (x.method === 'capture' && x.priceTier === 11) a += 1
+    if (x.sold && x.tier === 11) a += 1
     return a
   }, 0)
 })
@@ -246,6 +244,22 @@ const targetList = computed(() => {
     comps = ['You', ...comps]
   return comps
 })
+
+const yourTier = computed(() => {
+  const calcTier = (cost: number) => {
+    if (cost >= 11111) return 11
+    for (let i = heritageTiers.length - 1; i > 0; i--)
+      if (cost >= heritageTiers[i][0]) return heritageTiers[i][1]
+    return 0
+  }
+  const originTier = startingOrigin.value.tier || 0
+  const dragonTier = calcTier(heritage.value.filter(x => x.tree && x.tree === 'Dragon').reduce((a, x) => a += x.cost, 0))
+  const transhumanTier = calcTier(heritage.value.filter(x => x.tree && x.tree === 'Transhuman').reduce((a, x) => a += x.cost, 0))
+  const outsiderTier = calcTier(heritage.value.filter(x => x.tree && x.tree === 'Outsider').reduce((a, x) => a += x.cost, 0))
+  return Math.max(originTier, dragonTier, transhumanTier, outsiderTier)
+})
+
+const companionsUIDs = computed(() => companions.value.reduce((a, c) => (a[c.uid] = true, a), {}))
 
 export function useStore() {
   return {
@@ -296,5 +310,7 @@ export function useStore() {
     params,
     userRides,
     localUserRides,
+    yourTier,
+    companionsUIDs,
   }
 }

@@ -2,7 +2,7 @@
   <div
     class="rounded cursor-pointer flex-grow text-gray-100 text-shadow flex flex-col gap-1"
     border="2 gray-400 hover:orange-600"
-    :class="world.worldName === startingWorld.worldName || startingWorld.worldName === 'Current world' ?
+    :class="world.worldName === startingWorld.worldName || startingWorld.worldName === 'Current world' || !pickAble ?
       WORLD_COLORS[world.rating - 1] || 'bg-gray-600' : 'bg-gray-600'"
     @click="pickAble ? pickWorld(world) : null"
   >
