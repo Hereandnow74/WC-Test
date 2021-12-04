@@ -37,6 +37,12 @@
         <label class="text-blue-500 dark:text-blue-300">Male<input v-model="sex" type="radio" name="gender" value="M" class="ml-2"></label>
         <label class="text-gray-500 dark:text-gray-300">Other<input v-model="sex" type="radio" name="gender" value="O" class="ml-2"></label>
       </div>
+      <TagInput
+        v-model="tags"
+        placeholder="Tags - press Enter to add"
+        :options="Object.values(waifuTags).map(x => x.tag)"
+        :error-message="errors.tags"
+      />
       <Input v-if="serverSave" v-model="nickname" placeholder="Your nickname" :error-message="errors.nickname" name="login" />
       <div v-if="tierError" class="text-red-400 font-semibold">
         {{ tierError }}
@@ -57,7 +63,7 @@ import { toFormValidator } from '@vee-validate/zod'
 import { random, uniq } from 'lodash-es'
 import { useStore } from '~/store/store'
 import { proposeCompanion, toggleShowAddCharacter } from '~/logic'
-import { getChars, getUserChars } from '~/data/constatnts'
+import { getChars, getUserChars, waifuTags, waifuTagsByTag } from '~/data/constatnts'
 
 const props = defineProps({
   editMode: {
@@ -89,8 +95,9 @@ const zodObject = zod.object({
   world: zod.string().nonempty('World name is required').max(64, { message: 'Maximum length is 64 chars' }),
   sub: zod.string().nonempty('World name is required').max(64, { message: 'Maximum length is 64 chars' }).optional().or(zod.literal('')),
   tier: zod.number().min(1, { message: 'Minimum tier is 1' }).max(11, { message: 'Maximum tier is 11' }),
-  image: zod.string().url({ message: 'Must be a valid URL' }).max(256, { message: 'Maximum length is 256 chars' }),
-  image_nsfw: zod.string().url({ message: 'Must be a valid URL' }).max(256, { message: 'Maximum length is 256 chars' }).optional().or(zod.literal('')),
+  image: zod.string().regex(/[^ \!@\$\^&\(\)\+\=]+(\.png|\.jpeg|\.gif|\.jpg|\.webp)$/, { message: 'Must be a valid image URL in a jpeg/jpg/png/gif/webp format.' }).max(256, { message: 'Maximum length is 256 chars' }),
+  image_nsfw: zod.string().regex(/[^ \!@\$\^&\(\)\+\=]+(\.png|\.jpeg|\.gif|\.jpg|\.webp)$/, { message: 'Must be a valid image URL in a jpeg/jpg/png/gif/webp format.' }).max(256, { message: 'Maximum length is 256 chars' }).optional().or(zod.literal('')),
+  tags: zod.string().max(24, { message: 'Max tag length is 24 chars' }).nonempty('No empty tags').array().max(10, { message: 'Maximum 10 tags' }),
 })
 
 const zodGlobal = zodObject.extend({ nickname: zod.string().nonempty('Nickname is required') })
@@ -109,6 +116,7 @@ const { errors, handleSubmit } = useForm({
     name: props.character.name || '',
     image: props.character.image || '',
     image_nsfw: props.character.image_nsfw || '',
+    tags: props.character.tags || [],
   },
 })
 
@@ -118,6 +126,7 @@ const { value: sub } = useField<string>('sub')
 const { value: tier } = useField<number>('tier')
 const { value: image } = useField<string>('image')
 const { value: image_nsfw } = useField<string>('image_nsfw')
+const { value: tags } = useField<string[]>('tags')
 const { value: nickname } = useField<string>('nickname')
 
 const addCharacter = handleSubmit((values) => {
@@ -137,7 +146,9 @@ const addCharacter = handleSubmit((values) => {
   tierError.value = ''
   tierConfirm.value = false
 
-  values.tags = [sex.value]
+  if (!values.tags.includes(sex.value))
+    values.tags.push(sex.value)
+  values.tags = values.tags.map(x => waifuTagsByTag[x] ? waifuTagsByTag[x].short : x)
   values.uid = random(10000000, 99999999)
   if (serverSave.value)
     proposeCompanion({ ...values, date: new Date().toString() })

@@ -286,9 +286,9 @@
   },
   {
     "rating": 7,
-    "worldName": "Rumic World",
+    "worldName": "Inuyasha",
     "additional": "Sango has Kirara as a familiar. Kikyou has up to eight soul collectors as familiars.",
-    "condition": "Inuyasha (Sengoku Jidai)"
+    "condition": "Sengoku Jidai"
   },
   {
     "rating": 10,
@@ -337,7 +337,7 @@
   },
   {
     "rating": 1,
-    "worldName": "Pokémon",
+    "worldName": "Pokemon",
     "additional": "Purchased (not captured) trainers will have up to six of their most iconic and strongest mons from their canon appearances, bound to them as their trainer is to you. These and other mons that Pokémon trainers in your retinue (including yourself) acquire by any means are spirit familiars that cannot be killed, only knocked out. Pokémon familiars lose this protection if they’re released or traded away. Pokémon are only worth capture credits as waifus or husbandos if you enter a deviant AU where they’re anthropomorphic enough to make poképhilia relatively mainstream.",
     "condition": [
       {
@@ -394,8 +394,7 @@
   },
   {
     "rating": 7,
-    "worldName": "Nier",
-    "condition": "Automata"
+    "worldName": "Nier: Automata"
   },
   {
     "rating": 6,
@@ -692,11 +691,6 @@
   },
   {
     "rating": 9,
-    "worldName": "Iain Banks' Culture",
-    "condition": "Outside The Culture"
-  },
-  {
-    "rating": 9,
     "worldName": "Honkai Impact 3rd",
     "additional": "Mei has Kurikara as a familiar.",
     "condition": [
@@ -721,17 +715,6 @@
   {
     "rating": 8,
     "worldName": "Grim Dawn"
-  },
-  {
-    "rating": 8,
-    "worldName": "Girl Genius",
-    "condition": "Europa (wartime)"
-  },
-  {
-    "rating": 8,
-    "worldName": "Fire Emblem",
-    "additional": "Second-generation characters from Jugdral, Awakening, and Fates can have whichever gameplay-valid parents you want. Robin, Corrin, Byleth, and other Avatars can have any gameplay-legal build. Cavaliers, Pegasus Knights, Wyvern Knights, and other mounted units have their mounts as familiars.",
-    "condition": "Awakening (Doomed Future)"
   },
   {
     "rating": 8,
@@ -920,13 +903,18 @@
     "worldName": "Arpeggio of Blue Steel"
   },
   {
-    "rating": 6,
-    "worldName": "Arknights",
-    "condition": "Chernobog, Kazdel"
-  },
-  {
     "rating": 5,
-    "worldName": "Arknights"
+    "worldName": "Arknights",
+    "condition": [
+      {
+        "name": "Standard",
+        "rating": 5
+      },
+      {
+        "name": "Chernobog, Kazdel",
+        "rating": 6
+      }
+    ]
   },
   {
     "rating": 6,
@@ -982,6 +970,7 @@
   {
     "rating": 4,
     "worldName": "Legend of Zelda",
+    "additional": "Midna cannot take her imp form by default and would strongly prefer not to ever again. She instead has a strong affinity for shadow magic, capable of melting into shadows and teleporting through a world’s Twilight Realm, even if it doesn’t have one. The imp form may still be remade as a shadow magic spell, for use on herself or others. Fi brings the Master Sword with her, as if she was a Unison Device from MGLN; its aesthetics may change if she’s bound by a Symbiote.",
     "condition": "Breath of the Wild"
   },
   {
@@ -996,7 +985,7 @@
   },
   {
     "rating": 5,
-    "worldName": "Konosuba",
+    "worldName": "KonoSuba",
     "additional": "If you have Grand Manor, Luna gets her Adventurer Card-issuing equipment as a workshop. Purchased versions of Luna will carry five blank cards to hold her buyer over until then."
   },
   {
@@ -1011,7 +1000,16 @@
   {
     "rating": 1,
     "worldName": "Iain Banks' Culture",
-    "condition": "Within The Culture"
+    "condition": [
+      {
+        "name": "Within The Culture",
+        "rating": 1
+      },
+      {
+        "name": "Outside The Culture",
+        "rating": 9
+      }
+    ]
   },
   {
     "rating": 6,
@@ -1083,7 +1081,16 @@
   {
     "rating": 7,
     "worldName": "Girl Genius",
-    "condition": "Europa (peacetime)"
+    "condition": [
+      {
+        "name": "Europa (peacetime)",
+        "rating": 7
+      },
+      {
+        "name": "Europa (wartime)",
+        "rating": 8
+      }
+    ]
   },
   {
     "rating": 3,
@@ -1098,6 +1105,7 @@
   {
     "rating": 5,
     "worldName": "Fire Emblem",
+    "additional": "Second-generation characters from Jugdral, Awakening, and Fates can have whichever gameplay-valid parents you want. Robin, Corrin, Byleth, and other Avatars can have any gameplay-legal build. Cavaliers, Pegasus Knights, Wyvern Knights, and other mounted units have their mounts as familiars.",
     "condition": [
       {
         "name": "Awakening (present)",
@@ -1110,6 +1118,10 @@
       {
         "name": "Three Houses (pre-timeskip)",
         "rating": 4
+      },
+      {
+        "name": "Awakening (Doomed Future)",
+        "rating": 8
       }
     ]
   },
@@ -1333,10 +1345,16 @@
     "additional": "Elizabeth’s Tears are limited to the local multiverse surrounding wherever she happens to be at the time."
   },
   {
-    "rating": 1,
-    "q": true,
     "worldName": "Castlevania",
-    "additional": "The Lecarde sisters are humans when first bought. Carmilla no longer suffers from her vampire weaknesses."
+    "rating": 5,
+    "q": true,
+    "additional": "The Lecarde sisters are humans when first bought. Carmilla no longer suffers from her vampire weaknesses.",
+    "condition": [
+      {
+        "name": "2017 Show",
+        "rating": 6
+      }
+    ]
   },
   {
     "rating": 4,
@@ -1373,12 +1391,6 @@
     "q": true,
     "worldName": "King of Fighters",
     "additional": "Hotaru has Itokatsu as a familiar."
-  },
-  {
-    "rating": 5,
-    "q": true,
-    "worldName": "The Legend of Zelda",
-    "additional": "Midna cannot take her imp form by default and would strongly prefer not to ever again. She instead has a strong affinity for shadow magic, capable of melting into shadows and teleporting through a world’s Twilight Realm, even if it doesn’t have one. The imp form may still be remade as a shadow magic spell, for use on herself or others. Fi brings the Master Sword with her, as if she was a Unison Device from MGLN; its aesthetics may change if she’s bound by a Symbiote."
   },
   {
     "rating": 6,
@@ -1431,7 +1443,7 @@
   {
     "rating": 6,
     "q": true,
-    "worldName": "Tokyo Mirage Sessions #FE",
+    "worldName": "Tokyo Mirage Sessions",
     "additional": "All Mirage Masters can call their Mirages and enter Carnage Form in the real world. Any Mirage may be genderbent according to your preferences."
   },
   {

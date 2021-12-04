@@ -33,6 +33,11 @@
       <div class="mx-auto mt-2 w-max flex gap-2">
         <Input v-model="name" placeholder="Save name" />
         <Button label="Save" size="Small" @click="saveBuild" />
+        <a ref="saveButton" href="#" @click="saveBuildFile">
+          <Button label="Save File" size="Small" bg-color="bg-blue-500" class="h-full" />
+        </a>
+        <input ref="loadEl" type="file" class="hidden" @change="loadBuildFile" />
+        <Button label="Load File" size="Small" bg-color="bg-blue-500" @click="() => loadEl.click()" />
       </div>
     </div>
   </Modal>
@@ -55,6 +60,8 @@ const {
 } = useStore()
 
 const name = ref('')
+const saveButton = ref<HTMLLinkElement>(null)
+const loadEl = ref<HTMLElement>(null)
 
 const saves = useStorage<Record<number, any>>('saves', {})
 
@@ -93,8 +100,7 @@ function saveBuild() {
   saves.value[uid] = save
 }
 
-function loadBuld(uid: number) {
-  const build = saves.value[uid]
+function writeBuildValues(build: any) {
   baseBudget.value = build.baseBudget || 0
   startingWorld.value = build.startingWorld
   startingOrigin.value = build.startingOrigin
@@ -116,9 +122,34 @@ function loadBuld(uid: number) {
   budgetMods.value = build.budgetMods
 }
 
+function loadBuld(uid: number) {
+  const build = saves.value[uid]
+  writeBuildValues(build)
+}
+
 function deleteSave(uid: number) {
   remove(savesList.value, { uid })
   delete saves.value[uid]
+}
+
+function saveBuildFile() {
+  const myFile = new Blob([JSON.stringify(save)], { type: 'text/plain' })
+  saveButton.value.setAttribute('href', window.URL.createObjectURL(myFile))
+  saveButton.value.setAttribute('download', `save_${startingWorld.value.worldName}`)
+}
+
+function loadBuildFile(event: any) {
+  if (event?.target?.files[0]) {
+    event.target.files[0].text().then((val) => {
+      try {
+        const build = JSON.parse(val)
+        writeBuildValues(build)
+      }
+      catch {
+        console.error('Error when loading from file')
+      }
+    })
+  }
 }
 
 </script>

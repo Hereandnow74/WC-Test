@@ -69,13 +69,13 @@
             >({{ CHAR_COSTS[(charData.tier) - 2] }})</span>
           </div>
         </div>
-        <div v-if="showTags" class="flex gap-1 text-sm justify-center">
+        <div v-if="showTags" class="flex flex-wrap gap-1 text-sm justify-center">
           <span
             v-for="tag in charData.tags"
             :key="tag"
             class="px-1 rounded-md"
-            :class="tagColors[tag] || 'bg-teal-600'"
-          >{{ tagNames[tag] || tag }}</span>
+            :class="waifuTags[tag] ? waifuTags[tag].color || 'bg-teal-600' : 'bg-teal-600'"
+          >{{ waifuTags[tag] ? waifuTags[tag].tag : tag }}</span>
         </div>
       </div>
     </div>
@@ -92,7 +92,7 @@
 
 <script lang='ts' setup>
 import { findIndex, random } from 'lodash-es'
-import { CHAR_COSTS } from '~/data/constatnts'
+import { CHAR_COSTS, waifuTags } from '~/data/constatnts'
 import { useStore } from '~/store/store'
 
 const props = defineProps({
@@ -149,9 +149,6 @@ const charData = computed(() => {
   if (!res.uid) res.uid = random(10000000, 99999999)
   return res
 })
-
-const tagNames = { F: 'Female', M: 'Male', O: 'Other', C: 'Canon', U: 'By User' }
-const tagColors = { F: 'bg-pink-500', M: 'bg-blue-500', C: 'bg-yellow-400', O: 'bg-fuchsia-700', U: 'bg-warm-gray-600' }
 
 const { flags, companions, localUserCharacters, companionsUIDs } = useStore()
 

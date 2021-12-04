@@ -1,5 +1,5 @@
 import { initializeApp } from 'firebase/app'
-import { getFirestore, collection, addDoc, doc, getDoc, getDocs, query } from 'firebase/firestore/lite'
+import { getFirestore, collection, addDoc, doc, getDoc } from 'firebase/firestore/lite'
 
 export * from './toggles'
 export * from './misc'

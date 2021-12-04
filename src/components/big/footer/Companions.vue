@@ -19,7 +19,7 @@
         <div class="flex gap-2 w-full">
           <img
             v-if="char.image"
-            :src="char.image"
+            :data-src="char.image"
             :alt="char.name"
             class="rounded object-cover max-h-[140px] max-w-[90px] object-top"
           >

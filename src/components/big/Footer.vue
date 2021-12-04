@@ -28,7 +28,7 @@
           <ic:round-unfold-more />
         </span>
       </div>
-      <div class="flex flex-col border m-1 py-1 border-gray-600 flex-grow rounded-sm bg-gray-800 min-h-0">
+      <div class="flex flex-col border m-1 py-1 border-gray-600 flex-grow rounded-sm bg-gray-800 min-h-0 overflow-x-hidden">
         <div class="flex gap-1 mx-2 border-b-1">
           <div
             v-for="tab, i in tabs"
@@ -42,7 +42,7 @@
             {{ tab }}
           </div>
         </div>
-        <transition name="slide">
+        <transition name="slide" mode="out-in">
           <component :is="tabComponents[activeTab]" />
         </transition>
       </div>
@@ -188,39 +188,17 @@ function copyText() {
 </script>
 
 <style>
-.scrollbar {
-  scrollbar-width: thin;
-  scrollbar-color: #3b3b3b #858585;
-}
 
-.scrollbar::-webkit-scrollbar {
-    width: 8px;
+.slide-leave-active,
+.slide-enter-active {
+  @apply transition-transform;
+  @apply ease-in-out;
+  @apply duration-300;
 }
-
-.scrollbar::-webkit-scrollbar-track {
-    background-color: #555555;
-    border-radius: 100px;
-}
-
-.scrollbar::-webkit-scrollbar-thumb {
-    background-color: #242424;
-    border-radius: 100px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: rgb(54, 54, 54);
-}
-
-.slide-enter-active,
-.slide-leave-active {
-  @apply transition-opacity;
-  @apply ease-in;
-}
-
-.slide-enter-from{
-  opacity: 0;
+.slide-enter-from {
+  transform: translateX(-100%);
 }
 .slide-leave-to {
-  opacity: 0;
+  transform: translateX(100%);
 }
 </style>

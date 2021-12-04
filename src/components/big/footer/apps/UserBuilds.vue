@@ -1,7 +1,8 @@
 <template>
   <div class="flex flex-col gap-2 overflow-y-auto pb-4 px-2 scrollbar text-gray-200">
-    <div>
-      Experimental app? - total builds: {{ buildList.length }}
+    <div class="flex justify-between">
+      <div>Experimental app? - total builds: {{ buildList.length }}</div>
+      <Toggle v-model="hideCyrus" label="Hide Cyrus" class="text-red-400" />
     </div>
     <div
       v-for="save in displayList"
@@ -12,7 +13,7 @@
       <div class="grid grid-cols-2 flex-grow">
         <h3 class="col-span-2 text-center text-lg">
           {{ save.nickname }} <span class="text-sm text-gray-300">
-            ({{ useTimeAgo(save.date).value }})
+            ({{ useTimeAgo(save.newDate).value }})
           </span>
         </h3>
         <div class="text-gray-400">
@@ -41,30 +42,17 @@ import { useTimeAgo } from '@vueuse/core'
 import { activeTab, assignBuildData, getBuild, getBuilds, toggleAppMode } from '~/logic'
 import { useSaves } from '~/store/saves'
 
+const hideCyrus = ref(false)
+
 const { buildList } = useSaves()
 
 if (!buildList.value.length)
   getBuilds(builds => JSON.parse(builds.list).forEach(x => buildList.value.push(x)))
 
 const displayList = computed(() => buildList.value
-  .map(x => (x.date = new Date(x.date), x))
-  .sort((a, b) => b.date - a.date))
-
-// function copyAll() {
-//   const buildToCopy = []
-//   buildList.value.forEach(([x, id]) => {
-//     buildToCopy.push({
-//       nickname: x.nickname,
-//       date: x.date,
-//       world: x.startingWorld.worldName,
-//       rating: x.startingWorld.rating,
-//       totalPerks: x.allEffects.length,
-//       totalCompanions: x.companions.length,
-//       id,
-//     })
-//   })
-//   navigator.clipboard.writeText(JSON.stringify(buildToCopy, null, 2))
-// }
+  .filter(x => hideCyrus.value ? !x.date.includes('Normalzeit') : true)
+  .map(x => (x.newDate = new Date(x.date), x))
+  .sort((a, b) => b.newDate - a.newDate))
 
 function loadBuild(id: string) {
   getBuild(id, assignBuildData)

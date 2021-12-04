@@ -164,7 +164,6 @@ const tierOptions = [
 const { localUserCharacters, userCharacters, startingWorld } = useStore()
 
 const options = {
-  includeScore: true,
   findAllMatches: true,
   useExtendedSearch: true,
   threshold: 0.4,
@@ -172,6 +171,8 @@ const options = {
 }
 
 const fuse = new Fuse(charArr.value, options)
+const options2 = { useExtendedSearch: true, findAllMatches: true, keys: ['n'], shouldSort: false }
+const fuseNoSort = new Fuse(charArr.value, options2)
 const params = useUrlSearchParams('history')
 const route = useRoute()
 
@@ -185,6 +186,7 @@ onMounted(async() => {
 
   charArr.value = Array.prototype.concat(userChars, (await getChars()))
   fuse.setCollection(charArr.value)
+  fuseNoSort.setCollection(charArr.value)
   loading.value = false
   if (params.name)
     nextTick(() => search.value = params.name)
@@ -193,8 +195,24 @@ onMounted(async() => {
 
 watch(route, x => search.value = x.query.name || '')
 
+const worldNameDict = {
+  'Xenoblade Chronicles 2': '(Monolith) Xeno-',
+  'Xenoblade Chronicles 1': '(Monolith) Xeno-',
+  'Overlord (LN)': 'Overlord',
+  'Avatar: The Last Airbender': 'Avatar',
+  'Avatar: Legend of Korra': 'Avatar',
+  'Game of Thrones': 'A Song Of Ice And Fire',
+  'Monogatari Series': 'Monogatari',
+  'Magi Series': 'Magi',
+  'Tales Series': 'Tales of',
+  'Prisma Illya': 'Nasuverse',
+  'Fate/Extra': 'Nasuverse',
+  'Precure': 'Pretty Cure',
+}
+
 const filteredCharacters = computed(() => {
-  const sr = search.value || '!^xcv'
+  const sr = search.value
+  const worldName = worldNameDict[startingWorld.value.worldName] || startingWorld.value.worldName
   let sopt: any = {}
   if (isLimited.value) {
     sopt = {
@@ -203,7 +221,7 @@ const filteredCharacters = computed(() => {
         { n: sr },
         {
           $or: [
-            { w: startingWorld.value.worldName }, { d: startingWorld.value.worldName }],
+            { w: `^${worldName}` }, { d: `^${worldName}` }],
         },
       ],
     }
@@ -221,6 +239,10 @@ const filteredCharacters = computed(() => {
   }
   if (gender.value) sopt.$and.push({ b: gender.value })
   if (image.value) sopt.$and.push({ i: image.value })
+
+  if (search.value.length === 0)
+    return fuseNoSort.search('!^xxx', { limit: limit.value })
+
   return fuse.search(sopt, { limit: limit.value })
 })
 

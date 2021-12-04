@@ -79,6 +79,46 @@ export const rulesList = [
   { title: 'arrangedSpecial', title2: 'Special Arranged Match Rules' },
 ]
 
+export const waifuTags = {
+  F: { tag: 'Female', short: 'F', effect: '', desc: '', color: 'bg-pink-500' },
+  M: { tag: 'Male', short: 'M', effect: '', desc: '', color: 'bg-blue-500' },
+  O: { tag: 'Other', short: 'O', effect: '', desc: '', color: 'bg-fuchsia-700' },
+  U: { tag: 'By User', short: 'U', effect: '', desc: '', color: 'bg-warm-gray-600' },
+  dm: { tag: 'Demon', short: 'dm', effect: '', desc: '' },
+  dv: { tag: 'Devil', short: 'dv', effect: '', desc: '' },
+  an: { tag: 'Angel', short: 'an', effect: '', desc: '' },
+  mr: { tag: 'Monster', short: 'mr', effect: '', desc: '' },
+  dg: { tag: 'Dragon', short: 'dg', effect: '', desc: '' },
+  gd: { tag: 'God', short: 'gd', effect: '', desc: '' },
+  mu: { tag: 'Mutant', short: 'mu', effect: '', desc: '' },
+  dh: { tag: 'Demi-human', short: 'dh', effect: '', desc: '' },
+  md: { tag: 'Maid', short: 'md', effect: '', desc: '' },
+  en: { tag: 'Engineer', short: 'en', effect: '', desc: '' },
+  sn: { tag: 'Scientist', short: 'sn', effect: '', desc: '' },
+  st: { tag: 'Sturdy', short: 'st', effect: '', desc: ' - is known for handling disease, chemical medicine, or poisons.' },
+  hr: { tag: 'Harsh', short: 'hr', effect: '', desc: ' - hails from a harsh climate.' },
+  hz: { tag: 'Hazard', short: 'hz', effect: '', desc: ' - can ignore hazardous environments.' },
+  mt: { tag: 'Monster Tamer', short: 'mt', effect: '', desc: ' - is known as a monster-tamer or otherwise being good with animals.' },
+  cl: { tag: 'Cool', short: 'cl', effect: '', desc: ' - is known for keeping a cool head or having great willpower.' },
+  ml: { tag: 'Materialist', short: 'ml', effect: '', desc: ' - known for having a material vice.' },
+  ps: { tag: 'Psychic', short: 'ps', effect: '', desc: ' - is known as a psychic or mind-manipulator.' },
+  mp: { tag: 'Mind Powers', short: 'mp', effect: '', desc: ' - is known as a psychic or mind-manipulator.' },
+  bj: { tag: 'Bodyjack', short: 'bj', effect: '', desc: ' - is known for bodyjacking others.' },
+  dr: { tag: 'Drain HP/MP/SP', short: 'dr', effect: '', desc: ' - can drain or feed on life, mana, or souls.' },
+  id: { tag: 'Instant Death', short: 'id', effect: '', desc: ' - is known for inflicting instant death or not dying even when killed.' },
+  im: { tag: 'Immortality', short: 'im', effect: '', desc: ' is known for inflicting instant death or not dying even when killed.' },
+  pl: { tag: 'Polymorph', short: 'pl', effect: '', desc: ' - is known for polymorphing others.' },
+  ur: { tag: 'Unstable Reality', short: 'ur', effect: '', desc: ' - hails from a region where the local reality is unstable.' },
+  cr: { tag: 'Corrupting', short: 'cr', effect: '', desc: ' - s known for forcibly bringing out others’ dark sides.' },
+  sc: { tag: 'Social', short: 'sc', effect: '', desc: ' - is known for their ability to read or sense people.' },
+  di: { tag: 'Divination', short: 'di', effect: '', desc: ' - is known for using divination or other non-technological remote viewing.' },
+  fm: { tag: 'Fate manipulation', short: 'fm', effect: '', desc: ' - is known as a fate- or luck-manipulator.' },
+  lm: { tag: 'Luck manipulation', short: 'lm', effect: '', desc: ' - is known as a fate- or luck-manipulator.' },
+  tm: { tag: 'Time manipulation', short: 'tm', effect: '', desc: ' - is known as a time-manipulator.' },
+}
+
+export const waifuTagsByTag = Object.values(waifuTags).reduce((a, x) => (a[x.tag] = x, a), {})
+
 export const LINKS = computed(() => {
   const links = {} as Record<string, string>
   const allCats = {

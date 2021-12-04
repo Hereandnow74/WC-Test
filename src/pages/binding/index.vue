@@ -203,6 +203,7 @@ const bindingByType = computed(() => {
 })
 
 onMounted(() => useTooltips())
+watch(activeType, () => nextTick(useTooltips))
 
 const params = useUrlSearchParams('history')
 
