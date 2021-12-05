@@ -11,6 +11,7 @@
       </div>
       <Select v-model.number="tier" :options="tierOptions" />
       <Input v-model.number="limit" class="px-1" :style="`width: ${(''+limit).length + 3}ch`" />
+      <Button size="Small" label="Tags" bg-color="bg-gray-600" @click="toggleShowFilterTags" />
       <div class="flex rounded bg-gray-600 cursor-pointer">
         <div
           :class="gender==='F' ? 'bg-gray-700':''"
@@ -106,17 +107,19 @@
       </div>
     </div>
     <AddCharacter v-if="showAddCharacter" :character="characterToEdit" :edit-mode="editMode" @click="toggleShowAddCharacter" />
+    <Tags v-if="showFilterTags" @click="toggleShowFilterTags" />
   </div>
 </template>
 
 <script lang="ts" setup>
 import Fuse from 'fuse.js'
+import { without } from 'lodash'
 import { useStore } from '~/store/store'
 
-import { toggleShowAddCharacter, showAddCharacter, lazyLoadImg } from '~/logic'
+import { toggleShowAddCharacter, showAddCharacter, lazyLoadImg, toggleShowFilterTags, showFilterTags, tagToggles } from '~/logic'
 import CompanionCard from '~/components/CompanionCard.vue'
 import Checkbox from '~/components/basic/Checkbox.vue'
-import { getChars, getUserChars } from '~/data/constatnts'
+import { getChars, getUserChars, waifuTags } from '~/data/constatnts'
 
 interface Character {
   u: number
@@ -171,7 +174,7 @@ const options = {
 }
 
 const fuse = new Fuse(charArr.value, options)
-const options2 = { useExtendedSearch: true, findAllMatches: true, keys: ['n'], shouldSort: false }
+const options2 = { useExtendedSearch: true, findAllMatches: true, keys: ['n', 'w', 't', 'b', 'i', 'd'], shouldSort: false }
 const fuseNoSort = new Fuse(charArr.value, options2)
 const params = useUrlSearchParams('history')
 const route = useRoute()
@@ -195,6 +198,8 @@ onMounted(async() => {
 
 watch(route, x => search.value = x.query.name || '')
 
+const tagsSearch = computed(() => Object.keys(tagToggles).filter(key => tagToggles[key]))
+
 const worldNameDict = {
   'Xenoblade Chronicles 2': '(Monolith) Xeno-',
   'Xenoblade Chronicles 1': '(Monolith) Xeno-',
@@ -211,7 +216,7 @@ const worldNameDict = {
 }
 
 const filteredCharacters = computed(() => {
-  const sr = search.value
+  const sr = search.value || '!^xxx'
   const worldName = worldNameDict[startingWorld.value.worldName] || startingWorld.value.worldName
   let sopt: any = {}
   if (isLimited.value) {
@@ -237,11 +242,15 @@ const filteredCharacters = computed(() => {
       ],
     }
   }
+  if (Object.keys(waifuTags).length !== tagsSearch.value.length)
+    sopt.$and.push({ b: `=${tagsSearch.value.join('|')}` })
+  else
   if (gender.value) sopt.$and.push({ b: gender.value })
+
   if (image.value) sopt.$and.push({ i: image.value })
 
   if (search.value.length === 0)
-    return fuseNoSort.search('!^xxx', { limit: limit.value })
+    return fuseNoSort.search(sopt, { limit: limit.value })
 
   return fuse.search(sopt, { limit: limit.value })
 })

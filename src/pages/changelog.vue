@@ -5,14 +5,24 @@
     </h2>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
+        05 December 2021
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>Filter by tags</li>
+        <li>Added some tags to characters</li>
+        <li>Bug fixes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
         04 December 2021
       </h3>
       <ul class="list-decimal list-inside">
         <li>64 new user submitted Characters.</li>
         <li>Added 15 user submitted worlds.</li>
-        <li>Add Character dialog now have <b>tag</b> input</li>
+        <li>Add Character dialog now have <b>Tags</b> input</li>
         <li>Renamed some Worlds that 'Limit to a World' would work better</li>
-        <li>Save/Load can now have save to file option</li>
+        <li>Save/Load now have Save to File option</li>
         <li>Bug fixes</li>
       </ul>
     </div>

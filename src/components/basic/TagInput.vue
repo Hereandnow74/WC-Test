@@ -11,11 +11,11 @@
         @keydown.enter="addTag(newTag)"
         @keydown.delete="newTag.length || removeTag(tags.length - 1)"
       />
-      <div id="tagslist" ref="listEl" hidden>
+      <div id="tagslist" ref="listEl" hidden class="scrollbar overflow-y-auto max-h-[300px] ">
         <div
           v-for="option in searchResult"
           :key="option.item.tag"
-          class="hover:bg-gray-600 cursor-pointer"
+          class="hover:bg-gray-600 cursor-pointer border-b border-gray-600 pb-1 px-1"
           @click="addTag(option.item.tag)"
         >
           {{ option.item.tag }}
@@ -82,11 +82,12 @@ const options = {
   findAllMatches: true,
   threshold: 0.1,
   keys: ['tag', 'desc'],
+  useExtendedSearch: true,
 }
 const fuse = new Fuse(Object.values(waifuTags), options)
 const listEl = ref<HTMLElement|null>(null)
 
-const searchResult = computed(() => fuse.search(newTag.value, { limit: 10 }))
+const searchResult = computed(() => fuse.search(newTag.value || '!^xxx'))
 
 let list = null
 watch(searchResult, () => {
@@ -99,7 +100,7 @@ watch(searchResult, () => {
       trigger: 'manual',
       arrow: false,
       interactive: true,
-      placement: 'auto-start',
+      placement: 'top-start',
     })[0]
     list.show()
   }
@@ -111,7 +112,7 @@ watch(tags, () => nextTick(onTagsChange), { deep: true })
 function addTag(tag: string) {
   if (!tag) return
   if (tags.value.includes(tag)) return
-  tags.value.push(tag)
+  tags.value.push(waifuTagsByTag[tag].short || tag)
   newTag.value = ''
 }
 

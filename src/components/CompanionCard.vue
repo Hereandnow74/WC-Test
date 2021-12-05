@@ -73,8 +73,9 @@
           <span
             v-for="tag in charData.tags"
             :key="tag"
-            class="px-1 rounded-md"
+            class="px-1 rounded-md cursor-pointer"
             :class="waifuTags[tag] ? waifuTags[tag].color || 'bg-teal-600' : 'bg-teal-600'"
+            :title="waifuTags[tag] ? waifuTags[tag].desc || '' : ''"
           >{{ waifuTags[tag] ? waifuTags[tag].tag : tag }}</span>
         </div>
       </div>

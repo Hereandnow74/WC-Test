@@ -33,6 +33,7 @@ const value = ref(props.modelValue)
 const emit = defineEmits(['update:modelValue'])
 
 watch(value, () => emit('update:modelValue', value.value))
+watch(props, () => value.value = props.modelValue)
 
 function toggle() {
   value.value = !value.value

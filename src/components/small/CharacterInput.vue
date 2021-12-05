@@ -76,12 +76,13 @@ watch(searchResult, () => {
   }
 })
 
-const emit = defineEmits(['update:modelValue', 'updateTier'])
+const emit = defineEmits(['update:modelValue', 'updateTier', 'updateUID'])
 
 watch(value, () => emit('update:modelValue', value.value))
 
 function chooseChar(char: any) {
   value.value = char.item.n
   emit('updateTier', char.item.t)
+  emit('updateUID', char.item.u)
 }
 </script>

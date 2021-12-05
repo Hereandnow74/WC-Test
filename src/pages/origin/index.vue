@@ -35,6 +35,7 @@
                 v-model="choosedOrigin.character"
                 :error-message="costError"
                 @updateTier="choosedOrigin.tier = $event"
+                @updateUID="choosedOrigin.uid = $event"
               />
               <Input
                 v-model="choosedOrigin.tier"
@@ -81,6 +82,7 @@ const choosedOrigin = reactive({
   cost: 0,
   character: '',
   tier: 1,
+  uid: 0,
 })
 const costError = ref('')
 
@@ -96,6 +98,11 @@ watch(choosedOrigin, () => {
 function chooseOrigin(item: Origin) {
   choosedOrigin.title = item.title
   choosedOrigin.cost = item.cost
+  if (!['Substitute', 'Possess'].includes(choosedOrigin.title)) {
+    choosedOrigin.character = ''
+    choosedOrigin.tier = 1
+    choosedOrigin.uid = 0
+  }
 
   if (startingOrigin.value.title === choosedOrigin.title)
     Object.assign(choosedOrigin, startingOrigin.value)
@@ -110,6 +117,7 @@ function pickOrigin() {
     allEffects.value.push(choosedOrigin.title)
     Object.assign(startingOrigin.value, choosedOrigin)
   }
+  console.log(startingOrigin.value)
 }
 
 </script>
