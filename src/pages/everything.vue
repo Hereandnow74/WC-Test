@@ -46,6 +46,13 @@
 
       <div>
         <h3 class="text-lg font-semibold">
+          Other Controls
+        </h3>
+        <Enum :list="otherControls" :color="color" />
+      </div>
+
+      <div>
+        <h3 class="text-lg font-semibold">
           Heritages
         </h3>
         <Enum :list="heritages" :color="color" />
@@ -92,7 +99,7 @@
 <script lang='ts' setup>
 import Fuse from 'fuse.js'
 import { heritages } from '~/data/heritage'
-import { bindings, lures, lureExpansions } from '~/data/binding'
+import { bindings, lures, lureExpansions, otherControls } from '~/data/binding'
 import { intensity } from '~/data/intensity'
 import { origin } from '~/data/origin'
 import { defenses, homes, perks, rides, genericPerks, talents } from '~/data/talents'
@@ -111,7 +118,7 @@ const options = {
 
 const color = 'odd:text-gray-500 even:text-gray-900 dark:(odd:text-gray-200 even:text-gray-400) font-medium'
 
-const all = [...heritages, ...bindings, ...lures, ...lureExpansions, ...intensity, ...origin,
+const all = [...heritages, ...bindings, ...lures, ...lureExpansions, ...otherControls, ...intensity, ...origin,
   ...defenses, ...homes, ...perks, ...rides, ...genericPerks, ...talents, ...waifu_perks]
 
 const fuse = computed(() => new Fuse(all, options))

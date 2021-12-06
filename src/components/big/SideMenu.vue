@@ -2,11 +2,17 @@
   <div
     ref="sidemenu"
     class="fixed left-0 top-0 bottom-0 bg-gray-200 dark:bg-gray-700 flex flex-col gap-2 items-start pt-2
-    transition-transform transform z-30"
+    transition-transform transform z-30 border-r-2 border-gray-400 "
   >
     <button class="icon-btn mx-2 !outline-none hover:text-red-400" @click="() => toggleSideMenu()">
       <fa-regular:window-close />
     </button>
+    <h3 class="mx-2 opacity-50 border-b">
+      Actions
+    </h3>
+    <div class="icon-text-btn mx-2" @click="toggleShowAddPerk">
+      <carbon:add-alt />Propose Perk
+    </div>
     <h3 class="mx-2 opacity-50 border-b">
       Options
     </h3>
@@ -38,6 +44,14 @@
     >
       <simple-icons:discord /> Discord
     </a>
+    <a
+      class="icon-text-btn mx-2 !text-red-500 !font-bold"
+      href="https://www.patreon.com/interactiveapps"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <ri:patreon-line /> Patreon
+    </a>
     <h3 class="mx-2 opacity-50 border-b">
       Menu
     </h3>
@@ -59,13 +73,18 @@
     <router-link class="icon-text-btn mx-2" to="/help">
       <bx:bx-help-circle />Help
     </router-link>
+    <teleport to="#app">
+      <component :is="addPerkComponent" v-if="showAddPerk" @click="toggleShowAddPerk" />
+    </teleport>
   </div>
 </template>
 
 <script lang='ts' setup>
-import { isDark, toggleDark, toggleSideMenu, showSideMenu } from '~/logic'
+import { isDark, toggleDark, toggleSideMenu, showSideMenu, showAddPerk, toggleShowAddPerk } from '~/logic'
 
 const sidemenu = ref(null)
+
+const addPerkComponent = computed(() => defineAsyncComponent(() => import('../modals/AddPerk.vue')))
 
 onClickOutside(sidemenu, event => showSideMenu.value = false)
 </script>

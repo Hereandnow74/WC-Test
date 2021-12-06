@@ -44,6 +44,15 @@ export function proposeRide(ride: any) {
   }
 }
 
+export function proposePerk(perk: any, callback: any) {
+  try {
+    addDoc(collection(db, 'perks'), perk).then(callback)
+  }
+  catch (e) {
+    console.error('Error proposing a perk: ', e)
+  }
+}
+
 export function shareLink(buildData: any, callback: any) {
   try {
     addDoc(collection(db, 'builds'), buildData).then(callback)

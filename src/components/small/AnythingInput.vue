@@ -11,7 +11,7 @@
         outline="none active:none"
         autocomplete="off"
       />
-      <div class="flex items-center hover:bg-gray-200">
+      <div class="flex items-center hover:bg-gray-200 text-gray-800">
         <bx:bxs-chevron-up v-if="tippyShown" />
         <bx:bxs-chevron-down v-else />
       </div>

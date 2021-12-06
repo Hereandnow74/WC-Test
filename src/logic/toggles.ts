@@ -8,6 +8,7 @@ export const [showAddWorld, toggleShowAddWorld] = useToggle()
 export const [showAddCharacter, toggleShowAddCharacter] = useToggle()
 export const [showAddRide, toggleShowAddRide] = useToggle()
 export const [showFilterTags, toggleShowFilterTags] = useToggle()
+export const [showAddPerk, toggleShowAddPerk] = useToggle()
 
 export const [appMode, toggleAppMode] = useToggle()
 export const orientation = ref(false)

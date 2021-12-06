@@ -2,7 +2,7 @@
   <button
     class="text-gray-100 font-medium rounded filter hover:hue-rotate-15 transition-colors flex items-center
     justify-center gap-1 shadow shadow-light-50"
-    :class="[bgColor, sizes[size]]"
+    :class="[bgColor, sizes[size], disabled ? '!bg-gray-500' : '']"
   >
     <span v-if="icon" class="iconify" :data-icon="icon"></span>
     <span v-if="label">{{ label }}</span>
@@ -28,6 +28,10 @@ defineProps({
   icon: {
     type: String,
     default: '',
+  },
+  disabled: {
+    type: Boolean,
+    default: false,
   },
 })
 

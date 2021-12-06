@@ -28,7 +28,6 @@
           A single 600-credit budget for all other official perks found in this catalog. - [{{ miscPerksCost + waifuPerksCost + genericWaifuPerksCost }}]
           <Valid :condition="otherLimit" />
         </div>
-        <div>{{ startingOrigin }}</div>
       </div>
       <emojione-monotone:skull
         v-else

@@ -5,7 +5,7 @@
     <Navigation :items="routes" :titles="titles" :level="1" class="text-base md:text-xl">
     </Navigation>
     <ModeButton class="hidden lg:block" />
-    <SideMenu :class="showSideMenu ? 'translate-x-0' : '-translate-x-36'" />
+    <SideMenu :class="showSideMenu ? 'translate-x-0' : '-translate-x-full'" />
   </nav>
 </template>
 

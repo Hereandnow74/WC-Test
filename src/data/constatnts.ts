@@ -84,6 +84,8 @@ export const waifuTags = {
   M: { tag: 'Male', short: 'M', effect: '', desc: '', color: 'bg-blue-500' },
   O: { tag: 'Other', short: 'O', effect: '', desc: '', color: 'bg-fuchsia-700' },
   U: { tag: 'By User', short: 'U', effect: '', desc: '', color: 'bg-warm-gray-600' },
+  C: { tag: 'Canon', short: 'C', effect: '', desc: 'From canon spreadsheet', color: 'bg-yellow-400 text-black' },
+  P: { tag: 'Perk', short: 'P', effect: '', desc: 'Have a specific waifu perk', color: 'bg-amber-200 text-black' },
   dm: { tag: 'Demon', short: 'dm', effect: '', desc: '' },
   dv: { tag: 'Devil', short: 'dv', effect: '', desc: '' },
   an: { tag: 'Angel', short: 'an', effect: '', desc: '' },
