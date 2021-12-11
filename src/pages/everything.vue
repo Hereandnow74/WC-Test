@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-screen-md mx-auto">
+  <div class="max-w-screen-md lg:pl-0">
     <h1 class="text-xl font-bold text-center">
       Index of Everything
     </h1>

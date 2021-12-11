@@ -1103,3 +1103,24 @@ waifu_perks.push({
   cost: 300,
   desc: 'Miku is now the host to Shem-Ha Mephorash, the devil who betrayed her fellow Custodians, attempted to enslave humanity, and survived her defeat by embedding herself within human language. Shem-Ha may instead be purchased separately, in her own body, for 500 credits. Both versions of Shem-Ha qualify for special Alterzelu Symbiote theming. ',
 })
+
+// DLC's perks
+
+export const DLCwaifu_perks: WaifuPerk[] = []
+
+DLCwaifu_perks.push({
+  dlc: 'Cter',
+  waifu: 'Isis Remnant',
+  2582041: 10275,
+  from: 'I Was Caught up in a Hero Summoning, but That World Is at Peace',
+  desc: `
+  <p>As far as most people on Trinia concerned, Isis born from the magic power left behind by a multitude of dead beings. In reality Shallow Vernal created her as an experiment using the soul of a evil god which was defeated in her another world.</p>
+  <p>Unable to control her power, she continuously released her magic which caused death and fear to those around her, and she felt herself even more lonely and alienated as she become an object of fear to all.</p>
+  <p>With this perk however, you can save her from that hell. Isis now has complete control over her Magic Power of Death.</p>
+  <p>Isis spends most of her magic to actually suppress her power, thus this perk will allow Isis to wield her true power, boosting her up from T8 to T9.</p>
+  <p>Even without this perk, Isis still has the potential to someday come to control her power, however it has already been over 20,000 years since she has started to try...it is difficult to say how much longer it would truly take her to fully master this otherworldly power of hers.</p>`,
+  cost: 300,
+  tier: 9,
+  image: 'https://i.imgur.com/c4caZQ7l.jpg',
+  title: 'Remnants of the Evil God',
+})

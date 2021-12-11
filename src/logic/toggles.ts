@@ -3,12 +3,14 @@ import { waifuTags } from '~/data/constatnts'
 export const isDark = useDark()
 export const toggleDark = useToggle(isDark)
 
-export const [showSideMenu, toggleSideMenu] = useToggle()
+export const [showSideMenu, toggleSideMenu] = useToggle(true)
 export const [showAddWorld, toggleShowAddWorld] = useToggle()
 export const [showAddCharacter, toggleShowAddCharacter] = useToggle()
 export const [showAddRide, toggleShowAddRide] = useToggle()
 export const [showFilterTags, toggleShowFilterTags] = useToggle()
 export const [showAddPerk, toggleShowAddPerk] = useToggle()
+export const [showAddMission, toggleShowAddMission] = useToggle()
+export const [isDLC, toggleDLC] = useToggle(true)
 
 export const [appMode, toggleAppMode] = useToggle()
 export const orientation = ref(false)

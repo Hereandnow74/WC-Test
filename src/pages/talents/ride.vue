@@ -1,5 +1,5 @@
 <template>
-  <div class="md:p-2">
+  <div class="sm:p-2 text-sm sm:text-base">
     <Desc :desc="rideDesc" class="p-2 mb-2 max-w-4xl mx-auto bg-violet-200 dark:bg-violet-900" />
     <Button label="Create A Ride" class="mx-auto mb-2 block" bg-color="bg-blue-500" @click="toggleShowAddRide" />
     <div class="flex flex-wrap gap-2 mx-auto justify-center pb-8">
@@ -11,7 +11,7 @@
         :bg="rideAvailable(ride) ? 'light-200 dark:dark-500 hover:(light-700 dark:dark-700)' : 'gray-300 dark:gray-500'"
         @click="selectRide(ride)"
       >
-        <h3 class="relative text-center text-xl">
+        <h3 class="relative text-center text-base sm:text-xl">
           {{ ride.title }} <span text="gray-500 dark:gray-400 base">
             (Cost: <span class="text-green-500 dark:text-green-300 font-semibold">
               {{ ride.cost >= 11111 ? 'Tier 11 ticket' : selectedRide.title === ride.title ? selectedRide.cost : ride.cost }}
@@ -66,7 +66,7 @@
             </li>
           </ul>
         </div>
-        <Desc :desc="ride.desc" class="min-w-sm mx-auto" />
+        <Desc :desc="ride.desc" class="mx-auto" />
         <div v-if="ride.example" class="px-2">
           <span class="font-semibold">Example: </span> {{ ride.example }}
         </div>

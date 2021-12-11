@@ -32,11 +32,14 @@
               <span class="text-gray-500 ml-auto whitespace-nowrap"> Tier: <span class="text-green-500">{{ char.tier }}</span></span>
               <span
                 v-if="char.tier !== char.priceTier"
-                class="text-gray-500 ml-2"
+                class="text-gray-500 ml-2 whitespace-nowrap"
               > Price Tier: <span class="text-green-500">{{ char.priceTier }}</span></span>
             </div>
             <span class="text-gray-500">From: <span class="text-gray-400">{{ char.world }}</span></span>
-            <NumberInput v-if="!char.sold" v-model="char.tier" :max="11" label="Change tier" class="whitespace-nowrap" />
+            <div class="flex gap-2 mb-1">
+              <NumberInput v-if="!char.sold" v-model="char.tier" :max="11" label="Change tier" class="whitespace-nowrap" />
+              <Variants v-if="!char.sold && char.method !== 'unbound'" v-model="char.role" :list="['Member', 'Familiar']" />
+            </div>
             <div v-if="!char.sold" class="flex gap-2 mt-auto justify-end">
               <Button
                 v-if="['capture'].includes(char.method)"
@@ -81,7 +84,7 @@ const filters = useStorage('companionFilters', [true, true, true])
 const companionsData = computed(() => [...companions.value])
 
 const filteredMethods = computed(() => {
-  const methods = []
+  const methods = ['unbound']
   if (filters.value[0]) methods.push('buy', 'yoink', 'used')
   if (filters.value[1]) methods.push('capture')
   return methods
@@ -121,6 +124,7 @@ const methods = {
   capture: 'Captured',
   used: 'Used',
   yoink: 'Yoinked',
+  unbound: 'Unbound',
 }
 onMounted(() => lazyLoadImg(waifuList.value))
 watch(companionsDataFiltered, () => {

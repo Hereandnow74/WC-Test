@@ -31,10 +31,11 @@ export function lazyLoadImg(list: HTMLElement| null) {
   }
 }
 
-export async function randomChar(withImg: boolean, maxCost: number) {
+export async function randomChar(withImg: boolean, maxCost = 0, minCost = 0) {
   let chars = Array.prototype.concat(await getChars(), await getUserChars())
   if (withImg) chars = chars.filter(x => x.i && x.i.length)
   if (maxCost) chars = chars.filter(x => (CHAR_COSTS[x.t - 1] || 0) <= maxCost)
+  if (minCost) chars = chars.filter(x => (CHAR_COSTS[x.t - 1] || 0) >= minCost)
   const randomNumber = random(0, chars.length)
 
   return chars[randomNumber]

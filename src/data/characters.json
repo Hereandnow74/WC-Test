@@ -921,7 +921,8 @@
     "w": "(Square) Drakengard/Nier",
     "b": [
       "F",
-      "C"
+      "C",
+      "tm", "ad"
     ],
     "d": "Drakengard 3"
   },
@@ -999,7 +1000,8 @@
     "w": "(Square) Drakengard/Nier",
     "b": [
       "F",
-      "C"
+      "C",
+      "ml"
     ],
     "d": "Drakengard 3"
   },
@@ -1012,7 +1014,8 @@
     "w": "(Square) Drakengard/Nier",
     "b": [
       "F",
-      "C"
+      "C",
+      "ad"
     ],
     "d": "Nier: Automata"
   },
@@ -2649,7 +2652,8 @@
     "w": "(Square) Final Fantasy",
     "b": [
       "F",
-      "C"
+      "C",
+      "sd"
     ],
     "d": "Final Fantasy Type-0"
   },
@@ -2662,7 +2666,8 @@
     "w": "(Square) Final Fantasy",
     "b": [
       "F",
-      "C"
+      "C",
+      "sd", "me"
     ],
     "d": "Final Fantasy Type-0"
   },
@@ -2675,7 +2680,8 @@
     "w": "(Square) Final Fantasy",
     "b": [
       "F",
-      "C"
+      "C",
+      "gd", "tm", "me"
     ],
     "d": "Final Fantasy Type-0"
   },
@@ -2688,7 +2694,8 @@
     "w": "(Square) Final Fantasy",
     "b": [
       "F",
-      "C"
+      "C",
+      "hp"
     ],
     "d": "Kingdom Hearts"
   },
@@ -15723,7 +15730,8 @@
     "w": "Bayonetta",
     "b": [
       "F",
-      "C"
+      "C",
+      "wh", "tm"
     ]
   },
   {
@@ -15735,7 +15743,8 @@
     "w": "Bayonetta",
     "b": [
       "F",
-      "C"
+      "C",
+      "wh", "tm", "tc"
     ]
   },
   {
@@ -17635,7 +17644,7 @@
     "s": "https://www.deviantart.com/shailo/art/Bleach-fem-Ichigo-217524042",
     "w": "Bleach",
     "b": [
-      "M"
+      "M", "dc", "cl"
     ]
   },
   {
@@ -24386,7 +24395,7 @@
     "s": "https://chan.sankakucomplex.com/post/show/7170560",
     "w": "DC (Gotham)",
     "b": [
-      "M"
+      "M", "sp", "sc", "cl"
     ]
   },
   {
@@ -24631,7 +24640,7 @@
     "i": "https://i.imgur.com/NAWSdRym.jpg",
     "w": "DC (Superman)",
     "b": [
-      "M"
+      "M", "sp", "hz", "cl"
     ]
   },
   {
@@ -25204,7 +25213,7 @@
     "s": "https://chan.sankakucomplex.com/post/show/7168404",
     "w": "Devil May Cry",
     "b": [
-      "M"
+      "M", "dv", "hp"
     ]
   },
   {
@@ -35292,17 +35301,6 @@
     "t": 3,
     "i": "grand_cleric_elemena.png",
     "s": "https://vignette.wikia.nocookie.net/dragonage/images/6/66/Grand_Cleric_Elemena.png/revision/latest?cb=20130228114111",
-    "w": "Dragon Age",
-    "b": [
-      "F"
-    ]
-  },
-  {
-    "u": 8236,
-    "n": "Isabela",
-    "t": 3,
-    "i": "d9d228z_8bf02989_46e7_4c9b_8781_a557ef574de6.jpg",
-    "s": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f1e5c025-ae19-4824-bb5b-45ebe0311336/d9d228z-8bf02989-46e7-4c9b-8781-a557ef574de6.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2YxZTVjMDI1LWFlMTktNDgyNC1iYjViLTQ1ZWJlMDMxMTMzNlwvZDlkMjI4ei04YmYwMjk4OS00NmU3LTRjOWItODc4MS1hNTU3ZWY1NzRkZTYuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.ELmiBDUx-ABYnN_uIcY43T7kLU17I0NsjqadRrxI2iY",
     "w": "Dragon Age",
     "b": [
       "F"
@@ -49442,7 +49440,7 @@
   },
   {
     "u": 9821,
-    "n": "Ophelia Parmrsolone",
+    "n": "Ophelia Phamrsolone",
     "t": 5,
     "i": "sample_c0832ee0322fc53370d139911b8822e6.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/17786762",
@@ -50374,7 +50372,8 @@
     "w": "Fire Emblem",
     "b": [
       "F",
-      "C"
+      "C",
+      "sn"
     ],
     "d": "4/5: Jugdral"
   },
@@ -54611,7 +54610,7 @@
     "i": "https://i.imgur.com/0UU3xhem.jpg",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -54621,7 +54620,7 @@
     "i": "https://i.imgur.com/ZrJDtABm.jpg",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -54631,7 +54630,7 @@
     "i": "https://i.imgur.com/BeZuFuYm.jpg",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -54641,7 +54640,7 @@
     "i": "https://i.imgur.com/hPoYV78m.jpg",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -54651,7 +54650,7 @@
     "i": "https://i.imgur.com/XuCC7vxm.jpg",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -54661,7 +54660,7 @@
     "i": "https://i.imgur.com/VmlIk1Nm.png",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -54671,7 +54670,7 @@
     "i": "https://i.imgur.com/GzappPqm.png",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -54681,7 +54680,7 @@
     "i": "https://i.imgur.com/kfY81JTm.jpg",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -54691,7 +54690,7 @@
     "i": "https://i.imgur.com/OteiUmIm.jpg",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -54701,7 +54700,7 @@
     "i": "https://i.imgur.com/eIlYqFWm.jpg",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -54711,7 +54710,7 @@
     "i": "https://i.imgur.com/AKPd5hMm.jpg",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -54721,7 +54720,7 @@
     "i": "https://i.imgur.com/m2u8Zo7m.jpg",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -54731,7 +54730,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -54741,7 +54740,7 @@
     "i": "https://i.imgur.com/EROrQSim.png",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -54751,7 +54750,7 @@
     "i": "https://i.imgur.com/hexZKrRm.jpg",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -54761,7 +54760,7 @@
     "i": "https://i.imgur.com/dpdnG97m.png",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -54771,7 +54770,7 @@
     "i": "https://i.imgur.com/uTx7nckm.png",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -54781,7 +54780,7 @@
     "i": "https://i.imgur.com/ZRhR3ANm.jpg",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -54791,7 +54790,7 @@
     "i": "https://i.imgur.com/Se9DhXOm.jpg",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -54801,7 +54800,7 @@
     "i": "https://i.imgur.com/auFtp7Wm.jpg",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -54811,7 +54810,7 @@
     "i": "https://i.imgur.com/ouD561Nm.png",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -54821,7 +54820,7 @@
     "i": "https://i.imgur.com/M2yS6aPm.jpg",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -54831,7 +54830,7 @@
     "i": "https://i.imgur.com/RGSKW9qm.png",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -54841,7 +54840,7 @@
     "i": "https://i.imgur.com/GbDZqdqm.jpg",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -54851,7 +54850,7 @@
     "i": "https://i.imgur.com/nFO9Yywm.jpg",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -54861,7 +54860,7 @@
     "i": "https://i.imgur.com/3cMwSIhm.jpg",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -54871,7 +54870,7 @@
     "i": "https://i.imgur.com/QYBh7yBm.jpg",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -54881,7 +54880,7 @@
     "i": "https://i.imgur.com/DfVBQdam.jpg",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -54891,7 +54890,7 @@
     "i": "https://i.imgur.com/JHU2tVvm.png",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -54901,7 +54900,7 @@
     "i": "https://i.imgur.com/IEQ8QECm.png",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -54911,7 +54910,7 @@
     "i": "https://i.imgur.com/3KTjDIbm.png",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -54921,7 +54920,7 @@
     "i": "https://i.imgur.com/VzCTDCUm.jpg",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -54931,7 +54930,7 @@
     "i": "https://i.imgur.com/I1AGtoVm.jpg",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -54941,7 +54940,7 @@
     "i": "https://i.imgur.com/rfx4je1m.jpg",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -54951,7 +54950,7 @@
     "i": "https://i.imgur.com/WY7tGXwm.png",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -54961,7 +54960,7 @@
     "i": "https://i.imgur.com/f5cZSzQm.png",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -54971,7 +54970,7 @@
     "i": "https://i.imgur.com/NVzlyHom.png",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -54981,7 +54980,7 @@
     "i": "https://i.imgur.com/gOL8McEm.jpg",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -54991,7 +54990,7 @@
     "i": "https://i.imgur.com/9HPeO7pm.png",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55001,7 +55000,7 @@
     "i": "https://i.imgur.com/tatQA6sm.png",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55011,7 +55010,7 @@
     "i": "https://i.imgur.com/XETvT3em.jpg",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55021,7 +55020,7 @@
     "i": "https://i.imgur.com/3CvlAp6m.jpg",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55031,7 +55030,7 @@
     "i": "https://i.imgur.com/7Ql2eMQm.png",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55041,7 +55040,7 @@
     "i": "https://i.imgur.com/lX6PFZVm.jpg",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55051,7 +55050,7 @@
     "i": "https://i.imgur.com/GwSbn5fm.jpg",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55061,7 +55060,7 @@
     "i": "https://i.imgur.com/3kCb9lmm.jpg",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55071,7 +55070,7 @@
     "i": "https://i.imgur.com/eH06Mb0m.jpg",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55081,117 +55080,117 @@
     "i": "https://i.imgur.com/VeQfNbAm.png",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
     "u": 3713,
     "n": "NZ75",
     "t": 4,
-    "i": "",
+    "i": "https://i.imgur.com/JEUT7sAm.jpg",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
     "u": 3714,
     "n": "P22",
     "t": 4,
-    "i": "",
+    "i": "https://i.imgur.com/ws6yHwhm.jpg",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
     "u": 3715,
     "n": "PA-15",
     "t": 4,
-    "i": "",
+    "i": "https://i.imgur.com/n6V3Wylm.png",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
     "u": 3716,
     "n": "Px4 Storm",
     "t": 4,
-    "i": "",
+    "i": "https://i.imgur.com/4WShuxcm.jpg",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
     "u": 3717,
     "n": "Python",
     "t": 4,
-    "i": "",
+    "i": "https://i.imgur.com/J8wbxlHm.jpg",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
     "u": 3718,
     "n": "Webley",
     "t": 4,
-    "i": "",
+    "i": "https://i.imgur.com/GwaymgAm.jpg",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
     "u": 3719,
     "n": "Welrod MkII",
     "t": 4,
-    "i": "",
+    "i": "https://i.imgur.com/YCA2EfNm.png",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
     "u": 3720,
     "n": "F2000",
     "t": 4,
-    "i": "",
+    "i": "https://i.imgur.com/nXH8S9Zm.jpg",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
     "u": 3721,
     "n": "G3",
     "t": 4,
-    "i": "",
+    "i": "https://i.imgur.com/nS343Y8m.jpg",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
     "u": 3722,
     "n": "Galil",
     "t": 4,
-    "i": "",
+    "i": "https://i.imgur.com/2EmtM1Fm.jpg",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
     "u": 3723,
     "n": "L85A1",
     "t": 4,
-    "i": "",
+    "i": "https://i.imgur.com/X8flpJIm.png",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55201,37 +55200,37 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
     "u": 3725,
     "n": "Type 63",
     "t": 4,
-    "i": "",
+    "i": "https://i.imgur.com/tpkYxARm.jpg",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
     "u": 3726,
     "n": "6P62",
     "t": 4,
-    "i": "",
+    "i": "https://i.imgur.com/mjmgb0wm.jpg",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
     "u": 3727,
     "n": "AK-47",
     "t": 4,
-    "i": "",
+    "i": "https://i.imgur.com/Uhpw0zbm.png",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55241,7 +55240,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55251,37 +55250,37 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
     "u": 3730,
     "n": "ASh-12.7",
     "t": 4,
-    "i": "",
+    "i": "https://i.imgur.com/i8ghOVmm.jpg",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
     "u": 3731,
     "n": "CZ-805",
     "t": 4,
-    "i": "",
+    "i": "https://i.imgur.com/0Ta8zbUm.jpg",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
     "u": 3732,
     "n": "FNC",
     "t": 4,
-    "i": "",
+    "i": "https://i.imgur.com/stISkkem.jpg",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55291,17 +55290,17 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
     "u": 3734,
     "n": "INSAS",
     "t": 4,
-    "i": "",
+    "i": "https://i.imgur.com/WwWrJKQm.jpg",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55311,107 +55310,108 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
     "u": 3736,
     "n": "Model L",
     "t": 4,
-    "i": "",
+    "i": "https://i.imgur.com/yRN484Rm.png",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
     "u": 3737,
     "n": "OTs-12",
     "t": 4,
-    "i": "",
+    "i": "https://i.imgur.com/Qa0W2CDm.jpg",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
     "u": 3738,
     "n": "StG44",
     "t": 4,
-    "i": "",
+    "i": "https://i.imgur.com/KvSpX9Am.png",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
     "u": 3739,
     "n": "T65",
     "t": 4,
-    "i": "",
+    "i": "https://i.imgur.com/pLpxrdum.jpg",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
     "u": 3740,
     "n": "Type 03",
     "t": 4,
-    "i": "",
+    "i": "https://i.imgur.com/abRv4zJm.jpg",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
     "u": 3741,
     "n": "9A-91",
     "t": 4,
-    "i": "",
+    "i": "https://i.imgur.com/I9w5Jukm.jpg",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
     "u": 3742,
     "n": "A-91",
     "t": 4,
-    "i": "",
+    "i": "https://i.imgur.com/1JMXmWnm.jpg",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
     "u": 3743,
     "n": "AS Val",
     "t": 4,
-    "i": "",
+    "i": "https://i.imgur.com/f6pbxh4m.jpg",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
     "u": 3744,
     "n": "Ak 5",
     "t": 4,
-    "i": "",
+    "i": "https://i.imgur.com/XTE88E8m.jpg",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
     "u": 3745,
     "n": "CR-21",
     "t": 4,
-    "i": "",
+    "i": "https://i.imgur.com/bfXAJxTm.jpg",
+    "in": "https://cdn.donmai.us/sample/11/db/__cr_21_girls_frontline_drawn_by_kuro_zhurunbo1997__sample-11db5b5454014a68430bf86f92ba0a24.jpg",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55421,7 +55421,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55431,7 +55431,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55441,7 +55441,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55451,7 +55451,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55461,7 +55461,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55471,7 +55471,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55481,7 +55481,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55491,7 +55491,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55501,7 +55501,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55511,7 +55511,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55521,7 +55521,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55531,7 +55531,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55541,7 +55541,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55551,7 +55551,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55561,7 +55561,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55571,7 +55571,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55581,7 +55581,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55591,7 +55591,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55601,7 +55601,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55611,7 +55611,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55621,7 +55621,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55631,7 +55631,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55641,7 +55641,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55651,7 +55651,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55661,7 +55661,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55671,7 +55671,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55681,7 +55681,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55691,7 +55691,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55701,7 +55701,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55711,7 +55711,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55721,7 +55721,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55731,7 +55731,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55741,7 +55741,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55751,7 +55751,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55761,7 +55761,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55771,7 +55771,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55781,7 +55781,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55791,7 +55791,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55801,7 +55801,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55811,7 +55811,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55821,7 +55821,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55831,7 +55831,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55841,7 +55841,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55851,7 +55851,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55861,7 +55861,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55871,7 +55871,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55881,7 +55881,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55891,7 +55891,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55901,7 +55901,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55911,7 +55911,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55921,7 +55921,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55931,7 +55931,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55941,7 +55941,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55951,7 +55951,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55961,7 +55961,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55971,7 +55971,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55981,7 +55981,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -55991,7 +55991,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56001,7 +56001,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56011,7 +56011,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56021,7 +56021,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56031,7 +56031,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56041,7 +56041,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56051,7 +56051,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56061,7 +56061,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56071,7 +56071,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56081,7 +56081,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56091,7 +56091,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56101,7 +56101,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56111,7 +56111,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56121,7 +56121,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56131,7 +56131,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56141,7 +56141,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56151,7 +56151,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56161,7 +56161,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56171,7 +56171,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56181,7 +56181,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56191,7 +56191,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56201,7 +56201,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56211,7 +56211,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56221,7 +56221,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56231,7 +56231,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56241,7 +56241,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56251,7 +56251,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56261,7 +56261,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56271,7 +56271,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56281,7 +56281,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56291,7 +56291,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56301,7 +56301,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56311,7 +56311,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56321,7 +56321,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56331,7 +56331,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56341,7 +56341,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56351,7 +56351,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56361,7 +56361,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56371,7 +56371,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56381,7 +56381,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56391,7 +56391,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56401,7 +56401,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56411,7 +56411,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56421,7 +56421,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56431,7 +56431,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56441,7 +56441,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56451,7 +56451,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56461,7 +56461,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56471,7 +56471,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56481,7 +56481,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56491,7 +56491,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56501,7 +56501,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56511,7 +56511,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56521,7 +56521,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56531,7 +56531,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56541,7 +56541,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56551,7 +56551,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56561,7 +56561,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56571,7 +56571,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56581,7 +56581,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56591,7 +56591,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56601,7 +56601,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56611,7 +56611,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56621,7 +56621,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56631,7 +56631,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56641,7 +56641,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56651,7 +56651,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56661,7 +56661,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56671,7 +56671,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56681,7 +56681,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56691,7 +56691,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56701,7 +56701,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56711,7 +56711,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56721,7 +56721,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56731,7 +56731,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56741,7 +56741,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56751,7 +56751,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56761,7 +56761,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56771,7 +56771,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56781,7 +56781,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56791,7 +56791,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56801,7 +56801,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56811,7 +56811,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56821,7 +56821,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56831,7 +56831,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56841,7 +56841,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56851,7 +56851,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56861,7 +56861,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56871,7 +56871,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56881,7 +56881,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56891,7 +56891,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56901,7 +56901,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56911,7 +56911,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56921,7 +56921,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56931,7 +56931,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56941,7 +56941,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56951,7 +56951,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56961,7 +56961,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56971,7 +56971,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56981,7 +56981,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -56991,7 +56991,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57001,7 +57001,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57011,7 +57011,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57021,7 +57021,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57031,7 +57031,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57041,7 +57041,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57051,7 +57051,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57061,7 +57061,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57071,7 +57071,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57081,7 +57081,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57091,7 +57091,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57101,7 +57101,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57111,7 +57111,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57121,7 +57121,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57131,7 +57131,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57141,7 +57141,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57151,7 +57151,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57161,7 +57161,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57171,7 +57171,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57181,7 +57181,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57191,7 +57191,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57201,7 +57201,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57211,7 +57211,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57221,7 +57221,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57231,7 +57231,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57241,7 +57241,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57251,7 +57251,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57261,7 +57261,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57271,7 +57271,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57281,7 +57281,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57291,7 +57291,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57301,7 +57301,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57311,7 +57311,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57321,7 +57321,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57331,7 +57331,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57341,7 +57341,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57351,7 +57351,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57361,7 +57361,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57371,7 +57371,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57381,7 +57381,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57391,7 +57391,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57401,7 +57401,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57411,7 +57411,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57421,7 +57421,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57431,7 +57431,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57441,7 +57441,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57451,7 +57451,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57461,7 +57461,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57471,7 +57471,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57481,7 +57481,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57491,7 +57491,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57501,7 +57501,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57511,7 +57511,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57521,7 +57521,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57531,7 +57531,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57541,7 +57541,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57551,7 +57551,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57561,7 +57561,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57571,7 +57571,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57581,7 +57581,7 @@
     "i": "https://i.imgur.com/e67du81m.jpg",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57591,7 +57591,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57601,7 +57601,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57611,7 +57611,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57621,7 +57621,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57631,7 +57631,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57641,7 +57641,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -57651,7 +57651,7 @@
     "i": "",
     "w": "Girls Frontline",
     "b": [
-      "F"
+      "F", "ad"
     ]
   },
   {
@@ -62366,10 +62366,12 @@
     "t": 5,
     "i": "sample_53592bfbfb5f663204ad58821103d6d9.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/17721778",
+    "in": "https://preview.redd.it/0ai3g2svll481.jpg?width=640&crop=smart&auto=webp&s=92a0015bcf75b69f99d7bd3bcc6fea85251c69ff",
     "w": "Halo",
     "b": [
       "F",
-      "C"
+      "C",
+      "ai"
     ]
   },
   {
@@ -64287,7 +64289,8 @@
     "s": "https://danbooru.donmai.us/posts/3235658",
     "w": "High School DxD",
     "b": [
-      "M"
+      "M",
+      "dv"
     ]
   },
   {
@@ -64308,7 +64311,8 @@
     "s": "https://chan.sankakucomplex.com/post/show/4753899",
     "w": "High School DxD",
     "b": [
-      "M"
+      "M",
+      "dv"
     ]
   },
   {
@@ -64328,7 +64332,8 @@
     "i": "",
     "w": "High School DxD",
     "b": [
-      "M"
+      "M",
+      "dv"
     ]
   },
   {
@@ -64370,7 +64375,8 @@
     "s": "https://chan.sankakucomplex.com/post/show/7602398",
     "w": "High School DxD",
     "b": [
-      "M"
+      "M",
+      "dv"
     ]
   },
   {
@@ -64389,7 +64395,8 @@
     "t": 6,
     "i": "yxy__sample_1b791d01b1ddaca32b24107200dde5e6.jpg",
     "s": "https://danbooru.donmai.us/posts/3235744",
-    "w": "High School DxD"
+    "w": "High School DxD",
+    "b": [ "F", "dv" ]
   },
   {
     "u": 357,
@@ -64419,7 +64426,8 @@
     "i": "",
     "w": "High School DxD",
     "b": [
-      "M"
+      "M",
+      "dv"
     ]
   },
   {
@@ -64481,7 +64489,8 @@
     "i": "",
     "w": "High School DxD",
     "b": [
-      "M"
+      "M",
+      "dv"
     ]
   },
   {
@@ -64491,7 +64500,8 @@
     "i": "",
     "w": "High School DxD",
     "b": [
-      "M"
+      "M",
+      "dv"
     ]
   },
   {
@@ -64570,7 +64580,8 @@
     "w": "High School DxD",
     "b": [
       "F",
-      "C"
+      "C",
+      "nn", "hl"
     ]
   },
   {
@@ -64582,7 +64593,8 @@
     "w": "High School DxD",
     "b": [
       "F",
-      "C"
+      "C",
+      "dv"
     ]
   },
   {
@@ -64606,7 +64618,8 @@
     "w": "High School DxD",
     "b": [
       "F",
-      "C"
+      "C",
+      "dv"
     ]
   },
   {
@@ -64618,7 +64631,8 @@
     "w": "High School DxD",
     "b": [
       "F",
-      "C"
+      "C",
+      "dv"
     ]
   },
   {
@@ -64642,7 +64656,8 @@
     "w": "High School DxD",
     "b": [
       "F",
-      "C"
+      "C",
+      "dv"
     ]
   },
   {
@@ -64786,7 +64801,8 @@
     "w": "High School DxD",
     "b": [
       "F",
-      "C"
+      "C",
+      "dv"
     ]
   },
   {
@@ -64822,7 +64838,8 @@
     "w": "High School DxD",
     "b": [
       "F",
-      "C"
+      "C",
+      "dv"
     ]
   },
   {
@@ -64870,7 +64887,8 @@
     "w": "High School DxD",
     "b": [
       "F",
-      "C"
+      "C",
+      "dv"
     ]
   },
   {
@@ -64966,7 +64984,8 @@
     "w": "High School DxD",
     "b": [
       "F",
-      "C"
+      "C",
+      "dv"
     ]
   },
   {
@@ -65026,7 +65045,8 @@
     "w": "High School DxD",
     "b": [
       "F",
-      "C"
+      "C",
+      "dv"
     ]
   },
   {
@@ -65038,7 +65058,8 @@
     "w": "High School DxD",
     "b": [
       "F",
-      "C"
+      "C",
+      "dv"
     ]
   },
   {
@@ -65062,7 +65083,8 @@
     "w": "High School DxD",
     "b": [
       "F",
-      "C"
+      "C",
+      "dv"
     ]
   },
   {
@@ -65074,7 +65096,8 @@
     "w": "High School DxD",
     "b": [
       "F",
-      "C"
+      "C",
+      "dv"
     ]
   },
   {
@@ -65156,7 +65179,8 @@
     "w": "High School DxD",
     "b": [
       "F",
-      "C"
+      "C",
+      "dv"
     ]
   },
   {
@@ -65168,7 +65192,8 @@
     "w": "High School DxD",
     "b": [
       "F",
-      "C"
+      "C",
+      "dv"
     ]
   },
   {
@@ -65180,7 +65205,8 @@
     "w": "High School DxD",
     "b": [
       "F",
-      "C"
+      "C",
+      "dv"
     ]
   },
   {
@@ -65204,7 +65230,8 @@
     "w": "High School DxD",
     "b": [
       "F",
-      "C"
+      "C",
+      "dv"
     ]
   },
   {
@@ -65228,7 +65255,8 @@
     "w": "High School DxD",
     "b": [
       "F",
-      "C"
+      "C",
+      "dv"
     ]
   },
   {
@@ -65240,7 +65268,9 @@
     "w": "High School DxD",
     "b": [
       "F",
-      "C"
+      "C",
+      "dv",
+      "md"
     ]
   },
   {
@@ -65262,7 +65292,8 @@
     "w": "High School DxD",
     "b": [
       "F",
-      "C"
+      "C",
+      "dv"
     ]
   },
   {
@@ -65298,7 +65329,8 @@
     "w": "High School DxD",
     "b": [
       "F",
-      "C"
+      "C",
+      "an"
     ]
   },
   {
@@ -65310,7 +65342,8 @@
     "w": "High School DxD",
     "b": [
       "F",
-      "C"
+      "C",
+      "dv"
     ]
   },
   {
@@ -66107,7 +66140,8 @@
     "s": "https://danbooru.donmai.us/posts/4709296",
     "b": [
       "F",
-      "C"
+      "C",
+      "cl", "tm"
     ]
   },
   {
@@ -73524,10 +73558,11 @@
   {
     "u": 12557,
     "n": "Geecku",
-    "t": 2,
+    "t": 4,
     "i": "2924cf6b01c19951f7f2b861a9dae3fd.png",
     "s": "https://e621.net/post/show/209697",
-    "w": "Las Lindas"
+    "w": "Las Lindas",
+    "b": ["F"]
   },
   {
     "u": 1663,
@@ -84784,7 +84819,7 @@
     "s": "https://i.pinimg.com/originals/ec/6c/aa/ec6caa6fbde234751c8fc4039efefc07.jpg",
     "w": "Mass Effect",
     "b": [
-      "F"
+      "F", "ai", "ad"
     ]
   },
   {
@@ -85978,7 +86013,8 @@
     "t": 5,
     "i": "wilmarina_human_pic.png",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/8/8e/Wilmarina_Human_Pic.png/revision/latest?cb=20131001084911",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F"]
   },
   {
     "u": 2790,
@@ -85986,7 +86022,8 @@
     "t": 5,
     "i": "magical_girl.png",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/4/44/Magical_Girl.png/revision/latest?cb=20131001085145",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F"]
   },
   {
     "u": 2791,
@@ -85994,7 +86031,8 @@
     "t": 5,
     "i": "sasha_human1.png",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/8/8f/Sasha_Human1.png/revision/latest?cb=20181020185241",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F"]
   },
   {
     "u": 2792,
@@ -86002,7 +86040,8 @@
     "t": 5,
     "i": "merse_human1.png",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/7/7f/Merse_Human1.png/revision/latest?cb=20181020184005",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F"]
   },
   {
     "u": 2793,
@@ -86010,7 +86049,8 @@
     "t": 5,
     "i": "primera_concerto.png",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/4/40/Primera_Concerto.png/revision/latest?cb=20131001085616",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F"]
   },
   {
     "u": 2794,
@@ -86018,7 +86058,8 @@
     "t": 1,
     "i": "fransica.png",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/0/0a/Fransica.png/revision/latest?cb=20131001090548",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F"]
   },
   {
     "u": 2795,
@@ -86026,7 +86067,8 @@
     "t": 5,
     "i": "koyoi_human1.png",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/0/0e/Koyoi_Human1.png/revision/latest?cb=20181020145128",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F"]
   },
   {
     "u": 2796,
@@ -86034,7 +86076,8 @@
     "t": 7,
     "i": "wilmarina_succubus_pic.png",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/6/68/Wilmarina_Succubus_Pic.png/revision/latest?cb=20131001085039",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 2797,
@@ -86042,7 +86085,8 @@
     "t": 7,
     "i": "witch_mimiru.png",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/d/d6/Witch_Mimiru.png/revision/latest?cb=20131001085300",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F"]
   },
   {
     "u": 2798,
@@ -86050,7 +86094,8 @@
     "t": 7,
     "i": "sasha_dpriest1.png",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/6/61/Sasha_DPriest1.png/revision/latest?cb=20181020185208",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F"]
   },
   {
     "u": 2799,
@@ -86058,7 +86103,8 @@
     "t": 7,
     "i": "merse_echidna1.png",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/4/43/Merse_Echidna1.png/revision/latest?cb=20181020183944",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 2800,
@@ -86066,7 +86112,8 @@
     "t": 7,
     "i": "werewolf_primero.png",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/b/bc/Werewolf_Primero.png/revision/latest?cb=20131001085720",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 2801,
@@ -86074,7 +86121,8 @@
     "t": 7,
     "i": "queen_roper.png",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/9/9a/Queen_Roper.png/revision/latest?cb=20131001090651",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 2802,
@@ -86082,7 +86130,8 @@
     "t": 7,
     "i": "koyoi_inari1.png",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/8/84/Koyoi_Inari1.png/revision/latest?cb=20181020145140",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 2803,
@@ -86090,7 +86139,8 @@
     "t": 9,
     "i": "fallen_brides_1.jpeg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/8/89/Fallen_brides_1.jpeg/revision/latest?cb=20130527042153",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 2804,
@@ -86098,7 +86148,8 @@
     "t": 8,
     "i": "deruella_2.png",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/b/b5/Deruella_2.png/revision/latest?cb=20131001085803",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 2805,
@@ -86106,7 +86157,8 @@
     "t": 7,
     "i": "mgw2scanpage8_1_zps7a503372.png",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/0/07/MGW2ScanPage8-1_zps7a503372.png/revision/latest?cb=20140421020506",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11670,
@@ -86114,7 +86166,8 @@
     "t": 3,
     "i": "akaname_front.png",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/c/c2/Akaname_front.png/revision/latest?cb=20150106054330",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11671,
@@ -86123,9 +86176,7 @@
     "i": "alice_1.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/e/e8/Alice_1.jpg/revision/latest?cb=20130617023142",
     "w": "Monster Girl Encyclopedia",
-    "b": [
-      "F"
-    ]
+    "b": ["F"]
   },
   {
     "u": 11672,
@@ -86133,7 +86184,8 @@
     "t": 3,
     "i": "alp_0.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/f/f3/Alp_0.jpg/revision/latest?cb=20130803005313",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11673,
@@ -86141,7 +86193,8 @@
     "t": 3,
     "i": "alraune.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/7/7a/Alraune.jpg/revision/latest?cb=20140913055207",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11674,
@@ -86149,7 +86202,8 @@
     "t": 3,
     "i": "amazoness_0.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/f/fe/Amazoness_0.jpg/revision/latest?cb=20130618014013",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "az"]
   },
   {
     "u": 11675,
@@ -86158,9 +86212,7 @@
     "i": "angel_0.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/f/f2/Angel_0.jpg/revision/latest?cb=20130618015230",
     "w": "Monster Girl Encyclopedia",
-    "b": [
-      "F"
-    ]
+    "b": ["F", "an"]
   },
   {
     "u": 11676,
@@ -86168,7 +86220,8 @@
     "t": 3,
     "i": "ant_arachne_0.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/1/1d/Ant_Arachne_0.jpg/revision/latest?cb=20130526020817",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11677,
@@ -86176,7 +86229,8 @@
     "t": 4,
     "i": "sample_b128348bb61b5d1d94353f0a33392f06.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/6787485",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11678,
@@ -86184,7 +86238,8 @@
     "t": 6,
     "i": "672755d22a43226977f2b49af61ee0dd.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/6182362",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11679,
@@ -86192,7 +86247,8 @@
     "t": 4,
     "i": "sample_c91d21e2f84d4cd2d8924225995f867f.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/6908526",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11680,
@@ -86200,7 +86256,8 @@
     "t": 4,
     "i": "arachne_0.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/9/96/Arachne_0.jpg/revision/latest?cb=20130525034503",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11681,
@@ -86208,7 +86265,8 @@
     "t": 5,
     "i": "sample_db516b9270d6c23276e8265c06bd90c7.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/3207839",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11682,
@@ -86216,7 +86274,8 @@
     "t": 6,
     "i": "sample_1697687cd199c54cbefdedd570df1db9.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/6031769",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11683,
@@ -86224,7 +86283,8 @@
     "t": 4,
     "i": "be255a20499aed126dcf8d04227e2a86.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/5957860",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11684,
@@ -86232,7 +86292,8 @@
     "t": 5,
     "i": "sample_54807ece8de5ef518bca8920a8aa2992.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/19133150",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11685,
@@ -86240,7 +86301,8 @@
     "t": 6,
     "i": "sample_d14330be40a12dd901da34b66beb2a16.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/7225807",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11686,
@@ -86248,7 +86310,8 @@
     "t": 3,
     "i": "75797713_p0.png",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/b/bc/75797713_p0.png/revision/latest?cb=20190719030705",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11687,
@@ -86256,7 +86319,8 @@
     "t": 4,
     "i": "sample_cb1e00146ca525586710804f4fe1ffb1.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/5767807",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11688,
@@ -86265,9 +86329,7 @@
     "i": "sample_57d7ffd68d6392a31e98a6949b04d234.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/7594178",
     "w": "Monster Girl Encyclopedia",
-    "b": [
-      "F"
-    ]
+    "b": ["F", "mr"]
   },
   {
     "u": 11689,
@@ -86275,7 +86337,8 @@
     "t": 4,
     "i": "194c22141f921b3d4d95fb5e618af09a.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/1759937",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11690,
@@ -86283,7 +86346,8 @@
     "t": 3,
     "i": "sample_b5fb608c96228b02ab098d7723cea202.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/7204666",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11691,
@@ -86291,7 +86355,8 @@
     "t": 4,
     "i": "blue_oni_0.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/2/24/Blue_Oni_0.jpg/revision/latest?cb=20130603173017",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11692,
@@ -86299,7 +86364,8 @@
     "t": 1,
     "i": "sample_5ab9e37c85b87ce00696400e3dd88881.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/5362490",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11693,
@@ -86307,7 +86373,8 @@
     "t": 5,
     "i": "sample_8cc64a1374292ece63928f0093bf9e2e.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/7810315",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11694,
@@ -86315,7 +86382,8 @@
     "t": 4,
     "i": "275_cait_sith_l.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/e/ee/275_cait_sith_L.jpg/revision/latest?cb=20150304112237",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11695,
@@ -86323,7 +86391,8 @@
     "t": 3,
     "i": "sample_2cb3443d7e6a1d2d893e147aafd18c94.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/4990353",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11696,
@@ -86332,9 +86401,7 @@
     "i": "centaur_0.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/2/2c/Centaur_0.jpg/revision/latest?cb=20130702003657",
     "w": "Monster Girl Encyclopedia",
-    "b": [
-      "F"
-    ]
+    "b": ["F", "mr"]
   },
   {
     "u": 11697,
@@ -86342,7 +86409,8 @@
     "t": 3,
     "i": "charybdis_0.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/6/67/Charybdis_0.jpg/revision/latest?cb=20130709011256",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11698,
@@ -86350,7 +86418,8 @@
     "t": 3,
     "i": "sample_ba7b5384acb3086fa0f1e0d72b1f1265.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/6408427",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11699,
@@ -86358,7 +86427,8 @@
     "t": 5,
     "i": "f7734e2b3b3471b6522c5af4fe09500c.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/6505947",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11700,
@@ -86366,7 +86436,8 @@
     "t": 3,
     "i": "chochin_obake_0.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/b/b5/Chochin-Obake_0.jpg/revision/latest?cb=20130606002824",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11701,
@@ -86374,7 +86445,8 @@
     "t": 3,
     "i": "c1os71quqaakttt.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/0/01/C1OS71qUQAAkTTT.jpg/revision/latest?cb=20170104065955",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11702,
@@ -86382,7 +86454,8 @@
     "t": 4,
     "i": "sample_3d4bb4e78e838ae4c654450393200523.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/6521266",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11703,
@@ -86390,7 +86463,8 @@
     "t": 4,
     "i": "1444827603449.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/a/a1/1444827603449.jpg/revision/latest?cb=20151014140409",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11704,
@@ -86398,7 +86472,8 @@
     "t": 5,
     "i": "74163180_p0.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/9/92/74163180_p0.jpg/revision/latest?cb=20190412124606",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "anr"]
   },
   {
     "u": 11705,
@@ -86406,7 +86481,8 @@
     "t": 5,
     "i": "05c2cc1c135d121452694aa642806444.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/5308718",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11706,
@@ -86415,9 +86491,7 @@
     "i": "22508149_p0.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/2/25/22508149_p0.jpg/revision/latest?cb=20160528154907",
     "w": "Monster Girl Encyclopedia",
-    "b": [
-      "M"
-    ]
+    "b": ["F", "mr"]
   },
   {
     "u": 11707,
@@ -86425,7 +86499,8 @@
     "t": 4,
     "i": "dark_angel_adult.png",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/e/e8/Dark_angel_adult.png/revision/latest?cb=20140901191424",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "an"]
   },
   {
     "u": 11708,
@@ -86433,7 +86508,8 @@
     "t": 3,
     "i": "dark_elf_0.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/f/f6/Dark_Elf_0.jpg/revision/latest?cb=20130629010948",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F"]
   },
   {
     "u": 11709,
@@ -86441,7 +86517,8 @@
     "t": 6,
     "i": "16636538620053364994.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/f/f3/16636538620053364994.jpg/revision/latest?cb=20170320012918",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F"]
   },
   {
     "u": 11710,
@@ -86449,7 +86526,8 @@
     "t": 6,
     "i": "1458992849015.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/f/f8/1458992849015.jpg/revision/latest?cb=20160327062602",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F"]
   },
   {
     "u": 11711,
@@ -86457,7 +86535,8 @@
     "t": 3,
     "i": "pixiv_id_3440368_full_1452826.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/a/a3/Pixiv_Id_3440368_full_1452826.jpg/revision/latest?cb=20131216033516",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F"]
   },
   {
     "u": 11712,
@@ -86465,7 +86544,8 @@
     "t": 4,
     "i": "dark_slime_1.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/3/39/Dark_slime_1.jpg/revision/latest?cb=20131117181508",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11713,
@@ -86473,7 +86553,8 @@
     "t": 5,
     "i": "261_darkvalkyrie_l.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/6/69/261_darkvalkyrie_L.jpg/revision/latest?cb=20140505171046",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F"]
   },
   {
     "u": 11714,
@@ -86481,14 +86562,16 @@
     "t": 6,
     "i": "1c952df472c171ed012506def72bc3ca.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/5686587",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "dm"]
   },
   {
     "u": 11715,
     "n": "The Demon Lord (Overlord)",
     "t": 10,
     "i": "",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11716,
@@ -86496,7 +86579,8 @@
     "t": 3,
     "i": "325_devilbug_l.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/5/59/325_devilbug_L.jpg/revision/latest?cb=20170321140004",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F"]
   },
   {
     "u": 11717,
@@ -86504,7 +86588,8 @@
     "t": 3,
     "i": "cwvynttuaaesdz2.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/7/7c/CwvyntTUAAEsdZ2.jpg/revision/latest?cb=20161108162513",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F"]
   },
   {
     "u": 11718,
@@ -86512,7 +86597,8 @@
     "t": 5,
     "i": "tumblr_o0wxuczdca1rkn25go1_1280.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/d/dd/Tumblr_o0wxuczdCa1rkn25go1_1280.jpg/revision/latest?cb=20160412110725",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F"]
   },
   {
     "u": 11719,
@@ -86520,7 +86606,8 @@
     "t": 3,
     "i": "sample_698f644175e14dc9e0a291b3aef4d517.jpeg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/4/4d/Sample_698f644175e14dc9e0a291b3aef4d517.jpeg/revision/latest?cb=20131231032632",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11720,
@@ -86528,7 +86615,8 @@
     "t": 3,
     "i": "dormouse_channnn_by_languyenngocthao_daw1tpw.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/a/ae/Dormouse_channnn_by_languyenngocthao-daw1tpw.jpg/revision/latest?cb=20170219054546",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11721,
@@ -86536,7 +86624,8 @@
     "t": 5,
     "i": "317_dorome_l.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/1/10/317_dorome_L.jpg/revision/latest?cb=20161224153950",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11722,
@@ -86544,7 +86633,8 @@
     "t": 6,
     "i": "dragon_2.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/0/03/Dragon_2.JPG/revision/latest?cb=20131117153041",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11723,
@@ -86552,7 +86642,8 @@
     "t": 5,
     "i": "sample_81ee7829fe1e3c27f01486834c8d95cc.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/7772509",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11724,
@@ -86560,7 +86651,8 @@
     "t": 4,
     "i": "tumblr_p4zqy16bwp1rkn25go1_r1_1280.png",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/0/0a/Tumblr_p4zqy16bwP1rkn25go1_r1_1280.png/revision/latest?cb=20190219023203",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11725,
@@ -86568,7 +86660,8 @@
     "t": 3,
     "i": "dullahan_0.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/6/63/Dullahan_0.jpg/revision/latest?cb=20130728011602",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11726,
@@ -86576,7 +86669,8 @@
     "t": 3,
     "i": "tumblr_o1lsslqevd1ukbyx0o1_1280.png",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/f/f0/Tumblr_o1lsslqEVD1ukbyx0o1_1280.png/revision/latest?cb=20161016174919",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F"]
   },
   {
     "u": 11727,
@@ -86585,9 +86679,7 @@
     "i": "zuru_echidnafinished_by_vahnyourdoom_d9a83lq.png",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/7/70/Commission_ubernimrod_chizuru_echidnafinished_by_vahnyourdoom-d9a83lq.png/revision/latest?cb=20161223162513",
     "w": "Monster Girl Encyclopedia",
-    "b": [
-      "F"
-    ]
+    "b": ["F", "mr"]
   },
   {
     "u": 11728,
@@ -86596,9 +86688,7 @@
     "i": "c28zg4zwiaaqmwl.png",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/0/0d/C28Zg4ZWIAAqmwL.png/revision/latest?cb=20170218204602",
     "w": "Monster Girl Encyclopedia",
-    "b": [
-      "F"
-    ]
+    "b": ["F"]
   },
   {
     "u": 11729,
@@ -86606,7 +86696,8 @@
     "t": 3,
     "i": "fairy_0.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/e/ef/Fairy_0.jpg/revision/latest?cb=20130627001733",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F"]
   },
   {
     "u": 11730,
@@ -86614,7 +86705,8 @@
     "t": 4,
     "i": "familiar_l.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/8/86/Familiar_L.jpg/revision/latest?cb=20150202181751",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F"]
   },
   {
     "u": 11731,
@@ -86622,7 +86714,8 @@
     "t": 3,
     "i": "1456321858912.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/d/d3/1456321858912.jpg/revision/latest?cb=20160301185335",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11732,
@@ -86630,7 +86723,8 @@
     "t": 4,
     "i": "sample_ad2292234731af802c5de5322988e3f0.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/5361766",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11733,
@@ -86638,7 +86732,8 @@
     "t": 3,
     "i": "d2usv34u4aa_03y.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/3/30/D2USv34U4AA-03y.jpg/revision/latest?cb=20190324133611",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11734,
@@ -86646,7 +86741,8 @@
     "t": 5,
     "i": "4266842cf14c7aee518e3d9095fadf7d.jpeg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/b/bf/4266842cf14c7aee518e3d9095fadf7d.jpeg/revision/latest?cb=20160113165016",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11735,
@@ -86654,7 +86750,8 @@
     "t": 6,
     "i": "sample_a5ebed446e844c71071265ca577d3909.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/7789453",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F"]
   },
   {
     "u": 11736,
@@ -86662,7 +86759,8 @@
     "t": 3,
     "i": "boo_by_soup_plz_ddhvs6x.png",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/d/d4/Boo_by_soup_plz_ddhvs6x.png/revision/latest?cb=20191009010505",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F"]
   },
   {
     "u": 11737,
@@ -86670,7 +86768,8 @@
     "t": 3,
     "i": "ntslw53.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/6/66/NtSLw53.jpg/revision/latest?cb=20161008190043",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11738,
@@ -86678,7 +86777,8 @@
     "t": 3,
     "i": "giant_ant_by_haelequin_db4u4sz.png",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/6/68/Giant_ant_by_haelequin-db4u4sz.png/revision/latest?cb=20170413220820",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11739,
@@ -86686,7 +86786,8 @@
     "t": 3,
     "i": "1462039442924.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/3/34/1462039442924.jpg/revision/latest?cb=20160501030303",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11740,
@@ -86694,7 +86795,8 @@
     "t": 4,
     "i": "nee_the_girtablilu_c_ht9wt.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/c/cc/Nee_the_girtablilu_c_ht9Wt.jpg/revision/latest?cb=20190809001043",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11741,
@@ -86702,7 +86804,8 @@
     "t": 4,
     "i": "glacies_1.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/f/f9/Glacies_1.jpg/revision/latest?cb=20130802015801",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11742,
@@ -86710,7 +86813,8 @@
     "t": 4,
     "i": "41b7617548306d8df927c53ff8c3fdb6.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/5331637",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F"]
   },
   {
     "u": 11743,
@@ -86718,7 +86822,8 @@
     "t": 3,
     "i": "60903664_p0.png",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/4/43/60903664_p0.png/revision/latest?cb=20170112111833",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11744,
@@ -86726,7 +86831,8 @@
     "t": 3,
     "i": "305_golem_l.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/7/77/305_golem_L.jpg/revision/latest?cb=20160526134544",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11745,
@@ -86734,7 +86840,8 @@
     "t": 1,
     "i": "338_greenworm_l.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/2/2d/338_greenworm_L.jpg/revision/latest?cb=20181021121625",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11746,
@@ -86742,7 +86849,8 @@
     "t": 4,
     "i": "1482197412545.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/f/fb/1482197412545.jpg/revision/latest?cb=20161220104221",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11747,
@@ -86750,7 +86858,8 @@
     "t": 5,
     "i": "93ac112b5f610a03e0f8bdf1974e411a.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/6254320",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11748,
@@ -86758,7 +86867,8 @@
     "t": 3,
     "i": "c4c97275e06a12b67a9cb0335d8ca040.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/4577239",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11749,
@@ -86766,7 +86876,8 @@
     "t": 3,
     "i": "gyoubu_danuki_0.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/e/e4/Gyoubu_Danuki_0.jpg/revision/latest?cb=20130617020912",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11750,
@@ -86774,7 +86885,8 @@
     "t": 4,
     "i": "e1e8f4b464508ca46604a2ef3378dc65.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/5149774",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11751,
@@ -86782,7 +86894,8 @@
     "t": 3,
     "i": "328_harpy_l.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/a/a5/328_harpy_L.jpg/revision/latest?cb=20170512113733",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11752,
@@ -86790,7 +86903,8 @@
     "t": 4,
     "i": "sample_8f704df75d81f4f38136c691b3dca23c.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/5700828",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11753,
@@ -86798,7 +86912,8 @@
     "t": 5,
     "i": "b997fc5952014a2ca8b994149c192c8a.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/6866115",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11754,
@@ -86806,7 +86921,8 @@
     "t": 3,
     "i": "0m1kvef.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/c/cc/0m1kVEf.jpg/revision/latest?cb=20181203035437",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11755,
@@ -86814,7 +86930,8 @@
     "t": 3,
     "i": "1460485979375.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/d/dd/1460485979375.jpg/revision/latest?cb=20160414184044",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11756,
@@ -86822,7 +86939,8 @@
     "t": 4,
     "i": "sample_f2ceeda54ff73bbb10014aec75b1a2a6.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/7648256",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11757,
@@ -86830,7 +86948,8 @@
     "t": 3,
     "i": "honey_bee.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/b/bf/Honey_bee.jpg/revision/latest?cb=20140826110445",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11758,
@@ -86839,9 +86958,7 @@
     "i": "hornet_0.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/9/9c/Hornet_0.jpg/revision/latest?cb=20130419033445",
     "w": "Monster Girl Encyclopedia",
-    "b": [
-      "F"
-    ]
+    "b": ["F", "mr"]
   },
   {
     "u": 11759,
@@ -86849,7 +86966,8 @@
     "t": 4,
     "i": "487a936ee4be06282dfa2888a9c555bb.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/4560282",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11760,
@@ -86857,7 +86975,8 @@
     "t": 3,
     "i": "290_humpty_egg_l.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/1/10/290_humpty_egg_L.jpg/revision/latest?cb=20150923115046",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11761,
@@ -86865,7 +86984,8 @@
     "t": 6,
     "i": "sample_56686df3caba424a6a8ac2a3aae98b04.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/5670689",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11762,
@@ -86874,9 +86994,7 @@
     "i": "sample_1fb946dcdad8462dc066a6f3d7a96fb9.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/18175561",
     "w": "Monster Girl Encyclopedia",
-    "b": [
-      "M"
-    ]
+    "b": ["F", "mr"]
   },
   {
     "u": 11763,
@@ -86884,7 +87002,8 @@
     "t": 3,
     "i": "imp_0.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/0/04/Imp_0.jpg/revision/latest?cb=20130625011953",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11764,
@@ -86892,7 +87011,8 @@
     "t": 6,
     "i": "kitsune_in_the_shade.png",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/a/ab/Kitsune_in_the_Shade.png/revision/latest?cb=20160419205220",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11765,
@@ -86900,7 +87020,8 @@
     "t": 5,
     "i": "ittan_momen___11.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/d/df/Ittan_momen_-_11.jpg/revision/latest?cb=20191010211235",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11766,
@@ -86908,7 +87029,8 @@
     "t": 6,
     "i": "sample_b0e41a50fa7dd30fbd27802467142597.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/4901410",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11767,
@@ -86916,7 +87038,8 @@
     "t": 4,
     "i": "908575d39d05ac8b193cdd2a036cff72.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/4900512",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11768,
@@ -86924,7 +87047,8 @@
     "t": 4,
     "i": "sample_f110342ce449d12c522320dd0c5e2358.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/3479348",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11769,
@@ -86932,7 +87056,8 @@
     "t": 3,
     "i": "pot_devil_0.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/4/49/Pot_Devil_0.jpg/revision/latest?cb=20130708012858",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11770,
@@ -86940,7 +87065,8 @@
     "t": 3,
     "i": "60934720_p0.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/5/5f/60934720_p0.jpg/revision/latest?cb=20170115103806",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11771,
@@ -86948,7 +87074,8 @@
     "t": 3,
     "i": "jurougumo_0.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/1/13/Jurougumo_0.jpg/revision/latest?cb=20130526022750",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11772,
@@ -86956,7 +87083,8 @@
     "t": 3,
     "i": "c5405c85395c4ca6b1eae6e2210e561b.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/4521183",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11773,
@@ -86964,7 +87092,8 @@
     "t": 5,
     "i": "sample_22586a541917b612540640271cb16834.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/17109189",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11774,
@@ -86972,7 +87101,8 @@
     "t": 3,
     "i": "kappa_0.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/e/ea/Kappa_0.jpg/revision/latest?cb=20130605193745",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11775,
@@ -86980,7 +87110,8 @@
     "t": 3,
     "i": "tumblr_oh4x8j4ufh1vdwcbco1_1280.png",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/3/39/Tumblr_oh4x8j4Ufh1vdwcbco1_1280.png/revision/latest?cb=20161124073040",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11776,
@@ -86988,7 +87119,8 @@
     "t": 3,
     "i": "zs7uces.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/b/be/Zs7UcEs.jpg/revision/latest?cb=20160709135540",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11777,
@@ -86996,7 +87128,8 @@
     "t": 3,
     "i": "kesaranpasaranrecolor1.jpeg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/3/3f/KesaranPasaranRecolor1.JPEG/revision/latest?cb=20181101155630",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11778,
@@ -87004,7 +87137,8 @@
     "t": 4,
     "i": "khepri2.png",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/2/2e/Khepri2.png/revision/latest?cb=20160302014103",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11779,
@@ -87012,7 +87146,8 @@
     "t": 3,
     "i": "mge_kikimora_by_adelineleona_ddmj36z.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/d/d9/Mge_kikimora_by_adelineleona_ddmj36z.jpg/revision/latest?cb=20191218211318",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11780,
@@ -87020,7 +87155,8 @@
     "t": 4,
     "i": "kitsune_tsuki_0.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/5/59/Kitsune-Tsuki_0.jpg/revision/latest?cb=20130615034423",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11781,
@@ -87028,7 +87164,8 @@
     "t": 4,
     "i": "5a58f3db_f222_4500_8208_46c09b631971.jpeg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/4/4f/5A58F3DB-F222-4500-8208-46C09B631971.jpeg/revision/latest?cb=20190208082043",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11782,
@@ -87036,7 +87173,8 @@
     "t": 3,
     "i": "kobold_big.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/3/3b/Kobold_big.jpg/revision/latest?cb=20150805172032",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11783,
@@ -87045,9 +87183,7 @@
     "i": "sample_31422bb22219ec44d8c9125dc225d94c.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/5733659",
     "w": "Monster Girl Encyclopedia",
-    "b": [
-      "M"
-    ]
+    "b": ["F", "mr"]
   },
   {
     "u": 11784,
@@ -87055,7 +87191,8 @@
     "t": 4,
     "i": "kunoichi_0.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/e/e3/Kunoichi_0.jpg/revision/latest?cb=20160406151452",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11785,
@@ -87063,7 +87200,8 @@
     "t": 3,
     "i": "72146129_p0.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/4/40/72146129_p0.jpg/revision/latest?cb=20190127053104",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11786,
@@ -87071,7 +87209,8 @@
     "t": 3,
     "i": "large_mouse_0.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/7/71/Large_Mouse_0.jpg/revision/latest?cb=20130717013417",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11787,
@@ -87079,7 +87218,8 @@
     "t": 3,
     "i": "sample_e1349bc5d02fd344cac1f889e0d42b34.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/4176714",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11788,
@@ -87087,7 +87227,8 @@
     "t": 3,
     "i": "leanan_sidhe_0.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/9/98/Leanan_Sidhe_0.jpg/revision/latest?cb=20130628005757",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11789,
@@ -87095,7 +87236,8 @@
     "t": 3,
     "i": "succubus.png",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/e/ec/Succubus.png/revision/latest?cb=20140914130157",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11790,
@@ -87103,7 +87245,8 @@
     "t": 6,
     "i": "132f81c734e21e20d5c51c40c5a7ad3d.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/4962265",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11791,
@@ -87111,7 +87254,8 @@
     "t": 7,
     "i": "sample_55d367fab7731de52b3b898013bbf3df.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/3807897",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11792,
@@ -87119,7 +87263,8 @@
     "t": 3,
     "i": "96f2b0c80721a0bc19c4a918217c6281.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/3946638",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11793,
@@ -87127,7 +87272,8 @@
     "t": 5,
     "i": "cfm4nwyvaaif27s.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/a/ad/CfM4NWYVAAIf27S.jpg/revision/latest?cb=20160409150122",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11794,
@@ -87135,7 +87281,8 @@
     "t": 3,
     "i": "410c245b7fa669fce1ab9c83ebdab898.png",
     "s": "https://chan.sankakucomplex.com/post/show/4605287",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11795,
@@ -87143,7 +87290,8 @@
     "t": 3,
     "i": "sample_1e8900eb77eb8e83aee93048b75e9b6a.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/5739594",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11796,
@@ -87151,7 +87299,8 @@
     "t": 3,
     "i": "001.png",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/0/03/001.png/revision/latest?cb=20151215204048",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11797,
@@ -87159,7 +87308,8 @@
     "t": 3,
     "i": "mandragora_0.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/a/a2/Mandragora_0.JPG/revision/latest?cb=20130706002126",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11798,
@@ -87168,9 +87318,7 @@
     "i": "sample_63a2de1e1bef74679d1d11d51a6f62ee.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/5769928",
     "w": "Monster Girl Encyclopedia",
-    "b": [
-      "F"
-    ]
+    "b": ["F", "mr"]
   },
   {
     "u": 11799,
@@ -87178,7 +87326,8 @@
     "t": 3,
     "i": "sample_98a49ec9e9adbfc08be9a88bf5de414a.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/3587083",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11800,
@@ -87186,7 +87335,8 @@
     "t": 3,
     "i": "sample_951a5a08ba238bdceba9a862fa98493a.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/6051132",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11801,
@@ -87194,7 +87344,8 @@
     "t": 3,
     "i": "matango_0.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/7/71/Matango_0.jpg/revision/latest?cb=20130806015041",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11802,
@@ -87203,9 +87354,7 @@
     "i": "medusa.png",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/c/c3/Medusa.png/revision/latest?cb=20150728211304",
     "w": "Monster Girl Encyclopedia",
-    "b": [
-      "F"
-    ]
+    "b": ["F", "mr"]
   },
   {
     "u": 11803,
@@ -87213,7 +87362,8 @@
     "t": 3,
     "i": "mermaid_0.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/2/2c/Mermaid_0.jpg/revision/latest?cb=20130723013536",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11804,
@@ -87221,7 +87371,8 @@
     "t": 3,
     "i": "691a77790868ef07a9c36237ac151e54.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/2625135",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11805,
@@ -87229,7 +87380,8 @@
     "t": 5,
     "i": "sample_ecd2566c5daa1bbaa5516174be0684d2.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/5937727",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11806,
@@ -87237,7 +87389,8 @@
     "t": 3,
     "i": "czz1fliviaefti1.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/2/2f/CzZ1fLIVIAEfTI1.jpg/revision/latest?cb=20161211202646",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11807,
@@ -87245,7 +87398,8 @@
     "t": 6,
     "i": "sample_8e4c5423f2d47f6973e172180dae961b.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/6481328",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11808,
@@ -87253,7 +87407,8 @@
     "t": 5,
     "i": "sample_26d6846ce8fbaa96b9e9620bffd7ede9.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/18812229",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11809,
@@ -87261,7 +87416,8 @@
     "t": 3,
     "i": "sample_f5985f6b678fdda7f0da6b6f7d961b75.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/5423631",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11810,
@@ -87269,7 +87425,8 @@
     "t": 3,
     "i": "da9daa9dfdfc5f7c03151b4c08eb373e.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/4783471",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11811,
@@ -87277,7 +87434,8 @@
     "t": 3,
     "i": "sample_5d461d471529518f98ff2efa1f830dae.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/6433192",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11812,
@@ -87285,7 +87443,8 @@
     "t": 3,
     "i": "sample_c4893b088f186e5305986fc2600da65c.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/7594650",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11813,
@@ -87293,7 +87452,8 @@
     "t": 4,
     "i": "60670547_p0.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/e/e8/60670547_p0.jpg/revision/latest?cb=20161231214901",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11814,
@@ -87301,7 +87461,8 @@
     "t": 3,
     "i": "56665426_p0.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/9/9f/56665426_p0.jpg/revision/latest?cb=20190703165017",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11815,
@@ -87309,7 +87470,8 @@
     "t": 5,
     "i": "sample_e1d8fa282de1e30ce7c1358b3054d647.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/6696653",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11816,
@@ -87318,9 +87480,7 @@
     "i": "nightmare_0.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/e/e5/Nightmare_0.jpg/revision/latest?cb=20130704010036",
     "w": "Monster Girl Encyclopedia",
-    "b": [
-      "F"
-    ]
+    "b": ["F", "mr"]
   },
   {
     "u": 11817,
@@ -87328,7 +87488,8 @@
     "t": 5,
     "i": "nurarihyon_01.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/f/f1/Nurarihyon_01.jpg/revision/latest?cb=20191011000708",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11818,
@@ -87336,7 +87497,8 @@
     "t": 3,
     "i": "sample_b4f2db7249611f84a6b319582f318de8.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/6867882",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11819,
@@ -87344,7 +87506,8 @@
     "t": 5,
     "i": "sample_7a7b36b48ce9e7acfc34d950f9afcc12.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/9021662",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11820,
@@ -87352,7 +87515,8 @@
     "t": 5,
     "i": "38a9f19b8a5bf1c502a011b1a319a33e.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/5510088",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11821,
@@ -87360,7 +87524,8 @@
     "t": 5,
     "i": "ogre_0.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/c/cf/Ogre_0.jpg/revision/latest?cb=20130603010546",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11822,
@@ -87368,7 +87533,8 @@
     "t": 4,
     "i": "fc9fdbe28fe71fbf5cb3d82a7f276105.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/5605502",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11823,
@@ -87376,7 +87542,8 @@
     "t": 3,
     "i": "orc_0.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/7/7c/Orc_0.jpg/revision/latest?cb=20130716014850",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11824,
@@ -87385,9 +87552,7 @@
     "i": "sample_57f009c8734dec34d64f4d0c628e133c.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/5737678",
     "w": "Monster Girl Encyclopedia",
-    "b": [
-      "F"
-    ]
+    "b": ["F", "mr"]
   },
   {
     "u": 11825,
@@ -87395,7 +87560,8 @@
     "t": 5,
     "i": "sample_894bc772398adbee6f74155429b5ee71.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/7826936",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11826,
@@ -87403,7 +87569,8 @@
     "t": 3,
     "i": "sample_3eed761d9893f863443abd49483ea025.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/6834305",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11827,
@@ -87411,7 +87578,8 @@
     "t": 3,
     "i": "slime_carrier.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/1/11/Slime_Carrier.jpg/revision/latest?cb=20150122002231",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11828,
@@ -87419,7 +87587,8 @@
     "t": 5,
     "i": "313_phantom_l.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/9/98/313_phantom_L.jpg/revision/latest?cb=20161024174302",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11829,
@@ -87427,7 +87596,8 @@
     "t": 6,
     "i": "sample_af4794206eab69f6aef609559be3fdd9.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/5767890",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11830,
@@ -87435,7 +87605,8 @@
     "t": 3,
     "i": "094dfb224f26b9ca48ba02cbd8618422.jpeg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/0/0e/094dfb224f26b9ca48ba02cbd8618422.jpeg/revision/latest?cb=20140217020031",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11831,
@@ -87443,7 +87614,8 @@
     "t": 6,
     "i": "queen_slime_0.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/0/0f/Queen_Slime_0.jpg/revision/latest?cb=20130603220320",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11832,
@@ -87451,7 +87623,8 @@
     "t": 5,
     "i": "sample_4f787eedc1b4ecd3beac1fbd9909d049.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/6200870",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11833,
@@ -87459,7 +87632,8 @@
     "t": 4,
     "i": "sample_30f0d4edef7abd18ecc56ceaf83340c4.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/18049209",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11834,
@@ -87467,7 +87641,8 @@
     "t": 5,
     "i": "aka_oni_by_maxa_art_d8jkrnw.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/4/41/Aka_oni_by_maxa_art-d8jkrnw.jpg/revision/latest?cb=20170121215906",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11835,
@@ -87475,7 +87650,8 @@
     "t": 3,
     "i": "sample_197fc8d5432eccb8f8372c042b971a8e.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/1/17/Sample-197fc8d5432eccb8f8372c042b971a8e.jpg/revision/latest?cb=20150223152321",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11836,
@@ -87483,7 +87659,8 @@
     "t": 5,
     "i": "311_redcap_l.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/c/c2/311_redcap_L.jpg/revision/latest?cb=20160924140422",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11837,
@@ -87491,7 +87668,8 @@
     "t": 3,
     "i": "sample_30a7fdbde051ef3985506a40b4084ec3.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/5224637",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11838,
@@ -87499,7 +87677,8 @@
     "t": 3,
     "i": "roper_0.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/3/31/Roper_0.jpg/revision/latest?cb=20130721014018",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11839,
@@ -87507,7 +87686,8 @@
     "t": 7,
     "i": "sample_7ee35883f58997b96c23ac689edaafcb.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/5769969",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11840,
@@ -87515,7 +87695,8 @@
     "t": 3,
     "i": "482a64b8992e942a250f6fc24ce63623.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/1735214",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11841,
@@ -87523,7 +87704,8 @@
     "t": 5,
     "i": "sample_7da6382f45d589f912ed97a8256b803c.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/4799809",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11842,
@@ -87531,7 +87713,8 @@
     "t": 5,
     "i": "sample_d2c7b2ccc3b3c5240c3438f4ffaf56bf.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/2956399",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11843,
@@ -87539,7 +87722,8 @@
     "t": 3,
     "i": "sample_c19ee50c1964ff81944974e9cf369693.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/5490210",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11844,
@@ -87547,7 +87731,8 @@
     "t": 3,
     "i": "sample_5652756826a3b4146ef740fa49f52bd5.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/5194185",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11845,
@@ -87555,7 +87740,8 @@
     "t": 5,
     "i": "tumblr_p0tryyelmh1v2gw9ko1.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/a/ae/Tumblr_p0tryyeLmh1v2gw9ko1.jpg/revision/latest?cb=20191110235801",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11846,
@@ -87563,7 +87749,8 @@
     "t": 3,
     "i": "1467930253464.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/d/da/1467930253464.jpg/revision/latest?cb=20160707231752",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11847,
@@ -87572,9 +87759,7 @@
     "i": "93d7eb7f80737f477e17731f1703398d.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/2064609",
     "w": "Monster Girl Encyclopedia",
-    "b": [
-      "F"
-    ]
+    "b": ["F", "mr"]
   },
   {
     "u": 11848,
@@ -87582,7 +87767,8 @@
     "t": 5,
     "i": "8ec6ce362d17194d116f29fa4d391711.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/1735776",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11849,
@@ -87590,7 +87776,8 @@
     "t": 6,
     "i": "sample_d906ee26fee4f28bef7938811bcb9889.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/7617842",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11850,
@@ -87598,7 +87785,8 @@
     "t": 3,
     "i": "74627220_p0.png",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/6/6a/74627220_p0.png/revision/latest?cb=20190514123020",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11851,
@@ -87606,7 +87794,8 @@
     "t": 2,
     "i": "skeleton_0.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/5/5f/Skeleton_0.jpg/revision/latest?cb=20130606182827",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11852,
@@ -87614,7 +87803,8 @@
     "t": 3,
     "i": "slime_1.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/b/b3/Slime_1.jpg/revision/latest?cb=20131117133503",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11853,
@@ -87622,7 +87812,8 @@
     "t": 3,
     "i": "4404580568807c53ce7a0c0c21bbbfa0.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/4772218",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11854,
@@ -87630,7 +87821,8 @@
     "t": 4,
     "i": "sphinx_0.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/c/c0/Sphinx_0.jpg/revision/latest?cb=20130529024452",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11855,
@@ -87638,7 +87830,8 @@
     "t": 6,
     "i": "sample_515dfcc9625af59707b9abd70819b691.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/7327654",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11856,
@@ -87647,9 +87840,7 @@
     "i": "sample_d9d76bc8fab453c8ef5dffbb642ead1b.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/5529532",
     "w": "Monster Girl Encyclopedia",
-    "b": [
-      "F"
-    ]
+    "b": ["F", "mr"]
   },
   {
     "u": 11857,
@@ -87657,7 +87848,8 @@
     "t": 3,
     "i": "sample_ffd6bac9be8e81da7b55ad53c3d961e0.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/7466481",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11858,
@@ -87665,7 +87857,8 @@
     "t": 4,
     "i": "48e6d973ae8b5eb7a1e034aa3451ca99.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/2974636",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11859,
@@ -87674,9 +87867,7 @@
     "i": "c6d47c15f2593c3e14a40f443134e5e2.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/6744162",
     "w": "Monster Girl Encyclopedia",
-    "b": [
-      "F"
-    ]
+    "b": ["F", "mr"]
   },
   {
     "u": 11860,
@@ -87684,7 +87875,8 @@
     "t": 3,
     "i": "sample_017461a7c8da4bb5ea4c3f7be208861c.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/6348220",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11861,
@@ -87692,7 +87884,8 @@
     "t": 4,
     "i": "263_troll.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/c/cd/263_troll.jpg/revision/latest?cb=20140531214806",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11862,
@@ -87700,7 +87893,8 @@
     "t": 3,
     "i": "sample_77e094242b0f694aeb6d101356f83036.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/6699624",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11863,
@@ -87708,7 +87902,8 @@
     "t": 5,
     "i": "529539af7ad754b4b9b1362518903d26.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/8221319",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11864,
@@ -87716,7 +87911,8 @@
     "t": 2,
     "i": "umi_osho_l.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/1/15/Umi_Osho_l.jpg/revision/latest?cb=20160828170956",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11865,
@@ -87724,7 +87920,8 @@
     "t": 3,
     "i": "sample_5704b3443f0dc6edb574545a39d684fe.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/5836874",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11866,
@@ -87733,9 +87930,7 @@
     "i": "sample_21957a91913eb135edb163db2b8f4917.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/5789505",
     "w": "Monster Girl Encyclopedia",
-    "b": [
-      "F"
-    ]
+    "b": ["F", "mr"]
   },
   {
     "u": 11867,
@@ -87744,9 +87939,7 @@
     "i": "sample_505aad42d461d110cc00eaf8e170e2d7.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/5579825",
     "w": "Monster Girl Encyclopedia",
-    "b": [
-      "F"
-    ]
+    "b": ["F", "mr"]
   },
   {
     "u": 11868,
@@ -87754,7 +87947,8 @@
     "t": 4,
     "i": "sample_27d6d4dcaf6c7f7ece9e0c509fb488b0.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/6911718",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11869,
@@ -87763,9 +87957,7 @@
     "i": "260_valkyrie.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/c/c5/260_valkyrie.jpg/revision/latest?cb=20140524063439",
     "w": "Monster Girl Encyclopedia",
-    "b": [
-      "F"
-    ]
+    "b": ["F", "mr"]
   },
   {
     "u": 11870,
@@ -87773,7 +87965,8 @@
     "t": 3,
     "i": "56084098_p0.png",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/8/88/56084098_p0.png/revision/latest?cb=20160402212950",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11871,
@@ -87782,9 +87975,7 @@
     "i": "sample_09cc01affe9fd49849ecc7579efa4165.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/6434026",
     "w": "Monster Girl Encyclopedia",
-    "b": [
-      "F"
-    ]
+    "b": ["F", "mr"]
   },
   {
     "u": 11872,
@@ -87792,7 +87983,8 @@
     "t": 3,
     "i": "sample_3b20f8fd9e0b286675b63239d8121e1e.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/5125611",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11873,
@@ -87800,7 +87992,8 @@
     "t": 3,
     "i": "sample_e768b679e2d2c27e631806f8cf2ade3c.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/6794569",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11874,
@@ -87808,7 +88001,8 @@
     "t": 3,
     "i": "werecat2b.png",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/6/62/Werecat2b.png/revision/latest?cb=20190107220204",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11875,
@@ -87816,7 +88010,8 @@
     "t": 3,
     "i": "1402984380023.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/5/50/1402984380023.jpg/revision/latest?cb=20140617062250",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11876,
@@ -87824,7 +88019,8 @@
     "t": 3,
     "i": "sample_5cbe06505b2002d20642b88a2d06916a.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/7648264",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11877,
@@ -87832,7 +88028,8 @@
     "t": 5,
     "i": "dog_by_ovosh147_dcb2vu3_fullview.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/4/4f/Dog_by_ovosh147_dcb2vu3-fullview.jpg/revision/latest?cb=20190123002911",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11878,
@@ -87840,7 +88037,8 @@
     "t": 4,
     "i": "f21ce9d9d5bcb02030969d707c066332.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/7649343",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11879,
@@ -87848,7 +88046,8 @@
     "t": 5,
     "i": "e1b16b0d7a0b52b8140b93506a2f8354.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/6606565",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11880,
@@ -87856,7 +88055,8 @@
     "t": 3,
     "i": "59205183_p0.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/6/66/59205183_p0.jpg/revision/latest?cb=20160928092732",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11881,
@@ -87864,7 +88064,8 @@
     "t": 5,
     "i": "witch.png",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/e/e6/Witch.png/revision/latest?cb=20131128115550",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11882,
@@ -87872,7 +88073,8 @@
     "t": 6,
     "i": "sample_5d48c5d64d5efc377f5116c28c6fb9dc.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/5811169",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11883,
@@ -87880,7 +88082,8 @@
     "t": 6,
     "i": "sample_26402525f22424de5f0b56a249a7941e.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/5812411",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11884,
@@ -87888,7 +88091,8 @@
     "t": 3,
     "i": "sample_1550a4429ed8fed1b4410fd7dc315a23.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/5262911",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11885,
@@ -87897,9 +88101,7 @@
     "i": "fd720649fbef1ad65c589436b321bb1f.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/426476",
     "w": "Monster Girl Encyclopedia",
-    "b": [
-      "F"
-    ]
+    "b": ["F", "mr"]
   },
   {
     "u": 11886,
@@ -87907,7 +88109,8 @@
     "t": 6,
     "i": "qtpillar.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/b/b5/Qtpillar.jpg/revision/latest?cb=20200702014329",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11887,
@@ -87915,7 +88118,8 @@
     "t": 4,
     "i": "creeping_coin_by_zakirsiz.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/c/c7/Creeping_Coin_by_zakirsiz.jpg/revision/latest?cb=20200929154655",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11888,
@@ -87923,7 +88127,8 @@
     "t": 5,
     "i": "sample_6def5f11605320e56c51f5f9c4109566.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/7644126",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11889,
@@ -87931,7 +88136,8 @@
     "t": 2,
     "i": "sample_3cda87bf0473e79aeaafd68c6f4896de.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/6411520",
-    "w": "Monster Girl Encyclopedia"
+    "w": "Monster Girl Encyclopedia",
+    "b": ["F", "mr"]
   },
   {
     "u": 11890,
@@ -92324,7 +92530,7 @@
     "s": "https://chan.sankakucomplex.com/post/show/6161314",
     "w": "Naruto",
     "b": [
-      "M"
+      "M", "bj", "im", "cr", "sn", "st"
     ]
   },
   {
@@ -92433,7 +92639,7 @@
     "s": "https://i.pinimg.com/originals/43/46/84/434684abb2232076b55210cdc64623f7.jpg",
     "w": "Naruto",
     "b": [
-      "M"
+      "M",  "cl", "im", "id"
     ]
   },
   {
@@ -97344,7 +97550,7 @@
   },
   {
     "u": 13959,
-    "n": "Mara Bella Fiore",
+    "n": "Mare Bello Fiore",
     "t": 7,
     "i": "e23c6f0ff2fd10f5d33115ea7cec3115.png",
     "s": "https://chan.sankakucomplex.com/post/show/4762073",
@@ -112335,7 +112541,7 @@
     "s": "https://www.deviantart.com/glee-chan/art/Gender-Bender-Tuxedo-Kamen-631798603",
     "w": "Sailor Moon",
     "b": [
-      "M"
+      "M", "dc", "sp"
     ]
   },
   {
@@ -112346,7 +112552,7 @@
     "s": "https://chan.sankakucomplex.com/post/show/5453284",
     "w": "Sailor Moon",
     "b": [
-      "F"
+      "F", "az", "sp", "sd"
     ]
   },
   {
@@ -112710,7 +112916,8 @@
     "w": "Sailor Moon",
     "b": [
       "F",
-      "C"
+      "C",
+      "az", "sp", "sd"
     ],
     "d": "Sailor Senshi"
   },
@@ -112723,7 +112930,8 @@
     "w": "Sailor Moon",
     "b": [
       "F",
-      "C"
+      "C",
+      "az", "sp", "sd"
     ],
     "d": "Sailor Senshi"
   },
@@ -112736,7 +112944,8 @@
     "w": "Sailor Moon",
     "b": [
       "F",
-      "C"
+      "C",
+      "az", "sp", "sd"
     ],
     "d": "Sailor Senshi"
   },
@@ -112749,7 +112958,8 @@
     "w": "Sailor Moon",
     "b": [
       "F",
-      "C"
+      "C",
+      "tm", "sp"
     ],
     "d": "Sailor Senshi"
   },
@@ -112762,7 +112972,8 @@
     "w": "Sailor Moon",
     "b": [
       "F",
-      "C"
+      "C",
+      "az", "sp", "sd"
     ],
     "d": "Sailor Senshi"
   },
@@ -112775,7 +112986,8 @@
     "w": "Sailor Moon",
     "b": [
       "F",
-      "C"
+      "C",
+      "az", "sp", "sd"
     ],
     "d": "Sailor Senshi"
   },
@@ -112789,7 +113001,8 @@
     "b": [
       "F",
       "C",
-      "P"
+      "P",
+      "sp", "id", "az", "sp"
     ],
     "d": "Sailor Senshi"
   },
@@ -119503,7 +119716,7 @@
     "w": "Sid Meier's Alpha Centauri",
     "b": [
       "F",
-      "C"
+      "C",  "cb", "sn"
     ]
   },
   {
@@ -126771,7 +126984,8 @@
     "t": 5,
     "i": "kristanna_tx020.jpg",
     "s": "https://vignette.wikia.nocookie.net/terminator/images/6/6f/Kristanna_TX020.jpg/revision/latest?cb=20160322135915",
-    "w": "Terminator Franchise"
+    "w": "Terminator Franchise",
+    "b": [ "ai", "F" ]
   },
   {
     "u": 4945,
@@ -126779,7 +126993,8 @@
     "t": 5,
     "i": "48540166891_24510f5e28_b.jpg",
     "s": "https://live.staticflickr.com/65535/48540166891_24510f5e28_b.jpg",
-    "w": "Terminator Franchise"
+    "w": "Terminator Franchise",
+    "b":  [ "M", "ad" ]
   },
   {
     "u": 4946,
@@ -126787,7 +127002,8 @@
     "t": 5,
     "i": "d5vd5nj_1ec278fc_ad2c_4f2e_bea9_07de1a0ebb88.jpg",
     "s": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4ea8c393-e6f6-4491-aaa7-e7d4e06e9fac/d5vd5nj-1ec278fc-ad2c-4f2e-bea9-07de1a0ebb88.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvNGVhOGMzOTMtZTZmNi00NDkxLWFhYTctZTdkNGUwNmU5ZmFjXC9kNXZkNW5qLTFlYzI3OGZjLWFkMmMtNGYyZS1iZWE5LTA3ZGUxYTBlYmI4OC5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.EF2aeTvBCmviy8z-lv7lvX_SG3eLijJvm-EolnrhvJw",
-    "w": "Terminator Franchise"
+    "w": "Terminator Franchise",
+    "b": [ "ai", "O" ]
   },
   {
     "u": 4947,
@@ -126803,7 +127019,8 @@
     "t": 7,
     "i": "209dda59b9071d4b99bc88e1223812a4.jpg",
     "s": "https://i.pinimg.com/originals/20/9d/da/209dda59b9071d4b99bc88e1223812a4.jpg",
-    "w": "Terminator Franchise"
+    "w": "Terminator Franchise",
+    "b": [ "ai", "F" ]
   },
   {
     "u": 4949,
@@ -126811,7 +127028,8 @@
     "t": 5,
     "i": "33753df0cf5b255c4f7891ff9d2cac4b.jpg",
     "s": "https://i.pinimg.com/originals/33/75/3d/33753df0cf5b255c4f7891ff9d2cac4b.jpg",
-    "w": "Terminator Franchise"
+    "w": "Terminator Franchise",
+    "b": ["F", "ad"]
   },
   {
     "u": 4950,
@@ -132461,7 +132679,7 @@
     "w": "The Witcher",
     "b": [
       "F",
-      "C"
+      "C", "mp", "pc", "hp"
     ]
   },
   {

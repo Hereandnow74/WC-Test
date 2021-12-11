@@ -77,6 +77,7 @@
 import { Perk, useStore } from '~/store/store'
 import { activeTab, clearAll, orientation } from '~/logic'
 import { confirmDialog } from '~/logic/dialog'
+import { useChallenges } from '~/store/challenges'
 
 const showSaveLoad = ref(false)
 const showShare = ref(false)
@@ -97,6 +98,8 @@ const {
   companions, heritage, talentPerks, waifuPerks, ridePerks, miscPerks, luresBought, genericWaifuPerks,
   tier11tickets, companionsCost, baseBudget, companionProfit, companionProfitSold, otherPerks,
 } = useStore()
+
+const { activeChallenges } = useChallenges()
 
 const originTextClean = computed(() => {
   const variants = {
@@ -134,7 +137,7 @@ function buildString(title: string, items: Perk[], left: object) {
       if (x.complex[0].target)
         complexCompanion = `[${x.complex.map(x => `${x.target}`).join(', ')}]`
     }
-    str += `${x.title}${count}${complexBoth || complexCompanion || complexFlavor} -${x.cost} [${left.c}]\n`
+    str += `${x.title}${count}${complexBoth || complexCompanion || complexFlavor} ${x.cost ? `-${x.cost}` : 'free'} [${left.c}]\n`
   })
   return str
 }
@@ -143,6 +146,8 @@ function copyText() {
   const fullCost = { c: baseBudget.value === 11111 ? 0 : baseBudget.value }
 
   let full = `Starting World: ${startingWorld.value.worldName}\nStarting budget ${fullCost.c}\n\n`
+
+  full += activeChallenges.value.length ? `${buildString('Challenges', activeChallenges.value, fullCost)}\n` : ''
 
   full += intensities.value.length
     ? `Intensity \n${intensities.value.reduce((a, x) =>

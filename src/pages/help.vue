@@ -1,5 +1,5 @@
 <template>
-  <div class="text-lg max-w-screen-md mx-auto mt-4 bg-blue-gray-200 dark:bg-blue-gray-800 p-4">
+  <div class="text-lg p-4 max-w-screen-md lg:pl-4 mt-4 bg-blue-gray-200 dark:bg-blue-gray-800">
     <h3 class="text-xl font-semibold text-center">
       Help
     </h3>

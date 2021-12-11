@@ -1,8 +1,23 @@
 <template>
-  <div class="w-screen-md mx-auto bg-gray-200 dark:bg-gray-800 p-2 mt-4 flex flex-col gap-4 overflow-y-auto">
+  <div class="w-screen-md lg:pl-2 bg-gray-200 dark:bg-gray-800 p-2 mt-4 flex flex-col gap-4 overflow-y-auto">
     <h2 class="text-xl font-bold text-center">
       Changelog
     </h2>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
+        11 December 2021
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li><b>Rem Knight</b> provided 44 images for Girls Frontline characters.</li>
+        <li>Ability to turn off DLCs</li>
+        <li>Propose Mission form</li>
+        <li>Challenges</li>
+        <li>107 new user submitted Characters.</li>
+        <li>Added 11 user submitted worlds.</li>
+        <li>Rework of side menu</li>
+        <li>Bug fixes</li>
+      </ul>
+    </div>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
         05 December 2021

@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="sm:p-2">
     <Desc :desc="talentsDesc" class="p-2 mb-4 max-w-4xl mx-auto bg-violet-200 dark:bg-violet-900" />
     <div class="md:column-count-2 lg:column-count-3 pb-8">
       <PerkCard

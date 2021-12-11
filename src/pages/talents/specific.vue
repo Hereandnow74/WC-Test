@@ -1,12 +1,12 @@
 <template>
-  <div ref="waifuList" class="flex flex-col gap-2 pb-8 md:p-2">
+  <div ref="waifuList" class="flex flex-col gap-2 pb-8 sm:p-2">
     <Desc :desc="genericDesc" class="p-2 mb-4 max-w-4xl mx-auto bg-violet-200 dark:bg-violet-900" />
     <h3 class="text-xl font-semibold text-center">
       Generic Waifu Perks
     </h3>
     <div class="md:column-count-2 lg:column-count-3">
       <PerkCard
-        v-for="perk in genericPerks"
+        v-for="perk in genericPerksWithDLC"
         :key="perk.title"
         :perk="perk"
         :bg="genericAvailable(perk) ? 'lime-200 dark:lime-900 hover:(lime-100 dark:lime-800)'
@@ -19,7 +19,7 @@
       Specific Waifu Perks
     </h3>
     <div
-      v-for="waifu in waifu_perks"
+      v-for="waifu in specificPerksWithDLC"
       :id="waifu.title"
       :key="waifu.title"
       class="relative self-center p-2 max-w-screen-md cursor-pointer"
@@ -65,6 +65,7 @@
       </table>
       <h3 class="text-lg font-bold relative">
         {{ waifu.title }}
+        <span v-if="waifu.dlc" class="text-sm dark:text-gray-300 text-gray-600">(DLC by <span>{{ waifu.dlc }}</span>)</span>
         <fa-solid:check
           v-if="findIndex(waifuPerks, { title: waifu.title }) !== -1"
           class="inline text-green-500"
@@ -80,7 +81,7 @@
         <router-link v-else :to="`/companions/?name=${waifu.waifu}`" class="hover:underline text-blue-600 dark:text-blue-200">
           {{ waifu.waifu }}
         </router-link>
-        from {{ waifu.from }}
+        from <span class="dark:text-violet-200 text-violet-900">{{ waifu.from }}</span>
       </div>
       <div class="flex gap-4">
         <span v-if="waifu.cost"><span class="font-bold">Cost:</span> {{ waifu.cost===11111 ? 'Tier 11 ticket' : waifu.cost }} </span>
@@ -94,18 +95,19 @@
         <img class="object-none" :src="modalImage" alt="full image">
       </div>
     </div>
+    <div class="h-8"></div>
   </div>
 </template>
 
 <script lang='ts' setup>
 import { findIndex, isArray } from 'lodash-es'
-import { waifu_perks } from '~/data/waifu_perks'
-import { genericPerks, genericDesc } from '~/data/talents'
+import { waifu_perks, DLCwaifu_perks } from '~/data/waifu_perks'
+import { genericPerks, genericDesc, DLCgenericPerks } from '~/data/talents'
 import { lazyLoadImg, useTooltips } from '~/logic/misc'
 import { useStore } from '~/store/store'
 
 import PerkCard from '~/components/PerkCard.vue'
-import { chooseGenericPerk, chooseWaifuPerk, genericAvailable, specificAvailable } from '~/logic'
+import { chooseGenericPerk, chooseWaifuPerk, genericAvailable, isDLC, specificAvailable } from '~/logic'
 
 const { waifuPerks, genericWaifuPerks } = useStore()
 
@@ -125,6 +127,9 @@ const allGeneric = computed(() => {
   genericWaifuPerks.value.forEach(x => res[x.title] = x)
   return res
 })
+
+const genericPerksWithDLC = computed(() => isDLC.value ? genericPerks.concat(DLCgenericPerks) : genericPerks)
+const specificPerksWithDLC = computed(() => isDLC.value ? waifu_perks.concat(DLCwaifu_perks) : waifu_perks)
 
 onMounted(() => useTooltips())
 </script>

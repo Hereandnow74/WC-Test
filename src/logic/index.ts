@@ -53,6 +53,15 @@ export function proposePerk(perk: any, callback: any) {
   }
 }
 
+export function proposeMission(mission: any, callback: any) {
+  try {
+    addDoc(collection(db, 'missions'), mission).then(callback)
+  }
+  catch (e) {
+    console.error('Error proposing a mission: ', e)
+  }
+}
+
 export function shareLink(buildData: any, callback: any) {
   try {
     addDoc(collection(db, 'builds'), buildData).then(callback)

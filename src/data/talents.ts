@@ -34,6 +34,7 @@ export interface PerkFull {
   anything?: string
   costVariants?: number[]
   freebies?: any
+  complex?: string
 }
 
 // Environment: Land
@@ -567,7 +568,7 @@ talents.push({
 
 talents.push({
   title: 'Template Stacking I',
-  cost: 10,
+  cost: 15,
   special: 'Must be repurchased for each use.',
   complex: 'target_f',
   anything: 'Power Name',
@@ -593,7 +594,7 @@ talents.push({
 
 talents.push({
   title: 'OC Donut Steel',
-  cost: 10,
+  cost: 20,
   complex: 'target_f',
   anything: 'Character name',
   special: 'Must be repurchased for each, use.',
@@ -605,7 +606,7 @@ talents.push({
 
 talents.push({
   title: 'Template Stacking II',
-  cost: 10,
+  cost: 20,
   special: 'Must be repurchased for each use.',
   complex: 'target',
   whitelist: [
@@ -1116,5 +1117,40 @@ genericPerks.push({
 <p>When your waifu's soul gem darkens completely, she may choose to manifest her Doppel: a materialization of her witch-self which may take the form of an discrete projection, an extension of her body, or even a partial physical transformation, depending upon the details of her relationship to her witch-self and what it represents. An activated Doppel is extremely powerful in its own right, but draws upon the darkness in its master's soul gem to manifest, quickly and completely purifying its master's gem until she can no longer support it - leaving her Doppel as a briefly activated trump card or a simple magic recharge mechanic unless it's somehow further refined. If you have Inexhaustible, any meguca in your retinue, whom this perk has been applied to, will only benefit from this perk.</p>
 <p>If you have Madokami, Akuma Homura, Satomi Touka, Lapin, or any other meguca who is canonically capable of breaking the balance of hope and despair in your retinue, then this perk is free. If you already have this perk when you acquire a relevant waifu, then take a full refund on the value of this perk for as many times as you've purchased it.</p>
 <p>Upon ten purchases of this perk, all meguca you may purchase will automatically have this perk applied to them.</p>`,
+})
+
+// DLC Generic Perks
+export const DLCgenericPerks: PerkFull[] = []
+
+DLCgenericPerks.push({
+  title: 'Tempering',
+  requires: '(Any Monster Hunter monster)',
+  dlc: 'DaemonOrk',
+  complex: 'target',
+  cost: 0,
+  costVariants: [0, 10, 30, 50],
+  desc: `Your Monster Girl is her Tempered version. It is free the first time for all Monster Girls over tier 7 as it does not increase their Tier.
+  <ul class="list-inside list-disc">
+  <li>T4 → T5: 10</li>
+  <li>T5 → T6: 30</li>
+  <li>T6 → T7: 50</li>
+  </ul>`,
+})
+
+DLCgenericPerks.push({
+  title: 'Arch-Tempering',
+  requires: '(Any Monster Hunter monster)',
+  dlc: 'DaemonOrk',
+  complex: 'target',
+  cost: 30,
+  whitelist: ['Tempering'],
+  costVariants: [30, 50, 100, 300],
+  desc: `Your Monster Girl is her Arch-Tempered version.
+  <ul class="list-inside list-disc">
+  <li>T5 → T6: 30</li>
+  <li>T6 → T7: 50</li>
+  <li>T7 → T8: 100</li>
+  <li>T8 → T9: 300</li>
+  </ul>`,
 })
 // #endregion

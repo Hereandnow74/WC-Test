@@ -90,7 +90,7 @@ const { value: subType } = useField<string>('subType')
 const { value: image } = useField<string>('image')
 
 const addPerk = handleSubmit((values) => {
-  proposePerk({ ...values, date: new Date().toString() }, () => successMessage.value = 'Perk was send successfully, await until I\'m review and add it')
+  proposePerk({ ...values, date: new Date().toString() }, () => successMessage.value = 'Perk was send successfully, await until I review and add it')
   buttonActive.value = false
   setTimeout(() => { buttonActive.value = true; successMessage.value = ''; errorMessage.value = '' }, 30 * 1000)
 })

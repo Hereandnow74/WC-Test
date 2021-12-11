@@ -77,6 +77,7 @@ export const rulesList = [
   { title: 'arrangedConditions', title2: 'Arranged Match Wagers, Victory Conditions, and Risk' },
   { title: 'arrangedTeam', title2: 'Arranged Team Matches and Prizes' },
   { title: 'arrangedSpecial', title2: 'Special Arranged Match Rules' },
+  { title: 'NasuDLC', title2: 'Nasuverse DLC rules' },
 ]
 
 export const waifuTags = {

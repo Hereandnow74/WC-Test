@@ -5,18 +5,23 @@
       <Button label="Back" icon="akar-icons:arrow-back-thick" size="Small" @click="toggleAppMode" />
       <Button label="Random character" size="Small" bg-color="bg-orange-400" @click="getRandomChar" />
       <Checkbox v-model="withImg" label="Only with img" />
+      <NumberInput v-model="tier" :min="0" />
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
 import { randomChar, toggleAppMode } from '~/logic'
+import NumberInput from '~/components/basic/NumberInput.vue'
+import { CHAR_COSTS } from '~/data/constatnts'
 
 const char = ref<any>({})
+const tier = ref(0)
 const withImg = ref(true)
 
 function getRandomChar() {
-  randomChar(withImg.value).then(x => char.value = x)
+  const val = CHAR_COSTS[tier.value - 1] || 0
+  randomChar(withImg.value, val, val).then(x => char.value = x)
 }
 
 getRandomChar()

@@ -19,40 +19,15 @@
 
 <script lang='ts' setup>
 import Input from '../basic/Input.vue'
-import { useStore } from '~/store/store'
 import { shareLink } from '~/logic'
-
-const {
-  startingWorld, startingOrigin, intensities, binding, homePerks, defensePerks,
-  companions, heritage, talentPerks, waifuPerks, ridePerks, miscPerks, luresBought, genericWaifuPerks,
-  budgetMods, baseBudget, allEffects, flags,
-} = useStore()
+import { getSaveObject } from '~/store/saves'
 
 const name = ref('')
-const link = ref('https://discord.com/channels/869699052265144330/869700184739823636')
+const link = ref('')
 const generating = ref(false)
 const isDone = ref(false)
 
-const save = {
-  baseBudget: baseBudget.value,
-  startingWorld: startingWorld.value,
-  startingOrigin: startingOrigin.value,
-  intensities: intensities.value,
-  binding: binding.value,
-  luresBought: luresBought.value,
-  heritage: heritage.value,
-  ridePerks: ridePerks.value,
-  homePerks: homePerks.value,
-  talentPerks: talentPerks.value,
-  defensePerks: defensePerks.value,
-  miscPerks: miscPerks.value,
-  genericWaifuPerks: genericWaifuPerks.value,
-  waifuPerks: waifuPerks.value,
-  companions: companions.value,
-  allEffects: allEffects.value,
-  flags: flags.value,
-  budgetMods: budgetMods.value,
-}
+const save = getSaveObject()
 
 function generateLink() {
   if (name.value.length <= 2) return

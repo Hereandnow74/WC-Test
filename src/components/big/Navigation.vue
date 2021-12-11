@@ -1,7 +1,7 @@
 <template>
   <nav
     ref="navBar"
-    class="flex w-max mx-auto font-semibold overflow-x-auto no-scrollbar select-none"
+    class="flex mx-auto font-semibold overflow-x-auto no-scrollbar select-none"
   >
     <div v-for="navItem, i in titles" :key="navItem" class="whitespace-nowrap">
       <router-link

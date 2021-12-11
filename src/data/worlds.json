@@ -19,11 +19,7 @@
     "additional": "Any member of your retinue can act as a Driver for any Blade you have, with a preference for canon Driver-Blade pairs. Canon Drivers have their Blades as humanoid familiars: Rex - Pyra/Mythra, Zeke - Pandoria, Tora - Poppi, Lora - Jin and Haze, Mòrag - Brighid, Nia - Dromarch, Patroka - Perdido. The waifu perks for Pneuma and the Poppibuster must be purchased separately or acquired in-universe.",
     "condition": "Main story"
   },
-  {
-    "rating": 7,
-    "worldName": "Worm",
-    "additional": "Shards only give powers to those who’ve lost all hope, including the hope of at least getting powers out of a traumatic scenario. For this reason, OC Donut Steel and Template Stacking will not work for parahuman powers when taken for yourself after chargen or a retinue member after the time of purchase.Psychic Talent applies to relevant parahuman powers, mostly (but not limited to) Thinker, Master, and Stranger abilities. Science and Engineering Talents apply to parahuman Tinker databases. Upon a parahuman’s capture, their shard will be forcibly shredded and integrated into their stamp tattoo, even if it’s dormant from the use of another binding or No Bindings. This process is much less violent with the Shroud, due to its use of existing spiritual or mental connections, but the shard still does not survive. A shard remnant tattoo has the same antimemetic properties as the original shard, which can be blocked by Mind Defense. Any other parahumans connected to the same shard will have their powers similarly reformatted, but are not considered captured by you unless you do so normally. Alt-powers: Due to the extreme prevalence of alt-power fanfics, the Taylors or other such characters of those AUs are available on request. If one of them is captured, their alt-power from that universe will be treated as a canon one; they will not manifest their actual canon power in addition."
-  },
+  {"worldName":"Worm","rating":7,"additional":"Shards only give powers to those who’ve lost all hope, including the hope of at least getting powers out of a traumatic scenario. For this reason, OC Donut Steel and Template Stacking will not work for parahuman powers when taken for yourself after chargen or a retinue member after the time of purchase.Psychic Talent applies to relevant parahuman powers, mostly (but not limited to) Thinker, Master, and Stranger abilities. Science and Engineering Talents apply to parahuman Tinker databases. Upon a parahuman’s capture, their shard will be forcibly shredded and integrated into their stamp tattoo, even if it’s dormant from the use of another binding or No Bindings. This process is much less violent with the Shroud, due to its use of existing spiritual or mental connections, but the shard still does not survive. A shard remnant tattoo has the same antimemetic properties as the original shard, which can be blocked by Mind Defense. Any other parahumans connected to the same shard will have their powers similarly reformatted, but are not considered captured by you unless you do so normally. Alt-powers: Due to the extreme prevalence of alt-power fanfics, the Taylors or other such characters of those AUs are available on request. If one of them is captured, their alt-power from that universe will be treated as a canon one; they will not manifest their actual canon power in addition.","condition":[{"name":"Eden is alive","rating":8}]},
   {
     "rating": 7,
     "worldName": "World of Darkness",
@@ -1194,10 +1190,7 @@
     "worldName": "Dune",
     "condition": "First book"
   },
-  {
-    "rating": 5,
-    "worldName": "Dresden Files"
-  },
+  {"worldName":"Dresden Files","rating":5,"condition":[{"rating":6,"name":"Post Changes"}]},
   {
     "rating": 7,
     "worldName": "Drakengard",

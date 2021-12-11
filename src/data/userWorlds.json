@@ -26,21 +26,6 @@
     ]
   },
   {
-    "worldName": "Bloodborne",
-    "rating": 3,
-    "additional": "Azriel has her full power. Shiro will believe you to be her sibling and cannot be convinced otherwise. Holou is the depowered form from LNs 9+.",
-    "condition": [
-      {
-        "name": "Post-Pledges (canon era)",
-        "rating": 3
-      },
-      {
-        "rating": 9,
-        "name": "Pre-Pledges (Zero era)"
-      }
-    ]
-  },
-  {
     "worldName": "Claymore",
     "rating": 7
   },
@@ -271,7 +256,7 @@
     "rating": 5,
     "image": "https://i.imgur.com/9km50Lrm.png"
   },
-  {"worldName":"Rick Riordan","rating":8,"condition":[{"rating":6,"name":"Percy Jackson and the Olympians"},{"name":"The Heroes of Olympus","rating":7},{"name":"Ancient Greece","rating":7},{"rating":6,"name":"Roman Empire"}]},
+  {"worldName":"Riordanverse","rating":8,"condition":[{"rating":6,"name":"Percy Jackson and the Olympians"},{"name":"The Heroes of Olympus","rating":7},{"name":"Ancient Greece","rating":7},{"rating":6,"name":"Roman Empire"}]},
   {
     "worldName": "Rune Factory",
     "rating": 4
@@ -302,7 +287,6 @@
   {"worldName":"Darksiders","rating":8,"condition":[{"name":"Darksiders 1 Timeline","rating":8},{"name":"Darksiders 2 Timeline","rating":7},{"name":"Darksiders 3 Timeline","rating":7},{"name":"Nephilim Purge","rating":7}]},
   {"worldName":"Douluo Dalu","rating":8,"image":"https://m.media-amazon.com/images/M/MV5BZDFhNTVlM2ItOWRiMy00ZmI2LWIxY2EtZjRmOWFkNDhkYWE3XkEyXkFqcGdeQXVyOTE4NzcwNzI@._V1_.jpg","condition":[{"name":"Douluo Dalu 1","rating":8},{"rating":10,"name":"Douluo Dalu 2.5"},{"name":"Douluo Dalu 2","rating":8},{"rating":10,"name":"Douluo Dalu 3.5"},{"name":"Douluo Dalu 3","rating":8},{"name":"Douluo Dalu 4","rating":10}]},
   {"worldName":"God of War","rating":8,"condition":[{"rating":7,"name":"Pre Ares Death"},{"rating":7,"name":"After Olympus Fall"},{"name":"Main Storyline Events","rating":8},{"rating":7,"name":"Midgard"}]},
-  {"worldName":"Highschool of the Dead","rating":3},
   {"worldName":"Hunter x Hunter","rating":4,"condition":[{"name":"Known World (human continents)","rating":4},{"name":"Dark Continent","rating":5}]},
   {"worldName":"I Shall Seal The Heavens","rating":10},
   {"worldName":"Mushoku Tensei","rating":4,"condition":[{"name":"Outside the Demon Continent","rating":4},{"name":"Demon Continent","rating":5}]},
@@ -319,7 +303,6 @@
   {"worldName":"SCP","rating":10},
   {"worldName":"Dark Souls","rating":8,"image":"https://i.imgur.com/ZvNFdGol.png","additional":"You can use bonfires as they are intended.","condition":[{"name":"Dark Souls 1","rating":8},{"name":"Dark Souls 2","rating":8},{"name":"Dark Souls 3","rating":8}]},
   {"worldName":"Divinity","rating":5},
-  {"worldName":"Hellsing Abridged","rating":3},
   {"worldName":"Highschool of the Dead","rating":4,"condition":[{"rating":4,"name":"Starting from Z-Day"}]},
   {"worldName":"How Not to Summon a Demon Lord ","rating":8},
   {"worldName":"Inheritance","rating":5,"additional":"When capturing a rider one also captures their dragon."},
@@ -333,7 +316,7 @@
   {"worldName":"1984","rating":5},
   {"worldName":"Youjo Senki","rating":5,"image":"https://nefariousreviews.files.wordpress.com/2018/09/saga-of-tanya-the-evil-featured.jpg"},
   {"worldName":"Asobi Ni Iku Yo","rating":3},
-  {"worldName":"Destiny","rating":6,"image":"https://i.imgur.com/Ria2NN5m.png","condition":[{"name":"Red War","rating":7},{"name":"Darkness Arrival","rating":8}]},
+  {"worldName":"Destiny","rating":6,"image":"https://i.imgur.com/Ria2NN5m.png","condition":[{"name":"Golden Age","rating":3},{"name":"Collapse","rating":8},{"rating":6,"name":"Last City Age"},{"name":"Battle of the Twilight Gap","rating":7},{"name":"Red War","rating":7},{"rating":8,"name":"Darkness Arrival"}]},
   {"worldName":"Digimon","rating":1,"additional":"You can pay 5 points to have your Digimon gain human forms that they can freely transform to and back from","condition":[{"name":"Adventure","rating":4},{"name":"Adventure 2","rating":4},{"name":"Tamers","rating":5},{"rating":6,"name":"Frontier"},{"rating":5,"name":"Savers"},{"rating":4,"name":"DS games"},{"name":"Cyber Sleuth","rating":4}]},
   {"worldName":"Metal Gear","rating":3,"condition":[{"rating":3,"name":"1964 (MGS3)"},{"rating":4,"name":"1970-1984 (MGS:PO/MGSV:TPP)"},{"name":"1995-2009 (MG/MGS2:SoL)","rating":4},{"name":"2014 (MG4:GotP)","rating":5},{"rating":6,"name":"2018 (MGR:R)"}]},
   {"worldName":"Psyren","rating":6,"additional":"Walk in/Drop-in do not gain a power from psyren's atmosphere, Extras do but it is completely random strength."},
@@ -342,6 +325,18 @@
   {"worldName":"Tenjou Tenge","rating":4,"additional":"Possession Defense will protect you from Noriko Dragon Roar ability.\n\nInformation Defense will protect you from the Dragon Eyes prediction ability."},
   {"worldName":"Tier 1 Town (Meta)","rating":1,"additional":"A special setting taking place in a large town or small city one could find a generic slice of life anime.\n\nContains any tier 1 waifus of your choice for potential capture.\n\nDue to the world's slice of life nature, nobody will age, be maimed, or die as long as you're here, though you may optionally turn this off. Nobody will find any of this weird.\n\nIf you select Tier 2 Town, the protections against maiming and death are automatically turned off, but you can also encounter any tier 2 waifus of your choice.","condition":[{"rating":2,"name":"Tier 2 Town"}]},
   {"worldName":"Tokyo Ghoul","rating":6},
+  {"worldName":"Bloodborne","rating":9,"image":"https://i.imgur.com/p2G4FpM.png","additional":"Body Defense will protect you from the beast plague and physical effect of insight while Mind Defense will protect you from it’s mental effects"},
   {"worldName":"Until Dawn","rating":4,"additional":"Possession Defense will protect you from becoming a Wendigo"},
-  {"worldName":"Yu-Gi-Oh!","rating":1,"additional":"May purchase decks from catalog for 1 point. Summoning methods of later generations are not usable on duel disks of earlier generations. Psychic Dueling can be bought using local power template option.","condition":[{"name":"Ancient Egypt","rating":4},{"rating":5,"name":"Duel Monsters"},{"name":"GX","rating":5},{"name":"5ds","rating":5},{"rating":4,"name":"Zexal"},{"name":"Arc V","rating":5},{"rating":7,"name":"Duel Terminal"},{"rating":6,"name":"World Legacy"}]}
+  {"worldName":"Yu-Gi-Oh!","rating":1,"additional":"May purchase decks from catalog for 1 point. Summoning methods of later generations are not usable on duel disks of earlier generations. Psychic Dueling can be bought using local power template option.","condition":[{"name":"Ancient Egypt","rating":4},{"rating":5,"name":"Duel Monsters"},{"name":"GX","rating":5},{"name":"5ds","rating":5},{"rating":4,"name":"Zexal"},{"name":"Arc V","rating":5},{"rating":7,"name":"Duel Terminal"},{"rating":6,"name":"World Legacy"}]},
+
+  {"worldName":"Babylon 5","rating":5,"condition":[{"rating":7,"name":"Shadow War"}]},
+  {"worldName":"Black Lagoon","rating":3},
+  {"worldName":"Command & Conquer","rating":3,"additional":"Rating is variable by time period/Timeline.","condition":[{"name":"Red Alert/2/Yuri's Revenge","rating":3},{"name":"Red Alert 3","rating":4},{"rating":4,"name":"Tiberian Dawn/Sun"},{"rating":5,"name":"Tiberium Wars/Twilight/Scrin Invasion"}]},
+  {"worldName":"Infinite Stratos","rating":4,"image":"https://flxt.tmsimg.com/assets/p18340693_b_v8_ab.jpg"},
+  {"worldName":"Guild Wars 2","rating":8},
+  {"worldName":"Hitman Reborn","rating":4},
+  {"worldName":"Little Witch Academia","rating":3},
+  {"worldName":"One Punch Man","rating":7},
+  {"worldName":"Shokugeki no Sōma","rating":1},
+  {"worldName":"Taimanin","rating":7}
 ]

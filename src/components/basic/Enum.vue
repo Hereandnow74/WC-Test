@@ -12,7 +12,7 @@
           <span v-if="el?.anything?.length">({{ el.anything }})</span>
           <span v-if="el.count && el.count > 1" class="">(x{{ el.count }})</span>
           <span v-if="el?.target?.length || el.waifu" class="">({{ el.target || el.waifu }})</span>
-          <span v-if="el?.complex">
+          <span v-if="el.complex && isArray(el.complex)">
             <List :list-key="'target'" :list="el.complex" color="text-green-500" start="(" end=")" />
             <List :list-key="'flavor'" :list="el.complex" color="text-violet-400" start="{" end="}" />
           </span>
@@ -28,6 +28,7 @@
 </template>
 
 <script lang='ts' setup>
+import { isArray } from 'lodash'
 import type { PropType } from 'vue'
 import { LINKS, QUERIES } from '~/data/constatnts'
 

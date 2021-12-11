@@ -1,6 +1,6 @@
 
 <template>
-  <div class="max-w-screen-lg mx-auto flex flex-col gap-4 mt-4 mb-8">
+  <div class="max-w-screen-lg lg:pl-0 flex flex-col gap-4 mt-4 mb-8">
     <h1 id="rules" class="text-xl font-bold text-center mt-4">
       Rules
     </h1>
@@ -18,7 +18,7 @@
         v-for="rule in rulesList"
         :key="rule.title"
         :to="{path: '/', hash:'#'+rule.title}"
-        class="text-blue-600 dark:text-blue-400 hover:underline text-lg w-max"
+        class="text-blue-600 dark:text-blue-400 hover:underline sm:text-lg w-max"
       >
         {{ rule.title2 }}
       </router-link>
@@ -29,7 +29,7 @@
       <Table :headers="waifuTitles" :rows="waifuData" class="text-sm md:text-base w-min flex-grow" />
     </div>
     <div id="pandora" class="bg-amber-100 dark:bg-gray-800 p-1 md:p-4 w-full mx-auto">
-      <h3 class="text-lg text-center mb-2">
+      <h3 class="sm:text-lg text-center mb-2">
         Pandora’s Alternate Tier Ranks (by <a class="text-blue-500 hover:underline" href="https://forum.questionablequesting.com/threads/r34-economy-cyoa-thread.11289/page-63%23post-3167059&sa=D&source=editors&ust=1636169921608000&usg=AOvVaw3lNgOZSmmHTK3NPa9X_SOQ" target="_blank" rel="noopener noreferrer">Pandora12</a>)
       </h3>
       <Table :headers="pandoraTitles" :rows="pandoraData" class="text-sm md:text-base w-full flex-grow text-black" />
@@ -74,6 +74,10 @@
     </h2>
     <Desc id="RIP" :desc="rip" class="bg-warm-gray-200 dark:bg-gray-800" />
     <Desc id="Offspring" :desc="offspring" class="bg-warm-gray-200 dark:bg-gray-800" />
+    <h2 id="additional" class="text-xl text-center">
+      Nasuverse DLC rules
+    </h2>
+    <Desc id="NasuDLC" :desc="nasuDLC" class="bg-warm-gray-200 dark:bg-gray-800" />
     <div class="pt-4"></div>
     <ShareLoad />
   </div>
@@ -84,7 +88,7 @@ import { WORLD_RATINGS, rulesList } from '~/data/constatnts'
 import {
   startingDesc, pvpRules, effectiveTiers, captures, familiars, purchases, sales, waifu11,
   danger11, services, salary, helpDesk, loans, missions, refund, arranged, arrangedConditions,
-  arrangedSpecial, arrangedTeam, creditValue, assetValue, rip, offspring,
+  arrangedSpecial, arrangedTeam, creditValue, assetValue, rip, offspring, nasuDLC,
 } from '~/data/rules'
 
 import { useTooltips } from '~/logic/misc'

@@ -48,16 +48,12 @@ import { useTimeAgo } from '@vueuse/core'
 import { random } from 'lodash'
 import { remove } from 'lodash-es'
 import Input from '../basic/Input.vue'
-import { useSaves } from '~/store/saves'
+import { getSaveObject, useSaves, writeBuildValues } from '~/store/saves'
 import { useStore } from '~/store/store'
 
 const { savesList } = useSaves()
 
-const {
-  startingWorld, startingOrigin, intensities, binding, homePerks, defensePerks,
-  companions, heritage, talentPerks, waifuPerks, ridePerks, miscPerks, luresBought, genericWaifuPerks,
-  budgetMods, baseBudget, allEffects, flags, totalCost, otherPerks,
-} = useStore()
+const { startingWorld, totalCost } = useStore()
 
 const name = ref('')
 const saveButton = ref<HTMLLinkElement>(null)
@@ -65,27 +61,7 @@ const loadEl = ref<HTMLElement>(null)
 
 const saves = useStorage<Record<number, any>>('saves', {})
 
-const save = {
-  baseBudget: baseBudget.value,
-  startingWorld: startingWorld.value,
-  startingOrigin: startingOrigin.value,
-  intensities: intensities.value,
-  binding: binding.value,
-  luresBought: luresBought.value,
-  otherPerks: otherPerks.value,
-  heritage: heritage.value,
-  ridePerks: ridePerks.value,
-  homePerks: homePerks.value,
-  talentPerks: talentPerks.value,
-  defensePerks: defensePerks.value,
-  miscPerks: miscPerks.value,
-  genericWaifuPerks: genericWaifuPerks.value,
-  waifuPerks: waifuPerks.value,
-  companions: companions.value,
-  allEffects: allEffects.value,
-  flags: flags.value,
-  budgetMods: budgetMods.value,
-}
+const save = getSaveObject()
 
 function saveBuild() {
   const uid = random(1000000, 9999999)
@@ -98,28 +74,6 @@ function saveBuild() {
     date: new Date().toString(),
   })
   saves.value[uid] = save
-}
-
-function writeBuildValues(build: any) {
-  baseBudget.value = build.baseBudget || 0
-  startingWorld.value = build.startingWorld
-  startingOrigin.value = build.startingOrigin
-  intensities.value = build.intensities || []
-  binding.value = build.binding
-  otherPerks.value = build.otherPerks || []
-  luresBought.value = build.luresBought || []
-  heritage.value = build.heritage || []
-  ridePerks.value = build.ridePerks || []
-  homePerks.value = build.homePerks || []
-  talentPerks.value = build.talentPerks || []
-  defensePerks.value = build.defensePerks || []
-  miscPerks.value = build.miscPerks || []
-  genericWaifuPerks.value = build.genericWaifuPerks || []
-  waifuPerks.value = build.waifuPerks || []
-  companions.value = build.companions || []
-  allEffects.value = build.allEffects || []
-  flags.value = build.flags
-  budgetMods.value = build.budgetMods
 }
 
 function loadBuld(uid: number) {

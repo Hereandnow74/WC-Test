@@ -51,11 +51,18 @@ intensity.push({
   desc: 'Things will not calm down, contractor. The Danger Rating of every world you visit will always be equal to the highest Danger Rating of any world your retinue has visited(while they were in your retinue). This even applies to worlds you’ve already been to since your contract began, but not different eras of the same world, and may manifest as a new plot development, incursion from one of your other worlds, or reveal of a new element that was “always” there. People from each adjusted world will maintain their former roles in the new circumstances, with appropriate increases to their tier ratings and list prices - and, in turn, the corresponding effects on capture and other values - as necessary. Waifu perks may still be applied to captures or Yoinks from these worlds, with no change to their list prices. Tier changes from waifu perks may or may not apply in these cases.',
 })
 intensity.push({
+  title: 'Wage Slave',
+  intensity: 0.6,
+  special: 'Chargen only. May not be taken on DR11.',
+  blacklist: ['Fight For Your Right', 'One In Ten'],
+  desc: 'We aren\'t a charity, Contractor. We\'ve decided you need to put in some more effort to earn your keep. While your starting budget is not negatively impacted, from here on out, you can only gain credits for completing missions, winning arranged PvP matches, or by completing other similar activities on behalf of the Company. Captures and sales will provide no inherent value beyond the targets themselves and any discounts they might provide retroactively. However, captures will still provide a bonus to Contractor salary. We do not advise taking Cash Still Rules with this, as that mode provides no benefits with this mode active. However, if you wish to start heavily indebted to us, without any easy ways of paying us back… we won’t stop you.',
+})
+intensity.push({
   title: 'One In Ten',
   intensity: 50,
   pvp: true,
   special: 'Gauntlet only, mutually exclusive with Fight For Your Right',
-  blacklist: ['Fight For Your Right'],
+  blacklist: ['Fight For Your Right', 'Wage Slave'],
   desc: 'This is the most basic option. You are only locked into PvP for 10 rounds. Negotiable opponents will  appear from round 1 to round 9 and you will face a Rival in round 10. You will not face any Enemies. Members of your retinue rated T11 may not directly participate. Your prize for survival is 200 credits.',
 })
 intensity.push({
@@ -63,7 +70,7 @@ intensity.push({
   intensity: 0.2,
   pvp: true,
   special: 'Gauntlet only, mutually exclusive with One In Ten',
-  blacklist: ['One In Ten'],
+  blacklist: ['One In Ten', 'Wage Slave'],
   desc: `This is the default option. You are locked into PVP for 20 rounds. Negotiable opponents may appear from round 1 to round 15, Rivals may appear from round 11 to round 19, and you will always face an Enemy on round 20. Members of your retinue rated T11 may not directly participate. Your prize for survival is one T11 ticket.
 You may transition to this challenge after completing One In Ten. If you do so, you must choose between giving up the prize for the previous challenge and accepting 1800 credits instead of the normal prize for this one. The additional budget increase will be applied according to the highest - danger world you’ve visited.`,
 })

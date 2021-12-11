@@ -1,5 +1,5 @@
 <template>
-  <div class="md:p-2 pb-8">
+  <div class="sm:p-2 pb-8">
     <div class="mb-4 max-w-4xl mx-auto">
       <Table
         :headers="['&sum;', 'Tier']"

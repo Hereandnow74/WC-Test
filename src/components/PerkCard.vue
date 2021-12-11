@@ -3,8 +3,9 @@
     class="sm:p-2 mb-2 column-block cursor-pointer"
     @click="sendPerk"
   >
-    <h3 :id="perk.title" class="relative flex-wrap flex justify-center items-center text-xl">
+    <h3 :id="perk.title" class="relative flex-wrap flex justify-center items-center text-base sm:text-xl">
       <span class="whitespace-nowrap">{{ perk.title }}</span>
+      <span v-if="perk.dlc" class="text-sm ml-1" text="gray-500 dark:gray-400">(DLC by <span>{{ perk.dlc }}</span>)</span>
       <span v-if="savedPerk.anything">({{ savedPerk.anything }})</span>
       <AnythingInput
         v-if="complexFields.target"

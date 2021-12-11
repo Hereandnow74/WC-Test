@@ -11,7 +11,7 @@
       </div>
       <Select v-model.number="tier" :options="tierOptions" />
       <Input v-model.number="limit" class="px-1" :style="`width: ${(''+limit).length + 3}ch`" />
-      <Button size="Small" label="Tags" bg-color="bg-gray-600" @click="toggleShowFilterTags" />
+      <Button size="Small" label="Tags" bg-color="bg-gray-600 hover:bg-teal-600" @click="toggleShowFilterTags" />
       <div class="flex rounded bg-gray-600 cursor-pointer">
         <div
           :class="gender==='F' ? 'bg-gray-700':''"
@@ -69,7 +69,7 @@
         class="border rounded px-1 border-gray-300 dark:border-gray-500"
       />
       <div class="hidden md:block">
-        Characters in database - {{ charArr.length }}
+        {{ filteredCharacters.length }} results
       </div>
       <Button label="Add Character" size="Small" @click="() => (editMode = false, toggleShowAddCharacter())" />
     </div>
@@ -94,7 +94,7 @@
       class="grid sm:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-1 overflow-y-auto pb-8"
     >
       <CompanionCard
-        v-for="{ item: char } in filteredCharacters"
+        v-for="{ item: char } in slicedChars"
         :key="char.u"
         :char="char"
         class="h-[500px]"
@@ -133,7 +133,7 @@ interface Character {
 }
 
 const search = ref(' ')
-const limit = ref(10)
+const limit = ref(0)
 const tier = ref(0)
 const isLimited = ref(false)
 
@@ -194,6 +194,7 @@ onMounted(async() => {
   if (params.name)
     nextTick(() => search.value = params.name)
   else search.value = ''
+  limit.value = 10
 })
 
 watch(route, x => search.value = x.query.name || '')
@@ -250,12 +251,13 @@ const filteredCharacters = computed(() => {
   if (image.value) sopt.$and.push({ i: image.value })
 
   if (search.value.length === 0)
-    return fuseNoSort.search(sopt, { limit: limit.value })
-
-  return fuse.search(sopt, { limit: limit.value })
+    return fuseNoSort.search(sopt)
+  return fuse.search(sopt)
 })
 
-watch(filteredCharacters, () => nextTick(() => lazyLoadImg(waifuList.value)))
+const slicedChars = computed(() => filteredCharacters.value.slice(0, limit.value))
+
+watch(slicedChars, () => nextTick(() => lazyLoadImg(waifuList.value)))
 
 const allUserCharacters = computed(() => userCharacters.value.concat(localUserCharacters.value))
 

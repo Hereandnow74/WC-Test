@@ -1,3 +1,5 @@
+import { findIndex } from 'lodash-es'
+import { useChallenges } from './challenges'
 import { CHAR_COSTS, heritageTiers } from '~/data/constatnts'
 
 export interface World {
@@ -93,7 +95,7 @@ const companions = storeType('companions', [] as {
   tier: number
   priceTier: number
   sold?: boolean
-  method: 'buy' | 'capture' | 'steal' | 'yoink' | 'used'
+  method: 'buy' | 'capture' | 'steal' | 'yoink' | 'used' | 'unbound'
 }[])
 
 const allEffects = storeType('allEffects', [] as string[])
@@ -121,6 +123,7 @@ const allForSave = {
   talentPerks,
   defensePerks,
   miscPerks,
+  homePerks,
 }
 
 const userWorlds = ref([] as World[])
@@ -161,10 +164,19 @@ const companionsCost = computed(() => {
   }, 0)
 })
 
+const { activeChallenges } = useChallenges()
+
+const captureKoeff = computed(() => {
+  let kf = 0.6
+  if (findIndex(intensities.value, { title: 'Cash Still Rules' }) !== -1) kf = 0.8
+  if (findIndex(activeChallenges.value, { title: 'Waifu Manager' }) !== -1) kf = 0.8
+  return kf
+})
+
 const companionProfit = computed(() => {
   return companions.value.reduce((a, x) => {
     if (x.method === 'capture' && x.priceTier !== 11) {
-      let captureCost = Math.ceil(CHAR_COSTS[x.priceTier - 1] * 0.6)
+      let captureCost = Math.ceil(CHAR_COSTS[x.priceTier - 1] * captureKoeff.value)
       captureCost = captureCost < 1 ? 1 : captureCost
       return a += captureCost
     }
@@ -182,13 +194,13 @@ const companionProfitSold = computed(() => {
   }, 0)
 })
 
-const budget = computed(() => {
+const fullStartingBudget = computed(() => {
   let intensityFlat = 0
   const intenMultiplier = intensities.value
     .reduce((a, x) => x.intensity < 10 ? a += x.intensity : (intensityFlat += x.intensity, a), 0)
 
   let bd = baseBudget.value
-  if (bd === 11111) {
+  if (bd >= 11111) {
     bd = 0
     flags.value.danger11Start = true
   }
@@ -196,7 +208,11 @@ const budget = computed(() => {
     flags.value.danger11Start = false
   }
 
-  return Math.round((bd + intensityFlat) * (1 + intenMultiplier)) - startingOrigin.value.cost
+  return Math.round((bd + intensityFlat) * (1 + intenMultiplier))
+})
+
+const budget = computed(() => {
+  return fullStartingBudget.value - startingOrigin.value.cost
       - bindingCost.value - heritageCost.value - luresCost.value - ridePerksCost.value - homePerksCost.value
       - talentsCost.value - defensesCost.value - miscPerksCost.value - waifuPerksCost.value
       - genericWaifuPerksCost.value - companionsCost.value - otherCost.value
@@ -252,11 +268,14 @@ const yourTier = computed(() => {
       if (cost >= heritageTiers[i][0]) return heritageTiers[i][1]
     return 0
   }
+  const talentsTier4 = findIndex(talentPerks.value, x => ['Template Stacking I', 'Racial Template', 'OC Donut Steel'].includes(x.title)) !== -1 ? 4 : 0
+  const talentsTier5 = findIndex(talentPerks.value, x => ['Template Stacking II'].includes(x.title)) !== -1 ? 5 : 0
+  const shroudTier = findIndex(binding.value, { title: 'Shroud of Power' }) !== -1 ? 4 : 0
   const originTier = startingOrigin.value.tier || 0
   const dragonTier = calcTier(heritage.value.filter(x => x.tree && x.tree === 'Dragon').reduce((a, x) => a += x.cost, 0))
   const transhumanTier = calcTier(heritage.value.filter(x => x.tree && x.tree === 'Transhuman').reduce((a, x) => a += x.cost, 0))
   const outsiderTier = calcTier(heritage.value.filter(x => x.tree && x.tree === 'Outsider').reduce((a, x) => a += x.cost, 0))
-  return Math.max(originTier, dragonTier, transhumanTier, outsiderTier)
+  return Math.max(originTier, dragonTier, transhumanTier, outsiderTier, talentsTier4, talentsTier5, shroudTier)
 })
 
 const companionsUIDs = computed(() => companions.value.reduce((a, c) => (a[c.uid] = true, a), {}))
@@ -312,5 +331,6 @@ export function useStore() {
     localUserRides,
     yourTier,
     companionsUIDs,
+    fullStartingBudget,
   }
 }

@@ -31,6 +31,7 @@
       </div>
       <div class="flex flex-col gap-1 justify-between rounded-xl bg-gray-800 py-2 px-1">
         <clarity:floppy-outline-alerted class="hover:text-green-500 cursor-pointer" @click="loadBuild(save.id)" />
+        <bx:bx-copy-alt class="hover:text-green-500 cursor-pointer" @click="copyLink(save.id)" />
       </div>
     </div>
     <Button label="Back" icon="akar-icons:arrow-back-thick" size="Small" @click="toggleAppMode" />
@@ -57,5 +58,9 @@ const displayList = computed(() => buildList.value
 function loadBuild(id: string) {
   getBuild(id, assignBuildData)
   activeTab.value = 0
+}
+
+function copyLink(id: string) {
+  navigator.clipboard.writeText(`https://waifu-catalog.neocities.org/?load=${id}`)
 }
 </script>
