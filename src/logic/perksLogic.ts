@@ -4,6 +4,7 @@ import { Heritage } from '~/data/heritage'
 import { Intensity } from '~/data/intensity'
 import { PerkFull, Ride } from '~/data/talents'
 import { WaifuPerk } from '~/data/waifu_perks'
+import { useChallenges } from '~/store/challenges'
 import { usePlayStore } from '~/store/play'
 import { Perk, useStore } from '~/store/store'
 
@@ -14,6 +15,8 @@ const {
 } = useStore()
 
 const { currentWorld, jumpChain, rdnWorld } = usePlayStore()
+
+const { activeChallenges } = useChallenges()
 
 // General functions
 export function deleteFreebies(freebies: object) {
@@ -419,6 +422,7 @@ export function clearAll() {
   jumpChain.value = []
   currentWorld.value = startingWorld.value
   rdnWorld.value = []
+  activeChallenges.value = []
 }
 
 export function assignBuildData(data: any) {

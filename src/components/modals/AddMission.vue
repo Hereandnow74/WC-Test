@@ -27,7 +27,7 @@
           <Input
             v-model="requirement.value"
             class="flex-grow"
-            :placeholder="`Reward #${i + 1}`"
+            :placeholder="`Requirement #${i + 1}`"
             :error-message="errors.requirements"
           />
           <fluent:delete-20-filled class="text-red-500 hover:text-red-400 cursor-pointer" @click="requirements.splice(i, 1)" />

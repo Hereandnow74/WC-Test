@@ -21,6 +21,12 @@
         </div>
       </div>
     </div>
+    <div v-if="activeChallenges.length" id="Challenges">
+      <h3 class="text-lg text-gray-400">
+        Challenges
+      </h3>
+      <Enum color="text-blue-400 hover:text-blue-300" :list="activeChallenges" path="/challenges" />
+    </div>
     <div id="Intensity">
       <h3 class="text-lg text-gray-400">
         Intensity
@@ -205,12 +211,15 @@ import {
   chooseBinding, chooseDefense, chooseGenericPerk, chooseHeritage, chooseHome,
   chooseLure, chooseOther, choosePerk, chooseRide, chooseTalent, chooseWaifuPerk,
 } from '~/logic'
+import { useChallenges } from '~/store/challenges'
 
 const {
   startingWorld, startingOrigin, intensities, binding, homePerks, defensePerks,
   heritage, talentPerks, waifuPerks, ridePerks, miscPerks, luresBought, genericWaifuPerks,
   otherPerks, yourTier,
 } = useStore()
+
+const { activeChallenges } = useChallenges()
 
 const editMode = ref(false)
 
