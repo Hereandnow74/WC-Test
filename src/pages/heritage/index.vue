@@ -48,6 +48,14 @@
             class="ml-1 text-base"
             @click.stop
           />
+          <Select
+            v-if="['Singularity', 'Ascendant Human'].includes(hr.title)"
+            :options="['Biomorph', 'Cybermorph', 'Aethermorph'].filter(x => x !== flags.transhumanType)"
+            placeholder="Transhuman type"
+            class="ml-1 text-base"
+            @change="pickSingularityType($event.target.value, hr)"
+            @click.stop
+          />
         </template>
         <template #rules>
           <h6 v-if="hr.tree !== 'None'" class="text-center font-sm text-gray-600 dark:text-gray-400">
@@ -75,11 +83,12 @@
 <script lang='ts' setup>
 
 import { onBeforeRouteUpdate } from 'vue-router'
-import { desc, heritages, Heritage } from '~/data/heritage'
+import { isArray, mergeWith } from 'lodash-es'
+import { desc, heritages, Heritage, DLCheritages } from '~/data/heritage'
 import { useTooltips } from '~/logic/misc'
 import { useStore } from '~/store/store'
 import Select from '~/components/basic/Select.vue'
-import { chooseHeritage, heritageAvailable } from '~/logic'
+import { chooseHeritage, heritageAvailable, isDLC } from '~/logic'
 import { heritageTiers } from '~/data/constatnts'
 
 const { heritage, flags } = useStore()
@@ -93,13 +102,15 @@ const heritageColors = {
 }
 const activeTree = ref<'Dragon' | 'Transhuman' | 'Outsider'>('Dragon')
 
+const heritagesDLC = computed(() => isDLC.value ? heritages.concat(DLCheritages) : heritages)
+
 const heritageByTree = computed(() => {
   const res = {
     Dragon: [] as Heritage[],
     Transhuman: [] as Heritage[],
     Outsider: [] as Heritage[],
   }
-  heritages.forEach(x => x.tree !== 'None' ? res[x.tree].push(x) : null)
+  heritagesDLC.value.forEach(x => x.tree !== 'None' ? res[x.tree].push(x) : null)
   return res
 })
 
@@ -123,5 +134,12 @@ onBeforeRouteUpdate((to, from, next) => {
 
   nextTick(next)
 })
+
+function pickSingularityType(type: string, perk: any) {
+  const allHrWFr = heritages.filter(x => x.typeFreebies)
+  const fr = {}
+  mergeWith(fr, ...allHrWFr.map(x => x.typeFreebies[type]), (a, b) => { if (isArray(a)) return a.concat(b) })
+  perk.freebies = fr
+}
 
 </script>

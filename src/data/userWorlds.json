@@ -324,6 +324,7 @@
   {"worldName":"Subnautica","rating":3,"condition":[{"rating":3,"name":"First Game"},{"rating":4,"name":"Below Zero"}]},
   {"worldName":"Tenjou Tenge","rating":4,"additional":"Possession Defense will protect you from Noriko Dragon Roar ability.\n\nInformation Defense will protect you from the Dragon Eyes prediction ability."},
   {"worldName":"Tier 1 Town (Meta)","rating":1,"additional":"A special setting taking place in a large town or small city one could find a generic slice of life anime.\n\nContains any tier 1 waifus of your choice for potential capture.\n\nDue to the world's slice of life nature, nobody will age, be maimed, or die as long as you're here, though you may optionally turn this off. Nobody will find any of this weird.\n\nIf you select Tier 2 Town, the protections against maiming and death are automatically turned off, but you can also encounter any tier 2 waifus of your choice.","condition":[{"rating":2,"name":"Tier 2 Town"}]},
+  {"worldName":"Wheel of Time","rating":7,"image":"https://i.imgur.com/5TFJH2kl.jpg","additional":"Dark One's taint on Saidin halves effectiveness of Corruption, Mind, & Soul Defenses for all male Channelers until the taint is cleanse from the One Power. Only applies during the Third Age.\n\nUsers of the One Power are subjected to its gendered rules, Saidin channelers, the male half of the One Power being on average stronger than Saidar channelers, while a linked circle of 13 Saidar channelers can overpower the strongest Saidin channeler.","condition":[{"name":"Age of Legends","rating":10},{"name":"After Breaking","rating":7},{"name":"Trolloc Wars","rating":8},{"name":"War of the Hundred Years","rating":7},{"name":"Tarmon Gai'don","rating":9}]},
   {"worldName":"Tokyo Ghoul","rating":6},
   {"worldName":"Bloodborne","rating":9,"image":"https://i.imgur.com/p2G4FpM.png","additional":"Body Defense will protect you from the beast plague and physical effect of insight while Mind Defense will protect you from it’s mental effects"},
   {"worldName":"Until Dawn","rating":4,"additional":"Possession Defense will protect you from becoming a Wendigo"},
@@ -338,5 +339,6 @@
   {"worldName":"Little Witch Academia","rating":3},
   {"worldName":"One Punch Man","rating":7},
   {"worldName":"Shokugeki no Sōma","rating":1},
-  {"worldName":"Taimanin","rating":7}
+  {"worldName":"Taimanin","rating":7},
+  {"worldName":"Toril/Forgotten Realms","rating":7}
 ]

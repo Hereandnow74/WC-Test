@@ -131,7 +131,7 @@ function buildString(title: string, items: Perk[], left: object) {
     let complexBoth = ''
     if (x.complex) {
       if (x.complex[0].flavor && x.complex[0].target)
-        complexBoth = `[${x.complex.map(x => `${x.target} has ${x.flavor}`).join(', ')}]`
+        complexBoth = `[${x.complex.map(x => `${x.target} have ${x.flavor}`).join(', ')}]`
       if (x.complex[0].flavor)
         complexFlavor = `[${x.complex.map(x => `${x.flavor}`).join(', ')}]`
       if (x.complex[0].target)

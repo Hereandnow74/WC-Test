@@ -12,6 +12,7 @@
         :bg="genericAvailable(perk) ? 'lime-200 dark:lime-900 hover:(lime-100 dark:lime-800)'
           : 'gray-200 dark:gray-600'"
         :saved-perk="allGeneric[perk.title]"
+        :is-active="!!allGeneric[perk.title]"
         @pickPerk="chooseGenericPerk"
       ></PerkCard>
     </div>

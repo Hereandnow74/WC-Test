@@ -350,10 +350,7 @@
       }
     ]
   },
-  {
-    "rating": 9,
-    "worldName": "Overlord (LN)"
-  },
+  {"worldName":"Overlord (LN)","rating":9,"condition":[{"name":"Pre Isekai (Yggdrasil the Game)","rating":4}]},
   {
     "rating": 5,
     "worldName": "One Piece",

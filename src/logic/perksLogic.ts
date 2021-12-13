@@ -234,7 +234,7 @@ export function chooseHeritage(hr: Heritage, saveData: Perk) {
       if (hr.title === 'First Augmentation') {
         flags.value.isTranshuman = true
         flags.value.transhumanType = flags.value.transhumanType || sample(['Biomorph', 'Cybermorph', 'Aethermorph'])
-        saveData.anything = flags.value.transhumanType
+        saveData.complex = [{ flavor: flags.value.transhumanType }]
       }
       if (hr.typeFreebies)
         addFreebies(hr.typeFreebies[flags.value.transhumanType])

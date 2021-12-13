@@ -1153,4 +1153,29 @@ DLCgenericPerks.push({
   <li>T8 → T9: 300</li>
   </ul>`,
 })
+
+DLCgenericPerks.push({
+  title: 'Big Entrance',
+  dlc: 'KatzSmile',
+  special: 'Must be repurchased for each use.',
+  complex: 'target',
+  cost: 10,
+  desc: `Perhaps the moment will come when you need to justify the event of their appearance in front of you for a companion. But don't worry! For a very symbolic fee, our company undertakes to play a grandiose theatrical performance, which will surely convince your companion that their appearance next to you is an act of fate!
+  <p>It could be anything. Cataclysm, random portal, magical summoning by an evil (or not) sorcerer and their \"salvation by your intervention\". Or maybe they \"died\" and appeared before their \"god\"? Anything! Let your imagination run wild and we'll be happy to make it happen!</p>`,
+})
+DLCgenericPerks.push({
+  title: 'Grail Knowledge',
+  dlc: 'KatzSmile',
+  cost: 5,
+  desc: `Does your companion come from a less developed world than your own? Or perhaps their world is incredibly distant in a philosophical sense? Don't worry, we'll fix it!
+  <p>Having acquired this perk once, you can be sure that all your companions will receive all the necessary common knowledge for your world. Including general schooling, hygiene and home appliance skills</p>`,
+})
 // #endregion
+
+export const DLCperks: PerkFull[] = []
+DLCperks.push({
+  dlc: 'BenFang322',
+  title: 'Appearance Change (Cosmetic)',
+  cost: 1,
+  desc: 'Because sometimes you just don’t like the way you look, and would rather look different or like someone else instead. Can only be used to change cosmetic aspects of yourself only, and provide’s no practical benefits outside of a different appearance.',
+})

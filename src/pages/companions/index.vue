@@ -181,11 +181,13 @@ const route = useRoute()
 
 onMounted(async() => {
   const userChars = await getUserChars()
-  if (userChars[0].b) {
-    if (!userChars[0].b.includes('U'))
-      userChars.forEach(x => x.b.push('U'))
-  }
-  else { userChars.forEach(x => x.b = ['U']) }
+  userChars.forEach((x) => {
+    if (x.b) {
+      if (!x.b.includes('U'))
+        x.b.push('U')
+    }
+    else { x.b = ['U'] }
+  })
 
   charArr.value = Array.prototype.concat(userChars, (await getChars()))
   fuse.setCollection(charArr.value)
