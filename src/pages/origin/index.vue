@@ -47,14 +47,14 @@
               <button
                 v-if="startingOrigin.title !== item.title"
                 class="rounded bg-amber-400 hover:bg-amber-500 text-gray-800 px-1"
-                @click="pickOrigin"
+                @click="flags.chargen ? pickOrigin() : confirmDialog('Origin can\'t be changed after chargen', 'info')"
               >
                 Select
               </button>
               <button
                 v-else
                 class="rounded bg-red-400 hover:bg-red-500 text-gray-800 px-1"
-                @click="startingOrigin = {title:'', cost: 0}"
+                @click="flags.chargen ? clearOrigin() : confirmDialog('Origin can\'t be changed after chargen', 'info')"
               >
                 Deselect
               </button>
@@ -74,6 +74,7 @@
 <script lang='ts' setup>
 import { CHAR_COSTS } from '~/data/constatnts'
 import { desc, origin, Origin } from '~/data/origin'
+import { confirmDialog } from '~/logic/dialog'
 import { useTooltips } from '~/logic/misc'
 import { useStore } from '~/store/store'
 
@@ -86,7 +87,7 @@ const choosedOrigin = reactive({
 })
 const costError = ref('')
 
-const { allEffects, startingOrigin, budget } = useStore()
+const { allEffects, startingOrigin, budget, flags } = useStore()
 
 onMounted(() => useTooltips())
 
@@ -117,7 +118,10 @@ function pickOrigin() {
     allEffects.value.push(choosedOrigin.title)
     Object.assign(startingOrigin.value, choosedOrigin)
   }
-  console.log(startingOrigin.value)
+}
+
+function clearOrigin() {
+  startingOrigin.value = { title: '', cost: 0 }
 }
 
 </script>

@@ -37,8 +37,20 @@
             </div>
             <span class="text-gray-500">From: <span class="text-gray-400">{{ char.world }}</span></span>
             <div class="flex gap-2 mb-1">
-              <NumberInput v-if="!char.sold" v-model="char.tier" :max="11" label="Change tier" class="whitespace-nowrap" />
-              <Variants v-if="!char.sold && char.method !== 'unbound'" v-model="char.role" :list="['Member', 'Familiar']" />
+              <NumberInput
+                v-if="!char.sold"
+                v-model="char.tier"
+                theme="dark"
+                :max="11"
+                label="Change tier"
+                class="whitespace-nowrap"
+              />
+              <Variants
+                v-if="!char.sold && char.method !== 'unbound'"
+                v-model="char.role"
+                theme="dark"
+                :list="['Member', 'Familiar']"
+              />
             </div>
             <div v-if="!char.sold" class="flex gap-2 mt-auto justify-end">
               <Button
@@ -125,6 +137,7 @@ const methods = {
   used: 'Used',
   yoink: 'Yoinked',
   unbound: 'Unbound',
+  steal: 'Stolen',
 }
 onMounted(() => lazyLoadImg(waifuList.value))
 watch(companionsDataFiltered, () => {

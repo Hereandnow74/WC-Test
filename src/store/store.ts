@@ -107,6 +107,8 @@ const budgetMods = storeType('budgetMods', {
   minus11: 0,
 })
 
+const fee = storeType('fee', 0)
+
 const flags = storeType('flags', {
   noBindings: true,
   noHeritage: true,
@@ -215,7 +217,7 @@ const budget = computed(() => {
   return fullStartingBudget.value - startingOrigin.value.cost
       - bindingCost.value - heritageCost.value - luresCost.value - ridePerksCost.value - homePerksCost.value
       - talentsCost.value - defensesCost.value - miscPerksCost.value - waifuPerksCost.value
-      - genericWaifuPerksCost.value - companionsCost.value - otherCost.value
+      - genericWaifuPerksCost.value - companionsCost.value - otherCost.value - fee.value
       - budgetMods.value.minus + budgetMods.value.plus + companionProfit.value + companionProfitSold.value
 })
 
@@ -332,5 +334,6 @@ export function useStore() {
     yourTier,
     companionsUIDs,
     fullStartingBudget,
+    fee,
   }
 }

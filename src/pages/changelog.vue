@@ -5,6 +5,25 @@
     </h2>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
+        15 December 2021
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>37 new user submitted Characters.</li>
+        <li>Bug fixes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
+        14 December 2021
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>17 new user submitted Characters.</li>
+        <li>8 new DLC perks.</li>
+        <li>Basic Chargen/In World mode</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
         13 December 2021
       </h3>
       <ul class="list-decimal list-inside">

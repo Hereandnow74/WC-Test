@@ -201,6 +201,22 @@
         </li>
       </ul>
     </div>
+    <Button
+      v-if="flags.chargen"
+      label="Finish Build"
+      size="Small"
+      bg-color="bg-red-500"
+      class="self-end"
+      @click="finishBuild"
+    />
+    <Button
+      v-else
+      label="Return to Chargen"
+      size="Small"
+      bg-color="bg-gray-600"
+      class="self-end"
+      @click="returnToChargen"
+    />
   </div>
 </template>
 
@@ -212,11 +228,12 @@ import {
   chooseLure, chooseOther, choosePerk, chooseRide, chooseTalent, chooseWaifuPerk,
 } from '~/logic'
 import { useChallenges } from '~/store/challenges'
+import { confirmDialog } from '~/logic/dialog'
 
 const {
   startingWorld, startingOrigin, intensities, binding, homePerks, defensePerks,
   heritage, talentPerks, waifuPerks, ridePerks, miscPerks, luresBought, genericWaifuPerks,
-  otherPerks, yourTier,
+  otherPerks, yourTier, flags,
 } = useStore()
 
 const { activeChallenges } = useChallenges()
@@ -234,5 +251,17 @@ const originText = computed(() => {
 
   return variants[startingOrigin.value.title]
 })
+
+async function finishBuild() {
+  const confirm = await confirmDialog('This action will lock all \'chargen\' perks and if you return any of your choosen perks/companions you will only receive 80% of their cost back.')
+  if (confirm)
+    flags.value.chargen = false
+}
+
+async function returnToChargen() {
+  const confirm = await confirmDialog('This is Interactive only feature you can\'t return to character generation by the catalog rules.')
+  if (confirm)
+    flags.value.chargen = true
+}
 
 </script>

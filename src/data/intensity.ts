@@ -20,12 +20,14 @@ intensity.push({
   title: 'Me and My Girlfriend(s)(PvE)',
   intensity: 0,
   special: 'Chargen only',
+  chargen: true,
   desc: 'Proceed directly to the Origins section. You may still encounter other contractors, but the multiverse is big, really big. You just won\'t believe how vastly, hugely, mind-bogglingly big it is. I mean, you may think it\'s a long way down the road to the chemist, but that\'s just peanuts to the multiverse. You can easily go entire lifetimes without meeting even one.',
 })
 intensity.push({
   title: 'With A Little Help From My Friends(Cooperative)',
   intensity: 0.2,
   special: 'Chargen only',
+  chargen: true,
   desc: `You aren’t the only player in your game. Another contractor walks alongside you, visiting the same worlds in the same order. Your progress meters for Exit Stage Left and Rainbow Bridge are synchronized and charged by both of your activities.
 The intensity bonus for this mode applies additively for each additional contractor on your team: +20 % each for a party of two, + 40 % each for a party of three, +60 % each for a party of four, etc. Your budgets are increased to offset the limited supply of targets in each world versus the additional demand.`,
 })
@@ -33,6 +35,7 @@ intensity.push({
   title: 'Couple’s Account(Cooperative)',
   intensity: 0,
   special: 'Chargen only. May not be taken on DR11.',
+  chargen: true,
   blacklist: ['DR11'],
   desc: `Your spouse or significant other is a contractor like you, but the two of you are tied much more closely than the friends option above. The two of you share full access to a joint account tied to both of your smart devices. A member of your retinue may be a waifu or husbando to one of you and merely a familiar to the other.
 You will only pay for the more expensive of your two Origins. The chosen binding method treats you as equal masters, ensuring that your love never fades. (If you have the Symbiote, one of you will usually, but not necessarily, be the queen.) Heritages are purchased separately, but the other of you can buy any Heritage that one of you has at half - price, after all discounts and ignoring the usual discount cap. The control aspects of Bindings, Lures, and any Heritage hierarchy mechanics will only affect your relationship if the two of you are into that. OC Donut Steel, Template Stacking, and relevant waifu perks are purchased individually. All other items need only be purchased once to benefit the both of you equally. Your shared retinue will not enter R. I. P. mode unless you both perish.`,
@@ -42,18 +45,21 @@ intensity.push({
   intensity: 0,
   blacklist: ['DR11'],
   special: 'Chargen only. May not be taken on DR11.',
+  chargen: true,
   desc: 'Your signing bonus… isn’t. Whatever you spend from it will instead be a loan, subject to the rules in Loans and Credit Debt. Your starting world will not necessarily have enough available credits to pay back your loan or even the interest from unlocking the first new world, but Missions can help cover that. If this is taken, all Captures will be valued at 80 % of their list price, instead of the base 60 %.',
 })
 intensity.push({
   title: 'Calming Up',
   intensity: 0,
   special: 'Chargen only.',
+  chargen: true,
   desc: 'Things will not calm down, contractor. The Danger Rating of every world you visit will always be equal to the highest Danger Rating of any world your retinue has visited(while they were in your retinue). This even applies to worlds you’ve already been to since your contract began, but not different eras of the same world, and may manifest as a new plot development, incursion from one of your other worlds, or reveal of a new element that was “always” there. People from each adjusted world will maintain their former roles in the new circumstances, with appropriate increases to their tier ratings and list prices - and, in turn, the corresponding effects on capture and other values - as necessary. Waifu perks may still be applied to captures or Yoinks from these worlds, with no change to their list prices. Tier changes from waifu perks may or may not apply in these cases.',
 })
 intensity.push({
   title: 'Wage Slave',
   intensity: 0.6,
   special: 'Chargen only. May not be taken on DR11.',
+  chargen: true,
   blacklist: ['Fight For Your Right', 'One In Ten'],
   desc: 'We aren\'t a charity, Contractor. We\'ve decided you need to put in some more effort to earn your keep. While your starting budget is not negatively impacted, from here on out, you can only gain credits for completing missions, winning arranged PvP matches, or by completing other similar activities on behalf of the Company. Captures and sales will provide no inherent value beyond the targets themselves and any discounts they might provide retroactively. However, captures will still provide a bonus to Contractor salary. We do not advise taking Cash Still Rules with this, as that mode provides no benefits with this mode active. However, if you wish to start heavily indebted to us, without any easy ways of paying us back… we won’t stop you.',
 })

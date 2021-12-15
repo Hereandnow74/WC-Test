@@ -70,7 +70,7 @@ export const rulesList = [
   { title: 'services', title2: 'Company Services' },
   { title: 'salary', title2: 'Contractor Salary' },
   { title: 'helpDesk', title2: 'Help Desk Hotline' },
-  { title: 'loans', title2: 'Loans and Credit Debt' },
+  { title: 'Loans and Credit Debt', title2: 'Loans and Credit Debt' },
   { title: 'missions', title2: 'Missions' },
   { title: 'refund', title2: 'Refund and Return Policy' },
   { title: 'arranged', title2: 'Come Out and Play (Arranged PvP)' },
@@ -160,6 +160,7 @@ export const LINKS = computed(() => {
   links['Directly in Companions'] = 'companions'
   links.Offspring = ''
   links.Missions = ''
+  links['Loans and Credit Debt'] = ''
   links.familiar = ''
   return links
 })

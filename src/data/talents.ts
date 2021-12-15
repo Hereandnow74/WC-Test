@@ -906,6 +906,7 @@ perks.push({
   cost: 5,
   whitelist: ['Possess'],
   special: 'Chargen only',
+  chargen: true,
   desc: 'You… actually want the episodic memories and emotional connections of your Possess target? We can do that. The extra data will be downloaded into your Possess target alongside your own personality. As with Extra and Substitute, you can distinguish between your original memories and those of your Possess target without difficulty.',
 })
 
@@ -1160,22 +1161,119 @@ DLCgenericPerks.push({
   special: 'Must be repurchased for each use.',
   complex: 'target',
   cost: 10,
+  costVariants: [10, 100],
   desc: `Perhaps the moment will come when you need to justify the event of their appearance in front of you for a companion. But don't worry! For a very symbolic fee, our company undertakes to play a grandiose theatrical performance, which will surely convince your companion that their appearance next to you is an act of fate!
-  <p>It could be anything. Cataclysm, random portal, magical summoning by an evil (or not) sorcerer and their \"salvation by your intervention\". Or maybe they \"died\" and appeared before their \"god\"? Anything! Let your imagination run wild and we'll be happy to make it happen!</p>`,
+  <p>It could be anything. Cataclysm, random portal, magical summoning by an evil (or not) sorcerer and their \"salvation by your intervention\". Or maybe they \"died\" and appeared before their \"god\"? Anything! Let your imagination run wild and we'll be happy to make it happen!</p>
+  <p>Basic price is enougth for T1-T7 companions, But T8+ will require more expensive persuasion.</p>
+  `,
+
 })
 DLCgenericPerks.push({
   title: 'Grail Knowledge',
   dlc: 'KatzSmile',
-  cost: 5,
+  complex: 'target',
+  cost: 1,
   desc: `Does your companion come from a less developed world than your own? Or perhaps their world is incredibly distant in a philosophical sense? Don't worry, we'll fix it!
-  <p>Having acquired this perk once, you can be sure that all your companions will receive all the necessary common knowledge for your world. Including general schooling, hygiene and home appliance skills</p>`,
+  <p>Having acquired this perk, you can be sure that your companion will receive all the necessary common knowledge for your world. Including general schooling, hygiene and home appliance skills</p>
+  <p>If bougth for 5 times, you will have the ability to give this perk to any member of your retinue at no cost.</p>
+  `,
 })
+DLCgenericPerks.push({
+  dlc: 'DLC by Despin',
+  dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
+  title: 'HUD',
+  cost: 10,
+  max: 10,
+  complex: 'target',
+  desc: `Your Smart Device is now part of you and accessible with a thought via a customizable HUD. You are still able to summon a device for waifus to interact with should you wish. You can customize the display at any time.
+  <p>If you purchase this perk for any ten of your retinue members, including yourself, the rest of your retinue may gain this perk for free.</p>
+    `,
+})
+
+DLCgenericPerks.push({
+  dlc: 'DLC by Despin',
+  dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
+  title: 'Toggle',
+  cost: 50,
+  max: 10,
+  complex: 'target',
+  desc: `You can turn your abilities down or off, using your HUD. This can take the form of percentages or numerical sliders, but is not limited to such.
+  <p>If you purchase this perk for any ten of your retinue members, including yourself, the rest of your retinue may gain this perk for free.</p>
+  <p>Example: Kryptonian, but don't want to hear a world's suffering? Turn that Super Hearing down to 1/1000. Don't want your Shroud to shift or change due to unconscious desires? Off switch!</p>
+    `,
+  needed: 1,
+  whitelist: ['HUD', 'First Augmentation'],
+})
+
 // #endregion
 
 export const DLCperks: PerkFull[] = []
 DLCperks.push({
+  dlc: 'CelestialDragon DLC',
+  dlclink: 'https://docs.google.com/spreadsheets/d/1FM6PNbDEyZV4T4rVLWjPYBc3O0jmmwd1obkFD7jLDt8/edit?usp=sharing',
+  title: 'Returning Home',
+  cost: 0,
+  desc: 'At the end of your first world, or after you complete the mission or at your own discretion you can return home with all the powers, perks and waifus that you obtained. Able to go back and forth between worlds at any time. The time on Earth will not have moved since you left and you can change how fast or slow (or at all) Earths time and the other worlds time flow.',
+  whitelist: ['Exit Stage Left'],
+})
+DLCperks.push({
   dlc: 'BenFang322',
-  title: 'Appearance Change (Cosmetic)',
+  title: 'Appearance Change',
   cost: 1,
-  desc: 'Because sometimes you just don’t like the way you look, and would rather look different or like someone else instead. Can only be used to change cosmetic aspects of yourself only, and provide’s no practical benefits outside of a different appearance.',
+  desc: `
+  Because sometimes you just don’t like the way you look, and would rather look different or like someone else instead. Can only be used to change cosmetic aspects of yourself only, and provide’s no practical benefits outside of a different appearance.
+  <p>If purchased at Chargen alongside Extra, your new appearance will be how your Extra’d self always looked so as to avoid accidentally changing your new identity a second time.</p>
+  `,
+})
+
+export const DLChomes: PerkFull[] = []
+
+DLChomes.push({
+  dlc: 'DLC by Despin',
+  dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
+  title: 'Creature Feature I',
+  cost: 500,
+  desc: `From your control center, you can select any non-sapient wildlife you have encountered of T6 or less to populate your Demiplane. Binding wildlife from your Demiplane as a Familiar may be possible, but does not provide credits.
+  <p>Examples: Jurassic Park, Star Wars’ Rancor and Krayt Dragon</p>
+    `,
+  whitelist: ['Life’s A Beach'],
+})
+
+DLChomes.push({
+  dlc: 'DLC by Despin',
+  dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
+  title: 'Creature Feature II',
+  cost: 11111,
+  desc: `From your control center, you can select any wildlife you have encountered to populate your Demiplane. Binding wildlife from your Demiplane as a Familiar may be possible, but does not provide credits.
+  <p>Examples: nearly anything from Dungeons & Dragons, Go Go Godzilla!</p>
+    `,
+  whitelist: ['Creature Feature I'],
+})
+
+DLChomes.push({
+  dlc: 'DLC by Despin',
+  dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
+  title: 'A God Am I',
+  cost: 11111,
+  desc: `From your control center, you can create life to populate your Demiplane. Binding creatures from your Demiplane may be possible, but does not provide credits.
+  <p>If you aren’t already, you become a T11 yourself.</p>
+    `,
+  whitelist: ['Creature Feature II'],
+})
+
+DLChomes.push({
+  dlc: 'DLC by Despin',
+  dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
+  title: 'Control Center App',
+  cost: 10,
+  needed: 1,
+  desc: 'The control center provided by Grand Manor/Life’s A Beach is now an app on your smart device.',
+  whitelist: ['Grand Manor', 'Life’s A Beach'],
+})
+
+DLChomes.push({
+  dlc: 'KatzSmile',
+  title: 'Stay in touch',
+  cost: 5,
+  desc: 'High speed internet service covering any and all dimensions no matter the location, magic ward, or jamming technology. A modem-router and replacements are provided for free.',
 })

@@ -55,24 +55,7 @@
     "worldName": "Devil May Cry",
     "rating": 8
   },
-  {
-    "worldName": "Dragonball",
-    "rating": 9,
-    "condition": [
-      {
-        "name": "Saiyans Attack",
-        "rating": 7
-      },
-      {
-        "name": "Androids Awaken",
-        "rating": 8
-      },
-      {
-        "name": "Majin Buu unsealed",
-        "rating": 10
-      }
-    ]
-  },
+  {"worldName":"Dragonball","rating":9,"condition":[{"rating":7,"name":"Saiyans Attack"},{"name":"Androids Awaken","rating":8},{"rating":10,"name":"Majin Buu unsealed"},{"name":"Original Adventure","rating":5}]},
   {
     "worldName": "Farscape",
     "rating": 6
@@ -298,7 +281,7 @@
   {"worldName":"Hellsing Abridged","rating":3},
   {"worldName":"Shinmai Maou","rating":6,"image":"https://i.imgur.com/4QrkujBl.png?1","additional":"Body Defense will protect you from all the negatives effects of the Master-Servant Contract."},
   {"worldName":"Interspecies Reviewers","rating":5},
-  {"worldName":"Kuroinu","rating":5},
+  {"worldName":"Kuroinu","rating":5,"condition":[{"name":"Pre-Founding of the 'Kuroinu' Mercenary Group","rating":4}]},
   {"worldName":"Mushroom Kingdom","rating":3},
   {"worldName":"SCP","rating":10},
   {"worldName":"Dark Souls","rating":8,"image":"https://i.imgur.com/ZvNFdGol.png","additional":"You can use bonfires as they are intended.","condition":[{"name":"Dark Souls 1","rating":8},{"name":"Dark Souls 2","rating":8},{"name":"Dark Souls 3","rating":8}]},
@@ -340,5 +323,6 @@
   {"worldName":"One Punch Man","rating":7},
   {"worldName":"Shokugeki no Sōma","rating":1},
   {"worldName":"Taimanin","rating":7},
-  {"worldName":"Toril/Forgotten Realms","rating":7}
+  {"worldName":"Toril/Forgotten Realms","rating":7},
+  {"worldName":"Warcraft","rating":5,"condition":[{"name":"During the Events of WoW 'Classic'","rating":6},{"name":"During the Events of WoW 'The Burning Crusade'","rating":7},{"name":"During the Events of WoW 'Wrath of the Lich King'","rating":8},{"rating":8,"name":"During the Events of WoW 'Cataclysm'"},{"rating":7,"name":"During the Events of WoW 'Mists of Pandaria'"},{"rating":7,"name":"During the Events of WoW 'Warlords of Draenor'"},{"rating":8,"name":"During the Events of WoW 'Legion'"},{"rating":8,"name":"During the Events of WoW 'Battle for Azeroth'"},{"name":"During the Events of WoW 'Shadowlands'","rating":9}]}
 ]

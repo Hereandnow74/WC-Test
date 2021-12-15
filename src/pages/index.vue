@@ -53,7 +53,7 @@
     <Desc id="services" :desc="services" class="bg-warm-gray-200 dark:bg-gray-800" />
     <Desc id="salary" :desc="salary" class="bg-warm-gray-200 dark:bg-gray-800" />
     <Desc id="helpDesk" :desc="helpDesk" class="bg-warm-gray-200 dark:bg-gray-800" />
-    <Desc id="loans" :desc="loans" class="bg-warm-gray-200 dark:bg-gray-800" />
+    <Desc id="Loans and Credit Debt" :desc="loans" class="bg-warm-gray-200 dark:bg-gray-800" />
     <Desc id="Missions" :desc="missions" class="bg-warm-gray-200 dark:bg-gray-800" />
     <Desc id="refund" :desc="refund" class="bg-warm-gray-200 dark:bg-gray-800" />
     <h2 id="arranged" class="text-xl text-center">

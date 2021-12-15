@@ -4086,7 +4086,7 @@
     "w": "Touhou",
     "b": [
       "F",
-      "C"
+      "C", "im"
     ],
     "d": "8: Imperishable Night"
   },
@@ -85985,9 +85985,9 @@
   {
     "u": 6027,
     "n": "Sengoku Nadeko",
-    "t": 6,
-    "i": "wan__sample_9cdccef6679f0c34b6decd492ec832f8.jpg",
-    "s": "https://danbooru.donmai.us/posts/2716174",
+    "t": 1,
+    "i": "https://i.imgur.com/J8XlUp9m.png",
+    "s": "https://danbooru.donmai.us/posts/3963721",
     "w": "Monogatari",
     "b": [
       "F",
@@ -116950,18 +116950,6 @@
     "d": "Servants – Archer"
   },
   {
-    "u": 2068,
-    "n": "Gilgamesh",
-    "t": 9,
-    "i": "iya_suzume__3a2cf1680d15e5e872502bba783711c7.jpg",
-    "s": "https://danbooru.donmai.us/posts/2343107?q=gilgamesh_%28fate%2Fprototype%29+",
-    "w": "Nasuverse",
-    "b": [
-      "M"
-    ],
-    "d": "Servants – Archer"
-  },
-  {
     "u": 2069,
     "n": "Super Orion",
     "t": 9,
@@ -139810,14 +139798,6 @@
     "t": 9,
     "i": "d0_bd_d0_b4_d0_be_d0_bc_d1_8b_anime_4834709.jpeg",
     "s": "http://img10.reactor.cc/pics/post/full/Warhammer-40000-Wh-%D0%9F%D0%B5%D1%81%D0%BE%D1%87%D0%BD%D0%B8%D1%86%D0%B0-%D1%84%D1%8D%D0%BD%D0%B4%D0%BE%D0%BC%D1%8B-Anime-4834709.jpeg",
-    "w": "Warhammer 40K"
-  },
-  {
-    "u": 11555,
-    "n": "The Emperor (on the throne) (Super Heresy)",
-    "t": 10,
-    "i": "d0_be_d0_bc_d1_8b_emperor_of_mankind_4681175.png",
-    "s": "http://img1.reactor.cc/pics/post/full/Warhammer-40000-Wh-%D0%9F%D0%B5%D1%81%D0%BE%D1%87%D0%BD%D0%B8%D1%86%D0%B0-%D1%84%D1%8D%D0%BD%D0%B4%D0%BE%D0%BC%D1%8B-Emperor-of-Mankind-4681175.png",
     "w": "Warhammer 40K"
   },
   {

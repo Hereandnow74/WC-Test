@@ -3,7 +3,7 @@
     <Desc :desc="homeDesc" class="p-2 mb-4 max-w-4xl mx-auto bg-violet-200 dark:bg-violet-900" />
     <div class="md:column-count-2 lg:column-count-3 pb-8">
       <PerkCard
-        v-for="homePerk in homes"
+        v-for="homePerk in homesDLC"
         :key="homePerk.title"
         :perk="homePerk"
         :bg="homeAvailable(homePerk) ? 'yellow-200 dark:yellow-900 hover:(yellow-100 dark:yellow-800)'
@@ -23,12 +23,14 @@
 </template>
 
 <script lang='ts' setup>
-import { homes, homeDesc } from '~/data/talents'
-import { chooseHome, homeAvailable } from '~/logic'
+import { homes, homeDesc, DLChomes } from '~/data/talents'
+import { chooseHome, homeAvailable, isDLC } from '~/logic'
 import { useTooltips } from '~/logic/misc'
 import { useStore } from '~/store/store'
 
 const { homePerks } = useStore()
+
+const homesDLC = computed(() => isDLC.value ? homes.concat(DLChomes) : homes)
 
 const allHomes = computed(() => {
   const res: any = {}

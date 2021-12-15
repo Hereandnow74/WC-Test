@@ -65,7 +65,7 @@
       <Checkbox
         v-if="startingWorld.worldName !== 'Current world'"
         v-model="isLimited"
-        :label="`Limit to ${startingWorld.worldName}`"
+        :label="`Limit to ${currentWorld.worldName}`"
         class="border rounded px-1 border-gray-300 dark:border-gray-500"
       />
       <div class="hidden md:block">
@@ -120,6 +120,7 @@ import { toggleShowAddCharacter, showAddCharacter, lazyLoadImg, toggleShowFilter
 import CompanionCard from '~/components/CompanionCard.vue'
 import Checkbox from '~/components/basic/Checkbox.vue'
 import { getChars, getUserChars, waifuTags } from '~/data/constatnts'
+import { usePlayStore } from '~/store/play'
 
 interface Character {
   u: number
@@ -165,6 +166,7 @@ const tierOptions = [
 ]
 
 const { localUserCharacters, userCharacters, startingWorld } = useStore()
+const { currentWorld } = usePlayStore()
 
 const options = {
   findAllMatches: true,
@@ -220,7 +222,7 @@ const worldNameDict = {
 
 const filteredCharacters = computed(() => {
   const sr = search.value || '!^xxx'
-  const worldName = worldNameDict[startingWorld.value.worldName] || startingWorld.value.worldName
+  const worldName = worldNameDict[currentWorld.value.worldName] || currentWorld.value.worldName || worldNameDict[startingWorld.value.worldName] || startingWorld.value.worldName
   let sopt: any = {}
   if (isLimited.value) {
     sopt = {

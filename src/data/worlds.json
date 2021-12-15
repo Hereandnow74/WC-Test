@@ -784,6 +784,10 @@
       {
         "rating": 6,
         "name": "DCAU"
+      },
+      {
+        "rating": 10,
+        "name": "Hell Dimension"
       }
     ]
   },
@@ -1095,29 +1099,7 @@
     "worldName": "Fullmetal Alchemist",
     "additional": "Lust has her 2003 characterization. Izumi and Julia’s bodies are fully intact."
   },
-  {
-    "rating": 5,
-    "worldName": "Fire Emblem",
-    "additional": "Second-generation characters from Jugdral, Awakening, and Fates can have whichever gameplay-valid parents you want. Robin, Corrin, Byleth, and other Avatars can have any gameplay-legal build. Cavaliers, Pegasus Knights, Wyvern Knights, and other mounted units have their mounts as familiars.",
-    "condition": [
-      {
-        "name": "Awakening (present)",
-        "rating": 5
-      },
-      {
-        "name": "Three Houses (post-timeskip)",
-        "rating": 5
-      },
-      {
-        "name": "Three Houses (pre-timeskip)",
-        "rating": 4
-      },
-      {
-        "name": "Awakening (Doomed Future)",
-        "rating": 8
-      }
-    ]
-  },
+  {"worldName":"Fire Emblem","rating":5,"additional":"Second-generation characters from Jugdral, Awakening, and Fates can have whichever gameplay-valid parents you want. Robin, Corrin, Byleth, and other Avatars can have any gameplay-legal build. Cavaliers, Pegasus Knights, Wyvern Knights, and other mounted units have their mounts as familiars.","condition":[{"name":"Awakening (present)","rating":5},{"name":"Three Houses (post-timeskip)","rating":5},{"name":"Three Houses (pre-timeskip)","rating":4},{"name":"Awakening (Doomed Future)","rating":8},{"name":"Fates (present)","rating":5}]},
   {
     "rating": 5,
     "worldName": "Final Fantasy XV",
@@ -1358,12 +1340,7 @@
     "worldName": "Genshin Impact",
     "additional": "Lumine (and Aether) has the T1 version of Paimon as a humanoid familiar. If you have both, they’ll share her."
   },
-  {
-    "rating": 5,
-    "q": true,
-    "worldName": "Golden Sun",
-    "additional": "If you have any Adept in your retinue, a full set of the original 72 Djinn will appear in or near your path, allowing you and your waifus access to the game’s class system. Some sidequesting may be required. If you have Conjunction, retinue members within your network can access any combination of nine active (“Set”) Djinn that you’ve acquired. Djinn on standby or recovering from a summoning are on standby or recovery for everyone they’re connected to. Without Conjunction, this feature may still be accessed through certain Heritage perks such as the third stage of Philosopher’s Transmortality Engine."
-  },
+  {"q": true, "worldName":"Golden Sun","rating":5,"additional":"If you have any Adept in your retinue, a full set of the original 72 Djinn will appear in or near your path, allowing you and your waifus access to the game’s class system. Some sidequesting may be required. If you have Conjunction, retinue members within your network can access any combination of nine active (“Set”) Djinn that you’ve acquired. Djinn on standby or recovering from a summoning are on standby or recovery for everyone they’re connected to. Without Conjunction, this feature may still be accessed through certain Heritage perks such as the third stage of Philosopher’s Transmortality Engine.","condition":[{"name":"No Crisis","rating":5},{"rating":6,"name":"Events of GS1"},{"name":"Events of GS2","rating":7}]},
   {
     "rating": 4,
     "q": true,

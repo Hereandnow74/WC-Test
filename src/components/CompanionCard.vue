@@ -25,11 +25,11 @@
         >
           <template v-if="!isAlredyBought(charData.uid)">
             <Button size="Small" bg-color="bg-red-500" label="buy" @click="buyCompanion" />
-            <Button size="Small" bg-color="bg-orange-500" label="yoink" @click="yoinkCompanion" />
+            <Button v-if="flags.chargen" size="Small" bg-color="bg-orange-500" label="yoink" @click="yoinkCompanion" />
             <Button v-if="charData.tier !== 11" size="Small" bg-color="bg-violet-600" label="used" @click="usedModal = true" />
             <Button size="Small" label="capture" @click="captureCompanion" />
           </template>
-          <Button v-else size="Small" label="undo" @click="undoBuying(charData.uid)" />
+          <Button v-else-if="flags.chargen" size="Small" label="undo" @click="undoBuying(charData.uid)" />
         </div>
       </div>
       <div class="py-1 h-max">

@@ -43,7 +43,7 @@
           </div>
         </div>
         <transition name="slide" mode="out-in">
-          <component :is="tabComponents[activeTab]" />
+          <component :is="tabComponents[activeTab]" v-if="visible" />
         </transition>
       </div>
       <div class="flex h-8 justify-between items-center px-6 mt-auto">
