@@ -94,6 +94,7 @@
 <script lang='ts' setup>
 import { findIndex, random } from 'lodash-es'
 import { CHAR_COSTS, waifuTags } from '~/data/constatnts'
+import { usePlayStore } from '~/store/play'
 import { useStore } from '~/store/store'
 
 const props = defineProps({
@@ -151,7 +152,8 @@ const charData = computed(() => {
   return res
 })
 
-const { flags, companions, localUserCharacters, companionsUIDs } = useStore()
+const { flags, companions, localUserCharacters, companionsUIDs, captureKoeff, underLoan } = useStore()
+const { loan, trHistory } = usePlayStore()
 
 const modalImageCmp = computed(() => {
   if (modalImage.value.includes('imgur') && modalImage.value.split('.').slice(-2, -1)[0].slice(-1) === 'm') {
@@ -188,7 +190,27 @@ function buyCompanion() {
 
 function captureCompanion() {
   const char = charData.value
-  companions.value.push({ uid: char.uid, name: char.name, world: char.world, tier: char.tier, priceTier: char.tier, method: 'capture' })
+  let price = 0
+
+  const res = { uid: char.uid, name: char.name, world: char.world, tier: char.tier, priceTier: char.tier, method: 'capture' }
+
+  if (underLoan.value) {
+    price = Math.ceil(CHAR_COSTS[char.tier - 1] * captureKoeff.value)
+    const half = Math.round(price / 2)
+    if (half <= loan.value.owed) {
+      loan.value.owed -= half
+      price -= half
+      trHistory.value.push(`Captured ${char.name} +${half}`)
+    }
+    else {
+      price -= loan.value.owed
+      trHistory.value.push(`Captured ${char.name} +${loan.value.owed}`)
+      loan.value.owed = 0
+    }
+    res.price = price
+  }
+
+  companions.value.push(res)
 }
 
 function yoinkCompanion() {

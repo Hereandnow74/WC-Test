@@ -87,7 +87,7 @@ import { CHAR_COSTS, getChars, getUserChars } from '~/data/constatnts'
 import { lazyLoadImg, orientation } from '~/logic'
 import { useStore } from '~/store/store'
 
-const { companions } = useStore()
+const { companions, underLoan, loan, trHistory } = useStore()
 
 const allChars = ref([])
 const waifuList = ref(null)
@@ -145,7 +145,25 @@ watch(companionsDataFiltered, () => {
 })
 
 function sellCompanion(uid: number) {
-  companions.value[findIndex(companions.value, { uid })].sold = true
+  const cmp = companions.value[findIndex(companions.value, { uid })]
+  let price = 0
+  if (underLoan.value) {
+    price = Math.round(CHAR_COSTS[cmp.tier - 1] * 0.2)
+    const half = Math.round(price / 2)
+    if (half <= loan.value.owed) {
+      loan.value.owed -= half
+      price -= half
+      trHistory.value.push(`Sold ${cmp.name} +${half}`)
+    }
+    else {
+      price -= loan.value.owed
+      trHistory.value.push(`Sold ${cmp.name} +${loan.value.owed}`)
+      loan.value.owed = 0
+    }
+    cmp.soldPrice = price
+  }
+
+  cmp.sold = true
 }
 
 </script>

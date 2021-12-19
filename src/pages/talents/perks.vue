@@ -17,12 +17,11 @@
 
 <script lang='ts' setup>
 import { findIndex } from 'lodash-es'
-import { perks, talentsDesc, DLCperks } from '~/data/talents'
+import { perks, talentsDesc } from '~/data/talents'
 import { useTooltips } from '~/logic/misc'
 import { useStore } from '~/store/store'
-
-import PerkCard from '~/components/PerkCard.vue'
 import { choosePerk, miscAvailable, isDLC } from '~/logic'
+import { DLCperks } from '~/data/DLCs'
 
 const perksDLC = computed(() => isDLC.value ? perks.concat(DLCperks) : perks)
 

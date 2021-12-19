@@ -27,6 +27,7 @@ const apps = [
   { icon: 'gis:search-globe-alt', name: 'Random World', component: 'RandomWorld', color: '#ff8888' },
   { icon: 'fluent:person-question-mark-16-regular', name: 'Random Character', component: 'RandomChar', color: '#f9ec52' },
   { icon: 'bx:bx-spreadsheet', name: 'Global Users Builds', component: 'UserBuilds', color: '#3a64b1' },
+  { icon: 'la:dragon', name: 'Dragon Aura Calculator', component: 'DragonAura', color: '#c90000' },
 ]
 
 const appComponents = {
@@ -38,6 +39,7 @@ const appComponents = {
   DiceMachine: defineAsyncComponent(() => import('./apps/DiceMachine.vue')),
   RandomWorld: defineAsyncComponent(() => import('./apps/RandomWorld.vue')),
   UserBuilds: defineAsyncComponent(() => import('./apps/UserBuilds.vue')),
+  DragonAura: defineAsyncComponent(() => import('./apps/DragonAura.vue')),
 }
 
 const appName = ref('')

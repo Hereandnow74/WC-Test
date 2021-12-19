@@ -2,6 +2,7 @@
   <div class="inline-flex w-min h-max">
     <label v-if="label" for="" class="mr-2">{{ label }}</label>
     <div
+      ref="minusButton"
       class="rounded-l-lg hover:bg-orange-500 w-4 cursor-pointer"
       :class="buttonThemes[theme]"
       @click="minus"
@@ -16,6 +17,7 @@
       :class="themes[theme]"
     >
     <div
+      ref="plusButton"
       class="rounded-r-lg hover:bg-orange-500 w-4 cursor-pointer"
       :class="buttonThemes[theme]"
       @click="plus"
@@ -47,6 +49,10 @@ const props = defineProps({
     type: String as PropType<'light' | 'dark'>,
     default: 'light',
   },
+  increment: {
+    type: Number,
+    default: 1,
+  },
 })
 
 const themes = {
@@ -67,16 +73,41 @@ const width = computed(() => `width: ${`${value.value}`.length + 1}ch`)
 watch(props, () => value.value = props.modelValue)
 
 function plus() {
-  if (value.value < props.max) {
-    value.value++
+  if (value.value + props.increment <= props.max) {
+    value.value += props.increment
     emit('update:modelValue', value.value)
   }
 }
 
 function minus() {
-  if (value.value > props.min) {
-    value.value--
+  if (value.value - props.increment >= props.min) {
+    value.value -= props.increment
     emit('update:modelValue', value.value)
   }
 }
+
+const plusButton = ref(null)
+const minusButton = ref(null)
+
+const { pressed: plusPressed } = useMousePressed({ target: plusButton })
+const { pressed: minusPressed } = useMousePressed({ target: minusButton })
+
+let timer: any = null
+let delay: any = null
+watch(plusPressed, () => {
+  if (plusPressed.value) { delay = setTimeout(() => timer = setInterval(plus, 15), 100) }
+  else {
+    clearTimeout(delay)
+    clearInterval(timer)
+  }
+})
+
+watch(minusPressed, () => {
+  if (minusPressed.value) { delay = setTimeout(() => timer = setInterval(minus, 15), 100) }
+  else {
+    clearTimeout(delay)
+    clearInterval(timer)
+  }
+})
+
 </script>

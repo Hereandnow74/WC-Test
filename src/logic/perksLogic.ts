@@ -1,4 +1,4 @@
-import { findIndex, intersection, intersectionWith, isArray, mergeWith, sample, uniqBy } from 'lodash-es'
+import { findIndex, intersection, intersectionWith, isArray, mergeWith, pullAll, pullAllWith, remove, sample, uniqBy } from 'lodash-es'
 import { Binding, shroudElements } from '~/data/binding'
 import { Heritage } from '~/data/heritage'
 import { Intensity } from '~/data/intensity'
@@ -6,7 +6,9 @@ import { PerkFull, Ride } from '~/data/talents'
 import { WaifuPerk } from '~/data/waifu_perks'
 import { useChallenges } from '~/store/challenges'
 import { usePlayStore } from '~/store/play'
-import { Perk, useStore } from '~/store/store'
+import { Perk } from '~/store/chargen'
+import { useStore } from '~/store/store'
+import { ALL_PERK_TITLES } from '~/data/constatnts'
 
 const {
   allEffects, intensities, luresBought, binding, flags, allForSave, heritage,
@@ -14,7 +16,7 @@ const {
   waifuPerks, baseBudget, startingWorld, budgetMods, otherPerks, fee,
 } = useStore()
 
-const { currentWorld, jumpChain, rdnWorld } = usePlayStore()
+const { currentWorld, jumpChain, rdnWorld, loan, trHistory } = usePlayStore()
 
 const { activeChallenges } = useChallenges()
 
@@ -58,6 +60,25 @@ export function addFreebies(freebies: object) {
   }
 }
 
+function deletePerk(perkList: Perk[], checkFunc: (arg: any) => boolean) {
+  const toDel = []
+  for (let i = 0; i < perkList.length; i++) {
+    const origPerk = ALL_PERK_TITLES.value[perkList[i].title]
+    if (!checkFunc(origPerk)) {
+      toDel.push(perkList[i].title)
+      if (!flags.value.chargen && perkList[i].cost < 11111) fee.value += Math.round(perkList[i].cost * 0.2) || 0
+      if (perkList[i].freebies) deleteFreebies(perkList[i].freebies)
+      if (origPerk.typeFreebies)
+        deleteFreebies(origPerk.typeFreebies[flags.value.transhumanType])
+    }
+  }
+  if (toDel.length) {
+    remove(perkList, x => toDel.includes(x.title))
+    remove(allEffects.value, x => toDel.includes(x))
+    deletePerk(perkList, checkFunc)
+  }
+}
+
 export function pickSimplePerk(perk: PerkFull, saveData: Perk, isAvailable: (arg: any) => boolean, perks: Perk[]) {
   if (isAvailable(perk)) {
     const ind = findIndex(perks, { title: perk.title })
@@ -66,11 +87,10 @@ export function pickSimplePerk(perk: PerkFull, saveData: Perk, isAvailable: (arg
         perks[ind] = saveData
       }
       else {
-        const toDel = perks.splice(ind)
-        toDel.forEach((x) => {
-          if (!flags.value.chargen && x.cost < 11111) fee.value += Math.round(x.cost * 0.2) || 0
-          allEffects.value.splice(allEffects.value.indexOf(x.title), 1)
-        })
+        const toDel = perks.splice(ind, 1)
+        allEffects.value.splice(allEffects.value.indexOf(toDel[0].title), 1)
+        if (!flags.value.chargen && x.cost < 11111) fee.value += Math.round(toDel[0].cost * 0.2) || 0
+        deletePerk(perks, isAvailable)
       }
     }
     else {
@@ -91,11 +111,10 @@ export function simpleIsAvailable(perk: PerkFull) {
 export function chooseIntensity(rule: Intensity, coopIntensity: number, coopCount: number) {
   const ind = findIndex(intensities.value, { title: rule.title })
   if (ind !== -1) {
-    const toDel = intensities.value.splice(ind)
-    toDel.forEach((x) => {
-      if (!flags.value.chargen && x.cost < 11111) fee.value += Math.round(x.cost * 0.2) || 0
-      allEffects.value.splice(allEffects.value.indexOf(x.title), 1)
-    })
+    const toDel = intensities.value.splice(ind, 1)[0]
+    if (!flags.value.chargen && toDel.cost < 11111) fee.value += Math.round(toDel.cost * 0.2) || 0
+    allEffects.value.splice(allEffects.value.indexOf(toDel.title), 1)
+    deletePerk(intensities.value, intensityAvailable)
   }
   else {
     if (intensityAvailable(rule)) {
@@ -136,12 +155,11 @@ export function chooseBinding(bin: Binding, saveData: Perk) {
       binding.value[ind] = saveData
     }
     else {
-      const toDel = binding.value.splice(ind)
-      toDel.forEach((x) => {
-        if (x.freebies) deleteFreebies(x.freebies)
-        if (!flags.value.chargen && x.cost < 11111) fee.value += Math.round(x.cost * 0.2) || 0
-        allEffects.value.splice(allEffects.value.indexOf(x.title), 1)
-      })
+      const toDel = binding.value.splice(ind, 1)[0]
+      if (toDel.freebies) deleteFreebies(toDel.freebies)
+      if (!flags.value.chargen && toDel.cost < 11111) fee.value += Math.round(toDel.cost * 0.2) || 0
+      allEffects.value.splice(allEffects.value.indexOf(toDel.title), 1)
+      deletePerk(binding.value, bindingAvailable)
       if (binding.value.length === 0) flags.value.noBindings = true
     }
   }
@@ -186,11 +204,10 @@ export function chooseLure(lure: Binding) {
       luresBought.value.push({ title: lure.title, cost: lure.cost })
     }
     else {
-      const del = luresBought.value.splice(ind)
-      del.forEach((x) => {
-        if (!flags.value.chargen && x.cost < 11111) fee.value += Math.round(x.cost * 0.2) || 0
-        allEffects.value.splice(allEffects.value.indexOf(x.title), 1)
-      })
+      const toDel = luresBought.value.splice(ind, 1)[0]
+      if (!flags.value.chargen && toDel.cost < 11111) fee.value += Math.round(toDel.cost * 0.2) || 0
+      allEffects.value.splice(allEffects.value.indexOf(toDel.title), 1)
+      deletePerk(luresBought.value, lureAvailable)
     }
   }
 }
@@ -234,12 +251,11 @@ export function chooseHeritage(hr: Heritage, saveData: Perk) {
         flags.value.isTranshuman = false
         flags.value.transhumanType = undefined
       }
-      const toDel = heritage.value.splice(ind)
-      toDel.forEach((x) => {
-        if (x.freebies) deleteFreebies(x.freebies)
-        if (!flags.value.chargen && x.cost < 11111) fee.value += Math.round(x.cost * 0.2) || 0
-        allEffects.value.splice(allEffects.value.indexOf(x.title), 1)
-      })
+      const toDel = heritage.value.splice(ind, 1)[0]
+      if (toDel.freebies) deleteFreebies(toDel.freebies)
+      if (!flags.value.chargen && toDel.cost < 11111) fee.value += Math.round(toDel.cost * 0.2) || 0
+      allEffects.value.splice(allEffects.value.indexOf(toDel.title), 1)
+      deletePerk(heritage.value, heritageAvailable)
     }
     else {
       if (saveData.cost === 0) return
@@ -438,6 +454,9 @@ export function clearAll() {
   currentWorld.value = startingWorld.value
   rdnWorld.value = []
   activeChallenges.value = []
+  loan.value = { owed: 0, gained: 0 }
+  trHistory.value = []
+  fee.value = 0
 }
 
 export function assignBuildData(data: any) {

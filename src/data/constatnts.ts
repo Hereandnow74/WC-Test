@@ -1,13 +1,12 @@
-import { isArray } from 'lodash'
+import { isArray } from 'lodash-es'
+import { DLCgenericPerks, DLChomes, DLCperks, DLCtalents } from './DLCs'
 import { intensity } from '~/data/intensity'
 import { origin } from '~/data/origin'
 import { bindings, lures, lureExpansions, otherControls } from '~/data/binding'
-import { heritages } from '~/data/heritage'
+import { DLCheritages, heritages } from '~/data/heritage'
 import { rides, homes, defenses, talents, perks, genericPerks } from '~/data/talents'
 import { waifu_perks } from '~/data/waifu_perks'
 
-import worlds from '~/data/worlds.json'
-import subWorlds from '~/data/userWorlds.json'
 import { useStore } from '~/store/store'
 
 export const WORLD_COLORS = ['bg-green-600', 'bg-teal-600', 'bg-cyan-600',
@@ -71,7 +70,7 @@ export const rulesList = [
   { title: 'salary', title2: 'Contractor Salary' },
   { title: 'helpDesk', title2: 'Help Desk Hotline' },
   { title: 'Loans and Credit Debt', title2: 'Loans and Credit Debt' },
-  { title: 'missions', title2: 'Missions' },
+  { title: 'Missions', title2: 'Missions' },
   { title: 'refund', title2: 'Refund and Return Policy' },
   { title: 'arranged', title2: 'Come Out and Play (Arranged PvP)' },
   { title: 'arrangedConditions', title2: 'Arranged Match Wagers, Victory Conditions, and Risk' },
@@ -139,6 +138,18 @@ export const waifuTags = {
 
 export const waifuTagsByTag = Object.values(waifuTags).reduce((a, x) => (a[x.tag] = x, a), {})
 
+function addTitles(res: any, perks: any) {
+  perks.forEach(x => res[x.title] = x)
+}
+
+export const ALL_PERK_TITLES = computed(() => {
+  const result = {}
+  const all = [intensity, bindings, lures, lureExpansions, otherControls, heritages, homes, defenses, talents, perks,
+    genericPerks, waifu_perks, DLCperks, DLChomes, DLCgenericPerks, DLCheritages, DLCtalents]
+  all.forEach(p => addTitles(result, p))
+  return result
+})
+
 export const LINKS = computed(() => {
   const links = {} as Record<string, string>
   const allCats = {
@@ -179,14 +190,7 @@ export const QUERIES = computed(() => {
 })
 
 let chars: any = null
-// let charsObject: any = null
 let userChars: any = null
-
-// export async function getCharsObject() {
-//   if (!charsObject)
-//     charsObject = (await import('~/data/characters.json')).default
-//   return charsObject
-// }
 
 export async function getChars() {
   if (!chars)
@@ -200,9 +204,19 @@ export async function getUserChars() {
   return userChars
 }
 
+const worlds = ref([])
+const subWorlds = ref([])
+
+async function getWorlds() {
+  worlds.value = (await import('~/data/worlds.json')).default
+  subWorlds.value = (await import('~/data/userWorlds.json')).default
+}
+
+getWorlds()
+
 export const allWorlds = computed(() => {
   const { userWorlds, localUserWorlds } = useStore()
-  return Array.prototype.concat(userWorlds.value, localUserWorlds.value, worlds, subWorlds)
+  return Array.prototype.concat(userWorlds.value, localUserWorlds.value, worlds.value, subWorlds.value)
 })
 
 export const allWorldsNoCondition = computed(() => {

@@ -26,12 +26,13 @@ export function proposeWorld(world: any) {
   }
 }
 
-export function proposeCompanion(companion: any) {
+export function proposeCompanion(companion: any, func: (msg: string) => void) {
   try {
-    addDoc(collection(db, 'companions'), companion).then(docRef => console.log(`Successfully proposed companion id: ${docRef.id}`))
+    addDoc(collection(db, 'companions'), companion).then(docRef => func('Successfully submited companion'))
   }
   catch (e) {
     console.error('Error proposing a companion: ', e)
+    func(`Erorr while submitting ${e}`)
   }
 }
 

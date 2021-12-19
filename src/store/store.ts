@@ -1,141 +1,46 @@
 import { findIndex } from 'lodash-es'
 import { useChallenges } from './challenges'
-import { CHAR_COSTS, heritageTiers } from '~/data/constatnts'
+import { usePlayStore } from './play'
+import { useChargenStore } from './chargen'
+import { heritageTiers, WORLD_RATINGS } from '~/data/constatnts'
 
-export interface World {
-  worldName: string
-  rating: number
-  condition?: string | any[]
-  additional?: string
-  image?: string
-}
+const CHAR_COSTS = [1, 2, 5, 10, 20, 50, 100, 200, 500, 1000, 11111]
 
-export interface Character {
-  name: string
-  world: string
-  tier: number
-  cost?: number
-  image: string
-  image_nsfw?: string
-}
+const { loan, jumpChain, currentWorld, trHistory } = usePlayStore()
 
-export interface Perk {
-  title: string
-  cost: number
-  count?: number
-  tree?: string
-  addons?: any[]
-  variant?: string
-  target?: string[]
-  freebies?: object
-  refund?: number
-  anything?: string
-  complex?: any
-}
-
-export interface Origin {
-  title: string
-  cost: number
-  character?: string
-  tier?: number
-}
-
-const params = useUrlSearchParams('history')
-const mode = ref<('local' | 'remote' | 'done')>('local')
-if (params.load?.length)
-  mode.value = 'remote'
-
-function storeType<T>(name: string, value: T) {
-  return mode.value === 'local' ? useStorage<T>(name, value) : ref<T>(value)
-}
-const baseBudget = storeType('baseBudget', 55)
-
-const startingWorld = storeType<World>('startingWorld', {
-  worldName: 'Current world',
-  rating: 2,
-})
-
-const startingOrigin = storeType<Origin>('startingOrigin', {
-  title: '',
-  cost: 0,
-})
-
-const intensities = storeType('intensities', [] as {
-  title: string
-  intensity: number
-  count: number
-}[])
-
-const binding = storeType<Perk[]>('binding', [])
-
-const luresBought = storeType<Perk[]>('luresBought', [])
-
-const otherPerks = storeType<Perk[]>('otherPerks', [])
-
-const heritage = storeType<Perk[]>('heritage', [])
-
-const ridePerks = storeType<Perk[]>('ridePerks', [])
-
-const homePerks = storeType<Perk[]>('homePerks', [])
-
-const talentPerks = storeType<Perk[]>('talentPerks', [])
-
-const defensePerks = storeType<Perk[]>('defensePerks', [])
-
-const miscPerks = storeType<Perk[]>('miscPerks', [])
-
-const genericWaifuPerks = storeType<Perk[]>('genericWaifuPerks', [])
-
-const waifuPerks = storeType<Perk[]>('waifuPerks', [])
-
-const companions = storeType('companions', [] as {
-  uid: number
-  name: string
-  world: string
-  tier: number
-  priceTier: number
-  sold?: boolean
-  method: 'buy' | 'capture' | 'steal' | 'yoink' | 'used' | 'unbound'
-}[])
-
-const allEffects = storeType('allEffects', [] as string[])
-
-const budgetMods = storeType('budgetMods', {
-  plus: 0,
-  minus: 0,
-  plus11: 0,
-  minus11: 0,
-})
-
-const fee = storeType('fee', 0)
-
-const flags = storeType('flags', {
-  noBindings: true,
-  noHeritage: true,
-  danger11Start: false,
-  pvpEnabled: false,
-  chargen: true,
-  hasARide: false,
-  skipUsed: undefined,
-  isTranshuman: false,
-  transhumanType: undefined,
-})
-
-const allForSave = {
+const {
+  baseBudget,
+  allEffects,
+  startingWorld,
+  startingOrigin,
+  userWorlds,
+  localUserWorlds,
+  intensities,
+  binding,
+  luresBought,
+  otherPerks,
+  heritage,
+  ridePerks,
+  homePerks,
   talentPerks,
   defensePerks,
   miscPerks,
-  homePerks,
-}
+  waifuPerks,
+  genericWaifuPerks,
+  companions,
+  userCharacters,
+  localUserCharacters,
+  flags,
+  budgetMods,
+  allForSave,
+  mode,
+  params,
+  userRides,
+  localUserRides,
+  fee,
+} = useChargenStore()
 
-const userWorlds = ref([] as World[])
-const localUserWorlds = useStorage<World[]>('localUserWorlds', [])
-
-const userCharacters = ref([] as Character[])
-const localUserCharacters = useStorage<Character[]>('localUserCharacters', [])
-
-const userRides = ref([] as Perk[])
-const localUserRides = useStorage<Perk[]>('localUserRides', [])
+const csr = computed(() => findIndex(intensities.value, { title: 'Cash Still Rules' }) !== -1)
 
 const baseBudgetAfter = computed(
   () => baseBudget.value + intensities.value.reduce((a, x) => x.intensity > 1 ? a + x.intensity : a, 0),
@@ -172,15 +77,19 @@ const captureKoeff = computed(() => {
   let kf = 0.6
   if (findIndex(intensities.value, { title: 'Cash Still Rules' }) !== -1) kf = 0.8
   if (findIndex(activeChallenges.value, { title: 'Waifu Manager' }) !== -1) kf = 0.8
+  if (findIndex(intensities.value, { title: 'Wage Slave' }) !== -1) kf = 0
   return kf
 })
 
 const companionProfit = computed(() => {
   return companions.value.reduce((a, x) => {
     if (x.method === 'capture' && x.priceTier !== 11) {
-      let captureCost = Math.ceil(CHAR_COSTS[x.priceTier - 1] * captureKoeff.value)
-      captureCost = captureCost < 1 ? 1 : captureCost
-      return a += captureCost
+      if (x.price === undefined) {
+        let captureCost = Math.ceil(CHAR_COSTS[x.priceTier - 1] * captureKoeff.value)
+        captureCost = captureCost < 1 ? 1 : captureCost
+        return a += captureCost
+      }
+      else { return a += x.price }
     }
     return a
   }, 0)
@@ -188,8 +97,11 @@ const companionProfit = computed(() => {
 
 const companionProfitSold = computed(() => {
   return companions.value.reduce((a, x) => {
-    if (x.sold && x.tier !== 11 && ['capture'].includes(x.method))
-      return a += Math.round(CHAR_COSTS[x.tier - 1] * 0.2)
+    if (x.sold && x.tier !== 11 && ['capture'].includes(x.method)) {
+      if (x.soldPrice === undefined)
+        return a += Math.round(CHAR_COSTS[x.tier - 1] * 0.2)
+      else return a += x.soldPrice
+    }
     if (x.sold && x.priceTier !== 11 && ['buy', 'used', 'yoink'].includes(x.method))
       return a += Math.round(CHAR_COSTS[x.priceTier - 1] * 0.8)
     return a
@@ -210,7 +122,7 @@ const fullStartingBudget = computed(() => {
     flags.value.danger11Start = false
   }
 
-  return Math.round((bd + intensityFlat) * (1 + intenMultiplier))
+  return csr.value ? 0 : Math.round((bd + intensityFlat) * (1 + intenMultiplier))
 })
 
 const budget = computed(() => {
@@ -219,6 +131,7 @@ const budget = computed(() => {
       - talentsCost.value - defensesCost.value - miscPerksCost.value - waifuPerksCost.value
       - genericWaifuPerksCost.value - companionsCost.value - otherCost.value - fee.value
       - budgetMods.value.minus + budgetMods.value.plus + companionProfit.value + companionProfitSold.value
+      + loan.value.gained
 })
 
 const companionTicketProfit = computed(() => {
@@ -282,6 +195,38 @@ const yourTier = computed(() => {
 
 const companionsUIDs = computed(() => companions.value.reduce((a, c) => (a[c.uid] = true, a), {}))
 
+const creditLimit = computed(() =>
+  Math.max(500,
+    WORLD_RATINGS[startingWorld.value.rating - 1].budget,
+    jumpChain.value.reduce((a, x) => Math.max(a, WORLD_RATINGS[x.rating - 1].budget), 0),
+  ))
+
+const underLoan = computed(() => loan.value.owed > 0)
+
+watch(startingWorld, () => currentWorld.value = startingWorld.value)
+
+watch(jumpChain, () => {
+  if (jumpChain.value.length > 1)
+    fee.value += Math.round(loan.value.owed * 0.1)
+}, { deep: true })
+
+watch(budget, () => {
+  if (csr.value && budget.value < 0) {
+    const need = Math.abs(budget.value)
+    if ((creditLimit.value - loan.value.owed) > need) {
+      loan.value.gained += need
+      loan.value.owed += need
+    }
+  }
+})
+
+// watch(csr, () => {
+//   if (csr.value)
+//     fee.value = baseBudget.value
+//   else
+//     fee.value = 0
+// })
+
 export function useStore() {
   return {
     budget,
@@ -335,5 +280,11 @@ export function useStore() {
     companionsUIDs,
     fullStartingBudget,
     fee,
+    captureKoeff,
+    creditLimit,
+    underLoan,
+    csr,
+    loan,
+    trHistory,
   }
 }

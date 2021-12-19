@@ -3,7 +3,7 @@
     <Desc :desc="talentsDesc" class="p-2 mb-4 max-w-4xl mx-auto bg-violet-200 dark:bg-violet-900" />
     <div class="md:column-count-2 lg:column-count-3 pb-8">
       <PerkCard
-        v-for="talent in talents"
+        v-for="talent in talentsDLC"
         :key="talent.title"
         :perk="talent"
         :bg="talentAvailable(talent) ? 'green-200 dark:green-900 hover:(green-100 dark:green-800)'
@@ -24,7 +24,8 @@ import { useTooltips } from '~/logic/misc'
 import { useStore } from '~/store/store'
 
 import PerkCard from '~/components/PerkCard.vue'
-import { chooseTalent, talentAvailable } from '~/logic'
+import { chooseTalent, isDLC, talentAvailable } from '~/logic'
+import { DLCtalents } from '~/data/DLCs'
 
 const { allEffects, talentPerks } = useStore()
 
@@ -33,6 +34,8 @@ const allTalents = computed(() => {
   talentPerks.value.forEach(x => res[x.title] = x)
   return res
 })
+
+const talentsDLC = computed(() => isDLC.value ? talents.concat(DLCtalents) : talents)
 
 const talentsList = computed(() => {
   const shareable = ['Martial Talent', 'Wild Talent', 'Science Talent', 'Engineering Talent', 'Aesthetic Talent',

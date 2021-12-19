@@ -47,6 +47,12 @@
       <div v-if="tierError" class="text-red-400 font-semibold">
         {{ tierError }}
       </div>
+      <div v-if="processing" class="font-semibold">
+        Processing <eos-icons:bubble-loading />
+      </div>
+      <div v-if="submitMessage" class="font-semibold">
+        {{ submitMessage }}
+      </div>
       <div class="flex gap-2">
         <Checkbox v-model="localSave" label="Local save" />
         <Checkbox v-model="serverSave" label="Propose to global" />
@@ -87,6 +93,8 @@ const sex = ref(props?.character?.tags?.[0] || 'F')
 
 const tierError = ref('')
 const tierConfirm = ref(false)
+const processing = ref(false)
+const submitMessage = ref('')
 
 const { userCharacters, localUserCharacters } = useStore()
 
@@ -149,15 +157,20 @@ const addCharacter = handleSubmit((values) => {
   if (!values.tags.includes(sex.value))
     values.tags.push(sex.value)
   values.tags = values.tags.map(x => waifuTagsByTag[x] ? waifuTagsByTag[x].short : x)
-  values.uid = random(10000000, 99999999)
-  if (serverSave.value)
-    proposeCompanion({ ...values, date: new Date().toString() })
+  values.uid = props.character.uid || random(10000000, 99999999)
+  if (serverSave.value) {
+    processing.value = true
+    proposeCompanion({ ...values, date: new Date().toString() }, (msg) => {
+      processing.value = false
+      submitMessage.value = msg
+      setTimeout(() => submitMessage.value = '', 5000)
+    })
+  }
 
   if (localSave.value)
     localUserCharacters.value.push(values)
   else
     userCharacters.value.push(values)
-  toggleShowAddCharacter()
 })
 
 </script>

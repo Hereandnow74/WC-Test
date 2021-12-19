@@ -1,5 +1,5 @@
 <template>
-  <div class="rounded dark:bg-gray-700 max-w-screen-md lg:pl-0 p-2">
+  <div class="rounded dark:bg-gray-700 max-w-screen-md lg:pl-2 p-2">
     <div class="shadow-lg bg-gray-100 dark:bg-gray-800 p-2">
       <h3 class="text-xl py-2">
         Waifu Catalog by SwiftRosenthal - Credits

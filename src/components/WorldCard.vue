@@ -4,7 +4,7 @@
     border="2 gray-400 hover:orange-600"
     :class="world.worldName === startingWorld.worldName || startingWorld.worldName === 'Current world' || !pickAble ?
       WORLD_COLORS[world.rating - 1] || 'bg-gray-600' : 'bg-gray-600'"
-    @click="pickAble ? pickWorld(world) : null"
+    @click="pickAbleAfter ? pickWorld(world) : null"
   >
     <div v-if="world.image" class="flex-grow relative min-h-[170px]">
       <img
@@ -81,7 +81,9 @@ const props = defineProps({
 
 defineEmits(['editWorld'])
 
-const { baseBudget, startingWorld, localUserWorlds } = useStore()
+const { baseBudget, startingWorld, localUserWorlds, flags } = useStore()
+
+const pickAbleAfter = computed(() => props.pickAble && !flags.value.chargen ? false : props.pickAble)
 
 const condition = reactive({
   name: undefined,

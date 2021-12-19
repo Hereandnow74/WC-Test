@@ -51,6 +51,13 @@ export const challenges = [
     `,
   },
   {
+    title: 'Strict Travel Mode',
+    cost: 0,
+    desc: `
+    <p>Company decided to enforce stricter rules for World Traveling, from now on travel by any other methods other than Company perks will be restricted so that you can only travel to already visited Worlds. If you don't have We Will Meet Again after each jump to a new World, other traveling methods will be disabled completely until you fill the progress bar to the next World by 100%.</p>
+    `,
+  },
+  {
     title: 'Wild GIRLFRIEND appeared!',
     cost: 0,
     desc: `

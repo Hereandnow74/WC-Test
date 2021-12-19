@@ -1,25 +1,24 @@
-import { useStore, World } from './store'
-import { WORLD_RATINGS } from '~/data/constatnts'
+import { useChargenStore, World } from './chargen'
 
-const { startingWorld } = useStore()
+const { startingWorld } = useChargenStore()
 
 const jumpChain = useStorage<World[]>('jumpChain', [])
 const currentWorld = useStorage('currentWorld', startingWorld.value)
 const rdnWorld = useStorage<any[]>('rdnWorld', [])
 
-const creditLimit = computed(() =>
-  Math.max(500,
-    WORLD_RATINGS[startingWorld.value.rating - 1].budget,
-    jumpChain.value.reduce((a, x) => Math.max(a, WORLD_RATINGS[x.rating - 1].budget), 0),
-  ))
-
-watch(startingWorld, () => currentWorld.value = startingWorld.value)
+interface Loan {
+  owed: number
+  gained: number
+}
+const loan = useStorage<Loan>('loan', { owed: 0, gained: 0 })
+const trHistory = useStorage<any[]>('trHistory', [])
 
 export function usePlayStore() {
   return {
     jumpChain,
     currentWorld,
     rdnWorld,
-    creditLimit,
+    loan,
+    trHistory,
   }
 }

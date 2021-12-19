@@ -324,5 +324,8 @@
   {"worldName":"Shokugeki no Sōma","rating":1},
   {"worldName":"Taimanin","rating":7},
   {"worldName":"Toril/Forgotten Realms","rating":7},
-  {"worldName":"Warcraft","rating":5,"condition":[{"name":"During the Events of WoW 'Classic'","rating":6},{"name":"During the Events of WoW 'The Burning Crusade'","rating":7},{"name":"During the Events of WoW 'Wrath of the Lich King'","rating":8},{"rating":8,"name":"During the Events of WoW 'Cataclysm'"},{"rating":7,"name":"During the Events of WoW 'Mists of Pandaria'"},{"rating":7,"name":"During the Events of WoW 'Warlords of Draenor'"},{"rating":8,"name":"During the Events of WoW 'Legion'"},{"rating":8,"name":"During the Events of WoW 'Battle for Azeroth'"},{"name":"During the Events of WoW 'Shadowlands'","rating":9}]}
+  {"worldName":"Warcraft","rating":5,"condition":[{"name":"During the Events of WoW 'Classic'","rating":6},{"name":"During the Events of WoW 'The Burning Crusade'","rating":7},{"name":"During the Events of WoW 'Wrath of the Lich King'","rating":8},{"rating":8,"name":"During the Events of WoW 'Cataclysm'"},{"rating":7,"name":"During the Events of WoW 'Mists of Pandaria'"},{"rating":7,"name":"During the Events of WoW 'Warlords of Draenor'"},{"rating":8,"name":"During the Events of WoW 'Legion'"},{"rating":8,"name":"During the Events of WoW 'Battle for Azeroth'"},{"name":"During the Events of WoW 'Shadowlands'","rating":9}]},
+
+  {"worldName":"Andromeda","rating":8,"image":"https://upload.wikimedia.org/wikipedia/en/5/5e/Andromeda_title_card.jpg"},
+  {"worldName":"The Walking Dead","rating":5,"condition":[{"rating":6,"name":"Zombie can remain silent for surprise attacks, and decay much slower"}]}
 ]

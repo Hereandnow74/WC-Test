@@ -23,7 +23,8 @@
 </template>
 
 <script lang='ts' setup>
-import { homes, homeDesc, DLChomes } from '~/data/talents'
+import { DLChomes } from '~/data/DLCs'
+import { homes, homeDesc } from '~/data/talents'
 import { chooseHome, homeAvailable, isDLC } from '~/logic'
 import { useTooltips } from '~/logic/misc'
 import { useStore } from '~/store/store'

@@ -19,6 +19,7 @@
           @click="orientation = !orientation"
         />
         <span v-if="tier11tickets !== 0" class="mr-2">T11 tickets: {{ tier11tickets }}</span>
+        <span v-if="loan.owed" class="mr-2">Owed: {{ loan.owed }}</span>
         <span>Budget: {{ budget }}</span>
         <span v-if="budget < 0" class="text-red-500 px-2">You are in debt</span>
         <span
@@ -74,7 +75,7 @@
 </template>
 
 <script lang="ts" setup>
-import { Perk, useStore } from '~/store/store'
+import { useStore } from '~/store/store'
 import { activeTab, clearAll, orientation } from '~/logic'
 import { confirmDialog } from '~/logic/dialog'
 import { useChallenges } from '~/store/challenges'
@@ -96,7 +97,7 @@ const tabComponents = [
 const {
   budget, startingWorld, startingOrigin, intensities, binding, homePerks, defensePerks,
   companions, heritage, talentPerks, waifuPerks, ridePerks, miscPerks, luresBought, genericWaifuPerks,
-  tier11tickets, companionsCost, baseBudget, companionProfit, companionProfitSold, otherPerks,
+  tier11tickets, companionsCost, baseBudget, companionProfit, companionProfitSold, otherPerks, loan, csr,
 } = useStore()
 
 const { activeChallenges } = useChallenges()
@@ -144,8 +145,12 @@ function buildString(title: string, items: Perk[], left: object) {
 
 function copyText() {
   const fullCost = { c: baseBudget.value === 11111 ? 0 : baseBudget.value }
+  if (csr.value) fullCost.c = 0
 
   let full = `Starting World: ${startingWorld.value.worldName}\nStarting budget ${fullCost.c}\n\n`
+
+  full += loan.value.gained > 0 ? `Took a loan for ${loan.value.gained} credits\n\n` : ''
+  fullCost.c += loan.value.gained
 
   full += activeChallenges.value.length ? `${buildString('Challenges', activeChallenges.value, fullCost)}\n` : ''
 

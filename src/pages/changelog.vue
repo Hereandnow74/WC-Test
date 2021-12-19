@@ -5,6 +5,19 @@
     </h2>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
+        18 December 2021
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>199 new user submitted Characters.</li>
+        <li>10 new DLC perks.</li>
+        <li>Cash Still Rules/loans app</li>
+        <li>Dragon Aura app</li>
+        <li>Reworked what perks will be automatically deleted when you unselect perks that they required</li>
+        <li>Bugfixes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
         15 December 2021
       </h3>
       <ul class="list-decimal list-inside">

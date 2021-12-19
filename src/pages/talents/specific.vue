@@ -103,12 +103,12 @@
 <script lang='ts' setup>
 import { findIndex, isArray } from 'lodash-es'
 import { waifu_perks, DLCwaifu_perks } from '~/data/waifu_perks'
-import { genericPerks, genericDesc, DLCgenericPerks } from '~/data/talents'
+import { genericPerks, genericDesc } from '~/data/talents'
 import { lazyLoadImg, useTooltips } from '~/logic/misc'
 import { useStore } from '~/store/store'
 
-import PerkCard from '~/components/PerkCard.vue'
 import { chooseGenericPerk, chooseWaifuPerk, genericAvailable, isDLC, specificAvailable } from '~/logic'
+import { DLCgenericPerks } from '~/data/DLCs'
 
 const { waifuPerks, genericWaifuPerks } = useStore()
 
