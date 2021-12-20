@@ -5,6 +5,14 @@
     </h2>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
+        19 December 2021
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>70 new user submitted Characters.</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
         18 December 2021
       </h3>
       <ul class="list-decimal list-inside">

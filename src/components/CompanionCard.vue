@@ -94,6 +94,7 @@
 <script lang='ts' setup>
 import { findIndex, random } from 'lodash-es'
 import { CHAR_COSTS, waifuTags } from '~/data/constatnts'
+import { isNSFW } from '~/logic'
 import { usePlayStore } from '~/store/play'
 import { useStore } from '~/store/store'
 
@@ -127,7 +128,7 @@ const props = defineProps({
 const modalImage = ref('')
 const showModal = ref(false)
 const usedModal = ref(false)
-const nsfw = ref(false)
+const nsfw = ref(isNSFW.value)
 
 const cardEl = ref<HTMLImageElement| null>(null)
 const companionEl = ref<HTMLImageElement| null>(null)
@@ -166,22 +167,31 @@ const modalImageCmp = computed(() => {
 })
 
 const imageLink = computed(() => {
-  if (charData.value.image) {
-    if (charData.value.image.startsWith('http')) { return charData.value.image }
-    else {
-      if (charData.value?.tags?.includes('U'))
-        return `https://cdn.statically.io/gh/Om1cr0n/cat_thumb/main/docs/thumbs/${charData.value.image}`
-      return `https://cdn.statically.io/gh/klassekatze/waifucatimg/master/imagecache_thumb/${charData.value.image}`
-    }
+  if (nsfw.value && props.char.in) {
+    return props.char.in
   }
   else {
-    return '/img/placeholder.jpg'
+    if (charData.value.image) {
+      if (charData.value.image.startsWith('http')) { return charData.value.image }
+      else {
+        if (charData.value?.tags?.includes('U'))
+          return `https://cdn.statically.io/gh/Om1cr0n/cat_thumb/main/docs/thumbs/${charData.value.image}`
+        return `https://cdn.statically.io/gh/klassekatze/waifucatimg/master/imagecache_thumb/${charData.value.image}`
+      }
+    }
+    else {
+      return '/img/placeholder.jpg'
+    }
   }
 })
 
 const priceTier = (t: number): number => flags.value.noBindings && t !== 11 && t !== 1 ? t - 1 : t
 
-watch(nsfw, () => companionEl.value.src = nsfw.value ? charData.value.image_nsfw : imageLink.value)
+watch(isNSFW, () => nsfw.value = isNSFW.value)
+// watch(nsfw, () => {
+//   const link = nsfw.value ? charData.value.image_nsfw : imageLink.value
+//   companionEl.value.src = link
+// })
 
 function buyCompanion() {
   const char = charData.value
@@ -240,7 +250,7 @@ function deleteCharacter() {
 }
 
 onMounted(() => {
-  if (!props.lazy && companionEl.value)
+  if ((!props.lazy || isNSFW.value) && companionEl.value)
     companionEl.value.src = imageLink.value
 })
 

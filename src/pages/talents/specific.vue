@@ -66,6 +66,13 @@
       </table>
       <h3 class="text-lg font-bold relative">
         {{ waifu.title }}
+        <Select
+          v-if="waifu.costVariants"
+          v-model.number="waifu.cost"
+          :options="waifu.costVariants"
+          class="mx-1 inline-block text-base"
+          @click.stop
+        />
         <span v-if="waifu.dlc" class="text-sm dark:text-gray-300 text-gray-600">(DLC by <span>{{ waifu.dlc }}</span>)</span>
         <fa-solid:check
           v-if="findIndex(waifuPerks, { title: waifu.title }) !== -1"

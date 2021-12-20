@@ -48,18 +48,25 @@
       </div>
       <div class="flex rounded bg-gray-600 cursor-pointer">
         <div
-          :class="image==='' ? 'bg-gray-700':''"
+          :class="image==='' && nsfw==='' ? 'bg-gray-700':''"
           class="hover:bg-gray-700 text-green-300 px-2 rounded-l"
-          @click="image=''"
+          @click="(image='', nsfw='')"
         >
           all
         </div>
         <div
           :class="image==='!cvxz' ? 'bg-gray-700':''"
           class="border-l px-2 hover:bg-gray-700 text-gray-200 rounded-r"
-          @click="image='!cvxz'"
+          @click="image === ''? image='!cvxz' : image=''"
         >
           img
+        </div>
+        <div
+          :class="nsfw==='!cvxz' ? 'bg-gray-700':''"
+          class="border-l px-2 hover:bg-gray-700 text-gray-200 rounded-r"
+          @click="nsfw === ''? nsfw='!cvxz' : nsfw=''"
+        >
+          nsfw
         </div>
       </div>
       <Checkbox
@@ -140,6 +147,7 @@ const isLimited = ref(false)
 
 const gender = ref('')
 const image = ref('')
+const nsfw = ref('')
 
 // const characters = ref({})
 const loading = ref(true)
@@ -172,11 +180,11 @@ const options = {
   findAllMatches: true,
   useExtendedSearch: true,
   threshold: 0.4,
-  keys: ['n', 'w', 't', 'b', 'i', 'd'],
+  keys: ['n', 'w', 't', 'b', 'i', 'd', 'in'],
 }
 
 const fuse = new Fuse(charArr.value, options)
-const options2 = { useExtendedSearch: true, findAllMatches: true, keys: ['n', 'w', 't', 'b', 'i', 'd'], shouldSort: false }
+const options2 = { useExtendedSearch: true, findAllMatches: true, keys: ['n', 'w', 't', 'b', 'i', 'd', 'in'], shouldSort: false }
 const fuseNoSort = new Fuse(charArr.value, options2)
 const params = useUrlSearchParams('history')
 const route = useRoute()
@@ -253,6 +261,7 @@ const filteredCharacters = computed(() => {
   if (gender.value) sopt.$and.push({ b: gender.value })
 
   if (image.value) sopt.$and.push({ i: image.value })
+  if (nsfw.value) sopt.$and.push({ in: nsfw.value })
 
   if (search.value.length === 0)
     return fuseNoSort.search(sopt)

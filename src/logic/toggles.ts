@@ -11,6 +11,7 @@ export const [showFilterTags, toggleShowFilterTags] = useToggle()
 export const [showAddPerk, toggleShowAddPerk] = useToggle()
 export const [showAddMission, toggleShowAddMission] = useToggle()
 export const [isDLC, toggleDLC] = useToggle(true)
+export const [isNSFW, toggleNSFW] = useToggle(false)
 
 export const [appMode, toggleAppMode] = useToggle()
 export const orientation = ref(false)

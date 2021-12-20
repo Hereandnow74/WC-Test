@@ -1029,6 +1029,7 @@ waifu_perks.push({
   tier: 8,
   image: 'https://i.imgur.com/arMoaPl.png?1',
   cost: 150,
+  costVariants: [150, 100],
   desc: 'Instead of the second Reinforce, you have the original. This upgrades the Tome of the Night Sky to its full power, including a non-rampant NachtWal. (NachtWal is not a waifu.) If you have Reinforce Zwei and all four Wolkenritter, this upgrade only costs 100. If you captured Reinforce Zwei or there was any amount of time between buying her and this upgrade, Zwei will gain the complete Tome, NachtWal, and Eins\' full-size adult form, costumes, and memories, but her personality will not be affected. ',
 })
 waifu_perks.push({
@@ -1111,7 +1112,7 @@ export const DLCwaifu_perks: WaifuPerk[] = []
 DLCwaifu_perks.push({
   dlc: 'Cter',
   waifu: 'Isis Remnant',
-  2582041: 10275,
+  uid: 2582041,
   from: 'I Was Caught up in a Hero Summoning, but That World Is at Peace',
   desc: `
   <p>As far as most people on Trinia concerned, Isis born from the magic power left behind by a multitude of dead beings. In reality Shallow Vernal created her as an experiment using the soul of a evil god which was defeated in her another world.</p>

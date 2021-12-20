@@ -1,11 +1,24 @@
 <template>
   <Modal label="Add New Character">
-    <div class="p-2 flex flex-col gap-2 min-h-0">
+    <div class="p-2 flex flex-col gap-2 min-h-0 max-w-screen-sm">
       <div class="p-1 rounded border-2 border-green-500 mb-2">
         If you don't know what Tier assign to a Character check out
         <router-link :to="{path:'/', hash:'#pandora'}" class="text-blue-500 hover:underline">
           this
         </router-link>
+      </div>
+      <div class="p-1 rounded border-2 border-green-500 mb-2">
+        <span>If you want to add NSFW image there is a list of sites that were confirmed to work:</span>
+        <span class="text-blue-600 dark:text-blue-200 underline">
+          <a class="ml-2" href="https://danbooru.donmai.us/" target="_blank" rel="noopener noreferrer">Danbooru</a>
+          <a class="ml-2" href="http://www.hentai-foundry.com/" target="_blank" rel="noopener noreferrer">Hentai-Foundry</a>
+          <a class="ml-2" href="https://e621.net/" target="_blank" rel="noopener noreferrer">e621</a>
+          <a class="ml-2" href="https://safebooru.org/" target="_blank" rel="noopener noreferrer">Safebooru</a>
+          <a class="ml-2" href="http://paheal.net" target="_blank" rel="noopener noreferrer">Paheal</a>
+          <a class="ml-2" href="https://www.furaffinity.net/" target="_blank" rel="noopener noreferrer">Furaffinity</a>
+          <a class="ml-2" href="https://www.reddit.com/" target="_blank" rel="noopener noreferrer">Reddit</a>
+          <a class="ml-2" href="https://imgur.com" target="_blank" rel="noopener noreferrer">Imgur</a>
+        </span>
       </div>
       <div class="flex gap-2">
         <Input v-model="name" placeholder="Name" class="flex-grow" :error-message="errors.name" />

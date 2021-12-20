@@ -28,6 +28,9 @@
         <mdi:puzzle-remove-outline /><span>DLC's off</span>
       </template>
     </button>
+    <button class="icon-text-btn mx-2 !outline-none whitespace-nowrap" title="Toggle NSFW images" @click="() => toggleNSFW()">
+      <uil:18-plus :class="isNSFW ? 'text-red-500': ''" /><span>{{ isNSFW ? 'NSFW' : 'SFW' }}</span>
+    </button>
     <h3 v-if="!showSideMenu" class="mx-2 opacity-50 border-b">
       Actions
     </h3>
@@ -104,7 +107,7 @@
 <script lang='ts' setup>
 import {
   isDark, toggleDark, toggleSideMenu, showSideMenu, showAddPerk, toggleShowAddPerk, toggleDLC,
-  isDLC, showAddMission, toggleShowAddMission,
+  isDLC, showAddMission, toggleShowAddMission, isNSFW, toggleNSFW,
 } from '~/logic'
 
 const sidemenu = ref(null)
