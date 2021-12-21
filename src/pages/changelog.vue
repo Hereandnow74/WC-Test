@@ -5,6 +5,18 @@
     </h2>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
+        20 December 2021
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>8 new DLC perks, 1 new DLC challenge.</li>
+        <li>36 new user submitted Characters.</li>
+        <li>NSFW images filter and Global NSFW/SFW option</li>
+        <li>You now can add characters to Favorite list, and filter by favorites</li>
+        <li>Bug fixes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
         19 December 2021
       </h3>
       <ul class="list-decimal list-inside">

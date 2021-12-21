@@ -1,9 +1,9 @@
 import { isArray } from 'lodash-es'
-import { DLCgenericPerks, DLChomes, DLCperks, DLCtalents } from './DLCs'
+import { DLCgenericPerks, DLChomes, DLCperks, DLCtalents, DLCheritages, DLClureExpansions, DLCbindings } from './DLCs'
 import { intensity } from '~/data/intensity'
 import { origin } from '~/data/origin'
 import { bindings, lures, lureExpansions, otherControls } from '~/data/binding'
-import { DLCheritages, heritages } from '~/data/heritage'
+import { heritages } from '~/data/heritage'
 import { rides, homes, defenses, talents, perks, genericPerks } from '~/data/talents'
 import { waifu_perks } from '~/data/waifu_perks'
 
@@ -145,7 +145,8 @@ function addTitles(res: any, perks: any) {
 export const ALL_PERK_TITLES = computed(() => {
   const result = {}
   const all = [intensity, bindings, lures, lureExpansions, otherControls, heritages, homes, defenses, talents, perks,
-    genericPerks, waifu_perks, DLCperks, DLChomes, DLCgenericPerks, DLCheritages, DLCtalents]
+    genericPerks, waifu_perks, DLCperks, DLChomes, DLCgenericPerks, DLCheritages, DLCtalents, DLClureExpansions,
+    DLCbindings]
   all.forEach(p => addTitles(result, p))
   return result
 })

@@ -8,7 +8,7 @@ Challenges are not a part of a canon Waifu Catalog so you have more freedom in i
 <p>You can pick a several challenges at the same time if they don't conflict with each other.</p>
 `
 
-const { fullStartingBudget, companions } = useStore()
+const { fullStartingBudget, companions, baseBudget } = useStore()
 
 const employee = { uid: 6666666, name: 'Employee #6.02214076e23', world: 'The Company', tier: 10, priceTier: 10, method: 'unbound' }
 let rouletteWatcher = null
@@ -93,6 +93,24 @@ export const challenges = [
         }
       }, { deep: true }),
       remove: () => rouletteWatcher ? rouletteWatcher() : null,
+    },
+  },
+  {
+    dlc: 'KatzSmile',
+    title: 'Power Trip',
+    special: 'Chargen only. May not be taken on DR11.',
+    cost: 0,
+    desc: `
+    <p>You are incredibly lucky! You receive a unique offer from our company - an exciting journey through the multiverse.</p>
+    <p>Only today you can choose any starting world and get +100% to its starting budget!</p>
+    <p>But from now on, you will only be a client of our company.</p>
+    <p>We are deeply sorry, but you will not be able to sell the any targets you have captured. However, you can still participate in arranged PvP matches and complete missions or quests for our company, earning credits for them.</p>
+    <p>Also the "Cash Still Rules" perk is no longer available to you. We do not need debtors who cannot pay.</p>
+    <p>All purchases(except companions) you do will be final you wouldn't be able to return them or buy anything else after chargen so choose carefully.</p>
+    `,
+    effect: {
+      set: () => baseBudget.value = baseBudget.value * 2,
+      remove: () => baseBudget.value = baseBudget.value / 2,
     },
   },
 ]

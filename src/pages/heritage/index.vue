@@ -84,12 +84,13 @@
 
 import { onBeforeRouteUpdate } from 'vue-router'
 import { isArray, mergeWith } from 'lodash-es'
-import { desc, heritages, Heritage, DLCheritages } from '~/data/heritage'
+import { desc, heritages, Heritage } from '~/data/heritage'
 import { useTooltips } from '~/logic/misc'
 import { useStore } from '~/store/store'
 import Select from '~/components/basic/Select.vue'
 import { chooseHeritage, heritageAvailable, isDLC } from '~/logic'
 import { heritageTiers } from '~/data/constatnts'
+import { DLCheritages } from '~/data/DLCs'
 
 const { heritage, flags } = useStore()
 

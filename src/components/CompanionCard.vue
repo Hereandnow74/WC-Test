@@ -48,6 +48,13 @@
             </a>
             <bx:bxs-edit class="text-yellow-200 hover:text-yellow-600 cursor-pointer" @click="$emit('editCompanion', charData)" />
             <fluent:delete-20-filled v-if="isUserChar" class="text-red-200 hover:text-red-500 ml-2 cursor-pointer" @click="deleteCharacter" />
+            <span class="text-red-500 hover:text-red-400 cursor-pointer" title="Add to Favorites">
+              <ci:heart-fill
+                v-if="favorites.includes(charData.uid)"
+                @click="favorites.splice(favorites.indexOf(charData.uid), 1)"
+              />
+              <ci:heart-outline v-else @click="favorites.push(charData.uid)" />
+            </span>
           </div>
         </h4>
         <div class="text-center leading-none text-blue-300">
@@ -153,7 +160,7 @@ const charData = computed(() => {
   return res
 })
 
-const { flags, companions, localUserCharacters, companionsUIDs, captureKoeff, underLoan } = useStore()
+const { flags, companions, localUserCharacters, companionsUIDs, captureKoeff, underLoan, favorites } = useStore()
 const { loan, trHistory } = usePlayStore()
 
 const modalImageCmp = computed(() => {

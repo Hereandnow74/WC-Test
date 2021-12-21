@@ -625,15 +625,3 @@ heritages.push({
 <p>You are capable of teaching the members of your retinue how to become Outsiders; they gain their own true forms, their own Omens, and their own Elemental affinities in the process, acting with all of your Outsider abilities except for Elder Sign and Endless Gospels Unspoken.</p>
 <p>As your Heralds, their teaching effects are extensions of your own authority, and draw their students towards you instead of them; likewise, you may treat your Heralds as if they were your own Omens, and they always count as a critical mass of your own Omen for purposes of summoning you into a world.</p> `,
 })
-
-export const DLCheritages: Heritage[] = []
-
-DLCheritages.push({
-  dlc: 'Cyan-Rozen',
-  title: 'Ascendant Human',
-  tree: 'Transhuman',
-  type: 'Self',
-  cost: 22222,
-  whitelist: ['Singularity'],
-  desc: 'Surpassing limitations is the very nature of transhumanism. You now can unlock the third Transhuman type. All Transhuman perks treat you as having all three types. When the aesthetics of three Transhuman types conflict, you may determine which one takes precedent.',
-})

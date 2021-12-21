@@ -142,13 +142,47 @@ DLCperks.push({
 })
 
 DLCperks.push({
-  dlc: 'Despin',
+  dlc: 'DLC by Despin',
+  dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'I Want Out',
   cost: 20,
   desc: `
   A portal opens to a new world of your choice. The portal is one-way only, and will last no more than two minutes or until you and all of your retinue have passed through, whichever is shorter. If any of your retinue stay behind, this perk will not help you retrieve them. 
   <p>If you have a Loan, use of this perk triggers an interest payment.</p>
   `,
+})
+
+DLCperks.push({
+  dlc: 'DLC by Despin',
+  dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
+  title: 'Trajectory. Agreement.',
+  cost: 140,
+  desc: `
+  You become an unrestricted World Hopper.
+  `,
+  whitelist: ['The Bigger Fish'],
+})
+
+DLCperks.push({
+  dlc: 'DLC by Despin',
+  dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
+  title: 'Express Warranty',
+  cost: 1000,
+  desc: `
+  Any retinue member who dies on you will be re-delivered to you in 5 minutes. This perk will not help if you die, even if you took the Substitute or Possess origins.
+  `,
+  whitelist: ['Warranty Plan'],
+})
+
+DLCperks.push({
+  dlc: 'DLC by Despin',
+  dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
+  title: 'I Am Become Deathless',
+  cost: 11111,
+  desc: `
+  You are now covered by your Warranty, and will respawn even from events that would somehow kill a T11. 
+  `,
+  whitelist: ['Warranty Plan'],
 })
 
 // DLC home perks
@@ -208,7 +242,8 @@ DLChomes.push({
 })
 
 DLChomes.push({
-  dlc: 'Despin',
+  dlc: 'DLC by Despin',
+  dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'Emergency Exit',
   cost: 100,
   desc: `
@@ -245,13 +280,24 @@ DLChomes.push({
 export const DLCtalents: DLCPerk[] = []
 
 DLCtalents.push({
-  dlc: 'Despin',
+  dlc: 'DLC by Despin',
+  dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'Presence',
   cost: 30,
   desc: `
   Through a mix of perception alteration and minor reality alteration, the world itself seems to aid you in presenting the bearing you intend. From making you seem supernaturally beautiful, always being seen or recorded from a flattering angle and lighting, your dramatic declarations echoing even on an open field, etc. At your discretion, this perk can also allow situational coincidences such as relevant music to start playing or lightning to strike dramatically behind you as you cackle.
   `,
   whitelist: ['Communication Talent'],
+})
+
+DLCtalents.push({
+  dlc: 'Doomsought',
+  title: 'Money Talent',
+  cost: 10,
+  desc: `
+  You are extremely talented at making money. You can smell opportunity and feel the flow of the market in your bones. As long as you actually put effort into it you can go from being broke to being a millionaire in a few months.
+  <p>Can be shared</p>
+  `,
 })
 
 // DLC Lures
@@ -263,4 +309,44 @@ DLClureExpansions.push({
   cost: 30,
   whitelist: ['Sticky Fingers: Brown Sugar'],
   desc: 'You are now able to change to flavor of all of your bodily fluids(Ex..Chocolate,Cookies,vanilla,any flavored ice-cream,lemon,apples,liquor/beer....etc) this change is instant with just a thought. Additionally this perk synergies with both Faerie Feast and Sticky Fingers: Brown Sugar.',
+})
+
+// DLC Heritages
+export const DLCheritages: DLCPerk[] = []
+
+DLCheritages.push({
+  dlc: 'Cyan-Rozen',
+  title: 'Ascendant Human',
+  tree: 'Transhuman',
+  type: 'Self',
+  cost: 22222,
+  whitelist: ['Singularity'],
+  desc: 'Surpassing limitations is the very nature of transhumanism. You now can unlock the third Transhuman type. All Transhuman perks treat you as having all three types. When the aesthetics of three Transhuman types conflict, you may determine which one takes precedent.',
+})
+
+DLCheritages.push({
+  dlc: 'DaemonOrk',
+  title: 'Dragon God',
+  tree: 'Dragon',
+  type: 'Self',
+  complex: 'flavor',
+  anything: 'Element',
+  cost: 11111,
+  whitelist: ['Double Dragon', 'Dragon Blood', 'Elder Dragon'],
+  desc: 'Why stop at just three elements? You may now pick an additional Element per purchase of this Perk.',
+})
+
+// DLC Bindings
+export const DLCbindings: DLCPerk[] = []
+
+DLCbindings.push({
+  dlc: 'DLC by Despin',
+  dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
+  title: 'Additional Binding',
+  cost: 11111,
+  multiple: true,
+  desc: `
+  You are no longer limited to a single Binding. You may now purchase an additional Binding and expansions. You must still spend the credits as normal. This perk may be purchased multiple times. Its price will increase by 1 ticket each time. You are able to decide what purchased binding effects, including mental, are applied to any or all of your retinue. For example, you could Bind someone with the Shroud, then use Third-Generation Symbiote to share access to the Symbiote’s bio-armor as well. 
+  `,
+  requires: 'at least one Binding',
 })

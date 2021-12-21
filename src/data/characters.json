@@ -9435,6 +9435,7 @@
     "t": 5,
     "i": "sample_35ceaed8838a4c33dec012d7df56288c.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/3132697",
+    "in": "https://w1680.luscious.net/serasxx04/437097/commissions_and_ext_01FP6MCKGDCNBPVQA2KEVWW71Z.1680x0.jpg",
     "w": "Attack on Titan",
     "b": [
       "F",
@@ -44363,7 +44364,7 @@
     "u": 8526,
     "n": "Illia",
     "t": 4,
-    "i": "",
+    "i": "https://i.imgur.com/wTErXT0m.jpg",
     "w": "The Elder Scrolls",
     "b": [
       "F"
@@ -74846,6 +74847,7 @@
     "n": "Luxanna Crownguard",
     "t": 5,
     "i": "sample_250332c6c92d275ef8a21ba92bb6ea04.jpg",
+    "in": "https://art.ngfiles.com/images/1996000/1996385_nsfw-pumps_lux-league-of-legends.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/6486632",
     "w": "League of Legends",
     "b": [
@@ -85993,8 +85995,7 @@
     "s": "https://chan.sankakucomplex.com/post/show/7167883",
     "w": "Monogatari",
     "b": [
-      "F",
-      "P", "hp", "im", "tm", "dr", "mr", "dm", "hl"
+      "F", "hp", "im", "tm", "dr", "mr", "dm", "hl"
     ]
   },
   {
@@ -99789,6 +99790,7 @@
     "s": "https://chan.sankakucomplex.com/post/show/3469507",
     "in": "https://cdn.donmai.us/sample/ea/cf/__viola_pokemon_and_2_more_drawn_by_kurowa__sample-eacfc5677216d96dd503b0f131f62490.jpg",
     "w": "Pokemon",
+    "d": "6/Kalos",
     "b": [
       "F", "mt"
     ]
@@ -99955,10 +99957,11 @@
     "t": 4,
     "i": "_toshihiro__5729d9557cc2ec879d4141385acde4f7.png",
     "s": "https://danbooru.donmai.us/posts/2772646",
-    "in": "https://img1.gelbooru.com//samples/9d/5e/sample_9d5e4ef27d060f26272160c31f904c2a.jpg",
+    "in": "https://cdn.donmai.us/original/db/7a/__lillie_and_lusamine_pokemon_and_2_more_drawn_by_sugarbeat__db7aadffd5a4f95b3801d391bdffa7a5.jpg",
     "w": "Pokemon",
+    "d": "7/Alola", 
     "b": [
-      "F"
+      "F", "mt"
     ]
   },
   {
@@ -100038,6 +100041,7 @@
     "im": "https://peach.paheal.net/_images/7a707d62b341dffcfaa27913cf40ed74/4008047%20-%20Porkyman%20Soliera%20Ultra_Recon_Squad%20yasuaki023.jpg",
     "s": "https://danbooru.donmai.us/posts/3121369",
     "w": "Pokemon",
+    "d": "7/Alola",
     "b": [
       "F", "mt", "hp", "hr"
     ]
@@ -100050,6 +100054,7 @@
     "in": "https://tulip.paheal.net/_images/cde3c859378546db14e14e97a4a646ee/2920314%20-%20Lusamine%20Porkyman%20Zossie%20yasuaki023.jpg",
     "s": "https://danbooru.donmai.us/posts/3881547",
     "w": "Pokemon",
+    "d": "7/Alola",
     "b": [
       "F", "mt", "hp", "hr"
     ]
@@ -100070,7 +100075,7 @@
     "n": "Kahili",
     "t": 6,
     "i": "hiro_saika__78ec403badec8496f508bd4dfacf1fea.jpg",
-    "im": "https://peach.paheal.net/_images/f3131734373533951ce8a4845cf9f382/2997068%20-%20Kahili%20Porkyman%20yasuaki023.jpg",
+    "in": "https://cdn.donmai.us/sample/01/ca/__kahili_pokemon_and_2_more_drawn_by_hitotsuki_nebura__sample-01caae4f7bed757d6bf8f5be611067d4.jpg",
     "s": "https://danbooru.donmai.us/posts/4148490",
     "w": "Pokemon",
     "b": [
@@ -100516,7 +100521,7 @@
     "w": "Pokemon",
     "d": "5/Unova",
     "b": [
-      "M", "mt"
+      "M", "sc", "ps", "mt"
     ]
   },
   {
@@ -122641,8 +122646,10 @@
     "n": "Pearl",
     "t": 4,
     "i": "04912cd6c0d29607ccac22a4ba5f2b54.jpg",
+    "in": "https://booru.allthefallen.moe/data/sample/e1/e0/sample-e1e0ee1e2582869155fc850cadc93133.jpg",
     "s": "https://e621.net/post/show/1797990",
-    "w": "Splatoon"
+    "w": "Splatoon",
+    "b": [ "F" ]
   },
   {
     "u": 12465,

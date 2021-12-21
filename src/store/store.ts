@@ -46,7 +46,7 @@ const baseBudgetAfter = computed(
   () => baseBudget.value + intensities.value.reduce((a, x) => x.intensity > 1 ? a + x.intensity : a, 0),
 )
 
-const bindingCost = computed(() => binding.value.reduce((a, x) => a += x.cost, 0))
+const bindingCost = computed(() => binding.value.reduce((a, x) => a += x.cost >= 11111 ? 0 : x.cost, 0))
 const heritageCost = computed(() => heritage.value.reduce((a, x) => a += x.cost >= 11111 ? 0 : x.cost, 0))
 
 const ridePerksCost = computed(() => ridePerks.value.reduce((a, x) => a += x.cost === 11111 ? 0 : x.cost, 0))
@@ -146,6 +146,7 @@ const tier11tickets = computed(() => {
   let ticket = 0
   if (baseBudget.value === 11111) ticket += 1
 
+  const bindingCost = binding.value.reduce((a, x) => a += x.cost >= 11111 ? x.cost / 11111 : 0, 0)
   const heritageCost = heritage.value.reduce((a, x) => a += x.cost >= 11111 ? x.cost / 11111 : 0, 0)
 
   const ridePerksCost = ridePerks.value.reduce((a, x) => a += x.cost === 11111 ? 1 : 0, 0)
@@ -161,7 +162,7 @@ const tier11tickets = computed(() => {
   }, 0)
 
   return ticket - heritageCost - ridePerksCost - homePerksCost - talentsCost - defensesCost - miscPerksCost
-    - waifuPerksCost - genericWaifuPerksCost - luresCost - companionsCost
+    - waifuPerksCost - genericWaifuPerksCost - luresCost - companionsCost - bindingCost
     - budgetMods.value.minus11 + budgetMods.value.plus11 + companionTicketProfit.value
 })
 
@@ -220,12 +221,7 @@ watch(budget, () => {
   }
 })
 
-// watch(csr, () => {
-//   if (csr.value)
-//     fee.value = baseBudget.value
-//   else
-//     fee.value = 0
-// })
+const favorites = useStorage<string[]>('favorites', [])
 
 export function useStore() {
   return {
@@ -286,5 +282,6 @@ export function useStore() {
     csr,
     loan,
     trHistory,
+    favorites,
   }
 }

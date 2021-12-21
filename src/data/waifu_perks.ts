@@ -122,7 +122,7 @@ waifu_perks.push({
   title: 'Heart-Under-Blade',
   waifu: 'Oshino Shinobu',
   from: 'Monogatari',
-  uid: 6028,
+  uid: 5370229,
   tier: 8,
   image: 'https://cdn.statically.io/gh/klassekatze/waifucatimg/master/imagecache_thumb/72ae265780e758cdd963e2adaa257f83.jpg',
   cost: 180,

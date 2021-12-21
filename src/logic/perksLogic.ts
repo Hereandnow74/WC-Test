@@ -186,6 +186,8 @@ export function bindingAvailable(bin: Binding): boolean {
     return true
   }
   else {
+    if (!bin.whitelist && findIndex(binding.value, { title: 'Additional Binding' }) !== -1)
+      return true
     if (bin.whitelist && intersection(allEffects.value, bin.whitelist).length === (bin.needed || bin.whitelist.length))
       return true
     if (findIndex(binding.value, { title: bin.title }) !== -1)
@@ -237,8 +239,9 @@ export function heritageAvailable(hr: Heritage): boolean {
 
 export function chooseHeritage(hr: Heritage, saveData: Perk) {
   if (heritageAvailable(hr)) {
-    if (saveData.title === 'Philosopher’s Transmortality Engine') {
-      saveData.tree = 'Transhuman'
+    if (['Dragon God', 'Philosopher’s Transmortality Engine'].includes(saveData.title)) {
+      if (saveData.title === 'Philosopher’s Transmortality Engine')
+        saveData.tree = 'Transhuman'
       pickSimplePerk(hr, saveData, heritageAvailable, heritage.value)
       return
     }

@@ -112,7 +112,7 @@ watch(tags, () => nextTick(onTagsChange), { deep: true })
 function addTag(tag: string) {
   if (!tag) return
   if (tags.value.includes(tag)) return
-  tags.value.push(waifuTagsByTag[tag].short || tag)
+  tags.value.push(waifuTagsByTag[tag] ? waifuTagsByTag[tag].short : tag)
   newTag.value = ''
 }
 

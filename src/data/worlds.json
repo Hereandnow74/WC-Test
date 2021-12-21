@@ -683,10 +683,14 @@
     ]
   },
   {
-    "rating": 9,
+    "rating": 8,
     "worldName": "Honkai Impact 3rd",
     "additional": "Mei has Kurikara as a familiar.",
     "condition": [
+      {
+        "name": "Start of canon",
+        "rating": 8
+      },
       {
         "name": "Previous Era",
         "rating": 9
@@ -697,11 +701,7 @@
       },
       {
         "name": "Pre-Second Eruption",
-        "rating": 8
-      },
-      {
-        "name": "Start of canon",
-        "rating": 8
+        "rating": 7
       }
     ]
   },

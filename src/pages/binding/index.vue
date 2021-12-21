@@ -58,6 +58,17 @@
           <span v-if="bnd.type === 'Ritual'" class="mx-2" @click.stop="toggleRitual()">Rules: <span class="text-red-500 hover:underline">ritual parameters</span></span>
         </template>
       </PerkCard>
+      <PerkCard
+        v-if="isDLC"
+        :key="DLCbindings[0].title"
+        :bg="!flags.noBindings ? 'light-400 dark:rose-900 hover:(yellow-100 dark:rose-800)'
+          : 'gray-200 dark:gray-600'"
+        :perk="DLCbindings[0]"
+        :is-active="!!allBindings[DLCbindings[0].title]"
+        :saved-perk="allBindings[DLCbindings[0].title]"
+        :increment="true"
+        @pickPerk="(perk, save) => pickSimplePerk(perk,save, () => true, binding)"
+      />
     </div>
     <Desc
       v-if="activeType === 'Symbiote'"
@@ -98,7 +109,7 @@
     <Desc :desc="lureExpansionDesc" class="bg-gray-200 dark:bg-gray-600 max-w-screen-md my-4 mx-auto" />
     <div class="md:column-count-2 lg:column-count-3">
       <PerkCard
-        v-for="lr in lureExpansions"
+        v-for="lr in lureExpansionsDLC"
         :key="lr.title"
         :perk="lr"
         :bg="lureAvailable(lr) ? 'pink-100 dark:pink-900 hover:(pink-200 dark:rose-800)'
@@ -179,8 +190,9 @@ import {
   otherControls, otherDesc, symbioteRules,
 } from '~/data/binding'
 import { useTooltips } from '~/logic/misc'
-import { chooseLure, lureAvailable, bindingAvailable, chooseBinding, chooseOther } from '~/logic'
+import { chooseLure, lureAvailable, bindingAvailable, chooseBinding, chooseOther, isDLC, pickSimplePerk } from '~/logic'
 import { useStore } from '~/store/store'
+import { DLCbindings, DLClureExpansions } from '~/data/DLCs'
 
 const { binding, luresBought, flags, otherPerks } = useStore()
 const [showElements, toggleElements] = useToggle()
@@ -190,6 +202,9 @@ const currentBinding = ref<Binding|null>(null)
 
 const activeType = ref('Stamp')
 
+const bindingsDLC = computed(() => isDLC.value ? bindings.concat(DLCbindings) : bindings)
+const lureExpansionsDLC = computed(() => isDLC.value ? lureExpansions.concat(DLClureExpansions) : lureExpansions)
+
 const bindingByType = computed(() => {
   const res = {
     Stamp: [] as Binding[],
@@ -198,7 +213,7 @@ const bindingByType = computed(() => {
     Symbiote: [] as Binding[],
     Shroud: [] as Binding[],
   }
-  bindings.forEach(x => x.type ? res[x.type].push(x) : null)
+  bindingsDLC.value.forEach(x => x.type ? res[x.type].push(x) : null)
   return res
 })
 

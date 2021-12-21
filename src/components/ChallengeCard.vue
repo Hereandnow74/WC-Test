@@ -5,6 +5,10 @@
   >
     <h3 :id="challenge.title" class="relative flex-wrap flex justify-center items-center text-base sm:text-xl">
       <span class="whitespace-nowrap">{{ challenge.title }}</span>
+      <span v-if="challenge.dlc" class="text-sm ml-1" text="gray-500 dark:gray-400" @click.stop>
+        <a v-if="challenge.dlclink" :href="challenge.dlclink" target="_blank" rel="noopener noreferrer" class="underline">{{ challenge.dlc }}</a>
+        <span v-else>DLC by {{ challenge.dlc }}</span>
+      </span>
       <slot name="title" />
 
       <fa-solid:check

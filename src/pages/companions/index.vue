@@ -50,7 +50,7 @@
         <div
           :class="image==='' && nsfw==='' ? 'bg-gray-700':''"
           class="hover:bg-gray-700 text-green-300 px-2 rounded-l"
-          @click="(image='', nsfw='')"
+          @click="(image='', nsfw='', favorite=false)"
         >
           all
         </div>
@@ -67,6 +67,13 @@
           @click="nsfw === ''? nsfw='!cvxz' : nsfw=''"
         >
           nsfw
+        </div>
+        <div
+          :class="favorite ? 'bg-red-600':''"
+          class="border-l px-2 hover:bg-gray-700 text-gray-200 rounded-r"
+          @click="() => favorite = !favorite"
+        >
+          fav
         </div>
       </div>
       <Checkbox
@@ -120,7 +127,6 @@
 
 <script lang="ts" setup>
 import Fuse from 'fuse.js'
-import { without } from 'lodash'
 import { useStore } from '~/store/store'
 
 import { toggleShowAddCharacter, showAddCharacter, lazyLoadImg, toggleShowFilterTags, showFilterTags, tagToggles } from '~/logic'
@@ -148,6 +154,7 @@ const isLimited = ref(false)
 const gender = ref('')
 const image = ref('')
 const nsfw = ref('')
+const favorite = ref(false)
 
 // const characters = ref({})
 const loading = ref(true)
@@ -173,18 +180,18 @@ const tierOptions = [
   { label: '11', value: 11 },
 ]
 
-const { localUserCharacters, userCharacters, startingWorld } = useStore()
+const { localUserCharacters, userCharacters, startingWorld, favorites } = useStore()
 const { currentWorld } = usePlayStore()
 
 const options = {
   findAllMatches: true,
   useExtendedSearch: true,
   threshold: 0.4,
-  keys: ['n', 'w', 't', 'b', 'i', 'd', 'in'],
+  keys: ['n', 'w', 't', 'b', 'i', 'd', 'in', 'u'],
 }
 
 const fuse = new Fuse(charArr.value, options)
-const options2 = { useExtendedSearch: true, findAllMatches: true, keys: ['n', 'w', 't', 'b', 'i', 'd', 'in'], shouldSort: false }
+const options2 = { useExtendedSearch: true, findAllMatches: true, keys: ['n', 'w', 't', 'b', 'i', 'd', 'in', 'u'], shouldSort: false }
 const fuseNoSort = new Fuse(charArr.value, options2)
 const params = useUrlSearchParams('history')
 const route = useRoute()
@@ -262,6 +269,7 @@ const filteredCharacters = computed(() => {
 
   if (image.value) sopt.$and.push({ i: image.value })
   if (nsfw.value) sopt.$and.push({ in: nsfw.value })
+  if (favorite.value) sopt.$and.push({ u: `=${favorites.value.join('|=')}` })
 
   if (search.value.length === 0)
     return fuseNoSort.search(sopt)

@@ -40,7 +40,7 @@ const talentsDLC = computed(() => isDLC.value ? talents.concat(DLCtalents) : tal
 const talentsList = computed(() => {
   const shareable = ['Martial Talent', 'Wild Talent', 'Science Talent', 'Engineering Talent', 'Aesthetic Talent',
     'Communication Talent', 'Performance Talent', 'Soul Talent', 'Blessed Talent', 'Psychic Talent',
-    'Covert Talent', 'Sticky Fingers']
+    'Covert Talent', 'Sticky Fingers', 'Money Talent']
   return intersection(allEffects.value, shareable).map(x => ({ flavor: x }))
 })
 onMounted(() => useTooltips())
