@@ -5,6 +5,17 @@
     </h2>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
+        21 December 2021
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>10 new perks from Merior DLC</li>
+        <li>36 new user submitted Characters.</li>
+        <li>5 new user submitted Worlds.</li>
+        <li>Bugfixes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
         20 December 2021
       </h3>
       <ul class="list-decimal list-inside">

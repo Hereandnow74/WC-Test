@@ -180,7 +180,8 @@ const perkToSave = reactive({
 })
 
 const displayedCost = computed(() => {
-  return perkToSave.cost >= 11111 ? `${perkToSave.cost / 11111} T11 ticket` : perkToSave.cost
+  const s = perkToSave.cost / 11111 === 0 || perkToSave.cost / 11111 >= 2 ? 's' : ''
+  return perkToSave.cost >= 11111 || props.perk.cost >= 11111 ? `${perkToSave.cost / 11111} T11 ticket${s}` : perkToSave.cost
 })
 
 function filterObject(obj: any) {

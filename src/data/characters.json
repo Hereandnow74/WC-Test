@@ -16514,7 +16514,7 @@
     "w": "Black Lagoon",
     "b": [
       "F",
-      "C"
+      "C", "md"
     ]
   },
   {
@@ -17529,7 +17529,10 @@
     "t": 5,
     "i": "sample_668855d50002dcddbfaf8ed2d5a9b064.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/1723181",
-    "w": "Bleach"
+    "w": "Bleach",
+    "b": [
+      "M"
+    ]
   },
   {
     "u": 281,
@@ -17991,7 +17994,7 @@
     "w": "Bleach",
     "b": [
       "F",
-      "C"
+      "C", "dc", "hl"
     ]
   },
   {
@@ -18112,7 +18115,7 @@
     "w": "Bleach",
     "b": [
       "F",
-      "C"
+      "C", "id"
     ]
   },
   {
@@ -18136,7 +18139,7 @@
     "w": "Bleach",
     "b": [
       "F",
-      "C"
+      "C", "cf"
     ]
   },
   {
@@ -18184,7 +18187,7 @@
     "w": "Bleach",
     "b": [
       "F",
-      "C"
+      "C", "hl", "tm"
     ]
   },
   {
@@ -28755,6 +28758,7 @@
     "n": "Jasmine",
     "t": 2,
     "i": "sample_c75956538a3dc93bb3f7017c65cbb406.jpg",
+    "in": "https://i.imgur.com/njsK6sq.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/13485579",
     "w": "Disney",
     "b": [
@@ -28767,6 +28771,7 @@
     "n": "Megara",
     "t": 2,
     "i": "sample_6b63610e38dc54c916f97e46e5ff83c4.jpg",
+    "in": "https://pictures.hentai-foundry.com/p/Polyle/626774/Polyle-626774-COMM_-_Megara_Used.png",
     "s": "https://chan.sankakucomplex.com/post/show/10907121",
     "w": "Disney",
     "b": [
@@ -36504,7 +36509,7 @@
     "w": "Dragonball series",
     "b": [
       "F",
-      "C"
+      "C", "pc"
     ]
   },
   {
@@ -36525,10 +36530,11 @@
     "t": 6,
     "i": "sample_fd90d6040c651e88d0dce758de143be3.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/16843306",
+    "in": "https://cdn.donmai.us/sample/e3/a6/__son_goku_and_bulma_dragon_ball_and_1_more_drawn_by_hirama__sample-e3a67f433d6f96a8c6316ee06ca32c67.jpg",
     "w": "Dragonball series",
     "b": [
       "F",
-      "C"
+      "C", "cl", "sn", "en"
     ]
   },
   {
@@ -51281,6 +51287,7 @@
     "n": "Cordelia",
     "t": 4,
     "i": "abd6fe7b6c93992bfc73b348ed39caf1.jpg",
+    "in": "http://pictures.hentai-foundry.com/w/wander/545429/wander-545429-Cordelia.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/19390270",
     "w": "Fire Emblem",
     "b": [
@@ -63776,7 +63783,7 @@
     "w": "Harry Potter",
     "b": [
       "F",
-      "C"
+      "C","wh"
     ]
   },
   {
@@ -63788,7 +63795,7 @@
     "w": "Harry Potter",
     "b": [
       "F",
-      "C"
+      "C","wh"
     ]
   },
   {
@@ -63800,7 +63807,7 @@
     "w": "Harry Potter",
     "b": [
       "F",
-      "C"
+      "C", "wh"
     ]
   },
   {
@@ -63812,7 +63819,7 @@
     "w": "Harry Potter",
     "b": [
       "F",
-      "C"
+      "C","wh"
     ]
   },
   {
@@ -63824,7 +63831,7 @@
     "w": "Harry Potter",
     "b": [
       "F",
-      "C"
+      "C","wh"
     ]
   },
   {
@@ -63836,7 +63843,7 @@
     "w": "Harry Potter",
     "b": [
       "F",
-      "C"
+      "C","wh"
     ]
   },
   {
@@ -66800,8 +66807,10 @@
     "n": "Astrid Hofferson",
     "t": 3,
     "i": "sample_d643d1db102c383e308dacb0f419a652.jpg",
+    "in": "https://lotus.paheal.net/_images/1544e93344a50a5de10ac0a8a012a434/1379269%20-%20Astrid_Hofferson%20How_to_Train_Your_Dragon%20Polyle%20drago_bludvist.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/18870556",
-    "w": "How to Train Your Dragon"
+    "w": "How to Train Your Dragon",
+    "b": ["F"]
   },
   {
     "u": 11018,
@@ -73095,7 +73104,11 @@
     "t": 4,
     "i": "sample_46298a3abd6ba9622091348b9512ff3b.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/5181027",
-    "w": "KonoSuba"
+    "w": "KonoSuba",
+    "b": [
+      "F",
+      "C"
+    ]
   },
   {
     "u": 5950,
@@ -73149,7 +73162,11 @@
     "t": 5,
     "i": "14b55884544e063c3c566240e6e34054.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/18320092",
-    "w": "KonoSuba"
+    "w": "KonoSuba",
+    "b": [
+      "F",
+      "C"
+    ]
   },
   {
     "u": 5955,
@@ -73195,7 +73212,7 @@
     "s": "https://chan.sankakucomplex.com/post/show/18458985",
     "w": "KonoSuba",
     "b": [
-      "F"
+      "F", "C", "rs", "hl", "ml", "gd"
     ]
   },
   {
@@ -73339,7 +73356,8 @@
     "u": 3633,
     "n": "Olga Discordia",
     "t": 6,
-    "i": "",
+    "i": "__olga_discordia_kuroinu_kedakaki_seijo_wa_hakudaku_ni_somaru__sample-f8798dc8fd71ebb31e7e048ea9d837bd.jpg",
+    "in": "https://cdn.donmai.us/original/69/3c/__olga_discordia_kuroinu_kedakaki_seijo_wa_hakudaku_ni_somaru_drawn_by_lexaiduer__693c92bb79c4e3e6242d36dd06c2b0f4.jpg",
     "w": "Kuroinu"
   },
   {
@@ -82976,6 +82994,7 @@
     "t": 4,
     "i": "sample_417c4e099bdb1addb720261b491100cf.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/14730093",
+    "in": "https://lotus.paheal.net/_images/aa8c6c7429a032866725990025120c77/4358792%20-%20Bowser%20Koopa%20Princess_Peach%20Rizdraws%20Super_Mario_Bros..jpg",
     "w": "Mario series",
     "b": [
       "F",
@@ -85964,9 +85983,9 @@
   {
     "u": 6026,
     "n": "Hanekawa Tsubasa",
-    "t": 6,
-    "i": "c51ed143c1237c5f251bd29b49a1b275.jpg",
-    "s": "https://chan.sankakucomplex.com/post/show/6817673",
+    "t": 5,
+    "i": "https://i.imgur.com/r9pJ8FVm.png",
+    "s": "https://danbooru.donmai.us/posts/4152321",
     "w": "Monogatari",
     "b": [
       "F",
@@ -93193,7 +93212,7 @@
     "w": "Naruto",
     "b": [
       "F",
-      "C"
+      "C", "hp", "bj"
     ]
   },
   {
@@ -96654,7 +96673,7 @@
     "w": "One Piece",
     "b": [
       "F",
-      "C"
+      "C","lm"
     ]
   },
   {
@@ -96666,7 +96685,7 @@
     "w": "One Piece",
     "b": [
       "F",
-      "C"
+      "C", "pi", "pl", "mt", "pc", "az"
     ]
   },
   {
@@ -96858,7 +96877,7 @@
     "s": "https://i.kym-cdn.com/photos/images/facebook/001/704/087/0cd.jpg",
     "w": "One Punch Man",
     "b": [
-      "M"
+      "M", "sp"
     ]
   },
   {
@@ -100153,6 +100172,7 @@
     "n": "Marnie",
     "t": 5,
     "i": "ddld3t5_6d3900e1_409e_42b5_bcae_108156e92c3f.jpg",
+    "in": "http://pictures.hentai-foundry.com/y/Yellowroom/759429/Yellowroom-759429-Marnies_Cute_Smile__Pokemon_.jpg",
     "s": "https://www.deviantart.com/axsens/art/Marnie-821943689",
     "w": "Pokemon",
     "b": [
@@ -102668,7 +102688,7 @@
     "u": 12941,
     "n": "Ralts",
     "t": 4,
-    "i": "",
+    "i": "https://i.imgur.com/mhdhoDz.png",
     "w": "Pokemon Expansion"
   },
   {
@@ -108425,7 +108445,7 @@
     "u": 7338,
     "n": "Hiyori",
     "t": 6,
-    "i": "",
+    "i": "https://i.imgur.com/KN1I0Cdm.jpg",
     "w": "Princess Connect! Re:Dive",
     "b": [
       "F",
@@ -108437,7 +108457,7 @@
     "u": 7339,
     "n": "Rei",
     "t": 6,
-    "i": "",
+    "i": "https://i.imgur.com/30diUCIm.png",
     "w": "Princess Connect! Re:Dive",
     "b": [
       "F",
@@ -108449,7 +108469,7 @@
     "u": 7340,
     "n": "Yui",
     "t": 6,
-    "i": "",
+    "i": "https://i.imgur.com/ARQYnc6m.png",
     "w": "Princess Connect! Re:Dive",
     "b": [
       "F",
@@ -111440,7 +111460,8 @@
     "t": 4,
     "i": "1mwt7zr.jpg",
     "s": "https://i.imgur.com/1MWT7ZR.jpg",
-    "w": "Rising of the Shield Hero"
+    "w": "Rising of the Shield Hero",
+    "b": ["F"]
   },
   {
     "u": 4938,
@@ -111459,7 +111480,8 @@
     "t": 4,
     "i": "no_nariagari_melty_q_melromarc_miko_5641772.jpeg",
     "s": "http://img10.joyreactor.cc/pics/post/Anime-Tate-no-Yuusha-no-Nariagari-Melty-Q-Melromarc-miko-5641772.jpeg",
-    "w": "Rising of the Shield Hero"
+    "w": "Rising of the Shield Hero",
+    "b": ["F"]
   },
   {
     "u": 4940,
@@ -111467,7 +111489,8 @@
     "t": 4,
     "i": "edd83ffcd926ecdd39dd4b88b68e9027.jpg",
     "s": "https://i.pinimg.com/originals/ed/d8/3f/edd83ffcd926ecdd39dd4b88b68e9027.jpg",
-    "w": "Rising of the Shield Hero"
+    "w": "Rising of the Shield Hero",
+    "b": ["F"]
   },
   {
     "u": 4941,
@@ -111475,7 +111498,8 @@
     "t": 4,
     "i": "malty_light_novel.png",
     "s": "https://vignette.wikia.nocookie.net/the-rising-of-the-shield-hero/images/8/8b/Malty_Light_Novel.png/revision/latest?cb=20190515121432",
-    "w": "Rising of the Shield Hero"
+    "w": "Rising of the Shield Hero",
+    "b": ["F"]
   },
   {
     "u": 4942,
@@ -111483,7 +111507,8 @@
     "t": 5,
     "i": "",
     "s": "https://66.media.tumblr.com/089aacaf2c35102473eb918e24706d68/tumblr_pts1i4q9hO1tm1dgio1_400.png",
-    "w": "Rising of the Shield Hero"
+    "w": "Rising of the Shield Hero",
+    "b": ["F"]
   },
   {
     "u": 4943,
@@ -111507,7 +111532,8 @@
     "t": 3,
     "i": "e8417b98f29f45827f8020e2827029ec.jpg",
     "s": "https://e621.net/post/show/1719589",
-    "w": "Robin Hood"
+    "w": "Robin Hood",
+    "b": ["F"]
   },
   {
     "u": 12600,
@@ -112524,7 +112550,7 @@
     "b": [
       "F",
       "C",
-      "P"
+      "P", "im"
     ]
   },
   {
@@ -113624,7 +113650,8 @@
     "t": 5,
     "i": "sample_df1a01823ceaaa075c1be11a868ead8e.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/4308141",
-    "w": "Sekirei"
+    "w": "Sekirei",
+    "b": ["F"]
   },
   {
     "u": 11020,
@@ -113632,7 +113659,8 @@
     "t": 5,
     "i": "sample_779706263023f4896ebe2f27872ccad9.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/4308747",
-    "w": "Sekirei"
+    "w": "Sekirei",
+    "b": ["F"]
   },
   {
     "u": 11021,
@@ -113640,7 +113668,8 @@
     "t": 5,
     "i": "sample_2358cc59a58fdc4a89beaaae3905bc5c.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/4308562",
-    "w": "Sekirei"
+    "w": "Sekirei",
+    "b": ["F"]
   },
   {
     "u": 11022,
@@ -113648,7 +113677,8 @@
     "t": 4,
     "i": "sample_a6e0e6bddb4d142ae9dc443eac35c8e5.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/4308149",
-    "w": "Sekirei"
+    "w": "Sekirei",
+    "b": ["F"]
   },
   {
     "u": 11023,
@@ -113656,7 +113686,8 @@
     "t": 4,
     "i": "sample_9cd8732162e1d3ec89e49785cc7a7ff9.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/4307941",
-    "w": "Sekirei"
+    "w": "Sekirei",
+    "b": ["F"]
   },
   {
     "u": 11024,
@@ -113664,7 +113695,8 @@
     "t": 6,
     "i": "sample_6a05365bc8afed09d0a75fef135a79c9.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/4307990",
-    "w": "Sekirei"
+    "w": "Sekirei",
+    "b": ["F"]
   },
   {
     "u": 11025,
@@ -113672,7 +113704,8 @@
     "t": 5,
     "i": "sample_5baf56246cd3987c047d32ea03b4f5cd.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/4304500",
-    "w": "Sekirei"
+    "w": "Sekirei",
+    "b": ["F"]
   },
   {
     "u": 11026,
@@ -113680,7 +113713,8 @@
     "t": 6,
     "i": "datf4gp_9dfb1512_0d0e_48d7_a06b_9bc789894baa.png",
     "s": "https://www.deviantart.com/shinoharaa/art/Kusano-654076249",
-    "w": "Sekirei"
+    "w": "Sekirei",
+    "b": ["F"]
   },
   {
     "u": 11027,
@@ -113688,7 +113722,8 @@
     "t": 5,
     "i": "3wcqlvzk50a11.jpg",
     "s": "https://i.redd.it/3wcqlvzk50a11.jpg",
-    "w": "Sekirei"
+    "w": "Sekirei",
+    "b": ["F"]
   },
   {
     "u": 11028,
@@ -113696,7 +113731,8 @@
     "t": 5,
     "i": "sample_392eedb74ce6e518f503fb87d0931057.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/3480615",
-    "w": "Sekirei"
+    "w": "Sekirei",
+    "b": ["F"]
   },
   {
     "u": 11029,
@@ -113704,7 +113740,8 @@
     "t": 6,
     "i": "akitsu_by_shinoharaa_d8tldf1_pre.jpg",
     "s": "https://www.deviantart.com/shinoharaa/art/Akitsu-533435437",
-    "w": "Sekirei"
+    "w": "Sekirei",
+    "b": ["F", "me"]
   },
   {
     "u": 11030,
@@ -113712,7 +113749,8 @@
     "t": 4,
     "i": "toyotama.png",
     "s": "https://vignette.wikia.nocookie.net/sekirei/images/1/1f/Toyotama.png/revision/latest?cb=20100907151225",
-    "w": "Sekirei"
+    "w": "Sekirei",
+    "b": ["F"]
   },
   {
     "u": 11031,
@@ -113720,7 +113758,8 @@
     "t": 5,
     "i": "yashima_sekirei.png",
     "s": "https://vignette.wikia.nocookie.net/sekirei/images/0/02/Yashima_sekirei.png/revision/latest?cb=20100831143629",
-    "w": "Sekirei"
+    "w": "Sekirei",
+    "b": ["F"]
   },
   {
     "u": 11032,
@@ -113739,7 +113778,8 @@
     "t": 4,
     "i": "kochou.jpg",
     "s": "https://vignette.wikia.nocookie.net/sekirei/images/3/3e/Kochou.jpg/revision/latest?cb=20100907181558",
-    "w": "Sekirei"
+    "w": "Sekirei",
+    "b": ["F"]
   },
   {
     "u": 11034,
@@ -113758,7 +113798,8 @@
     "t": 2,
     "i": "sample_0a03f0e716777646f39a06103dc29024.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/2596926",
-    "w": "Sekirei"
+    "w": "Sekirei",
+    "b": ["F"]
   },
   {
     "u": 11036,
@@ -113766,7 +113807,8 @@
     "t": 5,
     "i": "sample_5859a3860797286ca7a5bfe92a0b1e7c.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/4304498",
-    "w": "Sekirei"
+    "w": "Sekirei",
+    "b": ["F"]
   },
   {
     "u": 11037,
@@ -113774,7 +113816,8 @@
     "t": 4,
     "i": "d9w0ydg_8736460e_9fe4_4893_925c_561a47364cd2.jpg",
     "s": "https://www.deviantart.com/cit-kun/art/Oriha-101-597987844",
-    "w": "Sekirei"
+    "w": "Sekirei",
+    "b": ["F"]
   },
   {
     "u": 11038,
@@ -113782,7 +113825,8 @@
     "t": 5,
     "i": "1473images",
     "s": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSCyoHVXgfwa_6UvAgyUAorb-hYBLx41AF8vPuQuIjFNe6LsPIc",
-    "w": "Sekirei"
+    "w": "Sekirei",
+    "b": ["F"]
   },
   {
     "u": 11039,
@@ -113790,7 +113834,8 @@
     "t": 4,
     "i": "9180_1244912695.jpg",
     "s": "https://rei.animecharactersdatabase.com/uploads/chars/9180-1244912695.jpg",
-    "w": "Sekirei"
+    "w": "Sekirei",
+    "b": ["F"]
   },
   {
     "u": 11040,
@@ -113798,7 +113843,8 @@
     "t": 1,
     "i": "dcmp1hd_2007b3da_2f17_4e97_90fa_e8aee5950e60.png",
     "s": "https://www.deviantart.com/shinoharaa/art/Chiho-Hidaka-763713985",
-    "w": "Sekirei"
+    "w": "Sekirei",
+    "b": ["F"]
   },
   {
     "u": 11041,
@@ -113817,7 +113863,8 @@
     "t": 4,
     "i": "yahan_profile.jpg",
     "s": "https://vignette.wikia.nocookie.net/sekirei/images/5/5c/Yahan_Profile.jpg/revision/latest?cb=20120811063356",
-    "w": "Sekirei"
+    "w": "Sekirei",
+    "b": ["F"]
   },
   {
     "u": 11043,
@@ -113825,7 +113872,8 @@
     "t": 4,
     "i": "ch27_2.jpg",
     "s": "https://vignette.wikia.nocookie.net/sekirei/images/6/6a/Ch27-2.jpg/revision/latest?cb=20130317202333",
-    "w": "Sekirei"
+    "w": "Sekirei",
+    "b": ["F"]
   },
   {
     "u": 11044,
@@ -113833,7 +113881,8 @@
     "t": 2,
     "i": "dddx8bq_23134eed_c7de_43b2_98f8_25635da1e983.jpg",
     "s": "https://www.deviantart.com/zilla87/art/Takami-Sahashi-809445734",
-    "w": "Sekirei"
+    "w": "Sekirei",
+    "b": ["F"]
   },
   {
     "u": 11045,
@@ -113841,7 +113890,8 @@
     "t": 4,
     "i": "kujou.jpg",
     "s": "https://vignette.wikia.nocookie.net/sekirei/images/d/d9/Kujou.jpg/revision/latest?cb=20100606162524",
-    "w": "Sekirei"
+    "w": "Sekirei",
+    "b": ["F"]
   },
   {
     "u": 11046,
@@ -113849,7 +113899,8 @@
     "t": 5,
     "i": "sample_ffe3c26be4e610ff298e78545cd258e9.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/4307974",
-    "w": "Sekirei"
+    "w": "Sekirei",
+    "b": ["F"]
   },
   {
     "u": 11047,
@@ -113857,7 +113908,8 @@
     "t": 4,
     "i": "kuruse_full_body.jpg",
     "s": "https://vignette.wikia.nocookie.net/sekirei/images/5/5e/Kuruse-full_body.jpg/revision/latest?cb=20150823203935",
-    "w": "Sekirei"
+    "w": "Sekirei",
+    "b": ["F"]
   },
   {
     "u": 11048,
@@ -113865,7 +113917,8 @@
     "t": 4,
     "i": "shi.png",
     "s": "https://vignette.wikia.nocookie.net/sekirei/images/c/c6/Shi.png/revision/latest?cb=20100905133559",
-    "w": "Sekirei"
+    "w": "Sekirei",
+    "b": ["F"]
   },
   {
     "u": 11049,
@@ -113873,7 +113926,8 @@
     "t": 4,
     "i": "kaie.jpg",
     "s": "https://vignette.wikia.nocookie.net/sekirei/images/9/9b/Kaie.jpg/revision/latest?cb=20120505193257",
-    "w": "Sekirei"
+    "w": "Sekirei",
+    "b": ["F"]
   },
   {
     "u": 11050,
@@ -113881,7 +113935,8 @@
     "t": 4,
     "i": "d61qg43_c77b34f8_a362_4721_bd14_45052fe73d8e.jpg",
     "s": "https://www.deviantart.com/luke88cb/art/Sekirei-no-87-Kaho-Fast-Color-365710611",
-    "w": "Sekirei"
+    "w": "Sekirei",
+    "b": ["F"]
   },
   {
     "u": 11051,
@@ -113889,7 +113944,8 @@
     "t": 4,
     "i": "namijifirstappear.jpeg",
     "s": "https://vignette.wikia.nocookie.net/sekirei/images/b/b9/NamijiFirstAppear.jpeg/revision/latest?cb=20180621070336",
-    "w": "Sekirei"
+    "w": "Sekirei",
+    "b": ["F"]
   },
   {
     "u": 11052,
@@ -113908,7 +113964,8 @@
     "t": 4,
     "i": "kuzuri_23829.jpg",
     "s": "https://www.anime-planet.com/images/characters/kuzuri-23829.jpg?t=1415839353",
-    "w": "Sekirei"
+    "w": "Sekirei",
+    "b": ["F"]
   },
   {
     "u": 11054,
@@ -113916,7 +113973,8 @@
     "t": 4,
     "i": "ichiya.png",
     "s": "https://vignette.wikia.nocookie.net/sekirei/images/4/4e/Ichiya.png/revision/latest?cb=20100907151143",
-    "w": "Sekirei"
+    "w": "Sekirei",
+    "b": ["F"]
   },
   {
     "u": 11055,
@@ -113924,7 +113982,8 @@
     "t": 4,
     "i": "0004images",
     "s": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS8VFiZJiddIKVMR3IUptLv8OPPQqAVmqmUW9_q1PYMZtN0GCLH",
-    "w": "Sekirei"
+    "w": "Sekirei",
+    "b": ["F"]
   },
   {
     "u": 11056,
@@ -113932,7 +113991,8 @@
     "t": 4,
     "i": "himeko.png",
     "s": "https://vignette.wikia.nocookie.net/sekirei/images/3/32/Himeko.png/revision/latest?cb=20100531232350",
-    "w": "Sekirei"
+    "w": "Sekirei",
+    "b": ["F"]
   },
   {
     "u": 11057,
@@ -113962,7 +114022,8 @@
     "t": 4,
     "i": "hatae.png",
     "s": "https://vignette.wikia.nocookie.net/sekirei/images/1/1d/Hatae.png/revision/latest?cb=20130928102109",
-    "w": "Sekirei"
+    "w": "Sekirei",
+    "b": ["F"]
   },
   {
     "u": 11060,
@@ -113981,7 +114042,8 @@
     "t": 4,
     "i": "",
     "s": "https://www.deviantart.com/altertwentytwo/art/commission-Kaiha-The-Fatal-Carver-497052751?q=gallery:AlterTwentyTwo/26959730&qo=15",
-    "w": "Sekirei"
+    "w": "Sekirei",
+    "b": ["F"]
   },
   {
     "u": 9327,
@@ -116009,7 +116071,7 @@
     "d": "Servants - Caster",
     "b": [
       "F",
-      "C"
+      "C", "me", "di"
     ]
   },
   {
@@ -118856,6 +118918,7 @@
     "t": 8,
     "i": "sample_8a23bf155012b905337da5c241eee553.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/4335168",
+    "in": "https://cdn.donmai.us/sample/6a/81/__elizabeth_persona_and_1_more_drawn_by_afrobull__sample-6a81bd4fb4ad8e078dacdd0ce29bb89d.jpg",
     "w": "Shin Megami Tensei",
     "b": [
       "F",
@@ -118999,6 +119062,7 @@
     "t": 6,
     "i": "ee8a20c537251c33806f33b72d655160.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/4600330",
+    "in": "https://lotus.paheal.net/_images/44670e5bfe7699fb9698464e34031119/2334589%20-%20Megami_Tensei%20Naoto_Shirogane%20Noill%20Persona_4.jpg",
     "w": "Shin Megami Tensei",
     "b": [
       "F",
@@ -119025,6 +119089,7 @@
     "t": 8,
     "i": "b4b7c844fd47ce7a405a22c515808791.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/2864213",
+    "in": "http://pictures.hentai-foundry.com/m/MinaCream/638994/MinaCream-638994-382_-_Margaret_P4.jpg",
     "w": "Shin Megami Tensei",
     "b": [
       "F",
@@ -119064,6 +119129,7 @@
     "t": 2,
     "i": "sample_ca09b8ed88e61813f406fc9ac88c6b34.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/5593169",
+    "in": "http://pictures.hentai-foundry.com/a/Afrobull/686892/Afrobull-686892-kawakami.png",
     "w": "Shin Megami Tensei",
     "b": [
       "F",
@@ -119077,6 +119143,7 @@
     "t": 2,
     "i": "dio__sample_5fcb7abfef6e40a1d10ea3a218428fd7.jpg",
     "s": "https://danbooru.donmai.us/posts/3998604",
+    "in": "http://pictures.hentai-foundry.com/m/MinaCream/938536/MinaCream-938536-381_Shadow_Sae_Niijima_Persona_5.jpg",
     "w": "Shin Megami Tensei",
     "b": [
       "F",
@@ -119090,6 +119157,7 @@
     "t": 2,
     "i": "sample_b9b245656aa90da36f594ef059a25a85.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/18148822",
+    "in": "http://pictures.hentai-foundry.com/j/jiro-knightraider/631670/jiro-knightraider-631670-GOTM7_ohya_hotel_part_2.jpg",
     "w": "Shin Megami Tensei",
     "b": [
       "F",
@@ -119103,6 +119171,7 @@
     "t": 2,
     "i": "c26f5fd5b306ae213e849ec68b2a81c1.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/11020405",
+    "in": "https://lotus.paheal.net/_images/36708f48ce9df575f980fdb5df9c6748/4140717%20-%20Lainart%20Megami_Tensei%20Persona_5%20Tae_Takemi.jpg",
     "w": "Shin Megami Tensei",
     "b": [
       "F",
@@ -119116,6 +119185,7 @@
     "t": 2,
     "i": "sample_2042eccf0887c4eedd2e8fd3efa9bc1b.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/6962924",
+    "in": "https://i.redd.it/lkhx0vluo8j61.jpg",
     "w": "Shin Megami Tensei",
     "b": [
       "F",
@@ -119129,6 +119199,7 @@
     "t": 3,
     "i": "sample_87413c4b59042b0f97071b1434ba2676.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/12813291",
+    "in": "https://lotus.paheal.net/_images/d6766fb073a227d39c16911c7582a1a8/3993545%20-%20Chihaya_Mifune%20Megami_Tensei%20Persona_5%20RandomBoobGuy.png",
     "w": "Shin Megami Tensei",
     "b": [
       "F",
@@ -119155,6 +119226,7 @@
     "t": 6,
     "i": "sample_af66d0445933307c281c6e72ee1d7562.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/7594315",
+    "in": "https://peach.paheal.net/_images/4fba463f9f65d9d0a7c91047991d84e9/3446742%20-%20Afrobull%20Makoto_Niijima%20Megami_Tensei%20Persona_5.png",
     "w": "Shin Megami Tensei",
     "b": [
       "F",
@@ -119168,6 +119240,7 @@
     "t": 6,
     "i": "sample_9c39bbbd443688732aa854e7fd58f59c.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/14209146",
+    "in": "http://pictures.hentai-foundry.com/e/erotibot/567192/erotibot-567192-So_Happy_You_Came.jpg",
     "w": "Shin Megami Tensei",
     "b": [
       "F",
@@ -119181,6 +119254,7 @@
     "t": 6,
     "i": "sample_b1449d01156bd763d9eac9c06e6d8d2e.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/18077491",
+    "in": "https://tulip.paheal.net/_images/582af1138fe29c752d91a3174a055569/3623010%20-%20Futaba_Sakura%20Mark_Gavatino%20Megami_Tensei%20Persona_5.jpg",
     "w": "Shin Megami Tensei",
     "b": [
       "F",
@@ -119194,6 +119268,7 @@
     "t": 6,
     "i": "f4f266a4e140a350e66b8f8937b508a3.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/6148551",
+    "in": "https://lotus.paheal.net/_images/4ee227d6deb8ab39a676c3409946d504/2770546%20-%20Ann_Takamaki%20Deep_Rising%20Persona_5.jpg",
     "w": "Shin Megami Tensei",
     "b": [
       "F",
@@ -119207,6 +119282,7 @@
     "t": 6,
     "i": "107f8691887bdb97caf19bdc0790170e.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/20472977",
+    "in": "http://pictures.hentai-foundry.com/n/NekoNoTe/700908/NekoNoTe-700908-Kasumi_Yoshizawa.jpg",
     "w": "Shin Megami Tensei",
     "b": [
       "F",
@@ -138390,7 +138466,7 @@
     "w": "Azeroth (Warcraft)",
     "b": [
       "F",
-      "C"
+      "C", "me"
     ],
     "d": "Warcraft"
   },
@@ -140143,8 +140219,10 @@
     "n": "Sister of Battle",
     "t": 4,
     "i": "sample_6d060a828a56f6d812cd03c75c77e3f8.jpg",
+    "in": "https://img2.rule34.us/images/2f/a4/2fa44ee5f7b843debdcc9260ad8ba1cc.png",
     "s": "https://chan.sankakucomplex.com/post/show/1211595",
-    "w": "Warhammer 40K"
+    "w": "Warhammer 40K",
+    "b": [ "F", "cl" ]
   },
   {
     "u": 11599,
@@ -142066,7 +142144,8 @@
     "t": 5,
     "i": "dc2cm4o_7288bc2e_bb6e_4aca_99c2_6f7dc42de533.png",
     "s": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6b232c6b-913f-4340-8f47-1f0f87e50c62/dc2cm4o-7288bc2e-bb6e-4aca-99c2-6f7dc42de533.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzZiMjMyYzZiLTkxM2YtNDM0MC04ZjQ3LTFmMGY4N2U1MGM2MlwvZGMyY200by03Mjg4YmMyZS1iYjZlLTRhY2EtOTljMi02ZjdkYzQyZGU1MzMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.gnL3ZqgvxFXwpPJtr-HSFpoceFOL90WPRXsWu1EolX8",
-    "w": "Worm"
+    "w": "Worm",
+    "b": [ "F", "mt", "sp" ]
   },
   {
     "u": 4652,
@@ -142074,7 +142153,8 @@
     "t": 7,
     "i": "khepri_metamorphosis.jpg",
     "s": "https://vignette.wikia.nocookie.net/parahumans/images/6/64/Khepri_metamorphosis.jpg/revision/latest/scale-to-width-down/185?cb=20170319211842",
-    "w": "Worm"
+    "w": "Worm",
+    "b": [ "F", "mp", "mt", "sp" ]
   },
   {
     "u": 4653,
@@ -142082,7 +142162,8 @@
     "t": 4,
     "i": "d8277592c660d3f6d24a34489f089e7b.png",
     "s": "http://s7.hostingkartinok.com/uploads/images/2015/01/d8277592c660d3f6d24a34489f089e7b.png",
-    "w": "Worm"
+    "w": "Worm",
+    "b": [ "F" ]
   },
   {
     "u": 4654,
@@ -142090,7 +142171,8 @@
     "t": 3,
     "i": "rachel_streetclothes.jpg",
     "s": "https://vignette.wikia.nocookie.net/parahumans/images/9/93/Rachel_streetclothes.jpg/revision/latest?cb=20171206014336",
-    "w": "Worm"
+    "w": "Worm",
+    "b": [ "F" ]
   },
   {
     "u": 4655,
@@ -142098,7 +142180,8 @@
     "t": 4,
     "i": "imp09752180.jpg",
     "s": "https://vignette.wikia.nocookie.net/parahumans/images/1/1c/IMP09752180.jpg/revision/latest/scale-to-width-down/310?cb=20171105080250",
-    "w": "Worm"
+    "w": "Worm",
+    "b": [ "F" ]
   },
   {
     "u": 4656,
@@ -142106,7 +142189,8 @@
     "t": 4,
     "i": "47ae504ba4309a__rogues_character_inspiration.jpg",
     "s": "https://i.pinimg.com/474x/bd/56/42/bd5642601f9323ef3147ae504ba4309a--rogues-character-inspiration.jpg",
-    "w": "Worm"
+    "w": "Worm",
+    "b": [ "F" ]
   },
   {
     "u": 4657,
@@ -142114,7 +142198,8 @@
     "t": 5,
     "i": "arrowgirl.png",
     "s": "https://vignette.wikia.nocookie.net/parahumans/images/7/72/ArrowGirl.png/revision/latest?cb=20190122190801",
-    "w": "Worm"
+    "w": "Worm",
+    "b": [ "F" ]
   },
   {
     "u": 4658,
@@ -142122,7 +142207,8 @@
     "t": 6,
     "i": "b_b_wards_vista.jpg",
     "s": "https://vignette.wikia.nocookie.net/parahumans/images/c/cb/B_B_Wards_Vista.jpg/revision/latest/scale-to-width-down/204?cb=20170111220536",
-    "w": "Worm"
+    "w": "Worm",
+    "b": [ "F" ]
   },
   {
     "u": 4659,
@@ -142130,7 +142216,8 @@
     "t": 4,
     "i": "tmjr8js7pvb41.png",
     "s": "https://preview.redd.it/tmjr8js7pvb41.png?width=640&crop=smart&auto=webp&s=84834c43b0af8d438286a7e9f5efca3995ef0225",
-    "w": "Worm"
+    "w": "Worm",
+    "b": [ "F" ]
   },
   {
     "u": 4660,
@@ -142138,7 +142225,8 @@
     "t": 5,
     "i": "a141b19b86ce205ba4cd5f20f618d16f.jpg",
     "s": "https://i.pinimg.com/originals/a1/41/b1/a141b19b86ce205ba4cd5f20f618d16f.jpg",
-    "w": "Worm"
+    "w": "Worm",
+    "b": [ "F" ]
   },
   {
     "u": 4661,
@@ -142146,7 +142234,8 @@
     "t": 4,
     "i": "battery_by_lonsheep.jpg",
     "s": "https://vignette.wikia.nocookie.net/parahumans/images/b/b7/Battery_by_lonsheep.jpg/revision/latest/scale-to-width-down/310?cb=20170118210524",
-    "w": "Worm"
+    "w": "Worm",
+    "b": [ "F" ]
   },
   {
     "u": 4662,
@@ -142154,7 +142243,8 @@
     "t": 7,
     "i": "1d7306344f832b3a4fdc2b05b0c471e5.jpg",
     "s": "https://i.pinimg.com/736x/1d/73/06/1d7306344f832b3a4fdc2b05b0c471e5.jpg",
-    "w": "Worm"
+    "w": "Worm",
+    "b": [ "F", "dc", "hl" ]
   },
   {
     "u": 4663,
@@ -142162,7 +142252,8 @@
     "t": 5,
     "i": "victoria_dallonby_by_zearoe.jpg",
     "s": "https://vignette.wikia.nocookie.net/parahumans/images/3/3b/Victoria_Dallonby_by_Zearoe.jpg/revision/latest?cb=20190403113753",
-    "w": "Worm"
+    "w": "Worm",
+    "b": [ "F", "sp" ]
   },
   {
     "u": 4664,
@@ -142170,14 +142261,16 @@
     "t": 4,
     "i": "laserdream.png",
     "s": "https://vignette.wikia.nocookie.net/parahumans/images/e/e6/Laserdream.png/revision/latest?cb=20180607173806",
-    "w": "Worm"
+    "w": "Worm",
+    "b": [ "F" ]
   },
   {
     "u": 4665,
     "n": "Carol Dallon/Brandish",
     "t": 4,
     "i": "",
-    "w": "Worm"
+    "w": "Worm",
+    "b": [ "F" ]
   },
   {
     "u": 4666,
@@ -142185,14 +142278,16 @@
     "t": 4,
     "i": "sarahpelham.png",
     "s": "https://vignette.wikia.nocookie.net/parahumans/images/0/0e/SarahPelham.png/revision/latest/scale-to-width-down/310?cb=20170917043750",
-    "w": "Worm"
+    "w": "Worm",
+    "b": [ "F" ]
   },
   {
     "u": 4667,
     "n": "Dinah Alcott",
     "t": 4,
     "i": "",
-    "w": "Worm"
+    "w": "Worm",
+    "b": [ "F" ]
   },
   {
     "u": 4668,
@@ -142200,14 +142295,16 @@
     "t": 5,
     "i": "berman_outfit_worm_by_wolfofragnarok_d7qfton.jpg",
     "s": "https://vignette.wikia.nocookie.net/parahumans/images/7/7f/Bakuda_non_bomberman_outfit_worm_by_wolfofragnarok-d7qfton.jpg/revision/latest?cb=20160122223220",
-    "w": "Worm"
+    "w": "Worm",
+    "b": [ "F" ]
   },
   {
     "u": 4669,
     "n": "Purity",
     "t": 5,
     "i": "",
-    "w": "Worm"
+    "w": "Worm",
+    "b": [ "F" ]
   },
   {
     "u": 4670,
@@ -142224,14 +142321,16 @@
     "n": "Othala",
     "t": 4,
     "i": "",
-    "w": "Worm"
+    "w": "Worm",
+    "b": [ "F" ]
   },
   {
     "u": 4672,
     "n": "Fenja & Menja",
     "t": 5,
     "i": "",
-    "w": "Worm"
+    "w": "Worm",
+    "b": [ "F" ]
   },
   {
     "u": 4673,
@@ -142239,7 +142338,8 @@
     "t": 4,
     "i": "rune.jpg",
     "s": "https://vignette.wikia.nocookie.net/parahumans/images/c/c2/Rune.jpg/revision/latest/scale-to-width-down/310?cb=20160601191422",
-    "w": "Worm"
+    "w": "Worm",
+    "b": [ "F" ]
   },
   {
     "u": 4674,
@@ -142255,9 +142355,7 @@
     "i": "squealer.jpg",
     "s": "https://vignette.wikia.nocookie.net/parahumans/images/e/e7/Squealer.jpg/revision/latest?cb=20160319063556",
     "w": "Worm",
-    "b": [
-      "F"
-    ]
+    "b": [ "F", "en" ]
   },
   {
     "u": 4676,
@@ -142272,14 +142370,16 @@
     "t": 4,
     "i": "sundancer_worm_by_linaleez_d9s0zso_fullview.jpg",
     "s": "https://www.deviantart.com/linaleez/art/Sundancer-Worm-591271224",
-    "w": "Worm"
+    "w": "Worm",
+    "b": [ "F" ]
   },
   {
     "u": 4678,
     "n": "Genesis",
     "t": 4,
-    "i": "",
-    "w": "Worm"
+    "i": "https://i.imgur.com/ARtS4d0m.jpg",
+    "w": "Worm",
+    "b": [ "F" ]
   },
   {
     "u": 4679,
@@ -142297,7 +142397,8 @@
     "t": 4,
     "i": "faultline_by_lonsheep.jpg",
     "s": "https://vignette.wikia.nocookie.net/parahumans/images/2/2e/Faultline_by_Lonsheep.jpg/revision/latest/scale-to-width-down/310?cb=20171013112704",
-    "w": "Worm"
+    "w": "Worm",
+    "b": [ "F" ]
   },
   {
     "u": 4681,
@@ -142305,7 +142406,8 @@
     "t": 7,
     "i": "labyrinth_by_cyrix.png",
     "s": "https://vignette.wikia.nocookie.net/parahumans/images/4/42/Labyrinth_by_Cyrix.png/revision/latest?cb=20160329204533",
-    "w": "Worm"
+    "w": "Worm",
+    "b": [ "F" ]
   },
   {
     "u": 4682,
@@ -142328,7 +142430,8 @@
     "t": 7,
     "i": "5821c6c45dc182202c2b6bb4cf99e929.jpg",
     "s": "https://i.pinimg.com/originals/58/21/c6/5821c6c45dc182202c2b6bb4cf99e929.jpg",
-    "w": "Worm"
+    "w": "Worm",
+    "b": [ "F" ]
   },
   {
     "u": 4685,
@@ -142336,7 +142439,8 @@
     "t": 4,
     "i": "dovetailfinal.png",
     "s": "https://vignette.wikia.nocookie.net/parahumans/images/4/48/Dovetailfinal.png/revision/latest/scale-to-width-down/310?cb=20180726013001",
-    "w": "Worm"
+    "w": "Worm",
+    "b": [ "F" ]
   },
   {
     "u": 4686,
@@ -142359,14 +142463,16 @@
     "t": 2,
     "i": "yamada_portrait.jpg",
     "s": "https://vignette.wikia.nocookie.net/parahumans/images/e/e8/Yamada_portrait.jpg/revision/latest/scale-to-width-down/310?cb=20171207122319",
-    "w": "Worm"
+    "w": "Worm",
+    "b": [ "F" ]
   },
   {
     "u": 4689,
     "n": "Lady/Emily Piggot (trooper body)",
     "t": 2,
     "i": "",
-    "w": "Worm"
+    "w": "Worm",
+    "b": [ "F" ]
   },
   {
     "u": 4690,
@@ -142384,7 +142490,8 @@
     "t": 8,
     "i": "contessa.jpg",
     "s": "https://vignette.wikia.nocookie.net/parahumans/images/5/52/Contessa.jpg/revision/latest/scale-to-width-down/310?cb=20160610233205",
-    "w": "Worm"
+    "w": "Worm",
+    "b": [ "F" ]
   },
   {
     "u": 4692,
@@ -142392,7 +142499,8 @@
     "t": 1,
     "i": "dr_mother_by_pabel_and_nine.jpg",
     "s": "https://vignette.wikia.nocookie.net/parahumans/images/b/b1/Dr_Mother_by_Pabel_and_Nine.jpg/revision/latest/scale-to-width-down/192?cb=20160601192625",
-    "w": "Worm"
+    "w": "Worm",
+    "b": [ "F" ]
   },
   {
     "u": 4693,
@@ -142407,7 +142515,8 @@
     "t": 8,
     "i": "glastic.jpg",
     "s": "https://vignette.wikia.nocookie.net/parahumans/images/7/7b/Glastic.jpg/revision/latest?cb=20171208193825",
-    "w": "Worm"
+    "w": "Worm",
+    "b": [ "F", "dr" ]
   },
   {
     "u": 4695,
@@ -142421,8 +142530,8 @@
     "u": 4696,
     "n": "String Theory",
     "t": 6,
-    "i": "string_theory.jpg",
-    "s": "https://vignette.wikia.nocookie.net/parahumans/images/b/be/String_Theory.jpg/revision/latest?cb=20161203222030",
+    "i": "https://i.imgur.com/xsz5E0Im.jpg",
+    "s": "https://i.imgur.com/xsz5E0I.jpg",
     "w": "Worm"
   },
   {
@@ -142438,7 +142547,8 @@
     "t": 5,
     "i": "canary_album_poster_by_liujuin.jpg",
     "s": "https://vignette.wikia.nocookie.net/parahumans/images/4/48/Canary_album_poster_by_liujuin.jpg/revision/latest?cb=20180411215325",
-    "w": "Worm"
+    "w": "Worm",
+    "b": [ "F" ]
   },
   {
     "u": 4699,
@@ -142446,15 +142556,17 @@
     "t": 6,
     "i": "shatterbird_by_respicepostte.jpg",
     "s": "https://vignette.wikia.nocookie.net/parahumans/images/8/8d/Shatterbird_by_respicepostte.jpg/revision/latest?cb=20170118231831",
-    "w": "Worm"
+    "w": "Worm",
+    "b": [ "F" ]
   },
   {
     "u": 4700,
     "n": "Bonesaw",
     "t": 6,
-    "i": "",
+    "i": "https://i.imgur.com/EyQURGYm.jpg",
     "s": "https://66.media.tumblr.com/4e13788631573621efba0e686c822171/tumblr_os8qkukYBu1rla9m9o1_r1_400.jpg",
-    "w": "Worm"
+    "w": "Worm",
+    "b": [ "F" ]
   },
   {
     "u": 4701,
@@ -142462,7 +142574,8 @@
     "t": 9,
     "i": "zsg5s4qr.jpg",
     "s": "https://i.imgur.com/ZsG5s4qr.jpg",
-    "w": "Worm"
+    "w": "Worm",
+    "b": [ "F", "hz" ]
   },
   {
     "u": 4702,
@@ -142470,7 +142583,8 @@
     "t": 5,
     "i": "cherish_by_superwhitey.png",
     "s": "https://vignette.wikia.nocookie.net/parahumans/images/9/91/Cherish_by_Superwhitey.png/revision/latest?cb=20191002190939",
-    "w": "Worm"
+    "w": "Worm",
+    "b": [ "F" ]
   },
   {
     "u": 4703,
@@ -142478,7 +142592,8 @@
     "t": 5,
     "i": "burnscar_by_linaleez_dakboka.jpg",
     "s": "https://vignette.wikia.nocookie.net/parahumans/images/c/ce/Burnscar_by_linaleez-dakboka.jpg/revision/latest/scale-to-width-down/310?cb=20180531205311",
-    "w": "Worm"
+    "w": "Worm",
+    "b": [ "F" ]
   },
   {
     "u": 4705,
@@ -142493,7 +142608,8 @@
     "t": 4,
     "i": "hagisderogatory.jpg",
     "s": "https://vignette.wikia.nocookie.net/parahumans/images/1/12/Hagisderogatory.jpg/revision/latest/scale-to-width-down/310?cb=20171008094123",
-    "w": "Worm"
+    "w": "Worm",
+    "b": [ "F" ]
   },
   {
     "u": 4707,
@@ -142501,7 +142617,8 @@
     "t": 4,
     "i": "citrine_by_pericardium.png",
     "s": "https://vignette.wikia.nocookie.net/parahumans/images/d/d8/Citrine_by_Pericardium.png/revision/latest/scale-to-width-down/124?cb=20191029183758",
-    "w": "Worm"
+    "w": "Worm",
+    "b": [ "F" ]
   },
   {
     "u": 4708,
@@ -142509,7 +142626,8 @@
     "t": 4,
     "i": "ambassadors_ligeia.jpg",
     "s": "https://vignette.wikia.nocookie.net/parahumans/images/4/49/Ambassadors_ligeia.jpg/revision/latest/scale-to-width-down/143?cb=20171120081025a",
-    "w": "Worm"
+    "w": "Worm",
+    "b": [ "F" ]
   },
   {
     "u": 4709,
@@ -142576,7 +142694,8 @@
     "t": 4,
     "i": "mouse_protector.png",
     "s": "https://vignette.wikia.nocookie.net/parahumans/images/e/eb/Mouse_Protector.png/revision/latest?cb=20170718012030",
-    "w": "Worm"
+    "w": "Worm",
+    "b": [ "F" ]
   },
   {
     "u": 4717,
@@ -142584,7 +142703,8 @@
     "t": 4,
     "i": "rosary2.png",
     "s": "https://vignette.wikia.nocookie.net/parahumans/images/7/73/Rosary2.png/revision/latest/scale-to-width-down/310?cb=20191207031153",
-    "w": "Worm"
+    "w": "Worm",
+    "b": [ "F" ]
   },
   {
     "u": 4718,
@@ -142615,7 +142735,8 @@
     "n": "Annette Hebert",
     "t": 1,
     "i": "",
-    "w": "Worm"
+    "w": "Worm",
+    "b": [ "F" ]
   },
   {
     "u": 4722,
@@ -142634,7 +142755,8 @@
     "t": 1,
     "i": "p9_tumblr0l4611280_sk.jpg",
     "s": "https://vignette.wikia.nocookie.net/parahumans/images/0/0c/P9-tumblr0l4611280-SK.jpg/revision/latest/scale-to-width-down/205?cb=20171208022242",
-    "w": "Worm"
+    "w": "Worm",
+    "b": [ "F" ]
   },
   {
     "u": 4724,
@@ -142642,7 +142764,8 @@
     "t": 1,
     "i": "emma.jpg",
     "s": "https://vignette.wikia.nocookie.net/parahumans/images/0/02/Emma.jpg/revision/latest/scale-to-width-down/310?cb=20160319060154",
-    "w": "Worm"
+    "w": "Worm",
+    "b": [ "F" ]
   },
   {
     "u": 4725,
@@ -142650,7 +142773,8 @@
     "t": 1,
     "i": "m_clements.jpg",
     "s": "https://vignette.wikia.nocookie.net/parahumans/images/5/5d/M_Clements.jpg/revision/latest/scale-to-width-down/310?cb=20160319060310",
-    "w": "Worm"
+    "w": "Worm",
+    "b": [ "F" ]
   },
   {
     "u": 4726,
@@ -142675,14 +142799,16 @@
     "n": "Anne Barnes",
     "t": 1,
     "i": "",
-    "w": "Worm"
+    "w": "Worm",
+    "b": [ "F" ]
   },
   {
     "u": 4729,
     "n": "Zoe Barnes",
     "t": 1,
     "i": "",
-    "w": "Worm"
+    "w": "Worm",
+    "b": [ "F" ]
   },
   {
     "u": 4730,
@@ -142697,7 +142823,8 @@
     "t": 5,
     "i": "damsel_final.jpg",
     "s": "https://vignette.wikia.nocookie.net/parahumans/images/6/6a/Damsel_final.jpg/revision/latest/scale-to-width-down/310?cb=20171013114048",
-    "w": "Worm"
+    "w": "Worm",
+    "b": [ "F" ]
   },
   {
     "u": 4732,
@@ -142705,7 +142832,8 @@
     "t": 10,
     "i": "d9zmblq_0092b03c_7666_4673_8339_b288dad25b74.jpg",
     "s": "https://www.deviantart.com/damiendraidecht/art/Simurgh-ziz-604023614",
-    "w": "Worm"
+    "w": "Worm",
+    "b": [ "F", "an", "fm", "mp", "di", "cr", "ps", "hz", "hr" ]
   },
   {
     "u": 4733,
@@ -142745,7 +142873,8 @@
     "t": 4,
     "i": "sveta_ward.jpg",
     "s": "https://vignette.wikia.nocookie.net/parahumans/images/7/77/Sveta_Ward.jpg/revision/latest?cb=20180105044918",
-    "w": "Worm"
+    "w": "Worm",
+    "b": [ "F" ]
   },
   {
     "u": 4738,
@@ -142761,7 +142890,8 @@
     "t": 4,
     "i": "painted_lady_by_somn.png",
     "s": "https://vignette.wikia.nocookie.net/parahumans/images/8/88/Painted_Lady_by_Somn.png/revision/latest/scale-to-width-down/310?cb=20171118085408",
-    "w": "Worm"
+    "w": "Worm",
+    "b": [ "F" ]
   },
   {
     "u": 4740,
@@ -142838,7 +142968,8 @@
     "t": 7,
     "i": "goddess_by_raikiri.jpg",
     "s": "https://vignette.wikia.nocookie.net/parahumans/images/8/8d/Goddess_by_raikiri.jpg/revision/latest/scale-to-width-down/310?cb=20190403114307",
-    "w": "Worm"
+    "w": "Worm",
+    "b": [ "F" ]
   },
   {
     "u": 4750,
@@ -142860,7 +142991,8 @@
     "n": "Mama Mathers",
     "t": 6,
     "i": "",
-    "w": "Worm"
+    "w": "Worm",
+    "b": [ "F" ]
   },
   {
     "u": 4755,
@@ -142884,7 +143016,7 @@
     "u": 4757,
     "n": "Etna",
     "t": 5,
-    "i": "",
+    "i": "https://i.imgur.com/TlPvLcfm.png",
     "w": "Worm",
     "b": [
       "F"
@@ -142903,14 +143035,16 @@
     "n": "Damsel III",
     "t": 5,
     "i": "",
-    "w": "Worm"
+    "w": "Worm",
+    "b": [ "F" ]
   },
   {
     "u": 4760,
     "n": "Sidepiece",
     "t": 4,
-    "i": "",
-    "w": "Worm"
+    "i": "https://i.imgur.com/oBDY4Qr.png",
+    "w": "Worm",
+    "b": [ "F" ]
   },
   {
     "u": 4761,
@@ -142930,8 +143064,9 @@
     "u": 4763,
     "n": "Gibbet",
     "t": 4,
-    "i": "",
-    "w": "Worm"
+    "i": "https://i.imgur.com/402AKH6m.jpg",
+    "w": "Worm",
+    "b": [ "M" ]
   },
   {
     "u": 4764,
@@ -143821,6 +143956,7 @@
     "t": 6,
     "i": "sample_0bd37b70215150a90db0cb6edc5a8e49.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/5924753",
+    "in": "https://i.imgur.com/iLPRPxZ.jpg",
     "w": "Legend of Zelda",
     "d": "Breath of the Wild",
     "b": [
@@ -144470,10 +144606,7 @@
     "i": "o_tsukaima__70f586ebd3a081d371c47e217cfeeba3.jpg",
     "s": "https://danbooru.donmai.us/posts/293430/",
     "w": "Zero no Tsukaima",
-    "b": [
-      "F",
-      "C"
-    ]
+    "b": [ "F", "C", "md" ]
   },
   {
     "u": 6220,

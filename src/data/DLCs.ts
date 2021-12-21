@@ -185,6 +185,26 @@ DLCperks.push({
   whitelist: ['Warranty Plan'],
 })
 
+DLCperks.push({
+  dlc: 'DLC by Merior',
+  dlclink: 'https://docs.google.com/document/d/1j9emHb4IWvOTnp13RASTAuINAFuKDMSSQyQ-7ta9sjA/edit#',
+  title: 'Gone And Forgotten',
+  cost: 10,
+  desc: `When you sell a waifu to the Company all traces of them begin to vanish. Others will not notice the waifu's absence and, over the course of a year and a day, memories and physical evidence will change to match that the waifu had never existed at all.
+  <p>At the moment of each sale may opt to have your memories, your other waifus memories, the sold waifu's name on the Company's list of purchasable waifus, and/or any evidence stored in your Sweet Home to be unaffected.</p>
+  `,
+})
+
+DLCperks.push({
+  dlc: 'DLC by Merior',
+  dlclink: 'https://docs.google.com/document/d/1j9emHb4IWvOTnp13RASTAuINAFuKDMSSQyQ-7ta9sjA/edit#',
+  title: 'Pavlov\'s Bell',
+  cost: 10,
+  desc: `A new app installed on your Company device can directly inflict sensation you wish on your waifu's at the touch of a button. The default settings are a sourceless pleasure or pain of any desired intensity but more complex sensations, lack of sensation, or sequences are possible.
+  <p>As a safeguard against abuse, your waifu's cannot perceive any options which induce sensations on herself personally nor act to prevent you from using the app upon her or others. If combined with the Waifu Tracker perk, then a waifu's activities and condition can be programmed to trigger specific sensations.</p>
+  `,
+})
+
 // DLC home perks
 
 export const DLChomes: DLCPerk[] = []
@@ -300,7 +320,99 @@ DLCtalents.push({
   `,
 })
 
+DLCtalents.push({
+  dlc: 'DLC by Merior',
+  dlclink: 'https://docs.google.com/document/d/1j9emHb4IWvOTnp13RASTAuINAFuKDMSSQyQ-7ta9sjA/edit#',
+  title: 'Educational Talent',
+  cost: 5,
+  desc: `You teach. You pass on information, you instruct, and you guide the learning process even with skills that you do not directly possess. Your descriptions and directions are never less clear than you desire and those you give them to will retain the information easily. You can even act as the best possible practice partner so long as you have a vague idea of the role and are physically capable of what is required.
+  <p>Your students cannot learn anything from you that they would be otherwise incapable of picking up given sufficient time and effort. You simply reduce the requirements for both to a tiny fraction of what would otherwise be needed.</p>
+  `,
+})
+
+DLCtalents.push({
+  dlc: 'DLC by Merior',
+  dlclink: 'https://docs.google.com/document/d/1j9emHb4IWvOTnp13RASTAuINAFuKDMSSQyQ-7ta9sjA/edit#',
+  title: 'Inculcation Talent',
+  cost: 10,
+  desc: `You remold. You can progressively change other people's habits, preferences, reflexes, and even more fundamental parts of who they are given time. You do so through social pressure and psychological tricks, even against their will or without their awareness, but supernatural power and the ability to blatantly reward or punish speeds your efforts tremendously. You could use this to help overcome addictions, remove bad habits, become a life coach, or simply be a world-class slave trainer..
+  `,
+  whitelist: ['Communication Talent'],
+})
+
 // DLC Lures
+export const DLClures: DLCPerk[] = []
+
+DLClures.push({
+  dlc: 'DLC by Merior',
+  dlclink: 'https://docs.google.com/document/d/1j9emHb4IWvOTnp13RASTAuINAFuKDMSSQyQ-7ta9sjA/edit#',
+  title: 'Fools Gold',
+  cost: 10,
+  desc: 'Waifus who are motivated by gaining money, for whatever reason, and who have unwillingly been rendered poor are more attracted to you. This attraction is based upon the signs of wealth, conspicuous consumption, and casual spending that they become aware of as shown by you and your waifus.',
+})
+
+DLClures.push({
+  dlc: 'DLC by Merior',
+  dlclink: 'https://docs.google.com/document/d/1j9emHb4IWvOTnp13RASTAuINAFuKDMSSQyQ-7ta9sjA/edit#',
+  title: 'Nine Tenths Law',
+  cost: 5,
+  desc: 'Any individual who you manage to keep imprisoned for three days straight becomes yours. Any means of imprisonment, from holding them trapped in a magic circle to keeping them handcuffed next to you, is valid and you may use multiple means or shift between them as needed. However the victim must be aware of their confinement and any time spent unnaturally insensate (unconscious, drugged asleep, frozen in time, etc) does not count towards the total period of confinement.',
+})
+
+DLClures.push({
+  dlc: 'DLC by Merior',
+  dlclink: 'https://docs.google.com/document/d/1j9emHb4IWvOTnp13RASTAuINAFuKDMSSQyQ-7ta9sjA/edit#',
+  title: 'Stud Service',
+  cost: 10,
+  desc: `You are prime breeding stock, able to sire the best children feasible given a compatible partner, which is something that potential partners sense... and like. The more proof of your fertility, virility, or the quality of your offspring that a potential waifu witnesses the more the image of submissively being bred by you infects and inflames their fantasies. Those who have had offspring, or who are \'hearing their biological clock ticking\', are particularly susceptible.
+  <p>You can control your fertility, from complete infertility to guaranteed impregnation. With practice, you can influence your offspring at conception to possess or lack traits which it would be possible for them to inherit.</p>
+  `,
+})
+
+// Other Controls
+export const DLCotherControls: DLCPerk[] = []
+
+DLCotherControls.push({
+  dlc: 'DLC by Merior',
+  dlclink: 'https://docs.google.com/document/d/1j9emHb4IWvOTnp13RASTAuINAFuKDMSSQyQ-7ta9sjA/edit#',
+  title: 'Signed and Sealed',
+  cost: 10,
+  desc: `There are more formal approaches to gaining a waifu than a love confession. Taking this perk grants you skill in writing contracts and allows you to include binding terms about her behavior and actions. Once the other party signs the contract freely and the relevant conditions have been met they will be forced to comply with the terms: be that anything from telling you a secret to becoming your slave. Company lawyers will assess the strictness and duration of contracts to determine if this will be considered a 'capture'.
+  <p>If you have taken No Bindings then the contract is only compulsive if the potential waifu understands the clauses explaining what she is agreeing to do and under what circumstances. In this case she must have signed the contract without coercion, but it is not required that she believed the contract was actually valid and binding.</p>
+  `,
+})
+
+DLCotherControls.push({
+  dlc: 'DLC by Merior',
+  dlclink: 'https://docs.google.com/document/d/1j9emHb4IWvOTnp13RASTAuINAFuKDMSSQyQ-7ta9sjA/edit#',
+  title: 'Letter of the Law',
+  cost: 10,
+  desc: `The law is on your side. If a contract you draft using the Signed and Sealed perk is otherwise legal then the compulsive terms are seen as legal and her compliance expected if signed. If you have a binding other than No Bindings then your contracts can compel an individual when it is signed by a parent, spouse, or anyone who could enter a contract on their behalf.
+  `,
+  whitelist: ['Signed and Sealed'],
+})
+
+DLCotherControls.push({
+  dlc: 'DLC by Merior',
+  dlclink: 'https://docs.google.com/document/d/1j9emHb4IWvOTnp13RASTAuINAFuKDMSSQyQ-7ta9sjA/edit#',
+  title: 'Needful Things',
+  cost: 20,
+  desc: `The items, good, and/or services provided by your business are simply better than they otherwise would be and certainly seem more appealing. This enhancement is inversely proportional to the original quality, turning poor goods into average ones but will improve top-of-the-line products only fractionally. It will always make what you offer at least appear to have an edge over products of similar quality from elsewhere.
+  <p>This enhanced appeal raises the likelihood that appropriate forms of theft (including defaulting on loans, shoplifting, or 'dining-and-dashing') takes place, but that can be a benefit. Anyone who commits such an act, and those who knowingly benefit from it such as consuming stolen food, are considered to have agreed to 'experience' the business per Hotel California and become similarly captured.</p>
+  `,
+  whitelist: ['Hotel California'],
+})
+
+DLCotherControls.push({
+  dlc: 'gunmetalblue',
+  title: 'To The Victor Goes The Spoils',
+  cost: 100,
+  desc: `Any capture target killed by you or your retinue is automatically captured. You may choose to sell them to the company at standard rate or return them to life with Warranty Plan.
+  `,
+  whitelist: ['Zenryoku Zenkai', 'Warranty Plan'],
+})
+
+// Lure Expansions
 export const DLClureExpansions: DLCPerk[] = []
 
 DLClureExpansions.push({

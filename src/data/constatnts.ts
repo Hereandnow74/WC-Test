@@ -1,5 +1,5 @@
 import { isArray } from 'lodash-es'
-import { DLCgenericPerks, DLChomes, DLCperks, DLCtalents, DLCheritages, DLClureExpansions, DLCbindings } from './DLCs'
+import { DLCgenericPerks, DLChomes, DLCperks, DLCtalents, DLCheritages, DLClureExpansions, DLCbindings, DLClures, DLCotherControls } from './DLCs'
 import { intensity } from '~/data/intensity'
 import { origin } from '~/data/origin'
 import { bindings, lures, lureExpansions, otherControls } from '~/data/binding'
@@ -92,6 +92,7 @@ export const waifuTags = {
   mr: { tag: 'Monster', short: 'mr', effect: '', desc: '' },
   dg: { tag: 'Dragon', short: 'dg', effect: '', desc: '' },
   gd: { tag: 'God', short: 'gd', effect: '', desc: '' },
+  rs: { tag: 'Resurrection', short: 'rs', effect: '', desc: '' },
   mu: { tag: 'Mutant', short: 'mu', effect: '', desc: '' },
   dh: { tag: 'Demi-human', short: 'dh', effect: '', desc: '' },
   md: { tag: 'Maid', short: 'md', effect: '', desc: '' },
@@ -146,7 +147,7 @@ export const ALL_PERK_TITLES = computed(() => {
   const result = {}
   const all = [intensity, bindings, lures, lureExpansions, otherControls, heritages, homes, defenses, talents, perks,
     genericPerks, waifu_perks, DLCperks, DLChomes, DLCgenericPerks, DLCheritages, DLCtalents, DLClureExpansions,
-    DLCbindings]
+    DLCbindings, DLClures, DLCotherControls]
   all.forEach(p => addTitles(result, p))
   return result
 })

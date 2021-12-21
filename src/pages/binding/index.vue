@@ -87,7 +87,7 @@
     <Desc :desc="lureDesc" class="bg-gray-200 dark:bg-gray-600 max-w-screen-md my-4 mx-auto" />
     <div class="md:column-count-2 lg:column-count-3">
       <PerkCard
-        v-for="lr in lures"
+        v-for="lr in luresDLC"
         :key="lr.title"
         :perk="lr"
         :bg="lureAvailable(lr) ? 'pink-100 dark:pink-900 hover:(pink-200 dark:rose-800)'
@@ -131,7 +131,7 @@
     <Desc :desc="otherDesc" class="bg-gray-200 dark:bg-gray-600 max-w-screen-md my-4 mx-auto" />
     <div class="md:column-count-2 lg:column-count-3 pb-8">
       <PerkCard
-        v-for="other in otherControls"
+        v-for="other in otherDLC"
         :key="other.title"
         :perk="other"
         :bg="lureAvailable(other) ? 'pink-100 dark:pink-900 hover:(pink-200 dark:rose-800)'
@@ -192,7 +192,7 @@ import {
 import { useTooltips } from '~/logic/misc'
 import { chooseLure, lureAvailable, bindingAvailable, chooseBinding, chooseOther, isDLC, pickSimplePerk } from '~/logic'
 import { useStore } from '~/store/store'
-import { DLCbindings, DLClureExpansions } from '~/data/DLCs'
+import { DLCbindings, DLClureExpansions, DLClures, DLCotherControls } from '~/data/DLCs'
 
 const { binding, luresBought, flags, otherPerks } = useStore()
 const [showElements, toggleElements] = useToggle()
@@ -204,6 +204,8 @@ const activeType = ref('Stamp')
 
 const bindingsDLC = computed(() => isDLC.value ? bindings.concat(DLCbindings) : bindings)
 const lureExpansionsDLC = computed(() => isDLC.value ? lureExpansions.concat(DLClureExpansions) : lureExpansions)
+const luresDLC = computed(() => isDLC.value ? lures.concat(DLClures) : lures)
+const otherDLC = computed(() => isDLC.value ? otherControls.concat(DLCotherControls) : otherControls)
 
 const bindingByType = computed(() => {
   const res = {
