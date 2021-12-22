@@ -6,7 +6,7 @@
       :placeholder="placeholder"
       :error-message="errorMessage"
     />
-    <div ref="listEl" hidden>
+    <div ref="listEl" hidden class="z-40">
       <div
         v-for="name in searchResult"
         :key="name.item"
@@ -56,7 +56,10 @@ const value = ref(props.modelValue)
 
 const searchResult = computed(() => fuse.search(value.value, { limit: 10 }))
 
-watch(props, () => fuse.setCollection(props.list))
+watch(props, () => {
+  fuse.setCollection(props.list)
+  value.value = props.modelValue
+})
 
 let list = null
 watch(searchResult, () => {

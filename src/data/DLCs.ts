@@ -365,7 +365,7 @@ DLClures.push({
   title: 'Stud Service',
   cost: 10,
   desc: `You are prime breeding stock, able to sire the best children feasible given a compatible partner, which is something that potential partners sense... and like. The more proof of your fertility, virility, or the quality of your offspring that a potential waifu witnesses the more the image of submissively being bred by you infects and inflames their fantasies. Those who have had offspring, or who are \'hearing their biological clock ticking\', are particularly susceptible.
-  <p>You can control your fertility, from complete infertility to guaranteed impregnation. With practice, you can influence your offspring at conception to possess or lack traits which it would be possible for them to inherit.</p>
+  <p>With practice, you can influence your offspring at conception to possess or lack traits which it would be possible for them to inherit.</p>
   `,
 })
 

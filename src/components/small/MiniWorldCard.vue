@@ -1,6 +1,6 @@
 <template>
   <div
-    class="rounded flex-grow text-gray-100 text-shadow flex flex-col gap-1"
+    class="rounded flex-grow text-gray-100 text-shadow flex flex-col gap-1 cursor-pointer"
     border="2 gray-400 hover:orange-600 cursor-pointer"
     @click="chooseWorld"
   >

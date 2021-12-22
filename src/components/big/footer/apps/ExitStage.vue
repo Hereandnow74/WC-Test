@@ -24,6 +24,19 @@
     </div>
     <div v-if="tabIndex === 1" class="flex flex-col gap-4 overflow-y-auto scrollbar">
       <div>
+        Manual Jumps
+        <div class="flex gap-1">
+          <InputWithSearch
+            v-model="worldText"
+            :list="Object.keys(worldObject)"
+            placeholder="World Name"
+            class="flex-grow"
+          />
+          <Checkbox v-model="jumplogAdd" label="Add to jump chain" />
+          <Button size="Small" label="Jump" @click="jumpToManual" />
+        </div>
+      </div>
+      <div>
         Current world
         <MiniWorldCard :world="currentWorld" />
       </div>
@@ -34,7 +47,17 @@
       </div>
     </div>
     <Desc v-if="findIndex(miscPerks, {title: 'Exit Stage Left'}) === -1" :desc="`You don't have access to this app, you need to buy Exit Stage Left first`" />
-    <Button label="Back" icon="akar-icons:arrow-back-thick" size="Small" class="mx-auto" @click="toggleAppMode" />
+    <div class="flex gap-2">
+      <Button label="Back" icon="akar-icons:arrow-back-thick" size="Small" class="mx-auto" @click="toggleAppMode" />
+      <Button
+        v-if="tabIndex === 1"
+        label="Clear Jump Chain"
+        bg-color="bg-orange-500"
+        size="Small"
+        class="mx-auto"
+        @click="clearJumpLog"
+      />
+    </div>
   </div>
 </template>
 
@@ -42,10 +65,13 @@
 import { findIndex } from 'lodash'
 import { randomWorld, toggleAppMode } from '~/logic'
 import { usePlayStore } from '~/store/play'
-import { useStore, World } from '~/store/store'
+import { useStore } from '~/store/store'
 
 import WorldCard from '~/components/WorldCard.vue'
 import { confirmDialog } from '~/logic/dialog'
+import { World } from '~/store/chargen'
+import { allWorldsNoCondition } from '~/data/constatnts'
+import Button from '~/components/basic/Button.vue'
 
 const tabIndex = ref(0)
 
@@ -53,6 +79,16 @@ const { currentWorld, jumpChain, rdnWorld } = usePlayStore()
 const { miscPerks, startingWorld } = useStore()
 
 const progress = ref(0)
+const jumplogAdd = ref(true)
+const worldText = ref('')
+
+const worldObject = {}
+allWorldsNoCondition.value.forEach((x) => {
+  const name = `${x.worldName} ${x.condition ? `(${x.condition})` : ''} DR${x.rating}`
+  worldObject[name] = x
+})
+
+const manualWorld = computed(() => worldObject[worldText.value] || {})
 
 const numberOfChoices = computed(() => {
   let val = 1
@@ -102,6 +138,23 @@ async function chooseWorld(world: World, i: number) {
     const wrd = randomWorld(currentWorld.value.rating, minus.value, plus.value)
     wrd.n = 0
     rdnWorld.value.push(wrd)
+  }
+}
+
+async function clearJumpLog() {
+  if (!(await confirmDialog('If you clear the jump log credits lost due to Loan rules will not be refunded, continue?'))) return
+  const saveWorld = { worldName: startingWorld.value.worldName, rating: startingWorld.value.rating }
+  if (startingWorld.value.condition) saveWorld.condition = startingWorld.value.condition
+  currentWorld.value = saveWorld
+  jumpChain.value = []
+}
+
+function jumpToManual() {
+  if (manualWorld.value.worldName) {
+    currentWorld.value = manualWorld.value
+    if (jumplogAdd.value)
+      jumpChain.value.push(manualWorld.value)
+    worldText.value = ''
   }
 }
 </script>
