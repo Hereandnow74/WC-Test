@@ -28,6 +28,7 @@ const apps = [
   { icon: 'fluent:person-question-mark-16-regular', name: 'Random Character', component: 'RandomChar', color: '#f9ec52' },
   { icon: 'bx:bx-spreadsheet', name: 'Global Users Builds', component: 'UserBuilds', color: '#3a64b1' },
   { icon: 'la:dragon', name: 'Dragon Aura Calculator', component: 'DragonAura', color: '#c90000' },
+  { icon: 'clarity:note-edit-line', name: 'Notes', component: 'Notes', color: '#e9d385' },
 ]
 
 const appComponents = {
@@ -40,6 +41,7 @@ const appComponents = {
   RandomWorld: defineAsyncComponent(() => import('./apps/RandomWorld.vue')),
   UserBuilds: defineAsyncComponent(() => import('./apps/UserBuilds.vue')),
   DragonAura: defineAsyncComponent(() => import('./apps/DragonAura.vue')),
+  Notes: defineAsyncComponent(() => import('./apps/Notes.vue')),
 }
 
 const appName = ref('')

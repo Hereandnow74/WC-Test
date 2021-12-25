@@ -84,7 +84,7 @@ const options = {
   keys: ['tag', 'desc'],
   useExtendedSearch: true,
 }
-const fuse = new Fuse(Object.values(waifuTags), options)
+const fuse = new Fuse(Object.values(waifuTags).filter(x => !['C', 'U', 'F', 'M', 'O'].includes(x.short)), options)
 const listEl = ref<HTMLElement|null>(null)
 
 const searchResult = computed(() => fuse.search(newTag.value || '!^xxx'))

@@ -183,6 +183,8 @@ const imageLink = computed(() => {
       else {
         if (charData.value?.tags?.includes('U'))
           return `https://cdn.statically.io/gh/Om1cr0n/cat_thumb/main/docs/thumbs/${charData.value.image}`
+        if (charData.value.image.startsWith('[n]'))
+          return `https://cdn.statically.io/gh/Om1cr0n/cat_thumb/main/docs/thumbs/${charData.value.image.slice(3)}`
         return `https://cdn.statically.io/gh/klassekatze/waifucatimg/master/imagecache_thumb/${charData.value.image}`
       }
     }

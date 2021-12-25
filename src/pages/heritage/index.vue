@@ -48,12 +48,12 @@
             class="ml-1 text-base"
             @click.stop
           />
-          <Select
+          <AnythingInput
             v-if="['Singularity', 'Ascendant Human'].includes(hr.title)"
-            :options="['Biomorph', 'Cybermorph', 'Aethermorph'].filter(x => x !== flags.transhumanType)"
+            :list="['Biomorph', 'Cybermorph', 'Aethermorph'].filter(x => x !== flags.transhumanType)"
             placeholder="Transhuman type"
             class="ml-1 text-base"
-            @change="pickSingularityType($event.target.value, hr)"
+            @update:model-value="pickSingularityType($event, hr)"
             @click.stop
           />
         </template>
@@ -91,6 +91,7 @@ import Select from '~/components/basic/Select.vue'
 import { chooseHeritage, heritageAvailable, isDLC } from '~/logic'
 import { heritageTiers } from '~/data/constatnts'
 import { DLCheritages } from '~/data/DLCs'
+import AnythingInput from '~/components/small/AnythingInput.vue'
 
 const { heritage, flags } = useStore()
 

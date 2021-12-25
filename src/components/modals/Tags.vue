@@ -8,7 +8,7 @@
       </div>
     </div>
 
-    <div class="flex flex-wrap gap-1 text-sm justify-center text-white p-2">
+    <div class="flex flex-wrap gap-1 text-sm justify-center text-white p-2 scrollbar overflow-y-auto min-h-0 max-h-[60vh]">
       <div
         v-for="tag in waifuTags"
         :key="tag.tag"

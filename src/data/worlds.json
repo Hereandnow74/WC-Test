@@ -187,24 +187,7 @@
       }
     ]
   },
-  {
-    "rating": 4,
-    "worldName": "Star Wars",
-    "condition": [
-      {
-        "name": "Empire Era, OT",
-        "rating": 4
-      },
-      {
-        "name": "Old Republic era, Prequels era",
-        "rating": 5
-      },
-      {
-        "name": "Legends post-OT",
-        "rating": 6
-      }
-    ]
-  },
+  {"worldName":"Star Wars","rating":4,"additional":"Unrestricted Clone Wars is setting modification where Palpatine's plan is fully discovered and with him taking over leadership CIS, CIS is allowed to go on without restrictions.","condition":[{"name":"Empire Era, OT","rating":4},{"name":"Old Republic era, Prequels era","rating":5},{"rating":6,"name":"Legends post-OT"},{"name":"Unrestricted Clone Wars","rating":7}]},
   {
     "rating": 2,
     "worldName": "Star Trek",
@@ -891,10 +874,7 @@
     "rating": 5,
     "worldName": "Babylon 5"
   },
-  {
-    "rating": 4,
-    "worldName": "Avatar: The Last Airbender"
-  },
+  {"worldName":"Avatar: The Last Airbender","rating":4,"condition":[{"name":"Spirit Intervention","rating":7}]},
   {
     "rating": 8,
     "worldName": "Arpeggio of Blue Steel"
@@ -1169,7 +1149,7 @@
     "worldName": "Dune",
     "condition": "First book"
   },
-  {"worldName":"Dresden Files","rating":5,"condition":[{"rating":6,"name":"Post Changes"}]},
+  {"worldName":"Dresden Files","rating":5,"condition":[{"name":"Post Changes","rating":6},{"rating":7,"name":"WWII"}]},
   {
     "rating": 7,
     "worldName": "Drakengard",

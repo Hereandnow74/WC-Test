@@ -5,6 +5,20 @@
     </h2>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
+        25 December 2021
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>Removed 370+ doubles from  database</li>
+        <li>Added 200+ NSFW images provided by <b>Jimmothy</b>(he provided a lot more, but they did not pass my review)</li>
+        <li>119 new user submitted Characters.</li>
+        <li>Simple Notes App</li>
+        <li>Missions page(just to check what missions currently submitted)</li>
+        <li>6 new user submitted Worlds.</li>
+        <li>Bugfixes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
         21 December 2021
       </h3>
       <ul class="list-decimal list-inside">

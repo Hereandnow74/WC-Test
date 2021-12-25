@@ -97,7 +97,17 @@ DLCgenericPerks.push({
   complex: 'target',
   desc: `Got a waifu that you just can’t touch, some sort of giant monster, or not quite flesh and blood? Well with this perk, let all your worries slip away. AI’s gain a physical body they can summon at will, giant monsters gain a human-ish. Think cat-girl level humanization. They don’t loose their powers, but they can now fit in your living room. Same thing with robots and the like. They’ll get a human-ish form with some robot bits somewhere, but now instead of only being able to cuddle cold hard metal at night, you get a nice warm human lookin kind of thing. All anthropized forms can be swapped out at will by the waifu this is applied to. 10 purchases for your retinue will let you apply this to any waifu you have in your retinue.
      `,
+})
 
+DLCgenericPerks.push({
+  dlc: 'CelestialDragon DLC',
+  dlclink: 'https://docs.google.com/spreadsheets/d/1FM6PNbDEyZV4T4rVLWjPYBc3O0jmmwd1obkFD7jLDt8/edit?usp=sharing',
+  title: 'Does it come in Black',
+  cost: 1,
+  max: 10,
+  complex: 'target',
+  desc: `This is different from completely original. While the other perk changes appearance, this changes their personality. The only restriction is that they must be from something like a fan-fiction, abridged, future version, alternate timeline etc.
+     `,
 })
 
 // Misc DLC Perks
@@ -203,6 +213,13 @@ DLCperks.push({
   desc: `A new app installed on your Company device can directly inflict sensation you wish on your waifu's at the touch of a button. The default settings are a sourceless pleasure or pain of any desired intensity but more complex sensations, lack of sensation, or sequences are possible.
   <p>As a safeguard against abuse, your waifu's cannot perceive any options which induce sensations on herself personally nor act to prevent you from using the app upon her or others. If combined with the Waifu Tracker perk, then a waifu's activities and condition can be programmed to trigger specific sensations.</p>
   `,
+})
+
+DLCperks.push({
+  dlc: 'PixelGMS',
+  title: 'Nice Guy',
+  cost: 120,
+  desc: 'Everyone will think that you\'re a nice guy. A friendly acquaintance. Even if you stab them in the guts, they wouldn\'t hold it against you. It doesn\'t matter what you do, as long as it\'s not outright murder or torture, people won\'t think badly about it, but some half-assed arguments might be needed to justify your actions. If you start killing or doing something worse to someone they care about more than themselves in front of them then the effect will quickly deteriorate.',
 })
 
 // DLC home perks

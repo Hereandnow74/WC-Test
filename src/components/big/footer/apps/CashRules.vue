@@ -1,6 +1,5 @@
 <template>
   <div class="flex flex-col gap-2 p-2 overflow-y-auto scrollbar min-h-0">
-    <div>Under construction</div>
     <div v-if="csr || !flags.chargen" class="flex flex-col gap-2">
       <div>You can take maximum <span>{{ creditLimit - loan.owed }}</span> credits loan.</div>
       <div class="flex gap-2">

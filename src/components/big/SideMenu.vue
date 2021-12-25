@@ -1,8 +1,8 @@
 <template>
   <div
     ref="sidemenu"
-    class="fixed bottom-0 top-0 left-0 text-lg bg-gray-200 dark:bg-gray-700 flex flex-col gap-2 items-start pt-2
-    z-30 border-gray-400 overflow-x-hidden transition-width"
+    class="fixed bottom-0 top-0 left-0 text-lg bg-gray-200 dark:bg-gray-700 flex flex-col gap-2 items-start
+     pt-2 z-30 border-gray-400 overflow-x-hidden transition-width"
   >
     <button class="icon-btn mx-2 !outline-none hover:text-red-400 self-end" @click="() => toggleSideMenu()">
       <tabler:arrow-bar-to-right v-if="showSideMenu" />
@@ -75,6 +75,9 @@
     >
       <ri:patreon-line /> Patreon
     </a>
+    <div v-if="promoteShown" class="icon-text-btn mx-2 whitespace-nowrap" title="Support" @click="() => toggleSupport()">
+      <ci:heart-fill class="text-pink-500" />Support
+    </div>
     <h3 v-if="!showSideMenu" class="mx-2 opacity-50 border-b">
       Menu
     </h3>
@@ -107,7 +110,7 @@
 <script lang='ts' setup>
 import {
   isDark, toggleDark, toggleSideMenu, showSideMenu, showAddPerk, toggleShowAddPerk, toggleDLC,
-  isDLC, showAddMission, toggleShowAddMission, isNSFW, toggleNSFW,
+  isDLC, showAddMission, toggleShowAddMission, isNSFW, toggleNSFW, toggleSupport, promoteShown,
 } from '~/logic'
 
 const sidemenu = ref(null)

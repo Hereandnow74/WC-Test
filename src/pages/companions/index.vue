@@ -276,7 +276,14 @@ const filteredCharacters = computed(() => {
   return fuse.search(sopt)
 })
 
-const slicedChars = computed(() => filteredCharacters.value.slice(0, limit.value))
+const slicedChars = computed(() => {
+  // const groupped = groupBy(filteredCharacters.value, (n) => { return n.item.i })
+  // const result = uniq(flatten(filter(groupped, (n) => { return n.length > 1 })))
+  // return result.slice(limit.value > 100 ? limit.value - 100 : 0, limit.value)
+  return filteredCharacters.value.slice(0, limit.value)
+})
+
+// const allCredits = computed(() => charArr.value.reduce((a, b) => b.t !== 11 ? a += CHAR_COSTS[b.t - 1] : a, 0))
 
 watch(slicedChars, () => nextTick(() => lazyLoadImg(waifuList.value)))
 

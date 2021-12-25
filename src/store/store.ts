@@ -223,6 +223,8 @@ watch(budget, () => {
 
 const favorites = useStorage<string[]>('favorites', [])
 
+const totalActive = useStorage('ta', 0)
+
 export function useStore() {
   return {
     budget,
@@ -283,5 +285,6 @@ export function useStore() {
     loan,
     trHistory,
     favorites,
+    totalActive,
   }
 }

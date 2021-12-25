@@ -333,5 +333,11 @@
   {"worldName":"Adventure Time","rating":7,"condition":[{"name":"Nightosphere","rating":8},{"rating":6,"name":"Candy Kingdom"}]},
   {"worldName":"Psychonauts","rating":6},
   {"worldName":"Shaman King","rating":5,"condition":[{"name":"Shaman Fight ( Canon)","rating":8}]},
-  {"worldName":"Yakuza 0","rating":4}
+  {"worldName":"Yakuza 0","rating":4},
+  {"worldName":"Gargoyles","rating":3,"condition":[{"name":"1994","rating":3},{"name":"10th century AD","rating":5}]},
+  {"worldName":"Helltaker","rating":6},
+  {"worldName":"Homestuck","rating":10},
+  {"worldName":"Legend of Zelda: Twilight Princess","rating":6},
+  {"worldName":"Miraclous: Tales of Ladybug and Cat Noir","rating":2},
+  {"worldName":"Yuki Yuna is a Hero","rating":7}
 ]

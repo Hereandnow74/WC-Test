@@ -24,8 +24,6 @@
         {{ errorMessage }}
       </div>
       <div class="flex gap-2">
-        <!-- <Checkbox v-model="localSave" label="Local save" /> -->
-        <!-- <Checkbox v-model="serverSave" label="Global save" /> -->
         <Button :disabled="!buttonActive" label="Send" class="flex-grow" bg-color="bg-red-700" @click="buttonActive ? addPerk() : errorMessage = 'Wait 30s before submitting again.'" />
       </div>
     </div>

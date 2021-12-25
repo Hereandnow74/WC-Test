@@ -12,9 +12,24 @@
     <Footer />
     <ConfirmDialog class="z-20" />
     <InfoDialog class="z-20" />
+
+    <PromoteDialog v-if="(totalActive > 60 * 60 && !promoteShown) || isSupport" />
   </main>
 </template>
 
 <script lang="ts" setup>
-import { showSideMenu } from '~/logic'
+import { useStore } from './store/store'
+import { showSideMenu, promoteShown, isSupport } from '~/logic'
+
+const { totalActive } = useStore()
+let start = new Date()
+
+const { idle } = useIdle(10000)
+
+watch(idle, () => {
+  if (idle.value)
+    totalActive.value += Math.round((new Date() - start) / 1000)
+  else
+    start = new Date()
+})
 </script>

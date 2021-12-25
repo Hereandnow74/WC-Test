@@ -1,7 +1,10 @@
 <template>
   <div class="flex flex-col gap-2 h-full p-2">
     <div class="text-center">
-      Under construction - while enjoy kill/kiss/marry game
+      Under construction - while enjoy kill/kiss/marry game. Check out what missions where submitted so far
+      <router-link to="/missions" class="text-blue-500 underline">
+        link
+      </router-link>
     </div>
     <div class="grid grid-cols-3 gap-1 text-xs flex-grow grid-rows-[1fr,max-content]">
       <CompanionCard :char="waifu1" :show-tags="false" :show-tiers="false" font-size="text-xs" :class="orientation ? 'h-full' : 'h-3/5'" />

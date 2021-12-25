@@ -53,7 +53,6 @@
       <TagInput
         v-model="tags"
         placeholder="Tags - press Enter to add"
-        :options="Object.values(waifuTags).map(x => x.tag)"
         :error-message="errors.tags"
       />
       <Input v-if="serverSave" v-model="nickname" placeholder="Your nickname" :error-message="errors.nickname" name="login" />
