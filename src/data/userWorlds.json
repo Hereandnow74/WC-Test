@@ -25,10 +25,7 @@
       }
     ]
   },
-  {
-    "worldName": "Claymore",
-    "rating": 7
-  },
+  {"worldName":"Claymore","rating":7,"image":"https://pbs.twimg.com/media/EFCJ0oIUEAEPr-i.jpg"},
   {
     "worldName": "Code Geass",
     "rating": 5
@@ -126,6 +123,7 @@
   {
     "worldName": "Harry Potter",
     "rating": 3,
+    "image": "https://i.imgur.com/MMoYDljl.jpg",
     "condition": [
       {
         "rating": 3,
@@ -135,7 +133,7 @@
         "rating": 4,
         "name": "Fifth book"
       },
-      {"rating":6,"name":"1971 (Open Warfare)"}
+      {"rating":5,"name":"1971 (Open Warfare)"}
     ]
   },
   {
@@ -162,10 +160,6 @@
         "rating": 3
       }
     ]
-  },
-  {
-    "worldName": "Jojo's Bizzare Adventure",
-    "rating": 5
   },
   {
     "worldName": "Lazy Dungeon Master",
@@ -339,5 +333,11 @@
   {"worldName":"Homestuck","rating":10},
   {"worldName":"Legend of Zelda: Twilight Princess","rating":6},
   {"worldName":"Miraclous: Tales of Ladybug and Cat Noir","rating":2},
-  {"worldName":"Yuki Yuna is a Hero","rating":7}
+  {"worldName":"Yuki Yuna is a Hero","rating":7},
+  {"worldName":"Archer","rating":2},
+  {"worldName":"Innocent Witches","rating":3},
+  {"worldName":"Life is strange","rating":6},
+  {"worldName":"Life With a Slave - Teaching Feeling","rating":2},
+  {"worldName":"Orc Hero Story – Discovery Chronicles","rating":5,"condition":[{"rating":6,"name":"War of Vastonia"}]},
+  {"worldName":"Takarakuji de 40 Oku Atattanda kedo Isekai ni Ijuusuru","rating":3}
 ]

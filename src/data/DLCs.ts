@@ -133,7 +133,7 @@ DLCperks.push({
 })
 
 DLCperks.push({
-  dlc: 'KatzSmile',
+  dlc: '???',
   title: 'Normalcy',
   cost: 10,
   desc: `
@@ -306,7 +306,7 @@ DLChomes.push({
 })
 
 DLChomes.push({
-  dlc: 'KatzSmile',
+  dlc: 'GForce1000',
   title: 'Armory',
   cost: 10,
   desc: 'A room-or pocket-dimensional space similar to the Pocket Space perk full of weapons, armor, and ammunition becomes available to you with this upgrade. It holds a wide variety of standard and specialized equipment from both your new world and your old one. This does include equipment that would normally only be available to special forces, but does not include custom-made or heavily customized variants on weapons. Weapons you or your companions acquire in the field can be sent to this armory with a few seconds of concentration, and each of you can choose up to ten pieces of equipment - such as a gun, a shield, or a full set of armor - to be able to equip or return at will. The armory will automatically repair and maintain weapons stored within it. This doesn\'t work for fully destroyed artifact items unless you help supply the magical oomph.',

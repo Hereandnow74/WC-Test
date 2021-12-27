@@ -14788,15 +14788,22 @@
     "t": 4,
     "i": "big_hero_6_20callmepo_20gogo_tomago_20marvel.jpg",
     "s": "https://rule34.paheal.net/post/view/2596849#search=GoGo_Tomago",
-    "w": "Big Hero 6"
+    "w": "Big Hero 6",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 10320,
-    "n": "Aunt Cass",
+    "n": "Aunt Cass Hamada",
     "t": 1,
-    "i": "sample_aeb694acd3d7718300f2974de45eefad.jpg",
+    "in": "https://i.imgur.com/HSNtnmq.png",
+    "i": "https://i.imgur.com/7CkFY7Wm.jpeg",
     "s": "https://chan.sankakucomplex.com/post/show/4528159",
-    "w": "Big Hero 6"
+    "w": "Big Hero 6",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 5035,
@@ -27780,13 +27787,6 @@
     "i": "334b43924f2794f823595fc49b1a7b21.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/6450101",
     "w": "Dorei to no Seikatsu ~Teaching Feeling~"
-  },
-  {
-    "u": 1662,
-    "n": "Strygwyr the Bloodseeker",
-    "t": 5,
-    "i": "",
-    "w": "Dota 2"
   },
   {
     "u": 3958,
@@ -44031,14 +44031,13 @@
     ]
   },
   {
-    "u": 326,
+    "u": 13824,
     "n": "Jellal Fernandes",
     "t": 6,
-    "i": "",
+    "i": "d79rywq_f32d5117_8009_4935_8fc0_a4b31ffb56a1.jpg",
+    "s": "https://www.deviantart.com/thedominique/art/Female-Jellal-Jellia-Fernandes-439684730",
     "w": "Fairy Tail",
-    "b": [
-      "M"
-    ]
+    "b": ["me","M"]
   },
   {
     "u": 327,
@@ -44055,11 +44054,10 @@
     "u": 328,
     "n": "Mystogan",
     "t": 6,
-    "i": "",
+    "i": "d79rywq_f32d5117_8009_4935_8fc0_a4b31ffb56a1.jpg",
+    "s": "https://www.deviantart.com/thedominique/art/Female-Jellal-Jellia-Fernandes-439684730",
     "w": "Fairy Tail",
-    "b": [
-      "M"
-    ]
+    "b": ["me","M"]
   },
   {
     "u": 329,
@@ -44870,14 +44868,6 @@
       "C"
     ],
     "d": "Tartarous"
-  },
-  {
-    "u": 13824,
-    "n": "Jellal/or Mystogan (can have both)",
-    "t": 6,
-    "i": "d79rywq_f32d5117_8009_4935_8fc0_a4b31ffb56a1.jpg",
-    "s": "https://www.deviantart.com/thedominique/art/Female-Jellal-Jellia-Fernandes-439684730",
-    "w": "Fairy Tail"
   },
   {
     "u": 8535,
@@ -52535,15 +52525,15 @@
     "u": 7814,
     "n": "Paimon",
     "t": 1,
-    "i": "omi__sample_a639f52f0129d6a3be860f73c1917f87.jpg",
-    "s": "https://danbooru.donmai.us/posts/4321585",
+    "i": "[n]__paimon_genshin_impact_drawn_by_flasso__sample-ba6fc158e8ad907e87da816091ea26fc.jpg",
+    "in": "https://cdn.donmai.us/sample/a6/39/__paimon_genshin_impact_drawn_by_kiriko_araragikoyomi__sample-a639f52f0129d6a3be860f73c1917f87.jpg",
+    "s": "https://cdn.donmai.us/sample/ba/6f/__paimon_genshin_impact_drawn_by_flasso__sample-ba6fc158e8ad907e87da816091ea26fc.jpg",
     "w": "Genshin Impact",
     "b": [
       "F",
       "C",
-      "P"
-    ],
-    "d": "Genshin Impact"
+      "P","an"
+    ]
   },
   {
     "u": 7815,
@@ -52556,8 +52546,7 @@
     "b": [
       "F",
       "C","hp","cl"
-    ],
-    "d": "Genshin Impact"
+    ]
   },
   {
     "u": 7816,
@@ -52571,7 +52560,7 @@
       "F",
       "C","sc"
     ],
-    "d": "Genshin Impact (Inazuma)"
+    "d": "Inazuma"
   },
   {
     "u": 7817,
@@ -52583,7 +52572,7 @@
       "F",
       "C"
     ],
-    "d": "Genshin Impact (Inazuma)"
+    "d": "Inazuma"
   },
   {
     "u": 7818,
@@ -52597,7 +52586,7 @@
       "F",
       "C"
     ],
-    "d": "Genshin Impact (Inazuma)"
+    "d": "Inazuma"
   },
   {
     "u": 7819,
@@ -52611,7 +52600,7 @@
       "F",
       "C","dh","cl"
     ],
-    "d": "Genshin Impact (Inazuma)"
+    "d": "Inazuma"
   },
   {
     "u": 7820,
@@ -52625,33 +52614,35 @@
       "F",
       "C","hl","nn","me"
     ],
-    "d": "Genshin Impact (Inazuma)"
+    "d": "Inazuma"
   },
   {
     "u": 7821,
     "n": "Baal/Raiden Shogun",
     "t": 7,
     "i": "one__sample_b92eb1bb9b137de4b84e2108b7a9cdc0.jpg",
+    "in": "https://cdn.donmai.us/sample/22/42/__raiden_shogun_genshin_impact_drawn_by_toyoman__sample-2242cac74e1d7cf06b2bf26a932f0767.jpg",
     "s": "https://danbooru.donmai.us/posts/4660655",
     "w": "Genshin Impact",
     "b": [
       "F",
-      "C"
+      "C","gd","cl"
     ],
-    "d": "Genshin Impact (Inazuma)"
+    "d": "Inazuma"
   },
   {
     "u": 7822,
     "n": "Ying'er",
     "t": 1,
-    "i": "ang__sample_35de3ed96e9811cd2ac28522ad0980b0.jpg",
-    "s": "https://danbooru.donmai.us/posts/4333279",
+    "i": "[n]hinr9y6vrbc61.jpg",
+    "in": "https://cdn.donmai.us/sample/35/de/__ying_er_genshin_impact_drawn_by_hundun_no_bifang__sample-35de3ed96e9811cd2ac28522ad0980b0.jpg",
+    "s": "https://i.redd.it/hinr9y6vrbc61.jpg",
     "w": "Genshin Impact",
     "b": [
       "F",
-      "C"
+      "C","ml"
     ],
-    "d": "Genshin Impact (Liyue)"
+    "d": "Liyue"
   },
   {
     "u": 7823,
@@ -52664,7 +52655,7 @@
       "F",
       "C","dc","hl","un","sd"
     ],
-    "d": "Genshin Impact (Liyue)"
+    "d": "Liyue"
   },
   {
     "u": 7824,
@@ -52678,7 +52669,7 @@
       "F",
       "C","cf"
     ],
-    "d": "Genshin Impact (Liyue)"
+    "d": "Liyue"
   },
   {
     "u": 7825,
@@ -52692,7 +52683,7 @@
       "F",
       "C","dh","me"
     ],
-    "d": "Genshin Impact (Liyue)"
+    "d": "Liyue"
   },
   {
     "u": 7826,
@@ -52705,59 +52696,63 @@
       "F",
       "C"
     ],
-    "d": "Genshin Impact (Liyue)"
+    "d": "Liyue"
   },
   {
     "u": 7827,
     "n": "Hu Tao",
     "t": 5,
     "i": "iro__sample_a100c14970c3946547515c412570f6a1.jpg",
+    "in": "https://cdn.donmai.us/original/3a/1e/__hu_tao_genshin_impact_drawn_by_rei_kun__3a1e8df5c5b2bf885504fedf3b2fc10b.png",
     "s": "https://danbooru.donmai.us/posts/4477046",
     "w": "Genshin Impact",
     "b": [
       "F",
-      "C"
+      "C","dr"
     ],
-    "d": "Genshin Impact (Liyue)"
+    "d": "Liyue"
   },
   {
     "u": 7828,
     "n": "Keqing",
     "t": 5,
     "i": "eee__sample_30bb5e97810305c87ed88a2d7b31e1d0.jpg",
+    "in": "https://cdn.donmai.us/sample/05/23/__keqing_genshin_impact_drawn_by_nashidrop__sample-05234b1ec6de11e9b545563588a518e3.jpg",
     "s": "https://danbooru.donmai.us/posts/4476318",
     "w": "Genshin Impact",
     "b": [
       "F",
-      "C"
+      "C","ml"
     ],
-    "d": "Genshin Impact (Liyue)"
+    "d": "Liyue"
   },
   {
     "u": 7829,
     "n": "Ningguang",
     "t": 5,
     "i": "uel__sample_1c24504ed23bca7264aab8b251efb0fe.jpg",
+    "in": "https://cdn.donmai.us/original/77/a7/__ningguang_genshin_impact_drawn_by_cyicheng__77a71e0892221421e94658fb0ccb1b5c.jpg",
     "s": "https://danbooru.donmai.us/posts/4478780",
     "w": "Genshin Impact",
     "b": [
       "F",
-      "C"
+      "C","me","ml","sc"
     ],
-    "d": "Genshin Impact (Liyue)"
+    "d": "Liyue"
   },
   {
     "u": 7830,
     "n": "Xinyan",
     "t": 5,
     "i": "box__sample_675817f972c8fb05aebce5ff1bda14f7.jpg",
+    "in": "https://cdn.donmai.us/sample/cd/1c/__xinyan_genshin_impact_drawn_by_kirani__sample-cd1c8bb12e839ef32dec80b3d04f83f2.jpg",
     "s": "https://danbooru.donmai.us/posts/4344590",
     "w": "Genshin Impact",
     "b": [
       "F",
       "C"
     ],
-    "d": "Genshin Impact (Liyue)"
+    "d": "Liyue"
   },
   {
     "u": 7831,
@@ -52771,7 +52766,7 @@
       "F",
       "C","pi","cl"
     ],
-    "d": "Genshin Impact (Liyue)"
+    "d": "Liyue"
   },
   {
     "u": 7832,
@@ -52783,22 +52778,22 @@
     "w": "Genshin Impact",
     "b": [
       "F",
-      "C","dh"
+      "C","dh","sd"
     ],
-    "d": "Genshin Impact (Liyue)"
+    "d": "Liyue"
   },
   {
     "u": 7833,
-    "n": "Shenhe/Cloud Retainer",
+    "n": "Cloud Retainer",
     "t": 6,
-    "i": "",
-    "s": "https://imgur.com/VbNIBvD",
+    "i": "[n]__cloud_retainer_genshin_impact_drawn_by_penkorii__sample-8c830e94895cd45e38ff11c37db459b0.jpg",
+    "s": "https://cdn.donmai.us/sample/8c/83/__cloud_retainer_genshin_impact_drawn_by_penkorii__sample-8c830e94895cd45e38ff11c37db459b0.jpg",
     "w": "Genshin Impact",
     "b": [
       "F",
-      "C"
+      "C","tc","de"
     ],
-    "d": "Genshin Impact (Liyue)"
+    "d": "Liyue"
   },
   {
     "u": 7834,
@@ -52809,22 +52804,23 @@
     "w": "Genshin Impact",
     "b": [
       "F",
-      "C"
+      "C","gd","en","sc"
     ],
-    "d": "Genshin Impact (Liyue)"
+    "d": "Liyue"
   },
   {
     "u": 7835,
     "n": "Amber",
     "t": 4,
     "i": "835__sample_7b54cd7d4c35841ea1f2a4fe4d296315.jpg",
+    "in": "https://cdn.donmai.us/sample/33/be/__amber_genshin_impact_drawn_by_genmon__sample-33be56f81ff0a15c21c3b7d119de7108.jpg",
     "s": "https://danbooru.donmai.us/posts/4606738",
     "w": "Genshin Impact",
     "b": [
       "F",
       "C"
     ],
-    "d": "Genshin Impact (Mondstadt)"
+    "d": "Mondstadt"
   },
   {
     "u": 7836,
@@ -52835,9 +52831,9 @@
     "w": "Genshin Impact",
     "b": [
       "F",
-      "C"
+      "C","me","hl","nn"
     ],
-    "d": "Genshin Impact (Mondstadt)"
+    "d": "Mondstadt"
   },
   {
     "u": 7837,
@@ -52848,36 +52844,38 @@
     "w": "Genshin Impact",
     "b": [
       "F",
-      "C"
+      "C","dh","cf","hl","mt"
     ],
-    "d": "Genshin Impact (Mondstadt)"
+    "d": "Mondstadt"
   },
   {
     "u": 7838,
     "n": "Fischl von Luftschloss Narfidort",
     "t": 4,
     "i": "uzu__sample_6db661957889e3208382987d5b806590.jpg",
+    "in": "https://cdn.donmai.us/sample/b0/bc/__fischl_genshin_impact_drawn_by_cle_masahiro__sample-b0bc45c34cf14f5706ad23dfffdfd743.jpg",
     "s": "https://danbooru.donmai.us/posts/4477374",
     "w": "Genshin Impact",
     "b": [
       "F",
-      "C"
+      "C","pc","di","mt"
     ],
-    "d": "Genshin Impact (Mondstadt)"
+    "d": "Mondstadt"
   },
   {
     "u": 7839,
     "n": "Noelle",
     "t": 4,
     "i": "ura__sample_539576ea8839c38d8983a8f8064a899b.jpg",
+    "in": "https://cdn.donmai.us/original/5a/a1/__noelle_genshin_impact_drawn_by_simao_x_x36131422__5aa1eae54374783ba150a75fec0474f5.png",
     "s": "https://danbooru.donmai.us/posts/4477627",
     "w": "Genshin Impact",
     "b": [
       "F",
       "md",
-      "C"
+      "C","sd","hl"
     ],
-    "d": "Genshin Impact (Mondstadt)"
+    "d": "Mondstadt"
   },
   {
     "u": 7840,
@@ -52891,72 +52889,77 @@
       "F",
       "C","dh","sn","me"
     ],
-    "d": "Genshin Impact (Mondstadt)"
+    "d": "Mondstadt"
   },
   {
     "u": 7841,
     "n": "Eula Lawrence",
     "t": 5,
     "i": "jun__sample_60228e5dfa5210ce57e75fd9efb4005b.jpg",
+    "in": "https://cdn.donmai.us/original/99/86/__eula_genshin_impact_drawn_by_nextoad__998600c1af93bbdb7b9dc02592d136c3.jpg",
     "s": "https://danbooru.donmai.us/posts/4475950",
     "w": "Genshin Impact",
     "b": [
       "F",
-      "C"
+      "C","pc"
     ],
-    "d": "Genshin Impact (Mondstadt)"
+    "d": "Mondstadt"
   },
   {
     "u": 7842,
     "n": "Jean Gunnhildr",
     "t": 5,
     "i": "rou__sample_d463340c8e9a12a31290bd73711df445.jpg",
+    "in": "https://cdn.donmai.us/original/b3/1e/__jean_genshin_impact_drawn_by_cyicheng__b31ef79a8ec532e0a5203276230b2177.jpg",
     "s": "https://danbooru.donmai.us/posts/4429904",
     "w": "Genshin Impact",
     "b": [
       "F",
-      "C"
+      "C","sc","hl"
     ],
-    "d": "Genshin Impact (Mondstadt)"
+    "d": "Mondstadt"
   },
   {
     "u": 7843,
     "n": "Lisa Minci",
     "t": 5,
     "i": "ynn__sample_8962b855fdc2b29ae0d7455c01306dfe.jpg",
+    "in": "https://cdn.donmai.us/sample/fa/f1/__lisa_genshin_impact_drawn_by_tian_kazuki__sample-faf180720c0d25e4dba1930edd9c02c4.jpg",
     "s": "https://danbooru.donmai.us/posts/4457602",
     "w": "Genshin Impact",
     "b": [
       "F",
-      "C"
+      "C","tc","me","wh"
     ],
-    "d": "Genshin Impact (Mondstadt)"
+    "d": "Mondstadt"
   },
   {
     "u": 7844,
     "n": "Mona Megistus",
     "t": 5,
     "i": "ero__sample_e0104be46060f89eb81fed0499c5fc26.jpg",
+    "in": "https://cdn.donmai.us/original/e8/81/__mona_genshin_impact_drawn_by_lsls__e88124dedfd343a1c4797f4219b0debf.jpg",
     "s": "https://danbooru.donmai.us/posts/4473357",
     "w": "Genshin Impact",
     "b": [
       "F",
-      "C"
+      "C","me","ml","sc","di","sd","wh"
     ],
-    "d": "Genshin Impact (Mondstadt)"
+    "d": "Mondstadt"
   },
   {
     "u": 7845,
     "n": "Rosaria",
     "t": 5,
     "i": "y_ayya_sap__85cc65aec59e964b379d6c0db5210b9d.jpg",
+    "in": "https://cdn.donmai.us/sample/14/6f/__rosaria_genshin_impact_drawn_by_pantheon_eve__sample-146f4c53d4340f7f7a0b03ac7da8a9dd.jpg",
     "s": "https://danbooru.donmai.us/posts/4638484",
     "w": "Genshin Impact",
     "b": [
       "F",
-      "C"
+      "C","nn","st","sc"
     ],
-    "d": "Genshin Impact (Mondstadt)"
+    "d": "Mondstadt"
   },
   {
     "u": 7846,
@@ -52967,9 +52970,9 @@
     "w": "Genshin Impact",
     "b": [
       "F",
-      "C"
+      "C","dh","sd"
     ],
-    "d": "Genshin Impact (Mondstadt)"
+    "d": "Mondstadt"
   },
   {
     "u": 7847,
@@ -52980,9 +52983,9 @@
     "w": "Genshin Impact",
     "b": [
       "F",
-      "C"
+      "C","st","cl","az"
     ],
-    "d": "Genshin Impact (Mondstadt)"
+    "d": "Mondstadt"
   },
   {
     "u": 7848,
@@ -52996,7 +52999,7 @@
       "F",
       "C","wh","me","hr"
     ],
-    "d": "Genshin Impact (Snezhnaya)"
+    "d": "Snezhnaya"
   },
   {
     "u": 7849,
@@ -53008,8 +53011,7 @@
     "b": [
       "F",
       "C","gd"
-    ],
-    "d": "Genshin Impact (Unknown)"
+    ]
   },
   {
     "u": 6425,
@@ -79530,22 +79532,27 @@
     "u": 4551,
     "n": "Birgi, God of Storytelling",
     "t": 8,
-    "i": "",
-    "w": "Magic: The Gathering"
+    "i": "https://i.imgur.com/MyivtqCm.jpg",
+    "s": "https://i.imgur.com/MyivtqC.jpg",
+    "w": "Magic: The Gathering",
+    "b": ["gd","F"]
   },
   {
     "u": 4552,
     "n": "Cosima, God of the Voyage",
     "t": 8,
-    "i": "",
-    "w": "Magic: The Gathering"
+    "i": "[n]012cosima.jpg",
+    "s": "https://www.mtgpics.com/pics/reg/as3/012.jpg",
+    "w": "Magic: The Gathering",
+    "b": ["gd","F"]
   },
   {
     "u": 4553,
     "n": "Ephara, God of the Polis",
     "t": 8,
-    "i": "",
-    "w": "Magic: The Gathering"
+    "i": "[i]Ephara_God_of_the_Polis_Mobile.png",
+    "w": "Magic: The Gathering",
+    "b": ["gd","F"]
   },
   {
     "u": 4554,
@@ -91217,7 +91224,7 @@
     "s": "https://i.pinimg.com/originals/43/46/84/434684abb2232076b55210cdc64623f7.jpg",
     "w": "Naruto",
     "b": [
-      "M",  "cl", "in", "id"
+      "M",  "cl", "id"
     ]
   },
   {
@@ -92334,13 +92341,6 @@
       "M"
     ],
     "d": "Servants – Lancer"
-  },
-  {
-    "u": 13906,
-    "n": "Kid Gil",
-    "t": 6,
-    "i": "",
-    "w": "Nasuverse"
   },
   {
     "u": 13907,
@@ -105913,14 +105913,15 @@
     "u": 12588,
     "n": "Wolfrun",
     "t": 6,
-    "i": "__wolfrun_precure_and_1_more_drawn_by_wauwa__sample-54100fd6335930f78f68784c0576cb7d.jpg",
+    "i": "[n]__wolfrun_precure_and_1_more_drawn_by_wauwa__sample-54100fd6335930f78f68784c0576cb7d.jpg",
     "in": "https://static1.e621.net/data/d7/84/d7844dd551fba24bb53cf48c4cdf810f.jpg",
     "s": "https://e621.net/post/show/459697",
     "w": "Pretty Cure",
     "d": "Pretty Cure - 9: Smile",
     "b": [
       "M"
-    ]
+    ],
+    "k": "Terthna"
   },
   {
     "u": 7283,
@@ -106930,7 +106931,10 @@
     "t": 4,
     "i": "aine.jpg",
     "s": "https://vignette.wikia.nocookie.net/queensblade/images/0/0b/Aine.jpg/revision/latest/scale-to-width-down/280?cb=20130627235012",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11322,
@@ -106949,7 +106953,10 @@
     "t": 4,
     "i": "sample_3465e6fe70c1173e6128a57bc8c3fa23.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/1048296",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11324,
@@ -106957,7 +106964,10 @@
     "t": 4,
     "i": "sample_0918b479d22ca198f8683ebb7cd4a0d8.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/7801193",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11325,
@@ -106965,7 +106975,10 @@
     "t": 4,
     "i": "sample_bae04e62f10c4fa1e8d14a00db859f20.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/3441830",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11326,
@@ -106973,7 +106986,10 @@
     "t": 4,
     "i": "f6f5f960bd6c852cb8c2f26e2d4e02bc.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/6076663",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11327,
@@ -106981,7 +106997,10 @@
     "t": 3,
     "i": "sample_69af5a22426a85b1631c155482fb2409.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/6213762",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11328,
@@ -106989,7 +107008,10 @@
     "t": 5,
     "i": "lovlila_ani.jpg",
     "s": "https://vignette.wikia.nocookie.net/queensblade/images/d/d3/Lovlila_Ani.jpg/revision/latest?cb=20130627235825",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11329,
@@ -106997,7 +107019,10 @@
     "t": 5,
     "i": "sample_cc2050132fdac7bc022a89a0650d398f.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/1782136",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11330,
@@ -107005,7 +107030,10 @@
     "t": 3,
     "i": "sample_cbb0341b06f6efafd981b1b36ffce3f0.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/1061506",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11331,
@@ -107013,7 +107041,10 @@
     "t": 4,
     "i": "bdfe43faf83b2816d18368419c0d4a95.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/1109663",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11332,
@@ -107021,7 +107052,10 @@
     "t": 5,
     "i": "sample_65874dcb59de6a09ad2c38168e1ccbb5.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/1835716",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11333,
@@ -107029,7 +107063,10 @@
     "t": 4,
     "i": "bcb5fbe21014757a259367003dc89495.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/5075089",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11334,
@@ -107037,7 +107074,10 @@
     "t": 3,
     "i": "sample_82bb068eed21fb1f2f01b29f0dcb465e.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/17016945",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11335,
@@ -107078,7 +107118,10 @@
     "t": 4,
     "i": "sample_ff1596430ea299d58004ab82d1899c82.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/7777970",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11339,
@@ -107086,7 +107129,10 @@
     "t": 5,
     "i": "ccbdeff38d406aac88e22d9476b92059.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/769624",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11340,
@@ -107094,15 +107140,10 @@
     "t": 4,
     "i": "sample_af47ba37fb8305ea11f26565e936dc52.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/5110831",
-    "w": "Queen's Blade"
-  },
-  {
-    "u": 11341,
-    "n": "Dizzy (Gulity Gear)",
-    "t": 5,
-    "i": "sample_73bb2f0173bfc8f7ec18e136e4be075c.jpg",
-    "s": "https://chan.sankakucomplex.com/post/show/5491283",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11342,
@@ -107143,7 +107184,10 @@
     "t": 3,
     "i": "eilinqbre.jpg",
     "s": "https://vignette.wikia.nocookie.net/queensblade/images/a/a7/Eilinqbre.jpg/revision/latest?cb=20140508165937",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11346,
@@ -107151,7 +107195,10 @@
     "t": 4,
     "i": "sample_55a727bbc9b8ca3698ed0b797f4ab134.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/7777955",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11347,
@@ -107159,7 +107206,10 @@
     "t": 3,
     "i": "08b_glinda.jpg",
     "s": "https://quecosplayhago.files.wordpress.com/2013/09/08b-glinda.jpg",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11348,
@@ -107167,7 +107217,10 @@
     "t": 4,
     "i": "sample_7444aae7d0ee6bceafbbe0584c8b2162.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/3336815",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11349,
@@ -107175,7 +107228,10 @@
     "t": 4,
     "i": "sample_ea0f77c2b41990157b56bd983a33f612.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/5007726",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11350,
@@ -107183,7 +107239,10 @@
     "t": 5,
     "i": "002091.jpg",
     "s": "https://vignette.wikia.nocookie.net/queensblade/images/6/64/002091.JPG/revision/latest?cb=20150909153706",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11351,
@@ -107191,7 +107250,10 @@
     "t": 6,
     "i": "849884_2.jpg",
     "s": "https://vignette.wikia.nocookie.net/queensblade/images/c/c3/849884-2.jpg/revision/latest?cb=20150723114251",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11352,
@@ -107199,7 +107261,10 @@
     "t": 4,
     "i": "hyumina.png",
     "s": "https://vignette.wikia.nocookie.net/queensblade/images/e/ee/Hyumina.png/revision/latest?cb=20130627235014",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11353,
@@ -107207,7 +107272,10 @@
     "t": 5,
     "i": "sample_6363fec87ad654cd3678bf46a8fd9e08.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/459923",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11354,
@@ -107226,7 +107294,10 @@
     "t": 3,
     "i": "sample_2ce2902a256eccdbf4febaa918224725.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/1190341",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11357,
@@ -107234,15 +107305,10 @@
     "t": 5,
     "i": "joan_profile.png",
     "s": "https://vignette.wikia.nocookie.net/queensblade/images/e/ef/Joan_profile.png/revision/latest?cb=20181124140131",
-    "w": "Queen's Blade"
-  },
-  {
-    "u": 11358,
-    "n": "Junko Hattori (Demon King Daimao)",
-    "t": 4,
-    "i": "6dd427f6bcf993901cf020ed0eac8a5d.jpg",
-    "s": "https://chan.sankakucomplex.com/post/show/786508",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11359,
@@ -107261,7 +107327,10 @@
     "t": 4,
     "i": "sample_a4b80e113cc4d3c0ec049547986e8259.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/19217372",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11361,
@@ -107269,7 +107338,10 @@
     "t": 5,
     "i": "",
     "s": "https://chan.sankakucomplex.com/post/show/870401",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11362,
@@ -107277,7 +107349,10 @@
     "t": 3,
     "i": "kyuel_profile.jpg",
     "s": "https://vignette.wikia.nocookie.net/queensblade/images/c/ca/Kyuel_Profile.jpg/revision/latest?cb=20161105214740",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11363,
@@ -107285,7 +107360,10 @@
     "t": 4,
     "i": "sample_f47157dcd87465fdacc81dd3ad11b860.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/4457982",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11364,
@@ -107293,7 +107371,10 @@
     "t": 4,
     "i": "sample_6a12762223c3cdfdca12a45af223d980.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/1026058",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11365,
@@ -107301,7 +107382,10 @@
     "t": 5,
     "i": "sample_d2915a975ff749369a31a0aff62a5ab0.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/570448",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11366,
@@ -107309,7 +107393,10 @@
     "t": 3,
     "i": "lewis.jpg",
     "s": "https://vignette.wikia.nocookie.net/queensblade/images/d/d6/Lewis.jpg/revision/latest/scale-to-width-down/280?cb=20120921084027",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11367,
@@ -107317,7 +107404,10 @@
     "t": 4,
     "i": "sample_3a12b80ec95628161a5d017e1596021f.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/4906301",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11368,
@@ -107336,7 +107426,10 @@
     "t": 4,
     "i": "sample_5184794afccbc0cd552556e1e210bf6c.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/1289712",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11370,
@@ -107344,7 +107437,10 @@
     "t": 4,
     "i": "maria_vance_4.jpg",
     "s": "https://vignette.wikia.nocookie.net/queensblade/images/4/42/Maria_Vance_4.jpg/revision/latest?cb=20120731180841",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11371,
@@ -107352,7 +107448,10 @@
     "t": 4,
     "i": "maron.jpg",
     "s": "https://vignette.wikia.nocookie.net/queensblade/images/5/56/Maron.jpg/revision/latest?cb=20120327204250",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11372,
@@ -107371,7 +107470,10 @@
     "t": 4,
     "i": "melissa_kiss_1.png",
     "s": "https://vignette.wikia.nocookie.net/queensblade/images/1/1d/Melissa_Kiss_1.png/revision/latest?cb=20120930173507",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11374,
@@ -107379,7 +107481,10 @@
     "t": 6,
     "i": "sample_7c1f1cb83a5b0a73482a691a6ed9ea7e.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/1027343",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11375,
@@ -107387,7 +107492,10 @@
     "t": 4,
     "i": "sample_818da3370ad2b8fe159a5da86442da24.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/17838070",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11376,
@@ -107395,7 +107503,10 @@
     "t": 5,
     "i": "sample_a3a0f0b828892af18190f0f304608d65.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/5756466",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11377,
@@ -107403,15 +107514,10 @@
     "t": 4,
     "i": "mime__26_meena_profile.jpg",
     "s": "https://vignette.wikia.nocookie.net/queensblade/images/b/b7/Mime_%26_Meena_Profile.jpg/revision/latest?cb=20140504084550",
-    "w": "Queen's Blade"
-  },
-  {
-    "u": 11378,
-    "n": "Mina Majikina (Samurai Showdown)",
-    "t": 4,
-    "i": "sample_5f7b05c359888746ce40736c11a1956a.jpg",
-    "s": "https://chan.sankakucomplex.com/post/show/15034330",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11379,
@@ -107419,7 +107525,10 @@
     "t": 4,
     "i": "sample_8a88c797a5c91b30c6ee74614dfa92e1.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/966693",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11380,
@@ -107427,7 +107536,10 @@
     "t": 4,
     "i": "03f08aa39ddebadee901d3b292ff914f.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/1988283",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11381,
@@ -107435,7 +107547,10 @@
     "t": 4,
     "i": "sample_3e1a900d51c74746257771a0f6163682.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/7777938",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11382,
@@ -107454,7 +107569,10 @@
     "t": 4,
     "i": "kotone_kiss_1.png",
     "s": "https://vignette.wikia.nocookie.net/queensblade/images/c/cc/Kotone_Kiss_1.png/revision/latest?cb=20121001073734",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11384,
@@ -107462,7 +107580,10 @@
     "t": 4,
     "i": "uKABy3V5zqeDxUdf3nP9CffpqKEye0OCEnzrWfWp.jpg",
     "s": "https://vignette.wikia.nocookie.net/queensblade/images/6/6a/Audrey.jpg/revision/latest?cb=20130627235013",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11385,
@@ -107470,7 +107591,10 @@
     "t": 4,
     "i": "puia.png",
     "s": "https://vignette.wikia.nocookie.net/queensblade/images/c/c9/Puia.png/revision/latest?cb=20130627235827",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11386,
@@ -107478,7 +107602,10 @@
     "t": 4,
     "i": "b9bdb9287e7f37ba63c5546ac05f8796.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/5746398",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11387,
@@ -107486,7 +107613,10 @@
     "t": 5,
     "i": "qbsc_ranshel__26_sushel_2.jpg",
     "s": "https://vignette.wikia.nocookie.net/queensblade/images/b/bf/QBSC_Ranshel_%26_Sushel_2.jpg/revision/latest?cb=20130303135547",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11388,
@@ -107494,7 +107624,10 @@
     "t": 4,
     "i": "sample_e4fa823a1bb1b06e484634b2e0bd9afb.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/357524",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11389,
@@ -107502,7 +107635,10 @@
     "t": 4,
     "i": "344e52d9981a395e7b184ecbabb98bf0.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/2055843",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11390,
@@ -107510,7 +107646,10 @@
     "t": 4,
     "i": "dd32c29c2652fa784595a085cd2a855a.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/4735905",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11391,
@@ -107529,7 +107668,10 @@
     "t": 4,
     "i": "sample_161c0c7b37c8c132a11452d825d588fa.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/5240934",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11393,
@@ -107559,7 +107701,10 @@
     "t": 4,
     "i": "sample_a02e814bb7fcd3cd928dd72215c87387.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/4571490",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11396,
@@ -107567,7 +107712,10 @@
     "t": 4,
     "i": "403d1e9046c9207fd8b78c6d7fe6b1f2.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/5927605",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11397,
@@ -107575,7 +107723,10 @@
     "t": 4,
     "i": "d1xlqmxvyaaucpx.png",
     "s": "https://pbs.twimg.com/media/D1xlqMXVYAAuCpx.png",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11398,
@@ -107583,7 +107734,10 @@
     "t": 5,
     "i": "tenko.jpg",
     "s": "https://vignette.wikia.nocookie.net/queensblade/images/6/65/Tenko.jpg/revision/latest?cb=20130627235828",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11399,
@@ -107591,7 +107745,10 @@
     "t": 5,
     "i": "00d8939ac95d5a4fc5144ec0de49bb23.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/2122545",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11400,
@@ -107599,7 +107756,10 @@
     "t": 6,
     "i": "sample_e47751eb4f289631969260857a861849.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/3959449",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11401,
@@ -107607,7 +107767,10 @@
     "t": 5,
     "i": "d927e30bde15bfd7a9224913cbde4151.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/3209124",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11402,
@@ -107615,7 +107778,10 @@
     "t": 4,
     "i": "tino.jpg",
     "s": "https://vignette.wikia.nocookie.net/queensblade/images/9/99/Tino.jpg/revision/latest?cb=20130627235828",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11403,
@@ -107623,7 +107789,10 @@
     "t": 4,
     "i": "sample_66f7a384c336d62fcace3f35e04b2cf7.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/13966993",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11404,
@@ -107631,7 +107800,10 @@
     "t": 5,
     "i": "weiss_damage_2.png",
     "s": "https://vignette.wikia.nocookie.net/queensblade/images/5/55/Weiss_Damage_2.png/revision/latest?cb=20121004101124",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11405,
@@ -107639,7 +107811,10 @@
     "t": 4,
     "i": "sample_8ac10f44b7f81627007509be0761319b.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/14041143",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11406,
@@ -107647,7 +107822,10 @@
     "t": 4,
     "i": "sample_5e565c30706ccf5ac0e409efc282f861.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/5929013",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11407,
@@ -107655,7 +107833,10 @@
     "t": 4,
     "i": "b6f54fbbfa699420fb245c01baf74af1.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/5651569",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11408,
@@ -107663,7 +107844,10 @@
     "t": 4,
     "i": "sample_d515a2e2103cec23e047d9e5c41ead97.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/4473820",
-    "w": "Queen's Blade"
+    "w": "Queen's Blade",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 11409,
@@ -113906,12 +114090,13 @@
     "n": "Gorgon",
     "t": 8,
     "i": "sample_73422a83ef7571b4d28e1a099d8d0912.jpg",
+    "in": "https://cdn.donmai.us/original/d6/6e/__medusa_and_gorgon_fate_and_1_more_drawn_by_genyaky__d66eb2ac18ead40223d39ecbdd350d3d.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/5828309",
     "w": "Nasuverse",
     "d": "Servants - Avenger",
     "b": [
       "F",
-      "C"
+      "C","mr","de","st","dm","dr"
     ]
   },
   {
@@ -135339,14 +135524,6 @@
     "w": "Warcraft"
   },
   {
-    "u": 13989,
-    "n": "Strygwyr the Bloodseeker",
-    "t": 5,
-    "i": "dd99ac0d5633b6df6c6b560d1bf0e46c.jpg",
-    "s": "https://chan.sankakucomplex.com/post/show/3207972",
-    "w": "Warcraft"
-  },
-  {
     "u": 8875,
     "n": "Yvraine",
     "t": 8,
@@ -140968,7 +141145,7 @@
     "w": "Legend of Zelda",
     "d": "Skyward Sword",
     "b": [
-      "F"
+      "F","mp","sc","cl","ai"
     ]
   },
   {

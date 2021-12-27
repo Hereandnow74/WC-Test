@@ -118,7 +118,7 @@ const { value: rewards } = useField<any[]>('rewards')
 const { value: image } = useField<string>('image')
 
 const addPerk = handleSubmit((values) => {
-  proposeMission({ ...values, date: new Date().toString() }, () => successMessage.value = 'Perk was send successfully, await until I review and add it')
+  proposeMission({ ...values, date: new Date().toString() }, () => successMessage.value = 'Mission was send successfully, await until I review and add it')
   buttonActive.value = false
   setTimeout(() => { buttonActive.value = true; successMessage.value = ''; errorMessage.value = '' }, 30 * 1000)
 })

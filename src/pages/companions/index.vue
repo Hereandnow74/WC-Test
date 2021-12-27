@@ -242,7 +242,7 @@ const filteredCharacters = computed(() => {
   if (isLimited.value) {
     sopt = {
       $and: [
-        { t: tier.value !== 0 ? `${tier.value}` : '!z' },
+        { t: tier.value !== 0 ? `=${tier.value}` : '!z' },
         { n: sr },
         {
           $or: [

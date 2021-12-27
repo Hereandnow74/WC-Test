@@ -5,6 +5,17 @@
     </h2>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
+        27 December 2021
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>125 new user submitted Characters.</li>
+        <li>7 new user submitted Worlds.</li>
+        <li>Extended companion search help (on the Help page)</li>
+        <li>Bugfixes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
         25 December 2021
       </h3>
       <ul class="list-decimal list-inside">
@@ -14,6 +25,7 @@
         <li>Simple Notes App</li>
         <li>Missions page(just to check what missions currently submitted)</li>
         <li>6 new user submitted Worlds.</li>
+        <li>2 new DLC perks.</li>
         <li>Bugfixes</li>
       </ul>
     </div>

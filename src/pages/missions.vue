@@ -13,13 +13,17 @@
           <div>Scope: {{ mission.scope }}</div>
         </div>
         <Desc :desc="mission.desc" />
-        Requirements:
-        <div v-for="req in mission.requirements" :key="req.value" class="pl-4">
-          {{ req.value }}
+        <div v-if="mission.requirements.length">
+          Requirements:
+          <div v-for="req in mission.requirements" :key="req.value" class="pl-4">
+            {{ req.value }}
+          </div>
         </div>
-        Rewards:
-        <div v-for="rew in mission.rewards" :key="rew.value" class="pl-4">
-          {{ rew.value }}
+        <div v-if="mission.rewards.length">
+          Rewards:
+          <div v-for="rew in mission.rewards" :key="rew.value" class="pl-4">
+            {{ rew.value }}
+          </div>
         </div>
       </div>
     </div>

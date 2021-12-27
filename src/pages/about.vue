@@ -1,13 +1,13 @@
 <template>
   <div class="max-w-screen-md mt-8 lg:pl-0 pb-8 text-lg">
     <div class="bg-green-100 dark:bg-green-900 p-4 shadow-lg rounded dark:shadow-white flex flex-col gap-4">
-      <h3 class="text-xl text-center">
+      <h3 class="text-2xl text-center">
         About Page
       </h3>
       <div>
         Time I spend on Interactive Waifu Catalog so far -
-        <span class="text-amber-500 text-2xl">379</span> hours in
-        <span class="text-amber-500 text-2xl">96</span> days.
+        <span class="text-amber-500 text-2xl">404</span> hours in
+        <span class="text-amber-500 text-2xl">102</span> days.
       </div>
       <div>
         If you found some bugs, have any questions about Interactive, suggestions, collaborations or you want to hire me
@@ -35,6 +35,16 @@
           rel="noopener noreferrer"
           class="text-blue-500 underline"
         >SwiftRosenthal</a> instead.
+      </div>
+      <div>
+        <h4 class="text-2xl text-center">
+          Supporters
+        </h4>
+        <div class="flex flex-wrap gap-2 justify-center">
+          <div class="text-semibold">
+            BenFang322<pepicons:crown class="text-amber-400" />
+          </div>
+        </div>
       </div>
     </div>
   </div>

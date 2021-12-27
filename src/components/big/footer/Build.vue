@@ -245,7 +245,7 @@ const originText = computed(() => {
     'Drop-In': 'Dropped-In',
     'Walk-In': 'Walked-In',
     'Extra': `'Extra' with <b>${startingOrigin.value.cost}</b> additional cost`,
-    'Substitute': `Substitue as a <b>${startingOrigin.value.character}</b> of T${startingOrigin.value.tier}`,
+    'Substitute': `Substitute as a <b>${startingOrigin.value.character}</b> of T${startingOrigin.value.tier}`,
     'Possess': `Possess a <b>${startingOrigin.value.character}</b> of T${startingOrigin.value.tier}`,
   } as Record<string, string>
 
@@ -253,7 +253,7 @@ const originText = computed(() => {
 })
 
 async function finishBuild() {
-  const confirm = await confirmDialog('This action will lock all \'chargen\' perks and if you return any of your choosen perks/companions you will only receive 80% of their cost back.')
+  const confirm = await confirmDialog('This action will lock all \'chargen\' perks and if you return any of your chosen perks/companions you will only receive 80% of their cost back.')
   if (confirm)
     flags.value.chargen = false
 }
