@@ -158,14 +158,14 @@ export const LINKS = computed(() => {
   const allCats = {
     intensity,
     origin,
-    'binding': [...bindings, ...lures, ...lureExpansions, ...otherControls],
+    'binding': [...bindings, ...lures, ...lureExpansions, ...otherControls, ...DLCbindings],
     'heritage': heritages,
     'talents/ride': rides,
-    'talents/home': homes,
+    'talents/home': [...homes, ...DLChomes],
     'talents/defense': defenses,
-    'talents/talent': talents,
-    'talents/perks': perks,
-    'talents/specific': [...genericPerks, ...waifu_perks],
+    'talents/talent': [...talents, ...DLCtalents],
+    'talents/perks': [...perks, ...DLCperks],
+    'talents/specific': [...genericPerks, ...waifu_perks, ...DLCgenericPerks],
   }
   for (const category of Object.entries(allCats)) {
     for (const entry of category[1])

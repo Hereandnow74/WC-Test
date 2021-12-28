@@ -335,9 +335,12 @@
   {"worldName":"Miraclous: Tales of Ladybug and Cat Noir","rating":2},
   {"worldName":"Yuki Yuna is a Hero","rating":7},
   {"worldName":"Archer","rating":2},
+  {"worldName":"Supernatural","rating":5,"image":"https://c.tenor.com/p8OiLUApwWUAAAAC/supernatural-intro.gif"},
   {"worldName":"Innocent Witches","rating":3},
   {"worldName":"Life is strange","rating":6},
   {"worldName":"Life With a Slave - Teaching Feeling","rating":2},
   {"worldName":"Orc Hero Story – Discovery Chronicles","rating":5,"condition":[{"rating":6,"name":"War of Vastonia"}]},
-  {"worldName":"Takarakuji de 40 Oku Atattanda kedo Isekai ni Ijuusuru","rating":3}
+  {"worldName":"Takarakuji de 40 Oku Atattanda kedo Isekai ni Ijuusuru","rating":3},
+  {"worldName":"Ben 10","rating":10,"condition":[{"name":"Clasic","rating":6},{"rating":9,"name":"Alien Force"},{"name":"Ultimate","rating":8},{"rating":10,"name":"Omniverse"}]},
+  {"worldName":"Summertime Saga","rating":2}
 ]

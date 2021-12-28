@@ -2123,7 +2123,8 @@
     "b": [
       "F",
       "U",
-      "me"
+      "me",
+      "hp"
     ]
   },
   {
@@ -2734,7 +2735,8 @@
     "t": 6,
     "i": "StarKiller-Star-Wars-Force-Awakens-1024x512.jpg",
     "s": "https://fictionhorizon.com/wp-content/uploads/2021/07/StarKiller-Star-Wars-Force-Awakens-1024x512.jpg",
-    "w": "Star Wars ",
+    "w": "Star Wars",
+    "d": "Other",
     "b": [
       "M"
     ]
@@ -3296,7 +3298,9 @@
     "s": "https://i.pinimg.com/originals/fd/09/34/fd09346b7949e130cc1021dd05742019.jpg",
     "w": "Magic: The Gathering",
     "b": [
-      "M"
+      "M",
+      "hp",
+      "me"
     ],
     "k": "Werewob"
   },
@@ -3633,7 +3637,8 @@
     "t": 2,
     "i": "225024-19607-shmi-skywalker.jpg",
     "s": "https://comicvine1.cbsistatic.com/uploads/scale_small/1/10376/225024-19607-shmi-skywalker.jpg",
-    "w": "Prequal Trilogy/Clone Wars Era",
+    "w": "Star Wars",
+    "d": "Prequel Trilogy",
     "b": [
       "F"
     ],
@@ -8253,7 +8258,8 @@
     "t": 5,
     "i": "https://i.imgur.com/rgJktMVm.png",
     "s": "https://us.v-cdn.net/6025736/uploads/editor/cm/8r6snypyzwzh.png",
-    "w": "Star Wars ",
+    "w": "Star Wars",
+    "d": "Other",
     "b": [
       "M",
       "ps",
@@ -16960,14 +16966,14 @@
     "w": "H.P. Lovecraft",
     "d": "",
     "b": [
-      "O",
       "id",
       "un",
       "ur",
       "dr",
       "im",
       "cr",
-      "hz"
+      "hz",
+      "F"
     ],
     "k": "Templar9999"
   },
@@ -20069,5 +20075,1164 @@
       "F"
     ],
     "k": "Nisantis"
+  },
+  {
+    "u": 9785727,
+    "n": "Xingqui",
+    "t": 4,
+    "i": "__xingqiu_genshin_impact_drawn_by_anbe_yoshirou__sample-0de8a6fd80eb172e581cd130eaa63bfb.jpg",
+    "s": "https://cdn.donmai.us/sample/0d/e8/__xingqiu_genshin_impact_drawn_by_anbe_yoshirou__sample-0de8a6fd80eb172e581cd130eaa63bfb.jpg",
+    "w": "Genshin Impact",
+    "d": "Genshin Impact (Liyue)",
+    "b": [
+      "sd",
+      "pc",
+      "hl",
+      "sc",
+      "cl",
+      "M"
+    ],
+    "in": "https://cdn.donmai.us/sample/34/06/__xingqiu_genshin_impact_drawn_by_w4pz__sample-3406bb13cb497da6bef1717d8f529f44.jpg",
+    "k": "OmegaSpark"
+  },
+  {
+    "u": 8297508,
+    "n": "Xiao",
+    "t": 6,
+    "i": "__xiao_genshin_impact_drawn_by_fractalmagnolia__46cd385f7d7441ec006bcfa67ed94bd2.png",
+    "s": "https://cdn.donmai.us/original/46/cd/__xiao_genshin_impact_drawn_by_fractalmagnolia__46cd385f7d7441ec006bcfa67ed94bd2.png",
+    "w": "Genshin Impact",
+    "d": "Genshin Impact (Liyue)",
+    "b": [
+      "de",
+      "cl",
+      "di",
+      "F"
+    ],
+    "in": "https://cdn.donmai.us/sample/f9/cd/__xiao_genshin_impact_drawn_by_nasaniliu__sample-f9cdd6d5f1df6d01cc298c157757533f.jpg",
+    "k": "OmegaSpark"
+  },
+  {
+    "u": 9116756,
+    "n": "Thoma",
+    "t": 5,
+    "i": "__thoma_genshin_impact_drawn_by_nyansan_oekaki__sample-0532d5f91da119a5215e98d48dc4ba42.jpg",
+    "s": "https://cdn.donmai.us/sample/05/32/__thoma_genshin_impact_drawn_by_nyansan_oekaki__sample-0532d5f91da119a5215e98d48dc4ba42.jpg",
+    "w": "Genshin Impact",
+    "d": "Genshin Impact (Inazuma)",
+    "b": [
+      "sc",
+      "cl",
+      "M"
+    ],
+    "in": "https://cdn.donmai.us/sample/53/c7/__thoma_genshin_impact_drawn_by_emily_ebarrola__sample-53c7c9d42bcc548e1997c2ea4acaa041.jpg",
+    "k": "OmegaSpark"
+  },
+  {
+    "u": 3144432,
+    "n": "Razor",
+    "t": 5,
+    "i": "__razor_genshin_impact_drawn_by_papajay_jennygin2__sample-2cbe51a6653045100666c55f5bca2f6a.jpg",
+    "s": "https://cdn.donmai.us/sample/2c/be/__razor_genshin_impact_drawn_by_papajay_jennygin2__sample-2cbe51a6653045100666c55f5bca2f6a.jpg",
+    "w": "Genshin Impact",
+    "d": "Genshin Impact (Mondstadt)",
+    "b": [
+      "mt",
+      "sd",
+      "M"
+    ],
+    "in": "https://peach.paheal.net/_images/2f8875fde1837360e994caa262deac8c/4657036%20-%20Genshin_Impact%20Pawrncrackers%20Razor%20tagme.jpg",
+    "k": "OmegaSpark"
+  },
+  {
+    "u": 4688404,
+    "n": "Kaeya",
+    "t": 5,
+    "i": "__kaeya_genshin_impact_drawn_by_hiiro_coinxtossxdive__sample-c6630f2a41b9e5aa481c5428f994c883.jpg",
+    "s": "https://cdn.donmai.us/sample/c6/63/__kaeya_genshin_impact_drawn_by_hiiro_coinxtossxdive__sample-c6630f2a41b9e5aa481c5428f994c883.jpg",
+    "w": "Genshin Impact",
+    "d": "Genshin Impact (Mondstadt)",
+    "b": [
+      "cl",
+      "sc",
+      "dr",
+      "M"
+    ],
+    "in": "https://i.imgur.com/KYElTrj.jpg",
+    "k": "OmegaSpark"
+  },
+  {
+    "u": 6660827,
+    "n": "Kaedehara Kazuha",
+    "t": 5,
+    "i": "__kaedehara_kazuha_genshin_impact_drawn_by_uglykao__sample-ce98aa3d093308621a9358b26b23f1fa.jpg",
+    "s": "https://cdn.donmai.us/sample/ce/98/__kaedehara_kazuha_genshin_impact_drawn_by_uglykao__sample-ce98aa3d093308621a9358b26b23f1fa.jpg",
+    "w": "Genshin Impact",
+    "d": "Genshin Impact (Inazuma)",
+    "b": [
+      "cl",
+      "di",
+      "sc",
+      "M"
+    ],
+    "in": "https://cdn.donmai.us/original/38/3e/__kaedehara_kazuha_genshin_impact_drawn_by_haruya_lajoon__383e9f176b2835df22fe44bc326d9380.png",
+    "k": "OmegaSpark"
+  },
+  {
+    "u": 5169774,
+    "n": "Gorou",
+    "t": 5,
+    "i": "__gorou_genshin_impact_drawn_by_r_744__sample-5c64ba6831688482327092a7772b863a.jpg",
+    "s": "https://cdn.donmai.us/sample/5c/64/__gorou_genshin_impact_drawn_by_r_744__sample-5c64ba6831688482327092a7772b863a.jpg",
+    "w": "Genshin Impact",
+    "d": "Genshin Impact (Inazuma)",
+    "b": [
+      "dh",
+      "M"
+    ],
+    "in": "https://cdn.donmai.us/sample/4d/ae/__gorou_genshin_impact_drawn_by_nasaniliu__sample-4daea9957a266d383d3c2497c6ee9a02.jpg",
+    "k": "OmegaSpark"
+  },
+  {
+    "u": 9915123,
+    "n": "Chongyun",
+    "t": 5,
+    "i": "__chongyun_genshin_impact_drawn_by_cwilocky__f07789e665f67e808a29ba979874df57.jpg",
+    "s": "https://cdn.donmai.us/original/f0/77/__chongyun_genshin_impact_drawn_by_cwilocky__f07789e665f67e808a29ba979874df57.jpg",
+    "w": "Genshin Impact",
+    "d": "Genshin Impact (Liyue)",
+    "b": [
+      "sd",
+      "nn",
+      "cl",
+      "M"
+    ],
+    "in": "https://i.imgur.com/jrtuXG3.jpg",
+    "k": "OmegaSpark"
+  },
+  {
+    "u": 6011023,
+    "n": "Bennett",
+    "t": 4,
+    "i": "1tb5s0swj4e61.jpg",
+    "s": "https://i.redd.it/1tb5s0swj4e61.jpg",
+    "w": "Genshin Impact",
+    "d": "Genshin Impact (Mondstadt)",
+    "b": [
+      "hl",
+      "lm",
+      "sd",
+      "M"
+    ],
+    "in": "https://i.imgur.com/s6Du2oW.jpg",
+    "k": "OmegaSpark"
+  },
+  {
+    "u": 7407136,
+    "n": "Arataki Itto",
+    "t": 6,
+    "i": "__arataki_itto_genshin_impact_drawn_by_goroo_eneosu__sample-f5853fd9da12a766454d1587a6ae0a29.jpg",
+    "s": "https://cdn.donmai.us/sample/f5/85/__arataki_itto_genshin_impact_drawn_by_goroo_eneosu__sample-f5853fd9da12a766454d1587a6ae0a29.jpg",
+    "w": "Genshin Impact",
+    "d": "Genshin Impact (Inazuma)",
+    "b": [
+      "dm",
+      "dh",
+      "mt",
+      "M"
+    ],
+    "in": "https://cdn.donmai.us/sample/04/2c/__arataki_itto_genshin_impact_drawn_by_riikochan__sample-042c47cb9ee414918de8330717a72f2d.jpg",
+    "k": "OmegaSpark"
+  },
+  {
+    "u": 8497998,
+    "n": "Albedo",
+    "t": 6,
+    "i": "__albedo_genshin_impact_drawn_by_tachitsu_teto__sample-5ced39c4b4ba6e79f5a2e77007a0a4c5.jpg",
+    "s": "https://cdn.donmai.us/sample/5c/ed/__albedo_genshin_impact_drawn_by_tachitsu_teto__sample-5ced39c4b4ba6e79f5a2e77007a0a4c5.jpg",
+    "w": "Genshin Impact",
+    "d": "Genshin Impact (Mondstadt)",
+    "b": [
+      "tc",
+      "sn",
+      "ad",
+      "hz",
+      "cl",
+      "M"
+    ],
+    "in": "https://i.imgur.com/Jkt60ra.jpg",
+    "k": "OmegaSpark"
+  },
+  {
+    "u": 6514016,
+    "n": "Deonora",
+    "t": 8,
+    "i": "85320815a18bca4843e236462fba51fd.jpg",
+    "s": "https://i.pinimg.com/236x/85/32/08/85320815a18bca4843e236462fba51fd.jpg",
+    "w": "Monster Girl Encyclopedia",
+    "d": "",
+    "b": [
+      "dg",
+      "F"
+    ],
+    "k": "Time Hollow"
+  },
+  {
+    "u": 2840952,
+    "n": "All for one",
+    "t": 8,
+    "i": "__all_for_one_boku_no_hero_academia_drawn_by_tunamayo_dsasd751__sample-aec4542da67c81b884f77d79a3bf0198.jpg",
+    "s": "https://cdn.donmai.us/sample/ae/c4/__all_for_one_boku_no_hero_academia_drawn_by_tunamayo_dsasd751__sample-aec4542da67c81b884f77d79a3bf0198.jpg",
+    "w": "My Hero Academia",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "oneye"
+  },
+  {
+    "u": 2065356,
+    "n": "Cleopatra",
+    "t": 3,
+    "i": "PaintingCleopatra.jpg",
+    "s": "https://ae01.alicdn.com/kf/H3c05a71f5567462490e748e346592b92N/Top-sale-Full-Square-round-Diamond-Painting-Cleopatra-egypt-queen-5D-Diy-Diamond-Embroidery-woman-Mosaic.jpg_Q90.jpg_.webp",
+    "w": "Real Life",
+    "d": "",
+    "b": [
+      "pc",
+      "sc",
+      "F"
+    ],
+    "k": "Templar9999 "
+  },
+  {
+    "u": 3410039,
+    "n": "Rosemary Winters",
+    "t": 6,
+    "i": "__rosemary_winters_resident_evil_and_1_more_drawn_by_haraya_manawari__sample-d1c9743ee03d5fceae47f4333fc09980.jpg",
+    "s": "https://cdn.donmai.us/sample/d1/c9/__rosemary_winters_resident_evil_and_1_more_drawn_by_haraya_manawari__sample-d1c9743ee03d5fceae47f4333fc09980.jpg",
+    "w": "Resident Evil",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "oneye"
+  },
+  {
+    "u": 8730572,
+    "n": "Chel",
+    "t": 1,
+    "i": "DidiEsmeralda-922462-Chel.jpg",
+    "s": "http://pictures.hentai-foundry.com/d/DidiEsmeralda/922462/DidiEsmeralda-922462-Chel.jpg",
+    "w": "Road to El Dorado",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "in": "http://pictures.hentai-foundry.com/k/kanzass/942103/kanzass-942103-Chel_The_Road_to_El_Dorado.jpg",
+    "k": "Templar9999 "
+  },
+  {
+    "u": 7997756,
+    "n": "Katya",
+    "t": 1,
+    "i": "Katyasummer.png",
+    "s": "https://wiki.summertimesaga.com/images/thumb/4/40/Katya_icon.png/95px-Katya_icon.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 4070636,
+    "n": "Daisy",
+    "t": 2,
+    "i": "Daisysummer.png",
+    "s": "https://wiki.summertimesaga.com/images/c/c1/Daisy.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 5585346,
+    "n": "Aqua",
+    "t": 2,
+    "i": "Aquasummer.png",
+    "s": "https://wiki.summertimesaga.com/images/4/44/Aqua.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 1243949,
+    "n": "Svetlana",
+    "t": 2,
+    "i": "Svetlana.png",
+    "s": "https://wiki.summertimesaga.com/images/b/b5/Svetlana.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 1452907,
+    "n": "Raz",
+    "t": 2,
+    "i": "100px-Raz_icon.png",
+    "s": "https://wiki.summertimesaga.com/images/thumb/2/21/Raz_icon.png/100px-Raz_icon.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 4816914,
+    "n": "Nadya",
+    "t": 2,
+    "i": "Nadya.png",
+    "s": "https://wiki.summertimesaga.com/images/b/b6/Nadya.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 4266058,
+    "n": "Khadne",
+    "t": 1,
+    "i": "Khadne_icon.png",
+    "s": "https://wiki.summertimesaga.com/images/8/8c/Khadne_icon.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 5153905,
+    "n": "Jab",
+    "t": 2,
+    "i": "Jabsummer.png",
+    "s": "https://wiki.summertimesaga.com/images/c/cd/Jab.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 1844871,
+    "n": "Igor",
+    "t": 2,
+    "i": "Igor.png",
+    "s": "https://wiki.summertimesaga.com/images/b/b7/Igor.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 8393282,
+    "n": "Goon",
+    "t": 2,
+    "i": "Goon.png",
+    "s": "https://wiki.summertimesaga.com/images/c/cd/Goon.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 9486335,
+    "n": "Dimitri",
+    "t": 2,
+    "i": "Dimitri.png",
+    "s": "https://wiki.summertimesaga.com/images/5/5d/Dimitri.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 3568356,
+    "n": "Yumi",
+    "t": 2,
+    "i": "Yumisummer.png",
+    "s": "https://wiki.summertimesaga.com/images/f/fb/Yumi.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 4605401,
+    "n": "Veronica",
+    "t": 1,
+    "i": "Veronicasummer.png",
+    "s": "https://wiki.summertimesaga.com/images/8/83/Veronica.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 3957902,
+    "n": "Tuuku",
+    "t": 1,
+    "i": "Tuuku.png",
+    "s": "https://wiki.summertimesaga.com/images/6/6d/Tuuku.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 2159115,
+    "n": "Tony",
+    "t": 1,
+    "i": "Tonysummer.png",
+    "s": "https://wiki.summertimesaga.com/images/9/9a/Tony.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 1399479,
+    "n": "Terry",
+    "t": 1,
+    "i": "Terrysummer.png",
+    "s": "https://wiki.summertimesaga.com/images/1/1a/Terry.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 3979697,
+    "n": "Sploosh",
+    "t": 1,
+    "i": "Sploosh.png",
+    "s": "https://wiki.summertimesaga.com/images/b/ba/Sploosh.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 7961928,
+    "n": "Somrak",
+    "t": 2,
+    "i": "Somrak.png",
+    "s": "https://wiki.summertimesaga.com/images/7/7d/Somrak.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 2659845,
+    "n": "Sara",
+    "t": 1,
+    "i": "Sarasummer.png",
+    "s": "https://wiki.summertimesaga.com/images/c/cb/Sara.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 4666224,
+    "n": "Rump",
+    "t": 2,
+    "i": "Rump.png",
+    "s": "https://wiki.summertimesaga.com/images/d/df/Rump.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 1201514,
+    "n": "Roz",
+    "t": 1,
+    "i": "Rozsummer.png",
+    "s": "https://wiki.summertimesaga.com/images/4/43/Roz.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 3520439,
+    "n": "Ricky",
+    "t": 2,
+    "i": "Rickysummer.png",
+    "s": "https://wiki.summertimesaga.com/images/c/c3/Ricky.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 6625230,
+    "n": "Priya",
+    "t": 2,
+    "i": "Priyasummer.png",
+    "s": "https://wiki.summertimesaga.com/images/d/d2/Priya.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 6831114,
+    "n": "Pilly",
+    "t": 2,
+    "i": "Pillysumemr.png",
+    "s": "https://wiki.summertimesaga.com/images/b/bd/Pilly.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 5466543,
+    "n": "Odette",
+    "t": 1,
+    "i": "Odettesummer.png",
+    "s": "https://wiki.summertimesaga.com/images/2/28/Odette.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 3406861,
+    "n": "Mr. Sato",
+    "t": 1,
+    "i": "Mr._Sato.png",
+    "s": "https://wiki.summertimesaga.com/images/2/2f/Mr._Sato.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 5656024,
+    "n": "Mr. Bubbles",
+    "t": 1,
+    "i": "Mr._Bubbles.png",
+    "s": "https://wiki.summertimesaga.com/images/b/be/Mr._Bubbles.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 5247840,
+    "n": "Micoe",
+    "t": 2,
+    "i": "Micoe.png",
+    "s": "https://wiki.summertimesaga.com/images/8/80/Micoe.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 5763385,
+    "n": "Melonia",
+    "t": 2,
+    "i": "Melonia.png",
+    "s": "https://wiki.summertimesaga.com/images/f/fa/Melonia.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 6841798,
+    "n": "Liu",
+    "t": 1,
+    "i": "Liusummer.png",
+    "s": "https://wiki.summertimesaga.com/images/3/35/Liu.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 3306920,
+    "n": "Lily",
+    "t": 1,
+    "i": "Lilysummer.png",
+    "s": "https://wiki.summertimesaga.com/images/0/0a/Lily.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 5502372,
+    "n": "Larry",
+    "t": 1,
+    "i": "Larrysummer.png",
+    "s": "https://wiki.summertimesaga.com/images/c/cc/Larry.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 3799937,
+    "n": "Kim (Yoyo)",
+    "t": 1,
+    "i": "Kim_Yoyo.png",
+    "s": "https://wiki.summertimesaga.com/images/1/14/Kim_%28Yoyo%29.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 7426011,
+    "n": "Kim",
+    "t": 2,
+    "i": "Kimsummer.png",
+    "s": "https://wiki.summertimesaga.com/images/8/82/Kim.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 7846784,
+    "n": "Keeves",
+    "t": 3,
+    "i": "Keeves.png",
+    "s": "https://wiki.summertimesaga.com/images/0/08/Keeves.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 7735044,
+    "n": "Kassy",
+    "t": 1,
+    "i": "Kassy.png",
+    "s": "https://wiki.summertimesaga.com/images/6/6b/Kassy.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 5867733,
+    "n": "Karl",
+    "t": 1,
+    "i": "Karlsummer.png",
+    "s": "https://wiki.summertimesaga.com/images/f/f0/Karl.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 7486687,
+    "n": "Justin",
+    "t": 1,
+    "i": "Justin.png",
+    "s": "https://wiki.summertimesaga.com/images/2/20/Justin.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 7120072,
+    "n": "Josephine",
+    "t": 1,
+    "i": "Josephine.png",
+    "s": "https://wiki.summertimesaga.com/images/f/f3/Josephine.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 5278933,
+    "n": "Joe",
+    "t": 2,
+    "i": "Joesummer.png",
+    "s": "https://wiki.summertimesaga.com/images/7/77/Joe.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 6789617,
+    "n": "Jiang",
+    "t": 1,
+    "i": "Jiang.png",
+    "s": "https://wiki.summertimesaga.com/images/6/69/Jiang.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 9590602,
+    "n": "Jane",
+    "t": 1,
+    "i": "Janesummer.png",
+    "s": "https://wiki.summertimesaga.com/images/1/1e/Jane.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 7531405,
+    "n": "Iwanka",
+    "t": 2,
+    "i": "Iwanka.png",
+    "s": "https://wiki.summertimesaga.com/images/6/60/Iwanka.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 1344884,
+    "n": "Ivy",
+    "t": 1,
+    "i": "Ivysummer.png",
+    "s": "https://wiki.summertimesaga.com/images/3/3f/Ivy.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 9712141,
+    "n": "Gamsay",
+    "t": 2,
+    "i": "Gamsay.png",
+    "s": "https://wiki.summertimesaga.com/images/d/da/Gamsay.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 1045621,
+    "n": "Cedric",
+    "t": 2,
+    "i": "Cedric.png",
+    "s": "https://wiki.summertimesaga.com/images/f/f8/Cedric.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 1379726,
+    "n": "Cassie",
+    "t": 1,
+    "i": "Cassiesummer.png",
+    "s": "https://wiki.summertimesaga.com/images/a/af/Cassie.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 5231952,
+    "n": "Angelica",
+    "t": 2,
+    "i": "Angelicasummer.png",
+    "s": "https://wiki.summertimesaga.com/images/7/7d/Angelica.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 5164137,
+    "n": "Tina",
+    "t": 1,
+    "i": "Tinasummer.png",
+    "s": "https://wiki.summertimesaga.com/images/a/a8/Tina.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 5181951,
+    "n": "Tammy",
+    "t": 1,
+    "i": "Tammy.png",
+    "s": "https://wiki.summertimesaga.com/images/0/08/Tammy.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 5381804,
+    "n": "Richard",
+    "t": 1,
+    "i": "Richard.png",
+    "s": "https://wiki.summertimesaga.com/images/f/f0/Richard.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 7959122,
+    "n": "Lucy",
+    "t": 1,
+    "i": "Lucysummer.png",
+    "s": "https://wiki.summertimesaga.com/images/0/05/Lucy.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 5015124,
+    "n": "Helen",
+    "t": 1,
+    "i": "Helen.png",
+    "s": "https://wiki.summertimesaga.com/images/8/83/Helen.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 1418044,
+    "n": "Harold",
+    "t": 2,
+    "i": "Harold.png",
+    "s": "https://wiki.summertimesaga.com/images/7/75/Harold.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 2133695,
+    "n": "Grace",
+    "t": 1,
+    "i": "Gracesummer.png",
+    "s": "https://wiki.summertimesaga.com/images/1/17/Grace.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 8185093,
+    "n": "Earl",
+    "t": 2,
+    "i": "Earl.png",
+    "s": "https://wiki.summertimesaga.com/images/f/f5/Earl.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 9283193,
+    "n": "Crystal",
+    "t": 1,
+    "i": "Crystalsummer.png",
+    "s": "https://wiki.summertimesaga.com/images/3/31/Crystal.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 7873479,
+    "n": "Consuela",
+    "t": 1,
+    "i": "Consuela.png",
+    "s": "https://wiki.summertimesaga.com/images/1/15/Consuela.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 9971655,
+    "n": "Clyde",
+    "t": 1,
+    "i": "Clyde.png",
+    "s": "https://wiki.summertimesaga.com/images/d/d7/Clyde.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 3702334,
+    "n": "Beth",
+    "t": 1,
+    "i": "Bethsummer.png",
+    "s": "https://wiki.summertimesaga.com/images/a/a2/Beth.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 1178455,
+    "n": "Mrs. Smith",
+    "t": 2,
+    "i": "Mrs._Smith.png",
+    "s": "https://wiki.summertimesaga.com/images/b/b5/Mrs._Smith.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 6496835,
+    "n": "Ms. Ross",
+    "t": 2,
+    "i": "Ms._Ross.png",
+    "s": "https://wiki.summertimesaga.com/images/a/ad/Ms._Ross.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 3350330,
+    "n": "Ms. Okita",
+    "t": 2,
+    "i": "Ms._Okita.png",
+    "s": "https://wiki.summertimesaga.com/images/e/ed/Ms._Okita.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 2467871,
+    "n": "Ms. Dewitt",
+    "t": 2,
+    "i": "Ms._Dewitt.png",
+    "s": "https://wiki.summertimesaga.com/images/1/1c/Ms._Dewitt.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 5816866,
+    "n": "Coach Bridget",
+    "t": 2,
+    "i": "Coach_Bridget.png",
+    "s": "https://wiki.summertimesaga.com/images/6/64/Coach_Bridget.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 3878307,
+    "n": "Ms. Bissette",
+    "t": 2,
+    "i": "Ms._Bissette.png",
+    "s": "https://wiki.summertimesaga.com/images/7/7b/Ms._Bissette.png",
+    "w": "Summertime Saga",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 7181074,
+    "n": "Adda the White",
+    "t": 1,
+    "i": "ce84b1a518eb942c331cee44197f0632.jpeg",
+    "s": "https://custom-gwent.com/cardsBg/ce84b1a518eb942c331cee44197f0632.jpeg",
+    "w": "The Witcher",
+    "d": "",
+    "b": [
+      "pc",
+      "F"
+    ],
+    "in": "https://img.rule34.xxx//images/140/142d5e949ae469ca730e997159a056c5e7a8b44d.jpg",
+    "k": "Darnoc"
+  },
+  {
+    "u": 1044827,
+    "n": "Ra, the Winged Dragon",
+    "t": 9,
+    "i": "__the_winged_dragon_of_ra_and_the_winged_dragon_of_ra_yu_gi_oh_drawn_by_blondynkitezgraja__ce447fe4881a90bf457ef1b57cd6f211.jpg",
+    "s": "https://cdn.donmai.us/original/ce/44/__the_winged_dragon_of_ra_and_the_winged_dragon_of_ra_yu_gi_oh_drawn_by_blondynkitezgraja__ce447fe4881a90bf457ef1b57cd6f211.jpg",
+    "w": "Yu-Gi-Oh!",
+    "d": "",
+    "b": [
+      "gd",
+      "dg",
+      "dr",
+      "id",
+      "F"
+    ],
+    "k": "Templar9999 "
+  },
+  {
+    "u": 4157967,
+    "n": "Victor",
+    "t": 5,
+    "i": "Victorworm.jpg",
+    "s": "https://worm.fandom.com/wiki/File:Victor.jpg",
+    "w": "Worm",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "sporedruide"
   }
 ]

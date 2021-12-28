@@ -5,6 +5,16 @@
     </h2>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
+        28 December 2021
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>86 new user submitted Characters.</li>
+        <li>Empty Hand and 2 DLC perks</li>
+        <li>3 new user submitted Worlds.</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
         27 December 2021
       </h3>
       <ul class="list-decimal list-inside">

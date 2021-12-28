@@ -186,6 +186,8 @@ export function bindingAvailable(bin: Binding): boolean {
     return true
   }
   else {
+    if (bin.blacklist && findIndex(binding.value, { title: bin.blacklist[0] }) !== -1)
+      return false
     if (!bin.whitelist && findIndex(binding.value, { title: 'Additional Binding' }) !== -1)
       return true
     if (bin.whitelist && intersection(allEffects.value, bin.whitelist).length === (bin.needed || bin.whitelist.length))

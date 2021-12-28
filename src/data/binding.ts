@@ -26,6 +26,7 @@ export interface Binding {
   desc: string
   cost: number
   whitelist?: string[]
+  blacklist?: string[]
   element?: string
   special?: string
   image?: string
@@ -55,10 +56,20 @@ bindings.push({
 })
 
 bindings.push({
+  title: 'Empty Hand',
+  cost: -20,
+  type: 'Stamp',
+  whitelist: ['Company Stamp'],
+  blacklist: ['Megapixel'],
+  desc: 'You have the stamp binding, but not the physical stamp itself. All individuals you purchase or capture will still count as being bound by a stamp, but you will need to use other means to do the capturing.',
+})
+
+bindings.push({
   title: 'Megapixel',
   cost: 150,
   type: 'Stamp',
   whitelist: ['Company Stamp'],
+  blacklist: ['Empty Hand'],
   desc: 'Favored by stalkers everywhere, your stamp is now a digital app for your smart device. Just take a photo of the target waifu, rotate, zoom, and pan around a generated 3D model of her until you’ve found the right place for your tattoo, and apply the tattoo remotely. The same 72-hour waiting period and all of the related rules apply for the camera app as they do for the stamp. This is a company app and benefits from all such protections.',
 })
 
