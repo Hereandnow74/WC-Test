@@ -5,6 +5,19 @@
     </h2>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
+        01 January 2022
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>128 new user submitted Characters.</li>
+        <li>5 DLC perks</li>
+        <li>Proper tag filter system with include/exclude</li>
+        <li>When you click on 'Perk' tag it will take you to waifu perks</li>
+        <li>10 new user submitted Worlds.</li>
+        <li>Bugfixes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
         28 December 2021
       </h3>
       <ul class="list-decimal list-inside">

@@ -3,6 +3,9 @@ import { PerkFull } from './talents'
 interface DLCPerk extends PerkFull {
   dlc: string
   dlclink?: string
+  increment?: boolean
+  tree?: string
+  type?: string
 }
 
 // DLC Generic Perks
@@ -136,6 +139,16 @@ DLCgenericPerks.push({
   `,
 })
 
+DLCgenericPerks.push({
+  dlc: 'KatzSmile',
+  title: 'Worlds Apart',
+  requires: '(Any Yoinked companion)',
+  special: 'Chargen only. Not available in Gauntlet PvP.',
+  cost: 20,
+  desc: `Sometimes your potential companion is separated from you by an interdimensional vail. But the use of this perk will allow you to overcome all unthinkable boundaries and deliver them to you.
+  `,
+})
+
 // Misc DLC Perks
 
 export const DLCperks: DLCPerk[] = []
@@ -159,7 +172,7 @@ DLCperks.push({
 })
 
 DLCperks.push({
-  dlc: '???',
+  dlc: 'windshadow21',
   title: 'Normalcy',
   cost: 10,
   desc: `
@@ -246,6 +259,30 @@ DLCperks.push({
   title: 'Nice Guy',
   cost: 120,
   desc: 'Everyone will think that you\'re a nice guy. A friendly acquaintance. Even if you stab them in the guts, they wouldn\'t hold it against you. It doesn\'t matter what you do, as long as it\'s not outright murder or torture, people won\'t think badly about it, but some half-assed arguments might be needed to justify your actions. If you start killing or doing something worse to someone they care about more than themselves in front of them then the effect will quickly deteriorate.',
+})
+
+DLCperks.push({
+  dlc: 'Mortaegus’s Mod',
+  dlclink: 'https://forum.questionablequesting.com/threads/r34-economy-cyoa-thread.11289/page-568#post-3866836',
+  title: 'Patron Income',
+  cost: 1000,
+  multiple: true,
+  max: 99,
+  increment: true,
+  desc: 'You now receive an allotment of one point for every three days, which you may spend on anything that points can purchase from the waifu catalogue; this perk can be taken multiple times and its effects stack additively, but each additional purchase costs twice as much as the previous purchase, so while the first only costs one-thousand points, the second will cost two-thousand points, the third will cost three-thousand points, the fourth will cost four-thousand points, and so on and so on; three instances can be purchased in exchange for a tier eleven token',
+})
+
+DLCperks.push({
+  dlc: 'Mortaegus’s Mod',
+  dlclink: 'https://forum.questionablequesting.com/threads/r34-economy-cyoa-thread.11289/page-568#post-3866836',
+  title: 'Abandoned Assets',
+  cost: 10,
+  costVariants: [10, 100, 1000],
+  multiple: true,
+  desc: `You will find that your new world has a number of previously bound waifus who for some reason or another have been left to their own devices; perhaps they were accidentally misplaced in transition, or maybe their contractor had a sudden case of extremely violent death, or maybe they were deliberately abandoned; either way, something somehow resulted in their arrival in your new world, and they are now your problem; they know that they were intended to be kept as slaves by a master, and will be especially distrustful of anyone who approaches them, so attempting to capture them will be difficult at best and dangerous at worst; while they will have arrived together, they may or may not stay together, and they also may seek out local assistance or proactively take measures to evade being captured.
+  <p>Cost depends on number and tier of potential companions: T1-T4 [10]; T1-T7[100]; T1-T10[1000]</p>
+  <p>Total sum of the waifus cost's can't be less that a double of the amount payed.</p>
+  `,
 })
 
 // DLC home perks
@@ -504,4 +541,34 @@ DLCbindings.push({
   You are no longer limited to a single Binding. You may now purchase an additional Binding and expansions. You must still spend the credits as normal. This perk may be purchased multiple times. Its price will increase by 1 ticket each time. You are able to decide what purchased binding effects, including mental, are applied to any or all of your retinue. For example, you could Bind someone with the Shroud, then use Third-Generation Symbiote to share access to the Symbiote’s bio-armor as well. 
   `,
   requires: 'at least one Binding',
+})
+
+// DLC Ride Perks
+
+export const DLCridePerks: DLCPerk[] = []
+
+DLCridePerks.push({
+  dlc: 'KatzSmile',
+  title: 'Catch-A-Ride Custom Crew',
+  cost: 20,
+  desc: `
+  <p>Maybe you want your ship's crew to be less... uhm... biological in their nature. Or maybe you want a crew of demi-humans. Or crew of monster-girls.</p>
+  <p>This purchase will allow us to please your tastes.</p>
+  <p>Instead of a team of clones, the crew of your ship will be customized up to your tastes.</p>
+  <p>And accordingly, instead of a clone production facility, we will provide you with an automatic mini-factory for the production of AI-powered machines, summoning room for extra-dimensional creatures, or incubators for exotic organisms.</p>
+  <p>Just make a choice.</p>
+  `,
+  whitelist: ['Catch-A-Ride Crew Production Program'],
+})
+
+DLCridePerks.push({
+  dlc: 'KatzSmile',
+  title: 'Catch-A-Ride Crew Tier Upgrade',
+  cost: 40,
+  desc: `
+  <p>Perhaps you are not satisfied with the current power level of your crew.</p>
+  <p>This purchase will let you fix that.</p>
+  <p>One purchase and under your command now a crew equal to the T3 companions</p>
+  `,
+  whitelist: ['Catch-A-Ride Crew Production Program'],
 })

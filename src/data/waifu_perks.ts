@@ -1002,13 +1002,13 @@ waifu_perks.push({
 })
 waifu_perks.push({
   title: 'Star of Calamity',
-  waifu: 'Tamamo Vitch/Koyanskaya',
+  waifu: 'Tamamovitch Koyanskaya',
   from: 'Nasuverse',
   uid: 9915,
   tier: 10,
   image: '/img/waifu_perks/calamity.jpg',
-  cost: 900,
-  desc: 'Koyanskaya\'s attempt to collect nine tails has succeeded, ascending her into an alternative Beast IV. She maintains her abilities as a Servant, but with power befitting a Tier 10, and can assume her Beast form at will. Like regular Koyanskaya, Treasured Beast Koyanskaya also qualifies for special Alterzelu Symbiote theming. ',
+  cost: 800,
+  desc: 'Koyanskaya\'s attempt to collect nine tails has succeeded, ascending her into an alternative Beast IV. Koyanskaya is no longer limited to expressing one aspect of herself at a time, whether the Assassin- class Light form or the Foreigner-class Dark form, but can split into two and re-merge on contact. She gains raw power befitting a Tier 10, and can assume her Beast form at will when merged. Like regular Koyanskaya, Treasured Beast Koyanskaya also qualifies for special Alterzelu Symbiote theming',
 })
 waifu_perks.push({
   title: 'Golden Arms Redemption',

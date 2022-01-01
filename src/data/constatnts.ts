@@ -1,5 +1,6 @@
 import { isArray } from 'lodash-es'
-import { DLCgenericPerks, DLChomes, DLCperks, DLCtalents, DLCheritages, DLClureExpansions, DLCbindings, DLClures, DLCotherControls } from './DLCs'
+import { useRouter } from 'vue-router'
+import { DLCgenericPerks, DLChomes, DLCperks, DLCtalents, DLCheritages, DLClureExpansions, DLCbindings, DLClures, DLCotherControls, DLCridePerks } from './DLCs'
 import { intensity } from '~/data/intensity'
 import { origin } from '~/data/origin'
 import { bindings, lures, lureExpansions, otherControls } from '~/data/binding'
@@ -79,6 +80,8 @@ export const rulesList = [
   { title: 'NasuDLC', title2: 'Nasuverse DLC rules' },
 ]
 
+export const waifusThatHasPerk = waifu_perks.reduce((a, x) => (isArray(x.uid) ? x.uid.forEach(u => a[u] = x.title) : a[x.uid] = x.title, a), {})
+
 export const waifuTags = {
   F: { tag: 'Female', short: 'F', effect: '', desc: '', color: 'bg-pink-500' },
   M: { tag: 'Male', short: 'M', effect: '', desc: '', color: 'bg-blue-500' },
@@ -86,6 +89,30 @@ export const waifuTags = {
   U: { tag: 'By User', short: 'U', effect: '', desc: '', color: 'bg-warm-gray-600' },
   C: { tag: 'Canon', short: 'C', effect: '', desc: 'From canon spreadsheet', color: 'bg-yellow-400 text-black' },
   P: { tag: 'Perk', short: 'P', effect: '', desc: 'Have a specific waifu perk', color: 'bg-amber-200 text-black' },
+  hp: { tag: 'Hopper', short: 'hp', effect: '', desc: 'Have a world hopping power', color: 'bg-teal-500' },
+  dc: { tag: 'Doctor', short: 'dc', effect: '', desc: 'Trained in medicine', color: 'bg-teal-500' },
+  hl: { tag: 'Healer', short: 'hl', effect: '', desc: 'Supernatural healing ability', color: 'bg-teal-500' },
+  st: { tag: 'Sturdy', short: 'st', effect: '', desc: 'is known for handling disease, chemical medicine, or poisons.', color: 'bg-teal-500' },
+  hr: { tag: 'Harsh', short: 'hr', effect: '', desc: 'hails from a harsh climate.', color: 'bg-teal-500' },
+  hz: { tag: 'Hazard', short: 'hz', effect: '', desc: 'can ignore hazardous environments.', color: 'bg-teal-500' },
+  mt: { tag: 'Monster Tamer', short: 'mt', effect: '', desc: 'is known as a monster-tamer or otherwise being good with animals.', color: 'bg-teal-500' },
+  cl: { tag: 'Cool', short: 'cl', effect: '', desc: 'is known for keeping a cool head or having great willpower.', color: 'bg-teal-500' },
+  ml: { tag: 'Materialist', short: 'ml', effect: '', desc: 'known for having a material vice.', color: 'bg-teal-500' },
+  ps: { tag: 'Psychic', short: 'ps', effect: '', desc: 'is known as a psychic or mind-manipulator.', color: 'bg-teal-500' },
+  mp: { tag: 'Mind Powers', short: 'mp', effect: '', desc: 'is known as a psychic or mind-manipulator.', color: 'bg-teal-500' },
+  bj: { tag: 'Bodyjack', short: 'bj', effect: '', desc: 'is known for bodyjacking others.', color: 'bg-teal-500' },
+  dr: { tag: 'Drain HP/MP/SP', short: 'dr', effect: '', desc: 'can drain or feed on life, mana, or souls.', color: 'bg-teal-500' },
+  id: { tag: 'Instant Death', short: 'id', effect: '', desc: 'is known for inflicting instant death or not dying even when killed.', color: 'bg-teal-500' },
+  im: { tag: 'Immortality', short: 'im', effect: '', desc: 'is known for inflicting instant death or not dying even when killed.', color: 'bg-teal-500' },
+  pl: { tag: 'Polymorph', short: 'pl', effect: '', desc: 'is known for polymorphing others.', color: 'bg-teal-500' },
+  ur: { tag: 'Unstable Reality', short: 'ur', effect: '', desc: 'hails from a region where the local reality is unstable.', color: 'bg-teal-500' },
+  cr: { tag: 'Corrupting', short: 'cr', effect: '', desc: 'is known for forcibly bringing out others’ dark sides.', color: 'bg-teal-500' },
+  sc: { tag: 'Social', short: 'sc', effect: '', desc: 'is known for their ability to read or sense people.', color: 'bg-teal-500' },
+  di: { tag: 'Divination', short: 'di', effect: '', desc: 'is known for using divination or other non-technological remote viewing.', color: 'bg-teal-500' },
+  fm: { tag: 'Fate manipulation', short: 'fm', effect: '', desc: 'is known as a fate- or luck-manipulator.', color: 'bg-teal-500' },
+  lm: { tag: 'Luck manipulation', short: 'lm', effect: '', desc: 'is known as a fate- or luck-manipulator.', color: 'bg-teal-500' },
+  tm: { tag: 'Time manipulation', short: 'tm', effect: '', desc: 'is known as a time-manipulator.', color: 'bg-teal-500' },
+
   dm: { tag: 'Demon', short: 'dm', effect: '', desc: '', color: 'bg-[#e92929]' },
   dv: { tag: 'Devil', short: 'dv', effect: '', desc: '', color: 'bg-[#e92929]' },
   an: { tag: 'Angel', short: 'an', effect: '', desc: '', color: 'bg-[#ffffff] text-black' },
@@ -101,41 +128,21 @@ export const waifuTags = {
   sd: { tag: 'Student', short: 'sd', effect: '', desc: '', color: 'bg-[#e9d5ab] text-black' },
   wh: { tag: 'Witch', short: 'wh', effect: '', desc: '', color: 'bg-[#0d7703]' },
   ai: { tag: 'AI', short: 'ai', effect: '', desc: '', color: 'bg-gradient-to-t to-gray-400 from-gray-200 text-black' },
-  me: { tag: 'Mage', short: 'me', effect: '', desc: '', color: '' },
+  me: { tag: 'Mage', short: 'me', effect: '', desc: '', color: 'bg-teal-500' },
   cf: { tag: 'Chef', short: 'cf', effect: '', desc: '', color: 'bg-[#dd8812]' },
-  pi: { tag: 'Pirate', short: 'pi', effect: '', desc: '', color: '' },
-  tc: { tag: 'Teacher', short: 'tc', effect: '', desc: '', color: '' },
+  pi: { tag: 'Pirate', short: 'pi', effect: '', desc: '', color: 'bg-teal-500' },
+  tc: { tag: 'Teacher', short: 'tc', effect: '', desc: '', color: 'bg-teal-500' },
   ad: { tag: 'Android', short: 'ad', effect: '', desc: '', color: 'bg-gradient-to-t to-gray-400 from-gray-200 text-black' },
   cb: { tag: 'Cyborg', short: 'cb', effect: '', desc: '', color: 'bg-gradient-to-t to-gray-400 from-gray-200 text-black' },
   nn: { tag: 'Nun', short: 'nn', effect: '', desc: '', color: 'bg-gradient-to-t to-gray-400 from-black' },
   un: { tag: 'Undead', short: 'un', effect: '', desc: '', color: 'bg-[#2c5332]' },
-  sp: { tag: 'Superhero', short: 'sp', effect: '', desc: '', color: '' },
+  sp: { tag: 'Superhero', short: 'sp', effect: '', desc: '', color: 'bg-teal-500' },
   pc: { tag: 'Princess', short: 'pc', effect: '', desc: '', color: 'bg-[#dd12db]' },
   az: { tag: 'Amazon', short: 'az', effect: '', desc: '', color: 'bg-[#fdb978] text-black' },
-  de: { tag: 'Demigod', short: 'de', effect: '', desc: '', color: '' },
-  hp: { tag: 'Hopper', short: 'hp', effect: '', desc: 'Have a world hopping power' },
-  dc: { tag: 'Doctor', short: 'dc', effect: '', desc: 'Trained in medicine' },
-  hl: { tag: 'Healer', short: 'hl', effect: '', desc: 'Supernatural healing ability' },
-  st: { tag: 'Sturdy', short: 'st', effect: '', desc: 'is known for handling disease, chemical medicine, or poisons.' },
-  hr: { tag: 'Harsh', short: 'hr', effect: '', desc: 'hails from a harsh climate.' },
-  hz: { tag: 'Hazard', short: 'hz', effect: '', desc: 'can ignore hazardous environments.' },
-  mt: { tag: 'Monster Tamer', short: 'mt', effect: '', desc: 'is known as a monster-tamer or otherwise being good with animals.' },
-  cl: { tag: 'Cool', short: 'cl', effect: '', desc: 'is known for keeping a cool head or having great willpower.' },
-  ml: { tag: 'Materialist', short: 'ml', effect: '', desc: 'known for having a material vice.' },
-  ps: { tag: 'Psychic', short: 'ps', effect: '', desc: 'is known as a psychic or mind-manipulator.' },
-  mp: { tag: 'Mind Powers', short: 'mp', effect: '', desc: 'is known as a psychic or mind-manipulator.' },
-  bj: { tag: 'Bodyjack', short: 'bj', effect: '', desc: 'is known for bodyjacking others.' },
-  dr: { tag: 'Drain HP/MP/SP', short: 'dr', effect: '', desc: 'can drain or feed on life, mana, or souls.' },
-  id: { tag: 'Instant Death', short: 'id', effect: '', desc: 'is known for inflicting instant death or not dying even when killed.' },
-  im: { tag: 'Immortality', short: 'im', effect: '', desc: 'is known for inflicting instant death or not dying even when killed.' },
-  pl: { tag: 'Polymorph', short: 'pl', effect: '', desc: 'is known for polymorphing others.' },
-  ur: { tag: 'Unstable Reality', short: 'ur', effect: '', desc: 'hails from a region where the local reality is unstable.' },
-  cr: { tag: 'Corrupting', short: 'cr', effect: '', desc: 'is known for forcibly bringing out others’ dark sides.' },
-  sc: { tag: 'Social', short: 'sc', effect: '', desc: 'is known for their ability to read or sense people.' },
-  di: { tag: 'Divination', short: 'di', effect: '', desc: 'is known for using divination or other non-technological remote viewing.' },
-  fm: { tag: 'Fate manipulation', short: 'fm', effect: '', desc: 'is known as a fate- or luck-manipulator.' },
-  lm: { tag: 'Luck manipulation', short: 'lm', effect: '', desc: 'is known as a fate- or luck-manipulator.' },
-  tm: { tag: 'Time manipulation', short: 'tm', effect: '', desc: 'is known as a time-manipulator.' },
+  de: { tag: 'Demigod', short: 'de', effect: '', desc: '', color: 'bg-teal-500' },
+  el: { tag: 'Elf', short: 'el', effect: '', desc: '', color: 'bg-[#308418]' },
+  dl: { tag: 'Dark elf', short: 'dl', effect: '', desc: '', color: 'bg-[#5a3c68]' },
+  ct: { tag: 'Catgirl', short: 'ct', effect: '', desc: '', color: 'bg-[#de7b0a]' },
 }
 
 export const waifuTagsByTag = Object.values(waifuTags).reduce((a, x) => (a[x.tag] = x, a), {})
@@ -148,7 +155,7 @@ export const ALL_PERK_TITLES = computed(() => {
   const result = {}
   const all = [intensity, bindings, lures, lureExpansions, otherControls, heritages, homes, defenses, talents, perks,
     genericPerks, waifu_perks, DLCperks, DLChomes, DLCgenericPerks, DLCheritages, DLCtalents, DLClureExpansions,
-    DLCbindings, DLClures, DLCotherControls]
+    DLCbindings, DLClures, DLCotherControls, DLCridePerks]
   all.forEach(p => addTitles(result, p))
   return result
 })

@@ -20,7 +20,7 @@ export const [appMode, toggleAppMode] = useToggle()
 export const orientation = ref(false)
 export const activeTab = ref(0)
 
-export const tagToggles = reactive(Object.values(waifuTags).reduce((a, x) => (a[x.short] = true, a), {}))
+export const tagToggles = reactive(Object.values(waifuTags).reduce((a, x) => (a[x.short] = 0, a), {}))
 
 export function threeToggle(val: number) {
   switch (val) {

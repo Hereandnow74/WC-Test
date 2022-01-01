@@ -25,7 +25,13 @@
         >
           <template v-if="!isAlredyBought(charData.uid)">
             <Button size="Small" bg-color="bg-red-500" label="buy" @click="buyCompanion" />
-            <Button v-if="flags.chargen" size="Small" bg-color="bg-orange-500" label="yoink" @click="yoinkCompanion" />
+            <Button
+              v-if="flags.chargen && CHAR_COSTS[charData.tier - 1] <= fullStartingBudget * 0.2"
+              size="Small"
+              bg-color="bg-orange-500"
+              label="yoink"
+              @click="yoinkCompanion"
+            />
             <Button v-if="charData.tier !== 11" size="Small" bg-color="bg-violet-600" label="used" @click="usedModal = true" />
             <Button size="Small" label="capture" @click="captureCompanion" />
           </template>
@@ -77,13 +83,17 @@
           </div>
         </div>
         <div v-if="showTags" class="flex flex-wrap gap-1 text-sm justify-center">
-          <span
-            v-for="tag in charData.tags"
-            :key="tag"
+          <component
+            :is="tag.tag === 'Perk' ? 'router-link' : 'span'"
+            v-for="tag in tags"
+            :key="tag.tag"
             class="px-1 rounded-md cursor-pointer"
-            :class="waifuTags[tag] ? waifuTags[tag].color || 'bg-teal-600' : 'bg-teal-600'"
-            :title="waifuTags[tag] ? waifuTags[tag].desc || '' : ''"
-          >{{ waifuTags[tag] ? waifuTags[tag].tag : tag }}</span>
+            :class="tag.color"
+            :title="tag.desc"
+            :to="tag.tag === 'Perk' ? {path: '/talents/specific', hash: `#${waifusThatHasPerk[charData.uid]}`} : ''"
+          >
+            {{ tag.tag }}
+          </component>
         </div>
       </div>
     </div>
@@ -100,7 +110,7 @@
 
 <script lang='ts' setup>
 import { findIndex, random } from 'lodash-es'
-import { CHAR_COSTS, waifuTags } from '~/data/constatnts'
+import { CHAR_COSTS, waifusThatHasPerk, waifuTags } from '~/data/constatnts'
 import { isNSFW } from '~/logic'
 import { usePlayStore } from '~/store/play'
 import { useStore } from '~/store/store'
@@ -152,7 +162,7 @@ const charData = computed(() => {
       image: props.char.i,
       image_nsfw: props.char.in,
       sourceImage: props.char.s,
-      tags: props.char.b,
+      tags: props.char.b || [],
       nickname: props.char.k,
     }
     : props.char
@@ -160,8 +170,12 @@ const charData = computed(() => {
   return res
 })
 
-const { flags, companions, localUserCharacters, companionsUIDs, captureKoeff, underLoan, favorites } = useStore()
+const { flags, companions, localUserCharacters, companionsUIDs, captureKoeff, underLoan, favorites, fullStartingBudget } = useStore()
 const { loan, trHistory } = usePlayStore()
+
+const tags = computed(() => {
+  return charData.value.tags.map(x => waifuTags[x] ? waifuTags[x] : { tag: x, color: 'bg-teal-600', desc: '' })
+})
 
 const modalImageCmp = computed(() => {
   if (modalImage.value.includes('imgur') && modalImage.value.split('.').slice(-2, -1)[0].slice(-1) === 'm') {

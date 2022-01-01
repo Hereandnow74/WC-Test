@@ -125,6 +125,9 @@ function imageLink(link: string, uid: number) {
     else {
       if (uid > 100000)
         return `https://cdn.statically.io/gh/Om1cr0n/cat_thumb/main/docs/thumbs/${link}`
+      else
+      if (link.startsWith('[n]'))
+        return `https://cdn.statically.io/gh/Om1cr0n/cat_thumb/main/docs/thumbs/${link.slice(3)}`
       return `https://cdn.statically.io/gh/klassekatze/waifucatimg/master/imagecache_thumb/${link}`
     }
   }
