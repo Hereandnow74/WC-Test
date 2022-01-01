@@ -1,6 +1,9 @@
 <template>
   <div class="px-2 flex flex-col gap-2 overflow-y-auto min-h-0 scrollbar relative">
-    <Toggle v-model="editMode" class="absolute right-2 top-1" />
+    <div class="absolute right-2 top-1 flex gap-2">
+      <Toggle v-model="priceMode" title="Show prices" />
+      <Toggle v-model="editMode" title="Toggle manual remove mode" />
+    </div>
     <div id="World" class="text-gray-200">
       <h3 class="text-lg text-gray-400">
         World
@@ -51,6 +54,7 @@
           path="/binding"
           empty-message=""
           :edit-mode="editMode"
+          :price-mode="priceMode"
           @deletePerk="(el: any) => chooseBinding(el, el)"
         />
         <div v-if="!binding.length">
@@ -67,6 +71,7 @@
           path="/binding"
           empty-message="No Lures"
           :edit-mode="editMode"
+          :price-mode="priceMode"
           @deletePerk="(el: any) => chooseLure(el)"
         />
       </div>
@@ -78,6 +83,7 @@
           path="/binding"
           empty-message="No Other Controls"
           :edit-mode="editMode"
+          :price-mode="priceMode"
           @deletePerk="(el: any) => chooseOther(el, el)"
         />
       </div>
@@ -92,6 +98,7 @@
         path="/heritage"
         empty-message="No Heritage"
         :edit-mode="editMode"
+        :price-mode="priceMode"
         @deletePerk="(el: any) => chooseHeritage(el, el)"
       />
     </div>
@@ -112,6 +119,7 @@
             path="/talents/ride"
             empty-message="No Ride"
             :edit-mode="editMode"
+            :price-mode="priceMode"
             @deletePerk="(el: any) => chooseRide(el, el)"
           />
         </li>
@@ -126,6 +134,7 @@
             path="/talents/home"
             empty-message="No Home"
             :edit-mode="editMode"
+            :price-mode="priceMode"
             @deletePerk="(el: any) => chooseHome(el, el)"
           />
         </li>
@@ -140,6 +149,7 @@
             path="/talents/talent"
             empty-message="No Talents"
             :edit-mode="editMode"
+            :price-mode="priceMode"
             @deletePerk="(el: any) => chooseTalent(el, el)"
           />
         </li>
@@ -154,6 +164,7 @@
             path="/talents/defense"
             empty-message="No Defenses"
             :edit-mode="editMode"
+            :price-mode="priceMode"
             @deletePerk="(el: any) => (el.count = 0, chooseDefense(el, el))"
           />
         </li>
@@ -168,6 +179,7 @@
             path="/talents/perks"
             empty-message="No Misc Perks"
             :edit-mode="editMode"
+            :price-mode="priceMode"
             @deletePerk="(el: any) => choosePerk(el, el)"
           />
         </li>
@@ -182,6 +194,7 @@
             path="/talents/specific"
             empty-message="No Generic Perks"
             :edit-mode="editMode"
+            :price-mode="priceMode"
             @deletePerk="(el: any) => chooseGenericPerk(el, el)"
           />
         </li>
@@ -196,6 +209,7 @@
             path="/talents/specific"
             empty-message="No Waifu Perks"
             :edit-mode="editMode"
+            :price-mode="priceMode"
             @deletePerk="(el: any) => chooseWaifuPerk(el)"
           />
         </li>
@@ -239,6 +253,7 @@ const {
 const { activeChallenges } = useChallenges()
 
 const editMode = ref(false)
+const priceMode = ref(false)
 
 const originText = computed(() => {
   const variants = {

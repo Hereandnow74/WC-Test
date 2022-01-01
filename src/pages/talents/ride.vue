@@ -84,7 +84,7 @@
     </h3>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-2 pb-8">
       <PerkCard
-        v-for="ridePerk in rides.slice(-2)"
+        v-for="ridePerk in ridePerksWithDLC"
         :key="ridePerk.title"
         :perk="ridePerk"
         :bg="rideAvailable(ridePerk) ? 'true-gray-100 dark:true-gray-900 hover:(true-gray-200 dark:true-gray-800)'
@@ -102,11 +102,11 @@
 import { findIndex } from 'lodash-es'
 import { rides, rideDesc, Ride, PerkFull } from '~/data/talents'
 import { useTooltips } from '~/logic/misc'
-import { Perk, useStore } from '~/store/store'
-import { toggleShowAddRide, showAddRide, pickSimplePerk, chooseRide, rideAvailable } from '~/logic'
+import { useStore } from '~/store/store'
+import { toggleShowAddRide, showAddRide, pickSimplePerk, chooseRide, rideAvailable, isDLC } from '~/logic'
+import { DLCridePerks } from '~/data/DLCs'
 
 const { ridePerks, userRides, localUserRides } = useStore()
-
 const selectedRide = reactive({
   title: '',
   cost: 0,
@@ -115,6 +115,8 @@ const selectedRide = reactive({
 })
 
 const allRides = computed(() => Array.prototype.concat(userRides.value, localUserRides.value, rides.slice(0, -2)))
+
+const ridePerksWithDLC = computed(() => isDLC.value ? rides.slice(-2).concat(DLCridePerks) : rides.slice(-2))
 
 function selectRide(perk: Ride) {
   if (selectedRide.title !== perk.title) {

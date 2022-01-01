@@ -342,5 +342,15 @@
   {"worldName":"Orc Hero Story – Discovery Chronicles","rating":5,"condition":[{"rating":6,"name":"War of Vastonia"}]},
   {"worldName":"Takarakuji de 40 Oku Atattanda kedo Isekai ni Ijuusuru","rating":3},
   {"worldName":"Ben 10","rating":10,"condition":[{"name":"Clasic","rating":6},{"rating":9,"name":"Alien Force"},{"name":"Ultimate","rating":8},{"rating":10,"name":"Omniverse"}]},
-  {"worldName":"Summertime Saga","rating":2}
+  {"worldName":"Summertime Saga","rating":2},
+  {"worldName":"Kirby (Anime & Games)","rating":8,"image":"https://cdn.wikirby.com/c/c5/KSA_Popstar.jpg"},
+  {"worldName":"BTVS/Angel","rating":4},
+  {"worldName":"Campione!","rating":8},
+  {"worldName":"Cinnamon Bun","rating":3,"additional":"The world has a system, and actions taken while lacking a class will give a class appropriate to the actions(acting adorable gives cinnamon bun class, killing a bunch of people gives murderer class, etc) this only applies until you have a class. doing things associated with your class gives class skills. The skills start at rank F and are improved by doing them. Rank D and above require skill points, more skill points are required the higher rank the skill is. Killing things and doing class-appropriate actions levels you up and gives class skill points. Doing things unrelated to your class may give a general skill. General skill points are earned by completing quests for the world and killing dungeons."},
+  {"worldName":"Fairy Gone","rating":3},
+  {"worldName":"Soul Eater","rating":5,"image":"https://static1.cbrimages.com/wordpress/wp-content/uploads/2019/10/Soul-Eater-featured-image-Cropped-1.jpg","additional":"It is recommended that you purchase a madness nullifying or sanity protecting power/defense."},
+  {"worldName":"Hazbin Hotel/ Helluva Boss","rating":9,"additional":"If you take Extra and choose Sinner as your species you will be unable to leave the Pride Ring unless summoned or you at least filled Exit Stage left. Choosing Hellborn does not have this limitation. ","condition":[{"name":"Earth start","rating":4},{"rating":10,"name":"Extermination day"}]},
+  {"worldName":"She-Ra and the Princesses of Power","rating":5,"additional":"Captured Princess magic become independent of their Runestone."},
+  {"worldName":"Shin No Nakama","rating":7},
+  {"worldName":"Soul Calibur","rating":3}
 ]

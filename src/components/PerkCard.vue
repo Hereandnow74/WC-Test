@@ -164,7 +164,7 @@ const perkToSave = reactive({
   count: props.savedPerk.count || 0,
   cost: computed(() => {
     let cs = cost.value
-    if (props.increment) { cs = (perkToSave.count / 2) * (cs * 2 + (perkToSave.count - 1) * cs) }
+    if (props.increment || props.perk.increment) { cs = (perkToSave.count / 2) * (cs * 2 + (perkToSave.count - 1) * cs) }
     else {
       let countMod = 0
       if (discountValue.value === 0.4) cs = Math.round(cs * 0.6)
@@ -181,7 +181,7 @@ const perkToSave = reactive({
 
 const displayedCost = computed(() => {
   const s = perkToSave.cost / 11111 === 0 || perkToSave.cost / 11111 >= 2 ? 's' : ''
-  return perkToSave.cost >= 11111 || props.perk.cost >= 11111 ? `${perkToSave.cost / 11111} T11 ticket${s}` : perkToSave.cost
+  return perkToSave.cost % 11111 === 0 || props.perk.cost >= 11111 ? `${perkToSave.cost / 11111} T11 ticket${s}` : perkToSave.cost
 })
 
 function filterObject(obj: any) {

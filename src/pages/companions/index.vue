@@ -7,7 +7,7 @@
           v-model="search"
           placeholder="Name or World"
         />
-        <clarity:eraser-solid class="icon-btn w-8" @click="search = ''" />
+        <clarity:eraser-solid class="icon-btn w-8" @click="() => (search = '', limit = 10)" />
       </div>
       <Select v-model.number="tier" :options="tierOptions" />
       <Input v-model.number="limit" class="px-1" :style="`width: ${(''+limit).length + 3}ch`" />
@@ -83,7 +83,7 @@
         class="border rounded px-1 border-gray-300 dark:border-gray-500"
       />
       <div class="hidden md:block">
-        {{ filteredCharacters.length }} results
+        {{ secondFilter.length }} results
       </div>
       <Button label="Add Character" size="Small" @click="() => (editMode = false, toggleShowAddCharacter())" />
     </div>
@@ -127,6 +127,7 @@
 
 <script lang="ts" setup>
 import Fuse from 'fuse.js'
+import { intersection, some } from 'lodash-es'
 import { useStore } from '~/store/store'
 
 import { toggleShowAddCharacter, showAddCharacter, lazyLoadImg, toggleShowFilterTags, showFilterTags, tagToggles } from '~/logic'
@@ -139,11 +140,12 @@ interface Character {
   u: number
   n: string
   t: number
-  c?: number
   i?: string
   in?: string
   s?: string
-  w?: string[]
+  w?: string
+  d?: string
+  b?: string[]
 }
 
 const search = ref(' ')
@@ -218,7 +220,8 @@ onMounted(async() => {
 
 watch(route, x => search.value = x.query.name || '')
 
-const tagsSearch = computed(() => Object.keys(tagToggles).filter(key => tagToggles[key]))
+const tagsInclude = computed(() => Object.keys(tagToggles).filter(key => tagToggles[key] === 1))
+const tagsExclude = computed(() => Object.keys(tagToggles).filter(key => tagToggles[key] === -1))
 
 const worldNameDict = {
   'Xenoblade Chronicles 2': '(Monolith) Xeno-',
@@ -262,9 +265,6 @@ const filteredCharacters = computed(() => {
       ],
     }
   }
-  if (Object.keys(waifuTags).length !== tagsSearch.value.length)
-    sopt.$and.push({ b: `=${tagsSearch.value.join('|')}` })
-  else
   if (gender.value) sopt.$and.push({ b: gender.value })
 
   if (image.value) sopt.$and.push({ i: image.value })
@@ -276,11 +276,22 @@ const filteredCharacters = computed(() => {
   return fuse.search(sopt)
 })
 
+const secondFilter = computed(() => {
+  return filteredCharacters.value.filter((x) => {
+    if (x.item.b) {
+      return intersection(x.item.b, tagsInclude.value).length === tagsInclude.value.length
+        && !some(x.item.b, x => tagsExclude.value.includes(x))
+    }
+    if (tagsInclude.value.length) return false
+    return true
+  })
+})
+
 const slicedChars = computed(() => {
   // const groupped = groupBy(filteredCharacters.value, (n) => { return n.item.i })
   // const result = uniq(flatten(filter(groupped, (n) => { return n.length > 1 })))
   // return result.slice(limit.value > 100 ? limit.value - 100 : 0, limit.value)
-  return filteredCharacters.value.slice(0, limit.value)
+  return secondFilter.value.slice(0, limit.value)
 })
 
 // const allCredits = computed(() => charArr.value.reduce((a, b) => b.t !== 11 ? a += CHAR_COSTS[b.t - 1] : a, 0))

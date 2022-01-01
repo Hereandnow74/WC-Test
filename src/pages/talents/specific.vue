@@ -31,13 +31,13 @@
     >
       <img
         v-if="waifu.image !==''"
-        class="max-h-[300px] max-w-1/2 object-contain ml-auto pl-1 inline-block float-right"
+        class="h-[300px] max-w-1/2 object-contain ml-auto pl-1 inline-block float-right"
         :data-src="waifu.image"
         :alt="waifu.title"
       />
       <img
         v-if="waifu.image_2"
-        class="max-h-[300px] max-w-1/2 object-contain ml-auto pl-1 inline-block float-right"
+        class="h-[300px] max-w-1/2 object-contain ml-auto pl-1 inline-block float-right"
         :src="waifu.image_2"
         :alt="waifu.title"
       />

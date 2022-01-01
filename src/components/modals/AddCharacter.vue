@@ -68,7 +68,13 @@
       <div class="flex gap-2">
         <Checkbox v-model="localSave" label="Local save" />
         <Checkbox v-model="serverSave" label="Propose to global" />
-        <Button label="Add" class="flex-grow" bg-color="bg-blue-700" @click="addCharacter" />
+        <Button
+          :disabled="!!submitMessage || !!processing"
+          label="Add"
+          class="flex-grow"
+          bg-color="bg-blue-700"
+          @click="!!submitMessage || !!processing? null : addCharacter()"
+        />
       </div>
     </div>
   </Modal>

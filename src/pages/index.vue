@@ -14,6 +14,9 @@
       <router-link to="/everything" class="text-green-600 dark:text-green-400 hover:underline text-lg w-max">
         List of Everything
       </router-link>
+      <router-link :to="{path: '/', hash:'#pandora'}" class="text-amber-600 dark:text-amber-400 hover:underline text-lg w-max">
+        Pandora’s Alternate Tier Ranks
+      </router-link>
       <router-link
         v-for="rule in rulesList"
         :key="rule.title"

@@ -17,6 +17,7 @@
             <List :list-key="'flavor'" :list="el.complex" color="text-violet-400" start="{" end="}" />
           </span>
         </router-link>
+        <span v-if="priceMode" class="text-gray-300">[{{ el.cost }}]</span>
         <span v-if="editMode" class="text-red-400 hover:text-red-500 cursor-pointer" @click.stop="deletePerk(el)"><fluent:delete-20-filled /></span>
       </template>
       ]
@@ -50,6 +51,10 @@ defineProps({
     default: '',
   },
   editMode: {
+    type: Boolean,
+    default: false,
+  },
+  priceMode: {
     type: Boolean,
     default: false,
   },
