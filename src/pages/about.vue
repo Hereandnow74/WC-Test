@@ -43,6 +43,8 @@
         <div class="flex flex-wrap gap-2 justify-center">
           <div class="text-semibold">
             BenFang322<pepicons:crown class="text-amber-400" />
+            Templar9999<pepicons:crown class="text-gray-400" />
+            Cyrus<pepicons:crown class="text-red-400" />
           </div>
         </div>
       </div>

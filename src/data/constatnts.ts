@@ -118,6 +118,8 @@ export const waifuTags = {
   an: { tag: 'Angel', short: 'an', effect: '', desc: '', color: 'bg-[#ffffff] text-black' },
   mr: { tag: 'Monster', short: 'mr', effect: '', desc: '', color: 'bg-[#754141]' },
   dg: { tag: 'Dragon', short: 'dg', effect: '', desc: '', color: 'bg-[#cd2952]' },
+  th: { tag: 'Transhuman', short: 'th', effect: '', desc: '', color: 'bg-[#315be5]' },
+  ot: { tag: 'Outsider', short: 'ot', effect: '', desc: '', color: 'bg-[#5a3c68]' },
   gd: { tag: 'God', short: 'gd', effect: '', desc: '', color: 'bg-[#ffffff] text-black' },
   rs: { tag: 'Resurrection', short: 'rs', effect: '', desc: '', color: 'bg-[#ffffff] text-black' },
   mu: { tag: 'Mutant', short: 'mu', effect: '', desc: '', color: 'bg-[#315be5]' },
@@ -143,6 +145,7 @@ export const waifuTags = {
   el: { tag: 'Elf', short: 'el', effect: '', desc: '', color: 'bg-[#308418]' },
   dl: { tag: 'Dark elf', short: 'dl', effect: '', desc: '', color: 'bg-[#5a3c68]' },
   ct: { tag: 'Catgirl', short: 'ct', effect: '', desc: '', color: 'bg-[#de7b0a]' },
+  vp: { tag: 'Vampire', short: 'vp', effect: '', desc: '', color: 'bg-[#b52865]' },
 }
 
 export const waifuTagsByTag = Object.values(waifuTags).reduce((a, x) => (a[x.tag] = x, a), {})

@@ -15,40 +15,56 @@
       <div class="min-h-max">
         <TextArea v-model="desc" place-holder="Mission description" :rows="'4'" :error-message="errors.desc" />
       </div>
-      <h3 class="flex gap-4 items-center cursor-pointer" @click="requirements.push({value: ''})">
-        Requirements  <fluent:add-12-filled class="hover:text-green-500" />
+      <div class="flex flex-col gap-2">
+        <Input
+          v-model="reward"
+          class="flex-grow"
+          placeholder="Main reward"
+          :error-message="errors.reward"
+        />
+      </div>
+      <h3 class="flex gap-2 items-center cursor-pointer" @click="conditions.push({value: ''})">
+        Conditions
+        <span class="text-sm text-gray-500">(like - stealth/no kill/tier limit/do it yourself/XX perk disabled/etc.)</span>
+        <fluent:add-12-filled class="hover:text-green-500" />
       </h3>
       <div class="flex flex-col gap-2">
         <div
-          v-for="requirement, i in requirements"
-          :key="requirement"
+          v-for="condition, i in conditions"
+          :key="condition"
           class="flex gap-1"
         >
           <Input
-            v-model="requirement.value"
+            v-model="condition.value"
             class="flex-grow"
-            :placeholder="`Requirement #${i + 1}`"
-            :error-message="errors.requirements"
+            :placeholder="`Condition #${i + 1}`"
+            :error-message="errors.conditions"
           />
-          <fluent:delete-20-filled class="text-red-500 hover:text-red-400 cursor-pointer" @click="requirements.splice(i, 1)" />
+          <fluent:delete-20-filled class="text-red-500 hover:text-red-400 cursor-pointer" @click="conditions.splice(i, 1)" />
         </div>
       </div>
-      <h3 class="flex gap-4 items-center cursor-pointer" @click="rewards.push({value: ''})">
-        Rewards  <fluent:add-12-filled class="hover:text-green-500" />
-      </h3>
       <div class="flex flex-col gap-2">
+        <h3 class="flex gap-4 items-center cursor-pointer" @click="objectives.push({value: '', reward: ''})">
+          Additional objectives  <fluent:add-12-filled class="hover:text-green-500" />
+        </h3>
         <div
-          v-for="reward, i in rewards"
-          :key="reward"
-          class="flex gap-1"
+          v-for="requirement, i in objectives"
+          :key="requirement"
+          class="flex gap-1 items-center"
         >
-          <Input
-            v-model="reward.value"
-            class="flex-grow"
-            :placeholder="`Requirement #${i + 1}`"
-            :error-message="errors.rewards"
-          />
-          <fluent:delete-20-filled class="text-red-500 hover:text-red-400 cursor-pointer" @click="rewards.splice(i, 1)" />
+          <div class="flex flex-col gap-2 flex-grow">
+            <Input
+              v-model="requirement.value"
+              :placeholder="`Requirement #${i + 1}`"
+              :error-message="errors.objectives"
+            />
+            <Input
+              v-model="requirement.reward"
+              :placeholder="`Bonus reward (optional) #${i + 1}`"
+              :error-message="errors.objectives"
+            />
+          </div>
+          <fluent:delete-20-filled class="text-red-500 hover:text-red-400 cursor-pointer" @click="objectives.splice(i, 1)" />
         </div>
       </div>
       <Input v-model="image" placeholder="Image link" :error-message="errors.image" />
@@ -85,8 +101,9 @@ const schema = toFormValidator(
     source: zod.string(),
     loca: zod.string().nonempty('Location is required'),
     scope: zod.string().nonempty('Scope is required'),
-    requirements: zod.object({ value: zod.string() }).array(),
-    rewards: zod.object({ value: zod.string() }).array(),
+    conditions: zod.object({ value: zod.string() }).array(),
+    objectives: zod.object({ value: zod.string(), reward: zod.string() }).array(),
+    reward: zod.string().nonempty('Reward is required'),
     image: zod.string().regex(/[^ \!@\$\^&\(\)\+\=]+(\.png|\.jpeg|\.gif|\.jpg|\.webp)$/, { message: 'Must be a valid image URL in a jpeg/jpg/png/gif/webp format.' }).max(256, { message: 'Maximum length is 256 chars' }).optional().or(zod.literal('')),
     desc: zod.string().max(5000, 'Max length is 5000 chars').nonempty('Description is required'),
   }),
@@ -101,8 +118,11 @@ const { errors, handleSubmit } = useForm({
     desc: '',
     loca: '',
     scope: '',
-    requirements: [],
-    rewards: [],
+    conditions: [
+      { value: '' },
+    ],
+    objectives: [],
+    reward: '',
     image: '',
   },
 })
@@ -113,8 +133,9 @@ const { value: author } = useField<string>('author')
 const { value: desc } = useField<string>('desc')
 const { value: loca } = useField<string>('loca')
 const { value: scope } = useField<string>('scope')
-const { value: requirements } = useField<any[]>('requirements')
-const { value: rewards } = useField<any[]>('rewards')
+const { value: conditions } = useField<any[]>('conditions')
+const { value: objectives } = useField<any[]>('objectives')
+const { value: reward } = useField<any[]>('reward')
 const { value: image } = useField<string>('image')
 
 const addPerk = handleSubmit((values) => {

@@ -5,6 +5,17 @@
     </h2>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
+        02 January 2022
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>60 new user submitted Characters.</li>
+        <li>Changed Add Mission form a bit.</li>
+        <li>You can now change genders in Companions tab on 'smartphone'</li>
+        <li>Bugfixes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
         01 January 2022
       </h3>
       <ul class="list-decimal list-inside">

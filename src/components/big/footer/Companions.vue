@@ -33,7 +33,7 @@
               <span
                 v-if="char.tier !== char.priceTier"
                 class="text-gray-500 ml-2 whitespace-nowrap"
-              > Price Tier: <span class="text-green-500">{{ char.priceTier }}</span></span>
+              > Original: <span class="text-green-500">{{ char.priceTier }}</span></span>
             </div>
             <span class="text-gray-500">From: <span class="text-gray-400">{{ char.world }}</span></span>
             <div class="flex gap-2 mb-1">
@@ -42,8 +42,15 @@
                 v-model="char.tier"
                 theme="dark"
                 :max="11"
-                label="Change tier"
+                label="Tier"
                 class="whitespace-nowrap"
+              />
+              <Variants
+                v-if="!char.sold && char.method !== 'unbound'"
+                v-model="char.sex"
+                theme="dark"
+                label="Sex"
+                :list="['F', 'M', 'O']"
               />
               <Variants
                 v-if="!char.sold && char.method !== 'unbound'"

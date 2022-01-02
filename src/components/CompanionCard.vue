@@ -109,7 +109,7 @@
 </template>
 
 <script lang='ts' setup>
-import { findIndex, random } from 'lodash-es'
+import { findIndex, intersection, random } from 'lodash-es'
 import { CHAR_COSTS, waifusThatHasPerk, waifuTags } from '~/data/constatnts'
 import { isNSFW } from '~/logic'
 import { usePlayStore } from '~/store/play'
@@ -218,14 +218,15 @@ watch(isNSFW, () => nsfw.value = isNSFW.value)
 
 function buyCompanion() {
   const char = charData.value
-  companions.value.push({ uid: char.uid, name: char.name, world: char.world, tier: char.tier, priceTier: priceTier(char.tier), method: 'buy' })
+  const sex = intersection(char.tags, ['F', 'M', 'O'])[0] || 'F'
+  companions.value.push({ uid: char.uid, name: char.name, world: char.world, sex, tier: char.tier, priceTier: priceTier(char.tier), method: 'buy' })
 }
 
 function captureCompanion() {
   const char = charData.value
   let price = 0
-
-  const res = { uid: char.uid, name: char.name, world: char.world, tier: char.tier, priceTier: char.tier, method: 'capture' }
+  const sex = intersection(char.tags, ['F', 'M', 'O'])[0] || 'F'
+  const res = { uid: char.uid, name: char.name, world: char.world, sex, tier: char.tier, priceTier: char.tier, method: 'capture' }
 
   if (underLoan.value) {
     price = Math.ceil(CHAR_COSTS[char.tier - 1] * captureKoeff.value)
@@ -248,14 +249,16 @@ function captureCompanion() {
 
 function yoinkCompanion() {
   const char = charData.value
-  companions.value.push({ uid: char.uid, name: char.name, world: char.world, tier: char.tier, priceTier: priceTier(char.tier), method: 'yoink' })
+  const sex = intersection(char.tags, ['F', 'M', 'O'])[0] || 'F'
+  companions.value.push({ uid: char.uid, name: char.name, world: char.world, sex, tier: char.tier, priceTier: priceTier(char.tier), method: 'yoink' })
 }
 
 function slightlyCompanion(slightlyUsedData: any) {
   const char = charData.value
   const tier = charData.value.tier + slightlyUsedData.tier
   const pt = priceTier(charData.value.tier + slightlyUsedData.tier - slightlyUsedData.traumaTier)
-  companions.value.push({ uid: char.uid, name: char.name, world: char.world, tier, priceTier: pt, method: 'used' })
+  const sex = intersection(char.tags, ['F', 'M', 'O'])[0] || 'F'
+  companions.value.push({ uid: char.uid, name: char.name, world: char.world, sex, tier, priceTier: pt, method: 'used' })
 }
 
 function undoBuying(uid: number) {

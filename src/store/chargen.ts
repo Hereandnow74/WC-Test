@@ -87,6 +87,7 @@ const waifuPerks = storeType<Perk[]>('waifuPerks', [])
 const companions = storeType('companions', [] as {
   uid: number
   name: string
+  sex: 'F' | 'M' | 'O'
   world: string
   tier: number
   priceTier: number
