@@ -34,6 +34,7 @@ export interface Origin {
   cost: number
   character?: string
   tier?: number
+  uid?: number
 }
 
 const params = useUrlSearchParams('history')
@@ -84,7 +85,7 @@ const genericWaifuPerks = storeType<Perk[]>('genericWaifuPerks', [])
 
 const waifuPerks = storeType<Perk[]>('waifuPerks', [])
 
-const companions = storeType('companions', [] as {
+export interface SavedChar {
   uid: number
   name: string
   sex: 'F' | 'M' | 'O'
@@ -95,7 +96,10 @@ const companions = storeType('companions', [] as {
   method: 'buy' | 'capture' | 'steal' | 'yoink' | 'used' | 'unbound'
   price?: number
   soldPrice?: number
-}[])
+  role?: 'Member' | 'Familiar' | 'Unbound'
+}
+
+const companions = storeType('companions', [] as SavedChar[])
 
 const allEffects = storeType('allEffects', [] as string[])
 

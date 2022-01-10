@@ -69,7 +69,7 @@ Total : 100 files,  169422 codes, 61 comments, 1494 blanks, all 170977 lines
 | [src/data/binding.ts](/src/data/binding.ts) | TypeScript | 717 | 5 | 63 | 785 |
 | [src/data/characters.json](/src/data/characters.json) | JSON | 147,846 | 0 | 2 | 147,848 |
 | [src/data/characters3.json](/src/data/characters3.json) | JSON | 3 | 0 | 0 | 3 |
-| [src/data/constatnts.ts](/src/data/constatnts.ts) | TypeScript | 127 | 0 | 13 | 140 |
+| [src/data/constants.ts](/src/data/constants.ts) | TypeScript | 127 | 0 | 13 | 140 |
 | [src/data/heritage.ts](/src/data/heritage.ts) | TypeScript | 591 | 1 | 36 | 628 |
 | [src/data/intensity.ts](/src/data/intensity.ts) | TypeScript | 152 | 0 | 3 | 155 |
 | [src/data/origin.ts](/src/data/origin.ts) | TypeScript | 115 | 0 | 8 | 123 |

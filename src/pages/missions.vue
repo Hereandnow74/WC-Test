@@ -26,11 +26,34 @@
           </div>
         </div>
       </div>
+      <div v-for="mission in newMissions" :key="mission.title" class="bg-blue-100 dark:bg-blue-900 rounded p-2">
+        <h4 class="text-lg">
+          {{ mission.title }} by {{ mission.author }}
+        </h4>
+        <div class="flex justify-between">
+          <div>Location: {{ mission.loca }}</div>
+          <div>Scope: {{ mission.scope }}</div>
+        </div>
+        <Desc :desc="mission.desc" />
+        <div v-if="mission.conditions.length">
+          Conditions:
+          <div v-for="req in mission.conditions" :key="req.value" class="pl-4">
+            {{ req.value }}
+          </div>
+        </div>
+        <div v-if="mission.objectives.length">
+          Additional objectives:
+          <div v-for="rew in mission.objectives" :key="rew.value" class="pl-4">
+            <div>{{ rew.value }}</div>
+            <div>{{ rew.reward }}</div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="h-8"></div>
   </div>
 </template>
 
 <script lang="ts" setup>
-import { missions } from '~/data/missions'
+import { missions, newMissions } from '~/data/missions'
 </script>

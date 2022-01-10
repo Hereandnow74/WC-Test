@@ -24,7 +24,7 @@
 </template>
 
 <script lang='ts' setup>
-import { waifuTags } from '~/data/constatnts'
+import { waifuTags } from '~/data/constants'
 import { tagToggles, threeToggle } from '~/logic'
 
 function toggleAll() {

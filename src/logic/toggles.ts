@@ -1,4 +1,4 @@
-import { waifuTags } from '~/data/constatnts'
+import { waifuTags } from '~/data/constants'
 
 export const isDark = useDark()
 export const toggleDark = useToggle(isDark)
@@ -13,14 +13,15 @@ export const [showAddMission, toggleShowAddMission] = useToggle()
 export const [isDLC, toggleDLC] = useToggle(true)
 export const [isNSFW, toggleNSFW] = useToggle(false)
 export const [isSupport, toggleSupport] = useToggle(false)
+export const [isRetinueEdit, toggleRetinueEdit] = useToggle(false)
 
 export const promoteShown = useStorage('pr', false)
 
 export const [appMode, toggleAppMode] = useToggle()
-export const orientation = ref(false)
+export const orientation = useStorage('ot', false)
 export const activeTab = ref(0)
 
-export const tagToggles = reactive(Object.values(waifuTags).reduce((a, x) => (a[x.short] = 0, a), {}))
+export const tagToggles = reactive(Object.values(waifuTags).reduce((a, x) => { a[x.short] = 0; return a }, {} as Record<string, number>))
 
 export function threeToggle(val: number) {
   switch (val) {

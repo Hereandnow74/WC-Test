@@ -22,9 +22,6 @@
             <div v-if="item.variants && choosedOrigin.title === item.title">
               <label for="variants">Variants:</label>
               <select v-model.number="item.cost" name="variants" class="ml-2 text-gray-700">
-                <option value="0">
-                  None
-                </option>
                 <option v-for="variant in item.variants" :key="variant.title" :value="variant.cost">
                   {{ variant.title }}
                 </option>
@@ -72,7 +69,7 @@
 </template>
 
 <script lang='ts' setup>
-import { CHAR_COSTS } from '~/data/constatnts'
+import { CHAR_COSTS } from '~/data/constants'
 import { desc, origin, Origin } from '~/data/origin'
 import { confirmDialog } from '~/logic/dialog'
 import { useTooltips } from '~/logic/misc'
@@ -99,7 +96,7 @@ watch(choosedOrigin, () => {
 function chooseOrigin(item: Origin) {
   choosedOrigin.title = item.title
   choosedOrigin.cost = item.cost
-  if (!['Substitute', 'Possess'].includes(choosedOrigin.title)) {
+  if (!['Substitute', 'Possess', 'Walk-In'].includes(choosedOrigin.title)) {
     choosedOrigin.character = ''
     choosedOrigin.tier = 1
     choosedOrigin.uid = 0

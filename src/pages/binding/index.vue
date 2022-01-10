@@ -142,48 +142,12 @@
       </PerkCard>
     </div>
 
-    <Modal v-if="showElements" label="Choose Element" @click="toggleElements">
-      <div class="h-screen md:h-3/4 bg-gray-300 dark:bg-gray-600 overflow-y-auto min-h-0 flex flex-col gap-2">
-        <div
-          v-for="element in shroudElements"
-          :key="element.title"
-          class="flex flex-col gap-1 m-2 rounded cursor-pointer p-2"
-          bg="gray-200 dark:gray-700 hover:(gray-100 dark:gray-800)"
-          @click="toggleCurrentElement(element.title)"
-        >
-          <h3 class="relative text-lg font-semibold text-center">
-            {{ element.title }}
-            <fa-solid:check v-if="elementBought(element.title)" class="text-green-500 absolute top-1 right-1" />
-          </h3>
-          <div>
-            <span class="px-2 text-orange-500 dark:text-orange-300 font-semibold">Elemental Ability</span>:
-            <span>{{ element['Elemental Ability'] }}</span>
-          </div>
-          <div>
-            <span class="px-2 text-orange-500 dark:text-orange-300 font-semibold">Body Effects</span>:
-            <span>{{ element['Body Effects'] }}</span>
-          </div>
-          <div>
-            <span class="px-2 text-orange-500 dark:text-orange-300 font-semibold">Streamlined costume features</span>:
-            <span>{{ element['Streamlined costume features'] }}</span>
-          </div>
-          <div>
-            <span class="px-2 text-orange-500 dark:text-orange-300 font-semibold">Heavy costume features</span>:
-            <span>{{ element['Heavy costume features'] }}</span>
-          </div>
-          <div>
-            <span class="px-2 text-orange-500 dark:text-orange-300 font-semibold">Freebies</span>:
-            <span>{{ element.Freebies }}</span>
-          </div>
-        </div>
-      </div>
-    </Modal>
+    <ShroudElements v-if="showElements" @click="toggleElements" @toggleElement="toggleCurrentElement" />
     <RitualCircle v-if="showRitual" @click="toggleRitual" />
   </div>
 </template>
 
 <script lang='ts' setup>
-import { findIndex } from 'lodash-es'
 import { onBeforeRouteUpdate } from 'vue-router'
 import {
   desc, bindings, Binding, lureDesc, lures, lureExpansionDesc, lureExpansions, shroudElements,
@@ -224,11 +188,11 @@ watch(activeType, () => nextTick(useTooltips))
 
 const params = useUrlSearchParams('history')
 
-if (params.q) activeType.value = params.q
+if (params.q) activeType.value = `${params.q}`
 
 onBeforeRouteUpdate((to, from, next) => {
   if (to.query.q)
-    activeType.value = to.query.q
+    activeType.value = `${to.query.q}`
 
   setTimeout(next, 1)
 })
@@ -251,23 +215,21 @@ const allOther = computed(() => {
   return res
 })
 
-function elementBought(title: string) {
-  return findIndex(binding.value, { anything: title }) !== -1
-}
-
 function chooseElement(bnd: Binding) {
   showElements.value = true
   currentBinding.value = bnd
 }
 
-function toggleCurrentElement(title: string) {
+function toggleCurrentElement(title: string, custom: string) {
   if (currentBinding.value) {
     if (currentBinding.value.element === title)
       currentBinding.value.element = ''
     else
       currentBinding.value.element = title
   }
-  chooseBinding(currentBinding.value, { cost: 96, title: 'Elemental Shroud', freebies: { talentPerks: ['Body Talent', 'Soul Talent'] } })
+  const saveBin = { cost: 96, title: 'Elemental Shroud', freebies: { talentPerks: ['Body Talent', 'Soul Talent'] } }
+  if (custom) saveBin.target = custom
+  chooseBinding(currentBinding.value, saveBin)
   toggleElements()
 }
 </script>

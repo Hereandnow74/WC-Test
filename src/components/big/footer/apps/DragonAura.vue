@@ -12,7 +12,7 @@
 </template>
 
 <script lang="ts" setup>
-import { toggleAppMode } from '~/logic'
+import { toggleAppMode, toReadableTime } from '~/logic'
 
 const max = 67108864
 const auraTier = ref(4)
@@ -36,37 +36,6 @@ const auraData = ref([
   [0, '<3342.29 AU', 'Oort Cloud (inner) '],
   [0, '<0.528 LY', 'Interstellar space '],
   [0, '<5.285 LY', 'Neighboring stars']])
-
-function toReadableTime(seconds: number) {
-  let res = ''
-  if (seconds >= 31536000) {
-    const years = ~~(seconds / 31536000)
-    res += `${years}Y  `
-    seconds -= years * 31536000
-  }
-  if (seconds >= 2592000) {
-    const months = ~~(seconds / 2592000)
-    res += `${months}M  `
-    seconds -= months * 2592000
-  }
-  if (seconds >= 86400) {
-    const days = ~~(seconds / 86400)
-    res += `${days}d `
-    seconds -= days * 86400
-  }
-  if (seconds >= 3600) {
-    const hours = ~~(seconds / 3600)
-    res += `${hours}h `
-    seconds -= hours * 3600
-  }
-  if (seconds >= 60) {
-    const minutes = ~~(seconds / 60)
-    res += `${minutes}m `
-    seconds -= minutes * 60
-  }
-  res += `${seconds}s `
-  return res
-}
 
 watchEffect(() => {
   auraData.value.forEach((x, i) => {

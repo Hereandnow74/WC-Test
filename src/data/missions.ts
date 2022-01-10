@@ -194,3 +194,30 @@ export const missions = [
     desc: 'Conquer a given setting. If this mission is taken, you may not leave the setting until it is complete.\n\nSetting is defined as the general area a work takes place in. \n Whether it is a nation, planet, or galaxy, depends on the work in question.\nIE: The setting of Harry Potter is Magical Europe\nThe setting of Star Wars is the Galaxy',
   },
 ]
+
+export const newMissions = [
+  {
+    image: '',
+    reward: '2 credit for every species captured ',
+    title: 'Gotta rift them all',
+    conditions: [{ value: 'Excluding any company bought locations you may not leave the rifts multiverse. Doing so is considered voluntary completion of of this mission and it may not be taken again.' }],
+    desc: 'The company is in need of refreshing their stockpile of species from the rifts Multiverse and it\'s your job to get more. For every species you capture you will be rewarded.',
+    source: '',
+    scope: 'Quick',
+    author: 'N/A',
+    objectives: [],
+    loca: 'Rifts',
+  },
+  {
+    author: 'Templar9999 ',
+    source: '',
+    conditions: [{ value: 'No companions available to purchase' }, { value: 'No dimensional travel' }, { value: 'No sweet home' }],
+    image: '',
+    title: 'Hell Bound',
+    loca: 'Any',
+    desc: 'You are trapped in Hell.\nYou must escape.\n\nHell is defined as any appropriate hell dimension in the given setting. This includes Tartarus, Nifelheim, etc.',
+    scope: 'Standard',
+    objectives: [],
+    reward: 'Exit Stage Left, and all canon upgrades for free. Sweet Home and all upgrades to Lifes a Beach for free',
+  },
+]

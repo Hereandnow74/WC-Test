@@ -3,10 +3,12 @@
     <label v-if="label" for="" class="mr-2">{{ label }}</label>
     <div
       ref="minusButton"
-      class="rounded-l-lg hover:bg-orange-500 w-4 cursor-pointer"
+      class="rounded-l-lg hover:bg-orange-500 w-4 text-center cursor-pointer"
       :class="buttonThemes[theme]"
       @click="minus"
-    />
+    >
+      -
+    </div>
     <input
       id=""
       type="text"
@@ -18,10 +20,12 @@
     >
     <div
       ref="plusButton"
-      class="rounded-r-lg hover:bg-orange-500 w-4 cursor-pointer"
+      class="rounded-r-lg hover:bg-orange-500 w-4 text-center cursor-pointer"
       :class="buttonThemes[theme]"
       @click="plus"
-    />
+    >
+      +
+    </div>
   </div>
 </template>
 
@@ -60,8 +64,8 @@ const themes = {
   dark: 'text-gray-200 bg-white bg-opacity-5',
 }
 const buttonThemes = {
-  light: 'bg-blue-500',
-  dark: 'bg-blue-700',
+  light: 'bg-gray-300 text-gray-800',
+  dark: 'bg-gray-700 text-gray-400',
 }
 
 const value = ref(props.modelValue || props.min)
@@ -95,7 +99,7 @@ const { pressed: minusPressed } = useMousePressed({ target: minusButton })
 let timer: any = null
 let delay: any = null
 watch(plusPressed, () => {
-  if (plusPressed.value) { delay = setTimeout(() => timer = setInterval(plus, 15), 100) }
+  if (plusPressed.value) { delay = setTimeout(() => timer = setInterval(plus, 15), 200) }
   else {
     clearTimeout(delay)
     clearInterval(timer)
@@ -103,7 +107,7 @@ watch(plusPressed, () => {
 })
 
 watch(minusPressed, () => {
-  if (minusPressed.value) { delay = setTimeout(() => timer = setInterval(minus, 15), 100) }
+  if (minusPressed.value) { delay = setTimeout(() => timer = setInterval(minus, 15), 200) }
   else {
     clearTimeout(delay)
     clearInterval(timer)

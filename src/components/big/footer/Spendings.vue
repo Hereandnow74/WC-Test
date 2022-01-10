@@ -65,7 +65,7 @@
 </template>
 
 <script lang="ts" setup>
-import { CHAR_COSTS } from '~/data/constatnts'
+import { CHAR_COSTS } from '~/data/constants'
 import { useStore } from '~/store/store'
 
 const {

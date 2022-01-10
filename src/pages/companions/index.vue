@@ -133,7 +133,7 @@ import { useStore } from '~/store/store'
 import { toggleShowAddCharacter, showAddCharacter, lazyLoadImg, toggleShowFilterTags, showFilterTags, tagToggles } from '~/logic'
 import CompanionCard from '~/components/CompanionCard.vue'
 import Checkbox from '~/components/basic/Checkbox.vue'
-import { getChars, getUserChars, waifuTags } from '~/data/constatnts'
+import { getChars, getUserChars } from '~/data/constants'
 import { usePlayStore } from '~/store/play'
 
 interface Character {
@@ -249,7 +249,7 @@ const filteredCharacters = computed(() => {
         { n: sr },
         {
           $or: [
-            { w: `^${worldName}` }, { d: `^${worldName}` }],
+            { w: `^"${worldName}"` }, { d: `^"${worldName}"` }],
         },
       ],
     }

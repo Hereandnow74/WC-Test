@@ -1,5 +1,6 @@
 import { isArray } from 'lodash-es'
 import { useRouter } from 'vue-router'
+import { DBCharacter } from 'global'
 import { DLCgenericPerks, DLChomes, DLCperks, DLCtalents, DLCheritages, DLClureExpansions, DLCbindings, DLClures, DLCotherControls, DLCridePerks } from './DLCs'
 import { intensity } from '~/data/intensity'
 import { origin } from '~/data/origin'
@@ -146,6 +147,7 @@ export const waifuTags = {
   dl: { tag: 'Dark elf', short: 'dl', effect: '', desc: '', color: 'bg-[#5a3c68]' },
   ct: { tag: 'Catgirl', short: 'ct', effect: '', desc: '', color: 'bg-[#de7b0a]' },
   vp: { tag: 'Vampire', short: 'vp', effect: '', desc: '', color: 'bg-[#b52865]' },
+  pt: { tag: 'Priest', short: 'ps', effect: '', desc: '', color: 'bg-[#ffffff] text-black' },
 }
 
 export const waifuTagsByTag = Object.values(waifuTags).reduce((a, x) => (a[x.tag] = x, a), {})
@@ -205,16 +207,24 @@ export const QUERIES = computed(() => {
 let chars: any = null
 let userChars: any = null
 
-export async function getChars() {
+export async function getChars(): Promise<DBCharacter[]> {
   if (!chars)
     chars = (await import('~/data/characters.json')).default // chars = Object.values(await getCharsObject())
   return chars
 }
 
-export async function getUserChars() {
+export async function getUserChars(): Promise<DBCharacter[]> {
   if (!userChars)
     userChars = (await import('~/data/userCharacters.json')).default.reverse()
   return userChars
+}
+
+const allChars = [] as DBCharacter[]
+export const getAllChars = async() => {
+  if (!allChars.length)
+    allChars.push(...(await getChars()), ...(await getUserChars()))
+
+  return allChars
 }
 
 const worlds = ref([])

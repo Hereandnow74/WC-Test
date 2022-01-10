@@ -2,7 +2,7 @@ import { findIndex } from 'lodash-es'
 import { useChallenges } from './challenges'
 import { usePlayStore } from './play'
 import { useChargenStore } from './chargen'
-import { heritageTiers, WORLD_RATINGS } from '~/data/constatnts'
+import { heritageTiers, WORLD_RATINGS } from '~/data/constants'
 
 const CHAR_COSTS = [1, 2, 5, 10, 20, 50, 100, 200, 500, 1000, 11111]
 
@@ -63,8 +63,11 @@ const companionsCost = computed(() => {
   return companions.value.reduce((a, x) => {
     if (x.method === 'buy' && x.priceTier !== 11)
       return a += CHAR_COSTS[x.priceTier - 1] || 1
-    if (x.method === 'yoink' && x.priceTier !== 11)
-      return a += (x.priceTier - 1) <= 1 ? 2 : (CHAR_COSTS[x.priceTier - 1] || 1) * 1.2
+    if (x.method === 'yoink' && x.priceTier !== 11) {
+      const cost = CHAR_COSTS[x.priceTier - 1] || 1
+      const yoinkCost = cost * 0.2 < 1 ? 1 : cost * 0.2
+      return a += cost + yoinkCost
+    }
     if (x.method === 'used' && x.priceTier !== 11)
       return a += CHAR_COSTS[x.priceTier - 1] || 1
     return a

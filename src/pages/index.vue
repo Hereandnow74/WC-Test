@@ -87,7 +87,7 @@
 </template>
 
 <script lang="ts" setup>
-import { WORLD_RATINGS, rulesList } from '~/data/constatnts'
+import { WORLD_RATINGS, rulesList } from '~/data/constants'
 import {
   startingDesc, pvpRules, effectiveTiers, captures, familiars, purchases, sales, waifu11,
   danger11, services, salary, helpDesk, loans, missions, refund, arranged, arrangedConditions,

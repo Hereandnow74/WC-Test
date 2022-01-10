@@ -110,7 +110,7 @@
 
 <script lang='ts' setup>
 import { findIndex, intersection, random } from 'lodash-es'
-import { CHAR_COSTS, waifusThatHasPerk, waifuTags } from '~/data/constatnts'
+import { CHAR_COSTS, waifusThatHasPerk, waifuTags } from '~/data/constants'
 import { isNSFW } from '~/logic'
 import { usePlayStore } from '~/store/play'
 import { useStore } from '~/store/store'
@@ -188,8 +188,8 @@ const modalImageCmp = computed(() => {
 })
 
 const imageLink = computed(() => {
-  if (nsfw.value && props.char.in) {
-    return props.char.in
+  if (nsfw.value && charData.value.image_nsfw) {
+    return charData.value.image_nsfw
   }
   else {
     if (charData.value.image) {
@@ -211,10 +211,6 @@ const imageLink = computed(() => {
 const priceTier = (t: number): number => flags.value.noBindings && t !== 11 && t !== 1 ? t - 1 : t
 
 watch(isNSFW, () => nsfw.value = isNSFW.value)
-// watch(nsfw, () => {
-//   const link = nsfw.value ? charData.value.image_nsfw : imageLink.value
-//   companionEl.value.src = link
-// })
 
 function buyCompanion() {
   const char = charData.value
@@ -281,7 +277,6 @@ onMounted(() => {
 })
 
 watch(imageLink, () => companionEl.value ? companionEl.value.src = imageLink.value : null)
-
 </script>
 
 <style>

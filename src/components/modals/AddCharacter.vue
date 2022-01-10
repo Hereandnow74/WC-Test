@@ -43,6 +43,9 @@
         />
       </div>
       <Input v-model="image" placeholder="Image URL" :error-message="errors.image" />
+      <div v-if="image_nsfw" class="text-orange-600 dark:text-orange-300 text-sm">
+        No pornographic images please, ideally image should have only submitted character without any extras.
+      </div>
       <Input v-model="image_nsfw" placeholder="NSFW Image URL" :error-message="errors.image_nsfw" />
       <div class="flex gap-2 items-center">
         <span>Sex: </span>
@@ -87,7 +90,7 @@ import { toFormValidator } from '@vee-validate/zod'
 import { random, uniq } from 'lodash-es'
 import { useStore } from '~/store/store'
 import { proposeCompanion, toggleShowAddCharacter } from '~/logic'
-import { getChars, getUserChars, waifuTags, waifuTagsByTag } from '~/data/constatnts'
+import { getChars, getUserChars, waifuTags, waifuTagsByTag } from '~/data/constants'
 
 const props = defineProps({
   editMode: {

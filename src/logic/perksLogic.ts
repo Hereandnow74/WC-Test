@@ -8,7 +8,7 @@ import { useChallenges } from '~/store/challenges'
 import { usePlayStore } from '~/store/play'
 import { Perk } from '~/store/chargen'
 import { useStore } from '~/store/store'
-import { ALL_PERK_TITLES } from '~/data/constatnts'
+import { ALL_PERK_TITLES } from '~/data/constants'
 
 const {
   allEffects, intensities, luresBought, binding, flags, allForSave, heritage,

@@ -13,7 +13,7 @@
 <script lang="ts" setup>
 import { randomChar, toggleAppMode } from '~/logic'
 import NumberInput from '~/components/basic/NumberInput.vue'
-import { CHAR_COSTS } from '~/data/constatnts'
+import { CHAR_COSTS } from '~/data/constants'
 
 const char = ref<any>({})
 const tier = ref(0)

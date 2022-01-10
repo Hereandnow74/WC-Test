@@ -2,10 +2,12 @@
   <div class="inline-flex w-min h-max">
     <label v-if="label" for="" class="mr-2">{{ label }}</label>
     <div
-      class="rounded-l-lg hover:bg-orange-500 w-4 cursor-pointer"
+      class="rounded-l-lg hover:bg-gray-500 cursor-pointer px-0.5"
       :class="buttonThemes[theme]"
       @click="minus"
-    />
+    >
+      &lt;
+    </div>
     <input
       id=""
       type="text"
@@ -16,10 +18,12 @@
       :value="value"
     >
     <div
-      class="rounded-r-lg hover:bg-orange-500 w-4 cursor-pointer"
+      class="rounded-r-lg hover:bg-gray-500 w-4 cursor-pointer"
       :class="buttonThemes[theme]"
       @click="plus"
-    />
+    >
+      >
+    </div>
   </div>
 </template>
 
@@ -50,12 +54,14 @@ const themes = {
   dark: 'text-gray-200 bg-white bg-opacity-5',
 }
 const buttonThemes = {
-  light: 'bg-blue-500',
-  dark: 'bg-blue-700',
+  light: 'bg-gray-300 text-gray-800',
+  dark: 'bg-gray-700 text-gray-400',
 }
 
 const value = ref(props.modelValue || props.list[0] || '')
 const index = ref(0)
+
+watch(props, () => value.value = props.modelValue)
 
 const emit = defineEmits(['update:modelValue'])
 

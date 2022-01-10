@@ -60,7 +60,7 @@
 <script lang='ts' setup>
 import { findIndex } from 'lodash-es'
 import type { PropType } from 'vue'
-import { WORLD_COLORS, WORLD_RATINGS } from '~/data/constatnts'
+import { WORLD_COLORS, WORLD_RATINGS } from '~/data/constants'
 import { confirmDialog } from '~/logic/dialog'
 import { useStore, World } from '~/store/store'
 

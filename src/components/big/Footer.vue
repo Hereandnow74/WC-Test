@@ -75,6 +75,7 @@
 </template>
 
 <script lang="ts" setup>
+import { groupBy } from 'lodash-es'
 import { useStore } from '~/store/store'
 import { activeTab, clearAll, orientation } from '~/logic'
 import { confirmDialog } from '~/logic/dialog'
@@ -83,7 +84,7 @@ import { useChallenges } from '~/store/challenges'
 const showSaveLoad = ref(false)
 const showShare = ref(false)
 
-const tabs = ['Build', 'Companions', 'Apps', 'Spendings', '']
+const tabs = ['Build', 'Retinue', 'Apps', 'Spendings', '']
 const tabIcons = ['bx:bx-spreadsheet', 'bx:bx-spreadsheet', 'ion:apps-sharp', 'la:coins', 'fluent:wrench-16-filled']
 
 const tabComponents = [
@@ -105,7 +106,7 @@ const { activeChallenges } = useChallenges()
 const originTextClean = computed(() => {
   const variants = {
     'Drop-In': 'Dropped-In',
-    'Walk-In': 'Walked-In',
+    'Walk-In': `Walked-In as ${startingOrigin.value.character} of T${startingOrigin.value.tier}`,
     'Extra': `'Extra' with ${startingOrigin.value.cost} additional cost`,
     'Substitute': `Substitue as a ${startingOrigin.value.character} of T${startingOrigin.value.tier}`,
     'Possess': `Possess a ${startingOrigin.value.character} of T${startingOrigin.value.tier}`,
@@ -131,8 +132,14 @@ function buildString(title: string, items: Perk[], left: object) {
     let complexCompanion = ''
     let complexBoth = ''
     if (x.complex) {
-      if (x.complex[0].flavor && x.complex[0].target)
-        complexBoth = `[${x.complex.map(x => `${x.target} have ${x.flavor}`).join(', ')}]`
+      if (x.complex[0].flavor && x.complex[0].target) {
+        let pw = ''
+        if (x.title === 'OC Donut Steel') pw = ' powers'
+        const grouped = groupBy(x.complex, c => c.target)
+        complexBoth = `[${Object.entries(grouped)
+          .map(x => `${x[0]} has ${x[1]
+            .map(f => f.flavor).join(', ')}${pw}`).join(', ')}]`
+      }
       if (x.complex[0].flavor)
         complexFlavor = `[${x.complex.map(x => `${x.flavor}`).join(', ')}]`
       if (x.complex[0].target)

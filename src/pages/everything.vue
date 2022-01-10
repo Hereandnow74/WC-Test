@@ -105,7 +105,7 @@ import { origin } from '~/data/origin'
 import { defenses, homes, perks, rides, genericPerks, talents } from '~/data/talents'
 import { waifu_perks } from '~/data/waifu_perks'
 
-import { rulesList } from '~/data/constatnts'
+import { rulesList } from '~/data/constants'
 
 const filter = ref('')
 

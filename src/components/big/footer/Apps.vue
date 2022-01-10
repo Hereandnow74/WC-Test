@@ -17,10 +17,13 @@
 
 <script lang="ts" setup>
 import { appMode, toggleAppMode } from '~/logic'
+import { useStore } from '~/store/store'
 
-const apps = [
+const { homePerks } = useStore()
+
+const appsList = [
   { icon: 'bi:globe2', name: 'Exit Stage Left', component: 'ExitStage', color: '#5480fc' },
-  { icon: 'cil:cash', name: 'Cash Still Rules', component: 'CashRules', color: '#5a933d' },
+  { icon: 'cil:cash', name: 'Cash Still Rules / Loans', component: 'CashRules', color: '#5a933d' },
   { icon: 'fluent:book-question-mark-24-regular', name: 'Missions', component: 'Missions', color: '#e3992b' },
   { icon: 'la:dice-d20', name: 'Random Build', component: 'RandomBuild', color: '#c76eff' },
   { icon: 'fa-solid:dice', name: 'Dice Machine', component: 'DiceMachine', color: 'white' },
@@ -28,8 +31,17 @@ const apps = [
   { icon: 'fluent:person-question-mark-16-regular', name: 'Random Character', component: 'RandomChar', color: '#f9ec52' },
   { icon: 'bx:bx-spreadsheet', name: 'Global Users Builds', component: 'UserBuilds', color: '#3a64b1' },
   { icon: 'la:dragon', name: 'Dragon Aura Calculator', component: 'DragonAura', color: '#c90000' },
+  { icon: 'carbon:circle-packing', name: 'Ritual Circle', component: 'RitualCircle', color: '#b912b4' },
   { icon: 'clarity:note-edit-line', name: 'Notes', component: 'Notes', color: '#e9d385' },
+  { icon: 'bx:bx-calculator', name: 'Bulk Capture Calculator', component: 'BulkCapture', color: '#c1c1c1' },
 ]
+
+const apps = computed(() => {
+  if (homePerks.value.length)
+    appsList.push({ icon: 'bi:box-seam', name: 'Pocket Space', component: 'PocketSpace', color: '#0d6efd' })
+
+  return appsList
+})
 
 const appComponents = {
   RandomChar: defineAsyncComponent(() => import('./apps/RandomChar.vue')),
@@ -42,6 +54,9 @@ const appComponents = {
   UserBuilds: defineAsyncComponent(() => import('./apps/UserBuilds.vue')),
   DragonAura: defineAsyncComponent(() => import('./apps/DragonAura.vue')),
   Notes: defineAsyncComponent(() => import('./apps/Notes.vue')),
+  RitualCircle: defineAsyncComponent(() => import('./apps/RitualCircleApp.vue')),
+  BulkCapture: defineAsyncComponent(() => import('./apps/BulkCapture.vue')),
+  PocketSpace: defineAsyncComponent(() => import('./apps/PocketSpace.vue')),
 }
 
 const appName = ref('')

@@ -5,6 +5,21 @@
     </h2>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
+        10 January 2022
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>105 new user submitted Characters.</li>
+        <li>Pocket Space(RP)(By KatzSmile) app.</li>
+        <li>Ritual Circle app.</li>
+        <li>Bulk Capture Calculator app.</li>
+        <li>Your card in Retinue tab</li>
+        <li>Character choose for Walk-In origin</li>
+        <li>You can now change name in Retinue tab on 'smartphone'</li>
+        <li>Bugfixes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
         02 January 2022
       </h3>
       <ul class="list-decimal list-inside">

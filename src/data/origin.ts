@@ -35,6 +35,7 @@ origin.push({
   title: 'Walk-In',
   cost: 0,
   image: '/img/origin/walkin2.jpg',
+  character: true,
   desc: `You are not... you, not precisely. You are instead a canon character from some
     established work. This acts as a blend of Drop-In and Substitute: canon characters do
     not need to pay extra to be themselves, but their only knowledge of any world they
@@ -45,9 +46,9 @@ origin.push({
 
 origin.push({
   title: 'Extra',
-  cost: 0,
+  cost: 1,
   image: '/img/origin/extra2.jpg',
-  variants: [{ title: 'T4-T6', cost: 10 }, { title: 'T7-T9', cost: 100 }],
+  variants: [{ title: 'T1-T3', cost: 1 }, { title: 'T4-T6', cost: 10 }, { title: 'T7-T9', cost: 100 }],
   desc: `You reincarnate into a non-canon "normie" character from
     your starting world, the equivalent of a tier 1 husbando or waifu,
     an alternate you who grew up in your starting world. (If you're

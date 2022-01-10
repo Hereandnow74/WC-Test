@@ -146,7 +146,7 @@ DLCgenericPerks.push({
   complex: 'target',
   special: 'Chargen only. Not available in Gauntlet PvP.',
   cost: 20,
-  desc: `Sometimes your potential companion is separated from you by an interdimensional vail. But the use of this perk will allow you to overcome all unthinkable boundaries and deliver them to you.
+  desc: `Sometimes your potential companion is separated from you by an interdimensional veil. But the use of this perk will allow you to overcome all unthinkable boundaries and deliver them to you.
   `,
 })
 
@@ -358,6 +358,7 @@ DLChomes.push({
   title: 'Stay in touch',
   cost: 5,
   desc: 'High speed internet service covering any and all dimensions no matter the location, magic ward, or jamming technology. A modem-router and replacements are provided for free.',
+  whitelist: ['Pocket Apartment'],
 })
 
 DLChomes.push({

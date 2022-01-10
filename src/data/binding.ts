@@ -39,6 +39,7 @@ export interface Binding {
   needed?: number
   type?: 'Stamp' | 'Jewelry' | 'Symbiote' | 'Shroud' | 'Ritual'
   waifu?: string
+  complex?: 'flavor' | 'target'
 }
 
 export const bindings: Binding[] = []
@@ -368,7 +369,7 @@ export const shroudElements = [
     'Body Effects': 'Black sclera and lips, dark facial tattoos, sharpened black finger- and toenails.',
     'Streamlined costume features': 'All gothic black leather and fishnet. Often has black leather gloves and boots.',
     'Heavy costume features': 'Dark overlord style full armor with menacing spikes, shoulder-attached cape, and a full face-concealing helmet. Feminine design only differs in curvature.',
-    'Freebies': ['Covert Talent, Performance Talent, Blessed Talent'],
+    'Freebies': 'Covert Talent, Performance Talent, Blessed Talent',
     'freebies': { talentPerks: ['Covert Talent', 'Performance Talent', 'Blessed Talent'] },
   },
   {
@@ -377,7 +378,7 @@ export const shroudElements = [
     'Body Effects': 'Constantly-flushed skin, heightened body temperature. Faint smell of smoke, incense, or ash. Eyes glow like embers.',
     'Streamlined costume features': 'Glowing oranges, orange trim on black backgrounds, flame patterns.',
     'Heavy costume features': 'Full body armor, seemingly melted into place with a burning inner glow.',
-    'Freebies': ['Martial Talent, Wild Talent, Wild Defense (2x), Environmental Defense'],
+    'Freebies': 'Martial Talent, Wild Talent, Wild Defense (2x), Environmental Defense',
     'freebies': {
       talentPerks: ['Martial Talent', 'Wild Talent'],
       defensePerks: ['Wild Defense', 'Wild Defense', 'Environmental Defense'],
@@ -389,7 +390,7 @@ export const shroudElements = [
     'Body Effects': 'Skin tinted blue from lower body temperature. Faint smell of pine needles. Eyes glow like ice.',
     'Streamlined costume features': 'Lace, white and blues, sheer materials.',
     'Heavy costume features': 'Fur, heavy materials, layers of silks.',
-    'Freebies': ['Martial Talent, Wild Talent, Wild Defense (2x), Environmental Defense'],
+    'Freebies': 'Martial Talent, Wild Talent, Wild Defense (2x), Environmental Defense',
     'freebies': {
       talentPerks: ['Martial Talent', 'Wild Talent'],
       defensePerks: ['Wild Defense', 'Wild Defense', 'Environmental Defense'],
@@ -401,7 +402,7 @@ export const shroudElements = [
     'Body Effects': 'Richly tanned skin if otherwise lighter. Smell of moist clay or loam. Eyes sparkle as gemstones of the same color.',
     'Streamlined costume features': 'Brightly-colored silk, veils, jewelry-as-lingerie.',
     'Heavy costume features': 'Metal plating, gemstones.',
-    'Freebies': ['Martial Talent, Wild Talent, Wild Defense (2x), Environmental Defense'],
+    'Freebies': 'Martial Talent, Wild Talent, Wild Defense (2x), Environmental Defense',
     'freebies': {
       talentPerks: ['Martial Talent', 'Wild Talent'],
       defensePerks: ['Wild Defense', 'Wild Defense', 'Environmental Defense'],
@@ -413,7 +414,7 @@ export const shroudElements = [
     'Body Effects': 'Mermaid alt-form automatically activates when entering water - can be based on any sea creature, not just fish. Skin tinted blue-green, sometimes a deeper black. Smell of salty ocean spray. Can have watery eyes or perpetually damp hair. Presence leaves condensation on nearby surfaces.',
     'Streamlined costume features': 'Neck-down bodysuit matching mermaid form. Kelp-like materials. Bathing suits.',
     'Heavy costume features': 'A diving suit with attached helmet, a full wetsuit, coral plating',
-    'Freebies': ['Martial Talent, Wild Talent, Wild Defense (2x), Environmental Defense'],
+    'Freebies': 'Martial Talent, Wild Talent, Wild Defense (2x), Environmental Defense',
     'freebies': {
       talentPerks: ['Martial Talent', 'Wild Talent'],
       defensePerks: ['Wild Defense', 'Wild Defense', 'Environmental Defense'],
@@ -425,7 +426,7 @@ export const shroudElements = [
     'Body Effects': 'Smell of fresh breeze or ozone. Eyes crackle with lightning at times. A dramatic wind always occurs when needed. Head wings.',
     'Streamlined costume features': 'Both designs have a leather coat and winged boots. Feminine design has bikini; boots are thigh-highs. Masculine design has tight pants and no shirt. Fishnet and scarf optional.',
     'Heavy costume features': 'Scarves, tassels, flowing robes',
-    'Freebies': ['Martial Talent, Wild Talent, Wild Defense (2x), Environmental Defense'],
+    'Freebies': 'Martial Talent, Wild Talent, Wild Defense (2x), Environmental Defense',
     'freebies': {
       talentPerks: ['Martial Talent', 'Wild Talent'],
       defensePerks: ['Wild Defense', 'Wild Defense', 'Environmental Defense'],
@@ -437,7 +438,7 @@ export const shroudElements = [
     'Body Effects': 'Individual gets a kemonomimi mode based on a natural animal, from your or individual’s homeworld and appropriate to individual’s personality. Kemonomimi mode shifts to bestial warform as the volume of active constructs increases.',
     'Streamlined costume features': 'Slight amounts of tendrils or bone, form-fitting bodysuits with support',
     'Heavy costume features': 'Interweaved exoskeletons, heavy leather with fur trim',
-    'Freebies': ['Everlasting Talent, Wild Talent, Body Defense, Wild Defense (2x), Creature Defense (2x)'],
+    'Freebies': 'Everlasting Talent, Wild Talent, Body Defense, Wild Defense (2x), Creature Defense (2x)',
     'freebies': {
       talentPerks: ['Everlasting Talent', 'Wild Talent'],
       defensePerks: ['Body Defense', 'Wild Defense', 'Wild Defense', 'Creature Defense', 'Creature Defense'],
@@ -449,7 +450,7 @@ export const shroudElements = [
     'Body Effects': 'Green-tinted skin, hair, lips, sometimes blood. Often green eyes. Smell like flowers, fresh fruit, or other plants. Can have leaves and flowers grow in hair. Extreme cases develop a layer of bark on skin, usually along the back and shoulders.',
     'Streamlined costume features': 'Leaves and vines, green lace. Cotton.',
     'Heavy costume features': 'Flowers, bark, and petals as well as thick vines.',
-    'Freebies': ['Everlasting Talent, Wild Talent, Body Defense, Wild Defense (2x), Creature Defense (2x)'],
+    'Freebies': 'Everlasting Talent, Wild Talent, Body Defense, Wild Defense (2x), Creature Defense (2x)',
     'freebies': {
       talentPerks: ['Everlasting Talent', 'Wild Talent'],
       defensePerks: ['Body Defense', 'Wild Defense', 'Wild Defense', 'Creature Defense', 'Creature Defense'],
@@ -461,7 +462,7 @@ export const shroudElements = [
     'Body Effects': 'Several hitodama orbit you. Can turn intangible at will, also become monochrome for the duration.',
     'Streamlined costume features': 'Veils and shrouds, bone jewelry or lingerie',
     'Heavy costume features': 'Bone plating, tattered shrouds, robes, and veils, original outfits but tattered and ragged',
-    'Freebies': ['Everlasting Talent. Body Defense (2x), Stress Defense, Soul Defense'],
+    'Freebies': 'Everlasting Talent. Body Defense (2x), Stress Defense, Soul Defense',
     'freebies': {
       talentPerks: ['Everlasting Talent'],
       defensePerks: ['Body Defense', 'Body Defense', 'Stress Defense', 'Soul Defense'],
@@ -473,7 +474,7 @@ export const shroudElements = [
     'Body Effects': 'Seam-like skin indentations over the entire body from neck down. Symbol-shaped pupils; bilateral symmetry recommended but not required. Pupils can instead be the same design as your tattoo’s central emblem.',
     'Streamlined costume features': 'The most common form is a skintight leotard, elbow-length gloves, and knee-high stiletto heels for the feminine, and a full neck-down bodysuit with flat soles for the masculine. Something for the heads-up display to be projected upon and earpiece is mandatory. Neon patterns resembling circuitry are standard across all body pieces.',
     'Heavy costume features': 'Both designs have neck-down bodysuit beneath shoulder pads, wrist-to-elbow gauntlets, torso and hip armor, and knee-high boots. Feminine design’s boots perfectly hide tall wedge heels. Masculine design armors thighs as well. Heads-up display projected onto bulky head-mounted display, completely hiding eyes. Headpiece completely attached to headset, with aesthetic antenna spikes pointed up and behind ears (at least two spikes on each side). Neon patterns resembling circuitry are standard across all body pieces.',
-    'Freebies': ['Science Talent, Engineering Talent'],
+    'Freebies': 'Science Talent, Engineering Talent',
     'freebies': {
       talentPerks: ['Science Talent', 'Engineering Talent'],
     },
@@ -484,8 +485,20 @@ export const shroudElements = [
     'Body Effects': 'My god, it’s full of stars! Specifically the pupils, which seem to go on forever. The insides of orifices may also seem to hint at further cosmos within, and the user appearing larger or smaller than they truly should out of the corner of one’s eye.',
     'Streamlined costume features': 'Semi-sheer material that glitters and sparkles, feminine designs tend to involve deep cleavage, while masculine tend to involve black latex.',
     'Heavy costume features': 'Dark, spacesuit-like outfit, the material glittering with pinpricks of light like stars.',
-    'Freebies': ['Paradox Defense'],
+    'Freebies': 'Paradox Defense',
     'freebies': { defensePerks: ['Paradox Defense'] },
+  },
+  {
+    'title': 'Custom Element',
+    'Elemental Ability': 'If you aren\'t satisfied with Company provided options you can choose custom element for yourself, while Company systems are adapting to new element you may experience some glitches. Your custom element will start at the weakest level of power compared to Company provided elements, but it will match them when you attain mastery in every way.',
+    'Body Effects': 'Effects on body heavily depend on chosen element the more conceptual the element is the more bizarre effects you will experience. Elements that have little to no effect on your body are possible as well(Human Element, Beauty Element, etc.)',
+    'Streamlined costume features': 'Costume depend on the fashion of the most common beings of your chosen element.',
+    'Heavy costume features': 'Heavy costume depend on the military/warrior attire of the most common beings of your chosen element.',
+    'Freebies': 'Everlasting Talent, Environment Defense(x2)',
+    'freebies': {
+      talentPerks: ['Everlasting Talent'],
+      defensePerks: ['Environment Defense', 'Environment Defense'],
+    },
   }]
 
 bindings.push({

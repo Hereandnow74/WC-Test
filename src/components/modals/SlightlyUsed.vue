@@ -39,7 +39,7 @@
 
 <script lang='ts' setup>
 import { random } from 'lodash-es'
-import { CHAR_COSTS } from '~/data/constatnts'
+import { CHAR_COSTS } from '~/data/constants'
 import { useStore } from '~/store/store'
 
 const props = defineProps({

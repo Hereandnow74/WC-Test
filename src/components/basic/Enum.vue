@@ -9,12 +9,25 @@
         >
           <span v-if="i != 0" class="text-orange-500">, </span>
           <span class="hover:underline">{{ el.title2 || el.title || el }}</span>
-          <span v-if="el?.anything?.length">({{ el.anything }})</span>
+          <span v-if="el?.anything?.length" class="text-yellow-500">({{ el.anything }})</span>
           <span v-if="el.count && el.count > 1" class="">(x{{ el.count }})</span>
-          <span v-if="el?.target?.length || el.waifu" class="">({{ el.target || el.waifu }})</span>
+          <span v-if="el?.target?.length || el.waifu" class="text-teal-500">({{ el.target || el.waifu }})</span>
           <span v-if="el.complex && isArray(el.complex)">
-            <List :list-key="'target'" :list="el.complex" color="text-green-500" start="(" end=")" />
-            <List :list-key="'flavor'" :list="el.complex" color="text-violet-400" start="{" end="}" />
+            <template v-if="el.complex[0].flavor && el.complex[0].target">
+              <span
+                v-for="tf in Object.entries(groupBy(el.complex, c => c.target))"
+
+                :key="tf[0]"
+                class="text-violet-400"
+              >
+                ({{ tf[0] }} <span class="text-gray-400">has</span>
+                <List :list-key="'flavor'" :list="tf[1]" color="text-green-500" start="" end="" />)
+              </span>
+            </template>
+            <template v-else>
+              <List :list-key="'target'" :list="el.complex" color="text-green-500" start="(" end=")" />
+              <List :list-key="'flavor'" :list="el.complex" color="text-violet-400" start="{" end="}" />
+            </template>
           </span>
         </router-link>
         <span v-if="priceMode" class="text-gray-300">[{{ el.cost }}]</span>
@@ -29,9 +42,9 @@
 </template>
 
 <script lang='ts' setup>
-import { isArray } from 'lodash'
+import { isArray, groupBy } from 'lodash-es'
 import type { PropType } from 'vue'
-import { LINKS, QUERIES } from '~/data/constatnts'
+import { LINKS, QUERIES } from '~/data/constants'
 
 defineProps({
   list: {

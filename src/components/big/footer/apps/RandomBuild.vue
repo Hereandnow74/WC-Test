@@ -29,7 +29,7 @@ import { origin } from '~/data/origin'
 import { defenses, homes, perks, rides, genericPerks, talents } from '~/data/talents'
 import { waifu_perks } from '~/data/waifu_perks'
 import { useStore } from '~/store/store'
-import { allWorldsNoCondition, CHAR_COSTS, WORLD_RATINGS } from '~/data/constatnts'
+import { allWorldsNoCondition, CHAR_COSTS, WORLD_RATINGS } from '~/data/constants'
 import { confirmDialog } from '~/logic/dialog'
 
 const targetBudget = ref(55)

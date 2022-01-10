@@ -47,7 +47,7 @@
 <script lang="ts" setup>
 import Fuse from 'fuse.js'
 import tippy from 'tippy.js'
-import { waifuTagsByTag, waifuTags } from '~/data/constatnts'
+import { waifuTagsByTag, waifuTags } from '~/data/constants'
 
 const props = defineProps({
   placeholder: {

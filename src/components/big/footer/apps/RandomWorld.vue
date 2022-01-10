@@ -15,7 +15,7 @@
 
 <script lang="ts" setup>
 import WorldCard from '~/components/WorldCard.vue'
-import { allWorldsNoCondition } from '~/data/constatnts'
+import { allWorldsNoCondition } from '~/data/constants'
 import { randomWorld, toggleAppMode } from '~/logic'
 
 const world = ref<any>({})

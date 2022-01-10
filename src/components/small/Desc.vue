@@ -5,7 +5,7 @@
 </template>
 
 <script lang='ts' setup>
-import { TOOLTIPS, TOOLTIPS_REG, LINKS, LINKS_REG, QUERIES } from '~/data/constatnts'
+import { TOOLTIPS, TOOLTIPS_REG, LINKS, LINKS_REG, QUERIES } from '~/data/constants'
 
 const props = defineProps({
   desc: {

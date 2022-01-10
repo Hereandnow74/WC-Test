@@ -89,7 +89,7 @@ import { useTooltips } from '~/logic/misc'
 import { useStore } from '~/store/store'
 import Select from '~/components/basic/Select.vue'
 import { chooseHeritage, heritageAvailable, isDLC } from '~/logic'
-import { heritageTiers } from '~/data/constatnts'
+import { heritageTiers } from '~/data/constants'
 import { DLCheritages } from '~/data/DLCs'
 import AnythingInput from '~/components/small/AnythingInput.vue'
 
