@@ -83,15 +83,6 @@
   </Modal>
 </template>
 
-<!-- rides.push({
-  title: 'Mobile Construction Vehicle',
-  source: 'Command & Conquer',
-  cost: 50,
-  desc: 'Red Alert 1 Database, Manufacturing',
-  addons: [['RA2 Database (+10)', 10], ['RA3 Database (+20)', 20], ['TW1 Database (+10)', 10], ['TW2 Database (+20)', 20], ['TW3 Database (+50)', 50], ['TW4 Database (+100)', 100], ['C&C Generals Database (+10)', 10]],
-  variants: [['Crawler version (70)', 20]],
-}) -->
-
 <script lang='ts' setup>
 import * as zod from 'zod'
 import { useForm, useField } from 'vee-validate'

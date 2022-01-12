@@ -26,11 +26,12 @@ import { heritages } from '~/data/heritage'
 import { bindings, lures, lureExpansions, otherControls } from '~/data/binding'
 import { intensity } from '~/data/intensity'
 import { origin } from '~/data/origin'
-import { defenses, homes, perks, rides, genericPerks, talents } from '~/data/talents'
+import { defenses, homes, perks, ridePerksFull, genericPerks, talents } from '~/data/talents'
 import { waifu_perks } from '~/data/waifu_perks'
 import { useStore } from '~/store/store'
 import { allWorldsNoCondition, CHAR_COSTS, WORLD_RATINGS } from '~/data/constants'
 import { confirmDialog } from '~/logic/dialog'
+import { rides } from '~/data/rides'
 
 const targetBudget = ref(55)
 
@@ -96,7 +97,7 @@ async function randomHeritage(max: number) {
 }
 
 async function randomRide(max: number) {
-  const perk = sample(rides)
+  const perk = sample([...rides, ...ridePerksFull])
   if (perk.cost > max) return
   if (rideAvailable(perk) && findIndex(ridePerks.value, { title: perk.title }) === -1)
     chooseRide(perk, { title: perk?.title, cost: perk?.cost })

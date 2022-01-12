@@ -41,11 +41,13 @@
             {{ req.value }}
           </div>
         </div>
-        <div v-if="mission.objectives.length">
+        <div v-if="mission.objectives.length" class="flex flex-col gap-1">
           Additional objectives:
-          <div v-for="rew in mission.objectives" :key="rew.value" class="pl-4">
+          <div v-for="rew in mission.objectives" :key="rew.value" class="pl-4 bg-blue-200">
             <div>{{ rew.value }}</div>
-            <div>{{ rew.reward }}</div>
+            <div class="pl-4">
+              Reward: {{ rew.reward }}
+            </div>
           </div>
         </div>
       </div>

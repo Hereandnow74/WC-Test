@@ -38,6 +38,10 @@
         <div v-if="ride.source" class="px-2">
           <span class="font-semibold">From:</span> {{ ride.source }}
         </div>
+        <div class="flex justify-between px-2">
+          <span><span class="font-semibold">Category:</span> {{ ride.category }}</span>
+          <span><span class="font-semibold">Size:</span> {{ ride.size }}</span>
+        </div>
         <div v-if="ride.addons" class="px-2">
           <span class="font-semibold">Addons:</span>
           <ul class="list-disc list-inside">
@@ -100,11 +104,13 @@
 
 <script lang='ts' setup>
 import { findIndex } from 'lodash-es'
-import { rides, rideDesc, Ride, PerkFull } from '~/data/talents'
+import { ridePerksFull, rideDesc, PerkFull } from '~/data/talents'
 import { useTooltips } from '~/logic/misc'
 import { useStore } from '~/store/store'
 import { toggleShowAddRide, showAddRide, pickSimplePerk, chooseRide, rideAvailable, isDLC } from '~/logic'
 import { DLCridePerks } from '~/data/DLCs'
+import { Ride, rides } from '~/data/rides'
+import { Perk } from '~/store/chargen'
 
 const { ridePerks, userRides, localUserRides } = useStore()
 const selectedRide = reactive({
@@ -114,9 +120,9 @@ const selectedRide = reactive({
   variant: '',
 })
 
-const allRides = computed(() => Array.prototype.concat(userRides.value, localUserRides.value, rides.slice(0, -2)))
+const allRides = computed(() => Array.prototype.concat(userRides.value, localUserRides.value, rides))
 
-const ridePerksWithDLC = computed(() => isDLC.value ? rides.slice(-2).concat(DLCridePerks) : rides.slice(-2))
+const ridePerksWithDLC = computed(() => isDLC.value ? ridePerksFull.concat(DLCridePerks) : ridePerksFull)
 
 function selectRide(perk: Ride) {
   if (selectedRide.title !== perk.title) {

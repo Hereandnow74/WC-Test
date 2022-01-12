@@ -494,10 +494,10 @@ export const shroudElements = [
     'Body Effects': 'Effects on body heavily depend on chosen element the more conceptual the element is the more bizarre effects you will experience. Elements that have little to no effect on your body are possible as well(Human Element, Beauty Element, etc.)',
     'Streamlined costume features': 'Costume depend on the fashion of the most common beings of your chosen element.',
     'Heavy costume features': 'Heavy costume depend on the military/warrior attire of the most common beings of your chosen element.',
-    'Freebies': 'Everlasting Talent, Environment Defense(x2)',
+    'Freebies': 'Everlasting Talent, Wild Defense, Environment Defense',
     'freebies': {
       talentPerks: ['Everlasting Talent'],
-      defensePerks: ['Environment Defense', 'Environment Defense'],
+      defensePerks: ['Wild Defense', 'Environment Defense'],
     },
   }]
 

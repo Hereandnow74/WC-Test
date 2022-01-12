@@ -1,19 +1,6 @@
 export const rideDesc = `You purchase a fully-functional, full-size replica of well-known land, sea, air, and space vehicles from various universes. Land vehicles tend to range from 5 credits to 20, while sea and air vehicles typically cost 20 to 100 credits each. Space vehicles start at 100 credits and only go up from there. Some vehicles have special variants that may cost more or less than the listed price; their prices are noted in their entries. Others have addons that can be purchased and applied to any existing copy of that vehicle, even ones you acquired outside of this catalog. You may purchase as many separate vehicles from the showroom as you can afford.
 If you have Exit Stage Left and the portal’s time limit runs out while your vehicle is only part way through, the event horizon will stretch and swallow the rest of it before the portal closes. People touching the vehicle, whose weight is not supported by it, will be left behind, as will all hostiles.`
 
-export interface Ride {
-  title: string
-  cost: number
-  desc?: string
-  source?: string
-  addons?: (string | number)[][]
-  requires?: string
-  whitelist?: string[]
-  flag?: string
-  variants?: (string | number)[][]
-  example?: string
-}
-
 export interface PerkFull {
   title: string
   cost: number
@@ -37,269 +24,10 @@ export interface PerkFull {
   complex?: string
 }
 
-// Environment: Land
-// #region ride
-export const rides: Ride[] = []
-
-rides.push({
-  title: 'Your Own Car From Home',
-  source: 'Real Life',
-  cost: 1,
-  desc: 'Has everything you would normally have in your car.',
-})
-
-rides.push({
-  title: 'Herbie',
-  source: 'Herbie',
-  cost: 5,
-  desc: 'Turbo Booster, Free Bro Herbie',
-})
-
-rides.push({
-  title: 'Regalia',
-  source: 'Final Fantasy XV',
-  cost: 5,
-  desc: 'Car from Final Fantasy XV',
-  addons: [['Type-D upgrade (off-road) (+5)', 5], ['Type-F upgrade (flight capability, unlimited fuel) (+10)', 10]],
-})
-
-rides.push({
-  title: 'Molcar',
-  source: 'Pui Pui Molcar',
-  cost: 5,
-  desc: 'half-vehicle half-guinea pig hybrid, very cute',
-})
-
-rides.push({
-  title: 'Kaneda',
-  source: 'Akira',
-  cost: 5,
-  desc: 'A cherry red beast of a motorcycle made famous from the Anime and Manga Akira. 200 Horsepower engine, electronic anti-lock brakes, and a fancy instrument panel including a built-in computer screen.',
-})
-
-// Environment: Sea
-
-rides.push({
-  title: 'Nautilus (1865)',
-  source: '20,000 Leagues Under the Sea',
-  cost: 20,
-  desc: '1865 Sci-Fi Electric Submarine',
-})
-
-rides.push({
-  title: 'Tuatha de Danaan',
-  source: 'Full Metal Panic',
-  cost: 40,
-  desc: 'Submarine-capable assault carrier. Holds 5x M9E Gernsback and 1x ARX-7 Arbalest mecha, 4x FAV-8 Super Harriers, 4x RAH-66 Comanche attack helicopters, and 6x MH-67 Pave Mare transport helicopters.',
-  addons: [['Upgrade ARX-7 to ARX-8 Laevatein (+10)', 10]],
-})
-
-rides.push({
-  title: 'Gargantia Fleet',
-  source: 'Gargantia on the Verdurous Planet',
-  cost: 50,
-  desc: 'Detachable Sub-ships, Orbital Mass Driver, Limited Manufacturing',
-  addons: [['Patrol Fleet (+10)', 10]],
-})
-
-rides.push({
-  title: 'Nautilus',
-  source: 'League of Extraordinary Gentlemen(Movie)',
-  cost: 50,
-  whitelist: ['Science Talent'],
-  desc: 'Missiles; Torpedos; Miniature Submarines',
-  addons: [['‘Auto-mobile’(+5)', 5]],
-})
-
-rides.push({
-  title: 'Ulysses',
-  source: 'Atlantis: The Lost Empire',
-  cost: 50,
-  desc: 'Sub-Pods, Cannon Turrets, Torpedos',
-})
-
-// Environment: Amphibious
-
-rides.push({
-  title: 'Mach 5',
-  source: 'Speed Racer',
-  cost: 15,
-  desc: 'Auto-Jacks, Belt Tires, Cutter Blades, Deflector, Evening Eye, Frogger Mode, Gizmo (Robotic Homing Pigeon)',
-  variants: [['Mach 6 (20)', 5]],
-})
-
-rides.push({
-  title: 'KITT',
-  source: 'Knight Rider',
-  cost: 20,
-  desc: 'Minimal Weaponry, Turbo Booster, crime lab, Free Bro KITT',
-})
-
-rides.push({
-  title: 'Mobile Construction Vehicle',
-  source: 'Command & Conquer',
-  cost: 50,
-  desc: 'Red Alert 1 Database, Manufacturing',
-  addons: [['RA2 Database (+10)', 10], ['RA3 Database (+20)', 20], ['TW1 Database (+10)', 10], ['TW2 Database (+20)', 20], ['TW3 Database (+50)', 50], ['TW4 Database (+100)', 100], ['C&C Generals Database (+10)', 10]],
-  variants: [['Crawler version (70)', 20]],
-})
-
-rides.push({
-  title: 'Mechonis',
-  source: 'Xenoblade Chronicles 1',
-  cost: 800,
-  requires: 'Fiora w/ Waifu Perk Machina or Meyneth',
-  desc: 'Mechon life-forms, Monado. Either version of Meyneth may build a new Mechonis on her own even without this purchase, provided she has sufficient time and resources.',
-})
-
-rides.push({
-  title: 'Armored Command Unit',
-  source: 'Supreme Commander',
-  cost: 1000,
-  desc: 'Aeon or UEF or Cybran Database (pick one), Extreme Manufacturing, Quantum Gate, Infinite Resources',
-  addons: [['2nd human faction’s database (+200)', 200], ['Seraphim Database (+500)', 500]],
-})
-
-// Environment: Sky
-
-rides.push({
-  title: 'Fahrenheit',
-  source: 'Final Fantasy X',
-  cost: 50,
-  desc: 'AAM launchers, laser cannons',
-  addons: [['Completed restoration - main cannons can fire more than twice without repairs, automated missile production that only requires feedstock (+20)', 20]],
-})
-
-rides.push({
-  title: 'Delphinus',
-  source: 'Skies of Arcadia',
-  cost: 75,
-  desc: 'Moonstone cannon',
-})
-
-rides.push({
-  title: 'Epoch',
-  source: 'Chrono Trigger',
-  cost: 100,
-  desc: 'time drive, little passenger space',
-})
-
-rides.push({
-  title: 'Monolith',
-  source: 'Warhammer 40k',
-  cost: 400,
-  desc: 'Anti-Gravitic Engines, Necrodermis, Particle Whip, Gauss Flux Arcs (4), Eternity Gate/Portal of Exile. It cannot build new troops, but it can teleport units in through the Gate.',
-  variants: [['Doomsday Monolith (500)', 100]],
-})
-
-// Environment: Space
-
-rides.push({
-  title: 'Bolo',
-  source: 'Bolo',
-  cost: 100,
-  desc: 'HEAVILY Armed, HEAVILY Armored, Landfall-capable',
-  addons: [['AI Bro Bolo (+50)', 50]],
-})
-
-rides.push({
-  title: 'Normandy-class stealth cruiser',
-  source: 'Mass Effect',
-  cost: 200,
-  desc: 'Like Normandy SR-2, have Thanix cannon',
-})
-
-rides.push({
-  title: 'UNSC Phoenix-class',
-  source: 'Halo',
-  cost: 400,
-  desc: 'Like Spirit of Fire have UNSC Database, Manufacturing, Free Waifu Serina or Isabel',
-})
-
-rides.push({
-  title: 'Starfleet Constitution-class',
-  example: 'Enterprise 1701-null',
-  source: 'Star Trek: The Original Series',
-  cost: 300,
-  desc: 'Federation database and labs, living and diplomatic quarters',
-})
-
-rides.push({
-  title: 'Starfleet Galaxy-class',
-  example: 'Enterprise 1701-D',
-  source: 'Star Trek: The Next Generation',
-  cost: 400,
-  desc: 'Federation database and labs, living and diplomatic quarters',
-})
-
-rides.push({
-  title: 'Starfleet Sovereign-class',
-  example: 'Enterprise 1701-E',
-  source: 'Star Trek: The Next Generation movies',
-  cost: 440,
-  desc: 'Federation database and labs, living and diplomatic quarters',
-})
-
-rides.push({
-  title: 'Starfleet Odyssey-class',
-  example: 'Enterprise 1701-F',
-  source: 'Star Trek',
-  cost: 500,
-  desc: 'Federation database and labs, living and diplomatic quarters',
-})
-
-rides.push({
-  title: 'Tau’ri BC-304',
-  example: 'Daedalus, Odyssey',
-  source: 'Stargate SG-1',
-  cost: 400,
-  desc: 'Asgard hyperdrive (extreme speed), teleporter, and plasma beams, 8 F-302s in each hangar bay',
-  addons: [['Asgard computer core (+300)', 300], ['Alternate reality drive (+100)', 100], ['Ancient cloak (+100)', 100], ['Horizon weapons platform (+50)', 50], ['ZPM additional power generation (+100)', 100]],
-})
-
-rides.push({
-  title: 'Terran Behemoth-class ',
-  example: 'Hyperion',
-  source: 'Starcraft',
-  cost: 400,
-  desc: 'Space flight, Terran Database, Armory, Manufacturing, Yamato Cannon',
-})
-
-rides.push({
-  title: 'Kushan mothership',
-  example: 'Pride of Hiigara',
-  source: 'Homeworld 2',
-  cost: 400,
-  desc: 'Kushan database, extreme production, minimal defenses',
-})
-
-rides.push({
-  title: 'Imperial-II class Star Destroyer',
-  source: 'Star Wars',
-  cost: 440,
-  desc: 'Heavy armour, heavy weapons, tractor beams, powerful hyperdrive (galactic spanning), small craft complement (72 TIE-series fighters, 8 Lambda class shuttles, 15 Delta class troop transports, 6 assault gunboats), Ground force complement (20 AT-ATs, 30 AT-STs, prefab bases, 9700 sets of Stormtrooper/Clonetrooper gear), Imperial industrial database (including designs for advanced TIEs), extensive machine shops and repair bays, droid crew support.',
-  variants: [['Executor class Super Star Destroyer (VERY heavy weapons, VERY heavy armour, 144 fighters, ground force complement 38,000 (500 credits)', 60]],
-  addons: [['New Republic upgrade: X-Wings and B-Wings, database current to Galactic Alliance period (+10)', 10], ['Stormtrooper/Clonetrooper gear upgraded to Mandolorian grade, Mandalorian forge and database added (+15)', 15]],
-})
-
-rides.push({
-  title: 'Lantean City-ship',
-  example: 'Atlantis',
-  source: 'Stargate Atlantis',
-  cost: 1500,
-  desc: 'Lantean database and labs, drone launchers, puddle-jumper hangars, wormhole drive, ZPM production facility, living quarters',
-})
-
-rides.push({
-  title: 'Ideon and Solo',
-  source: 'Space Runaway Ideon',
-  cost: 11111,
-  desc: '(Solo): DS Drive, onboard forest. (Ideon): Three-part combining mecha, arbitrarily powerful weapons and defenses, infinite energy.',
-})
-
 // Catch-a-Ride Perks
+export const ridePerksFull = [] as PerkFull[]
 
-rides.push({
+ridePerksFull.push({
   title: 'Catch-A-Ride Crew Training Program',
   cost: 5,
   requires: 'at least one Replica Showroom vehicle',
@@ -309,7 +37,7 @@ rides.push({
 <p>For captured or pre-existing purchased waifus, you can opt to have them undergo an 8-hour training program via a company-approved VR system, during which they will gain the skills needed for proper manning of your rides. Purchase of additional vehicles may require further courses, should the tech bases be significantly different.</p>`,
 })
 
-rides.push({
+ridePerksFull.push({
   title: 'Catch-A-Ride Crew Production Program',
   cost: 20,
   whitelist: ['Catch-A-Ride Crew Training Program'],
@@ -1087,7 +815,7 @@ genericPerks.push({
   requires: '(Any Pokémon trainer)',
   complex: 'target',
   cost: 40,
-  image: 'link',
+  image: 'https://wallpapercave.com/wp/wp6394404.png',
   desc: 'The enhanced spiritual bond between your Trainer waifu and her mons allows her to blend with one of them, take on its physical traits, and operate as one being, raising her tier at step 6 to the higher of her own or the blended mon’s. Any of her mons are eligible for this, but only one at a time. She will also receive her seventh most iconic or strongest mon from her canon appearances, if she has one, so she can have a full party of six alongside the one she’s blended with.',
 })
 

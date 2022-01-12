@@ -5,6 +5,16 @@
     </h2>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
+        11 January 2022
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>250 new user submitted Characters.</li>
+        <li>16 new user submitted Worlds.</li>
+        <li>Bugfixes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
         10 January 2022
       </h3>
       <ul class="list-decimal list-inside">

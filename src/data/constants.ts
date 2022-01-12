@@ -1,12 +1,12 @@
 import { isArray } from 'lodash-es'
-import { useRouter } from 'vue-router'
 import { DBCharacter } from 'global'
 import { DLCgenericPerks, DLChomes, DLCperks, DLCtalents, DLCheritages, DLClureExpansions, DLCbindings, DLClures, DLCotherControls, DLCridePerks } from './DLCs'
+import { rides } from './rides'
 import { intensity } from '~/data/intensity'
 import { origin } from '~/data/origin'
 import { bindings, lures, lureExpansions, otherControls } from '~/data/binding'
 import { heritages } from '~/data/heritage'
-import { rides, homes, defenses, talents, perks, genericPerks } from '~/data/talents'
+import { ridePerksFull, homes, defenses, talents, perks, genericPerks } from '~/data/talents'
 import { waifu_perks } from '~/data/waifu_perks'
 
 import { useStore } from '~/store/store'
@@ -172,7 +172,7 @@ export const LINKS = computed(() => {
     origin,
     'binding': [...bindings, ...lures, ...lureExpansions, ...otherControls, ...DLCbindings],
     'heritage': heritages,
-    'talents/ride': rides,
+    'talents/ride': [rides, ridePerksFull, DLCridePerks],
     'talents/home': [...homes, ...DLChomes],
     'talents/defense': defenses,
     'talents/talent': [...talents, ...DLCtalents],

@@ -62,7 +62,7 @@
         <h3 class="text-lg font-semibold">
           Catch-A-Ride
         </h3>
-        <Enum :list="rides" :color="color" />
+        <Enum :list="[...rides, ...ridePerksFull]" :color="color" />
       </div>
 
       <div>
@@ -102,10 +102,11 @@ import { heritages } from '~/data/heritage'
 import { bindings, lures, lureExpansions, otherControls } from '~/data/binding'
 import { intensity } from '~/data/intensity'
 import { origin } from '~/data/origin'
-import { defenses, homes, perks, rides, genericPerks, talents } from '~/data/talents'
+import { defenses, homes, perks, ridePerksFull, genericPerks, talents } from '~/data/talents'
 import { waifu_perks } from '~/data/waifu_perks'
 
 import { rulesList } from '~/data/constants'
+import { rides } from '~/data/rides'
 
 const filter = ref('')
 
@@ -119,7 +120,7 @@ const options = {
 const color = 'odd:text-gray-500 even:text-gray-900 dark:(odd:text-gray-200 even:text-gray-400) font-medium'
 
 const all = [...heritages, ...bindings, ...lures, ...lureExpansions, ...otherControls, ...intensity, ...origin,
-  ...defenses, ...homes, ...perks, ...rides, ...genericPerks, ...talents, ...waifu_perks]
+  ...defenses, ...homes, ...perks, ...rides, ...genericPerks, ...talents, ...waifu_perks, ...ridePerksFull]
 
 const fuse = computed(() => new Fuse(all, options))
 
