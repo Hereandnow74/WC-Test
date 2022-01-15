@@ -15,6 +15,8 @@ export const [isNSFW, toggleNSFW] = useToggle(false)
 export const [isSupport, toggleSupport] = useToggle(false)
 export const [isRetinueEdit, toggleRetinueEdit] = useToggle(false)
 
+export const userCharactersShown = ref(false)
+
 export const promoteShown = useStorage('pr', false)
 
 export const [appMode, toggleAppMode] = useToggle()

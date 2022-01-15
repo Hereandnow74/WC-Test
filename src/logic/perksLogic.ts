@@ -1,8 +1,8 @@
-import { findIndex, intersection, intersectionWith, isArray, mergeWith, pullAll, pullAllWith, remove, sample, uniqBy } from 'lodash-es'
+import { findIndex, intersection, intersectionWith, isArray, mergeWith, remove, sample, uniqBy } from 'lodash-es'
 import { Binding, shroudElements } from '~/data/binding'
 import { Heritage } from '~/data/heritage'
 import { Intensity } from '~/data/intensity'
-import { PerkFull, Ride } from '~/data/talents'
+import { PerkFull } from '~/data/talents'
 import { WaifuPerk } from '~/data/waifu_perks'
 import { useChallenges } from '~/store/challenges'
 import { usePlayStore } from '~/store/play'
@@ -50,11 +50,12 @@ export function addFreebies(freebies: object) {
         if (allForSave[key].value[ind].count)
           allForSave[key].value[ind].count += 1
         else
+          allForSave[key].value[ind].count = 2
         // What if cost already 0
-        if (allForSave[key].value[ind].cost === 0)
-          allForSave[key].value[ind].count = 1
-        else
-          allForSave[key].value[ind].cost = 0
+        // if (allForSave[key].value[ind].cost === 0)
+        //   allForSave[key].value[ind].count = 1
+        // else
+        //   allForSave[key].value[ind].cost = 0
       }
     })
   }

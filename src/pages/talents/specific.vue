@@ -73,7 +73,14 @@
           class="mx-1 inline-block text-base"
           @click.stop
         />
-        <span v-if="waifu.dlc" class="text-sm dark:text-gray-300 text-gray-600">(DLC by <span>{{ waifu.dlc }}</span>)</span>
+        <span v-if="waifu.dlc && !waifu.dlcLink" class="text-sm dark:text-gray-300 text-gray-600">(DLC by <span>{{ waifu.dlc }}</span>)</span>
+        <a
+          v-if="waifu.dlcLink"
+          :href="waifu.dlcLink"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-sm dark:text-gray-300 text-gray-600"
+        >(DLC by {{ waifu.dlc }})</a>
         <fa-solid:check
           v-if="findIndex(waifuPerks, { title: waifu.title }) !== -1"
           class="inline text-green-500"
@@ -98,9 +105,9 @@
       </div>
       <Desc :desc="waifu.desc" class="p-0" />
     </div>
-    <div v-if="showModal" class="fixed inset-0 bg-black bg-opacity-10 flex place-content-center" @click="showModal = false">
+    <div v-if="showModal" class="fixed inset-0 bg-black bg-opacity-10 flex place-content-center z-50" @click="showModal = false">
       <div class="overflow-auto max-h-screen max-w-screen flex place-content-center">
-        <img class="object-none" :src="modalImage" alt="full image">
+        <img class="object-cover" :src="modalImage" alt="full image">
       </div>
     </div>
     <div class="h-8"></div>

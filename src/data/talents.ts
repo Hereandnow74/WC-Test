@@ -22,6 +22,7 @@ export interface PerkFull {
   costVariants?: number[]
   freebies?: any
   complex?: string
+  chargen?: boolean
 }
 
 // Catch-a-Ride Perks
@@ -847,3 +848,6 @@ genericPerks.push({
 <p>If you have Madokami, Akuma Homura, Satomi Touka, Lapin, or any other meguca who is canonically capable of breaking the balance of hope and despair in your retinue, then this perk is free. If you already have this perk when you acquire a relevant waifu, then take a full refund on the value of this perk for as many times as you've purchased it.</p>
 <p>Upon ten purchases of this perk, all meguca you may purchase will automatically have this perk applied to them.</p>`,
 })
+
+export const talentsObject = talents.reduce((a, x) => { a[x.title] = x; return a }, {} as Record<string, PerkFull>)
+export const defenseObject = defenses.reduce((a, x) => { a[x.title] = x; return a }, {} as Record<string, PerkFull>)

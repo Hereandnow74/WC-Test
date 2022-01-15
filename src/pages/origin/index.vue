@@ -8,18 +8,18 @@
         :key="item.title"
         class="bg-light-blue-300 dark:bg-light-blue-900 p-2 md:w-[calc(50%-0.5rem)] xl:w-[calc(33%-0.5rem)]
           mb-4 cursor-pointer border-2 hover:border-orange-400 border-light-blue-900"
-        :class="choosedOrigin.title === item.title ? 'filter brightness-110' : ''"
+        :class="chosenOrigin.title === item.title ? 'filter brightness-110' : ''"
         @click="chooseOrigin(item)"
       >
         <div class="">
-          <div class="flex gap-1 items-center">
+          <div class="flex gap-1 items-center flex-wrap">
             <h4 class="text-xl mb-1 mr-auto px-2">
               {{ item.title }}
               <span text="gray-600 dark:gray-400">
-                (Cost: {{ choosedOrigin.title === item.title ? choosedOrigin.cost : item.cost }})
+                (Cost: {{ chosenOrigin.title === item.title ? chosenOrigin.cost : item.cost }})
               </span>
             </h4>
-            <div v-if="item.variants && choosedOrigin.title === item.title">
+            <div v-if="item.variants && chosenOrigin.title === item.title">
               <label for="variants">Variants:</label>
               <select v-model.number="item.cost" name="variants" class="ml-2 text-gray-700">
                 <option v-for="variant in item.variants" :key="variant.title" :value="variant.cost">
@@ -27,20 +27,23 @@
                 </option>
               </select>
             </div>
-            <div v-if="item.character && choosedOrigin.title === item.title" class="flex gap-1">
+            <div v-if="item.character && chosenOrigin.title === item.title" class="flex gap-1">
               <CharacterInput
-                v-model="choosedOrigin.character"
+                v-model="chosenOrigin.character"
                 :error-message="costError"
-                @updateTier="choosedOrigin.tier = $event"
-                @updateUID="choosedOrigin.uid = $event"
+                @updateTier="chosenOrigin.tier = $event"
+                @updateUID="chosenOrigin.uid = $event"
               />
               <Input
-                v-model="choosedOrigin.tier"
+                v-model="chosenOrigin.tier"
                 class="w-12"
                 placeholder="Tier"
               />
             </div>
-            <div v-if="choosedOrigin.title === item.title">
+            <div v-if="chosenOrigin.title === item.title && ['Possess', 'Substitute'].includes(item.title)">
+              <Select v-model="chosenOrigin.hr" :options="heritageOptions" placeholder="Archetype" />
+            </div>
+            <div v-if="chosenOrigin.title === item.title">
               <button
                 v-if="startingOrigin.title !== item.title"
                 class="rounded bg-amber-400 hover:bg-amber-500 text-gray-800 px-1"
@@ -74,11 +77,20 @@ import { desc, origin, Origin } from '~/data/origin'
 import { confirmDialog } from '~/logic/dialog'
 import { useTooltips } from '~/logic/misc'
 import { useStore } from '~/store/store'
+import Select from '~/components/basic/Select.vue'
 
-const choosedOrigin = reactive({
+const heritageOptions = [
+  { label: 'None', value: '' },
+  { label: 'Dragon', value: 'dr' },
+  { label: 'Transhuman', value: 'th' },
+  { label: 'Outsider', value: 'ou' },
+]
+
+const chosenOrigin = reactive({
   title: '',
   cost: 0,
   character: '',
+  hr: '',
   tier: 1,
   uid: 0,
 })
@@ -88,32 +100,33 @@ const { allEffects, startingOrigin, fullStartingBudget, flags } = useStore()
 
 onMounted(() => useTooltips())
 
-watch(choosedOrigin, () => {
-  if (['Substitute', 'Possess'].includes(choosedOrigin.title))
-    choosedOrigin.cost = CHAR_COSTS[choosedOrigin.tier - 1] || 0
+watch(chosenOrigin, () => {
+  if (['Substitute', 'Possess'].includes(chosenOrigin.title))
+    chosenOrigin.cost = CHAR_COSTS[chosenOrigin.tier - 1] || 0
 })
 
 function chooseOrigin(item: Origin) {
-  choosedOrigin.title = item.title
-  choosedOrigin.cost = item.cost
-  if (!['Substitute', 'Possess', 'Walk-In'].includes(choosedOrigin.title)) {
-    choosedOrigin.character = ''
-    choosedOrigin.tier = 1
-    choosedOrigin.uid = 0
+  chosenOrigin.title = item.title
+  chosenOrigin.cost = item.cost
+  if (!['Substitute', 'Possess', 'Walk-In'].includes(chosenOrigin.title)) {
+    chosenOrigin.character = ''
+    chosenOrigin.tier = 1
+    chosenOrigin.hr = ''
+    chosenOrigin.uid = 0
   }
 
-  if (startingOrigin.value.title === choosedOrigin.title)
-    Object.assign(choosedOrigin, startingOrigin.value)
+  if (startingOrigin.value.title === chosenOrigin.title)
+    Object.assign(chosenOrigin, startingOrigin.value)
 }
 
 function pickOrigin() {
-  if (choosedOrigin.title === 'Substitute' && choosedOrigin.cost > fullStartingBudget.value * 0.2) {
+  if (chosenOrigin.title === 'Substitute' && chosenOrigin.cost > fullStartingBudget.value * 0.2) {
     costError.value = 'Cost should be less than 20% of your starting budget'
   }
   else {
     costError.value = ''
-    allEffects.value.push(choosedOrigin.title)
-    Object.assign(startingOrigin.value, choosedOrigin)
+    allEffects.value.push(chosenOrigin.title)
+    Object.assign(startingOrigin.value, chosenOrigin)
   }
 }
 

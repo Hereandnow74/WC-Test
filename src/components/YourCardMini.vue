@@ -4,8 +4,7 @@
   >
     <div class="flex gap-2 w-full">
       <img
-        v-if="char.i"
-        :src="imageLink(char.i, char.u)"
+        :src="char.i ? imageLink(char.i, char.u) : 'img/Contractor.jpg'"
         :alt="startingOrigin.character"
         class="rounded object-cover max-h-[140px] max-w-[90px] object-top"
       >
@@ -15,7 +14,7 @@
           <span v-else>
             {{ startingOrigin.character }}<span class="text-gray-500 text-sm"> (It's you)</span>
           </span>
-          <span class="text-gray-500 ml-auto whitespace-nowrap"> Tier: <span class="text-green-500">{{ startingOrigin.tier }}</span></span>
+          <span class="text-gray-500 ml-auto whitespace-nowrap"> Tier: <span class="text-green-500">{{ Math.max(startingOrigin.tier || 1, yourTier) }}</span></span>
         </div>
         <span v-if="char.w" class="text-gray-500">From: <span class="text-gray-400">{{ char.w }}</span></span>
         <div class="flex gap-2 mb-1">
@@ -66,7 +65,4 @@ getAllChars().then(chars => allChars.value = chars)
 const char = computed(() => allChars.value[findIndex(allChars.value, { u: startingOrigin.value.uid })] || {})
 
 watch(char, () => startingOrigin.value.sex = startingOrigin.value.sex || (char.value && char.value.b ? char.value.b?.includes('F') ? 'F' : 'M' : 'M'))
-
-startingOrigin.value.tier = yourTier.value
-
 </script>

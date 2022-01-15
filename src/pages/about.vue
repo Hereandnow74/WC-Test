@@ -6,8 +6,8 @@
       </h3>
       <div>
         Time I spend on Interactive Waifu Catalog so far -
-        <span class="text-amber-500 text-2xl">421</span> hours in
-        <span class="text-amber-500 text-2xl">107</span> days.
+        <span class="text-amber-500 text-2xl">476</span> hours in
+        <span class="text-amber-500 text-2xl">121</span> days.
       </div>
       <div>
         If you found some bugs, have any questions about Interactive, suggestions, collaborations or you want to hire me
@@ -38,16 +38,39 @@
       </div>
       <div>
         <h4 class="text-2xl text-center">
-          Supporters
+          Top 20 users by submitted characters
         </h4>
-        <div class="flex flex-wrap gap-2 justify-center">
-          <div class="text-semibold">
-            BenFang322<pepicons:crown class="text-amber-400" />
-            Templar9999<pepicons:crown class="text-gray-400" />
-            Cyrus<pepicons:crown class="text-red-400" />
+        <div class="flex flex-wrap gap-x-2 justify-center">
+          <div v-for="user in topUsers" :key="user[0]" class="text-semibold">
+            {{ user[0] }}(<span class="text-amber-500">{{ user[1] }}</span>)
           </div>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-2xl flex items-center justify-center">
+          Supporters <ci:heart-fill class="text-red-500" />
+        </h4>
+        <div class="flex flex-wrap gap-2 justify-center text-semibold">
+          <span>BenFang322<pepicons:crown class="text-amber-400" /></span>
+          <span>Templar9999<pepicons:crown class="text-gray-400" /></span>
+          <span>Cyrus<pepicons:crown class="text-red-400" /></span>
+          <span>KatzSmile</span>
         </div>
       </div>
     </div>
   </div>
 </template>
+
+<script lang="ts" setup>
+import { countBy } from 'lodash-es'
+import { getUserChars } from '~/data/constants'
+
+const topUsers = ref<[string, number][]>([])
+
+getUserChars().then(x => Object.entries(countBy(x, c => c.k))
+  .filter(x => x[0] !== 'undefined')
+  .sort((a, b) => b[1] - a[1])
+  .slice(0, 20)
+  .forEach(x => topUsers.value.push(x)))
+
+</script>

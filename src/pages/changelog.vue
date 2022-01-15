@@ -5,6 +5,19 @@
     </h2>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
+        15 January 2022
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>62 new user submitted Characters.</li>
+        <li>5 new user submitted Rides.</li>
+        <li>2 new user submitted Waifu Perks.</li>
+        <li>Discounts, Discounts App - some of the old saves may have become incorrect, expect bugs</li>
+        <li>Top 20 users by submitted characters on About page</li>
+        <li>Bugfixes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
         11 January 2022
       </h3>
       <ul class="list-decimal list-inside">

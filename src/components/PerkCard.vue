@@ -37,12 +37,14 @@
         class="text-base ml-2"
         @click.stop
       />
-      <Select
+      <NumberInput
         v-if="discount"
-        v-model="discountValue"
-        :options="discounts[discount]"
+        v-model="perkToSave.defDiscount"
         class="mx-1 inline-block text-base"
-        placeholder="Discount"
+        label="Discount"
+        :min="0"
+        :max="5"
+        title="Number of qualified retinue members"
         @click.stop
       />
       <slot name="title" />
@@ -54,7 +56,10 @@
         @click.stop
       />
       <span text="gray-500 dark:gray-400" class="whitespace-nowrap">
-        (Cost: <span text="green-600 dark:green-300">{{ displayedCost }}</span>)
+        (Cost: <span text="green-600 dark:green-300">{{ displayedCost }}</span>
+        <span v-if="perkToSave.defDiscount" text="amber-600 dark:amber-300">
+          [{{ discountedCost }}]</span>
+        )
       </span>
       <fa-solid:check
         v-if="perkExist"
@@ -93,7 +98,8 @@
 </template>
 
 <script lang='ts' setup>
-import { findIndex } from 'lodash-es'
+import { findIndex, isEmpty, isObject } from 'lodash-es'
+import NumberInput from './basic/NumberInput.vue'
 import { useStore } from '~/store/store'
 
 const props = defineProps({
@@ -135,22 +141,12 @@ const emit = defineEmits(['pickPerk'])
 
 const { targetList } = useStore()
 const cost = ref(props.perk.cost)
-const discountValue = ref<number | string>('')
 // const count = ref(props.savedPerk.count - (props.savedPerk?.target?.length || 0) - (props.savedPerk?.anything?.length) || 0)
 
 const complexFields = {
   target: ['target', 'target_f', 'target_c'].includes(props.perk.complex),
   flavor: ['flavor', 'target_f'].includes(props.perk.complex),
   count: ['target_c'].includes(props.perk.complex),
-}
-
-const discounts = {
-  defense: [
-    { label: 'None', value: 0 },
-    { label: '40%', value: 0.4 },
-    { label: '1 free', value: 1 },
-    { label: '2 free', value: 2 },
-  ],
 }
 
 const complex = reactive({
@@ -164,19 +160,17 @@ const perkToSave = reactive({
   count: props.savedPerk.count || 0,
   cost: computed(() => {
     let cs = cost.value
-    if (props.increment || props.perk.increment) { cs = (perkToSave.count / 2) * (cs * 2 + (perkToSave.count - 1) * cs) }
-    else {
-      let countMod = 0
-      if (discountValue.value === 0.4) cs = Math.round(cs * 0.6)
-      if (discountValue.value === 1) countMod = 1
-      if (discountValue.value === 2) countMod = 2
-      cs = perkToSave.count ? cs * (perkToSave.count - countMod) : cs
-    }
+    let countMod = 0
+    if (props.perk.title === 'Command Seals') countMod = 1
+    if (props.increment || props.perk.increment) cs = (perkToSave.count / 2) * (cs * 2 + (perkToSave.count - 1) * cs)
+    else
+      cs = perkToSave.count ? (cs * (perkToSave.count - countMod)) : cs
     return cs
   }),
   target: '',
   anything: '',
   freebies: { ...props.perk.freebies } || undefined,
+  defDiscount: props.savedPerk.defDiscount,
 })
 
 const displayedCost = computed(() => {
@@ -184,11 +178,43 @@ const displayedCost = computed(() => {
   return props.perk.cost >= 11111 ? `${perkToSave.cost / 11111} T11 ticket${s}` : perkToSave.cost
 })
 
+const discountedCost = computed(() => {
+  if (!perkToSave.defDiscount) return
+  if (perkToSave.count <= 1) {
+    switch (perkToSave.defDiscount) {
+      case 1:
+        return displayedCost.value * 0.6
+      case 2:
+        return displayedCost.value * 0.2
+      case 3:
+        return 0
+      default:
+        return 0
+    }
+  }
+  else {
+    switch (perkToSave.defDiscount) {
+      case 1:
+        return displayedCost.value * 0.8
+      case 2:
+        return displayedCost.value * 0.6
+      case 3:
+        return displayedCost.value * 0.5
+      case 4:
+        return displayedCost.value * 0.2
+      case 5:
+        return 0
+    }
+  }
+})
+
 function filterObject(obj: any) {
   const ret: any = {}
   Object.keys(obj)
     .forEach((key) => {
-      if ((obj[key] !== undefined && obj[key]) || key === 'cost') {
+      if (obj[key] !== undefined && obj[key] !== '') {
+        if (isObject(obj[key]) && isEmpty(obj[key])) return
+        if (key === 'defDiscount' && obj[key] === 0) return
         if (obj[key].value)
           ret[key] = obj[key].value
         else
@@ -197,14 +223,6 @@ function filterObject(obj: any) {
     })
   return ret
 }
-
-watch(discountValue, () => {
-  if (discountValue.value === 1)
-    perkToSave.count = 1
-
-  if (discountValue.value === 2)
-    perkToSave.count = 2
-})
 
 function sendPerk() {
   const obj = filterObject(perkToSave)

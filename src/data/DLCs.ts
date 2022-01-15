@@ -225,17 +225,6 @@ DLCperks.push({
 })
 
 DLCperks.push({
-  dlc: 'DLC by Despin',
-  dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
-  title: 'I Am Become Deathless',
-  cost: 11111,
-  desc: `
-  You are now covered by your Warranty, and will respawn even from events that would somehow kill a T11. 
-  `,
-  whitelist: ['Warranty Plan'],
-})
-
-DLCperks.push({
   dlc: 'DLC by Merior',
   dlclink: 'https://docs.google.com/document/d/1j9emHb4IWvOTnp13RASTAuINAFuKDMSSQyQ-7ta9sjA/edit#',
   title: 'Gone And Forgotten',
@@ -340,17 +329,6 @@ DLChomes.push({
   needed: 1,
   desc: 'The control center provided by Grand Manor/Life’s A Beach is now an app on your smart device.',
   whitelist: ['Grand Manor', 'Life’s A Beach'],
-})
-
-DLChomes.push({
-  dlc: 'DLC by Despin',
-  dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
-  title: 'Emergency Exit',
-  cost: 100,
-  desc: `
-  When you would receive a killing blow, you are teleported to your Pocket Apartment instead. The Company is not responsible for the consequences if you are teleported while in a world that doesn't have teleportation.
-  `,
-  whitelist: ['Pocket Apartment'],
 })
 
 DLChomes.push({

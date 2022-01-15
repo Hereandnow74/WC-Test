@@ -33,6 +33,7 @@ export interface Origin {
   title: string
   cost: number
   character?: string
+  hr?: 'dr' | 'th' | 'ou'
   tier?: number
   uid?: number
 }

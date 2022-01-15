@@ -15662,7 +15662,7 @@
     "u": 255,
     "n": "Jabberwock",
     "t": 7,
-    "i": "eh_okxhwsac1mge",
+    "i": "[n]Eh_OkXhWsAc1mge.jpg",
     "s": "https://pbs.twimg.com/media/Eh_OkXhWsAc1mge?format=jpg&name=medium",
     "w": "Black Souls"
   },
@@ -22019,7 +22019,8 @@
     "s": "https://chan.sankakucomplex.com/post/show/3910709",
     "w": "Date A Live",
     "b": [
-      "M"
+      "F",
+      "P"
     ]
   },
   {
@@ -22151,7 +22152,8 @@
     "t": 6,
     "i": "sample_efa5f4a0ba06798b8a62ffab0ec27ea2.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/7926546",
-    "w": "Date A Live"
+    "w": "Date A Live",
+    "b": ["F", "P"]
   },
   {
     "u": 10918,
@@ -85543,7 +85545,7 @@
   {
     "u": 6021,
     "n": "Gaen Izuko",
-    "t": 3,
+    "t": 5,
     "i": "84ac875798445a13e07351350331acb5.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/3283900",
     "w": "Monogatari",
@@ -94058,19 +94060,6 @@
     "d": "Servants – Assassin"
   },
   {
-    "u": 13880,
-    "n": "Enkidu",
-    "t": 8,
-    "i": "sample_ffd1f1244c5bdac9db345be17ded206c.jpg",
-    "s": "https://chan.sankakucomplex.com/post/show/5977126",
-    "w": "Nasuverse",
-    "d": "Servants - Lancer",
-    "b": [
-      "F",
-      "C"
-    ]
-  },
-  {
     "u": 13881,
     "n": "Eric Bloodaxe",
     "t": 6,
@@ -96947,6 +96936,7 @@
     "b": [
       "F",
       "C",
+      "P",
       "mt",
       "dh",
       "pc"
@@ -141289,7 +141279,7 @@
     "u": 1993,
     "n": "Regent (Jean-Paul)",
     "t": 4,
-    "i": "",
+    "i": "[n]Eh4_EIoU8AAuJUs.jpg",
     "s": "https://twitter.com/SereneNocturne/status/1305550285402644480",
     "w": "Worm"
   },
@@ -141329,7 +141319,8 @@
     "u": 1997,
     "n": "Assault (Ethan)",
     "t": 5,
-    "i": "",
+    "i": "[n]Character-Canon-Assault.jpg",
+    "s": "https://ibb.co/album/n7GYLR",
     "w": "Worm",
     "b": [
       "M"
@@ -141348,7 +141339,7 @@
   },
   {
     "u": 1999,
-    "n": "Clockblocker (Denns)",
+    "n": "Clockblocker (Dennis)",
     "t": 5,
     "i": "yunyun_clockblocker.png",
     "s": "https://static.wikia.nocookie.net/parahumans/images/0/02/YunYun_Clockblocker.png",
@@ -141394,7 +141385,7 @@
     "u": 2003,
     "n": "Grue (Brian Laborn)",
     "t": 5,
-    "i": "",
+    "i": "[n]Eh0vYBcU0AIGWk9.jpg",
     "s": "https://twitter.com/SereneNocturne/status/1305251560327270400",
     "w": "Worm",
     "b": [
@@ -141540,9 +141531,7 @@
     "i": "https://i.imgur.com/I2EDxT4m.png",
     "s": "https://i.imgur.com/I2EDxT4.png",
     "w": "Worm",
-    "b": [
-      ["hp","hl","hz","dr","id","O"]
-    ]
+    "b": ["hp","hl","hz","dr","id","O"]
   },
   {
     "u": 4651,
@@ -141710,7 +141699,8 @@
     "u": 4665,
     "n": "Carol Dallon/Brandish",
     "t": 4,
-    "i": "",
+    "i": "[n]Character-Canon-Brandish.jpg",
+    "s": "https://ibb.co/album/n7GYLR",
     "w": "Worm",
     "b": [
       "F"
@@ -141731,7 +141721,8 @@
     "u": 4667,
     "n": "Dinah Alcott",
     "t": 4,
-    "i": "",
+    "i": "[n]Character-Dinah.jpg",
+    "s": "https://ibb.co/album/n7GYLR",
     "w": "Worm",
     "b": [
       "F"
@@ -142448,7 +142439,7 @@
     "u": 4741,
     "n": "Finale",
     "t": 4,
-    "i": "",
+    "i": "[n]FinaleSG.png",
     "s": "https://worm.fandom.com/wiki/File:FinaleByUP.png",
     "w": "Worm"
   },
@@ -142471,8 +142462,8 @@
     "u": 4744,
     "n": "Love Lost",
     "t": 4,
-    "i": "",
-    "s": "https://imgur.com/gallery/WWqb0Rp",
+    "i": "https://i.imgur.com/fIeHCKrm.jpg",
+    "s": "https://i.imgur.com/fIeHCKr.jpg",
     "w": "Worm"
   },
   {
@@ -142564,6 +142555,7 @@
     "n": "Etna",
     "t": 5,
     "i": "https://i.imgur.com/TlPvLcfm.png",
+    "s": "https://i.imgur.com/TlPvLcf.png",
     "w": "Worm",
     "b": [
       "F"
@@ -142591,7 +142583,8 @@
     "u": 4760,
     "n": "Sidepiece",
     "t": 4,
-    "i": "https://i.imgur.com/oBDY4Qr.png",
+    "i": "https://i.imgur.com/oBDY4Qrm.png",
+    "s": "https://i.imgur.com/oBDY4Qr.png",
     "w": "Worm",
     "b": [
       "F"
@@ -142692,7 +142685,7 @@
     "u": 4934,
     "n": "Kimiko Tohomiko",
     "t": 4,
-    "i": "",
+    "i": "[n]tumblr_on8xrnEhID1s00u2lo1_400.png",
     "s": "https://66.media.tumblr.com/f68a3fbe7e029d1f5ebb12b4827d83d8/tumblr_on8xrnEhID1s00u2lo1_400.png",
     "w": "Xiaolin Showdown"
   },

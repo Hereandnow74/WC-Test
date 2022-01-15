@@ -80,6 +80,7 @@ import { useStore } from '~/store/store'
 import { activeTab, clearAll, orientation } from '~/logic'
 import { confirmDialog } from '~/logic/dialog'
 import { useChallenges } from '~/store/challenges'
+import { Perk } from '~/store/chargen'
 
 const showSaveLoad = ref(false)
 const showShare = ref(false)
@@ -99,6 +100,7 @@ const {
   budget, startingWorld, startingOrigin, intensities, binding, homePerks, defensePerks,
   companions, heritage, talentPerks, waifuPerks, ridePerks, miscPerks, luresBought, genericWaifuPerks,
   tier11tickets, companionsCost, baseBudget, companionProfit, companionProfitSold, otherPerks, loan, csr,
+  usedHeritageDiscount, talentsDiscount, defensesDiscount, defenseRetinueDiscount,
 } = useStore()
 
 const { activeChallenges } = useChallenges()
@@ -166,17 +168,33 @@ function copyText() {
       a += `${x.title} +${x.intensity > 10 ? x.intensity : baseBudget.value * x.intensity} [${(fullCost.c += x.intensity > 10 ? x.intensity : baseBudget.value * x.intensity, fullCost.c)}]\n\n`
     , '')}`
     : ''
-
   fullCost.c -= startingOrigin.value.cost || 0
   full += originTextClean.value ? `${originTextClean.value} -${startingOrigin.value.cost} [${fullCost.c}]\n\n` : ''
+  if (usedHeritageDiscount.value > 0) {
+    fullCost.c += usedHeritageDiscount.value
+    full += `Discounted because of your origin archetype +${usedHeritageDiscount.value} [${fullCost.c}]\n`
+  }
   full += heritage.value.length ? `${buildString('Heritage', heritage.value, fullCost)}\n` : ''
   full += binding.value.length ? `${buildString('Bindings', binding.value, fullCost)}\n` : ''
   full += luresBought.value.length ? `${buildString('Lures', luresBought.value, fullCost)}\n` : ''
   full += otherPerks.value.length ? `${buildString('Other Controls', otherPerks.value, fullCost)}\n` : ''
   full += ridePerks.value.length ? `${buildString('Rides', ridePerks.value, fullCost)}\n` : ''
   full += homePerks.value.length ? `${buildString('Home Perks', homePerks.value, fullCost)}\n` : ''
+  if (talentsDiscount.value > 0) {
+    fullCost.c += talentsDiscount.value
+    full += `Discounted for duplicate talents +${talentsDiscount.value} [${fullCost.c}]\n`
+  }
   full += talentPerks.value.length ? `${buildString('Talents', talentPerks.value, fullCost)}\n` : ''
+  if (defensesDiscount.value > 0) {
+    fullCost.c += defensesDiscount.value
+    full += `Discounted for duplicate defenses +${defensesDiscount.value} [${fullCost.c}]\n`
+  }
   full += defensePerks.value.length ? `${buildString('Defenses', defensePerks.value, fullCost)}\n` : ''
+  if (defenseRetinueDiscount.value > 0) {
+    fullCost.c += defenseRetinueDiscount.value
+    full = full.slice(0, -1)
+    full += `Defenses discounted for retinue members +${defenseRetinueDiscount.value} [${fullCost.c}]\n\n`
+  }
   full += miscPerks.value.length ? `${buildString('Misc Perks', miscPerks.value, fullCost)}\n` : ''
   full += genericWaifuPerks.value.length ? `${buildString('Generic Waifu Perks', genericWaifuPerks.value, fullCost)}\n` : ''
   full += waifuPerks.value.length ? `${buildString('Waifu Perks', waifuPerks.value, fullCost)}\n` : ''

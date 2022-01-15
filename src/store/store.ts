@@ -1,8 +1,10 @@
+import { start } from 'repl'
 import { findIndex } from 'lodash-es'
 import { useChallenges } from './challenges'
 import { usePlayStore } from './play'
 import { useChargenStore } from './chargen'
 import { heritageTiers, WORLD_RATINGS } from '~/data/constants'
+import { defenseObject, talentsObject } from '~/data/talents'
 
 const CHAR_COSTS = [1, 2, 5, 10, 20, 50, 100, 200, 500, 1000, 11111]
 
@@ -111,6 +113,73 @@ const companionProfitSold = computed(() => {
   }, 0)
 })
 
+// Discounts
+const maxHeritageDiscount = computed(() => {
+  const types = {
+    dr: 'Dragon',
+    th: 'Transhuman',
+    ou: 'Outsider',
+  }
+  const discount = { archetype: '', value: 0 }
+  if (['Substitute', 'Possess'].includes(startingOrigin.value.title) && startingOrigin.value.hr) {
+    discount.archetype = types[startingOrigin.value.hr] || ''
+    discount.value = CHAR_COSTS[startingOrigin.value.tier - 1] || 0
+    if (discount.value === 11111) discount.value = 2000
+  }
+  return discount
+})
+
+const usedHeritageDiscount = computed(() => {
+  const hrCost = heritage.value.filter(x => x.tree && x.tree === maxHeritageDiscount.value.archetype)
+    .reduce((a, x) => a += x.cost, 0)
+  return maxHeritageDiscount.value.value < hrCost * 0.8 ? maxHeritageDiscount.value.value : hrCost * 0.8
+})
+
+const talentsDiscount = computed(() => {
+  const cost = talentPerks.value.filter(x => x.count && x.count > 1 && !x.complex)
+    .reduce((a, x) => a += (x.count - 1) * talentsObject[x.title].cost, 0)
+  return cost
+})
+
+const defensesDiscount = computed(() => {
+  const cost = defensePerks.value.filter(x => x.count && x.count > 2)
+    .reduce((a, x) => a += (x.count - 2) * defenseObject[x.title].cost, 0)
+  return cost
+})
+
+const defenseRetinueDiscount = computed(() => {
+  const cost = defensePerks.value.filter(x => x.defDiscount).reduce((a, x) => {
+    if (x.count <= 1) {
+      switch (x.defDiscount) {
+        case 1:
+          return a += defenseObject[x.title].cost * 0.4
+        case 2:
+          return a += defenseObject[x.title].cost * 0.8
+        case 3:
+          return a += defenseObject[x.title].cost
+        default:
+          return a += defenseObject[x.title].cost
+      }
+    }
+    else {
+      switch (x.defDiscount) {
+        case 1:
+          return a += defenseObject[x.title].cost * 0.4
+        case 2:
+          return a += defenseObject[x.title].cost * 0.8
+        case 3:
+          return a += defenseObject[x.title].cost
+        case 4:
+          return a += defenseObject[x.title].cost * 1.6
+        case 5:
+          return a += defenseObject[x.title].cost * 2
+      }
+    }
+    return a
+  }, 0)
+  return cost
+})
+
 const fullStartingBudget = computed(() => {
   let intensityFlat = 0
   const intenMultiplier = intensities.value
@@ -134,7 +203,8 @@ const budget = computed(() => {
       - talentsCost.value - defensesCost.value - miscPerksCost.value - waifuPerksCost.value
       - genericWaifuPerksCost.value - companionsCost.value - otherCost.value - fee.value
       - budgetMods.value.minus + budgetMods.value.plus + companionProfit.value + companionProfitSold.value
-      + loan.value.gained
+      + loan.value.gained + usedHeritageDiscount.value + talentsDiscount.value + defensesDiscount.value
+      + defenseRetinueDiscount.value
 })
 
 const companionTicketProfit = computed(() => {
@@ -289,5 +359,10 @@ export function useStore() {
     trHistory,
     favorites,
     totalActive,
+    usedHeritageDiscount,
+    maxHeritageDiscount,
+    talentsDiscount,
+    defensesDiscount,
+    defenseRetinueDiscount,
   }
 }

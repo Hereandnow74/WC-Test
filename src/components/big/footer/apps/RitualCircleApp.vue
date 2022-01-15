@@ -62,9 +62,9 @@
         Specialty circles effect last
         <span class="text-green-500 text-lg">{{ effect }}</span>
       </div>
-      <div class="circle-container mx-auto my-16">
+      <!-- <div class="circle-container mx-auto my-16">
         <div ref="circle" class="magic-circle"></div>
-      </div>
+      </div> -->
     </div>
     <Desc v-else desc="You don't have a Ritual Circle perk, so no rituals for you buddy." />
     <Button
@@ -324,9 +324,7 @@ function makeMagicCircle() {
 }
 
 function appendRandomElement(element: HTMLElement, maxChilds = 0) {
-  /*
-   * Random type
-   */
+  // Random type
   let dice = Math.floor((Math.random() * 3))
   let child = null
 
@@ -356,7 +354,7 @@ function appendRandomElement(element: HTMLElement, maxChilds = 0) {
 }
 
 function appendCircle(element: HTMLElement, maxSubcircles: number) {
-  const circle = addElementWithClass(element, 'inner-magic-circle')
+  const circle = addElementWithClass(element, 'magic-circle')
 
   // Random position
   const dice = Math.random()
@@ -433,7 +431,7 @@ function appendTriangle(element: HTMLElement) {
   return triangle
 }
 
-onMounted(() => makeMagicCircle())
+// onMounted(() => makeMagicCircle())
 
 </script>
 
@@ -463,19 +461,19 @@ onMounted(() => makeMagicCircle())
   border-radius: calc(var(--circleradius) * 0.5);
 }
 
-.lighter {
+.magic-circle.lighter {
   border: 1px solid var(--lightercolor);
 }
 
-.lightest {
+.magic-circle.lightest {
   border: 1px solid var(--lightestcolor);
 }
 
-.dotted {
+.magic-circle.dotted {
   border-style: dotted;
 }
 
-.doubled:after {
+.magic-circle.doubled:after {
   display: block;
   content: "";
   width: 108%;
@@ -488,11 +486,11 @@ onMounted(() => makeMagicCircle())
   transform: translate(-50%, -50%);
 }
 
-.dotted:after {
+.magic-circle.dotted:after {
   border-style: dotted;
 }
 
-.formula {
+.magic-circle .formula {
   font-family: Quivira;
   transform: translate(47%, 0);
   height: 100%;
@@ -501,7 +499,7 @@ onMounted(() => makeMagicCircle())
   color: var(--lightcolor);
 }
 
-.formula span {
+.magic-circle .formula span {
   height: 50%;
   position: absolute;
   width: 1em;
@@ -520,7 +518,7 @@ onMounted(() => makeMagicCircle())
       .generate-chars(@n, (@i + 1));
     } */
 
-.inner-magic-circle {
+.magic-circle .magic-circle {
   width: 48%;
   height: 48%;
   position: absolute;
@@ -531,31 +529,31 @@ onMounted(() => makeMagicCircle())
   border-radius: calc(var(--circleradius) * 0.5);
 }
 
-.inner-magic-circle.top {
+.magic-circle .magic-circle.top {
   top: -23%;
 }
-.inner-magic-circle.bottom {
+.magic-circle .magic-circle.bottom {
   top: 77%;
 }
-.inner-magic-circle.left {
+.magic-circle .magic-circle.left {
   left: -23%;
 }
-.inner-magic-circle.right {
+.magic-circle .magic-circle.right {
   left: 77%;
 }
-.inner-magic-circle.top-left {
+.magic-circle .magic-circle.top-left {
   top: -11%;
   left: -11%;
 }
-.inner-magic-circle.top-right {
+.magic-circle .magic-circle.top-right {
   top: -11%;
   left: 62%;
 }
-.inner-magic-circle.bottom-left {
+.magic-circle .magic-circle.bottom-left {
   top: 62%;
   left: -11%;
 }
-.inner-magic-circle.bottom-right {
+.magic-circle .magic-circle.bottom-right {
   top: 62%;
   left: 62%;
 }
@@ -646,34 +644,34 @@ onMounted(() => makeMagicCircle())
   left: 0;
   top: 100%;
 }
-.triangle:before {
+.square .triangle:before {
   width: 112%;
   transform: rotate(-63.3deg);
 }
 
-.triangle:after {
+.square .triangle:after {
   width: 112%;
   transform: rotate(63.3deg);
   left: -11.5%;
 }
 
-.triangle.reverse {
+.square .triangle.reverse {
   width: 100%;
   left: 0;
   top: -0.6%;
 }
-.triangle.reverse:before {
+.square .triangle.reverse:before {
   width: 112%;
   transform: rotate(-63.3deg);
 }
 
-.triangle.reverse:after {
+.square .triangle.reverse:after {
   width: 112%;
   transform: rotate(63.3deg);
   left: -11.5%;
 }
 
-.triangle .square {
+.square .triangle .square {
   width: calc(var(--circleradius) * 0.353);
   height: calc(var(--circleradius) * 0.353);
   position: absolute;
@@ -682,33 +680,33 @@ onMounted(() => makeMagicCircle())
   border: 1px solid var(--lightcolor);
 }
 
-.triangle .triangle {
+.square .triangle .square .triangle {
   width: 100%;
   left: 0;
   top: 100%;
 }
-.triangle .triangle:before {
+.square .triangle .square .triangle:before {
   width: 112%;
   transform: rotate(-63.3deg);
 }
 
-.triangle .triangle:after {
+.square .triangle .square .triangle:after {
   width: 112%;
   transform: rotate(63.3deg);
   left: -11.5%;
 }
 
-.triangle .triangle.reverse {
+.square .triangle .square .triangle.reverse {
   width: 100%;
   left: 0;
   top: 0%;
 }
-.triangle .triangle.reverse:before {
+.square .triangle .square .triangle.reverse:before {
   width: 112%;
   transform: rotate(-63.3deg);
 }
 
-.triangle .triangle.reverse:after {
+.square .triangle .square .triangle.reverse:after {
   width: 112%;
   transform: rotate(63.3deg);
   left: -11.5%;
@@ -836,7 +834,7 @@ onMounted(() => makeMagicCircle())
   width: calc(var(--circleradius) * 0.25);
   height: calc(var(--circleradius) * 0.25);
 }
-
+ div.magic-circle.bottom.lighter.dotted > div.triangle.reverse.lighter > div.magic-circle.top-left.lighter
 .triangle .magic-circle .triangle .magic-circle .triangle .magic-circle {
   width: calc(var(--circleradius) * 0.125);
   height: calc(var(--circleradius) * 0.125);

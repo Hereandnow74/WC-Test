@@ -1,6 +1,6 @@
 <template>
   <Modal label="Choose Element">
-    <div class="h-screen md:h-3/4 bg-gray-300 dark:bg-gray-600 overflow-y-auto min-h-0 flex flex-col gap-2">
+    <div class="h-[85vh] md:h-3/4 bg-gray-300 dark:bg-gray-600 overflow-y-auto min-h-0 flex flex-col gap-2">
       <div
         v-for="element in shroudElements"
         :key="element.title"

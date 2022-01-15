@@ -13,6 +13,10 @@ export interface Ride {
   size: 'Small' | 'Medium' | 'Large' | 'Gigantic'
 }
 
+export interface DLCRide extends Ride {
+  dlc?: string
+}
+
 // Environment: Land
 // #region ride
 export const rides: Ride[] = []
@@ -335,4 +339,65 @@ rides.push({
   size: 'Gigantic',
   cost: 11111,
   desc: '(Solo): DS Drive, onboard forest. (Ideon): Three-part combining mecha, arbitrarily powerful weapons and defenses, infinite energy.',
+})
+
+export const DLCRides: DLCRide[] = []
+// Environment Land
+// Environment Sea
+// Environment Amphibious
+// Environment Sky
+DLCRides.push({
+  dlc: 'KatzSmile',
+  title: 'Bullhead',
+  source: 'RWBY',
+  category: 'Sky',
+  size: 'Medium',
+  cost: 15,
+  desc: 'A fairly common flying vehicle in Remnant',
+  addons: [['Unlimited Fuel (+5)', 5]],
+  variants: [['Atlas Manta (+5)', 5]],
+})
+
+// Environment: Space
+
+DLCRides.push({
+  dlc: 'KatzSmile',
+  title: 'Jumpship',
+  source: 'Destiny',
+  category: 'Space',
+  size: 'Medium',
+  cost: 25,
+  desc: 'Jumpships are a type of transportation used in Destiny to fly throughout the space.',
+})
+
+DLCRides.push({
+  dlc: 'KatzSmile',
+  title: 'M-Class Scout Vessel',
+  source: 'Guardians of the Galaxy',
+  category: 'Space',
+  size: 'Medium',
+  cost: 50,
+  desc: 'The M-Ships are a class of scout space vessels. Being exceptionally versatile, M-ships serve as capable dogfighters and transport ships, whilst also being very maneuverable, fast, and agile despite what their sizable profile would suggest.',
+  addons: [['Unlimited Fuel (+5)', 5], ['Unlimited Ammo (+5)', 5]],
+  variants: [['The Milano', 0], ['The Warbird', 0], ['The Benatar', 0], ['The Mandela', 0]],
+})
+
+DLCRides.push({
+  title: 'Batmobile',
+  source: 'Arkham Knight ',
+  category: 'Land',
+  size: 'Small',
+  cost: 20,
+  desc: `Is it a tank? Is it a racecar? No its the Batmobile!
+  <p>Machine gun, 60mm cannon, rubber shot, afterburner, forensic scanner, emp, hack, missile launcher, grappling line</p>
+  `,
+})
+
+DLCRides.push({
+  title: 'Mantle’s Approach',
+  source: 'Halo',
+  category: 'Space',
+  size: 'Gigantic',
+  cost: 1500,
+  desc: 'Forerunner database, manufacturing capabilities, slip space drive, Length: 142.7 kilometers (88.7 mi), width: 138.6 kilometers (86.1 mi) wide, height: 371.4 kilometers (230.8 mi), mass of 4.7 quadrillion metric tons, hull: Programmable matter held together by hard light bonds and energy interlocks, cloaking system, torsion fields, Armament: 1 Composer, 1 heavy ion weapon system, 1 stasis tension driver, 40 torsion driver arrays, 1,700 light mass fusillade cannons, 25,000 converging beam cannons, Particle cannon network, Anti-Ship Artillery System[ Z-8250 heavy artillery, Z-8250 light artillery ], complement: 1 Strategos, 25 Princeps, 800 Navarchs, 250,000 Praetorians, 5.5 million Venatores, Over a billion Promethean constructs[ Knights, Watchers, Crawlers], Core seed, command sector, barracks, training grounds, museums, halls of honors',
 })

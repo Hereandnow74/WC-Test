@@ -89,7 +89,7 @@ import { useForm, useField } from 'vee-validate'
 import { toFormValidator } from '@vee-validate/zod'
 import { random, uniq } from 'lodash-es'
 import { useStore } from '~/store/store'
-import { proposeCompanion, toggleShowAddCharacter } from '~/logic'
+import { proposeCompanion, toggleShowAddCharacter, userCharactersShown } from '~/logic'
 import { getChars, getUserChars, waifuTags, waifuTagsByTag } from '~/data/constants'
 
 const props = defineProps({
@@ -188,10 +188,14 @@ const addCharacter = handleSubmit((values) => {
     })
   }
 
-  if (localSave.value)
+  if (localSave.value) {
     localUserCharacters.value.push(values)
-  else
-    userCharacters.value.push(values)
+    userCharactersShown.value = true
+  }
+  else { userCharacters.value.push(values) }
+
+  if (!serverSave.value)
+    toggleShowAddCharacter()
 })
 
 </script>

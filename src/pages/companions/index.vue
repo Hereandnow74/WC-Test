@@ -90,34 +90,36 @@
     <div v-else class="">
       Loading... <span class="inline-block text-xl"><eos-icons:bubble-loading /></span>
     </div>
-    <Foldable v-if="allUserCharacters.length" class="text-lg mb-2" title="User Characters">
-      <div class="mb-4 grid sm:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-1 overflow-y-auto text-base">
+    <div ref="companionsList" class="overflow-y-auto">
+      <Foldable v-if="allUserCharacters.length" :is-open="userCharactersShown" class="text-lg mb-2" title="User Characters">
+        <div class="mb-4 grid sm:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-1 overflow-y-auto text-base">
+          <CompanionCard
+            v-for="char in allUserCharacters"
+            :key="char.uid"
+            :char="char"
+            :is-user-char="true"
+            :lazy="false"
+            class="h-[500px]"
+            @edit-companion="editCompanion"
+          />
+        </div>
+      </Foldable>
+      <div
+        ref="waifuList"
+        class="grid sm:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-1 pb-8"
+      >
         <CompanionCard
-          v-for="char in allUserCharacters"
-          :key="char.uid"
+          v-for="{ item: char } in slicedChars"
+          :key="char.u"
           :char="char"
-          :is-user-char="true"
-          :lazy="false"
           class="h-[500px]"
           @edit-companion="editCompanion"
         />
-      </div>
-    </Foldable>
-    <div
-      ref="waifuList"
-      class="grid sm:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-1 overflow-y-auto pb-8"
-    >
-      <CompanionCard
-        v-for="{ item: char } in slicedChars"
-        :key="char.u"
-        :char="char"
-        class="h-[500px]"
-        @edit-companion="editCompanion"
-      />
-      <div v-if="!filteredCharacters.length" class="text-center flex-grow">
-        <p v-if="search !== ''">
-          No characters found.
-        </p>
+        <div v-if="!filteredCharacters.length" class="text-center flex-grow">
+          <p v-if="search !== ''">
+            No characters found.
+          </p>
+        </div>
       </div>
     </div>
     <AddCharacter v-if="showAddCharacter" :character="characterToEdit" :edit-mode="editMode" @click="toggleShowAddCharacter" />
@@ -130,7 +132,7 @@ import Fuse from 'fuse.js'
 import { intersection, some } from 'lodash-es'
 import { useStore } from '~/store/store'
 
-import { toggleShowAddCharacter, showAddCharacter, lazyLoadImg, toggleShowFilterTags, showFilterTags, tagToggles } from '~/logic'
+import { toggleShowAddCharacter, showAddCharacter, lazyLoadImg, toggleShowFilterTags, showFilterTags, tagToggles, userCharactersShown } from '~/logic'
 import CompanionCard from '~/components/CompanionCard.vue'
 import Checkbox from '~/components/basic/Checkbox.vue'
 import { getChars, getUserChars } from '~/data/constants'
@@ -166,6 +168,7 @@ const charArr = ref([] as Character[])
 const editMode = ref(false)
 const characterToEdit = ref({})
 const waifuList = ref<HTMLElement|null>(null)
+const companionsList = ref<HTMLElement|null>(null)
 
 const tierOptions = [
   { label: 'Any', value: 0 },
@@ -216,6 +219,7 @@ onMounted(async() => {
     nextTick(() => search.value = params.name)
   else search.value = ''
   limit.value = 10
+  nextTick(() => { if (companionsList.value?.scrollHeight <= companionsList.value?.clientHeight) limit.value += 10 })
 })
 
 watch(route, x => search.value = x.query.name || '')
@@ -301,19 +305,19 @@ watch(slicedChars, () => nextTick(() => lazyLoadImg(waifuList.value)))
 const allUserCharacters = computed(() => userCharacters.value.concat(localUserCharacters.value))
 
 const handleScroll = () => {
-  if (waifuList.value) {
-    const element = waifuList.value
+  if (companionsList.value) {
+    const element = companionsList.value
     if (element.scrollHeight - element.scrollTop - 50 <= element.clientHeight)
       limit.value += 10
   }
 }
 
 onMounted(() => {
-  waifuList?.value?.addEventListener('scroll', handleScroll)
+  companionsList?.value?.addEventListener('scroll', handleScroll)
 })
 
 onUnmounted(() => {
-  waifuList?.value?.removeEventListener('scroll', handleScroll)
+  companionsList?.value?.removeEventListener('scroll', handleScroll)
 })
 
 function editCompanion(char: any) {

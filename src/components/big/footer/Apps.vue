@@ -34,6 +34,7 @@ const appsList = [
   { icon: 'carbon:circle-packing', name: 'Ritual Circle', component: 'RitualCircle', color: '#b912b4' },
   { icon: 'clarity:note-edit-line', name: 'Notes', component: 'Notes', color: '#e9d385' },
   { icon: 'bx:bx-calculator', name: 'Bulk Capture Calculator', component: 'BulkCapture', color: '#c1c1c1' },
+  { icon: 'tabler:shopping-cart-discount', name: 'Discounts', component: 'Discounts', color: '#5a933d' },
 ]
 
 const apps = computed(() => {
@@ -57,6 +58,7 @@ const appComponents = {
   RitualCircle: defineAsyncComponent(() => import('./apps/RitualCircleApp.vue')),
   BulkCapture: defineAsyncComponent(() => import('./apps/BulkCapture.vue')),
   PocketSpace: defineAsyncComponent(() => import('./apps/PocketSpace.vue')),
+  Discounts: defineAsyncComponent(() => import('./apps/Discounts.vue')),
 }
 
 const appName = ref('')

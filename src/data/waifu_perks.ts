@@ -1125,3 +1125,57 @@ DLCwaifu_perks.push({
   image: 'https://i.imgur.com/c4caZQ7l.jpg',
   title: 'Remnants of the Evil God',
 })
+
+DLCwaifu_perks.push({
+  dlc: 'Templar9999',
+  waifu: 'Shirahoshi',
+  uid: 6705,
+  from: 'One Piece',
+  desc: `
+  <p>Shirahoshi the mermaid princess of One Piece, gains full access and control over her nature as the Ancient Weapon Poseidon.  This grants her command and control over all Sea Kings, Leviathans, Krakens, or other Aquatic Kaiju in a given setting.  If said Kaiju are sapient, then they will obey her as their natural queen.  She can also summon Sea Kings from her native  setting if she desires.</p>`,
+  cost: 490,
+  tier: 9,
+  image: 'https://i.pinimg.com/564x/76/7b/c2/767bc2364c7152eda29927609b321ccc.jpg',
+  title: 'Poseidon',
+})
+
+DLCwaifu_perks.push({
+  dlc: 'Templar9999',
+  waifu: 'Talia Winters',
+  uid: 1444808,
+  from: 'Babylon 5',
+  desc: `
+  <p>Talia Winters has fully ascended, as she was unable to do in the series proper.  Her powers are comparable to other ascended beings in Babylon 5.</p>`,
+  cost: 980,
+  tier: 10,
+  image: 'https://vhistory.files.wordpress.com/2016/10/jason-became.jpg',
+  title: 'Becoming',
+})
+
+DLCwaifu_perks.push({
+  dlc: 'CelestialDragon',
+  dlcLink: 'https://docs.google.com/spreadsheets/d/1FM6PNbDEyZV4T4rVLWjPYBc3O0jmmwd1obkFD7jLDt8/edit#gid=1422010498',
+  waifu: 'Tohka Yatogami',
+  uid: 10917,
+  from: 'Date A Live',
+  desc: `
+  <p>Tohka gains the remnants of Mio’s Sephira Crystal, allowing her to manifest her Inverse self Tenka separately from herself, and can merge with Tenka as well into the Spirit Dea, and create a temporary world at the cost of a large amount of her power to maintain.</p>`,
+  cost: 450,
+  tier: 9,
+  image: 'https://i.redd.it/5z0xw141ytj61.png',
+  title: 'Dea Form',
+})
+
+DLCwaifu_perks.push({
+  dlc: 'Cter',
+  waifu: 'Tohka Yatogami',
+  uid: 10917,
+  from: 'Date A Live',
+  desc: `
+  <p>Tohka Yatogami gains the Spirit Power of all the Spirits Shido had sealed up to a certain point in the series. This perk DOES NOT give Tohka the ability to use any of the Angels abilities, besides her own.</p>
+  <p>While in this state, she gains a new Astral Dress that is a fusion of both her own and those of the other Spirits. Additionally, she also gains a new Angel called Shekinah, which, like her own Angel Sandalphon, is a broadsword. She also maintains her ability to summon Sandalphon, allowing her to dual-wield both Angels at once.</p>`,
+  cost: 150,
+  tier: 8,
+  image: 'https://64.media.tumblr.com/96d10803d3679fe01fedf39b2e43cd88/tumblr_pkzrnvTsSV1w13l7eo1_1280.jpg',
+  title: 'Adonai Melek Ensufall',
+})

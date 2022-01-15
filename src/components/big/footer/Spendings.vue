@@ -40,13 +40,21 @@
       Waifu Perks: <span class="text-orange-500">{{ waifuPerksCost }}</span>
     </div>
     <div class="font-semibold flex justify-between mx-4 border-b border-gray-700">
-      Other Perks Total: <span class="text-green-500">{{ otherCost + miscPerksCost + waifuPerksCost + genericWaifuPerksCost }}</span>
+      Other Perks Total: <span class="text-red-500">{{ otherCost + miscPerksCost + waifuPerksCost + genericWaifuPerksCost }}</span>
     </div>
     <div class="font-semibold flex justify-between mx-4 border-b border-gray-700">
       Companions: <span class="text-orange-500">{{ companionsCost }}</span>
     </div>
     <div class="font-semibold flex justify-between mx-4 border-b border-gray-700">
-      Total: <span class="text-green-500">{{ totalCost }}</span>
+      Discounts: <span class="text-green-500">{{ totalDiscount }}</span>
+    </div>
+    <div class="font-semibold flex justify-between mx-4 border-b border-gray-700">
+      Total:
+      <span>
+        <span class="text-red-500">{{ totalCost }}</span> -
+        <span class="text-green-500">{{ totalDiscount }}</span> =
+        <span class="text-red-500">{{ totalCost - totalDiscount }}</span>
+      </span>
     </div>
     <h3 class="mt-4 text-xl mx-4 text-gray-400">
       Profits
@@ -71,8 +79,11 @@ import { useStore } from '~/store/store'
 const {
   startingOrigin, heritageCost, bindingCost, ridePerksCost, homePerksCost, talentsCost, defensesCost,
   miscPerksCost, waifuPerksCost, genericWaifuPerksCost, luresCost, companionsCost, companionProfit,
-  companionProfitSold, totalCost, companions, otherCost,
+  companionProfitSold, totalCost, companions, otherCost, usedHeritageDiscount, talentsDiscount,
+  defensesDiscount, defenseRetinueDiscount,
 } = useStore()
+
+const totalDiscount = computed(() => usedHeritageDiscount.value + talentsDiscount.value + defensesDiscount.value + defenseRetinueDiscount.value)
 
 const companionTotalCredits = computed(() => {
   return companions.value.reduce((a, x) => {

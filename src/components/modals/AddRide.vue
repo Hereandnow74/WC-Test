@@ -6,6 +6,22 @@
         <Input v-model="source" placeholder="Origin" class="w-3/4" :error-message="errors.source" />
         <Input v-model.number="cost" label="Cost" class="w-24" :error-message="errors.rating" />
       </div>
+      <div class="flex gap-2">
+        <Select
+          v-model="size"
+          placeholder="Size"
+          class="w-2/4"
+          :error-message="errors.size"
+          :options="['Small', 'Medium', 'Large', 'Gigantic']"
+        />
+        <Select
+          v-model="category"
+          placeholder="Category"
+          class="w-2/4"
+          :error-message="errors.category"
+          :options="['Land', 'Sea', 'Amphibious', 'Sky', 'Space']"
+        />
+      </div>
       <TextArea v-model="desc" place-holder="Ride description" :rows="'2'" :error-message="errors.desc" />
       <Foldable title="Addons" :is-open="isAddonOpen" class="flex flex-col min-h-0">
         <template #buttons>
@@ -108,6 +124,8 @@ const schema = toFormValidator(
   zod.object({
     title: zod.string().nonempty('Ride name is required'),
     source: zod.string().nonempty('Origin world name is required'),
+    category: zod.string().nonempty('Category is required'),
+    size: zod.string().nonempty('Size is required'),
     cost: zod.number().min(0, { message: 'Minimum Cost is 0' }),
     desc: zod.string().nonempty('Description is required'),
     addons: zod.object({
@@ -135,6 +153,8 @@ const { errors, handleSubmit } = useForm({
 
 const { value: title } = useField<string>('title')
 const { value: source } = useField<string>('source')
+const { value: category } = useField<string>('category')
+const { value: size } = useField<string>('size')
 const { value: cost } = useField<number>('cost')
 const { value: desc } = useField<string>('desc')
 const { value: addons } = useField<any[]>('addons')

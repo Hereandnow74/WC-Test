@@ -7,7 +7,7 @@ import { origin } from '~/data/origin'
 import { bindings, lures, lureExpansions, otherControls } from '~/data/binding'
 import { heritages } from '~/data/heritage'
 import { ridePerksFull, homes, defenses, talents, perks, genericPerks } from '~/data/talents'
-import { waifu_perks } from '~/data/waifu_perks'
+import { DLCwaifu_perks, waifu_perks } from '~/data/waifu_perks'
 
 import { useStore } from '~/store/store'
 
@@ -81,13 +81,13 @@ export const rulesList = [
   { title: 'NasuDLC', title2: 'Nasuverse DLC rules' },
 ]
 
-export const waifusThatHasPerk = waifu_perks.reduce((a, x) => (isArray(x.uid) ? x.uid.forEach(u => a[u] = x.title) : a[x.uid] = x.title, a), {})
+export const waifusThatHasPerk = [...waifu_perks, ...DLCwaifu_perks].reduce((a, x) => (isArray(x.uid) ? x.uid.forEach(u => a[u] = x.title) : a[x.uid] = x.title, a), {})
 
 export const waifuTags = {
   F: { tag: 'Female', short: 'F', effect: '', desc: '', color: 'bg-pink-500' },
   M: { tag: 'Male', short: 'M', effect: '', desc: '', color: 'bg-blue-500' },
   O: { tag: 'Other', short: 'O', effect: '', desc: '', color: 'bg-fuchsia-700' },
-  U: { tag: 'By User', short: 'U', effect: '', desc: '', color: 'bg-warm-gray-600' },
+  U: { tag: 'By User', short: 'U', effect: '', desc: 'Characters that were added to Interactive by users, applied automatically to all submitted characters', color: 'bg-warm-gray-600' },
   C: { tag: 'Canon', short: 'C', effect: '', desc: 'From canon spreadsheet', color: 'bg-yellow-400 text-black' },
   P: { tag: 'Perk', short: 'P', effect: '', desc: 'Have a specific waifu perk', color: 'bg-amber-200 text-black' },
   hp: { tag: 'Hopper', short: 'hp', effect: '', desc: 'Have a world hopping power', color: 'bg-teal-500' },

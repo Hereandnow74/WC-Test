@@ -1,11 +1,11 @@
 <template>
-  <Modal label="Save & Load" class="text-gray-800 dark:text-gray-200">
-    <div class="dark:bg-black py-4 flex flex-col min-h-0">
-      <div class="flex flex-col gap-2 overflow-y-auto pb-4 px-2">
+  <Modal label="Save & Load" class="text-gray-800 dark:text-gray-200 z-40">
+    <div class="dark:bg-black py-4 flex flex-col min-h-0 max-h-[85vh] md:h-3/4">
+      <div class="flex flex-col gap-2 pb-4 md:px-2 overflow-y-auto">
         <div
           v-for="save in savesList"
           :key="save.worldName"
-          class="bg-gray-300 dark:bg-gray-700 rounded-xl p-2 flex gap-1 mx-2 shadow-lg"
+          class="bg-gray-300 dark:bg-gray-700 rounded-xl p-2 flex gap-1 mx-2 shadow-lg "
           border="1 gray-700 dark:gray-300"
         >
           <div class="grid grid-cols-2 flex-grow">
@@ -25,7 +25,7 @@
             </div>
           </div>
           <div class="flex flex-col gap-1 justify-between rounded-xl bg-gray-200 dark:bg-gray-800 py-2 px-1">
-            <clarity:floppy-outline-alerted class="hover:text-green-500 cursor-pointer" @click="loadBuld(save.uid)" />
+            <clarity:floppy-outline-alerted class="hover:text-green-500 cursor-pointer" @click="loadBuild(save.uid)" />
             <fluent:delete-20-filled class="hover:text-red-500 cursor-pointer" @click="deleteSave(save.uid)" />
           </div>
         </div>
@@ -76,7 +76,7 @@ function saveBuild() {
   saves.value[uid] = save
 }
 
-function loadBuld(uid: number) {
+function loadBuild(uid: number) {
   const build = saves.value[uid]
   writeBuildValues(build)
 }

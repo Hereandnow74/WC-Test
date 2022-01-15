@@ -123,7 +123,6 @@ const addWorld = handleSubmit((values) => {
   if (proposeGlobal.value)
     proposeWorld({ ...values, date: new Date().toString() })
 
-  if (props.editMode) values.worldName = `${values.worldName} (AU)`
   if (localSave.value) localUserWorlds.value.push(values)
   else userWorlds.value.push(values)
   toggleShowAddWorld()
