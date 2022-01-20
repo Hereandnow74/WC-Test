@@ -1,7 +1,7 @@
 <template>
   <div class="p-2 flex flex-col gap-2 h-full">
     <p class="border border-gray-600 rounded p-1">
-      Listed Discounts applied <b>automatically</b> this app only show them for you to know which ones got applied.
+      Listed Discounts applied <b>automatically</b>, this app only show them for you to know which ones got applied.
     </p>
     <div class="flex flex-col gap-2">
       <div>

@@ -48,6 +48,7 @@ bindings.push({
   title: 'Company Stamp',
   cost: 0,
   type: 'Stamp',
+  image: 'https://i.ibb.co/DGdfyBv/Company-Stamp.jpg',
   desc: `
 <p>This permanent magical tattoo instills only the mental effects common to all bindings. To capture targets, you may apply this tattoo using a thumb-sized ink stamp. You can only have one stamp at a time, and only you and your retinue members can perceive the stamp when it’s not in use. The inked part, on one end, contains the tattoo’s core, a circular design that serves as your emblem.</p>
 <p>Stamping requires 3 seconds of sustained contact with the target’s skin, from the stamper’s perception, to start the tattoo-creation process. You must apply enough pressure to make the ink transfer properly. The most popular stamping sites are typically the pubic region, lower back, or back of the neck. Newly-applied tattoos require 72 hours to ramp up to their full effect, from the perception of the person stamped.</p>
@@ -60,6 +61,7 @@ bindings.push({
   title: 'Empty Hand',
   cost: -20,
   type: 'Stamp',
+  image: 'https://i.ibb.co/mGVgnzh/Empty-Hand.jpg',
   whitelist: ['Company Stamp'],
   blacklist: ['Megapixel'],
   desc: 'You have the stamp binding, but not the physical stamp itself. All individuals you purchase or capture will still count as being bound by a stamp, but you will need to use other means to do the capturing.',
@@ -69,6 +71,7 @@ bindings.push({
   title: 'Megapixel',
   cost: 150,
   type: 'Stamp',
+  image: 'https://i.ibb.co/t4Gs6by/Megapixel.jpg',
   whitelist: ['Company Stamp'],
   blacklist: ['Empty Hand'],
   desc: 'Favored by stalkers everywhere, your stamp is now a digital app for your smart device. Just take a photo of the target waifu, rotate, zoom, and pan around a generated 3D model of her until you’ve found the right place for your tattoo, and apply the tattoo remotely. The same 72-hour waiting period and all of the related rules apply for the camera app as they do for the stamp. This is a company app and benefits from all such protections.',
@@ -78,6 +81,7 @@ bindings.push({
   title: 'Tempest Jewelry',
   cost: 10,
   type: 'Jewelry',
+  image: 'https://i.ibb.co/G2smr4v/Tempest-Jewelry.jpg',
   desc: `
 <p>Magitech chokers, bracelets, or anklets that enforce absolute obedience. Items are available in ruby, orange topaz, citrine, emerald, sapphire, amethyst, alexandrite, and clear and black diamond varieties. Bands may be leather, silk, or metal. This binding will be applied to purchased waifus before delivery. You receive one new choker each day, up to a limit in reserve of 5 plus the number of items currently worn by yourself or members of your retinue.</p>
 <p>Wearers’ libido is highly enhanced, as is submissiveness to both their masters and any more dominant members of the same retinue. Obedience is rewarded through pleasure. Several options are available for punishing disobedience, including inducement of emotional numbness or preventing a wearer from experiencing release for a set time. You are your own master and not subject to any unwanted side-effects of your own equipment.</p>
@@ -91,6 +95,7 @@ bindings.push({
   title: 'Basic Tempest Runes',
   cost: 10,
   type: 'Jewelry',
+  image: 'https://i.ibb.co/qdLDy87/Basic-Tempest-Runes.jpg',
   whitelist: ['Tempest Jewelry'],
   desc: `
 <p>Tempest Chokers (bracelets, anklets) now have a built-in translator function, giving their wearers the ability to speak any language you also speak, plus the standard and/or trade languages of any place they visit. This knowledge persists after they leave the area where the language is spoken. The chokers also gain a communications and monitoring system, allowing you to track their locations and vitals and speak with them (and them with each other) remotely from any distance, even between different multiverses. These comms are not telepathic and will not work without actual speech or third-party thought-to-comms devices.</p>
@@ -101,6 +106,7 @@ bindings.push({
   title: 'Advanced Tempest Runes (Body)',
   cost: 20,
   type: 'Jewelry',
+  image: 'https://i.ibb.co/0c2NBNy/Advanced-Tempest-Runes-Body.jpg',
   whitelist: ['Basic Tempest Runes'],
   freebies: { talentPerks: ['Body Talent'] },
   desc: `
@@ -114,6 +120,7 @@ bindings.push({
   title: 'Advanced Tempest Runes (Mind)',
   cost: 10,
   type: 'Jewelry',
+  image: 'https://i.ibb.co/Sn1gdqX/Advanced-Tempest-Runes-Mind.jpg',
   whitelist: ['Advanced Tempest Runes (Body)'],
   desc: 'Mental transformations for all retinue members are now unlocked in the jewelry app. In addition to libido and submissiveness, attention span and intelligence may also be altered, as well as hobbies, likes and dislikes, fetishes, personality traits, memories, fashion preferences, etc. This is extremely useful for anyone who wants to fine-tune their close harem or play around with individual members’ roles. Your retinue members cannot modify their own orders or apply mental transformations to your profile without express permission. These functions otherwise work the same as their physical counterparts.',
 })
@@ -122,6 +129,7 @@ bindings.push({
   title: 'Advanced Tempest Runes (Hybrid)',
   cost: 20,
   type: 'Jewelry',
+  image: 'https://i.ibb.co/F46qpPs/Advanced-Tempest-Runes-Hybrid.jpg',
   whitelist: ['Advanced Tempest Runes (Body)'],
   desc: 'You can now alter the members of your retinue into hybrid races (human, kitsune, vulcan, etc.), limited by the natural examples of such races that you have in your retinue. There is no theoretical limit on how many races you can hybridize into one individual. However, the result having all of the strengths of both sides and none of their weaknesses is only guaranteed when there are only two donor races present. More complex combinations are increasingly unreliable. The effects of party-wide Heritage perks such as Dragon Thrall do not count against this limit.',
 })
@@ -130,6 +138,7 @@ bindings.push({
   title: 'Absolute Order',
   cost: 40,
   type: 'Jewelry',
+  image: 'https://i.ibb.co/6Zsdctg/Absolute-Order.jpg',
   whitelist: ['Tempest Jewelry'],
   desc: `
 <p>Disobedience is no longer allowed. Captured jewelry wearers will perform any intentional, direct order you give them, within the realm of physical or mental possibility. Orders do not need to be consciously possible. Will-saves, intelligence-saves, or reinterpretations are not allowed. Even if a wearer wants to resist, their body or mind will perform as ordered regardless. Unlike other controls, this enforces your exact words, not your intent: “Do X” and “Make and follow a plan to do X” can have vastly different results.</p>
@@ -141,6 +150,7 @@ bindings.push({
   title: 'Additional Stock',
   cost: 5,
   type: 'Jewelry',
+  image: 'https://i.ibb.co/kKwy6VP/Additional-Stock.jpg',
   whitelist: ['Tempest Jewelry'],
   multiple: true,
   desc: 'You receive an additional Tempest item each day. Your reserve cap increases by 5. This may be repurchased for the same effect any number of times.',
@@ -150,6 +160,7 @@ bindings.push({
   title: 'Jewels of Discord',
   cost: 25,
   type: 'Jewelry',
+  image: 'https://i.ibb.co/GJNrt3F/Jewels-Of-Discord-New.jpg',
   whitelist: ['Tempest Jewelry'],
   desc: `
 <p>Tempest items can now adjust their appearance to better match the rest of the wearer’s clothing. Anyone attempting to remove one, other than you and retinue members you order to do so, will fail to do so, then miss the fact that it’s still there afterwards. This applies to both used and unused chokers (bracelets, anklets).</p>
@@ -160,6 +171,7 @@ bindings.push({
   title: 'Aggressive Initiations',
   cost: 20,
   type: 'Jewelry',
+  image: 'https://i.ibb.co/kq0j8hk/Aggressive-Initiations-New.jpg',
   whitelist: ['Tempest Jewelry'],
   desc: 'The minimum time required to confirm a target’s capture is removed. A subject’s capture may now be greatly accelerated through sexual submission to yourself or more dominant members of your retinue. The more and stronger orgasms the subject experiences at their dominator’s hand, the faster the capture will progress. Transformations from Advanced Runes (Body) and (Mind) also benefit from this perk, regardless of the subject’s capture state.',
 })
@@ -168,6 +180,7 @@ bindings.push({
   title: 'Ritual Circle',
   cost: 30,
   type: 'Ritual',
+  image: 'https://i.ibb.co/XzzNjjS/Ritual-Circle.jpg',
   desc: `
 <p>An app on your company-granted smart device that will allow you to design special runic circles for binding your waifus. Some assembly is required.</p>
 <p>Your circles may be drawn in any material: chalk, ink, carvings, sticks on the ground, blood, or even light. The circle's area of effect may either be a sphere, which the circle rings, or a cylinder reaching out twice as high as its diameter in one direction. The target must remain within the circle for the time required. If they leave the area of effect before the binding is complete, its progress will stop and begin to reverse. If they are not brought back within the area of effect within 24 hours, progress is reset. The circle only affects those with the parameters set upon its design, whether that's an individual or category. Binding circles will always exclude you and your retinue members who are already bound through a circle, even when set to "Affect all."</p>
@@ -180,6 +193,7 @@ bindings.push({
   title: 'Greater Bandwidth',
   cost: 5,
   type: 'Ritual',
+  image: 'https://i.ibb.co/q0fGdjJ/Greater-Bandwidth.jpg',
   whitelist: ['Ritual Circle'],
   multiple: true,
   increment: true,
@@ -191,6 +205,7 @@ bindings.push({
   title: 'Transformation Circle I',
   cost: 20,
   type: 'Ritual',
+  image: 'https://i.ibb.co/RDFqzwh/Transformation-Circle-I.jpg',
   whitelist: ['Ritual Circle'],
   desc: `
 <p>An additional function has been unlocked for your circle designs. These functions are identical to the modification suite of Advanced Tempest Runes (Body), with the addition of being able to change the target’s clothing as well. These changes cannot be made on the fly with the company app, but may be cancelled at any time. After cancelling a transformation, it must be reapplied manually. Body Talent is not part of the modification suite and thus not included.</p>
@@ -201,6 +216,7 @@ bindings.push({
   title: 'Transformation Circle II',
   cost: 20,
   type: 'Ritual',
+  image: 'https://i.ibb.co/Cv0SXrs/Transformation-Circle-II.jpg',
   whitelist: ['Transformation Circle I'],
   desc: 'Your transformation circle now has additional functionality, equivalent to the modification suite of Advanced Tempest Runes (Mind), and may even turn targets into inanimate objects. Awareness is optional during such a state.',
 })
@@ -209,6 +225,7 @@ bindings.push({
   title: 'Teleportation Circle',
   cost: 25,
   type: 'Ritual',
+  image: 'https://i.ibb.co/Jtsmm83/Teleportation-Circle.jpg',
   whitelist: ['Ritual Circle'],
   desc: `
 <p>This enables two new types of circles, depending on the new Network parameter. Without any points in Network, the resulting circle will be one-way only, sending you to a set destination given the provided time invested to activate it.</p>
@@ -219,6 +236,7 @@ bindings.push({
   title: 'Portal Runes',
   cost: 10,
   type: 'Ritual',
+  image: 'https://i.ibb.co/dGmjhNq/Portal-Runes.jpg',
   whitelist: ['Teleportation Circle'],
   desc: 'You may now set a duration for your teleportation circles, turning them into portals. This effect’s duration works the same as that of Transformation Circles. Anyone can walk through an active portal, but they are only obvious to you, your circle-bound retinue members, and waifus of the parameter-set Tier or above.',
 })
@@ -227,6 +245,7 @@ bindings.push({
   title: 'Geometric Magic',
   cost: 5,
   type: 'Ritual',
+  image: 'https://i.ibb.co/5rP8Dv1/Geometric-Magic-New.jpg',
   whitelist: ['Ritual Circle'],
   desc: 'This service upgrade package lets you use triangles! And squares. And pentagons! And any crazy shape your brain can come up with. You are no longer limited to circles and may make walls, lines, rooms, and other shapes with the designs. The effect must originate at some point along the designs, and may affect a volume of space no greater than that of the parameter-determined cylinder or sphere.',
 })
@@ -235,6 +254,7 @@ bindings.push({
   title: 'Destruction Circle',
   cost: 5,
   type: 'Ritual',
+  image: 'https://i.ibb.co/WzSsTvM/Destruction-Circle-New.jpg',
   whitelist: ['Ritual Circle'],
   desc: 'You gain an additional setting on which to design your circles. You may, instead of setting them to bind targets, set them to destroy things of the selected parameters within them. You may set the parameters to "Anything without a will" to avoid destroying potential capture targets, alternatively you may set it to All to create a general destruction spell circle to end particularly stubborn problems. Requirement determines how long it takes to completely destroy the targeted items within the area of effect.',
 })
@@ -243,6 +263,7 @@ bindings.push({
   title: 'Warding Circle',
   cost: 5,
   type: 'Ritual',
+  image: 'https://i.ibb.co/ctMyLDb/Warding-Circle.jpg',
   whitelist: ['Ritual Circle'],
   desc: 'You gain an additional setting on which to design your circles. Warding Circles instead prevent the passage of things with the selected parameters from crossing their borders, for a period of time determined by the investment in Effect. The level of being this may affect is set by the Tier. Beings affected by the circle cannot directly interact with the circle. For best results, place your warding circle inside a binding circle, not the other way around.',
 })
@@ -251,6 +272,7 @@ bindings.push({
   title: 'Ritual Anchor',
   cost: 15,
   type: 'Ritual',
+  image: 'https://i.ibb.co/Ntq1vpj/Ritual-Anchor-New.jpg',
   whitelist: ['Ritual Circle'],
   desc: `
 <p>Instead of having to draw a circle, you are able to inscribe runes upon an item. The item acts as the center of the circle for the sphere as an ambient field, or may be at any designated point within the cylinder setting. More powerful circles require larger anchors. A circle with 6 points or less spent on it can be infused into something the size of a marble (10mm). Something the size of a heart or baseball could handle 12 points. Something the size of a basketball or head could handle 18, and a torso or beachball could handle 24.</p>
@@ -272,6 +294,7 @@ bindings.push({
   title: 'Alterzelu Symbiote',
   cost: 100,
   type: 'Symbiote',
+  image: 'https://i.ibb.co/86MGYW5/Alterzelu-Symbiote.jpg',
   freebies: {
     talentPerks: ['Everlasting Talent', 'Body Talent', 'Martial Talent', 'Wild Talent'],
     defensePerks: ['Body Defense', 'Wild Defense', 'Environmental Defense'],
@@ -294,6 +317,7 @@ bindings.push({
   // type: 'Expansion',
   cost: 50,
   type: 'Symbiote',
+  image: 'https://i.ibb.co/jMhSPRT/Universal-Bus.jpg',
   whitelist: ['Alterzelu Symbiote'],
   desc: `
 <p>Symbiote larvae may now target digital entities. A larva changes the shape of its “tongue”  to interface with any external computer port, then projects itself into a representation of virtual space. (If a virtual space already exists, the larva will simply enter that instead.) Once there, it may stalk and convert the locals as normal. Software AI or brain uploads that do not have physical bodies will manifest into one at the real-world location of the larva, skipping to the penultimate stage of the normal process.</p>
@@ -305,6 +329,7 @@ bindings.push({
   // type: 'Expansion',
   cost: 30,
   type: 'Symbiote',
+  image: 'https://i.ibb.co/fvRfGb1/Second-Generation-Symbiote.jpg',
   freebies: {
     talentPerks: ['Psychic Talent', 'Talent Sharing (Psychic)'],
   },
@@ -317,6 +342,7 @@ bindings.push({
   // type: 'Expansion',
   cost: 60,
   type: 'Symbiote',
+  image: 'https://i.ibb.co/g3Txp6g/Third-Generation-Symbiote-New.jpg',
   whitelist: ['Second-Generation Symbiote'],
   desc: `
 <p>One of our lab’s attempts to hybridize our symbiotes with wild shoggoths has borne fruit. (All interns involved in the incident have been safely restored from backups.) This upgrade allows your symbiote hosts, including yourself, to melt into a semisolid amoeboid form for better infiltration, whether by flowing through vents, along a ceiling or wall, or hitching a ride on a person. Symbiote hosts obey conservation of mass in their slime forms and must remain contiguous. The form may be maintained indefinitely and they otherwise have full control over the form's shape, texture, and coloration. Symbiote hosts that have innate supernatural abilities of biological or genetic origin (ex. X-gene, Quirks, hereditary magic potential, alien racial abilities, etc.) retain them in their slime form. If they have enough room, they may revert to their original or symbiote forms at will, and may also assume a solid "armor" form around another similarly-sized being.</p>
@@ -328,6 +354,7 @@ bindings.push({
   title: 'Shroud of Power',
   cost: 80,
   type: 'Shroud',
+  image: 'https://i.ibb.co/gyhsvSR/Shroud-Of-Power-New.jpg',
   desc: `
 <p>You gain a semi-sapient cape of solidified magic that acts as an extension of your will. It shifts and transforms at a thought, even unconscious ones. By draping it over or wrapping up a waifu with it, you are able to infuse your target with your will and bind them to it.</p>
 <p>This cape is subject to the same protections as the company smart device. It can shift its form and texture into a wide variety of shapes and imitate any other outfit, ropes, tendrils, hands, blades, and similar forms. The constructs of the Shroud may have the textures and forms of textiles like leathers, latex, or other forms of clothing. The shroud is extremely durable and capable of significant amounts of strength and speed, and you gain a form of tactile feedback from it.</p>
@@ -344,6 +371,7 @@ bindings.push({
   title: 'Three-Piece Suit',
   cost: 15,
   type: 'Shroud',
+  image: 'https://i.ibb.co/P1gJg0B/Three-Piece-Suit-New.jpg',
   multiple: true,
   max: 9,
   whitelist: ['Shroud of Power'],
@@ -505,6 +533,7 @@ bindings.push({
   title: 'Elemental Shroud',
   cost: 96,
   type: 'Shroud',
+  image: 'https://i.ibb.co/G0phJPp/Elemental-Shroud.jpg',
   whitelist: ['Shroud of Power'],
   element: '',
   // complex: 'flavor',
@@ -523,6 +552,7 @@ bindings.push({
   title: 'Prismatic Shroud',
   cost: 64,
   type: 'Shroud',
+  image: 'https://i.ibb.co/3NtrqMS/Prismatic-Shroud.jpg',
   whitelist: ['Elemental Shroud'],
   // element: '',
   complex: 'flavor',
@@ -537,6 +567,7 @@ bindings.push({
   cost: 25,
   complex: 'target',
   type: 'Shroud',
+  image: 'https://i.ibb.co/nrpMwYF/Complementary-Colors.jpg',
   whitelist: ['Elemental Shroud'],
   desc: `
 <p>Select a member of your retinue. They are now shroud-bound, bypassing the tier limit, with a cloak that has elemental properties much like your own. Unless you deign to allow them an element you personally possess, one will be extrapolated from their current affinities and hypothetical developmental trajectories. Your waifus may have unique elements not found on the standard list, whether hybridized from standard elements or entirely new. If you buy this perk for a waifu when you purchase her, she will be shroud-bound before delivery, bypassing the tier limit.</p>
@@ -549,6 +580,7 @@ bindings.push({
   title: 'Grand Tapestry',
   cost: 100,
   type: 'Shroud',
+  image: 'https://i.ibb.co/6rF3FGC/Grand-Tapestry.jpg',
   whitelist: ['Complementary Colors', 'Conjunction'],
   freebies: {
     talentPerks: ['Psychic Talent'],
@@ -564,6 +596,7 @@ bindings.push({
   title: 'Elemental Loom',
   cost: 50,
   type: 'Shroud',
+  image: 'https://i.ibb.co/31fc3BW/Elemental-Loom.jpg',
   whitelist: ['Elemental Shroud'],
   desc: `
 <p>Your Shroud has been upgraded into a gaseous aura and its manifestations no longer need to be obvious and intense. A Volcanic Shroud no longer needs to create flames, but instead be a temperature change; the Primal Shroud can create and manipulate bacteria and viruses, the Cyber Shroud can affect purely digital code, etc.</p>
@@ -576,6 +609,7 @@ bindings.push({
   title: 'Deep Weave',
   cost: 25,
   type: 'Shroud',
+  image: 'https://i.ibb.co/v1z9SCS/Deep-Weave.jpg',
   whitelist: ['Elemental Loom'],
   desc: `
 <p>Your Shroud is no longer merely an extension of your will, but part of your being. You are able to transform portions of yourself into your element(s) and heal or recharge yourself by absorbing manifestations of said element that you didn't create. If you had not already been capable of flight with your Shroud, you are now capable of such.</p>
@@ -589,12 +623,14 @@ export const lures: Binding[] = []
 
 lures.push({
   title: 'Sticky Fingers',
+  image: 'https://i.ibb.co/c3z0wcM/Sticky-Fingers.jpg',
   cost: 5,
   desc: 'You know all the points that make a waifu melt. You can play her like a piano. Your very touch is electrifying. You are also a sexual savant. Keep a waifu on the edge long enough, and she’ll promise anything to make it stop. With your skills, she’ll be sure to keep that promise. This lure cannot affect targets who lack a sense of touch.',
 })
 
 lures.push({
   title: 'Faerie Feast',
+  image: 'https://i.ibb.co/QmxqhJJ/Faerie-Feast.jpg',
   cost: 10,
   desc: `
 <p>Your cooking is supernaturally good, capable of making miracles from the worst ingredients. Just one taste is enough to hook a waifu for life - assuming, of course, that she can taste. Even if she doesn't like you, she'll be unable to imagine a world where she can't eat your cooking every day, and stay with you for that alone. Over time, you can leverage this dependence into obedience through simple operant conditioning and, in turn, create real affection by enforcing faked affection.</p>
@@ -604,6 +640,7 @@ lures.push({
 
 lures.push({
   title: 'Don’t Stand So Close to Me',
+  image: 'https://i.ibb.co/Qd20Thb/Dont-Stand-So-Close-To-Me.jpg',
   cost: 15,
   desc: `
 <p>Hot for Teacher. Targets that either teach you or are taught by you, no matter the subject, will start to fall for you. They’ll find themselves thinking about the subject matter, about your instruction, about the next lesson, and you yourself will worm your way to the forefront of their thoughts, even as worrying about their next lesson, getting good grades, or encouraging learning twists itself into a more romantic or sexual nature.</p>
@@ -613,6 +650,7 @@ lures.push({
 lures.push({
   title: 'Arlo',
   cost: 15,
+  image: 'https://i.ibb.co/XzLg3RR/Arlo.jpg',
   special: 'at least one retinue member whose apparent age is younger than yourself.',
   desc: `
 <p>The sight of a cute kid calling a new haremette “mama” has real power. Select a retinue member whose apparent age is younger than yourself to act as bait and approach the target together. This need not be the same individual every time. The bait acts as your child or younger sibling, playing the target’s parental/nurturing instincts against them by signaling that you have a need for a caretaker in your household - and the bait would prefer that caretaker to be the candidate right in front of them. This lure is stronger if:</p>
@@ -627,12 +665,14 @@ lures.push({
 
 lures.push({
   title: 'Alluring Whisper',
+  image: 'https://i.ibb.co/rFCDPSH/Alluring-Whisper.jpg',
   cost: 20,
   desc: 'Your voice is supernaturally alluring. Merely whisper in a target’s ear, and her heart (and panties) will turn to goo. Better results will come with vocal training and improved phrasing. (You can also use this perk to become an ASMR superstar. We won’t judge.) Beings with sufficient willpower can resist or even block this lure. It will never affect someone who lacks a sense of hearing.',
 })
 
 lures.push({
   title: 'Love Spot',
+  image: 'https://i.ibb.co/yFDkdMz/LoveSpot.jpg',
   cost: 20,
   desc: `
 <p>Just like Diarmuid's in Fate/Zero: you gain a mole under one of your eyes that fascinates any woman who sees it and makes them infatuated with you on the... spot. If you already have a mole in such a location, you don't get a second one. If you’d rather not have a beauty mark, this lure can be re-fluffed to make any one body part supernaturally alluring. The charm effect relies on line-of-sight: it may be blocked by covering up the alluring asset, but not turned off. The effect intensifies with exposure.</p>
@@ -641,6 +681,7 @@ lures.push({
 
 lures.push({
   title: 'Potpourri',
+  image: 'https://i.ibb.co/2sL5sQH/Potpourri.jpg',
   cost: 20,
   desc: `
 <p>Your sense of smell is more acute than most, detecting and cataloging scents and their origin, and studying others to see their reactions to them. You have also gained some control over how you smell, letting you manipulate others on a level that most would never notice and the rest might just think unusual. From the scent of roses to call up some passion in a romance, to that of freshly baked cookies to aid in relaxing others, you have figured out how to use those scents to alter their emotions, often convincing them to let their guard down or spark conflicts between others. This also allows you to pick up on pheromonal cues and scent based languages/markings, if you have some experience with them. You can also choose to "tune out" specific scents after some experience.</p>
@@ -649,6 +690,7 @@ lures.push({
 
 lures.push({
   title: 'Zenryoku Zenkai',
+  image: 'https://i.ibb.co/7ywxs16/Zenryoku-Zenkai.jpg',
   cost: 20,
   desc: `
 <p>Full Power! Total Destruction! Targets you defeat in combat or another contest, whether physical, mental, or social in nature, will fall for you all the harder. You’ll be at the forefront of all their thoughts as their wish to meet you again to even the score twists itself into a more romantic or sexual yearning. The more decisive and dramatic your victory, and the higher the perceived stakes for each of you, the stronger this lure’s effect. Defeating a target in a training spar will have only negligible results, but stopping a villainess in a life-or-death battle for the fate of a universe will add her to your harem practically the moment she wakes up.</p>
@@ -661,6 +703,7 @@ export const lureExpansions: Binding[] = []
 
 lureExpansions.push({
   title: 'Sticky Fingers: Brown Sugar',
+  image: 'https://i.ibb.co/5j5X9Gv/Sticky-Fingers-Brown-Sugar.jpg',
   cost: 15,
   whitelist: ['Sticky Fingers'],
   desc: 'A natural aphrodisiac flows through your veins, further enhancing any sexual experience in which your fluids are involved. You are immune to this aphrodisiac even without Body Defense. Additionally, if you have male genitalia, you can secrete a natural lubricant from it when aroused. This aphrodisiac will be included in that as well.',
@@ -668,6 +711,7 @@ lureExpansions.push({
 
 lureExpansions.push({
   title: 'Faerie Feast: Master Chef',
+  image: 'https://i.ibb.co/HYVZFYF/Faerie-Feast-Master-Chef.jpg',
   cost: 10,
   whitelist: ['Faerie Feast'],
   desc: 'When you are in charge of, or at a minimum supervising, the staff of a cooking facility, the benefits of your Faerie Feast perk will apply to the end product as though you had personally produced any food cooked there. If the staff primarily consists of your waifus, you don’t even need to be present, provided they follow a specific menu and set of guidelines that you’ve instructed them in. These guidelines can include extraneous non-food related steps. This does not apply to industrial-scale food production or ingredients that are not themselves edible.',
@@ -675,6 +719,7 @@ lureExpansions.push({
 
 lureExpansions.push({
   title: 'Faerie Feast: The Secret Ingredient is Love',
+  image: 'https://i.ibb.co/7bsSS2K/Faerie-Feast-The-Secret-Ingredient-Is-Love.jpg',
   cost: 5,
   whitelist: ['Faerie Feast: Master Chef'],
   desc: 'Members of your retinue that are already skilled at cooking no longer need your guidance to benefit from Faerie Feast, provided at least part of the meal is intended for consumption by you or other members of your retinue.',
@@ -682,6 +727,7 @@ lureExpansions.push({
 
 lureExpansions.push({
   title: 'Alluring Whisper: Dirty Minds',
+  image: 'https://i.ibb.co/10psjZ7/Alluring-Whisper-Dirty-Minds.jpg',
   cost: 20,
   whitelist: ['Alluring Whisper'],
   desc: `
@@ -692,6 +738,7 @@ lureExpansions.push({
 
 lureExpansions.push({
   title: 'Alluring Whisper: Siren’s Song',
+  image: 'https://i.ibb.co/fpt30LV/Alluring-Whisper-Sirens-Song.jpg',
   cost: 80,
   whitelist: ['Alluring Whisper'],
   freebies: {
@@ -702,8 +749,10 @@ lureExpansions.push({
 
 export const otherDesc = 'These perks are either expansions to multiple Bindings or serve as alternative methods to capturing or controlling your retinue. Like all company-supplied powers, the powers granted by these perks cannot be nullified, copied, or stolen.'
 export const otherControls: Binding[] = []
+
 otherControls.push({
   title: 'Conjunction',
+  image: 'https://i.ibb.co/gg2wM9D/Conjunction.jpg',
   cost: 25,
   whitelist: ['Second-Generation Symbiote', 'Complementary Colors'],
   needed: 1,
@@ -716,6 +765,7 @@ otherControls.push({
 
 otherControls.push({
   title: 'Apportation',
+  image: 'https://i.ibb.co/t2yrJLX/Apportation.jpg',
   cost: 25,
   whitelist: ['Basic Tempest Runes', 'Shroud of Power'],
   needed: 1,
@@ -727,6 +777,7 @@ otherControls.push({
 
 otherControls.push({
   title: 'Hotel California',
+  image: 'https://i.ibb.co/s6GFYTF/Hotel-California.jpg',
   cost: 20,
   desc: `
 <p>This seemingly-innocuous entertainment or hospitality venue uses a legitimate business of your choice as a cover for mind control. Options include, but are not limited to, a pub, restaurant, amusement park, music venue, circus, casino, and luxury resort. Strip clubs in particular are a perennial favorite. Most customers are only compelled to spend more and bring their friends when they come back, but a very different fate is in store for those you select as capture targets. As they spend time within your walls, they’ll be beautified according to a blend of your standards and the establishment’s overt purpose.</p>
@@ -739,6 +790,7 @@ otherControls.push({
 
 otherControls.push({
   title: 'Command Seals',
+  image: 'https://i.ibb.co/MZQncZ3/Command-Seals.jpg',
   cost: 5,
   special: 'At least one Nasuverse Servant',
   table: [
@@ -763,6 +815,7 @@ otherControls.push({
 
 otherControls.push({
   title: 'Command Seals: General Seals',
+  image: 'https://i.ibb.co/qJj0JzJ/Command-Seals-General-Seals.jpg',
   cost: 10,
   special: 'Retroactively removes the previous control’s Nasuverse Servant requirement.',
   whitelist: ['Command Seals'],
@@ -771,20 +824,20 @@ otherControls.push({
 
 otherControls.push({
   title: 'Divine Marking',
+  image: 'https://i.ibb.co/7GZQrFv/Divine-Marking.jpg',
   cost: 20,
   special: 'At least one deity from the Danmachi setting',
-  image: 'https://static.wikia.nocookie.net/powerlisting/images/5/5d/Danmachi_Gods_Falna_Blessings.png/revision/latest?cb=20190707034500',
   desc: 'A deity in your service who grants or updates a Falna, including non-Danmachi deities who’ve learned how to do so, are considered to be applying a Stamp to the Falna’s holder, even if you lack that binding. The Falna itself will seem no different than normal. This Falna-Stamp requires the normal three-day period to fully bind the recipient.',
 })
 
 otherControls.push({
   title: 'Space Truckin’',
+  image: 'https://i.ibb.co/H2ByYsD/Space-Truckin.jpg',
   cost: 100,
   special: `
       Land vehicle purchased or registered through Catch-a-Ride and
       Retinue member who is a deity or capable of true resurrection
 `,
-  image: 'https://i.imgur.com/cNBAVke.png',
   table: [
     ['Tier', 'Cap'],
     ['4', '1'],
@@ -803,6 +856,7 @@ otherControls.push({
 
 otherControls.push({
   title: 'Space Truckin’: Highway Star',
+  image: 'https://i.ibb.co/g6w1kMD/Space-Truckin-Highway-Star.jpg',
   cost: 100,
   whitelist: ['Space Truckin’'],
   desc: 'Active isekai victims from Space Truckin’ will now act as proxies for your own captures. Until the victim completes a local storyline or dies in the process, sincere love confessions delivered to them will bind the confessor to you just as one that you received directly. Your isekai victim will also experience the full benefits of your Lures and Lure Expansions for this duration, as if they were you.',

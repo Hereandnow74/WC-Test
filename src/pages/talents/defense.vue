@@ -4,7 +4,10 @@
       <Desc :desc="additionalDefenseDesc" class="bg-amber-200 text-gray-800 text-sm md:text-base w-3/5 float-right mt-8 mx-2 border-3 border-gray-900" />
       <Desc :desc="defenceDesc" class="p-2 bg-violet-200 dark:bg-violet-900" />
     </div>
-    <div class="md:column-count-2 lg:column-count-3 pb-8">
+    <div
+      class="column-gap pb-8"
+      :class="settings.columns !== 'auto' ? `column-count-${settings.columns}` : 'md:column-count-2 xl:column-count-3 4xl:column-count-4 5xl:column-count-5'"
+    >
       <PerkCard
         v-for="defense in defenses"
         :key="defense.title"
@@ -29,7 +32,7 @@ import { chooseDefense, defenseAvailable } from '~/logic'
 import { useTooltips } from '~/logic/misc'
 import { useStore } from '~/store/store'
 
-const { defensePerks } = useStore()
+const { defensePerks, settings } = useStore()
 
 const allDefenses = computed(() => {
   const res: any = {}

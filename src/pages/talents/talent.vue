@@ -1,7 +1,10 @@
 <template>
   <div class="sm:p-2">
     <Desc :desc="talentsDesc" class="p-2 mb-4 max-w-4xl mx-auto bg-violet-200 dark:bg-violet-900" />
-    <div class="md:column-count-2 lg:column-count-3 pb-8">
+    <div
+      class="column-gap pb-8"
+      :class="settings.columns !== 'auto' ? `column-count-${settings.columns}` : 'md:column-count-2 xl:column-count-3 4xl:column-count-4 5xl:column-count-5'"
+    >
       <PerkCard
         v-for="talent in talentsDLC"
         :key="talent.title"
@@ -24,10 +27,10 @@ import { useTooltips } from '~/logic/misc'
 import { useStore } from '~/store/store'
 
 import PerkCard from '~/components/PerkCard.vue'
-import { chooseTalent, isDLC, talentAvailable } from '~/logic'
+import { chooseTalent, talentAvailable } from '~/logic'
 import { DLCtalents } from '~/data/DLCs'
 
-const { allEffects, talentPerks } = useStore()
+const { allEffects, talentPerks, settings } = useStore()
 
 const allTalents = computed(() => {
   const res: any = {}
@@ -35,7 +38,11 @@ const allTalents = computed(() => {
   return res
 })
 
-const talentsDLC = computed(() => isDLC.value ? talents.concat(DLCtalents) : talents)
+const talentsDLC = computed(() => !settings.value.allChosenAuthors[0]
+  ? talents
+    .concat(DLCtalents
+      .filter(perk => !settings.value.allChosenAuthors.includes(perk.dlc)))
+  : talents)
 
 const talentsList = computed(() => {
   const shareable = ['Martial Talent', 'Wild Talent', 'Science Talent', 'Engineering Talent', 'Aesthetic Talent',

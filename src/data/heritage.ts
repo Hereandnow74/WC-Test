@@ -13,6 +13,7 @@ export interface Heritage {
   max?: number
   typeFreebies?: any
   types?: Record<'Biomorph' | 'Cybermorph' | 'Aethermorph', string>
+  image?: string
 }
 
 export const heritages: Heritage[] = []
@@ -24,6 +25,7 @@ export const desc = `
 
 heritages.push({
   title: 'Ancestral Diversity',
+  image: 'https://i.ibb.co/Hqzvfds/Ancestral-Diversity.jpg',
   cost: 11111,
   tree: 'None',
   multiple: true,
@@ -33,6 +35,7 @@ heritages.push({
 
 heritages.push({
   title: 'Dragon Heart',
+  image: 'https://i.ibb.co/SBXsnBY/Dragon-Heart.jpg',
   tree: 'Dragon',
   type: 'Root',
   complex: 'flavor',
@@ -49,6 +52,7 @@ heritages.push({
 
 heritages.push({
   title: 'Dragon Scale',
+  image: 'https://i.ibb.co/1RNSC0w/Dragon-Scale.jpg',
   tree: 'Dragon',
   type: 'Self',
   cost: 95,
@@ -67,6 +71,7 @@ heritages.push({
 
 heritages.push({
   title: 'Dragon Aura',
+  image: 'https://i.ibb.co/BzH3djV/Dragon-Aura.jpg',
   tree: 'Dragon',
   type: 'Lure',
   cost: 200,
@@ -83,6 +88,7 @@ heritages.push({
 
 heritages.push({
   title: 'Dragon Thrall',
+  image: 'https://i.ibb.co/jR1sk8k/Dragon-Thrall.jpg',
   tree: 'Dragon',
   type: 'Party',
   cost: 150,
@@ -99,6 +105,7 @@ heritages.push({
 
 heritages.push({
   title: 'Dragon Blood',
+  image: 'https://i.ibb.co/7kxydhS/Dragon-Blood.jpg',
   tree: 'Dragon',
   type: 'Party',
   cost: 150,
@@ -113,6 +120,7 @@ heritages.push({
 
 heritages.push({
   title: 'Treasure Hoard',
+  image: 'https://i.ibb.co/KWBbXhH/Dragon-Hoard.jpg',
   tree: 'Dragon',
   type: 'Other Control',
   cost: 20,
@@ -122,6 +130,7 @@ heritages.push({
 
 heritages.push({
   title: 'Dragon Cabin',
+  image: 'https://i.ibb.co/5BYYqTf/Dragon-Cabin.jpg',
   tree: 'Dragon',
   type: 'Party',
   cost: 30,
@@ -133,6 +142,7 @@ heritages.push({
 
 heritages.push({
   title: 'Dragon Bifurcation',
+  image: 'https://i.ibb.co/rH31fGY/Dragon-Bifurcation.jpg',
   tree: 'Dragon',
   type: 'Self',
   cost: 25,
@@ -142,6 +152,7 @@ heritages.push({
 
 heritages.push({
   title: 'Dragon Break',
+  image: 'https://i.ibb.co/MBH4jc2/Dragon-Break.jpg',
   tree: 'Dragon',
   type: 'Self',
   cost: 50,
@@ -152,6 +163,7 @@ heritages.push({
 
 heritages.push({
   title: 'Double Dragon',
+  image: 'https://i.ibb.co/0QpJFXJ/Dragon-Double.jpg',
   tree: 'Dragon',
   type: 'Self',
   cost: 200,
@@ -166,6 +178,7 @@ heritages.push({
 
 heritages.push({
   title: 'Elder Dragon',
+  image: 'https://i.ibb.co/JBVtkRL/Dragon-Elder.jpg',
   tree: 'Dragon',
   type: 'Self',
   complex: 'flavor',
@@ -178,6 +191,7 @@ heritages.push({
 heritages.push({
   title: 'First Augmentation',
   tree: 'Transhuman',
+  image: 'https://i.ibb.co/cgB6R84/First-Augmentation.jpg',
   type: 'Root',
   cost: 80,
   freebies: {
@@ -210,6 +224,7 @@ heritages.push({
 heritages.push({
   title: 'Networking',
   tree: 'Transhuman',
+  image: 'https://i.ibb.co/ZNtgK4q/Networking.jpg',
   type: 'Lure, Other Control',
   cost: 30,
   freebies: {
@@ -228,6 +243,7 @@ heritages.push({
 heritages.push({
   title: 'Full Conversion',
   tree: 'Transhuman',
+  image: 'https://i.ibb.co/tXdthbH/Full-Conversion.jpg',
   type: 'Self',
   cost: 100,
   freebies: {
@@ -250,6 +266,7 @@ heritages.push({
 heritages.push({
   title: 'Essence Reactor',
   tree: 'Transhuman',
+  image: 'https://i.ibb.co/BsnDNhq/Essence-Reactor.jpg',
   type: 'Self',
   cost: 90,
   freebies: {
@@ -283,6 +300,7 @@ heritages.push({
 heritages.push({
   title: 'Evolutionary Engine Array',
   tree: 'Transhuman',
+  image: 'https://i.ibb.co/khbcryv/Evolutionary-Engine-Array.jpg',
   type: 'Self',
   cost: 50,
   whitelist: ['Essence Reactor'],
@@ -295,6 +313,7 @@ heritages.push({
 heritages.push({
   title: 'Essence Upload',
   tree: 'Transhuman',
+  image: 'https://i.ibb.co/K5m0Dfr/Essence-Upload.jpg',
   type: 'Self',
   cost: 170,
   freebies: {
@@ -332,6 +351,7 @@ heritages.push({
 heritages.push({
   title: 'Philosopher’s Transmortality Engine',
   tree: 'Transhuman',
+  image: 'https://i.ibb.co/93Nn2vf/Philosophers-Transmortality-Engine.jpg',
   type: 'Party',
   cost: 0,
   complex: 'target',
@@ -348,6 +368,7 @@ heritages.push({
 heritages.push({
   title: 'Multicore Neural Leyline',
   tree: 'Transhuman',
+  image: 'https://i.ibb.co/5vfC81N/Multicore-Neural-Leyline.jpg',
   type: 'Party',
   cost: 165,
   freebies: {
@@ -404,6 +425,7 @@ heritages.push({
 heritages.push({
   title: 'Incandescent Ascendancy Machine',
   tree: 'Transhuman',
+  image: 'https://i.ibb.co/tqkg38h/Incandescent-Ascendancy-Machine.jpg',
   type: 'Self',
   cost: 195,
   freebies: {
@@ -448,6 +470,7 @@ heritages.push({
 heritages.push({
   title: 'Singularity',
   tree: 'Transhuman',
+  image: 'https://i.ibb.co/Lr1fgBW/Singularity.jpg',
   type: 'Self',
   cost: 11111,
   whitelist: ['Incandescent Ascendancy Machine'],
@@ -457,6 +480,7 @@ heritages.push({
 heritages.push({
   title: 'Lurking On The Threshold',
   tree: 'Outsider',
+  image: 'https://i.ibb.co/7tYBYrV/Lurking-On-The-Threshold.jpg',
   type: 'Root',
   freebies: {
     talentPerks: ['Body Talent'],
@@ -471,6 +495,7 @@ heritages.push({
 heritages.push({
   title: 'I Wear No Mask',
   tree: 'Outsider',
+  image: 'https://i.ibb.co/CHryQdZ/IWear-No-Mask.jpg',
   type: 'Self',
   cost: 45,
   freebies: {
@@ -487,6 +512,7 @@ heritages.push({
 heritages.push({
   title: 'Sanity - Shattering Instruction',
   tree: 'Outsider',
+  image: 'https://i.ibb.co/wRkkVfL/Sanity-Shattering-Instruction.jpg',
   type: 'Lure, Party',
   cost: 100,
   freebies: {
@@ -503,6 +529,7 @@ heritages.push({
 heritages.push({
   title: 'Endless Gospels Unspoken',
   tree: 'Outsider',
+  image: 'https://i.ibb.co/j6jTKkp/Endless-Gospels-Unspoken.jpg',
   type: 'Lure, Party',
   cost: 30,
   whitelist: ['Sanity - Shattering Instruction'],
@@ -514,6 +541,7 @@ heritages.push({
 heritages.push({
   title: 'Beyond The Wall Of Sleep',
   tree: 'Outsider',
+  image: 'https://i.ibb.co/QQGFZWD/Beyond-The-Wall-Of-Sleep.jpg',
   type: 'Lure, Party',
   cost: 100,
   freebies: {
@@ -539,6 +567,7 @@ heritages.push({
 heritages.push({
   title: 'Prophet Of Paradox',
   tree: 'Outsider',
+  image: 'https://i.ibb.co/sQ1CSVh/Prophet-Of-Paradox.jpg',
   type: 'Self, Lure',
   cost: 145,
   freebies: {
@@ -555,6 +584,7 @@ heritages.push({
 heritages.push({
   title: 'Everywhere And Nowhere',
   tree: 'Outsider',
+  image: 'https://i.ibb.co/Y3hXjV1/Everywhere-And-Nowhere.jpg',
   type: 'Self',
   cost: 150,
   freebies: {
@@ -572,6 +602,7 @@ heritages.push({
 heritages.push({
   title: 'Elder Sign',
   tree: 'Outsider',
+  image: 'https://i.ibb.co/VCnMZBq/Elder-Sign.jpg',
   type: 'Other Control',
   cost: 30,
   freebies: {
@@ -587,6 +618,7 @@ heritages.push({
 heritages.push({
   title: 'Branded by Possibility',
   tree: 'Outsider',
+  image: 'https://i.ibb.co/WnXQvFT/Branded-By-Possibility.jpg',
   type: 'Self',
   cost: 150,
   freebies: {
@@ -602,6 +634,7 @@ heritages.push({
 heritages.push({
   title: 'The Gate And The Key',
   tree: 'Outsider',
+  image: 'https://i.ibb.co/Jx2CCy9/The-Gate-And-The-Key.jpg',
   type: 'Self',
   cost: 150,
   freebies: {
@@ -618,6 +651,7 @@ heritages.push({
 heritages.push({
   title: 'An Answer To Reason',
   tree: 'Outsider',
+  image: 'https://i.ibb.co/5Tm2wM5/An-Answer-To-Reason.jpg',
   type: 'Self',
   cost: 11111,
   whitelist: ['Prophet Of Paradox', 'The Gate And The Key'],

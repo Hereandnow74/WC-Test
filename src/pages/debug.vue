@@ -22,6 +22,16 @@
     <div>{{ budgetMods }}</div>
     <div>{{ otherPerks }}</div>
     <div>{{ fee }}</div>
+
+    <div class="flex flex-wrap gap-2  pb-8">
+      {{ fullStartingBudget }} - {{ startingOrigin.cost }}
+      - {{ bindingCost }} - {{ heritageCost }} - {{ luresCost }} - {{ ridePerksCost }} - {{ homePerksCost }}
+      - {{ talentsCost }} - {{ defensesCost }} - {{ miscPerksCost }} - {{ waifuPerksCost }}
+      - {{ genericWaifuPerksCost }} - {{ companionsCost }} - {{ otherCost }} - {{ fee }}
+      - {{ budgetMods.minus }} + {{ budgetMods.plus }} + {{ companionProfit }} + {{ companionProfitSold }}
+      loans: {{ loan.gained }} + {{ usedHeritageDiscount }} + {{ talentsDiscount }} + {{ defensesDiscount }}
+      + {{ defenseRetinueDiscount }}
+    </div>
   </div>
 </template>
 
@@ -29,9 +39,51 @@
 import { useStore } from '~/store/store'
 
 const {
-  allEffects, intensities, luresBought, binding, flags, allForSave, heritage,
+  allEffects, intensities, luresBought, binding, flags, heritage,
   ridePerks, homePerks, talentPerks, defensePerks, miscPerks, genericWaifuPerks, companions, startingOrigin,
   waifuPerks, baseBudget, startingWorld, budgetMods, otherPerks, fee,
+  baseBudgetAfter,
+  userWorlds,
+  localUserWorlds,
+  userCharacters,
+  localUserCharacters,
+  tier11tickets,
+  bindingCost,
+  otherCost,
+  heritageCost,
+  ridePerksCost,
+  homePerksCost,
+  talentsCost,
+  defensesCost,
+  miscPerksCost,
+  waifuPerksCost,
+  genericWaifuPerksCost,
+  luresCost,
+  companionsCost,
+  allForSave,
+  targetList,
+  companionProfit,
+  companionProfitSold,
+  totalCost,
+  mode,
+  params,
+  userRides,
+  localUserRides,
+  yourTier,
+  companionsUIDs,
+  fullStartingBudget,
+  captureKoeff,
+  creditLimit,
+  underLoan,
+  csr,
+  loan,
+  trHistory,
+  favorites,
+  totalActive,
+  usedHeritageDiscount,
+  talentsDiscount,
+  defensesDiscount,
+  defenseRetinueDiscount,
 } = useStore()
 
 </script>

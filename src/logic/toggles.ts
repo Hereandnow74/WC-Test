@@ -10,10 +10,9 @@ export const [showAddRide, toggleShowAddRide] = useToggle()
 export const [showFilterTags, toggleShowFilterTags] = useToggle()
 export const [showAddPerk, toggleShowAddPerk] = useToggle()
 export const [showAddMission, toggleShowAddMission] = useToggle()
-export const [isDLC, toggleDLC] = useToggle(true)
-export const [isNSFW, toggleNSFW] = useToggle(false)
 export const [isSupport, toggleSupport] = useToggle(false)
 export const [isRetinueEdit, toggleRetinueEdit] = useToggle(false)
+export const [showSettings, toggleShowSettings] = useToggle(false)
 
 export const userCharactersShown = ref(false)
 

@@ -4,23 +4,32 @@
     <h1 id="rules" class="text-xl font-bold text-center mt-4">
       Rules
     </h1>
-    <div class="flex flex-col mx-2">
+    <div class="flex flex-col mx-2 w-full">
       <h3 class="text-xl font-semibold">
         Rules Index
       </h3>
-      <router-link to="/help" class="text-green-600 dark:text-green-400 hover:underline text-lg w-max">
+      <router-link
+        to="/help"
+        class="text-green-600 dark:text-green-400 hover:underline text-lg w-max"
+      >
         Help
       </router-link>
-      <router-link to="/everything" class="text-green-600 dark:text-green-400 hover:underline text-lg w-max">
+      <router-link
+        to="/everything"
+        class="text-green-600 dark:text-green-400 hover:underline text-lg w-max"
+      >
         List of Everything
       </router-link>
-      <router-link :to="{path: '/', hash:'#pandora'}" class="text-amber-600 dark:text-amber-400 hover:underline text-lg w-max">
-        Pandora’s Alternate Tier Ranks
+      <router-link
+        :to="{ path: '/', hash: '#pandora' }"
+        class="text-amber-600 dark:text-amber-400 hover:underline text-lg w-max"
+      >
+        Pandora’s Alternate Tier Ranks / Despin’s Tier Chart
       </router-link>
       <router-link
         v-for="rule in rulesList"
         :key="rule.title"
-        :to="{path: '/', hash:'#'+rule.title}"
+        :to="{ path: '/', hash: '#' + rule.title }"
         class="text-blue-600 dark:text-blue-400 hover:underline sm:text-lg w-max"
       >
         {{ rule.title2 }}
@@ -32,13 +41,51 @@
       <Table :headers="waifuTitles" :rows="waifuData" class="text-sm md:text-base w-min flex-grow" />
     </div>
     <div id="pandora" class="bg-amber-100 dark:bg-gray-800 p-1 md:p-4 w-full mx-auto">
-      <h3 class="sm:text-lg text-center mb-2">
-        Pandora’s Alternate Tier Ranks (by <a class="text-blue-500 hover:underline" href="https://forum.questionablequesting.com/threads/r34-economy-cyoa-thread.11289/page-63%23post-3167059&sa=D&source=editors&ust=1636169921608000&usg=AOvVaw3lNgOZSmmHTK3NPa9X_SOQ" target="_blank" rel="noopener noreferrer">Pandora12</a>)
+      <div class="flex w-full pb-2">
+        <div
+          class="border-l border-t border-r px-4 rounded-t-xl cursor-pointer flex-grow text-center font-bold"
+          :class="tiersTab === 0 ? 'bg-amber-500 dark:bg-gray-600' : 'bg-amber-400 dark:bg-gray-700'"
+          @click="tiersTab = 0"
+        >
+          Pandora Tier list
+        </div>
+        <div
+          class="border-l border-t border-r px-4 rounded-t-xl cursor-pointer flex-grow text-center font-bold"
+          :class="tiersTab === 1 ? 'bg-amber-500 dark:bg-gray-600' : 'bg-amber-400 dark:bg-gray-700'"
+          @click="tiersTab = 1"
+        >
+          Despin Tier list
+        </div>
+      </div>
+      <h3 v-if="tiersTab === 0" class="sm:text-lg text-center mb-2">
+        Pandora’s Alternate Tier Ranks (by
+        <a
+          class="text-blue-500 hover:underline"
+          href="https://forum.questionablequesting.com/threads/r34-economy-cyoa-thread.11289/page-63%23post-3167059&sa=D&source=editors&ust=1636169921608000&usg=AOvVaw3lNgOZSmmHTK3NPa9X_SOQ"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Pandora12</a>)
       </h3>
-      <Table :headers="pandoraTitles" :rows="pandoraData" class="text-sm md:text-base w-full flex-grow text-black" />
+      <h3 v-else class="sm:text-lg text-center mb-2">
+        Despin’s Tier Chart (by
+        <a
+          class="text-blue-500 hover:underline"
+          href="https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Despin</a>)
+      </h3>
+      <Table
+        :headers="pandoraTitles"
+        :rows="tiersTab === 0 ? pandoraData : despinData"
+        class="text-sm md:text-base w-full flex-grow text-black"
+      />
     </div>
     <div>
-      <Desc :desc="effectiveTiers" class="bg-amber-200 text-gray-800 sm:w-1/2 sm:float-right mt-8 mx-2 border-3 border-gray-900" />
+      <Desc
+        :desc="effectiveTiers"
+        class="bg-amber-200 text-gray-800 sm:w-1/2 sm:float-right mt-8 mx-2 border-3 border-gray-900"
+      />
       <Desc id="captures" :desc="captures" class="bg-warm-gray-200 dark:bg-gray-800" />
     </div>
     <Desc id="familiar" :desc="familiars" class="bg-warm-gray-200 dark:bg-gray-800" />
@@ -47,7 +94,10 @@
     <Desc id="waifu11" :desc="waifu11" class="bg-warm-gray-200 dark:bg-gray-800" />
     <Desc id="danger11" :desc="danger11" class="bg-warm-gray-200 dark:bg-gray-800" />
     <div>
-      <Desc :desc="creditValue" class="bg-amber-200 text-gray-800 md:w-1/2 lg:w-1/3 sm:float-right mt-8 mx-2 border-3 border-gray-900" />
+      <Desc
+        :desc="creditValue"
+        class="bg-amber-200 text-gray-800 md:w-1/2 lg:w-1/3 sm:float-right mt-8 mx-2 border-3 border-gray-900"
+      />
       <Desc id="pvp" class="bg-warm-gray-200 dark:bg-gray-800" :desc="pvpRules" />
     </div>
     <h2 id="services" class="text-xl text-center">
@@ -62,13 +112,20 @@
     <h2 id="arranged" class="text-xl text-center">
       Come Out and Play (Arranged PvP)
     </h2>
-    <div class="">
+    <div class>
       <Table :headers="powerHeaders" :rows="powerTier" class="float-right m-4" />
       <Desc id="arranged" :desc="arranged" class="bg-warm-gray-200 dark:bg-gray-800" />
     </div>
     <div>
-      <Desc :desc="assetValue" class="bg-amber-200 text-gray-800 sm:w-1/2 sm:float-right mt-8 mx-2 border-3 border-gray-900" />
-      <Desc id="arrangedConditions" :desc="arrangedConditions" class="bg-warm-gray-200 dark:bg-gray-800" />
+      <Desc
+        :desc="assetValue"
+        class="bg-amber-200 text-gray-800 sm:w-1/2 sm:float-right mt-8 mx-2 border-3 border-gray-900"
+      />
+      <Desc
+        id="arrangedConditions"
+        :desc="arrangedConditions"
+        class="bg-warm-gray-200 dark:bg-gray-800"
+      />
     </div>
     <Desc id="arrangedTeam" :desc="arrangedTeam" class="bg-warm-gray-200 dark:bg-gray-800" />
     <Desc id="arrangedSpecial" :desc="arrangedSpecial" class="bg-warm-gray-200 dark:bg-gray-800" />
@@ -130,6 +187,46 @@ const pandoraData = [
   ['T11', 'Author Tier', 'Characters in this weight class are absolutely Omnipotent and likely Omniscient. They are capable of exerting their will on all of reality and the entire universe (or even the totality of the multiverse) without exception. Destiny/Fate is their play-thing. They cannot be killed/destroyed by any means. Any limits they have are self-imposed.'],
 ]
 
+const despinData = [
+  ['T1', 'Commoner', 'Has no useful skill, power, or special trait.'],
+  ['T2', 'Proficient', `Has a useful skill, power, or special trait.
+    A trained fighter, political clout, high intelligence, etc.
+    Also includes those with untrained minor powers.
+  `],
+  ['T3', 'Expert', `Pushes the upper limits of what a human is capable of.
+Leader in their field, including mundane combat, political control, genius, etc.
+  `],
+  ['T4', 'Adventurer', `Has at least one skill, power, or special trait beyond normal human ability.
+Abilities may be specific or limited in some way.
+Also includes someone with Immortality as a stand-alone power.`],
+  ['T5', 'Hero', `Has at least one well-trained, versatile, or useful superhuman ability.
+Street level superheroes and shonen characters typically start here, as do
+some with a trace of divinity.`],
+  ['T6', 'Paragon', `Has at least one skill, power, or special trait beyond normal superhuman ability.
+A Dimension Hopper or Resurrector with severe limitations typically starts here.
+`],
+  ['T7', 'Epic', `Has an ability that can affect a massive area, a useful esoteric effect, or
+can destroy a small celestial object.
+A God with limitations typically starts here, as does a Person of Mass Destruction.
+`],
+  ['T8', 'Legendary', `Has an ability that can affect a significant landmass, a powerful esoteric effect,
+or can destroy a planet sized object.
+An unlimited Dimension Hopper or Resurrector also starts here.
+`],
+  ['T9', 'Titan', `Has an ability that can affect a planet, a high-end esoteric effect, or can
+accurately be described as a Walking Calamity.
+`],
+  ['T10', 'God', `Has an ability that can casually affect a planet, create a world, or is capable
+of the genuinely impossible.
+Scales infinitely. Planetary to multiversal influence all fall in this tier.
+`],
+  ['T11', 'Outsider', `Has broad reality altering capabilities or otherwise possesses an ability that
+breaks or bypasses power-scaling entirely, though is not necessarily unkillable
+or unstoppable.
+A T11 retinue member automatically becomes an unlimited Dimension Hopper.
+`],
+]
+
 const powerHeaders = ['Strength', 'Multiplier']
 const powerTier = [
   [1, '*1/3'],
@@ -142,6 +239,8 @@ const powerTier = [
   [8, '*2.5'],
   [9, '*3.0'],
 ]
+
+const tiersTab = ref(0)
 
 onMounted(() => useTooltips())
 

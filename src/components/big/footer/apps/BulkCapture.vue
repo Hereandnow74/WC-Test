@@ -3,6 +3,7 @@
     <h3 class="text-center text-lg">
       Bulk capture calculator
     </h3>
+    <p>This calculator exist because of the 5% capture credits for T5+ 'extra' characters rule</p>
     <table class="table-fixed w-full">
       <thead>
         <th class="w-1/5">

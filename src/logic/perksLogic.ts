@@ -1,4 +1,4 @@
-import { findIndex, intersection, intersectionWith, isArray, mergeWith, remove, sample, uniqBy } from 'lodash-es'
+import { findIndex, intersection, intersectionWith, isArray, isEmpty, isObject, mergeWith, remove, sample, uniqBy } from 'lodash-es'
 import { Binding, shroudElements } from '~/data/binding'
 import { Heritage } from '~/data/heritage'
 import { Intensity } from '~/data/intensity'
@@ -149,7 +149,6 @@ export function chooseBinding(bin: Binding, saveData: Perk) {
     if (binding.value[ind].count !== saveData.count && saveData.count > 0) {
       if (bin.complex) {
         deleteFreebies(binding.value[ind].freebies)
-        if (saveData.complex.length > 1) saveData.cost += 10 * (saveData.complex.length)
         saveData.freebies = freebies
         addFreebies(saveData.freebies)
       }
@@ -207,12 +206,14 @@ export function chooseLure(lure: Binding) {
     if (ind === -1) {
       allEffects.value.push(lure.title)
       luresBought.value.push({ title: lure.title, cost: lure.cost })
+      if (lure.freebies) addFreebies(lure.freebies)
     }
     else {
       const toDel = luresBought.value.splice(ind, 1)[0]
       if (!flags.value.chargen && toDel.cost < 11111) fee.value += Math.round(toDel.cost * 0.2) || 0
       allEffects.value.splice(allEffects.value.indexOf(toDel.title), 1)
       deletePerk(luresBought.value, lureAvailable)
+      if (lure.freebies) deleteFreebies(lure.freebies)
     }
   }
 }
@@ -484,4 +485,20 @@ export function assignBuildData(data: any) {
   baseBudget.value = data.baseBudget
   allEffects.value = data.allEffects
   flags.value = data.flags
+}
+
+export function filterObject(obj: any) {
+  const ret: any = {}
+  Object.keys(obj)
+    .forEach((key) => {
+      if (obj[key] !== undefined && obj[key] !== '') {
+        if (isObject(obj[key]) && isEmpty(obj[key])) return
+        if (key === 'defDiscount' && obj[key] === 0) return
+        if (obj[key].value)
+          ret[key] = obj[key].value
+        else
+          ret[key] = JSON.parse(JSON.stringify(obj[key]))
+      }
+    })
+  return ret
 }

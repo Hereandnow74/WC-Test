@@ -30,6 +30,21 @@ export function lazyLoadImg(list: HTMLElement| null) {
     }
   }
 }
+export function lazyLoadSingleImg(img: HTMLImageElement) {
+  if (img) {
+    const options = {
+      root: null,
+      threshold: 0,
+    }
+    const observer = new IntersectionObserver((entries, observer) => entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        img.src = img.dataset.src || ''
+        observer.unobserve(img)
+      }
+    }), options)
+    observer.observe(img)
+  }
+}
 
 export async function randomChar(withImg: boolean, maxCost = 0, minCost = 0) {
   let chars = Array.prototype.concat(await getChars(), await getUserChars())

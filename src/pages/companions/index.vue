@@ -90,9 +90,12 @@
     <div v-else class="">
       Loading... <span class="inline-block text-xl"><eos-icons:bubble-loading /></span>
     </div>
-    <div ref="companionsList" class="overflow-y-auto">
+    <div ref="companionsList" class="overflow-y-auto w-full">
       <Foldable v-if="allUserCharacters.length" :is-open="userCharactersShown" class="text-lg mb-2" title="User Characters">
-        <div class="mb-4 grid sm:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-1 overflow-y-auto text-base">
+        <div
+          class="mb-4 grid sm:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5
+          4xl:grid-cols-6 5xl:grid-cols-7 gap-1 text-base"
+        >
           <CompanionCard
             v-for="char in allUserCharacters"
             :key="char.uid"
@@ -106,7 +109,8 @@
       </Foldable>
       <div
         ref="waifuList"
-        class="grid sm:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-1 pb-8"
+        class="grid sm:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5
+          4xl:grid-cols-6 5xl:grid-cols-7 gap-1 pb-8"
       >
         <CompanionCard
           v-for="{ item: char } in slicedChars"

@@ -8,9 +8,9 @@
   >
     <div v-if="world.image" class="flex-grow relative min-h-[170px]">
       <img
-        ref="companionEl"
+        ref="worldImg"
         class="rounded absolute object-cover h-full w-full object-center"
-        :src="world.image"
+        :data-src="world.image"
         :alt="world.worldName"
       >
     </div>
@@ -61,6 +61,7 @@
 import { findIndex } from 'lodash-es'
 import type { PropType } from 'vue'
 import { WORLD_COLORS, WORLD_RATINGS } from '~/data/constants'
+import { lazyLoadSingleImg } from '~/logic'
 import { confirmDialog } from '~/logic/dialog'
 import { useStore, World } from '~/store/store'
 
@@ -89,6 +90,8 @@ const condition = reactive({
   name: undefined,
   rating: 0,
 })
+
+const worldImg = ref<HTMLImageElement | null>(null)
 
 function pickWorld(world: World) {
   if (startingWorld.value.worldName === world.worldName && startingWorld.value.condition === condition.name) {
@@ -121,5 +124,7 @@ function changeCondition(event: any) {
 function showInfo() {
   confirmDialog('Rating is based on average user submitted rating. If you don\'t agree with it you can make your case over <a href="https://discord.gg/cZf4U5rmPV" target="_blank" rel="noopener noreferrer" class="text-blue-400">Discord</a>', 'info')
 }
+
+onMounted(() => { if (worldImg.value) lazyLoadSingleImg(worldImg.value) })
 
 </script>

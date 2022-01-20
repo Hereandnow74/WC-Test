@@ -1,12 +1,15 @@
 <template>
   <div class="p-2">
     <Desc class="p-2 bg-gray-200 dark:bg-teal-900 max-w-4xl mx-auto" :desc="desc" />
-    <div class="flex flex-wrap justify-between mt-4">
+    <div
+      class="column-gap mt-4"
+      :class="settings.columns !== 'auto' ? `column-count-${settings.columns}` : 'md:column-count-2 xl:column-count-3 4xl:column-count-4 5xl:column-count-5'"
+    >
       <div
         v-for="item in origin"
         :id="item.title"
         :key="item.title"
-        class="bg-light-blue-300 dark:bg-light-blue-900 p-2 md:w-[calc(50%-0.5rem)] xl:w-[calc(33%-0.5rem)]
+        class="bg-light-blue-300 dark:bg-light-blue-900 p-2 column-block max-w-[600px] min-h-[450px]
           mb-4 cursor-pointer border-2 hover:border-orange-400 border-light-blue-900"
         :class="chosenOrigin.title === item.title ? 'filter brightness-110' : ''"
         @click="chooseOrigin(item)"
@@ -92,11 +95,11 @@ const chosenOrigin = reactive({
   character: '',
   hr: '',
   tier: 1,
-  uid: 0,
+  uid: -1,
 })
 const costError = ref('')
 
-const { allEffects, startingOrigin, fullStartingBudget, flags } = useStore()
+const { allEffects, startingOrigin, fullStartingBudget, flags, settings } = useStore()
 
 onMounted(() => useTooltips())
 
@@ -112,7 +115,7 @@ function chooseOrigin(item: Origin) {
     chosenOrigin.character = ''
     chosenOrigin.tier = 1
     chosenOrigin.hr = ''
-    chosenOrigin.uid = 0
+    chosenOrigin.uid = -1
   }
 
   if (startingOrigin.value.title === chosenOrigin.title)

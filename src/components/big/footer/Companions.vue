@@ -82,15 +82,7 @@ const companionImages = computed(() => {
   return res
 })
 
-// watchEffect(() => {
-//   allChars.value.forEach((char) => {
-//     if (companionsObject[char.u] !== undefined && companionsData.value[companionsObject[char.u]])
-//       companionsData.value[companionsObject[char.u]].image = imageLink(char.i, char.u)
-//   })
-// })
-
-onMounted(() => lazyLoadImg(waifuList.value))
-watch(companionsDataFiltered, () => {
+watch([companionsDataFiltered, companionImages], () => {
   nextTick(() => lazyLoadImg(waifuList.value))
 })
 

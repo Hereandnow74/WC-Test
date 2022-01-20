@@ -1,8 +1,26 @@
 <template>
-  <div class="w-screen-md lg:pl-2 bg-gray-200 dark:bg-gray-800 p-2 mt-4 flex flex-col gap-4 overflow-y-auto">
+  <div class="w-screen-md lg:pl-2 bg-gray-200 dark:bg-gray-800 p-2 mt-4 !items-stretch gap-4 overflow-y-auto">
     <h2 class="text-xl font-bold text-center">
       Changelog
     </h2>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
+        XX January 2022
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li class="text-red-500 font-semibold">
+          Some of the submitted characters ~200 for 14-16 jan. got lost due to my mistake.
+        </li>
+        <li>180 new user submitted Characters.</li>
+        <li>Settings, you can now turn off DLC perks by Author</li>
+        <li>Images for all Perks provided by KatzSmile, you can turn them off in settings</li>
+        <li>Better layout for big screens</li>
+        <li>You can now assign yourself an image in Retinue tab</li>
+        <li>Despin’s Tier Chart in rules</li>
+        <li>15 new user submitted Worlds.</li>
+        <li>Bugfixes</li>
+      </ul>
+    </div>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
         15 January 2022

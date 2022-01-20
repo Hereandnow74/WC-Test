@@ -1,7 +1,10 @@
 <template>
   <div class="sm:p-2">
     <Desc :desc="talentsDesc" class="p-2 mb-4 max-w-4xl mx-auto bg-violet-200 dark:bg-violet-900" />
-    <div class="md:column-count-2 lg:column-count-3 pb-8">
+    <div
+      class="column-gap pb-8"
+      :class="settings.columns !== 'auto' ? `column-count-${settings.columns}` : 'md:column-count-2 xl:column-count-3 4xl:column-count-4 5xl:column-count-5'"
+    >
       <PerkCard
         v-for="perk in perksDLC"
         :key="perk.title"
@@ -20,12 +23,16 @@ import { findIndex } from 'lodash-es'
 import { perks, talentsDesc } from '~/data/talents'
 import { useTooltips } from '~/logic/misc'
 import { useStore } from '~/store/store'
-import { choosePerk, miscAvailable, isDLC } from '~/logic'
+import { choosePerk, miscAvailable } from '~/logic'
 import { DLCperks } from '~/data/DLCs'
 
-const perksDLC = computed(() => isDLC.value ? perks.concat(DLCperks) : perks)
+const { miscPerks, settings } = useStore()
 
-const { miscPerks } = useStore()
+const perksDLC = computed(() => !settings.value.allChosenAuthors[0]
+  ? perks
+    .concat(DLCperks
+      .filter(perk => !settings.value.allChosenAuthors.includes(perk.dlc)))
+  : perks)
 
 onMounted(() => useTooltips())
 

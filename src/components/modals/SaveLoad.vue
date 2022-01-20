@@ -30,16 +30,37 @@
           </div>
         </div>
       </div>
-      <div class="mx-auto mt-2 w-max flex gap-2">
-        <Input v-model="name" placeholder="Save name" />
+      <div class="mt-2 px-4 flex gap-2 w-full">
+        <Input v-model="name" class="flex-grow" placeholder="Save name" />
         <Button label="Save" size="Small" @click="saveBuild" />
+      </div>
+      <div class="mx-auto px-4 mt-2 w-max flex gap-2">
         <a ref="saveButton" href="#" @click="saveBuildFile">
           <Button label="Save File" size="Small" bg-color="bg-blue-500" class="h-full" />
         </a>
         <input ref="loadEl" type="file" class="hidden" @change="loadBuildFile" />
         <Button label="Load File" size="Small" bg-color="bg-blue-500" @click="() => loadEl.click()" />
+        <Button
+          label="Export to Clipboard"
+          :icon="copySuccess ? 'fa-solid:check' : ''"
+          size="Small"
+          bg-color="bg-orange-500"
+          @click="exportToClip()"
+        />
+        <Button label="Import" size="Small" bg-color="bg-orange-500" @click="showImportDialog = true" />
       </div>
     </div>
+    <Modal v-if="showImportDialog" label="Save & Load" class="text-gray-800 dark:text-gray-200 z-50" @click="showImportDialog = false">
+      <div class="p-2">
+        <textarea v-model="buildData" rows="10" class="w-full border rounded" placeholder="Paste build data here" />
+        <Button
+          label="Load"
+          size="Small"
+          bg-color="bg-orange-500 mt-2 mx-auto"
+          @click="loadFromText"
+        />
+      </div>
+    </Modal>
   </Modal>
 </template>
 
@@ -58,6 +79,9 @@ const { startingWorld, totalCost } = useStore()
 const name = ref('')
 const saveButton = ref<HTMLLinkElement>(null)
 const loadEl = ref<HTMLElement>(null)
+const showImportDialog = ref(false)
+const buildData = ref('')
+const copySuccess = ref(false)
 
 const saves = useStorage<Record<number, any>>('saves', {})
 
@@ -104,6 +128,19 @@ function loadBuildFile(event: any) {
       }
     })
   }
+}
+
+function exportToClip() {
+  navigator.clipboard.writeText(JSON.stringify(save))
+  copySuccess.value = true
+}
+
+function loadFromText() {
+  if (buildData.value) {
+    writeBuildValues(JSON.parse(buildData.value))
+    buildData.value = ''
+  }
+  showImportDialog.value = false
 }
 
 </script>

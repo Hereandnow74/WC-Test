@@ -30,6 +30,7 @@ export const ridePerksFull = [] as PerkFull[]
 
 ridePerksFull.push({
   title: 'Catch-A-Ride Crew Training Program',
+  image: 'https://i.ibb.co/F3vk1fs/Catch-ARide-Crew-Training-Program.jpg',
   cost: 5,
   requires: 'at least one Replica Showroom vehicle',
   flag: 'hasARide',
@@ -40,6 +41,7 @@ ridePerksFull.push({
 
 ridePerksFull.push({
   title: 'Catch-A-Ride Crew Production Program',
+  image: 'https://i.ibb.co/YkcBWLM/Catch-ARide-Crew-Production-Program.jpg',
   cost: 20,
   whitelist: ['Catch-A-Ride Crew Training Program'],
   desc: `
@@ -56,6 +58,7 @@ export const homes: PerkFull[] = []
 
 homes.push({
   title: 'Pocket Space',
+  image: 'https://i.ibb.co/9q6bnnd/Pocket-Space.jpg',
   cost: 5,
   desc: `
 <p>You now possess a timeless extradimensional inventory space. This inventory may be accessed via an app on your smart device, Apportation, or certain Heritage perks. Transferring an item into the inventory via the app requires it to be in contact with you before transport. An item pulled from the inventory via the app will be deposited into your hand or within one meter of your position.</p>
@@ -64,6 +67,7 @@ homes.push({
 
 homes.push({
   title: 'Pocket Apartment',
+  image: 'https://i.ibb.co/DCWhpf4/Pocket-Apartment.jpg',
   cost: 20,
   whitelist: ['Pocket Space'],
   desc: `
@@ -75,6 +79,7 @@ homes.push({
 
 homes.push({
   title: 'All Roads Lead to Home',
+  image: 'https://i.ibb.co/vXfKMBb/All-Roads-Lead-To-Home.jpg',
   cost: 10,
   whitelist: ['Pocket Apartment'],
   desc: 'Your purchased and captured retinue members may now create portals to your apartment. Multiple portals are now allowed. Portals will automatically close when not in use, but their locations will be saved into memory for you and your retinue to sense and re-open later.',
@@ -82,6 +87,7 @@ homes.push({
 
 homes.push({
   title: 'Sweet Home',
+  image: 'https://i.ibb.co/mRzHnHt/Sweet-Home-New.jpg',
   cost: 10,
   whitelist: ['Pocket Apartment'],
   desc: 'Your residence is double the size: 200 sq m, equivalent to a small house. It has a master suite (one large bedroom and one attached large bathroom), three other medium bedrooms, one and a half other bathrooms, a large living area, full-size kitchen with attached eating area, closet spaces, and one each of very large, large, and medium rooms that you can decide how to use: dojo, garage, library, a shared workshop, extra bedrooms, separate dining room, etc. You may also repurpose unneeded bedrooms until they’re filled. You may now make your Pocket Space any clearly delineated space within your Sweet Home, and not simply a physical vault.',
@@ -89,6 +95,7 @@ homes.push({
 
 homes.push({
   title: 'Grand Manor',
+  image: 'https://i.ibb.co/9vZbxG4/Grand-Manor-New.jpg',
   cost: 20,
   whitelist: ['Sweet Home'],
   desc: 'Your living space is significantly larger, at 1,000 sq m, with every living, training, and workshop area you and your waifus might need. A control room deep in the mansion will allow you to customize the structure however you like. Specialized workshop equipment and exotic resources will only be available if you have someone who knows how to use them, whether that’s a purchased or captured retinue member, your Substitute or Possess target, or by some other means. For safety reasons, all personnel and important items will be ejected from areas undergoing rearrangement.',
@@ -96,6 +103,7 @@ homes.push({
 
 homes.push({
   title: 'Life’s A Beach',
+  image: 'https://i.ibb.co/2ndQhZY/Lifes-ABeach-New.jpg',
   cost: 10,
   whitelist: ['Sweet Home'],
   desc: `
@@ -105,6 +113,7 @@ homes.push({
 
 homes.push({
   title: 'Warehouse District',
+  image: 'https://i.ibb.co/frYhgvK/Warehouse-District.jpg',
   cost: 20,
   whitelist: ['Grand Manor', 'Life’s A Beach'],
   desc: 'The basic Grand Manor offers an automatically replenishing supply of resources for each workshop, but only a limited amount at a time. Each warehouse in this district is 20 m tall and has about 50,000 sq m of floor space, enough to hold… a lot of materials. You can have as many individual warehouses as you have workshops, though this is also capped by your dimension’s physical space. New resources will appear here, in entire pallets at a time. Your retinue members’ workshops will now pull their materials from this central stockpile instead of generating their own.',
@@ -112,6 +121,7 @@ homes.push({
 
 homes.push({
   title: 'Sweet Home Expansion',
+  image: 'https://i.ibb.co/p2Q3xRw/Sweet-Home-Expansion-New.jpg',
   cost: 50,
   whitelist: ['Life’s A Beach'],
   multiple: true,
@@ -121,6 +131,7 @@ homes.push({
 
 homes.push({
   title: 'Pocket Star',
+  image: 'https://i.ibb.co/YB9Tpcz/Pocket-Star.jpg',
   cost: 11111,
   whitelist: ['Sweet Home Expansion (25x)'],
   desc: 'Your planet is no longer alone in its universe. This expands the pocket space’s radius to the same range as a Transhuman Master Core (~104.45 AU) and places a yellow star at the center with your planet orbiting around it. No additional planets or other features are included in this perk.',
@@ -128,6 +139,7 @@ homes.push({
 
 homes.push({
   title: 'Niven? Never Heard of Him',
+  image: 'https://i.ibb.co/WKHYQXg/Niven-Never-Heard-Of-Him.jpg',
   cost: 1200,
   whitelist: ['Pocket Star'],
   desc: 'Your planet is now a full-size ringworld, a solid mass roughly 1.6 million km across and stretching across the entirety of its 940 million km orbital circumference. Including the inner shade ring, the contained atmosphere, and the regularly-placed stations on the outside of the ring - with their own reversed artificial gravity and access to the inner surface - it’s nearly 30 km thick. Even with significant immigration, a contractor’s ringworld may last millions of years before overpopulation ever becomes an issue.',
@@ -135,6 +147,7 @@ homes.push({
 
 homes.push({
   title: 'Adjustment Field',
+  image: 'https://i.ibb.co/6JdPGjB/Adjustment-Field.jpg',
   cost: 200,
   requires: 'Need a sufficiently large Catch-a-Ride Replica',
   whitelist: ['Grand Manor',
@@ -155,6 +168,7 @@ homes.push({
 
 homes.push({
   title: 'Rainbow Bridge',
+  image: 'https://i.ibb.co/WWZv7P2/Rainbow-Bridge.jpg',
   cost: 30,
   whitelist: ['All Roads Lead to Home', 'Exit Stage Left', 'Sweet Home'],
   desc: `
@@ -169,12 +183,14 @@ export const talents: PerkFull[] = []
 
 talents.push({
   title: 'Everlasting Talent',
+  image: 'https://i.ibb.co/b6ShsQS/Everlasting-Talent.jpg',
   cost: 10,
   desc: 'You live. You have weak immortality and eternal youth. If you are older than the peak age for your species (25 years for humans), your body is reset to that point; otherwise you\'ll continue to physically mature to that point but not experience any aging afterwards. This will not interfere with deliberate age-manipulation effects from within your retinue, whether from the company’s transformation suite or third-parties. If your maturation process had been halted by any means, it will now continue until your peak age. The "Fog of Ages," including atrophy of unused skills, will never affect you. This perk will not make you unkillable or grant any form of auto-resurrection. It just means you won’t grow feeble and die of “natural causes,” so don’t try anything foolish. The benefits of this perk will apply to your purchased and captured waifus, but you can disable it for specific individuals if you wish.',
 })
 
 talents.push({
   title: 'Body Talent',
+  image: 'https://i.ibb.co/fkqgJ8Z/Body-Talent.jpg',
   cost: 10,
   desc: `
 <p>You lift. Your body is now in perfect fitness and health, with significant muscle growth, within healthy human standards. If your natural height was less, you are now between 170 and 210 cm tall - or will be, if you aren’t yet fully grown. Your clothes are all resized and your muscle memory adjusted to fit. (You may opt out of this height boost.) In the event of a mismatch, your body will change to match your gender identity, reflecting what you might have looked like if you’d been born as such, unless you created or maintained a mismatch with your choice of targets for Substitute or Possess. (You knew what you were getting into when you did that.)</p>
@@ -186,18 +202,21 @@ talents.push({
 
 talents.push({
   title: 'Martial Talent',
+  image: 'https://i.ibb.co/0DZZj7L/Martial-Talent.jpg',
   cost: 10,
   desc: 'You fight. You have prodigious martial talent and can rapidly learn any personal, non-supernatural combat skills you encounter, whether melee or ranged. Supernatural extensions of martial skill are instead affected by Psychic or Soul Talents. This is an experience and skill acquisition multiplier, not a flat improvement, and scales to the strength and skill of your opponents and trainers: the better they are than you, the faster you learn, until you’ve caught up to them. This also applies to command ability, not just personal skill. ',
 })
 
 talents.push({
   title: 'Wild Talent',
+  image: 'https://i.ibb.co/3WFT8nP/Wild-Talent.jpg',
   cost: 5,
   desc: 'You camp. You have a knack for living in the wilderness, with a natural feel for how to identify and make use of edible food, potable water, suitable shelter, animal tracks, etc. You know how to ride a mundane horse. In worlds that don’t use horses, you can quickly adapt your riding methods to whatever appropriate beasts are available.',
 })
 
 talents.push({
   title: 'Science Talent',
+  image: 'https://i.ibb.co/2snqdq0/Science-Talent.jpg',
   cost: 20,
   additionalDesc: `
   To unlock new types of scientific magic beyond "styles anyone can use" and whatever might be unlocked by your Extra, Substitute, or Possess origin, use Added Potential. Advanced Template Stacking (Arcane), or various Heritage perks.
@@ -207,6 +226,7 @@ talents.push({
 
 talents.push({
   title: 'Engineering Talent',
+  image: 'https://i.ibb.co/L1WTbLj/Engineering-Talent.jpg',
   cost: 30,
   whitelist: ['Science Talent'],
   desc: 'Most so-called “mad scientists” are actually mad engineers. You can apply your natural knowledge toward practical purposes, whether personal or large-scale, for peace or war. Different engineering fields require different knowledge bases - just because Science Talent has taught you how one principle works doesn’t mean you can achieve the same result using a principle you haven’t learned yet.',
@@ -214,12 +234,14 @@ talents.push({
 
 talents.push({
   title: 'Aesthetic Talent',
+  image: 'https://i.ibb.co/G9WtDSk/Aesthetic-Talent.jpg',
   cost: 10,
   desc: 'You design. You have a prodigious talent in the visual arts: painting, sculpture, photography, fashion and makeup, etc. This is an experience and skill acquisition multiplier, not a flat improvement, and scales to the skill of your trainers, cohorts, and competition: the better they are than you, the faster you learn, until you’ve caught up to them. The creation of things that have practical purposes is instead covered under Engineering Talent.',
 })
 
 talents.push({
   title: 'Communication Talent',
+  image: 'https://i.ibb.co/mzjhSnN/Communication-Talent.jpg',
   cost: 10,
   desc: `
 <p>You understand. You can read a room, spot deceit or employ your own, know when to speak and when to hold your tongue, and find the right words to say for good or ill. You will neither be That Guy whom women warn their friends about, nor the otaku nerd whose obsessions drive others away. This does not lend any additional power to your words - that’s what Siren’s Song is for - nor will it make you enjoy social interactions for their own sake. It only guarantees knowledge and competence.</p>
@@ -228,12 +250,14 @@ talents.push({
 
 talents.push({
   title: 'Performance Talent',
+  image: 'https://i.ibb.co/BszrmWS/Performance-Talent.jpg',
   cost: 10,
   desc: 'You express. You have a prodigious talent in the kinesthetic arts: music, dance, acting, etc. This is an experience and skill acquisition multiplier, not a flat improvement, and scales to the skill of your trainers, cohorts, and competition: the better they are than you, the faster you learn, until you’ve caught up to them. Audiovisual and stage production are instead covered under Engineering Talent.',
 })
 
 talents.push({
   title: 'Soul Talent',
+  image: 'https://i.ibb.co/MsvBc4N/Soul-Talent.jpg',
   cost: 10,
   additionalDesc: `
   To unlock new types of mystical arts beyond “styles anyone can use* and whatever might be unlocked by your Extra, Substitute, or Possess origin, use Added Potential, Advanced Template Stacking (Enlightened), Advanced Template Stacking (Green), or various Heritage perks.
@@ -243,6 +267,7 @@ talents.push({
 
 talents.push({
   title: 'Blessed Talent',
+  image: 'https://i.ibb.co/3RR4NXR/Blessed-Talent.jpg',
   cost: 30,
   whitelist: ['Communication Talent', 'Soul Talent'],
   desc: `
@@ -252,6 +277,7 @@ talents.push({
 
 talents.push({
   title: 'Psychic Talent',
+  image: 'https://i.ibb.co/cJnMd28/Psychic-Talent.jpg',
   cost: 20,
   desc: `
 <p>You think. You have prodigious psychic talent and can rapidly learn any psychic abilities you encounter: from the telepathy and telekinesis that are so common in otherwise-hard sci-fi to Academy City esper powers, Biotics, and even the extremes typical of western comic-book psychics. This applies to traditional psychic abilities only: telepathy, telekinesis, remote viewing, astral projection, prescience, pyrokinesis, technopathy, etc., provided their trappings are neither magical nor technological.</p>
@@ -261,6 +287,7 @@ talents.push({
 
 talents.push({
   title: 'Covert Talent',
+  image: 'https://i.ibb.co/54hQfY0/Covert-Talent.jpg',
   cost: 10,
   desc: `
 <p>You lie, cheat, and steal. You have a prodigious talent for larceny, trespassing, theft, espionage, counterintelligence, and other forms of covert activity, whether it’s performed on a government’s dime or not. You can disappear into any crowd, no matter how sparse. With Engineering Talent, you can learn to hack any device. With Communication or Performance Talents, you can grift the best con artists out of their money. With Aesthetic Talent, you can make perfect forgeries of any artist’s style. Body Talent’s boost to athleticism also synergizes with this perk.</p>
@@ -269,6 +296,7 @@ talents.push({
 
 talents.push({
   title: 'Talent Sharing',
+  image: 'https://i.ibb.co/C55Bgxn/Talent-Sharing.jpg',
   cost: 10,
   complex: 'flavor',
   desc: 'The effects of one of your purchased Basic Talents now apply equally to every member of your retinue, as if you had shared them through a Binding or Heritage perk. This must be purchased separately for each valid Talent: Martial, Wild, Science, Engineering, Aesthetic, Communication, Performance, Soul, Blessed, Psychic, Covert, and Sticky Fingers (as “Tantric Talent”). Everlasting and Body are always shareable. This perk is obsoleted by Controls or Heritage perks that share Talents and may be refunded completely after such purchases.',
@@ -276,6 +304,7 @@ talents.push({
 
 talents.push({
   title: 'Inexhaustible',
+  image: 'https://i.ibb.co/qCMqtY5/Inexhaustible.jpg',
   cost: 140,
   whitelist: ['Everlasting Talent', 'Soul Defense (2x)'],
   desc: 'Your inner energies are truly infinite. You will never run out of vital, magical, psychic, or soul power to fuel your abilities with. You can develop your ability to spend more of this reserve at a time with training and Soul Talent. This reserve will automatically be shared with other soul-bonded members of your retinue, whether they’re a host to a Core of a Transhuman with Essence Upload or connected by Conjunction, a familiar bond, or some other means. If you have Essence Reactors, their effective output and storage capacities will be doubled.',
@@ -283,6 +312,7 @@ talents.push({
 
 talents.push({
   title: 'Template Stacking 0: Added Potential',
+  image: 'https://i.ibb.co/3cXr8dW/Template-Stacking0-Added-Potential.jpg',
   cost: 5,
   complex: 'target_f',
   anything: 'Power Name',
@@ -297,6 +327,7 @@ talents.push({
 
 talents.push({
   title: 'Template Stacking I',
+  image: 'https://i.ibb.co/rww384y/Template-Stacking-I.jpg',
   cost: 15,
   special: 'Must be repurchased for each use.',
   complex: 'target_f',
@@ -311,6 +342,7 @@ talents.push({
 
 talents.push({
   title: 'Racial Template',
+  image: 'https://i.ibb.co/yPfLWJJ/Racial-Template.jpg',
   cost: 20,
   complex: 'target_f',
   anything: 'Race Name',
@@ -323,6 +355,7 @@ talents.push({
 
 talents.push({
   title: 'OC Donut Steel',
+  image: 'https://i.ibb.co/QDM4L0b/OCDonut-Steel.jpg',
   cost: 20,
   complex: 'target_f',
   anything: 'Character name',
@@ -335,6 +368,7 @@ talents.push({
 
 talents.push({
   title: 'Template Stacking II',
+  image: 'https://i.ibb.co/G9D4476/Template-Stacking-II.jpg',
   cost: 20,
   special: 'Must be repurchased for each use.',
   complex: 'target',
@@ -348,6 +382,7 @@ talents.push({
 
 talents.push({
   title: 'Advanced Template Stacking (Arcane)',
+  image: 'https://i.ibb.co/Htm5DvK/Advanced-Template-Stacking-Arcane.jpg',
   cost: 100,
   complex: 'target',
   whitelist: ['Science Talent', 'Soul Talent'],
@@ -358,6 +393,7 @@ talents.push({
 
 talents.push({
   title: 'Advanced Template Stacking (Enlightened)',
+  image: 'https://i.ibb.co/gdHJ4n1/Advanced-Template-Stacking-Enlightened.jpg',
   cost: 100,
   complex: 'target',
   whitelist: ['Psychic Talent', 'Body Talent', 'Martial Talent', 'Soul Talent'],
@@ -369,6 +405,7 @@ talents.push({
 
 talents.push({
   title: 'Advanced Template Stacking (Green)',
+  image: 'https://i.ibb.co/x5ykynX/Advanced-Template-Stacking-Green.jpg',
   cost: 100,
   complex: 'target',
   whitelist: ['Wild Talent', 'Soul Talent'],
@@ -394,6 +431,7 @@ export const defenses: PerkFull[] = []
 defenses.push({
   title: 'Body Defense',
   special: '<Individual> is known for handling disease, chemical medicine, or poisons.',
+  image: 'https://i.ibb.co/kgWFFz9/Body-Defense.jpg',
   cost: 5,
   whitelist: ['Body Talent'],
   desc: `
@@ -405,6 +443,7 @@ defenses.push({
 defenses.push({
   title: 'Wild Defense',
   special: '<Individual> hails from a harsh climate.',
+  image: 'https://i.ibb.co/8BZQpfP/Wild-Defense.jpg',
   cost: 5,
   desc: 'You are equally comfortable on a glacier as you are in a sandy desert, steamy jungle, irradiated wasteland, or temperate floodplain. Combined with Body Defense, you are never at risk of suffocation in a gaseous atmosphere. You can dive far deeper than any human, provided you bring an air supply with you. At the base level, survival will not necessarily be pleasant. Non-fatal/crippling injuries (burns, crush or decompression injuries) are a real possibility.',
 })
@@ -412,6 +451,7 @@ defenses.push({
 defenses.push({
   title: 'Environmental Defense',
   special: '<Individual> can ignore hazardous environments.',
+  image: 'https://i.ibb.co/wykYVms/Environmental-Defense.jpg',
   cost: 25,
   whitelist: ['Wild Defense'],
   desc: 'Wild Defense’s protections now apply to true extremes. allowing you to enter the oceanic abyss or hard vacuum, or even go sun-diving and live. This also protects against purposeless, degenerative, relatively mundane mutations. This perk does not protect against injuries.',
@@ -420,6 +460,7 @@ defenses.push({
 defenses.push({
   title: 'Creature Defense',
   special: '<Individual> is known as a monster-tamer or otherwise being good with animals.',
+  image: 'https://i.ibb.co/vxSvX6v/Creature-Defense.jpg',
   cost: 10,
   desc: 'Non-sapient living things - beasts, flora, or fungi - will not attack you without provocation, i.e. coming too close to it, its family, its food, or its territory, or appearing too threatening, such by making sudden moves or loud noises. Wildlife will always attempt to obviously scare you off before attacking, including through speech (for creatures capable of it). Extremely hungry wildlife may still approach or stalk you to size you up, but will not ambush you, and you can scare them off with some effort.',
 })
@@ -427,6 +468,7 @@ defenses.push({
 defenses.push({
   title: 'Stress Defense',
   special: '<Individual> is known for keeping a cool head or having great willpower.',
+  image: 'https://i.ibb.co/h2D0FDK/Stress-Defense.jpg',
   cost: 5,
   desc: 'Get that dirt off your shoulder. You can act calmly under pressure and are protected from degenerative mental effects.',
 })
@@ -434,6 +476,7 @@ defenses.push({
 defenses.push({
   title: 'Addiction Defense',
   special: '<Individual> known for having a material vice.',
+  image: 'https://i.ibb.co/Tm9kg7P/Addiction-Defense.jpg',
   cost: 10,
   whitelist: ['Stress Defense'],
   desc: '“The key word in that sentence is functional!” You can indulge in the joys of life without risking any sort of physiological or psychological dependence. At the resistance level, you will still experience cravings and withdrawal, but in a relatively mild form that you can push through with a bit of effort. This Defense also protects you from the relevant effects of your own lures, notably Faerie Feast and the Tantric Talent form of Sticky Fingers.',
@@ -442,6 +485,7 @@ defenses.push({
 defenses.push({
   title: 'Mind Defense',
   special: '<Individual> is known as a psychic or mind-manipulator.',
+  image: 'https://i.ibb.co/KXZzvSK/Mind-Defense.jpg',
   cost: 25,
   desc: 'You are protected from all mind control effects from outside of your retinue and unwanted attempts from within. Attempts to influence you will be weaker and you have an easier time noticing them and fighting them off. At least part of your mind will always remain beyond any control, leaving you free to fight your controller from within - creatively reinterpreting orders, temporarily suppressing or weakening their influence, leaving part or all of your body locked in indecisive spasms, or even throwing off their control entirely if what they\'re trying to make you do goes too far against your true self. Successful mind control within your retinue will require your consent, not the victim’s. Friendly psychics may still contact you or your retinue through telepathy.',
 })
@@ -449,6 +493,7 @@ defenses.push({
 defenses.push({
   title: 'Possession Defense',
   special: '<Individual> is known for bodyjacking others.',
+  image: 'https://i.ibb.co/VwrGtdg/Possession-Defense.jpg',
   cost: 10,
   whitelist: ['Body Defense', 'Mind Defense'],
   needed: 1,
@@ -458,6 +503,7 @@ defenses.push({
 defenses.push({
   title: 'Soul Defense',
   special: '<Individual> can drain or feed on life, mana, or souls.',
+  image: 'https://i.ibb.co/Gxn3ycq/Soul-Defense.jpg',
   cost: 25,
   desc: 'You are the master of your soul. You are protected from all vitality-, mana-, and soul-draining effects. At the resistance level, attempts to feed on you will have diminishing returns, leaving your attacker unable to drain you completely. Waifus who feed on souls or lifeforce can get all the nutrition they need from you or your other waifus without causing harm, even from side effects such as loss of fluids. This protects you and your retinue from third parties, but not vice versa. This perk does not reduce the energy use from your own efforts in any way - you want Inexhaustible for that.',
 })
@@ -465,6 +511,7 @@ defenses.push({
 defenses.push({
   title: 'Fatality Defense',
   special: '<Individual> is known for inflicting instant death or not dying even when killed.',
+  image: 'https://i.ibb.co/GQ93VPz/Fatality-Defense.jpg',
   cost: 50,
   whitelist: ['Everlasting Talent'],
   desc: 'Conceptual instant death and other soul-destroying effects may hurt and weaken you, but never kill you. Alternatively, you will be able to cling to life as a disembodied shade until your retinue can produce a replacement body for you to inhabit, or you simply force yourself to resurrect after some time.',
@@ -473,6 +520,7 @@ defenses.push({
 defenses.push({
   title: 'Polymorph Defense',
   special: '<Individual> is known for polymorphing others.',
+  image: 'https://i.ibb.co/0ZXMSn3/Polymorph-Defense.jpg',
   cost: 50,
   whitelist: ['Body Defense', 'Wyldscape Defense', 'Corruption Defense'],
   needed: 1,
@@ -484,6 +532,7 @@ defenses.push({
 defenses.push({
   title: 'Wyldscape Defense',
   special: '<Individual> hails from a region where the local reality is unstable.',
+  image: 'https://i.ibb.co/Fnn0LGN/Wyldscape-Defense.jpg',
   cost: 50,
   whitelist: ['Environmental Defense', 'Polymorph Defense', 'Corruption Defense'],
   needed: 1,
@@ -495,6 +544,7 @@ defenses.push({
 defenses.push({
   title: 'Corruption Defense',
   special: '<Individual> is known for forcibly bringing out others’ dark sides.',
+  image: 'https://i.ibb.co/kGF8tHp/Corruption-Defense.jpg',
   cost: 50,
   whitelist: ['Soul Defense', 'Polymorph Defense', 'Wyldscape Defense'],
   needed: 1,
@@ -504,6 +554,7 @@ defenses.push({
 defenses.push({
   title: 'Information Defense',
   special: '<Individual> is known for their ability to read or sense people.',
+  image: 'https://i.ibb.co/pyMQQ2h/Information-Defense.jpg',
   cost: 25,
   desc: 'Scouters can’t read your power level. Information about you, from mind-reading, super-analysis, or metaphysical senses will tend to be unclear, incomplete, misleading or even flat-out wrong, or similarly unreliable - the more important any secret of yours is, or the more dangerous to you, the more difficult it will be to perceive, much less perceive accurately. This applies to both attempts from outside of your retinue and unwanted attempts from within, but not Conjunction. You may still allow friendly or neutral third parties to use such abilities on you.',
 })
@@ -511,6 +562,7 @@ defenses.push({
 defenses.push({
   title: 'Trace Defense',
   special: '<Individual> is known for using divination or other non-technological remote viewing.',
+  image: 'https://i.ibb.co/QnTvtNz/Trace-Defense.jpg',
   cost: 50,
   desc: 'You are the master of your trail. Hostile and neutral remote viewing attempts: precognition, postcognition, scrying, dream visitation, etc. will have a harder time perceiving you. The same forms of resistance from Information Defense can manifest with this perk as well. At the immunity level, supernatural observers might only see a world where you don’t exist. This does not apply to direct naked-eye observation, other forms of mundane (technological) surveillance and analysis, or Dragon Aura’s pull on higher-tier waifus.',
 })
@@ -518,6 +570,7 @@ defenses.push({
 defenses.push({
   title: 'Destiny Defense',
   special: '<Individual> is known as a fate- or luck-manipulator.',
+  image: 'https://i.ibb.co/JpqTDcM/Destiny-Defense.jpg',
   cost: 50,
   desc: `
 <p>You are the master of your fate. Attempts to change your fate or luck will be more difficult, less reliable, and weaker than they would normally be - increasingly so the more directly they target you instead of just your surroundings, the more improbable they are, and the more precision they require. Changes that do go through will be more easy to reverse than they would be otherwise.</p>
@@ -527,6 +580,7 @@ defenses.push({
 defenses.push({
   title: 'Paradox Defense',
   special: '<Individual> is known as a time-manipulator.',
+  image: 'https://i.ibb.co/ncTQVT7/Paradox-Defense.jpg',
   cost: 50,
   desc: `
 <p>You are the master of your timeline. Temporal slowdowns will have increasingly weaker effects on you the stronger they are - a weak slowing effect will be even weaker, but a stronger one and even a total time-stop will not leave you completely unable to react. You will retain memories of previous timelines, loops, or other resets, even if they are faded or incomplete, and any attempts to spy on or change your timeline will have the same problems mentioned under Information, Trace, and Destiny Defenses. Attempts to erase you entirely will merely leave you weakened, faded, or flickering into and out of existence randomly.</p>
@@ -539,12 +593,14 @@ export const perks: PerkFull[] = []
 
 perks.push({
   title: 'Temporal Calibration',
+  image: 'https://i.ibb.co/BCBHDkS/Temporal-Calibration.jpg',
   cost: 5,
   desc: 'Entering a new world, only to learn that the capture targets are out of your strike zone, can be… inconvenient. With this perk, the ages of any canon characters can be freely adjusted. Any events of canon that would be affected by the altered ages are adjusted as little as possible to keep the same general flow of events, keeping the scenario recognizable even though the participants are possibly decades older or younger. Changes created using this perk, or any perks that have this as a prerequisite, cannot fundamentally shift a setting’s danger rating.​',
 })
 
 perks.push({
   title: 'Universal Calibration',
+  image: 'https://i.ibb.co/B2Z3rv4/Universal-Calibration.jpg',
   cost: 20,
   whitelist: ['Temporal Calibration'],
   desc: `
@@ -555,12 +611,14 @@ perks.push({
 
 perks.push({
   title: 'Sexual Calibration',
+  image: 'https://i.ibb.co/K7gQYm0/Sexual-Calibration.jpg',
   cost: 2,
   desc: 'The little inconveniences that can make sex less fun no longer apply to you. Your partners will always be as clean as needed and smell just as you like. If you have a refractory period, it is removed. Any unintentional or incidental damage that your sexual sessions might cause simply doesn’t take place. This includes unwanted pregnancy and any complications of pregnancy; note that this perk cannot guarantee a desired pregnancy. Exhaustion will not be an issue for any participant in your sexual sessions until at least you are satisfied. You can extend all of this to your partners as well.',
 })
 
 perks.push({
   title: 'Fertility Calibration I',
+  image: 'https://i.ibb.co/G2WTbBZ/Fertility-Calibration-I.jpg',
   cost: 2,
   whitelist: ['Sexual Calibration'],
   desc: 'You now have total control over the chances of pregnancy in any sexual encounter involving you or a member of your harem, even overriding any fertility control your waifus may employ. This perk does not alter the chance of multiple fetuses relative to the chance of just one.',
@@ -568,6 +626,7 @@ perks.push({
 
 perks.push({
   title: 'Fertility Calibration II',
+  image: 'https://i.ibb.co/yPWN4MX/Fertility-Calibration-II.jpg',
   cost: 6,
   multiple: true,
   max: 6,
@@ -579,6 +638,7 @@ perks.push({
 
 perks.push({
   title: 'Mapper',
+  image: 'https://i.ibb.co/F8wy1xx/Mapper.jpg',
   cost: 10,
   desc: `
 <p>This app offers maps of the current world you’re on, with points of interest annotated. No information that could not be discovered by casually asking around is listed, so while a public facing organization like a merchant's guild will be annotated, the local thieves' guild will not. This map will update itself if you discover a point of interest that would normally be left off of the map. You are also able to search for points of interest. Tapping on a point of interest (or the equivalent for your smart device) will bring up a short description of it. You can add any number of your own annotations to the descriptions. Descriptions will update in real time if there are significant changes, such as a store closing.,</p>
@@ -587,6 +647,7 @@ perks.push({
 
 perks.push({
   title: 'Target Tracker',
+  image: 'https://i.ibb.co/2jSnGdg/Target-Tracker.jpg',
   cost: 10,
   whitelist: ['Mapper'],
   desc: 'This app adds the ability to track any mobile target you take a picture of, whether it’s a person, a vehicle, or anything else capable of moving under its own power, appearing as a stylized but recognizable icon of the tracked target. Basic status information will also be displayed if you tap on the icon. You can hide specific icons and cancel tracking of a target at any time. You will need to take a new picture of a target once you cancel tracking if you want to resume. “Missing” familiars of retinue members you’ve captured, who didn’t have their familiars yet when you did so, will automatically be entered into this tracker.',
@@ -594,6 +655,7 @@ perks.push({
 
 perks.push({
   title: 'Bounty Tracker',
+  image: 'https://i.ibb.co/41KHd9r/Bounty-Tracker.jpg',
   cost: 50,
   whitelist: ['Target Tracker'],
   desc: 'This app integrates the catalog bounties with the map. Any bounty targets listed in the catalog for the current world can be added as tracked targets. Additionally, for any captures that you acquired “early,” the familiars and standard equipment that they would have if you had purchased them will automatically appear in this app, with different markers than the ones used for new bounties.',
@@ -603,12 +665,14 @@ perks.push({
 
 perks.push({
   title: 'Exit Stage Left',
+  image: 'https://i.ibb.co/1rgFZ61/Exit-Stage-Left.jpg',
   cost: 5,
   desc: 'The company app in your smart device has a new feature. Its main display is simply a progress bar that measures everything you do in your current location, whether that’s capturing local waifus, defeating baddies, or otherwise accomplishing story goals. Once the bar is full, a button on the screen will light up that opens a portal to a randomized new world within one danger level of your current one. (If you have Pocket Apartment or We Will Meet Again, the randomizer will choose based on your most recent new world.) These portals are one-way only, and will last no more than two minutes or until you and all of your waifus have passed through, whichever is shorter.  If any of your waifus stay behind, this perk will not help you retrieve them. If your destination world has a lower danger rating than your current one, a second “penalty” bar will appear above the regular progress bar. It must be filled before the regular progress bar will start to move. The larger the gap between the two ratings, the more work you’ll need to do in the new world.',
 })
 
 perks.push({
   title: 'We Will Meet Again',
+  image: 'https://i.ibb.co/DD836zP/We-Will-Meet-Again.jpg',
   cost: 15,
   whitelist: ['Exit Stage Left'],
   desc: 'You may freely return to previously-visited worlds using the Exit Stage Left app. All worlds you’ve visited since the start of your journey, including your Pocket Apartment if you have one, will be listed with their danger ratings. (Pocket Apartment does not have a danger rating.) You can sort the list alphabetically, by danger, or by your first or most recent visits. Your return portal will always be within 2 km of its last location, at the least dangerous point in that radius. If you have not purchased Pursued by a Bear, Exit Stage Left’s basic functionality will now display the next world’s danger rating. Time is assumed to pass at the same rate in every world you visit, including your Pocket Apartment, unless you explicitly use magical, technological, or other means of time travel or dilation.',
@@ -616,6 +680,7 @@ perks.push({
 
 perks.push({
   title: 'Pursued by a Bear',
+  image: 'https://i.ibb.co/jTRQG0k/Pursued-By-ABear.jpg',
   cost: 10,
   whitelist: ['Exit Stage Left'],
   desc: 'The Exit Stage Left app now allows you to select your next world. It will offer three worlds to choose from, with their danger ratings clearly displayed. Available danger ratings range from one lower than your most recent new world to four higher. The two you do not choose each time will return for the next selection. If a world goes for three selections without being picked, it will stop appearing for a time, until the randomizer offers it again.',
@@ -623,6 +688,7 @@ perks.push({
 
 perks.push({
   title: 'The Bigger Fish',
+  image: 'https://i.ibb.co/brRnwYD/The-Bigger-Fish.jpg',
   cost: 30,
   whitelist: ['Pursued by a Bear'],
   desc: 'The Exit Stage Left app now offers seven worlds instead of just three. Destination worlds can now be of any danger rating.',
@@ -632,6 +698,7 @@ perks.push({
 
 perks.push({
   title: 'Memoria',
+  image: 'https://i.ibb.co/TYv7sc9/Memoria.jpg',
   cost: 5,
   whitelist: ['Possess'],
   special: 'Chargen only',
@@ -641,12 +708,14 @@ perks.push({
 
 perks.push({
   title: 'Psychic Paper',
+  image: 'https://i.ibb.co/VStW4pq/Psychic-Paper.jpg',
   cost: 5,
   desc: 'Exactly like in Doctor Who, this blank white card shows the reader whatever you want them to see. In most practical cases, this will likely be a form of local identification, but that\'s far from the only use. Psychic paper will not work on geniuses or people with feeble imaginations. People with basic psychic training are also immune; powerful psychics can reflect its effect back on the user. Illiterate people can still read psychic paper, provided their civilization has invented writing.',
 })
 
 perks.push({
   title: 'Heavenbuilt Proto',
+  image: 'https://i.ibb.co/28vbybD/Heavenbuilt-Proto.jpg',
   cost: 11111,
   desc: `
 <p>Run the Built in the <a href="https://imgur.com/gallery/dUkFmZF" target="_blank" rel="noopener noreferrer" class="text-red-500 hover:underline">Heavens CYOA</a>, (<a href="https://built-in-the-heavens.neocities.org/"  target="_blank" rel="noopener noreferrer" class="text-red-500 hover:underline">interactive version</a>), ignoring the origins choice and all personal perks. The only allowed complications are the ones that grant followers. These followers will count as their original inspirations: Broken Toy (YorHa A2), Jewelled Collar (Starfire and Blackfire), All According to Plan (Taldeer), Yan Yan Dere Dere (Monika), Forgotten and Lost (Dragon from Worm, in the body of Cibo from Blame!), From Heights Brought Low (Shub-Niggurath), or A Loyal Vizier (Caster Tamamo-no-Mae). These followers cannot be refunded for credits, so you should only take the ones you want. Otherwise, follow its rules as written. You will start aboard your ship, in the same star system as your starting world, unless you also purchased Life’s A Beach. Your ship's AI counts as a purchased waifu of Tier 6. Alternatively, you may plug one of your purchased or captured waifus into your ship to make her a pseudo-AI or shipgirl and take a 50-credit toward future purchases, you monster. All characters with alternate outfits, shown in any official source, will find them stored in their room or closet.,</p>
@@ -655,12 +724,14 @@ perks.push({
 
 perks.push({
   title: 'Piece of Silver',
+  image: 'https://i.ibb.co/QjWz9fg/Piece-Of-Silver.jpg',
   cost: 11111,
   desc: 'Whoever warned you not to pick up loose change was right. You are now partnered with a Denarian fallen angel from the Dresden Files, either Lasciel (“Lash”) or an OC of your (author’s) design. If you have No Bindings or the Stamp, she will be bound to her coin, able to assume a physical form within a 10 meter radius of her coin or you but not able to touch her coin herself: if it moves, so must she. If you have Hotel California and no higher bindings, she will be tied to the building, able to move anywhere inside. If you have a higher binding, that will replace her coin and remove her physical leash completely. Your other purchased and captured waifus can see, hear, feel, etc. the Denarian at all times.',
 })
 
 perks.push({
   title: 'Warranty Plan',
+  image: 'https://i.ibb.co/Mp0vpwj/Warranty-Plan.jpg',
   cost: 200,
   additionalDesc: `
   For the purpose of this perk, an "amazon" is:
@@ -691,6 +762,7 @@ export const genericPerks: PerkFull[] = []
 
 genericPerks.push({
   title: 'Yoink',
+  image: 'https://i.ibb.co/PTSQp4F/Yoink.jpg',
   cost: 1,
   whitelist: ['Directly in Companions'],
   special: 'Use directly in companions. Cost 20% more. Chargen only. Not available in Gauntlet PvP.',
@@ -699,6 +771,7 @@ genericPerks.push({
 
 genericPerks.push({
   title: 'Slightly Used',
+  image: 'https://i.ibb.co/k5XPSRL/Slightly-Used.jpg',
   cost: 1,
   special: 'Use directly in companions. Non T11',
   whitelist: ['Directly in Companions'],
@@ -710,6 +783,7 @@ genericPerks.push({
 
 genericPerks.push({
   title: 'Canvas',
+  image: 'https://i.ibb.co/Xjpv07P/Canvas.jpg',
   cost: 1,
   requires: 'any higher Binding- type control',
   multiple: true,
@@ -722,12 +796,14 @@ genericPerks.push({
   title: 'Adoption',
   anything: 'Kid Name',
   complex: 'flavor',
+  image: 'https://i.ibb.co/P1SQhMn/Adoption.jpg',
   cost: 1,
   desc: 'You may find yourself adopting a kid - and not just because you killed one parent and captured the other into your retinue. Under normal circumstances, that kid will forever be your familiar, never equal to your true-blooded offspring. This perk will tell our systems to treat them as your descendants and follow the relevant Offspring rules instead.',
 })
 
 genericPerks.push({
   title: 'Paper Trail',
+  image: 'https://i.ibb.co/9WQ47rf/Paper-Trail.jpg',
   cost: 1,
   target: 'Any',
   complex: 'target',
@@ -742,6 +818,7 @@ genericPerks.push({
   special: 'Requires at least one first - party Azur Lane shipgirl.',
   complex: 'target',
   requires: '(Any Azur Lane collaboration shipgirl)',
+  image: 'https://i.ibb.co/6y1sh85/Third-Party-Riggings.jpg',
   cost: 20,
   desc: `Dead or Alive, Neptunia, Utawarerumono, Hololive, and others have all had guest appearances on the high seas. This perk grants these characters their shipgirl riggings, allowing them to play by those rules instead and making them eligible for Bifurcation and Space Shipgirl below. If a collaboration shipgirl’s tier after step 1a is less than the following, it will be raised to that value.
 <ul class="list-disc list-inside">
@@ -756,6 +833,7 @@ genericPerks.push({
   title: 'Retrofit',
   requires: '(Any eligible Azur Lane shipgirl)',
   complex: 'target',
+  image: 'https://i.ibb.co/H26yFLZ/Retrofit.jpg',
   cost: 0,
   costVariants: [0, 10, 30, 50],
   special: '0(T4 → T4, T5 → T5, T6 → T6), 10(T4 → T5), 30(T5 → T6), or 50(T6 → T7)',
@@ -771,6 +849,7 @@ genericPerks.push({
   title: 'Bifurcation',
   requires: '(Any Azur Lane Shipgirl)',
   complex: 'target',
+  image: 'https://i.ibb.co/zQWtns3/Bifurcation.jpg',
   cost: 15,
   desc: `
 <p>Your chosen Shipgirl’s Wisdom Cube receives a slight boost to its power, allowing her to manifest her rigging and full ship forms simultaneously. This lets her enter the fray personally while still allowing usage of her ship for transport, defense, support, etc., opening up many new tactical options.</p>
@@ -782,6 +861,7 @@ genericPerks.push({
   title: 'Space Shipgirl',
   requires: '(Any Azur Lane shipgirl)',
   complex: 'target',
+  image: 'https://i.ibb.co/zQ0GNfb/Space-Shipgirl.jpg',
   cost: 30,
   desc: `
 <p>Just as a group of humans once revived the mighty battleship Yamato as a spaceship in order to save humanity, so do the shipgirls under your command gain the ability to traverse the final frontier. The chosen shipgirl’s full-size hull is refurbished to be completely spaceworthy: the insides of the hull are sealed against the vacuum of space, all their armaments are perfectly capable of functioning in space, and even planes from carriers can fly just as well in the vacuum of space as they do in air. If you don’t want a naval-ships-in-space aesthetic, shipgirl hulls are also available in space counterpart culture varieties. For example, Star Trek’s Federation designs are suitable for Eagle Union and Royal Navy, while the Klingon look is appropriate for Sakura Empire and Romulans for Dragon Empery. Further upgrades may be installed if you have another source of space-era technology.</p>
@@ -793,6 +873,7 @@ genericPerks.push({
   title: 'I\'m on a Boat',
   requires: '(Any Kantai Collection Shipgirl)',
   complex: 'target',
+  image: 'https://i.ibb.co/ssVPcG3/Im-On-ABoat.jpg',
   cost: 10,
   desc: `
 <p>Your chosen Shipgirl may now summon her full ship form under her instead of just manifesting her rigging. This lets her carry other members of your retinue around and lets her fairy crew take on human size and be interacted with. Understanding their speech, of course, requires Communication Talent. Additionally, Kancolle Shipgirls with this perk become eligible for Bifurcation and Space Shipgirl.</p>
@@ -804,7 +885,7 @@ genericPerks.push({
   requires: '(Any T1- T3 waifu + any Fire Emblem character rated T6 or below)',
   complex: 'target',
   cost: 50,
-  image: 'https://pbs.twimg.com/media/DuZ3wQ_XgAAu09w.jpg',
+  image: 'https://i.ibb.co/XbXqB6y/Mirage-Master.jpg',
   desc: `
 <p>Your list of Mirage users is no longer limited to canon. If you have a blue-star waifu and any Fire Emblem character rated T6 or below, you may convert the Fire Emblem character into a Mirage who’ll serve as the blue-star waifu’s partner. (Mirages of an unwanted gender may be subject to Rule 63.) The duo now operate on Tokyo Mirage Sessions rules and will, with few exceptions, be stronger than the Fire Emblem waifu on her own.</p>
 <p>Most types of enhancement methods for Mirages, however, must be administered by a Fire Emblem divine dragon rated T7 or higher (e.g. Naga, Nagi, Mila) and will not be available otherwise. Tiki has prior experience with this, from the canon events of Tokyo Mirage Sessions, but the others will have to figure it out as they go. If you have an eligible Mirage administrator, the cost of each application of this perk will be discounted to only 20/pair, with the difference refunded back into your account.</p>
@@ -816,7 +897,7 @@ genericPerks.push({
   requires: '(Any Pokémon trainer)',
   complex: 'target',
   cost: 40,
-  image: 'https://wallpapercave.com/wp/wp6394404.png',
+  image: 'https://i.ibb.co/rdn5hH5/Unison.jpg',
   desc: 'The enhanced spiritual bond between your Trainer waifu and her mons allows her to blend with one of them, take on its physical traits, and operate as one being, raising her tier at step 6 to the higher of her own or the blended mon’s. Any of her mons are eligible for this, but only one at a time. She will also receive her seventh most iconic or strongest mon from her canon appearances, if she has one, so she can have a full party of six alongside the one she’s blended with.',
 })
 
@@ -824,6 +905,7 @@ genericPerks.push({
   title: 'Galactic Presence',
   requires: '(Any Warhammer Fantasy deity)',
   complex: 'target',
+  image: 'https://i.ibb.co/wJPQ4wt/Galactic-Presence.jpg',
   cost: 50,
   desc: 'Malleus and the year 40,000 are both Warhammer, but operate on vastly different scales. This perk pulls one of the Fantasy goddesses up to the same level as her galactic counterpart. It must be purchased separately for each one you have.',
 })
@@ -833,6 +915,7 @@ genericPerks.push({
   requires: '(Any female RWBY character of T6 or below)',
   complex: 'target_c',
   multiple: true,
+  image: 'https://i.ibb.co/1QhZdpg/Four-Seasons.jpg',
   cost: 20,
   desc: 'Maidenhood is special on Remnant, but not particularly so. Anyone can become one under the right circumstances. By default, this perk may be purchased up to four times, once for each temperate season (Spring, Summer, Fall, Winter). Purchasing this twice for the same character will elevate her to T6, if she isn’t already, and four times to T7. Additional sets of Maiden mantles become available with each member of your retinue, including yourself, whose effective tier after step five is at least T8: one for each T8, two for each T9, five for each T10, and ten for each T11. If one of your waifus is already a Maiden when you capture her, that counts against your total, unless you take a refund for this perk. If this puts you over your cap for a particular mantle, you may not buy any more of that mantle until you’ve raised the cap further.',
 })
@@ -842,6 +925,7 @@ genericPerks.push({
   requires: '(Any Puella Magi)',
   complex: 'target',
   costVariants: [0, 20],
+  image: 'https://i.ibb.co/CK7zwYY/Salvation.jpg',
   cost: 0,
   desc: `
 <p>When your waifu's soul gem darkens completely, she may choose to manifest her Doppel: a materialization of her witch-self which may take the form of an discrete projection, an extension of her body, or even a partial physical transformation, depending upon the details of her relationship to her witch-self and what it represents. An activated Doppel is extremely powerful in its own right, but draws upon the darkness in its master's soul gem to manifest, quickly and completely purifying its master's gem until she can no longer support it - leaving her Doppel as a briefly activated trump card or a simple magic recharge mechanic unless it's somehow further refined. If you have Inexhaustible, any meguca in your retinue, whom this perk has been applied to, will only benefit from this perk.</p>

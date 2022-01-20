@@ -6,7 +6,7 @@
     <Header />
     <div class="flex w-full min-h-0 justify-center">
       <SideMenu :class="showSideMenu ? 'max-w-0 sm:max-w-9' : 'max-w-[150px] border-r-2'" />
-      <router-view class="min-h-0 mt-6 sm:mt-8 w-full" :class="showSideMenu ? 'sm:pl-10' : 'sm:pl-36'" />
+      <router-view class="min-h-0 mt-6 sm:mt-8 w-full flex flex-col items-center" :class="showSideMenu ? 'sm:pl-10' : 'sm:pl-36'" />
     </div>
     <SideApps />
     <Footer />

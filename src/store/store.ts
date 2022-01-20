@@ -1,4 +1,3 @@
-import { start } from 'repl'
 import { findIndex } from 'lodash-es'
 import { useChallenges } from './challenges'
 import { usePlayStore } from './play'
@@ -298,6 +297,15 @@ const favorites = useStorage<string[]>('favorites', [])
 
 const totalActive = useStorage('ta', 0)
 
+const settings = useStorage('settings', {
+  allChosenAuthors: [] as string[],
+  nsfw: false,
+  perkImages: true,
+  columns: 'auto' as number | 'auto',
+})
+
+export const appName = ref('')
+
 export function useStore() {
   return {
     budget,
@@ -364,5 +372,7 @@ export function useStore() {
     talentsDiscount,
     defensesDiscount,
     defenseRetinueDiscount,
+    settings,
+    appName,
   }
 }

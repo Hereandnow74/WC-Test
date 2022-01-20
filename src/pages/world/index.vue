@@ -1,6 +1,6 @@
 
 <template>
-  <div class="p-2">
+  <div class="p-2 !block">
     <div class="max-w-4xl md:p-2 mx-auto flex gap-2 flex-wrap md:flex-nowrap">
       <div class="flex items-center flex-grow">
         <Input

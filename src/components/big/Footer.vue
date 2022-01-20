@@ -43,8 +43,10 @@
             {{ tab }}
           </div>
         </div>
-        <transition name="slide" mode="out-in">
-          <component :is="tabComponents[activeTab]" v-if="visible" />
+        <transition v-if="visible" name="slide" mode="out-in">
+          <keep-alive>
+            <component :is="tabComponents[activeTab]" />
+          </keep-alive>
         </transition>
       </div>
       <div class="flex h-8 justify-between items-center px-6 mt-auto">

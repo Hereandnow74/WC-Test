@@ -1,5 +1,6 @@
 export interface Ride {
   title: string
+  image?: string
   cost: number
   desc?: string
   source?: string
@@ -26,6 +27,7 @@ rides.push({
   category: 'Land',
   size: 'Small',
   source: 'Real Life',
+  image: 'https://i.ibb.co/ykxZHwv/Your-Own-Car-From-Home.jpg',
   cost: 1,
   desc: 'Has everything you would normally have in your car.',
 })
@@ -35,6 +37,7 @@ rides.push({
   source: 'Herbie',
   category: 'Land',
   size: 'Small',
+  image: 'https://i.ibb.co/jvwdtcw/Herbie.jpg',
   cost: 5,
   desc: 'Turbo Booster, Free Bro Herbie',
 })
@@ -44,6 +47,7 @@ rides.push({
   source: 'Final Fantasy XV',
   category: 'Land',
   size: 'Small',
+  image: 'https://i.ibb.co/b5fB4CM/Regalia.jpg',
   cost: 5,
   desc: 'Car from Final Fantasy XV',
   addons: [['Type-D upgrade (off-road) (+5)', 5], ['Type-F upgrade (flight capability, unlimited fuel) (+10)', 10]],
@@ -54,6 +58,7 @@ rides.push({
   source: 'Pui Pui Molcar',
   category: 'Land',
   size: 'Small',
+  image: 'https://i.ibb.co/sC2QMMr/Molcar.jpg',
   cost: 5,
   desc: 'half-vehicle half-guinea pig hybrid, very cute',
 })
@@ -63,6 +68,7 @@ rides.push({
   source: 'Akira',
   category: 'Land',
   size: 'Small',
+  image: 'https://i.ibb.co/wWLfTdb/Kaneda.jpg',
   cost: 5,
   desc: 'A cherry red beast of a motorcycle made famous from the Anime and Manga Akira. 200 Horsepower engine, electronic anti-lock brakes, and a fancy instrument panel including a built-in computer screen.',
 })
@@ -72,8 +78,9 @@ rides.push({
 rides.push({
   title: 'Nautilus (1865)',
   source: '20,000 Leagues Under the Sea',
-  category: 'Amphibious',
+  category: 'Sea',
   size: 'Medium',
+  image: 'https://i.ibb.co/mzj6gL4/Nautilus.jpg',
   cost: 20,
   desc: '1865 Sci-Fi Electric Submarine',
 })
@@ -81,8 +88,9 @@ rides.push({
 rides.push({
   title: 'Tuatha de Danaan',
   source: 'Full Metal Panic',
-  category: 'Amphibious',
+  category: 'Sea',
   size: 'Medium',
+  image: 'https://i.ibb.co/2q9g4ZJ/Tuatha-De-Danaan.jpg',
   cost: 40,
   desc: 'Submarine-capable assault carrier. Holds 5x M9E Gernsback and 1x ARX-7 Arbalest mecha, 4x FAV-8 Super Harriers, 4x RAH-66 Comanche attack helicopters, and 6x MH-67 Pave Mare transport helicopters.',
   addons: [['Upgrade ARX-7 to ARX-8 Laevatein (+10)', 10]],
@@ -91,8 +99,9 @@ rides.push({
 rides.push({
   title: 'Gargantia Fleet',
   source: 'Gargantia on the Verdurous Planet',
-  category: 'Amphibious',
+  category: 'Sea',
   size: 'Medium',
+  image: 'https://i.ibb.co/Hhj1NCN/Gargantia-Fleet.jpg',
   cost: 50,
   desc: 'Detachable Sub-ships, Orbital Mass Driver, Limited Manufacturing',
   addons: [['Patrol Fleet (+10)', 10]],
@@ -101,8 +110,9 @@ rides.push({
 rides.push({
   title: 'Nautilus',
   source: 'League of Extraordinary Gentlemen(Movie)',
-  category: 'Amphibious',
+  category: 'Sea',
   size: 'Medium',
+  image: 'https://i.ibb.co/2KNq6vH/Nautilus-Movie.jpg',
   cost: 50,
   whitelist: ['Science Talent'],
   desc: 'Missiles; Torpedos; Miniature Submarines',
@@ -112,8 +122,9 @@ rides.push({
 rides.push({
   title: 'Ulysses',
   source: 'Atlantis: The Lost Empire',
-  category: 'Amphibious',
+  category: 'Sea',
   size: 'Medium',
+  image: 'https://i.ibb.co/c2Qtgzj/Ulysses.jpg',
   cost: 50,
   desc: 'Sub-Pods, Cannon Turrets, Torpedos',
 })
@@ -125,6 +136,7 @@ rides.push({
   source: 'Speed Racer',
   category: 'Amphibious',
   size: 'Small',
+  image: 'https://i.ibb.co/0KQdDvt/Mach5.jpg',
   cost: 15,
   desc: 'Auto-Jacks, Belt Tires, Cutter Blades, Deflector, Evening Eye, Frogger Mode, Gizmo (Robotic Homing Pigeon)',
   variants: [['Mach 6 (20)', 5]],
@@ -135,6 +147,7 @@ rides.push({
   source: 'Knight Rider',
   category: 'Amphibious',
   size: 'Small',
+  image: 'https://i.ibb.co/wLJb2Zw/KITT.jpg',
   cost: 20,
   desc: 'Minimal Weaponry, Turbo Booster, crime lab, Free Bro KITT',
 })
@@ -144,6 +157,7 @@ rides.push({
   source: 'Command & Conquer',
   category: 'Amphibious',
   size: 'Medium',
+  image: 'https://i.ibb.co/94fY7cB/MCV.jpg',
   cost: 50,
   desc: 'Red Alert 1 Database, Manufacturing',
   addons: [['RA2 Database (+10)', 10], ['RA3 Database (+20)', 20], ['TW1 Database (+10)', 10], ['TW2 Database (+20)', 20], ['TW3 Database (+50)', 50], ['TW4 Database (+100)', 100], ['C&C Generals Database (+10)', 10]],
@@ -155,6 +169,7 @@ rides.push({
   source: 'Xenoblade Chronicles 1',
   category: 'Amphibious',
   size: 'Large',
+  image: 'https://i.ibb.co/wSQyrGT/Mechonis.jpg',
   cost: 800,
   requires: 'Fiora w/ Waifu Perk Machina or Meyneth',
   desc: 'Mechon life-forms, Monado. Either version of Meyneth may build a new Mechonis on her own even without this purchase, provided she has sufficient time and resources.',
@@ -165,6 +180,7 @@ rides.push({
   source: 'Supreme Commander',
   category: 'Amphibious',
   size: 'Large',
+  image: 'https://i.ibb.co/gvJFtmK/Armored-Command-Unit.jpg',
   cost: 1000,
   desc: 'Aeon or UEF or Cybran Database (pick one), Extreme Manufacturing, Quantum Gate, Infinite Resources',
   addons: [['2nd human faction’s database (+200)', 200], ['Seraphim Database (+500)', 500]],
@@ -177,6 +193,7 @@ rides.push({
   source: 'Final Fantasy X',
   category: 'Sky',
   size: 'Medium',
+  image: 'https://i.ibb.co/6ncdTTv/Fahrenheit.jpg',
   cost: 50,
   desc: 'AAM launchers, laser cannons',
   addons: [['Completed restoration - main cannons can fire more than twice without repairs, automated missile production that only requires feedstock (+20)', 20]],
@@ -187,6 +204,7 @@ rides.push({
   source: 'Skies of Arcadia',
   category: 'Sky',
   size: 'Medium',
+  image: 'https://i.ibb.co/m54N0Kh/Delphinus.jpg',
   cost: 75,
   desc: 'Moonstone cannon',
 })
@@ -196,6 +214,7 @@ rides.push({
   source: 'Chrono Trigger',
   category: 'Sky',
   size: 'Medium',
+  image: 'https://i.ibb.co/tP34MMs/Epoch.jpg',
   cost: 100,
   desc: 'time drive, little passenger space',
 })
@@ -205,18 +224,19 @@ rides.push({
   source: 'Warhammer 40k',
   category: 'Sky',
   size: 'Large',
+  image: 'https://i.ibb.co/qdt9bQK/Monolith.jpg',
   cost: 400,
   desc: 'Anti-Gravitic Engines, Necrodermis, Particle Whip, Gauss Flux Arcs (4), Eternity Gate/Portal of Exile. It cannot build new troops, but it can teleport units in through the Gate.',
   variants: [['Doomsday Monolith (500)', 100]],
 })
 
 // Environment: Space
-
 rides.push({
   title: 'Bolo',
   source: 'Bolo',
   category: 'Space',
   size: 'Medium',
+  image: 'https://i.ibb.co/hYTyGSX/Bolo.jpg',
   cost: 100,
   desc: 'HEAVILY Armed, HEAVILY Armored, Landfall-capable',
   addons: [['AI Bro Bolo (+50)', 50]],
@@ -227,6 +247,7 @@ rides.push({
   source: 'Mass Effect',
   category: 'Space',
   size: 'Large',
+  image: 'https://i.ibb.co/1TybF8J/Normandy.jpg',
   cost: 200,
   desc: 'Like Normandy SR-2, have Thanix cannon',
 })
@@ -236,6 +257,7 @@ rides.push({
   source: 'Halo',
   category: 'Space',
   size: 'Large',
+  image: 'https://i.ibb.co/N9xCWDV/UNSCPhoenix-Class.jpg',
   cost: 400,
   desc: 'Like Spirit of Fire have UNSC Database, Manufacturing, Free Waifu Serina or Isabel',
 })
@@ -246,6 +268,7 @@ rides.push({
   source: 'Star Trek: The Original Series',
   category: 'Space',
   size: 'Large',
+  image: 'https://i.ibb.co/ctNSrNN/Starfleet-Constitution-Class.jpg',
   cost: 300,
   desc: 'Federation database and labs, living and diplomatic quarters',
 })
@@ -256,6 +279,7 @@ rides.push({
   source: 'Star Trek: The Next Generation',
   category: 'Space',
   size: 'Large',
+  image: 'https://i.ibb.co/ThmQdPd/Starfleet-Galaxy-Class.jpg',
   cost: 400,
   desc: 'Federation database and labs, living and diplomatic quarters',
 })
@@ -266,6 +290,7 @@ rides.push({
   source: 'Star Trek: The Next Generation movies',
   category: 'Space',
   size: 'Large',
+  image: 'https://i.ibb.co/TH0GQ04/Starfleet-Sovereign-Class.jpg',
   cost: 440,
   desc: 'Federation database and labs, living and diplomatic quarters',
 })
@@ -276,6 +301,7 @@ rides.push({
   source: 'Star Trek',
   category: 'Space',
   size: 'Large',
+  image: 'https://i.ibb.co/MVhkyzG/Starfleet-Odyssey-Class.jpg',
   cost: 500,
   desc: 'Federation database and labs, living and diplomatic quarters',
 })
@@ -286,6 +312,7 @@ rides.push({
   source: 'Stargate SG-1',
   category: 'Space',
   size: 'Large',
+  image: 'https://i.ibb.co/Q8P1dMf/Tauri-BC304.jpg',
   cost: 400,
   desc: 'Asgard hyperdrive (extreme speed), teleporter, and plasma beams, 8 F-302s in each hangar bay',
   addons: [['Asgard computer core (+300)', 300], ['Alternate reality drive (+100)', 100], ['Ancient cloak (+100)', 100], ['Horizon weapons platform (+50)', 50], ['ZPM additional power generation (+100)', 100]],
@@ -297,6 +324,7 @@ rides.push({
   source: 'Starcraft',
   category: 'Space',
   size: 'Large',
+  image: 'https://i.ibb.co/cr6VXvR/Terran-Behemoth-Class.jpg',
   cost: 400,
   desc: 'Space flight, Terran Database, Armory, Manufacturing, Yamato Cannon',
 })
@@ -307,6 +335,7 @@ rides.push({
   source: 'Homeworld 2',
   category: 'Space',
   size: 'Large',
+  image: 'https://i.ibb.co/QXVz3JP/Kushan-Mothership.jpg',
   cost: 400,
   desc: 'Kushan database, extreme production, minimal defenses',
 })
@@ -316,6 +345,7 @@ rides.push({
   source: 'Star Wars',
   category: 'Space',
   size: 'Large',
+  image: 'https://i.ibb.co/3cFNRyb/Imperial-IIClass-Star-Destroyer.jpg',
   cost: 440,
   desc: 'Heavy armour, heavy weapons, tractor beams, powerful hyperdrive (galactic spanning), small craft complement (72 TIE-series fighters, 8 Lambda class shuttles, 15 Delta class troop transports, 6 assault gunboats), Ground force complement (20 AT-ATs, 30 AT-STs, prefab bases, 9700 sets of Stormtrooper/Clonetrooper gear), Imperial industrial database (including designs for advanced TIEs), extensive machine shops and repair bays, droid crew support.',
   variants: [['Executor class Super Star Destroyer (VERY heavy weapons, VERY heavy armour, 144 fighters, ground force complement 38,000 (500 credits)', 60]],
@@ -328,6 +358,7 @@ rides.push({
   source: 'Stargate Atlantis',
   category: 'Space',
   size: 'Gigantic',
+  image: 'https://i.ibb.co/37HPRbv/Lantean-City-Ship.jpg',
   cost: 1500,
   desc: 'Lantean database and labs, drone launchers, puddle-jumper hangars, wormhole drive, ZPM production facility, living quarters',
 })
@@ -337,6 +368,7 @@ rides.push({
   source: 'Space Runaway Ideon',
   category: 'Space',
   size: 'Gigantic',
+  image: 'https://i.ibb.co/BcRqzgZ/Ideon-And-Solo.jpg',
   cost: 11111,
   desc: '(Solo): DS Drive, onboard forest. (Ideon): Three-part combining mecha, arbitrarily powerful weapons and defenses, infinite energy.',
 })

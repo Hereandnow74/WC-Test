@@ -1,25 +1,29 @@
 <template>
-  <div v-if="!appMode" class="grid grid-cols-4 p-4 gap-2">
-    <div
-      v-for="app in apps"
-      :key="app.name"
-      class="flex flex-col justify-center items-center rounded-xl bg-black bg-opacity-20 p-1 cursor-pointer hover:bg-gray-700"
-      @click="pickApp(app)"
-    >
-      <span class="iconify w-16 h-16" :style="`color:${app.color}`" :data-icon="app.icon"></span>
-      <div class="text-center text-sm text-gray-200">
-        {{ app.name }}
+  <div class="overflow-y-auto scrollbar h-full">
+    <div v-if="!appMode" class="grid grid-cols-4 p-4 gap-2">
+      <div
+        v-for="app in apps"
+        :key="app.name"
+        class="flex flex-col justify-center items-center rounded-xl bg-black bg-opacity-20 p-1 cursor-pointer hover:bg-gray-700"
+        @click="pickApp(app)"
+      >
+        <span class="iconify w-16 h-16" :style="`color:${app.color}`" :data-icon="app.icon"></span>
+        <div class="text-center text-sm text-gray-200">
+          {{ app.name }}
+        </div>
       </div>
     </div>
+    <keep-alive v-else>
+      <component :is="appComponent" />
+    </keep-alive>
   </div>
-  <component :is="appComponent" v-else />
 </template>
 
 <script lang="ts" setup>
 import { appMode, toggleAppMode } from '~/logic'
 import { useStore } from '~/store/store'
 
-const { homePerks } = useStore()
+const { homePerks, appName } = useStore()
 
 const appsList = [
   { icon: 'bi:globe2', name: 'Exit Stage Left', component: 'ExitStage', color: '#5480fc' },
@@ -61,10 +65,7 @@ const appComponents = {
   Discounts: defineAsyncComponent(() => import('./apps/Discounts.vue')),
 }
 
-const appName = ref('')
 const appComponent = computed(() => appComponents[appName.value])
-
-onMounted(() => appMode.value = false)
 
 function pickApp(app: any) {
   toggleAppMode()

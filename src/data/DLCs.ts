@@ -208,7 +208,8 @@ DLCperks.push({
   title: 'Trajectory. Agreement.',
   cost: 140,
   desc: `
-  You become an unrestricted World Hopper.
+  <p>You are capable of Unrestricted Multiversal Travel. </p>
+  <p>Space and time open before you, allowing travel to anywhere and anywhen. This grants you the ability to transport yourself, others, and objects near you to the location and time of your choice. Planetary range is a trivial effort. You can also access all other worlds, universes, and multiverses at will. The form this travel takes, such as teleportation, portals, or something else, can be chosen by the contractor when this perk is purchased. </p>
   `,
   whitelist: ['The Bigger Fish'],
 })
@@ -271,7 +272,7 @@ DLCperks.push({
   multiple: true,
   desc: `You will find that your new world has a number of previously bound waifus who for some reason or another have been left to their own devices; perhaps they were accidentally misplaced in transition, or maybe their contractor had a sudden case of extremely violent death, or maybe they were deliberately abandoned; either way, something somehow resulted in their arrival in your new world, and they are now your problem; they know that they were intended to be kept as slaves by a master, and will be especially distrustful of anyone who approaches them, so attempting to capture them will be difficult at best and dangerous at worst; while they will have arrived together, they may or may not stay together, and they also may seek out local assistance or proactively take measures to evade being captured.
   <p>Cost depends on number and tier of potential companions: T1-T4 [10]; T1-T7[100]; T1-T10[1000]</p>
-  <p>Total sum of the waifus cost's can't be less that a double of the amount payed.</p>
+  <p>Total sum of the companion's cost's can't be less than double the amount payed.</p>
   `,
 })
 
@@ -354,6 +355,14 @@ DLChomes.push({
   cost: 10,
   desc: 'A room-or pocket-dimensional space similar to the Pocket Space perk full of weapons, armor, and ammunition becomes available to you with this upgrade. It holds a wide variety of standard and specialized equipment from both your new world and your old one. This does include equipment that would normally only be available to special forces, but does not include custom-made or heavily customized variants on weapons. Weapons you or your companions acquire in the field can be sent to this armory with a few seconds of concentration, and each of you can choose up to ten pieces of equipment - such as a gun, a shield, or a full set of armor - to be able to equip or return at will. The armory will automatically repair and maintain weapons stored within it. This doesn\'t work for fully destroyed artifact items unless you help supply the magical oomph.',
   whitelist: ['Sweet Home'],
+})
+
+DLChomes.push({
+  dlc: 'Despin',
+  title: 'Home Security',
+  cost: 0,
+  desc: 'The portals to access your Pocket Apartment, and any perks that follow from it, can not be perceived or entered by anything you do not allow, including creatures, contaminants, and remote viewing.',
+  whitelist: ['Pocket Apartment'],
 })
 
 // DLC talents

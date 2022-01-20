@@ -23,11 +23,14 @@
       </div>
     </div>
 
-    <div class="md:column-count-2 lg:column-count-3">
+    <div
+      class="column-gap"
+      :class="settings.columns !== 'auto' ? `column-count-${settings.columns}` : 'md:column-count-2 xl:column-count-3 4xl:column-count-4 5xl:column-count-5'"
+    >
       <div
 
         id="No Bindings"
-        class="mb-2 p-2 bg-light-400 dark:bg-rose-900"
+        class="mb-2 p-2 bg-light-400 dark:bg-rose-900 column-block max-w-[600px]"
         :class="flags.noBindings ? 'hover:(yellow-100 dark:bg-rose-800) cursor-pointer': 'dark:bg-gray-600'"
       >
         <h3 class="text-center text-xl px-2 relative">
@@ -39,27 +42,29 @@
           All waifus of tiers 2-10 are discounted by one full rank.
         </div>
       </div>
-      <PerkCard
+      <component
+        :is="bindingCard(bnd)"
         v-for="bnd in bindingByType[activeType]"
         :key="bnd.title"
-        :perk="bnd"
-        :bg="bindingAvailable(bnd) ? 'light-400 dark:rose-900 hover:(yellow-100 dark:rose-800)'
-          : 'gray-200 dark:gray-600'"
-        :is-active="!!allBindings[bnd.title]"
-        :increment="!!bnd.increment"
-        :saved-perk="allBindings[bnd.title]"
-        :flavor-list="bnd.title === 'Prismatic Shroud' ? shroudElements.map(x => ({flavor:x.title})) : []"
+        v-bind="{
+          perk: bnd,
+          bg: bindingAvailable(bnd) ? 'light-400 dark:rose-900 hover:(yellow-100 dark:rose-800)'
+            : 'gray-200 dark:gray-600',
+          isActive: !!allBindings[bnd.title],
+          savedPerk: allBindings[bnd.title],
+          ...generateProps(bnd)
+        }"
         @pickPerk="chooseBinding"
       >
         <template v-if="['Elemental Shroud'].includes(bnd.title)" #title>
           <Button size="Small" label="element" class="mx-1" @click.stop="chooseElement(bnd)" />
         </template>
-        <template v-if="bnd.title" #rules>
-          <span v-if="bnd.type === 'Ritual'" class="mx-2" @click.stop="toggleRitual()">Rules: <span class="text-red-500 hover:underline">ritual parameters</span></span>
+        <template v-if="bnd.type === 'Ritual'" #rules>
+          <span class="mx-2" @click.stop="toggleRitual()">Rules: <span class="text-red-500 hover:underline">ritual parameters</span></span>
         </template>
-      </PerkCard>
+      </component>
       <PerkCard
-        v-if="isDLC"
+        v-if="!settings.allChosenAuthors.includes('DLC by Despin')"
         :key="DLCbindings[0].title"
         :bg="!flags.noBindings ? 'light-400 dark:rose-900 hover:(yellow-100 dark:rose-800)'
           : 'gray-200 dark:gray-600'"
@@ -85,7 +90,10 @@
       </router-link>
     </h3>
     <Desc :desc="lureDesc" class="bg-gray-200 dark:bg-gray-600 max-w-screen-md my-4 mx-auto" />
-    <div class="md:column-count-2 lg:column-count-3">
+    <div
+      class="column-gap"
+      :class="settings.columns !== 'auto' ? `column-count-${settings.columns}` : 'md:column-count-2 xl:column-count-3 4xl:column-count-4 5xl:column-count-5'"
+    >
       <PerkCard
         v-for="lr in luresDLC"
         :key="lr.title"
@@ -107,7 +115,10 @@
       </router-link>
     </h3>
     <Desc :desc="lureExpansionDesc" class="bg-gray-200 dark:bg-gray-600 max-w-screen-md my-4 mx-auto" />
-    <div class="md:column-count-2 lg:column-count-3">
+    <div
+      class="column-gap"
+      :class="settings.columns !== 'auto' ? `column-count-${settings.columns}` : 'md:column-count-2 xl:column-count-3 4xl:column-count-4 5xl:column-count-5'"
+    >
       <PerkCard
         v-for="lr in lureExpansionsDLC"
         :key="lr.title"
@@ -129,7 +140,10 @@
       </router-link>
     </h3>
     <Desc :desc="otherDesc" class="bg-gray-200 dark:bg-gray-600 max-w-screen-md my-4 mx-auto" />
-    <div class="md:column-count-2 lg:column-count-3 pb-8">
+    <div
+      class="column-gap pb-8"
+      :class="settings.columns !== 'auto' ? `column-count-${settings.columns}` : 'md:column-count-2 xl:column-count-3 4xl:column-count-4 5xl:column-count-5'"
+    >
       <PerkCard
         v-for="other in otherDLC"
         :key="other.title"
@@ -154,11 +168,13 @@ import {
   otherControls, otherDesc, symbioteRules,
 } from '~/data/binding'
 import { useTooltips } from '~/logic/misc'
-import { chooseLure, lureAvailable, bindingAvailable, chooseBinding, chooseOther, isDLC, pickSimplePerk } from '~/logic'
+import { chooseLure, lureAvailable, bindingAvailable, chooseBinding, chooseOther, pickSimplePerk } from '~/logic'
 import { useStore } from '~/store/store'
 import { DLCbindings, DLClureExpansions, DLClures, DLCotherControls } from '~/data/DLCs'
+import PerkCard from '~/components/PerkCard.vue'
+import GenericPerkCard from '~/components/perkCards/GenericPerkCard.vue'
 
-const { binding, luresBought, flags, otherPerks } = useStore()
+const { binding, luresBought, flags, otherPerks, settings } = useStore()
 const [showElements, toggleElements] = useToggle()
 const [showRitual, toggleRitual] = useToggle()
 
@@ -166,10 +182,37 @@ const currentBinding = ref<Binding|null>(null)
 
 const activeType = ref('Stamp')
 
-const bindingsDLC = computed(() => isDLC.value ? bindings.concat(DLCbindings) : bindings)
-const lureExpansionsDLC = computed(() => isDLC.value ? lureExpansions.concat(DLClureExpansions) : lureExpansions)
-const luresDLC = computed(() => isDLC.value ? lures.concat(DLClures) : lures)
-const otherDLC = computed(() => isDLC.value ? otherControls.concat(DLCotherControls) : otherControls)
+const perkCards = {
+  'Prismatic Shroud': defineAsyncComponent(() => import('~/components/perkCards/PrismaticShroud.vue')),
+} as Record<string, any>
+
+const bindingCard = (bnd: Binding) => {
+  let generic = null
+  if (!bnd.multiple && !bnd.waifu && !bnd.complex && bnd.element)
+    generic = GenericPerkCard
+  return perkCards[bnd.title] || generic || PerkCard
+}
+
+const bindingsDLC = computed(() => !settings.value.allChosenAuthors[0]
+  ? bindings
+    .concat(DLCbindings
+      .filter(perk => !settings.value.allChosenAuthors.includes(perk.dlc)))
+  : bindings)
+const lureExpansionsDLC = computed(() => !settings.value.allChosenAuthors[0]
+  ? lureExpansions
+    .concat(DLClureExpansions
+      .filter(perk => !settings.value.allChosenAuthors.includes(perk.dlc)))
+  : lureExpansions)
+const luresDLC = computed(() => !settings.value.allChosenAuthors[0]
+  ? lures
+    .concat(DLClures
+      .filter(perk => !settings.value.allChosenAuthors.includes(perk.dlc)))
+  : lures)
+const otherDLC = computed(() => !settings.value.allChosenAuthors[0]
+  ? otherControls
+    .concat(DLCotherControls
+      .filter(perk => !settings.value.allChosenAuthors.includes(perk.dlc)))
+  : otherControls)
 
 const bindingByType = computed(() => {
   const res = {
@@ -231,5 +274,12 @@ function toggleCurrentElement(title: string, custom: string) {
   if (custom) saveBin.target = custom
   chooseBinding(currentBinding.value, saveBin)
   toggleElements()
+}
+
+function generateProps(perk: Binding) {
+  const props = {}
+  if (perk.increment) props.increment = !!perk.increment
+  if (perk.title === 'Prismatic Shroud') props.elementList = shroudElements.map(x => ({ flavor: x.title }))
+  return props
 }
 </script>

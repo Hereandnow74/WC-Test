@@ -1,5 +1,5 @@
 <template>
-  <div class="sm:p-2 text-sm sm:text-base">
+  <div class="sm:p-2 text-sm sm:text-base flex flex-col items-center">
     <Desc :desc="rideDesc" class="p-2 mb-2 max-w-4xl mx-auto bg-violet-200 dark:bg-violet-900" />
     <Button label="Create A Ride" class="mx-auto mb-2 block" bg-color="bg-blue-500" @click="toggleShowAddRide" />
     <div class="flex flex-wrap gap-2 mx-auto justify-center pb-8">
@@ -37,7 +37,10 @@
     <h3 class="text-xl pb-2 text-center">
       Ride Perks
     </h3>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-2 pb-8">
+    <div
+      class="column-gap pb-8"
+      :class="settings.columns !== 'auto' ? `column-count-${settings.columns}` : 'md:column-count-2 xl:column-count-3 4xl:column-count-4 5xl:column-count-5'"
+    >
       <PerkCard
         v-for="ridePerk in ridePerksWithDLC"
         :key="ridePerk.title"
@@ -58,61 +61,22 @@ import { findIndex } from 'lodash-es'
 import { ridePerksFull, rideDesc, PerkFull } from '~/data/talents'
 import { useTooltips } from '~/logic/misc'
 import { useStore } from '~/store/store'
-import { toggleShowAddRide, showAddRide, pickSimplePerk, chooseRide, rideAvailable, isDLC } from '~/logic'
+import { toggleShowAddRide, showAddRide, pickSimplePerk, chooseRide, rideAvailable } from '~/logic'
 import { DLCridePerks } from '~/data/DLCs'
-import { Ride, rides, DLCRides } from '~/data/rides'
+import { rides, DLCRides } from '~/data/rides'
 import { Perk } from '~/store/chargen'
 
-const { ridePerks, userRides, localUserRides } = useStore()
+const { ridePerks, userRides, localUserRides, settings } = useStore()
 
 const activeRide = ref('')
 
-const selectedRide = reactive({
-  title: '',
-  cost: 0,
-  addons: [] as string[],
-  variant: '',
-})
-
 const allRides = computed(() => Array.prototype.concat(userRides.value, localUserRides.value, rides))
 
-const ridePerksWithDLC = computed(() => isDLC.value ? ridePerksFull.concat(DLCridePerks) : ridePerksFull)
-
-function selectRide(perk: Ride) {
-  if (selectedRide.title !== perk.title) {
-    selectedRide.title = perk.title
-    selectedRide.cost = perk.cost
-    selectedRide.addons = []
-    selectedRide.variant = ''
-  }
-}
-
-function installAddon(addon: any[]) {
-  const ind = selectedRide.addons.indexOf(addon[0])
-  if (ind === -1) {
-    selectedRide.addons.push(addon[0])
-    selectedRide.cost += addon[1]
-  }
-  else {
-    selectedRide.addons.splice(ind, 1)
-    selectedRide.cost -= addon[1]
-  }
-}
-
-function pickRideVariant(variant: any[]) {
-  if (selectedRide.variant === variant[0]) {
-    selectedRide.variant = ''
-    selectedRide.cost -= variant[1]
-  }
-  else {
-    selectedRide.variant = variant[0]
-    selectedRide.cost += variant[1]
-  }
-}
-
-function pickRide(perk: Ride) {
-  chooseRide(perk, selectedRide)
-}
+const ridePerksWithDLC = computed(() => !settings.value.allChosenAuthors[0]
+  ? ridePerksFull
+    .concat(DLCridePerks
+      .filter(perk => !settings.value.allChosenAuthors.includes(perk.dlc)))
+  : ridePerksFull)
 
 function deleteRide(title: String) {
   const ind = findIndex(localUserRides.value, { title })

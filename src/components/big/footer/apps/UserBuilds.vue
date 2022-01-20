@@ -1,8 +1,7 @@
 <template>
-  <div class="flex flex-col gap-2 overflow-y-auto pb-4 px-2 scrollbar text-gray-200">
+  <div class="flex flex-col gap-2 pb-4 px-2 text-gray-200">
     <div class="flex justify-between">
       <div>Experimental app? - total builds: {{ buildList.length }}</div>
-      <Toggle v-model="hideCyrus" label="Hide Cyrus" class="text-red-400" />
     </div>
     <div
       v-for="save in displayList"
@@ -43,17 +42,15 @@ import { useTimeAgo } from '@vueuse/core'
 import { activeTab, assignBuildData, getBuild, getBuilds, toggleAppMode } from '~/logic'
 import { useSaves } from '~/store/saves'
 
-const hideCyrus = ref(false)
-
 const { buildList } = useSaves()
 
 if (!buildList.value.length)
   getBuilds(builds => JSON.parse(builds.list).forEach(x => buildList.value.push(x)))
 
 const displayList = computed(() => buildList.value
-  .filter(x => hideCyrus.value ? !x.date.includes('Normalzeit') : true)
   .map(x => (x.newDate = new Date(x.date), x))
-  .sort((a, b) => b.newDate - a.newDate))
+  .sort((a, b) => b.newDate - a.newDate)
+  .slice(0, 100))
 
 function loadBuild(id: string) {
   getBuild(id, assignBuildData)

@@ -4,7 +4,10 @@
     <h3 class="text-xl font-semibold text-center">
       Generic Waifu Perks
     </h3>
-    <div class="md:column-count-2 lg:column-count-3">
+    <div
+      class="column-gap"
+      :class="settings.columns !== 'auto' ? `column-count-${settings.columns}` : 'md:column-count-2 xl:column-count-3 4xl:column-count-4 5xl:column-count-5'"
+    >
       <PerkCard
         v-for="perk in genericPerksWithDLC"
         :key="perk.title"
@@ -121,10 +124,10 @@ import { genericPerks, genericDesc } from '~/data/talents'
 import { lazyLoadImg, useTooltips } from '~/logic/misc'
 import { useStore } from '~/store/store'
 
-import { chooseGenericPerk, chooseWaifuPerk, genericAvailable, isDLC, specificAvailable } from '~/logic'
+import { chooseGenericPerk, chooseWaifuPerk, genericAvailable, specificAvailable } from '~/logic'
 import { DLCgenericPerks } from '~/data/DLCs'
 
-const { waifuPerks, genericWaifuPerks } = useStore()
+const { waifuPerks, genericWaifuPerks, settings } = useStore()
 
 const gachaTable = [
   [1, 2, 5, 10, 20, 50, 100, 200, 500, 1000],
@@ -143,8 +146,16 @@ const allGeneric = computed(() => {
   return res
 })
 
-const genericPerksWithDLC = computed(() => isDLC.value ? genericPerks.concat(DLCgenericPerks) : genericPerks)
-const specificPerksWithDLC = computed(() => isDLC.value ? waifu_perks.concat(DLCwaifu_perks) : waifu_perks)
+const genericPerksWithDLC = computed(() => !settings.value.allChosenAuthors[0]
+  ? genericPerks
+    .concat(DLCgenericPerks
+      .filter(perk => !settings.value.allChosenAuthors.includes(perk.dlc)))
+  : genericPerks)
+const specificPerksWithDLC = computed(() => !settings.value.allChosenAuthors[0]
+  ? waifu_perks
+    .concat(DLCwaifu_perks
+      .filter(perk => !settings.value.allChosenAuthors.includes(perk.dlc)))
+  : waifu_perks)
 
 onMounted(() => useTooltips())
 </script>

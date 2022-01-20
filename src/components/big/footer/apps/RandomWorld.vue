@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col justify-between h-full p-1 mt-2">
+  <div class="flex flex-col justify-between h-full p-1">
     <div>
       <div class="py-2 text-center">
         1 out of {{ allWorldsNoCondition.length }}

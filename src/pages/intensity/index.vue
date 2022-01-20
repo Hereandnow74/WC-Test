@@ -1,12 +1,15 @@
 <template>
-  <div class="p-2">
-    <Desc class="p-2 max-w-screen-md mx-auto dark:bg-gray-800 bg-blue-gray-300 rounded" :desc="desc" />
-    <div class="mt-4 pb-8 sm:column-count-2 lg:column-count-3">
+  <div class="sm:p-2">
+    <Desc class="max-w-screen-md mx-auto dark:bg-gray-800 bg-blue-gray-300 rounded" :desc="desc" />
+    <div
+      class="mt-4 pb-8 column-gap"
+      :class="settings.columns !== 'auto' ? `column-count-${settings.columns}` : 'md:column-count-2 xl:column-count-3 4xl:column-count-4 5xl:column-count-5'"
+    >
       <div
         v-for="rule in intensity"
         :id="rule.title"
         :key="rule.title"
-        class="p-1 rounded cursor-pointer relative mb-2 inline-block pb-4"
+        class="p-1 rounded cursor-pointer column-block mb-2 pb-4 max-w-[600px]"
         :bg="intensityAvailable(rule) ? 'blue-100 dark:gray-700 hover:blue-200 dark:hover:gray-800' : 'gray-200 dark:gray-600'"
         @click="chooseIntensityCoop(rule)"
       >
@@ -69,7 +72,7 @@ import { chooseIntensity, intensityAvailable } from '~/logic/'
 const coopCount = ref(0)
 const coopIntensity = computed(() => coopCount.value * 0.2)
 
-const { allEffects, baseBudgetAfter } = useStore()
+const { allEffects, baseBudgetAfter, settings } = useStore()
 
 onMounted(() => {
   useTooltips()

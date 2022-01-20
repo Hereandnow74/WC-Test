@@ -4,9 +4,9 @@
   >
     <div class="flex gap-2 w-full">
       <img
-        :src="char.i ? imageLink(char.i, char.u) : 'img/Contractor.jpg'"
+        :src="startingOrigin.image || (char.i ? imageLink(char.i, char.u) : '/img/Contractor.jpg')"
         :alt="startingOrigin.character"
-        class="rounded object-cover max-h-[140px] max-w-[90px] object-top"
+        class="rounded object-cover max-h-[140px] max-w-[90px] object-top w-24"
       >
       <div class="flex flex-col w-full">
         <div class="flex">
@@ -36,6 +36,9 @@
             :list="['F', 'M', 'O']"
           />
         </div>
+        <div v-if="editMode">
+          <Input v-model="image" class="w-full" placeholder="Your image only from Imgur.com example: https://i.imgur.com/jm8eCCA.png" />
+        </div>
       </div>
     </div>
   </div>
@@ -59,10 +62,17 @@ const { flags, startingOrigin, miscPerks, yourTier } = useStore()
 const noUC = computed(() => findIndex(miscPerks.value, { title: 'Universal Calibration' }) === -1)
 
 const allChars = ref<DBCharacter[]>([])
+const image = ref(startingOrigin.value.image || '')
 
 getAllChars().then(chars => allChars.value = chars)
 
 const char = computed(() => allChars.value[findIndex(allChars.value, { u: startingOrigin.value.uid })] || {})
 
-watch(char, () => startingOrigin.value.sex = startingOrigin.value.sex || (char.value && char.value.b ? char.value.b?.includes('F') ? 'F' : 'M' : 'M'))
+watch(char, () => startingOrigin.value.sex = startingOrigin.value.sex
+|| (char.value && char.value.b ? char.value.b?.includes('F') ? 'F' : 'M' : 'M'))
+
+watch(image, () => {
+  if (image.value.startsWith('https://i.imgur.com/')) startingOrigin.value.image = image.value
+})
+
 </script>

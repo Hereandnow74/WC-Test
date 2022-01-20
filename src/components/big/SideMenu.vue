@@ -20,17 +20,9 @@
         <carbon-sun /><span>Light</span>
       </template>
     </button>
-    <button class="icon-text-btn mx-2 !outline-none whitespace-nowrap" title="Toggle on/off DLCs" @click="() => toggleDLC()">
-      <template v-if="isDLC">
-        <mdi:puzzle-check-outline /><span>DLC's on</span>
-      </template>
-      <template v-else>
-        <mdi:puzzle-remove-outline /><span>DLC's off</span>
-      </template>
-    </button>
-    <button class="icon-text-btn mx-2 !outline-none whitespace-nowrap" title="Toggle NSFW images" @click="() => toggleNSFW()">
-      <uil:18-plus :class="isNSFW ? 'text-red-500': ''" /><span>{{ isNSFW ? 'NSFW' : 'SFW' }}</span>
-    </button>
+    <div class="icon-text-btn mx-2 whitespace-nowrap" title="Settings" @click="() => toggleShowSettings()">
+      <majesticons:cog-line />Settings
+    </div>
     <h3 v-if="!showSideMenu" class="mx-2 opacity-50 border-b">
       Actions
     </h3>
@@ -103,20 +95,23 @@
     <teleport to="#app">
       <component :is="addPerkComponent" v-if="showAddPerk" @click="toggleShowAddPerk" />
       <component :is="addMissionComponent" v-if="showAddMission" @click="toggleShowAddMission" />
+      <component :is="settingsComponent" v-if="showSettings" @click="toggleShowSettings" />
     </teleport>
   </div>
 </template>
 
 <script lang='ts' setup>
 import {
-  isDark, toggleDark, toggleSideMenu, showSideMenu, showAddPerk, toggleShowAddPerk, toggleDLC,
-  isDLC, showAddMission, toggleShowAddMission, isNSFW, toggleNSFW, toggleSupport, promoteShown,
+  isDark, toggleDark, toggleSideMenu, showSideMenu, showAddPerk, toggleShowAddPerk,
+  showAddMission, toggleShowAddMission, toggleSupport, promoteShown,
+  toggleShowSettings, showSettings,
 } from '~/logic'
 
 const sidemenu = ref(null)
 
 const addPerkComponent = computed(() => defineAsyncComponent(() => import('../modals/AddPerk.vue')))
 const addMissionComponent = computed(() => defineAsyncComponent(() => import('../modals/AddMission.vue')))
+const settingsComponent = computed(() => defineAsyncComponent(() => import('../modals/Settings.vue')))
 
 </script>
 

@@ -111,7 +111,6 @@
 <script lang='ts' setup>
 import { findIndex, intersection, random } from 'lodash-es'
 import { CHAR_COSTS, waifusThatHasPerk, waifuTags } from '~/data/constants'
-import { isNSFW } from '~/logic'
 import { usePlayStore } from '~/store/play'
 import { useStore } from '~/store/store'
 
@@ -142,10 +141,16 @@ const props = defineProps({
   },
 })
 
+const {
+  flags, companions, localUserCharacters, companionsUIDs, captureKoeff, underLoan, favorites,
+  fullStartingBudget, settings,
+} = useStore()
+const { loan, trHistory } = usePlayStore()
+
 const modalImage = ref('')
 const showModal = ref(false)
 const usedModal = ref(false)
-const nsfw = ref(isNSFW.value)
+const nsfw = ref(settings.value.nsfw)
 
 const cardEl = ref<HTMLImageElement| null>(null)
 const companionEl = ref<HTMLImageElement| null>(null)
@@ -170,9 +175,6 @@ const charData = computed(() => {
   return res
 })
 
-const { flags, companions, localUserCharacters, companionsUIDs, captureKoeff, underLoan, favorites, fullStartingBudget } = useStore()
-const { loan, trHistory } = usePlayStore()
-
 const tags = computed(() => {
   return charData.value.tags.map(x => waifuTags[x] ? waifuTags[x] : { tag: x, color: 'bg-teal-600', desc: '' })
 })
@@ -195,7 +197,7 @@ const imageLink = computed(() => {
     if (charData.value.image) {
       if (charData.value.image.startsWith('http')) { return charData.value.image }
       else {
-        if (charData.value?.tags?.includes('U'))
+        if (charData.value.uid >= 100000)
           return `https://cdn.statically.io/gh/Om1cr0n/cat_thumb/main/docs/thumbs/${charData.value.image}`
         if (charData.value.image.startsWith('[n]'))
           return `https://cdn.statically.io/gh/Om1cr0n/cat_thumb/main/docs/thumbs/${charData.value.image.slice(3)}`
@@ -210,7 +212,7 @@ const imageLink = computed(() => {
 
 const priceTier = (t: number): number => flags.value.noBindings && t !== 11 && t !== 1 ? t - 1 : t
 
-watch(isNSFW, () => nsfw.value = isNSFW.value)
+watch(settings.value, () => nsfw.value = settings.value.nsfw)
 
 function buyCompanion() {
   const char = charData.value
@@ -272,7 +274,7 @@ function deleteCharacter() {
 }
 
 onMounted(() => {
-  if ((!props.lazy || isNSFW.value) && companionEl.value)
+  if ((!props.lazy || settings.value.nsfw) && companionEl.value)
     companionEl.value.src = imageLink.value
 })
 

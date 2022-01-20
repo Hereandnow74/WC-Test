@@ -188,18 +188,6 @@
     ]
   },
   {
-    "u": 6100197,
-    "n": "Kotone Shiomi",
-    "t": 5,
-    "i": "https://i.imgur.com/DlDfgA0m.png",
-    "s": "https://cdn.donmai.us/original/90/1c/__shiomi_kotone_persona_and_2_more_drawn_by_shiorinda__901c82dfc302c54a36fccee180f961cb.jpg",
-    "in": "https://tulip.paheal.net/_images/32e21347c7c654d58958f7872470654d/4475840%20-%20Heroine%20Kotone_Shiomi%20Megami_Tensei%20Persona_3%20Persona_3_Portable%20Thanatos%20blsh.jpg",
-    "w": "Persona 3",
-    "b": [
-      "F"
-    ]
-  },
-  {
     "u": 2504925,
     "n": "Sophia Keren",
     "t": 7,
@@ -3944,7 +3932,10 @@
     "s": "http://img10.joyreactor.cc/pics/post/full/Catherine-%D0%98%D0%B3%D1%80%D1%8B-%D0%98%D0%B3%D1%80%D0%BE%D0%B2%D0%B0%D1%8F-%D1%8D%D1%80%D0%BE%D1%82%D0%B8%D0%BA%D0%B0-Raikoart-5992136.jpeg",
     "w": "Catherine",
     "b": [
-      "F"
+      "F",
+      "cr",
+      "dv",
+      "U"
     ],
     "in": "http://img10.joyreactor.cc/pics/post/full/Catherine-%D0%98%D0%B3%D1%80%D1%8B-FKEY-Anime-Art-5716697.jpeg",
     "k": "MrRockingHippie"
@@ -7532,8 +7523,8 @@
     "u": 3238984,
     "n": "Rathalos",
     "t": 5,
-    "i": "https://i.imgur.com/kvPy4rAm.jpg",
-    "s": "https://i.imgur.com/kvPy4rA.jpg",
+    "i": "https://i.imgur.com/ImWmstnm.jpg",
+    "s": "https://i.imgur.com/ImWmstn.jpg",
     "w": "Monster Hunter",
     "b": [
       "F",
@@ -24946,27 +24937,7 @@
     "in": "https://pictures.hentai-foundry.com/m/Megadeath/527447/Megadeath-527447-Osiras_deal_-_Legend_of_Queen_Opala_Origin_Contest.jpg",
     "k": "ZephyrusStorm"
   },
-  {
-    "u": 2419216,
-    "n": "Ban",
-    "t": 10,
-    "i": "Ban_new_outfit.png",
-    "s": "https://static.wikia.nocookie.net/nanatsu-no-taizai/images/7/74/Ban_new_outfit.png",
-    "w": "Nanatsu No Taizai/Seven Deadly Sins",
-    "d": "",
-    "b": [
-      "M",
-      "st",
-      "hr",
-      "hz",
-      "cl",
-      "ml",
-      "im",
-      "ur",
-      "cf"
-    ],
-    "k": "Cyrus"
-  },
+  {"u":5267911,"n":"Ban","t":8,"i":"f42648946de51580f88b83076b3145ab.jpg","s":"https://i.pinimg.com/originals/f4/26/48/f42648946de51580f88b83076b3145ab.jpg","w":"Nanatsu No Taizai/Seven Deadly Sins","d":"","b":["M","hl","dr","im"],"k":"LandWhale172"},
   {
     "u": 8756435,
     "n": "Gardevoir (Angewomon Fused)",
@@ -26518,7 +26489,7 @@
       "st",
       "cl",
       "sc",
-      "Ninja"
+      "nj"
     ],
     "k": "Cyrus"
   },
@@ -27043,7 +27014,7 @@
       "st",
       "cl",
       "sc",
-      "Ninja"
+      "nj"
     ],
     "k": "Cyrus"
   },
@@ -27063,7 +27034,7 @@
       "mp",
       "cr",
       "sc",
-      "Ninja"
+      "nj"
     ],
     "k": "Cyrus"
   },
@@ -27650,7 +27621,7 @@
   },
   {
     "u": 4429812,
-    "n": "Jediete ",
+    "n": "Nephrite",
     "t": 5,
     "i": "Manga_nephrite_profile.png",
     "s": "https://static.wikia.nocookie.net/sailormoon/images/4/43/Manga_nephrite_profile.png",
@@ -28234,20 +28205,6 @@
       "DJ"
     ],
     "k": "Everythingman101"
-  },
-  {
-    "u": 8878311,
-    "n": "Aisha Laborn",
-    "t": 5,
-    "i": "Impbutyoucantseeme_outline.png",
-    "s": "https://static.wikia.nocookie.net/parahumans/images/2/22/Impbutyoucantseeme_outline.png",
-    "w": "Worm",
-    "d": "",
-    "b": [
-      "F",
-      "mp"
-    ],
-    "k": "Ayashi"
   },
   {
     "u": 2164777,
@@ -28901,7 +28858,7 @@
     "t": 6,
     "i": "7bd32be5cf2f9e323d91f0a4ca36ef17.jpg",
     "s": "https://i.pinimg.com/736x/7b/d3/2b/7bd32be5cf2f9e323d91f0a4ca36ef17.jpg",
-    "w": "Sailor",
+    "w": "Sailor Moon",
     "d": "Other",
     "b": [
       "F",
@@ -28960,8 +28917,8 @@
     "u": 1419215,
     "n": "Nu-13 (Nina of the Azure Flame)",
     "t": 11,
-    "i": "https://i.imgur.com/70xiK8fm.png",
-    "s": "https://i.imgur.com/70xiK8f.png",
+    "i": "https://i.imgur.com/1jXZFm2m.png",
+    "s": "https://i.imgur.com/1jXZFm2.png",
     "w": "BlazBlue",
     "d": "Breath of Fire",
     "b": [
@@ -29898,5 +29855,2476 @@
       "F"
     ],
     "k": "Yaldabaoth"
+  },
+  {
+    "u": 2363461,
+    "n": "Alysanne Blackwood",
+    "t": 3,
+    "i": "Alysanne_Blackwood_by_Rae_Lavergne.jpg",
+    "s": "https://awoiaf.westeros.org/images/5/53/Alysanne_Blackwood_by_Rae_Lavergne.jpg",
+    "w": "A Song of Ice and Fire",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Darnoc"
+  },
+  {
+    "u": 4086771,
+    "n": "Loras Tyrell",
+    "t": 3,
+    "i": "Loras_Tyrell.jpg",
+    "s": "https://awoiaf.westeros.org/images/4/47/Loras_Tyrell.jpg",
+    "w": "A Song of Ice and Fire",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Darnoc"
+  },
+  {
+    "u": 9858492,
+    "n": "Garlan Tyrell",
+    "t": 3,
+    "i": "Garlan_Tyrell_by_cloudninja9.jpg",
+    "s": "https://awoiaf.westeros.org/images/4/4e/Garlan_Tyrell_by_cloudninja9.jpg",
+    "w": "A Song of Ice and Fire",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Darnoc"
+  },
+  {
+    "u": 7824891,
+    "n": "Willas Tyrell",
+    "t": 2,
+    "i": "WillasTyrell_by_Mikeybooch.jpg",
+    "s": "https://awoiaf.westeros.org/images/a/a8/WillasTyrell_by_Mikeybooch.jpg",
+    "w": "A Song of Ice and Fire",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Darnoc"
+  },
+  {
+    "u": 9523246,
+    "n": "Alerie Hightower",
+    "t": 1,
+    "i": "Alerie_tyrell_by_berghots.jpg",
+    "s": "https://awoiaf.westeros.org/images/b/b6/Alerie_tyrell_by_berghots.jpg",
+    "w": "A Song of Ice and Fire",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Darnoc"
+  },
+  {
+    "u": 6133310,
+    "n": "Mace Tyrell",
+    "t": 2,
+    "i": "Mace_Tyrell.jpg",
+    "s": "https://awoiaf.westeros.org/images/e/ef/Mace_Tyrell.jpg",
+    "w": "A Song of Ice and Fire",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Darnoc"
+  },
+  {
+    "u": 6008977,
+    "n": "Night King",
+    "t": 7,
+    "i": "Night_King_BTW.jpg",
+    "s": "https://static.wikia.nocookie.net/gameofthrones/images/1/1f/Night_King_BTW.jpg",
+    "w": "A Song of Ice and Fire",
+    "d": "",
+    "b": [
+      "M",
+      "di",
+      "mr",
+      "un"
+    ],
+    "k": "Darnoc"
+  },
+  {
+    "u": 2024915,
+    "n": "Ramsay Snow",
+    "t": 2,
+    "i": "Ramsay_by_GibiLynx.jpg",
+    "s": "https://awoiaf.westeros.org/images/0/04/Ramsay_by_GibiLynx.jpg",
+    "w": "A Song of Ice and Fire",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Darnoc"
+  },
+  {
+    "u": 9299163,
+    "n": "Meera Reed",
+    "t": 3,
+    "i": "Thaldir_Meera_Reed.jpg",
+    "s": "https://awoiaf.westeros.org/images/a/a1/Thaldir_Meera_Reed.jpg",
+    "w": "A Song of Ice and Fire",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Darnoc"
+  },
+  {
+    "u": 9328345,
+    "n": "Jeyne Westerling",
+    "t": 1,
+    "i": "Jeyne_westerling_by_eluas.png",
+    "s": "https://awoiaf.westeros.org/images/b/b0/Jeyne_westerling_by_eluas.png",
+    "w": "A Song of Ice and Fire",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Darnoc"
+  },
+  {
+    "u": 1512046,
+    "n": "Desmera Redwyne",
+    "t": 1,
+    "i": "Desmera_Redwyne_Andreia_Ugrai.png",
+    "s": "https://awoiaf.westeros.org/images/a/ac/Desmera_Redwyne_Andreia_Ugrai.png",
+    "w": "A Song of Ice and Fire",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Darnoc"
+  },
+  {
+    "u": 1775704,
+    "n": "Wynafryd Manderly",
+    "t": 2,
+    "i": "Wynafryd_manderly_by_eluas.png",
+    "s": "https://awoiaf.westeros.org/images/0/0b/Wynafryd_manderly_by_eluas.png",
+    "w": "A Song of Ice and Fire",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Darnoc"
+  },
+  {
+    "u": 8600988,
+    "n": "Wylla Manderly",
+    "t": 1,
+    "i": "Wylla_manderly_by_eluas.png",
+    "s": "https://awoiaf.westeros.org/images/0/01/Wylla_manderly_by_eluas.png",
+    "w": "A Song of Ice and Fire",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Darnoc"
+  },
+  {
+    "u": 7863632,
+    "n": "Alys Karstark",
+    "t": 1,
+    "i": "Alys_karstark_by_eluas.png",
+    "s": "https://awoiaf.westeros.org/images/9/9d/Alys_karstark_by_eluas.png",
+    "w": "A Song of Ice and Fire",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Darnoc"
+  },
+  {
+    "u": 4968866,
+    "n": "Robert Baratheon",
+    "t": 2,
+    "i": "RobertBKingMagali_Villeneuve.jpg",
+    "s": "https://awoiaf.westeros.org/images/b/bd/RobertBKingMagali_Villeneuve.jpg",
+    "w": "A Song of Ice and Fire",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Darnoc"
+  },
+  {
+    "u": 7530789,
+    "n": "Elia Martell",
+    "t": 1,
+    "i": "Elia_martell_by_lyastark-d7zl7tb.jpg",
+    "s": "https://awoiaf.westeros.org/images/2/2b/Elia_martell_by_lyastark-d7zl7tb.jpg",
+    "w": "A Song of Ice and Fire",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Darnoc"
+  },
+  {
+    "u": 6096561,
+    "n": "Lyanna Stark",
+    "t": 2,
+    "i": "Hallmarccus_Lyanna.jpg",
+    "s": "https://awoiaf.westeros.org/images/7/79/Hallmarccus_Lyanna.jpg",
+    "w": "A Song of Ice and Fire",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Darnoc"
+  },
+  {
+    "u": 6220273,
+    "n": "Roose Bolton",
+    "t": 3,
+    "i": "Roose_bolton_by_berghots.jpg",
+    "s": "https://awoiaf.westeros.org/images/4/40/Roose_bolton_by_berghots.jpg",
+    "w": "A Song of Ice and Fire",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Darnoc"
+  },
+  {
+    "u": 2970416,
+    "n": "Domeric Bolton",
+    "t": 3,
+    "i": "Domeric_bolton_by_berghots.jpg",
+    "s": "https://awoiaf.westeros.org/images/c/cb/Domeric_bolton_by_berghots.jpg",
+    "w": "A Song of Ice and Fire",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Darnoc"
+  },
+  {
+    "u": 9505178,
+    "n": "Widow",
+    "t": 3,
+    "i": "abwidow1.jpg",
+    "s": "https://eyevocal.ottawa-anime.org/beingupfront/pictures/abwidow1.jpg",
+    "w": "Angel Blade",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 1370344,
+    "n": "Shaiya Hishizaki",
+    "t": 5,
+    "i": "sample-96e1aaf0d1be428bb47e614a5b3c34e0.jpg",
+    "s": "https://i.postimg.cc/Dyxbj25n/sample-96e1aaf0d1be428bb47e614a5b3c34e0.jpg",
+    "w": "Angel Blade",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 2447822,
+    "n": "Seiryu Tenmyoin",
+    "t": 2,
+    "i": "130595.jpg",
+    "s": "https://cdn.myanimelist.net/images/characters/15/130595.jpg",
+    "w": "Angel Blade",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 5061748,
+    "n": "Phantom Lady",
+    "t": 6,
+    "i": "sample-ed220b8ef63f45be9ded69fff512a19a.jpg",
+    "s": "https://i.postimg.cc/bw6Htx40/sample-ed220b8ef63f45be9ded69fff512a19a.jpg",
+    "w": "Angel Blade",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 2563509,
+    "n": "Nailkaiser",
+    "t": 5,
+    "i": "227f5916a22b13618997c7c0a3e2fc75.jpg",
+    "s": "https://i.postimg.cc/BbyMHxjw/227f5916a22b13618997c7c0a3e2fc75.jpg",
+    "w": "Angel Blade",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 7312483,
+    "n": "Moena Shinguuji",
+    "t": 1,
+    "i": "26e740d9aa2b82e2d9d217d956f0dbfa.jpg",
+    "s": "https://i.postimg.cc/nhWwqfDh/26e740d9aa2b82e2d9d217d956f0dbfa.jpg",
+    "w": "Angel Blade",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 4948477,
+    "n": "Kyouka",
+    "t": 5,
+    "i": "5688-269954279.jpg",
+    "s": "https://ami.animecharactersdatabase.com/uploads/chars/5688-269954279.jpg",
+    "w": "Angel Blade",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 1163744,
+    "n": "Karin Son",
+    "t": 5,
+    "i": "Karin.jpg",
+    "s": "https://i.postimg.cc/K8h2BLSW-/Karin.jpg",
+    "w": "Angel Blade",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 2689435,
+    "n": "Elphie Elfman",
+    "t": 5,
+    "i": "958d038e9336be4c5741637c0a9b7496b291ef138579829d619fefecce0c5f29_thumb.jpeg",
+    "s": "https://thicc.mywaifulist.moe/waifus/31919/958d038e9336be4c5741637c0a9b7496b291ef138579829d619fefecce0c5f29_thumb.jpeg",
+    "w": "Angel Blade",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 5304935,
+    "n": "General Chloe",
+    "t": 5,
+    "i": "130589.jpg",
+    "s": "https://cdn.myanimelist.net/images/characters/14/130589.jpg",
+    "w": "Angel Blade",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 5782630,
+    "n": "Coronel Elaine",
+    "t": 5,
+    "i": "130553.jpg",
+    "s": "https://cdn.myanimelist.net/images/characters/13/130553.jpg",
+    "w": "Angel Blade",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 4574337,
+    "n": "Utsutsu",
+    "t": 4,
+    "i": "6063b60e3871b4d66c12c54622bbfa8e.jpg",
+    "s": "https://i.postimg.cc/90ZfX0pv/6063b60e3871b4d66c12c54622bbfa8e.jpg",
+    "w": "Basilisk",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 8641002,
+    "n": "Rui",
+    "t": 4,
+    "i": "8e15ef6c537afd8da093e07ebdf58cbf101d5eb6990acdf8d8b5d66d5ceaffb7_thumb.jpeg",
+    "s": "https://thicc.mywaifulist.moe/waifus/10869/8e15ef6c537afd8da093e07ebdf58cbf101d5eb6990acdf8d8b5d66d5ceaffb7_thumb.jpeg",
+    "w": "Basilisk",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 9550082,
+    "n": "Okoi",
+    "t": 4,
+    "i": "691706ebcdab999ef1db0c9bf3d63310.jpg",
+    "s": "https://i.postimg.cc/g0C4XBp1/691706ebcdab999ef1db0c9bf3d63310.jpg",
+    "w": "Basilisk",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 1901067,
+    "n": "Oboro",
+    "t": 1,
+    "i": "185004-hell47.jpg",
+    "s": "https://i.postimg.cc/fRKhvmyH/185004-hell47.jpg",
+    "w": "Basilisk",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 8389090,
+    "n": "Namenba",
+    "t": 4,
+    "i": "ec45bcbaa417638d8523f38653c4bf4418f6344er1-1200-675v2-hq.jpg",
+    "s": "https://i.postimg.cc/kMfXnrq1/ec45bcbaa417638d8523f38653c4bf4418f6344er1-1200-675v2-hq.jpg",
+    "w": "Basilisk",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 1776354,
+    "n": "Kagerou",
+    "t": 4,
+    "i": "48a0bbc31c7f7d9bf9ddabff129931a9.jpg",
+    "s": "https://i.postimg.cc/vHrg72s5/48a0bbc31c7f7d9bf9ddabff129931a9.jpg",
+    "w": "Basilisk",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 3726235,
+    "n": "Iwashita Ayane",
+    "t": 1,
+    "i": "3f56e121f71824c542ec5c841f2bec99.jpg",
+    "s": "https://img3.gelbooru.com/images/3f/56/3f56e121f71824c542ec5c841f2bec99.jpg",
+    "w": "Blush-DC",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Ono"
+  },
+  {
+    "u": 4021145,
+    "n": "Cara-Cromwell",
+    "t": 6,
+    "i": "Cara-Cromwell.png",
+    "s": "https://i.postimg.cc/tRzmRM97/Cara-Cromwell.png",
+    "w": "Cara the Bloodlord",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 3764681,
+    "n": "Azuma Kamimura",
+    "t": 5,
+    "i": "b1f7ca59a885004ebd2b20097c52f18dbeafe313009e83bbd345843fbf1a9a63_thumb.jpeg",
+    "s": "https://thicc.mywaifulist.moe/waifus/28504/b1f7ca59a885004ebd2b20097c52f18dbeafe313009e83bbd345843fbf1a9a63_thumb.jpeg",
+    "w": "Cara the Bloodlord",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 7351466,
+    "n": "The Flagellant",
+    "t": 4,
+    "i": "The-Flagellant.png",
+    "s": "https://i.postimg.cc/W4VMJ91H/The-Flagellant.png",
+    "w": "Darkest Dungeon",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 6788034,
+    "n": "Occultist",
+    "t": 4,
+    "i": "Occultist.png",
+    "s": "https://i.postimg.cc/xTkyrJZt/Occultist.png",
+    "w": "Darkest Dungeon",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 8645594,
+    "n": "Man-At-Arms",
+    "t": 4,
+    "i": "Man-At-Arms.png",
+    "s": "https://i.postimg.cc/T1sVLfKV/Man-At-Arms.png",
+    "w": "Darkest Dungeon",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 5184745,
+    "n": "Leper",
+    "t": 4,
+    "i": "Leper.png",
+    "s": "https://i.postimg.cc/MK45XbBC/Leper.png",
+    "w": "Darkest Dungeon",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 2546254,
+    "n": "Jester",
+    "t": 4,
+    "i": "Jester.png",
+    "s": "https://i.postimg.cc/HW6B1Cks/Jester.png",
+    "w": "Darkest Dungeon",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 7901366,
+    "n": "Hwyman",
+    "t": 4,
+    "i": "Hwyman.png",
+    "s": "https://i.postimg.cc/yYWnVrDh/Hwyman.png",
+    "w": "Darkest Dungeon",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 3900047,
+    "n": "Hound Master",
+    "t": 4,
+    "i": "Hound-Master.png",
+    "s": "https://i.postimg.cc/ZnnP5C5Y/Hound-Master.png",
+    "w": "Darkest Dungeon",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 6926942,
+    "n": "Crusader",
+    "t": 4,
+    "i": "Crusader.png",
+    "s": "https://i.postimg.cc/C1FH9vyq/Crusader.png",
+    "w": "Darkest Dungeon",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 8423285,
+    "n": "Bounty Hunter",
+    "t": 4,
+    "i": "Bounty-Hunter.png",
+    "s": "https://i.postimg.cc/TPjJkzsx/Bounty-Hunter.png",
+    "w": "Darkest Dungeon",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 7967388,
+    "n": "Abomination",
+    "t": 4,
+    "i": "Abomination-Combo.png",
+    "s": "https://i.postimg.cc/cLnm3gMr/Abomination-Combo.png",
+    "w": "Darkest Dungeon",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 6234098,
+    "n": "Highwayman",
+    "t": 4,
+    "i": "Dd2-highwayman-portrait-cropped.png",
+    "s": "https://i.postimg.cc/Kvcr0p7S/Dd2-highwayman-portrait-cropped.png",
+    "w": "Darkest Dungeon",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 2243852,
+    "n": "Shambler",
+    "t": 4,
+    "i": "shambler-sprite-attack-howl-png-11b46cce08ac8e461b31ce915af21b7f.png",
+    "s": "https://i.postimg.cc/rFWcYgqj/shambler-sprite-attack-howl-png-11b46cce08ac8e461b31ce915af21b7f.png",
+    "w": "Darkest Dungeon",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 3776716,
+    "n": "Antiquarian Foxdemon",
+    "t": 4,
+    "i": "descarga-2.jpg",
+    "s": "https://i.postimg.cc/MZM9yFYs/descarga-2.jpg",
+    "w": "Darkest Dungeon",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 6225211,
+    "n": "Enid Houndmaster",
+    "t": 4,
+    "i": "descarga.jpg",
+    "s": "https://i.postimg.cc/nhsW-wWHw/descarga.jpg",
+    "w": "Darkest Dungeon",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 9811684,
+    "n": "Red Lotus",
+    "t": 4,
+    "i": "descarga-1.jpg",
+    "s": "https://i.postimg.cc/JhzLnxmN/descarga-1.jpg",
+    "w": "Darkest Dungeon",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 7409488,
+    "n": "Lilith",
+    "t": 4,
+    "i": "maxresdefault-3.jpg",
+    "s": "https://i.postimg.cc/258HvX15/maxresdefault-3.jpg",
+    "w": "Darkest Dungeon",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 9217811,
+    "n": "Nictoris, The Eternal",
+    "t": 4,
+    "i": "descarganictoris.jpg",
+    "s": "https://i.postimg.cc/dt2TFs4b/descarga.jpg",
+    "w": "Darkest Dungeon",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 7223733,
+    "n": "Aria, The Succubus",
+    "t": 4,
+    "i": "maxresdefault-2aria.jpg",
+    "s": "https://i.postimg.cc/zBQGCMpS/maxresdefault-2.jpg",
+    "w": "Darkest Dungeon",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 7150711,
+    "n": "The Werewolf",
+    "t": 4,
+    "i": "maxresdefault-1were.jpg",
+    "s": "https://i.postimg.cc/pLc4LHdZ/maxresdefault-1.jpg",
+    "w": "Darkest Dungeon",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 6701504,
+    "n": "Duchess",
+    "t": 4,
+    "i": "maxresdefaultduch.jpg",
+    "s": "https://i.postimg.cc/nVszFFcd/maxresdefault.jpg",
+    "w": "Darkest Dungeon",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 7696462,
+    "n": "Omen Seeker",
+    "t": 4,
+    "i": "sample-19cc7aa9ef70778d38aa0fa3e2c03f8e.jpg",
+    "s": "https://i.postimg.cc/d3WDx3qd/sample-19cc7aa9ef70778d38aa0fa3e2c03f8e.jpg",
+    "w": "Darkest Dungeon",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 7158528,
+    "n": "Vestal",
+    "t": 4,
+    "i": "684px-Vestal.png",
+    "s": "https://gamepedia.cursecdn.com/darkestdungeon_gamepedia/thumb/1/14/Vestal.png/684px-Vestal.png",
+    "w": "Darkest Dungeon",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 9961269,
+    "n": "Shieldbreaker",
+    "t": 4,
+    "i": "638px-The_Shieldbreaker.png",
+    "s": "https://gamepedia.cursecdn.com/darkestdungeon_gamepedia/thumb/4/4d/The_Shieldbreaker.png/638px-The_Shieldbreaker.png",
+    "w": "Darkest Dungeon",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 5704322,
+    "n": "Plague Doctor",
+    "t": 4,
+    "i": "743px-Plague-Doctor.png",
+    "s": "https://i.postimg.cc/mr4pmgh8/743px-Plague-Doctor.png",
+    "w": "Darkest Dungeon",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 8468863,
+    "n": "Musketeer",
+    "t": 4,
+    "i": "Musketeer.jpg",
+    "s": "https://i.postimg.cc/ZRM950dc/Musketeer.jpg",
+    "w": "Darkest Dungeon",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 4255211,
+    "n": "Hellion",
+    "t": 4,
+    "i": "800px-Hellion.png",
+    "s": "https://i.postimg.cc/pdMJPcHT/800px-Hellion.png",
+    "w": "Darkest Dungeon",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 7630764,
+    "n": "Grave Robber",
+    "t": 4,
+    "i": "604px-Grave-Robber.png",
+    "s": "https://i.postimg.cc/6Q6TVCVc/604px-Grave-Robber.png",
+    "w": "Darkest Dungeon",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 3863763,
+    "n": "Arbalest",
+    "t": 4,
+    "i": "800px-Arbalest.png",
+    "s": "https://i.postimg.cc/BQwFnYx3/800px-Arbalest.png",
+    "w": "Darkest Dungeon",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 9902362,
+    "n": "Antiquarian",
+    "t": 4,
+    "i": "Antiquarian.png",
+    "s": "https://gamepedia.cursecdn.com/darkestdungeon_gamepedia/2/23/Antiquarian.png",
+    "w": "Darkest Dungeon",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 7204814,
+    "n": "Artemisia Bell Ashcroft",
+    "t": 6,
+    "i": "19bca1dcdaaa8a91d89b8a2beba38ac64f67ac73b120c2933353c44db4ad7037_thumb.png",
+    "s": "https://thicc.mywaifulist.moe/waifus/15513/19bca1dcdaaa8a91d89b8a2beba38ac64f67ac73b120c2933353c44db4ad7037_thumb.png",
+    "w": "Date A Live",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Kairu"
+  },
+  {
+    "u": 9775626,
+    "n": "Isaac Westcott",
+    "t": 6,
+    "i": "https://i.imgur.com/Nh4VQIWm.jpeg",
+    "s": "https://i.imgur.com/Nh4VQIW.jpeg",
+    "w": "Date A Live",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Kairu"
+  },
+  {
+    "u": 5844272,
+    "n": "bane",
+    "t": 4,
+    "i": "__batman_and_bane_dc_comics_and_1_more_drawn_by_dcwj__sample-25096e96dbcfdf29e6b1fa7e97033213.jpg",
+    "s": "https://cdn.donmai.us/sample/25/09/__batman_and_bane_dc_comics_and_1_more_drawn_by_dcwj__sample-25096e96dbcfdf29e6b1fa7e97033213.jpg",
+    "w": "DC ",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "oneye"
+  },
+  {
+    "u": 5132710,
+    "n": "Vegetto",
+    "t": 10,
+    "i": "__vegetto_and_vegetto_dragon_ball_and_2_more_drawn_by_ushi_akabec0__sample-270d6eb1947b8db2ec189937456200d0.jpg",
+    "s": "https://cdn.donmai.us/sample/27/0d/__vegetto_and_vegetto_dragon_ball_and_2_more_drawn_by_ushi_akabec0__sample-270d6eb1947b8db2ec189937456200d0.jpg",
+    "w": "Dragonball Multiverse",
+    "d": "",
+    "b": [
+      "M",
+      "hp",
+      "st",
+      "hr",
+      "hz",
+      "cl",
+      "ur",
+      "sc",
+      "di",
+      "th"
+    ],
+    "k": "Cyrus"
+  },
+  {
+    "u": 2781998,
+    "n": "Vegeta (SSJ4)",
+    "t": 10,
+    "i": "c544c34a55687da6249b2545835738af.jpg",
+    "s": "https://i.pinimg.com/736x/c5/44/c3/c544c34a55687da6249b2545835738af.jpg",
+    "w": "Dragonball series",
+    "d": "GT",
+    "b": [
+      "M",
+      "hp",
+      "st",
+      "hr",
+      "hz",
+      "cl",
+      "ur",
+      "sc",
+      "di",
+      "th"
+    ],
+    "k": "Cyrus"
+  },
+  {
+    "u": 5204149,
+    "n": "Goku (SSJ4)",
+    "t": 10,
+    "i": "__son_goku_dragon_ball_and_1_more_drawn_by_mattari_illust__33e613b83a9e352d11e466570b38f217.jpg",
+    "s": "https://cdn.donmai.us/original/33/e6/__son_goku_dragon_ball_and_1_more_drawn_by_mattari_illust__33e613b83a9e352d11e466570b38f217.jpg",
+    "w": "Dragonball series",
+    "d": "GT",
+    "b": [
+      "M",
+      "hp",
+      "st",
+      "hr",
+      "hz",
+      "cl",
+      "ur",
+      "sc",
+      "di",
+      "th"
+    ],
+    "k": "Cyrus"
+  },
+  {
+    "u": 7175776,
+    "n": "Mouse",
+    "t": 5,
+    "i": "Mouse72.jpg",
+    "s": "https://i.postimg.cc/8PnjQJmy/Mouse72.jpg",
+    "w": "Dresden Files",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 3530162,
+    "n": "Kitagawa Marin",
+    "t": 1,
+    "i": "484b748cb18aba6dbd9c319dd296dcf1.png",
+    "s": "https://img3.gelbooru.com/images/48/4b/484b748cb18aba6dbd9c319dd296dcf1.png",
+    "w": "Dress Up Darling",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Ono"
+  },
+  {
+    "u": 6619876,
+    "n": "Whisper",
+    "t": 4,
+    "i": "descarga-3.jpg",
+    "s": "https://i.postimg.cc/nhwSJfVt/descarga-3.jpg",
+    "w": "Fable The Lost Chapters",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 5684260,
+    "n": "Theresa",
+    "t": 4,
+    "i": "Theresa-Fable-the-journey.jpg",
+    "s": "https://i.postimg.cc/vHspqyTq/Theresa-Fable-the-journey.jpg",
+    "w": "Fable The Lost Chapters",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 3183902,
+    "n": "Scarlet Robe",
+    "t": 4,
+    "i": "aa77c3438d7f30a7f68af6fc136697b8.jpg",
+    "s": "https://i.postimg.cc/FKHvP4W5/aa77c3438d7f30a7f68af6fc136697b8.jpg",
+    "w": "Fable The Lost Chapters",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 6486482,
+    "n": "Elvira Grey",
+    "t": 2,
+    "i": "Fable-conceptart-Rtvn-N.jpg",
+    "s": "https://i.postimg.cc/MHcgCZRN/Fable-conceptart-Rtvn-N.jpg",
+    "w": "Fable The Lost Chapters",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 6998036,
+    "n": "Kasugano Tsubaki",
+    "t": 4,
+    "i": "__kasugano_tsubaki_mirai_nikki_drawn_by_lolo_loki__93959a08b9f91e5cc0b6c9104199d64a.jpg",
+    "s": "https://cdn.donmai.us/original/93/95/__kasugano_tsubaki_mirai_nikki_drawn_by_lolo_loki__93959a08b9f91e5cc0b6c9104199d64a.jpg",
+    "w": "Future Diary",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 2488432,
+    "n": "Houjou Reisuke",
+    "t": 4,
+    "i": "__houjou_reisuke_mirai_nikki_drawn_by_dagashi_daga2626__b8c2edce2e4107095e1077cd17fe524d.png",
+    "s": "https://cdn.donmai.us/original/b8/c2/__houjou_reisuke_mirai_nikki_drawn_by_dagashi_daga2626__b8c2edce2e4107095e1077cd17fe524d.png",
+    "w": "Future Diary",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 4202758,
+    "n": "Deus Ex Machina",
+    "t": 11,
+    "i": "Deus-Ex-Machina2.jpg",
+    "s": "https://i.postimg.cc/WpC15NCL/Deus-Ex-Machina2.jpg",
+    "w": "Future Diary",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 1372058,
+    "n": "Yukiteru Amano (God)",
+    "t": 11,
+    "i": "Mirai.Nikki.full.1083080.jpg",
+    "s": "https://static.zerochan.net/Mirai.Nikki.full.1083080.jpg",
+    "w": "Future Diary",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 9838663,
+    "n": "Yukiteru Amano",
+    "t": 4,
+    "i": "a76aeffc7c13093408e020c44ca8b839--future-diary-anime-guys.jpg",
+    "s": "https://i.pinimg.com/736x/a7/6a/ef/a76aeffc7c13093408e020c44ca8b839--future-diary-anime-guys.jpg",
+    "w": "Future Diary",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 5878217,
+    "n": "Mabel Gleeful",
+    "t": 5,
+    "i": "dd7a4fa7a0cbc85ec30d5d3c85d2c30e.jpg",
+    "s": "https://i.pinimg.com/originals/dd/7a/4f/dd7a4fa7a0cbc85ec30d5d3c85d2c30e.jpg",
+    "w": "Gravity Falls",
+    "d": "Reverse Falls",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 4641800,
+    "n": "Dipper Gleeful",
+    "t": 5,
+    "i": "03183954acaf7dfda0b8ecb4bd86c658c994edef_00.jpg",
+    "s": "http://pm1.narvii.com/6205/03183954acaf7dfda0b8ecb4bd86c658c994edef_00.jpg",
+    "w": "Gravity Falls",
+    "d": "Reverse Falls",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 1966395,
+    "n": "Adrian Shephard",
+    "t": 5,
+    "i": "zJ5TCZl9_400x400.jpg",
+    "s": "https://pbs.twimg.com/profile_images/981691700014993408/zJ5TCZl9_400x400.jpg",
+    "w": "Half-Life",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 5695526,
+    "n": "G-Man",
+    "t": 11,
+    "i": "HLA-G-Man-Cropped.jpg",
+    "s": "https://i.postimg.cc/mZmvnqJY/HLA-G-Man-Cropped.jpg",
+    "w": "Half-Life",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 5156800,
+    "n": "Combine Advisor",
+    "t": 5,
+    "i": "6a14fb5d6b80910bf25989500c11c3bb.jpg",
+    "s": "https://i.postimg.cc/rpz0S7Bf/6a14fb5d6b80910bf25989500c11c3bb.jpg",
+    "w": "Half-Life",
+    "d": "",
+    "b": [
+      "O"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 8617594,
+    "n": "Antlion King",
+    "t": 6,
+    "i": "daxtlsm-367f6542-419f-43fd-8244-a3ca5a60575f.jpg",
+    "s": "https://i.postimg.cc/ZRGTvQmv/daxtlsm-367f6542-419f-43fd-8244-a3ca5a60575f.jpg",
+    "w": "Half-Life",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 3390846,
+    "n": "Gonarch",
+    "t": 5,
+    "i": "1aaeaea190a56d7fdcfe3a77e22ceab7.jpg",
+    "s": "https://i.pinimg.com/originals/1a/ae/ae/1aaeaea190a56d7fdcfe3a77e22ceab7.jpg",
+    "w": "Half-Life",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 4720729,
+    "n": "Nihilanth",
+    "t": 8,
+    "i": "eugene-du-nihilanth-public.jpg",
+    "s": "https://i.postimg.cc/MZc334Yj/eugene-du-nihilanth-public.jpg",
+    "w": "Half-Life",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 3318074,
+    "n": "Gordon Freeman",
+    "t": 5,
+    "i": "1f255ed93a72acde4ef42c70edee4583.jpg",
+    "s": "https://i.pinimg.com/originals/1f/25/5e/1f255ed93a72acde4ef42c70edee4583.jpg",
+    "w": "Half-Life",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 1961072,
+    "n": "Valentino",
+    "t": 7,
+    "i": "500x500valentino.jpg",
+    "s": "https://cdns-images.dzcdn.net/images/cover/0955d145a8fe5afb8a7e97acfd2d719c/500x500.jpg",
+    "w": "Hazbin Hotel",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 6421403,
+    "n": "Vox",
+    "t": 7,
+    "i": "77075fea816a628e22d2b07a12bcd650.jpg",
+    "s": "https://i.pinimg.com/originals/77/07/5f/77075fea816a628e22d2b07a12bcd650.jpg",
+    "w": "Hazbin Hotel",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 8896197,
+    "n": "Alastor",
+    "t": 8,
+    "i": "dec40nq-cff066f3-b57f-4e21-9261-b9b832786db7.png",
+    "s": "https://i.postimg.cc/wBjXm8G4/dec40nq-cff066f3-b57f-4e21-9261-b9b832786db7.png",
+    "w": "Hazbin Hotel",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 8999050,
+    "n": "Angel Dust",
+    "t": 5,
+    "i": "a1e9c9f119b9abca184182eedba4bc4c807eb21fr1-540-950v2_uhq.jpg",
+    "s": "http://pm1.narvii.com/7001/a1e9c9f119b9abca184182eedba4bc4c807eb21fr1-540-950v2_uhq.jpg",
+    "w": "Hazbin Hotel",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 6535844,
+    "n": "Husk",
+    "t": 4,
+    "i": "oevyaxml1vr61.jpg",
+    "s": "https://i.redd.it/oevyaxml1vr61.jpg",
+    "w": "Hazbin Hotel",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 5173968,
+    "n": "Niffy",
+    "t": 4,
+    "i": "5ae4e1dc767d46bba90ecb7dbd8962ce.jpg",
+    "s": "https://i.pinimg.com/474x/5a/e4/e1/5ae4e1dc767d46bba90ecb7dbd8962ce.jpg",
+    "w": "Hazbin Hotel",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 9604879,
+    "n": "Lilith Magne",
+    "t": 9,
+    "i": "__lilith_hazbin_hotel_drawn_by_neg_50asu__3d38c085bb299abe262276d10132c9ec.jpg",
+    "s": "https://cdn.donmai.us/original/3d/38/__lilith_hazbin_hotel_drawn_by_neg_50asu__3d38c085bb299abe262276d10132c9ec.jpg",
+    "w": "Hazbin Hotel",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 3353186,
+    "n": "Cherri Bomb",
+    "t": 5,
+    "i": "003e99ed8e786d0cd66758030911aacb58deb063r1-1080-1053v2_uhq.jpg",
+    "s": "http://pm1.narvii.com/7412/003e99ed8e786d0cd66758030911aacb58deb063r1-1080-1053v2_uhq.jpg",
+    "w": "Hazbin Hotel",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 9957969,
+    "n": "Vaggie",
+    "t": 5,
+    "i": "ced6fbb583efe5f6a134c4d0a15f1e9267818ba2r1-811-1200v2_uhq.jpg",
+    "s": "http://pm1.narvii.com/7470/ced6fbb583efe5f6a134c4d0a15f1e9267818ba2r1-811-1200v2_uhq.jpg",
+    "w": "Hazbin Hotel",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 6003927,
+    "n": "Verosika Mayday ",
+    "t": 4,
+    "i": "Verosika.Mayday.full.3208024.jpg",
+    "s": "https://static.zerochan.net/Verosika.Mayday.full.3208024.jpg",
+    "w": "Helluva Boss",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 3200742,
+    "n": "Millie",
+    "t": 5,
+    "i": "Helluva-Boss-Millie-promocional.png",
+    "s": "https://i.postimg.cc/Vv8tSw-PT/Helluva-Boss-Millie-promocional.png",
+    "w": "Helluva Boss",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 3873259,
+    "n": "Maisie",
+    "t": 5,
+    "i": "https://i.imgur.com/cnBjFGLm.jpg",
+    "s": "https://i.imgur.com/cnBjFGL.jpg",
+    "w": "Hentai",
+    "d": "Slave Witch April",
+    "b": [
+      "F"
+    ],
+    "k": "Nobody"
+  },
+  {
+    "u": 2852541,
+    "n": "April",
+    "t": 5,
+    "i": "https://i.imgur.com/mbF2mmYm.jpg",
+    "s": "https://i.imgur.com/mbF2mmY.jpg",
+    "w": "Hentai",
+    "d": "Slave Witch April",
+    "b": [
+      "F",
+      "wh"
+    ],
+    "k": "Nobody"
+  },
+  {
+    "u": 4747304,
+    "n": "Maria Mido",
+    "t": 5,
+    "i": "__injuu_gakuen_la_blue_girl_drawn_by_javier_estrada__sample-7127f4831bd308354cfb4d126ddbc683.jpg",
+    "s": "https://cdn.donmai.us/sample/71/27/__injuu_gakuen_la_blue_girl_drawn_by_javier_estrada__sample-7127f4831bd308354cfb4d126ddbc683.jpg",
+    "w": "Hentai",
+    "d": "La Blue Girl",
+    "b": [
+      "F"
+    ],
+    "in": "https://i.imgur.com/G8zJCnn.jpg",
+    "k": "Sogen"
+  },
+  {
+    "u": 8369145,
+    "n": "Miko Mido",
+    "t": 5,
+    "i": "https://i.imgur.com/kHm5muYm.jpg",
+    "s": "https://i.imgur.com/kHm5muY.jpg",
+    "w": "Hentai",
+    "d": "La Blue Girl",
+    "b": [
+      "F"
+    ],
+    "in": "https://cdn.donmai.us/original/91/df/__midou_miko_injuu_gakuen_la_blue_girl_drawn_by_rin_sin__91df068edbb2d81c5e068326861d32cc.jpg",
+    "k": "Sogen"
+  },
+  {
+    "u": 7037813,
+    "n": "Yaku",
+    "t": 4,
+    "i": "5688-1277791623.jpg",
+    "s": "https://ami.animecharactersdatabase.com/uploads/chars/5688-1277791623.jpg",
+    "w": "Hentai",
+    "d": "La Blue Girl",
+    "b": [
+      "F"
+    ],
+    "in": "https://64.media.tumblr.com/23a23476bd85b664197bc966928a83d4/5355b94ed49192ce-cb/s1280x1920/42dd261f42f1c99cc26cacb5270e6c81b5593ec1.jpg",
+    "k": "Sogen"
+  },
+  {
+    "u": 7454089,
+    "n": "Reika Kitami",
+    "t": 4,
+    "i": "Reika_Kitami_Bible_Black.jpg",
+    "s": "https://static.wikia.nocookie.net/evilbabes/images/1/12/Reika_Kitami_%28Bible_Black%29.jpg",
+    "w": "Hentai",
+    "d": "Bible Black",
+    "b": [
+      "F",
+      "bj",
+      "wh"
+    ],
+    "k": "Templar9999 "
+  },
+  {
+    "u": 9325561,
+    "n": "Kaya Blanche",
+    "t": 6,
+    "i": "Kaya-illustration.png",
+    "s": "https://i.postimg.cc/g0dYh7LQ/Kaya-illustration.png",
+    "w": "Hentai",
+    "d": "Tentacles and Witches",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 4400607,
+    "n": "Futaba Lily Ramses",
+    "t": 5,
+    "i": "Lily-Shin-Gamera.png",
+    "s": "https://i.postimg.cc/gcMnWGLJ/Lily-Shin-Gamera.png",
+    "w": "Hentai",
+    "d": "Tentacles and Witches",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 3403520,
+    "n": "Yuko Marino",
+    "t": 6,
+    "i": "4758-151066070.png",
+    "s": "https://rei.animecharactersdatabase.com/uploads/chars/4758-151066070.png",
+    "w": "Hentai",
+    "d": "Tentacles and Witches",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 8939853,
+    "n": "Annerose Vajra",
+    "t": 5,
+    "i": "14604-1958901400.png",
+    "s": "https://rei.animecharactersdatabase.com/uploads/chars/14604-1958901400.png",
+    "w": "Hentai",
+    "d": "Kotetsu no Majo Annerose",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 7696572,
+    "n": "Sonya",
+    "t": 5,
+    "i": "sample-b00ecdfc7ee8395fe8a8ca189630d6e5.jpg",
+    "s": "https://i.postimg.cc/X75z9Yb1/sample-b00ecdfc7ee8395fe8a8ca189630d6e5.jpg",
+    "w": "Heroes of the Storm",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 3282962,
+    "n": "Sgt Hammer (With Tank)",
+    "t": 5,
+    "i": "Sergeant-Hammer-SC2-Lot-V-Portrait.png",
+    "s": "https://i.postimg.cc/kGzNHqFj/Sergeant-Hammer-SC2-Lot-V-Portrait.png",
+    "w": "Heroes of the Storm",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 3621339,
+    "n": "Li Li",
+    "t": 4,
+    "i": "sample-5a27fcc4faaf7f32a7a4159fbd24d134.jpg",
+    "s": "https://i.postimg.cc/nL4dQjYn/sample-5a27fcc4faaf7f32a7a4159fbd24d134.jpg",
+    "w": "Heroes of the Storm",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 2570743,
+    "n": "Zagara",
+    "t": 5,
+    "i": "844339f9bef0b5ca4c26728e43fa8fd5.jpg",
+    "s": "https://i.postimg.cc/ZnTXqPGk/844339f9bef0b5ca4c26728e43fa8fd5.jpg",
+    "w": "Heroes of the Storm",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 3235826,
+    "n": "Johanna",
+    "t": 5,
+    "i": "35ae26cce2eb8ded5344cc3fb4940fa9.jpg",
+    "s": "https://i.pinimg.com/564x/35/ae/26/35ae26cce2eb8ded5344cc3fb4940fa9.jpg",
+    "w": "Heroes of the Storm",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 2361337,
+    "n": "Lt Morales",
+    "t": 5,
+    "i": "sample-30511f55b1bfb693719a5953139d5a6f.jpg",
+    "s": "https://i.postimg.cc/vB9Gnv2c/sample-30511f55b1bfb693719a5953139d5a6f.jpg",
+    "w": "Heroes of the Storm",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 5587779,
+    "n": "Lunara",
+    "t": 5,
+    "i": "e1d00c2091a2ad8a11972ae659378974.jpg",
+    "s": "https://i.postimg.cc/VLFL4Dft/e1d00c2091a2ad8a11972ae659378974.jpg",
+    "w": "Heroes of the Storm",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 8773279,
+    "n": "Chromie",
+    "t": 7,
+    "i": "sample-acfd3d8212c506e14bf6268bfe1220bf.jpg",
+    "s": "https://i.postimg.cc/Fz71wSTv/sample-acfd3d8212c506e14bf6268bfe1220bf.jpg",
+    "w": "Heroes of the Storm",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 9452323,
+    "n": "Quira",
+    "t": 5,
+    "i": "heroes-of-the-storm-qhira-748x488.jpg",
+    "s": "https://i.postimg.cc/RF1Tqkmh/heroes-of-the-storm-qhira-748x488.jpg",
+    "w": "Heroes of the Storm",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 8063268,
+    "n": "Makimura Chizuru",
+    "t": 1,
+    "i": "Chizuru_Makimura_for_Holy_Knights.jpg",
+    "s": "https://characters.fandom.com/wiki/File:Chizuru_Makimura_2_for_Holy_Knights.jpg",
+    "w": "Holy Knight",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Ono"
+  },
+  {
+    "u": 1248597,
+    "n": "Fafnir",
+    "t": 5,
+    "i": "37979.jpg",
+    "s": "https://s2.vndb.org/ch/79/37979.jpg",
+    "w": "Ikusa Otome Valkyrie 2",
+    "d": "",
+    "b": [
+      "F",
+      "dm"
+    ],
+    "k": "Sogen"
+  },
+  {
+    "u": 4064685,
+    "n": "Loki",
+    "t": 5,
+    "i": "37980.jpg",
+    "s": "https://s2.vndb.org/ch/80/37980.jpg",
+    "w": "Ikusa Otome Valkyrie 2",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Sogen"
+  },
+  {
+    "u": 6197073,
+    "n": "Fenrir",
+    "t": 5,
+    "i": "36090.jpg",
+    "s": "https://s2.vndb.org/ch/90/36090.jpg",
+    "w": "Ikusa Otome Valkyrie 2",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Sogen"
+  },
+  {
+    "u": 7810946,
+    "n": "Freya",
+    "t": 5,
+    "i": "36087.jpg",
+    "s": "https://s2.vndb.org/ch/87/36087.jpg",
+    "w": "Ikusa Otome Valkyrie 2",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Sogen"
+  },
+  {
+    "u": 6655949,
+    "n": "Hildegard",
+    "t": 5,
+    "i": "37978.jpg",
+    "s": "https://s2.vndb.org/ch/78/37978.jpg",
+    "w": "Ikusa Otome Valkyrie 2",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Sogen"
+  },
+  {
+    "u": 5577810,
+    "n": "Leia",
+    "t": 5,
+    "i": "36086.jpg",
+    "s": "https://s2.vndb.org/ch/86/36086.jpg",
+    "w": "Ikusa Otome Valkyrie 2",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Sogen"
+  },
+  {
+    "u": 7208741,
+    "n": "Maya Cordelia",
+    "t": 3,
+    "i": "Maya-Cordelia-1.png",
+    "s": "https://i.postimg.cc/MKs8rG46/Maya-Cordelia-1.png",
+    "w": "Kangoku Senkan",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 5031791,
+    "n": "Alica Viewstroem",
+    "t": 3,
+    "i": "44158-722059424.jpg",
+    "s": "https://ami.animecharactersdatabase.com/uploads/chars/44158-722059424.jpg",
+    "w": "Kangoku Senkan",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 7282927,
+    "n": "Kiria Jeff",
+    "t": 3,
+    "i": "de6klsj-1d0a6504-b5d2-4dc4-9917-4b02f447418a.jpg",
+    "s": "https://i.postimg.cc/sx7v4hKg/de6klsj-1d0a6504-b5d2-4dc4-9917-4b02f447418a.jpg",
+    "w": "Kangoku Senkan",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 4067048,
+    "n": "Beatrice Kushan",
+    "t": 3,
+    "i": "cb755a5ad1f50075d09d1cc5be647e78.jpg",
+    "s": "https://cdn.donmai.us/original/cb/75/cb755a5ad1f50075d09d1cc5be647e78.jpg",
+    "w": "Kangoku Senkan",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 1514853,
+    "n": "Kila Kushan",
+    "t": 3,
+    "i": "528b54b32823a9b463c890e8b328c5e6.jpg",
+    "s": "https://i.pinimg.com/originals/52/8b/54/528b54b32823a9b463c890e8b328c5e6.jpg",
+    "w": "Kangoku Senkan",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 8347603,
+    "n": "Lieri Bishop",
+    "t": 3,
+    "i": "Lieri-Bishop-SmK2p1SOf-b.jpg",
+    "s": "https://photos1.iorbix.com/00/00/00/00/02/46/75/92/Lieri-Bishop-SmK2p1SOf-b.jpg",
+    "w": "Kangoku Senkan",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 5980735,
+    "n": "Anastasia D. Faizland",
+    "t": 2,
+    "i": "st3viztl2u861.jpg",
+    "s": "https://i.redd.it/st3viztl2u861.jpg",
+    "w": "Lilith-Soft",
+    "d": "Captive Market",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 8758165,
+    "n": "Danes C. Asriel",
+    "t": 2,
+    "i": "5688-974067908.jpg",
+    "s": "https://ami.animecharactersdatabase.com/uploads/chars/5688-974067908.jpg",
+    "w": "Lilith-Soft",
+    "d": "Captive Market",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 9579650,
+    "n": "Alice Walkure",
+    "t": 5,
+    "i": "blood-hell-night-alice-walkure-by-barrel2s1cool-deni2vf-fullview.jpg",
+    "s": "https://i.postimg.cc/9M42GH1m/blood-hell-night-alice-walkure-by-barrel2s1cool-deni2vf-fullview.jpg",
+    "w": "Mahou Kaiju",
+    "d": "Taima Seikou Alice",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 2230550,
+    "n": "Marika Krishna",
+    "t": 5,
+    "i": "Marika-Krishna.png",
+    "s": "https://i.postimg.cc/Gp1kybQR/Marika-Krishna.png",
+    "w": "Mahou Kaiju",
+    "d": "Cara the Bloodlord",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 1246669,
+    "n": "Azuma Kamimura",
+    "t": 5,
+    "i": "b1f7ca59a885004ebd2b20097c52f18dbeafe313009e83bbd345843fbf1a9a63_thumb.jpeg",
+    "s": "https://thicc.mywaifulist.moe/waifus/28504/b1f7ca59a885004ebd2b20097c52f18dbeafe313009e83bbd345843fbf1a9a63_thumb.jpeg",
+    "w": "Mahou Kaiju",
+    "d": "Cara the Bloodlord",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 8796224,
+    "n": "Elder Guardian",
+    "t": 6,
+    "i": "4745ov616cu61.png",
+    "s": "https://i.redd.it/4745ov616cu61.png",
+    "w": "Minecraft",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 2199083,
+    "n": "Warden",
+    "t": 6,
+    "i": "992b34272f845b83e89039632ea32002.jpg",
+    "s": "https://i.pinimg.com/736x/99/2b/34/992b34272f845b83e89039632ea32002.jpg",
+    "w": "Minecraft",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 8163522,
+    "n": "Wither",
+    "t": 7,
+    "i": "0dfcb25f2fa9dbeeef506ba485f7fd10.jpg",
+    "s": "https://i.pinimg.com/originals/0d/fc/b2/0dfcb25f2fa9dbeeef506ba485f7fd10.jpg",
+    "w": "Minecraft",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 9928943,
+    "n": "Ender Dragon",
+    "t": 7,
+    "i": "ddnwp0a-623491ad-17a3-4ea8-a4f7-f4d89c1c842d.png",
+    "s": "https://i.postimg.cc/CLM9GfHL/ddnwp0a-623491ad-17a3-4ea8-a4f7-f4d89c1c842d.png",
+    "w": "Minecraft",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 9367369,
+    "n": "Kalgara",
+    "t": 6,
+    "i": "Kalgara_Digitally_Colored_Manga.png",
+    "s": "https://static.wikia.nocookie.net/onepiece/images/8/89/Kalgara_Digitally_Colored_Manga.png",
+    "w": "One Piece",
+    "d": "",
+    "b": [
+      "M",
+      "st",
+      "hr",
+      "cl",
+      "sc"
+    ],
+    "k": "Cyrus"
+  },
+  {
+    "u": 5066207,
+    "n": "Hiriluk",
+    "t": 2,
+    "i": "Hiriluk_Anime_Infobox.png",
+    "s": "https://static.wikia.nocookie.net/onepiece/images/c/c0/Hiriluk_Anime_Infobox.png",
+    "w": "One Piece",
+    "d": "",
+    "b": [
+      "M",
+      "dc",
+      "hr",
+      "cl"
+    ],
+    "k": "Cyrus"
+  },
+  {
+    "u": 9399518,
+    "n": "Zane",
+    "t": 4,
+    "i": "Borderlands-3-Zane-Jacket-640x800.jpg.webp",
+    "s": "https://www.danezon.com/wp-content/uploads/2020/03/Borderlands-3-Zane-Jacket-640x800.jpg.webp",
+    "w": "Pandora (Borderlands)",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "SortaCats"
+  },
+  {
+    "u": 4372994,
+    "n": "Timothy Lawrence",
+    "t": 4,
+    "i": "dfb56b411bc7a6386aac2fb293a02f52.jpg",
+    "s": "https://i.pinimg.com/564x/df/b5/6b/dfb56b411bc7a6386aac2fb293a02f52.jpg",
+    "w": "Pandora (Borderlands)",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "SortaCats"
+  },
+  {
+    "u": 1026839,
+    "n": "Roland",
+    "t": 4,
+    "i": "3ee2af2fbdc457c8fa75e46487b28b11.jpg",
+    "s": "https://i.pinimg.com/564x/3e/e2/af/3ee2af2fbdc457c8fa75e46487b28b11.jpg",
+    "w": "Pandora (Borderlands)",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "SortaCats"
+  },
+  {
+    "u": 8609690,
+    "n": "Zero",
+    "t": 4,
+    "i": "142a1859a270a79f23a69520aee490b1.jpg",
+    "s": "https://i.pinimg.com/originals/14/2a/18/142a1859a270a79f23a69520aee490b1.jpg",
+    "w": "Pandora (Borderlands)",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "SortaCats"
+  },
+  {
+    "u": 9194533,
+    "n": "Axton",
+    "t": 4,
+    "i": "Borderlands-2-Skill-Calculator-Commando.png",
+    "s": "https://cutewallpaper.org/21/borderlands-2-wallpaper-axton/Borderlands-2-Skill-Calculator-Commando.png",
+    "w": "Pandora (Borderlands)",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "SortaCats"
+  },
+  {
+    "u": 4958619,
+    "n": "Hunk",
+    "t": 3,
+    "i": "rer-lady-hunk.jpg",
+    "s": "https://www.creativeuncut.com/gallery-18/art/rer-lady-hunk.jpg",
+    "w": "Resident Evil",
+    "d": "",
+    "b": [
+      "M",
+      "cl",
+      "Soldier"
+    ],
+    "k": "AusthinH7"
+  },
+  {
+    "u": 8072100,
+    "n": "Eveline",
+    "t": 6,
+    "i": "__eveline_resident_evil_and_1_more_drawn_by_shigumo_shigeru__sample-a0d01f2cca07a9325b6092fcf1f81be1.jpg",
+    "s": "https://cdn.donmai.us/sample/a0/d0/__eveline_resident_evil_and_1_more_drawn_by_shigumo_shigeru__sample-a0d01f2cca07a9325b6092fcf1f81be1.jpg",
+    "w": "Resident Evil",
+    "d": "",
+    "b": [
+      "F",
+      "hl",
+      "mp",
+      "bj",
+      "cr"
+    ],
+    "k": "anon"
+  },
+  {
+    "u": 7494778,
+    "n": "Nadja Daviar",
+    "t": 4,
+    "i": "200px-Nadja_Daviar.jpg",
+    "s": "https://db4sgowjqfwig.cloudfront.net/images/3593840/200px-Nadja_Daviar.jpg",
+    "w": "Shadowrun",
+    "d": "Tabletop",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 3033186,
+    "n": "Katyana Burgeshkova",
+    "t": 2,
+    "i": "Katyana-Burgeshkova-Shadowrun-Sourcebook-The-Complete-Trog.webp",
+    "s": "https://i.postimg.cc/d1LLxXQ3/Katyana-Burgeshkova-Shadowrun-Sourcebook-The-Complete-Trog.webp",
+    "w": "Shadowrun",
+    "d": "Tabletop",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 8906520,
+    "n": "Hestaby",
+    "t": 7,
+    "i": "Hestaby-from-Shadowrun-Sourcebook-State-of-the-Art-2073.png",
+    "s": "https://i.postimg.cc/zfwLhWtD/Hestaby-from-Shadowrun-Sourcebook-State-of-the-Art-2073.png",
+    "w": "Shadowrun",
+    "d": "Tabletop",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 3665192,
+    "n": "Feuerschwinge",
+    "t": 7,
+    "i": "Npc-humanfemale-feuerschwinge.png",
+    "s": "https://i.postimg.cc/C5SsDSHX/Npc-humanfemale-feuerschwinge.png",
+    "w": "Shadowrun",
+    "d": "Tabletop",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 4283166,
+    "n": "Kitsune",
+    "t": 4,
+    "i": "6bb.png",
+    "s": "https://i.kym-cdn.com/photos/images/original/000/976/630/6bb.png",
+    "w": "Shadowrun",
+    "d": "Supernes",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 4597245,
+    "n": "Akimi",
+    "t": 4,
+    "i": "Akmi-snes-reboot.webp",
+    "s": "https://i.postimg.cc/t4X8yGKr/Akmi-snes-reboot.webp",
+    "w": "Shadowrun",
+    "d": "Supernes",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 1515384,
+    "n": "Shannon Half-sky",
+    "t": 3,
+    "i": "Shannon.png",
+    "s": "https://i.postimg.cc/m2MTh46B/Shannon.png",
+    "w": "Shadowrun",
+    "d": "Returns",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 9714121,
+    "n": "Coyote",
+    "t": 3,
+    "i": "Npc-humanfemale-coyotehealed.png",
+    "s": "https://i.postimg.cc/9XghLMsW-/Npc-humanfemale-coyotehealed.png",
+    "w": "Shadowrun",
+    "d": "Returns",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 2475263,
+    "n": "Cherry Bomb",
+    "t": 1,
+    "i": "Npc-elffemale-cherrybomb.png",
+    "s": "https://i.postimg.cc/RFMBDnM0/Npc-elffemale-cherrybomb.png",
+    "w": "Shadowrun",
+    "d": "Returns",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 3980248,
+    "n": "Is0bel",
+    "t": 3,
+    "i": "Npc-dwarffemale-is0bel.png",
+    "s": "https://i.postimg.cc/3JWKhp24/Npc-dwarffemale-is0bel.png",
+    "w": "Shadowrun",
+    "d": "Hong Kong",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 2596683,
+    "n": "Monika Schäfer",
+    "t": 5,
+    "i": "Npc-humanfemale-monika.webp",
+    "s": "https://i.postimg.cc/Fz4JqpYL/Npc-humanfemale-monika.webp",
+    "w": "Shadowrun",
+    "d": "Dragonfall",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 8590856,
+    "n": "Glory",
+    "t": 3,
+    "i": "sample-95d5c7d6754baad2f78cdeadde9a7fd8.jpg",
+    "s": "https://i.postimg.cc/hjH0GVfD/sample-95d5c7d6754baad2f78cdeadde9a7fd8.jpg",
+    "w": "Shadowrun",
+    "d": "Dragonfall",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 2374592,
+    "n": "Glimmer",
+    "t": 4,
+    "i": "fa8158238357b910dee44925e5fc934e.jpg",
+    "s": "https://i.pinimg.com/originals/fa/81/58/fa8158238357b910dee44925e5fc934e.jpg",
+    "w": "She-Ra and the Princesses of Power",
+    "d": "",
+    "b": [
+      "F",
+      "pc",
+      "az"
+    ],
+    "k": "Templar9999 "
+  },
+  {
+    "u": 3897042,
+    "n": "Adora",
+    "t": 7,
+    "i": "81cf0d51d2bd56b2e798f263bf0f5fcc.jpg",
+    "s": "https://i.pinimg.com/originals/81/cf/0d/81cf0d51d2bd56b2e798f263bf0f5fcc.jpg",
+    "w": "She-Ra and the Princesses of Power",
+    "d": "",
+    "b": [
+      "F",
+      "hl",
+      "st",
+      "sp",
+      "pc",
+      "az"
+    ],
+    "k": "Templar9999 "
+  },
+  {
+    "u": 4595971,
+    "n": "Kaede Fuyou",
+    "t": 1,
+    "i": "https://i.imgur.com/GzxCFeHm.jpg",
+    "s": "https://i.imgur.com/GzxCFeH.jpg",
+    "w": "Shuffle!",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Nobody"
+  },
+  {
+    "u": 7882909,
+    "n": "Primula",
+    "t": 6,
+    "i": "https://i.imgur.com/pizfg9am.jpg",
+    "s": "https://i.imgur.com/pizfg9a.jpg",
+    "w": "Shuffle!",
+    "d": "",
+    "b": [
+      "F",
+      "ps"
+    ],
+    "k": "Nobody"
+  },
+  {
+    "u": 6487934,
+    "n": "Asa Shigure",
+    "t": 2,
+    "i": "https://i.imgur.com/RKEbLcHm.jpg",
+    "s": "https://i.imgur.com/RKEbLcH.jpg",
+    "w": "Shuffle!",
+    "d": "",
+    "b": [
+      "F",
+      "dv"
+    ],
+    "k": "Nobody"
+  },
+  {
+    "u": 8145885,
+    "n": "Nerine",
+    "t": 5,
+    "i": "https://i.imgur.com/2w0VXytm.png",
+    "s": "https://i.imgur.com/2w0VXyt.png",
+    "w": "Shuffle!",
+    "d": "",
+    "b": [
+      "F",
+      "dv"
+    ],
+    "k": "Nobody"
+  },
+  {
+    "u": 6327682,
+    "n": "Lisianthus",
+    "t": 4,
+    "i": "https://i.imgur.com/WbYP0VYm.jpg",
+    "s": "https://i.imgur.com/WbYP0VY.jpg",
+    "w": "Shuffle!",
+    "d": "",
+    "b": [
+      "F",
+      "gd"
+    ],
+    "k": "Nobody"
+  },
+  {
+    "u": 2019720,
+    "n": "Titus Drautos (General Glauca)",
+    "t": 6,
+    "i": "glauca_ph01.png",
+    "s": "https://www.jp.square-enix.com/kingsglaive/sp/image/glauca_ph01.png",
+    "w": "Square (Final Fantasy)",
+    "d": "Final Fantasy XV",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 3024102,
+    "n": "Kalifa",
+    "t": 4,
+    "i": "Kalifa-PL.png",
+    "s": "https://static.wikia.nocookie.net/starwars/images/0/09/Kalifa-PL.png",
+    "w": "Star Wars",
+    "d": "Prequel Trilogy",
+    "b": [
+      "F"
+    ],
+    "k": "Darnoc"
+  },
+  {
+    "u": 1962412,
+    "n": "Abathur",
+    "t": 6,
+    "i": "Abathur_box_art.jpg",
+    "s": "https://static.wikia.nocookie.net/heroesofthestorm/images/1/17/Abathur_box_art.jpg",
+    "w": "Starcraft",
+    "d": "Zerg",
+    "b": [
+      "O",
+      "dc",
+      "st",
+      "hr",
+      "mt",
+      "dr",
+      "pl",
+      "rs",
+      "sn",
+      "ps"
+    ],
+    "in": "https://cdn.donmai.us/sample/8e/02/__zerg_and_abathur_starcraft_drawn_by_overlord_overlord80000__sample-8e021e2a180a36f548c598b5fd31501f.jpg",
+    "k": "Despin"
+  },
+  {
+    "u": 6452589,
+    "n": "Champion of Cyrodiil",
+    "t": 7,
+    "i": "09d91e9125b14b6a2393a37e077aa180.jpg",
+    "s": "https://i.pinimg.com/originals/09/d9/1e/09d91e9125b14b6a2393a37e077aa180.jpg",
+    "w": "The Elder Scrolls",
+    "d": "Oblivion",
+    "b": [
+      "M",
+      "hl",
+      "cl",
+      "sc",
+      "me",
+      "Warrior",
+      "Rogue",
+      "Champion"
+    ],
+    "k": "AusthinH7"
+  },
+  {
+    "u": 4775883,
+    "n": "Malygos",
+    "t": 8,
+    "i": "tumblr_oqhb5tDzTV1v5xkjko2_1280.jpg",
+    "s": "https://64.media.tumblr.com/055578b73d13e06f8d69fb4b463e4869/tumblr_oqhb5tDzTV1v5xkjko2_1280.png",
+    "w": "Warcraft",
+    "d": "",
+    "b": [
+      "F",
+      "dg"
+    ],
+    "k": "Yaldabaoth"
+  },
+  {
+    "u": 2006683,
+    "n": "Serena Praha",
+    "t": 5,
+    "i": "1401626-1594025537.jpg",
+    "s": "https://staticdelivery.nexusmods.com/images/2457/1401626-1594025537.jpg",
+    "w": "World of Darkness",
+    "d": "Vampire: Masquerade Redemption",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 1590378,
+    "n": "Lily",
+    "t": 4,
+    "i": "lily-vampire-bloodlines-vtmb-by-bagrada-ddzgdx1-pre.jpg",
+    "s": "https://i.postimg.cc/CKn3rsTY/lily-vampire-bloodlines-vtmb-by-bagrada-ddzgdx1-pre.jpg",
+    "w": "World of Darkness",
+    "d": "Vampire: Masquerade Redemption",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 3547257,
+    "n": "Anezka",
+    "t": 5,
+    "i": "1401626-1594025481.jpg",
+    "s": "https://staticdelivery.nexusmods.com/images/2457/1401626-1594025481.jpg",
+    "w": "World of Darkness",
+    "d": "Vampire: Masquerade Redemption",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 4823398,
+    "n": "Strider",
+    "t": 6,
+    "i": "Strider_costume_sketch_C.jpg",
+    "s": "https://worm.fandom.com/wiki/File:Strider_costume_sketch_C.jpg",
+    "w": "Worm",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "sporedruide"
+  },
+  {
+    "u": 1531614,
+    "n": "Dark Queen",
+    "t": 7,
+    "i": "sample-0029863fdad491eebbb9e0d5b947c3ad.jpg",
+    "s": "https://i.postimg.cc/Dw2rSJNQ/sample-0029863fdad491eebbb9e0d5b947c3ad.jpg",
+    "w": "Battletoads",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
   }
 ]

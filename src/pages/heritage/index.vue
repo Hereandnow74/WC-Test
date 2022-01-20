@@ -20,7 +20,11 @@
         <div>Total perks: <span>{{ heritageByTree[tree].length }}</span></div>
       </div>
     </div>
-    <div class="md:column-count-2 lg:column-count-3 pb-8">
+    <div class="hidden column-count-2 column-count-3 column-count-4 column-count-5"></div>
+    <div
+      class="column-gap pb-8"
+      :class="settings.columns !== 'auto' ? `column-count-${settings.columns}` : 'md:column-count-2 xl:column-count-3 4xl:column-count-4 5xl:column-count-5'"
+    >
       <PerkCard
         :key="heritages[0].title"
         :class="heritageAvailable(heritages[0]) ? heritageColors[heritages[0].tree]: 'bg-gray-200 dark:bg-gray-600'"
@@ -88,12 +92,12 @@ import { desc, heritages, Heritage } from '~/data/heritage'
 import { useTooltips } from '~/logic/misc'
 import { useStore } from '~/store/store'
 import Select from '~/components/basic/Select.vue'
-import { chooseHeritage, heritageAvailable, isDLC } from '~/logic'
+import { chooseHeritage, heritageAvailable } from '~/logic'
 import { heritageTiers } from '~/data/constants'
 import { DLCheritages } from '~/data/DLCs'
 import AnythingInput from '~/components/small/AnythingInput.vue'
 
-const { heritage, flags } = useStore()
+const { heritage, flags, settings } = useStore()
 
 // const availableClasses = 'cursor-pointer'
 const heritageColors = {
@@ -104,7 +108,11 @@ const heritageColors = {
 }
 const activeTree = ref<'Dragon' | 'Transhuman' | 'Outsider'>('Dragon')
 
-const heritagesDLC = computed(() => isDLC.value ? heritages.concat(DLCheritages) : heritages)
+const heritagesDLC = computed(() => !settings.value.allChosenAuthors[0]
+  ? heritages
+    .concat(DLCheritages
+      .filter(perk => !settings.value.allChosenAuthors.includes(perk.dlc)))
+  : heritages)
 
 const heritageByTree = computed(() => {
   const res = {
