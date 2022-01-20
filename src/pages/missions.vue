@@ -3,7 +3,7 @@
     <h3 class="text-xl text-center">
       Missons
     </h3>
-    <div class="flex flex-col gap-4 pl-8">
+    <div class="flex flex-col gap-4 pb-8">
       <div v-for="mission in missions" :key="mission.title" class="bg-yellow-100 dark:bg-gray-900 rounded p-2">
         <h4 class="text-lg">
           {{ mission.title }} by {{ mission.author }}
@@ -43,7 +43,7 @@
         </div>
         <div v-if="mission.objectives.length" class="flex flex-col gap-1">
           Additional objectives:
-          <div v-for="rew in mission.objectives" :key="rew.value" class="pl-4 bg-blue-200">
+          <div v-for="rew in mission.objectives" :key="rew.value" class="pl-4 bg-blue-200 dark:bg-blue-gray-700">
             <div>{{ rew.value }}</div>
             <div class="pl-4">
               Reward: {{ rew.reward }}

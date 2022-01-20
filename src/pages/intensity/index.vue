@@ -9,7 +9,7 @@
         v-for="rule in intensity"
         :id="rule.title"
         :key="rule.title"
-        class="p-1 rounded cursor-pointer column-block mb-2 pb-4 max-w-[600px]"
+        class="p-1 rounded cursor-pointer column-block mb-2 pb-4 max-w-[600px] relative"
         :bg="intensityAvailable(rule) ? 'blue-100 dark:gray-700 hover:blue-200 dark:hover:gray-800' : 'gray-200 dark:gray-600'"
         @click="chooseIntensityCoop(rule)"
       >
