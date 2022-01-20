@@ -33,6 +33,13 @@
         class="mb-2 p-2 bg-light-400 dark:bg-rose-900 column-block max-w-[600px]"
         :class="flags.noBindings ? 'hover:(yellow-100 dark:bg-rose-800) cursor-pointer': 'dark:bg-gray-600'"
       >
+        <img
+          v-if="settings.perkImages"
+          ref="rideImg"
+          class="rounded"
+          src="https://i.ibb.co/gvcTLF5/No-Bindings.jpg"
+          alt="No Bindings Img"
+        >
         <h3 class="text-center text-xl px-2 relative">
           <span>No Bindings</span>
           <fa-solid:check v-if="flags.noBindings" class="text-green-500 absolute top-1 right-1" />
