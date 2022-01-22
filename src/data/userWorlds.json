@@ -228,11 +228,7 @@
       }
     ]
   },
-  {
-    "worldName": "Release That Witch",
-    "rating": 5,
-    "image": "https://i.imgur.com/9km50Lrm.png"
-  },
+  {"worldName":"Release That Witch","rating":5,"image":"https://i.imgur.com/9km50Lrm.png","condition":[{"name":"First Battle of Divine Will","rating":6}]},
   {"worldName":"Riordanverse","rating":8,"condition":[{"rating":6,"name":"Percy Jackson and the Olympians"},{"name":"The Heroes of Olympus","rating":7},{"name":"Ancient Greece","rating":7},{"rating":6,"name":"Roman Empire"}]},
   {
     "worldName": "Rune Factory",
@@ -387,5 +383,12 @@
   {"worldName":"The Terminator","rating":4,"image":"https://www.planocritico.com/wp-content/uploads/2015/06/O-Exterminador-do-Futuro-The-Terminator-EUA-1984.jpg","additional":"John Connor has a T-800 or Cameron as a familiar. Terminator Genisys Sarah Connor has a T-800 as a familiar.","condition":[{"name":"Terminator ","rating":3},{"name":"Terminator 2: Past.","rating":4},{"name":"Terminator 2: Future.","rating":5},{"rating":5,"name":"Terminator 3:"},{"name":"Terminator Genisys","rating":5},{"name":"Terminator: Dark Fate-Past","rating":5},{"rating":6,"name":"Terminator: Dark Fate-Future"},{"name":"Terminator: The Sarah Connor Chronicles","rating":5}]},
   {"worldName":"The Venture Brothers","rating":3},
   {"worldName":"Total Drama","rating":2,"condition":[{"name":"Contestant","rating":3},{"rating":4,"name":"Revenge of the Island"}]},
-  {"worldName":"Twilight","rating":3,"image":"https://mythbank.com/wp-content/uploads/2019/10/twilight-banner.jpg"}
+  {"worldName":"Twilight","rating":3,"image":"https://mythbank.com/wp-content/uploads/2019/10/twilight-banner.jpg"},
+  {"worldName":"Azur Lane","rating":8},
+  {"worldName":"DOOM: Eternal","rating":10},
+  {"worldName":"Ghost in the Shell","rating":5,"image":"https://images.amcnetworks.com/ifccenter.com/wp-content/uploads/2020/01/ghost-in-the-shell-1280.jpg"},
+  {"worldName":"Half-Life","rating":5,"condition":[{"rating":5,"name":"Black Mesa Incident"},{"rating":6,"name":"Portal Storm"},{"name":"Seven Hour War","rating":7},{"rating":5,"name":"Half-Life 2"},{"rating":5,"name":"Half-Life: Alyx"},{"name":"Xen","rating":5}]},
+  {"worldName":"Rachet and Clank","rating":8},
+  {"worldName":"The Dragon Prince","rating":5,"condition":[{"name":"Open War","rating":6}]},
+  {"worldName":"Rainbow Six Siege","rating":4}
 ]

@@ -8,7 +8,8 @@
       class="column-gap"
       :class="settings.columns !== 'auto' ? `column-count-${settings.columns}` : 'md:column-count-2 xl:column-count-3 4xl:column-count-4 5xl:column-count-5'"
     >
-      <PerkCard
+      <component
+        :is="perk.title === 'Four Seasons' ? FourSeason : PerkCard"
         v-for="perk in genericPerksWithDLC"
         :key="perk.title"
         :perk="perk"
@@ -17,7 +18,7 @@
         :saved-perk="allGeneric[perk.title]"
         :is-active="!!allGeneric[perk.title]"
         @pickPerk="chooseGenericPerk"
-      ></PerkCard>
+      ></component>
     </div>
     <h3 class="text-xl font-semibold text-center">
       Specific Waifu Perks
@@ -126,6 +127,8 @@ import { useStore } from '~/store/store'
 
 import { chooseGenericPerk, chooseWaifuPerk, genericAvailable, specificAvailable } from '~/logic'
 import { DLCgenericPerks } from '~/data/DLCs'
+import PerkCard from '~/components/PerkCard.vue'
+import FourSeason from '~/components/perkCards/FourSeason.vue'
 
 const { waifuPerks, genericWaifuPerks, settings } = useStore()
 

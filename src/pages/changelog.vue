@@ -5,7 +5,20 @@
     </h2>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
-        XX January 2022
+        22 January 2022
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>New UC, Meta Shift, Meta Shift II, Blank Slate perks.</li>
+        <li>Added Size and Capacity for rides provided by <b>OmegaSpark</b></li>
+        <li>250 new user submitted Characters.</li>
+        <li>A-Z 1-9 sorting for companions</li>
+        <li>8 new user submitted Worlds.</li>
+        <li>Bugfixes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
+        20 January 2022
       </h3>
       <ul class="list-decimal list-inside">
         <li class="text-red-500 font-semibold">
@@ -13,7 +26,7 @@
         </li>
         <li>180 new user submitted Characters.</li>
         <li>Settings, you can now turn off DLC perks by Author</li>
-        <li>Images for all Perks provided by KatzSmile, you can turn them off in settings</li>
+        <li>Images for all Perks provided by <b>KatzSmile</b>, you can turn them off in settings</li>
         <li>Better layout for big screens</li>
         <li>You can now assign yourself an image in Retinue tab</li>
         <li>Despin’s Tier Chart in rules</li>

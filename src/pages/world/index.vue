@@ -93,8 +93,8 @@ const worldToEdit = ref({})
 const editMode = ref(false)
 
 const { userWorlds, localUserWorlds } = useStore()
-const sortAlpha = ref<number>(0)
-const sortRating = ref<number>(0)
+const sortAlpha = ref(0)
+const sortRating = ref(0)
 
 const options = {
   findAllMatches: true,

@@ -12,6 +12,27 @@
       <Select v-model.number="tier" :options="tierOptions" />
       <Input v-model.number="limit" class="px-1" :style="`width: ${(''+limit).length + 3}ch`" />
       <Button size="Small" label="Tags" bg-color="bg-gray-600 hover:bg-teal-600" @click="toggleShowFilterTags" />
+      <div class="flex gap-1 border rounded px-1 select-none">
+        <span class="whitespace-nowrap font-bold">Sort By:</span>
+        <div
+          class="flex items-center bg-gray-200 dark:bg-gray-700 px-1 rounded cursor-pointer"
+          :class="sortAlpha !== 0 ? 'border border-green-500' : ''"
+          title="Sort by Name"
+          @click="toggleAlpha()"
+        >
+          <fa-solid:sort-alpha-down v-if="sortAlpha" class="inline-block rounded" />
+          <fa-solid:sort-alpha-up v-else class="inline-block rounded" />
+        </div>
+        <div
+          class="flex items-center bg-gray-200 dark:bg-gray-700 px-1 rounded cursor-pointer"
+          :class="sortRating !== 0 ? 'border border-green-500' : ''"
+          title="Sort by Rating"
+          @click="toggleRating()"
+        >
+          <fa-solid:sort-numeric-down v-if="sortRating" class="inline-block rounded" />
+          <fa-solid:sort-numeric-up v-else class="inline-block rounded" />
+        </div>
+      </div>
       <div class="flex rounded bg-gray-600 cursor-pointer">
         <div
           :class="gender==='F' ? 'bg-gray-700':''"
@@ -136,7 +157,7 @@ import Fuse from 'fuse.js'
 import { intersection, some } from 'lodash-es'
 import { useStore } from '~/store/store'
 
-import { toggleShowAddCharacter, showAddCharacter, lazyLoadImg, toggleShowFilterTags, showFilterTags, tagToggles, userCharactersShown } from '~/logic'
+import { toggleShowAddCharacter, showAddCharacter, lazyLoadImg, toggleShowFilterTags, showFilterTags, tagToggles, userCharactersShown, threeToggle } from '~/logic'
 import CompanionCard from '~/components/CompanionCard.vue'
 import Checkbox from '~/components/basic/Checkbox.vue'
 import { getChars, getUserChars } from '~/data/constants'
@@ -163,6 +184,9 @@ const gender = ref('')
 const image = ref('')
 const nsfw = ref('')
 const favorite = ref(false)
+
+const sortAlpha = ref(0)
+const sortRating = ref(0)
 
 // const characters = ref({})
 const loading = ref(true)
@@ -295,11 +319,15 @@ const secondFilter = computed(() => {
   })
 })
 
+const sortingFunc = (a: any, b: any) => (sortRating.value !== 0 ? (a.item.t - b.item.t) * sortRating.value : 0) || (sortAlpha.value !== 0 ? a.item.n.localeCompare(b.item.n) * sortAlpha.value : 0)
+
 const slicedChars = computed(() => {
   // const groupped = groupBy(filteredCharacters.value, (n) => { return n.item.i })
   // const result = uniq(flatten(filter(groupped, (n) => { return n.length > 1 })))
   // return result.slice(limit.value > 100 ? limit.value - 100 : 0, limit.value)
-  return secondFilter.value.slice(0, limit.value)
+  let res = secondFilter.value.slice(0, limit.value)
+  if (sortRating.value || sortAlpha.value) res = res.sort(sortingFunc)
+  return res
 })
 
 // const allCredits = computed(() => charArr.value.reduce((a, b) => b.t !== 11 ? a += CHAR_COSTS[b.t - 1] : a, 0))
@@ -329,4 +357,13 @@ function editCompanion(char: any) {
   editMode.value = true
   toggleShowAddCharacter()
 }
+
+function toggleRating() {
+  sortRating.value = threeToggle(sortRating.value)
+}
+
+function toggleAlpha() {
+  sortAlpha.value = threeToggle(sortAlpha.value)
+}
+
 </script>

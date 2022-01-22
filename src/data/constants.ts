@@ -87,9 +87,9 @@ export const waifuTags = {
   F: { tag: 'Female', short: 'F', effect: '', desc: '', color: 'bg-pink-500' },
   M: { tag: 'Male', short: 'M', effect: '', desc: '', color: 'bg-blue-500' },
   O: { tag: 'Other', short: 'O', effect: '', desc: '', color: 'bg-fuchsia-700' },
-  U: { tag: 'By User', short: 'U', effect: '', desc: 'Characters that were added to Interactive by users, applied automatically to all submitted characters', color: 'bg-warm-gray-600' },
   C: { tag: 'Official WC', short: 'C', effect: '', desc: 'From official/canon spreadsheet', color: 'bg-yellow-400 text-black' },
   P: { tag: 'Perk', short: 'P', effect: '', desc: 'Have a specific waifu perk', color: 'bg-amber-200 text-black' },
+
   hp: { tag: 'Hopper', short: 'hp', effect: '', desc: 'Have a world hopping power', color: 'bg-[#b600e9]' },
   dc: { tag: 'Doctor', short: 'dc', effect: '', desc: 'Trained in medicine', color: 'bg-[#dd1919]' },
   hl: { tag: 'Healer', short: 'hl', effect: '', desc: 'Supernatural healing ability', color: 'bg-[#dd1919]' },
@@ -153,6 +153,8 @@ export const waifuTags = {
   ev: { tag: 'Evil', short: 'ev', effect: '', desc: '', color: 'bg-teal-500' },
   gn: { tag: 'Genius', short: 'gn', effect: '', desc: '', color: 'bg-teal-500' },
   rl: { tag: 'Ruler', short: 'rl', effect: 'rule over a country or region or even just a tribe', desc: '', color: 'bg-[#FFD700] text-black' },
+
+  U: { tag: 'By User', short: 'U', effect: '', desc: 'Characters that were added to Interactive by users, applied automatically to all submitted characters', color: 'bg-warm-gray-600' },
 }
 
 export const waifuTagsByTag = Object.values(waifuTags).reduce((a, x) => (a[x.tag] = x, a), {})

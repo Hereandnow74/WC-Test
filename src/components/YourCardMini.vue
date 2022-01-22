@@ -16,7 +16,7 @@
           </span>
           <span class="text-gray-500 ml-auto whitespace-nowrap"> Tier: <span class="text-green-500">{{ Math.max(startingOrigin.tier || 1, yourTier) }}</span></span>
         </div>
-        <span v-if="char.w" class="text-gray-500">From: <span class="text-gray-400">{{ char.w }}</span></span>
+        <span v-if="startingOrigin.w || char.w" class="text-gray-500">From: <span class="text-gray-400">{{ startingOrigin.w || char.w }}</span></span>
         <div class="flex gap-2 mb-1">
           <NumberInput
             v-model="startingOrigin.tier"
@@ -38,6 +38,7 @@
         </div>
         <div v-if="editMode">
           <Input v-model="image" class="w-full" placeholder="Your image only from Imgur.com example: https://i.imgur.com/jm8eCCA.png" />
+          <Input v-model="startingOrigin.w" class="w-full mt-1" placeholder="Place you're from" />
         </div>
       </div>
     </div>

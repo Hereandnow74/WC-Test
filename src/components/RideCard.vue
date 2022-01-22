@@ -35,14 +35,17 @@
       <fa-solid:check v-if="bought" class="absolute top-1 right-1 text-green-500" />
     </h3>
     <div v-if="ride.source" class="px-2">
-      <span class="font-semibold">From:</span> {{ ride.source }}
+      <span class="font-semibold text-gray-600 dark:text-gray-400">From:</span> {{ ride.source }}
     </div>
     <div v-if="ride.category && ride.size" class="flex justify-between px-2">
-      <span><span class="font-semibold">Category:</span> {{ ride.category }}</span>
-      <span><span class="font-semibold">Size:</span> {{ ride.size }}</span>
+      <span><span class="font-semibold text-gray-600 dark:text-gray-400">Category:</span> {{ ride.category }}</span>
+      <span><span class="font-semibold text-gray-600 dark:text-gray-400">Size:</span> {{ ride.size }}</span>
+    </div>
+    <div v-if="ride.capacity" class="px-2">
+      <span class="font-semibold text-gray-600 dark:text-gray-400">Capacity:</span> {{ ride.capacity }}
     </div>
     <div v-if="ride.addons" class="px-2">
-      <span class="font-semibold">Addons:</span>
+      <span class="font-semibold text-gray-600 dark:text-gray-400">Addons:</span>
       <ul class="list-disc list-inside">
         <li v-for="addon in ride.addons" :key="addon[0]" class="mb-1">
           {{ addon[0] }} <Button
@@ -56,7 +59,7 @@
       </ul>
     </div>
     <div v-if="ride.variants" class="px-2">
-      <span class="font-semibold">Variants:</span>
+      <span class="font-semibold text-gray-600 dark:text-gray-400">Variants:</span>
       <ul class="list-disc list-inside">
         <li v-for="variant in ride.variants" :key="variant[0]" class="mb-1">
           {{ variant[0] }} <Button
@@ -71,10 +74,10 @@
     </div>
     <Desc :desc="ride.desc" class="mx-auto" />
     <div v-if="ride.example" class="px-2">
-      <span class="font-semibold">Example: </span> {{ ride.example }}
+      <span class="font-semibold text-gray-600 dark:text-gray-400">Example: </span> {{ ride.example }}
     </div>
     <div v-if="ride.requires || ride.whitelist" class="px-2">
-      <span class="font-semibold">Requiers: </span>
+      <span class="font-semibold text-gray-600 dark:text-gray-400">Requiers: </span>
       <span v-if="ride.requires" class="text-cyan-700 dark:text-cyan-300">
         {{ ride.requires }}
       </span>

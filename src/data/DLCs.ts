@@ -358,7 +358,8 @@ DLChomes.push({
 })
 
 DLChomes.push({
-  dlc: 'Despin',
+  dlc: 'DLC by Despin',
+  dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'Home Security',
   cost: 0,
   desc: 'The portals to access your Pocket Apartment, and any perks that follow from it, can not be perceived or entered by anything you do not allow, including creatures, contaminants, and remote viewing.',

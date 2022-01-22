@@ -5,7 +5,8 @@
       class="column-gap pb-8"
       :class="settings.columns !== 'auto' ? `column-count-${settings.columns}` : 'md:column-count-2 xl:column-count-3 4xl:column-count-4 5xl:column-count-5'"
     >
-      <PerkCard
+      <component
+        :is="PerkCard"
         v-for="talent in talentsDLC"
         :key="talent.title"
         :perk="talent"
@@ -29,7 +30,7 @@ import { useStore } from '~/store/store'
 import PerkCard from '~/components/PerkCard.vue'
 import { chooseTalent, talentAvailable } from '~/logic'
 import { DLCtalents } from '~/data/DLCs'
-
+import ComplexBoth from '~/components/perkCards/ComplexBoth.vue'
 const { allEffects, talentPerks, settings } = useStore()
 
 const allTalents = computed(() => {

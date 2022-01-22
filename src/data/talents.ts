@@ -591,22 +591,64 @@ defenses.push({
 // #region Misc Perks
 export const perks: PerkFull[] = []
 
-perks.push({
-  title: 'Temporal Calibration',
-  image: 'https://i.ibb.co/BCBHDkS/Temporal-Calibration.jpg',
-  cost: 5,
-  desc: 'Entering a new world, only to learn that the capture targets are out of your strike zone, can be… inconvenient. With this perk, the ages of any canon characters can be freely adjusted. Any events of canon that would be affected by the altered ages are adjusted as little as possible to keep the same general flow of events, keeping the scenario recognizable even though the participants are possibly decades older or younger. Changes created using this perk, or any perks that have this as a prerequisite, cannot fundamentally shift a setting’s danger rating.​',
-})
+// perks.push({
+//   title: 'Temporal Calibration',
+//   image: 'https://i.ibb.co/BCBHDkS/Temporal-Calibration.jpg',
+//   cost: 5,
+//   desc: 'Entering a new world, only to learn that the capture targets are out of your strike zone, can be… inconvenient. With this perk, the ages of any canon characters can be freely adjusted. Any events of canon that would be affected by the altered ages are adjusted as little as possible to keep the same general flow of events, keeping the scenario recognizable even though the participants are possibly decades older or younger. Changes created using this perk, or any perks that have this as a prerequisite, cannot fundamentally shift a setting’s danger rating.',
+// })
+
+// perks.push({
+//   title: 'Universal Calibration',
+//   image: 'https://i.ibb.co/B2Z3rv4/Universal-Calibration.jpg',
+//   cost: 20,
+//   whitelist: ['Temporal Calibration'],
+//   desc: `
+// <p>The targeting algorithms for your methods of multiversal travel are biased in your favor. Whether you use the Exit Stage Left or Rainbow Bridge perks, multiversal Heritage abilities, your waifus’ powers, or even local technology, you will usually end up in a place where the population is more… suited to your tastes. All inhabitants will be more attractive to you, personally. This includes and builds upon the effects of Temporal Calibration. Additionally, your sexual fetishes and other preferences will be unusually common on the worlds you visit, with listed capture targets sharing at least some compatible interests… unless that runs counter to your own.</p>
+// <p>The above standard calibration is a best-guess preset based on your likes. You can fine-tune the specific settings, define and swap among multiple presets, and even reset all conditions to the default, in an app on your smart device. Your currently-chosen calibration, whatever the specifics, will modify every world that you visit for as long as it remains active. This includes worlds that you’ve visited previously: you’re actually entering a parallel worldline that’s identical in every way except for your presence and the effects of the calibration. To visit a previous calibration-worldline, simply exit the world, close the portal if there is one, recalibrate, and re-enter.</p>
+// <p>Neither your Pocket Apartment nor your vehicles granted by Catch-a-Ride or Heavenbuilt Proto can be affected by recalibration. If left behind in an old worldline when you recalibrate, the vehicles will bounce forward into the new one; if you have Life's a Beach, the vehicles may instead return to their parking/docking/landing site.</p>`,
+// })
 
 perks.push({
   title: 'Universal Calibration',
   image: 'https://i.ibb.co/B2Z3rv4/Universal-Calibration.jpg',
-  cost: 20,
-  whitelist: ['Temporal Calibration'],
+  cost: 10,
   desc: `
-<p>The targeting algorithms for your methods of multiversal travel are biased in your favor. Whether you use the Exit Stage Left or Rainbow Bridge perks, multiversal Heritage abilities, your waifus’ powers, or even local technology, you will usually end up in a place where the population is more… suited to your tastes. All inhabitants will be more attractive to you, personally. This includes and builds upon the effects of Temporal Calibration. Additionally, your sexual fetishes and other preferences will be unusually common on the worlds you visit, with listed capture targets sharing at least some compatible interests… unless that runs counter to your own.</p>
-<p>The above standard calibration is a best-guess preset based on your likes. You can fine-tune the specific settings, define and swap among multiple presets, and even reset all conditions to the default, in an app on your smart device. Your currently-chosen calibration, whatever the specifics, will modify every world that you visit for as long as it remains active. This includes worlds that you’ve visited previously: you’re actually entering a parallel worldline that’s identical in every way except for your presence and the effects of the calibration. To visit a previous calibration-worldline, simply exit the world, close the portal if there is one, recalibrate, and re-enter.</p>
-<p>Neither your Pocket Apartment nor your vehicles granted by Catch-a-Ride or Heavenbuilt Proto can be affected by recalibration. If left behind in an old worldline when you recalibrate, the vehicles will bounce forward into the new one; if you have Life's a Beach, the vehicles may instead return to their parking/docking/landing site.</p>`,
+<p>Entering a new world, only to learn that the capture targets are out of your strike zone, can be… inconvenient. This perk will automatically adjust the ages and sexes of any canon characters, and the population’s average beauty level, to better suit your preferences. This will occur before you or anyone in your retinue enter each world for the first time, and even affect the portions of the population that you have no interest in. The locals of that world will not notice these changes - from their perspective, that’s just how things are. Any events of canon that would be affected by the alterations are adjusted as little as possible to keep the same general flow of events, keeping the scenario recognizable even though the participants are possibly decades older or younger. This perk cannot fundamentally shift a setting’s danger rating or make capturing individual targets any easier.</p>`,
+})
+
+perks.push({
+  title: 'Meta Shift',
+  image: '',
+  cost: 15,
+  whitelist: ['Universal Calibration'],
+  desc: `
+<p>An unwitting anime protagonist once stumbled into a portal to the “Real World,” discovered an anime convention after being mistaken for a cosplayer, and brought back (hentai) doujins as proof of her experiences. The next time she opened one of the doujin volumes, however, she saw only blank pages, as her world mistook the stories within for anecdotes that hadn’t occurred yet and integrated them into its common sense. She remained the only one in her world who was aware that it wasn’t always as erotic as it quickly became.</p>
+<p>This perk allows you to do just that, via a special app in your company smart device. Any physical copy of merchandise or doujin material may be permanently sacrificed through this app, in an inherently destructive process. A material’s effectiveness scales with its artistic quality, with no requirement that it be purchased. Materials that anyone in your retinue created yourselves, even with Aesthetic or Communication Talents, work just fine. Materials sacrificed must have been created in other worlds, including your Demiplane or Dungeon. Multiple sacrifices may be applied to the same world, whether simultaneously or successively, but each sacrifice may only affect a single world. If you sacrifice material while anyone in your retinue is within the target world, the changes will proliferate over the course of the next week (168 hours). Otherwise, the changes will have already taken full effect the next time anyone in your retinue visits.</p>
+<p>Contractors and their retinues, including their Demiplanes, Dungeons, and registered Catch-a-Ride vehicles including Heavenbuilt Proto, may, by the contractor’s choice, be directly affected by these alterations. By default, they will be aware that any differences created are not the standard way of things, but must discover the exact nature of the changes themselves. Cheat-sheets detailing these alterations, beyond the general theme, are not available.</p>
+<p>Alternatively, every member of the contractor’s retinue who calls the altered world home may be affected, the entire retinue except for the contractor, or the contractor as well. The contractor may also choose to only impose physical changes, limit mental changes to common knowledge and episodic memories of any altered pasts, or allow all changes. As with Advanced Tempest Runes, any sufficiently-disabling effect on the contractor will have an automatic time limit of 48 hours so they don’t get stuck. If they return to that same transformation within 10 minutes, the time limit will be doubled each time until their streak ends. The contractor may set a shorter limit if they like.</p>
+<p>Potential reality alterations include, but are not limited to: hentaification of a wholesome setting and vice versa, common fashions, aesthetic eras, large-scale genre rewrites, and fusing the target setting with the specific one represented by the sacrificed material (if one exists). This perk, and any that follow from it, will not cleanly resolve any problem in a world without introducing an equal (or greater) number of new ones.</p>
+<p>A fusion setting will have the highest danger rating of all components, but will not add any actual characters from the material’s setting. Instead, the target setting’s locals will be matched to their closest equivalents and their roles and abilities changed to fit, while still remaining recognizable as themselves. This can affect their individual tier ratings.</p>`,
+})
+
+perks.push({
+  title: 'Meta Shift II',
+  image: '',
+  cost: 10,
+  whitelist: ['Meta Shift'],
+  desc: `
+<p>The results of Meta Shift are vastly expanded. Sacrifices previously made may now be copied and pasted to affect other worlds, without an additional copy of the material. You may now remove a particular sacrifice’s impact on a target world. This will not return the material, but the effect may be re-applied to the same world (or a different one) at a later time. Removed effects have the same cooldown and conditions as new effects.</p>
+<p>You may also apply different sacrifices or combinations of such to different parallels of the same target world. These may be accessed separately via Exit Stage Left or Rainbow Bridge perks, multiversal Heritage abilities, your waifus’ powers, or even local technology.</p>
+<p>Additionally, the app will now include detailed cheat-sheets for each world’s changes. Any modifications you make to these lists will be reflected in the target world. This is far more intricate and precise than just using raw sacrifice results, but may be overly daunting to the average contractor.</p>`,
+})
+
+perks.push({
+  title: 'Blank Slate',
+  image: '',
+  cost: 75,
+  whitelist: ['Meta Shift II', 'We Will Meet Again'],
+  desc: `
+<p>The Meta Shift app can now generate a fresh parallel of any world you’ve visited at any time. You can apply or remove sacrifice results to these new parallels just like anywhere else.</p>`,
 })
 
 perks.push({
@@ -924,9 +966,9 @@ genericPerks.push({
   title: 'Salvation',
   requires: '(Any Puella Magi)',
   complex: 'target',
-  costVariants: [0, 20],
+  costVariants: [20, 0],
   image: 'https://i.ibb.co/CK7zwYY/Salvation.jpg',
-  cost: 0,
+  cost: 20,
   desc: `
 <p>When your waifu's soul gem darkens completely, she may choose to manifest her Doppel: a materialization of her witch-self which may take the form of an discrete projection, an extension of her body, or even a partial physical transformation, depending upon the details of her relationship to her witch-self and what it represents. An activated Doppel is extremely powerful in its own right, but draws upon the darkness in its master's soul gem to manifest, quickly and completely purifying its master's gem until she can no longer support it - leaving her Doppel as a briefly activated trump card or a simple magic recharge mechanic unless it's somehow further refined. If you have Inexhaustible, any meguca in your retinue, whom this perk has been applied to, will only benefit from this perk.</p>
 <p>If you have Madokami, Akuma Homura, Satomi Touka, Lapin, or any other meguca who is canonically capable of breaking the balance of hope and despair in your retinue, then this perk is free. If you already have this perk when you acquire a relevant waifu, then take a full refund on the value of this perk for as many times as you've purchased it.</p>

@@ -12,7 +12,7 @@
           <span v-if="el?.anything?.length" class="text-yellow-500">({{ el.anything }})</span>
           <span v-if="el.count && el.count > 1" class="">(x{{ el.count }})</span>
           <span v-if="el?.target?.length || el.waifu" class="text-teal-500">({{ el.target || el.waifu }})</span>
-          <span v-if="el.complex && isArray(el.complex)">
+          <span v-if="el.complex && isArray(el.complex) && el.complex.length">
             <template v-if="el.complex[0].flavor && el.complex[0].target">
               <span
                 v-for="tf in Object.entries(groupBy(el.complex, c => c.target))"
