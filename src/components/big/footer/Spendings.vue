@@ -79,11 +79,8 @@ import { useStore } from '~/store/store'
 const {
   startingOrigin, heritageCost, bindingCost, ridePerksCost, homePerksCost, talentsCost, defensesCost,
   miscPerksCost, waifuPerksCost, genericWaifuPerksCost, luresCost, companionsCost, companionProfit,
-  companionProfitSold, totalCost, companions, otherCost, usedHeritageDiscount, talentsDiscount,
-  defensesDiscount, defenseRetinueDiscount,
+  companionProfitSold, totalCost, companions, otherCost, totalDiscount,
 } = useStore()
-
-const totalDiscount = computed(() => usedHeritageDiscount.value + talentsDiscount.value + defensesDiscount.value + defenseRetinueDiscount.value)
 
 const companionTotalCredits = computed(() => {
   return companions.value.reduce((a, x) => {

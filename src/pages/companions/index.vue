@@ -20,7 +20,7 @@
           title="Sort by Name"
           @click="toggleAlpha()"
         >
-          <fa-solid:sort-alpha-down v-if="sortAlpha" class="inline-block rounded" />
+          <fa-solid:sort-alpha-down v-if="sortAlpha === 1" class="inline-block rounded" />
           <fa-solid:sort-alpha-up v-else class="inline-block rounded" />
         </div>
         <div
@@ -29,7 +29,7 @@
           title="Sort by Rating"
           @click="toggleRating()"
         >
-          <fa-solid:sort-numeric-down v-if="sortRating" class="inline-block rounded" />
+          <fa-solid:sort-numeric-down v-if="sortRating === 1" class="inline-block rounded" />
           <fa-solid:sort-numeric-up v-else class="inline-block rounded" />
         </div>
       </div>
@@ -321,13 +321,15 @@ const secondFilter = computed(() => {
 
 const sortingFunc = (a: any, b: any) => (sortRating.value !== 0 ? (a.item.t - b.item.t) * sortRating.value : 0) || (sortAlpha.value !== 0 ? a.item.n.localeCompare(b.item.n) * sortAlpha.value : 0)
 
+const sortedResults = computed(() => {
+  return (sortRating.value || sortAlpha.value) ? [...secondFilter.value].sort(sortingFunc) : secondFilter.value
+})
+
 const slicedChars = computed(() => {
   // const groupped = groupBy(filteredCharacters.value, (n) => { return n.item.i })
   // const result = uniq(flatten(filter(groupped, (n) => { return n.length > 1 })))
   // return result.slice(limit.value > 100 ? limit.value - 100 : 0, limit.value)
-  let res = secondFilter.value.slice(0, limit.value)
-  if (sortRating.value || sortAlpha.value) res = res.sort(sortingFunc)
-  return res
+  return sortedResults.value.slice(0, limit.value)
 })
 
 // const allCredits = computed(() => charArr.value.reduce((a, b) => b.t !== 11 ? a += CHAR_COSTS[b.t - 1] : a, 0))

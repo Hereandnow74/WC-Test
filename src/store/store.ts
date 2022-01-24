@@ -179,6 +179,8 @@ const defenseRetinueDiscount = computed(() => {
   return cost
 })
 
+const totalDiscount = computed(() => usedHeritageDiscount.value + talentsDiscount.value + defensesDiscount.value + defenseRetinueDiscount.value)
+
 const fullStartingBudget = computed(() => {
   let intensityFlat = 0
   const intenMultiplier = intensities.value
@@ -301,6 +303,7 @@ const settings = useStorage('settings', {
   allChosenAuthors: [] as string[],
   nsfw: false,
   perkImages: true,
+  animBg: false,
   columns: 'auto' as number | 'auto',
 })
 
@@ -374,5 +377,6 @@ export function useStore() {
     defenseRetinueDiscount,
     settings,
     appName,
+    totalDiscount,
   }
 }

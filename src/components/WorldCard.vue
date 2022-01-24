@@ -91,6 +91,8 @@ const condition = reactive({
   rating: 0,
 })
 
+const baseDR = props.world.rating
+
 const worldImg = ref<HTMLImageElement | null>(null)
 
 function pickWorld(world: World) {
@@ -118,6 +120,10 @@ function changeCondition(event: any) {
     condition.name = name
     condition.rating = props.world.condition[ind].rating
     props.world.rating = condition.rating
+  }
+  else {
+    props.world.rating = baseDR
+    condition.name = undefined
   }
 }
 

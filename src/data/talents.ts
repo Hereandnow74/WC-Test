@@ -611,7 +611,7 @@ export const perks: PerkFull[] = []
 
 perks.push({
   title: 'Universal Calibration',
-  image: 'https://i.ibb.co/B2Z3rv4/Universal-Calibration.jpg',
+  image: 'https://i.ibb.co/BCBHDkS/Temporal-Calibration.jpg',
   cost: 10,
   desc: `
 <p>Entering a new world, only to learn that the capture targets are out of your strike zone, can be… inconvenient. This perk will automatically adjust the ages and sexes of any canon characters, and the population’s average beauty level, to better suit your preferences. This will occur before you or anyone in your retinue enter each world for the first time, and even affect the portions of the population that you have no interest in. The locals of that world will not notice these changes - from their perspective, that’s just how things are. Any events of canon that would be affected by the alterations are adjusted as little as possible to keep the same general flow of events, keeping the scenario recognizable even though the participants are possibly decades older or younger. This perk cannot fundamentally shift a setting’s danger rating or make capturing individual targets any easier.</p>`,
@@ -619,7 +619,7 @@ perks.push({
 
 perks.push({
   title: 'Meta Shift',
-  image: '',
+  image: 'https://i.ibb.co/vv1g4Sq/Meta-Shift.jpg',
   cost: 15,
   whitelist: ['Universal Calibration'],
   desc: `
@@ -633,7 +633,7 @@ perks.push({
 
 perks.push({
   title: 'Meta Shift II',
-  image: '',
+  image: 'https://i.ibb.co/QQ1W0FX/Meta-Shift-II.jpg',
   cost: 10,
   whitelist: ['Meta Shift'],
   desc: `
@@ -644,7 +644,7 @@ perks.push({
 
 perks.push({
   title: 'Blank Slate',
-  image: '',
+  image: 'https://i.ibb.co/fGnn30j/Blank-Slate.jpg',
   cost: 75,
   whitelist: ['Meta Shift II', 'We Will Meet Again'],
   desc: `

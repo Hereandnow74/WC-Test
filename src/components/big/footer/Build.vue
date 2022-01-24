@@ -1,12 +1,13 @@
 <template>
   <div class="px-2 flex flex-col gap-2 overflow-y-auto min-h-0 scrollbar relative">
-    <div class="absolute right-2 top-1 flex gap-2">
-      <Toggle v-model="priceMode" title="Show prices" />
-      <Toggle v-model="editMode" title="Toggle manual remove mode" />
-    </div>
+    <BuildHeader />
     <div id="World" class="text-gray-200">
-      <h3 class="text-lg text-gray-400">
+      <h3 class="text-lg relative text-gray-400">
         World
+        <div class="absolute right-2 top-1 flex gap-2">
+          <Toggle v-model="priceMode" title="Show prices" />
+          <Toggle v-model="editMode" title="Toggle manual remove mode" />
+        </div>
       </h3>
       <div class="flex flex-wrap whitespace-nowrap gap-2">
         <div class="flex gap-2">
@@ -247,7 +248,7 @@ import { confirmDialog } from '~/logic/dialog'
 const {
   startingWorld, startingOrigin, intensities, binding, homePerks, defensePerks,
   heritage, talentPerks, waifuPerks, ridePerks, miscPerks, luresBought, genericWaifuPerks,
-  otherPerks, yourTier, flags,
+  otherPerks, yourTier, flags, totalCost, totalDiscount,
 } = useStore()
 
 const { activeChallenges } = useChallenges()

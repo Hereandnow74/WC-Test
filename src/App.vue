@@ -1,4 +1,5 @@
 <template>
+  <component :is="animBg" v-if="settings.animBg" />
   <main
     class="inset-0 absolute flex flex-col"
     text="gray-700 dark:gray-200"
@@ -21,8 +22,10 @@
 import { useStore } from './store/store'
 import { showSideMenu, promoteShown, isSupport } from '~/logic'
 
-const { totalActive } = useStore()
+const { totalActive, settings } = useStore()
 let start = new Date()
+
+const animBg = computed(() => defineAsyncComponent(() => import('./components/small/AnimatedBackground.vue')))
 
 const { idle } = useIdle(10000)
 

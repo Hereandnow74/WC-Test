@@ -22,6 +22,10 @@
           <div>Load NSFW Images for characters by default</div>
           <Toggle v-model="settings.nsfw" />
         </div>
+        <div class="flex justify-between gap-4 border-b border-gray-500">
+          <div>Animated background (Heavy CPU load, only dark theme)</div>
+          <Toggle v-model="settings.animBg" />
+        </div>
       </div>
       <h3 class="text-lg">
         Turn off DLC's

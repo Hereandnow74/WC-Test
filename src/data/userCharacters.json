@@ -201,13 +201,11 @@
   {
     "u": 1271584,
     "n": "Gilgamesh",
-    "t": 10,
+    "t": 9,
     "i": "https://i.imgur.com/drjJrrMm.png",
     "s": "https://w7.pngwing.com/pngs/879/933/png-transparent-fate-stay-night-fate-extra-fate-extella-the-umbral-star-fate-zero-gilgamesh-fateextella-the-umbral-star-fictional-character-shirou-emiya-fategrand-order.png",
     "w": "(Fate/CCC)",
-    "b": [
-      "M"
-    ]
+    "b": ["M","U","ml","st","sc","di","lm","de","rl"]
   },
   {
     "u": 2723096,
@@ -6598,7 +6596,7 @@
     "s": "https://static.wikia.nocookie.net/parahumans/images/b/ba/Behemoth_by_sandara.jpg/revision/latest/scale-to-width-down/782?cb=20170725022124",
     "w": "Worm",
     "b": [
-      "M"
+      "O"
     ],
     "k": "Despin"
   },
@@ -6610,7 +6608,7 @@
     "s": "https://static.wikia.nocookie.net/parahumans/images/b/ba/Leviathan_2.jpg/revision/latest/scale-to-width-down/778?cb=20160413071334",
     "w": "Worm",
     "b": [
-      "M"
+      "O"
     ],
     "k": "Despin"
   },
@@ -14327,7 +14325,7 @@
     "t": 10,
     "i": "irene-campos-desna-color-update3.jpg",
     "s": "https://cdnb.artstation.com/p/assets/images/images/030/131/917/large/irene-campos-desna-color-update3.jpg",
-    "w": "Golarion/Pathfinder",
+    "w": "Pathfinder",
     "d": "",
     "b": [
       "F",
@@ -16657,7 +16655,16 @@
     "w": "Dragonball series",
     "d": "",
     "b": [
-      "M","th","cl","sc","di","st","hr","hz","ur","hp"
+      "M",
+      "th",
+      "cl",
+      "sc",
+      "di",
+      "st",
+      "hr",
+      "hz",
+      "ur",
+      "hp"
     ],
     "k": "Ono"
   },
@@ -35894,7 +35901,7 @@
   },
   {
     "u": 3971179,
-    "n": "Dokkaei",
+    "n": "Dokkaebi",
     "t": 3,
     "i": "oqajpidrbtq51.jpg",
     "s": "https://i.redd.it/oqajpidrbtq51.jpg",
@@ -36014,5 +36021,1074 @@
       "vp"
     ],
     "k": "13rett"
+  },
+  {
+    "u": 8559496,
+    "n": "Desmond Miles",
+    "t": 3,
+    "i": "a32f3e2f296b43b0b15379019834cffd.png",
+    "s": "https://i.pinimg.com/originals/a3/2f/3e/a32f3e2f296b43b0b15379019834cffd.png",
+    "w": "Assassin's Creed",
+    "d": "",
+    "b": [
+      "M",
+      "cl",
+      "sc",
+      "Assassin"
+    ],
+    "k": "AusthinH7"
+  },
+  {
+    "u": 9013559,
+    "n": "Myrrine",
+    "t": 2,
+    "i": "tumblr_pzcm10sItf1w1an65o1_1280.jpg",
+    "s": "https://64.media.tumblr.com/fb6c6e1d743d2fc13b43433ef971061f/tumblr_pzcm10sItf1w1an65o1_1280.jpg",
+    "w": "Assassin's Creed",
+    "d": "Odyssey",
+    "b": [
+      "F"
+    ],
+    "k": "Steve"
+  },
+  {
+    "u": 7438800,
+    "n": "Yhwach The Quincy King (no soul king)",
+    "t": 10,
+    "i": "Zangetsu.full.1502371.jpg",
+    "s": "https://static.zerochan.net/Zangetsu.full.1502371.jpg",
+    "w": "Bleach",
+    "d": "",
+    "b": [
+      "F",
+      "hl",
+      "cl",
+      "dr",
+      "di",
+      "fm"
+    ],
+    "k": "oneye"
+  },
+  {
+    "u": 1716584,
+    "n": "Senna",
+    "t": 5,
+    "i": "d087b5951c40f3157b0e77072d88e288a60aba62.jpg",
+    "s": "https://safebooru.org//images/1273/d087b5951c40f3157b0e77072d88e288a60aba62.jpg",
+    "w": "Bleach",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Time Hollow"
+  },
+  {
+    "u": 7216212,
+    "n": "The Traveler",
+    "t": 11,
+    "i": "63a6340d4a24b1ae5a4110c5d0e1d97b.jpg",
+    "s": "https://i.pinimg.com/originals/63/a6/34/63a6340d4a24b1ae5a4110c5d0e1d97b.jpg",
+    "w": "Destiny",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 8745229,
+    "n": "Lila West",
+    "t": 1,
+    "i": "FFYMGxwVEAMq9mA.jpg",
+    "s": "https://pbs.twimg.com/media/FFYMGxwVEAMq9mA.jpg",
+    "w": "Dexter",
+    "d": "TV Series",
+    "b": [
+      "F"
+    ],
+    "k": "Steve"
+  },
+  {
+    "u": 4234925,
+    "n": "Rita Bennett",
+    "t": 1,
+    "i": "julie-benz-celebrity-3eSw.jpg",
+    "s": "https://onlyhdwallpapers.com/wallpaper/julie-benz-celebrity-3eSw.jpg",
+    "w": "Dexter",
+    "d": "TV Series",
+    "b": [
+      "F"
+    ],
+    "k": "Steve"
+  },
+  {
+    "u": 8197419,
+    "n": "Debra Morgan",
+    "t": 2,
+    "i": "dexterjennifercarpenter.jpg",
+    "s": "http://cdn.wallpapername.com/2699x3600/20121204/dexter%20jennifer%20carpenter%202699x3600%20wallpaper_www.wallpapername.com_86.jpg",
+    "w": "Dexter",
+    "d": "TV Series",
+    "b": [
+      "F"
+    ],
+    "k": "Steve"
+  },
+  {
+    "u": 5028900,
+    "n": "The Taken",
+    "t": 6,
+    "i": "https://i.imgur.com/3ICEh8tm.png",
+    "s": "https://i.imgur.com/3ICEh8t.png",
+    "w": "Grim Dawn",
+    "d": "Player Character",
+    "b": [
+      "O",
+      "hp",
+      "mt",
+      "dr",
+      "ur",
+      "dh",
+      "me"
+    ],
+    "k": "DeviantD"
+  },
+  {
+    "u": 7879704,
+    "n": "Durza",
+    "t": 6,
+    "i": "Durza01.jpg",
+    "s": "https://static.wikia.nocookie.net/inheritance/images/4/43/Durza01.jpg",
+    "w": "Inheritance",
+    "d": "",
+    "b": [
+      "M",
+      "sc",
+      "di",
+      "dm",
+      "rs",
+      "me",
+      "ev"
+    ],
+    "k": "irugaa0"
+  },
+  {
+    "u": 2290916,
+    "n": "Alex",
+    "t": 6,
+    "i": "Ek70obFVkAAh5c8.jpg",
+    "s": "https://pbs.twimg.com/media/Ek70obFVkAAh5c8.jpg",
+    "w": "Minecraft",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 8380974,
+    "n": "Steve",
+    "t": 6,
+    "i": "baesteve.jpg",
+    "s": "https://i.kym-cdn.com/photos/images/original/001/463/035/bae.jpg",
+    "w": "Minecraft",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 3304323,
+    "n": "Chaos",
+    "t": 11,
+    "i": "Chaos.png",
+    "s": "https://i.postimg.cc/cCQh4PK0/Chaos.png",
+    "w": "Nasuverse",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 4482165,
+    "n": "Jacques De Molay",
+    "t": 7,
+    "i": "__jacques_de_molay_and_baphomet_fate_and_1_more_drawn_by_ryofuhiko__sample-bb90e7b8ff2ab1ac2d0e22ec7fc36afc.jpg",
+    "s": "https://cdn.donmai.us/sample/bb/90/__jacques_de_molay_and_baphomet_fate_and_1_more_drawn_by_ryofuhiko__sample-bb90e7b8ff2ab1ac2d0e22ec7fc36afc.jpg",
+    "w": "Nasuverse",
+    "d": "Servants - Foreigner",
+    "b": [
+      "F"
+    ],
+    "k": "V"
+  },
+  {
+    "u": 7967102,
+    "n": "Kishinami Hakuno",
+    "t": 6,
+    "i": "x06-Hakuno-Dead-Face.jpg",
+    "s": "https://anime.astronerdboy.com/wp-content/uploads/2019/10/x06-Hakuno-Dead-Face.jpg",
+    "w": "Nasuverse",
+    "d": "Fate/Extra Last Encore",
+    "b": [
+      "M",
+      "st",
+      "cl",
+      "Wraith"
+    ],
+    "k": "AusthinH7"
+  },
+  {
+    "u": 2092616,
+    "n": "Bentham (Mr. 2)",
+    "t": 5,
+    "i": "Bentham_Digitally_Colored_Manga.png",
+    "s": "https://static.wikia.nocookie.net/onepiece/images/3/30/Bentham_Digitally_Colored_Manga.png",
+    "w": "One Piece",
+    "d": "",
+    "b": [
+      "M",
+      "O",
+      "cl",
+      "bj"
+    ],
+    "k": "Cyrus"
+  },
+  {
+    "u": 9803630,
+    "n": "Servilia of the Junii",
+    "t": 1,
+    "i": "tumblr_n0ookqBjtN1rwahceo1_r1_1280.jpg",
+    "s": "https://64.media.tumblr.com/40afc8d08306040dbbf0e85ddde954a1/tumblr_n0ookqBjtN1rwahceo1_r1_1280.jpg",
+    "w": "Rome",
+    "d": "TV Series",
+    "b": [
+      "F"
+    ],
+    "k": "Steve"
+  },
+  {
+    "u": 9794627,
+    "n": "Cleopatra",
+    "t": 2,
+    "i": "aea6640ebd2c2579287b19c99e064544.jpg",
+    "s": "https://i.pinimg.com/736x/ae/a6/64/aea6640ebd2c2579287b19c99e064544.jpg",
+    "w": "Rome",
+    "d": "TV Series",
+    "b": [
+      "F"
+    ],
+    "k": "Steve"
+  },
+  {
+    "u": 7718296,
+    "n": "Eirene",
+    "t": 1,
+    "i": "6d2c1331362ef941e82a077e4a498a0b.jpg",
+    "s": "https://i.pinimg.com/564x/6d/2c/13/6d2c1331362ef941e82a077e4a498a0b.jpg",
+    "w": "Rome",
+    "d": "TV Series",
+    "b": [
+      "F"
+    ],
+    "k": "Steve"
+  },
+  {
+    "u": 3265028,
+    "n": "Niobe of the Voreni",
+    "t": 1,
+    "i": "33399a52dc2c34a3a71af4f117f55374.jpg",
+    "s": "https://i.pinimg.com/736x/33/39/9a/33399a52dc2c34a3a71af4f117f55374.jpg",
+    "w": "Rome",
+    "d": "TV Series",
+    "b": [
+      "F"
+    ],
+    "k": "Steve"
+  },
+  {
+    "u": 2217932,
+    "n": "Atia of the Julii",
+    "t": 1,
+    "i": "ed084a78cd3272e0f44afce6b65fe09b.jpg",
+    "s": "https://i.pinimg.com/736x/ed/08/4a/ed084a78cd3272e0f44afce6b65fe09b.jpg",
+    "w": "Rome",
+    "d": "TV Series",
+    "b": [
+      "F"
+    ],
+    "k": "Steve"
+  },
+  {
+    "u": 6151483,
+    "n": "Octavia of the Julii",
+    "t": 1,
+    "i": "fa846877b3f4e8d9a46dcfa8c5005a4f.jpg",
+    "s": "https://i.pinimg.com/564x/fa/84/68/fa846877b3f4e8d9a46dcfa8c5005a4f.jpg",
+    "w": "Rome",
+    "d": "TV Series",
+    "b": [
+      "F"
+    ],
+    "k": "Steve"
+  },
+  {
+    "u": 2939001,
+    "n": "Meene montgomery",
+    "t": 6,
+    "i": "f78d4e845a2804cc08d8fa4d2d84e579.jpg",
+    "s": "https://i.pinimg.com/736x/f7/8d/4e/f78d4e845a2804cc08d8fa4d2d84e579.jpg",
+    "w": "Shaman King",
+    "d": "",
+    "b": [
+      "F",
+      "ps"
+    ],
+    "k": "oneye"
+  },
+  {
+    "u": 9085746,
+    "n": "Tao Jun",
+    "t": 6,
+    "i": "__tao_jun_shaman_king_drawn_by_nuda__sample-a3c6c3084ca0e5358717e5b135c01eac.jpg",
+    "s": "https://cdn.donmai.us/sample/a3/c6/__tao_jun_shaman_king_drawn_by_nuda__sample-a3c6c3084ca0e5358717e5b135c01eac.jpg",
+    "w": "Shaman King",
+    "d": "",
+    "b": [
+      "F",
+      "dc",
+      "hl",
+      "di",
+      "sn",
+      "ps"
+    ],
+    "in": "https://cdn.donmai.us/sample/6d/e8/__tao_jun_shaman_king_drawn_by_halcon__sample-6de838f4d478200f880ec512d68db403.jpg",
+    "k": "oneye"
+  },
+  {
+    "u": 8824230,
+    "n": "Huntara",
+    "t": 4,
+    "i": "1b356fe08e5c34a1e16a96bd82da1f63.jpg",
+    "s": "https://i.pinimg.com/originals/1b/35/6f/1b356fe08e5c34a1e16a96bd82da1f63.jpg",
+    "w": "She-Ra and the Princesses of Power",
+    "d": "",
+    "b": [
+      "F",
+      "az"
+    ],
+    "k": "Templar9999 "
+  },
+  {
+    "u": 5012757,
+    "n": "Zerofuku",
+    "t": 10,
+    "i": "https://i.imgur.com/zOe9qxUm.jpg",
+    "s": "https://i.imgur.com/zOe9qxU.jpg",
+    "w": "Shuumatsu no Valkyrie",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Nobody"
+  },
+  {
+    "u": 2916034,
+    "n": "Shiva",
+    "t": 10,
+    "i": "https://i.imgur.com/MdRZqPsm.jpg",
+    "s": "https://i.imgur.com/MdRZqPs.jpg",
+    "w": "Shuumatsu no Valkyrie",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Nobody"
+  },
+  {
+    "u": 6399856,
+    "n": "Heracles",
+    "t": 10,
+    "i": "https://i.imgur.com/tUiR4pNm.png",
+    "s": "https://i.imgur.com/tUiR4pN.png",
+    "w": "Shuumatsu no Valkyrie",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Nobody"
+  },
+  {
+    "u": 6414993,
+    "n": "Poseidon",
+    "t": 10,
+    "i": "https://i.imgur.com/L4PiPAdm.png",
+    "s": "https://i.imgur.com/L4PiPAd.png",
+    "w": "Shuumatsu no Valkyrie",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Nobody"
+  },
+  {
+    "u": 2252946,
+    "n": "Zeus",
+    "t": 10,
+    "i": "https://i.imgur.com/fzyPwCUm.png",
+    "s": "https://i.imgur.com/fzyPwCU.png",
+    "w": "Shuumatsu no Valkyrie",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Nobody"
+  },
+  {
+    "u": 7475946,
+    "n": "Thor",
+    "t": 10,
+    "i": "https://i.imgur.com/H5TX2I9m.png",
+    "s": "https://i.imgur.com/H5TX2I9.png",
+    "w": "Shuumatsu no Valkyrie",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Nobody"
+  },
+  {
+    "u": 4361346,
+    "n": "Raiden Tameemon",
+    "t": 7,
+    "i": "https://i.imgur.com/BCo1GUlm.png",
+    "s": "https://i.imgur.com/BCo1GUl.png",
+    "w": "Shuumatsu no Valkyrie",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Nobody"
+  },
+  {
+    "u": 9129196,
+    "n": "Jack the Ripper",
+    "t": 7,
+    "i": "https://i.imgur.com/vQ3T2GTm.png",
+    "s": "https://i.imgur.com/vQ3T2GT.png",
+    "w": "Shuumatsu no Valkyrie",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Nobody"
+  },
+  {
+    "u": 3034668,
+    "n": "Kojiro Sasaki",
+    "t": 7,
+    "i": "https://i.imgur.com/3jlviF0m.png",
+    "s": "https://i.imgur.com/3jlviF0.png",
+    "w": "Shuumatsu no Valkyrie",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Nobody"
+  },
+  {
+    "u": 6836547,
+    "n": "Lü Bu",
+    "t": 9,
+    "i": "https://i.imgur.com/fZTD3num.png",
+    "s": "https://i.imgur.com/fZTD3nu.png",
+    "w": "Shuumatsu no Valkyrie",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Nobody"
+  },
+  {
+    "u": 5828789,
+    "n": "Buddha",
+    "t": 10,
+    "i": "https://i.imgur.com/bx1Xl9rm.jpg",
+    "s": "https://i.imgur.com/bx1Xl9r.jpg",
+    "w": "Shuumatsu no Valkyrie",
+    "d": "",
+    "b": [
+      "M",
+      "gd"
+    ],
+    "k": "Nobody"
+  },
+  {
+    "u": 3015350,
+    "n": "Reginleif",
+    "t": 9,
+    "i": "https://i.imgur.com/hXAUK30m.png",
+    "s": "https://i.imgur.com/hXAUK30.png",
+    "w": "Shuumatsu no Valkyrie",
+    "d": "",
+    "b": [
+      "F",
+      "de"
+    ],
+    "k": "Nobody"
+  },
+  {
+    "u": 2102583,
+    "n": "Randgriz",
+    "t": 9,
+    "i": "https://i.imgur.com/ubOMLh0m.png",
+    "s": "https://i.imgur.com/ubOMLh0.png",
+    "w": "Shuumatsu no Valkyrie",
+    "d": "",
+    "b": [
+      "F",
+      "de"
+    ],
+    "k": "Nobody"
+  },
+  {
+    "u": 1359319,
+    "n": "Thrud",
+    "t": 9,
+    "i": "https://i.imgur.com/dADU7Xbm.jpg",
+    "s": "https://i.imgur.com/dADU7Xb.jpg",
+    "w": "Shuumatsu no Valkyrie",
+    "d": "",
+    "b": [
+      "F",
+      "de"
+    ],
+    "k": "Nobody"
+  },
+  {
+    "u": 5164544,
+    "n": "Hrist",
+    "t": 9,
+    "i": "https://i.imgur.com/XvT268Em.png",
+    "s": "https://i.imgur.com/XvT268E.png",
+    "w": "Shuumatsu no Valkyrie",
+    "d": "",
+    "b": [
+      "F",
+      "de"
+    ],
+    "k": "Nobody"
+  },
+  {
+    "u": 5687907,
+    "n": "Brunhilde",
+    "t": 9,
+    "i": "https://i.imgur.com/iINdDcWm.png",
+    "s": "https://i.imgur.com/iINdDcW.png",
+    "w": "Shuumatsu no Valkyrie",
+    "d": "",
+    "b": [
+      "F",
+      "de"
+    ],
+    "k": "Nobody"
+  },
+  {
+    "u": 1083141,
+    "n": "Adam",
+    "t": 10,
+    "i": "https://i.imgur.com/BtWMiYam.jpg",
+    "s": "https://i.imgur.com/BtWMiYa.jpg",
+    "w": "Shuumatsu no Valkyrie",
+    "d": "",
+    "b": [
+      "M",
+      "cl"
+    ],
+    "k": "Nobody"
+  },
+  {
+    "u": 7416768,
+    "n": "Porsha Crystal",
+    "t": 1,
+    "i": "1625101737.toxictoby_porsha_sfw.png",
+    "s": "https://d.furaffinity.net/art/toxictoby/1625101737/1625101737.toxictoby_porsha_sfw.png",
+    "w": "Sing",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "in": "https://d.furaffinity.net/art/johnfoxart/1642034822/1642034822.johnfoxart_porsha_web_1.png",
+    "k": "CD"
+  },
+  {
+    "u": 8535641,
+    "n": "Brightest Fragment of Brilliant Light",
+    "t": 8,
+    "i": "Rulers11.jpg",
+    "s": "https://i.postimg.cc/3x68nQ4n/Rulers11.jpg",
+    "w": "Solo Leveling",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 2254362,
+    "n": "Beast Monarch",
+    "t": 8,
+    "i": "Beast2.jpg",
+    "s": "https://i.postimg.cc/528LMgB5/Beast2.jpg",
+    "w": "Solo Leveling",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 9402303,
+    "n": "Baran",
+    "t": 8,
+    "i": "Baran1.jpg",
+    "s": "https://i.postimg.cc/pXpJ3Kck/Baran1.jpg",
+    "w": "Solo Leveling",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 5869733,
+    "n": "Iron Body Monarch",
+    "t": 8,
+    "i": "3ironbody.jpg",
+    "s": "https://i.postimg.cc/7hTbnPX1/3.jpg",
+    "w": "Solo Leveling",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 8478103,
+    "n": "Yogumunt",
+    "t": 8,
+    "i": "Yogumunt3.jpg",
+    "s": "https://i.postimg.cc/1RJZv1bw/Yogumunt3.jpg",
+    "w": "Solo Leveling",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 6862214,
+    "n": "Legia",
+    "t": 8,
+    "i": "Legia8.jpg",
+    "s": "https://i.postimg.cc/fR6sY7pP/Legia8.jpg",
+    "w": "Solo Leveling",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 7903972,
+    "n": "Statue of God",
+    "t": 7,
+    "i": "1statuegod.jpg",
+    "s": "https://i.postimg.cc/zBrdr3Hv/1.jpg",
+    "w": "Solo Leveling",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 3082901,
+    "n": "Frost Monarch",
+    "t": 9,
+    "i": "Frosty1.jpg",
+    "s": "https://i.postimg.cc/rwqxMWQv/Frosty1.jpg",
+    "w": "Solo Leveling",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 4637861,
+    "n": "Architect",
+    "t": 8,
+    "i": "Architect1.jpg",
+    "s": "https://i.postimg.cc/rptbTvhn/Architect1.jpg",
+    "w": "Solo Leveling",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 1779264,
+    "n": "Ashborn",
+    "t": 9,
+    "i": "Ashborn2.jpg",
+    "s": "https://i.postimg.cc/SRkBQD5B/Ashborn2.jpg",
+    "w": "Solo Leveling",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 1376048,
+    "n": "Absolute Being",
+    "t": 11,
+    "i": "1absolutebeing.jpg",
+    "s": "https://i.postimg.cc/cCcNfVw1/1.jpg",
+    "w": "Solo Leveling",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 1853233,
+    "n": "Antares",
+    "t": 9,
+    "i": "Antares1.jpg",
+    "s": "https://i.postimg.cc/BvtQ4QDT/Antares1.jpg",
+    "w": "Solo Leveling",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 6893501,
+    "n": "Cyla Urbanus/Ayiana",
+    "t": 6,
+    "i": "Ancients_5mill_03.jpg",
+    "s": "https://static.wikia.nocookie.net/esstargate/images/4/4f/Ancients_5mill_03.jpg",
+    "w": "Stargate",
+    "d": "",
+    "b": [
+      "F",
+      "hl",
+      "sn"
+    ],
+    "k": "Alya"
+  },
+  {
+    "u": 1419842,
+    "n": "Scott McCall",
+    "t": 4,
+    "i": "3558386.jpg",
+    "s": "https://wallpaperaccess.com/full/3558386.jpg",
+    "w": "Teen Wolf",
+    "d": "",
+    "b": [
+      "M",
+      "sr"
+    ],
+    "k": "Dante_Bloodgrave"
+  },
+  {
+    "u": 3025129,
+    "n": "Fujiwara Nobuhide",
+    "t": 6,
+    "i": "Fujiwara-Nobuhide-1.png",
+    "s": "https://i.postimg.cc/6QrWq30F/Fujiwara-Nobuhide-1.png",
+    "w": "The Ability To Make Town!?",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 3966910,
+    "n": "Black Phillip",
+    "t": 4,
+    "i": "main-qimg-0f5d5c67def816147f3cdf25a6d6d141-lq.jpg",
+    "s": "https://i.postimg.cc/8CD2cC9J/main-qimg-0f5d5c67def816147f3cdf25a6d6d141-lq.jpg",
+    "w": "The Witch",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 2256298,
+    "n": "The Witch",
+    "t": 4,
+    "i": "thewitch2.jpg",
+    "s": "https://morbidlybeautiful.com/wp-content/uploads/2018/05/thewitch2.jpg",
+    "w": "The Witch",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 4263751,
+    "n": "Thomasin",
+    "t": 1,
+    "i": "vogue_living_8542.jpg",
+    "s": "https://media.vogue.es/photos/5cc764d4a6e117447754e002/3:4/w_321,h_428,c_limit/vogue_living_8542.jpg",
+    "w": "The Witch",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 5445861,
+    "n": "Celebrimbor",
+    "t": 6,
+    "i": "558913964d88f1cb6fb3b58ee6bbaf72.jpg",
+    "s": "https://i.pinimg.com/originals/55/89/13/558913964d88f1cb6fb3b58ee6bbaf72.jpg",
+    "w": "Tolkien's Legendarium",
+    "d": "",
+    "b": [
+      "M",
+      "mt",
+      "mp",
+      "bj",
+      "dr",
+      "di",
+      "rs",
+      "me",
+      "un",
+      "el",
+      "ps"
+    ],
+    "k": "irugaa0"
+  },
+  {
+    "u": 2097792,
+    "n": "Talion",
+    "t": 6,
+    "i": "Dark_Talion_in_Armor.jpg",
+    "s": "https://static.wikia.nocookie.net/middleearthshadowofmordor7723/images/f/fe/Dark_Talion_in_Armor.jpg",
+    "w": "Tolkien's Legendarium",
+    "d": "Middle-earth: Shadow of Mordor",
+    "b": [
+      "M",
+      "mt",
+      "dr",
+      "im",
+      "cr",
+      "di",
+      "rs",
+      "un",
+      "ps"
+    ],
+    "k": "irugaa0"
+  },
+  {
+    "u": 2839912,
+    "n": "Jill Stingray",
+    "t": 2,
+    "i": "__jill_stingray_va_11_hall_a_drawn_by_bl_ess__sample-0807f96985dd5b959a9928900cf0fe6d.jpg",
+    "s": "https://cdn.donmai.us/sample/08/07/__jill_stingray_va_11_hall_a_drawn_by_bl_ess__sample-0807f96985dd5b959a9928900cf0fe6d.jpg",
+    "w": "Va-11 Hall-a",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Digital_Devil"
+  },
+  {
+    "u": 7513989,
+    "n": "Evangelyne",
+    "t": 5,
+    "i": "0b79a10c4f627d19674e780e7f6d1961.png",
+    "s": "https://i.pinimg.com/originals/0b/79/a1/0b79a10c4f627d19674e780e7f6d1961.png",
+    "w": "Wakfu",
+    "d": "",
+    "b": [
+      "F",
+      "cl",
+      "el",
+      "Archer"
+    ],
+    "k": "AusthinH7"
+  },
+  {
+    "u": 9152852,
+    "n": "Goultard",
+    "t": 8,
+    "i": "a648bb35da5c622496624baed617f7ee.jpg",
+    "s": "https://i.pinimg.com/736x/a6/48/bb/a648bb35da5c622496624baed617f7ee.jpg",
+    "w": "Wakfu",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "AusthinH7"
+  },
+  {
+    "u": 6861086,
+    "n": "Kairos Fateweaver",
+    "t": 7,
+    "i": "gwev61i51kn71.jpg",
+    "s": "https://i.redd.it/gwev61i51kn71.jpg",
+    "w": "Warhammer Fantasy",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 9739222,
+    "n": "Zhao Ming",
+    "t": 7,
+    "i": "Zhao-Ming-legendary-lord-grand-cathay-total-war-warhammer-3.png",
+    "s": "https://i0.wp.com/alcasthq.com/wp-content/uploads/2021/12/Zhao-Ming-legendary-lord-grand-cathay-total-war-warhammer-3.png",
+    "w": "Warhammer Fantasy",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 5664265,
+    "n": "Miao Ying",
+    "t": 7,
+    "i": "4bvfuhao3rn71.png",
+    "s": "https://i.postimg.cc/L6tTL91t/4bvfuhao3rn71.png",
+    "w": "Warhammer Fantasy",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 4182581,
+    "n": "Rexxar",
+    "t": 6,
+    "i": "Rexxar-Art.jpg",
+    "s": "https://i.postimg.cc/Xvk5gQjv/Rexxar-Art.jpg",
+    "w": "World of Warcraft",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 2182008,
+    "n": "Garrosh Hellscream",
+    "t": 6,
+    "i": "28a3b7ced21793e17d1b9f5d5f1f3fd0.png",
+    "s": "https://i.pinimg.com/originals/28/a3/b7/28a3b7ced21793e17d1b9f5d5f1f3fd0.png",
+    "w": "World of Warcraft",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 6311827,
+    "n": "Lor'themar Theron",
+    "t": 6,
+    "i": "matthew-mckeown-matthewmckeown81-lorthemar-concept.jpg",
+    "s": "https://i.postimg.cc/KvM9xhc3/matthew-mckeown-matthewmckeown81-lorthemar-concept.jpg",
+    "w": "World of Warcraft",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 4640535,
+    "n": "Lor'themar Theron",
+    "t": 6,
+    "i": "a112f82ee267149165a151a0929e0a19.png",
+    "s": "https://i.pinimg.com/originals/a1/12/f8/a112f82ee267149165a151a0929e0a19.png",
+    "w": "World of Warcraft",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 5508196,
+    "n": "Sargeras",
+    "t": 11,
+    "i": "Sargeras-Gamescom-2017.png",
+    "s": "https://i.postimg.cc/h4Js1RdZ/Sargeras-Gamescom-2017.png",
+    "w": "World of Warcraft",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 7110082,
+    "n": "Chen Stormstout",
+    "t": 6,
+    "i": "aaron-lovett-chenfinalsmall.jpg",
+    "s": "https://cdnb.artstation.com/p/assets/images/images/018/493/479/large/aaron-lovett-chenfinalsmall.jpg",
+    "w": "World of Warcraft",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 8913108,
+    "n": "Gul'dan",
+    "t": 7,
+    "i": "EImfDKoWsAA20OP.jpg",
+    "s": "https://pbs.twimg.com/media/EImfDKoWsAA20OP.jpg",
+    "w": "World of Warcraft",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 3292667,
+    "n": "Majima Gorou",
+    "t": 4,
+    "i": "__majima_gorou_ryuu_ga_gotoku_and_1_more_drawn_by_jiao_mao__sample-c5913ae7edcc348846432e91abc5acf9.jpg",
+    "s": "https://cdn.donmai.us/sample/c5/91/__majima_gorou_ryuu_ga_gotoku_and_1_more_drawn_by_jiao_mao__sample-c5913ae7edcc348846432e91abc5acf9.jpg",
+    "w": "Yakuza",
+    "d": "",
+    "b": [
+      "M",
+      "hz",
+      "cl"
+    ],
+    "k": "Feeltheheat"
   }
 ]

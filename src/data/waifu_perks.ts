@@ -171,9 +171,9 @@ waifu_perks.push({
 })
 waifu_perks.push({
   title: 'Unsealed Choushin',
-  waifu: 'Hakubi Washuu',
+  waifu: ['Hakubi Washuu', 'Sasami/Tsunami'],
   from: 'Tenchi Muyo!',
-  uid: 5557,
+  uid: [5557, 5558],
   tier: 11,
   image: 'https://cdn.statically.io/gh/klassekatze/waifucatimg/master/imagecache_thumb/f83799b02923d0a23008f94ca8d87e83.jpg',
   discount: 1000,

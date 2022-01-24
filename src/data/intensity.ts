@@ -13,6 +13,7 @@ export interface Intensity {
   whitelist?: string[]
   desc: string
   needed?: number
+  chargen?: boolean
 }
 export const intensity: Intensity[] = []
 
@@ -29,7 +30,7 @@ intensity.push({
   special: 'Chargen only',
   chargen: true,
   desc: `You aren’t the only player in your game. Another contractor walks alongside you, visiting the same worlds in the same order. Your progress meters for Exit Stage Left and Rainbow Bridge are synchronized and charged by both of your activities.
-The intensity bonus for this mode applies additively for each additional contractor on your team: +20 % each for a party of two, + 40 % each for a party of three, +60 % each for a party of four, etc. Your budgets are increased to offset the limited supply of targets in each world versus the additional demand.`,
+<p>The intensity bonus for this mode applies additively for each additional contractor on your team: +20 % each for a party of two, + 40 % each for a party of three, +60 % each for a party of four, etc. Your budgets are increased to offset the limited supply of targets in each world versus the additional demand.</p>`,
 })
 intensity.push({
   title: 'Couple’s Account(Cooperative)',
@@ -38,7 +39,7 @@ intensity.push({
   chargen: true,
   blacklist: ['DR11'],
   desc: `Your spouse or significant other is a contractor like you, but the two of you are tied much more closely than the friends option above. The two of you share full access to a joint account tied to both of your smart devices. A member of your retinue may be a waifu or husbando to one of you and merely a familiar to the other.
-You will only pay for the more expensive of your two Origins. The chosen binding method treats you as equal masters, ensuring that your love never fades. (If you have the Symbiote, one of you will usually, but not necessarily, be the queen.) Heritages are purchased separately, but the other of you can buy any Heritage that one of you has at half - price, after all discounts and ignoring the usual discount cap. The control aspects of Bindings, Lures, and any Heritage hierarchy mechanics will only affect your relationship if the two of you are into that. OC Donut Steel, Template Stacking, and relevant waifu perks are purchased individually. All other items need only be purchased once to benefit the both of you equally. Your shared retinue will not enter R. I. P. mode unless you both perish.`,
+<p>You will only pay for the more expensive of your two Origins. The chosen binding method treats you as equal masters, ensuring that your love never fades. (If you have the Symbiote, one of you will usually, but not necessarily, be the queen.) Heritages are purchased separately, but the other of you can buy any Heritage that one of you has at half - price, after all discounts and ignoring the usual discount cap. The control aspects of Bindings, Lures, and any Heritage hierarchy mechanics will only affect your relationship if the two of you are into that. OC Donut Steel, Template Stacking, and relevant waifu perks are purchased individually. All other items need only be purchased once to benefit the both of you equally. Your shared retinue will not enter R. I. P. mode unless you both perish.</p>`,
 })
 intensity.push({
   title: 'Cash Still Rules',
@@ -78,7 +79,7 @@ intensity.push({
   special: 'Gauntlet only, mutually exclusive with One In Ten',
   blacklist: ['One In Ten', 'Wage Slave'],
   desc: `This is the default option. You are locked into PVP for 20 rounds. Negotiable opponents may appear from round 1 to round 15, Rivals may appear from round 11 to round 19, and you will always face an Enemy on round 20. Members of your retinue rated T11 may not directly participate. Your prize for survival is one T11 ticket.
-You may transition to this challenge after completing One In Ten. If you do so, you must choose between giving up the prize for the previous challenge and accepting 1800 credits instead of the normal prize for this one. The additional budget increase will be applied according to the highest - danger world you’ve visited.`,
+<p>You may transition to this challenge after completing One In Ten. If you do so, you must choose between giving up the prize for the previous challenge and accepting 1800 credits instead of the normal prize for this one. The additional budget increase will be applied according to the highest - danger world you’ve visited.</p>`,
 })
 intensity.push({
   title: 'Survivalism',
@@ -86,7 +87,7 @@ intensity.push({
   pvp: true,
   whitelist: ['Fight For Your Right'],
   desc: `You are locked into PVP for 50 rounds. Negotiable opponents may appear from round 1 to round 25, Rivals may appear from round 16 to round 40, and Enemies may appear starting on round 36. This scaling overrides the effect of the previous challenge. Members of your retinue rated T11 may not directly participate before round 46. Your prize for survival is three additional T11 tickets, on top of the reward for the previous challenge.
-You may transition to this challenge after completing Fight For Your Right. The additional budget increase will be applied according to the highest - danger world you’ve visited.`,
+<p>You may transition to this challenge after completing Fight For Your Right. The additional budget increase will be applied according to the highest - danger world you’ve visited.</p>`,
 })
 intensity.push({
   title: 'Marathon',
@@ -94,7 +95,7 @@ intensity.push({
   pvp: true,
   whitelist: ['Survivalism'],
   desc: `You are locked into PVP for 100 rounds. Negotiable opponents may appear from round 1 to round 40, Rivals may appear from round 31 to round 70, and Enemies may appear starting on round 61. This scaling overrides the effects of the previous two challenges. Members of your retinue rated T11 may not directly participate before round 91. Your prize for survival is six additional T11 tickets, on top of the rewards for the previous challenges, plus the dimensional coordinates to your original homeworld in a format compatible with Rainbow Bridge or your other travel methods.
-You may transition to this challenge after completing Survivalism, or together with Survivalism after completing Fight For Your Right. If you choose the latter, the reward for completing Survivalism will be added to this challenge’s reward, so the total prize is still 10 T11 tickets. The additional budget increase will be applied according to the highest - danger world you’ve visited.`,
+<p>You may transition to this challenge after completing Survivalism, or together with Survivalism after completing Fight For Your Right. If you choose the latter, the reward for completing Survivalism will be added to this challenge’s reward, so the total prize is still 10 T11 tickets. The additional budget increase will be applied according to the highest - danger world you’ve visited.</p>`,
 })
 intensity.push({
   title: 'Come At Me Bro',
@@ -163,5 +164,5 @@ intensity.push({
   pvp: true,
   whitelist: ['Fight For Your Right'],
   desc: `You no longer benefit from rest periods. New opponents, including your first, will enter your present world immediately after the last is defeated, though not necessarily in a location near you.
-If taken with Arena, this will completely disable d - travel for the duration of the PVP challenge. Warranty Plan resurrections will occur when you or your retinue defeat an opponent, even if others are still active; you do not need to defeat every active opponent simultaneously. Unwanted thefts may not be sold until the challenge is over.`,
+<p>If taken with Arena, this will completely disable d - travel for the duration of the PVP challenge. Warranty Plan resurrections will occur when you or your retinue defeat an opponent, even if others are still active; you do not need to defeat every active opponent simultaneously. Unwanted thefts may not be sold until the challenge is over.</p>`,
 })

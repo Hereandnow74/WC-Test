@@ -138,13 +138,28 @@
       Nasuverse DLC rules
     </h2>
     <Desc id="NasuDLC" :desc="nasuDLC" class="bg-warm-gray-200 dark:bg-gray-800" />
-    <div class="pt-4"></div>
+    <h2 id="specific" class="text-xl text-center">
+      Setting Specific Rules
+    </h2>
+    <div class="md:column-count-2 column-gap">
+      <div
+        v-for="world in worlds.filter(w => w.additional)"
+        :key="world.worldName"
+        class="mb-2 column-block max-w-[600px] bg-warm-gray-200 dark:bg-gray-800"
+      >
+        <h3 class="text-center text-lg">
+          {{ world.worldName }}
+        </h3>
+        <Desc :desc="world.additional" />
+      </div>
+    </div>
+    <div class="h-4"></div>
     <ShareLoad />
   </div>
 </template>
 
 <script lang="ts" setup>
-import { WORLD_RATINGS, rulesList } from '~/data/constants'
+import { WORLD_RATINGS, rulesList, useWorlds } from '~/data/constants'
 import {
   startingDesc, pvpRules, effectiveTiers, captures, familiars, purchases, sales, waifu11,
   danger11, services, salary, helpDesk, loans, missions, refund, arranged, arrangedConditions,
@@ -241,6 +256,8 @@ const powerTier = [
 ]
 
 const tiersTab = ref(0)
+
+const { worlds } = useWorlds()
 
 onMounted(() => useTooltips())
 

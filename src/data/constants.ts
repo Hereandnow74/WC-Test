@@ -79,6 +79,7 @@ export const rulesList = [
   { title: 'arrangedTeam', title2: 'Arranged Team Matches and Prizes' },
   { title: 'arrangedSpecial', title2: 'Special Arranged Match Rules' },
   { title: 'NasuDLC', title2: 'Nasuverse DLC rules' },
+  { title: 'specific', title2: 'Setting Specific Rules' },
 ]
 
 export const waifusThatHasPerk = [...waifu_perks, ...DLCwaifu_perks].reduce((a, x) => (isArray(x.uid) ? x.uid.forEach(u => a[u] = x.title) : a[x.uid] = x.title, a), {})
@@ -240,6 +241,13 @@ const subWorlds = ref([])
 async function getWorlds() {
   worlds.value = (await import('~/data/worlds.json')).default
   subWorlds.value = (await import('~/data/userWorlds.json')).default
+}
+
+export function useWorlds() {
+  return {
+    worlds,
+    subWorlds,
+  }
 }
 
 getWorlds()

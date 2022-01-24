@@ -118,12 +118,12 @@ DLCgenericPerks.push({
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'Native Merger',
   cost: 1,
-  costVariants: [1, 2, 6, 12, 24, 60, 120, 240, 600, 1200],
+  costVariants: [1, 2, 5, 10, 20, 50, 100, 200, 500, 1000],
   complex: 'target',
   desc: `It is possible to later visit a world containing a version of a waifu previously purchased. This perk merges your waifu with the local version, as if they had Substituted into them. If you have Adjustment Field or similar, both forms become available as preset options.
   <p>Cost is based on target tier:</p>
   <div class="flex flex-wrap gap-4">
-    <div v-for="cost, i in [1, 2, 6, 12, 24, 60, 120, 240, 600, 1200]">
+    <div v-for="cost, i in [1, 2, 5, 10, 20, 50, 100, 200, 500, 1000]">
       T{{i + 1}}: {{cost}}
     </div>
   </div>

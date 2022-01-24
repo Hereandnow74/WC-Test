@@ -55,6 +55,7 @@
           <span>Templar9999<pepicons:crown class="text-gray-400" /></span>
           <span>Cyrus<pepicons:crown class="text-red-400" /></span>
           <span>KatzSmile</span>
+          <span>Bryce C.</span>
         </div>
       </div>
     </div>

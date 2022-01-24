@@ -20,7 +20,7 @@
           title="Sort by Name"
           @click="toggleAlpha()"
         >
-          <fa-solid:sort-alpha-down v-if="sortAlpha" class="inline-block rounded" />
+          <fa-solid:sort-alpha-down v-if="sortAlpha === 1" class="inline-block rounded" />
           <fa-solid:sort-alpha-up v-else class="inline-block rounded" />
         </div>
         <div
@@ -29,7 +29,7 @@
           title="Sort by Rating"
           @click="toggleRating()"
         >
-          <fa-solid:sort-numeric-down v-if="sortRating" class="inline-block rounded" />
+          <fa-solid:sort-numeric-down v-if="sortRating === 1" class="inline-block rounded" />
           <fa-solid:sort-numeric-up v-else class="inline-block rounded" />
         </div>
       </div>
