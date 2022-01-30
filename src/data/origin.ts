@@ -57,12 +57,14 @@ origin.push({
     into the new you's head at some point before the start of your
     story, but not before puberty. You can distinguish between the two
     sets of memories without difficulty.
-    If your starting world is one where even the "normie"
-    characters have in-born special abilities equivalent to a
-    copper-star waifu, the local you will have some low-superhuman
-    ability that fits the setting and this origin costs 10 credits. If the
-    "normie" characters are instead equivalent to silver-star waifus,
-    you will be equivalent to them and this origin will cost 100 credits.`,
+    <p>
+      If your starting world is one where even the "normie"
+      characters have in-born special abilities equivalent to a
+      copper-star waifu, the local you will have some low-superhuman
+      ability that fits the setting and this origin costs 10 credits. If the
+      "normie" characters are instead equivalent to silver-star waifus,
+      you will be equivalent to them and this origin will cost 100 credits.
+    </p>`,
   blacklist: [],
 })
 
@@ -73,29 +75,11 @@ origin.push({
   image: '/img/origin/substitute2.jpg',
   character: true,
   max: 20,
-  desc: `You reincarnate into a canon character from your starting
-    world, whether that's a waifu or husbando. You will be them, for
-    all intents and purposes, with your original memories adding to
-    theirs at some point before the start of your story, but not before
-    puberty. You can distinguish between the two sets of memories
-    without difficulty. Rule 63 variants of substitution targets require
-    Universal Calibration, unless the target is androgynous or
-    customizable. If the target is part of a set that are purchased
-    together, choose one to insert into and take the others as free
-    retinue members. If the target has any number of humanoid
-    familiars, take them as free retinue members as well.
-    You will keep all of your substitution target's skills,
-    powers, and special traits, as they were at the point of
-    substitution. A framework will guide you through learning
-    whatever canon abilities are missing, just like what early
-    captures get. Any crippling, categorical weakness that your
-    target has will be eliminated when you/they first awaken, just as
-    if you'd bound your target as a waifu or husbando.
-    You must purchase your substitution target at their full
-    price, adjusted according to their ability at the time you enter.
-    This will often be lower than their listed price. You may not
-    spend more than 20% of your starting budget, after drawbacks,
-    on this perk`,
+  desc: `You reincarnate into a canon character from your starting world, whether that's a waifu or husbando. You will be them, for all Intents and purposes, with your original memories adding to theirs at some point before the start of your story, but not before puberty. You can distinguish between the two sets of memories without difficulty. Rule 63 variants of substitution targets require Universal Calibration, unless the target Is androgynous or customizable. If the target is part of a set that are purchased together, choose one to insert into and take the others as free retinue members. If the target has any number of humanoid familiars, take them as free retinue members as well.
+<p>
+  You will keep all of your substitution target's skills, powers, and special traits, as they were at the point of substitution. A framework will guide you through learning whatever canon abilities are missing, just like what early captures get. Any crippling, categorical weakness that your target has will be eliminated when you/they first awaken, just as if you'd bound your target as a waifu or husbando.</p>
+  <p>You must purchase your substitution target at their full price, adjusted according to their ability at the time you enter. This will often be lower than their listed price. You may not spend more than 20% of your intensity-adjusted starting budget on this perk.</p>
+`,
 })
 
 origin.push({
@@ -103,21 +87,7 @@ origin.push({
   cost: 0,
   image: '/img/origin/possess2.jpg',
   character: true,
-  desc: `Be the waifu or husbando. Your self will be downloaded
-    into the body of one a waifu or husbando, completely replacing
-    theirs. Rule 63 variants are available for every choice imaginable.
-    You must purchase the subject at their full price. Take this perk if
-    you want to start in a world other than the one your target calls
-    home. If you ever enter your target's homeworld, even as your first
-    world, an original version of the character will be present. If the
-    target is part of a set that are purchased together, choose one to
-    insert into and take the others as free retinue members.
-    Everything that your target would have if you bought them
-    outright, you keep, except for their episodic memory and
-    emotional connections - because the original personality was
-    never present. Any crippling, categorical weaknesses that your
-    target has will be eliminated when you take over, just as if you'd
-    bound your target as a waifu or husbando. You must purchase the
-    waifu or husbando you intend to possess at their normal price.`,
+  desc: `Be the waifu or husbando. Your self will be downloaded into the body of one a waifu or husbando, completely replacing theirs. Rule 63 variants are available for every choice imaginable. You must purchase the subject at their full price. Take this perk if you want to start in a world other than the one your target calls home. If you ever enter your target's homeworld, even as your first world, an original version of the character will be present. If the target is part of a set that are purchased together, choose one to insert into and take the others as free retinue members.
+<p>Everything that your target would have if you bought them outright, you keep, except for their episodic memory and emotional connections - because the original personality was never present Any crippling, categorical weaknesses that your target has will be eliminated when you take over, just as if you’d bound your target as a waifu or husbando. You must purchase the waifu or husbando you intend to possess at their normal price.</p>`,
   blacklist: [],
 })

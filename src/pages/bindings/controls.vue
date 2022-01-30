@@ -1,0 +1,51 @@
+<template>
+  <div class="sm:p-2">
+    <h3 id="other" class="text-2xl text-center">
+      Other controls
+    </h3>
+    <Desc :desc="otherDesc" class="bg-gray-200 dark:bg-gray-600 max-w-screen-md my-4 mx-auto" />
+    <div
+      class="column-gap pb-8"
+      :class="settings.columns !== 'auto' ? `column-count-${settings.columns}` : 'md:column-count-2 xl:column-count-3 4xl:column-count-4 5xl:column-count-5'"
+    >
+      <PerkCard
+        v-for="other in otherDLC"
+        :key="other.title"
+        :perk="other"
+        :bg="lureAvailable(other) ? 'pink-100 dark:pink-900 hover:(pink-200 dark:rose-800)'
+          : 'gray-200 dark:gray-600'"
+        :is-active="!!allOther[other.title]"
+        @pickPerk="chooseOther"
+      >
+      </PerkCard>
+    </div>
+  </div>
+</template>
+
+<script lang='ts' setup>
+import {
+  otherControls, otherDesc,
+} from '~/data/binding'
+import { useTooltips } from '~/logic/misc'
+import { lureAvailable, chooseOther } from '~/logic'
+import { useStore } from '~/store/store'
+import { DLCotherControls } from '~/data/DLCs'
+import PerkCard from '~/components/PerkCard.vue'
+
+const { otherPerks, settings } = useStore()
+
+const otherDLC = computed(() => !settings.value.allChosenAuthors[0]
+  ? otherControls
+    .concat(DLCotherControls
+      .filter(perk => !settings.value.allChosenAuthors.includes(perk.dlc)))
+  : otherControls)
+
+onMounted(() => useTooltips())
+
+const allOther = computed(() => {
+  const res: any = {}
+  otherPerks.value.forEach(x => res[x.title] = x)
+  return res
+})
+
+</script>

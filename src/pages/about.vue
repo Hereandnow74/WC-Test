@@ -1,13 +1,13 @@
 <template>
   <div class="max-w-screen-md mt-8 lg:pl-0 pb-8 text-lg">
-    <div class="bg-green-100 dark:bg-green-900 p-4 shadow-lg rounded dark:shadow-white flex flex-col gap-4">
+    <div class="bg-green-100 dark:bg-green-900 p-4 shadow-lg rounded dark:shadow-gray-800 flex flex-col gap-4">
       <h3 class="text-2xl text-center">
         About Page
       </h3>
       <div>
         Time I spend on Interactive Waifu Catalog so far -
-        <span class="text-amber-500 text-2xl">476</span> hours in
-        <span class="text-amber-500 text-2xl">121</span> days.
+        <span class="text-amber-500 text-2xl">{{ 423 + 110 }}</span> hours in
+        <span class="text-amber-500 text-2xl">{{ 107 + 28 }}</span> days.
       </div>
       <div>
         If you found some bugs, have any questions about Interactive, suggestions, collaborations or you want to hire me
@@ -51,11 +51,12 @@
           Supporters <ci:heart-fill class="text-red-500" />
         </h4>
         <div class="flex flex-wrap gap-2 justify-center text-semibold">
-          <span>BenFang322<pepicons:crown class="text-amber-400" /></span>
-          <span>Templar9999<pepicons:crown class="text-gray-400" /></span>
-          <span>Cyrus<pepicons:crown class="text-red-400" /></span>
-          <span>KatzSmile</span>
-          <span>Bryce C.</span>
+          <span class="bg-gray-200 dark:bg-gray-700  px-1 rounded flex items-center gap-1">BenFang322<pepicons:crown class="text-amber-400" /></span>
+          <span class="bg-gray-200 dark:bg-gray-700  px-1 rounded flex items-center gap-1">Templar9999<pepicons:crown class="text-gray-400 " /></span>
+          <span class="bg-gray-200 dark:bg-gray-700  px-1 rounded flex items-center gap-1">Despin<pepicons:crown class="text-red-400" /></span>
+          <span class="bg-gray-200 dark:bg-gray-700  px-1 rounded">Cyrus</span>
+          <span class="bg-gray-200 dark:bg-gray-700  px-1 rounded">KatzSmile</span>
+          <span class="bg-gray-200 dark:bg-gray-700  px-1 rounded">Bryce C.</span>
         </div>
       </div>
     </div>

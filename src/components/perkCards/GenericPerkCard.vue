@@ -90,5 +90,5 @@ function sendPerk() {
 }
 
 onMounted(() => { if (perkImg.value) lazyLoadSingleImg(perkImg.value) })
-watch(() => cloneDeep(settings.value), () => { console.log(settings) }, { deep: true })
+watch(settings.value, () => nextTick(() => { if (perkImg.value) lazyLoadSingleImg(perkImg.value) }))
 </script>

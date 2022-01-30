@@ -507,7 +507,7 @@ waifu_perks.push({
   title: 'Herrscher of the Void',
   waifu: 'Kiana Kaslana',
   from: 'Honkai Impact',
-  uid: 7538,
+  uid: 7260,
   tier: 7,
   image: 'https://i.imgur.com/aZWHJsn.jpg?1',
   cost: 100,
@@ -517,7 +517,7 @@ waifu_perks.push({
   title: 'Sirin Kaslana',
   waifu: 'Kiana Kaslana (Herrscher of the Void)',
   from: 'Honkai Impact',
-  uid: 7538,
+  uid: 7260,
   tier: 9,
   image: 'https://pixiv.cat/80489690.png',
   cost: 400,
@@ -1178,4 +1178,30 @@ DLCwaifu_perks.push({
   tier: 8,
   image: 'https://64.media.tumblr.com/96d10803d3679fe01fedf39b2e43cd88/tumblr_pkzrnvTsSV1w13l7eo1_1280.jpg',
   title: 'Adonai Melek Ensufall',
+})
+
+DLCwaifu_perks.push({
+  dlc: 'Templar9999',
+  waifu: 'Optimus Prime',
+  uid: 3102578,
+  from: 'Transformers',
+  desc: `
+  <p>Optimus Prime has claimed the Star Saber of legend.  Fully realizing his potential as a Prime of the Autobots, and greatly enhancing his combat potential.</p>`,
+  cost: 500,
+  tier: 9,
+  image: 'https://i.pinimg.com/736x/75/3a/24/753a24e594893e27b1f69a947fd516f7.jpg',
+  title: 'Star Saber',
+})
+
+DLCwaifu_perks.push({
+  dlc: 'Templar9999',
+  waifu: 'Megatron',
+  uid: 8144835,
+  from: 'Transformers',
+  desc: `
+  <p>Forged from the blood of the dark god Unicron, with the stolen arm of Solus Prime, this dark shadow to the Star Saber can theoretically be wielded by any transformer willing to merge with said necromantic substance.  Only Megatron has ever been strong enough, or insane enough, to succeed.</p>`,
+  cost: 500,
+  tier: 9,
+  image: 'https://tfwiki.net/mediawiki/images2/d/df/Megatron_TFPS313_standing.jpg',
+  title: 'Becoming',
 })

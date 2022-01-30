@@ -141,7 +141,7 @@
     <h2 id="specific" class="text-xl text-center">
       Setting Specific Rules
     </h2>
-    <div class="md:column-count-2 column-gap">
+    <div class="md:column-count-2 column-gap pb-8">
       <div
         v-for="world in worlds.filter(w => w.additional)"
         :key="world.worldName"
@@ -153,7 +153,6 @@
         <Desc :desc="world.additional" />
       </div>
     </div>
-    <div class="h-4"></div>
     <ShareLoad />
   </div>
 </template>

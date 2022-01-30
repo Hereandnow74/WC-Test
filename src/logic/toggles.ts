@@ -13,6 +13,7 @@ export const [showAddMission, toggleShowAddMission] = useToggle()
 export const [isSupport, toggleSupport] = useToggle(false)
 export const [isRetinueEdit, toggleRetinueEdit] = useToggle(false)
 export const [showSettings, toggleShowSettings] = useToggle(false)
+export const [showReport, toggleShowReport] = useToggle(false)
 
 export const userCharactersShown = ref(false)
 

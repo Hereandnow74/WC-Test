@@ -12,7 +12,10 @@
         <div class="flex">
           <Input v-if="editMode" v-model="startingOrigin.character" placeholder="Your name" />
           <span v-else>
-            {{ startingOrigin.character }}<span class="text-gray-500 text-sm"> (It's you)</span>
+            {{ startingOrigin.character }}
+            <span class="text-gray-500 text-sm">
+              (It's you <span v-if="startingOrigin.title">as {{ startingOrigin.title }}</span>)
+            </span>
           </span>
           <span class="text-gray-500 ml-auto whitespace-nowrap"> Tier: <span class="text-green-500">{{ Math.max(startingOrigin.tier || 1, yourTier) }}</span></span>
         </div>

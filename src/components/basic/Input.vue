@@ -13,7 +13,7 @@
         @input="$emit('update:modelValue', ($event.target as HTMLInputElement).value)"
       >
     </label>
-    <span v-if="errorMessage" class="text-xs text-red-600 dark:text-red-300">
+    <span v-if="errorMessage" class="text-xs text-red-600 dark:text-red-300 leading-none">
       {{ errorMessage }}
     </span>
   </div>

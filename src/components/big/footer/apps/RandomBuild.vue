@@ -48,7 +48,11 @@ async function randomWorld(maxPrice: number) {
 
 async function randomOrigin(startBudget: number) {
   const ind = random(0, 4)
-  if (ind < 2) return { title: origin[ind].title, cost: 0 }
+  if (ind < 1) return { title: origin[ind].title, cost: 0 }
+  if (ind === 1) {
+    const char = await randomChar(false, 1001)
+    return { title: origin[ind].title, cost: 0, character: char.n, tier: char.t }
+  }
   if (ind === 2) return { title: origin[ind].title, cost: sample([0, 10]) }
   if (ind === 3) {
     const char = await randomChar(false, startBudget * 0.2)

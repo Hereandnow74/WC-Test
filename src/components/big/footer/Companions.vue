@@ -25,8 +25,10 @@
           :key="char.uid"
           :char="char"
           :image="companionImages[char.uid]"
+          :perks="companionsPerksList[char.uid] || {}"
           :edit-mode="isRetinueEdit"
           @sell="sellCompanion"
+          @undo="undoBuying"
         />
       </div>
       <div v-if="!companionsData.length" class="text-center">
@@ -40,14 +42,15 @@
 </template>
 
 <script lang="ts" setup>
-import { findIndex } from 'lodash-es'
-import { DBCharacter } from 'global'
-import { CHAR_COSTS, getAllChars } from '~/data/constants'
+import { find, findIndex, isArray } from 'lodash-es'
+import { CHAR_COSTS, getAllCharsObject } from '~/data/constants'
 import { lazyLoadImg, orientation, isRetinueEdit, imageLink } from '~/logic'
 import { useStore } from '~/store/store'
-import CompanionCardMini from '~/components/CompanionCardMini.vue'
+import { waifu_perks, DLCwaifu_perks } from '~/data/waifu_perks'
 
-const { companions, underLoan, loan, trHistory } = useStore()
+const { companions, underLoan, loan, trHistory, talentPerks, genericWaifuPerks, waifuPerks } = useStore()
+
+const specificPerksWithDLC = waifu_perks.concat(DLCwaifu_perks)
 
 const waifuList = ref(null)
 const filters = useStorage('companionFilters', [true, true, true])
@@ -66,20 +69,67 @@ const companionsDataFiltered = computed(() => companionsData.value.filter((nion)
   return false
 }))
 
-const companionsObject = companions.value.reduce((a, x, i) => { a[x.uid] = i; return a }, {} as Record<number, number>)
-
-// const companionImages = ref({} as Record<number, string>)
-const allChars = ref<DBCharacter[]>([])
-
-getAllChars().then(chars => allChars.value = chars)
+const allCharsObject = ref({})
+getAllCharsObject().then(all => allCharsObject.value = all)
 
 const companionImages = computed(() => {
   const res = {} as Record<number, string>
-  allChars.value.forEach((char) => {
-    if (companionsObject[char.u] !== undefined)
-      res[char.u] = imageLink(char.i, char.u)
+  companions.value.forEach((char) => {
+    const charInfo = allCharsObject.value[char.uid]
+    if (charInfo !== undefined)
+      res[char.uid] = imageLink(charInfo.i, charInfo.u)
   })
   return res
+})
+
+// Code by KatzSmile
+const companionsPerksList = computed(() => {
+  const charTalents = {} as Record<number, any>
+
+  companions.value.forEach((rchar) => {
+    const talentsList = [] as any
+    const perksList = [] as any
+    const specificList = [] as any
+
+    talentPerks.value.forEach((talent) => {
+      if (talent.complex && isArray(talent.complex) && talent.complex.length) {
+        if (talent.complex[0].target) {
+          const filteredTalents = talent.complex.filter(tarc => tarc.target === rchar.name)
+          if (filteredTalents.length)
+            talentsList.push({ title: talent.title, complex: filteredTalents })
+        }
+      }
+    })
+
+    genericWaifuPerks.value.forEach((perk) => {
+      if (perk.complex && isArray(perk.complex) && perk.complex.length) {
+        if (perk.complex[0].target) {
+          const filteredPerks = perk.complex.filter(perkc => perkc.target === rchar.name)
+          if (filteredPerks.length)
+            perksList.push({ title: perk.title, complex: filteredPerks })
+        }
+      }
+    })
+
+    waifuPerks.value.forEach((specific) => {
+      const sourceWaifuPerk = find(specificPerksWithDLC, specPerk => specPerk.title === specific.title)
+      if (sourceWaifuPerk) {
+        if (isArray(sourceWaifuPerk.uid)) {
+          if (sourceWaifuPerk.uid.includes(rchar.uid))
+            specificList.push({ title: specific.title })
+        }
+        else {
+          if (sourceWaifuPerk.uid === rchar.uid)
+            specificList.push({ title: specific.title, tier: sourceWaifuPerk.tier })
+        }
+      }
+    })
+
+    if (talentsList.length || perksList.length || specificList.length)
+      charTalents[rchar.uid] = { talents: talentsList, perks: perksList, specific: specificList }
+  })
+
+  return charTalents
 })
 
 watch([companionsDataFiltered, companionImages], () => {
@@ -108,4 +158,7 @@ function sellCompanion(uid: number) {
   cmp.sold = true
 }
 
+function undoBuying(uid: number) {
+  companions.value.splice(findIndex(companions.value, { uid }), 1)
+}
 </script>

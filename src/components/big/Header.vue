@@ -16,7 +16,7 @@
 import { toggleSideMenu } from '~/logic'
 
 const titles = ['World', 'Intensity', 'Origin', 'Binding & Lure', 'Heritage', 'Talents & Perks', 'Companions']
-const routes = ['world', 'intensity', 'origin', 'binding', 'heritage', 'talents', 'companions']
+const routes = ['world', 'intensity', 'origin', 'bindings', 'heritage', 'talents', 'companions']
 
 </script>
 

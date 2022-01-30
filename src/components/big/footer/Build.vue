@@ -52,7 +52,6 @@
         <Enum
           color="text-blue-400 hover:text-blue-300"
           :list="binding"
-          path="/binding"
           empty-message=""
           :edit-mode="editMode"
           :price-mode="priceMode"
@@ -69,7 +68,6 @@
         <Enum
           color="text-blue-400 hover:text-blue-300"
           :list="luresBought"
-          path="/binding"
           empty-message="No Lures"
           :edit-mode="editMode"
           :price-mode="priceMode"
@@ -81,7 +79,6 @@
         <Enum
           color="text-blue-400 hover:text-blue-300"
           :list="otherPerks"
-          path="/binding"
           empty-message="No Other Controls"
           :edit-mode="editMode"
           :price-mode="priceMode"

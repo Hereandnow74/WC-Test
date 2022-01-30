@@ -244,10 +244,11 @@ const totalCost = computed(() => startingOrigin.value.cost + heritageCost.value 
 + ridePerksCost.value + homePerksCost.value + talentsCost.value + defensesCost.value + miscPerksCost.value
 + waifuPerksCost.value + genericWaifuPerksCost.value + luresCost.value + companionsCost.value + otherCost.value)
 
+const companionsWithoutSold = computed(() => companions.value.filter(c => !c.sold))
 const targetList = computed(() => {
-  let comps = companions.value.map(x => (x.name))
+  let comps = companionsWithoutSold.value.map(x => (x.name))
   if (['Substitute', 'Possess'].includes(startingOrigin.value.title))
-    comps = ['You', ...comps]
+    comps = [startingOrigin.value.character || 'You', ...comps]
   return comps
 })
 
@@ -303,8 +304,8 @@ const settings = useStorage('settings', {
   allChosenAuthors: [] as string[],
   nsfw: false,
   perkImages: true,
-  animBg: false,
   columns: 'auto' as number | 'auto',
+  allImg: false,
 })
 
 export const appName = ref('')
@@ -378,5 +379,6 @@ export function useStore() {
     settings,
     appName,
     totalDiscount,
+    companionsWithoutSold,
   }
 }

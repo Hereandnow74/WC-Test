@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col">
     <Input
-      id="chars"
+      :id="idd"
       v-model="value"
       placeholder="Char name"
     />
@@ -22,9 +22,8 @@
 </template>
 
 <script lang='ts' setup>
-import Fuse from 'fuse.js'
 import tippy from 'tippy.js'
-import { getChars, getUserChars } from '~/data/constants'
+import { charSearch } from '~/logic'
 
 const props = defineProps({
   modelValue: {
@@ -35,42 +34,35 @@ const props = defineProps({
     type: String,
     default: 'Error',
   },
+  idd: {
+    type: String,
+    default: 'chars',
+  },
+
 })
 
-const allChars: any[] = []
-const options = {
-  includeScore: true,
-  findAllMatches: true,
-  threshold: 0.1,
-  keys: ['n', 'w'],
-}
-const fuse = new Fuse(allChars, options)
 const listEl = ref<HTMLElement|null>(null)
 const value = ref(props.modelValue)
 
-const searchResult = computed(() => fuse.search(value.value, { limit: 10 }))
+const searchResult = ref([] as any[])
 
-getChars().then((val) => {
-  allChars.push(...val)
-  fuse.setCollection(allChars)
-})
+let fuse = null
+charSearch().then(res => fuse = res)
 
-getUserChars().then((val) => {
-  allChars.push(...val)
-  fuse.setCollection(allChars)
-})
+watch(value, () => { if (fuse) searchResult.value = fuse.search(value.value, { limit: 10 }) })
 
 let list = null
 watch(searchResult, () => {
   if (list) list.destroy()
-  if (searchResult.value.length > 0 && listEl.value) {
+  if (searchResult.value.length > 0 && listEl.value && searchResult.value[0].item.n !== value.value) {
     listEl.value.hidden = false
-    list = tippy('#chars', {
+    list = tippy(`#${props.idd}`, {
       content: listEl.value,
       allowHTML: true,
       trigger: 'manual',
       arrow: false,
       interactive: true,
+      placement: 'bottom',
     })[0]
     list.show()
   }

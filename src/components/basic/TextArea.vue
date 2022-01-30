@@ -10,7 +10,7 @@
     :placeholder="placeHolder"
     @input="$emit('update:modelValue', ($event.target as HTMLTextAreaElement).value)"
   ></textarea>
-  <div v-if="errorMessage" class="text-xs text-red-600 dark:text-red-300">
+  <div v-if="errorMessage" class="text-xs text-red-600 dark:text-red-300 leading-none">
     {{ errorMessage }}
   </div>
 </template>

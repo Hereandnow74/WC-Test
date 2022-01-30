@@ -49,7 +49,7 @@
           </keep-alive>
         </transition>
       </div>
-      <div class="flex h-8 justify-between items-center px-6 mt-auto">
+      <div class="flex h-8 justify-between items-center px-6">
         <div class="w-16 cursor-pointer hover:text-amber-500" title="Back" @click="toggleAppMode()">
           <akar-icons:arrow-back-thick v-show="appMode" />
         </div>

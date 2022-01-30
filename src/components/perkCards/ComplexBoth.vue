@@ -1,8 +1,7 @@
 <template>
   <div class="column-block max-w-[600px]">
     <GenericPerkCard
-      v-bind="{perk, isActive: perkExist, savedPerk}"
-      @pickPerk="sendPerk"
+      v-bind="{perk, isActive: !!savedPerk.title, savedPerk}"
     >
       <template #title>
         <Button label="Buy" bg-color="bg-blue-500" size="Small" class="mx-1" @click.stop="showBuyPerk = true" />
@@ -11,10 +10,81 @@
         (Cost: <span text="green-600 dark:green-300">{{ displayedCost }}</span>)
       </template>
     </GenericPerkCard>
-    <Modal v-if="showBuyPerk" @click="showBuyPerk = false">
-      <div>
-        <div v-for="member in companions" :key="member.uid">
-          {{ member }}
+    <Modal v-if="showBuyPerk" :label="`Total cost: ${displayedCost}`" @click="showBuyPerk = false">
+      <div ref="charList" class="min-h-0 overflow-y-auto max-h-[75vh] scrollbar grid md:grid-cols-2 gap-2 p-1">
+        <div
+          class="flex gap-2 w-full min-h-0 rounded bg-gray-300 dark:bg-gray-800 p-1"
+        >
+          <img
+            :data-src="startingOrigin.image || '/img/Contractor.jpg'"
+            alt="Your image"
+            class="rounded object-cover w-1/4 object-top"
+            @load="setHeight"
+          >
+          <div class="flex flex-col gap-2 flex-grow">
+            <h3 class="flex gap-2 text-sm">
+              {{ startingOrigin.character || 'You' }}
+              <Button
+                icon="akar-icons:circle-plus"
+                bg-color="bg-green-500"
+                label=""
+                class="self-center"
+                title="Add power"
+                @click="addPower(startingOrigin.character || 'You')"
+              />
+            </h3>
+            <div v-for="power, i in powers[startingOrigin.character || 'You']" :key="i" class="flex gap-2">
+              <Input v-if="perk.title !== 'OC Donut Steel'" v-model="powers[startingOrigin.character || 'You'][i]" placeholder="Power name" class="flex-grow" />
+              <CharacterInput
+                v-else
+                v-model="powers[startingOrigin.character || 'You'][i]"
+                idd="idyou"
+                placeholder="Character name"
+                class="flex-grow"
+                error-message=""
+              />
+              <Button icon="fluent:delete-20-filled" bg-color="bg-red-500" label="" class="self-center" @click="() => powers[startingOrigin.character || 'You'].splice(i, 1)" />
+            </div>
+          </div>
+        </div>
+        <div
+          v-for="companion in companionsWithoutSold"
+          :key="companion.uid"
+          class="flex gap-2 w-full min-h-0 rounded bg-gray-300 dark:bg-gray-800 p-1"
+        >
+          <img
+            v-if="allChars[companion.uid].i && !settings.allImg"
+            :data-src="imageLink(allChars[companion.uid].i, companion.uid)"
+            :alt="companion.name"
+            class="rounded object-cover w-1/4 object-top"
+            @load="setHeight"
+          >
+          <div class="flex flex-col gap-2 flex-grow">
+            <h3 class="flex gap-2 text-sm">
+              {{ companion.name }}
+              <span class="text-gray-500">({{ companion.world }})</span>
+              <Button
+                icon="akar-icons:circle-plus"
+                bg-color="bg-green-500"
+                label=""
+                class="self-center"
+                title="Add power"
+                @click="addPower(companion.name)"
+              />
+            </h3>
+            <div v-for="power, i in powers[companion.name]" :key="i" class="flex gap-2">
+              <Input v-if="perk.title !== 'OC Donut Steel'" v-model="powers[companion.name][i]" placeholder="Power name" class="flex-grow" />
+              <CharacterInput
+                v-else
+                v-model="powers[companion.name][i]"
+                :idd="'id'+companion.uid + i"
+                placeholder="Character name"
+                class="flex-grow"
+                error-message=""
+              />
+              <Button icon="fluent:delete-20-filled" bg-color="bg-red-500" label="" class="self-center" @click="() => powers[companion.name].splice(i, 1)" />
+            </div>
+          </div>
         </div>
       </div>
     </Modal>
@@ -22,11 +92,13 @@
 </template>
 
 <script lang='ts' setup>
-import { findIndex } from 'lodash-es'
-import { filterObject } from '~/logic'
+import { DBCharacter } from 'global'
+
+import { getAllCharsObject } from '~/data/constants'
+import { lazyLoadImg, imageLink } from '~/logic'
 import { useStore } from '~/store/store'
 
-const { companions } = useStore()
+const { companionsWithoutSold, settings, startingOrigin } = useStore()
 
 const props = defineProps({
   perk: {
@@ -49,35 +121,53 @@ const props = defineProps({
 
 const emit = defineEmits(['pickPerk'])
 
-const complex = reactive({
-  flavor: '',
-})
+const powers = reactive<Record<string, string[]>>(props.savedPerk?.complex?.reduce((a, x) => {
+  if (a[x.target]) a[x.target].push(x.flavor)
+  else a[x.target] = [x.flavor]
+  return a
+}, {}) || {})
 
 const showBuyPerk = ref(false)
+const charList = ref<HTMLElement | null>(null)
 
-const calcCost = (ln: number) => 54 * ln + (ln / 2) * (10 * 2 + (ln - 1) * 10) || 64
+const allChars = ref<Record<number, DBCharacter>>({})
+getAllCharsObject().then(chars => allChars.value = chars)
+
+const fullCount = computed(() => {
+  return Object.values(powers).reduce((a, x) => a += x.length, 0)
+})
 
 const displayedCost = computed(() => {
-  const ln = props.savedPerk?.complex?.length || 0
-  return calcCost(ln)
+  return fullCount.value * props.perk.cost
 })
 
-const perkExist = computed(() => {
-  return props.perk.complex ? findIndex(props.savedPerk.complex, filterObject(complex)) !== -1 : props.isActive
-})
+function sendPerk() {
+  const obj = {
+    title: props.perk.title,
+  }
 
-function sendPerk(perk: any, perkToSave: any) {
-  const obj = filterObject(perkToSave)
-  const filComplex = filterObject(complex)
-  const ind = findIndex(props.savedPerk.complex, filComplex)
-  if (ind !== -1)
-    obj.complex = [...props.savedPerk.complex.filter((_, i: number) => i !== ind)]
-  else
-    obj.complex = [...props.savedPerk.complex || [], filComplex]
-  obj.count = obj.complex.length || 1
-  obj.cost = calcCost(obj.count)
+  obj.complex = Object.entries(powers).reduce((a, x) => {
+    x[1].forEach(power => a.push({ target: x[0], flavor: power }))
+    return a
+  }, [] as {target: string; flavor: string}[])
 
-  emit('pickPerk', perk, obj)
+  obj.count = fullCount.value
+  obj.cost = displayedCost.value
+
+  emit('pickPerk', props.perk, obj)
 }
+
+watch(powers, sendPerk)
+
+function setHeight(event: Event) {
+  event.target.style['max-height'] = `${event.target.clientWidth * 1.7 || 90}px`
+}
+
+function addPower(uid: number) {
+  if (powers[uid]) powers[uid].push('')
+  else powers[uid] = ['']
+}
+
+watch(showBuyPerk, () => nextTick(() => lazyLoadImg(charList.value)))
 
 </script>

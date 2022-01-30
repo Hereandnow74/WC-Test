@@ -390,5 +390,17 @@
   {"worldName":"Half-Life","rating":5,"condition":[{"rating":5,"name":"Black Mesa Incident"},{"rating":6,"name":"Portal Storm"},{"name":"Seven Hour War","rating":7},{"rating":5,"name":"Half-Life 2"},{"rating":5,"name":"Half-Life: Alyx"},{"name":"Xen","rating":5}]},
   {"worldName":"Rachet and Clank","rating":8},
   {"worldName":"The Dragon Prince","rating":5,"condition":[{"name":"Open War","rating":6}]},
-  {"worldName":"Rainbow Six Siege","rating":4}
+  {"worldName":"Rainbow Six Siege","rating":4},
+  {"worldName":"Afro Samurai","rating":5},
+  {"worldName":"Ark: Evolution ","rating":3,"additional":"All Fauna are capturable as familiars by the contractor or by companions.  They may be captured by in universe methods or by stamp or other company provided methods.  No credits are obtained through this.","condition":[{"name":"Arctic Biome","rating":4},{"name":"Mythic Biome","rating":5},{"rating":7,"name":"Infected Earth"}]},
+  {"worldName":"Bayonetta","rating":8,"additional":"The contractor and any companions are always able to percieve supernatural and/or spiritual beings or events. However, interacting with said beings or events requires magical, ki, or other form of supernatural ability. \n\nElemental Cloaks, Symbiote and derived suits, or magical circles qualify. Tempest jewelry or the Stamp only qualifies if the contractor has said abilities themselves."},
+  {"worldName":"Dofus/Wakfu","rating":9,"image":"https://cdn.donmai.us/original/14/5c/__sadida_evangelyne_cra_amalia_sheran_sharm_yugo_and_3_more_wakfu_drawn_by_xaxaxa__145c4615d64be2e16d23c4fc3f1720c6.png","condition":[{"name":"Dofus","rating":10},{"name":"Wakfu","rating":9}]},
+  {"worldName":"Girls' Frontline","rating":5},
+  {"worldName":"Hocus Pocus","rating":3},
+  {"worldName":"Medabots","rating":3,"image":"https://upload.wikimedia.org/wikipedia/en/3/30/Medabots.jpg","condition":[{"name":"Anime Version 3","rating":3},{"name":"Game Version 1","rating":1}]},
+  {"worldName":"Merlin BBC","rating":4,"image":"https://i0.wp.com/thenerdsofcolor.org/wp-content/uploads/2015/12/1024px-series_5_landscape_poster-2.jpg?resize=800%2C598&ssl=1"},
+  {"worldName":"Muv Luv","rating":7,"condition":[{"rating":2,"name":"Extra"},{"rating":9,"name":"Unlimited"},{"rating":7,"name":"Alternate"}]},
+  {"worldName":"Starship Troopers","rating":5,"image":"https://m.media-amazon.com/images/M/MV5BNWExNzg3MmMtYjc3MS00MzFlLWJiOWQtNWYxZTgxNjhlZTQ2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg"},
+  {"worldName":"The Misfits","rating":4,"image":"https://4.bp.blogspot.com/-cpOLLkfvHWk/WcKr5qTZB_I/AAAAAAAABlI/ruuFqnzDJlYYDsd3YKuOyW9iztdqwHKuQCLcBGAs/s1600/mis.jpg"},
+  {"worldName":"Warlock of the Magus World","rating":7,"image":"https://vignette.wikia.nocookie.net/warlock-of-the-magus-world/images/2/2b/Dragon-horde.jpg/revision/latest?cb=20171218122055","additional":"Starting in a world ruled by one or several Rank 8 beings(the equivalent of at least t10, possibly t11 in Waifu Catalogue ratings). ","condition":[{"rating":9,"name":"Starting in the Central Continent, in the Magus World."},{"name":"Starting in the world of the gods.","rating":10}]}
 ]

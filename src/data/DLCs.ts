@@ -241,7 +241,7 @@ DLCperks.push({
   title: 'Pavlov\'s Bell',
   cost: 10,
   desc: `A new app installed on your Company device can directly inflict sensation you wish on your waifu's at the touch of a button. The default settings are a sourceless pleasure or pain of any desired intensity but more complex sensations, lack of sensation, or sequences are possible.
-  <p>As a safeguard against abuse, your waifu's cannot perceive any options which induce sensations on herself personally nor act to prevent you from using the app upon her or others. If combined with the Waifu Tracker perk, then a waifu's activities and condition can be programmed to trigger specific sensations.</p>
+  <p>As a safeguard against abuse, your waifu's cannot perceive any options which induce sensations on herself personally nor act to prevent you from using the app upon her or others. If combined with the Target Tracker perk, then a waifu's activities and condition can be programmed to trigger specific sensations.</p>
   `,
 })
 
@@ -381,7 +381,8 @@ DLCtalents.push({
 })
 
 DLCtalents.push({
-  dlc: 'Doomsought',
+  dlc: 'DLC by Doomsought',
+  dlclink: 'https://forum.questionablequesting.com/threads/r34-economy-cyoa-thread.11289/page-879#post-4440542',
   title: 'Money Talent',
   cost: 10,
   desc: `
@@ -439,6 +440,14 @@ DLClures.push({
   `,
 })
 
+DLClures.push({
+  dlc: 'Trismegistus',
+  title: 'Hypnos',
+  cost: 15,
+  desc: `You can fall asleep at will and enter the dreams of anyone you have seen in the past day. You may mentally check if a valid target is sleeping at any time. You control the events within the dream save for the targets mind, body, and actions. The dream will substantially influence their thoughts for several days, more if they genuinely connect with the experience. You may have the  dreamer remember their dream to whatever degree you desire.
+  `,
+})
+
 // Other Controls
 export const DLCotherControls: DLCPerk[] = []
 
@@ -482,6 +491,16 @@ DLCotherControls.push({
   whitelist: ['Zenryoku Zenkai', 'Warranty Plan'],
 })
 
+DLCotherControls.push({
+  dlc: 'Trismegistus',
+  title: 'Social Club',
+  cost: 10,
+  desc: `You possess a dream realm you can control as you do with your target's dreams. Within this realm you and your retinue's minds are present, even when awake and without impacting your ability to function. You can control how aware each mind is of the dream realm, such as making them aware of the sensations they feel in the dream, but not what's causing them, or making someone think the dream is the real world, you could even mix the two worlds in their minds, making elements of the dream world overlap with the waking world. No one else can enter this realm. 
+  <p>You can also bring sleeping members of your retinue into the dreams of your targets.</p>
+  `,
+  whitelist: ['Hypnos'],
+})
+
 // Lure Expansions
 export const DLClureExpansions: DLCPerk[] = []
 
@@ -491,6 +510,15 @@ DLClureExpansions.push({
   cost: 30,
   whitelist: ['Sticky Fingers: Brown Sugar'],
   desc: 'You are now able to change to flavor of all of your bodily fluids(Ex..Chocolate,Cookies,vanilla,any flavored ice-cream,lemon,apples,liquor/beer....etc) this change is instant with just a thought. Additionally this perk synergies with both Faerie Feast and Sticky Fingers: Brown Sugar.',
+})
+
+DLClureExpansions.push({
+  dlc: 'Trismegistus',
+  title: 'Maestro',
+  cost: 10,
+  desc: `You may now influence the dreamer themselves, altering their mind and body within the dream to fit whatever role you grant them. This does not drastically change how much the dream influences them in the following days, but does allow for much more control over the experience. You may also alter the rate at which time passes in the dreams relative to real time, up to an 8:1 ratio.
+  `,
+  whitelist: ['Hypnos'],
 })
 
 // DLC Heritages

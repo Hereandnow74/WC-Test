@@ -5,7 +5,7 @@
   >
     <div class="flex gap-2 w-full">
       <img
-        v-if="image"
+        v-if="image && !settings.allImg"
         :data-src="image"
         :alt="char.name"
         class="rounded object-cover max-h-[140px] max-w-[90px] object-top"
@@ -55,7 +55,54 @@
             :list="['Member', 'Familiar']"
           />
         </div>
+
+        <div>
+          <span
+            v-if="talentsList.length > 0"
+            class="text-gray-500"
+          >Talents:
+            <Enum
+              color="text-blue-400 hover:text-blue-300"
+              class="text-gray-100"
+              :list="talentsList"
+              path="/talents/talent"
+              empty-message="No Talents"
+            />
+          </span>
+          <span
+            v-if="perksList.length > 0"
+            class="text-gray-500"
+          >Perks:
+            <Enum
+              color="text-blue-400 hover:text-blue-300"
+              class="text-gray-100"
+              :list="perksList"
+              path="/talents/specific"
+              empty-message="No Perks"
+            />
+          </span>
+          <span
+            v-if="specificList.length > 0"
+            class="text-gray-500"
+          >Specific:
+            <Enum
+              color="text-blue-400 hover:text-blue-300"
+              class="text-gray-100"
+              :list="specificList"
+              path="/talents/specific"
+              empty-message="No Waifu Perks"
+            />
+          </span>
+        </div>
+
         <div v-if="!char.sold" class="flex gap-2 mt-auto justify-end">
+          <Button
+            v-if="flags.chargen"
+            label="undo"
+            size="Small"
+            bg-color="bg-blue-500"
+            @click="$emit('undo', char.uid)"
+          />
           <Button
             v-if="['capture'].includes(char.method)"
             :label="`sell ${char.tier === 11 ? '1 ticket' : Math.floor(CHAR_COSTS[char.tier - 1] * 0.2) + 'c'}`"
@@ -80,8 +127,9 @@
 import type { PropType } from '@vue/runtime-core'
 import { CHAR_COSTS } from '~/data/constants'
 import { SavedChar } from '~/store/chargen'
+import { useStore } from '~/store/store'
 
-defineProps({
+const props = defineProps({
   char: {
     type: Object as PropType<SavedChar>,
     default: () => {},
@@ -93,6 +141,10 @@ defineProps({
   editMode: {
     type: Boolean,
     default: false,
+  },
+  perks: {
+    type: Object,
+    default: () => ({}),
   },
 })
 
@@ -106,7 +158,19 @@ const methods = {
   you: 'It\'s you',
 }
 
-const emit = defineEmits(['sell'])
+const { flags, settings } = useStore()
+
+const emit = defineEmits(['sell', 'undo'])
+
+const talentsList = computed(() => {
+  return props.perks.talents || []
+})
+const perksList = computed(() => {
+  return props.perks.perks || []
+})
+const specificList = computed(() => {
+  return props.perks.specific || []
+})
 
 function sellCompanion(uid: number) {
   emit('sell', uid)

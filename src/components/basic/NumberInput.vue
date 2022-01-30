@@ -1,30 +1,35 @@
 <template>
-  <div class="inline-flex w-min h-max">
-    <label v-if="label" for="" class="mr-2">{{ label }}</label>
-    <div
-      ref="minusButton"
-      class="rounded-l-lg hover:bg-orange-500 w-4 text-center cursor-pointer"
-      :class="buttonThemes[theme]"
-      @click="minus"
-    >
-      -
+  <div>
+    <div class="inline-flex w-min h-max">
+      <label v-if="label" for="" class="mr-2">{{ label }}</label>
+      <div
+        ref="minusButton"
+        class="rounded-l-lg hover:bg-orange-500 w-4 text-center cursor-pointer"
+        :class="buttonThemes[theme]"
+        @click="minus"
+      >
+        -
+      </div>
+      <input
+        id=""
+        type="text"
+        name=""
+        class="focus:outline-none text-center"
+        :style="width"
+        :value="value"
+        :class="themes[theme]"
+      >
+      <div
+        ref="plusButton"
+        class="rounded-r-lg hover:bg-orange-500 w-4 text-center cursor-pointer"
+        :class="buttonThemes[theme]"
+        @click="plus"
+      >
+        +
+      </div>
     </div>
-    <input
-      id=""
-      type="text"
-      name=""
-      class="focus:outline-none text-center"
-      :style="width"
-      :value="value"
-      :class="themes[theme]"
-    >
-    <div
-      ref="plusButton"
-      class="rounded-r-lg hover:bg-orange-500 w-4 text-center cursor-pointer"
-      :class="buttonThemes[theme]"
-      @click="plus"
-    >
-      +
+    <div v-if="errorMessage" class="text-xs text-red-600 dark:text-red-300 leading-none">
+      {{ errorMessage }}
     </div>
   </div>
 </template>
@@ -56,6 +61,10 @@ const props = defineProps({
   increment: {
     type: Number,
     default: 1,
+  },
+  errorMessage: {
+    type: String,
+    default: '',
   },
 })
 

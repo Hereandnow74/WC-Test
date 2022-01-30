@@ -6,7 +6,7 @@
       :class="settings.columns !== 'auto' ? `column-count-${settings.columns}` : 'md:column-count-2 xl:column-count-3 4xl:column-count-4 5xl:column-count-5'"
     >
       <component
-        :is="PerkCard"
+        :is="talent.complex === 'target_f' ? ComplexBoth : PerkCard"
         v-for="talent in talentsDLC"
         :key="talent.title"
         :perk="talent"
@@ -48,7 +48,7 @@ const talentsDLC = computed(() => !settings.value.allChosenAuthors[0]
 const talentsList = computed(() => {
   const shareable = ['Martial Talent', 'Wild Talent', 'Science Talent', 'Engineering Talent', 'Aesthetic Talent',
     'Communication Talent', 'Performance Talent', 'Soul Talent', 'Blessed Talent', 'Psychic Talent',
-    'Covert Talent', 'Sticky Fingers', 'Money Talent']
+    'Covert Talent', 'Sticky Fingers', 'Money Talent', 'Presence', 'Educational Talent', 'Inculcation Talent']
   return intersection(allEffects.value, shareable).map(x => ({ flavor: x }))
 })
 onMounted(() => useTooltips())

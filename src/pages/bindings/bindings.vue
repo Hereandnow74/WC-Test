@@ -1,12 +1,7 @@
 <template>
   <div class="sm:p-2">
     <h3 id="bindings" class="text-2xl text-center">
-      Bindings <router-link
-        :to="{path:'/binding', hash:'#lures'}"
-        class="text-base text-blue-600 dark:text-blue-400  hover:underline"
-      >
-        (go to Lures)
-      </router-link>
+      Bindings
     </h3>
     <Desc class="p-2 mb-4 max-w-4xl bg-warm-gray-200 dark:bg-warm-gray-800 mx-auto" :desc="desc" />
 
@@ -87,82 +82,6 @@
       :desc="symbioteRules"
       class="p-2 my-4 max-w-4xl bg-warm-gray-200 dark:bg-warm-gray-800 mx-auto"
     />
-
-    <h3 id="lures" class="text-2xl text-center">
-      Lures <router-link
-        :to="{path:'/binding', hash:'#expansions'}"
-        class="text-base text-blue-600 dark:text-blue-400 hover:underline"
-      >
-        (go to Expansions)
-      </router-link>
-    </h3>
-    <Desc :desc="lureDesc" class="bg-gray-200 dark:bg-gray-600 max-w-screen-md my-4 mx-auto" />
-    <div
-      class="column-gap"
-      :class="settings.columns !== 'auto' ? `column-count-${settings.columns}` : 'md:column-count-2 xl:column-count-3 4xl:column-count-4 5xl:column-count-5'"
-    >
-      <PerkCard
-        v-for="lr in luresDLC"
-        :key="lr.title"
-        :perk="lr"
-        :bg="lureAvailable(lr) ? 'pink-100 dark:pink-900 hover:(pink-200 dark:rose-800)'
-          : 'gray-200 dark:gray-600'"
-        :is-active="!!allLures[lr.title]"
-        @pickPerk="chooseLure"
-      >
-      </PerkCard>
-    </div>
-
-    <h3 id="expansions" class="text-2xl text-center">
-      Lure Expansions  <router-link
-        :to="{path:'/binding', hash:'#other'}"
-        class="text-base text-blue-600 dark:text-blue-400 hover:underline"
-      >
-        (go to Other controls)
-      </router-link>
-    </h3>
-    <Desc :desc="lureExpansionDesc" class="bg-gray-200 dark:bg-gray-600 max-w-screen-md my-4 mx-auto" />
-    <div
-      class="column-gap"
-      :class="settings.columns !== 'auto' ? `column-count-${settings.columns}` : 'md:column-count-2 xl:column-count-3 4xl:column-count-4 5xl:column-count-5'"
-    >
-      <PerkCard
-        v-for="lr in lureExpansionsDLC"
-        :key="lr.title"
-        :perk="lr"
-        :bg="lureAvailable(lr) ? 'pink-100 dark:pink-900 hover:(pink-200 dark:rose-800)'
-          : 'gray-200 dark:gray-600'"
-        :is-active="!!allLures[lr.title]"
-        @pickPerk="chooseLure"
-      >
-      </PerkCard>
-    </div>
-
-    <h3 id="other" class="text-2xl text-center">
-      Other controls  <router-link
-        :to="{path:'/binding', hash:'#bindings'}"
-        class="text-base text-blue-600 dark:text-blue-400 hover:underline"
-      >
-        (go to Bindings)
-      </router-link>
-    </h3>
-    <Desc :desc="otherDesc" class="bg-gray-200 dark:bg-gray-600 max-w-screen-md my-4 mx-auto" />
-    <div
-      class="column-gap pb-8"
-      :class="settings.columns !== 'auto' ? `column-count-${settings.columns}` : 'md:column-count-2 xl:column-count-3 4xl:column-count-4 5xl:column-count-5'"
-    >
-      <PerkCard
-        v-for="other in otherDLC"
-        :key="other.title"
-        :perk="other"
-        :bg="lureAvailable(other) ? 'pink-100 dark:pink-900 hover:(pink-200 dark:rose-800)'
-          : 'gray-200 dark:gray-600'"
-        :is-active="!!allOther[other.title]"
-        @pickPerk="chooseOther"
-      >
-      </PerkCard>
-    </div>
-
     <ShroudElements v-if="showElements" @click="toggleElements" @toggleElement="toggleCurrentElement" />
     <RitualCircle v-if="showRitual" @click="toggleRitual" />
   </div>
@@ -171,17 +90,16 @@
 <script lang='ts' setup>
 import { onBeforeRouteUpdate } from 'vue-router'
 import {
-  desc, bindings, Binding, lureDesc, lures, lureExpansionDesc, lureExpansions, shroudElements,
-  otherControls, otherDesc, symbioteRules,
+  desc, bindings, Binding, symbioteRules, shroudElements,
 } from '~/data/binding'
 import { useTooltips } from '~/logic/misc'
-import { chooseLure, lureAvailable, bindingAvailable, chooseBinding, chooseOther, pickSimplePerk } from '~/logic'
+import { bindingAvailable, chooseBinding, pickSimplePerk } from '~/logic'
 import { useStore } from '~/store/store'
-import { DLCbindings, DLClureExpansions, DLClures, DLCotherControls } from '~/data/DLCs'
+import { DLCbindings } from '~/data/DLCs'
 import PerkCard from '~/components/PerkCard.vue'
 import GenericPerkCard from '~/components/perkCards/GenericPerkCard.vue'
 
-const { binding, luresBought, flags, otherPerks, settings } = useStore()
+const { binding, flags, settings } = useStore()
 const [showElements, toggleElements] = useToggle()
 const [showRitual, toggleRitual] = useToggle()
 
@@ -205,21 +123,6 @@ const bindingsDLC = computed(() => !settings.value.allChosenAuthors[0]
     .concat(DLCbindings
       .filter(perk => !settings.value.allChosenAuthors.includes(perk.dlc)))
   : bindings)
-const lureExpansionsDLC = computed(() => !settings.value.allChosenAuthors[0]
-  ? lureExpansions
-    .concat(DLClureExpansions
-      .filter(perk => !settings.value.allChosenAuthors.includes(perk.dlc)))
-  : lureExpansions)
-const luresDLC = computed(() => !settings.value.allChosenAuthors[0]
-  ? lures
-    .concat(DLClures
-      .filter(perk => !settings.value.allChosenAuthors.includes(perk.dlc)))
-  : lures)
-const otherDLC = computed(() => !settings.value.allChosenAuthors[0]
-  ? otherControls
-    .concat(DLCotherControls
-      .filter(perk => !settings.value.allChosenAuthors.includes(perk.dlc)))
-  : otherControls)
 
 const bindingByType = computed(() => {
   const res = {
@@ -250,18 +153,6 @@ onBeforeRouteUpdate((to, from, next) => {
 const allBindings = computed(() => {
   const res: any = {}
   binding.value.forEach(x => res[x.title] = x)
-  return res
-})
-
-const allLures = computed(() => {
-  const res: any = {}
-  luresBought.value.forEach(x => res[x.title] = x)
-  return res
-})
-
-const allOther = computed(() => {
-  const res: any = {}
-  otherPerks.value.forEach(x => res[x.title] = x)
   return res
 })
 

@@ -6,7 +6,7 @@
       WORLD_COLORS[world.rating - 1] || 'bg-gray-600' : 'bg-gray-600'"
     @click="pickAbleAfter ? pickWorld(world) : null"
   >
-    <div v-if="world.image" class="flex-grow relative min-h-[170px]">
+    <div v-if="world.image && !settings.allImg" class="flex-grow relative min-h-[170px]">
       <img
         ref="worldImg"
         class="rounded absolute object-cover h-full w-full object-center"
@@ -63,7 +63,8 @@ import type { PropType } from 'vue'
 import { WORLD_COLORS, WORLD_RATINGS } from '~/data/constants'
 import { lazyLoadSingleImg } from '~/logic'
 import { confirmDialog } from '~/logic/dialog'
-import { useStore, World } from '~/store/store'
+import { World } from '~/store/chargen'
+import { useStore } from '~/store/store'
 
 const props = defineProps({
   world: {
@@ -82,7 +83,7 @@ const props = defineProps({
 
 defineEmits(['editWorld'])
 
-const { baseBudget, startingWorld, localUserWorlds, flags } = useStore()
+const { baseBudget, startingWorld, localUserWorlds, flags, settings } = useStore()
 
 const pickAbleAfter = computed(() => props.pickAble && !flags.value.chargen ? false : props.pickAble)
 

@@ -67,7 +67,7 @@
           :key="world.worldName"
           :world="world"
           class="w-full"
-          :class="{'row-span-2 min-h-72': world.image, 'sm:col-span-2': world.additional, 'sm:row-span-4': world.image && world.additional}"
+          :class="{'row-span-2 min-h-72': world.image && !settings.allImg, 'sm:col-span-2': world.additional, 'sm:row-span-4': world.image && world.additional && !settings.allImg}"
           @edit-world="editWorld"
         />
         <div v-if="!worldsFiltered.length" class="text-center flex-grow">
@@ -92,7 +92,7 @@ const worldsSubReac = ref(subWorlds)
 const worldToEdit = ref({})
 const editMode = ref(false)
 
-const { userWorlds, localUserWorlds } = useStore()
+const { userWorlds, localUserWorlds, settings } = useStore()
 const sortAlpha = ref(0)
 const sortRating = ref(0)
 

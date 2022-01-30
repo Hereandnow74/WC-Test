@@ -114,6 +114,7 @@ export const waifuTags = {
   fm: { tag: 'Fate manipulation', short: 'fm', effect: '', desc: 'is known as a fate- or luck-manipulator.', color: 'bg-gradient-to-t to-red-900 via-red-500 from-red-900' },
   lm: { tag: 'Luck manipulation', short: 'lm', effect: '', desc: 'is known as a fate- or luck-manipulator.', color: 'bg-gradient-to-t to-yellow-900 via-yellow-400 from-yellow-900' },
   tm: { tag: 'Time manipulation', short: 'tm', effect: '', desc: 'is known as a time-manipulator.', color: 'bg-gradient-to-t to-blue-900 via-blue-400 from-blue-900' },
+  lv: { tag: 'Leveling', short: 'lv', effect: '', desc: 'Give access to a leveling/class/job system', color: 'bg-[#FFD700] text-black' },
 
   dm: { tag: 'Demon', short: 'dm', effect: '', desc: '', color: 'bg-[#e92929]' },
   dv: { tag: 'Devil', short: 'dv', effect: '', desc: '', color: 'bg-[#e92929]' },
@@ -150,7 +151,7 @@ export const waifuTags = {
   vp: { tag: 'Vampire', short: 'vp', effect: '', desc: '', color: 'bg-[#b52865]' },
   pt: { tag: 'Priest', short: 'ps', effect: '', desc: '', color: 'bg-[#ffffff] text-black' },
   nj: { tag: 'Ninja', short: 'nj', effect: '', desc: '', color: 'bg-teal-500' },
-  sr: { tag: 'Shifter', short: 'sr', effect: '', desc: '', color: 'bg-teal-500' },
+  sr: { tag: 'Shifter', short: 'sr', effect: '', desc: 'is able to take more than one form', color: 'bg-teal-500' },
   ev: { tag: 'Evil', short: 'ev', effect: '', desc: '', color: 'bg-teal-500' },
   gn: { tag: 'Genius', short: 'gn', effect: '', desc: '', color: 'bg-teal-500' },
   rl: { tag: 'Ruler', short: 'rl', effect: 'rule over a country or region or even just a tribe', desc: '', color: 'bg-[#FFD700] text-black' },
@@ -178,7 +179,9 @@ export const LINKS = computed(() => {
   const allCats = {
     intensity,
     origin,
-    'binding': [...bindings, ...lures, ...lureExpansions, ...otherControls, ...DLCbindings],
+    'bindings/bindings': [...bindings, ...DLCbindings],
+    'bindings/lures': [...lures, ...lureExpansions],
+    'bindings/controls': [...otherControls],
     'heritage': heritages,
     'talents/ride': [rides, ridePerksFull, DLCridePerks],
     'talents/home': [...homes, ...DLChomes],
@@ -228,11 +231,24 @@ export async function getUserChars(): Promise<DBCharacter[]> {
 }
 
 const allChars = [] as DBCharacter[]
+let running = false
 export const getAllChars = async() => {
-  if (!allChars.length)
+  if (running) return allChars
+  if (!allChars.length) {
+    running = true
     allChars.push(...(await getChars()), ...(await getUserChars()))
+    running = false
+  }
 
   return allChars
+}
+
+const allCharsObject = {} as Record<number, DBCharacter>
+export const getAllCharsObject = async() => {
+  if (!allCharsObject[0])
+    [...(await getAllChars())].forEach(x => allCharsObject[x.u] = x)
+
+  return allCharsObject
 }
 
 const worlds = ref([])

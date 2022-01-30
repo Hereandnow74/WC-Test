@@ -2,7 +2,7 @@
   <div class="p-2">
     <Desc class="p-2 bg-gray-200 dark:bg-teal-900 max-w-4xl mx-auto" :desc="desc" />
     <div
-      class="column-gap mt-4"
+      class="column-gap mt-4 pb-8"
       :class="settings.columns !== 'auto' ? `column-count-${settings.columns}` : 'md:column-count-2 xl:column-count-3 4xl:column-count-4 5xl:column-count-5'"
     >
       <div
@@ -10,7 +10,7 @@
         :id="item.title"
         :key="item.title"
         class="bg-light-blue-300 dark:bg-light-blue-900 p-2 column-block max-w-[600px] min-h-[450px]
-          mb-4 cursor-pointer border-2 hover:border-orange-400 border-light-blue-900"
+          mb-2 cursor-pointer border-2 hover:border-orange-400 border-light-blue-900"
         :class="chosenOrigin.title === item.title ? 'filter brightness-110' : ''"
         @click="chooseOrigin(item)"
       >
@@ -66,7 +66,7 @@
               <fa-solid:check class="text-green-500" />
             </div>
           </div>
-          <img class="max-h-[400px] w-1/2 object-contain self-center inline-block float-right mt-4" :src="item.image" :alt="item.title">
+          <img v-if="!settings.allImg" class="max-h-[400px] w-1/2 object-contain self-center inline-block float-right mt-4" :src="item.image" :alt="item.title">
           <Desc class="" :desc="item.desc" />
         </div>
       </div>

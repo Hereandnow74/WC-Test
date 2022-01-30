@@ -28,11 +28,21 @@ export function proposeWorld(world: any) {
 
 export function proposeCompanion(companion: any, func: (msg: string) => void) {
   try {
-    addDoc(collection(db, 'companions'), companion).then(docRef => func('Successfully submited companion'))
+    addDoc(collection(db, 'companions'), companion).then(docRef => func('Successfully submitted companion'))
   }
   catch (e) {
     console.error('Error proposing a companion: ', e)
-    func(`Erorr while submitting ${e}`)
+    func(`Error while submitting ${e}`)
+  }
+}
+
+export function sendReportToServer(report: any, func: (msg: string) => void) {
+  try {
+    addDoc(collection(db, 'reports'), report).then(docRef => func('Successfully reported mistakes'))
+  }
+  catch (e) {
+    console.error('Error proposing a report: ', e)
+    func(`Error while submitting ${e}`)
   }
 }
 

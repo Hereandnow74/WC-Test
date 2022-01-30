@@ -90,7 +90,7 @@ export function pickSimplePerk(perk: PerkFull, saveData: Perk, isAvailable: (arg
       else {
         const toDel = perks.splice(ind, 1)
         allEffects.value.splice(allEffects.value.indexOf(toDel[0].title), 1)
-        if (!flags.value.chargen && x.cost < 11111) fee.value += Math.round(toDel[0].cost * 0.2) || 0
+        if (!flags.value.chargen && toDel[0].cost < 11111) fee.value += Math.round(toDel[0].cost * 0.2) || 0
         deletePerk(perks, isAvailable)
       }
     }
@@ -411,7 +411,7 @@ export function chooseWaifuPerk(perk: WaifuPerk) {
     }
     else {
       waifuPerks.value.push(
-        { title: perk.title, waifu: perk.waifu[0] || perk.waifu, cost: perk.cost || 0, refund: perk.discount || 0 })
+        { title: perk.title, waifu: isArray(perk.waifu) ? perk.waifu[0] : perk.waifu, cost: perk.cost || 0, refund: perk.discount || 0 })
     }
   }
 }

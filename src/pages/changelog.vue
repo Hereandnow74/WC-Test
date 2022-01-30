@@ -5,10 +5,29 @@
     </h2>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
+        29 January 2022
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>130 new user submitted Characters.</li>
+        <li>12 new user submitted Worlds.</li>
+        <li>DemonOrk provided 137 images for Pokemon Expansion characters</li>
+        <li>Setting to turn off all images for SFW browsing</li>
+        <li>New 'report mistakes' dialog for characters</li>
+        <li>New way to buy complex talents (TS, OCDS)</li>
+        <li>3 new DLC perks</li>
+        <li>List of Talents/Generic Waifu/Specific Waifu perks in Retinue tab (WIP?)</li>
+        <li>KatzSmile reworked Pocket Space app</li>
+        <li>Split of Binding&Lures to separate pages</li>
+        <li>Bugfixes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
         24 January 2022
       </h3>
       <ul class="list-decimal list-inside">
         <li>78 new user submitted Characters.</li>
+        <li>Setting Specific Rules list in Rules</li>
         <li>Bugfixes</li>
       </ul>
     </div>

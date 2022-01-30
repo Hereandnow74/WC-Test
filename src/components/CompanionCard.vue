@@ -1,10 +1,12 @@
 <template>
   <div
-    class="py-1 w-full text-gray-200"
+    class="py-1 w-full text-gray-200 bg-warm-gray-700 rounded"
+    :class="withImage ? 'h-[500px]' : 'pt-[32px]'"
   >
-    <div class="bg-gray-800 border border-gray-800 h-full flex flex-col rounded">
+    <div class="bg-gray-800 border border-gray-800 h-full flex flex-col">
       <div ref="cardEl" class="flex-grow relative">
         <img
+          v-show="withImage"
           ref="companionEl"
           class="rounded absolute object-cover h-full w-full object-top"
           :data-src="imageLink"
@@ -41,26 +43,42 @@
       <div class="py-1 h-max">
         <h4 id="title" class="flex px-1 leading-none relative" :class="fontSize">
           <span class="flex-grow text-center">{{ charData.name }}</span>
-          <div v-if="showTiers" class="flex items-center ml-auto absolute right-1 edit-icons bg-black bg-opacity-50">
-            <a
-              v-if="charData.sourceImage"
-              class="flex items-center"
-              :href="charData.sourceImage"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="Source"
-            >
-              <eva:external-link-fill class="text-blue-200 hover:text-blue-500 cursor-pointer" />
-            </a>
-            <bx:bxs-edit class="text-yellow-200 hover:text-yellow-600 cursor-pointer" @click="$emit('editCompanion', charData)" />
-            <fluent:delete-20-filled v-if="isUserChar" class="text-red-200 hover:text-red-500 ml-2 cursor-pointer" @click="deleteCharacter" />
-            <span class="text-red-500 hover:text-red-400 cursor-pointer" title="Add to Favorites">
-              <ci:heart-fill
-                v-if="favorites.includes(charData.uid)"
-                @click="favorites.splice(favorites.indexOf(charData.uid), 1)"
-              />
-              <ci:heart-outline v-else @click="favorites.push(charData.uid)" />
-            </span>
+          <div id="companionMenu" class="h-5 absolute right-0 text-right">
+            <ic:outline-report class="pr-1 text-gray-500" />
+            <div v-if="showTiers" class="w-max flex flex-col gap-1 absolute right-0 -top-8 edit-icons bg-gray-700 p-1">
+              <a
+                v-if="charData.sourceImage"
+                class="hover:(text-gray-300 bg-gray-600) cursor-pointer flex items-center gap-1"
+                :href="charData.sourceImage"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Source"
+              >
+                <eva:external-link-fill />
+                Image source
+              </a>
+              <div class="hover:(text-gray-300 bg-gray-600) cursor-pointer flex items-center gap-1" @click="$emit('editCompanion', charData)">
+                <bx:bxs-edit />
+                Edit
+              </div>
+              <div v-if="!isUserChar" class="hover:(text-gray-300 bg-gray-600) cursor-pointer flex items-center gap-1" @click="$emit('reportCompanion', charData)">
+                <ic:outline-report />
+                Report mistake
+              </div>
+              <div v-if="isUserChar" class="hover:(text-gray-300 bg-gray-600) cursor-pointer flex items-center gap-1" @click="deleteCharacter">
+                <fluent:delete-20-filled />
+                Delete
+              </div>
+              <div class="hover:(text-gray-300 bg-gray-600) cursor-pointer flex items-center gap-1" @click="favoritesObject[charData.uid] !== undefined ? favorites.splice(favorites.indexOf(charData.uid), 1) : favorites.push(charData.uid)">
+                <span class="text-red-500" title="Add to Favorites">
+                  <ci:heart-fill
+                    v-if="favoritesObject[charData.uid] !== undefined"
+                  />
+                  <ci:heart-outline v-else />
+                </span>
+                Favorite
+              </div>
+            </div>
           </div>
         </h4>
         <div class="text-center leading-none text-blue-300">
@@ -135,6 +153,10 @@ const props = defineProps({
     type: Boolean,
     default: true,
   },
+  withImage: {
+    type: Boolean,
+    default: true,
+  },
   fontSize: {
     type: String,
     default: 'text-lg',
@@ -155,6 +177,8 @@ const nsfw = ref(settings.value.nsfw)
 const cardEl = ref<HTMLImageElement| null>(null)
 const companionEl = ref<HTMLImageElement| null>(null)
 const inFocus = useElementHover(cardEl)
+
+const favoritesObject = computed(() => favorites.value.reduce((a, f) => (a[f] = f, a), {} as Record<string, string>))
 
 const charData = computed(() => {
   const res = props.char.t
@@ -282,10 +306,13 @@ watch(imageLink, () => companionEl.value ? companionEl.value.src = imageLink.val
 </script>
 
 <style>
-#title .edit-icons {
+#companionMenu .edit-icons {
   visibility: hidden;
 }
-#title:hover .edit-icons {
+#companionMenu:hover .edit-icons {
+  visibility: visible;
+}
+.edit-icons:hover {
   visibility: visible;
 }
 </style>

@@ -1,6 +1,6 @@
 
 <template>
-  <div class="flex flex-col sm:p-2">
+  <div class="flex flex-col">
     <div v-if="!loading" class="flex items-center justify-center flex-wrap gap-x-4 gap-y-1 mb-1 md:mb-2">
       <div class="flex items-center">
         <Input
@@ -78,6 +78,7 @@
         <div
           :class="image==='!cvxz' ? 'bg-gray-700':''"
           class="border-l px-2 hover:bg-gray-700 text-gray-200 rounded-r"
+          title="Have Image"
           @click="image === ''? image='!cvxz' : image=''"
         >
           img
@@ -85,6 +86,7 @@
         <div
           :class="nsfw==='!cvxz' ? 'bg-gray-700':''"
           class="border-l px-2 hover:bg-gray-700 text-gray-200 rounded-r"
+          title="Have NSFW Image"
           @click="nsfw === ''? nsfw='!cvxz' : nsfw=''"
         >
           nsfw
@@ -92,9 +94,18 @@
         <div
           :class="favorite ? 'bg-red-600':''"
           class="border-l px-2 hover:bg-gray-700 text-gray-200 rounded-r"
+          title="Favorites"
           @click="() => favorite = !favorite"
         >
           fav
+        </div>
+        <div
+          :class="retinue ? 'bg-green-600':''"
+          class="border-l px-2 hover:bg-gray-700 text-gray-200 rounded-r"
+          title="Retinue"
+          @click="() => retinue = !retinue"
+        >
+          ret
         </div>
       </div>
       <Checkbox
@@ -123,7 +134,7 @@
             :char="char"
             :is-user-char="true"
             :lazy="false"
-            class="h-[500px]"
+            :with-image="!settings.allImg"
             @edit-companion="editCompanion"
           />
         </div>
@@ -137,8 +148,9 @@
           v-for="{ item: char } in slicedChars"
           :key="char.u"
           :char="char"
-          class="h-[500px]"
+          :with-image="!settings.allImg"
           @edit-companion="editCompanion"
+          @reportCompanion="reportCompanion"
         />
         <div v-if="!filteredCharacters.length" class="text-center flex-grow">
           <p v-if="search !== ''">
@@ -148,6 +160,7 @@
       </div>
     </div>
     <AddCharacter v-if="showAddCharacter" :character="characterToEdit" :edit-mode="editMode" @click="toggleShowAddCharacter" />
+    <Report v-if="showReport" :character="characterToEdit" @click="toggleShowReport" />
     <Tags v-if="showFilterTags" @click="toggleShowFilterTags" />
   </div>
 </template>
@@ -157,7 +170,7 @@ import Fuse from 'fuse.js'
 import { intersection, some } from 'lodash-es'
 import { useStore } from '~/store/store'
 
-import { toggleShowAddCharacter, showAddCharacter, lazyLoadImg, toggleShowFilterTags, showFilterTags, tagToggles, userCharactersShown, threeToggle } from '~/logic'
+import { toggleShowAddCharacter, showAddCharacter, lazyLoadImg, toggleShowFilterTags, showFilterTags, tagToggles, userCharactersShown, threeToggle, toggleShowReport, showReport } from '~/logic'
 import CompanionCard from '~/components/CompanionCard.vue'
 import Checkbox from '~/components/basic/Checkbox.vue'
 import { getChars, getUserChars } from '~/data/constants'
@@ -184,6 +197,7 @@ const gender = ref('')
 const image = ref('')
 const nsfw = ref('')
 const favorite = ref(false)
+const retinue = ref(false)
 
 const sortAlpha = ref(0)
 const sortRating = ref(0)
@@ -213,7 +227,7 @@ const tierOptions = [
   { label: '11', value: 11 },
 ]
 
-const { localUserCharacters, userCharacters, startingWorld, favorites } = useStore()
+const { localUserCharacters, userCharacters, startingWorld, favorites, settings, companionsUIDs } = useStore()
 const { currentWorld } = usePlayStore()
 
 const options = {
@@ -297,11 +311,12 @@ const filteredCharacters = computed(() => {
       ],
     }
   }
-  if (gender.value) sopt.$and.push({ b: gender.value })
+  if (gender.value) sopt.$and.push({ b: `=${gender.value}` })
 
   if (image.value) sopt.$and.push({ i: image.value })
   if (nsfw.value) sopt.$and.push({ in: nsfw.value })
   if (favorite.value) sopt.$and.push({ u: `=${favorites.value.join('|=')}` })
+  if (retinue.value) sopt.$and.push({ u: `=${Object.keys(companionsUIDs.value).join('|=')}` })
 
   if (search.value.length === 0)
     return fuseNoSort.search(sopt)
@@ -358,6 +373,11 @@ function editCompanion(char: any) {
   characterToEdit.value = char
   editMode.value = true
   toggleShowAddCharacter()
+}
+
+function reportCompanion(char: any) {
+  characterToEdit.value = char
+  toggleShowReport()
 }
 
 function toggleRating() {

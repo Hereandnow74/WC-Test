@@ -1,11 +1,15 @@
 <template>
   <div class="flex flex-col">
-    <Input
-      :id="idd"
-      v-model="value"
-      :placeholder="placeholder"
-      :error-message="errorMessage"
-    />
+    <div class="flex gap-2">
+      <label v-if="label" :for="idd">{{ label }}</label>
+      <Input
+        :id="idd"
+        v-model="value"
+        :placeholder="placeholder"
+        :error-message="errorMessage"
+        class="flex-grow"
+      />
+    </div>
     <div ref="listEl" hidden class="z-40">
       <div
         v-for="name in searchResult"
@@ -29,6 +33,10 @@ const props = defineProps({
     default: 'search',
   },
   modelValue: {
+    type: String,
+    default: '',
+  },
+  label: {
     type: String,
     default: '',
   },

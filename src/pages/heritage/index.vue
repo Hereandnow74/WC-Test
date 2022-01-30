@@ -17,7 +17,7 @@
         @click="activeTree = tree"
       >
         <h3>{{ tree }}</h3>
-        <div>Total perks: <span>{{ heritageByTree[tree].length }}</span></div>
+        <div>Total perks: <span v-if="heritageCounts[tree]">{{ heritageCounts[tree] }} /</span> <span>{{ heritageByTree[tree].length }}</span></div>
       </div>
     </div>
     <div class="hidden column-count-2 column-count-3 column-count-4 column-count-5"></div>
@@ -87,7 +87,7 @@
 <script lang='ts' setup>
 
 import { onBeforeRouteUpdate } from 'vue-router'
-import { isArray, mergeWith } from 'lodash-es'
+import { isArray, mergeWith, countBy } from 'lodash-es'
 import { desc, heritages, Heritage } from '~/data/heritage'
 import { useTooltips } from '~/logic/misc'
 import { useStore } from '~/store/store'
@@ -130,9 +130,13 @@ const allHeritages = computed(() => {
   return res
 })
 
+const heritageCounts = computed(() => countBy(heritage.value, x => x.tree))
+
 const params = useUrlSearchParams('history')
 
 if (params.q) activeTree.value = params.q
+else
+  Object.entries(heritageCounts.value).forEach((x) => { if (x[1]) activeTree.value = x[0] })
 
 onMounted(() => useTooltips())
 
@@ -151,5 +155,4 @@ function pickSingularityType(type: string, perk: any) {
   mergeWith(fr, ...allHrWFr.map(x => x.typeFreebies[type]), (a, b) => { if (isArray(a)) return a.concat(b) })
   perk.freebies = fr
 }
-
 </script>

@@ -23,8 +23,8 @@
           <Toggle v-model="settings.nsfw" />
         </div>
         <div class="flex justify-between gap-4 border-b border-gray-500">
-          <div>Animated background (Heavy CPU load, only dark theme)</div>
-          <Toggle v-model="settings.animBg" />
+          <div>Turn off World and Companions images</div>
+          <Toggle v-model="settings.allImg" />
         </div>
       </div>
       <h3 class="text-lg">

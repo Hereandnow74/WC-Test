@@ -1,6 +1,7 @@
+import Fuse from 'fuse.js'
 import { random } from 'lodash-es'
 import tippy from 'tippy.js'
-import { allWorldsNoCondition, CHAR_COSTS, getChars, getUserChars } from '~/data/constants'
+import { allWorldsNoCondition, CHAR_COSTS, getAllChars, getChars, getUserChars } from '~/data/constants'
 
 export const useTooltips = () => tippy('[data-tippy-content]', {
   animation: false,
@@ -110,4 +111,17 @@ export function imageLink(link: string, uid: number) {
     }
   }
   return link
+}
+
+export async function charSearch() {
+  const allChars = await getAllChars()
+  const options = {
+    findAllMatches: true,
+    threshold: 0.1,
+    keys: ['n', 'w'],
+  }
+
+  const fuse = new Fuse(allChars, options)
+
+  return fuse
 }
