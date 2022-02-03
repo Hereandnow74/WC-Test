@@ -406,14 +406,14 @@ waifu_perks.push({
   desc: 'Samus is instead a less experienced version from around the time of her first mission to Zebes. She still has her Power Suit and ship, but has not yet fabricated her Zero Suit or let her hair return to its natural blonde. If you already have Metroid Hybrid Samus, you may still buy this perk, pre-applied to a new Samus, for 20 credits. ',
 })
 waifu_perks.push({
-  title: 'Metroid DNA',
+  title: 'Killer Instinct',
   waifu: 'Samus Aran',
   from: 'Metroid',
   uid: 9275,
   tier: 7,
   image: 'https://i.imgur.com/BPOzyIY.jpg?1',
   cost: 50,
-  desc: 'The Metroid DNA from Fusion is active in Samus\'s system, turning her into a succuboid with incredible psychic potential. Lifeforce is a required part of her diet. She\'ll gradually mutate into a human-Metroid hybrid, then follow the SR-388 Metroids\' life-cycle into the queen stage... or perhaps beyond. Once she\'s become a Metroid queen, she may lay Metroid eggs, but only voluntarily and not without extreme persuasion. Her Metroid offspring will also follow the SR-388 life-cycle and are limited to stages lower than her own. Metroid Samus qualifies for special Alterzelu Symbiote theming. If you already have Justin Bailey, you may still buy this perk, pre-applied to a new Samus, for 100 credits. ',
+  desc: 'The Metroid DNA from Fusion is active in Samus’s system, turning her into a succuboid with incredible psychic potential. Lifeforce is a required part of her diet; physical contact is not recommended without Soul Defense. She’ll gradually mutate into a human-Metroid hybrid, then follow the SR-388 Metroids’ life-cycle into the queen stage… and beyond. Once she’s become a Metroid queen, she can learn to project a humanoid form for regular interactions; this ability benefits from Bifurcation. She may also lay Metroid eggs at that stage and higher, but only voluntarily and not without extreme persuasion. Her Metroid offspring will also follow the SR-388 life-cycle and are limited to stages lower than her own. Metroid Samus qualifies for special Alterzelu Symbiote theming. If you already have Justin Bailey, you may still buy this perk, pre-applied to a new Samus, for 100 credits.',
 })
 waifu_perks.push({
   title: 'Spawning Pools',
@@ -981,6 +981,7 @@ waifu_perks.push({
   cost: 150,
   desc: 'The Round Table, a gathering place for heroes: the round shape of Mash\'s shield and its direct connection to the original Round Table are the catalyst for Chaldea\'s FATE Servant-summoning system. This perk allows you to roll on Fate/Grand Order’s infamous gacha both in- and outside of the Nasuverse. Servants summoned using this perk are not automatically bound, but may be controlled using the same Command Seals that you acquired elsewhere in the Nasuverse or purchased in the Other Controls section. This perk does not alter Mash\'s tier rating. Individuals summoned through Lord Camelot will not award credits upon capture or sale. You get one free 10-roll when you purchase this perk and can earn additional Saint Quartz under the same rules as Exit Stage Left, at a rate of 1 SQ per 5% progression. Saint Quartz may also be purchased with company credits. The rates on offer may be found in the chart to the right. <h3 class="text-lg">Other Gachas</h3><p>If you have at least one character in your retinue who’s from a world that started as a mobile game, that gacha’s roll list will be added to Grand Order\'s. For example, having Eula Lawrence or Beidou will add the Genshin Impact roll list, having Enterprise or Zuikaku will add the Azur Lane roll list, and having Siege or Ch’en will add the Arknights roll list. </p>',
 })
+
 waifu_perks.push({
   title: 'Beautiful Journey',
   waifu: 'Leonardo da Vinci',
@@ -990,6 +991,20 @@ waifu_perks.push({
   cost: 100,
   desc: 'This perk grants da Vinci an inexorable connection to the Shadow Border, the heavily-armored vehicle that served as Chaldea\'s mobile base during Cosmos in the Lostbelt. This version even has some slight improvements over the original. First, the condition of the vehicle is now tied to da Vinci\'s own health. As long as she is in top condition, the Shadow Border will self-repair from any damage taken. This only works one way, so da Vinci can\'t be injured by attacking the Shadow Border. Second, it can Zero Sail through Imaginary Number Space and into other universes. Much like traveling to Lostbelts, however, you must establish a connection with something or someone in the target universe so you can anchor yourself to that location. In your case, captured and yoinked waifus count for their respective universes of origin. Finally, Zero-Sailing is now 100% nonlethal. It still has a tendency to... misfire somewhat at times, but you\'ll always end up in a place where you needed to be, even if it isn\'t where you wanted to go. This perk does not affect da Vinci\'s tier rating. ',
 })
+
+waifu_perks.push({
+  title: 'Magnificent Voyage',
+  waifu: 'Leonardo da Vinci',
+  from: 'Nasuverse',
+  uid: 9892,
+  whitelist: ['Beautiful Journey'],
+  image: 'https://i.imgur.com/pk9twf0l.png',
+  cost: 100,
+  desc: `
+  Using Hephaestus’s nanomachines, the Shadow Border has been fused with the Nautilus to create a new ship, the Storm Border. Larger than a nuclear submarine, this vessel is capable of traveling through the sky and underwater. It has all of the features of the Shadow Border, including Zero Sailing and an inner volume twice as large as its outer shell, as well as increased computational abilities and durability. In addition, it is armed with torpedoes as powerful as Triton’s trumpet and can even survive a hit from Poseidon.
+  <p>Unlike the original, this version is staffed with partitions of Da Vinci instead of Nemo. They still have all of the skills of the Nemo series. Though they lack any inherent combat value outside of the Storm Border, they will gradually respawn if killed. This can be accelerated with mana or by spending command seals. Additionally, the original Shadow Border may separate from the Storm Border, similar to a waifu using the Bifurcation perk.</p>`,
+})
+
 waifu_perks.push({
   title: 'Mara Avaloda',
   waifu: 'Kama',
@@ -1008,7 +1023,7 @@ waifu_perks.push({
   tier: 10,
   image: '/img/waifu_perks/calamity.jpg',
   cost: 800,
-  desc: 'Koyanskaya\'s attempt to collect nine tails has succeeded, ascending her into an alternative Beast IV. Koyanskaya is no longer limited to expressing one aspect of herself at a time, whether the Assassin- class Light form or the Foreigner-class Dark form, but can split into two and re-merge on contact. She gains raw power befitting a Tier 10, and can assume her Beast form at will when merged. Like regular Koyanskaya, Treasured Beast Koyanskaya also qualifies for special Alterzelu Symbiote theming',
+  desc: 'Koyanskaya’s attempt to collect nine tails has succeeded, ascending her into an alternative Beast IV. Koyanskaya is no longer limited to expressing one aspect of herself at a time, whether the Assassin- class Light form and personality or the Foreigner-class Dark form and personality, but can split into two and re-merge on contact. She gains raw power befitting a Tier 10, and can assume her monstrous Beast form at will when merged. Like regular Koyanskaya, Treasured Beast Koyanskaya also qualifies for special Alterzelu Symbiote theming.',
 })
 waifu_perks.push({
   title: 'Golden Arms Redemption',
@@ -1041,7 +1056,10 @@ waifu_perks.push({
   image: 'https://i.imgur.com/xBJElWv.png?1',
   cost: 11111,
   discount: 150,
-  desc: 'The two lead magical girls have ascended into their goddess forms, becoming Ultimate Madoka ("Madokami") and Akuma Homura (“Homucifer”). You must have both Madoka and Homura to buy this perk as an upgrade; the single T11 ticket will pay for both. Madoka will usually be the sole queen of an Alterzelu Symbiote swarm, due to Homura\'s dedication to her partner, and qualifies for special theming. When this is purchased as an upgrade, the two will experience no changes to their personalities. If this is purchased outright, Akuma Homura may instead have her Original Series or "Moemura" personalities, depending on contractor preference. Madoka\'s divine ascension was the result of a wish to grant hope to all magical girls. A Madoka captured normally will already be a magical girl and thus cannot make a second wish, so some builds may find this perk impossible to earn. In that event, if you already have Homura in your retinue, and capture Madoka before or during Walpurgisnacht’s attack, this perk wil bel earned when Madoka joins the battle.',
+  desc: `
+  The two lead magical girls have ascended into their goddess forms, becoming Ultimate Madoka (”Madokami”) and Akuma Homura (”Homucifer”). You must have both Madoka and Homura to buy this perk as an upgrade; the single T11 ticket will pay for both. Madoka will usually be the sole queen of an Alterzelu Symbiote swarm, due to Homura’s dedication to her partner, and qualifies for special theming. When this is purchased as an upgrade, the two will experience no changes to their personalities. If this is purchased outright, Akuma Homura may instead have her Original Series or “Moemura” personalities, depending on contractor preference.
+  <p>Madoka’s divine ascension was the result of a wish to grant hope to all magical girls. A Madoka captured normally will already be a magical girl and thus cannot make a second wish, so some builds may find this perk impossible to earn. In that event, if you already have Homura in your retinue, and capture Madoka before or during Walpurgisnacht’s attack, this perk will be earned when Madoka joins the battle.</p>
+  `,
 })
 waifu_perks.push({
   title: 'Mitama\'s Special Orb',

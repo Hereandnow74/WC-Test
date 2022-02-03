@@ -8,7 +8,7 @@
         Jump log
       </div>
     </div>
-    <div v-if="tabIndex === 0 && findIndex(miscPerks, {title: 'Exit Stage Left'}) != -1" class="min-h-0 overflow-y-auto scrollbar">
+    <div v-if="tabIndex === 0 && findIndex(miscPerks, {title: 'Exit Stage Left'}) != -1" class="min-h-0 overflow-y-auto scrollbar pb-2">
       <div
         class="flex flex-col gap-2"
       >
@@ -17,7 +17,23 @@
           <div class="text-center">
             Choose your next world
           </div>
-          <WorldCard v-for="world, i in rdnWorld" :key="world.worldName" :world="world" :pick-able="false" @click="chooseWorld(world, i)" />
+          <div v-for="world, i in rdnWorld" :key="world.worldName" class="flex gap-1 px-1">
+            <WorldCard :world="world" :pick-able="false" @click="chooseWorld(world, i)" />
+            <div class="flex flex-col justify-between bg-gray-700 rounded-xl py-2">
+              <fluent:save-24-regular
+                v-if="(world.save || !areSaved) && !world.remove"
+                class="hover:text-green-500 cursor-pointer"
+                :class="{'text-green-500': world.save}"
+                @click="world.save = !world.save"
+              />
+              <fluent:delete-20-filled
+                v-if="(world.remove || !areRemoved) && !world.save"
+                class="hover:text-red-500 cursor-pointer"
+                :class="{'text-red-500': world.remove}"
+                @click="world.remove = !world.remove"
+              />
+            </div>
+          </div>
         </div>
         <Button v-if="progress >= 100 && !rdnWorld.length" label="Jump To Next World" size="Small" @click="jumpToNextWorld" />
       </div>
@@ -48,7 +64,6 @@
     </div>
     <Desc v-if="findIndex(miscPerks, {title: 'Exit Stage Left'}) === -1" :desc="`You don't have access to this app, you need to buy Exit Stage Left first`" />
     <div class="flex gap-2">
-      <Button label="Back" icon="akar-icons:arrow-back-thick" size="Small" class="mx-auto" @click="toggleAppMode" />
       <Button
         v-if="tabIndex === 1"
         label="Clear Jump Chain"
@@ -63,7 +78,8 @@
 
 <script lang="ts" setup>
 import { findIndex } from 'lodash'
-import { randomWorld, toggleAppMode } from '~/logic'
+import some from 'lodash-es/some'
+import { randomWorld } from '~/logic'
 import { usePlayStore } from '~/store/play'
 import { useStore } from '~/store/store'
 
@@ -90,26 +106,28 @@ allWorldsNoCondition.value.forEach((x) => {
 
 const manualWorld = computed(() => worldObject[worldText.value] || {})
 
+const isBear = computed(() => findIndex(miscPerks.value, { title: 'Pursued by a Bear' }) !== -1)
+
+const areSaved = computed(() => some(rdnWorld.value, { save: true }))
+const areRemoved = computed(() => some(rdnWorld.value, { remove: true }))
+
 const numberOfChoices = computed(() => {
   let val = 1
-  if (findIndex(miscPerks.value, { title: 'Pursued by a Bear' }) !== -1)
-    val = 3
-  if (findIndex(miscPerks.value, { title: 'The Bigger Fish' }) !== -1)
+  if (isBear.value)
     val = 7
   return val
 })
 
 const plus = computed(() => {
   let val = 1
-  if (findIndex(miscPerks.value, { title: 'Pursued by a Bear' }) !== -1)
-    val = 4
-  if (findIndex(miscPerks.value, { title: 'The Bigger Fish' }) !== -1)
+  if (isBear.value)
     val = 11
   return val
 })
+
 const minus = computed(() => {
   let val = 1
-  if (findIndex(miscPerks.value, { title: 'The Bigger Fish' }) !== -1)
+  if (isBear.value)
     val = 11
   return val
 })
@@ -132,7 +150,11 @@ async function chooseWorld(world: World, i: number) {
   jumpChain.value.push(saveWorld)
   currentWorld.value = saveWorld
   rdnWorld.value.splice(i, 1)
-  rdnWorld.value.forEach(x => x.n += 1)
+  rdnWorld.value.forEach((x) => {
+    if (x.save) return
+    x.n += 1
+    if (x.remove) x.n = 3
+  })
   rdnWorld.value = rdnWorld.value.filter(x => x.n <= 2)
   while (rdnWorld.value.length < numberOfChoices.value) {
     const wrd = randomWorld(currentWorld.value.rating, minus.value, plus.value)

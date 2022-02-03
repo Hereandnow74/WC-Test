@@ -2,11 +2,12 @@ import { isArray } from 'lodash-es'
 import { DBCharacter } from 'global'
 import { DLCgenericPerks, DLChomes, DLCperks, DLCtalents, DLCheritages, DLClureExpansions, DLCbindings, DLClures, DLCotherControls, DLCridePerks } from './DLCs'
 import { rides } from './rides'
+import { homes, demiplane, dungeon } from './demdun'
 import { intensity } from '~/data/intensity'
 import { origin } from '~/data/origin'
 import { bindings, lures, lureExpansions, otherControls } from '~/data/binding'
 import { heritages } from '~/data/heritage'
-import { ridePerksFull, homes, defenses, talents, perks, genericPerks } from '~/data/talents'
+import { ridePerksFull, defenses, talents, perks, genericPerks } from '~/data/talents'
 import { DLCwaifu_perks, waifu_perks } from '~/data/waifu_perks'
 
 import { useStore } from '~/store/store'
@@ -67,7 +68,7 @@ export const rulesList = [
   { title: 'sales', title2: 'Extending Your Build: Sales' },
   { title: 'waifu11', title2: 'These Waifus Go Up to 11' },
   { title: 'danger11', title2: 'Danger Rating 11 Build Rules' },
-  { title: 'pvp', title2: 'Gauntlet(Continuous PvP)' },
+  { title: 'pvp', title2: 'Other Contractors' },
   { title: 'services', title2: 'Company Services' },
   { title: 'salary', title2: 'Contractor Salary' },
   { title: 'helpDesk', title2: 'Help Desk Hotline' },
@@ -123,7 +124,7 @@ export const waifuTags = {
   dg: { tag: 'Dragon', short: 'dg', effect: '', desc: '', color: 'bg-[#cd2952]' },
   th: { tag: 'Transhuman', short: 'th', effect: '', desc: '', color: 'bg-[#315be5]' },
   ot: { tag: 'Outsider', short: 'ot', effect: '', desc: '', color: 'bg-[#5a3c68]' },
-  gd: { tag: 'God', short: 'gd', effect: '', desc: '', color: 'bg-[#ffffff] text-black' },
+  gd: { tag: 'Deity', short: 'gd', effect: '', desc: 'God or Goddess', color: 'bg-[#ffffff] text-black' },
   rs: { tag: 'Resurrection', short: 'rs', effect: '', desc: '', color: 'bg-[#ffffff] text-black' },
   mu: { tag: 'Mutant', short: 'mu', effect: '', desc: '', color: 'bg-[#315be5]' },
   dh: { tag: 'Demi-human', short: 'dh', effect: '', desc: '', color: 'bg-[#8d4127]' },
@@ -149,7 +150,7 @@ export const waifuTags = {
   dl: { tag: 'Dark elf', short: 'dl', effect: '', desc: '', color: 'bg-[#5a3c68]' },
   ct: { tag: 'Catgirl', short: 'ct', effect: '', desc: '', color: 'bg-[#de7b0a]' },
   vp: { tag: 'Vampire', short: 'vp', effect: '', desc: '', color: 'bg-[#b52865]' },
-  pt: { tag: 'Priest', short: 'ps', effect: '', desc: '', color: 'bg-[#ffffff] text-black' },
+  pt: { tag: 'Priest', short: 'pt', effect: '', desc: '', color: 'bg-[#ffffff] text-black' },
   nj: { tag: 'Ninja', short: 'nj', effect: '', desc: '', color: 'bg-teal-500' },
   sr: { tag: 'Shifter', short: 'sr', effect: '', desc: 'is able to take more than one form', color: 'bg-teal-500' },
   ev: { tag: 'Evil', short: 'ev', effect: '', desc: '', color: 'bg-teal-500' },
@@ -167,9 +168,7 @@ function addTitles(res: any, perks: any) {
 
 export const ALL_PERK_TITLES = computed(() => {
   const result = {}
-  const all = [intensity, bindings, lures, lureExpansions, otherControls, heritages, homes, defenses, talents, perks,
-    genericPerks, waifu_perks, DLCperks, DLChomes, DLCgenericPerks, DLCheritages, DLCtalents, DLClureExpansions,
-    DLCbindings, DLClures, DLCotherControls, DLCridePerks]
+  const all = [intensity, bindings, lures, lureExpansions, otherControls, heritages, homes, demiplane, dungeon, defenses, talents, perks, genericPerks, waifu_perks, DLCperks, DLChomes, DLCgenericPerks, DLCheritages, DLCtalents, DLClureExpansions, DLCbindings, DLClures, DLCotherControls, DLCridePerks]
   all.forEach(p => addTitles(result, p))
   return result
 })
@@ -184,7 +183,7 @@ export const LINKS = computed(() => {
     'bindings/controls': [...otherControls],
     'heritage': heritages,
     'talents/ride': [rides, ridePerksFull, DLCridePerks],
-    'talents/home': [...homes, ...DLChomes],
+    'talents/home': [...homes, ...demiplane, ...dungeon, ...DLChomes],
     'talents/defense': defenses,
     'talents/talent': [...talents, ...DLCtalents],
     'talents/perks': [...perks, ...DLCperks],

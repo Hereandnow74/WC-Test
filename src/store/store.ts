@@ -86,30 +86,34 @@ const captureKoeff = computed(() => {
 })
 
 const companionProfit = computed(() => {
-  return companions.value.reduce((a, x) => {
-    if (x.method === 'capture' && x.priceTier !== 11) {
-      if (x.price === undefined) {
-        let captureCost = Math.ceil(CHAR_COSTS[x.priceTier - 1] * captureKoeff.value)
-        captureCost = captureCost < 1 ? 1 : captureCost
-        return a += captureCost
+  return captureKoeff.value > 0
+    ? companions.value.reduce((a, x) => {
+      if (x.method === 'capture' && x.priceTier !== 11) {
+        if (x.price === undefined) {
+          let captureCost = Math.ceil(CHAR_COSTS[x.priceTier - 1] * captureKoeff.value)
+          captureCost = captureCost < 1 ? 1 : captureCost
+          return a += captureCost
+        }
+        else { return a += x.price }
       }
-      else { return a += x.price }
-    }
-    return a
-  }, 0)
+      return a
+    }, 0)
+    : 0
 })
 
 const companionProfitSold = computed(() => {
-  return companions.value.reduce((a, x) => {
-    if (x.sold && x.tier !== 11 && ['capture'].includes(x.method)) {
-      if (x.soldPrice === undefined)
-        return a += Math.round(CHAR_COSTS[x.tier - 1] * 0.2)
-      else return a += x.soldPrice
-    }
-    if (x.sold && x.priceTier !== 11 && ['buy', 'used', 'yoink'].includes(x.method))
-      return a += Math.round(CHAR_COSTS[x.priceTier - 1] * 0.8)
-    return a
-  }, 0)
+  return captureKoeff.value > 0
+    ? companions.value.reduce((a, x) => {
+      if (x.sold && x.tier !== 11 && ['capture'].includes(x.method)) {
+        if (x.soldPrice === undefined)
+          return a += Math.round(CHAR_COSTS[x.tier - 1] * 0.2)
+        else return a += x.soldPrice
+      }
+      if (x.sold && x.priceTier !== 11 && ['buy', 'used', 'yoink'].includes(x.method))
+        return a += Math.round(CHAR_COSTS[x.priceTier - 1] * 0.8)
+      return a
+    }, 0)
+    : 0
 })
 
 // Discounts
@@ -195,7 +199,7 @@ const fullStartingBudget = computed(() => {
     flags.value.danger11Start = false
   }
 
-  return csr.value ? 0 : Math.round((bd + intensityFlat) * (1 + intenMultiplier))
+  return csr.value ? Math.round((bd + intensityFlat) * (intenMultiplier)) : Math.round((bd + intensityFlat) * (1 + intenMultiplier))
 })
 
 const budget = computed(() => {
@@ -209,11 +213,13 @@ const budget = computed(() => {
 })
 
 const companionTicketProfit = computed(() => {
-  return companions.value.reduce((a, x) => {
-    if (x.method === 'capture' && x.priceTier === 11) a += 1
-    if (x.sold && x.tier === 11) a += 1
-    return a
-  }, 0)
+  return captureKoeff.value > 0
+    ? companions.value.reduce((a, x) => {
+      if (x.method === 'capture' && x.priceTier === 11) a += 1
+      if (x.sold && x.tier === 11) a += 1
+      return a
+    }, 0)
+    : 0
 })
 
 const tier11tickets = computed(() => {
@@ -261,7 +267,8 @@ const yourTier = computed(() => {
   }
   const talentsTier4 = findIndex(talentPerks.value, x => ['Template Stacking I', 'Racial Template', 'OC Donut Steel'].includes(x.title)) !== -1 ? 4 : 0
   const talentsTier5 = findIndex(talentPerks.value, x => ['Template Stacking II'].includes(x.title)) !== -1 ? 5 : 0
-  const shroudTier = findIndex(binding.value, { title: 'Shroud of Power' }) !== -1 ? 4 : 0
+  let shroudTier = findIndex(binding.value, { title: 'Shroud of Power' }) !== -1 ? 4 : 0
+  shroudTier = Math.max(findIndex(binding.value, { title: 'Alterzelu Symbiote' }) !== -1 ? 4 : 0, shroudTier)
   const originTier = startingOrigin.value.tier || 0
   const dragonTier = calcTier(heritage.value.filter(x => x.tree && x.tree === 'Dragon').reduce((a, x) => a += x.cost, 0))
   const transhumanTier = calcTier(heritage.value.filter(x => x.tree && x.tree === 'Transhuman').reduce((a, x) => a += x.cost, 0))

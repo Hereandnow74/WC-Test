@@ -69,7 +69,7 @@
         <h3 class="text-lg font-semibold">
           Demiplanes & Dungeons
         </h3>
-        <Enum :list="homes" :color="color" />
+        <Enum :list="[...homes, ...demiplane, ...dungeon]" :color="color" />
       </div>
 
       <div>
@@ -102,8 +102,9 @@ import { heritages } from '~/data/heritage'
 import { bindings, lures, lureExpansions, otherControls } from '~/data/binding'
 import { intensity } from '~/data/intensity'
 import { origin } from '~/data/origin'
-import { defenses, homes, perks, ridePerksFull, genericPerks, talents } from '~/data/talents'
+import { defenses, perks, ridePerksFull, genericPerks, talents } from '~/data/talents'
 import { waifu_perks } from '~/data/waifu_perks'
+import { homes, dungeon, demiplane } from '~/data/demdun'
 
 import { rulesList } from '~/data/constants'
 import { rides } from '~/data/rides'

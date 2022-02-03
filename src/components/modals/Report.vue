@@ -1,14 +1,16 @@
 <template>
   <Modal :label="`Report mistakes for ${character.name}`">
-    <div class="p-2 flex flex-col gap-2 min-h-0">
+    <div class="p-2 flex flex-col gap-2 min-h-0 overflow-y-auto max-h-[85vh] max-w-screen-md">
       <h3 class="-mb-2 fonst font-semibold text-gray-600 dark:text-gray-400">
         Toggle on what wrong with it:
       </h3>
       <div class="flex flex-wrap gap-2">
         <Toggle v-model="wrongTier" label="Tier" />
+        <Toggle v-model="wrongTags" label="Tags" />
         <Toggle v-model="isDuplicate" label="Is Duplicate" />
         <Toggle v-model="wrongName" label="Name" />
         <Toggle v-model="wrongWorld" label="World" />
+        <Toggle v-model="wrongImage" label="Image" />
       </div>
       <div v-if="wrongTier" class="flex flex-col gap-2">
         <div class="flex gap-2 justify-between">
@@ -29,6 +31,12 @@
           :error-message="errors.args"
         />
       </div>
+      <TagInput
+        v-if="wrongTags"
+        v-model="tags"
+        placeholder="Tags - press Enter to add"
+        :error-message="errors.tags"
+      />
       <div v-if="isDuplicate" class="flex flex-col gap-2">
         <Input v-model="duplicate" placeholder="Name of the duplicate (optional)" label="Duplicate Name" class="flex-grow" :error-message="errors.duplicate" />
       </div>
@@ -55,12 +63,20 @@
           :error-message="errors.fixSub"
         />
       </div>
+      <div v-if="wrongImage" class="flex flex-col gap-2">
+        <Input v-model="image" placeholder="Image URL" class="flex-grow" :error-message="errors.image" />
+        <Input v-model="nsfwImage" placeholder="NSFW Image URL" class="flex-grow" :error-message="errors.nsfwImage" />
+        <div class="flex gap-1">
+          <img v-show="image" :src="image" alt="image" class="object-contain h-[150px] w-full object-top">
+          <img v-show="nsfwImage" :src="nsfwImage" alt="nsfw image" class="object-contain h-[150px] w-full object-top">
+        </div>
+      </div>
       <div v-if="reportError" class="text-red-600 dark:text-red-300 text-sm">
         {{ reportError }}
       </div>
       <div class="flex gap-2">
         <Input v-model="nickname" placeholder="Your nickname" :error-message="errors.nickname" class="flex-grow" />
-        <Button size="Small" label="Send" :disabled="!(wrongTier || wrongName || wrongWorld || isDuplicate)" @click="sendReport" />
+        <Button size="Small" label="Send" :disabled="!(wrongTier || wrongName || wrongWorld || isDuplicate || wrongImage || wrongTags)" @click="sendReport" />
       </div>
       <div v-if="submitMessage" class="text-green-600 dark:text-green-300 text-sm">
         {{ submitMessage }}
@@ -76,8 +92,7 @@ import { toFormValidator } from '@vee-validate/zod'
 import { uniq } from 'lodash-es'
 import Input from '../basic/Input.vue'
 import NumberInput from '../basic/NumberInput.vue'
-import { useStore } from '~/store/store'
-import { filterObject, proposeCompanion, sendReportToServer, toggleShowAddCharacter, userCharactersShown } from '~/logic'
+import { filterObject, sendReportToServer } from '~/logic'
 import { getChars, getUserChars, waifuTags, waifuTagsByTag } from '~/data/constants'
 
 const props = defineProps({
@@ -92,9 +107,11 @@ const props = defineProps({
 })
 
 const wrongTier = ref(false)
+const wrongTags = ref(false)
 const wrongName = ref(false)
 const wrongWorld = ref(false)
 const isDuplicate = ref(false)
+const wrongImage = ref(false)
 
 const reportError = ref('')
 
@@ -133,6 +150,17 @@ const zodObject = computed(() => {
       duplicate: zod.string().max(64, { message: 'Maximum length is 64 chars' }),
     })
   }
+  if (wrongImage.value) {
+    obj = obj.extend({
+      image: zod.string().regex(/[^ \!@\$\^&\(\)\+\=]+(\.png|\.jpeg|\.gif|\.jpg|\.webp)$/, { message: 'Must be a valid image URL in a jpeg/jpg/png/gif/webp format.' }).max(256, { message: 'Maximum length is 256 chars' }),
+      nsfwImage: zod.string().regex(/[^ \!@\$\^&\(\)\+\=]+(\.png|\.jpeg|\.gif|\.jpg|\.webp)$/, { message: 'Must be a valid image URL in a jpeg/jpg/png/gif/webp format.' }).max(256, { message: 'Maximum length is 256 chars' }).optional().or(zod.literal('')),
+    })
+  }
+  if (wrongTags.value) {
+    obj = obj.extend({
+      tags: zod.string().max(24, { message: 'Max tag length is 24 chars' }).nonempty('No empty tags').array().max(10, { message: 'Maximum 10 tags' }),
+    })
+  }
   return toFormValidator(obj)
 })
 
@@ -140,6 +168,7 @@ const { errors, handleSubmit } = useForm({
   validationSchema: zodObject,
   initialValues: {
     tier: props.character.tier || 1,
+    tags: props.character.tags,
   },
 })
 
@@ -150,22 +179,23 @@ const { value: fixName } = useField<string>('fixName')
 const { value: fixWorld } = useField<string>('fixWorld')
 const { value: fixSub } = useField<string>('fixSub')
 const { value: duplicate } = useField<string>('duplicate')
+const { value: image } = useField<string>('image')
+const { value: nsfwImage } = useField<string>('nsfwImage')
+const { value: tags } = useField<string[]>('tags')
 
 const sendReport = handleSubmit((values) => {
-  if (!(wrongTier.value || wrongName.value || wrongWorld.value || isDuplicate.value)) {
+  if (!(wrongTier.value || wrongName.value || wrongWorld.value || isDuplicate.value || wrongImage.value || wrongTags.value)) {
     reportError.value = 'Don\'t send empty report, baka!'
     setTimeout(() => reportError.value = '', 5000)
     return
   }
-
+  values.tags = values.tags.map(x => waifuTagsByTag[x] ? waifuTagsByTag[x].short : x)
   values = filterObject(values)
 
   sendReportToServer({ ...values, date: new Date().toString(), uid: props.character.uid }, (msg) => {
     submitMessage.value = msg
     setTimeout(() => submitMessage.value = '', 5000)
   })
-
-  console.log(values)
 })
 
 </script>

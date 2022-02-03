@@ -24,7 +24,7 @@
           > Original: <span class="text-green-500">{{ char.priceTier }}</span></span>
         </div>
         <span class="text-gray-500">From: <span class="text-gray-400">{{ char.world }}</span></span>
-        <div class="flex flex-wrap gap-2 mb-1">
+        <div class="flex flex-wrap gap-2 mb-1 text-sm">
           <NumberInput
             v-if="!char.sold"
             v-model="char.tier"
@@ -52,7 +52,7 @@
             v-if="!char.sold && char.method !== 'unbound'"
             v-model="char.role"
             theme="dark"
-            :list="['Member', 'Familiar']"
+            :list="['Companion', 'Familiar']"
           />
         </div>
 

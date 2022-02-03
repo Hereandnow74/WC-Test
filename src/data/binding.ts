@@ -1,24 +1,12 @@
-export const desc = `<p>All bindings ensure a waifu's loyalty, friendship, and romantic and sexual interest in you,
-    and nudge them in that direction toward your other waifus. Bonds between your waifus grow more quickly with
-    increased interaction, but will not override familial relationships without significant pressure. Waifu obedience
-    is not absolute: in general, they put the spirit of your orders over the letter. Strong-willed waifus may elect
-    to ignore disliked orders and follow their own initiative; more often, a competent waifu whose moral alignment
-    conflicts with an order’s means or ends will raise an objection and the two of you will have to argue it out.
-    Bound waifus are also somewhat more likely, depending on their moral alignments, to consider “Just bind her
-    and make her one of us” a valid solution to any problem involving a waifu candidate. Even the purest-hearted
-    waifus can find themselves seduced by the power to turn any enemy into a friend.</p>
-    <p>All bindings work equally well regardless of the user’s or target’s sex, gender, or orientation.
-    If you change your binding method, any expansion you bought for the old one will be refunded at the standard rate.
-    Like all company-supplied powers, bindings cannot be nullified, copied, or stolen.</p>
-    <p>For safety reasons, all purchased waifus are bound with one of the Stamp’s tattoos before delivery, unless you opt
-    out of having any bindings. <b>You can have no more than one binding method at any time.</b> When you buy a new binding
-    method, your previous one will be automatically refunded and disappear from existence; any unique mental effects
-    and most physical effects will fade over the next few days. Long-term conditioning from the Choker is an exception,
-    as are the Stamp’s tattoos. The latter will merely become dormant (invisible and inert) while any higher binding
-    is applied. If a waifu was never Stamped, whether by you or before delivery, the use of any higher binding
-    method will also give her a dormant tattoo; this is what marks her as one of your captures. Dormant tattoos
-    turn active when higher bindings are removed. If you have any binding, but capture a waifu using only Lures,
-    the Stamp’s effects will apply regardless and her full tattoo will appear immediately.</p>`
+export const desc = `
+<p>All bindings ensure a companion's loyalty, friendship, and romantic and sexual interest in you, and nudge them in that direction toward your other companions. Bonds between your companions grow more quickly with increased interaction, but will not override familial relationships without significant pressure. Companion obedience is not absolute: in general, they put the spirit of your orders over the letter. Strong-willed companions may elect to ignore disliked orders and follow their own initiative; more often, a competent companion whose moral alignment conflicts with an order’s means or ends will raise an objection and the two of you will have to argue it out. Bound companions are also somewhat more likely, depending on their moral alignments, to consider “Just bind her and make her one of us” a valid solution to any problem involving a companion candidate. Even the purest of heart can find themselves seduced by the power to turn any enemy into a friend.
+</p>
+<p>All bindings work equally well regardless of the user’s or target’s sex, gender, or orientation. If you change your binding method, any expansion you bought for the old one will be refunded at the standard rate. Like all company- supplied powers, bindings cannot be nullified, copied, or stolen.
+</p>
+<p>For safety reasons, all purchased companions and familiars are bound with one of the Stamp’s tattoos before delivery, unless you opt out of having any bindings. You can have no more than one binding method at any time. When you buy a new binding method, your previous one will be automatically refunded and disappear from existence; any unique mental effects and most physical effects will fade over the next few days. Long-term conditioning from the Choker is an exception, as are the Stamp’s tattoos. The latter will merely become dormant (invisible and inert) while any higher binding is applied. Perks listed as Other Capture Methods are not bindings, and are thus compatible with each other and all bindings.
+</p>
+<p>If a companion or familiar was never Stamped, whether by you or before delivery, the use of any higher binding method will also give them a dormant tattoo; this is what marks them as one of your captures. Dormant tattoos turn active when higher bindings are removed. If you have any binding, but capture a companion using only Lures, the Stamp’s effects will apply regardless and the full tattoo will appear immediately.</p>
+`
 
 export interface Binding {
   title: string
@@ -52,9 +40,9 @@ bindings.push({
   desc: `
 <p>This permanent magical tattoo instills only the mental effects common to all bindings. To capture targets, you may apply this tattoo using a thumb-sized ink stamp. You can only have one stamp at a time, and only you and your retinue members can perceive the stamp when it’s not in use. The inked part, on one end, contains the tattoo’s core, a circular design that serves as your emblem.</p>
 <p>Stamping requires 3 seconds of sustained contact with the target’s skin, from the stamper’s perception, to start the tattoo-creation process. You must apply enough pressure to make the ink transfer properly. The most popular stamping sites are typically the pubic region, lower back, or back of the neck. Newly-applied tattoos require 72 hours to ramp up to their full effect, from the perception of the person stamped.</p>
-<p>During the ramp-up period, additional ink will fill itself in around your emblem to form a much more elaborate design, about the size of the waifu’s palm, that represents her history and personality. Captured waifus and people they know will not notice a tattoo-in-progress until it completes itself, at which point they’ll rationalize away its sudden appearance. If a tattoo’s location is ever damaged or severed, its effects will continue and it will reappear when the skin is regenerated or the body part replaced.</p>
+<p>During the ramp-up period, additional ink will fill itself in around your emblem to form a much more elaborate design, about the size of the subject’s palm, that represents her history and personality. Captured subjects and people they know will not notice a tattoo-in-progress until it completes itself, at which point they’ll rationalize away its sudden appearance. If a tattoo’s location is ever damaged or severed, its effects will continue and it will reappear when the skin is regenerated or the body part replaced.</p>
 <p>Stamped targets only count as captured at the end of this period, when the tattoo completes. Completed tattoos are always perceptible. A stamp’s location on a target’s body may be repositioned after the fact through the company app; a generated 3D model of the target serves as a reference.</p>
-<p>The stamp never runs out of ink and cannot be used accidentally. If you are stamped, by yourself or another, it will only have cosmetic effects. If one of your waifus marks a new girl with it, the new girl will feel its effects as if you had used it on her yourself. The anti-loss, -theft, and -destruction measures on the company’s smart device also apply to this stamp.</p>`,
+<p>The stamp never runs out of ink and cannot be used accidentally. If you are stamped, by yourself or another, it will only have cosmetic effects. If one of your subjects marks someone new with it, the newbie will feel its effects as if you had used it on her yourself. The anti-loss, -theft, and -destruction measures on the company’s smart device also apply to this stamp.</p>`,
 })
 
 bindings.push({
@@ -74,7 +62,7 @@ bindings.push({
   image: 'https://i.ibb.co/t4Gs6by/Megapixel.jpg',
   whitelist: ['Company Stamp'],
   blacklist: ['Empty Hand'],
-  desc: 'Favored by stalkers everywhere, your stamp is now a digital app for your smart device. Just take a photo of the target waifu, rotate, zoom, and pan around a generated 3D model of her until you’ve found the right place for your tattoo, and apply the tattoo remotely. The same 72-hour waiting period and all of the related rules apply for the camera app as they do for the stamp. This is a company app and benefits from all such protections.',
+  desc: 'Favored by stalkers everywhere. Instead of a physical stamp, you instead have a digital app for your smart device. Just take a photo of the target, rotate, zoom, and pan around a generated 3D model of her until you’ve found the right place for your tattoo, and apply the tattoo remotely. The same 72-hour waiting period and all of the related rules apply for the camera app as they do for the stamp. This is a company app and benefits from all such protections.',
 })
 
 bindings.push({
@@ -83,8 +71,8 @@ bindings.push({
   type: 'Jewelry',
   image: 'https://i.ibb.co/G2smr4v/Tempest-Jewelry.jpg',
   desc: `
-<p>Magitech chokers, bracelets, or anklets that enforce absolute obedience. Items are available in ruby, orange topaz, citrine, emerald, sapphire, amethyst, alexandrite, and clear and black diamond varieties. Bands may be leather, silk, or metal. This binding will be applied to purchased waifus before delivery. You receive one new choker each day, up to a limit in reserve of 5 plus the number of items currently worn by yourself or members of your retinue.</p>
-<p>Wearers’ libido is highly enhanced, as is submissiveness to both their masters and any more dominant members of the same retinue. Obedience is rewarded through pleasure. Several options are available for punishing disobedience, including inducement of emotional numbness or preventing a wearer from experiencing release for a set time. You are your own master and not subject to any unwanted side-effects of your own equipment.</p>
+<p>Magitech chokers, bracelets, or anklets reward obedience through pleasure. Items are available in ruby, orange topaz, citrine, emerald, sapphire, amethyst, alexandrite, and clear and black diamond varieties. Bands may be leather, silk, or metal. This binding will be applied to purchased waifus before delivery. You receive one new choker each day, up to a limit in reserve of 5 plus the number of items currently worn by yourself or members of your retinue.</p>
+<p>Wearers’ libido is highly enhanced, as is submissiveness to both their masters and any more dominant members of the same retinue. Several options are available for punishing disobedience, including inducement of emotional numbness or preventing a wearer from experiencing release for a set time. You are your own master and not subject to any unwanted side-effects of your own equipment.</p>
 <p>When a choker's (bracelets, anklets) latch is first closed around a wearer, the latch disappears and manual removal becomes impossible as the choker automatically activates. Active chokers are indestructible and may not otherwise be warped away. If a wearer dematerializes, swaps bodies, or otherwise transforms away from a standard humanoid height and build, the choker will disappear with, into, or otherwise follow the wearer for the duration.</p>
 <p>Removal of a wearer's own choker becomes unthinkable after one full week (168 hours), via a gradual process of rationalization, physical comfort, the automatic reward and punishment system, and, in extreme circumstances, short-term memory loss. Captures are finalized at this point if no other effort is spent. The process can be accelerated to as few as three days (72 hours), however, if the wearer loses all will to resist. Removing a choker from a subject before that point will stop their capture process, voiding all progress. Any punishment system you program for jewelry wearers will start working from the moment the latch is first closed, not just when the capture is finalized. If you (the contractor) wear a choker, you may deactivate and remove your choker at any time.</p>
 <p>You may deactivate any of your retinue's jewelry through the associated software, installed as an app on your smart device. The latch will reappear and may then be undone (and the item removed) normally. Your retinue may use other app features added by expansion perks, but cannot perceive the deactivation option. (They may still use it if directly ordered.) This app will uninstall itself if you trade in the Jewelry for a more advanced Binding. This is company software and benefits from all such protections.</p>
@@ -110,7 +98,7 @@ bindings.push({
   whitelist: ['Basic Tempest Runes'],
   freebies: { talentPerks: ['Body Talent'] },
   desc: `
-<p>Tempest Chokers (bracelets, anklets) may now apply direct physical transformations to their wearers. Take Body Talent for free. Every valid physical parameter for a member of the wearer's race (human, kitsune, vulcan, etc.) may be altered, from age, height, and gender to attention span, muscle density, and sexual characteristics. This also applies to you, if you wear a choker, and wearers who have not yet been fully captured. A wearer's race may also be changed, but only if you already have a natural example of the target race in your retinue. (“Natural example” does not include examples created through Extra or Template Stacking.) This perk cannot emulate the effects of party-wide Heritage perks such as Dragon Thrall. The disguises created by this perk’s prerequisite may now be customized.</p>
+<p>Tempest Chokers (bracelets, anklets) may now apply direct physical transformations to their wearers. Take Body Talent for free. Every valid physical parameter for a member of the wearer's race (human, kitsune, vulcan, etc.) may be altered, from age, height, and gender to muscle density and sexual characteristics. This also applies to you, if you wear a choker, and wearers who have not yet been fully captured. A wearer's race may also be changed, but only if you already have a natural example of the target race in your retinue. (“Natural example” does not include examples created through Extra or Template Stacking.) This perk cannot emulate the effects of party-wide Heritage perks such as Dragon Thrall. The disguises created by this perk’s prerequisite may now be customized.</p>
 <p>The jewelry app now includes configuration pages for every wearer of an active choker. Parameters may be adjusted here, mostly using sliders from 0% (typically the minimum value for a healthy human) to 100%. (Transformation speed and duration are also parameters.) A choker’s central gem will visibly glow while a transformation progresses, more brightly if the transformation is faster or more intense. 100% for hair length stretches to the upper calves; for breasts are the size of the woman’s head; for the belly is equivalent to a full-term pregnancy, and for hips/ass makes each buttock the size of a volleyball.</p>
 <p>You may save an unlimited number of presets for each wearer and switch between them at any time. If a wearer has a defined alternate form (not a generalized shapeshifter), all of their forms will automatically be saved as presets. Any number of disguises made by this perk’s prerequisite may now be saved as presets. "Exactly how the wearer appeared when the choker (bracelet, anklet) was first worn" is always available as a default preset. Any changes made to this preset will instead output an otherwise-identical copy as a new preset. Deactivating a choker will restore the wearer to their original appearance unless you desire otherwise.</p>
 <p>Any sufficiently-disabling transformation that is applied to you will have an automatic time limit of 48 hours so you don’t get stuck. If you return to that same transformation within 10 minutes, the time limit will be doubled each time until your streak ends. You may set a shorter limit if you like.</p>`,
@@ -208,7 +196,7 @@ bindings.push({
   image: 'https://i.ibb.co/RDFqzwh/Transformation-Circle-I.jpg',
   whitelist: ['Ritual Circle'],
   desc: `
-<p>An additional function has been unlocked for your circle designs. These functions are identical to the modification suite of Advanced Tempest Runes (Body), with the addition of being able to change the target’s clothing as well. These changes cannot be made on the fly with the company app, but may be cancelled at any time. After cancelling a transformation, it must be reapplied manually. Body Talent is not part of the modification suite and thus not included.</p>
+<p>An additional function has been unlocked for your circle designs. These functions are identical to the modification suite of Advanced Tempest Runes (Body), with the addition of being able to change the target’s clothing as well. These changes cannot be made on the fly with the company app, but may be canceled at any time. After canceling a transformation, it must be reapplied manually. Body Talent is not part of the modification suite and thus not included.</p>
 <p>Transformations are not instant. Their speed is dependent on the number of points invested in the Requirement parameter, set upon design of the circle. Instead of a Tier parameter, you can set the transformation’s duration. When that time runs out, the transformation will automatically revert over the course of the next minute. The different values for “Effect” [duration] are found with the rest of the Ritual Circle chart in the ritual parameters.</p>`,
 })
 
@@ -281,12 +269,12 @@ bindings.push({
 
 export const symbioteRules = `
 <h3 class="font-semibold text-xl py-4">Symbiote: Eggs</h3>
-<p>A set of black eggs appear scattered around your starting location or safe-house, one for each of your purchased waifus. Each one contains an alien symbiote guided by your mental commands, which will instinctively attack and merge with their targets in a sexual manner. In addition to their basic effects, the default binding tattoos will prevent purchased waifus from lethally harming your symbiote larvae. Waifus captured in other ways will usually accept the symbiote outright if they know you want them to. if you do not purchase any waifus in your starting build, you will start with no more than five larvae. The first target to fall victim to one of your symbiotes or be transformed by any other symbiote-related binding method will automatically become your queen.</p>
+<p>A set of black eggs appear scattered around your starting location or safehouse: one for each purchased individual in your starting build, or a minimum of five. Each one contains an alien symbiote guided by your mental commands, which will instinctively attack and merge with their targets in a sexual manner. In addition to their basic effects, the default binding tattoos will prevent purchased waifus from lethally harming your symbiote larvae. Waifus captured in other ways will usually accept the symbiote outright if they know you want them to. The first target to fall victim to one of your symbiotes or be transformed by any other symbiote-related binding method will automatically become your queen.</p>
 <p>Additional eggs, and thus larvae, come from your queen. First, you must fertilize your queen in the traditional human fashion. If you have Fertility Calibration, you may choose between egg production, live humanoid births - see the Offspring section under Additional Rules - and contraception. Results will be random otherwise. In an all-yuri swarm, a symbiote host’s tail may act as a phallus substitute for this purpose, provided it isn’t the queen’s own tail. Either way, the queen will produce one egg, about the size of an ostrich’s, every two days, for the next four weeks. Symbiote eggs will hatch after two weeks of incubation, depending on ambient temperature: warmer is faster, up to a limit.</p>
 <h3 class="font-semibold text-xl py-4">Symbiote: Larvae and Capturing</h3>
 <p>By default, symbiote larvae are obligate carnivores and may require up to five days to feed and grow large enough to take hosts. Your first larvae, however, will hatch fully-grown. Larvae are comparable in size and intelligence to a small dog or wild cat, such as a beagle or lynx. Larvae are not truly sapient, living only to merge with a future host. However, they are somewhat intelligent and capable of using tactics and trickery to more effectively attack more dangerous targets.</p>
 <p>Larvae are perfectly concealed until they initiate a capture. They cannot be fought off by any target of effective tier (after step 6) 5 or below. When a larva strikes, it will latch onto the target’s back, aligning its spine with hers before penetrating her with its tail and engulfing her head with its own. It pumps a transformative fluid into her from both ends, merging their bodies together into a more idealized, sexual form. The normally-phallic tip of a larva’s tail can invert itself for use against male targets.</p>
-<p>Against all targets, this initial transformation causes significant increases in muscle definition, particularly in the arms, abdominals, glutes, and legs. For female targets, it also causes severe non-muscular growth of the breasts, rear and thighs. Against male targets, it instead has a greater effect on muscles, including the pectorals, and adds to penis size and girth. Regardless of gender, the target sizes for any trait are roughly 100% on the scales defined in Advanced Tempest Runes (Body), with up to 20% error for any direction. If desired, symbiote masters may subject themselves to the same growth, according to their gender, as their swarm members. This must be manually triggered with the aid of a larva or swarm member. This growth may be re-triggered for any swarm member in the same way, at any time.</p>
+<p>Against all targets, this initial transformation causes significant increases in muscle definition, particularly in the arms, abdominals, glutes, and legs. For female targets, it also causes severe non-muscular growth of the breasts, rear and thighs. Against male targets, it instead has a greater effect on muscles, including the pectorals, and adds to penis size and girth. Regardless of gender, the target sizes for any trait are roughly 100% on the scales defined in Advanced Tempest Runes (Body), with up to 20% error in any direction. If desired, symbiote masters may subject themselves to the same growth, according to their gender, as their swarm members. This must be manually triggered with the aid of a larva or swarm member. This growth may be re-triggered for any swarm member in the same way, at any time.</p>
 <p>This initial growth is not optional, but may recede after the fact at a rate of 3 percentage points every 5 hours. The full extent of this recession, if any, depends on practical concerns and your personal preference.The initial transformation will also induce a surge of lust that will only fade when satisfied by you or another symbiote host whose lust surge has previously been satisfied. Capture credits are rewarded once this lust has faded.</p>
 <p>As an alternative, even without any spare larvae, you and your queen may also convert a target in person by transmitting the same transformative fluid from her mouth or tail. This trades speed and immediate effect for subtlety; you or your queen can let your tail out without the rest of the armor, make out or have sex with the conversion target, and then leave before the real transformation begins.</p>`
 
@@ -308,7 +296,7 @@ bindings.push({
 `,
   additionalDesc: `
 <h3 class="font-bold text-lg">Alternative Hive Arrangements</h3>
-If you Possessed or Substituted a waifu or are otherwise female, you may act as your own queen, with no need for a king - just consorts at most. A lone female in an otherwise all-male hive will always be the queen, while an all-male hive will have to externalize its egg production by some means. If your queen is part of a set that can only be purchased together, the actual queen is the most dominant one according to their natural personalities; if the members of the set are truly co-equal, then they'll serve as co-equal queens.
+If you Possessed or Substituted a waifu or are otherwise female, you may act as your own queen, with no need for a king - just consorts at most. A lone female in an otherwise all-male hive will always be the queen, while an all-male hive will have to externalize its egg production by some means. If your queen is part of a set that can only be purchased together, the actual queen is the most dominant one according to their natural personalities; if the members of the set are truly co-equal, then they’ll serve as co-equal queens.
 `,
 })
 
@@ -334,7 +322,7 @@ bindings.push({
     talentPerks: ['Psychic Talent', 'Talent Sharing (Psychic)'],
   },
   whitelist: ['Alterzelu Symbiote'],
-  desc: 'This adds a number of upgrades to the symbiote’s functionality. You and all waifus benefit from Psychic Talent, as if you had purchased Basic Talent Sharing (Psychic). (Take Psychic Talent for free. If you already have Basic Talent Sharing (Psychic), take a full refund for it.) The lowest tier of targets that can fight off a symbiote larva will increase by 1 for each effective tier after step 6) that the queen is above 7: Tier 6 targets can no longer fight off a Tier 8 queen’s larvae, while only Tier 10 and 11 targets can fight off larvae produced by a Tier 11 queen. On the target side, use their effective tier after step 6, but skip steps 4 and 5. Finally, symbiote larvae now emit a weak psychic field that reduces a target’s willingness to resist future attacks every time she fights one off. This reduction stacks indefinitely until she finally gives in.',
+  desc: 'This adds a number of upgrades to the symbiote’s functionality. You and all waifus benefit from Psychic Talent, as if you had purchased Basic Talent Sharing (Psychic). (Take Psychic Talent for free. If you already have Basic Talent Sharing (Psychic), take a full refund for it.) The lowest tier of targets that can fight off a symbiote larva will increase by 1 for each effective tier (after step 6) that the queen is above 7: Tier 6 targets can no longer fight off a Tier 8 queen’s larvae, while only Tier 10 and 11 targets can fight off larvae produced by a Tier 11 queen. On the target side, use their effective tier after step 6, but skip steps 4 and 5. Finally, symbiote larvae now emit a weak psychic field that reduces a target’s willingness to resist future attacks every time she fights one off. This reduction stacks indefinitely until she finally gives in.',
 })
 
 bindings.push({
@@ -346,7 +334,8 @@ bindings.push({
   whitelist: ['Second-Generation Symbiote'],
   desc: `
 <p>One of our lab’s attempts to hybridize our symbiotes with wild shoggoths has borne fruit. (All interns involved in the incident have been safely restored from backups.) This upgrade allows your symbiote hosts, including yourself, to melt into a semisolid amoeboid form for better infiltration, whether by flowing through vents, along a ceiling or wall, or hitching a ride on a person. Symbiote hosts obey conservation of mass in their slime forms and must remain contiguous. The form may be maintained indefinitely and they otherwise have full control over the form's shape, texture, and coloration. Symbiote hosts that have innate supernatural abilities of biological or genetic origin (ex. X-gene, Quirks, hereditary magic potential, alien racial abilities, etc.) retain them in their slime form. If they have enough room, they may revert to their original or symbiote forms at will, and may also assume a solid "armor" form around another similarly-sized being.</p>
-<p>By doing so, a symbiote host who comes into contact with a capture target can bind them on their own, without aid from a larva. The slime form flows under the target's clothes and equipment, fully encasing them and keeping them compliant with sexual stimulation while injecting symbiote transformative fluid into blood vessels close to the skin and pumping into the digestive or (for female targets) reproductive systems. In this state, the slime form can also mentally converse with the target and speak with their voice, use their slime body as natural weapons, etc., until the target is converted (captured and symbiote-bound). This conversion method obeys the same timeframe and interruption rules as a full-cocoon Shroud binding and may be hastened with all-the-way-through penetration. This will allow symbiote transformative fluid to be absorbed by every part of the target’s digestive system at once. After conversion, the two may separate to reveal the new capture's symbiote form with the same body growth as the other types of symbiote capture. Additional sex is not needed to confirm a capture that used this method. Finally, a slime-form may overload their wearer's mind by spiking their libido and sensitivity. This also overloads their own mind, cannot be undone manually, and will only reverse itself when the duo are fully satisfied.</p>
+<p>By doing so, a symbiote host who comes into contact with a capture target can bind them on their own, without aid from a larva. The slime form flows under the target's clothes and equipment, fully encasing them and keeping them compliant with sexual stimulation while injecting symbiote transformative fluid into blood vessels close to the skin and pumping into the digestive or (for female targets) reproductive systems. In this state, the slime form can also mentally converse with the target and speak with their voice, use their slime body as natural weapons, etc., until the target is converted (captured and symbiote-bound). This conversion method obeys the same timeframe and interruption rules as a full-cocoon Shroud binding and may be hastened with all-the-way-through penetration. This will allow symbiote transformative fluid to be absorbed by every part of the target’s digestive system at once. After conversion, the two may separate to reveal the new capture's symbiote form with the same body growth as the other types of symbiote capture. Additional sex is not needed to confirm a capture that used this method.</p>
+<p>A slime-form may also overload their wearer's mind by spiking their libido and sensitivity. This overloads their own mind as well, cannot be undone manually, and will only reverse itself when the duo are fully satisfied.</p>
 <p>If more than one member of your symbiote swarm has entered their slime form, they can combine into a larger slime with one body, two minds, and one will. swarm members may freely enter and exit such fusions without any negative side-effects. If any members of such a fusion have innate biological or genetic abilities, this will catalyze the appearance of those in the others. The specific expressions of these gifts will not always be consistent between subjects. For example, a Quirk user in such a fusion would cause others in it to gain Quirks of their own, and not necessarily similar ones. This feature cannot copy Heritage powers.</p>`,
 })
 
@@ -358,13 +347,19 @@ bindings.push({
   desc: `
 <p>You gain a semi-sapient cape of solidified magic that acts as an extension of your will. It shifts and transforms at a thought, even unconscious ones. By draping it over or wrapping up a waifu with it, you are able to infuse your target with your will and bind them to it.</p>
 <p>This cape is subject to the same protections as the company smart device. It can shift its form and texture into a wide variety of shapes and imitate any other outfit, ropes, tendrils, hands, blades, and similar forms. The constructs of the Shroud may have the textures and forms of textiles like leathers, latex, or other forms of clothing. The shroud is extremely durable and capable of significant amounts of strength and speed, and you gain a form of tactile feedback from it.</p>
-<p>To capture a target, you or your Shroud must maintain contact with them or one of their projections until you’ve infused enough of your will, whether through the target wearing an outfit your Shroud has been transformed into, being cocooned by your Shroud’s constructs, or similar. As a general rule, the more of your Shroud is focused on, inside of, or otherwise in contact with your target, the less time it takes. The greater the power, will, or resistance your target has, the longer it will take. With the entirety of your Shroud around a target, even if they put their all into the struggle, it will usually take less than a minute for a blue-star subject, under ten minutes for a copper-star subject, an hour for a silver-star subject, three hours for a gold-star subject, and 12 hours for a T11 subject. Lesser amounts of your Shroud in contact with a target, or only intermittent contact, will extend the time required, up to years. If a target has an already-existing mental or spiritual connection to other bodies or people, the shroud can follow that connection to bind everyone on it at once. Examples of this include the Misaka Network, divine avatars or those who’ve taken mortal hosts, and multi-summon Servants like Gemini, Valkyrie, or Anne and Mary. Mere followers or even clerics of a god do not count.</p>
-<p>With only the basic Shroud, however, the bind can fail to take in subjects that are T5 or higher. This happens when the subject’s effective tier after step 6 is more than one higher than your own, skipping steps 4 and 5 for the target but not you. In this event, which will occur regardless of the subject’s consent and even if the subject was a purchase, the bind will appear to succeed, only to break after a short time. Consenting subjects whose bindings fail will be marked with a stamp tattoo like any unbound capture so you can try again later, while non-consenting subjects will break free completely, denying you their capture credits until a successful attempt is made. If a subject who is already shroud-bound becomes strong enough to rise past this limit while in your service, their binding will not break. This does not include the upgrades from capturing a character “early.”</p>
-<p>Other factors can reduce the required time. Examples include the number of orifices your Shroud has penetrated, any of your essence/fluids you have inside her, or if she’s unconscious, been recently defeated by you or your retinue, having sex with your or your retinue, or consenting to the bind. As a general rule, each additional factor reduces the time required to complete the infusion by half. A willing and aware (but not necessarily informed or ‘unassisted’ consent) target can make the process functionally instantaneous regardless of their personal power.</p>
 <p>Once completely infused, the waifu becomes one of your Shroud-bound. A newly Shroud-bound waifu’s clothes and makeup are absorbed into a cloak of her own, subordinate to your Shroud, and replaced with a new thematic style in line with your tastes and the personal mark of your stamp. Existing enchanted gear or otherwise super outfits, such as Life Fibers, power armor, or magical girl uniforms, will be integrated into this cloak, as will any upgrades added after the fact. This does not apply to gear that is held rather than worn.</p>
-<p>A Shroud-bound waifu will always consider her cloak her most comfortable outfit, but she may still dismiss it and wear normal outfits at any time. Both of you will be able to manipulate this outfit much like you can your Shroud, though your will supersedes hers in such manners. These powers are innate abilities, granted by the Shroud, and do not require any magical talent. Altogether, this is enough to push any blue-star retinue member up to Tier 4 or any copper-star up one tier, but is not a significant gain for higher tiers. Your own rating immediately increases to Tier 4, if it wasn’t already, and can increase further with training.</p>
+<p>A Shroud-bound waifu will always consider her cloak her most comfortable outfit, but she may still dismiss it and wear normal outfits at any time. Both of you will be able to manipulate this outfit much like you can your Shroud, though your will supersedes hers in such manners. These powers are innate abilities, granted by the Shroud, and do not require any magical talent. Altogether, this is enough to push any blue-star subject up to Tier 4 or any copper-star up one tier, but is not a significant gain for higher tiers. Your own rating immediately increases to Tier 4, if it wasn’t already, and can increase further as you train with the Shroud and discover new uses.</p>
+<p>A new Shroud capture gains an unconscious awareness of your activity and needs. They may even respond to orders you haven’t consciously given yet. They will greatly struggle to go against your direct orders, and even the strongest willed waifus will be unable to go against your intent once bound. Additionally, the infusion will shift Shroud-bound waifus’ figures to your tastes.</p>
+<h4 class="font-semibold text-md">Shroud: Capturing</h4>
+<p>To capture a target, you or your Shroud must maintain contact with them or one of their projections until you’ve infused enough of your will, whether through the target wearing an outfit your Shroud has been transformed into, being cocooned by your Shroud’s constructs, or similar. As a general rule, the more of your Shroud is focused on, inside of, or otherwise in contact with your target, the less time it takes. The greater the power, will, or resistance your target has, the longer it will take.</p>
+<p>With the entirety of your Shroud around a target, even if they put their all into the struggle, it will usually take less than a minute for a blue-star subject, under ten minutes for a copper-star subject, an hour for a silver-star subject, three hours for a gold-star subject, and 12 hours for a T11 subject. Lesser amounts of your Shroud in contact with a target, or only intermittent contact, will extend the time required, up to years.</p>
+<p>Other factors can reduce the required time. Examples include the number of orifices your Shroud has penetrated, any of your essence/fluids you have inside her, or if she’s unconscious, been recently defeated by you or your retinue, having sex with your or your retinue, or consenting to the bind. As a general rule, each additional factor reduces the time required to complete the infusion by half. A willing and aware (but not necessarily informed or ‘unassisted’ consent) target can make the process functionally instantaneous regardless of their personal power.</p>
 <p>Until she is bound, your accumulated will within her will slowly dissipate whenever she loses contact with your Shroud. It takes approximately a month for the process to completely reset for a waifu who’s just short of being fully captured. Shroud-bound do not count as your Shroud for the purposes of binding new targets. Direct contact with one will, however, delay the fading of any will you've already built up within her.</p>
-<p>Once Shroud-bound, a new capture gains an unconscious awareness of your activity and needs. They may even respond to orders you haven’t consciously given yet. They will greatly struggle to go against your direct orders, and even the strongest willed waifus will be unable to go against your intent once bound. Additionally, the infusion will shift Shroud-bound waifus’ figures to your tastes.</p>`,
+<p>If a target has an already-existing mental or spiritual connection to other bodies or people, the shroud can follow that connection to bind everyone on it at once. Examples of this include the Misaka Network, divine avatars or those who’ve taken mortal hosts, and multi-summon Servants like Gemini, Valkyrie, or Anne and Mary. Mere followers or even clerics of a god do not count.</p>
+<h4 class="font-semibold text-md">Shroud: Failure?</h4>
+<p>With only the basic Shroud, however, the bind can fail to take in subjects that are T5 or higher. This happens when the subject’s effective tier after step 6 is more than one higher than your own, skipping steps 4 and 5 for the target but not you. In this event, which will occur regardless of the subject’s consent and even if the subject was a purchase, the bind will appear to succeed, only to break after a short time. Consenting subjects whose bindings fail will still be captured and marked with a stamp tattoo so you can make a later attempt with the Shroud, while non-consenting subjects will break free completely, denying you their capture credits until a successful attempt is made.</p>
+<p>If a subject who is already shroud-bound becomes strong enough to rise past this limit while in your service, their binding will not break. This includes the upgrades from capturing a character “early” and the expiration of any step 6 tier-reducing debuffs.</p>
+`,
 })
 
 bindings.push({
@@ -463,7 +458,7 @@ export const shroudElements = [
   {
     'title': 'Primal (Fauna)',
     'Elemental Ability': 'Animal biomass generation and control. Constructs tend to be actual living creatures or masses of tendrils and tentacles. Intense effects tend to be flesh, muscles, spines, and biomass alteration. The line between intense and subtle effects is particularly blurry for the Primal and Jungle Shrouds and is primarily found in the fidelity of control. Both elements gain the ability to control fungi and, thus, spores and mycelium once Elemental Loom is purchased.',
-    'Body Effects': 'Individual gets a kemonomimi mode based on a natural animal, from your or individual’s homeworld and appropriate to individual’s personality. Kemonomimi mode shifts to bestial warform as the volume of active constructs increases.',
+    'Body Effects': 'Individual gets a kemonomimi mode based on a natural animal, from your or the individual’s homeworld and appropriate to the individual’s personality. Kemonomimi mode shifts to a bestial warform as the volume of active constructs increases.',
     'Streamlined costume features': 'Slight amounts of tendrils or bone, form-fitting bodysuits with support',
     'Heavy costume features': 'Interweaved exoskeletons, heavy leather with fur trim',
     'Freebies': 'Everlasting Talent, Wild Talent, Body Defense, Wild Defense (2x), Creature Defense (2x)',
@@ -500,8 +495,8 @@ export const shroudElements = [
     'title': 'Cyber (Technology)',
     'Elemental Ability': 'Nanite/Technology/Digital generation and control. Constructs are built from liquid nanite metal, which often has digital circuitry designs along it unless compressed into a known technological form such as a gun or tablet. Blatant uses generally involve the creation and manipulation of technology via the nanites that make up the base of the Shroud, or interfacing with technology being indicated by glowing circuit-designs appearing on the item, while subtle uses involve manipulating the digital space or accessing technology at a distance.',
     'Body Effects': 'Seam-like skin indentations over the entire body from neck down. Symbol-shaped pupils; bilateral symmetry recommended but not required. Pupils can instead be the same design as your tattoo’s central emblem.',
-    'Streamlined costume features': 'The most common form is a skintight leotard, elbow-length gloves, and knee-high stiletto heels for the feminine, and a full neck-down bodysuit with flat soles for the masculine. Something for the heads-up display to be projected upon and earpiece is mandatory. Neon patterns resembling circuitry are standard across all body pieces.',
-    'Heavy costume features': 'Both designs have neck-down bodysuit beneath shoulder pads, wrist-to-elbow gauntlets, torso and hip armor, and knee-high boots. Feminine design’s boots perfectly hide tall wedge heels. Masculine design armors thighs as well. Heads-up display projected onto bulky head-mounted display, completely hiding eyes. Headpiece completely attached to headset, with aesthetic antenna spikes pointed up and behind ears (at least two spikes on each side). Neon patterns resembling circuitry are standard across all body pieces.',
+    'Streamlined costume features': 'The most common form is a skintight leotard, elbow-length gloves, and knee-high stiletto heels for the feminine, and a full neck-down bodysuit with flat soles for the masculine. An earpiece and something for the heads-up display to be projected upon are mandatory. Neon patterns resembling circuitry are standard across all body pieces.',
+    'Heavy costume features': 'Heavy costume features: Both designs have a neck-down bodysuit beneath shoulder pads, wrist-to-elbow gauntlets, torso and hip armor, and knee-high boots. Feminine design’s boots perfectly hide tall wedge heels. Masculine design armors thighs as well. Heads-up display projected onto bulky head-mounted display, completely hiding eyes. Headpiece completely attached to headset, with aesthetic antenna spikes pointed up and behind ears (at least two spikes on each side). Neon patterns resembling circuitry are standard across all body pieces.',
     'Freebies': 'Science Talent, Engineering Talent',
     'freebies': {
       talentPerks: ['Science Talent', 'Engineering Talent'],
@@ -545,7 +540,7 @@ bindings.push({
 <p>Your Shroud’s manifestation is always intense and obvious, such as a black void for Fearful Shrouds, burning flames or magma for a Volcanic Shroud, or a seemingly star-filled cosmos for the Void Shroud. As an extension of your will, it will only harm that which you wish it to harm. You may take control of a natural manifestation of your element by mixing in some of your Shroud into it. Manifestations of the element with a will of their own must be infused with your will the same way a waifu must. However, a willing manifestation may allow you to manipulate them, such as using a Cyber Shroud to repair a willing gynoid. Willful manifestations must either be bound like any other capture or released when you have no further need of their substance.</p>
 <p>These elemental shapes and tendrils must be contiguous with you or each other. Portions of Shroud that lose contact begin to dissipate, generally within ten to thirty seconds. Your waifus, their Cloaks, and waifus in multiple bodies all count as “you” for the purposes of Shroud sustenance. As an example, you can create a ring with the Xeric Shroud that would quickly crumble into nothingness if it left your body, but it would not if one of your waifus wore it.</p>
 <p>Your Shroud can only be damaged by things which could feasibly harm the element itself, such as water affecting the Volcanic Shroud while physical strikes cannot, or gravitational effects damaging the Void Shroud. Even non-physical elements such as light and shadow are capable of becoming tangible, such as by becoming the physical cloak once more, though by doing so they can be damaged by physical forces.</p>
-<p>Finally, you get the Body and Soul Talents for free. Each specific element, additionally, provides additional free Talents and/or single copies of free Defenses. These can ignore prerequisites.</p>`,
+<p>Finally, you get the Body and Soul Talents for free. Each specific element, additionally, provides additional free Talents and/or Defenses, as specified. These can ignore prerequisites.</p>`,
 })
 
 bindings.push({
@@ -586,7 +581,7 @@ bindings.push({
     talentPerks: ['Psychic Talent'],
   },
   desc: `
-<p>You and your waifus with elemental shrouds are now able to access each other’s elements through the sympathetic bond your Shroud represents. On a basic level, drawing on another’s Element allows you to generate and manipulate things within their purview as if the element was your own, complete with aesthetic palette swaps and altered material profiles as appropriate.</p>
+<p>You and your companions with elemental shrouds are now able to access each other’s elements through the sympathetic bond your Shroud represents. On a basic level, drawing on another’s Element allows you to generate and manipulate things within their purview as if the element was your own, complete with aesthetic palette swaps and altered material profiles as appropriate.</p>
 <p>Affinities granted by someone else’s element, however, are capped by the intimacy - or at least, the intensity - of one’s relationship with them, which can complicate attempts to squeeze waifus for power. Conversely, maximizing social links through careful harem management (or blunt mind control) will allow even diametrically opposed and incompatible themes to be reconciled and harmonized with each other as one through the strength of shared affinities. These bonds also support your ability to bind more powerful subjects, raising the cap on the effective tier of subjects you can successfully bind by one.</p>
 <p>Take Psychic Talent for free. Shroud-bound retinue members will benefit from the effects of it and all other Basic Talents you have that do not otherwise apply to your retinue, whether you have Talent Sharing or not. (Take a full refund on all previous purchases of Talent Sharing. Those purchases will continue to apply to non-shroud retinue members.)</p>
 <p>Skill at manipulating constructs and phenomena is tracked separately and individually for each theme. Juggling and utilizing multiple themes at once is also a skill to be mastered.</p>`,
@@ -613,7 +608,7 @@ bindings.push({
   whitelist: ['Elemental Loom'],
   desc: `
 <p>Your Shroud is no longer merely an extension of your will, but part of your being. You are able to transform portions of yourself into your element(s) and heal or recharge yourself by absorbing manifestations of said element that you didn't create. If you had not already been capable of flight with your Shroud, you are now capable of such.</p>
-<p>Once again, controlling an elemental manifestation that has a will of its own involves usurping said will with your own like any other sapient target. Individuals absorbed in such a manner, such as a gynoid via the Cyber Shroud, or a normal human via the Primal Shroud, may be bound like anyone else, recreated and released from your service, or their form stolen. This process is instant if performed on a shroud-bound retinue member. This process is based on the Possess Origin. New skills, traits, and abilities gained via this method are added to your true form as if you had Possessed the character. You also gain the target’s episodic memory, as if you had Substituted into them.</p>
+<p>Once again, controlling an elemental manifestation that has a will of its own involves usurping said will with your own like any other sapient target. This process is based on the Possess Origin. Individuals absorbed in such a manner, such as a gynoid via the Cyber Shroud, or a normal human via the Primal Shroud, may be bound like anyone else, recreated and released from your service, or their form stolen. This process is instant if performed on a shroud-bound retinue member. New skills, traits, and abilities gained via this method are added to your true form as if you had Possessed the character. You also gain the target’s episodic memory, as if you had Substituted into them.</p>
 <p>Manifestations whose forms were stolen count as captured, but you do not get a credit reward for doing so. You may still sell a stolen form to the company afterward like any other target for 20% of the list price for the target’s effective tier after step 4, rounded up to the nearest whole number. This will remove the form from your library.</p>`,
 })
 
@@ -643,7 +638,7 @@ lures.push({
   image: 'https://i.ibb.co/Qd20Thb/Dont-Stand-So-Close-To-Me.jpg',
   cost: 15,
   desc: `
-<p>Hot for Teacher. Targets that either teach you or are taught by you, no matter the subject, will start to fall for you. They’ll find themselves thinking about the subject matter, about your instruction, about the next lesson, and you yourself will worm your way to the forefront of their thoughts, even as worrying about their next lesson, getting good grades, or encouraging learning twists itself into a more romantic or sexual nature.</p>
+<p>Targets that either teach you or are taught by you, no matter the subject, will start to fall for you. They’ll find themselves thinking about the subject matter, about your instruction, about the next lesson, and you yourself will worm your way to the forefront of their thoughts, even as worrying about their next lesson, getting good grades, or encouraging learning twists itself into a more romantic or sexual nature.</p>
 <p>The longer, more personal, and more intense the instruction, the greater the effect. Students already interested in the subject matter are particularly susceptible. This perk is optimized for 1 on 1 instruction.</p>`,
 })
 
@@ -776,6 +771,8 @@ otherControls.push({
 })
 
 otherControls.push({
+  dlc: 'Old Version',
+  dlclink: 'https://docs.google.com/document/d/1c4QaqLKxENFdzcBVe1-nvWJpZMK-UL0yQH_HCNd3Tes/edit?usp=sharing',
   title: 'Hotel California',
   image: 'https://i.ibb.co/s6GFYTF/Hotel-California.jpg',
   cost: 20,
@@ -850,14 +847,137 @@ otherControls.push({
     ['11', 'No limit'],
   ],
   desc: `
-<p>The legendary Truck-kun is your vehicle. When you or one of your retinue members drives a land vehicle that’s been registered with us as yours, anyone you run over with it will be captured, as if by the Stamp, and sent to a random world that you do not already have access to. Your target must actually die from the impact, but not necessarily immediately. The capture will fail if the target evades your vehicle or survives the impact. The maximum number of active isekai victims you can manage simultaneously scales with the number and tier of deities in your retinue after step 5, as shown in the chart. Your total cap is the sum of the individual caps of each deity in your retinue.</p>
+<p>The legendary Truck-kun is your vehicle. When you or one of your retinue members drives a land vehicle that’s been registered with us as yours, anyone you run over with it will be captured, as if by the Stamp, and sent to a random world that you do not already have access to. Your target must actually die from the impact, but not necessarily immediately. The capture will fail if the target evades your vehicle or survives the impact.</p>
+
+<p>The maximum number of active isekai victims you can manage simultaneously scales with the number and tier of deities in your retinue after step 5, as shown in the chart. Your total cap is the sum of the individual caps of each deity in your retinue.</p>
+
 <p>Worlds your isekai targets are sent to will not become accessible to the rest of your retinue through Exit Stage Left or other company perks until the target completes a local storyline (charges Exit Stage Left to completion). This will count as you charging Exit Stage Left yourself. If the target dies before they can do so and you have Warranty Plan, they will respawn in your demiplane (if you have one) or otherwise near you, where they can be bound through your other means. If you have We Will Meet Again or Rainbow Bridge, they can then return to the world they were sent to, with any reinforcements or other support you choose to give them. Neither successful nor failed isekais are “active” and will not continue to count against your cap above.</p>`,
 })
 
 otherControls.push({
-  title: 'Space Truckin’: Highway Star',
+  title: 'Highway Star',
   image: 'https://i.ibb.co/g6w1kMD/Space-Truckin-Highway-Star.jpg',
   cost: 100,
   whitelist: ['Space Truckin’'],
   desc: 'Active isekai victims from Space Truckin’ will now act as proxies for your own captures. Until the victim completes a local storyline or dies in the process, sincere love confessions delivered to them will bind the confessor to you just as one that you received directly. Your isekai victim will also experience the full benefits of your Lures and Lure Expansions for this duration, as if they were you.',
+})
+
+otherControls.push({
+  title: 'Strange Kind of Woman',
+  image: '',
+  cost: 10,
+  whitelist: ['Space Truckin’', 'Paper Trail (x10)'],
+  desc: `You may extend the benefits of Paper Trail to your victims, granting them any needed basic documentation and a place in their new world. You may pay additional credits to have them integrated more thoroughly into their destination world, making them a part of it in the process and adjusting the local ‘history’ as per the Extra origin. This fee will change according to that origin’s normal rules.
+  <p>If you have Transformation Circle I, Advanced Tempest Runes (Body), or Advanced Tempest Runes (Hybrid), you will be granted a grace period, prior to your victim’s arrival, to further customize their new body within the limits of those perks. Exotic changes beyond the possible, or normally feasible, within the destination world require Meta Shift I and can cause unpredictable changes in the victim’s new background.</p>
+  `,
+})
+
+otherControls.push({
+  title: 'Anyone\'s Daughter',
+  image: '',
+  cost: 10,
+  whitelist: ['Strange Kind of Woman', 'Universal Calibration'],
+  desc: `You gain a grace period during which you may specify your victim's history, and connections, within the world specifically rather than allowing their Paper Trail to write itself. This does not grant any abilities which are not paid for via other perks such as Strange Kind of Woman or Demons Eye.
+  <p>However, by paying the appropriate number of credits, you may 'write' the victim into the place of a canonical character as per the Substitute origin rather than leaving them as an Extra. If you do so, you may selectively decide how much influence the character's memories and personality have on the victim as they are merged.</p>
+  `,
+  additionalDesc: `
+  <h4 class="font-semibold text-center">Grace Periods</h4>
+  By default, each ‘grace period’ granted to decide an isekai victim’s fate is one hour long. The cumulative durations are stacked together. Within this time period, anyone who has access to your Company device can make the listed decisions, as can the retinue member responsible for the victim.
+`,
+})
+
+otherControls.push({
+  title: 'All The Time In The World',
+  image: '',
+  cost: 10,
+  whitelist: ['Space Truckin’', 'Meta Shift'],
+  desc: `During a grace period after the death of your victim, a new company app will appear on your smart device, displaying their destination world. Using this app during that time allows you to adjust the ages, sexes, and beauty levels of canon characters per Universal Calibration, as well as alter the age of your victim. If you, or a member of your retinue, possess the capacity for time travel, the app will also allow you to adjust the victim's arrival point, so long as it abides by the normal limits of Universal Calibration.
+  `,
+})
+
+otherControls.push({
+  title: 'Demon\'s Eye',
+  image: '',
+  cost: 30,
+  whitelist: ['Highway Star'],
+  desc: `The retinue member responsible for a victim of Space Truckin' may opt to interact with them during a grace period prior to the victim being sent to their destination world. The victim will be highly accepting of any explanations given to them during this period and unable to harm the retinue member meeting them.
+  <p>During the grace period, you may purchase perks (including Talent Sharing, Template Stacking, and/or OC Donut Steel) to apply to the victim, as though they were being purchased from the Catalog. The benefits of these perks will apply only after the victim arrives in their destination world. In the case that the isekai is unsuccessful, all such perks are automatically returned to the Company for a full refund.</p>
+  `,
+})
+
+otherControls.push({
+  title: 'Mistreated',
+  image: '',
+  cost: 40,
+  whitelist: ['Space Truckin’'],
+  desc: `You may invoke Space Truckin' to isekai on any or all fatalities of a vehicular accident (be it a train derailment or a plane crash) which you or a retinue member has deliberately caused for this purpose.
+  <p>All victims of a single incident must be sent to the same destination world. However, separate grace periods are granted by perks which provide such for individuals.</p>
+  `,
+})
+
+otherControls.push({
+  title: 'Time For Bedlam',
+  image: '',
+  cost: 20,
+  whitelist: ['Space Truckin’', 'Pursued by a Bear'],
+  desc: `When using Space Truckin', you are provided with a 'grace period' after the death of the victim and a list of worlds to choose from. One option will be the random selection provided by Space Truckin', while the others will be those worlds normally offered via Exit Stage Left (as enhanced by other perks that you possess).
+  <p>Choosing to send someone to any destination rather than the random selection removes it from your own list of potentially available worlds until the isekai finishes, whether success or failure.</p>
+  `,
+})
+
+otherControls.push({
+  title: 'Pictures of Home',
+  image: '',
+  cost: 10,
+  whitelist: ['Space Truckin’'],
+  desc: `Your isekai victims will be monitored, with a continually archived live stream of their activities made available on your company smart device. This archive will also be available through the media systems of the Pocket Apartment, for those who possess that perk.
+  <p>Contractors who possess a Grand Manor will find that the systems of their residence will automatically create a curated and edited synopsis of events which are notable and/or relevant to your interests.</p>
+  `,
+})
+
+otherControls.push({
+  title: 'I Got Your Number',
+  image: '',
+  cost: 10,
+  whitelist: ['Pictures of Home', 'Communication Talent'],
+  desc: `The company will provide a setting appropriate way for the divine subject and the isekai victim they are responsible for to communicate with each other. This defaults to prayer, followed by a mental response from the retinue member, but other methods such as e-mail have manifested. The retinue member may block such communications when desired, but the victim gains no such ability. If you have Demon’s Eye and the victim and the retinue member responsible for them interacted prior to their arrival, then they will have a large degree of trust for the retinue member initially.
+  `,
+})
+
+otherControls.push({
+  title: 'Child in Time',
+  image: '',
+  cost: 15,
+  whitelist: ['Space Truckin’', 'Arlo'],
+  desc: `Potential victims of Space Truckin', whom you focus on while driving, will find their protective and heroic instincts working against their chances of survival. So long as a child is nearby who would qualify as 'bait' (as per Arlo), targets will place themselves in danger, or even step into the path of your vehicle, while attempting to keep said child safe or 'rescue' them.
+  <p>This psuedo-suicidal urge is strengthened by the same conditions as Arlo and by the perceived danger to the child by your vehicle. Those immune to the base Lure are also immune to these feelings.</p>
+  `,
+})
+
+otherControls.push({
+  title: 'Not Responsible',
+  image: '',
+  cost: 20,
+  whitelist: ['Space Truckin’', 'Destiny Defense'],
+  desc: `Your victim, as a member of your retinue, will normally and selectively be protected by your Company provided Defenses, according to your desires. However you may, during a grace period before their arrival in the destination world, may choose to invert your Destiny Defense so as to enforce predestination in regards to any given canonical event or events.
+  <p>This perk typically manifests through chance, luck, and happenstance conspiring towards the desired end. However with a second purchase of Destiny Defense, the victim is forced to act, or not act, in ways to ensure the events occur.</p>
+  `,
+})
+
+otherControls.push({
+  title: 'Perfect Strangers',
+  image: '',
+  cost: 5,
+  whitelist: ['Space Truckin’', 'Information Defense'],
+  desc: 'Unless explicitly told, your victims cannot make the connection between you (or your retinue) and their deaths.',
+})
+
+otherControls.push({
+  title: 'Hush',
+  image: '',
+  cost: 30,
+  whitelist: ['Pictures of Home', 'Meta Shift'],
+  desc: `The extra-dimensional nature of your isekai victims ensures that their more creative musings inherit that property. Any idle speculation, or even internal narration, recorded by Pictures of Home is now considered to be valid doujin material for Meta Shift on the isekai victim’s new world.
+  <p>The ability to apply such materials to an isekai victim’s world is, by default, delegated to the victim’s supervisor, although the contractor always retains a veto. Any changes still cannot directly solve any problems without introducing at least an equal number and degree of new ones. Due to an observer effect, any change made after the isekai victim’s arrival also must not directly contradict the victim’s personal memories.</p>
+  `,
 })

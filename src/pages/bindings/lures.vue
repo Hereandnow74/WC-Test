@@ -1,13 +1,5 @@
 <template>
   <div class="sm:p-2">
-    <h3 id="lures" class="text-2xl text-center">
-      Lures <router-link
-        :to="{path:'/binding', hash:'#expansions'}"
-        class="text-base text-blue-600 dark:text-blue-400 hover:underline"
-      >
-        (go to Expansions)
-      </router-link>
-    </h3>
     <Desc :desc="lureDesc" class="bg-gray-200 dark:bg-gray-600 max-w-screen-md my-4 mx-auto" />
     <div
       class="column-gap"

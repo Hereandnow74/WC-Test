@@ -16,8 +16,8 @@
     </div>
     <h3 class="text-xl text-center bg-black bg-opacity-10 flex items-center px-2">
       <span class="font-semibold">{{ world.worldName }}</span>
-      <bx:bxs-edit class="ml-auto hover:text-yellow-600" @click="$emit('editWorld', world)" />
-      <fluent:delete-20-filled v-if="isUserWorld" class="hover:text-red-500 ml-2" @click="deleteWorld" />
+      <bx:bxs-edit class="ml-auto hover:text-yellow-600" @click.stop="$emit('editWorld', world)" />
+      <fluent:delete-20-filled v-if="isUserWorld" class="hover:text-red-500 ml-2" @click.stop="deleteWorld" />
     </h3>
     <div class="flex gap-4 justify-between text-gray-200 px-2">
       <div>

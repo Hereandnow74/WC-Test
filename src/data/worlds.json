@@ -1,5 +1,274 @@
 [
   {
+    "rating": 1,
+    "worldName": "To Love-Ru",
+    "condition": [
+      {
+        "name": "Earth",
+        "rating": 1
+      },
+      {
+        "name": "Space",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "rating": 1,
+    "worldName": "Pokemon",
+    "additional": "Purchased (not captured) trainers will have up to six of their most iconic and strongest mons from their canon appearances, bound to them as their trainer is to you. These and other mons that Pokémon trainers in your retinue (including yourself) acquire by any means are spirit familiars that cannot be killed, only knocked out. Pokémon familiars lose this protection if they’re released or traded away. Pokémon will always be familiars, not waifus or husbandos, unless you enter a deviant AU where they’re anthropomorphic enough to make poképhilia relatively mainstream.",
+    "condition": [
+      {
+        "name": "Standard",
+        "rating": 1
+      },
+      {
+        "name": "Anime (canon storyline)",
+        "rating": 3
+      },
+      {
+        "name": "Adventures/Special (manga)",
+        "rating": 6
+      }
+    ]
+  },
+  {
+    "rating": 1,
+    "worldName": "(Slice of Life anime/manga)"
+  },
+  {
+    "rating": 1,
+    "worldName": "Iain Banks' Culture",
+    "condition": [
+      {
+        "name": "Within The Culture",
+        "rating": 1
+      },
+      {
+        "name": "Outside The Culture",
+        "rating": 9
+      }
+    ]
+  },
+  {
+    "rating": 2,
+    "worldName": "Star Trek",
+    "condition": [
+      {
+        "name": "Federation during peacetime",
+        "rating": 2
+      },
+      {
+        "name": "Online",
+        "rating": 7
+      }
+    ]
+  },
+  {
+    "rating": 2,
+    "worldName": "Real Life/History",
+    "condition": [
+      {
+        "name": "Modern developed countries",
+        "rating": 2
+      },
+      {
+        "name": "19th century and earlier (no crisis)",
+        "rating": 3
+      },
+      {
+        "name": "19th century and earlier (crisis)",
+        "rating": 4
+      },
+      {
+        "name": "World Wars (Occupied Europe/Asia)",
+        "rating": 4
+      }
+    ]
+  },
+  {
+    "rating": 2,
+    "worldName": "Monster Musume"
+  },
+  {
+    "rating": 2,
+    "worldName": "Monster Girl Encyclopedia",
+    "condition": [
+      {
+        "name": "Canon ver., Mamono territory",
+        "rating": 2
+      },
+      {
+        "name": "Canon ver., Order territory",
+        "rating": 4
+      },
+      {
+        "name": "Dark and Serious ver.",
+        "rating": 6
+      }
+    ]
+  },
+  {
+    "rating": 2,
+    "worldName": "Lyrical Nanoha",
+    "additional": "Familiars: Tsukimura Suzuka is a vampire, as implied by Triangle Hearts. Fate Testarossa has Arf as a humanoid familiar. Precia Testarossa has Linith as a humanoid familiar. Signum has Agito as a humanoid familiar. Hayate has Reinforce Zwei as a humanoid familiar. Caro has Fried as a familiar. Lutecia has Garyu as a humanoid familiar and Hakutenou and her other summoned creatures as familiars. Humanoid Familiar discounts: If you already have Arf when you buy Fate, Linith when you buy Precia, Agito when you buy Signum, Garyu when you buy Lutecia, or Reinforce Zwei when you buy Hayate, you’ll be refunded the appropriate familiars’ full costs. If you’ve paid at least 200 for Reinforce Zwei and any Wolkenritter (Shamal, Signum, Vita, Zafira), you get the rest for free and their cost is refunded down to 200. If you have the full set of Wolkenritter, Hayate’s price is discounted to 50. The Numbers: The Catalog entry “The Numbers” may be bought twice. If you buy six Numbers a la carte, you’ll be refunded the cost of four of them, as if you had paid for a set of six; if you buy twelve a la carte, you’ll be refunded the cost of eight of them, as if you had paid for two sets of six.",
+    "condition": [
+      {
+        "name": "No active crisis (Vivid, Vivid Strike)",
+        "rating": 2
+      },
+      {
+        "name": "TOS",
+        "rating": 4
+      },
+      {
+        "name": "A's",
+        "rating": 4
+      },
+      {
+        "name": "StrikerS",
+        "rating": 4
+      }
+    ]
+  },
+  {
+    "rating": 2,
+    "q": true,
+    "worldName": "Seishun Buta Yarou (Rascal)",
+    "additional": "<p>Sakurajima Mai can disappear from all others' memories and direct and indirect perception. This power is inactive by default. You and all purchased and captured waifus are immune.</p> <p>Koga Tomoe can create and end time loops of up to 30 days - basically Akemi Homura minus Time Stop and all non-temporal abilities. You and all purchased and captured waifus are aware of Tomoe's loops.</p>   <p>Futaba Rio can spawn one clone of herself at a time and live both lives separately. Both Rios are equally real until one despawns.</p> <p>Toyohama Nodoka can swap minds and souls between bodies. Her time limit is 72 hours, unless she swaps herself, in which case the effect is indefinite until she cancels it. If you are part of the swap, and your original body takes fatal damage, you’re stuck until the body can be resurrected (or Warranty Plan brings back the other part of the swap) and the swap reversed. If the body you’re swapped into takes fatal damage, you will swap back just before death.</p>   <p>Makinohara Shouko is the adult version from the movie. Her time travel method isn't particularly versatile, but it doesn't need technology.</p> <p>Azusagawa Kaede gives all of your waifus cute, animal-themed onesies.</p>"
+  },
+  {
+    "rating": 2,
+    "q": true,
+    "worldName": "Sword Art Online",
+    "additional": "All characters with profiles in Sword Art Online, Alfheim Online, Gun Gale Online, and other VRMMOs will benefit from their toons’ statistics, skills, equipment, and other factors, but only from one toon at a time. They can quick-change between each profile as desired."
+  },
+  {
+    "rating": 2,
+    "q": true,
+    "worldName": "Tenchi Muyo!",
+    "additional": "Mitoto’s teleportation ability works as long as she has a mop or other cleaning tool in her hands. Anyone she brings with her must have one as well."
+  },
+  {
+    "rating": 2,
+    "q": true,
+    "worldName": "Tomb Raider",
+    "additional": "2013: Sam has Himiko’s powers and knowledge of how to use them, but her personality is her own."
+  },
+  {
+    "rating": 2,
+    "q": true,
+    "worldName": "Revue Starlight",
+    "additional": "All the world’s a stage. The girls of this series can transform and use their stage magic anywhere. Everything besides their weapons and costumes is literally theater props, but even those can be useful in the right situations."
+  },
+  {
+    "rating": 3,
+    "worldName": "Stargate",
+    "condition": "SG1/SGA modern Earth"
+  },
+  {
+    "rating": 3,
+    "worldName": "Sekirei",
+    "additional": "The titular Sekirei are psychic as a species and drawn to individuals with stronger psychic presences. Template Stacking (Ashikabi) is therefore unnecessary, just Psychic Talent or some other psychic template, together with sufficient training to build up a presence.",
+    "condition": [
+      {
+        "name": "Shinto Teito",
+        "rating": 3
+      },
+      {
+        "name": "Outside Shinto Teito",
+        "rating": 2
+      }
+    ]
+  },
+  {
+    "rating": 3,
+    "worldName": "No Game No Life",
+    "additional": "Azriel has her full power. Shiro will believe you to be her sibling and cannot be convinced otherwise. Holou is the depowered form from LNs 9+.",
+    "condition": [
+      {
+        "name": "Post-Pledges (canon era)",
+        "rating": 3
+      },
+      {
+        "name": "Pre-Pledges (Zero era)",
+        "rating": 9
+      }
+    ]
+  },
+  {
+    "rating": 3,
+    "worldName": "Game of Thrones",
+    "condition": "Show continuity"
+  },
+  {
+    "rating": 3,
+    "worldName": "Fullmetal Alchemist",
+    "additional": "Lust has her 2003 characterization. Izumi and Julia’s bodies are fully intact."
+  },
+  {
+    "rating": 3,
+    "worldName": "Danganronpa",
+    "condition": [
+      {
+        "rating": 3,
+        "name": "Standard"
+      },
+      {
+        "rating": 4,
+        "name": "Ultra Despair Girls, V3"
+      }
+    ]
+  },
+  {
+    "rating": 3,
+    "q": true,
+    "worldName": "Ah! My Goddess",
+    "additional": "Waifus can manipulate any local universe’s operating system as if it were Yggdrasil or Nidhogg, with their same level of access rights. This isn’t always a good idea without protection."
+  },
+  {
+    "rating": 3,
+    "q": true,
+    "worldName": "Bofuri",
+    "additional": "All characters benefit from their New World Online statistics (taking the higher value of the in-game number vs. the equivalent of their real-world abilities), skills, equipment, and pets. They no longer have explicit game mechanics, such as leveling or chat, but can still quick-change both old and new equipment as desired."
+  },
+  {
+    "rating": 3,
+    "q": true,
+    "worldName": "Ranma ½",
+    "additional": "Ranma’s form changes or locks to fit your orientation. If purchased and mode-locked as a girl, she will believe that she was born as such but raised as a boy."
+  },
+  {
+    "rating": 3,
+    "q": true,
+    "worldName": "Those Who Hunt Elves",
+    "additional": "Ritsuko has her cat-possessed tank Mihke as a familiar."
+  },
+  {
+    "rating": 3,
+    "q": true,
+    "worldName": "Overwatch",
+    "additional": "D.Va has her personal mech. Ashe has B.O.B. as a familiar. Mei has Snowball as a familiar."
+  },
+  {
+    "rating": 3,
+    "q": true,
+    "worldName": "Sid Meier’s Alpha Centauri",
+    "additional": "Faction leaders have mostly-complete tech databases up to TL8, with some variation depending on the leader’s specialties: Aki has everything except the soft sciences, Santiago has all military techs, Deirdre has all environmental and psionics techs, etc. They can re-develop the rest of the tree with their own time and resources."
+  },
+  {
+    "rating": 3,
+    "q": true,
+    "worldName": "Avatar: Legend of Korra",
+    "additional": "Korra has her polar bear dog Naga as a familiar."
+  },
+  {
+    "rating": 3,
+    "q": true,
+    "worldName": "Cardcaptor Sakura",
+    "additional": "Sakura has a full deck of all 53 Sakura Cards, including the Hope, and Keroberos and Yue as familiars. Don’t worry about Tsubasa Reservoir Chronicle."
+  },
+  {
     "rating": 4,
     "worldName": "Zero no Tsukaima",
     "condition": [
@@ -14,66 +283,250 @@
     ]
   },
   {
-    "rating": 6,
-    "worldName": "Xenoblade Chronicles 2",
-    "additional": "Any member of your retinue can act as a Driver for any Blade you have, with a preference for canon Driver-Blade pairs. Canon Drivers have their Blades as humanoid familiars: Rex - Pyra/Mythra, Zeke - Pandoria, Tora - Poppi, Lora - Jin and Haze, Mòrag - Brighid, Nia - Dromarch, Patroka - Perdido. The waifu perks for Pneuma and the Poppibuster must be purchased separately or acquired in-universe.",
-    "condition": "Main story"
-  },
-  {"worldName":"Worm","rating":7,"additional":"Shards only give powers to those who’ve lost all hope, including the hope of at least getting powers out of a traumatic scenario. For this reason, OC Donut Steel and Template Stacking will not work for parahuman powers when taken for yourself after chargen or a retinue member after the time of purchase.Psychic Talent applies to relevant parahuman powers, mostly (but not limited to) Thinker, Master, and Stranger abilities. Science and Engineering Talents apply to parahuman Tinker databases. Upon a parahuman’s capture, their shard will be forcibly shredded and integrated into their stamp tattoo, even if it’s dormant from the use of another binding or No Bindings. This process is much less violent with the Shroud, due to its use of existing spiritual or mental connections, but the shard still does not survive. A shard remnant tattoo has the same antimemetic properties as the original shard, which can be blocked by Mind Defense. Any other parahumans connected to the same shard will have their powers similarly reformatted, but are not considered captured by you unless you do so normally. Alt-powers: Due to the extreme prevalence of alt-power fanfics, the Taylors or other such characters of those AUs are available on request. If one of them is captured, their alt-power from that universe will be treated as a canon one; they will not manifest their actual canon power in addition.","condition":[{"name":"Eden is alive","rating":8}]},
-  {
-    "rating": 7,
-    "worldName": "World of Darkness",
+    "rating": 4,
+    "worldName": "Starcraft",
     "condition": [
       {
-        "name": "New",
-        "rating": 7
+        "name": "pre-SC1, post-HotS",
+        "rating": 4
       },
       {
-        "name": "Old",
-        "rating": 9
+        "name": "During SC1, SC2",
+        "rating": 6
       }
     ]
   },
   {
-    "rating": 9,
-    "worldName": "Warhammer Fantasy",
-    "additional": "The Lady and Lileath would be identical twins if not for their different races; if you have both, they’ll argue over which one is the older sister. Vampires no longer suffer from any of their weaknesses. Hellebron and Morathi are both young again. Khalida is alive and young again. Valkia is metaphysically separated from Khorne.",
+    "worldName": "Star Wars",
+    "rating": 4,
+    "additional": "Unrestricted Clone Wars is setting modification where Palpatine's plan is fully discovered and with him taking over leadership CIS, CIS is allowed to go on without restrictions.",
     "condition": [
       {
-        "name": "Mousillon, Chaos Wastes, etc.",
-        "rating": 8
+        "name": "Empire Era, OT",
+        "rating": 4
       },
+      {
+        "name": "Old Republic era, Prequels era",
+        "rating": 5
+      },
+      {
+        "rating": 6,
+        "name": "Legends post-OT"
+      },
+      {
+        "name": "Unrestricted Clone Wars",
+        "rating": 7
+      }
+    ]
+  },
+  {
+    "rating": 4,
+    "worldName": "My Hero Academia",
+    "additional": "Eri has full control of her powers. Purchased versions of her are aged to adulthood.",
+    "condition": [
+      {
+        "name": "Start of canon",
+        "rating": 4
+      },
+      {
+        "name": "post-Retirement",
+        "rating": 5
+      },
+      {
+        "name": "pre-All Might",
+        "rating": 6
+      }
+    ]
+  },
+  {
+    "rating": 4,
+    "worldName": "Mass Effect",
+    "additional": "EDI is just the gynoid from ME3. If you want to install her into a starship, buy Catch-a-Ride or Heavenbuilt Proto with the discount and plug her in.",
+    "condition": [
       {
         "name": "No active crisis",
-        "rating": 7
+        "rating": 4
       },
       {
-        "name": "Standard",
+        "name": "Shanxi incident",
+        "rating": 5
+      },
+      {
+        "name": "Rachni Wars",
+        "rating": 6
+      },
+      {
+        "name": "Reaper invasion",
         "rating": 9
       }
     ]
   },
   {
-    "rating": 10,
-    "worldName": "Warhammer 40K"
+    "rating": 4,
+    "worldName": "Madoka Magica",
+    "additional": "Soul Gems: A meguca's soul is bilocated between her body and her soul gem such that she no longer falls unconscious if the two are separated by more than 100 meters and no longer dies if her soul gem is destroyed. Strictly speaking, the soul gem is only required for its functions as an item (e.g. transforming & detransforming, detecting magic, etc), and she may operate and use her powers without it in a pinch - but her soul gem is as much a part of her magical girl regalia as her magical girl uniform or signature weapon, and she may always recreate it or recall it to herself at will as long as she's alive to do so. Finally, a meguca won't transform into a witch if her soul gem darkens completely (though she is still 'out of' magic while it remains in such a state), and she no longer needs an object such as a grief seed in order to purge that darkness from her gem. This applies to captured witches as well.<p>Just as using magic and falling into despair causes her soul gem to dim, true hope and other deeply felt positive emotions on her part may restore her soul gem's shine. The magic pool in a meguca’s soul gem naturally recovers at a rate of one percent every minute, plus or minus the above effects of positive or negative emotions, respectively. If a gem darkens completely, its magic will not be usable, even if full, until the meguca deeply feels a positive emotion.</p><p>Amano Suzune:  If you have a Puella Magi in your retinue and have taken Salvation, Amano Suzune may (if present) copy their magic after their Doppel fades as if she had slain a Witch. Alternatively, if you have an Adjuster, the Adjuster may, through contact with Suzune's and another meguca's soul gems, overwrite Suzune's copied magic with the magic of the girl in question. (Adjusters themselves are ineligible as copy targets.) By default, any purchased Suzune Amano has her magic pre-set to Tsubaki's fire manipulation magic.</p><p>Other Characters: You may choose whether a purchased Kureha Yuna has her original personality or what she became after her hatred and despair caused her magical girl form to grow an oni horn.</p><p>If you have Isabeau and any binding method, her meguca contractees will be bound as if you had used the Stamp on them.</p><p>If for any reason a member of your retinue is incapable of being communicated with via telepathy, Sudachi's mumbling will instead be perfectly understandable to them.</p><p>You and all members of your retinue can see through Sana's passive invisibility, regardless of whether you have any magical abilities or not.</p><p>Mitama and Momoko can, at will, transform into their summer mermaid version in addition to their normal magical girl transformation, without any need for Mitama to alter their normal magical girl transformation. If you have Mitama, or Momoko and another Adjuster, she can grant any magical girl from the setting the same ability.</p><p>Once in your retinue, Himena will believe you to be her dead boyfriend and can't be convinced otherwise. If you are killed and Himena is still alive, your soul will be tethered to her body. You can communicate with her telepathically, share her senses, and authorize her to make purchases from the Catalog in your place. R.I.P rules will not activate unless Himena is killed while you are dead.</p>",
+    "condition": [
+      {
+        "name": "TOS, Magia Record (in Kamihama)",
+        "rating": 4
+      },
+      {
+        "name": "Tart Magica",
+        "rating": 5
+      }
+    ]
   },
   {
-    "rating": 8,
-    "worldName": "Warframe"
+    "rating": 4,
+    "worldName": "Macross",
+    "condition": [
+      {"name":"Zero", "rating": 4},
+      {"name":"Plus", "rating": 5},
+      {"name":"Original Series", "rating": 6},
+      {"name":"Delta", "rating": 6},
+      {"name":"Macross 7", "rating": 7},
+      {"name":"Frontier", "rating": 7},
+      {"name":"Zero", "rating": 4}
+    ],
+    "additional": "Micronization: Zentraedi and Meltrandi characters are Microne (human)-sized by default. The presence of one will add a Micronization chamber to your Grand Manor, if you have one. Advanced Tempest Runes (Body) allows them, and any other member of our retinue who’s used a Micronization chamber, to shift between Microne and Macrone forms on the fly. Body Talent is enough to let Klan Klein maintain her adult figure while micronized. Additionally, all Zentraedi and Meltrandi combatants have a personal Pocket Space for their battlesuits. Battlesuits stored this way will automatically resize themselves to fit their wearer, regardless of whether the wearer is in Microne or Macrone form. Other: Mylene has her pet… tribble(?) Guvava as a familiar. We don’t actually know what Guvava is, just that it’s cute and fuzzy. Ranka has her squirrel-like pet Ai-kun as a familiar."
   },
   {
-    "rating": 7,
-    "worldName": "Warcraft",
-    "condition": "No active crisis"
+    "worldName": "Avatar: The Last Airbender",
+    "rating": 4,
+    "condition": [
+      {
+        "name": "Spirit Intervention",
+        "rating": 7
+      }
+    ]
   },
   {
-    "rating": 7,
-    "worldName": "Touhou",
-    "additional": "Yukari has Ran and Chen as familiars. Ran alone still has Chen as a familiar. If you buy or capture Ran after buying Chen, the credits you paid for Chen will be refunded. If you buy or capture Yukari after buying Ran or Chen, the credits you paid for Ran or Chen will be refunded. If you have Life’s A Beach and purchased every waifu from the Scarlet Devil Mansion, a copy of the mansion will appear in your world. If you have Pocket Apartment or higher or Heavenbuilt Proto, and have captured every waifu from the Scarlet Devil Mansion, a permanent portal will connect your apartment, mansion, ship, or world to the mansion's interior, following the same rules as Rainbow Bridge’s regular portals. This also applies to the Eientei and Moriya Shrine crews."
+    "rating": 4,
+    "worldName": "Ace Combat",
+    "condition": [
+      {
+        "name": "Standard",
+        "rating": 4
+      },
+      {
+        "name": "AC 7",
+        "rating": 5
+      },
+      {
+        "name": "AC 4",
+        "rating": 3
+      }
+    ]
   },
   {
-    "rating": 7,
-    "worldName": "Torchlight"
+    "rating": 4,
+    "worldName": "A Song of Ice and Fire",
+    "additional": "Dragon riders have their dragons as familiars.",
+    "condition": "Books continuity"
+  },
+  {
+    "rating": 4,
+    "worldName": "Log Horizon",
+    "additional": "All characters benefit from Elder Tale mechanics, tied to your Demiplane or Dungeon if you have one.",
+    "condition": [
+      {
+        "name": "Akibahara",
+        "rating": 4
+      },
+      {
+        "name": "Yamato Server (not Akibahara)",
+        "rating": 5
+      },
+      {
+        "name": "Outside Yamato Server",
+        "rating": 6
+      }
+    ]
+  },
+  {
+    "rating": 4,
+    "worldName": "Legend of Zelda",
+    "additional": "Midna cannot take her imp form by default and would strongly prefer not to ever again. She instead has a strong affinity for shadow magic, capable of melting into shadows and teleporting through a world’s Twilight Realm, even if it doesn’t have one. The imp form may still be remade as a shadow magic spell, for use on herself or others. Fi brings the Master Sword with her, as if she was a Unison Device from MGLN; its aesthetics may change if she’s bound by a Symbiote.",
+    "condition": "Breath of the Wild"
+  },
+  {
+    "rating": 4,
+    "worldName": "Legend of the Galactic Heroes",
+    "condition": "Canon era"
+  },
+  {
+    "rating": 4,
+    "worldName": "Hearts of Iron 4",
+    "condition": [
+      {
+        "name": "Mod: Red Flood",
+        "rating": 4
+      },
+      {
+        "name": "Mod: Red World",
+        "rating": 4
+      },
+      {
+        "name": "Mod: Thousand-Week Reich",
+        "rating": 4
+      },
+      {
+        "name": "Mod: The New Order",
+        "rating": 5
+      },
+      {
+        "name": "Mod: Equestria at War",
+        "rating": 6
+      }
+    ]
+  },
+  {
+    "rating": 4,
+    "q": true,
+    "worldName": "Hellsing",
+    "additional": "Vampires no longer suffer from any of their weaknesses."
+  },
+  {
+    "rating": 4,
+    "q": true,
+    "worldName": "Magi Series",
+    "additional": "All characters who have Household Vessels have the djinn inside their vessel as a familiar."
+  },
+  {
+    "rating": 4,
+    "q": true,
+    "worldName": "Monogatari Series",
+    "additional": "<p>Senjougahara Hitagi can consciously control her effective weight, as if using a slider that starts at 0G and goes as high as she might train for. Gravity over 1G cannot affect her if she doesn’t want it to. She also has a personal Pocket Space equal in size to the basic one offered to contractors.</p> <p>Hachikuji Mayoi can apply a Lost Cow status effect to a nearby target for 24 hours or until the target finds what they're looking for, whichever comes first, and is otherwise the tough adult version from Kabukimonogatari.</p> <p>Hanekawa Tsubasa can transform between her regular self and Black Hanekawa at will.</p> <p>Kiss-Shot Acerola Orion Heart-Under-Blade no longer suffers from any of her vampire weaknesses.</p>"
+  },
+  {
+    "rating": 4,
+    "q": true,
+    "worldName": "Bioshock Infinite",
+    "additional": "Elizabeth’s Tears are limited to the local multiverse surrounding wherever she happens to be at the time."
+  },
+  {
+    "rating": 4,
+    "q": true,
+    "worldName": "Darkstalkers",
+    "additional": "If you purchase Morrigan, you get Lilith for free. If you already have Lilith when you purchase Morrigan, you’ll be refunded Lilith’s full cost."
+  },
+  {
+    "rating": 4,
+    "q": true,
+    "worldName": "Grandia",
+    "additional": "Sue has Puffy as a familiar."
+  },
+  {
+    "rating": 4,
+    "q": true,
+    "worldName": "King of Fighters",
+    "additional": "Hotaru has Itokatsu as a familiar."
+  },
+  {
+    "rating": 4,
+    "q": true,
+    "worldName": "Remember Me",
+    "additional": "Once captured, Nilin’s power will become tech-assisted psionics. She can now target anyone, but targets with sufficient mental defenses may detect and block any changes."
   },
   {
     "rating": 5,
@@ -92,29 +545,6 @@
         "rating": 9
       }
     ]
-  },
-  {
-    "rating": 1,
-    "worldName": "To Love-Ru",
-    "condition": [
-      {
-        "name": "Earth",
-        "rating": 1
-      },
-      {
-        "name": "Space",
-        "rating": 5
-      }
-    ]
-  },
-  {
-    "rating": 6,
-    "worldName": "To Aru verse",
-    "additional": "Misaka Network: The purchase just gives you Misaka Worst and Last Order. If you have Grand Manor or a Catch-a-Ride large enough to contain one, a Misaka cloning facility will appear within the structure within which you can grow the other 20,000. This replaces Warranty Plan, which instead only covers Misaka Worst and Last Order; designating which vat each numbered Misaka is to be re-grown in will ensure that she resleeves properly  Without Grand Manor or a large enough Catch-a-Ride, numbered Misakas will only return to your service one at a time, by the standard Warranty Plan rules. The full heal from Body Talent and Body Defense can be triggered for each Misaka sister individually. The Will of your Misaka Network will eventually spawn on her own. Dolly is not one of the 20,002 networked Misakas, but can join the Network if you have it. Others: Frenda Seivelun has a personal Pocket Space in her skirt, equal in size to the one offered to contractors, where can store her explosives and other weapons. If Kuriba Ryouko rebuilds her Doppelganger, she can transfer its consciousness to its new body without complications. Esper power training benefits from Psychic Talent’s feedback loops if at least two Espers whom the perk applies to train together, even if their powers are wildly different and the principles behind one can’t be directly applied to the other."
-  },
-  {
-    "rating": 7,
-    "worldName": "Titan Quest"
   },
   {
     "rating": 5,
@@ -154,186 +584,9 @@
     ]
   },
   {
-    "rating": 8,
-    "worldName": "Symphogear",
-    "additional": "All Gear users have their Gears; all Alchemists have Faust Robes. Soul Talent will guarantee full Gear compatibility for all canon Candidates, including the ones normally reliant on LiNKER. Contractors need Substitute, Possess, the 10-credit version of Extra, OC Donut Steel, or Template Stacking I. Elfnein has a fully-functional adult body. Kanade and Serena are alternate-timeline versions from XDU. Carol has all four of her Autoscorers as familiars.",
-    "condition": [
-      {
-        "name": "Anime",
-        "rating": 8
-      },
-      {
-        "name": "XDU",
-        "rating": 10
-      }
-    ]
-  },
-  {
-    "rating": 3,
-    "worldName": "Stargate",
-    "condition": "SG1/SGA modern Earth"
-  },
-  {
-    "rating": 4,
-    "worldName": "Starcraft",
-    "condition": [
-      {
-        "name": "pre-SC1, post-HotS",
-        "rating": 4
-      },
-      {
-        "name": "During SC1, SC2",
-        "rating": 6
-      }
-    ]
-  },
-  {"worldName":"Star Wars","rating":4,"additional":"Unrestricted Clone Wars is setting modification where Palpatine's plan is fully discovered and with him taking over leadership CIS, CIS is allowed to go on without restrictions.","condition":[{"name":"Empire Era, OT","rating":4},{"name":"Old Republic era, Prequels era","rating":5},{"rating":6,"name":"Legends post-OT"},{"name":"Unrestricted Clone Wars","rating":7}]},
-  {
-    "rating": 2,
-    "worldName": "Star Trek",
-    "condition": [
-      {
-        "name": "Federation during peacetime",
-        "rating": 2
-      },
-      {
-        "name": "Online",
-        "rating": 7
-      }
-    ]
-  },
-  {
-    "rating": 9,
-    "worldName": "Soulsborne",
-    "additional": "Anastacia of Astora and the Darkmoon Knightess allows you and your waifus to pay for level-ups with soul energy, just like their counterparts from the other games.",
-    "condition": "Demon's Souls, Dark Souls 1-3"
-  },
-  {
     "rating": 5,
     "worldName": "Skies of Arcadia"
   },
-  {
-    "rating": 10,
-    "worldName": "Shin Megami Tensei",
-    "additional": "All Persona users can manifest their abilities in the real world. Velvet Room attendants (Elizabeth, Margaret, Lavenza) can activate your Personas, not just Izanami or Marie. Lavenza can split into Caroline and Justine, at will, and merge back with physical contact.",
-    "condition": [
-      {
-        "name": "Mainline series",
-        "rating": 10
-      },
-      {
-        "name": "Persona 3",
-        "rating": 5
-      },
-      {
-        "name": "Persona 5",
-        "rating": 4
-      },
-      {
-        "name": "Persona 4",
-        "rating": 3
-      }
-    ]
-  },
-  {
-    "rating": 8,
-    "worldName": "Rising of the Shield Hero"
-  },
-  {
-    "rating": 3,
-    "worldName": "Sekirei",
-    "condition": [
-      {
-        "name": "Shinto Teito",
-        "rating": 3
-      },
-      {
-        "name": "Outside Shinto Teito",
-        "rating": 2
-      }
-    ]
-  },
-  {
-    "rating": 6,
-    "worldName": "Sailor Moon",
-    "additional": "Anime Usagi and Manga Usagi are mutually exclusive. Whichever one you pick has Luna as a humanoid familiar; if you bought or captured Luna first, you’ll be refunded her full cost. The same applies to Minako and Artemis."
-  },
-  {
-    "rating": 6,
-    "worldName": "RWBY",
-    "additional": "If you have Inexhaustible and Aura, your aura capacity will remain at maximum unless you take a blow powerful enough to break through. It will then take some time to recover."
-  },
-  {
-    "rating": 7,
-    "worldName": "Inuyasha",
-    "additional": "Sango has Kirara as a familiar. Kikyou has up to eight soul collectors as familiars.",
-    "condition": "Sengoku Jidai"
-  },
-  {
-    "rating": 10,
-    "worldName": "Rifts"
-  },
-  {
-    "rating": 6,
-    "worldName": "Resident Evil",
-    "condition": "Games verse"
-  },
-  {
-    "rating": 7,
-    "worldName": "Reincarnated as a Slime",
-    "condition": [
-      {
-        "rating": 7,
-        "name": "LNs 1-4"
-      },
-      {
-        "rating": 9,
-        "name": "LNs 5+"
-      }
-    ]
-  },
-  {
-    "rating": 2,
-    "worldName": "Real Life/History",
-    "condition": [
-      {
-        "name": "Modern developed countries",
-        "rating": 2
-      },
-      {
-        "name": "19th century and earlier (no crisis)",
-        "rating": 3
-      },
-      {
-        "name": "19th century and earlier (crisis)",
-        "rating": 4
-      },
-      {
-        "name": "World Wars (Occupied Europe/Asia)",
-        "rating": 4
-      }
-    ]
-  },
-  {
-    "rating": 1,
-    "worldName": "Pokemon",
-    "additional": "Purchased (not captured) trainers will have up to six of their most iconic and strongest mons from their canon appearances, bound to them as their trainer is to you. These and other mons that Pokémon trainers in your retinue (including yourself) acquire by any means are spirit familiars that cannot be killed, only knocked out. Pokémon familiars lose this protection if they’re released or traded away. Pokémon are only worth capture credits as waifus or husbandos if you enter a deviant AU where they’re anthropomorphic enough to make poképhilia relatively mainstream.",
-    "condition": [
-      {
-        "name": "Standard",
-        "rating": 1
-      },
-      {
-        "name": "Anime (canon storyline)",
-        "rating": 3
-      },
-      {
-        "name": "Adventures/Special (manga)",
-        "rating": 6
-      }
-    ]
-  },
-  {"worldName":"Overlord (LN)","rating":9,"condition":[{"name":"Pre Isekai (Yggdrasil the Game)","rating":4}]},
   {
     "rating": 5,
     "worldName": "One Piece",
@@ -354,23 +607,246 @@
     ]
   },
   {
-    "rating": 3,
-    "worldName": "No Game No Life",
-    "additional": "Azriel has her full power. Shiro will believe you to be her sibling and cannot be convinced otherwise. Holou is the depowered form from LNs 9+.",
+    "rating": 5,
+    "worldName": "Mahouka Koukou no Rettousei"
+  },
+  {
+    "rating": 5,
+    "worldName": "Black Clover",
+    "condition": "Start of canon"
+  },
+  {
+    "rating": 5,
+    "worldName": "Babylon 5"
+  },
+  {
+    "rating": 5,
+    "worldName": "Arknights",
     "condition": [
       {
-        "name": "Post-Pledges (canon era)",
-        "rating": 3
+        "name": "Standard",
+        "rating": 5
       },
       {
-        "name": "Pre-Pledges (Zero era)",
+        "name": "Chernobog, Kazdel",
+        "rating": 6
+      }
+    ]
+  },
+  {
+    "rating": 5,
+    "worldName": "KonoSuba",
+    "additional": "If you have Grand Manor, Luna gets her Adventurer Card-issuing equipment as a workshop. Purchased versions of Luna will carry five blank cards to hold her buyer over until then.",
+    "imagen": "https://m.media-amazon.com/images/M/MV5BNDNiOWM5NGItNzY4NC00MDg1LTljZjctYzViNmRlOTNhOWM2XkEyXkFqcGdeQXVyNjc3OTE4Nzk@._V1_FMjpg_UX1000_.jpg"
+  },
+  {
+    "rating": 5,
+    "worldName": "Kimetsu no Yaiba/Demon Slayer",
+    "condition": "Taishou-era Japan"
+  },
+  {
+    "worldName": "Fire Emblem",
+    "rating": 5,
+    "additional": "Second-generation characters from Jugdral, Awakening, and Fates can have whichever gameplay-valid parents you want. Robin, Corrin, Byleth, and other Avatars can have any gameplay-legal build. Cavaliers, Pegasus Knights, Wyvern Knights, and other mounted units have their mounts as familiars.",
+    "condition": [
+      {
+        "name": "Awakening (present)",
+        "rating": 5
+      },
+      {
+        "name": "Three Houses (post-timeskip)",
+        "rating": 5
+      },
+      {
+        "name": "Three Houses (pre-timeskip)",
+        "rating": 4
+      },
+      {
+        "name": "Awakening (Doomed Future)",
+        "rating": 8
+      },
+      {
+        "name": "Fates (present)",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "rating": 5,
+    "worldName": "Final Fantasy XV",
+    "condition": [
+      {
+        "name": "pre-crystal",
+        "rating": 5
+      },
+      {
+        "name": "during timeskip",
+        "rating": 6
+      },
+      {
+        "name": "post-timeskip",
+        "rating": 7
+      }
+    ]
+  },
+  {
+    "rating": 5,
+    "worldName": "Final Fantasy XIV",
+    "condition": [
+      {
+        "name": "The Source",
+        "rating": 5
+      },
+      {
+        "name": "The First",
+        "rating": 6
+      }
+    ]
+  },
+  {
+    "rating": 5,
+    "worldName": "Fairy Tail",
+    "additional": "Fatality Defense will protect against Mavis’s Curse of Contradiction. Purchased or captured Mavises will have their curses converted into a form of death magic under her complete control. This conversion will remain even after her master’s demise. Purchasing Irene gets you Heine & Juliet for free as her familiars. Kinana can assume her Cubellios form at will."
+  },
+  {
+    "worldName": "Dresden Files",
+    "rating": 5,
+    "condition": [
+      {
+        "name": "Post Changes",
+        "rating": 6
+      },
+      {
+        "rating": 7,
+        "name": "WWII"
+      }
+    ]
+  },
+  {
+    "rating": 5,
+    "worldName": "Danmachi",
+    "additional": "Non-goddess waifus can have their Falnas updated through an app on the company smart device. If you visit this setting or have at least one deity from it, any deities in your retinue from other settings can learn how to grant and manipulate Falnas. If your starting build has Extra or Paper Trail and a foreign deity, that deity will already know how. All deities in your retinue who know how to manipulate Falnas can update any of your group’s normally, as a shared pool. This also applies to you, if you have a Falna for any reason. You will qualify as a deity yourself if you have the Heritage perks Elder Dragon, Essence Upload, or Prophet of Paradox, or achieve godhood by any other means.",
+    "condition": [
+      {
+        "rating": 5,
+        "name": "Canon Orario"
+      },
+      {
+        "rating": 7,
+        "name": "Uncapped dungeon"
+      }
+    ]
+  },
+  {
+    "rating": 5,
+    "q": true,
+    "worldName": "Attack on Titan",
+    "additional": "Titan Shifting no longer limits a retinue member’s lifespan."
+  },
+  {
+    "rating": 5,
+    "q": true,
+    "worldName": "Darling in the Franxx",
+    "additional": "All pilots and the Klaxosaur Princess can manifest power armor versions of their mecha as magical power armor; these are compatible with the Shrouds. 02 and the Klaxosaur Princess may also transform into full-sized mecha."
+  },
+  {
+    "rating": 5,
+    "q": true,
+    "worldName": "Re:Zero",
+    "additional": "Rem and Ram both have one horn. Frederica has her transformation crystal. Emilia has Puck as a familiar."
+  },
+  {
+    "worldName": "Castlevania",
+    "rating": 5,
+    "q": true,
+    "additional": "The Lecarde sisters are humans when first bought. Carmilla no longer suffers from her vampire weaknesses.",
+    "condition": [
+      {
+        "name": "2017 Show",
+        "rating": 6
+      }
+    ]
+  },
+  {
+    "q": true,
+    "worldName": "Golden Sun",
+    "rating": 5,
+    "additional": "If you have any Adept in your retinue, a full set of the original 72 Djinn will appear in or near your path, allowing you and your waifus access to the game’s class system. Some sidequesting may be required. If you have Conjunction, retinue members within your network can access any combination of nine active (“Set”) Djinn that you’ve acquired. Djinn on standby or recovering from a summoning are on standby or recovery for everyone they’re connected to. Without Conjunction, this feature may still be accessed through certain Heritage perks such as the third stage of Philosopher’s Transmortality Engine.",
+    "condition": [
+      {
+        "name": "No Crisis",
+        "rating": 5
+      },
+      {
+        "rating": 6,
+        "name": "Events of GS1"
+      },
+      {
+        "name": "Events of GS2",
+        "rating": 7
+      }
+    ]
+  },
+  {
+    "rating": 5,
+    "q": true,
+    "worldName": "Princess Connect! Re-Dive",
+    "additional": "Rima’s forms are switched compared to canon. The girl is her normal form and the llama an at-will transformation. All characters benefit from their Legend of Astrum abilities and statistics even beyond the game’s virtual world. Pecorine, Kyaru, Kokkoro, Rei, Hiyori, and Yui are freely capable of assuming their Princess Forms without outside assistance."
+  },
+  {
+    "rating": 5,
+    "q": true,
+    "worldName": "Tales Series",
+    "additional": "Colette’s angel ancestry is unlocked. Sheena has pacts with all her summons. Gelda has her replica’s powers, even if she’s the original."
+  },
+  {
+    "rating": 6,
+    "worldName": "Xenoblade Chronicles 2",
+    "additional": "Any member of your retinue can act as a Driver for any Blade you have, with a preference for canon Driver-Blade pairs. Canon Drivers have their Blades as humanoid familiars: Rex - Pyra/Mythra, Zeke - Pandoria, Tora - Poppi, Lora - Jin and Haze, Mòrag - Brighid, Nia - Dromarch, Patroka - Perdido. The waifu perks for Pneuma and the Poppibuster must be purchased separately or acquired in-universe.",
+    "condition": "Main story"
+  },
+  {
+    "rating": 6,
+    "worldName": "To Aru series",
+    "additional": "<p>Misaka Network: The purchase just gives you Misaka Worst and Last Order. If you have Grand Manor or a Catch-a-Ride large enough to contain one, a Misaka cloning facility will appear within the structure within which you can grow the other 20,000. This replaces Warranty Plan, which instead only covers Misaka Worst and Last Order; designating which vat each numbered Misaka is to be re-grown in will ensure that she resleeves properly. Without Grand Manor or a large enough Catch-a-Ride, numbered Misakas will only return to your service one at a time, by the standard Warranty Plan rules. The full heal from Body Talent and Body Defense can be triggered for each Misaka sister individually. The Will of your Misaka Network will eventually spawn on her own. Dolly is not one of the 20,002 networked Misakas, but can join the Network if you have it.</p><p>Others: Frenda Seivelun has a personal Pocket Space in her skirt, equal in size to the one offered to contractors, where can store her explosives and other weapons. If Kuriba Ryouko rebuilds her Doppelganger, she can transfer its consciousness to its new body without complications. Esper power training benefits from Psychic Talent’s feedback loops if at least two Espers whom the perk applies to train together, even if their powers are wildly different and the principles behind one can’t be directly applied to the other.</p>"
+  },
+  {
+    "rating": 6,
+    "worldName": "Sailor Moon",
+    "additional": "Usagi has Luna as a humanoid familiar; if you bought Luna before Usagi, you’ll be refunded the moon cat’s full cost. The same applies to Minako and Artemis."
+  },
+  {
+    "rating": 6,
+    "worldName": "RWBY",
+    "additional": "If you have Inexhaustible and Aura, your aura capacity will remain at maximum unless you take a blow powerful enough to break through. It will then take some time to recover."
+  },
+  {
+    "rating": 6,
+    "worldName": "Space Pirates and Zombies",
+    "condition": [
+      {
+        "name": "SPAZ 1: Galactic Rim (pre-timeskip)",
+        "rating": 6
+      },
+      {
+        "name": "SPAZ 1: Galactic Core (pre-timeskip)",
+        "rating": 9
+      },
+      {
+        "name": "SPAZ 1: During- or post-timeskip",
         "rating": 9
       }
     ]
   },
   {
-    "rating": 7,
-    "worldName": "Nier: Automata"
+    "rating": 6,
+    "worldName": "Kill la Kill",
+    "condition": "Start of canon"
+  },
+  {
+    "rating": 6,
+    "worldName": "Resident Evil",
+    "condition": "Games verse"
   },
   {
     "rating": 6,
@@ -415,33 +891,6 @@
     ]
   },
   {
-    "rating": 4,
-    "worldName": "My Hero Academia",
-    "additional": "Eri has full control of her powers. Purchased versions of her are aged to adulthood.",
-    "condition": [
-      {
-        "name": "Start of canon",
-        "rating": 4
-      },
-      {
-        "name": "post-Retirement",
-        "rating": 5
-      },
-      {
-        "name": "pre-All Might",
-        "rating": 6
-      }
-    ]
-  },
-  {
-    "rating": 2,
-    "worldName": "Monster Musume"
-  },
-  {
-    "rating": 5,
-    "worldName": "Mahouka (Magic High School)"
-  },
-  {
     "rating": 6,
     "worldName": "Monster Hunter",
     "condition": [
@@ -456,45 +905,356 @@
     ]
   },
   {
-    "rating": 2,
-    "worldName": "Monster Girl Encyclopedia",
+    "rating": 6,
+    "worldName": "Made in Abyss",
+    "additional": "Mitty maintains her cursed form’s unkillability even as a human."
+  },
+  {
+    "rating": 6,
+    "worldName": "Chainsaw Man",
+    "additional": "Devil Contractors have their devils as familiars.",
     "condition": [
       {
-        "name": "Canon ver., Mamono territory",
-        "rating": 2
-      },
-      {
-        "name": "Canon ver., Order territory",
-        "rating": 4
-      },
-      {
-        "name": "Dark and Serious ver.",
+        "name": "Earth",
         "rating": 6
+      },
+      {
+        "name": "Hell",
+        "rating": 8
       }
     ]
   },
   {
-    "rating": 4,
-    "worldName": "Mass Effect",
-    "additional": "EDI is just the gynoid from ME3. If you want to install her into a starship, buy Catch-a-Ride or Heavenbuilt Proto with the discount and plug her in.",
+    "rating": 6,
+    "worldName": "Borderlands",
     "condition": [
       {
-        "name": "No active crisis",
-        "rating": 4
-      },
-      {
-        "name": "Shanxi incident",
-        "rating": 5
-      },
-      {
-        "name": "Rachni Wars",
+        "name": "Pandora (no active Vault)",
         "rating": 6
       },
       {
-        "name": "Reaper invasion",
+        "name": "Pandora (active Vault)",
+        "rating": 7
+      }
+    ]
+  },
+  {
+    "rating": 6,
+    "worldName": "Bleach",
+    "condition": [
+      {
+        "name": "Standard",
+        "rating": 6
+      },
+      {
+        "name": "Hueco Mundo",
+        "rating": 8
+      }
+    ]
+  },
+  {
+    "rating": 6,
+    "worldName": "Akame ga Kill!"
+  },
+  {
+    "rating": 6,
+    "worldName": "League of Legends",
+    "additional": "Anivia and Rek’Sai can switch between humanoid and bestial forms."
+  },
+  {
+    "rating": 6,
+    "worldName": "High School DxD",
+    "additional": "Purchased and captured Angels, including Fallen, may Fall and Rise at your discretion. High-class Devils do not have their own Evil Pieces, nor do Angels have their Brave Saint cards. If you purchase Ophis, or capture her before her spawn Lilith exists, you will get Lilith for free. Lilith will not be worth capture credits if you acquire her in this way.",
+    "condition": [
+      {
+        "name": "Standard",
+        "rating": 6
+      },
+      {
+        "name": "LNs 3-12",
+        "rating": 7
+      },
+      {
+        "rating": 8,
+        "name": "LNs 13-21"
+      }
+    ]
+  },
+  {
+    "rating": 6,
+    "worldName": "Dune",
+    "condition": "First book"
+  },
+  {
+    "rating": 6,
+    "worldName": "Dragon Age"
+  },
+  {
+    "rating": 6,
+    "q": true,
+    "worldName": "Hololive",
+    "additional": "All characters are drawn from the Hololive Alternative setting. Haato and Haachama can merge into one body and split back into two at will; as long as one is alive, the other will resurrect as if you have Warranty Plan."
+  },
+  {
+    "rating": 6,
+    "q": true,
+    "worldName": "Re:Creators",
+    "additional": "Hikayu has her martial arts powerup. Meteora’s “Delusion” appearance is always available as a preset if you have at least Basic Tempest Runes, Transformation Circle, or Demiplane perks."
+  },
+  {
+    "rating": 6,
+    "q": true,
+    "worldName": "Genshin Impact",
+    "additional": "Lumine (and Aether) has the T1 version of Paimon as a humanoid familiar. If you have both, they’ll share her."
+  },
+  {
+    "rating": 6,
+    "q": true,
+    "worldName": "Metroid",
+    "additional": "X-Parasites are exceedingly dangerous. Multiple development and production sites have been lost due to X-involved security breaches. Even when all precautions are followed, the X can still find a way to break containment. For this reason, we no longer pay out any rewards for the SA-X’s capture, and any X-infected specimens you sell back to us will be fed to Metroids immediately."
+  },
+  {
+    "rating": 6,
+    "q": true,
+    "worldName": "Mortal Kombat",
+    "additional": "Frost has her cybernetics, but is fully capable of intercourse and has her original reproductive organs. Kronika has not absorbed Cetrion, and does not have her crown, without a waifu perk."
+  },
+  {
+    "rating": 6,
+    "q": true,
+    "worldName": "Okami",
+    "additional": "Princess Fuse has all eight Canine Warriors as familiars. They’re all regular dogs, not doggirl waifus. Demon Lord Ninetails is exactly what she presents herself as, not the elderly one-tailed male fox of canon."
+  },
+  {
+    "rating": 6,
+    "q": true,
+    "worldName": "Tokyo Mirage Sessions",
+    "additional": "All Mirage Masters can call their Mirages and enter Carnage Form in the real world. Any Mirage may be genderbent according to your preferences."
+  },
+  {
+    "rating": 6,
+    "q": true,
+    "worldName": "Xenoblade Chronicles 1",
+    "additional": "Without the waifu perk, Fiora is only her human version. High Entians can transform into Telethia and back at will."
+  },
+  {
+    "rating": 6,
+    "worldName": "Kara no Kyoukai",
+    "additional": "Kokutou Azaka will believe you to be her sibling and cannot be convinced otherwise. If you go to KnK and capture Shiki there, she will always be the basic Tier 7 version; this does not apply to the Saber-class guest-star at Chaldea."
+  },
+  {
+    "rating": 6,
+    "q": true,
+    "worldName": "Fate/Apocrypha",
+    "additional": "Body Talent will cure Fiore’s paralysis without requiring her to lose her Magic Circuits."
+  },
+  {
+    "rating": 6,
+    "worldName": "Prisma Illya",
+    "additional": "Prisma Illya has the Saber (Artoria classic, but with Lily’s dress), Assassin (Hundred Faces), Berserker (Heracles), and Rider (Medusa) Class Cards. Miyu has the Saber (Artoria classic), Assassin (Serenity), Caster (Medea), and Lancer (Cú Chulainn classic) Class Cards. Angelica has her real body, Archer (Gilgamesh)’s Class Card, and a fully-stocked Gate of Babylon. She can use her version of Ea just as easily as the real Gilgamesh. Beatrice has Berserker (Magni)’s Class Card.   Class Cards (general): A sufficiently capable mage can produce more Class Cards with access to examples of the originals. If you have Mash Kyrielight with the Lord Camelot perk and at least one holder of Class Cards, unwanted Servants may appear as Class Cards instead. This also includes unwanted summons from other gacha titles; their class titles and card designs will reflect their home setting instead of the Nasuverse.",
+    "condition": [
+      {
+        "name": "Illya’s World (Start of Canon/2wei)",
+        "rating": 6
+      },
+      {
+        "name": "Miyu’s World (3rei/Oath Under Snow)",
+        "rating": 7
+      }
+    ]
+  },
+  {
+    "rating": 6,
+    "q": true,
+    "worldName": "Precure",
+    "additional": "Individuals in cooperation-required Cure teams (White and Black, Bloom and Egret, Magical and Miracle, Ma Cherie and Amour) may be bought separately. Their powers will still function without their partners. Milky Rose and Ace do not have time limits; Milky Rose, Beat, and Cosmos can switch between their human and alternate forms and remain in either indefinitely. If you don’t want to deal with a particular familiar, but it doubles as the Cure’s transformation device (such as Black/White’s or Bloom/Egret’s), they may instead be simple, non-living magitech."
+  },
+  {
+    "worldName": "Worm",
+    "rating": 7,
+    "additional": "Shards only give powers to those who’ve lost all hope, including the hope of at least getting powers out of a traumatic scenario. For this reason, OC Donut Steel and Template Stacking will not work for parahuman powers when taken for yourself after chargen or a retinue member after the time of purchase.Psychic Talent applies to relevant parahuman powers, mostly (but not limited to) Thinker, Master, and Stranger abilities. Science and Engineering Talents apply to parahuman Tinker databases. Upon a parahuman’s capture, their shard will be forcibly shredded and integrated into their stamp tattoo, even if it’s dormant from the use of another binding or No Bindings. This process is much less violent with the Shroud, due to its use of existing spiritual or mental connections, but the shard still does not survive. A shard remnant tattoo has the same antimemetic properties as the original shard, which can be blocked by Mind Defense. Any other parahumans connected to the same shard will have their powers similarly reformatted, but are not considered captured by you unless you do so normally. Alt-powers: Due to the extreme prevalence of alt-power fanfics, the Taylors or other such characters of those AUs are available on request. If one of them is captured, their alt-power from that universe will be treated as a canon one; they will not manifest their actual canon power in addition.",
+    "condition": [
+      {
+        "name": "Eden is alive",
+        "rating": 8
+      }
+    ]
+  },
+  {
+    "rating": 7,
+    "worldName": "World of Darkness",
+    "condition": [
+      {
+        "name": "New",
+        "rating": 7
+      },
+      {
+        "name": "Old",
         "rating": 9
       }
     ]
+  },
+  {
+    "rating": 7,
+    "worldName": "Warcraft",
+    "condition": "No active crisis"
+  },
+  {
+    "rating": 7,
+    "worldName": "Touhou",
+    "additional": "Yukari has Ran and Chen as familiars. Ran alone still has Chen as a familiar. If you buy or capture Ran after buying Chen, the credits you paid for Chen will be refunded. If you buy or capture Yukari after buying Ran or Chen, the credits you paid for Ran or Chen will be refunded. If you have Life’s A Beach and purchased every waifu from the Scarlet Devil Mansion, a copy of the mansion will appear in your world. If you have Pocket Apartment or higher or Heavenbuilt Proto, and have captured every waifu from the Scarlet Devil Mansion, a permanent portal will connect your apartment, mansion, ship, or world to the mansion's interior, following the same rules as Rainbow Bridge’s regular portals. This also applies to the Eientei and Moriya Shrine crews."
+  },
+  {
+    "rating": 7,
+    "worldName": "Torchlight"
+  },
+  {
+    "rating": 7,
+    "worldName": "Titan Quest"
+  },
+  {
+    "rating": 7,
+    "worldName": "Inuyasha",
+    "additional": "Sango has Kirara as a familiar. Kikyou has up to eight soul collectors as familiars.",
+    "condition": "Sengoku Jidai"
+  },
+  {
+    "rating": 7,
+    "worldName": "Reincarnated as a Slime",
+    "condition": [
+      {
+        "rating": 7,
+        "name": "LNs 1-4"
+      },
+      {
+        "rating": 9,
+        "name": "LNs 5+"
+      }
+    ]
+  },
+  {
+    "rating": 7,
+    "worldName": "Nier: Automata"
+  },
+  {
+    "rating": 7,
+    "worldName": "Cautious Hero",
+    "condition": [
+      {
+        "name": "Gaeabrande",
+        "rating": 7
+      },
+      {
+        "name": "Ixphoria",
+        "rating": 8
+      }
+    ]
+  },
+  {
+    "rating": 7,
+    "worldName": "Kingdom Hearts"
+  },
+  {
+    "rating": 7,
+    "worldName": "Guild Wars",
+    "condition": [
+      {
+        "name": "Dragons awake",
+        "rating": 7
+      },
+      {
+        "name": "Cantha pre-Jade Wind",
+        "rating": 6
+      },
+      {
+        "name": "Several dragons awake",
+        "rating": 8
+      },
+      {
+        "name": "Elder Dragons asleep",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "rating": 7,
+    "worldName": "Girl Genius",
+    "condition": [
+      {
+        "name": "Europa (peacetime)",
+        "rating": 7
+      },
+      {
+        "name": "Europa (wartime)",
+        "rating": 8
+      }
+    ]
+  },
+  {
+    "rating": 7,
+    "worldName": "Final Fantasy VII"
+  },
+  {
+    "rating": 7,
+    "worldName": "Final Fantasy IX"
+  },
+  {
+    "rating": 7,
+    "worldName": "Fallout"
+  },
+  {
+    "rating": 7,
+    "worldName": "Evangelion",
+    "additional": "The “Curse of EVA,” that halts pilots’ aging in Rebuild, does not apply. All pilots can learn to manipulate their AT fields; this counts as a mystical art and is affected by Soul Talent and Advanced Template Stacking (Enlightened). Akagi Naoko may be captured posthumously by attacking MAGI instead; if so, she will be a set of triplet software AIs for whom separate bodies may be built to contain. Ikari Yui and Souryuu Kyoko Zeppelin have their full scientific knowledge, full control over their AT fields, and can transform into EVA-01 and -02, respectively. When transformed, their AT strengths are both on par with the stronger canon Angels. They can also manifest shipgirl-style avatars inside their cockpits, so you can ride them while you ride them. Original and Rebuild characters will recognize each other, if shared-timeline versions of themselves would have met.",
+    "condition": [
+      {
+        "rating": 7,
+        "name": "main series"
+      },
+      {
+        "rating": 8,
+        "name": "End, post-timeskip Rebuild"
+      }
+    ]
+  },
+  {
+    "rating": 7,
+    "worldName": "Drakengard",
+    "condition": "Drakengard 3"
+  },
+  {
+    "rating": 7,
+    "q": true,
+    "worldName": "Halo",
+    "additional": "Cortana will be plugged into your smart device. The Tier 5 version of her reflects her status at the end of the original trilogy. Body Talent will give Spartans a functioning sex drive."
+  },
+  {
+    "rating": 7,
+    "worldName": "Fate/Extra",
+    "additional": "Rani VIII and the Extra version of Rin are both demi-Servants with Lu Bu and Cú Chulainn, respectively, as they were in Last Encore. If you already have Saint Kiara, the T10 Devil Kiara purchase may instead apply as a waifu perk, giving her the abilities of either her Devil or hypothetical Saver versions (one or the other) with no changes to her personality.    Command Seals    The following female characters count as valid Masters: Tohsaka Rin, Matou Rin, Dark Rin, Matou Sakura, Tohsaka Sakura, Dark Sakura, Beast Rin, Beast Sakura, mainline Illya, Luvia Edelfelt, Bazette, Caren, Kaleido Ruby, Kaleido Sapphire, Sola-Ui, Irisviel, Hakuno, Devil Kiara, Kohaku, Prisma Illya, Miyu, Angelica, Lancelot Sakura, Celenike, Fiore, Reika, Jean, Sakura Edelfelt, Prelati, Tiné, Tsubaki, Ayaka, Manaka, Reines, Yvette, Hishiri, Ritsuka, Yu, Ophelia, and Erice. Pseudo-Servants and Demi-Servants are Servants, not Masters.    Alternate Classes and Outfits    All Servants with Summer, Santa, or Halloween forms can use the associated skills and NPs at will. The same applies to Atalanta’s, Boudica’s, Da Vinci’s, Medusa’s, Nero’s, Nobunaga’s, and Mysterious Heroine X Alter’s alternate classes, except for Avenger Gorgon. When copying a Servant’s power through OC Donut Steel and Template Stacking II, alternate classes must still be purchased individually.    Alter Egos    BB has lost her connection to Nyarlathotep. Purchasing Amaterasu gives you all of the Tamamo Nine as well: Caster Tamamo, Tamamo Cat, Tamamo Vitch, and six others that have not yet appeared in canon. If you have already bought at least one of the Tamamo Nine at the time of purchasing Amaterasu, all credits that you paid for those nine will be refunded. If you instead capture Amaterasu, you will get any applicable refunds for purchased members of the Tamamo Nine and may purchase any missing ones for free. This is not automatic, in case you wish to capture the full set instead. (Treasured Beast Koyanskaya must be purchased or ascended separately.) Purchased or captured versions of any Tamamo will remain themselves as they grow more tails, not becoming Amaterasu even if they have a full set of nine. BB may instead spawn new copies of her Alter Egos if you do not already have them; any that she spawns will not count for capture or sale credits.    Servants    Captured Servants are no longer connected to the Throne of Heroes and will not affect their greater Heroic Spirits. All Servants exist in a quantum state where they are both fully incarnated and able to enter Spirit Form. Servants benefit from their homeland bonus in any version of their homeland, whether the past, their own time, the present, or the future. This does not include unrelated counterpart cultures and replaces the general background magical field rule. The body-modification suite is capable of changing Servants who have Golden Rule (Body), Divine Core of the Goddess, and other such skills.    Saber: Empyreal Eye overuse may cause Musashi to travel between worlds and eras on her own; if that happens and you have Rainbow Bridge, the portal room will connect to her new location as if it were intentional. She can learn to control this ability with practice. Artoria Alter has Cavall the 2nd as a familiar. Nero Claudius may access her Saber Venus form if you also have Altera. If you purchase Dioscuri, Castor or Pollux will be genderswapped so the two are identical twins once more, according to your orientation, or neither (or both) if you’re bi. Okita’s summer cyborgization cured her tuberculosis in canon; it remains cured here even if she only uses her Saber abilities.    Archer: The true love condition for Tomoe Gozen’s NP is transferred to you. Artemis has the mascot version of Orion as a familiar. Ishtar has Gugalanna Lily as a familiar.    Lancer: Artoria Lancer (not Alter) benefits from Goddess Rhongomyniad’s added power; the two will be treated as the same person. Purchased versions of Gareth have the memories of her fairy self from Lostbelt 6, in addition to her PHH version.    Rider: Sakamoto Ryouma has Oryou as a humanoid familiar; if you already have Oryou when you buy Ryouma, you’ll be refunded her full cost. Saint Martha has her dragon Tarrasque as a familiar. Nero Alter has Beast VI as a familiar. Habetrot will not be harmed by touching advanced technology, including her Black Barrel; purchased versions of her will have her memories from both Pan-Human History and Lostbelt 6.    Assassin: Hundred Faces Hassan’s main body is the adult female one. Carmilla’s Femme Fatale (False) does not affect her feelings toward you. Shuten Douji and Ibuki Douji are separate beings. Ibuki may be brought forth if you involve yourself in the events of Lostbelt 5.5, but the two oni are otherwise purchased and captured separately. Tamamo Vitch’s Independent Manifestation is limited to one local multiverse at a time.    Avenger: Space Ishtar (Ishtar Astoreth) can split off Astoreth and Space Ishtar/Rin into their own bodies, at will, and re-combine with them on contact.    Ruler: The Morgan le Fay of Pan-Human History has three distinct selves: her human aspect, Morgan, and her fairy aspect, Viviane, alongside her aspect as the inheritor of Britain’s mystics, Morgan le Fay. She can split off Morgan and Viviane into their own bodies, at will, and re-combine with them on contact.    Alter Ego: Kingprotea can control her size, all the way down to regular human height or the smallest you’ve been since the start of your journey, whichever is smaller.    Foreigner: Katsushika Oui has Tokitarou as a familiar; he’ll remain in the mental backseat while the two are fused."
+  },
+  {
+    "rating": 8,
+    "worldName": "Warframe"
+  },
+  {
+    "rating": 8,
+    "worldName": "Symphogear",
+    "additional": "All Gear users have their Gears; all Alchemists have Faust Robes. Soul Talent will guarantee full Gear compatibility for all canon Candidates, including the ones normally reliant on LiNKER. Contractors and other retinue members need a compatible Origin or Added Potential. Elfnein has a fully-functional adult body. Purchased versions of Kanade and Serena are their alternate-timeline versions from XDU. Carol has all four of her Autoscorers as familiars.",
+    "condition": [
+      {
+        "name": "Anime",
+        "rating": 8
+      },
+      {
+        "name": "XDU",
+        "rating": 10
+      }
+    ]
+  },
+  {
+    "rating": 8,
+    "worldName": "Rising of the Shield Hero"
   },
   {
     "rating": 8,
@@ -525,6 +1285,206 @@
         "rating": 5
       }
     ]
+  },
+  {
+    "rating": 8,
+    "worldName": "Honkai Impact 3rd",
+    "additional": "Each Herrscher qualifies for unique Alterzelu Symbiote theming. If you have Pocket Apartment and Apportation, valkyries may swap between different battlesuits (and their associated weapons) on the fly. Doctor MEI has a blank Divine Key that can temporarily connect to Herrscher cores, even those within other Divine Keys, and grant her a Herrscher form of her own at great physical expense.",
+    "condition": [
+      {
+        "name": "Start of canon",
+        "rating": 8
+      },
+      {
+        "name": "Europe 1470 CE",
+        "rating": 8
+      },
+      {
+        "name": "Previous Era",
+        "rating": 9
+      },
+      {
+        "name": "Second Eruption",
+        "rating": 9
+      },
+      {
+        "name": "Pre-Second Eruption",
+        "rating": 7
+      }
+    ]
+  },
+  {
+    "rating": 8,
+    "worldName": "Grim Dawn"
+  },
+  {
+    "rating": 8,
+    "worldName": "Final Fantasy X",
+    "additional": "Summons (general): Summons that you purchase or capture separately from their summoners will become active full-time; the summoner’s call will instead teleport them to her location. All of your summoners share the same summon pool. Summons that appeared in many different games will have your preferred design, not necessarily the one that matches the first summoner you purchased or captured. Summons (non-humanoid): Non-humanoid summons, including Phoenix, Valefor, and Anima, can switch between their humanoid and original forms at will. Anima’s human form can't use Pain or Oblivion, but knows all generic skills/spells from FFX by default. Her Aeon form is mobile, with no chains and a complete lower body. Her original lower half, 'the Shadow,' has its own complete lower body and lives in an explicit pocket universe. Oblivion feeds a target to the Shadow like normal. Anima may also temporarily switch places with her Shadow; this tends to result in extreme collateral damage. Other: White Mage has her 8-Bit Theater characterization. If you have a waifu from FFV, the four Crystals will spawn not too far out of your way, allowing you and your waifus access to the game’s job system. Lenna Tycoon has the wind drake Hiryu as a familiar - likewise for the other two female party members from FFV: Faris Scherwiz and her sea dragon Syldra, and Krile and her own wind drake that has no canon name. If you have at least one waifu from FFVII and Life’s a Beach or Grand Manor, Mako Springs will appear in your Home and produce natural Materia at an accelerated rate. If you visit Spira or have at least one waifu from FFX, you and all of your retinue will gain Sphere Grids; this may be one single shared grid, several grids shared by subsets of your retinue, or individual grids for everyone. Lightning, Vanille, and Fang have Odin, Hecatoncheir, and Bahamut, respectively.",
+    "condition": "Permanent crisis"
+  },
+  {
+    "rating": 8,
+    "worldName": "Final Fantasy VIII",
+    "condition": "Permanent crisis"
+  },
+  {
+    "rating": 8,
+    "worldName": "DC",
+    "condition": [
+      {
+        "rating": 8,
+        "name": "Mainline comics"
+      },
+      {
+        "rating": 7,
+        "name": "Young Justice"
+      },
+      {
+        "rating": 6,
+        "name": "DCAU"
+      },
+      {
+        "rating": 10,
+        "name": "Hell Dimension"
+      },
+      {
+        "rating": 9,
+        "name": "Injustice"
+      }
+    ]
+  },
+  {
+    "rating": 8,
+    "worldName": "Chrono Trigger",
+    "condition": [
+      {
+        "rating": 8,
+        "name": "Standard"
+      },
+      {
+        "rating": 7,
+        "name": "1999 CE"
+      },
+      {
+        "rating": 7,
+        "name": "Zeal (12)"
+      },
+      {
+        "rating": 6,
+        "name": "65"
+      },
+      {
+        "rating": 5,
+        "name": "600 CE"
+      },
+      {
+        "rating": 4,
+        "name": "1000 CE"
+      }
+    ]
+  },
+  {
+    "rating": 8,
+    "worldName": "Arpeggio of Blue Steel"
+  },
+  {
+    "rating": 8,
+    "q": true,
+    "worldName": "I’m a Spider, So What?",
+    "additional": "Visiting the setting or having any waifu from the work will give you access to its leveling systems. Fatality Defense will block the local leveling system’s negative effects on its users."
+  },
+  {
+    "rating": 8,
+    "worldName": "Fate/Grand Order",
+    "additional": "All Olympian gods, including Aphrodite, Artemis, and Demeter, can change to their machine forms and have their divine nanomachines. For the purposes of Exit Stage Left and Rainbow Bridge, each of Singularities 1-7, the Pseudo-Singularities, the Servant Universe, and the Lostbelts count as separate worlds, so that completing each one unlocks a new world through our systems. This also includes some other major events, such as GUDAGUDA, SE.RA.PH, Ooku, and Imaginary Scramble. The primary Fate/Grand Order world will count as completed at the end of the Observer on Timeless Temple or (if the contractor arrives afterward) Cosmos in the Lostbelt arcs.    Pseudo-Servants and Other Alternates    The following pairs are mutually exclusive at chargen: Saint Kiara and Devil Kiara; Nero and Nero Alter; Medea and Medea Lily; Medusa and Gorgon. If you buy a Pseudo-Servant waifu perk at any time after you purchased or captured them, the Servant’s memories and personality will seamlessly integrate into the host’s, in much the same way as the Memoria perk or Extra and Substitute origins.    Not mutually exclusive: Kama and BB with any Sakura and each other; Ereshkigal and Space Ishtar with any Rin and each other; Scáthach and Skadi; Carmilla and Elizabeth Bathory."
+  },
+  {
+    "rating": 9,
+    "worldName": "Warhammer Fantasy",
+    "additional": "The Lady and Lileath would be identical twins if not for their different races; if you have both, they’ll argue over which one is the older sister. Vampires no longer suffer from any of their weaknesses. Hellebron and Morathi are both young again. Khalida is alive and young again. Valkia is metaphysically separated from Khorne.",
+    "condition": [
+      {
+        "name": "Mousillon, Chaos Wastes, etc.",
+        "rating": 8
+      },
+      {
+        "name": "No active crisis",
+        "rating": 7
+      },
+      {
+        "name": "Standard",
+        "rating": 9
+      }
+    ]
+  },
+  {
+    "rating": 9,
+    "worldName": "Soulsborne",
+    "additional": "Anastacia of Astora and the Darkmoon Knightess allows you and your waifus to pay for level-ups with soul energy, just like their counterparts from the other games.",
+    "condition": "Demon's Souls, Dark Souls 1-3"
+  },
+  {
+    "worldName": "Overlord (LN)",
+    "rating": 9,
+    "additional": "Substituting into a member of Nazarick before the server shutdown will guarantee the existence of a second guild in the new world, hostile to the first and of comparable power. Its members will all be original characters. “Multiple Active Guilds” may have anywhere from three to forty guilds.",
+    "condition": [
+      {
+        "name": "New World (Nazarick Member)",
+        "rating": 1
+      },
+      {
+        "name": "Old World (Cyberpunk Dystopia)",
+        "rating": 4
+      },
+      {
+        "name": "New World (Against Nazarick)",
+        "rating": 8
+      },
+      {
+        "name": "New World (multiple active guilds)",
+        "rating": 9
+      }
+    ]
+  },
+  {
+    "rating": 9,
+    "worldName": "Eclipse Phase"
+  },
+  {
+    "rating": 9,
+    "worldName": "Dragonball"
+  },
+  {
+    "rating": 10,
+    "worldName": "Warhammer 40K"
+  },
+  {
+    "rating": 10,
+    "worldName": "Shin Megami Tensei",
+    "additional": "All Persona users can manifest their abilities in the real world. Velvet Room attendants (Elizabeth, Margaret, Lavenza) can activate your Personas, not just Izanami or Marie. Lavenza can split into Caroline and Justine, at will, and merge back with physical contact.",
+    "condition": [
+      {
+        "name": "Mainline series",
+        "rating": 10
+      },
+      {
+        "name": "Persona 3",
+        "rating": 5
+      },
+      {
+        "name": "Persona 5",
+        "rating": 4
+      },
+      {
+        "name": "Persona 4",
+        "rating": 3
+      }
+    ]
+  },
+  {
+    "rating": 10,
+    "worldName": "Rifts"
   },
   {
     "rating": 10,
@@ -629,96 +1589,9 @@
     ]
   },
   {
-    "rating": 4,
-    "worldName": "Madoka Magica",
-    "additional": "Soul Gems: A meguca's soul is bilocated between her body and her soul gem such that she no longer falls unconscious if the two are separated by more than 100 meters and no longer dies if her soul gem is destroyed. Strictly speaking, the soul gem is only required for its functions as an item (e.g. transforming & detransforming, detecting magic, etc), and she may operate and use her powers without it in a pinch - but her soul gem is as much a part of her magical girl regalia as her magical girl uniform or signature weapon, and she may always recreate it or recall it to herself at will as long as she's alive to do so. Finally, a meguca won't transform into a witch if her soul gem darkens completely (though she is still 'out of' magic while it remains in such a state), and she no longer needs an object such as a grief seed in order to purge that darkness from her gem. Just as using magic and falling into despair causes her soul gem to dim, true hope and other deeply felt positive emotions on her part may restore her soul gem's shine. The magic pool in a meguca’s soul gem naturally recovers at a rate of one percent every minute, plus or minus the above effects of positive or negative emotions, respectively. If a gem darkens completely, its magic will not be usable, even if full, until the meguca deeply feels a positive emotion. Amano Suzune:  If you have a Puella Magi in your retinue and have taken Salvation, Amano Suzune may (if present) copy their magic after their Doppel fades as if she had slain a Witch. Alternatively, if you have an Adjuster, the Adjuster may, through contact with Suzune's and another meguca's soul gems, overwrite Suzune's copied magic with the magic of the girl in question. (Adjusters themselves are ineligible as copy targets.) By default, any purchased Suzune Amano has her magic pre-set to Tsubaki's fire manipulation magic. Other Characters: You may choose whether a purchased Kureha Yuna has her original personality or what she became after her hatred and despair caused her magical girl form to grow an oni horn.  If you have Isabeau and any binding method, her meguca contractees will be bound as if you had used the Stamp on them. If for any reason a member of your retinue is incapable of being communicated with via telepathy, Sudachi's mumbling will instead be perfectly understandable to them. You and all members of your retinue can see through Sana's passive invisibility, regardless of whether you have any magical abilities or not. Mitama and Momoko can, at will, transform into their summer mermaid version in addition to their normal magical girl transformation, without any need for Mitama to alter their normal magical girl transformation. If you have Mitama, or Momoko and another Adjuster, she can grant any magical girl from the setting the same ability. Once in your retinue, Himena will believe you to be her dead boyfriend and can't be convinced otherwise. If you are killed and Himena is still alive, your soul will be tethered to her body. You can communicate with her telepathically, share her senses, and authorize her to make purchases from the Catalog in your place. R.I.P rules will not activate unless Himena is killed while you are dead.",
-    "condition": [
-      {
-        "name": "TOS, Magia Record (in Kamihama)",
-        "rating": 4
-      },
-      {
-        "name": "Tart Magica",
-        "rating": 5
-      }
-    ]
-  },
-  {
-    "rating": 6,
-    "worldName": "Made in Abyss",
-    "additional": "Mitty maintains her cursed form’s unkillability even as a human."
-  },
-  {
-    "rating": 4,
-    "worldName": "Macross",
-    "condition": "Zero",
-    "additional": "Micronization: Zentraedi and Meltrandi characters are Microne (human)-sized by default. The presence of one will add a Micronization chamber to your Grand Manor, if you have one. Advanced Tempest Runes (Body) allows them, and any other member of our retinue who’s used a Micronization chamber, to shift between Microne and Macrone forms on the fly. Body Talent is enough to let Klan Klein maintain her adult figure while micronized. Additionally, all Zentraedi and Meltrandi combatants have a personal Pocket Space for their battlesuits. Battlesuits stored this way will automatically resize themselves to fit their wearer, regardless of whether the wearer is in Microne or Macrone form. Other: Mylene has her pet… tribble(?) Guvava as a familiar. We don’t actually know what Guvava is, just that it’s cute and fuzzy. Ranka has her squirrel-like pet Ai-kun as a familiar."
-  },
-  {
-    "rating": 2,
-    "worldName": "Lyrical Nanoha",
-    "additional": "Familiars: Tsukimura Suzuka is a vampire, as implied by Triangle Hearts. Fate Testarossa has Arf as a humanoid familiar. Precia Testarossa has Linith as a humanoid familiar. Signum has Agito as a humanoid familiar. Hayate has Reinforce Zwei as a humanoid familiar. Caro has Fried as a familiar. Lutecia has Garyu as a humanoid familiar and Hakutenou and her other summoned creatures as familiars. Humanoid Familiar discounts: If you already have Arf when you buy Fate, Linith when you buy Precia, Agito when you buy Signum, Garyu when you buy Lutecia, or Reinforce Zwei when you buy Hayate, you’ll be refunded the appropriate familiars’ full costs. If you’ve paid at least 200 for Reinforce Zwei and any Wolkenritter (Shamal, Signum, Vita, Zafira), you get the rest for free and their cost is refunded down to 200. If you have the full set of Wolkenritter, Hayate’s price is discounted to 50. The Numbers: The Catalog entry “The Numbers” may be bought twice. If you buy six Numbers a la carte, you’ll be refunded the cost of four of them, as if you had paid for a set of six; if you buy twelve a la carte, you’ll be refunded the cost of eight of them, as if you had paid for two sets of six.",
-    "condition": [
-      {
-        "name": "No active crisis (Vivid, Vivid Strike)",
-        "rating": 2
-      },
-      {
-        "name": "TOS, A's, StrikerS",
-        "rating": 3
-      }
-    ]
-  },
-  {
-    "rating": 8,
-    "worldName": "Honkai Impact 3rd",
-    "additional": "Mei has Kurikara as a familiar.",
-    "condition": [
-      {
-        "name": "Start of canon",
-        "rating": 8
-      },
-      {
-        "name": "Previous Era",
-        "rating": 9
-      },
-      {
-        "name": "Second Eruption",
-        "rating": 9
-      },
-      {
-        "name": "Pre-Second Eruption",
-        "rating": 7
-      }
-    ]
-  },
-  {
-    "rating": 8,
-    "worldName": "Grim Dawn"
-  },
-  {
-    "rating": 8,
-    "worldName": "Final Fantasy X",
-    "additional": "Summons (general): Summons that you purchase or capture separately from their summoners will become active full-time; the summoner’s call will instead teleport them to her location. All of your summoners share the same summon pool. Summons that appeared in many different games will have your preferred design, not necessarily the one that matches the first summoner you purchased or captured. Summons (non-humanoid): Non-humanoid summons, including Phoenix, Valefor, and Anima, can switch between their humanoid and original forms at will. Anima’s human form can't use Pain or Oblivion, but knows all generic skills/spells from FFX by default. Her Aeon form is mobile, with no chains and a complete lower body. Her original lower half, 'the Shadow,' has its own complete lower body and lives in an explicit pocket universe. Oblivion feeds a target to the Shadow like normal. Anima may also temporarily switch places with her Shadow; this tends to result in extreme collateral damage. Other: White Mage has her 8-Bit Theater characterization. If you have a waifu from FFV, the four Crystals will spawn not too far out of your way, allowing you and your waifus access to the game’s job system. Lenna Tycoon has the wind drake Hiryu as a familiar - likewise for the other two female party members from FFV: Faris Scherwiz and her sea dragon Syldra, and Krile and her own wind drake that has no canon name. If you have at least one waifu from FFVII and Life’s a Beach or Grand Manor, Mako Springs will appear in your Home and produce natural Materia at an accelerated rate. If you visit Spira or have at least one waifu from FFX, you and all of your retinue will gain Sphere Grids; this may be one single shared grid, several grids shared by subsets of your retinue, or individual grids for everyone. Lightning, Vanille, and Fang have Odin, Hecatoncheir, and Bahamut, respectively.",
-    "condition": "Permanent crisis"
-  },
-  {
-    "rating": 8,
-    "worldName": "Final Fantasy VIII",
-    "condition": "Permanent crisis"
-  },
-  {
     "rating": 10,
     "worldName": "Exalted",
     "additional": "Exalts: All purchased or captured Exalts are free from the Great Curse, Resonance, Torment, Clarity, and all other Limit Break effects. If you have a Glorious Shroud, you may reformat any of your Abyssal Exalts, including yourself, into Solars of the appropriate caste; the same applies in reverse to Solars if you have a Burial Shroud. If you have both Shrouds, your Solar and Abyssal Exalts may choose whether to be Solar or Abyssal at any time, but only one or the other. Even if you hit the 10-purchase Template Stacking I cap on multiple types of Exalts, each individual member of your retinue may only have one Exaltation at a time. This will generally be the one most suited to the individual in question, but you have the final say on who gets what. Generic Exalted DLC: Entries on this page are not actual characters and cannot be purchased. They are instead placeholders for capture targets or the Possess and Substitute origins. Each generic capture bounty (each combination of caste and essence rating) may only be claimed once. When building an Exalted character of Essence 2, just use normal Exalted character generation. For Essence 3, assume that the character has 150 experience income, in addition to the cost of the essence increase. For Essence 4, assume that the character has 400 experience income; Essence 5,750; and an additional 750 for each essence level after that."
-  },
-  {
-    "rating": 9,
-    "worldName": "Eclipse Phase"
-  },
-  {
-    "rating": 9,
-    "worldName": "Dragonball"
   },
   {
     "rating": 10,
@@ -757,727 +1630,19 @@
     "condition": "Diablo 3"
   },
   {
-    "rating": 8,
-    "worldName": "DC",
-    "condition": [
-      {
-        "rating": 8,
-        "name": "Mainline comics"
-      },
-      {
-        "rating": 7,
-        "name": "Young Justice"
-      },
-      {
-        "rating": 6,
-        "name": "DCAU"
-      },
-      {
-        "rating": 10,
-        "name": "Hell Dimension"
-      },
-      {
-        "rating": 9,
-        "name": "Injustice"
-      }
-    ]
-  },
-  {
-    "rating": 8,
-    "worldName": "Chrono Trigger",
-    "condition": [
-      {
-        "rating": 8,
-        "name": "Standard"
-      },
-      {
-        "rating": 7,
-        "name": "1999 CE"
-      },
-      {
-        "rating": 7,
-        "name": "Zeal (12)"
-      },
-      {
-        "rating": 6,
-        "name": "65"
-      },
-      {
-        "rating": 5,
-        "name": "600 CE"
-      },
-      {
-        "rating": 4,
-        "name": "1000 CE"
-      }
-    ]
-  },
-  {
-    "rating": 6,
-    "worldName": "Chainsaw Man",
-    "additional": "Devil Contractors have their devils as familiars.",
-    "condition": [
-      {
-        "name": "Earth",
-        "rating": 6
-      },
-      {
-        "name": "Hell",
-        "rating": 8
-      }
-    ]
-  },
-  {
-    "rating": 7,
-    "worldName": "Cautious Hero",
-    "condition": [
-      {
-        "name": "Gaeabrande",
-        "rating": 7
-      },
-      {
-        "name": "Ixphoria",
-        "rating": 8
-      }
-    ]
-  },
-  {
-    "rating": 6,
-    "worldName": "Borderlands",
-    "condition": [
-      {
-        "name": "Pandora (no active Vault)",
-        "rating": 6
-      },
-      {
-        "name": "Pandora (active Vault)",
-        "rating": 7
-      }
-    ]
-  },
-  {
-    "rating": 6,
-    "worldName": "Bleach",
-    "condition": [
-      {
-        "name": "Standard",
-        "rating": 6
-      },
-      {
-        "name": "Hueco Mundo",
-        "rating": 8
-      }
-    ]
-  },
-  {
     "rating": 10,
     "worldName": "BlazBlue"
-  },
-  {
-    "rating": 5,
-    "worldName": "Black Clover",
-    "condition": "Start of canon"
-  },
-  {
-    "rating": 5,
-    "worldName": "Babylon 5"
-  },
-  {"worldName":"Avatar: The Last Airbender","rating":4,"condition":[{"name":"Spirit Intervention","rating":7}]},
-  {
-    "rating": 8,
-    "worldName": "Arpeggio of Blue Steel"
-  },
-  {
-    "rating": 5,
-    "worldName": "Arknights",
-    "condition": [
-      {
-        "name": "Standard",
-        "rating": 5
-      },
-      {
-        "name": "Chernobog, Kazdel",
-        "rating": 6
-      }
-    ]
-  },
-  {
-    "rating": 6,
-    "worldName": "Akame ga Kill!"
-  },
-  {
-    "rating": 4,
-    "worldName": "Ace Combat",
-    "condition": [
-      {
-        "name": "Standard",
-        "rating": 4
-      },
-      {
-        "name": "AC 7",
-        "rating": 5
-      },
-      {
-        "name": "AC 4",
-        "rating": 3
-      }
-    ]
-  },
-  {
-    "rating": 4,
-    "worldName": "A Song of Ice and Fire",
-    "additional": "Dragon riders have their dragons as familiars.",
-    "condition": "Books continuity"
-  },
-  {
-    "rating": 1,
-    "worldName": "(Slice of Life anime/manga)"
-  },
-  {
-    "rating": 4,
-    "worldName": "Log Horizon",
-    "additional": "All characters benefit from Elder Tale mechanics, tied to your Demiplane or Dungeon if you have one.",
-    "condition": [
-      {
-        "name": "Akibahara",
-        "rating": 4
-      },
-      {
-        "name": "Yamato Server (not Akibahara)",
-        "rating": 5
-      },
-      {
-        "name": "Outside Yamato Server",
-        "rating": 6
-      }
-    ]
-  },
-  {
-    "rating": 4,
-    "worldName": "Legend of Zelda",
-    "additional": "Midna cannot take her imp form by default and would strongly prefer not to ever again. She instead has a strong affinity for shadow magic, capable of melting into shadows and teleporting through a world’s Twilight Realm, even if it doesn’t have one. The imp form may still be remade as a shadow magic spell, for use on herself or others. Fi brings the Master Sword with her, as if she was a Unison Device from MGLN; its aesthetics may change if she’s bound by a Symbiote.",
-    "condition": "Breath of the Wild"
-  },
-  {
-    "rating": 4,
-    "worldName": "Legend of the Galactic Heroes",
-    "condition": "Canon era"
-  },
-  {
-    "rating": 6,
-    "worldName": "League of Legends",
-    "additional": "Anivia and Rek’Sai can switch between humanoid and bestial forms."
-  },
-  {
-    "rating": 5,
-    "worldName": "KonoSuba",
-    "additional": "If you have Grand Manor, Luna gets her Adventurer Card-issuing equipment as a workshop. Purchased versions of Luna will carry five blank cards to hold her buyer over until then.",
-    "imagen": "https://m.media-amazon.com/images/M/MV5BNDNiOWM5NGItNzY4NC00MDg1LTljZjctYzViNmRlOTNhOWM2XkEyXkFqcGdeQXVyNjc3OTE4Nzk@._V1_FMjpg_UX1000_.jpg"
-  },
-  {
-    "rating": 7,
-    "worldName": "Kingdom Hearts"
-  },
-  {
-    "rating": 5,
-    "worldName": "Kimetsu no Yaiba/Demon Slayer",
-    "condition": "Taishou-era Japan"
-  },
-  {
-    "rating": 1,
-    "worldName": "Iain Banks' Culture",
-    "condition": [
-      {
-        "name": "Within The Culture",
-        "rating": 1
-      },
-      {
-        "name": "Outside The Culture",
-        "rating": 9
-      }
-    ]
-  },
-  {
-    "rating": 6,
-    "worldName": "High School DxD",
-    "additional": "Purchased and captured Angels, including Fallen, may Fall and Rise at your discretion. High-class Devils do not have their own Evil Pieces, nor do Angels have their Brave Saint cards. If you purchase Ophis, or capture her before her spawn Lilith exists, you will get Lilith for free. Lilith will not be worth capture credits if you acquire her in this way.",
-    "condition": [
-      {
-        "name": "Standard",
-        "rating": 6
-      },
-      {
-        "name": "LNs 3-12",
-        "rating": 7
-      },
-      {
-        "rating": 8,
-        "name": "LNs 13-21"
-      }
-    ]
-  },
-  {
-    "rating": 4,
-    "worldName": "Hearts of Iron 4",
-    "condition": [
-      {
-        "name": "Mod: Red Flood",
-        "rating": 4
-      },
-      {
-        "name": "Mod: Red World",
-        "rating": 4
-      },
-      {
-        "name": "Mod: Thousand-Week Reich",
-        "rating": 4
-      },
-      {
-        "name": "Mod: The New Order",
-        "rating": 5
-      },
-      {
-        "name": "Mod: Equestria at War",
-        "rating": 6
-      }
-    ]
-  },
-  {
-    "rating": 7,
-    "worldName": "Guild Wars",
-    "condition": [
-      {
-        "name": "Dragons awake",
-        "rating": 7
-      },
-      {
-        "name": "Cantha pre-Jade Wind",
-        "rating": 6
-      },
-      {
-        "name": "Several dragons awake",
-        "rating": 8
-      },
-      {
-        "name": "Elder Dragons asleep",
-        "rating": 5
-      }
-    ]
-  },
-  {
-    "rating": 7,
-    "worldName": "Girl Genius",
-    "condition": [
-      {
-        "name": "Europa (peacetime)",
-        "rating": 7
-      },
-      {
-        "name": "Europa (wartime)",
-        "rating": 8
-      }
-    ]
-  },
-  {
-    "rating": 3,
-    "worldName": "Game of Thrones",
-    "condition": "Show continuity"
-  },
-  {
-    "rating": 3,
-    "worldName": "Fullmetal Alchemist",
-    "additional": "Lust has her 2003 characterization. Izumi and Julia’s bodies are fully intact."
-  },
-  {"worldName":"Fire Emblem","rating":5,"additional":"Second-generation characters from Jugdral, Awakening, and Fates can have whichever gameplay-valid parents you want. Robin, Corrin, Byleth, and other Avatars can have any gameplay-legal build. Cavaliers, Pegasus Knights, Wyvern Knights, and other mounted units have their mounts as familiars.","condition":[{"name":"Awakening (present)","rating":5},{"name":"Three Houses (post-timeskip)","rating":5},{"name":"Three Houses (pre-timeskip)","rating":4},{"name":"Awakening (Doomed Future)","rating":8},{"name":"Fates (present)","rating":5}]},
-  {
-    "rating": 5,
-    "worldName": "Final Fantasy XV",
-    "condition": [
-      {
-        "name": "pre-crystal",
-        "rating": 5
-      },
-      {
-        "name": "during timeskip",
-        "rating": 6
-      },
-      {
-        "name": "post-timeskip",
-        "rating": 7
-      }
-    ]
-  },
-  {
-    "rating": 5,
-    "worldName": "Final Fantasy XIV",
-    "condition": [
-      {
-        "name": "The Source",
-        "rating": 5
-      },
-      {
-        "name": "The First",
-        "rating": 6
-      }
-    ]
-  },
-  {
-    "rating": 7,
-    "worldName": "Final Fantasy VII"
-  },
-  {
-    "rating": 7,
-    "worldName": "Final Fantasy IX"
-  },
-  {
-    "rating": 7,
-    "worldName": "Fallout"
-  },
-  {
-    "rating": 5,
-    "worldName": "Fairy Tail",
-    "additional": "Mavis has control over her death magic. Purchasing Irene gets you Heine & Juliet for free as her familiars. Kinana can assume her Cubellios form at will."
-  },
-  {
-    "rating": 7,
-    "worldName": "Evangelion",
-    "additional": "The “Curse of EVA,” that halts pilots’ aging in Rebuild, does not apply. All pilots can learn to manipulate their AT fields; this counts as a mystical art and is affected by Soul Talent and Advanced Template Stacking (Enlightened). Akagi Naoko may be captured posthumously by attacking MAGI instead; if so, she will be a set of triplet software AIs for whom separate bodies may be built to contain. Ikari Yui and Souryuu Kyoko Zeppelin have their full scientific knowledge, full control over their AT fields, and can transform into EVA-01 and -02, respectively. When transformed, their AT strengths are both on par with the stronger canon Angels. They can also manifest shipgirl-style avatars inside their cockpits, so you can ride them while you ride them. Original and Rebuild characters will recognize each other, if shared-timeline versions of themselves would have met.",
-    "condition": [
-      {
-        "rating": 7,
-        "name": "main series"
-      },
-      {
-        "rating": 8,
-        "name": "End, post-timeskip Rebuild"
-      }
-    ]
-  },
-  {
-    "rating": 6,
-    "worldName": "Dune",
-    "condition": "First book"
-  },
-  {"worldName":"Dresden Files","rating":5,"condition":[{"name":"Post Changes","rating":6},{"rating":7,"name":"WWII"}]},
-  {
-    "rating": 7,
-    "worldName": "Drakengard",
-    "condition": "Drakengard 3"
-  },
-  {
-    "rating": 6,
-    "worldName": "Dragon Age"
-  },
-  {
-    "rating": 5,
-    "worldName": "Danmachi",
-    "additional": "Non-goddess waifus can have their Falnas updated through an app on the company smart device. If you visit this setting or have at least one deity from it, any deities in your retinue from other settings can learn how to grant and manipulate Falnas. If your starting build has Extra or Paper Trail and a foreign deity, that deity will already know how. All deities in your retinue who know how to manipulate Falnas can update any of your group’s normally, as a shared pool. This also applies to you, if you have a Falna for any reason. You will qualify as a deity yourself if you have the Heritage perks Elder Dragon, Essence Upload, or Prophet of Paradox, or achieve godhood by any other means.",
-    "condition": [
-      {
-        "rating": 5,
-        "name": "Canon Orario"
-      },
-      {
-        "rating": 7,
-        "name": "Uncapped dungeon"
-      }
-    ]
-  },
-  {
-    "rating": 3,
-    "worldName": "Danganronpa",
-    "condition": [
-      {
-        "rating": 3,
-        "name": "Standard"
-      },
-      {
-        "rating": 4,
-        "name": "Ultra Despair Girls, V3"
-      }
-    ]
-  },
-  {
-    "rating": 3,
-    "q": true,
-    "worldName": "Ah! My Goddess",
-    "additional": "Waifus can manipulate any local universe’s operating system as if it were Yggdrasil or Nidhogg, with their same level of access rights. This isn’t always a good idea without protection."
-  },
-  {
-    "rating": 5,
-    "q": true,
-    "worldName": "Attack on Titan",
-    "additional": "Titan Shifting no longer limits a retinue member’s lifespan."
-  },
-  {
-    "rating": 3,
-    "q": true,
-    "worldName": "Bofuri",
-    "additional": "All characters benefit from their New World Online statistics (taking the higher value of the in-game number vs. the equivalent of their real-world abilities), skills, equipment, and pets. They no longer have explicit game mechanics, such as leveling or chat, but can still quick-change both old and new equipment as desired."
-  },
-  {
-    "rating": 5,
-    "q": true,
-    "worldName": "Darling in the Franxx",
-    "additional": "All pilots and the Klaxosaur Princess can manifest power armor versions of their mecha as magical power armor; these are compatible with the Shrouds. 02 and the Klaxosaur Princess may also transform into full-sized mecha."
   },
   {
     "rating": 10,
     "q": true,
     "worldName": "Gurren Lagann",
-    "additional": "Spiral Power is an infinite escalation engine by nature, but could never instantly achieve its full might. Retinue members who can use it may only escalate to match your retinue’s highest effective tier after step 5. T11s such as Simon and Anti-Spiral Nia will obsolete this restriction."
-  },
-  {
-    "rating": 4,
-    "q": true,
-    "worldName": "Hellsing",
-    "additional": "Vampires no longer suffer from any of their weaknesses."
-  },
-  {
-    "rating": 6,
-    "q": true,
-    "worldName": "Hololive",
-    "additional": "All characters are drawn from the Hololive Alternative setting. Haato and Haachama can merge into one body and split back into two at will; as long as one is alive, the other will resurrect as if you have Warranty Plan."
-  },
-  {
-    "rating": 8,
-    "q": true,
-    "worldName": "I’m a Spider, So What?",
-    "additional": "Visiting the setting or having any waifu from the work will give you access to its leveling systems. Fatality Defense will block the local leveling system’s negative effects on its users."
-  },
-  {
-    "rating": 4,
-    "q": true,
-    "worldName": "Magi Series",
-    "additional": "All characters who have Household Vessels have the djinn inside their vessel as a familiar."
-  },
-  {
-    "rating": 4,
-    "q": true,
-    "worldName": "Monogatari Series",
-    "additional": "Senjougahara Hitagi can consciously control her effective weight, as if using a slider that starts at 0G and goes as high as she might train for. Gravity over 1G cannot affect her if she doesn’t want it to. She also has a personal Pocket Space equal in size to the basic one offered to contractors. Hachikuji Mayoi can apply a Lost Cow status effect to a nearby target for 24 hours or until the target finds what they're looking for, whichever comes first, and is otherwise the tough adult version from Kabukimonogatari. Hanekawa Tsubasa can transform between her regular self and Black Hanekawa at will. Kiss-Shot Acerola Orion Heart-Under-Blade no longer suffers from any of her vampire weaknesses."
-  },
-  {
-    "rating": 3,
-    "q": true,
-    "worldName": "Ranma ½",
-    "additional": "Ranma’s form changes or locks to fit your orientation. If purchased and mode-locked as a girl, she will believe that she was born as such but raised as a boy."
-  },
-  {
-    "rating": 6,
-    "q": true,
-    "worldName": "Re:Creators",
-    "additional": "Hikayu has her martial arts powerup. Meteora’s “Delusion” appearance is always available as a preset if you have at least Basic Tempest Runes, Transformation Circle, or Adjustment Field."
-  },
-  {
-    "rating": 5,
-    "q": true,
-    "worldName": "Re:Zero",
-    "additional": "Rem and Ram both have one horn. Frederica has her transformation crystal. Emilia has Puck as a familiar."
-  },
-  {
-    "rating": 2,
-    "q": true,
-    "worldName": "Seishun Buta Yarou (Rascal)",
-    "additional": "Sakurajima Mai can disappear from all others' memories and direct and indirect perception. This power is inactive by default. You and all purchased and captured waifus are immune. Koga Tomoe can create and end time loops of up to 30 days - basically Akemi Homura minus Time Stop and all non-temporal abilities. You and all purchased and captured waifus are aware of Tomoe's loops. Futaba Rio can spawn one clone of herself at a time and live both lives separately. Both Rios are equally real until one despawns. Toyohama Nodoka can swap minds and souls between bodies. Her time limit is 72 hours, unless she swaps herself, in which case the effect is indefinite until she cancels it. If you are part of the swap, and your original body takes fatal damage, you’re stuck until the body can be resurrected (or Warranty Plan brings back the other part of the swap) and the swap reversed. If the body you’re swapped into takes fatal damage, you will swap back just before death. Makinohara Shouko is the adult version from the movie. Her time travel method isn't particularly versatile, but it doesn't need technology. Azusagawa Kaede gives all of your waifus cute, animal-themed onesies."
-  },
-  {
-    "rating": 2,
-    "q": true,
-    "worldName": "Sword Art Online",
-    "additional": "All characters with profiles in Sword Art Online, Alfheim Online, Gun Gale Online, and other VRMMOs will benefit from their toons’ statistics, skills, equipment, and other factors, but only from one toon at a time. They can quick-change between each profile as desired."
-  },
-  {
-    "rating": 2,
-    "q": true,
-    "worldName": "Tenchi Muyo!",
-    "additional": "Mitoto’s teleportation ability works as long as she has a mop or other cleaning tool in her hands. Anyone she brings with her must have one as well."
-  },
-  {
-    "rating": 3,
-    "q": true,
-    "worldName": "Those Who Hunt Elves",
-    "additional": "Ritsuko has her cat-possessed tank Mihke as a familiar."
-  },
-  {
-    "rating": 4,
-    "q": true,
-    "worldName": "Bioshock Infinite",
-    "additional": "Elizabeth’s Tears are limited to the local multiverse surrounding wherever she happens to be at the time."
-  },
-  {
-    "worldName": "Castlevania",
-    "rating": 5,
-    "q": true,
-    "additional": "The Lecarde sisters are humans when first bought. Carmilla no longer suffers from her vampire weaknesses.",
-    "condition": [
-      {
-        "name": "2017 Show",
-        "rating": 6
-      }
-    ]
-  },
-  {
-    "rating": 4,
-    "q": true,
-    "worldName": "Darkstalkers",
-    "additional": "If you purchase Morrigan, you get Lilith for free. If you already have Lilith when you purchase Morrigan, you’ll be refunded Lilith’s full cost."
-  },
-  {
-    "rating": 6,
-    "q": true,
-    "worldName": "Genshin Impact",
-    "additional": "Lumine (and Aether) has the T1 version of Paimon as a humanoid familiar. If you have both, they’ll share her."
-  },
-  {"q": true, "worldName":"Golden Sun","rating":5,"additional":"If you have any Adept in your retinue, a full set of the original 72 Djinn will appear in or near your path, allowing you and your waifus access to the game’s class system. Some sidequesting may be required. If you have Conjunction, retinue members within your network can access any combination of nine active (“Set”) Djinn that you’ve acquired. Djinn on standby or recovering from a summoning are on standby or recovery for everyone they’re connected to. Without Conjunction, this feature may still be accessed through certain Heritage perks such as the third stage of Philosopher’s Transmortality Engine.","condition":[{"name":"No Crisis","rating":5},{"rating":6,"name":"Events of GS1"},{"name":"Events of GS2","rating":7}]},
-  {
-    "rating": 4,
-    "q": true,
-    "worldName": "Grandia",
-    "additional": "Sue has Puffy as a familiar."
-  },
-  {
-    "rating": 7,
-    "q": true,
-    "worldName": "Halo",
-    "additional": "Cortana will be plugged into your smart device. The Tier 5 version of her reflects her status at the end of the original trilogy. Body Talent will give Spartans a functioning sex drive."
-  },
-  {
-    "rating": 4,
-    "q": true,
-    "worldName": "King of Fighters",
-    "additional": "Hotaru has Itokatsu as a familiar."
-  },
-  {
-    "rating": 6,
-    "q": true,
-    "worldName": "Metroid",
-    "additional": "X-Parasites are exceedingly dangerous. Multiple development and production sites have been lost due to X-involved security breaches. Even when all precautions are followed, the X can still find a way to break containment. For this reason, we no longer pay out any rewards for the SA-X’s capture, and any X-infected specimens you sell back to us will be fed to Metroids immediately."
-  },
-  {
-    "rating": 6,
-    "q": true,
-    "worldName": "Mortal Kombat",
-    "additional": "Frost has her cybernetics, but is fully capable of intercourse and has her original reproductive organs. Kronika has not absorbed Cetrion, and does not have her crown, without a waifu perk."
-  },
-  {
-    "rating": 6,
-    "q": true,
-    "worldName": "Okami",
-    "additional": "Princess Fuse has all eight Canine Warriors as familiars. They’re all regular dogs, not doggirl waifus. Demon Lord Ninetails is exactly what she presents herself as, not the elderly one-tailed male fox of canon."
-  },
-  {
-    "rating": 3,
-    "q": true,
-    "worldName": "Overwatch",
-    "additional": "D.Va has her personal mech. Ashe has B.O.B. as a familiar. Mei has Snowball as a familiar."
-  },
-  {
-    "rating": 5,
-    "q": true,
-    "worldName": "Princess Connect! Re-Dive",
-    "additional": "Rima’s forms are switched compared to canon. The girl is her normal form and the llama an at-will transformation. All characters benefit from their Legend of Astrum abilities and statistics even beyond the game’s virtual world. Pecorine, Kyaru, Kokkoro, Rei, Hiyori, and Yui are freely capable of assuming their Princess Forms without outside assistance."
-  },
-  {
-    "rating": 4,
-    "q": true,
-    "worldName": "Remember Me",
-    "additional": "Once captured, Nilin’s power will become tech-assisted psionics. She can now target anyone, but targets with sufficient mental defenses may detect and block any changes."
-  },
-  {
-    "rating": 3,
-    "q": true,
-    "worldName": "Sid Meier’s Alpha Centauri",
-    "additional": "Faction leaders have mostly-complete tech databases up to TL8, with some variation depending on the leader’s specialties: Aki has everything except the soft sciences, Santiago has all military techs, Deirdre has all environmental and psionics techs, etc. They can re-develop the rest of the tree with their own time and resources."
-  },
-  {
-    "rating": 5,
-    "q": true,
-    "worldName": "Tales Series",
-    "additional": "Colette’s angel ancestry is unlocked. Sheena has pacts with all her summons. Gelda has her replica’s powers, even if she’s the original."
-  },
-  {
-    "rating": 6,
-    "q": true,
-    "worldName": "Tokyo Mirage Sessions",
-    "additional": "All Mirage Masters can call their Mirages and enter Carnage Form in the real world. Any Mirage may be genderbent according to your preferences."
-  },
-  {
-    "rating": 2,
-    "q": true,
-    "worldName": "Tomb Raider",
-    "additional": "2013: Sam has Himiko’s powers and knowledge of how to use them, but her personality is her own."
-  },
-  {
-    "rating": 6,
-    "q": true,
-    "worldName": "Xenoblade Chronicles 1",
-    "additional": "Without the waifu perk, Fiora is only her human version. High Entians can transform into Telethia and back at will."
-  },
-  {
-    "rating": 3,
-    "q": true,
-    "worldName": "Avatar: Legend of Korra",
-    "additional": "Korra has her polar bear dog Naga as a familiar."
+    "additional": "Spiral Power is an infinite escalation engine by nature, but could never instantly achieve its full might. Retinue members who can use it may only escalate to match the highest effective tier in your retinue, or an opposing force that the Spiral user is engaged against, after step 5; this occurs during step 6. T11s such as Simon and Anti-Spiral Nia will obsolete this restriction. Spiral Power’s escalation lasts until the end of an active conflict stage or the user no longer feels hot-blooded, whichever happens first."
   },
   {
     "rating": 10,
     "q": true,
     "worldName": "Cthulhu Mythos",
     "additional": "This entry represents both original works and modern adaptations such as Demonbane or Haiyore! Nyaruko-san. All such published works are true for T11s from the mythos, just not necessarily at the same time."
-  },
-  {
-    "rating": 6,
-    "worldName": "Kara no Kyoukai",
-    "additional": "Kokutou Azaka will believe you to be her sibling and cannot be convinced otherwise. If you go to KnK and capture Shiki there, she will always be the basic Tier 7 version; this does not apply to the Saber-class guest-star at Chaldea."
-  },
-  {
-    "rating": 6,
-    "q": true,
-    "worldName": "Fate/Apocrypha",
-    "additional": "Body Talent will cure Fiore’s paralysis without requiring her to lose her Magic Circuits."
-  },
-  {
-    "rating": 6,
-    "worldName": "Prisma Illya",
-    "additional": "Prisma Illya has the Saber (Artoria classic, but with Lily’s dress), Assassin (Hundred Faces), Berserker (Heracles), and Rider (Medusa) Class Cards. Miyu has the Saber (Artoria classic), Assassin (Serenity), Caster (Medea), and Lancer (Cú Chulainn classic) Class Cards. Angelica has her real body, Archer (Gilgamesh)’s Class Card, and a fully-stocked Gate of Babylon. She can use her version of Ea just as easily as the real Gilgamesh. Beatrice has Berserker (Magni)’s Class Card.   Class Cards (general): A sufficiently capable mage can produce more Class Cards with access to examples of the originals. If you have Mash Kyrielight with the Lord Camelot perk and at least one holder of Class Cards, unwanted Servants may appear as Class Cards instead. This also includes unwanted summons from other gacha titles; their class titles and card designs will reflect their home setting instead of the Nasuverse.",
-    "condition": [
-      {
-        "name": "Illya’s World (Start of Canon/2wei)",
-        "rating": 6
-      },
-      {
-        "name": "Miyu’s World (3rei/Oath Under Snow)",
-        "rating": 7
-      }
-    ]
-  },
-  {
-    "rating": 8,
-    "worldName": "Fate/Grand Order",
-    "additional": "All Olympian gods, including Aphrodite, Artemis, and Demeter, can change to their machine forms and have their divine nanomachines. For the purposes of Exit Stage Left and Rainbow Bridge, each of Singularities 1-7, the Pseudo-Singularities, the Servant Universe, and the Lostbelts count as separate worlds, so that completing each one unlocks a new world through our systems. This also includes some other major events, such as GUDAGUDA, SE.RA.PH, Ooku, and Imaginary Scramble. The primary Fate/Grand Order world will count as completed at the end of the Observer on Timeless Temple or (if the contractor arrives afterward) Cosmos in the Lostbelt arcs.    Pseudo-Servants and Other Alternates    The following pairs are mutually exclusive at chargen: Saint Kiara and Devil Kiara; Nero and Nero Alter; Medea and Medea Lily; Medusa and Gorgon. If you buy a Pseudo-Servant waifu perk at any time after you purchased or captured them, the Servant’s memories and personality will seamlessly integrate into the host’s, in much the same way as the Memoria perk or Extra and Substitute origins.    Not mutually exclusive: Kama and BB with any Sakura and each other; Ereshkigal and Space Ishtar with any Rin and each other; Scáthach and Skadi; Carmilla and Elizabeth Bathory."
-  },
-  {
-    "rating": 7,
-    "worldName": "Fate/Extra",
-    "additional": "Rani VIII and the Extra version of Rin are both demi-Servants with Lu Bu and Cú Chulainn, respectively, as they were in Last Encore. If you already have Saint Kiara, the T10 Devil Kiara purchase may instead apply as a waifu perk, giving her the abilities of either her Devil or hypothetical Saver versions (one or the other) with no changes to her personality.    Command Seals    The following female characters count as valid Masters: Tohsaka Rin, Matou Rin, Dark Rin, Matou Sakura, Tohsaka Sakura, Dark Sakura, Beast Rin, Beast Sakura, mainline Illya, Luvia Edelfelt, Bazette, Caren, Kaleido Ruby, Kaleido Sapphire, Sola-Ui, Irisviel, Hakuno, Devil Kiara, Kohaku, Prisma Illya, Miyu, Angelica, Lancelot Sakura, Celenike, Fiore, Reika, Jean, Sakura Edelfelt, Prelati, Tiné, Tsubaki, Ayaka, Manaka, Reines, Yvette, Hishiri, Ritsuka, Yu, Ophelia, and Erice. Pseudo-Servants and Demi-Servants are Servants, not Masters.    Alternate Classes and Outfits    All Servants with Summer, Santa, or Halloween forms can use the associated skills and NPs at will. The same applies to Atalanta’s, Boudica’s, Da Vinci’s, Medusa’s, Nero’s, Nobunaga’s, and Mysterious Heroine X Alter’s alternate classes, except for Avenger Gorgon. When copying a Servant’s power through OC Donut Steel and Template Stacking II, alternate classes must still be purchased individually.    Alter Egos    BB has lost her connection to Nyarlathotep. Purchasing Amaterasu gives you all of the Tamamo Nine as well: Caster Tamamo, Tamamo Cat, Tamamo Vitch, and six others that have not yet appeared in canon. If you have already bought at least one of the Tamamo Nine at the time of purchasing Amaterasu, all credits that you paid for those nine will be refunded. If you instead capture Amaterasu, you will get any applicable refunds for purchased members of the Tamamo Nine and may purchase any missing ones for free. This is not automatic, in case you wish to capture the full set instead. (Treasured Beast Koyanskaya must be purchased or ascended separately.) Purchased or captured versions of any Tamamo will remain themselves as they grow more tails, not becoming Amaterasu even if they have a full set of nine. BB may instead spawn new copies of her Alter Egos if you do not already have them; any that she spawns will not count for capture or sale credits.    Servants    Captured Servants are no longer connected to the Throne of Heroes and will not affect their greater Heroic Spirits. All Servants exist in a quantum state where they are both fully incarnated and able to enter Spirit Form. Servants benefit from their homeland bonus in any version of their homeland, whether the past, their own time, the present, or the future. This does not include unrelated counterpart cultures and replaces the general background magical field rule. The body-modification suite is capable of changing Servants who have Golden Rule (Body), Divine Core of the Goddess, and other such skills.    Saber: Empyreal Eye overuse may cause Musashi to travel between worlds and eras on her own; if that happens and you have Rainbow Bridge, the portal room will connect to her new location as if it were intentional. She can learn to control this ability with practice. Artoria Alter has Cavall the 2nd as a familiar. Nero Claudius may access her Saber Venus form if you also have Altera. If you purchase Dioscuri, Castor or Pollux will be genderswapped so the two are identical twins once more, according to your orientation, or neither (or both) if you’re bi. Okita’s summer cyborgization cured her tuberculosis in canon; it remains cured here even if she only uses her Saber abilities.    Archer: The true love condition for Tomoe Gozen’s NP is transferred to you. Artemis has the mascot version of Orion as a familiar. Ishtar has Gugalanna Lily as a familiar.    Lancer: Artoria Lancer (not Alter) benefits from Goddess Rhongomyniad’s added power; the two will be treated as the same person. Purchased versions of Gareth have the memories of her fairy self from Lostbelt 6, in addition to her PHH version.    Rider: Sakamoto Ryouma has Oryou as a humanoid familiar; if you already have Oryou when you buy Ryouma, you’ll be refunded her full cost. Saint Martha has her dragon Tarrasque as a familiar. Nero Alter has Beast VI as a familiar. Habetrot will not be harmed by touching advanced technology, including her Black Barrel; purchased versions of her will have her memories from both Pan-Human History and Lostbelt 6.    Assassin: Hundred Faces Hassan’s main body is the adult female one. Carmilla’s Femme Fatale (False) does not affect her feelings toward you. Shuten Douji and Ibuki Douji are separate beings. Ibuki may be brought forth if you involve yourself in the events of Lostbelt 5.5, but the two oni are otherwise purchased and captured separately. Tamamo Vitch’s Independent Manifestation is limited to one local multiverse at a time.    Avenger: Space Ishtar (Ishtar Astoreth) can split off Astoreth and Space Ishtar/Rin into their own bodies, at will, and re-combine with them on contact.    Ruler: The Morgan le Fay of Pan-Human History has three distinct selves: her human aspect, Morgan, and her fairy aspect, Viviane, alongside her aspect as the inheritor of Britain’s mystics, Morgan le Fay. She can split off Morgan and Viviane into their own bodies, at will, and re-combine with them on contact.    Alter Ego: Kingprotea can control her size, all the way down to regular human height or the smallest you’ve been since the start of your journey, whichever is smaller.    Foreigner: Katsushika Oui has Tokitarou as a familiar; he’ll remain in the mental backseat while the two are fused."
-  },
-  {
-    "rating": 3,
-    "q": true,
-    "worldName": "Cardcaptor Sakura",
-    "additional": "Sakura has a full deck of all 53 Sakura Cards, including the Hope, and Keroberos and Yue as familiars. Don’t worry about Tsubasa Reservoir Chronicle."
-  },
-  {
-    "rating": 6,
-    "q": true,
-    "worldName": "Precure",
-    "additional": "Individuals in cooperation-required Cure teams (White and Black, Bloom and Egret, Magical and Miracle, Ma Cherie and Amour) may be bought separately. Their powers will still function without their partners. Milky Rose and Ace do not have time limits; Milky Rose, Beat, and Cosmos can switch between their human and alternate forms and remain in either indefinitely. If you don’t want to deal with a particular familiar, but it doubles as the Cure’s transformation device (such as Black/White’s or Bloom/Egret’s), they may instead be simple, non-living magitech."
-  },
-  {
-    "rating": 2,
-    "q": true,
-    "worldName": "Revue Starlight",
-    "additional": "All the world’s a stage. The girls of this series can transform and use their stage magic anywhere. Everything besides their weapons and costumes is literally theater props, but even those can be useful in the right situations."
   }
 ]

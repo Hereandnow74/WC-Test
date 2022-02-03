@@ -1,6 +1,7 @@
 
 <template>
-  <div class="max-w-screen-lg lg:pl-0 flex flex-col gap-4 mt-4 mb-8">
+  <div class="lg:pl-0 flex flex-col gap-4 mt-4 mb-8" :class="[currentWidth]">
+    <div class="hidden max-w-screen-lg max-w-screen-xl max-w-screen-sm max-w-screen-md"></div>
     <h1 id="rules" class="text-xl font-bold text-center mt-4">
       Rules
     </h1>
@@ -35,7 +36,16 @@
         {{ rule.title2 }}
       </router-link>
     </div>
-    <Desc id="starting" class="bg-warm-gray-200 dark:bg-gray-800" :desc="startingDesc" />
+    <div class="flex w-full -my-3 items-center justify-end">
+      <fluent:auto-fit-width-24-filled class="h-8 w-8 bg-gray-300 dark:bg-gray-800 rounded cursor-pointer hover:scale-105 transform" @click="changeWidth" />
+    </div>
+    <div>
+      <Desc
+        :desc="glossary"
+        class="bg-amber-200 text-gray-800 text-sm md:text-base max-w-[370px] float-right mt-8 mx-2 !p-1 border-3 border-gray-900 indent-xs"
+      />
+      <Desc id="starting" class="bg-warm-gray-200 dark:bg-gray-800" :desc="startingDesc" />
+    </div>
     <div class="lg:flex bg-amber-100 dark:bg-gray-800 p-1 md:p-4 gap-4 w-full mx-auto">
       <Table :headers="worldTitles" :rows="worldData" class="text-sm md:text-base" />
       <Table :headers="waifuTitles" :rows="waifuData" class="text-sm md:text-base w-min flex-grow" />
@@ -94,10 +104,10 @@
     <Desc id="waifu11" :desc="waifu11" class="bg-warm-gray-200 dark:bg-gray-800" />
     <Desc id="danger11" :desc="danger11" class="bg-warm-gray-200 dark:bg-gray-800" />
     <div>
-      <Desc
+      <!-- <Desc
         :desc="creditValue"
         class="bg-amber-200 text-gray-800 md:w-1/2 lg:w-1/3 sm:float-right mt-8 mx-2 border-3 border-gray-900"
-      />
+      /> -->
       <Desc id="pvp" class="bg-warm-gray-200 dark:bg-gray-800" :desc="pvpRules" />
     </div>
     <h2 id="services" class="text-xl text-center">
@@ -162,7 +172,7 @@ import { WORLD_RATINGS, rulesList, useWorlds } from '~/data/constants'
 import {
   startingDesc, pvpRules, effectiveTiers, captures, familiars, purchases, sales, waifu11,
   danger11, services, salary, helpDesk, loans, missions, refund, arranged, arrangedConditions,
-  arrangedSpecial, arrangedTeam, creditValue, assetValue, rip, offspring, nasuDLC,
+  arrangedSpecial, arrangedTeam, creditValue, assetValue, rip, offspring, nasuDLC, glossary,
 } from '~/data/rules'
 
 import { useTooltips } from '~/logic/misc'
@@ -254,9 +264,24 @@ const powerTier = [
   [9, '*3.0'],
 ]
 
+const widths = [
+  'max-w-screen-lg',
+  'max-w-screen-xl',
+  'max-w-screen-sm',
+  'max-w-screen-md',
+]
+
 const tiersTab = ref(0)
+const width = useStorage('width', 0)
 
 const { worlds } = useWorlds()
+
+const currentWidth = computed(() => widths[width.value])
+
+function changeWidth() {
+  width.value += 1
+  if (width.value >= widths.length) width.value = 0
+}
 
 onMounted(() => useTooltips())
 

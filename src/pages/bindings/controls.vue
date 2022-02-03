@@ -1,8 +1,5 @@
 <template>
   <div class="sm:p-2">
-    <h3 id="other" class="text-2xl text-center">
-      Other controls
-    </h3>
     <Desc :desc="otherDesc" class="bg-gray-200 dark:bg-gray-600 max-w-screen-md my-4 mx-auto" />
     <div
       class="column-gap pb-8"

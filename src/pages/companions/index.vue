@@ -135,6 +135,7 @@
             :is-user-char="true"
             :lazy="false"
             :with-image="!settings.allImg"
+            :class="!settings.allImg ? 'h-[500px]' : 'pt-[32px]'"
             @edit-companion="editCompanion"
           />
         </div>
@@ -149,6 +150,7 @@
           :key="char.u"
           :char="char"
           :with-image="!settings.allImg"
+          :class="!settings.allImg ? 'h-[500px]' : 'pt-[32px]'"
           @edit-companion="editCompanion"
           @reportCompanion="reportCompanion"
         />

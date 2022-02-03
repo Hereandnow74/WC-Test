@@ -149,7 +149,7 @@ function copyText() {
   fullCost.c += companionProfit.value + companionProfitSold.value
 
   full += companionsCaptured.length
-    ? `\nCompanions captured +${companionProfit.value} [${fullCost.c}]\n${companionsCaptured.reduce((a, x) =>
+    ? `\nCompanions captured +${companionProfit.value}; sold +${companionProfitSold.value} [${fullCost.c}]\n${companionsCaptured.reduce((a, x) =>
       a += `${x.name}(T${x.tier}) from ${x.world}${x.sold ? ' --SOLD' : ''}\n`
     , '')}`
     : ''

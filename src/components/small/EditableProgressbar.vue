@@ -3,7 +3,7 @@
     <div class="text-center">
       Plot progress
     </div>
-    <div class="flex gap-1">
+    <div class="flex gap-1 overflow-hidden">
       <Button
         ref="minusButton"
         label=""

@@ -99,7 +99,7 @@ const chosenOrigin = reactive({
 })
 const costError = ref('')
 
-const { allEffects, startingOrigin, fullStartingBudget, flags, settings } = useStore()
+const { allEffects, startingOrigin, fullStartingBudget, flags, settings, baseBudget, csr } = useStore()
 
 onMounted(() => useTooltips())
 
@@ -123,14 +123,19 @@ function chooseOrigin(item: Origin) {
 }
 
 function pickOrigin() {
-  if (chosenOrigin.title === 'Substitute' && chosenOrigin.cost > fullStartingBudget.value * 0.2) {
-    costError.value = 'Cost should be less than 20% of your starting budget'
+  if (chosenOrigin.title === 'Substitute') {
+    if (csr.value && (baseBudget.value + fullStartingBudget.value) * 0.2 < chosenOrigin.cost) {
+      costError.value = 'Cost should be less than 20% of your starting budget'
+      return
+    }
+    if (!csr.value && fullStartingBudget.value * 0.2 < chosenOrigin.cost) {
+      costError.value = 'Cost should be less than 20% of your starting budget'
+      return
+    }
   }
-  else {
-    costError.value = ''
-    allEffects.value.push(chosenOrigin.title)
-    Object.assign(startingOrigin.value, chosenOrigin)
-  }
+  costError.value = ''
+  allEffects.value.push(chosenOrigin.title)
+  Object.assign(startingOrigin.value, chosenOrigin)
 }
 
 function clearOrigin() {

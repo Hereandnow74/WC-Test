@@ -1,7 +1,6 @@
 <template>
   <div
     class="py-1 w-full text-gray-200 bg-warm-gray-700 rounded"
-    :class="withImage ? 'h-[500px]' : 'pt-[32px]'"
   >
     <div class="bg-gray-800 border border-gray-800 h-full flex flex-col">
       <div ref="cardEl" class="flex-grow relative">
@@ -63,7 +62,7 @@
               </div>
               <div v-if="!isUserChar" class="hover:(text-gray-300 bg-gray-600) cursor-pointer flex items-center gap-1" @click="$emit('reportCompanion', charData)">
                 <ic:outline-report />
-                Report mistake
+                Report errors
               </div>
               <div v-if="isUserChar" class="hover:(text-gray-300 bg-gray-600) cursor-pointer flex items-center gap-1" @click="deleteCharacter">
                 <fluent:delete-20-filled />

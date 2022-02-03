@@ -63,6 +63,7 @@ watch(searchResult, () => {
       arrow: false,
       interactive: true,
       placement: 'bottom',
+      appendTo: () => document.body,
     })[0]
     list.show()
   }

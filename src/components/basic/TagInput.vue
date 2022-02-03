@@ -1,17 +1,30 @@
 <template>
   <div>
-    <div class="relative border border-gray-700 rounded">
+    <div id="tags" class="relative border-t border-gray-700 dark:border-gray-400 rounded">
+      <ul
+        ref="tagsUl"
+        class="flex flex-wrap gap-1 py-1 items-center no-scrollbar overflow-x-auto overflow-y-hidden"
+      >
+        <li
+          v-for="tag, index in tags"
+          :key="tag"
+          class="px-1 rounded whitespace-nowrap flex items-center gap-1 text-white"
+          :class="waifuTags[tag] ? waifuTags[tag].color : 'text-white bg-gray-600'"
+        >
+          {{ waifuTags[tag] ? waifuTags[tag].tag : tag }}
+          <button class="border-none outline-none bg-none text-sm flex text-white hover:text-red-400" @click="removeTag(index)">
+            <eva:close-fill />
+          </button>
+        </li>
+      </ul>
       <input
-        id="tags"
         v-model="newTag"
         type="text"
-        class="w-full p-1 text-gray-800 rounded"
-        :style="{ 'padding-left': `${paddingLeft}px` }"
+        class="w-full px-1 text-gray-800 rounded border-gray-700 rounded border"
         :placeholder="placeholder"
         @keydown.enter="addTag(newTag)"
-        @keydown.delete="newTag.length || removeTag(tags.length - 1)"
       />
-      <div id="tagslist" ref="listEl" hidden class="scrollbar overflow-y-auto max-h-[300px] ">
+      <div id="tagslist" ref="listEl" hidden class="scrollbar overflow-y-auto max-h-[300px]">
         <div
           v-for="option in searchResult"
           :key="option.item.tag"
@@ -22,21 +35,6 @@
           <span v-if="option.item.desc" class="text-gray-300">{{ option.item.desc }}</span>
         </div>
       </div>
-      <ul
-        ref="tagsUl"
-        class="flex gap-1 items-center absolute top-0 bottom-0 left-1 max-w-[75%] no-scrollbar overflow-x-auto overflow-y-hidden"
-      >
-        <li
-          v-for="tag, index in tags"
-          :key="tag"
-          class="px-1 rounded text-white bg-gray-600 whitespace-nowrap flex items-center gap-1"
-        >
-          {{ waifuTags[tag] ? waifuTags[tag].tag : tag }}
-          <button class="border-none outline-none bg-none text-sm flex text-white hover:text-red-400" @click="removeTag(index)">
-            <eva:close-fill />
-          </button>
-        </li>
-      </ul>
     </div>
     <div v-if="errorMessage" class="text-sm text-red-400">
       {{ errorMessage }}
@@ -101,6 +99,7 @@ watch(searchResult, () => {
       arrow: false,
       interactive: true,
       placement: 'top-start',
+      appendTo: () => document.body,
     })[0]
     list.show()
   }
@@ -111,8 +110,10 @@ watch(tags, () => nextTick(onTagsChange), { deep: true })
 
 function addTag(tag: string) {
   if (!tag) return
-  if (tags.value.includes(tag)) return
-  tags.value.push(waifuTagsByTag[tag] ? waifuTagsByTag[tag].short : tag)
+  tag = tag.trim()
+  tag = waifuTagsByTag[tag] ? waifuTagsByTag[tag].short : tag
+  if (!tags.value.includes(tag))
+    tags.value.push(tag)
   newTag.value = ''
 }
 

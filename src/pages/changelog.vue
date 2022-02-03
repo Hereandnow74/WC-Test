@@ -5,6 +5,19 @@
     </h2>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
+        03 February 2022
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>~50 new user submitted Characters.</li>
+        <li class="font-semibold">
+          Made almost all (SWP's left) changes to match new Stable version <a href="https://forum.questionablequesting.com/threads/r34-economy-cyoa-thread.11289/page-1371#post-5230615" target="_blank" rel="noopener noreferrer" class="underline text-blue-500">changelog</a>
+        </li>
+        <li>Added Wrong Image and Tags in Report errors dialog for characters</li>
+        <li>Bugfixes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
         29 January 2022
       </h3>
       <ul class="list-decimal list-inside">

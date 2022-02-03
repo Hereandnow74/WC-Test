@@ -17,9 +17,6 @@ import { toggleAppMode, toReadableTime } from '~/logic'
 const max = 67108864
 const auraTier = ref(4)
 const auraData = ref([
-  [0, '<5 cm', 'Extreme close contact'],
-  [0, '<50 cm', 'Close contact'],
-  [0, '<5 m', 'Same room'],
   [0, '<50 m', 'Same building'],
   [0, '<500 m', 'Same neighborhood'],
   [0, '<5 km', 'Same city'],
@@ -35,7 +32,11 @@ const auraData = ref([
   [0, '<334.229 AU', 'Kuiper Belt'],
   [0, '<3342.29 AU', 'Oort Cloud (inner) '],
   [0, '<0.528 LY', 'Interstellar space '],
-  [0, '<5.285 LY', 'Neighboring stars']])
+  [0, '<5.285 LY', 'Neighboring stars'],
+  [0, '<50.285 LY', 'Same star cluster'],
+  [0, '<500.285 LY', 'Same galaxy (very small)'],
+  [0, '<5 KLY', 'Same galaxy (small)'],
+])
 
 watchEffect(() => {
   auraData.value.forEach((x, i) => {

@@ -90,7 +90,7 @@ import { toFormValidator } from '@vee-validate/zod'
 import { random, uniq } from 'lodash-es'
 import { useStore } from '~/store/store'
 import { proposeCompanion, toggleShowAddCharacter, userCharactersShown } from '~/logic'
-import { getChars, getUserChars, waifuTags, waifuTagsByTag } from '~/data/constants'
+import { getChars, getUserChars, waifuTagsByTag } from '~/data/constants'
 
 const props = defineProps({
   editMode: {
@@ -135,17 +135,16 @@ const schema = computed(() => serverSave.value ? toFormValidator(zodGlobal) : to
 
 const allWorlds = computed(() => uniq(chars.value.map(x => x.w)))
 const allSubs = computed(() => uniq(chars.value.filter(x => x.d).map(x => x.d)))
-
 const { errors, handleSubmit } = useForm({
   validationSchema: schema,
   initialValues: {
-    tier: props.character.tier || 1,
-    world: props.character.world || '',
-    sub: props.character.sub || '',
-    name: props.character.name || '',
-    image: props.character.image || '',
-    image_nsfw: props.character.image_nsfw || '',
-    tags: props.character.tags || [],
+    tier: props.editMode ? props.character.tier || 1 : 1,
+    world: props.editMode ? props.character.world || '' : '',
+    sub: props.editMode ? props.character.sub || '' : '',
+    name: props.editMode ? props.character.name || '' : '',
+    image: props.editMode ? props.character.image || '' : '',
+    image_nsfw: props.editMode ? props.character.image_nsfw || '' : '',
+    tags: props.editMode ? props.character.tags || [] : [],
   },
 })
 
@@ -178,7 +177,7 @@ const addCharacter = handleSubmit((values) => {
   if (!values.tags.includes(sex.value))
     values.tags.push(sex.value)
   values.tags = values.tags.map(x => waifuTagsByTag[x] ? waifuTagsByTag[x].short : x)
-  values.uid = props.character.uid || random(10000000, 99999999)
+  values.uid = props.editMode ? props.character.uid || random(10000000, 99999999) : random(10000000, 99999999)
   if (serverSave.value) {
     processing.value = true
     proposeCompanion({ ...values, date: new Date().toString() }, (msg) => {

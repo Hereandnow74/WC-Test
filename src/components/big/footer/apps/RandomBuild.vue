@@ -26,12 +26,13 @@ import { heritages } from '~/data/heritage'
 import { bindings, lures, lureExpansions, otherControls } from '~/data/binding'
 import { intensity } from '~/data/intensity'
 import { origin } from '~/data/origin'
-import { defenses, homes, perks, ridePerksFull, genericPerks, talents } from '~/data/talents'
+import { defenses, perks, ridePerksFull, genericPerks, talents } from '~/data/talents'
 import { waifu_perks } from '~/data/waifu_perks'
 import { useStore } from '~/store/store'
 import { allWorldsNoCondition, CHAR_COSTS, WORLD_RATINGS } from '~/data/constants'
 import { confirmDialog } from '~/logic/dialog'
 import { rides } from '~/data/rides'
+import { homes, demiplane, dungeon } from '~/data/demdun'
 
 const targetBudget = ref(55)
 
@@ -108,7 +109,7 @@ async function randomRide(max: number) {
 }
 
 async function randomHome(max: number) {
-  const perk = sample(homes)
+  const perk = sample([...homes, ...demiplane, ...dungeon])
   if (perk.cost > max) return
   if (homeAvailable(perk) && findIndex(homePerks.value, { title: perk.title }) === -1)
     chooseHome(perk, { title: perk?.title, cost: perk?.cost })

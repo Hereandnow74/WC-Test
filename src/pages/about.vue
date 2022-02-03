@@ -6,8 +6,8 @@
       </h3>
       <div>
         Time I spend on Interactive Waifu Catalog so far -
-        <span class="text-amber-500 text-2xl">{{ 423 + 110 }}</span> hours in
-        <span class="text-amber-500 text-2xl">{{ 107 + 28 }}</span> days.
+        <span class="text-amber-500 text-2xl">{{ 423 + 129 }}</span> hours in
+        <span class="text-amber-500 text-2xl">{{ 107 + 33 }}</span> days.
       </div>
       <div>
         If you found some bugs, have any questions about Interactive, suggestions, collaborations or you want to hire me
@@ -57,6 +57,7 @@
           <span class="bg-gray-200 dark:bg-gray-700  px-1 rounded">Cyrus</span>
           <span class="bg-gray-200 dark:bg-gray-700  px-1 rounded">KatzSmile</span>
           <span class="bg-gray-200 dark:bg-gray-700  px-1 rounded">Bryce C.</span>
+          <span class="bg-gray-200 dark:bg-gray-700  px-1 rounded">TaiGambol</span>
         </div>
       </div>
     </div>

@@ -97,7 +97,7 @@ export interface SavedChar {
   method: 'buy' | 'capture' | 'steal' | 'yoink' | 'used' | 'unbound'
   price?: number
   soldPrice?: number
-  role?: 'Member' | 'Familiar' | 'Unbound'
+  role?: 'Companion' | 'Familiar' | 'Unbound'
 }
 
 const companions = storeType('companions', [] as SavedChar[])

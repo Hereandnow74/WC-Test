@@ -2,13 +2,13 @@ import { findIndex, intersection, intersectionWith, isArray, isEmpty, isObject, 
 import { Binding, shroudElements } from '~/data/binding'
 import { Heritage } from '~/data/heritage'
 import { Intensity } from '~/data/intensity'
-import { PerkFull } from '~/data/talents'
+import { genericPerks, PerkFull } from '~/data/talents'
 import { WaifuPerk } from '~/data/waifu_perks'
 import { useChallenges } from '~/store/challenges'
 import { usePlayStore } from '~/store/play'
 import { Perk } from '~/store/chargen'
 import { useStore } from '~/store/store'
-import { ALL_PERK_TITLES } from '~/data/constants'
+import { ALL_PERK_TITLES, LINKS_REG } from '~/data/constants'
 
 const {
   allEffects, intensities, luresBought, binding, flags, allForSave, heritage,
@@ -223,6 +223,11 @@ export function chooseOther(other: Binding, saveData: Perk) {
 }
 
 export function lureAvailable(lure: Binding): boolean {
+  if (lure.title === 'Strange Kind of Woman') {
+    const truck = findIndex(otherPerks.value, { title: 'Space Truckin’' }) !== -1
+    const tenPaper = findIndex(genericWaifuPerks.value, x => x.title === 'Paper Trail' && x.count && x.count >= 10) !== -1
+    return truck && tenPaper
+  }
   return simpleIsAvailable(lure)
 }
 

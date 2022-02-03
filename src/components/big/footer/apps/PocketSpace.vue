@@ -128,7 +128,7 @@ import { find } from 'lodash'
 import { orientation } from '~/logic'
 import { useStore } from '~/store/store'
 import { rides, DLCRides } from '~/data/rides'
-import { homes } from '~/data/talents'
+import { homes } from '~/data/demdun'
 import { DLChomes } from '~/data/DLCs'
 
 const { ridePerks, userRides, localUserRides, homePerks, companions } = useStore()

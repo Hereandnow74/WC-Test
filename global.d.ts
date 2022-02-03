@@ -11,8 +11,33 @@ interface DBCharacter {
   b?: string[]
 }
 
+interface PerkFull {
+  title: string
+  cost: number
+  desc: string
+  whitelist?: string[]
+  special?: string
+  target?: string
+  blacklist?: string[]
+  needed?: number
+  requires?: string
+  multiple?: boolean
+  additionalDesc?: string
+  flag?: string
+  power?: string
+  image?: string
+  max?: number
+  waifu?: string
+  anything?: string
+  costVariants?: number[]
+  freebies?: any
+  complex?: string
+  chargen?: boolean
+}
+
 declare global {
 }
 export {
   DBCharacter,
+  PerkFull,
 }
