@@ -211,7 +211,7 @@ DLCperks.push({
   <p>You are capable of Unrestricted Multiversal Travel. </p>
   <p>Space and time open before you, allowing travel to anywhere and anywhen. This grants you the ability to transport yourself, others, and objects near you to the location and time of your choice. Planetary range is a trivial effort. You can also access all other worlds, universes, and multiverses at will. The form this travel takes, such as teleportation, portals, or something else, can be chosen by the contractor when this perk is purchased. </p>
   `,
-  whitelist: ['The Bigger Fish'],
+  whitelist: ['Pursued by a Bear'],
 })
 
 DLCperks.push({
@@ -599,6 +599,6 @@ DLCintensity.push({
   intensity: 0.8,
   special: 'Chargen only. May not be taken on DR11.',
   chargen: true,
-  blacklist: ['Fight For Your Right', 'One In Ten'],
+  blacklist: ['Wage Slave', 'Fight For Your Right', 'One In Ten'],
   desc: 'You\'re blacklisted from using any of Company services after chargen, no new perks, no buying companions or rides - nothing. If you become qualified for new discounts after chargen by capturing new companions freed credits would stay dead on your account with no ability to spend them. Missions that give perks or tickets as a reward are still available, but you would not be able to receive those rewards. Help-desk is not available for you either instead you get limited ability to interpret vague rules in your favor.',
 })

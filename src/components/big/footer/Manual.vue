@@ -16,12 +16,24 @@
       Minus T11 tickets
       <NumberInput v-model="budgetMods.minus11" :min="0" class="w-24" />
     </div>
+    <div class="flex flex-col gap-2 text-gray-800 border rounded p-2">
+      <h3 class="text-gray-200 flex items-center gap-2 cursor-pointer" @click="specificMods.push({desc: '', mod: 0})">
+        Specific credit modifiers <akar-icons:plus class="text-green-500 hover:text-green-300" />
+      </h3>
+      <div v-for="mod, i in specificMods" :key="i" class="flex gap-2">
+        <Input v-model="mod.desc" :placeholder="`Specific modifier #${i+1}`" class="flex-grow" />
+        <Input v-model.number="mod.mod" class="w-16" />
+        <div class="cursor-pointer text-gray-500 hover:text-red-500 flex gap-2 items-center" title="Share" @click="specificMods.splice(i, 1)">
+          <fluent:delete-20-filled />
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script lang="ts" setup>
 import { useStore } from '~/store/store'
 
-const { budgetMods } = useStore()
+const { budgetMods, specificMods } = useStore()
 
 </script>

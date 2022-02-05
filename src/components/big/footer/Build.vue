@@ -37,6 +37,12 @@
       </h3>
       <Enum color="text-blue-400 hover:text-blue-300" :list="intensities" path="/intensity" empty-message="PvE Mode" />
     </div>
+    <div v-if="pvpPerks.length" id="Orbs">
+      <h3 class="text-lg text-gray-400">
+        Orbs
+      </h3>
+      <Enum color="text-blue-400 hover:text-blue-300" :list="pvpPerks" path="/intensity" empty-message="" />
+    </div>
     <div id="Origin">
       <h3 class="text-lg text-gray-400">
         Origin
@@ -245,7 +251,7 @@ import { confirmDialog } from '~/logic/dialog'
 const {
   startingWorld, startingOrigin, intensities, binding, homePerks, defensePerks,
   heritage, talentPerks, waifuPerks, ridePerks, miscPerks, luresBought, genericWaifuPerks,
-  otherPerks, yourTier, flags, totalCost, totalDiscount,
+  otherPerks, yourTier, flags, pvpPerks,
 } = useStore()
 
 const { activeChallenges } = useChallenges()

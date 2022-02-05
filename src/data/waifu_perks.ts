@@ -417,9 +417,9 @@ waifu_perks.push({
 })
 waifu_perks.push({
   title: 'Spawning Pools',
-  waifu: 'Sarah Kerrigan',
+  waifu: ['Sarah Kerrigan', 'Nova Terra'],
   from: 'Starcraft',
-  uid: 8992,
+  uid: [8992, 8991],
   tier: 7,
   image: '/img/waifu_perks/spawning_pools.jpg',
   cost: 50,
@@ -1222,4 +1222,17 @@ DLCwaifu_perks.push({
   tier: 9,
   image: 'https://tfwiki.net/mediawiki/images2/d/df/Megatron_TFPS313_standing.jpg',
   title: 'Becoming',
+})
+
+DLCwaifu_perks.push({
+  dlc: 'Terthna',
+  waifu: 'Pixie',
+  uid: 1193722,
+  from: 'Shin Megami Tensei',
+  desc: `
+  <p>In the depths of the Labyrinth of Amala, there lies a door that the Demi-Fiend himself once used to endow the weakest of demons with great power. Taking this perk grants your Pixie the same powers and abilities as the Demi-Fiend's constant companion; pushing her up to Tier 8 in the process.</p>`,
+  cost: 190,
+  tier: 8,
+  image: 'https://cdn.donmai.us/original/33/85/__hitoshura_and_pixie_shin_megami_tensei_and_1_more_drawn_by_shaliva__33851d62d2cdb8b8e22b3b25370446b6.jpg',
+  title: 'Uber Pixie',
 })

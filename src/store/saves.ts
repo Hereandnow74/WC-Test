@@ -13,7 +13,7 @@ interface SaveListItem {
 const {
   startingWorld, startingOrigin, intensities, binding, homePerks, defensePerks,
   companions, heritage, talentPerks, waifuPerks, ridePerks, miscPerks, luresBought, genericWaifuPerks,
-  budgetMods, baseBudget, allEffects, flags, otherPerks, loan,
+  budgetMods, baseBudget, allEffects, flags, otherPerks, loan, specificMods,
 } = useStore()
 
 const { activeChallenges } = useChallenges()
@@ -51,6 +51,7 @@ export function writeBuildValues(build: any) {
   budgetMods.value = build.budgetMods
   activeChallenges.value = build.activeChallenges || []
   loan.value = build.loan || { owed: 0, gained: 0 }
+  specificMods.value = build.specificMods || []
 }
 
 export function getSaveObject() {
@@ -76,5 +77,6 @@ export function getSaveObject() {
     budgetMods: budgetMods.value,
     activeChallenges: activeChallenges.value,
     loan: loan.value,
+    specificMods: specificMods.value,
   }
 }

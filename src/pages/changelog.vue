@@ -5,6 +5,25 @@
     </h2>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
+        05 February 2022
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>Specific credits modifiers</li>
+        <li>Bugfixes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
+        04 February 2022
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>~200 new user submitted Characters.</li>
+        <li>~110 new user submitted NSFW images.</li>
+        <li>Bugfixes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
         03 February 2022
       </h3>
       <ul class="list-decimal list-inside">

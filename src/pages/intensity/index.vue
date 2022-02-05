@@ -42,20 +42,23 @@
         :perk="rule"
         :is-active="allEffects.includes(rule.title)"
         bg="blue-100 dark:gray-700 hover:blue-200 dark:hover:gray-800"
+        @pickPerk="chooseOrb"
       />
     </div>
   </div>
 </template>
 
 <script lang='ts' setup>
+import { PerkFull } from 'global'
 import { DLCintensity } from '~/data/DLCs'
 import { desc, intensity, intensityPvP, contractors, invasion, invasionPvP } from '~/data/intensity'
 import { useTooltips } from '~/logic/misc'
 import { useStore } from '~/store/store'
 
-import { chooseIntensity } from '~/logic/'
+import { pickSimplePerk, chooseIntensity } from '~/logic/'
+import { Perk } from '~/store/chargen'
 
-const { allEffects, settings } = useStore()
+const { allEffects, settings, pvpPerks } = useStore()
 
 const intensityDLC = computed(() => !settings.value.allChosenAuthors[0]
   ? intensity
@@ -66,5 +69,9 @@ const intensityDLC = computed(() => !settings.value.allChosenAuthors[0]
 onMounted(() => {
   useTooltips()
 })
+
+function chooseOrb(perk: PerkFull, saveData: Perk) {
+  pickSimplePerk(perk, saveData, () => true, pvpPerks.value)
+}
 
 </script>

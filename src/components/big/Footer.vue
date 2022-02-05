@@ -34,7 +34,7 @@
           <div
             v-for="tab, i in tabs"
             :key="tab"
-            class="flex-grow rounded-t cursor-pointer flex items-center justify-center"
+            class="flex-grow rounded-t cursor-pointer flex gap-1 items-center justify-center"
             border="t-2 green-500"
             :class="activeTab === i ? 'bg-green-600': 'hover:text-orange-400'"
             @click="activeTab = i"
@@ -49,14 +49,16 @@
           </keep-alive>
         </transition>
       </div>
+      <SmartMenu v-if="showSmartMenu" ref="smartMenu" class="absolute bottom-9 right-1" />
       <div class="flex h-8 justify-between items-center px-6">
-        <div class="w-16 cursor-pointer hover:text-amber-500" title="Back" @click="toggleAppMode()">
+        <div class="cursor-pointer hover:text-amber-500" title="Back" @click="toggleAppMode()">
           <akar-icons:arrow-back-thick v-show="appMode" />
         </div>
-        <div class="cursor-pointer hover:text-amber-500" @click="toggleFull()">
+        <div class="cursor-pointer hover:text-amber-500" title="Close smartphone" @click="toggleFull()">
           <akar-icons:circle />
         </div>
-        <div class="w-16">
+        <div class="cursor-pointer hover:text-amber-500" title="Menu" @click="toggleSmartMenu()">
+          <charm:menu-hamburger />
         </div>
       </div>
     </div>
@@ -65,10 +67,10 @@
 
 <script lang="ts" setup>
 import { useStore } from '~/store/store'
-import { activeTab, orientation, appMode, toggleAppMode } from '~/logic'
+import { activeTab, orientation, appMode, toggleAppMode, toggleSmartMenu, showSmartMenu } from '~/logic'
 
 const tabs = ['Build', 'Retinue', 'Apps', 'Spendings', '']
-const tabIcons = ['bx:bx-spreadsheet', 'bx:bx-spreadsheet', 'ion:apps-sharp', 'la:coins', 'fluent:wrench-16-filled']
+const tabIcons = ['bx:bx-spreadsheet', 'bi:people-fill', 'ion:apps-sharp', 'la:coins', 'fluent:wrench-16-filled']
 
 const tabComponents = [
   defineAsyncComponent(() => import('./footer/Build.vue')),
@@ -77,6 +79,10 @@ const tabComponents = [
   defineAsyncComponent(() => import('./footer/Spendings.vue')),
   defineAsyncComponent(() => import('./footer/Manual.vue')),
 ]
+
+const smartMenu = ref(null)
+
+onClickOutside(smartMenu, () => showSmartMenu.value = false)
 
 const {
   budget, tier11tickets, loan,

@@ -104,7 +104,11 @@ const leftPoints = computed(() => totalPoints.value - investedSize.value - inves
   - investedTrigger.value - investedTier.value - investedEffect.value - investedNetwork.value)
 
 const diameter = computed(() => Math.pow(3, investedSize.value) || 1)
-const time = computed(() => Math.round(10 * 24 * 60 * 60 * (Math.pow(3, -investedRequirement.value) || 1)))
+const time = computed(() => {
+  const tm = 10 * 24 * 60 * 60 * (Math.pow(3, -investedRequirement.value) || 1)
+  if (tm > 1) return Math.round(tm)
+  else return Math.round(tm * 1000) / 1000
+})
 const trigger = computed(() => {
   switch (investedTrigger.value) {
     case 0:

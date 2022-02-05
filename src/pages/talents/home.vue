@@ -60,7 +60,7 @@
         <template v-if="homePerk.title === 'Broadcast Room: Eye of Sauron'" #underDesc>
           <div class="flex gap-2 items-center pl-2">
             <span>Devotion</span>
-            <NumberInput v-model="scryDevotion" :min="0" :max="5000" :increment="5" />
+            <NumberInput v-model="scryDevotion" :min="0" :max="5000" :increment="5" @click.stop />
             <span class="text-lg text-green-500 break-all">{{ Math.pow(2, Math.floor(scryDevotion / 5)).toLocaleString() }} km.</span>
           </div>
         </template>

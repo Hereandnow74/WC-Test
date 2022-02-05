@@ -8,8 +8,7 @@ homes.push({
   image: 'https://i.ibb.co/9q6bnnd/Pocket-Space.jpg',
   cost: 5,
   desc: `
-<p>A 100 sq m extradimensional residence, for when you need a place to crash. It has all the basics: two medium bedrooms, one bathroom, a living area, kitchenette, and closet space. All characters with alternate outfits, shown in any official source, will find them stored in their room or closet. This includes phone, TV, internet, and other network access to any worlds visited after chargen. Be careful not to mix up separate networks; URLs may not lead to the same place from one world to the next.</p>
-<p>Access it by plopping a portal onto any reasonably flat surface. Only one portal may exist at a time and you may close it with a thought at any time, whether you’re in or out of the apartment; if you’re inside when the portal is closed, the new exit must be reasonably close to the previous entrance. Some independent multiverse travelers may enter your universe directly. This requires dedicated and deliberate effort and a beacon to follow.</p>
+<p>You now possess a timeless extradimensional inventory space. This inventory may be accessed via an app on your smart device, Apportation, or certain Heritage perks. Transferring an item into the inventory via the app requires it to be in contact with you before transport. An item pulled from the inventory via the app will be deposited into your hand or within one meter of your position.</p>
 <p>Your Inventory has a volume of 1m by 1m by 3m. Living beings may be stored within, but not any resisting or unwilling ones. Stamped or otherwise bound retinue members always count as willing and unresisting. Time does not pass within your Inventory, for good or ill.</p>`,
 })
 
@@ -269,7 +268,7 @@ demiplane.push({
 demiplane.push({
   title: 'Laws of Reality',
   image: '',
-  cost: 50,
+  cost: 200,
   whitelist: ['Laws of Man', 'Laws of the Jungle', 'Laws of Science', 'Laws of Magic', 'Laws of Cognition'],
   desc: `
   This perk adds the laws of gravity, distance, temperature, inertia, mana and/or psi density, and similar fundamental concepts to your Jurisdiction. Much like with the weather or non-sapient flora and fauna in Laws of the Jungle, you may freely set these traits within your spaces, and Infractions come from interfering with those Laws.

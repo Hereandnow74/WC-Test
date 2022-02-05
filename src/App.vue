@@ -14,12 +14,14 @@
     <InfoDialog class="z-20" />
 
     <PromoteDialog v-if="(totalActive > 60 * 60 && !promoteShown) || isSupport" />
+    <SaveLoad v-if="showSaveLoad" class="z-20" @click="showSaveLoad = !showSaveLoad" />
+    <Share v-if="showShare" class="z-20" @click="showShare = !showShare" />
   </main>
 </template>
 
 <script lang="ts" setup>
 import { useStore } from './store/store'
-import { showSideMenu, promoteShown, isSupport } from '~/logic'
+import { showSideMenu, promoteShown, isSupport, showSaveLoad, showShare } from '~/logic'
 
 const { totalActive } = useStore()
 let start = new Date()

@@ -8,12 +8,12 @@ import { useChallenges } from '~/store/challenges'
 import { usePlayStore } from '~/store/play'
 import { Perk } from '~/store/chargen'
 import { useStore } from '~/store/store'
-import { ALL_PERK_TITLES, LINKS_REG } from '~/data/constants'
+import { ALL_PERK_TITLES } from '~/data/constants'
 
 const {
   allEffects, intensities, luresBought, binding, flags, allForSave, heritage,
   ridePerks, homePerks, talentPerks, defensePerks, miscPerks, genericWaifuPerks, companions, startingOrigin,
-  waifuPerks, baseBudget, startingWorld, budgetMods, otherPerks, fee,
+  waifuPerks, baseBudget, startingWorld, budgetMods, otherPerks, fee, specificMods,
 } = useStore()
 
 const { currentWorld, jumpChain, rdnWorld, loan, trHistory } = usePlayStore()
@@ -109,7 +109,7 @@ export function simpleIsAvailable(perk: PerkFull) {
 }
 
 // Intensity
-export function chooseIntensity(rule: Intensity, coopIntensity: number, coopCount: number) {
+export function chooseIntensity(rule: Intensity, coopIntensity = 0, coopCount = 0) {
   const ind = findIndex(intensities.value, { title: rule.title })
   if (ind !== -1) {
     const toDel = intensities.value.splice(ind, 1)[0]
@@ -120,8 +120,19 @@ export function chooseIntensity(rule: Intensity, coopIntensity: number, coopCoun
   else {
     if (intensityAvailable(rule)) {
       allEffects.value.push(rule.title)
-      const inten = rule.title === 'With A Little Help From My Friends(Cooperative)' ? coopIntensity : rule.intensity
-      intensities.value.push({ title: rule.title, intensity: inten, count: rule.title === 'With A Little Help From My Friends(Cooperative)' ? coopCount : 0 })
+      const perk = {
+        title: rule.title,
+      }
+      if (rule.title === 'With A Little Help From My Friends(Cooperative)') {
+        perk.intensity = coopIntensity
+        perk.count = coopCount
+      }
+      else if (rule.intensity !== undefined) {
+        perk.intensity = rule.intensity
+      }
+      if (rule.cost)
+        perk.cost = rule.cost
+      intensities.value.push(perk)
     }
   }
 }
@@ -129,7 +140,8 @@ export function chooseIntensity(rule: Intensity, coopIntensity: number, coopCoun
 export function intensityAvailable(rule: Intensity): boolean {
   if (rule.chargen && !flags.value.chargen) return false
   if (intersection(rule.blacklist, allEffects.value).length) return false
-  if (intersection(rule.whitelist, allEffects.value).length !== (rule.needed || rule.whitelist?.length || 0)) return false
+  if (intersection(rule.whitelist, allEffects.value).length !== (rule.needed || rule.whitelist?.length || 0))
+    return false
   return true
 }
 
@@ -469,6 +481,7 @@ export function clearAll() {
   loan.value = { owed: 0, gained: 0 }
   trHistory.value = []
   fee.value = 0
+  specificMods.value = []
 }
 
 export function assignBuildData(data: any) {

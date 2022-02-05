@@ -92,7 +92,7 @@ export function toReadableTime(seconds: number) {
     res += `${minutes}m `
     seconds -= minutes * 60
   }
-  if (seconds)
+  if (seconds > 0)
     res += `${seconds}s `
   if (!res.length) res = 'instantly'
   return res

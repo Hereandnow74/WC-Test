@@ -61,8 +61,11 @@ const startingOrigin = storeType<Origin>('startingOrigin', {
 const intensities = storeType('intensities', [] as {
   title: string
   intensity: number
-  count: number
+  count?: number
+  cost?: number
 }[])
+
+const pvpPerks = storeType<Perk[]>('pvpPerks', [])
 
 const binding = storeType<Perk[]>('binding', [])
 
@@ -111,6 +114,8 @@ const budgetMods = storeType('budgetMods', {
   minus11: 0,
 })
 
+const specificMods = storeType('spMod', [] as {desc: string; mod: number}[])
+
 const fee = storeType('fee', 0)
 
 const flags = storeType('flags', {
@@ -150,6 +155,7 @@ export function useChargenStore() {
     userWorlds,
     localUserWorlds,
     intensities,
+    pvpPerks,
     binding,
     luresBought,
     otherPerks,
@@ -172,5 +178,6 @@ export function useChargenStore() {
     userRides,
     localUserRides,
     fee,
+    specificMods,
   }
 }

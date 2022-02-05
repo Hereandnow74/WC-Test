@@ -1,5 +1,5 @@
 <template>
-  <Modal :label="`Report mistakes for ${character.name}`">
+  <Modal :label="`Report errors for ${character.name}`">
     <div class="p-2 flex flex-col gap-2 min-h-0 overflow-y-auto max-h-[85vh] max-w-screen-md">
       <h3 class="-mb-2 fonst font-semibold text-gray-600 dark:text-gray-400">
         Toggle on what wrong with it:
@@ -64,8 +64,11 @@
         />
       </div>
       <div v-if="wrongImage" class="flex flex-col gap-2">
-        <Input v-model="image" placeholder="Image URL" class="flex-grow" :error-message="errors.image" />
-        <Input v-model="nsfwImage" placeholder="NSFW Image URL" class="flex-grow" :error-message="errors.nsfwImage" />
+        <Input v-if="!onlyNSFW" v-model="image" placeholder="Image URL" class="flex-grow" :error-message="errors.image" />
+        <div class="flex gap-2">
+          <Toggle v-model="onlyNSFW" label="Only NSFW" />
+          <Input v-model="nsfwImage" placeholder="NSFW Image URL" class="flex-grow" :error-message="errors.nsfwImage" />
+        </div>
         <div class="flex gap-1">
           <img v-show="image" :src="image" alt="image" class="object-contain h-[150px] w-full object-top">
           <img v-show="nsfwImage" :src="nsfwImage" alt="nsfw image" class="object-contain h-[150px] w-full object-top">
@@ -93,7 +96,7 @@ import { uniq } from 'lodash-es'
 import Input from '../basic/Input.vue'
 import NumberInput from '../basic/NumberInput.vue'
 import { filterObject, sendReportToServer } from '~/logic'
-import { getChars, getUserChars, waifuTags, waifuTagsByTag } from '~/data/constants'
+import { getChars, getUserChars, waifuTagsByTag } from '~/data/constants'
 
 const props = defineProps({
   editMode: {
@@ -113,9 +116,10 @@ const wrongWorld = ref(false)
 const isDuplicate = ref(false)
 const wrongImage = ref(false)
 
+const onlyNSFW = ref(false)
+
 const reportError = ref('')
 
-const processing = ref(false)
 const submitMessage = ref('')
 
 const chars = ref<any[]>([])
@@ -142,7 +146,7 @@ const zodObject = computed(() => {
   if (wrongWorld.value) {
     obj = obj.extend({
       fixWorld: zod.string().nonempty('World name is required').max(64, { message: 'Maximum length is 64 chars' }),
-      subWorld: zod.string().max(64, { message: 'Maximum length is 64 chars' }),
+      fixSub: zod.optional(zod.string().max(64, { message: 'Maximum length is 64 chars' })),
     })
   }
   if (isDuplicate.value) {
@@ -152,9 +156,13 @@ const zodObject = computed(() => {
   }
   if (wrongImage.value) {
     obj = obj.extend({
-      image: zod.string().regex(/[^ \!@\$\^&\(\)\+\=]+(\.png|\.jpeg|\.gif|\.jpg|\.webp)$/, { message: 'Must be a valid image URL in a jpeg/jpg/png/gif/webp format.' }).max(256, { message: 'Maximum length is 256 chars' }),
       nsfwImage: zod.string().regex(/[^ \!@\$\^&\(\)\+\=]+(\.png|\.jpeg|\.gif|\.jpg|\.webp)$/, { message: 'Must be a valid image URL in a jpeg/jpg/png/gif/webp format.' }).max(256, { message: 'Maximum length is 256 chars' }).optional().or(zod.literal('')),
     })
+    if (!onlyNSFW.value) {
+      obj = obj.extend({
+        image: zod.string().regex(/[^ \!@\$\^&\(\)\+\=]+(\.png|\.jpeg|\.gif|\.jpg|\.webp)$/, { message: 'Must be a valid image URL in a jpeg/jpg/png/gif/webp format.' }).max(256, { message: 'Maximum length is 256 chars' }),
+      })
+    }
   }
   if (wrongTags.value) {
     obj = obj.extend({
@@ -190,6 +198,10 @@ const sendReport = handleSubmit((values) => {
     return
   }
   values.tags = values.tags.map(x => waifuTagsByTag[x] ? waifuTagsByTag[x].short : x)
+  if (!wrongTags.value)
+    delete values.tags
+  if (!wrongTier.value)
+    delete values.tier
   values = filterObject(values)
 
   sendReportToServer({ ...values, date: new Date().toString(), uid: props.character.uid }, (msg) => {

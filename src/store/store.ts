@@ -17,6 +17,7 @@ const {
   userWorlds,
   localUserWorlds,
   intensities,
+  pvpPerks,
   binding,
   luresBought,
   otherPerks,
@@ -39,6 +40,7 @@ const {
   userRides,
   localUserRides,
   fee,
+  specificMods,
 } = useChargenStore()
 
 const csr = computed(() => findIndex(intensities.value, { title: 'Cash Still Rules' }) !== -1)
@@ -46,6 +48,8 @@ const csr = computed(() => findIndex(intensities.value, { title: 'Cash Still Rul
 const baseBudgetAfter = computed(
   () => baseBudget.value + intensities.value.reduce((a, x) => x.intensity > 1 ? a + x.intensity : a, 0),
 )
+
+const pvpPerksCost = computed(() => pvpPerks.value.reduce((a, x) => a += x.cost >= 11111 ? 0 : x.cost, 0))
 
 const bindingCost = computed(() => binding.value.reduce((a, x) => a += x.cost >= 11111 ? 0 : x.cost, 0))
 const heritageCost = computed(() => heritage.value.reduce((a, x) => a += x.cost >= 11111 ? 0 : x.cost, 0))
@@ -59,6 +63,8 @@ const waifuPerksCost = computed(() => waifuPerks.value.reduce((a, x) => a += x.c
 const genericWaifuPerksCost = computed(() => genericWaifuPerks.value.reduce((a, x) => a += x.cost === 11111 ? 0 : x.cost, 0))
 const luresCost = computed(() => luresBought.value.reduce((a, x) => a += x.cost === 11111 ? 0 : x.cost, 0))
 const otherCost = computed(() => otherPerks.value.reduce((a, x) => a += x.cost === 11111 ? 0 : x.cost, 0))
+
+const specificModsCost = computed(() => specificMods.value.reduce((a, x) => a += x.mod, 0))
 
 const companionsCost = computed(() => {
   return companions.value.reduce((a, x) => {
@@ -203,13 +209,13 @@ const fullStartingBudget = computed(() => {
 })
 
 const budget = computed(() => {
-  return fullStartingBudget.value - startingOrigin.value.cost
+  return fullStartingBudget.value - startingOrigin.value.cost - pvpPerksCost.value
       - bindingCost.value - heritageCost.value - luresCost.value - ridePerksCost.value - homePerksCost.value
       - talentsCost.value - defensesCost.value - miscPerksCost.value - waifuPerksCost.value
       - genericWaifuPerksCost.value - companionsCost.value - otherCost.value - fee.value
       - budgetMods.value.minus + budgetMods.value.plus + companionProfit.value + companionProfitSold.value
       + loan.value.gained + usedHeritageDiscount.value + talentsDiscount.value + defensesDiscount.value
-      + defenseRetinueDiscount.value
+      + defenseRetinueDiscount.value + specificModsCost.value
 })
 
 const companionTicketProfit = computed(() => {
@@ -328,6 +334,7 @@ export function useStore() {
     userWorlds,
     localUserWorlds,
     intensities,
+    pvpPerks,
     binding,
     luresBought,
     otherPerks,
@@ -387,5 +394,6 @@ export function useStore() {
     appName,
     totalDiscount,
     companionsWithoutSold,
+    specificMods,
   }
 }
