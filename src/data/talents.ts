@@ -9,6 +9,7 @@ export const rideDesc = `You purchase a fully-functional, full-size replica of w
 export const ridePerksFull = [] as PerkFull[]
 
 ridePerksFull.push({
+  uid: 'tJzJ5',
   title: 'Catch-A-Ride Crew Training Program',
   image: 'https://i.ibb.co/F3vk1fs/Catch-ARide-Crew-Training-Program.jpg',
   cost: 5,
@@ -20,6 +21,7 @@ ridePerksFull.push({
 })
 
 ridePerksFull.push({
+  uid: '2nFRE',
   title: 'Catch-A-Ride Crew Production Program',
   image: 'https://i.ibb.co/YkcBWLM/Catch-ARide-Crew-Production-Program.jpg',
   cost: 20,
@@ -37,6 +39,7 @@ export const talentsDesc = 'Like all company-supplied powers, the powers granted
 export const talents: PerkFull[] = []
 
 talents.push({
+  uid: 'nvlMp',
   title: 'Everlasting Talent',
   image: 'https://i.ibb.co/b6ShsQS/Everlasting-Talent.jpg',
   cost: 10,
@@ -46,6 +49,7 @@ talents.push({
 })
 
 talents.push({
+  uid: '1t7o3',
   title: 'Body Talent',
   image: 'https://i.ibb.co/fkqgJ8Z/Body-Talent.jpg',
   cost: 10,
@@ -58,6 +62,7 @@ talents.push({
 })
 
 talents.push({
+  uid: '1ycSB',
   title: 'Martial Talent',
   image: 'https://i.ibb.co/0DZZj7L/Martial-Talent.jpg',
   cost: 10,
@@ -65,6 +70,7 @@ talents.push({
 })
 
 talents.push({
+  uid: '5uqEL',
   title: 'Wild Talent',
   image: 'https://i.ibb.co/3WFT8nP/Wild-Talent.jpg',
   cost: 5,
@@ -72,6 +78,7 @@ talents.push({
 })
 
 talents.push({
+  uid: '4XdSq',
   title: 'Science Talent',
   image: 'https://i.ibb.co/2snqdq0/Science-Talent.jpg',
   cost: 20,
@@ -82,6 +89,7 @@ talents.push({
 })
 
 talents.push({
+  uid: 'g4t2B',
   title: 'Engineering Talent',
   image: 'https://i.ibb.co/L1WTbLj/Engineering-Talent.jpg',
   cost: 30,
@@ -90,6 +98,7 @@ talents.push({
 })
 
 talents.push({
+  uid: 'WSEsZ',
   title: 'Aesthetic Talent',
   image: 'https://i.ibb.co/G9WtDSk/Aesthetic-Talent.jpg',
   cost: 10,
@@ -97,6 +106,7 @@ talents.push({
 })
 
 talents.push({
+  uid: 'UPYkI',
   title: 'Communication Talent',
   image: 'https://i.ibb.co/mzjhSnN/Communication-Talent.jpg',
   cost: 10,
@@ -106,6 +116,7 @@ talents.push({
 })
 
 talents.push({
+  uid: 'qOpbF',
   title: 'Performance Talent',
   image: 'https://i.ibb.co/BszrmWS/Performance-Talent.jpg',
   cost: 10,
@@ -113,6 +124,7 @@ talents.push({
 })
 
 talents.push({
+  uid: 'hQCaw',
   title: 'Soul Talent',
   image: 'https://i.ibb.co/MsvBc4N/Soul-Talent.jpg',
   cost: 10,
@@ -123,6 +135,7 @@ talents.push({
 })
 
 talents.push({
+  uid: 'dAx79',
   title: 'Blessed Talent',
   image: 'https://i.ibb.co/3RR4NXR/Blessed-Talent.jpg',
   cost: 30,
@@ -133,6 +146,7 @@ talents.push({
 })
 
 talents.push({
+  uid: 'OQ6SY',
   title: 'Psychic Talent',
   image: 'https://i.ibb.co/cJnMd28/Psychic-Talent.jpg',
   cost: 20,
@@ -143,6 +157,7 @@ talents.push({
 })
 
 talents.push({
+  uid: 'oScLP',
   title: 'Covert Talent',
   image: 'https://i.ibb.co/54hQfY0/Covert-Talent.jpg',
   cost: 10,
@@ -153,6 +168,7 @@ talents.push({
 })
 
 talents.push({
+  uid: 'xhM0D',
   title: 'Talent Sharing',
   image: 'https://i.ibb.co/C55Bgxn/Talent-Sharing.jpg',
   cost: 10,
@@ -161,6 +177,7 @@ talents.push({
 })
 
 talents.push({
+  uid: 'v4vTF',
   title: 'Inexhaustible',
   image: 'https://i.ibb.co/qCMqtY5/Inexhaustible.jpg',
   cost: 140,
@@ -169,6 +186,7 @@ talents.push({
 })
 
 talents.push({
+  uid: 'Lg121',
   title: 'Template Stacking 0: Added Potential',
   image: 'https://i.ibb.co/3cXr8dW/Template-Stacking0-Added-Potential.jpg',
   cost: 5,
@@ -184,6 +202,7 @@ talents.push({
 })
 
 talents.push({
+  uid: '1ujTI',
   title: 'Template Stacking I',
   image: 'https://i.ibb.co/rww384y/Template-Stacking-I.jpg',
   cost: 15,
@@ -199,6 +218,7 @@ talents.push({
 })
 
 talents.push({
+  uid: 'GSoHy',
   title: 'Racial Template',
   image: 'https://i.ibb.co/yPfLWJJ/Racial-Template.jpg',
   cost: 20,
@@ -212,6 +232,7 @@ talents.push({
 })
 
 talents.push({
+  uid: 'Elihn',
   title: 'OC Donut Steel',
   image: 'https://i.ibb.co/QDM4L0b/OCDonut-Steel.jpg',
   cost: 20,
@@ -226,6 +247,7 @@ talents.push({
 })
 
 talents.push({
+  uid: '38YzF',
   title: 'Template Stacking II',
   image: 'https://i.ibb.co/G9D4476/Template-Stacking-II.jpg',
   cost: 20,
@@ -240,6 +262,7 @@ talents.push({
 })
 
 talents.push({
+  uid: 'LhG7H',
   title: 'Advanced Template Stacking (Arcane)',
   image: 'https://i.ibb.co/Htm5DvK/Advanced-Template-Stacking-Arcane.jpg',
   cost: 100,
@@ -251,6 +274,7 @@ talents.push({
 })
 
 talents.push({
+  uid: 'zHT96',
   title: 'Advanced Template Stacking (Enlightened)',
   image: 'https://i.ibb.co/gdHJ4n1/Advanced-Template-Stacking-Enlightened.jpg',
   cost: 100,
@@ -263,6 +287,7 @@ talents.push({
 })
 
 talents.push({
+  uid: 'yfzjc',
   title: 'Advanced Template Stacking (Green)',
   image: 'https://i.ibb.co/x5ykynX/Advanced-Template-Stacking-Green.jpg',
   cost: 100,
@@ -288,6 +313,7 @@ export const defenceDesc = `
 export const defenses: PerkFull[] = []
 
 defenses.push({
+  uid: 'aWQ6N',
   title: 'Body Defense',
   special: '<Individual> is known for handling disease, chemical medicine, or poisons.',
   image: 'https://i.ibb.co/kgWFFz9/Body-Defense.jpg',
@@ -300,6 +326,7 @@ defenses.push({
 })
 
 defenses.push({
+  uid: 'b4EJO',
   title: 'Wild Defense',
   special: '<Individual> hails from a harsh climate.',
   image: 'https://i.ibb.co/8BZQpfP/Wild-Defense.jpg',
@@ -308,6 +335,7 @@ defenses.push({
 })
 
 defenses.push({
+  uid: 'F2dwT',
   title: 'Environmental Defense',
   special: '<Individual> can ignore hazardous environments.',
   image: 'https://i.ibb.co/wykYVms/Environmental-Defense.jpg',
@@ -317,6 +345,7 @@ defenses.push({
 })
 
 defenses.push({
+  uid: 'qPMGm',
   title: 'Creature Defense',
   special: '<Individual> is known as a monster-tamer or otherwise being good with animals.',
   image: 'https://i.ibb.co/vxSvX6v/Creature-Defense.jpg',
@@ -325,6 +354,7 @@ defenses.push({
 })
 
 defenses.push({
+  uid: 'GGsAU',
   title: 'Stress Defense',
   special: '<Individual> is known for keeping a cool head or having great willpower.',
   image: 'https://i.ibb.co/h2D0FDK/Stress-Defense.jpg',
@@ -333,6 +363,7 @@ defenses.push({
 })
 
 defenses.push({
+  uid: 'm0vMX',
   title: 'Addiction Defense',
   special: '<Individual> known for having a material vice.',
   image: 'https://i.ibb.co/Tm9kg7P/Addiction-Defense.jpg',
@@ -342,6 +373,7 @@ defenses.push({
 })
 
 defenses.push({
+  uid: 'Y0qpD',
   title: 'Mind Defense',
   special: '<Individual> is known as a psychic or mind-manipulator.',
   image: 'https://i.ibb.co/KXZzvSK/Mind-Defense.jpg',
@@ -350,6 +382,7 @@ defenses.push({
 })
 
 defenses.push({
+  uid: '6lvj3',
   title: 'Possession Defense',
   special: '<Individual> is known for bodyjacking others.',
   image: 'https://i.ibb.co/VwrGtdg/Possession-Defense.jpg',
@@ -360,6 +393,7 @@ defenses.push({
 })
 
 defenses.push({
+  uid: 'l1Zz7',
   title: 'Soul Defense',
   special: '<Individual> can drain or feed on life, mana, or souls.',
   image: 'https://i.ibb.co/Gxn3ycq/Soul-Defense.jpg',
@@ -372,6 +406,7 @@ defenses.push({
 })
 
 defenses.push({
+  uid: '2DooX',
   title: 'Fatality Defense',
   special: '<Individual> is known for inflicting instant death or not dying even when killed.',
   image: 'https://i.ibb.co/GQ93VPz/Fatality-Defense.jpg',
@@ -381,6 +416,7 @@ defenses.push({
 })
 
 defenses.push({
+  uid: 'zp1JD',
   title: 'Polymorph Defense',
   special: '<Individual> is known for polymorphing others.',
   image: 'https://i.ibb.co/0ZXMSn3/Polymorph-Defense.jpg',
@@ -393,6 +429,7 @@ defenses.push({
 })
 
 defenses.push({
+  uid: '8ZlJ6',
   title: 'Wyldscape Defense',
   special: '<Individual> hails from a region where the local reality is unstable.',
   image: 'https://i.ibb.co/Fnn0LGN/Wyldscape-Defense.jpg',
@@ -405,6 +442,7 @@ defenses.push({
 })
 
 defenses.push({
+  uid: 'APuY1',
   title: 'Corruption Defense',
   special: '<Individual> is known for forcibly bringing out others’ dark sides.',
   image: 'https://i.ibb.co/kGF8tHp/Corruption-Defense.jpg',
@@ -415,6 +453,7 @@ defenses.push({
 })
 
 defenses.push({
+  uid: 'iQJdn',
   title: 'Information Defense',
   special: '<Individual> is known for their ability to read or sense people.',
   image: 'https://i.ibb.co/pyMQQ2h/Information-Defense.jpg',
@@ -423,6 +462,7 @@ defenses.push({
 })
 
 defenses.push({
+  uid: 'xKBxa',
   title: 'Trace Defense',
   special: '<Individual> is known for using divination or other non-technological remote viewing.',
   image: 'https://i.ibb.co/QnTvtNz/Trace-Defense.jpg',
@@ -431,6 +471,7 @@ defenses.push({
 })
 
 defenses.push({
+  uid: '5riTA',
   title: 'Destiny Defense',
   special: '<Individual> is known as a fate- or luck-manipulator.',
   image: 'https://i.ibb.co/JpqTDcM/Destiny-Defense.jpg',
@@ -441,6 +482,7 @@ defenses.push({
 })
 
 defenses.push({
+  uid: 'djI69',
   title: 'Paradox Defense',
   special: '<Individual> is known as a time-manipulator.',
   image: 'https://i.ibb.co/ncTQVT7/Paradox-Defense.jpg',
@@ -473,6 +515,7 @@ export const perks: PerkFull[] = []
 // })
 
 perks.push({
+  uid: 'ZVCai',
   title: 'Universal Calibration',
   image: 'https://i.ibb.co/BCBHDkS/Temporal-Calibration.jpg',
   cost: 10,
@@ -481,6 +524,7 @@ perks.push({
 })
 
 perks.push({
+  uid: '1MpQL',
   title: 'Meta Shift',
   image: 'https://i.ibb.co/vv1g4Sq/Meta-Shift.jpg',
   cost: 15,
@@ -495,6 +539,7 @@ perks.push({
 })
 
 perks.push({
+  uid: 'pE8KJ',
   title: 'Meta Shift II',
   image: 'https://i.ibb.co/QQ1W0FX/Meta-Shift-II.jpg',
   cost: 10,
@@ -506,6 +551,7 @@ perks.push({
 })
 
 perks.push({
+  uid: 'QdLMY',
   title: 'Blank Slate',
   image: 'https://i.ibb.co/fGnn30j/Blank-Slate.jpg',
   cost: 75,
@@ -515,6 +561,7 @@ perks.push({
 })
 
 perks.push({
+  uid: 'KV8cc',
   title: 'Sexual Calibration',
   image: 'https://i.ibb.co/K7gQYm0/Sexual-Calibration.jpg',
   cost: 2,
@@ -522,6 +569,7 @@ perks.push({
 })
 
 perks.push({
+  uid: 'xeouX',
   title: 'Fertility Calibration I',
   image: 'https://i.ibb.co/G2WTbBZ/Fertility-Calibration-I.jpg',
   cost: 2,
@@ -530,6 +578,7 @@ perks.push({
 })
 
 perks.push({
+  uid: 'E3Enf',
   title: 'Fertility Calibration II',
   image: 'https://i.ibb.co/yPWN4MX/Fertility-Calibration-II.jpg',
   cost: 6,
@@ -542,6 +591,7 @@ perks.push({
 // Navigation Perks
 
 perks.push({
+  uid: 'msjnG',
   title: 'Mapper',
   image: 'https://i.ibb.co/F8wy1xx/Mapper.jpg',
   cost: 10,
@@ -551,6 +601,7 @@ perks.push({
 })
 
 perks.push({
+  uid: 'H2VdK',
   title: 'Target Tracker',
   image: 'https://i.ibb.co/2jSnGdg/Target-Tracker.jpg',
   cost: 10,
@@ -559,6 +610,7 @@ perks.push({
 })
 
 perks.push({
+  uid: 'B5bIp',
   title: 'Bounty Tracker',
   image: 'https://i.ibb.co/41KHd9r/Bounty-Tracker.jpg',
   cost: 50,
@@ -569,6 +621,7 @@ perks.push({
 // Travel Perks
 
 perks.push({
+  uid: 'kiLqi',
   title: 'Exit Stage Left',
   image: 'https://i.ibb.co/1rgFZ61/Exit-Stage-Left.jpg',
   cost: 5,
@@ -576,6 +629,7 @@ perks.push({
 })
 
 perks.push({
+  uid: '5Bdq7',
   title: 'We Will Meet Again',
   image: 'https://i.ibb.co/DD836zP/We-Will-Meet-Again.jpg',
   cost: 15,
@@ -584,6 +638,7 @@ perks.push({
 })
 
 perks.push({
+  uid: 'GTKzW',
   title: 'Pursued by a Bear',
   image: 'https://i.ibb.co/jTRQG0k/Pursued-By-ABear.jpg',
   cost: 40,
@@ -602,6 +657,7 @@ perks.push({
 // Miscellaneous Perks
 
 perks.push({
+  uid: 'LlFi4',
   title: 'Memoria',
   image: 'https://i.ibb.co/TYv7sc9/Memoria.jpg',
   cost: 5,
@@ -612,6 +668,7 @@ perks.push({
 })
 
 perks.push({
+  uid: '3SEKz',
   title: 'Psychic Paper',
   image: 'https://i.ibb.co/VStW4pq/Psychic-Paper.jpg',
   cost: 5,
@@ -619,6 +676,7 @@ perks.push({
 })
 
 perks.push({
+  uid: '0WR5N',
   title: 'Heavenbuilt Proto',
   image: 'https://i.ibb.co/28vbybD/Heavenbuilt-Proto.jpg',
   cost: 11111,
@@ -628,6 +686,7 @@ perks.push({
 })
 
 perks.push({
+  uid: 'aB6sr',
   title: 'Piece of Silver',
   image: 'https://i.ibb.co/QjWz9fg/Piece-Of-Silver.jpg',
   cost: 11111,
@@ -635,6 +694,7 @@ perks.push({
 })
 
 perks.push({
+  uid: '4qh4k',
   title: 'Warranty Plan',
   image: 'https://i.ibb.co/Mp0vpwj/Warranty-Plan.jpg',
   cost: 200,
@@ -669,6 +729,7 @@ export const genericDesc = `
 export const genericPerks: PerkFull[] = []
 
 genericPerks.push({
+  uid: 'rOhim',
   title: 'Yoink',
   image: 'https://i.ibb.co/PTSQp4F/Yoink.jpg',
   cost: 1,
@@ -678,6 +739,7 @@ genericPerks.push({
 })
 
 genericPerks.push({
+  uid: 'rUWf6',
   title: 'Slightly Used',
   image: 'https://i.ibb.co/k5XPSRL/Slightly-Used.jpg',
   cost: 1,
@@ -690,6 +752,7 @@ genericPerks.push({
 })
 
 genericPerks.push({
+  uid: 'CYLBN',
   title: 'Canvas',
   image: 'https://i.ibb.co/Xjpv07P/Canvas.jpg',
   cost: 1,
@@ -702,6 +765,7 @@ genericPerks.push({
 })
 
 genericPerks.push({
+  uid: 'NkvEg',
   title: 'Adoption',
   anything: 'Kid Name',
   complex: 'flavor',
@@ -711,6 +775,7 @@ genericPerks.push({
 })
 
 genericPerks.push({
+  uid: 'FJABm',
   title: 'Paper Trail',
   image: 'https://i.ibb.co/9WQ47rf/Paper-Trail.jpg',
   cost: 1,
@@ -723,6 +788,7 @@ genericPerks.push({
 })
 
 genericPerks.push({
+  uid: 'dmynt',
   title: 'Third-Party Riggings',
   special: 'Requires at least one first - party Azur Lane shipgirl.',
   complex: 'target',
@@ -739,6 +805,7 @@ genericPerks.push({
 })
 
 genericPerks.push({
+  uid: 'piGae',
   title: 'Retrofit',
   requires: '(Any eligible Azur Lane shipgirl)',
   complex: 'target',
@@ -755,6 +822,7 @@ genericPerks.push({
 })
 
 genericPerks.push({
+  uid: 'qJBhY',
   title: 'Bifurcation',
   requires: '(Any Azur Lane Shipgirl)',
   complex: 'target',
@@ -767,6 +835,7 @@ genericPerks.push({
 })
 
 genericPerks.push({
+  uid: 'rRNoF',
   title: 'Space Shipgirl',
   requires: '(Any Azur Lane shipgirl)',
   complex: 'target',
@@ -779,6 +848,7 @@ genericPerks.push({
 })
 
 genericPerks.push({
+  uid: 'yib6z',
   title: 'I\'m on a Boat',
   requires: '(Any Kantai Collection Shipgirl)',
   complex: 'target',
@@ -790,6 +860,7 @@ genericPerks.push({
 })
 
 genericPerks.push({
+  uid: 'hkEPg',
   title: 'Mirage Master',
   requires: '(Any T1- T3 waifu + any Fire Emblem character rated T6 or below)',
   complex: 'target',
@@ -802,6 +873,7 @@ genericPerks.push({
 })
 
 genericPerks.push({
+  uid: 'hndM0',
   title: 'Unison',
   requires: '(Any Pokémon trainer)',
   complex: 'target',
@@ -811,6 +883,7 @@ genericPerks.push({
 })
 
 genericPerks.push({
+  uid: '1rWq8',
   title: 'Galactic Presence',
   requires: '(Any Warhammer Fantasy deity)',
   complex: 'target',
@@ -820,6 +893,7 @@ genericPerks.push({
 })
 
 genericPerks.push({
+  uid: 'Pqi8M',
   title: 'Four Seasons',
   requires: '(Any female RWBY character of T6 or below)',
   complex: 'target_c',
@@ -830,6 +904,7 @@ genericPerks.push({
 })
 
 genericPerks.push({
+  uid: '2kSwK',
   title: 'Salvation',
   requires: '(Any Puella Magi)',
   complex: 'target',

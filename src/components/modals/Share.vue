@@ -19,8 +19,7 @@
 
 <script lang='ts' setup>
 import Input from '../basic/Input.vue'
-import { shareLink } from '~/logic'
-import { getSaveObject } from '~/store/saves'
+import { getSaveObject, shareLink } from '~/logic'
 
 const name = ref('')
 const link = ref('')

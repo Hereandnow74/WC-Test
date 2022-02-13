@@ -1,6 +1,7 @@
 export const desc = 'Pick one and only one of these five options at the start of your build. This choice is permanent. With Extra and Substitute, any companions that you purchase as part of your initial build will have valid documentation, as necessary, and a local backstory. Later purchases will not benefit from this, nor will you have such benefits in later worlds - unless you or your companions make it yourselves. Like all company-supplied powers, abilities gained through Substitute, Possess, or Extra cannot be nullified, copied, or stolen.'
 
 export interface Origin {
+  uid: string
   title: string
   cost: number
   image: string
@@ -17,6 +18,7 @@ export interface Origin {
 export const origin: Origin[] = []
 
 origin.push({
+  uid: 'svmGV',
   title: 'Drop-In',
   cost: 0,
   image: '/img/origin/dropin2.jpg',
@@ -25,6 +27,7 @@ origin.push({
 })
 
 origin.push({
+  uid: 'SRTuJ',
   title: 'Walk-In',
   cost: 0,
   image: '/img/origin/walkin2.jpg',
@@ -34,6 +37,7 @@ origin.push({
 })
 
 origin.push({
+  uid: 'cQE7u',
   title: 'Extra',
   cost: 1,
   image: '/img/origin/extra2.jpg',
@@ -46,6 +50,7 @@ origin.push({
 })
 
 origin.push({
+  uid: 'cWbuu',
   title: 'Substitute',
   cost: 0,
   blacklist: ['Gauntlet PvP'],
@@ -60,6 +65,7 @@ origin.push({
 })
 
 origin.push({
+  uid: 'h0ltc',
   title: 'Possess',
   cost: 0,
   image: '/img/origin/possess2.jpg',

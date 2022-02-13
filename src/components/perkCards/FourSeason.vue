@@ -1,32 +1,30 @@
 <template>
-  <div class="column-block max-w-[600px]">
-    <GenericPerkCard
-      v-bind="{perk, isActive: perkExist, savedPerk}"
-      @pickPerk="sendPerk"
-    >
-      <template #title>
-        <AnythingInput
-          v-model="complex.target"
-          placeholder="For whom"
-          class="text-base ml-2 w-42"
-          :list="targetList"
-          :bought-list="savedPerk.complex"
-          @click.stop
-        />
-        <NumberInput
-          v-if="perk.multiple"
-          v-model="complex.count"
-          :min="1"
-          :max="perk.max || 100"
-          class="text-base ml-2"
-          @click.stop
-        />
-      </template>
-      <template #cost>
-        (Cost: <span text="green-600 dark:green-300">{{ displayedCost }}</span>)
-      </template>
-    </GenericPerkCard>
-  </div>
+  <GenericPerkCard
+    v-bind="{perk, isActive: perkExist, savedPerk}"
+    @pickPerk="sendPerk"
+  >
+    <template #title>
+      <AnythingInput
+        v-model="complex.target"
+        placeholder="For whom"
+        class="text-base ml-2 w-42"
+        :list="targetList"
+        :bought-list="savedPerk.complex"
+        @click.stop
+      />
+      <NumberInput
+        v-if="perk.multiple"
+        v-model="complex.count"
+        :min="1"
+        :max="perk.max || 100"
+        class="text-base ml-2"
+        @click.stop
+      />
+    </template>
+    <template #cost>
+      (Cost: <span text="green-600 dark:green-300">{{ displayedCost }}</span>)
+    </template>
+  </GenericPerkCard>
 </template>
 
 <script lang='ts' setup>

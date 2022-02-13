@@ -25,6 +25,12 @@
         </div>
       </div>
     </div>
+    <div v-if="patron.length" id="patron">
+      <h3 class="text-lg text-gray-400">
+        Patron
+      </h3>
+      <Enum color="text-blue-400 hover:text-blue-300" :list="patron" path="/origin" />
+    </div>
     <div v-if="activeChallenges.length" id="Challenges">
       <h3 class="text-lg text-gray-400">
         Challenges
@@ -251,7 +257,7 @@ import { confirmDialog } from '~/logic/dialog'
 const {
   startingWorld, startingOrigin, intensities, binding, homePerks, defensePerks,
   heritage, talentPerks, waifuPerks, ridePerks, miscPerks, luresBought, genericWaifuPerks,
-  otherPerks, yourTier, flags, pvpPerks,
+  otherPerks, yourTier, flags, pvpPerks, patron,
 } = useStore()
 
 const { activeChallenges } = useChallenges()

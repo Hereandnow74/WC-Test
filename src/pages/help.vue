@@ -27,18 +27,11 @@
             <img src="/img/help/smartphone.png" alt="smartphone-img" class="float-right ml-2" />
             <div>
               <span class="font-semibold">Smartphone</span>
-              - where you can find your build information and access to Copy, Save & Load, Share functions
+              - where you can find your build information and access to Copy, Save & Load, Share functions.
             </div>
           </div>
           <div>
             <img src="/img/help/bottom.png" alt="smartphone-img" class="mx-auto" />
-            <ol class="list-decimal list-inside">
-              <li>Clear build</li>
-              <li>Hide Smartphone</li>
-              <li>Save & Load build's</li>
-              <li>Share you build by link</li>
-              <li>Copy text of your build</li>
-            </ol>
           </div>
         </div>
       </div>
@@ -46,6 +39,13 @@
         Extended Companions Search capabilities
       </h4>
       <p>If you want more control in your companion search results, use rules defined below.</p>
+      <p>You can search only specific fields by using prefixes:</p>
+      <ul class="list-inside list-disc ml-8">
+        <li><b>@</b> - by user nickname, example: <b>@Om1cr0n</b></li>
+        <li><b>#</b> - by character name, example: <b>#Yaoyorozu</b></li>
+        <li><b>%</b> - by world, example: <b>%Worm</b></li>
+        <li><b>$</b> - by sub-world, example: <b>$Azeroth</b></li>
+      </ul>
       <p>White space acts as an <b>AND</b> operator, while a single pipe (|) character acts as an <b>OR</b> operator. To escape white space, use double quote ex. ="scheme language" for exact match.</p>
       <table class="w-full table-auto mb-8 bg-gray-100 dark:bg-gray-700 border-collapse">
         <tr class="border border-gray-800 dark:border-gray-200 font-semibold">

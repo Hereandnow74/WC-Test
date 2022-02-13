@@ -51,12 +51,13 @@
       </div>
     </div>
     <Modal v-if="showImportDialog" label="Save & Load" class="text-gray-800 dark:text-gray-200 z-50" @click="showImportDialog = false">
-      <div class="p-2">
-        <textarea v-model="buildData" rows="10" class="w-full border rounded" placeholder="Paste build data here" />
+      <div class="p-1 relative">
+        <textarea v-model="buildData" rows="10" class="w-full border rounded text-gray-800 p-1 min-w-screen-sm" placeholder="Paste build data here" />
         <Button
           label="Load"
           size="Small"
-          bg-color="bg-orange-500 mt-2 mx-auto"
+          class="absolute top-2 right-2"
+          bg-color="bg-orange-500"
           @click="loadFromText"
         />
       </div>
@@ -69,8 +70,9 @@ import { useTimeAgo } from '@vueuse/core'
 import { random } from 'lodash'
 import { remove } from 'lodash-es'
 import Input from '../basic/Input.vue'
-import { getSaveObject, useSaves, writeBuildValues } from '~/store/saves'
+import { useSaves } from '~/store/saves'
 import { useStore } from '~/store/store'
+import { getSaveObject, writeBuildValues } from '~/logic'
 
 const { savesList } = useSaves()
 

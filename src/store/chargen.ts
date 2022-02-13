@@ -89,6 +89,8 @@ const genericWaifuPerks = storeType<Perk[]>('genericWaifuPerks', [])
 
 const waifuPerks = storeType<Perk[]>('waifuPerks', [])
 
+const patron = storeType<Perk[]>('patron', [])
+
 export interface SavedChar {
   uid: number
   name: string
@@ -179,5 +181,6 @@ export function useChargenStore() {
     localUserRides,
     fee,
     specificMods,
+    patron,
   }
 }

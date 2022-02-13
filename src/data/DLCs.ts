@@ -1,4 +1,4 @@
-import { PerkFull } from './talents'
+import { PerkFull } from 'global'
 
 interface DLCPerk extends PerkFull {
   dlc: string
@@ -12,6 +12,7 @@ interface DLCPerk extends PerkFull {
 export const DLCgenericPerks: DLCPerk[] = []
 
 DLCgenericPerks.push({
+  uid: '1lvLH',
   title: 'Tempering',
   requires: '(Any Monster Hunter monster)',
   dlc: 'DaemonOrk',
@@ -27,6 +28,7 @@ DLCgenericPerks.push({
 })
 
 DLCgenericPerks.push({
+  uid: 'Einr9',
   title: 'Arch-Tempering',
   requires: '(Any Monster Hunter monster)',
   dlc: 'DaemonOrk',
@@ -44,6 +46,7 @@ DLCgenericPerks.push({
 })
 
 DLCgenericPerks.push({
+  uid: 'yqayv',
   title: 'Big Entrance',
   dlc: 'KatzSmile',
   special: 'Must be repurchased for each use.',
@@ -56,6 +59,7 @@ DLCgenericPerks.push({
 
 })
 DLCgenericPerks.push({
+  uid: 'K7CyL',
   title: 'Grail Knowledge',
   dlc: 'KatzSmile',
   complex: 'target',
@@ -66,6 +70,7 @@ DLCgenericPerks.push({
   `,
 })
 DLCgenericPerks.push({
+  uid: 'fJRGz',
   dlc: 'DLC by Despin',
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'HUD',
@@ -78,6 +83,7 @@ DLCgenericPerks.push({
 })
 
 DLCgenericPerks.push({
+  uid: 'S84Eb',
   dlc: 'DLC by Despin',
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'Toggle',
@@ -93,6 +99,7 @@ DLCgenericPerks.push({
 })
 
 DLCgenericPerks.push({
+  uid: 't7wLC',
   dlc: 'VermontCheese',
   title: 'Anthropize',
   cost: 10,
@@ -103,6 +110,7 @@ DLCgenericPerks.push({
 })
 
 DLCgenericPerks.push({
+  uid: 'GbO2V',
   dlc: 'CelestialDragon DLC',
   dlclink: 'https://docs.google.com/spreadsheets/d/1FM6PNbDEyZV4T4rVLWjPYBc3O0jmmwd1obkFD7jLDt8/edit?usp=sharing',
   title: 'Does it come in Black',
@@ -114,6 +122,7 @@ DLCgenericPerks.push({
 })
 
 DLCgenericPerks.push({
+  uid: 'EsNrD',
   dlc: 'DLC by Despin',
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'Native Merger',
@@ -131,6 +140,7 @@ DLCgenericPerks.push({
 })
 
 DLCgenericPerks.push({
+  uid: 'bq0Nc',
   dlc: 'DLC by Despin',
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'Open Rolls',
@@ -140,6 +150,7 @@ DLCgenericPerks.push({
 })
 
 DLCgenericPerks.push({
+  uid: 'k9k4T',
   dlc: 'KatzSmile',
   title: 'Worlds Apart',
   requires: '(Any Yoinked companion)',
@@ -154,6 +165,7 @@ DLCgenericPerks.push({
 
 export const DLCperks: DLCPerk[] = []
 DLCperks.push({
+  uid: 'GsCat',
   dlc: 'CelestialDragon DLC',
   dlclink: 'https://docs.google.com/spreadsheets/d/1FM6PNbDEyZV4T4rVLWjPYBc3O0jmmwd1obkFD7jLDt8/edit?usp=sharing',
   title: 'Returning Home',
@@ -163,6 +175,7 @@ DLCperks.push({
 })
 
 DLCperks.push({
+  uid: 'jcBEK',
   dlc: 'BenFang322',
   title: 'Appearance Change',
   cost: 1,
@@ -173,6 +186,7 @@ DLCperks.push({
 })
 
 DLCperks.push({
+  uid: 'V7siL',
   dlc: 'windshadow21',
   title: 'Normalcy',
   cost: 10,
@@ -183,6 +197,7 @@ DLCperks.push({
 })
 
 DLCperks.push({
+  uid: 'te1Zv',
   dlc: 'KatzSmile',
   title: 'Time-Savers',
   cost: 2,
@@ -192,6 +207,7 @@ DLCperks.push({
 })
 
 DLCperks.push({
+  uid: '3EnoU',
   dlc: 'DLC by Despin',
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'I Want Out',
@@ -203,6 +219,7 @@ DLCperks.push({
 })
 
 DLCperks.push({
+  uid: 'tG4yC',
   dlc: 'DLC by Despin',
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'Trajectory. Agreement.',
@@ -215,6 +232,7 @@ DLCperks.push({
 })
 
 DLCperks.push({
+  uid: 'U9oPG',
   dlc: 'DLC by Despin',
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'Express Warranty',
@@ -226,6 +244,7 @@ DLCperks.push({
 })
 
 DLCperks.push({
+  uid: 'sEFxf',
   dlc: 'DLC by Merior',
   dlclink: 'https://docs.google.com/document/d/1j9emHb4IWvOTnp13RASTAuINAFuKDMSSQyQ-7ta9sjA/edit#',
   title: 'Gone And Forgotten',
@@ -236,6 +255,7 @@ DLCperks.push({
 })
 
 DLCperks.push({
+  uid: 'eIljw',
   dlc: 'DLC by Merior',
   dlclink: 'https://docs.google.com/document/d/1j9emHb4IWvOTnp13RASTAuINAFuKDMSSQyQ-7ta9sjA/edit#',
   title: 'Pavlov\'s Bell',
@@ -245,14 +265,15 @@ DLCperks.push({
   `,
 })
 
-DLCperks.push({
-  dlc: 'PixelGMS',
-  title: 'Nice Guy',
-  cost: 120,
-  desc: 'Everyone will think that you\'re a nice guy. A friendly acquaintance. Even if you stab them in the guts, they wouldn\'t hold it against you. It doesn\'t matter what you do, as long as it\'s not outright murder or torture, people won\'t think badly about it, but some half-assed arguments might be needed to justify your actions. If you start killing or doing something worse to someone they care about more than themselves in front of them then the effect will quickly deteriorate.',
-})
+// DLCperks.push({
+//   dlc: 'PixelGMS',
+//   title: 'Nice Guy',
+//   cost: 120,
+//   desc: 'Everyone will think that you\'re a nice guy. A friendly acquaintance. Even if you stab them in the guts, they wouldn\'t hold it against you. It doesn\'t matter what you do, as long as it\'s not outright murder or torture, people won\'t think badly about it, but some half-assed arguments might be needed to justify your actions. If you start killing or doing something worse to someone they care about more than themselves in front of them then the effect will quickly deteriorate.',
+// })
 
 DLCperks.push({
+  uid: 'bqgqk',
   dlc: 'Mortaegus’s Mod',
   dlclink: 'https://forum.questionablequesting.com/threads/r34-economy-cyoa-thread.11289/page-568#post-3866836',
   title: 'Patron Income',
@@ -264,6 +285,7 @@ DLCperks.push({
 })
 
 DLCperks.push({
+  uid: 'zB0Rf',
   dlc: 'Mortaegus’s Mod',
   dlclink: 'https://forum.questionablequesting.com/threads/r34-economy-cyoa-thread.11289/page-568#post-3866836',
   title: 'Abandoned Assets',
@@ -281,6 +303,7 @@ DLCperks.push({
 export const DLChomes: DLCPerk[] = []
 
 DLChomes.push({
+  uid: 'kTjFA',
   dlc: 'DLC by Despin',
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'Creature Feature I',
@@ -292,6 +315,7 @@ DLChomes.push({
 })
 
 DLChomes.push({
+  uid: 'Jsh2A',
   dlc: 'DLC by Despin',
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'Creature Feature II',
@@ -303,6 +327,7 @@ DLChomes.push({
 })
 
 DLChomes.push({
+  uid: 'T7TG1',
   dlc: 'DLC by Despin',
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'A God Am I',
@@ -314,6 +339,7 @@ DLChomes.push({
 })
 
 DLChomes.push({
+  uid: 'mOIQR',
   dlc: 'DaemonOrk',
   title: 'God of Time',
   cost: 11111,
@@ -323,6 +349,7 @@ DLChomes.push({
 })
 
 DLChomes.push({
+  uid: '4ed0g',
   dlc: 'DLC by Despin',
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'Control Center App',
@@ -333,6 +360,7 @@ DLChomes.push({
 })
 
 DLChomes.push({
+  uid: 'BxyZw',
   dlc: 'KatzSmile',
   title: 'Stay in touch',
   cost: 5,
@@ -341,6 +369,7 @@ DLChomes.push({
 })
 
 DLChomes.push({
+  uid: 'whxCA',
   dlc: 'KatzSmile',
   title: 'My House, My Rules!',
   special: 'Will not work on anyone with mental defences and T8+ characters.',
@@ -350,6 +379,7 @@ DLChomes.push({
 })
 
 DLChomes.push({
+  uid: 'smb9b',
   dlc: 'GForce1000',
   title: 'Armory',
   cost: 10,
@@ -358,6 +388,7 @@ DLChomes.push({
 })
 
 DLChomes.push({
+  uid: 'pftN2',
   dlc: 'DLC by Despin',
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'Home Security',
@@ -370,6 +401,7 @@ DLChomes.push({
 export const DLCtalents: DLCPerk[] = []
 
 DLCtalents.push({
+  uid: 'hRlCG',
   dlc: 'DLC by Despin',
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'Presence',
@@ -381,6 +413,7 @@ DLCtalents.push({
 })
 
 DLCtalents.push({
+  uid: 'AOY9D',
   dlc: 'DLC by Doomsought',
   dlclink: 'https://forum.questionablequesting.com/threads/r34-economy-cyoa-thread.11289/page-879#post-4440542',
   title: 'Money Talent',
@@ -392,6 +425,7 @@ DLCtalents.push({
 })
 
 DLCtalents.push({
+  uid: 'l6MHt',
   dlc: 'DLC by Merior',
   dlclink: 'https://docs.google.com/document/d/1j9emHb4IWvOTnp13RASTAuINAFuKDMSSQyQ-7ta9sjA/edit#',
   title: 'Educational Talent',
@@ -402,6 +436,7 @@ DLCtalents.push({
 })
 
 DLCtalents.push({
+  uid: 'vW82l',
   dlc: 'DLC by Merior',
   dlclink: 'https://docs.google.com/document/d/1j9emHb4IWvOTnp13RASTAuINAFuKDMSSQyQ-7ta9sjA/edit#',
   title: 'Inculcation Talent',
@@ -415,6 +450,7 @@ DLCtalents.push({
 export const DLClures: DLCPerk[] = []
 
 DLClures.push({
+  uid: 'ugDHv',
   dlc: 'DLC by Merior',
   dlclink: 'https://docs.google.com/document/d/1j9emHb4IWvOTnp13RASTAuINAFuKDMSSQyQ-7ta9sjA/edit#',
   title: 'Fools Gold',
@@ -423,6 +459,7 @@ DLClures.push({
 })
 
 DLClures.push({
+  uid: 'Uvc6m',
   dlc: 'DLC by Merior',
   dlclink: 'https://docs.google.com/document/d/1j9emHb4IWvOTnp13RASTAuINAFuKDMSSQyQ-7ta9sjA/edit#',
   title: 'Nine Tenths Law',
@@ -431,6 +468,7 @@ DLClures.push({
 })
 
 DLClures.push({
+  uid: '2YzxQ',
   dlc: 'DLC by Merior',
   dlclink: 'https://docs.google.com/document/d/1j9emHb4IWvOTnp13RASTAuINAFuKDMSSQyQ-7ta9sjA/edit#',
   title: 'Stud Service',
@@ -441,6 +479,7 @@ DLClures.push({
 })
 
 DLClures.push({
+  uid: 'tKqnC',
   dlc: 'Trismegistus',
   title: 'Hypnos',
   cost: 15,
@@ -452,6 +491,7 @@ DLClures.push({
 export const DLCotherControls: DLCPerk[] = []
 
 DLCotherControls.push({
+  uid: 'YzNrj',
   dlc: 'DLC by Merior',
   dlclink: 'https://docs.google.com/document/d/1j9emHb4IWvOTnp13RASTAuINAFuKDMSSQyQ-7ta9sjA/edit#',
   title: 'Signed and Sealed',
@@ -462,6 +502,7 @@ DLCotherControls.push({
 })
 
 DLCotherControls.push({
+  uid: 'ExW28',
   dlc: 'DLC by Merior',
   dlclink: 'https://docs.google.com/document/d/1j9emHb4IWvOTnp13RASTAuINAFuKDMSSQyQ-7ta9sjA/edit#',
   title: 'Letter of the Law',
@@ -472,6 +513,7 @@ DLCotherControls.push({
 })
 
 DLCotherControls.push({
+  uid: 'iCmw0',
   dlc: 'DLC by Merior',
   dlclink: 'https://docs.google.com/document/d/1j9emHb4IWvOTnp13RASTAuINAFuKDMSSQyQ-7ta9sjA/edit#',
   title: 'Needful Things',
@@ -483,6 +525,7 @@ DLCotherControls.push({
 })
 
 DLCotherControls.push({
+  uid: 'mESrr',
   dlc: 'gunmetalblue',
   title: 'To The Victor Goes The Spoils',
   cost: 100,
@@ -492,6 +535,7 @@ DLCotherControls.push({
 })
 
 DLCotherControls.push({
+  uid: 'gqjwm',
   dlc: 'Trismegistus',
   title: 'Social Club',
   cost: 10,
@@ -505,6 +549,7 @@ DLCotherControls.push({
 export const DLClureExpansions: DLCPerk[] = []
 
 DLClureExpansions.push({
+  uid: 'Iimw9',
   dlc: 'Cyan-Rozen',
   title: 'Sticky Fingers: Alter-Flavor',
   cost: 30,
@@ -513,6 +558,7 @@ DLClureExpansions.push({
 })
 
 DLClureExpansions.push({
+  uid: 'quujp',
   dlc: 'Trismegistus',
   title: 'Maestro',
   cost: 10,
@@ -525,6 +571,7 @@ DLClureExpansions.push({
 export const DLCheritages: DLCPerk[] = []
 
 DLCheritages.push({
+  uid: 'TuIs2',
   dlc: 'Cyan-Rozen',
   title: 'Ascendant Human',
   tree: 'Transhuman',
@@ -535,6 +582,7 @@ DLCheritages.push({
 })
 
 DLCheritages.push({
+  uid: 'rBXUp',
   dlc: 'DaemonOrk',
   title: 'Dragon God',
   tree: 'Dragon',
@@ -550,6 +598,7 @@ DLCheritages.push({
 export const DLCbindings: DLCPerk[] = []
 
 DLCbindings.push({
+  uid: 'mU9YC',
   dlc: 'DLC by Despin',
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'Additional Binding',
@@ -566,6 +615,7 @@ DLCbindings.push({
 export const DLCridePerks: DLCPerk[] = []
 
 DLCridePerks.push({
+  uid: 'cSEJx',
   dlc: 'KatzSmile',
   title: 'Catch-A-Ride Custom Crew',
   cost: 20,
@@ -580,6 +630,7 @@ DLCridePerks.push({
 })
 
 DLCridePerks.push({
+  uid: 'R52oX',
   dlc: 'KatzSmile',
   title: 'Catch-A-Ride Crew Tier Upgrade',
   cost: 40,
@@ -594,6 +645,7 @@ DLCridePerks.push({
 export const DLCintensity: DLCPerk[] = []
 
 DLCintensity.push({
+  uid: 'otaEJ',
   dlc: 'Om1cr0n',
   title: 'Black-mark',
   intensity: 0.8,

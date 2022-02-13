@@ -41,6 +41,7 @@ const {
   localUserRides,
   fee,
   specificMods,
+  patron,
 } = useChargenStore()
 
 const csr = computed(() => findIndex(intensities.value, { title: 'Cash Still Rules' }) !== -1)
@@ -395,5 +396,6 @@ export function useStore() {
     totalDiscount,
     companionsWithoutSold,
     specificMods,
+    patron,
   }
 }

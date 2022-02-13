@@ -6,8 +6,8 @@
       </h3>
       <div>
         Time I spend on Interactive Waifu Catalog so far -
-        <span class="text-amber-500 text-2xl">{{ 423 + 129 }}</span> hours in
-        <span class="text-amber-500 text-2xl">{{ 107 + 33 }}</span> days.
+        <span class="text-amber-500 text-2xl">{{ 423 + 151 }}</span> hours in
+        <span class="text-amber-500 text-2xl">{{ 107 + 40 }}</span> days.
       </div>
       <div>
         If you found some bugs, have any questions about Interactive, suggestions, collaborations or you want to hire me
@@ -41,9 +41,10 @@
           Top 20 users by submitted characters
         </h4>
         <div class="flex flex-wrap gap-x-2 justify-center">
-          <div v-for="user in topUsers" :key="user[0]" class="text-semibold">
+          <div v-for="user in topUsers.slice(0, 20)" :key="user[0]" class="text-semibold">
             {{ user[0] }}(<span class="text-amber-500">{{ user[1] }}</span>)
           </div>
+          <div><span class="text-blue-500">{{ topUsers.length - 20 }}</span> others...</div>
         </div>
       </div>
       <div>
@@ -73,7 +74,6 @@ const topUsers = ref<[string, number][]>([])
 getUserChars().then(x => Object.entries(countBy(x, c => c.k))
   .filter(x => x[0] !== 'undefined')
   .sort((a, b) => b[1] - a[1])
-  .slice(0, 20)
   .forEach(x => topUsers.value.push(x)))
 
 </script>

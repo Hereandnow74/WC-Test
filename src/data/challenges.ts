@@ -20,6 +20,7 @@ const cultFreebies = {
 
 export const challenges = [
   {
+    uid: 'QbKw9',
     title: 'Two Dime',
     special: 'Minimum World DR is 4',
     cost: computed(() => fullStartingBudget.value - 20).value,
@@ -29,6 +30,7 @@ export const challenges = [
     `,
   },
   {
+    uid: 'U8fCr',
     title: 'Freedom Anomaly',
     cost: 0,
     desc: `
@@ -42,6 +44,7 @@ export const challenges = [
     },
   },
   {
+    uid: 'tW5KX',
     title: 'Waifu Manager',
     special: 'DR7 or higher',
     cost: 0,
@@ -51,6 +54,7 @@ export const challenges = [
     `,
   },
   {
+    uid: 'K7Zhp',
     title: 'Strict Travel Mode',
     cost: 0,
     desc: `
@@ -58,6 +62,7 @@ export const challenges = [
     `,
   },
   {
+    uid: 'KcxSe',
     title: 'Wild GIRLFRIEND appeared!',
     cost: 0,
     desc: `
@@ -65,6 +70,7 @@ export const challenges = [
     `,
   },
   {
+    uid: 'Z4jXA',
     title: '100,000 years of cultivation',
     cost: 0,
     desc: `
@@ -96,6 +102,7 @@ export const challenges = [
     },
   },
   {
+    uid: 'ZpyEZ',
     dlc: 'KatzSmile',
     title: 'Power Trip',
     special: 'Chargen only. May not be taken on DR11.',

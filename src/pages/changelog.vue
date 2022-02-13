@@ -5,6 +5,21 @@
     </h2>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
+        12 February 2022
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>~200 new user submitted characters</li>
+        <li>19 new user submitted world</li>
+        <li>
+          You can now search characters by username, example: <b>@Om1cr0n</b>. More search options in
+          <a class="text-blue-500 underline" href="https://waifu-catalog.neocities.org/help">help</a>
+        </li>
+        <li>Added Patron's from Mortaegus’s Mod <b>(WIP)</b></li>
+        <li>Bugfixes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
         05 February 2022
       </h3>
       <ul class="list-decimal list-inside">

@@ -1,84 +1,94 @@
 <template>
   <Modal label="Add New Character">
-    <div class="p-2 flex flex-col gap-2 min-h-0 max-w-screen-sm">
-      <div class="p-1 rounded border-2 border-green-500 mb-2">
-        If you don't know what Tier assign to a Character check out
-        <router-link :to="{path:'/', hash:'#pandora'}" class="text-blue-500 hover:underline">
-          this
-        </router-link>
-      </div>
-      <div class="p-1 rounded border-2 border-green-500 mb-2">
-        <span>If you want to add NSFW image there is a list of sites that were confirmed to work:</span>
-        <span class="text-blue-600 dark:text-blue-200 underline">
-          <a class="ml-2" href="https://danbooru.donmai.us/" target="_blank" rel="noopener noreferrer">Danbooru</a>
-          <a class="ml-2" href="http://www.hentai-foundry.com/" target="_blank" rel="noopener noreferrer">Hentai-Foundry</a>
-          <a class="ml-2" href="https://e621.net/" target="_blank" rel="noopener noreferrer">e621</a>
-          <a class="ml-2" href="https://safebooru.org/" target="_blank" rel="noopener noreferrer">Safebooru</a>
-          <a class="ml-2" href="http://paheal.net" target="_blank" rel="noopener noreferrer">Paheal</a>
-          <a class="ml-2" href="https://www.furaffinity.net/" target="_blank" rel="noopener noreferrer">Furaffinity</a>
-          <a class="ml-2" href="https://www.reddit.com/" target="_blank" rel="noopener noreferrer">Reddit</a>
-          <a class="ml-2" href="https://imgur.com" target="_blank" rel="noopener noreferrer">Imgur</a>
-        </span>
-      </div>
-      <div class="flex gap-2">
-        <Input v-model="name" placeholder="Name" class="flex-grow" :error-message="errors.name" />
-        <NumberInput v-model="tier" label="Tier" :max="11" :error-message="errors.tier" />
-      </div>
-      <div class="flex gap-2">
-        <InputWithSearch
-          v-model="world"
-          idd="worldSearch"
-          :list="allWorlds"
-          placeholder="World Name"
-          class="flex-grow"
-          :error-message="errors.world"
+    <div class="max-h-[90vh] flex relative max-w-screen-sm min-h-0">
+      <div class="flex flex-col p-2 gap-2 min-h-0 overflow-y-auto scrollbar">
+        <Note type="info" title="Tier">
+          If you don't know what Tier assign to a Character check out
+          <router-link :to="{path:'/', hash:'#pandora'}" class="text-blue-500 hover:underline">
+            this
+          </router-link>
+        </Note>
+        <Note type="info" title="Images">
+          <div class="linkList">
+            <span>If you want to add NSFW image there is a list of sites that were confirmed to work: </span>
+            <a href="https://danbooru.donmai.us/" target="_blank" rel="noopener noreferrer">Danbooru</a>
+            <a href="http://www.hentai-foundry.com/" target="_blank" rel="noopener noreferrer">HentaiFoundry</a>
+            <a href="https://e621.net/" target="_blank" rel="noopener noreferrer">e621</a>
+            <a href="https://safebooru.org/" target="_blank" rel="noopener noreferrer">Safebooru</a>
+            <a href="http://paheal.net" target="_blank" rel="noopener noreferrer">Paheal</a>
+            <a href="https://www.furaffinity.net/" target="_blank" rel="noopener noreferrer">Furaffinity</a>
+            <a href="https://www.reddit.com/" target="_blank" rel="noopener noreferrer">Reddit</a>
+            <a href="https://imgur.com" target="_blank" rel="noopener noreferrer">Imgur</a>
+          </div>
+        </Note>
+        <div class="flex gap-2">
+          <Input v-model="name" placeholder="Name" class="flex-grow" :error-message="errors.name" />
+          <NumberInput v-model="tier" label="Tier" :max="11" :error-message="errors.tier" />
+        </div>
+        <div class="flex gap-2">
+          <InputWithSearch
+            v-model="world"
+            idd="worldSearch"
+            :list="allWorlds"
+            placeholder="World Name"
+            class="flex-grow"
+            :error-message="errors.world"
+          />
+          <InputWithSearch
+            v-model="sub"
+            idd="subSearch"
+            :list="allSubs"
+            placeholder="Sub-category"
+            class="flex-grow"
+            :error-message="errors.sub"
+          />
+        </div>
+        <Input v-model="image" placeholder="Image URL" :error-message="errors.image" />
+        <div v-if="image_nsfw" class="text-orange-600 dark:text-orange-300 text-sm">
+          No pornographic images please, ideally image should have only submitted character without any extras.
+        </div>
+        <Input v-model="image_nsfw" placeholder="NSFW Image URL" :error-message="errors.image_nsfw" />
+        <div class="flex gap-2 items-center">
+          <span>Sex: </span>
+          <label class="text-pink-500 dark:text-pink-300">Female<input v-model="sex" type="radio" name="gender" value="F" class="ml-2"></label>
+          <label class="text-blue-500 dark:text-blue-300">Male<input v-model="sex" type="radio" name="gender" value="M" class="ml-2"></label>
+          <label class="text-gray-500 dark:text-gray-300">Other<input v-model="sex" type="radio" name="gender" value="O" class="ml-2"></label>
+        </div>
+        <TagInput
+          v-model="tags"
+          placeholder="Tags - press Enter to add"
+          :error-message="errors.tags"
         />
-        <InputWithSearch
-          v-model="sub"
-          idd="subSearch"
-          :list="allSubs"
-          placeholder="Sub-category"
-          class="flex-grow"
-          :error-message="errors.sub"
-        />
+        <Input v-if="serverSave" v-model="nickname" placeholder="Your nickname" :error-message="errors.nickname" name="login" />
+        <div v-if="tierError" class="text-red-400 font-semibold">
+          {{ tierError }}
+        </div>
+        <div v-if="processing" class="font-semibold">
+          Processing <eos-icons:bubble-loading />
+        </div>
+        <div v-if="submitMessage" class="font-semibold">
+          {{ submitMessage }}
+        </div>
+        <div class="flex justify-between">
+          <div class="flex gap-2">
+            <Checkbox v-model="localSave" label="Local save" />
+            <Checkbox v-model="serverSave" label="Propose to global" />
+          </div>
+          <Button
+            :disabled="!!submitMessage || !!processing"
+            label="Add character"
+            class="self-center"
+            bg-color="bg-lime-600"
+            @click="!!submitMessage || !!processing? null : addCharacter()"
+          />
+        </div>
       </div>
-      <Input v-model="image" placeholder="Image URL" :error-message="errors.image" />
-      <div v-if="image_nsfw" class="text-orange-600 dark:text-orange-300 text-sm">
-        No pornographic images please, ideally image should have only submitted character without any extras.
-      </div>
-      <Input v-model="image_nsfw" placeholder="NSFW Image URL" :error-message="errors.image_nsfw" />
-      <div class="flex gap-2 items-center">
-        <span>Sex: </span>
-        <label class="text-pink-500 dark:text-pink-300">Female<input v-model="sex" type="radio" name="gender" value="F" class="ml-2"></label>
-        <label class="text-blue-500 dark:text-blue-300">Male<input v-model="sex" type="radio" name="gender" value="M" class="ml-2"></label>
-        <label class="text-gray-500 dark:text-gray-300">Other<input v-model="sex" type="radio" name="gender" value="O" class="ml-2"></label>
-      </div>
-      <TagInput
-        v-model="tags"
-        placeholder="Tags - press Enter to add"
-        :error-message="errors.tags"
+      <CompanionCard
+        v-if="name"
+        class="hidden xl:block absolute h-full -top-4 w-[300px] left-[calc(100%+0.5rem)]"
+        :char="companion"
+        :lazy="false"
       />
-      <Input v-if="serverSave" v-model="nickname" placeholder="Your nickname" :error-message="errors.nickname" name="login" />
-      <div v-if="tierError" class="text-red-400 font-semibold">
-        {{ tierError }}
-      </div>
-      <div v-if="processing" class="font-semibold">
-        Processing <eos-icons:bubble-loading />
-      </div>
-      <div v-if="submitMessage" class="font-semibold">
-        {{ submitMessage }}
-      </div>
-      <div class="flex gap-2">
-        <Checkbox v-model="localSave" label="Local save" />
-        <Checkbox v-model="serverSave" label="Propose to global" />
-        <Button
-          :disabled="!!submitMessage || !!processing"
-          label="Add"
-          class="flex-grow"
-          bg-color="bg-blue-700"
-          @click="!!submitMessage || !!processing? null : addCharacter()"
-        />
-      </div>
     </div>
   </Modal>
 </template>
@@ -157,6 +167,19 @@ const { value: image_nsfw } = useField<string>('image_nsfw')
 const { value: tags } = useField<string[]>('tags')
 const { value: nickname } = useField<string>('nickname')
 
+const companion = computed(() => {
+  return {
+    name: name.value,
+    world: world.value,
+    sub: sub.value,
+    tier: tier.value,
+    image: image.value,
+    image_nsfw: image_nsfw.value,
+    tags: tags.value,
+    nickname: nickname.value,
+  }
+})
+
 const addCharacter = handleSubmit((values) => {
   if (values.tier === 1 && !tierConfirm.value) {
     tierError.value = 'Are you sure that Tier=1, if yes click "Add" again'
@@ -198,3 +221,9 @@ const addCharacter = handleSubmit((values) => {
 })
 
 </script>
+
+<style>
+.linkList a {
+  @apply text-blue-700 dark:text-blue-400 hover:text-blue-500 underline mr-2 inline-block;
+}
+</style>

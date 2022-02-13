@@ -17,7 +17,7 @@
 </template>
 
 <script lang="ts" setup>
-import { assignBuildData, getBuild } from '~/logic'
+import { writeBuildValues, getBuild } from '~/logic'
 import { useStore } from '~/store/store'
 
 const { mode, params } = useStore()
@@ -29,7 +29,7 @@ const madeBy = ref('')
 function loadBuild() {
   getBuild(params.load, (data) => {
     if (data) {
-      assignBuildData(data)
+      writeBuildValues(data)
       madeBy.value = data.nickname
     }
     else { errorMessage.value = 'Problem with loading build' }

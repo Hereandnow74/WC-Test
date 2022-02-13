@@ -12,18 +12,28 @@
       :class="orientation ? 'max-w-[940px]' : 'max-w-[440px]'"
       @click.stop
     >
-      <div class="text-center relative pb-1">
+      <div class="relative pb-1 flex justify-center gap-4">
         <fluent:phone-tablet-20-regular
           v-if="visible"
           class="absolute left-4 top-1 h-6 w-6 cursor-pointer hover:text-amber-500"
           @click="orientation = !orientation"
         />
-        <span v-if="tier11tickets !== 0" class="mr-2">T11 tickets: {{ tier11tickets }}</span>
-        <span v-if="loan.owed" class="mr-2">Owed: {{ loan.owed }}</span>
-        <span>Budget: {{ budget }}</span>
-        <span v-if="budget < 0" class="text-red-500 px-2">You are in debt</span>
+        <span v-if="loan.owed" class="flex gap-1 items-center cursor-help" title="Current loan / maximum loan">
+          <mdi:bank class="text-gray-400" />
+          {{ loan.owed }} / {{ creditLimit }}
+        </span>
+        <span class="flex gap-1 items-center cursor-help" title="Your current credits">
+          <ph:coins style="color: #ffdb58;" />
+          <span :class="budget >= 0 ? '' : 'text-red-500'">
+            {{ budget }}
+          </span>
+        </span>
+        <span v-if="tier11tickets !== 0" class="flex gap-1 items-center cursor-help" title="Your current tickets">
+          <bi:ticket-perforated style="color: #faf0e6;" />
+          <span :class="tier11tickets >= 0 ? '' : 'text-red-500'">{{ tier11tickets }}</span>
+        </span>
         <span
-          class="absolute inline-block right-4 text-xl cursor-pointer hover:text-green-500"
+          class="absolute right-4 text-xl cursor-pointer hover:text-green-500"
           @click="() => toggleFull()"
         >
           <ic:round-unfold-more />
@@ -85,7 +95,7 @@ const smartMenu = ref(null)
 onClickOutside(smartMenu, () => showSmartMenu.value = false)
 
 const {
-  budget, tier11tickets, loan,
+  budget, tier11tickets, loan, creditLimit,
 } = useStore()
 
 const [visible, toggleFull] = useToggle()

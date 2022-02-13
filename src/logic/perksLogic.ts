@@ -2,7 +2,6 @@ import { findIndex, intersection, intersectionWith, isArray, isEmpty, isObject, 
 import { Binding, shroudElements } from '~/data/binding'
 import { Heritage } from '~/data/heritage'
 import { Intensity } from '~/data/intensity'
-import { genericPerks, PerkFull } from '~/data/talents'
 import { WaifuPerk } from '~/data/waifu_perks'
 import { useChallenges } from '~/store/challenges'
 import { usePlayStore } from '~/store/play'
@@ -13,7 +12,7 @@ import { ALL_PERK_TITLES } from '~/data/constants'
 const {
   allEffects, intensities, luresBought, binding, flags, allForSave, heritage,
   ridePerks, homePerks, talentPerks, defensePerks, miscPerks, genericWaifuPerks, companions, startingOrigin,
-  waifuPerks, baseBudget, startingWorld, budgetMods, otherPerks, fee, specificMods,
+  waifuPerks, baseBudget, startingWorld, budgetMods, otherPerks, fee, specificMods, patron,
 } = useStore()
 
 const { currentWorld, jumpChain, rdnWorld, loan, trHistory } = usePlayStore()
@@ -482,27 +481,62 @@ export function clearAll() {
   trHistory.value = []
   fee.value = 0
   specificMods.value = []
+  patron.value = []
 }
 
-export function assignBuildData(data: any) {
-  startingWorld.value = data.startingWorld
-  startingOrigin.value = data.startingOrigin
-  intensities.value = data.intensities
-  binding.value = data.binding
-  homePerks.value = data.homePerks
-  defensePerks.value = data.defensePerks
-  companions.value = data.companions
-  heritage.value = data.heritage
-  talentPerks.value = data.talentPerks
-  waifuPerks.value = data.waifuPerks
-  ridePerks.value = data.ridePerks
-  miscPerks.value = data.miscPerks
-  luresBought.value = data.luresBought
-  genericWaifuPerks.value = data.genericWaifuPerks
-  budgetMods.value = data.budgetMods
-  baseBudget.value = data.baseBudget
-  allEffects.value = data.allEffects
-  flags.value = data.flags
+export function writeBuildValues(build: any) {
+  clearAll()
+  baseBudget.value = build.baseBudget || 0
+  startingWorld.value = build.startingWorld
+  startingOrigin.value = build.startingOrigin
+  intensities.value = build.intensities || []
+  binding.value = build.binding || []
+  otherPerks.value = build.otherPerks || []
+  luresBought.value = build.luresBought || []
+  heritage.value = build.heritage || []
+  ridePerks.value = build.ridePerks || []
+  homePerks.value = build.homePerks || []
+  talentPerks.value = build.talentPerks || []
+  defensePerks.value = build.defensePerks || []
+  miscPerks.value = build.miscPerks || []
+  genericWaifuPerks.value = build.genericWaifuPerks || []
+  waifuPerks.value = build.waifuPerks || []
+  companions.value = build.companions || []
+  allEffects.value = build.allEffects || []
+  flags.value = build.flags
+  budgetMods.value = build.budgetMods
+  activeChallenges.value = build.activeChallenges || []
+  loan.value = build.loan || { owed: 0, gained: 0 }
+  specificMods.value = build.specificMods || []
+  patron.value = build.patron || []
+}
+
+export function getSaveObject() {
+  return {
+    baseBudget: baseBudget.value,
+    startingWorld: startingWorld.value,
+    startingOrigin: startingOrigin.value,
+    intensities: intensities.value,
+    binding: binding.value,
+    luresBought: luresBought.value,
+    otherPerks: otherPerks.value,
+    heritage: heritage.value,
+    ridePerks: ridePerks.value,
+    homePerks: homePerks.value,
+    talentPerks: talentPerks.value,
+    defensePerks: defensePerks.value,
+    miscPerks: miscPerks.value,
+    genericWaifuPerks: genericWaifuPerks.value,
+    waifuPerks: waifuPerks.value,
+    companions: companions.value,
+    allEffects: allEffects.value,
+    flags: flags.value,
+    budgetMods: budgetMods.value,
+    activeChallenges: activeChallenges.value,
+    loan: loan.value,
+    specificMods: specificMods.value,
+    patron: patron.value,
+  }
 }
 
 export function filterObject(obj: any) {

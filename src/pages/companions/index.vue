@@ -236,7 +236,7 @@ const options = {
   findAllMatches: true,
   useExtendedSearch: true,
   threshold: 0.4,
-  keys: ['n', 'w', 't', 'b', 'i', 'd', 'in', 'u'],
+  keys: ['n', 'w', 't', 'b', 'i', 'd', 'in', 'u', 'k'],
 }
 
 const fuse = new Fuse(charArr.value, options)
@@ -289,30 +289,67 @@ const worldNameDict = {
 const filteredCharacters = computed(() => {
   const sr = search.value || '!^xxx'
   const worldName = worldNameDict[currentWorld.value.worldName] || currentWorld.value.worldName || worldNameDict[startingWorld.value.worldName] || startingWorld.value.worldName
-  let sopt: any = {}
-  if (isLimited.value) {
-    sopt = {
-      $and: [
-        { t: tier.value !== 0 ? `=${tier.value}` : '!z' },
+  const sopt: any = {
+    $and: [
+      { t: tier.value !== 0 ? `=${tier.value}` : '!z' },
+    ],
+  }
+  switch (true) {
+    // Search by nickname
+    case sr.startsWith('@'):
+      sopt.$and.push({ k: sr.slice(1) })
+      break
+    // Search by name
+    case sr.startsWith('#'):
+      sopt.$and.push({ n: sr.slice(1) })
+      break
+    // Search by world
+    case sr.startsWith('%'):
+      sopt.$and.push({ w: sr.slice(1) })
+      break
+    // Search by subworld
+    case sr.startsWith('$'):
+      sopt.$and.push({ d: sr.slice(1) })
+      break
+    // Search ny name with locked world
+    case isLimited.value:
+      sopt.$and.push(
         { n: sr },
         {
           $or: [
-            { w: `^"${worldName}"` }, { d: `^"${worldName}"` }],
+            { w: `^"${worldName}"` }, { d: `^"${worldName}"` },
+          ],
         },
-      ],
-    }
-  }
-  else {
-    sopt = {
-      $and: [
-        { t: tier.value !== 0 ? `=${tier.value}` : '!z' },
+      )
+      break
+    // Search by World or Name or Subworld
+    case !isLimited.value:
+      sopt.$and.push(
         {
           $or: [
             { w: sr }, { n: sr }, { d: sr }],
         },
-      ],
-    }
+      )
+      break
   }
+  // if (isLimited.value) {
+  //   sopt.$and.push(
+  //     { n: sr },
+  //     {
+  //       $or: [
+  //         { w: `^"${worldName}"` }, { d: `^"${worldName}"` },
+  //       ],
+  //     },
+  //   )
+  // }
+  // else {
+  //   sopt.$and.push(
+  //     {
+  //       $or: [
+  //         { w: sr }, { n: sr }, { d: sr }],
+  //     },
+  //   )
+  // }
   if (gender.value) sopt.$and.push({ b: `=${gender.value}` })
 
   if (image.value) sopt.$and.push({ i: image.value })

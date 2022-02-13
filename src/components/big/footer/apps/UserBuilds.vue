@@ -39,7 +39,7 @@
 
 <script lang="ts" setup>
 import { useTimeAgo } from '@vueuse/core'
-import { activeTab, assignBuildData, getBuild, getBuilds, toggleAppMode } from '~/logic'
+import { activeTab, writeBuildValues, getBuild, getBuilds, toggleAppMode } from '~/logic'
 import { useSaves } from '~/store/saves'
 
 const { buildList } = useSaves()
@@ -53,7 +53,7 @@ const displayList = computed(() => buildList.value
   .slice(0, 100))
 
 function loadBuild(id: string) {
-  getBuild(id, assignBuildData)
+  getBuild(id, writeBuildValues)
   activeTab.value = 0
 }
 

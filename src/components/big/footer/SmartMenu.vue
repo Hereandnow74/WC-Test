@@ -31,7 +31,7 @@ const {
   startingWorld, startingOrigin, intensities, binding, homePerks, defensePerks,
   companions, heritage, talentPerks, waifuPerks, ridePerks, miscPerks, luresBought, genericWaifuPerks,
   companionsCost, baseBudget, companionProfit, companionProfitSold, otherPerks, loan, csr,
-  usedHeritageDiscount, talentsDiscount, defensesDiscount, defenseRetinueDiscount, totalCost, totalDiscount,
+  usedHeritageDiscount, talentsDiscount, defensesDiscount, defenseRetinueDiscount, patron,
 } = useStore()
 
 const { activeChallenges } = useChallenges()
@@ -89,6 +89,8 @@ function copyText() {
 
   full += loan.value.gained > 0 ? `Took a loan for ${loan.value.gained} credits\n\n` : ''
   fullCost.c += loan.value.gained
+
+  full += patron.value.length ? `${buildString('Patron', patron.value, fullCost)}\n` : ''
 
   full += activeChallenges.value.length ? `${buildString('Challenges', activeChallenges.value, fullCost)}\n` : ''
 

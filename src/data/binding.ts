@@ -9,6 +9,7 @@ export const desc = `
 `
 
 export interface Binding {
+  uid: string
   title: string
   effect?: string
   desc: string
@@ -33,6 +34,7 @@ export interface Binding {
 export const bindings: Binding[] = []
 
 bindings.push({
+  uid: 'XnYV4',
   title: 'Company Stamp',
   cost: 0,
   type: 'Stamp',
@@ -46,6 +48,7 @@ bindings.push({
 })
 
 bindings.push({
+  uid: 'Cc10H',
   title: 'Empty Hand',
   cost: -20,
   type: 'Stamp',
@@ -56,6 +59,7 @@ bindings.push({
 })
 
 bindings.push({
+  uid: 'JTCzI',
   title: 'Megapixel',
   cost: 150,
   type: 'Stamp',
@@ -66,6 +70,7 @@ bindings.push({
 })
 
 bindings.push({
+  uid: 'GmTkb',
   title: 'Tempest Jewelry',
   cost: 10,
   type: 'Jewelry',
@@ -80,6 +85,7 @@ bindings.push({
 })
 
 bindings.push({
+  uid: 'lg88f',
   title: 'Basic Tempest Runes',
   cost: 10,
   type: 'Jewelry',
@@ -91,6 +97,7 @@ bindings.push({
 })
 
 bindings.push({
+  uid: '206E2',
   title: 'Advanced Tempest Runes (Body)',
   cost: 20,
   type: 'Jewelry',
@@ -105,6 +112,7 @@ bindings.push({
 })
 
 bindings.push({
+  uid: '238gu',
   title: 'Advanced Tempest Runes (Mind)',
   cost: 10,
   type: 'Jewelry',
@@ -114,6 +122,7 @@ bindings.push({
 })
 
 bindings.push({
+  uid: 'IZswJ',
   title: 'Advanced Tempest Runes (Hybrid)',
   cost: 20,
   type: 'Jewelry',
@@ -123,6 +132,7 @@ bindings.push({
 })
 
 bindings.push({
+  uid: 'B2ow8',
   title: 'Absolute Order',
   cost: 40,
   type: 'Jewelry',
@@ -135,6 +145,7 @@ bindings.push({
 })
 
 bindings.push({
+  uid: 'ubLJy',
   title: 'Additional Stock',
   cost: 5,
   type: 'Jewelry',
@@ -145,6 +156,7 @@ bindings.push({
 })
 
 bindings.push({
+  uid: '2HqiU',
   title: 'Jewels of Discord',
   cost: 25,
   type: 'Jewelry',
@@ -156,6 +168,7 @@ bindings.push({
 })
 
 bindings.push({
+  uid: 'zLn2I',
   title: 'Aggressive Initiations',
   cost: 20,
   type: 'Jewelry',
@@ -165,6 +178,7 @@ bindings.push({
 })
 
 bindings.push({
+  uid: 'TW0hU',
   title: 'Ritual Circle',
   cost: 30,
   type: 'Ritual',
@@ -178,6 +192,7 @@ bindings.push({
 })
 
 bindings.push({
+  uid: 'GPf4t',
   title: 'Greater Bandwidth',
   cost: 5,
   type: 'Ritual',
@@ -190,6 +205,7 @@ bindings.push({
 })
 
 bindings.push({
+  uid: 'vDavA',
   title: 'Transformation Circle I',
   cost: 20,
   type: 'Ritual',
@@ -201,6 +217,7 @@ bindings.push({
 })
 
 bindings.push({
+  uid: 'tph0S',
   title: 'Transformation Circle II',
   cost: 20,
   type: 'Ritual',
@@ -210,6 +227,7 @@ bindings.push({
 })
 
 bindings.push({
+  uid: 'Ymscz',
   title: 'Teleportation Circle',
   cost: 25,
   type: 'Ritual',
@@ -221,6 +239,7 @@ bindings.push({
 })
 
 bindings.push({
+  uid: 'YjzPm',
   title: 'Portal Runes',
   cost: 10,
   type: 'Ritual',
@@ -230,6 +249,7 @@ bindings.push({
 })
 
 bindings.push({
+  uid: 'kQFGD',
   title: 'Geometric Magic',
   cost: 5,
   type: 'Ritual',
@@ -239,6 +259,7 @@ bindings.push({
 })
 
 bindings.push({
+  uid: 'y1WER',
   title: 'Destruction Circle',
   cost: 5,
   type: 'Ritual',
@@ -248,6 +269,7 @@ bindings.push({
 })
 
 bindings.push({
+  uid: 'CEpgj',
   title: 'Warding Circle',
   cost: 5,
   type: 'Ritual',
@@ -257,6 +279,7 @@ bindings.push({
 })
 
 bindings.push({
+  uid: 'PqcuB',
   title: 'Ritual Anchor',
   cost: 15,
   type: 'Ritual',
@@ -279,6 +302,7 @@ export const symbioteRules = `
 <p>As an alternative, even without any spare larvae, you and your queen may also convert a target in person by transmitting the same transformative fluid from her mouth or tail. This trades speed and immediate effect for subtlety; you or your queen can let your tail out without the rest of the armor, make out or have sex with the conversion target, and then leave before the real transformation begins.</p>`
 
 bindings.push({
+  uid: 'QrpgY',
   title: 'Alterzelu Symbiote',
   cost: 100,
   type: 'Symbiote',
@@ -301,6 +325,7 @@ If you Possessed or Substituted a waifu or are otherwise female, you may act as 
 })
 
 bindings.push({
+  uid: 'odRGB',
   title: 'Universal Bus',
   // type: 'Expansion',
   cost: 50,
@@ -313,6 +338,7 @@ bindings.push({
 })
 
 bindings.push({
+  uid: 'RFtIP',
   title: 'Second-Generation Symbiote',
   // type: 'Expansion',
   cost: 30,
@@ -326,6 +352,7 @@ bindings.push({
 })
 
 bindings.push({
+  uid: 'vGVqB',
   title: 'Third-Generation Symbiote',
   // type: 'Expansion',
   cost: 60,
@@ -340,6 +367,7 @@ bindings.push({
 })
 
 bindings.push({
+  uid: 'QQmH7',
   title: 'Shroud of Power',
   cost: 80,
   type: 'Shroud',
@@ -363,6 +391,7 @@ bindings.push({
 })
 
 bindings.push({
+  uid: 'Z95pZ',
   title: 'Three-Piece Suit',
   cost: 15,
   type: 'Shroud',
@@ -378,6 +407,7 @@ bindings.push({
 
 export const shroudElements = [
   {
+    'uid': 'eFccu',
     'title': 'Glorious (Light)',
     'Elemental Ability': 'Light and plasma generation and control. Constructs made from it glow intensely and tend to be very crisp hard light. Intense usage tends to be plasma or brilliant lasers. Subtle usage can be nearly imperceptible changes in brightness or electromagnetic fields.',
     'Body Effects': 'Glowing golden sclera, glowing tribalistic tattoos over face and body.',
@@ -387,6 +417,7 @@ export const shroudElements = [
     'freebies': { talentPerks: ['Communication Talent', 'Performance Talent', 'Blessed Talent'] },
   },
   {
+    'uid': 'DmpEp',
     'title': 'Fearful (Shadow)',
     'Elemental Ability': 'Shadow and gravity generation and control. Constructs made from it tend to be hazy and semi-transparent. Intense effects tend to involve black voids and inky clouds of shadow, while subtle usage can be dimming of ambient light, or subtle shifts in gravity.',
     'Body Effects': 'Black sclera and lips, dark facial tattoos, sharpened black finger- and toenails.',
@@ -396,6 +427,7 @@ export const shroudElements = [
     'freebies': { talentPerks: ['Covert Talent', 'Performance Talent', 'Blessed Talent'] },
   },
   {
+    'uid': 'gm6KJ',
     'title': 'Volcanic (Fire)',
     'Elemental Ability': 'Fire and magma generation and control, with practice also able to inflame passions and emotions. Intense manifestations are things such as embers, flames, and magma, while subtle usages can alter ambient temperatures, ashes, and embers.',
     'Body Effects': 'Constantly-flushed skin, heightened body temperature. Faint smell of smoke, incense, or ash. Eyes glow like embers.',
@@ -408,6 +440,7 @@ export const shroudElements = [
     },
   },
   {
+    'uid': 'nPh8R',
     'title': 'Boreal (Ice)',
     'Elemental Ability': 'Ice and snow generation and control, with practice also able to cool passions and emotions. Intense usage involves things like snow and ice. Subtle usage can lower ambient temperature, be the misting of breath, or hints of rime and frost.',
     'Body Effects': 'Skin tinted blue from lower body temperature. Faint smell of pine needles. Eyes glow like ice.',
@@ -420,6 +453,7 @@ export const shroudElements = [
     },
   },
   {
+    'uid': 'klYah',
     'title': 'Xeric (Land)',
     'Elemental Ability': 'Earth, stone, and gem generation and control. These materials last the longest of the Shroud-generated materials when separated from the Shroud. Intense manifestations involve soil, rock, stone, gemstones, or mud, while subtle manifestations can be such as imperceptibly spread through the ground beneath your feet, dust in the air.',
     'Body Effects': 'Richly tanned skin if otherwise lighter. Smell of moist clay or loam. Eyes sparkle as gemstones of the same color.',
@@ -432,6 +466,7 @@ export const shroudElements = [
     },
   },
   {
+    'uid': 'orQbG',
     'title': 'Pelagic (Sea)',
     'Elemental Ability': 'Water and natural fluid generation and control. Constructs tend to be surprisingly solid and slightly springy shapes made of water or coral. Obvious manifestations include torrents of water, fresh or otherwise, as well as other more natural liquids such as oil. Subtle manifestations include dew, mist and dampness. You may ‘harden’ portions of the Shroud into ice.',
     'Body Effects': 'Mermaid alt-form automatically activates when entering water - can be based on any sea creature, not just fish. Skin tinted blue-green, sometimes a deeper black. Smell of salty ocean spray. Can have watery eyes or perpetually damp hair. Presence leaves condensation on nearby surfaces.',
@@ -444,6 +479,7 @@ export const shroudElements = [
     },
   },
   {
+    'uid': 'BO8XN',
     'title': 'Storm (Sky)',
     'Elemental Ability': 'Wind, lightning, and cloud generation and control. Constructs tend to be compressed wind or semi-solid clouds. Intense manifestations tend to be clouds, lightning, or howling winds, while subtle manifestations of the Storm Shroud are some of the most versatile out there, able to alter the weather, and manipulate the very air currents.',
     'Body Effects': 'Smell of fresh breeze or ozone. Eyes crackle with lightning at times. A dramatic wind always occurs when needed. Head wings.',
@@ -456,6 +492,7 @@ export const shroudElements = [
     },
   },
   {
+    'uid': 'Utu3R',
     'title': 'Primal (Fauna)',
     'Elemental Ability': 'Animal biomass generation and control. Constructs tend to be actual living creatures or masses of tendrils and tentacles. Intense effects tend to be flesh, muscles, spines, and biomass alteration. The line between intense and subtle effects is particularly blurry for the Primal and Jungle Shrouds and is primarily found in the fidelity of control. Both elements gain the ability to control fungi and, thus, spores and mycelium once Elemental Loom is purchased.',
     'Body Effects': 'Individual gets a kemonomimi mode based on a natural animal, from your or the individual’s homeworld and appropriate to the individual’s personality. Kemonomimi mode shifts to a bestial warform as the volume of active constructs increases.',
@@ -468,6 +505,7 @@ export const shroudElements = [
     },
   },
   {
+    'uid': 'Wi4eK',
     'title': 'Jungle (Flora)',
     'Elemental Ability': 'Floral generation and control. Constructs tend to be actual living creatures, or masses of roots, bark, and vines. Intense effects tend to be vines, flowers, leaves, and trees. The line between intense and subtle effects is particularly blurry for the Primal and Jungle Shrouds and is primarily found in the fidelity of control. Both elements gain the ability to control fungi and, thus, spores and mycelium once Elemental Loom is purchased.',
     'Body Effects': 'Green-tinted skin, hair, lips, sometimes blood. Often green eyes. Smell like flowers, fresh fruit, or other plants. Can have leaves and flowers grow in hair. Extreme cases develop a layer of bark on skin, usually along the back and shoulders.',
@@ -480,6 +518,7 @@ export const shroudElements = [
     },
   },
   {
+    'uid': 'Zst2l',
     'title': 'Burial (Death)',
     'Elemental Ability': 'Ectoplasm, soul, and entropic generation and control. Constructs tend to be translucent ectoplasm. Intense manifestations tend to be ectoplasm or intense visual distortions of concentrated entropy, while subtle effects are gentle alterations to entropy or ambient soul field around oneself.',
     'Body Effects': 'Several hitodama orbit you. Can turn intangible at will, also become monochrome for the duration.',
@@ -492,6 +531,7 @@ export const shroudElements = [
     },
   },
   {
+    'uid': 'D1hmR',
     'title': 'Cyber (Technology)',
     'Elemental Ability': 'Nanite/Technology/Digital generation and control. Constructs are built from liquid nanite metal, which often has digital circuitry designs along it unless compressed into a known technological form such as a gun or tablet. Blatant uses generally involve the creation and manipulation of technology via the nanites that make up the base of the Shroud, or interfacing with technology being indicated by glowing circuit-designs appearing on the item, while subtle uses involve manipulating the digital space or accessing technology at a distance.',
     'Body Effects': 'Seam-like skin indentations over the entire body from neck down. Symbol-shaped pupils; bilateral symmetry recommended but not required. Pupils can instead be the same design as your tattoo’s central emblem.',
@@ -503,6 +543,7 @@ export const shroudElements = [
     },
   },
   {
+    'uid': '1ofJw',
     'title': 'Void (Space-Time)',
     'Elemental Ability': 'Spatial warping and temporal generation and control. Constructs appear to be starry voids. Intense effects tend to visually involve those starry voids, loud ticking of a clock, or even dancing stars around the user, while subtle effects can involve simple effects like flight and temporal acceleration without any obvious signifiers. The Void Shroud has been consistently rated as the single most difficult Shroud to master by 4.231638 * 10^97 users, as the automatic defenses against harming unintended things with the Shroud make it difficult to fully utilize. Purchase with caution!',
     'Body Effects': 'My god, it’s full of stars! Specifically the pupils, which seem to go on forever. The insides of orifices may also seem to hint at further cosmos within, and the user appearing larger or smaller than they truly should out of the corner of one’s eye.',
@@ -512,6 +553,7 @@ export const shroudElements = [
     'freebies': { defensePerks: ['Paradox Defense'] },
   },
   {
+    'uid': 'e8C98',
     'title': 'Custom Element',
     'Elemental Ability': 'If you aren\'t satisfied with Company provided options you can choose custom element for yourself, while Company systems are adapting to new element you may experience some glitches. Your custom element will start at the weakest level of power compared to Company provided elements, but it will match them when you attain mastery in every way.',
     'Body Effects': 'Effects on body heavily depend on chosen element the more conceptual the element is the more bizarre effects you will experience. Elements that have little to no effect on your body are possible as well(Human Element, Beauty Element, etc.)',
@@ -525,6 +567,7 @@ export const shroudElements = [
   }]
 
 bindings.push({
+  uid: '0Xseq',
   title: 'Elemental Shroud',
   cost: 96,
   type: 'Shroud',
@@ -544,6 +587,7 @@ bindings.push({
 })
 
 bindings.push({
+  uid: '70Ng6',
   title: 'Prismatic Shroud',
   cost: 64,
   type: 'Shroud',
@@ -558,6 +602,7 @@ bindings.push({
 })
 
 bindings.push({
+  uid: 'aTjfr',
   title: 'Complementary Colors',
   cost: 25,
   complex: 'target',
@@ -572,6 +617,7 @@ bindings.push({
 })
 
 bindings.push({
+  uid: 'CmH9Z',
   title: 'Grand Tapestry',
   cost: 100,
   type: 'Shroud',
@@ -588,6 +634,7 @@ bindings.push({
 })
 
 bindings.push({
+  uid: 'BmgvX',
   title: 'Elemental Loom',
   cost: 50,
   type: 'Shroud',
@@ -601,6 +648,7 @@ bindings.push({
 })
 
 bindings.push({
+  uid: '8Pek6',
   title: 'Deep Weave',
   cost: 25,
   type: 'Shroud',
@@ -617,6 +665,7 @@ export const lureDesc = 'Lure-type controls are more subtle than bindings, but c
 export const lures: Binding[] = []
 
 lures.push({
+  uid: 'cBDgW',
   title: 'Sticky Fingers',
   image: 'https://i.ibb.co/c3z0wcM/Sticky-Fingers.jpg',
   cost: 5,
@@ -624,6 +673,7 @@ lures.push({
 })
 
 lures.push({
+  uid: 'VwHHb',
   title: 'Faerie Feast',
   image: 'https://i.ibb.co/QmxqhJJ/Faerie-Feast.jpg',
   cost: 10,
@@ -634,6 +684,7 @@ lures.push({
 })
 
 lures.push({
+  uid: 'ak3fJ',
   title: 'Don’t Stand So Close to Me',
   image: 'https://i.ibb.co/Qd20Thb/Dont-Stand-So-Close-To-Me.jpg',
   cost: 15,
@@ -643,6 +694,7 @@ lures.push({
 })
 
 lures.push({
+  uid: '3umpd',
   title: 'Arlo',
   cost: 15,
   image: 'https://i.ibb.co/XzLg3RR/Arlo.jpg',
@@ -659,6 +711,7 @@ lures.push({
 })
 
 lures.push({
+  uid: '2ObHB',
   title: 'Alluring Whisper',
   image: 'https://i.ibb.co/rFCDPSH/Alluring-Whisper.jpg',
   cost: 20,
@@ -666,6 +719,7 @@ lures.push({
 })
 
 lures.push({
+  uid: 'WmxCr',
   title: 'Love Spot',
   image: 'https://i.ibb.co/yFDkdMz/LoveSpot.jpg',
   cost: 20,
@@ -675,6 +729,7 @@ lures.push({
 })
 
 lures.push({
+  uid: 'tsMkY',
   title: 'Potpourri',
   image: 'https://i.ibb.co/2sL5sQH/Potpourri.jpg',
   cost: 20,
@@ -684,6 +739,7 @@ lures.push({
 })
 
 lures.push({
+  uid: 'tD0W2',
   title: 'Zenryoku Zenkai',
   image: 'https://i.ibb.co/7ywxs16/Zenryoku-Zenkai.jpg',
   cost: 20,
@@ -697,6 +753,7 @@ export const lureExpansionDesc = 'If you ever trade in a lure, any expansion you
 export const lureExpansions: Binding[] = []
 
 lureExpansions.push({
+  uid: 'vE6Mo',
   title: 'Sticky Fingers: Brown Sugar',
   image: 'https://i.ibb.co/5j5X9Gv/Sticky-Fingers-Brown-Sugar.jpg',
   cost: 15,
@@ -705,6 +762,7 @@ lureExpansions.push({
 })
 
 lureExpansions.push({
+  uid: 'LiXE1',
   title: 'Faerie Feast: Master Chef',
   image: 'https://i.ibb.co/HYVZFYF/Faerie-Feast-Master-Chef.jpg',
   cost: 10,
@@ -713,6 +771,7 @@ lureExpansions.push({
 })
 
 lureExpansions.push({
+  uid: 'WyUZ3',
   title: 'Faerie Feast: The Secret Ingredient is Love',
   image: 'https://i.ibb.co/7bsSS2K/Faerie-Feast-The-Secret-Ingredient-Is-Love.jpg',
   cost: 5,
@@ -721,6 +780,7 @@ lureExpansions.push({
 })
 
 lureExpansions.push({
+  uid: 'JjBAb',
   title: 'Alluring Whisper: Dirty Minds',
   image: 'https://i.ibb.co/10psjZ7/Alluring-Whisper-Dirty-Minds.jpg',
   cost: 20,
@@ -732,6 +792,7 @@ lureExpansions.push({
 })
 
 lureExpansions.push({
+  uid: 'SvPu0',
   title: 'Alluring Whisper: Siren’s Song',
   image: 'https://i.ibb.co/fpt30LV/Alluring-Whisper-Sirens-Song.jpg',
   cost: 80,
@@ -746,6 +807,7 @@ export const otherDesc = 'These perks are either expansions to multiple Bindings
 export const otherControls: Binding[] = []
 
 otherControls.push({
+  uid: 'uKKWn',
   title: 'Conjunction',
   image: 'https://i.ibb.co/gg2wM9D/Conjunction.jpg',
   cost: 25,
@@ -759,6 +821,7 @@ otherControls.push({
 })
 
 otherControls.push({
+  uid: 'Tic8F',
   title: 'Apportation',
   image: 'https://i.ibb.co/t2yrJLX/Apportation.jpg',
   cost: 25,
@@ -771,6 +834,7 @@ otherControls.push({
 })
 
 otherControls.push({
+  uid: 'RqAFD',
   dlc: 'Old Version',
   dlclink: 'https://docs.google.com/document/d/1c4QaqLKxENFdzcBVe1-nvWJpZMK-UL0yQH_HCNd3Tes/edit?usp=sharing',
   title: 'Hotel California',
@@ -786,6 +850,7 @@ otherControls.push({
 })
 
 otherControls.push({
+  uid: 'zLpWa',
   title: 'Command Seals',
   image: 'https://i.ibb.co/MZQncZ3/Command-Seals.jpg',
   cost: 5,
@@ -811,6 +876,7 @@ otherControls.push({
 })
 
 otherControls.push({
+  uid: 'bcooZ',
   title: 'Command Seals: General Seals',
   image: 'https://i.ibb.co/qJj0JzJ/Command-Seals-General-Seals.jpg',
   cost: 10,
@@ -820,6 +886,7 @@ otherControls.push({
 })
 
 otherControls.push({
+  uid: 'VTfqo',
   title: 'Divine Marking',
   image: 'https://i.ibb.co/7GZQrFv/Divine-Marking.jpg',
   cost: 20,
@@ -828,6 +895,7 @@ otherControls.push({
 })
 
 otherControls.push({
+  uid: 'CTpCG',
   title: 'Space Truckin’',
   image: 'https://i.ibb.co/H2ByYsD/Space-Truckin.jpg',
   cost: 100,
@@ -855,6 +923,7 @@ otherControls.push({
 })
 
 otherControls.push({
+  uid: 'JOlyR',
   title: 'Highway Star',
   image: 'https://i.ibb.co/g6w1kMD/Space-Truckin-Highway-Star.jpg',
   cost: 100,
@@ -863,6 +932,7 @@ otherControls.push({
 })
 
 otherControls.push({
+  uid: '3RLYt',
   title: 'Strange Kind of Woman',
   image: '',
   cost: 10,
@@ -873,6 +943,7 @@ otherControls.push({
 })
 
 otherControls.push({
+  uid: 'TwKOp',
   title: 'Anyone\'s Daughter',
   image: '',
   cost: 10,
@@ -887,6 +958,7 @@ otherControls.push({
 })
 
 otherControls.push({
+  uid: 'MAN0h',
   title: 'All The Time In The World',
   image: '',
   cost: 10,
@@ -896,6 +968,7 @@ otherControls.push({
 })
 
 otherControls.push({
+  uid: 'WCYdn',
   title: 'Demon\'s Eye',
   image: '',
   cost: 30,
@@ -906,6 +979,7 @@ otherControls.push({
 })
 
 otherControls.push({
+  uid: 'UNwcQ',
   title: 'Mistreated',
   image: '',
   cost: 40,
@@ -916,6 +990,7 @@ otherControls.push({
 })
 
 otherControls.push({
+  uid: 'GxcTK',
   title: 'Time For Bedlam',
   image: '',
   cost: 20,
@@ -926,6 +1001,7 @@ otherControls.push({
 })
 
 otherControls.push({
+  uid: 'pzt7d',
   title: 'Pictures of Home',
   image: '',
   cost: 10,
@@ -936,6 +1012,7 @@ otherControls.push({
 })
 
 otherControls.push({
+  uid: 'GdRyN',
   title: 'I Got Your Number',
   image: '',
   cost: 10,
@@ -945,6 +1022,7 @@ otherControls.push({
 })
 
 otherControls.push({
+  uid: 'ARFjX',
   title: 'Child in Time',
   image: '',
   cost: 15,
@@ -955,6 +1033,7 @@ otherControls.push({
 })
 
 otherControls.push({
+  uid: 'eZoxo',
   title: 'Not Responsible',
   image: '',
   cost: 20,
@@ -965,6 +1044,7 @@ otherControls.push({
 })
 
 otherControls.push({
+  uid: 'iRfHA',
   title: 'Perfect Strangers',
   image: '',
   cost: 5,
@@ -973,6 +1053,7 @@ otherControls.push({
 })
 
 otherControls.push({
+  uid: 'VfOVT',
   title: 'Hush',
   image: '',
   cost: 30,

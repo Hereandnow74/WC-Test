@@ -1,4 +1,5 @@
 export interface Ride {
+  uid: string
   title: string
   image?: string
   cost: number
@@ -24,6 +25,7 @@ export interface DLCRide extends Ride {
 export const rides: Ride[] = []
 
 rides.push({
+  uid: 'y2NUh',
   title: 'Your Own Car From Home',
   category: 'Land',
   size: 'Small',
@@ -34,6 +36,7 @@ rides.push({
 })
 
 rides.push({
+  uid: 'HpU9y',
   title: 'Herbie',
   source: 'Herbie',
   category: 'Land',
@@ -45,6 +48,7 @@ rides.push({
 })
 
 rides.push({
+  uid: 'vchfG',
   title: 'Regalia',
   source: 'Final Fantasy XV',
   category: 'Land',
@@ -57,6 +61,7 @@ rides.push({
 })
 
 rides.push({
+  uid: 'RHQKv',
   title: 'Molcar',
   source: 'Pui Pui Molcar',
   category: 'Land',
@@ -68,6 +73,7 @@ rides.push({
 })
 
 rides.push({
+  uid: 'iuKHT',
   title: 'Kaneda',
   source: 'Akira',
   category: 'Land',
@@ -81,6 +87,7 @@ rides.push({
 // Environment: Sea
 
 rides.push({
+  uid: 'ARcn2',
   title: 'Nautilus (1865)',
   source: '20,000 Leagues Under the Sea',
   category: 'Sea',
@@ -92,6 +99,7 @@ rides.push({
 })
 
 rides.push({
+  uid: 'RC9WK',
   title: 'Tuatha de Danaan',
   source: 'Full Metal Panic',
   category: 'Sea',
@@ -104,6 +112,7 @@ rides.push({
 })
 
 rides.push({
+  uid: 'TRKef',
   title: 'Gargantia Fleet',
   source: 'Gargantia on the Verdurous Planet',
   category: 'Sea',
@@ -115,6 +124,7 @@ rides.push({
 })
 
 rides.push({
+  uid: 'NSNlf',
   title: 'Nautilus',
   source: 'League of Extraordinary Gentlemen(Movie)',
   category: 'Sea',
@@ -128,6 +138,7 @@ rides.push({
 })
 
 rides.push({
+  uid: 'plfvV',
   title: 'Ulysses',
   source: 'Atlantis: The Lost Empire',
   category: 'Sea',
@@ -141,6 +152,7 @@ rides.push({
 // Environment: Amphibious
 
 rides.push({
+  uid: 'AvP8r',
   title: 'Mach 5',
   source: 'Speed Racer',
   category: 'Amphibious',
@@ -153,6 +165,7 @@ rides.push({
 })
 
 rides.push({
+  uid: 'Sk0oK',
   title: 'KITT',
   source: 'Knight Rider',
   category: 'Amphibious',
@@ -164,6 +177,7 @@ rides.push({
 })
 
 rides.push({
+  uid: 'BjqT7',
   title: 'Mobile Construction Vehicle',
   source: 'Command & Conquer',
   category: 'Amphibious',
@@ -177,6 +191,7 @@ rides.push({
 })
 
 rides.push({
+  uid: 'wadxa',
   title: 'Mechonis',
   source: 'Xenoblade Chronicles 1',
   category: 'Amphibious',
@@ -188,6 +203,7 @@ rides.push({
 })
 
 rides.push({
+  uid: 'rr5Xj',
   title: 'Armored Command Unit',
   source: 'Supreme Commander',
   category: 'Amphibious',
@@ -202,6 +218,7 @@ rides.push({
 // Environment: Sky
 
 rides.push({
+  uid: 't1jk9',
   title: 'Fahrenheit',
   source: 'Final Fantasy X',
   category: 'Sky',
@@ -213,6 +230,7 @@ rides.push({
 })
 
 rides.push({
+  uid: 'm2mQh',
   title: 'Delphinus',
   source: 'Skies of Arcadia',
   category: 'Sky',
@@ -224,6 +242,7 @@ rides.push({
 })
 
 rides.push({
+  uid: 'ICBZ6',
   title: 'Epoch',
   source: 'Chrono Trigger',
   category: 'Sky',
@@ -235,6 +254,7 @@ rides.push({
 })
 
 rides.push({
+  uid: 'b6Vyb',
   title: 'Monolith',
   source: 'Warhammer 40k',
   category: 'Sky',
@@ -247,6 +267,7 @@ rides.push({
 
 // Environment: Space
 rides.push({
+  uid: 'fIygl',
   title: 'Bolo',
   source: 'Bolo',
   category: 'Space',
@@ -259,6 +280,7 @@ rides.push({
 })
 
 rides.push({
+  uid: 'PjOdL',
   title: 'Normandy-class stealth cruiser',
   source: 'Mass Effect',
   category: 'Space',
@@ -270,6 +292,7 @@ rides.push({
 })
 
 rides.push({
+  uid: 'OftL5',
   title: 'UNSC Phoenix-class',
   source: 'Halo',
   category: 'Space',
@@ -281,6 +304,7 @@ rides.push({
 })
 
 rides.push({
+  uid: 'RxZFf',
   title: 'Starfleet Constitution-class',
   example: 'Enterprise 1701-null',
   source: 'Star Trek: The Original Series',
@@ -293,6 +317,7 @@ rides.push({
 })
 
 rides.push({
+  uid: 'lPq6Z',
   title: 'Starfleet Galaxy-class',
   example: 'Enterprise 1701-D',
   source: 'Star Trek: The Next Generation',
@@ -305,6 +330,7 @@ rides.push({
 })
 
 rides.push({
+  uid: 'DmBCq',
   title: 'Starfleet Sovereign-class',
   example: 'Enterprise 1701-E',
   source: 'Star Trek: The Next Generation movies',
@@ -317,6 +343,7 @@ rides.push({
 })
 
 rides.push({
+  uid: 'zMsgZ',
   title: 'Starfleet Odyssey-class',
   example: 'Enterprise 1701-F',
   source: 'Star Trek',
@@ -329,6 +356,7 @@ rides.push({
 })
 
 rides.push({
+  uid: 'JxDts',
   title: 'Tau’ri BC-304',
   example: 'Daedalus, Odyssey',
   source: 'Stargate SG-1',
@@ -342,6 +370,7 @@ rides.push({
 })
 
 rides.push({
+  uid: 'EhGjf',
   title: 'Terran Behemoth-class ',
   example: 'Hyperion',
   source: 'Starcraft',
@@ -354,6 +383,7 @@ rides.push({
 })
 
 rides.push({
+  uid: '4cIvY',
   title: 'Kushan mothership',
   example: 'Pride of Hiigara',
   source: 'Homeworld 2',
@@ -366,6 +396,7 @@ rides.push({
 })
 
 rides.push({
+  uid: 'Tg7hW',
   title: 'Imperial-II class Star Destroyer',
   source: 'Star Wars',
   category: 'Space',
@@ -379,6 +410,7 @@ rides.push({
 })
 
 rides.push({
+  uid: 'A3iYW',
   title: 'Lantean City-ship',
   example: 'Atlantis',
   source: 'Stargate Atlantis',
@@ -391,6 +423,7 @@ rides.push({
 })
 
 rides.push({
+  uid: 'YfRLS',
   title: 'Ideon and Solo',
   source: 'Space Runaway Ideon',
   category: 'Space',
@@ -407,6 +440,7 @@ export const DLCRides: DLCRide[] = []
 // Environment Amphibious
 // Environment Sky
 DLCRides.push({
+  uid: 'q5YPq',
   dlc: 'KatzSmile',
   title: 'Bullhead',
   source: 'RWBY',
@@ -421,6 +455,7 @@ DLCRides.push({
 // Environment: Space
 
 DLCRides.push({
+  uid: 'BG3pQ',
   dlc: 'KatzSmile',
   title: 'Jumpship',
   source: 'Destiny',
@@ -431,6 +466,7 @@ DLCRides.push({
 })
 
 DLCRides.push({
+  uid: 'DhB0Z',
   dlc: 'KatzSmile',
   title: 'M-Class Scout Vessel',
   source: 'Guardians of the Galaxy',
@@ -443,6 +479,7 @@ DLCRides.push({
 })
 
 DLCRides.push({
+  uid: 'dw1Py',
   title: 'Batmobile',
   source: 'Arkham Knight ',
   category: 'Land',
@@ -454,6 +491,7 @@ DLCRides.push({
 })
 
 DLCRides.push({
+  uid: 'kFNfa',
   title: 'Mantle’s Approach',
   source: 'Halo',
   category: 'Space',

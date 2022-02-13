@@ -1,4 +1,5 @@
 export interface Heritage {
+  uid: string
   title: string
   type?: string
   tree: 'Dragon' | 'Transhuman' | 'Outsider' | 'None'
@@ -14,6 +15,7 @@ export interface Heritage {
   typeFreebies?: any
   types?: Record<'Biomorph' | 'Cybermorph' | 'Aethermorph', string>
   image?: string
+  complex?: string
 }
 
 export const heritages: Heritage[] = []
@@ -24,6 +26,7 @@ export const desc = `
 <p>Heritages marked as under construction already exist in-universe but are not yet ready for inclusion in this file. Fanwank your NPCs responsibly until then.</p>`
 
 heritages.push({
+  uid: 'JrxZe',
   title: 'Ancestral Diversity',
   image: 'https://i.ibb.co/Hqzvfds/Ancestral-Diversity.jpg',
   cost: 11111,
@@ -34,6 +37,7 @@ heritages.push({
 })
 
 heritages.push({
+  uid: '2ivtj',
   title: 'Dragon Heart',
   image: 'https://i.ibb.co/SBXsnBY/Dragon-Heart.jpg',
   tree: 'Dragon',
@@ -70,6 +74,7 @@ heritages.push({
 })
 
 heritages.push({
+  uid: '7Fc4I',
   title: 'Dragon Aura',
   image: 'https://i.ibb.co/BzH3djV/Dragon-Aura.jpg',
   tree: 'Dragon',
@@ -87,6 +92,7 @@ heritages.push({
 })
 
 heritages.push({
+  uid: 'wx0kI',
   title: 'Dragon Thrall',
   image: 'https://i.ibb.co/jR1sk8k/Dragon-Thrall.jpg',
   tree: 'Dragon',
@@ -104,6 +110,7 @@ heritages.push({
 })
 
 heritages.push({
+  uid: 'QlHkg',
   title: 'Dragon Blood',
   image: 'https://i.ibb.co/7kxydhS/Dragon-Blood.jpg',
   tree: 'Dragon',
@@ -119,6 +126,7 @@ heritages.push({
 })
 
 heritages.push({
+  uid: '3AGji',
   title: 'Treasure Hoard',
   image: 'https://i.ibb.co/KWBbXhH/Dragon-Hoard.jpg',
   tree: 'Dragon',
@@ -129,6 +137,7 @@ heritages.push({
 })
 
 heritages.push({
+  uid: '9fu6L',
   title: 'Dragon Cabin',
   image: 'https://i.ibb.co/5BYYqTf/Dragon-Cabin.jpg',
   tree: 'Dragon',
@@ -141,6 +150,7 @@ heritages.push({
 })
 
 heritages.push({
+  uid: 'uMDT3',
   title: 'Dragon Bifurcation',
   image: 'https://i.ibb.co/rH31fGY/Dragon-Bifurcation.jpg',
   tree: 'Dragon',
@@ -151,6 +161,7 @@ heritages.push({
 })
 
 heritages.push({
+  uid: 'CYKzi',
   title: 'Dragon Break',
   image: 'https://i.ibb.co/MBH4jc2/Dragon-Break.jpg',
   tree: 'Dragon',
@@ -162,6 +173,7 @@ heritages.push({
 })
 
 heritages.push({
+  uid: 'VKWW1',
   title: 'Double Dragon',
   image: 'https://i.ibb.co/0QpJFXJ/Dragon-Double.jpg',
   tree: 'Dragon',
@@ -177,6 +189,7 @@ heritages.push({
 })
 
 heritages.push({
+  uid: 's7dWf',
   title: 'Elder Dragon',
   image: 'https://i.ibb.co/JBVtkRL/Dragon-Elder.jpg',
   tree: 'Dragon',
@@ -189,6 +202,7 @@ heritages.push({
 })
 
 heritages.push({
+  uid: 'twP3B',
   title: 'First Augmentation',
   tree: 'Transhuman',
   image: 'https://i.ibb.co/cgB6R84/First-Augmentation.jpg',
@@ -222,6 +236,7 @@ heritages.push({
 })
 
 heritages.push({
+  uid: 'u7aSv',
   title: 'Networking',
   tree: 'Transhuman',
   image: 'https://i.ibb.co/ZNtgK4q/Networking.jpg',
@@ -241,6 +256,7 @@ heritages.push({
 })
 
 heritages.push({
+  uid: 'lyv42',
   title: 'Full Conversion',
   tree: 'Transhuman',
   image: 'https://i.ibb.co/tXdthbH/Full-Conversion.jpg',
@@ -264,6 +280,7 @@ heritages.push({
 })
 
 heritages.push({
+  uid: 'sGuOe',
   title: 'Essence Reactor',
   tree: 'Transhuman',
   image: 'https://i.ibb.co/BsnDNhq/Essence-Reactor.jpg',
@@ -298,6 +315,7 @@ heritages.push({
 })
 
 heritages.push({
+  uid: 'R6TQB',
   title: 'Evolutionary Engine Array',
   tree: 'Transhuman',
   image: 'https://i.ibb.co/khbcryv/Evolutionary-Engine-Array.jpg',
@@ -311,6 +329,7 @@ heritages.push({
 })
 
 heritages.push({
+  uid: 'x9ZFJ',
   title: 'Essence Upload',
   tree: 'Transhuman',
   image: 'https://i.ibb.co/K5m0Dfr/Essence-Upload.jpg',
@@ -333,7 +352,7 @@ heritages.push({
   whitelist: ['Full Conversion'],
   types: {
     Biomorph: `<p><b>Biomorph</b>: Cores are grown within organic living things, in batches of up to a dozen at a time according to the host’s physical size. There is no hard limit on the number of simultaneous batches. Each batch must be implanted somewhere along or within the central nervous system of the body it is within, if the host body has one - this requirement is waived for plants and fungi. If the host dies before the cores within are fully - grown, that batch is lost, but this is otherwise a passive process. The weight of your mind reduces the morph’s instincts when you’re not sleeved within it, with limited higher thought. They’re capable of breeding, sustaining themselves, and small talk, but not much else.  Once they’re fully - grown, extra cores may be safely removed from their hosts at any time. Regardless of your morph, you are able to maintain your individuality within another hivemind, and even suborn one with time. Finally, take Performance Talent for free.</p>
-              <p>If you have Alterzelu Symbiotes, your Queen is now able to spawn special, Royal, symbiote larvae. These larvae will cause your target to grow one of your Least Cores within themselves, but are otherwise identical to normal larvae. A Royal Symbiote’s egg takes two weeks to develop. The development of the Least Core takes place over the course of a month after the injection of the transformative fluid.Providing the new host with your fluids, such as by consumption, injection, or submersion, accelerates the process, reducing the time taken to just a week with sufficient amounts. An already - existing symbiote host may be given the royal transformative fluid directly, requiring applications over the course of a month.</p>`,
+    <p>If you have Alterzelu Symbiotes, your Queen is now able to spawn special, Royal, symbiote larvae. These larvae will cause your target to grow one of your Least Cores within themselves, but are otherwise identical to normal larvae. A Royal Symbiote’s egg takes two weeks to develop. The development of the Least Core takes place over the course of a month after the injection of the transformative fluid.Providing the new host with your fluids, such as by consumption, injection, or submersion, accelerates the process, reducing the time taken to just a week with sufficient amounts. An already - existing symbiote host may be given the royal transformative fluid directly, requiring applications over the course of a month.</p>`,
     Cybermorph: `<p><b>Cybermorph</b>: A freshly made core takes an hour to properly imprint your quantum consciousness state onto it. However, with sufficient infrastructure and materials, you may mass produce the blackboxes without further input from yourself. You must backup and update your memories by joining the network they are on. Morphs must be mechanically or biologically feasible. Unsleeved morphs or hosts remain in a hibernative sleep state when not in use. Finally, regardless of your morph and given enough time, you are capable of freely entering and hacking any digital space to give yourself admin privileges. Additionally, take one copy of Mind Defense for free.</p>
                   <p>If you have Tempest Jewelry, you are able to combine 32 separate pieces to create a special piece that must be at least the size of a helmet. This piece will modify the target over the course of two weeks, developing a Least Core within them.</p>`,
     Aethermorph: `<p><b>Aethermorph</b>: Your true form has finally begun to leave behind your old tethers. Any object may act as a receptacle for your phylactery, and you’ll maintain a pseudo - telekinetic control of it. Objects you possess are capable of movement when they otherwise wouldn’t be, such as a statue moving like a person. Morphs you are not actively possessing are reduced to simple automatons. A living phylactery, such as someone you have safely implanted a core into, retains much of their original personality and cognition, but moves through life like in a trance until directed otherwise by you. No amount of corporeal damage damages your true self, as you exist in astral space. Influencing the corporeal world directly from astral space is difficult. However, entities able to interact with astral space are capable of attacking and harming you there, and death in astral space results in true death regardless of how many phylacteries you possess. You may, upon purchase, change your elemental affinity as per Dragon Scale. Additionally, take one copy of Information Defense for free.</p>
@@ -349,6 +368,7 @@ heritages.push({
 })
 
 heritages.push({
+  uid: '83GXs',
   title: 'Philosopher’s Transmortality Engine',
   tree: 'Transhuman',
   image: 'https://i.ibb.co/93Nn2vf/Philosophers-Transmortality-Engine.jpg',
@@ -366,6 +386,7 @@ heritages.push({
 })
 
 heritages.push({
+  uid: 'RabV5',
   title: 'Multicore Neural Leyline',
   tree: 'Transhuman',
   image: 'https://i.ibb.co/5vfC81N/Multicore-Neural-Leyline.jpg',
@@ -423,6 +444,7 @@ heritages.push({
 })
 
 heritages.push({
+  uid: 'lOe02',
   title: 'Incandescent Ascendancy Machine',
   tree: 'Transhuman',
   image: 'https://i.ibb.co/tqkg38h/Incandescent-Ascendancy-Machine.jpg',
@@ -468,6 +490,7 @@ heritages.push({
 })
 
 heritages.push({
+  uid: 'PCUlx',
   title: 'Singularity',
   tree: 'Transhuman',
   image: 'https://i.ibb.co/Lr1fgBW/Singularity.jpg',
@@ -478,6 +501,7 @@ heritages.push({
 })
 
 heritages.push({
+  uid: 'gNYsZ',
   title: 'Lurking On The Threshold',
   tree: 'Outsider',
   image: 'https://i.ibb.co/7tYBYrV/Lurking-On-The-Threshold.jpg',
@@ -493,6 +517,7 @@ heritages.push({
 })
 
 heritages.push({
+  uid: '4Fr2Y',
   title: 'I Wear No Mask',
   tree: 'Outsider',
   image: 'https://i.ibb.co/CHryQdZ/IWear-No-Mask.jpg',
@@ -510,6 +535,7 @@ heritages.push({
 })
 
 heritages.push({
+  uid: '9j3K6',
   title: 'Sanity - Shattering Instruction',
   tree: 'Outsider',
   image: 'https://i.ibb.co/wRkkVfL/Sanity-Shattering-Instruction.jpg',
@@ -527,6 +553,7 @@ heritages.push({
 })
 
 heritages.push({
+  uid: 'QOu5J',
   title: 'Endless Gospels Unspoken',
   tree: 'Outsider',
   image: 'https://i.ibb.co/j6jTKkp/Endless-Gospels-Unspoken.jpg',
@@ -539,6 +566,7 @@ heritages.push({
 })
 
 heritages.push({
+  uid: 'FsBvs',
   title: 'Beyond The Wall Of Sleep',
   tree: 'Outsider',
   image: 'https://i.ibb.co/QQGFZWD/Beyond-The-Wall-Of-Sleep.jpg',
@@ -565,6 +593,7 @@ heritages.push({
 })
 
 heritages.push({
+  uid: 'aIf8P',
   title: 'Prophet Of Paradox',
   tree: 'Outsider',
   image: 'https://i.ibb.co/sQ1CSVh/Prophet-Of-Paradox.jpg',
@@ -582,6 +611,7 @@ heritages.push({
 })
 
 heritages.push({
+  uid: 'iiYjJ',
   title: 'Everywhere And Nowhere',
   tree: 'Outsider',
   image: 'https://i.ibb.co/Y3hXjV1/Everywhere-And-Nowhere.jpg',
@@ -600,6 +630,7 @@ heritages.push({
 })
 
 heritages.push({
+  uid: 'hBvf6',
   title: 'Elder Sign',
   tree: 'Outsider',
   image: 'https://i.ibb.co/VCnMZBq/Elder-Sign.jpg',
@@ -616,6 +647,7 @@ heritages.push({
 })
 
 heritages.push({
+  uid: 'eLLM1',
   title: 'Branded by Possibility',
   tree: 'Outsider',
   image: 'https://i.ibb.co/WnXQvFT/Branded-By-Possibility.jpg',
@@ -632,6 +664,7 @@ heritages.push({
 })
 
 heritages.push({
+  uid: 'QgoGO',
   title: 'The Gate And The Key',
   tree: 'Outsider',
   image: 'https://i.ibb.co/Jx2CCy9/The-Gate-And-The-Key.jpg',
@@ -649,6 +682,7 @@ heritages.push({
 })
 
 heritages.push({
+  uid: 'r1FCe',
   title: 'An Answer To Reason',
   tree: 'Outsider',
   image: 'https://i.ibb.co/5Tm2wM5/An-Answer-To-Reason.jpg',

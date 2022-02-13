@@ -2,7 +2,7 @@
   <div class="p-2">
     <Desc class="p-2 bg-gray-200 dark:bg-teal-900 max-w-4xl mx-auto" :desc="desc" />
     <div
-      class="column-gap mt-4 pb-8"
+      class="column-gap mt-4"
       :class="settings.columns !== 'auto' ? `column-count-${settings.columns}` : 'md:column-count-2 xl:column-count-3 4xl:column-count-4 5xl:column-count-5'"
     >
       <div
@@ -71,6 +71,24 @@
         </div>
       </div>
     </div>
+    <Desc class="p-2 bg-gray-200 dark:bg-teal-900 max-w-4xl mx-auto mt-4" :desc="patronsDesc" />
+    <Note class="my-4 max-w-screen-md" type="info" title="Info">
+      Patrons come from DLC by Mortaegus - <a target="_blank" rel="noopener noreferrer" href="https://forum.questionablequesting.com/threads/r34-economy-cyoa-thread.11289/page-568#post-3866836" class="underline text-blue-800 dark:text-blue-400">link</a>. This section are currently in a WIP stage, if you have ideas how to better balance/structure it write me on discord.
+    </Note>
+    <div
+      class="column-gap pb-8"
+      :class="settings.columns !== 'auto' ? `column-count-${settings.columns}` : 'md:column-count-2 xl:column-count-3 4xl:column-count-4 5xl:column-count-5'"
+    >
+      <Patron
+        v-for="pt in patrons"
+        :key="pt.title"
+        :perk="pt"
+        :bg="!(patron.length && patron[0].title != pt.title) ? 'purple-100 dark:(purple-400 opacity-15) hover:(light-300 dark:purple-600 dark:opacity-15)'
+          : 'gray-200 dark:gray-600'"
+        :is-active="!!(patron.length && patron[0].title === pt.title)"
+        @pickPerk="choosePatron"
+      />
+    </div>
   </div>
 </template>
 
@@ -81,6 +99,7 @@ import { confirmDialog } from '~/logic/dialog'
 import { useTooltips } from '~/logic/misc'
 import { useStore } from '~/store/store'
 import Select from '~/components/basic/Select.vue'
+import { patronsDesc, patrons } from '~/data/patronsDLC'
 
 const heritageOptions = [
   { label: 'None', value: '' },
@@ -99,7 +118,7 @@ const chosenOrigin = reactive({
 })
 const costError = ref('')
 
-const { allEffects, startingOrigin, fullStartingBudget, flags, settings, baseBudget, csr } = useStore()
+const { allEffects, startingOrigin, fullStartingBudget, flags, settings, baseBudget, csr, patron } = useStore()
 
 onMounted(() => useTooltips())
 
@@ -139,7 +158,15 @@ function pickOrigin() {
 }
 
 function clearOrigin() {
+  allEffects.value.splice(allEffects.value.indexOf(startingOrigin.value.title), 1)
   startingOrigin.value = { title: '', cost: 0 }
+}
+
+function choosePatron(pt, saveInfo) {
+  if (patron.value.length)
+    patron.value.splice(0)
+  else
+    patron.value.push(saveInfo)
 }
 
 </script>

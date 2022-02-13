@@ -12,6 +12,7 @@ interface DBCharacter {
 }
 
 interface PerkFull {
+  uid: string
   title: string
   cost: number
   desc: string
