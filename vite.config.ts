@@ -1,6 +1,7 @@
 import path from 'path'
 import { defineConfig } from 'vite'
 import Vue from '@vitejs/plugin-vue'
+import { VitePWA } from 'vite-plugin-pwa'
 import Pages from 'vite-plugin-pages'
 import Icons from 'unplugin-icons/vite'
 import IconsResolver from 'unplugin-icons/resolver'
@@ -19,6 +20,36 @@ export default defineConfig({
   plugins: [
     Vue(),
 
+    VitePWA({
+      includeAssets: ['favicon.svg', 'favicon.ico', 'robots.txt', 'apple-touch-icon.png'],
+      manifest: {
+        name: 'Waifu Catalog Interactive',
+        short_name: 'WC Interactive',
+        description: 'Waifu Catalog (by SwiftRosenthal) made Interactive by om1cr0n',
+        theme_color: '#822bc4',
+        icons: [
+          {
+            src: 'pwa-192x192.png',
+            sizes: '192x192',
+            type: 'image/png',
+          },
+          {
+            src: 'pwa-512x512.png',
+            sizes: '512x512',
+            type: 'image/png',
+          },
+          {
+            src: 'pwa-512x512.png',
+            sizes: '512x512',
+            type: 'image/png',
+            purpose: 'any maskable',
+          },
+        ],
+      },
+      workbox: {
+        maximumFileSizeToCacheInBytes: 5000000,
+      },
+    }),
     // https://github.com/hannoeru/vite-plugin-pages
     Pages(),
 

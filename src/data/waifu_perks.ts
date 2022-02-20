@@ -1355,3 +1355,18 @@ DLCwaifu_perks.push({
   image: 'https://cdn.donmai.us/original/33/85/__hitoshura_and_pixie_shin_megami_tensei_and_1_more_drawn_by_shaliva__33851d62d2cdb8b8e22b3b25370446b6.jpg',
   title: 'Uber Pixie',
 })
+
+DLCwaifu_perks.push({
+  id: 'LnhgQ',
+  dlc: 'Templar9999',
+  waifu: 'Sonya',
+  uid: 11906,
+  from: 'Monster Girl Quest',
+  desc: `
+  <p>Sonya from Monster Girl Quest has fully awakened to her nature as the XX class apoptosis, Sonya Chaos.  The destroyer of realities.  While fully in control of herself, her nature is still one of elemental chaos.  A being that breaks down ordered reality through her presence.
+Purchase with caution.</p>`,
+  cost: 990,
+  tier: 10,
+  image: 'https://static.wikia.nocookie.net/all-fiction-battles/images/e/ed/Sonya_%28Chaos%29.png',
+  title: 'Chaos Awaken',
+})

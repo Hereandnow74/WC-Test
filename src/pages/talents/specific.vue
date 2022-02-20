@@ -9,7 +9,7 @@
       :class="settings.columns !== 'auto' ? `column-count-${settings.columns}` : 'md:column-count-2 xl:column-count-3 4xl:column-count-4 5xl:column-count-5'"
     >
       <component
-        :is="perk.title === 'Four Seasons' ? FourSeason : PerkCard"
+        :is="genericPerkComponent(perk.title)"
         v-for="perk in genericPerksWithDLC"
         :key="perk.title"
         :perk="perk"
@@ -129,6 +129,7 @@ import { chooseGenericPerk, chooseWaifuPerk, genericAvailable, specificAvailable
 import { DLCgenericPerks } from '~/data/DLCs'
 import PerkCard from '~/components/PerkCard.vue'
 import FourSeason from '~/components/perkCards/FourSeason.vue'
+import PowerSwap from '~/components/perkCards/PowerSwap.vue'
 
 const { waifuPerks, genericWaifuPerks, settings } = useStore()
 
@@ -159,6 +160,14 @@ const specificPerksWithDLC = computed(() => !settings.value.allChosenAuthors[0]
     .concat(DLCwaifu_perks
       .filter(perk => !settings.value.allChosenAuthors.includes(perk.dlc)))
   : waifu_perks)
+
+const genericPerkComponent = (title: string) => {
+  const cmp = {
+    'Four Seasons': FourSeason,
+    'Power Swap': PowerSwap,
+  }
+  return cmp[title] || PerkCard
+}
 
 onMounted(() => useTooltips())
 </script>

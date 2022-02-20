@@ -5,7 +5,8 @@
       class="mt-4 column-gap"
       :class="settings.columns !== 'auto' ? `column-count-${settings.columns}` : 'md:column-count-2 xl:column-count-3 4xl:column-count-4 5xl:column-count-5'"
     >
-      <IntencityCard
+      <component
+        :is="rule.title ==='DR11 start' ? DR11 : IntensityCard"
         v-for="rule in intensityDLC"
         :id="rule.title"
         :key="rule.title"
@@ -22,7 +23,7 @@
       class="mt-4 pb-8 column-gap"
       :class="settings.columns !== 'auto' ? `column-count-${settings.columns}` : 'md:column-count-2 xl:column-count-3 4xl:column-count-4 5xl:column-count-5'"
     >
-      <IntencityCard
+      <IntensityCard
         v-for="rule in intensityPvP"
         :id="rule.title"
         :key="rule.title"
@@ -57,6 +58,8 @@ import { useStore } from '~/store/store'
 
 import { pickSimplePerk, chooseIntensity } from '~/logic/'
 import { Perk } from '~/store/chargen'
+import IntensityCard from '~/components/perkCards/IntensityCard.vue'
+import DR11 from '~/components/perkCards/DR11.vue'
 
 const { allEffects, settings, pvpPerks } = useStore()
 

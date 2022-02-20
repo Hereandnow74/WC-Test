@@ -57,17 +57,17 @@
           :class="tiersTab === 0 ? 'bg-amber-500 dark:bg-gray-600' : 'bg-amber-400 dark:bg-gray-700'"
           @click="tiersTab = 0"
         >
-          Pandora Tier list
+          Despin Tier list
         </div>
         <div
           class="border-l border-t border-r px-4 rounded-t-xl cursor-pointer flex-grow text-center font-bold"
           :class="tiersTab === 1 ? 'bg-amber-500 dark:bg-gray-600' : 'bg-amber-400 dark:bg-gray-700'"
           @click="tiersTab = 1"
         >
-          Despin Tier list
+          Pandora Tier list
         </div>
       </div>
-      <h3 v-if="tiersTab === 0" class="sm:text-lg text-center mb-2">
+      <h3 v-if="tiersTab === 1" class="sm:text-lg text-center mb-2">
         Pandora’s Alternate Tier Ranks (by
         <a
           class="text-blue-500 hover:underline"
@@ -87,7 +87,7 @@
       </h3>
       <Table
         :headers="pandoraTitles"
-        :rows="tiersTab === 0 ? pandoraData : despinData"
+        :rows="tiersTab === 1 ? pandoraData : despinData"
         class="text-sm md:text-base w-full flex-grow text-black"
       />
     </div>

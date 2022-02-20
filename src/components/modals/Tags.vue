@@ -10,7 +10,7 @@
 
     <div class="flex flex-wrap gap-1 text-sm justify-center text-white p-2 scrollbar overflow-y-auto min-h-0 max-h-[60vh]">
       <div
-        v-for="tag in waifuTags"
+        v-for="tag in Object.values(waifuTags).sort((a, b) => a.tag.localeCompare(b.tag))"
         :key="tag.tag"
         class="rounded-md cursor-pointer flex gap-1 p-0.5 select-none"
         :class="tag.color"

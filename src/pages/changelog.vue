@@ -5,6 +5,20 @@
     </h2>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
+        19 February 2022
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>~150 new user submitted characters</li>
+        <li>2 new user submitted perks</li>
+        <li>New infinite scroll for companions - you can now scroll as much as you want without lags, but sadly there some bugs still.</li>
+        <li>Attempt to fix constant cache issues - now catalog work in offline, did not tested yet.</li>
+        <li>You can chose DR11 start in intensities (will add all talents and defenses automatically)</li>
+        <li>Some rules for companion's submissions (will add more in future)</li>
+        <li>Bugfixes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
         12 February 2022
       </h3>
       <ul class="list-decimal list-inside">

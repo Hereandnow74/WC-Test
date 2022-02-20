@@ -43,6 +43,7 @@
           :world="world"
           :is-user-world="true"
           class="max-w-sm"
+          @edit-world="editWorld"
         />
       </div>
     </Foldable>

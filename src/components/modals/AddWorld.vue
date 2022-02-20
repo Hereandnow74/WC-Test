@@ -3,7 +3,13 @@
     <div class="p-2 flex flex-col gap-2 min-h-0">
       <div class="flex gap-2">
         <Input v-model="worldName" placeholder="Name of the World" class="w-3/4" :error-message="errors.worldName" />
-        <Input v-model.number="rating" label="Rating" class="w-24" :error-message="errors.rating" />
+        <NumberInput
+          v-model.number="rating"
+          label="Rating"
+          :min="1"
+          :max="11"
+          :error-message="errors.rating"
+        />
       </div>
       <Input v-model="image" placeholder="Image URL" :error-message="errors.image" />
       <Foldable title="Setting specifing rules">
@@ -26,10 +32,11 @@
               :placeholder="'Condition #' + i"
               :error-message="errors[`condition[${i}].name`]"
             />
-            <Input
+            <NumberInput
               v-model.number="condition.rating"
               label="Rating"
-              class="w-24 text-center"
+              :min="1"
+              :max="11"
               :error-message="errors[`condition[${i}].rating`]"
             />
             <div
@@ -59,6 +66,7 @@ import * as zod from 'zod'
 import { useForm, useField } from 'vee-validate'
 import { toFormValidator } from '@vee-validate/zod'
 
+import NumberInput from '../basic/NumberInput.vue'
 import { useStore } from '~/store/store'
 import { proposeWorld, toggleShowAddWorld } from '~/logic'
 

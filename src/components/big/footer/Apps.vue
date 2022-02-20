@@ -31,7 +31,7 @@ const appsList = [
   { icon: 'fluent:book-question-mark-24-regular', name: 'Missions', component: 'Missions', color: '#e3992b' },
   { icon: 'la:dice-d20', name: 'Random Build', component: 'RandomBuild', color: '#c76eff' },
   { icon: 'fa-solid:dice', name: 'Dice Machine', component: 'DiceMachine', color: 'white' },
-  { icon: 'gis:search-globe-alt', name: 'Random World', component: 'RandomWorld', color: '#ff8888' },
+  { icon: 'fluent:globe-search-24-regular', name: 'Random World', component: 'RandomWorld', color: '#ff8888' },
   { icon: 'fluent:person-question-mark-16-regular', name: 'Random Character', component: 'RandomChar', color: '#f9ec52' },
   { icon: 'bx:bx-spreadsheet', name: 'Global Users Builds', component: 'UserBuilds', color: '#3a64b1' },
   { icon: 'la:dragon', name: 'Dragon Aura Calculator', component: 'DragonAura', color: '#c90000' },

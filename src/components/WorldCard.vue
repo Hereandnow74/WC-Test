@@ -1,6 +1,6 @@
 <template>
   <div
-    class="rounded cursor-pointer flex-grow text-gray-100 text-shadow flex flex-col gap-1"
+    class="rounded cursor-pointer flex-grow text-gray-100 text-shadow flex flex-col gap-1 pb-2"
     border="2 gray-400 hover:orange-600"
     :class="world.worldName === startingWorld.worldName || startingWorld.worldName === 'Current world' || !pickAble ?
       WORLD_COLORS[world.rating - 1] || 'bg-gray-600' : 'bg-gray-600'"
@@ -28,30 +28,25 @@
         Budget: <span class="text-green-200 font-medium">{{ WORLD_RATINGS[world.rating - 1]?.budget || 'None' }}</span>
       </div>
     </div>
-    <template v-if="world.condition">
-      <div v-if="typeof world.condition === 'object' && world.condition.length" class="px-2">
-        <span class="text-gray-200 mr-2">Condition:</span>
-        <select
-          id="condition"
-          name="condition"
-          class="text-gray-800 w-40 rounded"
-          value="No condition"
-          @change="changeCondition"
-          @click.stop
-        >
-          <option value="No condition">
-            No condition
-          </option>
-          <option v-for="cnd in world.condition" :key="cnd.name" :value="cnd.name">
-            {{ cnd.name }} ({{ cnd.rating }})
-          </option>
-        </select>
-      </div>
-      <div v-else-if="world.condition.length" class="px-2">
-        <span class="text-gray-200 mr-2">Condition:</span> {{ world.condition }}
-      </div>
-    </template>
-    <Foldable v-if="world.additional" title="Setting Specific Rules" class="px-2 pb-2" @click.stop>
+    <div v-if="world.condition" class="mx-2 flex gap-2">
+      <span class="text-gray-200">Condition:</span>
+      <select
+        id="condition"
+        name="condition"
+        class="text-gray-800 flex-grow min-w-0 rounded"
+        :value="world.condition && world.condition.length === 1 && world.rating === world.condition[0].rating ? world.condition[0].name : 'No condition'"
+        @change="changeCondition"
+        @click.stop
+      >
+        <option value="No condition">
+          No condition
+        </option>
+        <option v-for="cnd in world.condition" :key="cnd.name" :value="cnd.name">
+          {{ cnd.name }} ({{ cnd.rating }})
+        </option>
+      </select>
+    </div>
+    <Foldable v-if="world.additional" title="Setting Specific Rules" class="px-2" @click.stop>
       <Desc :desc="world.additional" class="p-1 rounded bg-black bg-opacity-20" />
     </Foldable>
   </div>

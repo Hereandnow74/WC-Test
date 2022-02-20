@@ -4,7 +4,7 @@
       <label v-if="label" for="" class="mr-2">{{ label }}</label>
       <div
         ref="minusButton"
-        class="rounded-l-lg hover:bg-orange-500 w-4 text-center cursor-pointer"
+        class="rounded-l-lg hover:bg-orange-500 w-4 text-center cursor-pointer select-none"
         :class="buttonThemes[theme]"
         @click="minus"
       >
@@ -21,7 +21,7 @@
       >
       <div
         ref="plusButton"
-        class="rounded-r-lg hover:bg-orange-500 w-4 text-center cursor-pointer"
+        class="rounded-r-lg hover:bg-orange-500 w-4 text-center cursor-pointer select-none"
         :class="buttonThemes[theme]"
         @click="plus"
       >

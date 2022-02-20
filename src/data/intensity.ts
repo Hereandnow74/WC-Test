@@ -41,18 +41,34 @@ intensity.push({
   title: 'Couple’s Account(Cooperative)',
   intensity: 0,
   special: 'Chargen only. May not be taken on DR11.',
+  blacklist: ['DR11 start'],
   chargen: true,
   desc: `Your spouse or significant other is a contractor like you, but the two of you are tied much more closely than the friends option above. The two of you share full access to a joint account tied to both of your smart devices. A member of your retinue may be a companion to one of you and merely a familiar to the other.
 <p>You will only pay for the more expensive of your two Origins. The chosen binding method treats you as equal masters, ensuring that your love never fades. (If you have the Symbiote, one of you will usually, but not necessarily, be the queen.) Heritages are purchased separately, but the other of you can buy any Heritage that one of you has at half-price, after all discounts and ignoring the usual discount cap. This does not apply to Tier 11 Heritage capstones. The control aspects of Bindings, Lures, and any Heritage hierarchy mechanics will only affect your relationship if the two of you are into that. OC Donut Steel, Template Stacking, and relevant waifu perks are purchased individually. All other items need only be purchased once to benefit the both of you equally. Your shared retinue will not enter R.I.P. mode unless you both perish.</p>`,
 })
+
+intensity.push({
+  uid: 'jUgfP',
+  title: 'DR11 start',
+  intensity: 0,
+  special: 'Chargen only',
+  chargen: true,
+  blacklist: ['Cash Still Rules', 'Wage Slave', 'Couple’s Account(Cooperative)'],
+  desc: `Danger Rating 11 build's have special <a @click.stop href="/#danger11" class="text-cyan-500 hover:text-cyan-600 underline">rules</a>
+  <p>This perk does not modify starting world in any way all the danger comes from mandatory T11 companion of your choice, while Company guarantee that they will not kill you outright, how obedient they are completely depends on chosen companion and your perks.</p>
+  `,
+})
+
 intensity.push({
   uid: 'vDDFM',
   title: 'Cash Still Rules',
   intensity: 0,
   special: 'Chargen only. May not be taken on DR11.',
+  blacklist: ['DR11 start'],
   chargen: true,
   desc: 'Your signing bonus… isn’t. Whatever you spend from it will instead be a loan, subject to the rules in Loans and Credit Debt. Your starting world will not necessarily have enough available credits to pay back your loan or even the interest from unlocking the first new world, but Missions can help cover that. If this is taken, all Captures will be valued at 80 % of their list price, instead of the base 60 %.',
 })
+
 intensity.push({
   uid: 'zKams',
   title: 'Calming Up',
@@ -67,7 +83,7 @@ intensity.push({
   intensity: 0.6,
   special: 'Chargen only. May not be taken on DR11.',
   chargen: true,
-  blacklist: ['Fight For Your Right', 'One In Ten'],
+  blacklist: ['Fight For Your Right', 'One In Ten', 'DR11 start'],
   desc: 'We aren\'t a charity, Contractor. We\'ve decided you need to put in some more effort to earn your keep. While your starting budget is not negatively impacted, from here on out, you can only gain credits for completing missions, winning arranged PvP matches, or by completing other similar activities on behalf of the Company. Captures and sales will provide no inherent value beyond the targets themselves and any discounts they might provide retroactively. However, captures will still provide a bonus to Contractor salary. We do not advise taking Cash Still Rules with this, as that mode provides no benefits with this mode active. However, if you wish to start heavily indebted to us, without any easy ways of paying us back… we won’t stop you.',
 })
 

@@ -7,7 +7,7 @@
           v-model="search"
           placeholder="Name or World"
         />
-        <clarity:eraser-solid class="icon-btn w-8" @click="() => (search = '', limit = 10)" />
+        <clarity:eraser-solid class="icon-btn w-8" @click="clearAndReset" />
       </div>
       <Select v-model.number="tier" :options="tierOptions" />
       <Input v-model.number="limit" class="px-1" :style="`width: ${(''+limit).length + 3}ch`" />
@@ -122,10 +122,10 @@
     <div v-else class="">
       Loading... <span class="inline-block text-xl"><eos-icons:bubble-loading /></span>
     </div>
-    <div ref="companionsList" class="overflow-y-auto w-full">
-      <Foldable v-if="allUserCharacters.length" :is-open="userCharactersShown" class="text-lg mb-2" title="User Characters">
+    <div ref="companionsList" class="overflow-y-auto w-full relative">
+      <Foldable v-if="allUserCharacters.length" ref="userWaifuList" :is-open="userCharactersShown" class="text-lg mb-2" title="User Characters">
         <div
-          class="mb-4 grid sm:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5
+          class="mb-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5
           4xl:grid-cols-6 5xl:grid-cols-7 gap-1 text-base"
         >
           <CompanionCard
@@ -133,7 +133,6 @@
             :key="char.uid"
             :char="char"
             :is-user-char="true"
-            :lazy="false"
             :with-image="!settings.allImg"
             :class="!settings.allImg ? 'h-[500px]' : 'pt-[32px]'"
             @edit-companion="editCompanion"
@@ -142,8 +141,9 @@
       </Foldable>
       <div
         ref="waifuList"
-        class="grid sm:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5
+        class="relative grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5
           4xl:grid-cols-6 5xl:grid-cols-7 gap-1 pb-8"
+        :style="`top: ${topPosition}px`"
       >
         <CompanionCard
           v-for="{ item: char } in slicedChars"
@@ -154,8 +154,8 @@
           @edit-companion="editCompanion"
           @reportCompanion="reportCompanion"
         />
-        <div v-if="!filteredCharacters.length" class="text-center flex-grow">
-          <p v-if="search !== ''">
+        <div v-if="!slicedChars.length" class="text-center flex-grow">
+          <p>
             No characters found.
           </p>
         </div>
@@ -169,10 +169,10 @@
 
 <script lang="ts" setup>
 import Fuse from 'fuse.js'
-import { intersection, some } from 'lodash-es'
+import { intersection, some, throttle } from 'lodash-es'
 import { useStore } from '~/store/store'
 
-import { toggleShowAddCharacter, showAddCharacter, lazyLoadImg, toggleShowFilterTags, showFilterTags, tagToggles, userCharactersShown, threeToggle, toggleShowReport, showReport } from '~/logic'
+import { toggleShowAddCharacter, showAddCharacter, toggleShowFilterTags, showFilterTags, tagToggles, userCharactersShown, threeToggle, toggleShowReport, showReport } from '~/logic'
 import CompanionCard from '~/components/CompanionCard.vue'
 import Checkbox from '~/components/basic/Checkbox.vue'
 import { getChars, getUserChars } from '~/data/constants'
@@ -190,8 +190,12 @@ interface Character {
   b?: string[]
 }
 
+const { localUserCharacters, userCharacters, startingWorld, favorites, settings, companionsUIDs } = useStore()
+const { currentWorld } = usePlayStore()
+
 const search = ref(' ')
-const limit = ref(0)
+// const limit = ref(0)
+const position = ref(0)
 const tier = ref(0)
 const isLimited = ref(false)
 
@@ -212,7 +216,31 @@ const charArr = ref([] as Character[])
 const editMode = ref(false)
 const characterToEdit = ref({})
 const waifuList = ref<HTMLElement|null>(null)
+const userWaifuList = ref<HTMLElement|null>(null)
 const companionsList = ref<HTMLElement|null>(null)
+
+const cardRowCount = (() => {
+  const wd = document.body.clientWidth || 0
+  if (wd >= 2300) return 7
+  if (wd >= 2000) return 6
+  if (wd >= 1280) return 5
+  if (wd >= 1024) return 4
+  if (wd >= 768) return 3
+  if (wd >= 640) return 2
+  return 1
+})()
+
+const cardColumnCount = computed(() => {
+  if (companionsList.value) {
+    const wd = (document.body.clientHeight - companionsList.value?.offsetTop) || 0
+    return Math.floor(wd / (settings.value.allImg ? 180 : 504)) + (settings.value.allImg ? 6 : 4)
+  }
+  return 5
+})
+
+const limit = computed(() => {
+  return cardRowCount * cardColumnCount.value
+})
 
 const tierOptions = [
   { label: 'Any', value: 0 },
@@ -228,9 +256,6 @@ const tierOptions = [
   { label: '10', value: 10 },
   { label: '11', value: 11 },
 ]
-
-const { localUserCharacters, userCharacters, startingWorld, favorites, settings, companionsUIDs } = useStore()
-const { currentWorld } = usePlayStore()
 
 const options = {
   findAllMatches: true,
@@ -262,8 +287,8 @@ onMounted(async() => {
   if (params.name)
     nextTick(() => search.value = params.name)
   else search.value = ''
-  limit.value = 10
-  nextTick(() => { if (companionsList.value?.scrollHeight <= companionsList.value?.clientHeight) limit.value += 10 })
+  // limit.value = 10
+  // nextTick(() => { if (companionsList.value?.scrollHeight <= companionsList.value?.clientHeight) limit.value += 10 })
 })
 
 watch(route, x => search.value = x.query.name || '')
@@ -311,7 +336,7 @@ const filteredCharacters = computed(() => {
     case sr.startsWith('$'):
       sopt.$and.push({ d: sr.slice(1) })
       break
-    // Search ny name with locked world
+    // Search by name with locked world
     case isLimited.value:
       sopt.$and.push(
         { n: sr },
@@ -332,24 +357,6 @@ const filteredCharacters = computed(() => {
       )
       break
   }
-  // if (isLimited.value) {
-  //   sopt.$and.push(
-  //     { n: sr },
-  //     {
-  //       $or: [
-  //         { w: `^"${worldName}"` }, { d: `^"${worldName}"` },
-  //       ],
-  //     },
-  //   )
-  // }
-  // else {
-  //   sopt.$and.push(
-  //     {
-  //       $or: [
-  //         { w: sr }, { n: sr }, { d: sr }],
-  //     },
-  //   )
-  // }
   if (gender.value) sopt.$and.push({ b: `=${gender.value}` })
 
   if (image.value) sopt.$and.push({ i: image.value })
@@ -380,33 +387,99 @@ const sortedResults = computed(() => {
 })
 
 const slicedChars = computed(() => {
-  // const groupped = groupBy(filteredCharacters.value, (n) => { return n.item.i })
+  // const groupped = groupBy(filteredCharacters.value, (n) => { return n.item.u })
   // const result = uniq(flatten(filter(groupped, (n) => { return n.length > 1 })))
   // return result.slice(limit.value > 100 ? limit.value - 100 : 0, limit.value)
-  return sortedResults.value.slice(0, limit.value)
+  return sortedResults.value.slice(position.value, position.value + limit.value)
+})
+
+watch(sortedResults, () => {
+  companionsList.value.scrollTop = 0
+  position.value = 0
 })
 
 // const allCredits = computed(() => charArr.value.reduce((a, b) => b.t !== 11 ? a += CHAR_COSTS[b.t - 1] : a, 0))
 
-watch(slicedChars, () => nextTick(() => lazyLoadImg(waifuList.value)))
+const firstCard = ref<HTMLElement|null>(null)
+const lastCard = ref<HTMLElement|null>(null)
 
-const allUserCharacters = computed(() => userCharacters.value.concat(localUserCharacters.value))
+const opt = {
+  root: null,
+  rootMargin: '0px',
+  threshold: 0.1,
+}
+const observer = new IntersectionObserver(visibilityChanged, opt)
 
-const handleScroll = () => {
-  if (companionsList.value) {
-    const element = companionsList.value
-    if (element.scrollHeight - element.scrollTop - 50 <= element.clientHeight)
-      limit.value += 10
+watch(slicedChars, () => {
+  observer.disconnect()
+  nextTick(() => {
+    if (firstCard.value && lastCard.value) {
+      // observer.unobserve(firstCard.value)
+      // observer.unobserve(lastCard.value)
+      firstCard.value.id = ''
+    }
+    firstCard.value = waifuList.value?.children[0]
+    lastCard.value = waifuList.value?.children[waifuList.value?.children.length - 1]
+    firstCard.value.id = 'first'
+    lastCard.value.id = 'last'
+    observer.observe(firstCard.value)
+    observer.observe(lastCard.value)
+  })
+})
+
+// function getBigger() {
+//   if (companionsList.value?.scrollHeight
+//   < (lastCard.value?.offsetTop + 504)
+//   ) {
+//     limit.value += cardRowCount.value
+//     setTimeout(() => getBigger, 10)
+//   }
+// }
+
+// watch(limit, getBigger)
+
+function visibilityChanged(entries) {
+  if (entries.length === 2 && entries[0].isIntersecting && entries[1].isIntersecting) {
+    // limit.value = limit.value - (limit.value % cardRowCount) + cardRowCount * (settings.value.allImg ? 9 : 3)
+    // (settings.value.allImg ? 6 : 3)
+    // setTimeout(() => visibilityChanged(entries), 50)
+    // console.log(limit.value)
+    return
+  }
+  for (let i = 0; i < entries.length; i++) {
+    const entry = entries[i]
+    if (entry.target.id === 'last' && entry.isIntersecting && position.value + limit.value <= secondFilter.value.length) {
+      position.value += cardRowCount
+      return
+    }
+    if (entry.target.id === 'first' && entry.isIntersecting && position.value >= cardRowCount) {
+      position.value -= cardRowCount
+      return
+    }
   }
 }
 
-onMounted(() => {
-  companionsList?.value?.addEventListener('scroll', handleScroll)
-})
+const topPosition = computed(() => position.value / cardRowCount * ((firstCard.value?.clientHeight || 0) || 500))
 
-onUnmounted(() => {
-  companionsList?.value?.removeEventListener('scroll', handleScroll)
-})
+const allUserCharacters = computed(() => userCharacters.value.concat(localUserCharacters.value))
+
+// const handleScroll = () => {
+//   if (companionsList.value) {
+//     const element = companionsList.value
+//     if (element.scrollHeight - element.scrollTop - 50 <= element.clientHeight)
+//       position.value += 10
+//     if (element.scrollTop <= 50 && position.value >= 10)
+//       position.value -= 10
+//   }
+// }
+
+// onMounted(() => {
+//   companionsList?.value?.addEventListener('scroll', handleScroll)
+// })
+
+// onUnmounted(() => {
+//   companionsList?.value?.removeEventListener('scroll', handleScroll)
+// })
 
 function editCompanion(char: any) {
   characterToEdit.value = char
@@ -425,6 +498,12 @@ function toggleRating() {
 
 function toggleAlpha() {
   sortAlpha.value = threeToggle(sortAlpha.value)
+}
+
+function clearAndReset() {
+  search.value = ''
+  position.value = 0
+  companionsList.value.scrollTop = 0
 }
 
 </script>

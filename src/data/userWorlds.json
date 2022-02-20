@@ -186,7 +186,7 @@
     ]
   },
   {
-    "worldName": "My Little Pony ",
+    "worldName": "My Little Pony",
     "rating": 1
   },
   {
@@ -219,7 +219,7 @@
     ]
   },
   {
-    "worldName": "Pathfinder ",
+    "worldName": "Pathfinder",
     "rating": 9,
     "condition": [
       {
@@ -239,7 +239,7 @@
     "rating": 5,
     "condition": [
       {
-        "name": "Crash 2.0 ",
+        "name": "Crash 2.0",
         "rating": 5
       },
       {
@@ -277,7 +277,7 @@
   {"worldName":"Dark Souls","rating":8,"image":"https://i.imgur.com/ZvNFdGol.png","additional":"You can use bonfires as they are intended.","condition":[{"name":"Dark Souls 1","rating":8},{"name":"Dark Souls 2","rating":8},{"name":"Dark Souls 3","rating":8}]},
   {"worldName":"Divinity","rating":5},
   {"worldName":"Highschool of the Dead","rating":4,"condition":[{"rating":4,"name":"Starting from Z-Day"}]},
-  {"worldName":"How Not to Summon a Demon Lord ","rating":8},
+  {"worldName":"How Not to Summon a Demon Lord","rating":8},
   {"worldName":"Inheritance","rating":5,"additional":"When capturing a rider one also captures their dragon."},
   {"worldName":"JoJo's Bizarre Adventure","rating":3,"image":"https://i.imgur.com/Y8qbM7Xl.png","condition":[{"name":"Phantom Blood","rating":3},{"name":"Parts 3,4,7,8","rating":4},{"rating":5,"name":"Battle Tendency, Golden Wind"},{"rating":6,"name":"Stone Ocean"}]},
   {"worldName":"Jump Force","rating":9},
@@ -371,14 +371,14 @@
   {"worldName":"Dragon's Dogma","rating":7,"image":"https://www.giantbomb.com/a/uploads/original/1/10354/2419515-dark_arisen_logo.jpg"},
   {"worldName":"Gravity Falls","rating":5},
   {"worldName":"Hades","rating":9,"image":"https://www.giantbomb.com/a/uploads/original/0/1992/3067821-screen%20shot%202018-12-06%20at%209.35.56%20pm.png"},
-  {"worldName":"Jak & Daxter ","rating":5,"condition":[{"name":"any other jak game","rating":7}]},
+  {"worldName":"Jak & Daxter","rating":5,"condition":[{"name":"any other jak game","rating":7}]},
   {"worldName":"Kantai Collection","rating":5},
   {"worldName":"Keys to the Kingdom","rating":5},
   {"worldName":"Maggot Baits","rating":5},
-  {"worldName":"I've Been Killing Slimes for 300 Years and Maxed Out My Level","rating":4,"additional":"Entering this world or gaining a companion from here will allow access to the world’s leveling system "},
+  {"worldName":"I've Been Killing Slimes for 300 Years and Maxed Out My Level","rating":4,"additional":"Entering this world or gaining a companion from here will allow access to the world’s leveling system"},
   {"worldName":"Supreme Commander","rating":10,"image":"https://images2.alphacoders.com/242/24252.jpg"},
   {"worldName":"The Lazy King","rating":7,"condition":[{"rating":6,"name":"Human Wolrd"}]},
-  {"worldName":"The Terminator","rating":4,"image":"https://www.planocritico.com/wp-content/uploads/2015/06/O-Exterminador-do-Futuro-The-Terminator-EUA-1984.jpg","additional":"John Connor has a T-800 or Cameron as a familiar. Terminator Genisys Sarah Connor has a T-800 as a familiar.","condition":[{"name":"Terminator ","rating":3},{"name":"Terminator 2: Past.","rating":4},{"name":"Terminator 2: Future.","rating":5},{"rating":5,"name":"Terminator 3:"},{"name":"Terminator Genisys","rating":5},{"name":"Terminator: Dark Fate-Past","rating":5},{"rating":6,"name":"Terminator: Dark Fate-Future"},{"name":"Terminator: The Sarah Connor Chronicles","rating":5}]},
+  {"worldName":"The Terminator","rating":4,"image":"https://www.planocritico.com/wp-content/uploads/2015/06/O-Exterminador-do-Futuro-The-Terminator-EUA-1984.jpg","additional":"John Connor has a T-800 or Cameron as a familiar. Terminator Genisys Sarah Connor has a T-800 as a familiar.","condition":[{"name":"Terminator","rating":3},{"name":"Terminator 2: Past.","rating":4},{"name":"Terminator 2: Future.","rating":5},{"rating":5,"name":"Terminator 3:"},{"name":"Terminator Genisys","rating":5},{"name":"Terminator: Dark Fate-Past","rating":5},{"rating":6,"name":"Terminator: Dark Fate-Future"},{"name":"Terminator: The Sarah Connor Chronicles","rating":5}]},
   {"worldName":"The Venture Brothers","rating":3},
   {"worldName":"Total Drama","rating":2,"condition":[{"name":"Contestant","rating":3},{"rating":4,"name":"Revenge of the Island"}]},
   {"worldName":"Twilight","rating":3,"image":"https://mythbank.com/wp-content/uploads/2019/10/twilight-banner.jpg"},
@@ -390,7 +390,7 @@
   {"worldName":"The Dragon Prince","rating":5,"condition":[{"name":"Open War","rating":6}]},
   {"worldName":"Rainbow Six Siege","rating":4},
   {"worldName":"Afro Samurai","rating":5},
-  {"worldName":"Ark: Evolution ","rating":3,"additional":"All Fauna are capturable as familiars by the contractor or by companions.  They may be captured by in universe methods or by stamp or other company provided methods.  No credits are obtained through this.","condition":[{"name":"Arctic Biome","rating":4},{"name":"Mythic Biome","rating":5},{"rating":7,"name":"Infected Earth"}]},
+  {"worldName":"Ark: Evolution","rating":3,"additional":"All Fauna are capturable as familiars by the contractor or by companions.  They may be captured by in universe methods or by stamp or other company provided methods.  No credits are obtained through this.","condition":[{"name":"Arctic Biome","rating":4},{"name":"Mythic Biome","rating":5},{"rating":7,"name":"Infected Earth"}]},
   {"worldName":"Bayonetta","rating":8,"additional":"The contractor and any companions are always able to percieve supernatural and/or spiritual beings or events. However, interacting with said beings or events requires magical, ki, or other form of supernatural ability. \n\nElemental Cloaks, Symbiote and derived suits, or magical circles qualify. Tempest jewelry or the Stamp only qualifies if the contractor has said abilities themselves."},
   {"worldName":"Dofus/Wakfu","rating":9,"image":"https://cdn.donmai.us/original/14/5c/__sadida_evangelyne_cra_amalia_sheran_sharm_yugo_and_3_more_wakfu_drawn_by_xaxaxa__145c4615d64be2e16d23c4fc3f1720c6.png","condition":[{"name":"Dofus","rating":10},{"name":"Wakfu","rating":9}]},
   {"worldName":"Girls' Frontline","rating":5},
@@ -414,7 +414,7 @@
   {"worldName":"Miss Kobayashi's Dragon Maid","rating":2,"image":"https://upload.wikimedia.org/wikipedia/en/2/2d/Miss_Kobayashi%27s_Dragon_Maid%2C_volume_1.jpg"},
   {"worldName":"Monsterverse","rating":6,"condition":[{"rating":8,"name":"All Titans active"}]},
   {"worldName":"Owari no Seraph","rating":5,"additional":"Companion's Cursed Gear become a familiar when captured"},
-  {"worldName":"Rosario + Vampire ","rating":6},
+  {"worldName":"Rosario + Vampire","rating":6},
   {"worldName":"The Boys","rating":2,"image":"https://cdnb.artstation.com/p/assets/images/images/031/128/309/large/mayank-kumarr-1.jpg?1602685214","condition":[{"name":"Comics","rating":3}]},
   {"worldName":"The Hero Who Returned Remains The Strongest In The Modern World","rating":5},
   {"worldName":"The Long Dark","rating":3,"image":"https://cdn.akamai.steamstatic.com/steam/apps/305620/capsule_616x353.jpg?t=1638931698","condition":[{"name":"Whiteout","rating":4},{"rating":5,"name":"The Hunted"}]},

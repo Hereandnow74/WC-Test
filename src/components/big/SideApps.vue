@@ -2,16 +2,14 @@
   <div class="fixed right-0 top-1/2">
     <div
       v-if="flags.danger11Start"
-      class="rounded-l-lg bg-gray-200 dark:bg-gray-800 flex items-center"
-      border="l-2 t-2 b-2 gray-400 dark:gray-600 hover:green-500"
     >
       <div
         v-if="showDanger11"
-        class="min-w-[320px] sm:w-max h-max bg-warm-gray-800 text-gray-100 cursor-pointer rounded-l p-1"
+        class="-mt-1/2 sm:mt-0 min-w-[320px] h-max bg-warm-gray-800 text-gray-100 cursor-pointer rounded-l p-1 border-l-2 border-t-2 border-b-2 border-gray-400"
         @click="showDanger11 = !showDanger11"
       >
         <div>
-          T11 Waifu or Husbando -
+          T11 Companion -
           <Valid :condition="tier11Companion" />
         </div>
         <div>
@@ -29,12 +27,17 @@
           <Valid :condition="otherLimit" />
         </div>
       </div>
-      <emojione-monotone:skull
+      <div
         v-else
-        class="h-8 w-8 cursor-pointer"
-        :class="allConditions ? 'text-green-500' : 'text-red-500'"
-        @click="showDanger11 = !showDanger11"
-      />
+        class="rounded-l-lg bg-gray-200 dark:bg-gray-800 flex items-center"
+        border="l-2 t-2 b-2 gray-400 dark:gray-600 hover:green-500"
+      >
+        <emojione-monotone:skull
+          class="h-8 w-8 cursor-pointer"
+          :class="allConditions ? 'text-green-500' : 'text-red-500'"
+          @click="showDanger11 = !showDanger11"
+        />
+      </div>
     </div>
   </div>
 </template>

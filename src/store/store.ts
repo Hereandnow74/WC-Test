@@ -198,25 +198,34 @@ const fullStartingBudget = computed(() => {
     .reduce((a, x) => x.intensity < 10 ? a += x.intensity : (intensityFlat += x.intensity, a), 0)
 
   let bd = baseBudget.value
-  if (bd >= 11111) {
-    bd = 0
-    flags.value.danger11Start = true
-  }
-  else {
-    flags.value.danger11Start = false
-  }
+  if (flags.value.danger11Start) bd = 0
 
   return csr.value ? Math.round((bd + intensityFlat) * (intenMultiplier)) : Math.round((bd + intensityFlat) * (1 + intenMultiplier))
 })
 
+const creditLimit = computed(() =>
+  Math.max(500,
+    WORLD_RATINGS[startingWorld.value.rating - 1].budget,
+    jumpChain.value.reduce((a, x) => Math.max(a, WORLD_RATINGS[x.rating - 1].budget), 0),
+  ))
+
 const budget = computed(() => {
-  return fullStartingBudget.value - startingOrigin.value.cost - pvpPerksCost.value
+  const bd = fullStartingBudget.value - startingOrigin.value.cost - pvpPerksCost.value
       - bindingCost.value - heritageCost.value - luresCost.value - ridePerksCost.value - homePerksCost.value
       - talentsCost.value - defensesCost.value - miscPerksCost.value - waifuPerksCost.value
       - genericWaifuPerksCost.value - companionsCost.value - otherCost.value - fee.value
       - budgetMods.value.minus + budgetMods.value.plus + companionProfit.value + companionProfitSold.value
-      + loan.value.gained + usedHeritageDiscount.value + talentsDiscount.value + defensesDiscount.value
+      + usedHeritageDiscount.value + talentsDiscount.value + defensesDiscount.value
       + defenseRetinueDiscount.value + specificModsCost.value
+
+  // CSR implementation 2.0
+  if (flags.value.chargen && csr.value) {
+    if (bd <= 0)
+      loan.value.gained = Math.min(Math.abs(bd), creditLimit.value)
+    loan.value.owed = loan.value.gained
+  }
+
+  return bd + loan.value.gained
 })
 
 const companionTicketProfit = computed(() => {
@@ -231,7 +240,7 @@ const companionTicketProfit = computed(() => {
 
 const tier11tickets = computed(() => {
   let ticket = 0
-  if (baseBudget.value === 11111) ticket += 1
+  if (flags.value.danger11Start) ticket += 1
 
   const bindingCost = binding.value.reduce((a, x) => a += x.cost >= 11111 ? x.cost / 11111 : 0, 0)
   const heritageCost = heritage.value.reduce((a, x) => a += x.cost >= 11111 ? x.cost / 11111 : 0, 0)
@@ -285,30 +294,30 @@ const yourTier = computed(() => {
 
 const companionsUIDs = computed(() => companions.value.reduce((a, c) => (a[c.uid] = true, a), {}))
 
-const creditLimit = computed(() =>
-  Math.max(500,
-    WORLD_RATINGS[startingWorld.value.rating - 1].budget,
-    jumpChain.value.reduce((a, x) => Math.max(a, WORLD_RATINGS[x.rating - 1].budget), 0),
-  ))
-
 const underLoan = computed(() => loan.value.owed > 0)
 
-watch(startingWorld, () => currentWorld.value = startingWorld.value)
+watch(startingWorld, () => {
+  if (startingWorld.value.rating === 11)
+    flags.value.danger11Start = true
+  else
+    flags.value.danger11Start = false
+  currentWorld.value = startingWorld.value
+})
 
 watch(jumpChain, () => {
   if (jumpChain.value.length > 1)
     fee.value += Math.round(loan.value.owed * 0.1)
 }, { deep: true })
 
-watch(budget, () => {
-  if (csr.value && budget.value < 0) {
-    const need = Math.abs(budget.value)
-    if ((creditLimit.value - loan.value.owed) > need) {
-      loan.value.gained += need
-      loan.value.owed += need
-    }
-  }
-})
+// watch(budget, () => {
+//   if (csr.value && budget.value < 0) {
+//     const need = Math.abs(budget.value)
+//     if ((creditLimit.value - loan.value.owed) > need) {
+//       loan.value.gained += need
+//       loan.value.owed += need
+//     }
+//   }
+// })
 
 const favorites = useStorage<string[]>('favorites', [])
 

@@ -27,7 +27,7 @@ export const WORLD_RATINGS = [
   { rating: 8, title: 'All Nightmare Long', budget: 955 },
   { rating: 9, title: 'Frayed Ends of Sanity', budget: 1545 },
   { rating: 10, title: 'To Live is to Die', budget: 2500 },
-  { rating: 11, title: 'One', budget: 11111 },
+  { rating: 11, title: 'One', budget: 0 },
 ]
 
 export const CHAR_COSTS = [1, 2, 5, 10, 20, 50, 100, 200, 500, 1000, 11111]

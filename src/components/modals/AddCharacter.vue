@@ -2,24 +2,9 @@
   <Modal label="Add New Character">
     <div class="max-h-[90vh] flex relative max-w-screen-sm min-h-0">
       <div class="flex flex-col p-2 gap-2 min-h-0 overflow-y-auto scrollbar">
-        <Note type="info" title="Tier">
-          If you don't know what Tier assign to a Character check out
-          <router-link :to="{path:'/', hash:'#pandora'}" class="text-blue-500 hover:underline">
-            this
-          </router-link>
-        </Note>
-        <Note type="info" title="Images">
-          <div class="linkList">
-            <span>If you want to add NSFW image there is a list of sites that were confirmed to work: </span>
-            <a href="https://danbooru.donmai.us/" target="_blank" rel="noopener noreferrer">Danbooru</a>
-            <a href="http://www.hentai-foundry.com/" target="_blank" rel="noopener noreferrer">HentaiFoundry</a>
-            <a href="https://e621.net/" target="_blank" rel="noopener noreferrer">e621</a>
-            <a href="https://safebooru.org/" target="_blank" rel="noopener noreferrer">Safebooru</a>
-            <a href="http://paheal.net" target="_blank" rel="noopener noreferrer">Paheal</a>
-            <a href="https://www.furaffinity.net/" target="_blank" rel="noopener noreferrer">Furaffinity</a>
-            <a href="https://www.reddit.com/" target="_blank" rel="noopener noreferrer">Reddit</a>
-            <a href="https://imgur.com" target="_blank" rel="noopener noreferrer">Imgur</a>
-          </div>
+        <Note type="warning" title="Tier">
+          Before adding characters to global - read <b>rules</b> first!
+          <Button label="Rules" size="Small" bg-color="bg-red-500" @click="showRules = true" />
         </Note>
         <div class="flex gap-2">
           <Input v-model="name" placeholder="Name" class="flex-grow" :error-message="errors.name" />
@@ -85,10 +70,11 @@
       </div>
       <CompanionCard
         v-if="name"
-        class="hidden xl:block absolute h-full -top-4 w-[300px] left-[calc(100%+0.5rem)]"
+        class="hidden xl:block absolute h-[500px] -top-18 w-[350px] left-[calc(100%+0.5rem)]"
         :char="companion"
         :lazy="false"
       />
+      <CharacterRules v-if="showRules" @click="showRules = false" />
     </div>
   </Modal>
 </template>
@@ -126,6 +112,8 @@ const tierError = ref('')
 const tierConfirm = ref(false)
 const processing = ref(false)
 const submitMessage = ref('')
+
+const showRules = ref(false)
 
 const { userCharacters, localUserCharacters } = useStore()
 
@@ -221,9 +209,3 @@ const addCharacter = handleSubmit((values) => {
 })
 
 </script>
-
-<style>
-.linkList a {
-  @apply text-blue-700 dark:text-blue-400 hover:text-blue-500 underline mr-2 inline-block;
-}
-</style>
