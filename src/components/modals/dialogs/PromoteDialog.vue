@@ -18,7 +18,7 @@
             target="_blank"
             class="text-red-500 font-bold hover:text-red-600"
             rel="noopener noreferrer"
-          >Patron</a> or donate via <span class="text-blue-500 font-bold cursor-pointer hover:text-blue-400" @click="paypal = !paypal">PayPal</span>
+          >Patron</a>
           <span v-if="paypal" class="px-2 py-1 bg-gray-800 text-gray-100 rounded">alexnkcode@gmail.com</span>.
           Note that I'm the author/maintainer of the site, author of Waifu Catalog CYOA is <a
             href="https://forum.questionablequesting.com/members/swiftrosenthal.1795/"

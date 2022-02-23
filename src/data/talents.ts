@@ -787,18 +787,18 @@ genericPerks.push({
 <p>By default, this history is of a middle-class or analogous citizen. If plausible and desired, they will instead be of a social class that can associate with you. Under the same conditions, any powers they have may be documented in a way that best fits your needs. If you have Trace Defense, any attempt at remote viewing where failure or invisibility would itself be a red flag will seemingly succeed, showing either a convincing match to their documented past or a present or future with nothing important to note.</p>`,
 })
 
-// genericPerks.push({
-//   uid: 'I7GFa',
-//   title: 'Power Swap',
-//   image: '',
-//   cost: 0,
-//   desc: `
-//   <p><b>Cost</b>: Find the purchase price for the subject’s tier at step 1a and the purchase price of the tier of the power’s original owner, then take the difference. Swapping out a Tier 4’s power for a Tier 10’s thus costs 990 credits, while a Tier 5 for a Tier 5 costs 0 and a Tier 6 for a Tier 2 gives you a refund of 48 credits. Only Purchased subjects refund credits if reduced to a lower tier by this perk. Captured subjects grant capture credits, and do not have a refund value.</p>
-//   <p>This perk replaces your subject’s original powers and skills, including the results of additional training with the appropriate Basic Talent, with a copy of someone else’s, changing their tier at step 1a and ignoring all powers that are counted in steps 2+. The results of any additional training with the original power, through Basic Talents or otherwise, will be saved to a backup, should you ever want to switch back. If you purchase this perk for yourself, it will replace your Origin’s powers, if applicable, or previous uses of this perk.</p>
-//   <p>Like Template Stacking, this perk does not accept Tier 11 powers, abilities found elsewhere in this catalog, or abilities that originated in other CYOAs. All other powers are still allowed, including a lack thereof. It’s all the same skill download at our cloning facilities. Unlike Template Stacking, this is the full power, not nerfed down to Tier 4. Subjects who are purchased with this perk will count as “canon” users of the new power, for all perks and rules that consider canonicity, instead of their original one.</p>
-//   <p>If you purchase this perk for yourself at chargen or a purchased subject when they’re purchased, the effects are immediate. If you purchase this perk at a later date, or for a captured subject, the person will lack an original power for one week (168 hours) before the new power manifests. If you have Warranty Plan, a subject that this perk is applied to will vanish immediately before respawning from that perk as normal, but with the new power instead.</p>
-// `,
-// })
+genericPerks.push({
+  uid: 'I7GFa',
+  title: 'Power Swap',
+  image: '',
+  cost: 0,
+  desc: `
+  <p><b>Cost</b>: Find the purchase price for the subject’s tier at step 1a and the purchase price of the tier of the power’s original owner, then take the difference. Swapping out a Tier 4’s power for a Tier 10’s thus costs 990 credits, while a Tier 5 for a Tier 5 costs 0 and a Tier 6 for a Tier 2 gives you a refund of 48 credits. Only Purchased subjects refund credits if reduced to a lower tier by this perk. Captured subjects grant capture credits, and do not have a refund value.</p>
+  <p>This perk replaces your subject’s original powers and skills, including the results of additional training with the appropriate Basic Talent, with a copy of someone else’s, changing their tier at step 1a and ignoring all powers that are counted in steps 2+. The results of any additional training with the original power, through Basic Talents or otherwise, will be saved to a backup, should you ever want to switch back. If you purchase this perk for yourself, it will replace your Origin’s powers, if applicable, or previous uses of this perk.</p>
+  <p>Like Template Stacking, this perk does not accept Tier 11 powers, abilities found elsewhere in this catalog, or abilities that originated in other CYOAs. All other powers are still allowed, including a lack thereof. It’s all the same skill download at our cloning facilities. Unlike Template Stacking, this is the full power, not nerfed down to Tier 4. Subjects who are purchased with this perk will count as “canon” users of the new power, for all perks and rules that consider canonicity, instead of their original one.</p>
+  <p>If you purchase this perk for yourself at chargen or a purchased subject when they’re purchased, the effects are immediate. If you purchase this perk at a later date, or for a captured subject, the person will lack an original power for one week (168 hours) before the new power manifests. If you have Warranty Plan, a subject that this perk is applied to will vanish immediately before respawning from that perk as normal, but with the new power instead.</p>
+`,
+})
 
 genericPerks.push({
   uid: 'dmynt',

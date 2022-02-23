@@ -143,6 +143,7 @@ const { errors, handleSubmit } = useForm({
     image: props.editMode ? props.character.image || '' : '',
     image_nsfw: props.editMode ? props.character.image_nsfw || '' : '',
     tags: props.editMode ? props.character.tags || [] : [],
+    nickname: '',
   },
 })
 
@@ -187,7 +188,7 @@ const addCharacter = handleSubmit((values) => {
 
   if (!values.tags.includes(sex.value))
     values.tags.push(sex.value)
-  values.tags = values.tags.map(x => waifuTagsByTag[x] ? waifuTagsByTag[x].short : x)
+  values.tags = values.tags.map((x: string) => waifuTagsByTag[x] ? waifuTagsByTag[x].short : x)
   values.uid = props.editMode ? props.character.uid || random(10000000, 99999999) : random(10000000, 99999999)
   if (serverSave.value) {
     processing.value = true

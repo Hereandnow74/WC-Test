@@ -220,9 +220,10 @@ const budget = computed(() => {
 
   // CSR implementation 2.0
   if (flags.value.chargen && csr.value) {
-    if (bd <= 0)
+    if (bd + loan.value.gained < 0) {
       loan.value.gained = Math.min(Math.abs(bd), creditLimit.value)
-    loan.value.owed = loan.value.gained
+      loan.value.owed = loan.value.gained
+    }
   }
 
   return bd + loan.value.gained

@@ -30,20 +30,7 @@
     "worldName": "Code Geass",
     "rating": 5
   },
-  {
-    "worldName": "Cradle (Will Wight)",
-    "rating": 10,
-    "condition": [
-      {
-        "name": "No active crisis",
-        "rating": 6
-      },
-      {
-        "name": "Elder Dragons active",
-        "rating": 7
-      }
-    ]
-  },
+  {"worldName":"Cradle (Will Wight)","rating":10,"condition":[{"name":"No active crisis","rating":6},{"rating":7,"name":"Elder Dragons active"},{"name":"Start of Story","rating":8}]},
   {
     "worldName": "Date A Live",
     "rating": 8
@@ -419,5 +406,16 @@
   {"worldName":"The Hero Who Returned Remains The Strongest In The Modern World","rating":5},
   {"worldName":"The Long Dark","rating":3,"image":"https://cdn.akamai.steamstatic.com/steam/apps/305620/capsule_616x353.jpg?t=1638931698","condition":[{"name":"Whiteout","rating":4},{"rating":5,"name":"The Hunted"}]},
   {"worldName":"The Venture Bros","rating":3},
-  {"worldName":"The Witch","rating":3}
+  {"worldName":"The Witch","rating":3},
+  {"worldName":"Akira","rating":6,"image":"https://cdn.donmai.us/original/68/e8/__kaneda_shoutarou_akira_drawn_by_mr_marker__68e80ea07fd659238f27ba72b79962c8.jpg"},
+  {"worldName":"Darkest Dungeon","rating":4,"condition":[{"rating":5,"name":"In the Hamlet"},{"rating":6,"name":"With DLCs"}]},
+  {"worldName":"Exalted versus the World of Darkness","rating":7},
+  {"worldName":"History's Strongest Disciple Kenichi","rating":5},
+  {"worldName":"Magical Girl Spec-Ops Asuka","rating":7},
+  {"worldName":"Mermaid Melody","rating":3,"image":"https://m.media-amazon.com/images/M/MV5BYTg1NDhhYjQtMGJlMC00ZmM3LWE4MzgtNjBjYTk2MTA1MTIxXkEyXkFqcGdeQXVyODI2MTU1ODE@._V1_.jpg","additional":"The mermaids are able to control their transformations when entering water rather than automatically turning into mermaids. Their pets serve as familiars."},
+  {"worldName":"Omamori Himari","rating":5},
+  {"worldName":"Rakudai Kishi no Eiyuutan","rating":6,"image":"https://cdn11.neko-sama.xyz/1/1570p4orCOfy.jpg"},
+  {"worldName":"Sora no Otoshimono","rating":1,"image":"https://i5.walmartimages.com/asr/86620f1b-a665-491b-9155-8a3f030a5579_1.92ffb0313751299a7522a8d0cac12743.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF"},
+  {"worldName":"The Wolf Among Us","rating":5,"image":"https://i.imgur.com/DVENIP5.jpeg","condition":[{"rating":7,"name":"Pre-Fabletown"},{"name":"Present","rating":5}]},
+  {"worldName":"World's End Harem","rating":2,"image":"https://i.imgur.com/WoTCPFc_d.webp?maxwidth=640&shape=thumb&fidelity=medium"}
 ]

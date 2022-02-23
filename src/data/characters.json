@@ -4785,7 +4785,11 @@
     "t": 6,
     "i": "5ca037466da14774edfec0d6897f5633.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/5095556",
-    "w": "Ajin"
+    "w": "Ajin",
+    "b": [
+      "M",
+      "im"
+    ]
   },
   {
     "u": 4103,
@@ -8003,7 +8007,14 @@
     "w": "Asura's Wrath",
     "b": [
       "F",
-      "C"
+      "C",
+      "gd",
+      "hz",
+      "hr",
+      "sc",
+      "pt",
+      "cb",
+      "th"
     ]
   },
   {
@@ -8015,7 +8026,12 @@
     "w": "Asura's Wrath",
     "b": [
       "F",
-      "C"
+      "C",
+      "gd",
+      "hz",
+      "hr",
+      "cb",
+      "th"
     ]
   },
   {
@@ -14752,14 +14768,6 @@
     "w": "Ben 10"
   },
   {
-    "u": 4818,
-    "n": "Looma Red Wind",
-    "t": 6,
-    "i": "96c4eae0e68df5d3574537eb8299c22e.jpg",
-    "s": "https://i.pinimg.com/originals/96/c4/ea/96c4eae0e68df5d3574537eb8299c22e.jpg",
-    "w": "Ben 10"
-  },
-  {
     "u": 4819,
     "n": "Princess Attea",
     "t": 3,
@@ -14773,14 +14781,6 @@
     "t": 3,
     "i": "dMFOeNzLLFOLYkEH1LFBTnMRiUWLN0bT6iPvob3g.png",
     "s": "https://vignette.wikia.nocookie.net/ben10/images/1/11/Rook_shar_plumber.png/revision/latest/top-crop/width/360/height/450?cb=20181219054505",
-    "w": "Ben 10"
-  },
-  {
-    "u": 4821,
-    "n": "Verdona",
-    "t": 8,
-    "i": "verdona_young_human_form_full_body_ua.png",
-    "s": "https://vignette.wikia.nocookie.net/ben10/images/9/9f/Verdona_young_human_form_full_body_UA.png/revision/latest?cb=20190228033423",
     "w": "Ben 10"
   },
   {
@@ -22371,7 +22371,11 @@
     "s": "https://i.pinimg.com/564x/46/5c/1d/465c1df65d299145a0780718ba562021.jpg",
     "w": "DC",
     "b": [
-      "F"
+      "F",
+      "hz",
+      "en",
+      "ai",
+      "sr"
     ]
   },
   {
@@ -23258,7 +23262,8 @@
       "F",
       "C",
       "sp"
-    ]
+    ],
+    "in": "https://pictures.hentai-foundry.com/n/NinjaKitty/677481/NinjaKitty-677481-Px3_Ms._January_-_BatGirl.jpg"
   },
   {
     "u": 9602,
@@ -35752,7 +35757,10 @@
     "w": "Dragonball series",
     "b": [
       "F",
-      "C"
+      "C",
+      "hz",
+      "ml",
+      "th"
     ]
   },
   {
@@ -36238,12 +36246,22 @@
     "u": 2167,
     "n": "Akatosh",
     "t": 10,
-    "i": "",
+    "i": "[n]LG-cardart-Avatar_of_Akatosh_02.jpg",
     "w": "The Elder Scrolls",
     "b": [
-      "M"
+      "M",
+      "hp",
+      "hl",
+      "im",
+      "ur",
+      "di",
+      "fm",
+      "tm",
+      "dg",
+      "gd"
     ],
-    "d": "(Aedra)"
+    "d": "(Aedra)",
+    "s": "https://images.uesp.net/6/62/LG-cardart-Avatar_of_Akatosh_02.jpg"
   },
   {
     "u": 2168,
@@ -36309,7 +36327,16 @@
     "s": "https://www.deviantart.com/lunar-n-strain/art/Clavicus-Vile-664487422",
     "w": "The Elder Scrolls",
     "b": [
-      "M"
+      "M",
+      "hp",
+      "hz",
+      "im",
+      "pl",
+      "ur",
+      "sc",
+      "di",
+      "gd",
+      "sr"
     ],
     "d": "(Daedra)"
   },
@@ -36321,7 +36348,14 @@
     "s": "https://www.deviantart.com/lockinloadeadly/art/Hermaeus-mora-390858058",
     "w": "The Elder Scrolls",
     "b": [
-      "M"
+      "O",
+      "hp",
+      "hz",
+      "im",
+      "ur",
+      "di",
+      "ot",
+      "sr"
     ],
     "d": "(Daedra)"
   },
@@ -36333,7 +36367,15 @@
     "s": "https://www.deviantart.com/jedi-art-trick/art/Hircine-417424392",
     "w": "The Elder Scrolls",
     "b": [
-      "M"
+      "M",
+      "hp",
+      "hz",
+      "mt",
+      "im",
+      "pl",
+      "ur",
+      "cr",
+      "gd"
     ],
     "d": "(Daedra)"
   },
@@ -36345,7 +36387,14 @@
     "s": "https://www.deviantart.com/freecolat/art/Mirror-799223102",
     "w": "The Elder Scrolls",
     "b": [
-      "M"
+      "M",
+      "hp",
+      "hz",
+      "im",
+      "pl",
+      "ur",
+      "gd",
+      "sr"
     ],
     "d": "(Daedra)"
   },
@@ -36357,7 +36406,13 @@
     "s": "https://www.deviantart.com/strannytsa/art/Malacath-412465234",
     "w": "The Elder Scrolls",
     "b": [
-      "M"
+      "M",
+      "hp",
+      "st",
+      "hz",
+      "im",
+      "ur",
+      "gd"
     ],
     "d": "(Daedra)"
   },
@@ -36369,7 +36424,16 @@
     "s": "https://www.deviantart.com/strannytsa/art/Mehrunes-Dagon-421149156",
     "w": "The Elder Scrolls",
     "b": [
-      "M"
+      "M",
+      "hr",
+      "hz",
+      "id",
+      "im",
+      "ur",
+      "cr",
+      "dv",
+      "sr",
+      "ev"
     ],
     "d": "(Daedra)"
   },
@@ -36381,7 +36445,16 @@
     "s": "https://www.deviantart.com/sickjoe/art/Molag-Bal-Elder-Scrolls-763143648",
     "w": "The Elder Scrolls",
     "b": [
-      "M"
+      "M",
+      "hp",
+      "hz",
+      "dr",
+      "id",
+      "im",
+      "ur",
+      "dm",
+      "vp",
+      "ev"
     ],
     "d": "(Daedra)"
   },
@@ -36393,7 +36466,11 @@
     "s": "https://www.deviantart.com/mathieubellamont/art/peryite-506254540",
     "w": "The Elder Scrolls",
     "b": [
-      "M"
+      "M",
+      "hz",
+      "im",
+      "ur",
+      "gd"
     ],
     "d": "(Daedra)"
   },
@@ -36405,7 +36482,16 @@
     "s": "https://www.deviantart.com/freecolat/art/Sam-at-the-white-gold-tower-515484398",
     "w": "The Elder Scrolls",
     "b": [
-      "M"
+      "M",
+      "hp",
+      "st",
+      "hz",
+      "ml",
+      "im",
+      "pl",
+      "ur",
+      "sc",
+      "sr"
     ],
     "d": "(Daedra)"
   },
@@ -36417,7 +36503,16 @@
     "s": "https://www.deviantart.com/nikulina-helena/art/The-Prince-of-Madness-833837506",
     "w": "The Elder Scrolls",
     "b": [
-      "M"
+      "M",
+      "hp",
+      "hz",
+      "im",
+      "pl",
+      "ur",
+      "sc",
+      "di",
+      "lm",
+      "gd"
     ],
     "d": "(Daedra)"
   },
@@ -40292,7 +40387,9 @@
     "s": "https://www.deviantart.com/orsathesimurgh/art/The-last-hour-of-the-Empire-572014657",
     "w": "The Elder Scrolls",
     "b": [
-      "M"
+      "M",
+      "cl",
+      "rl"
     ],
     "d": "Skyrim"
   },
@@ -42143,7 +42240,9 @@
     "s": "https://www.deviantart.com/angus/art/The-Arch-Curate-362082439",
     "w": "The Elder Scrolls",
     "b": [
-      "M"
+      "M",
+      "el",
+      "vp"
     ],
     "d": "Skyrim"
   },
@@ -42397,7 +42496,9 @@
     "s": "https://www.deviantart.com/fenrirdovah/art/Knight-Paladin-Gelebor-C-812708510",
     "w": "The Elder Scrolls",
     "b": [
-      "M"
+      "M",
+      "el",
+      "pt"
     ],
     "d": "Skyrim"
   },
@@ -42420,7 +42521,12 @@
     "s": "https://www.deviantart.com/zokwani/art/Krosis-401502507",
     "w": "The Elder Scrolls",
     "b": [
-      "M"
+      "M",
+      "dr",
+      "me",
+      "un",
+      "ev",
+      "pt"
     ],
     "d": "Skyrim"
   },
@@ -42443,7 +42549,11 @@
     "s": "https://www.deviantart.com/serpentis-ictus/art/Lord-Harkon-409199503",
     "w": "The Elder Scrolls",
     "b": [
-      "M"
+      "M",
+      "dr",
+      "vp",
+      "ev",
+      "rl"
     ],
     "d": "Skyrim"
   },
@@ -42991,7 +43101,15 @@
     "s": "https://www.deviantart.com/misslletrush/art/01-Azura-639095938",
     "w": "The Elder Scrolls",
     "b": [
-      "F"
+      "F",
+      "hp",
+      "hl",
+      "im",
+      "ur",
+      "sc",
+      "di",
+      "gd",
+      "sr"
     ],
     "d": "(Daedra)"
   },
@@ -43003,7 +43121,14 @@
     "s": "https://www.deviantart.com/saydousartcorner/art/Boethiah-709575369",
     "w": "The Elder Scrolls",
     "b": [
-      "F"
+      "F",
+      "hp",
+      "hz",
+      "bj",
+      "im",
+      "ur",
+      "cr",
+      "sr"
     ],
     "d": "(Daedra)"
   },
@@ -43015,7 +43140,14 @@
     "s": "https://www.deviantart.com/phoenixjklin/art/Mephala-Daedric-Prince-542245433",
     "w": "The Elder Scrolls",
     "b": [
-      "F"
+      "F",
+      "hp",
+      "im",
+      "ur",
+      "cr",
+      "sc",
+      "gd",
+      "sr"
     ],
     "d": "(Daedra)"
   },
@@ -43027,7 +43159,14 @@
     "s": "https://www.deviantart.com/isriana/art/Meridia-374783258",
     "w": "The Elder Scrolls",
     "b": [
-      "F"
+      "F",
+      "hp",
+      "hl",
+      "im",
+      "ur",
+      "an",
+      "gd",
+      "sr"
     ],
     "d": "(Daedra)"
   },
@@ -43039,7 +43178,16 @@
     "s": "https://www.deviantart.com/troxa-chan/art/Mistress-of-disgust-and-decay-Namira-857792358",
     "w": "The Elder Scrolls",
     "b": [
-      "F"
+      "F",
+      "hp",
+      "hr",
+      "hz",
+      "dr",
+      "im",
+      "pl",
+      "ur",
+      "cr",
+      "dm"
     ],
     "d": "(Daedra)"
   },
@@ -43051,7 +43199,15 @@
     "s": "https://chan.sankakucomplex.com/post/show/3891071",
     "w": "The Elder Scrolls",
     "b": [
-      "F"
+      "F",
+      "hp",
+      "im",
+      "pl",
+      "ur",
+      "sc",
+      "lm",
+      "gd",
+      "sr"
     ],
     "d": "(Daedra)"
   },
@@ -51903,7 +52059,10 @@
     "t": 4,
     "i": "92c4bfc4ba22020eaa910242bedef8c2.png",
     "s": "https://e621.net/post/show/1941195",
-    "w": "Five Nights At Freddy's"
+    "w": "Five Nights At Freddy's",
+    "b": [
+      "O"
+    ]
   },
   {
     "u": 12432,
@@ -51953,7 +52112,8 @@
     "s": "https://chan.sankakucomplex.com/post/show/16918082",
     "w": "Food Wars!: Shokugeki no Soma",
     "b": [
-      "F"
+      "F",
+      "cf"
     ]
   },
   {
@@ -51964,7 +52124,8 @@
     "s": "https://chan.sankakucomplex.com/post/show/4814805",
     "w": "Food Wars!: Shokugeki no Soma",
     "b": [
-      "F"
+      "F",
+      "cf"
     ]
   },
   {
@@ -61418,7 +61579,10 @@
     "t": 3,
     "i": "the_grim_adventures_of_billy_mandy_billy_and.png",
     "s": "https://www.seekpng.com/png/full/347-3479520_the-grim-adventures-of-billy-mandy-billy-and.png",
-    "w": "Grim Adventures of Billy and Mandy"
+    "w": "Grim Adventures of Billy and Mandy",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 10573,
@@ -69449,7 +69613,8 @@
     "w": "Is This a Zombie",
     "b": [
       "F",
-      "C"
+      "C",
+      "rs"
     ]
   },
   {
@@ -73019,7 +73184,8 @@
     "w": "KonoSuba",
     "b": [
       "F",
-      "C"
+      "C",
+      "me"
     ]
   },
   {
@@ -73031,7 +73197,8 @@
     "w": "KonoSuba",
     "b": [
       "F",
-      "C"
+      "C",
+      "nn"
     ]
   },
   {
@@ -73079,7 +73246,9 @@
     "w": "KonoSuba",
     "b": [
       "F",
-      "C"
+      "C",
+      "dr",
+      "dm"
     ]
   },
   {
@@ -73150,7 +73319,8 @@
     "w": "KonoSuba",
     "b": [
       "F",
-      "C"
+      "C",
+      "me"
     ]
   },
   {
@@ -73175,6 +73345,7 @@
     "b": [
       "F",
       "C",
+      "dr",
       "wh",
       "un"
     ]
@@ -73204,7 +73375,11 @@
     "w": "KonoSuba",
     "b": [
       "F",
-      "C"
+      "C",
+      "im",
+      "lm",
+      "gd",
+      "rs"
     ]
   },
   {
@@ -73216,7 +73391,8 @@
     "w": "KonoSuba",
     "b": [
       "F",
-      "C"
+      "C",
+      "gd"
     ]
   },
   {
@@ -79500,7 +79676,9 @@
     "b": [
       "F",
       "C",
-      "P"
+      "P",
+      "sd",
+      "Magical Girl"
     ],
     "d": "Original Series"
   },
@@ -79554,7 +79732,9 @@
     "b": [
       "F",
       "C",
-      "P"
+      "P",
+      "tm",
+      "sd"
     ],
     "d": "Original Series"
   },
@@ -83413,13 +83593,23 @@
   },
   {
     "u": 1838,
-    "n": "Galactus",
+    "n": "Galacta",
     "t": 10,
     "i": "30db90e4d2a1af16816ef25c68dfa428.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/1881566",
     "w": "Marvel",
     "b": [
-      "M"
+      "F",
+      "hp",
+      "hz",
+      "im",
+      "pl",
+      "ur",
+      "di",
+      "tm",
+      "th",
+      "gd",
+      "sr"
     ]
   },
   {
@@ -84634,7 +84824,7 @@
       "mu",
       "ps"
     ],
-    "in": "https://i.imgur.com/9b7MUnt.jpg"
+    "in": "https://i.imgur.com/aSZ4Gzk.jpg"
   },
   {
     "u": 9744,
@@ -95339,17 +95529,6 @@
     "d": "Servants – Caster"
   },
   {
-    "u": 13921,
-    "n": "Paris",
-    "t": 5,
-    "i": "",
-    "w": "Nasuverse",
-    "b": [
-      "M"
-    ],
-    "d": "Servants – Archer"
-  },
-  {
     "u": 13922,
     "n": "Paul Bunyan",
     "t": 5,
@@ -95774,7 +95953,8 @@
     "w": "Negima",
     "b": [
       "F",
-      "C"
+      "C",
+      "tc"
     ]
   },
   {
@@ -95991,7 +96171,9 @@
     "w": "Negima",
     "b": [
       "F",
-      "C"
+      "C",
+      "sd",
+      "me"
     ]
   },
   {
@@ -96003,7 +96185,9 @@
     "w": "Negima",
     "b": [
       "F",
-      "C"
+      "C",
+      "sd",
+      "me"
     ]
   },
   {
@@ -96179,7 +96363,8 @@
       "C",
       "en",
       "sn",
-      "sd"
+      "sd",
+      "gn"
     ]
   },
   {
@@ -96261,7 +96446,10 @@
     "w": "Negima",
     "b": [
       "F",
-      "C"
+      "C",
+      "dm",
+      "dh",
+      "sd"
     ]
   },
   {
@@ -96302,7 +96490,9 @@
     "w": "Negima",
     "b": [
       "F",
-      "C"
+      "C",
+      "sd",
+      "pc"
     ]
   },
   {
@@ -96341,7 +96531,9 @@
     "w": "Negima",
     "b": [
       "F",
-      "C"
+      "C",
+      "dh",
+      "sd"
     ]
   },
   {
@@ -96387,7 +96579,9 @@
     "w": "Negima",
     "b": [
       "F",
-      "C"
+      "C",
+      "dm",
+      "sd"
     ]
   },
   {
@@ -97042,7 +97236,11 @@
     "t": 6,
     "i": "lan__sample_c58f38071e0e8833ab40aed08a493b12.jpg",
     "s": "https://cdn.donmai.us/sample/c5/8f/__noihara_himari_omamori_himari_drawn_by_matra_milan__sample-c58f38071e0e8833ab40aed08a493b12.jpg",
-    "w": "Omamori Himari"
+    "w": "Omamori Himari",
+    "b": [
+      "ct",
+      "Yokai"
+    ]
   },
   {
     "u": 5081,
@@ -97058,7 +97256,12 @@
     "t": 5,
     "i": "d75y2w8_8084d55d_651f_4048_91bc_e766cea091ef.png",
     "s": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3925efb9-68c4-4f09-a69f-ea85117d53e5/d75y2w8-8084d55d-651f-4048-91bc-e766cea091ef.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvMzkyNWVmYjktNjhjNC00ZjA5LWE2OWYtZWE4NTExN2Q1M2U1XC9kNzV5Mnc4LTgwODRkNTVkLTY1MWYtNDA0OC05MWJjLWU3NjZjZWEwOTFlZi5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.HxeiRCYgudfW4F7r2HzEH2a-kACJSBUrRFrf5OwQ4YU",
-    "w": "Omamori Himari"
+    "w": "Omamori Himari",
+    "b": [
+      "F",
+      "hl",
+      "dm"
+    ]
   },
   {
     "u": 5083,
@@ -99309,7 +99512,9 @@
     "w": "Overwatch",
     "b": [
       "F",
-      "C"
+      "C",
+      "dc",
+      "hl"
     ],
     "in": "https://pictures.hentai-foundry.com/s/sabudenego/767334/sabudenego-767334-Mercy_Overwatch_2.jpg"
   },
@@ -113663,7 +113868,7 @@
   {
     "u": 1789,
     "n": "Roman Torchwick",
-    "t": 4,
+    "t": 5,
     "i": "db74py1_99bd7d03_6e91_46a6_90f8_1301cb748a79.jpg",
     "s": "https://www.deviantart.com/minacream/art/203-Roman-Torchwick-female-version-677105497",
     "w": "RWBY",
@@ -113679,7 +113884,9 @@
     "s": "https://chan.sankakucomplex.com/post/show/15197378",
     "w": "RWBY",
     "b": [
-      "M"
+      "M",
+      "sn",
+      "tc"
     ]
   },
   {
@@ -113735,7 +113942,8 @@
     "b": [
       "M",
       "ml",
-      "lm"
+      "lm",
+      "sr"
     ]
   },
   {
@@ -113757,7 +113965,13 @@
     "s": "https://chan.sankakucomplex.com/post/show/7001481",
     "w": "RWBY",
     "b": [
-      "M"
+      "M",
+      "bj",
+      "im",
+      "tm",
+      "me",
+      "tc",
+      "rl"
     ]
   },
   {
@@ -115444,7 +115658,8 @@
     "s": "https://chan.sankakucomplex.com/post/show/4308562",
     "w": "Sekirei",
     "b": [
-      "F"
+      "F",
+      "cl"
     ]
   },
   {
@@ -117276,7 +117491,11 @@
     "d": "Servants - Archer",
     "b": [
       "F",
-      "C"
+      "C",
+      "dr",
+      "id",
+      "fm",
+      "vp"
     ]
   },
   {
@@ -118266,7 +118485,11 @@
     "d": "Servants - Lancer",
     "b": [
       "F",
-      "C"
+      "C",
+      "hz",
+      "cl",
+      "dg",
+      "sr"
     ]
   },
   {
@@ -118682,7 +118905,11 @@
     "d": "Servants - Saber",
     "b": [
       "F",
-      "C"
+      "C",
+      "hz",
+      "mt",
+      "ml",
+      "sr"
     ]
   },
   {
@@ -127498,22 +127725,29 @@
     "t": 5,
     "i": "300x300.jpg",
     "s": "https://a2-images.myspacecdn.com/images01/57/03bde8b39a0b5e94213cb3cd24312c8e/300x300.jpg",
-    "w": "Tenchi Muyo",
+    "w": "Tenchi Muyo!",
     "b": [
-      "F"
-    ]
+      "F",
+      "ml",
+      "sc",
+      "th"
+    ],
+    "d": "GXP"
   },
   {
     "u": 5546,
     "n": "Kuramitsu Mihoshi",
     "t": 5,
-    "i": "aki__sample_b614b94e2e062fa73fd1b66ef0abe0a5.jpg",
-    "s": "https://danbooru.donmai.us/posts/310053",
+    "i": "[n]07b12cb7bb902b6e0d43f0311cf3b216.jpeg",
+    "s": "https://img3.gelbooru.com//images/07/b1/07b12cb7bb902b6e0d43f0311cf3b216.jpeg",
     "w": "Tenchi Muyo!",
     "b": [
       "F",
-      "C"
-    ]
+      "C",
+      "lm",
+      "th"
+    ],
+    "in": "https://img3.gelbooru.com//samples/95/c1/sample_95c1004d8ca26d18c368649f9ac2c740.jpg"
   },
   {
     "u": 5549,
@@ -127548,7 +127782,9 @@
     "w": "Tenchi Muyo!",
     "b": [
       "F",
-      "C"
+      "C",
+      "pc",
+      "ps"
     ]
   },
   {
@@ -127573,7 +127809,10 @@
     "b": [
       "F",
       "C",
-      "P"
+      "P",
+      "hz",
+      "dh",
+      "sr"
     ]
   },
   {
@@ -127586,7 +127825,13 @@
     "b": [
       "F",
       "C",
-      "P"
+      "P",
+      "hz",
+      "ml",
+      "th",
+      "pi",
+      "de",
+      "ps"
     ]
   },
   {
@@ -127679,13 +127924,16 @@
     "u": 5550,
     "n": "Masaki Kiriko",
     "t": 5,
-    "i": "2505.gif",
-    "s": "https://cdn-us.anidb.net/images/main/2505.gif",
-    "w": "Tenchi Muyo! (GXP)",
+    "i": "[n]10GXP31P.jpg",
+    "s": "https://static.wikia.nocookie.net/tenchi/images/7/72/10GXP31P.jpg",
+    "w": "Tenchi Muyo!",
     "b": [
       "F",
-      "C"
-    ]
+      "C",
+      "sc",
+      "nj"
+    ],
+    "d": "GXP"
   },
   {
     "u": 5551,
@@ -127703,13 +127951,17 @@
     "u": 5548,
     "n": "Makibi Kiyone",
     "t": 5,
-    "i": "and_1_more__9f0b3ed0b5e0f651a7b852c66ccb300f.jpg",
-    "s": "https://danbooru.donmai.us/posts/78198",
+    "i": "[n]Kiyonecosplay.jpg",
+    "s": "https://static.wikia.nocookie.net/tenchi/images/7/7b/Kiyonecosplay.jpg",
     "w": "Tenchi Muyo! (Universe)",
     "b": [
       "F",
-      "C"
-    ]
+      "C",
+      "st",
+      "cl",
+      "th"
+    ],
+    "in": "https://img3.gelbooru.com//images/30/2d/302d665e46a095e2e5d6e4b30c5b8b8c.jpg"
   },
   {
     "u": 4944,
@@ -134237,7 +134489,11 @@
     "s": "https://chan.sankakucomplex.com/post/show/1601247",
     "w": "To Aru verse",
     "b": [
-      "F"
+      "F",
+      "hz",
+      "ur",
+      "an",
+      "sd"
     ],
     "d": "AC other"
   },
@@ -134261,7 +134517,8 @@
     "s": "https://chan.sankakucomplex.com/post/show/4950530",
     "w": "To Aru verse",
     "b": [
-      "F"
+      "F",
+      "sd"
     ],
     "d": "AC students"
   },
@@ -134273,7 +134530,9 @@
     "s": "https://chan.sankakucomplex.com/post/show/5825940",
     "w": "To Aru verse",
     "b": [
-      "F"
+      "F",
+      "id",
+      "sd"
     ],
     "d": "AC students"
   },
@@ -134285,7 +134544,8 @@
     "s": "https://chan.sankakucomplex.com/post/show/5449997",
     "w": "To Aru verse",
     "b": [
-      "F"
+      "F",
+      "sd"
     ],
     "d": "AC students"
   },
@@ -134345,7 +134605,8 @@
     "s": "https://chan.sankakucomplex.com/post/show/709021",
     "w": "To Aru verse",
     "b": [
-      "F"
+      "F",
+      "sd"
     ],
     "d": "AC students"
   },
@@ -134419,7 +134680,10 @@
     "s": "https://chan.sankakucomplex.com/post/show/3400669",
     "w": "To Aru verse",
     "b": [
-      "F"
+      "F",
+      "mp",
+      "sd",
+      "ps"
     ],
     "d": "AC students"
   },
@@ -134635,7 +134899,9 @@
     "s": "https://chan.sankakucomplex.com/post/show/7538716",
     "w": "To Aru verse",
     "b": [
-      "F"
+      "F",
+      "me",
+      "nn"
     ],
     "d": "Magic Side"
   },
@@ -134684,7 +134950,10 @@
     "w": "To Aru verse",
     "b": [
       "F",
-      "P"
+      "P",
+      "im",
+      "gd",
+      "wh"
     ],
     "d": "Magic Side"
   },
@@ -145646,6 +145915,9 @@
     "b": [
       "F",
       "C",
+      "st",
+      "mp",
+      "sd",
       "me"
     ]
   },
@@ -145679,8 +145951,8 @@
     "u": 6226,
     "n": "Sheffield",
     "t": 5,
-    "i": "",
-    "s": "https://imgur.com/3okkyqK",
+    "i": "https://i.imgur.com/3okkyqKm.jpeg",
+    "s": "https://i.imgur.com/3okkyqK.jpeg",
     "w": "Zero no Tsukaima",
     "b": [
       "F",
@@ -145711,7 +145983,8 @@
       "F",
       "C",
       "cl",
-      "me"
+      "me",
+      "pc"
     ]
   },
   {

@@ -41,7 +41,7 @@ import { usePlayStore } from '~/store/play'
 import { useStore } from '~/store/store'
 
 const { trHistory, loan } = usePlayStore()
-const { flags, fee, csr, creditLimit, underLoan } = useStore()
+const { flags, fee, csr, creditLimit, underLoan, budget } = useStore()
 
 const loanAmount = ref(5)
 const payAmount = ref(0)
@@ -55,8 +55,10 @@ function takeLoan() {
 }
 
 function payLoan() {
-  fee.value += payAmount.value
-  loan.value.owed -= payAmount.value
+  if (budget.value >= payAmount.value) {
+    fee.value += payAmount.value
+    loan.value.owed -= payAmount.value
+  }
 }
 
 </script>

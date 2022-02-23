@@ -1,5 +1,5 @@
 import { isArray } from 'lodash-es'
-import { DBCharacter } from 'global'
+import { DBCharacter, DBWorld } from 'global'
 import { DLCgenericPerks, DLChomes, DLCperks, DLCtalents, DLCheritages, DLClureExpansions, DLCbindings, DLClures, DLCotherControls, DLCridePerks } from './DLCs'
 import { rides } from './rides'
 import { homes, demiplane, dungeon } from './demdun'
@@ -83,7 +83,12 @@ export const rulesList = [
   { title: 'specific', title2: 'Setting Specific Rules' },
 ]
 
-export const waifusThatHasPerk = [...waifu_perks, ...DLCwaifu_perks].reduce((a, x) => (isArray(x.uid) ? x.uid.forEach(u => a[u] = x.title) : a[x.uid] = x.title, a), {})
+export const waifusThatHasPerk = [...waifu_perks, ...DLCwaifu_perks]
+  .reduce((a, x) => {
+    if (!x.uid) return a
+    isArray(x.uid) ? x.uid.forEach(u => a[u] = x.title) : a[x.uid] = x.title
+    return a
+  }, {} as Record<number, string>)
 
 export const waifuTags = {
   F: { tag: 'Female', short: 'F', effect: '', desc: '', color: 'bg-pink-500' },
@@ -158,18 +163,23 @@ export const waifuTags = {
   rl: { tag: 'Ruler', short: 'rl', effect: 'rule over a country or region or even just a tribe', desc: '', color: 'bg-[#FFD700] text-black' },
 
   U: { tag: 'By User', short: 'U', effect: '', desc: 'Characters that were added to Interactive by users, applied automatically to all submitted characters', color: 'bg-warm-gray-600' },
-}
+} as const
 
-export const waifuTagsByTag = Object.values(waifuTags).reduce((a, x) => (a[x.tag] = x, a), {})
+type Keys = keyof typeof waifuTags
+type Names = typeof waifuTags[Keys]['tag']
 
-function addTitles(res: any, perks: any) {
-  perks.forEach(x => res[x.title] = x)
+export const waifuTagsByTag = Object.values(waifuTags).reduce(
+  (a, x) => { a[x.tag] = x; return a }, {} as Record<Names, typeof waifuTags[Keys]>,
+)
+
+function addTitles<T>(res: any, perks: T[]) {
+  perks.forEach((x: T) => res[x.title] = x)
 }
 
 export const ALL_PERK_TITLES = computed(() => {
   const result = {}
   const all = [intensity, bindings, lures, lureExpansions, otherControls, heritages, homes, demiplane, dungeon, defenses, talents, perks, genericPerks, waifu_perks, DLCperks, DLChomes, DLCgenericPerks, DLCheritages, DLCtalents, DLClureExpansions, DLCbindings, DLClures, DLCotherControls, DLCridePerks]
-  all.forEach(p => addTitles(result, p))
+  all.forEach(p => addTitles<typeof p[0]>(result, p))
   return result
 })
 
@@ -182,7 +192,7 @@ export const LINKS = computed(() => {
     'bindings/lures': [...lures, ...lureExpansions],
     'bindings/controls': [...otherControls],
     'heritage': heritages,
-    'talents/ride': [rides, ridePerksFull, DLCridePerks],
+    'talents/ride': [...rides, ...ridePerksFull, ...DLCridePerks],
     'talents/home': [...homes, ...demiplane, ...dungeon, ...DLChomes],
     'talents/defense': defenses,
     'talents/talent': [...talents, ...DLCtalents],
@@ -250,8 +260,8 @@ export const getAllCharsObject = async() => {
   return allCharsObject
 }
 
-const worlds = ref([])
-const subWorlds = ref([])
+const worlds = ref<DBWorld[]>([])
+const subWorlds = ref<DBWorld[]>([])
 
 async function getWorlds() {
   worlds.value = (await import('~/data/worlds.json')).default
@@ -275,15 +285,17 @@ export const allWorlds = computed(() => {
 export const allWorldsNoCondition = computed(() => {
   const worlds: any[] = []
 
-  const addConditions = (x) => {
-    x.condition.forEach(c => worlds.push({ worldName: x.worldName, condition: c.name, rating: c.rating }))
+  const addConditions = (x: DBWorld) => {
+    if (x.condition)
+      x.condition.forEach(c => worlds.push({ worldName: x.worldName, condition: c.name, rating: c.rating }))
   }
 
   allWorlds.value.forEach((x) => {
     if (isArray(x.condition))
       addConditions(x)
 
-    delete x.condition
+    // delete x.condition
+    x.condition = undefined
     worlds.push(x)
   })
   return worlds

@@ -11,6 +11,17 @@ interface DBCharacter {
   b?: string[]
 }
 
+interface DBWorld {
+  worldName: string
+  rating: number
+  additional?: string
+  condition?: {
+    name: string
+    rating: number
+  }[]
+  image?: string
+}
+
 interface PerkFull {
   uid: string
   title: string
@@ -40,5 +51,6 @@ declare global {
 }
 export {
   DBCharacter,
+  DBWorld,
   PerkFull,
 }

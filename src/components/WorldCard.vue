@@ -28,13 +28,11 @@
         Budget: <span class="text-green-200 font-medium">{{ WORLD_RATINGS[world.rating - 1]?.budget || 'None' }}</span>
       </div>
     </div>
-    <div v-if="world.condition" class="mx-2 flex gap-2">
+    <div v-if="world.condition && isArray(world.condition)" class="mx-2 flex gap-2">
       <span class="text-gray-200">Condition:</span>
       <select
-        id="condition"
         name="condition"
         class="text-gray-800 flex-grow min-w-0 rounded"
-        :value="world.condition && world.condition.length === 1 && world.rating === world.condition[0].rating ? world.condition[0].name : 'No condition'"
         @change="changeCondition"
         @click.stop
       >
@@ -46,6 +44,9 @@
         </option>
       </select>
     </div>
+    <div v-else-if="world.condition" class="mx-2">
+      {{ world.condition }}
+    </div>
     <Foldable v-if="world.additional" title="Setting Specific Rules" class="px-2" @click.stop>
       <Desc :desc="world.additional" class="p-1 rounded bg-black bg-opacity-20" />
     </Foldable>
@@ -53,7 +54,7 @@
 </template>
 
 <script lang='ts' setup>
-import { findIndex } from 'lodash-es'
+import { findIndex, isArray } from 'lodash-es'
 import type { PropType } from 'vue'
 import { WORLD_COLORS, WORLD_RATINGS } from '~/data/constants'
 import { lazyLoadSingleImg } from '~/logic'
@@ -83,24 +84,28 @@ const { baseBudget, startingWorld, localUserWorlds, flags, settings } = useStore
 const pickAbleAfter = computed(() => props.pickAble && !flags.value.chargen ? false : props.pickAble)
 
 const condition = reactive({
-  name: undefined,
+  name: 'No condition',
   rating: 0,
 })
+
+// const startCond = props.world.condition && props.world.condition.length === 1 && props.world.rating === props.world.condition[0].rating ? props.world.condition[0].name : 'No condition'
 
 const baseDR = props.world.rating
 
 const worldImg = ref<HTMLImageElement | null>(null)
 
 function pickWorld(world: World) {
-  if (startingWorld.value.worldName === world.worldName && startingWorld.value.condition === condition.name) {
+  if (startingWorld.value.worldName === world.worldName
+  && (startingWorld.value.condition === condition.name
+  || (condition.name === 'No condition' && !startingWorld.value.condition))) {
     startingWorld.value = { worldName: 'Current world', rating: 2 }
     baseBudget.value = 55
   }
   else {
     const rating = condition.rating || world.rating
     startingWorld.value = { worldName: world.worldName, rating }
-    if (condition.name) startingWorld.value.condition = condition.name
-    baseBudget.value = WORLD_RATINGS[world.rating - 1]?.budget || 0
+    if (condition.name && condition.name !== 'No condition') startingWorld.value.condition = condition.name
+    baseBudget.value = WORLD_RATINGS[rating - 1]?.budget || 0
   }
 }
 
@@ -119,7 +124,7 @@ function changeCondition(event: any) {
   }
   else {
     props.world.rating = baseDR
-    condition.name = undefined
+    condition.name = 'No condition'
   }
 }
 

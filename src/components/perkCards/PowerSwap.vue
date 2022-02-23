@@ -25,22 +25,30 @@
                 {{ startingOrigin.character || 'You' }}
               </h3>
 
+              <CharacterInput
+                v-model="swapPower[startingOrigin.character || 'You'].name"
+                idd="idyou"
+                placeholder="Character name"
+                class="flex-grow"
+                error-message=""
+                @updateTier="swapPower[startingOrigin.character || 'You'].swap = $event"
+              />
               <div class="flex gap-2">
-                <CharacterInput
-                  v-model="swapPower[startingOrigin.character || 'You'].name"
-                  idd="idyou"
-                  placeholder="Character name"
-                  class="flex-grow"
-                  error-message=""
-                  @updateTier="swapPower[startingOrigin.character || 'You'].tier = $event"
-                />
                 <NumberInput
-                  v-model="swapPower[startingOrigin.character || 'You'].tier"
+                  :model-value="startingOrigin.tier || 1"
                   :min="0"
                   :max="10"
-                  placeholder="Tier"
+                  label="Tier"
+                  class="whitespace-nowrap"
                 />
-                <Button icon="ant-design:clear-outlined" bg-color="bg-orange-500" label="" class="self-center" @click="() => swapPower[startingOrigin.character || 'You'] = undefined" />
+                <NumberInput
+                  v-model="swapPower[startingOrigin.character || 'You'].swap"
+                  :min="0"
+                  :max="10"
+                  label="Swap to"
+                  class="whitespace-nowrap"
+                />
+                <Button icon="ant-design:clear-outlined" bg-color="bg-orange-500" label="" class="self-center" @click="() => swapPower[startingOrigin.character || 'You'].swap = 0" />
               </div>
             </div>
           </div>
@@ -56,27 +64,40 @@
               class="rounded object-cover w-1/4 object-top"
               @load="setHeight"
             >
-            <div class="flex flex-col gap-2 flex-grow">
+            <div class="flex flex-col gap-2">
               <h3 class="flex gap-2 text-sm">
                 {{ companion.name }}
                 <span class="text-gray-500">({{ companion.world }})</span>
               </h3>
+              <CharacterInput
+                v-model="swapPower[companion.name].name"
+                :idd="'id'+companion.uid"
+                placeholder="Character name"
+                class="flex-grow"
+                error-message=""
+                @updateTier="swapPower[companion.name].swap = $event"
+              />
               <div class="flex gap-2">
-                <CharacterInput
-                  v-model="swapPower[companion.name].name"
-                  :idd="'id'+companion.uid"
-                  placeholder="Character name"
-                  class="flex-grow"
-                  error-message=""
-                  @updateTier="swapPower[companion.name].tier = $event"
-                />
                 <NumberInput
-                  v-model="swapPower[companion.name].name"
+                  :model-value="companion.tier"
                   :min="0"
                   :max="10"
                   placeholder="Tier"
                 />
-                <Button icon="ant-design:clear-outlined" bg-color="bg-orange-500" label="" class="self-center" @click="() => swapPower[companion.name] = undefined" />
+                <NumberInput
+                  v-model="swapPower[companion.name].swap"
+                  :min="0"
+                  :max="10"
+                  placeholder="Tier"
+                />
+                <Button
+                  icon="ant-design:clear-outlined"
+                  bg-color="bg-orange-500"
+                  label=""
+                  title="clear"
+                  class="self-center"
+                  @click="() => swapPower[companion.name].swap = 0"
+                />
               </div>
             </div>
           </div>
@@ -91,7 +112,7 @@
 
 import { DBCharacter } from 'global'
 
-import { getAllCharsObject } from '~/data/constants'
+import { CHAR_COSTS, getAllCharsObject } from '~/data/constants'
 import { lazyLoadImg, imageLink } from '~/logic'
 import { useStore } from '~/store/store'
 
@@ -127,17 +148,19 @@ const emit = defineEmits(['pickPerk'])
 interface CharPower {
   name: string
   tier: number
+  swap: number
+  cap: boolean
 }
 
 const swapPower = reactive<Record<string, CharPower>>(companionsWithoutSold.value.reduce((a, x) => {
-  a[x.name] = { name: '', tier: 0 }
+  a[x.name] = { name: '', tier: x.tier, swap: 0, cap: x.method === 'capture' }
   return a
 }, {}) || {})
 
-swapPower[startingOrigin.value.character || 'You'] = { name: '', tier: 0 }
+swapPower[startingOrigin.value.character || 'You'] = { name: '', tier: startingOrigin.value.tier || 1, swap: 0 }
 
 props.savedPerk?.complex?.forEach((x) => {
-  swapPower[x.target] = { name: x.flavor, tier: x.tier }
+  swapPower[x.target].name = x.flavor
 })
 
 const showBuyPerk = ref(false)
@@ -146,12 +169,15 @@ const charList = ref<HTMLElement | null>(null)
 const allChars = ref<Record<number, DBCharacter>>({})
 getAllCharsObject().then(chars => allChars.value = chars)
 
-const fullCount = computed(() => {
-  return Object.values(swapPower).reduce((a, x) => a += x.length, 0)
-})
-
 const displayedCost = computed(() => {
-  return fullCount.value * props.perk.cost
+  return Object.values(swapPower).reduce((a, x) => {
+    // console.log(Math.max(NaN, 0) || 0)
+    if (x.cap)
+      a += Math.max((CHAR_COSTS[x.swap - 1] - CHAR_COSTS[x.tier - 1]) || 0, 0)
+    else
+      a += (CHAR_COSTS[x.swap - 1] - CHAR_COSTS[x.tier - 1]) || 0
+    return a
+  }, 0)
 })
 
 function sendPerk() {
@@ -159,12 +185,12 @@ function sendPerk() {
     title: props.perk.title,
   }
 
-  obj.complex = Object.entries(swapPower).reduce((a, x) => {
-    a.push({ target: x[0], flavor: x[1] })
+  obj.complex = Object.entries(swapPower).filter(x => x[1].swap !== 0).reduce((a, x) => {
+    a.push({ target: x[0], flavor: x[1].name })
     return a
   }, [] as {target: string; flavor: string}[])
 
-  obj.count = fullCount.value
+  obj.count = obj.complex.length
   obj.cost = displayedCost.value
 
   emit('pickPerk', props.perk, obj)

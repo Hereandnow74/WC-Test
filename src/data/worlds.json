@@ -161,11 +161,7 @@
     "worldName": "Revue Starlight",
     "additional": "All the world’s a stage. The girls of this series can transform and use their stage magic anywhere. Everything besides their weapons and costumes is literally theater props, but even those can be useful in the right situations."
   },
-  {
-    "rating": 3,
-    "worldName": "Stargate",
-    "condition": [{"name": "SG1/SGA modern Earth", "rating": 3}]
-  },
+  {"worldName":"Stargate","rating":3,"condition":[{"name":"SG1/SGA modern Earth","rating":3},{"rating":4,"name":"Goa'uld controlled World"},{"name":"Pegasus Galaxy, Wraith Asleep","rating":4},{"rating":6,"name":"Pegasus Galaxy, Wraith Awake"},{"rating":7,"name":"Ori Aware"}]},
   {
     "rating": 3,
     "worldName": "Sekirei",
@@ -244,12 +240,7 @@
     "worldName": "Those Who Hunt Elves",
     "additional": "Ritsuko has her cat-possessed tank Mihke as a familiar."
   },
-  {
-    "rating": 3,
-    "q": true,
-    "worldName": "Overwatch",
-    "additional": "D.Va has her personal mech. Ashe has B.O.B. as a familiar. Mei has Snowball as a familiar."
-  },
+  {"worldName":"Overwatch","rating":3,"q": true,"additional":"D.Va has her personal mech. Ashe has B.O.B. as a familiar. Mei has Snowball as a familiar.","condition":[{"name":"Omnic crisis ","rating":5}]},
   {
     "rating": 3,
     "q": true,

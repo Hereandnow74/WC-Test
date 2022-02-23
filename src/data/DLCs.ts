@@ -441,7 +441,10 @@ DLCtalents.push({
   dlclink: 'https://docs.google.com/document/d/1j9emHb4IWvOTnp13RASTAuINAFuKDMSSQyQ-7ta9sjA/edit#',
   title: 'Inculcation Talent',
   cost: 10,
-  desc: `You remold. You can progressively change other people's habits, preferences, reflexes, and even more fundamental parts of who they are given time. You do so through social pressure and psychological tricks, even against their will or without their awareness, but supernatural power and the ability to blatantly reward or punish speeds your efforts tremendously. You could use this to help overcome addictions, remove bad habits, become a life coach, or simply be a world-class slave trainer..
+  desc: `You remold. You can progressively change other people's habits, preferences, reflexes, and even more fundamental parts of who they are given time. You do so through social pressure and psychological tricks, even against their will or without their awareness, but supernatural power and the ability to blatantly reward or punish speeds your efforts tremendously. You could use this to help overcome addictions, remove bad habits, become a life coach, or simply be a world-class slave trainer.
+  <p>
+  Given enough time, and a victim who cannot or does not escape your regular interactions, you can continue to gain leverage over their psyche until even an iron-clad will bends. However, this would take years of casual daily interaction... or days or weeks of your entire attention while they were utterly at your mercy.
+  </p>
   `,
   whitelist: ['Communication Talent'],
 })

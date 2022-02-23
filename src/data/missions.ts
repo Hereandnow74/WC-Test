@@ -493,4 +493,16 @@ export const newMissions = [
     title: 'Ordinary Wizarding Level ',
     source: 'https://harrypotter.fandom.com/wiki/Ordinary_Wizarding_Level',
   },
+  {
+    conditions: [{ value: 'Must start with yourself and companions at the same tier as or lower than the Diablo 3 heroes.' }, { value: 'Can be completed with multiple timelines and duplicates if necessary for personality, death, etc.' }, { value: '' }],
+    objectives: [{ value: 'Use any technique such as \'Third Generation Symbiote\' etc. to merge with all of your acquired quest targets for at least a year.', reward: 'Immediately ascend to T11 as you have become like unto Anu before they split themselves.' }, { value: 'Complete the quest with at least \'X\' Diablo hero/s greatly involved.', reward: 'Any one discounted defense level per hero involved. Or 50 points per hero, max 1000.' }, { value: 'Enter Sanctuary far enough back to capture the Worldstone, and bring it into your Demiplane, then purify it by any means.', reward: 'Your Demiplane can now expand automatically without limit, gain one free purchase of Sweet Home Expansion per 5 worlds you complete. If you are T11 the 25 purchase cap is removed and new celectial bodies will appear in your solar system/universe naturally depending on size.' }],
+    author: 'dikdik1238',
+    reward: 'Heaven and Hell merge with your Demiplane however you wish them to. They can act as afterlives to you and your companions, and anyone who has prayed to you or cursed your name.',
+    loca: 'Diablo',
+    title: 'The new Dawn',
+    scope: 'Grand',
+    source: '',
+    desc: 'Capture and unite at least 5 of the Great Evils and 5 of the Archangels under your single banner, and have them be at least grudgingly accepting of this. They absolutely despise each-other, obviously; getting them to live together will take massive charisma, mind manipulation, possibly dog training experience, and greater willpower than a shonen protagonist. I recommend several purchases of anthropize as well. Good Luck.',
+    image: '',
+  },
 ]

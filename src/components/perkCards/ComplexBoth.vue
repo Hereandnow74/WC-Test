@@ -37,7 +37,7 @@
                 <CharacterInput
                   v-else
                   v-model="powers[startingOrigin.character || 'You'][i]"
-                  idd="idyou"
+                  :idd="'idyou' + i"
                   placeholder="Character name"
                   class="flex-grow"
                   error-message=""
@@ -52,7 +52,7 @@
             class="flex gap-2 w-full min-h-0 rounded bg-gray-300 dark:bg-gray-800 p-1"
           >
             <img
-              v-if="allChars[companion.uid].i && !settings.allImg"
+              v-if="allChars[companion.uid] && !settings.allImg"
               :data-src="imageLink(allChars[companion.uid].i, companion.uid)"
               :alt="companion.name"
               class="rounded object-cover w-1/4 object-top"

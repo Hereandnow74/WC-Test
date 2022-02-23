@@ -5,6 +5,25 @@
     </h2>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
+        23 February 2022
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>~200 new user submitted characters</li>
+        <li>Bugfixes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
+        20 February 2022
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>11 new user submitted worlds.</li>
+        <li>Power Swap added</li>
+        <li>Bugfixes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
         19 February 2022
       </h3>
       <ul class="list-decimal list-inside">
