@@ -107,7 +107,6 @@
 
 <script lang='ts' setup>
 import { findIndex } from 'lodash-es'
-import NumberInput from './basic/NumberInput.vue'
 import { useStore } from '~/store/store'
 import { filterObject, lazyLoadSingleImg } from '~/logic'
 

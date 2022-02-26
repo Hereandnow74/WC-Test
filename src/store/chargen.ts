@@ -7,6 +7,7 @@ export interface World {
 }
 
 export interface Character {
+  uid: number
   name: string
   world: string
   tier: number

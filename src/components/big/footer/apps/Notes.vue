@@ -17,7 +17,6 @@
 
 <script lang="ts" setup>
 import { toggleAppMode } from '~/logic'
-import AnythingInput from '~/components/small/AnythingInput.vue'
 
 const notes = useStorage<Record<string, string>>('notes', {})
 const note = ref('note1')

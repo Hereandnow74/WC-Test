@@ -75,9 +75,9 @@ import { homes, homeDesc, demdunDesc, laws, dungeon, demiplane, devotion } from 
 import { chooseHome, homeAvailable } from '~/logic'
 import { useTooltips } from '~/logic/misc'
 import { useStore } from '~/store/store'
-import GenericPerkCard from '~/components/perkCards/GenericPerkCard.vue'
-import PerkCard from '~/components/PerkCard.vue'
-import DemDun from '~/components/perkCards/DemDun.vue'
+import DemDun from '~/components/cards/perkCards/DemDun.vue'
+import GenericPerkCard from '~/components/cards/perkCards/GenericPerkCard.vue'
+import PerkCard from '~/components/cards/PerkCard.vue'
 
 const { homePerks, settings } = useStore()
 

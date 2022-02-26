@@ -28,7 +28,7 @@ const { homePerks, appName } = useStore()
 const appsList = [
   { icon: 'bi:globe2', name: 'Exit Stage Left', component: 'ExitStage', color: '#5480fc' },
   { icon: 'cil:cash', name: 'Cash Still Rules / Loans', component: 'CashRules', color: '#5a933d' },
-  { icon: 'fluent:book-question-mark-24-regular', name: 'Missions', component: 'Missions', color: '#e3992b' },
+  // { icon: 'fluent:book-question-mark-24-regular', name: 'Missions', component: 'Missions', color: '#e3992b' },
   { icon: 'la:dice-d20', name: 'Random Build', component: 'RandomBuild', color: '#c76eff' },
   { icon: 'fa-solid:dice', name: 'Dice Machine', component: 'DiceMachine', color: 'white' },
   { icon: 'fluent:globe-search-24-regular', name: 'Random World', component: 'RandomWorld', color: '#ff8888' },
@@ -39,6 +39,7 @@ const appsList = [
   { icon: 'clarity:note-edit-line', name: 'Notes', component: 'Notes', color: '#e9d385' },
   { icon: 'bx:bx-calculator', name: 'Bulk Capture Calculator', component: 'BulkCapture', color: '#c1c1c1' },
   { icon: 'tabler:shopping-cart-discount', name: 'Discounts', component: 'Discounts', color: '#5a933d' },
+  { icon: 'emojione:kiss-mark', name: 'Kiss Kill Marry game', component: 'KissKillMarry', color: '#5a933d' },
 ]
 
 const apps = computed(() => {
@@ -53,6 +54,7 @@ const appComponents = {
   ExitStage: defineAsyncComponent(() => import('./apps/ExitStage.vue')),
   CashRules: defineAsyncComponent(() => import('./apps/CashRules.vue')),
   Missions: defineAsyncComponent(() => import('./apps/Missions.vue')),
+  KissKillMarry: defineAsyncComponent(() => import('./apps/KissKillMarry.vue')),
   RandomBuild: defineAsyncComponent(() => import('./apps/RandomBuild.vue')),
   DiceMachine: defineAsyncComponent(() => import('./apps/DiceMachine.vue')),
   RandomWorld: defineAsyncComponent(() => import('./apps/RandomWorld.vue')),
@@ -65,7 +67,7 @@ const appComponents = {
   Discounts: defineAsyncComponent(() => import('./apps/Discounts.vue')),
 }
 
-const appComponent = computed(() => appComponents[appName.value])
+const appComponent = computed(() => appComponents[appName.value as keyof typeof appComponents])
 
 function pickApp(app: any) {
   toggleAppMode()

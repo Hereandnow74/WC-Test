@@ -10,6 +10,10 @@ export interface WaifuPerk {
   cost?: any
   desc: string
   requires?: string
+  costVariants?: number[]
+  whitelist?: string[]
+  dlc?: string
+  dlcLink?: string
   uid?: number | number[]
 }
 

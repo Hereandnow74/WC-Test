@@ -59,6 +59,7 @@
           <span class="bg-gray-200 dark:bg-gray-700  px-1 rounded">KatzSmile</span>
           <span class="bg-gray-200 dark:bg-gray-700  px-1 rounded">Bryce C.</span>
           <span class="bg-gray-200 dark:bg-gray-700  px-1 rounded">TaiGambol</span>
+          <span class="bg-gray-200 dark:bg-gray-700  px-1 rounded">Cole</span>
         </div>
       </div>
     </div>

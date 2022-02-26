@@ -20,13 +20,18 @@
 </template>
 
 <script lang="ts" setup>
+import { Challenge } from 'global'
 import { findIndex } from 'lodash-es'
 import { challenges, challengesDesc } from '~/data/challenges'
 import { useChallenges } from '~/store/challenges'
 
 const { activeChallenges } = useChallenges()
 
-const allChallenges = computed(() => activeChallenges.value.reduce((a, x) => (a[x.title] = x, a), {}))
+const allChallenges = computed(() => activeChallenges.value
+  .reduce((a, x) => {
+    a[x.title] = x
+    return a
+  }, {} as Record<string, Challenge>))
 
 function challengeAvailable(challenge: any) {
   return true

@@ -27,7 +27,6 @@ import { useTooltips } from '~/logic/misc'
 import { lureAvailable, chooseOther } from '~/logic'
 import { useStore } from '~/store/store'
 import { DLCotherControls } from '~/data/DLCs'
-import PerkCard from '~/components/PerkCard.vue'
 
 const { otherPerks, settings } = useStore()
 

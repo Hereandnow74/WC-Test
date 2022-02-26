@@ -28,11 +28,11 @@ import { talents, talentsDesc } from '~/data/talents'
 import { useTooltips } from '~/logic/misc'
 import { useStore } from '~/store/store'
 
-import PerkCard from '~/components/PerkCard.vue'
+import PerkCard from '~/components/cards/PerkCard.vue'
 import { chooseTalent, talentAvailable } from '~/logic'
 import { DLCtalents } from '~/data/DLCs'
-import ComplexBoth from '~/components/perkCards/ComplexBoth.vue'
-import TS2Vue from '~/components/perkCards/TS2.vue'
+import ComplexBoth from '~/components/cards/perkCards/ComplexBoth.vue'
+import TS2Vue from '~/components/cards/perkCards/TS2.vue'
 const { allEffects, talentPerks, settings } = useStore()
 
 const allTalents = computed(() => {

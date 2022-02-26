@@ -47,10 +47,33 @@ interface PerkFull {
   chargen?: boolean
 }
 
+interface Challenge {
+  title: string
+  cost: number
+}
+
+interface Mission {
+  title: string
+  author: string
+  source: string
+  desc: string
+  loca: string
+  scope: string
+  conditions: { value: string }[]
+  objectives: {
+    value: string
+    reward: string
+  }[]
+  reward: string
+  image: string
+}
+
 declare global {
 }
 export {
   DBCharacter,
   DBWorld,
   PerkFull,
+  Challenge,
+  Mission,
 }

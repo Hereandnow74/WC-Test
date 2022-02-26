@@ -1,61 +1,50 @@
 <template>
   <div class="rounded max-w-screen-md lg:pl-2 p-2">
     <h3 class="text-xl text-center">
-      Missons
+      Missions
     </h3>
+    <div class="flex gap-2 justify-center flex-wrap py-2">
+      <div>
+        <Select v-model="author" :options="authorOptions" label="Author">
+          <option value="Any">
+            Any
+          </option>
+        </Select>
+      </div>
+      <div>
+        <Select v-model="world" :options="worldOptions" label="World" class="max-w-68">
+          <option value="Any">
+            Any
+          </option>
+        </Select>
+      </div>
+      <div>
+        <Select v-model="scope" :options="scopeOptions" label="Scope">
+          <option value="Any">
+            Any
+          </option>
+        </Select>
+      </div>
+    </div>
     <div class="flex flex-col gap-4 pb-8">
-      <div v-for="mission in missions" :key="mission.title" class="bg-yellow-100 dark:bg-gray-900 rounded p-2">
-        <h4 class="text-lg">
-          {{ mission.title }} by {{ mission.author }}
-        </h4>
-        <div class="flex justify-between">
-          <div>Location: {{ mission.loca }}</div>
-          <div>Scope: {{ mission.scope }}</div>
-        </div>
-        <Desc :desc="mission.desc" />
-        <div v-if="mission.requirements.length">
-          Requirements:
-          <div v-for="req in mission.requirements" :key="req.value" class="pl-4">
-            {{ req.value }}
-          </div>
-        </div>
-        <div v-if="mission.rewards.length">
-          Rewards:
-          <div v-for="rew in mission.rewards" :key="rew.value" class="pl-4">
-            {{ rew.value }}
-          </div>
-        </div>
-      </div>
-      <div v-for="mission in newMissions" :key="mission.title" class="bg-blue-100 dark:bg-blue-900 rounded p-2">
-        <h4 class="text-lg">
-          {{ mission.title }} by {{ mission.author }}
-        </h4>
-        <div class="flex justify-between">
-          <div>Location: {{ mission.loca }}</div>
-          <div>Scope: {{ mission.scope }}</div>
-        </div>
-        <Desc :desc="mission.desc" />
-        <div v-if="mission.conditions.length">
-          Conditions:
-          <div v-for="req in mission.conditions" :key="req.value" class="pl-4">
-            {{ req.value }}
-          </div>
-        </div>
-        <div v-if="mission.objectives.length" class="flex flex-col gap-1">
-          Additional objectives:
-          <div v-for="rew in mission.objectives" :key="rew.value" class="pl-4 bg-blue-200 dark:bg-blue-gray-700">
-            <div>{{ rew.value }}</div>
-            <div class="pl-4">
-              Reward: {{ rew.reward }}
-            </div>
-          </div>
-        </div>
-      </div>
+      <MissionCard v-for="mission in filteredMissions" :key="mission.title" :mission="mission" />
     </div>
     <div class="h-8"></div>
   </div>
 </template>
 
 <script lang="ts" setup>
-import { missions, newMissions } from '~/data/missions'
+import { groupBy } from 'lodash-es'
+import { missions } from '~/data/missions'
+
+const authorOptions = Object.keys(groupBy(missions, 'author'))
+const worldOptions = Object.keys(groupBy(missions, 'loca'))
+const scopeOptions = ['Quick', 'Standard', 'Grand']
+
+const author = ref('Any')
+const world = ref('Any')
+const scope = ref('Any')
+
+const filteredMissions = computed(() => missions.filter(mission => (mission.author === author.value || author.value === 'Any') && (mission.loca === world.value || world.value === 'Any') && (mission.scope === scope.value || scope.value === 'Any')))
+
 </script>

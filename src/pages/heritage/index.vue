@@ -95,7 +95,6 @@ import Select from '~/components/basic/Select.vue'
 import { chooseHeritage, heritageAvailable } from '~/logic'
 import { heritageTiers } from '~/data/constants'
 import { DLCheritages } from '~/data/DLCs'
-import AnythingInput from '~/components/small/AnythingInput.vue'
 
 const { heritage, flags, settings } = useStore()
 

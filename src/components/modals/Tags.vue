@@ -12,17 +12,19 @@
       <div
         v-for="tag in Object.values(waifuTags).sort((a, b) => a.tag.localeCompare(b.tag))"
         :key="tag.tag"
-        class="rounded-md cursor-pointer flex gap-1 p-0.5 select-none"
+        class="rounded-md cursor-pointer flex items-center gap-1 select-none p-0.5 px-1"
         :class="tag.color"
         :title="tag.desc ? tag.desc : ''"
         @click="tagToggles[tag.short] = threeToggle(tagToggles[tag.short])"
       >
         <div
-          class="rounded p-0.5"
-          :class="tagToggles[tag.short] === 1 ? tag.color : tagToggles[tag.short] === 0 ? 'bg-gray-400 text-gray-700' : 'bg-red-500 text-gray-400' "
+          class="rounded flex gap-1"
         >
           {{ tag.tag }}
         </div>
+        <!-- <span v-if="tagToggles[tag.short] !== 0" :key="tagToggles[tag.short]" class="iconify" :data-icon="tagToggles[tag.short] === 1 ? 'akar-icons:circle-check' : 'ant-design:stop-outlined'"></span> -->
+        <akar-icons:circle-check v-if="tagToggles[tag.short] === 1" />
+        <jam:stop-sign v-if="tagToggles[tag.short] === -1" />
       </div>
     </div>
   </Modal>

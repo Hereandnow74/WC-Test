@@ -8,6 +8,7 @@
         <Input v-model="author" class="w-1/3" placeholder="Author" :error-message="errors.author" />
         <Input v-model="source" class="flex-grow" placeholder="Source link" :error-message="errors.source" />
       </div>
+      <Input v-model.number="budget" class="" placeholder="Estimated required budget to qualify for this mission" :error-message="errors.budget" />
       <div class="flex gap-2">
         <Input v-model="loca" class="flex-grow" placeholder="World/Location" :error-message="errors.loca" />
         <AnythingInput v-model="scope" class="w-28" placeholder="Scope" :list="scopes" :error-message="errors.scope" />
@@ -76,6 +77,7 @@
       </div>
       <div class="flex gap-2">
         <Button :disabled="!buttonActive" label="Send" class="flex-grow" bg-color="bg-red-700" @click="buttonActive ? addPerk() : errorMessage = 'Wait 30s before submitting again.'" />
+        <Button label="Copy" class="flex-grow" bg-color="bg-red-700" @click="copyText()" />
       </div>
     </div>
   </Modal>
@@ -99,6 +101,7 @@ const schema = toFormValidator(
     title: zod.string().max(128, 'Max length 128 chars').nonempty('Title is required'),
     author: zod.string().nonempty('Author is required'),
     source: zod.string(),
+    budget: zod.number().min(0, 'Min 0 credits').max(2000, 'Max 2000 credits'),
     loca: zod.string().nonempty('Location is required'),
     scope: zod.string().nonempty('Scope is required'),
     conditions: zod.object({ value: zod.string() }).array(),
@@ -115,6 +118,7 @@ const { errors, handleSubmit } = useForm({
     title: '',
     author: '',
     source: '',
+    budget: '',
     desc: '',
     loca: '',
     scope: '',
@@ -131,6 +135,7 @@ const { value: title } = useField<string>('title')
 const { value: source } = useField<string>('source')
 const { value: author } = useField<string>('author')
 const { value: desc } = useField<string>('desc')
+const { value: budget } = useField<number>('budget')
 const { value: loca } = useField<string>('loca')
 const { value: scope } = useField<string>('scope')
 const { value: conditions } = useField<any[]>('conditions')
@@ -140,6 +145,12 @@ const { value: image } = useField<string>('image')
 
 const addPerk = handleSubmit((values) => {
   proposeMission({ ...values, date: new Date().toString() }, () => successMessage.value = 'Mission was send successfully, await until I review and add it')
+  buttonActive.value = false
+  setTimeout(() => { buttonActive.value = true; successMessage.value = ''; errorMessage.value = '' }, 30 * 1000)
+})
+
+const copyText = handleSubmit((values) => {
+  navigator.clipboard.writeText(JSON.stringify(values))
   buttonActive.value = false
   setTimeout(() => { buttonActive.value = true; successMessage.value = ''; errorMessage.value = '' }, 30 * 1000)
 })

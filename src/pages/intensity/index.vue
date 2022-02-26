@@ -58,8 +58,8 @@ import { useStore } from '~/store/store'
 
 import { pickSimplePerk, chooseIntensity } from '~/logic/'
 import { Perk } from '~/store/chargen'
-import IntensityCard from '~/components/perkCards/IntensityCard.vue'
-import DR11 from '~/components/perkCards/DR11.vue'
+import DR11 from '~/components/cards/perkCards/DR11.vue'
+import IntensityCard from '~/components/cards/perkCards/IntensityCard.vue'
 
 const { allEffects, settings, pvpPerks } = useStore()
 

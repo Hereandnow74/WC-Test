@@ -11,6 +11,7 @@
         required
       >
         <option value="" disabled selected hidden>{{ placeholder }}</option>
+        <slot></slot>
         <option
           v-for="opt in options"
           :key="opt.label !== undefined ? opt.label : opt"

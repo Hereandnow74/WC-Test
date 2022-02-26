@@ -169,11 +169,10 @@
 
 <script lang="ts" setup>
 import Fuse from 'fuse.js'
-import { intersection, some, throttle } from 'lodash-es'
+import { intersection, some } from 'lodash-es'
 import { useStore } from '~/store/store'
 
 import { toggleShowAddCharacter, showAddCharacter, toggleShowFilterTags, showFilterTags, tagToggles, userCharactersShown, threeToggle, toggleShowReport, showReport } from '~/logic'
-import CompanionCard from '~/components/CompanionCard.vue'
 import Checkbox from '~/components/basic/Checkbox.vue'
 import { getChars, getUserChars } from '~/data/constants'
 import { usePlayStore } from '~/store/play'

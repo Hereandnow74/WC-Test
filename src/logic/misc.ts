@@ -1,4 +1,5 @@
 import Fuse from 'fuse.js'
+import { DBCharacter } from 'global'
 import { random } from 'lodash-es'
 import tippy from 'tippy.js'
 import { allWorldsNoCondition, CHAR_COSTS, getAllChars, getChars, getUserChars } from '~/data/constants'
@@ -47,8 +48,9 @@ export function lazyLoadSingleImg(img: HTMLImageElement) {
   }
 }
 
-export async function randomChar(withImg: boolean, maxCost = 0, minCost = 0) {
-  let chars = Array.prototype.concat(await getChars(), await getUserChars())
+export async function randomChar(withImg: boolean, maxCost = 0, minCost = 0, gender: 'F' | 'M' | 'O' | null = null) {
+  let chars = await getAllChars()
+  if (gender) chars = chars.filter(x => x.b && x.b.includes(gender))
   if (withImg) chars = chars.filter(x => x.i && x.i.length)
   if (maxCost) chars = chars.filter(x => (CHAR_COSTS[x.t - 1] || 0) <= maxCost)
   if (minCost) chars = chars.filter(x => (CHAR_COSTS[x.t - 1] || 0) >= minCost)

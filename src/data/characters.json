@@ -17761,10 +17761,13 @@
   {
     "u": 5061,
     "n": "Dawn Summers",
-    "t": 1,
+    "t": 8,
     "i": "b10_28_00b.jpg",
     "s": "https://vignette.wikia.nocookie.net/buffy/images/5/5c/B10-28-00b.jpg/revision/latest?cb=20170902060538",
-    "w": "BTVS/Angel"
+    "w": "BTVS/Angel",
+    "b": [
+      "F"
+    ]
   },
   {
     "u": 5062,
@@ -17794,8 +17797,12 @@
     "u": 5065,
     "n": "Amy Madison",
     "t": 3,
-    "i": "",
-    "w": "BTVS/Angel"
+    "i": "[n]Amysmashed.jpg",
+    "w": "BTVS/Angel",
+    "b": [
+      "F"
+    ],
+    "s": "https://upload.wikimedia.org/wikipedia/en/e/ec/Amysmashed.jpg"
   },
   {
     "u": 5066,
@@ -21689,14 +21696,6 @@
     ]
   },
   {
-    "u": 13814,
-    "n": "Nameless king",
-    "t": 6,
-    "i": "sample_c7e1987d34177e89db3966e415f33689.jpg",
-    "s": "https://chan.sankakucomplex.com/post/show/6083797",
-    "w": "Dark Souls"
-  },
-  {
     "u": 10831,
     "n": "Darkchylde (Ariel Chylde)",
     "t": 5,
@@ -23657,6 +23656,7 @@
     "b": [
       "F",
       "C",
+      "hz",
       "sp"
     ]
   },
@@ -23669,7 +23669,9 @@
     "w": "DC (space side)",
     "b": [
       "F",
-      "C"
+      "C",
+      "hz",
+      "sp"
     ]
   },
   {
@@ -44138,7 +44140,9 @@
     "b": [
       "F",
       "C",
-      "P"
+      "P",
+      "sd",
+      "gn"
     ]
   },
   {
@@ -66651,12 +66655,13 @@
     "u": 5925,
     "n": "Rafflesia S. Orangewood",
     "t": 6,
-    "i": "",
+    "i": "[n]Rafleisha_1.jpg",
     "w": "How not to Summon a Demon Lord",
     "b": [
       "F",
       "C"
-    ]
+    ],
+    "s": "https://static.wikia.nocookie.net/isekai-maou-to-shoukan-shoujo-dorei-majutstu/images/8/85/Rafleisha_1.jpg"
   },
   {
     "u": 5926,
@@ -69565,6 +69570,7 @@
     "w": "Invincible",
     "b": [
       "F",
+      "sp",
       "ps"
     ]
   },
@@ -81609,7 +81615,11 @@
     "n": "Atraxa, Praetors' Voice",
     "t": 7,
     "i": "",
-    "w": "Magic: The Gathering"
+    "w": "Magic: The Gathering",
+    "b": [
+      "an",
+      "cb"
+    ]
   },
   {
     "u": 4581,
@@ -83514,11 +83524,18 @@
     "u": 1832,
     "n": "Peter Parker (Spider-Man)",
     "t": 5,
-    "i": "",
+    "i": "[n]17378021.png",
     "w": "Marvel",
     "b": [
-      "M"
-    ]
+      "M",
+      "hl",
+      "th",
+      "en",
+      "sn",
+      "sp",
+      "gn"
+    ],
+    "s": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/hostedimages/1450103104i/17378021.png"
   },
   {
     "u": 1833,
@@ -91982,7 +91999,8 @@
     "w": "My Hero Academia",
     "b": [
       "F",
-      "C"
+      "C",
+      "tc"
     ],
     "d": "Civilians"
   },
@@ -97238,8 +97256,12 @@
     "s": "https://cdn.donmai.us/sample/c5/8f/__noihara_himari_omamori_himari_drawn_by_matra_milan__sample-c58f38071e0e8833ab40aed08a493b12.jpg",
     "w": "Omamori Himari",
     "b": [
+      "mp",
+      "me",
       "ct",
-      "Yokai"
+      "sr",
+      "Yokai",
+      "Corruption"
     ]
   },
   {
@@ -97455,7 +97477,11 @@
     "s": "https://chan.sankakucomplex.com/post/show/995334",
     "w": "One Piece",
     "b": [
-      "M"
+      "M",
+      "hr",
+      "cl",
+      "dr",
+      "pi"
     ]
   },
   {
@@ -98287,7 +98313,10 @@
     "s": "https://chan.sankakucomplex.com/post/show/4997702",
     "w": "One Punch Man",
     "b": [
-      "M"
+      "M",
+      "cl",
+      "ad",
+      "sp"
     ]
   },
   {
@@ -98296,17 +98325,6 @@
     "t": 6,
     "i": "onepunchman_anime_r63_lord_boros_2809210.jpeg",
     "s": "http://img10.reactor.cc/pics/post/OnePunchMan-Anime-r63-Lord-Boros-2809210.jpeg",
-    "w": "One Punch Man",
-    "b": [
-      "M"
-    ]
-  },
-  {
-    "u": 532,
-    "n": "Sonic",
-    "t": 6,
-    "i": "",
-    "s": "https://www.deviantart.com/supertg/gallery/63946593/One-Punch-Man?",
     "w": "One Punch Man",
     "b": [
       "M"
@@ -98364,7 +98382,10 @@
     "s": "https://www.deviantart.com/thegoldensmurf/art/OnePunch-Man-Black-and-golden-Sperm-genderswap-598437084",
     "w": "One Punch Man",
     "b": [
-      "M"
+      "M",
+      "mu",
+      "sr",
+      "ev"
     ]
   },
   {
@@ -98386,7 +98407,8 @@
     "s": "https://chan.sankakucomplex.com/post/show/5931738",
     "w": "One Punch Man",
     "b": [
-      "M"
+      "M",
+      "ev"
     ]
   },
   {
@@ -98497,7 +98519,10 @@
     "w": "One Punch Man",
     "b": [
       "F",
-      "C"
+      "C",
+      "mp",
+      "mu",
+      "ev"
     ]
   },
   {
@@ -98509,7 +98534,9 @@
     "w": "One Punch Man",
     "b": [
       "F",
-      "C"
+      "C",
+      "mu",
+      "ev"
     ]
   },
   {
@@ -98521,7 +98548,10 @@
     "w": "One Punch Man",
     "b": [
       "F",
-      "C"
+      "C",
+      "mu",
+      "ps",
+      "ev"
     ],
     "in": "https://cdn.donmai.us/original/29/fb/__psychos_one_punch_man_drawn_by_zefrableu__29fb860ee073c3614cf14c88ee1e6356.jpg"
   },
@@ -114864,9 +114894,15 @@
     "w": "Sailor Moon",
     "b": [
       "F",
-      "C"
+      "C",
+      "mp",
+      "dr",
+      "di",
+      "wh",
+      "ev",
+      "rl"
     ],
-    "d": "Other"
+    "d": "Dark Kingdom"
   },
   {
     "u": 10258,
@@ -119367,6 +119403,19 @@
     "t": 7,
     "i": "yy81vy2jypr51.png",
     "s": "https://preview.redd.it/yy81vy2jypr51.png?width=3508&format=png&auto=webp&s=a54e6d24c3709e8b384705e2e4496f1fe617e600",
+    "w": "Nasuverse",
+    "d": "Servants? - ???",
+    "b": [
+      "F",
+      "C"
+    ]
+  },
+  {
+    "u": 14555,
+    "n": "Brihannala",
+    "t": 8,
+    "i": "[n]__arjuna_fate_and_1_more_drawn_by_rokkotsu__e134818dfdc2f5055aec7b343d136d65.png",
+    "s": "https://cdn.donmai.us/original/e1/34/__arjuna_fate_and_1_more_drawn_by_rokkotsu__e134818dfdc2f5055aec7b343d136d65.png",
     "w": "Nasuverse",
     "d": "Servants? - ???",
     "b": [
@@ -134557,7 +134606,8 @@
     "s": "https://chan.sankakucomplex.com/post/show/614167",
     "w": "To Aru verse",
     "b": [
-      "F"
+      "F",
+      "sd"
     ],
     "d": "AC students"
   },
@@ -134569,7 +134619,8 @@
     "s": "https://danbooru.donmai.us/posts/348701",
     "w": "To Aru verse",
     "b": [
-      "F"
+      "F",
+      "sd"
     ],
     "d": "AC students"
   },
@@ -134581,7 +134632,8 @@
     "s": "https://chan.sankakucomplex.com/post/show/707131",
     "w": "To Aru verse",
     "b": [
-      "F"
+      "F",
+      "sd"
     ],
     "d": "AC students"
   },
@@ -134593,7 +134645,8 @@
     "s": "https://chan.sankakucomplex.com/post/show/830854",
     "w": "To Aru verse",
     "b": [
-      "F"
+      "F",
+      "sd"
     ],
     "d": "AC students"
   },
@@ -134644,7 +134697,8 @@
     "s": "https://chan.sankakucomplex.com/post/show/1467516",
     "w": "To Aru verse",
     "b": [
-      "F"
+      "F",
+      "sd"
     ],
     "d": "AC students"
   },
@@ -134656,7 +134710,8 @@
     "s": "https://danbooru.donmai.us/posts/3705565",
     "w": "To Aru verse",
     "b": [
-      "F"
+      "F",
+      "sd"
     ],
     "d": "AC students"
   },
@@ -134695,7 +134750,8 @@
     "s": "https://chan.sankakucomplex.com/post/show/7225817",
     "w": "To Aru verse",
     "b": [
-      "F"
+      "F",
+      "sd"
     ],
     "d": "AC students"
   },
@@ -134719,7 +134775,9 @@
     "s": "https://chan.sankakucomplex.com/post/show/852585",
     "w": "To Aru verse",
     "b": [
-      "F"
+      "F",
+      "me",
+      "nn"
     ],
     "d": "Magic Side"
   },
@@ -134731,7 +134789,8 @@
     "s": "https://vignette.wikia.nocookie.net/to-aru-majutsu-no-index/images/0/0c/Ladylee.png/revision/latest?cb=20130912163458",
     "w": "To Aru verse",
     "b": [
-      "F"
+      "F",
+      "im"
     ],
     "d": "Magic Side"
   },
@@ -134743,7 +134802,8 @@
     "s": "https://chan.sankakucomplex.com/post/show/5825943",
     "w": "To Aru verse",
     "b": [
-      "F"
+      "F",
+      "me"
     ],
     "d": "Magic Side"
   },
@@ -134755,7 +134815,8 @@
     "s": "https://chan.sankakucomplex.com/post/show/4084679",
     "w": "To Aru verse",
     "b": [
-      "F"
+      "F",
+      "me"
     ],
     "d": "Magic Side"
   },
@@ -134767,7 +134828,8 @@
     "s": "https://chan.sankakucomplex.com/post/show/4500159",
     "w": "To Aru verse",
     "b": [
-      "F"
+      "F",
+      "me"
     ],
     "d": "Magic Side"
   },
@@ -134779,7 +134841,8 @@
     "s": "https://chan.sankakucomplex.com/post/show/1295222",
     "w": "To Aru verse",
     "b": [
-      "F"
+      "F",
+      "me"
     ],
     "d": "Magic Side"
   },
@@ -134791,7 +134854,8 @@
     "s": "https://static.tvtropes.org/pmwiki/pub/images/lancis_toaru.png",
     "w": "To Aru verse",
     "b": [
-      "F"
+      "F",
+      "me"
     ],
     "d": "Magic Side"
   },
@@ -134815,7 +134879,9 @@
     "s": "https://chan.sankakucomplex.com/post/show/918442",
     "w": "To Aru verse",
     "b": [
-      "F"
+      "F",
+      "sc",
+      "me"
     ],
     "d": "Magic Side"
   },
@@ -134827,7 +134893,8 @@
     "s": "https://chan.sankakucomplex.com/post/show/938129",
     "w": "To Aru verse",
     "b": [
-      "F"
+      "F",
+      "nn"
     ],
     "d": "Magic Side"
   },
@@ -134839,7 +134906,10 @@
     "s": "https://vignette.wikia.nocookie.net/to-aru-majutsu-no-index/images/6/66/Rimea_%28Index_III_Anime_Design%29.png/revision/latest?cb=20181214204555",
     "w": "To Aru verse",
     "b": [
-      "F"
+      "F",
+      "sc",
+      "pc",
+      "gn"
     ],
     "d": "Magic Side"
   },
@@ -134851,7 +134921,8 @@
     "s": "https://chan.sankakucomplex.com/post/show/900395",
     "w": "To Aru verse",
     "b": [
-      "F"
+      "F",
+      "me"
     ],
     "d": "Magic Side"
   },
@@ -134863,7 +134934,8 @@
     "s": "https://vignette.wikia.nocookie.net/to-aru-majutsu-no-index/images/b/be/Vento_body_%28Anime%29.png/revision/latest?cb=20200121203538",
     "w": "To Aru verse",
     "b": [
-      "F"
+      "F",
+      "me"
     ],
     "d": "Magic Side"
   },
@@ -134875,7 +134947,9 @@
     "s": "https://2.bp.blogspot.com/-EUb6SPqtHyk/XEkrw3aj5HI/AAAAAAABbGc/yk7UPAxG-kcS-F5PKx0YIIZGWQEE6rpxACKgBGAs/s1600/Omake%2BScreenCap%2B-%2BToaru%2BMajutsu%2Bno%2BIndex%2BIII%2B-%2BEpisode%2B14%2B-%2BCarissa%2BPoints%2BCurtana.jpg",
     "w": "To Aru verse",
     "b": [
-      "F"
+      "F",
+      "me",
+      "pc"
     ],
     "d": "Magic Side"
   },
@@ -134887,7 +134961,9 @@
     "s": "https://vignette.wikia.nocookie.net/to-aru-majutsu-no-index/images/c/c7/Elizalina_%28Index_III_Anime_Design%29.png/revision/latest?cb=20190209055358",
     "w": "To Aru verse",
     "b": [
-      "F"
+      "F",
+      "me",
+      "rl"
     ],
     "d": "Magic Side"
   },
@@ -134913,7 +134989,8 @@
     "s": "https://chan.sankakucomplex.com/post/show/5956708",
     "w": "To Aru verse",
     "b": [
-      "F"
+      "F",
+      "me"
     ],
     "d": "Magic Side"
   },
@@ -134925,7 +135002,9 @@
     "s": "https://pm1.narvii.com/7123/5e60e63c8f9e33cf4e5206b06f4e36a730154446r1-1284-2048v2_hq.jpg",
     "w": "To Aru verse",
     "b": [
-      "F"
+      "F",
+      "me",
+      "rl"
     ],
     "d": "Magic Side"
   },
@@ -139084,7 +139163,11 @@
     "w": "Warcraft",
     "b": [
       "F",
-      "C"
+      "C",
+      "hl",
+      "tc",
+      "el",
+      "pt"
     ],
     "d": "Azeroth"
   },
@@ -145985,7 +146068,8 @@
       "cl",
       "me",
       "pc"
-    ]
+    ],
+    "in": "https://i.imgur.com/l30mxkG.png"
   },
   {
     "u": 6229,

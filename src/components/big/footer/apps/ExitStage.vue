@@ -83,11 +83,9 @@ import { randomWorld } from '~/logic'
 import { usePlayStore } from '~/store/play'
 import { useStore } from '~/store/store'
 
-import WorldCard from '~/components/WorldCard.vue'
 import { confirmDialog } from '~/logic/dialog'
 import { World } from '~/store/chargen'
 import { allWorldsNoCondition } from '~/data/constants'
-import Button from '~/components/basic/Button.vue'
 
 const tabIndex = ref(0)
 

@@ -94,19 +94,16 @@ import { useTooltips } from '~/logic/misc'
 import { bindingAvailable, chooseBinding, pickSimplePerk } from '~/logic'
 import { useStore } from '~/store/store'
 import { DLCbindings } from '~/data/DLCs'
-import PerkCard from '~/components/PerkCard.vue'
-import GenericPerkCard from '~/components/perkCards/GenericPerkCard.vue'
-
+import PerkCard from '~/components/cards/PerkCard.vue'
+import GenericPerkCard from '~/components/cards/perkCards/GenericPerkCard.vue'
 const { binding, flags, settings } = useStore()
 const [showElements, toggleElements] = useToggle()
 const [showRitual, toggleRitual] = useToggle()
 
 const currentBinding = ref<Binding|null>(null)
 
-const activeType = ref('Stamp')
-
 const perkCards = {
-  'Prismatic Shroud': defineAsyncComponent(() => import('~/components/perkCards/PrismaticShroud.vue')),
+  'Prismatic Shroud': defineAsyncComponent(() => import('~/components/cards/perkCards/PrismaticShroud.vue')),
 } as Record<string, any>
 
 const bindingCard = (bnd: Binding) => {
@@ -133,6 +130,8 @@ const bindingByType = computed(() => {
   bindingsDLC.value.forEach(x => x.type ? res[x.type].push(x) : null)
   return res
 })
+
+const activeType = ref<keyof typeof bindingByType.value>('Stamp')
 
 onMounted(() => useTooltips())
 watch(activeType, () => nextTick(useTooltips))

@@ -172,7 +172,7 @@ import { WORLD_RATINGS, rulesList, useWorlds } from '~/data/constants'
 import {
   startingDesc, pvpRules, effectiveTiers, captures, familiars, purchases, sales, waifu11,
   danger11, services, salary, helpDesk, loans, missions, refund, arranged, arrangedConditions,
-  arrangedSpecial, arrangedTeam, creditValue, assetValue, rip, offspring, nasuDLC, glossary,
+  arrangedSpecial, arrangedTeam, assetValue, rip, offspring, nasuDLC, glossary,
 } from '~/data/rules'
 
 import { useTooltips } from '~/logic/misc'
@@ -279,7 +279,8 @@ const { worlds } = useWorlds()
 const currentWidth = computed(() => widths[width.value])
 
 function changeWidth() {
-  width.value += 1
+  if (width.value)
+    width.value += 1
   if (width.value >= widths.length) width.value = 0
 }
 

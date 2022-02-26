@@ -58,7 +58,8 @@
 
 <script lang='ts' setup>
 import { findIndex } from 'lodash-es'
-import { ridePerksFull, rideDesc, PerkFull } from '~/data/talents'
+import { PerkFull } from 'global'
+import { ridePerksFull, rideDesc } from '~/data/talents'
 import { useTooltips } from '~/logic/misc'
 import { useStore } from '~/store/store'
 import { toggleShowAddRide, showAddRide, pickSimplePerk, chooseRide, rideAvailable } from '~/logic'
@@ -79,7 +80,7 @@ const ridePerksWithDLC = computed(() => !settings.value.allChosenAuthors[0]
   : ridePerksFull)
 
 function deleteRide(title: String) {
-  const ind = findIndex(localUserRides.value, { title })
+  const ind = findIndex(localUserRides.value, ride => ride.title === title)
   localUserRides.value.splice(ind, 1)
 }
 

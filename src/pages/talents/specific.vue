@@ -127,9 +127,9 @@ import { useStore } from '~/store/store'
 
 import { chooseGenericPerk, chooseWaifuPerk, genericAvailable, specificAvailable } from '~/logic'
 import { DLCgenericPerks } from '~/data/DLCs'
-import PerkCard from '~/components/PerkCard.vue'
-import FourSeason from '~/components/perkCards/FourSeason.vue'
-import PowerSwap from '~/components/perkCards/PowerSwap.vue'
+import PerkCard from '~/components/cards/PerkCard.vue'
+import FourSeason from '~/components/cards/perkCards/FourSeason.vue'
+import PowerSwap from '~/components/cards/perkCards/PowerSwap.vue'
 
 const { waifuPerks, genericWaifuPerks, settings } = useStore()
 
@@ -155,10 +155,11 @@ const genericPerksWithDLC = computed(() => !settings.value.allChosenAuthors[0]
     .concat(DLCgenericPerks
       .filter(perk => !settings.value.allChosenAuthors.includes(perk.dlc)))
   : genericPerks)
+
 const specificPerksWithDLC = computed(() => !settings.value.allChosenAuthors[0]
   ? waifu_perks
     .concat(DLCwaifu_perks
-      .filter(perk => !settings.value.allChosenAuthors.includes(perk.dlc)))
+      .filter(perk => perk.dlc && !settings.value.allChosenAuthors.includes(perk.dlc)))
   : waifu_perks)
 
 const genericPerkComponent = (title: string) => {
@@ -166,7 +167,7 @@ const genericPerkComponent = (title: string) => {
     'Four Seasons': FourSeason,
     'Power Swap': PowerSwap,
   }
-  return cmp[title] || PerkCard
+  return cmp[title as keyof typeof cmp] || PerkCard
 }
 
 onMounted(() => useTooltips())

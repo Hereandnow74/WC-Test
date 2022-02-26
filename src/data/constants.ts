@@ -12,6 +12,8 @@ import { DLCwaifu_perks, waifu_perks } from '~/data/waifu_perks'
 
 import { useStore } from '~/store/store'
 
+const { userWorlds, localUserWorlds } = useStore()
+
 export const WORLD_COLORS = ['bg-green-600', 'bg-teal-600', 'bg-cyan-600',
   'bg-blue-500', 'bg-indigo-500', 'bg-purple-500', 'bg-amber-600',
   'bg-orange-500', 'bg-red-500', 'bg-true-gray-700']
@@ -278,7 +280,6 @@ export function useWorlds() {
 getWorlds()
 
 export const allWorlds = computed(() => {
-  const { userWorlds, localUserWorlds } = useStore()
   return Array.prototype.concat(userWorlds.value, localUserWorlds.value, worlds.value, subWorlds.value)
 })
 

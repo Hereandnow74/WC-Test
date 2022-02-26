@@ -1,7 +1,4 @@
-interface Challenge {
-  title: string
-  cost: number
-}
+import { Challenge } from 'global'
 
 const activeChallenges = useStorage<Challenge[]>('activeChallenges', [])
 

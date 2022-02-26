@@ -162,7 +162,7 @@ function clearOrigin() {
   startingOrigin.value = { title: '', cost: 0 }
 }
 
-function choosePatron(pt, saveInfo) {
+function choosePatron(pt: typeof patrons[0], saveInfo: {title: string; cost: number}) {
   if (patron.value.length)
     patron.value.splice(0)
   else

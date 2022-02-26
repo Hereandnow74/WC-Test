@@ -16,6 +16,7 @@
       </h3>
       Thanks to
       <a class="text-blue-400" href="https://klassekatze.github.io/waifucatimg/" target="_blank" rel="noopener noreferrer">klassekatze</a> for compilation of characters used in this catalog.
+      <div>Thanks to KatzSmile for providing images for perks and 'Pocket Space' app</div>
       <h4 class="text-lg">
         Links to original:
       </h4>

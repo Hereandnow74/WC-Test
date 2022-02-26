@@ -48,7 +48,7 @@ import { lazyLoadImg, orientation, isRetinueEdit, imageLink } from '~/logic'
 import { useStore } from '~/store/store'
 import { waifu_perks, DLCwaifu_perks } from '~/data/waifu_perks'
 
-const { companions, underLoan, loan, trHistory, talentPerks, genericWaifuPerks, waifuPerks } = useStore()
+const { companions, underLoan, loan, trHistory, talentPerks, genericWaifuPerks, waifuPerks, localUserCharacters } = useStore()
 
 const specificPerksWithDLC = waifu_perks.concat(DLCwaifu_perks)
 
@@ -79,6 +79,7 @@ const companionImages = computed(() => {
     if (charInfo !== undefined)
       res[char.uid] = imageLink(charInfo.i, charInfo.u)
   })
+  localUserCharacters.value.forEach(char => res[char.uid] = char.image)
   return res
 })
 
