@@ -33,7 +33,6 @@
         <bx:bx-copy-alt class="hover:text-green-500 cursor-pointer" @click="copyLink(save.id)" />
       </div>
     </div>
-    <Button label="Back" icon="akar-icons:arrow-back-thick" size="Small" @click="toggleAppMode" />
   </div>
 </template>
 

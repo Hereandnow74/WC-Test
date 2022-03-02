@@ -6,8 +6,8 @@
       </h3>
       <div>
         Time I spend on Interactive Waifu Catalog so far -
-        <span class="text-amber-500 text-2xl">{{ 423 + 167 }}</span> hours in
-        <span class="text-amber-500 text-2xl">{{ 107 + 47 }}</span> days.
+        <span class="text-amber-500 text-2xl">{{ 423 + 192 }}</span> hours in
+        <span class="text-amber-500 text-2xl">{{ 107 + 57 }}</span> days.
       </div>
       <div>
         If you found some bugs, have any questions about Interactive, suggestions, collaborations or you want to hire me
@@ -52,14 +52,11 @@
           Supporters <ci:heart-fill class="text-red-500" />
         </h4>
         <div class="flex flex-wrap gap-2 justify-center text-semibold">
-          <span class="bg-gray-200 dark:bg-gray-700  px-1 rounded flex items-center gap-1">BenFang322<pepicons:crown class="text-amber-400" /></span>
-          <span class="bg-gray-200 dark:bg-gray-700  px-1 rounded flex items-center gap-1">Templar9999<pepicons:crown class="text-gray-400 " /></span>
-          <span class="bg-gray-200 dark:bg-gray-700  px-1 rounded flex items-center gap-1">Despin<pepicons:crown class="text-red-400" /></span>
-          <span class="bg-gray-200 dark:bg-gray-700  px-1 rounded">Cyrus</span>
-          <span class="bg-gray-200 dark:bg-gray-700  px-1 rounded">KatzSmile</span>
-          <span class="bg-gray-200 dark:bg-gray-700  px-1 rounded">Bryce C.</span>
-          <span class="bg-gray-200 dark:bg-gray-700  px-1 rounded">TaiGambol</span>
-          <span class="bg-gray-200 dark:bg-gray-700  px-1 rounded">Cole</span>
+          <span class="bg-gray-200 dark:bg-gray-700  px-1 rounded flex items-center gap-1">{{ nicknames[0] }}<pepicons:crown class="text-amber-400" /></span>
+          <span class="bg-gray-200 dark:bg-gray-700  px-1 rounded flex items-center gap-1">{{ nicknames[1] }}<pepicons:crown class="text-gray-400" /></span>
+          <span class="bg-gray-200 dark:bg-gray-700  px-1 rounded flex items-center gap-1">{{ nicknames[2] }}<pepicons:crown class="text-red-400" /></span>
+
+          <span v-for="nick in nicknames.slice(3)" :key="nick" class="bg-gray-200 dark:bg-gray-700  px-1 rounded">{{ nick }}</span>
         </div>
       </div>
     </div>
@@ -71,6 +68,18 @@ import { countBy } from 'lodash-es'
 import { getUserChars } from '~/data/constants'
 
 const topUsers = ref<[string, number][]>([])
+
+const nicknames = [
+  'Templar9999',
+  'Despin',
+  'BenFang322',
+  'Cyrus',
+  'KatzSmile',
+  'Bryce C.',
+  'Darin E.',
+  'TaiGambol',
+  'Cole',
+]
 
 getUserChars().then(x => Object.entries(countBy(x, c => c.k))
   .filter(x => x[0] !== 'undefined')

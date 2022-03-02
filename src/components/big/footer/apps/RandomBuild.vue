@@ -7,7 +7,6 @@
       <Input v-model.number="targetBudget" label="Target budget" class="w-44" />
       <Button label="Generate" bg-color="bg-amber-500" size="Small" @click="generateRandomBuild" />
     </div>
-    <Button class="mx-auto" label="Back" icon="akar-icons:arrow-back-thick" size="Small" @click="toggleAppMode" />
   </div>
 </template>
 
@@ -16,10 +15,7 @@ import { findIndex, random, sample } from 'lodash'
 import { clamp } from 'lodash-es'
 import {
   activeTab, bindingAvailable, chooseBinding, chooseDefense, chooseGenericPerk, chooseHeritage, chooseHome, chooseLure, chooseOther, choosePerk, chooseRide, chooseTalent, chooseWaifuPerk, clearAll, defenseAvailable, genericAvailable, heritageAvailable, homeAvailable, lureAvailable, miscAvailable, randomChar,
-  rideAvailable,
-  specificAvailable,
-  talentAvailable,
-  toggleAppMode,
+  rideAvailable, specificAvailable, talentAvailable,
 } from '~/logic'
 
 import { heritages } from '~/data/heritage'

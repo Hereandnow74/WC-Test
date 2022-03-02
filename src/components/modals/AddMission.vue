@@ -14,7 +14,7 @@
         <AnythingInput v-model="scope" class="w-28" placeholder="Scope" :list="scopes" :error-message="errors.scope" />
       </div>
       <div class="min-h-max">
-        <TextArea v-model="desc" place-holder="Mission description" :rows="'4'" :error-message="errors.desc" />
+        <TextArea v-model="desc" placeholder="Mission description" :rows="'4'" :error-message="errors.desc" />
       </div>
       <div class="flex flex-col gap-2">
         <Input
@@ -26,8 +26,8 @@
       </div>
       <h3 class="flex gap-2 items-center cursor-pointer" @click="conditions.push({value: ''})">
         Conditions
-        <span class="text-sm text-gray-500">(like - stealth/no kill/tier limit/do it yourself/XX perk disabled/etc.)</span>
-        <fluent:add-12-filled class="hover:text-green-500" />
+        <span class="text-sm text-gray-500 dark:text-gray-300">(like - stealth/no kill/tier limit/do it yourself/XX perk disabled/etc.)</span>
+        <fluent:add-12-filled class="text-green-200 hover:text-green-500" />
       </h3>
       <div class="flex flex-col gap-2">
         <div
@@ -46,7 +46,7 @@
       </div>
       <div class="flex flex-col gap-2">
         <h3 class="flex gap-4 items-center cursor-pointer" @click="objectives.push({value: '', reward: ''})">
-          Additional objectives  <fluent:add-12-filled class="hover:text-green-500" />
+          Additional objectives  <fluent:add-12-filled class="text-green-200 hover:text-green-500" />
         </h3>
         <div
           v-for="requirement, i in objectives"
@@ -75,9 +75,16 @@
       <div v-if="errorMessage" class="dark:text-red-400 text-red-700">
         {{ errorMessage }}
       </div>
-      <div class="flex gap-2">
-        <Button :disabled="!buttonActive" label="Send" class="flex-grow" bg-color="bg-red-700" @click="buttonActive ? addPerk() : errorMessage = 'Wait 30s before submitting again.'" />
-        <Button label="Copy" class="flex-grow" bg-color="bg-red-700" @click="copyText()" />
+      <div class="flex justify-center gap-2">
+        <Button
+          :disabled="!buttonActive"
+          label="Send"
+          size="small"
+          class="px-8"
+          bg-color="bg-green-700"
+          @click="buttonActive ? addPerk() : errorMessage = 'Wait 30s before submitting again.'"
+        />
+        <!-- <Button label="Copy" class="flex-grow" bg-color="bg-red-700" @click="copyText()" /> -->
       </div>
     </div>
   </Modal>
@@ -149,10 +156,10 @@ const addPerk = handleSubmit((values) => {
   setTimeout(() => { buttonActive.value = true; successMessage.value = ''; errorMessage.value = '' }, 30 * 1000)
 })
 
-const copyText = handleSubmit((values) => {
-  navigator.clipboard.writeText(JSON.stringify(values))
-  buttonActive.value = false
-  setTimeout(() => { buttonActive.value = true; successMessage.value = ''; errorMessage.value = '' }, 30 * 1000)
-})
+// const copyText = handleSubmit((values) => {
+//   navigator.clipboard.writeText(JSON.stringify(values))
+//   buttonActive.value = false
+//   setTimeout(() => { buttonActive.value = true; successMessage.value = ''; errorMessage.value = '' }, 30 * 1000)
+// })
 
 </script>

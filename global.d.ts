@@ -8,7 +8,7 @@ interface DBCharacter {
   s?: string
   in?: string
   k?: string
-  b?: string[]
+  b: string[]
 }
 
 interface DBWorld {

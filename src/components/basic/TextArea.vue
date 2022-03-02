@@ -6,8 +6,8 @@
     cols="30"
     :rows="rows"
     :value="modelValue"
-    class="w-full text-gray-800 p-1"
-    :placeholder="placeHolder"
+    class="w-full text-gray-800 dark:(text-gray-200 bg-warm-gray-700 border border-warm-gray-500) rounded p-1 px-2"
+    :placeholder="placeholder"
     @input="$emit('update:modelValue', ($event.target as HTMLTextAreaElement).value)"
   ></textarea>
   <div v-if="errorMessage" class="text-xs text-red-600 dark:text-red-300 leading-none">
@@ -25,7 +25,7 @@ defineProps({
     type: String,
     default: '',
   },
-  placeHolder: {
+  placeholder: {
     type: String,
     default: 'Type here',
   },

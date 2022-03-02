@@ -1,11 +1,10 @@
 <template>
   <div>
-    <div class="inline-flex w-min h-max">
+    <div class="inline-flex w-min h-max" :class="theme === 'dark' ? 'dark' : ''">
       <label v-if="label" for="" class="mr-2">{{ label }}</label>
       <div
         ref="minusButton"
-        class="rounded-l-lg hover:bg-orange-500 w-4 text-center cursor-pointer select-none"
-        :class="buttonThemes[theme]"
+        class="rounded-l-lg hover:bg-orange-500 w-4 text-center cursor-pointer select-none bg-warm-gray-300 text-gray-800 dark:(bg-warm-gray-700 text-gray-400)"
         @click="minus"
       >
         -
@@ -14,15 +13,13 @@
         id=""
         type="text"
         name=""
-        class="focus:outline-none text-center"
+        class="focus:outline-none text-center text-gray-800 dark:(text-gray-200 bg-warm-gray-600)"
         :style="width"
         :value="value"
-        :class="themes[theme]"
       >
       <div
         ref="plusButton"
-        class="rounded-r-lg hover:bg-orange-500 w-4 text-center cursor-pointer select-none"
-        :class="buttonThemes[theme]"
+        class="rounded-r-lg hover:bg-orange-500 w-4 text-center cursor-pointer select-none bg-warm-gray-300 text-gray-800 dark:(bg-warm-gray-700 text-gray-400)"
         @click="plus"
       >
         +
@@ -55,8 +52,8 @@ const props = defineProps({
     default: 1,
   },
   theme: {
-    type: String as PropType<'light' | 'dark'>,
-    default: 'light',
+    type: String as PropType<'light' | 'dark' | 'auto'>,
+    default: 'auto',
   },
   increment: {
     type: Number,
@@ -67,15 +64,6 @@ const props = defineProps({
     default: '',
   },
 })
-
-const themes = {
-  light: 'text-gray-800',
-  dark: 'text-gray-200 bg-white bg-opacity-5',
-}
-const buttonThemes = {
-  light: 'bg-gray-300 text-gray-800',
-  dark: 'bg-gray-700 text-gray-400',
-}
 
 const value = ref(props.modelValue || props.min)
 

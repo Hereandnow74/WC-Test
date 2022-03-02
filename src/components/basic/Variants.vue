@@ -51,11 +51,11 @@ const props = defineProps({
 
 const themes = {
   light: 'text-gray-800',
-  dark: 'text-gray-200 bg-white bg-opacity-5',
+  dark: 'text-gray-200 bg-warm-gray-600',
 }
 const buttonThemes = {
-  light: 'bg-gray-300 text-gray-800',
-  dark: 'bg-gray-700 text-gray-400',
+  light: 'bg-warm-gray-300 text-gray-800',
+  dark: 'bg-warm-gray-700 text-gray-400',
 }
 
 const value = ref(props.modelValue || props.list[0] || '')

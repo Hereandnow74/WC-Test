@@ -21,4 +21,7 @@
     "*.css": "postcss",
   },
   "cSpell.enabled": true,
+  "liveFrame.url": "http://localhost:3333",
+  "liveFrame.title": "Local Development",
+  "liveFrame.pane": "Beside"
 }

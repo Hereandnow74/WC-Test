@@ -30,12 +30,10 @@
       </div>
     </div>
     <Desc v-else desc="To take a loan you need Cash Still Rules perk or end chargen phase." />
-    <Button label="Back" icon="akar-icons:arrow-back-thick" size="Small" @click="toggleAppMode" />
   </div>
 </template>
 
 <script lang="ts" setup>
-import { toggleAppMode } from '~/logic'
 import NumberInput from '~/components/basic/NumberInput.vue'
 import { usePlayStore } from '~/store/play'
 import { useStore } from '~/store/store'

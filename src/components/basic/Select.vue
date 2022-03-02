@@ -4,7 +4,7 @@
       <span v-if="label">{{ label }}</span>
       <select
         v-model="model"
-        class="rounded text-gray-800 px-2 w-full"
+        class="rounded text-gray-800 px-2 w-full dark:(bg-warm-gray-700 border border-warm-gray-500 text-gray-200)"
         outline="dark:(none active:none)"
         border="~ gray-800"
         :placeholder="placeholder"

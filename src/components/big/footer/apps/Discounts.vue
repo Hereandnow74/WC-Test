@@ -19,12 +19,10 @@
         Defenses discount from your retinue: <span class="text-green-500 text-lg">{{ defenseRetinueDiscount }}</span>
       </div>
     </div>
-    <Button label="Back" icon="akar-icons:arrow-back-thick" size="Small" class="self-center" @click="toggleAppMode" />
   </div>
 </template>
 
 <script lang="ts" setup>
-import { toggleAppMode } from '~/logic'
 import { useStore } from '~/store/store'
 
 const {

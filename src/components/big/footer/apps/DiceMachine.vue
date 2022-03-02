@@ -17,13 +17,11 @@
       </div>
     </div>
     <Button label="Add" bg-color="bg-blue-600" size="Small" class="self-center" @click="addMachine" />
-    <Button label="Back" icon="akar-icons:arrow-back-thick" size="Small" class="self-center mt-auto" @click="toggleAppMode" />
   </div>
 </template>
 
 <script lang="ts" setup>
 import { random } from 'lodash-es'
-import { toggleAppMode } from '~/logic'
 
 interface Machine {
   dice: number

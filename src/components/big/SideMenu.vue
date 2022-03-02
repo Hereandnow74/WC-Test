@@ -30,12 +30,6 @@
     <div class="icon-text-btn mx-2 whitespace-nowrap" title="Propose a Perk" @click="() => toggleShowAddPerk()">
       <carbon:add-alt />Add Perk
     </div>
-    <div class="icon-text-btn mx-2 whitespace-nowrap" title="Propose a Mission" @click="() => toggleShowAddMission()">
-      <fluent:book-question-mark-24-regular />Add Mission
-    </div>
-    <router-link class="icon-text-btn mx-2 whitespace-nowrap" title="Challenges" to="/challenges">
-      <ph:sword />Challenges
-    </router-link>
     <h3 v-if="!showSideMenu" class="mx-2 opacity-50 border-b">
       Links
     </h3>
@@ -80,6 +74,9 @@
     <router-link class="icon-text-btn mx-2" title="Missions" to="/missions">
       <fluent:book-question-mark-24-regular />Missions
     </router-link>
+    <router-link class="icon-text-btn mx-2 whitespace-nowrap" title="Challenges" to="/challenges">
+      <ph:sword />Challenges
+    </router-link>
     <router-link class="icon-text-btn mx-2" title="Help" to="/help">
       <bx:bx-help-circle />Help
     </router-link>
@@ -95,26 +92,16 @@
     <router-link class="icon-text-btn mx-2" title="About" to="/about">
       <fa-solid:info-circle />About
     </router-link>
-    <teleport to="#app">
-      <component :is="addPerkComponent" v-if="showAddPerk" @click="toggleShowAddPerk" />
-      <component :is="addMissionComponent" v-if="showAddMission" @click="toggleShowAddMission" />
-      <component :is="settingsComponent" v-if="showSettings" @click="toggleShowSettings" />
-    </teleport>
   </div>
 </template>
 
 <script lang='ts' setup>
 import {
-  isDark, toggleDark, toggleSideMenu, showSideMenu, showAddPerk, toggleShowAddPerk,
-  showAddMission, toggleShowAddMission, toggleSupport, promoteShown,
-  toggleShowSettings, showSettings,
+  isDark, toggleDark, toggleSideMenu, showSideMenu, toggleShowAddPerk,
+  toggleSupport, promoteShown, toggleShowSettings,
 } from '~/logic'
 
 const sidemenu = ref(null)
-
-const addPerkComponent = computed(() => defineAsyncComponent(() => import('../modals/AddPerk.vue')))
-const addMissionComponent = computed(() => defineAsyncComponent(() => import('../modals/AddMission.vue')))
-const settingsComponent = computed(() => defineAsyncComponent(() => import('../modals/Settings.vue')))
 
 </script>
 

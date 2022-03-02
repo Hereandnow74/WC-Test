@@ -22,7 +22,7 @@
           :options="['Land', 'Sea', 'Amphibious', 'Sky', 'Space']"
         />
       </div>
-      <TextArea v-model="desc" place-holder="Ride description" :rows="'2'" :error-message="errors.desc" />
+      <TextArea v-model="desc" placeholder="Ride description" :rows="'2'" :error-message="errors.desc" />
       <Foldable title="Addons" :is-open="isAddonOpen" class="flex flex-col min-h-0">
         <template #buttons>
           <div class="cursor-pointer hover:text-green-500" @click="addAddon">

@@ -30,13 +30,11 @@
       <div>Total Capture reward: <span class="text-green-500 text-lg">{{ totalCapture }}</span></div>
       <div>Total Sell reward: <span class="text-green-500 text-lg">{{ totalSell }}</span></div>
     </div>
-    <Button label="Back" icon="akar-icons:arrow-back-thick" size="Small" class="self-center" @click="toggleAppMode" />
   </div>
 </template>
 
 <script lang="ts" setup>
 import { CHAR_COSTS } from '~/data/constants'
-import { toggleAppMode } from '~/logic'
 
 const main = ref([0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
 const extra = ref([0, 0, 0, 0, 0, 0, 0, 0, 0, 0])

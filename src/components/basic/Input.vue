@@ -1,11 +1,11 @@
 <template>
-  <div>
+  <div class="text-gray-800 dark:text-gray-200">
     <label class="flex gap-2">
       <span v-if="label" class="whitespace-nowrap">{{ label }}</span>
       <input
         :type="type"
         :name="name"
-        class="rounded text-gray-800 px-2 w-full"
+        class="rounded dark:(bg-warm-gray-700 border border-warm-gray-500) px-2 w-full"
         outline="dark:(none active:none)"
         border="~ gray-800"
         :placeholder="placeholder"

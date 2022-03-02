@@ -1,11 +1,14 @@
 <template>
-  <div class="bg-[#E3DDBC] dark:bg-[#1E1E5C] rounded p-2 shadow-lg">
+  <div class="bg-[#E3DDBC] dark:bg-[#1E1E5C] rounded p-2 shadow-lg flex flex-col gap-1">
     <h4 class="text-lg text-center py-1">
       {{ mission.title }}
-      <span class="text-sm text-gray-500 dark:text-gray-400">by {{ mission.author }}</span>
+      <span v-if="mission.author" class="text-sm text-gray-500 dark:text-gray-400">by {{ mission.author }}</span>
     </h4>
-    <div class="flex justify-between px-2">
-      <div class="font-semibold">
+    <div class="flex gap-2 justify-between px-2">
+      <div v-if="mission.loca === 'Generic'" class="font-semibold">
+        <span class=" text-teal-600 dark:text-teal-300">Generic mission</span>
+      </div>
+      <div v-else class="font-semibold">
         <span class="font-normal text-gray-600 dark:text-gray-300">Location</span>: {{ mission.loca }}
       </div>
       <div class="font-semibold">
@@ -22,6 +25,12 @@
           {{ req.value }}
         </li>
       </ul>
+    </div>
+    <div class="px-2 flex gap-2">
+      <h4 class="text-green-800 dark:text-green-300">
+        Reward:
+      </h4>
+      <span>{{ mission.reward }}</span>
     </div>
     <div v-if="mission.objectives.length" class="px-2 flex flex-col gap-1">
       <h4 class="text-amber-800 dark:text-amber-300">

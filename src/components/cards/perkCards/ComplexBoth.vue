@@ -6,10 +6,11 @@
       <Button label="Buy" bg-color="bg-blue-500" size="Small" class="mx-1" @click.stop="showBuyPerk = true" />
     </template>
     <template #cost>
-      (Cost: <span text="green-600 dark:green-300">{{ displayedCost }}</span>)
+      (Cost: <span text="green-600 dark:green-300">{{ displayedCost || perk.cost }}</span>)
     </template>
     <template #underDesc>
       <Modal v-if="showBuyPerk" :label="`Total cost: ${displayedCost}`" @click="showBuyPerk = false">
+        <Toggle v-if="perk.title === 'Template Stacking I'" v-model="newPrice" class="ml-2" label="New Unstable TS price" />
         <div ref="charList" class="min-h-0 overflow-y-auto max-h-[75vh] scrollbar grid md:grid-cols-2 gap-2 p-1">
           <div
             class="flex gap-2 w-full min-h-0 rounded bg-gray-300 dark:bg-gray-800 p-1"
@@ -130,6 +131,8 @@ const powers = reactive<Record<string, string[]>>(props.savedPerk?.complex?.redu
 const showBuyPerk = ref(false)
 const charList = ref<HTMLElement | null>(null)
 
+const newPrice = ref(false)
+
 const allChars = ref<Record<number, DBCharacter>>({})
 getAllCharsObject().then(chars => allChars.value = chars)
 
@@ -138,7 +141,7 @@ const fullCount = computed(() => {
 })
 
 const displayedCost = computed(() => {
-  return fullCount.value * props.perk.cost
+  return newPrice.value ? (fullCount.value / 2) * (20 * 2 + (fullCount.value - 1) * 20) : fullCount.value * props.perk.cost
 })
 
 function sendPerk() {

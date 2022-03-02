@@ -5,19 +5,14 @@
       <AnythingInput v-model="note" :list="Object.keys(notes)" class="flex-grow w-full" placeholder="Note name" />
       <Button size="Small" label="delete" bg-color="bg-red-500" @click="deleteNote" />
     </div>
-    <textarea
+    <TextArea
       v-model="notes[note]"
-      :rows="5"
-      class="w-full h-full text-gray-800 rounded p-1"
       placeholder="Note text"
     />
-    <Button label="Back" icon="akar-icons:arrow-back-thick" size="Small" class="self-center" @click="toggleAppMode" />
   </div>
 </template>
 
 <script lang="ts" setup>
-import { toggleAppMode } from '~/logic'
-
 const notes = useStorage<Record<string, string>>('notes', {})
 const note = ref('note1')
 

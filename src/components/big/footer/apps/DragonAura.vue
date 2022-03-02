@@ -7,12 +7,11 @@
     <NumberInput v-model="auraTier" :min="4" :max="50" label="Target Aura Tier" class="whitespace-nowrap" />
 
     <Table :headers="['Time', 'Distance', 'Example']" :rows="auraData" class="text-sm font-semibold" />
-    <Button label="Back" icon="akar-icons:arrow-back-thick" size="Small" @click="toggleAppMode" />
   </div>
 </template>
 
 <script lang="ts" setup>
-import { toggleAppMode, toReadableTime } from '~/logic'
+import { toReadableTime } from '~/logic'
 
 const max = 67108864
 const auraTier = ref(4)

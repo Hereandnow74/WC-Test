@@ -13,21 +13,34 @@
     <ConfirmDialog class="z-20" />
     <InfoDialog class="z-20" />
 
-    <PromoteDialog v-if="(totalActive > 60 * 60 && !promoteShown) || isSupport" />
-    <SaveLoad v-if="showSaveLoad" class="z-20" @click="showSaveLoad = !showSaveLoad" />
-    <Share v-if="showShare" class="z-20" @click="showShare = !showShare" />
+    <component :is="PromoteDialog" v-if="(totalActive > 60 * 60 && !promoteShown) || isSupport" />
+    <component :is="SaveLoad" v-if="showSaveLoad" class="z-20" @click="showSaveLoad = !showSaveLoad" />
+    <component :is="Share" v-if="showShare" class="z-20" @click="showShare = !showShare" />
+    <component :is="addPerkComponent" v-if="showAddPerk" @click="toggleShowAddPerk" />
+    <component :is="addMissionComponent" v-if="showAddMission" @click="toggleShowAddMission" />
+    <component :is="settingsComponent" v-if="showSettings" @click="toggleShowSettings" />
   </main>
 </template>
 
 <script lang="ts" setup>
 import { useStore } from './store/store'
-import { showSideMenu, promoteShown, isSupport, showSaveLoad, showShare } from '~/logic'
+import {
+  isSupport, showSaveLoad, showShare, showSideMenu, showAddPerk, toggleShowAddPerk,
+  showAddMission, toggleShowAddMission, promoteShown, toggleShowSettings, showSettings,
+} from '~/logic'
 
 const { totalActive } = useStore()
+
+const addPerkComponent = computed(() => defineAsyncComponent(() => import('./components/modals/AddPerk.vue')))
+const addMissionComponent = computed(() => defineAsyncComponent(() => import('./components/modals/AddMission.vue')))
+const settingsComponent = computed(() => defineAsyncComponent(() => import('./components/modals/Settings.vue')))
+const PromoteDialog = computed(() => defineAsyncComponent(() => import('./components/modals/dialogs/PromoteDialog.vue')))
+const SaveLoad = computed(() => defineAsyncComponent(() => import('./components/modals/SaveLoad.vue')))
+const Share = computed(() => defineAsyncComponent(() => import('./components/modals/Share.vue')))
+
+// Total activity counter
 let start = new Date()
-
 const { idle } = useIdle(10000)
-
 watch(idle, () => {
   if (idle.value)
     totalActive.value += Math.round((new Date() - start) / 1000)

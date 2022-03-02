@@ -27,7 +27,7 @@
           <template v-if="!isAlredyBought(charData.uid)">
             <Button size="Small" bg-color="bg-red-500" label="buy" @click="buyCompanion" />
             <Button
-              v-if="flags.chargen && CHAR_COSTS[charData.tier - 1] <= fullStartingBudget * 0.2"
+              v-if="flags.chargen"
               size="Small"
               bg-color="bg-orange-500"
               label="yoink"
@@ -129,6 +129,7 @@
 import { findIndex, intersection, random } from 'lodash-es'
 import { CHAR_COSTS, waifusThatHasPerk, waifuTags } from '~/data/constants'
 import { lazyLoadSingleImg } from '~/logic'
+import { confirmDialog } from '~/logic/dialog'
 import { usePlayStore } from '~/store/play'
 import { useStore } from '~/store/store'
 
@@ -271,8 +272,13 @@ function captureCompanion() {
 
 function yoinkCompanion() {
   const char = charData.value
-  const sex = intersection(char.tags, ['F', 'M', 'O'])[0] || 'F'
-  companions.value.push({ uid: char.uid, name: char.name, world: char.world, sex, tier: char.tier, priceTier: priceTier(char.tier), method: 'yoink' })
+  if (CHAR_COSTS[char.tier - 1] <= fullStartingBudget.value * 0.2) {
+    const sex = intersection(char.tags, ['F', 'M', 'O'])[0] || 'F'
+    companions.value.push({ uid: char.uid, name: char.name, world: char.world, sex, tier: char.tier, priceTier: priceTier(char.tier), method: 'yoink' })
+  }
+  else {
+    confirmDialog(`20% of your current budget is <span class='text-green-500'>${fullStartingBudget.value * 0.2}</span> which is less than ${CHAR_COSTS[char.tier - 1]} needed to Yoink this character.`, 'info')
+  }
 }
 
 function slightlyCompanion(slightlyUsedData: any) {

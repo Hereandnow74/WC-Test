@@ -4,18 +4,40 @@
       <div class="flex gap-2">
         <Input v-model="title" class="flex-grow" placeholder="Perk title" :error-message="errors.title" />
         <Input v-model.number="cost" class="w-24" label="Cost" :error-message="errors.cost" />
-        <Input v-model.number="max" class="w-36" label="Max count" :error-message="errors.max" />
+        <NumberInput
+          v-model.number="max"
+          class="whitespace-nowrap"
+          label="Max count"
+          :min="1"
+          :max="99"
+          :error-message="errors.max"
+        />
       </div>
       <div class="flex gap-2">
         <Input v-model="author" class="w-1/3" placeholder="Author" :error-message="errors.author" />
         <Input v-model="source" class="flex-grow" placeholder="Source link" :error-message="errors.source" />
       </div>
-
-      <TextArea v-model="desc" place-holder="Perk description" :rows="'4'" :error-message="errors.desc" />
+      <Input v-model="special" class="flex-grow" placeholder="Special requirements / effects" :error-message="errors.special" />
+      <TextArea v-model="desc" placeholder="Perk description" :rows="'4'" :error-message="errors.desc" />
       <div class="flex gap-2">
         <AnythingInput v-model="type" class="flex-grow" placeholder="Type" :list="perkCats" :error-message="errors.type" />
         <AnythingInput v-model="subType" placeholder="Sub type" :list="subTypes[type] || []" :error-message="errors.subType" />
       </div>
+      <div v-if="requires.length" class="flex gap-x-3 flex-wrap">
+        Requires:
+        <span
+          v-for="title, i in requires "
+          :key="title"
+          class="text-blue-500 hover:text-red-500 cursor-pointer"
+          @click="requires.splice(i, 1)"
+        >{{ title }}</span>
+      </div>
+      <InputWithSearch
+        placeholder="Press enter to add required perk name"
+        :list="Object.keys(ALL_PERK_TITLES)"
+        @keypress.enter="(e) => requires.push(e.target.value)"
+        @optionClicked="(e) => requires.push(e)"
+      />
       <Input v-model="image" placeholder="Image link" :error-message="errors.image" />
       <div v-if="successMessage" class="dark:text-green-400 text-green-900">
         {{ successMessage }}
@@ -36,6 +58,7 @@ import { useForm, useField } from 'vee-validate'
 import { toFormValidator } from '@vee-validate/zod'
 
 import { proposePerk } from '~/logic'
+import { ALL_PERK_TITLES } from '~/data/constants'
 
 const perkCats = ['Challenge', 'Origin', 'Intensity', 'Binding', 'Lure', 'Other control', 'Heritage', 'Talent',
   'Defense', 'Misc', 'Generic waifu perk', 'Specific waifu perk']
@@ -53,6 +76,8 @@ const schema = toFormValidator(
     title: zod.string().max(128, 'Max length 128 chars').nonempty('Title is required'),
     author: zod.string().nonempty('Author is required'),
     source: zod.string(),
+    special: zod.string(),
+    requires: zod.string().array(),
     cost: zod.number().min(0, { message: 'Minimum Cost is 0' }),
     max: zod.number().min(1, { message: 'Minimum count is 1' }),
     type: zod.string().nonempty('Type is required'),
@@ -74,6 +99,8 @@ const { errors, handleSubmit } = useForm({
     type: '',
     subType: '',
     image: '',
+    special: '',
+    requires: [],
   },
 })
 
@@ -86,6 +113,8 @@ const { value: desc } = useField<string>('desc')
 const { value: type } = useField<string>('type')
 const { value: subType } = useField<string>('subType')
 const { value: image } = useField<string>('image')
+const { value: special } = useField<string>('special')
+const { value: requires } = useField<string[]>('requires')
 
 const addPerk = handleSubmit((values) => {
   proposePerk({ ...values, date: new Date().toString() }, () => successMessage.value = 'Perk was send successfully, await until I review and add it')

@@ -117,8 +117,11 @@ DLCgenericPerks.push({
   cost: 1,
   max: 10,
   complex: 'target',
-  desc: `This is different from completely original. While the other perk changes appearance, this changes their personality. The only restriction is that they must be from something like a fan-fiction, abridged, future version, alternate timeline etc.
-     `,
+  special: 'Only in the moment of purchase',
+  desc: `<p>This companion is different from original one, they are version from a fan-fiction, abridged, future version, alternate timeline etc.</p>
+  <p>If their tier is different from the catalog entry you need to pay appropriate difference in listed price.</p>
+  <p>If you have Warranty Plan you can change any companion personality any time, when you apply this perk to them they will disappear and appear after 1 sec of delay.</p>
+  `,
 })
 
 DLCgenericPerks.push({

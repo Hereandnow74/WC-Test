@@ -5,6 +5,18 @@
     </h2>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
+        02 March 2022
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>~85 new user submitted characters</li>
+        <li>13 new user submitted worlds</li>
+        <li>Reworked Missions page a bit added some random generated missions, need more ideas/inspirations for those</li>
+        <li>Some UI changes</li>
+        <li>Changed propose perk dialog a bit</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
         26 February 2022
       </h3>
       <ul class="list-decimal list-inside">

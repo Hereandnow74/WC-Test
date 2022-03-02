@@ -1,5 +1,5 @@
 import { isArray } from 'lodash-es'
-import { DBCharacter, DBWorld } from 'global'
+import { DBCharacter, DBWorld, PerkFull } from 'global'
 import { DLCgenericPerks, DLChomes, DLCperks, DLCtalents, DLCheritages, DLClureExpansions, DLCbindings, DLClures, DLCotherControls, DLCridePerks } from './DLCs'
 import { rides } from './rides'
 import { homes, demiplane, dungeon } from './demdun'
@@ -154,7 +154,6 @@ export const waifuTags = {
   az: { tag: 'Amazon', short: 'az', effect: '', desc: '', color: 'bg-[#fdb978] text-black' },
   de: { tag: 'Demigod', short: 'de', effect: '', desc: '', color: 'bg-teal-500' },
   el: { tag: 'Elf', short: 'el', effect: '', desc: '', color: 'bg-[#308418]' },
-  dl: { tag: 'Dark elf', short: 'dl', effect: '', desc: '', color: 'bg-[#5a3c68]' },
   ct: { tag: 'Catgirl', short: 'ct', effect: '', desc: '', color: 'bg-[#de7b0a]' },
   vp: { tag: 'Vampire', short: 'vp', effect: '', desc: '', color: 'bg-[#b52865]' },
   pt: { tag: 'Priest', short: 'pt', effect: '', desc: '', color: 'bg-[#ffffff] text-black' },
@@ -179,7 +178,7 @@ function addTitles<T>(res: any, perks: T[]) {
 }
 
 export const ALL_PERK_TITLES = computed(() => {
-  const result = {}
+  const result = {} as Record<string, PerkFull>
   const all = [intensity, bindings, lures, lureExpansions, otherControls, heritages, homes, demiplane, dungeon, defenses, talents, perks, genericPerks, waifu_perks, DLCperks, DLChomes, DLCgenericPerks, DLCheritages, DLCtalents, DLClureExpansions, DLCbindings, DLClures, DLCotherControls, DLCridePerks]
   all.forEach(p => addTitles<typeof p[0]>(result, p))
   return result
@@ -284,7 +283,7 @@ export const allWorlds = computed(() => {
 })
 
 export const allWorldsNoCondition = computed(() => {
-  const worlds: any[] = []
+  const worlds: DBWorld[] = []
 
   const addConditions = (x: DBWorld) => {
     if (x.condition)

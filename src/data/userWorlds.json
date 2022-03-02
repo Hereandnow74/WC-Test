@@ -138,16 +138,7 @@
       }
     ]
   },
-  {
-    "worldName": "Horizon: Zero Dawn",
-    "rating": 5,
-    "condition": [
-      {
-        "name": "Pre-Derangement",
-        "rating": 3
-      }
-    ]
-  },
+  {"worldName":"Horizon: Zero Dawn","rating":5,"condition":[{"name":"Pre-Derangement","rating":3},{"name":"Pre-Faro Plague","rating":8}]},
   {
     "worldName": "Lazy Dungeon Master",
     "rating": 6,
@@ -417,5 +408,17 @@
   {"worldName":"Rakudai Kishi no Eiyuutan","rating":6,"image":"https://cdn11.neko-sama.xyz/1/1570p4orCOfy.jpg"},
   {"worldName":"Sora no Otoshimono","rating":1,"image":"https://i5.walmartimages.com/asr/86620f1b-a665-491b-9155-8a3f030a5579_1.92ffb0313751299a7522a8d0cac12743.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF"},
   {"worldName":"The Wolf Among Us","rating":5,"image":"https://i.imgur.com/DVENIP5.jpeg","condition":[{"rating":7,"name":"Pre-Fabletown"},{"name":"Present","rating":5}]},
-  {"worldName":"World's End Harem","rating":2,"image":"https://i.imgur.com/WoTCPFc_d.webp?maxwidth=640&shape=thumb&fidelity=medium"}
+  {"worldName":"World's End Harem","rating":2,"image":"https://i.imgur.com/WoTCPFc_d.webp?maxwidth=640&shape=thumb&fidelity=medium"},
+  {"worldName":"Asura's Wrath","rating":10,"image":"https://i.imgur.com/mR4Xj9c.jpeg"},
+  {"worldName":"Dynasty Warriors","rating":5,"image":"https://static3.cbrimages.com/wordpress/wp-content/uploads/2021/11/Dynasty-Warriors.jpg"},
+  {"worldName":"Elden Ring","rating":9,"image":"https://cdn.donmai.us/original/cb/e3/__tarnished_akira_and_1_more_drawn_by_katlego__cbe3563dfa91de8c82f80dff65ebc621.jpg","additional":"Melina allows you and your waifus to pay for level-ups with Runes, just like their counterparts from the other games."},
+  {"worldName":"Hellboy","rating":4,"condition":[{"rating":4,"name":"WW2"},{"rating":5,"name":"Comicverse"}]},
+  {"worldName":"I Have a Mansion in the Post-apocalyptic World","rating":3,"condition":[{"rating":3,"name":"Earth"},{"name":"Post-apocalyptic World","rating":7}]},
+  {"worldName":"Misfit of Demon King Academy","rating":6},
+  {"worldName":"Outlaw Star","rating":4},
+  {"worldName":"Path of Exile","rating":7,"image":"https://i.imgur.com/S42mggf.png"},
+  {"worldName":"Spy X Family","rating":3},
+  {"worldName":"Stardew Valley","rating":2},
+  {"worldName":"Teen Wolf","rating":4,"image":"https://seriestvinfo.files.wordpress.com/2017/09/122.jpg","additional":"Were-Waifus/Husbandos are inmune to full moons when captured"},
+  {"worldName":"Titanfall","rating":4,"image":"https://i.imgur.com/4IBTjN9.jpg","condition":[{"name":"Titanfall 1","rating":6},{"rating":6,"name":"Titanfall 2"},{"rating":4,"name":"Apex Games"}]}
 ]

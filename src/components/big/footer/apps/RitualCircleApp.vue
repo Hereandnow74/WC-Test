@@ -67,13 +67,6 @@
       </div> -->
     </div>
     <Desc v-else desc="You don't have a Ritual Circle perk, so no rituals for you buddy." />
-    <Button
-      label="Back"
-      icon="akar-icons:arrow-back-thick"
-      size="Small"
-      class="self-center"
-      @click="toggleAppMode"
-    />
   </div>
 </template>
 

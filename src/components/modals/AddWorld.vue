@@ -7,7 +7,7 @@
           v-model.number="rating"
           label="Rating"
           :min="1"
-          :max="11"
+          :max="10"
           :error-message="errors.rating"
         />
       </div>
@@ -16,7 +16,7 @@
         <span v-if="errors.additional" class="text-xs">{{ errors.additional }}</span>
         <TextArea
           v-model="additional"
-          place-holder="Some specific change in the wolrd so it would fit the Company theme more."
+          placeholder="Some specific change in the world so it would fit the Company theme more."
         />
       </Foldable>
       <Foldable title="Conditions" :is-open="isOpen" class="flex flex-col min-h-0">

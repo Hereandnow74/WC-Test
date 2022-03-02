@@ -7,7 +7,6 @@
       <WorldCard :world="world" class=" flex-grow-0" />
     </div>
     <div class="flex gap-2 self-center">
-      <Button label="Back" icon="akar-icons:arrow-back-thick" size="Small" @click="toggleAppMode" />
       <Button label="Random World" size="Small" @click="getRandomWorld" />
     </div>
   </div>
@@ -15,7 +14,7 @@
 
 <script lang="ts" setup>
 import { allWorldsNoCondition } from '~/data/constants'
-import { randomWorld, toggleAppMode } from '~/logic'
+import { randomWorld } from '~/logic'
 
 const world = ref<any>({})
 

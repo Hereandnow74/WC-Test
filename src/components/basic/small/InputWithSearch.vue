@@ -15,7 +15,7 @@
         v-for="name in searchResult"
         :key="name.item"
         class="hover:bg-gray-600"
-        @click="value = name.item"
+        @click="optionClicked(name.item)"
       >
         {{ name.item }}
       </div>
@@ -26,6 +26,7 @@
 <script lang='ts' setup>
 import Fuse from 'fuse.js'
 import tippy from 'tippy.js'
+import type { PropType } from 'vue'
 
 const props = defineProps({
   idd: {
@@ -49,7 +50,7 @@ const props = defineProps({
     default: '',
   },
   list: {
-    type: Array,
+    type: Array as PropType<string[]>,
     default: () => [],
   },
 })
@@ -85,7 +86,12 @@ watch(searchResult, () => {
   }
 })
 
-const emit = defineEmits(['update:modelValue'])
+const emit = defineEmits(['update:modelValue', 'optionClicked'])
 
 watch(value, () => emit('update:modelValue', value.value))
+
+function optionClicked(val: string) {
+  value.value = val
+  emit('optionClicked', val)
+}
 </script>

@@ -27,7 +27,7 @@
         <TextArea
           v-model="args"
           rows="3"
-          place-holder="Arguments on why tier is incorrect, preferable with examples of similar characters from Official Catalog Spreadsheet (have tag Official WC). "
+          placeholder="Arguments on why tier is incorrect, preferable with examples of similar characters from Official Catalog Spreadsheet (have tag Official WC). "
           :error-message="errors.args"
         />
       </div>

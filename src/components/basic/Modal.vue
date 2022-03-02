@@ -1,12 +1,12 @@
 <template>
   <div class="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-40" @mousedown.left="$emit('click', $event)">
     <div
-      class="max-w-screen-md min-w-[320px] md:max-h-2/3 shadow bg-gray-100 dark:bg-warm-gray-700
+      class="max-w-screen-md min-w-[320px] md:max-h-2/3 shadow bg-gray-100 dark:bg-warm-gray-800
      self-center flex flex-col"
       @click.stop
       @mousedown.stop
     >
-      <div class="flex bg-gray-200 dark:bg-warm-gray-800">
+      <div class="flex bg-gray-200 dark:bg-warm-gray-900">
         <p class="flex-grow text-center select-none">
           {{ label }}
         </p>

@@ -1,17 +1,17 @@
 <template>
-  <div class="flex flex-col">
-    <div class="flex items-center rounded border border-gray-700 bg-white" @click="showTippy">
+  <div class="flex flex-col select-none">
+    <div class="flex items-center rounded border border-gray-700 bg-gray-100 dark:(bg-warm-gray-600 border-warm-gray-500)" @click="showTippy">
       <input
         id="anything"
         ref="tippyEl"
         v-model="value"
         type="text"
         :placeholder="placeholder"
-        class="rounded-l text-gray-800 px-2 w-full"
+        class="rounded-l dark:bg-warm-gray-700 px-2 w-full"
         outline="none active:none"
         autocomplete="off"
       />
-      <div class="flex items-center hover:bg-gray-200 text-gray-800">
+      <div class="flex items-center hover:text-gray-500 text-gray-800 dark:text-gray-200 cursor-pointer">
         <bx:bxs-chevron-up v-if="tippyShown" />
         <bx:bxs-chevron-down v-else />
       </div>
