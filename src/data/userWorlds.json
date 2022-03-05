@@ -1,7 +1,487 @@
 [
   {
-    "worldName": "Against the Gods",
-    "rating": 9
+    "worldName": "My Little Pony",
+    "rating": 1
+  },
+  {
+    "worldName": "Scooby Doo",
+    "rating": 1,
+    "condition": [
+      {
+        "name": "Ghoul School",
+        "rating": 3
+      }
+    ]
+  },
+  {
+    "worldName": "Digimon",
+    "rating": 1,
+    "additional": "You can pay 5 points to have your Digimon gain human forms that they can freely transform to and back from",
+    "condition": [
+      {
+        "name": "Adventure",
+        "rating": 4
+      },
+      {
+        "name": "Adventure 2",
+        "rating": 4
+      },
+      {
+        "name": "Tamers",
+        "rating": 5
+      },
+      {
+        "rating": 6,
+        "name": "Frontier"
+      },
+      {
+        "rating": 5,
+        "name": "Savers"
+      },
+      {
+        "rating": 4,
+        "name": "DS games"
+      },
+      {
+        "name": "Cyber Sleuth",
+        "rating": 4
+      }
+    ]
+  },
+  {
+    "worldName": "Tier 1 Town (Meta)",
+    "rating": 1,
+    "additional": "A special setting taking place in a large town or small city one could find a generic slice of life anime.\n\nContains any tier 1 waifus of your choice for potential capture.\n\nDue to the world's slice of life nature, nobody will age, be maimed, or die as long as you're here, though you may optionally turn this off. Nobody will find any of this weird.\n\nIf you select Tier 2 Town, the protections against maiming and death are automatically turned off, but you can also encounter any tier 2 waifus of your choice.",
+    "condition": [
+      {
+        "rating": 2,
+        "name": "Tier 2 Town"
+      }
+    ]
+  },
+  {
+    "worldName": "Yu-Gi-Oh!",
+    "rating": 1,
+    "additional": "May purchase decks from catalog for 1 point. Summoning methods of later generations are not usable on duel disks of earlier generations. Psychic Dueling can be bought using local power template option.",
+    "condition": [
+      {
+        "name": "Ancient Egypt",
+        "rating": 4
+      },
+      {
+        "rating": 5,
+        "name": "Duel Monsters"
+      },
+      {
+        "name": "GX",
+        "rating": 5
+      },
+      {
+        "name": "5ds",
+        "rating": 5
+      },
+      {
+        "rating": 4,
+        "name": "Zexal"
+      },
+      {
+        "name": "Arc V",
+        "rating": 5
+      },
+      {
+        "rating": 7,
+        "name": "Duel Terminal"
+      },
+      {
+        "rating": 6,
+        "name": "World Legacy"
+      }
+    ]
+  },
+  {
+    "worldName": "Food Wars!: Shokugeki no Soma",
+    "rating": 1,
+    "image": "https://kbimages1-a.akamaihd.net/006f0b00-344e-4e7c-9b0e-04704bcf5d77/1200/1200/False/food-wars-shokugeki-no-soma-vol-11.jpg"
+  },
+  {
+    "worldName": "Huniepop",
+    "rating": 1
+  },
+  {
+    "worldName": "Sora no Otoshimono",
+    "rating": 1,
+    "image": "https://i5.walmartimages.com/asr/86620f1b-a665-491b-9155-8a3f030a5579_1.92ffb0313751299a7522a8d0cac12743.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF"
+  },
+  {
+    "worldName": "Minecraft",
+    "rating": 2,
+    "condition": [
+      {
+        "name": "RL-Craft",
+        "rating": 7
+      }
+    ]
+  },
+  {
+    "worldName": "Miraclous: Tales of Ladybug and Cat Noir",
+    "rating": 2
+  },
+  {
+    "worldName": "Archer",
+    "rating": 2
+  },
+  {
+    "worldName": "Life With a Slave - Teaching Feeling",
+    "rating": 2
+  },
+  {
+    "worldName": "Summertime Saga",
+    "rating": 2
+  },
+  {
+    "worldName": "Hanaukyo Maid Team",
+    "rating": 2,
+    "image": "https://i0.wp.com/lezwatchtv.com/wp-content/uploads/2018/06/HMT.jpg?w=960&ssl=1"
+  },
+  {
+    "worldName": "Total Drama",
+    "rating": 2,
+    "condition": [
+      {
+        "name": "Contestant",
+        "rating": 3
+      },
+      {
+        "rating": 4,
+        "name": "Revenge of the Island"
+      }
+    ]
+  },
+  {
+    "worldName": "Miss Kobayashi's Dragon Maid",
+    "rating": 2,
+    "image": "https://upload.wikimedia.org/wikipedia/en/2/2d/Miss_Kobayashi%27s_Dragon_Maid%2C_volume_1.jpg"
+  },
+  {
+    "worldName": "The Boys",
+    "rating": 2,
+    "image": "https://cdnb.artstation.com/p/assets/images/images/031/128/309/large/mayank-kumarr-1.jpg?1602685214",
+    "condition": [
+      {
+        "name": "Comics",
+        "rating": 3
+      }
+    ]
+  },
+  {
+    "worldName": "World's End Harem",
+    "rating": 2,
+    "image": "https://i.imgur.com/WoTCPFc_d.webp?maxwidth=640&shape=thumb&fidelity=medium"
+  },
+  {
+    "worldName": "Stardew Valley",
+    "rating": 2
+  },
+  {
+    "worldName": "Harry Potter",
+    "rating": 3,
+    "image": "https://i.imgur.com/MMoYDljl.jpg",
+    "condition": [
+      {
+        "rating": 3,
+        "name": "First book"
+      },
+      {
+        "rating": 4,
+        "name": "Fifth book"
+      },
+      {
+        "rating": 5,
+        "name": "1971 (Open Warfare)"
+      }
+    ]
+  },
+  {
+    "worldName": "Yamada-kun and the Seven Witches",
+    "rating": 3
+  },
+  {
+    "worldName": "Hellsing Abridged",
+    "rating": 3
+  },
+  {
+    "worldName": "Mushroom Kingdom",
+    "rating": 3
+  },
+  {
+    "worldName": "JoJo's Bizarre Adventure",
+    "rating": 3,
+    "image": "https://i.imgur.com/Y8qbM7Xl.png",
+    "condition": [
+      {
+        "name": "Phantom Blood",
+        "rating": 3
+      },
+      {
+        "name": "Parts 3,4,7,8",
+        "rating": 4
+      },
+      {
+        "rating": 5,
+        "name": "Battle Tendency, Golden Wind"
+      },
+      {
+        "rating": 6,
+        "name": "Stone Ocean"
+      }
+    ]
+  },
+  {
+    "worldName": "Asobi Ni Iku Yo",
+    "rating": 3
+  },
+  {
+    "worldName": "Metal Gear",
+    "rating": 3,
+    "condition": [
+      {
+        "rating": 3,
+        "name": "1964 (MGS3)"
+      },
+      {
+        "rating": 4,
+        "name": "1970-1984 (MGS:PO/MGSV:TPP)"
+      },
+      {
+        "name": "1995-2009 (MG/MGS2:SoL)",
+        "rating": 4
+      },
+      {
+        "name": "2014 (MG4:GotP)",
+        "rating": 5
+      },
+      {
+        "rating": 6,
+        "name": "2018 (MGR:R)"
+      }
+    ]
+  },
+  {
+    "worldName": "Subnautica",
+    "rating": 3,
+    "condition": [
+      {
+        "rating": 3,
+        "name": "First Game"
+      },
+      {
+        "rating": 4,
+        "name": "Below Zero"
+      }
+    ]
+  },
+  {
+    "worldName": "Black Lagoon",
+    "rating": 3
+  },
+  {
+    "worldName": "Command & Conquer",
+    "rating": 3,
+    "additional": "Rating is variable by time period/Timeline.",
+    "condition": [
+      {
+        "name": "Red Alert/2/Yuri's Revenge",
+        "rating": 3
+      },
+      {
+        "name": "Red Alert 3",
+        "rating": 4
+      },
+      {
+        "rating": 4,
+        "name": "Tiberian Dawn/Sun"
+      },
+      {
+        "rating": 5,
+        "name": "Tiberium Wars/Twilight/Scrin Invasion"
+      }
+    ]
+  },
+  {
+    "worldName": "Little Witch Academia",
+    "rating": 3
+  },
+  {
+    "worldName": "Gargoyles",
+    "rating": 3,
+    "condition": [
+      {
+        "name": "1994",
+        "rating": 3
+      },
+      {
+        "name": "10th century AD",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "worldName": "Innocent Witches",
+    "rating": 3
+  },
+  {
+    "worldName": "Takarakuji de 40 Oku Atattanda kedo Isekai ni Ijuusuru",
+    "rating": 3
+  },
+  {
+    "worldName": "Cinnamon Bun",
+    "rating": 3,
+    "additional": "The world has a system, and actions taken while lacking a class will give a class appropriate to the actions(acting adorable gives cinnamon bun class, killing a bunch of people gives murderer class, etc) this only applies until you have a class. doing things associated with your class gives class skills. The skills start at rank F and are improved by doing them. Rank D and above require skill points, more skill points are required the higher rank the skill is. Killing things and doing class-appropriate actions levels you up and gives class skill points. Doing things unrelated to your class may give a general skill. General skill points are earned by completing quests for the world and killing dungeons."
+  },
+  {
+    "worldName": "Fairy Gone",
+    "rating": 3
+  },
+  {
+    "worldName": "Soul Calibur",
+    "rating": 3
+  },
+  {
+    "worldName": "Conan the barbarian",
+    "rating": 3,
+    "image": "https://www.giantfreakinrobot.com/wp-content/uploads/2020/09/conan-the-barbarian-feature-1200x675.jpg",
+    "condition": [
+      {
+        "name": "Comic Book continuity",
+        "rating": 4
+      },
+      {
+        "name": "Movies",
+        "rating": 3
+      }
+    ]
+  },
+  {
+    "worldName": "Street Fighter",
+    "rating": 3
+  },
+  {
+    "worldName": "The Venture Brothers",
+    "rating": 3
+  },
+  {
+    "worldName": "Twilight",
+    "rating": 3,
+    "image": "https://mythbank.com/wp-content/uploads/2019/10/twilight-banner.jpg"
+  },
+  {
+    "worldName": "Ark: Evolution",
+    "rating": 3,
+    "additional": "All Fauna are capturable as familiars by the contractor or by companions.  They may be captured by in universe methods or by stamp or other company provided methods.  No credits are obtained through this.",
+    "condition": [
+      {
+        "name": "Arctic Biome",
+        "rating": 4
+      },
+      {
+        "name": "Mythic Biome",
+        "rating": 5
+      },
+      {
+        "rating": 7,
+        "name": "Infected Earth"
+      }
+    ]
+  },
+  {
+    "worldName": "Hocus Pocus",
+    "rating": 3
+  },
+  {
+    "worldName": "Medabots",
+    "rating": 3,
+    "image": "https://upload.wikimedia.org/wikipedia/en/3/30/Medabots.jpg",
+    "condition": [
+      {
+        "name": "Anime Version 3",
+        "rating": 3
+      },
+      {
+        "name": "Game Version 1",
+        "rating": 1
+      }
+    ]
+  },
+  {
+    "worldName": "How to Train Your Dragon",
+    "rating": 3,
+    "condition": [
+      {
+        "rating": 4,
+        "name": "Dragons Raiding"
+      }
+    ]
+  },
+  {
+    "worldName": "Jurassic Park",
+    "rating": 3,
+    "condition": [
+      {
+        "rating": 3,
+        "name": "World Jurassic"
+      }
+    ]
+  },
+  {
+    "worldName": "Kim Possible",
+    "rating": 3
+  },
+  {
+    "worldName": "The Long Dark",
+    "rating": 3,
+    "image": "https://cdn.akamai.steamstatic.com/steam/apps/305620/capsule_616x353.jpg?t=1638931698",
+    "condition": [
+      {
+        "name": "Whiteout",
+        "rating": 4
+      },
+      {
+        "rating": 5,
+        "name": "The Hunted"
+      }
+    ]
+  },
+  {
+    "worldName": "The Venture Bros",
+    "rating": 3
+  },
+  {
+    "worldName": "The Witch",
+    "rating": 3
+  },
+  {
+    "worldName": "Mermaid Melody",
+    "rating": 3,
+    "image": "https://m.media-amazon.com/images/M/MV5BYTg1NDhhYjQtMGJlMC00ZmM3LWE4MzgtNjBjYTk2MTA1MTIxXkEyXkFqcGdeQXVyODI2MTU1ODE@._V1_.jpg",
+    "additional": "The mermaids are able to control their transformations when entering water rather than automatically turning into mermaids. Their pets serve as familiars."
+  },
+  {
+    "worldName": "I Have a Mansion in the Post-apocalyptic World",
+    "rating": 3,
+    "condition": [
+      {
+        "rating": 3,
+        "name": "Earth"
+      },
+      {
+        "name": "Post-apocalyptic World",
+        "rating": 7
+      }
+    ]
+  },
+  {
+    "worldName": "Spy X Family",
+    "rating": 3
   },
   {
     "worldName": "Battletech",
@@ -25,21 +505,628 @@
       }
     ]
   },
-  {"worldName":"Claymore","rating":7,"image":"https://pbs.twimg.com/media/EFCJ0oIUEAEPr-i.jpg"},
+  {
+    "worldName": "Rune Factory",
+    "rating": 4
+  },
+  {
+    "worldName": "Hunter x Hunter",
+    "rating": 4,
+    "condition": [
+      {
+        "name": "Known World (human continents)",
+        "rating": 4
+      },
+      {
+        "name": "Dark Continent",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "worldName": "Mushoku Tensei",
+    "rating": 4,
+    "condition": [
+      {
+        "name": "Outside the Demon Continent",
+        "rating": 4
+      },
+      {
+        "name": "Demon Continent",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "worldName": "Gate: And thus the JSDF fought there",
+    "rating": 4,
+    "condition": [
+      {
+        "rating": 2,
+        "name": "Pre open-gate: Ginza"
+      },
+      {
+        "name": "Initial opening of the gate: Ginza",
+        "rating": 4
+      },
+      {
+        "rating": 5,
+        "name": "Falmart"
+      }
+    ]
+  },
+  {
+    "worldName": "Grrlpower",
+    "rating": 4
+  },
+  {
+    "worldName": "Highschool of the Dead",
+    "rating": 4,
+    "condition": [
+      {
+        "rating": 4,
+        "name": "Starting from Z-Day"
+      }
+    ]
+  },
+  {
+    "worldName": "Re:Monster",
+    "rating": 4
+  },
+  {
+    "worldName": "Tenjou Tenge",
+    "rating": 4,
+    "additional": "Possession Defense will protect you from Noriko Dragon Roar ability.\n\nInformation Defense will protect you from the Dragon Eyes prediction ability."
+  },
+  {
+    "worldName": "Until Dawn",
+    "rating": 4,
+    "additional": "Possession Defense will protect you from becoming a Wendigo"
+  },
+  {
+    "worldName": "Infinite Stratos",
+    "rating": 4,
+    "image": "https://flxt.tmsimg.com/assets/p18340693_b_v8_ab.jpg"
+  },
+  {
+    "worldName": "Hitman Reborn",
+    "rating": 4
+  },
+  {
+    "worldName": "The Walking Dead",
+    "rating": 4,
+    "condition": [
+      {
+        "rating": 5,
+        "name": "Zombie can remain silent for surprise attacks, and decay much slower"
+      }
+    ]
+  },
+  {
+    "worldName": "Yakuza 0",
+    "rating": 4
+  },
+  {
+    "worldName": "BTVS/Angel",
+    "rating": 4
+  },
+  {
+    "worldName": "Kuma Kuma Kuma Bear",
+    "rating": 4
+  },
+  {
+    "worldName": "Death Note",
+    "rating": 4,
+    "condition": [
+      {
+        "rating": 4,
+        "name": "Standard"
+      }
+    ]
+  },
+  {
+    "worldName": "Wolfenstein",
+    "rating": 4,
+    "image": "https://www.pcgameshardware.de/screenshots/original/2013/05/GSA_Berlin_Hotel_Final_b2teaser_169.png"
+  },
+  {
+    "worldName": "Berserk",
+    "rating": 4,
+    "image": "https://mlpnk72yciwc.i.optimole.com/cqhiHLc.WqA8~2eefa/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2021/05/eae3e4859d36db8dab2c149e36ee2f62.jpg",
+    "condition": [
+      {
+        "rating": 3,
+        "name": "Pre-Eclipse"
+      },
+      {
+        "rating": 5,
+        "name": "Post-Eclipse"
+      }
+    ]
+  },
+  {
+    "worldName": "I've Been Killing Slimes for 300 Years and Maxed Out My Level",
+    "rating": 4,
+    "additional": "Entering this world or gaining a companion from here will allow access to the world’s leveling system"
+  },
+  {
+    "worldName": "The Terminator",
+    "rating": 4,
+    "image": "https://www.planocritico.com/wp-content/uploads/2015/06/O-Exterminador-do-Futuro-The-Terminator-EUA-1984.jpg",
+    "additional": "John Connor has a T-800 or Cameron as a familiar. Terminator Genisys Sarah Connor has a T-800 as a familiar.",
+    "condition": [
+      {
+        "name": "Terminator",
+        "rating": 3
+      },
+      {
+        "name": "Terminator 2: Past.",
+        "rating": 4
+      },
+      {
+        "name": "Terminator 2: Future.",
+        "rating": 5
+      },
+      {
+        "rating": 5,
+        "name": "Terminator 3:"
+      },
+      {
+        "name": "Terminator Genisys",
+        "rating": 5
+      },
+      {
+        "name": "Terminator: Dark Fate-Past",
+        "rating": 5
+      },
+      {
+        "rating": 6,
+        "name": "Terminator: Dark Fate-Future"
+      },
+      {
+        "name": "Terminator: The Sarah Connor Chronicles",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "worldName": "Rainbow Six Siege",
+    "rating": 4
+  },
+  {
+    "worldName": "Merlin BBC",
+    "rating": 4,
+    "image": "https://i0.wp.com/thenerdsofcolor.org/wp-content/uploads/2015/12/1024px-series_5_landscape_poster-2.jpg?resize=800%2C598&ssl=1"
+  },
+  {
+    "worldName": "The Misfits",
+    "rating": 4,
+    "image": "https://4.bp.blogspot.com/-cpOLLkfvHWk/WcKr5qTZB_I/AAAAAAAABlI/ruuFqnzDJlYYDsd3YKuOyW9iztdqwHKuQCLcBGAs/s1600/mis.jpg"
+  },
+  {
+    "worldName": "Jackie Chan Adventures",
+    "rating": 4,
+    "image": "https://images-na.ssl-images-amazon.com/images/I/81huuaiNR8L._RI_.jpg",
+    "additional": "Shendu has all 12 talismans, and Tarakudo has all nine Oni Generals as familiars."
+  },
+  {
+    "worldName": "Darkest Dungeon",
+    "rating": 4,
+    "condition": [
+      {
+        "rating": 5,
+        "name": "In the Hamlet"
+      },
+      {
+        "rating": 6,
+        "name": "With DLCs"
+      }
+    ]
+  },
+  {
+    "worldName": "Hellboy",
+    "rating": 4,
+    "condition": [
+      {
+        "rating": 4,
+        "name": "WW2"
+      },
+      {
+        "rating": 5,
+        "name": "Comicverse"
+      }
+    ]
+  },
+  {
+    "worldName": "Outlaw Star",
+    "rating": 4
+  },
+  {
+    "worldName": "Teen Wolf",
+    "rating": 4,
+    "image": "https://seriestvinfo.files.wordpress.com/2017/09/122.jpg",
+    "additional": "Were-Waifus/Husbandos are inmune to full moons when captured"
+  },
+  {
+    "worldName": "Titanfall",
+    "rating": 4,
+    "image": "https://i.imgur.com/4IBTjN9.jpg",
+    "condition": [
+      {
+        "name": "Titanfall 1",
+        "rating": 6
+      },
+      {
+        "rating": 6,
+        "name": "Titanfall 2"
+      },
+      {
+        "rating": 4,
+        "name": "Apex Games"
+      }
+    ]
+  },
   {
     "worldName": "Code Geass",
     "rating": 5
   },
-  {"worldName":"Cradle (Will Wight)","rating":10,"condition":[{"name":"No active crisis","rating":6},{"rating":7,"name":"Elder Dragons active"},{"name":"Start of Story","rating":8}]},
   {
-    "worldName": "Date A Live",
-    "rating": 8
+    "worldName": "Horizon: Zero Dawn",
+    "rating": 5,
+    "condition": [
+      {
+        "name": "Pre-Derangement",
+        "rating": 3
+      },
+      {
+        "name": "Pre-Faro Plague",
+        "rating": 8
+      }
+    ]
   },
   {
-    "worldName": "Devil May Cry",
-    "rating": 8
+    "worldName": "Release That Witch",
+    "rating": 5,
+    "image": "https://i.imgur.com/9km50Lrm.png",
+    "condition": [
+      {
+        "name": "First Battle of Divine Will",
+        "rating": 6
+      }
+    ]
   },
-  {"worldName":"Dragonball","rating":9,"condition":[{"rating":7,"name":"Saiyans Attack"},{"name":"Androids Awaken","rating":8},{"rating":10,"name":"Majin Buu unsealed"},{"name":"Original Adventure","rating":5}]},
+  {
+    "worldName": "Shadowrun",
+    "rating": 5,
+    "condition": [
+      {
+        "name": "Crash 2.0",
+        "rating": 5
+      },
+      {
+        "rating": 6,
+        "name": "Dragonfall"
+      }
+    ]
+  },
+  {
+    "worldName": "Negima!",
+    "rating": 5,
+    "condition": [
+      {
+        "rating": 5,
+        "name": "Earth"
+      },
+      {
+        "rating": 7,
+        "name": "Magic World (aka Mundus Magicus)"
+      },
+      {
+        "rating": 8,
+        "name": "UQ Holder timeline"
+      }
+    ]
+  },
+  {
+    "worldName": "Invincible",
+    "rating": 5,
+    "image": "https://i2.wp.com/www.popsfera.com.br/wp-content/uploads/2020/07/guardians-of-the-globe-destaque.jpg?resize=800%2C445&ssl=1",
+    "condition": [
+      {
+        "rating": 7,
+        "name": "Invincible Comics"
+      }
+    ]
+  },
+  {
+    "worldName": "Interspecies Reviewers",
+    "rating": 5,
+    "image": "https://images-na.ssl-images-amazon.com/images/I/51XPYZiPqAL.jpg"
+  },
+  {
+    "worldName": "Kuroinu",
+    "rating": 5,
+    "condition": [
+      {
+        "name": "Pre-Founding of the 'Kuroinu' Mercenary Group",
+        "rating": 4
+      }
+    ]
+  },
+  {
+    "worldName": "Divinity",
+    "rating": 5
+  },
+  {
+    "worldName": "Inheritance",
+    "rating": 5,
+    "additional": "When capturing a rider one also captures their dragon."
+  },
+  {
+    "worldName": "1984",
+    "rating": 5
+  },
+  {
+    "worldName": "Youjo Senki",
+    "rating": 5,
+    "image": "https://nefariousreviews.files.wordpress.com/2018/09/saga-of-tanya-the-evil-featured.jpg"
+  },
+  {
+    "worldName": "Babylon 5",
+    "rating": 5,
+    "condition": [
+      {
+        "rating": 7,
+        "name": "Shadow War"
+      }
+    ]
+  },
+  {
+    "worldName": "Warcraft",
+    "rating": 5,
+    "condition": [
+      {
+        "name": "During the Events of WoW 'Classic'",
+        "rating": 6
+      },
+      {
+        "name": "During the Events of WoW 'The Burning Crusade'",
+        "rating": 7
+      },
+      {
+        "name": "During the Events of WoW 'Wrath of the Lich King'",
+        "rating": 8
+      },
+      {
+        "rating": 8,
+        "name": "During the Events of WoW 'Cataclysm'"
+      },
+      {
+        "rating": 7,
+        "name": "During the Events of WoW 'Mists of Pandaria'"
+      },
+      {
+        "rating": 7,
+        "name": "During the Events of WoW 'Warlords of Draenor'"
+      },
+      {
+        "rating": 8,
+        "name": "During the Events of WoW 'Legion'"
+      },
+      {
+        "rating": 8,
+        "name": "During the Events of WoW 'Battle for Azeroth'"
+      },
+      {
+        "name": "During the Events of WoW 'Shadowlands'",
+        "rating": 9
+      }
+    ]
+  },
+  {
+    "worldName": "The Owl House",
+    "rating": 5
+  },
+  {
+    "worldName": "Shaman King",
+    "rating": 5,
+    "condition": [
+      {
+        "name": "Shaman Fight ( Canon)",
+        "rating": 8
+      }
+    ]
+  },
+  {
+    "worldName": "Supernatural",
+    "rating": 5,
+    "image": "https://c.tenor.com/p8OiLUApwWUAAAAC/supernatural-intro.gif"
+  },
+  {
+    "worldName": "Orc Hero Story – Discovery Chronicles",
+    "rating": 5,
+    "condition": [
+      {
+        "rating": 6,
+        "name": "War of Vastonia"
+      }
+    ]
+  },
+  {
+    "worldName": "Soul Eater",
+    "rating": 5,
+    "image": "https://static1.cbrimages.com/wordpress/wp-content/uploads/2019/10/Soul-Eater-featured-image-Cropped-1.jpg",
+    "additional": "It is recommended that you purchase a madness nullifying or sanity protecting power/defense."
+  },
+  {
+    "worldName": "She-Ra and the Princesses of Power",
+    "rating": 5,
+    "additional": "Captured Princess magic become independent of their Runestone."
+  },
+  {
+    "worldName": "Baki: The Grappler",
+    "rating": 5
+  },
+  {
+    "worldName": "Brütal Legend",
+    "rating": 5,
+    "image": "https://cdna.artstation.com/p/assets/images/images/035/340/972/large/joseph-richard-0103-21-concept-brutallegend2-color.jpg?1614714162"
+  },
+  {
+    "worldName": "Danny Phantom",
+    "rating": 5,
+    "additional": "All ghost beacome halfa's, being able to change between their new human half-human-half-ghsot form or their full ghost form",
+    "condition": [
+      {
+        "rating": 5,
+        "name": "Earth Dimension"
+      },
+      {
+        "rating": 7,
+        "name": "Ghost Dimension"
+      }
+    ]
+  },
+  {
+    "worldName": "Gravity Falls",
+    "rating": 5
+  },
+  {
+    "worldName": "Jak & Daxter",
+    "rating": 5,
+    "condition": [
+      {
+        "name": "any other jak game",
+        "rating": 7
+      }
+    ]
+  },
+  {
+    "worldName": "Kantai Collection",
+    "rating": 5
+  },
+  {
+    "worldName": "Keys to the Kingdom",
+    "rating": 5
+  },
+  {
+    "worldName": "Maggot Baits",
+    "rating": 5
+  },
+  {
+    "worldName": "Ghost in the Shell",
+    "rating": 5,
+    "image": "https://images.amcnetworks.com/ifccenter.com/wp-content/uploads/2020/01/ghost-in-the-shell-1280.jpg"
+  },
+  {
+    "worldName": "Half-Life",
+    "rating": 5,
+    "condition": [
+      {
+        "rating": 5,
+        "name": "Black Mesa Incident"
+      },
+      {
+        "rating": 6,
+        "name": "Portal Storm"
+      },
+      {
+        "name": "Seven Hour War",
+        "rating": 7
+      },
+      {
+        "rating": 5,
+        "name": "Half-Life 2"
+      },
+      {
+        "rating": 5,
+        "name": "Half-Life: Alyx"
+      },
+      {
+        "name": "Xen",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "worldName": "The Dragon Prince",
+    "rating": 5,
+    "condition": [
+      {
+        "name": "Open War",
+        "rating": 6
+      }
+    ]
+  },
+  {
+    "worldName": "Afro Samurai",
+    "rating": 5
+  },
+  {
+    "worldName": "Girls' Frontline",
+    "rating": 5
+  },
+  {
+    "worldName": "Starship Troopers",
+    "rating": 5,
+    "image": "https://m.media-amazon.com/images/M/MV5BNWExNzg3MmMtYjc3MS00MzFlLWJiOWQtNWYxZTgxNjhlZTQ2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg"
+  },
+  {
+    "worldName": "Appleseed",
+    "rating": 5,
+    "image": "https://cdn.donmai.us/original/b8/36/__deunan_knute_and_briareos_hecatonchires_appleseed_and_1_more_drawn_by_shirow_masamune__b83670dc1386ee9d1e1531c2306aebd0.jpg"
+  },
+  {
+    "worldName": "D.Grey-man",
+    "rating": 5,
+    "additional": "Innocences crystalize when the Waifu/Husbando is captured"
+  },
+  {
+    "worldName": "Hidden Dungeon Only I Can Enter",
+    "rating": 5
+  },
+  {
+    "worldName": "Inukami",
+    "rating": 5,
+    "image": "https://blacknerdproblems.com/wp-content/uploads/2015/09/318519.jpg"
+  },
+  {
+    "worldName": "Owari no Seraph",
+    "rating": 5,
+    "additional": "Companion's Cursed Gear become a familiar when captured"
+  },
+  {
+    "worldName": "The Hero Who Returned Remains The Strongest In The Modern World",
+    "rating": 5
+  },
+  {
+    "worldName": "History's Strongest Disciple Kenichi",
+    "rating": 5
+  },
+  {
+    "worldName": "Omamori Himari",
+    "rating": 5
+  },
+  {
+    "worldName": "The Wolf Among Us",
+    "rating": 5,
+    "image": "https://i.imgur.com/DVENIP5.jpeg",
+    "condition": [
+      {
+        "rating": 7,
+        "name": "Pre-Fabletown"
+      },
+      {
+        "name": "Present",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "worldName": "Dynasty Warriors",
+    "rating": 5,
+    "image": "https://static3.cbrimages.com/wordpress/wp-content/uploads/2021/11/Dynasty-Warriors.jpg"
+  },
   {
     "worldName": "Farscape",
     "rating": 6
@@ -55,22 +1142,238 @@
     "additional": "Lumine (and Aether) has the T1 version of Paimon as a humanoid familiar. If you have both, they’ll share her."
   },
   {
-    "worldName": "Goblin Slayer",
-    "rating": 7
-  },
-  {
-    "worldName": "Golarion/Pathfinder",
-    "rating": 9,
+    "worldName": "Hololive",
+    "rating": 6,
+    "additional": "All characters are drawn from the Hololive Alternative setting. Haato and Haachama can merge into one body and split back into two at will; as long as one is alive, the other will resurrect as if you have Warranty Plan.\nIf you choose the Almost Real Life condition, you will heading to a world mimicing your own modern world, but with the occasional Demi-human and some alternative Dimensions / worlds. Such as Dragon World and the Afterlife.",
     "condition": [
       {
-        "name": "Wrath of the Righteous",
-        "rating": 10
+        "rating": 6,
+        "name": "Hololive Alternative"
       },
       {
-        "name": "Kingmaker",
+        "name": "Almost Real Life.",
+        "rating": 4
+      }
+    ]
+  },
+  {
+    "worldName": "Lazy Dungeon Master",
+    "rating": 6,
+    "image": "https://i.imgur.com/HVlhAnqm.png"
+  },
+  {
+    "worldName": "Monster Girl Quest",
+    "rating": 6,
+    "condition": [
+      {
+        "rating": 6,
+        "name": "Original Trilogy, normal situation"
+      },
+      {
+        "name": "Original Trilogy, MGQ 3",
+        "rating": 8
+      },
+      {
+        "name": "Paradox, Normal Situation",
+        "rating": 6
+      }
+    ]
+  },
+  {
+    "worldName": "Pacific Rim",
+    "rating": 6,
+    "condition": [
+      {
+        "name": "The Black",
+        "rating": 8
+      }
+    ]
+  },
+  {
+    "worldName": "Shinmai Maou",
+    "rating": 6,
+    "image": "https://i.imgur.com/4QrkujBl.png?1",
+    "additional": "Body Defense will protect you from all the negatives effects of the Master-Servant Contract."
+  },
+  {
+    "worldName": "Maken-Ki",
+    "rating": 6
+  },
+  {
+    "worldName": "Pokegirls",
+    "rating": 6
+  },
+  {
+    "worldName": "Toriko",
+    "rating": 6,
+    "condition": [
+      {
+        "rating": 6,
+        "name": "Human World"
+      },
+      {
+        "name": "Gourmet World",
         "rating": 9
       }
     ]
+  },
+  {
+    "worldName": "Destiny",
+    "rating": 6,
+    "image": "https://i.imgur.com/Ria2NN5m.png",
+    "condition": [
+      {
+        "name": "Golden Age",
+        "rating": 3
+      },
+      {
+        "name": "Collapse",
+        "rating": 8
+      },
+      {
+        "rating": 6,
+        "name": "Last City Age"
+      },
+      {
+        "name": "Battle of the Twilight Gap",
+        "rating": 7
+      },
+      {
+        "name": "Red War",
+        "rating": 7
+      },
+      {
+        "rating": 8,
+        "name": "Darkness Arrival"
+      }
+    ]
+  },
+  {
+    "worldName": "Psyren",
+    "rating": 6,
+    "additional": "Walk in/Drop-in do not gain a power from psyren's atmosphere, Extras do but it is completely random strength."
+  },
+  {
+    "worldName": "Tokyo Ghoul",
+    "rating": 6
+  },
+  {
+    "worldName": "Alera",
+    "rating": 6,
+    "condition": [
+      {
+        "name": "Kalaran Rebellion/Canim Invasion",
+        "rating": 7
+      },
+      {
+        "name": "Vord Active On Continent",
+        "rating": 8
+      }
+    ]
+  },
+  {
+    "worldName": "Psychonauts",
+    "rating": 6
+  },
+  {
+    "worldName": "Helltaker",
+    "rating": 6
+  },
+  {
+    "worldName": "Legend of Zelda: Twilight Princess",
+    "rating": 6
+  },
+  {
+    "worldName": "Life is strange",
+    "rating": 6
+  },
+  {
+    "worldName": "Grimgar of Fantasy and Ash",
+    "rating": 6,
+    "image": "https://upload.wikimedia.org/wikipedia/en/2/24/Grimgar_of_Fantasy_and_Ash%2C_volume_1.jpg"
+  },
+  {
+    "worldName": "Pillars of Eternity",
+    "rating": 6,
+    "additional": "All kith may be bound, but only sapient non-Kith races. Bound companions whose abilities are ordinarily dependent on Eora's abundant environmental soul essence can utilize these abilities off-world. Bound animatic constructs, including gods, can be sustained by infusions of magical energy other than soul essence comparable to their ordinary requirements.",
+    "condition": [
+      {
+        "rating": 6,
+        "name": "Hollowborn Crisis (PoE 1)"
+      },
+      {
+        "name": "The Titan Walks (PoE 2)",
+        "rating": 6
+      },
+      {
+        "name": "Waidwen Victorious! (AU: Raedceras wins Saint's War)",
+        "rating": 5
+      },
+      {
+        "name": "The Adra Dims (AU: Everything that could go wrong, has gone wrong)",
+        "rating": 7
+      }
+    ]
+  },
+  {
+    "worldName": "Transformers",
+    "rating": 6,
+    "condition": [
+      {
+        "name": "G1",
+        "rating": 7
+      },
+      {
+        "rating": 6,
+        "name": "Beast Wars"
+      },
+      {
+        "rating": 7,
+        "name": "Prime"
+      }
+    ]
+  },
+  {
+    "worldName": "Arifureta: From Commonplace to World's Strongest",
+    "rating": 6,
+    "additional": "All monster created or modificated by Ancient Magic mekes them into familiars"
+  },
+  {
+    "worldName": "Monsterverse",
+    "rating": 6,
+    "condition": [
+      {
+        "rating": 8,
+        "name": "All Titans active"
+      }
+    ]
+  },
+  {
+    "worldName": "Rosario + Vampire",
+    "rating": 6
+  },
+  {
+    "worldName": "Akira",
+    "rating": 6,
+    "image": "https://cdn.donmai.us/original/68/e8/__kaneda_shoutarou_akira_drawn_by_mr_marker__68e80ea07fd659238f27ba72b79962c8.jpg"
+  },
+  {
+    "worldName": "Rakudai Kishi no Eiyuutan",
+    "rating": 6,
+    "image": "https://cdn11.neko-sama.xyz/1/1570p4orCOfy.jpg"
+  },
+  {
+    "worldName": "Misfit of Demon King Academy",
+    "rating": 6
+  },
+  {
+    "worldName": "Claymore",
+    "rating": 7,
+    "image": "https://pbs.twimg.com/media/EFCJ0oIUEAEPr-i.jpg"
+  },
+  {
+    "worldName": "Goblin Slayer",
+    "rating": 7
   },
   {
     "worldName": "Halo",
@@ -108,66 +1411,6 @@
     ]
   },
   {
-    "worldName": "Harry Potter",
-    "rating": 3,
-    "image": "https://i.imgur.com/MMoYDljl.jpg",
-    "condition": [
-      {
-        "rating": 3,
-        "name": "First book"
-      },
-      {
-        "rating": 4,
-        "name": "Fifth book"
-      },
-      {"rating":5,"name":"1971 (Open Warfare)"}
-    ]
-  },
-  {
-    "worldName": "Hololive",
-    "rating": 6,
-    "additional": "All characters are drawn from the Hololive Alternative setting. Haato and Haachama can merge into one body and split back into two at will; as long as one is alive, the other will resurrect as if you have Warranty Plan.\nIf you choose the Almost Real Life condition, you will heading to a world mimicing your own modern world, but with the occasional Demi-human and some alternative Dimensions / worlds. Such as Dragon World and the Afterlife.",
-    "condition": [
-      {
-        "rating": 6,
-        "name": "Hololive Alternative"
-      },
-      {
-        "name": "Almost Real Life.",
-        "rating": 4
-      }
-    ]
-  },
-  {"worldName":"Horizon: Zero Dawn","rating":5,"condition":[{"name":"Pre-Derangement","rating":3},{"name":"Pre-Faro Plague","rating":8}]},
-  {
-    "worldName": "Lazy Dungeon Master",
-    "rating": 6,
-    "image": "https://i.imgur.com/HVlhAnqm.png"
-  },
-  {"worldName":"Minecraft","rating":2,"condition":[{"name":"RL-Craft","rating":7}]},
-  {
-    "worldName": "Monster Girl Quest",
-    "rating": 6,
-    "condition": [
-      {
-        "rating": 6,
-        "name": "Original Trilogy, normal situation"
-      },
-      {
-        "name": "Original Trilogy, MGQ 3",
-        "rating": 8
-      },
-      {
-        "name": "Paradox, Normal Situation",
-        "rating": 6
-      }
-    ]
-  },
-  {
-    "worldName": "My Little Pony",
-    "rating": 1
-  },
-  {
     "worldName": "Nanatsu No Taizai/Seven Deadly Sins",
     "rating": 7,
     "additional": "Captured copies of Elizabeth and Meliodas(Excluding Holy War(Past)) will remain affected by their respective curses unless both stages of Destiny Defense are bought for them>",
@@ -187,12 +1430,402 @@
     ]
   },
   {
-    "worldName": "Pacific Rim",
-    "rating": 6,
+    "worldName": "Cyberpunk 2077",
+    "rating": 7,
+    "image": "https://i.imgur.com/2BDGlCOl.jpeg"
+  },
+  {
+    "worldName": "Wheel of Time",
+    "rating": 7,
+    "image": "https://i.imgur.com/5TFJH2kl.jpg",
+    "additional": "Dark One's taint on Saidin halves effectiveness of Corruption, Mind, & Soul Defenses for all male Channelers until the taint is cleanse from the One Power. Only applies during the Third Age.\n\nUsers of the One Power are subjected to its gendered rules, Saidin channelers, the male half of the One Power being on average stronger than Saidar channelers, while a linked circle of 13 Saidar channelers can overpower the strongest Saidin channeler.",
     "condition": [
       {
-        "name": "The Black",
+        "name": "Age of Legends",
+        "rating": 10
+      },
+      {
+        "name": "After Breaking",
+        "rating": 7
+      },
+      {
+        "name": "Trolloc Wars",
         "rating": 8
+      },
+      {
+        "name": "War of the Hundred Years",
+        "rating": 7
+      },
+      {
+        "name": "Tarmon Gai'don",
+        "rating": 9
+      }
+    ]
+  },
+  {
+    "worldName": "One Punch Man",
+    "rating": 7
+  },
+  {
+    "worldName": "Taimanin",
+    "rating": 7
+  },
+  {
+    "worldName": "Toril/Forgotten Realms",
+    "rating": 7
+  },
+  {
+    "worldName": "Adventure Time",
+    "rating": 7,
+    "condition": [
+      {
+        "name": "Nightosphere",
+        "rating": 8
+      },
+      {
+        "rating": 6,
+        "name": "Candy Kingdom"
+      }
+    ]
+  },
+  {
+    "worldName": "Yuki Yuna is a Hero",
+    "rating": 7
+  },
+  {
+    "worldName": "Shin No Nakama",
+    "rating": 7
+  },
+  {
+    "worldName": "Phantasy Star Online",
+    "rating": 7,
+    "image": "https://i.pinimg.com/736x/6b/2c/00/6b2c00fd8313715de8678476b19ba3d3.jpg",
+    "additional": "Photon Arts require Martial Talent, Soul Talent, Science Talent,and Engineering Talent.\nPartner Machines will be treated like familiars if you capture their owners or as Waifus in an AU.\nPets will be treated as familiars or as Waifus in an AU\nTo heal both Mirei Mikuna and Karen Erra when captured you need Soul Defense x2 and Body Defense x2.\nCapturing Lou also means capturing her other clones/replicas, the actual number of Lou models made is classified, but the number is known to exceed 905. All Lou's are connected through thought and can rely information to any model at anytime assuming no interference takes place.",
+    "condition": [
+      {
+        "name": "Phantasy Star Universe",
+        "rating": 8
+      },
+      {
+        "rating": 9,
+        "name": "Phantasy Star Online 2"
+      }
+    ]
+  },
+  {
+    "worldName": "Dragon's Dogma",
+    "rating": 7,
+    "image": "https://www.giantbomb.com/a/uploads/original/1/10354/2419515-dark_arisen_logo.jpg"
+  },
+  {
+    "worldName": "The Lazy King",
+    "rating": 7,
+    "condition": [
+      {
+        "rating": 6,
+        "name": "Human Wolrd"
+      }
+    ]
+  },
+  {
+    "worldName": "Muv Luv",
+    "rating": 7,
+    "condition": [
+      {
+        "rating": 2,
+        "name": "Extra"
+      },
+      {
+        "rating": 9,
+        "name": "Unlimited"
+      },
+      {
+        "rating": 7,
+        "name": "Alternate"
+      }
+    ]
+  },
+  {
+    "worldName": "Warlock of the Magus World",
+    "rating": 7,
+    "image": "https://vignette.wikia.nocookie.net/warlock-of-the-magus-world/images/2/2b/Dragon-horde.jpg/revision/latest?cb=20171218122055",
+    "additional": "Starting in a world ruled by one or several Rank 8 beings(the equivalent of at least t10, possibly t11 in Waifu Catalogue ratings). ",
+    "condition": [
+      {
+        "rating": 9,
+        "name": "Starting in the Central Continent, in the Magus World."
+      },
+      {
+        "name": "Starting in the world of the gods.",
+        "rating": 10
+      }
+    ]
+  },
+  {
+    "worldName": "Code Vein",
+    "rating": 7,
+    "image": "https://image.api.playstation.com/vulcan/img/cfn/11307ddV-pWycIHQcqD63yAxAoKAJIqKmdhMTd0WH0a0NjzojY-mnKc0V3zz61d4PoTgncPqkHOSgwOs1ktRnVdO8_YETFWE.png",
+    "additional": "Mistles work as intended for those with both Soul Talent and Everlasting Talents, but can be corrupted and turn into \"Lost\" this can be resisted and/or prevented with enough \"Willpower/Mental-Fortitude\", or those with both the Curruption and Possession Defenses.\n\nThese only apply to those wishing to use Mistles for their intended purposes.",
+    "condition": [
+      {
+        "rating": 9,
+        "name": "QueenSlayer"
+      }
+    ]
+  },
+  {
+    "worldName": "Exalted versus the World of Darkness",
+    "rating": 7
+  },
+  {
+    "worldName": "Magical Girl Spec-Ops Asuka",
+    "rating": 7
+  },
+  {
+    "worldName": "Path of Exile",
+    "rating": 7,
+    "image": "https://i.imgur.com/S42mggf.png"
+  },
+  {
+    "worldName": "Date A Live",
+    "rating": 8
+  },
+  {
+    "worldName": "Devil May Cry",
+    "rating": 8
+  },
+  {
+    "worldName": "Riordanverse",
+    "rating": 8,
+    "condition": [
+      {
+        "rating": 6,
+        "name": "Percy Jackson and the Olympians"
+      },
+      {
+        "name": "The Heroes of Olympus",
+        "rating": 7
+      },
+      {
+        "name": "Ancient Greece",
+        "rating": 7
+      },
+      {
+        "rating": 6,
+        "name": "Roman Empire"
+      }
+    ]
+  },
+  {
+    "worldName": "Tower of God",
+    "rating": 8
+  },
+  {
+    "worldName": "Darksiders",
+    "rating": 8,
+    "condition": [
+      {
+        "name": "Darksiders 1 Timeline",
+        "rating": 8
+      },
+      {
+        "name": "Darksiders 2 Timeline",
+        "rating": 7
+      },
+      {
+        "name": "Darksiders 3 Timeline",
+        "rating": 7
+      },
+      {
+        "name": "Nephilim Purge",
+        "rating": 7
+      }
+    ]
+  },
+  {
+    "worldName": "Douluo Dalu",
+    "rating": 8,
+    "image": "https://m.media-amazon.com/images/M/MV5BZDFhNTVlM2ItOWRiMy00ZmI2LWIxY2EtZjRmOWFkNDhkYWE3XkEyXkFqcGdeQXVyOTE4NzcwNzI@._V1_.jpg",
+    "condition": [
+      {
+        "name": "Douluo Dalu 1",
+        "rating": 8
+      },
+      {
+        "rating": 10,
+        "name": "Douluo Dalu 2.5"
+      },
+      {
+        "name": "Douluo Dalu 2",
+        "rating": 8
+      },
+      {
+        "rating": 10,
+        "name": "Douluo Dalu 3.5"
+      },
+      {
+        "name": "Douluo Dalu 3",
+        "rating": 8
+      },
+      {
+        "name": "Douluo Dalu 4",
+        "rating": 10
+      }
+    ]
+  },
+  {
+    "worldName": "God of War",
+    "rating": 8,
+    "condition": [
+      {
+        "rating": 7,
+        "name": "Pre Ares Death"
+      },
+      {
+        "rating": 7,
+        "name": "After Olympus Fall"
+      },
+      {
+        "name": "Main Storyline Events",
+        "rating": 8
+      },
+      {
+        "rating": 7,
+        "name": "Midgard"
+      }
+    ]
+  },
+  {
+    "worldName": "Dark Souls",
+    "rating": 8,
+    "image": "https://i.imgur.com/ZvNFdGol.png",
+    "additional": "You can use bonfires as they are intended.",
+    "condition": [
+      {
+        "name": "Dark Souls 1",
+        "rating": 8
+      },
+      {
+        "name": "Dark Souls 2",
+        "rating": 8
+      },
+      {
+        "name": "Dark Souls 3",
+        "rating": 8
+      }
+    ]
+  },
+  {
+    "worldName": "How Not to Summon a Demon Lord",
+    "rating": 8
+  },
+  {
+    "worldName": "Guild Wars 2",
+    "rating": 8
+  },
+  {
+    "worldName": "Andromeda",
+    "rating": 8,
+    "image": "https://upload.wikimedia.org/wikipedia/en/5/5e/Andromeda_title_card.jpg"
+  },
+  {
+    "worldName": "Kirby (Anime & Games)",
+    "rating": 8,
+    "image": "https://cdn.wikirby.com/c/c5/KSA_Popstar.jpg"
+  },
+  {
+    "worldName": "Campione!",
+    "rating": 8
+  },
+  {
+    "worldName": "Guild Wars / Boundless",
+    "rating": 8,
+    "image": "https://i.pinimg.com/736x/ca/dd/c8/caddc830e3de3af6364d455da35d1669.jpg",
+    "additional": "All Techniques and Magic you learn inside the F.I.V.R. MMORPG 'Boundless' is real. Ingredients, Materials and other Items can be stored inside your Pocket Space/Inventory and will even be automatically supplied should you have a Warehouse District. ",
+    "condition": [
+      {
+        "name": "First Timeline (Doomed)",
+        "rating": 9
+      },
+      {
+        "rating": 8,
+        "name": "Second Timeline - Start of Canon"
+      }
+    ]
+  },
+  {
+    "worldName": "Phantasy Star",
+    "rating": 8,
+    "additional": "While magic does exist, the vastly more commonly used \"Techniques\" are psychic in nature.",
+    "condition": [
+      {
+        "name": "Phantasy Star 1",
+        "rating": 8
+      },
+      {
+        "name": "Phantasy Star 2",
+        "rating": 8
+      },
+      {
+        "name": "Phantasy Star 3",
+        "rating": 8
+      },
+      {
+        "rating": 8,
+        "name": "Phantasy Star 4"
+      }
+    ]
+  },
+  {
+    "worldName": "Azur Lane",
+    "rating": 8
+  },
+  {
+    "worldName": "Rachet and Clank",
+    "rating": 8
+  },
+  {
+    "worldName": "Bayonetta",
+    "rating": 8,
+    "additional": "The contractor and any companions are always able to percieve supernatural and/or spiritual beings or events. However, interacting with said beings or events requires magical, ki, or other form of supernatural ability. \n\nElemental Cloaks, Symbiote and derived suits, or magical circles qualify. Tempest jewelry or the Stamp only qualifies if the contractor has said abilities themselves."
+  },
+  {
+    "worldName": "Against the Gods",
+    "rating": 9
+  },
+  {
+    "worldName": "Dragonball",
+    "rating": 9,
+    "condition": [
+      {
+        "rating": 7,
+        "name": "Saiyans Attack"
+      },
+      {
+        "name": "Androids Awaken",
+        "rating": 8
+      },
+      {
+        "rating": 10,
+        "name": "Majin Buu unsealed"
+      },
+      {
+        "name": "Original Adventure",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "worldName": "Golarion/Pathfinder",
+    "rating": 9,
+    "condition": [
+      {
+        "name": "Wrath of the Righteous",
+        "rating": 10
+      },
+      {
+        "name": "Kingmaker",
+        "rating": 9
       }
     ]
   },
@@ -206,219 +1839,155 @@
       }
     ]
   },
-  {"worldName":"Release That Witch","rating":5,"image":"https://i.imgur.com/9km50Lrm.png","condition":[{"name":"First Battle of Divine Will","rating":6}]},
-  {"worldName":"Riordanverse","rating":8,"condition":[{"rating":6,"name":"Percy Jackson and the Olympians"},{"name":"The Heroes of Olympus","rating":7},{"name":"Ancient Greece","rating":7},{"rating":6,"name":"Roman Empire"}]},
   {
-    "worldName": "Rune Factory",
-    "rating": 4
+    "worldName": "Jump Force",
+    "rating": 9
   },
   {
-    "worldName": "Shadowrun",
-    "rating": 5,
+    "worldName": "Bloodborne",
+    "rating": 9,
+    "image": "https://i.imgur.com/p2G4FpM.png",
+    "additional": "Body Defense will protect you from the beast plague and physical effect of insight while Mind Defense will protect you from it’s mental effects"
+  },
+  {
+    "worldName": "Hazbin Hotel/ Helluva Boss",
+    "rating": 9,
+    "additional": "If you take Extra and choose Sinner as your species you will be unable to leave the Pride Ring unless summoned or you at least filled Exit Stage left. Choosing Hellborn does not have this limitation. ",
     "condition": [
       {
-        "name": "Crash 2.0",
-        "rating": 5
+        "name": "Earth start",
+        "rating": 4
       },
       {
-        "rating": 6,
-        "name": "Dragonfall"
+        "rating": 10,
+        "name": "Extermination day"
       }
     ]
   },
   {
-    "worldName": "Tower of God",
-    "rating": 8
+    "worldName": "Hades",
+    "rating": 9,
+    "image": "https://www.giantbomb.com/a/uploads/original/0/1992/3067821-screen%20shot%202018-12-06%20at%209.35.56%20pm.png"
   },
   {
-    "worldName": "Yamada-kun and the Seven Witches",
-    "rating": 3
+    "worldName": "Dofus/Wakfu",
+    "rating": 9,
+    "image": "https://cdn.donmai.us/original/14/5c/__sadida_evangelyne_cra_amalia_sheran_sharm_yugo_and_3_more_wakfu_drawn_by_xaxaxa__145c4615d64be2e16d23c4fc3f1720c6.png",
+    "condition": [
+      {
+        "name": "Dofus",
+        "rating": 10
+      },
+      {
+        "name": "Wakfu",
+        "rating": 9
+      }
+    ]
   },
-  {"worldName":"Cyberpunk 2077","rating":7, "image": "https://i.imgur.com/2BDGlCOl.jpeg"},
-  {"worldName":"Darksiders","rating":8,"condition":[{"name":"Darksiders 1 Timeline","rating":8},{"name":"Darksiders 2 Timeline","rating":7},{"name":"Darksiders 3 Timeline","rating":7},{"name":"Nephilim Purge","rating":7}]},
-  {"worldName":"Douluo Dalu","rating":8,"image":"https://m.media-amazon.com/images/M/MV5BZDFhNTVlM2ItOWRiMy00ZmI2LWIxY2EtZjRmOWFkNDhkYWE3XkEyXkFqcGdeQXVyOTE4NzcwNzI@._V1_.jpg","condition":[{"name":"Douluo Dalu 1","rating":8},{"rating":10,"name":"Douluo Dalu 2.5"},{"name":"Douluo Dalu 2","rating":8},{"rating":10,"name":"Douluo Dalu 3.5"},{"name":"Douluo Dalu 3","rating":8},{"name":"Douluo Dalu 4","rating":10}]},
-  {"worldName":"God of War","rating":8,"condition":[{"rating":7,"name":"Pre Ares Death"},{"rating":7,"name":"After Olympus Fall"},{"name":"Main Storyline Events","rating":8},{"rating":7,"name":"Midgard"}]},
-  {"worldName":"Hunter x Hunter","rating":4,"condition":[{"name":"Known World (human continents)","rating":4},{"name":"Dark Continent","rating":5}]},
-  {"worldName":"I Shall Seal The Heavens","rating":10},
-  {"worldName":"Mushoku Tensei","rating":4,"condition":[{"name":"Outside the Demon Continent","rating":4},{"name":"Demon Continent","rating":5}]},
-  {"worldName":"Negima!","rating":5,"condition":[{"rating":5,"name":"Earth"},{"rating":7,"name":"Magic World (aka Mundus Magicus)"},{"rating":8,"name":"UQ Holder timeline"}]},
-  {"worldName":"Invincible","rating":5,"image":"https://i2.wp.com/www.popsfera.com.br/wp-content/uploads/2020/07/guardians-of-the-globe-destaque.jpg?resize=800%2C445&ssl=1","condition":[{"rating":7,"name":"Invincible Comics"}]},
-  {"worldName":"Shinza Bansho","rating":10,"condition":[{"name":"Paradise Lost","rating":9},{"name":"Dies Irae","rating":8},{"rating":10,"name":"Kajiri Kamui Kagura"},{"name":"Avesta of Black and White","rating":9}]},
-  {"worldName":"Gate: And thus the JSDF fought there","rating":4,"condition":[{"rating":2,"name":"Pre open-gate: Ginza"},{"name":"Initial opening of the gate: Ginza","rating":4},{"rating":5,"name":"Falmart"}]},
-  {"worldName":"Grrlpower","rating":4},
-  {"worldName":"Hellsing Abridged","rating":3},
-  {"worldName":"Shinmai Maou","rating":6,"image":"https://i.imgur.com/4QrkujBl.png?1","additional":"Body Defense will protect you from all the negatives effects of the Master-Servant Contract."},
-  {"worldName":"Interspecies Reviewers","rating":5, "image": "https://images-na.ssl-images-amazon.com/images/I/51XPYZiPqAL.jpg"},
-  {"worldName":"Kuroinu","rating":5,"condition":[{"name":"Pre-Founding of the 'Kuroinu' Mercenary Group","rating":4}]},
-  {"worldName":"Mushroom Kingdom","rating":3},
-  {"worldName":"SCP","rating":10},
-  {"worldName":"Dark Souls","rating":8,"image":"https://i.imgur.com/ZvNFdGol.png","additional":"You can use bonfires as they are intended.","condition":[{"name":"Dark Souls 1","rating":8},{"name":"Dark Souls 2","rating":8},{"name":"Dark Souls 3","rating":8}]},
-  {"worldName":"Divinity","rating":5},
-  {"worldName":"Highschool of the Dead","rating":4,"condition":[{"rating":4,"name":"Starting from Z-Day"}]},
-  {"worldName":"How Not to Summon a Demon Lord","rating":8},
-  {"worldName":"Inheritance","rating":5,"additional":"When capturing a rider one also captures their dragon."},
-  {"worldName":"JoJo's Bizarre Adventure","rating":3,"image":"https://i.imgur.com/Y8qbM7Xl.png","condition":[{"name":"Phantom Blood","rating":3},{"name":"Parts 3,4,7,8","rating":4},{"rating":5,"name":"Battle Tendency, Golden Wind"},{"rating":6,"name":"Stone Ocean"}]},
-  {"worldName":"Jump Force","rating":9},
-  {"worldName":"Maken-Ki","rating":6},
-  {"worldName":"Pokegirls","rating":6},
-  {"worldName":"Re:Monster","rating":4},
-  {"worldName":"Scooby Doo","rating":1,"condition":[{"name":"Ghoul School","rating":3}]},
-  {"worldName":"Toriko","rating":6,"condition":[{"rating":6,"name":"Human World"},{"name":"Gourmet World","rating":9}]},
-  {"worldName":"1984","rating":5},
-  {"worldName":"Youjo Senki","rating":5,"image":"https://nefariousreviews.files.wordpress.com/2018/09/saga-of-tanya-the-evil-featured.jpg"},
-  {"worldName":"Asobi Ni Iku Yo","rating":3},
-  {"worldName":"Destiny","rating":6,"image":"https://i.imgur.com/Ria2NN5m.png","condition":[{"name":"Golden Age","rating":3},{"name":"Collapse","rating":8},{"rating":6,"name":"Last City Age"},{"name":"Battle of the Twilight Gap","rating":7},{"name":"Red War","rating":7},{"rating":8,"name":"Darkness Arrival"}]},
-  {"worldName":"Digimon","rating":1,"additional":"You can pay 5 points to have your Digimon gain human forms that they can freely transform to and back from","condition":[{"name":"Adventure","rating":4},{"name":"Adventure 2","rating":4},{"name":"Tamers","rating":5},{"rating":6,"name":"Frontier"},{"rating":5,"name":"Savers"},{"rating":4,"name":"DS games"},{"name":"Cyber Sleuth","rating":4}]},
-  {"worldName":"Metal Gear","rating":3,"condition":[{"rating":3,"name":"1964 (MGS3)"},{"rating":4,"name":"1970-1984 (MGS:PO/MGSV:TPP)"},{"name":"1995-2009 (MG/MGS2:SoL)","rating":4},{"name":"2014 (MG4:GotP)","rating":5},{"rating":6,"name":"2018 (MGR:R)"}]},
-  {"worldName":"Psyren","rating":6,"additional":"Walk in/Drop-in do not gain a power from psyren's atmosphere, Extras do but it is completely random strength."},
-  {"worldName":"Sailor Moon Manga","rating":10},
-  {"worldName":"Subnautica","rating":3,"condition":[{"rating":3,"name":"First Game"},{"rating":4,"name":"Below Zero"}]},
-  {"worldName":"Tenjou Tenge","rating":4,"additional":"Possession Defense will protect you from Noriko Dragon Roar ability.\n\nInformation Defense will protect you from the Dragon Eyes prediction ability."},
-  {"worldName":"Tier 1 Town (Meta)","rating":1,"additional":"A special setting taking place in a large town or small city one could find a generic slice of life anime.\n\nContains any tier 1 waifus of your choice for potential capture.\n\nDue to the world's slice of life nature, nobody will age, be maimed, or die as long as you're here, though you may optionally turn this off. Nobody will find any of this weird.\n\nIf you select Tier 2 Town, the protections against maiming and death are automatically turned off, but you can also encounter any tier 2 waifus of your choice.","condition":[{"rating":2,"name":"Tier 2 Town"}]},
-  {"worldName":"Wheel of Time","rating":7,"image":"https://i.imgur.com/5TFJH2kl.jpg","additional":"Dark One's taint on Saidin halves effectiveness of Corruption, Mind, & Soul Defenses for all male Channelers until the taint is cleanse from the One Power. Only applies during the Third Age.\n\nUsers of the One Power are subjected to its gendered rules, Saidin channelers, the male half of the One Power being on average stronger than Saidar channelers, while a linked circle of 13 Saidar channelers can overpower the strongest Saidin channeler.","condition":[{"name":"Age of Legends","rating":10},{"name":"After Breaking","rating":7},{"name":"Trolloc Wars","rating":8},{"name":"War of the Hundred Years","rating":7},{"name":"Tarmon Gai'don","rating":9}]},
-  {"worldName":"Tokyo Ghoul","rating":6},
-  {"worldName":"Bloodborne","rating":9,"image":"https://i.imgur.com/p2G4FpM.png","additional":"Body Defense will protect you from the beast plague and physical effect of insight while Mind Defense will protect you from it’s mental effects"},
-  {"worldName":"Until Dawn","rating":4,"additional":"Possession Defense will protect you from becoming a Wendigo"},
-  {"worldName":"Yu-Gi-Oh!","rating":1,"additional":"May purchase decks from catalog for 1 point. Summoning methods of later generations are not usable on duel disks of earlier generations. Psychic Dueling can be bought using local power template option.","condition":[{"name":"Ancient Egypt","rating":4},{"rating":5,"name":"Duel Monsters"},{"name":"GX","rating":5},{"name":"5ds","rating":5},{"rating":4,"name":"Zexal"},{"name":"Arc V","rating":5},{"rating":7,"name":"Duel Terminal"},{"rating":6,"name":"World Legacy"}]},
-
-  {"worldName":"Babylon 5","rating":5,"condition":[{"rating":7,"name":"Shadow War"}]},
-  {"worldName":"Black Lagoon","rating":3},
-  {"worldName":"Command & Conquer","rating":3,"additional":"Rating is variable by time period/Timeline.","condition":[{"name":"Red Alert/2/Yuri's Revenge","rating":3},{"name":"Red Alert 3","rating":4},{"rating":4,"name":"Tiberian Dawn/Sun"},{"rating":5,"name":"Tiberium Wars/Twilight/Scrin Invasion"}]},
-  {"worldName":"Infinite Stratos","rating":4,"image":"https://flxt.tmsimg.com/assets/p18340693_b_v8_ab.jpg"},
-  {"worldName":"Guild Wars 2","rating":8},
-  {"worldName":"Hitman Reborn","rating":4},
-  {"worldName":"Little Witch Academia","rating":3},
-  {"worldName":"One Punch Man","rating":7},
-  {"worldName":"Food Wars!: Shokugeki no Soma","rating":1, "image": "https://kbimages1-a.akamaihd.net/006f0b00-344e-4e7c-9b0e-04704bcf5d77/1200/1200/False/food-wars-shokugeki-no-soma-vol-11.jpg"},
-  {"worldName":"Taimanin","rating":7},
-  {"worldName":"Toril/Forgotten Realms","rating":7},
-  {"worldName":"Warcraft","rating":5,"condition":[{"name":"During the Events of WoW 'Classic'","rating":6},{"name":"During the Events of WoW 'The Burning Crusade'","rating":7},{"name":"During the Events of WoW 'Wrath of the Lich King'","rating":8},{"rating":8,"name":"During the Events of WoW 'Cataclysm'"},{"rating":7,"name":"During the Events of WoW 'Mists of Pandaria'"},{"rating":7,"name":"During the Events of WoW 'Warlords of Draenor'"},{"rating":8,"name":"During the Events of WoW 'Legion'"},{"rating":8,"name":"During the Events of WoW 'Battle for Azeroth'"},{"name":"During the Events of WoW 'Shadowlands'","rating":9}]},
-
-  {"worldName":"Andromeda","rating":8,"image":"https://upload.wikimedia.org/wikipedia/en/5/5e/Andromeda_title_card.jpg"},
-  {"worldName":"The Walking Dead","rating":5,"condition":[{"rating":6,"name":"Zombie can remain silent for surprise attacks, and decay much slower"}]},
-  {"worldName":"Alera","rating":6,"condition":[{"name":"Kalaran Rebellion/Canim Invasion","rating":7},{"name":"Vord Active On Continent","rating":8}]},
-  {"worldName":"The Owl House","rating":5},
-  {"worldName":"Adventure Time","rating":7,"condition":[{"name":"Nightosphere","rating":8},{"rating":6,"name":"Candy Kingdom"}]},
-  {"worldName":"Psychonauts","rating":6},
-  {"worldName":"Shaman King","rating":5,"condition":[{"name":"Shaman Fight ( Canon)","rating":8}]},
-  {"worldName":"Yakuza 0","rating":4},
-  {"worldName":"Gargoyles","rating":3,"condition":[{"name":"1994","rating":3},{"name":"10th century AD","rating":5}]},
-  {"worldName":"Helltaker","rating":6},
-  {"worldName":"Homestuck","rating":10},
-  {"worldName":"Legend of Zelda: Twilight Princess","rating":6},
-  {"worldName":"Miraclous: Tales of Ladybug and Cat Noir","rating":2},
-  {"worldName":"Yuki Yuna is a Hero","rating":7},
-  {"worldName":"Archer","rating":2},
-  {"worldName":"Supernatural","rating":5,"image":"https://c.tenor.com/p8OiLUApwWUAAAAC/supernatural-intro.gif"},
-  {"worldName":"Innocent Witches","rating":3},
-  {"worldName":"Life is strange","rating":6},
-  {"worldName":"Life With a Slave - Teaching Feeling","rating":2},
-  {"worldName":"Orc Hero Story – Discovery Chronicles","rating":5,"condition":[{"rating":6,"name":"War of Vastonia"}]},
-  {"worldName":"Takarakuji de 40 Oku Atattanda kedo Isekai ni Ijuusuru","rating":3},
-  {"worldName":"Ben 10","rating":10,"condition":[{"name":"Clasic","rating":6},{"rating":9,"name":"Alien Force"},{"name":"Ultimate","rating":8},{"rating":10,"name":"Omniverse"}]},
-  {"worldName":"Summertime Saga","rating":2},
-  {"worldName":"Kirby (Anime & Games)","rating":8,"image":"https://cdn.wikirby.com/c/c5/KSA_Popstar.jpg"},
-  {"worldName":"BTVS/Angel","rating":4},
-  {"worldName":"Campione!","rating":8},
-  {"worldName":"Cinnamon Bun","rating":3,"additional":"The world has a system, and actions taken while lacking a class will give a class appropriate to the actions(acting adorable gives cinnamon bun class, killing a bunch of people gives murderer class, etc) this only applies until you have a class. doing things associated with your class gives class skills. The skills start at rank F and are improved by doing them. Rank D and above require skill points, more skill points are required the higher rank the skill is. Killing things and doing class-appropriate actions levels you up and gives class skill points. Doing things unrelated to your class may give a general skill. General skill points are earned by completing quests for the world and killing dungeons."},
-  {"worldName":"Fairy Gone","rating":3},
-  {"worldName":"Soul Eater","rating":5,"image":"https://static1.cbrimages.com/wordpress/wp-content/uploads/2019/10/Soul-Eater-featured-image-Cropped-1.jpg","additional":"It is recommended that you purchase a madness nullifying or sanity protecting power/defense."},
-  {"worldName":"Hazbin Hotel/ Helluva Boss","rating":9,"additional":"If you take Extra and choose Sinner as your species you will be unable to leave the Pride Ring unless summoned or you at least filled Exit Stage left. Choosing Hellborn does not have this limitation. ","condition":[{"name":"Earth start","rating":4},{"rating":10,"name":"Extermination day"}]},
-  {"worldName":"She-Ra and the Princesses of Power","rating":5,"additional":"Captured Princess magic become independent of their Runestone."},
-  {"worldName":"Shin No Nakama","rating":7},
-  {"worldName":"Soul Calibur","rating":3},
-  {"worldName":"Kuma Kuma Kuma Bear","rating":4},
-  {"worldName":"Huniepop","rating":1},
-  {"worldName":"Baki: The Grappler","rating":5},
-  {"worldName":"Guild Wars / Boundless","rating":8,"image":"https://i.pinimg.com/736x/ca/dd/c8/caddc830e3de3af6364d455da35d1669.jpg","additional":"All Techniques and Magic you learn inside the F.I.V.R. MMORPG 'Boundless' is real. Ingredients, Materials and other Items can be stored inside your Pocket Space/Inventory and will even be automatically supplied should you have a Warehouse District. ","condition":[{"name":"First Timeline (Doomed)","rating":9},{"rating":8,"name":"Second Timeline - Start of Canon"}]},
-  {"worldName":"Brütal Legend","rating":5,"image":"https://cdna.artstation.com/p/assets/images/images/035/340/972/large/joseph-richard-0103-21-concept-brutallegend2-color.jpg?1614714162"},
-  {"worldName":"Conan the barbarian","rating":3,"image":"https://www.giantfreakinrobot.com/wp-content/uploads/2020/09/conan-the-barbarian-feature-1200x675.jpg","condition":[{"name":"Comic Book continuity","rating":4},{"name":"Movies","rating":3}]},
-  {"worldName":"Danny Phantom","rating":5,"additional":"All ghost beacome halfa's, being able to change between their new human half-human-half-ghsot form or their full ghost form","condition":[{"rating":5,"name":"Earth Dimension"},{"rating":7,"name":"Ghost Dimension"}]},
-  {"worldName":"Death Note","rating":4,"condition":[{"rating":4,"name":"Standard"}]},
-  {"worldName":"Grimgar of Fantasy and Ash","rating":6,"image":"https://upload.wikimedia.org/wikipedia/en/2/24/Grimgar_of_Fantasy_and_Ash%2C_volume_1.jpg"},
-  {"worldName":"Hanaukyo Maid Team","rating":2,"image":"https://i0.wp.com/lezwatchtv.com/wp-content/uploads/2018/06/HMT.jpg?w=960&ssl=1"},
-  {"worldName":"Phantasy Star","rating":8,"additional":"While magic does exist, the vastly more commonly used \"Techniques\" are psychic in nature.","condition":[{"name":"Phantasy Star 1","rating":8},{"name":"Phantasy Star 2","rating":8},{"name":"Phantasy Star 3","rating":8},{"rating":8,"name":"Phantasy Star 4"}]},
-  {"worldName":"Phantasy Star Online","rating":7,"image":"https://i.pinimg.com/736x/6b/2c/00/6b2c00fd8313715de8678476b19ba3d3.jpg","additional":"Photon Arts require Martial Talent, Soul Talent, Science Talent,and Engineering Talent.\nPartner Machines will be treated like familiars if you capture their owners or as Waifus in an AU.\nPets will be treated as familiars or as Waifus in an AU\nTo heal both Mirei Mikuna and Karen Erra when captured you need Soul Defense x2 and Body Defense x2.\nCapturing Lou also means capturing her other clones/replicas, the actual number of Lou models made is classified, but the number is known to exceed 905. All Lou's are connected through thought and can rely information to any model at anytime assuming no interference takes place.","condition":[{"name":"Phantasy Star Universe","rating":8},{"rating":9,"name":"Phantasy Star Online 2"}]},
-  {"worldName":"Pillars of Eternity","rating":6,"additional":"All kith may be bound, but only sapient non-Kith races. Bound companions whose abilities are ordinarily dependent on Eora's abundant environmental soul essence can utilize these abilities off-world. Bound animatic constructs, including gods, can be sustained by infusions of magical energy other than soul essence comparable to their ordinary requirements.","condition":[{"rating":6,"name":"Hollowborn Crisis (PoE 1)"},{"name":"The Titan Walks (PoE 2)","rating":6},{"name":"Waidwen Victorious! (AU: Raedceras wins Saint's War)","rating":5},{"name":"The Adra Dims (AU: Everything that could go wrong, has gone wrong)","rating":7}]},
-  {"worldName":"Solo Leveling","rating":10},
-  {"worldName":"Street Fighter","rating":3},
-  {"worldName":"Transformers","rating":6,"condition":[{"name":"G1","rating":7},{"rating":6,"name":"Beast Wars"},{"rating":7,"name":"Prime"}]},
-  {"worldName":"Wolfenstein","rating":4,"image":"https://www.pcgameshardware.de/screenshots/original/2013/05/GSA_Berlin_Hotel_Final_b2teaser_169.png"},
-  {"worldName":"Arifureta: From Commonplace to World's Strongest","rating":6,"additional":"All monster created or modificated by Ancient Magic mekes them into familiars"},
-  {"worldName":"Berserk","rating":4,"image":"https://mlpnk72yciwc.i.optimole.com/cqhiHLc.WqA8~2eefa/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2021/05/eae3e4859d36db8dab2c149e36ee2f62.jpg","condition":[{"rating":3,"name":"Pre-Eclipse"},{"rating":5,"name":"Post-Eclipse"}]},
-  {"worldName":"Dragon's Dogma","rating":7,"image":"https://www.giantbomb.com/a/uploads/original/1/10354/2419515-dark_arisen_logo.jpg"},
-  {"worldName":"Gravity Falls","rating":5},
-  {"worldName":"Hades","rating":9,"image":"https://www.giantbomb.com/a/uploads/original/0/1992/3067821-screen%20shot%202018-12-06%20at%209.35.56%20pm.png"},
-  {"worldName":"Jak & Daxter","rating":5,"condition":[{"name":"any other jak game","rating":7}]},
-  {"worldName":"Kantai Collection","rating":5},
-  {"worldName":"Keys to the Kingdom","rating":5},
-  {"worldName":"Maggot Baits","rating":5},
-  {"worldName":"I've Been Killing Slimes for 300 Years and Maxed Out My Level","rating":4,"additional":"Entering this world or gaining a companion from here will allow access to the world’s leveling system"},
-  {"worldName":"Supreme Commander","rating":10,"image":"https://images2.alphacoders.com/242/24252.jpg"},
-  {"worldName":"The Lazy King","rating":7,"condition":[{"rating":6,"name":"Human Wolrd"}]},
-  {"worldName":"The Terminator","rating":4,"image":"https://www.planocritico.com/wp-content/uploads/2015/06/O-Exterminador-do-Futuro-The-Terminator-EUA-1984.jpg","additional":"John Connor has a T-800 or Cameron as a familiar. Terminator Genisys Sarah Connor has a T-800 as a familiar.","condition":[{"name":"Terminator","rating":3},{"name":"Terminator 2: Past.","rating":4},{"name":"Terminator 2: Future.","rating":5},{"rating":5,"name":"Terminator 3:"},{"name":"Terminator Genisys","rating":5},{"name":"Terminator: Dark Fate-Past","rating":5},{"rating":6,"name":"Terminator: Dark Fate-Future"},{"name":"Terminator: The Sarah Connor Chronicles","rating":5}]},
-  {"worldName":"The Venture Brothers","rating":3},
-  {"worldName":"Total Drama","rating":2,"condition":[{"name":"Contestant","rating":3},{"rating":4,"name":"Revenge of the Island"}]},
-  {"worldName":"Twilight","rating":3,"image":"https://mythbank.com/wp-content/uploads/2019/10/twilight-banner.jpg"},
-  {"worldName":"Azur Lane","rating":8},
-  {"worldName":"DOOM: Eternal","rating":10},
-  {"worldName":"Ghost in the Shell","rating":5,"image":"https://images.amcnetworks.com/ifccenter.com/wp-content/uploads/2020/01/ghost-in-the-shell-1280.jpg"},
-  {"worldName":"Half-Life","rating":5,"condition":[{"rating":5,"name":"Black Mesa Incident"},{"rating":6,"name":"Portal Storm"},{"name":"Seven Hour War","rating":7},{"rating":5,"name":"Half-Life 2"},{"rating":5,"name":"Half-Life: Alyx"},{"name":"Xen","rating":5}]},
-  {"worldName":"Rachet and Clank","rating":8},
-  {"worldName":"The Dragon Prince","rating":5,"condition":[{"name":"Open War","rating":6}]},
-  {"worldName":"Rainbow Six Siege","rating":4},
-  {"worldName":"Afro Samurai","rating":5},
-  {"worldName":"Ark: Evolution","rating":3,"additional":"All Fauna are capturable as familiars by the contractor or by companions.  They may be captured by in universe methods or by stamp or other company provided methods.  No credits are obtained through this.","condition":[{"name":"Arctic Biome","rating":4},{"name":"Mythic Biome","rating":5},{"rating":7,"name":"Infected Earth"}]},
-  {"worldName":"Bayonetta","rating":8,"additional":"The contractor and any companions are always able to percieve supernatural and/or spiritual beings or events. However, interacting with said beings or events requires magical, ki, or other form of supernatural ability. \n\nElemental Cloaks, Symbiote and derived suits, or magical circles qualify. Tempest jewelry or the Stamp only qualifies if the contractor has said abilities themselves."},
-  {"worldName":"Dofus/Wakfu","rating":9,"image":"https://cdn.donmai.us/original/14/5c/__sadida_evangelyne_cra_amalia_sheran_sharm_yugo_and_3_more_wakfu_drawn_by_xaxaxa__145c4615d64be2e16d23c4fc3f1720c6.png","condition":[{"name":"Dofus","rating":10},{"name":"Wakfu","rating":9}]},
-  {"worldName":"Girls' Frontline","rating":5},
-  {"worldName":"Hocus Pocus","rating":3},
-  {"worldName":"Medabots","rating":3,"image":"https://upload.wikimedia.org/wikipedia/en/3/30/Medabots.jpg","condition":[{"name":"Anime Version 3","rating":3},{"name":"Game Version 1","rating":1}]},
-  {"worldName":"Merlin BBC","rating":4,"image":"https://i0.wp.com/thenerdsofcolor.org/wp-content/uploads/2015/12/1024px-series_5_landscape_poster-2.jpg?resize=800%2C598&ssl=1"},
-  {"worldName":"Muv Luv","rating":7,"condition":[{"rating":2,"name":"Extra"},{"rating":9,"name":"Unlimited"},{"rating":7,"name":"Alternate"}]},
-  {"worldName":"Starship Troopers","rating":5,"image":"https://m.media-amazon.com/images/M/MV5BNWExNzg3MmMtYjc3MS00MzFlLWJiOWQtNWYxZTgxNjhlZTQ2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg"},
-  {"worldName":"The Misfits","rating":4,"image":"https://4.bp.blogspot.com/-cpOLLkfvHWk/WcKr5qTZB_I/AAAAAAAABlI/ruuFqnzDJlYYDsd3YKuOyW9iztdqwHKuQCLcBGAs/s1600/mis.jpg"},
-  {"worldName":"Warlock of the Magus World","rating":7,"image":"https://vignette.wikia.nocookie.net/warlock-of-the-magus-world/images/2/2b/Dragon-horde.jpg/revision/latest?cb=20171218122055","additional":"Starting in a world ruled by one or several Rank 8 beings(the equivalent of at least t10, possibly t11 in Waifu Catalogue ratings). ","condition":[{"rating":9,"name":"Starting in the Central Continent, in the Magus World."},{"name":"Starting in the world of the gods.","rating":10}]},
-  {"worldName":"Appleseed","rating":5,"image":"https://cdn.donmai.us/original/b8/36/__deunan_knute_and_briareos_hecatonchires_appleseed_and_1_more_drawn_by_shirow_masamune__b83670dc1386ee9d1e1531c2306aebd0.jpg"},
-  {"worldName":"Code Vein","rating":7,"image":"https://image.api.playstation.com/vulcan/img/cfn/11307ddV-pWycIHQcqD63yAxAoKAJIqKmdhMTd0WH0a0NjzojY-mnKc0V3zz61d4PoTgncPqkHOSgwOs1ktRnVdO8_YETFWE.png","additional":"Mistles work as intended for those with both Soul Talent and Everlasting Talents, but can be corrupted and turn into \"Lost\" this can be resisted and/or prevented with enough \"Willpower/Mental-Fortitude\", or those with both the Curruption and Possession Defenses.\n\nThese only apply to those wishing to use Mistles for their intended purposes.","condition":[{"rating":9,"name":"QueenSlayer"}]},
-  {"worldName":"D.Grey-man","rating":5,"additional":"Innocences crystalize when the Waifu/Husbando is captured"},
-  {"worldName":"Earth Defense Force","rating":10},
-  {"worldName":"Hidden Dungeon Only I Can Enter","rating":5},
-  {"worldName":"How to Train Your Dragon","rating":3,"condition":[{"rating":4,"name":"Dragons Raiding"}]},
-  {"worldName":"Inukami","rating":5,"image":"https://blacknerdproblems.com/wp-content/uploads/2015/09/318519.jpg"},
-  {"worldName":"Jackie Chan Adventures","rating":4,"image":"https://images-na.ssl-images-amazon.com/images/I/81huuaiNR8L._RI_.jpg","additional":"Shendu has all 12 talismans, and Tarakudo has all nine Oni Generals as familiars."},
-  {"worldName":"Jurassic Park","rating":3,"condition":[{"rating":3,"name":"World Jurassic"}]},
-  {"worldName":"Kim Possible","rating":3},
-  {"worldName":"Miss Kobayashi's Dragon Maid","rating":2,"image":"https://upload.wikimedia.org/wikipedia/en/2/2d/Miss_Kobayashi%27s_Dragon_Maid%2C_volume_1.jpg"},
-  {"worldName":"Monsterverse","rating":6,"condition":[{"rating":8,"name":"All Titans active"}]},
-  {"worldName":"Owari no Seraph","rating":5,"additional":"Companion's Cursed Gear become a familiar when captured"},
-  {"worldName":"Rosario + Vampire","rating":6},
-  {"worldName":"The Boys","rating":2,"image":"https://cdnb.artstation.com/p/assets/images/images/031/128/309/large/mayank-kumarr-1.jpg?1602685214","condition":[{"name":"Comics","rating":3}]},
-  {"worldName":"The Hero Who Returned Remains The Strongest In The Modern World","rating":5},
-  {"worldName":"The Long Dark","rating":3,"image":"https://cdn.akamai.steamstatic.com/steam/apps/305620/capsule_616x353.jpg?t=1638931698","condition":[{"name":"Whiteout","rating":4},{"rating":5,"name":"The Hunted"}]},
-  {"worldName":"The Venture Bros","rating":3},
-  {"worldName":"The Witch","rating":3},
-  {"worldName":"Akira","rating":6,"image":"https://cdn.donmai.us/original/68/e8/__kaneda_shoutarou_akira_drawn_by_mr_marker__68e80ea07fd659238f27ba72b79962c8.jpg"},
-  {"worldName":"Darkest Dungeon","rating":4,"condition":[{"rating":5,"name":"In the Hamlet"},{"rating":6,"name":"With DLCs"}]},
-  {"worldName":"Exalted versus the World of Darkness","rating":7},
-  {"worldName":"History's Strongest Disciple Kenichi","rating":5},
-  {"worldName":"Magical Girl Spec-Ops Asuka","rating":7},
-  {"worldName":"Mermaid Melody","rating":3,"image":"https://m.media-amazon.com/images/M/MV5BYTg1NDhhYjQtMGJlMC00ZmM3LWE4MzgtNjBjYTk2MTA1MTIxXkEyXkFqcGdeQXVyODI2MTU1ODE@._V1_.jpg","additional":"The mermaids are able to control their transformations when entering water rather than automatically turning into mermaids. Their pets serve as familiars."},
-  {"worldName":"Omamori Himari","rating":5},
-  {"worldName":"Rakudai Kishi no Eiyuutan","rating":6,"image":"https://cdn11.neko-sama.xyz/1/1570p4orCOfy.jpg"},
-  {"worldName":"Sora no Otoshimono","rating":1,"image":"https://i5.walmartimages.com/asr/86620f1b-a665-491b-9155-8a3f030a5579_1.92ffb0313751299a7522a8d0cac12743.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF"},
-  {"worldName":"The Wolf Among Us","rating":5,"image":"https://i.imgur.com/DVENIP5.jpeg","condition":[{"rating":7,"name":"Pre-Fabletown"},{"name":"Present","rating":5}]},
-  {"worldName":"World's End Harem","rating":2,"image":"https://i.imgur.com/WoTCPFc_d.webp?maxwidth=640&shape=thumb&fidelity=medium"},
-  {"worldName":"Asura's Wrath","rating":10,"image":"https://i.imgur.com/mR4Xj9c.jpeg"},
-  {"worldName":"Dynasty Warriors","rating":5,"image":"https://static3.cbrimages.com/wordpress/wp-content/uploads/2021/11/Dynasty-Warriors.jpg"},
-  {"worldName":"Elden Ring","rating":9,"image":"https://cdn.donmai.us/original/cb/e3/__tarnished_akira_and_1_more_drawn_by_katlego__cbe3563dfa91de8c82f80dff65ebc621.jpg","additional":"Melina allows you and your waifus to pay for level-ups with Runes, just like their counterparts from the other games."},
-  {"worldName":"Hellboy","rating":4,"condition":[{"rating":4,"name":"WW2"},{"rating":5,"name":"Comicverse"}]},
-  {"worldName":"I Have a Mansion in the Post-apocalyptic World","rating":3,"condition":[{"rating":3,"name":"Earth"},{"name":"Post-apocalyptic World","rating":7}]},
-  {"worldName":"Misfit of Demon King Academy","rating":6},
-  {"worldName":"Outlaw Star","rating":4},
-  {"worldName":"Path of Exile","rating":7,"image":"https://i.imgur.com/S42mggf.png"},
-  {"worldName":"Spy X Family","rating":3},
-  {"worldName":"Stardew Valley","rating":2},
-  {"worldName":"Teen Wolf","rating":4,"image":"https://seriestvinfo.files.wordpress.com/2017/09/122.jpg","additional":"Were-Waifus/Husbandos are inmune to full moons when captured"},
-  {"worldName":"Titanfall","rating":4,"image":"https://i.imgur.com/4IBTjN9.jpg","condition":[{"name":"Titanfall 1","rating":6},{"rating":6,"name":"Titanfall 2"},{"rating":4,"name":"Apex Games"}]}
+  {
+    "worldName": "Elden Ring",
+    "rating": 9,
+    "image": "https://cdn.donmai.us/original/cb/e3/__tarnished_akira_and_1_more_drawn_by_katlego__cbe3563dfa91de8c82f80dff65ebc621.jpg",
+    "additional": "Melina allows you and your waifus to pay for level-ups with Runes, just like their counterparts from the other games."
+  },
+  {
+    "worldName": "Cradle (Will Wight)",
+    "rating": 10,
+    "condition": [
+      {
+        "name": "No active crisis",
+        "rating": 6
+      },
+      {
+        "rating": 7,
+        "name": "Elder Dragons active"
+      },
+      {
+        "name": "Start of Story",
+        "rating": 8
+      }
+    ]
+  },
+  {
+    "worldName": "I Shall Seal The Heavens",
+    "rating": 10
+  },
+  {
+    "worldName": "Shinza Bansho",
+    "rating": 10,
+    "condition": [
+      {
+        "name": "Paradise Lost",
+        "rating": 9
+      },
+      {
+        "name": "Dies Irae",
+        "rating": 8
+      },
+      {
+        "rating": 10,
+        "name": "Kajiri Kamui Kagura"
+      },
+      {
+        "name": "Avesta of Black and White",
+        "rating": 9
+      }
+    ]
+  },
+  {
+    "worldName": "SCP",
+    "rating": 10
+  },
+  {
+    "worldName": "Sailor Moon Manga",
+    "rating": 10
+  },
+  {
+    "worldName": "Homestuck",
+    "rating": 10
+  },
+  {
+    "worldName": "Ben 10",
+    "rating": 10,
+    "condition": [
+      {
+        "name": "Clasic",
+        "rating": 6
+      },
+      {
+        "rating": 9,
+        "name": "Alien Force"
+      },
+      {
+        "name": "Ultimate",
+        "rating": 8
+      },
+      {
+        "rating": 10,
+        "name": "Omniverse"
+      }
+    ]
+  },
+  {
+    "worldName": "Solo Leveling",
+    "rating": 10
+  },
+  {
+    "worldName": "Supreme Commander",
+    "rating": 10,
+    "image": "https://images2.alphacoders.com/242/24252.jpg"
+  },
+  {
+    "worldName": "DOOM: Eternal",
+    "rating": 10
+  },
+  {
+    "worldName": "Earth Defense Force",
+    "rating": 10
+  },
+  {
+    "worldName": "Asura's Wrath",
+    "rating": 10,
+    "image": "https://i.imgur.com/mR4Xj9c.jpeg"
+  }
 ]

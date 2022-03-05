@@ -171,6 +171,6 @@ function addPower(uid: number) {
   else powers[uid] = ['']
 }
 
-watch(showBuyPerk, () => nextTick(() => lazyLoadImg(charList.value)))
+watch(showBuyPerk, () => lazyLoadImg(charList.value), { flush: 'post' })
 
 </script>

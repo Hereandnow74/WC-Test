@@ -37,6 +37,11 @@
       <div v-if="companionsDataFiltered.length === 0 && companionsData.length" class="text-center">
         No companions matching your <b>filter</b>
       </div>
+      <div v-if="companionsDataFiltered.length" class="flex gap-2 justify-end mt-2">
+        <Button size="Small" label="Undo All" bg-color="bg-blue-500" @click="undoAll" />
+        <Button size="Small" label="Sell All" bg-color="bg-red-500" @click="sellAll" />
+        <Button size="Small" label="Return All" bg-color="bg-amber-600" @click="returnAll" />
+      </div>
     </div>
   </div>
 </template>
@@ -134,8 +139,8 @@ const companionsPerksList = computed(() => {
 })
 
 watch([companionsDataFiltered, companionImages], () => {
-  nextTick(() => lazyLoadImg(waifuList.value))
-})
+  lazyLoadImg(waifuList.value)
+}, { flush: 'post' })
 
 function sellCompanion(uid: number) {
   const cmp = companions.value[findIndex(companions.value, { uid })]
@@ -161,5 +166,17 @@ function sellCompanion(uid: number) {
 
 function undoBuying(uid: number) {
   companions.value.splice(findIndex(companions.value, { uid }), 1)
+}
+
+function sellAll() {
+  companions.value.filter(cmp => cmp.method === 'capture').forEach(cmp => sellCompanion(cmp.uid))
+}
+
+function returnAll() {
+  companions.value.filter(cmp => cmp.method === 'buy').forEach(cmp => sellCompanion(cmp.uid))
+}
+
+function undoAll() {
+  companions.value = []
 }
 </script>

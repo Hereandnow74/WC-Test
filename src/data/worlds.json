@@ -144,12 +144,6 @@
     "additional": "All characters with profiles in Sword Art Online, Alfheim Online, Gun Gale Online, and other VRMMOs will benefit from their toons’ statistics, skills, equipment, and other factors, but only from one toon at a time. They can quick-change between each profile as desired."
   },
   {
-    "rating": 9,
-    "q": true,
-    "worldName": "Tenchi Muyo!",
-    "additional": "Mitoto’s teleportation ability works as long as she has a mop or other cleaning tool in her hands. Anyone she brings with her must have one as well."
-  },
-  {
     "rating": 2,
     "q": true,
     "worldName": "Tomb Raider",
@@ -161,7 +155,32 @@
     "worldName": "Revue Starlight",
     "additional": "All the world’s a stage. The girls of this series can transform and use their stage magic anywhere. Everything besides their weapons and costumes is literally theater props, but even those can be useful in the right situations."
   },
-  {"worldName":"Stargate","rating":3,"condition":[{"name":"SG1/SGA modern Earth","rating":3},{"rating":4,"name":"Goa'uld controlled World"},{"name":"Pegasus Galaxy, Wraith Asleep","rating":4},{"rating":6,"name":"Pegasus Galaxy, Wraith Awake"},{"rating":7,"name":"Ori Aware"}]},
+  {
+    "worldName": "Stargate",
+    "rating": 3,
+    "condition": [
+      {
+        "name": "SG1/SGA modern Earth",
+        "rating": 3
+      },
+      {
+        "rating": 4,
+        "name": "Goa'uld controlled World"
+      },
+      {
+        "name": "Pegasus Galaxy, Wraith Asleep",
+        "rating": 4
+      },
+      {
+        "rating": 6,
+        "name": "Pegasus Galaxy, Wraith Awake"
+      },
+      {
+        "rating": 7,
+        "name": "Ori Aware"
+      }
+    ]
+  },
   {
     "rating": 3,
     "worldName": "Sekirei",
@@ -195,7 +214,12 @@
   {
     "rating": 3,
     "worldName": "Game of Thrones",
-    "condition": [{"name": "Show continuity", "rating": 3}]
+    "condition": [
+      {
+        "name": "Show continuity",
+        "rating": 3
+      }
+    ]
   },
   {
     "rating": 3,
@@ -240,7 +264,18 @@
     "worldName": "Those Who Hunt Elves",
     "additional": "Ritsuko has her cat-possessed tank Mihke as a familiar."
   },
-  {"worldName":"Overwatch","rating":3,"q": true,"additional":"D.Va has her personal mech. Ashe has B.O.B. as a familiar. Mei has Snowball as a familiar.","condition":[{"name":"Omnic crisis ","rating":5}]},
+  {
+    "worldName": "Overwatch",
+    "rating": 3,
+    "q": true,
+    "additional": "D.Va has her personal mech. Ashe has B.O.B. as a familiar. Mei has Snowball as a familiar.",
+    "condition": [
+      {
+        "name": "Omnic crisis ",
+        "rating": 5
+      }
+    ]
+  },
   {
     "rating": 3,
     "q": true,
@@ -371,13 +406,34 @@
     "rating": 4,
     "worldName": "Macross",
     "condition": [
-      {"name":"Zero", "rating": 4},
-      {"name":"Plus", "rating": 5},
-      {"name":"Original Series", "rating": 6},
-      {"name":"Delta", "rating": 6},
-      {"name":"Macross 7", "rating": 7},
-      {"name":"Frontier", "rating": 7},
-      {"name":"Zero", "rating": 4}
+      {
+        "name": "Zero",
+        "rating": 4
+      },
+      {
+        "name": "Plus",
+        "rating": 5
+      },
+      {
+        "name": "Original Series",
+        "rating": 6
+      },
+      {
+        "name": "Delta",
+        "rating": 6
+      },
+      {
+        "name": "Macross 7",
+        "rating": 7
+      },
+      {
+        "name": "Frontier",
+        "rating": 7
+      },
+      {
+        "name": "Zero",
+        "rating": 4
+      }
     ],
     "additional": "Micronization: Zentraedi and Meltrandi characters are Microne (human)-sized by default. The presence of one will add a Micronization chamber to your Grand Manor, if you have one. Advanced Tempest Runes (Body) allows them, and any other member of our retinue who’s used a Micronization chamber, to shift between Microne and Macrone forms on the fly. Body Talent is enough to let Klan Klein maintain her adult figure while micronized. Additionally, all Zentraedi and Meltrandi combatants have a personal Pocket Space for their battlesuits. Battlesuits stored this way will automatically resize themselves to fit their wearer, regardless of whether the wearer is in Microne or Macrone form. Other: Mylene has her pet… tribble(?) Guvava as a familiar. We don’t actually know what Guvava is, just that it’s cute and fuzzy. Ranka has her squirrel-like pet Ai-kun as a familiar."
   },
@@ -413,7 +469,12 @@
     "rating": 4,
     "worldName": "A Song of Ice and Fire",
     "additional": "Dragon riders have their dragons as familiars.",
-    "condition": [{"name": "Books continuity", "rating": 4}]
+    "condition": [
+      {
+        "name": "Books continuity",
+        "rating": 4
+      }
+    ]
   },
   {
     "rating": 4,
@@ -438,12 +499,22 @@
     "rating": 4,
     "worldName": "Legend of Zelda",
     "additional": "Midna cannot take her imp form by default and would strongly prefer not to ever again. She instead has a strong affinity for shadow magic, capable of melting into shadows and teleporting through a world’s Twilight Realm, even if it doesn’t have one. The imp form may still be remade as a shadow magic spell, for use on herself or others. Fi brings the Master Sword with her, as if she was a Unison Device from MGLN; its aesthetics may change if she’s bound by a Symbiote.",
-    "condition":[ {"name": "Breath of the Wild", "rating": 4}]
+    "condition": [
+      {
+        "name": "Breath of the Wild",
+        "rating": 4
+      }
+    ]
   },
   {
     "rating": 4,
     "worldName": "Legend of the Galactic Heroes",
-    "condition": [{"name": "Canon era", "rating": 4}]
+    "condition": [
+      {
+        "name": "Canon era",
+        "rating": 4
+      }
+    ]
   },
   {
     "rating": 4,
@@ -604,7 +675,12 @@
   {
     "rating": 5,
     "worldName": "Black Clover",
-    "condition": [{"name": "Start of canon", "rating": 5}]
+    "condition": [
+      {
+        "name": "Start of canon",
+        "rating": 5
+      }
+    ]
   },
   {
     "rating": 5,
@@ -633,7 +709,12 @@
   {
     "rating": 5,
     "worldName": "Kimetsu no Yaiba/Demon Slayer",
-    "condition": [{"name": "Taishou-era Japan", "rating": 5}]
+    "condition": [
+      {
+        "name": "Taishou-era Japan",
+        "rating": 5
+      }
+    ]
   },
   {
     "worldName": "Fire Emblem",
@@ -794,7 +875,12 @@
     "rating": 6,
     "worldName": "Xenoblade Chronicles 2",
     "additional": "Any member of your retinue can act as a Driver for any Blade you have, with a preference for canon Driver-Blade pairs. Canon Drivers have their Blades as humanoid familiars: Rex - Pyra/Mythra, Zeke - Pandoria, Tora - Poppi, Lora - Jin and Haze, Mòrag - Brighid, Nia - Dromarch, Patroka - Perdido. The waifu perks for Pneuma and the Poppibuster must be purchased separately or acquired in-universe.",
-    "condition": [{"name": "Main story", "rating": 6}]
+    "condition": [
+      {
+        "name": "Main story",
+        "rating": 6
+      }
+    ]
   },
   {
     "rating": 6,
@@ -832,12 +918,22 @@
   {
     "rating": 6,
     "worldName": "Kill la Kill",
-    "condition": [{"name": "Start of canon", "rating": 6}]
+    "condition": [
+      {
+        "name": "Start of canon",
+        "rating": 6
+      }
+    ]
   },
   {
     "rating": 6,
     "worldName": "Resident Evil",
-    "condition": [{"name": "Games verse", "rating": 6}]
+    "condition": [
+      {
+        "name": "Games verse",
+        "rating": 6
+      }
+    ]
   },
   {
     "rating": 6,
@@ -974,7 +1070,12 @@
   {
     "rating": 6,
     "worldName": "Dune",
-    "condition":[ {"name": "First book", "rating": 6}]
+    "condition": [
+      {
+        "name": "First book",
+        "rating": 6
+      }
+    ]
   },
   {
     "rating": 6,
@@ -1088,7 +1189,12 @@
   {
     "rating": 7,
     "worldName": "Warcraft",
-    "condition": [{"name": "No active crisis", "rating": 7}]
+    "condition": [
+      {
+        "name": "No active crisis",
+        "rating": 7
+      }
+    ]
   },
   {
     "rating": 7,
@@ -1107,7 +1213,12 @@
     "rating": 7,
     "worldName": "Inuyasha",
     "additional": "Sango has Kirara as a familiar. Kikyou has up to eight soul collectors as familiars.",
-    "condition": [{"name": "Sengoku Jidai", "rating": 7}]
+    "condition": [
+      {
+        "name": "Sengoku Jidai",
+        "rating": 7
+      }
+    ]
   },
   {
     "rating": 7,
@@ -1211,7 +1322,12 @@
   {
     "rating": 7,
     "worldName": "Drakengard",
-    "condition": [{"name": "Drakengard 3", "rating": 7}]
+    "condition": [
+      {
+        "name": "Drakengard 3",
+        "rating": 7
+      }
+    ]
   },
   {
     "rating": 7,
@@ -1312,12 +1428,22 @@
     "rating": 8,
     "worldName": "Final Fantasy X",
     "additional": "Summons (general): Summons that you purchase or capture separately from their summoners will become active full-time; the summoner’s call will instead teleport them to her location. All of your summoners share the same summon pool. Summons that appeared in many different games will have your preferred design, not necessarily the one that matches the first summoner you purchased or captured. Summons (non-humanoid): Non-humanoid summons, including Phoenix, Valefor, and Anima, can switch between their humanoid and original forms at will. Anima’s human form can't use Pain or Oblivion, but knows all generic skills/spells from FFX by default. Her Aeon form is mobile, with no chains and a complete lower body. Her original lower half, 'the Shadow,' has its own complete lower body and lives in an explicit pocket universe. Oblivion feeds a target to the Shadow like normal. Anima may also temporarily switch places with her Shadow; this tends to result in extreme collateral damage. Other: White Mage has her 8-Bit Theater characterization. If you have a waifu from FFV, the four Crystals will spawn not too far out of your way, allowing you and your waifus access to the game’s job system. Lenna Tycoon has the wind drake Hiryu as a familiar - likewise for the other two female party members from FFV: Faris Scherwiz and her sea dragon Syldra, and Krile and her own wind drake that has no canon name. If you have at least one waifu from FFVII and Life’s a Beach or Grand Manor, Mako Springs will appear in your Home and produce natural Materia at an accelerated rate. If you visit Spira or have at least one waifu from FFX, you and all of your retinue will gain Sphere Grids; this may be one single shared grid, several grids shared by subsets of your retinue, or individual grids for everyone. Lightning, Vanille, and Fang have Odin, Hecatoncheir, and Bahamut, respectively.",
-    "condition": [{"name": "Permanent crisis", "rating": 8}]
+    "condition": [
+      {
+        "name": "Permanent crisis",
+        "rating": 8
+      }
+    ]
   },
   {
     "rating": 8,
     "worldName": "Final Fantasy VIII",
-    "condition": [{"name": "Permanent crisis", "rating": 8}]
+    "condition": [
+      {
+        "name": "Permanent crisis",
+        "rating": 8
+      }
+    ]
   },
   {
     "rating": 8,
@@ -1392,6 +1518,12 @@
   },
   {
     "rating": 9,
+    "q": true,
+    "worldName": "Tenchi Muyo!",
+    "additional": "Mitoto’s teleportation ability works as long as she has a mop or other cleaning tool in her hands. Anyone she brings with her must have one as well."
+  },
+  {
+    "rating": 9,
     "worldName": "Warhammer Fantasy",
     "additional": "The Lady and Lileath would be identical twins if not for their different races; if you have both, they’ll argue over which one is the older sister. Vampires no longer suffer from any of their weaknesses. Hellebron and Morathi are both young again. Khalida is alive and young again. Valkia is metaphysically separated from Khorne.",
     "condition": [
@@ -1413,7 +1545,12 @@
     "rating": 9,
     "worldName": "Soulsborne",
     "additional": "Anastacia of Astora and the Darkmoon Knightess allows you and your waifus to pay for level-ups with soul energy, just like their counterparts from the other games.",
-    "condition": [{"name": "Demon's Souls, Dark Souls 1-3", "rating": 9}]
+    "condition": [
+      {
+        "name": "Demon's Souls, Dark Souls 1-3",
+        "rating": 9
+      }
+    ]
   },
   {
     "worldName": "Overlord (LN)",
@@ -1618,7 +1755,12 @@
   {
     "rating": 10,
     "worldName": "Diablo",
-    "condition": [{"name": "Diablo 3", "rating": 10}]
+    "condition": [
+      {
+        "name": "Diablo 3",
+        "rating": 10
+      }
+    ]
   },
   {
     "rating": 10,

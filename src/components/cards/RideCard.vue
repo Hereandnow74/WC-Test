@@ -152,5 +152,5 @@ function deleteRide() {
 }
 
 onMounted(() => { if (rideImg.value) lazyLoadSingleImg(rideImg.value) })
-watch(settings.value, () => nextTick(() => { if (rideImg.value) lazyLoadSingleImg(rideImg.value) }))
+watch(settings.value, () => { if (rideImg.value) lazyLoadSingleImg(rideImg.value) }, { flush: 'post' })
 </script>

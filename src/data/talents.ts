@@ -207,7 +207,7 @@ talents.push({
   image: 'https://i.ibb.co/rww384y/Template-Stacking-I.jpg',
   cost: 15,
   special: 'Must be repurchased for each use.',
-  requires: 'Requires: Matching copy of Added Potential, or obtaining the power by other means.',
+  requires: 'Matching copy of Added Potential, or obtaining the power by other means.',
   complex: 'target_f',
   anything: 'Power Name',
   desc: `

@@ -202,6 +202,6 @@ function setHeight(event: Event) {
   event.target.style['max-height'] = `${event.target.clientWidth * 1.7 || 90}px`
 }
 
-watch(showBuyPerk, () => nextTick(() => lazyLoadImg(charList.value)))
+watch(showBuyPerk, () => lazyLoadImg(charList.value), { flush: 'post' })
 
 </script>

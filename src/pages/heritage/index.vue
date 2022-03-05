@@ -139,7 +139,7 @@ else
 
 onMounted(() => useTooltips())
 
-watch(activeTree, () => nextTick(useTooltips))
+watch(activeTree, useTooltips, { flush: 'p' })
 
 onBeforeRouteUpdate((to, from, next) => {
   if (to.query.q)

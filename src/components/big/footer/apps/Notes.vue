@@ -8,6 +8,7 @@
     <TextArea
       v-model="notes[note]"
       placeholder="Note text"
+      class="flex-grow"
     />
   </div>
 </template>

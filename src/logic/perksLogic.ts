@@ -472,6 +472,7 @@ export function clearAll() {
     minus: 0,
     plus11: 0,
     minus11: 0,
+    sell11: 0,
   }
   jumpChain.value = []
   currentWorld.value = startingWorld.value

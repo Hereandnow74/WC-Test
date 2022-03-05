@@ -1,5 +1,5 @@
 import { DBCharacter } from 'global'
-import { sample } from 'lodash-es'
+import { groupBy, sample, shuffle } from 'lodash-es'
 import { getAllChars, allWorldsNoCondition } from '~/data/constants'
 
 export class MissionGenerator {
@@ -42,7 +42,7 @@ export class MissionGenerator {
 
   randomConquerCondition() {
     const conditions = [
-      'Only companions with less or average tier for the world',
+      'Only companions with less than average or average tier for the world',
       'Your companions must do it, do not help',
       'Use only native power/technology',
       'You must do it yourself',
@@ -69,6 +69,18 @@ export class MissionGenerator {
       'Use only native power / technology',
       'You must do it yourself with no retinue help',
       'Do not disclose any information about Catalog to the target',
+    ]
+    return sample(conditions) as string
+  }
+
+  randomMatchCondition() {
+    const conditions = [
+      'No mind control',
+      'You must do it in a week',
+      'Use only native power / technology',
+      'You must do it yourself with no retinue help',
+      'Do it by force',
+      'THey need to have a wedding',
     ]
     return sample(conditions) as string
   }
@@ -102,11 +114,27 @@ export class MissionGenerator {
   conquer() {
     const world = sample(allWorldsNoCondition.value)
     if (world) {
+      this.scope = 'Grand'
       this.title = `Conquer: ${world.worldName}`
       this.description = `Conquer <b>${world.worldName}(DR${world.rating})</b>, you need to became unquestionable ruler of this world.`
       this.conditions = [{ value: this.randomConquerCondition() }]
       this.loca = `${world.worldName}${world.condition ? ` - ${world.condition}` : ''}`
-      this.reward = 'Double of the world budged'
+      this.reward = 'Double of the world budget'
+    }
+    return this
+  }
+
+  matchmaker() {
+    const byWorld = Object.values(groupBy(this.chars, 'w')).filter(w => w.length >= 2)
+    const worldChars = shuffle(sample(byWorld))
+    const target = worldChars[0]
+    const target_2 = worldChars[1]
+    if (target && target_2) {
+      this.title = `Ship: ${target.n} + ${target_2.n}`
+      this.description = `Ensure that <b>${target.n}</b>(T${target.t}) from <b>${target.w}</b> will enter into romantic relationship with <b>${target_2.n}</b>(T${target_2.t}) from <b>${target_2.w}</b>`
+      this.conditions = [{ value: this.randomMatchCondition() }]
+      this.loca = target.w
+      this.reward = 'Sum of the target costs in credits'
     }
     return this
   }
@@ -138,7 +166,8 @@ export class MissionGenerator {
   }
 
   generateRandom() {
-    const methods = [this.capture, this.kill, this.conquer, this.impregnate, this.superHero]
+    this.scope = 'Quick'
+    const methods = [this.capture, this.kill, this.conquer, this.impregnate, this.superHero, this.matchmaker]
     const method = sample(methods) as () => typeof this
     return method.apply(this)
   }

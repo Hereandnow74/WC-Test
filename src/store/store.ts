@@ -216,7 +216,7 @@ const budget = computed(() => {
       - genericWaifuPerksCost.value - companionsCost.value - otherCost.value - fee.value
       - budgetMods.value.minus + budgetMods.value.plus + companionProfit.value + companionProfitSold.value
       + usedHeritageDiscount.value + talentsDiscount.value + defensesDiscount.value
-      + defenseRetinueDiscount.value + specificModsCost.value
+      + defenseRetinueDiscount.value + specificModsCost.value + budgetMods.value.sell11 * 2000
 
   // CSR implementation 2.0
   if (flags.value.chargen && csr.value) {
@@ -260,7 +260,7 @@ const tier11tickets = computed(() => {
 
   return ticket - heritageCost - ridePerksCost - homePerksCost - talentsCost - defensesCost - miscPerksCost
     - waifuPerksCost - genericWaifuPerksCost - luresCost - companionsCost - bindingCost
-    - budgetMods.value.minus11 + budgetMods.value.plus11 + companionTicketProfit.value
+    - budgetMods.value.minus11 + budgetMods.value.plus11 + companionTicketProfit.value - budgetMods.value.sell11
 })
 
 const totalCost = computed(() => startingOrigin.value.cost + heritageCost.value + bindingCost.value

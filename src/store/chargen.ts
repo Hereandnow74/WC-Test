@@ -115,7 +115,12 @@ const budgetMods = storeType('budgetMods', {
   minus: 0,
   plus11: 0,
   minus11: 0,
+  sell11: 0,
 })
+
+// Temporary hack to prevent NaN error
+if (budgetMods.value.sell11 === undefined)
+  budgetMods.value.sell11 = 0
 
 const specificMods = storeType('spMod', [] as {desc: string; mod: number}[])
 

@@ -89,5 +89,5 @@ function sendPerk() {
 }
 
 onMounted(() => { if (perkImg.value) lazyLoadSingleImg(perkImg.value) })
-watch(settings.value, () => nextTick(() => { if (perkImg.value) lazyLoadSingleImg(perkImg.value) }))
+watch(settings.value, () => { if (perkImg.value) lazyLoadSingleImg(perkImg.value) }, { flush: 'post' })
 </script>

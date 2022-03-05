@@ -134,7 +134,7 @@ const bindingByType = computed(() => {
 const activeType = ref<keyof typeof bindingByType.value>('Stamp')
 
 onMounted(() => useTooltips())
-watch(activeType, () => nextTick(useTooltips))
+watch(activeType, useTooltips, { flush: 'post' })
 
 const params = useUrlSearchParams('history')
 

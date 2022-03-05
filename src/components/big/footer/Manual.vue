@@ -17,6 +17,10 @@
       <NumberInput v-model="budgetMods.minus11" theme="dark" :min="0" class="w-24" />
     </div>
     <div class="flex justify-between">
+      Sell T11 ticket for 2000 credits
+      <NumberInput v-model="budgetMods.sell11" theme="dark" :min="0" class="w-24" />
+    </div>
+    <div class="flex justify-between">
       <span>Fee <span class="text-sm text-gray-400">(forever lost credits from selling perks)</span></span>
       <Input v-model.number="fee" class="w-24" />
     </div>

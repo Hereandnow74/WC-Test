@@ -23,10 +23,11 @@
 </template>
 
 <script lang="ts" setup>
+import { union } from 'lodash-es'
 import { useStore } from './store/store'
 import {
   isSupport, showSaveLoad, showShare, showSideMenu, showAddPerk, toggleShowAddPerk,
-  showAddMission, toggleShowAddMission, promoteShown, toggleShowSettings, showSettings,
+  showAddMission, toggleShowAddMission, promoteShown, toggleShowSettings, showSettings, clearAll, sendStats,
 } from '~/logic'
 
 const { totalActive } = useStore()
@@ -47,4 +48,35 @@ watch(idle, () => {
   else
     start = new Date()
 })
+
+onKeyStroke('c', (e) => {
+  if (e.altKey) {
+    e.preventDefault()
+    clearAll()
+  }
+})
+
+function randomString(length: number, chars: string) {
+  let result = ''
+  for (let i = length; i > 0; --i)
+    result += chars[Math.floor(Math.random() * chars.length)]
+  return result
+}
+
+function someStats() {
+  const uid = window.localStorage.getItem('userId')
+  if (!uid) {
+    window.localStorage.setItem('userId', randomString(8, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'))
+    const saves = window.localStorage.getItem('saves')
+    if (saves) {
+      const savesArray = Object.values(JSON.parse(saves))
+
+      const perks = union(...savesArray.map(x => x.allEffects))
+      const companions = union(...savesArray.map(x => x.companions.map(c => c.uid)))
+      sendStats({ perks, companions }, () => {})
+    }
+  }
+}
+
+someStats()
 </script>

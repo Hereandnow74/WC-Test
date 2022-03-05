@@ -7,7 +7,7 @@
           <Button label="Rules" size="Small" bg-color="bg-red-500" @click="showRules = true" />
         </Note>
         <div class="flex gap-2">
-          <Input v-model="name" placeholder="Name" class="flex-grow" :error-message="errors.name" />
+          <Input v-model.trim="name" placeholder="Name" class="flex-grow" :error-message="errors.name" />
           <NumberInput v-model="tier" label="Tier" :max="11" :error-message="errors.tier" />
         </div>
         <div class="flex gap-2">
@@ -44,7 +44,7 @@
           placeholder="Tags - press Enter to add"
           :error-message="errors.tags"
         />
-        <Input v-if="serverSave" v-model="nickname" placeholder="Your nickname" :error-message="errors.nickname" name="login" />
+        <Input v-if="serverSave" v-model.trim="nickname" placeholder="Your nickname" :error-message="errors.nickname" name="login" />
         <div v-if="tierError" class="text-red-400 font-semibold">
           {{ tierError }}
         </div>

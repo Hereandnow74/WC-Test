@@ -5,6 +5,17 @@
     </h2>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
+        05 March 2022
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>~35 new user submitted characters</li>
+        <li>Shortcut for clearing build - Alt+C</li>
+        <li>You now can sell T11 tickets for 2000 credits in smartphone -> wrench icon</li>
+        <li>Sell/Return/Undo all buttons in retinue tab</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
         02 March 2022
       </h3>
       <ul class="list-decimal list-inside">

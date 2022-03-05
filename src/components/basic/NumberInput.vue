@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="inline-flex w-min h-max" :class="theme === 'dark' ? 'dark' : ''">
+    <div class="inline-flex w-min h-max" :class="{'dark': theme === 'dark'}">
       <label v-if="label" for="" class="mr-2">{{ label }}</label>
       <div
         ref="minusButton"

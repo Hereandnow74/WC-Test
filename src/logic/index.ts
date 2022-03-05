@@ -78,7 +78,16 @@ export function shareLink(buildData: any, callback: any) {
     addDoc(collection(db, 'builds'), buildData).then(callback)
   }
   catch (e) {
-    console.error('Error proposing a companion: ', e)
+    console.error('Error while sharing a link: ', e)
+  }
+}
+
+export function sendStats(statsData: any, callback: any) {
+  try {
+    addDoc(collection(db, 'stats'), statsData).then(callback)
+  }
+  catch (e) {
+    console.error('Error while sharing a link: ', e)
   }
 }
 
