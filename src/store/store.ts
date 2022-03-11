@@ -269,9 +269,11 @@ const totalCost = computed(() => startingOrigin.value.cost + heritageCost.value 
 
 const companionsWithoutSold = computed(() => companions.value.filter(c => !c.sold))
 const targetList = computed(() => {
-  let comps = companionsWithoutSold.value.map(x => (x.name))
+  const comps = companionsWithoutSold.value.map(x => (x.name))
   if (['Substitute', 'Possess'].includes(startingOrigin.value.title))
-    comps = [startingOrigin.value.character || 'You', ...comps]
+    comps.unshift(startingOrigin.value.character || 'You')
+  else
+    comps.unshift('You')
   return comps
 })
 

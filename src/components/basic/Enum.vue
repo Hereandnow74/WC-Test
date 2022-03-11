@@ -10,7 +10,7 @@
           <span v-if="i != 0" class="text-orange-500">, </span>
           <span class="hover:underline">{{ el.title2 || el.title || el }}</span>
           <span v-if="el?.anything?.length" class="text-yellow-500">({{ el.anything }})</span>
-          <span v-if="el.count && el.count > 1" class="">(x{{ el.count }})</span>
+          <span v-if="el.count && el.count > 1" class="text-gray-300">(<span class="text-cyan-400">x{{ el.count }}</span>)</span>
           <span v-if="el?.target?.length || el.waifu" class="text-teal-500">({{ el.target || el.waifu }})</span>
           <span v-if="el.complex && isArray(el.complex) && el.complex.length">
             <template v-if="el.complex[0].flavor && el.complex[0].target">
@@ -30,7 +30,7 @@
             </template>
           </span>
         </router-link>
-        <span v-if="priceMode" class="text-gray-300">[{{ el.cost }}]</span>
+        <span v-if="priceMode && costOrIntensity(el)" class="text-gray-400">[<span class="text-gray-300">{{ costOrIntensity(el) }}</span>]</span>
         <span v-if="editMode" class="text-red-400 hover:text-red-500 cursor-pointer" @click.stop="deletePerk(el)"><fluent:delete-20-filled /></span>
       </template>
       ]
@@ -45,6 +45,9 @@
 import { isArray, groupBy } from 'lodash-es'
 import type { PropType } from 'vue'
 import { LINKS, QUERIES } from '~/data/constants'
+import { useStore } from '~/store/store'
+
+const { baseBudget } = useStore()
 
 defineProps({
   list: {
@@ -74,6 +77,24 @@ defineProps({
 })
 
 const emit = defineEmits(['deletePerk'])
+
+const costOrIntensity = (el) => {
+  if (el.cost) {
+    if (el.cost > 0)
+      return el.cost * (-1)
+    if (el.cost === 0)
+      return 'free'
+    if (el.cost < 0)
+      return el.cost * (-1)
+  }
+  if (el.intensity) {
+    if (el.intensity <= 1)
+      return el.intensity * baseBudget.value
+    else
+      return el.intensity
+  }
+  return false
+}
 
 function deletePerk(el: any) {
   emit('deletePerk', el)

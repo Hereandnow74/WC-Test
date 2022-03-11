@@ -5,6 +5,19 @@
     </h2>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
+        09 March 2022
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>~135 new user submitted characters</li>
+        <li>Shortcut for Build to Text - Alt+S</li>
+        <li>Shortcut for Build to Image - Alt+D</li>
+        <li>New Build to Image function</li>
+        <li>Some UI changes</li>
+        <li>You can now click on character tag to filter by it</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
         05 March 2022
       </h3>
       <ul class="list-decimal list-inside">

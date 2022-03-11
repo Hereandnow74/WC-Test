@@ -36,6 +36,14 @@
         </div>
       </div>
       <h4 class="text-center text-2xl mt-4">
+        Keyboard Shortcuts
+      </h4>
+      <ul class="list-inside list-disc ml-8">
+        <li><b>Alt+C</b> - Clear build</li>
+        <li><b>Alt+S</b> - Copy build text to clipboard</li>
+        <li><b>Alt+D</b> - Copy build image to clipboard</li>
+      </ul>
+      <h4 class="text-center text-2xl mt-4">
         Extended Companions Search capabilities
       </h4>
       <p>If you want more control in your companion search results, use rules defined below.</p>

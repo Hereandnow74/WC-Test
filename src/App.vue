@@ -16,9 +16,10 @@
     <component :is="PromoteDialog" v-if="(totalActive > 60 * 60 && !promoteShown) || isSupport" />
     <component :is="SaveLoad" v-if="showSaveLoad" class="z-20" @click="showSaveLoad = !showSaveLoad" />
     <component :is="Share" v-if="showShare" class="z-20" @click="showShare = !showShare" />
-    <component :is="addPerkComponent" v-if="showAddPerk" @click="toggleShowAddPerk" />
-    <component :is="addMissionComponent" v-if="showAddMission" @click="toggleShowAddMission" />
-    <component :is="settingsComponent" v-if="showSettings" @click="toggleShowSettings" />
+    <component :is="addPerkComponent" v-if="showAddPerk" @click="toggleShowAddPerk()" />
+    <component :is="addMissionComponent" v-if="showAddMission" @click="toggleShowAddMission()" />
+    <component :is="settingsComponent" v-if="showSettings" @click="toggleShowSettings()" />
+    <BuildImage />
   </main>
 </template>
 
@@ -27,7 +28,8 @@ import { union } from 'lodash-es'
 import { useStore } from './store/store'
 import {
   isSupport, showSaveLoad, showShare, showSideMenu, showAddPerk, toggleShowAddPerk,
-  showAddMission, toggleShowAddMission, promoteShown, toggleShowSettings, showSettings, clearAll, sendStats,
+  showAddMission, toggleShowAddMission, promoteShown, toggleShowSettings, showSettings, sendStats,
+  buildImage, copyText, clearBuild,
 } from '~/logic'
 
 const { totalActive } = useStore()
@@ -49,10 +51,23 @@ watch(idle, () => {
     start = new Date()
 })
 
-onKeyStroke('c', (e) => {
+onKeyStroke(['c', 's', 'd'], (e) => {
   if (e.altKey) {
-    e.preventDefault()
-    clearAll()
+    switch (e.key) {
+      case 'c':
+        e.preventDefault()
+        clearBuild()
+        break
+      case 's':
+        e.preventDefault()
+        copyText()
+        break
+      case 'd':
+        console.log('Its a D')
+        e.preventDefault()
+        buildImage()
+        break
+    }
   }
 })
 
@@ -71,9 +86,10 @@ function someStats() {
     if (saves) {
       const savesArray = Object.values(JSON.parse(saves))
 
+      const worlds = union(...savesArray.map(x => x.startingWorld.worldName))
       const perks = union(...savesArray.map(x => x.allEffects))
       const companions = union(...savesArray.map(x => x.companions.map(c => c.uid)))
-      sendStats({ perks, companions }, () => {})
+      sendStats({ perks, companions, worlds }, () => {})
     }
   }
 }

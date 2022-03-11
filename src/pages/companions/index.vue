@@ -1,126 +1,157 @@
 
 <template>
   <div class="flex flex-col">
-    <div v-if="!loading" class="flex items-center justify-center flex-wrap gap-x-4 gap-y-1 mb-1 md:mb-2">
-      <div class="flex items-center">
-        <Input
-          v-model="search"
-          placeholder="Name or World"
+    <div ref="topElement" class="mb-1 md:mb-2 transition-all" :style="isTopVisible ? '' : `margin-top: -${topHeight + 6}px`">
+      <div
+        v-if="!loading"
+        class="flex items-center justify-center flex-wrap gap-x-4 gap-y-1"
+      >
+        <div class="flex items-center">
+          <Input
+            v-model="search"
+            placeholder="Name or World"
+          />
+          <clarity:eraser-solid class="icon-btn w-8" @click="clearAndReset" />
+        </div>
+        <Select v-model.number="tier" :options="tierOptions" />
+        <Input v-model.number="limit" class="px-1" :style="`width: ${(''+limit).length + 3}ch`" />
+        <Button size="Small" label="Tags" bg-color="bg-gray-600 hover:bg-teal-600" @click="toggleShowFilterTags()" />
+        <div class="flex gap-1 border rounded px-1 select-none">
+          <span class="whitespace-nowrap font-bold">Sort By:</span>
+          <div
+            class="flex items-center bg-gray-200 dark:bg-gray-700 px-1 rounded cursor-pointer"
+            :class="sortAlpha !== 0 ? 'border border-green-500' : ''"
+            title="Sort by Name"
+            @click="toggleAlpha()"
+          >
+            <fa-solid:sort-alpha-down v-if="sortAlpha === 1" class="inline-block rounded" />
+            <fa-solid:sort-alpha-up v-else class="inline-block rounded" />
+          </div>
+          <div
+            class="flex items-center bg-gray-200 dark:bg-gray-700 px-1 rounded cursor-pointer"
+            :class="sortRating !== 0 ? 'border border-green-500' : ''"
+            title="Sort by Rating"
+            @click="toggleRating()"
+          >
+            <fa-solid:sort-numeric-down v-if="sortRating === 1" class="inline-block rounded" />
+            <fa-solid:sort-numeric-up v-else class="inline-block rounded" />
+          </div>
+        </div>
+        <div class="flex rounded bg-gray-600 cursor-pointer">
+          <div
+            :class="gender==='F' ? 'bg-gray-700':''"
+            class="hover:bg-gray-700 text-pink-300 px-2 rounded-l"
+            title="Female"
+            @click="gender='F'"
+          >
+            F
+          </div>
+          <div
+            :class="gender==='M' ? 'bg-gray-700':''"
+            class="border-l border-r px-2 hover:bg-gray-700 text-blue-400"
+            title="Male"
+            @click="gender='M'"
+          >
+            M
+          </div>
+          <div
+            :class="gender==='O' ? 'bg-gray-700':''"
+            class="border-l border-r px-2 hover:bg-gray-700 text-violet-400"
+            title="Other"
+            @click="gender='O'"
+          >
+            O
+          </div>
+          <div
+            :class="gender==='' ? 'bg-gray-700':''"
+            class="hover:bg-gray-700 px-2 text-gray-200 rounded-r"
+            title="All"
+            @click="gender=''"
+          >
+            A
+          </div>
+        </div>
+        <div class="flex rounded bg-gray-600 cursor-pointer">
+          <div
+            :class="image==='' && nsfw==='' ? 'bg-gray-700':''"
+            class="hover:bg-gray-700 text-green-300 px-2 rounded-l"
+            @click="(image='', nsfw='', favorite=false)"
+          >
+            all
+          </div>
+          <div
+            :class="image==='!cvxz' ? 'bg-gray-700':''"
+            class="border-l px-2 hover:bg-gray-700 text-gray-200 rounded-r"
+            title="Have Image"
+            @click="image === ''? image='!cvxz' : image=''"
+          >
+            img
+          </div>
+          <div
+            :class="nsfw==='!cvxz' ? 'bg-gray-700':''"
+            class="border-l px-2 hover:bg-gray-700 text-gray-200 rounded-r"
+            title="Have NSFW Image"
+            @click="nsfw === ''? nsfw='!cvxz' : nsfw=''"
+          >
+            nsfw
+          </div>
+          <div
+            :class="favorite ? 'bg-red-600':''"
+            class="border-l px-2 hover:bg-gray-700 text-gray-200 rounded-r"
+            title="Favorites"
+            @click="() => favorite = !favorite"
+          >
+            fav
+          </div>
+          <div
+            :class="retinue ? 'bg-green-600':''"
+            class="border-l px-2 hover:bg-gray-700 text-gray-200 rounded-r"
+            title="Retinue"
+            @click="() => retinue = !retinue"
+          >
+            ret
+          </div>
+        </div>
+        <Checkbox
+          v-if="startingWorld.worldName !== 'Current world'"
+          v-model="isLimited"
+          :label="`Limit to ${currentWorld.worldName}`"
+          class="border rounded px-1 border-gray-300 dark:border-gray-500"
         />
-        <clarity:eraser-solid class="icon-btn w-8" @click="clearAndReset" />
+        <div class="hidden md:block">
+          {{ secondFilter.length }} results
+        </div>
+        <Button label="Add Character" size="Small" @click="() => (editMode = false, toggleShowAddCharacter())" />
       </div>
-      <Select v-model.number="tier" :options="tierOptions" />
-      <Input v-model.number="limit" class="px-1" :style="`width: ${(''+limit).length + 3}ch`" />
-      <Button size="Small" label="Tags" bg-color="bg-gray-600 hover:bg-teal-600" @click="toggleShowFilterTags" />
-      <div class="flex gap-1 border rounded px-1 select-none">
-        <span class="whitespace-nowrap font-bold">Sort By:</span>
-        <div
-          class="flex items-center bg-gray-200 dark:bg-gray-700 px-1 rounded cursor-pointer"
-          :class="sortAlpha !== 0 ? 'border border-green-500' : ''"
-          title="Sort by Name"
-          @click="toggleAlpha()"
-        >
-          <fa-solid:sort-alpha-down v-if="sortAlpha === 1" class="inline-block rounded" />
-          <fa-solid:sort-alpha-up v-else class="inline-block rounded" />
-        </div>
-        <div
-          class="flex items-center bg-gray-200 dark:bg-gray-700 px-1 rounded cursor-pointer"
-          :class="sortRating !== 0 ? 'border border-green-500' : ''"
-          title="Sort by Rating"
-          @click="toggleRating()"
-        >
-          <fa-solid:sort-numeric-down v-if="sortRating === 1" class="inline-block rounded" />
-          <fa-solid:sort-numeric-up v-else class="inline-block rounded" />
-        </div>
+      <div v-else class="">
+        Loading... <span class="inline-block text-xl"><eos-icons:bubble-loading /></span>
       </div>
-      <div class="flex rounded bg-gray-600 cursor-pointer">
-        <div
-          :class="gender==='F' ? 'bg-gray-700':''"
-          class="hover:bg-gray-700 text-pink-300 px-2 rounded-l"
-          title="Female"
-          @click="gender='F'"
-        >
-          F
+      <div class="flex gap-4 justify-center pt-1">
+        <div v-if="tagsInclude.length" class="flex gap-1">
+          Include:
+          <div
+            v-for="tag in tagsInclude"
+            :key="tag"
+            class="rounded-md cursor-pointer select-none px-1 hover:bg-red-500 whitespace-nowrap"
+            :class="waifuTags[tag].color"
+            @click="tagToggles[tag] = 0"
+          >
+            {{ waifuTags[tag].tag }}
+          </div>
         </div>
-        <div
-          :class="gender==='M' ? 'bg-gray-700':''"
-          class="border-l border-r px-2 hover:bg-gray-700 text-blue-400"
-          title="Male"
-          @click="gender='M'"
-        >
-          M
-        </div>
-        <div
-          :class="gender==='O' ? 'bg-gray-700':''"
-          class="border-l border-r px-2 hover:bg-gray-700 text-violet-400"
-          title="Other"
-          @click="gender='O'"
-        >
-          O
-        </div>
-        <div
-          :class="gender==='' ? 'bg-gray-700':''"
-          class="hover:bg-gray-700 px-2 text-gray-200 rounded-r"
-          title="All"
-          @click="gender=''"
-        >
-          A
+        <div v-if="tagsExclude.length" class="flex gap-1">
+          Exclude:
+          <div
+            v-for="tag in tagsExclude"
+            :key="tag"
+            class="rounded-md cursor-pointer select-none px-1 hover:bg-red-500 whitespace-nowrap"
+            :class="waifuTags[tag].color"
+            @click="tagToggles[tag] = 0"
+          >
+            {{ waifuTags[tag].tag }}
+          </div>
         </div>
       </div>
-      <div class="flex rounded bg-gray-600 cursor-pointer">
-        <div
-          :class="image==='' && nsfw==='' ? 'bg-gray-700':''"
-          class="hover:bg-gray-700 text-green-300 px-2 rounded-l"
-          @click="(image='', nsfw='', favorite=false)"
-        >
-          all
-        </div>
-        <div
-          :class="image==='!cvxz' ? 'bg-gray-700':''"
-          class="border-l px-2 hover:bg-gray-700 text-gray-200 rounded-r"
-          title="Have Image"
-          @click="image === ''? image='!cvxz' : image=''"
-        >
-          img
-        </div>
-        <div
-          :class="nsfw==='!cvxz' ? 'bg-gray-700':''"
-          class="border-l px-2 hover:bg-gray-700 text-gray-200 rounded-r"
-          title="Have NSFW Image"
-          @click="nsfw === ''? nsfw='!cvxz' : nsfw=''"
-        >
-          nsfw
-        </div>
-        <div
-          :class="favorite ? 'bg-red-600':''"
-          class="border-l px-2 hover:bg-gray-700 text-gray-200 rounded-r"
-          title="Favorites"
-          @click="() => favorite = !favorite"
-        >
-          fav
-        </div>
-        <div
-          :class="retinue ? 'bg-green-600':''"
-          class="border-l px-2 hover:bg-gray-700 text-gray-200 rounded-r"
-          title="Retinue"
-          @click="() => retinue = !retinue"
-        >
-          ret
-        </div>
-      </div>
-      <Checkbox
-        v-if="startingWorld.worldName !== 'Current world'"
-        v-model="isLimited"
-        :label="`Limit to ${currentWorld.worldName}`"
-        class="border rounded px-1 border-gray-300 dark:border-gray-500"
-      />
-      <div class="hidden md:block">
-        {{ secondFilter.length }} results
-      </div>
-      <Button label="Add Character" size="Small" @click="() => (editMode = false, toggleShowAddCharacter())" />
-    </div>
-    <div v-else class="">
-      Loading... <span class="inline-block text-xl"><eos-icons:bubble-loading /></span>
     </div>
     <div ref="companionsList" class="overflow-y-auto w-full relative">
       <Foldable v-if="allUserCharacters.length" ref="userWaifuList" :is-open="userCharactersShown" class="text-lg mb-2" title="User Characters">
@@ -161,9 +192,14 @@
         </div>
       </div>
     </div>
-    <AddCharacter v-if="showAddCharacter" :character="characterToEdit" :edit-mode="editMode" @click="toggleShowAddCharacter" />
-    <Report v-if="showReport" :character="characterToEdit" @click="toggleShowReport" />
-    <Tags v-if="showFilterTags" @click="toggleShowFilterTags" />
+    <AddCharacter
+      v-if="showAddCharacter"
+      :character="characterToEdit"
+      :edit-mode="editMode"
+      @click="toggleShowAddCharacter()"
+    />
+    <Report v-if="showReport" :character="characterToEdit" @click="toggleShowReport()" />
+    <Tags v-if="showFilterTags" @click="toggleShowFilterTags()" />
   </div>
 </template>
 
@@ -174,7 +210,7 @@ import { useStore } from '~/store/store'
 
 import { toggleShowAddCharacter, showAddCharacter, toggleShowFilterTags, showFilterTags, tagToggles, userCharactersShown, threeToggle, toggleShowReport, showReport } from '~/logic'
 import Checkbox from '~/components/basic/Checkbox.vue'
-import { getChars, getUserChars } from '~/data/constants'
+import { getChars, getUserChars, waifuTags } from '~/data/constants'
 import { usePlayStore } from '~/store/play'
 
 interface Character {
@@ -217,6 +253,18 @@ const characterToEdit = ref({})
 const waifuList = ref<HTMLElement|null>(null)
 const userWaifuList = ref<HTMLElement|null>(null)
 const companionsList = ref<HTMLElement|null>(null)
+
+const { directions } = useScroll(companionsList)
+const isTopVisible = ref(true)
+const topElement = ref<HTMLElement|null>(null)
+const { height: topHeight } = useElementSize(topElement)
+
+watch(directions, () => {
+  if (directions.top)
+    isTopVisible.value = true
+  if (directions.bottom)
+    isTopVisible.value = false
+})
 
 const cardRowCount = (() => {
   const wd = document.body.clientWidth || 0
@@ -263,9 +311,17 @@ const options = {
   keys: ['n', 'w', 't', 'b', 'i', 'd', 'in', 'u', 'k'],
 }
 
+const options2 = {
+  useExtendedSearch: true,
+  findAllMatches: true,
+  threshold: 0.4,
+  keys: ['n', 'w', 't', 'b', 'i', 'd', 'in', 'u', 'k'],
+  shouldSort: false,
+}
+
 const fuse = new Fuse(charArr.value, options)
-const options2 = { useExtendedSearch: true, findAllMatches: true, keys: ['n', 'w', 't', 'b', 'i', 'd', 'in', 'u'], shouldSort: false }
 const fuseNoSort = new Fuse(charArr.value, options2)
+
 const params = useUrlSearchParams('history')
 const route = useRoute()
 
@@ -284,13 +340,11 @@ onMounted(async() => {
   fuseNoSort.setCollection(charArr.value)
   loading.value = false
   if (params.name)
-    nextTick(() => search.value = params.name)
+    nextTick(() => search.value = params.name as string)
   else search.value = ''
-  // limit.value = 10
-  // nextTick(() => { if (companionsList.value?.scrollHeight <= companionsList.value?.clientHeight) limit.value += 10 })
 })
 
-watch(route, x => search.value = x.query.name || '')
+watch(route, x => search.value = x.query.name as string || '')
 
 const tagsInclude = computed(() => Object.keys(tagToggles).filter(key => tagToggles[key] === 1))
 const tagsExclude = computed(() => Object.keys(tagToggles).filter(key => tagToggles[key] === -1))
@@ -393,14 +447,15 @@ const slicedChars = computed(() => {
 })
 
 watch(sortedResults, () => {
-  companionsList.value.scrollTop = 0
+  if (companionsList.value)
+    companionsList.value.scrollTop = 0
   position.value = 0
 })
 
 // const allCredits = computed(() => charArr.value.reduce((a, b) => b.t !== 11 ? a += CHAR_COSTS[b.t - 1] : a, 0))
 
-const firstCard = ref<HTMLElement|null>(null)
-const lastCard = ref<HTMLElement|null>(null)
+const firstCard = ref<Element|null>(null)
+const lastCard = ref<Element|null>(null)
 
 const opt = {
   root: null,
@@ -411,74 +466,38 @@ const observer = new IntersectionObserver(visibilityChanged, opt)
 
 watch(slicedChars, () => {
   observer.disconnect()
-  nextTick(() => {
-    if (firstCard.value && lastCard.value) {
-      // observer.unobserve(firstCard.value)
-      // observer.unobserve(lastCard.value)
-      firstCard.value.id = ''
-    }
-    firstCard.value = waifuList.value?.children[0]
-    lastCard.value = waifuList.value?.children[waifuList.value?.children.length - 1]
+  if (firstCard.value && lastCard.value) {
+    firstCard.value.id = ''
+    lastCard.value.id = ''
+  }
+  if (waifuList.value && waifuList.value.children.length > 1) {
+    firstCard.value = waifuList.value.children[0]
+    lastCard.value = waifuList.value.children[waifuList.value.children.length - 1]
     firstCard.value.id = 'first'
     lastCard.value.id = 'last'
     observer.observe(firstCard.value)
     observer.observe(lastCard.value)
-  })
-})
+  }
+}, { flush: 'post' })
 
-// function getBigger() {
-//   if (companionsList.value?.scrollHeight
-//   < (lastCard.value?.offsetTop + 504)
-//   ) {
-//     limit.value += cardRowCount.value
-//     setTimeout(() => getBigger, 10)
-//   }
-// }
+function visibilityChanged(entries: IntersectionObserverEntry[]) {
+  // Both card are visible
+  if (entries.length >= 2 && entries[0].isIntersecting && entries[1].isIntersecting)
+    return
 
-// watch(limit, getBigger)
-
-function visibilityChanged(entries) {
-  if (entries.length === 2 && entries[0].isIntersecting && entries[1].isIntersecting) {
-    // limit.value = limit.value - (limit.value % cardRowCount) + cardRowCount * (settings.value.allImg ? 9 : 3)
-    // (settings.value.allImg ? 6 : 3)
-    // setTimeout(() => visibilityChanged(entries), 50)
-    // console.log(limit.value)
+  const entry = entries[0]
+  if (entry.target.id === 'last' && entry.isIntersecting && position.value + limit.value <= secondFilter.value.length) {
+    position.value += cardRowCount
     return
   }
-  for (let i = 0; i < entries.length; i++) {
-    const entry = entries[i]
-    if (entry.target.id === 'last' && entry.isIntersecting && position.value + limit.value <= secondFilter.value.length) {
-      position.value += cardRowCount
-      return
-    }
-    if (entry.target.id === 'first' && entry.isIntersecting && position.value >= cardRowCount) {
-      position.value -= cardRowCount
-      return
-    }
-  }
+
+  if (entry.target.id === 'first' && entry.isIntersecting && position.value >= cardRowCount)
+    position.value -= cardRowCount
 }
 
 const topPosition = computed(() => position.value / cardRowCount * ((firstCard.value?.clientHeight || 0) || 500))
 
 const allUserCharacters = computed(() => userCharacters.value.concat(localUserCharacters.value))
-
-// const handleScroll = () => {
-//   if (companionsList.value) {
-//     const element = companionsList.value
-//     if (element.scrollHeight - element.scrollTop - 50 <= element.clientHeight)
-//       position.value += 10
-//     if (element.scrollTop <= 50 && position.value >= 10)
-//       position.value -= 10
-//   }
-// }
-
-// onMounted(() => {
-//   companionsList?.value?.addEventListener('scroll', handleScroll)
-// })
-
-// onUnmounted(() => {
-//   companionsList?.value?.removeEventListener('scroll', handleScroll)
-// })
 
 function editCompanion(char: any) {
   characterToEdit.value = char
@@ -502,7 +521,8 @@ function toggleAlpha() {
 function clearAndReset() {
   search.value = ''
   position.value = 0
-  companionsList.value.scrollTop = 0
+  if (companionsList.value)
+    companionsList.value.scrollTop = 0
 }
 
 </script>
