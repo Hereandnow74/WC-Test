@@ -5,6 +5,18 @@
     </h2>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
+        12 March 2022
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>~80 new user submitted characters</li>
+        <li>11 new user submitted worlds</li>
+        <li>A lot of new NSFW images this week ~300, mostly submitted by <strong>Anon</strong></li>
+        <li>Made a tool for myself to quickly assign tags, and assigned about ~2000+ gender tags for characters that didn't have them, accuracy is probably 95%+</li>
+        <li>Bugfixes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
         09 March 2022
       </h3>
       <ul class="list-decimal list-inside">

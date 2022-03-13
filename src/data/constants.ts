@@ -299,9 +299,7 @@ export const allWorldsNoCondition = computed(() => {
     if (isArray(x.condition))
       addConditions(x)
 
-    // delete x.condition
-    x.condition = undefined
-    worlds.push(x)
+    worlds.push({ worldName: x.worldName, rating: x.rating })
   })
   return worlds
 })

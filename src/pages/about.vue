@@ -6,8 +6,8 @@
       </h3>
       <div>
         Time I spend on Interactive Waifu Catalog so far -
-        <span class="text-amber-500 text-2xl">{{ 423 + 192 }}</span> hours in
-        <span class="text-amber-500 text-2xl">{{ 107 + 57 }}</span> days.
+        <span class="text-amber-500 text-2xl">{{ 423 + 212 }}</span> hours in
+        <span class="text-amber-500 text-2xl">{{ 107 + 65 }}</span> days.
       </div>
       <div>
         If you found some bugs, have any questions about Interactive, suggestions, collaborations or you want to hire me

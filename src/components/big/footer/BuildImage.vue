@@ -197,7 +197,7 @@
     <div class="grid grid-cols-3 gap-1">
       <CompanionCardMiniInfo v-for="cmp in companions" :key="cmp.uid" :char="cmp" :image="companionImages[cmp.uid]" />
     </div>
-    <div class="flex gap-2 text-gray-300">
+    <div class="flex gap-2 text-gray-300 pb-1">
       <span>Total cost: <span class="text-gray-100 font-semibold">{{ totalCost }} </span></span>
       <span>Total discount: <span class="text-gray-100 font-semibold">{{ totalDiscount }} </span></span>
       <span>Remaining credits: <span class="text-gray-100 font-semibold">{{ budget }}</span></span>
@@ -224,20 +224,29 @@ const {
 
 const { activeChallenges } = useChallenges()
 
+const allCharsObject = ref<Record<number, DBCharacter>>({})
+getAllCharsObject().then(all => allCharsObject.value = all)
+
+const worldText = computed(() => {
+  if (startingOrigin.value.uid) {
+    const char = allCharsObject.value[startingOrigin.value.uid]
+    if (char)
+      return `from <i>${char.w}</i>`
+  }
+  return ''
+})
+
 const originText = computed(() => {
   const variants = {
     'Drop-In': 'Dropped-In',
     'Walk-In': `Walked-In as <b>${startingOrigin.value.character}</b> of T${startingOrigin.value.tier}`,
     'Extra': `'Extra' with <b>${startingOrigin.value.cost}</b> additional cost`,
     'Substitute': `Substitute as a <b>${startingOrigin.value.character}</b> of T${startingOrigin.value.tier}`,
-    'Possess': `Possess a <b>${startingOrigin.value.character}</b> of T${startingOrigin.value.tier}`,
+    'Possess': `Possess a <b>${startingOrigin.value.character}</b> of T${startingOrigin.value.tier} ${worldText.value}`,
   } as Record<string, string>
 
   return variants[startingOrigin.value.title]
 })
-
-const allCharsObject = ref<Record<number, DBCharacter>>({})
-getAllCharsObject().then(all => allCharsObject.value = all)
 
 const companionImages = computed(() => {
   const res = {} as Record<number, string>

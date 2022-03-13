@@ -63,7 +63,6 @@ onKeyStroke(['c', 's', 'd'], (e) => {
         copyText()
         break
       case 'd':
-        console.log('Its a D')
         e.preventDefault()
         buildImage()
         break

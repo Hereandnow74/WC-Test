@@ -171,7 +171,6 @@ getAllCharsObject().then(chars => allChars.value = chars)
 
 const displayedCost = computed(() => {
   return Object.values(swapPower).reduce((a, x) => {
-    // console.log(Math.max(NaN, 0) || 0)
     if (x.cap)
       a += Math.max((CHAR_COSTS[x.swap - 1] - CHAR_COSTS[x.tier - 1]) || 0, 0)
     else

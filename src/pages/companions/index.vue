@@ -334,8 +334,9 @@ onMounted(async() => {
     }
     else { x.b = ['U'] }
   })
+  const oldChars = await getChars()
+  charArr.value = Array.prototype.concat(userChars, oldChars)
 
-  charArr.value = Array.prototype.concat(userChars, (await getChars()))
   fuse.setCollection(charArr.value)
   fuseNoSort.setCollection(charArr.value)
   loading.value = false

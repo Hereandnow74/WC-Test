@@ -76,26 +76,24 @@
         </div>
       </div>
     </Foldable>
-    <AddWorld v-if="showAddWorld" :world="worldToEdit" :edit-mode="editMode" @click="toggleShowAddWorld" />
+    <AddWorld v-if="showAddWorld" :world="worldToEdit" :edit-mode="editMode" @click="toggleShowAddWorld()" />
   </div>
 </template>
 
 <script lang="ts" setup>
 import Fuse from 'fuse.js'
-import worlds from '~/data/worlds.json'
-import subWorlds from '~/data/userWorlds.json'
 import { useStore } from '~/store/store'
 import { toggleShowAddWorld, showAddWorld, threeToggle } from '~/logic'
+import { useWorlds } from '~/data/constants'
 
 const search = ref('')
-const worldsReac = ref(worlds)
-const worldsSubReac = ref(subWorlds)
+const { worlds: worldsReac, subWorlds: worldsSubReac } = useWorlds()
 const worldToEdit = ref({})
 const editMode = ref(false)
 
 const { userWorlds, localUserWorlds, settings } = useStore()
 const sortAlpha = ref(0)
-const sortRating = ref(0)
+const sortRating = ref(1)
 
 const options = {
   findAllMatches: true,
@@ -106,7 +104,7 @@ const options = {
 const fuse = new Fuse(worldsReac.value, options)
 const subFuse = new Fuse(worldsSubReac.value, options)
 
-const worldsCount = computed(() => worlds.length)
+const worldsCount = computed(() => worldsReac.value.length + worldsSubReac.value.length)
 const allUserWorlds = computed(() => userWorlds.value.concat(localUserWorlds.value))
 
 const sortingFunc = (a: any, b: any) => (sortRating.value !== 0 ? (a.rating - b.rating) * sortRating.value : 0) || (sortAlpha.value !== 0 ? a.worldName.localeCompare(b.worldName) * sortAlpha.value : 0)

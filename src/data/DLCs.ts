@@ -465,15 +465,6 @@ DLClures.push({
 })
 
 DLClures.push({
-  uid: 'Uvc6m',
-  dlc: 'DLC by Merior',
-  dlclink: 'https://docs.google.com/document/d/1j9emHb4IWvOTnp13RASTAuINAFuKDMSSQyQ-7ta9sjA/edit#',
-  title: 'Nine Tenths Law',
-  cost: 5,
-  desc: 'Any individual who you manage to keep imprisoned for three days straight becomes yours. Any means of imprisonment, from holding them trapped in a magic circle to keeping them handcuffed next to you, is valid and you may use multiple means or shift between them as needed. However the victim must be aware of their confinement and any time spent unnaturally insensate (unconscious, drugged asleep, frozen in time, etc) does not count towards the total period of confinement.',
-})
-
-DLClures.push({
   uid: '2YzxQ',
   dlc: 'DLC by Merior',
   dlclink: 'https://docs.google.com/document/d/1j9emHb4IWvOTnp13RASTAuINAFuKDMSSQyQ-7ta9sjA/edit#',
@@ -495,6 +486,15 @@ DLClures.push({
 
 // Other Controls
 export const DLCotherControls: DLCPerk[] = []
+
+DLCotherControls.push({
+  uid: 'Uvc6m',
+  dlc: 'DLC by Merior',
+  dlclink: 'https://docs.google.com/document/d/1j9emHb4IWvOTnp13RASTAuINAFuKDMSSQyQ-7ta9sjA/edit#',
+  title: 'Nine Tenths Law',
+  cost: 5,
+  desc: 'Any individual who you manage to keep imprisoned for three days straight becomes yours. Any means of imprisonment, from holding them trapped in a magic circle to keeping them handcuffed next to you, is valid and you may use multiple means or shift between them as needed. However the victim must be aware of their confinement and any time spent unnaturally insensate (unconscious, drugged asleep, frozen in time, etc) does not count towards the total period of confinement.',
+})
 
 DLCotherControls.push({
   uid: 'YzNrj',
