@@ -167,6 +167,7 @@ export const waifuTags = {
   tw: { tag: 'Twins', short: 'tw', effect: '', desc: 'Twins / Triplets / Quadruplets / etc.', color: 'bg-teal-500 text-black' },
   cc: { tag: 'Crafter', short: 'cc', effect: '', desc: 'Any producing profession blacksmith/alchemist/artificer/tailor/etc.', color: 'bg-teal-500 text-black' },
   mm: { tag: 'Magical Girl', short: 'mm', effect: '', desc: '', color: 'bg-teal-500 text-black' },
+  al: { tag: 'Alien', short: 'al', effect: '', desc: '', color: 'bg-teal-500 text-black' },
 
   U: { tag: 'By User', short: 'U', effect: '', desc: 'Characters that were added to Interactive by users, applied automatically to all submitted characters', color: 'bg-warm-gray-600' },
 } as const
@@ -195,8 +196,8 @@ export const LINKS = computed(() => {
     intensity,
     origin,
     'bindings/bindings': [...bindings, ...DLCbindings],
-    'bindings/lures': [...lures, ...lureExpansions],
-    'bindings/controls': [...otherControls],
+    'bindings/lures': [...lures, ...lureExpansions, ...DLClures, ...DLClureExpansions],
+    'bindings/controls': [...otherControls, ...DLCotherControls],
     'heritage': heritages,
     'talents/ride': [...rides, ...ridePerksFull, ...DLCridePerks],
     'talents/home': [...homes, ...demiplane, ...dungeon, ...DLChomes],
@@ -216,6 +217,39 @@ export const LINKS = computed(() => {
   links.familiar = ''
   return links
 })
+
+// export const names = computed(() => {
+//   const links = {} as Record<string, string>
+//   const allCats = {
+//     'Intensity': intensity,
+//     'Origin': origin,
+//     'Binding': bindings,
+//     'DLC Binding': DLCbindings,
+//     'Lure': [...lures, ...lureExpansions],
+//     'DLC Lure': [...DLClures, ...DLClureExpansions],
+//     'Other Control': otherControls,
+//     'DLC Other Control': DLCotherControls,
+//     'Heritage': heritages,
+//     'Ride': [...rides, ...ridePerksFull],
+//     'DLC Ride Perk': DLCridePerks,
+//     'Home': [...homes, ...demiplane, ...dungeon],
+//     'DLC Home': DLChomes,
+//     'Defense': defenses,
+//     'Talent': talents,
+//     'DLC Talent': DLCtalents,
+//     'Misc Perk': perks,
+//     'DLC Misc Perk': DLCperks,
+//     'Waifu Perk': [...genericPerks, ...waifu_perks],
+//     'DLC Generic Waifu Perk': DLCgenericPerks,
+//   }
+//   for (const category of Object.entries(allCats)) {
+//     for (const entry of category[1])
+//       links[entry.title] = category[0]
+//   }
+//   return links
+// })
+
+// navigator.clipboard.writeText(JSON.stringify(names.value, null, 2))
 
 export const QUERIES = computed(() => {
   const links = {} as Record<string, string>

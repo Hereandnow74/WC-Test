@@ -140,8 +140,10 @@ const fullCount = computed(() => {
   return Object.values(powers).reduce((a, x) => a += x.length, 0)
 })
 
+const individualCount = computed(() => Object.values(powers).map(x => x.length))
+
 const displayedCost = computed(() => {
-  return newPrice.value ? (fullCount.value / 2) * (20 * 2 + (fullCount.value - 1) * 20) : fullCount.value * props.perk.cost
+  return newPrice.value ? individualCount.value.reduce((sum, count) => sum += (count / 2) * (20 * 2 + (count - 1) * 20), 0) : fullCount.value * props.perk.cost
 })
 
 function sendPerk() {
@@ -163,7 +165,8 @@ function sendPerk() {
 watch(powers, sendPerk)
 
 function setHeight(event: Event) {
-  event.target.style['max-height'] = `${event.target.clientWidth * 1.7 || 90}px`
+  if (event.target)
+    event.target.style['max-height'] = `${event.target.clientWidth * 1.7 || 90}px`
 }
 
 function addPower(uid: number) {

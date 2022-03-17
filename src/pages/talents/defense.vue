@@ -8,7 +8,7 @@
       class="column-gap pb-8"
       :class="settings.columns !== 'auto' ? `column-count-${settings.columns}` : 'md:column-count-2 xl:column-count-3 4xl:column-count-4 5xl:column-count-5'"
     >
-      <PerkCard
+      <DefenseCard
         v-for="defense in defenses"
         :key="defense.title"
         :perk="defense"
@@ -16,12 +16,9 @@
           : 'gray-200 dark:gray-600'"
         :is-active="!!allDefenses[defense.title]"
         :saved-perk="allDefenses[defense.title]"
-        :is-multiple="true"
-        :max="2"
-        discount="defense"
         @pickPerk="chooseDefense"
       >
-      </PerkCard>
+      </DefenseCard>
     </div>
   </div>
 </template>
@@ -39,6 +36,11 @@ const allDefenses = computed(() => {
   defensePerks.value.forEach(x => res[x.title] = x)
   return res
 })
+
+// const availability = ref({})
+// const checkAvailability = () => availability.value = defenses.reduce((a, x) => (a[x.uid] = defenseAvailable(x), a), {})
+// checkAvailability()
+// watch(allEffects, checkAvailability)
 
 onMounted(() => useTooltips())
 

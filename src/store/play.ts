@@ -13,6 +13,13 @@ interface Loan {
 const loan = useStorage<Loan>('loan', { owed: 0, gained: 0 })
 const trHistory = useStorage<any[]>('trHistory', [])
 
+const investedSize = ref(0)
+const investedRequirement = ref(0)
+const investedTrigger = ref(0)
+const investedTier = ref(0)
+const investedEffect = ref(0)
+const investedNetwork = ref(0)
+
 export function usePlayStore() {
   return {
     jumpChain,
@@ -20,5 +27,11 @@ export function usePlayStore() {
     rdnWorld,
     loan,
     trHistory,
+    investedSize,
+    investedRequirement,
+    investedTrigger,
+    investedTier,
+    investedEffect,
+    investedNetwork,
   }
 }

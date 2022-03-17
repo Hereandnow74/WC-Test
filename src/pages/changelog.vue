@@ -5,6 +5,18 @@
     </h2>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
+        16 March 2022
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>~285 new user submitted characters</li>
+        <li>Now you can't sell back free talents/defenses (untested)</li>
+        <li>Some UI changes</li>
+        <li>You can now filter by 'unofficial' tags by clicking on them</li>
+        <li>Bugfixes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
         12 March 2022
       </h3>
       <ul class="list-decimal list-inside">

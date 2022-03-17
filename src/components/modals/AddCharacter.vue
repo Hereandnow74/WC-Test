@@ -58,6 +58,7 @@
           <div class="flex gap-2">
             <Checkbox v-model="localSave" label="Local save" />
             <Checkbox v-model="serverSave" label="Propose to global" />
+            <Checkbox v-if="editMode" v-model="newEntry" label="New entry" title="Add this character as a new one and not an edit" />
           </div>
           <Button
             :disabled="!!submitMessage || !!processing"
@@ -106,6 +107,7 @@ getUserChars().then(x => chars.value.push(...x))
 
 const localSave = ref(true)
 const serverSave = ref(false)
+const newEntry = ref(false)
 const sex = ref(props?.character?.tags?.[0] || 'F')
 
 const tierError = ref('')
@@ -189,7 +191,7 @@ const addCharacter = handleSubmit((values) => {
   if (!values.tags.includes(sex.value))
     values.tags.push(sex.value)
   values.tags = values.tags.map((x: string) => waifuTagsByTag[x] ? waifuTagsByTag[x].short : x)
-  values.uid = props.editMode ? props.character.uid || random(10000000, 99999999) : random(10000000, 99999999)
+  values.uid = props.editMode && !newEntry.value ? props.character.uid || random(10000000, 99999999) : random(10000000, 99999999)
   if (serverSave.value) {
     processing.value = true
     proposeCompanion({ ...values, date: new Date().toString() }, (msg) => {

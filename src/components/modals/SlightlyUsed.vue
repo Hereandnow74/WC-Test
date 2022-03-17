@@ -10,10 +10,10 @@
       <akar-icons:eye-slashed v-else class="cursor-pointer hover:text-green-500" />
     </h3>
     <div class="p-2 text-lg flex flex-col gap-4 w-min">
-      <div v-if="author" class="border-2 border-red-500 p-1 rounded text-sm">
+      <div v-if="author && !bought" class="border-2 border-red-500 p-1 rounded text-sm">
         Rolls information are only for the author, contractor only see the cost. If you don't take the deal and close the window, you won't be able to see even the cost as a contractor for 24 hours.
       </div>
-      <div v-for="data in usedWaifus" :key="data.ability" class="flex gap-4 items-center">
+      <div v-for="data, i in usedWaifus" :key="data.ability" class="flex gap-4 items-center transition-opacity duration-300" :class="{'opacity-0': !visibility[i]}">
         <div class="">
           <div class="flex gap-4 justify-between">
             <div>Ability roll: <span class="text-green-500">{{ author ? data.ability : '??' }}</span></div>
@@ -31,7 +31,7 @@
             <div>Effective tier: <span class="text-orange-400">{{ author ? data.effectiveTier : '??' }}</span></div>
           </div>
         </div>
-        <Button size="Small" bg-color="bg-violet-600 mx-auto my-4 whitespace-nowrap" :label="`buy for ${data.cost}`" @click="$emit('buyUsed', data)" />
+        <Button :disabled="bought" size="Small" bg-color="bg-violet-600 mx-auto my-4 whitespace-nowrap" :label="`buy for ${data.cost}`" @click="buyUsed(data, i)" />
       </div>
     </div>
   </Modal>
@@ -40,7 +40,6 @@
 <script lang='ts' setup>
 import { random } from 'lodash-es'
 import { CHAR_COSTS } from '~/data/constants'
-import { useStore } from '~/store/store'
 
 const props = defineProps({
   char: {
@@ -49,8 +48,11 @@ const props = defineProps({
   },
 })
 
-const { flags } = useStore()
+const emit = defineEmits(['buyUsed', 'click'])
+
 const author = ref(false)
+const bought = ref(false)
+const visibility = ref([true, true, true])
 
 function slightlyTier(n: number, tier: number, isTrauma: boolean): number {
   const plus = [
@@ -102,5 +104,13 @@ const usedWaifus = computed(() => {
   }))
   return res
 })
+
+function buyUsed(data: typeof usedWaifus.value[0], index: number) {
+  if (bought.value) return
+  visibility.value = visibility.value.map((_, i) => i === index)
+  bought.value = true
+  author.value = true
+  emit('buyUsed', data)
+}
 
 </script>

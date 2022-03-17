@@ -12,40 +12,6 @@ interface DLCPerk extends PerkFull {
 export const DLCgenericPerks: DLCPerk[] = []
 
 DLCgenericPerks.push({
-  uid: '1lvLH',
-  title: 'Tempering',
-  requires: '(Any Monster Hunter monster)',
-  dlc: 'DaemonOrk',
-  complex: 'target',
-  cost: 0,
-  costVariants: [0, 10, 30, 50],
-  desc: `Your Monster Girl is her Tempered version. It is free the first time for all Monster Girls over tier 7 as it does not increase their Tier.
-  <ul class="list-inside list-disc">
-  <li>T4 → T5: 10</li>
-  <li>T5 → T6: 30</li>
-  <li>T6 → T7: 50</li>
-  </ul>`,
-})
-
-DLCgenericPerks.push({
-  uid: 'Einr9',
-  title: 'Arch-Tempering',
-  requires: '(Any Monster Hunter monster)',
-  dlc: 'DaemonOrk',
-  complex: 'target',
-  cost: 30,
-  whitelist: ['Tempering'],
-  costVariants: [30, 50, 100, 300],
-  desc: `Your Monster Girl is her Arch-Tempered version.
-  <ul class="list-inside list-disc">
-  <li>T5 → T6: 30</li>
-  <li>T6 → T7: 50</li>
-  <li>T7 → T8: 100</li>
-  <li>T8 → T9: 300</li>
-  </ul>`,
-})
-
-DLCgenericPerks.push({
   uid: 'yqayv',
   title: 'Big Entrance',
   dlc: 'KatzSmile',
@@ -201,7 +167,8 @@ DLCperks.push({
 
 DLCperks.push({
   uid: 'te1Zv',
-  dlc: 'KatzSmile',
+  dlc: 'DLC by Gforce1000',
+  dlclink: 'https://imgur.com/gallery/suU1RXx',
   title: 'Time-Savers',
   cost: 2,
   desc: `

@@ -1,4 +1,5 @@
-import { findIndex, intersection, intersectionWith, isArray, isEmpty, isObject, mergeWith, remove, sample, uniqBy } from 'lodash-es'
+import { find, findIndex, intersection, intersectionWith, isArray, isEmpty, isObject, mergeWith, remove, sample, uniqBy } from 'lodash-es'
+import { PerkFull } from 'global'
 import { Binding, shroudElements } from '~/data/binding'
 import { Heritage } from '~/data/heritage'
 import { Intensity } from '~/data/intensity'
@@ -357,6 +358,8 @@ export function talentAvailable(tlt: PerkFull): boolean {
 }
 
 export function chooseTalent(tlt: PerkFull, saveData: Perk) {
+  // If talent are from freebies do not allow to sell it
+  if (saveData.count === 0 && find(talentPerks.value, { title: saveData.title })?.cost === 0) return
   pickSimplePerk(tlt, saveData, talentAvailable, talentPerks.value)
 }
 

@@ -133,10 +133,10 @@
             v-for="tag in tagsInclude"
             :key="tag"
             class="rounded-md cursor-pointer select-none px-1 hover:bg-red-500 whitespace-nowrap"
-            :class="waifuTags[tag].color"
+            :class="waifuTags[tag] ? waifuTags[tag].color : 'text-black bg-teal-500'"
             @click="tagToggles[tag] = 0"
           >
-            {{ waifuTags[tag].tag }}
+            {{ waifuTags[tag] ? waifuTags[tag].tag : tag }}
           </div>
         </div>
         <div v-if="tagsExclude.length" class="flex gap-1">
@@ -363,7 +363,7 @@ const worldNameDict = {
   'Prisma Illya': 'Nasuverse',
   'Fate/Extra': 'Nasuverse',
   'Precure': 'Pretty Cure',
-}
+} as Record<string, string>
 
 const filteredCharacters = computed(() => {
   const sr = search.value || '!^xxx'
@@ -498,7 +498,7 @@ function visibilityChanged(entries: IntersectionObserverEntry[]) {
 
 const topPosition = computed(() => position.value / cardRowCount * ((firstCard.value?.clientHeight || 0) || 500))
 
-const allUserCharacters = computed(() => userCharacters.value.concat(localUserCharacters.value))
+const allUserCharacters = computed(() => userCharacters.value.concat(localUserCharacters.value).filter(x => isLimited.value ? x.world === (worldNameDict[currentWorld.value.worldName] || currentWorld.value.worldName || worldNameDict[startingWorld.value.worldName] || startingWorld.value.worldName) : true))
 
 function editCompanion(char: any) {
   characterToEdit.value = char

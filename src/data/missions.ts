@@ -659,4 +659,17 @@ export const missions = [
     conditions: [{ value: 'Sophia Hess, Emma Barnes and Madison Clements must answer for their sin.' }, { value: 'Taylor must know about it and be satisfied/grateful with it.' }],
     source: '',
   },
+  {
+    source: '',
+    objectives: [],
+    image: 'https://img1.etsystatic.com/121/1/11145660/il_fullxfull.901831801_tf9q.jpg',
+    scope: 'Quick',
+    author: 'Gothicjedi666',
+    reward: '5 points',
+    title: 'The Ring',
+    desc: 'Acquire the Gem of Amara before it is destroyed by Angel so that it can be used by another Contactor\'s vampire waifu. ',
+    conditions: [],
+    loca: 'BTVS ',
+    budget: 0,
+  },
 ]

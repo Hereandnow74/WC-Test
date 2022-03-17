@@ -45,16 +45,6 @@
         class="text-base ml-2"
         @click.stop
       />
-      <NumberInput
-        v-if="discount"
-        v-model="perkToSave.defDiscount"
-        class="mx-1 inline-block text-base"
-        label="Discount"
-        :min="0"
-        :max="5"
-        title="Number of qualified retinue members"
-        @click.stop
-      />
       <slot name="title" />
       <Select
         v-if="perk.costVariants"
@@ -64,10 +54,7 @@
         @click.stop
       />
       <span text="gray-500 dark:gray-400" class="whitespace-nowrap">
-        (Cost: <span text="green-600 dark:green-300">{{ displayedCost }}</span>
-        <span v-if="perkToSave.defDiscount" text="amber-600 dark:amber-300">
-          [{{ discountedCost }}]</span>
-        )
+        (Cost: <span text="green-600 dark:green-300">{{ displayedCost }}</span>)
       </span>
       <fa-solid:check
         v-if="perkExist"
@@ -139,10 +126,6 @@ const props = defineProps({
     type: Object,
     default: () => ({}),
   },
-  discount: {
-    type: String,
-    default: '',
-  },
 })
 
 const emit = defineEmits(['pickPerk'])
@@ -179,42 +162,11 @@ const perkToSave = reactive({
   target: '',
   anything: '',
   freebies: { ...props.perk.freebies } || undefined,
-  defDiscount: props.savedPerk.defDiscount,
 })
 
 const displayedCost = computed(() => {
   const s = perkToSave.cost / 11111 === 0 || perkToSave.cost / 11111 >= 2 ? 's' : ''
   return props.perk.cost >= 11111 ? `${perkToSave.cost / 11111} T11 ticket${s}` : perkToSave.cost
-})
-
-const discountedCost = computed(() => {
-  if (!perkToSave.defDiscount) return
-  if (perkToSave.count <= 1) {
-    switch (perkToSave.defDiscount) {
-      case 1:
-        return displayedCost.value * 0.6
-      case 2:
-        return displayedCost.value * 0.2
-      case 3:
-        return 0
-      default:
-        return 0
-    }
-  }
-  else {
-    switch (perkToSave.defDiscount) {
-      case 1:
-        return displayedCost.value * 0.8
-      case 2:
-        return displayedCost.value * 0.6
-      case 3:
-        return displayedCost.value * 0.5
-      case 4:
-        return displayedCost.value * 0.2
-      case 5:
-        return 0
-    }
-  }
 })
 
 function sendPerk() {
@@ -253,4 +205,5 @@ const perkExist = computed(() => {
 
 onMounted(() => { if (perkImg.value) lazyLoadSingleImg(perkImg.value) })
 watch(settings.value, () => { if (perkImg.value) lazyLoadSingleImg(perkImg.value) }, { flush: 'post' })
+watch(() => perkToSave.cost, sendPerk)
 </script>

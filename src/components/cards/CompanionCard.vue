@@ -108,7 +108,7 @@
             :class="tag.color"
             :title="tag.desc"
             :to="tag.tag === 'Perk' ? {path: '/talents/specific', hash: `#${waifusThatHasPerk[charData.uid]}`} : ''"
-            @click="tagToggles[tag.short] = 1"
+            @click="() => tag.short ? tagToggles[tag.short] = 1 : tagToggles[tag.tag] = 1"
           >
             {{ tag.tag }}
           </component>

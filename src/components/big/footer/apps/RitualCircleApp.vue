@@ -72,18 +72,21 @@
 
 <script lang="ts" setup>
 import { findIndex } from 'lodash-es'
-import { toggleAppMode, toReadableTime } from '~/logic'
+import { toReadableTime } from '~/logic'
 import { useStore } from '~/store/store'
+import { usePlayStore } from '~/store/play'
 const { binding } = useStore()
 
-const investedSize = ref(0)
-const investedRequirement = ref(0)
-const investedTrigger = ref(0)
-const investedTier = ref(0)
-const investedEffect = ref(0)
-const investedNetwork = ref(0)
+const {
+  investedSize,
+  investedRequirement,
+  investedTrigger,
+  investedTier,
+  investedEffect,
+  investedNetwork,
+} = usePlayStore()
 
-const circle = ref<HTMLElement | null>(null)
+// const circle = ref<HTMLElement | null>(null)
 
 const totalPoints = computed(() => {
   let points = 0
@@ -191,242 +194,242 @@ function resetPoints() {
   investedNetwork.value = 0
 }
 
-const maxChildsPerElements = 2
-const maxNumberOfFirstChilds = 4
-const minNumberOfFirstChilds = 2
-const minNumberOfSubcircles = 0
-const maxNumberOfSubcircles = 6
-const chanceForFormulas = 0.5
+// const maxChildsPerElements = 2
+// const maxNumberOfFirstChilds = 4
+// const minNumberOfFirstChilds = 2
+// const minNumberOfSubcircles = 0
+// const maxNumberOfSubcircles = 6
+// const chanceForFormulas = 0.5
 
-const longformulas
-  = [
-    'Visita Interiora Terrae Rectificando Invenies Occultum Lapidem Veram Medicinam.',
-    'Caelum non animum mutant qui trans mare currunt',
-    'cessante ratione legis cessat ipsa lex',
-    'contra vim mortis non crescit herba in hortis',
-    'crescat scientia vita excolatur',
-    'cuius est solum eius est usque ad coelum et ad inferos',
-    'cuncti adsint meritaeque expectent praemia palmae',
+// const longformulas
+//   = [
+//     'Visita Interiora Terrae Rectificando Invenies Occultum Lapidem Veram Medicinam.',
+//     'Caelum non animum mutant qui trans mare currunt',
+//     'cessante ratione legis cessat ipsa lex',
+//     'contra vim mortis non crescit herba in hortis',
+//     'crescat scientia vita excolatur',
+//     'cuius est solum eius est usque ad coelum et ad inferos',
+//     'cuncti adsint meritaeque expectent praemia palmae',
 
-  ]
-const formulas
-  = [
-    'admirandum naturæ operationem',
-    'caput mortuum',
-    'carpe noctem',
-    'clavis aurea',
-    'camera obscura',
-    'capax infiniti',
-    'caput inter nubila',
-    'anima magica abscondita',
-    'causa mortis',
-    'ceteris paribus',
-    'compos mentis',
-    'concilio et labore',
-    'concordia cum veritate',
-    'concordia parvae res crescunt',
-    'condicio sine qua non',
-    'contemptus mundi',
-    'contraria contrariis curantur',
-    'cor ad cor loquitur',
-    'cor aut mors',
-    'cor unum',
-    'corpus vile',
-    'corruptio optimi pessima',
-    'corvus oculum corvi non eruit',
-    'crescente luce',
-    'cupio dissolvi',
-    'auctus ex dimicatione',
-    'voluntas vincit omnia',
-    'concordia magica',
-  ]
-const shortformulas
-  = [
-    'Creo',
-    'Rego',
-    'Perdo',
-    'Intellego',
-    'Muto',
-    'Ignem',
-    'Aqua',
-    'Terram',
-    'Auram',
-    'Herbam',
-    'Corpus',
-    'Mentem',
-    'Vim',
-    'Animal',
-    'Imagonem',
-    'Vitae',
-    'Nocte',
-    'Diem',
-  ]
+//   ]
+// const formulas
+//   = [
+//     'admirandum naturæ operationem',
+//     'caput mortuum',
+//     'carpe noctem',
+//     'clavis aurea',
+//     'camera obscura',
+//     'capax infiniti',
+//     'caput inter nubila',
+//     'anima magica abscondita',
+//     'causa mortis',
+//     'ceteris paribus',
+//     'compos mentis',
+//     'concilio et labore',
+//     'concordia cum veritate',
+//     'concordia parvae res crescunt',
+//     'condicio sine qua non',
+//     'contemptus mundi',
+//     'contraria contrariis curantur',
+//     'cor ad cor loquitur',
+//     'cor aut mors',
+//     'cor unum',
+//     'corpus vile',
+//     'corruptio optimi pessima',
+//     'corvus oculum corvi non eruit',
+//     'crescente luce',
+//     'cupio dissolvi',
+//     'auctus ex dimicatione',
+//     'voluntas vincit omnia',
+//     'concordia magica',
+//   ]
+// const shortformulas
+//   = [
+//     'Creo',
+//     'Rego',
+//     'Perdo',
+//     'Intellego',
+//     'Muto',
+//     'Ignem',
+//     'Aqua',
+//     'Terram',
+//     'Auram',
+//     'Herbam',
+//     'Corpus',
+//     'Mentem',
+//     'Vim',
+//     'Animal',
+//     'Imagonem',
+//     'Vitae',
+//     'Nocte',
+//     'Diem',
+//   ]
 
-function addElementWithClass(container: HTMLElement, cls: string, content = '') {
-  const el = document.createElement('div')
-  el.classList.add(...cls.split(' '))
-  if (content) el.textContent = content
-  container.append(el)
-  return el
-}
+// function addElementWithClass(container: HTMLElement, cls: string, content = '') {
+//   const el = document.createElement('div')
+//   el.classList.add(...cls.split(' '))
+//   if (content) el.textContent = content
+//   container.append(el)
+//   return el
+// }
 
-function getRandomLongFormula() {
-  const dice = Math.floor((Math.random() * longformulas.length))
-  return longformulas[dice]
-}
+// function getRandomLongFormula() {
+//   const dice = Math.floor((Math.random() * longformulas.length))
+//   return longformulas[dice]
+// }
 
-function getRandomFormula() {
-  const dice = Math.floor((Math.random() * formulas.length))
-  return formulas[dice]
-}
+// function getRandomFormula() {
+//   const dice = Math.floor((Math.random() * formulas.length))
+//   return formulas[dice]
+// }
 
-function getRandomShortFormula() {
-  const dice = Math.floor((Math.random() * shortformulas.length))
-  return shortformulas[dice]
-}
+// function getRandomShortFormula() {
+//   const dice = Math.floor((Math.random() * shortformulas.length))
+//   return shortformulas[dice]
+// }
 
-function appendSymbol(element: HTMLElement) {
-  // symbols goes from 128768 to 128883
-  const code = (128768 + Math.floor((Math.random() * 114)))
-  const symbol = document.createElement('div')
-  symbol.classList.add('symbol')
-  symbol.innerHTML = `&#${code}`
-  element.append(symbol)
+// function appendSymbol(element: HTMLElement) {
+//   // symbols goes from 128768 to 128883
+//   const code = (128768 + Math.floor((Math.random() * 114)))
+//   const symbol = document.createElement('div')
+//   symbol.classList.add('symbol')
+//   symbol.innerHTML = `&#${code}`
+//   element.append(symbol)
 
-  const dice = Math.floor((Math.random() * 3))
-  if (dice === 1) symbol?.classList.add('lighter')
-  else if (dice === 2) symbol?.classList.add('lighter')
+//   const dice = Math.floor((Math.random() * 3))
+//   if (dice === 1) symbol?.classList.add('lighter')
+//   else if (dice === 2) symbol?.classList.add('lighter')
 
-  return symbol
-}
+//   return symbol
+// }
 
-function makeMagicCircle() {
-  /* generates random elements */
-  let dice = minNumberOfFirstChilds + Math.floor(Math.random() * (maxNumberOfFirstChilds - minNumberOfFirstChilds))
-  for (let i = 0; i < dice; i++)
-    appendRandomElement(circle.value, maxChildsPerElements)
+// function makeMagicCircle() {
+//   /* generates random elements */
+//   let dice = minNumberOfFirstChilds + Math.floor(Math.random() * (maxNumberOfFirstChilds - minNumberOfFirstChilds))
+//   for (let i = 0; i < dice; i++)
+//     appendRandomElement(circle.value, maxChildsPerElements)
 
-  /* generates subcircles */
-  dice = minNumberOfSubcircles + Math.floor(Math.random() * (maxNumberOfSubcircles - minNumberOfSubcircles))
-  for (let i = 0; i < dice; i++)
-    appendCircle(circle.value, 0)
+//   /* generates subcircles */
+//   dice = minNumberOfSubcircles + Math.floor(Math.random() * (maxNumberOfSubcircles - minNumberOfSubcircles))
+//   for (let i = 0; i < dice; i++)
+//     appendCircle(circle.value, 0)
 
-  if (Math.random() > 0.75) circle.value?.classList.add('doubled')
+//   if (Math.random() > 0.75) circle.value?.classList.add('doubled')
 
-  dice = Math.floor((Math.random() * 2))
-  if (dice === 1) circle.value?.classList.add('lighter')
-  else if (dice === 2) circle.value?.classList.add('lighter')
+//   dice = Math.floor((Math.random() * 2))
+//   if (dice === 1) circle.value?.classList.add('lighter')
+//   else if (dice === 2) circle.value?.classList.add('lighter')
 
-  appendSymbol(circle.value)
-}
+//   appendSymbol(circle.value)
+// }
 
-function appendRandomElement(element: HTMLElement, maxChilds = 0) {
-  // Random type
-  let dice = Math.floor((Math.random() * 3))
-  let child = null
+// function appendRandomElement(element: HTMLElement, maxChilds = 0) {
+//   // Random type
+//   let dice = Math.floor((Math.random() * 3))
+//   let child = null
 
-  switch (dice) {
-    case 0: child = appendCircle(element, 2); break
-    case 1: child = appendSquare(element); break
-    case 2: child = appendTriangle(element); break
-  }
+//   switch (dice) {
+//     case 0: child = appendCircle(element, 2); break
+//     case 1: child = appendSquare(element); break
+//     case 2: child = appendTriangle(element); break
+//   }
 
-  // Make childs
-  if (dice !== 3) {
-    dice = Math.floor((Math.random() * maxChilds))
-    if (dice > 0) {
-      for (let i = 0; i < dice; i++)
-        appendRandomElement(child, maxChilds)
-    }
-  }
+//   // Make childs
+//   if (dice !== 3) {
+//     dice = Math.floor((Math.random() * maxChilds))
+//     if (dice > 0) {
+//       for (let i = 0; i < dice; i++)
+//         appendRandomElement(child, maxChilds)
+//     }
+//   }
 
-  // Random weight
-  dice = Math.floor((Math.random() * 3))
-  if (dice === 1) child?.classList.add('lighter')
-  else if (dice === 2) child?.classList.add('lighter')
+//   // Random weight
+//   dice = Math.floor((Math.random() * 3))
+//   if (dice === 1) child?.classList.add('lighter')
+//   else if (dice === 2) child?.classList.add('lighter')
 
-  // Random style
-  dice = Math.floor((Math.random() * 2))
-  if (dice === 1) child?.classList.add('dotted')
-}
+//   // Random style
+//   dice = Math.floor((Math.random() * 2))
+//   if (dice === 1) child?.classList.add('dotted')
+// }
 
-function appendCircle(element: HTMLElement, maxSubcircles: number) {
-  const circle = addElementWithClass(element, 'magic-circle')
+// function appendCircle(element: HTMLElement, maxSubcircles: number) {
+//   const circle = addElementWithClass(element, 'magic-circle')
 
-  // Random position
-  const dice = Math.random()
-  if (dice > 0.9) circle.classList.add('top')
-  else if (dice > 0.8) circle.classList.add('top-right')
-  else if (dice > 0.7) circle.classList.add('right')
-  else if (dice > 0.6) circle.classList.add('bottom-right')
-  else if (dice > 0.5) circle.classList.add('bottom')
-  else if (dice > 0.4) circle.classList.add('bottom-left')
-  else if (dice > 0.3) circle.classList.add('left')
-  else if (dice > 0.2) circle.classList.add('top-left')
+//   // Random position
+//   const dice = Math.random()
+//   if (dice > 0.9) circle.classList.add('top')
+//   else if (dice > 0.8) circle.classList.add('top-right')
+//   else if (dice > 0.7) circle.classList.add('right')
+//   else if (dice > 0.6) circle.classList.add('bottom-right')
+//   else if (dice > 0.5) circle.classList.add('bottom')
+//   else if (dice > 0.4) circle.classList.add('bottom-left')
+//   else if (dice > 0.3) circle.classList.add('left')
+//   else if (dice > 0.2) circle.classList.add('top-left')
 
-  // is doubled ?
-  if (Math.random() > 0.75) circle.classList.add('doubled')
+//   // is doubled ?
+//   if (Math.random() > 0.75) circle.classList.add('doubled')
 
-  // make an inner symbol ?
-  appendSymbol(circle)
+//   // make an inner symbol ?
+//   appendSymbol(circle)
 
-  // has formula ?
-  // if (Math.random() > chanceForFormulas)
-  //   addElementWithClass(element, 'formula', `${getRandomLongFormula()}`)
+//   // has formula ?
+//   // if (Math.random() > chanceForFormulas)
+//   //   addElementWithClass(element, 'formula', `${getRandomLongFormula()}`)
 
-  /* generates subcircles */
-  if (maxSubcircles > 0) {
-    const dice = Math.floor(Math.random() * (maxSubcircles))
-    for (let i = 0; i < dice; i++)
-      appendCircle(circle, maxSubcircles - 1)
-  }
+//   /* generates subcircles */
+//   if (maxSubcircles > 0) {
+//     const dice = Math.floor(Math.random() * (maxSubcircles))
+//     for (let i = 0; i < dice; i++)
+//       appendCircle(circle, maxSubcircles - 1)
+//   }
 
-  return circle
-}
+//   return circle
+// }
 
-function appendSquare(element: HTMLElement) {
-  const square = addElementWithClass(element, 'square')
-  // Has formulas ?
-  if (Math.random() > chanceForFormulas) {
-    const dice = Math.floor(Math.random() * 2)
-    // simple formula
-    if (dice === 0) {
-      addElementWithClass(square, 'formula', `${getRandomFormula()}`)
-    }
-    // side formulas
-    else if (dice === 1) {
-      addElementWithClass(square, 'formula up', `${getRandomShortFormula()}`)
-      addElementWithClass(square, 'formula right', `${getRandomShortFormula()}`)
-      addElementWithClass(square, 'formula down', `${getRandomShortFormula()}`)
-      addElementWithClass(square, 'formula left', `${getRandomShortFormula()}`)
-    }
-  }
+// function appendSquare(element: HTMLElement) {
+//   const square = addElementWithClass(element, 'square')
+//   // Has formulas ?
+//   if (Math.random() > chanceForFormulas) {
+//     const dice = Math.floor(Math.random() * 2)
+//     // simple formula
+//     if (dice === 0) {
+//       addElementWithClass(square, 'formula', `${getRandomFormula()}`)
+//     }
+//     // side formulas
+//     else if (dice === 1) {
+//       addElementWithClass(square, 'formula up', `${getRandomShortFormula()}`)
+//       addElementWithClass(square, 'formula right', `${getRandomShortFormula()}`)
+//       addElementWithClass(square, 'formula down', `${getRandomShortFormula()}`)
+//       addElementWithClass(square, 'formula left', `${getRandomShortFormula()}`)
+//     }
+//   }
 
-  return square
-}
+//   return square
+// }
 
-function appendTriangle(element: HTMLElement) {
-  const triangle = addElementWithClass(element, 'triangle')
-  if (Math.random() > 0.5)
-    triangle?.classList.add('reverse')
+// function appendTriangle(element: HTMLElement) {
+//   const triangle = addElementWithClass(element, 'triangle')
+//   if (Math.random() > 0.5)
+//     triangle?.classList.add('reverse')
 
-  // Has formulas ?
-  if (Math.random() > chanceForFormulas) {
-    const dice = Math.floor(Math.random() * 2)
-    // simple formula
-    if (dice === 0) {
-      addElementWithClass(triangle, 'formula', `${getRandomFormula()}`)
-    }
-    // side formulas
-    else if (dice === 1) {
-      addElementWithClass(triangle, 'formula base', `${getRandomShortFormula()}`)
-      addElementWithClass(triangle, 'formula right', `${getRandomShortFormula()}`)
-      addElementWithClass(triangle, 'formula left', `${getRandomShortFormula()}`)
-    }
-  }
+//   // Has formulas ?
+//   if (Math.random() > chanceForFormulas) {
+//     const dice = Math.floor(Math.random() * 2)
+//     // simple formula
+//     if (dice === 0) {
+//       addElementWithClass(triangle, 'formula', `${getRandomFormula()}`)
+//     }
+//     // side formulas
+//     else if (dice === 1) {
+//       addElementWithClass(triangle, 'formula base', `${getRandomShortFormula()}`)
+//       addElementWithClass(triangle, 'formula right', `${getRandomShortFormula()}`)
+//       addElementWithClass(triangle, 'formula left', `${getRandomShortFormula()}`)
+//     }
+//   }
 
-  return triangle
-}
+//   return triangle
+// }
 
 // onMounted(() => makeMagicCircle())
 
