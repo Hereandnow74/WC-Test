@@ -235,13 +235,6 @@ DLCperks.push({
   `,
 })
 
-// DLCperks.push({
-//   dlc: 'PixelGMS',
-//   title: 'Nice Guy',
-//   cost: 120,
-//   desc: 'Everyone will think that you\'re a nice guy. A friendly acquaintance. Even if you stab them in the guts, they wouldn\'t hold it against you. It doesn\'t matter what you do, as long as it\'s not outright murder or torture, people won\'t think badly about it, but some half-assed arguments might be needed to justify your actions. If you start killing or doing something worse to someone they care about more than themselves in front of them then the effect will quickly deteriorate.',
-// })
-
 DLCperks.push({
   uid: 'bqgqk',
   dlc: 'Mortaegus’s Mod',
@@ -265,6 +258,30 @@ DLCperks.push({
   desc: `You will find that your new world has a number of previously bound waifus who for some reason or another have been left to their own devices; perhaps they were accidentally misplaced in transition, or maybe their contractor had a sudden case of extremely violent death, or maybe they were deliberately abandoned; either way, something somehow resulted in their arrival in your new world, and they are now your problem; they know that they were intended to be kept as slaves by a master, and will be especially distrustful of anyone who approaches them, so attempting to capture them will be difficult at best and dangerous at worst; while they will have arrived together, they may or may not stay together, and they also may seek out local assistance or proactively take measures to evade being captured.
   <p>Cost depends on number and tier of potential companions: T1-T4 [10]; T1-T7[100]; T1-T10[1000]</p>
   <p>Total sum of the companion's cost's can't be less than double the amount payed.</p>
+  `,
+})
+
+DLCperks.push({
+  uid: 'kHybZ',
+  dlc: 'Bluesnowman',
+  title: 'Memorabilia',
+  cost: 5,
+  multiple: true,
+  max: 3,
+  desc: `You can take all the stuff you owned in your birth world, example includes - your notes / phone / computer / things of sentimental value, the amount of the stuff is limited to the things you can carry with you in a backpack. If you have a Sweet Home or it's upgrades one of the room of your house will be filled with your possessions instead.
+  <p>With a second  purchase the company will bring along any pets you had even if they no longer alive, they will get the Everlasting Talent for free.</p>
+  <p>The third purchase gives you an ability to change your pet species, limited to one time for each. This has no affect for a pet strength at the start, but can be trained up, the same as Added Potential. Examples of available species include: dragonling; kelpie; hippogriff; yeti; etc.</p>
+  `,
+})
+
+DLCperks.push({
+  uid: 'opART',
+  dlc: 'Bluesnowman',
+  title: 'Let Them Know',
+  cost: 10,
+  desc: `Sometimes you want to let the people of a setting know just how things might turn out had you not interfered, either before or after the the fact. With this perk it can be done in a way of your preference, be it sudden revelation, TV show, or just unquestionable confidence in your words.
+  <p>Future events that may be shown by this perk need to be known by you or you need to have the ability to learn about them.</p>
+  <p>This perk will work regardless of an chosen origin and will show the timeline where you or any interference your actions are caused did not exist.</p>
   `,
 })
 

@@ -1,7 +1,8 @@
 import Fuse from 'fuse.js'
-import { random, groupBy } from 'lodash-es'
+import { random, groupBy, sampleSize, findIndex } from 'lodash-es'
 import tippy from 'tippy.js'
 import html2canvas from 'html2canvas'
+import { DBWorld } from 'global'
 import { allWorldsNoCondition, CHAR_COSTS, getAllChars } from '~/data/constants'
 
 import { useStore } from '~/store/store'
@@ -58,19 +59,19 @@ export async function randomChar(withImg: boolean, maxCost = 0, minCost = 0, gen
   let chars = await getAllChars()
   if (gender) chars = chars.filter(x => x.b && x.b.includes(gender))
   if (withImg) chars = chars.filter(x => x.i && x.i.length)
-  if (maxCost) chars = chars.filter(x => (CHAR_COSTS[x.t - 1] || 0) <= maxCost)
-  if (minCost) chars = chars.filter(x => (CHAR_COSTS[x.t - 1] || 0) >= minCost)
+  if (maxCost) chars = chars.filter(x => (CHAR_COSTS[x.t] || 0) <= maxCost)
+  if (minCost) chars = chars.filter(x => (CHAR_COSTS[x.t] || 0) >= minCost)
   const randomNumber = random(0, chars.length)
 
   return chars[randomNumber]
 }
 
-export function randomWorld(previous = 0, minus = 11, plus = 11) {
+export function randomWorld(previous = 0, minus = 11, plus = 11, n = 1, doubles = [] as DBWorld[]) {
   const worlds = allWorldsNoCondition.value.filter((x) => {
     const diff = x.rating - previous
-    return diff >= -minus && diff <= plus
+    return diff >= -minus && diff <= plus && findIndex(doubles, { worldName: x.worldName, condition: x.condition })
   })
-  return worlds[random(0, worlds.length - 1)]
+  return sampleSize(worlds, n)
 }
 
 export function toReadableTime(seconds: number) {

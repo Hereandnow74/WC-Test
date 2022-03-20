@@ -56,7 +56,7 @@ rides.push({
   image: 'https://i.ibb.co/b5fB4CM/Regalia.jpg',
   cost: 5,
   desc: 'Car from Final Fantasy XV',
-  addons: [['Type-D upgrade (off-road) (+5)', 5], ['Type-F upgrade (flight capability, unlimited fuel) (+10)', 10]],
+  addons: [['Type-D upgrade (off-road)', 5], ['Type-F upgrade (flight capability, unlimited fuel)', 10]],
   capacity: '1 driver, 3 passengers',
 })
 
@@ -107,7 +107,7 @@ rides.push({
   image: 'https://i.ibb.co/2q9g4ZJ/Tuatha-De-Danaan.jpg',
   cost: 40,
   desc: 'Submarine-capable assault carrier. Holds 5x M9E Gernsback and 1x ARX-7 Arbalest mecha, 4x FAV-8 Super Harriers, 4x RAH-66 Comanche attack helicopters, and 6x MH-67 Pave Mare transport helicopters.',
-  addons: [['Upgrade ARX-7 to ARX-8 Laevatein (+10)', 10]],
+  addons: [['Upgrade ARX-7 to ARX-8 Laevatein', 10]],
   capacity: '~50 crew',
 })
 
@@ -120,7 +120,7 @@ rides.push({
   image: 'https://i.ibb.co/Hhj1NCN/Gargantia-Fleet.jpg',
   cost: 50,
   desc: 'Detachable Sub-ships, Orbital Mass Driver, Limited Manufacturing',
-  addons: [['Patrol Fleet (+10)', 10]],
+  addons: [['Patrol Fleet', 10]],
 })
 
 rides.push({
@@ -133,7 +133,7 @@ rides.push({
   cost: 50,
   whitelist: ['Science Talent'],
   desc: 'Missiles; Torpedos; Miniature Submarines',
-  addons: [['‘Auto-mobile’(+5)', 5]],
+  addons: [['‘Auto-mobile’', 5]],
   capacity: '~20 crew',
 })
 
@@ -185,7 +185,7 @@ rides.push({
   image: 'https://i.ibb.co/94fY7cB/MCV.jpg',
   cost: 50,
   desc: 'Red Alert 1 Database, Manufacturing',
-  addons: [['RA2 Database (+10)', 10], ['RA3 Database (+20)', 20], ['TW1 Database (+10)', 10], ['TW2 Database (+20)', 20], ['TW3 Database (+50)', 50], ['TW4 Database (+100)', 100], ['C&C Generals Database (+10)', 10]],
+  addons: [['RA2 Database', 10], ['RA3 Database', 20], ['TW1 Database', 10], ['TW2 Database', 20], ['TW3 Database', 50], ['TW4 Database', 100], ['C&C Generals Database', 10]],
   variants: [['Crawler version (70)', 20]],
   capacity: '3 crew',
 })
@@ -211,7 +211,7 @@ rides.push({
   image: 'https://i.ibb.co/gvJFtmK/Armored-Command-Unit.jpg',
   cost: 1000,
   desc: 'Aeon or UEF or Cybran Database (pick one), Extreme Manufacturing, Quantum Gate, Infinite Resources',
-  addons: [['2nd human faction’s database (+200)', 200], ['Seraphim Database (+500)', 500]],
+  addons: [['2nd human faction’s database', 200], ['Seraphim Database', 500]],
   capacity: '1 Pilot',
 })
 
@@ -226,7 +226,7 @@ rides.push({
   image: 'https://i.ibb.co/6ncdTTv/Fahrenheit.jpg',
   cost: 50,
   desc: 'AAM launchers, laser cannons',
-  addons: [['Completed restoration - main cannons can fire more than twice without repairs, automated missile production that only requires feedstock (+20)', 20]],
+  addons: [['Completed restoration - main cannons can fire more than twice without repairs, automated missile production that only requires feedstock', 20]],
 })
 
 rides.push({
@@ -275,7 +275,7 @@ rides.push({
   image: 'https://i.ibb.co/hYTyGSX/Bolo.jpg',
   cost: 100,
   desc: 'HEAVILY Armed, HEAVILY Armored, Landfall-capable',
-  addons: [['AI Bro Bolo (+50)', 50]],
+  addons: [['AI Bro Bolo', 50]],
   capacity: '1 skeleton crew, ? full compliment',
 })
 
@@ -365,7 +365,7 @@ rides.push({
   image: 'https://i.ibb.co/Q8P1dMf/Tauri-BC304.jpg',
   cost: 400,
   desc: 'Asgard hyperdrive (extreme speed), teleporter, and plasma beams, 8 F-302s in each hangar bay',
-  addons: [['Asgard computer core (+300)', 300], ['Alternate reality drive (+100)', 100], ['Ancient cloak (+100)', 100], ['Horizon weapons platform (+50)', 50], ['ZPM additional power generation (+100)', 100]],
+  addons: [['Asgard computer core', 300], ['Alternate reality drive', 100], ['Ancient cloak', 100], ['Horizon weapons platform', 50], ['ZPM additional power generation', 100]],
   capacity: '4 skeleton crew, 200 full compliment',
 })
 
@@ -405,7 +405,7 @@ rides.push({
   cost: 440,
   desc: 'Heavy armour, heavy weapons, tractor beams, powerful hyperdrive (galactic spanning), small craft complement (72 TIE-series fighters, 8 Lambda class shuttles, 15 Delta class troop transports, 6 assault gunboats), Ground force complement (20 AT-ATs, 30 AT-STs, prefab bases, 9700 sets of Stormtrooper/Clonetrooper gear), Imperial industrial database (including designs for advanced TIEs), extensive machine shops and repair bays, droid crew support.',
   variants: [['Executor class Super Star Destroyer (VERY heavy weapons, VERY heavy armour, 144 fighters, ground force complement 38,000 (500 credits)', 60]],
-  addons: [['New Republic upgrade: X-Wings and B-Wings, database current to Galactic Alliance period (+10)', 10], ['Stormtrooper/Clonetrooper gear upgraded to Mandolorian grade, Mandalorian forge and database added (+15)', 15]],
+  addons: [['New Republic upgrade: X-Wings and B-Wings, database current to Galactic Alliance period', 10], ['Stormtrooper/Clonetrooper gear upgraded to Mandolorian grade, Mandalorian forge and database added', 15]],
   capacity: '50,000 officers and crew',
 })
 
@@ -448,8 +448,8 @@ DLCRides.push({
   size: 'Medium',
   cost: 15,
   desc: 'A fairly common flying vehicle in Remnant',
-  addons: [['Unlimited Fuel (+5)', 5]],
-  variants: [['Atlas Manta (+5)', 5]],
+  addons: [['Unlimited Fuel', 5]],
+  variants: [['Atlas Manta', 5]],
 })
 
 // Environment: Space
@@ -474,14 +474,14 @@ DLCRides.push({
   size: 'Medium',
   cost: 50,
   desc: 'The M-Ships are a class of scout space vessels. Being exceptionally versatile, M-ships serve as capable dogfighters and transport ships, whilst also being very maneuverable, fast, and agile despite what their sizable profile would suggest.',
-  addons: [['Unlimited Fuel (+5)', 5], ['Unlimited Ammo (+5)', 5]],
+  addons: [['Unlimited Fuel', 5], ['Unlimited Ammo', 5]],
   variants: [['The Milano', 0], ['The Warbird', 0], ['The Benatar', 0], ['The Mandela', 0]],
 })
 
 DLCRides.push({
   uid: 'dw1Py',
   title: 'Batmobile',
-  source: 'Arkham Knight ',
+  source: 'Arkham Knight',
   category: 'Land',
   size: 'Small',
   cost: 20,
@@ -497,5 +497,43 @@ DLCRides.push({
   category: 'Space',
   size: 'Gigantic',
   cost: 1500,
-  desc: 'Forerunner database, manufacturing capabilities, slip space drive, Length: 142.7 kilometers (88.7 mi), width: 138.6 kilometers (86.1 mi) wide, height: 371.4 kilometers (230.8 mi), mass of 4.7 quadrillion metric tons, hull: Programmable matter held together by hard light bonds and energy interlocks, cloaking system, torsion fields, Armament: 1 Composer, 1 heavy ion weapon system, 1 stasis tension driver, 40 torsion driver arrays, 1,700 light mass fusillade cannons, 25,000 converging beam cannons, Particle cannon network, Anti-Ship Artillery System[ Z-8250 heavy artillery, Z-8250 light artillery ], complement: 1 Strategos, 25 Princeps, 800 Navarchs, 250,000 Praetorians, 5.5 million Venatores, Over a billion Promethean constructs[ Knights, Watchers, Crawlers], Core seed, command sector, barracks, training grounds, museums, halls of honors',
+  desc: 'Forerunner database, manufacturing capabilities, slip space drive, Length: 142.7 kilometers (88.7 mi), width: 138.6 kilometers (86.1 mi) wide, height: 371.4 kilometers (230.8 mi), mass of 4.7 quadrillion metric tons, hull: Programmable matter held together by hard light bonds and energy interlocks, cloaking system, torsion fields, Armament: 1 Composer, 1 heavy ion weapon system, 1 stasis tension driver, 40 torsion driver arrays, 1,700 light mass fusillade cannons, 25,000 converging beam cannons, Particle cannon network, Anti-Ship Artillery System[ Z-8250 heavy artillery, Z-8250 light artillery ], complement: 1 Strategos, 25 Princeps, 800 Navarchs, 250,000 Praetorians, 5.5 million Venatores, Over a billion Promethean constructs[ Knights, Watchers, Crawlers], Core seed, command sector, barracks, training grounds, museums, halls of honors',
+})
+
+DLCRides.push({
+  uid: 'jerNB',
+  title: 'M.S. Prima Vista',
+  source: 'Final Fantasy IX',
+  category: 'Sky',
+  size: 'Medium',
+  cost: 50,
+  addons: [
+    ['Fantasy Conversion now runs on it\'s own mana/non mechanical', 10],
+    ['Self Repair', 20],
+    ['Generates it\'s own supplies for crew', 50],
+  ],
+  desc: 'The M.S. Prima Vista is a luxury liner with theater used by the Tantalus Theater Troupe in Final Fantasy IX. It runs off a veil energy propulsion system and was built in Zebolt Shipyards in Lindblum.',
+})
+
+DLCRides.push({
+  uid: 'ktwdG',
+  title: 'Starfleet Invincible-class',
+  source: 'Star Trek Vanguard Universe',
+  category: 'Space',
+  size: 'Large',
+  cost: 500,
+  desc: `The Invincible-class is the single largest multi-mission combat-equipped starship ever constructed by Starfleet. She is designed as the ultimate in front line explorers. She is classified as a Fleet Carrier-Command Battleship. Invincible-class ships combine the roles of battleship and fighter carrier, having a massive offensive capability in terms of on-board weapons and huge complement of tactical fighters.
+  <p>At 1,607.2 meters in length, 764.4 meters across, and 305.76 meters high, it is the largest starship class ever built by Starfleet.
+  Capacity 4000 crew Full complement 24 Century Federation database and labs, living and diplomatic quarters.</p>`,
+  addons: [
+    ['Full Smart V.I. Automation', 5],
+    ['Quantum Commutations', 5],
+    ['Self Repair', 10],
+    ['Supply Generation', 10],
+    ['Manufacturing Capability', 20],
+    ['32nd Century Unredacted Federation Database', 20],
+    ['Temporal displacement', 50],
+    ['Self Upgrade', 50],
+    ['Perfected Omniversal Spore Dive', 150],
+  ],
 })

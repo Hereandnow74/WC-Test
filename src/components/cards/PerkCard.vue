@@ -192,7 +192,6 @@ function sendPerk() {
     }
     obj.cost = (props.perk.cost || cost.value) * obj.count
   }
-
   // Set count to 0 to delete perk if clicked twice
   if (props.savedPerk.count === obj.count && obj.count > 0)
     obj.count = 0
@@ -205,5 +204,5 @@ const perkExist = computed(() => {
 
 onMounted(() => { if (perkImg.value) lazyLoadSingleImg(perkImg.value) })
 watch(settings.value, () => { if (perkImg.value) lazyLoadSingleImg(perkImg.value) }, { flush: 'post' })
-watch(() => perkToSave.cost, sendPerk)
+// watch(() => perkToSave.cost, sendPerk)
 </script>

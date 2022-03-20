@@ -29,6 +29,7 @@
           :edit-mode="isRetinueEdit"
           @sell="sellCompanion"
           @undo="undoBuying"
+          @free="freeCompanion"
         />
       </div>
       <div v-if="!companionsData.length" class="text-center">
@@ -37,7 +38,7 @@
       <div v-if="companionsDataFiltered.length === 0 && companionsData.length" class="text-center">
         No companions matching your <b>filter</b>
       </div>
-      <div v-if="companionsDataFiltered.length" class="flex gap-2 justify-end mt-2">
+      <div v-if="companionsDataFiltered.length" class="flex gap-2 justify-end mt-2 px-2">
         <Button size="Small" label="Undo All" bg-color="bg-blue-500" @click="undoAll" />
         <Button size="Small" label="Sell All" bg-color="bg-red-500" @click="sellAll" />
         <Button size="Small" label="Return All" bg-color="bg-amber-600" @click="returnAll" />
@@ -52,6 +53,7 @@ import { CHAR_COSTS, getAllCharsObject } from '~/data/constants'
 import { lazyLoadImg, orientation, isRetinueEdit, imageLink } from '~/logic'
 import { useStore } from '~/store/store'
 import { waifu_perks, DLCwaifu_perks } from '~/data/waifu_perks'
+import { confirmDialog } from '~/logic/dialog'
 
 const { companions, underLoan, loan, trHistory, talentPerks, genericWaifuPerks, waifuPerks, localUserCharacters } = useStore()
 
@@ -145,8 +147,8 @@ watch([companionsDataFiltered, companionImages], () => {
 function sellCompanion(uid: number) {
   const cmp = companions.value[findIndex(companions.value, { uid })]
   let price = 0
-  if (underLoan.value) {
-    price = Math.round(CHAR_COSTS[cmp.tier - 1] * 0.2)
+  if (underLoan.value && cmp.tier !== 11) {
+    price = Math.round(CHAR_COSTS[cmp.tier] * 0.2)
     const half = Math.round(price / 2)
     if (half <= loan.value.owed) {
       loan.value.owed -= half
@@ -162,6 +164,16 @@ function sellCompanion(uid: number) {
   }
 
   cmp.sold = true
+}
+
+async function freeCompanion(uid: number) {
+  const res = await confirmDialog(`
+  <div>When you release a retinue member you will lose gained credits for the capture, or not get your credits back if you bough them. You will not be able to capture them again, so think twice before doing it.</div>
+  <div class="dark:text-amber-400 text-amber-600 text-sm">This is not an official catalog function.</div>
+  `)
+  if (!res) return
+  const cmp = companions.value[findIndex(companions.value, { uid })]
+  cmp.method = 'unbound'
 }
 
 function undoBuying(uid: number) {

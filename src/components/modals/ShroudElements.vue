@@ -11,7 +11,10 @@
         <h3 class="relative text-lg font-semibold flex gap-1 justify-center">
           {{ element.title }}
           <fa-solid:check v-if="elementBought(element.title)" class="text-green-500 absolute top-1 right-1" />
-          <Input v-if="element.title === 'Custom Element'" v-model="custom" placeholder="Element" @click.stop />
+          <template v-if="element.title === 'Custom Element'">
+            <span class="text-gray-500">(DLC)</span>
+            <Input v-model="custom" placeholder="Element" @click.stop />
+          </template>
         </h3>
         <div>
           <span class="px-2 text-orange-500 dark:text-orange-300 font-semibold">Elemental Ability</span>:

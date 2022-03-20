@@ -26,6 +26,10 @@
           <div>Turn off World and Companions images</div>
           <Toggle v-model="settings.allImg" />
         </div>
+        <div class="flex justify-between gap-4 border-b border-gray-500">
+          <div>Turn on the ability to free retinue members</div>
+          <Toggle v-model="settings.ableSell" />
+        </div>
       </div>
       <h3 class="text-lg">
         Turn off DLC's

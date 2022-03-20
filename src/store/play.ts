@@ -1,8 +1,10 @@
-import { useChargenStore, World } from './chargen'
+
+import { DBWorld } from 'global'
+import { useChargenStore } from './chargen'
 
 const { startingWorld } = useChargenStore()
 
-const jumpChain = useStorage<World[]>('jumpChain', [])
+const jumpChain = useStorage<DBWorld[]>('jumpChain', [])
 const currentWorld = useStorage('currentWorld', startingWorld.value)
 const rdnWorld = useStorage<any[]>('rdnWorld', [])
 

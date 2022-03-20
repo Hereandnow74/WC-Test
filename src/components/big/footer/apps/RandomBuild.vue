@@ -53,11 +53,11 @@ async function randomOrigin(startBudget: number) {
   if (ind === 2) return { title: origin[ind].title, cost: sample([0, 10]) }
   if (ind === 3) {
     const char = await randomChar(false, startBudget * 0.2)
-    return { title: origin[ind].title, cost: (CHAR_COSTS[char.t - 1] || 0), character: char.n, tier: char.t }
+    return { title: origin[ind].title, cost: (CHAR_COSTS[char.t] || 0), character: char.n, tier: char.t }
   }
   if (ind === 4) {
     const char = await randomChar(false, startBudget)
-    return { title: origin[ind].title, cost: (CHAR_COSTS[char.t - 1] || 0), character: char.n, tier: char.t }
+    return { title: origin[ind].title, cost: (CHAR_COSTS[char.t] || 0), character: char.n, tier: char.t }
   }
   return { title: origin[0].title, cost: 0 }
 }

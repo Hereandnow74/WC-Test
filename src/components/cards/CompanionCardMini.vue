@@ -97,6 +97,13 @@
 
         <div v-if="!char.sold" class="flex gap-2 mt-auto justify-end">
           <Button
+            v-if="char.method !== 'unbound' && settings.ableSell"
+            bg-color="bg-teal-500"
+            size="Small"
+            label="free"
+            @click="freeCompanion(char.uid)"
+          />
+          <Button
             v-if="flags.chargen"
             label="undo"
             size="Small"
@@ -105,14 +112,14 @@
           />
           <Button
             v-if="['capture'].includes(char.method)"
-            :label="`sell ${char.tier === 11 ? '1 ticket' : Math.floor(CHAR_COSTS[char.tier - 1] * 0.2) + 'c'}`"
+            :label="`sell ${char.tier === 11 ? '1 ticket' : Math.floor(CHAR_COSTS[char.tier] * 0.2) + 'c'}`"
             size="Small"
             bg-color="bg-red-500"
             @click="sellCompanion(char.uid)"
           />
           <Button
             v-if="['buy', 'used', 'yoink'].includes(char.method)"
-            :label="`return ${char.priceTier === 11 ? '1 ticket' : Math.round(CHAR_COSTS[char.priceTier - 1] * 0.8) + 'c'}`"
+            :label="`return ${char.priceTier === 11 ? '1 ticket' : Math.round(CHAR_COSTS[char.priceTier] * 0.8) + 'c'}`"
             size="Small"
             bg-color="bg-yellow-600"
             @click="sellCompanion(char.uid)"
@@ -160,7 +167,7 @@ const methods = {
 
 const { flags, settings } = useStore()
 
-const emit = defineEmits(['sell', 'undo'])
+const emit = defineEmits(['sell', 'undo', 'free'])
 
 const talentsList = computed(() => {
   return props.perks.talents || []
@@ -174,6 +181,10 @@ const specificList = computed(() => {
 
 function sellCompanion(uid: number) {
   emit('sell', uid)
+}
+
+function freeCompanion(uid: number) {
+  emit('free', uid)
 }
 
 </script>

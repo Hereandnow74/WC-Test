@@ -1,7 +1,6 @@
 <template>
   <Modal v-if="showConfirm" label="Confirm ?" @click="cancel">
-    <div class="text-lg p-2">
-      {{ dialogMessage }}
+    <div class="text-lg p-2" v-html="dialogMessage">
     </div>
     <div class="flex justify-center gap-4 p-2">
       <Button label="Cancel" bg-color="bg-gray-500" @click="cancel" />

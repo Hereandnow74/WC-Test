@@ -39,8 +39,8 @@ import { CHAR_COSTS } from '~/data/constants'
 const main = ref([0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
 const extra = ref([0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
 
-const totalCapture = computed(() => main.value.reduce((a, x, i) => a += x * Math.ceil(CHAR_COSTS[i] * 0.6), 0)
-                                  + extra.value.reduce((a, x, i) => a += x * Math.floor(CHAR_COSTS[i] * 0.05), 0))
-const totalSell = computed(() => main.value.reduce((a, x, i) => a += x * Math.round(CHAR_COSTS[i] * 0.2), 0))
+const totalCapture = computed(() => main.value.reduce((a, x, i) => a += x * Math.ceil(CHAR_COSTS[i + 1] * 0.6), 0)
+                                  + extra.value.reduce((a, x, i) => a += x * Math.floor(CHAR_COSTS[i + 1] * 0.05), 0))
+const totalSell = computed(() => main.value.reduce((a, x, i) => a += x * Math.round(CHAR_COSTS[i + 1] * 0.2), 0))
 
 </script>

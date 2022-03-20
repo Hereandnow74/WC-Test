@@ -92,11 +92,11 @@
             Tier: <span class="text-amber-300">{{ (charData.tier) }}</span>
           </div>
           <div class="text-gray-400">
-            Cost: <span class="text-amber-300">{{ charData.tier === 11 ? 'Tier 11 ticket' : CHAR_COSTS[charData.tier - 1] }}</span>
+            Cost: <span class="text-amber-300">{{ charData.tier === 11 ? 'Tier 11 ticket' : CHAR_COSTS[charData.tier] }}</span>
             <span
               v-if="flags.noBindings && (charData.tier) !== 11 && (charData.tier) !== 1"
               title="Discount from No Binding"
-            >({{ CHAR_COSTS[(charData.tier) - 2] }})</span>
+            >({{ CHAR_COSTS[(charData.tier) - 1] }})</span>
           </div>
         </div>
         <div v-if="showTags" class="flex flex-wrap gap-1 text-sm justify-center">
@@ -251,9 +251,8 @@ function captureCompanion() {
   let price = 0
   const sex = intersection(char.tags, ['F', 'M', 'O'])[0] || 'F'
   const res = { uid: char.uid, name: char.name, world: char.world, sex, tier: char.tier, priceTier: char.tier, method: 'capture' }
-
-  if (underLoan.value) {
-    price = Math.ceil(CHAR_COSTS[char.tier - 1] * captureKoeff.value)
+  if (underLoan.value && char.tier !== 11) {
+    price = Math.ceil(CHAR_COSTS[char.tier] * captureKoeff.value)
     const half = Math.round(price / 2)
     if (half <= loan.value.owed) {
       loan.value.owed -= half
@@ -273,12 +272,12 @@ function captureCompanion() {
 
 function yoinkCompanion() {
   const char = charData.value
-  if (CHAR_COSTS[char.tier - 1] <= fullStartingBudget.value * 0.2) {
+  if (CHAR_COSTS[char.tier] <= fullStartingBudget.value * 0.2) {
     const sex = intersection(char.tags, ['F', 'M', 'O'])[0] || 'F'
     companions.value.push({ uid: char.uid, name: char.name, world: char.world, sex, tier: char.tier, priceTier: priceTier(char.tier), method: 'yoink' })
   }
   else {
-    confirmDialog(`20% of your current budget is <span class='text-green-500'>${fullStartingBudget.value * 0.2}</span> which is less than ${CHAR_COSTS[char.tier - 1]} needed to Yoink this character.`, 'info')
+    confirmDialog(`20% of your current budget is <span class='text-green-500'>${fullStartingBudget.value * 0.2}</span> which is less than ${CHAR_COSTS[char.tier]} needed to Yoink this character.`, 'info')
   }
 }
 

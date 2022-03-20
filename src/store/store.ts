@@ -2,10 +2,8 @@ import { findIndex } from 'lodash-es'
 import { useChallenges } from './challenges'
 import { usePlayStore } from './play'
 import { useChargenStore } from './chargen'
-import { heritageTiers, WORLD_RATINGS } from '~/data/constants'
+import { CHAR_COSTS, heritageTiers, WORLD_RATINGS } from '~/data/constants'
 import { defenseObject, talentsObject } from '~/data/talents'
-
-const CHAR_COSTS = [1, 2, 5, 10, 20, 50, 100, 200, 500, 1000, 11111]
 
 const { loan, jumpChain, currentWorld, trHistory } = usePlayStore()
 
@@ -69,15 +67,15 @@ const specificModsCost = computed(() => specificMods.value.reduce((a, x) => a +=
 
 const companionsCost = computed(() => {
   return companions.value.reduce((a, x) => {
-    if (x.method === 'buy' && x.priceTier !== 11)
-      return a += CHAR_COSTS[x.priceTier - 1] || 1
+    if (['buy', 'unbound'].includes(x.method) && x.priceTier !== 11)
+      return a += CHAR_COSTS[x.priceTier] || 0
     if (x.method === 'yoink' && x.priceTier !== 11) {
-      const cost = CHAR_COSTS[x.priceTier - 1] || 1
+      const cost = CHAR_COSTS[x.priceTier] || 0
       const yoinkCost = cost * 0.2 < 1 ? 1 : cost * 0.2
       return a += cost + yoinkCost
     }
     if (x.method === 'used' && x.priceTier !== 11)
-      return a += CHAR_COSTS[x.priceTier - 1] || 1
+      return a += CHAR_COSTS[x.priceTier] || 0
     return a
   }, 0)
 })
@@ -97,7 +95,7 @@ const companionProfit = computed(() => {
     ? companions.value.reduce((a, x) => {
       if (x.method === 'capture' && x.priceTier !== 11) {
         if (x.price === undefined) {
-          let captureCost = Math.ceil(CHAR_COSTS[x.priceTier - 1] * captureKoeff.value)
+          let captureCost = Math.ceil(CHAR_COSTS[x.priceTier] * captureKoeff.value)
           captureCost = captureCost < 1 ? 1 : captureCost
           return a += captureCost
         }
@@ -113,11 +111,11 @@ const companionProfitSold = computed(() => {
     ? companions.value.reduce((a, x) => {
       if (x.sold && x.tier !== 11 && ['capture'].includes(x.method)) {
         if (x.soldPrice === undefined)
-          return a += Math.round(CHAR_COSTS[x.tier - 1] * 0.2)
+          return a += Math.round(CHAR_COSTS[x.tier] * 0.2)
         else return a += x.soldPrice
       }
       if (x.sold && x.priceTier !== 11 && ['buy', 'used', 'yoink'].includes(x.method))
-        return a += Math.round(CHAR_COSTS[x.priceTier - 1] * 0.8)
+        return a += Math.round(CHAR_COSTS[x.priceTier] * 0.8)
       return a
     }, 0)
     : 0
@@ -133,7 +131,7 @@ const maxHeritageDiscount = computed(() => {
   const discount = { archetype: '', value: 0 }
   if (['Substitute', 'Possess'].includes(startingOrigin.value.title) && startingOrigin.value.hr) {
     discount.archetype = types[startingOrigin.value.hr] || ''
-    discount.value = CHAR_COSTS[startingOrigin.value.tier - 1] || 0
+    discount.value = CHAR_COSTS[startingOrigin.value.tier] || 0
     if (discount.value === 11111) discount.value = 2000
   }
   return discount
@@ -332,6 +330,7 @@ const settings = useStorage('settings', {
   perkImages: true,
   columns: 'auto' as number | 'auto',
   allImg: false,
+  ableSell: true,
 })
 
 export const appName = ref('')

@@ -153,7 +153,7 @@ interface CharPower {
 }
 
 const swapPower = reactive<Record<string, CharPower>>(companionsWithoutSold.value.reduce((a, x) => {
-  a[x.name] = { name: '', tier: x.tier, swap: 0, cap: x.method === 'capture' }
+  a[x.name] = { name: '', tier: x.tier, swap: 0, cap: x.method === 'capture' || x.priceTier === 0 }
   return a
 }, {}) || {})
 
@@ -171,10 +171,12 @@ getAllCharsObject().then(chars => allChars.value = chars)
 
 const displayedCost = computed(() => {
   return Object.values(swapPower).reduce((a, x) => {
-    if (x.cap)
-      a += Math.max((CHAR_COSTS[x.swap - 1] - CHAR_COSTS[x.tier - 1]) || 0, 0)
-    else
-      a += (CHAR_COSTS[x.swap - 1] - CHAR_COSTS[x.tier - 1]) || 0
+    if (x.swap !== 0) {
+      if (x.cap)
+        a += Math.max((CHAR_COSTS[x.swap] - CHAR_COSTS[x.tier]) || 0, 0)
+      else
+        a += (CHAR_COSTS[x.swap] - CHAR_COSTS[x.tier]) || 0
+    }
     return a
   }, 0)
 })

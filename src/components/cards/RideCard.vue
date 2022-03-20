@@ -48,7 +48,7 @@
       <span class="font-semibold text-gray-600 dark:text-gray-400">Addons:</span>
       <ul class="list-disc list-inside">
         <li v-for="addon in ride.addons" :key="addon[0]" class="mb-1">
-          {{ addon[0] }} <Button
+          {{ addon[0] }} (+{{ addon[1] }}) <Button
             v-if="active"
             :label="selectedRide.addons.includes(addon[0] as string) ? 'uninstall' : 'install'"
             size="Small"

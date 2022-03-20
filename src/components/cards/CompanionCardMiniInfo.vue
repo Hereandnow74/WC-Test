@@ -58,16 +58,16 @@ const charCost = computed(() => {
   let cost = 0
   switch (props.char.method) {
     case 'buy':
-      cost = CHAR_COSTS[props.char.priceTier - 1]
+      cost = CHAR_COSTS[props.char.priceTier]
       break
     case 'capture':
-      cost = Math.round(CHAR_COSTS[props.char.priceTier - 1] * captureKoeff.value) * (-1)
+      cost = Math.round(CHAR_COSTS[props.char.priceTier] * captureKoeff.value) * (-1)
       break
     case 'used':
-      cost = CHAR_COSTS[props.char.priceTier - 1]
+      cost = CHAR_COSTS[props.char.priceTier]
       break
     case 'yoink':
-      cost = CHAR_COSTS[props.char.priceTier - 1] * 1.2
+      cost = CHAR_COSTS[props.char.priceTier] * 1.2
       break
   }
   return cost * (-1)

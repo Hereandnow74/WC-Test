@@ -308,7 +308,8 @@ const options = {
   findAllMatches: true,
   useExtendedSearch: true,
   threshold: 0.4,
-  keys: ['n', 'w', 't', 'b', 'i', 'd', 'in', 'u', 'k'],
+  ignoreLocation: true,
+  keys: [{ name: 'n', weight: 1.1 }, 'w', 't', 'b', 'i', 'd', 'in', 'u', 'k'],
 }
 
 const options2 = {
@@ -453,7 +454,7 @@ watch(sortedResults, () => {
   position.value = 0
 })
 
-// const allCredits = computed(() => charArr.value.reduce((a, b) => b.t !== 11 ? a += CHAR_COSTS[b.t - 1] : a, 0))
+// const allCredits = computed(() => charArr.value.reduce((a, b) => b.t !== 11 ? a += CHAR_COSTS[b.t] : a, 0))
 
 const firstCard = ref<Element|null>(null)
 const lastCard = ref<Element|null>(null)

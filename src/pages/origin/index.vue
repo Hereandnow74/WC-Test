@@ -124,7 +124,7 @@ onMounted(() => useTooltips())
 
 watch(chosenOrigin, () => {
   if (['Substitute', 'Possess'].includes(chosenOrigin.title))
-    chosenOrigin.cost = CHAR_COSTS[chosenOrigin.tier - 1] || 0
+    chosenOrigin.cost = CHAR_COSTS[chosenOrigin.tier] || 0
 })
 
 function chooseOrigin(item: Origin) {
@@ -147,11 +147,16 @@ function pickOrigin() {
       costError.value = 'Cost should be less than 20% of your starting budget'
       return
     }
-    if (!csr.value && fullStartingBudget.value * 0.2 < chosenOrigin.cost) {
+    if ((!csr.value && fullStartingBudget.value * 0.2 < chosenOrigin.cost) && !flags.value.danger11Start) {
       costError.value = 'Cost should be less than 20% of your starting budget'
       return
     }
+    if (flags.value.danger11Start && chosenOrigin.tier > 6) {
+      costError.value = 'Maximum substitute tier is 6 for DR11 start'
+      return
+    }
   }
+
   costError.value = ''
   allEffects.value.push(chosenOrigin.title)
   Object.assign(startingOrigin.value, chosenOrigin)

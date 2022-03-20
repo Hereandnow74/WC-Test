@@ -10,7 +10,7 @@ Challenges are not a part of a canon Waifu Catalog so you have more freedom in i
 
 const { fullStartingBudget, companions, baseBudget } = useStore()
 
-const employee = { uid: 6666666, name: 'Employee #6.02214076e23', world: 'The Company', tier: 10, priceTier: 10, method: 'unbound' }
+const employee = { uid: 6666666, name: 'Employee #6.02214076e23', world: 'The Company', tier: 10, priceTier: 0, method: 'unbound' }
 let rouletteWatcher = null
 const cultFreebies = {
   defensePerks: ['Stress Defense', 'Stress Defense'],

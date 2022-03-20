@@ -5,6 +5,19 @@
     </h2>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
+        19 March 2022
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>~145 new user submitted characters</li>
+        <li>21 new user submitted World</li>
+        <li>Changed companion search algorithm to handle complex names like 'name1/name2' better, may affected search a bit more than I wanted (rollback is possible)</li>
+        <li>You can now free your retinue members (not an canon feature)</li>
+        <li>New app - Gacha (it's a scam)</li>
+        <li>Bugfixes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
         16 March 2022
       </h3>
       <ul class="list-decimal list-inside">

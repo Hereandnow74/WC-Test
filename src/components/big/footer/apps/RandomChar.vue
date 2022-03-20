@@ -19,7 +19,7 @@ const tier = ref(0)
 const withImg = ref(true)
 
 function getRandomChar() {
-  const val = CHAR_COSTS[tier.value - 1] || 0
+  const val = CHAR_COSTS[tier.value] || 0
   randomChar(withImg.value, val, val).then(x => char.value = x)
 }
 

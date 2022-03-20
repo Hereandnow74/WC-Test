@@ -13,7 +13,7 @@ import { ALL_PERK_TITLES } from '~/data/constants'
 const {
   allEffects, intensities, luresBought, binding, flags, allForSave, heritage,
   ridePerks, homePerks, talentPerks, defensePerks, miscPerks, genericWaifuPerks, companions, startingOrigin,
-  waifuPerks, baseBudget, startingWorld, budgetMods, otherPerks, fee, specificMods, patron,
+  waifuPerks, baseBudget, startingWorld, budgetMods, otherPerks, fee, specificMods, patron, pvpPerks,
 } = useStore()
 
 const { currentWorld, jumpChain, rdnWorld, loan, trHistory } = usePlayStore()
@@ -446,6 +446,7 @@ export function clearAll() {
     cost: 0,
   }
   intensities.value = []
+  pvpPerks.value = []
   binding.value = []
   luresBought.value = []
   otherPerks.value = []
@@ -513,6 +514,8 @@ export function writeBuildValues(build: any) {
   loan.value = build.loan || { owed: 0, gained: 0 }
   specificMods.value = build.specificMods || []
   patron.value = build.patron || []
+  pvpPerks.value = build.pvpPerks || []
+  fee.value = build.fee || 0
 }
 
 export function getSaveObject() {
@@ -540,6 +543,8 @@ export function getSaveObject() {
     loan: loan.value,
     specificMods: specificMods.value,
     patron: patron.value,
+    pvpPerks: pvpPerks.value,
+    fee: fee.value,
   }
 }
 

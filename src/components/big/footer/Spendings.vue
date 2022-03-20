@@ -85,7 +85,7 @@ const {
 const companionTotalCredits = computed(() => {
   return companions.value.reduce((a, x) => {
     if (x.method === 'capture') {
-      let captureCost = Math.ceil(CHAR_COSTS[x.tier - 1])
+      let captureCost = Math.ceil(CHAR_COSTS[x.tier])
       captureCost = captureCost === 11111 ? 2000 : captureCost
       return a += captureCost
     }

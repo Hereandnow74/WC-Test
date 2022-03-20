@@ -12,14 +12,17 @@
       <div
         class="flex flex-col gap-2"
       >
-        <EditableProgressbar v-if="progress < 100" v-model="progress" />
+        <template v-if="progress < 100">
+          <EditableProgressbar v-model="progress" />
+          <Button class="self-center px-2" size="Small" label="fill" bg-color="bg-teal-600" @click="progress = 100" />
+        </template>
         <div v-else class="flex flex-col gap-2">
           <div class="text-center">
             Choose your next world
           </div>
           <div v-for="world, i in rdnWorld" :key="world.worldName" class="flex gap-1 px-1">
             <WorldCard :world="world" :pick-able="false" @click="chooseWorld(world, i)" />
-            <div class="flex flex-col justify-between bg-gray-700 rounded-xl py-2">
+            <div v-if="isBear" class="flex flex-col justify-between bg-gray-700 rounded-xl py-2">
               <fluent:save-24-regular
                 v-if="(world.save || !areSaved) && !world.remove"
                 class="hover:text-green-500 cursor-pointer"
@@ -131,13 +134,7 @@ const minus = computed(() => {
 })
 
 function jumpToNextWorld() {
-  rdnWorld.value.splice(0)
-
-  for (let i = 0; i < numberOfChoices.value; i++) {
-    const wrd = randomWorld(currentWorld.value.rating, minus.value, plus.value)
-    wrd.n = 0
-    rdnWorld.value.push(wrd)
-  }
+  rdnWorld.value = randomWorld(currentWorld.value.rating, minus.value, plus.value, numberOfChoices.value)
 }
 
 async function chooseWorld(world: World, i: number) {
@@ -150,15 +147,14 @@ async function chooseWorld(world: World, i: number) {
   rdnWorld.value.splice(i, 1)
   rdnWorld.value.forEach((x) => {
     if (x.save) return
-    x.n += 1
+    if (x.n)
+      x.n += 1
+    else
+      x.n = 1
     if (x.remove) x.n = 3
   })
   rdnWorld.value = rdnWorld.value.filter(x => x.n <= 2)
-  while (rdnWorld.value.length < numberOfChoices.value) {
-    const wrd = randomWorld(currentWorld.value.rating, minus.value, plus.value)
-    wrd.n = 0
-    rdnWorld.value.push(wrd)
-  }
+  rdnWorld.value.push(...randomWorld(currentWorld.value.rating, minus.value, plus.value, numberOfChoices.value - rdnWorld.value.length, jumpChain.value))
 }
 
 async function clearJumpLog() {
