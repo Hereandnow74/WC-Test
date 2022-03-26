@@ -12,7 +12,7 @@
         </div>
         <div class="flex gap-2">
           <InputWithSearch
-            v-model="world"
+            v-model.trim="world"
             idd="worldSearch"
             :list="allWorlds"
             placeholder="World Name"
@@ -20,7 +20,7 @@
             :error-message="errors.world"
           />
           <InputWithSearch
-            v-model="sub"
+            v-model.trim="sub"
             idd="subSearch"
             :list="allSubs"
             placeholder="Sub-category"

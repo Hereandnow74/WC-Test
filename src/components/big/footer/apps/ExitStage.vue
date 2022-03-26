@@ -146,7 +146,10 @@ async function chooseWorld(world: World, i: number) {
   currentWorld.value = saveWorld
   rdnWorld.value.splice(i, 1)
   rdnWorld.value.forEach((x) => {
-    if (x.save) return
+    if (x.save) {
+      x.n = 1
+      return
+    }
     if (x.n)
       x.n += 1
     else

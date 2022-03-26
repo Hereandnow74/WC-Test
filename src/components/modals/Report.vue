@@ -135,7 +135,7 @@ const zodObject = computed(() => {
   if (wrongTier.value) {
     obj = obj.extend({
       tier: zod.number().min(1, { message: 'Minimum tier is 1' }).max(11, { message: 'Maximum tier is 11' }).refine(val => val !== props.character.tier, { message: 'Should not equal old tier' }),
-      args: zod.string().nonempty({ message: 'Arguments are required' }).max(64, { message: 'Maximum length is 64 chars' }),
+      args: zod.string().nonempty({ message: 'Arguments are required' }).max(256, { message: 'Maximum length is 256 chars' }),
     })
   }
   if (wrongName.value) {

@@ -1,12 +1,11 @@
 import Fuse from 'fuse.js'
 import { random, groupBy, sampleSize, findIndex } from 'lodash-es'
 import tippy from 'tippy.js'
-import html2canvas from 'html2canvas'
 import { DBWorld } from 'global'
 import { allWorldsNoCondition, CHAR_COSTS, getAllChars } from '~/data/constants'
 
 import { useStore } from '~/store/store'
-import { clearAll } from '~/logic'
+import { clearAll, isBuildImage } from '~/logic'
 import { confirmDialog } from '~/logic/dialog'
 import { useChallenges } from '~/store/challenges'
 import { Perk } from '~/store/chargen'
@@ -57,10 +56,15 @@ export function lazyLoadSingleImg(img: HTMLImageElement) {
 
 export async function randomChar(withImg: boolean, maxCost = 0, minCost = 0, gender: 'F' | 'M' | 'O' | null = null) {
   let chars = await getAllChars()
-  if (gender) chars = chars.filter(x => x.b && x.b.includes(gender))
-  if (withImg) chars = chars.filter(x => x.i && x.i.length)
-  if (maxCost) chars = chars.filter(x => (CHAR_COSTS[x.t] || 0) <= maxCost)
-  if (minCost) chars = chars.filter(x => (CHAR_COSTS[x.t] || 0) >= minCost)
+  chars = chars.filter((x) => {
+    let res = true
+    if (gender) res = x.b && x.b.includes(gender) ? res : false
+    if (withImg) res = x.i && x.i.length ? res : false
+    if (maxCost) res = (CHAR_COSTS[x.t]) <= maxCost ? res : false
+    if (minCost) res = (CHAR_COSTS[x.t]) >= minCost ? res : false
+
+    return res
+  })
   const randomNumber = random(0, chars.length)
 
   return chars[randomNumber]
@@ -260,17 +264,5 @@ export function copyText() {
 }
 
 export function buildImage() {
-  const buildEl = document.getElementById('build')
-  if (buildEl) {
-    buildEl.classList.remove('hidden')
-    html2canvas(buildEl, { imageTimeout: 5000, useCORS: true }).then((canvas) => {
-      canvas.toBlob((blob) => {
-        if (blob) {
-          const item = new ClipboardItem({ 'image/png': blob })
-          navigator.clipboard.write([item])
-        }
-      })
-    })
-    buildEl.classList.add('hidden')
-  }
+  isBuildImage.value = true
 }

@@ -40,7 +40,8 @@ const props = defineProps({
   },
 })
 
-const { flags, allEffects, talentPerks, defensePerks } = useStore()
+const { flags, talentPerks, defensePerks } = useStore()
+const emit = defineEmits(['chooseIntensity'])
 
 function allTalents() {
   talents.slice(0, 13).forEach((tl) => {
@@ -60,13 +61,22 @@ function allDefenses() {
 
 function startDR11() {
   if (intensityAvailable(props.perk)) {
-    flags.value.danger11Start = !flags.value.danger11Start
-    if (allEffects.value.includes(props.perk.title)) { allEffects.value.splice(allEffects.value.indexOf(props.perk.title), 1) }
+    if (flags.value.danger11Start) {
+      flags.value.danger11Start = false
+      emit('chooseIntensity', props.perk)
+    }
     else {
-      allEffects.value.push(props.perk.title)
+      flags.value.danger11Start = true
       allTalents()
       allDefenses()
+      emit('chooseIntensity', props.perk)
     }
+    // flags.value.danger11Start = !flags.value.danger11Start
+    // if (allEffects.value.includes(props.perk.title)) { allEffects.value.splice(allEffects.value.indexOf(props.perk.title), 1) }
+    // else {
+    //   allEffects.value.push(props.perk.title)
+
+    // }
   }
 }
 </script>

@@ -5,6 +5,30 @@
     </h2>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
+        26 March 2022
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>~165 new user submitted characters</li>
+        <li>Some changes to character search (Tier range/separate world input)</li>
+        <li>Block-list for characters worlds (don't like how it works may delete in the future)</li>
+        <li>Some UI changes and improvements</li>
+        <li>Bugfixes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
+        23 March 2022
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>~180 new user submitted characters</li>
+        <li>37(O_O) new user submitted Worlds</li>
+        <li>All characters from pokemon Expansion now have 'Monster' tag</li>
+        <li>All characters now have at least a gender tag</li>
+        <li>Bugfixes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
         19 March 2022
       </h3>
       <ul class="list-decimal list-inside">

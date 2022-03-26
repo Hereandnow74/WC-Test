@@ -19,7 +19,7 @@
     <component :is="addPerkComponent" v-if="showAddPerk" @click="toggleShowAddPerk()" />
     <component :is="addMissionComponent" v-if="showAddMission" @click="toggleShowAddMission()" />
     <component :is="settingsComponent" v-if="showSettings" @click="toggleShowSettings()" />
-    <BuildImage />
+    <BuildImage v-if="isBuildImage" />
   </main>
 </template>
 
@@ -29,7 +29,7 @@ import { useStore } from './store/store'
 import {
   isSupport, showSaveLoad, showShare, showSideMenu, showAddPerk, toggleShowAddPerk,
   showAddMission, toggleShowAddMission, promoteShown, toggleShowSettings, showSettings, sendStats,
-  buildImage, copyText, clearBuild,
+  buildImage, copyText, clearBuild, isBuildImage,
 } from '~/logic'
 
 const { totalActive } = useStore()

@@ -8,6 +8,44 @@
         <Toggle v-model="filters[2]" label="Sold" />
       </div>
     </div>
+    <div class="flex gap-2 select-none text-sm">
+      <div class="flex gap-1">
+        By name
+        <div
+          class="flex items-center bg-gray-200 dark:bg-gray-700 px-1 rounded cursor-pointer"
+          :class="sortAlpha !== 0 ? 'border border-green-500' : ''"
+          title="Sort by Name"
+          @click="toggleAlpha()"
+        >
+          <fa-solid:sort-alpha-down v-if="sortAlpha === 1" class="inline-block rounded" />
+          <fa-solid:sort-alpha-up v-else class="inline-block rounded" />
+        </div>
+      </div>
+      <div class="flex gap-1">
+        By world
+        <div
+          class="flex items-center bg-gray-200 dark:bg-gray-700 px-1 rounded cursor-pointer"
+          :class="sortAlphaWorld !== 0 ? 'border border-green-500' : ''"
+          title="Sort by World name"
+          @click="toggleAlphaWorld()"
+        >
+          <fa-solid:sort-alpha-down v-if="sortAlpha === 1" class="inline-block rounded" />
+          <fa-solid:sort-alpha-up v-else class="inline-block rounded" />
+        </div>
+      </div>
+      <div class="flex gap-1">
+        By tier
+        <div
+          class="flex items-center bg-gray-200 dark:bg-gray-700 px-1 rounded cursor-pointer"
+          :class="sortRating !== 0 ? 'border border-green-500' : ''"
+          title="Sort by Tier"
+          @click="toggleRating()"
+        >
+          <fa-solid:sort-numeric-down v-if="sortRating === 1" class="inline-block rounded" />
+          <fa-solid:sort-numeric-up v-else class="inline-block rounded" />
+        </div>
+      </div>
+    </div>
     <div
       class="overflow-y-auto min-h-0 scrollbar"
     >
@@ -21,8 +59,8 @@
         :class="orientation ? 'grid-cols-2': 'grid-cols-1'"
       >
         <CompanionCardMini
-          v-for="char in companionsDataFiltered"
-          :key="char.uid"
+          v-for="char, i in companionsDataChunks[currentPage]"
+          :key="char.uid + i"
           :char="char"
           :image="companionImages[char.uid]"
           :perks="companionsPerksList[char.uid] || {}"
@@ -38,6 +76,11 @@
       <div v-if="companionsDataFiltered.length === 0 && companionsData.length" class="text-center">
         No companions matching your <b>filter</b>
       </div>
+      <div v-if="companionsDataChunks.length > 1" class="flex gap-2 justify-between py-2 px-1">
+        <Button v-show="currentPage > 0" label="Previous" size="Small" @click="currentPage -= 1" />
+        <div>Pages {{ currentPage + 1 }} out of {{ companionsDataChunks.length }}</div>
+        <Button v-show="currentPage < companionsDataChunks.length - 1" label="Next" size="Small" @click="currentPage += 1" />
+      </div>
       <div v-if="companionsDataFiltered.length" class="flex gap-2 justify-end mt-2 px-2">
         <Button size="Small" label="Undo All" bg-color="bg-blue-500" @click="undoAll" />
         <Button size="Small" label="Sell All" bg-color="bg-red-500" @click="sellAll" />
@@ -48,9 +91,9 @@
 </template>
 
 <script lang="ts" setup>
-import { find, findIndex, isArray } from 'lodash-es'
+import { find, findIndex, isArray, chunk } from 'lodash-es'
 import { CHAR_COSTS, getAllCharsObject } from '~/data/constants'
-import { lazyLoadImg, orientation, isRetinueEdit, imageLink } from '~/logic'
+import { lazyLoadImg, orientation, isRetinueEdit, imageLink, threeToggle } from '~/logic'
 import { useStore } from '~/store/store'
 import { waifu_perks, DLCwaifu_perks } from '~/data/waifu_perks'
 import { confirmDialog } from '~/logic/dialog'
@@ -62,6 +105,12 @@ const specificPerksWithDLC = waifu_perks.concat(DLCwaifu_perks)
 const waifuList = ref(null)
 const filters = useStorage('companionFilters', [true, true, true])
 
+const sortRating = ref(0)
+const sortAlpha = ref(0)
+const sortAlphaWorld = ref(0)
+
+const currentPage = ref(0)
+
 const companionsData = computed(() => [...companions.value])
 
 const filteredMethods = computed(() => {
@@ -70,11 +119,26 @@ const filteredMethods = computed(() => {
   if (filters.value[1]) methods.push('capture')
   return methods
 })
+
 const companionsDataFiltered = computed(() => companionsData.value.filter((nion) => {
   if (filteredMethods.value.includes(nion.method) && !nion.sold) return true
   if (filters.value[2] && nion.sold) return true
   return false
 }))
+
+const companionsDataSorted = computed(() => {
+  return [...companionsDataFiltered.value].sort((a, b) => sortAlpha.value !== 0
+    ? a.name.localeCompare(b.name) * sortAlpha.value
+    : 0
+|| sortRating.value !== 0
+      ? (a.tier - b.tier) * sortRating.value
+      : 0
+|| sortAlphaWorld.value !== 0
+        ? a.world.localeCompare(b.world) * sortAlphaWorld.value
+        : 0)
+})
+
+const companionsDataChunks = computed(() => chunk(companionsDataSorted.value, 50))
 
 const allCharsObject = ref({})
 getAllCharsObject().then(all => allCharsObject.value = all)
@@ -140,7 +204,7 @@ const companionsPerksList = computed(() => {
   return charTalents
 })
 
-watch([companionsDataFiltered, companionImages], () => {
+watch([companionsDataSorted, companionImages, currentPage], () => {
   lazyLoadImg(waifuList.value)
 }, { flush: 'post' })
 
@@ -191,4 +255,17 @@ function returnAll() {
 function undoAll() {
   companions.value = []
 }
+
+function toggleRating() {
+  sortRating.value = threeToggle(sortRating.value)
+}
+
+function toggleAlpha() {
+  sortAlpha.value = threeToggle(sortAlpha.value)
+}
+
+function toggleAlphaWorld() {
+  sortAlphaWorld.value = threeToggle(sortAlphaWorld.value)
+}
+
 </script>

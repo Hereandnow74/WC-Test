@@ -672,4 +672,17 @@ export const missions = [
     loca: 'BTVS ',
     budget: 0,
   },
+  {
+    loca: 'A song of Ice and Fire',
+    title: 'Hunt the Raven',
+    conditions: [{ value: '' }, { value: '' }],
+    author: 'AnosDT',
+    budget: 140,
+    source: '',
+    desc: 'The Three-Eyed-Raven has noticed your existence and consideres you as a threat to his plans. Your existence prevents him from seeing the future. \nIf you have purchased Trace Defense he will only notice you when you talk about himythe future or otherworldly knowledge in front of a heart tree.\nExtremely unusual behaviour for the world/time can also allow him to notice you.\nBe wary!\n\nHe might bring people against you by manipulating them in their dreams.\nOr outright attack you by warging into animals, people or even your companions.\n\nMission: Find the Three-Eyed Raven beyond the wall and kill him.',
+    image: '',
+    objectives: [],
+    reward: '100 Credits, Added Potential and Template Stacking I of "Warging" and "Greenseeing"',
+    scope: 'Grand',
+  },
 ]

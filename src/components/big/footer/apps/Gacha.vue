@@ -1,6 +1,6 @@
 <template>
   <div class="p-1 flex flex-col gap-2 justify-between items-center h-full overflow-hidden">
-    <div v-if="isTenPull" class="grid grid-cols-5 my-auto gap-0.5 w-full h-full flex-grow">
+    <TransitionGroup v-if="isTenPull" class="grid grid-cols-5 my-auto gap-0.5 w-full h-full flex-grow" name="list" tag="div">
       <GachaCard
         v-for="char, i in chars"
         :key="char.u"
@@ -12,7 +12,7 @@
         class="max-h-[300px] cursor-pointer"
         @click="(companions.splice(companions.length - chars.length + i , 1), chars.splice(i, 1))"
       />
-    </div>
+    </TransitionGroup>
     <GachaCard
       v-else
       class="p-2 max-w-[350px] max-h-[600px] cursor-pointer"
@@ -80,23 +80,20 @@ async function getRandomChar(fixedTier = 0) {
     })
   }
   else { tier = fixedTier }
-  nextTick(() => {
-    const val = CHAR_COSTS[tier + 1] || 0
-    randomChar(true, val, val).then((x) => {
-      chars.value.push(x)
-      isRolling.value = true
-      const sex = (intersection(x.b, ['F', 'M', 'O'])[0] || 'F') as 'F' | 'M' | 'O'
-      companions.value.push({ uid: x.u, name: x.n, world: x.w, sex, tier: x.t, priceTier: 0, method: 'buy' })
-      if (fee.value)
-        fee.value += 3
-      else
-        fee.value = 3
-      setTimeout(() => {
-        isRolling.value = false
-        isRevealing.value = true
-      }, 3000)
-    })
-  })
+  const val = CHAR_COSTS[tier + 1] || 0
+  const x = await randomChar(true, val, val)
+  chars.value.push(x)
+  isRolling.value = true
+  const sex = (intersection(x.b, ['F', 'M', 'O'])[0] || 'F') as 'F' | 'M' | 'O'
+  companions.value.push({ uid: x.u, name: x.n, world: x.w, sex, tier: x.t, priceTier: 0, method: 'buy' })
+  if (fee.value)
+    fee.value += 3
+  else
+    fee.value = 3
+  setTimeout(() => {
+    isRolling.value = false
+    isRevealing.value = true
+  }, 3000)
   return tier
 }
 
@@ -132,34 +129,13 @@ async function tenPull() {
 </script>
 
 <style>
-@keyframes spin {
-  from {
-    -webkit-transform: rotateY(0deg);
-    transform: rotateY(0deg);
-  }
-  to {
-    -webkit-transform: rotateY(360deg);
-    transform: rotateY(360deg);
-  }
-}
-@-webkit-keyframes spin {
-  from {
-    -webkit-transform: rotateY(0deg);
-    transform: rotateY(0deg);
-  }
-  to {
-    -webkit-transform: rotateY(360deg);
-    transform: rotateY(360deg);
-  }
-}
-.animate-spin {
-  -webkit-animation: spin 0.7s linear infinite;
-  animation: spin 0.7s linear infinite;
+.list-move, /* apply transition to moving elements */
+.list-enter-active,
+.list-leave-active {
+  transition: all 0.5s ease;
 }
 
-.card-bg {
-  background: radial-gradient(circle at top left,transparent 9%, #4f46e5 10% ,#4f46e5 15% , transparent 16%) , radial-gradient(circle at bottom left,transparent 9%, #4f46e5 10% ,#4f46e5 15% , transparent 16%), radial-gradient(circle at top right ,transparent 9%, #4f46e5 10% ,#4f46e5 15% , transparent 16%) , radial-gradient(circle at bottom right,transparent 9%, #4f46e5 10% ,#4f46e5 15% , transparent 16%),radial-gradient(circle, transparent 25%, #f9f9ff  26%),linear-gradient(45deg, transparent 46%, #4f46e5 47%, #4f46e5 52%, transparent 53%), linear-gradient(135deg, transparent 46%, #4f46e5 47%, #4f46e5 52%, transparent 53%);
-  background-size: 3em 3em;
-  opacity: 0.45
+.list-leave-active {
+  display: none;
 }
 </style>

@@ -15,11 +15,13 @@ export const [isRetinueEdit, toggleRetinueEdit] = useToggle(false)
 export const [showSettings, toggleShowSettings] = useToggle(false)
 export const [showReport, toggleShowReport] = useToggle(false)
 export const [showSmartMenu, toggleSmartMenu] = useToggle(false)
+export const [showSearchSettings, toggleSearchSetting] = useToggle(false)
 
 export const userCharactersShown = ref(false)
 
 export const showSaveLoad = ref(false)
 export const showShare = ref(false)
+export const isBuildImage = ref(false)
 
 export const promoteShown = useStorage('pr', false)
 

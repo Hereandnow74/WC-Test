@@ -101,6 +101,7 @@ function showTippy() {
 const value = ref('')
 
 watch(value, () => emit('update:modelValue', value.value))
+watch(() => props.modelValue, () => value.value = props.modelValue)
 
 function chooseItem(item: string) {
   value.value = item

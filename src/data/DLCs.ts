@@ -193,25 +193,24 @@ DLCperks.push({
   dlc: 'DLC by Despin',
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'Trajectory. Agreement.',
-  cost: 140,
+  cost: 200,
   desc: `
   <p>You are capable of Unrestricted Multiversal Travel. </p>
   <p>Space and time open before you, allowing travel to anywhere and anywhen. This grants you the ability to transport yourself, others, and objects near you to the location and time of your choice. Planetary range is a trivial effort. You can also access all other worlds, universes, and multiverses at will. The form this travel takes, such as teleportation, portals, or something else, can be chosen by the contractor when this perk is purchased. </p>
   `,
-  whitelist: ['Pursued by a Bear'],
 })
 
-DLCperks.push({
-  uid: 'U9oPG',
-  dlc: 'DLC by Despin',
-  dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
-  title: 'Express Warranty',
-  cost: 1000,
-  desc: `
-  Any retinue member who dies on you will be re-delivered to you in 5 minutes. This perk will not help if you die, even if you took the Substitute or Possess origins.
-  `,
-  whitelist: ['Warranty Plan'],
-})
+// DLCperks.push({
+//   uid: 'U9oPG',
+//   dlc: 'DLC by Despin',
+//   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
+//   title: 'Express Warranty',
+//   cost: 1000,
+//   desc: `
+//   Any retinue member who dies on you will be re-delivered to you in 5 minutes. This perk will not help if you die, even if you took the Substitute or Possess origins.
+//   `,
+//   whitelist: ['Warranty Plan'],
+// })
 
 DLCperks.push({
   uid: 'sEFxf',
@@ -283,6 +282,19 @@ DLCperks.push({
   <p>Future events that may be shown by this perk need to be known by you or you need to have the ability to learn about them.</p>
   <p>This perk will work regardless of an chosen origin and will show the timeline where you or any interference your actions are caused did not exist.</p>
   `,
+})
+
+DLCperks.push({
+  uid: 'opART',
+  dlc: 'DLC by Despin',
+  dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
+  title: 'Amazon-free Warranty',
+  cost: 200,
+  multiple: true,
+  max: 4,
+  desc: `Instead of tracking the Amazon discount in Warranty Plan, you can directly pay for a shorter respawn timer. This perk can be purchased up to 4 times, with each purchase further reducing the respawn time of your subjects. The first purchase of this perk reduces the time to 12 hours, then 1 hour after the second purchase, 5 minutes after the third, and instant after the fourth.
+  `,
+  whitelist: ['Warranty Plan'],
 })
 
 // DLC home perks
@@ -644,6 +656,33 @@ DLCridePerks.push({
   <p>One purchase and under your command now a crew equal to the T3 companions</p>
   `,
   whitelist: ['Catch-A-Ride Crew Production Program'],
+})
+
+DLCridePerks.push({
+  uid: 'qbHdP',
+  dlc: 'DLC by Despin',
+  dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
+  title: 'Catch a Ride Plus',
+  cost: 50,
+  special: 'Applies to all vehicles registered in the Catch a Ride App, up to the size category paid for.',
+  costVariants: [50, 100, 200, 500],
+  desc: `
+  Cost: Small 50, Medium 100, Large 200, Gigantic 500.
+  A contractor generally does not want to deal with vehicle upkeep and supplies. This perk provides unlimited fuel, ammunition, and maintenance to all covered vehicles. Also, a covered vehicle will quickly self-repair, as long as it has not been completely destroyed. 
+  `,
+})
+
+DLCridePerks.push({
+  uid: 'tnzQS',
+  dlc: 'DLC by Despin',
+  dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
+  title: 'Extended Warranty',
+  cost: 100,
+  desc: `
+  Your Warranty now also covers any destroyed vehicles that you have registered in the Catch a Ride App. A destroyed vehicle will be re-delivered to you in 72 hours. If you have the Amazon-free Warranty DLC perk, that respawn timer will be applied to your vehicles as well. Respawned vehicles only come with their normal stores, and do not respawn any other items that were carried. Any subjects that die with a vehicle respawn per Warranty Plan. Any non-retinue fatalities are dead.
+  <p>If one of your vehicles is mission-killed in a way that’s prohibitively difficult to undo (stuck in a black hole and such), an option in the company app will let you destroy it and force a respawn.</p>
+  `,
+  whitelist: ['Warranty Plan'],
 })
 
 export const DLCintensity: DLCPerk[] = []

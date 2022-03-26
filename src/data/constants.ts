@@ -279,18 +279,20 @@ export async function getUserChars(): Promise<DBCharacter[]> {
   return userChars
 }
 
-const allChars = [] as DBCharacter[]
+const allChars = ref<DBCharacter[]>([])
 let running = false
 export const getAllChars = async() => {
-  if (running) return allChars
-  if (!allChars.length) {
+  if (running) return allChars.value
+  if (!allChars.value.length) {
     running = true
-    allChars.push(...(await getChars()), ...(await getUserChars()))
+    allChars.value.push(...(await getChars()), ...(await getUserChars()))
     running = false
   }
 
-  return allChars
+  return allChars.value
 }
+
+getAllChars()
 
 const allCharsObject = {} as Record<number, DBCharacter>
 export const getAllCharsObject = async() => {
@@ -316,6 +318,8 @@ export function useWorlds() {
 }
 
 getWorlds()
+
+export const allCompanionsWorlds = computed(() => Array.from(new Set(allChars.value.map(x => x.w))))
 
 export const allWorlds = computed(() => {
   return Array.prototype.concat(userWorlds.value, localUserWorlds.value, worlds.value, subWorlds.value)

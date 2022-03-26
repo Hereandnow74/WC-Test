@@ -298,17 +298,17 @@ const companionsUIDs = computed(() => companions.value.reduce((a, c) => (a[c.uid
 const underLoan = computed(() => loan.value.owed > 0)
 
 watch(startingWorld, () => {
-  if (startingWorld.value.rating === 11)
-    flags.value.danger11Start = true
-  else
-    flags.value.danger11Start = false
   currentWorld.value = startingWorld.value
 })
 
-watch(jumpChain, () => {
-  if (jumpChain.value.length > 1)
-    fee.value += Math.round(loan.value.owed * 0.1)
-}, { deep: true })
+watch(() => jumpChain.value.length, () => {
+  if (jumpChain.value.length > 1) {
+    if (fee.value)
+      fee.value += Math.round(loan.value.owed * 0.1)
+    else
+      fee.value = Math.round(loan.value.owed * 0.1)
+  }
+})
 
 // watch(budget, () => {
 //   if (csr.value && budget.value < 0) {

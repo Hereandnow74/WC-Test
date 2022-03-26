@@ -1,9 +1,13 @@
 <template>
   <Modal label="Save & Load" class="text-gray-800 dark:text-gray-200 z-40">
-    <div class="dark:bg-black py-4 flex flex-col min-h-0 max-h-[85vh] md:h-3/4">
+    <div class="dark:bg-black py-2 flex flex-col min-h-0 max-h-[85vh] md:h-3/4">
+      <div class="pb-2 px-4 flex gap-2">
+        <Input v-model="filter" placeholder="Filter by name of the save" />
+        <Button size="Small" label="Clear" bg-color="bg-red-500" @click="filter = ''" />
+      </div>
       <div class="flex flex-col gap-2 pb-4 md:px-2 overflow-y-auto">
         <div
-          v-for="save in savesList"
+          v-for="save in sortedSaveList"
           :key="save.worldName"
           class="bg-gray-300 dark:bg-gray-700 rounded-xl p-2 flex gap-1 mx-2 shadow-lg "
           border="1 gray-700 dark:gray-300"
@@ -84,10 +88,15 @@ const loadEl = ref<HTMLElement>(null)
 const showImportDialog = ref(false)
 const buildData = ref('')
 const copySuccess = ref(false)
+const filter = ref('')
 
 const saves = useStorage<Record<number, any>>('saves', {})
 
 const save = getSaveObject()
+
+const sortedSaveList = computed(() => {
+  return [...savesList.value].reverse().filter(x => x.name.toLowerCase().includes(filter.value.toLowerCase()))
+})
 
 function saveBuild() {
   const uid = random(1000000, 9999999)

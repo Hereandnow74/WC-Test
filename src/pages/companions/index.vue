@@ -4,19 +4,25 @@
     <div ref="topElement" class="mb-1 md:mb-2 transition-all" :style="isTopVisible ? '' : `margin-top: -${topHeight + 6}px`">
       <div
         v-if="!loading"
-        class="flex items-center justify-center flex-wrap gap-x-4 gap-y-1"
+        class="flex items-center justify-center flex-wrap gap-x-2 gap-y-1"
       >
         <div class="flex items-center">
           <Input
             v-model="search"
-            placeholder="Name or World"
+            placeholder="Character name"
           />
           <clarity:eraser-solid class="icon-btn w-8" @click="clearAndReset" />
         </div>
-        <Select v-model.number="tier" :options="tierOptions" />
-        <Input v-model.number="limit" class="px-1" :style="`width: ${(''+limit).length + 3}ch`" />
+        <div class="flex items-center">
+          <AnythingInput
+            v-model="worldName"
+            placeholder="World name"
+            :list="[startingWorld.worldName, ...jumpChain.map(x => x.worldName)]"
+          />
+          <clarity:eraser-solid class="icon-btn w-8" @click="clearAndResetWorld" />
+        </div>
         <Button size="Small" label="Tags" bg-color="bg-gray-600 hover:bg-teal-600" @click="toggleShowFilterTags()" />
-        <div class="flex gap-1 border rounded px-1 select-none">
+        <div class="flex gap-1 border border-gray-700 dark:border-gray-500 rounded px-1 select-none">
           <span class="whitespace-nowrap font-bold">Sort By:</span>
           <div
             class="flex items-center bg-gray-200 dark:bg-gray-700 px-1 rounded cursor-pointer"
@@ -112,12 +118,7 @@
             ret
           </div>
         </div>
-        <Checkbox
-          v-if="startingWorld.worldName !== 'Current world'"
-          v-model="isLimited"
-          :label="`Limit to ${currentWorld.worldName}`"
-          class="border rounded px-1 border-gray-300 dark:border-gray-500"
-        />
+        <bi:gear-fill class="icon-btn" @click="toggleSearchSetting" />
         <div class="hidden md:block">
           {{ secondFilter.length }} results
         </div>
@@ -200,6 +201,7 @@
     />
     <Report v-if="showReport" :character="characterToEdit" @click="toggleShowReport()" />
     <Tags v-if="showFilterTags" @click="toggleShowFilterTags()" />
+    <SearchSettings v-if="showSearchSettings" @click="toggleSearchSetting()" />
   </div>
 </template>
 
@@ -208,10 +210,10 @@ import Fuse from 'fuse.js'
 import { intersection, some } from 'lodash-es'
 import { useStore } from '~/store/store'
 
-import { toggleShowAddCharacter, showAddCharacter, toggleShowFilterTags, showFilterTags, tagToggles, userCharactersShown, threeToggle, toggleShowReport, showReport } from '~/logic'
-import Checkbox from '~/components/basic/Checkbox.vue'
+import { toggleShowAddCharacter, showAddCharacter, toggleShowFilterTags, showFilterTags, tagToggles, userCharactersShown, threeToggle, toggleShowReport, showReport, showSearchSettings, toggleSearchSetting } from '~/logic'
 import { getChars, getUserChars, waifuTags } from '~/data/constants'
 import { usePlayStore } from '~/store/play'
+import { useSearchSettings } from '~/logic/searchSettings'
 
 interface Character {
   u: number
@@ -226,13 +228,11 @@ interface Character {
 }
 
 const { localUserCharacters, userCharacters, startingWorld, favorites, settings, companionsUIDs } = useStore()
-const { currentWorld } = usePlayStore()
+const { jumpChain } = usePlayStore()
+const { minTier, maxTier, worldName, blockedWorlds } = useSearchSettings()
 
 const search = ref(' ')
-// const limit = ref(0)
 const position = ref(0)
-const tier = ref(0)
-const isLimited = ref(false)
 
 const gender = ref('')
 const image = ref('')
@@ -289,34 +289,19 @@ const limit = computed(() => {
   return cardRowCount * cardColumnCount.value
 })
 
-const tierOptions = [
-  { label: 'Any', value: 0 },
-  { label: '1', value: 1 },
-  { label: '2', value: 2 },
-  { label: '3', value: 3 },
-  { label: '4', value: 4 },
-  { label: '5', value: 5 },
-  { label: '6', value: 6 },
-  { label: '7', value: 7 },
-  { label: '8', value: 8 },
-  { label: '9', value: 9 },
-  { label: '10', value: 10 },
-  { label: '11', value: 11 },
-]
-
 const options = {
   findAllMatches: true,
   useExtendedSearch: true,
   threshold: 0.4,
   ignoreLocation: true,
-  keys: [{ name: 'n', weight: 1.1 }, 'w', 't', 'b', 'i', 'd', 'in', 'u', 'k'],
+  keys: [{ name: 'n', weight: 1.1 }, 'w', 'b', 'i', 'd', 'in', 'u', 'k'],
 }
 
 const options2 = {
   useExtendedSearch: true,
   findAllMatches: true,
   threshold: 0.4,
-  keys: ['n', 'w', 't', 'b', 'i', 'd', 'in', 'u', 'k'],
+  keys: ['n', 'w', 'b', 'i', 'd', 'in', 'u', 'k'],
   shouldSort: false,
 }
 
@@ -348,30 +333,15 @@ onMounted(async() => {
 
 watch(route, x => search.value = x.query.name as string || '')
 
-const tagsInclude = computed(() => Object.keys(tagToggles).filter(key => tagToggles[key] === 1))
-const tagsExclude = computed(() => Object.keys(tagToggles).filter(key => tagToggles[key] === -1))
-
-const worldNameDict = {
-  'Xenoblade Chronicles 2': '(Monolith) Xeno-',
-  'Xenoblade Chronicles 1': '(Monolith) Xeno-',
-  'Overlord (LN)': 'Overlord',
-  'Avatar: The Last Airbender': 'Avatar',
-  'Avatar: Legend of Korra': 'Avatar',
-  'Game of Thrones': 'A Song Of Ice And Fire',
-  'Monogatari Series': 'Monogatari',
-  'Magi Series': 'Magi',
-  'Tales Series': 'Tales of',
-  'Prisma Illya': 'Nasuverse',
-  'Fate/Extra': 'Nasuverse',
-  'Precure': 'Pretty Cure',
-} as Record<string, string>
+type tagKeys = keyof typeof waifuTags
+const tagsInclude = computed(() => Object.keys(tagToggles).filter(key => tagToggles[key] === 1) as tagKeys[])
+const tagsExclude = computed(() => Object.keys(tagToggles).filter(key => tagToggles[key] === -1) as tagKeys[])
 
 const filteredCharacters = computed(() => {
   const sr = search.value || '!^xxx'
-  const worldName = worldNameDict[currentWorld.value.worldName] || currentWorld.value.worldName || worldNameDict[startingWorld.value.worldName] || startingWorld.value.worldName
   const sopt: any = {
     $and: [
-      { t: tier.value !== 0 ? `=${tier.value}` : '!z' },
+      { n: sr },
     ],
   }
   switch (true) {
@@ -392,25 +362,25 @@ const filteredCharacters = computed(() => {
       sopt.$and.push({ d: sr.slice(1) })
       break
     // Search by name with locked world
-    case isLimited.value:
+    case !!worldName.value:
       sopt.$and.push(
         { n: sr },
         {
           $or: [
-            { w: `^"${worldName}"` }, { d: `^"${worldName}"` },
+            { w: `^"${worldName.value}"` }, { d: `^"${worldName.value}"` },
           ],
         },
       )
       break
     // Search by World or Name or Subworld
-    case !isLimited.value:
-      sopt.$and.push(
-        {
-          $or: [
-            { w: sr }, { n: sr }, { d: sr }],
-        },
-      )
-      break
+    // case !worldName.value:
+    //   sopt.$and.push(
+    //     {
+    //       $or: [
+    //         { w: sr }, { n: sr }, { d: sr }],
+    //     },
+    //   )
+    //   break
   }
   if (gender.value) sopt.$and.push({ b: `=${gender.value}` })
 
@@ -426,12 +396,10 @@ const filteredCharacters = computed(() => {
 
 const secondFilter = computed(() => {
   return filteredCharacters.value.filter((x) => {
-    if (x.item.b) {
-      return intersection(x.item.b, tagsInclude.value).length === tagsInclude.value.length
+    return intersection(x.item.b, tagsInclude.value).length === tagsInclude.value.length
         && !some(x.item.b, x => tagsExclude.value.includes(x))
-    }
-    if (tagsInclude.value.length) return false
-    return true
+        && x.item.t >= minTier.value && x.item.t <= maxTier.value
+        && !blockedWorlds.value.includes(x.item.w)
   })
 })
 
@@ -499,7 +467,7 @@ function visibilityChanged(entries: IntersectionObserverEntry[]) {
 
 const topPosition = computed(() => position.value / cardRowCount * ((firstCard.value?.clientHeight || 0) || 500))
 
-const allUserCharacters = computed(() => userCharacters.value.concat(localUserCharacters.value).filter(x => isLimited.value ? x.world === (worldNameDict[currentWorld.value.worldName] || currentWorld.value.worldName || worldNameDict[startingWorld.value.worldName] || startingWorld.value.worldName) : true))
+const allUserCharacters = computed(() => userCharacters.value.concat(localUserCharacters.value).filter(x => worldName.value ? x.world === worldName.value : true))
 
 function editCompanion(char: any) {
   characterToEdit.value = char
@@ -523,6 +491,17 @@ function toggleAlpha() {
 function clearAndReset() {
   search.value = ''
   position.value = 0
+  minTier.value = 1
+  maxTier.value = 11
+  if (companionsList.value)
+    companionsList.value.scrollTop = 0
+}
+
+function clearAndResetWorld() {
+  worldName.value = ''
+  position.value = 0
+  minTier.value = 1
+  maxTier.value = 11
   if (companionsList.value)
     companionsList.value.scrollTop = 0
 }

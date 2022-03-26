@@ -1,5 +1,5 @@
 <template>
-  <div id="build" class="hidden mt-18 top-0 left-36 absolute w-[800px] flex flex-col gap-2 bg-gray-800 text-gray-200 p-1 border border-orange-500">
+  <div id="build" class="mt-18 top-0 left-36 absolute w-[800px] flex flex-col gap-2 bg-gray-800 text-gray-200 p-1 border border-orange-500">
     <div class="grid grid-cols-2 gap-1">
       <div class="text-gray-200">
         <h3 class="text-lg relative text-gray-400">
@@ -210,8 +210,10 @@
 
 <script lang="ts" setup>
 import { DBCharacter } from 'global'
+import html2canvas from 'html2canvas'
 import { getAllCharsObject } from '~/data/constants'
-import { imageLink } from '~/logic'
+import { imageLink, isBuildImage } from '~/logic'
+import { confirmDialog } from '~/logic/dialog'
 import { useChallenges } from '~/store/challenges'
 import { useStore } from '~/store/store'
 
@@ -258,4 +260,25 @@ const companionImages = computed(() => {
   localUserCharacters.value.forEach(char => res[char.uid] = char.image)
   return res
 })
+
+watch(companionImages, () => {
+  // const onclone = (doc, el) => {
+  //   const images = el.getElementsByTagName('img')
+  //   for (let i = 0; i < images.length; i++)
+  //     images[i].src = images[i].dataset.src || ''
+  // }
+  const buildEl = document.getElementById('build')
+  if (buildEl) {
+    html2canvas(buildEl, { imageTimeout: 15000, useCORS: true }).then((canvas) => {
+      canvas.toBlob((blob) => {
+        if (blob) {
+          const item = new ClipboardItem({ 'image/png': blob })
+          navigator.clipboard.write([item])
+          confirmDialog('Image successfully copied to clipboard', 'info')
+        }
+      })
+    })
+  }
+  isBuildImage.value = false
+}, { flush: 'post' })
 </script>
