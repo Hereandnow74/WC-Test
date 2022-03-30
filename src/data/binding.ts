@@ -164,7 +164,7 @@ bindings.push({
   whitelist: ['Tempest Jewelry'],
   desc: `
 <p>Tempest items can now adjust their appearance to better match the rest of the wearer’s clothing. Anyone attempting to remove one, other than you and retinue members you order to do so, will fail to do so, then miss the fact that it’s still there afterwards. This applies to both used and unused chokers (bracelets, anklets).</p>
-<p>With unused chokers (bracelets, anklets) only, you may reverse this effect and make the item unusually interesting to potential targets. This applies to all potential targets who see it in person and may spark fights over the item. When a potential target touches the item, they will be overcome with an urge to wear it. This effect lasts 48 hours or until the item is worn, whichever comes first. It becomes stronger on increasingly higher-tiered targets than lower tiers. but has no noticeable effect on Tier 11s. This effect may only be applied to one item at a time. Potential targets affected by this attractor, who fail to wear the specific choker themselves, will remain affected after it finds a wearer and transfer their desire to future chokers (with this effect active) they see without any cognitive dissonance.</p>`,
+<p>With unused chokers (bracelets, anklets) only, you may reverse this effect and make the item unusually interesting to potential targets. This applies to all potential targets who see it in person and may spark fights over the item. When a potential target touches the item, they will be overcome with an urge to wear it. This effect lasts 48 hours or until the item is worn, whichever comes first. It becomes stronger on increasingly higher-tiered targets than lower tiers, but has no noticeable effect on Tier 11s. This effect may only be applied to one item at a time. Potential targets affected by this attractor, who fail to wear the specific choker themselves, will remain affected after it finds a wearer and transfer their desire to future chokers (with this effect active) they see without any cognitive dissonance.</p>`,
 })
 
 bindings.push({
@@ -784,6 +784,7 @@ lureExpansions.push({
   title: 'Alluring Whisper: Dirty Minds',
   image: 'https://i.ibb.co/10psjZ7/Alluring-Whisper-Dirty-Minds.jpg',
   cost: 20,
+  costVariants: [20, 30],
   whitelist: ['Alluring Whisper'],
   desc: `
   <p>That’s not what you said…? When speaking in person to someone you find sexually appealing, they may miss your actual words entirely, hear lewd suggestions instead, and then agree to them. These suggestions will never be activities that you or the target would never do or would interfere with either of your professional duties. Other individuals present may hear either a normal conversation or the same suggestions as the target, only, but not always, hearing the latter if they’re a valid target as well. This perk is a psychic effect and can be resisted by skilled psychics or sufficient density. Targets with crippling self-image issues or sufficient purity will still be affected, but the full impact will only be felt with repeat applications as they rationalize the actions they took while under the influence.</p>

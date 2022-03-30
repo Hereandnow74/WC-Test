@@ -34,7 +34,10 @@
     </div>
     <div>
       <slot name="beforeDesc" />
-      <Desc :desc="perk.desc" />
+      <Desc v-if="(!settings.hideDesc && !collapsedDescsSet.has(perk.uid)) || expand" :desc="perk.desc" />
+      <div v-else class="text-center hover:underline cursor-pointer text-gray-700 dark:text-gray-300 flex items-center justify-center" @click.stop="expand = true">
+        Expand description <entypo:triangle-down />
+      </div>
       <slot name="underDesc" />
     </div>
     <div v-if="perk.requires" class="mx-2">
@@ -46,6 +49,7 @@
       </span>
       <Enum :list="perk.whitelist" />
     </div>
+    <bi:arrows-collapse class="absolute z-10 top-1 left-1 w-4 h-4 hover:text-lime-500" @click.stop="collapse" />
   </div>
 </template>
 
@@ -68,9 +72,11 @@ const props = defineProps({
   },
 })
 
+const expand = ref(false)
+
 const emit = defineEmits(['pickPerk'])
 const perkImg = ref<HTMLImageElement | null>(null)
-const { settings } = useStore()
+const { settings, collapsedDescs, collapsedDescsSet } = useStore()
 
 const perkToSave = reactive({
   title: props.perk.title,
@@ -90,4 +96,15 @@ function sendPerk() {
 
 onMounted(() => { if (perkImg.value) lazyLoadSingleImg(perkImg.value) })
 watch(settings.value, () => { if (perkImg.value) lazyLoadSingleImg(perkImg.value) }, { flush: 'post' })
+
+function collapse() {
+  if (expand.value) {
+    expand.value = false
+    return
+  }
+  if (collapsedDescsSet.value.has(props.perk.uid))
+    collapsedDescs.value.splice(collapsedDescs.value.indexOf(props.perk.uid), 1)
+  else
+    collapsedDescs.value.push(props.perk.uid)
+}
 </script>

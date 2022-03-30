@@ -30,6 +30,10 @@
           <div>Turn on the ability to free retinue members</div>
           <Toggle v-model="settings.ableSell" />
         </div>
+        <div class="flex justify-between gap-4 border-b border-gray-500">
+          <div>Hide descriptions for perks by default</div>
+          <Toggle v-model="settings.hideDesc" />
+        </div>
       </div>
       <h3 class="text-lg">
         Turn off DLC's

@@ -42,6 +42,23 @@
             <fa-solid:sort-numeric-down v-if="sortRating === 1" class="inline-block rounded" />
             <fa-solid:sort-numeric-up v-else class="inline-block rounded" />
           </div>
+          <div
+            class="flex items-center bg-gray-200 dark:bg-gray-700 px-1 rounded cursor-pointer"
+            :class="sortWorld !== 0 ? 'border border-green-500' : ''"
+            title="Sort by World name"
+            @click="toggleWorld()"
+          >
+            <fa-solid:sort-alpha-down v-if="sortWorld === 1" class="inline-block rounded" />
+            <fa-solid:sort-alpha-up v-else class="inline-block rounded" />
+          </div>
+          <div
+            class="flex items-center bg-gray-200 dark:bg-gray-700 px-0.5 rounded cursor-pointer"
+            :class="shuffleOn ? 'border border-green-500' : ''"
+            title="Shuffle"
+            @click="shuffleOn = !shuffleOn"
+          >
+            <fad:shuffle class="inline-block rounded" />
+          </div>
         </div>
         <div class="flex rounded bg-gray-600 cursor-pointer">
           <div
@@ -207,25 +224,14 @@
 
 <script lang="ts" setup>
 import Fuse from 'fuse.js'
-import { intersection, some } from 'lodash-es'
+import { every, intersection, some, shuffle } from 'lodash-es'
+import { DBCharacter } from 'global'
 import { useStore } from '~/store/store'
 
 import { toggleShowAddCharacter, showAddCharacter, toggleShowFilterTags, showFilterTags, tagToggles, userCharactersShown, threeToggle, toggleShowReport, showReport, showSearchSettings, toggleSearchSetting } from '~/logic'
 import { getChars, getUserChars, waifuTags } from '~/data/constants'
 import { usePlayStore } from '~/store/play'
 import { useSearchSettings } from '~/logic/searchSettings'
-
-interface Character {
-  u: number
-  n: string
-  t: number
-  i?: string
-  in?: string
-  s?: string
-  w?: string
-  d?: string
-  b?: string[]
-}
 
 const { localUserCharacters, userCharacters, startingWorld, favorites, settings, companionsUIDs } = useStore()
 const { jumpChain } = usePlayStore()
@@ -242,11 +248,13 @@ const retinue = ref(false)
 
 const sortAlpha = ref(0)
 const sortRating = ref(0)
+const sortWorld = ref(0)
+const shuffleOn = ref(false)
 
 // const characters = ref({})
 const loading = ref(true)
 
-const charArr = ref([] as Character[])
+const charArr = ref([] as DBCharacter[])
 
 const editMode = ref(false)
 const characterToEdit = ref({})
@@ -322,7 +330,6 @@ onMounted(async() => {
   })
   const oldChars = await getChars()
   charArr.value = Array.prototype.concat(userChars, oldChars)
-
   fuse.setCollection(charArr.value)
   fuseNoSort.setCollection(charArr.value)
   loading.value = false
@@ -336,6 +343,37 @@ watch(route, x => search.value = x.query.name as string || '')
 type tagKeys = keyof typeof waifuTags
 const tagsInclude = computed(() => Object.keys(tagToggles).filter(key => tagToggles[key] === 1) as tagKeys[])
 const tagsExclude = computed(() => Object.keys(tagToggles).filter(key => tagToggles[key] === -1) as tagKeys[])
+
+const blockedSet = computed(() => new Set(blockedWorlds.value))
+
+const secondFilter = computed(() => {
+  const tagsI = (x: DBCharacter) => intersection(x.b, tagsInclude.value).length === tagsInclude.value.length
+  const tagsE = (x: DBCharacter) => !some(x.b, x => tagsExclude.value.includes(x))
+  const tier = (x: DBCharacter) => x.t >= minTier.value && x.t <= maxTier.value
+  const blocked = (x: DBCharacter) => !blockedSet.value.has(x.w)
+
+  const allFilters = [] as ((arg0: DBCharacter) => boolean)[]
+
+  if (tagsInclude.value.length)
+    allFilters.push(tagsI)
+  if (tagsExclude.value.length)
+    allFilters.push(tagsE)
+  if (minTier.value !== 1 || maxTier.value !== 11)
+    allFilters.push(tier)
+  if (blockedSet.value.size)
+    allFilters.push(blocked)
+
+  return allFilters.length
+    ? charArr.value.filter((x) => {
+      return every(allFilters, val => val(x))
+    })
+    : charArr.value
+})
+
+watch([secondFilter, charArr], () => {
+  fuse.setCollection(secondFilter.value)
+  fuseNoSort.setCollection(secondFilter.value)
+})
 
 const filteredCharacters = computed(() => {
   const sr = search.value || '!^xxx'
@@ -394,26 +432,25 @@ const filteredCharacters = computed(() => {
   return fuse.search(sopt)
 })
 
-const secondFilter = computed(() => {
-  return filteredCharacters.value.filter((x) => {
-    return intersection(x.item.b, tagsInclude.value).length === tagsInclude.value.length
-        && !some(x.item.b, x => tagsExclude.value.includes(x))
-        && x.item.t >= minTier.value && x.item.t <= maxTier.value
-        && !blockedWorlds.value.includes(x.item.w)
-  })
-})
-
-const sortingFunc = (a: any, b: any) => (sortRating.value !== 0 ? (a.item.t - b.item.t) * sortRating.value : 0) || (sortAlpha.value !== 0 ? a.item.n.localeCompare(b.item.n) * sortAlpha.value : 0)
+const sortingFunc = (a: any, b: any) =>
+  (sortRating.value !== 0 ? (a.item.t - b.item.t) * sortRating.value : 0)
+|| (sortWorld.value !== 0 ? a.item.w.localeCompare(b.item.w) * sortWorld.value : 0)
+|| (sortAlpha.value !== 0 ? a.item.n.localeCompare(b.item.n) * sortAlpha.value : 0)
 
 const sortedResults = computed(() => {
-  return (sortRating.value || sortAlpha.value) ? [...secondFilter.value].sort(sortingFunc) : secondFilter.value
+  if (shuffleOn.value)
+    return shuffle(filteredCharacters.value)
+  if (sortRating.value || sortAlpha.value || sortWorld.value)
+    return [...filteredCharacters.value].sort(sortingFunc)
+  return filteredCharacters.value
 })
 
 const slicedChars = computed(() => {
   // const groupped = groupBy(filteredCharacters.value, (n) => { return n.item.u })
   // const result = uniq(flatten(filter(groupped, (n) => { return n.length > 1 })))
   // return result.slice(limit.value > 100 ? limit.value - 100 : 0, limit.value)
-  return sortedResults.value.slice(position.value, position.value + limit.value)
+  const slice = sortedResults.value.slice(position.value, position.value + limit.value)
+  return slice
 })
 
 watch(sortedResults, () => {
@@ -486,6 +523,10 @@ function toggleRating() {
 
 function toggleAlpha() {
   sortAlpha.value = threeToggle(sortAlpha.value)
+}
+
+function toggleWorld() {
+  sortWorld.value = threeToggle(sortWorld.value)
 }
 
 function clearAndReset() {

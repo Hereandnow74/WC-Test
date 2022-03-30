@@ -161,6 +161,7 @@ swapPower[startingOrigin.value.character || 'You'] = { name: '', tier: startingO
 
 props.savedPerk?.complex?.forEach((x) => {
   swapPower[x.target].name = x.flavor
+  swapPower[x.target].swap = x.newTier || 0
 })
 
 const showBuyPerk = ref(false)
@@ -187,9 +188,9 @@ function sendPerk() {
   }
 
   obj.complex = Object.entries(swapPower).filter(x => x[1].swap !== 0).reduce((a, x) => {
-    a.push({ target: x[0], flavor: x[1].name })
+    a.push({ target: x[0], flavor: x[1].name, newTier: x[1].swap })
     return a
-  }, [] as {target: string; flavor: string}[])
+  }, [] as {target: string; flavor: string; newTier: number}[])
 
   obj.count = obj.complex.length
   obj.cost = displayedCost.value

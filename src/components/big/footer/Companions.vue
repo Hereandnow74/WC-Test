@@ -12,7 +12,7 @@
       <div class="flex gap-1">
         By name
         <div
-          class="flex items-center bg-gray-200 dark:bg-gray-700 px-1 rounded cursor-pointer"
+          class="flex items-center bg-gray-700 px-1 rounded cursor-pointer"
           :class="sortAlpha !== 0 ? 'border border-green-500' : ''"
           title="Sort by Name"
           @click="toggleAlpha()"
@@ -24,7 +24,7 @@
       <div class="flex gap-1">
         By world
         <div
-          class="flex items-center bg-gray-200 dark:bg-gray-700 px-1 rounded cursor-pointer"
+          class="flex items-center bg-gray-700 px-1 rounded cursor-pointer"
           :class="sortAlphaWorld !== 0 ? 'border border-green-500' : ''"
           title="Sort by World name"
           @click="toggleAlphaWorld()"

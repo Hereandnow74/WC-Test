@@ -331,7 +331,11 @@ const settings = useStorage('settings', {
   columns: 'auto' as number | 'auto',
   allImg: false,
   ableSell: true,
+  hideDesc: false,
 })
+
+const collapsedDescs = useStorage('collapsedDescs', [])
+const collapsedDescsSet = computed(() => new Set(collapsedDescs.value))
 
 export const appName = ref('')
 
@@ -408,5 +412,7 @@ export function useStore() {
     companionsWithoutSold,
     specificMods,
     patron,
+    collapsedDescs,
+    collapsedDescsSet,
   }
 }

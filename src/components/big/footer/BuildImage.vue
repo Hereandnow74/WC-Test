@@ -261,7 +261,7 @@ const companionImages = computed(() => {
   return res
 })
 
-watch(companionImages, () => {
+function createImage() {
   // const onclone = (doc, el) => {
   //   const images = el.getElementsByTagName('img')
   //   for (let i = 0; i < images.length; i++)
@@ -280,5 +280,15 @@ watch(companionImages, () => {
     })
   }
   isBuildImage.value = false
+}
+
+watch(companionImages, () => {
+  createImage()
 }, { flush: 'post' })
+
+onMounted(() => {
+  if (companions.value.length === 0)
+    createImage()
+})
+
 </script>

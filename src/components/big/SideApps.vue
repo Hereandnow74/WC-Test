@@ -19,13 +19,14 @@
         <div>A single Binding-type control (the basic binding only) - <Valid :condition="singleBinding" /></div>
         <div>As many official Lures as desired - the basic Lures only - <Valid :condition="simpleLures" /></div>
         <div>All official Basic Talents and both purchases of all official Defenses - <Valid :condition="basicTalents" /></div>
-        <div>A 400-credit budget for your Heritage. [{{ heritageCost }}] - <Valid :condition="heritageLimit" /></div>
-        <div>A 545-credit budget for Catch-a-Ride. [{{ ridePerksCost }}] - <Valid :condition="rideLimit" /></div>
-        <div>A 500-credit budget for Demiplanes & Dungeons. [{{ homePerksCost }}] - <Valid :condition="homeLimit" /></div>
+        <div>A 400-credit budget for your Heritage. [<span class="text-red-500">{{ heritageCost }}</span>] - <Valid :condition="heritageLimit" /></div>
+        <div>A 545-credit budget for Catch-a-Ride. [<span class="text-red-500">{{ ridePerksCost }}</span>] - <Valid :condition="rideLimit" /></div>
+        <div>A 500-credit budget for Demiplanes & Dungeons. [<span class="text-red-500">{{ homePerksCost }}</span>] - <Valid :condition="homeLimit" /></div>
         <div>
-          A single 600-credit budget for all other official perks found in this catalog. - [{{ miscPerksCost + waifuPerksCost + genericWaifuPerksCost }}]
+          A single 600-credit budget for all other official perks found in this catalog. - [<span class="text-red-500">{{ otherCost }}</span>]
           <Valid :condition="otherLimit" />
         </div>
+        <div>Leftover credits (will became available after 168 hours): <span class="text-amber-500">{{ leftovers }}</span></div>
       </div>
       <div
         v-else
@@ -47,12 +48,12 @@ import { useStore } from '~/store/store'
 
 const {
   flags, heritageCost, ridePerksCost, homePerksCost, miscPerksCost, waifuPerksCost,
-  genericWaifuPerksCost, companions, startingOrigin, binding, luresBought, talentPerks,
+  genericWaifuPerksCost, companions, startingOrigin, binding, luresBought, talentPerks, bindingCost,
 } = useStore()
 
 const tier11Companion = computed(() => companions.value.length === 1 && companions.value[0].tier === 11)
 const originT6 = computed(() => startingOrigin.value.title.length > 0 && (!startingOrigin.value.tier || startingOrigin.value.tier < 7))
-const singleBinding = computed(() => binding.value.length === 1)
+const singleBinding = computed(() => binding.value.length >= 1)
 
 const simpleLures = computed(() => luresBought.value.filter(x => x.title.includes(':')).length === 0)
 const basicTalents = computed(() => talentPerks.value.filter(x => x.title.includes('Advanced') || x.complex).length === 0)
@@ -60,10 +61,13 @@ const basicTalents = computed(() => talentPerks.value.filter(x => x.title.includ
 const heritageLimit = computed(() => heritageCost.value <= 400)
 const rideLimit = computed(() => ridePerksCost.value <= 545)
 const homeLimit = computed(() => homePerksCost.value <= 500)
-const otherLimit = computed(() => miscPerksCost.value + waifuPerksCost.value + genericWaifuPerksCost.value <= 600)
+const otherCost = computed(() => miscPerksCost.value + waifuPerksCost.value + genericWaifuPerksCost.value + bindingCost.value - (binding.value[0].cost || 0))
+const otherLimit = computed(() => otherCost.value <= 600)
 
 const allConditions = computed(() => tier11Companion.value && originT6.value && simpleLures.value
  && basicTalents.value && heritageLimit.value && rideLimit.value && homeLimit.value && otherLimit.value)
+
+const leftovers = computed(() => 400 + 545 + 500 + 600 - heritageCost.value - ridePerksCost.value - homePerksCost.value - otherCost.value)
 
 const showDanger11 = ref(false)
 </script>

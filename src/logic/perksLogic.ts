@@ -193,31 +193,30 @@ export function chooseBinding(bin: Binding, saveData: Perk) {
 }
 
 export function bindingAvailable(bin: Binding): boolean {
-  if (flags.value.noBindings) {
-    if (bin.whitelist) return false
+  if (flags.value.noBindings && !bin.whitelist) {
     return true
   }
   else {
+    if (!bin.whitelist)
+      return true
     if (bin.blacklist && findIndex(binding.value, { title: bin.blacklist[0] }) !== -1)
       return false
     if (!bin.whitelist && findIndex(binding.value, { title: 'Additional Binding' }) !== -1)
       return true
     if (bin.whitelist && intersection(allEffects.value, bin.whitelist).length === (bin.needed || bin.whitelist.length))
       return true
-    if (findIndex(binding.value, { title: bin.title }) !== -1)
-      return true
   }
   return false
 }
 
 // Lures
-export function chooseLure(lure: Binding) {
+export function chooseLure(lure: Binding, saveData: Perk) {
   const { allEffects } = useStore()
   if (lureAvailable(lure)) {
     const ind = findIndex(luresBought.value, { title: lure.title })
     if (ind === -1) {
       allEffects.value.push(lure.title)
-      luresBought.value.push({ title: lure.title, cost: lure.cost })
+      luresBought.value.push({ title: lure.title, cost: saveData.cost })
       if (lure.freebies) addFreebies(lure.freebies)
     }
     else {

@@ -168,6 +168,10 @@ export const waifuTags = {
   cc: { tag: 'Crafter', short: 'cc', effect: '', desc: 'Any producing profession blacksmith/alchemist/artificer/tailor/etc.', color: 'bg-teal-500 text-black' },
   mm: { tag: 'Magical Girl', short: 'mm', effect: '', desc: '', color: 'bg-teal-500 text-black' },
   al: { tag: 'Alien', short: 'al', effect: '', desc: '', color: 'bg-teal-500 text-black' },
+  mg: { tag: 'Monster-girl', short: 'mg', effect: '', desc: '', color: 'bg-teal-500 text-black' },
+  nd: { tag: 'Nerd', short: 'nd', effect: '', desc: '', color: 'bg-teal-500 text-black' },
+  ar: { tag: 'Artist', short: 'ar', effect: '', desc: 'Any artistic talent', color: 'bg-teal-500 text-black' },
+  sa: { tag: 'Strategist', short: 'sa', effect: '', desc: '', color: 'bg-teal-500 text-black' },
 
   U: { tag: 'By User', short: 'U', effect: '', desc: 'Characters that were added to Interactive by users, applied automatically to all submitted characters', color: 'bg-warm-gray-600' },
 } as const

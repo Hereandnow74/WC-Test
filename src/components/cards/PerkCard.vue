@@ -1,6 +1,6 @@
 <template>
   <div
-    class="sm:p-2 mb-2 column-block cursor-pointer max-w-[600px]"
+    class="sm:p-2 mb-2 column-block cursor-pointer max-w-[600px] relative"
     @click="sendPerk"
   >
     <img
@@ -67,28 +67,32 @@
     </div>
     <div>
       <Desc
-        v-if="perk.additionalDesc"
+        v-if="perk.additionalDesc && !settings.hideDesc"
         :desc="perk.additionalDesc"
         class="bg-amber-200 text-gray-800 text-sm md:text-base w-3/5 float-right mt-8 mx-2 border-3 border-gray-900"
       />
       <Table
-        v-if="perk.table"
+        v-if="perk.table && !settings.hideDesc"
         :headers="perk.table[0]"
         :rows="perk.table.slice(1)"
         class="sm:float-right sm:mt-4"
       />
-      <Desc :desc="perk.desc" />
+      <Desc v-if="(!settings.hideDesc && !collapsedDescsSet.has(perk.uid)) || expand" :desc="perk.desc" />
+      <div v-else class="text-center hover:underline cursor-pointer text-gray-700 dark:text-gray-300 flex items-center justify-center" @click.stop="expand = true">
+        Expand description <entypo:triangle-down />
+      </div>
       <slot name="underDesc" />
     </div>
     <div v-if="perk.requires" class="mx-2">
       Require: <span class="text-orange-500 dark:text-orange-300">{{ perk.requires }}</span>
     </div>
-    <div v-if="perk.whitelist" class=" mx-2">
+    <div v-if="perk.whitelist" class="mx-2">
       <span class="whitespace-nowrap float-left mr-2">
         {{ 'Require ' + (perk.whitelist.length > 1 ? (perk.needed || ' all')+' of' : '') }}:
       </span>
       <Enum :list="perk.whitelist" />
     </div>
+    <bi:arrows-collapse class="absolute top-1 left-1 w-4 h-4 hover:text-lime-500" @click.stop="collapse" />
   </div>
 </template>
 
@@ -128,9 +132,11 @@ const props = defineProps({
   },
 })
 
+const expand = ref(false)
+
 const emit = defineEmits(['pickPerk'])
 
-const { targetList, settings } = useStore()
+const { targetList, settings, collapsedDescs, collapsedDescsSet } = useStore()
 const cost = ref(props.perk.cost)
 const perkImg = ref<HTMLImageElement | null>(null)
 // const count = ref(props.savedPerk.count - (props.savedPerk?.target?.length || 0) - (props.savedPerk?.anything?.length) || 0)
@@ -205,4 +211,15 @@ const perkExist = computed(() => {
 onMounted(() => { if (perkImg.value) lazyLoadSingleImg(perkImg.value) })
 watch(settings.value, () => { if (perkImg.value) lazyLoadSingleImg(perkImg.value) }, { flush: 'post' })
 // watch(() => perkToSave.cost, sendPerk)
+
+function collapse() {
+  if (expand.value) {
+    expand.value = false
+    return
+  }
+  if (collapsedDescsSet.value.has(props.perk.uid))
+    collapsedDescs.value.splice(collapsedDescs.value.indexOf(props.perk.uid), 1)
+  else
+    collapsedDescs.value.push(props.perk.uid)
+}
 </script>

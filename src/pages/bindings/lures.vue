@@ -22,7 +22,7 @@
     </h3>
     <Desc :desc="lureExpansionDesc" class="bg-gray-200 dark:bg-gray-600 max-w-screen-md my-4 mx-auto" />
     <div
-      class="column-gap"
+      class="column-gap pb-8"
       :class="settings.columns !== 'auto' ? `column-count-${settings.columns}` : 'md:column-count-2 xl:column-count-3 4xl:column-count-4 5xl:column-count-5'"
     >
       <PerkCard

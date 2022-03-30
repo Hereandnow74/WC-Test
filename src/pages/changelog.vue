@@ -5,6 +5,19 @@
     </h2>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
+        30 March 2022
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>~125 new user submitted characters</li>
+        <li>10 new user submitted worlds</li>
+        <li>Sort characters by World, Shuffle characters</li>
+        <li>You can now collapse description of perks individually and there is a global option in settings</li>
+        <li>9 new Perk images provided by KatzSmile</li>
+        <li>Bugfixes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
         26 March 2022
       </h3>
       <ul class="list-decimal list-inside">

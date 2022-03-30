@@ -98,7 +98,7 @@ function showTippy() {
   }
 }
 
-const value = ref('')
+const value = ref(props.modelValue)
 
 watch(value, () => emit('update:modelValue', value.value))
 watch(() => props.modelValue, () => value.value = props.modelValue)
