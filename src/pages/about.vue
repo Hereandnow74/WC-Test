@@ -70,14 +70,15 @@ import { getUserChars } from '~/data/constants'
 const topUsers = ref<[string, number][]>([])
 
 const nicknames = [
+  'Definitely not Dio',
   'Templar9999',
   'Despin',
   'BenFang322',
   'Cyrus',
-  'KatzSmile',
-  'Bryce C.',
   'Darin E.',
   'Alex W.',
+  'KatzSmile',
+  'Bryce C.',
   'TaiGambol',
   'Cole',
 ]

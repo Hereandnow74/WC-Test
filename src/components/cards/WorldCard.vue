@@ -14,8 +14,9 @@
         :alt="world.worldName"
       >
     </div>
-    <h3 class="text-xl text-center bg-black bg-opacity-10 flex items-center px-2">
-      <span class="font-semibold">{{ world.worldName }}</span>
+    <h3 class="text-xl text-center bg-black bg-opacity-20 flex items-center px-2">
+      <span class="font-semibold cursor-help" :title="types[type].title || ''" :class="types[type].color || 'text-gray-100'">{{ world.worldName }}</span>
+      <!-- <span class="pl-2">[<span class="text-gray-300 whitespace-nowrap">By User</span>]</span> -->
       <bx:bxs-edit class="ml-auto hover:text-yellow-600" @click.stop="$emit('editWorld', world)" />
       <fluent:delete-20-filled v-if="isUserWorld" class="hover:text-red-500 ml-2" @click.stop="deleteWorld" />
     </h3>
@@ -75,7 +76,26 @@ const props = defineProps({
     type: Boolean,
     default: true,
   },
+  type: {
+    type: String as PropType<'canon' | 'user'>,
+    default: 'canon',
+  },
 })
+
+const types = {
+  canon: {
+    color: 'text-yellow-300',
+    title: 'World is from official spreadsheet',
+  },
+  user: {
+    color: 'text-gray-200',
+    title: 'World was added by user',
+  },
+  local: {
+    color: 'text-blue-200',
+    title: 'The world that you added locally',
+  },
+}
 
 defineEmits(['editWorld'])
 

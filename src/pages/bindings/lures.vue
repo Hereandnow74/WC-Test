@@ -9,6 +9,7 @@
         v-for="lr in luresDLC"
         :key="lr.title"
         :perk="lr"
+        :saved-perk="allLures[lr.title]"
         :bg="lureAvailable(lr) ? 'pink-100 dark:pink-900 hover:(pink-200 dark:rose-800)'
           : 'gray-200 dark:gray-600'"
         :is-active="!!allLures[lr.title]"

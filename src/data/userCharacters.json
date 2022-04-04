@@ -141,28 +141,6 @@
     ]
   },
   {
-    "u": 8303347,
-    "n": "Julia Jacoby",
-    "t": 5,
-    "i": "https://i.imgur.com/HQIMuVol.png",
-    "s": "https://ddx5i92cqts4o.cloudfront.net/images/1e91qfk0t_julia_jacoby.jpg",
-    "w": "Exalted Versus the World of Darkness",
-    "b": [
-      "F"
-    ]
-  },
-  {
-    "u": 9569598,
-    "n": "Rei Maxwell",
-    "t": 4,
-    "i": "https://i.imgur.com/yyCqjiTl.png",
-    "s": "https://ddx5i92cqts4o.cloudfront.net/images/1ef803ju1_rei_app_3.png",
-    "w": "Exalted Versus the World of Darkness",
-    "b": [
-      "F"
-    ]
-  },
-  {
     "u": 4753040,
     "n": "Shianni",
     "t": 1,
@@ -256,8 +234,10 @@
     "s": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHi-5vfsn8DND5L5MpRE7lKlJLDfHhU0AKcA&usqp=CAU",
     "w": "Nanatsu No Taizai/Seven Deadly Sins",
     "b": [
-      "F"
-    ]
+      "F",
+      "U"
+    ],
+    "in": "https://cdn.donmai.us/sample/e5/79/__elizabeth_liones_nanatsu_no_taizai_drawn_by_neoartcore__sample-e57982e949d3b0c318d3b2e5fed554bd.jpg"
   },
   {
     "u": 8604991,
@@ -351,8 +331,10 @@
     "s": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrsq3nHur_1Ot5DbJQedNEhwZxpSdPa7SQyw&usqp=CAU",
     "w": "Nanatsu No Taizai/Seven Deadly Sins",
     "b": [
-      "F"
-    ]
+      "F",
+      "U"
+    ],
+    "in": "https://cdn.donmai.us/original/07/c4/__diane_nanatsu_no_taizai_drawn_by_kai_link2262__07c4690392f1fc5b81036bce4f2f6045.jpg"
   },
   {
     "u": 9870892,
@@ -3006,7 +2988,9 @@
     "s": "https://static.wikia.nocookie.net/acecombat/images/8/81/Avril_Mead_AC7.jpg/revision/latest/scale-to-width-down/1000?cb=20190124053934",
     "w": "Ace Combat",
     "b": [
-      "F"
+      "F",
+      "en",
+      "U"
     ],
     "k": "Steve",
     "d": "Ace Combat 7: Skies Unkown"
@@ -4296,7 +4280,9 @@
     "s": "https://www.tomshw.it/files/2013/05/immagini_contenuti/45352/malik.jpg",
     "w": "Deus Ex",
     "b": [
-      "F"
+      "F",
+      "cb",
+      "U"
     ],
     "k": "Steve",
     "d": "Deus Ex: Human Revolution"
@@ -4899,27 +4885,33 @@
   },
   {
     "u": 1403461,
-    "n": "Yakumo Kurama",
+    "n": "Kurama Yakumo",
     "t": 5,
-    "i": "Yakumo_Kurama.png",
-    "s": "https://static.wikia.nocookie.net/naruto/images/3/37/Yakumo_Kurama.png/revision/latest/scale-to-width-down/300?cb=20150626165855",
+    "i": "https://i.imgur.com/zMdoDihl.png",
+    "s": "https://i.imgur.com/zMdoDih.png",
     "w": "Naruto",
     "b": [
-      "F"
+      "F",
+      "mp",
+      "U",
+      "ar"
     ],
-    "k": "Koob"
+    "k": "Koob",
+    "d": "Konohagakure"
   },
   {
     "u": 1291793,
     "n": "Shinigami",
     "t": 11,
-    "i": "https://i.imgur.com/ORayAzLl.jpg?1",
-    "s": "https://i.imgur.com/ORayAzL.jpg?1",
+    "i": "https://i.imgur.com/oI5RVlVl.jpg",
+    "s": "https://i.imgur.com/oI5RVlV.jpg",
     "w": "Naruto",
     "b": [
-      "M",
-      "id",
-      "gd"
+      "O",
+      "dr",
+      "im",
+      "gd",
+      "U"
     ],
     "k": "DaemonOrk"
   },
@@ -5441,9 +5433,12 @@
     "s": "https://gelbooru.com/index.php?page=post&s=view&id=1691720&tags=shinmai_maou_no_testament",
     "w": "Shinmai Maou",
     "b": [
-      "F"
+      "F",
+      "dm",
+      "U"
     ],
-    "k": "Ono"
+    "k": "Ono",
+    "in": "https://cdn.donmai.us/sample/15/f2/__naruse_mio_shinmai_maou_no_testament_drawn_by_cait_aron__sample-15f29bc26c22a05ba18efe52ca33e0a5.jpg"
   },
   {
     "u": 6049687,
@@ -5453,9 +5448,11 @@
     "s": "https://gelbooru.com/index.php?page=post&s=view&id=2569826&tags=nonaka_yuki",
     "w": "Shinmai Maou",
     "b": [
-      "F"
+      "F",
+      "U"
     ],
-    "k": "Ono"
+    "k": "Ono",
+    "in": "https://cdn.donmai.us/sample/6b/c7/__nonaka_yuki_shinmai_maou_no_testament_drawn_by_ookuma_nekosuke__sample-6bc73f73b5ae814985f80829fc97f290.jpg"
   },
   {
     "u": 7640334,
@@ -5465,9 +5462,11 @@
     "s": "https://gelbooru.com/index.php?page=post&s=view&id=4136076&tags=nonaka_kurumi",
     "w": "Shinmai Maou",
     "b": [
-      "F"
+      "F",
+      "U"
     ],
-    "k": "Ono"
+    "k": "Ono",
+    "in": "https://cdn.donmai.us/sample/1a/1d/__nonaka_kurumi_shinmai_maou_no_testament_drawn_by_ookuma_nekosuke__sample-1a1dbad5a1dbed4872c7f6f40097bd3f.jpg"
   },
   {
     "u": 2765854,
@@ -5477,9 +5476,12 @@
     "s": "https://gelbooru.com/index.php?page=post&s=view&id=4136090&tags=zest",
     "w": "Shinmai Maou",
     "b": [
-      "F"
+      "F",
+      "dm",
+      "U"
     ],
-    "k": "Ono"
+    "k": "Ono",
+    "in": "https://cdn.donmai.us/original/3b/a1/__zest_shinmai_maou_no_testament_drawn_by_yutakamehi__3ba14f62ce6a67e19f75f02c5f88298a.jpg"
   },
   {
     "u": 8949567,
@@ -5489,9 +5491,12 @@
     "s": "https://gelbooru.com/index.php?page=post&s=view&id=3184154&tags=naruse_maria",
     "w": "Shinmai Maou",
     "b": [
-      "F"
+      "F",
+      "dm",
+      "U"
     ],
-    "k": "Ono"
+    "k": "Ono",
+    "in": "https://cdn.donmai.us/sample/bd/10/__naruse_maria_shinmai_maou_no_testament_drawn_by_gujianshaonu__sample-bd1001c613cf442f31a8ec23d0b1573c.jpg"
   },
   {
     "u": 3874186,
@@ -5501,9 +5506,12 @@
     "s": "https://gelbooru.com/index.php?page=post&s=view&id=5262865&tags=hasegawa_chisato",
     "w": "Shinmai Maou",
     "b": [
-      "F"
+      "F",
+      "gd",
+      "U"
     ],
-    "k": "Ono"
+    "k": "Ono",
+    "in": "https://cdn.donmai.us/sample/3d/d3/__hasegawa_chisato_shinmai_maou_no_testament_drawn_by_hellandheaven__sample-3dd34fb4bb5eeec8be42160d991bcb7b.jpg"
   },
   {
     "u": 3319397,
@@ -8642,7 +8650,7 @@
     "t": 3,
     "i": "Shimoneta-To-Iu-Gainen-Ga-Sonzaishinai-Taikutsu-Na-Sekai-dvd.jpg",
     "s": "https://honeysanime.com/wp-content/uploads/2015/08/Shimoneta-To-Iu-Gainen-Ga-Sonzaishinai-Taikutsu-Na-Sekai-dvd.jpg",
-    "w": "Shinometa",
+    "w": "Shimoneta",
     "b": [
       "F"
     ],
@@ -18067,14 +18075,17 @@
   },
   {
     "u": 9587369,
-    "n": "Asuma Sarutobi",
+    "n": "Sarutobi Asuma",
     "t": 5,
-    "i": "Asuma.png",
-    "s": "https://static.wikia.nocookie.net/naruto/images/7/7c/Asuma.png",
+    "i": "https://i.imgur.com/2kq7tlZl.png",
+    "s": "https://i.imgur.com/2kq7tlZ.png",
     "w": "Naruto",
-    "d": "",
+    "d": "Konohagakure",
     "b": [
-      "M"
+      "M",
+      "cl",
+      "nj",
+      "U"
     ],
     "k": "Alya"
   },
@@ -21089,9 +21100,11 @@
       "hz",
       "im",
       "ur",
-      "dm"
+      "dm",
+      "U"
     ],
-    "k": "Templar9999"
+    "k": "Templar9999",
+    "in": "https://cdn.donmai.us/sample/52/5b/__melascula_nanatsu_no_taizai_drawn_by_zefrableu__sample-525bed0a07a1b563a9806babb818c9cf.jpg"
   },
   {
     "u": 4714196,
@@ -21814,9 +21827,11 @@
     "d": "",
     "b": [
       "F",
-      "pc"
+      "pc",
+      "U"
     ],
-    "k": "Ono"
+    "k": "Ono",
+    "in": "https://cdn.donmai.us/sample/20/46/__rit_shin_no_nakama_janai_to_yuusha_no_party_wo_oidasareta_no_de_henkyou_de_slow_life_suru_koto_ni_shimashita_drawn_by_kukoi__sample-2046cb55ea424eb2b5deb6f53011976f.jpg"
   },
   {
     "u": 2121087,
@@ -32095,7 +32110,11 @@
     "d": "",
     "b": [
       "F",
-      "ot"
+      "hp",
+      "ur",
+      "tm",
+      "ot",
+      "U"
     ],
     "k": "Myrddin Emrys"
   },
@@ -32109,13 +32128,20 @@
     "d": "",
     "b": [
       "F",
-      "ot"
+      "ur",
+      "cr",
+      "tm",
+      "dm",
+      "ot",
+      "gd",
+      "sr",
+      "U"
     ],
     "k": "Myrddin Emrys"
   },
   {
     "u": 7120473,
-    "n": "Yuu",
+    "n": "Yuu Hasunuma",
     "t": 4,
     "i": "1402688.jpg",
     "s": "https://i.postimg.cc/xCLhBqsb/1402688.jpg",
@@ -32123,7 +32149,9 @@
     "d": "",
     "b": [
       "M",
-      "sd"
+      "di",
+      "sd",
+      "U"
     ],
     "k": "Myrddin Emrys"
   },
@@ -32434,19 +32462,6 @@
     "d": "",
     "b": [
       "O"
-    ],
-    "k": "Myrddin Emrys"
-  },
-  {
-    "u": 4207897,
-    "n": "Brighton Maxwell",
-    "t": 5,
-    "i": "1edht7j3d_brighton_app_3-2.jpg",
-    "s": "https://ddx5i92cqts4o.cloudfront.net/images/1edht7j3d_brighton_app_3-2.jpg",
-    "w": "Exalted Versus the World of Darkness",
-    "d": "",
-    "b": [
-      "M"
     ],
     "k": "Myrddin Emrys"
   },
@@ -36097,7 +36112,7 @@
   },
   {
     "u": 9803630,
-    "n": "Servilia of the Junii",
+    "n": "Servilia of the Julii",
     "t": 1,
     "i": "tumblr_n0ookqBjtN1rwahceo1_r1_1280.jpg",
     "s": "https://64.media.tumblr.com/40afc8d08306040dbbf0e85ddde954a1/tumblr_n0ookqBjtN1rwahceo1_r1_1280.jpg",
@@ -51479,9 +51494,11 @@
     "d": "",
     "b": [
       "F",
-      "sd"
+      "sd",
+      "U"
     ],
-    "k": "Heaven Canceler"
+    "k": "Heaven Canceler",
+    "in": "https://cdn.donmai.us/original/3c/b8/__izumi_sagiri_eromanga_sensei_drawn_by_ateoyh__3cb86f6b4abc1dc47c4004602914fa95.jpg"
   },
   {
     "u": 2722010,
@@ -53057,14 +53074,17 @@
   },
   {
     "u": 3924911,
-    "n": "Mito Uzumaki",
+    "n": "Uzumaki Mito",
     "t": 6,
     "i": "02a4e1ba2850f938de3f12b2186d6130--naruto-manga.jpg",
     "s": "https://i.pinimg.com/736x/02/a4/e1/02a4e1ba2850f938de3f12b2186d6130--naruto-manga.jpg",
     "w": "Naruto",
-    "d": "",
+    "d": "Konohagakure",
     "b": [
-      "F"
+      "F",
+      "cl",
+      "sc",
+      "U"
     ],
     "k": "slatts2"
   },
@@ -54046,9 +54066,11 @@
     "d": "",
     "b": [
       "F",
-      "sd"
+      "sd",
+      "U"
     ],
-    "k": "Heaven Canceler"
+    "k": "Heaven Canceler",
+    "in": "https://cdn.donmai.us/sample/bd/c9/__jinno_megumi_eromanga_sensei_drawn_by_yutsuki_ryou__sample-bdc9083bd5cbf1c548432323e4d7222e.jpg"
   },
   {
     "u": 8766998,
@@ -63809,7 +63831,7 @@
   },
   {
     "u": 3335845,
-    "n": "Heavy Cruiser Princess",
+    "n": "Aircraft Carrier Princess",
     "t": 7,
     "i": "__aircraft_carrier_princess_kantai_collection_drawn_by_stu_dts__50579501d8720cd3a73a83cb2e4246c5.jpg",
     "s": "https://cdn.donmai.us/original/50/57/__aircraft_carrier_princess_kantai_collection_drawn_by_stu_dts__50579501d8720cd3a73a83cb2e4246c5.jpg",
@@ -63817,7 +63839,8 @@
     "d": "Abyssal Fleet",
     "b": [
       "F",
-      "Heavy Cruiser"
+      "U",
+      "Aircraft Carrier"
     ],
     "k": "Paragon_4376"
   },
@@ -65848,7 +65871,7 @@
   },
   {
     "u": 9438655,
-    "n": "Shukaku",
+    "n": "Shukaku (Ichibi)",
     "t": 7,
     "i": "62812.jpg",
     "s": "https://cdn.myanimelist.net/images/characters/16/62812.jpg",
@@ -65858,7 +65881,9 @@
       "O",
       "hr",
       "im",
-      "cr"
+      "cr",
+      "dm",
+      "U"
     ],
     "k": "gawd49"
   },
@@ -67533,23 +67558,6 @@
       "F",
       "cl",
       "id"
-    ],
-    "k": "Par tzu"
-  },
-  {
-    "u": 4249273,
-    "n": "Theresa",
-    "t": 6,
-    "i": "TheresArknight600.2979744.jpg",
-    "s": "https://s1.zerochan.net/Theresa.(Arknights).600.2979744.jpg",
-    "w": "Arknights",
-    "d": "Sarkaz King",
-    "b": [
-      "F",
-      "cl",
-      "pl",
-      "sc",
-      "rl"
     ],
     "k": "Par tzu"
   },
@@ -69946,7 +69954,7 @@
     "d": "",
     "b": [
       "F",
-      "P"
+      "U"
     ],
     "k": "Ruaron"
   },
@@ -70031,7 +70039,15 @@
     "w": "Arifureta: From Commonplace to World's Strongest",
     "d": "",
     "b": [
-      "F"
+      "M",
+      "cl",
+      "mr",
+      "dh",
+      "en",
+      "sd",
+      "U",
+      "cc",
+      "sa"
     ],
     "k": "Razanon"
   },
@@ -70060,7 +70076,9 @@
     "w": "Avatar",
     "d": "",
     "b": [
-      "F"
+      "F",
+      "pc",
+      "U"
     ],
     "in": "https://tulip.paheal.net/_images/43603a2bba8adc7a00027a24d0bc797c/2934147%20-%20Anaxus%20Avatar_the_Last_Airbender%20Yue.jpg",
     "k": "Selias"
@@ -70333,7 +70351,12 @@
     "w": "Cowboy Bebop",
     "d": "",
     "b": [
-      "F"
+      "F",
+      "en",
+      "U",
+      "ar",
+      "cc",
+      "nd"
     ],
     "k": "Selias"
   },
@@ -70436,10 +70459,13 @@
     "d": "The Cursed Prince",
     "b": [
       "F",
+      "dr",
       "dm",
-      "sr"
+      "sr",
+      "U"
     ],
-    "k": "Jack"
+    "k": "Jack",
+    "in": "https://cdn.donmai.us/original/81/93/__herzha_fandeltales_drawn_by_flou__8193bd58eec2d30288e2f8e8d877a7a9.jpg"
   },
   {
     "u": 1252313,
@@ -70623,7 +70649,7 @@
   {
     "u": 1160456,
     "n": "Jade Chan",
-    "t": 5,
+    "t": 3,
     "i": "https://i.imgur.com/0EdbYuOl.jpg",
     "s": "https://i.imgur.com/0EdbYuO.jpg",
     "w": "Jackie Chan Adventures",
@@ -70722,7 +70748,7 @@
     "w": "Legend of Zelda",
     "d": "Skyward Sword",
     "b": [
-      "M"
+      "F"
     ],
     "k": "Selias"
   },
@@ -70735,7 +70761,7 @@
     "w": "Legend of Zelda",
     "d": "Skyward Sword",
     "b": [
-      "M"
+      "F"
     ],
     "k": "Selias"
   },
@@ -70748,7 +70774,7 @@
     "w": "Legend of Zelda",
     "d": "Skyward Sword",
     "b": [
-      "M"
+      "F"
     ],
     "k": "Selias"
   },
@@ -70761,7 +70787,7 @@
     "w": "Legend of Zelda",
     "d": "Twilight Princess",
     "b": [
-      "M"
+      "F"
     ],
     "k": "Selias"
   },
@@ -70774,7 +70800,7 @@
     "w": "Legend of Zelda",
     "d": "Twilight Princess",
     "b": [
-      "M"
+      "F"
     ],
     "k": "Selias"
   },
@@ -71020,7 +71046,7 @@
     "w": "Marvel",
     "d": "",
     "b": [
-      "F",
+      "M",
       "dc",
       "hl",
       "st",
@@ -71412,9 +71438,12 @@
     "i": "e175e6c81159232cf757b719e99b3bfc08273437.png",
     "s": "https://safebooru.org//images/890/e175e6c81159232cf757b719e99b3bfc08273437.png",
     "w": "Sailor Moon",
-    "d": "",
+    "d": "Dead Moon Circus",
     "b": [
-      "F"
+      "F",
+      "dr",
+      "U",
+      "mm"
     ],
     "k": "Selias"
   },
@@ -71425,9 +71454,12 @@
     "i": "53286d7472a92165ea4da1e8b3d7c43b3cfb4b32.jpg",
     "s": "https://safebooru.org//images/886/53286d7472a92165ea4da1e8b3d7c43b3cfb4b32.jpg",
     "w": "Sailor Moon",
-    "d": "",
+    "d": "Dead Moon Circus",
     "b": [
-      "F"
+      "F",
+      "dr",
+      "U",
+      "mm"
     ],
     "k": "Selias"
   },
@@ -71438,9 +71470,12 @@
     "i": "c8f8b87b7c0f3d91386e71365b8cb7a408599444.jpg",
     "s": "https://safebooru.org//images/587/c8f8b87b7c0f3d91386e71365b8cb7a408599444.jpg",
     "w": "Sailor Moon",
-    "d": "",
+    "d": "Dead Moon Circus",
     "b": [
-      "F"
+      "F",
+      "dr",
+      "U",
+      "mm"
     ],
     "k": "Selias"
   },
@@ -71451,9 +71486,12 @@
     "i": "e47c5c6099e665830a54684ec0f9cd5dd2136032.jpg",
     "s": "https://safebooru.org//images/2092/e47c5c6099e665830a54684ec0f9cd5dd2136032.jpg",
     "w": "Sailor Moon",
-    "d": "",
+    "d": "Dead Moon Circus",
     "b": [
-      "F"
+      "F",
+      "dr",
+      "U",
+      "mm"
     ],
     "k": "Selias"
   },
@@ -71666,36 +71704,1641 @@
     "k": "Zolken"
   },
   {
-    "u": 5373758,
-    "n": "Moira Vahlen",
+    "u": 8313179,
+    "n": "Sweets",
+    "t": 2,
+    "i": "Sweets-SFW.jpg",
+    "s": "https://i.ibb.co/HYD5d5n/Sweets-SFW.jpg",
+    "w": "A Song of Ice and Fire",
+    "d": "",
+    "b": [
+      "O",
+      "U",
+      "tp"
+    ],
+    "k": "Riggnarock"
+  },
+  {
+    "u": 9167512,
+    "n": "Alleras",
+    "t": 2,
+    "i": "450px-Sarella_Sand_by_Nyanmi_EuphoriA.jpg",
+    "s": "https://awoiaf.westeros.org/images/thumb/2/22/Sarella_Sand_by_Nyanmi_EuphoriA.jpg/450px-Sarella_Sand_by_Nyanmi_EuphoriA.jpg",
+    "w": "A Song of Ice and Fire",
+    "d": "",
+    "b": [
+      "M",
+      "cl",
+      "sc",
+      "en",
+      "sn",
+      "sd",
+      "By user",
+      "tp"
+    ],
+    "k": "Riggnarock"
+  },
+  {
+    "u": 8808372,
+    "n": "Bitch Pudding",
+    "t": 2,
+    "i": "Bitch-pudding-SFW.png",
+    "s": "https://i.ibb.co/TtWGGKg/Bitch-pudding-SFW.png",
+    "w": "Adult Swim",
+    "d": "",
+    "b": [
+      "F",
+      "U"
+    ],
+    "in": "https://i.ibb.co/mzy8pfk/Bitch-Pudding-NSFW.jpg",
+    "k": "Riggnarock"
+  },
+  {
+    "u": 4183524,
+    "n": "Ninny Spangcole",
+    "t": 6,
+    "i": "f00ccb3c31db38ff6bb38f9919e5933e.jpg",
+    "s": "https://i.pinimg.com/736x/f0/0c/cb/f00ccb3c31db38ff6bb38f9919e5933e.jpg",
+    "w": "Bleach",
+    "d": "Burn the Witch",
+    "b": [
+      "F",
+      "sd",
+      "wh",
+      "me"
+    ],
+    "k": "TDon123"
+  },
+  {
+    "u": 5393983,
+    "n": "Noel Niihashi",
+    "t": 6,
+    "i": "1c26f819e0ac3d9b8c3c6a52d9b35295.jpg",
+    "s": "https://i.pinimg.com/550x/1c/26/f8/1c26f819e0ac3d9b8c3c6a52d9b35295.jpg",
+    "w": "Bleach",
+    "d": "Burn the Witch",
+    "b": [
+      "F",
+      "cl",
+      "sd",
+      "wh",
+      "me"
+    ],
+    "k": "TDon123"
+  },
+  {
+    "u": 2251301,
+    "n": "Soma Cruz",
+    "t": 7,
+    "i": "cf3f66be7497e338f26e373442d43f62a561fb86.jpg",
+    "s": "https://safebooru.org//images/2993/cf3f66be7497e338f26e373442d43f62a561fb86.jpg",
+    "w": "Castlevania",
+    "d": "Aria of Sorrow",
+    "b": [
+      "M"
+    ],
+    "k": "Selias"
+  },
+  {
+    "u": 6783003,
+    "n": "Cat from Saturn",
+    "t": 4,
+    "i": "cats-from-saturn-ethan-harris.jpg",
+    "s": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/cats-from-saturn-ethan-harris.jpg",
+    "w": "Cthulhu Mythos",
+    "d": "",
+    "b": [
+      "O",
+      "mr",
+      "ot",
+      "ev",
+      "al"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 6433379,
+    "n": "Man of Leng",
+    "t": 4,
+    "i": "Men-of-Leng.jpg",
+    "s": "https://i.postimg.cc/XJtg9DS0/Men-of-Leng.jpg",
+    "w": "Cthulhu Mythos",
+    "d": "",
+    "b": [
+      "O",
+      "ml",
+      "ot",
+      "dh",
+      "ev",
+      "al"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 4740782,
+    "n": "Goblin",
+    "t": 4,
+    "i": "jesper-ejsing-art-goblin-matron.jpg",
+    "s": "https://i0.wp.com/mtgazone.com/wp-content/uploads/2019/11/jesper-ejsing-art-goblin-matron.jpg",
+    "w": "Cthulhu Mythos",
+    "d": "Call of Cthulhu",
+    "b": [
+      "O",
+      "mr",
+      "ot",
+      "sr",
+      "ev"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 8264874,
+    "n": "Great Race of Yith",
+    "t": 5,
+    "i": "great_race_of_yith_14.jpg",
+    "s": "https://aetherealengineer.files.wordpress.com/2017/09/great_race_of_yith_14.jpg",
+    "w": "Cthulhu Mythos",
+    "d": "",
+    "b": [
+      "O",
+      "mp",
+      "bj",
+      "tm",
+      "ot",
+      "en",
+      "sn",
+      "ps",
+      "sr",
+      "al"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 1592053,
+    "n": "Fire Vampire",
+    "t": 4,
+    "i": "The-Fire-Vampires.jpg",
+    "s": "https://i.postimg.cc/nz98G55F/The-Fire-Vampires.jpg",
+    "w": "Cthulhu Mythos",
+    "d": "Call of Cthulhu",
+    "b": [
+      "O",
+      "hr",
+      "hz",
+      "mr",
+      "ot",
+      "vp",
+      "al"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 5411177,
+    "n": "Night Gaunt",
+    "t": 5,
+    "i": "night-gaunt-revisited-by-mitchellnolte-da61jws-pre-jpg-token-ey-J0e-XAi-Oi-JKV1-Qi-LCJhb-Gci-Oi-JIUz-I1-Ni-J9-ey.jpg",
+    "s": "https://i.postimg.cc/zG7gSPZR/night-gaunt-revisited-by-mitchellnolte-da61jws-pre-jpg-token-ey-J0e-XAi-Oi-JKV1-Qi-LCJhb-Gci-Oi-JIUz-I1-Ni-J9-ey.jpg",
+    "w": "Cthulhu Mythos",
+    "d": "",
+    "b": [
+      "O",
+      "mr",
+      "ot",
+      "al"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 9077719,
+    "n": "Tamora Jean Calhoun",
+    "t": 4,
+    "i": "Calhoun-SFW.jpg",
+    "s": "https://i.ibb.co/Yy1YfHf/Calhoun-SFW.jpg",
+    "w": "Disney",
+    "d": "Wreck-It Ralph",
+    "b": [
+      "F",
+      "cl",
+      "U"
+    ],
+    "in": "https://pictures.hentai-foundry.com/i/Ivanaanemon/949327/Ivanaanemon-949327-Sergeant_Calhoun.jpg",
+    "k": "Riggnarock"
+  },
+  {
+    "u": 4332307,
+    "n": "Sorcerer Rogier",
+    "t": 5,
+    "i": "__sorcerer_rogier_elden_ring_drawn_by_yanobrk__59f2a504a2ee9818c0ca5c6302507462.jpg",
+    "s": "https://cdn.donmai.us/original/59/f2/__sorcerer_rogier_elden_ring_drawn_by_yanobrk__59f2a504a2ee9818c0ca5c6302507462.jpg",
+    "w": "Elden Ring",
+    "d": "",
+    "b": [
+      "M",
+      "me",
+      "tc"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 3522168,
+    "n": "Edda Blackbosom",
+    "t": 5,
+    "i": "tumblr_oask5tglDL1ugs6qho1_500.jpg",
+    "s": "https://68.media.tumblr.com/7b514256291329a9e6084e6de941e903/tumblr_oask5tglDL1ugs6qho1_500.png",
+    "w": "Final Fantasy XIV",
+    "d": "",
+    "b": [
+      "F",
+      "mp",
+      "wh",
+      "un"
+    ],
+    "k": "innate-fifth"
+  },
+  {
+    "u": 9338069,
+    "n": "Cocobuki",
+    "t": 4,
+    "i": "Cocobuki.png",
+    "s": "https://ffxiv.gamerescape.com/w/images/a/a4/Cocobuki.png",
+    "w": "Final Fantasy XIV",
+    "d": "",
+    "b": [
+      "M",
+      "me",
+      "lv",
+      "Lalafel"
+    ],
+    "k": "innate-fifth"
+  },
+  {
+    "u": 3819138,
+    "n": "Deep Canyon",
+    "t": 2,
+    "i": "deep_canyon.jpg",
+    "s": "https://static.tvtropes.org/pmwiki/pub/images/deep_canyon.jpg",
+    "w": "Final Fantasy XIV",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "innate-fifth"
+  },
+  {
+    "u": 8371522,
+    "n": "Wide Gulley",
+    "t": 2,
+    "i": "wide_gulley_3.jpg",
+    "s": "https://static.tvtropes.org/pmwiki/pub/images/wide_gulley_3.jpg",
+    "w": "Final Fantasy XIV",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "innate-fifth"
+  },
+  {
+    "u": 5189129,
+    "n": "Adalberta",
+    "t": 2,
+    "i": "Adalberta.png",
+    "s": "https://ffxiv.gamerescape.com/w/images/f/ff/Adalberta.png",
+    "w": "Final Fantasy XIV",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "innate-fifth"
+  },
+  {
+    "u": 3051823,
+    "n": "Chuchuto Brightfist",
+    "t": 2,
+    "i": "Chuchuto.png",
+    "s": "https://ffxiv.gamerescape.com/w/images/2/2c/Chuchuto.png",
+    "w": "Final Fantasy XIV",
+    "d": "",
+    "b": [
+      "F",
+      "Lalafel"
+    ],
+    "k": "innate-fifth"
+  },
+  {
+    "u": 1977770,
+    "n": "Hamon Holyfist",
+    "t": 2,
+    "i": "FFXIV_Hamon_Holyfist.png",
+    "s": "https://static.wikia.nocookie.net/finalfantasy/images/a/ab/FFXIV_Hamon_Holyfist.png",
+    "w": "Final Fantasy XIV",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "innate-fifth"
+  },
+  {
+    "u": 7708650,
+    "n": "Daisy-023",
+    "t": 5,
+    "i": "https://i.imgur.com/QhdLc7bl.png",
+    "s": "https://i.imgur.com/QhdLc7b.png",
+    "w": "Halo",
+    "d": "Halo Legends",
+    "b": [
+      "F"
+    ],
+    "k": "Kencen"
+  },
+  {
+    "u": 6858365,
+    "n": "Cal-141",
+    "t": 5,
+    "i": "https://i.imgur.com/KZYr3i4l.png",
+    "s": "https://i.imgur.com/KZYr3i4.png",
+    "w": "Halo",
+    "d": "Halo Legends",
+    "b": [
+      "F"
+    ],
+    "k": "Kencen"
+  },
+  {
+    "u": 1756190,
+    "n": "Shigune Nanadaru",
+    "t": 5,
+    "i": "Shigune_Nanadaru.jpg",
+    "s": "https://static.wikia.nocookie.net/slashdog/images/5/53/Shigune_Nanadaru.jpg",
+    "w": "High School DxD",
+    "d": "",
+    "b": [
+      "F",
+      "sd",
+      "me"
+    ],
+    "k": "TDon123"
+  },
+  {
+    "u": 9867280,
+    "n": "Natsume Minagawa",
+    "t": 5,
+    "i": "776f6dbf204e6b49e823071656dacceb413d1a18r1-1024-608v2_uhq.jpg",
+    "s": "http://pm1.narvii.com/7062/776f6dbf204e6b49e823071656dacceb413d1a18r1-1024-608v2_uhq.jpg",
+    "w": "High School DxD",
+    "d": "",
+    "b": [
+      "F",
+      "sd",
+      "me"
+    ],
+    "k": "TDon123"
+  },
+  {
+    "u": 1074471,
+    "n": "Kouki Samejima",
+    "t": 5,
+    "i": "Kouki_Samejima01.png",
+    "s": "https://static.wikia.nocookie.net/slashdog/images/f/f2/Kouki_Samejima_%282017%29.png",
+    "w": "High School DxD",
+    "d": "",
+    "b": [
+      "M",
+      "me"
+    ],
+    "k": "TDon123"
+  },
+  {
+    "u": 4099421,
+    "n": "Gandoma Balam",
+    "t": 5,
+    "i": "gandoma-balam-1.jpg",
+    "s": "https://cdn.anime-planet.com/characters/primary/gandoma-balam-1.jpg",
+    "w": "High School DxD",
+    "d": "",
+    "b": [
+      "M",
+      "hr",
+      "hz",
+      "dv"
+    ],
+    "k": "TDon123"
+  },
+  {
+    "u": 8302788,
+    "n": "Angra Mainyu",
+    "t": 8,
+    "i": "Angra_Mainyu_in_Shin_Dxd.jpg",
+    "s": "https://static.wikia.nocookie.net/highschooldxd/images/d/d6/Angra_Mainyu_in_Shin_Dxd.jpeg",
+    "w": "High School DxD",
+    "d": "",
+    "b": [
+      "M",
+      "gd",
+      "me",
+      "ev",
+      "rl",
+      "cc"
+    ],
+    "k": "TDon123"
+  },
+  {
+    "u": 5769031,
+    "n": "Zephyrdor Glasya-Labolas",
+    "t": 5,
+    "i": "281290.jpg",
+    "s": "https://cdn.myanimelist.net/images/characters/11/281290.jpg",
+    "w": "High School DxD",
+    "d": "",
+    "b": [
+      "M",
+      "me"
+    ],
+    "k": "TDon123"
+  },
+  {
+    "u": 4843966,
+    "n": "Beluga Furcas",
+    "t": 5,
+    "i": "beluga-furcas-1.jpg",
+    "s": "https://cdn.anime-planet.com/characters/primary/beluga-furcas-1.jpg",
+    "w": "High School DxD",
+    "d": "",
+    "b": [
+      "M",
+      "mt",
+      "dv"
+    ],
+    "k": "TDon123"
+  },
+  {
+    "u": 6029884,
+    "n": "Connla",
+    "t": 5,
+    "i": "connla-1.jpg",
+    "s": "https://cdn.anime-planet.com/characters/primary/connla-1.jpg",
+    "w": "High School DxD",
+    "d": "",
+    "b": [
+      "M",
+      "me",
+      "sr"
+    ],
+    "k": "TDon123"
+  },
+  {
+    "u": 4786258,
+    "n": "Siegfried",
+    "t": 5,
+    "i": "7cb90174b9706fa61a75f9914cf6d996.jpg",
+    "s": "https://i.pinimg.com/originals/7c/b9/01/7cb90174b9706fa61a75f9914cf6d996.jpg",
+    "w": "High School DxD",
+    "d": "",
+    "b": [
+      "M",
+      "ev"
+    ],
+    "k": "TDon123"
+  },
+  {
+    "u": 9187566,
+    "n": "Heracles",
+    "t": 5,
+    "i": "9f7f7190714e492731523dcfbef2050a11432d47r1-960-540v2_uhq.jpg",
+    "s": "http://pm1.narvii.com/7046/9f7f7190714e492731523dcfbef2050a11432d47r1-960-540v2_uhq.jpg",
+    "w": "High School DxD",
+    "d": "",
+    "b": [
+      "M",
+      "hz",
+      "ev"
+    ],
+    "k": "TDon123"
+  },
+  {
+    "u": 8002888,
+    "n": "Liban Crocell",
+    "t": 5,
+    "i": "75120.webp",
+    "s": "https://cdn.anisearch.com/images/character/cover/full/75/75120.webp",
+    "w": "High School DxD",
+    "d": "",
+    "b": [
+      "M",
+      "dv",
+      "me"
+    ],
+    "k": "TDon123"
+  },
+  {
+    "u": 9210162,
+    "n": "Ladora Buné",
+    "t": 5,
+    "i": "Ladora_Bun.jpg",
+    "s": "https://static.wikia.nocookie.net/highschooldxd/images/b/bc/Ladora_Bun%C3%A9_In_DxD_HERO.jpeg",
+    "w": "High School DxD",
+    "d": "",
+    "b": [
+      "M",
+      "mt",
+      "dv",
+      "dg",
+      "sr"
+    ],
+    "k": "TDon123"
+  },
+  {
+    "u": 4957208,
+    "n": "Dad Egbert",
+    "t": 5,
+    "i": "Dad.Egbert.600.2931123.jpg",
+    "s": "https://s1.zerochan.net/Dad.Egbert.600.2931123.jpg",
+    "w": "Homestuck",
+    "d": "",
+    "b": [
+      "M",
+      "cl"
+    ],
+    "k": "oneye"
+  },
+  {
+    "u": 8968802,
+    "n": "Lord English ( Caliborn )",
+    "t": 11,
+    "i": "44d7f8aa04354982d979408021fe11309a4d5c77.gif",
+    "s": "https://mspabooru.com//images/23/44d7f8aa04354982d979408021fe11309a4d5c77.gif",
+    "w": "Homestuck",
+    "d": "",
+    "b": [
+      "M",
+      "hp",
+      "hr",
+      "hz",
+      "bj",
+      "ur",
+      "cr",
+      "tm",
+      "sr",
+      "tw",
+      "al"
+    ],
+    "k": "oneye"
+  },
+  {
+    "u": 2723902,
+    "n": "Muse of Space ( Calliope)",
+    "t": 10,
+    "i": "tumblr_p4xqvwV8GU1tpflc9o1_1280.png",
+    "s": "https://64.media.tumblr.com/5ed8e2005b6fa0e53a351f3f6545530a/tumblr_p4xqvwV8GU1tpflc9o1_1280.png",
+    "w": "Homestuck",
+    "d": "",
+    "b": [
+      "F",
+      "hp",
+      "hr",
+      "hz",
+      "bj",
+      "ur",
+      "ps",
+      "sr",
+      "ar",
+      "tw",
+      "al"
+    ],
+    "k": "oneye"
+  },
+  {
+    "u": 8920016,
+    "n": "Anchorage Water Demon",
+    "t": 7,
+    "i": "__anchorage_water_oni_kantai_collection_drawn_by_k_suwabe__sample-a8c9a2830c1333d31e3dc435506d275b.jpg",
+    "s": "https://cdn.donmai.us/sample/a8/c9/__anchorage_water_oni_kantai_collection_drawn_by_k_suwabe__sample-a8c9a2830c1333d31e3dc435506d275b.jpg",
+    "w": "Kantai Collection",
+    "d": "Abyssal Fleet",
+    "b": [
+      "F",
+      "Installation"
+    ],
+    "k": "Paragon_4376"
+  },
+  {
+    "u": 2551635,
+    "n": "Anchorage Demon",
+    "t": 7,
+    "i": "__anchorage_oni_kantai_collection_drawn_by_akira_kadokawa__9ba8af87500ab534686064d338d3bcb3.png",
+    "s": "https://cdn.donmai.us/original/9b/a8/__anchorage_oni_kantai_collection_drawn_by_akira_kadokawa__9ba8af87500ab534686064d338d3bcb3.png",
+    "w": "Kantai Collection",
+    "d": "Abyssal Fleet",
+    "b": [
+      "F"
+    ],
+    "k": "Paragon_4376"
+  },
+  {
+    "u": 2870213,
+    "n": "Armored Carrier Princess",
+    "t": 7,
+    "i": "__armored_aircraft_carrier_princess_kantai_collection_drawn_by_akira_kadokawa__sample-6d51e365293c8cdc056833293ba7e1a8.jpg",
+    "s": "https://cdn.donmai.us/sample/6d/51/__armored_aircraft_carrier_princess_kantai_collection_drawn_by_akira_kadokawa__sample-6d51e365293c8cdc056833293ba7e1a8.jpg",
+    "w": "Kantai Collection",
+    "d": "Abyssal Fleet",
+    "b": [
+      "F",
+      "Aircraft Carrier"
+    ],
+    "k": "Paragon_4376"
+  },
+  {
+    "u": 3325953,
+    "n": "Armored Carrier Demon",
+    "t": 7,
+    "i": "__armored_aircraft_carrier_oni_kantai_collection_drawn_by_akira_kadokawa__sample-3b1c3c9636ef3eb1cf967d970719af98.jpg",
+    "s": "https://cdn.donmai.us/sample/3b/1c/__armored_aircraft_carrier_oni_kantai_collection_drawn_by_akira_kadokawa__sample-3b1c3c9636ef3eb1cf967d970719af98.jpg",
+    "w": "Kantai Collection",
+    "d": "Abyssal Fleet",
+    "b": [
+      "F",
+      "Aircraft Carrier"
+    ],
+    "k": "Paragon_4376"
+  },
+  {
+    "u": 4151213,
+    "n": "Isolated Island Demon",
+    "t": 7,
+    "i": "__isolated_island_oni_kantai_collection_drawn_by_a_er_akkij0358__sample-15344a18f54d51c27bda083990687953.jpg",
+    "s": "https://cdn.donmai.us/sample/15/34/__isolated_island_oni_kantai_collection_drawn_by_a_er_akkij0358__sample-15344a18f54d51c27bda083990687953.jpg",
+    "w": "Kantai Collection",
+    "d": "Abyssal Fleet",
+    "b": [
+      "F",
+      "Installation"
+    ],
+    "k": "Paragon_4376"
+  },
+  {
+    "u": 8008971,
+    "n": "Harbour Princess",
+    "t": 7,
+    "i": "__seaport_princess_kantai_collection_drawn_by_hks_timbougami__32e562824398542d69358e8b418cdbfa.jpg",
+    "s": "https://cdn.donmai.us/original/32/e5/__seaport_princess_kantai_collection_drawn_by_hks_timbougami__32e562824398542d69358e8b418cdbfa.jpg",
+    "w": "Kantai Collection",
+    "d": "Abyssal Fleet",
+    "b": [
+      "F",
+      "Installation"
+    ],
+    "k": "Paragon_4376"
+  },
+  {
+    "u": 9346158,
+    "n": "Aircraft Carrier Demon",
+    "t": 7,
+    "i": "__enemy_aircraft_and_aircraft_carrier_oni_kantai_collection_drawn_by_tomamatto__sample-63e912ac667a7859c7e99506b9ca417c.jpg",
+    "s": "https://cdn.donmai.us/sample/63/e9/__enemy_aircraft_and_aircraft_carrier_oni_kantai_collection_drawn_by_tomamatto__sample-63e912ac667a7859c7e99506b9ca417c.jpg",
+    "w": "Kantai Collection",
+    "d": "Abyssal Fleet",
+    "b": [
+      "F",
+      "Aircraft Carrier"
+    ],
+    "k": "Paragon_4376"
+  },
+  {
+    "u": 5139857,
+    "n": "Aircraft Carrier Water Demon",
+    "t": 7,
+    "i": "__aircraft_carrier_water_oni_and_floating_fortress_kantai_collection_drawn_by_weasel_close_to_the_edge__d016ff05e33bdba8e4d5506656509bdb.png",
+    "s": "https://cdn.donmai.us/original/d0/16/__aircraft_carrier_water_oni_and_floating_fortress_kantai_collection_drawn_by_weasel_close_to_the_edge__d016ff05e33bdba8e4d5506656509bdb.png",
+    "w": "Kantai Collection",
+    "d": "Abyssal Fleet",
+    "b": [
+      "F",
+      "Aircraft Carrier"
+    ],
+    "k": "Paragon_4376"
+  },
+  {
+    "u": 5261795,
+    "n": "Light Cruiser Demon",
+    "t": 6,
+    "i": "__light_cruiser_oni_kantai_collection_drawn_by_k_suwabe__497782c5fa09ef81d27e8683e7ff912f.jpg",
+    "s": "https://cdn.donmai.us/original/49/77/__light_cruiser_oni_kantai_collection_drawn_by_k_suwabe__497782c5fa09ef81d27e8683e7ff912f.jpg",
+    "w": "Kantai Collection",
+    "d": "Abyssal Fleet",
+    "b": [
+      "F",
+      "Light Cruiser"
+    ],
+    "k": "Paragon_4376"
+  },
+  {
+    "u": 9197889,
+    "n": "Ancient Destroyer Demon",
+    "t": 6,
+    "i": "__ancient_destroyer_oni_kantai_collection_drawn_by_yomi_yomi14_pyaon__sample-9f5d1a2972e198a5838384656326a8be.jpg",
+    "s": "https://cdn.donmai.us/sample/9f/5d/__ancient_destroyer_oni_kantai_collection_drawn_by_yomi_yomi14_pyaon__sample-9f5d1a2972e198a5838384656326a8be.jpg",
+    "w": "Kantai Collection",
+    "d": "Abyssal Fleet",
+    "b": [
+      "F",
+      "Destroyer"
+    ],
+    "k": "Paragon_4376"
+  },
+  {
+    "u": 3662189,
+    "n": "Destroyer Water Demon",
+    "t": 6,
+    "i": "__destroyer_water_oni_kantai_collection_drawn_by_jariinu_gomasionori__sample-c076e962eaa3daeb518674aedf8a265e.jpg",
+    "s": "https://cdn.donmai.us/sample/c0/76/__destroyer_water_oni_kantai_collection_drawn_by_jariinu_gomasionori__sample-c076e962eaa3daeb518674aedf8a265e.jpg",
+    "w": "Kantai Collection",
+    "d": "Abyssal Fleet",
+    "b": [
+      "F",
+      "Destroyer"
+    ],
+    "k": "Paragon_4376"
+  },
+  {
+    "u": 6786296,
+    "n": "Anzio Princess",
+    "t": 7,
+    "i": "__anzio_princess_kantai_collection_drawn_by_weasel_close_to_the_edge__sample-1b1eb473962a829602048e3823f0ed11.jpg",
+    "s": "https://cdn.donmai.us/sample/1b/1e/__anzio_princess_kantai_collection_drawn_by_weasel_close_to_the_edge__sample-1b1eb473962a829602048e3823f0ed11.jpg",
+    "w": "Kantai Collection",
+    "d": "Abyssal Fleet",
+    "b": [
+      "F",
+      "Destroyer"
+    ],
+    "k": "Paragon_4376"
+  },
+  {
+    "u": 5845994,
+    "n": "Northernmost Landing Princess",
+    "t": 7,
+    "i": "__northernmost_landing_princess_kantai_collection_drawn_by_kajaneko__sample-09f78195af789b438bc9e4db164aa64f.jpg",
+    "s": "https://cdn.donmai.us/sample/09/f7/__northernmost_landing_princess_kantai_collection_drawn_by_kajaneko__sample-09f78195af789b438bc9e4db164aa64f.jpg",
+    "w": "Kantai Collection",
+    "d": "Abyssal Fleet",
+    "b": [
+      "F",
+      "Installation"
+    ],
+    "k": "Paragon_4376"
+  },
+  {
+    "u": 8824008,
+    "n": "Battleship Water Demon",
+    "t": 7,
+    "i": "__battleship_water_oni_kantai_collection_drawn_by_akira_kadokawa__sample-0c133113834036d601d8c40e0dd58217.jpg",
+    "s": "https://cdn.donmai.us/sample/0c/13/__battleship_water_oni_kantai_collection_drawn_by_akira_kadokawa__sample-0c133113834036d601d8c40e0dd58217.jpg",
+    "w": "Kantai Collection",
+    "d": "Abyssal Fleet",
+    "b": [
+      "F",
+      "Battleship"
+    ],
+    "k": "Paragon_4376"
+  },
+  {
+    "u": 6643709,
+    "n": "Supply Depot Princess",
+    "t": 7,
+    "i": "__enemy_aircraft_and_supply_depot_princess_kantai_collection_drawn_by_shunatsu_shisui__8711e25df5157ee0df445228f10503b0.jpg",
+    "s": "https://cdn.donmai.us/original/87/11/__enemy_aircraft_and_supply_depot_princess_kantai_collection_drawn_by_shunatsu_shisui__8711e25df5157ee0df445228f10503b0.jpg",
+    "w": "Kantai Collection",
+    "d": "Abyssal Fleet",
+    "b": [
+      "F",
+      "Installation"
+    ],
+    "k": "Paragon_4376"
+  },
+  {
+    "u": 1165544,
+    "n": "Chem Berserker",
+    "t": 4,
+    "i": "victor-maury-victor-maury-chemberserkersthumb2.jpg",
+    "s": "https://cdnb.artstation.com/p/assets/covers/images/045/145/843/large/victor-maury-victor-maury-chemberserkersthumb2.jpg",
+    "w": "League of Legends",
+    "d": "Arcane: League of Legends",
+    "b": [
+      "M",
+      "hz",
+      "th",
+      "mu",
+      "cb"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 5538640,
+    "n": "Midna (Imp)",
+    "t": 6,
+    "i": "eb7cb9d7ece01826d39e4539fab370e47a784b2c.png",
+    "s": "https://safebooru.org//images/3594/eb7cb9d7ece01826d39e4539fab370e47a784b2c.png",
+    "w": "Legend of Zelda",
+    "d": "Twilight Princess",
+    "b": [
+      "F"
+    ],
+    "in": "https://peach.paheal.net/_images/3c4963a5b6cbf161c52dc6832dcb87dc/4737698%20-%20Krimble%20Legend_of_Zelda%20Midna%20Twilight_Princess.jpg",
+    "k": "Selias"
+  },
+  {
+    "u": 7800513,
+    "n": "Fairy Queen",
+    "t": 6,
+    "i": "https://i.imgur.com/Yh022kFl.jpg",
+    "s": "https://i.imgur.com/Yh022kF.jpg",
+    "w": "Legend of Zelda",
+    "d": "Wind Waker",
+    "b": [
+      "F"
+    ],
+    "k": "Selias"
+  },
+  {
+    "u": 7213200,
+    "n": "Laruto",
+    "t": 4,
+    "i": "https://i.imgur.com/EDLyIdXl.jpg",
+    "s": "https://i.imgur.com/EDLyIdX.jpg",
+    "w": "Legend of Zelda",
+    "d": "Wind Waker",
+    "b": [
+      "F"
+    ],
+    "k": "Selias"
+  },
+  {
+    "u": 7993272,
+    "n": "Yuri Eberwein (Unlimited Dark)",
+    "t": 8,
+    "i": "https://i.imgur.com/V3ZXc8gl.jpg",
+    "s": "https://i.imgur.com/V3ZXc8g.jpg",
+    "w": "Lyrical Nanoha",
+    "d": "",
+    "b": [
+      "F",
+      "hp",
+      "hr",
+      "dr",
+      "ad"
+    ],
+    "k": "KaizerRyu"
+  },
+  {
+    "u": 8394577,
+    "n": "MaterialS",
+    "t": 8,
+    "i": "https://i.imgur.com/96JWXRUl.png",
+    "s": "https://i.imgur.com/96JWXRU.png",
+    "w": "Lyrical Nanoha",
+    "d": "",
+    "b": [
+      "F",
+      "hp",
+      "hz",
+      "dr"
+    ],
+    "k": "KaizerRyu"
+  },
+  {
+    "u": 4121463,
+    "n": "Enma",
+    "t": 6,
+    "i": "https://i.imgur.com/ig99pLcl.png",
+    "s": "https://i.imgur.com/ig99pLc.png",
+    "w": "Naruto",
+    "d": "Konohagakure",
+    "b": [
+      "M",
+      "cl",
+      "mr",
+      "sr",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 3052781,
+    "n": "Angra Mainyu",
+    "t": 6,
+    "i": "efd3e84a052ddb44968f416420f18bd1.png",
+    "s": "https://i.pinimg.com/originals/ef/d3/e8/efd3e84a052ddb44968f416420f18bd1.png",
+    "w": "Nasuverse",
+    "d": "Servants – Avenger",
+    "b": [
+      "O",
+      "mp",
+      "bj",
+      "cr",
+      "dh"
+    ],
+    "k": "TDon123"
+  },
+  {
+    "u": 5903722,
+    "n": "Emily",
+    "t": 1,
+    "i": "5b8bbf0864a8337fa783ac515afcc4d6aeb1c3cf_hq.jpg",
+    "s": "https://pm1.narvii.com/6319/5b8bbf0864a8337fa783ac515afcc4d6aeb1c3cf_hq.jpg",
+    "w": "Overwatch",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Selias"
+  },
+  {
+    "u": 5246642,
+    "n": "Ikki Kurogane",
+    "t": 7,
+    "i": "f1e1df8ae1d2a6dab5608b1e3c97a4ee98f1b506r1-236-210v2_00.jpg",
+    "s": "http://pm1.narvii.com/7165/f1e1df8ae1d2a6dab5608b1e3c97a4ee98f1b506r1-236-210v2_00.jpg",
+    "w": "Rakudai Kishi no Cavalry",
+    "d": "",
+    "b": [
+      "M",
+      "cl",
+      "fm"
+    ],
+    "k": "TDon123"
+  },
+  {
+    "u": 8808611,
+    "n": "Alice",
+    "t": 6,
+    "i": "a86debc5347591e689d52110f402a19c.jpg",
+    "s": "https://i.pinimg.com/originals/a8/6d/eb/a86debc5347591e689d52110f402a19c.jpg",
+    "w": "Resident Evil",
+    "d": "",
+    "b": [
+      "F",
+      "cl",
+      "mp",
+      "th",
+      "mu",
+      "ps",
+      "gn",
+      "sa"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 1271077,
+    "n": "E. Aster Bunnymund (Easter Bunny)",
+    "t": 7,
+    "i": "Bunnymund-SFW.jpg",
+    "s": "https://i.ibb.co/KXWv20B/Bunnymund-SFW.jpg",
+    "w": "Rise of the Guardians",
+    "d": "",
+    "b": [
+      "M",
+      "tm",
+      "sr",
+      "rl",
+      "U",
+      "cc"
+    ],
+    "in": "https://i.ibb.co/p6DksCc/Bunnymund-NSFW.png",
+    "k": "Riggnarock"
+  },
+  {
+    "u": 6898771,
+    "n": "Rezo",
+    "t": 7,
+    "i": "2562227-291403_ep_3.29.png",
+    "s": "https://comicvine.gamespot.com/a/uploads/original/10/103617/2562227-291403_ep_3.29.png",
+    "w": "Slayers",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Selias"
+  },
+  {
+    "u": 7899787,
+    "n": "Syalis",
+    "t": 4,
+    "i": "39c365d6ebf5a5d718b2665857ab16a875fe7d8e.jpg",
+    "s": "https://safebooru.org//images/1748/39c365d6ebf5a5d718b2665857ab16a875fe7d8e.jpg",
+    "w": "Sleepy Princess in the Demon Castle",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Selias"
+  },
+  {
+    "u": 8851614,
+    "n": "Ishta",
     "t": 3,
-    "i": "__moira_vahlen_x_com_drawn_by_olegna_zueqram__b0411615e87a74ed00a8abeffe638755.png",
-    "s": "https://cdn.donmai.us/original/b0/41/__moira_vahlen_x_com_drawn_by_olegna_zueqram__b0411615e87a74ed00a8abeffe638755.png",
-    "w": "XCOM",
+    "i": "https://i.imgur.com/wj3s8kQl.jpg",
+    "s": "https://i.imgur.com/wj3s8kQ.jpg",
+    "w": "Stargate",
+    "d": "",
+    "b": [
+      "F",
+      "az",
+      "rl"
+    ],
+    "k": "Alya"
+  },
+  {
+    "u": 8543967,
+    "n": "Seth",
+    "t": 4,
+    "i": "Seth2.jpg",
+    "s": "https://www.gateworld.net/wiki/images/f/f4/Seth2.jpg",
+    "w": "Stargate",
+    "d": "",
+    "b": [
+      "M",
+      "mp"
+    ],
+    "k": "Alya"
+  },
+  {
+    "u": 3288145,
+    "n": "Akatsuki Kojou",
+    "t": 8,
+    "i": "9d25872d6668357471e4dc69f9d04457.jpg",
+    "s": "https://i.pinimg.com/originals/9d/25/87/9d25872d6668357471e4dc69f9d04457.jpg",
+    "w": "Strike The Blood",
+    "d": "",
+    "b": [
+      "M",
+      "st",
+      "mt",
+      "mp",
+      "im",
+      "ur",
+      "fm",
+      "sd",
+      "me",
+      "vp",
+      "rl"
+    ],
+    "k": "TDon123"
+  },
+  {
+    "u": 9542724,
+    "n": "Long Yuyin",
+    "t": 6,
+    "i": "Huyan_Lanruo_3.jpg",
+    "s": "https://static.wikia.nocookie.net/tales-of-demons-and-gods/images/8/84/Huyan_Lanruo_3.jpg",
+    "w": "Tales of Demons and Gods",
+    "d": "",
+    "b": [
+      "F",
+      "mp",
+      "Cultivator"
+    ],
+    "k": "Sarrior"
+  },
+  {
+    "u": 7231722,
+    "n": "Long Yuyin",
+    "t": 7,
+    "i": "Long_Yuyin2.jpg",
+    "s": "https://static.wikia.nocookie.net/tales-of-demons-and-gods/images/4/42/Long_Yuyin2.jpg",
+    "w": "Tales of Demons and Gods",
+    "d": "",
+    "b": [
+      "F",
+      "st",
+      "Cultivator"
+    ],
+    "k": "Sarrior"
+  },
+  {
+    "u": 2766639,
+    "n": "Yu Yan",
+    "t": 8,
+    "i": "LN_Cover_15.jpg",
+    "s": "https://static.wikia.nocookie.net/tales-of-demons-and-gods/images/3/3a/LN_Cover_15.jpg",
+    "w": "Tales of Demons and Gods",
+    "d": "",
+    "b": [
+      "F",
+      "im",
+      "gd",
+      "Cultivator"
+    ],
+    "k": "Sarrior"
+  },
+  {
+    "u": 1966063,
+    "n": "Ying Yueru",
+    "t": 8,
+    "i": "LN_Cover_16.jpg",
+    "s": "https://static.wikia.nocookie.net/tales-of-demons-and-gods/images/f/f9/LN_Cover_16.jpg",
+    "w": "Tales of Demons and Gods",
+    "d": "",
+    "b": [
+      "F",
+      "di",
+      "tc",
+      "Cultivator"
+    ],
+    "k": "Sarrior"
+  },
+  {
+    "u": 8096660,
+    "n": "Shen Xiu",
+    "t": 6,
+    "i": "Chen_Xiu_art.jpg",
+    "s": "https://static.wikia.nocookie.net/tales-of-demons-and-gods/images/4/42/Chen_Xiu_art.jpeg",
+    "w": "Tales of Demons and Gods",
+    "d": "",
+    "b": [
+      "F",
+      "tc",
+      "Cultivator"
+    ],
+    "k": "Sarrior"
+  },
+  {
+    "u": 6008494,
+    "n": "Yang Xin",
+    "t": 5,
+    "i": "LN_cover_12.jpg",
+    "s": "https://static.wikia.nocookie.net/tales-of-demons-and-gods/images/b/b3/LN_cover_12.jpg",
+    "w": "Tales of Demons and Gods",
     "d": "",
     "b": [
       "F",
       "dc",
-      "sn",
-      "gn"
+      "sc",
+      "Cultivator",
+      "cc"
     ],
-    "k": "Taisei"
+    "k": "Sarrior"
   },
   {
-    "u": 4994876,
-    "n": "Mari & Yuri",
-    "t": 4,
-    "i": "youma_shoukan_e_youkoso_9335.jpg",
-    "s": "https://www.nautiljon.com/images/anime/00/53/youma_shoukan_e_youkoso_9335.jpg",
-    "w": "Youma Shoukan e Youkoso",
-    "d": "Hentai",
+    "u": 9161452,
+    "n": "Xiao Ninger",
+    "t": 7,
+    "i": "Xiao_Ning_Er_art.jpg",
+    "s": "https://static.wikia.nocookie.net/tales-of-demons-and-gods/images/3/30/Xiao_Ning_Er_art.jpeg",
+    "w": "Tales of Demons and Gods",
+    "d": "",
     "b": [
       "F",
+      "Cultivator"
+    ],
+    "k": "Sarrior"
+  },
+  {
+    "u": 9620893,
+    "n": "Ye Ziyun",
+    "t": 7,
+    "i": "Ye_Zi_Yun_art2.jpg",
+    "s": "https://static.wikia.nocookie.net/tales-of-demons-and-gods/images/9/90/Ye_Zi_Yun_art2.jpeg",
+    "w": "Tales of Demons and Gods",
+    "d": "",
+    "b": [
+      "F",
+      "pc",
+      "Cultivator"
+    ],
+    "k": "Sarrior"
+  },
+  {
+    "u": 2825814,
+    "n": "Demon Lord",
+    "t": 9,
+    "i": "LN_Cover_14.jpg",
+    "s": "https://static.wikia.nocookie.net/tales-of-demons-and-gods/images/6/6e/LN_Cover_14.jpg",
+    "w": "Tales of Demons and Gods",
+    "d": "",
+    "b": [
+      "M",
+      "rs",
+      "ev",
+      "Cultivator"
+    ],
+    "k": "Sarrior"
+  },
+  {
+    "u": 8454795,
+    "n": "Duan Jian",
+    "t": 7,
+    "i": "Duan_Jian.jpg",
+    "s": "https://static.wikia.nocookie.net/tales-of-demons-and-gods/images/5/5b/Duan_Jian.jpg",
+    "w": "Tales of Demons and Gods",
+    "d": "",
+    "b": [
+      "M",
+      "st",
+      "hr",
+      "cl",
+      "dg",
+      "Cultivator"
+    ],
+    "k": "Sarrior"
+  },
+  {
+    "u": 2752282,
+    "n": "Lu Piao",
+    "t": 6,
+    "i": "Lu_Piao_4.jpg",
+    "s": "https://static.wikia.nocookie.net/tales-of-demons-and-gods/images/2/25/Lu_Piao_4.jpg",
+    "w": "Tales of Demons and Gods",
+    "d": "",
+    "b": [
+      "M",
+      "Cultivator"
+    ],
+    "k": "Sarrior"
+  },
+  {
+    "u": 9599553,
+    "n": "Chen Linjian",
+    "t": 6,
+    "i": "LN_Cover_11.jpg",
+    "s": "https://static.wikia.nocookie.net/tales-of-demons-and-gods/images/c/c4/LN_Cover_11.jpg",
+    "w": "Tales of Demons and Gods",
+    "d": "",
+    "b": [
+      "M",
+      "Cultivator"
+    ],
+    "k": "Sarrior"
+  },
+  {
+    "u": 9021555,
+    "n": "Du Ze",
+    "t": 6,
+    "i": "Du_Ze_6.jpg",
+    "s": "https://static.wikia.nocookie.net/tales-of-demons-and-gods/images/f/f5/Du_Ze_6.jpg",
+    "w": "Tales of Demons and Gods",
+    "d": "",
+    "b": [
+      "M",
+      "Cultivator"
+    ],
+    "k": "Sarrior"
+  },
+  {
+    "u": 3293858,
+    "n": "Nie Li",
+    "t": 10,
+    "i": "Nie_Li_art.jpg",
+    "s": "https://static.wikia.nocookie.net/tales-of-demons-and-gods/images/f/f1/Nie_Li_art.jpeg",
+    "w": "Tales of Demons and Gods",
+    "d": "",
+    "b": [
+      "M",
+      "hl",
+      "cl",
+      "lm",
+      "tm",
+      "ar",
+      "Cultivator"
+    ],
+    "k": "Sarrior"
+  },
+  {
+    "u": 9733275,
+    "n": "Jordan Parrish",
+    "t": 4,
+    "i": "mgl2mdfd1gm51.jpg",
+    "s": "https://i.redd.it/mgl2mdfd1gm51.jpg",
+    "w": "Teen Wolf",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "sinofsloth"
+  },
+  {
+    "u": 2917190,
+    "n": "Seth Clearwater",
+    "t": 5,
+    "i": "Screen_shot_2011-09-14_at_12_31_58_AM.png",
+    "s": "https://static.wikia.nocookie.net/twilightsaga/images/d/d6/Screen_shot_2011-09-14_at_12_31_58_AM.png",
+    "w": "Twilight",
+    "d": "",
+    "b": [
+      "M",
+      "sr",
+      "U"
+    ],
+    "k": "Riggnarock"
+  },
+  {
+    "u": 9588591,
+    "n": "Human Paladin",
+    "t": 5,
+    "i": "cole-eastburn-blizzconartstage.jpg",
+    "s": "https://cdnb.artstation.com/p/assets/images/images/010/030/665/large/cole-eastburn-blizzconartstage.jpg",
+    "w": "Warcraft",
+    "d": "Azeroth",
+    "b": [
+      "M",
+      "hl",
+      "cl",
+      "sc",
+      "rs",
+      "pt"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 5061645,
+    "n": "Fel Bat",
+    "t": 4,
+    "i": "ryan-metcalf-felbat-01.jpg",
+    "s": "https://i.postimg.cc/zvFyF5xW/ryan-metcalf-felbat-01.jpg",
+    "w": "Warcraft",
+    "d": "",
+    "b": [
+      "M",
       "dr",
+      "im",
+      "cr",
       "dm",
-      "Succubus",
+      "ev"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 3106457,
+    "n": "Fel Stalker",
+    "t": 4,
+    "i": "Hearthstone-Felstalker.jpg",
+    "s": "https://scifivoice.com/wp-content/uploads/2021/02/Hearthstone-Felstalker.jpg",
+    "w": "Warcraft",
+    "d": "",
+    "b": [
+      "M",
+      "dr",
+      "im",
+      "cr",
+      "dm",
+      "ev"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 5778653,
+    "n": "Wyrmtongue",
+    "t": 4,
+    "i": "ryan-metcalf-rmetcalf-wyrmtongue-00.jpg",
+    "s": "https://cdnb.artstation.com/p/assets/images/images/002/973/785/large/ryan-metcalf-rmetcalf-wyrmtongue-00.jpg",
+    "w": "Warcraft",
+    "d": "",
+    "b": [
+      "M",
+      "ml",
+      "dr",
+      "im",
+      "cr",
+      "dm",
+      "ev"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 9915276,
+    "n": "inquisitor",
+    "t": 5,
+    "i": "ryan-metcalf-ryanmetcalf-inquisitor.jpg",
+    "s": "https://cdnb.artstation.com/p/assets/images/images/007/964/143/large/ryan-metcalf-ryanmetcalf-inquisitor.jpg",
+    "w": "Warcraft",
+    "d": "",
+    "b": [
+      "M",
+      "dr",
+      "im",
+      "cr",
+      "dm",
+      "ev"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 4776993,
+    "n": "Imp Mother",
+    "t": 5,
+    "i": "ryan-metcalf-imp-mother-ryan-metcalf.jpg",
+    "s": "https://cdna.artstation.com/p/assets/images/images/007/964/002/large/ryan-metcalf-imp-mother-ryan-metcalf.jpg",
+    "w": "Warcraft",
+    "d": "",
+    "b": [
+      "F",
+      "mt",
+      "dr",
+      "im",
+      "cr",
+      "dm",
+      "wh",
+      "ev"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 1775796,
+    "n": "Doomguard",
+    "t": 5,
+    "i": "ryan-metcalf-doomguard-01-ryanmetcalf.jpg",
+    "s": "https://cdna.artstation.com/p/assets/images/images/007/963/792/large/ryan-metcalf-doomguard-01-ryanmetcalf.jpg",
+    "w": "Warcraft",
+    "d": "",
+    "b": [
+      "M",
+      "dr",
+      "im",
+      "cr",
+      "dm",
+      "ev"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 2757216,
+    "n": "Fel Lord",
+    "t": 5,
+    "i": "ryan-metcalf-fellord-01.jpg",
+    "s": "https://cdnb.artstation.com/p/assets/images/images/002/973/777/large/ryan-metcalf-fellord-01.jpg",
+    "w": "Warcraft",
+    "d": "",
+    "b": [
+      "M",
+      "dr",
+      "im",
+      "cr",
+      "dm",
+      "ev"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 3256173,
+    "n": "Infernal",
+    "t": 5,
+    "i": "ryan-metcalf-infernal-ryanmetcalf.jpg",
+    "s": "https://cdnb.artstation.com/p/assets/images/images/007/963/921/large/ryan-metcalf-infernal-ryanmetcalf.jpg",
+    "w": "Warcraft",
+    "d": "",
+    "b": [
+      "O",
+      "hr",
+      "hz",
+      "im",
+      "cr",
+      "dm",
+      "ev"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 1963047,
+    "n": "Nathrezim - Dreadlord",
+    "t": 6,
+    "i": "ryan-metcalf-nethrezim-dreadlord-ryanmetcalf.jpg",
+    "s": "https://cdnb.artstation.com/p/assets/images/images/007/964/063/large/ryan-metcalf-nethrezim-dreadlord-ryanmetcalf.jpg",
+    "w": "Warcraft",
+    "d": "",
+    "b": [
+      "M",
+      "mp",
+      "dr",
+      "im",
+      "cr",
+      "sc",
+      "dm",
+      "ps",
+      "sr",
+      "ev"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 7818410,
+    "n": "Ghazghkull Thraka",
+    "t": 8,
+    "i": "rok-kleva-ivancic-orc-fanart6.jpg",
+    "s": "https://cdna.artstation.com/p/assets/images/images/039/351/888/large/rok-kleva-ivancic-orc-fanart6.jpg",
+    "w": "Warhammer 40K",
+    "d": "",
+    "b": [
+      "M",
+      "hr",
+      "hz",
+      "th",
+      "cb",
+      "rl",
+      "al"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 9881793,
+    "n": "Ciaphas Cain",
+    "t": 4,
+    "i": "vladimir-krisetskiy-choose-your-enemies-at.jpg",
+    "s": "https://i.postimg.cc/kMLbkkTP/vladimir-krisetskiy-choose-your-enemies-at.jpg",
+    "w": "Warhammer 40K",
+    "d": "",
+    "b": [
+      "M",
+      "cl",
+      "gn",
+      "sa"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 2781723,
+    "n": "Sisters of Twilight (Naestra & Arahan)",
+    "t": 7,
+    "i": "zara-alfonso-zara-alfonso-twisted-twilight-total-war-warhammer-ii-dlc-key-art-1500signed.jpg",
+    "s": "https://i.postimg.cc/qRdFbmWs/zara-alfonso-zara-alfonso-twisted-twilight-total-war-warhammer-ii-dlc-key-art-1500signed.jpg",
+    "w": "Warhammer Fantasy",
+    "d": "",
+    "b": [
+      "F",
+      "mt",
+      "dg",
+      "el",
+      "mi",
       "tw"
     ],
-    "k": "Cyrus"
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 2282097,
+    "n": "Caine - The Father of Vampires",
+    "t": 10,
+    "i": "Caine.png",
+    "s": "https://whitewolf.fandom.com/wiki/Caine?file=Caine.png",
+    "w": "World of Darkness",
+    "d": "Old",
+    "b": [
+      "M",
+      "hz",
+      "mp",
+      "dr",
+      "id",
+      "im",
+      "mr",
+      "un",
+      "de",
+      "vp",
+      "rl"
+    ],
+    "k": "exsailor1999"
+  },
+  {
+    "u": 2065037,
+    "n": "Takasago Tomoe",
+    "t": 1,
+    "i": "__takasago_tomoe_eromanga_sensei_drawn_by_picolette_xiii__sample-c7c03665d734ef978e708ebe567168b2.jpg",
+    "s": "https://cdn.donmai.us/sample/c7/c0/__takasago_tomoe_eromanga_sensei_drawn_by_picolette_xiii__sample-c7c03665d734ef978e708ebe567168b2.jpg",
+    "w": "Eromanga-Sensei",
+    "d": "",
+    "b": [
+      "F",
+      "sd"
+    ],
+    "in": "https://cdn.donmai.us/original/a6/ea/__takasago_tomoe_eromanga_sensei_drawn_by_nora_shinji__a6ea03404cee481cbaac9ae59b502337.jpg",
+    "k": "Sarrior"
+  },
+  {
+    "u": 2657234,
+    "n": "Izumi Masamune",
+    "t": 1,
+    "i": "__izumi_sagiri_yamada_elf_and_izumi_masamune_eromanga_sensei_drawn_by_pangohan__570d5384ab4f8b653c4f6a14452751ee.jpg",
+    "s": "https://cdn.donmai.us/original/57/0d/__izumi_sagiri_yamada_elf_and_izumi_masamune_eromanga_sensei_drawn_by_pangohan__570d5384ab4f8b653c4f6a14452751ee.jpg",
+    "w": "Eromanga-Sensei",
+    "d": "",
+    "b": [
+      "M",
+      "sd"
+    ],
+    "k": "Sarrior"
+  },
+  {
+    "u": 2216132,
+    "n": "Amanda Rogers",
+    "t": 11,
+    "i": "03560489d5ec3fb560d1aeea01001ea7.jpg",
+    "s": "https://i.pinimg.com/736x/03/56/04/03560489d5ec3fb560d1aeea01001ea7.jpg",
+    "w": "Star Trek",
+    "d": "",
+    "b": [
+      "F",
+      "im",
+      "ur",
+      "tm",
+      "gd",
+      "al"
+    ],
+    "k": "Tetron"
   }
 ]

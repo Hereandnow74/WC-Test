@@ -197,7 +197,7 @@ export function bindingAvailable(bin: Binding): boolean {
     return true
   }
   else {
-    if (!bin.whitelist)
+    if (!bin.whitelist && findIndex(binding.value, { title: bin.title }) !== -1)
       return true
     if (bin.blacklist && findIndex(binding.value, { title: bin.blacklist[0] }) !== -1)
       return false
@@ -216,7 +216,7 @@ export function chooseLure(lure: Binding, saveData: Perk) {
     const ind = findIndex(luresBought.value, { title: lure.title })
     if (ind === -1) {
       allEffects.value.push(lure.title)
-      luresBought.value.push({ title: lure.title, cost: saveData.cost })
+      luresBought.value.push(saveData)
       if (lure.freebies) addFreebies(lure.freebies)
     }
     else {

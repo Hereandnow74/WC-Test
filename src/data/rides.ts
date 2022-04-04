@@ -443,6 +443,7 @@ DLCRides.push({
   uid: 'q5YPq',
   dlc: 'KatzSmile',
   title: 'Bullhead',
+  image: 'https://i.ibb.co/G0zK8mh/Bullhead.jpg',
   source: 'RWBY',
   category: 'Sky',
   size: 'Medium',
@@ -458,6 +459,7 @@ DLCRides.push({
   uid: 'BG3pQ',
   dlc: 'KatzSmile',
   title: 'Jumpship',
+  image: 'https://i.ibb.co/yQR7MKv/Jumpship.jpg',
   source: 'Destiny',
   category: 'Space',
   size: 'Medium',
@@ -466,9 +468,23 @@ DLCRides.push({
 })
 
 DLCRides.push({
+  uid: 'PvzQL',
+  dlc: 'KatzSmile',
+  title: 'A-Team Van',
+  image: 'https://i.ibb.co/PWPjNKR/ATeamVan.jpg',
+  source: 'A-Team',
+  category: 'Land',
+  size: 'Small',
+  capacity: '1 driver, 7 passengers',
+  cost: 5,
+  desc: 'Iconic van from A-Team action TV-series',
+})
+
+DLCRides.push({
   uid: 'DhB0Z',
   dlc: 'KatzSmile',
   title: 'M-Class Scout Vessel',
+  image: 'https://i.ibb.co/th7wZbY/MClass-Scout-Vessel.jpg',
   source: 'Guardians of the Galaxy',
   category: 'Space',
   size: 'Medium',
@@ -482,6 +498,7 @@ DLCRides.push({
   uid: 'dw1Py',
   title: 'Batmobile',
   source: 'Arkham Knight',
+  image: 'https://i.ibb.co/4sQZvVH/Batmobile.jpg',
   category: 'Land',
   size: 'Small',
   cost: 20,
@@ -493,6 +510,7 @@ DLCRides.push({
 DLCRides.push({
   uid: 'kFNfa',
   title: 'Mantle’s Approach',
+  image: 'https://i.ibb.co/HKC86zK/Mantles-Approach.jpg',
   source: 'Halo',
   category: 'Space',
   size: 'Gigantic',
@@ -503,6 +521,7 @@ DLCRides.push({
 DLCRides.push({
   uid: 'jerNB',
   title: 'M.S. Prima Vista',
+  image: 'https://i.ibb.co/jWc0S8Y/MSPrima-Vista.jpg',
   source: 'Final Fantasy IX',
   category: 'Sky',
   size: 'Medium',
@@ -518,6 +537,7 @@ DLCRides.push({
 DLCRides.push({
   uid: 'ktwdG',
   title: 'Starfleet Invincible-class',
+  image: 'https://i.ibb.co/VMNNHrs/Starfleet-Invincible-Class.jpg',
   source: 'Star Trek Vanguard Universe',
   category: 'Space',
   size: 'Large',

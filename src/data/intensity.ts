@@ -6,6 +6,7 @@ export interface Intensity {
   uid: string
   title: string
   intensity: number
+  image?: string
   special?: string
   blacklist?: string[]
   whitelist?: string[]
@@ -22,6 +23,7 @@ export const intensity: Intensity[] = []
 intensity.push({
   uid: 'k5YNK',
   title: 'Me and My Girlfriend(s)(PvE)',
+  image: 'https://i.ibb.co/WgYf6Dn/Me-And-My-Girlfriend-S.jpg',
   intensity: 0,
   special: 'Chargen only',
   chargen: true,
@@ -30,6 +32,7 @@ intensity.push({
 intensity.push({
   uid: '02cmy',
   title: 'With A Little Help From My Friends(Cooperative)',
+  image: 'https://i.ibb.co/37md39J/With-ALittle-Help-From-My-Friends.jpg',
   intensity: 0.2,
   special: 'Chargen only',
   chargen: true,
@@ -39,6 +42,7 @@ intensity.push({
 intensity.push({
   uid: 'IpXK4',
   title: 'Couple’s Account(Cooperative)',
+  image: 'https://i.ibb.co/Vt1Sphq/Couple-SAccount.jpg',
   intensity: 0,
   special: 'Chargen only. May not be taken on DR11.',
   blacklist: ['DR11 start'],
@@ -50,6 +54,7 @@ intensity.push({
 intensity.push({
   uid: 'jUgfP',
   title: 'DR11 start',
+  image: 'https://i.ibb.co/XVm9GqG/DR11-Start2.jpg',
   intensity: 0,
   special: 'Chargen only',
   chargen: true,
@@ -62,6 +67,7 @@ intensity.push({
 intensity.push({
   uid: 'vDDFM',
   title: 'Cash Still Rules',
+  image: 'https://i.ibb.co/3yVkg19/Cash-Still-Rules.jpg',
   intensity: 0,
   special: 'Chargen only. May not be taken on DR11.',
   blacklist: ['DR11 start'],
@@ -72,6 +78,7 @@ intensity.push({
 intensity.push({
   uid: 'zKams',
   title: 'Calming Up',
+  image: 'https://i.ibb.co/Tt1b55t/Calming-Up.jpg',
   intensity: 0,
   special: 'Chargen only.',
   chargen: true,
@@ -80,6 +87,7 @@ intensity.push({
 intensity.push({
   uid: 'vnsnY',
   title: 'Wage Slave',
+  image: 'https://i.ibb.co/By4QXkR/Wage-Slave.jpg',
   intensity: 0.6,
   special: 'Chargen only. May not be taken on DR11.',
   chargen: true,

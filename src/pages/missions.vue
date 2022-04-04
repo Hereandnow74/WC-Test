@@ -50,7 +50,7 @@
     <Note v-if="page === 1" class="mb-2" type="warning" title="Work in progress">
       This section is in WIP stage, you can suggest simple missions/conditions/objectives for random mission generation on Discord
     </Note>
-    <div class="grid lg:grid-cols-2 gap-4 pb-8 justify-center">
+    <div class="grid 2xl:grid-cols-3 lg:grid-cols-2 gap-4 pb-8 justify-center">
       <MissionCard v-for="mission in displayedMissions" :key="mission.title" class="max-w-[600px]" :mission="mission" />
     </div>
     <div class="h-8"></div>

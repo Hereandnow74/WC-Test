@@ -98,13 +98,13 @@
           <div
             :class="image==='' && nsfw==='' ? 'bg-gray-700':''"
             class="hover:bg-gray-700 text-green-300 px-2 rounded-l"
-            @click="(image='', nsfw='', favorite=false)"
+            @click="(image='', nsfw='', favorite=0)"
           >
             all
           </div>
           <div
             :class="image==='!cvxz' ? 'bg-gray-700':''"
-            class="border-l px-2 hover:bg-gray-700 text-gray-200 rounded-r"
+            class="border-l px-2 hover:bg-gray-700 text-gray-200"
             title="Have Image"
             @click="image === ''? image='!cvxz' : image=''"
           >
@@ -112,32 +112,32 @@
           </div>
           <div
             :class="nsfw==='!cvxz' ? 'bg-gray-700':''"
-            class="border-l px-2 hover:bg-gray-700 text-gray-200 rounded-r"
+            class="border-l px-2 hover:bg-gray-700 text-gray-200"
             title="Have NSFW Image"
             @click="nsfw === ''? nsfw='!cvxz' : nsfw=''"
           >
             nsfw
           </div>
           <div
-            :class="favorite ? 'bg-red-600':''"
-            class="border-l px-2 hover:bg-gray-700 text-gray-200 rounded-r"
+            :class="{'bg-red-600': favorite === -1, 'bg-green-600': favorite === 1}"
+            class="border-l px-2 hover:bg-gray-700 text-gray-200"
             title="Favorites"
-            @click="() => favorite = !favorite"
+            @click="favorite = threeToggle(favorite)"
           >
             fav
           </div>
           <div
-            :class="retinue ? 'bg-green-600':''"
+            :class="{'bg-red-600': retinue === -1, 'bg-green-600': retinue === 1}"
             class="border-l px-2 hover:bg-gray-700 text-gray-200 rounded-r"
             title="Retinue"
-            @click="() => retinue = !retinue"
+            @click="retinue = threeToggle(retinue)"
           >
             ret
           </div>
         </div>
         <bi:gear-fill class="icon-btn" @click="toggleSearchSetting" />
         <div class="hidden md:block">
-          {{ secondFilter.length }} results
+          {{ sortedResults.length }} results
         </div>
         <Button label="Add Character" size="Small" @click="() => (editMode = false, toggleShowAddCharacter())" />
       </div>
@@ -243,8 +243,8 @@ const position = ref(0)
 const gender = ref('')
 const image = ref('')
 const nsfw = ref('')
-const favorite = ref(false)
-const retinue = ref(false)
+const favorite = ref(0)
+const retinue = ref(0)
 
 const sortAlpha = ref(0)
 const sortRating = ref(0)
@@ -346,34 +346,10 @@ const tagsExclude = computed(() => Object.keys(tagToggles).filter(key => tagTogg
 
 const blockedSet = computed(() => new Set(blockedWorlds.value))
 
-const secondFilter = computed(() => {
-  const tagsI = (x: DBCharacter) => intersection(x.b, tagsInclude.value).length === tagsInclude.value.length
-  const tagsE = (x: DBCharacter) => !some(x.b, x => tagsExclude.value.includes(x))
-  const tier = (x: DBCharacter) => x.t >= minTier.value && x.t <= maxTier.value
-  const blocked = (x: DBCharacter) => !blockedSet.value.has(x.w)
-
-  const allFilters = [] as ((arg0: DBCharacter) => boolean)[]
-
-  if (tagsInclude.value.length)
-    allFilters.push(tagsI)
-  if (tagsExclude.value.length)
-    allFilters.push(tagsE)
-  if (minTier.value !== 1 || maxTier.value !== 11)
-    allFilters.push(tier)
-  if (blockedSet.value.size)
-    allFilters.push(blocked)
-
-  return allFilters.length
-    ? charArr.value.filter((x) => {
-      return every(allFilters, val => val(x))
-    })
-    : charArr.value
-})
-
-watch([secondFilter, charArr], () => {
-  fuse.setCollection(secondFilter.value)
-  fuseNoSort.setCollection(secondFilter.value)
-})
+// watch([secondFilter, charArr], () => {
+//   fuse.setCollection(secondFilter.value)
+//   fuseNoSort.setCollection(secondFilter.value)
+// })
 
 const filteredCharacters = computed(() => {
   const sr = search.value || '!^xxx'
@@ -424,12 +400,38 @@ const filteredCharacters = computed(() => {
 
   if (image.value) sopt.$and.push({ i: image.value })
   if (nsfw.value) sopt.$and.push({ in: nsfw.value })
-  if (favorite.value) sopt.$and.push({ u: `=${favorites.value.join('|=')}` })
-  if (retinue.value) sopt.$and.push({ u: `=${Object.keys(companionsUIDs.value).join('|=')}` })
+  if (favorite.value === 1) sopt.$and.push({ u: `=${favorites.value.join('|=')}` })
+  if (favorite.value === -1) sopt.$and.push({ u: `!^${favorites.value.join(' !^')}` })
+  if (retinue.value === 1) sopt.$and.push({ u: `=${Object.keys(companionsUIDs.value).join('|=')}` })
+  if (retinue.value === -1) sopt.$and.push({ u: `!^${Object.keys(companionsUIDs.value).join(' !^')}` })
 
   if (search.value.length === 0)
     return fuseNoSort.search(sopt)
   return fuse.search(sopt)
+})
+
+const secondFilter = computed(() => {
+  const tagsI = (x: DBCharacter) => intersection(x.b, tagsInclude.value).length === tagsInclude.value.length
+  const tagsE = (x: DBCharacter) => !some(x.b, x => tagsExclude.value.includes(x))
+  const tier = (x: DBCharacter) => x.t >= minTier.value && x.t <= maxTier.value
+  const blocked = (x: DBCharacter) => !blockedSet.value.has(x.w)
+
+  const allFilters = [] as ((arg0: DBCharacter) => boolean)[]
+
+  if (tagsInclude.value.length)
+    allFilters.push(tagsI)
+  if (tagsExclude.value.length)
+    allFilters.push(tagsE)
+  if (minTier.value !== 1 || maxTier.value !== 11)
+    allFilters.push(tier)
+  if (blockedSet.value.size)
+    allFilters.push(blocked)
+
+  return allFilters.length
+    ? filteredCharacters.value.filter((x) => {
+      return every(allFilters, val => val(x.item))
+    })
+    : filteredCharacters.value
 })
 
 const sortingFunc = (a: any, b: any) =>
@@ -439,18 +441,17 @@ const sortingFunc = (a: any, b: any) =>
 
 const sortedResults = computed(() => {
   if (shuffleOn.value)
-    return shuffle(filteredCharacters.value)
+    return shuffle(secondFilter.value)
   if (sortRating.value || sortAlpha.value || sortWorld.value)
-    return [...filteredCharacters.value].sort(sortingFunc)
-  return filteredCharacters.value
+    return [...secondFilter.value].sort(sortingFunc)
+  return secondFilter.value
 })
 
 const slicedChars = computed(() => {
   // const groupped = groupBy(filteredCharacters.value, (n) => { return n.item.u })
   // const result = uniq(flatten(filter(groupped, (n) => { return n.length > 1 })))
   // return result.slice(limit.value > 100 ? limit.value - 100 : 0, limit.value)
-  const slice = sortedResults.value.slice(position.value, position.value + limit.value)
-  return slice
+  return sortedResults.value.slice(position.value, position.value + limit.value)
 })
 
 watch(sortedResults, () => {
@@ -472,6 +473,7 @@ const opt = {
 const observer = new IntersectionObserver(visibilityChanged, opt)
 
 watch(slicedChars, () => {
+  if (sortedResults.value.length <= limit.value) return
   observer.disconnect()
   if (firstCard.value && lastCard.value) {
     firstCard.value.id = ''

@@ -91,12 +91,6 @@
     "rating": 6
   },
   {
-    "worldName": "Genshin Impact",
-    "rating": 6,
-    "image": "https://i.redd.it/bkyksnvilea61.png",
-    "additional": "Lumine (and Aether) has the T1 version of Paimon as a humanoid familiar. If you have both, they’ll share her."
-  },
-  {
     "worldName": "Goblin Slayer",
     "rating": 7
   },
@@ -165,21 +159,6 @@
       {
         "rating": 5,
         "name": "1971 (Open Warfare)"
-      }
-    ]
-  },
-  {
-    "worldName": "Hololive",
-    "rating": 6,
-    "additional": "All characters are drawn from the Hololive Alternative setting. Haato and Haachama can merge into one body and split back into two at will; as long as one is alive, the other will resurrect as if you have Warranty Plan.\nIf you choose the Almost Real Life condition, you will heading to a world mimicing your own modern world, but with the occasional Demi-human and some alternative Dimensions / worlds. Such as Dragon World and the Afterlife.",
-    "condition": [
-      {
-        "rating": 6,
-        "name": "Hololive Alternative"
-      },
-      {
-        "name": "Almost Real Life.",
-        "rating": 4
       }
     ]
   },
@@ -2127,13 +2106,7 @@
   },
   {
     "worldName": "Coiling Dragon",
-    "rating": 10,
-    "condition": [
-      {
-        "rating": 7,
-        "name": "Spirit Intervention"
-      }
-    ]
+    "rating": 10
   },
   {
     "worldName": "Desolate Era",
@@ -2531,5 +2504,7 @@
         "rating": 10
       }
     ]
-  }
+  },
+  {"worldName":"Tales of Demons and Gods","rating":7,"additional":"Non-humanoid familiars may be integrated as demon spirits. (Pokemon, Digimon, etc.)\nDemon Spirit integration counts as an independent control method.","condition":[{"rating":6,"name":"Glory City"},{"rating":8,"name":"Draconic Ruins Realm"},{"rating":10,"name":"Original Time-line (Pre reincarnation)"}]},
+  {"worldName":"Uzaki-chan wa Asobitai!","rating":1}
 ]

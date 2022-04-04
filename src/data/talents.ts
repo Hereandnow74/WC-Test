@@ -791,7 +791,7 @@ genericPerks.push({
 genericPerks.push({
   uid: 'I7GFa',
   title: 'Power Swap',
-  image: '',
+  image: 'https://i.ibb.co/F6NjTfp/Power-Swap.jpg',
   cost: 0,
   desc: `
   <p><b>Cost</b>: Find the purchase price for the subject’s tier at step 1a and the purchase price of the tier of the power’s original owner, then take the difference. Swapping out a Tier 4’s power for a Tier 10’s thus costs 990 credits, while a Tier 5 for a Tier 5 costs 0 and a Tier 6 for a Tier 2 gives you a refund of 48 credits. Only Purchased subjects refund credits if reduced to a lower tier by this perk. Captured subjects grant capture credits, and do not have a refund value.</p>

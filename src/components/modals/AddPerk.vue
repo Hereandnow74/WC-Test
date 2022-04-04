@@ -60,8 +60,7 @@ import { toFormValidator } from '@vee-validate/zod'
 import { proposePerk } from '~/logic'
 import { ALL_PERK_TITLES } from '~/data/constants'
 
-const perkCats = ['Challenge', 'Origin', 'Intensity', 'Binding', 'Lure', 'Other control', 'Heritage', 'Talent',
-  'Defense', 'Misc', 'Generic waifu perk', 'Specific waifu perk']
+const perkCats = ['Challenge', 'Origin', 'Intensity', 'Binding', 'Lure', 'Other control', 'Heritage', 'Demiplane & Dungeons', 'Talent', 'Defense', 'Other', 'Generic waifu perk', 'Specific waifu perk']
 const subTypes = {
   Heritage: ['Dragon', 'Transhuman', 'Outsider'],
   Binding: ['Stamp', 'Jewelry', 'Ritual', 'Shroud', 'Symbiote'],

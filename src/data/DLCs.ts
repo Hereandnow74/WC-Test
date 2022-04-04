@@ -147,6 +147,7 @@ DLCperks.push({
   dlc: 'CelestialDragon DLC',
   dlclink: 'https://docs.google.com/spreadsheets/d/1FM6PNbDEyZV4T4rVLWjPYBc3O0jmmwd1obkFD7jLDt8/edit?usp=sharing',
   title: 'Returning Home',
+  image: 'https://i.ibb.co/prHZrjj/Returning-Home.jpg',
   cost: 0,
   desc: 'At the end of your first world, or after you complete the mission or at your own discretion you can return home with all the powers, perks and waifus that you obtained. Able to go back and forth between worlds at any time. The time on Earth will not have moved since you left and you can change how fast or slow (or at all) Earths time and the other worlds time flow.',
   whitelist: ['Exit Stage Left'],
@@ -156,6 +157,7 @@ DLCperks.push({
   uid: 'jcBEK',
   dlc: 'BenFang322',
   title: 'Appearance Change',
+  image: 'https://i.ibb.co/1zKj6dB/Appearance-Change.jpg',
   cost: 1,
   desc: `
   Because sometimes you just don’t like the way you look, and would rather look different or like someone else instead. Can only be used to change cosmetic aspects of yourself only, and provide’s no practical benefits outside of a different appearance.
@@ -167,6 +169,7 @@ DLCperks.push({
   uid: 'V7siL',
   dlc: 'windshadow21',
   title: 'Normalcy',
+  image: 'https://i.ibb.co/crcCGfs/Normalcy.jpg',
   cost: 10,
   desc: `
   Generally people - much like in your old world - would be a bit confused by a single person, having a very 'consenting' group of Companions. With this, everyone will just assume that the things you and your Companions do are normal, if you don't stretch it too much.
@@ -179,6 +182,7 @@ DLCperks.push({
   dlc: 'DLC by Gforce1000',
   dlclink: 'https://imgur.com/gallery/suU1RXx',
   title: 'Time-Savers',
+  image: 'https://i.ibb.co/s6b25Kb/Time-Savers.jpg',
   cost: 2,
   desc: `
   You humans have to do so much useless stuff that just wastes the day away in order to simply function. No more! Your body is now self cleaning, meaning you'll almost always stay sparkly, well groomed, and smelling great. All of your hair and nails will eternally be at your desired length. You'll be able to fall asleep within a few minutes of trying to, and you'll only need six hours to feel completely rested and rejuvenated. Finally you'll never have to excrete any sort of waste ever again. It says here that all of these can be turned down or off whenever you like, but come on? What possible reason would someone want to be able to, lets say, go to the bathroom if you never need to again? ...It's a fetish thing, isn't it?
@@ -190,6 +194,7 @@ DLCperks.push({
   dlc: 'DLC by Despin',
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'I Want Out',
+  image: 'https://i.ibb.co/02cZWg7/IWantOut.jpg',
   cost: 20,
   desc: `
   A portal opens to a new world of your choice. The portal is one-way only, and will last no more than two minutes or until you and all of your retinue have passed through, whichever is shorter. If any of your retinue stay behind, this perk will not help you retrieve them. 
@@ -202,6 +207,7 @@ DLCperks.push({
   dlc: 'DLC by Despin',
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'Trajectory. Agreement.',
+  image: 'https://i.ibb.co/gF2MNTH/Trajectory-Agreement.jpg',
   cost: 200,
   desc: `
   <p>You are capable of Unrestricted Multiversal Travel. </p>
@@ -226,6 +232,7 @@ DLCperks.push({
   dlc: 'DLC by Merior',
   dlclink: 'https://docs.google.com/document/d/1j9emHb4IWvOTnp13RASTAuINAFuKDMSSQyQ-7ta9sjA/edit#',
   title: 'Gone And Forgotten',
+  image: 'https://i.ibb.co/561Q7WM/Gone-And-Forgotten.jpg',
   cost: 10,
   desc: `When you sell a waifu to the Company all traces of them begin to vanish. Others will not notice the waifu's absence and, over the course of a year and a day, memories and physical evidence will change to match that the waifu had never existed at all.
   <p>At the moment of each sale may opt to have your memories, your other waifus memories, the sold waifu's name on the Company's list of purchasable waifus, and/or any evidence stored in your Sweet Home to be unaffected.</p>
@@ -237,6 +244,7 @@ DLCperks.push({
   dlc: 'DLC by Merior',
   dlclink: 'https://docs.google.com/document/d/1j9emHb4IWvOTnp13RASTAuINAFuKDMSSQyQ-7ta9sjA/edit#',
   title: 'Pavlov\'s Bell',
+  image: 'https://i.ibb.co/St7W2s8/Pavlov-SBell.jpg',
   cost: 10,
   desc: `A new app installed on your Company device can directly inflict sensation you wish on your waifu's at the touch of a button. The default settings are a sourceless pleasure or pain of any desired intensity but more complex sensations, lack of sensation, or sequences are possible.
   <p>As a safeguard against abuse, your waifu's cannot perceive any options which induce sensations on herself personally nor act to prevent you from using the app upon her or others. If combined with the Target Tracker perk, then a waifu's activities and condition can be programmed to trigger specific sensations.</p>
@@ -248,6 +256,7 @@ DLCperks.push({
   dlc: 'Mortaegus’s Mod',
   dlclink: 'https://forum.questionablequesting.com/threads/r34-economy-cyoa-thread.11289/page-568#post-3866836',
   title: 'Patron Income',
+  image: 'https://i.ibb.co/LPWzYnn/Patron-Income.jpg',
   cost: 1000,
   multiple: true,
   max: 99,
@@ -260,6 +269,7 @@ DLCperks.push({
   dlc: 'Mortaegus’s Mod',
   dlclink: 'https://forum.questionablequesting.com/threads/r34-economy-cyoa-thread.11289/page-568#post-3866836',
   title: 'Abandoned Assets',
+  image: 'https://i.ibb.co/CtDmMtR/Abandoned-Assets.jpg',
   cost: 10,
   costVariants: [10, 100, 1000],
   multiple: true,
@@ -273,6 +283,7 @@ DLCperks.push({
   uid: 'kHybZ',
   dlc: 'Bluesnowman',
   title: 'Memorabilia',
+  image: 'https://i.ibb.co/0GX1NqX/Memorabilia.jpg',
   cost: 5,
   multiple: true,
   max: 3,
@@ -286,6 +297,7 @@ DLCperks.push({
   uid: 'opART',
   dlc: 'Bluesnowman',
   title: 'Let Them Know',
+  image: 'https://i.ibb.co/p4x5Mnn/Let-Them-Know.jpg',
   cost: 10,
   desc: `Sometimes you want to let the people of a setting know just how things might turn out had you not interfered, either before or after the the fact. With this perk it can be done in a way of your preference, be it sudden revelation, TV show, or just unquestionable confidence in your words.
   <p>Future events that may be shown by this perk need to be known by you or you need to have the ability to learn about them.</p>
@@ -298,6 +310,7 @@ DLCperks.push({
   dlc: 'DLC by Despin',
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'Amazon-free Warranty',
+  image: 'https://i.ibb.co/yn9FF3j/Amazon-Free-Warranty.jpg',
   cost: 200,
   multiple: true,
   max: 4,
@@ -315,6 +328,7 @@ DLChomes.push({
   dlc: 'DLC by Despin',
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'Creature Feature I',
+  image: 'https://i.ibb.co/9Y746Qf/Creature-Feature-I.jpg',
   cost: 500,
   desc: `From your control center, you can select any non-sapient wildlife you have encountered of T6 or less to populate your Demiplane. Binding wildlife from your Demiplane as a Familiar may be possible, but does not provide credits.
   <p>Examples: Jurassic Park, Star Wars’ Rancor and Krayt Dragon</p>
@@ -327,6 +341,7 @@ DLChomes.push({
   dlc: 'DLC by Despin',
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'Creature Feature II',
+  image: 'https://i.ibb.co/GsP7G0g/Creature-Feature-II.jpg',
   cost: 11111,
   desc: `From your control center, you can select any wildlife you have encountered to populate your Demiplane. Binding wildlife from your Demiplane as a Familiar may be possible, but does not provide credits.
   <p>Examples: nearly anything from Dungeons & Dragons, Go Go Godzilla!</p>
@@ -339,6 +354,7 @@ DLChomes.push({
   dlc: 'DLC by Despin',
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'A God Am I',
+  image: 'https://i.ibb.co/0X86GqM/AGodAmI.jpg',
   cost: 11111,
   desc: `From your control center, you can create life to populate your Demiplane. Binding creatures from your Demiplane may be possible, but does not provide credits.
   <p>If you aren’t already, you become a T11 yourself.</p>
@@ -350,6 +366,7 @@ DLChomes.push({
   uid: 'mOIQR',
   dlc: 'DaemonOrk',
   title: 'God of Time',
+  image: 'https://i.ibb.co/TBmfsyQ/God-Of-Time.jpg',
   cost: 11111,
   desc: `You can already create life, but now you want to add some randomness to it. So long as neither you or your retinue members are inside, time can now be sped up within your demiplane up to 1 million times. Allowing things to evolve naturally.
     `,
@@ -361,6 +378,7 @@ DLChomes.push({
   dlc: 'DLC by Despin',
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'Control Center App',
+  image: 'https://i.ibb.co/qkygJxz/Control-Center-App.jpg',
   cost: 10,
   needed: 1,
   desc: 'The control center provided by Grand Manor/Life’s A Beach is now an app on your smart device.',
@@ -371,6 +389,7 @@ DLChomes.push({
   uid: 'BxyZw',
   dlc: 'KatzSmile',
   title: 'Stay in touch',
+  image: 'https://i.ibb.co/k5pzxb7/Stay-In-Touch.jpg',
   cost: 5,
   desc: 'High speed internet service covering any and all dimensions no matter the location, magic ward, or jamming technology. A modem-router and replacements are provided for free.',
   whitelist: ['Pocket Apartment'],
@@ -380,6 +399,7 @@ DLChomes.push({
   uid: 'whxCA',
   dlc: 'KatzSmile',
   title: 'My House, My Rules!',
+  image: 'https://i.ibb.co/g9bQhR5/My-House-My-Rules.jpg',
   special: 'Will not work on anyone with mental defences and T8+ characters.',
   cost: 10,
   desc: 'Do you have your own home or maybe the island you own legally? Do you want to have a little more control over everything that happens inside? Want to ban Hawaiian shirts? Make pineapple pizza illegal? Or maybe obscene curses harm your mental well-being? Or maybe everyone should wear crocs with white socks? Now it is possible! You can now set your own rules of conduct here. Just read them out loud and any of your companions, guests or visitors will be compelled to follow them and find them reasonable. It effect does not count as mind control and all possible side-effects from it will be rationalized as unimportant when they leave area of effect.',
@@ -390,6 +410,7 @@ DLChomes.push({
   uid: 'smb9b',
   dlc: 'GForce1000',
   title: 'Armory',
+  image: 'https://i.ibb.co/HtCJ5bW/Armory2.jpg',
   cost: 10,
   desc: 'A room-or pocket-dimensional space similar to the Pocket Space perk full of weapons, armor, and ammunition becomes available to you with this upgrade. It holds a wide variety of standard and specialized equipment from both your new world and your old one. This does include equipment that would normally only be available to special forces, but does not include custom-made or heavily customized variants on weapons. Weapons you or your companions acquire in the field can be sent to this armory with a few seconds of concentration, and each of you can choose up to ten pieces of equipment - such as a gun, a shield, or a full set of armor - to be able to equip or return at will. The armory will automatically repair and maintain weapons stored within it. This doesn\'t work for fully destroyed artifact items unless you help supply the magical oomph.',
   whitelist: ['Sweet Home'],
@@ -400,6 +421,7 @@ DLChomes.push({
   dlc: 'DLC by Despin',
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'Home Security',
+  image: 'https://i.ibb.co/rtt8nK0/Security.jpg',
   cost: 0,
   desc: 'The portals to access your Pocket Apartment, and any perks that follow from it, can not be perceived or entered by anything you do not allow, including creatures, contaminants, and remote viewing.',
   whitelist: ['Pocket Apartment'],
@@ -464,6 +486,7 @@ DLClures.push({
   uid: 'ugDHv',
   dlc: 'DLC by Merior',
   dlclink: 'https://docs.google.com/document/d/1j9emHb4IWvOTnp13RASTAuINAFuKDMSSQyQ-7ta9sjA/edit#',
+  image: 'https://i.ibb.co/sFDhQBX/Fools-Gold.jpg',
   title: 'Fools Gold',
   cost: 10,
   desc: 'Waifus who are motivated by gaining money, for whatever reason, and who have unwillingly been rendered poor are more attracted to you. This attraction is based upon the signs of wealth, conspicuous consumption, and casual spending that they become aware of as shown by you and your waifus.',
@@ -473,6 +496,7 @@ DLClures.push({
   uid: '2YzxQ',
   dlc: 'DLC by Merior',
   dlclink: 'https://docs.google.com/document/d/1j9emHb4IWvOTnp13RASTAuINAFuKDMSSQyQ-7ta9sjA/edit#',
+  image: 'https://i.ibb.co/2sVT2BZ/Stud-Service.jpg',
   title: 'Stud Service',
   cost: 10,
   desc: `You are prime breeding stock, able to sire the best children feasible given a compatible partner, which is something that potential partners sense... and like. The more proof of your fertility, virility, or the quality of your offspring that a potential waifu witnesses the more the image of submissively being bred by you infects and inflames their fantasies. Those who have had offspring, or who are \'hearing their biological clock ticking\', are particularly susceptible.
@@ -484,6 +508,7 @@ DLClures.push({
   uid: 'tKqnC',
   dlc: 'Trismegistus',
   title: 'Hypnos',
+  image: 'https://i.ibb.co/YhdvLmP/Hypnos.jpg',
   cost: 15,
   desc: `You can fall asleep at will and enter the dreams of anyone you have seen in the past day. You may mentally check if a valid target is sleeping at any time. You control the events within the dream save for the targets mind, body, and actions. The dream will substantially influence their thoughts for several days, more if they genuinely connect with the experience. You may have the  dreamer remember their dream to whatever degree you desire.
   `,
@@ -497,6 +522,7 @@ DLCotherControls.push({
   dlc: 'DLC by Merior',
   dlclink: 'https://docs.google.com/document/d/1j9emHb4IWvOTnp13RASTAuINAFuKDMSSQyQ-7ta9sjA/edit#',
   title: 'Nine Tenths Law',
+  image: 'https://i.ibb.co/xDXVkB2/Nine-Tenths-Law.jpg',
   cost: 5,
   desc: 'Any individual who you manage to keep imprisoned for three days straight becomes yours. Any means of imprisonment, from holding them trapped in a magic circle to keeping them handcuffed next to you, is valid and you may use multiple means or shift between them as needed. However the victim must be aware of their confinement and any time spent unnaturally insensate (unconscious, drugged asleep, frozen in time, etc) does not count towards the total period of confinement.',
 })
@@ -506,6 +532,7 @@ DLCotherControls.push({
   dlc: 'DLC by Merior',
   dlclink: 'https://docs.google.com/document/d/1j9emHb4IWvOTnp13RASTAuINAFuKDMSSQyQ-7ta9sjA/edit#',
   title: 'Signed and Sealed',
+  image: 'https://i.ibb.co/bj4f3kZ/Signed-And-Sealed.jpg',
   cost: 10,
   desc: `There are more formal approaches to gaining a waifu than a love confession. Taking this perk grants you skill in writing contracts and allows you to include binding terms about her behavior and actions. Once the other party signs the contract freely and the relevant conditions have been met they will be forced to comply with the terms: be that anything from telling you a secret to becoming your slave. Company lawyers will assess the strictness and duration of contracts to determine if this will be considered a 'capture'.
   <p>If you have taken No Bindings then the contract is only compulsive if the potential waifu understands the clauses explaining what she is agreeing to do and under what circumstances. In this case she must have signed the contract without coercion, but it is not required that she believed the contract was actually valid and binding.</p>
@@ -517,6 +544,7 @@ DLCotherControls.push({
   dlc: 'DLC by Merior',
   dlclink: 'https://docs.google.com/document/d/1j9emHb4IWvOTnp13RASTAuINAFuKDMSSQyQ-7ta9sjA/edit#',
   title: 'Letter of the Law',
+  image: 'https://i.ibb.co/7pRQbCb/Letter-Of-The-Law.jpg',
   cost: 10,
   desc: `The law is on your side. If a contract you draft using the Signed and Sealed perk is otherwise legal then the compulsive terms are seen as legal and her compliance expected if signed. If you have a binding other than No Bindings then your contracts can compel an individual when it is signed by a parent, spouse, or anyone who could enter a contract on their behalf.
   `,
@@ -539,6 +567,7 @@ DLCotherControls.push({
   uid: 'mESrr',
   dlc: 'gunmetalblue',
   title: 'To The Victor Goes The Spoils',
+  image: 'https://i.ibb.co/N2MDZxg/To-The-Victor-Goes-The-Spoils.jpg',
   cost: 100,
   desc: `Any capture target killed by you or your retinue is automatically captured. You may choose to sell them to the company at standard rate or return them to life with Warranty Plan.
   `,
@@ -549,6 +578,7 @@ DLCotherControls.push({
   uid: 'gqjwm',
   dlc: 'Trismegistus',
   title: 'Social Club',
+  image: 'https://i.ibb.co/g39rTxW/Social-Club.jpg',
   cost: 10,
   desc: `You possess a dream realm you can control as you do with your target's dreams. Within this realm you and your retinue's minds are present, even when awake and without impacting your ability to function. You can control how aware each mind is of the dream realm, such as making them aware of the sensations they feel in the dream, but not what's causing them, or making someone think the dream is the real world, you could even mix the two worlds in their minds, making elements of the dream world overlap with the waking world. No one else can enter this realm. 
   <p>You can also bring sleeping members of your retinue into the dreams of your targets.</p>
@@ -563,6 +593,7 @@ DLClureExpansions.push({
   uid: 'Iimw9',
   dlc: 'Cyan-Rozen',
   title: 'Sticky Fingers: Alter-Flavor',
+  image: 'https://i.ibb.co/GW0hX61/Sticky-Fingers-Alter-Flavor.jpg',
   cost: 30,
   whitelist: ['Sticky Fingers: Brown Sugar'],
   desc: 'You are now able to change to flavor of all of your bodily fluids(Ex..Chocolate,Cookies,vanilla,any flavored ice-cream,lemon,apples,liquor/beer....etc) this change is instant with just a thought. Additionally this perk synergies with both Faerie Feast and Sticky Fingers: Brown Sugar.',
@@ -612,6 +643,7 @@ DLCbindings.push({
   uid: 'mU9YC',
   dlc: 'DLC by Despin',
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
+  image: 'https://i.ibb.co/QfStyFN/Additional-Binding.jpg',
   title: 'Additional Binding',
   cost: 11111,
   multiple: true,
@@ -643,6 +675,7 @@ DLCridePerks.push({
   uid: 'cSEJx',
   dlc: 'KatzSmile',
   title: 'Catch-A-Ride Custom Crew',
+  image: 'https://i.ibb.co/VH89J0p/Catch-ARide-Custom-Crew.jpg',
   cost: 20,
   desc: `
   <p>Maybe you want your ship's crew to be less... uhm... biological in their nature. Or maybe you want a crew of demi-humans. Or crew of monster-girls.</p>
@@ -657,6 +690,7 @@ DLCridePerks.push({
 DLCridePerks.push({
   uid: 'R52oX',
   dlc: 'KatzSmile',
+  image: 'https://i.ibb.co/qChNXY6/Catch-ARide-Crew-Tier-Upgrade.jpg',
   title: 'Catch-A-Ride Crew Tier Upgrade',
   cost: 40,
   desc: `
@@ -672,6 +706,7 @@ DLCridePerks.push({
   dlc: 'DLC by Despin',
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'Catch a Ride Plus',
+  image: 'https://i.ibb.co/ccb78tJ/Catch-ARide-Plus.jpg',
   cost: 50,
   special: 'Applies to all vehicles registered in the Catch a Ride App, up to the size category paid for.',
   costVariants: [50, 100, 200, 500],
@@ -686,6 +721,7 @@ DLCridePerks.push({
   dlc: 'DLC by Despin',
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'Extended Warranty',
+  image: 'https://i.ibb.co/gtzX0N0/Extended-Warranty.jpg',
   cost: 100,
   desc: `
   Your Warranty now also covers any destroyed vehicles that you have registered in the Catch a Ride App. A destroyed vehicle will be re-delivered to you in 72 hours. If you have the Amazon-free Warranty DLC perk, that respawn timer will be applied to your vehicles as well. Respawned vehicles only come with their normal stores, and do not respawn any other items that were carried. Any subjects that die with a vehicle respawn per Warranty Plan. Any non-retinue fatalities are dead.
@@ -700,6 +736,7 @@ DLCintensity.push({
   uid: 'otaEJ',
   dlc: 'Om1cr0n',
   title: 'Black-mark',
+  image: 'https://i.ibb.co/sVcGpmn/Black-Mark.jpg',
   intensity: 0.8,
   special: 'Chargen only. May not be taken on DR11.',
   chargen: true,

@@ -172,6 +172,7 @@ export const waifuTags = {
   nd: { tag: 'Nerd', short: 'nd', effect: '', desc: '', color: 'bg-teal-500 text-black' },
   ar: { tag: 'Artist', short: 'ar', effect: '', desc: 'Any artistic talent', color: 'bg-teal-500 text-black' },
   sa: { tag: 'Strategist', short: 'sa', effect: '', desc: '', color: 'bg-teal-500 text-black' },
+  fw: { tag: 'Fanwork', short: 'fw', effect: '', desc: 'Character is a fan creation (only established ones)', color: 'bg-teal-500 text-black' },
 
   U: { tag: 'By User', short: 'U', effect: '', desc: 'Characters that were added to Interactive by users, applied automatically to all submitted characters', color: 'bg-warm-gray-600' },
 } as const
@@ -208,7 +209,8 @@ export const LINKS = computed(() => {
     'talents/defense': defenses,
     'talents/talent': [...talents, ...DLCtalents],
     'talents/perks': [...perks, ...DLCperks],
-    'talents/specific': [...genericPerks, ...waifu_perks, ...DLCgenericPerks],
+    'talents/generic': [...genericPerks, ...DLCgenericPerks],
+    'talents/specific': waifu_perks,
   }
   for (const category of Object.entries(allCats)) {
     for (const entry of category[1])

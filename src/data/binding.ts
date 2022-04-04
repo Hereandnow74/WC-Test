@@ -722,6 +722,8 @@ lures.push({
   uid: 'WmxCr',
   title: 'Love Spot',
   image: 'https://i.ibb.co/yFDkdMz/LoveSpot.jpg',
+  complex: 'flavor',
+  anything: 'Location',
   cost: 20,
   desc: `
 <p>Just like Diarmuid's in Fate/Zero: you gain a mole under one of your eyes that fascinates any woman who sees it and makes them infatuated with you on the... spot. If you already have a mole in such a location, you don't get a second one. If you’d rather not have a beauty mark, this lure can be re-fluffed to make any one body part supernaturally alluring. The charm effect relies on line-of-sight: it may be blocked by covering up the alluring asset, but not turned off. The effect intensifies with exposure.</p>
@@ -935,7 +937,7 @@ otherControls.push({
 otherControls.push({
   uid: '3RLYt',
   title: 'Strange Kind of Woman',
-  image: '',
+  image: 'https://i.ibb.co/v1xwWf2/Strange-Kind-Of-Woman.jpg',
   cost: 10,
   whitelist: ['Space Truckin’', 'Paper Trail (x10)'],
   desc: `You may extend the benefits of Paper Trail to your victims, granting them any needed basic documentation and a place in their new world. You may pay additional credits to have them integrated more thoroughly into their destination world, making them a part of it in the process and adjusting the local ‘history’ as per the Extra origin. This fee will change according to that origin’s normal rules.
@@ -946,7 +948,7 @@ otherControls.push({
 otherControls.push({
   uid: 'TwKOp',
   title: 'Anyone\'s Daughter',
-  image: '',
+  image: 'https://i.ibb.co/vzshHGq/Anyones-Daughter.jpg',
   cost: 10,
   whitelist: ['Strange Kind of Woman', 'Universal Calibration'],
   desc: `You gain a grace period during which you may specify your victim's history, and connections, within the world specifically rather than allowing their Paper Trail to write itself. This does not grant any abilities which are not paid for via other perks such as Strange Kind of Woman or Demons Eye.
@@ -961,7 +963,7 @@ otherControls.push({
 otherControls.push({
   uid: 'MAN0h',
   title: 'All The Time In The World',
-  image: '',
+  image: 'https://i.ibb.co/C70VRqR/All-The-Time-In-The-World.jpg',
   cost: 10,
   whitelist: ['Space Truckin’', 'Meta Shift'],
   desc: `During a grace period after the death of your victim, a new company app will appear on your smart device, displaying their destination world. Using this app during that time allows you to adjust the ages, sexes, and beauty levels of canon characters per Universal Calibration, as well as alter the age of your victim. If you, or a member of your retinue, possess the capacity for time travel, the app will also allow you to adjust the victim's arrival point, so long as it abides by the normal limits of Universal Calibration.
@@ -971,7 +973,7 @@ otherControls.push({
 otherControls.push({
   uid: 'WCYdn',
   title: 'Demon\'s Eye',
-  image: '',
+  image: 'https://i.ibb.co/vk8KmQX/Demons-Eye.jpg',
   cost: 30,
   whitelist: ['Highway Star'],
   desc: `The retinue member responsible for a victim of Space Truckin' may opt to interact with them during a grace period prior to the victim being sent to their destination world. The victim will be highly accepting of any explanations given to them during this period and unable to harm the retinue member meeting them.
@@ -982,7 +984,7 @@ otherControls.push({
 otherControls.push({
   uid: 'UNwcQ',
   title: 'Mistreated',
-  image: '',
+  image: 'https://i.ibb.co/j6PngKj/Mistreated.jpg',
   cost: 40,
   whitelist: ['Space Truckin’'],
   desc: `You may invoke Space Truckin' to isekai on any or all fatalities of a vehicular accident (be it a train derailment or a plane crash) which you or a retinue member has deliberately caused for this purpose.
@@ -993,7 +995,7 @@ otherControls.push({
 otherControls.push({
   uid: 'GxcTK',
   title: 'Time For Bedlam',
-  image: '',
+  image: 'https://i.ibb.co/SyM6qqB/Time-For-Bedlam.jpg',
   cost: 20,
   whitelist: ['Space Truckin’', 'Pursued by a Bear'],
   desc: `When using Space Truckin', you are provided with a 'grace period' after the death of the victim and a list of worlds to choose from. One option will be the random selection provided by Space Truckin', while the others will be those worlds normally offered via Exit Stage Left (as enhanced by other perks that you possess).
@@ -1004,7 +1006,7 @@ otherControls.push({
 otherControls.push({
   uid: 'pzt7d',
   title: 'Pictures of Home',
-  image: '',
+  image: 'https://i.ibb.co/6N5GsYp/Pictures-Of-Home.jpg',
   cost: 10,
   whitelist: ['Space Truckin’'],
   desc: `Your isekai victims will be monitored, with a continually archived live stream of their activities made available on your company smart device. This archive will also be available through the media systems of the Pocket Apartment, for those who possess that perk.
@@ -1015,7 +1017,7 @@ otherControls.push({
 otherControls.push({
   uid: 'GdRyN',
   title: 'I Got Your Number',
-  image: '',
+  image: 'https://i.ibb.co/6vhkm5q/IGot-Your-Number.jpg',
   cost: 10,
   whitelist: ['Pictures of Home', 'Communication Talent'],
   desc: `The company will provide a setting appropriate way for the divine subject and the isekai victim they are responsible for to communicate with each other. This defaults to prayer, followed by a mental response from the retinue member, but other methods such as e-mail have manifested. The retinue member may block such communications when desired, but the victim gains no such ability. If you have Demon’s Eye and the victim and the retinue member responsible for them interacted prior to their arrival, then they will have a large degree of trust for the retinue member initially.
@@ -1025,7 +1027,7 @@ otherControls.push({
 otherControls.push({
   uid: 'ARFjX',
   title: 'Child in Time',
-  image: '',
+  image: 'https://i.ibb.co/1qpyyJX/Child-In-Time.jpg',
   cost: 15,
   whitelist: ['Space Truckin’', 'Arlo'],
   desc: `Potential victims of Space Truckin', whom you focus on while driving, will find their protective and heroic instincts working against their chances of survival. So long as a child is nearby who would qualify as 'bait' (as per Arlo), targets will place themselves in danger, or even step into the path of your vehicle, while attempting to keep said child safe or 'rescue' them.
@@ -1036,7 +1038,7 @@ otherControls.push({
 otherControls.push({
   uid: 'eZoxo',
   title: 'Not Responsible',
-  image: '',
+  image: 'https://i.ibb.co/88852py/Not-Responsible.jpg',
   cost: 20,
   whitelist: ['Space Truckin’', 'Destiny Defense'],
   desc: `Your victim, as a member of your retinue, will normally and selectively be protected by your Company provided Defenses, according to your desires. However you may, during a grace period before their arrival in the destination world, may choose to invert your Destiny Defense so as to enforce predestination in regards to any given canonical event or events.
@@ -1047,7 +1049,7 @@ otherControls.push({
 otherControls.push({
   uid: 'iRfHA',
   title: 'Perfect Strangers',
-  image: '',
+  image: 'https://i.ibb.co/drS8bxV/Perfect-Strangers.jpg',
   cost: 5,
   whitelist: ['Space Truckin’', 'Information Defense'],
   desc: 'Unless explicitly told, your victims cannot make the connection between you (or your retinue) and their deaths.',
@@ -1056,7 +1058,7 @@ otherControls.push({
 otherControls.push({
   uid: 'VfOVT',
   title: 'Hush',
-  image: '',
+  image: 'https://i.ibb.co/BsfXmZL/Hush.jpg',
   cost: 30,
   whitelist: ['Pictures of Home', 'Meta Shift'],
   desc: `The extra-dimensional nature of your isekai victims ensures that their more creative musings inherit that property. Any idle speculation, or even internal narration, recorded by Pictures of Home is now considered to be valid doujin material for Meta Shift on the isekai victim’s new world.

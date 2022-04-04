@@ -617,6 +617,8 @@ heritages.push({
   image: 'https://i.ibb.co/Y3hXjV1/Everywhere-And-Nowhere.jpg',
   type: 'Self',
   cost: 150,
+  complex: 'flavor',
+  anything: 'Omen',
   freebies: {
     talentPerks: ['Everlasting Talent'],
     defensePerks: ['Wild Defense', 'Wyldscape Defense'],

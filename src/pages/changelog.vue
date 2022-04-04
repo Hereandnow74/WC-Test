@@ -5,6 +5,19 @@
     </h2>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
+        02 April 2022
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>~100 new user submitted characters</li>
+        <li>2 new user submitted worlds</li>
+        <li>Worlds combined into one list, added rating limit for worlds</li>
+        <li>Separation of Generic companion perks from specific ones</li>
+        <li>A lot of new Perk images provided by KatzSmile</li>
+        <li>Bugfixes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
         30 March 2022
       </h3>
       <ul class="list-decimal list-inside">
