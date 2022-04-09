@@ -89,7 +89,6 @@
 
 <script lang="ts" setup>
 import Fuse from 'fuse.js'
-import { anyTypeAnnotation } from '@babel/types'
 import { useStore } from '~/store/store'
 import { toggleShowAddWorld, showAddWorld, threeToggle } from '~/logic'
 import { useWorlds } from '~/data/constants'
@@ -125,6 +124,7 @@ const allWorlds = computed(() => {
 })
 
 const fuse = new Fuse(allWorlds.value, options)
+watch(allWorlds, () => fuse.setCollection(allWorlds.value))
 
 const worldsFiltered = computed(() => {
   if (search.value)

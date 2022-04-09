@@ -8,7 +8,7 @@
         v-if="image"
         :src="image"
         :alt="char.name"
-        class="rounded w-[80px] object-cover object-top"
+        class="rounded w-[80px] max-h-[150px] object-cover object-center self-center"
       >
       <div class="flex flex-col w-full">
         <div class="flex flex-wrap gap-x-1 items-center">

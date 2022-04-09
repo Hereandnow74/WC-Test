@@ -59,8 +59,8 @@
         :class="orientation ? 'grid-cols-2': 'grid-cols-1'"
       >
         <CompanionCardMini
-          v-for="char, i in companionsDataChunks[currentPage]"
-          :key="char.uid + i"
+          v-for="char in companionsDataChunks[currentPage]"
+          :key="char.uid"
           :char="char"
           :image="companionImages[char.uid]"
           :perks="companionsPerksList[char.uid] || {}"
@@ -139,6 +139,7 @@ const companionsDataSorted = computed(() => {
 })
 
 const companionsDataChunks = computed(() => chunk(companionsDataSorted.value, 50))
+watch(companionsDataChunks, () => { if (companionsDataChunks.value.length === 1) currentPage.value = 0 })
 
 const allCharsObject = ref({})
 getAllCharsObject().then(all => allCharsObject.value = all)

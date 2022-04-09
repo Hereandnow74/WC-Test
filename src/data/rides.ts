@@ -557,3 +557,44 @@ DLCRides.push({
     ['Perfected Omniversal Spore Dive', 150],
   ],
 })
+
+DLCRides.push({
+  uid: 'hjQna',
+  title: 'Venator-class Star Destroyer',
+  image: 'https://i.ibb.co/ngLcBvT/Venator-Class-Star-Destroyer2.jpg',
+  source: 'Star Wars',
+  category: 'Space',
+  size: 'Large',
+  cost: 400,
+  addons: [
+  ],
+  capacity: '7,400 crew and 2000 troops',
+  desc: 'The Venator-class Star Destroyer, also known as the Venator-class Destroyer, Republic attack cruiser, and later Imperial attack cruiser, was one of the capital ships used extensively by the Galactic Republic during the later parts of the Clone Wars, as well as by the Galactic Empire. It was designed and constructed by Kuat Drive Yards and Allanteen Six shipyards.',
+})
+
+DLCRides.push({
+  uid: 'omlkP',
+  title: 'Fury-class Imperial interceptor',
+  image: 'https://i.ibb.co/SQXJ686/Fury-Class-Imperial-Interceptor.jpg',
+  source: 'Final Fantasy IX',
+  category: 'Space',
+  size: 'Medium',
+  cost: 150,
+  capacity: '2 skeleton crew, 15 passengers',
+  addons: [],
+  desc: 'The Fury-class Imperial Interceptor was a starship used by the reconstituted Sith Empire during the Great Galactic War and its resultant Cold War.',
+})
+
+DLCRides.push({
+  uid: 'vsFGE',
+  title: 'X-70B Phantom-class',
+  image: 'https://i.ibb.co/QPVtTn1/X70-BPhantom.jpg',
+  source: 'Star Wars',
+  category: 'Space',
+  size: 'Medium',
+  cost: 150,
+  capacity: '2 skeleton crew, 30 passengers',
+  addons: [
+  ],
+  desc: 'The X-70B Phantom-class was a starship of the reconstituted Sith Empire used by Imperial Intelligence.',
+})

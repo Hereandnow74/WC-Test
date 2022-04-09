@@ -320,7 +320,7 @@ const params = useUrlSearchParams('history')
 const route = useRoute()
 
 onMounted(async() => {
-  const userChars = await getUserChars()
+  const userChars = [...await getUserChars()].reverse()
   userChars.forEach((x) => {
     if (x.b) {
       if (!x.b.includes('U'))

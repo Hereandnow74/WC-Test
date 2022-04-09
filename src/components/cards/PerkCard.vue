@@ -45,7 +45,7 @@
         class="text-base ml-2"
         @click.stop
       />
-      <slot name="title" />
+      <slot name="title" :count="perkToSave.count" />
       <Select
         v-if="perk.costVariants"
         v-model.number="cost"
@@ -65,7 +65,7 @@
     <div v-if="perk.special" class="mx-2">
       Special: <span class="text-purple-500 dark:text-purple-300">{{ perk.special }}</span>
     </div>
-    <div>
+    <div class="relative">
       <Desc
         v-if="perk.additionalDesc && !settings.hideDesc"
         :desc="perk.additionalDesc"
@@ -82,6 +82,7 @@
         Expand description <entypo:triangle-down />
       </div>
       <slot name="underDesc" />
+      <bi:arrows-collapse class="absolute top-3 -left-1 w-4 h-4 hover:text-lime-500" @click.stop="collapse" />
     </div>
     <div v-if="perk.requires" class="mx-2">
       Require: <span class="text-orange-500 dark:text-orange-300">{{ perk.requires }}</span>
@@ -92,7 +93,6 @@
       </span>
       <Enum :list="perk.whitelist" />
     </div>
-    <bi:arrows-collapse class="absolute top-1 left-1 w-4 h-4 hover:text-lime-500" @click.stop="collapse" />
   </div>
 </template>
 
@@ -196,7 +196,7 @@ function sendPerk() {
       obj.count = obj.complex.length
       perkToSave.count = obj.count
     }
-    obj.cost = (props.perk.cost || cost.value) * obj.count
+    obj.cost = cost.value * obj.count
   }
   // Set count to 0 to delete perk if clicked twice
   if (props.savedPerk.count === obj.count && obj.count > 0)

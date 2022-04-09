@@ -79,12 +79,10 @@ defineProps({
 const emit = defineEmits(['deletePerk'])
 
 const costOrIntensity = (el) => {
-  if (el.cost) {
-    if (el.cost > 0)
-      return el.cost * (-1)
+  if (el.cost || el.cost === 0) {
     if (el.cost === 0)
       return 'free'
-    if (el.cost < 0)
+    else
       return el.cost * (-1)
   }
   if (el.intensity) {

@@ -69,6 +69,8 @@ function onePull() {
   getRandomChar()
 }
 
+const companionsUIDs = computed(() => new Set(companions.value.map(x => x.uid)))
+
 async function getRandomChar(fixedTier = 0) {
   isRevealing.value = false
   let tier = 0
@@ -81,7 +83,9 @@ async function getRandomChar(fixedTier = 0) {
   }
   else { tier = fixedTier }
   const val = CHAR_COSTS[tier + 1] || 0
-  const x = await randomChar(true, val, val)
+  const x = await randomChar(true, val, 1)
+  if (companionsUIDs.value.has(x.u))
+    return getRandomChar(fixedTier)
   chars.value.push(x)
   isRolling.value = true
   const sex = (intersection(x.b, ['F', 'M', 'O'])[0] || 'F') as 'F' | 'M' | 'O'
@@ -127,15 +131,3 @@ async function tenPull() {
 }
 
 </script>
-
-<style>
-.list-move, /* apply transition to moving elements */
-.list-enter-active,
-.list-leave-active {
-  transition: all 0.5s ease;
-}
-
-.list-leave-active {
-  display: none;
-}
-</style>

@@ -319,6 +319,19 @@ DLCperks.push({
   whitelist: ['Warranty Plan'],
 })
 
+DLCperks.push({
+  uid: 'nsoJf',
+  dlc: 'Sleepy Fluffball™',
+  title: 'Designer Babies',
+  image: '',
+  cost: 8,
+  multiple: true,
+  max: 3,
+  desc: `For those who want to be able to change anything about your children to perfection. All changes only go into effect before birth. First purchase lets you control the gender of your children. Second purchase lets you control their racial ratios for hybridization, which follows the general rules regarding hybrid creation and requires any races used to be in either parent's collection of races. Third lets you control their appearance, and add or remove traits that are related. If you have Fertility Calibration II, this perk works on a case-by-case basis.
+  `,
+  whitelist: ['Fertility Calibration I'],
+})
+
 // DLC home perks
 
 export const DLChomes: DLCPerk[] = []
@@ -435,6 +448,7 @@ DLCtalents.push({
   dlc: 'DLC by Despin',
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'Presence',
+  image: 'https://i.ibb.co/vmN3jBY/Presence.jpg',
   cost: 30,
   desc: `
   Through a mix of perception alteration and minor reality alteration, the world itself seems to aid you in presenting the bearing you intend. From making you seem supernaturally beautiful, always being seen or recorded from a flattering angle and lighting, your dramatic declarations echoing even on an open field, etc. At your discretion, this perk can also allow situational coincidences such as relevant music to start playing or lightning to strike dramatically behind you as you cackle.
@@ -447,6 +461,7 @@ DLCtalents.push({
   dlc: 'DLC by Doomsought',
   dlclink: 'https://forum.questionablequesting.com/threads/r34-economy-cyoa-thread.11289/page-879#post-4440542',
   title: 'Money Talent',
+  image: 'https://i.ibb.co/RSXnxTf/Money-Talent.jpg',
   cost: 10,
   desc: `
   You are extremely talented at making money. You can smell opportunity and feel the flow of the market in your bones. As long as you actually put effort into it you can go from being broke to being a millionaire in a few months.
@@ -459,6 +474,7 @@ DLCtalents.push({
   dlc: 'DLC by Merior',
   dlclink: 'https://docs.google.com/document/d/1j9emHb4IWvOTnp13RASTAuINAFuKDMSSQyQ-7ta9sjA/edit#',
   title: 'Educational Talent',
+  image: 'https://i.ibb.co/PQFmfzc/Educational-Talent.jpg',
   cost: 5,
   desc: `You teach. You pass on information, you instruct, and you guide the learning process even with skills that you do not directly possess. Your descriptions and directions are never less clear than you desire and those you give them to will retain the information easily. You can even act as the best possible practice partner so long as you have a vague idea of the role and are physically capable of what is required.
   <p>Your students cannot learn anything from you that they would be otherwise incapable of picking up given sufficient time and effort. You simply reduce the requirements for both to a tiny fraction of what would otherwise be needed.</p>
@@ -470,6 +486,7 @@ DLCtalents.push({
   dlc: 'DLC by Merior',
   dlclink: 'https://docs.google.com/document/d/1j9emHb4IWvOTnp13RASTAuINAFuKDMSSQyQ-7ta9sjA/edit#',
   title: 'Inculcation Talent',
+  image: 'https://i.ibb.co/5sHG1yX/Inculcation-Talent.jpg',
   cost: 10,
   desc: `You remold. You can progressively change other people's habits, preferences, reflexes, and even more fundamental parts of who they are given time. You do so through social pressure and psychological tricks, even against their will or without their awareness, but supernatural power and the ability to blatantly reward or punish speeds your efforts tremendously. You could use this to help overcome addictions, remove bad habits, become a life coach, or simply be a world-class slave trainer.
   <p>
@@ -556,6 +573,7 @@ DLCotherControls.push({
   dlc: 'DLC by Merior',
   dlclink: 'https://docs.google.com/document/d/1j9emHb4IWvOTnp13RASTAuINAFuKDMSSQyQ-7ta9sjA/edit#',
   title: 'Needful Things',
+  image: 'https://i.ibb.co/q0vxrBD/Needful-Things.jpg',
   cost: 20,
   desc: `The items, good, and/or services provided by your business are simply better than they otherwise would be and certainly seem more appealing. This enhancement is inversely proportional to the original quality, turning poor goods into average ones but will improve top-of-the-line products only fractionally. It will always make what you offer at least appear to have an edge over products of similar quality from elsewhere.
   <p>This enhanced appeal raises the likelihood that appropriate forms of theft (including defaulting on loans, shoplifting, or 'dining-and-dashing') takes place, but that can be a benefit. Anyone who commits such an act, and those who knowingly benefit from it such as consuming stolen food, are considered to have agreed to 'experience' the business per Hotel California and become similarly captured.</p>
@@ -603,6 +621,7 @@ DLClureExpansions.push({
   uid: 'quujp',
   dlc: 'Trismegistus',
   title: 'Maestro',
+  image: 'https://i.ibb.co/8582cS9/Maestro.jpg',
   cost: 10,
   desc: `You may now influence the dreamer themselves, altering their mind and body within the dream to fit whatever role you grant them. This does not drastically change how much the dream influences them in the following days, but does allow for much more control over the experience. You may also alter the rate at which time passes in the dreams relative to real time, up to an 8:1 ratio.
   `,
@@ -616,6 +635,7 @@ DLCheritages.push({
   uid: 'TuIs2',
   dlc: 'Cyan-Rozen',
   title: 'Ascendant Human',
+  image: 'https://i.ibb.co/dKWV6K9/Ascendant-Human.jpg',
   tree: 'Transhuman',
   type: 'Self',
   cost: 22222,
@@ -627,6 +647,7 @@ DLCheritages.push({
   uid: 'rBXUp',
   dlc: 'DaemonOrk',
   title: 'Dragon God',
+  image: 'https://i.ibb.co/TWBQrSn/Dragon-God.jpg',
   tree: 'Dragon',
   type: 'Self',
   complex: 'flavor',
@@ -657,6 +678,7 @@ DLCbindings.push({
   uid: 'iH67D',
   dlc: 'Zenaku82',
   title: 'Triggered',
+  image: 'https://i.ibb.co/nsCCxBx/Triggered.jpg',
   type: 'Jewelry',
   cost: 5,
   desc: `

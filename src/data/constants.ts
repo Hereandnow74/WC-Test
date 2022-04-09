@@ -173,6 +173,7 @@ export const waifuTags = {
   ar: { tag: 'Artist', short: 'ar', effect: '', desc: 'Any artistic talent', color: 'bg-teal-500 text-black' },
   sa: { tag: 'Strategist', short: 'sa', effect: '', desc: '', color: 'bg-teal-500 text-black' },
   fw: { tag: 'Fanwork', short: 'fw', effect: '', desc: 'Character is a fan creation (only established ones)', color: 'bg-teal-500 text-black' },
+  vn: { tag: 'Villain', short: 'vn', effect: '', desc: '', color: 'bg-teal-500 text-black' },
 
   U: { tag: 'By User', short: 'U', effect: '', desc: 'Characters that were added to Interactive by users, applied automatically to all submitted characters', color: 'bg-warm-gray-600' },
 } as const
@@ -220,6 +221,7 @@ export const LINKS = computed(() => {
   links.Offspring = ''
   links.Missions = ''
   links['Loans and Credit Debt'] = ''
+  links['Soul Defense (2x)'] = 'talents/defense'
   links.familiar = ''
   return links
 })
@@ -281,7 +283,7 @@ export async function getChars(): Promise<DBCharacter[]> {
 
 export async function getUserChars(): Promise<DBCharacter[]> {
   if (!userChars)
-    userChars = (await import('~/data/userCharacters.json')).default.reverse()
+    userChars = (await import('~/data/userCharacters.json')).default
   return userChars
 }
 
@@ -328,7 +330,7 @@ getWorlds()
 export const allCompanionsWorlds = computed(() => Array.from(new Set(allChars.value.map(x => x.w))))
 
 export const allWorlds = computed(() => {
-  return Array.prototype.concat(userWorlds.value, localUserWorlds.value, worlds.value, subWorlds.value)
+  return Array.prototype.concat(userWorlds.value, localUserWorlds.value, worlds.value.map((x) => { x.type = 'canon'; return x }), subWorlds.value)
 })
 
 export const allWorldsNoCondition = computed(() => {
@@ -336,14 +338,14 @@ export const allWorldsNoCondition = computed(() => {
 
   const addConditions = (x: DBWorld) => {
     if (x.condition)
-      x.condition.forEach(c => worlds.push({ worldName: x.worldName, condition: c.name, rating: c.rating }))
+      x.condition.forEach(c => worlds.push({ worldName: x.worldName, condition: c.name, rating: c.rating, type: x.type ? 'canon' : 'user' }))
   }
 
   allWorlds.value.forEach((x) => {
     if (isArray(x.condition))
       addConditions(x)
 
-    worlds.push({ worldName: x.worldName, rating: x.rating })
+    worlds.push({ worldName: x.worldName, rating: x.rating, type: x.type ? 'canon' : 'user' })
   })
   return worlds
 })

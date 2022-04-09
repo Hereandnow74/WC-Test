@@ -15,11 +15,11 @@
         <bx:bxs-chevron-up v-if="tippyShown" />
         <bx:bxs-chevron-down v-else />
       </div>
-      <div ref="listEl" hidden>
+      <div ref="listEl" hidden class="scrollbar max-h-[300px] overflow-y-auto">
         <div
           v-for="item in list"
           :key="item"
-          class="hover:bg-gray-200 cursor-pointer px-2 text-base flex gap-4 justify-between w-full"
+          class="hover:bg-gray-200 dark:hover:bg-gray-600 cursor-pointer px-2 text-base flex gap-4 justify-between w-full"
           @click="chooseItem(item.flavor || item)"
         >
           {{ item.flavor || item }}
@@ -110,9 +110,19 @@ function chooseItem(item: string) {
 </script>
 
 <style>
-.tippy-box[data-theme~='light'] {
+.tippy-box {
   @apply bg-white;
   @apply text-gray-800;
   @apply rounded-none rounded-b;
+}
+
+.dark .tippy-box {
+  @apply bg-true-gray-700;
+  @apply text-gray-200;
+  @apply rounded-none rounded-b;
+}
+
+.tippy-content {
+  @apply p-1;
 }
 </style>

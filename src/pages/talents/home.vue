@@ -15,9 +15,9 @@
         :saved-perk="allHomes[homePerk.title]"
         @pickPerk="chooseHome"
       >
-        <template v-if="homePerk.title === 'Sweet Home Expansion'" #title>
+        <template v-if="homePerk.title === 'Sweet Home Expansion'" #title="titleProps">
           [<span class="text-violet-700 dark:text-violet-400">
-            {{ 15.2 * Math.pow(2, allHomes?.[homePerk.title]?.count || 0) }}<sup>2</sup> km
+            {{ (15.2 * Math.pow(2, titleProps.count || 0)).toLocaleString() }}<sup>2</sup> km
           </span>]
         </template>
       </PerkCard>

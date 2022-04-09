@@ -262,11 +262,6 @@ const companionImages = computed(() => {
 })
 
 function createImage() {
-  // const onclone = (doc, el) => {
-  //   const images = el.getElementsByTagName('img')
-  //   for (let i = 0; i < images.length; i++)
-  //     images[i].src = images[i].dataset.src || ''
-  // }
   const buildEl = document.getElementById('build')
   if (buildEl) {
     html2canvas(buildEl, { imageTimeout: 15000, useCORS: true }).then((canvas) => {

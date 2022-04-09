@@ -21,7 +21,7 @@
             Choose your next world
           </div>
           <div v-for="world, i in rdnWorld" :key="world.worldName" class="flex gap-1 px-1">
-            <WorldCard :world="world" :pick-able="false" @click="chooseWorld(world, i)" />
+            <WorldCard :world="world" :pick-able="false" :type="world.type === 'canon' ? 'canon' : 'user'" @click="chooseWorld(world, i)" />
             <div v-if="isBear" class="flex flex-col justify-between bg-gray-700 rounded-xl py-2">
               <fluent:save-24-regular
                 v-if="(world.save || !areSaved) && !world.remove"

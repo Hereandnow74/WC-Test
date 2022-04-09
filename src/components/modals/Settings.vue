@@ -1,6 +1,6 @@
 <template>
   <Modal label="Settings">
-    <div class="p-2 overflow-y-auto flex flex-col gap-2 min-h-0">
+    <div class="p-2 overflow-y-auto flex flex-col gap-2 min-h-0 max-h-[85vh]">
       <h3 class="text-lg">
         Layout
       </h3>

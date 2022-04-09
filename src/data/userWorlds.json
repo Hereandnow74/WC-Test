@@ -2306,7 +2306,7 @@
     "rating": 6
   },
   {
-    "worldName": "I was Caught up in a Hero Summoning but that world was at Peace",
+    "worldName": "I Was Caught up in a Hero Summoning, but That World Is at Peace",
     "rating": 3
   },
   {
@@ -2506,5 +2506,11 @@
     ]
   },
   {"worldName":"Tales of Demons and Gods","rating":7,"additional":"Non-humanoid familiars may be integrated as demon spirits. (Pokemon, Digimon, etc.)\nDemon Spirit integration counts as an independent control method.","condition":[{"rating":6,"name":"Glory City"},{"rating":8,"name":"Draconic Ruins Realm"},{"rating":10,"name":"Original Time-line (Pre reincarnation)"}]},
-  {"worldName":"Uzaki-chan wa Asobitai!","rating":1}
+  {"worldName":"Uzaki-chan wa Asobitai!","rating":1},
+  {"worldName":"Azure Striker Gunvolt","rating":6,"image":"https://o.aolcdn.com/hss/storage/midas/22656570945efb8306336c6b291c3c37/200019205/azurestrikergunvolt.jpg","condition":[{"name":"Azure Striker Gunvolt 1","rating":6},{"name":"Luminous Avenger iX","rating":7}]},
+  {"worldName":"Back 4 Blood","rating":7},
+  {"worldName":"Battle Through the Heavens","rating":10,"image":"https://pic1.zhimg.com/v2-d8d543ec3bac7742a3714fa6bf863c39_1440w.jpg"},
+  {"worldName":"Boruto","rating":9,"image":"https://static3.wallpapers-anime.com/upload/20180528/5553/s/0/E/s0ElEF.png","additional":"The various jinchuuriki have their Tailed Beasts as familiars. Chakra is a form of ki, affected by Soul Talent and Advanced Template Stacking (Enlightened), and usable by anyone. Clone techniques split the user’s internal energy pools evenly across the original body and all clones; Inexhaustible merely prevents these diminished pools from depleting. Stress Defense will protect against the drawbacks of mass clone-based training."},
+  {"worldName":"Cultivation Chat Group","rating":10},
+  {"worldName":"Everybody loves large chests","rating":7,"image":"http://i.imgur.com/bx0Cljc.png","condition":[{"name":"Boxxy T Morningwood's companion","rating":8}]}
 ]

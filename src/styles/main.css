@@ -74,3 +74,14 @@ p {
   page-break-inside: avoid;
 }
 
+/* List add/remove animation */
+.list-move, /* apply transition to moving elements */
+.list-enter-active,
+.list-leave-active {
+  transition: all 0.5s ease;
+}
+
+.list-leave-active {
+  display: none;
+}
+

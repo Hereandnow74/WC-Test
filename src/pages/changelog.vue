@@ -5,6 +5,27 @@
     </h2>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
+        0 April 2022
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>~130 new user submitted characters</li>
+        <li>New missions, 1 perk, 8 worlds</li>
+        <li>Bugfixes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
+        06 April 2022
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>~150 new user submitted characters</li>
+        <li>3 new Rides, by KatzSmile</li>
+        <li>More new Perk images provided by KatzSmile</li>
+        <li>Bugfixes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
         02 April 2022
       </h3>
       <ul class="list-decimal list-inside">

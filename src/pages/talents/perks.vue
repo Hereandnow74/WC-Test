@@ -9,9 +9,10 @@
         v-for="perk in perksDLC"
         :key="perk.title"
         :perk="perk"
+        :saved-perk="allPerks[perk.title]"
         :bg="miscAvailable(perk) ? 'light-blue-200 dark:light-blue-900 hover:(light-blue-100 dark:light-blue-800)'
           : 'gray-200 dark:gray-600'"
-        :is-active="findIndex(miscPerks, {title: perk.title}) !== -1"
+        :is-active="!!allPerks[perk.title]"
         @pickPerk="choosePerk"
       ></PerkCard>
     </div>
@@ -19,7 +20,6 @@
 </template>
 
 <script lang='ts' setup>
-import { findIndex } from 'lodash-es'
 import { perks, talentsDesc } from '~/data/talents'
 import { useTooltips } from '~/logic/misc'
 import { useStore } from '~/store/store'
@@ -27,6 +27,12 @@ import { choosePerk, miscAvailable } from '~/logic'
 import { DLCperks } from '~/data/DLCs'
 
 const { miscPerks, settings } = useStore()
+
+const allPerks = computed(() => {
+  const res: any = {}
+  miscPerks.value.forEach(x => res[x.title] = x)
+  return res
+})
 
 const perksDLC = computed(() => !settings.value.allChosenAuthors[0]
   ? perks
