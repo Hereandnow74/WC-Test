@@ -6,7 +6,7 @@
       :class="settings.columns !== 'auto' ? `column-count-${settings.columns}` : 'md:column-count-2 xl:column-count-3 4xl:column-count-4 5xl:column-count-5'"
     >
       <PerkCard
-        v-for="perk in perksDLC"
+        v-for="perk in perks"
         :key="perk.title"
         :perk="perk"
         :saved-perk="allPerks[perk.title]"
@@ -16,6 +16,27 @@
         @pickPerk="choosePerk"
       ></PerkCard>
     </div>
+    <template v-if="perksDLC.length">
+      <h2 class="text-2xl text-center">
+        DLC Other perks
+      </h2>
+      <DLCNote />
+      <div
+        class="column-gap pb-8"
+        :class="settings.columns !== 'auto' ? `column-count-${settings.columns}` : 'md:column-count-2 xl:column-count-3 4xl:column-count-4 5xl:column-count-5'"
+      >
+        <PerkCard
+          v-for="perk in perksDLC"
+          :key="perk.title"
+          :perk="perk"
+          :saved-perk="allPerks[perk.title]"
+          :bg="miscAvailable(perk) ? 'light-blue-200 dark:light-blue-900 hover:(light-blue-100 dark:light-blue-800)'
+            : 'gray-200 dark:gray-600'"
+          :is-active="!!allPerks[perk.title]"
+          @pickPerk="choosePerk"
+        ></PerkCard>
+      </div>
+    </template>
   </div>
 </template>
 
@@ -35,10 +56,8 @@ const allPerks = computed(() => {
 })
 
 const perksDLC = computed(() => !settings.value.allChosenAuthors[0]
-  ? perks
-    .concat(DLCperks
-      .filter(perk => !settings.value.allChosenAuthors.includes(perk.dlc)))
-  : perks)
+  ? DLCperks.filter(perk => !settings.value.allChosenAuthors.includes(perk.dlc))
+  : [])
 
 onMounted(() => useTooltips())
 

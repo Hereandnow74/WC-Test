@@ -2558,7 +2558,7 @@
     "t": 3,
     "i": "https://i.imgur.com/dvyAM8zl.jpg",
     "s": "https://i.imgur.com/dvyAM8z.jpg",
-    "w": "Muv Luv",
+    "w": "Muv-Luv",
     "b": [
       "F"
     ]
@@ -3067,10 +3067,12 @@
     "s": "http://cs306800.vk.me/v306800556/85e5/KMDsbYQ7-DU.jpg",
     "w": "Bioshock: Infinite",
     "b": [
-      "O",
+      "F",
+      "M",
       "hp",
       "tm",
-      "sn"
+      "sn",
+      "U"
     ],
     "k": "Darknight4913"
   },
@@ -4940,13 +4942,14 @@
   {
     "u": 1291793,
     "n": "Shinigami",
-    "t": 11,
+    "t": 8,
     "i": "https://i.imgur.com/oI5RVlVl.jpg",
     "s": "https://i.imgur.com/oI5RVlV.jpg",
     "w": "Naruto",
     "b": [
       "O",
       "dr",
+      "id",
       "im",
       "gd",
       "U"
@@ -7510,7 +7513,9 @@
     "s": "https://i.imgur.com/mbSk6w0.jpg",
     "w": "Lazy Dungeon Master",
     "b": [
-      "F"
+      "F",
+      "im",
+      "U"
     ],
     "k": "nobody"
   },
@@ -7736,9 +7741,11 @@
     "w": "Monster Hunter",
     "b": [
       "F",
-      "mr"
+      "mr",
+      "U"
     ],
-    "k": "DaemonOrk"
+    "k": "DaemonOrk",
+    "in": "https://static1.e621.net/data/8c/46/8c461acba859d56a2d6d4fd29020634f.png"
   },
   {
     "u": 7839632,
@@ -7919,9 +7926,11 @@
     "w": "Monster Hunter",
     "b": [
       "F",
-      "mr"
+      "mr",
+      "U"
     ],
-    "k": "DaemonOrk"
+    "k": "DaemonOrk",
+    "in": "https://static1.e621.net/data/cf/7a/cf7adc318de8a1b23fe679daf7281e13.jpg"
   },
   {
     "u": 4902629,
@@ -7960,9 +7969,11 @@
     "b": [
       "F",
       "mr",
-      "dg"
+      "dg",
+      "U"
     ],
-    "k": "DaemonOrk"
+    "k": "DaemonOrk",
+    "in": "https://static1.e621.net/data/b3/6c/b36c59761ff64e42e3c3a439456edac0.jpg"
   },
   {
     "u": 6163741,
@@ -11104,8 +11115,11 @@
     "d": "",
     "b": [
       "F",
+      "M",
       "O",
-      "an"
+      "an",
+      "tp",
+      "Hermaphrodite"
     ],
     "in": "https://cdn.donmai.us/sample/de/25/__crimvael_ishuzoku_reviewers_drawn_by_cedar_artist__sample-de251c282f418513a0461fd52ed4a425.jpg",
     "k": "Cyrus"
@@ -24256,7 +24270,7 @@
   {
     "u": 6745845,
     "n": "Kurogiri",
-    "t": 6,
+    "t": 5,
     "i": "__kurogiri_and_loud_cloud_boku_no_hero_academia_drawn_by_osutoraria_1ndi_g0__e9d9fa5b07f9f888312fc7de43582694.jpg",
     "s": "https://cdn.donmai.us/original/e9/d9/__kurogiri_and_loud_cloud_boku_no_hero_academia_drawn_by_osutoraria_1ndi_g0__e9d9fa5b07f9f888312fc7de43582694.jpg",
     "w": "My Hero Academia",
@@ -26380,7 +26394,9 @@
     "w": "Hunter x Hunter",
     "d": "",
     "b": [
-      "M"
+      "M",
+      "U",
+      "tp"
     ],
     "k": "beyond-ye-pale"
   },
@@ -35050,8 +35066,8 @@
     "u": 4803925,
     "n": "Jack Frost",
     "t": 6,
-    "i": "f240282d6626058f9483266c88679bd8.jpg",
-    "s": "https://i.pinimg.com/originals/f2/40/28/f240282d6626058f9483266c88679bd8.jpg",
+    "i": "Jack-Frost-SFW.jpg",
+    "s": "https://i.ibb.co/dWRbcrS/Jack-Frost-SFW.jpg",
     "w": "Rise of the Guardians",
     "d": "",
     "b": [
@@ -50288,7 +50304,9 @@
     "b": [
       "O",
       "mr",
-      "ev"
+      "ev",
+      "U",
+      "Grimm"
     ],
     "k": "Myrddin Emrys"
   },
@@ -50338,8 +50356,10 @@
       "mr",
       "dg",
       "ev",
+      "U",
       "Emotional Sensor",
-      "Ageless"
+      "Ageless",
+      "Grimm"
     ],
     "k": "Myrddin Emrys"
   },
@@ -53167,7 +53187,9 @@
     "w": "Marvel",
     "d": "",
     "b": [
-      "M"
+      "M",
+      "mu",
+      "U"
     ],
     "k": "oneye"
   },
@@ -53208,7 +53230,7 @@
   {
     "u": 9935075,
     "n": "Dove Bronzewing",
-    "t": 5,
+    "t": 4,
     "i": "9116276bf82bc16ca945ad5879b1ef1519f320b5r1-300-300v2_00.jpg",
     "s": "http://pm1.narvii.com/7098/9116276bf82bc16ca945ad5879b1ef1519f320b5r1-300-300v2_00.jpg",
     "w": "RWBY",
@@ -53222,7 +53244,7 @@
   {
     "u": 3880132,
     "n": "Sky Lark",
-    "t": 5,
+    "t": 4,
     "i": "26fd590d9817283587c9164bb0958267e18fc0e3r1-287-601v2_uhq.jpg",
     "s": "http://pm1.narvii.com/7098/26fd590d9817283587c9164bb0958267e18fc0e3r1-287-601v2_uhq.jpg",
     "w": "RWBY",
@@ -55052,18 +55074,19 @@
   },
   {
     "u": 9865478,
-    "n": "Verusa",
+    "n": "Verusha",
     "t": 4,
-    "i": "https://i.imgur.com/RMarbjwl.jpg",
-    "s": "https://i.imgur.com/RMarbjw.jpg",
+    "i": "https://i.imgur.com/KDMlUJDl.png",
+    "s": "https://i.imgur.com/KDMlUJD.png",
     "w": "Trials in Tainted Space",
     "d": "",
     "b": [
       "O",
       "th",
-      "cb"
+      "cb",
+      "U"
     ],
-    "in": "https://i.imgur.com/BAl6IGf.jpg",
+    "in": "https://i.imgur.com/oTuzIJ4.png",
     "k": "Jollymerr"
   },
   {
@@ -55967,7 +55990,7 @@
   },
   {
     "u": 4211521,
-    "n": "ZAngetsu (White)",
+    "n": "Zangetsu (White)",
     "t": 7,
     "i": "https://i.imgur.com/enoBVRtl.png",
     "s": "https://i.imgur.com/enoBVRt.png",
@@ -55977,7 +56000,7 @@
       "M",
       "st",
       "bj",
-      "mr"
+      "U"
     ],
     "k": "Jollymerr"
   },
@@ -58381,7 +58404,10 @@
     "w": "Underworld",
     "d": "",
     "b": [
-      "F"
+      "F",
+      "vp",
+      "rl",
+      "U"
     ],
     "k": "Bluesnowman"
   },
@@ -58394,7 +58420,9 @@
     "w": "Underworld",
     "d": "",
     "b": [
-      "F"
+      "F",
+      "vp",
+      "U"
     ],
     "k": "Bluesnowman"
   },
@@ -58407,7 +58435,9 @@
     "w": "Underworld",
     "d": "",
     "b": [
-      "F"
+      "F",
+      "vp",
+      "U"
     ],
     "k": "Bluesnowman"
   },
@@ -64909,7 +64939,10 @@
     "w": "DC",
     "d": "Arrowverse",
     "b": [
-      "F"
+      "F",
+      "gn",
+      "U",
+      "nd"
     ],
     "k": "DRESDENFANatic"
   },
@@ -65510,19 +65543,6 @@
     ],
     "in": "https://i.imgur.com/nclTnYU.jpeg",
     "k": "Lord Michael Demiurgos"
-  },
-  {
-    "u": 9781976,
-    "n": "Goku (Kid)",
-    "t": 4,
-    "i": "698a3f1aa0fd584082a8ad81b684a622.png",
-    "s": "https://i.pinimg.com/originals/69/8a/3f/698a3f1aa0fd584082a8ad81b684a622.png",
-    "w": "Dragonball series",
-    "d": "Original",
-    "b": [
-      "M"
-    ],
-    "k": "Ayashi"
   },
   {
     "u": 3238053,
@@ -66224,10 +66244,12 @@
     "i": "Fuka1.jpg",
     "s": "https://static.wikia.nocookie.net/evilbabes/images/c/ce/Fuka1.jpg",
     "w": "Naruto",
-    "d": "",
+    "d": "Hi no Kuni",
     "b": [
       "F",
-      "dr"
+      "dr",
+      "nj",
+      "U"
     ],
     "k": "gawd49"
   },
@@ -66328,7 +66350,7 @@
   },
   {
     "u": 5105466,
-    "n": "Yoshino Nara",
+    "n": "Nara Yoshino",
     "t": 4,
     "i": "Yoshino_Nara.png",
     "s": "https://static.wikia.nocookie.net/naruto/images/9/9f/Yoshino_Nara.png",
@@ -68538,7 +68560,9 @@
     "w": "Hades",
     "d": "",
     "b": [
-      "F"
+      "F",
+      "gd",
+      "U"
     ],
     "in": "https://i.imgur.com/jFDksM9.jpg",
     "k": "PKMNNick"
@@ -70748,7 +70772,7 @@
     "t": 4,
     "i": "81eutx1fs5l00.jpg",
     "s": "https://granheliostranslations.files.wordpress.com/2015/07/81eutx1fs5l00.jpg",
-    "w": "Isekai Meikyū de Harem wo",
+    "w": "Isekai Meikyu de Harem wo",
     "d": "",
     "b": [
       "F",
@@ -70760,12 +70784,15 @@
     "u": 1835228,
     "n": "Michio Kaga",
     "t": 5,
-    "i": "1648195269227_image.jpg",
-    "s": "https://www.nautiljon.com/images/breves/00/91/1648195269227_image.jpg",
-    "w": "Isekai Meikyū de Harem wo",
+    "i": "https://i.imgur.com/X3sWyJDl.jpg",
+    "s": "https://i.imgur.com/OICPWVP.jpg",
+    "w": "Isekai Meikyu de Harem wo",
     "d": "",
     "b": [
-      "M"
+      "M",
+      "cl",
+      "me",
+      "lv"
     ],
     "k": "Ayashi"
   },
@@ -70775,7 +70802,7 @@
     "t": 4,
     "i": "__sherry_isekai_meikyuu_de_harem_wo_drawn_by_hyouju_issei__f0e081f1889937bf17a12fb656cc5404.jpg",
     "s": "https://cdn.donmai.us/original/f0/e0/__sherry_isekai_meikyuu_de_harem_wo_drawn_by_hyouju_issei__f0e081f1889937bf17a12fb656cc5404.jpg",
-    "w": "Isekai Meikyū de Harem wo",
+    "w": "Isekai Meikyu de Harem wo",
     "d": "",
     "b": [
       "F",
@@ -70789,11 +70816,13 @@
     "t": 5,
     "i": "Isekai-Meikyuu-de-Harem-wo-7.jpg",
     "s": "https://honeysanime.com/wp-content/uploads/2017/02/Isekai-Meikyuu-de-Harem-wo-7.jpg",
-    "w": "Isekai Meikyū de Harlem wo",
+    "w": "Isekai Meikyu de Harem wo",
     "d": "",
     "b": [
       "F",
-      "dh"
+      "hl",
+      "dh",
+      "U"
     ],
     "in": "https://i.redd.it/au9a9pqo2ri41.png",
     "k": "Ayashi"
@@ -70965,7 +70994,8 @@
     "w": "Legend of Zelda",
     "d": "Wind Waker",
     "b": [
-      "M"
+      "F",
+      "U"
     ],
     "k": "Selias"
   },
@@ -72862,7 +72892,7 @@
   },
   {
     "u": 7899787,
-    "n": "Syalis",
+    "n": "Aurora Sya Lis Kaymin /Princess Syalis",
     "t": 4,
     "i": "39c365d6ebf5a5d718b2665857ab16a875fe7d8e.jpg",
     "s": "https://safebooru.org//images/1748/39c365d6ebf5a5d718b2665857ab16a875fe7d8e.jpg",
@@ -73642,7 +73672,7 @@
     "t": 2,
     "i": "Mustamirri_Griff.jpg",
     "s": "https://awoiaf.westeros.org/images/9/9c/Mustamirri_Griff.jpg",
-    "w": "A Song Of Ice And Fire",
+    "w": "A Song of Ice and Fire",
     "d": "",
     "b": [
       "M"
@@ -73655,7 +73685,7 @@
     "t": 3,
     "i": "RandyllTarly_by_Kevin_McCoy.jpg",
     "s": "https://awoiaf.westeros.org/images/e/e9/RandyllTarly_by_Kevin_McCoy.jpg",
-    "w": "A Song Of Ice And Fire",
+    "w": "A Song of Ice and Fire",
     "d": "",
     "b": [
       "M"
@@ -76062,7 +76092,9 @@
     "d": "",
     "b": [
       "F",
-      "en"
+      "en",
+      "sn",
+      "U"
     ],
     "in": "https://i.imgur.com/wQB9ekr.jpg",
     "k": "Jollymerr"
@@ -76806,9 +76838,9 @@
     "b": [
       "F",
       "hl",
-      "mr",
       "dh",
       "ev",
+      "U",
       "tw",
       "mi"
     ],
@@ -77188,7 +77220,7 @@
     "t": 1,
     "i": "Dyanna_Dayne_and_Maekar_Targaryen_by_Gaya-the-K.jpg",
     "s": "https://awoiaf.westeros.org/images/d/d9/Dyanna_Dayne_and_Maekar_Targaryen_by_Gaya-the-K.jpg",
-    "w": "A Song Of Ice and Fire",
+    "w": "A Song of Ice and Fire",
     "d": "",
     "b": [
       "F"
@@ -77201,7 +77233,7 @@
     "t": 2,
     "i": "AEGON_IV.jpg",
     "s": "https://awoiaf.westeros.org/images/5/59/AEGON_IV.jpg",
-    "w": "A Song Of Ice And Fire",
+    "w": "A Song of Ice and Fire",
     "d": "",
     "b": [
       "M",
@@ -77287,22 +77319,6 @@
     "k": "exsailor1999"
   },
   {
-    "u": 1609368,
-    "n": "Elena Michaels",
-    "t": 4,
-    "i": "bitten_ca.elena_michaels.jpg",
-    "s": "https://img.sharetv.com/shows/characters/thumbnails/bitten_ca.elena_michaels.jpg",
-    "w": "Bitten",
-    "d": "",
-    "b": [
-      "F",
-      "sc",
-      "sr",
-      "ar"
-    ],
-    "k": "exsailor1999"
-  },
-  {
     "u": 8006655,
     "n": "Koga Kuchiki",
     "t": 6,
@@ -77332,9 +77348,9 @@
       "M",
       "hl",
       "hz",
-      "mr",
       "sr",
-      "ev"
+      "ev",
+      "U"
     ],
     "k": "TDon123"
   },
@@ -77367,9 +77383,9 @@
       "M",
       "hz",
       "mp",
-      "mr",
       "sr",
-      "ev"
+      "ev",
+      "U"
     ],
     "k": "TDon123"
   },
@@ -77384,9 +77400,9 @@
     "b": [
       "M",
       "hz",
-      "mr",
       "sr",
-      "ev"
+      "ev",
+      "U"
     ],
     "k": "TDon123"
   },
@@ -77401,9 +77417,9 @@
     "b": [
       "M",
       "hz",
-      "mr",
       "sr",
       "ev",
+      "U",
       "tp"
     ],
     "k": "TDon123"
@@ -77421,10 +77437,10 @@
       "hl",
       "hz",
       "bj",
-      "mr",
       "sn",
       "sr",
       "ev",
+      "U",
       "cc",
       "sa"
     ],
@@ -77443,10 +77459,10 @@
       "hz",
       "id",
       "tm",
-      "mr",
       "sr",
       "ev",
-      "rl"
+      "rl",
+      "U"
     ],
     "k": "TDon123"
   },
@@ -77563,7 +77579,9 @@
     "b": [
       "F",
       "th",
-      "en"
+      "en",
+      "U",
+      "cc"
     ],
     "k": "redriel995"
   },
@@ -77607,7 +77625,9 @@
     "d": "MANTIS",
     "b": [
       "F",
-      "th"
+      "P",
+      "th",
+      "U"
     ],
     "k": "redriel995"
   },
@@ -77651,7 +77671,9 @@
     "d": "MANTIS",
     "b": [
       "F",
-      "th"
+      "P",
+      "th",
+      "U"
     ],
     "k": "redriel995"
   },
@@ -77680,8 +77702,10 @@
     "d": "Schicksal (Theresa)",
     "b": [
       "F",
+      "P",
       "bj",
-      "th"
+      "th",
+      "U"
     ],
     "k": "redriel995"
   },
@@ -77914,7 +77938,7 @@
     "b": [
       "F",
       "an",
-      "mr"
+      "U"
     ],
     "k": "Nobody"
   },
@@ -78329,22 +78353,6 @@
     "k": "Darkspire"
   },
   {
-    "u": 2362084,
-    "n": "Hameln",
-    "t": 5,
-    "i": "__hameln_mary_skelter_drawn_by_mizunashi_second_run__c6f3a2a153de40dd43093146d4f549c7.png",
-    "s": "https://cdn.donmai.us/original/c6/f3/__hameln_mary_skelter_drawn_by_mizunashi_second_run__c6f3a2a153de40dd43093146d4f549c7.png",
-    "w": "Mary skelter",
-    "d": "",
-    "b": [
-      "F",
-      "me",
-      "sr",
-      "lv"
-    ],
-    "k": "Darkspire"
-  },
-  {
     "u": 1872327,
     "n": "Gretel",
     "t": 5,
@@ -78379,7 +78387,7 @@
   {
     "u": 4092329,
     "n": "Meifu no O (King of Hell)",
-    "t": 11,
+    "t": 8,
     "i": "https://i.imgur.com/CyXNu2Al.png",
     "s": "https://i.imgur.com/CyXNu2A.png",
     "w": "Naruto",
@@ -78659,19 +78667,6 @@
     "k": "Selias"
   },
   {
-    "u": 5545497,
-    "n": "Tsukino Shingo",
-    "t": 1,
-    "i": "115084.jpg",
-    "s": "https://cdn.myanimelist.net/images/characters/4/115084.jpg",
-    "w": "Sailor Moon",
-    "d": "",
-    "b": [
-      "M"
-    ],
-    "k": "Selias"
-  },
-  {
     "u": 8095516,
     "n": "Mary Sibley",
     "t": 5,
@@ -78828,7 +78823,7 @@
   {
     "u": 8912070,
     "n": "Pelinal Whitestrake",
-    "t": 10,
+    "t": 9,
     "i": "tumblr_nxki61VdBU1tyntzzo1_1280.png",
     "s": "https://64.media.tumblr.com/f73ee6dd95288b9364b91872f552df4b/tumblr_nxki61VdBU1tyntzzo1_1280.png",
     "w": "The Elder Scrolls",
@@ -78854,5 +78849,3358 @@
       "al"
     ],
     "k": "Riggnarock"
+  },
+  {
+    "u": 5272488,
+    "n": "Michael",
+    "t": 6,
+    "i": "https://i.imgur.com/mhq4FsXl.jpeg",
+    "s": "https://i.imgur.com/mhq4FsX.jpeg",
+    "w": "(Square) Drakengard/Nier",
+    "d": "Drakengard 3",
+    "b": [
+      "M",
+      "dg"
+    ],
+    "k": "NR72"
+  },
+  {
+    "u": 4901661,
+    "n": "Brother One",
+    "t": 6,
+    "i": "https://i.imgur.com/uDDrCGVl.png",
+    "s": "https://i.imgur.com/uDDrCGV.png",
+    "w": "(Square) Drakengard/Nier",
+    "d": "Drakengard 3",
+    "b": [
+      "M",
+      "tp"
+    ],
+    "k": "NR72"
+  },
+  {
+    "u": 7170914,
+    "n": "Whislash",
+    "t": 5,
+    "i": "__whislash_arknights_drawn_by_mari0ball__sample-dbe7707d1e00f7c4ce1db48a3fde5a5a.jpg",
+    "s": "https://cdn.donmai.us/sample/db/e7/__whislash_arknights_drawn_by_mari0ball__sample-dbe7707d1e00f7c4ce1db48a3fde5a5a.jpg",
+    "w": "Arknights",
+    "d": "Operatives - Guard",
+    "b": [
+      "F"
+    ],
+    "k": "F3nn3L"
+  },
+  {
+    "u": 6520820,
+    "n": "Blemishine",
+    "t": 6,
+    "i": "__blemishine_arknights_drawn_by_takano_jiyuu__sample-9c2a3201b6ce6e8d2b27a46e926d4b93.jpg",
+    "s": "https://cdn.donmai.us/sample/9c/2a/__blemishine_arknights_drawn_by_takano_jiyuu__sample-9c2a3201b6ce6e8d2b27a46e926d4b93.jpg",
+    "w": "Arknights",
+    "d": "Operatives - Defender",
+    "b": [
+      "F"
+    ],
+    "k": "F3nn3L"
+  },
+  {
+    "u": 6524491,
+    "n": "Rosetti Pricket",
+    "t": 5,
+    "i": "f3d9febb69834694ff0fae44db312675.jpg",
+    "s": "https://i.pinimg.com/originals/f3/d9/fe/f3d9febb69834694ff0fae44db312675.jpg",
+    "w": "Assassin's Pride",
+    "d": "",
+    "b": [
+      "F",
+      "hl",
+      "dh",
+      "tc",
+      "vp",
+      "sr"
+    ],
+    "k": "TDon123"
+  },
+  {
+    "u": 3516471,
+    "n": "Kufa Vampir",
+    "t": 5,
+    "i": "900640b3bbf1846dbc9e72ad0a0fae06.jpg",
+    "s": "https://i.pinimg.com/originals/90/06/40/900640b3bbf1846dbc9e72ad0a0fae06.jpg",
+    "w": "Assassin's Pride",
+    "d": "",
+    "b": [
+      "M",
+      "hl",
+      "cl",
+      "im",
+      "dh",
+      "tc",
+      "vp",
+      "sr"
+    ],
+    "k": "TDon123"
+  },
+  {
+    "u": 8323619,
+    "n": "Cole Turner",
+    "t": 5,
+    "i": "Cole_TurnerComic.jpg",
+    "s": "https://static.wikia.nocookie.net/charmed/images/7/75/Cole_Turner_%28Comics%29.jpg",
+    "w": "Charmed",
+    "d": "",
+    "b": [
+      "M",
+      "dm"
+    ],
+    "k": "exsailor1999"
+  },
+  {
+    "u": 9003700,
+    "n": "Siren",
+    "t": 4,
+    "i": "TheSiren.jpg",
+    "s": "https://static.wikia.nocookie.net/evilbabes/images/3/3b/TheSiren.jpg",
+    "w": "Charmed",
+    "d": "",
+    "b": [
+      "F",
+      "dm",
+      "vn"
+    ],
+    "k": "exsailor1999"
+  },
+  {
+    "u": 8560782,
+    "n": "Randolph Carter",
+    "t": 8,
+    "i": "eef0759f37e49c1a427acb6d779cd1e5.jpg",
+    "s": "https://i.pinimg.com/originals/ee/f0/75/eef0759f37e49c1a427acb6d779cd1e5.jpg",
+    "w": "Cthulhu Mythos",
+    "d": "",
+    "b": [
+      "M",
+      "hp",
+      "mt",
+      "ur",
+      "tm",
+      "ot",
+      "me",
+      "de",
+      "gn",
+      "cc"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 8435465,
+    "n": "Bizarro",
+    "t": 9,
+    "i": "d12b5f730915c81d6769651907c03671.jpg",
+    "s": "https://i.pinimg.com/564x/d1/2b/5f/d12b5f730915c81d6769651907c03671.jpg",
+    "w": "DC",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "GreenGrizzly"
+  },
+  {
+    "u": 9727146,
+    "n": "Richard Swift/Shade (Earth-16)",
+    "t": 5,
+    "i": "https://i.imgur.com/2576bGHl.jpg",
+    "s": "https://i.imgur.com/2576bGH.jpg",
+    "w": "DC",
+    "d": "Young Justice",
+    "b": [
+      "F",
+      "cl",
+      "vn"
+    ],
+    "k": "Jollymerr"
+  },
+  {
+    "u": 2002059,
+    "n": "Grid",
+    "t": 7,
+    "i": "3982308-untitled-2.jpg",
+    "s": "https://comicvine.gamespot.com/a/uploads/original/10/100647/3982308-untitled-2.jpg",
+    "w": "DC (Earth Prime)",
+    "d": "",
+    "b": [
+      "O",
+      "ai",
+      "ad",
+      "sr",
+      "gn",
+      "vn"
+    ],
+    "k": "Grid"
+  },
+  {
+    "u": 6660204,
+    "n": "Lashiel (Fallen Angel)",
+    "t": 9,
+    "i": "dresden_files__lasciel_the_temptress_by_olieboldador-d8obixq.jpg",
+    "s": "https://img00.deviantart.net/302e/i/2015/093/f/1/dresden_files__lasciel_the_temptress_by_olieboldador-d8obixq.jpg",
+    "w": "Dresden Files",
+    "d": "Denarian",
+    "b": [
+      "F"
+    ],
+    "k": "Nex"
+  },
+  {
+    "u": 8090351,
+    "n": "Lash (Shadow)",
+    "t": 5,
+    "i": "dresden_dead_beat_by_aerowan_d97j87c-fullview.jpg",
+    "s": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/dac845e8-43df-4da3-832c-0da5f65526f8/d97j87c-29668a03-a24a-45b8-a3c1-b6c55dc3e552.jpg/v1/fill/w_800,h_1000,q_70,strp/dresden_dead_beat_by_aerowan_d97j87c-fullview.jpg",
+    "w": "Dresden Files",
+    "d": "Titan",
+    "b": [
+      "F"
+    ],
+    "k": "Nex"
+  },
+  {
+    "u": 6594502,
+    "n": "Angel",
+    "t": 9,
+    "i": "qlr1b7bk34a51.jpg",
+    "s": "https://i.redd.it/qlr1b7bk34a51.jpg",
+    "w": "Dresden Files",
+    "d": "",
+    "b": [
+      "O"
+    ],
+    "k": "Nex"
+  },
+  {
+    "u": 8519109,
+    "n": "Lesser Elemental Dragon",
+    "t": 7,
+    "i": "elemental_dragons___color_by_udoncrew.jpg",
+    "s": "http://pre06.deviantart.net/3529/th/pre/f/2007/045/a/b/elemental_dragons___color_by_udoncrew.jpg",
+    "w": "Exalted",
+    "d": "",
+    "b": [
+      "O"
+    ],
+    "k": "Nex"
+  },
+  {
+    "u": 5944249,
+    "n": "Deathlord",
+    "t": 9,
+    "i": "deathlord_by_taziobettin-d6zh0vg.jpg",
+    "s": "http://fc04.deviantart.net/fs70/i/2013/360/5/2/deathlord_by_taziobettin-d6zh0vg.jpg",
+    "w": "Exalted",
+    "d": "",
+    "b": [
+      "O"
+    ],
+    "k": "Nex"
+  },
+  {
+    "u": 2155640,
+    "n": "Third Circle Demon",
+    "t": 9,
+    "i": "1250095209-1250095195-gluttonydemon.jpg",
+    "s": "https://aggrogamer.com/assets/1250095209-1250095195-gluttonydemon.jpg",
+    "w": "Exalted",
+    "d": "",
+    "b": [
+      "O"
+    ],
+    "k": "Nex"
+  },
+  {
+    "u": 6665776,
+    "n": "Primordial",
+    "t": 11,
+    "i": "tumblr_fe2a2d31f2027205b61044239a35054d_694c93b4_1280.jpg",
+    "s": "https://64.media.tumblr.com/fe2a2d31f2027205b61044239a35054d/6bd4bf4b9b620f2e-24/s1280x1920/694c93b42fde205353bc97a219a8f59add9ec539.jpg",
+    "w": "Exalted",
+    "d": "",
+    "b": [
+      "O"
+    ],
+    "k": "Nex"
+  },
+  {
+    "u": 9202534,
+    "n": "Cecil stedman",
+    "t": 2,
+    "i": "tumblr_667cd5a0dfb573afdc6a90bc41f7a453_8d0efaa0_540.png",
+    "s": "https://64.media.tumblr.com/667cd5a0dfb573afdc6a90bc41f7a453/cc277afd734be2b7-3b/s540x810/8d0efaa0a4d4feca1105e91ded214478441820c3.png",
+    "w": "Invincible",
+    "d": "",
+    "b": [
+      "M",
+      "cl",
+      "sc",
+      "sa"
+    ],
+    "k": "oneye"
+  },
+  {
+    "u": 9639975,
+    "n": "Rutina",
+    "t": 4,
+    "i": "https://i.imgur.com/bGFXzGBl.jpg",
+    "s": "https://i.imgur.com/bGFXzGB.jpg",
+    "w": "Isekai Meikyu de Harem wo",
+    "d": "",
+    "b": [
+      "F",
+      "me",
+      "el"
+    ],
+    "k": "Ruaron"
+  },
+  {
+    "u": 7390337,
+    "n": "Vesta",
+    "t": 4,
+    "i": "https://i.imgur.com/6LT8vI8l.jpg",
+    "s": "https://i.imgur.com/6LT8vI8.jpg",
+    "w": "Isekai Meikyu de Harem wo",
+    "d": "",
+    "b": [
+      "F",
+      "dh",
+      "Dragonkin"
+    ],
+    "k": "Ruaron"
+  },
+  {
+    "u": 4749894,
+    "n": "Dearche Kings Claudia",
+    "t": 7,
+    "i": "https://i.imgur.com/8KqRurll.png",
+    "s": "https://i.imgur.com/8KqRurl.png",
+    "w": "Lyrical Nanoha",
+    "d": "",
+    "b": [
+      "F",
+      "hp",
+      "sc",
+      "mm",
+      "Tsundere"
+    ],
+    "k": "KaizerRyu"
+  },
+  {
+    "u": 8980755,
+    "n": "Levi Russel",
+    "t": 7,
+    "i": "https://i.imgur.com/DfMSCmOl.png",
+    "s": "https://i.imgur.com/DfMSCmO.png",
+    "w": "Lyrical Nanoha",
+    "d": "",
+    "b": [
+      "F",
+      "hp",
+      "sc",
+      "mm"
+    ],
+    "k": "KaizerRyu"
+  },
+  {
+    "u": 3147207,
+    "n": "Stern Starks",
+    "t": 7,
+    "i": "https://i.imgur.com/A8C7t2xl.png",
+    "s": "https://i.imgur.com/A8C7t2x.png",
+    "w": "Lyrical Nanoha",
+    "d": "",
+    "b": [
+      "F",
+      "hp",
+      "cl",
+      "mm"
+    ],
+    "k": "KaizerRyu"
+  },
+  {
+    "u": 5044163,
+    "n": "Speed Weasel ( Gavrill Kinney )",
+    "t": 8,
+    "i": "EA-da7XXsAEO_jG.jpg",
+    "s": "https://pbs.twimg.com/media/EA-da7XXsAEO_jG.jpg",
+    "w": "Marvel",
+    "d": "warp world",
+    "b": [
+      "F",
+      "hl",
+      "ur",
+      "mu"
+    ],
+    "k": "anon"
+  },
+  {
+    "u": 8552521,
+    "n": "Spider-Gwen (w/Venom Symbiote)",
+    "t": 5,
+    "i": "https://i.imgur.com/UoWGAwRl.jpg",
+    "s": "https://i.imgur.com/UoWGAwR.jpg",
+    "w": "Marvel",
+    "d": "",
+    "b": [
+      "F",
+      "sp",
+      "sr",
+      "mi",
+      "al"
+    ],
+    "in": "https://i.imgur.com/3byBQwD.jpg",
+    "k": "Jollymerr"
+  },
+  {
+    "u": 7211379,
+    "n": "Kiva Andru",
+    "t": 3,
+    "i": "Kiva-SFW.jpg",
+    "s": "https://i.ibb.co/pPV7wsc/Kiva-SFW.jpg",
+    "w": "Megas XLR",
+    "d": "",
+    "b": [
+      "F",
+      "tm",
+      "U"
+    ],
+    "k": "Riggnarock"
+  },
+  {
+    "u": 4886625,
+    "n": "Ygraine Pendragon",
+    "t": 2,
+    "i": "Queen_Ygraine_Pendragon.jpg",
+    "s": "https://static.wikia.nocookie.net/merlin1/images/3/38/Queen_Ygraine_Pendragon.jpg",
+    "w": "Merlin BBC",
+    "d": "",
+    "b": [
+      "F",
+      "un"
+    ],
+    "k": "exsailor1999"
+  },
+  {
+    "u": 8393233,
+    "n": "Sophia",
+    "t": 5,
+    "i": "merlin.sophia.jpg",
+    "s": "https://img.sharetv.com/shows/characters/thumbnails/merlin.sophia.jpg",
+    "w": "Merlin BBC",
+    "d": "",
+    "b": [
+      "F",
+      "dh"
+    ],
+    "k": "exsailor1999"
+  },
+  {
+    "u": 6548221,
+    "n": "Guinevere",
+    "t": 3,
+    "i": "071KPD98ZFXl.jpg",
+    "s": "https://www4.pictures.zimbio.com/mp/071KPD98ZFXl.jpg",
+    "w": "Merlin BBC",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "exsailor1999"
+  },
+  {
+    "u": 8135022,
+    "n": "Monsoon",
+    "t": 4,
+    "i": "__monsoon_metal_gear_and_1_more_drawn_by_taisowbukurow__sample-c1d555ccf7d2695593574974793518d0.jpg",
+    "s": "https://cdn.donmai.us/sample/c1/d5/__monsoon_metal_gear_and_1_more_drawn_by_taisowbukurow__sample-c1d555ccf7d2695593574974793518d0.jpg",
+    "w": "Metal Gear Rising",
+    "d": "",
+    "b": [
+      "M",
+      "cb"
+    ],
+    "k": "TheDragonOfWisdom"
+  },
+  {
+    "u": 5477956,
+    "n": "Blade Wolf",
+    "t": 4,
+    "i": "d3832036a781664034e97f09018ceb53.jpg",
+    "s": "https://i.pinimg.com/originals/d3/83/20/d3832036a781664034e97f09018ceb53.jpg",
+    "w": "Metal Gear Rising",
+    "d": "",
+    "b": [
+      "M",
+      "ai",
+      "ad"
+    ],
+    "k": "TheDragonOfWisdom"
+  },
+  {
+    "u": 8254768,
+    "n": "Sundowner",
+    "t": 4,
+    "i": "803bc8f575198740a8d0b5c8fa8ba3ec.jpg",
+    "s": "https://i.pinimg.com/originals/80/3b/c8/803bc8f575198740a8d0b5c8fa8ba3ec.jpg",
+    "w": "Metal Gear Rising",
+    "d": "",
+    "b": [
+      "M",
+      "cb"
+    ],
+    "k": "TheDragonOfWisdom"
+  },
+  {
+    "u": 4410953,
+    "n": "Steven Armstrong",
+    "t": 4,
+    "i": "__steven_armstrong_metal_gear_and_1_more_drawn_by_werfmight__ffc4fe13277826cb7b109cd8ac718847.jpg",
+    "s": "https://cdn.donmai.us/original/ff/c4/__steven_armstrong_metal_gear_and_1_more_drawn_by_werfmight__ffc4fe13277826cb7b109cd8ac718847.jpg",
+    "w": "Metal Gear Rising",
+    "d": "",
+    "b": [
+      "M",
+      "cr",
+      "sc",
+      "vn"
+    ],
+    "k": "TheDragonOfWisdom"
+  },
+  {
+    "u": 4149255,
+    "n": "Jack (Raiden)",
+    "t": 4,
+    "i": "__raiden_metal_gear_and_1_more_drawn_by_gongcheng__f346b6c9dcedbbcc062c50983f16dd62.jpg",
+    "s": "https://cdn.donmai.us/original/f3/46/__raiden_metal_gear_and_1_more_drawn_by_gongcheng__f346b6c9dcedbbcc062c50983f16dd62.jpg",
+    "w": "Metal Gear Rising",
+    "d": "",
+    "b": [
+      "M",
+      "cb"
+    ],
+    "k": "TheDragonOfWisdom"
+  },
+  {
+    "u": 8441572,
+    "n": "Samuel Rodrigues (Jetstream)",
+    "t": 4,
+    "i": "__samuel_rodrigues_metal_gear_and_1_more_drawn_by_hong_doo__85b76f1a7a14a9fd97b12dfc3913c669.jpg",
+    "s": "https://cdn.donmai.us/original/85/b7/__samuel_rodrigues_metal_gear_and_1_more_drawn_by_hong_doo__85b76f1a7a14a9fd97b12dfc3913c669.jpg",
+    "w": "Metal Gear Rising",
+    "d": "",
+    "b": [
+      "M",
+      "sc",
+      "cb"
+    ],
+    "k": "TheDragonOfWisdom"
+  },
+  {
+    "u": 4475767,
+    "n": "Ultimate Summoning Beast",
+    "t": 6,
+    "i": "https://i.imgur.com/fk7WFaVl.png",
+    "s": "https://i.imgur.com/fk7WFaV.png",
+    "w": "Naruto",
+    "d": "",
+    "b": [
+      "O",
+      "mp",
+      "dr",
+      "mr",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 7591726,
+    "n": "Yurika",
+    "t": 4,
+    "i": "https://i.imgur.com/CHCfpp9l.png",
+    "s": "https://i.imgur.com/CHCfpp9.png",
+    "w": "Naruto",
+    "d": "Konohagakure",
+    "b": [
+      "F",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 8351221,
+    "n": "Hakui",
+    "t": 5,
+    "i": "https://i.imgur.com/sDHlVrYl.png",
+    "s": "https://i.imgur.com/sDHlVrY.png",
+    "w": "Naruto",
+    "d": "Konohagakure",
+    "b": [
+      "F",
+      "hl",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 9179200,
+    "n": "Breeze Dancer",
+    "t": 5,
+    "i": "https://i.imgur.com/mI3qsObl.png",
+    "s": "https://i.imgur.com/mI3qsOb.png",
+    "w": "Naruto",
+    "d": "Konohagakure",
+    "b": [
+      "F",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 4955987,
+    "n": "Azure Fang",
+    "t": 5,
+    "i": "https://i.imgur.com/gG6UJ9fl.png",
+    "s": "https://i.imgur.com/gG6UJ9f.png",
+    "w": "Naruto",
+    "d": "Konohagakure",
+    "b": [
+      "F",
+      "hl",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 5784378,
+    "n": "Ashina",
+    "t": 1,
+    "i": "https://i.imgur.com/ODj9NZAl.png",
+    "s": "https://i.imgur.com/ODj9NZA.png",
+    "w": "Naruto",
+    "d": "Konohagakure",
+    "b": [
+      "F",
+      "U",
+      "ar"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 5252752,
+    "n": "A (3rd Raikage)",
+    "t": 6,
+    "i": "https://i.imgur.com/f7JoqIMl.png",
+    "s": "https://i.imgur.com/f7JoqIM.png",
+    "w": "Naruto",
+    "d": "Kumogakure",
+    "b": [
+      "M",
+      "nj",
+      "rl",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 1808800,
+    "n": "A (2nd Raikage)",
+    "t": 5,
+    "i": "https://i.imgur.com/0ZBOk11l.png",
+    "s": "https://i.imgur.com/0ZBOk11.png",
+    "w": "Naruto",
+    "d": "Kumogakure",
+    "b": [
+      "M",
+      "nj",
+      "rl",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 5376293,
+    "n": "A (1st Raikage)",
+    "t": 5,
+    "i": "https://i.imgur.com/sC9L12bl.png",
+    "s": "https://i.imgur.com/sC9L12b.png",
+    "w": "Naruto",
+    "d": "Kumogakure",
+    "b": [
+      "M",
+      "nj",
+      "rl",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 6325797,
+    "n": "Third Mizukage",
+    "t": 5,
+    "i": "https://i.imgur.com/fsLQa3gl.png",
+    "s": "https://i.imgur.com/fsLQa3g.png",
+    "w": "Naruto",
+    "d": "Kirigakure",
+    "b": [
+      "M",
+      "nj",
+      "rl",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 7872555,
+    "n": "Hozuki Gengetsu (2nd Mizukage)",
+    "t": 6,
+    "i": "https://i.imgur.com/h9yM7U6l.png",
+    "s": "https://i.imgur.com/h9yM7U6.png",
+    "w": "Naruto",
+    "d": "Kirigakure",
+    "b": [
+      "M",
+      "nj",
+      "sr",
+      "rl",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 6773044,
+    "n": "Byakuren (1st Mizukage)",
+    "t": 5,
+    "i": "https://i.imgur.com/BUdSrYul.png",
+    "s": "https://i.imgur.com/BUdSrYu.png",
+    "w": "Naruto",
+    "d": "Kirigakure",
+    "b": [
+      "M",
+      "nj",
+      "rl",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 7491027,
+    "n": "Onoki (3rd Tsuchikage)",
+    "t": 6,
+    "i": "https://i.imgur.com/hZHT6GVl.png",
+    "s": "https://i.imgur.com/hZHT6GV.png",
+    "w": "Naruto",
+    "d": "Iwagakure",
+    "b": [
+      "M",
+      "nj",
+      "rl",
+      "U",
+      "sa"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 1798310,
+    "n": "Mu (2nd Tsuchikage)",
+    "t": 6,
+    "i": "https://i.imgur.com/ArPKoNll.png",
+    "s": "https://i.imgur.com/ArPKoNl.png",
+    "w": "Naruto",
+    "d": "Iwagakure",
+    "b": [
+      "M",
+      "sc",
+      "nj",
+      "rl",
+      "U",
+      "sa"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 5331114,
+    "n": "Ishikawa (1st Tsuchikage)",
+    "t": 5,
+    "i": "https://i.imgur.com/5smmzsol.png",
+    "s": "https://i.imgur.com/5smmzso.png",
+    "w": "Naruto",
+    "d": "Iwagakure",
+    "b": [
+      "M",
+      "nj",
+      "rl",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 4374334,
+    "n": "Reto (1st Kazekage)",
+    "t": 5,
+    "i": "https://i.imgur.com/3UgvWnzl.png",
+    "s": "https://i.imgur.com/3UgvWnz.png",
+    "w": "Naruto",
+    "d": "Sunagakure",
+    "b": [
+      "M",
+      "hr",
+      "nj",
+      "rl",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 7785460,
+    "n": "Shamon (2nd Kazekage)",
+    "t": 5,
+    "i": "https://i.imgur.com/GhKwQNbl.png",
+    "s": "https://i.imgur.com/GhKwQNb.png",
+    "w": "Naruto",
+    "d": "Sunagakure",
+    "b": [
+      "M",
+      "hr",
+      "nj",
+      "rl",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 4222308,
+    "n": "Third Kazekage",
+    "t": 6,
+    "i": "https://i.imgur.com/lXNWaIPl.png",
+    "s": "https://i.imgur.com/lXNWaIP.png",
+    "w": "Naruto",
+    "d": "Sunagakure",
+    "b": [
+      "M",
+      "hr",
+      "nj",
+      "rl",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 9526259,
+    "n": "Rasa (4th Kazekage)",
+    "t": 6,
+    "i": "https://i.imgur.com/DpskY0nl.png",
+    "s": "https://i.imgur.com/DpskY0n.png",
+    "w": "Naruto",
+    "d": "Sunagakure",
+    "b": [
+      "M",
+      "hr",
+      "nj",
+      "rl",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 4660083,
+    "n": "Hyuga Ko",
+    "t": 5,
+    "i": "https://i.imgur.com/UIdbYHMl.png",
+    "s": "https://i.imgur.com/UIdbYHM.png",
+    "w": "Naruto",
+    "d": "Konohagakure",
+    "b": [
+      "M",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 2426923,
+    "n": "Suikazan Fuguki",
+    "t": 5,
+    "i": "https://i.imgur.com/5ZurXisl.png",
+    "s": "https://i.imgur.com/5ZurXis.png",
+    "w": "Naruto",
+    "d": "Kirigakure",
+    "b": [
+      "M",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 5091176,
+    "n": "Munashi Jinpachi",
+    "t": 5,
+    "i": "https://i.imgur.com/RAEXyNQl.png",
+    "s": "https://i.imgur.com/RAEXyNQ.png",
+    "w": "Naruto",
+    "d": "Kirigakure",
+    "b": [
+      "M",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 2086874,
+    "n": "Kuriarare Kushimaru",
+    "t": 5,
+    "i": "https://i.imgur.com/hP5MJxel.png",
+    "s": "https://i.imgur.com/hP5MJxe.png",
+    "w": "Naruto",
+    "d": "Kirigakure",
+    "b": [
+      "M",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 3178551,
+    "n": "Hozuki Mangetsu",
+    "t": 6,
+    "i": "https://i.imgur.com/OQHkEtsl.jpg",
+    "s": "https://i.imgur.com/OQHkEts.jpg",
+    "w": "Naruto",
+    "d": "Kirigakure",
+    "b": [
+      "M",
+      "nj",
+      "sr",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 3257482,
+    "n": "Akebino Jinin",
+    "t": 5,
+    "i": "https://i.imgur.com/do5SYXVl.png",
+    "s": "https://i.imgur.com/do5SYXV.png",
+    "w": "Naruto",
+    "d": "Kirigakure",
+    "b": [
+      "M",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 7763802,
+    "n": "Biwa Juzo",
+    "t": 5,
+    "i": "https://i.imgur.com/4oq16Byl.png",
+    "s": "https://i.imgur.com/4oq16By.png",
+    "w": "Naruto",
+    "d": "Kirigakure",
+    "b": [
+      "M",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 8293734,
+    "n": "Sadoru",
+    "t": 4,
+    "i": "https://i.imgur.com/UOWAjoml.jpg",
+    "s": "https://i.imgur.com/UOWAjom.jpg",
+    "w": "Naruto",
+    "d": "Konohagakure",
+    "b": [
+      "F",
+      "tc",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 1089928,
+    "n": "Shibuki",
+    "t": 5,
+    "i": "https://i.imgur.com/RdEc3b0l.png",
+    "s": "https://i.imgur.com/RdEc3b0.png",
+    "w": "Naruto",
+    "d": "Takigakure",
+    "b": [
+      "M",
+      "nj",
+      "rl",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 7398860,
+    "n": "Shizuku",
+    "t": 5,
+    "i": "https://i.imgur.com/mGH0dlUl.png",
+    "s": "https://i.imgur.com/mGH0dlU.png",
+    "w": "Naruto",
+    "d": "Oni no Kuni",
+    "b": [
+      "F",
+      "nj",
+      "sr",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 9735446,
+    "n": "Moryo",
+    "t": 7,
+    "i": "https://i.imgur.com/5l30D7xl.png",
+    "s": "https://i.imgur.com/5l30D7x.png",
+    "w": "Naruto",
+    "d": "Oni no Kuni",
+    "b": [
+      "O",
+      "bj",
+      "dr",
+      "dm",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 8077802,
+    "n": "Satori",
+    "t": 7,
+    "i": "https://i.imgur.com/g5Zy6eXl.png",
+    "s": "https://i.imgur.com/g5Zy6eX.png",
+    "w": "Naruto",
+    "d": "",
+    "b": [
+      "O",
+      "im",
+      "sc",
+      "dm",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 5036646,
+    "n": "Shiseru",
+    "t": 5,
+    "i": "https://i.imgur.com/BMWvEvDl.png",
+    "s": "https://i.imgur.com/BMWvEvD.png",
+    "w": "Naruto",
+    "d": "",
+    "b": [
+      "F",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 5664296,
+    "n": "Shizuka's Mentor",
+    "t": 5,
+    "i": "https://i.imgur.com/WnM1qjOl.png",
+    "s": "https://i.imgur.com/WnM1qjO.png",
+    "w": "Naruto",
+    "d": "Nadeshiko",
+    "b": [
+      "F",
+      "az",
+      "nj",
+      "rl",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 1099003,
+    "n": "Might Duy",
+    "t": 6,
+    "i": "https://i.imgur.com/n0N4f7Kl.png",
+    "s": "https://i.imgur.com/n0N4f7K.png",
+    "w": "Naruto",
+    "d": "Konohagakure",
+    "b": [
+      "M",
+      "cl",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 3404709,
+    "n": "Maruboshi Kosuke",
+    "t": 5,
+    "i": "https://i.imgur.com/rK3VEwnl.png",
+    "s": "https://i.imgur.com/rK3VEwn.png",
+    "w": "Naruto",
+    "d": "Konohagakure",
+    "b": [
+      "M",
+      "cf",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 4047485,
+    "n": "Condor (Lord Ostrich)",
+    "t": 5,
+    "i": "https://i.imgur.com/5ZQahbUl.png",
+    "s": "https://i.imgur.com/5ZQahbU.png",
+    "w": "Naruto",
+    "d": "Konohagakure",
+    "b": [
+      "M",
+      "cl",
+      "mr",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 2231988,
+    "n": "Three Taki Kunoichi",
+    "t": 5,
+    "i": "https://i.imgur.com/ZOwevLvl.png",
+    "s": "https://i.imgur.com/ZOwevLv.png",
+    "w": "Naruto",
+    "d": "Takigakure",
+    "b": [
+      "F",
+      "nj",
+      "U",
+      "mi"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 8103742,
+    "n": "Suzume",
+    "t": 4,
+    "i": "https://i.imgur.com/sFXFgkgl.png",
+    "s": "https://i.imgur.com/sFXFgkg.png",
+    "w": "Naruto",
+    "d": "Konohagakure",
+    "b": [
+      "F",
+      "tc",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 1101700,
+    "n": "Yukimaru's Mother",
+    "t": 1,
+    "i": "https://i.imgur.com/D8TzgLll.png",
+    "s": "https://i.imgur.com/D8TzgLl.png",
+    "w": "Naruto",
+    "d": "",
+    "b": [
+      "F",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 2152630,
+    "n": "Yukimaru",
+    "t": 4,
+    "i": "https://i.imgur.com/FAScGWel.png",
+    "s": "https://i.imgur.com/FAScGWe.png",
+    "w": "Naruto",
+    "d": "Otogakure",
+    "b": [
+      "M",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 1160880,
+    "n": "Fudo",
+    "t": 5,
+    "i": "https://i.imgur.com/pR97WA0l.png",
+    "s": "https://i.imgur.com/pR97WA0.png",
+    "w": "Naruto",
+    "d": "Hi no Kuni",
+    "b": [
+      "M",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 1658075,
+    "n": "Kazuma",
+    "t": 5,
+    "i": "https://i.imgur.com/fWA0sH1l.png",
+    "s": "https://i.imgur.com/fWA0sH1.png",
+    "w": "Naruto",
+    "d": "Hi no Kuni",
+    "b": [
+      "M",
+      "nj",
+      "U",
+      "vn"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 4619485,
+    "n": "Sora",
+    "t": 5,
+    "i": "https://i.imgur.com/AFU8wtEl.png",
+    "s": "https://i.imgur.com/AFU8wtE.png",
+    "w": "Naruto",
+    "d": "Hi no Kuni",
+    "b": [
+      "M",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 1186151,
+    "n": "Karatachi Yagura",
+    "t": 6,
+    "i": "https://i.imgur.com/kIUnnn1l.png",
+    "s": "https://i.imgur.com/kIUnnn1.png",
+    "w": "Naruto",
+    "d": "Kirigakure",
+    "b": [
+      "M",
+      "nj",
+      "rl",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 7753906,
+    "n": "Utakata",
+    "t": 6,
+    "i": "https://i.imgur.com/WqYJ6HLl.jpg",
+    "s": "https://i.imgur.com/WqYJ6HL.jpg",
+    "w": "Naruto",
+    "d": "Kirigakure",
+    "b": [
+      "M",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 8716090,
+    "n": "Han",
+    "t": 6,
+    "i": "https://i.imgur.com/2s5q0a0l.png",
+    "s": "https://i.imgur.com/2s5q0a0.png",
+    "w": "Naruto",
+    "d": "Iwagakure",
+    "b": [
+      "M",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 7536797,
+    "n": "Roshi",
+    "t": 6,
+    "i": "https://i.imgur.com/jtLXhuxl.png",
+    "s": "https://i.imgur.com/jtLXhux.png",
+    "w": "Naruto",
+    "d": "Iwagakure",
+    "b": [
+      "M",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 7332754,
+    "n": "Uchiha Fugaku",
+    "t": 6,
+    "i": "https://i.imgur.com/6FpMf0Bl.png",
+    "s": "https://i.imgur.com/6FpMf0B.png",
+    "w": "Naruto",
+    "d": "Konohagakure",
+    "b": [
+      "M",
+      "mp",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 2645024,
+    "n": "Kitsuchi",
+    "t": 5,
+    "i": "https://i.imgur.com/S1i2n5Dl.png",
+    "s": "https://i.imgur.com/S1i2n5D.png",
+    "w": "Naruto",
+    "d": "Iwagakure",
+    "b": [
+      "M",
+      "cl",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 8342901,
+    "n": "Yamanaka Santa",
+    "t": 5,
+    "i": "https://i.imgur.com/11tgsIvl.png",
+    "s": "https://i.imgur.com/11tgsIv.png",
+    "w": "Naruto",
+    "d": "Konohagakure",
+    "b": [
+      "M",
+      "mp",
+      "bj",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 6763438,
+    "n": "Ginkaku & Kinkaku (Gold&Silver Brothers)",
+    "t": 6,
+    "i": "https://i.imgur.com/e2dklbtl.png",
+    "s": "https://i.imgur.com/e2dklbt.png",
+    "w": "Naruto",
+    "d": "Kumogakure",
+    "b": [
+      "M",
+      "nj",
+      "U",
+      "mi",
+      "tw"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 4545352,
+    "n": "Frost Daimyo",
+    "t": 2,
+    "i": "https://i.imgur.com/BDAPRiql.png",
+    "s": "https://i.imgur.com/BDAPRiq.png",
+    "w": "Naruto",
+    "d": "Shimo no Kuni",
+    "b": [
+      "M",
+      "rl",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 6620817,
+    "n": "C",
+    "t": 5,
+    "i": "https://i.imgur.com/GFnLfxdl.jpg",
+    "s": "https://i.imgur.com/GFnLfxd.jpg",
+    "w": "Naruto",
+    "d": "Kumogakure",
+    "b": [
+      "M",
+      "hl",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 1052153,
+    "n": "Darui",
+    "t": 6,
+    "i": "https://i.imgur.com/08WXsbIl.jpg",
+    "s": "https://i.imgur.com/08WXsbI.jpg",
+    "w": "Naruto",
+    "d": "Kumogakure",
+    "b": [
+      "M",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 4940994,
+    "n": "Atsui",
+    "t": 5,
+    "i": "https://i.imgur.com/kaTJxAgl.png",
+    "s": "https://i.imgur.com/kaTJxAg.png",
+    "w": "Naruto",
+    "d": "Kumogakure",
+    "b": [
+      "M",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 1737213,
+    "n": "Nara Ensui",
+    "t": 5,
+    "i": "https://i.imgur.com/GP6dz3Gl.jpg",
+    "s": "https://i.imgur.com/GP6dz3G.jpg",
+    "w": "Naruto",
+    "d": "Konohagakure",
+    "b": [
+      "M",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 8978393,
+    "n": "Hyuga Tokuma",
+    "t": 5,
+    "i": "https://i.imgur.com/mZ9u7Shl.png",
+    "s": "https://i.imgur.com/mZ9u7Sh.png",
+    "w": "Naruto",
+    "d": "Konohagakure",
+    "b": [
+      "M",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 7333367,
+    "n": "Aburame Muta",
+    "t": 5,
+    "i": "https://i.imgur.com/XTiKmnjl.png",
+    "s": "https://i.imgur.com/XTiKmnj.png",
+    "w": "Naruto",
+    "d": "Konohagakure",
+    "b": [
+      "M",
+      "cl",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 1613484,
+    "n": "Motoi",
+    "t": 5,
+    "i": "https://i.imgur.com/mlwQavhl.png",
+    "s": "https://i.imgur.com/mlwQavh.png",
+    "w": "Naruto",
+    "d": "Kumogakure",
+    "b": [
+      "M",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 5307441,
+    "n": "Akatsuchi",
+    "t": 5,
+    "i": "https://i.imgur.com/gOslA7yl.png",
+    "s": "https://i.imgur.com/gOslA7y.png",
+    "w": "Naruto",
+    "d": "Iwagakure",
+    "b": [
+      "M",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 3963581,
+    "n": "Toroi",
+    "t": 5,
+    "i": "https://i.imgur.com/tsAJ3A3l.jpg",
+    "s": "https://i.imgur.com/tsAJ3A3.jpg",
+    "w": "Naruto",
+    "d": "Kumogakure",
+    "b": [
+      "M",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 8285086,
+    "n": "Chukichi",
+    "t": 5,
+    "i": "https://i.imgur.com/C9MEPr8l.png",
+    "s": "https://i.imgur.com/C9MEPr8.png",
+    "w": "Naruto",
+    "d": "Kirigakure",
+    "b": [
+      "M",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 9792362,
+    "n": "Gari",
+    "t": 6,
+    "i": "https://i.imgur.com/ti1Zdsel.png",
+    "s": "https://i.imgur.com/ti1Zdse.png",
+    "w": "Naruto",
+    "d": "Iwagakure",
+    "b": [
+      "M",
+      "cl",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 4264739,
+    "n": "Kato Dan",
+    "t": 5,
+    "i": "https://i.imgur.com/PrBWAYIl.png",
+    "s": "https://i.imgur.com/PrBWAYI.png",
+    "w": "Naruto",
+    "d": "Konohagakure",
+    "b": [
+      "M",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 5872651,
+    "n": "Hyuga Hiashi",
+    "t": 5,
+    "i": "https://i.imgur.com/H1hBmKMl.png",
+    "s": "https://i.imgur.com/H1hBmKM.png",
+    "w": "Naruto",
+    "d": "Konohagakure",
+    "b": [
+      "M",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 4542925,
+    "n": "Hyuga Hizashi",
+    "t": 5,
+    "i": "https://i.imgur.com/lcbeXyLl.png",
+    "s": "https://i.imgur.com/lcbeXyL.png",
+    "w": "Naruto",
+    "d": "Konohagakure",
+    "b": [
+      "M",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 7460620,
+    "n": "Baku",
+    "t": 6,
+    "i": "https://i.imgur.com/OEjtheEl.png",
+    "s": "https://i.imgur.com/OEjtheE.png",
+    "w": "Naruto",
+    "d": "Konohagakure",
+    "b": [
+      "M",
+      "mr",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 4969172,
+    "n": "Chojuro",
+    "t": 5,
+    "i": "https://i.imgur.com/TPR0Dwcl.png",
+    "s": "https://i.imgur.com/TPR0Dwc.png",
+    "w": "Naruto",
+    "d": "Kirigakure",
+    "b": [
+      "M",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 2869793,
+    "n": "Ao",
+    "t": 5,
+    "i": "https://i.imgur.com/m88vdOlI.jpg",
+    "s": "https://i.imgur.com/m88vdOI.jpg",
+    "w": "Naruto",
+    "d": "Kirigakure",
+    "b": [
+      "M",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 7872012,
+    "n": "Ao",
+    "t": 5,
+    "i": "https://i.imgur.com/m88vdOIl.jpg",
+    "s": "https://i.imgur.com/m88vdOI.jpg",
+    "w": "Naruto",
+    "d": "Kirigakure",
+    "b": [
+      "M",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 7205616,
+    "n": "Omoi",
+    "t": 5,
+    "i": "https://i.imgur.com/2GX9g7Dl.jpg",
+    "s": "https://i.imgur.com/2GX9g7D.jpg",
+    "w": "Naruto",
+    "d": "Kumogakure",
+    "b": [
+      "M",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 6923117,
+    "n": "Aburame Shibi",
+    "t": 5,
+    "i": "https://i.imgur.com/sKSdFT8l.png",
+    "s": "https://i.imgur.com/sKSdFT8.png",
+    "w": "Naruto",
+    "d": "Konohagakure",
+    "b": [
+      "M",
+      "cl",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 4261227,
+    "n": "Yamanaka Inoichi",
+    "t": 5,
+    "i": "https://i.imgur.com/PFXyKedl.png",
+    "s": "https://i.imgur.com/PFXyKed.png",
+    "w": "Naruto",
+    "d": "Konohagakure",
+    "b": [
+      "M",
+      "mp",
+      "bj",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 4290993,
+    "n": "Akimichi Choza",
+    "t": 5,
+    "i": "https://i.imgur.com/8Kv5nBcl.png",
+    "s": "https://i.imgur.com/8Kv5nBc.png",
+    "w": "Naruto",
+    "d": "Konohagakure",
+    "b": [
+      "M",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 6177514,
+    "n": "Yahiko",
+    "t": 5,
+    "i": "https://i.imgur.com/QvqNEvSl.png",
+    "s": "https://i.imgur.com/QvqNEvS.png",
+    "w": "Naruto",
+    "d": "Akatsuki",
+    "b": [
+      "M",
+      "sc",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 6505759,
+    "n": "Jugo",
+    "t": 5,
+    "i": "https://i.imgur.com/nvPHgPql.png",
+    "s": "https://i.imgur.com/nvPHgPq.png",
+    "w": "Naruto",
+    "d": "Otogakure",
+    "b": [
+      "M",
+      "hl",
+      "dr",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 4336315,
+    "n": "Chiriku",
+    "t": 5,
+    "i": "https://i.imgur.com/Q8LY3CAl.png",
+    "s": "https://i.imgur.com/Q8LY3CA.png",
+    "w": "Naruto",
+    "d": "Hi no Kuni",
+    "b": [
+      "M",
+      "cl",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 9692683,
+    "n": "Kamizuki Izumo",
+    "t": 5,
+    "i": "https://i.imgur.com/psIekEvl.png",
+    "s": "https://i.imgur.com/psIekEv.png",
+    "w": "Naruto",
+    "d": "Konohagakure",
+    "b": [
+      "M",
+      "nj",
+      "U",
+      "sa"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 7257940,
+    "n": "Hagane Kotetsu",
+    "t": 5,
+    "i": "https://i.imgur.com/j1AyyeXl.png",
+    "s": "https://i.imgur.com/j1AyyeX.png",
+    "w": "Naruto",
+    "d": "Konohagakure",
+    "b": [
+      "M",
+      "mp",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 6492815,
+    "n": "Yamashiro Aoba",
+    "t": 5,
+    "i": "https://i.imgur.com/12YlVHol.jpg",
+    "s": "https://i.imgur.com/12YlVHo.jpg",
+    "w": "Naruto",
+    "d": "Konohagakure",
+    "b": [
+      "M",
+      "mp",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 3118797,
+    "n": "Namiashi Raido",
+    "t": 5,
+    "i": "https://i.imgur.com/56f86i3l.jpg",
+    "s": "https://i.imgur.com/56f86i3.jpg",
+    "w": "Naruto",
+    "d": "Konohagakure",
+    "b": [
+      "M",
+      "cl",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 8508482,
+    "n": "Aburame Torune",
+    "t": 5,
+    "i": "https://i.imgur.com/rK4njRvl.png",
+    "s": "https://i.imgur.com/rK4njRv.png",
+    "w": "Naruto",
+    "d": "Konohagakure",
+    "b": [
+      "M",
+      "st",
+      "cl",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 6187603,
+    "n": "Yamanaka Fu",
+    "t": 5,
+    "i": "https://i.imgur.com/1LxRxosl.png",
+    "s": "https://i.imgur.com/1LxRxos.png",
+    "w": "Naruto",
+    "d": "Konohagakure",
+    "b": [
+      "M",
+      "cl",
+      "mp",
+      "bj",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 1378577,
+    "n": "Mifune",
+    "t": 6,
+    "i": "https://i.imgur.com/A3UM4ZZl.png",
+    "s": "https://i.imgur.com/A3UM4ZZ.png",
+    "w": "Naruto",
+    "d": "Tetsu no Kuni",
+    "b": [
+      "M",
+      "cl",
+      "sc",
+      "rl",
+      "U",
+      "sa"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 5770311,
+    "n": "Gedo Mazo",
+    "t": 7,
+    "i": "danel-yessaliyeva-gedomazo.jpg",
+    "s": "https://cdnb.artstation.com/p/assets/images/images/002/764/831/large/danel-yessaliyeva-gedomazo.jpg",
+    "w": "Naruto",
+    "d": "",
+    "b": [
+      "O",
+      "dr",
+      "im",
+      "dm",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 4501316,
+    "n": "Ibuse",
+    "t": 6,
+    "i": "https://i.imgur.com/iscRQ5Fl.png",
+    "s": "https://i.imgur.com/iscRQ5F.png",
+    "w": "Naruto",
+    "d": "Amegakure",
+    "b": [
+      "M",
+      "mr",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 1082515,
+    "n": "Hanzo",
+    "t": 6,
+    "i": "https://i.imgur.com/mSDcK86l.jpg",
+    "s": "https://i.imgur.com/mSDcK86.jpg",
+    "w": "Naruto",
+    "d": "Amegakure",
+    "b": [
+      "M",
+      "st",
+      "th",
+      "nj",
+      "rl",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 5620929,
+    "n": "Yamato (Tenzo)",
+    "t": 6,
+    "i": "https://i.imgur.com/BEcb9Mzl.jpg",
+    "s": "https://i.imgur.com/BEcb9Mz.jpg",
+    "w": "Naruto",
+    "d": "Konohagakure",
+    "b": [
+      "M",
+      "st",
+      "nj",
+      "sr",
+      "U",
+      "cc"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 6724184,
+    "n": "Hot Water Daimyo",
+    "t": 2,
+    "i": "https://i.imgur.com/Na6namUl.png",
+    "s": "https://i.imgur.com/Na6namU.png",
+    "w": "Naruto",
+    "d": "Yu no Kuni",
+    "b": [
+      "M",
+      "rl",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 9467730,
+    "n": "Earth Daimyo",
+    "t": 2,
+    "i": "https://i.imgur.com/YVEY8Ccl.png",
+    "s": "https://i.imgur.com/YVEY8Cc.png",
+    "w": "Naruto",
+    "d": "Tsuchi no Kuni",
+    "b": [
+      "M",
+      "rl",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 4640668,
+    "n": "Lightning Daimyo",
+    "t": 2,
+    "i": "https://i.imgur.com/AF3Q6Bnl.png",
+    "s": "https://i.imgur.com/AF3Q6Bn.png",
+    "w": "Naruto",
+    "d": "Kaminari no Kuni",
+    "b": [
+      "M",
+      "rl",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 3927037,
+    "n": "Water Daimyo",
+    "t": 2,
+    "i": "https://i.imgur.com/KS7HRPql.png",
+    "s": "https://i.imgur.com/KS7HRPq.png",
+    "w": "Naruto",
+    "d": "Mizu no Kuni",
+    "b": [
+      "M",
+      "rl",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 8694117,
+    "n": "Fire Daimyo",
+    "t": 2,
+    "i": "https://i.imgur.com/CDBBSO1l.png",
+    "s": "https://i.imgur.com/CDBBSO1.png",
+    "w": "Naruto",
+    "d": "Hi no Kuni",
+    "b": [
+      "M",
+      "rl",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 2642211,
+    "n": "Wind Daimyo",
+    "t": 2,
+    "i": "https://i.imgur.com/k5hU4Dyl.png",
+    "s": "https://i.imgur.com/k5hU4Dy.png",
+    "w": "Naruto",
+    "d": "Kaze no Kuni",
+    "b": [
+      "M",
+      "rl",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 5024785,
+    "n": "Hatake Sakumo",
+    "t": 6,
+    "i": "https://i.imgur.com/eGacBrel.png",
+    "s": "https://i.imgur.com/eGacBre.png",
+    "w": "Naruto",
+    "d": "Konohagakure",
+    "b": [
+      "M",
+      "cl",
+      "sc",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 4892609,
+    "n": "Ranmaru",
+    "t": 4,
+    "i": "https://i.imgur.com/elVMkYQl.png",
+    "s": "https://i.imgur.com/elVMkYQ.png",
+    "w": "Naruto",
+    "d": "Kirigakure",
+    "b": [
+      "M",
+      "mp",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 8087519,
+    "n": "Kurosuki Raiga",
+    "t": 5,
+    "i": "https://i.imgur.com/Hs7ukFxl.png",
+    "s": "https://i.imgur.com/Hs7ukFx.png",
+    "w": "Naruto",
+    "d": "Kirigakure",
+    "b": [
+      "M",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 6115950,
+    "n": "Suzumebachi",
+    "t": 5,
+    "i": "https://i.imgur.com/bNYrIngl.png",
+    "s": "https://i.imgur.com/bNYrIng.png",
+    "w": "Naruto",
+    "d": "Iwagakure",
+    "b": [
+      "F",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 8235120,
+    "n": "Tsubaki",
+    "t": 5,
+    "i": "https://i.imgur.com/gC249PUl.png",
+    "s": "https://i.imgur.com/gC249PU.png",
+    "w": "Naruto",
+    "d": "Konohagakure",
+    "b": [
+      "F",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 1532040,
+    "n": "Rokusho Aoi",
+    "t": 5,
+    "i": "https://i.imgur.com/i8ItmQol.png",
+    "s": "https://i.imgur.com/i8ItmQo.png",
+    "w": "Naruto",
+    "d": "Amegakure",
+    "b": [
+      "M",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 2929705,
+    "n": "Nara Shikaku",
+    "t": 5,
+    "i": "https://i.imgur.com/FNOuJAll.jpg",
+    "s": "https://i.imgur.com/FNOuJAl.jpg",
+    "w": "Naruto",
+    "d": "Konohagakure",
+    "b": [
+      "M",
+      "nj",
+      "U",
+      "sa"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 1670099,
+    "n": "Uchiha Shisui",
+    "t": 6,
+    "i": "https://i.imgur.com/G4pqJEzl.jpg",
+    "s": "https://i.imgur.com/G4pqJEz.jpg",
+    "w": "Naruto",
+    "d": "Konohagakure",
+    "b": [
+      "M",
+      "mp",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 4370215,
+    "n": "Sakon & Ukon",
+    "t": 5,
+    "i": "https://i.imgur.com/uEWp5N9l.png",
+    "s": "https://i.imgur.com/uEWp5N9.png",
+    "w": "Naruto",
+    "d": "Otogakure",
+    "b": [
+      "M",
+      "nj",
+      "U",
+      "mi"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 4488440,
+    "n": "Kidomaru",
+    "t": 5,
+    "i": "https://i.imgur.com/MCiJFFLl.png",
+    "s": "https://i.imgur.com/MCiJFFL.png",
+    "w": "Naruto",
+    "d": "Otogakure",
+    "b": [
+      "M",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 1865806,
+    "n": "Jirobo",
+    "t": 5,
+    "i": "https://i.imgur.com/TufGOull.jpg",
+    "s": "https://i.imgur.com/TufGOul.jpg",
+    "w": "Naruto",
+    "d": "Otogakure",
+    "b": [
+      "M",
+      "dr",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 8362268,
+    "n": "Shiranui Genma",
+    "t": 5,
+    "i": "https://i.imgur.com/zTMMPzMl.png",
+    "s": "https://i.imgur.com/zTMMPzM.png",
+    "w": "Naruto",
+    "d": "Konohagakure",
+    "b": [
+      "M",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 2895492,
+    "n": "Baki",
+    "t": 5,
+    "i": "https://i.imgur.com/yg5hLy9l.png",
+    "s": "https://i.imgur.com/yg5hLy9.png",
+    "w": "Naruto",
+    "d": "Sunagakure",
+    "b": [
+      "M",
+      "hr",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 1272207,
+    "n": "Gekko Hayate",
+    "t": 5,
+    "i": "https://i.imgur.com/koXrN7xl.png",
+    "s": "https://i.imgur.com/koXrN7x.png",
+    "w": "Naruto",
+    "d": "Konohagakure",
+    "b": [
+      "M",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 9893036,
+    "n": "Yakushi Kabuto",
+    "t": 6,
+    "i": "https://i.imgur.com/6OsL3JUl.jpg",
+    "s": "https://i.imgur.com/6OsL3JU.jpg",
+    "w": "Naruto",
+    "d": "Konohagakure",
+    "b": [
+      "M",
+      "dc",
+      "hl",
+      "st",
+      "dr",
+      "sn",
+      "nj",
+      "sr",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 1050337,
+    "n": "Morino Ibiki",
+    "t": 5,
+    "i": "https://i.imgur.com/3Kexwl9l.png",
+    "s": "https://i.imgur.com/3Kexwl9.png",
+    "w": "Naruto",
+    "d": "Konohagakure",
+    "b": [
+      "M",
+      "mp",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 8694265,
+    "n": "Ebisu",
+    "t": 5,
+    "i": "https://i.imgur.com/JQz20cQl.png",
+    "s": "https://i.imgur.com/JQz20cQ.png",
+    "w": "Naruto",
+    "d": "Konohagakure",
+    "b": [
+      "M",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 3427966,
+    "n": "Mizuki",
+    "t": 5,
+    "i": "https://i.imgur.com/STWl4hil.jpg",
+    "s": "https://i.imgur.com/STWl4hi.jpg",
+    "w": "Naruto",
+    "d": "Konohagakure",
+    "b": [
+      "M",
+      "mp",
+      "tc",
+      "nj",
+      "U",
+      "vn"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 6456073,
+    "n": "Umino Iruka",
+    "t": 5,
+    "i": "https://i.imgur.com/Qhv2dMcl.jpg",
+    "s": "https://i.imgur.com/Qhv2dMc.jpg",
+    "w": "Naruto",
+    "d": "Konohagakure",
+    "b": [
+      "M",
+      "tc",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 3446252,
+    "n": "Gozu & Meizu (Demon Brothers)",
+    "t": 4,
+    "i": "https://i.imgur.com/w7wEAQzl.png",
+    "s": "https://i.imgur.com/w7wEAQz.png",
+    "w": "Naruto",
+    "d": "Kirigakure",
+    "b": [
+      "M",
+      "nj",
+      "U",
+      "mi"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 6364305,
+    "n": "Gato",
+    "t": 2,
+    "i": "https://i.imgur.com/FPkUQHal.png",
+    "s": "https://i.imgur.com/FPkUQHa.png",
+    "w": "Naruto",
+    "d": "Nami no Kuni",
+    "b": [
+      "M",
+      "U",
+      "vn"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 9497703,
+    "n": "Tazuna",
+    "t": 2,
+    "i": "https://i.imgur.com/qj91jARl.png",
+    "s": "https://i.imgur.com/qj91jAR.png",
+    "w": "Naruto",
+    "d": "Nami no Kuni",
+    "b": [
+      "M",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 8652923,
+    "n": "Sarutobi Konohamaru",
+    "t": 6,
+    "i": "https://i.imgur.com/Gh5lqkCl.png",
+    "s": "https://i.imgur.com/Gh5lqkC.png",
+    "w": "Naruto",
+    "d": "Konohagakure",
+    "b": [
+      "M",
+      "cl",
+      "nj",
+      "U",
+      "sa"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 6454629,
+    "n": "Kashin Koji",
+    "t": 7,
+    "i": "https://i.imgur.com/6zNoa4il.png",
+    "s": "https://i.imgur.com/6zNoa4i.png",
+    "w": "Naruto",
+    "d": "Kara",
+    "b": [
+      "M",
+      "cl",
+      "sc",
+      "th",
+      "nj",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 6315287,
+    "n": "Delta",
+    "t": 7,
+    "i": "https://i.imgur.com/6WiOKq0l.jpg",
+    "s": "https://i.imgur.com/6WiOKq0.jpg",
+    "w": "Naruto",
+    "d": "Kara",
+    "b": [
+      "F",
+      "th",
+      "cb",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 7467221,
+    "n": "Amado",
+    "t": 5,
+    "i": "https://i.imgur.com/1PnOyZsl.jpg",
+    "s": "https://i.imgur.com/1PnOyZs.jpg",
+    "w": "Naruto",
+    "d": "Kara",
+    "b": [
+      "M",
+      "dc",
+      "cl",
+      "sc",
+      "sn",
+      "cc"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 4282106,
+    "n": "Otsutsuki Hamura",
+    "t": 8,
+    "i": "https://i.imgur.com/KfvxW83l.png",
+    "s": "https://i.imgur.com/KfvxW83.png",
+    "w": "Naruto",
+    "d": "",
+    "b": [
+      "M",
+      "hp",
+      "hz",
+      "di",
+      "rl",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 8707849,
+    "n": "Hakuja Sennin (White Snake Sage)",
+    "t": 6,
+    "i": "https://i.imgur.com/eOtXqOml.png",
+    "s": "https://i.imgur.com/eOtXqOm.png",
+    "w": "Naruto",
+    "d": "Ryuchi Cave",
+    "b": [
+      "F",
+      "mp",
+      "dr",
+      "mr",
+      "sr",
+      "rl",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 1249968,
+    "n": "Negi Springfield",
+    "t": 7,
+    "i": "a3760e54ad43cba21b352934621d6e34dd749679.jpg",
+    "s": "https://safebooru.org//images/397/a3760e54ad43cba21b352934621d6e34dd749679.jpg",
+    "w": "Negima!",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Selias"
+  },
+  {
+    "u": 2357536,
+    "n": "Brona Croft",
+    "t": 2,
+    "i": "Lily01.png",
+    "s": "https://static.wikia.nocookie.net/penny-dreadful/images/8/83/Lily01.png",
+    "w": "Penny Dreadful",
+    "d": "",
+    "b": [
+      "F",
+      "un"
+    ],
+    "k": "exsailor1999"
+  },
+  {
+    "u": 6608862,
+    "n": "Ghost of Maiden's Peak",
+    "t": 3,
+    "i": "Ghost-of-Maidens-Peak.png",
+    "s": "https://i.ibb.co/n0yP4dY/Ghost-of-Maidens-Peak.png",
+    "w": "Pokemon (anime-only)",
+    "d": "",
+    "b": [
+      "F",
+      "im",
+      "un"
+    ],
+    "k": "Ratcatcher"
+  },
+  {
+    "u": 1852535,
+    "n": "R-9/02 Ragnarok II",
+    "t": 9,
+    "i": "__r_9_02_ragnarok_ii_r_type_drawn_by_enkyo_yuuichirou__89e00090706651360d739396ea8d329c.jpg",
+    "s": "https://cdn.donmai.us/original/89/e0/__r_9_02_ragnarok_ii_r_type_drawn_by_enkyo_yuuichirou__89e00090706651360d739396ea8d329c.jpg",
+    "w": "R-Type",
+    "d": "",
+    "b": [
+      "F",
+      "hp",
+      "hr",
+      "hz",
+      "ur",
+      "ad",
+      "Spacecraft"
+    ],
+    "k": "KaizerRyu"
+  },
+  {
+    "u": 6817088,
+    "n": "B-3C2 Sexy Dynamite II",
+    "t": 8,
+    "i": "__b_3c2_sexy_dynamite_ii_r_type_drawn_by_enkyo_yuuichirou__500e4d9f95116c38a275e476e15ecea6.jpg",
+    "s": "https://cdn.donmai.us/original/50/0e/__b_3c2_sexy_dynamite_ii_r_type_drawn_by_enkyo_yuuichirou__500e4d9f95116c38a275e476e15ecea6.jpg",
+    "w": "R-Type",
+    "d": "",
+    "b": [
+      "F",
+      "hp",
+      "hr",
+      "hz",
+      "ur",
+      "ad",
+      "Spacecraft"
+    ],
+    "k": "KaizerRyu"
+  },
+  {
+    "u": 4200182,
+    "n": "R-9C Warhead",
+    "t": 7,
+    "i": "https://i.imgur.com/9axpvi8l.png",
+    "s": "https://i.imgur.com/9axpvi8.png",
+    "w": "R-Type",
+    "d": "",
+    "b": [
+      "F",
+      "hp",
+      "hr",
+      "hz",
+      "ur",
+      "ad",
+      "Spacecraft"
+    ],
+    "k": "KaizerRyu"
+  },
+  {
+    "u": 8917307,
+    "n": "R-9B Strider",
+    "t": 8,
+    "i": "https://i.imgur.com/F00plY3l.png",
+    "s": "https://i.imgur.com/F00plY3.png",
+    "w": "R-Type",
+    "d": "",
+    "b": [
+      "F",
+      "hp",
+      "hr",
+      "hz",
+      "ur",
+      "ad",
+      "Spacecraft"
+    ],
+    "k": "KaizerRyu"
+  },
+  {
+    "u": 5506517,
+    "n": "R-9A Arrowhead",
+    "t": 7,
+    "i": "https://i.imgur.com/j9mb5DOl.png",
+    "s": "https://i.imgur.com/j9mb5DO.png",
+    "w": "R-Type",
+    "d": "",
+    "b": [
+      "F",
+      "hp",
+      "hr",
+      "hz",
+      "ur",
+      "ad",
+      "Spacecraft"
+    ],
+    "k": "KaizerRyu"
+  },
+  {
+    "u": 5808175,
+    "n": "R-9W Wiseman",
+    "t": 7,
+    "i": "__r_9w_wise_man_r_type_drawn_by_enkyo_yuuichirou__e669e32346f333a582cd5335942b9a3f.jpg",
+    "s": "https://cdn.donmai.us/original/e6/69/__r_9w_wise_man_r_type_drawn_by_enkyo_yuuichirou__e669e32346f333a582cd5335942b9a3f.jpg",
+    "w": "R-Type",
+    "d": "",
+    "b": [
+      "F",
+      "hp",
+      "hr",
+      "hz",
+      "ur",
+      "ad",
+      "Spacecraft"
+    ],
+    "k": "KaizerRyu"
+  },
+  {
+    "u": 2288646,
+    "n": "R-9E Midnight Eye",
+    "t": 6,
+    "i": "__r_9e_midnight_eye_r_type_drawn_by_enkyo_yuuichirou__5ab34da785374e04eaab5c9678eab4a9.jpg",
+    "s": "https://cdn.donmai.us/original/5a/b3/__r_9e_midnight_eye_r_type_drawn_by_enkyo_yuuichirou__5ab34da785374e04eaab5c9678eab4a9.jpg",
+    "w": "R-Type",
+    "d": "",
+    "b": [
+      "F",
+      "hp",
+      "hr",
+      "hz",
+      "ur",
+      "ad",
+      "Spacecraft"
+    ],
+    "k": "KaizerRyu"
+  },
+  {
+    "u": 1067393,
+    "n": "RX-10 Albatross",
+    "t": 7,
+    "i": "__rx_10_albatross_r_type_drawn_by_enkyo_yuuichirou__5bf9d5231867237de3cdb867693b18e9.jpg",
+    "s": "https://cdn.donmai.us/original/5b/f9/__rx_10_albatross_r_type_drawn_by_enkyo_yuuichirou__5bf9d5231867237de3cdb867693b18e9.jpg",
+    "w": "R-Type",
+    "d": "",
+    "b": [
+      "F",
+      "hp",
+      "hr",
+      "hz",
+      "ur",
+      "ad",
+      "Spacecraft"
+    ],
+    "k": "KaizerRyu"
+  },
+  {
+    "u": 1451390,
+    "n": "Catherine Parr",
+    "t": 2,
+    "i": "131059.png",
+    "s": "https://www.personality-database.com/profile_images/131059.png",
+    "w": "Real Life",
+    "d": "The Tudors",
+    "b": [
+      "F"
+    ],
+    "k": "exsailor1999"
+  },
+  {
+    "u": 2494940,
+    "n": "Margaret Tudor",
+    "t": 2,
+    "i": "the_tudors.princess_margaret.jpg",
+    "s": "https://img.sharetv.com/shows/characters/large/the_tudors.princess_margaret.jpg",
+    "w": "Real Life",
+    "d": "The Tudors",
+    "b": [
+      "F",
+      "pc"
+    ],
+    "k": "exsailor1999"
+  },
+  {
+    "u": 1179863,
+    "n": "Georgiana Cavendish",
+    "t": 2,
+    "i": "duchess_whig_fox.jpg",
+    "s": "https://aelarsen.files.wordpress.com/2015/02/duchess_whig_fox.jpg",
+    "w": "Real Life",
+    "d": "The Duchess",
+    "b": [
+      "F",
+      "sc"
+    ],
+    "k": "exsailor1999"
+  },
+  {
+    "u": 7006902,
+    "n": "Anne Boleyn",
+    "t": 2,
+    "i": "Natalie-Dormer-The-Tudors-promo.jpg",
+    "s": "https://nerdalicious.com.au/wp-content/uploads/2015/12/Natalie-Dormer-The-Tudors-promo.jpg",
+    "w": "Real Life",
+    "d": "The Tudors",
+    "b": [
+      "F",
+      "sc",
+      "rl"
+    ],
+    "k": "exsailor1999"
+  },
+  {
+    "u": 1133857,
+    "n": "Hei Junior Xiong",
+    "t": 4,
+    "i": "https://i.imgur.com/O1fPKg0l.png",
+    "s": "https://i.imgur.com/O1fPKg0.png",
+    "w": "RWBY",
+    "d": "",
+    "b": [
+      "M",
+      "vn"
+    ],
+    "k": "Ruaron"
+  },
+  {
+    "u": 7385569,
+    "n": "Russel Thrush",
+    "t": 4,
+    "i": "https://i.imgur.com/xzHZ6Ixl.png",
+    "s": "https://i.imgur.com/xzHZ6Ix.png",
+    "w": "RWBY",
+    "d": "",
+    "b": [
+      "M",
+      "sd"
+    ],
+    "k": "Ruaron"
+  },
+  {
+    "u": 7712446,
+    "n": "Cardin Winchester",
+    "t": 4,
+    "i": "https://i.imgur.com/FliTPR6l.jpg",
+    "s": "https://i.imgur.com/FliTPR6.jpg",
+    "w": "RWBY",
+    "d": "",
+    "b": [
+      "M",
+      "sd"
+    ],
+    "k": "Ruaron"
+  },
+  {
+    "u": 4716547,
+    "n": "Kurashiki Reika",
+    "t": 1,
+    "i": "204044.jpg",
+    "s": "https://www.myutaku.com/media/personnage/204044.jpg",
+    "w": "Saimin Seishidou",
+    "d": "",
+    "b": [
+      "F",
+      "MILF"
+    ],
+    "k": "Light"
+  },
+  {
+    "u": 5539581,
+    "n": "Sabrac",
+    "t": 7,
+    "i": "Shana3_13_2.jpg",
+    "s": "http://www.anime-evo.net/wp-content/uploads/2012/01/Shana3_13_2.jpg",
+    "w": "Shakugan no Shana",
+    "d": "Anime",
+    "b": [
+      "M",
+      "cl",
+      "ml",
+      "ot",
+      "me",
+      "vn"
+    ],
+    "k": "Denizen Enthusiast"
+  },
+  {
+    "u": 3601562,
+    "n": "Aurora Nem Lis Goodereste/Queen Nemlis",
+    "t": 3,
+    "i": "96ff3e2d820e471e986e5982ee32b5ac.jpg",
+    "s": "https://i.pinimg.com/736x/96/ff/3e/96ff3e2d820e471e986e5982ee32b5ac.jpg",
+    "w": "Sleepy Princess in the Demon Castle",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Selias"
+  },
+  {
+    "u": 7754989,
+    "n": "Neo Alraune",
+    "t": 6,
+    "i": "tumblr_cc058132c68aadf067626bb9bb348495_b2426adb_1280.png",
+    "s": "https://64.media.tumblr.com/cc058132c68aadf067626bb9bb348495/f42427ad715a693f-78/s1280x1920/b2426adbafb67b37c138e2856966d364fd3689f7.png",
+    "w": "Sleepy Princess in the Demon Castle",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Selias"
+  },
+  {
+    "u": 4739240,
+    "n": "Succyun",
+    "t": 5,
+    "i": "f464c8aa05642a20ab20f75d0e88ac6dc6ec7282.jpg",
+    "s": "https://safebooru.org//images/3501/f464c8aa05642a20ab20f75d0e88ac6dc6ec7282.jpg",
+    "w": "Sleepy Princess in the Demon Castle",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Selias"
+  },
+  {
+    "u": 2155409,
+    "n": "Harpy",
+    "t": 5,
+    "i": "ba5d657963077a269960b2ffad003f26451e79bb.png",
+    "s": "https://safebooru.org//images/3176/ba5d657963077a269960b2ffad003f26451e79bb.png",
+    "w": "Sleepy Princess in the Demon Castle",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Selias"
+  },
+  {
+    "u": 9972249,
+    "n": "Succyun",
+    "t": 5,
+    "i": "4f874e45f4bb5e8f0485363e981c259dcf8990b3.png",
+    "s": "https://safebooru.org//images/3193/4f874e45f4bb5e8f0485363e981c259dcf8990b3.png",
+    "w": "Sleepy Princess in the Demon Castle",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Selias"
+  },
+  {
+    "u": 8067258,
+    "n": "Nightsister Merrin",
+    "t": 6,
+    "i": "https://i.imgur.com/Rg4YET2l.png",
+    "s": "https://i.imgur.com/Rg4YET2.png",
+    "w": "Star Wars",
+    "d": "",
+    "b": [
+      "F",
+      "cr",
+      "rs",
+      "wh"
+    ],
+    "in": "https://i.redd.it/4nmj82fo5ma71.jpg",
+    "k": "PKMNNick"
+  },
+  {
+    "u": 5216407,
+    "n": "Rivoche Tarkin",
+    "t": 4,
+    "i": "Rivoche.webp",
+    "s": "https://i.ibb.co/sJ6hHSy/Rivoche.webp",
+    "w": "Star Wars",
+    "d": "Legends",
+    "b": [
+      "F",
+      "cl",
+      "sc",
+      "gn"
+    ],
+    "k": "Ratcatcher"
+  },
+  {
+    "u": 2845615,
+    "n": "Fay",
+    "t": 6,
+    "i": "https://i.imgur.com/8c0QZkpl.jpeg",
+    "s": "https://i.imgur.com/8c0QZkp.jpeg",
+    "w": "Star Wars",
+    "d": "Prequel Trilogy",
+    "b": [
+      "F",
+      "cl",
+      "mp",
+      "im",
+      "sc",
+      "ps"
+    ],
+    "k": "RexNami_1"
+  },
+  {
+    "u": 8204802,
+    "n": "Senya Tirall",
+    "t": 6,
+    "i": "Senya_trailer.png",
+    "s": "https://static.wikia.nocookie.net/starwars/images/e/e0/Senya_trailer.png",
+    "w": "Star Wars",
+    "d": "Old Republic",
+    "b": [
+      "F",
+      "ps",
+      "U"
+    ],
+    "k": "gawd49"
+  },
+  {
+    "u": 4864962,
+    "n": "Nyarlathotep",
+    "t": 11,
+    "i": "__nyarlathotep_and_nyarlathotep_cthulhu_mythos_and_1_more_drawn_by_ghdwid__10dc00b515c746f089dfcc843261d23d.jpg",
+    "s": "https://cdn.donmai.us/original/10/dc/__nyarlathotep_and_nyarlathotep_cthulhu_mythos_and_1_more_drawn_by_ghdwid__10dc00b515c746f089dfcc843261d23d.jpg",
+    "w": "Sucker for Love",
+    "d": "",
+    "b": [
+      "F",
+      "ot",
+      "gd"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 7939467,
+    "n": "Jessica Moore",
+    "t": 1,
+    "i": "Supernatural_1x01_004.jpg",
+    "s": "https://static.wikia.nocookie.net/headhuntershorrorhouse/images/9/9c/Supernatural_1x01_004.jpg",
+    "w": "Supernatural",
+    "d": "",
+    "b": [
+      "F",
+      "sd"
+    ],
+    "k": "exsailor1999"
+  },
+  {
+    "u": 9976649,
+    "n": "Leviathan",
+    "t": 8,
+    "i": "https://i.imgur.com/VwyDyUKl.jpeg",
+    "s": "https://i.imgur.com/VwyDyUK.jpeg",
+    "w": "Supernatural",
+    "d": "",
+    "b": [
+      "M",
+      "st",
+      "bj",
+      "im",
+      "cr",
+      "sc",
+      "mr",
+      "sr"
+    ],
+    "k": "Lord Michael Demiurgos"
+  },
+  {
+    "u": 5139709,
+    "n": "Michael the Archangel",
+    "t": 10,
+    "i": "https://i.imgur.com/7HGqDBRl.png",
+    "s": "https://i.imgur.com/7HGqDBR.png",
+    "w": "Supernatural",
+    "d": "",
+    "b": [
+      "M",
+      "bj",
+      "im",
+      "tm",
+      "an",
+      "gd",
+      "ps"
+    ],
+    "k": "Lord Michael Demiurgos"
+  },
+  {
+    "u": 4181181,
+    "n": "Jo Harvelle",
+    "t": 2,
+    "i": "33e5594df000f3d98805003921a2f35c.png",
+    "s": "https://i.pinimg.com/originals/33/e5/59/33e5594df000f3d98805003921a2f35c.png",
+    "w": "Supernatural",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "exsailor1999"
+  },
+  {
+    "u": 2955910,
+    "n": "Claire Novak",
+    "t": 2,
+    "i": "Claire_Novak.jpg",
+    "s": "https://static.wikia.nocookie.net/lgbt-characters/images/a/a5/Claire_Novak.jpg",
+    "w": "Supernatural",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "exsailor1999"
+  },
+  {
+    "u": 9516609,
+    "n": "Constance Welch",
+    "t": 3,
+    "i": "64850.jpg",
+    "s": "http://www.aveleyman.com/Gallery/2017/S/64850.jpg",
+    "w": "Supernatural",
+    "d": "",
+    "b": [
+      "F",
+      "un"
+    ],
+    "k": "exsailor1999"
+  },
+  {
+    "u": 1398289,
+    "n": "Lapis Lazuli",
+    "t": 6,
+    "i": "Lapis.Lazulifull.1946963.jpg",
+    "s": "https://static.zerochan.net/Lapis.Lazuli.%28Taimadou.Gakuen.35.Shiken.Shoutai%29.full.1946963.jpg",
+    "w": "Taimadou Gakuen 35 Shiken Shoutai",
+    "d": "",
+    "b": [
+      "F",
+      "hz",
+      "cl",
+      "dr",
+      "me",
+      "sr"
+    ],
+    "k": "TDon123"
+  },
+  {
+    "u": 4980219,
+    "n": "Ikaruga Suginami",
+    "t": 5,
+    "i": "ikaruga-suginami-1.jpg",
+    "s": "https://cdn.anime-planet.com/characters/primary/ikaruga-suginami-1.jpg",
+    "w": "Taimadou Gakuen 35 Shiken Shoutai",
+    "d": "",
+    "b": [
+      "F",
+      "dc",
+      "en",
+      "sn",
+      "me",
+      "gn",
+      "sa"
+    ],
+    "k": "TDon123"
+  },
+  {
+    "u": 2811427,
+    "n": "Jackson Whittemore",
+    "t": 6,
+    "i": "7912.png",
+    "s": "https://www.personality-database.com/profile_images/7912.png",
+    "w": "Teen Wolf",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "John117"
+  },
+  {
+    "u": 5384931,
+    "n": "Isaac Lahey",
+    "t": 5,
+    "i": "tumblr_mli4hwwAiN1rtjm0ao1_640.jpg",
+    "s": "https://64.media.tumblr.com/035f460d876e1ab0680ae4b36179c3da/tumblr_mli4hwwAiN1rtjm0ao1_640.jpg",
+    "w": "Teen Wolf",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "John117"
+  },
+  {
+    "u": 3557621,
+    "n": "Derek Hale",
+    "t": 5,
+    "i": "1ec1e74eae74c38e333404c705f6accd54265a93_00.jpg",
+    "s": "http://pm1.narvii.com/6586/1ec1e74eae74c38e333404c705f6accd54265a93_00.jpg",
+    "w": "Teen Wolf",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "John117"
+  },
+  {
+    "u": 9044362,
+    "n": "Sassy The Sasquatch",
+    "t": 11,
+    "i": "tumblr_pubfbu6l3g1tqvx32o1_1280.jpg",
+    "s": "https://64.media.tumblr.com/2f278c9a6dc73be08682015e438df242/tumblr_pubfbu6l3g1tqvx32o1_1280.jpg",
+    "w": "The Big Lez Show",
+    "d": "",
+    "b": [
+      "M",
+      "hp",
+      "ml",
+      "im",
+      "ur",
+      "ot"
+    ],
+    "k": "Lezzy"
+  },
+  {
+    "u": 9623995,
+    "n": "Genevieve",
+    "t": 5,
+    "i": "Genev.png",
+    "s": "https://d9i9nmwzijaw9.cloudfront.net/235/134/564/1280003035-1rqiajq-2nsh0k0qpf907j5/original/Genev.png",
+    "w": "The Vampire Diaries",
+    "d": "The Originals",
+    "b": [
+      "F",
+      "wh",
+      "un"
+    ],
+    "k": "exsailor1999"
+  },
+  {
+    "u": 7805397,
+    "n": "Sofya Voronova",
+    "t": 5,
+    "i": "274368.jpg",
+    "s": "https://static.tvmaze.com/uploads/images/medium_portrait/109/274368.jpg",
+    "w": "The Vampire Diaries",
+    "d": "The Originals",
+    "b": [
+      "F",
+      "vp"
+    ],
+    "k": "exsailor1999"
+  },
+  {
+    "u": 9489060,
+    "n": "Sage",
+    "t": 5,
+    "i": "vd316c_0104b120315063120.jpg",
+    "s": "http://tvline.com/wp-content/uploads/2012/03/vd316c_0104b120315063120.jpg",
+    "w": "The Vampire Diaries",
+    "d": "",
+    "b": [
+      "F",
+      "vp"
+    ],
+    "k": "exsailor1999"
+  },
+  {
+    "u": 7590780,
+    "n": "Jade",
+    "t": 4,
+    "i": "legacies-jade-1612690633.png",
+    "s": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/legacies-jade-1612690633.png",
+    "w": "The Vampire Diaries",
+    "d": "Legacies",
+    "b": [
+      "F",
+      "sd",
+      "vp"
+    ],
+    "k": "exsailor1999"
+  },
+  {
+    "u": 3866904,
+    "n": "Dragon",
+    "t": 7,
+    "i": "LGC115-Dragon_Lady.png",
+    "s": "https://static.wikia.nocookie.net/vampirediaries/images/b/bd/LGC115-Dragon_Lady.png",
+    "w": "The Vampire Diaries",
+    "d": "Legacies",
+    "b": [
+      "F",
+      "dg",
+      "sr"
+    ],
+    "k": "exsailor1999"
+  },
+  {
+    "u": 8360375,
+    "n": "Josette Laughlin",
+    "t": 4,
+    "i": "b5c1e5370a325a8affa3ec9b11804580--jodi-lyn-okeefe-o-keefe.jpg",
+    "s": "https://i.pinimg.com/236x/b5/c1/e5/b5c1e5370a325a8affa3ec9b11804580--jodi-lyn-okeefe-o-keefe.jpg",
+    "w": "The Vampire Diaries",
+    "d": "",
+    "b": [
+      "M",
+      "dc",
+      "wh"
+    ],
+    "k": "exsailor1999"
+  },
+  {
+    "u": 8617625,
+    "n": "Lillian 'Lily' Salvatore",
+    "t": 5,
+    "i": "204142.jpg",
+    "s": "https://static.tvmaze.com/uploads/images/medium_portrait/81/204142.jpg",
+    "w": "The Vampire Diaries",
+    "d": "",
+    "b": [
+      "F",
+      "mp",
+      "vp"
+    ],
+    "k": "exsailor1999"
+  },
+  {
+    "u": 7017616,
+    "n": "Ablah",
+    "t": 7,
+    "i": "458936.jpg",
+    "s": "https://static.tvmaze.com/uploads/images/medium_portrait/183/458936.jpg",
+    "w": "The Vampire Diaries",
+    "d": "Legacies",
+    "b": [
+      "F"
+    ],
+    "k": "exsailor1999"
+  },
+  {
+    "u": 2977789,
+    "n": "Freya Beauchamp",
+    "t": 4,
+    "i": "3004d4459042688d5ede46b479b26be8eb9.jpg",
+    "s": "https://static.wikia.nocookie.net/personal-database/images/a/ab/3004d4459042688d5ede46b479b26be8eb9.jpg",
+    "w": "The Witches of East End",
+    "d": "",
+    "b": [
+      "F",
+      "im",
+      "di",
+      "wh"
+    ],
+    "k": "exsailor1999"
+  },
+  {
+    "u": 4322646,
+    "n": "Michael Corvin",
+    "t": 4,
+    "i": "michael-corvin-c255e3cb-e431-461a-9041-e37497c98ab-resize-750.jpeg",
+    "s": "https://alchetron.com/cdn/michael-corvin-c255e3cb-e431-461a-9041-e37497c98ab-resize-750.jpeg",
+    "w": "Underworld",
+    "d": "",
+    "b": [
+      "M",
+      "dc",
+      "vp",
+      "sr"
+    ],
+    "k": "exsailor1999"
+  },
+  {
+    "u": 8418729,
+    "n": "Kumagai Chisato/Beatani",
+    "t": 1,
+    "i": "y7f3fpzv3bp61.png",
+    "s": "https://i.redd.it/y7f3fpzv3bp61.png",
+    "w": "Vtuber",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Selias"
+  },
+  {
+    "u": 6982153,
+    "n": "Winter Queen",
+    "t": 9,
+    "i": "sarka-s-claina-winter-queen-72-no-high-pass.jpg",
+    "s": "https://cdnb.artstation.com/p/assets/images/images/031/335/033/large/sarka-s-claina-winter-queen-72-no-high-pass.jpg",
+    "w": "Warcraft",
+    "d": "",
+    "b": [
+      "F",
+      "im",
+      "rs",
+      "rl"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 5732653,
+    "n": "Raven Guard",
+    "t": 5,
+    "i": "ff6f32ffd9a9575512295947bcfb83ac.jpg",
+    "s": "https://i.pinimg.com/736x/ff/6f/32/ff6f32ffd9a9575512295947bcfb83ac.jpg",
+    "w": "Warhammer 40K",
+    "d": "",
+    "b": [
+      "F",
+      "st",
+      "hr",
+      "cl"
+    ],
+    "k": "chelsy"
+  },
+  {
+    "u": 5694630,
+    "n": "Vega",
+    "t": 4,
+    "i": "Balrog-Vega-Street-Fighters.jpg",
+    "s": "https://www.writeups.org/wp-content/uploads/Balrog-Vega-Street-Fighters.jpg",
+    "w": "Street Fighter",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "bruh"
   }
 ]

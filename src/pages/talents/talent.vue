@@ -7,7 +7,7 @@
     >
       <component
         :is="getComponent(talent)"
-        v-for="talent in talentsDLC"
+        v-for="talent in talents"
         :key="talent.title"
         :perk="talent"
         :bg="talentAvailable(talent) ? 'green-200 dark:green-900 hover:(green-100 dark:green-800)'
@@ -18,6 +18,28 @@
         @pickPerk="chooseTalent"
       />
     </div>
+    <template v-if="talentsDLC.length">
+      <h2 class="text-2xl text-center">
+        DLC Talents
+      </h2>
+      <DLCNote />
+      <div
+        class="column-gap pb-8"
+        :class="settings.columns !== 'auto' ? `column-count-${settings.columns}` : 'md:column-count-2 xl:column-count-3 4xl:column-count-4 5xl:column-count-5'"
+      >
+        <PerkCard
+          v-for="talent in talentsDLC"
+          :key="talent.title"
+          :perk="talent"
+          :bg="talentAvailable(talent) ? 'green-200 dark:green-900 hover:(green-100 dark:green-800)'
+            : 'gray-200 dark:gray-600'"
+          :is-active="!!allTalents[talent.title]"
+          :saved-perk="allTalents[talent.title]"
+          :flavor-list="talent.title === 'Talent Sharing' ? talentsList : []"
+          @pickPerk="chooseTalent"
+        />
+      </div>
+    </template>
   </div>
 </template>
 
@@ -42,10 +64,8 @@ const allTalents = computed(() => {
 })
 
 const talentsDLC = computed(() => !settings.value.allChosenAuthors[0]
-  ? talents
-    .concat(DLCtalents
-      .filter(perk => !settings.value.allChosenAuthors.includes(perk.dlc)))
-  : talents)
+  ? DLCtalents.filter(perk => !settings.value.allChosenAuthors.includes(perk.dlc))
+  : [])
 
 const talentsList = computed(() => {
   const shareable = ['Martial Talent', 'Wild Talent', 'Science Talent', 'Engineering Talent', 'Aesthetic Talent',

@@ -81,6 +81,27 @@
         </template>
       </PerkCard>
     </div>
+    <template v-if="heritagesDLC.length">
+      <h2 class="text-2xl text-center">
+        DLC Heritages
+      </h2>
+      <DLCNote />
+      <div
+        class="column-gap pb-8"
+        :class="settings.columns !== 'auto' ? `column-count-${settings.columns}` : 'md:column-count-2 xl:column-count-3 4xl:column-count-4 5xl:column-count-5'"
+      >
+        <PerkCard
+          v-for="hr in heritagesDLC"
+          :key="hr.title"
+          :class="heritageAvailable(hr) ? heritageColors[hr.tree]: 'bg-gray-200 dark:bg-gray-600'"
+          :perk="hr"
+          :is-active="!!allHeritages[hr.title]"
+          :saved-perk="allHeritages[hr.title]"
+          @pickPerk="chooseHeritage"
+        >
+        </PerkCard>
+      </div>
+    </template>
   </div>
 </template>
 
@@ -108,10 +129,8 @@ const heritageColors = {
 const activeTree = ref<'Dragon' | 'Transhuman' | 'Outsider'>('Dragon')
 
 const heritagesDLC = computed(() => !settings.value.allChosenAuthors[0]
-  ? heritages
-    .concat(DLCheritages
-      .filter(perk => !settings.value.allChosenAuthors.includes(perk.dlc)))
-  : heritages)
+  ? DLCheritages.filter(perk => !settings.value.allChosenAuthors.includes(perk.dlc))
+  : [])
 
 const heritageByTree = computed(() => {
   const res = {
@@ -119,7 +138,7 @@ const heritageByTree = computed(() => {
     Transhuman: [] as Heritage[],
     Outsider: [] as Heritage[],
   }
-  heritagesDLC.value.forEach(x => x.tree !== 'None' ? res[x.tree].push(x) : null)
+  heritages.forEach(x => x.tree !== 'None' ? res[x.tree].push(x) : null)
   return res
 })
 

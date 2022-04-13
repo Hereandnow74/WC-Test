@@ -72,6 +72,14 @@ export function proposeMission(mission: any, callback: any) {
     console.error('Error proposing a mission: ', e)
   }
 }
+export function proposeFic(fic: any, callback: any) {
+  try {
+    addDoc(collection(db, 'fics'), fic).then(callback)
+  }
+  catch (e) {
+    console.error('Error proposing a fic: ', e)
+  }
+}
 
 export function shareLink(buildData: any, callback: any) {
   try {

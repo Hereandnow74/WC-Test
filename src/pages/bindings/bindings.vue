@@ -62,7 +62,7 @@
           <span class="mx-2" @click.stop="toggleRitual()">Rules: <span class="text-red-500 hover:underline">ritual parameters</span></span>
         </template>
       </component>
-      <PerkCard
+      <!-- <PerkCard
         v-if="!settings.allChosenAuthors.includes('DLC by Despin')"
         :key="DLCbindings[0].title"
         :bg="!flags.noBindings ? 'light-400 dark:rose-900 hover:(yellow-100 dark:rose-800)'
@@ -72,13 +72,33 @@
         :saved-perk="allBindings[DLCbindings[0].title]"
         :increment="true"
         @pickPerk="(perk, save) => pickSimplePerk(perk,save, () => true, binding)"
-      />
+      /> -->
     </div>
     <Desc
       v-if="activeType === 'Symbiote'"
       :desc="symbioteRules"
       class="p-2 my-4 max-w-4xl bg-warm-gray-200 dark:bg-warm-gray-800 mx-auto"
     />
+    <template v-if="bindingsDLC.length">
+      <h2 class="text-lg text-center">
+        DLC Perks
+      </h2>
+      <DLCNote />
+      <PerkCard
+        v-for="bnd in bindingsDLC"
+        :key="bnd.title"
+        v-bind="{
+          perk: bnd,
+          bg: bindingAvailable(bnd) ? 'light-400 dark:rose-900 hover:(yellow-100 dark:rose-800)'
+            : 'gray-200 dark:gray-600',
+          isActive: !!allBindings[bnd.title],
+          savedPerk: allBindings[bnd.title],
+          ...generateProps(bnd)
+        }"
+        @pickPerk="chooseBinding"
+      >
+      </PerkCard>
+    </template>
     <ShroudElements v-if="showElements" @click="toggleElements" @toggleElement="toggleCurrentElement" />
     <RitualCircle v-if="showRitual" @click="toggleRitual" />
     <div class="h-8"></div>
@@ -114,10 +134,8 @@ const bindingCard = (bnd: Binding) => {
 }
 
 const bindingsDLC = computed(() => !settings.value.allChosenAuthors[0]
-  ? bindings
-    .concat(DLCbindings
-      .filter(perk => !settings.value.allChosenAuthors.includes(perk.dlc)))
-  : bindings)
+  ? DLCbindings.filter(perk => !settings.value.allChosenAuthors.includes(perk.dlc))
+  : [])
 
 const bindingByType = computed(() => {
   const res = {
@@ -127,7 +145,7 @@ const bindingByType = computed(() => {
     Symbiote: [] as Binding[],
     Shroud: [] as Binding[],
   }
-  bindingsDLC.value.forEach(x => x.type ? res[x.type].push(x) : null)
+  bindings.forEach(x => x.type ? res[x.type].push(x) : null)
   return res
 })
 

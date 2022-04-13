@@ -94,7 +94,7 @@ export function pickSimplePerk(perk: PerkFull, saveData: Perk, isAvailable: (arg
         deletePerk(perks, isAvailable)
       }
     }
-    else {
+    else if (saveData.count !== 0) {
       allEffects.value.push(perk.title)
       perks.push(saveData)
     }
@@ -552,6 +552,7 @@ export function filterObject(obj: any) {
   Object.keys(obj)
     .forEach((key) => {
       if (obj[key] !== undefined && obj[key] !== '') {
+        if (key === 'count' && obj[key] === 0) return
         if (isObject(obj[key]) && isEmpty(obj[key])) return
         if (key === 'defDiscount' && obj[key] === 0) return
         if (obj[key].value)

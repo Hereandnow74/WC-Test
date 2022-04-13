@@ -21,6 +21,7 @@
             All Worlds:
           </div>
           <div class="flex flex-col min-h-0 overflow-y-auto scrollbar border rounded p-1 h-[300px] md:h-full">
+            <Input v-model="worldSearch" placeholder="Type to search world" class="mb-1" />
             <div
               v-for="world in allWorldsWithoutBlocked"
               :key="world"
@@ -61,6 +62,8 @@ import { usePlayStore } from '~/store/play'
 const { currentWorld } = usePlayStore()
 const { minTier, maxTier, blockedWorlds, isLimited } = useSearchSettings()
 
-const allWorldsWithoutBlocked = computed(() => allCompanionsWorlds.value.filter(x => !blockedWorlds.value.includes(x)).sort((a, b) => a.localeCompare(b)))
+const worldSearch = ref('')
+
+const allWorldsWithoutBlocked = computed(() => allCompanionsWorlds.value.filter(x => !blockedWorlds.value.includes(x) && x.toLowerCase().includes(worldSearch.value.toLowerCase())).sort((a, b) => a.localeCompare(b)))
 
 </script>

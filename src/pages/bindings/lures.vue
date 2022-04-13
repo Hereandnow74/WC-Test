@@ -6,7 +6,7 @@
       :class="settings.columns !== 'auto' ? `column-count-${settings.columns}` : 'md:column-count-2 xl:column-count-3 4xl:column-count-4 5xl:column-count-5'"
     >
       <PerkCard
-        v-for="lr in luresDLC"
+        v-for="lr in lures"
         :key="lr.title"
         :perk="lr"
         :saved-perk="allLures[lr.title]"
@@ -27,7 +27,7 @@
       :class="settings.columns !== 'auto' ? `column-count-${settings.columns}` : 'md:column-count-2 xl:column-count-3 4xl:column-count-4 5xl:column-count-5'"
     >
       <PerkCard
-        v-for="lr in lureExpansionsDLC"
+        v-for="lr in lureExpansions"
         :key="lr.title"
         :perk="lr"
         :bg="lureAvailable(lr) ? 'pink-100 dark:pink-900 hover:(pink-200 dark:rose-800)'
@@ -37,6 +37,47 @@
       >
       </PerkCard>
     </div>
+    <template v-if="luresDLC.length || lureExpansionsDLC.length">
+      <h2 class="text-2xl text-center">
+        DLC Lures
+      </h2>
+      <DLCNote />
+      <div
+        class="column-gap pb-8"
+        :class="settings.columns !== 'auto' ? `column-count-${settings.columns}` : 'md:column-count-2 xl:column-count-3 4xl:column-count-4 5xl:column-count-5'"
+      >
+        <PerkCard
+          v-for="lr in luresDLC"
+          :key="lr.title"
+          :perk="lr"
+          :saved-perk="allLures[lr.title]"
+          :bg="lureAvailable(lr) ? 'pink-100 dark:pink-900 hover:(pink-200 dark:rose-800)'
+            : 'gray-200 dark:gray-600'"
+          :is-active="!!allLures[lr.title]"
+          @pickPerk="chooseLure"
+        >
+        </PerkCard>
+      </div>
+      <h3 id="expansionsDLC" class="text-2xl text-center">
+        DLC Lure Expansions
+      </h3>
+      <div
+        class="column-gap pb-8"
+        :class="settings.columns !== 'auto' ? `column-count-${settings.columns}` : 'md:column-count-2 xl:column-count-3 4xl:column-count-4 5xl:column-count-5'"
+      >
+        <PerkCard
+          v-for="lr in lureExpansionsDLC"
+          :key="lr.title"
+          :perk="lr"
+          :saved-perk="allLures[lr.title]"
+          :bg="lureAvailable(lr) ? 'pink-100 dark:pink-900 hover:(pink-200 dark:rose-800)'
+            : 'gray-200 dark:gray-600'"
+          :is-active="!!allLures[lr.title]"
+          @pickPerk="chooseLure"
+        >
+        </PerkCard>
+      </div>
+    </template>
   </div>
 </template>
 
@@ -52,15 +93,12 @@ import { DLClureExpansions, DLClures } from '~/data/DLCs'
 const { luresBought, settings } = useStore()
 
 const lureExpansionsDLC = computed(() => !settings.value.allChosenAuthors[0]
-  ? lureExpansions
-    .concat(DLClureExpansions
-      .filter(perk => !settings.value.allChosenAuthors.includes(perk.dlc)))
-  : lureExpansions)
+  ? DLClureExpansions.filter(perk => !settings.value.allChosenAuthors.includes(perk.dlc))
+  : [])
+
 const luresDLC = computed(() => !settings.value.allChosenAuthors[0]
-  ? lures
-    .concat(DLClures
-      .filter(perk => !settings.value.allChosenAuthors.includes(perk.dlc)))
-  : lures)
+  ? DLClures.filter(perk => !settings.value.allChosenAuthors.includes(perk.dlc))
+  : [])
 
 onMounted(() => useTooltips())
 

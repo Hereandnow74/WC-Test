@@ -1,4 +1,4 @@
-import { findIndex } from 'lodash-es'
+import { findIndex, find } from 'lodash-es'
 import { useChallenges } from './challenges'
 import { usePlayStore } from './play'
 import { useChargenStore } from './chargen'
@@ -290,7 +290,10 @@ const yourTier = computed(() => {
   const dragonTier = calcTier(heritage.value.filter(x => x.tree && x.tree === 'Dragon').reduce((a, x) => a += x.cost, 0))
   const transhumanTier = calcTier(heritage.value.filter(x => x.tree && x.tree === 'Transhuman').reduce((a, x) => a += x.cost, 0))
   const outsiderTier = calcTier(heritage.value.filter(x => x.tree && x.tree === 'Outsider').reduce((a, x) => a += x.cost, 0))
-  return Math.max(originTier, dragonTier, transhumanTier, outsiderTier, talentsTier4, talentsTier5, shroudTier)
+  const powerSwap = find(genericWaifuPerks.value, x => x.title === 'Power Swap')
+  const yourPowerSwap = powerSwap ? find(powerSwap.complex, x => x.target === 'You') : undefined
+  const powerSwapTier = yourPowerSwap ? yourPowerSwap.newTier : 0
+  return Math.max(originTier, dragonTier, transhumanTier, outsiderTier, talentsTier4, talentsTier5, shroudTier, powerSwapTier)
 })
 
 const companionsUIDs = computed(() => companions.value.reduce((a, c) => (a[c.uid] = true, a), {}))

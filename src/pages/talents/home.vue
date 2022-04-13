@@ -6,7 +6,7 @@
       :class="settings.columns !== 'auto' ? `column-count-${settings.columns}` : 'md:column-count-2 xl:column-count-3 4xl:column-count-4 5xl:column-count-5'"
     >
       <PerkCard
-        v-for="homePerk in homesDLC"
+        v-for="homePerk in homes"
         :key="homePerk.title"
         :perk="homePerk"
         :bg="homeAvailable(homePerk) ? 'yellow-200 dark:emerald-900 hover:(yellow-100 dark:emerald-800)'
@@ -22,6 +22,31 @@
         </template>
       </PerkCard>
     </div>
+    <template v-if="homesDLC.length">
+      <h2 class="text-2xl text-center">
+        DLC Home perks
+      </h2>
+      <DLCNote />
+      <div
+        class="column-gap pb-8"
+        :class="settings.columns !== 'auto' ? `column-count-${settings.columns}` : 'md:column-count-2 xl:column-count-3 4xl:column-count-4 5xl:column-count-5'"
+      >
+        <PerkCard
+          v-for="homePerk in homesDLC"
+          :key="homePerk.title"
+          :perk="homePerk"
+          :bg="homeAvailable(homePerk) ? 'yellow-200 dark:emerald-900 hover:(yellow-100 dark:emerald-800)'
+            : 'gray-200 dark:gray-600'"
+          :is-active="!!allHomes[homePerk.title]"
+          :saved-perk="allHomes[homePerk.title]"
+          @pickPerk="chooseHome"
+        >
+        </PerkCard>
+      </div>
+    </template>
+    <h2 class="text-2xl text-center">
+      Demiplane & Dungeons perks
+    </h2>
     <Desc :desc="demdunDesc" class="p-2 mb-4 max-w-4xl mx-auto bg-violet-200 dark:bg-violet-900" />
     <Desc :desc="laws" class="p-2 mb-4 max-w-4xl mx-auto bg-violet-200 dark:bg-violet-900" />
     <div
@@ -84,10 +109,8 @@ const { homePerks, settings } = useStore()
 const scryDevotion = ref(0)
 
 const homesDLC = computed(() => !settings.value.allChosenAuthors[0]
-  ? homes
-    .concat(DLChomes
-      .filter(perk => !settings.value.allChosenAuthors.includes(perk.dlc)))
-  : homes)
+  ? DLChomes.filter(perk => !settings.value.allChosenAuthors.includes(perk.dlc))
+  : [])
 
 const allHomes = computed(() => {
   const res: any = {}

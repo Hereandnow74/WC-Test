@@ -7,7 +7,7 @@
     >
       <component
         :is="rule.title ==='DR11 start' ? DR11 : IntensityCard"
-        v-for="rule in intensityDLC"
+        v-for="rule in intensity"
         :id="rule.title"
         :key="rule.title"
         :perk="rule"
@@ -15,6 +15,26 @@
         @chooseIntensity="chooseIntensity"
       />
     </div>
+    <template v-if="intensityDLC.length">
+      <h2 class="text-2xl text-center">
+        DLC Intensity
+      </h2>
+      <DLCNote />
+      <div
+        class="column-gap pb-8"
+        :class="settings.columns !== 'auto' ? `column-count-${settings.columns}` : 'md:column-count-2 xl:column-count-3 4xl:column-count-4 5xl:column-count-5'"
+      >
+        <IntensityCard
+          v-for="rule in intensityDLC"
+          :id="rule.title"
+          :key="rule.title"
+          :perk="rule"
+          :is-active="allEffects.includes(rule.title)"
+          @chooseIntensity="chooseIntensity"
+        >
+        </IntensityCard>
+      </div>
+    </template>
     <h3 class="text-center text-xl py-2">
       Other Contractors
     </h3>
@@ -64,10 +84,8 @@ import IntensityCard from '~/components/cards/perkCards/IntensityCard.vue'
 const { allEffects, settings, pvpPerks } = useStore()
 
 const intensityDLC = computed(() => !settings.value.allChosenAuthors[0]
-  ? intensity
-    .concat(DLCintensity
-      .filter(perk => !settings.value.allChosenAuthors.includes(perk.dlc)))
-  : intensity)
+  ? DLCintensity.filter(perk => !settings.value.allChosenAuthors.includes(perk.dlc))
+  : [])
 
 onMounted(() => {
   useTooltips()

@@ -19,6 +19,7 @@
     <component :is="addPerkComponent" v-if="showAddPerk" @click="toggleShowAddPerk()" />
     <component :is="addMissionComponent" v-if="showAddMission" @click="toggleShowAddMission()" />
     <component :is="settingsComponent" v-if="showSettings" @click="toggleShowSettings()" />
+    <component :is="addFicComponent" v-if="showAddFic" :fic="currentFic" @click="toggleAddFic()" />
     <BuildImage v-if="isBuildImage" />
   </main>
 </template>
@@ -29,13 +30,14 @@ import { useStore } from './store/store'
 import {
   isSupport, showSaveLoad, showShare, showSideMenu, showAddPerk, toggleShowAddPerk,
   showAddMission, toggleShowAddMission, promoteShown, toggleShowSettings, showSettings, sendStats,
-  buildImage, copyText, clearBuild, isBuildImage,
+  buildImage, copyText, clearBuild, isBuildImage, toggleAddFic, showAddFic, currentFic,
 } from '~/logic'
 
 const { totalActive } = useStore()
 
 const addPerkComponent = computed(() => defineAsyncComponent(() => import('./components/modals/AddPerk.vue')))
 const addMissionComponent = computed(() => defineAsyncComponent(() => import('./components/modals/AddMission.vue')))
+const addFicComponent = computed(() => defineAsyncComponent(() => import('./components/modals/AddFic.vue')))
 const settingsComponent = computed(() => defineAsyncComponent(() => import('./components/modals/Settings.vue')))
 const PromoteDialog = computed(() => defineAsyncComponent(() => import('./components/modals/dialogs/PromoteDialog.vue')))
 const SaveLoad = computed(() => defineAsyncComponent(() => import('./components/modals/SaveLoad.vue')))

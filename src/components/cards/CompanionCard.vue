@@ -13,7 +13,7 @@
         >
         <icon-park-outline:full-screen-one
           class="absolute top-1 right-1 hover:text-blue-400 cursor-pointer mix-blend-difference"
-          @click="() => (showModal = true, modalImage=(nsfw ? charData.image_nsfw : imageLink))"
+          @click="() => (showModal = true, modalImage=(nsfw ? charData.image_nsfw || imageLink : imageLink))"
         />
         <span
           v-if="charData.image_nsfw"

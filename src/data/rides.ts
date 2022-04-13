@@ -576,7 +576,7 @@ DLCRides.push({
   uid: 'omlkP',
   title: 'Fury-class Imperial interceptor',
   image: 'https://i.ibb.co/SQXJ686/Fury-Class-Imperial-Interceptor.jpg',
-  source: 'Final Fantasy IX',
+  source: 'Star Wars',
   category: 'Space',
   size: 'Medium',
   cost: 150,

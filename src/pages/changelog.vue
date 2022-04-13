@@ -5,7 +5,19 @@
     </h2>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
-        0 April 2022
+        13 April 2022
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>~220 new user submitted characters</li>
+        <li>New page for all WC fics <a class="text-blue-500 underline cursor-pointer" href="https://waifu-catalog.neocities.org/fics">https://waifu-catalog.neocities.org/fics</a></li>
+        <li>Separation of DLC perks from official ones</li>
+        <li>New missions, 7 worlds</li>
+        <li>Bugfixes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
+        09 April 2022
       </h3>
       <ul class="list-decimal list-inside">
         <li>~130 new user submitted characters</li>

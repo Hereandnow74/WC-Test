@@ -17,6 +17,9 @@ export const [showReport, toggleShowReport] = useToggle(false)
 export const [showSmartMenu, toggleSmartMenu] = useToggle(false)
 export const [showSearchSettings, toggleSearchSetting] = useToggle(false)
 
+export const [showAddFic, toggleAddFic] = useToggle(false)
+export const currentFic = ref({})
+
 export const userCharactersShown = ref(false)
 
 export const showSaveLoad = ref(false)

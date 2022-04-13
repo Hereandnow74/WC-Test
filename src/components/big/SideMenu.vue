@@ -74,6 +74,9 @@
     <router-link class="icon-text-btn mx-2" title="Missions" to="/missions">
       <fluent:book-question-mark-24-regular />Missions
     </router-link>
+    <router-link class="icon-text-btn mx-2" title="WC Fics" to="/fics">
+      <fa-solid:book />Fanfics
+    </router-link>
     <router-link class="icon-text-btn mx-2 whitespace-nowrap" title="Challenges" to="/challenges">
       <ph:sword />Challenges
     </router-link>
