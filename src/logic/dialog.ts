@@ -7,7 +7,7 @@ const dialogBus = useEventBus<string>('')
 
 export function confirmDialog(msg: string, type: 'info' | 'confirm' = 'confirm') {
   dialogMessage.value = msg
-  return new Promise((resolve, reject) => {
+  return new Promise<boolean>((resolve, reject) => {
     if (type === 'confirm')
       showConfirm.value = true
     else

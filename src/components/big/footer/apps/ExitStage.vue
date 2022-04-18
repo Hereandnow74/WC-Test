@@ -17,8 +17,9 @@
           <Button class="self-center px-2" size="Small" label="fill" bg-color="bg-teal-600" @click="progress = 100" />
         </template>
         <div v-else class="flex flex-col gap-2">
-          <div class="text-center">
-            Choose your next world
+          <div class="flex justify-center gap-2">
+            <span>Choose your next world</span>
+            <Button size="Small" label="Reroll" bg-color="bg-amber-500" @click="reroll" />
           </div>
           <div v-for="world, i in rdnWorld" :key="world.worldName" class="flex gap-1 px-1">
             <WorldCard :world="world" :pick-able="false" :type="world.type === 'canon' ? 'canon' : 'user'" @click="chooseWorld(world, i)" />
@@ -175,5 +176,10 @@ function jumpToManual() {
       jumpChain.value.push(manualWorld.value)
     worldText.value = ''
   }
+}
+
+async function reroll() {
+  if (await confirmDialog('You can\'t reroll by the catalog rules, this function was created for your convinience in the case when you don\'t know any of the suggested worlds.'))
+    rdnWorld.value = randomWorld(currentWorld.value.rating, minus.value, plus.value, numberOfChoices.value, jumpChain.value)
 }
 </script>

@@ -33,7 +33,7 @@ import {
   buildImage, copyText, clearBuild, isBuildImage, toggleAddFic, showAddFic, currentFic,
 } from '~/logic'
 
-const { totalActive } = useStore()
+const { totalActive, settings } = useStore()
 
 const addPerkComponent = computed(() => defineAsyncComponent(() => import('./components/modals/AddPerk.vue')))
 const addMissionComponent = computed(() => defineAsyncComponent(() => import('./components/modals/AddMission.vue')))
@@ -53,20 +53,24 @@ watch(idle, () => {
     start = new Date()
 })
 
-onKeyStroke(['c', 's', 'd'], (e) => {
+onKeyStroke(['c', 's', 'd', 'n'], (e) => {
   if (e.altKey) {
-    switch (e.key) {
-      case 'c':
+    switch (e.code) {
+      case 'KeyC':
         e.preventDefault()
         clearBuild()
         break
-      case 's':
+      case 'KeyS':
         e.preventDefault()
         copyText()
         break
-      case 'd':
+      case 'KeyD':
         e.preventDefault()
         buildImage()
+        break
+      case 'KeyN':
+        e.preventDefault()
+        settings.value.perkImages = !settings.value.perkImages
         break
     }
   }

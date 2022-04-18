@@ -189,6 +189,20 @@ function addTitles<T>(res: any, perks: T[]) {
   perks.forEach((x: T) => res[x.title] = x)
 }
 
+export const ALL_OFF_PERK_TITLES = computed(() => {
+  const result = {} as Record<string, PerkFull>
+  const all = [intensity, bindings, lures, lureExpansions, otherControls, heritages, homes, demiplane, dungeon, defenses, talents, perks, genericPerks, waifu_perks]
+  all.forEach(p => addTitles<typeof p[0]>(result, p))
+  return result
+})
+
+export const ALL_DLC_PERK_TITLES = computed(() => {
+  const result = {} as Record<string, PerkFull>
+  const all = [DLCperks, DLChomes, DLCgenericPerks, DLCheritages, DLCtalents, DLClureExpansions, DLCbindings, DLClures, DLCotherControls, DLCridePerks]
+  all.forEach(p => addTitles<typeof p[0]>(result, p))
+  return result
+})
+
 export const ALL_PERK_TITLES = computed(() => {
   const result = {} as Record<string, PerkFull>
   const all = [intensity, bindings, lures, lureExpansions, otherControls, heritages, homes, demiplane, dungeon, defenses, talents, perks, genericPerks, waifu_perks, DLCperks, DLChomes, DLCgenericPerks, DLCheritages, DLCtalents, DLClureExpansions, DLCbindings, DLClures, DLCotherControls, DLCridePerks]

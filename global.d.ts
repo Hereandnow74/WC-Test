@@ -41,10 +41,21 @@ interface PerkFull {
   max?: number
   waifu?: string
   anything?: string
+  table?: string[][]
   costVariants?: number[]
   freebies?: any
   complex?: string
   chargen?: boolean
+  increment?: boolean
+  tree?: string
+  type?: string
+  old?: string
+  oldLink?: string
+}
+
+interface DLCPerk extends PerkFull {
+  dlc: string
+  dlclink?: string
 }
 
 interface Challenge {
@@ -76,4 +87,5 @@ export {
   PerkFull,
   Challenge,
   Mission,
+  DLCPerk,
 }

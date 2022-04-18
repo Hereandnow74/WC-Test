@@ -42,14 +42,16 @@
 
 <script lang='ts' setup>
 import {
-  otherControls, otherDesc,
+  otherDesc,
 } from '~/data/binding'
 import { useTooltips } from '~/logic/misc'
 import { lureAvailable, chooseOther } from '~/logic'
 import { useStore } from '~/store/store'
 import { DLCotherControls } from '~/data/DLCs'
+import { useFullPerks } from '~/logic/localPerks'
 
 const { otherPerks, settings } = useStore()
+const { otherControls } = useFullPerks()
 
 const otherDLC = computed(() => !settings.value.allChosenAuthors[0]
   ? DLCotherControls.filter(perk => !settings.value.allChosenAuthors.includes(perk.dlc))

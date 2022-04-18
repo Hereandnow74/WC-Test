@@ -115,9 +115,14 @@
         </div>
       </div>
     </div>
-    <div v-if="showModal" class="fixed inset-0 bg-black bg-opacity-10 flex place-content-center z-20" @click="showModal = false">
-      <div class="overflow-auto h-screen w-max flex place-content-center items-center">
+    <div v-if="showModal" class="fixed inset-0 bg-black bg-opacity-10 flex place-content-center items-center z-20" @click="showModal = false">
+      <div class="relative overflow-auto w-max flex place-content-center items-center">
         <img class="object-contain max-h-screen" :src="modalImageCmp" alt="full image">
+        <span
+          v-if="charData.image_nsfw"
+          class="absolute top-1 right-4 hover:text-blue-400 cursor-pointer mix-blend-difference"
+          @click.stop="(nsfw = !nsfw, modalImage=(nsfw ? charData.image_nsfw || imageLink : imageLink))"
+        >{{ nsfw ? 'NSFW' : 'SFW' }}</span>
       </div>
     </div>
     <teleport to="#app">

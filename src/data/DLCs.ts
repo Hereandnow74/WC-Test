@@ -1,12 +1,4 @@
-import { PerkFull } from 'global'
-
-interface DLCPerk extends PerkFull {
-  dlc: string
-  dlclink?: string
-  increment?: boolean
-  tree?: string
-  type?: string
-}
+import { DLCPerk } from 'global'
 
 // DLC Generic Perks
 export const DLCgenericPerks: DLCPerk[] = []
@@ -612,7 +604,7 @@ DLClureExpansions.push({
   dlc: 'Cyan-Rozen',
   title: 'Sticky Fingers: Alter-Flavor',
   image: 'https://i.ibb.co/GW0hX61/Sticky-Fingers-Alter-Flavor.jpg',
-  cost: 30,
+  cost: 10,
   whitelist: ['Sticky Fingers: Brown Sugar'],
   desc: 'You are now able to change to flavor of all of your bodily fluids(Ex..Chocolate,Cookies,vanilla,any flavored ice-cream,lemon,apples,liquor/beer....etc) this change is instant with just a thought. Additionally this perk synergies with both Faerie Feast and Sticky Fingers: Brown Sugar.',
 })
@@ -671,7 +663,8 @@ DLCbindings.push({
   desc: `
   You are no longer limited to a single Binding. You may now purchase an additional Binding and expansions. You must still spend the credits as normal. This perk may be purchased multiple times. Its price will increase by 1 ticket each time. You are able to decide what purchased binding effects, including mental, are applied to any or all of your retinue. For example, you could Bind someone with the Shroud, then use Third-Generation Symbiote to share access to the Symbiote’s bio-armor as well. 
   `,
-  requires: 'at least one Binding',
+  needed: 1,
+  whitelist: ['Company Stamp', 'Tempest Jewelry', 'Ritual Circle', 'Alterzelu Symbiote', 'Shroud of Power'],
 })
 
 DLCbindings.push({

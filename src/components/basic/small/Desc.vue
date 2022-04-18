@@ -27,8 +27,8 @@ const formattedDesc = computed(() => {
   return desc
 })
 
-const MeAndMy = defineComponent({
+const MeAndMy = computed(() => defineComponent({
   template: formattedDesc.value,
-})
+}))
 
 </script>

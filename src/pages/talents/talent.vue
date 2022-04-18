@@ -46,7 +46,7 @@
 <script lang='ts' setup>
 import { intersection } from 'lodash-es'
 import { PerkFull } from 'global'
-import { talents, talentsDesc } from '~/data/talents'
+import { talentsDesc } from '~/data/talents'
 import { useTooltips } from '~/logic/misc'
 import { useStore } from '~/store/store'
 
@@ -55,7 +55,9 @@ import { chooseTalent, talentAvailable } from '~/logic'
 import { DLCtalents } from '~/data/DLCs'
 import ComplexBoth from '~/components/cards/perkCards/ComplexBoth.vue'
 import TS2Vue from '~/components/cards/perkCards/TS2.vue'
+import { useFullPerks } from '~/logic/localPerks'
 const { allEffects, talentPerks, settings } = useStore()
+const { talents } = useFullPerks()
 
 const allTalents = computed(() => {
   const res: any = {}

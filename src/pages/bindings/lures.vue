@@ -83,14 +83,16 @@
 
 <script lang='ts' setup>
 import {
-  lureDesc, lures, lureExpansionDesc, lureExpansions,
+  lureDesc, lureExpansionDesc, lureExpansions,
 } from '~/data/binding'
 import { useTooltips } from '~/logic/misc'
 import { chooseLure, lureAvailable } from '~/logic'
 import { useStore } from '~/store/store'
 import { DLClureExpansions, DLClures } from '~/data/DLCs'
+import { useFullPerks } from '~/logic/localPerks'
 
 const { luresBought, settings } = useStore()
+const { lures } = useFullPerks()
 
 const lureExpansionsDLC = computed(() => !settings.value.allChosenAuthors[0]
   ? DLClureExpansions.filter(perk => !settings.value.allChosenAuthors.includes(perk.dlc))

@@ -43,7 +43,7 @@
 </template>
 
 <script lang='ts' setup>
-import { genericPerks, genericDesc } from '~/data/talents'
+import { genericDesc } from '~/data/talents'
 import { lazyLoadImg, useTooltips } from '~/logic/misc'
 import { useStore } from '~/store/store'
 
@@ -52,8 +52,10 @@ import { DLCgenericPerks } from '~/data/DLCs'
 import PerkCard from '~/components/cards/PerkCard.vue'
 import FourSeason from '~/components/cards/perkCards/FourSeason.vue'
 import PowerSwap from '~/components/cards/perkCards/PowerSwap.vue'
+import { useFullPerks } from '~/logic/localPerks'
 
 const { genericWaifuPerks, settings } = useStore()
+const { genericPerks } = useFullPerks()
 
 const waifuList = ref<HTMLElement|null>(null)
 

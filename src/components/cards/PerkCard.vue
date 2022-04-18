@@ -13,9 +13,9 @@
     />
     <h3 :id="perk.title" class="relative flex-wrap flex justify-center items-center text-base sm:text-xl">
       <span class="whitespace-nowrap">{{ perk.title }}</span>
-      <span v-if="perk.dlc" class="text-sm ml-1" text="gray-700 dark:amber-400" @click.stop>
-        <a v-if="perk.dlclink" :href="perk.dlclink" target="_blank" rel="noopener noreferrer" class="underline">{{ perk.dlc }}</a>
-        <span v-else>DLC by {{ perk.dlc }}</span>
+      <span v-if="perk.dlc || perk.old" class="text-sm ml-1" text="gray-700 dark:amber-400" @click.stop>
+        <a v-if="perk.dlclink || perk.oldLink" :href="perk.dlclink || perk.oldLink" target="_blank" rel="noopener noreferrer" class="underline">{{ perk.dlc || perk.old }}</a>
+        <span v-else>DLC by {{ perk.dlc || perk.old }}</span>
       </span>
       <span v-if="savedPerk.anything">({{ savedPerk.anything }})</span>
       <AnythingInput
@@ -93,6 +93,7 @@
       </span>
       <Enum :list="perk.whitelist" />
     </div>
+    <fluent:delete-20-filled v-if="perk.local" class="absolute top-1 left-1 w-4 h-4 hover:text-red-500 mix-blend-difference" @click.stop="deleteLocal" />
   </div>
 </template>
 
@@ -100,6 +101,7 @@
 import { findIndex } from 'lodash-es'
 import { useStore } from '~/store/store'
 import { filterObject, lazyLoadSingleImg } from '~/logic'
+import { localPerks } from '~/logic/localPerks'
 
 const props = defineProps({
   perk: {
@@ -221,5 +223,10 @@ function collapse() {
     collapsedDescs.value.splice(collapsedDescs.value.indexOf(props.perk.uid), 1)
   else
     collapsedDescs.value.push(props.perk.uid)
+}
+
+function deleteLocal() {
+  const ind = findIndex(localPerks.value[props.perk.local], { title: props.perk.title })
+  localPerks.value[props.perk.local].splice(ind, 1)
 }
 </script>

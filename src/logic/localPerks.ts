@@ -1,0 +1,53 @@
+
+import { PerkFull } from 'global'
+import { bindings, lureExpansions, lures, otherControls } from '~/data/binding'
+import { homes } from '~/data/demdun'
+import { heritages } from '~/data/heritage'
+import { defenses, genericPerks, perks, talents } from '~/data/talents'
+import { waifu_perks } from '~/data/waifu_perks'
+
+interface PerkStorage {
+  'Challenge': PerkFull[]
+  'Origin': PerkFull[]
+  'Intensity': PerkFull[]
+  'Binding': PerkFull[]
+  'Lure': PerkFull[]
+  'Other control': PerkFull[]
+  'Heritage': PerkFull[]
+  'Demiplane & Dungeons': PerkFull[]
+  'Talent': PerkFull[]
+  'Defense': PerkFull[]
+  'Other': PerkFull[]
+  'Generic waifu perk': PerkFull[]
+  'Specific waifu perk': PerkFull[]
+}
+
+export const localPerks = useStorage('localPerks', {} as PerkStorage)
+
+const fullBindings = localPerks.value.Binding ? bindings.concat(localPerks.value.Binding) : bindings
+const fullLures = localPerks.value.Binding ? lures.concat(localPerks.value.Lure) : lures
+const fullOtherControls = localPerks.value.Binding ? otherControls.concat(localPerks.value['Other control']) : otherControls
+const fullHeritages = localPerks.value.Binding ? heritages.concat(localPerks.value.Heritage) : heritages
+const fullHomes = localPerks.value.Binding ? homes.concat(localPerks.value['Demiplane & Dungeons']) : homes
+const fullTalents = localPerks.value.Binding ? talents.concat(localPerks.value.Talent) : talents
+const fullDefenses = localPerks.value.Binding ? defenses.concat(localPerks.value.Defense) : defenses
+const fullOtherPerks = localPerks.value.Binding ? perks.concat(localPerks.value.Other) : perks
+const fullGeneric = localPerks.value.Binding ? genericPerks.concat(localPerks.value['Generic waifu perk']) : genericPerks
+const fullSpecific = localPerks.value.Binding ? waifu_perks.concat(localPerks.value['Specific waifu perk']) : waifu_perks
+
+console.log(bindings)
+
+export function useFullPerks() {
+  return {
+    bindings: fullBindings,
+    lures: fullLures,
+    otherControls: fullOtherControls,
+    heritages: fullHeritages,
+    homes: fullHomes,
+    talents: fullTalents,
+    defenses: fullDefenses,
+    perks: fullOtherPerks,
+    genericPerks: fullGeneric,
+    waifu_perks: fullSpecific,
+  }
+}

@@ -96,15 +96,17 @@
 
 <script lang='ts' setup>
 import { DLChomes } from '~/data/DLCs'
-import { homes, homeDesc, demdunDesc, laws, dungeon, demiplane, devotion } from '~/data/demdun'
+import { homeDesc, demdunDesc, laws, dungeon, demiplane, devotion } from '~/data/demdun'
 import { chooseHome, homeAvailable } from '~/logic'
 import { useTooltips } from '~/logic/misc'
 import { useStore } from '~/store/store'
 import DemDun from '~/components/cards/perkCards/DemDun.vue'
 import GenericPerkCard from '~/components/cards/perkCards/GenericPerkCard.vue'
 import PerkCard from '~/components/cards/PerkCard.vue'
+import { useFullPerks } from '~/logic/localPerks'
 
 const { homePerks, settings } = useStore()
+const { homes } = useFullPerks()
 
 const scryDevotion = ref(0)
 

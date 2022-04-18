@@ -1,6 +1,6 @@
 <template>
   <Modal label="Propose a Perk" class="!z-30">
-    <div class="p-2 flex flex-col gap-2 min-h-0 w-full">
+    <div class="relative p-2 flex flex-col gap-2 min-h-0 w-full">
       <div class="flex gap-2">
         <Input v-model="title" class="flex-grow" placeholder="Perk title" :error-message="errors.title" />
         <Input v-model.number="cost" class="w-24" label="Cost" :error-message="errors.cost" />
@@ -46,7 +46,14 @@
         {{ errorMessage }}
       </div>
       <div class="flex gap-2">
+        <Button label="Add Locally" class="flex-grow" bg-color="bg-orange-600" @click="addLocally" />
         <Button :disabled="!buttonActive" label="Send" class="flex-grow" bg-color="bg-red-700" @click="buttonActive ? addPerk() : errorMessage = 'Wait 30s before submitting again.'" />
+      </div>
+      <div class="hidden xl:block absolute h-[100vh] left-[calc(100%+0.5rem)]">
+        <PerkCard
+          class="bg-gray-200 min-w-[400px] max-w-[600px] dark:bg-gray-700 flex-grow"
+          :perk="submittedPerk"
+        />
       </div>
     </div>
   </Modal>
@@ -57,8 +64,9 @@ import * as zod from 'zod'
 import { useForm, useField } from 'vee-validate'
 import { toFormValidator } from '@vee-validate/zod'
 
-import { proposePerk } from '~/logic'
+import { proposePerk, showAddPerk } from '~/logic'
 import { ALL_PERK_TITLES } from '~/data/constants'
+import { localPerks } from '~/logic/localPerks'
 
 const perkCats = ['Challenge', 'Origin', 'Intensity', 'Binding', 'Lure', 'Other control', 'Heritage', 'Demiplane & Dungeons', 'Talent', 'Defense', 'Other', 'Generic waifu perk', 'Specific waifu perk']
 const subTypes = {
@@ -115,10 +123,35 @@ const { value: image } = useField<string>('image')
 const { value: special } = useField<string>('special')
 const { value: requires } = useField<string[]>('requires')
 
+const submittedPerk = computed(() => {
+  return {
+    title: title.value,
+    dlc: author.value,
+    cost: cost.value,
+    desc: desc.value,
+    image: image.value,
+    whitelist: requires.value,
+    special: special.value,
+    local: type.value,
+  }
+})
+
 const addPerk = handleSubmit((values) => {
   proposePerk({ ...values, date: new Date().toString() }, () => successMessage.value = 'Perk was send successfully, await until I review and add it')
   buttonActive.value = false
   setTimeout(() => { buttonActive.value = true; successMessage.value = ''; errorMessage.value = '' }, 30 * 1000)
 })
+
+function addLocally() {
+  if (['Binding', 'Lure', 'Other control', 'Heritage', 'Demiplane & Dungeons', 'Talent', 'Other', 'Generic waifu perk'].includes(type.value)) {
+    if (!localPerks.value[type.value]) localPerks.value[type.value] = []
+    localPerks.value[type.value].push(submittedPerk.value)
+    showAddPerk.value = false
+  }
+  else {
+    errorMessage.value = 'Adding perk of this category not supported yet.'
+    setTimeout(() => { errorMessage.value = '' }, 30 * 1000)
+  }
+}
 
 </script>

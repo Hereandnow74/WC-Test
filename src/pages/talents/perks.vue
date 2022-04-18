@@ -41,13 +41,15 @@
 </template>
 
 <script lang='ts' setup>
-import { perks, talentsDesc } from '~/data/talents'
+import { talentsDesc } from '~/data/talents'
 import { useTooltips } from '~/logic/misc'
 import { useStore } from '~/store/store'
 import { choosePerk, miscAvailable } from '~/logic'
 import { DLCperks } from '~/data/DLCs'
+import { useFullPerks } from '~/logic/localPerks'
 
 const { miscPerks, settings } = useStore()
+const { perks } = useFullPerks()
 
 const allPerks = computed(() => {
   const res: any = {}

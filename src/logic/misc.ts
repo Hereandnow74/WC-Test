@@ -2,7 +2,7 @@ import Fuse from 'fuse.js'
 import { random, groupBy, sampleSize, findIndex } from 'lodash-es'
 import tippy from 'tippy.js'
 import { DBWorld } from 'global'
-import { allWorldsNoCondition, CHAR_COSTS, getAllChars } from '~/data/constants'
+import { allWorldsNoCondition, ALL_DLC_PERK_TITLES, CHAR_COSTS, getAllChars } from '~/data/constants'
 
 import { useStore } from '~/store/store'
 import { clearAll, isBuildImage } from '~/logic'
@@ -174,6 +174,9 @@ function buildString(title: string, items: Perk[], left: object) {
     let complexFlavor = ''
     let complexCompanion = ''
     let complexBoth = ''
+    let dlc = ''
+    if (ALL_DLC_PERK_TITLES.value[x.title])
+      dlc = 'ᵈˡᶜ'
     if (x.complex) {
       if (x.complex[0].flavor && x.complex[0].target) {
         let pw = ''
@@ -188,7 +191,7 @@ function buildString(title: string, items: Perk[], left: object) {
       if (x.complex[0].target)
         complexCompanion = `[${x.complex.map(x => `${x.target}`).join(', ')}]`
     }
-    str += `${x.title}${count}${complexBoth || complexCompanion || complexFlavor} ${x.cost ? `-${x.cost}` : 'free'} [${left.c}]\n`
+    str += `${x.title}${dlc}${count}${complexBoth || complexCompanion || complexFlavor} ${x.cost ? `-${x.cost}` : 'free'} [${left.c}]\n`
   })
   return str
 }

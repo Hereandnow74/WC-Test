@@ -203,7 +203,7 @@ export function bindingAvailable(bin: Binding): boolean {
       return false
     if (!bin.whitelist && findIndex(binding.value, { title: 'Additional Binding' }) !== -1)
       return true
-    if (bin.whitelist && intersection(allEffects.value, bin.whitelist).length === (bin.needed || bin.whitelist.length))
+    if (bin.whitelist && intersection(allEffects.value, bin.whitelist).length >= (bin.needed || bin.whitelist.length))
       return true
   }
   return false
@@ -515,6 +515,7 @@ export function writeBuildValues(build: any) {
   patron.value = build.patron || []
   pvpPerks.value = build.pvpPerks || []
   fee.value = build.fee || 0
+  jumpChain.value = build.jumpChain || []
 }
 
 export function getSaveObject() {
@@ -544,6 +545,7 @@ export function getSaveObject() {
     patron: patron.value,
     pvpPerks: pvpPerks.value,
     fee: fee.value,
+    jumpChain: jumpChain.value,
   }
 }
 

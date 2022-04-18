@@ -5,6 +5,16 @@
     </h2>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
+        16 April 2022
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>~84 new user submitted characters</li>
+        <li>You can now add perks locally (unstable and buggy, use with caution)</li>
+        <li>Bugfixes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
         13 April 2022
       </h3>
       <ul class="list-decimal list-inside">

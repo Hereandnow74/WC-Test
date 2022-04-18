@@ -109,15 +109,17 @@
 
 import { onBeforeRouteUpdate } from 'vue-router'
 import { isArray, mergeWith, countBy } from 'lodash-es'
-import { desc, heritages, Heritage } from '~/data/heritage'
+import { desc, Heritage } from '~/data/heritage'
 import { useTooltips } from '~/logic/misc'
 import { useStore } from '~/store/store'
 import Select from '~/components/basic/Select.vue'
 import { chooseHeritage, heritageAvailable } from '~/logic'
 import { heritageTiers } from '~/data/constants'
 import { DLCheritages } from '~/data/DLCs'
+import { useFullPerks } from '~/logic/localPerks'
 
 const { heritage, flags, settings } = useStore()
+const { heritages } = useFullPerks()
 
 // const availableClasses = 'cursor-pointer'
 const heritageColors = {

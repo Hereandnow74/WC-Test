@@ -24,12 +24,14 @@
 </template>
 
 <script lang='ts' setup>
-import { defenses, defenceDesc, additionalDefenseDesc } from '~/data/talents'
+import { defenceDesc, additionalDefenseDesc } from '~/data/talents'
 import { chooseDefense, defenseAvailable } from '~/logic'
+import { useFullPerks } from '~/logic/localPerks'
 import { useTooltips } from '~/logic/misc'
 import { useStore } from '~/store/store'
 
 const { defensePerks, settings } = useStore()
+const { defenses } = useFullPerks()
 
 const allDefenses = computed(() => {
   const res: any = {}
