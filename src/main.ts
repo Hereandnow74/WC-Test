@@ -13,6 +13,7 @@ import 'virtual:windi-components.css'
 import './styles/main.css'
 import 'virtual:windi-utilities.css'
 import 'tippy.js/dist/tippy.css'
+import 'prismjs/themes/prism-okaidia.min.css'
 
 const app = createApp(App)
 const router = createRouter({

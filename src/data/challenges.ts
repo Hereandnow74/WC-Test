@@ -22,6 +22,7 @@ export const challenges = [
   {
     uid: 'QbKw9',
     title: 'Two Dime',
+    dlc: 'Om1cr0n',
     special: 'Minimum World DR is 4',
     cost: computed(() => fullStartingBudget.value - 20).value,
     desc: `
@@ -32,6 +33,7 @@ export const challenges = [
   {
     uid: 'U8fCr',
     title: 'Freedom Anomaly',
+    dlc: 'Om1cr0n',
     cost: 0,
     desc: `
     <p>&#9632;&#9632;&#9632;&#9632;&#9632;&#9632; department of Company found an anomaly in &#9632;&#9632;&#9632;&#9632;&#9632;&#9632;&#9632;&#9632; world and &#9632;&#9632; contractors were already lost, you are tasked to resolve it.</p>
@@ -46,6 +48,7 @@ export const challenges = [
   {
     uid: 'tW5KX',
     title: 'Waifu Manager',
+    dlc: 'Om1cr0n',
     special: 'DR7 or higher',
     cost: 0,
     desc: `
@@ -56,6 +59,7 @@ export const challenges = [
   {
     uid: 'K7Zhp',
     title: 'Strict Travel Mode',
+    dlc: 'Om1cr0n',
     cost: 0,
     desc: `
     <p>Company decided to enforce stricter rules for World Traveling, from now on travel by any other methods other than Company perks will be restricted so that you can only travel to already visited Worlds. If you don't have We Will Meet Again after each jump to a new World, other traveling methods will be disabled completely until you fill the progress bar to the next World by 100%.</p>
@@ -64,6 +68,7 @@ export const challenges = [
   {
     uid: 'KcxSe',
     title: 'Wild GIRLFRIEND appeared!',
+    dlc: 'Om1cr0n',
     cost: 0,
     desc: `
     <p>All bindings work only on unconsciousness defeated by you waifus/husbandos, binding will happen after 3s of continuous application regardless of previous requirements.</p>
@@ -72,6 +77,7 @@ export const challenges = [
   {
     uid: 'Z4jXA',
     title: '100,000 years of cultivation',
+    dlc: 'Om1cr0n',
     cost: 0,
     desc: `
     <p>One of the Top Managers of The Company recently gained a fascination for the cultivation and managed to convince R&D department to create experimental program 'Super Contractors&#8482;' by locking them in a Time Bubble for 100,000 years before they will go to their first World.</p>
@@ -85,6 +91,7 @@ export const challenges = [
   },
   {
     title: 'Russian roulette',
+    dlc: 'Om1cr0n',
     cost: 0,
     desc: `
     <p>After each capture/buy 1/6 rounded of your retinue members have 1/6 chance to get unbound, cleared of all mental effects and gain immunity for lures/bindings for a period of 14 days.</p>

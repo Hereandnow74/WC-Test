@@ -18,7 +18,7 @@
     </div>
     <template v-if="otherDLC.length">
       <h2 class="text-2xl text-center">
-        DLC Bindings
+        DLC Other Controls
       </h2>
       <DLCNote />
       <div

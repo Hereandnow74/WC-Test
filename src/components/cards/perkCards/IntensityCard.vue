@@ -12,7 +12,7 @@
       :data-src="perk.image"
       :alt="perk.title"
     />
-    <h3 class="text-xl text-center">
+    <h3 class="relative text-xl text-center">
       <span>{{ perk.title }}</span>
       <span v-if="perk.dlc" class="text-sm ml-1" text="gray-500 dark:gray-400" @click.stop>
         <a v-if="perk.dlclink" :href="perk.dlclink" target="_blank" rel="noopener noreferrer" class="underline">{{ perk.dlc }}</a>
@@ -27,6 +27,10 @@
           PvP
         </router-link>)
       </span>
+      <fa-solid:check
+        v-if="isActive"
+        class="absolute right-1 top-1 text-green-500"
+      />
     </h3>
     <div v-if="perk.intensity" class="px-2 flex gap-2">
       Bonus:
@@ -60,10 +64,6 @@
       Requires:
       <Enum :list="perk.whitelist" path="/intensity" />
     </div>
-    <fa-solid:check
-      v-if="isActive"
-      class="absolute right-0 top-0 m-2 text-green-500"
-    />
   </div>
 </template>
 

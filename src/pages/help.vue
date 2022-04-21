@@ -42,6 +42,8 @@
         <li><b>Alt+C</b> - Clear build</li>
         <li><b>Alt+S</b> - Copy build text to clipboard</li>
         <li><b>Alt+D</b> - Copy build image to clipboard</li>
+        <li><b>Alt+N</b> - Toggle perk images</li>
+        <li><b>Alt+B</b> - Toggle dark/light theme</li>
       </ul>
       <h4 class="text-center text-2xl mt-4">
         Extended Companions Search capabilities

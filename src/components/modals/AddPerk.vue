@@ -1,6 +1,6 @@
 <template>
   <Modal label="Propose a Perk" class="!z-30">
-    <div class="relative p-2 flex flex-col gap-2 min-h-0 w-full">
+    <div class="p-2 flex flex-col gap-2 min-h-0 w-full">
       <div class="flex gap-2">
         <Input v-model="title" class="flex-grow" placeholder="Perk title" :error-message="errors.title" />
         <Input v-model.number="cost" class="w-24" label="Cost" :error-message="errors.cost" />
@@ -46,6 +46,7 @@
         {{ errorMessage }}
       </div>
       <div class="flex gap-2">
+        <Button v-if="localPerksExist" icon="fa-solid:clipboard-list" title="Local Perks Manager" bg-color="bg-blue-600" @click="togglePerksManager" />
         <Button label="Add Locally" class="flex-grow" bg-color="bg-orange-600" @click="addLocally" />
         <Button :disabled="!buttonActive" label="Send" class="flex-grow" bg-color="bg-red-700" @click="buttonActive ? addPerk() : errorMessage = 'Wait 30s before submitting again.'" />
       </div>
@@ -56,6 +57,7 @@
         />
       </div>
     </div>
+    <LocalPerksManager v-if="showPerksManager" @click="togglePerksManager" @sendDelete="deletePerk" @sendEdit="editPerk" />
   </Modal>
 </template>
 
@@ -64,7 +66,8 @@ import * as zod from 'zod'
 import { useForm, useField } from 'vee-validate'
 import { toFormValidator } from '@vee-validate/zod'
 
-import { proposePerk, showAddPerk } from '~/logic'
+import { findIndex } from 'lodash'
+import { proposePerk, randomString, showAddPerk, togglePerksManager, showPerksManager } from '~/logic'
 import { ALL_PERK_TITLES } from '~/data/constants'
 import { localPerks } from '~/logic/localPerks'
 
@@ -125,6 +128,7 @@ const { value: requires } = useField<string[]>('requires')
 
 const submittedPerk = computed(() => {
   return {
+    uid: randomString(),
     title: title.value,
     dlc: author.value,
     cost: cost.value,
@@ -136,8 +140,10 @@ const submittedPerk = computed(() => {
   }
 })
 
+const localPerksExist = computed(() => Object.values(localPerks.value).some(x => x.length))
+
 const addPerk = handleSubmit((values) => {
-  proposePerk({ ...values, date: new Date().toString() }, () => successMessage.value = 'Perk was send successfully, await until I review and add it')
+  proposePerk({ ...values, subDate: new Date().toString() }, () => successMessage.value = 'Perk was send successfully, await until I review and add it')
   buttonActive.value = false
   setTimeout(() => { buttonActive.value = true; successMessage.value = ''; errorMessage.value = '' }, 30 * 1000)
 })
@@ -152,6 +158,23 @@ function addLocally() {
     errorMessage.value = 'Adding perk of this category not supported yet.'
     setTimeout(() => { errorMessage.value = '' }, 30 * 1000)
   }
+}
+
+function deletePerk(perk: any) {
+  localPerks.value[perk.local].splice(findIndex(localPerks.value[perk.local], { uid: perk.uid }), 1)
+}
+
+function editPerk(perk: any) {
+  title.value = perk.title
+  cost.value = perk.cost
+  desc.value = perk.desc
+  author.value = perk.dlc
+  type.value = perk.local
+  subType.value = perk.subType
+  image.value = perk.image
+  special.value = perk.special
+  requires.value = perk.whitelist
+  togglePerksManager()
 }
 
 </script>

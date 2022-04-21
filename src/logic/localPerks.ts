@@ -24,18 +24,16 @@ interface PerkStorage {
 
 export const localPerks = useStorage('localPerks', {} as PerkStorage)
 
-const fullBindings = localPerks.value.Binding ? bindings.concat(localPerks.value.Binding) : bindings
-const fullLures = localPerks.value.Binding ? lures.concat(localPerks.value.Lure) : lures
-const fullOtherControls = localPerks.value.Binding ? otherControls.concat(localPerks.value['Other control']) : otherControls
-const fullHeritages = localPerks.value.Binding ? heritages.concat(localPerks.value.Heritage) : heritages
-const fullHomes = localPerks.value.Binding ? homes.concat(localPerks.value['Demiplane & Dungeons']) : homes
-const fullTalents = localPerks.value.Binding ? talents.concat(localPerks.value.Talent) : talents
-const fullDefenses = localPerks.value.Binding ? defenses.concat(localPerks.value.Defense) : defenses
-const fullOtherPerks = localPerks.value.Binding ? perks.concat(localPerks.value.Other) : perks
-const fullGeneric = localPerks.value.Binding ? genericPerks.concat(localPerks.value['Generic waifu perk']) : genericPerks
-const fullSpecific = localPerks.value.Binding ? waifu_perks.concat(localPerks.value['Specific waifu perk']) : waifu_perks
-
-console.log(bindings)
+const fullBindings = computed(() => localPerks.value.Binding ? bindings.concat(localPerks.value.Binding) : bindings)
+const fullLures = computed(() => localPerks.value.Lure ? lures.concat(localPerks.value.Lure) : lures)
+const fullOtherControls = computed(() => localPerks.value['Other control'] ? otherControls.concat(localPerks.value['Other control']) : otherControls)
+const fullHeritages = computed(() => localPerks.value.Heritage ? heritages.concat(localPerks.value.Heritage) : heritages)
+const fullHomes = computed(() => localPerks.value['Demiplane & Dungeons'] ? homes.concat(localPerks.value['Demiplane & Dungeons']) : homes)
+const fullTalents = computed(() => localPerks.value.Talent ? talents.concat(localPerks.value.Talent) : talents)
+const fullDefenses = computed(() => localPerks.value.Defense ? defenses.concat(localPerks.value.Defense) : defenses)
+const fullOtherPerks = computed(() => localPerks.value.Other ? perks.concat(localPerks.value.Other) : perks)
+const fullGeneric = computed(() => localPerks.value['Generic waifu perk'] ? genericPerks.concat(localPerks.value['Generic waifu perk']) : genericPerks)
+const fullSpecific = computed(() => localPerks.value['Specific waifu perk'] ? waifu_perks.concat(localPerks.value['Specific waifu perk']) : waifu_perks)
 
 export function useFullPerks() {
   return {

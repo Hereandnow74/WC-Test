@@ -1177,13 +1177,14 @@
   {
     "u": 7449,
     "n": "Red Girl",
-    "t": 7,
+    "t": 8,
     "i": "[n]NA_Red_Girl_Render.png",
     "s": "https://static.wikia.nocookie.net/nier/images/2/2e/NA_Red_Girl_Render.png",
     "w": "(Square) Drakengard/Nier",
     "b": [
       "F",
-      "C"
+      "C",
+      "ai"
     ],
     "d": "Nier: Automata"
   },
@@ -5776,10 +5777,11 @@
     "t": 3,
     "i": "kesh_kharshot.png",
     "s": "https://static.wikia.nocookie.net/masseffect/images/c/c5/Kesh_kharshot.png/revision/latest?cb=20200502061427",
-    "w": "Andromeda",
+    "w": "Mass Effect",
     "b": [
       "F"
-    ]
+    ],
+    "d": "Andromeda"
   },
   {
     "u": 8465,
@@ -5798,10 +5800,11 @@
     "t": 4,
     "i": "dbcxs3u_27d3173c_cdd1_4754_af73_aa5e304f1d98.png",
     "s": "https://www.deviantart.com/alcherum/art/Lexi-T-Perro-686859402",
-    "w": "Andromeda",
+    "w": "Mass Effect",
     "b": [
       "F"
-    ]
+    ],
+    "d": "Andromeda"
   },
   {
     "u": 8467,
@@ -5809,10 +5812,11 @@
     "t": 4,
     "i": "elora.png",
     "s": "https://static.wikia.nocookie.net/masseffectandromeda_gamepedia_en/images/f/f9/Elora.png/revision/latest?cb=20180904060703",
-    "w": "Andromeda",
+    "w": "Mass Effect",
     "b": [
       "F"
-    ]
+    ],
+    "d": "Andromeda"
   },
   {
     "u": 8468,
@@ -5820,10 +5824,11 @@
     "t": 4,
     "i": "kalinda_t_27reve.png",
     "s": "https://static.wikia.nocookie.net/masseffect/images/9/93/Kalinda_T%27Reve.png",
-    "w": "Andromeda",
+    "w": "Mass Effect",
     "b": [
       "F"
-    ]
+    ],
+    "d": "Andromeda"
   },
   {
     "u": 8469,
@@ -8731,7 +8736,8 @@
     "w": "Avatar",
     "b": [
       "M"
-    ]
+    ],
+    "d": "The Last Airbender"
   },
   {
     "u": 1782,
@@ -8742,7 +8748,8 @@
     "w": "Avatar",
     "b": [
       "M"
-    ]
+    ],
+    "d": "The Last Airbender"
   },
   {
     "u": 1783,
@@ -8753,7 +8760,8 @@
     "w": "Avatar",
     "b": [
       "M"
-    ]
+    ],
+    "d": "The Last Airbender"
   },
   {
     "u": 1780,
@@ -8761,10 +8769,11 @@
     "t": 5,
     "i": "__bolin___bolan_by_themightfenek_dbxbf3f_pre.jpg",
     "s": "https://www.deviantart.com/themightfenek/art/Avatar-Genderbend-Bolin-Bolan-721088043",
-    "w": "Avatar/Korra",
+    "w": "Avatar",
     "b": [
       "M"
-    ]
+    ],
+    "d": "The Legend of Korra"
   },
   {
     "u": 1781,
@@ -8772,10 +8781,11 @@
     "t": 5,
     "i": "d5xylpp_43986f0c_db3c_4a78_b8d8_3d81d32bbce5.png",
     "s": "https://www.deviantart.com/pabloeinstein/art/Mako-Rule-63-359372653",
-    "w": "Avatar/Korra",
+    "w": "Avatar",
     "b": [
       "M"
-    ]
+    ],
+    "d": "The Legend of Korra"
   },
   {
     "u": 9537,
@@ -8783,12 +8793,13 @@
     "t": 1,
     "i": "4f70509997e54876675b0e196a939ae2.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/2378198",
-    "w": "Avatar/Korra",
+    "w": "Avatar",
     "b": [
       "F",
       "C"
     ],
-    "in": "https://pictures.hentai-foundry.com/g/gaiidraws/947486/gaiidraws-947486-Jin_-_Avatar_Last_Airbender.png"
+    "in": "https://pictures.hentai-foundry.com/g/gaiidraws/947486/gaiidraws-947486-Jin_-_Avatar_Last_Airbender.png",
+    "d": "The Last Airbender"
   },
   {
     "u": 9538,
@@ -8796,12 +8807,13 @@
     "t": 2,
     "i": "a520b5a62ba48de3fb73f4bc6cebb5c8.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/7622806",
-    "w": "Avatar/Korra",
+    "w": "Avatar",
     "b": [
       "F",
       "C"
     ],
-    "in": "https://pictures.hentai-foundry.com/a/Ana-xus/513231/Ana-xus-513231-Zhu_Li.jpg"
+    "in": "https://pictures.hentai-foundry.com/a/Ana-xus/513231/Ana-xus-513231-Zhu_Li.jpg",
+    "d": "The Legend of Korra"
   },
   {
     "u": 9539,
@@ -8809,12 +8821,13 @@
     "t": 3,
     "i": "306de08ffdd256efe1efc683a46b6f0a.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/7648028",
-    "w": "Avatar/Korra",
+    "w": "Avatar",
     "b": [
       "F",
       "C"
     ],
-    "in": "https://pictures.hentai-foundry.com/o/Owler/282742/Owler-282742-Stripper_Asami.png"
+    "in": "https://pictures.hentai-foundry.com/o/Owler/282742/Owler-282742-Stripper_Asami.png",
+    "d": "The Legend of Korra"
   },
   {
     "u": 9540,
@@ -8822,12 +8835,13 @@
     "t": 3,
     "i": "sample_f9a5a63720f703b9543544260a5906ce.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/4880081",
-    "w": "Avatar/Korra",
+    "w": "Avatar",
     "b": [
       "F",
       "C"
     ],
-    "in": "https://tulip.paheal.net/_images/8dc6d6ea81c90c4fb5cb582f74d8799f/4486040%20-%20Avatar_the_Last_Airbender%20LoodNCrood%20Mai.jpg"
+    "in": "https://tulip.paheal.net/_images/8dc6d6ea81c90c4fb5cb582f74d8799f/4486040%20-%20Avatar_the_Last_Airbender%20LoodNCrood%20Mai.jpg",
+    "d": "The Last Airbender"
   },
   {
     "u": 9541,
@@ -8835,11 +8849,13 @@
     "t": 3,
     "i": "neoartcore__0664b1fbf19e06ec099396a9d025719b.jpg",
     "s": "https://danbooru.donmai.us/posts/4079794",
-    "w": "Avatar/Korra",
+    "w": "Avatar",
     "b": [
       "F",
       "C"
-    ]
+    ],
+    "in": "https://tulip.paheal.net/_images/a51d1beb7f040e7115d5ee8d7e30d46d/4806938%20-%20Avatar_the_Last_Airbender%20Nopeys%20Suki.jpg",
+    "d": "The Last Airbender"
   },
   {
     "u": 9542,
@@ -8847,12 +8863,13 @@
     "t": 3,
     "i": "ty_lee_by_lawzilla_ddcu929_pre.jpg",
     "s": "https://www.deviantart.com/lawzilla/art/Ty-Lee-807627105",
-    "w": "Avatar/Korra",
+    "w": "Avatar",
     "b": [
       "F",
       "C"
     ],
-    "in": "https://pictures.hentai-foundry.com/m/MrPotatoParty/917538/MrPotatoParty-917538-Ty_Lee.png"
+    "in": "https://pictures.hentai-foundry.com/m/MrPotatoParty/917538/MrPotatoParty-917538-Ty_Lee.png",
+    "d": "The Last Airbender"
   },
   {
     "u": 9543,
@@ -8860,12 +8877,13 @@
     "t": 4,
     "i": "mel__sample_3375fa5e959d8b49675d81bf6106f952.jpg",
     "s": "https://danbooru.donmai.us/posts/2995363",
-    "w": "Avatar/Korra",
+    "w": "Avatar",
     "b": [
       "F",
       "C"
     ],
-    "in": "https://pictures.hentai-foundry.com/d/disclaimer/163436/disclaimer-163436-Teen_Jinora_with_tattoos.jpg"
+    "in": "https://pictures.hentai-foundry.com/d/disclaimer/163436/disclaimer-163436-Teen_Jinora_with_tattoos.jpg",
+    "d": "The Legend of Korra"
   },
   {
     "u": 9544,
@@ -8873,12 +8891,13 @@
     "t": 4,
     "i": "d9ht3eg_01407c37_b053_4870_9c78_8ee61e055542.jpg",
     "s": "https://www.deviantart.com/erohd/art/Opal-Beifong-574106488",
-    "w": "Avatar/Korra",
+    "w": "Avatar",
     "b": [
       "F",
       "C"
     ],
-    "in": "https://pictures.hentai-foundry.com/o/Owler/307227/Owler-307227-Opal_Sketch.png"
+    "in": "https://pictures.hentai-foundry.com/o/Owler/307227/Owler-307227-Opal_Sketch.png",
+    "d": "The Legend of Korra"
   },
   {
     "u": 9545,
@@ -8886,7 +8905,7 @@
     "t": 5,
     "i": "948b49a3f22139a4c42754c5dd151077.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/7396025",
-    "w": "Avatar/Korra",
+    "w": "Avatar",
     "b": [
       "F",
       "C",
@@ -8894,7 +8913,8 @@
       "pc",
       "ev"
     ],
-    "in": "https://pictures.hentai-foundry.com/a/AztoDio/931347/AztoDio-931347-Azula.jpg"
+    "in": "https://pictures.hentai-foundry.com/a/AztoDio/931347/AztoDio-931347-Azula.jpg",
+    "d": "The Last Airbender"
   },
   {
     "u": 9546,
@@ -8902,13 +8922,14 @@
     "t": 5,
     "i": "69e0fabc31333d960bc8e6b65279731a.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/595550",
-    "w": "Avatar/Korra",
+    "w": "Avatar",
     "b": [
       "F",
       "C",
       "hl"
     ],
-    "in": "https://pictures.hentai-foundry.com/t/TheLonelySquire/673314/TheLonelySquire-673314-Avatar_-_Katara.jpg"
+    "in": "https://pictures.hentai-foundry.com/t/TheLonelySquire/673314/TheLonelySquire-673314-Avatar_-_Katara.jpg",
+    "d": "The Last Airbender"
   },
   {
     "u": 9547,
@@ -8916,12 +8937,13 @@
     "t": 5,
     "i": "sample_63d8896f29454a159526f0cd258f0af0.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/5025457",
-    "w": "Avatar/Korra",
+    "w": "Avatar",
     "b": [
       "F",
       "C"
     ],
-    "in": "https://pictures.hentai-foundry.com/e/Exodusisnear/686432/Exodusisnear-686432-Toph_raped_by_bandits.jpg"
+    "in": "https://pictures.hentai-foundry.com/e/Exodusisnear/686432/Exodusisnear-686432-Toph_raped_by_bandits.jpg",
+    "d": "The Last Airbender"
   },
   {
     "u": 9548,
@@ -8929,12 +8951,13 @@
     "t": 6,
     "i": "934538460b052619f103329b0daf6f91.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/1516051",
-    "w": "Avatar/Korra",
+    "w": "Avatar",
     "b": [
       "F",
       "C"
     ],
-    "in": "https://pictures.hentai-foundry.com/o/Owler/246881/Owler-246881-Korra_Booty.png"
+    "in": "https://pictures.hentai-foundry.com/o/Owler/246881/Owler-246881-Korra_Booty.png",
+    "d": "The Legend of Korra"
   },
   {
     "u": 9549,
@@ -8942,13 +8965,14 @@
     "t": 5,
     "i": "808a57e9172fb314ef980da4fdfbcea4.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/5045381",
-    "w": "Avatar/Korra",
+    "w": "Avatar",
     "b": [
       "F",
       "C",
       "rl"
     ],
-    "in": "https://pictures.hentai-foundry.com/o/Owler/442636/Owler-442636-Sweating_Intensifies.png"
+    "in": "https://pictures.hentai-foundry.com/o/Owler/442636/Owler-442636-Sweating_Intensifies.png",
+    "d": "The Legend of Korra"
   },
   {
     "u": 7029,
@@ -9187,7 +9211,8 @@
       "F",
       "C"
     ],
-    "d": "Aircraft Carrier"
+    "d": "Aircraft Carrier",
+    "in": "https://i.imgur.com/gEPOsP5.png"
   },
   {
     "u": 3482,
@@ -10077,7 +10102,8 @@
       "F",
       "C"
     ],
-    "d": "Battleship"
+    "d": "Battleship",
+    "in": "https://i.imgur.com/scLMD7k.png"
   },
   {
     "u": 6987,
@@ -10169,7 +10195,8 @@
       "F",
       "C"
     ],
-    "d": "Heavy Cruiser"
+    "d": "Heavy Cruiser",
+    "in": "https://i.imgur.com/btIcL2q.png"
   },
   {
     "u": 6994,
@@ -11938,7 +11965,8 @@
       "F",
       "C"
     ],
-    "d": "Light Cruiser"
+    "d": "Light Cruiser",
+    "in": "https://i.imgur.com/c81gfuV.png"
   },
   {
     "u": 7130,
@@ -16157,6 +16185,7 @@
     "b": [
       "F",
       "C",
+      "cl",
       "md"
     ]
   },
@@ -20244,8 +20273,15 @@
     "w": "Chaos",
     "b": [
       "F",
-      "C"
-    ]
+      "C",
+      "hl",
+      "im",
+      "gd",
+      "az",
+      "ps",
+      "sr"
+    ],
+    "in": "https://i.imgur.com/F4SSqJG.jpg"
   },
   {
     "u": 4775,
@@ -24121,7 +24157,10 @@
     "s": "https://comicvine1.cbsistatic.com/uploads/scale_small/0/4/21549-3193-24039-1-amethyst-princess-o.jpg",
     "w": "DC",
     "b": [
-      "F"
+      "F",
+      "pc",
+      "rl",
+      "mm"
     ]
   },
   {
@@ -24143,7 +24182,9 @@
     "s": "https://i.pinimg.com/474x/c3/b4/37/c3b437188244a63b17b34ccb56184a55--queen-bees-warrior-women.jpg",
     "w": "DC",
     "b": [
-      "F"
+      "F",
+      "ps",
+      "rl"
     ]
   },
   {
@@ -24198,7 +24239,9 @@
     "s": "https://i.pinimg.com/originals/3d/32/bd/3d32bd0ef299b1549c93e77f01cb7cc8.jpg",
     "w": "DC",
     "b": [
-      "F"
+      "F",
+      "mp",
+      "sr"
     ]
   },
   {
@@ -24271,12 +24314,13 @@
     "u": 5196,
     "n": "Stargirl",
     "t": 7,
-    "i": "_b4_d0_be_d0_bc_d1_8b_forty_fathoms_4473593.jpeg",
+    "i": "https://i.imgur.com/x9lMWJgl.jpg",
     "in": "https://lotus.paheal.net/_images/713061c9fc0457fb414989a394d0df12/3144785%20-%20Courtney_Whitmore%20DC%20DCAU%20Justice_League%20Justice_League_Unlimited%20Stargirl%20SunsetRiders7.png",
-    "s": "http://img1.reactor.cc/pics/post/Stargirl-DC-Comics-%D1%84%D1%8D%D0%BD%D0%B4%D0%BE%D0%BC%D1%8B-Forty-Fathoms-4473593.jpeg",
+    "s": "https://i.imgur.com/x9lMWJg.jpg",
     "w": "DC",
     "b": [
-      "F"
+      "F",
+      "sp"
     ]
   },
   {
@@ -24377,7 +24421,9 @@
     "s": "https://comicvine1.cbsistatic.com/uploads/scale_medium/11121/111217258/4977572-saturn_girl_by_elias_chatzoudis-d9k21cx.jpg",
     "w": "DC",
     "b": [
-      "F"
+      "F",
+      "sp",
+      "ps"
     ]
   },
   {
@@ -25078,6 +25124,7 @@
       "C",
       "st",
       "sp",
+      "az",
       "de"
     ],
     "in": "https://pictures.hentai-foundry.com/h/HighHeeledJill/959328/HighHeeledJill-959328-PATREON_1_21_-_Big_Barda_Pornified_nude.jpg"
@@ -27849,7 +27896,7 @@
     "in": "https://i.ibb.co/1MR6NVj/Renamon-Grassland.png",
     "w": "Digimon",
     "b": [
-      "O"
+      "F"
     ]
   },
   {
@@ -30201,8 +30248,8 @@
     "u": 5378,
     "n": "Sora",
     "t": 1,
-    "i": "",
-    "s": "https://img2.gelbooru.com/images/93/5b/935b66f0215f3325a9b4fc74f04c9787.jpeg",
+    "i": "[n]fe465ebbec50aebc0400f259b5d1c8cbb62033d3.jpg",
+    "s": "https://safebooru.org//images/3054/fe465ebbec50aebc0400f259b5d1c8cbb62033d3.jpg",
     "w": "Digimon",
     "b": [
       "F"
@@ -30212,8 +30259,8 @@
     "u": 5380,
     "n": "Kari/Hikari",
     "t": 2,
-    "i": "",
-    "s": "https://img2.gelbooru.com/images/e4/b4/e4b48a59b776e765aab41c403296dac1.jpg",
+    "i": "[n]532d636b997118c2bf9ffc3aff4e9607b51afe09.jpg",
+    "s": "https://safebooru.org//images/1548/532d636b997118c2bf9ffc3aff4e9607b51afe09.jpg",
     "w": "Digimon",
     "b": [
       "F"
@@ -47995,7 +48042,9 @@
     "s": "https://www.deviantart.com/shuujichan/art/Fem-Zeref-569288688",
     "w": "Fairy Tail",
     "b": [
-      "M"
+      "M",
+      "id",
+      "gn"
     ]
   },
   {
@@ -51787,7 +51836,7 @@
   {
     "u": 2048,
     "n": "Fujimaru Ritsuka (Male)",
-    "t": 4,
+    "t": 5,
     "i": "ritsuka.fujimaru.600.2339405.jpg",
     "s": "https://s1.zerochan.net/Ritsuka.Fujimaru.600.2339405.jpg",
     "w": "Nasuverse",
@@ -54180,7 +54229,8 @@
       "P",
       "me"
     ],
-    "in": "https://pictures.hentai-foundry.com/c/Cutesexyrobutts/801430/Cutesexyrobutts-801430-female_robin_fire_emblem_awakening.png"
+    "in": "https://pictures.hentai-foundry.com/c/Cutesexyrobutts/801430/Cutesexyrobutts-801430-female_robin_fire_emblem_awakening.png",
+    "d": "11: Awakening"
   },
   {
     "u": 7740,
@@ -55834,11 +55884,12 @@
     "u": 337,
     "n": "Alphonse Elric",
     "t": 4,
-    "i": "",
+    "i": "[n]__alphonse_elric_fullmetal_alchemist_drawn_by_k_suwabe__12d79941222f808d0218ef649f8fe735.jpg",
     "w": "Fullmetal Alchemist",
     "b": [
       "M"
-    ]
+    ],
+    "s": "https://cdn.donmai.us/original/12/d7/__alphonse_elric_fullmetal_alchemist_drawn_by_k_suwabe__12d79941222f808d0218ef649f8fe735.jpg"
   },
   {
     "u": 338,
@@ -68603,13 +68654,19 @@
   },
   {
     "u": 1954,
-    "n": "Quirinius Quirrel",
+    "n": "Quirinus Quirrell",
     "t": 5,
-    "i": "",
+    "i": "https://i.imgur.com/hGV1fD3l.jpg",
     "w": "Harry Potter",
     "b": [
-      "M"
-    ]
+      "M",
+      "ml",
+      "dr",
+      "me",
+      "tc",
+      "vn"
+    ],
+    "s": "https://i.imgur.com/hGV1fD3.jpg"
   },
   {
     "u": 1955,
@@ -70694,14 +70751,15 @@
   {
     "u": 6430,
     "n": "Marikawa Shizuka",
-    "t": 1,
+    "t": "1",
     "i": "sample_779c84aa03749667bf5af6597bb6d79c.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/1092087",
     "w": "Highschool of the Dead",
     "b": [
       "F",
       "C",
-      "dc"
+      "dc",
+      "tc"
     ],
     "in": "https://cdn.donmai.us/sample/25/c3/__marikawa_shizuka_highschool_of_the_dead_drawn_by_minakami_flyingman555__sample-25c3f33a3463ab7445ca7efc37e138e5.jpg"
   },
@@ -70727,7 +70785,8 @@
     "w": "Highschool of the Dead",
     "b": [
       "F",
-      "C"
+      "C",
+      "sd"
     ],
     "in": "https://cdn.donmai.us/sample/d6/d4/__miyamoto_rei_highschool_of_the_dead_drawn_by_satou_shouji__sample-d6d42ddc6bfc9ab2e3493b678a2ba881.jpg"
   },
@@ -70752,7 +70811,9 @@
     "w": "Highschool of the Dead",
     "b": [
       "F",
-      "C"
+      "C",
+      "sd",
+      "gn"
     ],
     "in": "https://cdn.donmai.us/sample/76/9c/__takagi_saya_highschool_of_the_dead_drawn_by_karube_guri__sample-769c068b2406e3f4799e9a4efed8b5d7.jpg"
   },
@@ -70760,14 +70821,15 @@
     "u": 6435,
     "n": "Busujima Saeko",
     "t": 3,
-    "i": "sample_046f7acb26f443312b02fcd3fd66345a.jpg",
-    "s": "https://chan.sankakucomplex.com/post/show/1202556",
+    "i": "https://i.imgur.com/hpREsf5l.jpg",
+    "s": "https://i.imgur.com/hpREsf5.jpg",
     "w": "Highschool of the Dead",
     "b": [
       "F",
-      "C"
+      "C",
+      "sd"
     ],
-    "in": "https://wimg.rule34.xxx//images/1727/a5b0320718c3860d251b8d110e138a74.jpeg"
+    "in": "https://i.imgur.com/laF22TP.jpg"
   },
   {
     "u": 4786,
@@ -76523,21 +76585,28 @@
     "u": 2036,
     "n": "Tsukasa Kadoya",
     "t": 10,
-    "i": "",
+    "i": "[n]DX-NeoDecaDriver-10.jpg",
     "w": "Kamen Rider",
     "b": [
-      "M"
-    ]
+      "M",
+      "sr",
+      "Henshin"
+    ],
+    "s": "https://news.tokunation.com/wp-content/uploads/sites/5/2018/12/DX-NeoDecaDriver-10.jpg",
+    "d": "Kamen Rider Decade"
   },
   {
     "u": 2037,
     "n": "Sougo Tokiwa",
     "t": 11,
-    "i": "",
+    "i": "[n]9cuyasap.png",
     "w": "Kamen Rider",
     "b": [
-      "M"
-    ]
+      "M",
+      "tm",
+      "Henshin"
+    ],
+    "s": "https://www.heroshock.com/wp-content/uploads/2019/05/9cuyasap.png"
   },
   {
     "u": 5374,
@@ -78023,7 +78092,8 @@
     "b": [
       "F",
       "C",
-      "md"
+      "md",
+      "nj"
     ]
   },
   {
@@ -81665,12 +81735,17 @@
   {
     "u": 12558,
     "n": "Kindred",
-    "t": 6,
+    "t": 8,
     "i": "880be51bb9631906580680dea96d4386.png",
     "s": "https://e621.net/post/show/1397753",
     "w": "League of Legends",
     "b": [
-      "F"
+      "F",
+      "cl",
+      "dr",
+      "id",
+      "im",
+      "sc"
     ],
     "in": "https://pictures.hentai-foundry.com/p/personalami/928527/personalami-928527-Kindred.jpg"
   },
@@ -82211,11 +82286,14 @@
     "u": 82,
     "n": "Elena",
     "t": 6,
-    "i": "",
+    "i": "[n]EyzYjq0WgAwVnn7.jpg",
     "w": "Library of Ruina",
     "b": [
-      "F"
-    ]
+      "F",
+      "dr",
+      "vp"
+    ],
+    "s": "https://pbs.twimg.com/media/EyzYjq0WgAwVnn7.jpg"
   },
   {
     "u": 83,
@@ -83897,7 +83975,7 @@
     "t": 2,
     "i": "65a9841bc5e9883f246968b403baa5c0.jpg",
     "s": "https://e621.net/post/show/665750",
-    "w": "Loony Tunes",
+    "w": "Disney",
     "b": [
       "F"
     ]
@@ -85030,7 +85108,11 @@
     "b": [
       "F",
       "C",
-      "P"
+      "P",
+      "hp",
+      "im",
+      "ai",
+      "me"
     ],
     "d": "Original"
   },
@@ -85043,7 +85125,13 @@
     "w": "Lyrical Nanoha",
     "b": [
       "F",
-      "C"
+      "C",
+      "hp",
+      "dc",
+      "hl",
+      "im",
+      "th",
+      "me"
     ],
     "d": "Original"
   },
@@ -85056,7 +85144,14 @@
     "w": "Lyrical Nanoha",
     "b": [
       "F",
-      "C"
+      "C",
+      "hp",
+      "st",
+      "im",
+      "th",
+      "me",
+      "az",
+      "mm"
     ],
     "d": "Original"
   },
@@ -85069,7 +85164,14 @@
     "w": "Lyrical Nanoha",
     "b": [
       "F",
-      "C"
+      "C",
+      "hp",
+      "st",
+      "cl",
+      "im",
+      "dh",
+      "me",
+      "sr"
     ],
     "d": "Original"
   },
@@ -85108,7 +85210,13 @@
     "w": "Lyrical Nanoha",
     "b": [
       "F",
-      "C"
+      "C",
+      "hp",
+      "cl",
+      "im",
+      "th",
+      "me",
+      "az"
     ],
     "d": "Original"
   },
@@ -85134,7 +85242,12 @@
     "w": "Lyrical Nanoha",
     "b": [
       "F",
-      "C"
+      "C",
+      "hp",
+      "sc",
+      "me",
+      "rl",
+      "mm"
     ],
     "d": "Original"
   },
@@ -91226,7 +91339,15 @@
     "s": "https://vignette.wikia.nocookie.net/marveldatabase/images/8/8e/Mighty_Avengers_Vol_1_2_Textless.jpg/revision/latest?cb=20070315105120",
     "w": "Marvel",
     "b": [
-      "F"
+      "F",
+      "st",
+      "hz",
+      "im",
+      "en",
+      "ai",
+      "ad",
+      "gn",
+      "vn"
     ]
   },
   {
@@ -91579,7 +91700,9 @@
     "s": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/820ad535-c310-4704-a9bc-eecf26bba444/da6rcg2-f0786bb2-d507-4633-acdb-a0dfe3a0af18.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzgyMGFkNTM1LWMzMTAtNDcwNC1hOWJjLWVlY2YyNmJiYTQ0NFwvZGE2cmNnMi1mMDc4NmJiMi1kNTA3LTQ2MzMtYWNkYi1hMGRmZTNhMGFmMTgucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.b4023XhZtxqieR7VYhmJTIEeujSodsefDAippPnht4I",
     "w": "Marvel",
     "b": [
-      "F"
+      "F",
+      "mp",
+      "ps"
     ]
   },
   {
@@ -91943,8 +92066,8 @@
     "u": 9649,
     "n": "Lady Loki",
     "t": 8,
-    "i": "9c5df1f18d2481938cb75e154e4ccfdc.jpg",
-    "s": "https://i.pinimg.com/originals/9c/5d/f1/9c5df1f18d2481938cb75e154e4ccfdc.jpg",
+    "i": "https://i.imgur.com/GDd2PnSl.jpg",
+    "s": "https://i.imgur.com/GDd2PnS.jpg",
     "w": "Marvel",
     "b": [
       "F",
@@ -92073,8 +92196,13 @@
     "s": "https://chan.sankakucomplex.com/post/show/5412431",
     "w": "Marvel",
     "b": [
-      "F"
-    ]
+      "F",
+      "st",
+      "sp",
+      "az",
+      "sr"
+    ],
+    "in": "https://i.imgur.com/GWFYkSg.jpg"
   },
   {
     "u": 9660,
@@ -99334,7 +99462,11 @@
     "w": "Mortal Kombat",
     "b": [
       "F",
-      "C"
+      "C",
+      "hr",
+      "az",
+      "nj",
+      "vn"
     ],
     "in": "https://peach.paheal.net/_images/7c43b8eb9066d7078f5606dfc0d86df2/4081053%20-%20Frost%20Mortal_Kombat%20obituarytnsfw.jpg"
   },
@@ -99347,7 +99479,11 @@
     "w": "Mortal Kombat",
     "b": [
       "F",
-      "C"
+      "C",
+      "az",
+      "ev",
+      "rl",
+      "vn"
     ]
   },
   {
@@ -104118,20 +104254,9 @@
     "i": "",
     "w": "Nasuverse",
     "b": [
-      "F"
-    ],
-    "d": "Servants – Caster"
-  },
-  {
-    "u": 13914,
-    "n": "Mori Nagayoshi",
-    "t": 6,
-    "i": "",
-    "w": "Nasuverse",
-    "b": [
       "M"
     ],
-    "d": "Servants – Berserker"
+    "d": "Servants – Caster"
   },
   {
     "u": 13915,
@@ -107034,7 +107159,9 @@
     "w": "One Piece",
     "b": [
       "F",
-      "C"
+      "C",
+      "th",
+      "pc"
     ]
   },
   {
@@ -109481,7 +109608,10 @@
     "w": "Touhou",
     "b": [
       "F",
-      "C"
+      "C",
+      "sc",
+      "lm",
+      "Miko"
     ],
     "d": "PC-98"
   },
@@ -119872,23 +120002,27 @@
     "u": 5315,
     "n": "Luminara Unduli",
     "t": 5,
-    "i": "",
+    "i": "[n]0aa40cf2fb7576dc84b98e6ba1c6b5ec40e77a11.jpg",
     "w": "Star Wars",
     "d": "Prequel Trilogy",
     "b": [
       "F"
-    ]
+    ],
+    "s": "https://safebooru.org//images/3657/0aa40cf2fb7576dc84b98e6ba1c6b5ec40e77a11.jpg",
+    "in": "https://tulip.paheal.net/_images/790a7415390703edfc66ca8245b0d768/4286824%20-%20Berrythelothcat%20Luminara_Unduli%20Mirialan%20Revenge_of_the_Sith%20Star_Wars.jpg"
   },
   {
     "u": 5316,
     "n": "Barriss Offee",
     "t": 5,
-    "i": "",
+    "i": "[n]BarrissOffee-SWI115.jpg",
     "w": "Star Wars",
     "d": "Prequel Trilogy",
     "b": [
       "F"
-    ]
+    ],
+    "s": "https://static.wikia.nocookie.net/starwars/images/5/52/BarrissOffee-SWI115.jpg",
+    "in": "https://lotus.paheal.net/_images/94140eb2a804d967ab047146f9f518df/3327752%20-%20Barriss_Offee%20Clone_Wars%20CubedCoconut%20Mirialan%20Star_Wars.jpg"
   },
   {
     "u": 5317,
@@ -134685,7 +134819,10 @@
     "s": "https://static.wikia.nocookie.net/smallville-cw/images/c/cb/415Promo8.jpg/revision/latest/top-crop/width/360/height/450?cb=20161213163416",
     "w": "Smallville",
     "b": [
-      "F"
+      "F",
+      "bj",
+      "im",
+      "wh"
     ]
   },
   {
@@ -137559,12 +137696,13 @@
     "u": 5327,
     "n": "Chantique",
     "t": 4,
-    "i": "",
+    "i": "[n]Chantique_full.jpg",
     "w": "Star Wars",
     "d": "Old Republic",
     "b": [
       "F"
-    ]
+    ],
+    "s": "https://static.wikia.nocookie.net/starwars/images/8/84/Chantique_full.jpg"
   },
   {
     "u": 5304,
@@ -137590,7 +137728,8 @@
       "F",
       "mp",
       "ps"
-    ]
+    ],
+    "in": "https://tulip.paheal.net/_images/feab586939a777c841638a3001bfb056/4806918%20-%20Nopeys%20Satele_Shan%20Star_Wars%20The_Old_Republic.jpg"
   },
   {
     "u": 5288,
@@ -146407,7 +146546,8 @@
       "F",
       "C",
       "ps"
-    ]
+    ],
+    "in": "https://peach.paheal.net/_images/dd4db5ff12a68fd4da6e3fa8c57826e8/3490324%20-%20Bastila_Shan%20Freli%20Knights_of_the_Old_Republic%20Star_Wars.jpg"
   },
   {
     "u": 8353,
@@ -146946,7 +147086,8 @@
     "i": "[n]24a0HSz0_400x400.jpeg",
     "w": "The Vampire Diaries",
     "b": [
-      "F"
+      "F",
+      "wh"
     ],
     "d": "The Originals",
     "s": "https://pbs.twimg.com/profile_images/482606403387785216/24a0HSz0_400x400.jpeg"
@@ -147226,7 +147367,10 @@
     "s": "https://lgbtfansdeservebetter.com/static/uploads/2017/05/Freya-Mikaelson-Riley-Voelkel.png",
     "w": "The Vampire Diaries",
     "b": [
-      "F"
+      "F",
+      "im",
+      "di",
+      "wh"
     ],
     "d": "The Originals"
   },
@@ -147238,7 +147382,9 @@
     "s": "https://i.pinimg.com/originals/1e/a3/f2/1ea3f2cc8fd14ea5250ff9a190c16ec5.jpg",
     "w": "The Vampire Diaries",
     "b": [
-      "F"
+      "F",
+      "mp",
+      "vp"
     ]
   },
   {
@@ -147249,7 +147395,9 @@
     "s": "https://i.pinimg.com/474x/0d/8c/d5/0d8cd53bb06569301d69c021bf032d7e.jpg",
     "w": "The Vampire Diaries",
     "b": [
-      "F"
+      "F",
+      "mp",
+      "vp"
     ]
   },
   {
@@ -147260,7 +147408,9 @@
     "s": "https://media1.popsugar-assets.com/files/thumbor/xoAcnK4k_UsWJYWBgtawJcFYly4/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2015/10/05/715/n/1922283/65f66fadbc079d97_VD107_394b/i/Lexi-Branson.jpg",
     "w": "The Vampire Diaries",
     "b": [
-      "F"
+      "F",
+      "mp",
+      "vp"
     ]
   },
   {
@@ -147271,7 +147421,10 @@
     "s": "http://pm1.narvii.com/6666/7a9d417233269362e22e4f38ebdc055202b5ecf0_00.jpg",
     "w": "The Vampire Diaries",
     "b": [
-      "F"
+      "F",
+      "mp",
+      "sc",
+      "vp"
     ]
   },
   {
@@ -147287,13 +147440,14 @@
   },
   {
     "u": 10705,
-    "n": "Katherine Piece",
+    "n": "Katherine Pierce",
     "t": 5,
     "i": "2536a56bfee899d0e11169a3de15afc2.jpg",
     "s": "https://i.pinimg.com/originals/25/36/a5/2536a56bfee899d0e11169a3de15afc2.jpg",
     "w": "The Vampire Diaries",
     "b": [
-      "F"
+      "F",
+      "vp"
     ]
   },
   {
@@ -147338,6 +147492,7 @@
     "w": "The Vampire Diaries",
     "b": [
       "F",
+      "mp",
       "wh",
       "vp"
     ]
@@ -147379,7 +147534,9 @@
     "s": "https://static.wikia.nocookie.net/vampirediaries/images/5/5f/Amara-S5.jpg/revision/latest?cb=20170106230450",
     "w": "The Vampire Diaries",
     "b": [
-      "F"
+      "F",
+      "mp",
+      "im"
     ]
   },
   {
@@ -154124,6 +154281,7 @@
       "F",
       "C",
       "dg",
+      "sr",
       "ev"
     ],
     "d": "Azeroth"
@@ -154153,7 +154311,8 @@
       "F",
       "C",
       "dg",
-      "me"
+      "me",
+      "sr"
     ],
     "d": "Azeroth"
   },
@@ -154200,7 +154359,8 @@
       "F",
       "C",
       "dg",
-      "me"
+      "me",
+      "sr"
     ],
     "d": "Azeroth",
     "in": "https://lotus.paheal.net/_images/ce3fdf1764193133ce316a51d03e7c5b/525926%20-%20Sienna%20Tyrigosa%20World_of_Warcraft%20high_elf.jpg"
@@ -154277,6 +154437,7 @@
       "F",
       "C",
       "dg",
+      "sr",
       "ev"
     ],
     "d": "Azeroth",
@@ -154292,8 +154453,9 @@
     "b": [
       "F",
       "C",
+      "tm",
       "dg",
-      "tm"
+      "sr"
     ],
     "d": "Azeroth"
   },
@@ -154385,7 +154547,8 @@
     "b": [
       "F",
       "C",
-      "dg"
+      "dg",
+      "sr"
     ],
     "d": "Azeroth"
   },
@@ -155021,7 +155184,14 @@
     "s": "https://i.pinimg.com/564x/7a/2f/03/7a2f03dff1f05fc38179f4e2c3b6f1a3.jpg",
     "w": "Warhammer 40K",
     "b": [
-      "M"
+      "O",
+      "im",
+      "pl",
+      "ur",
+      "cr",
+      "ot",
+      "gd",
+      "ev"
     ]
   },
   {
@@ -156455,8 +156625,12 @@
     "s": "https://cdna.artstation.com/p/assets/images/images/007/999/076/small/georgy-stacker-dark-angel-special.jpg?1509822891",
     "w": "Warhammer 40K",
     "b": [
-      "M"
-    ]
+      "M",
+      "cl",
+      "rl",
+      "sa"
+    ],
+    "d": "Primarch"
   },
   {
     "u": 11581,
@@ -156466,8 +156640,12 @@
     "s": "https://cdna.artstation.com/p/assets/images/images/008/729/500/large/georgy-stacker-emperor-s-child-special.jpg?1514922045",
     "w": "Warhammer 40K",
     "b": [
-      "M"
-    ]
+      "M",
+      "sc",
+      "rl",
+      "ar"
+    ],
+    "d": "Primarch"
   },
   {
     "u": 11582,
@@ -156477,8 +156655,12 @@
     "s": "https://cdna.artstation.com/p/assets/images/images/009/482/884/large/georgy-stacker-white-scar-special.jpg?1519242882",
     "w": "Warhammer 40K",
     "b": [
-      "M"
-    ]
+      "M",
+      "cl",
+      "rl",
+      "sa"
+    ],
+    "d": "Primarch"
   },
   {
     "u": 11583,
@@ -156488,8 +156670,14 @@
     "s": "https://cdna.artstation.com/p/assets/images/images/009/987/742/large/georgy-stacker-space-wolf.jpg?1521958758",
     "w": "Warhammer 40K",
     "b": [
-      "M"
-    ]
+      "M",
+      "st",
+      "hr",
+      "hz",
+      "mt",
+      "rl"
+    ],
+    "d": "Primarch"
   },
   {
     "u": 11584,
@@ -156499,8 +156687,15 @@
     "s": "https://cdna.artstation.com/p/assets/images/images/010/424/898/large/georgy-stacker-imperial-fist-special.jpg?1524362924",
     "w": "Warhammer 40K",
     "b": [
-      "M"
-    ]
+      "M",
+      "cl",
+      "en",
+      "rl",
+      "ar",
+      "cc",
+      "sa"
+    ],
+    "d": "Primarchs"
   },
   {
     "u": 11585,
@@ -156510,8 +156705,11 @@
     "s": "https://cdna.artstation.com/p/assets/images/images/010/955/044/large/georgy-stacker-night-lord.jpg?1527108581",
     "w": "Warhammer 40K",
     "b": [
-      "M"
-    ]
+      "M",
+      "di",
+      "rl"
+    ],
+    "d": "Primarch"
   },
   {
     "u": 11586,
@@ -156522,7 +156720,8 @@
     "w": "Warhammer 40K",
     "b": [
       "M"
-    ]
+    ],
+    "d": "Primarch"
   },
   {
     "u": 11587,
@@ -156532,8 +156731,15 @@
     "s": "https://cdna.artstation.com/p/assets/images/images/015/592/050/large/georgy-stacker-nsfw-futa.jpg?1548891233",
     "w": "Warhammer 40K",
     "b": [
-      "M"
-    ]
+      "M",
+      "cl",
+      "cr",
+      "sc",
+      "nn",
+      "rl",
+      "ar"
+    ],
+    "d": "Primarch"
   },
   {
     "u": 11588,
@@ -156572,12 +156778,22 @@
     "u": 11591,
     "n": "Magnus the Red (Corrupted or Uncorrupted)",
     "t": 8,
-    "i": "0_bc_d1_8b_magnus_the_red_primarchs_5739400.jpeg",
-    "s": "http://img10.reactor.cc/pics/post/full/Warhammer-40000-%D1%84%D1%8D%D0%BD%D0%B4%D0%BE%D0%BC%D1%8B-Magnus-The-Red-Primarchs-5739400.jpeg",
+    "i": "[n]__magnus_the_red_warhammer_40k_drawn_by_ryuusei_mark_ii__1706a5a3665e7433772b17d80e08f88b.jpg",
+    "s": "https://cdn.donmai.us/original/17/06/__magnus_the_red_warhammer_40k_drawn_by_ryuusei_mark_ii__1706a5a3665e7433772b17d80e08f88b.jpg",
     "w": "Warhammer 40K",
     "b": [
-      "M"
-    ]
+      "M",
+      "mp",
+      "pl",
+      "ur",
+      "di",
+      "de",
+      "ps",
+      "sr",
+      "rl",
+      "nd"
+    ],
+    "d": "Primarch"
   },
   {
     "u": 11592,
@@ -156631,8 +156847,14 @@
     "s": "https://cdnb.artstation.com/p/assets/images/images/011/480/931/large/georgy-stacker-blood-angel.jpg?1529807558",
     "w": "Warhammer 40K",
     "b": [
-      "M"
-    ]
+      "M",
+      "hr",
+      "cl",
+      "sc",
+      "di",
+      "rl"
+    ],
+    "d": "Primarch"
   },
   {
     "u": 11597,

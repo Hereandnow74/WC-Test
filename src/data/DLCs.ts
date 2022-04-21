@@ -324,6 +324,22 @@ DLCperks.push({
   whitelist: ['Fertility Calibration I'],
 })
 
+DLCperks.push({
+  uid: 'KGkrd',
+  dlc: 'Ruaron',
+  title: 'Knowledge Base Upload',
+  image: '',
+  cost: 5,
+  costVariants: [5, 10, 20],
+  special: '1st stage: 5 credits; 2nd stage: 10 credits; 3rd stage: 20 credits.',
+  desc: `So you ended up in your favorite world, but it turns out that your mortal memory isn't perfect, you even can't tell what questions Snape asked Potter in the first lesson or where the Dragon Balls are. But worry not, using the most advanced methods of copying memory, we have collected for you, a mental base on the desired worlds. This includes the official source (so-called 'canon') and wikipedia pages.
+
+  <p>Is this not enough for you? Then buy it again and you will get knowledge of the most popular fanfics and even author's personal notes. Buying a third time will make your knowledge base updated every time you visit a new world.</p>
+  
+  <p>Extra data that will be downloaded into your memory will be just pure knowledge, with no emotional strings attached, and you can distinguish between your original memories and those we are adding.</p>
+  `,
+})
+
 // DLC home perks
 
 export const DLChomes: DLCPerk[] = []

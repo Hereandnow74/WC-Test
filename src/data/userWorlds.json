@@ -568,16 +568,7 @@
     "worldName": "Divinity",
     "rating": 5
   },
-  {
-    "worldName": "Highschool of the Dead",
-    "rating": 4,
-    "condition": [
-      {
-        "rating": 4,
-        "name": "Starting from Z-Day"
-      }
-    ]
-  },
+  {"worldName":"Highschool of the Dead","rating":2,"condition":[{"name":"Before Z-Day.","rating":2},{"name":"Starting from Z-Day.","rating":4}]},
   {
     "worldName": "How Not to Summon a Demon Lord",
     "rating": 8
@@ -2519,5 +2510,15 @@
   {"worldName":"Salem","rating":4,"image":"https://img.sharetv.com/shows/standard/salem.jpg"},
   {"worldName":"The Promised Neverland","rating":3,"image":"https://m.media-amazon.com/images/M/MV5BMTYwYjYyZDgtMTQ3My00YTI4LThmZTUtZmU1MjllOWRlOTdhXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg","additional":"Since the anime had a rushed ending in Season 2, events after the end of S1 would be more evenly paced. This means more time to prepare but have knowing  when it happened and not how exactly.","condition":[{"name":"Orphanage","rating":3},{"rating":4,"name":"Food don't talk"},{"rating":3,"name":"Budding haven"}]},
   {"worldName":"Tottaly spies","rating":4},
-  {"worldName":"Yu Yu Hakusho","rating":7,"image":"https://i.ibb.co/MG0YdgN/Yu-Yu-Hakusho-Title-Card.png","condition":[{"rating":4,"name":"Spirit Detective Saga"},{"name":"Dark Tournament Saga","rating":5},{"name":"Chapter Black Saga","rating":6},{"name":"Three Kings Saga","rating":7}]}
+  {"worldName":"Yu Yu Hakusho","rating":7,"image":"https://i.ibb.co/MG0YdgN/Yu-Yu-Hakusho-Title-Card.png","condition":[{"rating":4,"name":"Spirit Detective Saga"},{"name":"Dark Tournament Saga","rating":5},{"name":"Chapter Black Saga","rating":6},{"name":"Three Kings Saga","rating":7}]},
+  {"worldName":"Battlestar Galactica","rating":4,"image":"https://m.media-amazon.com/images/M/MV5BZjBjMjk4YWQtZjY1MC00NTI5LWEwZDMtYWMyYjk2MjkzMThhXkEyXkFqcGdeQXVyNzA5NjUyNjM@._V1_.jpg","condition":[{"name":"Armistice","rating":4},{"rating":6,"name":"The Exodus to Earth"}]},
+  {"worldName":"Corruption of Champions","rating":7},
+  {"worldName":"Detroit:  Become Human","rating":3},
+  {"worldName":"Disney","rating":1,"image":"https://i.insider.com/60c7608023393a00188e2e91?width=1000&format=jpeg&auto=webp","condition":[{"name":"Agrabah","rating":3},{"rating":3,"name":"Arendelle"},{"rating":2,"name":"Enchanted Forest"},{"rating":4,"name":"Moana Pacific"},{"rating":3,"name":"Lilo and Stitch Hawaii"},{"name":"Historic France","rating":3}]},
+  {"worldName":"Dororo","rating":4},
+  {"worldName":"Girls und Panzer","rating":4,"image":"https://i.imgur.com/FGOJaOe.jpeg"},
+  {"worldName":"Hyperdimension Neptunia","rating":8,"image":"https://oyster.ignimgs.com/wordpress/stg.ign.com/2014/09/HDNRebirth_091014_1600.jpg","additional":"Visiting the setting or having any waifu from Neptunia will give you access to its leveling systems."},
+  {"worldName":"Kengan Ashura","rating":5},
+  {"worldName":"Subverse","rating":6},
+  {"worldName":"The Gamer","rating":8}
 ]

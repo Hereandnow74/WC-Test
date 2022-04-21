@@ -361,18 +361,22 @@ const filteredCharacters = computed(() => {
   switch (true) {
     // Search by nickname
     case sr.startsWith('@'):
+      sopt.$and.pop()
       sopt.$and.push({ k: sr.slice(1) })
       break
     // Search by name
     case sr.startsWith('#'):
+      sopt.$and.pop()
       sopt.$and.push({ n: sr.slice(1) })
       break
     // Search by world
     case sr.startsWith('%'):
+      sopt.$and.pop()
       sopt.$and.push({ w: sr.slice(1) })
       break
     // Search by subworld
     case sr.startsWith('$'):
+      sopt.$and.pop()
       sopt.$and.push({ d: sr.slice(1) })
       break
     // Search by name with locked world
@@ -386,15 +390,6 @@ const filteredCharacters = computed(() => {
         },
       )
       break
-    // Search by World or Name or Subworld
-    // case !worldName.value:
-    //   sopt.$and.push(
-    //     {
-    //       $or: [
-    //         { w: sr }, { n: sr }, { d: sr }],
-    //     },
-    //   )
-    //   break
   }
   if (gender.value) sopt.$and.push({ b: `=${gender.value}` })
 
@@ -404,7 +399,6 @@ const filteredCharacters = computed(() => {
   if (favorite.value === -1) sopt.$and.push({ u: `!^${favorites.value.join(' !^')}` })
   if (retinue.value === 1) sopt.$and.push({ u: `=${Object.keys(companionsUIDs.value).join('|=')}` })
   if (retinue.value === -1) sopt.$and.push({ u: `!^${Object.keys(companionsUIDs.value).join(' !^')}` })
-
   if (search.value.length === 0)
     return fuseNoSort.search(sopt)
   return fuse.search(sopt)

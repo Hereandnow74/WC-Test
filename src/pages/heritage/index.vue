@@ -140,7 +140,7 @@ const heritageByTree = computed(() => {
     Transhuman: [] as Heritage[],
     Outsider: [] as Heritage[],
   }
-  heritages.forEach(x => x.tree !== 'None' ? res[x.tree].push(x) : null)
+  heritages.value.forEach(x => x.tree !== 'None' ? res[x.tree].push(x) : null)
   return res
 })
 
@@ -170,7 +170,7 @@ onBeforeRouteUpdate((to, from, next) => {
 })
 
 function pickSingularityType(type: string, perk: any) {
-  const allHrWFr = heritages.filter(x => x.typeFreebies)
+  const allHrWFr = heritages.value.filter(x => x.typeFreebies)
   const fr = {}
   mergeWith(fr, ...allHrWFr.map(x => x.typeFreebies[type]), (a, b) => { if (isArray(a)) return a.concat(b) })
   perk.freebies = fr

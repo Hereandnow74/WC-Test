@@ -144,7 +144,7 @@ const bindingByType = computed(() => {
     Other: [] as PerkFull[],
   }
 
-  bindings.forEach(x => x.type ? res[x.type].push(x) : res.Other.push(x))
+  bindings.value.forEach(x => x.type ? res[x.type].push(x) : res.Other.push(x))
   return res
 })
 

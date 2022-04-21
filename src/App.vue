@@ -30,7 +30,7 @@ import { useStore } from './store/store'
 import {
   isSupport, showSaveLoad, showShare, showSideMenu, showAddPerk, toggleShowAddPerk,
   showAddMission, toggleShowAddMission, promoteShown, toggleShowSettings, showSettings, sendStats,
-  buildImage, copyText, clearBuild, isBuildImage, toggleAddFic, showAddFic, currentFic,
+  buildImage, copyText, clearBuild, isBuildImage, toggleAddFic, showAddFic, currentFic, toggleDark,
 } from '~/logic'
 
 const { totalActive, settings } = useStore()
@@ -53,7 +53,7 @@ watch(idle, () => {
     start = new Date()
 })
 
-onKeyStroke(['c', 's', 'd', 'n'], (e) => {
+onKeyStroke(['c', 's', 'd', 'n', 'b'], (e) => {
   if (e.altKey) {
     switch (e.code) {
       case 'KeyC':
@@ -71,6 +71,10 @@ onKeyStroke(['c', 's', 'd', 'n'], (e) => {
       case 'KeyN':
         e.preventDefault()
         settings.value.perkImages = !settings.value.perkImages
+        break
+      case 'KeyB':
+        e.preventDefault()
+        toggleDark()
         break
     }
   }

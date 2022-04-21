@@ -1,5 +1,5 @@
 import Fuse from 'fuse.js'
-import { random, groupBy, sampleSize, findIndex } from 'lodash-es'
+import { random, groupBy, sampleSize, findIndex, sample } from 'lodash-es'
 import tippy from 'tippy.js'
 import { DBWorld } from 'global'
 import { allWorldsNoCondition, ALL_DLC_PERK_TITLES, CHAR_COSTS, getAllChars } from '~/data/constants'
@@ -268,4 +268,9 @@ export function copyText() {
 
 export function buildImage() {
   isBuildImage.value = true
+}
+
+export function randomString(n = 5): string {
+  const chars = 'QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm1234567890'
+  return new Array(n).reduce(a => a += sample(chars), '')
 }

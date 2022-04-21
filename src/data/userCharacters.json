@@ -1459,7 +1459,8 @@
       "F",
       "U"
     ],
-    "in": "https://pictures.hentai-foundry.com/d/Demonlorddante/968910/Demonlorddante-968910-Manuela_from_Fire_Emblem.jpg"
+    "in": "https://pictures.hentai-foundry.com/d/Demonlorddante/968910/Demonlorddante-968910-Manuela_from_Fire_Emblem.jpg",
+    "d": "13: Three Houses"
   },
   {
     "u": 9232685,
@@ -1481,7 +1482,8 @@
     "w": "Fire Emblem",
     "b": [
       "F"
-    ]
+    ],
+    "d": "13: Three Houses"
   },
   {
     "u": 2323088,
@@ -14445,7 +14447,7 @@
   {
     "u": 8295185,
     "n": "Besmara",
-    "t": 9,
+    "t": 10,
     "i": "Besmara.jpg",
     "s": "https://static.wikia.nocookie.net/iyronet/images/f/f4/Besmara.jpg",
     "w": "Pathfinder",
@@ -15291,7 +15293,7 @@
   {
     "u": 4449741,
     "n": "Nocticula",
-    "t": 9,
+    "t": 10,
     "i": "Nocticula.png",
     "s": "https://static.wikia.nocookie.net/pathfinder/images/5/53/Nocticula.png",
     "w": "Pathfinder",
@@ -17282,7 +17284,9 @@
       "mp",
       "pl",
       "di",
-      "wh"
+      "wh",
+      "U",
+      "mi"
     ],
     "in": "https://tulip.paheal.net/_images/0bd6099669f70ded25af7b8686fe0214/488917%20-%20Gargoyles%20Luna%20Phoebe%20Seline%20SunsetRiders7%20Weird_Sisters.jpg",
     "k": "Templar9999"
@@ -17652,7 +17656,7 @@
     "i": "June.png",
     "s": "https://static.wikia.nocookie.net/avatar/images/e/ea/June.png",
     "w": "Avatar",
-    "d": "",
+    "d": "The Last Airbender",
     "b": [
       "F",
       "mt",
@@ -18901,7 +18905,7 @@
   },
   {
     "u": 8577601,
-    "n": "Chesire",
+    "n": "Cheshire",
     "t": 3,
     "i": "Cheshire.png",
     "s": "https://static.wikia.nocookie.net/youngjustice/images/2/28/Cheshire.png",
@@ -18909,7 +18913,8 @@
     "d": "Young_Justice",
     "b": [
       "F",
-      "nj"
+      "nj",
+      "U"
     ],
     "in": "https://lotus.paheal.net/_images/a2c84233c0f60725114e9ce3d9a7c7f9/2149024%20-%20Cheshire%20DC%20SunsetRiders7%20Young_Justice.png",
     "k": "iamnuff"
@@ -21364,23 +21369,6 @@
     "k": "Myrddin Emrys"
   },
   {
-    "u": 8535347,
-    "n": "Raichu (Partner) (Shadow) (Battle Bond)",
-    "t": 7,
-    "i": "__raichu_pokemon_drawn_by_uninori__593664f23cb4d099e2d3993d325613cf.jpg",
-    "s": "https://cdn.donmai.us/original/59/36/__raichu_pokemon_drawn_by_uninori__593664f23cb4d099e2d3993d325613cf.jpg",
-    "w": "Pokemon",
-    "d": "",
-    "b": [
-      "M",
-      "hr",
-      "sc",
-      "mr",
-      "mu"
-    ],
-    "k": "KaizerRyu"
-  },
-  {
     "u": 6843018,
     "n": "Grand Master Dashi",
     "t": 7,
@@ -22589,8 +22577,8 @@
     "u": 7761682,
     "n": "Riser Phenex",
     "t": 5,
-    "i": "b56665-LZzlVbbN3DJU.png",
-    "s": "https://s4.anilist.co/file/anilistcdn/character/large/b56665-LZzlVbbN3DJU.png",
+    "i": "https://i.imgur.com/hfliZOCl.jpg",
+    "s": "https://i.imgur.com/hfliZOC.jpg",
     "w": "High School DxD",
     "d": "",
     "b": [
@@ -24682,26 +24670,6 @@
       "im"
     ],
     "k": "LandWhale172"
-  },
-  {
-    "u": 8756435,
-    "n": "Gardevoir (Angewomon Fused)",
-    "t": 10,
-    "i": "https://i.imgur.com/gmhWk9Il.png",
-    "s": "https://i.imgur.com/gmhWk9I.png",
-    "w": "Pokemon",
-    "d": "Digimon",
-    "b": [
-      "F",
-      "hp",
-      "hl",
-      "mp",
-      "ur",
-      "sc",
-      "an",
-      "ps"
-    ],
-    "k": "KaizerRyu"
   },
   {
     "u": 2446821,
@@ -31337,13 +31305,14 @@
     "t": 7,
     "i": "sample-acfd3d8212c506e14bf6268bfe1220bf.jpg",
     "s": "https://i.postimg.cc/Fz71wSTv/sample-acfd3d8212c506e14bf6268bfe1220bf.jpg",
-    "w": "Warcraft",
+    "w": "Warcraft - Azeroth",
     "d": "",
     "b": [
       "F",
       "tm",
       "dg",
       "me",
+      "sr",
       "U"
     ],
     "k": "Myrddin Emrys"
@@ -38964,22 +38933,6 @@
     "k": "Mandabar"
   },
   {
-    "u": 1248093,
-    "n": "Demi-Pixie",
-    "t": 8,
-    "i": "tumblr_552730900420e5f9dd02bbfc4bf70ae5_9c7abfbb_1280.jpg",
-    "s": "https://64.media.tumblr.com/552730900420e5f9dd02bbfc4bf70ae5/528e000e6e3f504f-f2/s1280x1920/9c7abfbb1b631e8e5037fe43b68da043ebce1735.jpg",
-    "w": "Shin Megami Tensei",
-    "d": "",
-    "b": [
-      "F",
-      "hl",
-      "id",
-      "dm"
-    ],
-    "k": "Dev"
-  },
-  {
     "u": 3762395,
     "n": "Ardyn Izunia",
     "t": 8,
@@ -41362,7 +41315,9 @@
     "w": "Warcraft",
     "d": "",
     "b": [
-      "F"
+      "F",
+      "U",
+      "tw"
     ],
     "k": "Ayashi"
   },
@@ -41375,7 +41330,9 @@
     "w": "Warcraft",
     "d": "",
     "b": [
-      "F"
+      "F",
+      "U",
+      "tw"
     ],
     "k": "Ayashi"
   },
@@ -41573,7 +41530,9 @@
       "F",
       "im",
       "dm",
-      "wh"
+      "wh",
+      "U",
+      "tw"
     ],
     "in": "https://art.ngfiles.com/images/1405000/1405218_candragloomblade_lady-sacrolash-sfw.jpg",
     "k": "Ayashi"
@@ -41590,7 +41549,9 @@
       "F",
       "im",
       "dm",
-      "wh"
+      "wh",
+      "U",
+      "tw"
     ],
     "in": "https://64.media.tumblr.com/f4f865a557f3df42cde77e126d685b93/tumblr_oxbf6dzgGW1v5xkjko1_r1_1280.png",
     "k": "Ayashi"
@@ -41789,12 +41750,15 @@
     "t": 6,
     "i": "Sindragosa_.jpg",
     "s": "https://static.wikia.nocookie.net/villains/images/0/03/Sindragosa_.jpg",
-    "w": "Warcraft",
+    "w": "Warcraft - Azeroth",
     "d": "",
     "b": [
       "F",
+      "hr",
       "dg",
-      "un"
+      "un",
+      "sr",
+      "U"
     ],
     "in": "https://cdna.artstation.com/p/assets/images/images/008/900/210/large/ina-wong-sindragosacrop1.jpg",
     "k": "Ayashi"
@@ -42057,12 +42021,15 @@
     "t": 6,
     "i": "826737-keristrasza.jpg",
     "s": "https://wow.zamimg.com/uploads/screenshots/normal/826737-keristrasza.jpg",
-    "w": "Warcraft",
+    "w": "Warcraft - Azeroth",
     "d": "",
     "b": [
       "F",
       "hl",
-      "dg"
+      "dg",
+      "me",
+      "sr",
+      "U"
     ],
     "k": "Ayashi"
   },
@@ -42072,11 +42039,15 @@
     "t": 6,
     "i": "Valithria_Dreamwalker_HS.jpg",
     "s": "https://static.wikia.nocookie.net/wowpedia/images/7/74/Valithria_Dreamwalker_HS.jpg",
-    "w": "Warcraft",
+    "w": "Warcraft - Azeroth",
     "d": "",
     "b": [
       "F",
-      "dg"
+      "hl",
+      "dg",
+      "me",
+      "sr",
+      "U"
     ],
     "k": "Ayashi"
   },
@@ -42086,12 +42057,15 @@
     "t": 6,
     "i": "YsondreElf.jpg",
     "s": "https://static.wikia.nocookie.net/wowpedia/images/0/02/YsondreElf.jpg",
-    "w": "Warcraft",
+    "w": "Warcraft - Azeroth",
     "d": "",
     "b": [
       "F",
       "cr",
-      "dg"
+      "dg",
+      "me",
+      "sr",
+      "U"
     ],
     "k": "Ayashi"
   },
@@ -52569,7 +52543,7 @@
   },
   {
     "u": 9402423,
-    "n": "Braniac",
+    "n": "Brainiac",
     "t": 9,
     "i": "3ae8ac2e5d9a6e185b88f0e5c9df92ee.jpg",
     "s": "https://i.pinimg.com/736x/3a/e8/ac/3ae8ac2e5d9a6e185b88f0e5c9df92ee.jpg",
@@ -53542,7 +53516,9 @@
     "d": "",
     "b": [
       "M",
-      "cl"
+      "cl",
+      "ur",
+      "U"
     ],
     "k": "Jollymerr"
   },
@@ -58411,7 +58387,7 @@
   {
     "u": 8860850,
     "n": "Erika",
-    "t": 2,
+    "t": 4,
     "i": "Erika-underworld-gothic-24483683-669-1000.jpg",
     "s": "https://images4.fanpop.com/image/photos/24400000/Erika-underworld-gothic-24483683-669-1000.jpg",
     "w": "Underworld",
@@ -58726,7 +58702,7 @@
     "i": "tumblr_b53469839660ebd466bfd9309dc7c1ba_2c26b5eb_1280.png",
     "s": "https://64.media.tumblr.com/b53469839660ebd466bfd9309dc7c1ba/43d6a6fee038c5a4-86/s1280x1920/2c26b5ebed437408d245c4c65c96e89c48533baf.png",
     "w": "Avatar",
-    "d": "",
+    "d": "The Last Airbender",
     "b": [
       "F"
     ],
@@ -58740,7 +58716,7 @@
     "i": "https://i.imgur.com/YIskWGTl.gif",
     "s": "https://i.imgur.com/YIskWGT.gif",
     "w": "Avatar",
-    "d": "",
+    "d": "The Last Airbender",
     "b": [
       "F"
     ],
@@ -62502,7 +62478,7 @@
   {
     "u": 7511843,
     "n": "Doormaker",
-    "t": 4,
+    "t": 7,
     "i": "https://i.imgur.com/4b3LaX1l.png",
     "s": "https://i.imgur.com/4b3LaX1.png",
     "w": "Worm",
@@ -64966,8 +64942,8 @@
     "t": 5,
     "i": "tumblr_nyacyl3u5d1s5x930o1_400.png",
     "s": "https://64.media.tumblr.com/a58dea2513c5f6a8fc6dd08505230054/tumblr_nyacyl3u5d1s5x930o1_400.png",
-    "w": "Avatar/Korra",
-    "d": "",
+    "w": "Avatar",
+    "d": "The Legend of Korra",
     "b": [
       "F",
       "M",
@@ -67723,8 +67699,8 @@
     "t": 4,
     "i": "https://i.imgur.com/WLgbauRl.jpg",
     "s": "https://i.imgur.com/WLgbauR.jpg",
-    "w": "Avatar/Korra",
-    "d": "",
+    "w": "Avatar",
+    "d": "The Legend of Korra",
     "b": [
       "F"
     ],
@@ -67736,8 +67712,8 @@
     "t": 1,
     "i": "https://i.imgur.com/yxBlz5kl.jpg",
     "s": "https://i.imgur.com/yxBlz5k.jpg",
-    "w": "Avatar/Korra",
-    "d": "",
+    "w": "Avatar",
+    "d": "The Legend of Korra",
     "b": [
       "F"
     ],
@@ -67750,8 +67726,8 @@
     "t": 4,
     "i": "8zdyqzwxbb551.jpg",
     "s": "https://i.redd.it/8zdyqzwxbb551.jpg",
-    "w": "Avatar/Korra",
-    "d": "",
+    "w": "Avatar",
+    "d": "The Legend of Korra",
     "b": [
       "F"
     ],
@@ -70221,7 +70197,7 @@
     "i": "https://i.imgur.com/oiUhqgll.jpg",
     "s": "https://i.imgur.com/oiUhqgl.jpg",
     "w": "Avatar",
-    "d": "",
+    "d": "The Last Airbender",
     "b": [
       "F",
       "pc",
@@ -79330,7 +79306,7 @@
   {
     "u": 4410953,
     "n": "Steven Armstrong",
-    "t": 4,
+    "t": 5,
     "i": "__steven_armstrong_metal_gear_and_1_more_drawn_by_werfmight__ffc4fe13277826cb7b109cd8ac718847.jpg",
     "s": "https://cdn.donmai.us/original/ff/c4/__steven_armstrong_metal_gear_and_1_more_drawn_by_werfmight__ffc4fe13277826cb7b109cd8ac718847.jpg",
     "w": "Metal Gear Rising",
@@ -82246,7 +82222,7 @@
     "i": "h6u5ohzt7hw71.jpg",
     "s": "https://i.redd.it/h6u5ohzt7hw71.jpg",
     "w": "Avatar",
-    "d": "",
+    "d": "The Legend of Korra",
     "b": [
       "F",
       "hr"
@@ -82261,7 +82237,7 @@
     "i": "Kya.png",
     "s": "https://static.wikia.nocookie.net/avatar/images/8/8a/Kya.png",
     "w": "Avatar",
-    "d": "",
+    "d": "The Last Airbender",
     "b": [
       "F",
       "hr"
@@ -82276,7 +82252,7 @@
     "i": "Young_Hama.png",
     "s": "https://static.wikia.nocookie.net/avatar/images/d/d8/Young_Hama.png",
     "w": "Avatar",
-    "d": "",
+    "d": "The Last Airbender",
     "b": [
       "F",
       "hr"
@@ -82291,7 +82267,7 @@
     "i": "Kori_Morishita.png",
     "s": "https://static.wikia.nocookie.net/avatar/images/8/85/Kori_Morishita.png",
     "w": "Avatar",
-    "d": "",
+    "d": "The Last Airbender",
     "b": [
       "F"
     ],
@@ -83029,7 +83005,7 @@
     "u": 1285715,
     "n": "Andrea Benton (w/ Silence Symbiote)",
     "t": 5,
-    "i": "clean.jpg",
+    "i": "cleanandrea.jpg",
     "s": "https://i.annihil.us/u/prod/marvel/i/mg/3/f0/6149f7637da08/clean.jpg",
     "w": "Marvel",
     "d": "",
@@ -83053,23 +83029,6 @@
       "sa"
     ],
     "k": "Myrddin Emrys"
-  },
-  {
-    "u": 9383484,
-    "n": "Manami Aiba (La Brava)",
-    "t": 4,
-    "i": "430319mi_Aiba My_Hero_Academia.png",
-    "s": "https://lotus.paheal.net/_images/a744086b58e6139f42cb9cad239a211b/4303194%20-%20Jellcaps%20Manami_Aiba%20My_Hero_Academia.png",
-    "w": "My Hero Academia",
-    "d": "Villains",
-    "b": [
-      "F",
-      "C",
-      "mu",
-      "vn"
-    ],
-    "in": "https://lotus.paheal.net/_images/dd7056fe57cbb2e5f19e95aea364ed5a/4928805%20-%20JamesAB%20Manami_Aiba%20My_Hero_Academia.png",
-    "k": "Cyrus"
   },
   {
     "u": 6467034,
@@ -83378,7 +83337,7 @@
     "t": 6,
     "i": "75e94e268fdfae662a2c605bdec7c18f.jpg",
     "s": "https://i.pinimg.com/474x/75/e9/4e/75e94e268fdfae662a2c605bdec7c18f.jpg",
-    "w": "WataMote",
+    "w": "Warhammer 40K",
     "d": "",
     "b": [
       "M",
@@ -83386,6 +83345,7 @@
       "hr",
       "hz",
       "cl",
+      "U",
       "Soldier"
     ],
     "k": "AusthinH7"
@@ -83436,5 +83396,1950 @@
       "rl"
     ],
     "k": "sinofsloth"
+  },
+  {
+    "u": 7659701,
+    "n": "Angelo Lagusa",
+    "t": 2,
+    "i": "Avilio.Bruno.full.2038170.jpg",
+    "s": "https://static.zerochan.net/Avilio.Bruno.full.2038170.jpg",
+    "w": "91 Days",
+    "d": "",
+    "b": [
+      "M",
+      "sa"
+    ],
+    "k": "CanvasRose"
+  },
+  {
+    "u": 2479154,
+    "n": "Alphanea Tolman",
+    "t": 2,
+    "i": "6bf2c5876e98d52131b65a3bbdeb473b.jpg",
+    "s": "https://static1.e621.net/data/sample/6b/f2/6bf2c5876e98d52131b65a3bbdeb473b.jpg",
+    "w": "Alfie",
+    "d": "incase",
+    "b": [
+      "F",
+      "mg",
+      "cc"
+    ],
+    "k": "dadude"
+  },
+  {
+    "u": 5126884,
+    "n": "Vanessa Hughes",
+    "t": 1,
+    "i": "https://i.imgur.com/xZyuAjhl.png",
+    "s": "https://i.imgur.com/xZyuAjh.png",
+    "w": "Andavaverse",
+    "d": "",
+    "b": [
+      "F",
+      "sd"
+    ],
+    "in": "https://i.imgur.com/VH1dgwa.png",
+    "k": "Jollymerr"
+  },
+  {
+    "u": 2413880,
+    "n": "Nadia Hughes",
+    "t": 1,
+    "i": "https://i.imgur.com/5UWmo9gl.jpg",
+    "s": "https://i.imgur.com/5UWmo9g.jpg",
+    "w": "Andavaverse",
+    "d": "",
+    "b": [
+      "F",
+      "ml",
+      "Milf"
+    ],
+    "in": "https://i.imgur.com/qq0RSXF.jpg",
+    "k": "Jollymerr"
+  },
+  {
+    "u": 6444642,
+    "n": "Gianna Lewis",
+    "t": 1,
+    "i": "https://i.imgur.com/1uhUHQUl.png",
+    "s": "https://i.imgur.com/1uhUHQU.png",
+    "w": "Andavaverse",
+    "d": "",
+    "b": [
+      "F",
+      "ml"
+    ],
+    "in": "https://i.imgur.com/AxxAmsp.png",
+    "k": "Jollymerr"
+  },
+  {
+    "u": 6481292,
+    "n": "Micaela Lewis",
+    "t": 1,
+    "i": "https://i.imgur.com/2DOQEvBl.png",
+    "s": "https://i.imgur.com/2DOQEvB.png",
+    "w": "Andavaverse",
+    "d": "",
+    "b": [
+      "F",
+      "sd"
+    ],
+    "in": "https://i.imgur.com/sjbcqzm.jpg",
+    "k": "Jollymerr"
+  },
+  {
+    "u": 4721170,
+    "n": "Demon Queen (Maou)",
+    "t": 4,
+    "i": "__maou_maoyuu_maou_yuusha_drawn_by_toi8__sample-4622e398d051520136f18021b81094df.jpg",
+    "s": "https://cdn.donmai.us/sample/46/22/__maou_maoyuu_maou_yuusha_drawn_by_toi8__sample-4622e398d051520136f18021b81094df.jpg",
+    "w": "Archenemy and Hero (MAOYU)",
+    "d": "",
+    "b": [
+      "F",
+      "di",
+      "cc"
+    ],
+    "k": "CanvasRose"
+  },
+  {
+    "u": 2901223,
+    "n": "Conway Stern",
+    "t": 3,
+    "i": "https://i.imgur.com/ZTBnPy6l.png",
+    "s": "https://i.imgur.com/ZTBnPy6.png",
+    "w": "Archer",
+    "d": "",
+    "b": [
+      "M",
+      "cl",
+      "vn"
+    ],
+    "k": "Mkaius"
+  },
+  {
+    "u": 1480636,
+    "n": "Dusk",
+    "t": 7,
+    "i": "https://i.imgur.com/VaNv7Ffl.jpeg",
+    "s": "https://i.imgur.com/VaNv7Ff.jpeg",
+    "w": "Arknights",
+    "d": "Operatives - Caster",
+    "b": [
+      "F",
+      "hp",
+      "dg",
+      "me",
+      "ar"
+    ],
+    "in": "https://i.imgur.com/9uCC3kO.jpeg",
+    "k": "Sleepy Fluffball™"
+  },
+  {
+    "u": 4398764,
+    "n": "Korosensei",
+    "t": 7,
+    "i": "tumblr_c24154664ee6813518ed43d33a4b7a21_e97fc0bb_1280.jpg",
+    "s": "https://64.media.tumblr.com/c24154664ee6813518ed43d33a4b7a21/46223989612691fb-57/s1280x1920/e97fc0bb18c4b9e4b48c1b8fb1634f01c45f432d.jpg",
+    "w": "Assassination Classroom",
+    "d": "",
+    "b": [
+      "M",
+      "dc",
+      "st",
+      "tc",
+      "sr",
+      "gn"
+    ],
+    "k": "CanvasRose"
+  },
+  {
+    "u": 9978451,
+    "n": "Yujiro Hanma",
+    "t": 5,
+    "i": "Yujiro-Hanma-Wallpaper-14.jpg",
+    "s": "https://www.ixpap.com/images/2021/10/Yujiro-Hanma-Wallpaper-14.jpg",
+    "w": "Baki the Grappler",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Razanon"
+  },
+  {
+    "u": 6566540,
+    "n": "Hilda (Hildegarde)",
+    "t": 5,
+    "i": "9a6e6431dd97e1d3d52a5a7a6e865a5d.jpg",
+    "s": "https://i.pinimg.com/originals/9a/6e/64/9a6e6431dd97e1d3d52a5a7a6e865a5d.jpg",
+    "w": "Beelzebub",
+    "d": "",
+    "b": [
+      "F",
+      "dm",
+      "md"
+    ],
+    "k": "CanvasRose"
+  },
+  {
+    "u": 1142907,
+    "n": "Nao Tomori",
+    "t": 3,
+    "i": "__tomori_nao_charlotte_drawn_by_sunohara_marble0131__sample-8a1a978bd6618ebdcedac1b826e8ea8e.jpg",
+    "s": "https://cdn.donmai.us/sample/8a/1a/__tomori_nao_charlotte_drawn_by_sunohara_marble0131__sample-8a1a978bd6618ebdcedac1b826e8ea8e.jpg",
+    "w": "Charlotte",
+    "d": "",
+    "b": [
+      "F",
+      "cl",
+      "sd"
+    ],
+    "k": "CanvasRose"
+  },
+  {
+    "u": 4670124,
+    "n": "Yuu Otosaka",
+    "t": 6,
+    "i": "__otosaka_yuu_charlotte_drawn_by_sekina__sample-51dd450e2c9b18c2a8b13c456abbbfb4.jpg",
+    "s": "https://cdn.donmai.us/sample/51/dd/__otosaka_yuu_charlotte_drawn_by_sekina__sample-51dd450e2c9b18c2a8b13c456abbbfb4.jpg",
+    "w": "Charlotte",
+    "d": "",
+    "b": [
+      "M",
+      "hl",
+      "bj",
+      "tm",
+      "sd"
+    ],
+    "k": "CanvasRose"
+  },
+  {
+    "u": 8976201,
+    "n": "Takumi Usui",
+    "t": 2,
+    "i": "Takumi-Usui-HD-usui-takumi-40247368-642-640.jpg",
+    "s": "http://images6.fanpop.com/image/photos/40200000/Takumi-Usui-HD-usui-takumi-40247368-642-640.jpg",
+    "w": "Class President is a Maid!",
+    "d": "",
+    "b": [
+      "M",
+      "sd"
+    ],
+    "k": "CanvasRose"
+  },
+  {
+    "u": 8486094,
+    "n": "Kei Karuizawa",
+    "t": 1,
+    "i": "__karuizawa_kei_youkoso_jitsuryoku_shijou_shugi_no_kyoushitsu_e_drawn_by_chiharu_9654784__sample-26a9fd51c9cb2ca23cd91d81ba1cd79b.jpg",
+    "s": "https://cdn.donmai.us/sample/26/a9/__karuizawa_kei_youkoso_jitsuryoku_shijou_shugi_no_kyoushitsu_e_drawn_by_chiharu_9654784__sample-26a9fd51c9cb2ca23cd91d81ba1cd79b.jpg",
+    "w": "Classroom of the Elite",
+    "d": "",
+    "b": [
+      "F",
+      "sd"
+    ],
+    "k": "CanvasRose"
+  },
+  {
+    "u": 2834714,
+    "n": "Kikyou Kushida",
+    "t": 2,
+    "i": "Anime-Youkoso-Jitsuryoku-Shijou-Shugi-no-Kyoushitsu-e-kushida-kikyou-c4031274.jpeg",
+    "s": "http://img10.joyreactor.cc/pics/post/Anime-Youkoso-Jitsuryoku-Shijou-Shugi-no-Kyoushitsu-e-kushida-kikyou-chiharu-%289654784%29-4031274.jpeg",
+    "w": "Classroom of the Elite",
+    "d": "",
+    "b": [
+      "F",
+      "sd"
+    ],
+    "k": "CanvasRose"
+  },
+  {
+    "u": 8467400,
+    "n": "Suzune Horikita",
+    "t": 2,
+    "i": "__horikita_suzune_youkoso_jitsuryoku_shijou_shugi_no_kyoushitsu_e_drawn_by_chiharu_9654784__sample-afb259c9ea26e2f6580670a2954d5978.jpg",
+    "s": "https://cdn.donmai.us/sample/af/b2/__horikita_suzune_youkoso_jitsuryoku_shijou_shugi_no_kyoushitsu_e_drawn_by_chiharu_9654784__sample-afb259c9ea26e2f6580670a2954d5978.jpg",
+    "w": "Classroom of the Elite",
+    "d": "",
+    "b": [
+      "F",
+      "sd"
+    ],
+    "k": "CanvasRose"
+  },
+  {
+    "u": 1290919,
+    "n": "Arisu Sakayanagi",
+    "t": 2,
+    "i": "__sakayanagi_arisu_youkoso_jitsuryoku_shijou_shugi_no_kyoushitsu_e_drawn_by_sekina__sample-8195524ea13c7029456215f8cde71c2e.jpg",
+    "s": "https://cdn.donmai.us/sample/81/95/__sakayanagi_arisu_youkoso_jitsuryoku_shijou_shugi_no_kyoushitsu_e_drawn_by_sekina__sample-8195524ea13c7029456215f8cde71c2e.jpg",
+    "w": "Classroom of the Elite",
+    "d": "",
+    "b": [
+      "F",
+      "sc",
+      "sd",
+      "gn"
+    ],
+    "k": "CanvasRose"
+  },
+  {
+    "u": 4796656,
+    "n": "Kiyotaka Ayanokōji",
+    "t": 3,
+    "i": "__ayanokouji_kiyotaka_youkoso_jitsuryoku_shijou_shugi_no_kyoushitsu_e_drawn_by_sekina__sample-0726b874b9af92be601fdc16173d8845.jpg",
+    "s": "https://cdn.donmai.us/sample/07/26/__ayanokouji_kiyotaka_youkoso_jitsuryoku_shijou_shugi_no_kyoushitsu_e_drawn_by_sekina__sample-0726b874b9af92be601fdc16173d8845.jpg",
+    "w": "Classroom of the Elite",
+    "d": "",
+    "b": [
+      "M",
+      "cl",
+      "sd",
+      "gn"
+    ],
+    "k": "CanvasRose"
+  },
+  {
+    "u": 8501692,
+    "n": "Moira Queen",
+    "t": 2,
+    "i": "68682568eaa3c0b23397a74d7d781a51.jpg",
+    "s": "https://i.pinimg.com/564x/68/68/25/68682568eaa3c0b23397a74d7d781a51.jpg",
+    "w": "DC",
+    "d": "Arrowverse",
+    "b": [
+      "F"
+    ],
+    "k": "DRESDENFANatic"
+  },
+  {
+    "u": 9405290,
+    "n": "Meena Dhawan/Fast Track",
+    "t": 9,
+    "i": "https://i.imgur.com/QEAkya8l.jpg",
+    "s": "https://i.imgur.com/QEAkya8.jpg",
+    "w": "DC",
+    "d": "",
+    "b": [
+      "F",
+      "sn",
+      "sp",
+      "gn"
+    ],
+    "k": "Mkaius"
+  },
+  {
+    "u": 2692365,
+    "n": "Kyle Rayner (White Lantern)",
+    "t": 10,
+    "i": "https://i.imgur.com/29vg7PXl.jpeg",
+    "s": "https://i.imgur.com/29vg7PX.jpeg",
+    "w": "DC (space side)",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "AnosDT"
+  },
+  {
+    "u": 3217259,
+    "n": "Al Azif Ex Mortis",
+    "t": 10,
+    "i": "https://i.imgur.com/8T3R3ZSl.jpg",
+    "s": "https://i.imgur.com/8T3R3ZS.jpg",
+    "w": "Demonbane",
+    "d": "",
+    "b": [
+      "F",
+      "hp",
+      "mt",
+      "cl",
+      "im",
+      "ur",
+      "fm",
+      "lm",
+      "tm",
+      "ot",
+      "me"
+    ],
+    "k": "KaizerRyu"
+  },
+  {
+    "u": 1169953,
+    "n": "ETHELDREDA",
+    "t": 10,
+    "i": "__etheldreda_demonbane_drawn_by_nishii_nitroplus__74e633cce3880059ed32732ed091b820.jpg",
+    "s": "https://cdn.donmai.us/original/74/e6/__etheldreda_demonbane_drawn_by_nishii_nitroplus__74e633cce3880059ed32732ed091b820.jpg",
+    "w": "Demonbane",
+    "d": "",
+    "b": [
+      "F",
+      "im",
+      "ur",
+      "cr",
+      "di",
+      "Grimorie",
+      "vn"
+    ],
+    "k": "Xion930"
+  },
+  {
+    "u": 9345443,
+    "n": "Dante (DmC version)",
+    "t": 7,
+    "i": "__dante_devil_may_cry_and_1_more_drawn_by_kuren__6426fc587eec0d270247527c23cafe82.jpg",
+    "s": "https://cdn.donmai.us/original/64/26/__dante_devil_may_cry_and_1_more_drawn_by_kuren__6426fc587eec0d270247527c23cafe82.jpg",
+    "w": "Devil May Cry",
+    "d": "DmC: Devil May Cry",
+    "b": [
+      "M",
+      "st",
+      "cl",
+      "dv",
+      "an"
+    ],
+    "in": "https://cdn.donmai.us/original/02/79/__dante_devil_may_cry_and_1_more_drawn_by_roman_colerov__0279deb2f545f846060f9c9a538a399b.jpg",
+    "k": "Time Hollow"
+  },
+  {
+    "u": 4652054,
+    "n": "Mimi Tachikawa",
+    "t": 1,
+    "i": "f2100a653302b584eb44e8e82136bf3fc9447863.jpeg",
+    "s": "https://safebooru.org//images/1881/f2100a653302b584eb44e8e82136bf3fc9447863.jpeg",
+    "w": "Digimon",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Selias"
+  },
+  {
+    "u": 7003823,
+    "n": "Jorogumo",
+    "t": 4,
+    "i": "Dzt0yAeWwAA3GVf.jpg",
+    "s": "https://pbs.twimg.com/media/Dzt0yAeWwAA3GVf.jpg",
+    "w": "Dororo",
+    "d": "",
+    "b": [
+      "F",
+      "dr",
+      "sr"
+    ],
+    "k": "CanvasRose"
+  },
+  {
+    "u": 2393906,
+    "n": "Dororo",
+    "t": 1,
+    "i": "c82bd53ca42745dae1d670167a889094.png",
+    "s": "https://i.pinimg.com/originals/c8/2b/d5/c82bd53ca42745dae1d670167a889094.png",
+    "w": "Dororo",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "CanvasRose"
+  },
+  {
+    "u": 5897808,
+    "n": "Mio",
+    "t": 1,
+    "i": "__mio_dororo_drawn_by_sakuramochi1003__sample-d9ce722bfc7d5d54f3597f91291506ed.jpg",
+    "s": "https://cdn.donmai.us/sample/d9/ce/__mio_dororo_drawn_by_sakuramochi1003__sample-d9ce722bfc7d5d54f3597f91291506ed.jpg",
+    "w": "Dororo",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "CanvasRose"
+  },
+  {
+    "u": 8669778,
+    "n": "Hyakkimaru",
+    "t": 4,
+    "i": "__hyakkimaru_dororo_drawn_by_maeba_izumi__sample-a83d23718142aee3c60fa93732025286.jpg",
+    "s": "https://cdn.donmai.us/sample/a8/3d/__hyakkimaru_dororo_drawn_by_maeba_izumi__sample-a83d23718142aee3c60fa93732025286.jpg",
+    "w": "Dororo",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "CanvasRose"
+  },
+  {
+    "u": 2790608,
+    "n": "Igneel",
+    "t": 7,
+    "i": "https://i.imgur.com/E2lHqZCl.jpg",
+    "s": "https://i.imgur.com/E2lHqZC.jpg",
+    "w": "Fairy Tail",
+    "d": "",
+    "b": [
+      "M",
+      "hr",
+      "dg",
+      "rl"
+    ],
+    "k": "Jollymerr"
+  },
+  {
+    "u": 6193029,
+    "n": "Courtney and Brittany",
+    "t": 2,
+    "i": "https://i.imgur.com/9idVhhYl.jpg",
+    "s": "https://i.imgur.com/9idVhhY.jpg",
+    "w": "Fellatrix",
+    "d": "",
+    "b": [
+      "F",
+      "Bimbo",
+      "mi"
+    ],
+    "k": "Mkaius"
+  },
+  {
+    "u": 1793658,
+    "n": "Gou Matsuoka",
+    "t": 1,
+    "i": "__matsuoka_gou_free_drawn_by_kokutou__sample-14e106c9750f41ce30a1a7dd054a8edd.jpg",
+    "s": "https://cdn.donmai.us/sample/14/e1/__matsuoka_gou_free_drawn_by_kokutou__sample-14e106c9750f41ce30a1a7dd054a8edd.jpg",
+    "w": "Free!",
+    "d": "",
+    "b": [
+      "F",
+      "sd"
+    ],
+    "k": "CanvasRose"
+  },
+  {
+    "u": 5924465,
+    "n": "Haruka Nanase",
+    "t": 1,
+    "i": "__nanase_haruka_free__sample-c6274ebfc3c19833083a08cf9c150e5b.jpg",
+    "s": "https://cdn.donmai.us/sample/c6/27/__nanase_haruka_free__sample-c6274ebfc3c19833083a08cf9c150e5b.jpg",
+    "w": "Free!",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "CanvasRose"
+  },
+  {
+    "u": 8474228,
+    "n": "Alex louis Armstrong",
+    "t": 5,
+    "i": "__alex_louis_armstrong_fullmetal_alchemist_drawn_by_holy_pumpkin__b210f15243e6ddfe46b386d9a359707f.jpg",
+    "s": "https://cdn.donmai.us/original/b2/10/__alex_louis_armstrong_fullmetal_alchemist_drawn_by_holy_pumpkin__b210f15243e6ddfe46b386d9a359707f.jpg",
+    "w": "Fullmetal Alchemist",
+    "d": "",
+    "b": [
+      "M",
+      "cl",
+      "me"
+    ],
+    "k": "Everythingman101"
+  },
+  {
+    "u": 9855569,
+    "n": "Van Hohenhiem",
+    "t": 7,
+    "i": "__edward_elric_alphonse_elric_and_van_hohenheim_fullmetal_alchemist_drawn_by_alexia_khodanian__sample-e129698c0a812b9fb9e401c3bf360235.jpg",
+    "s": "https://cdn.donmai.us/sample/e1/29/__edward_elric_alphonse_elric_and_van_hohenheim_fullmetal_alchemist_drawn_by_alexia_khodanian__sample-e129698c0a812b9fb9e401c3bf360235.jpg",
+    "w": "Fullmetal Alchemist",
+    "d": "",
+    "b": [
+      "M",
+      "cl",
+      "bj",
+      "im",
+      "sc",
+      "me"
+    ],
+    "k": "Everythingman101"
+  },
+  {
+    "u": 5167694,
+    "n": "Noah",
+    "t": 2,
+    "i": "__noah_fullmetal_alchemist_and_1_more_drawn_by_riru__2ffa5d504c4553e5e280e5c197748b15.jpg",
+    "s": "https://cdn.donmai.us/original/2f/fa/__noah_fullmetal_alchemist_and_1_more_drawn_by_riru__2ffa5d504c4553e5e280e5c197748b15.jpg",
+    "w": "Fullmetal Alchemist",
+    "d": "Conqueror of Shambala",
+    "b": [
+      "F",
+      "ps"
+    ],
+    "in": "https://cdn.donmai.us/original/bd/cf/__noah_fullmetal_alchemist_and_1_more_drawn_by_fuya_tempupupu__bdcf4a5dac3f62839afa068daf12131a.jpg",
+    "k": "Everythingman101"
+  },
+  {
+    "u": 7194842,
+    "n": "Greed",
+    "t": 5,
+    "i": "__greed_fullmetal_alchemist_drawn_by_kouya_libera__2020746705a60a56da440ed46e116258.jpg",
+    "s": "https://cdn.donmai.us/original/20/20/__greed_fullmetal_alchemist_drawn_by_kouya_libera__2020746705a60a56da440ed46e116258.jpg",
+    "w": "Fullmetal Alchemist",
+    "d": "",
+    "b": [
+      "M",
+      "hr",
+      "cl",
+      "th",
+      "me",
+      "sr"
+    ],
+    "k": "Everythingman101"
+  },
+  {
+    "u": 3354424,
+    "n": "Rose Tomas",
+    "t": 1,
+    "i": "__rose_tomas_fullmetal_alchemist_drawn_by_ikuchan_kaoru__0052886f97178eae7db3eba6304885ff.jpg",
+    "s": "https://cdn.donmai.us/original/00/52/__rose_tomas_fullmetal_alchemist_drawn_by_ikuchan_kaoru__0052886f97178eae7db3eba6304885ff.jpg",
+    "w": "Fullmetal Alchemist",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Everythingman101"
+  },
+  {
+    "u": 9345506,
+    "n": "Scar",
+    "t": 5,
+    "i": "__scar_fullmetal_alchemist_drawn_by_muyukikiyoshi11521__851e0c1566b4cc4195f601019e236272.jpg",
+    "s": "https://cdn.donmai.us/original/85/1e/__scar_fullmetal_alchemist_drawn_by_muyukikiyoshi11521__851e0c1566b4cc4195f601019e236272.jpg",
+    "w": "Fullmetal Alchemist",
+    "d": "",
+    "b": [
+      "M",
+      "hr",
+      "cl",
+      "me"
+    ],
+    "k": "Everythingman101"
+  },
+  {
+    "u": 6348473,
+    "n": "King Bradley",
+    "t": 5,
+    "i": "__king_bradley_fullmetal_alchemist_drawn_by_fujitachobi__b2d49373e349e492d48a847e2981bf95.jpg",
+    "s": "https://cdn.donmai.us/original/b2/d4/__king_bradley_fullmetal_alchemist_drawn_by_fujitachobi__b2d49373e349e492d48a847e2981bf95.jpg",
+    "w": "Fullmetal Alchemist",
+    "d": "",
+    "b": [
+      "M",
+      "cl",
+      "sc",
+      "th",
+      "ev",
+      "rl"
+    ],
+    "k": "Everythingman101"
+  },
+  {
+    "u": 9481817,
+    "n": "Sig Curtis",
+    "t": 4,
+    "i": "https://i.imgur.com/lslsqE3l.jpeg",
+    "s": "https://i.imgur.com/lslsqE3.jpeg",
+    "w": "Fullmetal Alchemist",
+    "d": "",
+    "b": [
+      "M",
+      "cl",
+      "cf"
+    ],
+    "k": "Everythingman101"
+  },
+  {
+    "u": 3210443,
+    "n": "Reika Shimohira",
+    "t": 4,
+    "i": "https://i.imgur.com/FkUmP11l.jpg",
+    "s": "https://i.imgur.com/FkUmP11.jpg",
+    "w": "Gantz",
+    "d": "Japan Team",
+    "b": [
+      "F",
+      "sd",
+      "ar"
+    ],
+    "k": "Mkaius"
+  },
+  {
+    "u": 1586753,
+    "n": "Kagura",
+    "t": 5,
+    "i": "__kagura_gintama_drawn_by_maosen__c8558727df2c23771ebedcee1ae0faab.jpg",
+    "s": "https://cdn.donmai.us/original/c8/55/__kagura_gintama_drawn_by_maosen__c8558727df2c23771ebedcee1ae0faab.jpg",
+    "w": "Gintama",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "CanvasRose"
+  },
+  {
+    "u": 6494682,
+    "n": "Gintoki Sakata",
+    "t": 5,
+    "i": "__sakata_gintoki_gintama_drawn_by_riz3__sample-6cd57543a11b64df7d19f692f8c96ab9.jpg",
+    "s": "https://cdn.donmai.us/sample/6c/d5/__sakata_gintoki_gintama_drawn_by_riz3__sample-6cd57543a11b64df7d19f692f8c96ab9.jpg",
+    "w": "Gintama",
+    "d": "",
+    "b": [
+      "M",
+      "Samurai"
+    ],
+    "k": "CanvasRose"
+  },
+  {
+    "u": 4681155,
+    "n": "Runelord Sorshen",
+    "t": 9,
+    "i": "Sorshen_by_Tatyana_Vetrova.jpg",
+    "s": "https://db4sgowjqfwig.cloudfront.net/images/2401479/Sorshen_by_Tatyana_Vetrova.jpg",
+    "w": "Golarion/Pathfinder",
+    "d": "",
+    "b": [
+      "F",
+      "hp",
+      "mp",
+      "im",
+      "sc",
+      "di",
+      "tm",
+      "wh",
+      "gn",
+      "rl",
+      "cc"
+    ],
+    "k": "Fetysh"
+  },
+  {
+    "u": 1781889,
+    "n": "Trihexa",
+    "t": 11,
+    "i": "https://i.imgur.com/O1FO9rZl.jpg",
+    "s": "https://i.imgur.com/O1FO9rZ.jpg",
+    "w": "High School DxD",
+    "d": "",
+    "b": [
+      "F",
+      "ur",
+      "gd"
+    ],
+    "k": "Alya"
+  },
+  {
+    "u": 8698755,
+    "n": "Tsunoda",
+    "t": 1,
+    "i": "https://i.imgur.com/ol9xgczl.jpg",
+    "s": "https://i.imgur.com/ol9xgcz.jpg",
+    "w": "Highschool of the Dead",
+    "d": "",
+    "b": [
+      "M",
+      "sd"
+    ],
+    "k": "Ruaron"
+  },
+  {
+    "u": 4343073,
+    "n": "Yamada",
+    "t": 1,
+    "i": "https://i.imgur.com/grDBLYkl.png",
+    "s": "https://i.imgur.com/grDBLYk.png",
+    "w": "Highschool of the Dead",
+    "d": "",
+    "b": [
+      "M",
+      "sd"
+    ],
+    "k": "Ruaron"
+  },
+  {
+    "u": 8139732,
+    "n": "Taniuchi",
+    "t": 1,
+    "i": "https://i.imgur.com/W9b0E6Wl.jpg",
+    "s": "https://i.imgur.com/W9b0E6W.jpg",
+    "w": "Highschool of the Dead",
+    "d": "",
+    "b": [
+      "F",
+      "sd"
+    ],
+    "k": "Ruaron"
+  },
+  {
+    "u": 7695477,
+    "n": "Kawamoto",
+    "t": 1,
+    "i": "https://i.imgur.com/6BqJFEsl.jpg",
+    "s": "https://i.imgur.com/6BqJFEs.jpg",
+    "w": "Highschool of the Dead",
+    "d": "",
+    "b": [
+      "F",
+      "sd"
+    ],
+    "k": "Ruaron"
+  },
+  {
+    "u": 8846698,
+    "n": "Miura",
+    "t": 1,
+    "i": "https://i.imgur.com/i9Wexh4l.jpg",
+    "s": "https://i.imgur.com/i9Wexh4.jpg",
+    "w": "Highschool of the Dead",
+    "d": "",
+    "b": [
+      "M",
+      "sd"
+    ],
+    "k": "Ruaron"
+  },
+  {
+    "u": 7297243,
+    "n": "Kurokami",
+    "t": 1,
+    "i": "https://i.imgur.com/z8PqZnSl.png",
+    "s": "https://i.imgur.com/z8PqZnS.png",
+    "w": "Highschool of the Dead",
+    "d": "",
+    "b": [
+      "M",
+      "sd"
+    ],
+    "k": "Ruaron"
+  },
+  {
+    "u": 9991031,
+    "n": "Koichi Shido",
+    "t": 2,
+    "i": "https://i.imgur.com/HNaxk3jl.jpg",
+    "s": "https://i.imgur.com/HNaxk3j.jpg",
+    "w": "Highschool of the Dead",
+    "d": "",
+    "b": [
+      "M",
+      "cr",
+      "sc",
+      "tc",
+      "rl"
+    ],
+    "k": "Ruaron"
+  },
+  {
+    "u": 5016541,
+    "n": "Kohta Hirano",
+    "t": 2,
+    "i": "https://i.imgur.com/BSuBIkZl.png",
+    "s": "https://i.imgur.com/BSuBIkZ.png",
+    "w": "Highschool of the Dead",
+    "d": "",
+    "b": [
+      "M",
+      "sd",
+      "cc",
+      "nd"
+    ],
+    "k": "Ruaron"
+  },
+  {
+    "u": 2826286,
+    "n": "Hisashi Igou",
+    "t": 2,
+    "i": "https://i.imgur.com/WkGr6qTl.jpg",
+    "s": "https://i.imgur.com/WkGr6qT.jpg",
+    "w": "Highschool of the Dead",
+    "d": "",
+    "b": [
+      "M",
+      "sd"
+    ],
+    "k": "Ruaron"
+  },
+  {
+    "u": 2135621,
+    "n": "Yuriko Takagi",
+    "t": 2,
+    "i": "https://i.imgur.com/X0i2nlpl.jpg",
+    "s": "https://i.imgur.com/X0i2nlp.jpg",
+    "w": "Highschool of the Dead",
+    "d": "",
+    "b": [
+      "F",
+      "cl"
+    ],
+    "k": "Ruaron"
+  },
+  {
+    "u": 3283293,
+    "n": "Souichiro Takagi",
+    "t": 3,
+    "i": "https://i.imgur.com/pRHY05al.jpg",
+    "s": "https://i.imgur.com/pRHY05a.jpg",
+    "w": "Highschool of the Dead",
+    "d": "",
+    "b": [
+      "M",
+      "cl",
+      "rl"
+    ],
+    "k": "Ruaron"
+  },
+  {
+    "u": 8092269,
+    "n": "Kamen Rider Tsuki",
+    "t": 6,
+    "i": "__tsukuyomi_and_kamen_rider_tsukuyomi_kamen_rider_and_1_more_drawn_by_taro_ultrataro__0a1aa37990d41265c479242b336597f1.jpg",
+    "s": "https://cdn.donmai.us/original/0a/1a/__tsukuyomi_and_kamen_rider_tsukuyomi_kamen_rider_and_1_more_drawn_by_taro_ultrataro__0a1aa37990d41265c479242b336597f1.jpg",
+    "w": "Kamen Rider",
+    "d": "Kamen Rider Zi-O",
+    "b": [
+      "F",
+      "Henshin"
+    ],
+    "k": "A Certain Kamen Rider"
+  },
+  {
+    "u": 6047874,
+    "n": "White (Mary Macbeth)",
+    "t": 1,
+    "i": "__white_kekkai_sensen_drawn_by_ika_3660276__b1f015798b45f6dcea60193e8d84dceb.png",
+    "s": "https://cdn.donmai.us/original/b1/f0/__white_kekkai_sensen_drawn_by_ika_3660276__b1f015798b45f6dcea60193e8d84dceb.png",
+    "w": "Kekkai Sensen (Blood Blockade Battlefront)",
+    "d": "",
+    "b": [
+      "F",
+      "Ghost"
+    ],
+    "k": "CanvasRose"
+  },
+  {
+    "u": 3717013,
+    "n": "Leonardo Watch",
+    "t": 4,
+    "i": "__leonardo_watch_and_sonic_speed_monkey_kekkai_sensen_drawn_by_mura_karuki__e946d58a1ec783c159f795706f76a426.jpg",
+    "s": "https://cdn.donmai.us/original/e9/46/__leonardo_watch_and_sonic_speed_monkey_kekkai_sensen_drawn_by_mura_karuki__e946d58a1ec783c159f795706f76a426.jpg",
+    "w": "Kekkai Sensen (Blood Blockade Battlefront)",
+    "d": "",
+    "b": [
+      "M",
+      "di",
+      "cc"
+    ],
+    "k": "CanvasRose"
+  },
+  {
+    "u": 2410745,
+    "n": "Dolores",
+    "t": 5,
+    "i": "Dolores.%28The.King.of.Fighters%29.600.3614107.jpg",
+    "s": "https://s1.zerochan.net/Dolores.%28The.King.of.Fighters%29.600.3614107.jpg",
+    "w": "King of Fighters",
+    "d": "",
+    "b": [
+      "F",
+      "tc",
+      "ps"
+    ],
+    "k": "Maximiliano_R"
+  },
+  {
+    "u": 9398866,
+    "n": "Seijuro Akashi",
+    "t": 3,
+    "i": "-Akashi-Seijuurou-akashi-seijuro-kuroko-no-basuke-34208274-600-742.jpg",
+    "s": "https://images6.fanpop.com/image/photos/34200000/-Akashi-Seijuurou-akashi-seijuro-kuroko-no-basuke-34208274-600-742.jpg",
+    "w": "Kuroko's Basketball",
+    "d": "",
+    "b": [
+      "M",
+      "sd"
+    ],
+    "k": "CanvasRose"
+  },
+  {
+    "u": 3609455,
+    "n": "Riko Aida",
+    "t": 2,
+    "i": "S2p13b1L_400x400.jpg",
+    "s": "https://pbs.twimg.com/profile_images/1170387726492979203/S2p13b1L_400x400.jpg",
+    "w": "Kuroko's Basketball",
+    "d": "",
+    "b": [
+      "F",
+      "sd"
+    ],
+    "k": "CanvasRose"
+  },
+  {
+    "u": 6419614,
+    "n": "Alexandra Garcia",
+    "t": 3,
+    "i": "__alexandra_garcia_kuroko_no_basuke_drawn_by_kaiak425__sample-c4153d488e38c1245f952076cfe4e2d1.jpg",
+    "s": "https://cdn.donmai.us/sample/c4/15/__alexandra_garcia_kuroko_no_basuke_drawn_by_kaiak425__sample-c4153d488e38c1245f952076cfe4e2d1.jpg",
+    "w": "Kuroko's Basketball",
+    "d": "",
+    "b": [
+      "F",
+      "tc"
+    ],
+    "k": "CanvasRose"
+  },
+  {
+    "u": 3179255,
+    "n": "Shintaro Midorima",
+    "t": 3,
+    "i": "__midorima_shintarou_kuroko_no_basuke_drawn_by_aura_ion__sample-2d8fc60138afea936ddec5a1d0b1a229.jpg",
+    "s": "https://cdn.donmai.us/sample/2d/8f/__midorima_shintarou_kuroko_no_basuke_drawn_by_aura_ion__sample-2d8fc60138afea936ddec5a1d0b1a229.jpg",
+    "w": "Kuroko's Basketball",
+    "d": "",
+    "b": [
+      "M",
+      "sd"
+    ],
+    "k": "CanvasRose"
+  },
+  {
+    "u": 4076740,
+    "n": "Satsuki Momoi",
+    "t": 2,
+    "i": "__momoi_satsuki_kuroko_no_basuke__sample-34de952aad4e0820e338182be1d02c98.jpg",
+    "s": "https://cdn.donmai.us/sample/34/de/__momoi_satsuki_kuroko_no_basuke__sample-34de952aad4e0820e338182be1d02c98.jpg",
+    "w": "Kuroko's Basketball",
+    "d": "",
+    "b": [
+      "F",
+      "sd"
+    ],
+    "k": "CanvasRose"
+  },
+  {
+    "u": 8976201,
+    "n": "Ryota Kise",
+    "t": 3,
+    "i": "__kise_ryouta_kuroko_no_basuke_drawn_by_angellnight__7517b94fbeca164e847272754d855ed3.jpg",
+    "s": "https://cdn.donmai.us/original/75/17/__kise_ryouta_kuroko_no_basuke_drawn_by_angellnight__7517b94fbeca164e847272754d855ed3.jpg",
+    "w": "Kuroko's Basketball",
+    "d": "",
+    "b": [
+      "M",
+      "gn"
+    ],
+    "k": "CanvasRose"
+  },
+  {
+    "u": 7950767,
+    "n": "Lady Roma",
+    "t": 8,
+    "i": "Roma_from_X-Factor_Vol_1_119_0001.jpg",
+    "s": "https://static.wikia.nocookie.net/marveldatabase/images/2/2b/Roma_%28Otherworld%29_from_X-Factor_Vol_1_119_0001.jpg",
+    "w": "Marvel",
+    "d": "",
+    "b": [
+      "F",
+      "hp",
+      "me",
+      "el"
+    ],
+    "k": "User"
+  },
+  {
+    "u": 2104870,
+    "n": "Death",
+    "t": 11,
+    "i": "7194214285029e80311c10c8799c52093e0a54c2r1-640-800v2_hq.jpg",
+    "s": "https://pm1.narvii.com/7113/7194214285029e80311c10c8799c52093e0a54c2r1-640-800v2_hq.jpg",
+    "w": "Marvel",
+    "d": "",
+    "b": [
+      "F",
+      "hz",
+      "id",
+      "im",
+      "di",
+      "gd",
+      "rs",
+      "sr"
+    ],
+    "k": "Fetysh"
+  },
+  {
+    "u": 9370331,
+    "n": "Olivia Octavius",
+    "t": 5,
+    "i": "https://i.imgur.com/hFdiyMgl.jpg",
+    "s": "https://i.imgur.com/hFdiyMg.jpg",
+    "w": "Marvel",
+    "d": "",
+    "b": [
+      "F",
+      "en",
+      "sn",
+      "ev",
+      "gn",
+      "cc",
+      "vn"
+    ],
+    "k": "Mkaius"
+  },
+  {
+    "u": 9379751,
+    "n": "All-black",
+    "t": 10,
+    "i": "65e2a0cd87e7afd0a2686475e1d16c63.jpg",
+    "s": "https://i.pinimg.com/originals/65/e2/a0/65e2a0cd87e7afd0a2686475e1d16c63.jpg",
+    "w": "Marvel",
+    "d": "",
+    "b": [
+      "O",
+      "hl",
+      "st",
+      "hr",
+      "hz",
+      "bj",
+      "im",
+      "pl",
+      "ur",
+      "cr",
+      "sr"
+    ],
+    "k": "AusthinH7"
+  },
+  {
+    "u": 1529229,
+    "n": "Longshot",
+    "t": 5,
+    "i": "65dc25af6bd7be36e6257b66b7a90ecb.jpg",
+    "s": "https://i.pinimg.com/736x/65/dc/25/65dc25af6bd7be36e6257b66b7a90ecb.jpg",
+    "w": "Marvel (616)",
+    "d": "",
+    "b": [
+      "M",
+      "fm",
+      "th",
+      "mu"
+    ],
+    "k": "User"
+  },
+  {
+    "u": 1741448,
+    "n": "Hanten Shiranui",
+    "t": 10,
+    "i": "https://i.imgur.com/VQBsxaql.jpg",
+    "s": "https://i.imgur.com/VQBsxaq.jpg",
+    "w": "Medaka Box",
+    "d": "",
+    "b": [
+      "M",
+      "im",
+      "sd",
+      "Not Equal",
+      "Skill Creation"
+    ],
+    "k": "Ruaron"
+  },
+  {
+    "u": 7846744,
+    "n": "Ziva David",
+    "t": 3,
+    "i": "12e9af20db4f0ddec53c2f8e6d478ca1.jpg",
+    "s": "https://i.pinimg.com/564x/12/e9/af/12e9af20db4f0ddec53c2f8e6d478ca1.jpg",
+    "w": "N.C.I.S.",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "DRESDENFANatic"
+  },
+  {
+    "u": 8715564,
+    "n": "Romani Archaman",
+    "t": 2,
+    "i": "cf15e0f55c0c691ae11b45c488a7053be37f3a8f.jpg",
+    "s": "https://safebooru.org//images/3150/cf15e0f55c0c691ae11b45c488a7053be37f3a8f.jpg",
+    "w": "Nasuverse",
+    "d": "Fate/Grand Order",
+    "b": [
+      "M"
+    ],
+    "k": "Selias"
+  },
+  {
+    "u": 8954461,
+    "n": "Aris",
+    "t": 6,
+    "i": "https://i.imgur.com/B1T2cLxl.jpeg",
+    "s": "https://i.imgur.com/B1T2cLx.jpeg",
+    "w": "Noblesse",
+    "d": "",
+    "b": [
+      "F",
+      "dc",
+      "sn",
+      "ev",
+      "gn"
+    ],
+    "k": "CanvasRose"
+  },
+  {
+    "u": 4777543,
+    "n": "Erga Kenesis Di Raskreia",
+    "t": 6,
+    "i": "a241081d92a516b73d570c1b645b8809.jpg",
+    "s": "https://i.pinimg.com/originals/a2/41/08/a241081d92a516b73d570c1b645b8809.jpg",
+    "w": "Noblesse",
+    "d": "",
+    "b": [
+      "F",
+      "vp",
+      "rl"
+    ],
+    "k": "CanvasRose"
+  },
+  {
+    "u": 2684633,
+    "n": "Seira J. Loyard",
+    "t": 6,
+    "i": "wp8257083.jpg",
+    "s": "https://wallpapercave.com/wp/wp8257083.jpg",
+    "w": "Noblesse",
+    "d": "",
+    "b": [
+      "F",
+      "sd",
+      "cf",
+      "vp"
+    ],
+    "k": "CanvasRose"
+  },
+  {
+    "u": 9115291,
+    "n": "Frankenstein",
+    "t": 6,
+    "i": "5ca14809dc22a05ec1520f4b92d99ff1.jpg",
+    "s": "https://i.pinimg.com/originals/5c/a1/48/5ca14809dc22a05ec1520f4b92d99ff1.jpg",
+    "w": "Noblesse",
+    "d": "",
+    "b": [
+      "M",
+      "dc",
+      "mp",
+      "dr",
+      "sc",
+      "sn",
+      "tc",
+      "gn",
+      "cc"
+    ],
+    "k": "CanvasRose"
+  },
+  {
+    "u": 3634031,
+    "n": "Rai (Cadis Etrama Di Raizel)",
+    "t": 7,
+    "i": "https://i.imgur.com/Pi2sQzTl.jpg",
+    "s": "https://i.imgur.com/Pi2sQzT.jpg",
+    "w": "Noblesse",
+    "d": "",
+    "b": [
+      "M",
+      "cl",
+      "mp",
+      "vp"
+    ],
+    "k": "CanvasRose"
+  },
+  {
+    "u": 5104588,
+    "n": "Bishamonten",
+    "t": 6,
+    "i": "__bishamonten_noragami_drawn_by_steve_zheng__sample-27ca5094e15b3905c09b2c15f14fda8d.jpg",
+    "s": "https://cdn.donmai.us/sample/27/ca/__bishamonten_noragami_drawn_by_steve_zheng__sample-27ca5094e15b3905c09b2c15f14fda8d.jpg",
+    "w": "Noragami",
+    "d": "",
+    "b": [
+      "F",
+      "gd"
+    ],
+    "k": "CanvasRose"
+  },
+  {
+    "u": 3851687,
+    "n": "Kofuku Ebisu",
+    "t": 6,
+    "i": "Kofuku-Ebisu-Noragami-littlemissbook-39190347-355-756.png",
+    "s": "https://images6.fanpop.com/image/photos/39100000/Kofuku-Ebisu-Noragami-littlemissbook-39190347-355-756.png",
+    "w": "Noragami",
+    "d": "",
+    "b": [
+      "F",
+      "lm",
+      "gd"
+    ],
+    "k": "CanvasRose"
+  },
+  {
+    "u": 6914819,
+    "n": "Hiyori Iki",
+    "t": 4,
+    "i": "8ypjehz1n4971.png",
+    "s": "https://i.redd.it/8ypjehz1n4971.png",
+    "w": "Noragami",
+    "d": "",
+    "b": [
+      "F",
+      "sd"
+    ],
+    "k": "CanvasRose"
+  },
+  {
+    "u": 1008218,
+    "n": "Yato",
+    "t": 6,
+    "i": "__yato_noragami_drawn_by_instocklee__sample-4c63b0790a82d59add4e197d2c5db47e.jpg",
+    "s": "https://cdn.donmai.us/sample/4c/63/__yato_noragami_drawn_by_instocklee__sample-4c63b0790a82d59add4e197d2c5db47e.jpg",
+    "w": "Noragami",
+    "d": "",
+    "b": [
+      "M",
+      "ml",
+      "bj",
+      "im",
+      "gd",
+      "cc"
+    ],
+    "k": "CanvasRose"
+  },
+  {
+    "u": 7841485,
+    "n": "Queen Hiling",
+    "t": 4,
+    "i": "__hilling_ousama_ranking_drawn_by_wassnonnam__0b850c45c3200415b1fb95952fcf7b2b.jpg",
+    "s": "https://cdn.donmai.us/original/0b/85/__hilling_ousama_ranking_drawn_by_wassnonnam__0b850c45c3200415b1fb95952fcf7b2b.jpg",
+    "w": "Ranking of Kings",
+    "d": "",
+    "b": [
+      "F",
+      "hl",
+      "rl"
+    ],
+    "k": "dadude"
+  },
+  {
+    "u": 7531071,
+    "n": "Mia Winters",
+    "t": 2,
+    "i": "Tumblr_opq1ryTLHm1uq9trmo5_1280.jpg",
+    "s": "https://static.wikia.nocookie.net/residentevil/images/8/87/Tumblr_opq1ryTLHm1uq9trmo5_1280.jpg",
+    "w": "Resident Evil",
+    "d": "Resident Evil: Village",
+    "b": [
+      "F"
+    ],
+    "in": "https://peach.paheal.net/_images/80de25df5e9239957a25f790041c7fac/4442613%20-%20Mia_Winters%20Resident_Evil%20Resident_Evil_Village%20foulveins.jpg",
+    "k": "HistoricalHijinks"
+  },
+  {
+    "u": 7124922,
+    "n": "Elena Lupu",
+    "t": 2,
+    "i": "Elenaggg.jpg",
+    "s": "https://static.wikia.nocookie.net/residentevil/images/7/74/Elena_%28Village%29.jpg",
+    "w": "Resident Evil",
+    "d": "Resident Evil: The Village",
+    "b": [
+      "F"
+    ],
+    "in": "https://peach.paheal.net/_images/7c99e126932c29de60a31edd28b5f43d/4375793%20-%20Elena_Lupu%20Resident_Evil%20Resident_Evil_Village%20Varcolac%20alicecry.jpg",
+    "k": "HistoricalHijinks"
+  },
+  {
+    "u": 2012076,
+    "n": "Elrasla Grilaroc",
+    "t": 6,
+    "i": "Elrasla_Grilaroc_Default.jpg",
+    "s": "https://static.wikia.nocookie.net/the-rising-of-the-shield-hero/images/c/c3/Elrasla_Grilaroc_Default.jpg",
+    "w": "Rising of the Shield Hero",
+    "d": "",
+    "b": [
+      "F",
+      "st",
+      "dr",
+      "sc",
+      "az",
+      "lv",
+      "Fighter"
+    ],
+    "k": "irugaa0"
+  },
+  {
+    "u": 4954848,
+    "n": "Pisces Albafica",
+    "t": 7,
+    "i": "Pisces.Albafica.full.1573320.jpg",
+    "s": "https://static.zerochan.net/Pisces.Albafica.full.1573320.jpg",
+    "w": "Saint Seiya",
+    "d": "Gold Saints",
+    "b": [
+      "M"
+    ],
+    "k": "Sky"
+  },
+  {
+    "u": 6718101,
+    "n": "Aquarius Degel",
+    "t": 7,
+    "i": "Aquarius.Degel.full.1285642.jpg",
+    "s": "https://static.zerochan.net/Aquarius.Degel.full.1285642.jpg",
+    "w": "Saint Seiya",
+    "d": "Gold Saints",
+    "b": [
+      "M"
+    ],
+    "k": "Sky"
+  },
+  {
+    "u": 3705336,
+    "n": "Capricorn El Cid",
+    "t": 7,
+    "i": "Capricorn.El.Cid.full.1215154.jpg",
+    "s": "https://static.zerochan.net/Capricorn.El.Cid.full.1215154.jpg",
+    "w": "Saint Seiya",
+    "d": "Gold Saints",
+    "b": [
+      "M"
+    ],
+    "k": "Sky"
+  },
+  {
+    "u": 7122843,
+    "n": "Sagittarius Sysiphus",
+    "t": 7,
+    "i": "Sisyphus-sagittarius-sisyphus-29637432-400-574.png",
+    "s": "https://images5.fanpop.com/image/photos/29600000/Sisyphus-sagittarius-sisyphus-29637432-400-574.png",
+    "w": "Saint Seiya",
+    "d": "Gold Saints",
+    "b": [
+      "M"
+    ],
+    "k": "Sky"
+  },
+  {
+    "u": 4433095,
+    "n": "Scorpio Kardia",
+    "t": 7,
+    "i": "386e9a3cb8affb1fad294faa87760a3a25d4713f.jpg",
+    "s": "https://safebooru.org//images/514/386e9a3cb8affb1fad294faa87760a3a25d4713f.jpg",
+    "w": "Saint Seiya",
+    "d": "Gold Saints",
+    "b": [
+      "M"
+    ],
+    "k": "Sky"
+  },
+  {
+    "u": 1317413,
+    "n": "Virgo Asmita",
+    "t": 7,
+    "i": "Virgo.Asmita.full.1573323.jpg",
+    "s": "https://static.zerochan.net/Virgo.Asmita.full.1573323.jpg",
+    "w": "Saint Seiya",
+    "d": "Gold Saints",
+    "b": [
+      "M"
+    ],
+    "k": "Sky"
+  },
+  {
+    "u": 5339579,
+    "n": "Leo Regulus",
+    "t": 7,
+    "i": "30107a068f36af2350253ff6c6fd08d434350b9a.jpg",
+    "s": "https://safebooru.org//images/573/30107a068f36af2350253ff6c6fd08d434350b9a.jpg",
+    "w": "Saint Seiya",
+    "d": "Gold Saints",
+    "b": [
+      "M"
+    ],
+    "k": "Sky"
+  },
+  {
+    "u": 4547221,
+    "n": "Cancer Manigold",
+    "t": 7,
+    "i": "Cancer.Manigoldo.full.717586.jpg",
+    "s": "https://static.zerochan.net/Cancer.Manigoldo.full.717586.jpg",
+    "w": "Saint Seiya",
+    "d": "Gold Saints",
+    "b": [
+      "M"
+    ],
+    "k": "Sky"
+  },
+  {
+    "u": 5094279,
+    "n": "Gemini Defteros",
+    "t": 7,
+    "i": "f225e41b84969f2dae82f79796e463b2.jpg",
+    "s": "https://i.pinimg.com/originals/f2/25/e4/f225e41b84969f2dae82f79796e463b2.jpg",
+    "w": "Saint Seiya",
+    "d": "Gold Saints",
+    "b": [
+      "M"
+    ],
+    "k": "Sky"
+  },
+  {
+    "u": 5247571,
+    "n": "Taurus Rasgado",
+    "t": 7,
+    "i": "7aldebaran.jpg",
+    "s": "https://static.wikia.nocookie.net/saintseiya/images/d/d2/7aldebaran%28sec_XVIII%29.jpg",
+    "w": "Saint Seiya",
+    "d": "Gold Saints",
+    "b": [
+      "M"
+    ],
+    "k": "Sky"
+  },
+  {
+    "u": 9661286,
+    "n": "Aries Shion",
+    "t": 7,
+    "i": "78656d1f7016cb8271cc748bdb5e77c6.png",
+    "s": "https://safebooru.org//images/3049/78656d1f7016cb8271cc748bdb5e77c6.png",
+    "w": "Saint Seiya",
+    "d": "Gold Saints",
+    "b": [
+      "M"
+    ],
+    "k": "Sky"
+  },
+  {
+    "u": 5564866,
+    "n": "Yuji Sakai",
+    "t": 6,
+    "i": "https://i.imgur.com/SumEM73l.jpg",
+    "s": "https://i.imgur.com/SumEM73.jpg",
+    "w": "Shakugan no Shana",
+    "d": "",
+    "b": [
+      "M",
+      "st",
+      "dr",
+      "im",
+      "ur",
+      "dh",
+      "sd",
+      "me",
+      "sr",
+      "sa"
+    ],
+    "k": "Ruaron"
+  },
+  {
+    "u": 2948528,
+    "n": "Kazuya (Abel)",
+    "t": 10,
+    "i": "__protagonist_devil_survivor_drawn_by_tsumiki_syouyumame__c700959c3d4312a1702ba7bf72125cd2.jpg",
+    "s": "https://cdn.donmai.us/original/c7/00/__protagonist_devil_survivor_drawn_by_tsumiki_syouyumame__c700959c3d4312a1702ba7bf72125cd2.jpg",
+    "w": "Shin Megami Tensei",
+    "d": "Devil Survivor",
+    "b": [
+      "M",
+      "mt",
+      "cl",
+      "dm",
+      "rl"
+    ],
+    "k": "Free Time"
+  },
+  {
+    "u": 2368718,
+    "n": "Lily Bloommerchen",
+    "t": 7,
+    "i": "__lily_bloomerchen_soul_worker_drawn_by_bindong__sample-02bd44de3582504985341daf69ad63ac.jpg",
+    "s": "https://cdn.donmai.us/sample/02/bd/__lily_bloomerchen_soul_worker_drawn_by_bindong__sample-02bd44de3582504985341daf69ad63ac.jpg",
+    "w": "Soulworker",
+    "d": "",
+    "b": [
+      "F",
+      "hz"
+    ],
+    "k": "Big Wang"
+  },
+  {
+    "u": 9831319,
+    "n": "Stella Unibell",
+    "t": 6,
+    "i": "__stella_unibell_soul_worker_drawn_by_seero__sample-a8ae2ffbcf706b9d8ec90d295db50f09.jpg",
+    "s": "https://cdn.donmai.us/sample/a8/ae/__stella_unibell_soul_worker_drawn_by_seero__sample-a8ae2ffbcf706b9d8ec90d295db50f09.jpg",
+    "w": "Soulworker",
+    "d": "",
+    "b": [
+      "F",
+      "hl",
+      "mt",
+      "ar"
+    ],
+    "k": "Big Wang"
+  },
+  {
+    "u": 1482187,
+    "n": "Chii Aruel",
+    "t": 6,
+    "i": "__chii_aruel_soul_worker_drawn_by_kuki_panda_wkdwnsgk13__sample-fb0bb556535764ed8f17b3096114920f.jpg",
+    "s": "https://cdn.donmai.us/sample/fb/0b/__chii_aruel_soul_worker_drawn_by_kuki_panda_wkdwnsgk13__sample-fb0bb556535764ed8f17b3096114920f.jpg",
+    "w": "Soulworker",
+    "d": "",
+    "b": [
+      "F",
+      "mg"
+    ],
+    "k": "Big Wang"
+  },
+  {
+    "u": 6604228,
+    "n": "Ephnel",
+    "t": 6,
+    "i": "__ephnel_soul_worker_drawn_by_aliceblue__sample-d13289026886ab44b1cf4a00d10e97fe.jpg",
+    "s": "https://cdn.donmai.us/sample/d1/32/__ephnel_soul_worker_drawn_by_aliceblue__sample-d13289026886ab44b1cf4a00d10e97fe.jpg",
+    "w": "Soulworker",
+    "d": "",
+    "b": [
+      "F",
+      "ml",
+      "th"
+    ],
+    "k": "Big Wang"
+  },
+  {
+    "u": 8447674,
+    "n": "Mother Talzin",
+    "t": 6,
+    "i": "9cef5562b3a6231c2d8a5f64dd9f96dae32e6118r1-956-1500v2_hq.jpg",
+    "s": "https://pm1.narvii.com/7472/9cef5562b3a6231c2d8a5f64dd9f96dae32e6118r1-956-1500v2_hq.jpg",
+    "w": "Star Wars",
+    "d": "",
+    "b": [
+      "F",
+      "mp",
+      "di",
+      "wh",
+      "ps",
+      "cc",
+      "al"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 4173625,
+    "n": "Akiyama Tatsurou",
+    "t": 4,
+    "i": "Tatsurou_Akiyama.png",
+    "s": "https://static.wikia.nocookie.net/mahou-kaiju-series/images/0/04/Tatsurou_Akiyama_%28Tatsuya_vs._Hellbourne%29.png",
+    "w": "Taimanin",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Doddi"
+  },
+  {
+    "u": 3875601,
+    "n": "Fuuma Kotarou",
+    "t": 4,
+    "i": "Fuuma.Kotarou.600.3445428.jpg",
+    "s": "https://s1.zerochan.net/Fuuma.Kotarou.%28Tenkaichi%29.600.3445428.jpg",
+    "w": "Tenkaichi: Nihon Saikyou Bugeisha Ketteisen",
+    "d": "",
+    "b": [
+      "F",
+      "st"
+    ],
+    "k": "Maximiliano_R"
+  },
+  {
+    "u": 8559931,
+    "n": "Shirou Ashiya (Alsiel)",
+    "t": 7,
+    "i": "Ashiya.Shirou.full.1528814.jpg",
+    "s": "https://static.zerochan.net/Ashiya.Shirou.full.1528814.jpg",
+    "w": "The Devil Is a Part-Timer!",
+    "d": "",
+    "b": [
+      "M",
+      "dm",
+      "cf"
+    ],
+    "k": "CanvasRose"
+  },
+  {
+    "u": 4932461,
+    "n": "Miki Shiba",
+    "t": 9,
+    "i": "Shiba.Miki.full.1662770.jpg",
+    "s": "https://static.zerochan.net/Shiba.Miki.full.1662770.jpg",
+    "w": "The Devil Is a Part-Timer!",
+    "d": "",
+    "b": [
+      "F",
+      "an"
+    ],
+    "k": "CanvasRose"
+  },
+  {
+    "u": 7984582,
+    "n": "Chiho Sasaki",
+    "t": 2,
+    "i": "__sasaki_chiho_hataraku_maou_sama_drawn_by_ni_hoshi__5adffeb338f0dd7a998a61c308d261a9.png",
+    "s": "https://cdn.donmai.us/original/5a/df/__sasaki_chiho_hataraku_maou_sama_drawn_by_ni_hoshi__5adffeb338f0dd7a998a61c308d261a9.png",
+    "w": "The Devil Is a Part-Timer!",
+    "d": "",
+    "b": [
+      "F",
+      "sd"
+    ],
+    "k": "CanvasRose"
+  },
+  {
+    "u": 3182719,
+    "n": "Emi Yusa",
+    "t": 7,
+    "i": "__yusa_emi_hataraku_maou_sama_drawn_by_aya_roushi__sample-c9cbfd57cea9290251786c11a1a8fe23.jpg",
+    "s": "https://cdn.donmai.us/sample/c9/cb/__yusa_emi_hataraku_maou_sama_drawn_by_aya_roushi__sample-c9cbfd57cea9290251786c11a1a8fe23.jpg",
+    "w": "The Devil Is a Part-Timer!",
+    "d": "",
+    "b": [
+      "F",
+      "hp",
+      "mp",
+      "an"
+    ],
+    "k": "CanvasRose"
+  },
+  {
+    "u": 3762515,
+    "n": "Sadao Maou",
+    "t": 8,
+    "i": "__maou_sadao_hataraku_maou_sama_drawn_by_allenkung1__360812d0c8b8918f31d0267501749def.jpg",
+    "s": "https://cdn.donmai.us/original/36/08/__maou_sadao_hataraku_maou_sama_drawn_by_allenkung1__360812d0c8b8918f31d0267501749def.jpg",
+    "w": "The Devil Is a Part-Timer!",
+    "d": "",
+    "b": [
+      "M",
+      "mp",
+      "tm",
+      "dm",
+      "dv",
+      "me",
+      "sr",
+      "gn",
+      "rl",
+      "sa"
+    ],
+    "k": "CanvasRose"
+  },
+  {
+    "u": 3002506,
+    "n": "Kusuo Saiki",
+    "t": 10,
+    "i": "uwp1351478.png",
+    "s": "https://wallpapercave.com/uwp/uwp1351478.png",
+    "w": "The Disastrous Life of Saiki K.",
+    "d": "",
+    "b": [
+      "M",
+      "hl",
+      "cl",
+      "mp",
+      "tm",
+      "sd",
+      "ps",
+      "gn"
+    ],
+    "k": "CanvasRose"
+  },
+  {
+    "u": 5736977,
+    "n": "Penny Proud",
+    "t": 2,
+    "i": "155742-penny-1614367491.jpg",
+    "s": "https://hips.hearstapps.com/hmg-prod/images/155742-penny-1614367491.jpg",
+    "w": "The Proud Family",
+    "d": "",
+    "b": [
+      "F",
+      "mt",
+      "ml",
+      "sc",
+      "ar"
+    ],
+    "k": "oneye"
+  },
+  {
+    "u": 2837279,
+    "n": "Aurora de Martel",
+    "t": 5,
+    "i": "AuroradeMartel.png",
+    "s": "https://static.wikia.nocookie.net/the-vampire-diaries-originals-tv-series/images/4/4e/AuroradeMartel.png",
+    "w": "The Vampire Diaries",
+    "d": "The Originals",
+    "b": [
+      "F",
+      "mp",
+      "vp"
+    ],
+    "k": "exsailor1999"
+  },
+  {
+    "u": 2158792,
+    "n": "Jenna Sommers",
+    "t": 2,
+    "i": "Jenna2009.png",
+    "s": "https://static.wikia.nocookie.net/vampirediaries/images/7/74/Jenna2009.png",
+    "w": "The Vampire Diaries",
+    "d": "",
+    "b": [
+      "F",
+      "sc"
+    ],
+    "k": "exsailor1999"
+  },
+  {
+    "u": 6426962,
+    "n": "Charlotte",
+    "t": 5,
+    "i": "CharlotteS4.png",
+    "s": "https://static.wikia.nocookie.net/the-vampire-diaries-originals-tv-series/images/4/46/CharlotteS4.png",
+    "w": "The Vampire Diaries",
+    "d": "",
+    "b": [
+      "F",
+      "mp",
+      "vp"
+    ],
+    "k": "exsailor1999"
+  },
+  {
+    "u": 7234043,
+    "n": "Niklaus Mikaelson",
+    "t": 6,
+    "i": "https://i.imgur.com/gKgyZe0l.jpeg",
+    "s": "https://i.imgur.com/gKgyZe0.jpeg",
+    "w": "The Vampire Diaries",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "AnosDT"
+  },
+  {
+    "u": 6271917,
+    "n": "Jules",
+    "t": 4,
+    "i": "Screenshot_1365.jpg",
+    "s": "https://static.wikia.nocookie.net/vampirediaries/images/0/00/Screenshot_1365.jpg",
+    "w": "The Vampire Diaries",
+    "d": "",
+    "b": [
+      "F",
+      "cl",
+      "sr",
+      "rl"
+    ],
+    "k": "exsailor1999"
+  },
+  {
+    "u": 6199312,
+    "n": "Mary Alice Claire",
+    "t": 4,
+    "i": "TO-S2-Mary-Alice.png",
+    "s": "https://static.wikia.nocookie.net/vampirediaries/images/f/fb/TO-S2-Mary-Alice.png",
+    "w": "The Vampire Diaries",
+    "d": "The Originals",
+    "b": [
+      "F",
+      "mp",
+      "di",
+      "wh"
+    ],
+    "k": "exsailor1999"
+  },
+  {
+    "u": 4522295,
+    "n": "Kamijou Touma",
+    "t": 4,
+    "i": "https://i.imgur.com/iuVGeM4l.jpeg",
+    "s": "https://i.imgur.com/iuVGeM4.jpeg",
+    "w": "To Aru series",
+    "d": "AC students",
+    "b": [
+      "M",
+      "sd"
+    ],
+    "k": "ChibikingSai"
+  },
+  {
+    "u": 1270332,
+    "n": "Judecca",
+    "t": 7,
+    "i": "a1161b2c244e9aecbdfaf685d9a75748.jpg",
+    "s": "https://i.pinimg.com/originals/a1/16/1b/a1161b2c244e9aecbdfaf685d9a75748.jpg",
+    "w": "Trinity Seven",
+    "d": "",
+    "b": [
+      "F",
+      "hz",
+      "cl",
+      "ur",
+      "cr",
+      "sc",
+      "Living Weapon"
+    ],
+    "k": "AusthinH7"
+  },
+  {
+    "u": 4905983,
+    "n": "Disidra Stormglory",
+    "t": 6,
+    "i": "Vaakia.jpg",
+    "s": "https://static.wikia.nocookie.net/wowpedia/images/c/c2/Vaakia.jpg",
+    "w": "Warcraft",
+    "d": "Azeroth",
+    "b": [
+      "F"
+    ],
+    "in": "https://tulip.paheal.net/_images/323b97e378c4f203dcb792a61b375720/4422507%20-%20Aramyx%20Ishanah%20Warcraft%20World_of_Warcraft%20draenei.jpg",
+    "k": "HistoricalHijinks"
+  },
+  {
+    "u": 8727508,
+    "n": "M'shen",
+    "t": 6,
+    "i": "a0ff1b38d56945a9ee4237e3ea78f986.jpg",
+    "s": "https://i.pinimg.com/originals/a0/ff/1b/a0ff1b38d56945a9ee4237e3ea78f986.jpg",
+    "w": "Warhammer 40K",
+    "d": "",
+    "b": [
+      "F",
+      "st",
+      "hz",
+      "cl",
+      "bj",
+      "sr"
+    ],
+    "k": "AusthinH7"
   }
 ]

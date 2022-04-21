@@ -15,7 +15,7 @@ import type { PropType } from '@vue/runtime-core'
 defineProps({
   label: {
     type: String,
-    default: 'Default',
+    default: '',
   },
   bgColor: {
     type: String,

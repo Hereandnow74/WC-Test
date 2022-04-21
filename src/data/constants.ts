@@ -12,7 +12,7 @@ import { DLCwaifu_perks, waifu_perks } from '~/data/waifu_perks'
 
 import { useStore } from '~/store/store'
 
-const { userWorlds, localUserWorlds } = useStore()
+const { userWorlds, localUserWorlds, localUserCharacters } = useStore()
 
 export const WORLD_COLORS = ['bg-green-600', 'bg-teal-600', 'bg-cyan-600',
   'bg-blue-500', 'bg-indigo-500', 'bg-purple-500', 'bg-amber-600',
@@ -320,6 +320,8 @@ const allCharsObject = {} as Record<number, DBCharacter>
 export const getAllCharsObject = async() => {
   if (!allCharsObject[0])
     [...(await getAllChars())].forEach(x => allCharsObject[x.u] = x)
+  if (localUserCharacters.value.length)
+    localUserCharacters.value.forEach(x => allCharsObject[x.uid] = { u: x.uid, n: x.name, w: x.world, t: x.tier, d: x.sub, b: x.tags, i: x.image, in: x.image_nsfw })
 
   return allCharsObject
 }
