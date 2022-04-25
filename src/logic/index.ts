@@ -1,5 +1,5 @@
 import { initializeApp } from 'firebase/app'
-import { getFirestore, collection, addDoc, doc, getDoc } from 'firebase/firestore/lite'
+import { getFirestore, collection, addDoc, doc, getDoc, runTransaction } from 'firebase/firestore/lite'
 
 export * from './toggles'
 export * from './misc'
@@ -95,7 +95,24 @@ export function sendStats(statsData: any, callback: any) {
     addDoc(collection(db, 'stats'), statsData).then(callback)
   }
   catch (e) {
-    console.error('Error while sharing a link: ', e)
+    console.error('Error while sending stats: ', e)
+  }
+}
+
+export async function sendCount() {
+  const docRef = doc(db, 'stats2', 'count')
+  try {
+    await runTransaction(db, async(transaction) => {
+      const sfDoc = await transaction.get(docRef)
+      if (!sfDoc.exists())
+        throw 'Document does not exist!'
+
+      // const newPopulation = sfDoc.data().population + 1
+      transaction.update(docRef, { count: sfDoc.data().count + 1 })
+    })
+  }
+  catch (e) {
+    console.error('Transaction failed: ', e)
   }
 }
 

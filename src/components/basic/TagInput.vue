@@ -31,7 +31,7 @@
           class="hover:bg-gray-600 cursor-pointer border-b border-gray-600 pb-1 px-1"
           @click="addTag(option.item.tag)"
         >
-          {{ option.item.tag }}
+          <span class="font-semibold pr-2">{{ option.item.tag }}</span>
           <span v-if="option.item.desc" class="text-gray-300">{{ option.item.desc }}</span>
         </div>
       </div>

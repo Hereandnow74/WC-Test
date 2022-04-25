@@ -86,9 +86,9 @@
         v-for="pt in patrons"
         :key="pt.title"
         :perk="pt"
-        :bg="!(patron.length && patron[0].title != pt.title) ? 'purple-100 dark:(purple-400 opacity-15) hover:(light-300 dark:purple-600 dark:opacity-15)'
+        :bg="patronAvailable(pt) ? 'purple-100 dark:(purple-400 opacity-15) hover:(light-300 dark:purple-600 dark:opacity-15)'
           : 'gray-200 dark:gray-600'"
-        :is-active="!!(patron.length && patron[0].title === pt.title)"
+        :is-active="findIndex(patron, { title: pt.title }) !== -1"
         @pickPerk="choosePatron"
       />
     </div>
@@ -96,6 +96,7 @@
 </template>
 
 <script lang='ts' setup>
+import { findIndex } from 'lodash'
 import { CHAR_COSTS } from '~/data/constants'
 import { desc, origin, Origin } from '~/data/origin'
 import { confirmDialog } from '~/logic/dialog'
@@ -171,10 +172,24 @@ function clearOrigin() {
 }
 
 function choosePatron(pt: typeof patrons[0], saveInfo: {title: string; cost: number}) {
-  if (patron.value.length)
-    patron.value.splice(0)
-  else
+  if (!patronAvailable(pt)) return
+  const ind = findIndex(patron.value, { title: pt.title })
+  if (ind !== -1) {
+    if (pt.effect) pt.effect.remove()
+    patron.value.splice(ind, 1)
+  }
+  else {
+    if (pt.effect) pt.effect.set()
     patron.value.push(saveInfo)
+  }
+}
+
+function patronAvailable(pt: typeof patrons[0]) {
+  let numOfPatrons = 1
+  if (patron.value.length && patron.value[0].title === 'Archdeity of Eternity')
+    numOfPatrons = 2
+
+  return (patron.value.length < numOfPatrons) || (findIndex(patron.value, { title: pt.title }) !== -1)
 }
 
 </script>

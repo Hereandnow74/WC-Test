@@ -1837,10 +1837,7 @@
     "worldName": "History's Strongest Disciple Kenichi",
     "rating": 5
   },
-  {
-    "worldName": "Magical Girl Spec-Ops Asuka",
-    "rating": 7
-  },
+  {"worldName":"Magical Girl Spec-Ops Asuka","rating":8,"condition":[{"name":"2020, Canon Start","rating":7},{"rating":8,"name":"2016 Jan, Disas Invasion"}]},
   {
     "worldName": "Mermaid Melody",
     "rating": 3,
@@ -2520,5 +2517,12 @@
   {"worldName":"Hyperdimension Neptunia","rating":8,"image":"https://oyster.ignimgs.com/wordpress/stg.ign.com/2014/09/HDNRebirth_091014_1600.jpg","additional":"Visiting the setting or having any waifu from Neptunia will give you access to its leveling systems."},
   {"worldName":"Kengan Ashura","rating":5},
   {"worldName":"Subverse","rating":6},
-  {"worldName":"The Gamer","rating":8}
+  {"worldName":"The Gamer","rating":8},
+  {"worldName":"God Eater","rating":10,"image":"https://i.pinimg.com/originals/d4/80/b4/d480b49e8927e2234d8d6c80d251c299.jpg"},
+  {"worldName":"Hercules/Xena","rating":6},
+  {"worldName":"Jagaaaaaan","rating":6,"additional":"Fractured Human weaknesses are removed and they can now shift forms at will.<bg>Frenzied Frog and its variants are all considered Familiars."},
+  {"worldName":"Library of Ruina","rating":6,"image":"https://www.gameinformer.com/sites/default/files/styles/full/public/2021/08/17/653f6706/library-of-ruina.jpg","additional":"E.G.O. is enhanced by Psychic Talent, not Soul Talent.","condition":[{"name":"Before the White Nights and Dark days","rating":6},{"rating":7,"name":"Library already a Star of the City"}]},
+  {"worldName":"Otoyomegatari","rating":3,"image":"https://i0.wp.com/anitrendz.net/news/wp-content/uploads/2022/02/A-Brides-Story-e1644307744648.jpg"},
+  {"worldName":"Soulworker","rating":8,"image":"https://honeysanime.com/wp-content/uploads/2021/09/soulworker_splash.jpg","condition":[{"rating":9,"name":"The Great Void"},{"rating":8,"name":"Character's Worlds"},{"name":"Merged Worlds","rating":9}]},
+  {"worldName":"Twin Star Exorcists","rating":5,"additional":"Resistance/Immunity to the Yin aura of Magano is granted by the Wyldscape Defense perk.","condition":[{"name":"Anime Timeline","rating":5}]}
 ]

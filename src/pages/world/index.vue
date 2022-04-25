@@ -39,26 +39,12 @@
       <span class="hidden md:block whitespace-nowrap">Results: {{ worldsFiltered.length }}</span>
       <Button size="Small" label="Add World" class="whitespace-nowrap" @click="() => (editMode = false, toggleShowAddWorld())" />
     </div>
-    <!-- <Foldable v-if="allUserWorlds.length" class="text-lg mb-2" title="Your Worlds">
-      <div class="mb-4 flex flex-wrap gap-1 overflow-y-auto">
-        <WorldCard
-          v-for="world in allUserWorlds"
-          :key="world.worldName"
-          :world="world"
-          :is-user-world="true"
-          class="max-w-sm"
-          type="user"
-          @edit-world="editWorld"
-        />
-      </div>
-    </Foldable> -->
     <div class="grid grid-cols-1 grid-flow-row-dense 4xl:grid-cols-6 5xl:grid-cols-7 xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-1 overflow-y-auto pb-8">
       <WorldCard
         v-for="world in worldsFiltered"
         :key="world.key"
         :world="world"
         :type="world.type"
-        :is-user-world="world.type === 'local'"
         :class="{'row-span-2 min-h-72': world.image && !settings.allImg, 'sm:col-span-2': world.additional, 'sm:row-span-4': world.image && world.additional && !settings.allImg}"
         class="w-full"
         @edit-world="editWorld"
@@ -67,22 +53,6 @@
         <p>No worlds found.</p>
       </div>
     </div>
-    <!-- <Foldable v-if="userWorldsFiltered.length" class="text-lg mb-2" title="Worlds submitted by Users" :is-open="true">
-      <div class="grid grid-cols-1 grid-flow-row-dense xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-2 overflow-y-auto pb-8">
-        <WorldCard
-          v-for="world in userWorldsFiltered"
-          :key="world.worldName"
-          :world="world"
-          class="w-full"
-          type="user"
-          :class="{'row-span-2 min-h-72': world.image && !settings.allImg, 'sm:col-span-2': world.additional, 'sm:row-span-4': world.image && world.additional && !settings.allImg}"
-          @edit-world="editWorld"
-        />
-        <div v-if="!worldsFiltered.length" class="text-center flex-grow">
-          <p>No worlds found.</p>
-        </div>
-      </div>
-    </Foldable> -->
     <AddWorld v-if="showAddWorld" :world="worldToEdit" :edit-mode="editMode" @click="toggleShowAddWorld()" />
   </div>
 </template>

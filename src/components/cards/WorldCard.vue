@@ -3,7 +3,7 @@
     class="rounded cursor-pointer flex-grow text-gray-100 text-shadow flex flex-col gap-1 pb-2"
     border="2 gray-400 hover:orange-600"
     :class="world.worldName === startingWorld.worldName || startingWorld.worldName === 'Current world' || !pickAble ?
-      WORLD_COLORS[world.rating - 1] || 'bg-gray-600' : 'bg-gray-600'"
+      WORLD_COLORS[rating - 1] || 'bg-gray-600' : 'bg-gray-600'"
     @click="pickAbleAfter ? pickWorld(world) : null"
   >
     <div v-if="world.image && !settings.allImg" class="flex-grow relative min-h-[170px]">
@@ -16,17 +16,16 @@
     </div>
     <h3 class="text-xl text-center bg-black bg-opacity-20 flex items-center px-2">
       <span class="font-semibold cursor-help" :title="types[type].title || ''" :class="types[type].color || 'text-gray-100'">{{ world.worldName }}</span>
-      <!-- <span class="pl-2">[<span class="text-gray-300 whitespace-nowrap">By User</span>]</span> -->
       <bx:bxs-edit class="ml-auto hover:text-yellow-600" @click.stop="$emit('editWorld', world)" />
-      <fluent:delete-20-filled v-if="isUserWorld" class="hover:text-red-500 ml-2" @click.stop="deleteWorld" />
+      <fluent:delete-20-filled v-if="type === 'local'" class="hover:text-red-500 ml-2" @click.stop="deleteWorld" />
     </h3>
     <div class="flex gap-4 justify-between text-gray-200 px-2">
       <div>
-        Rating: <span class="text-amber-200 font-medium">{{ world.rating || 'Unknown' }}</span>
+        Rating: <span class="text-amber-200 font-medium">{{ rating }}</span>
         <span v-if="world.q" class="text-red-400 cursor-help font-bold hover:text-red-300" @click.stop="showInfo">?</span>
       </div>
       <div>
-        Budget: <span class="text-green-200 font-medium">{{ WORLD_RATINGS[world.rating - 1]?.budget || 'None' }}</span>
+        Budget: <span class="text-green-200 font-medium">{{ WORLD_RATINGS[rating - 1]?.budget || 'None' }}</span>
       </div>
     </div>
     <div v-if="world.condition && isArray(world.condition)" class="mx-2 flex gap-2">
@@ -68,16 +67,12 @@ const props = defineProps({
     type: Object as PropType<World>,
     default: () => {},
   },
-  isUserWorld: {
-    type: Boolean,
-    default: false,
-  },
   pickAble: {
     type: Boolean,
     default: true,
   },
   type: {
-    type: String as PropType<'canon' | 'user'>,
+    type: String as PropType<'canon' | 'user' | 'local'>,
     default: 'canon',
   },
 })
@@ -108,11 +103,9 @@ const condition = reactive({
   rating: 0,
 })
 
-// const startCond = props.world.condition && props.world.condition.length === 1 && props.world.rating === props.world.condition[0].rating ? props.world.condition[0].name : 'No condition'
-
-const baseDR = props.world.rating
-
 const worldImg = ref<HTMLImageElement | null>(null)
+
+const rating = computed(() => condition.rating || props.world.rating)
 
 function pickWorld(world: World) {
   if (startingWorld.value.worldName === world.worldName
@@ -140,11 +133,10 @@ function changeCondition(event: any) {
   if (ind !== -1) {
     condition.name = name
     condition.rating = props.world.condition[ind].rating
-    props.world.rating = condition.rating
   }
   else {
-    props.world.rating = baseDR
     condition.name = 'No condition'
+    condition.rating = 0
   }
 }
 

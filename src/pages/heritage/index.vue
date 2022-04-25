@@ -9,16 +9,20 @@
       <Desc :desc="desc" class="p-2 bg-violet-200 dark:bg-violet-900" />
     </div>
     <div class="flex gap-x-4 gap-y-2 gap flex-wrap justify-center mb-4">
-      <div
+      <template
         v-for="tree in Object.keys(heritageByTree) as 'Dragon'[]"
         :key="tree"
-        class="px-2 py-1 border-2 rounded cursor-pointer hover:border-orange-400"
-        :class="activeTree === tree ? 'border-orange-400': ''"
-        @click="activeTree = tree"
       >
-        <h3>{{ tree }}</h3>
-        <div>Total perks: <span v-if="heritageCounts[tree]">{{ heritageCounts[tree] }} /</span> <span>{{ heritageByTree[tree].length }}</span></div>
-      </div>
+        <div
+          v-if="heritageByTree[tree].length"
+          class="px-2 py-1 border-2 rounded cursor-pointer hover:border-orange-400"
+          :class="activeTree === tree ? 'border-orange-400': ''"
+          @click="activeTree = tree"
+        >
+          <h3>{{ tree }}</h3>
+          <div>Total perks: <span v-if="heritageCounts[tree]">{{ heritageCounts[tree] }} /</span> <span>{{ heritageByTree[tree].length }}</span></div>
+        </div>
+      </template>
     </div>
     <div class="hidden column-count-2 column-count-3 column-count-4 column-count-5"></div>
     <div
@@ -126,7 +130,7 @@ const heritageColors = {
   Dragon: 'bg-purple-200 dark:bg-purple-900 hover:(bg-purple-300 dark:bg-purple-800)',
   Transhuman: 'bg-cyan-200 dark:bg-cyan-900 hover:(bg-cyan-300 dark:bg-cyan-800)',
   Outsider: 'bg-fuchsia-200 dark:bg-fuchsia-900 hover:(bg-fuchsia-300 dark:bg-fuchsia-800)',
-  None: 'bg-warm-gray-200 dark:bg-warm-gray-700 hover:(bg-warm-gray-100 dark:bg-warm-gray-800)',
+  None: 'bg-warm-gray-200 dark:bg-warm-gray-800 hover:(bg-warm-gray-100 dark:bg-warm-gray-900)',
 }
 const activeTree = ref<'Dragon' | 'Transhuman' | 'Outsider'>('Dragon')
 
@@ -139,8 +143,9 @@ const heritageByTree = computed(() => {
     Dragon: [] as Heritage[],
     Transhuman: [] as Heritage[],
     Outsider: [] as Heritage[],
+    Other: [] as Heritage[],
   }
-  heritages.value.forEach(x => x.tree !== 'None' ? res[x.tree].push(x) : null)
+  heritages.value.forEach(x => x.tree && x.tree !== 'None' ? res[x.tree].push(x) : x.tree ? null : res.Other.push(x))
   return res
 })
 
@@ -160,7 +165,7 @@ else
 
 onMounted(() => useTooltips())
 
-watch(activeTree, useTooltips, { flush: 'p' })
+watch(activeTree, useTooltips, { flush: 'post' })
 
 onBeforeRouteUpdate((to, from, next) => {
   if (to.query.q)

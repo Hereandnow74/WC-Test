@@ -82,12 +82,16 @@ const companionsCost = computed(() => {
 
 const { activeChallenges } = useChallenges()
 
+const manualKf = ref(0)
+const manualSellKf = ref(0.2)
+const manualReturnKf = ref(0.8)
+
 const captureKoeff = computed(() => {
   let kf = 0.6
   if (findIndex(intensities.value, { title: 'Cash Still Rules' }) !== -1) kf = 0.8
   if (findIndex(activeChallenges.value, { title: 'Waifu Manager' }) !== -1) kf = 0.8
   if (findIndex(intensities.value, { title: 'Wage Slave' }) !== -1) kf = 0
-  return kf
+  return manualKf.value || kf
 })
 
 const companionProfit = computed(() => {
@@ -96,7 +100,7 @@ const companionProfit = computed(() => {
       if (x.method === 'capture' && x.priceTier !== 11) {
         if (x.price === undefined) {
           let captureCost = Math.ceil(CHAR_COSTS[x.priceTier] * captureKoeff.value)
-          captureCost = captureCost < 1 ? 1 : captureCost
+          captureCost = Math.max(1, captureCost)
           return a += captureCost
         }
         else { return a += x.price }
@@ -111,11 +115,11 @@ const companionProfitSold = computed(() => {
     ? companions.value.reduce((a, x) => {
       if (x.sold && x.tier !== 11 && ['capture'].includes(x.method)) {
         if (x.soldPrice === undefined)
-          return a += Math.round(CHAR_COSTS[x.tier] * 0.2)
+          return a += Math.round(CHAR_COSTS[x.tier] * manualSellKf.value)
         else return a += x.soldPrice
       }
       if (x.sold && x.priceTier !== 11 && ['buy', 'used', 'yoink'].includes(x.method))
-        return a += Math.round(CHAR_COSTS[x.priceTier] * 0.8)
+        return a += Math.round(CHAR_COSTS[x.priceTier] * manualReturnKf.value)
       return a
     }, 0)
     : 0
@@ -417,5 +421,7 @@ export function useStore() {
     patron,
     collapsedDescs,
     collapsedDescsSet,
+    manualKf,
+    manualSellKf,
   }
 }

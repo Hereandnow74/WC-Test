@@ -71,7 +71,7 @@ function onePull() {
 
 const companionsUIDs = computed(() => new Set(companions.value.map(x => x.uid)))
 
-async function getRandomChar(fixedTier = 0) {
+async function getRandomChar(fixedTier = 0): Promise<number> {
   isRevealing.value = false
   let tier = 0
   if (fixedTier === 0) {
@@ -82,8 +82,8 @@ async function getRandomChar(fixedTier = 0) {
     })
   }
   else { tier = fixedTier }
-  const val = CHAR_COSTS[tier + 1] || 0
-  const x = await randomChar(true, val, 1)
+  const val = CHAR_COSTS[tier + 1] || 1
+  const x = await randomChar(true, val, val)
   if (companionsUIDs.value.has(x.u))
     return getRandomChar(fixedTier)
   chars.value.push(x)

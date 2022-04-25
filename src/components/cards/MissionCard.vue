@@ -27,8 +27,8 @@
         </li>
       </ul>
     </div>
-    <div class="px-2 flex gap-2">
-      <h4 class="text-green-800 dark:text-green-300">
+    <div class="px-2">
+      <h4 class="text-green-800 dark:text-green-300 float-left pr-2">
         Reward:
       </h4>
       <span>{{ mission.reward }}</span>

@@ -143,7 +143,7 @@ const submittedPerk = computed(() => {
 const localPerksExist = computed(() => Object.values(localPerks.value).some(x => x.length))
 
 const addPerk = handleSubmit((values) => {
-  proposePerk({ ...values, subDate: new Date().toString() }, () => successMessage.value = 'Perk was send successfully, await until I review and add it')
+  proposePerk({ ...values, date: new Date().toString() }, () => successMessage.value = 'Perk was send successfully, await until I review and add it')
   buttonActive.value = false
   setTimeout(() => { buttonActive.value = true; successMessage.value = ''; errorMessage.value = '' }, 30 * 1000)
 })

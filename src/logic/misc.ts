@@ -1,5 +1,5 @@
 import Fuse from 'fuse.js'
-import { random, groupBy, sampleSize, findIndex, sample } from 'lodash-es'
+import { random, groupBy, sampleSize, findIndex, sample, isNumber } from 'lodash-es'
 import tippy from 'tippy.js'
 import { DBWorld } from 'global'
 import { allWorldsNoCondition, ALL_DLC_PERK_TITLES, CHAR_COSTS, getAllChars } from '~/data/constants'
@@ -65,8 +65,7 @@ export async function randomChar(withImg: boolean, maxCost = 0, minCost = 0, gen
 
     return res
   })
-  const randomNumber = random(0, chars.length)
-
+  const randomNumber = random(0, chars.length - 1)
   return chars[randomNumber]
 }
 
@@ -166,6 +165,11 @@ export async function clearBuild() {
   clearAll()
 }
 
+function squreType(string: string, type = 'text') {
+  const color = isNumber(string) ? '#277016' : '#52106e'
+  return type === 'text' ? `[${string}]` : `[color=#333333][[color=${color}]${string}[/color]][/color]`
+}
+
 function buildString(title: string, items: Perk[], left: object) {
   let str = `${title}\n`
   items.forEach((x) => {
@@ -180,16 +184,16 @@ function buildString(title: string, items: Perk[], left: object) {
     if (x.complex) {
       if (x.complex[0].flavor && x.complex[0].target) {
         let pw = ''
-        if (x.title === 'OC Donut Steel') pw = ' powers'
+        if (['OC Donut Steel', 'Power Swap'].includes(x.title)) pw = ' powers'
         const grouped = groupBy(x.complex, c => c.target)
-        complexBoth = `[${Object.entries(grouped)
+        complexBoth = squreType(`${Object.entries(grouped)
           .map(x => `${x[0]} has ${x[1]
-            .map(f => f.flavor).join(', ')}${pw}`).join(', ')}]`
+            .map(f => f.flavor).join(', ')}${pw}`).join(', ')}`)
       }
       if (x.complex[0].flavor)
-        complexFlavor = `[${x.complex.map(x => `${x.flavor}`).join(', ')}]`
+        complexFlavor = squreType(`${x.complex.map(x => `${x.flavor}`).join(', ')}`)
       if (x.complex[0].target)
-        complexCompanion = `[${x.complex.map(x => `${x.target}`).join(', ')}]`
+        complexCompanion = squreType(`${x.complex.map(x => `${x.target}`).join(', ')}`)
     }
     str += `${x.title}${dlc}${count}${complexBoth || complexCompanion || complexFlavor} ${x.cost ? `-${x.cost}` : 'free'} [${left.c}]\n`
   })

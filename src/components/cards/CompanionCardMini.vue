@@ -112,7 +112,7 @@
           />
           <Button
             v-if="['capture'].includes(char.method)"
-            :label="`sell ${char.tier === 11 ? '1 ticket' : Math.floor(CHAR_COSTS[char.tier] * 0.2) + 'c'}`"
+            :label="`sell ${char.tier === 11 ? '1 ticket' : Math.floor(CHAR_COSTS[char.tier] * manualSellKf) + 'c'}`"
             size="Small"
             bg-color="bg-red-500"
             @click="sellCompanion(char.uid)"
@@ -165,7 +165,7 @@ const methods = {
   you: 'It\'s you',
 }
 
-const { flags, settings } = useStore()
+const { flags, settings, manualSellKf } = useStore()
 
 const emit = defineEmits(['sell', 'undo', 'free'])
 

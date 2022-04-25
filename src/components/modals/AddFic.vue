@@ -99,7 +99,7 @@ const { value: status } = useField<string>('status')
 const { value: tags } = useField<string[]>('tags')
 
 const addPerk = handleSubmit((values) => {
-  proposeFic({ ...values, date: new Date().toString() }, () => successMessage.value = 'Succssesfully proposed a fic to the list, wait until I will add it')
+  proposeFic({ ...values, subDate: new Date().toString() }, () => successMessage.value = 'Succssesfully proposed a fic to the list, wait until I will add it')
   buttonActive.value = false
   setTimeout(() => { buttonActive.value = true; successMessage.value = ''; errorMessage.value = '' }, 30 * 1000)
   toggleAddFic()

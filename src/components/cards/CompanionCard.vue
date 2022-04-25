@@ -34,7 +34,7 @@
               @click="yoinkCompanion"
             />
             <Button v-if="charData.tier !== 11" size="Small" bg-color="bg-violet-600" label="used" @click="usedModal = true" />
-            <Button size="Small" label="capture" @click="captureCompanion" />
+            <Button size="Small" :label="`capture${charCost}`" @click="captureCompanion" />
           </template>
           <Button v-else-if="flags.chargen" size="Small" label="undo" @click="undoBuying(charData.uid)" />
         </div>
@@ -205,6 +205,8 @@ const charData = computed(() => {
   if (!res.uid) res.uid = random(10000000, 99999999)
   return res
 })
+
+const charCost = computed(() => charData.value.tier === 11 ? '' : ` ${Math.ceil(CHAR_COSTS[charData.value.tier] * captureKoeff.value)}c`)
 
 const tags = computed(() => {
   return charData.value.tags.map(x => waifuTags[x] ? waifuTags[x] : { tag: x, color: 'bg-teal-600', desc: '' })

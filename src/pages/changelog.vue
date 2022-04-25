@@ -5,6 +5,17 @@
     </h2>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
+        23 April 2022
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>~150 new user submitted characters</li>
+        <li>Some work done on Patrons</li>
+        <li>7 new worlds, 3 new missions</li>
+        <li>Bugfixes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
         20 April 2022
       </h3>
       <ul class="list-decimal list-inside">
