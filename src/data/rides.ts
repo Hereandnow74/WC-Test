@@ -74,7 +74,7 @@ rides.push({
 
 rides.push({
   uid: 'iuKHT',
-  title: 'Kaneda',
+  title: 'Kaneda’s Bike',
   source: 'Akira',
   category: 'Land',
   size: 'Small',

@@ -204,7 +204,7 @@ export function copyText() {
   const fullCost = { c: baseBudget.value === 11111 ? 0 : baseBudget.value }
   if (csr.value) fullCost.c = 0
 
-  let full = `Starting World: ${startingWorld.value.worldName}\nStarting budget ${fullCost.c}\n\n`
+  let full = `Starting World: ${startingWorld.value.worldName}${startingWorld.value.condition ? ` [${startingWorld.value.condition}]` : ''}\nStarting budget ${fullCost.c}\n\n`
 
   full += loan.value.gained > 0 ? `Took a loan for ${loan.value.gained} credits\n\n` : ''
   fullCost.c += loan.value.gained

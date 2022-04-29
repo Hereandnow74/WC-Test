@@ -71,7 +71,7 @@ export const challenges = [
     dlc: 'Om1cr0n',
     cost: 0,
     desc: `
-    <p>All bindings work only on unconsciousness defeated by you waifus/husbandos, binding will happen after 3s of continuous application regardless of previous requirements.</p>
+    <p>All bindings will work only on unconsciousness and defeated by you waifus/husbandos, binding will happen after 3s of continuous application regardless of previous requirements.</p>
     `,
   },
   {
@@ -79,10 +79,12 @@ export const challenges = [
     title: '100,000 years of cultivation',
     dlc: 'Om1cr0n',
     cost: 0,
+    special: 'Chargen only.',
     desc: `
     <p>One of the Top Managers of The Company recently gained a fascination for the cultivation and managed to convince R&D department to create experimental program 'Super Contractors&#8482;' by locking them in a Time Bubble for 100,000 years before they will go to their first World.</p>
     <p>Overseer of the program can issue a missions for contractor to complete, but rewards will be restricted to improving contractor realm/home only.</p>
-    <p>You will have full access to Catalog for the duration of the confinement with the exception of ability to buy Waifus/Husbandos. Receive Pocket Space, Pocket Apartment, Everlasting Talent, Stress Defense x2 for free.</p>
+    <p>You can't have companions, leave or invite anyone inside for the duration of this challenge, but other parts of the Catalog will remain accessible to you. Receive Pocket Space, Pocket Apartment, Everlasting Talent, Stress Defense x2 for free.</p>
+
     `,
     effect: {
       set: () => addFreebies(cultFreebies),

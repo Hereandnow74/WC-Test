@@ -22,6 +22,23 @@ const investedTier = ref(0)
 const investedEffect = ref(0)
 const investedNetwork = ref(0)
 
+interface Dungeon {
+  name: string
+  numFloors: number
+  floorSize: number
+  encourage: number
+  scry: number
+  used: number[]
+  portals: any[]
+  traps: any[]
+  draw: string
+  range: string
+  intensity: string
+}
+
+const dungeons = ref<Dungeon[]>([])
+const manualDevotees = reactive<Record<number, number>>({ 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0, 9: 0, 10: 0 })
+
 export function usePlayStore() {
   return {
     jumpChain,
@@ -35,5 +52,7 @@ export function usePlayStore() {
     investedTier,
     investedEffect,
     investedNetwork,
+    dungeons,
+    manualDevotees,
   }
 }

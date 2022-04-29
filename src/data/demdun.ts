@@ -303,12 +303,13 @@ demiplane.push({
 
 export const devotion = `
 <h3 class="text-xl">Mechanic: Retinue Devotion</h3>
-<p>By devoting a significant amount of their power and time to something, a retinue member (waifu, husbando, or familiar) can increase the power, output, or scope of various Company products. The measure of power this provides is measured in Devotion Points, and while Devoted, a retinue member provides points equal to the Capture + Sale value for their effective Tier (after Step 4). These points are used to acquire bonuses based on the perk they are interacting with.</p>
-<p>For example: A T7 retinue member would provide 80 points while Devoted to a Dungeon. These points could be used to purchase 3 additional floors (30 points) and 500 sq meters of floor space per floor (50 points).</p>
+<p>By devoting a significant amount of their power and time to something, a retinue member (waifu, husbando, or familiar) can increase the power, output, or scope of various Company products. The measure of power this provides is measured in Devotion Points, and while Devoted, a retinue member provides points equal to the purchase value for their effective Tier (after Step 4) under the standard rules. These points are used to acquire bonuses based on the perk they are interacting with. </p>
+<p>For example: A T7 retinue member would provide 100 points while Devoted to a Dungeon. These points could be used to purchase 3 additional floors (30 points) and 700 sq meters of floor space per floor (70 points).</p>
 <p>Additional retinue members can almost always be Devoted to a task, site, or company perk that provides such functionality. The points they provide are pooled and only associated with the one task or site they are Devoted to. If the source of the points is removed (such as the retinue member’s death or reassignment), some of the things purchased will begin to fail, collapse, dissolve, or otherwise cease to apply over 24 hours. Which things are lost first are selected via the Company app.</p>
 <p>For example: Ten T2 retinue members are Devoted to a Dungeon, for 20 points. Another layer (10 points), 50 sq. meters of floor space per layer (5 points), and 5 T1 traps (5 points) are purchased. If 3 of the retinue members were reassigned to a different Dungeon, the contractor would have to choose which 6 points of functions would be given up.</p>
 <p>A Devoted retinue member must stay close to the object of their Devotion, and spend significant amounts of their time and energy attending to it. The further away they get from their object of devotion, the weaker they become. Even being on the other side of a small city from their object of devotion reduces their power and effectiveness by an entire tier. Being on separate planes of existence or different worlds can render weaker copper star retinue members unconscious until returned to their object of devotion or reassigned.</p>
 <p>Changes to assignment of a retinue member’s Devotion, or if they’re Devoted to anything at all, are managed via the Company app and take 24 hours to apply.</p>
+
 `
 
 export const dungeon: PerkFull[] = []

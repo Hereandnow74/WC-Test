@@ -52,7 +52,7 @@
             v-if="!char.sold && char.method !== 'unbound'"
             v-model="char.role"
             theme="dark"
-            :list="['Companion', 'Familiar']"
+            :list="['Companion', 'Familiar', 'Devotee']"
           />
         </div>
 

@@ -5,6 +5,16 @@
     </h2>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
+        27 April 2022
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>~120 new user submitted characters, new missions</li>
+        <li>New Dungeon app (turned out to be more comlicated than I anticipated complicated so still WIP)</li>
+        <li>Bugfixes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
         23 April 2022
       </h3>
       <ul class="list-decimal list-inside">

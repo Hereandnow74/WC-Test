@@ -1,10 +1,12 @@
 <template>
   <Modal label="Ritual circle">
-    <div class="overflow-y-auto">
+    <div class="overflow-y-auto max-h-[85vh]">
       <h3 class="text-lg text-center font-semibold">
         Ritual Circle: Design Parameters
       </h3>
-      <Table :headers="headers" :rows="table" class="text-sm m-1" />
+      <div class="overflow-x-auto">
+        <Table :headers="headers" :rows="table" class="text-sm m-1 w-max md:w-auto" />
+      </div>
       <Desc :desc="desc" />
     </div>
   </Modal>

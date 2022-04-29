@@ -430,7 +430,7 @@ const secondFilter = computed(() => {
 
 const sortingFunc = (a: any, b: any) =>
   (sortRating.value !== 0 ? (a.item.t - b.item.t) * sortRating.value : 0)
-|| (sortWorld.value !== 0 ? a.item.w.localeCompare(b.item.w) * sortWorld.value : 0)
+|| (sortWorld.value !== 0 ? `${a.item.w}${a.item.d}`.localeCompare(`${b.item.w}${b.item.d}`) * sortWorld.value : 0)
 || (sortAlpha.value !== 0 ? a.item.n.localeCompare(b.item.n) * sortAlpha.value : 0)
 
 const sortedResults = computed(() => {
