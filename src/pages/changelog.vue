@@ -5,6 +5,18 @@
     </h2>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
+        01 May 2022
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>~150 new user submitted characters, new missions</li>
+        <li>Dungeon app became more useful</li>
+        <li>2 new PvP orbs(Green, Blue), 1 new DLC lure</li>
+        <li>14 new worlds, a lot of images for the worlds provided by someone (was forced to write another tool to proccess all of them)</li>
+        <li>Bugfixes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
         27 April 2022
       </h3>
       <ul class="list-decimal list-inside">

@@ -136,9 +136,15 @@ function chooseOrigin(item: Origin) {
   chosenOrigin.cost = item.cost
   if (!['Substitute', 'Possess', 'Walk-In'].includes(chosenOrigin.title)) {
     chosenOrigin.character = ''
-    chosenOrigin.tier = 1
     chosenOrigin.hr = ''
     chosenOrigin.uid = -1
+    chosenOrigin.tier = 1
+    if (chosenOrigin.title === 'Extra') {
+      if (chosenOrigin.cost > 1)
+        chosenOrigin.tier = 4
+      if (chosenOrigin.cost > 10)
+        chosenOrigin.tier = 7
+    }
   }
 
   if (startingOrigin.value.title === chosenOrigin.title)
@@ -168,7 +174,7 @@ function pickOrigin() {
 
 function clearOrigin() {
   allEffects.value.splice(allEffects.value.indexOf(startingOrigin.value.title), 1)
-  startingOrigin.value = { title: '', cost: 0 }
+  startingOrigin.value = { title: '', cost: 0, tier: 1 }
 }
 
 function choosePatron(pt: typeof patrons[0], saveInfo: {title: string; cost: number}) {

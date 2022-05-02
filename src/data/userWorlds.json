@@ -914,7 +914,7 @@
     "rating": 8
   },
   {
-    "worldName": "Hitman Reborn",
+    "worldName": "Katekyo Hitman Reborn",
     "rating": 4
   },
   {
@@ -2493,36 +2493,320 @@
       }
     ]
   },
-  {"worldName":"Tales of Demons and Gods","rating":7,"additional":"Non-humanoid familiars may be integrated as demon spirits. (Pokemon, Digimon, etc.)\nDemon Spirit integration counts as an independent control method.","condition":[{"rating":6,"name":"Glory City"},{"rating":8,"name":"Draconic Ruins Realm"},{"rating":10,"name":"Original Time-line (Pre reincarnation)"}]},
-  {"worldName":"Uzaki-chan wa Asobitai!","rating":1},
   {"worldName":"Azure Striker Gunvolt","rating":6,"image":"https://o.aolcdn.com/hss/storage/midas/22656570945efb8306336c6b291c3c37/200019205/azurestrikergunvolt.jpg","condition":[{"name":"Azure Striker Gunvolt 1","rating":6},{"name":"Luminous Avenger iX","rating":7}]},
-  {"worldName":"Back 4 Blood","rating":7},
-  {"worldName":"Battle Through the Heavens","rating":10,"image":"https://pic1.zhimg.com/v2-d8d543ec3bac7742a3714fa6bf863c39_1440w.jpg"},
-  {"worldName":"Boruto","rating":9,"image":"https://static3.wallpapers-anime.com/upload/20180528/5553/s/0/E/s0ElEF.png","additional":"The various jinchuuriki have their Tailed Beasts as familiars. Chakra is a form of ki, affected by Soul Talent and Advanced Template Stacking (Enlightened), and usable by anyone. Clone techniques split the user’s internal energy pools evenly across the original body and all clones; Inexhaustible merely prevents these diminished pools from depleting. Stress Defense will protect against the drawbacks of mass clone-based training."},
-  {"worldName":"Cultivation Chat Group","rating":10},
-  {"worldName":"Everybody loves large chests","rating":7,"image":"http://i.imgur.com/bx0Cljc.png","condition":[{"name":"Boxxy T Morningwood's companion","rating":8}]},
   {"worldName":"Lost Girl","rating":4},
-  {"worldName":"Mary skelter","rating":7,"image":"https://cdn.donmai.us/original/b7/43/__alice_mary_skelter_drawn_by_nanameda_kei__b743491dd64aea629efd318a59ba4463.jpg","additional":"If you can get a blood transfusion from a blood youth(T4) or a blood maiden(T5) you can be come one yourself. (Depending upon which blood you had transfused.)"},
-  {"worldName":"Overlord (Western)","rating":5,"condition":[{"name":"Overlord 1","rating":5},{"name":"Overlord 2","rating":5}]},
   {"worldName":"Salem","rating":4,"image":"https://img.sharetv.com/shows/standard/salem.jpg"},
-  {"worldName":"The Promised Neverland","rating":3,"image":"https://m.media-amazon.com/images/M/MV5BMTYwYjYyZDgtMTQ3My00YTI4LThmZTUtZmU1MjllOWRlOTdhXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg","additional":"Since the anime had a rushed ending in Season 2, events after the end of S1 would be more evenly paced. This means more time to prepare but have knowing  when it happened and not how exactly.","condition":[{"name":"Orphanage","rating":3},{"rating":4,"name":"Food don't talk"},{"rating":3,"name":"Budding haven"}]},
   {"worldName":"Totaly Spies","rating":4},
-  {"worldName":"Yu Yu Hakusho","rating":7,"image":"https://i.ibb.co/MG0YdgN/Yu-Yu-Hakusho-Title-Card.png","condition":[{"rating":4,"name":"Spirit Detective Saga"},{"name":"Dark Tournament Saga","rating":5},{"name":"Chapter Black Saga","rating":6},{"name":"Three Kings Saga","rating":7}]},
-  {"worldName":"Battlestar Galactica","rating":4,"image":"https://m.media-amazon.com/images/M/MV5BZjBjMjk4YWQtZjY1MC00NTI5LWEwZDMtYWMyYjk2MjkzMThhXkEyXkFqcGdeQXVyNzA5NjUyNjM@._V1_.jpg","condition":[{"name":"Armistice","rating":4},{"rating":6,"name":"The Exodus to Earth"}]},
-  {"worldName":"Corruption of Champions","rating":7},
   {"worldName":"Detroit:  Become Human","rating":3},
-  {"worldName":"Disney","rating":1,"image":"https://i.insider.com/60c7608023393a00188e2e91?width=1000&format=jpeg&auto=webp","condition":[{"name":"Agrabah","rating":3},{"rating":3,"name":"Arendelle"},{"rating":2,"name":"Enchanted Forest"},{"rating":4,"name":"Moana Pacific"},{"rating":3,"name":"Lilo and Stitch Hawaii"},{"name":"Historic France","rating":3}]},
-  {"worldName":"Dororo","rating":4},
-  {"worldName":"Girls und Panzer","rating":4,"image":"https://i.imgur.com/FGOJaOe.jpeg"},
-  {"worldName":"Hyperdimension Neptunia","rating":8,"image":"https://oyster.ignimgs.com/wordpress/stg.ign.com/2014/09/HDNRebirth_091014_1600.jpg","additional":"Visiting the setting or having any waifu from Neptunia will give you access to its leveling systems."},
   {"worldName":"Kengan Ashura","rating":5},
   {"worldName":"Subverse","rating":6},
-  {"worldName":"The Gamer","rating":8},
   {"worldName":"God Eater","rating":10,"image":"https://i.pinimg.com/originals/d4/80/b4/d480b49e8927e2234d8d6c80d251c299.jpg"},
   {"worldName":"Hercules/Xena","rating":6},
   {"worldName":"Jagaaaaaan","rating":6,"additional":"Fractured Human weaknesses are removed and they can now shift forms at will.<bg>Frenzied Frog and its variants are all considered Familiars."},
   {"worldName":"Library of Ruina","rating":6,"image":"https://www.gameinformer.com/sites/default/files/styles/full/public/2021/08/17/653f6706/library-of-ruina.jpg","additional":"E.G.O. is enhanced by Psychic Talent, not Soul Talent.","condition":[{"name":"Before the White Nights and Dark days","rating":6},{"rating":7,"name":"Library already a Star of the City"}]},
   {"worldName":"Otoyomegatari","rating":3,"image":"https://i0.wp.com/anitrendz.net/news/wp-content/uploads/2022/02/A-Brides-Story-e1644307744648.jpg"},
-  {"worldName":"Soulworker","rating":8,"image":"https://honeysanime.com/wp-content/uploads/2021/09/soulworker_splash.jpg","condition":[{"rating":9,"name":"The Great Void"},{"rating":8,"name":"Character's Worlds"},{"name":"Merged Worlds","rating":9}]},
-  {"worldName":"Twin Star Exorcists","rating":5,"additional":"Resistance/Immunity to the Yin aura of Magano is granted by the Wyldscape Defense perk.","condition":[{"name":"Anime Timeline","rating":5}]}
+  {
+    "worldName": "Tales of Demons and Gods",
+    "rating": 7,
+    "additional": "Non-humanoid familiars may be integrated as demon spirits. (Pokemon, Digimon, etc.)\nDemon Spirit integration counts as an independent control method.",
+    "condition": [
+      {
+        "rating": 6,
+        "name": "Glory City"
+      },
+      {
+        "rating": 8,
+        "name": "Draconic Ruins Realm"
+      },
+      {
+        "rating": 10,
+        "name": "Original Time-line (Pre reincarnation)"
+      }
+    ]
+  },
+  {
+    "worldName": "Uzaki-chan wa Asobitai!",
+    "rating": 1,
+    "image": "https://moesucks.files.wordpress.com/2020/07/uzaki-chan-wa-asobitai-03-12.jpg"
+  },
+  {
+    "worldName": "Back 4 Blood",
+    "rating": 7
+  },
+  {
+    "worldName": "Battle Through the Heavens",
+    "rating": 10,
+    "image": "https://pic1.zhimg.com/v2-d8d543ec3bac7742a3714fa6bf863c39_1440w.jpg"
+  },
+  {
+    "worldName": "Boruto",
+    "rating": 9,
+    "image": "https://static3.wallpapers-anime.com/upload/20180528/5553/s/0/E/s0ElEF.png",
+    "additional": "The various jinchuuriki have their Tailed Beasts as familiars. Chakra is a form of ki, affected by Soul Talent and Advanced Template Stacking (Enlightened), and usable by anyone. Clone techniques split the user’s internal energy pools evenly across the original body and all clones; Inexhaustible merely prevents these diminished pools from depleting. Stress Defense will protect against the drawbacks of mass clone-based training."
+  },
+  {
+    "worldName": "Cultivation Chat Group",
+    "rating": 10
+  },
+  {
+    "worldName": "Everybody loves large chests",
+    "rating": 7,
+    "image": "http://i.imgur.com/bx0Cljc.png",
+    "condition": [
+      {
+        "name": "Boxxy T Morningwood's companion",
+        "rating": 8
+      }
+    ]
+  },
+  {
+    "worldName": "Mary skelter",
+    "rating": 7,
+    "image": "https://cdn.donmai.us/original/b7/43/__alice_mary_skelter_drawn_by_nanameda_kei__b743491dd64aea629efd318a59ba4463.jpg",
+    "additional": "If you can get a blood transfusion from a blood youth(T4) or a blood maiden(T5) you can be come one yourself. (Depending upon which blood you had transfused.)"
+  },
+  {
+    "worldName": "Overlord (Western)",
+    "rating": 5,
+    "condition": [
+      {
+        "name": "Overlord 1",
+        "rating": 5
+      },
+      {
+        "name": "Overlord 2",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "worldName": "The Promised Neverland",
+    "rating": 3,
+    "image": "https://m.media-amazon.com/images/M/MV5BMTYwYjYyZDgtMTQ3My00YTI4LThmZTUtZmU1MjllOWRlOTdhXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_.jpg",
+    "additional": "Since the anime had a rushed ending in Season 2, events after the end of S1 would be more evenly paced. This means more time to prepare but have knowing  when it happened and not how exactly.",
+    "condition": [
+      {
+        "name": "Orphanage",
+        "rating": 3
+      },
+      {
+        "rating": 4,
+        "name": "Food don't talk"
+      },
+      {
+        "rating": 3,
+        "name": "Budding haven"
+      }
+    ]
+  },
+  {
+    "worldName": "Yu Yu Hakusho",
+    "rating": 7,
+    "image": "https://i.ibb.co/MG0YdgN/Yu-Yu-Hakusho-Title-Card.png",
+    "condition": [
+      {
+        "rating": 4,
+        "name": "Spirit Detective Saga"
+      },
+      {
+        "name": "Dark Tournament Saga",
+        "rating": 5
+      },
+      {
+        "name": "Chapter Black Saga",
+        "rating": 6
+      },
+      {
+        "name": "Three Kings Saga",
+        "rating": 7
+      }
+    ]
+  },
+  {
+    "worldName": "Battlestar Galactica",
+    "rating": 4,
+    "image": "https://m.media-amazon.com/images/M/MV5BZjBjMjk4YWQtZjY1MC00NTI5LWEwZDMtYWMyYjk2MjkzMThhXkEyXkFqcGdeQXVyNzA5NjUyNjM@._V1_.jpg",
+    "condition": [
+      {
+        "name": "Armistice",
+        "rating": 4
+      },
+      {
+        "rating": 6,
+        "name": "The Exodus to Earth"
+      }
+    ]
+  },
+  {
+    "worldName": "Corruption of Champions",
+    "rating": 7,
+    "image": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/clans/38349270/d00b1000b4085cd27e9d30fc508033fd1caf4cde.png"
+  },
+  {
+    "worldName": "Disney",
+    "rating": 1,
+    "image": "https://i.insider.com/60c7608023393a00188e2e91?width=1000&format=jpeg&auto=webp",
+    "condition": [
+      {
+        "name": "Agrabah",
+        "rating": 3
+      },
+      {
+        "rating": 3,
+        "name": "Arendelle"
+      },
+      {
+        "rating": 2,
+        "name": "Enchanted Forest"
+      },
+      {
+        "rating": 4,
+        "name": "Moana Pacific"
+      },
+      {
+        "rating": 3,
+        "name": "Lilo and Stitch Hawaii"
+      },
+      {
+        "name": "Historic France",
+        "rating": 3
+      }
+    ]
+  },
+  {
+    "worldName": "Dororo",
+    "rating": 4
+  },
+  {
+    "worldName": "Girls und Panzer",
+    "rating": 4,
+    "image": "https://i.imgur.com/FGOJaOe.jpeg"
+  },
+  {
+    "worldName": "Hyperdimension Neptunia",
+    "rating": 8,
+    "image": "https://oyster.ignimgs.com/wordpress/stg.ign.com/2014/09/HDNRebirth_091014_1600.jpg",
+    "additional": "Visiting the setting or having any waifu from Neptunia will give you access to its leveling systems."
+  },
+  {
+    "worldName": "The Gamer",
+    "rating": 8
+  },
+  {
+    "worldName": "Soulworker",
+    "rating": 8,
+    "image": "https://honeysanime.com/wp-content/uploads/2021/09/soulworker_splash.jpg",
+    "condition": [
+      {
+        "rating": 9,
+        "name": "The Great Void"
+      },
+      {
+        "rating": 8,
+        "name": "Character's Worlds"
+      },
+      {
+        "name": "Merged Worlds",
+        "rating": 9
+      }
+    ]
+  },
+  {
+    "worldName": "Twin Star Exorcists",
+    "rating": 5,
+    "additional": "Resistance/Immunity to the Yin aura of Magano is granted by the Wyldscape Defense perk.",
+    "condition": [
+      {
+        "name": "Anime Timeline",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "worldName": "A Series of Unfortunate Events",
+    "rating": 3
+  },
+  {
+    "worldName": "Captain Planet",
+    "rating": 6,
+    "image": "https://miscrave.com/wp-content/uploads/2020/04/captain-planet-heroes-and-villains.jpg"
+  },
+  {
+    "worldName": "Getter Robo",
+    "rating": 7,
+    "condition": [
+      {
+        "name": "Into the Ishikawa-verse / Kyomu Senki",
+        "rating": 8
+      },
+      {
+        "rating": 9,
+        "name": "Manga Timeline"
+      },
+      {
+        "name": "Anime Timeline",
+        "rating": 7
+      },
+      {
+        "name": "Armageddon",
+        "rating": 9
+      },
+      {
+        "rating": 10,
+        "name": "Devolution"
+      }
+    ]
+  },
+  {
+    "worldName": "Hyakka Ryoran",
+    "rating": 4
+  },
+  {
+    "worldName": "Infinite Dendrogram",
+    "rating": 2,
+    "image": "https://cdn.donmai.us/sample/e1/c4/__nemesis_shu_starling_milianne_grandria_babylon_liliana_grandria_and_8_more_infinite_dendrogram__sample-e1c420079bd9c816659c6b7704fe6b11.jpg",
+    "additional": "All characters with profiles in Infinite Dendrogram will benefit from their toons’ statistics, skills, equipment, and Embryos.",
+    "condition": [
+      {
+        "rating": 2,
+        "name": "Earth"
+      },
+      {
+        "name": "Dendrogram",
+        "rating": 8
+      }
+    ]
+  },
+  {
+    "worldName": "K-On!",
+    "rating": 1,
+    "image": "https://funart.pro/uploads/posts/2019-12/1577218957_29-4.jpg"
+  },
+  {
+    "worldName": "Kenja no Mago",
+    "rating": 5
+  },
+  {
+    "worldName": "Kill Six Billion Demons",
+    "rating": 10,
+    "image": "https://i.imgur.com/zF9PwpS.jpeg"
+  },
+  {
+    "worldName": "Mato Seihei no Slave",
+    "rating": 5,
+    "condition": [
+      {
+        "rating": 8,
+        "name": "Mato"
+      }
+    ]
+  },
+  {
+    "worldName": "Mother of Learning",
+    "rating": 7
+  },
+  {"worldName":"Trials In Tainted Space","rating":6,"image":"https://i.imgur.com/pPbYMZI.jpg"},
+  {"worldName":"True Blood","rating":5,"image":"https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/2bc08c23d2f7db38855f644791510d09.jpg"},
+  {"worldName":"Tsuki ga Michibiku Isekai Douchuu","rating":5,"image":"https://i0.wp.com/www.otakupt.com/wp-content/uploads/2021/07/Tsuki-ga-Michibiku-Isekai-Dochu-vol-DVDBD.jpg?fit=1280%2C720&ssl=1"},
+  {"worldName":"Yokohama Kaidashi Kikou","rating":1,"image":"https://image.tmdb.org/t/p/original/mRAxlNic5z6YZDFeZV3lineqfim.jpg"}
 ]

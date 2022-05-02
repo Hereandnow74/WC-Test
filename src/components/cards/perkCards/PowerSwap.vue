@@ -35,7 +35,7 @@
               />
               <div class="flex gap-2">
                 <NumberInput
-                  :model-value="startingOrigin.tier || 1"
+                  v-model="startingOrigin.tier"
                   :min="0"
                   :max="10"
                   label="Tier"

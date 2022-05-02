@@ -37,6 +37,7 @@
             v-if="!char.sold && editMode"
             v-model="char.priceTier"
             theme="dark"
+            :min="0"
             :max="11"
             label="Original Tier"
             class="whitespace-nowrap"

@@ -256,3 +256,24 @@ invasionPvP.push({
   <p>To qualify as an invasion target, the enemy contractor must first own a Red Eye Orb of their own. Yes, this means you may find yourself the defender in this scenario. This is your warning. Second, they have visited a parallel of at least one world that you’ve visited. The battle will take place in that parallel. Third, their PvP credit value must be in the same ballpark as your force’s PvP asset value, with the higher of the two no more than 25% more than the lower. Invasion targets are randomly selected by company systems; contractors have no influence on the process.</p>
   <p>An invader’s strike force will appear as Red Phantasms, as explained in the Glossary. All harm or other effects done to the defender’s retinue will be real, however, including PvP Captures; see that section for details. Invaders may retreat at any time, as individuals or a group, though any who do so will suffer the full recuperation period as if they were slain outright.</p>`,
 })
+
+invasionPvP.push({
+  uid: 'hrfse',
+  title: 'Green Eye Orb',
+  cost: 10,
+  pvp: true,
+  desc: `
+  <p>This is your invitation to any one of the company’s exclusive clubs for contractors. You can bring up to three members of your retinue to eat, drink, game, make new friends and rivals, and do business with other contractors and retinues at these neutral grounds. Both indoor and outdoor environments and services are available.</p>
+  <p>Conflict between contractors, including poaching each others’ retinues, is actively prevented in real time via <b>Demiplane Laws</b>. Note that the company does not enforce fairness in trades between contractors, so take care to watch your own back.</p>`,
+})
+
+invasionPvP.push({
+  uid: 'pdsFe',
+  title: 'Blue Eye Orb',
+  cost: 15,
+  pvp: true,
+  desc: `
+  <p>More similar to the red soapstone or dragon eyes from the many parallels of an ashen world than the original blue eye orb, ownership of this item allows you to specifically invite another contractor to a duel between your two teams, skipping the normal matchmaking process. This otherwise follows the regular Arranged PvP procedures.</p>
+  <p>You can only challenge contractors that you’ve met in person. This may happen by any means, including Green Eye Orb use, regular Arranged PvP, Invasions, or unregulated encounters.
+  </p>`,
+})

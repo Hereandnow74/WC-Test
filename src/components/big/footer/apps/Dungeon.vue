@@ -3,7 +3,9 @@
     <div v-if="boughtPerks['Dungeons']" class="flex flex-col gap-2">
       <div>
         <div class="flex items-center gap-1">
-          List of devotees <span>(Total DP: <span class="font-semibold text-violet-400">{{ totalDevotionPoints }}</span>)</span> <fluent:wrench-16-filled class="cursor-pointer hover:text-green-400" @click="manualDevEdit = !manualDevEdit" />
+          List of devotees <span>(Total DP: <span class="font-semibold text-violet-400">{{ totalDevotionPoints }}</span>)</span>
+          <fluent:wrench-16-filled class="cursor-pointer hover:text-green-400" @click="manualDevEdit = !manualDevEdit" />
+          <fluent:delete-20-filled class="cursor-pointer hover:text-red-400" title="Delete all dungeons" @click="deleteAll()" />
         </div>
         <div class="grid gap-1" :class="orientation ? 'grid-cols-10':'grid-cols-5'">
           <div v-for="val, key in listDevoteesFull" :key="key" class="flex gap-1">
@@ -23,9 +25,9 @@
       <div v-if="activeDungeonInd !== ''">
         <div class="flex gap-1">
           <Input v-model="dungeons[activeDungeonInd].name" class="pb-2 flex-grow" label="Name" />
-          <span v-if="usedDP">{{ usedDP }} / {{ availableDP }}</span>
+          <span v-if="usedDP" :class="usedDP > availableDP ? 'text-red-400' : 'text-green-400'">{{ usedDP }} / {{ availableDP }}</span>
         </div>
-        <Foldable title="Floors" :is-open="true" class="flex flex-col gap-1" title-style="text-amber-400">
+        <Foldable :title="`Floors [-${floorsDP}]`" :is-open="true" class="flex flex-col gap-1" title-style="text-amber-400">
           <div class="flex gap-2">
             <NumberInput v-model="dungeons[activeDungeonInd].numFloors" class="whitespace-nowrap" :min="0" label="Number of floors" />
             <NumberInput v-model="dungeons[activeDungeonInd].floorSize" class="whitespace-nowrap" :min="0" label="Floor size" />
@@ -34,32 +36,54 @@
             <div>Floor size: {{ dungeons[activeDungeonInd].floorSize * 10 }}m²</div>
             <div>Total area: {{ dungeons[activeDungeonInd].floorSize * 10 * dungeons[activeDungeonInd].numFloors }}m²</div>
           </div>
-          <div class="flex gap-1">
-            Create a portal of tier:<NumberInput v-model="portalTier" :max="10" /><Button :disabled="true" title="Create Portal" icon="fluent:add-circle-16-regular" @click="createPortal" />
+          <div class="flex gap-1 text-violet-400">
+            Create a portal of tier:<NumberInput v-model="portalTier" :max="10" /><Button title="Create Portal" icon="fluent:add-circle-16-regular" @click="createPortal" />
           </div>
-          <div class="flex gap-1">
-            Create trap <Select v-model="trapRank" :options="['Blue', 'Copper', 'Silver', 'Gold']" /><Button :disabled="true" title="Create Trap" icon="fluent:add-circle-16-regular" @click="createTrap" />
+          <div class="flex flex-col gap-1">
+            <div v-for="portal, i in dungeons[activeDungeonInd].portals" :key="portal.name" class="flex gap-1">
+              <Input v-model="portal.name" class="flex-grow" />
+              <NumberInput v-model="portal.tier" :max="10" label="Tier" />
+              <Button title="Delete Portal" icon="fluent:delete-20-filled" @click="dungeons[activeDungeonInd].portals.splice(i, 1)" />
+            </div>
+          </div>
+          <div class="flex gap-1 text-violet-400">
+            Create trap <Select v-model="trapRank" :options="['Blue', 'Copper', 'Silver', 'Gold']" /><Button title="Create Trap" icon="fluent:add-circle-16-regular" @click="createTrap" />
+          </div>
+          <div class="flex flex-col gap-1">
+            <div v-for="trap, i in dungeons[activeDungeonInd].traps" :key="trap.name" class="flex gap-1">
+              <Input v-model="trap.name" class="flex-grow" />
+              Rank: {{ trap.rank }}
+              <Button title="Delete Trap" icon="fluent:delete-20-filled" @click="dungeons[activeDungeonInd].traps.splice(i, 1)" />
+            </div>
           </div>
         </Foldable>
-        <Foldable v-if="boughtPerks['Spawning Room: Breeding Pits']" title="Spawning Room: Breeding Pits" title-style="text-amber-400" :is-open="true">
-          <div class="flex gap-1">
-            Create a monster of tier: <NumberInput v-model="monsterTier" :max="10" /><Toggle v-model="monsterUseBinding" label="Use Binding" /><Button :disabled="true" title="Create Portal" icon="fluent:add-circle-16-regular" @click="createMonster" />
+        <Foldable v-if="boughtPerks['Spawning Room: Breeding Pits']" :title="`Spawning Room: Breeding Pits [-${pitsDP}]`" title-style="text-amber-400" :is-open="true">
+          <div class="flex gap-1 text-violet-400">
+            Create a monster of tier: <NumberInput v-model="monsterTier" :max="10" /><Toggle v-model="monsterUseBinding" label="Use Binding" /><Button title="Create Portal" icon="fluent:add-circle-16-regular" @click="createMonster" />
+          </div>
+          <div class="flex flex-col gap-1 pt-1">
+            <div v-for="monster, i in dungeons[activeDungeonInd].monsters" :key="monster.name" class="flex gap-1">
+              <Input v-model="monster.name" class="flex-grow" />
+              <NumberInput v-model="monster.tier" :max="10" label="Tier" />
+              <span v-if="monster.binding">Can Bind</span>
+              <Button title="Delete Monster" icon="fluent:delete-20-filled" @click="dungeons[activeDungeonInd].monsters.splice(i, 1)" />
+            </div>
           </div>
         </Foldable>
-        <Foldable v-if="boughtPerks['Commerce Room: Hotel California']" title="Commerce Room: Hotel California" title-style="text-amber-400" :is-open="true">
+        <Foldable v-if="boughtPerks['Commerce Room: Hotel California']" :title="`Commerce Room: Hotel California [-${hotelDP}]`" title-style="text-amber-400" :is-open="true">
           <div class="flex gap-1">
             Encourage tier: <NumberInput v-model="dungeons[activeDungeonInd].encourage" :min="0" :max="10" /> to enter
           </div>
         </Foldable>
-        <Foldable v-if="boughtPerks['Broadcast Room: Eye of Sauron']" title="Broadcast Room: Eye of Sauron" title-style="text-amber-400" :is-open="true">
+        <Foldable v-if="boughtPerks['Broadcast Room: Eye of Sauron']" :title="`Broadcast Room: Eye of Sauron [-${eyeDP}]`" title-style="text-amber-400" :is-open="true">
           <div class="flex gap-1">
-            Invested DP in scrying <NumberInput v-model="dungeons[activeDungeonInd].scry" :min="0" :max="9999" />
+            Invested DP in scrying <NumberInput v-model="dungeons[activeDungeonInd].scry" :increment="5" :min="0" :max="9999" />
           </div>
           <div v-if="dungeons[activeDungeonInd].scry >=5">
             Range of scrying is {{ Math.pow(2, Math.floor((dungeons[activeDungeonInd].scry - 5) / 5)).toLocaleString() }} km.
           </div>
         </Foldable>
-        <Foldable v-if="boughtPerks['Lure Room: My Precious']" title="Lure Room: My Precious" title-style="text-amber-400" :is-open="true" class="flex flex-col gap-1">
+        <Foldable v-if="boughtPerks['Lure Room: My Precious']" :title="`Lure Room: My Precious [-${lureDP}]`" title-style="text-amber-400" :is-open="true" class="flex flex-col gap-1">
           <div class="flex gap-1">
             Draw adventurers of <Select v-model="dungeons[activeDungeonInd].draw" :options="['No one', 'Blue', 'Copper', 'Silver', 'Gold']" />
           </div>
@@ -104,7 +128,7 @@ const listDevotees = computed(() => {
 const listDevoteesFull = computed(() => {
   const list = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0, 9: 0, 10: 0 } as Record<number, number>
   for (let i = 1; i < 11; i++)
-    list[i] = manualDevotees[i] + listDevotees.value[i]
+    list[i] = manualDevotees.value[i] + listDevotees.value[i]
   return list
 })
 
@@ -137,15 +161,53 @@ const intensityCost = {
   Suicidal: 150,
 } as Record<string, number>
 
-const usedDP = computed(() => {
+const trapCost = {
+  Blue: 5,
+  Copper: 25,
+  Silver: 250,
+  Gold: 1000,
+} as Record<string, number>
+
+const floorsDP = computed(() => {
   let DP = 0
   DP += dungeons.value[activeDungeonInd.value].numFloors * 10
   DP += dungeons.value[activeDungeonInd.value].floorSize
+  dungeons.value[activeDungeonInd.value].portals.forEach(x => DP += CHAR_COSTS[x.tier])
+  dungeons.value[activeDungeonInd.value].traps.forEach(x => DP += trapCost[x.rank])
+  return DP
+})
+const pitsDP = computed(() => {
+  let DP = 0
+  dungeons.value[activeDungeonInd.value].monsters.forEach(x => DP += CHAR_COSTS[x.tier] * (x.binding ? 1.5 : 1))
+  return DP
+})
+const hotelDP = computed(() => {
+  let DP = 0
   DP += CHAR_COSTS[dungeons.value[activeDungeonInd.value].encourage]
+  return DP
+})
+const eyeDP = computed(() => {
+  let DP = 0
   DP += dungeons.value[activeDungeonInd.value].scry
+  return DP
+})
+const lureDP = computed(() => {
+  let DP = 0
   DP += drawCost[dungeons.value[activeDungeonInd.value].draw]
   DP += rangeCost[dungeons.value[activeDungeonInd.value].range]
   DP += intensityCost[dungeons.value[activeDungeonInd.value].intensity]
+  return DP
+})
+
+const usedDP = computed(() => {
+  let DP = 0
+
+  DP += floorsDP.value
+  DP += pitsDP.value
+  DP += hotelDP.value
+  DP += eyeDP.value
+  DP += lureDP.value
+
   return DP
 })
 
@@ -156,7 +218,16 @@ const availableDP = computed(() => {
   return dev.reduce((a, x, i) => a += CHAR_COSTS[10 - i] * x, 0)
 })
 
-const usedDevotees = computed(() => dungeons.value?.[activeDungeonInd.value]?.used ? dungeons.value[activeDungeonInd.value].used : Array(10).fill(0))
+function arraySum(array: any[]) {
+  const res = Array(10).fill(0)
+  for (let i = 0; i < array.length; i++) {
+    for (let j = 0; j < 10; j++)
+      res[j] += array[i].used[j]
+  }
+  return res
+}
+
+const usedDevotees = computed(() => dungeons.value?.[activeDungeonInd.value]?.used ? arraySum(dungeons.value) : Array(10).fill(0))
 
 const boughtPerks = computed(() => {
   const perks = {
@@ -174,7 +245,7 @@ const boughtPerks = computed(() => {
 })
 
 function addDungeon() {
-  const name = `Dungeon #${dungeons.value.length + 1}`
+  const name = `Dungeon #${Math.floor(Math.random() * 1000)}`
   dungeons.value.push({
     name,
     floorSize: 0,
@@ -182,6 +253,7 @@ function addDungeon() {
     encourage: 0,
     portals: [],
     traps: [],
+    monsters: [],
     scry: 0,
     used: Array(10).fill(0),
     draw: 'No one',
@@ -197,7 +269,7 @@ function deleteDungeon(ind: number) {
 }
 
 function changeDevCount(e: number, key: number) {
-  manualDevotees[key] = e - listDevotees.value[key]
+  manualDevotees.value[key] = e - listDevotees.value[key]
 }
 
 function minDevotees(dp: number) {
@@ -208,7 +280,7 @@ function minDevotees(dp: number) {
     if (!dp || dp === 0)
       return devoteeNumber
     for (let i = 0; i < 10; i++) {
-      if (costs[i] <= dp && availableDevotees[10 - i - 1] > 0) {
+      if (availableDevotees[10 - i - 1] > 0 && costs[i] <= dp) {
         availableDevotees[10 - i - 1] -= 1
         devoteeNumber[i] += 1
         minDvF(dp - costs[i])
@@ -223,14 +295,29 @@ function minDevotees(dp: number) {
 }
 
 function createPortal() {
-  //
+  dungeons.value[activeDungeonInd.value].portals.push({
+    name: `Portal ${dungeons.value[activeDungeonInd.value].portals.length + 1}`,
+    tier: portalTier.value,
+  })
 }
 
 function createMonster() {
-  //
+  dungeons.value[activeDungeonInd.value].monsters.push({
+    name: `Monster ${dungeons.value[activeDungeonInd.value].monsters.length + 1}`,
+    tier: monsterTier.value,
+    binding: monsterUseBinding.value,
+  })
 }
 
 function createTrap() {
-  //
+  dungeons.value[activeDungeonInd.value].traps.push({
+    name: `Trap ${dungeons.value[activeDungeonInd.value].traps.length + 1}`,
+    rank: trapRank.value,
+  })
+}
+
+function deleteAll() {
+  dungeons.value = []
+  manualDevotees.value = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0, 9: 0, 10: 0 }
 }
 </script>

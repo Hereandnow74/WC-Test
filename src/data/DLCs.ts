@@ -539,6 +539,19 @@ DLClures.push({
   `,
 })
 
+DLClures.push({
+  uid: 'nuDNs',
+  dlc: 'Trismegistus',
+  title: 'Red Chains of Fate',
+  image: '',
+  cost: 5,
+  costVariants: [5, 15],
+  desc: `You have a sense for those who would be amenable to binding and the type of relationships you desire. This effect is overlaid on your other senses, making them "pop" out when you are aware of them in any way.
+
+  <p>For an additional 10 credits, you can exert influence on those this perk makes you aware of. Doing so draws them to you like a moth to a flame or driftwood flowing with the currents. They will think of you more often and in positive contexts, and will be drawn towards your location.</p>
+  `,
+})
+
 // Other Controls
 export const DLCotherControls: DLCPerk[] = []
 
