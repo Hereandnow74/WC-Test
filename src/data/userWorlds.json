@@ -106,7 +106,8 @@
         "name": "Kingmaker",
         "rating": 9
       }
-    ]
+    ],
+    "image": "https://i.ytimg.com/vi/ESoB9KD3yKg/maxresdefault.jpg"
   },
   {
     "worldName": "Halo",
@@ -189,7 +190,8 @@
         "name": "RL-Craft",
         "rating": 7
       }
-    ]
+    ],
+    "image": "https://www.taminggaming.com/cms/graphics/screen_shot_3449.png"
   },
   {
     "worldName": "Monster Girl Quest",
@@ -336,7 +338,8 @@
         "name": "Nephilim Purge",
         "rating": 7
       }
-    ]
+    ],
+    "image": "https://free4kwallpapers.com/uploads/originals/2019/12/07/darksiders-genesis---strife-wallpaper.jpg"
   },
   {
     "worldName": "Douluo Dalu",
@@ -403,7 +406,8 @@
         "name": "Dark Continent",
         "rating": 5
       }
-    ]
+    ],
+    "image": "https://project-nerd.com/wp-content/uploads/2020/08/HxHFeatureImage.png"
   },
   {
     "worldName": "I Shall Seal The Heavens",
@@ -568,10 +572,25 @@
     "worldName": "Divinity",
     "rating": 5
   },
-  {"worldName":"Highschool of the Dead","rating":2,"condition":[{"name":"Before Z-Day.","rating":2},{"name":"Starting from Z-Day.","rating":4}]},
+  {
+    "worldName": "Highschool of the Dead",
+    "rating": 2,
+    "condition": [
+      {
+        "name": "Before Z-Day.",
+        "rating": 2
+      },
+      {
+        "name": "Starting from Z-Day.",
+        "rating": 4
+      }
+    ],
+    "image": "https://evedonusfilm.com/wp-content/uploads/2021/07/HOTD.jpg"
+  },
   {
     "worldName": "How Not to Summon a Demon Lord",
-    "rating": 8
+    "rating": 8,
+    "image": "https://images.alphacoders.com/951/951895.jpg"
   },
   {
     "worldName": "Inheritance",
@@ -625,7 +644,8 @@
         "name": "Ghoul School",
         "rating": 3
       }
-    ]
+    ],
+    "image": "https://4.bp.blogspot.com/-c1Cg9sS5nmo/VPaKqsRxooI/AAAAAAAAA8o/j9_TQ2rOJaQ/s1600/scooby-doo-sinhala-cartoon.jpg"
   },
   {
     "worldName": "Toriko",
@@ -718,7 +738,8 @@
         "name": "Cyber Sleuth",
         "rating": 4
       }
-    ]
+    ],
+    "image": "https://i.pinimg.com/736x/99/26/5e/99265ece8618637b2f4e5a9f57738f87--digimon--digimon-tamers.jpg"
   },
   {
     "worldName": "Metal Gear",
@@ -783,7 +804,8 @@
         "rating": 2,
         "name": "Tier 2 Town"
       }
-    ]
+    ],
+    "image": "https://img5.goodfon.ru/original/640x480/1/60/arseniy-chebynkin-by-arseniy-chebynkin-japan-city-day-road-l.jpg"
   },
   {
     "worldName": "Wheel of Time",
@@ -820,7 +842,6 @@
   {
     "worldName": "Bloodborne",
     "rating": 9,
-    "image": "https://i.imgur.com/p2G4FpM.png",
     "additional": "Body Defense will protect you from the beast plague and physical effect of insight while Mind Defense will protect you from it’s mental effects"
   },
   {
@@ -902,7 +923,8 @@
         "rating": 5,
         "name": "Tiberium Wars/Twilight/Scrin Invasion"
       }
-    ]
+    ],
+    "image": "https://i.pinimg.com/originals/6b/3b/d3/6b3bd38cc3073cb5794a41ebf7d9779a.jpg"
   },
   {
     "worldName": "Infinite Stratos",
@@ -923,7 +945,8 @@
   },
   {
     "worldName": "One Punch Man",
-    "rating": 7
+    "rating": 7,
+    "image": "https://i.pinimg.com/originals/3d/14/87/3d14873d5b979f091f200af61e07841b.png"
   },
   {
     "worldName": "Food Wars!: Shokugeki no Soma",
@@ -1130,7 +1153,8 @@
         "rating": 10,
         "name": "Omniverse"
       }
-    ]
+    ],
+    "image": "http://2.bp.blogspot.com/-a8xiucVIRCg/UcyO1xrafZI/AAAAAAAAIf4/SkqTQL-O718/s1600/mustcroak3.png"
   },
   {
     "worldName": "Summertime Saga",
@@ -1711,7 +1735,8 @@
   },
   {
     "worldName": "Hidden Dungeon Only I Can Enter",
-    "rating": 5
+    "rating": 5,
+    "image": "https://kakushidungeon-anime.jp/assets/intro/sld-4-sp.jpg"
   },
   {
     "worldName": "How to Train Your Dragon",
@@ -1770,7 +1795,8 @@
   },
   {
     "worldName": "Rosario + Vampire",
-    "rating": 6
+    "rating": 6,
+    "image": "https://flxt.tmsimg.com/assets/p21805865_i_h10_aa.jpg"
   },
   {
     "worldName": "The Boys",
@@ -1837,7 +1863,20 @@
     "worldName": "History's Strongest Disciple Kenichi",
     "rating": 5
   },
-  {"worldName":"Magical Girl Spec-Ops Asuka","rating":8,"condition":[{"name":"2020, Canon Start","rating":7},{"rating":8,"name":"2016 Jan, Disas Invasion"}]},
+  {
+    "worldName": "Magical Girl Spec-Ops Asuka",
+    "rating": 8,
+    "condition": [
+      {
+        "name": "2020, Canon Start",
+        "rating": 7
+      },
+      {
+        "rating": 8,
+        "name": "2016 Jan, Disas Invasion"
+      }
+    ]
+  },
   {
     "worldName": "Mermaid Melody",
     "rating": 3,
@@ -1924,7 +1963,8 @@
   },
   {
     "worldName": "Misfit of Demon King Academy",
-    "rating": 6
+    "rating": 6,
+    "image": "https://agnonline365.com/wp-content/uploads/2020/11/thumb-1920-10617391.jpg"
   },
   {
     "worldName": "Outlaw Star",
@@ -2074,7 +2114,8 @@
         "name": "Involved in action",
         "rating": 2
       }
-    ]
+    ],
+    "image": "https://avatars.mds.yandex.net/i?id=b3c34594ec518143cf5856b1859ebed8_l-5235444-images-thumbs&ref=rim&n=13&w=1280&h=720"
   },
   {
     "worldName": "Azumanga Daioh",
@@ -2166,7 +2207,8 @@
   },
   {
     "worldName": "XCOM",
-    "rating": 6
+    "rating": 6,
+    "image": "https://img.cdn.haber365.com.tr/uploads/images/image/epic-games-xcom-2-oyununu-ucretsiz-dagitiyor-928-body.jpg"
   },
   {
     "worldName": "Yotsuba&!",
@@ -2493,18 +2535,81 @@
       }
     ]
   },
-  {"worldName":"Azure Striker Gunvolt","rating":6,"image":"https://o.aolcdn.com/hss/storage/midas/22656570945efb8306336c6b291c3c37/200019205/azurestrikergunvolt.jpg","condition":[{"name":"Azure Striker Gunvolt 1","rating":6},{"name":"Luminous Avenger iX","rating":7}]},
-  {"worldName":"Lost Girl","rating":4},
-  {"worldName":"Salem","rating":4,"image":"https://img.sharetv.com/shows/standard/salem.jpg"},
-  {"worldName":"Totaly Spies","rating":4},
-  {"worldName":"Detroit:  Become Human","rating":3},
-  {"worldName":"Kengan Ashura","rating":5},
-  {"worldName":"Subverse","rating":6},
-  {"worldName":"God Eater","rating":10,"image":"https://i.pinimg.com/originals/d4/80/b4/d480b49e8927e2234d8d6c80d251c299.jpg"},
-  {"worldName":"Hercules/Xena","rating":6},
-  {"worldName":"Jagaaaaaan","rating":6,"additional":"Fractured Human weaknesses are removed and they can now shift forms at will.<bg>Frenzied Frog and its variants are all considered Familiars."},
-  {"worldName":"Library of Ruina","rating":6,"image":"https://www.gameinformer.com/sites/default/files/styles/full/public/2021/08/17/653f6706/library-of-ruina.jpg","additional":"E.G.O. is enhanced by Psychic Talent, not Soul Talent.","condition":[{"name":"Before the White Nights and Dark days","rating":6},{"rating":7,"name":"Library already a Star of the City"}]},
-  {"worldName":"Otoyomegatari","rating":3,"image":"https://i0.wp.com/anitrendz.net/news/wp-content/uploads/2022/02/A-Brides-Story-e1644307744648.jpg"},
+  {
+    "worldName": "Azure Striker Gunvolt",
+    "rating": 6,
+    "image": "https://o.aolcdn.com/hss/storage/midas/22656570945efb8306336c6b291c3c37/200019205/azurestrikergunvolt.jpg",
+    "condition": [
+      {
+        "name": "Azure Striker Gunvolt 1",
+        "rating": 6
+      },
+      {
+        "name": "Luminous Avenger iX",
+        "rating": 7
+      }
+    ]
+  },
+  {
+    "worldName": "Lost Girl",
+    "rating": 4
+  },
+  {
+    "worldName": "Salem",
+    "rating": 4,
+    "image": "https://img.sharetv.com/shows/standard/salem.jpg"
+  },
+  {
+    "worldName": "Totaly Spies",
+    "rating": 4
+  },
+  {
+    "worldName": "Detroit:  Become Human",
+    "rating": 3
+  },
+  {
+    "worldName": "Kengan Ashura",
+    "rating": 5
+  },
+  {
+    "worldName": "Subverse",
+    "rating": 6
+  },
+  {
+    "worldName": "God Eater",
+    "rating": 10,
+    "image": "https://i.pinimg.com/originals/d4/80/b4/d480b49e8927e2234d8d6c80d251c299.jpg"
+  },
+  {
+    "worldName": "Hercules/Xena",
+    "rating": 6
+  },
+  {
+    "worldName": "Jagaaaaaan",
+    "rating": 6,
+    "additional": "Fractured Human weaknesses are removed and they can now shift forms at will.<bg>Frenzied Frog and its variants are all considered Familiars."
+  },
+  {
+    "worldName": "Library of Ruina",
+    "rating": 6,
+    "image": "https://www.gameinformer.com/sites/default/files/styles/full/public/2021/08/17/653f6706/library-of-ruina.jpg",
+    "additional": "E.G.O. is enhanced by Psychic Talent, not Soul Talent.",
+    "condition": [
+      {
+        "name": "Before the White Nights and Dark days",
+        "rating": 6
+      },
+      {
+        "rating": 7,
+        "name": "Library already a Star of the City"
+      }
+    ]
+  },
+  {
+    "worldName": "Otoyomegatari",
+    "rating": 3,
+    "image": "https://i0.wp.com/anitrendz.net/news/wp-content/uploads/2022/02/A-Brides-Story-e1644307744648.jpg"
+  },
   {
     "worldName": "Tales of Demons and Gods",
     "rating": 7,
@@ -2805,8 +2910,24 @@
     "worldName": "Mother of Learning",
     "rating": 7
   },
-  {"worldName":"Trials In Tainted Space","rating":6,"image":"https://i.imgur.com/pPbYMZI.jpg"},
-  {"worldName":"True Blood","rating":5,"image":"https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/2bc08c23d2f7db38855f644791510d09.jpg"},
-  {"worldName":"Tsuki ga Michibiku Isekai Douchuu","rating":5,"image":"https://i0.wp.com/www.otakupt.com/wp-content/uploads/2021/07/Tsuki-ga-Michibiku-Isekai-Dochu-vol-DVDBD.jpg?fit=1280%2C720&ssl=1"},
-  {"worldName":"Yokohama Kaidashi Kikou","rating":1,"image":"https://image.tmdb.org/t/p/original/mRAxlNic5z6YZDFeZV3lineqfim.jpg"}
+  {
+    "worldName": "Trials In Tainted Space",
+    "rating": 6,
+    "image": "https://i.imgur.com/pPbYMZI.jpg"
+  },
+  {
+    "worldName": "True Blood",
+    "rating": 5,
+    "image": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/2bc08c23d2f7db38855f644791510d09.jpg"
+  },
+  {
+    "worldName": "Tsuki ga Michibiku Isekai Douchuu",
+    "rating": 5,
+    "image": "https://i0.wp.com/www.otakupt.com/wp-content/uploads/2021/07/Tsuki-ga-Michibiku-Isekai-Dochu-vol-DVDBD.jpg?fit=1280%2C720&ssl=1"
+  },
+  {
+    "worldName": "Yokohama Kaidashi Kikou",
+    "rating": 1,
+    "image": "https://image.tmdb.org/t/p/original/mRAxlNic5z6YZDFeZV3lineqfim.jpg"
+  }
 ]

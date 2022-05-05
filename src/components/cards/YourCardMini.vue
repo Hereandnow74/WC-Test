@@ -68,6 +68,7 @@ const noUC = computed(() => findIndex(miscPerks.value, { title: 'Universal Calib
 const allChars = ref<DBCharacter[]>([])
 const image = ref(startingOrigin.value.image || '')
 
+// TODO: change to Object
 getAllChars().then(chars => allChars.value = chars)
 
 const char = computed(() => allChars.value[findIndex(allChars.value, { u: startingOrigin.value.uid })] || {})

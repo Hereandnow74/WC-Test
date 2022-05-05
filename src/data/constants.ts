@@ -314,6 +314,8 @@ export const getAllChars = async() => {
     running = true
     allChars.value.push(...(await getChars()), ...(await getUserChars()))
     running = false
+    if (localUserCharacters.value.length)
+      allChars.value.push(...localUserCharacters.value.map(x => ({ u: x.uid, n: x.name, w: x.world, t: x.tier, d: x.sub, b: x.tags, i: x.image, in: x.image_nsfw })))
   }
 
   return allChars.value
@@ -325,9 +327,6 @@ const allCharsObject = {} as Record<number, DBCharacter>
 export const getAllCharsObject = async() => {
   if (!allCharsObject[0])
     [...(await getAllChars())].forEach(x => allCharsObject[x.u] = x)
-  if (localUserCharacters.value.length)
-    localUserCharacters.value.forEach(x => allCharsObject[x.uid] = { u: x.uid, n: x.name, w: x.world, t: x.tier, d: x.sub, b: x.tags, i: x.image, in: x.image_nsfw })
-
   return allCharsObject
 }
 

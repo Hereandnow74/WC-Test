@@ -20,7 +20,7 @@
                 :key="tf[0]"
                 class="text-violet-400"
               >
-                ({{ tf[0] }} <span class="text-gray-400">has</span>
+                ({{ tf[0] }} <span class="text-gray-400">{{ tf[0] === 'You' ? 'have' : 'has' }}</span>
                 <List :list-key="'flavor'" :list="tf[1]" color="text-green-500" start="" end="" />)
               </span>
             </template>

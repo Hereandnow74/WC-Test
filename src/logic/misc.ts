@@ -125,17 +125,36 @@ export function imageLink(link: string, uid: number) {
   return link
 }
 
-export async function charSearch() {
+// export async function charSearch() {
+//   const allChars = await getAllChars()
+//   const options = {
+//     findAllMatches: true,
+//     threshold: 0.5,
+//     keys: ['n', 'w'],
+//   }
+
+//   const fuse = new Fuse(allChars, options)
+
+//   return fuse
+// }
+
+const charSearch = computed(async() => {
   const allChars = await getAllChars()
   const options = {
     findAllMatches: true,
-    threshold: 0.1,
-    keys: ['n', 'w'],
+    threshold: 0.5,
+    keys: [{ name: 'n', weight: 2 }, 'w'],
   }
 
   const fuse = new Fuse(allChars, options)
 
   return fuse
+})
+
+export function useCharSearch() {
+  return {
+    charSearch,
+  }
 }
 
 const {
@@ -187,7 +206,7 @@ function buildString(title: string, items: Perk[], left: object) {
         if (['OC Donut Steel', 'Power Swap'].includes(x.title)) pw = ' powers'
         const grouped = groupBy(x.complex, c => c.target)
         complexBoth = squreType(`${Object.entries(grouped)
-          .map(x => `${x[0]} has ${x[1]
+          .map(x => `${x[0]} ${x[0] === 'You' ? 'have' : 'has'} ${x[1]
             .map(f => f.flavor).join(', ')}${pw}`).join(', ')}`)
       }
       if (x.complex[0].flavor)

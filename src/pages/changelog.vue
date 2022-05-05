@@ -5,6 +5,18 @@
     </h2>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
+        04 May 2022
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>~46 new user submitted characters, new missions</li>
+        <li>Archdeity of Eternity work now.</li>
+        <li>You can use local chars for possess/substitute/power swap/etc., optimized power swap/template stacking dialog - should not lag that much.</li>
+        <li>Companion/Familiar/Devotee filter in Retinue tab</li>
+        <li>Bugfixes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
         01 May 2022
       </h3>
       <ul class="list-decimal list-inside">

@@ -3033,7 +3033,8 @@
       "C",
       "de"
     ],
-    "d": "10: Mountain of Faith"
+    "d": "10: Mountain of Faith",
+    "in": "https://i.imgur.com/R6lyjKO.png"
   },
   {
     "u": 9453,
@@ -3192,9 +3193,11 @@
     "b": [
       "F",
       "C",
-      "de"
+      "de",
+      "Yokai"
     ],
-    "d": "11: Subterranean Animism"
+    "d": "11: Subterranean Animism",
+    "in": "https://i.imgur.com/qgQLehB.jpg"
   },
   {
     "u": 9464,
@@ -3437,10 +3440,12 @@
     "b": [
       "F",
       "C",
+      "cl",
       "mp",
       "Yokai"
     ],
-    "d": "13.5: Hopeless Masquerade"
+    "d": "13.5: Hopeless Masquerade",
+    "in": "https://i.imgur.com/DxAgawJ.png"
   },
   {
     "u": 9481,
@@ -3619,22 +3624,27 @@
     "w": "Touhou",
     "b": [
       "F",
-      "C"
+      "C",
+      "fm",
+      "lm",
+      "gd"
     ],
-    "d": "15: Legacy of Lunatic Kingdom"
+    "d": "15: Legacy of Lunatic Kingdom",
+    "in": "https://i.imgur.com/fRKDJEC.png"
   },
   {
     "u": 9494,
     "n": "Clownpiece",
     "t": 7,
-    "i": "ter__sample_673bb768e41437bf304ab0d903f4d6b6.jpg",
-    "s": "https://danbooru.donmai.us/posts/2102118",
+    "i": "https://i.imgur.com/umFk7Pul.png",
+    "s": "https://i.imgur.com/umFk7Pu.png",
     "w": "Touhou",
     "b": [
       "F",
       "C"
     ],
-    "d": "15: Legacy of Lunatic Kingdom"
+    "d": "15: Legacy of Lunatic Kingdom",
+    "in": "https://i.imgur.com/XUv1FPx.png"
   },
   {
     "u": 9495,
@@ -4367,7 +4377,8 @@
       "im",
       "rg"
     ],
-    "d": "8: Imperishable Night"
+    "d": "8: Imperishable Night",
+    "in": "https://i.imgur.com/XOCCus7.png"
   },
   {
     "u": 9443,
@@ -4421,7 +4432,8 @@
       "F",
       "C"
     ],
-    "d": "9: Phantasmagoria of Flower View"
+    "d": "9: Phantasmagoria of Flower View",
+    "in": "https://i.imgur.com/Y5IDr4F.png"
   },
   {
     "u": 1842,
@@ -17752,7 +17764,8 @@
     "b": [
       "F",
       "C"
-    ]
+    ],
+    "in": "https://infinitehentai.com/uploads/post_items/image/large/403/4035605-cf6f4.jpg"
   },
   {
     "u": 6282,
@@ -22008,7 +22021,8 @@
     "w": "Danmachi",
     "b": [
       "F",
-      "C"
+      "C",
+      "az"
     ],
     "d": "Ganesha Familia"
   },
@@ -22087,7 +22101,8 @@
     "w": "Danmachi",
     "b": [
       "F",
-      "C"
+      "C",
+      "el"
     ],
     "d": "Guild",
     "s": "https://static.wikia.nocookie.net/dungeon-ni-deai-o-motomeru/images/9/9e/Sophie_Anime.jpg"
@@ -22154,7 +22169,8 @@
     "w": "Danmachi",
     "b": [
       "F",
-      "C"
+      "C",
+      "dh"
     ],
     "d": "Hermes Familia"
   },
@@ -23000,7 +23016,8 @@
     "s": "https://static.wikia.nocookie.net/dungeon-ni-deai-o-motomeru/images/f/f5/Love_Silva_2.jpg/revision/latest?cb=20200701064218",
     "w": "Danmachi",
     "b": [
-      "F"
+      "F",
+      "ct"
     ]
   },
   {
@@ -25079,8 +25096,10 @@
     "w": "DC (Gotham)",
     "b": [
       "F",
-      "C"
-    ]
+      "C",
+      "nj"
+    ],
+    "in": "https://i.imgur.com/pidZHhq.jpg"
   },
   {
     "u": 9611,
@@ -26732,12 +26751,13 @@
     "u": 2917,
     "n": "Piyomon",
     "t": 5,
-    "i": "",
-    "s": "https://wikimon.net/Piyomon",
+    "i": "[n]Piyomon_tri4.jpg",
+    "s": "https://wikimon.net/images/b/bb/Piyomon_tri4.jpg",
     "w": "Digimon",
     "b": [
       "O"
-    ]
+    ],
+    "in": "https://i0.wp.com/img.rule34.xxx/images/1601/b76c7965dca3406f087a6218250e4f073c0c377c.png"
   },
   {
     "u": 2918,
@@ -26798,12 +26818,13 @@
     "u": 2923,
     "n": "Palmon",
     "t": 5,
-    "i": "",
-    "s": "https://wikimon.net/Palmon",
+    "i": "[n]png-transparent-palmon-digimon-digivolution-mimi-tachikawa-gomamon-green-plant-child-vertebrate-cartoon.png",
+    "s": "https://w7.pngwing.com/pngs/821/435/png-transparent-palmon-digimon-digivolution-mimi-tachikawa-gomamon-green-plant-child-vertebrate-cartoon.png",
     "w": "Digimon",
     "b": [
       "O"
-    ]
+    ],
+    "in": "https://w640.luscious.net/GodInuyasha/317966/1932912-digimon-palmon-avante92_01CK2R5DB9P3TMGW9W3R8BKFDC.640x0.jpg"
   },
   {
     "u": 2924,
@@ -27139,12 +27160,13 @@
     "u": 2954,
     "n": "Tailmon",
     "t": 7,
-    "i": "",
-    "s": "https://wikimon.net/Tailmon",
+    "i": "[n]8ba78c326ec74dbabea0326462266c27.jpg",
+    "s": "https://i.pinimg.com/originals/8b/a7/8c/8ba78c326ec74dbabea0326462266c27.jpg",
     "w": "Digimon",
     "b": [
       "O"
-    ]
+    ],
+    "in": "https://iili.io/W37Zdv.png"
   },
   {
     "u": 2955,
@@ -28119,12 +28141,13 @@
     "u": 3043,
     "n": "Impmon",
     "t": 4,
-    "i": "",
-    "s": "https://wikimon.net/Impmon",
+    "i": "[n]Impmon_New_Century.png",
+    "s": "https://wikimon.net/images/7/7d/Impmon_New_Century.png",
     "w": "Digimon",
     "b": [
       "O"
-    ]
+    ],
+    "in": "https://static2.hentai-img.com/upload/20160824/86/87577/45.jpg"
   },
   {
     "u": 3044,
@@ -28268,8 +28291,8 @@
     "u": 3056,
     "n": "Lopmon",
     "t": 5,
-    "i": "",
-    "s": "https://wikimon.net/Lopmon",
+    "i": "[n]Lopmon_Newcentury.png",
+    "s": "https://wikimon.net/images/e/ec/Lopmon_Newcentury.png",
     "w": "Digimon",
     "b": [
       "O"
@@ -28841,7 +28864,8 @@
     "b": [
       "F",
       "mr"
-    ]
+    ],
+    "in": "https://xn--r8jwklh769h2mc880dk1o431a.com/wp-content/uploads/2021/04/03/cs010.jpg"
   },
   {
     "u": 3108,
@@ -30486,8 +30510,8 @@
     "u": 5386,
     "n": "Jeri/Juri",
     "t": 1,
-    "i": "digimon.tamers.full.2009064.jpg",
-    "s": "https://static.zerochan.net/Digimon.Tamers.full.2009064.jpg",
+    "i": "[n]919e8bcc0d3775dc3328be0783cb4f51.png",
+    "s": "https://i.pinimg.com/originals/91/9e/8b/919e8bcc0d3775dc3328be0783cb4f51.png",
     "w": "Digimon",
     "b": [
       "F"
@@ -30540,23 +30564,25 @@
     "u": 5392,
     "n": "Darcmon",
     "t": 5,
-    "i": "darcmon_m09.jpg",
-    "s": "https://wikimon.net/images/thumb/e/e1/Darcmon_M09.JPG/300px-Darcmon_M09.JPG",
+    "i": "[n]1132467.gif",
+    "s": "https://img.faloo.com/NovelNode/0x0/1/1132/1132467.gif",
     "w": "Digimon",
     "b": [
       "F"
-    ]
+    ],
+    "in": "https://img03.cweb-pix.com/images/2016/09/03/01ae3c97e9df389972667fd50efae8e0.jpg"
   },
   {
     "u": 5393,
     "n": "Yoshi/Yoshino",
     "t": 3,
-    "i": "",
-    "s": "https://img2.gelbooru.com/images/97/5d/975d6bf5fd17973eded4f006f1c805b6.jpg",
+    "i": "[n]7b121933.jpg",
+    "s": "https://livedoor.sp.blogimg.jp/polygonz373100-10/imgs/7/b/7b121933.jpg",
     "w": "Digimon",
     "b": [
       "F"
-    ]
+    ],
+    "in": "https://livedoor.blogimg.jp/fumidari/imgs/1/3/13d814dc.jpg"
   },
   {
     "u": 5394,
@@ -44182,12 +44208,13 @@
     "u": 2586,
     "n": "Rune",
     "t": 3,
-    "i": "",
+    "i": "[n]SR-npc-Rune.jpg",
     "w": "The Elder Scrolls",
     "b": [
       "F"
     ],
-    "d": "Skyrim"
+    "d": "Skyrim",
+    "s": "https://images.uesp.net/f/f1/SR-npc-Rune.jpg"
   },
   {
     "u": 2587,
@@ -56079,7 +56106,8 @@
     "w": "Full Metal Panic",
     "b": [
       "F",
-      "C"
+      "C",
+      "mi"
     ]
   },
   {
@@ -77094,7 +77122,9 @@
     "s": "https://static.zerochan.net/Kanokon.full.546388.jpg",
     "w": "Kanokon",
     "b": [
-      "F"
+      "F",
+      "mi",
+      "tw"
     ]
   },
   {
@@ -83577,7 +83607,8 @@
     "w": "Log Horizon",
     "b": [
       "F",
-      "C"
+      "C",
+      "hl"
     ],
     "s": "https://i.pinimg.com/originals/f8/de/78/f8de7867b2d4b9c8277fe81b27fe55ad.jpg"
   },
@@ -93224,15 +93255,15 @@
     "u": 8417,
     "n": "Liara T'soni",
     "t": 5,
-    "i": "0b0c3c569d70c91cf126f80993af8ecb.jpg",
-    "s": "https://chan.sankakucomplex.com/post/show/1157084",
+    "i": "https://i.imgur.com/qxvl3rIl.jpg",
+    "s": "https://i.imgur.com/qxvl3rI.jpg",
     "w": "Mass Effect",
     "b": [
       "F",
       "sn",
       "al"
     ],
-    "in": "http://pictures.hentai-foundry.com/h/H1kar1ko/378176/H1kar1ko-378176-Liara_TSoni_Mass_Effect.jpg"
+    "in": "https://i.imgur.com/x9SSGiz.jpg"
   },
   {
     "u": 8418,
@@ -94589,7 +94620,8 @@
       "F",
       "C",
       "im",
-      "sd"
+      "sd",
+      "rg"
     ]
   },
   {
@@ -95565,7 +95597,8 @@
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/0/0d/C28Zg4ZWIAAqmwL.png/revision/latest?cb=20170218204602",
     "w": "Monster Girl Encyclopedia",
     "b": [
-      "F"
+      "F",
+      "el"
     ]
   },
   {
@@ -100092,12 +100125,13 @@
     "u": 9107,
     "n": "Tasia",
     "t": 3,
-    "i": "d8pjd8n_7c179217_67ae_40b1_ba64_a235886adf19.png",
-    "s": "https://www.deviantart.com/hangman95/art/MK-Render-Edits-Tasia-Second-Edition-526623431",
+    "i": "https://i.imgur.com/NUouuDSl.png",
+    "s": "https://i.imgur.com/NUouuDS.png",
     "w": "Mortal Kombat",
     "b": [
       "F",
-      "C"
+      "C",
+      "nj"
     ]
   },
   {
@@ -100490,7 +100524,9 @@
     "w": "My Hero Academia",
     "b": [
       "F",
-      "C"
+      "C",
+      "en",
+      "sn"
     ],
     "d": "Civilians"
   },
@@ -100740,7 +100776,10 @@
     "w": "My Hero Academia",
     "b": [
       "F",
-      "C"
+      "C",
+      "dh",
+      "sp",
+      "az"
     ],
     "d": "Pro Heroes"
   },
@@ -101411,7 +101450,9 @@
     "s": "https://derpicdn.net/img/2017/6/10/1458213/large.jpeg",
     "w": "My Little Pony",
     "b": [
-      "F"
+      "F",
+      "mi",
+      "tw"
     ]
   },
   {
@@ -108511,6 +108552,9 @@
     "w": "Overlord",
     "b": [
       "M",
+      "id",
+      "tm",
+      "me",
       "un",
       "rl"
     ]
@@ -109574,7 +109618,8 @@
     "w": "Pandora (Borderlands)",
     "b": [
       "F",
-      "C"
+      "C",
+      "en"
     ],
     "d": "Borderlands",
     "in": "https://pictures.hentai-foundry.com/l/LumiNyu/669047/LumiNyu-669047-Mad_Moxxi.jpg"
@@ -110357,7 +110402,8 @@
     "s": "https://chan.sankakucomplex.com/post/show/7348461",
     "w": "Pokemon",
     "b": [
-      "F"
+      "F",
+      "mt"
     ]
   },
   {
@@ -119634,11 +119680,12 @@
     "u": 13404,
     "n": "Cutiefly",
     "t": 3,
-    "i": "",
+    "i": "https://i.imgur.com/AlMC0cMl.png",
     "w": "Pokemon Expansion",
     "b": [
       "mr"
-    ]
+    ],
+    "s": "https://i.imgur.com/AlMC0cM.png"
   },
   {
     "u": 13405,
@@ -119857,11 +119904,12 @@
     "u": 13426,
     "n": "Comfey",
     "t": 6,
-    "i": "",
+    "i": "https://i.imgur.com/KLkvSaGl.png",
     "w": "Pokemon Expansion",
     "b": [
       "mr"
-    ]
+    ],
+    "s": "https://i.imgur.com/KLkvSaG.png"
   },
   {
     "u": 13427,
@@ -126019,8 +126067,10 @@
     "w": "Rising of the Shield Hero",
     "b": [
       "F",
+      "mr",
       "sr"
-    ]
+    ],
+    "in": "https://cdn.donmai.us/sample/6d/99/__firo_tate_no_yuusha_no_nariagari_drawn_by_xiaoxi0619__sample-6d997dbb4fc858d61d2e40f0f01e6e4a.jpg"
   },
   {
     "u": 4939,
@@ -126033,7 +126083,8 @@
       "F",
       "me",
       "pc"
-    ]
+    ],
+    "in": "https://cdn.donmai.us/sample/7f/21/__melty_q_melromarc_tate_no_yuusha_no_nariagari_drawn_by_xiaoxi0619__sample-7f21a621aea097557d0c9c8f805bfc40.jpg"
   },
   {
     "u": 4940,
@@ -127169,7 +127220,8 @@
     "w": "RWBY",
     "b": [
       "F",
-      "C"
+      "C",
+      "en"
     ],
     "in": "https://peach.paheal.net/_images/9041e3cde6a5c5248b418d8f2c4751ff/4562503%20-%20RWBY%20Ruby_Rose%20genso-x.jpg"
   },
@@ -128294,8 +128346,8 @@
     "u": 9522,
     "n": "Luna Child",
     "t": 6,
-    "i": "oki__sample_698e7c6240eb84cbcf65af23b073632f.jpg",
-    "s": "https://danbooru.donmai.us/posts/2233192",
+    "i": "https://i.imgur.com/7lfNamPl.png",
+    "s": "https://i.imgur.com/7lfNamP.png",
     "w": "Touhou",
     "b": [
       "F",
@@ -140006,12 +140058,16 @@
     "u": 4484,
     "n": "Dr. Lillian Margaliss",
     "t": 2,
-    "i": "https://i.imgur.com/oRabTmjl.png",
+    "i": "https://i.imgur.com/3iAu7QAl.jpg",
     "w": "Subverse",
     "b": [
-      "F"
+      "F",
+      "dc",
+      "sn",
+      "gn"
     ],
-    "s": "https://i.imgur.com/oRabTmj.png"
+    "s": "https://i.imgur.com/3iAu7QA.jpg",
+    "in": "https://i.imgur.com/Fq7LVQf.jpg"
   },
   {
     "u": 4485,
@@ -140038,12 +140094,15 @@
     "u": 4487,
     "n": "Elaisha Sorn",
     "t": 3,
-    "i": "[n]Ela_Profile_Main_Menu.jpg",
+    "i": "https://i.imgur.com/lAKIbpFl.jpg",
     "w": "Subverse",
     "b": [
-      "F"
+      "F",
+      "ml",
+      "el"
     ],
-    "s": "https://subverse.wiki/mediawiki/images/e/e7/Ela_Profile_Main_Menu.jpg"
+    "s": "https://i.imgur.com/lAKIbpF.jpg",
+    "in": "https://i.imgur.com/Fd45HDh.jpg"
   },
   {
     "u": 4488,
@@ -140060,12 +140119,16 @@
     "u": 4489,
     "n": "Va'raz Killision the Red",
     "t": 3,
-    "i": "https://i.imgur.com/Q6uhXV1l.png",
+    "i": "https://i.imgur.com/I9G9CqZl.jpg",
     "w": "Subverse",
     "b": [
-      "F"
+      "F",
+      "hr",
+      "ml",
+      "rl",
+      "al"
     ],
-    "s": "https://i.imgur.com/Q6uhXV1.png"
+    "s": "https://i.imgur.com/I9G9CqZ.jpg"
   },
   {
     "u": 4490,

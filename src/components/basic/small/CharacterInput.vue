@@ -24,7 +24,7 @@
 
 <script lang='ts' setup>
 import tippy from 'tippy.js'
-import { charSearch } from '~/logic'
+import { useCharSearch } from '~/logic'
 
 const props = defineProps({
   modelValue: {
@@ -48,8 +48,10 @@ const gotResult = ref(false)
 
 const searchResult = ref([] as any[])
 
+const { charSearch } = useCharSearch()
+
 let fuse = null
-charSearch().then(res => fuse = res)
+charSearch.value.then(res => fuse = res)
 
 watch(value, () => { if (fuse) searchResult.value = fuse.search(value.value, { limit: 10 }) })
 

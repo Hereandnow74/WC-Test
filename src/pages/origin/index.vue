@@ -90,7 +90,7 @@
           : 'gray-200 dark:gray-600'"
         :is-active="findIndex(patron, { title: pt.title }) !== -1"
         @pickPerk="choosePatron"
-      />
+      ></Patron>
     </div>
   </div>
 </template>

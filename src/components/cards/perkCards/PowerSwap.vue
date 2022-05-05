@@ -160,8 +160,10 @@ const swapPower = reactive<Record<string, CharPower>>(companionsWithoutSold.valu
 swapPower[startingOrigin.value.character || 'You'] = { name: '', tier: startingOrigin.value.tier || 1, swap: 0 }
 
 props.savedPerk?.complex?.forEach((x) => {
-  swapPower[x.target].name = x.flavor
-  swapPower[x.target].swap = x.newTier || 0
+  if (swapPower[x.target]) {
+    swapPower[x.target].name = x.flavor
+    swapPower[x.target].swap = x.newTier || 0
+  }
 })
 
 const showBuyPerk = ref(false)

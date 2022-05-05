@@ -45,6 +45,7 @@
           <fa-solid:sort-numeric-up v-else class="inline-block rounded" />
         </div>
       </div>
+      <Variants v-model="roleFilter" :list="['All', 'Companion', 'Familiar', 'Devotee']" theme="dark" />
     </div>
     <div
       class="overflow-y-auto min-h-0 scrollbar"
@@ -104,6 +105,7 @@ const specificPerksWithDLC = waifu_perks.concat(DLCwaifu_perks)
 
 const waifuList = ref(null)
 const filters = useStorage('companionFilters', [true, true, true])
+const roleFilter = ref('All')
 
 const sortRating = ref(0)
 const sortAlpha = ref(0)
@@ -121,8 +123,9 @@ const filteredMethods = computed(() => {
 })
 
 const companionsDataFiltered = computed(() => companionsData.value.filter((nion) => {
+  if (roleFilter.value !== 'All' && !nion.sold) return (nion.role === roleFilter.value || (!nion.role && roleFilter.value === 'Companion')) && filteredMethods.value.includes(nion.method)
   if (filteredMethods.value.includes(nion.method) && !nion.sold) return true
-  if (filters.value[2] && nion.sold) return true
+  if (filters.value[2] && nion.sold && roleFilter.value === 'All') return true
   return false
 }))
 
