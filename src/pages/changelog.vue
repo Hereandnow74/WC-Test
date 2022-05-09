@@ -5,6 +5,18 @@
     </h2>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
+        08 May 2022
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>~90 new user submitted characters, new missions</li>
+        <li>16 new Worlds, some number of new conditions</li>
+        <li>Separate setting for hiding world and companion images.</li>
+        <li>Official worlds now can have unnofficial conditions and they should be color marked the same as worlds (if you notice wrong colors assigned to worlds/conditions send me a bug-report on Discord)</li>
+        <li>Bugfixes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
         04 May 2022
       </h3>
       <ul class="list-decimal list-inside">
@@ -728,7 +740,3 @@
     </div>
   </div>
 </template>
-
-<script lang='ts' setup>
-
-</script>

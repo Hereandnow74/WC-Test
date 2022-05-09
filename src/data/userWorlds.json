@@ -54,7 +54,8 @@
   },
   {
     "worldName": "Date A Live",
-    "rating": 8
+    "rating": 8,
+    "image": "https://artfiles.alphacoders.com/123/123660.jpg"
   },
   {
     "worldName": "Devil May Cry",
@@ -84,7 +85,8 @@
   },
   {
     "worldName": "Farscape",
-    "rating": 6
+    "rating": 6,
+    "image": "https://web.archive.org/web/20121109185024/http://dreamworlds.ru/uploads/posts/2011-04/1303669791_31.jpg"
   },
   {
     "worldName": "Generator Rex",
@@ -92,7 +94,8 @@
   },
   {
     "worldName": "Goblin Slayer",
-    "rating": 7
+    "rating": 7,
+    "image": "https://preview.redd.it/h8rtwsjof2z11.jpg?width=960&crop=smart&auto=webp&s=c42d1c161bc1b1a0824125c6441205a7df651963"
   },
   {
     "worldName": "Golarion/Pathfinder",
@@ -108,41 +111,6 @@
       }
     ],
     "image": "https://i.ytimg.com/vi/ESoB9KD3yKg/maxresdefault.jpg"
-  },
-  {
-    "worldName": "Halo",
-    "rating": 7,
-    "additional": "Cortana, regardless of whether she yet exists, will be plugged into your smart device and be completely immune to rampancy. The Tier 5 version of her reflects her status at the end of the original trilogy. Body Talent will give Spartans a functioning sex drive, and guarantees the level of no lower than Spartan-II physiology.",
-    "condition": [
-      {
-        "name": "Precursor Golden Age",
-        "rating": 2
-      },
-      {
-        "rating": 8,
-        "name": "Forerunner-Precursor War"
-      },
-      {
-        "rating": 3,
-        "name": "Ancient Humanity Golden Age"
-      },
-      {
-        "rating": 8,
-        "name": "Human-Forerunner War"
-      },
-      {
-        "name": "Forerunner-Flood War",
-        "rating": 10
-      },
-      {
-        "name": "Human-Covenant War (Original Trilogy)",
-        "rating": 7
-      },
-      {
-        "name": "Post Covanent War (Halo 4 and 5)",
-        "rating": 6
-      }
-    ]
   },
   {
     "worldName": "Harry Potter",
@@ -242,7 +210,8 @@
         "name": "The Black",
         "rating": 8
       }
-    ]
+    ],
+    "image": "https://www.wallpaperup.com/uploads/wallpapers/2015/10/27/825500/8461900d42729aeddea392f3a11a0315.jpg"
   },
   {
     "worldName": "Pathfinder",
@@ -252,7 +221,8 @@
         "name": "Planar Crisis",
         "rating": 10
       }
-    ]
+    ],
+    "image": "https://avatars.mds.yandex.net/i?id=554d602fc8fc58dee692057dd6b546c6_l-5253517-images-thumbs&ref=rim&n=13&w=1000&h=666"
   },
   {
     "worldName": "Release That Witch",
@@ -307,7 +277,8 @@
   },
   {
     "worldName": "Tower of God",
-    "rating": 8
+    "rating": 8,
+    "image": "https://m.media-amazon.com/images/M/MV5BZGM4NjE1OWYtNzcwMC00ZGY0LWE4NjEtZTgzYzY4YWU5M2E3XkEyXkFqcGdeQXVyMzI2Mjc1NjQ@._V1_FMjpg_UX1000_.jpg"
   },
   {
     "worldName": "Yamada-kun and the Seven Witches",
@@ -507,7 +478,6 @@
   {
     "worldName": "Shinmai Maou",
     "rating": 6,
-    "image": "https://i.imgur.com/4QrkujBl.png?1",
     "additional": "Body Defense will protect you from all the negatives effects of the Master-Servant Contract."
   },
   {
@@ -587,11 +557,7 @@
     ],
     "image": "https://evedonusfilm.com/wp-content/uploads/2021/07/HOTD.jpg"
   },
-  {
-    "worldName": "How Not to Summon a Demon Lord",
-    "rating": 8,
-    "image": "https://images.alphacoders.com/951/951895.jpg"
-  },
+  {"worldName":"How Not to Summon a Demon Lord","rating":8,"image":"https://images.alphacoders.com/951/951895.jpg","condition":[{"rating":2,"name":"Earth"},{"name":"Cross Reverie ","rating":8}]},
   {
     "worldName": "Inheritance",
     "rating": 5,
@@ -659,7 +625,8 @@
         "name": "Gourmet World",
         "rating": 9
       }
-    ]
+    ],
+    "image": "https://3.bp.blogspot.com/-CxJn4KPT_ow/WZdtucyzO6I/AAAAAAAACGk/JfEUHz3vUBo6C5kACN8qT1zwwuTzM1nSQCLcBGAs/s1600/Toriko_1.jpg"
   },
   {
     "worldName": "1984",
@@ -770,11 +737,8 @@
   {
     "worldName": "Psyren",
     "rating": 6,
-    "additional": "Walk in/Drop-in do not gain a power from psyren's atmosphere, Extras do but it is completely random strength."
-  },
-  {
-    "worldName": "Sailor Moon Manga",
-    "rating": 10
+    "additional": "Walk in/Drop-in do not gain a power from psyren's atmosphere, Extras do but it is completely random strength.",
+    "image": "https://pm1.narvii.com/6192/dba1f4a86ca06c8df971a3122f17342cad15a18e_hq.jpg"
   },
   {
     "worldName": "Subnautica",
@@ -889,16 +853,6 @@
     ]
   },
   {
-    "worldName": "Babylon 5",
-    "rating": 5,
-    "condition": [
-      {
-        "rating": 7,
-        "name": "Shadow War"
-      }
-    ]
-  },
-  {
     "worldName": "Black Lagoon",
     "rating": 3
   },
@@ -962,48 +916,6 @@
     "rating": 7
   },
   {
-    "worldName": "Warcraft",
-    "rating": 5,
-    "condition": [
-      {
-        "name": "During the Events of WoW 'Classic'",
-        "rating": 6
-      },
-      {
-        "name": "During the Events of WoW 'The Burning Crusade'",
-        "rating": 7
-      },
-      {
-        "name": "During the Events of WoW 'Wrath of the Lich King'",
-        "rating": 8
-      },
-      {
-        "rating": 8,
-        "name": "During the Events of WoW 'Cataclysm'"
-      },
-      {
-        "rating": 7,
-        "name": "During the Events of WoW 'Mists of Pandaria'"
-      },
-      {
-        "rating": 7,
-        "name": "During the Events of WoW 'Warlords of Draenor'"
-      },
-      {
-        "rating": 8,
-        "name": "During the Events of WoW 'Legion'"
-      },
-      {
-        "rating": 8,
-        "name": "During the Events of WoW 'Battle for Azeroth'"
-      },
-      {
-        "name": "During the Events of WoW 'Shadowlands'",
-        "rating": 9
-      }
-    ]
-  },
-  {
     "worldName": "Andromeda",
     "rating": 8,
     "image": "https://upload.wikimedia.org/wikipedia/en/5/5e/Andromeda_title_card.jpg"
@@ -1013,8 +925,8 @@
     "rating": 4,
     "condition": [
       {
-        "rating": 5,
-        "name": "Zombie can remain silent for surprise attacks, and decay much slower"
+        "rating": 2,
+        "name": "Before Z-Day"
       }
     ]
   },
@@ -1048,7 +960,8 @@
         "rating": 6,
         "name": "Candy Kingdom"
       }
-    ]
+    ],
+    "image": "https://images4.imagebam.com/b4/10/b7/MEA0MYF_o.png"
   },
   {
     "worldName": "Psychonauts",
@@ -1100,7 +1013,8 @@
   },
   {
     "worldName": "Archer",
-    "rating": 2
+    "rating": 2,
+    "image": "https://wallpapertag.com/wallpaper/full/d/6/2/382886-archer-wallpaper-1920x1080-for-htc.jpg"
   },
   {
     "worldName": "Supernatural",
@@ -1214,7 +1128,8 @@
   },
   {
     "worldName": "Soul Calibur",
-    "rating": 3
+    "rating": 3,
+    "image": "https://lh3.googleusercontent.com/Z4PVmJjGsCtDJexzQitxFK1JY_y0Tt2mv5z7IazengxCZvWJxvxJtOjAGRv7XsvMubJxLNdaa5D3hUVh-MJLlAFkpyJaeHJR9pw_xsKoaS30LtO8jWLStJscgKAfAyTKARhAY8Ar"
   },
   {
     "worldName": "Kuma Kuma Kuma Bear",
@@ -1222,7 +1137,8 @@
   },
   {
     "worldName": "Huniepop",
-    "rating": 1
+    "rating": 1,
+    "image": "https://hentaiporns.net/wp-content/uploads/2016/01/HuniePot-HuniePop-Digital-Art-Collection-HuniePop000.jpg"
   },
   {
     "worldName": "Baki: The Grappler",
@@ -1363,7 +1279,8 @@
   },
   {
     "worldName": "Solo Leveling",
-    "rating": 10
+    "rating": 10,
+    "image": "https://d1ed0vta5mrb00.cloudfront.net/comics/187/thumbnails/cover_fa8c67b3-ba37-4b15-ad11-814280e945d8.jpg"
   },
   {
     "worldName": "Street Fighter",
@@ -1429,12 +1346,7 @@
   {
     "worldName": "Jak & Daxter",
     "rating": 5,
-    "condition": [
-      {
-        "name": "any other jak game",
-        "rating": 7
-      }
-    ]
+    "image": "https://statics.indozone.id/local/6200e6bd3f013.jpg"
   },
   {
     "worldName": "Kantai Collection",
@@ -1537,7 +1449,8 @@
   },
   {
     "worldName": "DOOM: Eternal",
-    "rating": 10
+    "rating": 10,
+    "image": "https://pbs.twimg.com/media/D8swD4TUYAI9RJn.jpg"
   },
   {
     "worldName": "Ghost in the Shell",
@@ -1637,7 +1550,8 @@
   },
   {
     "worldName": "Girls' Frontline",
-    "rating": 5
+    "rating": 5,
+    "image": "https://img.discuss.com.hk/d/attachments/day_180915/20180915_b6f791999cd265969ad774LH9skJlGzT.jpg"
   },
   {
     "worldName": "Hocus Pocus",
@@ -1738,16 +1652,7 @@
     "rating": 5,
     "image": "https://kakushidungeon-anime.jp/assets/intro/sld-4-sp.jpg"
   },
-  {
-    "worldName": "How to Train Your Dragon",
-    "rating": 3,
-    "condition": [
-      {
-        "rating": 4,
-        "name": "Dragons Raiding"
-      }
-    ]
-  },
+  {"worldName":"How to Train Your Dragon","rating":3,"condition":[{"name":"Dragons Raiding","rating":4},{"rating":5,"name":"Book Setting"},{"rating":6,"name":"Dragon Rebellion (Books)"}]},
   {
     "worldName": "Inukami",
     "rating": 5,
@@ -1886,11 +1791,6 @@
   {
     "worldName": "Omamori Himari",
     "rating": 5
-  },
-  {
-    "worldName": "Rakudai Kishi no Eiyuutan",
-    "rating": 6,
-    "image": "https://cdn11.neko-sama.xyz/1/1570p4orCOfy.jpg"
   },
   {
     "worldName": "Sora no Otoshimono",
@@ -2107,19 +2007,14 @@
   },
   {
     "worldName": "Underworld",
-    "rating": 1,
+    "rating": 3,
     "additional": "These vampires and werewolves are biological not magical and still have their souls.",
-    "condition": [
-      {
-        "name": "Involved in action",
-        "rating": 2
-      }
-    ],
     "image": "https://avatars.mds.yandex.net/i?id=b3c34594ec518143cf5856b1859ebed8_l-5235444-images-thumbs&ref=rim&n=13&w=1280&h=720"
   },
   {
     "worldName": "Azumanga Daioh",
-    "rating": 1
+    "rating": 1,
+    "image": "https://www.wallpaperflare.com/static/604/693/319/azumanga-daioh-girls-sky-smile-wallpaper.jpg"
   },
   {
     "worldName": "Binbougami Ga!",
@@ -2166,7 +2061,8 @@
   {
     "worldName": "God and Devil World",
     "rating": 9,
-    "additional": "Regardless of Arrival Time-Line you will be given access to the God and Devil System just the same as everyone else in the world, and it will function normally as such."
+    "additional": "Regardless of Arrival Time-Line you will be given access to the God and Devil System just the same as everyone else in the world, and it will function normally as such.",
+    "image": "https://2.bp.blogspot.com/-gVh1HOno3jE/Wy-k8i8tzQI/AAAAAAAAAGo/Rzypj_9CbB4fOrmGCQiuG4dcU4sEH-rgwCLcBGAs/w1200-h630-p-k-no-nu/godanddevilworld.jpg"
   },
   {
     "worldName": "Interstella 5555",
@@ -2174,7 +2070,8 @@
   },
   {
     "worldName": "Love Hina",
-    "rating": 1
+    "rating": 1,
+    "image": "https://image.tmdb.org/t/p/w1280/kcE0oKf6Lt5bYriMLJyEeyXhJ2i.jpg"
   },
   {
     "worldName": "Machikado Mazoku",
@@ -2182,7 +2079,8 @@
   },
   {
     "worldName": "Marvel Ultimate Universe",
-    "rating": 7
+    "rating": 7,
+    "image": "http://2.bp.blogspot.com/-5kyKLsz6FOY/Uxpdu6j6iUI/AAAAAAAAPBs/AiNwBESlXg0/s1600/ultmtespdrmn200pg3pic.jpg"
   },
   {
     "worldName": "Reboot",
@@ -2191,7 +2089,8 @@
   },
   {
     "worldName": "School Rumble",
-    "rating": 1
+    "rating": 1,
+    "image": "https://simkl.in/fanart/66/661680e0b229649b_medium.jpg"
   },
   {
     "worldName": "Slayers",
@@ -2212,7 +2111,8 @@
   },
   {
     "worldName": "Yotsuba&!",
-    "rating": 1
+    "rating": 1,
+    "image": "https://i.4pcdn.org/s4s/1628790967664.jpg"
   },
   {
     "worldName": "Zannen Jokanbu Black General-san",
@@ -2224,7 +2124,8 @@
   },
   {
     "worldName": "Acchi Kocchi",
-    "rating": 1
+    "rating": 1,
+    "image": "http://1.bp.blogspot.com/-XZNArkOZ4_g/VE_4cG35LWI/AAAAAAAAAz4/uR47054D_ks/s1600/acchi-kocchi-1.jpg"
   },
   {
     "worldName": "Armed Girl's Machiavellism",
@@ -2245,7 +2146,8 @@
   },
   {
     "worldName": "Bokuben: We Never Learn",
-    "rating": 1
+    "rating": 1,
+    "image": "https://image.tmdb.org/t/p/w1280/6tbyZtMYtiNzBy200VXku8jO9ws.jpg"
   },
   {
     "worldName": "Break Blade",
@@ -2257,7 +2159,8 @@
   },
   {
     "worldName": "Class President is a Maid!",
-    "rating": 1
+    "rating": 1,
+    "image": "https://images4.imagebam.com/c0/e9/0b/ME9WXB3_o.png"
   },
   {
     "worldName": "Cross Ange: Rondo of Angel and Dragon",
@@ -2321,7 +2224,8 @@
         "name": "Friends of Mineral Town",
         "rating": 1
       }
-    ]
+    ],
+    "image": "https://images4.imagebam.com/9b/b5/f3/ME9WWDG_o.png"
   },
   {
     "worldName": "Heavy Object",
@@ -2349,7 +2253,8 @@
   },
   {
     "worldName": "Kuroko's Basketball",
-    "rating": 1
+    "rating": 1,
+    "image": "https://s1.zerochan.net/Kiseki.no.Sedai.600.1690158.jpg"
   },
   {
     "worldName": "Legend of Queen Opala",
@@ -2427,10 +2332,7 @@
     "worldName": "Isekai Meikyu de Harem wo",
     "rating": 5
   },
-  {
-    "worldName": "Lucky Star",
-    "rating": 1
-  },
+  {"worldName":"Lucky Star","rating":1,"image":"https://i.imgur.com/Mu7LnTf.jpg"},
   {
     "worldName": "MapleStory",
     "rating": 8
@@ -2582,7 +2484,8 @@
   },
   {
     "worldName": "Hercules/Xena",
-    "rating": 6
+    "rating": 6,
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/G_X_H_I.jpg/1280px-G_X_H_I.jpg"
   },
   {
     "worldName": "Jagaaaaaan",
@@ -2929,5 +2832,21 @@
     "worldName": "Yokohama Kaidashi Kikou",
     "rating": 1,
     "image": "https://image.tmdb.org/t/p/original/mRAxlNic5z6YZDFeZV3lineqfim.jpg"
-  }
+  },
+  {"worldName":"Banner Saga","rating":5},
+  {"worldName":"Beware of Chicken","rating":6,"image":"https://i.imgur.com/ZS4Jr83.png","condition":[{"rating":4,"name":"Azure Hills"},{"name":"Howling Fang Mountains","rating":6}]},
+  {"worldName":"Bionicle","rating":8,"condition":[{"name":"The Melding","rating":4},{"rating":4,"name":"Spherus Magna"},{"name":"Toa Empire","rating":9},{"name":"The Kingdom","rating":9},{"name":"Takanuva Army","rating":10}]},
+  {"worldName":"Bravely Default","rating":6,"condition":[{"name":"Bravely Second ","rating":7},{"rating":10,"name":"Bravely Second (Missing Moon)"}]},
+  {"worldName":"Class ga Isekai","rating":2,"condition":[{"rating":2,"name":"Earth, Pre-canon."},{"rating":4,"name":"Earth, After the class was summoned."},{"rating":7,"name":"Anamzu."}]},
+  {"worldName":"Crysis","rating":5,"image":"https://i.imgur.com/jN3cAEu.jpeg"},
+  {"worldName":"Freezing","rating":6},
+  {"worldName":"Gantz","rating":8},
+  {"worldName":"Green Skin","rating":5,"condition":[{"name":"1st Timeline Kim Taesung's Tutorial","rating":5},{"rating":6,"name":"1st Timeline 10 years later"},{"name":"2nd Timeline Blood Dagger's Tutorial","rating":7},{"rating":8,"name":"2nd Timeline after 5 years"}]},
+  {"worldName":"Illuminated Until Death","rating":3},
+  {"worldName":"In Another World With My Smartphone","rating":4,"image":"https://i.imgur.com/dwIJGjV.jpg"},
+  {"worldName":"Kabaneri of the Iron Fortress ","rating":4,"additional":"Polymorph Defense will prevent being turned into a Kabane"},
+  {"worldName":"Lord of the Mysteries","rating":10},
+  {"worldName":"Mistborn","rating":10,"image":"https://i.pinimg.com/originals/e4/ef/7c/e4ef7c12ecb245ca74f06ba9dca19ffc.jpg"},
+  {"worldName":"Rakudai Kishi no Cavalry","rating":6,"image":"https://cdn11.neko-sama.xyz/1/1570p4orCOfy.jpg"},
+  {"worldName":"Valkyria Chronicles ","rating":5,"condition":[{"rating":5,"name":"Second Europa War - 1935"},{"rating":5,"name":"Gallian Civil War-1937"}]}
 ]

@@ -12,7 +12,7 @@
 <script lang='ts' setup>
 import type { PropType } from 'vue'
 
-const props = defineProps({
+defineProps({
   list: {
     type: Array as PropType<any[]>,
     default: () => [],

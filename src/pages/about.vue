@@ -6,8 +6,8 @@
       </h3>
       <div>
         Time I spend on Interactive Waifu Catalog so far -
-        <span class="text-amber-500 text-2xl">{{ 423 + 287 }}</span> hours in
-        <span class="text-amber-500 text-2xl">{{ 107 + 90 }}</span> days.
+        <span class="text-amber-500 text-2xl">{{ 423 + 357 }}</span> hours in
+        <span class="text-amber-500 text-2xl">{{ 107 + 118 }}</span> days.
       </div>
       <div>
         If you found some bugs, have any questions about Interactive, suggestions, collaborations or you want to hire me
@@ -73,14 +73,16 @@ const nicknames = [
   'Definitely not Dio',
   'Templar9999',
   'Despin',
-  'BenFang322',
+  'Bryce C.',
   'Cyrus',
+  'BenFang322',
+  'Jason C.',
   'Darin E.',
   'Alex W.',
-  'KatzSmile',
-  'Bryce C.',
   'TaiGambol',
   'Cole',
+  'KatzSmile',
+  'Beatrix',
 ]
 
 getUserChars().then(x => Object.entries(countBy(x, c => c.k))

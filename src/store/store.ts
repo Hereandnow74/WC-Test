@@ -336,6 +336,7 @@ const settings = useStorage('settings', {
   nsfw: false,
   perkImages: true,
   columns: 'auto' as number | 'auto',
+  hideWorldImg: false,
   allImg: false,
   ableSell: true,
   hideDesc: false,

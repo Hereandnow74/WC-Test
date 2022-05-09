@@ -5,11 +5,13 @@
     "condition": [
       {
         "name": "Earth",
-        "rating": 1
+        "rating": 1,
+        "a": "c"
       },
       {
         "name": "Space",
-        "rating": 5
+        "rating": 5,
+        "a": "c"
       }
     ],
     "image": "https://wallpapertag.com/wallpaper/full/6/f/d/762006-widescreen-to-love-ru-wallpaper-momo-1920x1200.jpg"
@@ -21,21 +23,26 @@
     "condition": [
       {
         "name": "Standard",
-        "rating": 1
+        "rating": 1,
+        "a": "c"
       },
       {
         "name": "Anime (canon storyline)",
-        "rating": 3
+        "rating": 3,
+        "a": "c"
       },
       {
         "name": "Adventures/Special (manga)",
-        "rating": 6
+        "rating": 6,
+        "a": "c"
       }
-    ]
+    ],
+    "image": "https://i.pinimg.com/474x/6e/19/e3/6e19e345f4e8eb6ddd55e31a2909ce9c.jpg"
   },
   {
     "rating": 1,
-    "worldName": "(Slice of Life anime/manga)"
+    "worldName": "(Slice of Life anime/manga)",
+    "image": "https://img5.goodfon.com/original/1024x768/b/47/tri-devushka-v-komnate-televizor-monitory-besporiadok-podrug.jpg"
   },
   {
     "rating": 1,
@@ -43,13 +50,16 @@
     "condition": [
       {
         "name": "Within The Culture",
-        "rating": 1
+        "rating": 1,
+        "a": "c"
       },
       {
         "name": "Outside The Culture",
-        "rating": 9
+        "rating": 9,
+        "a": "c"
       }
-    ]
+    ],
+    "image": "https://www.edwardterry.co.uk/wp-content/uploads/escession.jpg"
   },
   {
     "rating": 2,
@@ -57,11 +67,13 @@
     "condition": [
       {
         "name": "Federation during peacetime",
-        "rating": 2
+        "rating": 2,
+        "a": "c"
       },
       {
         "name": "Online",
-        "rating": 7
+        "rating": 7,
+        "a": "c"
       }
     ],
     "image": "https://stevetobak.com/wp-content/uploads/2017/08/Star-Trek-Original-.jpg"
@@ -72,19 +84,23 @@
     "condition": [
       {
         "name": "Modern developed countries",
-        "rating": 2
+        "rating": 2,
+        "a": "c"
       },
       {
         "name": "19th century and earlier (no crisis)",
-        "rating": 3
+        "rating": 3,
+        "a": "c"
       },
       {
         "name": "19th century and earlier (crisis)",
-        "rating": 4
+        "rating": 4,
+        "a": "c"
       },
       {
         "name": "World Wars (Occupied Europe/Asia)",
-        "rating": 4
+        "rating": 4,
+        "a": "c"
       }
     ],
     "image": "https://www.thoughtco.com/thmb/Hu5zhjuz2ArkwRwLUeu2A8kFZU8=/3000x2000/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-501586199x1-56aa28ca3df78cf772acace9.jpg"
@@ -99,15 +115,18 @@
     "condition": [
       {
         "name": "Canon ver., Mamono territory",
-        "rating": 2
+        "rating": 2,
+        "a": "c"
       },
       {
         "name": "Canon ver., Order territory",
-        "rating": 4
+        "rating": 4,
+        "a": "c"
       },
       {
         "name": "Dark and Serious ver.",
-        "rating": 6
+        "rating": 6,
+        "a": "c"
       }
     ]
   },
@@ -118,19 +137,23 @@
     "condition": [
       {
         "name": "No active crisis (Vivid, Vivid Strike)",
-        "rating": 2
+        "rating": 2,
+        "a": "c"
       },
       {
         "name": "TOS",
-        "rating": 4
+        "rating": 4,
+        "a": "c"
       },
       {
         "name": "A's",
-        "rating": 4
+        "rating": 4,
+        "a": "c"
       },
       {
         "name": "StrikerS",
-        "rating": 4
+        "rating": 4,
+        "a": "c"
       }
     ]
   },
@@ -165,23 +188,28 @@
     "condition": [
       {
         "name": "SG1/SGA modern Earth",
-        "rating": 3
+        "rating": 3,
+        "a": "c"
       },
       {
         "rating": 4,
-        "name": "Goa'uld controlled World"
+        "name": "Goa'uld controlled World",
+        "a": "c"
       },
       {
         "name": "Pegasus Galaxy, Wraith Asleep",
-        "rating": 4
+        "rating": 4,
+        "a": "c"
       },
       {
         "rating": 6,
-        "name": "Pegasus Galaxy, Wraith Awake"
+        "name": "Pegasus Galaxy, Wraith Awake",
+        "a": "c"
       },
       {
         "rating": 7,
-        "name": "Ori Aware"
+        "name": "Ori Aware",
+        "a": "c"
       }
     ],
     "image": "https://avatars.mds.yandex.net/i?id=f1722c9e9d53f77fa6ce9169c15246e7_l-5288772-images-thumbs&ref=rim&n=13&w=1280&h=720"
@@ -193,11 +221,13 @@
     "condition": [
       {
         "name": "Shinto Teito",
-        "rating": 3
+        "rating": 3,
+        "a": "c"
       },
       {
         "name": "Outside Shinto Teito",
-        "rating": 2
+        "rating": 2,
+        "a": "c"
       }
     ]
   },
@@ -208,11 +238,13 @@
     "condition": [
       {
         "name": "Post-Pledges (canon era)",
-        "rating": 3
+        "rating": 3,
+        "a": "c"
       },
       {
         "name": "Pre-Pledges (Zero era)",
-        "rating": 9
+        "rating": 9,
+        "a": "c"
       }
     ],
     "image": "https://miro.medium.com/max/700/0*5SpOq44GY3ogD9ul.jpg"
@@ -223,7 +255,8 @@
     "condition": [
       {
         "name": "Show continuity",
-        "rating": 3
+        "rating": 3,
+        "a": "c"
       }
     ]
   },
@@ -239,11 +272,13 @@
     "condition": [
       {
         "rating": 3,
-        "name": "Standard"
+        "name": "Standard",
+        "a": "c"
       },
       {
         "rating": 4,
-        "name": "Ultra Despair Girls, V3"
+        "name": "Ultra Despair Girls, V3",
+        "a": "c"
       }
     ]
   },
@@ -279,7 +314,8 @@
     "condition": [
       {
         "name": "Omnic crisis ",
-        "rating": 5
+        "rating": 5,
+        "a": "c"
       }
     ]
   },
@@ -300,19 +336,27 @@
     "rating": 3,
     "q": true,
     "worldName": "Cardcaptor Sakura",
-    "additional": "Sakura has a full deck of all 53 Sakura Cards, including the Hope, and Keroberos and Yue as familiars. Don’t worry about Tsubasa Reservoir Chronicle."
+    "additional": "Sakura has a full deck of all 53 Sakura Cards, including the Hope, and Keroberos and Yue as familiars. Don’t worry about Tsubasa Reservoir Chronicle.",
+    "condition": [
+      {
+        "name": "Pre Cards Captured",
+        "rating": 4
+      }
+    ]
   },
   {
     "rating": 4,
     "worldName": "Zero no Tsukaima",
     "condition": [
       {
-        "name": "standard",
-        "rating": 4
+        "name": "Standard",
+        "rating": 4,
+        "a": "c"
       },
       {
         "name": "Windstone Crisis",
-        "rating": 7
+        "rating": 7,
+        "a": "c"
       }
     ],
     "image": "https://images4.alphacoders.com/696/thumb-1920-696063.jpg"
@@ -323,11 +367,13 @@
     "condition": [
       {
         "name": "pre-SC1, post-HotS",
-        "rating": 4
+        "rating": 4,
+        "a": "c"
       },
       {
         "name": "During SC1, SC2",
-        "rating": 6
+        "rating": 6,
+        "a": "c"
       }
     ]
   },
@@ -338,19 +384,23 @@
     "condition": [
       {
         "name": "Empire Era, OT",
-        "rating": 4
+        "rating": 4,
+        "a": "c"
       },
       {
         "name": "Old Republic era, Prequels era",
-        "rating": 5
+        "rating": 5,
+        "a": "c"
       },
       {
         "rating": 6,
-        "name": "Legends post-OT"
+        "name": "Legends post-OT",
+        "a": "c"
       },
       {
         "name": "Unrestricted Clone Wars",
-        "rating": 7
+        "rating": 7,
+        "a": "c"
       }
     ],
     "image": "https://tamavroskyla.gr/wp-content/uploads/2019/12/saga.jpg"
@@ -362,15 +412,18 @@
     "condition": [
       {
         "name": "Start of canon",
-        "rating": 4
+        "rating": 4,
+        "a": "c"
       },
       {
         "name": "post-Retirement",
-        "rating": 5
+        "rating": 5,
+        "a": "c"
       },
       {
         "name": "pre-All Might",
-        "rating": 6
+        "rating": 6,
+        "a": "c"
       }
     ],
     "image": "https://www.groundedreason.com/wp-content/uploads/2021/03/my_hero_academia-1024x576.png"
@@ -382,19 +435,23 @@
     "condition": [
       {
         "name": "No active crisis",
-        "rating": 4
+        "rating": 4,
+        "a": "c"
       },
       {
         "name": "Shanxi incident",
-        "rating": 5
+        "rating": 5,
+        "a": "c"
       },
       {
         "name": "Rachni Wars",
-        "rating": 6
+        "rating": 6,
+        "a": "c"
       },
       {
         "name": "Reaper invasion",
-        "rating": 9
+        "rating": 9,
+        "a": "c"
       }
     ]
   },
@@ -405,11 +462,13 @@
     "condition": [
       {
         "name": "TOS, Magia Record (in Kamihama)",
-        "rating": 4
+        "rating": 4,
+        "a": "c"
       },
       {
         "name": "Tart Magica",
-        "rating": 5
+        "rating": 5,
+        "a": "c"
       }
     ]
   },
@@ -419,31 +478,38 @@
     "condition": [
       {
         "name": "Zero",
-        "rating": 4
+        "rating": 4,
+        "a": "c"
       },
       {
         "name": "Plus",
-        "rating": 5
+        "rating": 5,
+        "a": "c"
       },
       {
         "name": "Original Series",
-        "rating": 6
+        "rating": 6,
+        "a": "c"
       },
       {
         "name": "Delta",
-        "rating": 6
+        "rating": 6,
+        "a": "c"
       },
       {
         "name": "Macross 7",
-        "rating": 7
+        "rating": 7,
+        "a": "c"
       },
       {
         "name": "Frontier",
-        "rating": 7
+        "rating": 7,
+        "a": "c"
       },
       {
         "name": "Zero",
-        "rating": 4
+        "rating": 4,
+        "a": "c"
       }
     ],
     "additional": "Micronization: Zentraedi and Meltrandi characters are Microne (human)-sized by default. The presence of one will add a Micronization chamber to your Grand Manor, if you have one. Advanced Tempest Runes (Body) allows them, and any other member of our retinue who’s used a Micronization chamber, to shift between Microne and Macrone forms on the fly. Body Talent is enough to let Klan Klein maintain her adult figure while micronized. Additionally, all Zentraedi and Meltrandi combatants have a personal Pocket Space for their battlesuits. Battlesuits stored this way will automatically resize themselves to fit their wearer, regardless of whether the wearer is in Microne or Macrone form. Other: Mylene has her pet… tribble(?) Guvava as a familiar. We don’t actually know what Guvava is, just that it’s cute and fuzzy. Ranka has her squirrel-like pet Ai-kun as a familiar."
@@ -458,15 +524,18 @@
     "condition": [
       {
         "name": "Standard",
-        "rating": 4
+        "rating": 4,
+        "a": "c"
       },
       {
         "name": "AC 7",
-        "rating": 5
+        "rating": 5,
+        "a": "c"
       },
       {
         "name": "AC 4",
-        "rating": 3
+        "rating": 3,
+        "a": "c"
       }
     ]
   },
@@ -477,7 +546,8 @@
     "condition": [
       {
         "name": "Books continuity",
-        "rating": 4
+        "rating": 4,
+        "a": "c"
       }
     ]
   },
@@ -488,15 +558,18 @@
     "condition": [
       {
         "name": "Akibahara",
-        "rating": 4
+        "rating": 4,
+        "a": "c"
       },
       {
         "name": "Yamato Server (not Akibahara)",
-        "rating": 5
+        "rating": 5,
+        "a": "c"
       },
       {
         "name": "Outside Yamato Server",
-        "rating": 6
+        "rating": 6,
+        "a": "c"
       }
     ]
   },
@@ -507,7 +580,8 @@
     "condition": [
       {
         "name": "Breath of the Wild",
-        "rating": 4
+        "rating": 4,
+        "a": "c"
       }
     ]
   },
@@ -517,7 +591,8 @@
     "condition": [
       {
         "name": "Canon era",
-        "rating": 4
+        "rating": 4,
+        "a": "c"
       }
     ]
   },
@@ -527,23 +602,28 @@
     "condition": [
       {
         "name": "Mod: Red Flood",
-        "rating": 4
+        "rating": 4,
+        "a": "c"
       },
       {
         "name": "Mod: Red World",
-        "rating": 4
+        "rating": 4,
+        "a": "c"
       },
       {
         "name": "Mod: Thousand-Week Reich",
-        "rating": 4
+        "rating": 4,
+        "a": "c"
       },
       {
         "name": "Mod: The New Order",
-        "rating": 5
+        "rating": 5,
+        "a": "c"
       },
       {
         "name": "Mod: Equestria at War",
-        "rating": 6
+        "rating": 6,
+        "a": "c"
       }
     ]
   },
@@ -563,7 +643,8 @@
     "rating": 4,
     "q": true,
     "worldName": "Monogatari Series",
-    "additional": "<p>Senjougahara Hitagi can consciously control her effective weight, as if using a slider that starts at 0G and goes as high as she might train for. Gravity over 1G cannot affect her if she doesn’t want it to. She also has a personal Pocket Space equal in size to the basic one offered to contractors.</p> <p>Hachikuji Mayoi can apply a Lost Cow status effect to a nearby target for 24 hours or until the target finds what they're looking for, whichever comes first, and is otherwise the tough adult version from Kabukimonogatari.</p> <p>Hanekawa Tsubasa can transform between her regular self and Black Hanekawa at will.</p> <p>Kiss-Shot Acerola Orion Heart-Under-Blade no longer suffers from any of her vampire weaknesses.</p>"
+    "additional": "<p>Senjougahara Hitagi can consciously control her effective weight, as if using a slider that starts at 0G and goes as high as she might train for. Gravity over 1G cannot affect her if she doesn’t want it to. She also has a personal Pocket Space equal in size to the basic one offered to contractors.</p> <p>Hachikuji Mayoi can apply a Lost Cow status effect to a nearby target for 24 hours or until the target finds what they're looking for, whichever comes first, and is otherwise the tough adult version from Kabukimonogatari.</p> <p>Hanekawa Tsubasa can transform between her regular self and Black Hanekawa at will.</p> <p>Kiss-Shot Acerola Orion Heart-Under-Blade no longer suffers from any of her vampire weaknesses.</p>",
+    "image": "http://pm1.narvii.com/7885/24c9c8a510a6df9a988fe106c4437014e9494d61r1-1200-800v2_uhq.jpg"
   },
   {
     "rating": 4,
@@ -601,15 +682,18 @@
     "condition": [
       {
         "name": "Third Age 3018 (War of the Ring)",
-        "rating": 5
+        "rating": 5,
+        "a": "c"
       },
       {
         "name": "Year of Trees 1497 (War of Jewels)",
-        "rating": 8
+        "rating": 8,
+        "a": "c"
       },
       {
         "name": "First Age 500 (Gondolin)",
-        "rating": 9
+        "rating": 9,
+        "a": "c"
       }
     ],
     "image": "https://uploads.jovemnerd.com.br/wp-content/uploads/2018/11/hobbit.jpg"
@@ -620,11 +704,13 @@
     "condition": [
       {
         "name": "Toussaint, peaceful regions",
-        "rating": 5
+        "rating": 5,
+        "a": "c"
       },
       {
         "name": "prewar Northern Kingdoms, TW3",
-        "rating": 6
+        "rating": 6,
+        "a": "c"
       }
     ]
   },
@@ -635,19 +721,23 @@
     "condition": [
       {
         "name": "No active crisis",
-        "rating": 5
+        "rating": 5,
+        "a": "c"
       },
       {
         "name": "Events of Skyrim",
-        "rating": 8
+        "rating": 8,
+        "a": "c"
       },
       {
         "name": "Oblivion Crisis",
-        "rating": 8
+        "rating": 8,
+        "a": "c"
       },
       {
         "name": "C0DA",
-        "rating": 10
+        "rating": 10,
+        "a": "c"
       }
     ]
   },
@@ -662,15 +752,18 @@
     "condition": [
       {
         "name": "Four Seas",
-        "rating": 5
+        "rating": 5,
+        "a": "c"
       },
       {
         "name": "Grand Line - Paradise",
-        "rating": 6
+        "rating": 6,
+        "a": "c"
       },
       {
         "name": "New World",
-        "rating": 8
+        "rating": 8,
+        "a": "c"
       }
     ],
     "image": "https://wallpaperaccess.com/full/17350.jpg"
@@ -685,13 +778,21 @@
     "condition": [
       {
         "name": "Start of canon",
-        "rating": 5
+        "rating": 5,
+        "a": "c"
       }
     ]
   },
   {
     "rating": 5,
-    "worldName": "Babylon 5"
+    "worldName": "Babylon 5",
+    "condition": [
+      {
+        "rating": 7,
+        "name": "Shadow War"
+      }
+    ],
+    "image": "https://picfiles.alphacoders.com/136/thumb-1920-136964.jpg"
   },
   {
     "rating": 5,
@@ -699,11 +800,13 @@
     "condition": [
       {
         "name": "Standard",
-        "rating": 5
+        "rating": 5,
+        "a": "c"
       },
       {
         "name": "Chernobog, Kazdel",
-        "rating": 6
+        "rating": 6,
+        "a": "c"
       }
     ]
   },
@@ -719,7 +822,8 @@
     "condition": [
       {
         "name": "Taishou-era Japan",
-        "rating": 5
+        "rating": 5,
+        "a": "c"
       }
     ]
   },
@@ -730,23 +834,28 @@
     "condition": [
       {
         "name": "Awakening (present)",
-        "rating": 5
+        "rating": 5,
+        "a": "c"
       },
       {
         "name": "Three Houses (post-timeskip)",
-        "rating": 5
+        "rating": 5,
+        "a": "c"
       },
       {
         "name": "Three Houses (pre-timeskip)",
-        "rating": 4
+        "rating": 4,
+        "a": "c"
       },
       {
         "name": "Awakening (Doomed Future)",
-        "rating": 8
+        "rating": 8,
+        "a": "c"
       },
       {
         "name": "Fates (present)",
-        "rating": 5
+        "rating": 5,
+        "a": "c"
       }
     ]
   },
@@ -756,15 +865,18 @@
     "condition": [
       {
         "name": "pre-crystal",
-        "rating": 5
+        "rating": 5,
+        "a": "c"
       },
       {
         "name": "during timeskip",
-        "rating": 6
+        "rating": 6,
+        "a": "c"
       },
       {
         "name": "post-timeskip",
-        "rating": 7
+        "rating": 7,
+        "a": "c"
       }
     ]
   },
@@ -774,11 +886,13 @@
     "condition": [
       {
         "name": "The Source",
-        "rating": 5
+        "rating": 5,
+        "a": "c"
       },
       {
         "name": "The First",
-        "rating": 6
+        "rating": 6,
+        "a": "c"
       }
     ]
   },
@@ -793,11 +907,13 @@
     "condition": [
       {
         "name": "Post Changes",
-        "rating": 6
+        "rating": 6,
+        "a": "c"
       },
       {
         "rating": 7,
-        "name": "WWII"
+        "name": "WWII",
+        "a": "c"
       }
     ]
   },
@@ -808,11 +924,13 @@
     "condition": [
       {
         "rating": 5,
-        "name": "Canon Orario"
+        "name": "Canon Orario",
+        "a": "c"
       },
       {
         "rating": 7,
-        "name": "Uncapped dungeon"
+        "name": "Uncapped dungeon",
+        "a": "c"
       }
     ]
   },
@@ -842,7 +960,8 @@
     "condition": [
       {
         "name": "2017 Show",
-        "rating": 6
+        "rating": 6,
+        "a": "c"
       }
     ]
   },
@@ -854,15 +973,18 @@
     "condition": [
       {
         "name": "No Crisis",
-        "rating": 5
+        "rating": 5,
+        "a": "c"
       },
       {
         "rating": 6,
-        "name": "Events of GS1"
+        "name": "Events of GS1",
+        "a": "c"
       },
       {
         "name": "Events of GS2",
-        "rating": 7
+        "rating": 7,
+        "a": "c"
       }
     ]
   },
@@ -885,18 +1007,26 @@
     "condition": [
       {
         "name": "Main story",
-        "rating": 6
+        "rating": 6,
+        "a": "c"
       }
     ]
   },
   {
     "rating": 6,
     "worldName": "To Aru series",
-    "additional": "<p>Misaka Network: The purchase just gives you Misaka Worst and Last Order. If you have Grand Manor or a Catch-a-Ride large enough to contain one, a Misaka cloning facility will appear within the structure within which you can grow the other 20,000. This replaces Warranty Plan, which instead only covers Misaka Worst and Last Order; designating which vat each numbered Misaka is to be re-grown in will ensure that she resleeves properly. Without Grand Manor or a large enough Catch-a-Ride, numbered Misakas will only return to your service one at a time, by the standard Warranty Plan rules. The full heal from Body Talent and Body Defense can be triggered for each Misaka sister individually. The Will of your Misaka Network will eventually spawn on her own. Dolly is not one of the 20,002 networked Misakas, but can join the Network if you have it.</p><p>Others: Frenda Seivelun has a personal Pocket Space in her skirt, equal in size to the one offered to contractors, where can store her explosives and other weapons. If Kuriba Ryouko rebuilds her Doppelganger, she can transfer its consciousness to its new body without complications. Esper power training benefits from Psychic Talent’s feedback loops if at least two Espers whom the perk applies to train together, even if their powers are wildly different and the principles behind one can’t be directly applied to the other.</p>"
+    "additional": "<p>Misaka Network: The purchase just gives you Misaka Worst and Last Order. If you have Grand Manor or a Catch-a-Ride large enough to contain one, a Misaka cloning facility will appear within the structure within which you can grow the other 20,000. This replaces Warranty Plan, which instead only covers Misaka Worst and Last Order; designating which vat each numbered Misaka is to be re-grown in will ensure that she resleeves properly. Without Grand Manor or a large enough Catch-a-Ride, numbered Misakas will only return to your service one at a time, by the standard Warranty Plan rules. The full heal from Body Talent and Body Defense can be triggered for each Misaka sister individually. The Will of your Misaka Network will eventually spawn on her own. Dolly is not one of the 20,002 networked Misakas, but can join the Network if you have it.</p><p>Others: Frenda Seivelun has a personal Pocket Space in her skirt, equal in size to the one offered to contractors, where can store her explosives and other weapons. If Kuriba Ryouko rebuilds her Doppelganger, she can transfer its consciousness to its new body without complications. Esper power training benefits from Psychic Talent’s feedback loops if at least two Espers whom the perk applies to train together, even if their powers are wildly different and the principles behind one can’t be directly applied to the other.</p>",
+    "image": "https://i.pinimg.com/originals/5c/84/1c/5c841c3b794af5e12afb42640a2b6f65.jpg"
   },
   {
     "rating": 6,
     "worldName": "Sailor Moon",
+    "condition": [
+      {
+        "name": "Manga",
+        "rating": 10
+      }
+    ],
     "additional": "Usagi has Luna as a humanoid familiar; if you bought Luna before Usagi, you’ll be refunded the moon cat’s full cost. The same applies to Minako and Artemis."
   },
   {
@@ -911,17 +1041,21 @@
     "condition": [
       {
         "name": "SPAZ 1: Galactic Rim (pre-timeskip)",
-        "rating": 6
+        "rating": 6,
+        "a": "c"
       },
       {
         "name": "SPAZ 1: Galactic Core (pre-timeskip)",
-        "rating": 9
+        "rating": 9,
+        "a": "c"
       },
       {
         "name": "SPAZ 1: During- or post-timeskip",
-        "rating": 9
+        "rating": 9,
+        "a": "c"
       }
-    ]
+    ],
+    "image": "http://s01.riotpixels.net/data/e3/f1/e3f11076-6dc9-4417-8855-e444ee33fd69.jpg/screenshot.space-pirates-and-zombies.1920x1080.2011-08-15.69.jpg"
   },
   {
     "rating": 6,
@@ -929,7 +1063,8 @@
     "condition": [
       {
         "name": "Start of canon",
-        "rating": 6
+        "rating": 6,
+        "a": "c"
       }
     ],
     "image": "https://i.ytimg.com/vi/4_49VT0knok/maxresdefault.jpg"
@@ -940,7 +1075,8 @@
     "condition": [
       {
         "name": "Games verse",
-        "rating": 6
+        "rating": 6,
+        "a": "c"
       }
     ]
   },
@@ -951,23 +1087,28 @@
     "condition": [
       {
         "name": "Grail Wars/Case Files",
-        "rating": 6
+        "rating": 6,
+        "a": "c"
       },
       {
         "name": "'Historical' settings",
-        "rating": 7
+        "rating": 7,
+        "a": "c"
       },
       {
         "name": "Tsukihime/Melty Blood",
-        "rating": 7
+        "rating": 7,
+        "a": "c"
       },
       {
         "name": "Notes",
-        "rating": 8
+        "rating": 8,
+        "a": "c"
       },
       {
         "name": "Cosmos in the Lostbelt",
-        "rating": 9
+        "rating": 9,
+        "a": "c"
       }
     ]
   },
@@ -978,11 +1119,13 @@
     "condition": [
       {
         "name": "Standard",
-        "rating": 6
+        "rating": 6,
+        "a": "c"
       },
       {
         "name": "Kaguya or Otsutsuki active",
-        "rating": 7
+        "rating": 7,
+        "a": "c"
       }
     ]
   },
@@ -992,11 +1135,13 @@
     "condition": [
       {
         "name": "No active crisis",
-        "rating": 6
+        "rating": 6,
+        "a": "c"
       },
       {
         "name": "Elder Dragons active",
-        "rating": 7
+        "rating": 7,
+        "a": "c"
       }
     ]
   },
@@ -1012,11 +1157,13 @@
     "condition": [
       {
         "name": "Earth",
-        "rating": 6
+        "rating": 6,
+        "a": "c"
       },
       {
         "name": "Hell",
-        "rating": 8
+        "rating": 8,
+        "a": "c"
       }
     ]
   },
@@ -1026,11 +1173,13 @@
     "condition": [
       {
         "name": "Pandora (no active Vault)",
-        "rating": 6
+        "rating": 6,
+        "a": "c"
       },
       {
         "name": "Pandora (active Vault)",
-        "rating": 7
+        "rating": 7,
+        "a": "c"
       }
     ]
   },
@@ -1040,14 +1189,15 @@
     "condition": [
       {
         "name": "Standard",
-        "rating": 6
+        "rating": 6,
+        "a": "c"
       },
       {
         "name": "Hueco Mundo",
-        "rating": 8
+        "rating": 8,
+        "a": "c"
       }
-    ],
-    "image": "https://asianmoviepulse.com/wp-content/uploads/2021/04/Beach-main-1320x880.jpg"
+    ]
   },
   {
     "rating": 6,
@@ -1066,15 +1216,18 @@
     "condition": [
       {
         "name": "Standard",
-        "rating": 6
+        "rating": 6,
+        "a": "c"
       },
       {
         "name": "LNs 3-12",
-        "rating": 7
+        "rating": 7,
+        "a": "c"
       },
       {
         "rating": 8,
-        "name": "LNs 13-21"
+        "name": "LNs 13-21",
+        "a": "c"
       }
     ],
     "image": "https://kartinkin.net/uploads/posts/2022-03/1647072785_1-kartinkin-net-p-demoni-starshei-shkoli-kartinki-3.jpg"
@@ -1085,7 +1238,8 @@
     "condition": [
       {
         "name": "First book",
-        "rating": 6
+        "rating": 6,
+        "a": "c"
       }
     ]
   },
@@ -1159,11 +1313,13 @@
     "condition": [
       {
         "name": "Illya’s World (Start of Canon/2wei)",
-        "rating": 6
+        "rating": 6,
+        "a": "c"
       },
       {
         "name": "Miyu’s World (3rei/Oath Under Snow)",
-        "rating": 7
+        "rating": 7,
+        "a": "c"
       }
     ]
   },
@@ -1180,7 +1336,8 @@
     "condition": [
       {
         "name": "Eden is alive",
-        "rating": 8
+        "rating": 8,
+        "a": "u"
       }
     ],
     "image": "https://i.imgur.com/0OrGTkC.jpg"
@@ -1191,11 +1348,13 @@
     "condition": [
       {
         "name": "New",
-        "rating": 8
+        "rating": 8,
+        "a": "c"
       },
       {
         "name": "Old",
-        "rating": 9
+        "rating": 9,
+        "a": "c"
       }
     ]
   },
@@ -1205,7 +1364,44 @@
     "condition": [
       {
         "name": "No active crisis",
+        "rating": 7,
+        "a": "c"
+      },
+      {
+        "name": "During the Events of WoW 'Classic'",
+        "rating": 6
+      },
+      {
+        "name": "During the Events of WoW 'The Burning Crusade'",
         "rating": 7
+      },
+      {
+        "name": "During the Events of WoW 'Wrath of the Lich King'",
+        "rating": 8
+      },
+      {
+        "rating": 8,
+        "name": "During the Events of WoW 'Cataclysm'"
+      },
+      {
+        "rating": 7,
+        "name": "During the Events of WoW 'Mists of Pandaria'"
+      },
+      {
+        "rating": 7,
+        "name": "During the Events of WoW 'Warlords of Draenor'"
+      },
+      {
+        "rating": 8,
+        "name": "During the Events of WoW 'Legion'"
+      },
+      {
+        "rating": 8,
+        "name": "During the Events of WoW 'Battle for Azeroth'"
+      },
+      {
+        "name": "During the Events of WoW 'Shadowlands'",
+        "rating": 9
       }
     ]
   },
@@ -1230,7 +1426,8 @@
     "condition": [
       {
         "name": "Sengoku Jidai",
-        "rating": 7
+        "rating": 7,
+        "a": "c"
       }
     ]
   },
@@ -1240,11 +1437,13 @@
     "condition": [
       {
         "rating": 7,
-        "name": "LNs 1-4"
+        "name": "LNs 1-4",
+        "a": "c"
       },
       {
         "rating": 9,
-        "name": "LNs 5+"
+        "name": "LNs 5+",
+        "a": "c"
       }
     ]
   },
@@ -1258,37 +1457,46 @@
     "condition": [
       {
         "name": "Gaeabrande",
-        "rating": 7
+        "rating": 7,
+        "a": "c"
       },
       {
         "name": "Ixphoria",
-        "rating": 8
+        "rating": 8,
+        "a": "c"
       }
     ]
   },
-  {
-    "rating": 7,
-    "worldName": "Kingdom Hearts"
-  },
+  {"worldName":"Kingdom Hearts","rating":7,"condition":[{"rating":8,"name":"Post-BBS through KH1",
+        "a": "c"},{"name":"Post KH1","rating":7,
+        "a": "c"},{"rating":9,"name":"The Dark Realm",
+        "a": "c"},{"rating":10,"name":"Age of Fairy tales",
+        "a": "c"},{"rating":10,"name":"The Keyblade War",
+        "a": "c"},{"rating":10,"name":"Data Daybreak Town",
+        "a": "c"}]},
   {
     "rating": 7,
     "worldName": "Guild Wars",
     "condition": [
       {
         "name": "Dragons awake",
-        "rating": 7
+        "rating": 7,
+        "a": "c"
       },
       {
         "name": "Cantha pre-Jade Wind",
-        "rating": 6
+        "rating": 6,
+        "a": "c"
       },
       {
         "name": "Several dragons awake",
-        "rating": 8
+        "rating": 8,
+        "a": "c"
       },
       {
         "name": "Elder Dragons asleep",
-        "rating": 5
+        "rating": 5,
+        "a": "c"
       }
     ]
   },
@@ -1298,13 +1506,16 @@
     "condition": [
       {
         "name": "Europa (peacetime)",
-        "rating": 7
+        "rating": 7,
+        "a": "c"
       },
       {
         "name": "Europa (wartime)",
-        "rating": 8
+        "rating": 8,
+        "a": "c"
       }
-    ]
+    ],
+    "image": "https://neverwasmag.com/wp-content/uploads/2019/03/Girl-Genius-scene.jpg"
   },
   {
     "rating": 7,
@@ -1325,11 +1536,13 @@
     "condition": [
       {
         "rating": 7,
-        "name": "main series"
+        "name": "main series",
+        "a": "c"
       },
       {
         "rating": 8,
-        "name": "End, post-timeskip Rebuild"
+        "name": "End, post-timeskip Rebuild",
+        "a": "c"
       }
     ]
   },
@@ -1339,7 +1552,8 @@
     "condition": [
       {
         "name": "Drakengard 3",
-        "rating": 7
+        "rating": 7,
+        "a": "c"
       }
     ]
   },
@@ -1347,6 +1561,36 @@
     "rating": 7,
     "q": true,
     "worldName": "Halo",
+    "condition": [
+      {
+        "name": "Precursor Golden Age",
+        "rating": 2
+      },
+      {
+        "rating": 8,
+        "name": "Forerunner-Precursor War"
+      },
+      {
+        "rating": 3,
+        "name": "Ancient Humanity Golden Age"
+      },
+      {
+        "rating": 8,
+        "name": "Human-Forerunner War"
+      },
+      {
+        "name": "Forerunner-Flood War",
+        "rating": 10
+      },
+      {
+        "name": "Human-Covenant War (Original Trilogy)",
+        "rating": 7
+      },
+      {
+        "name": "Post Covanent War (Halo 4 and 5)",
+        "rating": 6
+      }
+    ],
     "additional": "Cortana will be plugged into your smart device. The Tier 5 version of her reflects her status at the end of the original trilogy. Body Talent will give Spartans a functioning sex drive.",
     "image": "https://repo.hyperbola.info:50000/other/kodi-libre/addons/krypton/plugin.video.roosterteeth/fanart.jpg"
   },
@@ -1366,11 +1610,13 @@
     "condition": [
       {
         "name": "Anime",
-        "rating": 8
+        "rating": 8,
+        "a": "c"
       },
       {
         "name": "XDU",
-        "rating": 10
+        "rating": 10,
+        "a": "c"
       }
     ],
     "image": "https://www.thenerdmag.com/wp-content/uploads/2018/12/Symphogear_AXZ_Episode_3_20.png"
@@ -1385,26 +1631,40 @@
     "condition": [
       {
         "name": "Mainline comics (Earth-616)",
-        "rating": 8
+        "rating": 8,
+        "a": "c"
       },
       {
         "name": "Big Hero Six (Earth-14123)",
-        "rating": 7
+        "rating": 7,
+        "a": "c"
       },
       {
         "name": "Animated Universe (90s cartoons)",
-        "rating": 6
+        "rating": 6,
+        "a": "c"
       },
       {
         "name": "Cinematic Universe (TVA present)",
-        "rating": 6
+        "rating": 6,
+        "a": "c"
       },
       {
         "name": "Cinematic Universe (no TVA)",
-        "rating": 5
+        "rating": 5,
+        "a": "c"
       },
       {
         "name": "X-Men Evolution",
+        "rating": 5,
+        "a": "c"
+      },
+      {
+        "name": "Old Man Logan(Earth-807128)",
+        "rating": 9
+      },
+      {
+        "name": "Spectacular Earth-26496 (NYC)",
         "rating": 5
       }
     ]
@@ -1416,23 +1676,28 @@
     "condition": [
       {
         "name": "Start of canon",
-        "rating": 8
+        "rating": 8,
+        "a": "c"
       },
       {
         "name": "Europe 1470 CE",
-        "rating": 8
+        "rating": 8,
+        "a": "c"
       },
       {
         "name": "Previous Era",
-        "rating": 9
+        "rating": 9,
+        "a": "c"
       },
       {
         "name": "Second Eruption",
-        "rating": 9
+        "rating": 9,
+        "a": "c"
       },
       {
         "name": "Pre-Second Eruption",
-        "rating": 7
+        "rating": 7,
+        "a": "c"
       }
     ]
   },
@@ -1447,7 +1712,8 @@
     "condition": [
       {
         "name": "Permanent crisis",
-        "rating": 8
+        "rating": 8,
+        "a": "c"
       }
     ]
   },
@@ -1457,7 +1723,8 @@
     "condition": [
       {
         "name": "Permanent crisis",
-        "rating": 8
+        "rating": 8,
+        "a": "c"
       }
     ]
   },
@@ -1467,25 +1734,31 @@
     "condition": [
       {
         "rating": 8,
-        "name": "Mainline comics"
+        "name": "Mainline comics",
+        "a": "c"
       },
       {
         "rating": 7,
-        "name": "Young Justice"
+        "name": "Young Justice",
+        "a": "c"
       },
       {
         "rating": 6,
-        "name": "DCAU"
+        "name": "DCAU",
+        "a": "c"
       },
       {
         "rating": 10,
-        "name": "Hell Dimension"
+        "name": "Hell Dimension",
+        "a": "c"
       },
       {
         "rating": 9,
-        "name": "Injustice"
+        "name": "Injustice",
+        "a": "c"
       }
-    ]
+    ],
+    "image": "https://comicvine.gamespot.com/a/uploads/original/11133/111337338/6666703-uyakpr2hud611.jpg"
   },
   {
     "rating": 8,
@@ -1493,29 +1766,36 @@
     "condition": [
       {
         "rating": 8,
-        "name": "Standard"
+        "name": "Standard",
+        "a": "c"
       },
       {
         "rating": 7,
-        "name": "1999 CE"
+        "name": "1999 CE",
+        "a": "c"
       },
       {
         "rating": 7,
-        "name": "Zeal (12)"
+        "name": "Zeal (12)",
+        "a": "c"
       },
       {
         "rating": 6,
-        "name": "65"
+        "name": "65",
+        "a": "c"
       },
       {
         "rating": 5,
-        "name": "600 CE"
+        "name": "600 CE",
+        "a": "c"
       },
       {
         "rating": 4,
-        "name": "1000 CE"
+        "name": "1000 CE",
+        "a": "c"
       }
-    ]
+    ],
+    "image": "https://pbs.twimg.com/media/EREj9KaWAAA0q1P.jpg"
   },
   {
     "rating": 8,
@@ -1530,7 +1810,8 @@
   {
     "rating": 8,
     "worldName": "Fate/Grand Order",
-    "additional": "All Olympian gods, including Aphrodite, Artemis, and Demeter, can change to their machine forms and have their divine nanomachines. For the purposes of Exit Stage Left and Rainbow Bridge, each of Singularities 1-7, the Pseudo-Singularities, the Servant Universe, and the Lostbelts count as separate worlds, so that completing each one unlocks a new world through our systems. This also includes some other major events, such as GUDAGUDA, SE.RA.PH, Ooku, and Imaginary Scramble. The primary Fate/Grand Order world will count as completed at the end of the Observer on Timeless Temple or (if the contractor arrives afterward) Cosmos in the Lostbelt arcs.    Pseudo-Servants and Other Alternates    The following pairs are mutually exclusive at chargen: Saint Kiara and Devil Kiara; Nero and Nero Alter; Medea and Medea Lily; Medusa and Gorgon. If you buy a Pseudo-Servant waifu perk at any time after you purchased or captured them, the Servant’s memories and personality will seamlessly integrate into the host’s, in much the same way as the Memoria perk or Extra and Substitute origins.    Not mutually exclusive: Kama and BB with any Sakura and each other; Ereshkigal and Space Ishtar with any Rin and each other; Scáthach and Skadi; Carmilla and Elizabeth Bathory."
+    "additional": "All Olympian gods, including Aphrodite, Artemis, and Demeter, can change to their machine forms and have their divine nanomachines. For the purposes of Exit Stage Left and Rainbow Bridge, each of Singularities 1-7, the Pseudo-Singularities, the Servant Universe, and the Lostbelts count as separate worlds, so that completing each one unlocks a new world through our systems. This also includes some other major events, such as GUDAGUDA, SE.RA.PH, Ooku, and Imaginary Scramble. The primary Fate/Grand Order world will count as completed at the end of the Observer on Timeless Temple or (if the contractor arrives afterward) Cosmos in the Lostbelt arcs.    Pseudo-Servants and Other Alternates    The following pairs are mutually exclusive at chargen: Saint Kiara and Devil Kiara; Nero and Nero Alter; Medea and Medea Lily; Medusa and Gorgon. If you buy a Pseudo-Servant waifu perk at any time after you purchased or captured them, the Servant’s memories and personality will seamlessly integrate into the host’s, in much the same way as the Memoria perk or Extra and Substitute origins.    Not mutually exclusive: Kama and BB with any Sakura and each other; Ereshkigal and Space Ishtar with any Rin and each other; Scáthach and Skadi; Carmilla and Elizabeth Bathory.",
+    "image": "https://wallpapercave.com/wp/wp2539656.jpg"
   },
   {
     "rating": 9,
@@ -1545,15 +1826,18 @@
     "condition": [
       {
         "name": "Mousillon, Chaos Wastes, etc.",
-        "rating": 8
+        "rating": 8,
+        "a": "c"
       },
       {
         "name": "No active crisis",
-        "rating": 7
+        "rating": 7,
+        "a": "c"
       },
       {
         "name": "Standard",
-        "rating": 9
+        "rating": 9,
+        "a": "c"
       }
     ],
     "image": "https://i.imgur.com/rqmYEib.jpeg"
@@ -1565,7 +1849,8 @@
     "condition": [
       {
         "name": "Demon's Souls, Dark Souls 1-3",
-        "rating": 9
+        "rating": 9,
+        "a": "c"
       }
     ],
     "image": "https://cdn.player.one/sites/player.one/files/2016/05/11/dark-souls-3.jpg"
@@ -1577,19 +1862,23 @@
     "condition": [
       {
         "name": "New World (Nazarick Member)",
-        "rating": 1
+        "rating": 1,
+        "a": "c"
       },
       {
         "name": "Old World (Cyberpunk Dystopia)",
-        "rating": 4
+        "rating": 4,
+        "a": "c"
       },
       {
         "name": "New World (Against Nazarick)",
-        "rating": 8
+        "rating": 8,
+        "a": "c"
       },
       {
         "name": "New World (multiple active guilds)",
-        "rating": 9
+        "rating": 9,
+        "a": "c"
       }
     ]
   },
@@ -1612,19 +1901,23 @@
     "condition": [
       {
         "name": "Mainline series",
-        "rating": 10
+        "rating": 10,
+        "a": "c"
       },
       {
         "name": "Persona 3",
-        "rating": 5
+        "rating": 5,
+        "a": "c"
       },
       {
         "name": "Persona 5",
-        "rating": 4
+        "rating": 4,
+        "a": "c"
       },
       {
         "name": "Persona 4",
-        "rating": 3
+        "rating": 3,
+        "a": "c"
       }
     ]
   },
@@ -1639,110 +1932,141 @@
     "condition": [
       {
         "name": "Phyrexia",
-        "rating": 10
+        "rating": 10,
+        "a": "c"
       },
       {
         "name": "Zendikar (Eldrazi Awakening)",
-        "rating": 9
+        "rating": 9,
+        "a": "c"
       },
       {
         "name": "Amonkhet",
-        "rating": 8
+        "rating": 8,
+        "a": "c"
       },
       {
         "name": "Zendikar (default)",
-        "rating": 8
+        "rating": 8,
+        "a": "c"
       },
       {
         "name": "Alara (Grixis)",
-        "rating": 7
+        "rating": 7,
+        "a": "c"
       },
       {
         "name": "Ikoria",
-        "rating": 7
+        "rating": 7,
+        "a": "c"
       },
       {
         "name": "Innistrad",
-        "rating": 7
+        "rating": 7,
+        "a": "c"
       },
       {
         "name": "Tarkir",
-        "rating": 7
+        "rating": 7,
+        "a": "c"
       },
       {
         "name": "Alara (Jund)",
-        "rating": 6
+        "rating": 6,
+        "a": "c"
       },
       {
         "name": "Ravnica",
-        "rating": 6
+        "rating": 6,
+        "a": "c"
       },
       {
         "name": "Shadowmoor",
-        "rating": 6
+        "rating": 6,
+        "a": "c"
       },
       {
         "name": "Theros",
-        "rating": 6
+        "rating": 6,
+        "a": "c"
       },
       {
         "name": "Alara (Esper)",
-        "rating": 5
+        "rating": 5,
+        "a": "c"
       },
       {
         "name": "Fiora",
-        "rating": 5
+        "rating": 5,
+        "a": "c"
       },
       {
         "name": "Ixalan",
-        "rating": 5
+        "rating": 5,
+        "a": "c"
       },
       {
         "name": "Kamigawa",
-        "rating": 5
+        "rating": 5,
+        "a": "c"
       },
       {
         "name": "Alara (Naya)",
-        "rating": 4
+        "rating": 4,
+        "a": "c"
       },
       {
         "name": "Eldraine",
-        "rating": 4
+        "rating": 4,
+        "a": "c"
       },
       {
         "name": "Kaladesh",
-        "rating": 4
+        "rating": 4,
+        "a": "c"
       },
       {
         "name": "Lowryn",
-        "rating": 4
+        "rating": 4,
+        "a": "c"
       },
       {
         "name": "Alara (Bant)",
-        "rating": 3
+        "rating": 3,
+        "a": "c"
       },
       {
         "name": "Arcavios",
-        "rating": 3
+        "rating": 3,
+        "a": "c"
       },
       {
         "name": "Kylem",
-        "rating": 3
+        "rating": 3,
+        "a": "c"
       },
       {
         "name": "Segovia",
-        "rating": 3
+        "rating": 3,
+        "a": "c"
       }
     ]
   },
   {
     "rating": 10,
     "worldName": "Exalted",
-    "additional": "Exalts: All purchased or captured Exalts are free from the Great Curse, Resonance, Torment, Clarity, and all other Limit Break effects. If you have a Glorious Shroud, you may reformat any of your Abyssal Exalts, including yourself, into Solars of the appropriate caste; the same applies in reverse to Solars if you have a Burial Shroud. If you have both Shrouds, your Solar and Abyssal Exalts may choose whether to be Solar or Abyssal at any time, but only one or the other. Even if you hit the 10-purchase Template Stacking I cap on multiple types of Exalts, each individual member of your retinue may only have one Exaltation at a time. This will generally be the one most suited to the individual in question, but you have the final say on who gets what. Generic Exalted DLC: Entries on this page are not actual characters and cannot be purchased. They are instead placeholders for capture targets or the Possess and Substitute origins. Each generic capture bounty (each combination of caste and essence rating) may only be claimed once. When building an Exalted character of Essence 2, just use normal Exalted character generation. For Essence 3, assume that the character has 150 experience income, in addition to the cost of the essence increase. For Essence 4, assume that the character has 400 experience income; Essence 5,750; and an additional 750 for each essence level after that."
+    "additional": "Exalts: All purchased or captured Exalts are free from the Great Curse, Resonance, Torment, Clarity, and all other Limit Break effects. If you have a Glorious Shroud, you may reformat any of your Abyssal Exalts, including yourself, into Solars of the appropriate caste; the same applies in reverse to Solars if you have a Burial Shroud. If you have both Shrouds, your Solar and Abyssal Exalts may choose whether to be Solar or Abyssal at any time, but only one or the other. Even if you hit the 10-purchase Template Stacking I cap on multiple types of Exalts, each individual member of your retinue may only have one Exaltation at a time. This will generally be the one most suited to the individual in question, but you have the final say on who gets what. Generic Exalted DLC: Entries on this page are not actual characters and cannot be purchased. They are instead placeholders for capture targets or the Possess and Substitute origins. Each generic capture bounty (each combination of caste and essence rating) may only be claimed once. When building an Exalted character of Essence 2, just use normal Exalted character generation. For Essence 3, assume that the character has 150 experience income, in addition to the cost of the essence increase. For Essence 4, assume that the character has 400 experience income; Essence 5,750; and an additional 750 for each essence level after that.",
+    "condition": [
+      {
+        "name": "Primordial War",
+        "rating": 10
+      }
+    ]
   },
   {
     "rating": 10,
-    "worldName": "Doctor Who"
+    "worldName": "Doctor Who",
+    "image": "https://i.ytimg.com/vi/16T0YznKxno/maxresdefault.jpg"
   },
   {
     "rating": 10,
@@ -1751,25 +2075,31 @@
     "condition": [
       {
         "name": "Disgaea 5, Disgaea 6",
-        "rating": 10
+        "rating": 10,
+        "a": "c"
       },
       {
         "name": "Disgaea 4, Makai Kingdom",
-        "rating": 9
+        "rating": 9,
+        "a": "c"
       },
       {
         "name": "Disgaea 2, Disgaea 3",
-        "rating": 8
+        "rating": 8,
+        "a": "c"
       },
       {
         "rating": 7,
-        "name": "Disgaea 1"
+        "name": "Disgaea 1",
+        "a": "c"
       },
       {
         "rating": 6,
-        "name": "La Pucelle, Phantom Brave"
+        "name": "La Pucelle, Phantom Brave",
+        "a": "c"
       }
-    ]
+    ],
+    "image": "https://www.thatvideogameblog.com/wp-content/uploads/2017/08/disgaea-5-complete-set-to-sell-over-100k-in-the-west.jpg"
   },
   {
     "rating": 10,
@@ -1777,7 +2107,8 @@
     "condition": [
       {
         "name": "Diablo 3",
-        "rating": 10
+        "rating": 10,
+        "a": "c"
       }
     ]
   },

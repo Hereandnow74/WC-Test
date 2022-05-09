@@ -2,11 +2,11 @@
   <div class="inline-flex w-min h-max">
     <label v-if="label" for="" class="mr-2">{{ label }}</label>
     <div
-      class="rounded-l-lg hover:bg-gray-500 cursor-pointer px-0.5 select-none"
+      class="rounded-l-lg hover:bg-gray-500 cursor-pointer select-none flex items-center"
       :class="buttonThemes[theme]"
       @click="minus"
     >
-      &lt;
+      <akar-icons:chevron-left />
     </div>
     <input
       id=""
@@ -18,11 +18,11 @@
       :value="value"
     >
     <div
-      class="rounded-r-lg hover:bg-gray-500 w-4 cursor-pointer select-none"
+      class="rounded-r-lg hover:bg-gray-500 cursor-pointer select-none flex items-center"
       :class="buttonThemes[theme]"
       @click="plus"
     >
-      >
+      <akar-icons:chevron-right />
     </div>
   </div>
 </template>

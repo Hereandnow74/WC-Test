@@ -37,6 +37,17 @@
         <NumberInput v-model="maxDR" :min="minDR" :max="10" />
       </div>
       <span class="hidden md:block whitespace-nowrap">Results: {{ worldsFiltered.length }}</span>
+      <div class="flex gap-1 items-center border rounded border-gray-600 dark:border-gray-300 px-2 whitespace-nowrap text-sm">
+        <div class="border border-gray-700 bg-yellow-300 w-4 h-4"></div>
+        <div title="World or Condition from official WC spreadsheet">
+          - Official DR
+        </div>
+        <div class="h-4 w-[1px] bg-gray-400"></div>
+        <div class="border border-gray-700 bg-gray-300 w-4 h-4"></div>
+        <div title="World or Condition submitted by user">
+          - User DR
+        </div>
+      </div>
       <Button size="Small" label="Add World" class="whitespace-nowrap" @click="() => (editMode = false, toggleShowAddWorld())" />
     </div>
     <div class="grid grid-cols-1 grid-flow-row-dense 4xl:grid-cols-6 5xl:grid-cols-7 xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-1 overflow-y-auto pb-8">
@@ -45,7 +56,7 @@
         :key="world.key"
         :world="world"
         :type="world.type"
-        :class="{'row-span-2 min-h-72': world.image && !settings.allImg, 'sm:col-span-2': world.additional, 'sm:row-span-4': world.image && world.additional && !settings.allImg}"
+        :class="{'row-span-2 min-h-72': world.image && !settings.hideWorldImg, 'sm:col-span-2': world.additional, 'sm:row-span-4': world.image && world.additional && !settings.hideWorldImg}"
         class="w-full"
         @edit-world="editWorld"
       />

@@ -18,7 +18,7 @@
 
 <script lang='ts' setup>
 import type { PropType } from 'vue'
-import { World } from '~/store/store'
+import { World } from '~/store/chargen'
 import { usePlayStore } from '~/store/play'
 
 const props = defineProps({

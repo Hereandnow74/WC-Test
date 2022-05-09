@@ -7,7 +7,7 @@
         v-model="value"
         type="text"
         :placeholder="placeholder"
-        class="rounded-l dark:bg-warm-gray-700 px-2 w-full"
+        class="rounded-l dark:bg-warm-gray-700 px-2 w-full text-gray-800 dark:text-gray-200 "
         outline="none active:none"
         autocomplete="off"
       />
@@ -19,11 +19,11 @@
         <div
           v-for="item in list"
           :key="item"
-          class="hover:bg-gray-200 dark:hover:bg-gray-600 cursor-pointer px-2 text-base flex gap-4 justify-between w-full"
-          @click="chooseItem(item.flavor || item)"
+          class="cursor-pointer px-2 text-base flex gap-4 justify-between w-full"
+          :class="[item.style]"
+          @click="chooseItem(item.value || item)"
         >
-          {{ item.flavor || item }}
-          <fa-solid:check v-if="findIndex(boughtList, (item.flavor ? { flavor: item.flavor } : { target: item })) !== -1" class="text-green-500" />
+          {{ item.label || item }}
         </div>
       </div>
     </div>
@@ -35,7 +35,6 @@
 
 <script lang='ts' setup>
 import type { PropType } from '@vue/runtime-core'
-import { findIndex } from 'lodash'
 import tippy from 'tippy.js'
 
 const props = defineProps({
@@ -51,13 +50,13 @@ const props = defineProps({
     type: Array as PropType<any[]>,
     default: () => [],
   },
-  boughtList: {
-    type: Array as PropType<any[]>,
-    default: () => [],
-  },
   placeholder: {
     type: String,
     default: '',
+  },
+  itemStyle: {
+    type: String,
+    default: 'hover:bg-gray-200 dark:hover:bg-gray-600',
   },
 })
 const emit = defineEmits(['update:modelValue'])

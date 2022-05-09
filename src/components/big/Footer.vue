@@ -3,7 +3,7 @@
   <div
     class="fixed bottom-0 w-full text-gray-100 transition-transform transform"
     :class="visible ? 'translate-y-0' : 'translate-y-[calc(100%-1.8rem)]'"
-    @click="visible = false"
+    @mousedown="visible = false"
   >
     <div
       class="min-w-[320px] h-[568px] sm:h-[calc(100vh-3.4rem)] rounded-3xl mx-auto border relative flex flex-col transition-all"
@@ -11,6 +11,7 @@
       border="2 gray-400"
       :class="orientation ? 'max-w-[940px]' : 'max-w-[440px]'"
       @click.stop
+      @mousedown.stop
     >
       <div class="relative pb-1 flex justify-center gap-4">
         <fluent:phone-tablet-20-regular

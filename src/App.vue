@@ -25,7 +25,6 @@
 </template>
 
 <script lang="ts" setup>
-import { union } from 'lodash-es'
 import { useStore } from './store/store'
 import {
   isSupport, showSaveLoad, showShare, showSideMenu, showAddPerk, toggleShowAddPerk,
@@ -170,7 +169,15 @@ function stats2() {
   })
 
   const stopWatch = watch([() => capComp.value.size, () => buyComp.value.size, () => otherComp.value.size, () => worldsStat.value.size, () => SWP.value.size, () => ridesStat.value.size, () => perksStat.value.size], () => {
-    if ((capComp.value && capComp.value.size > 100) || (buyComp.value && buyComp.value.size > 100) || (otherComp.value && otherComp.value.size > 100) || (worldsStat.value && worldsStat.value.size > 10) || (SWP.value && SWP.value.size > 20) || (ridesStat.value && ridesStat.value.size > 10) || (perksStat.value && perksStat.value.size > 100)) {
+    let threshold = 0
+    if (capComp.value && capComp.value.size > 100) threshold += 1
+    if (buyComp.value && buyComp.value.size > 100) threshold += 1
+    if (otherComp.value && otherComp.value.size > 100) threshold += 1
+    if (worldsStat.value && worldsStat.value.size > 10) threshold += 1
+    if (ridesStat.value && ridesStat.value.size > 10) threshold += 1
+    if (perksStat.value && perksStat.value.size > 100) threshold += 1
+    if (SWP.value && SWP.value.size > 10) threshold += 1
+    if (threshold >= 3) {
       sendStats({
         captured: [...(capComp.value || [])],
         bought: [...(buyComp.value || [])],

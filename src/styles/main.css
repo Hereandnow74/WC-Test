@@ -85,3 +85,21 @@ p {
   display: none;
 }
 
+.tippy-box {
+  @apply bg-white;
+  @apply text-gray-800;
+  @apply rounded-none rounded-b;
+}
+
+.dark .tippy-box {
+  @apply bg-true-gray-700;
+  @apply text-gray-200;
+  @apply rounded-none rounded-b;
+}
+
+.tippy-content {
+  @apply p-1;
+}
+
+select:invalid { color: rgb(134, 133, 133); }
+

@@ -96,7 +96,7 @@ const discountedCost = computed(() => {
 
 function sendPerk() {
   const obj = filterObject(perkToSave)
-  if (props.savedPerk.cost !== displayedCost.value && props.savedPerk.count === obj.count)
+  if (props.savedPerk.cost !== displayedCost.value && props.savedPerk.count === obj.count && props.savedPerk.defDiscount === obj.defDiscount)
     return
   obj.cost = displayedCost.value - freeCount.value * props.perk.cost
 

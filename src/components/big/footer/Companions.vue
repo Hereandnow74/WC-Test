@@ -45,7 +45,7 @@
           <fa-solid:sort-numeric-up v-else class="inline-block rounded" />
         </div>
       </div>
-      <Variants v-model="roleFilter" :list="['All', 'Companion', 'Familiar', 'Devotee']" theme="dark" />
+      <Variants v-model="roleFilter" :list="['All', 'Companion', 'Familiar', 'Devotee', 'Offspring', 'Dead']" theme="dark" />
     </div>
     <div
       class="overflow-y-auto min-h-0 scrollbar"
@@ -78,9 +78,15 @@
         No companions matching your <b>filter</b>
       </div>
       <div v-if="companionsDataChunks.length > 1" class="flex gap-2 justify-between py-2 px-1">
-        <Button v-show="currentPage > 0" label="Previous" size="Small" @click="currentPage -= 1" />
+        <div class="flex gap-1">
+          <Button v-show="currentPage > 1" label="First" bg-color="bg-teal-500" size="Small" @click="currentPage = 0" />
+          <Button v-show="currentPage > 0" label="Previous" size="Small" @click="currentPage -= 1" />
+        </div>
         <div>Pages {{ currentPage + 1 }} out of {{ companionsDataChunks.length }}</div>
-        <Button v-show="currentPage < companionsDataChunks.length - 1" label="Next" size="Small" @click="currentPage += 1" />
+        <div class="flex gap-1">
+          <Button v-show="currentPage < companionsDataChunks.length - 1" label="Next" size="Small" @click="currentPage += 1" />
+          <Button v-show="currentPage !== companionsDataChunks.length - 1" label="Last" bg-color="bg-teal-500" size="Small" @click="currentPage = companionsDataChunks.length - 1" />
+        </div>
       </div>
       <div v-if="companionsDataFiltered.length" class="flex gap-2 justify-end mt-2 px-2">
         <Button size="Small" label="Undo All" bg-color="bg-blue-500" @click="undoAll" />
@@ -241,6 +247,7 @@ async function freeCompanion(uid: number) {
   `)
   if (!res) return
   const cmp = companions.value[findIndex(companions.value, { uid })]
+  cmp.priceTier = 0
   cmp.method = 'unbound'
 }
 

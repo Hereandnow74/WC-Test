@@ -274,7 +274,7 @@ export function copyText() {
   fullCost.c -= companionsCost.value
   full += companionsBought.length
     ? `Companions bought -${companionsCost.value} [${fullCost.c}]\n${companionsBought.reduce((a, x) =>
-      a += `${x.name}(T${x.tier})[${x.method}] from ${x.world}\n`
+      a += `${x.name}(T${x.tier})[${x.method}]${x.role && x.role !== 'Companion' ? `{${x.role}}` : ''} from ${x.world}\n`
     , '')}`
     : ''
 
@@ -282,7 +282,7 @@ export function copyText() {
 
   full += companionsCaptured.length
     ? `\nCompanions captured +${companionProfit.value}; sold +${companionProfitSold.value} [${fullCost.c}]\n${companionsCaptured.reduce((a, x) =>
-      a += `${x.name}(T${x.tier}) from ${x.world}${x.sold ? ' --SOLD' : ''}\n`
+      a += `${x.name}(T${x.tier})${x.role && x.role !== 'Companion' ? `{${x.role}}` : ''} from ${x.world}${x.sold ? ' --SOLD' : ''}\n`
     , '')}`
     : ''
 

@@ -6,7 +6,7 @@
       WORLD_COLORS[rating - 1] || 'bg-gray-600' : 'bg-gray-600'"
     @click="pickAbleAfter ? pickWorld(world) : null"
   >
-    <div v-if="world.image && !settings.allImg" class="flex-grow relative min-h-[170px]">
+    <div v-if="world.image && !settings.hideWorldImg" class="flex-grow relative min-h-[170px]">
       <img
         ref="worldImg"
         class="rounded absolute object-cover h-full w-full object-center"
@@ -30,7 +30,8 @@
     </div>
     <div v-if="world.condition && isArray(world.condition)" class="mx-2 flex gap-2">
       <span class="text-gray-200">Condition:</span>
-      <select
+      <CustomSelect :model-value="condition.name" :list="conditionList(world.condition)" @update:modelValue="changeCondition" @click.stop />
+      <!-- <select
         name="condition"
         class="text-gray-800 flex-grow min-w-0 rounded"
         @change="changeCondition"
@@ -42,7 +43,7 @@
         <option v-for="cnd in world.condition" :key="cnd.name" :value="cnd.name">
           {{ cnd.name }} ({{ cnd.rating }})
         </option>
-      </select>
+      </select> -->
     </div>
     <div v-else-if="world.condition" class="mx-2">
       {{ world.condition }}
@@ -127,8 +128,7 @@ function deleteWorld() {
     localUserWorlds.value.splice(localUserWorlds.value.indexOf(props.world), 1)
 }
 
-function changeCondition(event: any) {
-  const name = event.target.value
+function changeCondition(name: string) {
   const ind = findIndex(props.world.condition, { name })
   if (ind !== -1) {
     condition.name = name
@@ -142,6 +142,12 @@ function changeCondition(event: any) {
 
 function showInfo() {
   confirmDialog('Rating is based on average user submitted rating. If you don\'t agree with it you can make your case over <a href="https://discord.gg/cZf4U5rmPV" target="_blank" rel="noopener noreferrer" class="text-blue-400">Discord</a>', 'info')
+}
+
+function conditionList(list: any[]) {
+  list = list.map(x => ({ value: x.name, label: `${x.name} (${x.rating})`, style: x.a === 'c' ? 'text-yellow-300' : '' }))
+  list.unshift({ value: 'No condition', label: 'No condition' })
+  return list
 }
 
 onMounted(() => { if (worldImg.value) lazyLoadSingleImg(worldImg.value) })
