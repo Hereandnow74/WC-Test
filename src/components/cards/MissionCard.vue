@@ -37,10 +37,10 @@
       <h4 class="text-amber-800 dark:text-amber-300">
         Additional objectives:
       </h4>
-      <div v-for="rew in mission.objectives" :key="rew.value" class="p-1 pl-4 bg-blue-200 dark:bg-blue-gray-700">
+      <div v-for="rew in mission.objectives" :key="rew.value" class="p-1 pl-4 bg-blue-200 dark:bg-blue-gray-700 flex flex-col gap-2">
         <div><b>Objective</b>: {{ rew.value }}</div>
         <div>
-          <b>Reward</b>: {{ rew.reward }}
+          <span class="font-semibold text-green-800 dark:text-green-300">Reward</span>: {{ rew.reward }}
         </div>
       </div>
     </div>

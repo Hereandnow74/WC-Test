@@ -160,7 +160,6 @@ const companionImages = computed(() => {
     if (charInfo !== undefined)
       res[char.uid] = imageLink(charInfo.i, charInfo.u)
   })
-  localUserCharacters.value.forEach(char => res[char.uid] = char.image)
   return res
 })
 

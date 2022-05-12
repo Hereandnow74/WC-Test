@@ -54,7 +54,7 @@
         <div v-if="submitMessage" class="font-semibold">
           {{ submitMessage }}
         </div>
-        <div class="flex justify-between">
+        <div class="flex justify-between flex-wrap">
           <div class="flex gap-2">
             <Checkbox v-model="localSave" label="Local save" />
             <Checkbox v-model="serverSave" label="Propose to global" />

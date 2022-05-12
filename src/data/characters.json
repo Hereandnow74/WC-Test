@@ -3324,7 +3324,8 @@
     "b": [
       "F",
       "C",
-      "di"
+      "di",
+      "Yokai"
     ],
     "d": "12.5: Double Spoiler"
   },
@@ -3670,7 +3671,8 @@
     "w": "Touhou",
     "b": [
       "F",
-      "C"
+      "C",
+      "gd"
     ],
     "d": "15: Legacy of Lunatic Kingdom"
   },
@@ -38969,7 +38971,8 @@
       "th",
       "sn",
       "gn"
-    ]
+    ],
+    "in": "https://cdn.donmai.us/original/61/dc/__android_21_and_majin_android_21_dragon_ball_and_1_more_drawn_by_echo_saber__61dc0cd91012c5a667bc5c160cd80373.jpg"
   },
   {
     "u": 6344,
@@ -45549,7 +45552,8 @@
     "w": "The Elder Scrolls",
     "b": [
       "M",
-      "dg"
+      "hr",
+      "tc"
     ],
     "d": "Skyrim",
     "s": "https://images.uesp.net/d/d1/SR-npc-Arngeir.jpg"
@@ -45572,7 +45576,9 @@
     "i": "",
     "w": "The Elder Scrolls",
     "b": [
-      "M"
+      "M",
+      "hr",
+      "tc"
     ],
     "d": "Skyrim"
   },
@@ -45628,7 +45634,8 @@
     "w": "The Elder Scrolls",
     "b": [
       "M",
-      "dg",
+      "hr",
+      "tc",
       "pt"
     ],
     "d": "Skyrim",
@@ -46270,7 +46277,8 @@
     "i": "",
     "w": "The Elder Scrolls",
     "b": [
-      "M"
+      "M",
+      "dg"
     ],
     "d": "Skyrim"
   },
@@ -46281,7 +46289,8 @@
     "i": "",
     "w": "The Elder Scrolls",
     "b": [
-      "M"
+      "M",
+      "dg"
     ],
     "d": "Skyrim"
   },
@@ -46292,7 +46301,8 @@
     "i": "",
     "w": "The Elder Scrolls",
     "b": [
-      "M"
+      "M",
+      "dg"
     ],
     "d": "Skyrim"
   },
@@ -46303,7 +46313,8 @@
     "i": "",
     "w": "The Elder Scrolls",
     "b": [
-      "M"
+      "M",
+      "dg"
     ],
     "d": "Skyrim"
   },
@@ -46314,7 +46325,8 @@
     "i": "",
     "w": "The Elder Scrolls",
     "b": [
-      "M"
+      "M",
+      "dg"
     ],
     "d": "Skyrim"
   },
@@ -46325,7 +46337,8 @@
     "i": "",
     "w": "The Elder Scrolls",
     "b": [
-      "M"
+      "M",
+      "dg"
     ],
     "d": "Skyrim"
   },
@@ -46336,7 +46349,8 @@
     "i": "",
     "w": "The Elder Scrolls",
     "b": [
-      "M"
+      "M",
+      "dg"
     ],
     "d": "Skyrim"
   },
@@ -46347,7 +46361,8 @@
     "i": "",
     "w": "The Elder Scrolls",
     "b": [
-      "M"
+      "M",
+      "dg"
     ],
     "d": "Skyrim"
   },
@@ -47068,7 +47083,9 @@
     "s": "https://chan.sankakucomplex.com/post/show/5825244",
     "w": "The Elder Scrolls",
     "b": [
-      "F"
+      "F",
+      "hr",
+      "sr"
     ],
     "d": "Skyrim",
     "in": "https://pictures.hentai-foundry.com/n/nesoun/128294/nesoun-128294-TESVS_Aela_Huntress_2.jpg"
@@ -47100,7 +47117,7 @@
   {
     "u": 8532,
     "n": "Serana",
-    "t": 5,
+    "t": 7,
     "i": "3c3b463abea4d3ae219af919ce4f58eb.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/4112995",
     "w": "The Elder Scrolls",
@@ -47235,6 +47252,8 @@
     "b": [
       "M",
       "hr",
+      "dr",
+      "im",
       "dg"
     ],
     "d": "Skyrim"
@@ -58723,13 +58742,14 @@
     "u": 3711,
     "n": "HS2000",
     "t": 4,
-    "i": "https://i.imgur.com/eH06Mb0l.jpg",
+    "i": "[n]__hs2000_girls_frontline_drawn_by_waterkuma__sample-c1c6fbc4d9adfae612eaddf6e8358abc.jpg",
     "w": "Girls Frontline",
     "b": [
       "F",
       "ad"
     ],
-    "s": "https://i.imgur.com/eH06Mb0.jpg"
+    "s": "https://cdn.donmai.us/sample/c1/c6/__hs2000_girls_frontline_drawn_by_waterkuma__sample-c1c6fbc4d9adfae612eaddf6e8358abc.jpg",
+    "in": "https://cdn.donmai.us/sample/d0/e4/__hs2000_girls_frontline_drawn_by_k0ng__sample-d0e4316f9d33fe92bb6e23880d99e5ff.jpg"
   },
   {
     "u": 3712,
@@ -60675,12 +60695,14 @@
     "u": 3864,
     "n": "Wz.29",
     "t": 4,
-    "i": "",
+    "i": "[n]EDRx8BuUYAAvAw7.jpg",
     "w": "Girls Frontline",
     "b": [
       "F",
       "ad"
-    ]
+    ],
+    "s": "https://pbs.twimg.com/media/EDRx8BuUYAAvAw7.jpg",
+    "in": "https://safebooru.org/samples/2196/sample_e6e71ab37501f4108e4848daea08c688916f1269.jpg"
   },
   {
     "u": 3865,
@@ -60699,34 +60721,40 @@
     "u": 3866,
     "n": "K31",
     "t": 4,
-    "i": "",
+    "i": "[n]EBXINqtVUAE7MdS.jpg",
     "w": "Girls Frontline",
     "b": [
       "F",
       "ad"
-    ]
+    ],
+    "s": "https://pbs.twimg.com/media/EBXINqtVUAE7MdS.jpg"
   },
   {
     "u": 3867,
     "n": "KSVK",
     "t": 4,
-    "i": "",
+    "i": "[n]__ksvk_girls_frontline_drawn_by_pandea_work__sample-935b91830e1a32dc480ea7e6bf724dbb.jpg",
     "w": "Girls Frontline",
     "b": [
       "F",
-      "ad"
-    ]
+      "ad",
+      "ct"
+    ],
+    "s": "https://cdn.donmai.us/sample/93/5b/__ksvk_girls_frontline_drawn_by_pandea_work__sample-935b91830e1a32dc480ea7e6bf724dbb.jpg",
+    "in": "https://cdn.donmai.us/original/2a/ed/__ksvk_girls_frontline_drawn_by_rebe11__2aed2fd5bde68a0d5913336ce338a30c.png"
   },
   {
     "u": 3868,
     "n": "Mk 12",
     "t": 4,
-    "i": "",
+    "i": "[n]__mk_12_girls_frontline_drawn_by_kinjo_kuromomo__sample-bcfc49605f2b7cbf23dc6fe83d531b7c.jpg",
     "w": "Girls Frontline",
     "b": [
       "F",
       "ad"
-    ]
+    ],
+    "s": "https://cdn.donmai.us/sample/bc/fc/__mk_12_girls_frontline_drawn_by_kinjo_kuromomo__sample-bcfc49605f2b7cbf23dc6fe83d531b7c.jpg",
+    "in": "https://cdn.donmai.us/sample/91/cf/__mk_12_girls_frontline_drawn_by_kinjo_kuromomo__sample-91cf6d885ef6429dda75919241e50ee2.jpg"
   },
   {
     "u": 3869,
@@ -60745,23 +60773,27 @@
     "u": 3870,
     "n": "PSG-1",
     "t": 4,
-    "i": "",
+    "i": "[n]__psg_1_girls_frontline_drawn_by_papaia_quentingqoo__sample-099af202bd925fa16c756e62fc849c36.jpg",
     "w": "Girls Frontline",
     "b": [
       "F",
       "ad"
-    ]
+    ],
+    "s": "https://cdn.donmai.us/sample/09/9a/__psg_1_girls_frontline_drawn_by_papaia_quentingqoo__sample-099af202bd925fa16c756e62fc849c36.jpg",
+    "in": "https://cdn.donmai.us/sample/cc/41/__psg_1_girls_frontline_drawn_by_kyjsogom__sample-cc419dc21bf76f5409d3c13c8c0482d8.jpg"
   },
   {
     "u": 3871,
     "n": "PTRD",
     "t": 4,
-    "i": "",
+    "i": "[n]__ptrd_girls_frontline_drawn_by_luanes__sample-c2b875dce52f02da0bc8035644c19c28.jpg",
     "w": "Girls Frontline",
     "b": [
       "F",
       "ad"
-    ]
+    ],
+    "s": "https://cdn.donmai.us/sample/c2/b8/__ptrd_girls_frontline_drawn_by_luanes__sample-c2b875dce52f02da0bc8035644c19c28.jpg",
+    "in": "https://cdn.donmai.us/sample/2d/4b/__ptrd_and_ptrd_girls_frontline_drawn_by_evan_yang__sample-2d4b919f586f3aa3208003c817c66b8b.jpg"
   },
   {
     "u": 3872,
@@ -61725,12 +61757,14 @@
     "u": 3956,
     "n": "Saiga-12",
     "t": 4,
-    "i": "",
+    "i": "[n]__saiga_12_and_saiga_12_girls_frontline_drawn_by_fangdan_runiu__sample-ef1127a71bcab5c0d66244bb05edcbf0.jpg",
     "w": "Girls Frontline",
     "b": [
       "F",
       "ad"
-    ]
+    ],
+    "s": "https://cdn.donmai.us/sample/ef/11/__saiga_12_and_saiga_12_girls_frontline_drawn_by_fangdan_runiu__sample-ef1127a71bcab5c0d66244bb05edcbf0.jpg",
+    "in": "https://cdn.donmai.us/sample/8f/76/__saiga_12_girls_frontline_drawn_by_katagiri_ags__sample-8f765a5cb9ed785db20caa0fb2a2c590.jpg"
   },
   {
     "u": 3957,
@@ -61763,12 +61797,14 @@
     "u": 3960,
     "n": "Beak",
     "t": 4,
-    "i": "",
+    "i": "[n]__beak_girls_frontline_drawn_by_nishiro_ryoujin__sample-cf447dc805e6f1088aa9deb28d2dda99.jpg",
     "w": "Girls Frontline",
     "b": [
       "F",
       "ad"
-    ]
+    ],
+    "s": "https://cdn.donmai.us/sample/cf/44/__beak_girls_frontline_drawn_by_nishiro_ryoujin__sample-cf447dc805e6f1088aa9deb28d2dda99.jpg",
+    "in": "https://cdn.donmai.us/original/9e/4f/__beak_girls_frontline_drawn_by_goyain__9e4fd6767335429c42aa873d5dfeb222.jpg"
   },
   {
     "u": 3961,
@@ -61836,12 +61872,14 @@
     "u": 3967,
     "n": "Hunter",
     "t": 4,
-    "i": "",
+    "i": "[n]__hunter_girls_frontline_drawn_by_popoman__sample-e51d670f1e9530b8085bb654241c8179.jpg",
     "w": "Girls Frontline",
     "b": [
       "F",
       "ad"
-    ]
+    ],
+    "s": "https://cdn.donmai.us/sample/e5/1d/__hunter_girls_frontline_drawn_by_popoman__sample-e51d670f1e9530b8085bb654241c8179.jpg",
+    "in": "https://cdn.donmai.us/sample/f9/ae/__hunter_girls_frontline_drawn_by_nai_daiduolaoge__sample-f9ae3add5eb1286fce609c96dd5ea781.jpg"
   },
   {
     "u": 3968,
@@ -61883,12 +61921,14 @@
     "u": 3971,
     "n": "Scarecrow",
     "t": 4,
-    "i": "",
+    "i": "[n]__scarecrow_girls_frontline_drawn_by_npt_shizuka__sample-26d199255b7b170061034d018fc18c20.jpg",
     "w": "Girls Frontline",
     "b": [
       "F",
       "ad"
-    ]
+    ],
+    "s": "https://cdn.donmai.us/sample/26/d1/__scarecrow_girls_frontline_drawn_by_npt_shizuka__sample-26d199255b7b170061034d018fc18c20.jpg",
+    "in": "https://cdn.donmai.us/sample/56/e1/__scarecrow_girls_frontline_drawn_by_anlark__sample-56e1d60dfd58e69b5e11dacec1eb2a60.jpg"
   },
   {
     "u": 10963,
@@ -64481,7 +64521,8 @@
     "s": "https://gbf.wiki/images/2/22/Npc_zoom_3040130000_01.png",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "dg"
     ]
   },
   {
@@ -69410,14 +69451,17 @@
     "u": 4849,
     "n": "Catra",
     "t": 5,
-    "i": "d5izh6x_084098d3_591d_437b_8939_bc9a1a594a36.jpg",
-    "s": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8a945a54-41d1-439b-9722-2a6289d51cb2/d5izh6x-084098d3-591d-437b-8939-bc9a1a594a36.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzhhOTQ1YTU0LTQxZDEtNDM5Yi05NzIyLTJhNjI4OWQ1MWNiMlwvZDVpemg2eC0wODQwOThkMy01OTFkLTQzN2ItODkzOS1iYzlhMWE1OTRhMzYuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.AZWCSFCBc2Vf4fXDiPJqph2CW-Zf6gwsab4yXU3cvY4",
+    "i": "[n]7c9c7b7163837be10fc2c56b30e84dbfabada430.jpg",
+    "s": "https://safebooru.org//images/3783/7c9c7b7163837be10fc2c56b30e84dbfabada430.jpg",
     "w": "She-Ra and the Princesses of Power",
     "b": [
-      "az",
+      "F",
       "st",
-      "F"
-    ]
+      "dh",
+      "az",
+      "ct"
+    ],
+    "in": "https://cdn.donmai.us/original/c1/f8/__catra_masters_of_the_universe_and_1_more_drawn_by_bbc_chan__c1f80cd9c0ff66c492ad8ba750ed48ef.jpg"
   },
   {
     "u": 4850,
@@ -69472,13 +69516,14 @@
     "u": 4854,
     "n": "Scorpia",
     "t": 6,
-    "i": "d4amm16_ed076d63_e5b3_4838_973f_7d36df23ee28.jpg",
-    "s": "https://www.deviantart.com/eisu/art/Commission-Scorpia-259715850",
+    "i": "[n]rodrigo-bonomo-scorpia4-brave-loyal-and-great-hugs-s2-ajusted.jpg",
+    "s": "https://cdnb.artstation.com/p/assets/images/images/029/502/695/small/rodrigo-bonomo-scorpia4-brave-loyal-and-great-hugs-s2-ajusted.jpg",
     "w": "She-Ra and the Princesses of Power",
     "b": [
-      "pc",
-      "sc",
       "F",
+      "sc",
+      "dh",
+      "pc",
       "az"
     ]
   },
@@ -90424,7 +90469,7 @@
   {
     "u": 4293,
     "n": "Frederica Tenjuin",
-    "t": 6,
+    "t": 7,
     "i": "sample_143678c770f492522890d9ea3624396d.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/939292",
     "w": "Psyren",
@@ -90469,11 +90514,15 @@
     "u": 4297,
     "n": "(Grigory #) 07",
     "t": 8,
-    "i": "07.jpg",
-    "s": "https://psyren.fandom.com/wiki/07",
+    "i": "https://i.imgur.com/wZCQiJAl.png",
+    "s": "https://i.imgur.com/wZCQiJA.png",
     "w": "Psyren",
     "b": [
-      "F"
+      "F",
+      "hp",
+      "ps",
+      "mp",
+      "tm"
     ]
   },
   {
@@ -94524,7 +94573,8 @@
     "s": "http://img10.reactor.cc/pics/post/full/Anime-Kobayashi-san-Chi-No-MaiDragon-Fafnir-%28MaiDragon%29-paavuchi-3706105.png",
     "w": "Miss Kobayashi's Dragon Maid",
     "b": [
-      "M"
+      "M",
+      "dg"
     ]
   },
   {
@@ -94572,7 +94622,8 @@
     "w": "Miss Kobayashi's Dragon Maid",
     "b": [
       "F",
-      "C"
+      "C",
+      "dg"
     ]
   },
   {
@@ -94584,7 +94635,8 @@
     "w": "Miss Kobayashi's Dragon Maid",
     "b": [
       "F",
-      "C"
+      "C",
+      "dg"
     ]
   },
   {
@@ -94596,7 +94648,8 @@
     "w": "Miss Kobayashi's Dragon Maid",
     "b": [
       "F",
-      "C"
+      "C",
+      "dg"
     ]
   },
   {
@@ -94871,7 +94924,9 @@
     "s": "https://vignette.wikia.nocookie.net/monstergirlencyclopedia/images/d/d6/Witch_Mimiru.png/revision/latest?cb=20131001085300",
     "w": "Monster Girl Encyclopedia",
     "b": [
-      "F"
+      "F",
+      "wh",
+      "mg"
     ]
   },
   {
@@ -94954,7 +95009,10 @@
     "w": "Monster Girl Encyclopedia",
     "b": [
       "F",
-      "mr"
+      "cr",
+      "sc",
+      "pc",
+      "mg"
     ]
   },
   {
@@ -95158,8 +95216,12 @@
     "w": "Monster Girl Encyclopedia",
     "b": [
       "F",
-      "mr"
-    ]
+      "cr",
+      "sc",
+      "dm",
+      "mg"
+    ],
+    "in": "https://i.imgur.com/tcARqnP.png"
   },
   {
     "u": 11686,
@@ -95558,7 +95620,8 @@
     "w": "Monster Girl Encyclopedia",
     "b": [
       "F",
-      "mr"
+      "sr",
+      "mg"
     ]
   },
   {
@@ -95817,7 +95880,7 @@
     "w": "Monster Girl Encyclopedia",
     "b": [
       "F",
-      "mr"
+      "mg"
     ]
   },
   {
@@ -95876,7 +95939,8 @@
     "w": "Monster Girl Encyclopedia",
     "b": [
       "F",
-      "mr"
+      "en",
+      "mg"
     ]
   },
   {
@@ -96752,7 +96816,8 @@
     "w": "Monster Girl Encyclopedia",
     "b": [
       "F",
-      "mr"
+      "mr",
+      "ct"
     ]
   },
   {
@@ -96860,7 +96925,9 @@
     "w": "Monster Girl Encyclopedia",
     "b": [
       "F",
-      "mr"
+      "mp",
+      "un",
+      "Ghost"
     ]
   },
   {
@@ -96896,7 +96963,7 @@
     "w": "Monster Girl Encyclopedia",
     "b": [
       "F",
-      "mr"
+      "mg"
     ]
   },
   {
@@ -97112,8 +97179,10 @@
     "w": "Monster Girl Encyclopedia",
     "b": [
       "F",
-      "mr",
-      "md"
+      "cr",
+      "ot",
+      "md",
+      "mg"
     ]
   },
   {
@@ -97173,7 +97242,8 @@
     "w": "Monster Girl Encyclopedia",
     "b": [
       "F",
-      "mr"
+      "ct",
+      "mg"
     ]
   },
   {
@@ -97414,7 +97484,8 @@
     "w": "Monster Girl Encyclopedia",
     "b": [
       "F",
-      "mr"
+      "ct",
+      "mg"
     ]
   },
   {
@@ -97486,7 +97557,9 @@
     "w": "Monster Girl Encyclopedia",
     "b": [
       "F",
-      "mr"
+      "un",
+      "mg",
+      "Ghost"
     ]
   },
   {
@@ -97498,7 +97571,7 @@
     "w": "Monster Girl Encyclopedia",
     "b": [
       "F",
-      "mr"
+      "mg"
     ]
   },
   {
@@ -100795,8 +100868,8 @@
     "u": 6567,
     "n": "Sosaki Shino/Mandalay",
     "t": 5,
-    "i": "jm8eCCA.png",
-    "s": "https://i.imgur.com/jm8eCCA.png",
+    "i": "[n]a02253198212ffc20eb346ee864abab953983bbb.jpg",
+    "s": "https://safebooru.org//images/2442/a02253198212ffc20eb346ee864abab953983bbb.jpg",
     "in": "https://cdn.donmai.us/sample/3e/e5/__mandalay_boku_no_hero_academia_drawn_by_kobaji__sample-3ee56eadace138f37cd1e2b3c956ff7d.jpg",
     "w": "My Hero Academia",
     "b": [
@@ -103228,10 +103301,10 @@
   },
   {
     "u": 475,
-    "n": "Senju Tobirama",
+    "n": "Tobirama Senju",
     "t": 7,
-    "i": "d8jkf9h_1f3d71cf_1fd1_4f3b_bf6d_74f07a3c5579.png",
-    "s": "https://www.deviantart.com/mrsoomori/art/Tsuya-senju-Adult-version-516595013",
+    "i": "[n]Tobirama-Senju-SFW.jpg",
+    "s": "https://i.ibb.co/XVXzgzB/Tobirama-Senju-SFW.jpg",
     "w": "Naruto",
     "b": [
       "M",
@@ -120568,11 +120641,12 @@
     "t": 3,
     "i": "159e415275a8a5de1566d92a8cd7c670.png",
     "s": "https://i.pinimg.com/originals/15/9e/41/159e415275a8a5de1566d92a8cd7c670.png",
-    "w": "Pre-OT Rebels Era",
+    "w": "Star Wars",
     "b": [
       "F"
     ],
-    "in": "https://pictures.hentai-foundry.com/m/MinaCream/513848/MinaCream-513848-218_Sabine_Wren_Star_Wars_Rebels.jpg"
+    "in": "https://pictures.hentai-foundry.com/m/MinaCream/513848/MinaCream-513848-218_Sabine_Wren_Star_Wars_Rebels.jpg",
+    "d": "Pre-OT Rebels Era"
   },
   {
     "u": 5324,
@@ -120580,11 +120654,13 @@
     "t": 3,
     "i": "5a58b88fbd243fca669c398e026dca8e.jpg",
     "s": "https://i.pinimg.com/originals/5a/58/b8/5a58b88fbd243fca669c398e026dca8e.jpg",
-    "w": "Pre-OT Rebels Era",
+    "w": "Star Wars",
     "b": [
       "F",
       "al"
-    ]
+    ],
+    "d": "Pre-OT Rebels Era",
+    "in": "https://peach.paheal.net/_images/2ad3332d3a5b01c5d811a985cd884af6/3979545%20-%20Hera_Syndulla%20PervertedGecko%20Star_Wars%20Star_Wars_Rebels%20Twi%27lek.jpg"
   },
   {
     "u": 5325,
@@ -120592,14 +120668,16 @@
     "t": 5,
     "i": "mauricio_morali_seventh_sister2.jpg",
     "s": "https://cdna.artstation.com/p/assets/images/images/027/785/536/large/mauricio-morali-seventh-sister2.jpg?1592529677",
-    "w": "Pre-OT Rebels Era",
+    "w": "Star Wars",
     "b": [
       "F",
       "mp",
       "cr",
       "ps",
       "al"
-    ]
+    ],
+    "d": "Pre-OT Rebels Era",
+    "in": "https://lotus.paheal.net/_images/485bedbfa215ff6f3847685bfd735797/4360871%20-%20Mirialan%20Seventh_sister%20Star_Wars%20Star_Wars_Rebels%20inquisitor%20madh.png"
   },
   {
     "u": 5326,
@@ -120612,7 +120690,8 @@
       "F",
       "mp",
       "ps"
-    ]
+    ],
+    "in": "https://tulip.paheal.net/_images/a30e7caf2346471d38a6d99ab0658403/3426559%20-%20Jedi%3A_Fallen_Order%20Star_Wars%20Trilla_Suduri%20inquisitor%20ynorka.jpg"
   },
   {
     "u": 5313,
@@ -120757,7 +120836,8 @@
       "F",
       "cl",
       "az"
-    ]
+    ],
+    "in": "https://lotus.paheal.net/_images/873e14d61a430f31e10c7d1ddf962df1/4011617%20-%20Bo-Katan_Kryze%20Ganassa%20Mandalorian%20Nite_Owls%20Star_Wars%20The_Mandalorian.jpg"
   },
   {
     "u": 12521,
@@ -131130,6 +131210,7 @@
     "b": [
       "F",
       "C",
+      "hl",
       "dm",
       "dg",
       "sr"
@@ -135211,7 +135292,7 @@
     "t": 8,
     "i": "aka__sample_1609260c53b678c787675dfcea869d99.jpg",
     "s": "https://danbooru.donmai.us/posts/4575127",
-    "w": "Slimes 300 Years",
+    "w": "I've Been Killing Slimes for 300 Years and Maxed Out My Level",
     "b": [
       "F",
       "C",
@@ -135228,7 +135309,7 @@
     "t": 7,
     "i": "sample_96e5287b990f15e06b1ce80492ccaf47.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/24952076",
-    "w": "Slimes 300 Years",
+    "w": "I've Been Killing Slimes for 300 Years and Maxed Out My Level",
     "b": [
       "F",
       "C",
@@ -135243,7 +135324,7 @@
     "t": 2,
     "i": "sample_101456f44816433d64efb98092ebb5c5.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/24952112",
-    "w": "Slimes 300 Years",
+    "w": "I've Been Killing Slimes for 300 Years and Maxed Out My Level",
     "b": [
       "F",
       "C",
@@ -135259,7 +135340,7 @@
     "t": 3,
     "i": "onda_naoki__e3f9251d108c9c04789e8768b4c160b0.jpg",
     "s": "https://danbooru.donmai.us/posts/4525659",
-    "w": "Slimes 300 Years",
+    "w": "I've Been Killing Slimes for 300 Years and Maxed Out My Level",
     "b": [
       "F",
       "C",
@@ -135274,7 +135355,7 @@
     "t": 7,
     "i": "o_dialique__72574e984be1813bb0760133d43d6b28.png",
     "s": "https://danbooru.donmai.us/posts/3149631",
-    "w": "Slimes 300 Years",
+    "w": "I've Been Killing Slimes for 300 Years and Maxed Out My Level",
     "b": [
       "F",
       "C",
@@ -135288,7 +135369,7 @@
     "n": "Rosalie",
     "t": 3,
     "i": "https://i.imgur.com/Feeesdml.jpg",
-    "w": "Slimes 300 Years",
+    "w": "I've Been Killing Slimes for 300 Years and Maxed Out My Level",
     "b": [
       "F",
       "C",
@@ -135304,7 +135385,7 @@
     "t": 7,
     "i": "sky__sample_c65cc625a64cc35bd31e16d6f2b468a4.jpg",
     "s": "https://danbooru.donmai.us/posts/4583193",
-    "w": "Slimes 300 Years",
+    "w": "I've Been Killing Slimes for 300 Years and Maxed Out My Level",
     "b": [
       "F",
       "C",
@@ -135318,7 +135399,7 @@
     "t": 8,
     "i": "https://i.imgur.com/KOIOCaIl.png",
     "s": "https://i.imgur.com/KOIOCaI.png",
-    "w": "Slimes 300 Years",
+    "w": "I've Been Killing Slimes for 300 Years and Maxed Out My Level",
     "b": [
       "F",
       "C",
@@ -149424,7 +149505,8 @@
     "s": "https://vignette.wikia.nocookie.net/to-aru-majutsu-no-index/images/5/50/Yoshikawa.jpg/revision/latest?cb=20100620232632",
     "w": "To Aru series",
     "b": [
-      "F"
+      "F",
+      "sn"
     ],
     "d": "AC adults"
   },
@@ -149716,6 +149798,7 @@
     "w": "To Aru series",
     "b": [
       "F",
+      "di",
       "sd"
     ],
     "d": "AC students"
@@ -149729,6 +149812,7 @@
     "w": "To Aru series",
     "b": [
       "F",
+      "sc",
       "sd"
     ],
     "d": "AC students"
@@ -149797,7 +149881,8 @@
     "s": "https://chan.sankakucomplex.com/post/show/19523754",
     "w": "To Aru series",
     "b": [
-      "F"
+      "F",
+      "sd"
     ],
     "d": "AC students"
   },

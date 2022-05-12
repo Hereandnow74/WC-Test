@@ -21,6 +21,7 @@
               <span text="gray-600 dark:gray-400">
                 (Cost: {{ chosenOrigin.title === item.title ? chosenOrigin.cost : item.cost }})
               </span>
+              <span v-if="item.title === 'Substitute'" class="text-gray-500">[<span class="text-amber-400">Max T{{ maxSubTier }}</span>]</span>
             </h4>
             <div v-if="item.variants && chosenOrigin.title === item.title">
               <label for="variants">Variants:</label>
@@ -125,6 +126,15 @@ const costError = ref('')
 const { allEffects, startingOrigin, fullStartingBudget, flags, settings, baseBudget, csr, patron } = useStore()
 
 onMounted(() => useTooltips())
+
+const maxSubTier = computed(() => {
+  const cost = fullStartingBudget.value * 0.2
+  for (let i = 0; i < CHAR_COSTS.length; i++) {
+    if (cost < CHAR_COSTS[i])
+      return i - 1
+  }
+  return 0
+})
 
 watch(chosenOrigin, () => {
   if (['Substitute', 'Possess'].includes(chosenOrigin.title))

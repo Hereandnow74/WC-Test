@@ -43,8 +43,10 @@
         <h4 id="title" class="flex px-1 leading-none relative" :class="fontSize">
           <span class="flex-grow text-center">{{ charData.name }}</span>
           <div id="companionMenu" class="h-5 absolute right-0 text-right">
-            <ic:outline-report class="pr-1 text-gray-500" />
-            <div v-if="showTiers" class="w-max flex flex-col gap-1 absolute right-0 -top-8 edit-icons bg-gray-700 p-1">
+            <div ref="infoIcon" class="pr-1 text-gray-500 text-2xl md:text-base" @click="isTouchpad ? showMenu = true : null">
+              <ic:outline-report />
+            </div>
+            <div v-show="showTiers && (isTouchpad ? showMenu : isInfoHovered || isMenuHovered)" ref="editMenu" class="w-max flex flex-col gap-3 md:gap-1 absolute right-0 -top-8 edit-icons bg-gray-700 p-1" @click="isTouchpad ? showMenu = false : null">
               <a
                 v-if="charData.sourceImage"
                 class="hover:(text-gray-300 bg-gray-600) cursor-pointer flex items-center gap-1"
@@ -172,9 +174,17 @@ const props = defineProps({
 
 const {
   flags, companions, localUserCharacters, companionsUIDs, captureKoeff, underLoan, favorites,
-  fullStartingBudget, settings,
+  fullStartingBudget, settings, favoritesObject,
 } = useStore()
 const { loan, trHistory } = usePlayStore()
+
+const infoIcon = ref<EventTarget | null>(null)
+const editMenu = ref<EventTarget | null>(null)
+const showMenu = ref(false)
+const isInfoHovered = useElementHover(infoIcon)
+const isMenuHovered = useElementHover(editMenu)
+
+const isTouchpad = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0)
 
 const modalImage = ref('')
 const showModal = ref(false)
@@ -184,8 +194,6 @@ const nsfw = ref(settings.value.nsfw)
 const cardEl = ref<HTMLImageElement| null>(null)
 const companionEl = ref<HTMLImageElement| null>(null)
 const inFocus = useElementHover(cardEl)
-
-const favoritesObject = computed(() => favorites.value.reduce((a, f) => (a[f] = f, a), {} as Record<string, string>))
 
 const charData = computed(() => {
   const res = props.char.t
@@ -319,15 +327,3 @@ onMounted(() => {
 
 watch(imageLink, () => companionEl.value ? companionEl.value.src = imageLink.value : null)
 </script>
-
-<style>
-#companionMenu .edit-icons {
-  visibility: hidden;
-}
-#companionMenu:hover .edit-icons {
-  visibility: visible;
-}
-.edit-icons:hover {
-  visibility: visible;
-}
-</style>

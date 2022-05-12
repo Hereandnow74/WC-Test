@@ -347,6 +347,8 @@ const collapsedDescsSet = computed(() => new Set(collapsedDescs.value))
 
 export const appName = ref('')
 
+const favoritesObject = computed(() => favorites.value.reduce((a, f) => (a[f] = f, a), {} as Record<string, string>))
+
 export function useStore() {
   return {
     budget,
@@ -424,5 +426,6 @@ export function useStore() {
     collapsedDescsSet,
     manualKf,
     manualSellKf,
+    favoritesObject,
   }
 }

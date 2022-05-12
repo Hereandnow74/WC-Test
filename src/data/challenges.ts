@@ -1,4 +1,5 @@
 import { findIndex, sample, random } from 'lodash-es'
+import { WORLD_RATINGS } from './constants'
 import { addFreebies, deleteFreebies } from '~/logic'
 import { useStore } from '~/store/store'
 
@@ -8,7 +9,7 @@ Challenges are not a part of a canon Waifu Catalog so you have more freedom in i
 <p>You can pick a several challenges at the same time if they don't conflict with each other.</p>
 `
 
-const { fullStartingBudget, companions, baseBudget } = useStore()
+const { fullStartingBudget, companions, baseBudget, startingWorld } = useStore()
 
 const employee = { uid: 6666666, name: 'Employee #6.02214076e23', world: 'The Company', tier: 10, priceTier: 0, method: 'unbound' }
 let rouletteWatcher = null
@@ -24,11 +25,15 @@ export const challenges = [
     title: 'Two Dime',
     dlc: 'Om1cr0n',
     special: 'Minimum World DR is 4',
-    cost: computed(() => fullStartingBudget.value - 20).value,
+    cost: 0,
     desc: `
     <p>Company's newly hired Highly Effective Manager come up with the idea of how to increase the profits, she decided that people that where rejected by Company before should be given a chance to succeed with a modified contract. </p>
     <p>Congratulations you where choosen to become a new contractor of the Company lucky you! You will receive a whole 20 credits to make any purchase you want found in this catalog choose wisely. What do you think it's too little, fret not you will be able to take a loan after you make your first 3 Captures up to 50% of your total spending's, aren't we generous?</p>
     `,
+    effect: {
+      set: () => baseBudget.value = 20,
+      remove: () => baseBudget.value = WORLD_RATINGS[startingWorld.value.rating - 1].budget,
+    },
   },
   {
     uid: 'U8fCr',
