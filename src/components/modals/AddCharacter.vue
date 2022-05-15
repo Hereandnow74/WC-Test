@@ -14,7 +14,7 @@
           <InputWithSearch
             v-model.trim="world"
             idd="worldSearch"
-            :list="allWorlds"
+            :list="allWorldNames"
             placeholder="World Name"
             class="flex-grow"
             :error-message="errors.world"
@@ -84,10 +84,10 @@
 import * as zod from 'zod'
 import { useForm, useField } from 'vee-validate'
 import { toFormValidator } from '@vee-validate/zod'
-import { random, uniq } from 'lodash-es'
+import { random } from 'lodash-es'
 import { useStore } from '~/store/store'
 import { proposeCompanion, toggleShowAddCharacter, userCharactersShown } from '~/logic'
-import { getChars, getUserChars, waifuTagsByTag } from '~/data/constants'
+import { getAllChars, useWorlds, waifuTagsByTag } from '~/data/constants'
 
 const props = defineProps({
   editMode: {
@@ -99,11 +99,6 @@ const props = defineProps({
     default: () => ({}),
   },
 })
-
-const chars = ref<any[]>([])
-
-getChars().then(x => chars.value.push(...x))
-getUserChars().then(x => chars.value.push(...x))
 
 const localSave = ref(true)
 const serverSave = ref(false)
@@ -118,6 +113,7 @@ const submitMessage = ref('')
 const showRules = ref(false)
 
 const { userCharacters, localUserCharacters } = useStore()
+const { allWorldNames, allSubs } = useWorlds()
 
 const zodObject = zod.object({
   name: zod.string().nonempty('Character name is required').max(64, { message: 'Maximum length is 64 chars' }),
@@ -133,8 +129,6 @@ const zodGlobal = zodObject.extend({ nickname: zod.string().nonempty('Nickname i
 
 const schema = computed(() => serverSave.value ? toFormValidator(zodGlobal) : toFormValidator(zodObject))
 
-const allWorlds = computed(() => uniq(chars.value.map(x => x.w)))
-const allSubs = computed(() => uniq(chars.value.filter(x => x.d).map(x => x.d)))
 const { errors, handleSubmit } = useForm({
   validationSchema: schema,
   initialValues: {

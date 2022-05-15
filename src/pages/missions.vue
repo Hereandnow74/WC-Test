@@ -26,25 +26,13 @@
     </h3>
     <div class="flex gap-2 justify-center flex-wrap py-2">
       <div>
-        <Select v-model="author" :options="authorOptions" label="Author">
-          <option value="Any">
-            Any
-          </option>
-        </Select>
+        <Select v-model="author" :options="authorOptions" label="Author" />
       </div>
       <div>
-        <Select v-model="world" :options="worldOptions" label="World" class="max-w-68">
-          <option value="Any">
-            Any
-          </option>
-        </Select>
+        <Select v-model="world" :options="worldOptions" label="World" class="max-w-68" />
       </div>
       <div>
-        <Select v-model="scope" :options="scopeOptions" label="Scope">
-          <option value="Any">
-            Any
-          </option>
-        </Select>
+        <Select v-model="scope" :options="scopeOptions" label="Scope" />
       </div>
     </div>
     <Note v-if="page === 1" class="mb-2" type="warning" title="Work in progress">
@@ -64,9 +52,10 @@ import { missions } from '~/data/missions'
 import { toggleShowAddMission } from '~/logic'
 import { MissionGenerator } from '~/logic/missionsGen'
 
-const authorOptions = Object.keys(groupBy(missions, 'author'))
-const worldOptions = Object.keys(groupBy(missions, 'loca'))
-const scopeOptions = ['Quick', 'Standard', 'Grand']
+const authorOptions = Object.keys(groupBy(missions, 'author')).sort((a, b) => a.localeCompare(b))
+authorOptions.unshift('Any')
+const worldOptions = Object.keys(groupBy(missions, 'loca')).sort((a, b) => a.localeCompare(b))
+const scopeOptions = ['Any', 'Quick', 'Standard', 'Grand']
 
 const author = ref('Any')
 const world = ref('Any')

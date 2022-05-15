@@ -80,7 +80,7 @@ export class MissionGenerator {
       'Use only native power / technology',
       'You must do it yourself with no retinue help',
       'Do it by force',
-      'THey need to have a wedding',
+      'They need to have a wedding',
     ]
     return sample(conditions) as string
   }

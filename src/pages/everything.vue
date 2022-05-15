@@ -165,7 +165,7 @@ const DLCColor = 'odd:text-true-gray-600 even:text-true-gray-900 dark:(odd:text-
 
 const all = [...heritages, ...bindings, ...lures, ...lureExpansions, ...otherControls, ...intensity, ...origin,
   ...defenses, ...homes, ...perks, ...rides, ...genericPerks, ...talents, ...waifu_perks, ...ridePerksFull,
-  ...DLCbindings, ...DLChomes, ...DLCgenericPerks, ...DLCheritages, ...DLCintensity, ...DLClureExpansions, ...DLClures, ...DLCotherControls, ...DLCperks, ...DLCridePerks, ...DLCtalents, ...patrons, ...DLCRides, ...DLCwaifu_perks]
+  ...DLCbindings, ...DLChomes, ...DLCgenericPerks, ...DLCheritages, ...DLCintensity, ...DLClureExpansions, ...DLClures, ...DLCotherControls, ...DLCperks, ...DLCridePerks, ...DLCtalents, ...patrons, ...DLCRides, ...DLCwaifu_perks, ...dungeon, ...demiplane]
 
 const fuse = computed(() => new Fuse(all, options))
 

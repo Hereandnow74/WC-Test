@@ -213,7 +213,7 @@ import { DBCharacter } from 'global'
 import html2canvas from 'html2canvas'
 import { getAllCharsObject } from '~/data/constants'
 import { imageLink, isBuildImage } from '~/logic'
-import { confirmDialog } from '~/logic/dialog'
+import { customDialog } from '~/logic/dialog'
 import { useChallenges } from '~/store/challenges'
 import { useStore } from '~/store/store'
 
@@ -263,14 +263,25 @@ const companionImages = computed(() => {
 function createImage() {
   const buildEl = document.getElementById('build')
   if (buildEl) {
-    html2canvas(buildEl, { imageTimeout: 15000, useCORS: true }).then((canvas) => {
-      canvas.toBlob((blob) => {
-        if (blob) {
-          const item = new ClipboardItem({ 'image/png': blob })
-          navigator.clipboard.write([item])
-          confirmDialog('Image successfully copied to clipboard', 'info')
-        }
-      })
+    html2canvas(buildEl, { imageTimeout: 15000, useCORS: true }).then(async(canvas) => {
+      const answer = await customDialog('Image successfully created, what do you want to do with it?', ['Copy to Clipboard', 'Save'])
+      if (answer === 'Copy to Clipboard') {
+        canvas.toBlob((blob) => {
+          if (blob) {
+            const item = new ClipboardItem({ 'image/png': blob })
+            navigator.clipboard.write([item])
+          }
+        })
+      }
+      if (answer === 'Save') {
+        const a = document.createElement('a')
+        a.href = canvas.toDataURL()
+        a.download = 'build.png'
+        document.body.appendChild(a)
+        a.click()
+        document.body.removeChild(a)
+      }
+      //
     })
   }
   isBuildImage.value = false

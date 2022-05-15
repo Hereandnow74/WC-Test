@@ -10,7 +10,14 @@
       </div>
       <Input v-model.number="budget" class="" placeholder="Estimated required budget to qualify for this mission" :error-message="errors.budget" />
       <div class="flex gap-2">
-        <Input v-model="loca" class="flex-grow" placeholder="World/Location" :error-message="errors.loca" />
+        <InputWithSearch
+          v-model.trim="loca"
+          idd="worldSearch"
+          :list="allWorldNames"
+          placeholder="World Name"
+          class="flex-grow"
+          :error-message="errors.loca"
+        />
         <AnythingInput v-model="scope" class="w-28" placeholder="Scope" :list="scopes" :error-message="errors.scope" />
       </div>
       <div class="min-h-max">
@@ -96,12 +103,15 @@ import { useForm, useField } from 'vee-validate'
 import { toFormValidator } from '@vee-validate/zod'
 
 import { proposeMission } from '~/logic'
+import { useWorlds } from '~/data/constants'
 
 const scopes = ['Quick', 'Standard', 'Grand']
 
 const successMessage = ref('')
 const errorMessage = ref('')
 const buttonActive = ref(true)
+
+const { allWorldNames } = useWorlds()
 
 const schema = toFormValidator(
   zod.object({
@@ -155,11 +165,5 @@ const addPerk = handleSubmit((values) => {
   buttonActive.value = false
   setTimeout(() => { buttonActive.value = true; successMessage.value = ''; errorMessage.value = '' }, 30 * 1000)
 })
-
-// const copyText = handleSubmit((values) => {
-//   navigator.clipboard.writeText(JSON.stringify(values))
-//   buttonActive.value = false
-//   setTimeout(() => { buttonActive.value = true; successMessage.value = ''; errorMessage.value = '' }, 30 * 1000)
-// })
 
 </script>

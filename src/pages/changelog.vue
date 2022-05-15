@@ -5,6 +5,19 @@
     </h2>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
+        14 May 2022
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>Basic search function(workds only on perks)</li>
+        <li>Number of available targets for the World Cards</li>
+        <li>Option to save image insted of copy to clipboard</li>
+        <li>~60 new user submitted characters, new mission</li>
+        <li>10 new user submitted worlds</li>
+        <li>Bugfixes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
         11 May 2022
       </h3>
       <ul class="list-decimal list-inside">

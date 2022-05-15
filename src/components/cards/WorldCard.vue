@@ -24,6 +24,9 @@
         Rating: <span class="text-amber-200 font-medium">{{ rating }}</span>
         <span v-if="world.q" class="text-red-400 cursor-help font-bold hover:text-red-300" @click.stop="showInfo">?</span>
       </div>
+      <div v-if="allWorldTargets[world.worldName]">
+        Targets: <span class="text-lime-300 font-medium">{{ allWorldTargets[world.worldName] }}</span>
+      </div>
       <div>
         Budget: <span class="text-green-200 font-medium">{{ WORLD_RATINGS[rating - 1]?.budget || 'None' }}</span>
       </div>
@@ -57,7 +60,7 @@
 <script lang='ts' setup>
 import { findIndex, isArray } from 'lodash-es'
 import type { PropType } from 'vue'
-import { WORLD_COLORS, WORLD_RATINGS } from '~/data/constants'
+import { useWorlds, WORLD_COLORS, WORLD_RATINGS } from '~/data/constants'
 import { lazyLoadSingleImg } from '~/logic'
 import { confirmDialog } from '~/logic/dialog'
 import { World } from '~/store/chargen'
@@ -96,6 +99,7 @@ const types = {
 defineEmits(['editWorld'])
 
 const { baseBudget, startingWorld, localUserWorlds, flags, settings } = useStore()
+const { allWorldTargets } = useWorlds()
 
 const pickAbleAfter = computed(() => props.pickAble && !flags.value.chargen ? false : props.pickAble)
 

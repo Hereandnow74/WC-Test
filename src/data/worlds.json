@@ -107,7 +107,8 @@
   },
   {
     "rating": 2,
-    "worldName": "Monster Musume"
+    "worldName": "Monster Musume",
+    "image": "https://getwallpapers.com/wallpaper/full/b/2/9/1463352-large-anime-hd-wallpaper-2560x1440-1920x1080-macbook.jpg"
   },
   {
     "rating": 2,
@@ -155,7 +156,8 @@
         "rating": 4,
         "a": "c"
       }
-    ]
+    ],
+    "image": "https://static2.aniimg.com/upload/20170506/138/r/t/u/rtuDEF.jpg"
   },
   {
     "rating": 2,
@@ -286,7 +288,8 @@
     "rating": 3,
     "q": true,
     "worldName": "Ah! My Goddess",
-    "additional": "Waifus can manipulate any local universe’s operating system as if it were Yggdrasil or Nidhogg, with their same level of access rights. This isn’t always a good idea without protection."
+    "additional": "Waifus can manipulate any local universe’s operating system as if it were Yggdrasil or Nidhogg, with their same level of access rights. This isn’t always a good idea without protection.",
+    "image": "http://2.bp.blogspot.com/-5MvLE9dKNNM/UIDVcvQpHxI/AAAAAAAABJE/ocVw4H272cA/s1600/tumblr_mbozalOgvy1rndjkmo1_1280.jpg"
   },
   {
     "rating": 3,
@@ -298,7 +301,8 @@
     "rating": 3,
     "q": true,
     "worldName": "Ranma ½",
-    "additional": "Ranma’s form changes or locks to fit your orientation. If purchased and mode-locked as a girl, she will believe that she was born as such but raised as a boy."
+    "additional": "Ranma’s form changes or locks to fit your orientation. If purchased and mode-locked as a girl, she will believe that she was born as such but raised as a boy.",
+    "image": "https://i.pinimg.com/originals/ad/aa/81/adaa810d3f6bd0226c6b8004bdaebf4d.jpg"
   },
   {
     "rating": 3,
@@ -516,7 +520,8 @@
   },
   {
     "worldName": "Avatar: The Last Airbender",
-    "rating": 4
+    "rating": 4,
+    "image": "https://i.pinimg.com/originals/3c/1c/23/3c1c23111fa073656f97fe34a18f5f19.jpg"
   },
   {
     "rating": 4,
@@ -1327,7 +1332,8 @@
     "rating": 6,
     "q": true,
     "worldName": "Pretty Cure",
-    "additional": "Individuals in cooperation-required Cure teams (White and Black, Bloom and Egret, Magical and Miracle, Ma Cherie and Amour) may be bought separately. Their powers will still function without their partners. Milky Rose and Ace do not have time limits; Milky Rose, Beat, and Cosmos can switch between their human and alternate forms and remain in either indefinitely. If you don’t want to deal with a particular familiar, but it doubles as the Cure’s transformation device (such as Black/White’s or Bloom/Egret’s), they may instead be simple, non-living magitech."
+    "additional": "Individuals in cooperation-required Cure teams (White and Black, Bloom and Egret, Magical and Miracle, Ma Cherie and Amour) may be bought separately. Their powers will still function without their partners. Milky Rose and Ace do not have time limits; Milky Rose, Beat, and Cosmos can switch between their human and alternate forms and remain in either indefinitely. If you don’t want to deal with a particular familiar, but it doubles as the Cure’s transformation device (such as Black/White’s or Bloom/Egret’s), they may instead be simple, non-living magitech.",
+    "image": "https://1.bp.blogspot.com/-tklCz7wIuS4/VtG4u0Gt0cI/AAAAAAAAALk/9YONOFiD_oY/s1600/8.jpg"
   },
   {
     "worldName": "Worm",
@@ -1403,7 +1409,8 @@
         "name": "During the Events of WoW 'Shadowlands'",
         "rating": 9
       }
-    ]
+    ],
+    "image": "https://leviathyn.com/wp-content/uploads/2014/11/rsz_warcraft-warcraft-actor-ben-foster-reveals-major-character-magic-and-guns-2-1050x429.jpg"
   },
   {
     "rating": 7,
@@ -1467,13 +1474,42 @@
       }
     ]
   },
-  {"worldName":"Kingdom Hearts","rating":7,"condition":[{"rating":8,"name":"Post-BBS through KH1",
-        "a": "c"},{"name":"Post KH1","rating":7,
-        "a": "c"},{"rating":9,"name":"The Dark Realm",
-        "a": "c"},{"rating":10,"name":"Age of Fairy tales",
-        "a": "c"},{"rating":10,"name":"The Keyblade War",
-        "a": "c"},{"rating":10,"name":"Data Daybreak Town",
-        "a": "c"}]},
+  {
+    "worldName": "Kingdom Hearts",
+    "rating": 7,
+    "condition": [
+      {
+        "rating": 8,
+        "name": "Post-BBS through KH1",
+        "a": "c"
+      },
+      {
+        "name": "Post KH1",
+        "rating": 7,
+        "a": "c"
+      },
+      {
+        "rating": 9,
+        "name": "The Dark Realm",
+        "a": "c"
+      },
+      {
+        "rating": 10,
+        "name": "Age of Fairy tales",
+        "a": "c"
+      },
+      {
+        "rating": 10,
+        "name": "The Keyblade War",
+        "a": "c"
+      },
+      {
+        "rating": 10,
+        "name": "Data Daybreak Town",
+        "a": "c"
+      }
+    ]
+  },
   {
     "rating": 7,
     "worldName": "Guild Wars",
@@ -1667,7 +1703,8 @@
         "name": "Spectacular Earth-26496 (NYC)",
         "rating": 5
       }
-    ]
+    ],
+    "image": "https://sc02.alicdn.com/kf/HTB15Y38doo09KJjSZFDq6z9npXau/200664728/HTB15Y38doo09KJjSZFDq6z9npXau.jpg"
   },
   {
     "rating": 8,
@@ -1703,7 +1740,8 @@
   },
   {
     "rating": 8,
-    "worldName": "Grim Dawn"
+    "worldName": "Grim Dawn",
+    "image": "https://cdna.artstation.com/p/assets/images/images/002/032/286/large/scott-duquette-grimdawn-1920x1080-notext.jpg"
   },
   {
     "rating": 8,
@@ -1804,7 +1842,7 @@
   {
     "rating": 8,
     "q": true,
-    "worldName": "I’m a Spider, So What?",
+    "worldName": "I'm a Spider, So What?",
     "additional": "Visiting the setting or having any waifu from the work will give you access to its leveling systems. Fatality Defense will block the local leveling system’s negative effects on its users."
   },
   {
@@ -1888,11 +1926,13 @@
   },
   {
     "rating": 9,
-    "worldName": "Dragonball"
+    "worldName": "Dragonball",
+    "image": "https://getwallpapers.com/wallpaper/full/a/a/1/750459-kid-goku-wallpaper-2560x1440-for-iphone-5.jpg"
   },
   {
     "rating": 10,
-    "worldName": "Warhammer 40K"
+    "worldName": "Warhammer 40K",
+    "image": "https://i.imgur.com/Vn029id.jpg"
   },
   {
     "rating": 10,
@@ -2050,7 +2090,8 @@
         "rating": 3,
         "a": "c"
       }
-    ]
+    ],
+    "image": "https://64.media.tumblr.com/34bc7a2da7cf1a0853b530cdb12d20f0/tumblr_pcpoii9tPn1wxwk8ro1_1280.jpg"
   },
   {
     "rating": 10,
@@ -2110,7 +2151,8 @@
         "rating": 10,
         "a": "c"
       }
-    ]
+    ],
+    "image": "https://expertgamereviews.com/wp-content/uploads/2021/07/Diablo-2-Builds-Feature-1280x720.jpg"
   },
   {
     "rating": 10,

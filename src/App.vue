@@ -10,8 +10,10 @@
     </div>
     <SideApps />
     <Footer />
+    <Search />
     <ConfirmDialog class="z-20" />
     <InfoDialog class="z-20" />
+    <CustomDialog class="z-20" />
 
     <component :is="PromoteDialog" v-if="(totalActive > 60 * 60 && !promoteShown) || isSupport" />
     <component :is="SaveLoad" v-if="showSaveLoad" class="z-20" @click="showSaveLoad = !showSaveLoad" />

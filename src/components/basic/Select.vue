@@ -16,7 +16,6 @@
           v-for="opt in options"
           :key="opt.label !== undefined ? opt.label : opt"
           :value="opt.value !== undefined ? opt.value : opt"
-          class="bg-orange-500"
         >{{ opt.label !== undefined ? opt.label : opt }}</option>
       </select>
     </label>
