@@ -1463,4 +1463,17 @@ export const missions = [
     conditions: [{ value: 'No overt mind controlling/threatening customers, they must buy your work of their own will. Minor lures are permissible.' }, { value: 'You may only capture a local once they have been a satisfied customer for a week.' }, { value: 'Customers mustn’t wear other clothes over your bikini armor during battle for them to count as successful sales, fanservice is important!' }],
     title: 'Bikini Armor Revolution',
   },
+  {
+    conditions: [{ value: 'When running the franchise, you must have the same guidelines and rules from the modern era.' }],
+    title: 'Coffee of Thrones',
+    scope: 'Standard',
+    loca: 'A Song of Ice and Fire / Game of Thrones',
+    author: 'ゴDi0ゴ',
+    budget: 100,
+    image: '',
+    objectives: [{ reward: 'Your Sweet Home will have a Starbucks place where you can run it for free or order things for free so long as they have things in stock.', value: 'You must make the Starbucks franchise successful to the point that the meme happens.' }, { value: 'Everyone must know that Starbucks is the best, if not one of the best, coffee-making place in the world.', reward: 'Every Starbucks place in any world that has them will always treat you as a VIP.' }, { value: 'The North must drink coffee as well. Yes, including the Night King and his forces.', reward: 'The Night King gets coffee and realized what he has been doing would kill you as well, thus he stops his plans to pursue the path of coffee-making.' }],
+    source: '',
+    desc: 'Remember that meme where Starbucks is seen on Game of Thrones? That\'s basically the mission. Create a branch of Starbucks in the world of ASoIaF/GoT.<br>Note: During the duration of this mission, everyone will treat you as neutral until you do something that offends them. Yes, even the Night King. Also, the Night\'s Watch will help you because they want more delicious coffee for their night-watch duties.',
+    reward: '300 Credits',
+  },
 ].reverse()

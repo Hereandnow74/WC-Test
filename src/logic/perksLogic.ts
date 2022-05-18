@@ -94,7 +94,7 @@ export function pickSimplePerk(perk: PerkFull, saveData: Perk, isAvailable: (arg
         deletePerk(perks, isAvailable)
       }
     }
-    else if (saveData.count !== 0) {
+    else if (saveData.count === undefined || (saveData.count !== undefined && saveData.count !== 0)) {
       allEffects.value.push(perk.title)
       perks.push(saveData)
     }
@@ -420,16 +420,16 @@ export function specificAvailable(perk: WaifuPerk): boolean {
   return false
 }
 
-export function chooseWaifuPerk(perk: WaifuPerk) {
-  if (specificAvailable(perk)) {
+export function chooseWaifuPerk(fullPerk: WaifuPerk, perk: Perk) {
+  if (specificAvailable(fullPerk)) {
     const ind = findIndex(waifuPerks.value, { title: perk.title })
     if (ind !== -1) {
       const toDel = waifuPerks.value.splice(ind, 1)
-      if (!flags.value.chargen && toDel[0].cost < 11111) fee.value += Math.round(toDel[0].cost * 0.2) || 0
+      if (!flags.value.chargen && toDel[0].cost < 11111)
+        fee.value += Math.round(toDel[0].cost * 0.2) || 0
     }
     else {
-      waifuPerks.value.push(
-        { title: perk.title, waifu: isArray(perk.waifu) ? perk.waifu[0] : perk.waifu, cost: perk.cost || 0, refund: perk.discount || 0 })
+      waifuPerks.value.push(perk)
     }
   }
 }

@@ -100,8 +100,8 @@ function sendPerk() {
     return
   obj.cost = displayedCost.value - freeCount.value * props.perk.cost
 
-  // if (obj.count === props.savedPerk.count)
-  //   obj.count = 0
+  if (perkToSave.count === 0)
+    obj.count = 0
   emit('pickPerk', props.perk, obj)
 }
 

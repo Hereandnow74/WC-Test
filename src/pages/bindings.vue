@@ -3,8 +3,8 @@
     <teleport to="nav">
       <div class="flex text-base px-2 justify-center w-full bg-white dark:bg-[#121212] z-20">
         <Navigation
-          :items="['bindings', 'lures', 'controls']"
-          :titles="['Bindings', 'Lures', 'Other Controls']"
+          :items="['bindings', 'lures', 'controls', 'space']"
+          :titles="['Bindings', 'Lures', 'Other Controls', 'Space Truckin’']"
           prefix="bindings"
         />
       </div>

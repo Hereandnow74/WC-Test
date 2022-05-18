@@ -5,6 +5,19 @@
     </h2>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
+        18 May 2022
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>Small changes here and there</li>
+        <li>Moved Space trucking into a separate page</li>
+        <li>Combined Local user chars with global (local ones have a green name)</li>
+        <li>~135 new user submitted characters, new mission</li>
+        <li>9 new user submitted worlds</li>
+        <li>Bugfixes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
         14 May 2022
       </h3>
       <ul class="list-decimal list-inside">

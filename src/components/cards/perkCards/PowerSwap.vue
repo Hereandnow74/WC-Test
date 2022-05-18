@@ -58,8 +58,8 @@
             class="flex gap-2 w-full min-h-0 rounded bg-gray-300 dark:bg-gray-800 p-1"
           >
             <img
-              v-if="allChars[companion.uid] && allChars[companion.uid].i && !settings.allImg"
-              :data-src="imageLink(allChars[companion.uid].i, companion.uid)"
+              v-if="allCharsObject[companion.uid] && allCharsObject[companion.uid].i && !settings.allImg"
+              :data-src="imageLink(allCharsObject[companion.uid].i, companion.uid)"
               :alt="companion.name"
               class="rounded object-cover w-1/4 object-top"
               @load="setHeight"
@@ -108,11 +108,7 @@
 </template>
 
 <script lang='ts' setup>
-//                  @updateUID="(uid: number) => swapPower[companion.name].uid = uid"
-
-import { DBCharacter } from 'global'
-
-import { CHAR_COSTS, getAllCharsObject } from '~/data/constants'
+import { CHAR_COSTS, useAllChars } from '~/data/constants'
 import { lazyLoadImg, imageLink } from '~/logic'
 import { useStore } from '~/store/store'
 
@@ -169,8 +165,7 @@ props.savedPerk?.complex?.forEach((x) => {
 const showBuyPerk = ref(false)
 const charList = ref<HTMLElement | null>(null)
 
-const allChars = ref<Record<number, DBCharacter>>({})
-getAllCharsObject().then(chars => allChars.value = chars)
+const { allCharsObject } = useAllChars()
 
 const displayedCost = computed(() => {
   return Object.values(swapPower).reduce((a, x) => {

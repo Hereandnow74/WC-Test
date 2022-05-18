@@ -658,6 +658,7 @@ export const otherControls: PerkFull[] = [
     uid: 'CTpCG',
     title: 'Space Truckin’',
     image: 'https://i.ibb.co/H2ByYsD/Space-Truckin.jpg',
+    type: 'space',
     cost: 100,
     special: `
       Land vehicle purchased or registered through Catch-a-Ride and
@@ -684,6 +685,7 @@ export const otherControls: PerkFull[] = [
   {
     uid: 'JOlyR',
     title: 'Highway Star',
+    type: 'space',
     image: 'https://i.ibb.co/g6w1kMD/Space-Truckin-Highway-Star.jpg',
     cost: 100,
     whitelist: ['Space Truckin’'],
@@ -692,6 +694,7 @@ export const otherControls: PerkFull[] = [
   {
     uid: '3RLYt',
     title: 'Strange Kind of Woman',
+    type: 'space',
     image: 'https://i.ibb.co/v1xwWf2/Strange-Kind-Of-Woman.jpg',
     cost: 10,
     whitelist: ['Space Truckin’', 'Paper Trail (x10)'],
@@ -702,6 +705,7 @@ export const otherControls: PerkFull[] = [
   {
     uid: 'TwKOp',
     title: 'Anyone\'s Daughter',
+    type: 'space',
     image: 'https://i.ibb.co/vzshHGq/Anyones-Daughter.jpg',
     cost: 10,
     whitelist: ['Strange Kind of Woman', 'Universal Calibration'],
@@ -716,6 +720,7 @@ export const otherControls: PerkFull[] = [
   {
     uid: 'MAN0h',
     title: 'All The Time In The World',
+    type: 'space',
     image: 'https://i.ibb.co/C70VRqR/All-The-Time-In-The-World.jpg',
     cost: 10,
     whitelist: ['Space Truckin’', 'Meta Shift'],
@@ -725,6 +730,7 @@ export const otherControls: PerkFull[] = [
   {
     uid: 'WCYdn',
     title: 'Demon\'s Eye',
+    type: 'space',
     image: 'https://i.ibb.co/vk8KmQX/Demons-Eye.jpg',
     cost: 30,
     whitelist: ['Highway Star'],
@@ -735,6 +741,7 @@ export const otherControls: PerkFull[] = [
   {
     uid: 'UNwcQ',
     title: 'Mistreated',
+    type: 'space',
     image: 'https://i.ibb.co/j6PngKj/Mistreated.jpg',
     cost: 40,
     whitelist: ['Space Truckin’'],
@@ -745,6 +752,7 @@ export const otherControls: PerkFull[] = [
   {
     uid: 'GxcTK',
     title: 'Time For Bedlam',
+    type: 'space',
     image: 'https://i.ibb.co/SyM6qqB/Time-For-Bedlam.jpg',
     cost: 20,
     whitelist: ['Space Truckin’', 'Pursued by a Bear'],
@@ -755,6 +763,7 @@ export const otherControls: PerkFull[] = [
   {
     uid: 'pzt7d',
     title: 'Pictures of Home',
+    type: 'space',
     image: 'https://i.ibb.co/6N5GsYp/Pictures-Of-Home.jpg',
     cost: 10,
     whitelist: ['Space Truckin’'],
@@ -765,6 +774,7 @@ export const otherControls: PerkFull[] = [
   {
     uid: 'GdRyN',
     title: 'I Got Your Number',
+    type: 'space',
     image: 'https://i.ibb.co/6vhkm5q/IGot-Your-Number.jpg',
     cost: 10,
     whitelist: ['Pictures of Home', 'Communication Talent'],
@@ -774,6 +784,7 @@ export const otherControls: PerkFull[] = [
   {
     uid: 'ARFjX',
     title: 'Child in Time',
+    type: 'space',
     image: 'https://i.ibb.co/1qpyyJX/Child-In-Time.jpg',
     cost: 15,
     whitelist: ['Space Truckin’', 'Arlo'],
@@ -784,6 +795,7 @@ export const otherControls: PerkFull[] = [
   {
     uid: 'eZoxo',
     title: 'Not Responsible',
+    type: 'space',
     image: 'https://i.ibb.co/88852py/Not-Responsible.jpg',
     cost: 20,
     whitelist: ['Space Truckin’', 'Destiny Defense'],
@@ -794,6 +806,7 @@ export const otherControls: PerkFull[] = [
   {
     uid: 'iRfHA',
     title: 'Perfect Strangers',
+    type: 'space',
     image: 'https://i.ibb.co/drS8bxV/Perfect-Strangers.jpg',
     cost: 5,
     whitelist: ['Space Truckin’', 'Information Defense'],
@@ -802,6 +815,7 @@ export const otherControls: PerkFull[] = [
   {
     uid: 'VfOVT',
     title: 'Hush',
+    type: 'space',
     image: 'https://i.ibb.co/BsfXmZL/Hush.jpg',
     cost: 30,
     whitelist: ['Pictures of Home', 'Meta Shift'],

@@ -20,7 +20,7 @@
           v-for="item in list"
           :key="item"
           class="hover:bg-gray-200 dark:hover:bg-gray-600 cursor-pointer px-2 text-base flex gap-4 justify-between w-full"
-          @click="chooseItem(item.flavor || item)"
+          @click="(e) => chooseItem(e, item.flavor || item)"
         >
           {{ item.flavor || item }}
           <fa-solid:check v-if="findIndex(boughtList, (item.flavor ? { flavor: item.flavor } : { target: item })) !== -1" class="text-green-500" />
@@ -58,6 +58,10 @@ const props = defineProps({
   placeholder: {
     type: String,
     default: '',
+  },
+  doNotCloseList: {
+    type: Boolean,
+    default: false,
   },
 })
 const emit = defineEmits(['update:modelValue'])
@@ -103,7 +107,9 @@ const value = ref(props.modelValue)
 watch(value, () => emit('update:modelValue', value.value))
 watch(() => props.modelValue, () => value.value = props.modelValue)
 
-function chooseItem(item: string) {
+function chooseItem(e: Event, item: string) {
+  if (props.doNotCloseList)
+    e.stopPropagation()
   value.value = item
 }
 

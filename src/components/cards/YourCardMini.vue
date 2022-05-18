@@ -49,9 +49,8 @@
 </template>
 
 <script lang="ts" setup>
-import { DBCharacter } from 'global'
 import { findIndex } from 'lodash-es'
-import { getAllChars } from '~/data/constants'
+import { useAllChars } from '~/data/constants'
 import { imageLink } from '~/logic'
 import { useStore } from '~/store/store'
 
@@ -65,15 +64,13 @@ const { flags, startingOrigin, miscPerks, yourTier } = useStore()
 
 const noUC = computed(() => findIndex(miscPerks.value, { title: 'Universal Calibration' }) === -1)
 
-const allChars = ref<DBCharacter[]>([])
+const { allCharsObject } = useAllChars()
+
 const image = ref(startingOrigin.value.image || '')
 
-// TODO: change to Object
-getAllChars().then(chars => allChars.value = chars)
+const char = computed(() => allCharsObject.value[startingOrigin.value.uid] || {})
 
-const char = computed(() => allChars.value[findIndex(allChars.value, { u: startingOrigin.value.uid })] || {})
-
-watch(char, () => startingOrigin.value.sex = startingOrigin.value.sex
+watch(char, () => startingOrigin.value.sex
 || (char.value && char.value.b ? char.value.b?.includes('F') ? 'F' : 'M' : 'M'))
 
 watch(image, () => {

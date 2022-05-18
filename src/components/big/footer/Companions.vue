@@ -99,13 +99,13 @@
 
 <script lang="ts" setup>
 import { find, findIndex, isArray, chunk } from 'lodash-es'
-import { CHAR_COSTS, getAllCharsObject } from '~/data/constants'
+import { CHAR_COSTS, useAllChars } from '~/data/constants'
 import { lazyLoadImg, orientation, isRetinueEdit, imageLink, threeToggle } from '~/logic'
 import { useStore } from '~/store/store'
 import { waifu_perks, DLCwaifu_perks } from '~/data/waifu_perks'
 import { confirmDialog } from '~/logic/dialog'
 
-const { companions, underLoan, loan, trHistory, talentPerks, genericWaifuPerks, waifuPerks, localUserCharacters } = useStore()
+const { companions, underLoan, loan, trHistory, talentPerks, genericWaifuPerks, waifuPerks } = useStore()
 
 const specificPerksWithDLC = waifu_perks.concat(DLCwaifu_perks)
 
@@ -150,8 +150,7 @@ const companionsDataSorted = computed(() => {
 const companionsDataChunks = computed(() => chunk(companionsDataSorted.value, 50))
 watch(companionsDataChunks, () => { if (companionsDataChunks.value.length === 1) currentPage.value = 0 })
 
-const allCharsObject = ref({})
-getAllCharsObject().then(all => allCharsObject.value = all)
+const { allCharsObject } = useAllChars()
 
 const companionImages = computed(() => {
   const res = {} as Record<number, string>
@@ -197,7 +196,7 @@ const companionsPerksList = computed(() => {
       if (sourceWaifuPerk) {
         if (isArray(sourceWaifuPerk.uid)) {
           if (sourceWaifuPerk.uid.includes(rchar.uid))
-            specificList.push({ title: specific.title })
+            specificList.push({ title: specific.title, tier: sourceWaifuPerk.tier })
         }
         else {
           if (sourceWaifuPerk.uid === rchar.uid)
@@ -213,7 +212,7 @@ const companionsPerksList = computed(() => {
   return charTalents
 })
 
-watch([companionsDataSorted, companionImages, currentPage], () => {
+watch([companionsDataSorted, companionImages, currentPage, waifuList], () => {
   lazyLoadImg(waifuList.value)
 }, { flush: 'post' })
 

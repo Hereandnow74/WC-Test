@@ -205,7 +205,7 @@ export const ALL_OFF_PERK_TITLES = computed(() => {
 
 export const ALL_DLC_PERK_TITLES = computed(() => {
   const result = {} as Record<string, PerkFull>
-  const all = [DLCperks, DLChomes, DLCgenericPerks, DLCheritages, DLCtalents, DLClureExpansions, DLCbindings, DLClures, DLCotherControls, DLCridePerks]
+  const all = [DLCperks, DLChomes, DLCgenericPerks, DLCheritages, DLCtalents, DLClureExpansions, DLCbindings, DLClures, DLCotherControls, DLCridePerks, DLCintensity, DLCRides]
   all.forEach(p => addTitles<typeof p[0]>(result, p))
   return result
 })
@@ -224,7 +224,8 @@ export const LINKS = computed(() => {
     'origin': [...origin, ...patrons],
     'bindings/bindings': [...bindings, ...DLCbindings],
     'bindings/lures': [...lures, ...lureExpansions, ...DLClures, ...DLClureExpansions],
-    'bindings/controls': [...otherControls, ...DLCotherControls],
+    'bindings/controls': [...otherControls.filter(perk => perk.type !== 'space'), ...DLCotherControls],
+    'bindings/space': otherControls.filter(perk => perk.type === 'space'),
     'heritage': [...heritages, ...DLCheritages],
     'talents/ride': [...rides, ...ridePerksFull, ...DLCridePerks, ...DLCRides],
     'talents/home': [...homes, ...demiplane, ...dungeon, ...DLChomes],
@@ -303,8 +304,14 @@ export async function getChars(): Promise<DBCharacter[]> {
 }
 
 export async function getUserChars(): Promise<DBCharacter[]> {
-  if (!userChars)
-    userChars = (await import('~/data/userCharacters.json')).default
+  if (!userChars) {
+    userChars = (await import('~/data/userCharacters.json')).default.map((char) => {
+      char.type = 'sub'
+      if (!char.b.includes('U'))
+        char.b.push('U')
+      return char
+    })
+  }
   return userChars
 }
 
@@ -314,22 +321,38 @@ export const getAllChars = async() => {
   if (running) return allChars.value
   if (!allChars.value.length) {
     running = true
-    allChars.value.push(...(await getChars()), ...(await getUserChars()))
+    allChars.value.push(...(await getUserChars()).reverse(), ...(await getChars()))
     running = false
-    if (localUserCharacters.value.length)
-      allChars.value.push(...localUserCharacters.value.map(x => ({ u: x.uid, n: x.name, w: x.world, t: x.tier, d: x.sub, b: x.tags, i: x.image, in: x.image_nsfw })))
   }
 
   return allChars.value
 }
 
-getAllChars()
+const allCharsComp = computed(() => {
+  return [...localUserCharacters.value.map(x => ({ u: x.uid, n: x.name, w: x.world, t: x.tier, d: x.sub, b: x.tags, i: x.image, in: x.image_nsfw, type: 'local' }))].concat(allChars.value)
+})
 
-const allCharsObject = {} as Record<number, DBCharacter>
+const allCharsObject = ref({} as Record<number, DBCharacter>)
+let running2 = false
 export const getAllCharsObject = async() => {
-  if (!allCharsObject[0])
-    [...(await getAllChars())].forEach(x => allCharsObject[x.u] = x)
-  return allCharsObject
+  if (running2) return allCharsObject.value
+  if (!allCharsObject.value[0]) {
+    running2 = true
+    allCharsComp.value.forEach(x => allCharsObject.value[x.u] = x)
+    running2 = false
+  }
+
+  return allCharsObject.value
+}
+
+getAllChars().then(() => getAllCharsObject())
+
+export function useAllChars() {
+  return {
+    allChars,
+    allCharsObject,
+    allCharsComp,
+  }
 }
 
 const worlds = ref<DBWorld[]>([])

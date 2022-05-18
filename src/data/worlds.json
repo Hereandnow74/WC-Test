@@ -35,6 +35,10 @@
         "name": "Adventures/Special (manga)",
         "rating": 6,
         "a": "c"
+      },
+      {
+        "name": "Pokemon Legends Arceus",
+        "rating": 5
       }
     ],
     "image": "https://i.pinimg.com/474x/6e/19/e3/6e19e345f4e8eb6ddd55e31a2909ce9c.jpg"
@@ -129,7 +133,8 @@
         "rating": 6,
         "a": "c"
       }
-    ]
+    ],
+    "image": "https://img01.enty.jp/uploads/entertainer/wallpaper/1622/Enty_.jpg"
   },
   {
     "rating": 2,
@@ -379,7 +384,8 @@
         "rating": 6,
         "a": "c"
       }
-    ]
+    ],
+    "image": "https://bnetproduct-a.akamaihd.net/3b/88ac7d7f76df6b86c5449f71bc212b7c-prod-mobile-bg.jpg"
   },
   {
     "worldName": "Star Wars",
@@ -405,6 +411,10 @@
         "name": "Unrestricted Clone Wars",
         "rating": 7,
         "a": "c"
+      },
+      {
+        "name": "The Old Republic(MMO)",
+        "rating": 7
       }
     ],
     "image": "https://tamavroskyla.gr/wp-content/uploads/2019/12/saga.jpg"
@@ -457,7 +467,8 @@
         "rating": 9,
         "a": "c"
       }
-    ]
+    ],
+    "image": "https://www.desktopbackground.org/download/1280x800/2015/06/11/962554_340-mass-effect-3-hd-wallpapers_1421x800_h.png"
   },
   {
     "rating": 4,
@@ -474,7 +485,8 @@
         "rating": 5,
         "a": "c"
       }
-    ]
+    ],
+    "image": "https://static2.aniimg.com/upload/20170614/779/Y/s/g/p=700/YsgGEF.jpg"
   },
   {
     "rating": 4,
@@ -516,7 +528,8 @@
         "a": "c"
       }
     ],
-    "additional": "Micronization: Zentraedi and Meltrandi characters are Microne (human)-sized by default. The presence of one will add a Micronization chamber to your Grand Manor, if you have one. Advanced Tempest Runes (Body) allows them, and any other member of our retinue who’s used a Micronization chamber, to shift between Microne and Macrone forms on the fly. Body Talent is enough to let Klan Klein maintain her adult figure while micronized. Additionally, all Zentraedi and Meltrandi combatants have a personal Pocket Space for their battlesuits. Battlesuits stored this way will automatically resize themselves to fit their wearer, regardless of whether the wearer is in Microne or Macrone form. Other: Mylene has her pet… tribble(?) Guvava as a familiar. We don’t actually know what Guvava is, just that it’s cute and fuzzy. Ranka has her squirrel-like pet Ai-kun as a familiar."
+    "additional": "Micronization: Zentraedi and Meltrandi characters are Microne (human)-sized by default. The presence of one will add a Micronization chamber to your Grand Manor, if you have one. Advanced Tempest Runes (Body) allows them, and any other member of our retinue who’s used a Micronization chamber, to shift between Microne and Macrone forms on the fly. Body Talent is enough to let Klan Klein maintain her adult figure while micronized. Additionally, all Zentraedi and Meltrandi combatants have a personal Pocket Space for their battlesuits. Battlesuits stored this way will automatically resize themselves to fit their wearer, regardless of whether the wearer is in Microne or Macrone form. Other: Mylene has her pet… tribble(?) Guvava as a familiar. We don’t actually know what Guvava is, just that it’s cute and fuzzy. Ranka has her squirrel-like pet Ai-kun as a familiar.",
+    "image": "https://cdn.donmai.us/sample/68/26/__vf_1_and_vf_1a_macross_and_1_more_drawn_by_myonmyon_kai__sample-6826d3e3c39f68db7faa07f45e534549.jpg"
   },
   {
     "worldName": "Avatar: The Last Airbender",
@@ -588,7 +601,8 @@
         "rating": 4,
         "a": "c"
       }
-    ]
+    ],
+    "image": "https://i.imgur.com/iXuJjfE.jpeg"
   },
   {
     "rating": 4,
@@ -599,7 +613,8 @@
         "rating": 4,
         "a": "c"
       }
-    ]
+    ],
+    "image": "https://i.pinimg.com/originals/a6/b7/ad/a6b7ad8a589cdb415458fadab5421e0a.png"
   },
   {
     "rating": 4,
@@ -630,7 +645,8 @@
         "rating": 6,
         "a": "c"
       }
-    ]
+    ],
+    "image": "https://cdn.vox-cdn.com/thumbor/37tWKRW_mYJ80shRfLgOYGlR4mY=/0x680:6000x3821/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/13759489/HOI4_ManTheGuns_Coverart.jpg"
   },
   {
     "rating": 4,
@@ -1114,6 +1130,18 @@
         "name": "Cosmos in the Lostbelt",
         "rating": 9,
         "a": "c"
+      },
+      {
+        "name": "Grand Order: Part 1",
+        "rating": 8
+      },
+      {
+        "name": "Grand Order: Epic of Remnant",
+        "rating": 8
+      },
+      {
+        "rating": 8,
+        "name": "River of Time"
       }
     ]
   },
@@ -1472,7 +1500,8 @@
         "rating": 8,
         "a": "c"
       }
-    ]
+    ],
+    "image": "https://image.tmdb.org/t/p/original/9P1M4rvya3mTSkIa6AsNTMygV1Y.jpg"
   },
   {
     "worldName": "Kingdom Hearts",
@@ -1837,7 +1866,8 @@
   },
   {
     "rating": 8,
-    "worldName": "Arpeggio of Blue Steel"
+    "worldName": "Arpeggio of Blue Steel",
+    "image": "https://static.wallpapers-anime.com/upload/20170508/326/p/B/k/pBkEEF.jpg"
   },
   {
     "rating": 8,
@@ -1855,7 +1885,8 @@
     "rating": 9,
     "q": true,
     "worldName": "Tenchi Muyo!",
-    "additional": "Mitoto’s teleportation ability works as long as she has a mop or other cleaning tool in her hands. Anyone she brings with her must have one as well."
+    "additional": "Mitoto’s teleportation ability works as long as she has a mop or other cleaning tool in her hands. Anyone she brings with her must have one as well.",
+    "image": "https://instachronicles.com/wp-content/uploads/2021/06/79620-4.jpg"
   },
   {
     "rating": 9,
@@ -1927,6 +1958,24 @@
   {
     "rating": 9,
     "worldName": "Dragonball",
+    "condition": [
+      {
+        "rating": 7,
+        "name": "Saiyans Attack"
+      },
+      {
+        "name": "Androids Awaken",
+        "rating": 8
+      },
+      {
+        "rating": 10,
+        "name": "Majin Buu unsealed"
+      },
+      {
+        "name": "Original Adventure",
+        "rating": 5
+      }
+    ],
     "image": "https://getwallpapers.com/wallpaper/full/a/a/1/750459-kid-goku-wallpaper-2560x1440-for-iphone-5.jpg"
   },
   {
@@ -1959,7 +2008,8 @@
         "rating": 3,
         "a": "c"
       }
-    ]
+    ],
+    "image": "https://ricedigital.co.uk/wp-content/uploads/2017/11/SMT-Demon-poll.jpg"
   },
   {
     "rating": 10,
@@ -2089,6 +2139,14 @@
         "name": "Segovia",
         "rating": 3,
         "a": "c"
+      },
+      {
+        "rating": 9,
+        "name": "New Phyrexia"
+      },
+      {
+        "name": "Dominaria",
+        "rating": 5
       }
     ],
     "image": "https://64.media.tumblr.com/34bc7a2da7cf1a0853b530cdb12d20f0/tumblr_pcpoii9tPn1wxwk8ro1_1280.jpg"
@@ -2100,6 +2158,10 @@
     "condition": [
       {
         "name": "Primordial War",
+        "rating": 10
+      },
+      {
+        "name": "Gunstar Autochthonia",
         "rating": 10
       }
     ]
@@ -2138,6 +2200,10 @@
         "rating": 6,
         "name": "La Pucelle, Phantom Brave",
         "a": "c"
+      },
+      {
+        "rating": 8,
+        "name": "Soul Nomad and the World Eaters"
       }
     ],
     "image": "https://www.thatvideogameblog.com/wp-content/uploads/2017/08/disgaea-5-complete-set-to-sell-over-100k-in-the-west.jpg"
@@ -2168,6 +2234,7 @@
     "rating": 10,
     "q": true,
     "worldName": "Cthulhu Mythos",
-    "additional": "This entry represents both original works and modern adaptations such as Demonbane or Haiyore! Nyaruko-san. All such published works are true for T11s from the mythos, just not necessarily at the same time."
+    "additional": "This entry represents both original works and modern adaptations such as Demonbane or Haiyore! Nyaruko-san. All such published works are true for T11s from the mythos, just not necessarily at the same time.",
+    "image": "https://pbs.twimg.com/media/EVRjnfcWoAAVeUS.jpg"
   }
 ]

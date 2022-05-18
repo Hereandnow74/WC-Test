@@ -25,6 +25,7 @@
         class="text-base ml-2 w-42"
         :list="targetList"
         :bought-list="savedPerk.complex"
+        :do-not-close-list="true"
         @click.stop
       >
       </AnythingInput>
@@ -212,7 +213,7 @@ const perkExist = computed(() => {
 
 onMounted(() => { if (perkImg.value) lazyLoadSingleImg(perkImg.value) })
 watch(settings.value, () => { if (perkImg.value) lazyLoadSingleImg(perkImg.value) }, { flush: 'post' })
-// watch(() => perkToSave.cost, sendPerk)
+watch(() => complex.target, sendPerk)
 
 function collapse() {
   if (expand.value) {

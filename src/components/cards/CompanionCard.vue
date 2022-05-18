@@ -41,7 +41,7 @@
       </div>
       <div class="py-1 h-max">
         <h4 id="title" class="flex px-1 leading-none relative" :class="fontSize">
-          <span class="flex-grow text-center">{{ charData.name }}</span>
+          <span class="flex-grow text-center" :class="isUserChar ? 'text-green-200': ''">{{ charData.name }}</span>
           <div id="companionMenu" class="h-5 absolute right-0 text-right">
             <div ref="infoIcon" class="pr-1 text-gray-500 text-2xl md:text-base" @click="isTouchpad ? showMenu = true : null">
               <ic:outline-report />

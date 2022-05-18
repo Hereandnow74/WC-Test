@@ -300,7 +300,7 @@ const yourTier = computed(() => {
   return Math.max(originTier, dragonTier, transhumanTier, outsiderTier, talentsTier4, talentsTier5, shroudTier, powerSwapTier)
 })
 
-const companionsUIDs = computed(() => companions.value.reduce((a, c) => (a[c.uid] = true, a), {}))
+const companionsUIDs = computed(() => companions.value.reduce((a, c) => (a[c.uid] = true, a), {} as Record<number, boolean>))
 
 const underLoan = computed(() => loan.value.owed > 0)
 

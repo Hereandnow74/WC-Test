@@ -6,7 +6,7 @@
       </th>
     </thead>
     <tbody>
-      <tr v-for="row, i in rows" :key="i">
+      <tr v-for="row, i in rows" :key="i" class="odd:(bg-black bg-opacity-5)">
         <td
           v-for="value in row"
           :key="value"

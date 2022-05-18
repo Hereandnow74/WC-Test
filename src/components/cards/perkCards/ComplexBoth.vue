@@ -53,8 +53,8 @@
             class="flex gap-2 w-full min-h-0 rounded bg-gray-300 dark:bg-gray-800 p-1"
           >
             <img
-              v-if="allChars[companion.uid] && !settings.allImg"
-              :data-src="imageLink(allChars[companion.uid].i, companion.uid)"
+              v-if="allCharsObject[companion.uid] && !settings.allImg"
+              :data-src="imageLink(allCharsObject[companion.uid].i, companion.uid)"
               :alt="companion.name"
               class="rounded object-cover w-1/4 object-top"
               @load="setHeight"
@@ -93,9 +93,7 @@
 </template>
 
 <script lang='ts' setup>
-import { DBCharacter } from 'global'
-
-import { getAllCharsObject } from '~/data/constants'
+import { useAllChars } from '~/data/constants'
 import { lazyLoadImg, imageLink } from '~/logic'
 import { useStore } from '~/store/store'
 
@@ -133,8 +131,7 @@ const charList = ref<HTMLElement | null>(null)
 
 const newPrice = ref(false)
 
-const allChars = ref<Record<number, DBCharacter>>({})
-getAllCharsObject().then(chars => allChars.value = chars)
+const { allCharsObject } = useAllChars()
 
 const fullCount = computed(() => {
   return Object.values(powers).reduce((a, x) => a += x.length, 0)

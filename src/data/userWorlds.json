@@ -1,7 +1,8 @@
 [
   {
     "worldName": "Against the Gods",
-    "rating": 9
+    "rating": 9,
+    "image": "https://images4.imagebam.com/d7/2a/60/MEAIFVW_o.png"
   },
   {
     "worldName": "Battletech",
@@ -60,29 +61,6 @@
   {
     "worldName": "Devil May Cry",
     "rating": 8
-  },
-  {
-    "worldName": "Dragonball",
-    "rating": 9,
-    "condition": [
-      {
-        "rating": 7,
-        "name": "Saiyans Attack"
-      },
-      {
-        "name": "Androids Awaken",
-        "rating": 8
-      },
-      {
-        "rating": 10,
-        "name": "Majin Buu unsealed"
-      },
-      {
-        "name": "Original Adventure",
-        "rating": 5
-      }
-    ],
-    "image": "https://getwallpapers.com/wallpaper/full/a/a/1/750459-kid-goku-wallpaper-2560x1440-for-iphone-5.jpg"
   },
   {
     "worldName": "Farscape",
@@ -261,7 +239,8 @@
   },
   {
     "worldName": "Rune Factory",
-    "rating": 4
+    "rating": 4,
+    "image": "https://www.stratege.ru/forums/files/gallery/1/153/e1d/e601922c2a38bf56d104a80494507e11.jpg"
   },
   {
     "worldName": "Shadowrun",
@@ -1154,7 +1133,8 @@
   },
   {
     "worldName": "Kuma Kuma Kuma Bear",
-    "rating": 4
+    "rating": 4,
+    "image": "https://www.animepilipinas.com/wp-content/uploads/2020/09/Kuma-Kuma-Kuma-Bear-key-visual-1-696x464.jpg"
   },
   {
     "worldName": "Huniepop",
@@ -1305,7 +1285,8 @@
   },
   {
     "worldName": "Street Fighter",
-    "rating": 3
+    "rating": 3,
+    "image": "https://images4.imagebam.com/c1/a0/3e/MEAHYVH_o.png"
   },
   {
     "worldName": "Transformers",
@@ -1323,7 +1304,8 @@
         "rating": 7,
         "name": "Prime"
       }
-    ]
+    ],
+    "image": "https://i.pinimg.com/originals/fc/de/29/fcde2926b2d3e9b10b164eab6876b977.jpg"
   },
   {
     "worldName": "Wolfenstein",
@@ -1572,7 +1554,7 @@
     ]
   },
   {
-    "worldName": "Girls' Frontline",
+    "worldName": "Girls Frontline",
     "rating": 5,
     "image": "https://img.discuss.com.hk/d/attachments/day_180915/20180915_b6f791999cd265969ad774LH9skJlGzT.jpg"
   },
@@ -1668,7 +1650,8 @@
   },
   {
     "worldName": "Earth Defense Force",
-    "rating": 10
+    "rating": 10,
+    "image": "https://i0.wp.com/darkzero.co.uk/asset/2016/03/Earth-Defense-Force-4.1.jpg?w=1500&ssl=1"
   },
   {
     "worldName": "Hidden Dungeon Only I Can Enter",
@@ -1731,7 +1714,8 @@
         "rating": 8,
         "name": "All Titans active"
       }
-    ]
+    ],
+    "image": "https://images4.imagebam.com/84/46/a3/MEAIGDE_o.png"
   },
   {
     "worldName": "Owari no Seraph",
@@ -2374,7 +2358,8 @@
   },
   {
     "worldName": "Gold Digger",
-    "rating": 4
+    "rating": 4,
+    "image": "https://comicartcommunity.com/gallery/data/media/442/GOLDDIGGERS_75a.jpg"
   },
   {
     "worldName": "Isekai Meikyu de Harem wo",
@@ -2515,7 +2500,7 @@
     "image": "https://img.sharetv.com/shows/standard/salem.jpg"
   },
   {
-    "worldName": "Totaly Spies",
+    "worldName": "Totally Spies",
     "rating": 4
   },
   {
@@ -2585,7 +2570,8 @@
         "rating": 10,
         "name": "Original Time-line (Pre reincarnation)"
       }
-    ]
+    ],
+    "image": "https://i.pinimg.com/originals/bd/4b/7e/bd4b7ec0458c74b14d5d83f85f3d77f9.jpg"
   },
   {
     "worldName": "Uzaki-chan wa Asobitai!",
@@ -2734,6 +2720,10 @@
       {
         "name": "Historic France",
         "rating": 3
+      },
+      {
+        "rating": 4,
+        "name": "Mulan Ancient China"
       }
     ]
   },
@@ -3049,14 +3039,215 @@
       }
     ]
   },
-  {"worldName":"Atlantis: The Lost Empire","rating":3,"image":"https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQFv6GZdB4edez7XAeJqaTbFpova9Es2cCsbow6uvsPNNSizXjU"},
-  {"worldName":"Dungeons & Dragons (cartoon)","rating":5,"image":"https://www.wallpaperup.com/uploads/wallpapers/2015/10/20/821117/c08d1bea2b9d4c8ce44e92cb147520e5.jpg"},
-  {"worldName":"Granblue Fantasy","rating":6},
-  {"worldName":"Koihime†Musō","rating":5,"image":"https://cdn.donmai.us/sample/2a/ff/__kan_u_chouun_shokatsuryou_chouhi_bachou_and_1_more_koihime_musou_drawn_by_ooshima_miwa__sample-2aff615b5d8bcce1b72ed2ee09d75160.jpg"},
-  {"worldName":"Saints Row","rating":3,"image":"https://nerdreactor.com/wp-content/uploads/2020/04/Saints-Row-3-_A4_Cover_Angel.jpg","condition":[{"rating":3,"name":"Saints Row 1,2,3"},{"rating":5,"name":"Saints Row 4"},{"name":"Gat Outta Hell","rating":6}]},
-  {"worldName":"The Dawn of the Witch","rating":7},
-  {"worldName":"The World Ends With You","rating":5,"additional":"Psychic Talent Allows you to use all Pins to their Maximum Effect in the RG like in the Reapers Game.If you have Fatality Defense you can still die to participate in the Reapers Game but you can't be erased in said Game","condition":[{"name":"Real Ground","rating":2},{"name":"Reapers Game","rating":5}]},
-  {"worldName":"Where on Earth is Carmen Sandiego","rating":2},
-  {"worldName":"Yuragisou no Yuna-San","rating":4,"image":"https://cdn.donmai.us/sample/7c/4b/__yunohana_yuuna_ameno_sagiri_miyazaki_chisaki_arahabaki_nonko_fushiguro_yaya_and_1_more_yuragisou_no_yuuna_san__sample-7c4b860e5de795038602c0816ecfca6c.jpg","condition":[{"name":"Standard","rating":4},{"rating":7,"name":"Garandou active"}]},
-  {"worldName":"Zettai Karen Children","rating":5,"image":"https://i.imgur.com/3jtdhRi.jpg","condition":[{"name":"The Unlimited - Hyoubu Kyousuke","rating":6}]}
+  {
+    "worldName": "Atlantis: The Lost Empire",
+    "rating": 3,
+    "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQFv6GZdB4edez7XAeJqaTbFpova9Es2cCsbow6uvsPNNSizXjU"
+  },
+  {
+    "worldName": "Dungeons & Dragons (cartoon)",
+    "rating": 5,
+    "image": "https://www.wallpaperup.com/uploads/wallpapers/2015/10/20/821117/c08d1bea2b9d4c8ce44e92cb147520e5.jpg"
+  },
+  {
+    "worldName": "Granblue Fantasy",
+    "rating": 6
+  },
+  {
+    "worldName": "Koihime†Musō",
+    "rating": 5,
+    "image": "https://cdn.donmai.us/sample/2a/ff/__kan_u_chouun_shokatsuryou_chouhi_bachou_and_1_more_koihime_musou_drawn_by_ooshima_miwa__sample-2aff615b5d8bcce1b72ed2ee09d75160.jpg"
+  },
+  {
+    "worldName": "Saints Row",
+    "rating": 3,
+    "image": "https://nerdreactor.com/wp-content/uploads/2020/04/Saints-Row-3-_A4_Cover_Angel.jpg",
+    "condition": [
+      {
+        "rating": 3,
+        "name": "Saints Row 1,2,3"
+      },
+      {
+        "rating": 5,
+        "name": "Saints Row 4"
+      },
+      {
+        "name": "Gat Outta Hell",
+        "rating": 6
+      }
+    ]
+  },
+  {
+    "worldName": "The Dawn of the Witch",
+    "rating": 7
+  },
+  {
+    "worldName": "The World Ends With You",
+    "rating": 5,
+    "additional": "Psychic Talent Allows you to use all Pins to their Maximum Effect in the RG like in the Reapers Game.If you have Fatality Defense you can still die to participate in the Reapers Game but you can't be erased in said Game",
+    "condition": [
+      {
+        "name": "Real Ground",
+        "rating": 2
+      },
+      {
+        "name": "Reapers Game",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "worldName": "Where on Earth is Carmen Sandiego",
+    "rating": 2
+  },
+  {
+    "worldName": "Yuragisou no Yuna-San",
+    "rating": 4,
+    "image": "https://cdn.donmai.us/sample/7c/4b/__yunohana_yuuna_ameno_sagiri_miyazaki_chisaki_arahabaki_nonko_fushiguro_yaya_and_1_more_yuragisou_no_yuuna_san__sample-7c4b860e5de795038602c0816ecfca6c.jpg",
+    "condition": [
+      {
+        "name": "Standard",
+        "rating": 4
+      },
+      {
+        "rating": 7,
+        "name": "Garandou active"
+      }
+    ]
+  },
+  {
+    "worldName": "Zettai Karen Children",
+    "rating": 5,
+    "image": "https://i.imgur.com/3jtdhRi.jpg",
+    "condition": [
+      {
+        "name": "The Unlimited - Hyoubu Kyousuke",
+        "rating": 6
+      }
+    ]
+  },
+  {
+    "worldName": "Camp Buddy",
+    "rating": 1,
+    "image": "https://pbs.twimg.com/media/FF8uSy_XIAUcKMz.jpg"
+  },
+  {
+    "worldName": "Degenesis",
+    "rating": 7,
+    "image": "https://miro.medium.com/max/1812/1*XFghX195D3Q5jS3TKN3_4Q.png"
+  },
+  {
+    "worldName": "Dog Days",
+    "rating": 1,
+    "image": "https://get.wallhere.com/photo/illustration-anime-anime-girls-cartoon-Dog-Days-Millhiore-F-Biscotti-Leonmitchelli-Galette-des-Rois-Elmar-Ricotta-clair-Martinozzi-Yukikaze-Panettone-Brioche-d-Arquien-mangaka-153228.jpg",
+    "condition": [
+      {
+        "name": "Flonyard",
+        "rating": 2
+      },
+      {
+        "name": "Earth",
+        "rating": 1
+      }
+    ]
+  },
+  {
+    "worldName": "Final Fantasy I-IV",
+    "rating": 5,
+    "condition": [
+      {
+        "name": "Final Fantasy I",
+        "rating": 5
+      },
+      {
+        "name": "Final Fantasy  II",
+        "rating": 5
+      },
+      {
+        "rating": 6,
+        "name": "Final Fantasy III"
+      },
+      {
+        "rating": 6,
+        "name": "Final Fantasy IV"
+      }
+    ]
+  },
+  {
+    "worldName": "Grand Theft Auto",
+    "rating": 3,
+    "condition": [
+      {
+        "rating": 3,
+        "name": "GTA V"
+      }
+    ]
+  },
+  {
+    "worldName": "Megaman Series",
+    "rating": 5,
+    "condition": [
+      {
+        "rating": 5,
+        "name": "Classic"
+      },
+      {
+        "rating": 7,
+        "name": "X series"
+      },
+      {
+        "name": "X series (X-5)",
+        "rating": 8
+      },
+      {
+        "rating": 7,
+        "name": "Megaman Zero"
+      },
+      {
+        "rating": 7,
+        "name": "Megaman ZX"
+      },
+      {
+        "rating": 6,
+        "name": "Megaman Legends"
+      },
+      {
+        "name": "Battle Network (as a navi)",
+        "rating": 5
+      },
+      {
+        "rating": 5,
+        "name": "Megaman Star Force"
+      }
+    ]
+  },
+  {
+    "worldName": "Sakura Dungeon",
+    "rating": 4,
+    "image": "https://i.imgur.com/kKBAq15_d.webp?maxwidth=640&shape=thumb&fidelity=medium"
+  },
+  {
+    "worldName": "Sunset Overdrive",
+    "rating": 4,
+    "image": "https://upload.wikimedia.org/wikipedia/en/4/46/Sunset_Overdrive_cover.jpg"
+  },
+  {
+    "worldName": "The World of Otome Games is Tough For Mobs (Mobseka)",
+    "rating": 7,
+    "image": "https://cdn.donmai.us/sample/1e/a5/__angelica_rafa_redgrave_leon_fou_bartford_olivia_luxion_arroganz_and_3_more_otome_gee_sekai_wa_mob_ni_kibishii_sekai_desu_drawn_by_minatoasu_and_shiosato_jun__sample-1ea50d2e3861d4bd40f6fc0c6c014d69.jpg",
+    "condition": [
+      {
+        "name": "Novel Canon ",
+        "rating": 7
+      },
+      {
+        "rating": 6,
+        "name": "Game Canon "
+      },
+      {
+        "name": "Marie Route",
+        "rating": 8
+      }
+    ]
+  }
 ]

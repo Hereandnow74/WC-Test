@@ -9,6 +9,7 @@
         >
           <span v-if="i != 0" class="text-orange-500">, </span>
           <span class="hover:underline">{{ el.title2 || el.title || el }}</span>
+          <span v-if="ALL_DLC_PERK_TITLES[el.title2 || el.title || el]" class="text-teal-200">ᵈˡᶜ</span>
           <span v-if="el?.anything?.length" class="text-yellow-500">({{ el.anything }})</span>
           <span v-if="el.count && el.count > 1" class="text-gray-300">(<span class="text-cyan-400">x{{ el.count }}</span>)</span>
           <span v-if="el?.target?.length || el.waifu" class="text-teal-500">({{ el.target || el.waifu }})</span>
@@ -44,7 +45,7 @@
 <script lang='ts' setup>
 import { isArray, groupBy } from 'lodash-es'
 import type { PropType } from 'vue'
-import { LINKS, QUERIES } from '~/data/constants'
+import { ALL_DLC_PERK_TITLES, LINKS, QUERIES } from '~/data/constants'
 import { useStore } from '~/store/store'
 
 const { baseBudget } = useStore()

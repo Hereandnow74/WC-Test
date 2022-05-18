@@ -211,7 +211,7 @@
 <script lang="ts" setup>
 import { DBCharacter } from 'global'
 import html2canvas from 'html2canvas'
-import { getAllCharsObject } from '~/data/constants'
+import { useAllChars } from '~/data/constants'
 import { imageLink, isBuildImage } from '~/logic'
 import { customDialog } from '~/logic/dialog'
 import { useChallenges } from '~/store/challenges'
@@ -220,14 +220,13 @@ import { useStore } from '~/store/store'
 const {
   startingWorld, startingOrigin, intensities, binding, homePerks, defensePerks,
   companions, heritage, talentPerks, waifuPerks, ridePerks, miscPerks, luresBought, genericWaifuPerks,
-  otherPerks, patron, pvpPerks, yourTier, baseBudget, budget, totalCost, localUserCharacters,
+  otherPerks, patron, pvpPerks, yourTier, baseBudget, budget, totalCost,
   totalDiscount,
 } = useStore()
 
 const { activeChallenges } = useChallenges()
 
-const allCharsObject = ref<Record<number, DBCharacter>>({})
-getAllCharsObject().then(all => allCharsObject.value = all)
+const { allCharsObject } = useAllChars()
 
 const worldText = computed(() => {
   if (startingOrigin.value.uid) {

@@ -172,22 +172,6 @@
       </div>
     </div>
     <div ref="companionsList" class="overflow-y-auto w-full relative">
-      <Foldable v-if="allUserCharacters.length" ref="userWaifuList" :is-open="userCharactersShown" class="text-lg mb-2" title="User Characters">
-        <div
-          class="mb-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5
-          4xl:grid-cols-6 5xl:grid-cols-7 gap-1 text-base"
-        >
-          <CompanionCard
-            v-for="char in allUserCharacters"
-            :key="char.uid"
-            :char="char"
-            :is-user-char="true"
-            :with-image="!settings.allImg"
-            :class="!settings.allImg ? 'h-[500px]' : 'pt-[32px]'"
-            @edit-companion="editCompanion"
-          />
-        </div>
-      </Foldable>
       <div
         ref="waifuList"
         class="relative grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5
@@ -199,6 +183,7 @@
           :key="char.u"
           :char="char"
           :with-image="!settings.allImg"
+          :is-user-char="char.type === 'local'"
           :class="!settings.allImg ? 'h-[500px]' : 'pt-[32px]'"
           @edit-companion="editCompanion"
           @reportCompanion="reportCompanion"
@@ -228,16 +213,16 @@ import { every, intersection, some, shuffle } from 'lodash-es'
 import { DBCharacter } from 'global'
 import { useStore } from '~/store/store'
 
-import { toggleShowAddCharacter, showAddCharacter, toggleShowFilterTags, showFilterTags, tagToggles, userCharactersShown, threeToggle, toggleShowReport, showReport, showSearchSettings, toggleSearchSetting } from '~/logic'
-import { getChars, getUserChars, waifuTags } from '~/data/constants'
+import { toggleShowAddCharacter, showAddCharacter, toggleShowFilterTags, showFilterTags, tagToggles, threeToggle, toggleShowReport, showReport, showSearchSettings, toggleSearchSetting } from '~/logic'
+import { waifuTags, useAllChars } from '~/data/constants'
 import { usePlayStore } from '~/store/play'
 import { useSearchSettings } from '~/logic/searchSettings'
 
-const { localUserCharacters, userCharacters, startingWorld, favorites, settings, companionsUIDs } = useStore()
+const { startingWorld, favorites, settings, companionsUIDs } = useStore()
 const { jumpChain } = usePlayStore()
 const { minTier, maxTier, worldName, blockedWorlds } = useSearchSettings()
 
-const search = ref(' ')
+const search = ref('')
 const position = ref(0)
 
 const gender = ref('')
@@ -254,12 +239,11 @@ const shuffleOn = ref(false)
 // const characters = ref({})
 const loading = ref(true)
 
-const charArr = ref([] as DBCharacter[])
+const { allCharsComp: allChars } = useAllChars()
 
 const editMode = ref(false)
 const characterToEdit = ref({})
 const waifuList = ref<HTMLElement|null>(null)
-const userWaifuList = ref<HTMLElement|null>(null)
 const companionsList = ref<HTMLElement|null>(null)
 
 const { directions } = useScroll(companionsList)
@@ -313,32 +297,18 @@ const options2 = {
   shouldSort: false,
 }
 
-const fuse = new Fuse(charArr.value, options)
-const fuseNoSort = new Fuse(charArr.value, options2)
+const fuse = computed(() => new Fuse(allChars.value, options))
+const fuseNoSort = computed(() => new Fuse(allChars.value, options2))
 
 const params = useUrlSearchParams('history')
-const route = useRoute()
 
 onMounted(async() => {
-  const userChars = [...await getUserChars()].reverse()
-  userChars.forEach((x) => {
-    if (x.b) {
-      if (!x.b.includes('U'))
-        x.b.push('U')
-    }
-    else { x.b = ['U'] }
-  })
-  const oldChars = await getChars()
-  charArr.value = Array.prototype.concat(userChars, oldChars)
-  fuse.setCollection(charArr.value)
-  fuseNoSort.setCollection(charArr.value)
   loading.value = false
   if (params.name)
     nextTick(() => search.value = params.name as string)
-  else search.value = ''
+  if (params.world)
+    worldName.value = params.world as string
 })
-
-watch(route, x => search.value = x.query.name as string || '')
 
 type tagKeys = keyof typeof waifuTags
 const tagsInclude = computed(() => Object.keys(tagToggles).filter(key => tagToggles[key] === 1) as tagKeys[])
@@ -400,8 +370,8 @@ const filteredCharacters = computed(() => {
   if (retinue.value === 1) sopt.$and.push({ u: `=${Object.keys(companionsUIDs.value).join('|=')}` })
   if (retinue.value === -1) sopt.$and.push({ u: `!^${Object.keys(companionsUIDs.value).join(' !^')}` })
   if (search.value.length === 0)
-    return fuseNoSort.search(sopt)
-  return fuse.search(sopt)
+    return fuseNoSort.value.search(sopt)
+  return fuse.value.search(sopt)
 })
 
 const secondFilter = computed(() => {
@@ -499,8 +469,6 @@ function visibilityChanged(entries: IntersectionObserverEntry[]) {
 }
 
 const topPosition = computed(() => position.value / cardRowCount * ((firstCard.value?.clientHeight || 0) || 500))
-
-const allUserCharacters = computed(() => userCharacters.value.concat(localUserCharacters.value).filter(x => worldName.value ? x.world === worldName.value : true))
 
 function editCompanion(char: any) {
   characterToEdit.value = char
