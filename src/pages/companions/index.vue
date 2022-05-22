@@ -127,6 +127,14 @@
             fav
           </div>
           <div
+            :class="{'bg-red-600': local === -1, 'bg-green-600': local === 1}"
+            class="border-l px-2 hover:bg-gray-700 text-gray-200"
+            title="Favorites"
+            @click="local = threeToggle(local)"
+          >
+            loc
+          </div>
+          <div
             :class="{'bg-red-600': retinue === -1, 'bg-green-600': retinue === 1}"
             class="border-l px-2 hover:bg-gray-700 text-gray-200 rounded-r"
             title="Retinue"
@@ -229,6 +237,7 @@ const gender = ref('')
 const image = ref('')
 const nsfw = ref('')
 const favorite = ref(0)
+const local = ref(0)
 const retinue = ref(0)
 
 const sortAlpha = ref(0)
@@ -352,10 +361,9 @@ const filteredCharacters = computed(() => {
     // Search by name with locked world
     case !!worldName.value:
       sopt.$and.push(
-        { n: sr },
         {
           $or: [
-            { w: `^"${worldName.value}"` }, { d: `^"${worldName.value}"` },
+            { w: `'"${worldName.value}"` }, { d: `'"${worldName.value}"` },
           ],
         },
       )
@@ -379,6 +387,7 @@ const secondFilter = computed(() => {
   const tagsE = (x: DBCharacter) => !some(x.b, x => tagsExclude.value.includes(x))
   const tier = (x: DBCharacter) => x.t >= minTier.value && x.t <= maxTier.value
   const blocked = (x: DBCharacter) => !blockedSet.value.has(x.w)
+  const localF = (x: DBCharacter) => local.value === 1 ? x.type === 'local' : x.type !== 'local'
 
   const allFilters = [] as ((arg0: DBCharacter) => boolean)[]
 
@@ -390,6 +399,8 @@ const secondFilter = computed(() => {
     allFilters.push(tier)
   if (blockedSet.value.size)
     allFilters.push(blocked)
+  if (local.value !== 0)
+    allFilters.push(localF)
 
   return allFilters.length
     ? filteredCharacters.value.filter((x) => {

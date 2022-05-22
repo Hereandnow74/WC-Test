@@ -723,7 +723,7 @@ perks.push({
 export const genericDesc = `
 <p>Upgrades, downgrades, and other premium options for your waifus are available in this and the next section. If your Origin choice is compatible with a Waifu Perk of any kind, you can buy it for yourself, even in a starting build. (If you have Substitute and apply a Waifu Perk to yourself, the perk-modified cost of your target cannot exceed 20% of your intensity-modified budget. This limitation only applies at chargen.) Unlike other purchased abilities, your waifus do not lose access to waifu perks if you die.</p>
 <p>If a Waifu Perk is listed with a tier rating, its price will be affected by the No Bindings discount, if you qualify for it. If you already qualify for Mirage Master’s regular discount, it cannot be discounted a second time. Waifu Perks that lack tier ratings are not affected by the No Bindings Discount.</p>
-<p>Generic waifu perks may be purchased more than once and applied to any waifu or husbando that qualifies.</p>`
+<p>Generic waifu perks may be purchased more than once and applied to any waifu or husbando that qualifies. Specific waifu perks, however, may only be purchased once unless stated otherwise, even if multiple waifus qualify. If you give a waifu her associated perk using in-universe means, you’ll earn the difference in capture points between her old tier and her new tier. If the upgraded waifu is a Tier 11, you instead earn a single Tier 11 ticket. All specific waifu perks are sorted by source medium.</p>`
 // #endregion
 
 // #region Generic Waifu Perks

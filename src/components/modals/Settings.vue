@@ -27,7 +27,7 @@
           <Toggle v-model="settings.hideWorldImg" />
         </div>
         <div class="flex justify-between gap-4 border-b border-gray-500">
-          <div>Hide <b>Companions/Waifu</b> perks images</div>
+          <div>Hide <b>Companions / Waifu perks</b> images</div>
           <Toggle v-model="settings.allImg" />
         </div>
         <div class="flex justify-between gap-4 border-b border-gray-500">

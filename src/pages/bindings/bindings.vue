@@ -19,6 +19,8 @@
       </template>
     </div>
 
+    <Desc v-if="activeType === 'Tantric Arts'" class="p-2 mb-4 max-w-4xl bg-warm-gray-200 dark:bg-warm-gray-800 mx-auto" :desc="tantricDesc" />
+
     <div
       class="column-gap"
       :class="settings.columns !== 'auto' ? `column-count-${settings.columns}` : 'md:column-count-2 xl:column-count-3 4xl:column-count-4 5xl:column-count-5'"
@@ -51,8 +53,8 @@
         :key="bnd.title"
         v-bind="{
           perk: bnd,
-          bg: bindingAvailable(bnd) ? 'light-400 dark:rose-900 hover:(yellow-100 dark:rose-800)'
-            : 'gray-200 dark:gray-600',
+          class: bindingAvailable(bnd) ? 'bg-light-500 dark:bg-rose-900 hover:(bg-yellow-100 dark:bg-rose-800)'
+            : 'bg-gray-200 dark:bg-gray-600',
           isActive: !!allBindings[bnd.title],
           savedPerk: allBindings[bnd.title],
           ...generateProps(bnd)
@@ -102,7 +104,7 @@
 import { onBeforeRouteUpdate } from 'vue-router'
 import { PerkFull } from 'global'
 import {
-  desc, symbioteRules, shroudElements,
+  desc, symbioteRules, shroudElements, tantricDesc,
 } from '~/data/binding'
 import { useTooltips } from '~/logic/misc'
 import { bindingAvailable, chooseBinding } from '~/logic'
@@ -136,12 +138,14 @@ const bindingsDLC = computed(() => !settings.value.allChosenAuthors[0]
 
 const bindingByType = computed(() => {
   const res = {
-    Stamp: [] as PerkFull[],
-    Jewelry: [] as PerkFull[],
-    Ritual: [] as PerkFull[],
-    Symbiote: [] as PerkFull[],
-    Shroud: [] as PerkFull[],
-    Other: [] as PerkFull[],
+    'Stamp': [] as PerkFull[],
+    'Jewelry': [] as PerkFull[],
+    'Ritual': [] as PerkFull[],
+    'Symbiote': [] as PerkFull[],
+    'Shroud': [] as PerkFull[],
+    'Hypnosis App': [] as PerkFull[],
+    'Tantric Arts': [] as PerkFull[],
+    'Other': [] as PerkFull[],
   }
 
   bindings.value.forEach(x => x.type ? res[x.type].push(x) : res.Other.push(x))

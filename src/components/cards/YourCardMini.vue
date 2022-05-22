@@ -70,8 +70,10 @@ const image = ref(startingOrigin.value.image || '')
 
 const char = computed(() => allCharsObject.value[startingOrigin.value.uid] || {})
 
-watch(char, () => startingOrigin.value.sex
-|| (char.value && char.value.b ? char.value.b?.includes('F') ? 'F' : 'M' : 'M'))
+if (!startingOrigin.value.sex)
+  startingOrigin.value.sex = char.value.b ? (char.value.b?.includes('F') ? 'F' : 'M') : 'M'
+
+watch(char, () => startingOrigin.value.sex = char.value.b?.includes('F') ? 'F' : 'M')
 
 watch(image, () => {
   if (image.value.startsWith('https://i.imgur.com/')) startingOrigin.value.image = image.value

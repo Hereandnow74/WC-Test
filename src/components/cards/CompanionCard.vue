@@ -174,7 +174,7 @@ const props = defineProps({
 
 const {
   flags, companions, localUserCharacters, companionsUIDs, captureKoeff, underLoan, favorites,
-  fullStartingBudget, settings, favoritesObject,
+  fullStartingBudget, settings, favoritesObject, csr, baseBudget,
 } = useStore()
 const { loan, trHistory } = usePlayStore()
 
@@ -287,7 +287,7 @@ function captureCompanion() {
 
 function yoinkCompanion() {
   const char = charData.value
-  if (CHAR_COSTS[char.tier] <= fullStartingBudget.value * 0.2) {
+  if ((!csr.value && fullStartingBudget.value * 0.2 >= CHAR_COSTS[char.tier]) || (csr.value && (baseBudget.value + fullStartingBudget.value) * 0.2 >= CHAR_COSTS[char.tier])) {
     const sex = intersection(char.tags, ['F', 'M', 'O'])[0] || 'F'
     companions.value.push({ uid: char.uid, name: char.name, world: char.world, sex, tier: char.tier, priceTier: priceTier(char.tier), method: 'yoink' })
   }

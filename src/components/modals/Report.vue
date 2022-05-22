@@ -97,6 +97,7 @@ import Input from '../basic/Input.vue'
 import NumberInput from '../basic/NumberInput.vue'
 import { filterObject, sendReportToServer } from '~/logic'
 import { getChars, getUserChars, waifuTagsByTag } from '~/data/constants'
+import { useSaves } from '~/store/saves'
 
 const props = defineProps({
   editMode: {
@@ -108,6 +109,8 @@ const props = defineProps({
     default: () => ({}),
   },
 })
+
+const { userNickname } = useSaves()
 
 const wrongTier = ref(false)
 const wrongTags = ref(false)
@@ -177,6 +180,7 @@ const { errors, handleSubmit } = useForm({
   initialValues: {
     tier: props.character.tier || 1,
     tags: props.character.tags,
+    nickname: userNickname.value ? userNickname.value : '',
   },
 })
 
@@ -203,7 +207,7 @@ const sendReport = handleSubmit((values) => {
   if (!wrongTier.value)
     delete values.tier
   values = filterObject(values)
-
+  userNickname.value = values.nickname
   sendReportToServer({ ...values, date: new Date().toString(), uid: props.character.uid }, (msg) => {
     submitMessage.value = msg
     setTimeout(() => submitMessage.value = '', 5000)

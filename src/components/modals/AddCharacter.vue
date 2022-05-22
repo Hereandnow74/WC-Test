@@ -87,7 +87,8 @@ import { toFormValidator } from '@vee-validate/zod'
 import { random } from 'lodash-es'
 import { useStore } from '~/store/store'
 import { proposeCompanion, toggleShowAddCharacter, userCharactersShown } from '~/logic'
-import { getAllChars, useWorlds, waifuTagsByTag } from '~/data/constants'
+import { useWorlds, waifuTagsByTag } from '~/data/constants'
+import { useSaves } from '~/store/saves'
 
 const props = defineProps({
   editMode: {
@@ -99,6 +100,8 @@ const props = defineProps({
     default: () => ({}),
   },
 })
+
+const { userNickname } = useSaves()
 
 const localSave = ref(true)
 const serverSave = ref(false)
@@ -139,7 +142,7 @@ const { errors, handleSubmit } = useForm({
     image: props.editMode ? props.character.image || '' : '',
     image_nsfw: props.editMode ? props.character.image_nsfw || '' : '',
     tags: props.editMode ? props.character.tags || [] : [],
-    nickname: '',
+    nickname: userNickname.value ? userNickname.value : '',
   },
 })
 
@@ -188,6 +191,7 @@ const addCharacter = handleSubmit((values) => {
   values.uid = props.editMode && !newEntry.value ? props.character.uid || random(10000000, 99999999) : random(10000000, 99999999)
   if (serverSave.value) {
     processing.value = true
+    userNickname.value = values.nickname
     proposeCompanion({ ...values, date: new Date().toString() }, (msg) => {
       processing.value = false
       submitMessage.value = msg

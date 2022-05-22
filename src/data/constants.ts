@@ -405,6 +405,7 @@ export const allWorldsNoCondition = computed(() => {
 const str = Object.keys(TOOLTIPS).sort((a, b) => b.length - a.length).join('|')
 export const TOOLTIPS_REG = new RegExp(str, 'g')
 export const LINKS_REG = new RegExp(Object.keys(LINKS.value)
+  .filter(x => x !== 'Resonance')
   .map((x) => { x = x.replace('(', '\\('); x = x.replace(')', '\\)'); return x })
   .sort((a, b) => b.length - a.length)
   .join('|'), 'g')

@@ -5,6 +5,16 @@
     </h2>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
+        21 May 2022
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>~55 new user submitted characters, new missions</li>
+        <li>New Bindings Tantric Arts and Hypnosis App</li>
+        <li>Bugfixes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
         18 May 2022
       </h3>
       <ul class="list-decimal list-inside">

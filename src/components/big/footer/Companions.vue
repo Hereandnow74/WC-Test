@@ -216,6 +216,8 @@ watch([companionsDataSorted, companionImages, currentPage, waifuList], () => {
   lazyLoadImg(waifuList.value)
 }, { flush: 'post' })
 
+// onMounted(() => lazyLoadImg(waifuList.value))
+
 function sellCompanion(uid: number) {
   const cmp = companions.value[findIndex(companions.value, { uid })]
   let price = 0

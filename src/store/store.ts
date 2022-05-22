@@ -309,7 +309,7 @@ watch(startingWorld, () => {
 })
 
 watch(() => jumpChain.value.length, () => {
-  if (jumpChain.value.length > 1) {
+  if (jumpChain.value.length > 0) {
     if (fee.value)
       fee.value += Math.round(loan.value.owed * 0.1)
     else

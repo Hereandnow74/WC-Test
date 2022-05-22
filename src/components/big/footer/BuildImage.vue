@@ -209,7 +209,6 @@
 </template>
 
 <script lang="ts" setup>
-import { DBCharacter } from 'global'
 import html2canvas from 'html2canvas'
 import { useAllChars } from '~/data/constants'
 import { imageLink, isBuildImage } from '~/logic'
@@ -263,6 +262,7 @@ function createImage() {
   const buildEl = document.getElementById('build')
   if (buildEl) {
     html2canvas(buildEl, { imageTimeout: 15000, useCORS: true }).then(async(canvas) => {
+      console.log('Before Dialog')
       const answer = await customDialog('Image successfully created, what do you want to do with it?', ['Copy to Clipboard', 'Save'])
       if (answer === 'Copy to Clipboard') {
         canvas.toBlob((blob) => {
@@ -286,13 +286,12 @@ function createImage() {
   isBuildImage.value = false
 }
 
-watch(companionImages, () => {
-  createImage()
-}, { flush: 'post' })
+// watch(companionImages, () => {
+//   createImage()
+// }, { flush: 'post' })
 
 onMounted(() => {
-  if (companions.value.length === 0)
-    createImage()
+  createImage()
 })
 
 </script>

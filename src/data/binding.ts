@@ -11,6 +11,41 @@ export const desc = `
 <p>If a companion or familiar was never Stamped, whether by you or before delivery, the use of any higher binding method will also give them a dormant tattoo; this is what marks them as one of your captures. Dormant tattoos turn active when higher bindings are removed. If you have any binding, but capture a companion using only Lures, the Stamp’s effects will apply regardless and the full tattoo will appear immediately.</p>
 `
 
+export const tantricDesc = `
+<h3 class="text-lg font-semibold">Arcane Links</h3>
+<p>These are items, individuals, or actions with a strong metaphysical connection to the intended target of the spell, and one of the primary ways of acquiring Resonance. Common arcane links include a lock of the target's hair, a few drops of their blood, having heard their true name from their own lips, close relationships, or being their superior in a shared organization. The arcane link must have the appropriate level of metaphysical significance, particularly for larger targets. A piece of cobble from a street may allow you to target the street itself, but wouldn’t target the buildings, a city map wouldn’t let you target the city, but the key to the city could, a printout of a flag doesn’t have the mystical weight to target the associated nation, but the original, physical flag could. While line of sight and outright contact are several such links, they are ill suited for the greater arts.</p>
+<p>One object, subject, or action can act as multiple kinds of Arcane Links, either to different potential targets or due having multiple significant connections to a single target.</p>
+
+<h3 class="text-lg font-semibold">Resonance</h3>
+<p>Resonance is the abstraction of the mystical power that has been gathered for a spell. Most forms of preparation will grant +1 Resonance, but particularly well attuned ones, such as a beloved mother of the target trying to hand over her daughter could provide +3 Resonance. Additional factors that can empower a ritual include, but are not limited to, active sex with the target, the taking of an individual’s virginity as part of the casting, the impregnantion of the target, the target’s willingness to engage with the ritual, having an Element that aligns with the particular spell, or having someone with official authority over the target assist in casting the spell.</p>
+<p>The strength of the most powerful caster in the Art has a meaningful impact. A silver-star (T7-9) caster would have +1 Resonance, while a T10 or T11 would have +2 Resonance. While the primary caster - generally the most powerful individual - must maintain their effort for the duration of the casting, additional people actively assisting in the casting may increase its power. 2-9 additional casters grants +1 Resonance. Every additional Magnitude of casters grants an additional Resonance. For example, 10 - 99 additional casters would grant +2 Resonance, while 100 - 999 would grant +3.</p>
+<p>Another common form of gaining mystic resonance is a prepared space for that specific type of spell. A ritual altar, intricate circles drawn upon the ground, or similar could grant +1 Resonance. An entire dedicated structure built to empower the ritual would grant +2 Resonance. Specific preparations upon the target themselves, such as inscribing specialized runes on them, or ritualistic purification or bondage, can also grant Resonance.</p>
+<p>The final major source of Mystic Resonance are additional or particularly significant Arcane Links: things such as a direct blood relative of the target being involved in the casting, a beloved item/person of the target, a full pint of blood rather than a few drops, all the hair from a haircut rather than a single lock, or the entire City Hall to target a city. Each additional, significant Arcane Link is worth another +1 Resonance. A particularly significant amount of the arcane link increases the Resonance it grants by 1. These must be actively used in the casting in order to add their power, such as dancing through the halls of a building, or praying over blood.</p>
+<p>If the Arcane Link is sacrificed, consumed, or otherwise destroyed as part of the casting, it counts for an additional +1 Resonance. Being able to involve the target directly in the ritual casting would count for +4 Resonance. Arcane links that require a meaningful amount of effort from the caster may also grant additional resonance.  While a billionaire could purchase an item for $1,000 for no additional Resonance, the same item for the same price could grant +1 Resonance if it’d been purchased by someone in poverty, where that price represents a month’s labor. Artificial constraints to increase effort function appropriately, as it is the effort involved that matters.</p>
+<p>While spells take one hour to cast by default, more Resonance may be gained by spending longer to work the spell. A 2-8 hour ritual would grant +1 Resonance, whereas a ritual from Sunrise to Sunset (Or vice versa, about 9-12 hours) would grant +2 Resonance, and a ritual from Sunrise to Sunrise (24 hours) would provide +4 Resonance. Alternatively, by spending Resonance, the casting time for a spell may be reduced to 30 minutes for 1 Resonance, 10 minutes for 2 Resonance, or 1 minute for 3 Resonance.</p>
+<p>All Arts may be improved in the following ways with excess Resonance.</p>
+
+<ul class="list-disc list-inside">
+<li>Arts will normally only target a single individual, object, or structure. Resonance may be spent to target everything near the target. Spending 1 Resonance may also be spent to allow the spell to affect everything within 1 meter of the target(s). Additionally, 1 Resonance may allow a spell to target both the arcane link itself and the thing which it acts as a link to.</li>
+<li>Resonance may be spent to force an arcane link to connect to an ill-suited target or one several conceptual steps away. The weaker the conceptual connection between the link and the intended target of the spell, the more Mystic Resonance is required. For example, 1 Resonance could allow someone’s blood to act as a targeting link for one of their close relatives. 2 Resonance could allow a piece of brick from a building to target every building on that street. 7 Mystical Resonance may be spent to target an entire world from a clod of dirt from said world. Additional resonance based on arcane links must be related to the intended target, not the source of the inappropriate link.</li>
+<li>Adding exceptions or specific targets to standing or area of effect spells. Every Resonance spent on this allows for another such filter. The caster must possess an arcane link related to the filter applied, such as a deed to target buildings owned by someone on the paper, a tuft of red hair to target redheads, or a computer to target AIs. </li>
+<li>Spells with an appropriate Arcane Link may target anyone in the same dimension or reality by default. Targeting someone from a connected reality (such as one in the same local multiverse or from your Pocket Apartment) requires an additional 3 Resonance, while targeting someone from an entirely unrelated reality requires 5 Resonance.</li>
+<li>Spells, once cast, may not be changed or altered. However, non-instantaneous spells may be canceled by the caster (and the Contractor, if they are not the caster). Arts with limited durations may have 2 Resonance spent to make their duration indefinite.</li>
+</ul>
+
+<h3 class="text-lg font-semibold">Art of Binding</h3>
+<p>The initial perk comes with the knowledge of the Art of Binding. These Arts compel the target to take or avoid a certain kind of action. The more specific the action, the more powerful the compulsion. For example, a compulsion to have sex is not as effective as a compulsion to give blowjobs, and aiming these compulsions at specific subjects requires an arcane link. A target resisting the compulsions of the Art will only cause them to increase in severity. If the compulsion is to perform an action, the spell ends once they complete it, or within a week otherwise. The same compulsion cannot be stacked, though overlapping compulsions will have increased effect. Recasting the same spell using more Resonance to give it greater strength may supplant the original. What follows is a list of common uses and Resonance costs for the Art. Skilled Contractors often devise their own Arts following the themes of Binding.</p>
+
+<ul class="list-disc list-inside">
+<li><b>Art of Shackles</b>: 1-5 Resonance to directly prohibit or require an action. The widest variance in Resonance occurs here, as greater compulsions and broader categories of action demand greater Resonance costs.</li>
+<li><b>Art of Chastity</b>: 1 Resonance to affect a target’s sexual ability or responses. This Art is most commonly used to prevent orgasm, prevent arousal from decreasing, or to find certain stimuli/situations arousing.</li>
+<li><b>Art of the Leash</b>: 1 Resonance to give the target an urge to travel to a location or subject</li>
+<li><b>Art of the Blindfold</b>: 4 Resonance to prevent the target's awareness of a specific stimulus unless it actively interacts with them or is deliberately brought to their attention.</li>
+<li><b>Art of Bonds</b>: 3 Resonance to apply a compulsion towards a certain emotion.</li>
+<li><b>Art of Enslavement</b>: Costs 3 Resonance for blue- star (T1-T3) targets, 5 Resonance for copper-star (T4-T6) targets, 7 for silver-star (T7-T9), and 9 for gold-star and T11 targets. Experiencing this Art is emotionally intense for the target during the casting process. Upon completion of the spell, the completed Stamp will appear on them in a place of the casters choosing and the target will be captured. You have +5 Resonance for arts targeting that individual from now on, as they are mystically always willing and involved in the ritual.</li>
+</ul>
+`
+
 export const bindings: PerkFull[] = [
   {
     uid: 'XnYV4',
@@ -37,7 +72,7 @@ export const bindings: PerkFull[] = [
   },
   {
     uid: 'JTCzI',
-    title: 'Megapixel',
+    title: 'Megapixel (Old)',
     cost: 150,
     type: 'Stamp',
     image: 'https://i.ibb.co/t4Gs6by/Megapixel.jpg',
@@ -432,7 +467,230 @@ If you Possessed or Substituted a waifu or are otherwise female, you may act as 
 <p>Your Shroud is no longer merely an extension of your will, but part of your being. You are able to transform portions of yourself into your element(s) and heal or recharge yourself by absorbing manifestations of said element that you didn't create. If you had not already been capable of flight with your Shroud, you are now capable of such.</p>
 <p>Once again, controlling an elemental manifestation that has a will of its own involves usurping said will with your own like any other sapient target. This process is based on the Possess Origin. Individuals absorbed in such a manner, such as a gynoid via the Cyber Shroud, or a normal human via the Primal Shroud, may be bound like anyone else, recreated and released from your service, or their form stolen. This process is instant if performed on a shroud-bound retinue member. New skills, traits, and abilities gained via this method are added to your true form as if you had Possessed the character. You also gain the target’s episodic memory, as if you had Substituted into them.</p>
 <p>Manifestations whose forms were stolen count as captured, but you do not get a credit reward for doing so. You may still sell a stolen form to the company afterward like any other target for 20% of the list price for the target’s effective tier after step 4, rounded up to the nearest whole number. This will remove the form from your library.</p>`,
-  }]
+  },
+  {
+    uid: 'VfOVT',
+    title: 'Hypnosis App',
+    type: 'Hypnosis App',
+    image: '',
+    cost: 0,
+    desc: `<p>An additional app is added to your company provided Smart Device, which is capable of entrancing, hypnotizing, and subverting the minds of targets. Individuals caught in this hypnosis become increasingly more suggestible, and will be entranced, losing conscious awareness of things outside of the screen and not consciously remembering anything experienced while so entranced, staring blankly at the screen with rapt attention. People that are entranced can be broken out of it by a physical or social shock, such as someone calling their name loudly, shoving them, or severely needing to go to the bathroom. It takes a few moments of awareness of the display to entrance someone, and thus individuals resistant to looking at the display can look away.</p>
+    <p>Every hour someone is being actively entranced will increase their Hypnotic Depth by 1. Hypnotic Depth is an abstraction of a target’s susceptibility to further suggestion and control. The Contractor themselves are inoculated against the viewing of their own hypnotic displays.
+    </p>
+    <p>At every ten Hypnotic Depth an individual’s psyche will reach a Breakpoint, a barrier to accessing and controlling more of their consciousness. An individual’s Hypnotic Depth will not increase past this point until the target does something they would normally be resistant to while outside of the trance. Each additional Breakpoint past the first requires a more ‘severe’ infraction than before, as perceived by the target. At every breakpoint, new methods of control over a target's psyche will open up. New orders or changes to a target’s psyche requires that they are in the entranced state at the time.
+    </p>
+    <p>While the Hypnosis App is described in terms of an app on a phone, the exact form it takes is as varied as the available forms of Smart Devices, such as mystic orbs, omnitools, and magic books are all perfectly viable conveyors of the effects of the Binding.
+    </p>
+    <ul class="list-disc list-inside">
+    <li><b>At Hypnotic Depth 1-10</b>, you are able to Compel the target, nudging them towards a preferred outcome, but one they could feasibly do. While they are entranced, they will answer questions as if you were a trusted confidant.</li>
+    <li><b>At Hypnotic Depth 11-20</b>, you have further control over the target, as if you had significant authority over them which they respect and/or fear. You may leave commands for the target to ignore specific stimuli outside of the trance, unless it actively shocks them out of such a state, such as ignoring a friend until they shout their name from up close, or ignoring someone groping them until they’re spanked.</li>
+    <li><b>At Hypnotic Depth 21-30</b>, the ease of inducing the entranced state, and the difficulty of breaking them out of it, increases significantly. You are able to create emotional states in the target based on specific stimuli, as well as induce triggers in general. Including those that can slip them into the entranced state, such as the snap of fingers. Their hypnotic depth while entranced does not increase unless exposed to some method of doing so, but additional changes may be made.</li>
+    <li><b>At Hypnotic Depth 31-40</b>, you are able to directly, if gradually, alter aspects of a target’s personality, relationships, beliefs, or morals, making them more or less important to them. You may also switch the target of such relationships, making them believe that their beloved is their bitter rival and vice versa. This must be a gradual process. The more important or closely held the thing changed, the more sessions it will take to fully erode or create.</li>
+    <li><b>At Hypnotic Depth 41-50</b>, you are able to completely rewrite memories of beliefs, time, relationships wholesale, changing their nature entirely. The ability to entirely add or remove aspects of a person’s psyche still eludes you.</li>
+    <li><b>At Hypnotic Depth 50 or higher</b>, the target is fully yours. They are considered Captured, with the funds deposited into your account. You are able to make or unmake aspects of a target’s mind. This is the point of mindbreak and complete personality rewrite. Purchased Companions automatically come at this stage.</li>
+    </ul>
+    `,
+  },
+  {
+    uid: 'VfOVT',
+    title: 'Shareware',
+    type: 'Hypnosis App',
+    image: '',
+    cost: 50,
+    whitelist: ['Hypnosis App'],
+    desc: `<p>This app may now be sent to other, similar smart devices, where it can be opened as an app, program, spell, or similar. The initial sending of the program must be accepted, though you may customize the program’s icon via the Company App.</p>
+    <p>Your personal app comes with settings to help determine how people viewing this downloaded version view it while entranced, such as viewing time spent with the app as time spent playing a particularly interesting gacha game or reading a developing story in a magical book.
+    </p>
+    <p>The app otherwise functions identically on all devices, increasing Hypnotic Depth at a rate of one per hour as per normal. Additionally, your personal Smart Device increases Hypnotic Depth by 2 per hour.
+    </p>
+        `,
+  },
+  {
+    uid: 'VfOVT',
+    title: 'Shovelware',
+    type: 'Hypnosis App',
+    image: '',
+    cost: 100,
+    whitelist: ['Shareware'],
+    desc: `<p>You are now able to upload and display the App on any appropriate system that you are able to get root or admin access too. Your smart device will display all locations which the Hypnosis App is uploaded to, and allows for remote access, control, activation, and deletion of the App on these device’s displays.</p>
+    `,
+  },
+  {
+    uid: 'VfOVT',
+    title: 'Subliminal Audio',
+    type: 'Hypnosis App',
+    image: '',
+    cost: 15,
+    whitelist: ['Hypnosis App'],
+    desc: `<p>Your Hypnotic Display may now include or even simply be Audio. This audio includes subliminal messages that will increase a listener’s Hypnotic Depth by 1 for every hour it is listened to. This audio must be audible and distinguishable, the same way closing one’s eyes can prevent the visual display from affecting you, earplugs can block the subliminal audio. Just as a sufficiently distant display can’t entrance someone as they can’t properly perceive the screen, the subliminal audio’s effect has limited range, particularly in noisy environments.</p>
+    <p>This audio cannot, by itself, entrance an individual, only increasing their Hypnotic Depth while listened to. At and beyond Breakpoint 2, suggestions or commands may be implanted into the subliminal messaging. Though targets with sufficiently superhuman hearing may be able to pick out the specific commands, use caution when utilized against such targets that are not entranced.</p>
+    `,
+  },
+  {
+    uid: 'VfOVT',
+    title: 'Mind-Altering Concoctions',
+    type: 'Hypnosis App',
+    image: '',
+    cost: 25,
+    whitelist: ['Hypnosis App'],
+    desc: `<p>This perk is a subscription to our mind-altering substances shop. In addition to the recipes for specific concoctions, you will be able to order up to 5 doses of varying substances at a time. These may be returned or more ordered once they are used, and come in several major categories: Aromatics, ingestibles, and injectables</p>
+    <p><b>Aromatics</b> are aerosolized chemicals which will increase a target’s Hypnotic Depth by 1 for every hour exposed, and are available in a variety of delivery methods. Frequent favorites include incense sticks, candles, and censers and may come paired with a wide variety of common scents. These may include the inducement towards an emotional state, such as joy, bravery, confidence, desire, lust, or fear.</p>
+    <p><b>Ingestibles</b> come as a powder which may be consumed in a variety of methods, such as being mixed into a drink or cooked into a meal, or snorted directly. A single ‘dose’ is a line of powder and will increase a target’s Hypnotic Depth by 5. Ingestibles are able to induce specific emotional states as per aerosols, or may instead subtly and gradually alter an ingester’s physiology as per Advanced Tempest Runes (Body), such as increasing or reducing breast size or hair length up to a certain point. Partial doses have proportionally lesser effects.</p>
+    <p><b>Injectables</b> are drugs which must be directly introduced to tissues or the bloodstream, most commonly via direct injection. A full dose of an injectable will increase a target’s Hypnotic Depth by 10 or, if at a Breakpoint, will break through it by increasing the target’s Hypnotic Depth by 1. In addition to being able to force an absolutely debilitating level of emotional inducement, or significant body alterations, injectables are able to apply a single Hypnotic Depth 31-40 level or lower command or forcibly entrance a target for 1 hour.</p>
+    <p>While doses are calibrated for roughly human-sized targets, custom orders for larger or smaller targets may be ordered. Ordering an oversized dose is not recommended, as overdosing on Mind Altering Concoctions risks complete, permanent, irreparable mindbreak scenarios without Warranty Plan.</p>
+    <p>Note that targets with the appropriate superhuman senses may be able to detect Mind Altering Concoctions. Additionally, the Contractor is not immune to direct applications of them, exempting Defenses.</p>
+    `,
+  },
+  {
+    uid: 'VfOVT',
+    title: 'VR Helmet',
+    type: 'Hypnosis App',
+    image: '',
+    cost: 20,
+    whitelist: ['Hypnosis App'],
+    desc: `<p>You gain access to a set of three VR Helmets, which are protected by the usual Company Smart Device assurances. In addition to their other effects, these VR Helmets may be used to interact with virtual realities directly, to metaphorically ‘jack in’.</p>
+    <p>These helmets, when placed upon the head of a target, will expose them to extremely targeted and high fidelity hypnotic stimuli, significantly increasing the speed at which their Hypnotic Depth increases. Triple the amount of Hypnotic Depth earned per hour after all other factors. Additionally, the VR helmet may apply pre-programmed and selected commands and adjustments during its hypnosis.</p>
+    `,
+  },
+  {
+    uid: 'VfOVT',
+    title: 'Full-Dive Set',
+    type: 'Hypnosis App',
+    image: '',
+    cost: 25,
+    whitelist: ['VR Helmet'],
+    desc: `<p>The blueprints for an enhanced form of the VR Helmet, the equipment includes an additional set of wires, chords, and applicators that may be applied to a wearer of the helmet, directly interfacing with their nervous system and applying hypnotic stimulation directly.</p>
+    <p>This equipment requires that the target is restrained or otherwise incapacitated. This direct interface allows for the modification of memories and implantation of commands regardless of current Hypnotic Depth. While under the effect of the Full Dive Set, Breakpoints may be bypassed.</p>
+    `,
+  },
+  {
+    uid: 'VfOVT',
+    title: 'Megapixel',
+    type: 'Hypnosis App',
+    image: '',
+    cost: 150,
+    whitelist: ['VR Helmet'],
+    desc: `<p>Your smart device’s hypnosis app display is now capable of digitizing and de-digitizing individuals. Digitized individuals are dropped into a small digital world within your smart device, and may be paused, or apply any purchased Hypnosis App expansions applied to them as desired. Confinement in this digital world eliminates the risk of overdose from Mind-Altering injectables.</p>
+    <p>Digitizing or de-digitizing a target requires them to be entranced by your Smart Device, and happens over the course of several seconds. While there is no theoretical range limit for this effect, there are functional limits based on a target’s sensory fidelity and their ability to perceive your Smart Device and be entranced. A subject’s recreation from the digital world occurs over several seconds, within several meters of the active hypnosis app display on your smart device. Subjects are vulnerable during this process.</p>
+    <p>You possess significant control over this small digital environment and may alter it or the scenario as desired. The space can only hold one digitized individual at a time, but may simulate any number of individuals desired. Additionally, if you possess VR Helmets or other means of interfacing with digital worlds, any number of others such as yourself may enter this digital realm as an admin.</p>
+    <p>This area counts as Company provided space for the purposes of the likes of Demiplanes and Dungeons.</p>
+    `,
+  },
+
+  {
+    uid: 'VfOVT',
+    title: 'Tantric Arts',
+    type: 'Tantric Arts',
+    image: '',
+    cost: 15,
+    desc: `<p>Grants an innate ability to use ritualistic, sympathetic sexual arts. By using mystically resonant materials and actions, you are able to cast spells of binding. These arts may be taught to others, though safeguards to prevent them from affecting the Contractor are detailed below. These spells are compulsions on the target’s mind, body, and soul. Resisting them causes the target to become exhausted and weakened, whereas following along with the compulsion will invigorate and strengthen the target. The more specific the compulsion and the shorter its duration, the stronger the boost and according compulsion, and vice versa. </p>
+    <p>Every spell requires both intense concentration and some other form of mystically resonant way to manipulate the energies involved, such as chanting, delicate hand movements, intense dancing, or dedicated sexual manuevers, which may be mixed even in a single casting. Aside from runes inscribed upon the target or a physical circle to enclose an area, the targeting of an Art requires an Arcane Link, which must have a physical or metaphysical connection to the corresponding target.</p>
+    <p>All Arts have a minimum amount of resonance, with more powerful Arts requiring greater amounts. Resonance in excess of the minimum for the Art may be used to increase its power or add additional Arts to the casting of the spell. Mystic Resonance is acquired primarily through effort and preparation. The more specialized the preparations, the greater their sympathetic or conceptual connection to the spell. The more strong links can be made between the preparation and the target and/or the spell itself, the more resonance is generated.</p>
+    `,
+  },
+  {
+    uid: 'VfOVT',
+    title: 'Art of Awareness',
+    type: 'Tantric Arts',
+    image: '',
+    cost: 10,
+    whitelist: ['Tantric Arts'],
+    desc: `<p>For 1 Resonance, the caster may perceive a target as if with their own senses, and gain a good understanding of their distance and direction relative to the target. After initial casting, this spell can be sustained with far less focus, allowing for the casting of other spells. For an additional 2 Resonance, the Art will reveal any illusions or other attempts at concealment.</p>
+    <p>Additionally, 1 Resonance may be spent to instead view the past of the target. Finally, for an additional 3 Resonance (for a total of 5), the art will enable the caster to cast a spell while scrying the past, most commonly using a visual link to leapfrog scrying between targets, but potentially to apply other spells.</p>
+    <p>In settings without established temporal mechanics, spells cast upon the past will ripple forward. Spells cast further into the past take more perceived time for the timelines to adjust and accommodate the changes. Events have a form of temporal inertia, and certain, typically “plot- relevant,” things are unlikely to be altered by the Butterfly Effect. Which events these are varies by setting. The caster(s) and Contractor are immune to the temporal changes, and are able to remember both the original timeline and the altered one (as appropriate).</p>
+    `,
+  },
+  {
+    uid: 'VfOVT',
+    title: 'Art of Summoning',
+    type: 'Tantric Arts',
+    image: '',
+    cost: 15,
+    whitelist: ['Tantric Arts'],
+    desc: `<p>The Art of Summoning requires at least two Arcane Links. By spending 3 Resonance you are able to bring a target to a targeted location or before a targeted individual, which may be the caster. This is an instantaneous effect upon completion of the Art. As a reminder, emotional attachments to places may act as arcane links, and arcane links for portals between two locations would involve things resonant to both of them.</p>
+    <p>For an additional Resonance, you may instead create a gateway between the two locations that will stay open for an hour. As per normal, this may be made indefinite for an additional 2 Resonance. For 1 Resonance, a portal may be set to toggle on and off with a selected trigger, such as a specific trait or phrase.</p>
+    `,
+  },
+  {
+    uid: 'VfOVT',
+    title: 'Art of Sympathies',
+    type: 'Tantric Arts',
+    image: '',
+    cost: 10,
+    whitelist: ['Tantric Arts'],
+    desc: `<p>These arts create strong connections between the targets. The more tangible and deeper the connection, the more Resonance it takes, though most uses of this art cost 2 to 6 Resonance. Linking thoughts, sensations, or subconscious desires takes 2 Resonance. Linking the internal energies of two targets such that they may be pooled and shared freely costs 3 Resonance. Linking the physical states of two targets requires 4 Resonance, but more broad, potentially damaging or altering links require 5 Resonance. Linking a target’s state or sensations to that of an inanimate object requires an additional Resonance, as does creating a one way link. These Arts generally last one week.</p>
+    `,
+  },
+  {
+    uid: 'VfOVT',
+    title: 'Art of Transformation',
+    type: 'Tantric Arts',
+    image: '',
+    cost: 15,
+    whitelist: ['Tantric Arts'],
+    desc: `<p>These Arts allow for the alteration of a target’s physiology. The more significant, extreme, or delicate the changes, the more Resonance it requires. Cosmetic changes will generally only require 1 Resonance. Changes that alter the bone structure or fat distribution of the target require 2 Resonance. Changes to reflexes, the sensitivity to responses, or reactions to poison, or alterations to mass cost 3 Resonance. Extreme changes in a target’s mass, by a factor of more than four, cost 4 Resonance.</p>
+    <p>Changes to the target’s species, fundamental body plan, or other significant changes require an appropriate arcane link for the intended state (such as an extant example of the species or their blood, for turning someone into a different species), and 4 Resonance. Transforming a target into an object requires 5 Resonance. Sapience and awareness are optional.</p>
+    <p>Any changes to a target’s Tier require additional Resonance, equal to the numeric difference in Tier. Changes that are immediately lethal to the target at the time require 1 additional Resonance.</p>
+    <p>These arts are normally instantaneous, though they may be given a limited duration for +1 Resonance. At an additional cost of +2 Resonance, the Art may add the new form as a triggerable transformation that they are able to switch between within a minute of concentration.</p>
+    `,
+  },
+  {
+    uid: 'VfOVT',
+    title: 'Art of Warding',
+    type: 'Tantric Arts',
+    image: '',
+    cost: 15,
+    whitelist: ['Tantric Arts'],
+    desc: `<p>The Arts of Warding may only be placed on structures or locations. They create a threshold that cannot be crossed or acted across, such as via movement or attacks, esoteric or otherwise. Wards may be keyed to only block certain targets provided the appropriate arcane link, or made to allow certain targets to pass through them. Otherwise, Wards affect all potential entities attempting to cross or act across them equally. All wards last one week by default.</p>
+    <p>The Resonance cost of a Ward is equivalent to the Binding cost for the power of targets it will block the passage of. 1 Resonance will prevent the passage of blue- star targets, but not prevent them from acting across it. A 3 Resonance ward will prevent the passage of copper-star or lower targets, and prevent blue-star targets from acting across the threshold. A 9 Resonance Ward could prevent even a T11 from acting across the threshold</p>
+    <p>Wards may be keyed to block only specific things or prioritize avenues of attack of similar breadth to the Defense perks. This requires less Resonance. Wards keyed to prioritize one avenue of attack (such as magic) but still prevent passage cost 1 less Resonance. For example: A ward meant to contain a mystically powerful but physically frail spellcaster could cost 2 or 4 Resonance if their magic is T4-6 or T7-9 respectively. Wards that only prevent an avenue of action across them rather than preventing movement cost 2 less Resonance.</p>
+    `,
+  },
+  {
+    uid: 'VfOVT',
+    title: 'Magic Focus',
+    type: 'Tantric Arts',
+    image: '',
+    cost: 25,
+    whitelist: ['Tantric Arts'],
+    desc: `<p>These foci are items specially built to empower rituals and magic, enjoy Company protections like your Smart Device once made. They only add mystic resonance if they required effort from the Caster to acquire and are actively used in the casting in some way. Destroying or sacrificing the ritual implement, as part of the ritual, increases the resonance granted by it by 2.</p>
+    <p>Foci require 5 Resonance and often a significant period of time to attune to, as the only appropriate Arcane Links that may be used must relate to the caster themselves and major experiences they have undergone. Beloved items, handcrafted works, or other things that have deep personal meaning to the caster are often the best options for this. Ways to apply effort to increase the weight of a potential focus include, but are not limited to, consecration of the item, multiple purification rituals, carefully hand-inscribing the phrases or words of the ritual upon the item, or things such as speaking the words of binding over the tallow of the candle as it sets.</p>
+    <p>What follows is a list of some of the most common forms of foci and the power they would grant.</p>
+
+    <ul class="list-disc list-inside">
+    <li>Mirrors: things such as polished plates, reflecting pools, or modern mirrors represent sight, soul, and the self. A mirror reduces the cost to apply Arts to yourself, as well as all Arts of Awareness, by 2.</li>
+    <li>Coins: Paper money, banker bonds, or even actual coins represent material wealth, construction, repair, and inanimate or intangible things that last beyond human lifespan. A spell may be cast and stored into the focus to be released at a later time. If the focus is consumed upon the release of the spell, the initial casting upon it gets the +2 Resonance bonus of destroying the focus.</li>
+    <li>Cups: Often a way to spread a spell among a group, they are not just cups, but also plates, pots, bowls, or urns. They are the way to contain and provide. Cups remove the Resonance cost to apply a spell to multiple targets, provided they all partake of the vessel or are otherwise anointed by it in the ritual.</li>
+    <li>Athames: These are knives, blades, tools of carving, cutting, and thought made action. Arcane Links or other things sacrificed as part of a ritual for greater Mystic Resonance provide double the total bonus that they would otherwise.</li>
+    <li>Hammers: These are drivers, mallets, or other types of hammers, used to strike at a thing time and again to cause change or to construct and reshape. Every additional casting of the same Art on a subject (successful or otherwise) provides an additional +1 Resonance, up to +3 Resonance.</li>
+    </ul>
+    `,
+  },
+  {
+    uid: 'VfOVT',
+    title: 'Art of Domains',
+    type: 'Tantric Arts',
+    image: '',
+    cost: 10,
+    needed: 2,
+    whitelist: ['Tantric Arts', 'Dungeons', 'Demiplane'],
+    desc: `<p>You may claim the target item, location, or area as part of your owned space, not only granting yourself metaphysical ownership but also ownership by Company authority. Treat it as either your Home Dungeon or your Demiplane. This Art requires 3 Resonance as a base, but items or locations of significant power require additional Resonance based on the effective Tier they could empower an individual to. Possible arcane links include things such as the deed to a building in the caster’s name, the blood of a family that owned the land for generations, or the former owner ceding control of the space during the course of the casting.</p>
+    <p>Dungeons created this way maintain their current size and create an appropriate structure, which may then be increased in size as per normal.</p>
+    `,
+  },
+  {
+    uid: 'VfOVT',
+    title: 'Art of Destruction',
+    type: 'Tantric Arts',
+    image: '',
+    cost: 15,
+    whitelist: ['Tantric Arts'],
+    desc: `<p>YNot merely a compulsion, this art actively damages, destroys, or suppresses targets and their abilities. As a general rule, reducing a target’s tier costs an amount of Resonance equal to the reduction in tiers and only lasts for 24 hours, while killing a target would generally require a value of Resonance equal to their Tier.</p>
+    <p>1 Resonance is required for mundane, physical materials; 3 for supernaturally or extremely durable materials/targets; 5 for intangibles such as morals, disease, or heat; and 7 for abstract concepts such as good, death, or magic. Intangibles and concepts still require an arcane link to target them, such as the bounding of a circle or runes, or an arcane link to target them at an individual. Things are gradually destroyed over the course of the casting.</p>
+    <p>Once destroyed, the targets may be rebuilt or otherwise refill the space, such as magic flowing back into an area after its destruction or a person gaining new morals after they are destroyed. Alternatively, the target of the Art may be suppressed, for a default duration of one month.</p>
+    `,
+  },
+]
 
 export const lureDesc = 'Lure-type controls are more subtle than bindings, but cannot directly capture targets. All lures work equally well on male, female, and other targets, and instead only obey the user’s orientation. You may purchase any number of lures. Like all company-supplied powers, lures cannot be nullified, copied, or stolen.'
 
@@ -822,7 +1080,8 @@ export const otherControls: PerkFull[] = [
     desc: `The extra-dimensional nature of your isekai victims ensures that their more creative musings inherit that property. Any idle speculation, or even internal narration, recorded by Pictures of Home is now considered to be valid doujin material for Meta Shift on the isekai victim’s new world.
   <p>The ability to apply such materials to an isekai victim’s world is, by default, delegated to the victim’s supervisor, although the contractor always retains a veto. Any changes still cannot directly solve any problems without introducing at least an equal number and degree of new ones. Due to an observer effect, any change made after the isekai victim’s arrival also must not directly contradict the victim’s personal memories.</p>
   `,
-  }]
+  },
+]
 
 export const symbioteRules = `
 <h3 class="font-semibold text-xl py-4">Symbiote: Eggs</h3>
