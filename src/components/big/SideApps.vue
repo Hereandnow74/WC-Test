@@ -48,7 +48,7 @@ import { useStore } from '~/store/store'
 
 const {
   flags, heritageCost, ridePerksCost, homePerksCost, miscPerksCost, waifuPerksCost,
-  genericWaifuPerksCost, companions, startingOrigin, binding, luresBought, talentPerks, bindingCost,
+  genericWaifuPerksCost, companions, startingOrigin, binding, luresBought, talentPerks, bindingCost, otherCost,
 } = useStore()
 
 const tier11Companion = computed(() => companions.value.length === 1 && companions.value[0].tier === 11)
@@ -61,13 +61,13 @@ const basicTalents = computed(() => talentPerks.value.filter(x => x.title.includ
 const heritageLimit = computed(() => heritageCost.value <= 400)
 const rideLimit = computed(() => ridePerksCost.value <= 545)
 const homeLimit = computed(() => homePerksCost.value <= 500)
-const otherCost = computed(() => miscPerksCost.value + waifuPerksCost.value + genericWaifuPerksCost.value + bindingCost.value - (binding.value[0].cost || 0))
-const otherLimit = computed(() => otherCost.value <= 600)
+const credits600 = computed(() => miscPerksCost.value + waifuPerksCost.value + genericWaifuPerksCost.value + bindingCost.value - (binding.value?.[0]?.cost || 0) + otherCost.value)
+const otherLimit = computed(() => credits600.value <= 600)
 
 const allConditions = computed(() => tier11Companion.value && originT6.value && simpleLures.value
  && basicTalents.value && heritageLimit.value && rideLimit.value && homeLimit.value && otherLimit.value)
 
-const leftovers = computed(() => 400 + 545 + 500 + 600 - heritageCost.value - ridePerksCost.value - homePerksCost.value - otherCost.value)
+const leftovers = computed(() => 400 + 545 + 500 + 600 - heritageCost.value - ridePerksCost.value - homePerksCost.value - credits600.value)
 
 const showDanger11 = ref(false)
 </script>

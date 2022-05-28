@@ -5,6 +5,27 @@
     </h2>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
+        28 May 2022
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>~90 new user submitted characters, new missions</li>
+        <li>Heritage discounts for the Power Swap archetype</li>
+        <li>Specific credit modifiers now show up in the Copy to Text and Image</li>
+        <li>Bugfixes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
+        25 May 2022
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>~140 new user submitted characters, new missions, worlds</li>
+        <li>Sorting by the Targets count for the Worlds page</li>
+        <li>Bugfixes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
         21 May 2022
       </h3>
       <ul class="list-decimal list-inside">

@@ -191,11 +191,11 @@ function choosePatron(pt: typeof patrons[0], saveInfo: {title: string; cost: num
   if (!patronAvailable(pt)) return
   const ind = findIndex(patron.value, { title: pt.title })
   if (ind !== -1) {
-    if (pt.effect) pt.effect.remove()
+    if (pt.effect && saveInfo.anything !== 'Invincibility') pt.effect.remove()
     patron.value.splice(ind, 1)
   }
   else {
-    if (pt.effect) pt.effect.set()
+    if (pt.effect && saveInfo.anything !== 'Invincibility') pt.effect.set()
     patron.value.push(saveInfo)
   }
 }

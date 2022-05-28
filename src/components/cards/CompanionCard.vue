@@ -2,7 +2,7 @@
   <div
     class="py-1 w-full text-gray-200 bg-warm-gray-700 rounded"
   >
-    <div class="bg-gray-800 border border-gray-800 h-full flex flex-col">
+    <div class="border border-gray-800 h-full flex flex-col" :class="[isUserChar ? 'bg-warm-gray-800': 'bg-gray-800']">
       <div ref="cardEl" class="flex-grow relative">
         <img
           v-show="withImage"

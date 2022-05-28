@@ -685,7 +685,7 @@ If you Possessed or Substituted a waifu or are otherwise female, you may act as 
     image: '',
     cost: 15,
     whitelist: ['Tantric Arts'],
-    desc: `<p>YNot merely a compulsion, this art actively damages, destroys, or suppresses targets and their abilities. As a general rule, reducing a target’s tier costs an amount of Resonance equal to the reduction in tiers and only lasts for 24 hours, while killing a target would generally require a value of Resonance equal to their Tier.</p>
+    desc: `<p>Not merely a compulsion, this art actively damages, destroys, or suppresses targets and their abilities. As a general rule, reducing a target’s tier costs an amount of Resonance equal to the reduction in tiers and only lasts for 24 hours, while killing a target would generally require a value of Resonance equal to their Tier.</p>
     <p>1 Resonance is required for mundane, physical materials; 3 for supernaturally or extremely durable materials/targets; 5 for intangibles such as morals, disease, or heat; and 7 for abstract concepts such as good, death, or magic. Intangibles and concepts still require an arcane link to target them, such as the bounding of a circle or runes, or an arcane link to target them at an individual. Things are gradually destroyed over the course of the casting.</p>
     <p>Once destroyed, the targets may be rebuilt or otherwise refill the space, such as magic flowing back into an area after its destruction or a person gaining new morals after they are destroyed. Alternatively, the target of the Art may be suppressed, for a default duration of one month.</p>
     `,

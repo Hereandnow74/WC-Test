@@ -336,7 +336,7 @@
     "image": "https://i.ytimg.com/vi/JuLxHTDyLJI/maxresdefault.jpg"
   },
   {
-    "rating": 3,
+    "rating": 4,
     "q": true,
     "worldName": "Avatar: Legend of Korra",
     "additional": "Korra has her polar bear dog Naga as a familiar."
@@ -598,8 +598,73 @@
     "condition": [
       {
         "name": "Breath of the Wild",
+        "rating": 5,
+        "a": "c"
+      },
+      {
+        "name": "The Legend of Zelda",
+        "rating": 5
+      },
+      {
+        "rating": 4,
+        "name": "The Adventure of Link"
+      },
+      {
+        "rating": 4,
+        "name": "A Link to the Past"
+      },
+      {
+        "name": "Link's Awakening",
         "rating": 4,
         "a": "c"
+      },
+      {
+        "name": "Ocarina of Time",
+        "rating": 6,
+        "a": "c"
+      },
+      {
+        "name": "Majora's Mask",
+        "rating": 6,
+        "a": "c"
+      },
+      {
+        "name": "Four Swords",
+        "rating": 4
+      },
+      {
+        "rating": 4,
+        "name": "The Wind Walker",
+        "a": "c"
+      },
+      {
+        "name": "Four Swords Adventure",
+        "rating": 4
+      },
+      {
+        "rating": 4,
+        "name": "The Minish Cap"
+      },
+      {
+        "rating": 6,
+        "name": "Twilight Princess",
+        "a": "c"
+      },
+      {
+        "name": "Spirit Tracks",
+        "rating": 1
+      },
+      {
+        "rating": 5,
+        "name": "Skyward Sword"
+      },
+      {
+        "name": "A Link Between Worlds",
+        "rating": 4
+      },
+      {
+        "rating": 2,
+        "name": "Tri Force Heroes"
       }
     ],
     "image": "https://i.imgur.com/iXuJjfE.jpeg"
@@ -689,7 +754,8 @@
     "rating": 4,
     "q": true,
     "worldName": "King of Fighters",
-    "additional": "Hotaru has Itokatsu as a familiar."
+    "additional": "Hotaru has Itokatsu as a familiar.",
+    "image": "https://cdn.atomix.vg/wp-content/uploads/2019/10/king-.jpg"
   },
   {
     "rating": 4,
@@ -760,7 +826,8 @@
         "rating": 10,
         "a": "c"
       }
-    ]
+    ],
+    "image": "https://www.gamertelligence.com/wp-content/uploads/2019/03/elder-scrolls-online-main-.jpg"
   },
   {
     "rating": 5,
@@ -959,7 +1026,8 @@
     "rating": 5,
     "q": true,
     "worldName": "Attack on Titan",
-    "additional": "Titan Shifting no longer limits a retinue member’s lifespan."
+    "additional": "Titan Shifting no longer limits a retinue member’s lifespan.",
+    "image": "https://image.winudf.com/v2/image1/Y29tLlNlcnBlbnRTYW5kcy5BdHRhY2tvblRpdGFuVGhlR2FtZV9zY3JlZW5fMF8xNTc2NTQ5NDM2XzA1Ng/screen-0.jpg?fakeurl=1&type=.jpg"
   },
   {
     "rating": 5,
@@ -984,7 +1052,8 @@
         "rating": 6,
         "a": "c"
       }
-    ]
+    ],
+    "image": "https://www.candb.com/site/candb/images/artwork/castlevania-dave-rapoz-konami.jpg"
   },
   {
     "q": true,
@@ -1007,7 +1076,8 @@
         "rating": 7,
         "a": "c"
       }
-    ]
+    ],
+    "image": "https://images.nintendolife.com/e2b6d3fb1fd9a/1280x720.jpg"
   },
   {
     "rating": 5,
@@ -1048,7 +1118,8 @@
         "rating": 10
       }
     ],
-    "additional": "Usagi has Luna as a humanoid familiar; if you bought Luna before Usagi, you’ll be refunded the moon cat’s full cost. The same applies to Minako and Artemis."
+    "additional": "Usagi has Luna as a humanoid familiar; if you bought Luna before Usagi, you’ll be refunded the moon cat’s full cost. The same applies to Minako and Artemis.",
+    "image": "https://i.imgur.com/6EtD8B4.jpeg"
   },
   {
     "rating": 6,
@@ -1274,7 +1345,8 @@
         "rating": 6,
         "a": "c"
       }
-    ]
+    ],
+    "image": "https://cdn.hipwallpaper.com/i/66/49/wJojTq.jpg"
   },
   {
     "rating": 6,
@@ -1308,7 +1380,8 @@
     "rating": 6,
     "q": true,
     "worldName": "Mortal Kombat",
-    "additional": "Frost has her cybernetics, but is fully capable of intercourse and has her original reproductive organs. Kronika has not absorbed Cetrion, and does not have her crown, without a waifu perk."
+    "additional": "Frost has her cybernetics, but is fully capable of intercourse and has her original reproductive organs. Kronika has not absorbed Cetrion, and does not have her crown, without a waifu perk.",
+    "image": "https://imgfon.ru/Img/Crop/1400x1050/Games/jade-raiden-kitana-goro-boytsy.jpg"
   },
   {
     "rating": 6,
@@ -1331,7 +1404,8 @@
   {
     "rating": 6,
     "worldName": "Kara no Kyoukai",
-    "additional": "Kokutou Azaka will believe you to be her sibling and cannot be convinced otherwise. If you go to KnK and capture Shiki there, she will always be the basic Tier 7 version; this does not apply to the Saber-class guest-star at Chaldea."
+    "additional": "Kokutou Azaka will believe you to be her sibling and cannot be convinced otherwise. If you go to KnK and capture Shiki there, she will always be the basic Tier 7 version; this does not apply to the Saber-class guest-star at Chaldea.",
+    "image": "https://community.gamepress.gg/uploads/default/original/3X/5/5/55c918f8720f914ff1340dd5b3acfab59cf82d4a.jpeg"
   },
   {
     "rating": 6,
@@ -1354,7 +1428,8 @@
         "rating": 7,
         "a": "c"
       }
-    ]
+    ],
+    "image": "https://wallpapercave.com/wp/wp1970972.jpg"
   },
   {
     "rating": 6,
@@ -1390,7 +1465,8 @@
         "rating": 9,
         "a": "c"
       }
-    ]
+    ],
+    "image": "https://cdna.artstation.com/p/assets/images/images/028/085/302/4k/nikola-matkovic-vampires-fall-origins-splash.jpg"
   },
   {
     "rating": 7,
@@ -1953,7 +2029,8 @@
   },
   {
     "rating": 9,
-    "worldName": "Eclipse Phase"
+    "worldName": "Eclipse Phase",
+    "image": "https://cdna.artstation.com/p/assets/images/images/010/514/060/large/marco-mazzoni-p19vffasc5oa41ljn4ii11hsoa0h.jpg"
   },
   {
     "rating": 9,

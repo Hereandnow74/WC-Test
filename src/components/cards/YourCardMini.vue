@@ -76,7 +76,8 @@ if (!startingOrigin.value.sex)
 watch(char, () => startingOrigin.value.sex = char.value.b?.includes('F') ? 'F' : 'M')
 
 watch(image, () => {
-  if (image.value.startsWith('https://i.imgur.com/')) startingOrigin.value.image = image.value
+  if (image.value.startsWith('https://i.imgur.com/') || /.*\.imagebam\.com.*/.test(image.value))
+    startingOrigin.value.image = image.value
 })
 
 </script>

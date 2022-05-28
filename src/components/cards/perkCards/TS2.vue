@@ -10,6 +10,7 @@
         class="text-base ml-2 w-42"
         :list="targetList"
         :bought-list="savedPerk.complex"
+        :do-not-close-list="true"
         @click.stop
       />
     </template>
@@ -49,7 +50,7 @@ const { talentPerks } = useStore()
 
 const targetList = computed(() => talentPerks.value
   .filter(x => ['OC Donut Steel', 'Template Stacking I'].includes(x.title))
-  .reduce((a, x) => (x.complex ? a.push(...x.complex.map(x => `${x.target} [${x.flavor}]`)) : null, a), []))
+  .reduce((a, x) => (x.complex ? a.push(...x.complex.map(x => ({ flavor: `${x.target} [${x.flavor}]` }))) : null, a), []))
 
 const complex = reactive({
   flavor: '',
@@ -62,6 +63,8 @@ const perkExist = computed(() => {
 const displayedCost = computed(() => {
   return props.savedPerk.cost || props.perk.cost
 })
+
+watch(() => complex.flavor, () => sendPerk(props.perk, { title: props.perk.title, cost: props.perk.cost }))
 
 function sendPerk(perk: any, perkToSave: any) {
   const obj = filterObject(perkToSave)

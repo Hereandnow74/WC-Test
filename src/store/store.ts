@@ -126,18 +126,35 @@ const companionProfitSold = computed(() => {
 })
 
 // Discounts
-const maxHeritageDiscount = computed(() => {
-  const types = {
-    dr: 'Dragon',
-    th: 'Transhuman',
-    ou: 'Outsider',
+const types = {
+  dr: 'Dragon',
+  th: 'Transhuman',
+  ou: 'Outsider',
+}
+const powerSwapDiscount = computed(() => {
+  const ps = find(genericWaifuPerks.value, { title: 'Power Swap' })
+  const discount = { value: 0, archetype: '' }
+  if (ps) {
+    const yourPS = find(ps.complex, el => !!el.hr)
+    if (yourPS) {
+      discount.value = CHAR_COSTS[yourPS.newTier] - (CHAR_COSTS[startingOrigin.value.tier || 0])
+      discount.archetype = types[yourPS.hr] || ''
+    }
   }
+  return discount
+})
+
+// console.log(powerSwapDiscount.value)
+
+const maxHeritageDiscount = computed(() => {
   const discount = { archetype: '', value: 0 }
   if (['Substitute', 'Possess'].includes(startingOrigin.value.title) && startingOrigin.value.hr) {
     discount.archetype = types[startingOrigin.value.hr] || ''
     discount.value = CHAR_COSTS[startingOrigin.value.tier] || 0
     if (discount.value === 11111) discount.value = 2000
   }
+  if (powerSwapDiscount.value.value > 0)
+    return powerSwapDiscount.value
   return discount
 })
 
@@ -427,5 +444,6 @@ export function useStore() {
     manualKf,
     manualSellKf,
     favoritesObject,
+    specificModsCost,
   }
 }

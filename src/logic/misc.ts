@@ -161,7 +161,7 @@ const {
   startingWorld, startingOrigin, intensities, binding, homePerks, defensePerks,
   companions, heritage, talentPerks, waifuPerks, ridePerks, miscPerks, luresBought, genericWaifuPerks,
   companionsCost, baseBudget, companionProfit, companionProfitSold, otherPerks, loan, csr,
-  usedHeritageDiscount, talentsDiscount, defensesDiscount, defenseRetinueDiscount, patron,
+  usedHeritageDiscount, talentsDiscount, defensesDiscount, defenseRetinueDiscount, patron, specificMods, specificModsCost,
 } = useStore()
 
 const { activeChallenges } = useChallenges()
@@ -219,6 +219,10 @@ function buildString(title: string, items: Perk[], left: object) {
   return str
 }
 
+export function numberToSigned(n: number): string {
+  return n > 0 ? `+${n}` : `${n}`
+}
+
 export function copyText() {
   const fullCost = { c: baseBudget.value === 11111 ? 0 : baseBudget.value }
   if (csr.value) fullCost.c = 0
@@ -241,7 +245,7 @@ export function copyText() {
   full += originTextClean.value ? `${originTextClean.value} -${startingOrigin.value.cost} [${fullCost.c}]\n\n` : ''
   if (usedHeritageDiscount.value > 0) {
     fullCost.c += usedHeritageDiscount.value
-    full += `Discounted because of your origin archetype +${usedHeritageDiscount.value} [${fullCost.c}]\n`
+    full += `Discounted because of your archetype +${usedHeritageDiscount.value} [${fullCost.c}]\n`
   }
   full += heritage.value.length ? `${buildString('Heritage', heritage.value, fullCost)}\n` : ''
   full += binding.value.length ? `${buildString('Bindings', binding.value, fullCost)}\n` : ''
@@ -286,6 +290,11 @@ export function copyText() {
     , '')}`
     : ''
 
+  fullCost.c += specificModsCost.value
+
+  full += specificMods.value.length
+    ? `\nSpecific credit modifiers ${numberToSigned(specificModsCost.value)} [${fullCost.c}]:\n${specificMods.value.reduce((a, x) => (a += `${x.desc} [${numberToSigned(x.mod)}]\n`, a), '')}`
+    : ''
   navigator.clipboard.writeText(full)
 }
 

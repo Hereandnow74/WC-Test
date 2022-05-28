@@ -332,20 +332,13 @@ const allCharsComp = computed(() => {
   return [...localUserCharacters.value.map(x => ({ u: x.uid, n: x.name, w: x.world, t: x.tier, d: x.sub, b: x.tags, i: x.image, in: x.image_nsfw, type: 'local' }))].concat(allChars.value)
 })
 
-const allCharsObject = ref({} as Record<number, DBCharacter>)
-let running2 = false
-export const getAllCharsObject = async() => {
-  if (running2) return allCharsObject.value
-  if (!allCharsObject.value[0]) {
-    running2 = true
-    allCharsComp.value.forEach(x => allCharsObject.value[x.u] = x)
-    running2 = false
-  }
+const allCharsObject = computed(() => {
+  const res = {} as Record<number, DBCharacter>
+  allCharsComp.value.forEach(x => res[x.u] ? null : res[x.u] = x)
+  return res
+})
 
-  return allCharsObject.value
-}
-
-getAllChars().then(() => getAllCharsObject())
+getAllChars()
 
 export function useAllChars() {
   return {

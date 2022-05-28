@@ -760,7 +760,7 @@ genericPerks.push({
   requires: 'any higher Binding- type control',
   multiple: true,
   max: 10,
-  whitelist: ['Tempest Jewelry', 'Shroud of Power', 'Ritual Circle', 'Alterzelu Symbiote'],
+  whitelist: ['Tempest Jewelry', 'Shroud of Power', 'Ritual Circle', 'Alterzelu Symbiote', 'Hypnosis App', 'Tantric Arts'],
   needed: 1,
   desc: 'The Stamp’s tattoos are now permanently visible, even after the purchase of higher bindings. This option is purely aesthetic. Once you’ve purchased this perk ten times, it will apply to every member of your retinue.',
 })

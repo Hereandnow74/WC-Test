@@ -33,6 +33,7 @@
                 error-message=""
                 @updateTier="swapPower[startingOrigin.character || 'You'].swap = $event"
               />
+              <Select v-model="swapPower[startingOrigin.character || 'You'].hr" :options="heritageOptions" placeholder="Archetype" />
               <div class="flex gap-2">
                 <NumberInput
                   v-model="startingOrigin.tier"
@@ -141,6 +142,13 @@ const emit = defineEmits(['pickPerk'])
 //   return a
 // }, {}) || {})
 
+const heritageOptions = [
+  { label: 'None', value: '' },
+  { label: 'Dragon', value: 'dr' },
+  { label: 'Transhuman', value: 'th' },
+  { label: 'Outsider', value: 'ou' },
+]
+
 interface CharPower {
   name: string
   tier: number
@@ -153,7 +161,7 @@ const swapPower = reactive<Record<string, CharPower>>(companionsWithoutSold.valu
   return a
 }, {}) || {})
 
-swapPower[startingOrigin.value.character || 'You'] = { name: '', tier: startingOrigin.value.tier || 1, swap: 0 }
+swapPower[startingOrigin.value.character || 'You'] = { name: '', tier: startingOrigin.value.tier || 1, swap: 0, hr: '' }
 
 props.savedPerk?.complex?.forEach((x) => {
   if (swapPower[x.target]) {
@@ -185,12 +193,18 @@ function sendPerk() {
   }
 
   obj.complex = Object.entries(swapPower).filter(x => x[1].swap !== 0).reduce((a, x) => {
-    a.push({ target: x[0], flavor: x[1].name, newTier: x[1].swap })
+    const cmp = { target: x[0], flavor: x[1].name, newTier: x[1].swap }
+    if (x[1].hr)
+      cmp.hr = x[1].hr
+    a.push(cmp)
     return a
   }, [] as {target: string; flavor: string; newTier: number}[])
 
   obj.count = obj.complex.length
   obj.cost = displayedCost.value
+
+  // if (swapPower[startingOrigin.value.character || 'You'].swap > 0)
+  //   startingOrigin.value.tier = swapPower[startingOrigin.value.character || 'You'].swap
 
   emit('pickPerk', props.perk, obj)
 }

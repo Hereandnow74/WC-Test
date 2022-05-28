@@ -24,8 +24,8 @@
         Rating: <span class="text-amber-200 font-medium">{{ rating }}</span>
         <span v-if="world.q" class="text-red-400 cursor-help font-bold hover:text-red-300" @click.stop="showInfo">?</span>
       </div>
-      <router-link v-if="allWorldTargets[world.worldName]" :to="`/companions/?world=${world.worldName}`" class="hover:underline" @click.stop>
-        Targets: <span class="text-lime-300 font-medium">{{ allWorldTargets[world.worldName] }}</span>
+      <router-link v-if="world.targets" :to="`/companions/?world=${world.worldName}`" class="hover:underline" @click.stop>
+        Targets: <span class="text-lime-300 font-medium">{{ world.targets }}</span>
       </router-link>
       <div>
         Budget: <span class="text-green-200 font-medium">{{ WORLD_RATINGS[rating - 1]?.budget || 'None' }}</span>
@@ -99,7 +99,6 @@ const types = {
 defineEmits(['editWorld'])
 
 const { baseBudget, startingWorld, localUserWorlds, flags, settings } = useStore()
-const { allWorldTargets } = useWorlds()
 
 const pickAbleAfter = computed(() => props.pickAble && !flags.value.chargen ? false : props.pickAble)
 

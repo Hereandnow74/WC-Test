@@ -194,6 +194,15 @@
         :price-mode="true"
       />
     </div>
+    <div v-if="specificMods.length" class="flex gap-2">
+      <div class="float-left mr-2">
+        Specific Credit Modifiers:
+      </div>
+      <div v-for="mod in specificMods" :key="mod.desc" class="text-blue-400">
+        <span>{{ mod.desc }}</span>
+        <span class="text-gray-200">[<span class="text-teal-400">{{ numberToSigned(mod.mod) }}</span>]</span>
+      </div>
+    </div>
     <div class="grid grid-cols-3 gap-1">
       <CompanionCardMiniInfo v-for="cmp in companions" :key="cmp.uid" :char="cmp" :image="companionImages[cmp.uid]" />
     </div>
@@ -211,7 +220,7 @@
 <script lang="ts" setup>
 import html2canvas from 'html2canvas'
 import { useAllChars } from '~/data/constants'
-import { imageLink, isBuildImage } from '~/logic'
+import { imageLink, isBuildImage, numberToSigned } from '~/logic'
 import { customDialog } from '~/logic/dialog'
 import { useChallenges } from '~/store/challenges'
 import { useStore } from '~/store/store'
@@ -220,7 +229,7 @@ const {
   startingWorld, startingOrigin, intensities, binding, homePerks, defensePerks,
   companions, heritage, talentPerks, waifuPerks, ridePerks, miscPerks, luresBought, genericWaifuPerks,
   otherPerks, patron, pvpPerks, yourTier, baseBudget, budget, totalCost,
-  totalDiscount,
+  totalDiscount, specificMods,
 } = useStore()
 
 const { activeChallenges } = useChallenges()
@@ -262,7 +271,6 @@ function createImage() {
   const buildEl = document.getElementById('build')
   if (buildEl) {
     html2canvas(buildEl, { imageTimeout: 15000, useCORS: true }).then(async(canvas) => {
-      console.log('Before Dialog')
       const answer = await customDialog('Image successfully created, what do you want to do with it?', ['Copy to Clipboard', 'Save'])
       if (answer === 'Copy to Clipboard') {
         canvas.toBlob((blob) => {
@@ -280,7 +288,6 @@ function createImage() {
         a.click()
         document.body.removeChild(a)
       }
-      //
     })
   }
   isBuildImage.value = false

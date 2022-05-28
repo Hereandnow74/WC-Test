@@ -188,7 +188,7 @@
       >
         <CompanionCard
           v-for="{ item: char } in slicedChars"
-          :key="char.u"
+          :key="char.type === 'local' ? `l${char.u}` : char.u"
           :char="char"
           :with-image="!settings.allImg"
           :is-user-char="char.type === 'local'"
