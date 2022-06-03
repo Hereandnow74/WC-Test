@@ -72,7 +72,10 @@ intensity.push({
   special: 'Chargen only. May not be taken on DR11.',
   blacklist: ['DR11 start'],
   chargen: true,
-  desc: 'Your signing bonus… isn’t. Whatever you spend from it will instead be a loan, subject to the rules in Loans and Credit Debt. Your starting world will not necessarily have enough available credits to pay back your loan or even the interest from unlocking the first new world, but Missions can help cover that. If this is taken, all Captures will be valued at 80 % of their list price, instead of the base 60 %.',
+  desc: `Your signing bonus… isn’t. Whatever you spend from it will instead be a loan, subject to the rules in Loans and Credit Debt. Your starting world will not necessarily have enough available credits to pay back your loan or even the interest, but Missions and Invasion PvP can help cover that. If this is taken, all Captures will be valued at 80% of their list price, instead of the base 60%.
+  <p>Budgets below 500, from a Danger Rating of 6 or below, will experience an effective increase to 500 using the Loan rules, while budgets above 500 will be overcapped until you’ve paid enough of the principal and/or visited enough new worlds to fall beneath the cap.</p>
+  <p>Note that the budget-based caps on Substitute, Yoink, and other options will follow the original budgets for each Danger Rating and intensity.</p>
+  `,
 })
 
 intensity.push({

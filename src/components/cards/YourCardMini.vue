@@ -73,7 +73,7 @@ const char = computed(() => allCharsObject.value[startingOrigin.value.uid] || {}
 if (!startingOrigin.value.sex)
   startingOrigin.value.sex = char.value.b ? (char.value.b?.includes('F') ? 'F' : 'M') : 'M'
 
-watch(char, () => startingOrigin.value.sex = char.value.b?.includes('F') ? 'F' : 'M')
+watch(char, () => char.value.b ? startingOrigin.value.sex = char.value.b.includes('F') ? 'F' : 'M' : null)
 
 watch(image, () => {
   if (image.value.startsWith('https://i.imgur.com/') || /.*\.imagebam\.com.*/.test(image.value))

@@ -18,6 +18,7 @@ export const [showSmartMenu, toggleSmartMenu] = useToggle(false)
 export const [showSearchSettings, toggleSearchSetting] = useToggle(false)
 export const [showPerksManager, togglePerksManager] = useToggle(false)
 export const [showCodeEditor, toggleCodeEditor] = useToggle(false)
+export const [showImpExpChars, toggleImpExpChars] = useToggle(false)
 
 export const [showAddFic, toggleAddFic] = useToggle(false)
 export const currentFic = ref({})
@@ -27,6 +28,9 @@ export const userCharactersShown = ref(false)
 export const showSaveLoad = ref(false)
 export const showShare = ref(false)
 export const isBuildImage = ref(false)
+
+export const blackWhite = useStorage('blackWhite', false)
+export const blackWhiteDisabled = useStorage('blackWhiteDisabled', false)
 
 export const promoteShown = useStorage('pr', false)
 

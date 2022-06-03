@@ -70,7 +70,7 @@
           @deletePerk="(el: any) => chooseBinding(el, el)"
         />
         <div v-if="!binding.length">
-          <router-link :to="{path: '/binding', hash:'#No Bindings'}">
+          <router-link :to="{path: '/bindings/bindings', hash:'#No Bindings'}">
             <span class="text-blue-500">No Bindings</span>
           </router-link>
         </div>

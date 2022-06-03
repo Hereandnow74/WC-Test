@@ -693,7 +693,7 @@ DLCbindings.push({
   You are no longer limited to a single Binding. You may now purchase an additional Binding and expansions. You must still spend the credits as normal. This perk may be purchased multiple times. Its price will increase by 1 ticket each time. You are able to decide what purchased binding effects, including mental, are applied to any or all of your retinue. For example, you could Bind someone with the Shroud, then use Third-Generation Symbiote to share access to the Symbiote’s bio-armor as well. 
   `,
   needed: 1,
-  whitelist: ['Company Stamp', 'Tempest Jewelry', 'Ritual Circle', 'Alterzelu Symbiote', 'Shroud of Power'],
+  whitelist: ['Company Stamp', 'Tempest Jewelry', 'Ritual Circle', 'Alterzelu Symbiote', 'Shroud of Power', 'Hypnosis App', 'Tantric Arts'],
 })
 
 DLCbindings.push({

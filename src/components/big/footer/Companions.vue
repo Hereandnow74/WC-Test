@@ -220,22 +220,22 @@ watch([companionsDataSorted, companionImages, currentPage, waifuList], () => {
 
 function sellCompanion(uid: number) {
   const cmp = companions.value[findIndex(companions.value, { uid })]
-  let price = 0
-  if (underLoan.value && cmp.tier !== 11) {
-    price = Math.round(CHAR_COSTS[cmp.tier] * 0.2)
-    const half = Math.round(price / 2)
-    if (half <= loan.value.owed) {
-      loan.value.owed -= half
-      price -= half
-      trHistory.value.push(`Sold ${cmp.name} +${half}`)
-    }
-    else {
-      price -= loan.value.owed
-      trHistory.value.push(`Sold ${cmp.name} +${loan.value.owed}`)
-      loan.value.owed = 0
-    }
-    cmp.soldPrice = price
-  }
+  // let price = 0
+  // if (underLoan.value && cmp.tier !== 11) {
+  //   price = Math.round(CHAR_COSTS[cmp.tier] * 0.2)
+  //   const half = Math.round(price / 2)
+  //   if (half <= loan.value.owed) {
+  //     loan.value.owed -= half
+  //     price -= half
+  //     trHistory.value.push(`Sold ${cmp.name} +${half}`)
+  //   }
+  //   else {
+  //     price -= loan.value.owed
+  //     trHistory.value.push(`Sold ${cmp.name} +${loan.value.owed}`)
+  //     loan.value.owed = 0
+  //   }
+  //   cmp.soldPrice = price
+  // }
 
   cmp.sold = true
 }

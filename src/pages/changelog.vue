@@ -5,6 +5,19 @@
     </h2>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
+        31 May 2022
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>~110 new user submitted characters, new missions</li>
+        <li>New CSR and Loan rules</li>
+        <li>Import / Export for local characters (gear icon on characters page, near results)</li>
+        <li>Blacklist of worlds now can be turned off or changed to Whitelist</li>
+        <li>10 new user submitted worlds and some conditions</li>
+        <li>Bugfixes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
         28 May 2022
       </h3>
       <ul class="list-decimal list-inside">

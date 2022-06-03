@@ -1082,7 +1082,7 @@
   {
     "rating": 5,
     "q": true,
-    "worldName": "Princess Connect! Re-Dive",
+    "worldName": "Princess Connect! Re:Dive",
     "additional": "Rima’s forms are switched compared to canon. The girl is her normal form and the llama an at-will transformation. All characters benefit from their Legend of Astrum abilities and statistics even beyond the game’s virtual world. Pecorine, Kyaru, Kokkoro, Rei, Hiyori, and Yui are freely capable of assuming their Princess Forms without outside assistance."
   },
   {
@@ -1230,6 +1230,10 @@
         "name": "Kaguya or Otsutsuki active",
         "rating": 7,
         "a": "c"
+      },
+      {
+        "name": "Third Shinobi World War",
+        "rating": 6
       }
     ]
   },
@@ -1300,6 +1304,14 @@
         "name": "Hueco Mundo",
         "rating": 8,
         "a": "c"
+      },
+      {
+        "name": "Human World",
+        "rating": 6
+      },
+      {
+        "name": "Soul Society",
+        "rating": 7
       }
     ]
   },
@@ -1512,6 +1524,22 @@
       {
         "name": "During the Events of WoW 'Shadowlands'",
         "rating": 9
+      },
+      {
+        "name": "During the Events of Third War",
+        "rating": 8
+      },
+      {
+        "name": "During the Events of the Second War",
+        "rating": 7
+      },
+      {
+        "name": "During the Events of the First War",
+        "rating": 7
+      },
+      {
+        "name": "During the Events of the War of the Ancients",
+        "rating": 8
       }
     ],
     "image": "https://leviathyn.com/wp-content/uploads/2014/11/rsz_warcraft-warcraft-actor-ben-foster-reveals-major-character-magic-and-guns-2-1050x429.jpg"
@@ -1807,6 +1835,14 @@
       {
         "name": "Spectacular Earth-26496 (NYC)",
         "rating": 5
+      },
+      {
+        "name": "Secret Wars(2015)",
+        "rating": 10
+      },
+      {
+        "name": "Cinematic Universe w/ TV shows and Mutants (No TVA)",
+        "rating": 7
       }
     ],
     "image": "https://sc02.alicdn.com/kf/HTB15Y38doo09KJjSZFDq6z9npXau/200664728/HTB15Y38doo09KJjSZFDq6z9npXau.jpg"
@@ -1899,6 +1935,10 @@
         "rating": 9,
         "name": "Injustice",
         "a": "c"
+      },
+      {
+        "name": "Arrowverse",
+        "rating": 6
       }
     ],
     "image": "https://comicvine.gamespot.com/a/uploads/original/11133/111337338/6666703-uyakpr2hud611.jpg"
@@ -2024,6 +2064,10 @@
         "name": "New World (multiple active guilds)",
         "rating": 9,
         "a": "c"
+      },
+      {
+        "name": "New World (No \"Players\" active)",
+        "rating": 6
       }
     ]
   },
@@ -2084,6 +2128,10 @@
         "name": "Persona 4",
         "rating": 3,
         "a": "c"
+      },
+      {
+        "name": "Devil Survivor",
+        "rating": 8
       }
     ],
     "image": "https://ricedigital.co.uk/wp-content/uploads/2017/11/SMT-Demon-poll.jpg"
@@ -2313,5 +2361,31 @@
     "worldName": "Cthulhu Mythos",
     "additional": "This entry represents both original works and modern adaptations such as Demonbane or Haiyore! Nyaruko-san. All such published works are true for T11s from the mythos, just not necessarily at the same time.",
     "image": "https://pbs.twimg.com/media/EVRjnfcWoAAVeUS.jpg"
+  },
+  {
+    "worldName": "Harry Potter",
+    "rating": 3,
+    "image": "https://i.imgur.com/MMoYDljl.jpg",
+    "condition": [
+      {
+        "rating": 3,
+        "name": "Books 1-3",
+        "a": "c"
+      },
+      {
+        "name": "Book 4",
+        "rating": 4,
+        "a": "c"
+      },
+      {
+        "name": "Books 5-7",
+        "rating": 5,
+        "a": "c"
+      },
+      {
+        "rating": 5,
+        "name": "1971 (Open Warfare)"
+      }
+    ]
   }
 ]

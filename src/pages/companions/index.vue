@@ -179,7 +179,7 @@
         </div>
       </div>
     </div>
-    <div ref="companionsList" class="overflow-y-auto w-full relative">
+    <div ref="companionsList" class="overflow-y-auto w-full relative scrollbar">
       <div
         ref="waifuList"
         class="relative grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5
@@ -221,7 +221,7 @@ import { every, intersection, some, shuffle } from 'lodash-es'
 import { DBCharacter } from 'global'
 import { useStore } from '~/store/store'
 
-import { toggleShowAddCharacter, showAddCharacter, toggleShowFilterTags, showFilterTags, tagToggles, threeToggle, toggleShowReport, showReport, showSearchSettings, toggleSearchSetting } from '~/logic'
+import { toggleShowAddCharacter, showAddCharacter, toggleShowFilterTags, showFilterTags, tagToggles, threeToggle, toggleShowReport, showReport, showSearchSettings, toggleSearchSetting, blackWhite, blackWhiteDisabled } from '~/logic'
 import { waifuTags, useAllChars } from '~/data/constants'
 import { usePlayStore } from '~/store/play'
 import { useSearchSettings } from '~/logic/searchSettings'
@@ -386,7 +386,7 @@ const secondFilter = computed(() => {
   const tagsI = (x: DBCharacter) => intersection(x.b, tagsInclude.value).length === tagsInclude.value.length
   const tagsE = (x: DBCharacter) => !some(x.b, x => tagsExclude.value.includes(x))
   const tier = (x: DBCharacter) => x.t >= minTier.value && x.t <= maxTier.value
-  const blocked = (x: DBCharacter) => !blockedSet.value.has(x.w)
+  const blocked = (x: DBCharacter) => blackWhite.value ? blockedSet.value.has(x.w) : !blockedSet.value.has(x.w)
   const localF = (x: DBCharacter) => local.value === 1 ? x.type === 'local' : x.type !== 'local'
 
   const allFilters = [] as ((arg0: DBCharacter) => boolean)[]
@@ -397,7 +397,7 @@ const secondFilter = computed(() => {
     allFilters.push(tagsE)
   if (minTier.value !== 1 || maxTier.value !== 11)
     allFilters.push(tier)
-  if (blockedSet.value.size)
+  if (blockedSet.value.size && !blackWhiteDisabled.value)
     allFilters.push(blocked)
   if (local.value !== 0)
     allFilters.push(localF)

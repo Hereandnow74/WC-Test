@@ -72,7 +72,7 @@ export async function randomChar(withImg: boolean, maxCost = 0, minCost = 0, gen
 export function randomWorld(previous = 0, minus = 11, plus = 11, n = 1, doubles = [] as DBWorld[]) {
   const worlds = allWorldsNoCondition.value.filter((x) => {
     const diff = x.rating - previous
-    return diff >= -minus && diff <= plus && findIndex(doubles, { worldName: x.worldName, condition: x.condition })
+    return diff >= -minus && diff <= plus && findIndex(doubles, { worldName: x.worldName, condition: x.condition }) === -1
   })
   return sampleSize(worlds, n)
 }

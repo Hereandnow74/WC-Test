@@ -16,16 +16,23 @@
       </div>
       <div v-if="underLoan" class="flex gap-2">
         <NumberInput v-model="payAmount" label="Return amount" class="whitespace-nowrap" :min="1" :max="loan.owed" />
-        <Button label="Pay for a loan" size="Small" @click="payLoan" />
-        <Button label="Return all" size="Small" @click="payAll" />
+        <Button label="Pay for a loan" bg-color="bg-amber-500" size="Small" @click="payLoan" />
+        <Button label="Return all" bg-color="bg-amber-500" size="Small" @click="payAll" />
       </div>
-      <div>Will pay after next World jump <span class="text-blue-400">{{ Math.round(loan.owed * 0.1) }}</span></div>
+      <div class="flex gap-1">
+        <div>Will pay after 30 day time <span class="text-blue-400">{{ Math.ceil(loan.owed * 0.14) }}</span>(14%)</div>
+        <Button label="Pay for 30 days" size="Small" bg-color="bg-red-500" @click="payMonthDue" />
+      </div>
       <div v-if="trHistory.length">
-        <h3 class="text-lg le">
+        <h3 class="text-lg flex items-center gap-1">
           Transaction History
+          <fluent:delete-20-filled
+            class="hover:text-red-500 cursor-pointer"
+            @click="clearHistory"
+          />
         </h3>
         <div class="text-green-300">
-          <div v-for="h in trHistory" :key="h">
+          <div v-for="h in trHistory" :key="h" :class="/Took|charged/.test(h) ? 'text-red-300' : 'text-green-300'">
             {{ h }}
           </div>
         </div>
@@ -50,6 +57,7 @@ function takeLoan() {
   if (loanAmount.value <= creditLimit.value - loan.value.owed) {
     loan.value.gained += loanAmount.value
     loan.value.owed += loanAmount.value
+    trHistory.value.push(`Took a loan for ${loanAmount.value} credits.`)
   }
   loanAmount.value = 5
 }
@@ -60,15 +68,31 @@ function takeMaxLoan() {
 }
 
 function payLoan() {
-  if (budget.value >= payAmount.value) {
+  if (payAmount.value > 0 && budget.value >= payAmount.value) {
     fee.value += payAmount.value
     loan.value.owed -= payAmount.value
+    trHistory.value.push(`Payed for the loan ${payAmount.value} credits.`)
   }
 }
 
 function payAll() {
   payAmount.value = Math.min(budget.value, loan.value.owed)
   payLoan()
+}
+
+function payMonthDue() {
+  const due = Math.ceil(loan.value.owed * 0.14)
+  if (due > budget.value) {
+    const tookLoan = Math.min(creditLimit.value - loan.value.owed, due - budget.value)
+    loan.value.owed += tookLoan
+    loan.value.gained += tookLoan
+  }
+  fee.value += due
+  trHistory.value.push(`${due} credits of interest charged.`)
+}
+
+function clearHistory() {
+  trHistory.value = []
 }
 
 </script>

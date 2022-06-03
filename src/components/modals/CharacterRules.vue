@@ -34,9 +34,3 @@
     </div>
   </Modal>
 </template>
-
-<style>
-.linkList a {
-  @apply text-teal-700 dark:text-teal-400 hover:(text-teal-500 underline) mr-2 inline-block;
-}
-</style>

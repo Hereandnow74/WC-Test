@@ -137,7 +137,7 @@ const powerSwapDiscount = computed(() => {
   if (ps) {
     const yourPS = find(ps.complex, el => !!el.hr)
     if (yourPS) {
-      discount.value = CHAR_COSTS[yourPS.newTier] - (CHAR_COSTS[startingOrigin.value.tier || 0])
+      discount.value = CHAR_COSTS[yourPS.newTier]
       discount.archetype = types[yourPS.hr] || ''
     }
   }
@@ -222,11 +222,13 @@ const fullStartingBudget = computed(() => {
   return csr.value ? Math.round((bd + intensityFlat) * (intenMultiplier)) : Math.round((bd + intensityFlat) * (1 + intenMultiplier))
 })
 
-const creditLimit = computed(() =>
-  Math.max(500,
-    WORLD_RATINGS[startingWorld.value.rating - 1].budget,
-    jumpChain.value.reduce((a, x) => Math.max(a, WORLD_RATINGS[x.rating - 1].budget), 0),
-  ))
+// const creditLimit = computed(() =>
+//   Math.max(500,
+//     WORLD_RATINGS[startingWorld.value.rating - 1].budget,
+//     jumpChain.value.reduce((a, x) => Math.max(a, WORLD_RATINGS[x.rating - 1].budget), 0),
+//   ))
+
+const creditLimit = computed(() => 500 + jumpChain.value.length * 100)
 
 const budget = computed(() => {
   const bd = fullStartingBudget.value - startingOrigin.value.cost - pvpPerksCost.value
@@ -237,10 +239,11 @@ const budget = computed(() => {
       + usedHeritageDiscount.value + talentsDiscount.value + defensesDiscount.value
       + defenseRetinueDiscount.value + specificModsCost.value + budgetMods.value.sell11 * 2000
 
-  // CSR implementation 2.0
+  // CSR implementation 3.0
   if (flags.value.chargen && csr.value) {
     if (bd + loan.value.gained < 0) {
-      loan.value.gained = Math.min(Math.abs(bd), creditLimit.value)
+      const budget = Math.max(WORLD_RATINGS[startingWorld.value.rating - 1].budget, 500)
+      loan.value.gained = Math.min(Math.abs(bd), budget)
       loan.value.owed = loan.value.gained
     }
   }
@@ -325,14 +328,14 @@ watch(startingWorld, () => {
   currentWorld.value = startingWorld.value
 })
 
-watch(() => jumpChain.value.length, () => {
-  if (jumpChain.value.length > 0) {
-    if (fee.value)
-      fee.value += Math.round(loan.value.owed * 0.1)
-    else
-      fee.value = Math.round(loan.value.owed * 0.1)
-  }
-})
+// watch(() => jumpChain.value.length, () => {
+//   if (jumpChain.value.length > 0) {
+//     if (fee.value)
+//       fee.value += Math.round(loan.value.owed * 0.1)
+//     else
+//       fee.value = Math.round(loan.value.owed * 0.1)
+//   }
+// })
 
 // watch(budget, () => {
 //   if (csr.value && budget.value < 0) {

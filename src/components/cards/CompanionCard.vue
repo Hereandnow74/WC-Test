@@ -263,24 +263,24 @@ function buyCompanion() {
 
 function captureCompanion() {
   const char = charData.value
-  let price = 0
+  // let price = 0
   const sex = intersection(char.tags, ['F', 'M', 'O'])[0] || 'F'
   const res = { uid: char.uid, name: char.name, world: char.world, sex, tier: char.tier, priceTier: char.tier, method: 'capture' }
-  if (underLoan.value && char.tier !== 11) {
-    price = Math.ceil(CHAR_COSTS[char.tier] * captureKoeff.value)
-    const half = Math.round(price / 2)
-    if (half <= loan.value.owed) {
-      loan.value.owed -= half
-      price -= half
-      trHistory.value.push(`Captured ${char.name} +${half}`)
-    }
-    else {
-      price -= loan.value.owed
-      trHistory.value.push(`Captured ${char.name} +${loan.value.owed}`)
-      loan.value.owed = 0
-    }
-    res.price = price
-  }
+  // if (underLoan.value && char.tier !== 11) {
+  //   price = Math.ceil(CHAR_COSTS[char.tier] * captureKoeff.value)
+  //   const half = Math.round(price / 2)
+  //   if (half <= loan.value.owed) {
+  //     loan.value.owed -= half
+  //     price -= half
+  //     trHistory.value.push(`Captured ${char.name} +${half}`)
+  //   }
+  //   else {
+  //     price -= loan.value.owed
+  //     trHistory.value.push(`Captured ${char.name} +${loan.value.owed}`)
+  //     loan.value.owed = 0
+  //   }
+  //   res.price = price
+  // }
 
   companions.value.push(res)
 }
