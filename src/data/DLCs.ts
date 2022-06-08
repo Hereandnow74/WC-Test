@@ -7,6 +7,7 @@ DLCgenericPerks.push({
   uid: 'yqayv',
   title: 'Big Entrance',
   dlc: 'KatzSmile',
+  category: 'Generic',
   image: 'https://i.ibb.co/P1d7W9G/Big-Entrance.jpg',
   special: 'Must be repurchased for each use.',
   complex: 'target',
@@ -20,6 +21,7 @@ DLCgenericPerks.push({
 DLCgenericPerks.push({
   uid: 'K7CyL',
   title: 'Grail Knowledge',
+  category: 'Generic',
   dlc: 'KatzSmile',
   image: 'https://i.ibb.co/rdzSLf2/Grail-Knowledge.jpg',
   complex: 'target',
@@ -32,6 +34,7 @@ DLCgenericPerks.push({
 DLCgenericPerks.push({
   uid: 'fJRGz',
   dlc: 'DLC by Despin',
+  category: 'Generic',
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'HUD',
   image: 'https://i.ibb.co/B4X2RBm/HUD.jpg',
@@ -46,6 +49,7 @@ DLCgenericPerks.push({
 DLCgenericPerks.push({
   uid: 'S84Eb',
   dlc: 'DLC by Despin',
+  category: 'Generic',
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'Toggle',
   image: 'https://i.ibb.co/tmwDN2Q/Toggle.jpg',
@@ -63,6 +67,7 @@ DLCgenericPerks.push({
 DLCgenericPerks.push({
   uid: 't7wLC',
   dlc: 'VermontCheese',
+  category: 'Generic',
   title: 'Anthropize',
   image: 'https://i.ibb.co/dmjb47Z/Anthropize.jpg',
   cost: 10,
@@ -75,6 +80,7 @@ DLCgenericPerks.push({
 DLCgenericPerks.push({
   uid: 'GbO2V',
   dlc: 'CelestialDragon DLC',
+  category: 'Generic',
   dlclink: 'https://docs.google.com/spreadsheets/d/1FM6PNbDEyZV4T4rVLWjPYBc3O0jmmwd1obkFD7jLDt8/edit?usp=sharing',
   title: 'Does it come in Black',
   image: 'https://i.ibb.co/jrw1kCG/Does-It-Come-In-Black.jpg',
@@ -91,6 +97,7 @@ DLCgenericPerks.push({
 DLCgenericPerks.push({
   uid: 'EsNrD',
   dlc: 'DLC by Despin',
+  category: 'Generic',
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'Native Merger',
   image: 'https://i.ibb.co/KLWT9jH/Native-Merger.jpg',
@@ -110,6 +117,7 @@ DLCgenericPerks.push({
 DLCgenericPerks.push({
   uid: 'bq0Nc',
   dlc: 'DLC by Despin',
+  category: 'Generic',
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'Open Rolls',
   image: 'https://i.ibb.co/Gt62FNJ/Open-Rolls.jpg',
@@ -121,6 +129,7 @@ DLCgenericPerks.push({
 DLCgenericPerks.push({
   uid: 'k9k4T',
   dlc: 'KatzSmile',
+  category: 'Generic',
   title: 'Worlds Apart',
   image: 'https://i.ibb.co/5BpzVhw/Worlds-Apart.jpg',
   requires: '(Any Yoinked companion)',
@@ -137,6 +146,7 @@ export const DLCperks: DLCPerk[] = []
 DLCperks.push({
   uid: 'GsCat',
   dlc: 'CelestialDragon DLC',
+  category: 'Misc Perk',
   dlclink: 'https://docs.google.com/spreadsheets/d/1FM6PNbDEyZV4T4rVLWjPYBc3O0jmmwd1obkFD7jLDt8/edit?usp=sharing',
   title: 'Returning Home',
   image: 'https://i.ibb.co/prHZrjj/Returning-Home.jpg',
@@ -149,6 +159,7 @@ DLCperks.push({
   uid: 'jcBEK',
   dlc: 'BenFang322',
   title: 'Appearance Change',
+  category: 'Misc Perk',
   image: 'https://i.ibb.co/1zKj6dB/Appearance-Change.jpg',
   cost: 1,
   desc: `
@@ -161,6 +172,7 @@ DLCperks.push({
   uid: 'V7siL',
   dlc: 'windshadow21',
   title: 'Normalcy',
+  category: 'Misc Perk',
   image: 'https://i.ibb.co/crcCGfs/Normalcy.jpg',
   cost: 10,
   desc: `
@@ -172,6 +184,7 @@ DLCperks.push({
 DLCperks.push({
   uid: 'te1Zv',
   dlc: 'DLC by Gforce1000',
+  category: 'Misc Perk',
   dlclink: 'https://imgur.com/gallery/suU1RXx',
   title: 'Time-Savers',
   image: 'https://i.ibb.co/s6b25Kb/Time-Savers.jpg',
@@ -184,19 +197,20 @@ DLCperks.push({
 DLCperks.push({
   uid: '3EnoU',
   dlc: 'DLC by Despin',
+  category: 'Misc Perk',
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'I Want Out',
   image: 'https://i.ibb.co/02cZWg7/IWantOut.jpg',
   cost: 20,
   desc: `
   A portal opens to a new world of your choice. The portal is one-way only, and will last no more than two minutes or until you and all of your retinue have passed through, whichever is shorter. If any of your retinue stay behind, this perk will not help you retrieve them. 
-  <p>If you have a Loan, use of this perk triggers an interest payment.</p>
   `,
 })
 
 DLCperks.push({
   uid: 'tG4yC',
   dlc: 'DLC by Despin',
+  category: 'Misc Perk',
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'Trajectory. Agreement.',
   image: 'https://i.ibb.co/gF2MNTH/Trajectory-Agreement.jpg',
@@ -207,21 +221,10 @@ DLCperks.push({
   `,
 })
 
-// DLCperks.push({
-//   uid: 'U9oPG',
-//   dlc: 'DLC by Despin',
-//   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
-//   title: 'Express Warranty',
-//   cost: 1000,
-//   desc: `
-//   Any retinue member who dies on you will be re-delivered to you in 5 minutes. This perk will not help if you die, even if you took the Substitute or Possess origins.
-//   `,
-//   whitelist: ['Warranty Plan'],
-// })
-
 DLCperks.push({
   uid: 'sEFxf',
   dlc: 'DLC by Merior',
+  category: 'Misc Perk',
   dlclink: 'https://docs.google.com/document/d/1j9emHb4IWvOTnp13RASTAuINAFuKDMSSQyQ-7ta9sjA/edit#',
   title: 'Gone And Forgotten',
   image: 'https://i.ibb.co/561Q7WM/Gone-And-Forgotten.jpg',
@@ -234,6 +237,7 @@ DLCperks.push({
 DLCperks.push({
   uid: 'eIljw',
   dlc: 'DLC by Merior',
+  category: 'Misc Perk',
   dlclink: 'https://docs.google.com/document/d/1j9emHb4IWvOTnp13RASTAuINAFuKDMSSQyQ-7ta9sjA/edit#',
   title: 'Pavlov\'s Bell',
   image: 'https://i.ibb.co/St7W2s8/Pavlov-SBell.jpg',
@@ -246,6 +250,7 @@ DLCperks.push({
 DLCperks.push({
   uid: 'bqgqk',
   dlc: 'Mortaegus’s Mod',
+  category: 'Misc Perk',
   dlclink: 'https://forum.questionablequesting.com/threads/r34-economy-cyoa-thread.11289/page-568#post-3866836',
   title: 'Patron Income',
   image: 'https://i.ibb.co/LPWzYnn/Patron-Income.jpg',
@@ -259,6 +264,7 @@ DLCperks.push({
 DLCperks.push({
   uid: 'zB0Rf',
   dlc: 'Mortaegus’s Mod',
+  category: 'Misc Perk',
   dlclink: 'https://forum.questionablequesting.com/threads/r34-economy-cyoa-thread.11289/page-568#post-3866836',
   title: 'Abandoned Assets',
   image: 'https://i.ibb.co/CtDmMtR/Abandoned-Assets.jpg',
@@ -274,6 +280,7 @@ DLCperks.push({
 DLCperks.push({
   uid: 'kHybZ',
   dlc: 'Bluesnowman',
+  category: 'Misc Perk',
   title: 'Memorabilia',
   image: 'https://i.ibb.co/0GX1NqX/Memorabilia.jpg',
   cost: 5,
@@ -288,6 +295,7 @@ DLCperks.push({
 DLCperks.push({
   uid: 'opART',
   dlc: 'Bluesnowman',
+  category: 'Misc Perk',
   title: 'Let Them Know',
   image: 'https://i.ibb.co/p4x5Mnn/Let-Them-Know.jpg',
   cost: 10,
@@ -298,8 +306,9 @@ DLCperks.push({
 })
 
 DLCperks.push({
-  uid: 'opART',
+  uid: 'JhATq',
   dlc: 'DLC by Despin',
+  category: 'Misc Perk',
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'Amazon-free Warranty',
   image: 'https://i.ibb.co/yn9FF3j/Amazon-Free-Warranty.jpg',
@@ -314,6 +323,7 @@ DLCperks.push({
 DLCperks.push({
   uid: 'nsoJf',
   dlc: 'Sleepy Fluffball™',
+  category: 'Misc Perk',
   title: 'Designer Babies',
   image: '',
   cost: 8,
@@ -328,6 +338,7 @@ DLCperks.push({
   uid: 'KGkrd',
   dlc: 'Ruaron',
   title: 'Knowledge Base Upload',
+  category: 'Misc Perk',
   image: '',
   cost: 5,
   costVariants: [5, 10, 20],

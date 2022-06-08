@@ -14,6 +14,7 @@
     <ConfirmDialog class="z-20" />
     <InfoDialog class="z-20" />
     <CustomDialog class="z-20" />
+    <Intro v-if="showIntro" @click="showIntro = false" />
 
     <component :is="PromoteDialog" v-if="(totalActive > 60 * 60 && !promoteShown) || isSupport" />
     <component :is="SaveLoad" v-if="showSaveLoad" class="z-20" @click="showSaveLoad = !showSaveLoad" />
@@ -28,10 +29,11 @@
 
 <script lang="ts" setup>
 import { useStore } from './store/store'
+import { VERSION } from './data/constants'
 import {
   isSupport, showSaveLoad, showShare, showSideMenu, showAddPerk, toggleShowAddPerk,
   showAddMission, toggleShowAddMission, promoteShown, toggleShowSettings, showSettings, sendStats,
-  buildImage, copyText, clearBuild, isBuildImage, toggleAddFic, showAddFic, currentFic, toggleDark, randomString, sendCount,
+  buildImage, copyText, clearBuild, isBuildImage, toggleAddFic, showAddFic, currentFic, toggleDark, randomString, sendCount, showIntro,
 } from '~/logic'
 
 const { totalActive, settings, companions, startingWorld, allEffects, ridePerks, waifuPerks } = useStore()
@@ -43,6 +45,16 @@ const settingsComponent = computed(() => defineAsyncComponent(() => import('./co
 const PromoteDialog = computed(() => defineAsyncComponent(() => import('./components/modals/dialogs/PromoteDialog.vue')))
 const SaveLoad = computed(() => defineAsyncComponent(() => import('./components/modals/SaveLoad.vue')))
 const Share = computed(() => defineAsyncComponent(() => import('./components/modals/Share.vue')))
+
+const intro = window.localStorage.getItem('intro')
+if (!intro) {
+  showIntro.value = true
+  window.localStorage.setItem('intro', VERSION)
+}
+else {
+  if (intro !== VERSION)
+    showIntro.value = true
+}
 
 // Total activity counter
 let start = new Date()
@@ -195,5 +207,5 @@ function stats2() {
   })
 }
 
-someStats()
+// someStats()
 </script>

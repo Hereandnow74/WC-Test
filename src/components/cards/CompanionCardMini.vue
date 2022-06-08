@@ -5,8 +5,8 @@
   >
     <div class="flex gap-2 w-full">
       <img
-        v-if="image && !settings.allImg"
-        :data-src="image"
+        v-if="fullChar.i && !settings.allImg"
+        :data-src="imageLink(fullChar.i, fullChar.u)"
         :alt="char.name"
         class="rounded object-cover max-h-[140px] max-w-[90px] object-top"
       >
@@ -96,6 +96,19 @@
           </span>
         </div>
 
+        <div class="flex flex-wrap gap-0.5 text-xs mb-0.5">
+          <span
+            v-for="tag in tags"
+            :key="tag.tag"
+            class="px-1 rounded-md cursor-pointer"
+            :class="tag.color"
+            :title="tag.desc"
+            :to="tag.tag === 'Perk' ? {path: '/talents/specific', hash: `#${waifusThatHasPerk[fullChar.u]}`} : ''"
+          >
+            {{ tag.tag }}
+          </span>
+        </div>
+
         <div v-if="!char.sold" class="flex gap-2 mt-auto justify-end">
           <Button
             v-if="char.method !== 'unbound' && settings.ableSell"
@@ -133,7 +146,8 @@
 
 <script lang="ts" setup>
 import type { PropType } from '@vue/runtime-core'
-import { CHAR_COSTS } from '~/data/constants'
+import { CHAR_COSTS, useAllChars, waifusThatHasPerk, waifuTags } from '~/data/constants'
+import { imageLink } from '~/logic'
 import { SavedChar } from '~/store/chargen'
 import { useStore } from '~/store/store'
 
@@ -141,10 +155,6 @@ const props = defineProps({
   char: {
     type: Object as PropType<SavedChar>,
     default: () => {},
-  },
-  image: {
-    type: String,
-    default: '',
   },
   editMode: {
     type: Boolean,
@@ -166,9 +176,16 @@ const methods = {
   you: 'It\'s you',
 }
 
-const { flags, settings, manualSellKf } = useStore()
-
 const emit = defineEmits(['sell', 'undo', 'free'])
+
+const { flags, settings, manualSellKf } = useStore()
+const { allCharsObject } = useAllChars()
+
+const fullChar = computed(() => allCharsObject.value[props.char.uid])
+
+const tags = computed(() => {
+  return fullChar.value.b.map(x => waifuTags[x] ? waifuTags[x] : { tag: x, color: 'bg-teal-600', desc: '' })
+})
 
 const talentsList = computed(() => {
   return props.perks.talents || []

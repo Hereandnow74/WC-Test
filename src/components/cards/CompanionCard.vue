@@ -173,10 +173,9 @@ const props = defineProps({
 })
 
 const {
-  flags, companions, localUserCharacters, companionsUIDs, captureKoeff, underLoan, favorites,
+  flags, companions, localUserCharacters, companionsUIDs, captureKoeff, favorites,
   fullStartingBudget, settings, favoritesObject, csr, baseBudget,
 } = useStore()
-const { loan, trHistory } = usePlayStore()
 
 const infoIcon = ref<EventTarget | null>(null)
 const editMenu = ref<EventTarget | null>(null)

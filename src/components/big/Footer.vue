@@ -35,6 +35,7 @@
         </span>
         <span
           class="absolute right-4 text-xl cursor-pointer hover:text-green-500"
+          :class="{'shake delay-100': showIntro}"
           @click="() => toggleFull()"
         >
           <ic:round-unfold-more />
@@ -78,7 +79,7 @@
 
 <script lang="ts" setup>
 import { useStore } from '~/store/store'
-import { activeTab, orientation, appMode, toggleAppMode, toggleSmartMenu, showSmartMenu } from '~/logic'
+import { activeTab, orientation, appMode, toggleAppMode, toggleSmartMenu, showSmartMenu, showIntro } from '~/logic'
 
 const tabs = ['Build', 'Retinue', 'Apps', 'Spendings', '']
 const tabIcons = ['bx:bx-spreadsheet', 'bi:people-fill', 'ion:apps-sharp', 'la:coins', 'fluent:wrench-16-filled']
@@ -102,19 +103,3 @@ const {
 const [visible, toggleFull] = useToggle()
 
 </script>
-
-<style>
-
-.slide-leave-active,
-.slide-enter-active {
-  @apply transition-transform;
-  @apply ease-in-out;
-  @apply duration-300;
-}
-.slide-enter-from {
-  transform: translateX(-100%);
-}
-.slide-leave-to {
-  transform: translateX(100%);
-}
-</style>

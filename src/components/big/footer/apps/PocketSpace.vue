@@ -79,7 +79,7 @@
             v-for="item in items.structures"
             :key="item.name"
             :item="item"
-            class="pocketItem"
+            class="mx-auto"
           />
         </div>
         <template v-if="items.rides.length && iWorldSize > 0">
@@ -96,7 +96,7 @@
               v-for="rideItem in items.rides"
               :key="rideItem.name"
               :item="rideItem"
-              class="pocketItem"
+              class="mx-auto"
             />
           </div>
         </template>
@@ -114,7 +114,7 @@
               v-for="stellarItem in items.stellar"
               :key="stellarItem.name"
               :item="stellarItem"
-              class="pocketItem"
+              class="mx-auto"
             />
           </div>
         </template>
@@ -334,9 +334,3 @@ const items = computed(() => {
 })
 
 </script>
-
-<style type="text/css">
-.pocketItem {
-  margin:0 auto;
-}
-</style>

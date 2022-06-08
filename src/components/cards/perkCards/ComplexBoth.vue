@@ -13,7 +13,7 @@
         <Toggle v-if="perk.title === 'Template Stacking I'" v-model="newPrice" class="ml-2" label="New Unstable TS price" />
         <div ref="charList" class="min-h-0 overflow-y-auto max-h-[75vh] scrollbar grid md:grid-cols-2 gap-2 p-1">
           <div
-            class="flex gap-2 w-full min-h-0 rounded bg-gray-300 dark:bg-gray-800 p-1"
+            class="flex gap-2 w-full rounded bg-gray-300 dark:bg-gray-800 p-1"
           >
             <img
               :data-src="startingOrigin.image || '/img/Contractor.jpg'"
@@ -50,7 +50,7 @@
           <div
             v-for="companion in companionsWithoutSold"
             :key="companion.uid"
-            class="flex gap-2 w-full min-h-0 rounded bg-gray-300 dark:bg-gray-800 p-1"
+            class="flex gap-2 w-full rounded bg-gray-300 dark:bg-gray-800 p-1"
           >
             <img
               v-if="allCharsObject[companion.uid] && !settings.allImg"
@@ -93,6 +93,7 @@
 </template>
 
 <script lang='ts' setup>
+import { clippingParents } from '@popperjs/core'
 import { useAllChars } from '~/data/constants'
 import { lazyLoadImg, imageLink } from '~/logic'
 import { useStore } from '~/store/store'
@@ -140,7 +141,7 @@ const fullCount = computed(() => {
 const individualCount = computed(() => Object.values(powers).map(x => x.length))
 
 const displayedCost = computed(() => {
-  return newPrice.value ? individualCount.value.reduce((sum, count) => sum += (count / 2) * (20 * 2 + (count - 1) * 20), 0) : fullCount.value * props.perk.cost
+  return newPrice.value ? individualCount.value.reduce((sum, count) => sum += 20 * ((Math.pow(2, count) - 1) / (2 - 1)), 0) : fullCount.value * props.perk.cost
 })
 
 function sendPerk() {

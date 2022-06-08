@@ -3,7 +3,7 @@ import { waifuTags } from '~/data/constants'
 export const isDark = useDark()
 export const toggleDark = useToggle(isDark)
 
-export const [showSideMenu, toggleSideMenu] = useToggle(true)
+export const showSideMenu = useStorage('showSideMenu', true)
 export const [showAddWorld, toggleShowAddWorld] = useToggle()
 export const [showAddCharacter, toggleShowAddCharacter] = useToggle()
 export const [showAddRide, toggleShowAddRide] = useToggle()
@@ -28,6 +28,7 @@ export const userCharactersShown = ref(false)
 export const showSaveLoad = ref(false)
 export const showShare = ref(false)
 export const isBuildImage = ref(false)
+export const showIntro = ref(false)
 
 export const blackWhite = useStorage('blackWhite', false)
 export const blackWhiteDisabled = useStorage('blackWhiteDisabled', false)

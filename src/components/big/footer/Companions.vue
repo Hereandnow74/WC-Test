@@ -63,7 +63,6 @@
           v-for="char in companionsDataChunks[currentPage]"
           :key="char.uid"
           :char="char"
-          :image="companionImages[char.uid]"
           :perks="companionsPerksList[char.uid] || {}"
           :edit-mode="isRetinueEdit"
           @sell="sellCompanion"
@@ -99,13 +98,13 @@
 
 <script lang="ts" setup>
 import { find, findIndex, isArray, chunk } from 'lodash-es'
-import { CHAR_COSTS, useAllChars } from '~/data/constants'
-import { lazyLoadImg, orientation, isRetinueEdit, imageLink, threeToggle } from '~/logic'
+// import { useAllChars } from '~/data/constants'
+import { lazyLoadImg, orientation, isRetinueEdit, threeToggle } from '~/logic'
 import { useStore } from '~/store/store'
 import { waifu_perks, DLCwaifu_perks } from '~/data/waifu_perks'
 import { confirmDialog } from '~/logic/dialog'
 
-const { companions, underLoan, loan, trHistory, talentPerks, genericWaifuPerks, waifuPerks } = useStore()
+const { companions, talentPerks, genericWaifuPerks, waifuPerks } = useStore()
 
 const specificPerksWithDLC = waifu_perks.concat(DLCwaifu_perks)
 
@@ -150,17 +149,17 @@ const companionsDataSorted = computed(() => {
 const companionsDataChunks = computed(() => chunk(companionsDataSorted.value, 50))
 watch(companionsDataChunks, () => { if (companionsDataChunks.value.length === 1) currentPage.value = 0 })
 
-const { allCharsObject } = useAllChars()
+// const { allCharsObject } = useAllChars()
 
-const companionImages = computed(() => {
-  const res = {} as Record<number, string>
-  companions.value.forEach((char) => {
-    const charInfo = allCharsObject.value[char.uid]
-    if (charInfo !== undefined)
-      res[char.uid] = imageLink(charInfo.i, charInfo.u)
-  })
-  return res
-})
+// const companionImages = computed(() => {
+//   const res = {} as Record<number, string>
+//   companions.value.forEach((char) => {
+//     const charInfo = allCharsObject.value[char.uid]
+//     if (charInfo !== undefined)
+//       res[char.uid] = imageLink(charInfo.i, charInfo.u)
+//   })
+//   return res
+// })
 
 // Code by KatzSmile
 const companionsPerksList = computed(() => {
@@ -212,7 +211,7 @@ const companionsPerksList = computed(() => {
   return charTalents
 })
 
-watch([companionsDataSorted, companionImages, currentPage, waifuList], () => {
+watch([companionsDataSorted, currentPage, waifuList], () => {
   lazyLoadImg(waifuList.value)
 }, { flush: 'post' })
 

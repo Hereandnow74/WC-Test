@@ -4,7 +4,11 @@
     class="fixed bottom-0 top-0 left-0 text-lg bg-gray-200 dark:bg-gray-700 flex flex-col gap-2 items-start
      pt-2 z-30 border-gray-400 overflow-x-hidden transition-width"
   >
-    <button class="icon-btn mx-2 !outline-none hover:text-red-400 self-end" @click="() => toggleSideMenu()">
+    <button
+      class="icon-btn mx-2 !outline-none hover:text-red-400 self-end"
+      :class="{'shake delay-75': showIntro}"
+      @click="() => showSideMenu = !showSideMenu"
+    >
       <tabler:arrow-bar-to-right v-if="showSideMenu" />
       <tabler:arrow-bar-to-left v-else />
     </button>
@@ -20,7 +24,12 @@
         <carbon-sun /><span>Light</span>
       </template>
     </button>
-    <div class="icon-text-btn mx-2 whitespace-nowrap" title="Settings" @click="() => toggleShowSettings()">
+    <div
+      class="icon-text-btn mx-2 whitespace-nowrap"
+      :class="{'shake delay-150': showIntro}"
+      title="Settings"
+      @click="() => toggleShowSettings()"
+    >
       <majesticons:cog-line />Settings
     </div>
     <h3 v-if="!showSideMenu" class="mx-2 opacity-50 border-b">
@@ -68,7 +77,7 @@
       Menu
     </h3>
     <div v-else class="bg-gray-600 dark:bg-gray-200 rounded my-2 w-5 h-[2px] mx-2"></div>
-    <router-link class="icon-text-btn mx-2" title="Rules" to="/">
+    <router-link class="icon-text-btn mx-2" :class="{'shake': showIntro}" title="Rules" to="/">
       <codicon:book />Rules
     </router-link>
     <router-link class="icon-text-btn mx-2" title="Missions" to="/missions">
@@ -100,8 +109,8 @@
 
 <script lang='ts' setup>
 import {
-  isDark, toggleDark, toggleSideMenu, showSideMenu, toggleShowAddPerk,
-  toggleSupport, promoteShown, toggleShowSettings,
+  isDark, toggleDark, showSideMenu, toggleShowAddPerk,
+  toggleSupport, promoteShown, toggleShowSettings, showIntro,
 } from '~/logic'
 
 const sidemenu = ref(null)

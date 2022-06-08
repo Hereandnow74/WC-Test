@@ -3,27 +3,27 @@
   <div class="lg:pl-0 flex flex-col gap-4 mt-4 mb-8" :class="[currentWidth]">
     <div class="hidden max-w-screen-lg max-w-screen-xl max-w-screen-sm max-w-screen-md"></div>
     <h1 id="rules" class="text-xl md:text-2xl font-bold text-center mt-4">
-      Waifu Catalog <span class="text-gray-600 dark:text-gray-400">(by SwiftRosenthal)</span> Interactive v0.7 <span class="text-gray-600 dark:text-gray-400">(by Om1cr0n)</span>
+      Waifu Catalog <span class="text-gray-600 dark:text-gray-400">(by SwiftRosenthal)</span> Interactive v{{ VERSION }} <span class="text-gray-600 dark:text-gray-400">(by Om1cr0n)</span>
     </h1>
-    <div class="flex flex-col mx-2 w-full">
+    <div class="flex flex-col px-2 w-full">
       <h3 class="text-xl font-semibold">
         Rules Index
       </h3>
       <router-link
         to="/help"
-        class="text-green-600 dark:text-green-400 hover:underline text-lg w-max"
+        class="text-green-600 dark:text-green-400 hover:underline text-lg"
       >
         Help
       </router-link>
       <router-link
         to="/everything"
-        class="text-green-600 dark:text-green-400 hover:underline text-lg w-max"
+        class="text-green-600 dark:text-green-400 hover:underline text-lg"
       >
         List of Everything
       </router-link>
       <router-link
         :to="{ path: '/', hash: '#pandora' }"
-        class="text-amber-600 dark:text-amber-400 hover:underline text-lg w-max"
+        class="text-amber-600 dark:text-amber-400 hover:underline text-lg"
       >
         Pandora’s Alternate Tier Ranks / Despin’s Tier Chart
       </router-link>
@@ -31,7 +31,7 @@
         v-for="rule in rulesList"
         :key="rule.title"
         :to="{ path: '/', hash: '#' + rule.title }"
-        class="text-blue-600 dark:text-blue-400 hover:underline sm:text-lg w-max"
+        class="text-blue-600 dark:text-blue-400 hover:underline sm:text-lg"
       >
         {{ rule.title2 }}
       </router-link>
@@ -171,7 +171,7 @@
 </template>
 
 <script lang="ts" setup>
-import { WORLD_RATINGS, rulesList, useWorlds } from '~/data/constants'
+import { WORLD_RATINGS, rulesList, useWorlds, VERSION } from '~/data/constants'
 import {
   startingDesc, pvpRules, effectiveTiers, captures, familiars, purchases, sales, waifu11,
   danger11, services, salary, helpDesk, loans, missions, refund, arranged, arrangedConditions,

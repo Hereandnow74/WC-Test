@@ -362,8 +362,8 @@ const settings = useStorage('settings', {
   hideDesc: false,
 })
 
-const collapsedDescs = useStorage('collapsedDescs', [])
-const collapsedDescsSet = computed(() => new Set(collapsedDescs.value))
+const collapsedDescs = useStorage<string[]>('collapsedDescs', [])
+const collapsedDescsSet = computed(() => new Set<string>(collapsedDescs.value))
 
 export const appName = ref('')
 

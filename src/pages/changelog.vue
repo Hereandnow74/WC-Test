@@ -5,6 +5,26 @@
     </h2>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
+        08 June 2022
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>~80 new user submitted characters, new missions</li>
+        <li>Intro for new users / first time opening the site</li>
+        <li>Bugfixes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
+        04 June 2022
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>~80 new user submitted characters, new missions</li>
+        <li>Character Tags in Retinue tab</li>
+        <li>Bugfixes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
         31 May 2022
       </h3>
       <ul class="list-decimal list-inside">

@@ -59,10 +59,3 @@ function chooseChallenge() {
 }
 
 </script>
-
-<style>
-.column-block {
-  break-inside: avoid-column;
-  page-break-inside: avoid;
-}
-</style>

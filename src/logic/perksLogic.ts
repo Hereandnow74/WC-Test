@@ -1,6 +1,6 @@
 import { find, findIndex, intersection, intersectionWith, isArray, isEmpty, isObject, mergeWith, remove, sample, uniqBy } from 'lodash-es'
-import { PerkFull } from 'global'
-import { Binding, shroudElements } from '~/data/binding'
+import { DLCPerk, PerkFull } from 'global'
+import { shroudElements } from '~/data/binding'
 import { Heritage } from '~/data/heritage'
 import { Intensity } from '~/data/intensity'
 import { WaifuPerk } from '~/data/waifu_perks'
@@ -51,11 +51,6 @@ export function addFreebies(freebies: object) {
           allForSave[key].value[ind].count += 1
         else
           allForSave[key].value[ind].count = 2
-        // What if cost already 0
-        // if (allForSave[key].value[ind].cost === 0)
-        //   allForSave[key].value[ind].count = 1
-        // else
-        //   allForSave[key].value[ind].cost = 0
       }
     })
   }
@@ -78,6 +73,33 @@ function deletePerk(perkList: Perk[], checkFunc: (arg: any) => boolean) {
     remove(allEffects.value, x => toDel.includes(x))
     deletePerk(perkList, checkFunc)
   }
+}
+
+export function newPerkAction(perk: DLCPerk, saveData: Perk) {
+  if (perkAlreadyBough(perk.title, saveData.cost)) {
+    deletePerkUniversal(perk.title)
+    logPerkDeletion(perk.title, saveData.cost)
+  }
+  else {
+    addPerkUniversal(saveData, perk.category)
+    logPerkAddition(perk.title, saveData.cost)
+  }
+}
+
+function perkAlreadyBough(title: string, cost: number) {
+  return false
+}
+function addPerkUniversal(saveData: Perk, category: string) {
+  return false
+}
+function deletePerkUniversal(title: string) {
+  return false
+}
+function logPerkDeletion(title: string, cost: number) {
+  return false
+}
+function logPerkAddition(title: string, cost: number) {
+  return false
 }
 
 export function pickSimplePerk(perk: PerkFull, saveData: Perk, isAvailable: (arg: any) => boolean, perks: Perk[]) {
@@ -401,13 +423,13 @@ export function chooseGenericPerk(perk: PerkFull, saveData: Perk) {
 
 // Specific Waifu Perks
 export function specificAvailable(perk: WaifuPerk): boolean {
-  if (isArray(perk.uid)) {
-    if (intersectionWith(companions.value, perk.uid, (a, b) => a.uid === b).length
-        || perk.uid.includes(startingOrigin.value.uid))
+  if (isArray(perk.waifuUID)) {
+    if (intersectionWith(companions.value, perk.waifuUID, (a, b) => a.uid === b).length
+        || perk.waifuUID.includes(startingOrigin.value.uid))
       return true
   }
   else {
-    if (findIndex(companions.value, { uid: perk.uid }) !== -1 || startingOrigin.value.uid === perk.uid)
+    if (findIndex(companions.value, { uid: perk.waifuUID }) !== -1 || startingOrigin.value.uid === perk.waifuUID)
       return true
   }
   if (startingOrigin.value.character) {

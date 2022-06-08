@@ -71,18 +71,20 @@ const topUsers = ref<[string, number][]>([])
 
 const nicknames = [
   'Definitely not Dio',
-  'Templar9999',
   'Despin',
-  'Bryce C.',
+  'Templar9999',
   'Cyrus',
+  'Bryce C.',
+  'Alex W.',
+  'TaiGambol',
   'BenFang322',
   'Jason C.',
   'Darin E.',
-  'Alex W.',
-  'TaiGambol',
+  'cameron ngo',
   'Cole',
   'KatzSmile',
   'Beatrix',
+  'Bobnewland',
 ]
 
 getUserChars().then(x => Object.entries(countBy(x, c => c.k))

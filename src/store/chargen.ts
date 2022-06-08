@@ -1,3 +1,5 @@
+import { Perk } from 'global'
+
 export interface World {
   worldName: string
   rating: number
@@ -14,20 +16,6 @@ export interface Character {
   cost?: number
   image: string
   image_nsfw?: string
-}
-
-export interface Perk {
-  title: string
-  cost: number
-  count?: number
-  tree?: string
-  addons?: any[]
-  variant?: string
-  target?: string[]
-  freebies?: object
-  refund?: number
-  anything?: string
-  complex?: any
 }
 
 export interface Origin {

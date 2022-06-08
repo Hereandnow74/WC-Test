@@ -7,7 +7,7 @@
     <div ref="specificList" class="grid 4xl:grid-cols-3 lg:grid-cols-2 gap-2 pb-8 justify-center">
       <SpecificPerkCard
         v-for="waifu in filterAvailable ? specificPerksFiltered : specificPerksWithDLC"
-        :key="waifu.title"
+        :key="waifu.uid"
         :waifu-perk="waifu"
         @changeModalImage="(img: string) => modalImage = img"
       />
@@ -46,10 +46,10 @@ const specificPerksWithDLC = computed(() => !settings.value.allChosenAuthors[0]
 
 const specificPerksFiltered = computed(() => specificPerksWithDLC.value.filter((perk) => {
   let res = false
-  if (isArray(perk.uid))
-    res = perk.uid.some(val => companionsUIDs.value[val])
+  if (isArray(perk.waifuUID))
+    res = perk.waifuUID.some(val => companionsUIDs.value[val])
   else
-    res = perk.uid ? companionsUIDs.value[perk.uid] : false
+    res = perk.waifuUID ? companionsUIDs.value[perk.waifuUID] : false
   return res
 }))
 

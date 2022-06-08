@@ -51,6 +51,7 @@ export const bindings: PerkFull[] = [
     uid: 'XnYV4',
     title: 'Company Stamp',
     cost: 0,
+    category: 'Binding',
     type: 'Stamp',
     image: 'https://i.ibb.co/DGdfyBv/Company-Stamp.jpg',
     desc: `
@@ -64,6 +65,7 @@ export const bindings: PerkFull[] = [
     uid: 'Cc10H',
     title: 'Empty Hand',
     cost: -20,
+    category: 'Binding',
     type: 'Stamp',
     image: 'https://i.ibb.co/mGVgnzh/Empty-Hand.jpg',
     whitelist: ['Company Stamp'],
@@ -74,6 +76,7 @@ export const bindings: PerkFull[] = [
     uid: 'JTCzI',
     title: 'Megapixel (Old)',
     cost: 150,
+    category: 'Binding',
     type: 'Stamp',
     image: 'https://i.ibb.co/t4Gs6by/Megapixel.jpg',
     whitelist: ['Company Stamp'],
@@ -84,6 +87,7 @@ export const bindings: PerkFull[] = [
     uid: 'GmTkb',
     title: 'Tempest Jewelry',
     cost: 10,
+    category: 'Binding',
     type: 'Jewelry',
     image: 'https://i.ibb.co/G2smr4v/Tempest-Jewelry.jpg',
     desc: `
@@ -98,6 +102,7 @@ export const bindings: PerkFull[] = [
     uid: 'lg88f',
     title: 'Basic Tempest Runes',
     cost: 10,
+    category: 'Binding',
     type: 'Jewelry',
     image: 'https://i.ibb.co/qdLDy87/Basic-Tempest-Runes.jpg',
     whitelist: ['Tempest Jewelry'],
@@ -109,6 +114,7 @@ export const bindings: PerkFull[] = [
     uid: '206E2',
     title: 'Advanced Tempest Runes (Body)',
     cost: 20,
+    category: 'Binding',
     type: 'Jewelry',
     image: 'https://i.ibb.co/0c2NBNy/Advanced-Tempest-Runes-Body.jpg',
     whitelist: ['Basic Tempest Runes'],
@@ -123,6 +129,7 @@ export const bindings: PerkFull[] = [
     uid: '238gu',
     title: 'Advanced Tempest Runes (Mind)',
     cost: 10,
+    category: 'Binding',
     type: 'Jewelry',
     image: 'https://i.ibb.co/Sn1gdqX/Advanced-Tempest-Runes-Mind.jpg',
     whitelist: ['Advanced Tempest Runes (Body)'],
@@ -132,6 +139,7 @@ export const bindings: PerkFull[] = [
     uid: 'IZswJ',
     title: 'Advanced Tempest Runes (Hybrid)',
     cost: 20,
+    category: 'Binding',
     type: 'Jewelry',
     image: 'https://i.ibb.co/F46qpPs/Advanced-Tempest-Runes-Hybrid.jpg',
     whitelist: ['Advanced Tempest Runes (Body)'],
@@ -141,6 +149,7 @@ export const bindings: PerkFull[] = [
     uid: 'B2ow8',
     title: 'Absolute Order',
     cost: 40,
+    category: 'Binding',
     type: 'Jewelry',
     image: 'https://i.ibb.co/6Zsdctg/Absolute-Order.jpg',
     whitelist: ['Tempest Jewelry'],
@@ -153,6 +162,7 @@ export const bindings: PerkFull[] = [
     uid: 'ubLJy',
     title: 'Additional Stock',
     cost: 5,
+    category: 'Binding',
     type: 'Jewelry',
     image: 'https://i.ibb.co/kKwy6VP/Additional-Stock.jpg',
     whitelist: ['Tempest Jewelry'],
@@ -163,6 +173,7 @@ export const bindings: PerkFull[] = [
     uid: '2HqiU',
     title: 'Jewels of Discord',
     cost: 25,
+    category: 'Binding',
     type: 'Jewelry',
     image: 'https://i.ibb.co/GJNrt3F/Jewels-Of-Discord-New.jpg',
     whitelist: ['Tempest Jewelry'],
@@ -174,6 +185,7 @@ export const bindings: PerkFull[] = [
     uid: 'zLn2I',
     title: 'Aggressive Initiations',
     cost: 20,
+    category: 'Binding',
     type: 'Jewelry',
     image: 'https://i.ibb.co/kq0j8hk/Aggressive-Initiations-New.jpg',
     whitelist: ['Tempest Jewelry'],
@@ -183,6 +195,7 @@ export const bindings: PerkFull[] = [
     uid: 'TW0hU',
     title: 'Ritual Circle',
     cost: 30,
+    category: 'Binding',
     type: 'Ritual',
     image: 'https://i.ibb.co/XzzNjjS/Ritual-Circle.jpg',
     desc: `
@@ -196,6 +209,7 @@ export const bindings: PerkFull[] = [
     uid: 'GPf4t',
     title: 'Greater Bandwidth',
     cost: 5,
+    category: 'Binding',
     type: 'Ritual',
     image: 'https://i.ibb.co/q0fGdjJ/Greater-Bandwidth.jpg',
     whitelist: ['Ritual Circle'],
@@ -208,6 +222,7 @@ export const bindings: PerkFull[] = [
     uid: 'vDavA',
     title: 'Transformation Circle I',
     cost: 20,
+    category: 'Binding',
     type: 'Ritual',
     image: 'https://i.ibb.co/RDFqzwh/Transformation-Circle-I.jpg',
     whitelist: ['Ritual Circle'],
@@ -219,6 +234,7 @@ export const bindings: PerkFull[] = [
     uid: 'tph0S',
     title: 'Transformation Circle II',
     cost: 20,
+    category: 'Binding',
     type: 'Ritual',
     image: 'https://i.ibb.co/Cv0SXrs/Transformation-Circle-II.jpg',
     whitelist: ['Transformation Circle I'],
@@ -228,6 +244,7 @@ export const bindings: PerkFull[] = [
     uid: 'Ymscz',
     title: 'Teleportation Circle',
     cost: 25,
+    category: 'Binding',
     type: 'Ritual',
     image: 'https://i.ibb.co/Jtsmm83/Teleportation-Circle.jpg',
     whitelist: ['Ritual Circle'],
@@ -239,6 +256,7 @@ export const bindings: PerkFull[] = [
     uid: 'YjzPm',
     title: 'Portal Runes',
     cost: 10,
+    category: 'Binding',
     type: 'Ritual',
     image: 'https://i.ibb.co/dGmjhNq/Portal-Runes.jpg',
     whitelist: ['Teleportation Circle'],
@@ -248,6 +266,7 @@ export const bindings: PerkFull[] = [
     uid: 'kQFGD',
     title: 'Geometric Magic',
     cost: 5,
+    category: 'Binding',
     type: 'Ritual',
     image: 'https://i.ibb.co/5rP8Dv1/Geometric-Magic-New.jpg',
     whitelist: ['Ritual Circle'],
@@ -257,6 +276,7 @@ export const bindings: PerkFull[] = [
     uid: 'y1WER',
     title: 'Destruction Circle',
     cost: 5,
+    category: 'Binding',
     type: 'Ritual',
     image: 'https://i.ibb.co/WzSsTvM/Destruction-Circle-New.jpg',
     whitelist: ['Ritual Circle'],
@@ -266,6 +286,7 @@ export const bindings: PerkFull[] = [
     uid: 'CEpgj',
     title: 'Warding Circle',
     cost: 5,
+    category: 'Binding',
     type: 'Ritual',
     image: 'https://i.ibb.co/ctMyLDb/Warding-Circle.jpg',
     whitelist: ['Ritual Circle'],
@@ -275,6 +296,7 @@ export const bindings: PerkFull[] = [
     uid: 'PqcuB',
     title: 'Ritual Anchor',
     cost: 15,
+    category: 'Binding',
     type: 'Ritual',
     image: 'https://i.ibb.co/Ntq1vpj/Ritual-Anchor-New.jpg',
     whitelist: ['Ritual Circle'],
@@ -286,8 +308,9 @@ export const bindings: PerkFull[] = [
     uid: 'QrpgY',
     title: 'Alterzelu Symbiote',
     cost: 100,
+    category: 'Binding',
     type: 'Symbiote',
-    image: 'https://i.ibb.co/86MGYW5/Alterzelu-Symbiote.jpg',
+    image: 'https://i.imgur.com/Hz8Ngbs.png',
     freebies: {
       talentPerks: ['Everlasting Talent', 'Body Talent', 'Martial Talent', 'Wild Talent'],
       defensePerks: ['Body Defense', 'Wild Defense', 'Environmental Defense'],
@@ -309,6 +332,7 @@ If you Possessed or Substituted a waifu or are otherwise female, you may act as 
     title: 'Universal Bus',
     // type: 'Expansion',
     cost: 50,
+    category: 'Binding',
     type: 'Symbiote',
     image: 'https://i.ibb.co/jMhSPRT/Universal-Bus.jpg',
     whitelist: ['Alterzelu Symbiote'],
@@ -321,6 +345,7 @@ If you Possessed or Substituted a waifu or are otherwise female, you may act as 
     title: 'Second-Generation Symbiote',
     // type: 'Expansion',
     cost: 30,
+    category: 'Binding',
     type: 'Symbiote',
     image: 'https://i.ibb.co/fvRfGb1/Second-Generation-Symbiote.jpg',
     freebies: {
@@ -334,6 +359,7 @@ If you Possessed or Substituted a waifu or are otherwise female, you may act as 
     title: 'Third-Generation Symbiote',
     // type: 'Expansion',
     cost: 60,
+    category: 'Binding',
     type: 'Symbiote',
     image: 'https://i.ibb.co/g3Txp6g/Third-Generation-Symbiote-New.jpg',
     whitelist: ['Second-Generation Symbiote'],
@@ -347,6 +373,7 @@ If you Possessed or Substituted a waifu or are otherwise female, you may act as 
     uid: 'QQmH7',
     title: 'Shroud of Power',
     cost: 80,
+    category: 'Binding',
     type: 'Shroud',
     image: 'https://i.ibb.co/gyhsvSR/Shroud-Of-Power-New.jpg',
     desc: `
@@ -371,6 +398,7 @@ If you Possessed or Substituted a waifu or are otherwise female, you may act as 
     title: 'Three-Piece Suit',
     cost: 15,
     type: 'Shroud',
+    category: 'Binding',
     image: 'https://i.ibb.co/P1gJg0B/Three-Piece-Suit-New.jpg',
     multiple: true,
     max: 9,
@@ -385,6 +413,7 @@ If you Possessed or Substituted a waifu or are otherwise female, you may act as 
     title: 'Elemental Shroud',
     cost: 96,
     type: 'Shroud',
+    category: 'Binding',
     image: 'https://i.ibb.co/G0phJPp/Elemental-Shroud.jpg',
     whitelist: ['Shroud of Power'],
     element: '',
@@ -404,6 +433,7 @@ If you Possessed or Substituted a waifu or are otherwise female, you may act as 
     title: 'Prismatic Shroud',
     cost: 64,
     type: 'Shroud',
+    category: 'Binding',
     image: 'https://i.ibb.co/3NtrqMS/Prismatic-Shroud.jpg',
     whitelist: ['Elemental Shroud'],
     // element: '',
@@ -419,6 +449,7 @@ If you Possessed or Substituted a waifu or are otherwise female, you may act as 
     cost: 25,
     complex: 'target',
     type: 'Shroud',
+    category: 'Binding',
     image: 'https://i.ibb.co/nrpMwYF/Complementary-Colors.jpg',
     whitelist: ['Elemental Shroud'],
     desc: `
@@ -431,6 +462,7 @@ If you Possessed or Substituted a waifu or are otherwise female, you may act as 
     uid: 'CmH9Z',
     title: 'Grand Tapestry',
     cost: 100,
+    category: 'Binding',
     type: 'Shroud',
     image: 'https://i.ibb.co/6rF3FGC/Grand-Tapestry.jpg',
     whitelist: ['Complementary Colors', 'Conjunction'],
@@ -447,6 +479,7 @@ If you Possessed or Substituted a waifu or are otherwise female, you may act as 
     uid: 'BmgvX',
     title: 'Elemental Loom',
     cost: 50,
+    category: 'Binding',
     type: 'Shroud',
     image: 'https://i.ibb.co/31fc3BW/Elemental-Loom.jpg',
     whitelist: ['Elemental Shroud'],
@@ -460,6 +493,7 @@ If you Possessed or Substituted a waifu or are otherwise female, you may act as 
     uid: '8Pek6',
     title: 'Deep Weave',
     cost: 25,
+    category: 'Binding',
     type: 'Shroud',
     image: 'https://i.ibb.co/v1z9SCS/Deep-Weave.jpg',
     whitelist: ['Elemental Loom'],
@@ -469,10 +503,11 @@ If you Possessed or Substituted a waifu or are otherwise female, you may act as 
 <p>Manifestations whose forms were stolen count as captured, but you do not get a credit reward for doing so. You may still sell a stolen form to the company afterward like any other target for 20% of the list price for the target’s effective tier after step 4, rounded up to the nearest whole number. This will remove the form from your library.</p>`,
   },
   {
-    uid: 'VfOVT',
+    uid: 'Hvfre',
     title: 'Hypnosis App',
     type: 'Hypnosis App',
     image: '',
+    category: 'Binding',
     cost: 0,
     desc: `<p>An additional app is added to your company provided Smart Device, which is capable of entrancing, hypnotizing, and subverting the minds of targets. Individuals caught in this hypnosis become increasingly more suggestible, and will be entranced, losing conscious awareness of things outside of the screen and not consciously remembering anything experienced while so entranced, staring blankly at the screen with rapt attention. People that are entranced can be broken out of it by a physical or social shock, such as someone calling their name loudly, shoving them, or severely needing to go to the bathroom. It takes a few moments of awareness of the display to entrance someone, and thus individuals resistant to looking at the display can look away.</p>
     <p>Every hour someone is being actively entranced will increase their Hypnotic Depth by 1. Hypnotic Depth is an abstraction of a target’s susceptibility to further suggestion and control. The Contractor themselves are inoculated against the viewing of their own hypnotic displays.
@@ -492,10 +527,11 @@ If you Possessed or Substituted a waifu or are otherwise female, you may act as 
     `,
   },
   {
-    uid: 'VfOVT',
+    uid: '7EKfK',
     title: 'Shareware',
     type: 'Hypnosis App',
     image: '',
+    category: 'Binding',
     cost: 50,
     whitelist: ['Hypnosis App'],
     desc: `<p>This app may now be sent to other, similar smart devices, where it can be opened as an app, program, spell, or similar. The initial sending of the program must be accepted, though you may customize the program’s icon via the Company App.</p>
@@ -506,20 +542,22 @@ If you Possessed or Substituted a waifu or are otherwise female, you may act as 
         `,
   },
   {
-    uid: 'VfOVT',
+    uid: 'EoDro',
     title: 'Shovelware',
     type: 'Hypnosis App',
     image: '',
+    category: 'Binding',
     cost: 100,
     whitelist: ['Shareware'],
     desc: `<p>You are now able to upload and display the App on any appropriate system that you are able to get root or admin access too. Your smart device will display all locations which the Hypnosis App is uploaded to, and allows for remote access, control, activation, and deletion of the App on these device’s displays.</p>
     `,
   },
   {
-    uid: 'VfOVT',
+    uid: 'QIx3N',
     title: 'Subliminal Audio',
     type: 'Hypnosis App',
     image: '',
+    category: 'Binding',
     cost: 15,
     whitelist: ['Hypnosis App'],
     desc: `<p>Your Hypnotic Display may now include or even simply be Audio. This audio includes subliminal messages that will increase a listener’s Hypnotic Depth by 1 for every hour it is listened to. This audio must be audible and distinguishable, the same way closing one’s eyes can prevent the visual display from affecting you, earplugs can block the subliminal audio. Just as a sufficiently distant display can’t entrance someone as they can’t properly perceive the screen, the subliminal audio’s effect has limited range, particularly in noisy environments.</p>
@@ -527,10 +565,11 @@ If you Possessed or Substituted a waifu or are otherwise female, you may act as 
     `,
   },
   {
-    uid: 'VfOVT',
+    uid: 'cBbNo',
     title: 'Mind-Altering Concoctions',
     type: 'Hypnosis App',
     image: '',
+    category: 'Binding',
     cost: 25,
     whitelist: ['Hypnosis App'],
     desc: `<p>This perk is a subscription to our mind-altering substances shop. In addition to the recipes for specific concoctions, you will be able to order up to 5 doses of varying substances at a time. These may be returned or more ordered once they are used, and come in several major categories: Aromatics, ingestibles, and injectables</p>
@@ -542,10 +581,11 @@ If you Possessed or Substituted a waifu or are otherwise female, you may act as 
     `,
   },
   {
-    uid: 'VfOVT',
+    uid: '5rA4R',
     title: 'VR Helmet',
     type: 'Hypnosis App',
     image: '',
+    category: 'Binding',
     cost: 20,
     whitelist: ['Hypnosis App'],
     desc: `<p>You gain access to a set of three VR Helmets, which are protected by the usual Company Smart Device assurances. In addition to their other effects, these VR Helmets may be used to interact with virtual realities directly, to metaphorically ‘jack in’.</p>
@@ -553,10 +593,11 @@ If you Possessed or Substituted a waifu or are otherwise female, you may act as 
     `,
   },
   {
-    uid: 'VfOVT',
+    uid: 'UFwYc',
     title: 'Full-Dive Set',
     type: 'Hypnosis App',
     image: '',
+    category: 'Binding',
     cost: 25,
     whitelist: ['VR Helmet'],
     desc: `<p>The blueprints for an enhanced form of the VR Helmet, the equipment includes an additional set of wires, chords, and applicators that may be applied to a wearer of the helmet, directly interfacing with their nervous system and applying hypnotic stimulation directly.</p>
@@ -564,11 +605,12 @@ If you Possessed or Substituted a waifu or are otherwise female, you may act as 
     `,
   },
   {
-    uid: 'VfOVT',
+    uid: '6hMkn',
     title: 'Megapixel',
     type: 'Hypnosis App',
     image: '',
     cost: 150,
+    category: 'Binding',
     whitelist: ['VR Helmet'],
     desc: `<p>Your smart device’s hypnosis app display is now capable of digitizing and de-digitizing individuals. Digitized individuals are dropped into a small digital world within your smart device, and may be paused, or apply any purchased Hypnosis App expansions applied to them as desired. Confinement in this digital world eliminates the risk of overdose from Mind-Altering injectables.</p>
     <p>Digitizing or de-digitizing a target requires them to be entranced by your Smart Device, and happens over the course of several seconds. While there is no theoretical range limit for this effect, there are functional limits based on a target’s sensory fidelity and their ability to perceive your Smart Device and be entranced. A subject’s recreation from the digital world occurs over several seconds, within several meters of the active hypnosis app display on your smart device. Subjects are vulnerable during this process.</p>
@@ -578,10 +620,11 @@ If you Possessed or Substituted a waifu or are otherwise female, you may act as 
   },
 
   {
-    uid: 'VfOVT',
+    uid: 'Et2Yn',
     title: 'Tantric Arts',
     type: 'Tantric Arts',
     image: '',
+    category: 'Binding',
     cost: 15,
     desc: `<p>Grants an innate ability to use ritualistic, sympathetic sexual arts. By using mystically resonant materials and actions, you are able to cast spells of binding. These arts may be taught to others, though safeguards to prevent them from affecting the Contractor are detailed below. These spells are compulsions on the target’s mind, body, and soul. Resisting them causes the target to become exhausted and weakened, whereas following along with the compulsion will invigorate and strengthen the target. The more specific the compulsion and the shorter its duration, the stronger the boost and according compulsion, and vice versa. </p>
     <p>Every spell requires both intense concentration and some other form of mystically resonant way to manipulate the energies involved, such as chanting, delicate hand movements, intense dancing, or dedicated sexual manuevers, which may be mixed even in a single casting. Aside from runes inscribed upon the target or a physical circle to enclose an area, the targeting of an Art requires an Arcane Link, which must have a physical or metaphysical connection to the corresponding target.</p>
@@ -589,10 +632,11 @@ If you Possessed or Substituted a waifu or are otherwise female, you may act as 
     `,
   },
   {
-    uid: 'VfOVT',
+    uid: 'yhe2l',
     title: 'Art of Awareness',
     type: 'Tantric Arts',
     image: '',
+    category: 'Binding',
     cost: 10,
     whitelist: ['Tantric Arts'],
     desc: `<p>For 1 Resonance, the caster may perceive a target as if with their own senses, and gain a good understanding of their distance and direction relative to the target. After initial casting, this spell can be sustained with far less focus, allowing for the casting of other spells. For an additional 2 Resonance, the Art will reveal any illusions or other attempts at concealment.</p>
@@ -601,10 +645,11 @@ If you Possessed or Substituted a waifu or are otherwise female, you may act as 
     `,
   },
   {
-    uid: 'VfOVT',
+    uid: '8fbDK',
     title: 'Art of Summoning',
     type: 'Tantric Arts',
     image: '',
+    category: 'Binding',
     cost: 15,
     whitelist: ['Tantric Arts'],
     desc: `<p>The Art of Summoning requires at least two Arcane Links. By spending 3 Resonance you are able to bring a target to a targeted location or before a targeted individual, which may be the caster. This is an instantaneous effect upon completion of the Art. As a reminder, emotional attachments to places may act as arcane links, and arcane links for portals between two locations would involve things resonant to both of them.</p>
@@ -612,21 +657,23 @@ If you Possessed or Substituted a waifu or are otherwise female, you may act as 
     `,
   },
   {
-    uid: 'VfOVT',
+    uid: 'cd3Rt',
     title: 'Art of Sympathies',
     type: 'Tantric Arts',
     image: '',
+    category: 'Binding',
     cost: 10,
     whitelist: ['Tantric Arts'],
     desc: `<p>These arts create strong connections between the targets. The more tangible and deeper the connection, the more Resonance it takes, though most uses of this art cost 2 to 6 Resonance. Linking thoughts, sensations, or subconscious desires takes 2 Resonance. Linking the internal energies of two targets such that they may be pooled and shared freely costs 3 Resonance. Linking the physical states of two targets requires 4 Resonance, but more broad, potentially damaging or altering links require 5 Resonance. Linking a target’s state or sensations to that of an inanimate object requires an additional Resonance, as does creating a one way link. These Arts generally last one week.</p>
     `,
   },
   {
-    uid: 'VfOVT',
+    uid: 'Nnm0h',
     title: 'Art of Transformation',
     type: 'Tantric Arts',
     image: '',
     cost: 15,
+    category: 'Binding',
     whitelist: ['Tantric Arts'],
     desc: `<p>These Arts allow for the alteration of a target’s physiology. The more significant, extreme, or delicate the changes, the more Resonance it requires. Cosmetic changes will generally only require 1 Resonance. Changes that alter the bone structure or fat distribution of the target require 2 Resonance. Changes to reflexes, the sensitivity to responses, or reactions to poison, or alterations to mass cost 3 Resonance. Extreme changes in a target’s mass, by a factor of more than four, cost 4 Resonance.</p>
     <p>Changes to the target’s species, fundamental body plan, or other significant changes require an appropriate arcane link for the intended state (such as an extant example of the species or their blood, for turning someone into a different species), and 4 Resonance. Transforming a target into an object requires 5 Resonance. Sapience and awareness are optional.</p>
@@ -635,10 +682,11 @@ If you Possessed or Substituted a waifu or are otherwise female, you may act as 
     `,
   },
   {
-    uid: 'VfOVT',
+    uid: 'x1zFz',
     title: 'Art of Warding',
     type: 'Tantric Arts',
     image: '',
+    category: 'Binding',
     cost: 15,
     whitelist: ['Tantric Arts'],
     desc: `<p>The Arts of Warding may only be placed on structures or locations. They create a threshold that cannot be crossed or acted across, such as via movement or attacks, esoteric or otherwise. Wards may be keyed to only block certain targets provided the appropriate arcane link, or made to allow certain targets to pass through them. Otherwise, Wards affect all potential entities attempting to cross or act across them equally. All wards last one week by default.</p>
@@ -647,10 +695,11 @@ If you Possessed or Substituted a waifu or are otherwise female, you may act as 
     `,
   },
   {
-    uid: 'VfOVT',
+    uid: 'sgtrx',
     title: 'Magic Focus',
     type: 'Tantric Arts',
     image: '',
+    category: 'Binding',
     cost: 25,
     whitelist: ['Tantric Arts'],
     desc: `<p>These foci are items specially built to empower rituals and magic, enjoy Company protections like your Smart Device once made. They only add mystic resonance if they required effort from the Caster to acquire and are actively used in the casting in some way. Destroying or sacrificing the ritual implement, as part of the ritual, increases the resonance granted by it by 2.</p>
@@ -667,10 +716,11 @@ If you Possessed or Substituted a waifu or are otherwise female, you may act as 
     `,
   },
   {
-    uid: 'VfOVT',
+    uid: 'sgkrA',
     title: 'Art of Domains',
     type: 'Tantric Arts',
     image: '',
+    category: 'Binding',
     cost: 10,
     needed: 2,
     whitelist: ['Tantric Arts', 'Dungeons', 'Demiplane'],
@@ -679,11 +729,12 @@ If you Possessed or Substituted a waifu or are otherwise female, you may act as 
     `,
   },
   {
-    uid: 'VfOVT',
+    uid: 'WjK2r',
     title: 'Art of Destruction',
     type: 'Tantric Arts',
     image: '',
     cost: 15,
+    category: 'Binding',
     whitelist: ['Tantric Arts'],
     desc: `<p>Not merely a compulsion, this art actively damages, destroys, or suppresses targets and their abilities. As a general rule, reducing a target’s tier costs an amount of Resonance equal to the reduction in tiers and only lasts for 24 hours, while killing a target would generally require a value of Resonance equal to their Tier.</p>
     <p>1 Resonance is required for mundane, physical materials; 3 for supernaturally or extremely durable materials/targets; 5 for intangibles such as morals, disease, or heat; and 7 for abstract concepts such as good, death, or magic. Intangibles and concepts still require an arcane link to target them, such as the bounding of a circle or runes, or an arcane link to target them at an individual. Things are gradually destroyed over the course of the casting.</p>
@@ -699,6 +750,7 @@ export const lures: PerkFull[] = [
   {
     uid: 'cBDgW',
     title: 'Sticky Fingers',
+    category: 'Lure',
     image: 'https://i.ibb.co/c3z0wcM/Sticky-Fingers.jpg',
     cost: 5,
     desc: 'You know all the points that make a waifu melt. You can play her like a piano. Your very touch is electrifying. You are also a sexual savant. Keep a waifu on the edge long enough, and she’ll promise anything to make it stop. With your skills, she’ll be sure to keep that promise. This lure cannot affect targets who lack a sense of touch.',
@@ -706,6 +758,7 @@ export const lures: PerkFull[] = [
   {
     uid: 'VwHHb',
     title: 'Faerie Feast',
+    category: 'Lure',
     image: 'https://i.ibb.co/QmxqhJJ/Faerie-Feast.jpg',
     cost: 10,
     desc: `
@@ -716,6 +769,7 @@ export const lures: PerkFull[] = [
   {
     uid: 'ak3fJ',
     title: 'Don’t Stand So Close to Me',
+    category: 'Lure',
     image: 'https://i.ibb.co/Qd20Thb/Dont-Stand-So-Close-To-Me.jpg',
     cost: 15,
     desc: `
@@ -726,6 +780,7 @@ export const lures: PerkFull[] = [
     uid: '3umpd',
     title: 'Arlo',
     cost: 15,
+    category: 'Lure',
     image: 'https://i.ibb.co/XzLg3RR/Arlo.jpg',
     special: 'at least one retinue member whose apparent age is younger than yourself.',
     desc: `
@@ -741,6 +796,7 @@ export const lures: PerkFull[] = [
   {
     uid: '2ObHB',
     title: 'Alluring Whisper',
+    category: 'Lure',
     image: 'https://i.ibb.co/rFCDPSH/Alluring-Whisper.jpg',
     cost: 20,
     desc: 'Your voice is supernaturally alluring. Merely whisper in a target’s ear, and her heart (and panties) will turn to goo. Better results will come with vocal training and improved phrasing. (You can also use this perk to become an ASMR superstar. We won’t judge.) Beings with sufficient willpower can resist or even block this lure. It will never affect someone who lacks a sense of hearing.',
@@ -750,6 +806,7 @@ export const lures: PerkFull[] = [
     title: 'Love Spot',
     image: 'https://i.ibb.co/yFDkdMz/LoveSpot.jpg',
     complex: 'flavor',
+    category: 'Lure',
     anything: 'Location',
     cost: 20,
     desc: `
@@ -761,6 +818,7 @@ export const lures: PerkFull[] = [
     title: 'Potpourri',
     image: 'https://i.ibb.co/2sL5sQH/Potpourri.jpg',
     cost: 20,
+    category: 'Lure',
     desc: `
 <p>Your sense of smell is more acute than most, detecting and cataloging scents and their origin, and studying others to see their reactions to them. You have also gained some control over how you smell, letting you manipulate others on a level that most would never notice and the rest might just think unusual. From the scent of roses to call up some passion in a romance, to that of freshly baked cookies to aid in relaxing others, you have figured out how to use those scents to alter their emotions, often convincing them to let their guard down or spark conflicts between others. This also allows you to pick up on pheromonal cues and scent based languages/markings, if you have some experience with them. You can also choose to "tune out" specific scents after some experience.</p>
 <p>This perk cannot affect targets who lack a sense of smell.</p>`,
@@ -770,6 +828,7 @@ export const lures: PerkFull[] = [
     title: 'Zenryoku Zenkai',
     image: 'https://i.ibb.co/7ywxs16/Zenryoku-Zenkai.jpg',
     cost: 20,
+    category: 'Lure',
     desc: `
 <p>Full Power! Total Destruction! Targets you defeat in combat or another contest, whether physical, mental, or social in nature, will fall for you all the harder. You’ll be at the forefront of all their thoughts as their wish to meet you again to even the score twists itself into a more romantic or sexual yearning. The more decisive and dramatic your victory, and the higher the perceived stakes for each of you, the stronger this lure’s effect. Defeating a target in a training spar will have only negligible results, but stopping a villainess in a life-or-death battle for the fate of a universe will add her to your harem practically the moment she wakes up.</p>
 <p>This lure is optimized for symmetric 1v1 duels in the target’s specialty field. The contest must be initiated or otherwise freely accepted by the target, even implicitly. This lure drops in effectiveness the more you rely on equal teammates; in contests of leadership ability, from team sports to military command, any unit who follows your instructions or plans will not count as a teammate. If your target catches you cheating in a match that has strict rules, this lure will not apply to the result even if you nominally win. If you catch your opponent cheating in such a match, this lure will still apply to the result even if you nominally lose.</p>`,
@@ -782,6 +841,7 @@ export const lureExpansions: PerkFull[] = [
   {
     uid: 'vE6Mo',
     title: 'Sticky Fingers: Brown Sugar',
+    category: 'Lure Expansion',
     image: 'https://i.ibb.co/5j5X9Gv/Sticky-Fingers-Brown-Sugar.jpg',
     cost: 15,
     whitelist: ['Sticky Fingers'],
@@ -790,6 +850,7 @@ export const lureExpansions: PerkFull[] = [
   {
     uid: 'LiXE1',
     title: 'Faerie Feast: Master Chef',
+    category: 'Lure Expansion',
     image: 'https://i.ibb.co/HYVZFYF/Faerie-Feast-Master-Chef.jpg',
     cost: 10,
     whitelist: ['Faerie Feast'],
@@ -798,6 +859,7 @@ export const lureExpansions: PerkFull[] = [
   {
     uid: 'WyUZ3',
     title: 'Faerie Feast: The Secret Ingredient is Love',
+    category: 'Lure Expansion',
     image: 'https://i.ibb.co/7bsSS2K/Faerie-Feast-The-Secret-Ingredient-Is-Love.jpg',
     cost: 5,
     whitelist: ['Faerie Feast: Master Chef'],
@@ -806,6 +868,7 @@ export const lureExpansions: PerkFull[] = [
   {
     uid: 'JjBAb',
     title: 'Alluring Whisper: Dirty Minds',
+    category: 'Lure Expansion',
     image: 'https://i.ibb.co/10psjZ7/Alluring-Whisper-Dirty-Minds.jpg',
     cost: 20,
     costVariants: [20, 30],
@@ -818,6 +881,7 @@ export const lureExpansions: PerkFull[] = [
   {
     uid: 'SvPu0',
     title: 'Alluring Whisper: Siren’s Song',
+    category: 'Lure Expansion',
     image: 'https://i.ibb.co/fpt30LV/Alluring-Whisper-Sirens-Song.jpg',
     cost: 80,
     whitelist: ['Alluring Whisper'],
@@ -834,6 +898,7 @@ export const otherControls: PerkFull[] = [
     uid: 'uKKWn',
     title: 'Conjunction',
     image: 'https://i.ibb.co/gg2wM9D/Conjunction.jpg',
+    category: 'Other Control',
     cost: 25,
     whitelist: ['Second-Generation Symbiote', 'Complementary Colors'],
     needed: 1,
@@ -848,6 +913,7 @@ export const otherControls: PerkFull[] = [
     title: 'Apportation',
     image: 'https://i.ibb.co/t2yrJLX/Apportation.jpg',
     cost: 25,
+    category: 'Other Control',
     whitelist: ['Basic Tempest Runes', 'Shroud of Power'],
     needed: 1,
     desc: `
@@ -862,6 +928,7 @@ export const otherControls: PerkFull[] = [
     title: 'Hotel California',
     image: 'https://i.ibb.co/s6GFYTF/Hotel-California.jpg',
     cost: 20,
+    category: 'Other Control',
     desc: `
 <p>This seemingly-innocuous entertainment or hospitality venue uses a legitimate business of your choice as a cover for mind control. Options include, but are not limited to, a pub, restaurant, amusement park, music venue, circus, casino, and luxury resort. Strip clubs in particular are a perennial favorite. Most customers are only compelled to spend more and bring their friends when they come back, but a very different fate is in store for those you select as capture targets. As they spend time within your walls, they’ll be beautified according to a blend of your standards and the establishment’s overt purpose.</p>
 <p>After some time, your staff will offer each of your targets the chance to experience your business from the other side by helping out with a short performance, or other task, that lasts no more than ten minutes. The building’s compulsion will make them agree; a skill download during the run-up time will more than compensate for any lack of experience or talent. As they do their task, they’ll be further transformed to match your chosen theme and become yours when they’re done. Waifus acquired in this way are considered captured like anyone else.</p>
@@ -875,6 +942,7 @@ export const otherControls: PerkFull[] = [
     title: 'Command Seals',
     image: 'https://i.ibb.co/MZQncZ3/Command-Seals.jpg',
     cost: 5,
+    category: 'Other Control',
     special: 'At least one Nasuverse Servant',
     table: [
       ['Master', ' Canon Servant'],
@@ -900,6 +968,7 @@ export const otherControls: PerkFull[] = [
     title: 'Command Seals: General Seals',
     image: 'https://i.ibb.co/qJj0JzJ/Command-Seals-General-Seals.jpg',
     cost: 10,
+    category: 'Other Control',
     special: 'Retroactively removes the previous control’s Nasuverse Servant requirement.',
     whitelist: ['Command Seals'],
     desc: 'Command Seals may now be used on any purchased or captured waifu, not just Servants. Your Command Seals purchase limit now counts all non-canon Servants of any tier and all non-Servant retinue members of tier 6 or higher, in addition to all Servants. This ignores all effective tier changes after step 4.',
@@ -907,6 +976,7 @@ export const otherControls: PerkFull[] = [
   {
     uid: 'VTfqo',
     title: 'Divine Marking',
+    category: 'Other Control',
     image: 'https://i.ibb.co/7GZQrFv/Divine-Marking.jpg',
     cost: 20,
     special: 'At least one deity from the Danmachi setting',
@@ -915,6 +985,7 @@ export const otherControls: PerkFull[] = [
   {
     uid: 'CTpCG',
     title: 'Space Truckin’',
+    category: 'Other Control',
     image: 'https://i.ibb.co/H2ByYsD/Space-Truckin.jpg',
     type: 'space',
     cost: 100,
@@ -943,6 +1014,7 @@ export const otherControls: PerkFull[] = [
   {
     uid: 'JOlyR',
     title: 'Highway Star',
+    category: 'Other Control',
     type: 'space',
     image: 'https://i.ibb.co/g6w1kMD/Space-Truckin-Highway-Star.jpg',
     cost: 100,
@@ -952,6 +1024,7 @@ export const otherControls: PerkFull[] = [
   {
     uid: '3RLYt',
     title: 'Strange Kind of Woman',
+    category: 'Other Control',
     type: 'space',
     image: 'https://i.ibb.co/v1xwWf2/Strange-Kind-Of-Woman.jpg',
     cost: 10,
@@ -963,6 +1036,7 @@ export const otherControls: PerkFull[] = [
   {
     uid: 'TwKOp',
     title: 'Anyone\'s Daughter',
+    category: 'Other Control',
     type: 'space',
     image: 'https://i.ibb.co/vzshHGq/Anyones-Daughter.jpg',
     cost: 10,
@@ -978,6 +1052,7 @@ export const otherControls: PerkFull[] = [
   {
     uid: 'MAN0h',
     title: 'All The Time In The World',
+    category: 'Other Control',
     type: 'space',
     image: 'https://i.ibb.co/C70VRqR/All-The-Time-In-The-World.jpg',
     cost: 10,
@@ -988,6 +1063,7 @@ export const otherControls: PerkFull[] = [
   {
     uid: 'WCYdn',
     title: 'Demon\'s Eye',
+    category: 'Other Control',
     type: 'space',
     image: 'https://i.ibb.co/vk8KmQX/Demons-Eye.jpg',
     cost: 30,
@@ -999,6 +1075,7 @@ export const otherControls: PerkFull[] = [
   {
     uid: 'UNwcQ',
     title: 'Mistreated',
+    category: 'Other Control',
     type: 'space',
     image: 'https://i.ibb.co/j6PngKj/Mistreated.jpg',
     cost: 40,
@@ -1010,6 +1087,7 @@ export const otherControls: PerkFull[] = [
   {
     uid: 'GxcTK',
     title: 'Time For Bedlam',
+    category: 'Other Control',
     type: 'space',
     image: 'https://i.ibb.co/SyM6qqB/Time-For-Bedlam.jpg',
     cost: 20,
@@ -1021,6 +1099,7 @@ export const otherControls: PerkFull[] = [
   {
     uid: 'pzt7d',
     title: 'Pictures of Home',
+    category: 'Other Control',
     type: 'space',
     image: 'https://i.ibb.co/6N5GsYp/Pictures-Of-Home.jpg',
     cost: 10,
@@ -1032,6 +1111,7 @@ export const otherControls: PerkFull[] = [
   {
     uid: 'GdRyN',
     title: 'I Got Your Number',
+    category: 'Other Control',
     type: 'space',
     image: 'https://i.ibb.co/6vhkm5q/IGot-Your-Number.jpg',
     cost: 10,
@@ -1042,6 +1122,7 @@ export const otherControls: PerkFull[] = [
   {
     uid: 'ARFjX',
     title: 'Child in Time',
+    category: 'Other Control',
     type: 'space',
     image: 'https://i.ibb.co/1qpyyJX/Child-In-Time.jpg',
     cost: 15,
@@ -1053,6 +1134,7 @@ export const otherControls: PerkFull[] = [
   {
     uid: 'eZoxo',
     title: 'Not Responsible',
+    category: 'Other Control',
     type: 'space',
     image: 'https://i.ibb.co/88852py/Not-Responsible.jpg',
     cost: 20,
@@ -1064,6 +1146,7 @@ export const otherControls: PerkFull[] = [
   {
     uid: 'iRfHA',
     title: 'Perfect Strangers',
+    category: 'Other Control',
     type: 'space',
     image: 'https://i.ibb.co/drS8bxV/Perfect-Strangers.jpg',
     cost: 5,
@@ -1071,8 +1154,9 @@ export const otherControls: PerkFull[] = [
     desc: 'Unless explicitly told, your victims cannot make the connection between you (or your retinue) and their deaths.',
   },
   {
-    uid: 'VfOVT',
+    uid: 'sK76z',
     title: 'Hush',
+    category: 'Other Control',
     type: 'space',
     image: 'https://i.ibb.co/BsfXmZL/Hush.jpg',
     cost: 30,

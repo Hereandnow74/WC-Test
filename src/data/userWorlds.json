@@ -3267,5 +3267,12 @@
   {"worldName":"Steven Universe","rating":6,"image":"https://i.imgur.com/yoXxLGg.jpeg","condition":[{"name":"Human Zoo","rating":1},{"rating":2,"name":"Steven Universe (Future)"}]},
   {"worldName":"Strike the Blood","rating":5,"image":"https://wallpapercave.com/wp/wp2084972.jpg"},
   {"worldName":"The God of High School","rating":9,"image":"https://i.imgur.com/opPIxB5_d.webp?maxwidth=640&shape=thumb&fidelity=medium"},
-  {"worldName":"The Legend Of The Legendary Heroes","rating":6}
+  {"worldName":"The Legend Of The Legendary Heroes","rating":6},
+  {"worldName":"Kamen Rider","rating":7,"image":"https://d1i01wkzwiao45.cloudfront.net/wp-content/uploads/2018/12/20181222-KR-01.jpg","condition":[{"rating":6,"name":"Showa"},{"rating":7,"name":"Heisei"},{"name":"Raiwa","rating":7}]},
+  {"worldName":"Kamidori Alchemy Meister","rating":4,"image":"https://safebooru.org//images/1081/41cc13029d9931a29ea55d783a71c75de5ddc33c.png?1123485"},
+  {"worldName":"Mob Psycho 100","rating":7,"image":"https://cdn.donmai.us/360x360/18/88/1888871e10a61bb026bb50b1d28e6cef.jpg"},
+  {"worldName":"Shakugan no Shana","rating":5,"image":"https://i.imgur.com/CcBBe0t.png"},
+  {"worldName":"Super Sentai","rating":7,"image":"https://wallpaperaccess.com/full/1854635.jpg"},
+  {"worldName":"Ultraman","rating":9,"image":"https://c4.wallpaperflare.com/wallpaper/639/214/561/red-ultraman-hero-hd-wallpaper-preview.jpg","condition":[{"rating":7,"name":"Anime"}]},
+  {"worldName":"Voltron","rating":8}
 ]

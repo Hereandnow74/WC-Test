@@ -21,7 +21,7 @@
     />
     <icon-park-outline:full-screen-one
       v-if="waifuPerk.image !==''"
-      class="absolute z-10 top-3 right-3 text-gray-200 hover:text-blue-400 cursor-pointer mix-blend-difference"
+      class="absolute top-3 right-3 text-gray-200 hover:text-blue-400 cursor-pointer mix-blend-difference"
       @click.stop="() => emit('changeModalImage', waifuPerk.image)"
     />
     <table v-if="waifuPerk.title === 'Lord Camelot'" class="float-right m-2">
@@ -123,7 +123,7 @@ const { settings, waifuPerks, companionsUIDs } = useStore()
 const waifuList = computed(() => {
   let res = []
   if (isArray(props.waifuPerk.waifu)) {
-    res = props.waifuPerk.waifu.filter((_, i) => companionsUIDs.value[props.waifuPerk.uid[i]])
+    res = props.waifuPerk.waifu.filter((_, i) => companionsUIDs.value[props.waifuPerk.waifuUID[i]])
     chosenWaifu.value = res[0]
   }
   return res

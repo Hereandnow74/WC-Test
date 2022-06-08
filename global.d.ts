@@ -27,6 +27,7 @@ interface PerkFull {
   title: string
   cost: number
   desc: string
+  category: string
   whitelist?: string[]
   special?: string
   target?: string
@@ -79,6 +80,20 @@ interface Mission {
   image: string
 }
 
+export interface Perk {
+  title: string
+  cost: number
+  count?: number
+  tree?: string
+  addons?: any[]
+  variant?: string
+  target?: string[]
+  freebies?: object
+  refund?: number
+  anything?: string
+  complex?: any
+}
+
 declare global {
 }
 export {
@@ -88,4 +103,5 @@ export {
   Challenge,
   Mission,
   DLCPerk,
+  Perk,
 }

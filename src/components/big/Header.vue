@@ -5,15 +5,15 @@
     </div>
     <div
       class="sm:hidden cursor-pointer hover:text-green-500 absolute left-1 top-0 z-30 "
-      @click="() => toggleSideMenu()"
+      @click="() => showSideMenu = !showSideMenu"
     >
-      <ci:hamburger class="w-6 h-6" />
+      <ci:hamburger class="w-6 h-6" :class="{'shake delay-75': showIntro}" />
     </div>
   </nav>
 </template>
 
 <script lang="ts" setup>
-import { toggleSideMenu } from '~/logic'
+import { showSideMenu, showIntro } from '~/logic'
 
 const titles = ['World', 'Intensity', 'Origin', 'Binding & Lure', 'Heritage', 'Talents & Perks', 'Companions']
 const routes = ['world', 'intensity', 'origin', 'bindings', 'heritage', 'talents', 'companions']

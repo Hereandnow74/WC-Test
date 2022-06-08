@@ -5,15 +5,15 @@
         <div class="flex items-center text-lg" title="Search">
           <bi:search />
         </div>
-        <Input v-model="searchString" class="flex-grow" />
+        <Input v-model="searchString" v-focus name="search" class="flex-grow" />
         <div class="hover:text-red-500 flex items-center cursor-pointer" @click="searchOpen = false">
           <fontisto:close-a />
         </div>
       </div>
       <div v-if="filtered.length" class="flex-grow flex flex-col gap-2 max-w-md overflow-y-auto scrollbar" @click="searchOpen = false">
-        <div v-for="res, i in filtered" :key="res.item.title" class="rounded bg-true-gray-200 dark:bg-true-gray-900 p-1">
+        <div v-for="res, i in filtered" :key="res.item.uid" class="rounded bg-true-gray-200 dark:bg-true-gray-900 p-1">
           <router-link
-            :to="{path: LINKS[res.item.title], hash:'#'+res.item.title, query: {q: QUERIES[res.item.title]}}"
+            :to="{path: `/${LINKS[res.item.title]}`, hash:'#'+res.item.title, query: {q: QUERIES[res.item.title]}}"
             class="text-lg text-blue-700 dark:text-blue-500"
           >
             {{ res.item.title }}
@@ -37,7 +37,7 @@ import { origin } from '~/data/origin'
 import { defenses, perks, ridePerksFull, genericPerks, talents } from '~/data/talents'
 import { DLCwaifu_perks, waifu_perks } from '~/data/waifu_perks'
 import { homes, dungeon, demiplane } from '~/data/demdun'
-import { LINKS, QUERIES, rulesList } from '~/data/constants'
+import { LINKS, QUERIES } from '~/data/constants'
 
 import { DLCRides, rides } from '~/data/rides'
 import { DLCbindings, DLChomes, DLCgenericPerks, DLCheritages, DLCintensity, DLClureExpansions, DLClures, DLCotherControls, DLCperks, DLCridePerks, DLCtalents } from '~/data/DLCs'
@@ -47,13 +47,18 @@ const searchOpen = ref(false)
 
 const searchString = ref('')
 
+const vFocus = {
+  mounted: (el: HTMLElement) => (el.children[0].children[0] as HTMLElement).focus(),
+}
+
 const options = {
   includeScore: false,
-  findAllMatches: false,
+  findAllMatches: true,
   includeMatches: true,
   minMatchCharLength: 3,
   ignoreLocation: true,
   threshold: 0,
+  useExtendedSearch: true,
   keys: ['title', 'desc'],
 }
 
@@ -64,21 +69,20 @@ const all = [...heritages, ...bindings, ...lures, ...lureExpansions, ...otherCon
 const fuse = new Fuse(all, options)
 
 const filtered = computed(() => {
-  return fuse.search(searchString.value)
+  return searchString.value.length >= 3 ? fuse.search(`'${searchString.value}`) : []
 })
 
-const highlightedResult = computed(() => filtered.value.map(res => hightlightedDesc(res.matches)))
+const highlightedResult = computed(() => filtered.value.map(res => res.matches ? hightlightedDesc(res.matches) : 'No Matches'))
 
-function hightlightedDesc(matches: any[] | undefined) {
-  if (!matches) return ''
+function hightlightedDesc(matches: readonly Fuse.FuseResultMatch[]) {
   const start = '<span class="bg-orange-300 dark:bg-orange-700">'
   const end = '</span>'
   const offset = start.length + end.length
   let res = ''
   matches.forEach((match) => {
-    if (match.key === 'desc') {
+    if (match.key === 'desc' && match.value) {
       let desc = match.value
-      match.indices.filter(ind => ind[1] - ind[0] >= searchString.value.length - 1).forEach((ind, i) => desc = desc.replace(desc.slice(ind[0] + (offset * i), ind[1] + 1 + (offset * i)), `${start}${desc.slice(ind[0] + (offset * i), ind[1] + 1 + (offset * i))}${end}`))
+      match.indices.forEach((ind, i: number) => desc = desc.replace(desc.slice(ind[0] + (offset * i), ind[1] + 1 + (offset * i)), `${start}${desc.slice(ind[0] + (offset * i), ind[1] + 1 + (offset * i))}${end}`))
       res = desc
     }
   })

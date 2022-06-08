@@ -117,3 +117,50 @@ select:invalid { color: rgb(134, 133, 133); }
   @apply text-teal-700 dark:text-teal-400 hover:(text-teal-500 underline) mr-2 inline-block;
 }
 
+
+/* Shaking animation */
+.shake {
+  animation: shake 1.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both infinite;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.slide-leave-active,
+.slide-enter-active {
+  @apply transition-transform;
+  @apply ease-in-out;
+  @apply duration-300;
+}
+.slide-enter-from {
+  transform: translateX(-100%);
+}
+.slide-leave-to {
+  transform: translateX(100%);
+}
+
+/* Card style */
+.column-block {
+  break-inside: avoid-column;
+  page-break-inside: avoid;
+}
