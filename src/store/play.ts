@@ -40,6 +40,16 @@ interface Dungeon {
 const dungeons = useStorage<Dungeon[]>('dungeons', [])
 const manualDevotees = useStorage<Record<number, number>>('manualDevotees', { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0, 9: 0, 10: 0 })
 
+const gachaSettings = useStorage('gachaSettings', {
+  whitelist: [] as string[],
+  defaultChances: true,
+  useWhiltelist: false,
+  chances: [],
+  rollCost: 3,
+  tenRollCost: 30,
+  minTierForTen: 4,
+})
+
 export function usePlayStore() {
   return {
     jumpChain,
@@ -55,5 +65,6 @@ export function usePlayStore() {
     investedNetwork,
     dungeons,
     manualDevotees,
+    gachaSettings,
   }
 }

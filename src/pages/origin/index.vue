@@ -72,27 +72,29 @@
         </div>
       </div>
     </div>
-    <h2 class="text-2xl text-center">
-      Patrons
-    </h2>
-    <Desc class="p-2 bg-gray-200 dark:bg-teal-900 max-w-4xl mx-auto mt-4" :desc="patronsDesc" />
-    <Note class="my-4 max-w-screen-md" type="info" title="Info">
-      Patrons are not a part of Official Waifu Catalog and come from DLC by Mortaegus - <a target="_blank" rel="noopener noreferrer" href="https://forum.questionablequesting.com/threads/r34-economy-cyoa-thread.11289/page-568#post-3866836" class="underline text-blue-800 dark:text-blue-400">link</a>. This section are currently in a WIP stage, if you have ideas how to better balance/structure it write me on discord.
-    </Note>
-    <div
-      class="column-gap pb-8"
-      :class="settings.columns !== 'auto' ? `column-count-${settings.columns}` : 'md:column-count-2 xl:column-count-3 4xl:column-count-4 5xl:column-count-5'"
-    >
-      <Patron
-        v-for="pt in patrons"
-        :key="pt.title"
-        :perk="pt"
-        :bg="patronAvailable(pt) ? 'purple-100 dark:(purple-400 opacity-15) hover:(light-300 dark:purple-600 dark:opacity-15)'
-          : 'gray-200 dark:gray-600'"
-        :is-active="findIndex(patron, { title: pt.title }) !== -1"
-        @pickPerk="choosePatron"
-      ></Patron>
-    </div>
+    <template v-if="settings.allChosenAuthors[0] !=='all'">
+      <h2 class="text-2xl text-center">
+        Patrons
+      </h2>
+      <Desc class="p-2 bg-gray-200 dark:bg-teal-900 max-w-4xl mx-auto mt-4" :desc="patronsDesc" />
+      <Note class="my-4 max-w-screen-md" type="info" title="Info">
+        Patrons are not a part of Official Waifu Catalog and come from DLC by Mortaegus - <a target="_blank" rel="noopener noreferrer" href="https://forum.questionablequesting.com/threads/r34-economy-cyoa-thread.11289/page-568#post-3866836" class="underline text-blue-800 dark:text-blue-400">link</a>. This section are currently in a WIP stage, if you have ideas how to better balance/structure it write me on discord.
+      </Note>
+      <div
+        class="column-gap pb-8"
+        :class="settings.columns !== 'auto' ? `column-count-${settings.columns}` : 'md:column-count-2 xl:column-count-3 4xl:column-count-4 5xl:column-count-5'"
+      >
+        <Patron
+          v-for="pt in patrons"
+          :key="pt.title"
+          :perk="pt"
+          :bg="patronAvailable(pt) ? 'purple-100 dark:(purple-400 opacity-15) hover:(light-300 dark:purple-600 dark:opacity-15)'
+            : 'gray-200 dark:gray-600'"
+          :is-active="findIndex(patron, { title: pt.title }) !== -1"
+          @pickPerk="choosePatron"
+        ></Patron>
+      </div>
+    </template>
   </div>
 </template>
 

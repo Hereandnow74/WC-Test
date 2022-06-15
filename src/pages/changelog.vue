@@ -5,6 +5,16 @@
     </h2>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
+        11 June 2022
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>~185 new user submitted characters, new missions</li>
+        <li>Settings for the gacha, dup on a gacha roll now will give nothing</li>
+        <li>Bugfixes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
         08 June 2022
       </h3>
       <ul class="list-decimal list-inside">

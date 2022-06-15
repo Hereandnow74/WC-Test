@@ -2,13 +2,15 @@ import Fuse from 'fuse.js'
 import { random, groupBy, sampleSize, findIndex, sample, isNumber } from 'lodash-es'
 import tippy from 'tippy.js'
 import { DBWorld } from 'global'
-import { allWorldsNoCondition, ALL_DLC_PERK_TITLES, CHAR_COSTS, getAllChars } from '~/data/constants'
+import { allWorldsNoCondition, ALL_DLC_PERK_TITLES, CHAR_COSTS, getAllChars, useAllChars } from '~/data/constants'
 
 import { useStore } from '~/store/store'
 import { clearAll, isBuildImage } from '~/logic'
 import { confirmDialog } from '~/logic/dialog'
 import { useChallenges } from '~/store/challenges'
 import { Perk } from '~/store/chargen'
+
+const { allCharsComp } = useAllChars()
 
 export const useTooltips = () => tippy('[data-tippy-content]', {
   animation: false,
@@ -55,8 +57,7 @@ export function lazyLoadSingleImg(img: HTMLImageElement) {
 }
 
 export async function randomChar(withImg: boolean, maxCost = 0, minCost = 0, gender: 'F' | 'M' | 'O' | null = null) {
-  let chars = await getAllChars()
-  chars = chars.filter((x) => {
+  const chars = allCharsComp.value.filter((x) => {
     let res = true
     if (gender) res = x.b && x.b.includes(gender) ? res : false
     if (withImg) res = x.i && x.i.length ? res : false
@@ -138,15 +139,14 @@ export function imageLink(link: string, uid: number) {
 //   return fuse
 // }
 
-const charSearch = computed(async() => {
-  const allChars = await getAllChars()
+const charSearch = computed(() => {
   const options = {
     findAllMatches: true,
     threshold: 0.5,
     keys: [{ name: 'n', weight: 2 }, 'w'],
   }
 
-  const fuse = new Fuse(allChars, options)
+  const fuse = new Fuse(allCharsComp.value, options)
 
   return fuse
 })
@@ -171,7 +171,7 @@ const originTextClean = computed(() => {
     'Drop-In': 'Dropped-In',
     'Walk-In': `Walked-In as ${startingOrigin.value.character} of T${startingOrigin.value.tier}`,
     'Extra': `'Extra' with ${startingOrigin.value.cost} additional cost`,
-    'Substitute': `Substitue as a ${startingOrigin.value.character} of T${startingOrigin.value.tier}`,
+    'Substitute': `Substitute as a ${startingOrigin.value.character} of T${startingOrigin.value.tier}`,
     'Possess': `Possess a ${startingOrigin.value.character} of T${startingOrigin.value.tier}`,
   } as Record<string, string>
 

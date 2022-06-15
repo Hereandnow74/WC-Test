@@ -34,12 +34,10 @@
                 />
               </h3>
               <div v-for="power, i in powers[startingOrigin.character || 'You']" :key="i" class="flex gap-2">
-                <Input v-if="perk.title !== 'OC Donut Steel'" v-model="powers[startingOrigin.character || 'You'][i]" placeholder="Power name" class="flex-grow" />
                 <CharacterInput
-                  v-else
                   v-model="powers[startingOrigin.character || 'You'][i]"
                   :idd="'idyou' + i"
-                  placeholder="Character name"
+                  placeholder="Character / Race / Power name"
                   class="flex-grow"
                   error-message=""
                 />
@@ -73,12 +71,10 @@
                 />
               </h3>
               <div v-for="power, i in powers[companion.name]" :key="i" class="flex gap-2">
-                <Input v-if="perk.title !== 'OC Donut Steel'" v-model="powers[companion.name][i]" placeholder="Power name" class="flex-grow" />
                 <CharacterInput
-                  v-else
                   v-model="powers[companion.name][i]"
                   :idd="'id'+companion.uid + i"
-                  placeholder="Character name"
+                  placeholder="Character / Race / Power name"
                   class="flex-grow"
                   error-message=""
                 />

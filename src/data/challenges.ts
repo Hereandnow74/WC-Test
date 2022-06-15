@@ -1,5 +1,5 @@
 import { findIndex, sample, random } from 'lodash-es'
-import { WORLD_RATINGS } from './constants'
+import { WORLD_RATINGS, allWorldsNoCondition } from './constants'
 import { addFreebies, deleteFreebies } from '~/logic'
 import { useStore } from '~/store/store'
 
@@ -43,7 +43,7 @@ export const challenges = [
     desc: `
     <p>&#9632;&#9632;&#9632;&#9632;&#9632;&#9632; department of Company found an anomaly in &#9632;&#9632;&#9632;&#9632;&#9632;&#9632;&#9632;&#9632; world and &#9632;&#9632; contractors were already lost, you are tasked to resolve it.</p>
     <p>Anomaly prevents work of any bindings, analyze suggest that someone or something doesn't want people from this world be bound, available information suggest that 'binding by confession' can still be achieved.</p>
-    <p>Company deemed this situation &#9632;&#9632;&#9632;&#9632;&#9632;&#9632;&#9632;&#9632; so you will be accompanied by Company employee who's equivalent to T10 waifu in power and was tasked to help you get a handle on situation.</p>
+    <p>Company deemed this situation &#9632;&#9632;&#9632;&#9632;&#9632;&#9632;&#9632;&#9632; so you will be accompanied by Company employee who's equivalent to T10 companion in power and was tasked to help you get a handle on situation.</p>
     `,
     effect: {
       set: () => companions.value.push(employee),
@@ -58,7 +58,7 @@ export const challenges = [
     cost: 0,
     desc: `
     <p>While you are prime candidate for becoming a Contractor our automatic &#9632;&#9632;&#9632;&#9632;&#9632;&#9632; marked you as a &#9632;&#9632;&#9632;&#9632;&#9632;&#9632;&#9632;&#9632; all Contactors with this designation have their personal power restricted to that of T4 and this restriction is absolute you will not be able to do anything that will increase your power level more that T4 such as operating Power armor, changing your race, using T11 tickets and all other possible methods will simply won't work or their output will be restricted to T4 level.</p>
-    <p>Receive 80% of waifu/husbando cost for the capture.</p>
+    <p>Receive 80% of companion cost for the capture.</p>
     `,
   },
   {
@@ -76,7 +76,7 @@ export const challenges = [
     dlc: 'Om1cr0n',
     cost: 0,
     desc: `
-    <p>All bindings will work only on unconsciousness and defeated by you waifus/husbandos, binding will happen after 3s of continuous application regardless of previous requirements.</p>
+    <p>All bindings will work only on unconsciousness and defeated by you copanions, binding will happen after 3s of continuous application regardless of previous requirements.</p>
     `,
   },
   {
@@ -132,6 +132,25 @@ export const challenges = [
     effect: {
       set: () => baseBudget.value = baseBudget.value * 2,
       remove: () => baseBudget.value = baseBudget.value / 2,
+    },
+  },
+  {
+    uid: 'qldtT',
+    dlc: 'Kingcarlos',
+    title: 'Good Luck Smiles on the Daring',
+    special: 'Chargen only. May not be taken on DR11.',
+    cost: 0,
+    desc: `
+      You have been chosen by the higher ups to try something different. After noting that the Random selection function for the build is never requested it was estimated that absolute randomness is not too appealing, so they will only randomize the world. Your starter world will be entirely random and, in exchange, get a 50% increase to your starter budget (that is your only tip to what world you will be going).
+    `,
+    effect: {
+      set: () => {
+        const world = sample(allWorldsNoCondition.value)
+        startingWorld.value = { worldName: world.worldName, rating: world.rating }
+        if (world.condition) startingWorld.value.condition = world.condition
+        baseBudget.value = (WORLD_RATINGS[world.rating - 1]?.budget || 0) * 1.5
+      },
+      remove: () => baseBudget.value = baseBudget.value / 1.5,
     },
   },
 ]

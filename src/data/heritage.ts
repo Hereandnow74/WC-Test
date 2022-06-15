@@ -393,7 +393,7 @@ heritages.push({
   type: 'Party',
   cost: 165,
   freebies: {
-    defensePerks: ['Trace Defense', 'Destiny Defense', 'Wyldscape Defense'],
+    defensePerks: ['Trace Defense', 'Destiny Defense'],
   },
   typeFreebies: {
     Biomorph: {

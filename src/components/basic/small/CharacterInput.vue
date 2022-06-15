@@ -50,10 +50,7 @@ const searchResult = ref([] as any[])
 
 const { charSearch } = useCharSearch()
 
-let fuse = null
-charSearch.value.then(res => fuse = res)
-
-watch(value, () => { if (fuse) searchResult.value = fuse.search(value.value, { limit: 10 }) })
+watch(value, () => { if (charSearch.value) searchResult.value = charSearch.value.search(value.value, { limit: 10 }) })
 
 let list = null
 watch(searchResult, () => {

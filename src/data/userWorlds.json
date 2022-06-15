@@ -3259,20 +3259,138 @@
     "rating": 7,
     "image": "https://gamers-hq.de/media/image/2a/aa/8d/warmachine-prime-500ac0aa993f1.jpg"
   },
-  {"worldName":"Dead Rising","rating":2,"image":"https://cdn.akamai.steamstatic.com/steam/apps/427190/capsule_616x353.jpg?t=1644282496"},
-  {"worldName":"Don't Starve","rating":6,"image":"https://i.imgur.com/INFOO5o.png"},
-  {"worldName":"Kiseki/Trails","rating":5,"image":"https://external-preview.redd.it/W3se6bMcX4AQoBMASDNKDeFHPSBWspiYk6KfzxrvX-o.jpg?auto=webp&s=7e71afe25e59d6af78eb92f49c283b9153425f8b","additional":"Captured targets that are Awakeners will also automatically add their Divine Knights as familiars.","condition":[{"name":"War of the Lions","rating":7},{"name":"Erebonian Civil War","rating":6},{"rating":7,"name":"Great Twilight"}]},
-  {"worldName":"My wife is a demon queen","rating":6,"additional":"Forging effectivness would be increased with both Aesthetic Talent and Science Talent, Engineering Talent is redundant and unneeded for forging."},
-  {"worldName":"Shomin Sample","rating":1,"image":"https://i.imgur.com/XT3ilUq.png"},
-  {"worldName":"Steven Universe","rating":6,"image":"https://i.imgur.com/yoXxLGg.jpeg","condition":[{"name":"Human Zoo","rating":1},{"rating":2,"name":"Steven Universe (Future)"}]},
-  {"worldName":"Strike the Blood","rating":5,"image":"https://wallpapercave.com/wp/wp2084972.jpg"},
-  {"worldName":"The God of High School","rating":9,"image":"https://i.imgur.com/opPIxB5_d.webp?maxwidth=640&shape=thumb&fidelity=medium"},
-  {"worldName":"The Legend Of The Legendary Heroes","rating":6},
-  {"worldName":"Kamen Rider","rating":7,"image":"https://d1i01wkzwiao45.cloudfront.net/wp-content/uploads/2018/12/20181222-KR-01.jpg","condition":[{"rating":6,"name":"Showa"},{"rating":7,"name":"Heisei"},{"name":"Raiwa","rating":7}]},
-  {"worldName":"Kamidori Alchemy Meister","rating":4,"image":"https://safebooru.org//images/1081/41cc13029d9931a29ea55d783a71c75de5ddc33c.png?1123485"},
-  {"worldName":"Mob Psycho 100","rating":7,"image":"https://cdn.donmai.us/360x360/18/88/1888871e10a61bb026bb50b1d28e6cef.jpg"},
-  {"worldName":"Shakugan no Shana","rating":5,"image":"https://i.imgur.com/CcBBe0t.png"},
-  {"worldName":"Super Sentai","rating":7,"image":"https://wallpaperaccess.com/full/1854635.jpg"},
-  {"worldName":"Ultraman","rating":9,"image":"https://c4.wallpaperflare.com/wallpaper/639/214/561/red-ultraman-hero-hd-wallpaper-preview.jpg","condition":[{"rating":7,"name":"Anime"}]},
-  {"worldName":"Voltron","rating":8}
+  {
+    "worldName": "Dead Rising",
+    "rating": 2,
+    "image": "https://cdn.akamai.steamstatic.com/steam/apps/427190/capsule_616x353.jpg?t=1644282496"
+  },
+  {
+    "worldName": "Don't Starve",
+    "rating": 6,
+    "image": "https://i.imgur.com/INFOO5o.png"
+  },
+  {
+    "worldName": "Kiseki/Trails",
+    "rating": 5,
+    "image": "https://external-preview.redd.it/W3se6bMcX4AQoBMASDNKDeFHPSBWspiYk6KfzxrvX-o.jpg?auto=webp&s=7e71afe25e59d6af78eb92f49c283b9153425f8b",
+    "additional": "Captured targets that are Awakeners will also automatically add their Divine Knights as familiars.",
+    "condition": [
+      {
+        "name": "War of the Lions",
+        "rating": 7
+      },
+      {
+        "name": "Erebonian Civil War",
+        "rating": 6
+      },
+      {
+        "rating": 7,
+        "name": "Great Twilight"
+      }
+    ]
+  },
+  {
+    "worldName": "My wife is a demon queen",
+    "rating": 6,
+    "additional": "Forging effectivness would be increased with both Aesthetic Talent and Science Talent, Engineering Talent is redundant and unneeded for forging."
+  },
+  {
+    "worldName": "Shomin Sample",
+    "rating": 1,
+    "image": "https://i.imgur.com/XT3ilUq.png"
+  },
+  {
+    "worldName": "Steven Universe",
+    "rating": 6,
+    "image": "https://i.imgur.com/yoXxLGg.jpeg",
+    "condition": [
+      {
+        "name": "Human Zoo",
+        "rating": 1
+      },
+      {
+        "rating": 2,
+        "name": "Steven Universe (Future)"
+      }
+    ]
+  },
+  {
+    "worldName": "Strike the Blood",
+    "rating": 5,
+    "image": "https://wallpapercave.com/wp/wp2084972.jpg"
+  },
+  {
+    "worldName": "The God of High School",
+    "rating": 9,
+    "image": "https://i.imgur.com/opPIxB5_d.webp?maxwidth=640&shape=thumb&fidelity=medium"
+  },
+  {
+    "worldName": "The Legend Of The Legendary Heroes",
+    "rating": 6
+  },
+  {
+    "worldName": "Kamen Rider",
+    "rating": 7,
+    "image": "https://d1i01wkzwiao45.cloudfront.net/wp-content/uploads/2018/12/20181222-KR-01.jpg",
+    "condition": [
+      {
+        "rating": 6,
+        "name": "Showa"
+      },
+      {
+        "rating": 7,
+        "name": "Heisei"
+      },
+      {
+        "name": "Raiwa",
+        "rating": 7
+      }
+    ]
+  },
+  {
+    "worldName": "Kamidori Alchemy Meister",
+    "rating": 4,
+    "image": "https://safebooru.org//images/1081/41cc13029d9931a29ea55d783a71c75de5ddc33c.png?1123485"
+  },
+  {
+    "worldName": "Mob Psycho 100",
+    "rating": 7,
+    "image": "https://cdn.donmai.us/360x360/18/88/1888871e10a61bb026bb50b1d28e6cef.jpg"
+  },
+  {
+    "worldName": "Shakugan no Shana",
+    "rating": 5,
+    "image": "https://i.imgur.com/CcBBe0t.png"
+  },
+  {
+    "worldName": "Super Sentai",
+    "rating": 7,
+    "image": "https://wallpaperaccess.com/full/1854635.jpg"
+  },
+  {
+    "worldName": "Ultraman",
+    "rating": 9,
+    "image": "https://c4.wallpaperflare.com/wallpaper/639/214/561/red-ultraman-hero-hd-wallpaper-preview.jpg",
+    "condition": [
+      {
+        "rating": 7,
+        "name": "Anime"
+      }
+    ]
+  },
+  {
+    "worldName": "Voltron",
+    "rating": 8
+  },
+  {
+    "worldName": "The Division",
+    "rating": 4,
+    "image": "",
+    "condition": [
+      {
+        "rating": 4,
+        "name": "The Division 2"
+      }
+    ]
+  }
 ]
