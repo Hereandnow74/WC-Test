@@ -66,9 +66,8 @@
           />
         </template>
         <template #rules>
-          <h6 v-if="hr.tree !== 'None'" class="text-center font-sm text-gray-600 dark:text-gray-400">
-            (<span>{{ hr.tree }}</span>
-            <span v-if="flags.isTranshuman && hr.tree === 'Transhuman'"> - {{ flags.transhumanType }}</span>)
+          <h6 v-if="flags.isTranshuman && hr.tree === 'Transhuman'" class="text-center font-sm text-gray-600 dark:text-gray-400">
+            <span > ({{ flags.transhumanType }})</span>
           </h6>
         </template>
         <template #underDesc>

@@ -618,7 +618,7 @@ heritages.push({
   type: 'Self',
   cost: 150,
   complex: 'flavor',
-  anything: 'Omen',
+  anything: 'Omen & Element',
   freebies: {
     talentPerks: ['Everlasting Talent'],
     defensePerks: ['Wild Defense', 'Wyldscape Defense'],
@@ -627,7 +627,7 @@ heritages.push({
   desc: `
 <p>A procession of signs and symbols marches always in the name of the Outsider’s terror and glory, but they will never be more than the warning signs that precede it.</p>
 <p>Your presence is intrinsically heralded by some specific aspect of reality - be it mirrors, particular arrangements of angles, opal gems, or something stranger. All examples of this Omen within the same cosmology as yourself are always considered eligible targets and destinations for any sensory and movement abilities you possess - mundane abilities included - and you can always use your senses as if co - located with your own Omens. The more specific and esoteric your Omen is, the less mental attention and focus it takes to project your awareness through them. If you have Essence Upload, your Transhuman Cores always count as Omens.</p>
-<p>You have some power and control over your Omen. Treat this as an elemental affinity as per Dragon Scale. If your Omen is ineligible or undesirable for implementation as an Element, you may pick a conceptually associated Element instead, and sensibility is not required. Mirrors may open into the depths of your oceans instead of reflecting space; opals may pulse with unearthly color and light instead of manifesting the power of the earth.</p>
+<p>You have some power and control over your Omen. Treat this as an elemental affinity as per Dragon Scale. If your Omen is ineligible or undesirable for implementation as an Element, <b>you may pick a conceptually associated Element instead</b>, and sensibility is not required. Mirrors may open into the depths of your oceans instead of reflecting space; opals may pulse with unearthly color and light instead of manifesting the power of the earth.</p>
 <p>Finally, take Everlasting Talent and one copy each of Wild Defense and Wyldscape Defense for free.</p> `,
 })
 

@@ -1,10 +1,17 @@
 <template>
-  <div class="bg-[#E3DDBC] dark:bg-[#1E1E5C] rounded p-2 shadow-lg flex flex-col gap-1">
+  <div class="bg-[#f2eecb] dark:bg-[#1E1E5C] rounded p-2 shadow-lg flex flex-col gap-1">
     <h4 class="text-lg text-center py-1">
-      {{ mission.title }}
-      <span v-if="mission.author" class="text-sm text-gray-500 dark:text-gray-400">by {{ mission.author }}</span>
+      <span v-html="mission.title"></span>
+      <span v-if="mission.author" class="text-sm text-gray-500 dark:text-gray-400"> by {{ mission.author }}</span>
     </h4>
-    <img v-if="mission.image && settings.perkImages" ref="imageEl" class="max-h-sm object-cover" :data-src="mission.image" alt="mission image">
+    <img
+      v-if="mission.image && settings.perkImages"
+      ref="imageEl"
+      class="max-h-sm object-cover"
+      draggable="false"
+      :data-src="mission.image"
+      alt="mission image"
+    >
     <div class="flex gap-2 justify-between px-2 float-right">
       <div v-if="mission.loca === 'Generic'" class="font-semibold">
         <span class=" text-teal-600 dark:text-teal-300">Generic mission</span>
@@ -12,9 +19,12 @@
       <div v-else class="font-semibold">
         <span class="font-normal text-gray-600 dark:text-gray-300">Location</span>: {{ mission.loca }}
       </div>
-      <div class="font-semibold">
+      <div class="font-semibold whitespace-nowrap">
         <span class="font-normal text-gray-600 dark:text-gray-300">Scope</span>: {{ mission.scope }}
       </div>
+    </div>
+    <div v-if="mission.budget" class="text-center text-sm text-amber-800 dark:text-amber-300">
+      ( Minimum cost of you build needed to take this mission - <span class="text-green-800 dark:text-green-300">{{ mission.budget }}</span> credits )
     </div>
     <Desc :desc="mission.desc" />
     <div v-if="mission.conditions.length" class="px-2 flex flex-col gap-1">

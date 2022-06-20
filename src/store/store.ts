@@ -148,7 +148,7 @@ const powerSwapDiscount = computed(() => {
 
 const maxHeritageDiscount = computed(() => {
   const discount = { archetype: '', value: 0 }
-  if (['Substitute', 'Possess'].includes(startingOrigin.value.title) && startingOrigin.value.hr) {
+  if (['Substitute', 'Possess', 'Walk-In'].includes(startingOrigin.value.title) && startingOrigin.value.hr) {
     discount.archetype = types[startingOrigin.value.hr] || ''
     discount.value = CHAR_COSTS[startingOrigin.value.tier] || 0
     if (discount.value === 11111) discount.value = 2000

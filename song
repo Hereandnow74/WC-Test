@@ -1,0 +1,88 @@
+[33mcommit c2c669f2ecde528e1ebd7593d1c9c561705a9d9f[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31mgitlab/master[m[33m)[m
+Author: Alex A <sanekenator@gmail.com>
+Date:   Wed Jun 15 14:01:23 2022 +0600
+
+    new challenge, gacha settings
+
+[1mdiff --git a/src/components/basic/small/CharacterInput.vue b/src/components/basic/small/CharacterInput.vue[m
+[1mindex 66d5e9d..c844466 100644[m
+[1m--- a/src/components/basic/small/CharacterInput.vue[m
+[1m+++ b/src/components/basic/small/CharacterInput.vue[m
+[36m@@ -50,10 +50,7 @@[m [mconst searchResult = ref([] as any[])[m
+ [m
+ const { charSearch } = useCharSearch()[m
+ [m
+[31m-let fuse = null[m
+[31m-charSearch.value.then(res => fuse = res)[m
+[31m-[m
+[31m-watch(value, () => { if (fuse) searchResult.value = fuse.search(value.value, { limit: 10 }) })[m
+[32m+[m[32mwatch(value, () => { if (charSearch.value) searchResult.value = charSearch.value.search(value.value, { limit: 10 }) })[m
+ [m
+ let list = null[m
+ watch(searchResult, () => {[m
+[1mdiff --git a/src/components/big/footer/apps/Gacha.vue b/src/components/big/footer/apps/Gacha.vue[m
+[1mindex 1d276d9..ca356f9 100644[m
+[1m--- a/src/components/big/footer/apps/Gacha.vue[m
+[1m+++ b/src/components/big/footer/apps/Gacha.vue[m
+[36m@@ -1,5 +1,6 @@[m
+ <template>[m
+[31m-  <div class="p-1 flex flex-col gap-2 justify-between items-center h-full overflow-hidden">[m
+[32m+[m[32m  <GachaSettings v-if="showSettings" @close="showSettings = false" />[m
+[32m+[m[32m  <div v-else class="p-1 flex flex-col gap-2 justify-between items-center h-full overflow-hidden">[m
+     <TransitionGroup v-if="isTenPull" class="grid grid-cols-5 my-auto gap-0.5 w-full h-full flex-grow" name="list" tag="div">[m
+       <GachaCard[m
+         v-for="char, i in chars"[m
+[36m@@ -21,29 +22,27 @@[m
+       :is-revealing="isRevealing"[m
+       @click="(companions.splice(companions.length - 1, 1), chars.splice(0))"[m
+     />[m
+[31m-    <!-- <div>[m
+[31m-      <div v-for="roll, key in randomD" :key="key">[m
+[31m-        {{ parseInt(key) + 1 }} : {{ roll }}[m
+[31m-      </div>[m
+[31m-      totalCost: {{ Object.values(randomD).reduce((a,x,i) => a += CHAR_COSTS[i] * x, 0) }}[m
+[31m-    </div> -->[m
+[31m-    <div class="flex gap-2 self-center">[m
+[32m+[m[32m    <div class="flex gap-2 self-center items-center">[m
+       <Button label="Roll for 3c" size="Small" bg-color="bg-orange-400" @click="onePull" />[m
+[31m-      <!-- <Button label="Roll for 3c" size="Small" bg-color="bg-orange-400" @click="testRandom" /> -->[m
+       <Button v-if="orientation" label="10 pull for 30c" size="Small" bg-color="bg-purple-500" @click="tenPull" />[m
+[32m+[m[32m      <bi:gear-fill class="icon-btn" @click="showSettings = true" />[m
+     </div>[m
+   </div>[m
+ </template>[m
+ [m
+ <script lang="ts" setup>[m
+[31m-import { intersection } from 'lodash-es'[m
+[32m+[m[32mimport { groupBy, intersection, sample } from 'lodash-es'[m
+ import { orientation, randomChar } from '~/logic'[m
+[31m-import { CHAR_COSTS } from '~/data/constants'[m
+[32m+[m[32mimport { CHAR_COSTS, useAllChars } from '~/data/constants'[m
+ import { useStore } from '~/store/store'[m
+[32m+[m[32mimport { usePlayStore } from '~/store/play'[m
+ [m
+ const { companions, fee } = useStore()[m
+[32m+[m[32mconst { gachaSettings } = usePlayStore()[m
+[32m+[m[32mconst { allCharsComp } = useAllChars()[m
+ [m
+ const chars = ref<any[]>([])[m
+[32m+[m[32mconst showSettings = ref(false)[m
+ [m
+ const chances = [[m
+   1,[m
+[36m@@ -71,51 +70,67 @@[m [mfunction onePull() {[m
+ [m
+ const companionsUIDs = computed(() => new Set(companions.value.map(x => x.uid)))[m
+ [m
+[31m-async function getRandomChar(fixedTier = 0): Promise<number> {[m
+[31m-  isRevealing.value = false[m
+[31m-  let tier = 0[m
+[31m-  if (fixedTier === 0) {[m
+[31m-    const roll = Math.random()[m
+[31m-    chances.forEach((x, i) => {[m
+[31m-      if (roll <= x)[m
+[31m-        tier = i[m
+[31m-    })[m
+[31m-  }[m
+[31m-  else { tier = fixedTier }[m
+[31m- 

@@ -4,7 +4,7 @@
     justify-center gap-1 shadow shadow-dark-50"
     :class="[bgColor, sizes[size], {'!bg-gray-500 hover:scale-100 cursor-not-allowed': disabled}]"
   >
-    <span v-if="icon" class="iconify" :data-icon="icon"></span>
+    <span v-if="icon" class="flex items-center" :class="{'text-xl': size !== 'Small'}"><span class="iconify" :data-icon="icon"></span></span>
     <span v-if="label">{{ label }}</span>
   </button>
 </template>

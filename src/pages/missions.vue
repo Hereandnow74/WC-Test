@@ -1,30 +1,39 @@
 <template>
-  <div class="rounded p-2">
-    <h3 class="text-xl text-center flex gap-2">
-      <div
-        :class="page === 0 ? 'border-2 border-amber-500': ''"
+  <div class="rounded p-2 flex flex-col gap-2">
+    <h3 class="text-center flex gap-2 flex-wrap">
+      <Button
+        :class="page === 0 ? 'bg-blue-800': ''"
         class="bg-purple-700 text-gray-100 rounded cursor-pointer hover:bg-purple-800 px-2"
+        label="User submitted Missions"
+        icon="carbon:user-avatar-filled-alt"
         @click="page = 0"
       >
-        User submitted Missions
-      </div>
-      <div
-        :class="page === 1 ? 'border-2 border-amber-500': ''"
+      </Button>
+      <Button
+        :class="page === 1 ? 'bg-blue-800': ''"
         class="bg-purple-700 text-gray-100 rounded cursor-pointer hover:bg-purple-800 px-2"
+        label="Generated Missions"
+        icon="icon-park-solid:robot-one"
         @click="page = 1"
       >
-        Generated Missions
-      </div>
+      </Button>
+      <Button
+        :class="page === 2 ? 'bg-blue-800': ''"
+        class="bg-purple-700 text-gray-100 rounded cursor-pointer hover:bg-purple-800 px-2"
+        label="3 random missions"
+        icon="bi:patch-question-fill"
+        @click="page = 2"
+      >
+      </Button>
       <Button
         class="text-base"
-        size="Small"
         icon="fluent:book-question-mark-24-regular"
         label="Propose a Mission"
-        bg-color="bg-purple-700"
+        bg-color="bg-amber-600"
         @click="() => toggleShowAddMission()"
       />
     </h3>
-    <div class="flex gap-2 justify-center flex-wrap py-2">
+    <div v-if="page === 0" class="flex gap-2 justify-center flex-wrap">
       <div>
         <Select v-model="author" :options="authorOptions" label="Author" />
       </div>
@@ -35,7 +44,7 @@
         <Select v-model="scope" :options="scopeOptions" label="Scope" />
       </div>
     </div>
-    <Note v-if="page === 1" class="mb-2" type="warning" title="Work in progress">
+    <Note v-if="page === 1" type="warning" title="Work in progress">
       This section is in WIP stage, you can suggest simple missions/conditions/objectives for random mission generation on Discord
     </Note>
     <div class="grid 2xl:grid-cols-3 lg:grid-cols-2 gap-4 pb-8 justify-center">
@@ -46,11 +55,14 @@
 </template>
 
 <script lang="ts" setup>
-import { groupBy } from 'lodash-es'
+import { groupBy, sample } from 'lodash-es'
 import { missions } from '~/data/missions'
 
 import { toggleShowAddMission } from '~/logic'
 import { MissionGenerator } from '~/logic/missionsGen'
+import { usePlayStore } from '~/store/play'
+
+const { currentWorld } = usePlayStore()
 
 const authorOptions = Object.keys(groupBy(missions, 'author')).sort((a, b) => a.localeCompare(b))
 authorOptions.unshift('Any')
@@ -66,13 +78,25 @@ const page = ref(0)
 const filteredMissions = computed(() => missions.filter(mission => (mission.author === author.value || author.value === 'Any') && (mission.loca === world.value || world.value === 'Any') && (mission.scope === scope.value || scope.value === 'Any')))
 
 const gen = new MissionGenerator()
-const generatedMissions = ref<any[]>([])
-
-gen.prepareGeneration().then((generator) => {
+const gen2 = new MissionGenerator()
+const generatedMissions = computed(() => {
+  const arr = []
   for (let i = 0; i < 10; i++)
-    generatedMissions.value.push(generator.generateRandom().getObject())
+    arr.push(gen.generateRandom().getObject())
+  return arr
 })
 
-const displayedMissions = computed(() => page.value === 0 ? filteredMissions.value : generatedMissions.value)
+const threeMission = computed(() => [sample(missions), sample(missions), gen2.generateRandom(currentWorld.value.worldName).getObject()])
+
+const displayedMissions = computed(() => {
+  switch (page.value) {
+    case 0:
+      return filteredMissions.value
+    case 1:
+      return generatedMissions.value
+    case 2:
+      return threeMission.value
+  }
+})
 
 </script>

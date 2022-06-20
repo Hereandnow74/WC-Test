@@ -78,6 +78,7 @@ interface Mission {
   }[]
   reward: string
   image: string
+  budget: number
 }
 
 export interface Perk {

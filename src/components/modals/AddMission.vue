@@ -23,7 +23,8 @@
       <div class="min-h-max">
         <TextArea v-model="desc" placeholder="Mission description" :rows="'4'" :error-message="errors.desc" />
       </div>
-      <div class="flex flex-col gap-2">
+      <div class="flex gap-2">
+        <Select v-model="rewardType" placeholder="Reward Type" :options="['Credits', 'T11 Tickets', 'Perks', 'Other']" />
         <Input
           v-model="reward"
           class="flex-grow"
@@ -58,7 +59,7 @@
         <div
           v-for="requirement, i in objectives"
           :key="requirement"
-          class="flex gap-1 items-center"
+          class="flex gap-1 items-center bg-gray-300 dark:bg-gray-600 p-1 rounded"
         >
           <div class="flex flex-col gap-2 flex-grow">
             <Input
@@ -66,11 +67,15 @@
               :placeholder="`Requirement #${i + 1}`"
               :error-message="errors.objectives"
             />
-            <Input
-              v-model="requirement.reward"
-              :placeholder="`Bonus reward (optional) #${i + 1}`"
-              :error-message="errors.objectives"
-            />
+            <div class="flex gap-2">
+              <Select v-model="requirement.type" placeholder="Reward Type" :options="['Credits', 'T11 Tickets', 'Perks', 'Other']" />
+              <Input
+                v-model="requirement.reward"
+                :placeholder="`Bonus reward (optional) #${i + 1}`"
+                :error-message="errors.objectives"
+                class="flex-grow"
+              />
+            </div>
           </div>
           <fluent:delete-20-filled class="text-red-500 hover:text-red-400 cursor-pointer" @click="objectives.splice(i, 1)" />
         </div>
@@ -122,8 +127,9 @@ const schema = toFormValidator(
     loca: zod.string().nonempty('Location is required'),
     scope: zod.string().nonempty('Scope is required'),
     conditions: zod.object({ value: zod.string() }).array(),
-    objectives: zod.object({ value: zod.string(), reward: zod.string() }).array(),
+    objectives: zod.object({ value: zod.string(), reward: zod.string(), type: zod.string() }).array(),
     reward: zod.string().nonempty('Reward is required'),
+    rewardType: zod.string().nonempty('Reward type is required'),
     image: zod.string().regex(/[^ \!@\$\^&\(\)\+\=]+(\.png|\.jpeg|\.gif|\.jpg|\.webp)$/, { message: 'Must be a valid image URL in a jpeg/jpg/png/gif/webp format.' }).max(256, { message: 'Maximum length is 256 chars' }).optional().or(zod.literal('')),
     desc: zod.string().max(5000, 'Max length is 5000 chars').nonempty('Description is required'),
   }),
@@ -158,6 +164,7 @@ const { value: scope } = useField<string>('scope')
 const { value: conditions } = useField<any[]>('conditions')
 const { value: objectives } = useField<any[]>('objectives')
 const { value: reward } = useField<any[]>('reward')
+const { value: rewardType } = useField<any[]>('rewardType')
 const { value: image } = useField<string>('image')
 
 const addPerk = handleSubmit((values) => {

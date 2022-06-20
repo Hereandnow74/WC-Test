@@ -188,6 +188,8 @@ export const waifuTags = {
   su: { tag: 'Succubus', short: 'su', effect: '', desc: '', color: 'bg-teal-500 text-black' },
   cm: { tag: 'Combatant', short: 'cm', effect: '', desc: 'have a combat expirience / have a combat oriented powerset', color: 'bg-teal-500 text-black' },
   is: { tag: 'Insane', short: 'is', effect: '', desc: '', color: 'bg-teal-500 text-black' },
+  rw: { tag: 'Reality Warper', short: 'rw', effect: '', desc: '', color: 'bg-teal-500 text-black' },
+  ha: { tag: 'Hacker', short: 'ha', effect: '', desc: '', color: 'bg-teal-500 text-black' },
 
   U: { tag: 'By User', short: 'U', effect: '', desc: 'Characters that were added to Interactive by users, applied automatically to all submitted characters', color: 'bg-warm-gray-600' },
 } as const

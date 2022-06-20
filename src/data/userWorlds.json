@@ -1606,7 +1606,7 @@
     "worldName": "Warlock of the Magus World",
     "rating": 7,
     "image": "https://vignette.wikia.nocookie.net/warlock-of-the-magus-world/images/2/2b/Dragon-horde.jpg/revision/latest?cb=20171218122055",
-    "additional": "Starting in a world ruled by one or several Rank 8 beings(the equivalent of at least t10, possibly t11 in Waifu Catalogue ratings). ",
+    "additional": "",
     "condition": [
       {
         "rating": 9,
@@ -3392,5 +3392,15 @@
         "name": "The Division 2"
       }
     ]
-  }
+  },
+  {"worldName":"Demon Kings Town Planning! ~The Strongest Dungeon is a Modern City","rating":7,"image":"","additional":"Captured Demon Lords will have three named monsters/demons under his control as Familiars."},
+  {"worldName":"Guilty Gear","rating":10},
+  {"worldName":"Hitsugi no Chaika","rating":3,"image":"https://i.imgur.com/ApWITQf.png"},
+  {"worldName":"K Project","rating":3,"image":"https://images-na.ssl-images-amazon.com/images/I/91Sn9Ma7e1L._RI_.jpg"},
+  {"worldName":"Magi: The Labyrinth of Magic","rating":5,"image":"https://i.imgur.com/GY0PieH.jpg","condition":[{"name":"Start of Series","rating":5},{"rating":4,"name":"Sindbad no Bouken"},{"name":"Ancient Alma Torran","rating":7}]},
+  {"worldName":"Planescape","rating":9},
+  {"worldName":"Ragnarok - The Animation","rating":5,"image":"https://i.ytimg.com/vi/XeASy3a3YY8/0.jpg"},
+  {"worldName":"Rick and Morty","rating":10,"image":"https://m.media-amazon.com/images/M/MV5BZjRjOTFkOTktZWUzMi00YzMyLThkMmYtMjEwNmQyNzliYTNmXkEyXkFqcGdeQXVyNzQ1ODk3MTQ@._V1_.jpg"},
+  {"worldName":"Swallowed Star","rating":10,"image":"https://image.tmdb.org/t/p/original/vot4laaXQBQ0QhUtAzOuxbeCYE0.jpg"},
+  {"worldName":"Undertale","rating":3,"image":"https://www.logolynx.com/images/logolynx/f3/f39b3505ddcc08055a8e3719e8fecfb2.jpeg"}
 ]

@@ -5,6 +5,25 @@
     </h2>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
+        19 June 2022
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>~65 new user submitted characters, new missions</li>
+        <li>Done a bit of a work on missions page and generated missions</li>
+        <li>Bugfixes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
+        15 June 2022
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>~60 new user submitted characters, new missions, 10 new worlds</li>
+        <li>Bugfixes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
         11 June 2022
       </h3>
       <ul class="list-decimal list-inside">
