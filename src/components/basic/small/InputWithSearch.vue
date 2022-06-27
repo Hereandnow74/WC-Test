@@ -5,6 +5,7 @@
       <Input
         :id="idd"
         v-model="value"
+        :disabled="disabled"
         :placeholder="placeholder"
         :error-message="errorMessage"
         class="flex-grow"
@@ -14,7 +15,7 @@
       <div
         v-for="name in searchResult"
         :key="name.item"
-        class="hover:bg-gray-600"
+        class="hover:bg-gray-600 cursor-pointer"
         @click="optionClicked(name.item)"
       >
         {{ name.item }}
@@ -52,6 +53,10 @@ const props = defineProps({
   list: {
     type: Array as PropType<string[]>,
     default: () => [],
+  },
+  disabled: {
+    type: Boolean,
+    default: false,
   },
 })
 

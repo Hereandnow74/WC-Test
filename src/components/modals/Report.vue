@@ -13,13 +13,16 @@
         <Toggle v-model="wrongImage" label="Image" />
       </div>
       <div v-if="wrongTier" class="flex flex-col gap-2">
+        <Note v-if="character.tags.includes('C')" title="Official WC" type="error">
+          Only acceptable argument for characters with Official WC tag is - "tier was changed in official spreadsheet", if not send your arguments to SwiftRosenthal on QQ or Discord.
+        </Note>
         <div class="flex gap-2 justify-between">
           <div>Current tier: {{ character.tier }}</div>
           <NumberInput
             v-model="tier"
             :min="1"
             :max="11"
-            label="Right tier"
+            label="Correct tier"
             class="whitespace-nowrap"
             :error-message="errors.tier"
           />

@@ -65,6 +65,7 @@ interface Challenge {
 }
 
 interface Mission {
+  uid: string
   title: string
   author: string
   source: string

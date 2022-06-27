@@ -69,7 +69,7 @@ function slightlyTier(n: number, tier: number, isTrauma: boolean): number {
     [10, 9, 8, 7, 6, 5, 4, 3, 2, 1],
   ]
   if (n < 8) return isTrauma ? 0 : 0
-  if (n >= 9 && n < 11) return isTrauma ? 0 : plus[1][tier - 1]
+  if (n >= 9 && n <= 11) return isTrauma ? 0 : plus[1][tier - 1]
   if (n >= 12 && n <= 14) return isTrauma ? 0 : plus[2][tier - 1]
   if (n >= 15 && n <= 17) return isTrauma ? 0 : plus[3][tier - 1]
   if (n >= 18 && n <= 20) return isTrauma ? 0 : plus[4][tier - 1]

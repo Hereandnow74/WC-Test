@@ -54,6 +54,14 @@
         </div>
       </div>
     </div>
+    <Button
+      class="bg-red-700 text-gray-100 rounded cursor-pointer hover:bg-red-800 px-2 mt-auto self-center"
+      :label="missionRewards[mission.uid] ? 'Edit the rewards': 'Take the Mission'"
+      :class="{'bg-orange-600': missionRewards[mission.uid]}"
+      icon="charm:swords"
+      @click="showTakeMission = true"
+    />
+    <TakeMission v-if="showTakeMission" :mission="mission" @click="showTakeMission = false" />
   </div>
 </template>
 
@@ -61,9 +69,11 @@
 import { Mission } from 'global'
 import type { PropType } from 'vue'
 import { lazyLoadSingleImg } from '~/logic'
+import { usePlayStore } from '~/store/play'
 import { useStore } from '~/store/store'
 
 const { settings } = useStore()
+const { missionRewards } = usePlayStore()
 
 defineProps({
   mission: {
@@ -73,6 +83,7 @@ defineProps({
 })
 
 const imageEl = ref(null)
+const showTakeMission = ref(false)
 
 onMounted(() => { if (imageEl.value) lazyLoadSingleImg(imageEl.value) })
 

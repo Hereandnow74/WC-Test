@@ -7,24 +7,21 @@
         label="User submitted Missions"
         icon="carbon:user-avatar-filled-alt"
         @click="page = 0"
-      >
-      </Button>
+      />
       <Button
         :class="page === 1 ? 'bg-blue-800': ''"
         class="bg-purple-700 text-gray-100 rounded cursor-pointer hover:bg-purple-800 px-2"
         label="Generated Missions"
         icon="icon-park-solid:robot-one"
         @click="page = 1"
-      >
-      </Button>
+      />
       <Button
         :class="page === 2 ? 'bg-blue-800': ''"
         class="bg-purple-700 text-gray-100 rounded cursor-pointer hover:bg-purple-800 px-2"
         label="3 random missions"
         icon="bi:patch-question-fill"
         @click="page = 2"
-      >
-      </Button>
+      />
       <Button
         class="text-base"
         icon="fluent:book-question-mark-24-regular"
@@ -43,6 +40,7 @@
       <div>
         <Select v-model="scope" :options="scopeOptions" label="Scope" />
       </div>
+      <Button v-if="Object.values(missionRewards).length" size="Small" label="Delete all rewards" bg-color="bg-red-600" @click="missionRewards = {}" />
     </div>
     <Note v-if="page === 1" type="warning" title="Work in progress">
       This section is in WIP stage, you can suggest simple missions/conditions/objectives for random mission generation on Discord
@@ -55,18 +53,28 @@
 </template>
 
 <script lang="ts" setup>
+import { Mission } from 'global'
 import { groupBy, sample } from 'lodash-es'
-import { missions } from '~/data/missions'
 
 import { toggleShowAddMission } from '~/logic'
 import { MissionGenerator } from '~/logic/missionsGen'
 import { usePlayStore } from '~/store/play'
 
-const { currentWorld } = usePlayStore()
+const { currentWorld, missionRewards } = usePlayStore()
+const missions = ref<Mission[]>([])
 
-const authorOptions = Object.keys(groupBy(missions, 'author')).sort((a, b) => a.localeCompare(b))
-authorOptions.unshift('Any')
-const worldOptions = Object.keys(groupBy(missions, 'loca')).sort((a, b) => a.localeCompare(b))
+async function getMissions() {
+  missions.value = (await import('~/data/missions.json')).default
+}
+
+getMissions()
+
+const authorOptions = computed(() => {
+  const authors = Object.keys(groupBy(missions.value, 'author')).sort((a, b) => a.localeCompare(b))
+  authors.unshift('Any')
+  return authors
+})
+const worldOptions = computed(() => Object.keys(groupBy(missions.value, 'loca')).sort((a, b) => a.localeCompare(b)))
 const scopeOptions = ['Any', 'Quick', 'Standard', 'Grand']
 
 const author = ref('Any')
@@ -75,7 +83,7 @@ const scope = ref('Any')
 
 const page = ref(0)
 
-const filteredMissions = computed(() => missions.filter(mission => (mission.author === author.value || author.value === 'Any') && (mission.loca === world.value || world.value === 'Any') && (mission.scope === scope.value || scope.value === 'Any')))
+const filteredMissions = computed(() => missions.value.filter(mission => (mission.author === author.value || author.value === 'Any') && (mission.loca === world.value || world.value === 'Any') && (mission.scope === scope.value || scope.value === 'Any')))
 
 const gen = new MissionGenerator()
 const gen2 = new MissionGenerator()
@@ -86,7 +94,7 @@ const generatedMissions = computed(() => {
   return arr
 })
 
-const threeMission = computed(() => [sample(missions), sample(missions), gen2.generateRandom(currentWorld.value.worldName).getObject()])
+const threeMission = computed(() => [sample(missions.value), sample(missions.value), gen2.generateRandom(currentWorld.value.worldName).getObject()])
 
 const displayedMissions = computed(() => {
   switch (page.value) {

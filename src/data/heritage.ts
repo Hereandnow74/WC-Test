@@ -1,6 +1,7 @@
 export interface Heritage {
   uid: string
   title: string
+  category: string
   type?: string
   tree: 'Dragon' | 'Transhuman' | 'Outsider' | 'None'
   cost: number
@@ -28,6 +29,7 @@ export const desc = `
 heritages.push({
   uid: 'JrxZe',
   title: 'Ancestral Diversity',
+  category: 'Heritage',
   image: 'https://i.ibb.co/Hqzvfds/Ancestral-Diversity.jpg',
   cost: 11111,
   tree: 'None',
@@ -39,6 +41,7 @@ heritages.push({
 heritages.push({
   uid: '2ivtj',
   title: 'Dragon Heart',
+  category: 'Heritage',
   image: 'https://i.ibb.co/SBXsnBY/Dragon-Heart.jpg',
   tree: 'Dragon',
   type: 'Root',
@@ -58,6 +61,7 @@ heritages.push({
   title: 'Dragon Scale',
   image: 'https://i.ibb.co/1RNSC0w/Dragon-Scale.jpg',
   tree: 'Dragon',
+  category: 'Heritage',
   type: 'Self',
   cost: 95,
   complex: 'flavor',
@@ -76,6 +80,7 @@ heritages.push({
 heritages.push({
   uid: '7Fc4I',
   title: 'Dragon Aura',
+  category: 'Heritage',
   image: 'https://i.ibb.co/BzH3djV/Dragon-Aura.jpg',
   tree: 'Dragon',
   type: 'Lure',
@@ -94,6 +99,7 @@ heritages.push({
 heritages.push({
   uid: 'wx0kI',
   title: 'Dragon Thrall',
+  category: 'Heritage',
   image: 'https://i.ibb.co/jR1sk8k/Dragon-Thrall.jpg',
   tree: 'Dragon',
   type: 'Party',
@@ -112,6 +118,7 @@ heritages.push({
 heritages.push({
   uid: 'QlHkg',
   title: 'Dragon Blood',
+  category: 'Heritage',
   image: 'https://i.ibb.co/7kxydhS/Dragon-Blood.jpg',
   tree: 'Dragon',
   type: 'Party',
@@ -128,6 +135,7 @@ heritages.push({
 heritages.push({
   uid: '3AGji',
   title: 'Treasure Hoard',
+  category: 'Heritage',
   image: 'https://i.ibb.co/KWBbXhH/Dragon-Hoard.jpg',
   tree: 'Dragon',
   type: 'Other Control',
@@ -139,6 +147,7 @@ heritages.push({
 heritages.push({
   uid: '9fu6L',
   title: 'Dragon Cabin',
+  category: 'Heritage',
   image: 'https://i.ibb.co/5BYYqTf/Dragon-Cabin.jpg',
   tree: 'Dragon',
   type: 'Party',
@@ -152,6 +161,7 @@ heritages.push({
 heritages.push({
   uid: 'uMDT3',
   title: 'Dragon Bifurcation',
+  category: 'Heritage',
   image: 'https://i.ibb.co/rH31fGY/Dragon-Bifurcation.jpg',
   tree: 'Dragon',
   type: 'Self',
@@ -163,6 +173,7 @@ heritages.push({
 heritages.push({
   uid: 'CYKzi',
   title: 'Dragon Break',
+  category: 'Heritage',
   image: 'https://i.ibb.co/MBH4jc2/Dragon-Break.jpg',
   tree: 'Dragon',
   type: 'Self',
@@ -177,6 +188,7 @@ heritages.push({
   title: 'Double Dragon',
   image: 'https://i.ibb.co/0QpJFXJ/Dragon-Double.jpg',
   tree: 'Dragon',
+  category: 'Heritage',
   type: 'Self',
   cost: 200,
   complex: 'flavor',
@@ -193,6 +205,7 @@ heritages.push({
   title: 'Elder Dragon',
   image: 'https://i.ibb.co/JBVtkRL/Dragon-Elder.jpg',
   tree: 'Dragon',
+  category: 'Heritage',
   type: 'Self',
   complex: 'flavor',
   anything: 'Element',
@@ -204,6 +217,7 @@ heritages.push({
 heritages.push({
   uid: 'twP3B',
   title: 'First Augmentation',
+  category: 'Heritage',
   tree: 'Transhuman',
   image: 'https://i.ibb.co/cgB6R84/First-Augmentation.jpg',
   type: 'Root',
@@ -238,6 +252,7 @@ heritages.push({
 heritages.push({
   uid: 'u7aSv',
   title: 'Networking',
+  category: 'Heritage',
   tree: 'Transhuman',
   image: 'https://i.ibb.co/ZNtgK4q/Networking.jpg',
   type: 'Lure, Other Control',
@@ -258,6 +273,7 @@ heritages.push({
 heritages.push({
   uid: 'lyv42',
   title: 'Full Conversion',
+  category: 'Heritage',
   tree: 'Transhuman',
   image: 'https://i.ibb.co/tXdthbH/Full-Conversion.jpg',
   type: 'Self',
@@ -282,6 +298,7 @@ heritages.push({
 heritages.push({
   uid: 'sGuOe',
   title: 'Essence Reactor',
+  category: 'Heritage',
   tree: 'Transhuman',
   image: 'https://i.ibb.co/BsnDNhq/Essence-Reactor.jpg',
   type: 'Self',
@@ -318,6 +335,7 @@ heritages.push({
   uid: 'R6TQB',
   title: 'Evolutionary Engine Array',
   tree: 'Transhuman',
+  category: 'Heritage',
   image: 'https://i.ibb.co/khbcryv/Evolutionary-Engine-Array.jpg',
   type: 'Self',
   cost: 50,
@@ -331,6 +349,7 @@ heritages.push({
 heritages.push({
   uid: 'x9ZFJ',
   title: 'Essence Upload',
+  category: 'Heritage',
   tree: 'Transhuman',
   image: 'https://i.ibb.co/K5m0Dfr/Essence-Upload.jpg',
   type: 'Self',
@@ -371,6 +390,7 @@ heritages.push({
   uid: '83GXs',
   title: 'Philosopher’s Transmortality Engine',
   tree: 'Transhuman',
+  category: 'Heritage',
   image: 'https://i.ibb.co/93Nn2vf/Philosophers-Transmortality-Engine.jpg',
   type: 'Party',
   cost: 0,
@@ -388,6 +408,7 @@ heritages.push({
 heritages.push({
   uid: 'RabV5',
   title: 'Multicore Neural Leyline',
+  category: 'Heritage',
   tree: 'Transhuman',
   image: 'https://i.ibb.co/5vfC81N/Multicore-Neural-Leyline.jpg',
   type: 'Party',
@@ -446,6 +467,7 @@ heritages.push({
 heritages.push({
   uid: 'lOe02',
   title: 'Incandescent Ascendancy Machine',
+  category: 'Heritage',
   tree: 'Transhuman',
   image: 'https://i.ibb.co/tqkg38h/Incandescent-Ascendancy-Machine.jpg',
   type: 'Self',
@@ -492,6 +514,7 @@ heritages.push({
 heritages.push({
   uid: 'PCUlx',
   title: 'Singularity',
+  category: 'Heritage',
   tree: 'Transhuman',
   image: 'https://i.ibb.co/Lr1fgBW/Singularity.jpg',
   type: 'Self',
@@ -503,6 +526,7 @@ heritages.push({
 heritages.push({
   uid: 'gNYsZ',
   title: 'Lurking On The Threshold',
+  category: 'Heritage',
   tree: 'Outsider',
   image: 'https://i.ibb.co/7tYBYrV/Lurking-On-The-Threshold.jpg',
   type: 'Root',
@@ -519,6 +543,7 @@ heritages.push({
 heritages.push({
   uid: '4Fr2Y',
   title: 'I Wear No Mask',
+  category: 'Heritage',
   tree: 'Outsider',
   image: 'https://i.ibb.co/CHryQdZ/IWear-No-Mask.jpg',
   type: 'Self',
@@ -537,6 +562,7 @@ heritages.push({
 heritages.push({
   uid: '9j3K6',
   title: 'Sanity - Shattering Instruction',
+  category: 'Heritage',
   tree: 'Outsider',
   image: 'https://i.ibb.co/wRkkVfL/Sanity-Shattering-Instruction.jpg',
   type: 'Lure, Party',
@@ -555,6 +581,7 @@ heritages.push({
 heritages.push({
   uid: 'QOu5J',
   title: 'Endless Gospels Unspoken',
+  category: 'Heritage',
   tree: 'Outsider',
   image: 'https://i.ibb.co/j6jTKkp/Endless-Gospels-Unspoken.jpg',
   type: 'Lure, Party',
@@ -568,6 +595,7 @@ heritages.push({
 heritages.push({
   uid: 'FsBvs',
   title: 'Beyond The Wall Of Sleep',
+  category: 'Heritage',
   tree: 'Outsider',
   image: 'https://i.ibb.co/QQGFZWD/Beyond-The-Wall-Of-Sleep.jpg',
   type: 'Lure, Party',
@@ -595,6 +623,7 @@ heritages.push({
 heritages.push({
   uid: 'aIf8P',
   title: 'Prophet Of Paradox',
+  category: 'Heritage',
   tree: 'Outsider',
   image: 'https://i.ibb.co/sQ1CSVh/Prophet-Of-Paradox.jpg',
   type: 'Self, Lure',
@@ -613,6 +642,7 @@ heritages.push({
 heritages.push({
   uid: 'iiYjJ',
   title: 'Everywhere And Nowhere',
+  category: 'Heritage',
   tree: 'Outsider',
   image: 'https://i.ibb.co/Y3hXjV1/Everywhere-And-Nowhere.jpg',
   type: 'Self',
@@ -634,6 +664,7 @@ heritages.push({
 heritages.push({
   uid: 'hBvf6',
   title: 'Elder Sign',
+  category: 'Heritage',
   tree: 'Outsider',
   image: 'https://i.ibb.co/VCnMZBq/Elder-Sign.jpg',
   type: 'Other Control',
@@ -651,6 +682,7 @@ heritages.push({
 heritages.push({
   uid: 'eLLM1',
   title: 'Branded by Possibility',
+  category: 'Heritage',
   tree: 'Outsider',
   image: 'https://i.ibb.co/WnXQvFT/Branded-By-Possibility.jpg',
   type: 'Self',
@@ -668,6 +700,7 @@ heritages.push({
 heritages.push({
   uid: 'QgoGO',
   title: 'The Gate And The Key',
+  category: 'Heritage',
   tree: 'Outsider',
   image: 'https://i.ibb.co/Jx2CCy9/The-Gate-And-The-Key.jpg',
   type: 'Self',
@@ -686,6 +719,7 @@ heritages.push({
 heritages.push({
   uid: 'r1FCe',
   title: 'An Answer To Reason',
+  category: 'Heritage',
   tree: 'Outsider',
   image: 'https://i.ibb.co/5Tm2wM5/An-Answer-To-Reason.jpg',
   type: 'Self',

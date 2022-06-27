@@ -2941,7 +2941,13 @@
   },
   {
     "worldName": "Mistborn",
-    "rating": 10,
+    "rating": 7,
+    "condition": [
+      {
+        "rating": 100,
+        "name": "After Book 2"
+      }
+    ],
     "image": "https://i.pinimg.com/originals/e4/ef/7c/e4ef7c12ecb245ca74f06ba9dca19ffc.jpg"
   },
   {
@@ -3402,5 +3408,14 @@
   {"worldName":"Ragnarok - The Animation","rating":5,"image":"https://i.ytimg.com/vi/XeASy3a3YY8/0.jpg"},
   {"worldName":"Rick and Morty","rating":10,"image":"https://m.media-amazon.com/images/M/MV5BZjRjOTFkOTktZWUzMi00YzMyLThkMmYtMjEwNmQyNzliYTNmXkEyXkFqcGdeQXVyNzQ1ODk3MTQ@._V1_.jpg"},
   {"worldName":"Swallowed Star","rating":10,"image":"https://image.tmdb.org/t/p/original/vot4laaXQBQ0QhUtAzOuxbeCYE0.jpg"},
-  {"worldName":"Undertale","rating":3,"image":"https://www.logolynx.com/images/logolynx/f3/f39b3505ddcc08055a8e3719e8fecfb2.jpeg"}
+  {"worldName":"Undertale","rating":3,"image":"https://www.logolynx.com/images/logolynx/f3/f39b3505ddcc08055a8e3719e8fecfb2.jpeg"},
+  {"worldName":"Everyone Else is a Returnee","rating":8,"condition":[{"name":"The 1st Great Cataclysm/The Return","rating":7},{"name":"The 2nd Great Cataclysm","rating":8},{"rating":9,"name":"The Last Battle"}]},
+  {"worldName":"Exalted Versus the World of Darkness","rating":7},
+  {"worldName":"Nobilis","rating":10},
+  {"worldName":"Rokka no Yuusha","rating":6,"image":"https://i.imgur.com/wAa09T7.png"},
+  {"worldName":"Rumble Roses","rating":3},
+  {"worldName":"Scott Pilgrim","rating":4,"image":"https://i.ibb.co/qmk5rby/spvw-header-art-v7.webp"},
+  {"worldName":"Terraformars","rating":5,"image":"https://sucodemanga.com.br/wp-content/uploads/2018/04/terra-formars-thumb.jpg"},
+  {"worldName":"The Chronicles Of Riddick","rating":5,"image":"https://i.imgur.com/Gy4oUkY.jpeg"},
+  {"worldName":"Ubau Mono Ubawareru Mono","rating":4,"image":"https://cdn.novelupdates.com/images/2017/06/Screenshot_1.jpg"}
 ]

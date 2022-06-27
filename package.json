@@ -11,7 +11,7 @@
   "dependencies": {
     "@popperjs/core": "^2.11.5",
     "@vee-validate/zod": "^4.5.11",
-    "@vueuse/core": "^7.7.1",
+    "@vueuse/core": "^8.2.5",
     "firebase": "^9.8.3",
     "fuse.js": "^6.6.2",
     "html2canvas": "^1.4.1",

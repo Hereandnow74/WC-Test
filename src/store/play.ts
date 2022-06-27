@@ -50,6 +50,19 @@ const gachaSettings = useStorage('gachaSettings', {
   minTierForTen: 4,
 })
 
+interface MissionsReward {
+  [key: string]: {uid: string
+    title: string
+    location: string
+    desc: string
+    rewards: {
+      type: string
+      value: string | number
+    }[]}
+}
+
+const missionRewards = useStorage<MissionsReward>('missionRewards', {})
+
 export function usePlayStore() {
   return {
     jumpChain,
@@ -66,5 +79,6 @@ export function usePlayStore() {
     dungeons,
     manualDevotees,
     gachaSettings,
+    missionRewards,
   }
 }

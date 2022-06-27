@@ -5,6 +5,7 @@
       <input
         :type="type"
         :name="name"
+        :disabled="disabled"
         class="rounded dark:(bg-warm-gray-700 border border-warm-gray-500) px-2 w-full"
         outline="dark:(none active:none)"
         border="~ gray-800"
@@ -44,6 +45,10 @@ defineProps({
   name: {
     type: String,
     default: '',
+  },
+  disabled: {
+    type: Boolean,
+    default: false,
   },
 })
 

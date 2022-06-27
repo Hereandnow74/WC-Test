@@ -5,7 +5,7 @@ import { useChargenStore } from './chargen'
 import { CHAR_COSTS, heritageTiers, WORLD_RATINGS } from '~/data/constants'
 import { defenseObject, talentsObject } from '~/data/talents'
 
-const { loan, jumpChain, currentWorld, trHistory } = usePlayStore()
+const { loan, jumpChain, currentWorld, trHistory, missionRewards } = usePlayStore()
 
 const {
   baseBudget,
@@ -230,6 +230,10 @@ const fullStartingBudget = computed(() => {
 
 const creditLimit = computed(() => 500 + jumpChain.value.length * 100)
 
+const missionRewardCredits = computed(() => Object.values(missionRewards.value).reduce((sum, miss) => sum += miss.rewards.reduce((missSum, rw) => rw.type === 'Credits' ? missSum += parseInt(`${rw.value}`) || 0 : missSum, 0), 0))
+
+const missionRewardTickets = computed(() => Object.values(missionRewards.value).reduce((sum, miss) => sum += miss.rewards.reduce((missSum, rw) => rw.type === 'T11 Tickets' ? missSum += parseInt(`${rw.value}`) || 0 : missSum, 0), 0))
+
 const budget = computed(() => {
   const bd = fullStartingBudget.value - startingOrigin.value.cost - pvpPerksCost.value
       - bindingCost.value - heritageCost.value - luresCost.value - ridePerksCost.value - homePerksCost.value
@@ -237,7 +241,7 @@ const budget = computed(() => {
       - genericWaifuPerksCost.value - companionsCost.value - otherCost.value - fee.value
       - budgetMods.value.minus + budgetMods.value.plus + companionProfit.value + companionProfitSold.value
       + usedHeritageDiscount.value + talentsDiscount.value + defensesDiscount.value
-      + defenseRetinueDiscount.value + specificModsCost.value + budgetMods.value.sell11 * 2000
+      + defenseRetinueDiscount.value + specificModsCost.value + budgetMods.value.sell11 * 2000 + missionRewardCredits.value
 
   // CSR implementation 3.0
   if (flags.value.chargen && csr.value) {
@@ -282,7 +286,7 @@ const tier11tickets = computed(() => {
 
   return ticket - heritageCost - ridePerksCost - homePerksCost - talentsCost - defensesCost - miscPerksCost
     - waifuPerksCost - genericWaifuPerksCost - luresCost - companionsCost - bindingCost
-    - budgetMods.value.minus11 + budgetMods.value.plus11 + companionTicketProfit.value - budgetMods.value.sell11
+    - budgetMods.value.minus11 + budgetMods.value.plus11 + companionTicketProfit.value - budgetMods.value.sell11 + missionRewardTickets.value
 })
 
 const totalCost = computed(() => startingOrigin.value.cost + heritageCost.value + bindingCost.value
@@ -448,5 +452,6 @@ export function useStore() {
     manualSellKf,
     favoritesObject,
     specificModsCost,
+    missionRewardCredits,
   }
 }

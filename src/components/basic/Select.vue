@@ -9,6 +9,7 @@
         border="~ gray-800"
         :placeholder="placeholder"
         required
+        :disabled="disabled"
       >
         <option value="" disabled selected hidden>{{ placeholder }}</option>
         <slot></slot>
@@ -46,6 +47,10 @@ const props = defineProps({
   options: {
     type: Array,
     default: () => [],
+  },
+  disabled: {
+    type: Boolean,
+    default: false,
   },
 })
 const emit = defineEmits(['update:modelValue'])

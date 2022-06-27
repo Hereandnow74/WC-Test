@@ -360,6 +360,7 @@ DLChomes.push({
   dlc: 'DLC by Despin',
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'Creature Feature I',
+  category: 'Home',
   image: 'https://i.ibb.co/9Y746Qf/Creature-Feature-I.jpg',
   cost: 500,
   desc: `From your control center, you can select any non-sapient wildlife you have encountered of T6 or less to populate your Demiplane. Binding wildlife from your Demiplane as a Familiar may be possible, but does not provide credits.
@@ -373,6 +374,7 @@ DLChomes.push({
   dlc: 'DLC by Despin',
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'Creature Feature II',
+  category: 'Home',
   image: 'https://i.ibb.co/GsP7G0g/Creature-Feature-II.jpg',
   cost: 11111,
   desc: `From your control center, you can select any wildlife you have encountered to populate your Demiplane. Binding wildlife from your Demiplane as a Familiar may be possible, but does not provide credits.
@@ -386,6 +388,7 @@ DLChomes.push({
   dlc: 'DLC by Despin',
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'A God Am I',
+  category: 'Home',
   image: 'https://i.ibb.co/0X86GqM/AGodAmI.jpg',
   cost: 11111,
   desc: `From your control center, you can create life to populate your Demiplane. Binding creatures from your Demiplane may be possible, but does not provide credits.
@@ -398,6 +401,7 @@ DLChomes.push({
   uid: 'mOIQR',
   dlc: 'DaemonOrk',
   title: 'God of Time',
+  category: 'Home',
   image: 'https://i.ibb.co/TBmfsyQ/God-Of-Time.jpg',
   cost: 11111,
   desc: `You can already create life, but now you want to add some randomness to it. So long as neither you or your retinue members are inside, time can now be sped up within your demiplane up to 1 million times. Allowing things to evolve naturally.
@@ -410,6 +414,7 @@ DLChomes.push({
   dlc: 'DLC by Despin',
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'Control Center App',
+  category: 'Home',
   image: 'https://i.ibb.co/qkygJxz/Control-Center-App.jpg',
   cost: 10,
   needed: 1,
@@ -421,6 +426,7 @@ DLChomes.push({
   uid: 'BxyZw',
   dlc: 'KatzSmile',
   title: 'Stay in touch',
+  category: 'Home',
   image: 'https://i.ibb.co/k5pzxb7/Stay-In-Touch.jpg',
   cost: 5,
   desc: 'High speed internet service covering any and all dimensions no matter the location, magic ward, or jamming technology. A modem-router and replacements are provided for free.',
@@ -431,6 +437,7 @@ DLChomes.push({
   uid: 'whxCA',
   dlc: 'KatzSmile',
   title: 'My House, My Rules!',
+  category: 'Home',
   image: 'https://i.ibb.co/g9bQhR5/My-House-My-Rules.jpg',
   special: 'Will not work on anyone with mental defences and T8+ characters.',
   cost: 10,
@@ -442,6 +449,7 @@ DLChomes.push({
   uid: 'smb9b',
   dlc: 'GForce1000',
   title: 'Armory',
+  category: 'Home',
   image: 'https://i.ibb.co/HtCJ5bW/Armory2.jpg',
   cost: 10,
   desc: 'A room-or pocket-dimensional space similar to the Pocket Space perk full of weapons, armor, and ammunition becomes available to you with this upgrade. It holds a wide variety of standard and specialized equipment from both your new world and your old one. This does include equipment that would normally only be available to special forces, but does not include custom-made or heavily customized variants on weapons. Weapons you or your companions acquire in the field can be sent to this armory with a few seconds of concentration, and each of you can choose up to ten pieces of equipment - such as a gun, a shield, or a full set of armor - to be able to equip or return at will. The armory will automatically repair and maintain weapons stored within it. This doesn\'t work for fully destroyed artifact items unless you help supply the magical oomph.',
@@ -451,6 +459,7 @@ DLChomes.push({
 DLChomes.push({
   uid: 'pftN2',
   dlc: 'DLC by Despin',
+  category: 'Home',
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'Home Security',
   image: 'https://i.ibb.co/rtt8nK0/Security.jpg',
@@ -465,6 +474,7 @@ export const DLCtalents: DLCPerk[] = []
 DLCtalents.push({
   uid: 'hRlCG',
   dlc: 'DLC by Despin',
+  category: 'Home',
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'Presence',
   image: 'https://i.ibb.co/vmN3jBY/Presence.jpg',
@@ -478,6 +488,7 @@ DLCtalents.push({
 DLCtalents.push({
   uid: 'AOY9D',
   dlc: 'DLC by Doomsought',
+  category: 'Home',
   dlclink: 'https://forum.questionablequesting.com/threads/r34-economy-cyoa-thread.11289/page-879#post-4440542',
   title: 'Money Talent',
   image: 'https://i.ibb.co/RSXnxTf/Money-Talent.jpg',
@@ -491,6 +502,7 @@ DLCtalents.push({
 DLCtalents.push({
   uid: 'l6MHt',
   dlc: 'DLC by Merior',
+  category: 'Home',
   dlclink: 'https://docs.google.com/document/d/1j9emHb4IWvOTnp13RASTAuINAFuKDMSSQyQ-7ta9sjA/edit#',
   title: 'Educational Talent',
   image: 'https://i.ibb.co/PQFmfzc/Educational-Talent.jpg',
@@ -505,6 +517,7 @@ DLCtalents.push({
   dlc: 'DLC by Merior',
   dlclink: 'https://docs.google.com/document/d/1j9emHb4IWvOTnp13RASTAuINAFuKDMSSQyQ-7ta9sjA/edit#',
   title: 'Inculcation Talent',
+  category: 'Home',
   image: 'https://i.ibb.co/5sHG1yX/Inculcation-Talent.jpg',
   cost: 10,
   desc: `You remold. You can progressively change other people's habits, preferences, reflexes, and even more fundamental parts of who they are given time. You do so through social pressure and psychological tricks, even against their will or without their awareness, but supernatural power and the ability to blatantly reward or punish speeds your efforts tremendously. You could use this to help overcome addictions, remove bad habits, become a life coach, or simply be a world-class slave trainer.
@@ -523,6 +536,7 @@ DLClures.push({
   dlc: 'DLC by Merior',
   dlclink: 'https://docs.google.com/document/d/1j9emHb4IWvOTnp13RASTAuINAFuKDMSSQyQ-7ta9sjA/edit#',
   image: 'https://i.ibb.co/sFDhQBX/Fools-Gold.jpg',
+  category: 'Lure',
   title: 'Fools Gold',
   cost: 10,
   desc: 'Waifus who are motivated by gaining money, for whatever reason, and who have unwillingly been rendered poor are more attracted to you. This attraction is based upon the signs of wealth, conspicuous consumption, and casual spending that they become aware of as shown by you and your waifus.',
@@ -534,6 +548,7 @@ DLClures.push({
   dlclink: 'https://docs.google.com/document/d/1j9emHb4IWvOTnp13RASTAuINAFuKDMSSQyQ-7ta9sjA/edit#',
   image: 'https://i.ibb.co/2sVT2BZ/Stud-Service.jpg',
   title: 'Stud Service',
+  category: 'Lure',
   cost: 10,
   desc: `You are prime breeding stock, able to sire the best children feasible given a compatible partner, which is something that potential partners sense... and like. The more proof of your fertility, virility, or the quality of your offspring that a potential waifu witnesses the more the image of submissively being bred by you infects and inflames their fantasies. Those who have had offspring, or who are \'hearing their biological clock ticking\', are particularly susceptible.
   <p>With practice, you can influence your offspring at conception to possess or lack traits which it would be possible for them to inherit.</p>
@@ -544,6 +559,7 @@ DLClures.push({
   uid: 'tKqnC',
   dlc: 'Trismegistus',
   title: 'Hypnos',
+  category: 'Lure',
   image: 'https://i.ibb.co/YhdvLmP/Hypnos.jpg',
   cost: 15,
   desc: `You can fall asleep at will and enter the dreams of anyone you have seen in the past day. You may mentally check if a valid target is sleeping at any time. You control the events within the dream save for the targets mind, body, and actions. The dream will substantially influence their thoughts for several days, more if they genuinely connect with the experience. You may have the  dreamer remember their dream to whatever degree you desire.
@@ -554,6 +570,7 @@ DLClures.push({
   uid: 'nuDNs',
   dlc: 'Trismegistus',
   title: 'Red Chains of Fate',
+  category: 'Lure',
   image: '',
   cost: 5,
   costVariants: [5, 15],
@@ -571,6 +588,7 @@ DLCotherControls.push({
   dlc: 'DLC by Merior',
   dlclink: 'https://docs.google.com/document/d/1j9emHb4IWvOTnp13RASTAuINAFuKDMSSQyQ-7ta9sjA/edit#',
   title: 'Nine Tenths Law',
+  category: 'Lure',
   image: 'https://i.ibb.co/xDXVkB2/Nine-Tenths-Law.jpg',
   cost: 5,
   desc: 'Any individual who you manage to keep imprisoned for three days straight becomes yours. Any means of imprisonment, from holding them trapped in a magic circle to keeping them handcuffed next to you, is valid and you may use multiple means or shift between them as needed. However the victim must be aware of their confinement and any time spent unnaturally insensate (unconscious, drugged asleep, frozen in time, etc) does not count towards the total period of confinement.',
@@ -581,6 +599,7 @@ DLCotherControls.push({
   dlc: 'DLC by Merior',
   dlclink: 'https://docs.google.com/document/d/1j9emHb4IWvOTnp13RASTAuINAFuKDMSSQyQ-7ta9sjA/edit#',
   title: 'Signed and Sealed',
+  category: 'Lure',
   image: 'https://i.ibb.co/bj4f3kZ/Signed-And-Sealed.jpg',
   cost: 10,
   desc: `There are more formal approaches to gaining a waifu than a love confession. Taking this perk grants you skill in writing contracts and allows you to include binding terms about her behavior and actions. Once the other party signs the contract freely and the relevant conditions have been met they will be forced to comply with the terms: be that anything from telling you a secret to becoming your slave. Company lawyers will assess the strictness and duration of contracts to determine if this will be considered a 'capture'.
@@ -593,6 +612,7 @@ DLCotherControls.push({
   dlc: 'DLC by Merior',
   dlclink: 'https://docs.google.com/document/d/1j9emHb4IWvOTnp13RASTAuINAFuKDMSSQyQ-7ta9sjA/edit#',
   title: 'Letter of the Law',
+  category: 'Lure',
   image: 'https://i.ibb.co/7pRQbCb/Letter-Of-The-Law.jpg',
   cost: 10,
   desc: `The law is on your side. If a contract you draft using the Signed and Sealed perk is otherwise legal then the compulsive terms are seen as legal and her compliance expected if signed. If you have a binding other than No Bindings then your contracts can compel an individual when it is signed by a parent, spouse, or anyone who could enter a contract on their behalf.
@@ -605,6 +625,7 @@ DLCotherControls.push({
   dlc: 'DLC by Merior',
   dlclink: 'https://docs.google.com/document/d/1j9emHb4IWvOTnp13RASTAuINAFuKDMSSQyQ-7ta9sjA/edit#',
   title: 'Needful Things',
+  category: 'Lure',
   image: 'https://i.ibb.co/q0vxrBD/Needful-Things.jpg',
   cost: 20,
   desc: `The items, good, and/or services provided by your business are simply better than they otherwise would be and certainly seem more appealing. This enhancement is inversely proportional to the original quality, turning poor goods into average ones but will improve top-of-the-line products only fractionally. It will always make what you offer at least appear to have an edge over products of similar quality from elsewhere.
@@ -617,6 +638,7 @@ DLCotherControls.push({
   uid: 'mESrr',
   dlc: 'gunmetalblue',
   title: 'To The Victor Goes The Spoils',
+  category: 'Lure',
   image: 'https://i.ibb.co/N2MDZxg/To-The-Victor-Goes-The-Spoils.jpg',
   cost: 100,
   desc: `Any capture target killed by you or your retinue is automatically captured. You may choose to sell them to the company at standard rate or return them to life with Warranty Plan.
@@ -628,6 +650,7 @@ DLCotherControls.push({
   uid: 'gqjwm',
   dlc: 'Trismegistus',
   title: 'Social Club',
+  category: 'Lure',
   image: 'https://i.ibb.co/g39rTxW/Social-Club.jpg',
   cost: 10,
   desc: `You possess a dream realm you can control as you do with your target's dreams. Within this realm you and your retinue's minds are present, even when awake and without impacting your ability to function. You can control how aware each mind is of the dream realm, such as making them aware of the sensations they feel in the dream, but not what's causing them, or making someone think the dream is the real world, you could even mix the two worlds in their minds, making elements of the dream world overlap with the waking world. No one else can enter this realm. 
@@ -643,6 +666,7 @@ DLClureExpansions.push({
   uid: 'Iimw9',
   dlc: 'Cyan-Rozen',
   title: 'Sticky Fingers: Alter-Flavor',
+  category: 'Lure',
   image: 'https://i.ibb.co/GW0hX61/Sticky-Fingers-Alter-Flavor.jpg',
   cost: 10,
   whitelist: ['Sticky Fingers: Brown Sugar'],
@@ -653,6 +677,7 @@ DLClureExpansions.push({
   uid: 'quujp',
   dlc: 'Trismegistus',
   title: 'Maestro',
+  category: 'Lure',
   image: 'https://i.ibb.co/8582cS9/Maestro.jpg',
   cost: 10,
   desc: `You may now influence the dreamer themselves, altering their mind and body within the dream to fit whatever role you grant them. This does not drastically change how much the dream influences them in the following days, but does allow for much more control over the experience. You may also alter the rate at which time passes in the dreams relative to real time, up to an 8:1 ratio.
@@ -669,6 +694,7 @@ DLCheritages.push({
   title: 'Ascendant Human',
   image: 'https://i.ibb.co/dKWV6K9/Ascendant-Human.jpg',
   tree: 'Transhuman',
+  category: 'Heritage',
   type: 'Self',
   cost: 22222,
   whitelist: ['Singularity'],
@@ -679,6 +705,7 @@ DLCheritages.push({
   uid: 'rBXUp',
   dlc: 'DaemonOrk',
   title: 'Dragon God',
+  category: 'Heritage',
   image: 'https://i.ibb.co/TWBQrSn/Dragon-God.jpg',
   tree: 'Dragon',
   type: 'Self',
@@ -698,6 +725,7 @@ DLCbindings.push({
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   image: 'https://i.ibb.co/QfStyFN/Additional-Binding.jpg',
   title: 'Additional Binding',
+  category: 'Binding',
   cost: 11111,
   multiple: true,
   desc: `
@@ -711,6 +739,7 @@ DLCbindings.push({
   uid: 'iH67D',
   dlc: 'Zenaku82',
   title: 'Triggered',
+  category: 'Binding',
   image: 'https://i.ibb.co/nsCCxBx/Triggered.jpg',
   type: 'Jewelry',
   cost: 5,
@@ -730,6 +759,7 @@ DLCridePerks.push({
   uid: 'cSEJx',
   dlc: 'KatzSmile',
   title: 'Catch-A-Ride Custom Crew',
+  category: 'RidePerk',
   image: 'https://i.ibb.co/VH89J0p/Catch-ARide-Custom-Crew.jpg',
   cost: 20,
   desc: `
@@ -747,6 +777,7 @@ DLCridePerks.push({
   dlc: 'KatzSmile',
   image: 'https://i.ibb.co/qChNXY6/Catch-ARide-Crew-Tier-Upgrade.jpg',
   title: 'Catch-A-Ride Crew Tier Upgrade',
+  category: 'RidePerk',
   cost: 40,
   desc: `
   <p>Perhaps you are not satisfied with the current power level of your crew.</p>
@@ -761,6 +792,7 @@ DLCridePerks.push({
   dlc: 'DLC by Despin',
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'Catch a Ride Plus',
+  category: 'RidePerk',
   image: 'https://i.ibb.co/ccb78tJ/Catch-ARide-Plus.jpg',
   cost: 50,
   special: 'Applies to all vehicles registered in the Catch a Ride App, up to the size category paid for.',
@@ -776,6 +808,7 @@ DLCridePerks.push({
   dlc: 'DLC by Despin',
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'Extended Warranty',
+  category: 'RidePerk',
   image: 'https://i.ibb.co/gtzX0N0/Extended-Warranty.jpg',
   cost: 100,
   desc: `

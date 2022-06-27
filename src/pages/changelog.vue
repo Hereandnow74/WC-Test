@@ -5,6 +5,16 @@
     </h2>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
+        26 June 2022
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>~160 new user submitted characters, new missions, 9 new worlds</li>
+        <li>You now can take missions (perk reward can be buggy)</li>
+        <li>Bugfixes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
         19 June 2022
       </h3>
       <ul class="list-decimal list-inside">

@@ -1,5 +1,5 @@
 import { countBy, isArray, uniq } from 'lodash-es'
-import { DBCharacter, DBWorld, PerkFull } from 'global'
+import { DBCharacter, DBWorld, Perk, PerkFull } from 'global'
 import { DLCgenericPerks, DLChomes, DLCperks, DLCtalents, DLCheritages, DLClureExpansions, DLCbindings, DLClures, DLCotherControls, DLCridePerks, DLCintensity } from './DLCs'
 import { DLCRides, rides } from './rides'
 import { homes, demiplane, dungeon } from './demdun'
@@ -12,6 +12,8 @@ import { ridePerksFull, defenses, talents, perks, genericPerks } from '~/data/ta
 import { DLCwaifu_perks, waifu_perks } from '~/data/waifu_perks'
 
 import { useStore } from '~/store/store'
+import { usePlayStore } from '~/store/play'
+import { useChargenStore } from '~/store/chargen'
 
 const { userWorlds, localUserWorlds, localUserCharacters } = useStore()
 
@@ -225,6 +227,22 @@ export const ALL_PERK_TITLES = computed(() => {
   all.forEach(p => addTitles<typeof p[0]>(result, p))
   return result
 })
+
+const { binding, luresBought, heritage, ridePerks, homePerks, talentPerks, defensePerks, otherPerks, miscPerks, waifuPerks, genericWaifuPerks } = useChargenStore()
+
+export const ALL_PERK_STORES = {
+  Binding: binding.value,
+  Lure: luresBought.value,
+  Heritage: heritage.value,
+  RidePerk: ridePerks.value,
+  Home: homePerks.value,
+  Talent: talentPerks.value,
+  Defense: defensePerks.value,
+  Other: otherPerks.value,
+  Misc: miscPerks.value,
+  Waifu: waifuPerks.value,
+  Generic: genericWaifuPerks.value,
+}
 
 export const LINKS = computed(() => {
   const links = {} as Record<string, string>

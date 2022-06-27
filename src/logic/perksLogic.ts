@@ -8,7 +8,7 @@ import { useChallenges } from '~/store/challenges'
 import { usePlayStore } from '~/store/play'
 import { Perk } from '~/store/chargen'
 import { useStore } from '~/store/store'
-import { ALL_PERK_TITLES } from '~/data/constants'
+import { ALL_PERK_STORES, ALL_PERK_TITLES } from '~/data/constants'
 
 const {
   allEffects, intensities, luresBought, binding, flags, allForSave, heritage,
@@ -16,7 +16,7 @@ const {
   waifuPerks, baseBudget, startingWorld, budgetMods, otherPerks, fee, specificMods, patron, pvpPerks,
 } = useStore()
 
-const { currentWorld, jumpChain, rdnWorld, loan, trHistory } = usePlayStore()
+const { currentWorld, jumpChain, rdnWorld, loan, trHistory, missionRewards } = usePlayStore()
 
 const { activeChallenges } = useChallenges()
 
@@ -456,6 +456,35 @@ export function chooseWaifuPerk(fullPerk: WaifuPerk, perk: Perk) {
   }
 }
 
+export function buyAnyPerk(perkName: string, count = 1, cost = 0) {
+  const fullPerk = ALL_PERK_TITLES.value[perkName]
+  const saveStore = ALL_PERK_STORES[fullPerk.category as keyof typeof ALL_PERK_STORES]
+  if (saveStore) {
+    const ind = findIndex(saveStore, { title: perkName })
+    if (ind === -1)
+      saveStore.push({ title: perkName, count, cost })
+    else
+      saveStore[ind].count ? saveStore[ind].count += 1 : saveStore[ind].count = 2
+  }
+  else {
+    console.log('Can\'t buy this perk yet')
+  }
+}
+
+export function removeAnyPerk(perkName: string, count = 1) {
+  const fullPerk = ALL_PERK_TITLES.value[perkName]
+  const saveStore = ALL_PERK_STORES[fullPerk.category as keyof typeof ALL_PERK_STORES]
+  if (saveStore) {
+    const ind = findIndex(saveStore, { title: perkName })
+    if (ind !== -1) {
+      if (saveStore[ind].count && saveStore[ind].count >= count + 1)
+        saveStore[ind].count -= count
+      else
+        remove(saveStore, { title: perkName })
+    }
+  }
+}
+
 export function clearAll() {
   baseBudget.value = 55
   startingWorld.value = {
@@ -508,6 +537,7 @@ export function clearAll() {
   fee.value = 0
   specificMods.value = []
   patron.value = []
+  missionRewards.value = {}
 }
 
 export function writeBuildValues(build: any) {
@@ -538,6 +568,7 @@ export function writeBuildValues(build: any) {
   pvpPerks.value = build.pvpPerks || []
   fee.value = build.fee || 0
   jumpChain.value = build.jumpChain || []
+  missionRewards.value = build.missionRewards || {}
 }
 
 export function getSaveObject() {
@@ -568,6 +599,7 @@ export function getSaveObject() {
     pvpPerks: pvpPerks.value,
     fee: fee.value,
     jumpChain: jumpChain.value,
+    missionRewards: missionRewards.value,
   }
 }
 

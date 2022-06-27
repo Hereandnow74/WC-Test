@@ -11,6 +11,7 @@ export const ridePerksFull = [] as PerkFull[]
 ridePerksFull.push({
   uid: 'tJzJ5',
   title: 'Catch-A-Ride Crew Training Program',
+  category: 'RidePerk',
   image: 'https://i.ibb.co/F3vk1fs/Catch-ARide-Crew-Training-Program.jpg',
   cost: 5,
   requires: 'at least one Replica Showroom vehicle',
@@ -23,6 +24,7 @@ ridePerksFull.push({
 ridePerksFull.push({
   uid: '2nFRE',
   title: 'Catch-A-Ride Crew Production Program',
+  category: 'RidePerk',
   image: 'https://i.ibb.co/YkcBWLM/Catch-ARide-Crew-Production-Program.jpg',
   cost: 20,
   whitelist: ['Catch-A-Ride Crew Training Program'],
@@ -41,6 +43,7 @@ export const talents: PerkFull[] = []
 talents.push({
   uid: 'nvlMp',
   title: 'Everlasting Talent',
+  category: 'Talent',
   image: 'https://i.ibb.co/b6ShsQS/Everlasting-Talent.jpg',
   cost: 10,
   desc: `You live. You have weak immortality and eternal youth. If you are older than the peak age for your species (25 years for humans), your body is reset to that point; otherwise you'll continue to physically mature to that point but not experience any aging afterwards. This will not interfere with deliberate age-manipulation effects from within your retinue, whether from the company’s transformation suite or third-parties. If your maturation process had been halted by any means, it will now continue until your peak age. The "Fog of Ages," including atrophy of unused skills, will never affect you.
@@ -51,6 +54,7 @@ talents.push({
 talents.push({
   uid: '1t7o3',
   title: 'Body Talent',
+  category: 'Talent',
   image: 'https://i.ibb.co/fkqgJ8Z/Body-Talent.jpg',
   cost: 10,
   desc: `
@@ -64,6 +68,7 @@ talents.push({
 talents.push({
   uid: '1ycSB',
   title: 'Martial Talent',
+  category: 'Talent',
   image: 'https://i.ibb.co/0DZZj7L/Martial-Talent.jpg',
   cost: 10,
   desc: 'You fight. You have prodigious martial talent and can rapidly learn any personal, non-supernatural combat skills you encounter, whether melee or ranged. Supernatural extensions of martial skill are instead affected by Psychic or Soul Talents. This is an experience and skill acquisition multiplier, not a flat improvement, and scales to the strength and skill of your opponents and trainers: the better they are than you, the faster you learn, until you’ve caught up to them. This applies to both command ability and personal skill.',
@@ -72,6 +77,7 @@ talents.push({
 talents.push({
   uid: '5uqEL',
   title: 'Wild Talent',
+  category: 'Talent',
   image: 'https://i.ibb.co/3WFT8nP/Wild-Talent.jpg',
   cost: 5,
   desc: 'You camp. You have a knack for living in the wilderness, with a natural feel for how to identify and make use of edible food, potable water, suitable shelter, animal tracks, etc. You know how to ride a mundane horse. In worlds that don’t use horses, you can quickly adapt your riding methods to whatever appropriate beasts are available.',
@@ -80,6 +86,7 @@ talents.push({
 talents.push({
   uid: '4XdSq',
   title: 'Science Talent',
+  category: 'Talent',
   image: 'https://i.ibb.co/2snqdq0/Science-Talent.jpg',
   cost: 20,
   additionalDesc: `
@@ -91,6 +98,7 @@ talents.push({
 talents.push({
   uid: 'g4t2B',
   title: 'Engineering Talent',
+  category: 'Talent',
   image: 'https://i.ibb.co/L1WTbLj/Engineering-Talent.jpg',
   cost: 30,
   whitelist: ['Science Talent'],
@@ -100,6 +108,7 @@ talents.push({
 talents.push({
   uid: 'WSEsZ',
   title: 'Aesthetic Talent',
+  category: 'Talent',
   image: 'https://i.ibb.co/G9WtDSk/Aesthetic-Talent.jpg',
   cost: 10,
   desc: 'You design. You have a prodigious talent in the visual arts: painting, sculpture, photography, fashion and makeup, etc. This is an experience and skill acquisition multiplier, not a flat improvement, and scales to the skill of your trainers, cohorts, and competition: the better they are than you, the faster you learn, until you’ve caught up to them. The creation of things that have practical purposes is instead covered under Engineering Talent.',
@@ -108,6 +117,7 @@ talents.push({
 talents.push({
   uid: 'UPYkI',
   title: 'Communication Talent',
+  category: 'Talent',
   image: 'https://i.ibb.co/mzjhSnN/Communication-Talent.jpg',
   cost: 10,
   desc: `
@@ -118,6 +128,7 @@ talents.push({
 talents.push({
   uid: 'qOpbF',
   title: 'Performance Talent',
+  category: 'Talent',
   image: 'https://i.ibb.co/BszrmWS/Performance-Talent.jpg',
   cost: 10,
   desc: 'You express. You have a prodigious talent in the kinesthetic arts: music, dance, acting, etc. This is an experience and skill acquisition multiplier, not a flat improvement, and scales to the skill of your trainers, cohorts, and competition: the better they are than you, the faster you learn, until you’ve caught up to them. Audiovisual and stage production are instead covered under Engineering Talent.',
@@ -126,6 +137,7 @@ talents.push({
 talents.push({
   uid: 'hQCaw',
   title: 'Soul Talent',
+  category: 'Talent',
   image: 'https://i.ibb.co/MsvBc4N/Soul-Talent.jpg',
   cost: 10,
   additionalDesc: `
@@ -137,6 +149,7 @@ talents.push({
 talents.push({
   uid: 'dAx79',
   title: 'Blessed Talent',
+  category: 'Talent',
   image: 'https://i.ibb.co/3RR4NXR/Blessed-Talent.jpg',
   cost: 30,
   whitelist: ['Communication Talent', 'Soul Talent'],
@@ -148,6 +161,7 @@ talents.push({
 talents.push({
   uid: 'OQ6SY',
   title: 'Psychic Talent',
+  category: 'Talent',
   image: 'https://i.ibb.co/cJnMd28/Psychic-Talent.jpg',
   cost: 20,
   desc: `
@@ -159,6 +173,7 @@ talents.push({
 talents.push({
   uid: 'oScLP',
   title: 'Covert Talent',
+  category: 'Talent',
   image: 'https://i.ibb.co/54hQfY0/Covert-Talent.jpg',
   cost: 10,
   desc: `
@@ -170,6 +185,7 @@ talents.push({
 talents.push({
   uid: 'xhM0D',
   title: 'Talent Sharing',
+  category: 'Talent',
   image: 'https://i.ibb.co/C55Bgxn/Talent-Sharing.jpg',
   cost: 10,
   complex: 'flavor',
@@ -179,6 +195,7 @@ talents.push({
 talents.push({
   uid: 'v4vTF',
   title: 'Inexhaustible',
+  category: 'Talent',
   image: 'https://i.ibb.co/qCMqtY5/Inexhaustible.jpg',
   cost: 140,
   whitelist: ['Everlasting Talent', 'Soul Defense (2x)'],
@@ -188,6 +205,7 @@ talents.push({
 talents.push({
   uid: 'Lg121',
   title: 'Template Stacking 0: Added Potential',
+  category: 'Talent',
   image: 'https://i.ibb.co/3cXr8dW/Template-Stacking0-Added-Potential.jpg',
   cost: 5,
   complex: 'target_f',
@@ -204,6 +222,7 @@ talents.push({
 talents.push({
   uid: '1ujTI',
   title: 'Template Stacking I',
+  category: 'Talent',
   image: 'https://i.ibb.co/rww384y/Template-Stacking-I.jpg',
   cost: 15,
   special: 'Must be repurchased for each use.',
@@ -221,6 +240,7 @@ talents.push({
 talents.push({
   uid: 'GSoHy',
   title: 'Racial Template',
+  category: 'Talent',
   image: 'https://i.ibb.co/yPfLWJJ/Racial-Template.jpg',
   cost: 20,
   complex: 'target_f',
@@ -235,6 +255,7 @@ talents.push({
 talents.push({
   uid: 'Elihn',
   title: 'OC Donut Steel',
+  category: 'Talent',
   image: 'https://i.ibb.co/QDM4L0b/OCDonut-Steel.jpg',
   cost: 20,
   complex: 'target_f',
@@ -250,6 +271,7 @@ talents.push({
 talents.push({
   uid: '38YzF',
   title: 'Template Stacking II',
+  category: 'Talent',
   image: 'https://i.ibb.co/G9D4476/Template-Stacking-II.jpg',
   cost: 20,
   special: 'Must be repurchased for each use.',
@@ -265,6 +287,7 @@ talents.push({
 talents.push({
   uid: 'LhG7H',
   title: 'Advanced Template Stacking (Arcane)',
+  category: 'Talent',
   image: 'https://i.ibb.co/Htm5DvK/Advanced-Template-Stacking-Arcane.jpg',
   cost: 100,
   complex: 'target',
@@ -277,6 +300,7 @@ talents.push({
 talents.push({
   uid: 'zHT96',
   title: 'Advanced Template Stacking (Enlightened)',
+  category: 'Talent',
   image: 'https://i.ibb.co/gdHJ4n1/Advanced-Template-Stacking-Enlightened.jpg',
   cost: 100,
   complex: 'target',
@@ -290,6 +314,7 @@ talents.push({
 talents.push({
   uid: 'yfzjc',
   title: 'Advanced Template Stacking (Green)',
+  category: 'Talent',
   image: 'https://i.ibb.co/x5ykynX/Advanced-Template-Stacking-Green.jpg',
   cost: 100,
   complex: 'target',
@@ -316,6 +341,7 @@ export const defenses: PerkFull[] = []
 defenses.push({
   uid: 'aWQ6N',
   title: 'Body Defense',
+  category: 'Defense',
   special: '<Individual> is known for handling disease, chemical medicine, or poisons.',
   image: 'https://i.ibb.co/kgWFFz9/Body-Defense.jpg',
   cost: 5,
@@ -329,6 +355,7 @@ defenses.push({
 defenses.push({
   uid: 'b4EJO',
   title: 'Wild Defense',
+  category: 'Defense',
   special: '<Individual> hails from a harsh climate.',
   image: 'https://i.ibb.co/8BZQpfP/Wild-Defense.jpg',
   cost: 5,
@@ -338,6 +365,7 @@ defenses.push({
 defenses.push({
   uid: 'F2dwT',
   title: 'Environmental Defense',
+  category: 'Defense',
   special: '<Individual> can ignore hazardous environments.',
   image: 'https://i.ibb.co/wykYVms/Environmental-Defense.jpg',
   cost: 25,
@@ -348,6 +376,7 @@ defenses.push({
 defenses.push({
   uid: 'qPMGm',
   title: 'Creature Defense',
+  category: 'Defense',
   special: '<Individual> is known as a monster-tamer or otherwise being good with animals.',
   image: 'https://i.ibb.co/vxSvX6v/Creature-Defense.jpg',
   cost: 10,
@@ -357,6 +386,7 @@ defenses.push({
 defenses.push({
   uid: 'GGsAU',
   title: 'Stress Defense',
+  category: 'Defense',
   special: '<Individual> is known for keeping a cool head or having great willpower.',
   image: 'https://i.ibb.co/h2D0FDK/Stress-Defense.jpg',
   cost: 5,
@@ -366,6 +396,7 @@ defenses.push({
 defenses.push({
   uid: 'm0vMX',
   title: 'Addiction Defense',
+  category: 'Defense',
   special: '<Individual> known for having a material vice.',
   image: 'https://i.ibb.co/Tm9kg7P/Addiction-Defense.jpg',
   cost: 10,
@@ -376,6 +407,7 @@ defenses.push({
 defenses.push({
   uid: 'Y0qpD',
   title: 'Mind Defense',
+  category: 'Defense',
   special: '<Individual> is known as a psychic or mind-manipulator.',
   image: 'https://i.ibb.co/KXZzvSK/Mind-Defense.jpg',
   cost: 25,
@@ -385,6 +417,7 @@ defenses.push({
 defenses.push({
   uid: '6lvj3',
   title: 'Possession Defense',
+  category: 'Defense',
   special: '<Individual> is known for bodyjacking others.',
   image: 'https://i.ibb.co/VwrGtdg/Possession-Defense.jpg',
   cost: 10,
@@ -396,6 +429,7 @@ defenses.push({
 defenses.push({
   uid: 'l1Zz7',
   title: 'Soul Defense',
+  category: 'Defense',
   special: '<Individual> can drain or feed on life, mana, or souls.',
   image: 'https://i.ibb.co/Gxn3ycq/Soul-Defense.jpg',
   cost: 25,
@@ -409,6 +443,7 @@ defenses.push({
 defenses.push({
   uid: '2DooX',
   title: 'Fatality Defense',
+  category: 'Defense',
   special: '<Individual> is known for inflicting instant death or not dying even when killed.',
   image: 'https://i.ibb.co/GQ93VPz/Fatality-Defense.jpg',
   cost: 50,
@@ -419,6 +454,7 @@ defenses.push({
 defenses.push({
   uid: 'zp1JD',
   title: 'Polymorph Defense',
+  category: 'Defense',
   special: '<Individual> is known for polymorphing others.',
   image: 'https://i.ibb.co/0ZXMSn3/Polymorph-Defense.jpg',
   cost: 50,
@@ -432,6 +468,7 @@ defenses.push({
 defenses.push({
   uid: '8ZlJ6',
   title: 'Wyldscape Defense',
+  category: 'Defense',
   special: '<Individual> hails from a region where the local reality is unstable.',
   image: 'https://i.ibb.co/Fnn0LGN/Wyldscape-Defense.jpg',
   cost: 50,
@@ -445,6 +482,7 @@ defenses.push({
 defenses.push({
   uid: 'APuY1',
   title: 'Corruption Defense',
+  category: 'Defense',
   special: '<Individual> is known for forcibly bringing out others’ dark sides.',
   image: 'https://i.ibb.co/kGF8tHp/Corruption-Defense.jpg',
   cost: 50,
@@ -456,6 +494,7 @@ defenses.push({
 defenses.push({
   uid: 'iQJdn',
   title: 'Information Defense',
+  category: 'Defense',
   special: '<Individual> is known for their ability to read or sense people.',
   image: 'https://i.ibb.co/pyMQQ2h/Information-Defense.jpg',
   cost: 25,
@@ -465,6 +504,7 @@ defenses.push({
 defenses.push({
   uid: 'xKBxa',
   title: 'Trace Defense',
+  category: 'Defense',
   special: '<Individual> is known for using divination or other non-technological remote viewing.',
   image: 'https://i.ibb.co/QnTvtNz/Trace-Defense.jpg',
   cost: 50,
@@ -474,6 +514,7 @@ defenses.push({
 defenses.push({
   uid: '5riTA',
   title: 'Destiny Defense',
+  category: 'Defense',
   special: '<Individual> is known as a fate- or luck-manipulator.',
   image: 'https://i.ibb.co/JpqTDcM/Destiny-Defense.jpg',
   cost: 50,
@@ -485,6 +526,7 @@ defenses.push({
 defenses.push({
   uid: 'djI69',
   title: 'Paradox Defense',
+  category: 'Defense',
   special: '<Individual> is known as a time-manipulator.',
   image: 'https://i.ibb.co/ncTQVT7/Paradox-Defense.jpg',
   cost: 50,
@@ -518,6 +560,7 @@ export const perks: PerkFull[] = []
 perks.push({
   uid: 'ZVCai',
   title: 'Universal Calibration',
+  category: 'Misc',
   image: 'https://i.ibb.co/BCBHDkS/Temporal-Calibration.jpg',
   cost: 10,
   desc: `
@@ -527,6 +570,7 @@ perks.push({
 perks.push({
   uid: '1MpQL',
   title: 'Meta Shift',
+  category: 'Misc',
   image: 'https://i.ibb.co/vv1g4Sq/Meta-Shift.jpg',
   cost: 15,
   whitelist: ['Universal Calibration'],
@@ -542,6 +586,7 @@ perks.push({
 perks.push({
   uid: 'pE8KJ',
   title: 'Meta Shift II',
+  category: 'Misc',
   image: 'https://i.ibb.co/QQ1W0FX/Meta-Shift-II.jpg',
   cost: 10,
   whitelist: ['Meta Shift'],
@@ -554,6 +599,7 @@ perks.push({
 perks.push({
   uid: 'QdLMY',
   title: 'Blank Slate',
+  category: 'Misc',
   image: 'https://i.ibb.co/fGnn30j/Blank-Slate.jpg',
   cost: 75,
   whitelist: ['Meta Shift II', 'We Will Meet Again'],
@@ -564,6 +610,7 @@ perks.push({
 perks.push({
   uid: 'KV8cc',
   title: 'Sexual Calibration',
+  category: 'Misc',
   image: 'https://i.ibb.co/K7gQYm0/Sexual-Calibration.jpg',
   cost: 2,
   desc: 'The little inconveniences that can make sex less fun no longer apply to you. Your partners will always be as clean as needed and smell just as you like. If you have a refractory period, it is removed. Any unintentional or incidental damage that your sexual sessions might cause simply doesn’t take place. This includes unwanted pregnancy and any complications of pregnancy; note that this perk cannot guarantee a desired pregnancy. Exhaustion will not be an issue for any participant in your sexual sessions until at least you are satisfied. You can extend all of this to your partners as well.',
@@ -572,6 +619,7 @@ perks.push({
 perks.push({
   uid: 'xeouX',
   title: 'Fertility Calibration I',
+  category: 'Misc',
   image: 'https://i.ibb.co/G2WTbBZ/Fertility-Calibration-I.jpg',
   cost: 2,
   whitelist: ['Sexual Calibration'],
@@ -581,6 +629,7 @@ perks.push({
 perks.push({
   uid: 'E3Enf',
   title: 'Fertility Calibration II',
+  category: 'Misc',
   image: 'https://i.ibb.co/yPWN4MX/Fertility-Calibration-II.jpg',
   cost: 6,
   multiple: true,
@@ -594,6 +643,7 @@ perks.push({
 perks.push({
   uid: 'msjnG',
   title: 'Mapper',
+  category: 'Misc',
   image: 'https://i.ibb.co/F8wy1xx/Mapper.jpg',
   cost: 10,
   desc: `
@@ -604,6 +654,7 @@ perks.push({
 perks.push({
   uid: 'H2VdK',
   title: 'Target Tracker',
+  category: 'Misc',
   image: 'https://i.ibb.co/2jSnGdg/Target-Tracker.jpg',
   cost: 10,
   whitelist: ['Mapper'],
@@ -613,6 +664,7 @@ perks.push({
 perks.push({
   uid: 'B5bIp',
   title: 'Bounty Tracker',
+  category: 'Misc',
   image: 'https://i.ibb.co/41KHd9r/Bounty-Tracker.jpg',
   cost: 50,
   whitelist: ['Target Tracker'],
@@ -624,6 +676,7 @@ perks.push({
 perks.push({
   uid: 'kiLqi',
   title: 'Exit Stage Left',
+  category: 'Misc',
   image: 'https://i.ibb.co/1rgFZ61/Exit-Stage-Left.jpg',
   cost: 5,
   desc: 'The company app in your smart device has a new feature. Its main display is simply a progress bar that measures everything you do in your current location, whether that’s capturing local waifus, defeating baddies, or otherwise accomplishing story goals. Once the bar is full, a button on the screen will light up that opens a portal to a randomized new world within one danger level of your current one. (If you have Pocket Apartment or We Will Meet Again, the randomizer will choose based on your most recent new world.) These portals are one-way only, and will last no more than two minutes or until you and all of your waifus have passed through, whichever is shorter. This includes any vehicles your group is using.  If any of your waifus stay behind, this perk will not help you retrieve them. If your destination world has a lower danger rating than your current one, a second “penalty” bar will appear above the regular progress bar. It must be filled before the regular progress bar will start to move. The larger the gap between the two ratings, the more work you’ll need to do in the new world.',
@@ -632,6 +685,7 @@ perks.push({
 perks.push({
   uid: '5Bdq7',
   title: 'We Will Meet Again',
+  category: 'Misc',
   image: 'https://i.ibb.co/DD836zP/We-Will-Meet-Again.jpg',
   cost: 15,
   whitelist: ['Exit Stage Left'],
@@ -641,6 +695,7 @@ perks.push({
 perks.push({
   uid: 'GTKzW',
   title: 'Pursued by a Bear',
+  category: 'Misc',
   image: 'https://i.ibb.co/jTRQG0k/Pursued-By-ABear.jpg',
   cost: 40,
   whitelist: ['Exit Stage Left'],
@@ -660,6 +715,7 @@ perks.push({
 perks.push({
   uid: 'LlFi4',
   title: 'Memoria',
+  category: 'Misc',
   image: 'https://i.ibb.co/TYv7sc9/Memoria.jpg',
   cost: 5,
   whitelist: ['Possess'],
@@ -671,6 +727,7 @@ perks.push({
 perks.push({
   uid: '3SEKz',
   title: 'Psychic Paper',
+  category: 'Misc',
   image: 'https://i.ibb.co/VStW4pq/Psychic-Paper.jpg',
   cost: 5,
   desc: 'Exactly like in Doctor Who, this blank white card shows the reader whatever you want them to see. In most practical cases, this will likely be a form of local identification, but that\'s far from the only use. Psychic paper will not work on geniuses or people with feeble imaginations. People with basic psychic training are also immune; powerful psychics can reflect its effect back on the user. Illiterate people can still read psychic paper, provided their civilization has invented writing.',
@@ -679,6 +736,7 @@ perks.push({
 perks.push({
   uid: '0WR5N',
   title: 'Heavenbuilt Proto',
+  category: 'Misc',
   image: 'https://i.ibb.co/28vbybD/Heavenbuilt-Proto.jpg',
   cost: 11111,
   desc: `
@@ -689,6 +747,7 @@ perks.push({
 perks.push({
   uid: 'aB6sr',
   title: 'Piece of Silver',
+  category: 'Misc',
   image: 'https://i.ibb.co/QjWz9fg/Piece-Of-Silver.jpg',
   cost: 11111,
   desc: 'Whoever warned you not to pick up loose change was right. You are now partnered with a Denarian fallen angel from the Dresden Files, either Lasciel (“Lash”) or an OC of your (author’s) design. If you have No Bindings or the Stamp, she will be bound to her coin, able to assume a physical form within a 10 meter radius of her coin or you but not able to touch her coin herself: if it moves, so must she. If you have at least a company-provided personal space, such as Dragon Cabin, Pocket Apartment, or a registered Catch-a-Ride vehicle, she will be able to move anywhere inside. If you have a higher binding, that will replace her coin and remove her physical leash completely. Your other purchased and captured waifus can see, hear, feel, etc. the Denarian at all times.',
@@ -697,6 +756,7 @@ perks.push({
 perks.push({
   uid: '4qh4k',
   title: 'Warranty Plan',
+  category: 'Misc',
   image: 'https://i.ibb.co/Mp0vpwj/Warranty-Plan.jpg',
   cost: 200,
   additionalDesc: `
@@ -732,6 +792,7 @@ export const genericPerks: PerkFull[] = []
 genericPerks.push({
   uid: 'rOhim',
   title: 'Yoink',
+  category: 'Generic',
   image: 'https://i.ibb.co/PTSQp4F/Yoink.jpg',
   cost: 1,
   whitelist: ['Directly in Companions'],
@@ -742,6 +803,7 @@ genericPerks.push({
 genericPerks.push({
   uid: 'rUWf6',
   title: 'Slightly Used',
+  category: 'Generic',
   image: 'https://i.ibb.co/k5XPSRL/Slightly-Used.jpg',
   cost: 1,
   special: 'Use directly in companions. Non T11',
@@ -755,6 +817,7 @@ genericPerks.push({
 genericPerks.push({
   uid: 'CYLBN',
   title: 'Canvas',
+  category: 'Generic',
   image: 'https://i.ibb.co/Xjpv07P/Canvas.jpg',
   cost: 1,
   requires: 'any higher Binding- type control',
@@ -768,6 +831,7 @@ genericPerks.push({
 genericPerks.push({
   uid: 'NkvEg',
   title: 'Adoption',
+  category: 'Generic',
   anything: 'Kid Name',
   complex: 'flavor',
   image: 'https://i.ibb.co/P1SQhMn/Adoption.jpg',
@@ -778,6 +842,7 @@ genericPerks.push({
 genericPerks.push({
   uid: 'FJABm',
   title: 'Paper Trail',
+  category: 'Generic',
   image: 'https://i.ibb.co/9WQ47rf/Paper-Trail.jpg',
   cost: 1,
   target: 'Any',
@@ -791,6 +856,7 @@ genericPerks.push({
 genericPerks.push({
   uid: 'I7GFa',
   title: 'Power Swap',
+  category: 'Generic',
   image: 'https://i.ibb.co/F6NjTfp/Power-Swap.jpg',
   cost: 0,
   desc: `
@@ -804,6 +870,7 @@ genericPerks.push({
 genericPerks.push({
   uid: 'dmynt',
   title: 'Third-Party Riggings',
+  category: 'Generic',
   special: 'Requires at least one first - party Azur Lane shipgirl.',
   complex: 'target',
   requires: '(Any Azur Lane collaboration shipgirl)',
@@ -821,6 +888,7 @@ genericPerks.push({
 genericPerks.push({
   uid: 'piGae',
   title: 'Retrofit',
+  category: 'Generic',
   requires: '(Any eligible Azur Lane shipgirl)',
   complex: 'target',
   image: 'https://i.ibb.co/H26yFLZ/Retrofit.jpg',
@@ -838,6 +906,7 @@ genericPerks.push({
 genericPerks.push({
   uid: 'qJBhY',
   title: 'Bifurcation',
+  category: 'Generic',
   requires: '(Any Azur Lane Shipgirl)',
   complex: 'target',
   image: 'https://i.ibb.co/zQWtns3/Bifurcation.jpg',
@@ -851,6 +920,7 @@ genericPerks.push({
 genericPerks.push({
   uid: 'rRNoF',
   title: 'Space Shipgirl',
+  category: 'Generic',
   requires: '(Any Azur Lane shipgirl)',
   complex: 'target',
   image: 'https://i.ibb.co/zQ0GNfb/Space-Shipgirl.jpg',
@@ -864,6 +934,7 @@ genericPerks.push({
 genericPerks.push({
   uid: 'yib6z',
   title: 'I\'m on a Boat',
+  category: 'Generic',
   requires: '(Any Kantai Collection Shipgirl)',
   complex: 'target',
   image: 'https://i.ibb.co/ssVPcG3/Im-On-ABoat.jpg',
@@ -876,6 +947,7 @@ genericPerks.push({
 genericPerks.push({
   uid: 'hkEPg',
   title: 'Mirage Master',
+  category: 'Generic',
   requires: '(Any T1- T3 waifu + any Fire Emblem character rated T6 or below)',
   complex: 'target',
   cost: 50,
@@ -889,6 +961,7 @@ genericPerks.push({
 genericPerks.push({
   uid: 'hndM0',
   title: 'Unison',
+  category: 'Generic',
   requires: '(Any Pokémon trainer)',
   complex: 'target',
   cost: 40,
@@ -899,6 +972,7 @@ genericPerks.push({
 genericPerks.push({
   uid: '1rWq8',
   title: 'Galactic Presence',
+  category: 'Generic',
   requires: '(Any Warhammer Fantasy deity)',
   complex: 'target',
   image: 'https://i.ibb.co/wJPQ4wt/Galactic-Presence.jpg',
@@ -909,6 +983,7 @@ genericPerks.push({
 genericPerks.push({
   uid: 'Pqi8M',
   title: 'Four Seasons',
+  category: 'Generic',
   requires: '(Any female RWBY character of T6 or below)',
   complex: 'target_c',
   multiple: true,
@@ -920,6 +995,7 @@ genericPerks.push({
 genericPerks.push({
   uid: '2kSwK',
   title: 'Salvation',
+  category: 'Generic',
   requires: '(Any Puella Magi)',
   complex: 'target',
   costVariants: [20, 0],

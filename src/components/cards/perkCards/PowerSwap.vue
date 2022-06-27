@@ -56,7 +56,7 @@
           <div
             v-for="companion in companionsWithoutSold"
             :key="companion.uid"
-            class="flex gap-2 w-full min-h-0 rounded bg-gray-300 dark:bg-gray-800 p-1"
+            class="flex gap-2 w-full rounded bg-gray-300 dark:bg-gray-800 p-1"
           >
             <img
               v-if="allCharsObject[companion.uid] && allCharsObject[companion.uid].i && !settings.allImg"

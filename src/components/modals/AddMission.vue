@@ -109,6 +109,7 @@ import { toFormValidator } from '@vee-validate/zod'
 
 import { proposeMission } from '~/logic'
 import { useWorlds } from '~/data/constants'
+import { useSaves } from '~/store/saves'
 
 const scopes = ['Quick', 'Standard', 'Grand']
 
@@ -117,6 +118,7 @@ const errorMessage = ref('')
 const buttonActive = ref(true)
 
 const { allWorldNames } = useWorlds()
+const { userNickname } = useSaves()
 
 const schema = toFormValidator(
   zod.object({
@@ -139,7 +141,7 @@ const { errors, handleSubmit } = useForm({
   validationSchema: schema,
   initialValues: {
     title: '',
-    author: '',
+    author: userNickname.value ? userNickname.value : '',
     source: '',
     budget: '',
     desc: '',

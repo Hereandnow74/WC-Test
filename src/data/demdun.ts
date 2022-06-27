@@ -6,6 +6,7 @@ export const homes: PerkFull[] = []
 homes.push({
   uid: 'Qvzbi',
   title: 'Pocket Space',
+  category: 'Home',
   image: 'https://i.ibb.co/9q6bnnd/Pocket-Space.jpg',
   cost: 5,
   desc: `
@@ -16,6 +17,7 @@ homes.push({
 homes.push({
   uid: 'azTUM',
   title: 'Pocket Apartment',
+  category: 'Home',
   image: 'https://i.ibb.co/DCWhpf4/Pocket-Apartment.jpg',
   cost: 20,
   whitelist: ['Pocket Space'],
@@ -29,6 +31,7 @@ homes.push({
 homes.push({
   uid: 'Ib9ix',
   title: 'All Roads Lead to Home',
+  category: 'Home',
   image: 'https://i.ibb.co/vXfKMBb/All-Roads-Lead-To-Home.jpg',
   cost: 10,
   whitelist: ['Pocket Apartment'],
@@ -38,6 +41,7 @@ homes.push({
 homes.push({
   uid: 'wOfcl',
   title: 'Sweet Home',
+  category: 'Home',
   image: 'https://i.ibb.co/mRzHnHt/Sweet-Home-New.jpg',
   cost: 10,
   whitelist: ['Pocket Apartment'],
@@ -47,6 +51,7 @@ homes.push({
 homes.push({
   uid: 'j719h',
   title: 'Grand Manor',
+  category: 'Home',
   image: 'https://i.ibb.co/9vZbxG4/Grand-Manor-New.jpg',
   cost: 20,
   whitelist: ['Sweet Home'],
@@ -56,6 +61,7 @@ homes.push({
 homes.push({
   uid: 'I9fbi',
   title: 'Life’s A Beach',
+  category: 'Home',
   image: 'https://i.ibb.co/2ndQhZY/Lifes-ABeach-New.jpg',
   cost: 10,
   whitelist: ['Sweet Home'],
@@ -67,6 +73,7 @@ homes.push({
 homes.push({
   uid: 'iSYqE',
   title: 'Warehouse District',
+  category: 'Home',
   image: 'https://i.ibb.co/frYhgvK/Warehouse-District.jpg',
   cost: 20,
   whitelist: ['Grand Manor', 'Life’s A Beach'],
@@ -76,6 +83,7 @@ homes.push({
 homes.push({
   uid: 'ULpFY',
   title: 'Sweet Home Expansion',
+  category: 'Home',
   image: 'https://i.ibb.co/p2Q3xRw/Sweet-Home-Expansion-New.jpg',
   cost: 50,
   whitelist: ['Life’s A Beach'],
@@ -87,6 +95,7 @@ homes.push({
 homes.push({
   uid: 'hXd1v',
   title: 'Pocket Star',
+  category: 'Home',
   image: 'https://i.ibb.co/YB9Tpcz/Pocket-Star.jpg',
   cost: 11111,
   whitelist: ['Sweet Home Expansion (25x)'],
@@ -96,6 +105,7 @@ homes.push({
 homes.push({
   uid: '3BOS6',
   title: 'Niven? Never Heard of Him',
+  category: 'Home',
   image: 'https://i.ibb.co/WKHYQXg/Niven-Never-Heard-Of-Him.jpg',
   cost: 1200,
   whitelist: ['Pocket Star'],
@@ -107,6 +117,7 @@ homes.push({
   dlc: 'Old Version',
   dlclink: 'https://docs.google.com/document/d/1c4QaqLKxENFdzcBVe1-nvWJpZMK-UL0yQH_HCNd3Tes/edit?usp=sharing',
   title: 'Adjustment Field',
+  category: 'Home',
   image: 'https://i.ibb.co/6JdPGjB/Adjustment-Field.jpg',
   cost: 200,
   requires: 'Need a sufficiently large Catch-a-Ride Replica',
@@ -129,6 +140,7 @@ homes.push({
 homes.push({
   uid: '0QDNJ',
   title: 'Rainbow Bridge',
+  category: 'Home',
   image: 'https://i.ibb.co/WWZv7P2/Rainbow-Bridge.jpg',
   cost: 30,
   whitelist: ['All Roads Lead to Home', 'We Will Meet Again', 'Sweet Home'],
@@ -162,6 +174,7 @@ export const demiplane: PerkFull[] = []
 demiplane.push({
   uid: '9ZpfV',
   title: 'Demiplane',
+  category: 'Home',
   image: '',
   cost: 15,
   whitelist: ['Sweet Home'],
@@ -178,6 +191,7 @@ demiplane.push({
 demiplane.push({
   uid: 'fUz2p',
   title: 'Persistent Corruption',
+  category: 'Home',
   image: '',
   cost: 10,
   whitelist: ['Demiplane', 'Dungeon'],
@@ -190,6 +204,7 @@ demiplane.push({
 demiplane.push({
   uid: 'df2Ac',
   title: 'Rewards and Lobbying',
+  category: 'Home',
   image: '',
   cost: 50,
   whitelist: ['Demiplane'],
@@ -202,6 +217,7 @@ demiplane.push({
 demiplane.push({
   uid: '9Mbit',
   title: 'Laws of Man',
+  category: 'Home',
   image: '',
   cost: 25,
   whitelist: ['Demiplane'],
@@ -217,6 +233,7 @@ demiplane.push({
 demiplane.push({
   uid: '08TGD',
   title: 'Laws of the Jungle',
+  category: 'Home',
   image: '',
   cost: 25,
   multiple: true,
@@ -236,6 +253,7 @@ demiplane.push({
 demiplane.push({
   uid: '7CBFi',
   title: 'Laws of Science',
+  category: 'Home',
   image: '',
   cost: 50,
   whitelist: ['Demiplane'],
@@ -249,6 +267,7 @@ demiplane.push({
 demiplane.push({
   uid: 'ZE5qW',
   title: 'Laws of Magic',
+  category: 'Home',
   image: '',
   cost: 50,
   whitelist: ['Demiplane'],
@@ -262,6 +281,7 @@ demiplane.push({
 demiplane.push({
   uid: 'NEQDt',
   title: 'Laws of Cognition',
+  category: 'Home',
   image: '',
   cost: 50,
   whitelist: ['Demiplane'],
@@ -275,6 +295,7 @@ demiplane.push({
 demiplane.push({
   uid: 'hcBKY',
   title: 'Tax Laws',
+  category: 'Home',
   image: '',
   cost: 50,
   whitelist: ['Laws of Man', 'Laws of the Jungle', 'Laws of Science', 'Laws of Magic', 'Laws of Cognition'],
@@ -289,6 +310,7 @@ demiplane.push({
 demiplane.push({
   uid: 'cOdVH',
   title: 'Laws of Reality',
+  category: 'Home',
   image: '',
   cost: 200,
   whitelist: ['Laws of Man', 'Laws of the Jungle', 'Laws of Science', 'Laws of Magic', 'Laws of Cognition'],
@@ -317,6 +339,7 @@ export const dungeon: PerkFull[] = []
 dungeon.push({
   uid: 'g4ekX',
   title: 'Dungeons',
+  category: 'Home',
   image: '',
   cost: 15,
   whitelist: ['Sweet Home'],
@@ -338,6 +361,7 @@ dungeon.push({
 dungeon.push({
   uid: 'fTj4M',
   title: 'Spawning Room: Breeding Pits',
+  category: 'Home',
   image: '',
   cost: 50,
   whitelist: ['Dungeons'],
@@ -351,6 +375,7 @@ dungeon.push({
 dungeon.push({
   uid: 'IiGRZ',
   title: 'Commerce Room: Hotel California',
+  category: 'Home',
   image: '',
   cost: 20,
   whitelist: ['Dungeons'],
@@ -366,6 +391,7 @@ dungeon.push({
 dungeon.push({
   uid: 'TERdJ',
   title: 'Broadcast Room: Eye of Sauron',
+  category: 'Home',
   image: '',
   cost: 25,
   whitelist: ['Dungeons'],
@@ -382,6 +408,7 @@ dungeon.push({
 dungeon.push({
   uid: 'RvTrj',
   title: 'Lure Room: My Precious',
+  category: 'Home',
   image: '',
   cost: 25,
   whitelist: ['Dungeons'],

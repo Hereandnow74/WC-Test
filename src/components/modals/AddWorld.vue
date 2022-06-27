@@ -12,7 +12,7 @@
         />
       </div>
       <Input v-model="image" placeholder="Image URL" :error-message="errors.image" />
-      <Foldable title="Setting specifing rules">
+      <Foldable title="Setting specific rules">
         <span v-if="errors.additional" class="text-xs">{{ errors.additional }}</span>
         <TextArea
           v-model="additional"

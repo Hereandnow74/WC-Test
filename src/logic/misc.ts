@@ -9,6 +9,7 @@ import { clearAll, isBuildImage } from '~/logic'
 import { confirmDialog } from '~/logic/dialog'
 import { useChallenges } from '~/store/challenges'
 import { Perk } from '~/store/chargen'
+import { usePlayStore } from '~/store/play'
 
 const { allCharsComp } = useAllChars()
 
@@ -161,10 +162,11 @@ const {
   startingWorld, startingOrigin, intensities, binding, homePerks, defensePerks,
   companions, heritage, talentPerks, waifuPerks, ridePerks, miscPerks, luresBought, genericWaifuPerks,
   companionsCost, baseBudget, companionProfit, companionProfitSold, otherPerks, loan, csr,
-  usedHeritageDiscount, talentsDiscount, defensesDiscount, defenseRetinueDiscount, patron, specificMods, specificModsCost,
+  usedHeritageDiscount, talentsDiscount, defensesDiscount, defenseRetinueDiscount, patron, specificMods, specificModsCost, missionRewardCredits,
 } = useStore()
 
 const { activeChallenges } = useChallenges()
+const { missionRewards } = usePlayStore()
 
 const originTextClean = computed(() => {
   const variants = {
@@ -295,6 +297,14 @@ export function copyText() {
   full += specificMods.value.length
     ? `\nSpecific credit modifiers ${numberToSigned(specificModsCost.value)} [${fullCost.c}]:\n${specificMods.value.reduce((a, x) => (a += `${x.desc} [${numberToSigned(x.mod)}]\n`, a), '')}`
     : ''
+
+  fullCost.c += missionRewardCredits.value
+  const MR = Object.values(missionRewards.value)
+  full += MR.length
+    ? `\nMission Rewards ${numberToSigned(missionRewardCredits.value)} [${fullCost.c}]:\n${MR.reduce((a, x) =>
+      (a += `${x.title} in ${x.location}\n${x.rewards.reduce((a, rw) => a += `  ${rw.type} [${rw.value}];`, '')}`, a), '')}`
+    : ''
+
   navigator.clipboard.writeText(full)
 }
 
