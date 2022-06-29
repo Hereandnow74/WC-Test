@@ -94,7 +94,7 @@
             Tier: <span class="text-amber-300">{{ (charData.tier) }}</span>
           </div>
           <div class="text-gray-400">
-            Cost: <span class="text-amber-300">{{ charData.tier === 11 ? 'Tier 11 ticket' : CHAR_COSTS[charData.tier] }}</span>
+            Cost: <span class="text-amber-300">{{ charData.tier === 11 ? 'Tier X ticket' : CHAR_COSTS[charData.tier] }}</span>
             <span
               v-if="flags.noBindings && (charData.tier) !== 11 && (charData.tier) !== 1"
               title="Discount from No Binding"

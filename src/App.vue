@@ -18,6 +18,7 @@
 
     <component :is="PromoteDialog" v-if="(totalActive > 60 * 60 && !promoteShown) || isSupport" />
     <component :is="SaveLoad" v-if="showSaveLoad" class="z-20" @click="showSaveLoad = !showSaveLoad" />
+    <component :is="BuildImageSettings" v-if="showBuildImageSettings" class="z-20" @click="showBuildImageSettings = !showBuildImageSettings" />
     <component :is="Share" v-if="showShare" class="z-20" @click="showShare = !showShare" />
     <component :is="addPerkComponent" v-if="showAddPerk" @click="toggleShowAddPerk()" />
     <component :is="addMissionComponent" v-if="showAddMission" @click="toggleShowAddMission()" />
@@ -33,7 +34,7 @@ import { VERSION } from './data/constants'
 import {
   isSupport, showSaveLoad, showShare, showSideMenu, showAddPerk, toggleShowAddPerk,
   showAddMission, toggleShowAddMission, promoteShown, toggleShowSettings, showSettings, sendStats,
-  buildImage, copyText, clearBuild, isBuildImage, toggleAddFic, showAddFic, currentFic, toggleDark, randomString, sendCount, showIntro,
+  buildImage, copyText, clearBuild, isBuildImage, toggleAddFic, showAddFic, currentFic, toggleDark, randomString, sendCount, showIntro, showBuildImageSettings,
 } from '~/logic'
 
 const { totalActive, settings, companions, startingWorld, allEffects, ridePerks, waifuPerks } = useStore()
@@ -44,6 +45,7 @@ const addFicComponent = computed(() => defineAsyncComponent(() => import('./comp
 const settingsComponent = computed(() => defineAsyncComponent(() => import('./components/modals/Settings.vue')))
 const PromoteDialog = computed(() => defineAsyncComponent(() => import('./components/modals/dialogs/PromoteDialog.vue')))
 const SaveLoad = computed(() => defineAsyncComponent(() => import('./components/modals/SaveLoad.vue')))
+const BuildImageSettings = computed(() => defineAsyncComponent(() => import('./components/modals/BuildImageSettings.vue')))
 const Share = computed(() => defineAsyncComponent(() => import('./components/modals/Share.vue')))
 
 const intro = window.localStorage.getItem('intro')

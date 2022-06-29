@@ -55,15 +55,15 @@ export const sales = `<h3 class="font-bold text-lg">Extending Your Build: Sales<
 `
 
 export const waifu11 = `<h3 class="font-bold text-lg">These Waifus Go Up to 11</h3>
-<p>Tier 11 companions are not bought with standard credits. They instead require a special ticket, only available for starting builds on Danger 11. If you choose this instead, ignore the entire list of regular companions. Instead, go to the Tier 11 list on the fifth page of the spreadsheet and spend your special ticket on one and only one of the companions there. You must spend this starting ticket on a Tier 11 companion. Tier 11 companions that are listed as Perks or Waifu Perks have further details in the appropriate section below. Heritage and other Perks that cost a T11 ticket cannot be purchased in a starting build.</p>
-<p>Captured Tier 11 companions may be shipped back to the company for an additional ticket, on top of the reward for capturing one in the first place. If, after your starting build, you ever find yourself with a spare Tier 11 ticket and nobody you want to buy with it, you may exchange it for 2000 credits. This cannot be undone. OC Tier 11 captures are valued at 5% of that exchange rate: 100 credits each.</p>
-<p>All Tier 11 companions are freely capable of multiversal travel, even if they showed no such abilities or explicitly could not in their original canons.</p>
+<p>Tier X companions are not bought with standard credits. They instead require a special ticket, only available for starting builds on Danger 11. If you choose this instead, ignore the entire list of regular companions. Instead, go to the Tier X list on the fifth page of the spreadsheet and spend your special ticket on one and only one of the companions there. You must spend this starting ticket on a Tier X companion. Tier X companions that are listed as Perks or Waifu Perks have further details in the appropriate section below. Heritage and other Perks that cost a TX ticket cannot be purchased in a starting build.</p>
+<p>Captured Tier X companions may be shipped back to the company for an additional ticket, on top of the reward for capturing one in the first place. If, after your starting build, you ever find yourself with a spare Tier X ticket and nobody you want to buy with it, you may exchange it for 2000 credits. This cannot be undone. OC Tier X captures are valued at 5% of that exchange rate: 100 credits each.</p>
+<p>All Tier X companions are freely capable of multiversal travel, even if they showed no such abilities or explicitly could not in their original canons.</p>
 `
 
 export const danger11 = `<h3 class="font-bold text-lg">Danger Rating 11 Build Rules</h3>
 <p>When creating a Danger Rating 11 build, ignore the basic build creation rules found above. You will instead start with the following:</p>
 <ul class="list-disc list-inside">
-  <li>One T11 ticket. Must be spent on a Companion.</li>
+  <li>One TX ticket. Must be spent on a Companion.</li>
   <li>Any Origin, free of charge. Substitute and Possess are limited to T6 and below.</li>
   <li>A single basic Binding-type control.</li>
   <li>As many official basic Lures as desired.</li>
@@ -78,7 +78,7 @@ export const danger11 = `<h3 class="font-bold text-lg">Danger Rating 11 Build Ru
 
 export const creditValue = `
 <h3 class="font-bold text-lg">PvP Credit Value</h3>
-<p>This is the sum of the list prices for you and your retinue’s effective tiers after step 5, plus the combined list prices of your Controls, Catch-a-Ride vehicles, Talents & Defenses, and Demiplanes & Dungeons perks. Tier 11s are valued at their tickets' exchange rate of 2000 credits.</p>
+<p>This is the sum of the list prices for you and your retinue’s effective tiers after step 5, plus the combined list prices of your Controls, Catch-a-Ride vehicles, Talents & Defenses, and Demiplanes & Dungeons perks. Tier Xs are valued at their tickets' exchange rate of 2000 credits.</p>
 `
 export const pvpRules = `
   <h2 class="font-bold text-xl underline py-2">Other Contractors</h2>
@@ -90,7 +90,7 @@ export const pvpRules = `
     <b>Home Territory / Turf</b>: This includes all company provided spaces (Pocket Apartment and upgrades, Dragon Cabin, space claimed by Creep, etc., plus any locations in a local world that you or your retinue have possessed for at least 24 hours.
     </li>
     <li class="list-inside list-disc">
-    <b>PvP Asset Value</b>: The sum of the list prices for you and your retinue’s effective tiers after step 5, plus the combined list prices of your Catch-a-Ride vehicles. Tier 11s are valued at their tickets’ exchange rate of 2000 credits. If you only bring a limited force into a PvP match, only they will count towards this.
+    <b>PvP Asset Value</b>: The sum of the list prices for you and your retinue’s effective tiers after step 5, plus the combined list prices of your Catch-a-Ride vehicles. Tier Xs are valued at their tickets’ exchange rate of 2000 credits. If you only bring a limited force into a PvP match, only they will count towards this.
     </li>
     <li class="list-inside list-disc">
     <b>PvP Credit Value</b>: Your total PvP Asset Value, plus the combined list prices of your Controls, Talents & Defenses, and Demiplanes & Dungeons perks.
@@ -117,7 +117,7 @@ export const pvpRules = `
   <i>Enabled for: Invasions (non-Phantasms), Gauntlet, Unregulated</i>
   <p>
   If a member of a retinue is captured by an enemy and held in their territory (whether that territory is purchased from the company or acquired locally) for a period of 24 hours, the hostage loses the benefits of Creature, Stress, Mind, Addiction, Wyldscape, and Corruption Defenses until rescued. The timer begins only when the hostage is both defeated and restrained, and it will reset if they are touched by their master or leave enemy territory unrestrained. The timer will pause if they leave while still restrained by the enemy.  </p>
-  <p>Once the timer has run its course, the kidnapper is free to use any bindings, lures, or third-party mind control methods they have, as if the hostage were free. Targets stolen from another contractor are worth 0 capture credits, but may be sold at the usual rate, adjusting for their effective tier after step 4. T11s are an exemption to this and maintain their normal rates for capture and sale. Recapturing one of your own companions does not grant any credits.</p>
+  <p>Once the timer has run its course, the kidnapper is free to use any bindings, lures, or third-party mind control methods they have, as if the hostage were free. Targets stolen from another contractor are worth 0 capture credits, but may be sold at the usual rate, adjusting for their effective tier after step 4. TXs are an exemption to this and maintain their normal rates for capture and sale. Recapturing one of your own companions does not grant any credits.</p>
 
   <h3 class="font-bold text-lg mt-4">Gauntlet(Continuous PvP)</h3>
   Starting one week into your journey, another contractor will appear in your current world, with their own
@@ -168,7 +168,7 @@ export const services = `<h3 class="font-bold text-lg">Clientele</h3>
 
 export const salary = `<h3 class="font-bold text-lg">Contractor Salary</h3>
 <p>As one of our contractors, you are entitled to a monthly salary of 10,000 USD or the equivalent in your homeland’s currency. This will be deposited directly into your smart device’s account, so you can convert it to the local money systems of the worlds you visit. On-the-spot fabrication of physical currency or coinage is included at no extra cost.</p>
-<p>Bonus pay is also available for each month. This is valued at the sum of the list prices of all captures you’ve made for that month, including earned waifu perks. Tier 11 characters count as 2000 credits. For this purpose only, 1 credit is equal to 100 USD</p>
+<p>Bonus pay is also available for each month. This is valued at the sum of the list prices of all captures you’ve made for that month, including earned waifu perks. Tier X characters count as 2000 credits. For this purpose only, 1 credit is equal to 100 USD</p>
 `
 
 export const helpDesk = `<h3 class="font-bold text-lg">Help Desk Hotline</h3>
@@ -223,7 +223,7 @@ export const missions = `<h3 class="font-bold text-lg">Missions</h3>
 `
 
 export const refund = `<h3 class="font-bold text-lg">Refund and Return Policy</h3>
-<p>Any purchased companion may be returned for any reason. If you return her within two weeks (336 hours) of purchase, you will be refunded the full price you paid, including waifu perks but not meta-Talents. If you return a companion after that point, or return any Control, Perk, or non-Tier 11 Waifu Perk, you’ll only receive 80% the price you paid, again including waifu perks but not meta-Talents. If you use Evolutionary Engine Array or other means to copy the purchase’s abilities, or otherwise bought that person with the intent of returning them after a task or time, that’s treated as a rental and capped at the same 80% as the previous. For ease of calculation, all refunds from Tier 11 Waifu Perks are 100%. Heritages, and chargen T11s, are non-refundable. If you return a Control or Perk that gives other items for free, but wish to keep the packaged items, their list prices will be deducted from the standard refund value.</p>
+<p>Any purchased companion may be returned for any reason. If you return her within two weeks (336 hours) of purchase, you will be refunded the full price you paid, including waifu perks but not meta-Talents. If you return a companion after that point, or return any Control, Perk, or non-Tier X Waifu Perk, you’ll only receive 80% the price you paid, again including waifu perks but not meta-Talents. If you use Evolutionary Engine Array or other means to copy the purchase’s abilities, or otherwise bought that person with the intent of returning them after a task or time, that’s treated as a rental and capped at the same 80% as the previous. For ease of calculation, all refunds from Tier X Waifu Perks are 100%. Heritages, and chargen TXs, are non-refundable. If you return a Control or Perk that gives other items for free, but wish to keep the packaged items, their list prices will be deducted from the standard refund value.</p>
 `
 
 export const arranged = `<p>Smaller-scale PvP matchmaking is available for contractors who don’t wish to get involved with a career-defining project on the scale of the Gauntlet. This is accessible through a specialized app on your smart device, provided you are not currently participating in PvP and are not in debt..</p>

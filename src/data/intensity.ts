@@ -48,7 +48,7 @@ intensity.push({
   blacklist: ['DR11 start'],
   chargen: true,
   desc: `Your spouse or significant other is a contractor like you, but the two of you are tied much more closely than the friends option above. The two of you share full access to a joint account tied to both of your smart devices. A member of your retinue may be a companion to one of you and merely a familiar to the other.
-<p>You will only pay for the more expensive of your two Origins. The chosen binding method treats you as equal masters, ensuring that your love never fades. (If you have the Symbiote, one of you will usually, but not necessarily, be the queen.) Heritages are purchased separately, but the other of you can buy any Heritage that one of you has at half-price, after all discounts and ignoring the usual discount cap. This does not apply to Tier 11 Heritage capstones. The control aspects of Bindings, Lures, and any Heritage hierarchy mechanics will only affect your relationship if the two of you are into that. OC Donut Steel, Template Stacking, and relevant waifu perks are purchased individually. All other items need only be purchased once to benefit the both of you equally. Your shared retinue will not enter R.I.P. mode unless you both perish.</p>`,
+<p>You will only pay for the more expensive of your two Origins. The chosen binding method treats you as equal masters, ensuring that your love never fades. (If you have the Symbiote, one of you will usually, but not necessarily, be the queen.) Heritages are purchased separately, but the other of you can buy any Heritage that one of you has at half-price, after all discounts and ignoring the usual discount cap. This does not apply to Tier X Heritage capstones. The control aspects of Bindings, Lures, and any Heritage hierarchy mechanics will only affect your relationship if the two of you are into that. OC Donut Steel, Template Stacking, and relevant waifu perks are purchased individually. All other items need only be purchased once to benefit the both of you equally. Your shared retinue will not enter R.I.P. mode unless you both perish.</p>`,
 })
 
 intensity.push({
@@ -60,7 +60,7 @@ intensity.push({
   chargen: true,
   blacklist: ['Cash Still Rules', 'Wage Slave', 'Couple’s Account(Cooperative)'],
   desc: `Danger Rating 11 build's have special <a @click.stop href="/#danger11" class="text-cyan-500 hover:text-cyan-600 underline">rules</a>
-  <p>This perk does not modify starting world in any way all the danger comes from mandatory T11 companion of your choice, while Company guarantee that they will not kill you outright, how obedient they are completely depends on chosen companion and your perks.</p>
+  <p>This perk does not modify starting world in any way all the danger comes from mandatory TX companion of your choice, while Company guarantee that they will not kill you outright, how obedient they are completely depends on chosen companion and your perks.</p>
   `,
 })
 
@@ -113,7 +113,7 @@ intensityPvP.push({
   pvp: true,
   special: 'Gauntlet only, mutually exclusive with Fight For Your Right',
   blacklist: ['Fight For Your Right', 'Wage Slave'],
-  desc: 'This is the most basic option. You are only locked into PvP for 10 rounds. Negotiable opponents will  appear from round 1 to round 9 and you will face a Rival in round 10. You will not face any Enemies. Members of your retinue rated T11 may not directly participate. Your prize for survival is 200 credits.',
+  desc: 'This is the most basic option. You are only locked into PvP for 10 rounds. Negotiable opponents will  appear from round 1 to round 9 and you will face a Rival in round 10. You will not face any Enemies. Members of your retinue rated TX may not directly participate. Your prize for survival is 200 credits.',
 })
 intensityPvP.push({
   uid: 'axa7F',
@@ -122,7 +122,7 @@ intensityPvP.push({
   pvp: true,
   special: 'Gauntlet only, mutually exclusive with One In Ten',
   blacklist: ['One In Ten', 'Wage Slave'],
-  desc: `This is the default option. You are locked into PVP for 20 rounds. Negotiable opponents may appear from round 1 to round 15, Rivals may appear from round 11 to round 19, and you will always face an Enemy on round 20. Members of your retinue rated T11 may not directly participate. Your prize for survival is one T11 ticket.
+  desc: `This is the default option. You are locked into PVP for 20 rounds. Negotiable opponents may appear from round 1 to round 15, Rivals may appear from round 11 to round 19, and you will always face an Enemy on round 20. Members of your retinue rated TX may not directly participate. Your prize for survival is one TX ticket.
 <p>You may transition to this challenge after completing One In Ten. If you do so, you must choose between giving up the prize for the previous challenge and accepting 1800 credits instead of the normal prize for this one. The additional budget increase will be applied according to the highest - danger world you’ve visited.</p>`,
 })
 intensityPvP.push({
@@ -131,7 +131,7 @@ intensityPvP.push({
   intensity: 0.2,
   pvp: true,
   whitelist: ['Fight For Your Right'],
-  desc: `You are locked into PVP for 50 rounds. Negotiable opponents may appear from round 1 to round 25, Rivals may appear from round 16 to round 40, and Enemies may appear starting on round 36. This scaling overrides the effect of the previous challenge. Members of your retinue rated T11 may not directly participate before round 46. Your prize for survival is three additional T11 tickets, on top of the reward for the previous challenge.
+  desc: `You are locked into PVP for 50 rounds. Negotiable opponents may appear from round 1 to round 25, Rivals may appear from round 16 to round 40, and Enemies may appear starting on round 36. This scaling overrides the effect of the previous challenge. Members of your retinue rated TX may not directly participate before round 46. Your prize for survival is three additional TX tickets, on top of the reward for the previous challenge.
 <p>You may transition to this challenge after completing Fight For Your Right. The additional budget increase will be applied according to the highest - danger world you’ve visited.</p>`,
 })
 intensityPvP.push({
@@ -140,8 +140,8 @@ intensityPvP.push({
   intensity: 0.4,
   pvp: true,
   whitelist: ['Survivalism'],
-  desc: `You are locked into PVP for 100 rounds. Negotiable opponents may appear from round 1 to round 40, Rivals may appear from round 31 to round 70, and Enemies may appear starting on round 61. This scaling overrides the effects of the previous two challenges. Members of your retinue rated T11 may not directly participate before round 91. Your prize for survival is six additional T11 tickets, on top of the rewards for the previous challenges, plus the dimensional coordinates to your original homeworld in a format compatible with Rainbow Bridge or your other travel methods.
-<p>You may transition to this challenge after completing Survivalism, or together with Survivalism after completing Fight For Your Right. If you choose the latter, the reward for completing Survivalism will be added to this challenge’s reward, so the total prize is still 10 T11 tickets. The additional budget increase will be applied according to the highest - danger world you’ve visited.</p>`,
+  desc: `You are locked into PVP for 100 rounds. Negotiable opponents may appear from round 1 to round 40, Rivals may appear from round 31 to round 70, and Enemies may appear starting on round 61. This scaling overrides the effects of the previous two challenges. Members of your retinue rated TX may not directly participate before round 91. Your prize for survival is six additional TX tickets, on top of the rewards for the previous challenges, plus the dimensional coordinates to your original homeworld in a format compatible with Rainbow Bridge or your other travel methods.
+<p>You may transition to this challenge after completing Survivalism, or together with Survivalism after completing Fight For Your Right. If you choose the latter, the reward for completing Survivalism will be added to this challenge’s reward, so the total prize is still 10 TX tickets. The additional budget increase will be applied according to the highest - danger world you’ve visited.</p>`,
 })
 intensityPvP.push({
   uid: 'tPoBA',
@@ -202,7 +202,7 @@ intensityPvP.push({
   intensity: 0.4,
   pvp: true,
   whitelist: ['Fight For Your Right'],
-  desc: 'Negotiable opponents are disabled. Rivals will appear from round 1 to round 15(Fight For Your Right), 35(Survivalism), or 75(Marathon). Enemies will appear starting on round 11(Fight For Your Right), 26(Survivalism), or 51(Marathon). Retinue members rated T11 may not directly participate before round 16(Fight For Your Right), 36(Survivalism), or 76(Marathon). The cap on your opponents’ experience and skill is removed.',
+  desc: 'Negotiable opponents are disabled. Rivals will appear from round 1 to round 15(Fight For Your Right), 35(Survivalism), or 75(Marathon). Enemies will appear starting on round 11(Fight For Your Right), 26(Survivalism), or 51(Marathon). Retinue members rated TX may not directly participate before round 16(Fight For Your Right), 36(Survivalism), or 76(Marathon). The cap on your opponents’ experience and skill is removed.',
 })
 intensityPvP.push({
   uid: 'JVOYA',
@@ -210,7 +210,7 @@ intensityPvP.push({
   intensity: 0.4,
   pvp: true,
   whitelist: ['Deathmatch'],
-  desc: 'Rivals are disabled. Every opponent you encounter will be an enemy. Retinue members rated T11 may participate in any round. Your opponents’ experience and skill will increase more quickly, hitting the original cap at round 20, the equivalent of round 100 on Deathmatch at round 50, and beyond.',
+  desc: 'Rivals are disabled. Every opponent you encounter will be an enemy. Retinue members rated TX may participate in any round. Your opponents’ experience and skill will increase more quickly, hitting the original cap at round 20, the equivalent of round 100 on Deathmatch at round 50, and beyond.',
 })
 intensityPvP.push({
   uid: 'ktxBZ',

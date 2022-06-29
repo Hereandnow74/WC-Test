@@ -182,7 +182,7 @@ import { useTooltips } from '~/logic/misc'
 
 const worldTitles = ['Danger Rating', 'Difficulty Title', 'Budget']
 const worldData = WORLD_RATINGS.slice(0, 10).map(x => [x.rating, x.title, x.budget])
-worldData.push([11, 'One', 'Tier 11 ticket'])
+worldData.push([11, 'One', 'Tier X ticket'])
 
 const waifuTitles = ['Waifu Tier', 'Cost', 'Steal', 'Capture', 'Capture + Sale', 'Short']
 const waifuData = [
@@ -196,7 +196,7 @@ const waifuData = [
   ['T8', '200', '20', '120', '160', ['★★', 'text-gray-400']],
   ['T9', '500', '50', '300', '400', ['★★★', 'text-gray-400']],
   ['T10', '1000', '100', '600', '800', ['★', 'text-yellow-500']],
-  ['T11', 'T11 ticket', 'T11 ticket', 'T11 ticket', '2 T11 tickets'],
+  ['TX', 'TX ticket', 'TX ticket', 'TX ticket', '2 TX tickets'],
 ]
 
 const pandoraTitles = ['Waifu Tier', 'Tier Name', 'Tier Meaning']
@@ -211,7 +211,7 @@ const pandoraData = [
   ['T8', 'Ultra Tier', 'These characters have abilities that can affect entire worlds (such as Earth or others comparable to it in size) either positively or negatively, or may even be a manifestation of a planet, with all that implies. Those who can reach into other dimensions go here.'],
   ['T9', 'Demigod Tier', 'These characters are powerful enough to be considered lesser gods, and are nigh-unchallenged in power in their setting.'],
   ['T10', 'God Tier', 'Characters that are this powerful aren\'t so much characters as forces of nature, wielding power beyond observable human science.'],
-  ['T11', 'Author Tier', 'Characters in this weight class are absolutely Omnipotent and likely Omniscient. They are capable of exerting their will on all of reality and the entire universe (or even the totality of the multiverse) without exception. Destiny/Fate is their play-thing. They cannot be killed/destroyed by any means. Any limits they have are self-imposed.'],
+  ['TX', 'Author Tier', 'Characters in this weight class are absolutely Omnipotent and likely Omniscient. They are capable of exerting their will on all of reality and the entire universe (or even the totality of the multiverse) without exception. Destiny/Fate is their play-thing. They cannot be killed/destroyed by any means. Any limits they have are self-imposed.'],
 ]
 
 const despinData = [
@@ -247,10 +247,10 @@ accurately be described as a Walking Calamity.
 of the genuinely impossible.
 Scales infinitely. Planetary to multiversal influence all fall in this tier.
 `],
-  ['T11', 'Outsider', `Has broad reality altering capabilities or otherwise possesses an ability that
+  ['TX', 'Outsider', `Has broad reality altering capabilities or otherwise possesses an ability that
 breaks or bypasses power-scaling entirely, though is not necessarily unkillable
 or unstoppable.
-A T11 retinue member automatically becomes an unlimited Dimension Hopper.
+A TX retinue member automatically becomes an unlimited Dimension Hopper.
 `],
 ]
 

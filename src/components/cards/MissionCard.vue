@@ -7,7 +7,7 @@
     <img
       v-if="mission.image && settings.perkImages"
       ref="imageEl"
-      class="max-h-sm object-cover"
+      class="max-h-sm object-cover rounded"
       draggable="false"
       :data-src="mission.image"
       alt="mission image"

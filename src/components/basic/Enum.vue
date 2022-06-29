@@ -11,7 +11,7 @@
           <span class="hover:underline">{{ el.title2 || el.title || el }}</span>
           <span v-if="ALL_DLC_PERK_TITLES[el.title2 || el.title || el]" class="text-teal-200">ᵈˡᶜ</span>
           <span v-if="el?.anything?.length" class="text-yellow-500">({{ el.anything }})</span>
-          <span v-if="el.count && el.count > 1" class="text-gray-300">(<span class="text-cyan-400">x{{ el.count }}</span>)</span>
+          <span v-if="el.count && el.count > 1" class="text-gray-300">(<span :style="[numberColor ? {color: numberColor} : {color:'rgba(34, 211, 238)'}]">x{{ el.count }}</span>)</span>
           <span v-if="el?.target?.length || el.waifu" class="text-teal-500">({{ el.target || el.waifu }})</span>
           <span v-if="el.complex && isArray(el.complex) && el.complex.length">
             <template v-if="el.complex[0].flavor && el.complex[0].target">
@@ -21,7 +21,7 @@
                 :key="tf[0]"
                 class="text-violet-400"
               >
-                ({{ tf[0] }} <span class="text-gray-400">{{ tf[0] === 'You' ? 'have' : 'has' }}</span>
+                ({{ tf[0] }} <span>{{ tf[0] === 'You' ? 'have' : 'has' }}</span>
                 <List :list-key="'flavor'" :list="tf[1]" color="text-green-500" start="" end="" />)
               </span>
             </template>
@@ -31,7 +31,7 @@
             </template>
           </span>
         </router-link>
-        <span v-if="priceMode && costOrIntensity(el)" class="text-gray-400">[<span class="text-gray-300">{{ costOrIntensity(el) }}</span>]</span>
+        <span v-if="priceMode && costOrIntensity(el)">[<span :style="[numberColor ? {color: numberColor} : '']" class="text-gray-300">{{ costOrIntensity(el) }}</span>]</span>
         <span v-if="editMode" class="text-red-400 hover:text-red-500 cursor-pointer" @click.stop="deletePerk(el)"><fluent:delete-20-filled /></span>
       </template>
       ]
@@ -43,14 +43,15 @@
 </template>
 
 <script lang='ts' setup>
-import { isArray, groupBy } from 'lodash-es'
+import { isArray, groupBy, findIndex, remove } from 'lodash-es'
 import type { PropType } from 'vue'
 import { ALL_DLC_PERK_TITLES, LINKS, QUERIES } from '~/data/constants'
+import { removeAnyPerk } from '~/logic'
 import { useStore } from '~/store/store'
 
 const { baseBudget } = useStore()
 
-defineProps({
+const props = defineProps({
   list: {
     type: Array as PropType<any[]>,
     default: () => [],
@@ -62,6 +63,10 @@ defineProps({
   color: {
     type: String,
     default: 'text-blue-600 dark:text-blue-300',
+  },
+  numberColor: {
+    type: String,
+    default: '',
   },
   path: {
     type: String,
@@ -84,7 +89,7 @@ const costOrIntensity = (el: any) => {
     if (el.cost === 0)
       return 'free'
     else
-      return el.cost * (-1)
+      return el.cost >= 11111 ? `${el.cost / 11111} TX ticket(s)` : el.cost * (-1)
   }
   if (el.intensity) {
     if (el.intensity <= 1)
@@ -96,6 +101,8 @@ const costOrIntensity = (el: any) => {
 }
 
 function deletePerk(el: any) {
-  emit('deletePerk', el)
+  const ind = findIndex(props.list, { title: el.title })
+  if (ind !== -1)
+    remove(props.list, { title: el.title })
 }
 </script>

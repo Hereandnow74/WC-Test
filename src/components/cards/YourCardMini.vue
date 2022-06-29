@@ -20,7 +20,7 @@
           <span class="text-gray-500 ml-auto whitespace-nowrap"> Tier: <span class="text-green-500">{{ Math.max(startingOrigin.tier || 1, yourTier) }}</span></span>
         </div>
         <span v-if="startingOrigin.w || char.w" class="text-gray-500">From: <span class="text-gray-400">{{ startingOrigin.w || char.w }}</span></span>
-        <div class="flex gap-2 mb-1 text-sm">
+        <div v-if="!infoMode" class="flex gap-2 mb-1 text-sm">
           <NumberInput
             v-model="startingOrigin.tier"
             theme="dark"
@@ -56,6 +56,10 @@ import { useStore } from '~/store/store'
 
 defineProps({
   editMode: {
+    type: Boolean,
+    default: false,
+  },
+  infoMode: {
     type: Boolean,
     default: false,
   },

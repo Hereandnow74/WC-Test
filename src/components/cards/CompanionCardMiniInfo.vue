@@ -1,14 +1,14 @@
 <template>
   <div
-    class="flex justify-between border border-gray-400 rounded p-1"
+    class="flex justify-between border border-gray-400 rounded p-1 bg-gray-800 rounded"
     :class="char.sold ? 'text-gray-600': ''"
   >
     <div class="flex gap-2 w-full">
       <img
-        v-if="image"
+        v-if="image && showImage"
         :src="image"
         :alt="char.name"
-        class="rounded w-[80px] max-h-[150px] object-cover object-center self-center"
+        class="rounded w-[33%] max-h-[120px] object-cover object-top self-center"
       >
       <div class="flex flex-col w-full">
         <div class="flex flex-wrap gap-x-1 items-center">
@@ -40,6 +40,10 @@ const props = defineProps({
     type: String,
     default: '',
   },
+  showImage: {
+    type: Boolean,
+    default: true,
+  },
 })
 
 const { captureKoeff } = useStore()
@@ -70,6 +74,6 @@ const charCost = computed(() => {
       cost = CHAR_COSTS[props.char.priceTier] * 1.2
       break
   }
-  return cost * (-1)
+  return cost === 11111 ? 'TX ticket' : cost * (-1)
 })
 </script>

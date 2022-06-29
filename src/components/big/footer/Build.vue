@@ -11,17 +11,16 @@
       </h3>
       <div class="flex flex-wrap whitespace-nowrap gap-2">
         <div class="flex gap-2">
-          <span class="text-gray-500 dark:text-gray-400">Name:</span>
+          <span class="text-gray-300">Name:</span>
           <span>{{ startingWorld.worldName || 'Unknown' }}</span>
         </div>
-        <div v-if="startingWorld?.condition?.length" class="flex gap-2">
-          <span class="text-gray-500 dark:text-gray-400">Condition:</span>
-          <span>{{ isArray(startingWorld.condition) ?
-            startingWorld.condition[0].name : startingWorld.condition }}</span>
+        <div v-if="startingWorld.condition" class="flex gap-2">
+          <span class="text-gray-300">Condition:</span>
+          <span class="whitespace-normal">{{ startingWorld.condition }}</span>
         </div>
         <div class="flex gap-2">
-          <span class="text-gray-500 dark:text-gray-400">Rating:</span>
-          <span>{{ startingWorld.rating || 'Unknown' }}</span>
+          <span class="text-gray-300">Rating:</span>
+          <span class="text-teal-300 font-semibold">{{ startingWorld.rating || 'Unknown' }}</span>
         </div>
       </div>
     </div>
@@ -67,7 +66,6 @@
           empty-message=""
           :edit-mode="editMode"
           :price-mode="priceMode"
-          @deletePerk="(el: any) => chooseBinding(el, el)"
         />
         <div v-if="!binding.length">
           <router-link :to="{path: '/bindings/bindings', hash:'#No Bindings'}">
@@ -83,7 +81,6 @@
           empty-message="No Lures"
           :edit-mode="editMode"
           :price-mode="priceMode"
-          @deletePerk="(el: any) => chooseLure(el)"
         />
       </div>
       <div>
@@ -94,7 +91,6 @@
           empty-message="No Other Controls"
           :edit-mode="editMode"
           :price-mode="priceMode"
-          @deletePerk="(el: any) => chooseOther(el, el)"
         />
       </div>
     </div>
@@ -109,7 +105,6 @@
         empty-message="No Heritage"
         :edit-mode="editMode"
         :price-mode="priceMode"
-        @deletePerk="(el: any) => chooseHeritage(el, el)"
       />
     </div>
     <div id="Talents & Perks">
@@ -130,7 +125,6 @@
             empty-message="No Ride"
             :edit-mode="editMode"
             :price-mode="priceMode"
-            @deletePerk="(el: any) => chooseRide(el, el)"
           />
         </li>
         <li class=" text-gray-300">
@@ -145,7 +139,6 @@
             empty-message="No Home"
             :edit-mode="editMode"
             :price-mode="priceMode"
-            @deletePerk="(el: any) => chooseHome(el, el)"
           />
         </li>
         <li class="text-gray-300">
@@ -160,7 +153,6 @@
             empty-message="No Talents"
             :edit-mode="editMode"
             :price-mode="priceMode"
-            @deletePerk="(el: any) => chooseTalent(el, el)"
           />
         </li>
         <li class="text-gray-300">
@@ -175,7 +167,6 @@
             empty-message="No Defenses"
             :edit-mode="editMode"
             :price-mode="priceMode"
-            @deletePerk="(el: any) => (el.count = 0, chooseDefense(el, el))"
           />
         </li>
         <li class="text-gray-300">
@@ -190,7 +181,6 @@
             empty-message="No Misc Perks"
             :edit-mode="editMode"
             :price-mode="priceMode"
-            @deletePerk="(el: any) => choosePerk(el, el)"
           />
         </li>
         <li class="text-gray-300">
@@ -204,7 +194,6 @@
             empty-message="No Generic Perks"
             :edit-mode="editMode"
             :price-mode="priceMode"
-            @deletePerk="(el: any) => chooseGenericPerk(el, el)"
           />
         </li>
         <li class="text-gray-300">
@@ -218,7 +207,6 @@
             empty-message="No Waifu Perks"
             :edit-mode="editMode"
             :price-mode="priceMode"
-            @deletePerk="(el: any) => chooseWaifuPerk(el)"
           />
         </li>
       </ul>
@@ -243,12 +231,8 @@
 </template>
 
 <script lang="ts" setup>
-import { isArray } from 'lodash-es'
 import { useStore } from '~/store/store'
-import {
-  chooseBinding, chooseDefense, chooseGenericPerk, chooseHeritage, chooseHome,
-  chooseLure, chooseOther, choosePerk, chooseRide, chooseTalent, chooseWaifuPerk,
-} from '~/logic'
+import { chooseBinding } from '~/logic'
 import { useChallenges } from '~/store/challenges'
 import { confirmDialog } from '~/logic/dialog'
 

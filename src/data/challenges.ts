@@ -57,7 +57,7 @@ export const challenges = [
     special: 'DR7 or higher',
     cost: 0,
     desc: `
-    <p>While you are prime candidate for becoming a Contractor our automatic &#9632;&#9632;&#9632;&#9632;&#9632;&#9632; marked you as a &#9632;&#9632;&#9632;&#9632;&#9632;&#9632;&#9632;&#9632; all Contactors with this designation have their personal power restricted to that of T4 and this restriction is absolute you will not be able to do anything that will increase your power level more that T4 such as operating Power armor, changing your race, using T11 tickets and all other possible methods will simply won't work or their output will be restricted to T4 level.</p>
+    <p>While you are prime candidate for becoming a Contractor our automatic &#9632;&#9632;&#9632;&#9632;&#9632;&#9632; marked you as a &#9632;&#9632;&#9632;&#9632;&#9632;&#9632;&#9632;&#9632; all Contactors with this designation have their personal power restricted to that of T4 and this restriction is absolute you will not be able to do anything that will increase your power level more that T4 such as operating Power armor, changing your race, using TX tickets and all other possible methods will simply won't work or their output will be restricted to T4 level.</p>
     <p>Receive 80% of companion cost for the capture.</p>
     `,
   },

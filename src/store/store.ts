@@ -232,7 +232,7 @@ const creditLimit = computed(() => 500 + jumpChain.value.length * 100)
 
 const missionRewardCredits = computed(() => Object.values(missionRewards.value).reduce((sum, miss) => sum += miss.rewards.reduce((missSum, rw) => rw.type === 'Credits' ? missSum += parseInt(`${rw.value}`) || 0 : missSum, 0), 0))
 
-const missionRewardTickets = computed(() => Object.values(missionRewards.value).reduce((sum, miss) => sum += miss.rewards.reduce((missSum, rw) => rw.type === 'T11 Tickets' ? missSum += parseInt(`${rw.value}`) || 0 : missSum, 0), 0))
+const missionRewardTickets = computed(() => Object.values(missionRewards.value).reduce((sum, miss) => sum += miss.rewards.reduce((missSum, rw) => rw.type === 'TX Tickets' ? missSum += parseInt(`${rw.value}`) || 0 : missSum, 0), 0))
 
 const budget = computed(() => {
   const bd = fullStartingBudget.value - startingOrigin.value.cost - pvpPerksCost.value

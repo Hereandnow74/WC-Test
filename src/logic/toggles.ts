@@ -29,6 +29,7 @@ export const showSaveLoad = ref(false)
 export const showShare = ref(false)
 export const isBuildImage = ref(false)
 export const showIntro = ref(false)
+export const showBuildImageSettings = ref(false)
 
 export const blackWhite = useStorage('blackWhite', false)
 export const blackWhiteDisabled = useStorage('blackWhiteDisabled', false)

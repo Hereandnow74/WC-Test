@@ -99,7 +99,7 @@ const usedWaifus = computed(() => {
   res.push(slightlyUsed(props.char))
   res = res.map(x => ({
     ...x,
-    cost: props.char.tier + x.tier - x.traumaTier === 11 ? 'T11 ticket' : CHAR_COSTS[props.char.tier + x.tier - x.traumaTier] || 1,
+    cost: props.char.tier + x.tier - x.traumaTier === 11 ? 'TX ticket' : CHAR_COSTS[props.char.tier + x.tier - x.traumaTier] || 1,
     effectiveTier: props.char.tier + x.tier,
   }))
   return res

@@ -31,7 +31,7 @@
     "s": "https://cdn.donmai.us/original/1e/9d/__jeanne_d_arc_and_jeanne_d_arc_fate_and_2_more_drawn_by_pillo__1e9d2d66783258a44323d566fe616806.jpg",
     "in": "https://img3.gelbooru.com/images/50/09/5009d7d3c1c75a70d71aa02b57061179.png",
     "w": "Nasuverse",
-    "d": "Fate/Grand Order",
+    "d": "Servants - Ruler",
     "b": [
       "F"
     ]
@@ -1355,10 +1355,11 @@
     "t": 3,
     "i": "7148704-1609612953.png",
     "s": "https://staticdelivery.nexusmods.com/images/1704/7148704-1609612953.png",
-    "w": "Elder Scrolls",
+    "w": "The Elder Scrolls",
     "b": [
       "F"
-    ]
+    ],
+    "d": "Skyrim"
   },
   {
     "u": 8052427,
@@ -1366,10 +1367,11 @@
     "t": 1,
     "i": "70547-3-1449581620.jpg",
     "s": "https://staticdelivery.nexusmods.com/mods/110/images/70547-3-1449581620.jpg",
-    "w": "Elder Scrolls",
+    "w": "The Elder Scrolls",
     "b": [
       "F"
-    ]
+    ],
+    "d": "Skyrim"
   },
   {
     "u": 7698006,
@@ -1377,10 +1379,11 @@
     "t": 2,
     "i": "https://i.imgur.com/Ybmuaxyl.png",
     "s": "https://staticdelivery.nexusmods.com/images/1704/23496319-1543640009.png",
-    "w": "Elder Scrolls",
+    "w": "The Elder Scrolls",
     "b": [
       "F"
-    ]
+    ],
+    "d": "Skyrim"
   },
   {
     "u": 8166377,
@@ -1388,10 +1391,11 @@
     "t": 1,
     "i": "7148704-1605797723.png",
     "s": "https://staticdelivery.nexusmods.com/images/1704/7148704-1605797723.png",
-    "w": "Elder Scrolls",
+    "w": "The Elder Scrolls",
     "b": [
       "F"
-    ]
+    ],
+    "d": "Skyrim"
   },
   {
     "u": 3089655,
@@ -1399,10 +1403,11 @@
     "t": 3,
     "i": "7148704-1613579809.png",
     "s": "https://staticdelivery.nexusmods.com/images/1704/7148704-1613579809.png",
-    "w": "Elder Scrolls",
+    "w": "The Elder Scrolls",
     "b": [
       "F"
-    ]
+    ],
+    "d": "Skyrim"
   },
   {
     "u": 9203127,
@@ -1410,10 +1415,11 @@
     "t": 1,
     "i": "11718083-1448717753.jpg",
     "s": "https://staticdelivery.nexusmods.com/images/110/11718083-1448717753.jpg",
-    "w": "Elder Scrolls",
+    "w": "The Elder Scrolls",
     "b": [
       "F"
-    ]
+    ],
+    "d": "Skyrim"
   },
   {
     "u": 1708483,
@@ -1421,10 +1427,11 @@
     "t": 2,
     "i": "35531540-1585915342.png",
     "s": "https://staticdelivery.nexusmods.com/images/1704/35531540-1585915342.png",
-    "w": "Elder Scrolls",
+    "w": "The Elder Scrolls",
     "b": [
       "F"
-    ]
+    ],
+    "d": "Skyrim"
   },
   {
     "u": 6792632,
@@ -1432,10 +1439,11 @@
     "t": 1,
     "i": "94720-1542549984-1941442208.jpeg",
     "s": "https://staticdelivery.nexusmods.com/mods/110/images/94720/94720-1542549984-1941442208.jpeg",
-    "w": "Elder Scrolls",
+    "w": "The Elder Scrolls",
     "b": [
       "F"
-    ]
+    ],
+    "d": "Skyrim"
   },
   {
     "u": 4241807,
@@ -3274,11 +3282,11 @@
   },
   {
     "u": 4796289,
-    "n": "Medusa(Lancer)",
+    "n": "Medusa (Ana)",
     "t": 7,
     "i": "6209f9a3bd2cbfb90bd237ca7c171f90dbd6a75d.jpeg",
     "s": "https://community.gamepress.gg/uploads/default/original/3X/6/2/6209f9a3bd2cbfb90bd237ca7c171f90dbd6a75d.jpeg",
-    "d": "Fate/Grand Order",
+    "d": "Servants – Lancer",
     "w": "Nasuverse",
     "b": [
       "F"
@@ -3292,7 +3300,7 @@
     "i": "2f9f2b9f738a42b5311c1047f2c51bd26de3138br1-512-512v2_00.jpg",
     "s": "http://pm1.narvii.com/6913/2f9f2b9f738a42b5311c1047f2c51bd26de3138br1-512-512v2_00.jpg",
     "w": "Nasuverse",
-    "d": "Fate/Grand Order",
+    "d": "Servants – Caster",
     "b": [
       "M"
     ],
@@ -4684,7 +4692,16 @@
     "s": "https://i.imgur.com/VBbG5Nh.jpg",
     "w": "Inheritance",
     "b": [
-      "F"
+      "F",
+      "cl",
+      "mp",
+      "dr",
+      "me",
+      "el",
+      "rl",
+      "sa",
+      "U",
+      "cm"
     ],
     "k": "DaemonOrk"
   },
@@ -4696,7 +4713,14 @@
     "s": "https://i.imgur.com/Us5ko7o.jpg",
     "w": "Inheritance",
     "b": [
-      "M"
+      "M",
+      "mp",
+      "dr",
+      "di",
+      "dh",
+      "me",
+      "U",
+      "cm"
     ],
     "k": "DaemonOrk"
   },
@@ -4708,7 +4732,11 @@
     "s": "https://i.imgur.com/dlxvmpt.png",
     "w": "Inheritance",
     "b": [
-      "F"
+      "F",
+      "cl",
+      "sc",
+      "rl",
+      "U"
     ],
     "k": "DaemonOrk"
   },
@@ -4721,7 +4749,9 @@
     "w": "Inheritance",
     "b": [
       "F",
-      "el"
+      "di",
+      "el",
+      "U"
     ],
     "k": "DaemonOrk",
     "in": "https://tulip.paheal.net/_images/699a3ec80ef4b1dcc11e7467c9c5edfb/898842%20-%20Arya_Shadeslayer%20Eragon%20Rodel_Martin%20literature.jpg"
@@ -4758,7 +4788,9 @@
     "s": "https://i.imgur.com/S1tFToj.jpg",
     "w": "Inheritance",
     "b": [
-      "M"
+      "M",
+      "ps",
+      "U"
     ],
     "k": "DaemonOrk"
   },
@@ -4783,11 +4815,15 @@
     "u": 4606288,
     "n": "Trianna",
     "t": 5,
-    "i": "https://i.imgur.com/doyBQorl.jpg?1",
-    "s": "https://i.imgur.com/doyBQor.jpg?1",
+    "i": "a08a3b9acbe6aaa7665e9c86927afc02.jpg",
+    "s": "https://i.pinimg.com/originals/a0/8a/3b/a08a3b9acbe6aaa7665e9c86927afc02.jpg",
     "w": "Inheritance",
     "b": [
-      "F"
+      "F",
+      "mp",
+      "di",
+      "me",
+      "U"
     ],
     "k": "DaemonOrk"
   },
@@ -4799,7 +4835,9 @@
     "s": "https://static.wikia.nocookie.net/vsbattles/images/a/a9/C6734aed955aa9a8ea38004b98b6f335-d6v2el3.jpg/revision/latest/scale-to-width-down/400?cb=20170818161936",
     "w": "Inheritance",
     "b": [
-      "M"
+      "M",
+      "mp",
+      "U"
     ],
     "k": "DaemonOrk"
   },
@@ -6224,11 +6262,12 @@
     "t": 1,
     "i": "NPC_Saadia.jpg",
     "s": "https://sites.google.com/site/thebanneredmare/_/rsrc/1327387270676/npc/residents/whiterun/bannered-mare/saadia/NPC_Saadia.jpg",
-    "w": "Elder Scrolls",
+    "w": "The Elder Scrolls",
     "b": [
       "F"
     ],
-    "k": "Sogen"
+    "k": "Sogen",
+    "d": "Skyrim"
   },
   {
     "u": 1563916,
@@ -6549,10 +6588,12 @@
     "b": [
       "F",
       "dr",
-      "vp"
+      "vp",
+      "U"
     ],
     "in": "https://i.imgur.com/rQpBm5z.jpg",
-    "k": "Anon69"
+    "k": "Anon69",
+    "d": "Servants - Assassin"
   },
   {
     "u": 9007351,
@@ -7267,11 +7308,12 @@
     "t": 1,
     "i": "70547-3-1449581721.jpg",
     "s": "https://staticdelivery.nexusmods.com/mods/110/images/70547-3-1449581721.jpg",
-    "w": "Elder Scrolls",
+    "w": "The Elder Scrolls",
     "b": [
       "F"
     ],
-    "k": "Azhidal321"
+    "k": "Azhidal321",
+    "d": "Skyrim"
   },
   {
     "u": 7805386,
@@ -8341,7 +8383,8 @@
       "F",
       "C"
     ],
-    "k": "MortemUmbra666"
+    "k": "MortemUmbra666",
+    "d": "Servants – Caster"
   },
   {
     "u": 8173068,
@@ -11381,7 +11424,7 @@
     "i": "__jinako_carigiri_and_ganesha_fate_and_1_more_drawn_by_maekawa_yuichi__28613d8ed19031012590142999987ed4.png",
     "s": "https://cdn.donmai.us/original/28/61/__jinako_carigiri_and_ganesha_fate_and_1_more_drawn_by_maekawa_yuichi__28613d8ed19031012590142999987ed4.png",
     "w": "Nasuverse",
-    "d": "Fate/Grand Order",
+    "d": "Servants - MoonCancer",
     "b": [
       "F",
       "gd"
@@ -32330,7 +32373,7 @@
     "i": "Helga.webp",
     "s": "https://i.postimg.cc/QN656vGZ/Helga.webp",
     "w": "Disney",
-    "d": "",
+    "d": "Atlantis: The Lost Empire",
     "b": [
       "F"
     ],
@@ -48972,20 +49015,6 @@
     "k": "Ruaron"
   },
   {
-    "u": 4457432,
-    "n": "Fumma kotarou",
-    "t": 6,
-    "i": "AssassinKotaroStage3.png",
-    "s": "https://static.wikia.nocookie.net/typemoon/images/e/e2/AssassinKotaroStage3.png",
-    "w": "Nasuverse",
-    "d": "Fate/Grand Order",
-    "b": [
-      "M",
-      "nj"
-    ],
-    "k": "Zolken_did_nothing_wrong"
-  },
-  {
     "u": 6417378,
     "n": "Shuten Douji",
     "t": 6,
@@ -50565,7 +50594,8 @@
       "M",
       "cl"
     ],
-    "k": "Myrddin Emrys"
+    "k": "Myrddin Emrys",
+    "in": "https://holly.paheal.net/_images/a44da474a9d9ca1d5d4d109571827cb3/5083378%20-%20Loid_Forger%20Spy_x_Family%20Suyo.jpg"
   },
   {
     "u": 5055893,
@@ -67909,8 +67939,10 @@
       "M",
       "im",
       "sc",
+      "lv",
       "gd",
-      "lv"
+      "cc",
+      "U"
     ],
     "k": "Ayashi"
   },
@@ -106108,20 +106140,6 @@
     "k": "Heaven Canceler"
   },
   {
-    "u": 8275522,
-    "n": "Bel Peol",
-    "t": 6,
-    "i": "https://i.imgur.com/CJo0w6vl.png",
-    "s": "https://i.imgur.com/CJo0w6v.png",
-    "w": "Shakugan no Shana",
-    "d": "",
-    "b": [
-      "F",
-      "sa"
-    ],
-    "k": "Heaven Canceler"
-  },
-  {
     "u": 7787067,
     "n": "Konoe Fumina",
     "t": 4,
@@ -109774,7 +109792,7 @@
     "t": 8,
     "i": "KSSU_Galacta_Knight_artwork.png",
     "s": "https://cdn.wikirby.com/1/1d/KSSU_Galacta_Knight_artwork.png",
-    "w": "Kriby",
+    "w": "Kirby",
     "d": "",
     "b": [
       "M",
@@ -112585,7 +112603,7 @@
   {
     "u": 5133173,
     "n": "Escanor (The One Ultimate)",
-    "t": 11,
+    "t": 10,
     "i": "https://i.imgur.com/ubYAfJyl.jpg",
     "s": "https://i.imgur.com/ubYAfJy.jpg",
     "w": "Nanatsu No Taizai/Seven Deadly Sins",
@@ -112604,7 +112622,7 @@
   {
     "u": 3070746,
     "n": "Demon King Meliodas",
-    "t": 11,
+    "t": 10,
     "i": "https://i.imgur.com/B6WflJnl.jpg",
     "s": "https://i.imgur.com/B6WflJn.jpg",
     "w": "Nanatsu No Taizai/Seven Deadly Sins",
@@ -113270,7 +113288,13 @@
     "d": "",
     "b": [
       "M",
-      "gd"
+      "dr",
+      "im",
+      "di",
+      "gd",
+      "sr",
+      "rl",
+      "U"
     ],
     "k": "TercelEye"
   },
@@ -113284,7 +113308,13 @@
     "d": "",
     "b": [
       "M",
-      "gd"
+      "im",
+      "di",
+      "gd",
+      "sr",
+      "rl",
+      "U",
+      "cm"
     ],
     "k": "TercelEye"
   },
@@ -113299,7 +113329,9 @@
     "b": [
       "M",
       "gd",
-      "sr"
+      "sr",
+      "rl",
+      "U"
     ],
     "k": "TercelEye"
   },
@@ -113771,5 +113803,944 @@
       "vn"
     ],
     "k": "Myrddin Emrys"
+  },
+  {
+    "u": 2398475,
+    "n": "Lemon, Marron and Melon / Ichigo, Sango and Ringo",
+    "t": 2,
+    "i": "__melon_marron_and_lemon_hanaukyou_maid_tai__522181ccdc63226d2c84f69264d2295b.jpg",
+    "s": "https://cdn.donmai.us/original/52/21/__melon_marron_and_lemon_hanaukyou_maid_tai__522181ccdc63226d2c84f69264d2295b.jpg",
+    "w": "(Slice of Life anime/manga)",
+    "d": "Hanaukyo Maid Team",
+    "b": [
+      "F",
+      "md",
+      "mi",
+      "tw"
+    ],
+    "k": "the_taken"
+  },
+  {
+    "u": 3243018,
+    "n": "Ryuuka Jihiou",
+    "t": 2,
+    "i": "Ryuuka_Jihiou.jpg",
+    "s": "https://static.wikia.nocookie.net/hanaukyomaidteam/images/b/b6/Ryuuka_Jihiou.jpg",
+    "w": "(Slice of Life anime/manga)",
+    "d": "Hanaukyo Maid Team",
+    "b": [
+      "F",
+      "pc",
+      "rl",
+      "cm"
+    ],
+    "k": "the_taken"
+  },
+  {
+    "u": 4638606,
+    "n": "Cynthia Landlavizar",
+    "t": 3,
+    "i": "cynthia-landlavizar-1.jpg",
+    "s": "https://cdn.anime-planet.com/characters/primary/cynthia-landlavizar-1.jpg",
+    "w": "(Slice of Life anime/manga)",
+    "d": "Hanaukyo Maid Team",
+    "b": [
+      "F",
+      "md",
+      "sn",
+      "gn",
+      "mi"
+    ],
+    "k": "the_taken"
+  },
+  {
+    "u": 1912371,
+    "n": "Yashima Sanae",
+    "t": 2,
+    "i": "Yashima_Sanae.jpg",
+    "s": "https://static.wikia.nocookie.net/hanaukyomaidteam/images/f/f0/Yashima_Sanae.jpg",
+    "w": "(Slice of Life anime/manga)",
+    "d": "Hanaukyo Maid Team",
+    "b": [
+      "F",
+      "md",
+      "nj",
+      "cm"
+    ],
+    "k": "the_taken"
+  },
+  {
+    "u": 6125020,
+    "n": "Konoe Tsurugi",
+    "t": 2,
+    "i": "Konoe_Tsurugi.jpg",
+    "s": "https://static.wikia.nocookie.net/hanaukyomaidteam/images/c/ca/Konoe_Tsurugi.jpg",
+    "w": "(Slice of Life anime/manga)",
+    "d": "Hanaukyo Maid Team",
+    "b": [
+      "F",
+      "cl",
+      "md"
+    ],
+    "k": "the_taken"
+  },
+  {
+    "u": 4602896,
+    "n": "Ikuyo Suzuki",
+    "t": 2,
+    "i": "Ikuyo_Suzuki.jpg",
+    "s": "https://static.wikia.nocookie.net/hanaukyomaidteam/images/b/b7/Ikuyo_Suzuki.jpg",
+    "w": "(Slice of Life anime/manga)",
+    "d": "Hanaukyo Maid Team",
+    "b": [
+      "F",
+      "md",
+      "sn"
+    ],
+    "k": "the_taken"
+  },
+  {
+    "u": 3816290,
+    "n": "Mariel",
+    "t": 2,
+    "i": "Mariel_pinup_2004.jpg",
+    "s": "https://static.wikia.nocookie.net/hanaukyomaidteam/images/9/9c/Mariel_pinup_2004.jpg",
+    "w": "(Slice of Life anime/manga)",
+    "d": "Hanaukyo Maid Team",
+    "b": [
+      "F",
+      "cl",
+      "md"
+    ],
+    "k": "the_taken"
+  },
+  {
+    "u": 2829628,
+    "n": "Walder Frey \"Black Walder\"",
+    "t": 2,
+    "i": "Black_Walder_Frey.jpg",
+    "s": "https://awoiaf.westeros.org/images/e/e2/Black_Walder_Frey.jpg",
+    "w": "A Song of Ice and Fire",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "Darnoc"
+  },
+  {
+    "u": 2695719,
+    "n": "Walder Frey",
+    "t": 2,
+    "i": "Old_Walder_Frey.jpg",
+    "s": "https://awoiaf.westeros.org/images/e/e6/Old_Walder_Frey.jpg",
+    "w": "A Song of Ice and Fire",
+    "d": "",
+    "b": [
+      "M",
+      "rl"
+    ],
+    "k": "Darnoc"
+  },
+  {
+    "u": 3341679,
+    "n": "Roslin Frey",
+    "t": 1,
+    "i": "Roslin.jpg",
+    "s": "https://awoiaf.westeros.org/images/9/95/Roslin.jpg",
+    "w": "A Song of Ice and Fire",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Darnoc"
+  },
+  {
+    "u": 2807464,
+    "n": "Edmure Tully",
+    "t": 2,
+    "i": "Ian_Kirkpatrick_Sir_Edmure_Tully.jpg",
+    "s": "https://awoiaf.westeros.org/images/1/18/Ian_Kirkpatrick_Sir_Edmure_Tully.jpg",
+    "w": "A Song of Ice and Fire",
+    "d": "",
+    "b": [
+      "F",
+      "rl"
+    ],
+    "k": "Darnoc"
+  },
+  {
+    "u": 7624090,
+    "n": "Brynden Tully",
+    "t": 3,
+    "i": "MiguelRegod%C3%B3nHarkness_Blackfish.jpg",
+    "s": "https://awoiaf.westeros.org/images/2/26/MiguelRegod%C3%B3nHarkness_Blackfish.jpg",
+    "w": "A Song of Ice and Fire",
+    "d": "",
+    "b": [
+      "M",
+      "cl",
+      "cm"
+    ],
+    "k": "Darnoc"
+  },
+  {
+    "u": 2752162,
+    "n": "Minisa Tully née Whent",
+    "t": 1,
+    "i": "Minisa_Whent_by_Elia_Mervi.jpg",
+    "s": "https://awoiaf.westeros.org/images/6/62/Minisa_Whent_by_Elia_Mervi.jpg",
+    "w": "A Song of Ice and Fire",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Darnoc"
+  },
+  {
+    "u": 9557533,
+    "n": "Evie Frye",
+    "t": 3,
+    "i": "u74fwnvlbde51.png",
+    "s": "https://i.redd.it/u74fwnvlbde51.png",
+    "w": "Assassin's Creed",
+    "d": "Video Game",
+    "b": [
+      "F",
+      "pr",
+      "cm",
+      "Assassin"
+    ],
+    "in": "https://i.redd.it/pdg8mmw5xs881.jpg",
+    "k": "rickv"
+  },
+  {
+    "u": 4806701,
+    "n": "E3N/Ethan",
+    "t": 5,
+    "i": "f08c8bfe35cb0532b0d150c01beb4643.jpg",
+    "s": "https://i.pinimg.com/originals/f0/8c/8b/f08c8bfe35cb0532b0d150c01beb4643.jpg",
+    "w": "Call of Duty",
+    "d": "Infinite Warfare",
+    "b": [
+      "M",
+      "sc",
+      "ai",
+      "ad",
+      "ha",
+      "cm"
+    ],
+    "k": "AusthinH7"
+  },
+  {
+    "u": 5053703,
+    "n": "Yorinobu Arasaka",
+    "t": 3,
+    "i": "E45QKinD_400x400.jpg",
+    "s": "https://pbs.twimg.com/profile_images/1503882033466064903/E45QKinD_400x400.jpg",
+    "w": "Cyberpunk 2077",
+    "d": "",
+    "b": [
+      "M",
+      "th",
+      "cb"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 7183924,
+    "n": "Saburo Arasaka",
+    "t": 3,
+    "i": "imagarasae.png",
+    "s": "https://i.postimg.cc/kXykcct8/image.png",
+    "w": "Cyberpunk 2077",
+    "d": "",
+    "b": [
+      "M",
+      "th",
+      "cb"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 9227605,
+    "n": "Viktor Vektor",
+    "t": 4,
+    "i": "3mz0qw11mxa61.jpg",
+    "s": "https://i.redd.it/3mz0qw11mxa61.jpg",
+    "w": "Cyberpunk 2077",
+    "d": "",
+    "b": [
+      "M",
+      "dc",
+      "th",
+      "en",
+      "cb"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 6035751,
+    "n": "Nene Amano (Shademon Ver.)",
+    "t": 7,
+    "i": "https://i.imgur.com/cNDOHbEl.jpg",
+    "s": "https://i.imgur.com/cNDOHbE.jpg",
+    "w": "Digimon",
+    "d": "",
+    "b": [
+      "F",
+      "hp",
+      "hz",
+      "bj",
+      "sr"
+    ],
+    "k": "KaizerRyu"
+  },
+  {
+    "u": 9402957,
+    "n": "Sprite",
+    "t": 4,
+    "i": "ingigerdo-little-faerie-color-cdc-02-1.jpg",
+    "s": "https://cdna.artstation.com/p/assets/images/images/032/779/404/large/ingigerdo-little-faerie-color-cdc-02-1.jpg",
+    "w": "Dungeons & Dragons",
+    "d": "Familiars",
+    "b": [
+      "O",
+      "sc",
+      "cm"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 5119842,
+    "n": "Quasit",
+    "t": 4,
+    "i": "https://imgur.com/Ik1OwJCl.jpg",
+    "s": "https://imgur.com/Ik1OwJC.jpg",
+    "w": "Dungeons & Dragons",
+    "d": "Familiars",
+    "b": [
+      "O",
+      "dm",
+      "sr",
+      "ev"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 7190705,
+    "n": "Pseudodragon",
+    "t": 4,
+    "i": "campbell-white-425866-pseudodragon-familiar-copy.jpg",
+    "s": "https://i.postimg.cc/DZnfFwGx/campbell-white-425866-pseudodragon-familiar-copy.jpg",
+    "w": "Dungeons & Dragons",
+    "d": "Familiars",
+    "b": [
+      "O",
+      "ps",
+      "mp",
+      "sc",
+      "dg"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 6255819,
+    "n": "Imp",
+    "t": 4,
+    "i": "6681d7ac1ff11c8515b5917880410d1c.jpg",
+    "s": "https://i.pinimg.com/736x/66/81/d7/6681d7ac1ff11c8515b5917880410d1c.jpg",
+    "w": "Dungeons & Dragons",
+    "d": "Familiars",
+    "b": [
+      "O",
+      "dv",
+      "sr",
+      "ev"
+    ],
+    "k": "Myrddin Emrys"
+  },
+  {
+    "u": 7796959,
+    "n": "Diana the Acrobat",
+    "t": 4,
+    "i": "DianaYoung.png",
+    "s": "https://static.wikia.nocookie.net/forgottenrealms/images/7/71/DianaYoung.png",
+    "w": "Dungeons & Dragons (cartoon)",
+    "d": "",
+    "b": [
+      "F",
+      "cm"
+    ],
+    "k": "the_taken"
+  },
+  {
+    "u": 6525337,
+    "n": "Noriko Mochizuki",
+    "t": 1,
+    "i": "59561.webp",
+    "s": "https://cdn.anisearch.com/images/character/cover/full/59/59561.webp",
+    "w": "GATE: Thus the JSDF Fought There!",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "SwissJavaZ"
+  },
+  {
+    "u": 1084030,
+    "n": "Sassa",
+    "t": 4,
+    "i": "304828.jpg",
+    "s": "https://cdn.myanimelist.net/images/characters/7/304828.jpg",
+    "w": "Grimgar of Fantasy and Ash",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "TercelEye"
+  },
+  {
+    "u": 2003935,
+    "n": "Adachi",
+    "t": 4,
+    "i": "304834.jpg",
+    "s": "https://cdn.myanimelist.net/images/characters/6/304834.jpg",
+    "w": "Grimgar of Fantasy and Ash",
+    "d": "",
+    "b": [
+      "M",
+      "me"
+    ],
+    "k": "TercelEye"
+  },
+  {
+    "u": 1009215,
+    "n": "Ron",
+    "t": 4,
+    "i": "301057.jpg",
+    "s": "https://cdn.myanimelist.net/images/characters/13/301057.jpg",
+    "w": "Grimgar of Fantasy and Ash",
+    "d": "",
+    "b": [
+      "M"
+    ],
+    "k": "TercelEye"
+  },
+  {
+    "u": 8968856,
+    "n": "Renji",
+    "t": 4,
+    "i": "5d7ba8d5e39ce20e7d28a38166a03fa5.jpg",
+    "s": "https://i.pinimg.com/originals/5d/7b/a8/5d7ba8d5e39ce20e7d28a38166a03fa5.jpg",
+    "w": "Grimgar of Fantasy and Ash",
+    "d": "",
+    "b": [
+      "M",
+      "cm"
+    ],
+    "k": "TercelEye"
+  },
+  {
+    "u": 9634538,
+    "n": "Zeus",
+    "t": 9,
+    "i": "Hades_Zeus_Gallery_1349x1105_01-1349x1105-eca8f10a1bdc1ce81ecc24ead7dafd71c686d0a8.jpg",
+    "s": "https://cdn2.unrealengine.com/Diesel/product/min/gallery/Hades_Zeus_Gallery_1349x1105_01-1349x1105-eca8f10a1bdc1ce81ecc24ead7dafd71c686d0a8.jpg",
+    "w": "Hades",
+    "d": "",
+    "b": [
+      "M",
+      "gd"
+    ],
+    "k": "WamBam"
+  },
+  {
+    "u": 3641584,
+    "n": "Euclid Lucifuge",
+    "t": 7,
+    "i": "https://imgur.com/bCQsddpl.jpeg",
+    "s": "https://imgur.com/bCQsddp.jpeg",
+    "w": "High School DxD",
+    "d": "",
+    "b": [
+      "F",
+      "cl",
+      "dv",
+      "cc",
+      "vn"
+    ],
+    "k": "HaN174"
+  },
+  {
+    "u": 4128619,
+    "n": "Emma & Noah",
+    "t": 3,
+    "i": "https://imgur.com/iitLOrDl.jpg",
+    "s": "https://imgur.com/iitLOrD.jpg",
+    "w": "Library of Ruina",
+    "d": "",
+    "b": [
+      "O",
+      "th"
+    ],
+    "k": "DrB2"
+  },
+  {
+    "u": 2078803,
+    "n": "Today's Shy Look",
+    "t": 4,
+    "i": "https://imgur.com/yvkBr84l.jpg",
+    "s": "https://imgur.com/yvkBr84.jpg",
+    "w": "Lobotomy Corporation",
+    "d": "",
+    "b": [
+      "O",
+      "th",
+      "is"
+    ],
+    "k": "DrB2"
+  },
+  {
+    "u": 6888549,
+    "n": "Dream of a Black Swan",
+    "t": 5,
+    "i": "https://imgur.com/sdBV06Pl.jpg",
+    "s": "https://imgur.com/sdBV06P.jpg",
+    "w": "Lobotomy Corporation",
+    "d": "",
+    "b": [
+      "F",
+      "mr",
+      "tw"
+    ],
+    "k": "DrB2"
+  },
+  {
+    "u": 2074102,
+    "n": "Scorched Girl",
+    "t": 4,
+    "i": "https://imgur.com/6kU8DDEl.jpg",
+    "s": "https://imgur.com/6kU8DDE.jpg",
+    "w": "Lobotomy Corporation",
+    "d": "",
+    "b": [
+      "F",
+      "th"
+    ],
+    "k": "DrB2"
+  },
+  {
+    "u": 4687066,
+    "n": "Army In Black",
+    "t": 6,
+    "i": "https://imgur.com/E8nkRmql.jpg",
+    "s": "https://imgur.com/E8nkRmq.jpg",
+    "w": "Lobotomy Corporation",
+    "d": "",
+    "b": [
+      "O",
+      "mr"
+    ],
+    "k": "DrB2"
+  },
+  {
+    "u": 2426091,
+    "n": "Void Dream",
+    "t": 5,
+    "i": "https://imgur.com/cTvAQyul.jpg",
+    "s": "https://imgur.com/cTvAQyu.jpg",
+    "w": "Lobotomy Corporation",
+    "d": "",
+    "b": [
+      "O",
+      "ps",
+      "mr"
+    ],
+    "k": "DrB2"
+  },
+  {
+    "u": 6311645,
+    "n": "Nora Cesaire",
+    "t": 3,
+    "i": "Nora.jpg",
+    "s": "https://i.ibb.co/RHNffdZ/Nora.jpg",
+    "w": "Miraculous: Tales of Ladybug and Cat Noir",
+    "d": "",
+    "b": [
+      "F",
+      "cl",
+      "U",
+      "cm"
+    ],
+    "k": "Ratcatcher"
+  },
+  {
+    "u": 2100781,
+    "n": "Fafnir",
+    "t": 8,
+    "i": "https://i.imgur.com/dLI3BVLl.jpg",
+    "s": "https://i.imgur.com/dLI3BVL.jpg",
+    "w": "Nasuverse",
+    "d": "",
+    "b": [
+      "O",
+      "hr",
+      "hz",
+      "dg"
+    ],
+    "k": "Abbot72"
+  },
+  {
+    "u": 6969678,
+    "n": "Chris Rodriguez",
+    "t": 5,
+    "i": "5ca0f6aff5284da1864823f5227eecff.png",
+    "s": "https://static1.personality-database.com/profile_images/5ca0f6aff5284da1864823f5227eecff.png",
+    "w": "Riordanverse",
+    "d": "",
+    "b": [
+      "M",
+      "de"
+    ],
+    "k": "TercelEye"
+  },
+  {
+    "u": 2376823,
+    "n": "Ethan Nakamura",
+    "t": 5,
+    "i": "109c0de834ed815b466a46f76e20653e.png",
+    "s": "https://i.pinimg.com/originals/10/9c/0d/109c0de834ed815b466a46f76e20653e.png",
+    "w": "Riordanverse",
+    "d": "",
+    "b": [
+      "M",
+      "de"
+    ],
+    "k": "TercelEye"
+  },
+  {
+    "u": 5523577,
+    "n": "Lee Fletcher",
+    "t": 5,
+    "i": "tumblr_4488d54cb0326b0c4746bd239fffca61_374abf81_540.png",
+    "s": "https://64.media.tumblr.com/4488d54cb0326b0c4746bd239fffca61/4380f0627e31ee53-c7/s540x810/374abf81c58fe06748fc2a3085af613546902f42.png",
+    "w": "Riordanverse",
+    "d": "",
+    "b": [
+      "M",
+      "hl",
+      "de",
+      "ar"
+    ],
+    "k": "TercelEye"
+  },
+  {
+    "u": 7399098,
+    "n": "Kayla Knowles",
+    "t": 5,
+    "i": "44210937ef9a2631752017fdeba0b0ca--book-fandoms-uncle-rick.jpg",
+    "s": "https://i.pinimg.com/564x/44/21/09/44210937ef9a2631752017fdeba0b0ca--book-fandoms-uncle-rick.jpg",
+    "w": "Riordanverse",
+    "d": "",
+    "b": [
+      "F",
+      "hl",
+      "de",
+      "ar"
+    ],
+    "k": "TercelEye"
+  },
+  {
+    "u": 5456168,
+    "n": "Austin Lake",
+    "t": 5,
+    "i": "Austin_Lake.jpg",
+    "s": "https://static.wikia.nocookie.net/olympians/images/7/77/Austin_Lake.jpg",
+    "w": "Riordanverse",
+    "d": "",
+    "b": [
+      "M",
+      "hl",
+      "de",
+      "ar"
+    ],
+    "k": "TercelEye"
+  },
+  {
+    "u": 7498712,
+    "n": "Will Solace",
+    "t": 5,
+    "i": "tumblr_pts5ue3IEi1wxz3dho1_r1_1280.jpg",
+    "s": "https://64.media.tumblr.com/c3fb238057affc7227945e3b58af9431/tumblr_pts5ue3IEi1wxz3dho1_r1_1280.jpg",
+    "w": "Riordanverse",
+    "d": "",
+    "b": [
+      "M",
+      "hl",
+      "de",
+      "ar"
+    ],
+    "k": "TercelEye"
+  },
+  {
+    "u": 1541373,
+    "n": "Michael Yew",
+    "t": 5,
+    "i": "tumblr_76e866bb59460801917c32621a986cc8_9c46b024_540.jpg",
+    "s": "https://64.media.tumblr.com/76e866bb59460801917c32621a986cc8/90a87891afcf5941-58/s540x810/9c46b0240a2fa469853f8650ca51d3f650582391.jpg",
+    "w": "Riordanverse",
+    "d": "",
+    "b": [
+      "M",
+      "hl",
+      "de",
+      "ar"
+    ],
+    "k": "TercelEye"
+  },
+  {
+    "u": 9183963,
+    "n": "Katie Gardner",
+    "t": 5,
+    "i": "d1957ec99b1d5dd6916a250aca1f31da.jpg",
+    "s": "https://i.pinimg.com/originals/d1/95/7e/d1957ec99b1d5dd6916a250aca1f31da.jpg",
+    "w": "Riordanverse",
+    "d": "",
+    "b": [
+      "F",
+      "cf",
+      "de"
+    ],
+    "k": "TercelEye"
+  },
+  {
+    "u": 3026187,
+    "n": "Silena Beauregard",
+    "t": 5,
+    "i": "actor-silena-beauregard-406860_large.jpg",
+    "s": "https://assets.mycast.io/actor_images/actor-silena-beauregard-406860_large.jpg",
+    "w": "Riordanverse",
+    "d": "",
+    "b": [
+      "F",
+      "de",
+      "sr"
+    ],
+    "k": "TercelEye"
+  },
+  {
+    "u": 4746342,
+    "n": "Charles Beckendorf",
+    "t": 5,
+    "i": "Charles-Beckendorf-Viria.jpg",
+    "s": "https://static.wikia.nocookie.net/olympians/images/a/a6/Charles-Beckendorf-Viria.jpg",
+    "w": "Riordanverse",
+    "d": "",
+    "b": [
+      "M",
+      "de",
+      "cc"
+    ],
+    "k": "TercelEye"
+  },
+  {
+    "u": 7231131,
+    "n": "Kizuna Kazayama",
+    "t": 7,
+    "i": "2b5814c3226f93a538a67e9ce30f5878.jpg",
+    "s": "https://i.pinimg.com/originals/2b/58/14/2b5814c3226f93a538a67e9ce30f5878.jpg",
+    "w": "Rising of the Shield Hero",
+    "d": "",
+    "b": [
+      "F",
+      "lv",
+      "cc"
+    ],
+    "k": "TercelEye"
+  },
+  {
+    "u": 1417694,
+    "n": "L'Arc Berg Sickle",
+    "t": 6,
+    "i": "rc.Berg.full.3041582.jpg",
+    "s": "https://static.zerochan.net/L%27Arc.Berg.full.3041582.jpg",
+    "w": "Rising of the Shield Hero",
+    "d": "",
+    "b": [
+      "M",
+      "lv",
+      "rl",
+      "cc",
+      "cm"
+    ],
+    "k": "TercelEye"
+  },
+  {
+    "u": 9985426,
+    "n": "Fohl Fayon",
+    "t": 6,
+    "i": "Fohl.Fayon.full.3041589.jpg",
+    "s": "https://static.zerochan.net/Fohl.Fayon.full.3041589.jpg",
+    "w": "Rising of the Shield Hero",
+    "d": "",
+    "b": [
+      "M",
+      "lv",
+      "dh",
+      "sr",
+      "cm"
+    ],
+    "k": "TercelEye"
+  },
+  {
+    "u": 1070413,
+    "n": "Scott W. Pilgrim",
+    "t": 5,
+    "i": "4b181a95527bc64f0810da6212ffc9b95c49826b.jpg",
+    "s": "https://safebooru.org//images/496/4b181a95527bc64f0810da6212ffc9b95c49826b.jpg",
+    "w": "Scott Pilgrim",
+    "d": "",
+    "b": [
+      "M",
+      "ml",
+      "sc",
+      "ar",
+      "cm",
+      "pr"
+    ],
+    "k": "Ratcatcher"
+  },
+  {
+    "u": 7493425,
+    "n": "Plo Koon",
+    "t": 6,
+    "i": "811e8b799bb4181970f963a1f8b3f85f.jpg",
+    "s": "https://i.pinimg.com/originals/81/1e/8b/811e8b799bb4181970f963a1f8b3f85f.jpg",
+    "w": "Star Wars",
+    "d": "Prequel Trilogy",
+    "b": [
+      "M"
+    ],
+    "k": "Bishop_Havel"
+  },
+  {
+    "u": 4810109,
+    "n": "Commander Cody",
+    "t": 4,
+    "i": "1b65fd44fb2e0dc889d002cc6377d590.jpg",
+    "s": "https://i.pinimg.com/564x/1b/65/fd/1b65fd44fb2e0dc889d002cc6377d590.jpg",
+    "w": "Star Wars",
+    "d": "Prequel Trilogy",
+    "b": [
+      "M",
+      "cl",
+      "tw",
+      "sa",
+      "cm"
+    ],
+    "k": "Bishop_Havel"
+  },
+  {
+    "u": 4935511,
+    "n": "Captain Rex",
+    "t": 4,
+    "i": "s-l500.jpg",
+    "s": "https://i.ebayimg.com/images/g/mmQAAOSwEh1e-8BL/s-l500.jpg",
+    "w": "Star Wars",
+    "d": "Prequel Trilogy",
+    "b": [
+      "M",
+      "cl",
+      "tw",
+      "sa",
+      "cm"
+    ],
+    "k": "Bishop_Havel"
+  },
+  {
+    "u": 1036615,
+    "n": "Clone Trooper",
+    "t": 3,
+    "i": "The-Black-Series-Clone-Trooper_Big_2.jpg",
+    "s": "https://galacticfigures.com/images/actionFigures/6inch-The-Black-Series/The-Black-Series-Clone-Trooper_Big_2.jpg",
+    "w": "Star Wars",
+    "d": "Prequel Trilogy",
+    "b": [
+      "M",
+      "cl",
+      "tw",
+      "sa",
+      "cm"
+    ],
+    "k": "Bishop_Havel"
+  },
+  {
+    "u": 2460047,
+    "n": "Wynne",
+    "t": 4,
+    "i": "21n3jn1wuo751.jpg",
+    "s": "https://i.redd.it/21n3jn1wuo751.jpg",
+    "w": "Thedas (Dragon Age)",
+    "d": "",
+    "b": [
+      "F",
+      "dc",
+      "hl",
+      "ml",
+      "sc",
+      "rs",
+      "me",
+      "cc"
+    ],
+    "k": "deadman2020"
+  },
+  {
+    "u": 5511240,
+    "n": "Ia",
+    "t": 2,
+    "i": "__ia_vocaloid_and_1_more_drawn_by_pentagon_railgun_ky1206__sample-44c37580c74f342944e1e6f25b769103.jpg",
+    "s": "https://cdn.donmai.us/sample/44/c3/__ia_vocaloid_and_1_more_drawn_by_pentagon_railgun_ky1206__sample-44c37580c74f342944e1e6f25b769103.jpg",
+    "w": "VOCALOID",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "in": "https://cdn.donmai.us/sample/4d/58/__ia_vocaloid_drawn_by_yagi_ningen__sample-4d58e0dc68d27b5adac1e3e1be3dcfb9.jpg",
+    "k": "yuyu"
+  },
+  {
+    "u": 6203426,
+    "n": "Sayaad Queen Xazariel",
+    "t": 6,
+    "i": "https://i.imgur.com/fNoMYwyl.png",
+    "s": "https://i.imgur.com/fNoMYwy.png",
+    "w": "Warcraft",
+    "d": "",
+    "b": [
+      "O",
+      "dr",
+      "cr",
+      "dm",
+      "ev",
+      "rl",
+      "fw",
+      "su",
+      "cm"
+    ],
+    "in": "https://i.imgur.com/h9QnAGW.jpg",
+    "k": "jollymerr"
+  },
+  {
+    "u": 4767778,
+    "n": "Shima Rin",
+    "t": 1,
+    "i": "__shima_rin_yurucamp_drawn_by_kuromasu__a3988e6d462ca49ff701f57622f35e91.jpg",
+    "s": "https://cdn.donmai.us/original/a3/98/__shima_rin_yurucamp_drawn_by_kuromasu__a3988e6d462ca49ff701f57622f35e91.jpg",
+    "w": "Yuru Camp",
+    "d": "",
+    "b": [
+      "F"
+    ],
+    "k": "Enjou"
   }
 ]

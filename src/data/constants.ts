@@ -1,5 +1,5 @@
 import { countBy, isArray, uniq } from 'lodash-es'
-import { DBCharacter, DBWorld, Perk, PerkFull } from 'global'
+import { DBCharacter, DBWorld, PerkFull } from 'global'
 import { DLCgenericPerks, DLChomes, DLCperks, DLCtalents, DLCheritages, DLClureExpansions, DLCbindings, DLClures, DLCotherControls, DLCridePerks, DLCintensity } from './DLCs'
 import { DLCRides, rides } from './rides'
 import { homes, demiplane, dungeon } from './demdun'
@@ -12,7 +12,6 @@ import { ridePerksFull, defenses, talents, perks, genericPerks } from '~/data/ta
 import { DLCwaifu_perks, waifu_perks } from '~/data/waifu_perks'
 
 import { useStore } from '~/store/store'
-import { usePlayStore } from '~/store/play'
 import { useChargenStore } from '~/store/chargen'
 
 const { userWorlds, localUserWorlds, localUserCharacters } = useStore()
@@ -63,7 +62,7 @@ export const TOOLTIPS = {
   'T8': 'Cost: 200',
   'T9': 'Cost: 500',
   'T10': 'Cost: 1000',
-  'T11': 'Cost: T11 Ticket',
+  'TX': 'Cost: TX Ticket',
   'Negotiable': 'Negotiables - people you can negotiate with, for lack of a better term. While they may have an agenda that runs counter to yours, they will not become hostile unless provoked by some means: competition over the same capture target, a breach of ethical standards, manipulation by local parties, or just self-defense against your aggression. Negotiable contractors count as defeated once they’re either killed or permanently accommodated.',
   'Rival': 'Rivals they don’t have an issue with you in particular, but you will stand directly in the way of their goals: their list of local capture targets overlaps with yours, you and they want a member of each other’s retinue and aren’t willing to back off or trade, members of your retinues know each other and want their counterpart to join them, etc. If you leave for another world, your rival will connect to that world too and have objectives there that are incompatible with your own. Rivals are defeated when they are no longer capable and/or willing to pursue their goals.',
   'Enemy': 'Enemies - when you and an enemy are first connected to the same world, your smart devices will receive alerts with each other’s name and face: as you look at that moment, minus any makeup. Like rivals, enemies will also pursue you across worlds. Assume that every enemy you encounter seeks to stripmine your visited worlds of all credit value, claim your retinue as their own, or even sell them off for credits. The only choice is to kill or be killed.',

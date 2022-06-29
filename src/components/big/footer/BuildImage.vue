@@ -1,56 +1,64 @@
 <template>
-  <div id="build" class="mt-18 top-0 left-36 absolute w-[800px] flex flex-col gap-2 bg-gray-800 text-gray-200 p-1 border border-orange-500">
-    <div class="grid grid-cols-2 gap-1">
-      <div class="text-gray-200">
-        <h3 class="text-lg relative text-gray-400">
+  <div id="build" class="mt-18 top-0 left-36 absolute flex flex-col gap-2 text-gray-200 p-1 border rounded border-orange-500" :style="[{'background-color': imageSettings.backgroundColor}, {width: `${imageSettings.width}px`}]">
+    <div class="grid grid-cols-2 gap-x-2">
+      <YourCardMini
+        v-if="imageSettings.showAvatarImage"
+        class="bg-gray-800"
+        :info-mode="true"
+      />
+      <div>
+        <h3 class="text-lg relative" :style="{'color': imageSettings.categoryColor}">
           World
         </h3>
-        <div class="flex flex-wrap whitespace-nowrap gap-2">
+        <div class="flex flex-wrap gap-2" :style="{'color': imageSettings.numberColor}">
           <div class="flex gap-2">
-            <span class="text-gray-500 dark:text-gray-400">Name:</span>
+            <span :style="{'color': imageSettings.categoryColor}">Name:</span>
             <span>{{ startingWorld.worldName || 'Unknown' }}</span>
           </div>
           <div v-if="startingWorld?.condition?.length" class="flex gap-2">
-            <span class="text-gray-500 dark:text-gray-400">Condition:</span>
+            <span :style="{'color': imageSettings.categoryColor}">Condition:</span>
             <span>{{ startingWorld.condition }}</span>
           </div>
           <div class="flex gap-2">
-            <span class="text-gray-500 dark:text-gray-400">Rating:</span>
+            <span :style="{'color': imageSettings.categoryColor}">Rating:</span>
             <span>{{ startingWorld.rating || 'Unknown' }}</span>
             <span>({{ baseBudget }})</span>
           </div>
         </div>
       </div>
       <div v-if="patron.length" id="patron">
-        <h3 class="text-lg text-gray-400">
+        <h3 class="text-lg " :style="{'color': imageSettings.categoryColor}">
           Patron
         </h3>
-        <Enum color="text-blue-400 hover:text-blue-300" :list="patron" path="/origin" />
+        <Enum :number-color="imageSettings.numberColor" color="" :style="{'color': imageSettings.perkColor}" :list="patron" path="/origin" />
       </div>
       <div v-if="activeChallenges.length" id="Challenges">
-        <h3 class="text-lg text-gray-400">
+        <h3 class="text-lg" :style="{'color': imageSettings.categoryColor}">
           Challenges
         </h3>
-        <Enum color="text-blue-400 hover:text-blue-300" :list="activeChallenges" path="/challenges" />
+        <Enum :number-color="imageSettings.numberColor" color="" :style="{'color': imageSettings.perkColor}" :list="activeChallenges" path="/challenges" />
       </div>
       <div v-if="intensities.length">
-        <h3 class="text-lg text-gray-400">
+        <h3 class="text-lg" :style="{'color': imageSettings.categoryColor}">
           Intensity
         </h3>
         <Enum
-          color="text-blue-400 hover:text-blue-300"
+          :number-color="imageSettings.numberColor"
+          color=""
+          :style="{'color': imageSettings.perkColor}"
           :list="intensities"
-          path="/intensity"
           empty-message="PvE Mode"
           :price-mode="true"
         />
       </div>
       <div v-if="pvpPerks.length" id="Orbs">
-        <h3 class="text-lg text-gray-400">
+        <h3 class="text-lg" :style="{'color': imageSettings.categoryColor}">
           Orbs
         </h3>
         <Enum
-          color="text-blue-400 hover:text-blue-300"
+          :number-color="imageSettings.numberColor"
+          color=""
+          :style="{'color': imageSettings.perkColor}"
           :list="pvpPerks"
           path="/intensity"
           empty-message=""
@@ -58,158 +66,180 @@
         />
       </div>
       <div id="Origin">
-        <h3 class="text-lg text-gray-400">
+        <h3 class="text-lg" :style="{'color': imageSettings.categoryColor}">
           Origin
         </h3>
-        <div class="text-gray-200" v-html="originText || 'No Origin'" />
+        <div class="text-blue-400" v-html="originText || 'No Origin'" />
       </div>
     </div>
     <div v-if="binding.length">
-      <span class="text-gray-300 float-left mr-2">Bindings:</span>
+      <span class="float-left mr-2" :style="{'color': imageSettings.categoryColor}">Bindings:</span>
       <Enum
-        color="text-blue-400 hover:text-blue-300"
+        :number-color="imageSettings.numberColor"
+        color=""
+        :style="{'color': imageSettings.perkColor}"
         :list="binding"
         empty-message=""
         :price-mode="true"
       />
     </div>
     <div v-if="luresBought.length">
-      <span class="text-gray-300 float-left mr-2">Lures:</span>
+      <span class=" float-left mr-2" :style="{'color': imageSettings.categoryColor}">Lures:</span>
       <Enum
-        color="text-blue-400 hover:text-blue-300"
+        :number-color="imageSettings.numberColor"
+        color=""
+        :style="{'color': imageSettings.perkColor}"
         :list="luresBought"
         empty-message="No Lures"
         :price-mode="true"
       />
     </div>
     <div v-if="otherPerks.length">
-      <span class="text-gray-300 float-left mr-2">Other Controls:</span>
+      <span class=" float-left mr-2" :style="{'color': imageSettings.categoryColor}">Other Controls:</span>
       <Enum
-        color="text-blue-400 hover:text-blue-300"
+        :number-color="imageSettings.numberColor"
+        color=""
+        :style="{'color': imageSettings.perkColor}"
         :list="otherPerks"
         empty-message="No Other Controls"
         :price-mode="true"
       />
     </div>
     <div v-if="heritage.length" id="Heritage">
-      <h3 class="text-lg text-gray-400">
+      <h3 class="text-lg" :style="{'color': imageSettings.categoryColor}">
         Heritage <span v-if="yourTier > 0" class="font-semibold">( Your tier - <span class="text-orange-300">T{{ yourTier }}</span> )</span>
       </h3>
       <Enum
-        color="text-blue-400 hover:text-blue-300"
+        :number-color="imageSettings.numberColor"
+        color=""
+        :style="{'color': imageSettings.perkColor}"
         :list="heritage"
         path="/heritage"
         empty-message="No Heritage"
         :price-mode="true"
       />
     </div>
-    <div v-if="ridePerks.length" class="text-gray-300">
-      <div class="float-left mr-2">
+    <div v-if="ridePerks.length" class="">
+      <div class="float-left mr-2" :style="{'color': imageSettings.categoryColor}">
         Ride:
       </div>
       <Enum
-        color="text-blue-400 hover:text-blue-300"
-        class="text-gray-200"
+        :number-color="imageSettings.numberColor"
+        color=""
+        :style="{'color': imageSettings.perkColor}"
         :list="ridePerks"
         path="/talents/ride"
         empty-message="No Ride"
         :price-mode="true"
       />
     </div>
-    <div v-if="homePerks.length" class=" text-gray-300">
-      <div class="float-left mr-2">
+    <div v-if="homePerks.length" class=" ">
+      <div class="float-left mr-2" :style="{'color': imageSettings.categoryColor}">
         Home:
       </div>
       <Enum
-        color="text-blue-400 hover:text-blue-300"
-        class="text-gray-100"
+        :number-color="imageSettings.numberColor"
+        color=""
+        :style="{'color': imageSettings.perkColor}"
         :list="homePerks"
         path="/talents/home"
         empty-message="No Home"
         :price-mode="true"
       />
     </div>
-    <div v-if="talentPerks.length" class="text-gray-300">
-      <div class="float-left mr-2">
+    <div v-if="talentPerks.length" class="">
+      <div class="float-left mr-2" :style="{'color': imageSettings.categoryColor}">
         Talents:
       </div>
       <Enum
-        color="text-blue-400 hover:text-blue-300"
-        class="text-gray-100"
+        :number-color="imageSettings.numberColor"
+        color=""
+        :style="{'color': imageSettings.perkColor}"
         :list="talentPerks"
         path="/talents/talent"
         empty-message="No Talents"
         :price-mode="true"
       />
     </div>
-    <div v-if="defensePerks.length" class="text-gray-300">
-      <div class="float-left mr-2">
+    <div v-if="defensePerks.length" class="">
+      <div class="float-left mr-2" :style="{'color': imageSettings.categoryColor}">
         Defenses:
       </div>
       <Enum
-        color="text-blue-400 hover:text-blue-300"
-        class="text-gray-100"
+        :number-color="imageSettings.numberColor"
+        color=""
+        :style="{'color': imageSettings.perkColor}"
         :list="defensePerks"
         path="/talents/defense"
         empty-message="No Defenses"
         :price-mode="true"
       />
     </div>
-    <div v-if="miscPerks.length" class="text-gray-300">
-      <div class="float-left mr-2">
+    <div v-if="miscPerks.length" class="">
+      <div class="float-left mr-2" :style="{'color': imageSettings.categoryColor}">
         Misc:
       </div>
       <Enum
-        color="text-blue-400 hover:text-blue-300"
-        class="text-gray-100"
+        :number-color="imageSettings.numberColor"
+        color=""
+        :style="{'color': imageSettings.perkColor}"
         :list="miscPerks"
         path="/talents/perks"
         empty-message="No Misc Perks"
         :price-mode="true"
       />
     </div>
-    <div v-if="genericWaifuPerks.length" class="text-gray-300">
-      <div class="float-left mr-2">
+    <div v-if="genericWaifuPerks.length" class="">
+      <div class="float-left mr-2" :style="{'color': imageSettings.categoryColor}">
         Generic:
       </div>
       <Enum
-        color="text-blue-400 hover:text-blue-300"
-        class="text-gray-100"
+        :number-color="imageSettings.numberColor"
+        color=""
+        :style="{'color': imageSettings.perkColor}"
         :list="genericWaifuPerks"
         path="/talents/specific"
         empty-message="No Generic Perks"
         :price-mode="true"
       />
     </div>
-    <div v-if="waifuPerks.length" class="text-gray-300">
-      <div class="float-left mr-2">
+    <div v-if="waifuPerks.length" class="">
+      <div class="float-left mr-2" :style="{'color': imageSettings.categoryColor}">
         Waifu:
       </div>
       <Enum
-        color="text-blue-400 hover:text-blue-300"
-        class="text-gray-100"
+        :number-color="imageSettings.numberColor"
+        color=""
+        :style="{'color': imageSettings.perkColor}"
         :list="waifuPerks"
         path="/talents/specific"
         empty-message="No Waifu Perks"
         :price-mode="true"
       />
     </div>
-    <div v-if="specificMods.length" class="flex gap-2">
-      <div class="float-left mr-2">
+    <div v-if="specificMods.length" class="flex gap-x-2 flex-wrap">
+      <div class="float-left mr-2" :style="{'color': imageSettings.categoryColor}">
         Specific Credit Modifiers:
       </div>
-      <div v-for="mod in specificMods" :key="mod.desc" class="text-blue-400">
+      <div v-for="mod in specificMods" :key="mod.desc" :style="{'color': imageSettings.perkColor}">
         <span>{{ mod.desc }}</span>
-        <span class="text-gray-200">[<span class="text-teal-400">{{ numberToSigned(mod.mod) }}</span>]</span>
+        <span>[<span :style="{'color': imageSettings.numberColor}">{{ numberToSigned(mod.mod) }}</span>]</span>
       </div>
     </div>
-    <div class="grid grid-cols-3 gap-1">
-      <CompanionCardMiniInfo v-for="cmp in companions" :key="cmp.uid" :char="cmp" :image="companionImages[cmp.uid]" />
+    <div class="flex flex-wrap gap-1 justify-between">
+      <CompanionCardMiniInfo
+        v-for="cmp in companions"
+        :key="cmp.uid"
+        :char="cmp"
+        :show-image="imageSettings.showCompanionsImage"
+        :image="companionImages[cmp.uid]"
+        class="min-w-[300px] max-w-[390px] flex-grow"
+      />
     </div>
-    <div class="flex gap-2 text-gray-300 pb-1">
-      <span>Total cost: <span class="text-gray-100 font-semibold">{{ totalCost }} </span></span>
-      <span>Total discount: <span class="text-gray-100 font-semibold">{{ totalDiscount }} </span></span>
-      <span>Remaining credits: <span class="text-gray-100 font-semibold">{{ budget }}</span></span>
+    <div class="flex gap-2 pb-1" :style="{'color': imageSettings.perkColor}">
+      <span>Total cost: <span class="font-semibold" :style="{'color': imageSettings.numberColor}">{{ totalCost }} </span></span>
+      <span>Total discount: <span class="font-semibold" :style="{'color': imageSettings.numberColor}">{{ totalDiscount }} </span></span>
+      <span>Remaining credits: <span class="font-semibold" :style="{'color': imageSettings.numberColor}">{{ budget }}</span></span>
       <div class="text-gray-500 self-end pb-1 text-xs ml-auto">
         Generated by Waifu Catalog Interactive
       </div>
@@ -222,6 +252,7 @@ import html2canvas from 'html2canvas'
 import { useAllChars } from '~/data/constants'
 import { imageLink, isBuildImage, numberToSigned } from '~/logic'
 import { customDialog } from '~/logic/dialog'
+import { useSettings } from '~/logic/searchSettings'
 import { useChallenges } from '~/store/challenges'
 import { useStore } from '~/store/store'
 
@@ -235,6 +266,8 @@ const {
 const { activeChallenges } = useChallenges()
 
 const { allCharsObject } = useAllChars()
+
+const { imageSettings } = useSettings()
 
 const worldText = computed(() => {
   if (startingOrigin.value.uid) {
@@ -298,7 +331,7 @@ function createImage() {
 // }, { flush: 'post' })
 
 onMounted(() => {
-  createImage()
+  // createImage()
 })
 
 </script>

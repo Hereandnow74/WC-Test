@@ -33,6 +33,7 @@
   },
   {
     "worldName": "Code Geass",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/991001872301170718/image_2022-05-30_134840878-1024x576.png",
     "rating": 5
   },
   {
@@ -143,10 +144,12 @@
   },
   {
     "worldName": "My Little Pony",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990992936495890462/A-3453961-1401723094-1423.jpg",
     "rating": 1
   },
   {
     "worldName": "Nanatsu No Taizai/Seven Deadly Sins",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/991004856611381308/sds_game-thumbnail.jpg",
     "rating": 7,
     "additional": "Captured copies of Elizabeth and Meliodas(Excluding Holy War(Past)) will remain affected by their respective curses unless both stages of Destiny Defense are bought for them>",
     "condition": [
@@ -309,6 +312,7 @@
   },
   {
     "worldName": "God of War",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/991005739965378580/pHngiNMo5GrQUq4QuagerU.jpg",
     "rating": 8,
     "condition": [
       {
@@ -350,6 +354,7 @@
   },
   {
     "worldName": "Mushoku Tensei",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990998675838885898/thumb-1920-1108683.jpg",
     "rating": 4,
     "condition": [
       {
@@ -437,6 +442,7 @@
   },
   {
     "worldName": "Hellsing Abridged",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990996504519016458/Hellsing_Ultimate_Abridged_Logo.webp",
     "rating": 3
   },
   {
@@ -538,8 +544,23 @@
   },
   {
     "worldName": "Inheritance",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/991002314003341332/inheritance-cycle-review-eragon-books.webp",
     "rating": 5,
-    "additional": "When capturing a rider one also captures their dragon."
+    "additional": "When capturing a rider one also captures their dragon.",
+    "condition": [
+      {
+        "name": "Reign of Galbatorix",
+        "rating": 5
+      },
+      {
+        "name": "Age of Riders",
+        "rating": 4
+      },
+      {
+        "name": "Post Galbatorix",
+        "rating": 4
+      }
+    ]
   },
   {
     "worldName": "JoJo's Bizarre Adventure",
@@ -721,6 +742,7 @@
   },
   {
     "worldName": "Subnautica",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990997066677379163/subnautica_Primary_Promo-2560x1456-2560x1456-54f6400297744b829169a9bc66167418-2560x1456-f12365336e938496e789e1203f8af48a.jpg",
     "rating": 3,
     "condition": [
       {
@@ -873,6 +895,7 @@
   },
   {
     "worldName": "Katekyo Hitman Reborn",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/991000003138953236/Screenshot_1.jpg",
     "rating": 4
   },
   {
@@ -1090,6 +1113,7 @@
   },
   {
     "worldName": "Hazbin Hotel/ Helluva Boss",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/991006617237602334/EYBrF6-WkAY6l7c.jpg",
     "rating": 9,
     "additional": "If you take Extra and choose Sinner as your species you will be unable to leave the Pride Ring unless summoned or you at least filled Exit Stage left. Choosing Hellborn does not have this limitation. ",
     "condition": [
@@ -1170,6 +1194,7 @@
   },
   {
     "worldName": "Danny Phantom",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/991002745886617600/danny-phantom-1245767.webp",
     "rating": 5,
     "additional": "All ghost beacome halfa's, being able to change between their new human half-human-half-ghsot form or their full ghost form",
     "condition": [
@@ -1329,7 +1354,13 @@
   },
   {
     "worldName": "Gravity Falls",
-    "rating": 5
+    "rating": 5,
+    "condition": [
+      {
+        "name": "Weirdmageddon",
+        "rating": 8
+      }
+    ]
   },
   {
     "worldName": "Hades",
@@ -1652,6 +1683,7 @@
   },
   {
     "worldName": "How to Train Your Dragon",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990997679792328724/how-to-train-your-dragon-620x410.jpg",
     "rating": 3,
     "condition": [
       {
@@ -1691,6 +1723,7 @@
   },
   {
     "worldName": "Kim Possible",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990997484698468422/scale.jpg",
     "rating": 3
   },
   {
@@ -1969,6 +2002,7 @@
   },
   {
     "worldName": "Cowboy Bebop",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990997882981187584/1Cowboy-Bebop-1230x600.jpg",
     "rating": 3
   },
   {
@@ -1998,6 +2032,7 @@
   },
   {
     "worldName": "Mario Series",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990998207020531732/Mar10-Mario-day-legacy-cast.png",
     "rating": 3
   },
   {
@@ -2017,7 +2052,13 @@
   {
     "worldName": "Stranger Things",
     "rating": 5,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/3/38/Stranger_Things_logo.png"
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/38/Stranger_Things_logo.png",
+    "condition": [
+      {
+        "name": "Upside Down",
+        "rating": 6
+      }
+    ]
   },
   {
     "worldName": "Uber",
@@ -2122,6 +2163,7 @@
   },
   {
     "worldName": "Uncharted",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990995715037728768/uncharted-1256x826.webp",
     "rating": 2
   },
   {
@@ -2321,7 +2363,21 @@
   },
   {
     "worldName": "The Death Mage Who Doesn’t Want a Fourth Time",
-    "rating": 7
+    "rating": 7,
+    "condition": [
+      {
+        "name": "Earth",
+        "rating": 1
+      },
+      {
+        "name": "Origin",
+        "rating": 4
+      },
+      {
+        "name": "Lambda",
+        "rating": 7
+      }
+    ]
   },
   {
     "worldName": "The Vampire Diaries",
@@ -2423,10 +2479,12 @@
   },
   {
     "worldName": "Totally Spies",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/991000490185744404/channels4_profile.jpg",
     "rating": 4
   },
   {
     "worldName": "Detroit:  Become Human",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990998462675959858/Diesel_productv2_detroit-become-human_home_Detroit_PC_Carousel-1920x1080-6e90610a5d314ce0c12860770cc38c1b23213000.jpg",
     "rating": 3
   },
   {
@@ -2972,7 +3030,13 @@
   {
     "worldName": "Atlantis: The Lost Empire",
     "rating": 3,
-    "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQFv6GZdB4edez7XAeJqaTbFpova9Es2cCsbow6uvsPNNSizXjU"
+    "image": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQFv6GZdB4edez7XAeJqaTbFpova9Es2cCsbow6uvsPNNSizXjU",
+    "condition": [
+      {
+        "name": "Atlantis: Milos Return",
+        "rating": 4
+      }
+    ]
   },
   {
     "worldName": "Dungeons & Dragons (cartoon)",
@@ -3254,7 +3318,21 @@
   },
   {
     "worldName": "The Legendary Mechanic ",
-    "rating": 10
+    "rating": 10,
+    "condition": [
+      {
+        "name": "Black Phantom Era(Grades F to C)",
+        "rating": 5
+      },
+      {
+        "name": "Rise of the Black Star Army(Grades B to A+)",
+        "rating": 8
+      },
+      {
+        "name": "World Tree War(Grades S to X)",
+        "rating": 10
+      }
+    ]
   },
   {
     "worldName": "Trinity Seven",
@@ -3350,6 +3428,10 @@
       {
         "name": "Raiwa",
         "rating": 7
+      },
+      {
+        "name": "Ohma Zi-O Timeline",
+        "rating": 6
       }
     ]
   },
@@ -3399,23 +3481,127 @@
       }
     ]
   },
-  {"worldName":"Demon Kings Town Planning! ~The Strongest Dungeon is a Modern City","rating":7,"image":"","additional":"Captured Demon Lords will have three named monsters/demons under his control as Familiars."},
-  {"worldName":"Guilty Gear","rating":10},
-  {"worldName":"Hitsugi no Chaika","rating":3,"image":"https://i.imgur.com/ApWITQf.png"},
-  {"worldName":"K Project","rating":3,"image":"https://images-na.ssl-images-amazon.com/images/I/91Sn9Ma7e1L._RI_.jpg"},
-  {"worldName":"Magi: The Labyrinth of Magic","rating":5,"image":"https://i.imgur.com/GY0PieH.jpg","condition":[{"name":"Start of Series","rating":5},{"rating":4,"name":"Sindbad no Bouken"},{"name":"Ancient Alma Torran","rating":7}]},
-  {"worldName":"Planescape","rating":9},
-  {"worldName":"Ragnarok - The Animation","rating":5,"image":"https://i.ytimg.com/vi/XeASy3a3YY8/0.jpg"},
-  {"worldName":"Rick and Morty","rating":10,"image":"https://m.media-amazon.com/images/M/MV5BZjRjOTFkOTktZWUzMi00YzMyLThkMmYtMjEwNmQyNzliYTNmXkEyXkFqcGdeQXVyNzQ1ODk3MTQ@._V1_.jpg"},
-  {"worldName":"Swallowed Star","rating":10,"image":"https://image.tmdb.org/t/p/original/vot4laaXQBQ0QhUtAzOuxbeCYE0.jpg"},
-  {"worldName":"Undertale","rating":3,"image":"https://www.logolynx.com/images/logolynx/f3/f39b3505ddcc08055a8e3719e8fecfb2.jpeg"},
-  {"worldName":"Everyone Else is a Returnee","rating":8,"condition":[{"name":"The 1st Great Cataclysm/The Return","rating":7},{"name":"The 2nd Great Cataclysm","rating":8},{"rating":9,"name":"The Last Battle"}]},
-  {"worldName":"Exalted Versus the World of Darkness","rating":7},
-  {"worldName":"Nobilis","rating":10},
-  {"worldName":"Rokka no Yuusha","rating":6,"image":"https://i.imgur.com/wAa09T7.png"},
-  {"worldName":"Rumble Roses","rating":3},
-  {"worldName":"Scott Pilgrim","rating":4,"image":"https://i.ibb.co/qmk5rby/spvw-header-art-v7.webp"},
-  {"worldName":"Terraformars","rating":5,"image":"https://sucodemanga.com.br/wp-content/uploads/2018/04/terra-formars-thumb.jpg"},
-  {"worldName":"The Chronicles Of Riddick","rating":5,"image":"https://i.imgur.com/Gy4oUkY.jpeg"},
-  {"worldName":"Ubau Mono Ubawareru Mono","rating":4,"image":"https://cdn.novelupdates.com/images/2017/06/Screenshot_1.jpg"}
+  {
+    "worldName": "Demon Kings Town Planning! ~The Strongest Dungeon is a Modern City",
+    "rating": 7,
+    "image": "",
+    "additional": "Captured Demon Lords will have three named monsters/demons under his control as Familiars."
+  },
+  {
+    "worldName": "Guilty Gear",
+    "rating": 10
+  },
+  {
+    "worldName": "Hitsugi no Chaika",
+    "rating": 3,
+    "image": "https://i.imgur.com/ApWITQf.png"
+  },
+  {
+    "worldName": "K Project",
+    "rating": 3,
+    "image": "https://images-na.ssl-images-amazon.com/images/I/91Sn9Ma7e1L._RI_.jpg"
+  },
+  {
+    "worldName": "Magi: The Labyrinth of Magic",
+    "rating": 5,
+    "image": "https://i.imgur.com/GY0PieH.jpg",
+    "condition": [
+      {
+        "name": "Start of Series",
+        "rating": 5
+      },
+      {
+        "rating": 4,
+        "name": "Sindbad no Bouken"
+      },
+      {
+        "name": "Ancient Alma Torran",
+        "rating": 7
+      }
+    ]
+  },
+  {
+    "worldName": "Planescape",
+    "rating": 9
+  },
+  {
+    "worldName": "Ragnarok - The Animation",
+    "rating": 5,
+    "image": "https://i.ytimg.com/vi/XeASy3a3YY8/0.jpg"
+  },
+  {
+    "worldName": "Rick and Morty",
+    "rating": 10,
+    "image": "https://m.media-amazon.com/images/M/MV5BZjRjOTFkOTktZWUzMi00YzMyLThkMmYtMjEwNmQyNzliYTNmXkEyXkFqcGdeQXVyNzQ1ODk3MTQ@._V1_.jpg"
+  },
+  {
+    "worldName": "Swallowed Star",
+    "rating": 10,
+    "image": "https://image.tmdb.org/t/p/original/vot4laaXQBQ0QhUtAzOuxbeCYE0.jpg"
+  },
+  {
+    "worldName": "Undertale",
+    "rating": 3,
+    "image": "https://www.logolynx.com/images/logolynx/f3/f39b3505ddcc08055a8e3719e8fecfb2.jpeg"
+  },
+  {
+    "worldName": "Everyone Else is a Returnee",
+    "rating": 8,
+    "condition": [
+      {
+        "name": "The 1st Great Cataclysm/The Return",
+        "rating": 7
+      },
+      {
+        "name": "The 2nd Great Cataclysm",
+        "rating": 8
+      },
+      {
+        "rating": 9,
+        "name": "The Last Battle"
+      }
+    ]
+  },
+  {
+    "worldName": "Exalted Versus the World of Darkness",
+    "rating": 7
+  },
+  {
+    "worldName": "Nobilis",
+    "rating": 10
+  },
+  {
+    "worldName": "Rokka no Yuusha",
+    "rating": 6,
+    "image": "https://i.imgur.com/wAa09T7.png"
+  },
+  {
+    "worldName": "Rumble Roses",
+    "rating": 3
+  },
+  {
+    "worldName": "Scott Pilgrim",
+    "rating": 4,
+    "image": "https://i.ibb.co/qmk5rby/spvw-header-art-v7.webp"
+  },
+  {
+    "worldName": "Terraformars",
+    "rating": 5,
+    "image": "https://sucodemanga.com.br/wp-content/uploads/2018/04/terra-formars-thumb.jpg"
+  },
+  {
+    "worldName": "The Chronicles Of Riddick",
+    "rating": 5,
+    "image": "https://i.imgur.com/Gy4oUkY.jpeg"
+  },
+  {
+    "worldName": "Ubau Mono Ubawareru Mono",
+    "rating": 4,
+    "image": "https://cdn.novelupdates.com/images/2017/06/Screenshot_1.jpg"
+  },
+  {
+    "worldName": "Yuru Camp",
+    "rating": 1,
+    "image": "https://i.imgur.com/6S1glyQ.png"
+  }
 ]

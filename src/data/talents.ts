@@ -212,7 +212,7 @@ talents.push({
   anything: 'Power Name',
   special: 'Must be repurchased for each use.',
   desc: `
-<p>The rules of other worlds often bar just anyone from learning or developing special powers. Travelers often find themselves unable to learn any local abilities, even with the help of Science or Soul Talent, simply because they weren’t born in that world. This perk bypasses this limitation, allowing the person it’s bought for, whether yourself or a retinue member, to develop a single local ability, just like anyone else who would normally do so. “A single ability” can be quite broad, ranging from an X-mutation or Quirk unique to the individual, to Remnant-style Aura or Nasuverse Magecraft. These are all generic abilities, in the context of their home worlds; Tier 11 abilities are not eligible.</p>
+<p>The rules of other worlds often bar just anyone from learning or developing special powers. Travelers often find themselves unable to learn any local abilities, even with the help of Science or Soul Talent, simply because they weren’t born in that world. This perk bypasses this limitation, allowing the person it’s bought for, whether yourself or a retinue member, to develop a single local ability, just like anyone else who would normally do so. “A single ability” can be quite broad, ranging from an X-mutation or Quirk unique to the individual, to Remnant-style Aura or Nasuverse Magecraft. These are all generic abilities, in the context of their home worlds; Tier X abilities are not eligible.</p>
 <p>Unlike Template Stacking, this perk does not grant practical power immediately: all purchases start from level zero, as it were, and must be trained before they’ll become usable. Self-study can help in some circumstances, but is no substitute for a proper trainer, whether purchased or a local.</p>
 <p>Abilities that are generic in their source but are expressed uniquely, such as Sacred Gears, Semblances, Academy City Esper powers, Quirks, or the results of the X-gene, will be unique to you as well. This perk and other Meta-Talents together may generate no more than one of each such power per individual.</p>
 <p>If you purchase the same template for any ten of your retinue members including yourself, including through Template Stacking 1 or OC Donut Steel, the rest of your retinue will gain this perk for that specific template for free.</p>
@@ -224,49 +224,48 @@ talents.push({
   title: 'Template Stacking I',
   category: 'Talent',
   image: 'https://i.ibb.co/rww384y/Template-Stacking-I.jpg',
-  cost: 15,
-  special: 'Must be repurchased for each use.',
-  requires: 'Matching copy of Added Potential, or obtaining the power by other means.',
+  cost: 20,
+  special: 'Doubles in cost for each application of this perk to the same individual. Must be repurchased for each use.',
   complex: 'target_f',
   anything: 'Power Name',
   desc: `
-<p>Sometimes you want to copy a generic powerset. This perk lets you do just that, for any power short of Tier 11. If you purchase this perk for yourself at chargen, or for a retinue member at the time you purchase them, you get the powerset outright. The exact capabilities at the time of purchase will be scaled to Tier 4, equivalent to the 10 credit version of Extra. Stacked Templates can then be trained higher with the appropriate Basic Talent, regardless of whether the original version is rated at Tiers 4, 5, or 10. You will also receive a skill framework for your purchase, identical in principle to the ones that “early” captures receive to ensure they learn their missing abilities. This applies to technological “abilities” as well.</p>
-<p>If you purchase this perk for yourself after chargen, or, for a retinue member, after the time of purchase or capture, you may need to recreate an original user’s empowering event, if there was one. You will not make any mistakes or experience unwanted side-effects in the process. This perk is not necessary for any powers that your purchased or captured retinue members might grant you via surgery, ritual, or other means. Note that some origins suck more than others: speaking Truck-kun’s name into a mirror three times in a row is not recommended.</p>
-<p>Racial templates (Kryptonian, Metallic Dragon, Newtype, Saiyan, etc.) can only be stacked in a starting build and will not be equivalent to a Heritage version of that template. Unlike Advanced Tempest Runes (Body), a living, natural example of that template is not necessary. Stacking multiple racial templates together will produce the same diminishing returns as Advanced Tempest Runes (Hybrid). Other powers that are only available to those who were born with them, such as hereditary magic systems, may be acquired through this perk at any time. In that case, there is no empowering event to recreate and thus no requirement for one. Abilities found elsewhere in this catalog are not available through this perk, nor are abilities found only in other CYOAs.</p>
-<p>Abilities that are generic in their source but are expressed uniquely, such as Sacred Gears, Semblances, Academy City Esper powers, Quirks, or the results of the X-gene, will be unique to you as well. This perk and OC Donut Steel together may generate no more than one of each such power per individual.</p>
-<p>If you purchase the same non-racial template for any ten of your retinue members including yourself, including specific examples of that template through OC Donut Steel, the rest of your retinue may gain this perk for that specific template for free. You can control the specifics through your smart device.</p>`,
+<p>Sometimes you just want to copy a powerset, either a generic one or a specific character’s. This perk lets you do just that. Only Tier Χ abilities, abilities that originated in other CYOAs, and abilities found elsewhere in this catalog are not eligible. The exact capabilities at the time of purchase will be scaled to Tier 4. <b>This perk is not necessary for any abilities that your subjects might grant you via surgery, ritual, or other means.</b> Templates for characters who are only purchasable in sets must be bought separately. Characters who are represented as Specific Waifu Perks may be purchased as templates for individuals who are not eligible for the actual perks, whether natively or with Power Swap, and follow any mutual exclusivity rules stated in the perk descriptions.</p>
+<p>Templates can be trained up to, and beyond, the original version of the ability. You receive a skill framework for your purchase, identical in principle to the ones that “early” captures receive to ensure they learn their missing abilities. This applies to technological abilities as well. Iconic equipment is included with this perk, but may see its parameters and functionality locked until you’re capable of using it safely or have trained enough with the more basic features. After the skill framework runs out and you’ve achieved the typical heights of the template, you can continue to train it beyond that level with the appropriate Basic Talent, regardless of whether the original version is rated at Tier 4, 5, or 10.</p>
+<p>Racial templates (Kryptonian, Metallic Dragon, Newtype, Saiyan, etc.) have additional rules that distinguish them from other kinds. Unlike Advanced Tempest Runes (Body), a living, natural example of that template is not required for your selection with this perk. Racial templates are limited to one per individual and will overwrite the individual’s original race for all purposes. The creation of hybrids requires Advanced Tempest Runes (Hybrid) or a geneticist, biomanipulator, or polymorpher.</p>
+<p>Other powers that are only available to those who were born with them, such as hereditary magic systems, may be acquired through this perk at any time, just as with Added Potential.</p>
+<p>Abilities that are generic in their source but are expressed uniquely, such as Sacred Gears, Semblances, Academy City Esper powers, Quirks, or the results of the X-gene, can be unique to you or copied from a specific character. You may not use company means to acquire more than one of each type of ability at a time.</p>`,
 })
 
-talents.push({
-  uid: 'GSoHy',
-  title: 'Racial Template',
-  category: 'Talent',
-  image: 'https://i.ibb.co/yPfLWJJ/Racial-Template.jpg',
-  cost: 20,
-  complex: 'target_f',
-  anything: 'Race Name',
-  special: 'Chargen only (self). Moment of purchase only (retinue). Must be repurchased for each use.',
-  desc: `
-  <p>Racial templates (Kryptonian, Metallic Dragon, Newtype, Saiyan, etc.) have additional rules that distinguish them from other kinds. Templates that align with Heritages will not be equivalent to their counterparts. Unlike Advanced Tempest Runes (Body), a living, natural example of that template is not required for your selection with this perk. This perk may not be applied to your captures, nor to purchase Tier 11 racial templates. Your starting version of any racial template will be limited to Tier 4; you can train it up to its natural state in the same ways as other Meta-Talents.</p>
-  <p>Purchases of this perk are limited to one per individual and will overwrite the individual’s original race for all purposes. Advanced Tempest Runes (Hybrid) or a geneticist, biomanipulator, or polymorpher of your own are required for creating hybrids.</p>
-`,
-})
+// talents.push({
+//   uid: 'GSoHy',
+//   title: 'Racial Template',
+//   category: 'Talent',
+//   image: 'https://i.ibb.co/yPfLWJJ/Racial-Template.jpg',
+//   cost: 20,
+//   complex: 'target_f',
+//   anything: 'Race Name',
+//   special: 'Chargen only (self). Moment of purchase only (retinue). Must be repurchased for each use.',
+//   desc: `
+//   <p>Racial templates (Kryptonian, Metallic Dragon, Newtype, Saiyan, etc.) have additional rules that distinguish them from other kinds. Templates that align with Heritages will not be equivalent to their counterparts. Unlike Advanced Tempest Runes (Body), a living, natural example of that template is not required for your selection with this perk. This perk may not be applied to your captures, nor to purchase Tier X racial templates. Your starting version of any racial template will be limited to Tier 4; you can train it up to its natural state in the same ways as other Meta-Talents.</p>
+//   <p>Purchases of this perk are limited to one per individual and will overwrite the individual’s original race for all purposes. Advanced Tempest Runes (Hybrid) or a geneticist, biomanipulator, or polymorpher of your own are required for creating hybrids.</p>
+// `,
+// })
 
-talents.push({
-  uid: 'Elihn',
-  title: 'OC Donut Steel',
-  category: 'Talent',
-  image: 'https://i.ibb.co/QDM4L0b/OCDonut-Steel.jpg',
-  cost: 20,
-  complex: 'target_f',
-  anything: 'Character name',
-  special: 'Must be repurchased for each, use.',
-  desc: `
-<p>Sometimes you just want to copy a specific individual’s powerset. This perk lets you do just that, for any individual short of Tier 11. If you purchase this perk for yourself at chargen or for a retinue member at the time you purchase them, you get the power outright. The exact capabilities at the time of purchase will be scaled to Tier 4. As with Template Stacking I, abilities purchased using this perk can be trained higher in two ways. First, you will receive a skill framework for your purchase, identical in principle to the ones that “early” captures receive to ensure they learn their missing abilities. This applies to technological “abilities” as well: any iconic equipment included with this perk may see its parameters and functionality locked until you’re capable of using it safely or have trained enough with the more basic features. After the skill framework runs out and you’ve achieved the typical heights of the template, you can continue to train it beyond that level with the appropriate Basic Talent, regardless of whether the original version is rated at Tiers 4, 5, or 10.</p>
-<p> For characters that are made from multiple other characters, including the purchasable versions of many Nasuverse Servants in this catalog, each component must be bought separately. This perk does not grant racial abilities; that feature is restricted to Racial Template instead.</p>
-<p>If you purchase this perk for yourself after chargen, or, for a retinue member, after the time of purchase or capture, you may need to recreate the original user’s empowering event, if there was one. You will not make any mistakes or experience unwanted side-effects in the process. This perk is not necessary for any powers that your purchased or captured retinue members might grant you via surgery, ritual, or other means. Note that some origins suck more than others: speaking Truck-kun’s name into a mirror three times in a row is not recommended. Abilities found elsewhere in this catalog are not available through this perk, nor are abilities that originated in other CYOAs.</p>
-<p>For abilities that are generic in their source but are expressed uniquely, such as Sacred Gears, Semblances, Academy City Esper powers, Quirks, or the results of the X-gene, this perk will grant you the exact individual’s power you seek. This perk and Template Stacking I together may generate no more than one of each such power per individual.</p>`,
-})
+// talents.push({
+//   uid: 'Elihn',
+//   title: 'OC Donut Steel',
+//   category: 'Talent',
+//   image: 'https://i.ibb.co/QDM4L0b/OCDonut-Steel.jpg',
+//   cost: 20,
+//   complex: 'target_f',
+//   anything: 'Character name',
+//   special: 'Must be repurchased for each, use.',
+//   desc: `
+// <p>Sometimes you just want to copy a specific individual’s powerset. This perk lets you do just that, for any individual short of Tier X. If you purchase this perk for yourself at chargen or for a retinue member at the time you purchase them, you get the power outright. The exact capabilities at the time of purchase will be scaled to Tier 4. As with Template Stacking I, abilities purchased using this perk can be trained higher in two ways. First, you will receive a skill framework for your purchase, identical in principle to the ones that “early” captures receive to ensure they learn their missing abilities. This applies to technological “abilities” as well: any iconic equipment included with this perk may see its parameters and functionality locked until you’re capable of using it safely or have trained enough with the more basic features. After the skill framework runs out and you’ve achieved the typical heights of the template, you can continue to train it beyond that level with the appropriate Basic Talent, regardless of whether the original version is rated at Tiers 4, 5, or 10.</p>
+// <p> For characters that are made from multiple other characters, including the purchasable versions of many Nasuverse Servants in this catalog, each component must be bought separately. This perk does not grant racial abilities; that feature is restricted to Racial Template instead.</p>
+// <p>If you purchase this perk for yourself after chargen, or, for a retinue member, after the time of purchase or capture, you may need to recreate the original user’s empowering event, if there was one. You will not make any mistakes or experience unwanted side-effects in the process. This perk is not necessary for any powers that your purchased or captured retinue members might grant you via surgery, ritual, or other means. Note that some origins suck more than others: speaking Truck-kun’s name into a mirror three times in a row is not recommended. Abilities found elsewhere in this catalog are not available through this perk, nor are abilities that originated in other CYOAs.</p>
+// <p>For abilities that are generic in their source but are expressed uniquely, such as Sacred Gears, Semblances, Academy City Esper powers, Quirks, or the results of the X-gene, this perk will grant you the exact individual’s power you seek. This perk and Template Stacking I together may generate no more than one of each such power per individual.</p>`,
+// })
 
 talents.push({
   uid: '38YzF',
@@ -741,7 +740,7 @@ perks.push({
   cost: 11111,
   desc: `
 <p>Run the Built in the <a href="https://imgur.com/gallery/dUkFmZF" target="_blank" rel="noopener noreferrer" class="text-red-500 hover:underline">Heavens CYOA</a>, (<a href="https://built-in-the-heavens.neocities.org/"  target="_blank" rel="noopener noreferrer" class="text-red-500 hover:underline">interactive version</a>), ignoring the origins choice and all personal perks. The only allowed complications are the ones that grant followers. These followers will count as their original inspirations: Broken Toy (YorHa A2), Jewelled Collar (Starfire and Blackfire), All According to Plan (Taldeer), Yan Yan Dere Dere (Monika), Forgotten and Lost (Dragon from Worm, in the body of Cibo from Blame!), From Heights Brought Low (Shub-Niggurath), or A Loyal Vizier (Caster Tamamo-no-Mae). These followers cannot be refunded for credits, so you should only take the ones you want. Otherwise, follow its rules as written. You will start aboard your ship, in the same star system as your starting world, unless you also purchased Life’s A Beach. Your ship's AI counts as a purchased waifu of Tier 6. Alternatively, you may plug one of your purchased or captured waifus into your ship to make her a pseudo-AI or shipgirl and take a 50-credit toward future purchases, you monster. All characters with alternate outfits, shown in any official source, will find them stored in their room or closet.,</p>
-<p>In addition to the ship’s Tier 11-granted multiversal capability, if you have a time-travel-capable waifu, she'll be able to channel her power through your ship so it can make such journeys too, even if you keep the Heavenbuilt AI as a separate waifu.</p>`,
+<p>In addition to the ship’s Tier X-granted multiversal capability, if you have a time-travel-capable waifu, she'll be able to channel her power through your ship so it can make such journeys too, even if you keep the Heavenbuilt AI as a separate waifu.</p>`,
 })
 
 perks.push({
@@ -783,7 +782,7 @@ perks.push({
 export const genericDesc = `
 <p>Upgrades, downgrades, and other premium options for your waifus are available in this and the next section. If your Origin choice is compatible with a Waifu Perk of any kind, you can buy it for yourself, even in a starting build. (If you have Substitute and apply a Waifu Perk to yourself, the perk-modified cost of your target cannot exceed 20% of your intensity-modified budget. This limitation only applies at chargen.) Unlike other purchased abilities, your waifus do not lose access to waifu perks if you die.</p>
 <p>If a Waifu Perk is listed with a tier rating, its price will be affected by the No Bindings discount, if you qualify for it. If you already qualify for Mirage Master’s regular discount, it cannot be discounted a second time. Waifu Perks that lack tier ratings are not affected by the No Bindings Discount.</p>
-<p>Generic waifu perks may be purchased more than once and applied to any waifu or husbando that qualifies. Specific waifu perks, however, may only be purchased once unless stated otherwise, even if multiple waifus qualify. If you give a waifu her associated perk using in-universe means, you’ll earn the difference in capture points between her old tier and her new tier. If the upgraded waifu is a Tier 11, you instead earn a single Tier 11 ticket. All specific waifu perks are sorted by source medium.</p>`
+<p>Generic waifu perks may be purchased more than once and applied to any waifu or husbando that qualifies. Specific waifu perks, however, may only be purchased once unless stated otherwise, even if multiple waifus qualify. If you give a waifu her associated perk using in-universe means, you’ll earn the difference in capture points between her old tier and her new tier. If the upgraded waifu is a Tier X, you instead earn a single Tier X ticket. All specific waifu perks are sorted by source medium.</p>`
 // #endregion
 
 // #region Generic Waifu Perks
@@ -806,7 +805,7 @@ genericPerks.push({
   category: 'Generic',
   image: 'https://i.ibb.co/k5XPSRL/Slightly-Used.jpg',
   cost: 1,
-  special: 'Use directly in companions. Non T11',
+  special: 'Use directly in companions. Non TX',
   whitelist: ['Directly in Companions'],
   desc: `
 <p>This waifu is an original version, captured by a previous contractor and resold to you. All direct effects of previous contractors' controls and perks are removed during reprocessing. This includes Defenses, Talents, and Binding benefits, but not any non-baseline abilities they trained in using their former contractor’s Talents, equipment they wield, or Heritage upgrades applied to them. When you select this perk for a purchase, you will see three options for which specific version of the subject you wish to buy.</p>
@@ -862,7 +861,7 @@ genericPerks.push({
   desc: `
   <p><b>Cost</b>: Find the purchase price for the subject’s tier at step 1a and the purchase price of the tier of the power’s original owner, then take the difference. Swapping out a Tier 4’s power for a Tier 10’s thus costs 990 credits, while a Tier 5 for a Tier 5 costs 0 and a Tier 6 for a Tier 2 gives you a refund of 48 credits. Only Purchased subjects refund credits if reduced to a lower tier by this perk. Captured subjects grant capture credits, and do not have a refund value.</p>
   <p>This perk replaces your subject’s original powers and skills, including the results of additional training with the appropriate Basic Talent, with a copy of someone else’s, changing their tier at step 1a and ignoring all powers that are counted in steps 2+. The results of any additional training with the original power, through Basic Talents or otherwise, will be saved to a backup, should you ever want to switch back. If you purchase this perk for yourself, it will replace your Origin’s powers, if applicable, or previous uses of this perk.</p>
-  <p>Like Template Stacking, this perk does not accept Tier 11 powers, abilities found elsewhere in this catalog, or abilities that originated in other CYOAs. All other powers are still allowed, including a lack thereof. It’s all the same skill download at our cloning facilities. Unlike Template Stacking, this is the full power, not nerfed down to Tier 4. Subjects who are purchased with this perk will count as “canon” users of the new power, for all perks and rules that consider canonicity, instead of their original one.</p>
+  <p>Like Template Stacking, this perk does not accept Tier X powers, abilities found elsewhere in this catalog, or abilities that originated in other CYOAs. All other powers are still allowed, including a lack thereof. It’s all the same skill download at our cloning facilities. Unlike Template Stacking, this is the full power, not nerfed down to Tier 4. Subjects who are purchased with this perk will count as “canon” users of the new power, for all perks and rules that consider canonicity, instead of their original one.</p>
   <p>If you purchase this perk for yourself at chargen or a purchased subject when they’re purchased, the effects are immediate. If you purchase this perk at a later date, or for a captured subject, the person will lack an original power for one week (168 hours) before the new power manifests. If you have Warranty Plan, a subject that this perk is applied to will vanish immediately before respawning from that perk as normal, but with the new power instead.</p>
 `,
 })
@@ -989,7 +988,7 @@ genericPerks.push({
   multiple: true,
   image: 'https://i.ibb.co/1QhZdpg/Four-Seasons.jpg',
   cost: 20,
-  desc: 'Maidenhood is special on Remnant, but not particularly so. Anyone can become one under the right circumstances. By default, this perk may be purchased up to four times, once for each temperate season (Spring, Summer, Fall, Winter). Purchasing this twice for the same character will elevate her to T6, if she isn’t already, and four times to T7. Additional sets of Maiden mantles become available with each member of your retinue, including yourself, whose effective tier after step five is at least T8: one for each T8, two for each T9, five for each T10, and ten for each T11. If one of your waifus is already a Maiden when you capture her, that counts against your total, unless you take a refund for this perk. If this puts you over your cap for a particular mantle, you may not buy any more of that mantle until you’ve raised the cap further.',
+  desc: 'Maidenhood is special on Remnant, but not particularly so. Anyone can become one under the right circumstances. By default, this perk may be purchased up to four times, once for each temperate season (Spring, Summer, Fall, Winter). Purchasing this twice for the same character will elevate her to T6, if she isn’t already, and four times to T7. Additional sets of Maiden mantles become available with each member of your retinue, including yourself, whose effective tier after step five is at least T8: one for each T8, two for each T9, five for each T10, and ten for each TX. If one of your waifus is already a Maiden when you capture her, that counts against your total, unless you take a refund for this perk. If this puts you over your cap for a particular mantle, you may not buy any more of that mantle until you’ve raised the cap further.',
 })
 
 genericPerks.push({

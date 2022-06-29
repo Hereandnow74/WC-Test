@@ -84,7 +84,7 @@
       from <span class="dark:text-violet-200 text-violet-900">{{ waifuPerk.from }}</span>
     </div>
     <div class="flex gap-4">
-      <span v-if="waifuPerk.cost"><span class="font-bold">Cost:</span> {{ waifuPerk.cost===11111 ? 'Tier 11 ticket' : waifuPerk.cost }} </span>
+      <span v-if="waifuPerk.cost"><span class="font-bold">Cost:</span> {{ waifuPerk.cost===11111 ? 'Tier X ticket' : waifuPerk.cost }} </span>
       <span v-if="waifuPerk.discount"><span class="font-bold">Refund:</span> {{ waifuPerk.discount }}</span>
       <span v-if="waifuPerk.tier"><span class="font-bold">Become:</span> T{{ waifuPerk.tier }}</span>
     </div>

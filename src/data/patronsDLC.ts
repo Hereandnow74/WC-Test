@@ -1,7 +1,7 @@
 import { WORLD_RATINGS } from './constants'
 import { useStore } from '~/store/store'
 
-const { fullStartingBudget, companions, baseBudget, startingWorld, manualKf, manualSellKf } = useStore()
+const { baseBudget, startingWorld, manualKf, manualSellKf } = useStore()
 
 export const patronsDesc = `Patrons are different from the other options in this CYOA by that they are the ones who chose you and not the other way around. 
 <p>Patrons exist to provide you different employment experience than the Company you would normally be employed by.</p>

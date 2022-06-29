@@ -24,7 +24,7 @@
         <TextArea v-model="desc" placeholder="Mission description" :rows="'4'" :error-message="errors.desc" />
       </div>
       <div class="flex gap-2">
-        <Select v-model="rewardType" placeholder="Reward Type" :options="['Credits', 'T11 Tickets', 'Perks', 'Other']" />
+        <Select v-model="rewardType" placeholder="Reward Type" :options="['Credits', 'TX Tickets', 'Perks', 'Other']" />
         <Input
           v-model="reward"
           class="flex-grow"
@@ -68,7 +68,7 @@
               :error-message="errors.objectives"
             />
             <div class="flex gap-2">
-              <Select v-model="requirement.type" placeholder="Reward Type" :options="['Credits', 'T11 Tickets', 'Perks', 'Other']" />
+              <Select v-model="requirement.type" placeholder="Reward Type" :options="['Credits', 'TX Tickets', 'Perks', 'Other']" />
               <Input
                 v-model="requirement.reward"
                 :placeholder="`Bonus reward (optional) #${i + 1}`"

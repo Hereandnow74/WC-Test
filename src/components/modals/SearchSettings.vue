@@ -68,11 +68,11 @@
 <script lang="ts" setup>
 import { allCompanionsWorlds } from '~/data/constants'
 import { showImpExpChars, toggleImpExpChars, blackWhite, blackWhiteDisabled } from '~/logic'
-import { useSearchSettings } from '~/logic/searchSettings'
+import { useSettings } from '~/logic/searchSettings'
 import { usePlayStore } from '~/store/play'
 
 const { currentWorld } = usePlayStore()
-const { minTier, maxTier, blockedWorlds, isLimited } = useSearchSettings()
+const { minTier, maxTier, blockedWorlds, isLimited } = useSettings()
 
 const worldSearch = ref('')
 

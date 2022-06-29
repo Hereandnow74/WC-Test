@@ -8,7 +8,7 @@
         Rewards  <fluent:add-12-filled class="text-green-200 text-green-700 hover:text-green-500" />
       </h3>
       <div v-for="_, i in rewards" :key="i" class="flex gap-2">
-        <Select v-model="types[i]" :disabled="!!missionSave" label="Type" placeholder="Reward Type" :options="['Credits', 'T11 Tickets', 'Perk', 'Other']" />
+        <Select v-model="types[i]" :disabled="!!missionSave" label="Type" placeholder="Reward Type" :options="['Credits', 'TX Tickets', 'Perk', 'Other']" />
         <Input v-if="types[i] !== 'Perk'" v-model="rewards[i]" :disabled="!!missionSave" label="Reward" placeholder="Text or number" />
         <template v-else>
           <div class="text-red-500 text-xs max-w-40">

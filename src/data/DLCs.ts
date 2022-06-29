@@ -122,7 +122,7 @@ DLCgenericPerks.push({
   title: 'Open Rolls',
   image: 'https://i.ibb.co/Gt62FNJ/Open-Rolls.jpg',
   cost: 5,
-  desc: `When looking for a Slightly Used companion, the contractor can now see the Ability Rolls and Trauma Rolls for all candidates. However, candidates are now only a T10 on an Ability Roll of 36, not T11.
+  desc: `When looking for a Slightly Used companion, the contractor can now see the Ability Rolls and Trauma Rolls for all candidates. However, candidates are now only a T10 on an Ability Roll of 36, not TX.
   `,
 })
 
@@ -392,7 +392,7 @@ DLChomes.push({
   image: 'https://i.ibb.co/0X86GqM/AGodAmI.jpg',
   cost: 11111,
   desc: `From your control center, you can create life to populate your Demiplane. Binding creatures from your Demiplane may be possible, but does not provide credits.
-  <p>If you aren’t already, you become a T11 yourself.</p>
+  <p>If you aren’t already, you become a TX yourself.</p>
     `,
   whitelist: ['Creature Feature II'],
 })

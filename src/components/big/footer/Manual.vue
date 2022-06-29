@@ -9,15 +9,15 @@
       <Input v-model.number="budgetMods.minus" class="w-24" />
     </div>
     <div class="flex justify-between">
-      Plus T11 tickets
+      Plus TX tickets
       <NumberInput v-model="budgetMods.plus11" theme="dark" :min="0" class="w-24" />
     </div>
     <div class="flex justify-between">
-      Minus T11 tickets
+      Minus TX tickets
       <NumberInput v-model="budgetMods.minus11" theme="dark" :min="0" class="w-24" />
     </div>
     <div class="flex justify-between">
-      Sell T11 ticket for 2000 credits
+      Sell TX ticket for 2000 credits
       <NumberInput v-model="budgetMods.sell11" theme="dark" :min="0" class="w-24" />
     </div>
     <div class="flex justify-between">

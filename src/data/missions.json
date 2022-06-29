@@ -1,5 +1,86 @@
 [
   {
+    "image": "https://cdn.donmai.us/original/a3/12/__toga_himiko_boku_no_hero_academia_drawn_by_mizuki_mau__a3121154fa71224bbfc54238b659792d.png",
+    "title": "Toga's Hero Academia",
+    "desc": "Toga Himiko's fate is a sad one, driven to insanity and villainy by parental abuse. Let's try and avoid at least part of it: track down Toga before she joins the League of Villains and get her into U.A. to reform.",
+    "rewardType": "Credits",
+    "scope": "Standard",
+    "conditions": [
+      {
+        "value": "You can't use any form of overt mind control"
+      },
+      {
+        "value": "Toga must be found before Giran recruits her for the League of Villains"
+      },
+      {
+        "value": "You must get Toga enrolled into class 1-A for rehabilitation"
+      },
+      {
+        "value": "By the time of the provisional license exams Toga must have been accepted as a classmate by at least half of her classmates, including Midoriya, Uraraka, Asui, and the class representatives"
+      }
+    ],
+    "reward": "200 credits",
+    "author": "Ratcatcher",
+    "objectives": [
+      {
+        "reward": "20 credits",
+        "type": "Credits",
+        "value": "Toga enters a romantic relationship with Midoriya, Uraraka, or Asui"
+      },
+      {
+        "value": "Toga enters a romantic relationship with Midoriya, Uraraka, AND Asui",
+        "type": "Credits",
+        "reward": "100"
+      }
+    ],
+    "budget": 100,
+    "source": "",
+    "loca": "My Hero Academia",
+    "uid": ""
+  },
+  {
+    "loca": "Scott Pilgrim",
+    "image": "https://i.ibb.co/P97GNmN/e4ccw9ao40o61.jpg",
+    "reward": "200 credits plus Corruption Defense x2 or its price in credits",
+    "desc": "Scott W. Pilgrim is ultimately an idiot who in large part succeeded due his opponents thinking he was smarter than he was... And a client took exception to that. You, new Contractor, will have to succeed in his place... And since our client is a fan of the genre, get his main love interests in a harem while you're at it.",
+    "budget": 15,
+    "rewardType": "Other",
+    "author": "Ratcatcher",
+    "conditions": [
+      {
+        "value": "Chargen Only"
+      },
+      {
+        "value": "You Substitute as Scott at the start of the graphic novel, keeping his skills in additions to yours. Depending on your preference you can take his name and looks or maintain yours adjusted for your Talents. Costs are waived."
+      },
+      {
+        "value": "Gideon can and will access Scott's pre-substitution memories. Yours and those formed after the Substitution are off-limits"
+      },
+      {
+        "value": "You must create a harem including at least Ramona, Knives, Envy, and Kim. The mentioned five cannot be Bound or subjected to other overt mind control until you've talked them in a multiple-way relationship"
+      },
+      {
+        "value": "You must defeat all seven of Ramona's Evil Exes"
+      }
+    ],
+    "objectives": [
+      {
+        "value": "Reabsorb Nega Scott",
+        "reward": "Full Corruption Defense or its equivalent in credit plus restauration of Scott's altered memories",
+        "type": "Other"
+      },
+      {
+        "reward": "TS1 of a character with the Combatant characteristic",
+        "type": "Other",
+        "value": "Capture Roxie Richter"
+      }
+    ],
+    "title": "YOU vs the World",
+    "scope": "Grand",
+    "source": "",
+    "uid": ""
+  },
+  {
     "scope": "Standard",
     "reward": "5 Credits for helping 100 Catgirls. Another 5 for every magnitude of 10 you help. Up to 25 Credits for 1 Million Catgirls.",
     "author": "Heaven Canceler",
@@ -49,13 +130,13 @@
     "objectives": [
       {
         "value": "Remain number 1 for 5 Years",
-        "reward": "50",
+        "reward": "50 Credits",
         "type": "Credits"
       },
       {
         "type": "Credits",
         "value": "Remain number 1 for 10 Years",
-        "reward": "150"
+        "reward": "150 Credits"
       },
       {
         "value": "Become Number 1 before Midoriya",
@@ -113,7 +194,7 @@
       {
         "value": "Defeat or Capture Lord English",
         "reward": "1 tier 11 ticket.",
-        "type": "T11 Tickets"
+        "type": "TX Tickets"
       },
       {
         "value": "Have all players in your session fall in love with you without binds or lures. (not counting your companions)",
@@ -306,7 +387,7 @@
       }
     ],
     "source": "",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990956420923031602/Site26.screencap.webp",
     "rewardType": "Perks",
     "author": "Ratcatcher",    
     "uid": "KnUgf",
@@ -700,7 +781,7 @@
       }
     ],
     "desc": "Lead a team of magical girls into winning the Tournament of Power for Universe 2.",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990957595714019328/TEAMU2TOP.webp",
     "loca": "Dragonball series",
     "objectives": [
       {
@@ -780,7 +861,7 @@
       }
     ],
     "desc": "Funnily enough despite the ridiculous amount of pornography of notable quality created around this reality, it's not one of our more popular destinations, so this mission is to mostly here to increase foot traffic in variations of this world, in an effort to get more bang for our booty, the objective is as such: capture 5 of the main female members of overwatch organization \n\n...that's it. go, get lost",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990967800422101072/f97a8346865d2bdc3de94d64913823e1.jpg",
     "loca": "Overwatch",
     "objectives": [
       {
@@ -1020,7 +1101,7 @@
     "loca": "Ah! My Goddess",
     "objectives": [
       {
-        "reward": "Singularity or 1 T11 Ticket",
+        "reward": "Singularity or 1 TX Ticket",
         "value": "Capture Hild and Ansuz"
       }
     ],
@@ -1087,7 +1168,7 @@
       }
     ],
     "desc": "Lila Rossi could have been a fearsome villainess, had it not been for her weird penchant to just disappear at random times. She'd have certainly been a more competent villain than Hawk Moth.\nYour job is to correct this, in a way: you will substitute Lila shortly before she first met Ladybug, and conquer her.",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990969085028335637/ddr34lz-77e6aae1-3a0c-414d-93d5-ab9ba3e1b48f.png",
     "loca": "Miraculous: Tales of Ladybug and Cat Noir",
     "objectives": [
       {
@@ -1115,7 +1196,7 @@
         "value": "Capture Aeon Hill and Jessica Kaynes"
       },
       {
-        "reward": "1 T11 Ticket",
+        "reward": "1 TX Ticket",
         "value": "Collect all Miraculous of the Chinese Miraculous Box (they can be yours or in possession of retinue members)"
       }
     ],
@@ -1275,7 +1356,7 @@
     "image": "",
     "loca": "Douluo Dalu",
     "objectives": [],
-    "reward": "Two T11 tickets and full set of 100.000 years class spirit bones",
+    "reward": "Two TX tickets and full set of 100.000 years class spirit bones",
     "scope": "Grand",
     "source": "",
     "title": "Spirit Beasts Hope",
@@ -1440,8 +1521,8 @@
         "value": "Hire Akira in the Modeling Company"
       },
       {
-        "reward": "Sana and Tomoko join your harem without failing the mission, additional T11 ticket",
-        "value": "Summon Shamhat (T11) and make her your lover"
+        "reward": "Sana and Tomoko join your harem without failing the mission, additional TX ticket",
+        "value": "Summon Shamhat (TX) and make her your lover"
       }
     ],
     "reward": "Template Stacking I for Momonari Junta as the fully powered Mega Playboy",
@@ -1503,7 +1584,7 @@
     "image": "https://static.wikia.nocookie.net/the-justice-league/images/2/2e/Apokolips.jpg",
     "loca": "Any",
     "objectives": [],
-    "reward": "1 T11 ticket, 2500 credits toward demiplane/dungeons",
+    "reward": "1 TX ticket, 2500 credits toward demiplane/dungeons",
     "scope": "Grand",
     "source": "",
     "title": "Better to Rule in Hell",
@@ -1830,7 +1911,7 @@
       }
     ],
     "desc": "The Air Nomads and all airbenders inclusively were eradicated when the Fire Nation attacked. Do this world a kindness and bring them back... with the power of procreation! ",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990970230538928138/DNp9xT_WkAAcA3y.jpg",
     "loca": "Avatar",
     "objectives": [
       {
@@ -1945,7 +2026,7 @@
       }
     ],
     "desc": "You must start as a pureblood devil clan heir just prior to getting your King piece and Evil Pieces set. You must collect the following races into your peerage. You yourself do not count for the Pureblood qualification. The more different races you have, the more rewards you get. Sacred Gears that alter a human to a degree by having the soul of a creature count, such as one with a fairy soul would count for both human and fairy.",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990970844308201482/highschool_dxd_born___wallpaper_2__1920x1080__by_jayzap96-d8jyjs2.png",
     "loca": "High School DxD",
     "objectives": [
       {
@@ -2102,7 +2183,7 @@
       }
     ],
     "desc": "We all know Panacea aka Amy Dallon, and we all know that under the normal Canon she'll become the Red Queen. But what if you could direct her to become her sooner? Or to have her become something of a White Queen instead? S-class Villian or S-class Hero you're mission should you accept it, is to help Amy Dallon reach her full potential whether for good or ill!",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990972015613710346/UX75bas.jpg",
     "loca": "Worm",
     "objectives": [
       {
@@ -2186,7 +2267,7 @@
       }
     ],
     "desc": "Sona Sitri has made a declaration that she will only marry someone who can defeat her in the game of chess. Well, why shouldn\u2019t you take her up on this little challenge? Your job is simple, to defeat her in chess and make her your bride. Of course simply beating her in a casual game once won\u2019t be enough. You will have to do it over and over, proving your superiority in totality. The Sona you meet will be particularly competitive and so long as you make sure she doesn\u2019t notice anything untowards will continue to challenge you over and over. And then when she finally falls under you, you must claim her as your bride and marry her.",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990973857160634378/fcf7db0f5a143381ca98696a18f0f72621944ff6_00_1.jpg",
     "loca": "High School DxD",
     "objectives": [
       {
@@ -2353,7 +2434,7 @@
         "value": "Contractor and targets may not leave the setting"
       },
       {
-        "value": "No T11 Companions"
+        "value": "No TX Companions"
       }
     ],
     "desc": "Prevent the sexual coercion, violation, or rape of Mash and Female Ritsuka in a hentai-manga variant of the timeline. For this to count, they must only engage in sex with an explicit romantic partner in order to remain 'pure'. Multiple forms of hentai, ntr, noncon, mindbreak, and similar plots will be directed at them. Events may be skipped at Contractor's discretion, but main story singularities (or other ventures from Chaldea) may not.",
@@ -2397,7 +2478,7 @@
         "value": "Complete the Camelot Sexularity while Ritsuka remains virginal (Exempting Mash)"
       }
     ],
-    "reward": "Completing the Grand Order with both girls pure will grant one T11 ticket. Completing the Grand Order will grant both girls as Companions, as well as 2 sets of Command Seals, and Generic Command Seals. You may forgo this reward in exchange for doubling the rewards of the mission Epic of Ravishing, which may be started immediately after this Mission\u2019s completion.",
+    "reward": "Completing the Grand Order with both girls pure will grant one TX ticket. Completing the Grand Order will grant both girls as Companions, as well as 2 sets of Command Seals, and Generic Command Seals. You may forgo this reward in exchange for doubling the rewards of the mission Epic of Ravishing, which may be started immediately after this Mission\u2019s completion.",
     "scope": "Grand",
     "source": "",
     "title": "Sexularities",
@@ -2418,7 +2499,7 @@
       }
     ],
     "desc": "Remember that stupid plan of all stupid plans to turn everyone into some white plant-like humanoid by an idiot who really wants to bone that wood-making guy? No, not that one. I'm talking about Madara's stupid plan. You must hijack it and force everyone to play DOOM the PC game, one way or the other. Use the Genjutsu to make it look like it is VR or something.",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990972785339801600/maxresdefault.jpg",
     "loca": "Naruto",
     "objectives": [
       {
@@ -2708,7 +2789,7 @@
       }
     ],
     "desc": "You are going to a world filled with monsters that are borne of darkness and hunt the light, people who hunt down those aforementioned monsters, and the greatest divorce of a lifetime. Your mission, should you choose to accept it, is to cause MASS CONFUSION! Yes that's right. You must cause it by becoming Ozma and having a Pre-Grimm!Salem. With you two, you must show that you two are truly in love and everyone would become super jelly (not actual jelly, but jealous).",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990973530738937907/V6_03_00007.webp",
     "loca": "RWBY",
     "objectives": [
       {
@@ -2884,11 +2965,11 @@
         "value": "Must do so with only one waifu capture per region. Choose wisely."
       }
     ],
-    "desc": "Go through the plots of all the game! Each completion grants a reward of 100 credits! Completing them all nets you a Tier 11 ticket. Only one of each Generation counts.<br>Kanto<br>Johto<br>Hoenn<br>Orre<br>Sinnoh<br>Unova<br>Kalos<br>Alola<br>Galar",
-    "image": "",
+    "desc": "Go through the plots of all the game! Each completion grants a reward of 100 credits! Completing them all nets you a Tier X ticket. Only one of each Generation counts.<br>Kanto<br>Johto<br>Hoenn<br>Orre<br>Sinnoh<br>Unova<br>Kalos<br>Alola<br>Galar",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990974298548236298/tumblr_neh6c1iMD91sq3vs7o1_1280.jpg",
     "loca": "Pokemon",
     "objectives": [],
-    "reward": "Tier 11 ticket on full completion. 100 for each game plot completed.",
+    "reward": "Tier X ticket on full completion. 100 for each game plot completed.",
     "scope": "Grand",
     "source": "",
     "title": "Pokeathalon",
@@ -2957,7 +3038,7 @@
         "value": "Update at least 3 of your Familias adventurer's Falna to level 10."
       },
       {
-        "reward": "Gain one T11 ticket as your experiences with divinity, reality, and growth has shown you a path towards apotheosis.",
+        "reward": "Gain one TX ticket as your experiences with divinity, reality, and growth has shown you a path towards apotheosis.",
         "value": "Complete all other Objectives and the main Mission."
       }
     ],
@@ -3048,7 +3129,7 @@
       }
     ],
     "desc": "Become a specialist of a single Pokemon type, capture at least a full team of 6, and collect 8 Gym Badges.",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990975258913800292/All-Pokemon-Types-768x432.jpg",
     "loca": "Pokemon",
     "objectives": [
       {
@@ -3441,7 +3522,7 @@
     "loca": "Generic",
     "objectives": [
       {
-        "reward": "+100 Credits per World that achieves Space-Flight, A T11 Ticket on the last World that achieves a Space-Flight",
+        "reward": "+100 Credits per World that achieves Space-Flight, A TX Ticket on the last World that achieves a Space-Flight",
         "value": "Human civilizations must achieve Space-Flight"
       },
       {
@@ -3453,7 +3534,7 @@
         "value": "The last World visited must be Gurren Lagann"
       }
     ],
-    "reward": "1 T11 Ticket, Schematics for all Getter Robo-related Structures and Machines",
+    "reward": "1 TX Ticket, Schematics for all Getter Robo-related Structures and Machines",
     "scope": "Grand",
     "source": "",
     "title": "BELIEVE IN GETTER!",
@@ -3603,7 +3684,7 @@
         "value": "We don't need these idiot brothers here. Fortunately, they are too far from this world and do not hear its cry. However, they left their beacons. Get rid of them. Salem, Ozma, Pools of Darkness, Fountain of Life, and all Four Relics must be neutralized."
       },
       {
-        "reward": "1 T11 ticket.",
+        "reward": "1 TX ticket.",
         "value": "If you done Main Mission and all previous Additional Objectives, instead of 2000 credits you can take another reward."
       }
     ],
@@ -3663,7 +3744,7 @@
         "value": "Create a way out of this world on your own"
       },
       {
-        "reward": "Tier 11 Ticket ",
+        "reward": "Tier X Ticket ",
         "value": "Find a way to stop SCP-001 When Day Breaks instead of escaping and recreate society "
       }
     ],
@@ -3809,7 +3890,7 @@
       }
     ],
     "desc": "The Company needs new Dragon Heritage materials. Capture and Sell the dragons that you find roaming in the lands of Skyrim",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990976781030916146/the-elder-scrolls-v-skyrim-dragon-wallpaper-preview.jpg",
     "loca": "The Elder Scrolls V: Skyrim",
     "objectives": [],
     "reward": "All Dragons sold to the company, even those that are much lesser known, grant 50 Credits",
@@ -3885,7 +3966,7 @@
       }
     ],
     "desc": "Once you have won your Grail War, by killing or capturing all enemy Servants, you must stamp and sell the Holy Grail.",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990977062783320104/Fate-Zero-Grail.jpg",
     "loca": "Nasuverse",
     "objectives": [
       {
@@ -3930,15 +4011,15 @@
     "loca": "BlazBlue",
     "objectives": [
       {
-        "reward": "1 T11 Ticket, Nu-13 gains Template Stacking II (Es)",
+        "reward": "1 TX Ticket, Nu-13 gains Template Stacking II (Es)",
         "value": "Nu-13 & Lambda-11 both become the \"Eye of the Azure\"."
       },
       {
-        "reward": "A modified version of the Susano'oh Unit that can be worn and dismissed at will (T11 Gear)",
+        "reward": "A modified version of the Susano'oh Unit that can be worn and dismissed at will (TX Gear)",
         "value": "Terumi is permanently killed without Binding & Selling him."
       }
     ],
-    "reward": "1 T11 Ticket for each of either Nu-13 or Lambda-11 that gains the power of the Azure",
+    "reward": "1 TX Ticket for each of either Nu-13 or Lambda-11 that gains the power of the Azure",
     "scope": "Grand",
     "source": "",
     "title": "Successor of the Azure",
@@ -4023,7 +4104,7 @@
     "budget": 85,
     "conditions": [],
     "desc": "Complete the Death Game of Sword Art Online! You can do this by killing Akihiko Kayaba or Heathcliff in game or simply ascending to and completing the 100th Floor of Aincrad!",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990977335782178836/Aincard_in_ALO.webp",
     "loca": "Sword Art Online",
     "objectives": [
       {
@@ -4137,7 +4218,7 @@
     "image": "",
     "loca": "Warhammer 40K",
     "objectives": [],
-    "reward": "2 T11 Tickets or 5000 Credits",
+    "reward": "2 TX Tickets or 5000 Credits",
     "scope": "Grand",
     "source": "",
     "title": "Slay the Chaos Gods",
@@ -4214,7 +4295,7 @@
       }
     ],
     "desc": "Stop the fallen angel from killing issei hyodou ",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990978238236995604/fb3d7e6f0494906c8eb24ee804c78cdaba7d3943_hq.jpg",
     "loca": "High School DxD",
     "objectives": [
       {
@@ -4233,7 +4314,7 @@
     "reward": "+10 credits an capture of issei hyoudou instanly when you try",
     "scope": "Quick",
     "source": "",
-    "title": "false dragon slayer extermination",
+    "title": "False dragon slayer extermination",
     "uid": "VTUz0"
   },
   {
@@ -4263,7 +4344,7 @@
         "value": "End the threat of the Orks by any means necessary. Only a total subversion of the psychic network all spores share could neutralize them without killing them all."
       },
       {
-        "reward": "The Emperor will pass on all His knowledge, skill, and power to you. You are given [OC Donut Steel (God Emperor of Mankind, T11)] disregarding its limits. You will grow swiftly into this power in only a few centuries.",
+        "reward": "The Emperor will pass on all His knowledge, skill, and power to you. You are given [OC Donut Steel (God Emperor of Mankind, TX)] disregarding its limits. You will grow swiftly into this power in only a few centuries.",
         "value": "Perhaps all that time suffering unspeakable torment has broken The Emperor? If He is too far gone to save, He will know. Complete all but the second task to receive this reward."
       },
       {
@@ -4275,7 +4356,7 @@
         "value": "Perhaps you could use some more protection in this hellscape? For the price of being totally unable to leave this universe until this missions failure or completion, you instantly receive this reward."
       }
     ],
-    "reward": "A linked split of The God Emperor joins you, as a T11. He/She wants to have /fun/ with you however you wish, to balance the burden of ruling their home reality.",
+    "reward": "A linked split of The God Emperor joins you, as a TX. He/She wants to have /fun/ with you however you wish, to balance the burden of ruling their home reality.",
     "scope": "Grand",
     "source": "",
     "title": "Who dares protect The Emperor?",
@@ -4375,11 +4456,11 @@
     "loca": "Must have visited Star Trek at least once",
     "objectives": [
       {
-        "reward": "ONE T11 Ticket total. 500 Credits per Q seduced. One Q becomes your companion completely, if forced to work against the Q they will be severed from the Q-continuum. All the other Q you have had sex with now take turns, one by one, watching over you and your retinue as a familiar. It is possible to seduce the others into taking your stamp, but using coercive or violent means will make an enemy of the entire Q-continuum.",
+        "reward": "ONE TX Ticket total. 500 Credits per Q seduced. One Q becomes your companion completely, if forced to work against the Q they will be severed from the Q-continuum. All the other Q you have had sex with now take turns, one by one, watching over you and your retinue as a familiar. It is possible to seduce the others into taking your stamp, but using coercive or violent means will make an enemy of the entire Q-continuum.",
         "value": "Stick around long enough to have sex with at least 2 Q, and convince at least half of them to come back for more"
       }
     ],
-    "reward": "One of the more deviant Q join your retinue as a /familiar/, /you do not gain a T11 Ticket for this/. They will not attack others or act against others in aggression under your orders by any means, but they will defend you and your retinue by temporarily taking on the form and powers of any other T11. Outside of combat they are entirely yours to do with as you please, but beware that their twelve-dimensional fetishes are inconceivable by mortal minds",
+    "reward": "One of the more deviant Q join your retinue as a /familiar/, /you do not gain a TX Ticket for this/. They will not attack others or act against others in aggression under your orders by any means, but they will defend you and your retinue by temporarily taking on the form and powers of any other TX. Outside of combat they are entirely yours to do with as you please, but beware that their twelve-dimensional fetishes are inconceivable by mortal minds",
     "scope": "Grand",
     "source": "",
     "title": "Questing, Quivering, Q",
@@ -4408,7 +4489,7 @@
       }
     ],
     "desc": "Main - Harry Potter must survive! Prevent him from dying by any means, this includes vitality drain via Lily's protection, Acromantulas, Basilisks, Dementors, Killing Curses, and willful stupidity. All Pocket Space and Home Sweet Home perks are disabled for the duration of this Mission.\n\nOptional Conditions - +40 chargen points each",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990978928766226483/harry-sacrifice.jpg",
     "loca": "Harry Potter",
     "objectives": [],
     "reward": "Compensation - Hogwarts and associated grounds as personal demiplane. This includes (cloned) house elf servants, a fully stocked library, the Room of Requirement, greenhouses, the lake (giant squid and grindylow yes, merfolk no), the Chamber of Secrets (breed your own basilisk), and the Forbidden Forest (Acromantulas, thestrals, and unicorns provided, but centaurs, Aragog, and Grawp are not). The Hogwarts Express is also gifted as a Sweet Ride, and may be upgraded with flight and invisibility boosters for 15 points.",
@@ -4432,7 +4513,7 @@
     "loca": "Diablo",
     "objectives": [
       {
-        "reward": "Immediately ascend to T11 as you have become like unto Anu before they split themselves.",
+        "reward": "Immediately ascend to TX as you have become like unto Anu before they split themselves.",
         "value": "Use any technique such as 'Third Generation Symbiote' etc. to merge with all of your acquired quest targets for at least a year."
       },
       {
@@ -4440,7 +4521,7 @@
         "value": "Complete the quest with at least 'X' Diablo hero/s greatly involved."
       },
       {
-        "reward": "Your Demiplane can now expand automatically without limit, gain one free purchase of Sweet Home Expansion per 5 worlds you complete. If you are T11 the 25 purchase cap is removed and new celectial bodies will appear in your solar system/universe naturally depending on size.",
+        "reward": "Your Demiplane can now expand automatically without limit, gain one free purchase of Sweet Home Expansion per 5 worlds you complete. If you are TX the 25 purchase cap is removed and new celectial bodies will appear in your solar system/universe naturally depending on size.",
         "value": "Enter Sanctuary far enough back to capture the Worldstone, and bring it into your Demiplane, then purify it by any means."
       }
     ],
@@ -4510,7 +4591,7 @@
       }
     ],
     "desc": "In his first attempt to circumvent the prophecy, Voldemort, when Harry was one year and three months old, murdered Harry's parents who were trying to protect him. Lily's loving sacrifice led to the unsuccessful attempt to kill Harry and Voldemort's first downfall. This downfall marked the end of the First Wizarding War. According to the prophecy, this attempt to kill Harry also made him, rather than Neville, Voldemort's archenemy.\n\nAnother consequence of Lily's sacrifice was that her orphaned son had to be raised by her only remaining blood relative, his Muggle aunt Petunia Dursley. However, due to Petunia's dislike of her sister and her sister's magical gifts, Harry grew up abused and neglected. In her care, however, he was protected from Lord Voldemort by the blood spell Albus Dumbledore placed on him until he came of age or no longer lived in his aunt's house.\n\nMake sure he lives in a better environment, either by living in a better place for him or by making sure Petunia treats him better.",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990979769011142697/3093934-dursleys-2.jpg",
     "loca": "Harry Potter",
     "objectives": [
       {
@@ -4532,7 +4613,7 @@
     "author": "Darnoc",
     "conditions": [],
     "desc": "Hogwarts School of Witchcraft and Wizardry, often abbreviated as Hogwarts, is a British wizarding school in the Scottish Highlands.\nChildren with magical abilities are enrolled from birth, and admission was confirmed by owl post at the age of eleven. However, if the child was a Muggle child or a half-blood like Harry Potter, who knew nothing of the wizarding world, a member of the school staff would visit the child and his family to inform them of their magical heritage and the existence of the wizarding world. Become a Hogwarts student yourself and learn about magic.",
-    "image": "https://static.wikia.nocookie.net/harrypotter/images/a/ae/Hogwartscrest.png",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990980553794785320/d6wp8kt-9fe02009-6ca9-4898-8495-f8a371c75f1b.jpg",
     "loca": "Harry Potter - Hogwarts",
     "objectives": [
       {
@@ -4575,7 +4656,7 @@
       }
     ],
     "desc": "Cause the rumbling using the Founding titan's power and eliminate all life outside the island of Paradis ",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990981202171281418/777ae89c85f5c60626684d3ee28909723bd0477d.jpg",
     "loca": "Attack on Titan",
     "objectives": [],
     "reward": "Exit Stage Left and all upgrades + 300 credits",
@@ -4605,11 +4686,11 @@
         "value": "End the Great War peacefully"
       },
       {
-        "reward": "Gain T11 Ticket",
+        "reward": "Gain TX Ticket",
         "value": "Kill Unicron"
       }
     ],
-    "reward": "Gain your own copy of Cybertron as a home,all non T11 Home perks,1 T11 ticket,",
+    "reward": "Gain your own copy of Cybertron as a home,all non TX Home perks,1 TX ticket,",
     "scope": "Grand",
     "source": "",
     "title": "Pax Cybertronia",
@@ -4643,7 +4724,7 @@
       }
     ],
     "desc": "The company was commissioned to protect an important fortified city from an enemy attack, You alongside with five other contractors, will be responsible for protecting the city until reinforcement comes. To succeed you must protect the city enough to the reinforcement troops arrive at the city and guarantee that at least half or more of the city population is alive. The city has a total of 600 soldiers at your command. ",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990981518090461284/1e7a696a16a94a54ffd6c6cc75573fe6--fantasy-castle-medieval-fantasy.jpg",
     "loca": "Generic",
     "objectives": [
       {
@@ -4681,7 +4762,7 @@
       }
     ],
     "desc": "Make every female member (at last one) of a protectorate team pregnant",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990982150490845257/Protectorate_ENE.JPG.webp",
     "loca": "Worm",
     "objectives": [],
     "reward": "150",
@@ -4716,7 +4797,7 @@
     "author": "Tactition101",
     "conditions": [],
     "desc": "Luffy friend zoned four members of royalty: Vivi, Boa, Shirahoshi, and Rebecca. Capture all four for your Retinue/Sell",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990982457337720872/490994c2cfc16ad25f0df37220689185.jpg",
     "loca": "One Piece",
     "objectives": [
       {
@@ -4846,7 +4927,7 @@
       }
     ],
     "desc": "Defeat Eneru/Enel. Can be done with the help of Companions.",
-    "image": "https://static.wikia.nocookie.net/onepiece/images/a/ad/Enel_Anime_Infobox.png",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990982745163448410/tadayuki-nomaru-5780998.jpg",
     "loca": "One Piece - Sky Island",
     "objectives": [
       {
@@ -4871,7 +4952,7 @@
       }
     ],
     "desc": "The four emperors are the four most notorious and powerful pirate captains in the world.Defeat one of the Yonk\u014d/emperors yourself and be recognized as the new Yonk\u014d/emperor.\nThe corresponding Yonk\u014d/emperor must be defeated by yourself without help. His crew can be defeated by you, your Companions, or your crew.",
-    "image": "https://static.wikia.nocookie.net/onepiece/images/2/23/Four_Emperors_Infobox.png",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990983057362260038/one-pieces-most-powerful-pirates-explained-who-are-the-yonko-main.webp",
     "loca": "One Piece - New World",
     "objectives": [
       {
@@ -4968,7 +5049,7 @@
       }
     ],
     "desc": "Kill Ramsay Snow/Bolton or make sure he dies. \nCan be done by a Companion.",
-    "image": "https://static.wikia.nocookie.net/gameofthrones/images/5/51/Ramsey_about_to_be_eaten.jpg",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990983518156910652/303ef667fe28ed61c4bef9fbf0b51c88.jpg",
     "loca": "A Song of Ice and Fire",
     "objectives": [
       {
@@ -4994,7 +5075,7 @@
       }
     ],
     "desc": "Company was commissioned to relocate a small town soon to suffer a major disaster in 30 days. You will be responsible for creating new housing on land that you own or that is unclaimed by any nearby governments. To succeed you must create enough infrastructure for at least 1,000 people to become a self sufficient town. Once housing is finished you may request a portal to link the village to your new settlement for 7 days. Once the portal is closed the number of residents that have settled into your town will be counted to determine success. If the population is below 1,000 people you fail the mission and get no rewards except the reactions of the survivors.",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990983959997476874/eddie-mendoza-the-witch-s-quarter.jpg",
     "loca": "Generic",
     "objectives": [
       {
@@ -5079,8 +5160,8 @@
       }
     ],
     "desc": "The Trade Federation has occupied Naboo.\nHelp liberate Naboo from the Trade Federation occupation and make sure Queen Amidala survives.",
-    "image": "https://static.wikia.nocookie.net/starwars/images/a/a2/DroidControlShip-TPM.png",
-    "loca": "Star Wars - Prequel Trilogy",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990984342765465610/TF_Battleship.webp",
+    "loca": "Star Wars",
     "objectives": [
       {
         "reward": "The Lucrehulk-class Droid Control Ship becomes a \"Ride\" and you get the Ride Perk \"Catch-A-Ride Crew Training Program\".",
@@ -5141,7 +5222,7 @@
       }
     ],
     "desc": "You are trapped in Hell.\nYou must escape.\n\nHell is defined as any appropriate hell dimension in the given setting. This includes Tartarus, Nifelheim, etc.",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990984839199076482/lake-of-fire-hell-740x385.jpg",
     "loca": "Generic",
     "objectives": [],
     "reward": "Exit Stage Left, and all canon upgrades for free. Sweet Home and all upgrades to Lifes a Beach for free",
@@ -5179,7 +5260,7 @@
     "loca": "Generic",
     "objectives": [
       {
-        "reward": "A free heritage or a heritage upgrade, no T11 options",
+        "reward": "A free heritage or a heritage upgrade, no TX options",
         "value": "Control the surroundings"
       },
       {
@@ -5243,7 +5324,7 @@
       }
     ],
     "desc": "Horrors and nightmares must be forgotten. What died must remain dead. Prevent the return of dark times.",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990985871358578688/j12wps08avw01.webp",
     "loca": "Harry Potter",
     "objectives": [],
     "reward": "Ability to wield local magic for you and all of your current and future retinue if you don't have one already. Dumbledore level of mastery of local magic and wizardry for you.",
@@ -5266,7 +5347,7 @@
       }
     ],
     "desc": "Win a Holy Grail War and claim your wish.",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990986318211330078/fate_zero_mastes_servants.jpg",
     "loca": "Nasuverse",
     "objectives": [],
     "reward": "One tier 9 or lower Nasuverse companion of your choice.",
@@ -5300,7 +5381,7 @@
       }
     ],
     "desc": "When the core members of Fairy Tail disappeared for 7 years, the guild almost went bankrupt and could not afford the first building of Fairy Tail, so it was foreclosed. Make sure there is enough money and the building does not have to be auctioned.",
-    "image": "https://static.wikia.nocookie.net/fairytail/images/9/97/Current_Fairy_Tail_building.png",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990986608771756123/Current_Fairy_Tail_building.webp",
     "loca": "Fairy Tail",
     "objectives": [],
     "reward": "50 credits",
@@ -5337,7 +5418,7 @@
       }
     ],
     "desc": "Prevent fall of Beacon without revealing to locals anything related to canon or joining any side directly.",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990986862158045294/691caca828c6a713a245f7fc1e5285c66716d55d_hq.jpg",
     "loca": "RWBY",
     "objectives": [
       {
@@ -5365,7 +5446,7 @@
       }
     ],
     "desc": "Seduce all girls in RWBY team without using any lures or capture methods.",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990987326639444118/73ae6b18d088b748e348712cfb367bfb.jpg",
     "loca": "RWBY",
     "objectives": [],
     "reward": "Quadruple of their capture cost.",
@@ -5382,7 +5463,7 @@
       }
     ],
     "desc": "Your Mission is simple Substitute one of the Defense Teachers and Teach at Least until Voldemort is Dead.\nYour only receive the reward if the Most of your Students pass the O.W.L.S and N.E.W.T.S ",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990987605325783050/defence-against-the-dark-arts-teachers.jpg",
     "loca": "Harry Potter",
     "objectives": [],
     "reward": "50 Credits",
@@ -5457,7 +5538,7 @@
       }
     ],
     "desc": "Become the 'God' of Skypiea. To do so you must become the ruler of the three inhabited regions and have no other claimants to the region",
-    "image": "https://static.wikia.nocookie.net/onepiece/images/4/44/Skypiea_Infobox.png",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990989211693887488/13421130991630495750.webp",
     "loca": "One Piece",
     "objectives": [],
     "reward": "100 Credits + The Logia: Cloud-Cloud Fruit",
@@ -5477,7 +5558,7 @@
       }
     ],
     "desc": "You must become the Pirate King, greatest pirate in all the blues",
-    "image": "https://static.wikia.nocookie.net/onepiece/images/2/24/Gol_D._Roger_Anime_Infobox.png",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990988808830996490/one-piece-episodio-mostrato-iconica-reazione-roger-arrivato-laugh-tale-v3-509534.webp.webp",
     "loca": "One Piece",
     "objectives": [],
     "reward": "500 Credits + Any vehicle from the Ride section. Anyone considered to be a crew member has the effects of Catch a Ride Training",
@@ -5498,11 +5579,11 @@
     "loca": "DC",
     "objectives": [
       {
-        "reward": "2 T11 Tickets",
+        "reward": "2 TX Tickets",
         "value": "Destroy (NOT capture) Darkseid "
       }
     ],
-    "reward": "Exit Stage Left and all upgrades, 1 T11 tickets and 2000 credits",
+    "reward": "Exit Stage Left and all upgrades, 1 TX tickets and 2000 credits",
     "scope": "Grand",
     "source": "",
     "title": "Destroy Apokolips",
@@ -5536,7 +5617,7 @@
     "image": "",
     "loca": "Mass Effect",
     "objectives": [],
-    "reward": "Exit Stage Left and All Add ons, 1 T11 Ticket",
+    "reward": "Exit Stage Left and All Add ons, 1 TX Ticket",
     "scope": "Grand",
     "source": "",
     "title": "Uplift to Fight",

@@ -13,7 +13,7 @@
     <h3 class="relative text-center text-base sm:text-xl">
       {{ ride.title }} <span text="gray-500 dark:gray-400 base">
         (Cost: <span class="text-green-500 dark:text-green-300 font-semibold">
-          {{ ride.cost >= 11111 ? 'Tier 11 ticket' : active ? selectedRide.cost : ride.cost }}
+          {{ ride.cost >= 11111 ? 'Tier X ticket' : active ? selectedRide.cost : ride.cost }}
         </span>)
       </span>
       <Button

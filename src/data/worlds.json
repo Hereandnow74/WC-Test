@@ -78,6 +78,14 @@
         "name": "Online",
         "rating": 7,
         "a": "c"
+      },
+      {
+        "name": "Dominion War",
+        "rating": 5
+      },
+      {
+        "name": "Voyager",
+        "rating": 6
       }
     ],
     "image": "https://stevetobak.com/wp-content/uploads/2017/08/Star-Trek-Original-.jpg"
@@ -174,6 +182,7 @@
     "rating": 2,
     "q": true,
     "worldName": "Sword Art Online",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990995470727925770/sao-brand-mobile-624x468.jpg",
     "additional": "All characters with profiles in Sword Art Online, Alfheim Online, Gun Gale Online, and other VRMMOs will benefit from their toons’ statistics, skills, equipment, and other factors, but only from one toon at a time. They can quick-change between each profile as desired."
   },
   {
@@ -224,6 +233,7 @@
   {
     "rating": 3,
     "worldName": "Sekirei",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990996269898022943/67446_d03f0-minato2527s_sekirei.jpg",
     "additional": "The titular Sekirei are psychic as a species and drawn to individuals with stronger psychic presences. Template Stacking (Ashikabi) is therefore unnecessary, just Psychic Talent or some other psychic template, together with sufficient training to build up a presence.",
     "condition": [
       {
@@ -259,6 +269,7 @@
   {
     "rating": 3,
     "worldName": "Game of Thrones",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990995966695985172/f900d044267da9ea30045f55730f077d.jpg",
     "condition": [
       {
         "name": "Show continuity",
@@ -317,6 +328,7 @@
   },
   {
     "worldName": "Overwatch",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990996712128643162/overwatch-ed.0.jpg",
     "rating": 3,
     "q": true,
     "additional": "D.Va has her personal mech. Ashe has B.O.B. as a familiar. Mei has Snowball as a familiar.",
@@ -724,6 +736,7 @@
     "rating": 4,
     "q": true,
     "worldName": "Hellsing",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990999160545243256/Hellsing2001.webp",
     "additional": "Vampires no longer suffer from any of their weaknesses."
   },
   {
@@ -795,6 +808,7 @@
   {
     "rating": 5,
     "worldName": "The Witcher",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/991000922354237470/Screenshot_2.jpg",
     "condition": [
       {
         "name": "Toussaint, peaceful regions",
@@ -914,6 +928,7 @@
   {
     "rating": 5,
     "worldName": "Kimetsu no Yaiba/Demon Slayer",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/991001105439797298/kimetsu_no_yaiba_7878.jpg",
     "condition": [
       {
         "name": "Taishou-era Japan",
@@ -924,6 +939,7 @@
   },
   {
     "worldName": "Fire Emblem",
+    "Image": "https://cdn.discordapp.com/attachments/925963686433132644/991001486211305552/H2x1_NSwitch_FireEmblemThreeHouses_image1600w.jpg",
     "rating": 5,
     "additional": "Second-generation characters from Jugdral, Awakening, and Fates can have whichever gameplay-valid parents you want. Robin, Corrin, Byleth, and other Avatars can have any gameplay-legal build. Cavaliers, Pegasus Knights, Wyvern Knights, and other mounted units have their mounts as familiars.",
     "condition": [
@@ -994,7 +1010,14 @@
   {
     "rating": 5,
     "worldName": "Fairy Tail",
-    "additional": "Fatality Defense will protect against Mavis’s Curse of Contradiction. Purchased or captured Mavises will have their curses converted into a form of death magic under her complete control. This conversion will remain even after her master’s demise. Purchasing Irene gets you Heine & Juliet for free as her familiars. Kinana can assume her Cubellios form at will."
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/991001283966165112/7a7392e7d1c42998a2dcc8125dd3f89a.jpg",
+    "additional": "Fatality Defense will protect against Mavis’s Curse of Contradiction. Purchased or captured Mavises will have their curses converted into a form of death magic under her complete control. This conversion will remain even after her master’s demise. Purchasing Irene gets you Heine & Juliet for free as her familiars. Kinana can assume her Cubellios form at will.",
+    "condition": [
+      {
+        "name": "Dragon War (400 years in the past)",
+        "rating": 8
+      }
+    ]
   },
   {
     "worldName": "Dresden Files",
@@ -1182,6 +1205,7 @@
   {
     "rating": 6,
     "worldName": "Nasuverse",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/991003593454800996/E-4lL3BWUAEeMtQ.jpg",
     "additional": "Tohno Shiki has Len as a familiar. Aoko has White Len as a familiar. If you already have Len when you buy Shiki or White Len when you buy Aoko, you’ll be refunded the appropriate familiars’ full costs.",
     "condition": [
       {
@@ -1226,6 +1250,7 @@
   {
     "rating": 6,
     "worldName": "Naruto",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/991003319508041748/wp6051256.webp",
     "additional": "The various jinchuuriki have their Tailed Beasts as familiars. Chakra is a form of ki, affected by Soul Talent and Advanced Template Stacking (Enlightened), and usable by anyone. Clone techniques split the user’s internal energy pools evenly across the original body and all clones; Inexhaustible merely prevents these diminished pools from depleting. Stress Defense will protect against the drawbacks of mass clone-based training.",
     "condition": [
       {
@@ -1241,6 +1266,10 @@
       {
         "name": "Third Shinobi World War",
         "rating": 6
+      },
+      {
+        "name": "Boruto: Naruto Next Generations",
+        "rating": 8
       }
     ]
   },
@@ -1301,6 +1330,7 @@
   {
     "rating": 6,
     "worldName": "Bleach",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/991003835256430742/bleach-1212912.webp",
     "condition": [
       {
         "name": "Standard",
@@ -1319,6 +1349,10 @@
       {
         "name": "Soul Society",
         "rating": 7
+      },
+      {
+        "name": "1000 Years War",
+        "rating": 9
       }
     ]
   },
@@ -1330,6 +1364,7 @@
   {
     "rating": 6,
     "worldName": "League of Legends",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/991004102836236338/Homepage_World_1.jpg",
     "additional": "Anivia and Rek’Sai can switch between humanoid and bestial forms."
   },
   {
@@ -1387,6 +1422,7 @@
     "rating": 6,
     "q": true,
     "worldName": "Genshin Impact",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/991004286160863343/genshin-impact-surpasses-3-billion.jpg",
     "additional": "Lumine (and Aether) has the T1 version of Paimon as a humanoid familiar. If you have both, they’ll share her."
   },
   {
@@ -1777,7 +1813,17 @@
   },
   {
     "rating": 8,
-    "worldName": "Warframe"
+    "worldName": "Warframe",
+    "condition": [
+      {
+        "name": "Vor's Prize(Game Start)",
+        "rating": 8
+      },
+      {
+        "name": "The New War",
+        "rating": 9
+      }
+    ]
   },
   {
     "rating": 8,
@@ -1849,6 +1895,10 @@
       },
       {
         "name": "Cinematic Universe w/ TV shows and Mutants (No TVA)",
+        "rating": 7
+      },
+      {
+        "name": "2010s Marvel Animated Universe (Earth-12041)",
         "rating": 7
       }
     ],
@@ -1945,6 +1995,10 @@
       },
       {
         "name": "Arrowverse",
+        "rating": 6
+      },
+      {
+        "name": "DCAU (BEYOND)",
         "rating": 6
       }
     ],
@@ -2049,6 +2103,7 @@
   },
   {
     "worldName": "Overlord (LN)",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/991006375595372644/Overlord-Season-4-release-date-2022-anime.jpg",
     "rating": 9,
     "additional": "Substituting into a member of Nazarick before the server shutdown will guarantee the existence of a second guild in the new world, hostile to the first and of comparable power. Its members will all be original characters. “Multiple Active Guilds” may have anywhere from three to forty guilds.",
     "condition": [
@@ -2075,6 +2130,10 @@
       {
         "name": "New World (No \"Players\" active)",
         "rating": 6
+      },
+      {
+        "name": "New World (Bonus Volume)",
+        "rating": 7
       }
     ]
   },
@@ -2102,6 +2161,10 @@
       {
         "name": "Original Adventure",
         "rating": 5
+      },
+      {
+        "name": "Ressurection F",
+        "rating": 10
       }
     ],
     "image": "https://getwallpapers.com/wallpaper/full/a/a/1/750459-kid-goku-wallpaper-2560x1440-for-iphone-5.jpg"
@@ -2360,13 +2423,13 @@
     "rating": 10,
     "q": true,
     "worldName": "Gurren Lagann",
-    "additional": "Spiral Power is an infinite escalation engine by nature, but could never instantly achieve its full might. Retinue members who can use it may only escalate to match the highest effective tier in your retinue, or an opposing force that the Spiral user is engaged against, after step 5; this occurs during step 6. T11s such as Simon and Anti-Spiral Nia will obsolete this restriction. Spiral Power’s escalation lasts until the end of an active conflict stage or the user no longer feels hot-blooded, whichever happens first."
+    "additional": "Spiral Power is an infinite escalation engine by nature, but could never instantly achieve its full might. Retinue members who can use it may only escalate to match the highest effective tier in your retinue, or an opposing force that the Spiral user is engaged against, after step 5; this occurs during step 6. TXs such as Simon and Anti-Spiral Nia will obsolete this restriction. Spiral Power’s escalation lasts until the end of an active conflict stage or the user no longer feels hot-blooded, whichever happens first."
   },
   {
     "rating": 10,
     "q": true,
     "worldName": "Cthulhu Mythos",
-    "additional": "This entry represents both original works and modern adaptations such as Demonbane or Haiyore! Nyaruko-san. All such published works are true for T11s from the mythos, just not necessarily at the same time.",
+    "additional": "This entry represents both original works and modern adaptations such as Demonbane or Haiyore! Nyaruko-san. All such published works are true for TXs from the mythos, just not necessarily at the same time.",
     "image": "https://pbs.twimg.com/media/EVRjnfcWoAAVeUS.jpg"
   },
   {
@@ -2376,7 +2439,7 @@
     "condition": [
       {
         "rating": 3,
-        "name": "Books 1-3",
+        "name": "Voldemort's first death to Book 3",
         "a": "c"
       },
       {
@@ -2391,7 +2454,7 @@
       },
       {
         "rating": 5,
-        "name": "1971 (Open Warfare)"
+        "name": "1970-1981 (The First Wizarding War)"
       }
     ]
   }

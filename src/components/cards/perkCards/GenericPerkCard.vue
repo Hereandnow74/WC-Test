@@ -86,7 +86,7 @@ const perkToSave = reactive({
 
 const displayedCost = computed(() => {
   const s = perkToSave.cost / 11111 === 0 || perkToSave.cost / 11111 >= 2 ? 's' : ''
-  return props.perk.cost >= 11111 ? `${perkToSave.cost / 11111} T11 ticket${s}` : perkToSave.cost
+  return props.perk.cost >= 11111 ? `${perkToSave.cost / 11111} TX ticket${s}` : perkToSave.cost
 })
 
 function sendPerk() {

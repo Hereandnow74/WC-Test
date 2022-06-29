@@ -9,7 +9,7 @@
         @click="showDanger11 = !showDanger11"
       >
         <div>
-          T11 Companion -
+          TX Companion -
           <Valid :condition="tier11Companion" />
         </div>
         <div>

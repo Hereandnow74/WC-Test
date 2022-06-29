@@ -151,7 +151,7 @@ homes.push({
 
 export const demdunDesc = `
 <h3 class="text-xl">Advanced Perks: Demiplane or Dungeon?</h3>
-<p>You may take one of two directions with your pocket space, opening it up to other realities or further concentrating its power on itself. You may initially only choose one of either Demiplane or Dungeon. Upon doing so, the cost of the other perk becomes a T11 Ticket.</p>
+<p>You may take one of two directions with your pocket space, opening it up to other realities or further concentrating its power on itself. You may initially only choose one of either Demiplane or Dungeon. Upon doing so, the cost of the other perk becomes a TX Ticket.</p>
 <p>By further concentrating the power of the space upon itself and making it your own Demiplane, you increase its defenses and your control over its space. If you instead expand it out to other realities, you are better able to shape its physical form and bring it into a world as a Dungeon. In both cases, you may make any decisions about your Sweet Home’s layout, design, and rules via your Company provided Smart Device. Any changes take a week to fully settle into place, no matter how small or grand. Unwanted teleportation into, out of, or from point to point within your owned space(s) is nearly impossible for people not part of your retinue.</p>
 <p>There are two major mechanics that are involved with the two upgrade paths, Laws and Retinue Devotion, mostly correlating to Demiplanes and Dungeons respectively.</p>
 `

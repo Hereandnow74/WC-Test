@@ -1,8 +1,22 @@
 <template>
-  <div class="w-screen-md lg:pl-2 bg-gray-200 dark:bg-gray-800 p-2 mt-4 !items-stretch gap-4 overflow-y-auto">
+  <div class="w-screen-md lg:pl-2 bg-gray-200 dark:bg-gray-800 p-2 mt-4 !items-stretch gap-4 overflow-y-auto scrollbar">
     <h2 class="text-xl font-bold text-center">
       Changelog
     </h2>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
+        29 June 2022
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>~65 new user submitted characters, new missions</li>
+        <li>Processed all submitted <b>conditions</b> for the worlds</li>
+        <li>Settings for the Copy Image feature (don't knw why I did the color thing...)</li>
+        <li><b>Manual removal</b> of perks on Build tab should work properly</li>
+        <li><b>TS1 was replaced</b> with the one from unstable version, Racial Template and OCDS got removed</li>
+        <li>Renamed T11 to TX where I was able to find it</li>
+        <li>Bugfixes</li>
+      </ul>
+    </div>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
         26 June 2022
@@ -359,7 +373,7 @@
       <ul class="list-decimal list-inside">
         <li>~35 new user submitted characters</li>
         <li>Shortcut for clearing build - Alt+C</li>
-        <li>You now can sell T11 tickets for 2000 credits in smartphone -> wrench icon</li>
+        <li>You now can sell TX tickets for 2000 credits in smartphone -> wrench icon</li>
         <li>Sell/Return/Undo all buttons in retinue tab</li>
       </ul>
     </div>

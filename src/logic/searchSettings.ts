@@ -1,6 +1,7 @@
 import { usePlayStore } from '~/store/play'
 import { useStore } from '~/store/store'
 
+// Search settings
 const minTier = ref(1)
 const maxTier = ref(11)
 const worldName = ref('')
@@ -32,12 +33,30 @@ watch([isLimited, currentWorld], () => {
     worldName.value = ''
 })
 
-export function useSearchSettings() {
+// Build image settings
+const imageSettings = useStorage('imageSettings', {
+  backgroundColor: '#1f2937',
+  categoryColor: '#9ca3af',
+  perkColor: '#60a5fa',
+  numberColor: '#d1d5db',
+  showCompanionsImage: true,
+  showAvatarImage: true,
+  width: 800,
+})
+
+// Misc settings
+const newPrice = ref(false)
+
+export function useSettings() {
   return {
     minTier,
     maxTier,
     worldName,
     blockedWorlds,
     isLimited,
+    // Build image settings
+    imageSettings,
+    // Misc settings
+    newPrice,
   }
 }

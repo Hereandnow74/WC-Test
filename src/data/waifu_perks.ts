@@ -53,7 +53,7 @@ export const waifu_perks: WaifuPerk[] = [
     image: 'https://cdn.donmai.us/original/ad/3e/__ayanami_rei_angel_and_lilith_neon_genesis_evangelion_and_1_more_drawn_by_ahi_tb__ad3eff86f9eb46f73a0ed76eecd508c6.jpg',
     discount: 20,
     cost: 11111,
-    desc: 'Rei has merged with her universe\'s Lilith, as in End of Evangelion. In addition to the multiversal travel granted to all T11 s and what she did on-screen, her AT Field strength and manipulation are enhanced to divine levels. She can spawn the canon Angels, except Tabris, as her minions or implant them into your hosts in your retinue. Each host may have no more than one Angel and may not be above T5 before implantation. Israfel may be implanted into a pair of twins. Lilith/Rei qualifies for special Alterzclu Symbiote theming. Lilith/Rei and independent Angels can assume humanoid forms within the standard height range. You may only have one Lilith/Rei.',
+    desc: 'Rei has merged with her universe\'s Lilith, as in End of Evangelion. In addition to the multiversal travel granted to all TX s and what she did on-screen, her AT Field strength and manipulation are enhanced to divine levels. She can spawn the canon Angels, except Tabris, as her minions or implant them into your hosts in your retinue. Each host may have no more than one Angel and may not be above T5 before implantation. Israfel may be implanted into a pair of twins. Lilith/Rei qualifies for special Alterzclu Symbiote theming. Lilith/Rei and independent Angels can assume humanoid forms within the standard height range. You may only have one Lilith/Rei.',
   },
   {
     uid: 'RtLRn',
@@ -566,7 +566,7 @@ export const waifu_perks: WaifuPerk[] = [
     image: 'https://i.imgur.com/41naUitl.png',
     cost: 11111,
     discount: 200,
-    desc: 'Jean or Madelyne has the Phoenix Force. Phoenix Jean or Phoenix Madelyne may be purchased at chargen on Danger 11, just like any other T11 waifu. A purchased Jean or Madelyne will not have the Phoenix Force without this. ',
+    desc: 'Jean or Madelyne has the Phoenix Force. Phoenix Jean or Phoenix Madelyne may be purchased at chargen on Danger 11, just like any other TX waifu. A purchased Jean or Madelyne will not have the Phoenix Force without this. ',
   },
   {
     uid: 'gC8zD',
@@ -1178,7 +1178,7 @@ export const waifu_perks: WaifuPerk[] = [
     cost: 11111,
     discount: 150,
     desc: `
-  The two lead magical girls have ascended into their goddess forms, becoming Ultimate Madoka (”Madokami”) and Akuma Homura (”Homucifer”). You must have both Madoka and Homura to buy this perk as an upgrade; the single T11 ticket will pay for both. Madoka will usually be the sole queen of an Alterzelu Symbiote swarm, due to Homura’s dedication to her partner, and qualifies for special theming. When this is purchased as an upgrade, the two will experience no changes to their personalities. If this is purchased outright, Akuma Homura may instead have her Original Series or “Moemura” personalities, depending on contractor preference.
+  The two lead magical girls have ascended into their goddess forms, becoming Ultimate Madoka (”Madokami”) and Akuma Homura (”Homucifer”). You must have both Madoka and Homura to buy this perk as an upgrade; the single TX ticket will pay for both. Madoka will usually be the sole queen of an Alterzelu Symbiote swarm, due to Homura’s dedication to her partner, and qualifies for special theming. When this is purchased as an upgrade, the two will experience no changes to their personalities. If this is purchased outright, Akuma Homura may instead have her Original Series or “Moemura” personalities, depending on contractor preference.
   <p>Madoka’s divine ascension was the result of a wish to grant hope to all magical girls. A Madoka captured normally will already be a magical girl and thus cannot make a second wish, so some builds may find this perk impossible to earn. In that event, if you already have Homura in your retinue, and capture Madoka before or during Walpurgisnacht’s attack, this perk will be earned when Madoka joins the battle.</p>
   `,
   },

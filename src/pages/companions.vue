@@ -224,11 +224,11 @@ import { useStore } from '~/store/store'
 import { toggleShowAddCharacter, showAddCharacter, toggleShowFilterTags, showFilterTags, tagToggles, threeToggle, toggleShowReport, showReport, showSearchSettings, toggleSearchSetting, blackWhite, blackWhiteDisabled } from '~/logic'
 import { waifuTags, useAllChars } from '~/data/constants'
 import { usePlayStore } from '~/store/play'
-import { useSearchSettings } from '~/logic/searchSettings'
+import { useSettings } from '~/logic/searchSettings'
 
 const { startingWorld, favorites, settings, companionsUIDs } = useStore()
 const { jumpChain } = usePlayStore()
-const { minTier, maxTier, worldName, blockedWorlds } = useSearchSettings()
+const { minTier, maxTier, worldName, blockedWorlds } = useSettings()
 
 const search = ref('')
 const position = ref(0)

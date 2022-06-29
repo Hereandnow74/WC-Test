@@ -10,7 +10,7 @@
     </template>
     <template #underDesc>
       <Modal v-if="showBuyPerk" :label="`Total cost: ${displayedCost}`" @click="showBuyPerk = false">
-        <Toggle v-if="perk.title === 'Template Stacking I'" v-model="newPrice" class="ml-2" label="New Unstable TS price" />
+        <Toggle v-if="perk.title === 'Template Stacking I'" v-model="newPrice" class="ml-2" label="Non-exponential price" />
         <div ref="charList" class="min-h-0 overflow-y-auto max-h-[75vh] scrollbar grid md:grid-cols-2 gap-2 p-1">
           <div
             class="flex gap-2 w-full rounded bg-gray-300 dark:bg-gray-800 p-1"
@@ -89,12 +89,13 @@
 </template>
 
 <script lang='ts' setup>
-import { clippingParents } from '@popperjs/core'
 import { useAllChars } from '~/data/constants'
 import { lazyLoadImg, imageLink } from '~/logic'
+import { useSettings } from '~/logic/searchSettings'
 import { useStore } from '~/store/store'
 
 const { companionsWithoutSold, settings, startingOrigin } = useStore()
+const { newPrice } = useSettings()
 
 const props = defineProps({
   perk: {
@@ -126,8 +127,6 @@ const powers = reactive<Record<string, string[]>>(props.savedPerk?.complex?.redu
 const showBuyPerk = ref(false)
 const charList = ref<HTMLElement | null>(null)
 
-const newPrice = ref(false)
-
 const { allCharsObject } = useAllChars()
 
 const fullCount = computed(() => {
@@ -137,7 +136,7 @@ const fullCount = computed(() => {
 const individualCount = computed(() => Object.values(powers).map(x => x.length))
 
 const displayedCost = computed(() => {
-  return newPrice.value ? individualCount.value.reduce((sum, count) => sum += 20 * ((Math.pow(2, count) - 1) / (2 - 1)), 0) : fullCount.value * props.perk.cost
+  return !newPrice.value ? individualCount.value.reduce((sum, count) => sum += 20 * ((Math.pow(2, count) - 1) / (2 - 1)), 0) : fullCount.value * props.perk.cost
 })
 
 function sendPerk() {

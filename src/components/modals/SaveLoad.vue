@@ -55,8 +55,11 @@
       </div>
     </div>
     <Modal v-if="showImportDialog" label="Save & Load" class="text-gray-800 dark:text-gray-200 z-50" @click="showImportDialog = false">
-      <div class="p-1 relative">
-        <textarea v-model="buildData" rows="10" class="w-full border rounded text-gray-800 p-1 min-w-screen-sm" placeholder="Paste build data here" />
+      <div class="p-1 relative flex flex-col h-[85vh] scrollbar overflow-y-auto">
+        <pre class="relative flex-grow p-1">
+          <code class="whitespace-pre-wrap" v-html="hg" />
+          <textarea v-model="buildData" rows="20" class="p-1 absolute inset-0 bg-transparent text-transparent caret-white" placeholder="Paste build data here" />
+        </pre>
         <Button
           label="Load"
           size="Small"
@@ -73,10 +76,13 @@
 import { useTimeAgo } from '@vueuse/core'
 import { random } from 'lodash'
 import { remove } from 'lodash-es'
+import Prism from 'prismjs'
 import Input from '../basic/Input.vue'
 import { useSaves } from '~/store/saves'
 import { useStore } from '~/store/store'
 import { getSaveObject, writeBuildValues } from '~/logic'
+
+import 'prismjs/components/prism-json'
 
 const { savesList } = useSaves()
 
@@ -142,7 +148,7 @@ function loadBuildFile(event: any) {
 }
 
 function exportToClip() {
-  navigator.clipboard.writeText(JSON.stringify(save))
+  navigator.clipboard.writeText(JSON.stringify(save, null, 2))
   copySuccess.value = true
 }
 
@@ -153,5 +159,9 @@ function loadFromText() {
   }
   showImportDialog.value = false
 }
+
+Prism.manual = true
+
+const hg = computed(() => Prism.highlight(buildData.value, Prism.languages.json, 'json'))
 
 </script>

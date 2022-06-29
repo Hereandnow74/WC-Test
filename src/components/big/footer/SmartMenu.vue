@@ -24,18 +24,22 @@
       <ant-design:share-alt-outlined />
       Share
     </div>
-    <div class="cursor-pointer hover:text-amber-500 flex gap-2 items-center" title="Copy Text of Build" @click="copyText">
+    <div class="cursor-pointer hover:text-amber-500 flex gap-2 items-center border-b border-gray-600" title="Copy Text of Build" @click="copyText">
       <bx:bx-copy-alt />
       Copy Text of Build
     </div>
-    <div class="cursor-pointer hover:text-amber-500 flex gap-2 items-center" title="Copy Text of Build" @click="buildImage">
+    <div class="cursor-pointer hover:text-amber-500 flex gap-2 items-center border-b border-gray-600" title="Copy Text of Build" @click="buildImage">
       <uil:image-upload />
       Copy Image of Build
+    </div>
+    <div class="cursor-pointer hover:text-amber-500 flex gap-2 items-center" title="Image Settings" @click="showBuildImageSettings = true">
+      <uil:image-edit />
+      Image Settings
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
-import { buildImage, clearBuild, copyText, showShare, showSaveLoad } from '~/logic'
+import { buildImage, clearBuild, copyText, showShare, showSaveLoad, showBuildImageSettings } from '~/logic'
 
 </script>
