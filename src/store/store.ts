@@ -98,12 +98,13 @@ const companionProfit = computed(() => {
   return captureKoeff.value > 0
     ? companions.value.reduce((a, x) => {
       if (x.method === 'capture' && x.priceTier !== 11) {
-        if (x.price === undefined) {
+        if (x.price === undefined && x.priceTier !== 0) {
           let captureCost = Math.ceil(CHAR_COSTS[x.priceTier] * captureKoeff.value)
           captureCost = Math.max(1, captureCost)
-          return a += captureCost
+          a += captureCost
         }
-        else { return a += x.price }
+        else { a += x.price || 0 }
+        return a
       }
       return a
     }, 0)
@@ -294,8 +295,10 @@ const totalCost = computed(() => startingOrigin.value.cost + heritageCost.value 
 + waifuPerksCost.value + genericWaifuPerksCost.value + luresCost.value + companionsCost.value + otherCost.value)
 
 const companionsWithoutSold = computed(() => companions.value.filter(c => !c.sold))
+const companionsComp = computed(() => companions.value.filter(cmp => cmp.role === 'Companion' || !cmp.role))
+
 const targetList = computed(() => {
-  const comps = companionsWithoutSold.value.map(x => (x.name))
+  const comps = companionsComp.value.map(x => (x.name))
   if (['Substitute', 'Possess'].includes(startingOrigin.value.title))
     comps.unshift(startingOrigin.value.character || 'You')
   else
@@ -364,6 +367,8 @@ const settings = useStorage('settings', {
   allImg: false,
   ableSell: true,
   hideDesc: false,
+  textAlign: 'text-left',
+  fontSize: 0,
 })
 
 const collapsedDescs = useStorage<string[]>('collapsedDescs', [])
@@ -444,6 +449,7 @@ export function useStore() {
     appName,
     totalDiscount,
     companionsWithoutSold,
+    companionsComp,
     specificMods,
     patron,
     collapsedDescs,

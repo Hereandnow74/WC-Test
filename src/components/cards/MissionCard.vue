@@ -24,7 +24,7 @@
       </div>
     </div>
     <div v-if="mission.budget" class="text-center text-sm text-amber-800 dark:text-amber-300">
-      ( Minimum cost of you build needed to take this mission - <span class="text-green-800 dark:text-green-300">{{ mission.budget }}</span> credits )
+      ( Total cost of your build required to take this mission should be in <span class="text-green-800 dark:text-green-300">{{ Math.floor(mission.budget * 0.8) }}</span> - <span class="text-green-800 dark:text-green-300">{{ Math.floor(mission.budget * 1.2) }}</span> credits range)
     </div>
     <Desc :desc="mission.desc" />
     <div v-if="mission.conditions.length" class="px-2 flex flex-col gap-1">
@@ -39,7 +39,12 @@
     </div>
     <div class="px-2">
       <h4 class="text-green-800 dark:text-green-300 float-left pr-2">
-        Reward:
+        Reward
+        [
+        <span v-if="mission.rewardType" class="font-semibold text-pink-800 dark:text-pink-300">
+          {{ mission.rewardType }}
+        </span>
+        ]:
       </h4>
       <span>{{ mission.reward }}</span>
     </div>
@@ -50,7 +55,14 @@
       <div v-for="rew in mission.objectives" :key="rew.value" class="p-1 pl-4 bg-blue-200 dark:bg-blue-gray-700 flex flex-col gap-2">
         <div><b>Objective</b>: {{ rew.value }}</div>
         <div>
-          <span class="font-semibold text-green-800 dark:text-green-300">Reward</span>: {{ rew.reward }}
+          <span class="font-semibold text-green-800 dark:text-green-300">
+            Reward
+            [
+            <span v-if="rew.type" class="font-semibold text-pink-800 dark:text-pink-300">
+              {{ rew.type }}
+            </span>
+            ]:
+          </span> {{ rew.reward }}
         </div>
       </div>
     </div>

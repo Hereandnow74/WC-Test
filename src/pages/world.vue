@@ -99,7 +99,7 @@ const minDR = ref(1)
 
 const options = {
   findAllMatches: true,
-  threshold: 0.2,
+  threshold: 0.3,
   keys: ['worldName', 'condition.name'],
 }
 

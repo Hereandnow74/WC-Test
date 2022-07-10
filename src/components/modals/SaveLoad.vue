@@ -80,7 +80,7 @@ import Prism from 'prismjs'
 import Input from '../basic/Input.vue'
 import { useSaves } from '~/store/saves'
 import { useStore } from '~/store/store'
-import { getSaveObject, writeBuildValues } from '~/logic'
+import { saveObject, writeBuildValues } from '~/logic'
 
 import 'prismjs/components/prism-json'
 
@@ -89,16 +89,14 @@ const { savesList } = useSaves()
 const { startingWorld, totalCost } = useStore()
 
 const name = ref('')
-const saveButton = ref<HTMLLinkElement>(null)
-const loadEl = ref<HTMLElement>(null)
+const saveButton = ref<HTMLLinkElement | null>(null)
+const loadEl = ref<HTMLElement | null>(null)
 const showImportDialog = ref(false)
 const buildData = ref('')
 const copySuccess = ref(false)
 const filter = ref('')
 
 const saves = useStorage<Record<number, any>>('saves', {})
-
-const save = getSaveObject()
 
 const sortedSaveList = computed(() => {
   return [...savesList.value].reverse().filter(x => x.name.toLowerCase().includes(filter.value.toLowerCase()))
@@ -114,7 +112,7 @@ function saveBuild() {
     totalCost: totalCost.value,
     date: new Date().toString(),
   })
-  saves.value[uid] = save
+  saves.value[uid] = saveObject.value
 }
 
 function loadBuild(uid: number) {
@@ -128,9 +126,11 @@ function deleteSave(uid: number) {
 }
 
 function saveBuildFile() {
-  const myFile = new Blob([JSON.stringify(save)], { type: 'text/plain' })
-  saveButton.value.setAttribute('href', window.URL.createObjectURL(myFile))
-  saveButton.value.setAttribute('download', `save_${startingWorld.value.worldName}`)
+  const myFile = new Blob([JSON.stringify(saveObject.value)], { type: 'text/plain' })
+  if (saveButton.value) {
+    saveButton.value.setAttribute('href', window.URL.createObjectURL(myFile))
+    saveButton.value.setAttribute('download', `save_${startingWorld.value.worldName}`)
+  }
 }
 
 function loadBuildFile(event: any) {
@@ -148,7 +148,7 @@ function loadBuildFile(event: any) {
 }
 
 function exportToClip() {
-  navigator.clipboard.writeText(JSON.stringify(save, null, 2))
+  navigator.clipboard.writeText(JSON.stringify(saveObject.value, null, 2))
   copySuccess.value = true
 }
 

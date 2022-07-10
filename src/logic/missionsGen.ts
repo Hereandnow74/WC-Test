@@ -35,6 +35,7 @@ export class MissionGenerator {
 
     const targets = this.allChars.value.filter(x => x.t >= 5 || (x.b && x.b.length >= 4))
     const target = sample(targets)
+    this.title = 'Capture Someone'
     if (target) {
       this.title = `Capture: <i>${target.n}</i>`
       this.description = `Capture <b>${target.n}</b>(T${target.t}) from <b>${target.w}</b>, quick mission in and out, just a 20 minute adventure.`
@@ -59,6 +60,7 @@ export class MissionGenerator {
 
     const targets = this.allChars.value.filter(x => x.b && x.b.includes('ev'))
     const target = sample(targets)
+    this.title = 'Kill Someone'
     if (target) {
       this.scope = 'Quick'
       this.title = `Eliminate: <i>${target.n}</i>`

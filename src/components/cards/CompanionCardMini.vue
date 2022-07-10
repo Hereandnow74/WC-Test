@@ -96,7 +96,7 @@
           </span>
         </div>
 
-        <div class="flex flex-wrap gap-0.5 text-xs mb-0.5">
+        <div class="flex flex-wrap gap-1 text-xs mb-1">
           <span
             v-for="tag in tags"
             :key="tag.tag"

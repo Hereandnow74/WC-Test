@@ -12,7 +12,7 @@
       <Modal v-if="showBuyPerk" :label="`Total cost: ${displayedCost}`" @click="showBuyPerk = false">
         <div ref="charList" class="min-h-0 overflow-y-auto max-h-[75vh] scrollbar grid md:grid-cols-2 gap-2 p-1">
           <div
-            class="flex gap-2 w-full min-h-0 rounded bg-gray-300 dark:bg-gray-800 p-1"
+            class="flex gap-2 w-full rounded bg-gray-300 dark:bg-gray-800 p-1"
           >
             <img
               :data-src="startingOrigin.image || '/img/Contractor.jpg'"
@@ -54,7 +54,7 @@
             </div>
           </div>
           <div
-            v-for="companion in companionsWithoutSold"
+            v-for="companion in companionsComp"
             :key="companion.uid"
             class="flex gap-2 w-full rounded bg-gray-300 dark:bg-gray-800 p-1"
           >
@@ -113,7 +113,7 @@ import { CHAR_COSTS, useAllChars } from '~/data/constants'
 import { lazyLoadImg, imageLink } from '~/logic'
 import { useStore } from '~/store/store'
 
-const { companionsWithoutSold, settings, startingOrigin } = useStore()
+const { companionsComp, settings, startingOrigin } = useStore()
 
 const props = defineProps({
   perk: {
@@ -156,7 +156,7 @@ interface CharPower {
   cap: boolean
 }
 
-const swapPower = reactive<Record<string, CharPower>>(companionsWithoutSold.value.reduce((a, x) => {
+const swapPower = reactive<Record<string, CharPower>>(companionsComp.value.reduce((a, x) => {
   a[x.name] = { name: '', tier: x.tier, swap: 0, cap: x.method === 'capture' || x.priceTier === 0 }
   return a
 }, {}) || {})

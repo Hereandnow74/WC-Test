@@ -6,9 +6,9 @@ import { Intensity } from '~/data/intensity'
 import { WaifuPerk } from '~/data/waifu_perks'
 import { useChallenges } from '~/store/challenges'
 import { usePlayStore } from '~/store/play'
-import { Perk } from '~/store/chargen'
+import { Perk, SavedChar } from '~/store/chargen'
 import { useStore } from '~/store/store'
-import { ALL_PERK_STORES, ALL_PERK_TITLES } from '~/data/constants'
+import { ALL_PERK_STORES, ALL_PERK_TITLES, useAllChars } from '~/data/constants'
 
 const {
   allEffects, intensities, luresBought, binding, flags, allForSave, heritage,
@@ -485,6 +485,24 @@ export function removeAnyPerk(perkName: string, count = 1) {
   }
 }
 
+const { allCharsObject } = useAllChars()
+
+export function buyAnyCompanion(uid: number, price = -1, method: SavedChar['method'] = 'buy') {
+  const char = allCharsObject.value[uid]
+  if (char) {
+    const sex = (intersection(char.b, ['F', 'M', 'O'])[0] || 'F') as 'F' | 'M' | 'O'
+    companions.value.push({ uid: char.u, name: char.n, world: char.w, sex, tier: char.t, priceTier: price === -1 ? char.t : 0, method })
+    if (price > 0)
+      companions.value[companions.value.length - 1].price = price
+  }
+}
+
+export function removeAnyCompanion(uid: number) {
+  const ind = findIndex(companions.value, { uid })
+  if (ind !== -1)
+    companions.value.splice(ind, 1)
+}
+
 export function clearAll() {
   baseBudget.value = 55
   startingWorld.value = {
@@ -571,7 +589,7 @@ export function writeBuildValues(build: any) {
   missionRewards.value = build.missionRewards || {}
 }
 
-export function getSaveObject() {
+export const saveObject = computed(() => {
   return {
     baseBudget: baseBudget.value,
     startingWorld: startingWorld.value,
@@ -601,7 +619,7 @@ export function getSaveObject() {
     jumpChain: jumpChain.value,
     missionRewards: missionRewards.value,
   }
-}
+})
 
 export function filterObject(obj: any) {
   const ret: any = {}

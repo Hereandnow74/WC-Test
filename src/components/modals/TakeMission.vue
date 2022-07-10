@@ -8,9 +8,8 @@
         Rewards  <fluent:add-12-filled class="text-green-200 text-green-700 hover:text-green-500" />
       </h3>
       <div v-for="_, i in rewards" :key="i" class="flex gap-2">
-        <Select v-model="types[i]" :disabled="!!missionSave" label="Type" placeholder="Reward Type" :options="['Credits', 'TX Tickets', 'Perk', 'Other']" />
-        <Input v-if="types[i] !== 'Perk'" v-model="rewards[i]" :disabled="!!missionSave" label="Reward" placeholder="Text or number" />
-        <template v-else>
+        <Select v-model="types[i]" :disabled="!!missionSave" label="Type" placeholder="Reward Type" :options="['Credits', 'TX Tickets', 'Perk', 'Companion', 'Other']" />
+        <template v-if="types[i] === 'Perk'">
           <div class="text-red-500 text-xs max-w-40">
             Perk rewards can be buggy, advised to use only for simple preks for now.
           </div>
@@ -21,6 +20,8 @@
             :list="Object.keys(ALL_PERK_TITLES)"
           />
         </template>
+        <CharacterInput v-else-if="types[i] === 'Companion'" @updateUID="(uid: number) => rewards[i] = uid" />
+        <Input v-else v-model="rewards[i]" :disabled="!!missionSave" label="Reward" placeholder="Text or number" />
         <div icon="" size="small" class="hover:text-red-500 cursor-pointer flex items-center" @click="deleteReward(i)">
           <fluent:delete-20-filled />
         </div>
@@ -37,7 +38,7 @@ import type { PropType } from '@vue/runtime-core'
 import TextArea from '../basic/TextArea.vue'
 import { usePlayStore } from '~/store/play'
 import { ALL_PERK_TITLES } from '~/data/constants'
-import { buyAnyPerk, removeAnyPerk } from '~/logic/perksLogic'
+import { buyAnyCompanion, buyAnyPerk, removeAnyCompanion, removeAnyPerk } from '~/logic/perksLogic'
 
 const props = defineProps({
   mission: {
@@ -69,6 +70,8 @@ function applyMissionRewards() {
   rewards.value.forEach((reward, i) => {
     if (types.value[i] === 'Perk')
       buyAnyPerk(reward)
+    if (types.value[i] === 'Companion')
+      buyAnyCompanion(reward, 0, 'capture')
   })
 }
 
@@ -76,6 +79,8 @@ function undoMissionRewards() {
   missionRewards.value[props.mission.uid].rewards.forEach((reward, i) => {
     if (reward.type === 'Perk')
       removeAnyPerk(reward.value)
+    if (reward.type === 'Companion')
+      removeAnyCompanion(reward.value)
   })
   delete missionRewards.value[props.mission.uid]
 }

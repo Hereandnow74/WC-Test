@@ -1,11 +1,12 @@
 <template>
-  <p class="p-2">
+  <p class="p-2" :class="settings.textAlign" :style="[settings.fontSize ? {'font-size': `${settings.fontSize}px`} : '']">
     <component :is="MeAndMy" />
   </p>
 </template>
 
 <script lang='ts' setup>
 import { TOOLTIPS, TOOLTIPS_REG, LINKS, LINKS_REG, QUERIES } from '~/data/constants'
+import { useStore } from '~/store/store'
 
 const props = defineProps({
   desc: {
@@ -13,6 +14,8 @@ const props = defineProps({
     default: 'Description',
   },
 })
+
+const { settings } = useStore()
 
 const formattedDesc = computed(() => {
   let desc = props.desc.replace(TOOLTIPS_REG,

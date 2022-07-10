@@ -109,6 +109,7 @@ export const intensityPvP: IntensityPvP[] = []
 intensityPvP.push({
   uid: 'xkHxF',
   title: 'One In Ten',
+  image: 'https://cdn.discordapp.com/attachments/925963686433132644/992731577199108166/my-hero-academia.webp',
   intensity: 50,
   pvp: true,
   special: 'Gauntlet only, mutually exclusive with Fight For Your Right',
@@ -118,6 +119,7 @@ intensityPvP.push({
 intensityPvP.push({
   uid: 'axa7F',
   title: 'Fight For Your Right',
+  image: 'https://cdn.discordapp.com/attachments/925963686433132644/993436881964515368/Naruto-vs-Sasuke.webp',
   intensity: 0.2,
   pvp: true,
   special: 'Gauntlet only, mutually exclusive with One In Ten',
@@ -128,6 +130,7 @@ intensityPvP.push({
 intensityPvP.push({
   uid: 'yLrU0',
   title: 'Survivalism',
+  image: 'https://cdn.discordapp.com/attachments/925963686433132644/992731834255429792/1464552775-d30fe550483aaaf8986212dc7b261c70.jpeg',
   intensity: 0.2,
   pvp: true,
   whitelist: ['Fight For Your Right'],
@@ -137,6 +140,7 @@ intensityPvP.push({
 intensityPvP.push({
   uid: '0etBT',
   title: 'Marathon',
+  image: 'https://cdn.discordapp.com/attachments/925963686433132644/992730237211246602/38wvkKS.jpg',
   intensity: 0.4,
   pvp: true,
   whitelist: ['Survivalism'],
@@ -146,6 +150,7 @@ intensityPvP.push({
 intensityPvP.push({
   uid: 'tPoBA',
   title: 'Come At Me Bro',
+  image: 'https://cdn.discordapp.com/attachments/925963686433132644/992730332421963786/fantasy__portal_and_warrior__4x.webp',
   intensity: 0.2,
   pvp: true,
   special: 'Mutually exclusive with Arena',
@@ -156,6 +161,7 @@ intensityPvP.push({
 intensityPvP.push({
   uid: 'B41Sr',
   title: 'Arena I',
+  image: 'https://cdn.discordapp.com/attachments/925963686433132644/992731180401184768/Top-10-Anime-like-Record-of-Ragnarok.webp',
   intensity: 0.2,
   pvp: true,
   special: 'Mutually exclusive with Come At Me Bro',
@@ -167,6 +173,7 @@ intensityPvP.push({
 intensityPvP.push({
   uid: '3oIyV',
   title: 'Arena II',
+  image: 'https://cdn.discordapp.com/attachments/925963686433132644/992732321025368144/image-asset.png',
   intensity: 0.2,
   pvp: true,
   whitelist: ['Arena I', 'Fight For Your Right'],
@@ -175,6 +182,7 @@ intensityPvP.push({
 intensityPvP.push({
   uid: 'hcJWu',
   title: 'Arena III',
+  image: 'https://cdn.discordapp.com/attachments/925963686433132644/992730114058100816/180614.webp',
   intensity: 0.2,
   pvp: true,
   whitelist: ['Arena II', 'Survivalism'],
@@ -183,6 +191,7 @@ intensityPvP.push({
 intensityPvP.push({
   uid: 'Q4Ux8',
   title: 'Arena IV',
+  image: 'https://cdn.discordapp.com/attachments/925963686433132644/992733546542289046/dragon-fantasy-anime-34-4k.jpg',
   intensity: 0.2,
   pvp: true,
   whitelist: ['Arena III'],
@@ -191,6 +200,7 @@ intensityPvP.push({
 intensityPvP.push({
   uid: 'xeVoO',
   title: 'Arena V',
+  image: 'https://cdn.discordapp.com/attachments/925963686433132644/992733060527292446/xivysfxd4kk51.webp',
   intensity: 0.2,
   pvp: true,
   whitelist: ['Arena IV', 'Marathon'],
@@ -199,6 +209,7 @@ intensityPvP.push({
 intensityPvP.push({
   uid: 'iY17R',
   title: 'Deathmatch',
+  image: 'https://cdn.discordapp.com/attachments/925963686433132644/992729922680389703/maxresdefault.jpg',
   intensity: 0.4,
   pvp: true,
   whitelist: ['Fight For Your Right'],
@@ -207,6 +218,7 @@ intensityPvP.push({
 intensityPvP.push({
   uid: 'JVOYA',
   title: 'No Future',
+  image: 'https://cdn.discordapp.com/attachments/925963686433132644/993436262008619058/942011.png',
   intensity: 0.4,
   pvp: true,
   whitelist: ['Deathmatch'],
@@ -215,6 +227,7 @@ intensityPvP.push({
 intensityPvP.push({
   uid: 'ktxBZ',
   title: 'Non - Stop Infinite Climax',
+  image: 'https://cdn.discordapp.com/attachments/925963686433132644/992730910522875914/0edf92692eb551f416a26789f71550c4.jpg',
   intensity: 0.4,
   pvp: true,
   whitelist: ['Fight For Your Right'],
@@ -242,6 +255,7 @@ export const invasionPvP: IntensityPvP[] = []
 invasionPvP.push({
   uid: 'G8xXT',
   title: 'White Eye Orb',
+  image: 'https://cdn.discordapp.com/attachments/925963686433132644/993105142561914880/Screenshot_1.jpg',
   cost: 75,
   pvp: true,
   desc: `<p>When the defending side of an invasion calls for help, this orb allows you to answer, and demonstrate the value of Jolly Cooperation. The PvP asset value of the force you send must be within the same range as the defender and attacker: between 80% of the higher value and 125% of the lower value. The defender may call as many allied forces as they want, though this will affect their prize payout if they win (see below). Answering calls to arms is optional; White Eye Orbs have a Do Not Disturb function that can make refusals automatic. You do not need to have visited your own parallel of a world to answer a call to arms there, but a call to arms will not count as visiting that world for We Will Meet Again, Rainbow Bridge, and other dimensional travel purposes.</p>
@@ -252,6 +266,7 @@ invasionPvP.push({
 invasionPvP.push({
   uid: 'nLyWF',
   title: 'Red Eye Orb',
+  image: 'https://cdn.discordapp.com/attachments/925963686433132644/993106116600934490/Screenshot_2.jpg',
   cost: 100,
   pvp: true,
   desc: `
@@ -263,6 +278,7 @@ invasionPvP.push({
 invasionPvP.push({
   uid: 'hrfse',
   title: 'Green Eye Orb',
+  image: '',
   cost: 10,
   pvp: true,
   desc: `
@@ -273,6 +289,7 @@ invasionPvP.push({
 invasionPvP.push({
   uid: 'pdsFe',
   title: 'Blue Eye Orb',
+  image: 'https://cdn.discordapp.com/attachments/925963686433132644/993109119378665482/Screenshot_3.jpg',
   cost: 15,
   pvp: true,
   desc: `

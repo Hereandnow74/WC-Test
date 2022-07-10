@@ -19,21 +19,19 @@
 
 <script lang='ts' setup>
 import Input from '../basic/Input.vue'
-import { getSaveObject, shareLink } from '~/logic'
+import { saveObject, shareLink } from '~/logic'
 
 const name = ref('')
 const link = ref('')
 const generating = ref(false)
 const isDone = ref(false)
 
-const save = getSaveObject()
-
 function generateLink() {
   if (name.value.length <= 2) return
   isDone.value = true
   generating.value = true
   const nickname = name.value.length > 40 ? name.value.slice(0, 40) : name.value
-  shareLink({ nickname, date: new Date().toString(), ...save }, (docRef: any) => {
+  shareLink({ nickname, date: new Date().toString(), ...saveObject.value }, (docRef: any) => {
     link.value = `https://waifu-catalog.neocities.org/?load=${docRef.id}`
     generating.value = false
   })

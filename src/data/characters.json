@@ -877,7 +877,8 @@
       "F",
       "C",
       "mp",
-      "dm"
+      "dm",
+      "su"
     ],
     "d": "Disgaea 5"
   },
@@ -2016,7 +2017,8 @@
     "b": [
       "F",
       "C",
-      "mi"
+      "mi",
+      "ar"
     ],
     "d": "Final Fantasy XIV"
   },
@@ -5663,7 +5665,9 @@
     "w": "Amagi Brilliant Park",
     "b": [
       "F",
-      "C"
+      "C",
+      "cf",
+      "pc"
     ],
     "d": "Fairies",
     "s": "https://cdn.donmai.us/sample/dc/75/__latifa_fleuranza_amagi_brilliant_park_drawn_by_shikkoku_no_hitomi__sample-dc75e0515669eebfc53c6196919b349e.jpg"
@@ -20666,7 +20670,12 @@
     "w": "Code Geass",
     "b": [
       "M",
-      "sa"
+      "mp",
+      "sd",
+      "gn",
+      "rl",
+      "sa",
+      "pr"
     ]
   },
   {
@@ -20768,7 +20777,8 @@
     "w": "Code Geass",
     "b": [
       "F",
-      "C"
+      "C",
+      "sn"
     ],
     "in": "https://cdn.donmai.us/sample/de/50/__cecile_croomy_code_geass_drawn_by_zundarepon__sample-de50db88cf7d5f55c984f3bd375b3147.jpg"
   },
@@ -20852,7 +20862,8 @@
     "w": "Code Geass",
     "b": [
       "F",
-      "C"
+      "C",
+      "tc"
     ],
     "in": "https://cdn.donmai.us/sample/66/b7/__villetta_nu_code_geass_drawn_by_ky__sample-66b77fb9543eddf24e875c63f3447b77.jpg"
   },
@@ -23803,7 +23814,10 @@
     "s": "https://chan.sankakucomplex.com/post/show/14370143",
     "w": "Date A Live",
     "b": [
-      "F"
+      "F",
+      "rl",
+      "rg",
+      "cm"
     ]
   },
   {
@@ -23814,7 +23828,9 @@
     "s": "https://chan.sankakucomplex.com/post/show/3408838",
     "w": "Date A Live",
     "b": [
-      "F"
+      "F",
+      "sr",
+      "ar"
     ]
   },
   {
@@ -23825,7 +23841,10 @@
     "s": "https://chan.sankakucomplex.com/post/show/7645236",
     "w": "Date A Live",
     "b": [
-      "F"
+      "F",
+      "hz",
+      "mp",
+      "ar"
     ]
   },
   {
@@ -23836,7 +23855,8 @@
     "s": "https://chan.sankakucomplex.com/post/show/7476376",
     "w": "Date A Live",
     "b": [
-      "F"
+      "F",
+      "hz"
     ]
   },
   {
@@ -23847,7 +23867,9 @@
     "s": "https://chan.sankakucomplex.com/post/show/7621628",
     "w": "Date A Live",
     "b": [
-      "F"
+      "F",
+      "hz",
+      "cm"
     ]
   },
   {
@@ -23858,7 +23880,10 @@
     "s": "https://chan.sankakucomplex.com/post/show/5493599",
     "w": "Date A Live",
     "b": [
-      "F"
+      "F",
+      "hz",
+      "di",
+      "ar"
     ]
   },
   {
@@ -23970,7 +23995,10 @@
     "w": "Date A Live",
     "b": [
       "F",
-      "P"
+      "P",
+      "hz",
+      "im",
+      "cm"
     ]
   },
   {
@@ -25150,7 +25178,7 @@
   },
   {
     "u": 9605,
-    "n": "Selina Kyle",
+    "n": "Selina Kyle (Catwoman)",
     "t": 3,
     "i": "sample_7a405989bd4774e8de4da3ebf05b2425.jpg",
     "in": "https://tulip.paheal.net/_images/1315bb657be53b92b9d5e4156af93754/1938774%20-%20Batman%20Batman_%28series%29%20Catwoman%20DC%20psicoero.jpg",
@@ -26197,17 +26225,6 @@
       "dm",
       "dv",
       "dh"
-    ]
-  },
-  {
-    "u": 1555,
-    "n": "Nero",
-    "t": 8,
-    "i": "_28devil_may_cry_29_devil_may_cry_5_5101887.jpeg",
-    "s": "http://img1.joyreactor.cc/pics/post/full/Karina-Novikova-artist-nero-%28devil-may-cry%29-Devil-May-Cry-5-5101887.jpeg",
-    "w": "Devil May Cry",
-    "b": [
-      "M"
     ]
   },
   {
@@ -47631,7 +47648,8 @@
     "s": "https://vignette.wikia.nocookie.net/empowered/images/6/60/Divangelic.jpg/revision/latest/scale-to-width-down/340?cb=20130112014352",
     "w": "Empowered",
     "b": [
-      "F"
+      "F",
+      "tw"
     ]
   },
   {
@@ -48636,6 +48654,8 @@
     "b": [
       "M",
       "id",
+      "me",
+      "ev",
       "gn"
     ]
   },
@@ -48774,7 +48794,9 @@
     "w": "Fairy Tail",
     "b": [
       "F",
-      "C"
+      "C",
+      "mp",
+      "cm"
     ],
     "d": "Diabolos"
   },
@@ -49050,6 +49072,7 @@
     "b": [
       "F",
       "C",
+      "ml",
       "me"
     ],
     "d": "Fairy Tail"
@@ -49107,7 +49130,8 @@
     "b": [
       "F",
       "C",
-      "me"
+      "me",
+      "cm"
     ],
     "d": "Fairy Tail"
   },
@@ -49123,7 +49147,8 @@
       "C",
       "dr",
       "im",
-      "me"
+      "me",
+      "Ghost"
     ],
     "d": "Fairy Tail"
   },
@@ -49421,7 +49446,9 @@
     "w": "Fairy Tail",
     "b": [
       "F",
-      "C"
+      "C",
+      "mp",
+      "dm"
     ],
     "d": "Tartarous"
   },
@@ -51841,7 +51868,8 @@
     "w": "Nasuverse",
     "b": [
       "F",
-      "C"
+      "C",
+      "sd"
     ],
     "d": "Fate/ (Mainline)"
   },
@@ -56256,7 +56284,7 @@
   {
     "u": 10922,
     "n": "Nakiri Alice",
-    "t": 1,
+    "t": 3,
     "i": "sample_56f925c7cbd83b3d93e138c018ebc59e.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/4814805",
     "w": "Food Wars!: Shokugeki no Soma",
@@ -56269,7 +56297,7 @@
   {
     "u": 10923,
     "n": "Nakiri Erina",
-    "t": 1,
+    "t": 4,
     "i": "sample_3442d295d90d983f62696cb18de65890.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/7780068",
     "w": "Food Wars!: Shokugeki no Soma",
@@ -56402,7 +56430,9 @@
     "s": "https://chan.sankakucomplex.com/post/show/4815211",
     "w": "Food Wars!: Shokugeki no Soma",
     "b": [
-      "F"
+      "F",
+      "sd",
+      "cf"
     ]
   },
   {
@@ -57650,7 +57680,8 @@
     "s": "https://chan.sankakucomplex.com/post/show/5848581",
     "w": "GATE: Thus the JSDF Fought There!",
     "b": [
-      "F"
+      "F",
+      "dh"
     ]
   },
   {
@@ -57694,7 +57725,8 @@
     "s": "https://chan.sankakucomplex.com/post/show/1936162",
     "w": "GATE: Thus the JSDF Fought There!",
     "b": [
-      "F"
+      "F",
+      "dh"
     ]
   },
   {
@@ -57783,7 +57815,8 @@
     "s": "https://vignette.wikia.nocookie.net/gate-thus-the-jsdf-fought-there/images/b/b7/Mamina_ears_erect_hearing_Itami%27s_men_breaking_in_Anime_episode_7.png/revision/latest?cb=20170807192709",
     "w": "GATE: Thus the JSDF Fought There!",
     "b": [
-      "F"
+      "F",
+      "dh"
     ]
   },
   {
@@ -57794,7 +57827,8 @@
     "s": "https://s1.zerochan.net/Aurea.%28Gate%29.600.1923968.jpg",
     "w": "GATE: Thus the JSDF Fought There!",
     "b": [
-      "F"
+      "F",
+      "dh"
     ]
   },
   {
@@ -57805,7 +57839,8 @@
     "s": "https://vignette.wikia.nocookie.net/gate-thus-the-jsdf-fought-there/images/2/26/Mizari.png/revision/latest?cb=20170510030537",
     "w": "GATE: Thus the JSDF Fought There!",
     "b": [
-      "F"
+      "F",
+      "dh"
     ]
   },
   {
@@ -57816,7 +57851,8 @@
     "s": "https://vignette.wikia.nocookie.net/gate-thus-the-jsdf-fought-there/images/b/b7/Images.jpg/revision/latest?cb=20200423013156",
     "w": "GATE: Thus the JSDF Fought There!",
     "b": [
-      "F"
+      "F",
+      "dh"
     ]
   },
   {
@@ -61153,19 +61189,6 @@
     "in": "https://cdn.donmai.us/sample/76/31/__t_cms_girls_frontline_drawn_by_kuzumotsu__sample-76319a4fdf7000078cd057ed5aed2d78.jpg"
   },
   {
-    "u": 3861,
-    "n": "Type 56 Assault Rifle",
-    "t": 4,
-    "i": "[n]__type_56_1_girls_frontline_drawn_by_cancer_zjcconan__sample-024cf707260af684c598c3bf8c3b983f.jpg",
-    "w": "Girls Frontline",
-    "b": [
-      "F",
-      "ad"
-    ],
-    "s": "https://cdn.donmai.us/sample/02/4c/__type_56_1_girls_frontline_drawn_by_cancer_zjcconan__sample-024cf707260af684c598c3bf8c3b983f.jpg",
-    "in": "https://cdn.donmai.us/sample/95/58/__type_56_1_and_type_56_1_girls_frontline_drawn_by_cancer_zjcconan__sample-95582cc12b5b872d28cb75c9b73da7bd.jpg"
-  },
-  {
     "u": 3862,
     "n": "Type 81 Carbine",
     "t": 4,
@@ -61507,18 +61530,6 @@
     ],
     "s": "https://cdn.donmai.us/sample/54/d5/__m200_girls_frontline_drawn_by_haneiro__sample-54d56c72bd3d496f3b990c4010d56537.jpg",
     "in": "https://cdn.donmai.us/sample/c6/46/__m200_girls_frontline_drawn_by_kahlua_artist__sample-c646bedb10e5105f818e24a26c924898.jpg"
-  },
-  {
-    "u": 3889,
-    "n": "M82A1",
-    "t": 4,
-    "i": "[n]__m82a1_girls_frontline_drawn_by_redjuice__sample-015134adfb74c8575cff54cf1b807f21.jpg",
-    "w": "Girls Frontline",
-    "b": [
-      "F",
-      "ad"
-    ],
-    "s": "https://cdn.donmai.us/sample/01/51/__m82a1_girls_frontline_drawn_by_redjuice__sample-015134adfb74c8575cff54cf1b807f21.jpg"
   },
   {
     "u": 3890,
@@ -62412,7 +62423,8 @@
       "ad"
     ],
     "s": "https://cdn.donmai.us/sample/cf/44/__beak_girls_frontline_drawn_by_nishiro_ryoujin__sample-cf447dc805e6f1088aa9deb28d2dda99.jpg",
-    "in": "https://cdn.donmai.us/original/9e/4f/__beak_girls_frontline_drawn_by_goyain__9e4fd6767335429c42aa873d5dfeb222.jpg"
+    "in": "https://cdn.donmai.us/original/9e/4f/__beak_girls_frontline_drawn_by_goyain__9e4fd6767335429c42aa873d5dfeb222.jpg",
+    "d": "Sangvis Ferri - Ringleader"
   },
   {
     "u": 3961,
@@ -62450,7 +62462,8 @@
       "F",
       "ad"
     ],
-    "s": "https://i.imgur.com/e67du81.jpg"
+    "s": "https://i.imgur.com/e67du81.jpg",
+    "d": "Sangvis Ferri - Ringleader"
   },
   {
     "u": 3964,
@@ -62488,7 +62501,8 @@
       "ad"
     ],
     "s": "https://cdn.donmai.us/sample/e5/1d/__hunter_girls_frontline_drawn_by_popoman__sample-e51d670f1e9530b8085bb654241c8179.jpg",
-    "in": "https://cdn.donmai.us/sample/f9/ae/__hunter_girls_frontline_drawn_by_nai_daiduolaoge__sample-f9ae3add5eb1286fce609c96dd5ea781.jpg"
+    "in": "https://cdn.donmai.us/sample/f9/ae/__hunter_girls_frontline_drawn_by_nai_daiduolaoge__sample-f9ae3add5eb1286fce609c96dd5ea781.jpg",
+    "d": "Sangvis Ferri - Ringleader"
   },
   {
     "u": 3968,
@@ -62501,7 +62515,8 @@
       "ad"
     ],
     "s": "https://gamepress.gg/girlsfrontline/sites/girlsfrontline/files/2021-08/intruder_0.png",
-    "in": "https://cdn.donmai.us/sample/a3/e6/__intruder_girls_frontline_drawn_by_nai_daiduolaoge__sample-a3e606592c811a1caee2c7904ae447a2.jpg"
+    "in": "https://cdn.donmai.us/sample/a3/e6/__intruder_girls_frontline_drawn_by_nai_daiduolaoge__sample-a3e606592c811a1caee2c7904ae447a2.jpg",
+    "d": "Sangvis Ferri - Ringleader"
   },
   {
     "u": 3969,
@@ -62513,7 +62528,8 @@
       "F",
       "ad"
     ],
-    "s": "https://cdn.donmai.us/sample/c0/03/__judge_girls_frontline_drawn_by_xiao_qiang_sang__sample-c0037605fe8191666f361f22477e8235.jpg"
+    "s": "https://cdn.donmai.us/sample/c0/03/__judge_girls_frontline_drawn_by_xiao_qiang_sang__sample-c0037605fe8191666f361f22477e8235.jpg",
+    "d": "Sangvis Ferri - Ringleader"
   },
   {
     "u": 3970,
@@ -62539,7 +62555,8 @@
       "ad"
     ],
     "s": "https://cdn.donmai.us/sample/26/d1/__scarecrow_girls_frontline_drawn_by_npt_shizuka__sample-26d199255b7b170061034d018fc18c20.jpg",
-    "in": "https://cdn.donmai.us/sample/56/e1/__scarecrow_girls_frontline_drawn_by_anlark__sample-56e1d60dfd58e69b5e11dacec1eb2a60.jpg"
+    "in": "https://cdn.donmai.us/sample/56/e1/__scarecrow_girls_frontline_drawn_by_anlark__sample-56e1d60dfd58e69b5e11dacec1eb2a60.jpg",
+    "d": "Sangvis Ferri - Ringleader"
   },
   {
     "u": 10963,
@@ -62560,7 +62577,8 @@
     "s": "https://chan.sankakucomplex.com/post/show/7284249",
     "w": "Goblin Slayer",
     "b": [
-      "F"
+      "F",
+      "wh"
     ]
   },
   {
@@ -69055,11 +69073,14 @@
     "u": 1894,
     "n": "Peeves",
     "t": 4,
-    "i": "",
+    "i": "[n]c21d011c3a27e9e41d46145e262dd1e3.jpg",
     "w": "Harry Potter",
     "b": [
-      "M"
-    ]
+      "M",
+      "im",
+      "un"
+    ],
+    "s": "https://i.pinimg.com/originals/c2/1d/01/c21d011c3a27e9e41d46145e262dd1e3.jpg"
   },
   {
     "u": 1895,
@@ -76409,7 +76430,9 @@
     "s": "https://e621.net/post/show/1618717",
     "w": "Inuyasha",
     "b": [
-      "F"
+      "F",
+      "dm",
+      "sr"
     ]
   },
   {
@@ -80709,7 +80732,8 @@
       "gd",
       "rs",
       "pt"
-    ]
+    ],
+    "in": "https://tulip.paheal.net/_images/f446f2f784adf68b790d33405af373ee/5090188%20-%20Aqua%20KonoSuba%3A_God%27s_Blessing_on_this_Wonderful_World%21%20donburikazoku.jpg"
   },
   {
     "u": 5959,
@@ -81185,7 +81209,10 @@
     "s": "https://e621.net/post/show/209697",
     "w": "Las Lindas",
     "b": [
-      "F"
+      "F",
+      "hl",
+      "de",
+      "cm"
     ]
   },
   {
@@ -82315,8 +82342,10 @@
     "w": "League of Legends",
     "b": [
       "F",
-      "C"
-    ]
+      "C",
+      "sr"
+    ],
+    "in": "https://peach.paheal.net/_images/b2a6e922683365cbdb07e7b499b71fee/3101311%20-%20Elise%20League_of_Legends.jpg"
   },
   {
     "u": 9201,
@@ -91804,7 +91833,9 @@
     "i": "",
     "w": "Redo of Healer",
     "b": [
-      "F"
+      "F",
+      "dm",
+      "dh"
     ]
   },
   {
@@ -92369,7 +92400,7 @@
   },
   {
     "u": 1825,
-    "n": "Thor Odison",
+    "n": "Thor Odinson",
     "t": 8,
     "i": "sample_733adbeb80a560892b9d1a731634a18a.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/4380964",
@@ -95152,17 +95183,6 @@
     "t": 4,
     "i": "sample_a5b63f9e4d2bab0be69b88a064443d43.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/5116058",
-    "w": "Metal Gear",
-    "b": [
-      "M"
-    ]
-  },
-  {
-    "u": 1661,
-    "n": "Raiden",
-    "t": 6,
-    "i": "",
-    "s": "https://chan.sankakucomplex.com/post/show/3685462",
     "w": "Metal Gear",
     "b": [
       "M"
@@ -101285,9 +101305,12 @@
     "w": "My Hero Academia",
     "b": [
       "M",
-      "mu",
+      "cl",
+      "sc",
       "tc",
-      "sp"
+      "sp",
+      "sa",
+      "cm"
     ]
   },
   {
@@ -101299,7 +101322,6 @@
     "w": "My Hero Academia",
     "b": [
       "M",
-      "mu",
       "sd"
     ]
   },
@@ -101312,7 +101334,6 @@
     "w": "My Hero Academia",
     "b": [
       "M",
-      "mu",
       "sd"
     ]
   },
@@ -101320,27 +101341,30 @@
     "u": 433,
     "n": "Monoma Neito",
     "t": 4,
-    "i": "neito___bnha_genderbend_by_peb99_ddheckw_pre.jpg",
-    "s": "https://www.deviantart.com/peb99/art/Female-Monoma-Neito-BNHA-genderbend-815283248",
+    "i": "[n]Monoma.Neito.full.2797603.jpg",
+    "s": "https://static.zerochan.net/Monoma.Neito.full.2797603.jpg",
     "w": "My Hero Academia",
     "b": [
       "M",
-      "mu",
-      "sd"
+      "sc",
+      "sd",
+      "sa",
+      "cm"
     ]
   },
   {
     "u": 434,
     "n": "Sero Hanta",
     "t": 4,
-    "i": "cb3c0ce27c192854758f8d50b0171724.jpg",
-    "s": "https://i.pinimg.com/originals/cb/3c/0c/cb3c0ce27c192854758f8d50b0171724.jpg",
+    "i": "[n]bec0ec4ea666d59ed75abc042c9d6077.png",
+    "s": "https://i.pinimg.com/originals/be/c0/ec/bec0ec4ea666d59ed75abc042c9d6077.png",
     "w": "My Hero Academia",
     "b": [
       "M",
-      "mu",
-      "sd"
-    ]
+      "sd",
+      "cm"
+    ],
+    "in": "https://cdn4.redxxx.cc/picture/original/nUE0pUZ6Yl9cYaWyMTDhnKDiA_Vknzt_p_t3L_b_ZF5dpTpcXltbHzIxJSuLYzAwXI83LwSdnQMmnQqwnwLkYzcjMj3p9W/(RedXXX.cc)_hanta-sero-ties-himself-up-muu-nsfw-preview.jpg"
   },
   {
     "u": 435,
@@ -101350,8 +101374,14 @@
     "s": "https://www.deviantart.com/peb99/art/Shinsou-Hitoshi-female-version-bnha-genderbend-812363799",
     "w": "My Hero Academia",
     "b": [
-      "M"
-    ]
+      "M",
+      "ps",
+      "sc",
+      "sd",
+      "sa",
+      "cm"
+    ],
+    "in": "https://d.wattpad.com/story_parts/762920228/images/15b48e93d73d846682043509632.jpg"
   },
   {
     "u": 436,
@@ -101361,7 +101391,9 @@
     "s": "https://www.deviantart.com/gabriella-animation/art/Fanart-Genderbend-Aoyama-Yuuga-750987231",
     "w": "My Hero Academia",
     "b": [
-      "M"
+      "M",
+      "sd",
+      "cm"
     ]
   },
   {
@@ -101372,7 +101404,9 @@
     "s": "https://www.deviantart.com/peb99/art/Kaminari-Denki-female-version-BNHA-genderbend-803777954",
     "w": "My Hero Academia",
     "b": [
-      "M"
+      "M",
+      "sd",
+      "cm"
     ]
   },
   {
@@ -101383,8 +101417,12 @@
     "s": "https://www.deviantart.com/peb99/art/Female-Kirishima-Eijirou-BNHA-genderbend-809860406",
     "w": "My Hero Academia",
     "b": [
-      "M"
-    ]
+      "M",
+      "sd",
+      "sa",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/sample/09/8c/sample-098c58aff8edb770feaa34c58bae518e.jpg"
   },
   {
     "u": 439,
@@ -101394,8 +101432,12 @@
     "s": "https://pm1.narvii.com/7161/ed31eedf82aa0df1adbf4e1cb672358df7263761r1-2048-2048v2_hq.jpg",
     "w": "My Hero Academia",
     "b": [
-      "M"
-    ]
+      "M",
+      "cl",
+      "sd",
+      "cm"
+    ],
+    "in": "https://cdn4.redxxx.cc/picture/large/nUE0pUZ6Yl9cYaWyMTDhnKDirTW1pJS_AGubnUD_ZF5dpTpcXltbHzIxJSuLYzAwXI9-LaIkLKL1BTubqQLkYzcjMj3p9W/(RedXXX.cc)_tokoyami-x-dark-shadow-porn-gay-preview.jpg"
   },
   {
     "u": 440,
@@ -101405,8 +101447,12 @@
     "s": "https://chan.sankakucomplex.com/post/show/5302566",
     "w": "My Hero Academia",
     "b": [
-      "M"
-    ]
+      "M",
+      "sd",
+      "sa",
+      "cm"
+    ],
+    "in": "https://bigtophentai.com/uploads/post_items/image/large/726/7264088-c8135.png"
   },
   {
     "u": 441,
@@ -101424,22 +101470,35 @@
     "u": 442,
     "n": "Midoriya Izuku",
     "t": 6,
-    "i": "sample_cf0a275ab5165ab3a8309f7dfd464482.jpg",
-    "s": "https://chan.sankakucomplex.com/post/show/7565373",
+    "i": "[n]fla750x1007.jpg",
+    "s": "https://ih1.redbubble.net/image.1266869740.7351/flat,750x1000,075,f.jpg",
     "w": "My Hero Academia",
     "b": [
-      "M"
-    ]
+      "M",
+      "sc",
+      "sd",
+      "nd",
+      "sa",
+      "cm",
+      "pr"
+    ],
+    "in": "https://cdn3.nude-pics.org/female-deku-smash-or-pass-3TPMQ2D5mp/female-deku-smash-or-pass.webp"
   },
   {
     "u": 443,
     "n": "Mirio Togata",
     "t": 6,
-    "i": "mirio_by_peb99_ddite0i_pre.jpg",
-    "s": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3e612abf-cb29-42d1-b6bb-df828f4fb668/ddite0i-cb4ba4a1-a546-4fb0-b044-5e0148585e64.png/v1/fill/w_894,h_894,q_70,strp/mirio_by_peb99_ddite0i-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI4MCIsInBhdGgiOiJcL2ZcLzNlNjEyYWJmLWNiMjktNDJkMS1iNmJiLWRmODI4ZjRmYjY2OFwvZGRpdGUwaS1jYjRiYTRhMS1hNTQ2LTRmYjAtYjA0NC01ZTAxNDg1ODVlNjQucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.eK_SJGwvdZWcsIxda7IdHyZoaU8fDIvI6A4vceERLHg",
+    "i": "[n]d576605d7afc2387757862d9916ea911.jpg",
+    "s": "https://i.pinimg.com/564x/d5/76/60/d576605d7afc2387757862d9916ea911.jpg",
     "w": "My Hero Academia",
     "b": [
-      "M"
+      "M",
+      "hz",
+      "cl",
+      "sd",
+      "sp",
+      "sa",
+      "cm"
     ]
   },
   {
@@ -101451,10 +101510,16 @@
     "b": [
       "M",
       "hl",
+      "cl",
       "pl",
-      "sr"
+      "rs",
+      "sn",
+      "sr",
+      "vn",
+      "cm"
     ],
-    "s": "https://img3.gelbooru.com//samples/d0/5e/sample_d05ef511880d5366a56d6707a87a14ec.jpg"
+    "s": "https://img3.gelbooru.com//samples/d0/5e/sample_d05ef511880d5366a56d6707a87a14ec.jpg",
+    "in": "https://i1.sndcdn.com/artworks-CqAvgihQPJaSQKy1-zj297g-t500x500.jpg"
   },
   {
     "u": 445,
@@ -101464,8 +101529,13 @@
     "s": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3e612abf-cb29-42d1-b6bb-df828f4fb668/ddite1z-34714bbe-6332-4dd7-ac67-b251b2880813.png/v1/fill/w_894,h_894,q_70,strp/tamaki_by_peb99_ddite1z-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI4MCIsInBhdGgiOiJcL2ZcLzNlNjEyYWJmLWNiMjktNDJkMS1iNmJiLWRmODI4ZjRmYjY2OFwvZGRpdGUxei0zNDcxNGJiZS02MzMyLTRkZDctYWM2Ny1iMjUxYjI4ODA4MTMucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.CsbDWPAF5GR0g77MfhOh3N7N2FlnZ8i6XR35Cj-4UKw",
     "w": "My Hero Academia",
     "b": [
-      "M"
-    ]
+      "M",
+      "sd",
+      "sp",
+      "sr",
+      "cm"
+    ],
+    "in": "http://pictures.hentai-foundry.com/f/Fern/554840/Fern-554840-BNHA_-_Tamaki_Amajiki.png"
   },
   {
     "u": 446,
@@ -101475,8 +101545,13 @@
     "s": "https://chan.sankakucomplex.com/post/show/6251697",
     "w": "My Hero Academia",
     "b": [
-      "M"
-    ]
+      "M",
+      "cl",
+      "sd",
+      "sa",
+      "cm"
+    ],
+    "in": "https://pbs.twimg.com/media/D2bw8pZXcAAOCtX.jpg"
   },
   {
     "u": 447,
@@ -101487,7 +101562,11 @@
     "w": "My Hero Academia",
     "b": [
       "M",
-      "sp"
+      "tc",
+      "sp",
+      "sr",
+      "sa",
+      "cm"
     ]
   },
   {
@@ -101498,8 +101577,14 @@
     "s": "https://chan.sankakucomplex.com/post/show/4780987",
     "w": "My Hero Academia",
     "b": [
-      "M"
-    ]
+      "M",
+      "cl",
+      "sc",
+      "sp",
+      "sa",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/original/77/c0/77c00f62fc06f9ced5b2283d7d01a0ef.jpg"
   },
   {
     "u": 6546,
@@ -101555,19 +101640,20 @@
       "C"
     ],
     "d": "Civilians",
-    "in": "https://pictures.hentai-foundry.com/c/Cutesexyrobutts/676857/Cutesexyrobutts-676857-Inko_Midoriya.png"
+    "in": "https://cdn.donmai.us/sample/82/dd/sample-82dd0b51164bb6a0e350ea62afdd1934.jpg"
   },
   {
     "u": 6550,
     "n": "Todoroki Fuyumi",
     "t": 2,
     "i": "v_5__sample_8fdc09a5d94d1ce69171ec4efcfc6609.jpg",
-    "in": "https://peach.paheal.net/_images/febcf1f3a2fbaac9343769eb7485f65d/4477539%20-%20Fuyumi_Todoroki%20My_Hero_Academia%20TNT77.jpg",
+    "in": "https://danbooru.donmai.us/data/__todoroki_fuyumi_boku_no_hero_academia_drawn_by_shpo__646d5625726c840178867c7cd299f962.png",
     "s": "https://danbooru.donmai.us/posts/3303831",
     "w": "My Hero Academia",
     "b": [
       "F",
-      "C"
+      "C",
+      "tc"
     ],
     "d": "Civilians"
   },
@@ -101575,9 +101661,9 @@
     "u": 6551,
     "n": "Todoroki Rei",
     "t": 4,
-    "i": "ppi__sample_8f85d0007879ce0251e5620ea2fb2a6e.jpg",
-    "in": "https://tulip.paheal.net/_images/a351ba05e9fdd1c06b4a4c4231d720a4/4369672%20-%20Enji_Todoroki%20Mark_Gavatino%20My_Hero_Academia%20Rei_Todoroki.jpg",
-    "s": "https://danbooru.donmai.us/posts/3371315",
+    "i": "[n]Todoroki.Rei.600.3249168.jpg",
+    "in": "",
+    "s": "https://s1.zerochan.net/Todoroki.Rei.600.3249168.jpg",
     "w": "My Hero Academia",
     "b": [
       "F",
@@ -101590,7 +101676,7 @@
     "n": "Melissa Shield",
     "t": 5,
     "i": "sample_95843a1c147d5c1a5b99f5a717b6d382.jpg",
-    "in": "https://lotus.paheal.net/_images/aaad72f97d480b7b3c70c2cecefae9e8/3575674%20-%20Izuku_Midoriya%20Melissa_Shield%20My_Hero_Academia%20nightlykrumbs.png",
+    "in": "https://sexpornpictures.com/gallery/melissa-shield-qHqeiLR9gm/melissa-shield.webp",
     "s": "https://chan.sankakucomplex.com/post/show/7182513",
     "w": "My Hero Academia",
     "b": [
@@ -101606,12 +101692,16 @@
     "n": "Fukukado Emi/Ms. Joke",
     "t": 4,
     "i": "ina__sample_1cd1eb7dfd1971a8cbe501d4ac3847f6.jpg",
-    "in": "https://lotus.paheal.net/_images/5c06296cd00347bc646decebe5d1b117/4446677%20-%20Emi_Fukukado%20My_Hero_Academia%20Shouta_Aizawa%20roropull.jpg",
+    "in": "https://sexpornpictures.com/gallery/ms-joke-eronautics-Wubc0fAP2U/ms-joke-eronautics.webp",
     "s": "https://danbooru.donmai.us/posts/2823115",
     "w": "My Hero Academia",
     "b": [
       "F",
-      "C"
+      "C",
+      "mp",
+      "tc",
+      "sp",
+      "cm"
     ],
     "d": "Other Schools"
   },
@@ -101625,7 +101715,9 @@
     "w": "My Hero Academia",
     "b": [
       "F",
-      "C"
+      "C",
+      "sd",
+      "cm"
     ],
     "d": "Other Schools"
   },
@@ -101638,7 +101730,9 @@
     "w": "My Hero Academia",
     "b": [
       "F",
-      "C"
+      "C",
+      "sd",
+      "cm"
     ],
     "d": "Other Schools",
     "in": "https://peach.paheal.net/_images/b7d8096ba3c4d5507a40d5f070f48014/2778222%20-%20My_Hero_Academia%20Tatami_Nakagame.jpg"
@@ -101652,7 +101746,9 @@
     "w": "My Hero Academia",
     "b": [
       "F",
-      "C"
+      "C",
+      "sd",
+      "cm"
     ],
     "d": "Other Schools"
   },
@@ -101661,12 +101757,14 @@
     "n": "Utsushimi Camie",
     "t": 4,
     "i": "015__sample_4097336512ecd24bb93171545077e896.jpg",
-    "in": "https://lotus.paheal.net/_images/25f655e811197592bd723fcfe1315fd8/3446950%20-%20Afrobull%20Camie_Utsushimi%20My_Hero_Academia.png",
+    "in": "https://sexpornpictures.com/gallery/camie-salazr4-my-hero-academia-BLNFu8vzBM/camie-salazr4-my-hero-academia.webp",
     "s": "https://danbooru.donmai.us/posts/3865201",
     "w": "My Hero Academia",
     "b": [
       "F",
-      "C"
+      "C",
+      "sd",
+      "cm"
     ],
     "d": "Other Schools"
   },
@@ -101679,7 +101777,8 @@
     "w": "My Hero Academia",
     "b": [
       "F",
-      "C"
+      "C",
+      "sp"
     ],
     "d": "Pro Heroes"
   },
@@ -101693,7 +101792,10 @@
     "w": "My Hero Academia",
     "b": [
       "F",
-      "C"
+      "C",
+      "sp",
+      "sr",
+      "cm"
     ],
     "d": "Pro Heroes"
   },
@@ -101702,12 +101804,14 @@
     "n": "Awata Kaoruko/Bubble Girl",
     "t": 4,
     "i": "4ci__sample_d7039eb468e8199436db18fb0ab2d7c9.jpg",
-    "in": "https://tulip.paheal.net/_images/63dbe215d6baeb2089b7948f2fc3d975/3421676%20-%20Kaoruko_Awata%20Mark_Gavatino%20My_Hero_Academia.jpg",
+    "in": "https://i.imgur.com/N6DfWvb.jpg",
     "s": "https://danbooru.donmai.us/posts/3314587",
     "w": "My Hero Academia",
     "b": [
       "F",
-      "C"
+      "C",
+      "sp",
+      "cm"
     ],
     "d": "Pro Heroes"
   },
@@ -101721,7 +101825,9 @@
     "w": "My Hero Academia",
     "b": [
       "F",
-      "C"
+      "C",
+      "sp",
+      "cm"
     ],
     "d": "Pro Heroes"
   },
@@ -101734,22 +101840,28 @@
     "w": "My Hero Academia",
     "b": [
       "F",
-      "C"
+      "C",
+      "tc",
+      "sp",
+      "cm"
     ],
     "d": "Pro Heroes",
-    "in": "https://cdn.donmai.us/sample/4f/78/__midnight_boku_no_hero_academia_drawn_by_lamb_oic029__sample-4f782761a96894550dd90b9135161a07.jpg"
+    "in": "https://cdn3.nude-pics.org/midnight-ultrabinou-my-hero-academia-6WnhgR2laM/midnight-ultrabinou-my-hero-academia.webp"
   },
   {
     "u": 6563,
     "n": "Sirius",
     "t": 4,
     "i": "mizuki_mau__a338f53ff6ebbb9429257753f54cc693.jpg",
-    "in": "https://tulip.paheal.net/_images/5b75725d8f2a576942a71917a1d8f231/4760839%20-%20My_Hero_Academia%20Sirius%20Sirius_%28My_Hero_Academia%29%20Tropic_Turtle.png",
+    "in": "https://www.fap34.com/wp-content/uploads/2022/01/34176-my-hero-academia-fuckable-sirius-caked-up-joylewds-nude-tits.jpg",
     "s": "https://danbooru.donmai.us/posts/2875023",
     "w": "My Hero Academia",
     "b": [
       "F",
-      "C"
+      "C",
+      "sc",
+      "sp",
+      "cm"
     ],
     "d": "Pro Heroes"
   },
@@ -101758,12 +101870,15 @@
     "n": "Takeyama Yu/Mt. Lady",
     "t": 4,
     "i": "ito__sample_9a4a55752106971d0450ca05f2dea0fd.jpg",
-    "in": "https://peach.paheal.net/_images/c597bebf3452c3d53bffffda25ab83bf/3233770%20-%20My_Hero_Academia%20Yuu_Takeyama%20lendleBF.jpg",
+    "in": "https://cdn3.nude-pics.org/mt-lady-my-hero-academia-sDZFdq9RJK/mt-lady-my-hero-academia.webp",
     "s": "https://danbooru.donmai.us/posts/3812793",
     "w": "My Hero Academia",
     "b": [
       "F",
-      "C"
+      "C",
+      "sp",
+      "sr",
+      "cm"
     ],
     "d": "Pro Heroes"
   },
@@ -101772,12 +101887,15 @@
     "n": "Uwabami",
     "t": 4,
     "i": "d7522746e422cbdcb48583717a098917.jpeg",
-    "in": "https://peach.paheal.net/_images/33f7a155fa6dc812b75312f0b25531cd/3858690%20-%20Itsuka_Kendou%20Momo_Yaoyorozu%20My_Hero_Academia%20Shoganight%20Uwabami.jpg",
+    "in": "https://www.sexypornpictures.org/gallery-2/uwabami-kuroneko%E3%83%91%E3%83%B3%E3%83%84-my-hero-academia-8j9QvZXOkp/uwabami-kuroneko%E3%83%91%E3%83%B3%E3%83%84-my-hero-academia.webp",
     "s": "https://gelbooru.com/index.php?page=post&s=view&id=4994205",
     "w": "My Hero Academia",
     "b": [
       "F",
-      "C"
+      "C",
+      "sc",
+      "di",
+      "sp"
     ],
     "d": "Pro Heroes"
   },
@@ -101785,13 +101903,17 @@
     "u": 6566,
     "n": "Shiretoko Tomoko/Ragdoll",
     "t": 5,
-    "i": "sample_c7792c277747e357b3f5e48b3ec1f45a.jpg",
-    "in": "https://lotus.paheal.net/_images/ab6df1310351d1dbd1aa2d335c23adf9/4022309%20-%20My_Hero_Academia%20Tobira%20Tomoko_Shiretoko%20Wild_Wild_Pussycats.jpg",
-    "s": "https://chan.sankakucomplex.com/post/show/20430486",
+    "i": "[n]deb.png",
+    "in": "https://pbs.twimg.com/media/DganCWSX0AAhkqu.jpg",
+    "s": "https://i.kym-cdn.com/photos/images/original/001/337/930/deb.png",
     "w": "My Hero Academia",
     "b": [
       "F",
-      "C"
+      "C",
+      "sc",
+      "di",
+      "tc",
+      "sp"
     ],
     "d": "Pro Heroes"
   },
@@ -101805,7 +101927,11 @@
     "w": "My Hero Academia",
     "b": [
       "F",
-      "C"
+      "C",
+      "sc",
+      "tc",
+      "sp",
+      "cm"
     ],
     "d": "Pro Heroes"
   },
@@ -101819,7 +101945,11 @@
     "w": "My Hero Academia",
     "b": [
       "F",
-      "C"
+      "C",
+      "sp",
+      "sr",
+      "sa",
+      "cm"
     ],
     "d": "Pro Heroes"
   },
@@ -101828,12 +101958,15 @@
     "n": "Tsuchikwa Ryuko/Pixie-Bob",
     "t": 5,
     "i": "sample_d9c3a7c0886df36cd0e43fa5672536e0.jpg",
-    "in": "https://lotus.paheal.net/_images/f3bcc82a2b53568ccb87d3315ffbd999/3419037%20-%20DevilMary%20My_Hero_Academia%20Ryuko_Tsuchikawa%20Wild_Wild_Pussycats.jpg",
+    "in": "",
     "s": "https://chan.sankakucomplex.com/post/show/20925207",
     "w": "My Hero Academia",
     "b": [
       "F",
-      "C"
+      "C",
+      "tc",
+      "sp",
+      "cm"
     ],
     "d": "Pro Heroes"
   },
@@ -101842,15 +101975,17 @@
     "n": "Usagiyama Rumi/Mirko",
     "t": 5,
     "i": "sample_78b7a32662cb8f6b90d43ea44c708cdc.jpg",
-    "in": "https://bleachbooru.org/data/sample/09/43/0943b3e57a1939c0ec8f948845ff8e77.jpg",
+    "in": "https://sexpornpictures.com/gallery/mirko-LdBahtzzlg/mirko.webp",
     "s": "https://chan.sankakucomplex.com/post/show/20986588",
     "w": "My Hero Academia",
     "b": [
       "F",
       "C",
+      "cl",
       "dh",
       "sp",
-      "az"
+      "az",
+      "cm"
     ],
     "d": "Pro Heroes"
   },
@@ -101858,28 +101993,34 @@
     "u": 6571,
     "n": "Shimura Nana",
     "t": 6,
-    "i": "https://i.imgur.com/flRezY4l.png",
-    "s": "https://safebooru.org/index.php?page=post&s=view&id=2992389",
+    "i": "[n]gustavo-garcia-10.jpg",
+    "s": "https://cdnb.artstation.com/p/assets/covers/images/018/412/843/large/gustavo-garcia-10.jpg",
     "w": "My Hero Academia",
     "b": [
       "F",
       "C",
-      "sp"
+      "cl",
+      "tc",
+      "sp",
+      "cm"
     ],
     "d": "Pro Heroes",
-    "in": "https://cdn.donmai.us/sample/28/ba/__shimura_nana_boku_no_hero_academia_drawn_by_suoiresnu__sample-28baafc8178fdd0cdf5e4377bf528d0a.jpg"
+    "in": "https://sexpornpictures.com/gallery/nana-shimuras-beautiful-body-LVCaiF7F7o/nana-shimuras-beautiful-body.webp"
   },
   {
     "u": 6572,
     "n": "Ashido Mina/Pinky",
     "t": 4,
-    "i": "7313bdf62380a958c9ef1cdb4f2d2b01.jpg",
+    "i": "[n]ea0c5ab3bf89797ebba75a937f2f8780.jpg",
     "in": "https://i.imgur.com/ykv5SEi.jpg",
-    "s": "https://chan.sankakucomplex.com/post/show/7335710",
+    "s": "https://i.pinimg.com/550x/ea/0c/5a/ea0c5ab3bf89797ebba75a937f2f8780.jpg",
     "w": "My Hero Academia",
     "b": [
       "F",
-      "C"
+      "C",
+      "sc",
+      "sd",
+      "sp"
     ],
     "d": "UA 1-A"
   },
@@ -101888,12 +102029,17 @@
     "n": "Asui Tsuyu/Froppy",
     "t": 4,
     "i": "sample_29f0e5342e2f0462b503cf0278550cfa.jpg",
-    "in": "https://cdn.donmai.us/original/f8/12/__asui_tsuyu_boku_no_hero_academia_drawn_by_rtil__f8129f5ff9468250fb983d0cc77423ab.png",
+    "in": "",
     "s": "https://chan.sankakucomplex.com/post/show/7617180",
     "w": "My Hero Academia",
     "b": [
       "F",
-      "C"
+      "C",
+      "sc",
+      "dh",
+      "sd",
+      "sp",
+      "cm"
     ],
     "d": "UA 1-A"
   },
@@ -101907,7 +102053,9 @@
     "w": "My Hero Academia",
     "b": [
       "F",
-      "C"
+      "C",
+      "sd",
+      "cm"
     ],
     "d": "UA 1-A"
   },
@@ -101916,12 +102064,15 @@
     "n": "Jiro Kyouka/Earphone Jack",
     "t": 4,
     "i": "shi__sample_4a79824d38e43ddb50e2e88cf8af6884.jpg",
-    "in": "https://i.redd.it/2cvf7gh2b7181.jpg",
+    "in": "https://www.sexypornpictures.org/gallery-2/kyoka-jiro-melowh-my-hero-academia-PcLuT1IzL4/kyoka-jiro-melowh-my-hero-academia.webp",
     "s": "https://danbooru.donmai.us/posts/3142543",
     "w": "My Hero Academia",
     "b": [
       "F",
-      "C"
+      "C",
+      "sc",
+      "sd",
+      "cm"
     ],
     "d": "UA 1-A"
   },
@@ -101930,14 +102081,17 @@
     "n": "Uraraka Ochako/Uravity",
     "t": 4,
     "i": "sample_87c2fc6e520bdee89e78314e7964ef10.jpg",
-    "in": "https://holly.paheal.net/_images/0686981b3b90f16c6fbae03cfab5a0a0/4059362%20-%20Izuku_Midoriya%20My_Hero_Academia%20Ochaco_Uraraka%20suoiresnu.png",
+    "in": "https://cdn3.nude-pics.org/ochako-uraraka-ahnei-my-hero-academia-n6ZAF44J5E/ochako-uraraka-ahnei-my-hero-academia.webp",
     "s": "https://chan.sankakucomplex.com/post/show/7518333",
     "w": "My Hero Academia",
     "b": [
       "F",
       "C",
+      "cl",
       "sd",
-      "sp"
+      "sp",
+      "sa",
+      "cm"
     ],
     "d": "UA 1-A"
   },
@@ -101946,12 +102100,16 @@
     "n": "Yaoyorozu Momo/Creati",
     "t": 4,
     "i": "sample_715c0c3e716d5db40e599bc081f91aa3.jpg",
-    "in": "https://tulip.paheal.net/_images/fa54fbf2b39126b75c4d727c8a5d21d0/3346023%20-%20Mark_Gavatino%20Momo_Yaoyorozu%20My_Hero_Academia.jpg",
+    "in": "https://cdn3.nude-pics.org/momo-yaoyorozu-kairunoburogu-zsfVXgFabR/momo-yaoyorozu-kairunoburogu.webp",
     "s": "https://chan.sankakucomplex.com/post/show/11281162",
     "w": "My Hero Academia",
     "b": [
       "F",
-      "C"
+      "C",
+      "sd",
+      "cc",
+      "sa",
+      "cm"
     ],
     "d": "UA 1-A"
   },
@@ -101964,9 +102122,15 @@
     "w": "My Hero Academia",
     "b": [
       "F",
-      "C"
+      "C",
+      "cl",
+      "sc",
+      "sd",
+      "sa",
+      "cm"
     ],
-    "d": "UA 1-B"
+    "d": "UA 1-B",
+    "in": "https://static11.hentai-img.com/upload/20201117/676/691761/10.jpg"
   },
   {
     "u": 6579,
@@ -101977,9 +102141,12 @@
     "w": "My Hero Academia",
     "b": [
       "F",
-      "C"
+      "C",
+      "sd",
+      "cm"
     ],
-    "d": "UA 1-B"
+    "d": "UA 1-B",
+    "in": "https://cdn6.redxxx.cc/picture/original/nUE0pUZ6Yl9cYaWyMTDhnKDiBGHkZGu6LKAlMGH1ZF5dpTpcXltbHzIxJSuLYzAwXI85AGRkBUcup3WyAGHkYzcjMj3p9W/(RedXXX.cc)_kodai-yui-my-hero-academia-shpo-preview.jpg"
   },
   {
     "u": 6580,
@@ -101991,7 +102158,9 @@
     "w": "My Hero Academia",
     "b": [
       "F",
-      "C"
+      "C",
+      "sd",
+      "cm"
     ],
     "d": "UA 1-B"
   },
@@ -102000,12 +102169,15 @@
     "n": "Shiozaki Ibara/Vine",
     "t": 4,
     "i": "sample_ce7e58574c2ff23fcb85c955ea9673c3.jpg",
-    "in": "https://lotus.paheal.net/_images/e5644b75f3245ad2951c70379f01a842/4357888%20-%20Ibara_Shiozaki%20My_Hero_Academia%20Nomu%20Tsuyu_Asui%20saltydanshark.png",
+    "in": "https://sexpornpictures.com/gallery/ibara-shiozaki-every-rose-has-thornes-easonx-my-4vhWzohlTk/ibara-shiozaki-every-rose-has-thornes-easonx-my.webp",
     "s": "https://chan.sankakucomplex.com/post/show/4600530",
     "w": "My Hero Academia",
     "b": [
       "F",
-      "C"
+      "C",
+      "cl",
+      "sd",
+      "cm"
     ],
     "d": "UA 1-B"
   },
@@ -102019,7 +102191,10 @@
     "w": "My Hero Academia",
     "b": [
       "F",
-      "C"
+      "C",
+      "sd",
+      "sr",
+      "cm"
     ],
     "d": "UA 1-B"
   },
@@ -102028,12 +102203,15 @@
     "n": "Tsunotori Pony",
     "t": 4,
     "i": "21b6c40c3e90935458229c8f20b1e95b.jpg",
-    "in": "https://lotus.paheal.net/_images/549f48defc186ce45e2179e19a85b4a4/2960917%20-%20My_Hero_Academia%20Pony_Tsunotori%20shpo.png",
+    "in": "https://cdn3.nude-pics.org/tsunotori-pony-all-tied-up-suoirensu-my-hero-qK42tCKnzn/tsunotori-pony-all-tied-up-suoirensu-my-hero.webp",
     "s": "https://chan.sankakucomplex.com/post/show/6104235",
     "w": "My Hero Academia",
     "b": [
       "F",
-      "C"
+      "C",
+      "dh",
+      "sd",
+      "cm"
     ],
     "d": "UA 1-B"
   },
@@ -102047,7 +102225,9 @@
     "w": "My Hero Academia",
     "b": [
       "F",
-      "C"
+      "C",
+      "sd",
+      "cm"
     ],
     "d": "UA 1-B"
   },
@@ -102060,7 +102240,9 @@
     "w": "My Hero Academia",
     "b": [
       "F",
-      "C"
+      "C",
+      "sd",
+      "cm"
     ],
     "d": "UA Other"
   },
@@ -102074,7 +102256,9 @@
     "b": [
       "F",
       "C",
-      "en"
+      "en",
+      "sd",
+      "cc"
     ],
     "d": "UA Other",
     "in": "https://pictures.hentai-foundry.com/p/Polyle/466605/Polyle-466605-Commission_-_Hatsume_Mei.png"
@@ -102112,12 +102296,13 @@
     "u": 6589,
     "n": "Tsukauchi Makoto",
     "t": 2,
-    "i": "makoto_tsukauchi_full_body.png",
-    "s": "https://static.wikia.nocookie.net/bokunoheroacademia/images/d/d8/Makoto_Tsukauchi_Full_Body.png",
+    "i": "[n]9617bc1feee05cad48877bbf19cd6f91.png",
+    "s": "https://i.pinimg.com/originals/96/17/bc/9617bc1feee05cad48877bbf19cd6f91.png",
     "w": "My Hero Academia",
     "b": [
       "F",
-      "C"
+      "C",
+      "sd"
     ],
     "d": "Vigilantes-only"
   },
@@ -102157,7 +102342,9 @@
     "w": "My Hero Academia",
     "b": [
       "F",
-      "C"
+      "C",
+      "vn",
+      "cm"
     ],
     "d": "Villains"
   },
@@ -102166,12 +102353,13 @@
     "n": "Aiba Manami/La Brava",
     "t": 4,
     "i": "aws__sample_793517f5e4f2df60dffb8844fdded8c6.jpg",
-    "in": "https://peach.paheal.net/_images/f63e0c858ea2d7c008e72a3863ed18fd/4302946%20-%20Manami_Aiba%20My_Hero_Academia.jpg",
+    "in": "https://cdn3.nude-pics.org/la-brava-is-ready-to-bring-more-views-lycoris-lQRdgVg9RS/la-brava-is-ready-to-bring-more-views-lycoris.webp",
     "s": "https://danbooru.donmai.us/posts/3852455",
     "w": "My Hero Academia",
     "b": [
       "F",
       "C",
+      "sa",
       "vn",
       "ha"
     ],
@@ -102187,7 +102375,10 @@
     "w": "My Hero Academia",
     "b": [
       "F",
-      "C"
+      "C",
+      "sc",
+      "vn",
+      "cm"
     ],
     "d": "Villains"
   },
@@ -102196,7 +102387,7 @@
     "n": "Toga Himiko",
     "t": 4,
     "i": "sample_7ddc053766ddb5b241162eb89d52fe1e.jpg",
-    "in": "https://cdn.donmai.us/sample/8a/19/__uraraka_ochako_toga_himiko_and_noumu_boku_no_hero_academia_drawn_by_shioboi__sample-8a192b2cfef9f375ae3a476536857623.jpg",
+    "in": "",
     "s": "https://chan.sankakucomplex.com/post/show/12779446",
     "w": "My Hero Academia",
     "b": [
@@ -102205,7 +102396,8 @@
       "sc",
       "sr",
       "vn",
-      "is"
+      "is",
+      "cm"
     ],
     "d": "Villains"
   },
@@ -102218,7 +102410,9 @@
     "w": "My Hero Academia",
     "b": [
       "F",
-      "C"
+      "C",
+      "vn",
+      "cm"
     ],
     "d": "Villains"
   },
@@ -102375,7 +102569,8 @@
     "s": "https://derpicdn.net/img/2018/7/29/1792661/large.png",
     "w": "My Little Pony",
     "b": [
-      "F"
+      "F",
+      "ar"
     ]
   },
   {
@@ -106025,7 +106220,9 @@
     "s": "https://www.deviantart.com/nillratn/art/Fate-Nikola-Tesla-genderbend-582707000",
     "w": "Nasuverse",
     "b": [
-      "M"
+      "M",
+      "en",
+      "sn"
     ],
     "d": "Servants – Archer"
   },
@@ -109795,7 +109992,8 @@
     "b": [
       "F",
       "ml",
-      "pi"
+      "pi",
+      "cb"
     ]
   },
   {
@@ -109807,7 +110005,12 @@
     "w": "Outlaw Star",
     "b": [
       "F",
-      "C"
+      "C",
+      "st",
+      "ct",
+      "sr",
+      "al",
+      "cm"
     ]
   },
   {
@@ -110320,14 +110523,15 @@
     "u": 8978,
     "n": "Ashe",
     "t": 4,
-    "i": "cb6b4a4b04b675e2e8b3eabfd8c8d4a1.jpg",
-    "s": "https://chan.sankakucomplex.com/post/show/7790185",
+    "i": "https://i.imgur.com/y4IBqBXl.jpg",
+    "s": "https://i.imgur.com/y4IBqBX.jpg",
     "w": "Overwatch",
     "b": [
       "F",
-      "C"
+      "C",
+      "cm"
     ],
-    "in": "https://pictures.hentai-foundry.com/a/AdooHay/666719/AdooHay-666719-Ashe_Overwatch.jpg"
+    "in": "https://i.imgur.com/k8dDj2f.jpg"
   },
   {
     "u": 8979,
@@ -110338,7 +110542,9 @@
     "w": "Overwatch",
     "b": [
       "F",
-      "C"
+      "C",
+      "en",
+      "cc"
     ],
     "in": "https://pictures.hentai-foundry.com/a/Afrobull/578244/Afrobull-578244-Brigitte.jpg"
   },
@@ -110377,7 +110583,14 @@
     "w": "Overwatch",
     "b": [
       "F",
-      "C"
+      "C",
+      "dc",
+      "hl",
+      "cr",
+      "rs",
+      "ev",
+      "gn",
+      "cc"
     ],
     "in": "http://pictures.hentai-foundry.com/t/Toxxy/553650/Toxxy-553650-More_Moira.png"
   },
@@ -110398,14 +110611,16 @@
     "u": 8984,
     "n": "Sombra",
     "t": 4,
-    "i": "sample_2fcc10cab0186f12dd90aa76c06a65b8.jpg",
-    "s": "https://chan.sankakucomplex.com/post/show/14970805",
+    "i": "https://i.imgur.com/dn8KcCIl.jpg",
+    "s": "https://i.imgur.com/dn8KcCI.jpg",
     "w": "Overwatch",
     "b": [
       "F",
-      "C"
+      "C",
+      "cm",
+      "ha"
     ],
-    "in": "http://pictures.hentai-foundry.com/a/albasnipple/792200/albasnipple-792200-Sombra.jpg"
+    "in": "https://i.imgur.com/3xGSACs.jpg"
   },
   {
     "u": 8985,
@@ -110416,7 +110631,9 @@
     "w": "Overwatch",
     "b": [
       "F",
-      "C"
+      "C",
+      "en",
+      "cc"
     ],
     "in": "https://pictures.hentai-foundry.com/m/mavezar/486973/mavezar-486973-Symmetra.jpg"
   },
@@ -110437,14 +110654,15 @@
     "u": 8987,
     "n": "Widowmaker",
     "t": 4,
-    "i": "0e574bfc11fad2d4ffa4741b96ccd81c.jpg",
-    "s": "https://chan.sankakucomplex.com/post/show/6607213",
+    "i": "https://i.imgur.com/Ugi5ZdIl.jpg",
+    "s": "https://i.imgur.com/Ugi5ZdI.jpg",
     "w": "Overwatch",
     "b": [
       "F",
-      "C"
+      "C",
+      "cm"
     ],
-    "in": "https://pictures.hentai-foundry.com/a/aromasensei/538064/aromasensei-538064-Widowmaker.jpg"
+    "in": "https://i.imgur.com/olaGQl1.jpg"
   },
   {
     "u": 8988,
@@ -110477,16 +110695,17 @@
     "u": 8990,
     "n": "Mercy",
     "t": 5,
-    "i": "sample_1bd9555243d254594d8d445ade5a8226.jpg",
-    "s": "https://chan.sankakucomplex.com/post/show/7583795",
+    "i": "https://i.imgur.com/meamVdFl.jpg",
+    "s": "https://i.imgur.com/meamVdF.jpg",
     "w": "Overwatch",
     "b": [
       "F",
       "C",
       "dc",
-      "hl"
+      "hl",
+      "cm"
     ],
-    "in": "https://pictures.hentai-foundry.com/s/sabudenego/767334/sabudenego-767334-Mercy_Overwatch_2.jpg"
+    "in": "https://i.imgur.com/Ey2vCYj.jpg"
   },
   {
     "u": 12584,
@@ -111648,7 +111867,7 @@
   {
     "u": 721,
     "n": "Yuuki Makoto",
-    "t": 5,
+    "t": 7,
     "i": "sample_7f7c8aa9c725733c7ccdab45b7af165d.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/782983",
     "w": "Shin Megami Tensei",
@@ -111684,7 +111903,7 @@
   {
     "u": 724,
     "n": "Narukami Yu",
-    "t": 6,
+    "t": 7,
     "i": "sample_9e2ce78531864e3c9800693b3cdd5c32.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/10845694",
     "w": "Shin Megami Tensei",
@@ -111732,7 +111951,7 @@
   {
     "u": 728,
     "n": "Amamiya Ren",
-    "t": 6,
+    "t": 7,
     "i": "a83abdc15f38a9732f5f52db2f11d8d8.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/6381272",
     "w": "Shin Megami Tensei",
@@ -118807,11 +119026,12 @@
     "u": 13170,
     "n": "Purrloin",
     "t": 4,
-    "i": "",
+    "i": "https://i.imgur.com/3qua3jrl.jpg",
     "w": "Pokemon Expansion",
     "b": [
       "mr"
-    ]
+    ],
+    "s": "https://i.imgur.com/3qua3jr.jpg"
   },
   {
     "u": 13171,
@@ -118937,11 +119157,12 @@
     "u": 13183,
     "n": "Blitzle",
     "t": 4,
-    "i": "",
+    "i": "https://i.imgur.com/su5jrrgl.png",
     "w": "Pokemon Expansion",
     "b": [
       "mr"
-    ]
+    ],
+    "s": "https://i.imgur.com/su5jrrg.png"
   },
   {
     "u": 13184,
@@ -119443,11 +119664,12 @@
     "u": 13233,
     "n": "Minccino",
     "t": 4,
-    "i": "",
+    "i": "https://i.imgur.com/EAz5oXzl.png",
     "w": "Pokemon Expansion",
     "b": [
       "mr"
-    ]
+    ],
+    "s": "https://i.imgur.com/EAz5oXz.png"
   },
   {
     "u": 13234,
@@ -123585,13 +123807,14 @@
     "u": 7296,
     "n": "Kaya",
     "t": 4,
-    "i": "",
+    "i": "https://i.imgur.com/2g01Sw5l.png",
     "w": "Princess Connect! Re:Dive",
     "b": [
       "F",
       "C"
     ],
-    "d": "Dragon's Nest"
+    "d": "Dragon's Nest",
+    "s": "https://i.imgur.com/2g01Sw5.png"
   },
   {
     "u": 7297,
@@ -123610,25 +123833,27 @@
     "u": 7298,
     "n": "Mahiru",
     "t": 4,
-    "i": "",
+    "i": "https://i.imgur.com/jpbIn8sl.png",
     "w": "Princess Connect! Re:Dive",
     "b": [
       "F",
       "C"
     ],
-    "d": "Elizabeth Park"
+    "d": "Elizabeth Park",
+    "s": "https://i.imgur.com/jpbIn8s.png"
   },
   {
     "u": 7299,
     "n": "Rin",
     "t": 4,
-    "i": "",
+    "i": "https://i.imgur.com/iMw6pbrl.png",
     "w": "Princess Connect! Re:Dive",
     "b": [
       "F",
       "C"
     ],
-    "d": "Elizabeth Park"
+    "d": "Elizabeth Park",
+    "s": "https://i.imgur.com/iMw6pbr.png"
   },
   {
     "u": 7300,
@@ -123711,13 +123936,14 @@
     "u": 7306,
     "n": "Chloe",
     "t": 5,
-    "i": "",
+    "i": "https://i.imgur.com/vpWHoS8l.png",
     "w": "Princess Connect! Re:Dive",
     "b": [
       "F",
       "C"
     ],
-    "d": "Friendship Club"
+    "d": "Friendship Club",
+    "s": "https://i.imgur.com/vpWHoS8.png"
   },
   {
     "u": 7307,
@@ -123848,7 +124074,8 @@
       "F",
       "C"
     ],
-    "d": "Little Lyrical"
+    "d": "Little Lyrical",
+    "in": "https://i.imgur.com/f2ACR6ml.png"
   },
   {
     "u": 7316,
@@ -123880,37 +124107,41 @@
     "u": 7318,
     "n": "Io",
     "t": 4,
-    "i": "",
+    "i": "https://i.imgur.com/xoAPteKl.png",
     "w": "Princess Connect! Re:Dive",
     "b": [
       "F",
       "C"
     ],
-    "d": "Lucent Academy"
+    "d": "Lucent Academy",
+    "s": "https://i.imgur.com/xoAPteK.png"
   },
   {
     "u": 7319,
     "n": "Misaki",
     "t": 4,
-    "i": "",
+    "i": "https://i.imgur.com/ydVtYWol.png",
     "w": "Princess Connect! Re:Dive",
     "b": [
       "F",
       "C"
     ],
-    "d": "Lucent Academy"
+    "d": "Lucent Academy",
+    "s": "https://i.imgur.com/ydVtYWo.png",
+    "in": "https://i.imgur.com/NcFCXcg.png"
   },
   {
     "u": 7320,
     "n": "Suzuna",
     "t": 4,
-    "i": "",
+    "i": "https://i.imgur.com/0bLTEeAl.png",
     "w": "Princess Connect! Re:Dive",
     "b": [
       "F",
       "C"
     ],
-    "d": "Lucent Academy"
+    "d": "Lucent Academy",
+    "s": "https://i.imgur.com/0bLTEeA.png"
   },
   {
     "u": 7321,
@@ -124051,13 +124282,14 @@
     "u": 7331,
     "n": "Ayane",
     "t": 3,
-    "i": "",
+    "i": "https://i.imgur.com/WM4tuayl.png",
     "w": "Princess Connect! Re:Dive",
     "b": [
       "F",
       "C"
     ],
-    "d": "Sarendia"
+    "d": "Sarendia",
+    "s": "https://i.imgur.com/WM4tuay.png"
   },
   {
     "u": 7332,
@@ -124129,13 +124361,14 @@
     "u": 7337,
     "n": "Ruka",
     "t": 5,
-    "i": "",
+    "i": "https://i.imgur.com/ephP1Xol.png",
     "w": "Princess Connect! Re:Dive",
     "b": [
       "F",
       "C"
     ],
-    "d": "Twilight Caravan"
+    "d": "Twilight Caravan",
+    "s": "https://i.imgur.com/ephP1Xo.png"
   },
   {
     "u": 7338,
@@ -124184,13 +124417,14 @@
     "u": 7341,
     "n": "Ayumi",
     "t": 2,
-    "i": "",
+    "i": "https://i.imgur.com/FDFI7B3l.png",
     "w": "Princess Connect! Re:Dive",
     "b": [
       "F",
       "C"
     ],
-    "d": "Weiß Flügel Landsol..."
+    "d": "Weiß Flügel Landsol...",
+    "s": "https://i.imgur.com/FDFI7B3.png"
   },
   {
     "u": 7342,
@@ -124222,13 +124456,14 @@
     "u": 7344,
     "n": "Monika Weisswind",
     "t": 5,
-    "i": "",
+    "i": "https://i.imgur.com/XCDXMFBl.png",
     "w": "Princess Connect! Re:Dive",
     "b": [
       "F",
       "C"
     ],
-    "d": "Weiß Flügel Landsol..."
+    "d": "Weiß Flügel Landsol...",
+    "s": "https://i.imgur.com/XCDXMFB.png"
   },
   {
     "u": 7345,
@@ -126056,7 +126291,8 @@
     "b": [
       "F",
       "C",
-      "dh"
+      "dh",
+      "md"
     ]
   },
   {
@@ -126109,8 +126345,9 @@
       "F",
       "C",
       "P",
-      "tw",
-      "mi"
+      "md",
+      "mi",
+      "tw"
     ]
   },
   {
@@ -126123,7 +126360,11 @@
     "b": [
       "F",
       "C",
-      "rg"
+      "ev",
+      "vn",
+      "rg",
+      "is",
+      "cm"
     ]
   },
   {
@@ -126189,6 +126430,8 @@
     "b": [
       "F",
       "C",
+      "id",
+      "rs",
       "wh"
     ]
   },
@@ -130184,7 +130427,7 @@
   },
   {
     "u": 3600,
-    "n": "Kim Pines",
+    "n": "Kim Pine",
     "t": 2,
     "i": "dcn5xdh_592da319_34b7_4edf_927e_d0d6898f922a.jpg",
     "s": "dcn5xdh_592da319_34b7_4edf_927e_d0d6898f922a.jpg",
@@ -130213,8 +130456,8 @@
     "u": 3602,
     "n": "Ramona Flowers",
     "t": 5,
-    "i": "d375ukx_8df47361_33fd_4056_84b3_18e85a0f0fda.jpg",
-    "s": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/32e28962-90d7-449a-bc24-50ef0aaa3f88/d375ukx-8df47361-33fd-4056-84b3-18e85a0f0fda.jpg/v1/fill/w_1024,h_794,q_75,strp/ramona_flowers_by_roy_flowers_d375ukx-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9Nzk0IiwicGF0aCI6IlwvZlwvMzJlMjg5NjItOTBkNy00NDlhLWJjMjQtNTBlZjBhYWEzZjg4XC9kMzc1dWt4LThkZjQ3MzYxLTMzZmQtNDA1Ni04NGIzLTE4ZTg1YTBmMGZkYS5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.WWWJhVGpQTjUITlUGDrOPB1sedXW4FAGWx0kgmmcbKg",
+    "i": "[n]FQpTgaGUYAQVxOR.jpg",
+    "s": "https://pbs.twimg.com/media/FQpTgaGUYAQVxOR.jpg",
     "w": "Scott Pilgrim",
     "b": [
       "F",
@@ -132123,6 +132366,7 @@
     "b": [
       "F",
       "C",
+      "dr",
       "gd",
       "tw"
     ]
@@ -132299,6 +132543,7 @@
     "b": [
       "F",
       "C",
+      "dr",
       "id",
       "gd",
       "tw"
@@ -142197,17 +142442,6 @@
     "in": "https://pictures.hentai-foundry.com/c/Creamcadet/915292/Creamcadet-915292-Haruhi_Suzumiya.jpg"
   },
   {
-    "u": 4806,
-    "n": "Lt. Felina Feral",
-    "t": 2,
-    "i": "dmwxjohv4aalksb.jpg",
-    "s": "https://pbs.twimg.com/media/DmwxJohV4AAlKSB.jpg",
-    "w": "Swat Kats",
-    "b": [
-      "F"
-    ]
-  },
-  {
     "u": 4807,
     "n": "Ann Gora",
     "t": 1,
@@ -144396,7 +144630,9 @@
     "s": "https://vignette.wikia.nocookie.net/dragonprince/images/b/b8/AnnikaNeha.png/revision/latest?cb=20190217221139",
     "w": "The Dragon Prince",
     "b": [
-      "F"
+      "F",
+      "rl",
+      "mi"
     ]
   },
   {
@@ -144407,7 +144643,9 @@
     "s": "https://rule34.paheal.net/post/view/3437323#search=the_dragon_prince",
     "w": "The Dragon Prince",
     "b": [
-      "F"
+      "F",
+      "wh",
+      "me"
     ]
   },
   {
@@ -144451,7 +144689,8 @@
     "s": "https://vignette.wikia.nocookie.net/dragonprince/images/a/a6/Lujanne_Smiling.png/revision/latest?cb=20190219023758",
     "w": "The Dragon Prince",
     "b": [
-      "F"
+      "F",
+      "me"
     ]
   },
   {
@@ -144551,7 +144790,9 @@
     "s": "https://vignette.wikia.nocookie.net/dragonprince/images/c/c9/Screenshot_11.png/revision/latest?cb=20191125075503",
     "w": "The Dragon Prince",
     "b": [
-      "F"
+      "F",
+      "dg",
+      "rl"
     ]
   },
   {
@@ -144730,16 +144971,6 @@
     "u": 10500,
     "n": "Saturn",
     "t": 6,
-    "i": "",
-    "w": "The God Of HighSchool",
-    "b": [
-      "F"
-    ]
-  },
-  {
-    "u": 10501,
-    "n": "Uma",
-    "t": 8,
     "i": "",
     "w": "The God Of HighSchool",
     "b": [
@@ -156162,7 +156393,14 @@
     "s": "https://chan.sankakucomplex.com/post/show/6260756",
     "w": "Voltron",
     "b": [
-      "F"
+      "F",
+      "hr",
+      "mt",
+      "cl",
+      "mp",
+      "sc",
+      "pc",
+      "sr"
     ],
     "in": "https://cdn.donmai.us/original/3c/9f/__princess_allura_voltron_legendary_defender_and_1_more_drawn_by_lightsource__3c9fedc71b3769a68418510574decd9d.png"
   },
@@ -156174,7 +156412,10 @@
     "s": "https://chan.sankakucomplex.com/post/show/5546356",
     "w": "Voltron",
     "b": [
-      "F"
+      "F",
+      "en",
+      "nd",
+      "ha"
     ]
   },
   {
@@ -156392,7 +156633,11 @@
     "w": "W.I.T.C.H.",
     "b": [
       "F",
-      "wh"
+      "cl",
+      "sd",
+      "wh",
+      "mm",
+      "sa"
     ],
     "in": "https://peach.paheal.net/_images/96e03f6fd5ea472b41e5002f25f3b785/1854864%20-%20Psudonym%20W.I.T.C.H.%20Will_Vandom.jpg"
   },
@@ -156405,7 +156650,9 @@
     "w": "W.I.T.C.H.",
     "b": [
       "F",
-      "wh"
+      "sd",
+      "wh",
+      "mm"
     ],
     "in": "https://tulip.paheal.net/_images/a2476dfdcffde9473e5ef06318ab2224/2907541%20-%20Christmas%20Irma_Lair%20New_Year%20Somka108%20W.I.T.C.H..jpg"
   },
@@ -156418,7 +156665,9 @@
     "w": "W.I.T.C.H.",
     "b": [
       "F",
-      "wh"
+      "sd",
+      "wh",
+      "mm"
     ],
     "in": "https://lotus.paheal.net/_images/bd78ba6b1d5bd5bf6a176674105fb495/2867561%20-%20Somka108%20Taranee_Cook%20W.I.T.C.H..png"
   },
@@ -156431,7 +156680,10 @@
     "w": "W.I.T.C.H.",
     "b": [
       "F",
-      "wh"
+      "cl",
+      "sd",
+      "wh",
+      "mm"
     ],
     "in": "https://peach.paheal.net/_images/94092269b2967d262d5e49c3cd310cc7/4661725%20-%20Cornelia_Hale%20Somka108%20W.I.T.C.H..png"
   },
@@ -156444,7 +156696,10 @@
     "w": "W.I.T.C.H.",
     "b": [
       "F",
-      "wh"
+      "sd",
+      "wh",
+      "mm",
+      "ar"
     ],
     "in": "https://tulip.paheal.net/_images/e5bc4a8df160928ab13704f61b7964c7/3225455%20-%20AldhaRoku%20Hay_Lin%20W.I.T.C.H..png"
   },
@@ -156468,7 +156723,10 @@
     "w": "W.I.T.C.H.",
     "b": [
       "F",
-      "pc"
+      "sd",
+      "me",
+      "pc",
+      "rl"
     ],
     "in": "https://lotus.paheal.net/_images/c93ab25ea10c543d60ba2ba91f07351d/2342091%20-%20Elyon_Brown%20Somka108%20W.I.T.C.H..png"
   },

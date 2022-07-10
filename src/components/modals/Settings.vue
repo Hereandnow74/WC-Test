@@ -4,10 +4,48 @@
       <h3 class="text-lg text-lime-700 dark:text-lime-400 font-semibold">
         Layout
       </h3>
-      <div>
+      <div class="flex flex-col gap-1">
         <div class="flex justify-between">
           <div>Number of columns for perks</div>
           <Select v-model="settings.columns" :options="['auto', 1, 2, 3, 4, 5]" />
+        </div>
+        <div class="flex justify-between">
+          <div class="flex gap-1">
+            <div>Text Aligment: </div>
+            <div
+              class="flex items-center bg-gray-200 dark:bg-gray-700 px-1 rounded cursor-pointer"
+              :class="{'border border-green-500': settings.textAlign === 'text-left'}"
+              title="Left Alignment"
+              @click="settings.textAlign = 'text-left'"
+            >
+              <clarity:align-left-text-line class="inline-block rounded" />
+            </div>
+            <div
+              class="flex items-center bg-gray-200 dark:bg-gray-700 px-1 rounded cursor-pointer"
+              :class="{'border border-green-500': settings.textAlign === 'text-center'}"
+              title="Center Alignment"
+              @click="settings.textAlign = 'text-center'"
+            >
+              <clarity:center-text-line class="inline-block rounded" />
+            </div>
+            <div
+              class="flex items-center bg-gray-200 dark:bg-gray-700 px-1 rounded cursor-pointer"
+              :class="{'border border-green-500': settings.textAlign === 'text-right'}"
+              title="Right Alignment"
+              @click="settings.textAlign = 'text-right'"
+            >
+              <clarity:align-right-text-line class="inline-block rounded" />
+            </div>
+            <div
+              class="flex items-center bg-gray-200 dark:bg-gray-700 px-1 rounded cursor-pointer"
+              :class="{'border border-green-500': settings.textAlign === 'text-justify'}"
+              title="Even Alignment"
+              @click="settings.textAlign = 'text-justify'"
+            >
+              <clarity:justify-text-line class="inline-block rounded" />
+            </div>
+          </div>
+          <NumberInput v-model.number="settings.fontSize" :min="0" class="whitespace-nowrap" label="Font Size (0 is default)" />
         </div>
       </div>
       <h3 class="text-lg text-lime-700 dark:text-lime-400 font-semibold">

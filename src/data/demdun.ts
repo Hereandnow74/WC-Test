@@ -175,7 +175,7 @@ demiplane.push({
   uid: '9ZpfV',
   title: 'Demiplane',
   category: 'Home',
-  image: '',
+  image: 'https://cdn.discordapp.com/attachments/925963686433132644/993458569896788018/f85a7cbc479c4c9668633adfa595007d.jpg',
   cost: 15,
   whitelist: ['Sweet Home'],
   desc: `
@@ -192,7 +192,7 @@ demiplane.push({
   uid: 'fUz2p',
   title: 'Persistent Corruption',
   category: 'Home',
-  image: '',
+  image: 'https://cdn.discordapp.com/attachments/925963686433132644/993459403007205396/thumb-1920-707113.jpg',
   cost: 10,
   whitelist: ['Demiplane', 'Dungeon'],
   needed: 1,
@@ -205,7 +205,7 @@ demiplane.push({
   uid: 'df2Ac',
   title: 'Rewards and Lobbying',
   category: 'Home',
-  image: '',
+  image: 'https://cdn.discordapp.com/attachments/925963686433132644/993459760642916372/Screenshot_4.jpg',
   cost: 50,
   whitelist: ['Demiplane'],
   desc: `
@@ -218,7 +218,7 @@ demiplane.push({
   uid: '9Mbit',
   title: 'Laws of Man',
   category: 'Home',
-  image: '',
+  image: 'https://cdn.discordapp.com/attachments/925963686433132644/993460047067750450/wizard_barristers_benmashi_cecil-02-judge-gavel-magic_circle-sentencing-moustache.jpg',
   cost: 25,
   whitelist: ['Demiplane'],
   desc: `
@@ -234,7 +234,7 @@ demiplane.push({
   uid: '08TGD',
   title: 'Laws of the Jungle',
   category: 'Home',
-  image: '',
+  image: 'https://cdn.discordapp.com/attachments/925963686433132644/993458881030275103/wp9445195.webp',
   cost: 25,
   multiple: true,
   max: 2,
@@ -254,7 +254,7 @@ demiplane.push({
   uid: '7CBFi',
   title: 'Laws of Science',
   category: 'Home',
-  image: '',
+  image: 'https://cdn.discordapp.com/attachments/925963686433132644/993460584739778580/kore-wa-zombie-desu-ka-07-mkv_snapshot_02-18_2011-02-23_01-35-29.jpg',
   cost: 50,
   whitelist: ['Demiplane'],
   desc: `
@@ -268,7 +268,7 @@ demiplane.push({
   uid: 'ZE5qW',
   title: 'Laws of Magic',
   category: 'Home',
-  image: '',
+  image: 'https://cdn.discordapp.com/attachments/925963686433132644/993460760070074458/maxresdefault.jpg',
   cost: 50,
   whitelist: ['Demiplane'],
   desc: `
@@ -282,7 +282,7 @@ demiplane.push({
   uid: 'NEQDt',
   title: 'Laws of Cognition',
   category: 'Home',
-  image: '',
+  image: 'https://cdn.discordapp.com/attachments/925963686433132644/993461105311621140/Popular-Blind-Anime-Characters-2.jpg',
   cost: 50,
   whitelist: ['Demiplane'],
   desc: `
@@ -296,7 +296,7 @@ demiplane.push({
   uid: 'hcBKY',
   title: 'Tax Laws',
   category: 'Home',
-  image: '',
+  image: 'https://cdn.discordapp.com/attachments/925963686433132644/993459122706055239/Naruto-Paperwork-2.png',
   cost: 50,
   whitelist: ['Laws of Man', 'Laws of the Jungle', 'Laws of Science', 'Laws of Magic', 'Laws of Cognition'],
   needed: 1,
@@ -311,7 +311,7 @@ demiplane.push({
   uid: 'cOdVH',
   title: 'Laws of Reality',
   category: 'Home',
-  image: '',
+  image: 'https://cdn.discordapp.com/attachments/925963686433132644/993461334488404098/sutu_explorer_vr_art.jpg',
   cost: 200,
   whitelist: ['Laws of Man', 'Laws of the Jungle', 'Laws of Science', 'Laws of Magic', 'Laws of Cognition'],
   desc: `
@@ -340,7 +340,7 @@ dungeon.push({
   uid: 'g4ekX',
   title: 'Dungeons',
   category: 'Home',
-  image: '',
+  image: 'https://cdn.discordapp.com/attachments/925963686433132644/993461603276165170/The-great-tomb-of-Nazarick.jpg',
   cost: 15,
   whitelist: ['Sweet Home'],
   desc: `
@@ -362,7 +362,7 @@ dungeon.push({
   uid: 'fTj4M',
   title: 'Spawning Room: Breeding Pits',
   category: 'Home',
-  image: '',
+  image: 'https://cdn.discordapp.com/attachments/925963686433132644/993462458268274708/Screenshot_5.jpg',
   cost: 50,
   whitelist: ['Dungeons'],
   desc: `
@@ -376,7 +376,7 @@ dungeon.push({
   uid: 'IiGRZ',
   title: 'Commerce Room: Hotel California',
   category: 'Home',
-  image: '',
+  image: 'https://cdn.discordapp.com/attachments/925963686433132644/993462940877455420/surendra-rajawat-japanese-market-22-12.jpg',
   cost: 20,
   whitelist: ['Dungeons'],
   desc: `
@@ -392,7 +392,7 @@ dungeon.push({
   uid: 'TERdJ',
   title: 'Broadcast Room: Eye of Sauron',
   category: 'Home',
-  image: '',
+  image: 'https://cdn.discordapp.com/attachments/925963686433132644/993463620967075840/lord-of-the-rings-mordor-mount-doom-eye-of-sauron-wallpaper-preview.jpg',
   cost: 25,
   whitelist: ['Dungeons'],
   desc: `
@@ -409,7 +409,7 @@ dungeon.push({
   uid: 'RvTrj',
   title: 'Lure Room: My Precious',
   category: 'Home',
-  image: '',
+  image: 'https://cdn.discordapp.com/attachments/925963686433132644/993464536038396044/ready-player-one-mortal-kombat.webp',
   cost: 25,
   whitelist: ['Dungeons'],
   desc: `

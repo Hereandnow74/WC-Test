@@ -140,6 +140,24 @@ DLCgenericPerks.push({
   `,
 })
 
+DLCgenericPerks.push({
+  uid: 'lfkIs',
+  dlc: 'the_taken',
+  category: 'Generic',
+  title: 'Henshin Impact',
+  image: 'https://cdn.discordapp.com/attachments/925963686433132644/993467031489884201/5558331.webp',
+  requires: 'The companion must be a trained pilot of a vehicle that at its core is a scaled up version of themselves, even if only marginally. This is usually some form of mecha, even mass produced models.',
+  complex: 'target',
+  special: '',
+  cost: 20,
+  desc: `The companion gains the ability to manifest a suit of armour that resembles one of the mecha's they are trained to pilot, with equipment and power output scaled down.
+  <p>Manifesting the armour is often called a transformation sequence. It normally only takes a few seconds, but with practice manifestation time can be shortened, extended as a form of expressive performance, or even only partially completed.</p>
+  <p>Upgrades and adjustments to the armour is possible, but requires the armour to be manifested during the process. The storage space the armour resides in when not deployed is otherwise inaccessible.
+  If you own the vehicle you can quickly train your companion in its use through the Company's Catch-a-Ride Crew Training Program. </p>
+  <p>You can also modify the vehicle itself as normal and those changes will appear on the armour the next time it is manifested.</p>
+  `,
+})
+
 // Misc DLC Perks
 
 export const DLCperks: DLCPerk[] = []
@@ -325,7 +343,7 @@ DLCperks.push({
   dlc: 'Sleepy Fluffball™',
   category: 'Misc Perk',
   title: 'Designer Babies',
-  image: '',
+  image: 'https://cdn.discordapp.com/attachments/925963686433132644/993465150302593175/maxresdefault_1.jpg',
   cost: 8,
   multiple: true,
   max: 3,
@@ -571,7 +589,7 @@ DLClures.push({
   dlc: 'Trismegistus',
   title: 'Red Chains of Fate',
   category: 'Lure',
-  image: '',
+  image: 'https://cdn.discordapp.com/attachments/925963686433132644/992740655958863912/Screenshot_2.jpg',
   cost: 5,
   costVariants: [5, 15],
   desc: `You have a sense for those who would be amenable to binding and the type of relationships you desire. This effect is overlaid on your other senses, making them "pop" out when you are aware of them in any way.

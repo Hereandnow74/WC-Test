@@ -46,7 +46,7 @@
             </div>
           </div>
           <div
-            v-for="companion in companionsWithoutSold"
+            v-for="companion in companionsComp"
             :key="companion.uid"
             class="flex gap-2 w-full rounded bg-gray-300 dark:bg-gray-800 p-1"
           >
@@ -94,7 +94,7 @@ import { lazyLoadImg, imageLink } from '~/logic'
 import { useSettings } from '~/logic/searchSettings'
 import { useStore } from '~/store/store'
 
-const { companionsWithoutSold, settings, startingOrigin } = useStore()
+const { companionsComp, settings, startingOrigin } = useStore()
 const { newPrice } = useSettings()
 
 const props = defineProps({
@@ -136,7 +136,7 @@ const fullCount = computed(() => {
 const individualCount = computed(() => Object.values(powers).map(x => x.length))
 
 const displayedCost = computed(() => {
-  return !newPrice.value ? individualCount.value.reduce((sum, count) => sum += 20 * ((Math.pow(2, count) - 1) / (2 - 1)), 0) : fullCount.value * props.perk.cost
+  return !newPrice.value && props.perk.title === 'Template Stacking I' ? individualCount.value.reduce((sum, count) => sum += 20 * ((Math.pow(2, count) - 1) / (2 - 1)), 0) : fullCount.value * props.perk.cost
 })
 
 function sendPerk() {

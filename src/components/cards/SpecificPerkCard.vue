@@ -9,13 +9,13 @@
   >
     <img
       v-if="waifuPerk.image !=='' && !settings.allImg"
-      class="h-[300px] max-w-1/2 object-contain ml-auto pl-1 inline-block float-right"
+      class="h-[300px] max-w-1/2 object-contain ml-auto pl-2 inline-block float-right"
       :data-src="waifuPerk.image"
       :alt="waifuPerk.title"
     />
     <img
       v-if="waifuPerk.image_2 && !settings.allImg"
-      class="h-[300px] max-w-1/2 object-contain ml-auto pl-1 inline-block float-right"
+      class="h-[300px] max-w-1/2 object-contain ml-auto pl-2 inline-block float-right"
       :src="waifuPerk.image_2"
       :alt="waifuPerk.title"
     />

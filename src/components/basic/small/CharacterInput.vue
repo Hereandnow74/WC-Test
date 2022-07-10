@@ -33,7 +33,7 @@ const props = defineProps({
   },
   errorMessage: {
     type: String,
-    default: 'Error',
+    default: '',
   },
   idd: {
     type: String,

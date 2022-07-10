@@ -24,7 +24,8 @@
         "rating": 5,
         "name": "Jihad/Dark Age(?)"
       }
-    ]
+    ],
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992067310657478746/battletech-1280-1524629881484_160w.jpg"
   },
   {
     "worldName": "Claymore",
@@ -62,7 +63,8 @@
   },
   {
     "worldName": "Devil May Cry",
-    "rating": 8
+    "rating": 8,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992751749662253116/devil-may-cry-dante-4k-qg.jpg"
   },
   {
     "worldName": "Farscape",
@@ -71,7 +73,8 @@
   },
   {
     "worldName": "Generator Rex",
-    "rating": 6
+    "rating": 6,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992396286533845003/generator_rex_agent_of_providence-1601757.webp"
   },
   {
     "worldName": "Goblin Slayer",
@@ -105,7 +108,8 @@
         "name": "Pre-Faro Plague",
         "rating": 8
       }
-    ]
+    ],
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992081879639531521/Screenshot_1.jpg"
   },
   {
     "worldName": "Lazy Dungeon Master",
@@ -220,7 +224,8 @@
         "rating": 6,
         "name": "Roman Empire"
       }
-    ]
+    ],
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992751586965205083/8bb304a6f8c617d03d55cd618a983329.jpg"
   },
   {
     "worldName": "Rune Factory",
@@ -249,7 +254,8 @@
   },
   {
     "worldName": "Yamada-kun and the Seven Witches",
-    "rating": 3
+    "rating": 3,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992055973369884712/91dCSxXnEmL._RI_.jpg"
   },
   {
     "worldName": "Cyberpunk 2077",
@@ -350,7 +356,8 @@
   },
   {
     "worldName": "I Shall Seal The Heavens",
-    "rating": 10
+    "rating": 10,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992757220653674537/thumb-1920-952033.jpg"
   },
   {
     "worldName": "Mushoku Tensei",
@@ -383,7 +390,8 @@
         "rating": 8,
         "name": "UQ Holder timeline"
       }
-    ]
+    ],
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992083944910626886/Negima.webp"
   },
   {
     "worldName": "Invincible",
@@ -416,7 +424,8 @@
         "name": "Avesta of Black and White",
         "rating": 9
       }
-    ]
+    ],
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992757972797247498/Kajiri_Kamui_Kagura_.webp"
   },
   {
     "worldName": "Gate: And thus the JSDF fought there",
@@ -434,21 +443,19 @@
         "rating": 5,
         "name": "Falmart"
       }
-    ]
+    ],
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992068471632445491/d96a99fda7a1a06d23b9745f8c5c0da0.png"
   },
   {
     "worldName": "Grrlpower",
-    "rating": 4
-  },
-  {
-    "worldName": "Hellsing Abridged",
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990996504519016458/Hellsing_Ultimate_Abridged_Logo.webp",
-    "rating": 3
+    "rating": 4,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/993187370813882491/chisomo-phiri-grrl-power-by-shadaan-d87d3za.jpg"
   },
   {
     "worldName": "Shinmai Maou",
     "rating": 6,
-    "additional": "Body Defense will protect you from all the negatives effects of the Master-Servant Contract."
+    "additional": "Body Defense will protect you from all the negatives effects of the Master-Servant Contract.",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992399086214975546/2288443.webp"
   },
   {
     "worldName": "Interspecies Reviewers",
@@ -463,11 +470,13 @@
         "name": "Pre-Founding of the 'Kuroinu' Mercenary Group",
         "rating": 4
       }
-    ]
+    ],
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992085104132366466/wivMP2Wjth7i6AP6bVzEB67BfL2.jpg"
   },
   {
     "worldName": "Mushroom Kingdom",
-    "rating": 3
+    "rating": 3,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/993183664248717363/fxa93I.jpg"
   },
   {
     "worldName": "SCP",
@@ -489,28 +498,9 @@
     ]
   },
   {
-    "worldName": "Dark Souls",
-    "rating": 8,
-    "image": "https://i.imgur.com/ZvNFdGol.png",
-    "additional": "You can use bonfires as they are intended.",
-    "condition": [
-      {
-        "name": "Dark Souls 1",
-        "rating": 8
-      },
-      {
-        "name": "Dark Souls 2",
-        "rating": 8
-      },
-      {
-        "name": "Dark Souls 3",
-        "rating": 8
-      }
-    ]
-  },
-  {
     "worldName": "Divinity",
-    "rating": 5
+    "rating": 5,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992085275490652160/capsule_616x353-2021-09-07T110852.425.jpg"
   },
   {
     "worldName": "Highschool of the Dead",
@@ -544,7 +534,7 @@
   },
   {
     "worldName": "Inheritance",
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/991002314003341332/inheritance-cycle-review-eragon-books.webp",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992085959921369199/Screenshot_2.jpg",
     "rating": 5,
     "additional": "When capturing a rider one also captures their dragon.",
     "condition": [
@@ -587,19 +577,23 @@
   },
   {
     "worldName": "Jump Force",
-    "rating": 9
+    "rating": 9,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992755474053210132/jump-force_game-thumbnail2.jpg"
   },
   {
     "worldName": "Maken-Ki",
-    "rating": 6
+    "rating": 6,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992398681443680276/Maken-Ki.jpg"
   },
   {
     "worldName": "Pokegirls",
-    "rating": 6
+    "rating": 6,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992398856442613770/original.jpg"
   },
   {
     "worldName": "Re:Monster",
-    "rating": 4
+    "rating": 4,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992068188613382165/x.jpg"
   },
   {
     "worldName": "Scooby Doo",
@@ -630,7 +624,7 @@
   {
     "worldName": "1984",
     "rating": 5,
-    "image": "https://www.wykop.pl/cdn/c3201142/comment_1585996809diOpMSFIWcHTMHq6Mlvb5K.jpg"
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992085494647242752/1984-George-Orwell.jpg"
   },
   {
     "worldName": "Youjo Senki",
@@ -639,12 +633,13 @@
   },
   {
     "worldName": "Asobi Ni Iku Yo",
-    "rating": 3
+    "rating": 3,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992057369246843000/Asobi.ni.Iku.yo.full.419992.jpg"
   },
   {
     "worldName": "Destiny",
     "rating": 6,
-    "image": "https://i.imgur.com/Ria2NN5m.png",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992400015521742958/destiny-2-maintenance-extended-by-an-hour_feature.jpg",
     "condition": [
       {
         "name": "Golden Age",
@@ -732,7 +727,8 @@
         "rating": 6,
         "name": "2018 (MGR:R)"
       }
-    ]
+    ],
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992057184043139143/apps.11030.71807300494969932.69855f10-40a0-471f-b309-fcb6e79bc469.jpg"
   },
   {
     "worldName": "Psyren",
@@ -758,7 +754,8 @@
   {
     "worldName": "Tenjou Tenge",
     "rating": 4,
-    "additional": "Possession Defense will protect you from Noriko Dragon Roar ability.\n\nInformation Defense will protect you from the Dragon Eyes prediction ability."
+    "additional": "Possession Defense will protect you from Noriko Dragon Roar ability.\n\nInformation Defense will protect you from the Dragon Eyes prediction ability.",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992072484922859580/tenjou-tenge-featured.jpg"
   },
   {
     "worldName": "Tier 1 Town (Meta)",
@@ -802,18 +799,20 @@
   },
   {
     "worldName": "Tokyo Ghoul",
-    "rating": 6
+    "rating": 6,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992399413131616256/DZTGJzrVuNu7oa3htBc2LL.jpg"
   },
   {
     "worldName": "Bloodborne",
     "rating": 9,
-    "additional": "Body Defense will protect you from the beast plague and physical effect of insight while Mind Defense will protect you from it’s mental effects",
+    "additional": "Body Defense will protect you from the beast plague and physical effect of insight while Mind Defense will protect you from it\u2019s mental effects",
     "image": "https://cdn.shazoo.ru/c1200x525/467982_MX4j1ndcp9_bloodborne.jpg"
   },
   {
     "worldName": "Until Dawn",
     "rating": 4,
-    "additional": "Possession Defense will protect you from becoming a Wendigo"
+    "additional": "Possession Defense will protect you from becoming a Wendigo",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992074529838997624/untildawn.png"
   },
   {
     "worldName": "Yu-Gi-Oh!",
@@ -891,7 +890,8 @@
   },
   {
     "worldName": "Guild Wars 2",
-    "rating": 8
+    "rating": 8,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992752348529184828/E81_eX8VIAM7wdS.jpg"
   },
   {
     "worldName": "Katekyo Hitman Reborn",
@@ -900,7 +900,8 @@
   },
   {
     "worldName": "Little Witch Academia",
-    "rating": 3
+    "rating": 3,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992057716782665749/Little_Witch_Academia_TV_official_poster.webp"
   },
   {
     "worldName": "One Punch Man",
@@ -914,16 +915,18 @@
   },
   {
     "worldName": "Taimanin",
-    "rating": 7
+    "rating": 7,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992407859038007326/Asagi_trains_her_students.webp"
   },
   {
     "worldName": "Toril/Forgotten Realms",
-    "rating": 7
+    "rating": 7,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992408457401618452/EQTo0UxVUAA0784.jpg"
   },
   {
     "worldName": "Andromeda",
     "rating": 8,
-    "image": "https://upload.wikimedia.org/wikipedia/en/5/5e/Andromeda_title_card.jpg"
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992752204945567764/Andromedaseriescrew.webp"
   },
   {
     "worldName": "The Walking Dead",
@@ -933,7 +936,8 @@
         "rating": 2,
         "name": "Before Z-Day"
       }
-    ]
+    ],
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992070477474435082/Screenshot_2.jpg"
   },
   {
     "worldName": "Alera",
@@ -947,11 +951,13 @@
         "name": "Vord Active On Continent",
         "rating": 8
       }
-    ]
+    ],
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992399280344141875/be637be5d7400f41a62ccdedd3ce0f3b.jpg"
   },
   {
     "worldName": "The Owl House",
-    "rating": 5
+    "rating": 5,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992086217359360060/1173684.jpg"
   },
   {
     "worldName": "Adventure Time",
@@ -981,11 +987,13 @@
         "name": "Shaman Fight ( Canon)",
         "rating": 8
       }
-    ]
+    ],
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992086381822214215/6f094aeedbb33b38ee810d4ace0cf3c61650533893_main.jpg"
   },
   {
     "worldName": "Yakuza 0",
-    "rating": 4
+    "rating": 4,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992071145308291205/22945.png"
   },
   {
     "worldName": "Gargoyles",
@@ -999,19 +1007,23 @@
         "name": "10th century AD",
         "rating": 5
       }
-    ]
+    ],
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992058130768855090/gargoyles-awakening-artwork.png"
   },
   {
     "worldName": "Helltaker",
-    "rating": 6
+    "rating": 6,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992399620472840222/helltaker-characters-cerberus-3.jpg"
   },
   {
     "worldName": "Homestuck",
-    "rating": 10
+    "rating": 10,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/993191877916495892/31-313756_download-homestuck-3x-showdown-homestuck-3-years-wallpaper.jpg"
   },
   {
     "worldName": "Miraculous: Tales of Ladybug and Cat Noir",
-    "rating": 2
+    "rating": 2,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992053853560246383/07615adb248078e3c48a43dea0f18395.jpg"
   },
   {
     "worldName": "Yuki Yuna is a Hero",
@@ -1030,11 +1042,13 @@
   },
   {
     "worldName": "Innocent Witches",
-    "rating": 3
+    "rating": 3,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992058342547664926/Screenshot_1-47.webp"
   },
   {
     "worldName": "Life is strange",
-    "rating": 6
+    "rating": 6,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992399837108637736/Life_is_Strange_1x1-e1630506376973.webp"
   },
   {
     "worldName": "Life With a Slave - Teaching Feeling",
@@ -1042,18 +1056,20 @@
     "image": "https://i.imgur.com/Z2JPSa5_d.webp?maxwidth=760&fidelity=grand"
   },
   {
-    "worldName": "Orc Hero Story – Discovery Chronicles",
+    "worldName": "Orc Hero Story \u2013 Discovery Chronicles",
     "rating": 5,
     "condition": [
       {
         "rating": 6,
         "name": "War of Vastonia"
       }
-    ]
+    ],
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992086806243848192/1669221.webp"
   },
   {
     "worldName": "Takarakuji de 40 Oku Atattanda kedo Isekai ni Ijuusuru",
-    "rating": 3
+    "rating": 3,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/993184364793958580/Screenshot_1.jpg"
   },
   {
     "worldName": "Ben 10",
@@ -1076,7 +1092,7 @@
         "name": "Omniverse"
       }
     ],
-    "image": "http://2.bp.blogspot.com/-a8xiucVIRCg/UcyO1xrafZI/AAAAAAAAIf4/SkqTQL-O718/s1600/mustcroak3.png"
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992758381527961650/1134176.jpg"
   },
   {
     "worldName": "Summertime Saga",
@@ -1090,20 +1106,24 @@
   },
   {
     "worldName": "BTVS/Angel",
-    "rating": 4
+    "rating": 4,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992071708938870784/p7896383_b_h10_an.jpg"
   },
   {
     "worldName": "Campione!",
-    "rating": 8
+    "rating": 8,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992752692982190121/814ez6VG5XL._RI_.jpg"
   },
   {
     "worldName": "Cinnamon Bun",
     "rating": 3,
-    "additional": "The world has a system, and actions taken while lacking a class will give a class appropriate to the actions(acting adorable gives cinnamon bun class, killing a bunch of people gives murderer class, etc) this only applies until you have a class. doing things associated with your class gives class skills. The skills start at rank F and are improved by doing them. Rank D and above require skill points, more skill points are required the higher rank the skill is. Killing things and doing class-appropriate actions levels you up and gives class skill points. Doing things unrelated to your class may give a general skill. General skill points are earned by completing quests for the world and killing dungeons."
+    "additional": "The world has a system, and actions taken while lacking a class will give a class appropriate to the actions(acting adorable gives cinnamon bun class, killing a bunch of people gives murderer class, etc) this only applies until you have a class. doing things associated with your class gives class skills. The skills start at rank F and are improved by doing them. Rank D and above require skill points, more skill points are required the higher rank the skill is. Killing things and doing class-appropriate actions levels you up and gives class skill points. Doing things unrelated to your class may give a general skill. General skill points are earned by completing quests for the world and killing dungeons.",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/993188757643731035/Screenshot_3.jpg"
   },
   {
     "worldName": "Fairy Gone",
-    "rating": 3
+    "rating": 3,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992058477637795920/81nks6tosaL._RI_.jpg"
   },
   {
     "worldName": "Soul Eater",
@@ -1113,7 +1133,7 @@
   },
   {
     "worldName": "Hazbin Hotel/ Helluva Boss",
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/991006617237602334/EYBrF6-WkAY6l7c.jpg",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992756480048635925/wallpapersden.com_alastor-hd-hazbin-hotel_1920x1080.jpg",
     "rating": 9,
     "additional": "If you take Extra and choose Sinner as your species you will be unable to leave the Pride Ring unless summoned or you at least filled Exit Stage left. Choosing Hellborn does not have this limitation. ",
     "condition": [
@@ -1135,7 +1155,8 @@
   },
   {
     "worldName": "Shin No Nakama",
-    "rating": 7
+    "rating": 7,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992408635198148698/anime-Shin-no-Nakama-janai-image-5.png"
   },
   {
     "worldName": "Soul Calibur",
@@ -1154,7 +1175,8 @@
   },
   {
     "worldName": "Baki: The Grappler",
-    "rating": 5
+    "rating": 5,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992086635208511488/image-w1280.webp"
   },
   {
     "worldName": "Guild Wars / Boundless",
@@ -1173,7 +1195,7 @@
     ]
   },
   {
-    "worldName": "Brütal Legend",
+    "worldName": "Br\u00fctal Legend",
     "rating": 5,
     "image": "https://cdna.artstation.com/p/assets/images/images/035/340/972/large/joseph-richard-0103-21-concept-brutallegend2-color.jpg?1614714162"
   },
@@ -1216,7 +1238,8 @@
         "rating": 4,
         "name": "Standard"
       }
-    ]
+    ],
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992072699696398408/png_20220203_151855_0000.png"
   },
   {
     "worldName": "Grimgar of Fantasy and Ash",
@@ -1330,7 +1353,7 @@
     "worldName": "Arifureta: From Commonplace to World's Strongest",
     "rating": 6,
     "additional": "All monster created or modificated by Ancient Magic mekes them into familiars",
-    "image": "https://pbs.twimg.com/media/FFEaXnFXwAA-jGj.jpg"
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992409569529712641/maxresdefault.jpg"
   },
   {
     "worldName": "Berserk",
@@ -1360,7 +1383,8 @@
         "name": "Weirdmageddon",
         "rating": 8
       }
-    ]
+    ],
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992086979099500554/scale.jpg"
   },
   {
     "worldName": "Hades",
@@ -1374,20 +1398,24 @@
   },
   {
     "worldName": "Kantai Collection",
-    "rating": 5
+    "rating": 5,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992087311732985887/2866355-kantai-collection-kancolle.jpg"
   },
   {
     "worldName": "Keys to the Kingdom",
-    "rating": 5
+    "rating": 5,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/993189459120099458/Screenshot_5.jpg"
   },
   {
     "worldName": "Maggot Baits",
-    "rating": 5
+    "rating": 5,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992087562229391461/maxresdefault.jpg"
   },
   {
     "worldName": "I've Been Killing Slimes for 300 Years and Maxed Out My Level",
     "rating": 4,
-    "additional": "Entering this world or gaining a companion from here will allow access to the world’s leveling system"
+    "additional": "Entering this world or gaining a companion from here will allow access to the world\u2019s leveling system",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992075204496986204/x1080.jpg"
   },
   {
     "worldName": "Supreme Commander",
@@ -1402,7 +1430,8 @@
         "rating": 6,
         "name": "Human Wolrd"
       }
-    ]
+    ],
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992408842145107968/vPRwUmH.jpg"
   },
   {
     "worldName": "Terminator",
@@ -1445,10 +1474,6 @@
     ]
   },
   {
-    "worldName": "The Venture Brothers",
-    "rating": 3
-  },
-  {
     "worldName": "Total Drama",
     "rating": 2,
     "condition": [
@@ -1470,7 +1495,8 @@
   },
   {
     "worldName": "Azur Lane",
-    "rating": 8
+    "rating": 8,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992753002031091772/azur-lane-crosswave-switch-review-header.jpg"
   },
   {
     "worldName": "DOOM: Eternal",
@@ -1526,11 +1552,13 @@
         "name": "Open War",
         "rating": 6
       }
-    ]
+    ],
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992087802110033950/the-dragon-prince-netflix-1230491.jpg"
   },
   {
     "worldName": "Rainbow Six Siege",
-    "rating": 4
+    "rating": 4,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992074723259334717/Rainbow-Six-Siege-scaled.webp"
   },
   {
     "worldName": "Afro Samurai",
@@ -1554,12 +1582,14 @@
         "rating": 7,
         "name": "Infected Earth"
       }
-    ]
+    ],
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992059209694846977/4Fn75AWWgOLZiFdxIA6HvSV5wC9c3WGp.webp"
   },
   {
     "worldName": "Bayonetta",
     "rating": 8,
-    "additional": "The contractor and any companions are always able to percieve supernatural and/or spiritual beings or events. However, interacting with said beings or events requires magical, ki, or other form of supernatural ability. \n\nElemental Cloaks, Symbiote and derived suits, or magical circles qualify. Tempest jewelry or the Stamp only qualifies if the contractor has said abilities themselves."
+    "additional": "The contractor and any companions are always able to percieve supernatural and/or spiritual beings or events. However, interacting with said beings or events requires magical, ki, or other form of supernatural ability. <br>Elemental Cloaks, Symbiote and derived suits, or magical circles qualify. Tempest jewelry or the Stamp only qualifies if the contractor has said abilities themselves.",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992753155932696666/bayonetta.webp"
   },
   {
     "worldName": "Dofus/Wakfu",
@@ -1583,7 +1613,8 @@
   },
   {
     "worldName": "Hocus Pocus",
-    "rating": 3
+    "rating": 3,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992058663856525402/0x0.jpg"
   },
   {
     "worldName": "Medabots",
@@ -1621,7 +1652,8 @@
         "rating": 7,
         "name": "Alternate"
       }
-    ]
+    ],
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992408989319053385/capsule_616x353.jpg"
   },
   {
     "worldName": "Starship Troopers",
@@ -1669,7 +1701,8 @@
   {
     "worldName": "D.Grey-man",
     "rating": 5,
-    "additional": "Innocences crystalize when the Waifu/Husbando is captured"
+    "additional": "Innocences crystalize when the Waifu/Husbando is captured",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992087984755187792/drgreyman-163452.jpg"
   },
   {
     "worldName": "Earth Defense Force",
@@ -1719,11 +1752,12 @@
         "rating": 3,
         "name": "World Jurassic"
       }
-    ]
+    ],
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992059612721332234/Infomania-Jurassic-Park-007.webp"
   },
   {
     "worldName": "Kim Possible",
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990997484698468422/scale.jpg",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992059450145910844/KimRonRufus-wBackground.jpg",
     "rating": 3
   },
   {
@@ -1746,7 +1780,7 @@
     "worldName": "Owari no Seraph",
     "rating": 5,
     "additional": "Companion's Cursed Gear become a familiar when captured",
-    "image": "https://cdn.hipwallpaper.com/i/34/3/xadAQs.jpg"
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992409898887413861/intro-1567621627-1280x720.jpg"
   },
   {
     "worldName": "Rosario + Vampire",
@@ -1755,23 +1789,24 @@
   },
   {
     "worldName": "The Boys",
-    "rating": 2,
-    "image": "https://cdnb.artstation.com/p/assets/images/images/031/128/309/large/mayank-kumarr-1.jpg?1602685214",
+    "rating": 4,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/993183943836848178/1099495.jpg",
     "condition": [
       {
         "name": "Comics",
-        "rating": 3
+        "rating": 5
       }
     ]
   },
   {
     "worldName": "The Hero Who Returned Remains The Strongest In The Modern World",
-    "rating": 5
+    "rating": 5,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992388777517518888/2.jpg"
   },
   {
     "worldName": "The Long Dark",
     "rating": 3,
-    "image": "https://cdn.akamai.steamstatic.com/steam/apps/305620/capsule_616x353.jpg?t=1638931698",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992060101550690314/longdarkep4featured.jpeg",
     "condition": [
       {
         "name": "Whiteout",
@@ -1785,11 +1820,13 @@
   },
   {
     "worldName": "The Venture Bros",
-    "rating": 3
+    "rating": 3,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992059039192186912/venture-bros.webp"
   },
   {
     "worldName": "The Witch",
-    "rating": 3
+    "rating": 3,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/993185470928396308/the-witch-2015-anya-taylor-joy-vvitch.jpg"
   },
   {
     "worldName": "Akira",
@@ -1808,15 +1845,13 @@
         "rating": 6,
         "name": "With DLCs"
       }
-    ]
-  },
-  {
-    "worldName": "Exalted versus the World of Darkness",
-    "rating": 7
+    ],
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992075471070183495/capsule_616x353-2022-01-02T114403.333.jpg"
   },
   {
     "worldName": "History's Strongest Disciple Kenichi",
-    "rating": 5
+    "rating": 5,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992388973546709123/1_Af9twiNISa2VbadHXy2Thg.jpeg"
   },
   {
     "worldName": "Magical Girl Spec-Ops Asuka",
@@ -1830,7 +1865,8 @@
         "rating": 8,
         "name": "2016 Jan, Disas Invasion"
       }
-    ]
+    ],
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992753315957973002/magical-girl-asuka-spec-ops-asuka-cover.jpg"
   },
   {
     "worldName": "Mermaid Melody",
@@ -1840,7 +1876,8 @@
   },
   {
     "worldName": "Omamori Himari",
-    "rating": 5
+    "rating": 5,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992389185677824060/dtbj8vdXqS813QvirK3x1GWPRaZ.jpg"
   },
   {
     "worldName": "Sora no Otoshimono",
@@ -1880,7 +1917,7 @@
   {
     "worldName": "Elden Ring",
     "rating": 9,
-    "image": "https://cdn.donmai.us/original/cb/e3/__tarnished_akira_and_1_more_drawn_by_katlego__cbe3563dfa91de8c82f80dff65ebc621.jpg",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992756813466456115/1219390.jpg",
     "additional": "Melina allows you and your waifus to pay for level-ups with Runes, just like their counterparts from the other games."
   },
   {
@@ -1910,7 +1947,8 @@
         "name": "Post-apocalyptic World",
         "rating": 7
       }
-    ]
+    ],
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992060992383103056/I_Have_a_Mansion_in_the_Post-Apocalyptic_World_1_9369.jpg"
   },
   {
     "worldName": "Misfit of Demon King Academy",
@@ -1919,7 +1957,8 @@
   },
   {
     "worldName": "Outlaw Star",
-    "rating": 4
+    "rating": 4,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992075831402827826/MV5BNDEzZWEzYjQtMmIxMS00OTgyLWIwMmItMjgxMDY4OTkzYmY1XkEyXkFqcGdeQXVyODMyNTM0MjM._V1_.jpg"
   },
   {
     "worldName": "Path of Exile",
@@ -1928,7 +1967,8 @@
   },
   {
     "worldName": "Spy X Family",
-    "rating": 3
+    "rating": 3,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992061126290452581/Spy-x-Family-Manga.jpg"
   },
   {
     "worldName": "Stardew Valley",
@@ -1987,7 +2027,7 @@
   {
     "worldName": "Chaos Seeds",
     "rating": 5,
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992389599710167100/maxresdefault.jpg",
     "additional": "Due to the nature of The Land while the barrier is in place no gods can enter.\n\nDue to the nature of this universe when entering if you have any Talents at all you gain access to the gamer/litrpg system this reality uses.\n\nEldritch magic BAD.",
     "condition": [
       {
@@ -2008,7 +2048,7 @@
   {
     "worldName": "Jujutsu Kaisen",
     "rating": 5,
-    "image": "https://m.media-amazon.com/images/M/MV5BNzQyYzU3Y2MtOWY2Yy00ZGM2LTg3ZTUtMDJkZTJiMmEzMjYxXkEyXkFqcGdeQXVyMTI2NTY3NDg5._V1_FMjpg_UX1064_.jpg",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992389861959020644/jujutsu-kaisen.webp",
     "condition": [
       {
         "name": "The Shibuya Incident Arc Aftermath",
@@ -2017,7 +2057,7 @@
     ]
   },
   {
-    "worldName": "Jupiter’s Legacy",
+    "worldName": "Jupiter\u2019s Legacy",
     "rating": 6,
     "condition": [
       {
@@ -2028,7 +2068,8 @@
         "rating": 6,
         "name": "Tv Series"
       }
-    ]
+    ],
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992400247038943283/Ebene-Magazine-Jupiters-Legacy-agrave-Lucifer-les-conseils-de-la-seacuterie-pour-mai.jpeg"
   },
   {
     "worldName": "Mario Series",
@@ -2037,7 +2078,8 @@
   },
   {
     "worldName": "Rance",
-    "rating": 5
+    "rating": 5,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992389378179604551/r9-rance-and-siera.png"
   },
   {
     "worldName": "Reincarnation of the Strongest Sword God",
@@ -2047,7 +2089,8 @@
         "name": "When Shi Feng reincarnates the 2nd time",
         "rating": 3
       }
-    ]
+    ],
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992053571187118181/Reincarnation-Of-The-Strongest-Sword-God.png"
   },
   {
     "worldName": "Stranger Things",
@@ -2078,7 +2121,8 @@
   },
   {
     "worldName": "Binbougami Ga!",
-    "rating": 3
+    "rating": 3,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992061296142987305/binbogami-ga.jpg"
   },
   {
     "worldName": "Bodacious Space Pirates",
@@ -2087,15 +2131,18 @@
   },
   {
     "worldName": "Chrono Cross",
-    "rating": 8
+    "rating": 8,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992753440356831322/fefdf-16444816642222-1920.webp"
   },
   {
     "worldName": "Coiling Dragon",
-    "rating": 10
+    "rating": 10,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992758676660158484/d47c2c4866e9ac580e31ff02f08b7888960cf215_hq.jpg"
   },
   {
     "worldName": "Desolate Era",
-    "rating": 10
+    "rating": 10,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992759538186981387/UBWoQUqt_pCg3sXzAnQVE9LKeczGhVBmyfL5vpHnxH0.webp"
   },
   {
     "worldName": "Dot Hack",
@@ -2117,7 +2164,8 @@
         "rating": 4,
         "name": "Dot Hack Twilight"
       }
-    ]
+    ],
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992076017885773937/549b4b927417ea26ef8037c29de0ea2c.jpg"
   },
   {
     "worldName": "God and Devil World",
@@ -2127,7 +2175,8 @@
   },
   {
     "worldName": "Interstella 5555",
-    "rating": 3
+    "rating": 3,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992061675878482020/intastella-5555-featured.jpg"
   },
   {
     "worldName": "Love Hina",
@@ -2136,7 +2185,8 @@
   },
   {
     "worldName": "Machikado Mazoku",
-    "rating": 3
+    "rating": 3,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992062217488973924/Machikado-Mazoku-Season-2-1.jpg"
   },
   {
     "worldName": "Marvel Ultimate Universe",
@@ -2146,7 +2196,8 @@
   {
     "worldName": "Reboot",
     "rating": 6,
-    "additional": "In game users are capturable, but only have the abilities and rank of the in game avatar, not the in-universe User/Admin."
+    "additional": "In game users are capturable, but only have the abilities and rank of the in game avatar, not the in-universe User/Admin.",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992400671917735986/71gE4jOdpoL._RI_.jpg"
   },
   {
     "worldName": "School Rumble",
@@ -2155,11 +2206,13 @@
   },
   {
     "worldName": "Slayers",
-    "rating": 7
+    "rating": 7,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992409267984416799/slayers.jpg"
   },
   {
     "worldName": "Stellar Transformations",
-    "rating": 10
+    "rating": 10,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992758995175612416/860402fe410bec5894f2bc66bbcf8cf7.jpg"
   },
   {
     "worldName": "Uncharted",
@@ -2169,7 +2222,7 @@
   {
     "worldName": "XCOM",
     "rating": 6,
-    "image": "https://img.cdn.haber365.com.tr/uploads/images/image/epic-games-xcom-2-oyununu-ucretsiz-dagitiyor-928-body.jpg"
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992400464912076870/thumb-1920-865091.jpg"
   },
   {
     "worldName": "Yotsuba&!",
@@ -2178,7 +2231,8 @@
   },
   {
     "worldName": "Zannen Jokanbu Black General-san",
-    "rating": 4
+    "rating": 4,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992077563721687131/Zannen-Onna-Kanbu-Black-General-san.jpg"
   },
   {
     "worldName": "A Town Called Eureka",
@@ -2192,15 +2246,18 @@
   },
   {
     "worldName": "Armed Girl's Machiavellism",
-    "rating": 2
+    "rating": 2,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992055291854200953/artworks-000512763996-qjpfg1-t500x500.jpg"
   },
   {
     "worldName": "Beelzebub",
-    "rating": 3
+    "rating": 3,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992061485670989874/Beelzebub-Season-2-1-1024x768.jpg"
   },
   {
     "worldName": "Bitten",
-    "rating": 3
+    "rating": 3,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992062021522702387/Bitten-poster-e1553806988639.jpg"
   },
   {
     "worldName": "Blade Runner",
@@ -2214,11 +2271,13 @@
   },
   {
     "worldName": "Break Blade",
-    "rating": 4
+    "rating": 4,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992076850551607296/brokenblade.jpg"
   },
   {
     "worldName": "Camelot",
-    "rating": 2
+    "rating": 2,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992055086790475868/maxresdefault.jpg"
   },
   {
     "worldName": "Class President is a Maid!",
@@ -2227,7 +2286,8 @@
   },
   {
     "worldName": "Cross Ange: Rondo of Angel and Dragon",
-    "rating": 5
+    "rating": 5,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992390250716463145/unknown.png"
   },
   {
     "worldName": "Dragon Quest",
@@ -2266,11 +2326,13 @@
   },
   {
     "worldName": "Gears of War",
-    "rating": 5
+    "rating": 5,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992389991953084496/Gears-of-War-may-be-getting-a-Master-Chief-Collection-type.jpg"
   },
   {
     "worldName": "Grimm (TV Show)",
-    "rating": 3
+    "rating": 3,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992061827880067142/912rZNaIgOL._RI_.jpg"
   },
   {
     "worldName": "Harvest Moon",
@@ -2289,19 +2351,23 @@
   },
   {
     "worldName": "Heavy Object",
-    "rating": 4
+    "rating": 4,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992076208927940698/Heavy-object-avis-1.jpg"
   },
   {
     "worldName": "Heroic Age",
-    "rating": 7
+    "rating": 7,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/993191137202421871/4lYsKnifTWYsm2ghSe2IMrMSIb4.jpg"
   },
   {
     "worldName": "Horizon in the Middle of Nowhere",
-    "rating": 6
+    "rating": 6,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992401463282253824/zurako-kyoukai-senjou-no-horizon-ii-01-members-of-the-vermillion-grounds-bd-1080p-aac-mkv_snapshot_02-03_2012-10-29_14-23-10.png"
   },
   {
     "worldName": "I Was Caught up in a Hero Summoning, but That World Is at Peace",
-    "rating": 3
+    "rating": 3,
+    "image": ""
   },
   {
     "worldName": "Jormungand",
@@ -2320,7 +2386,8 @@
   },
   {
     "worldName": "Legend of Queen Opala",
-    "rating": 3
+    "rating": 3,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992062585430089768/maxresdefault.jpg"
   },
   {
     "worldName": "Lord Marksman and Vanadis",
@@ -2334,23 +2401,28 @@
   },
   {
     "worldName": "Medaka Box",
-    "rating": 4
+    "rating": 4,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992076425731526656/Cast_of_Medaka_Box.webp"
   },
   {
     "worldName": "Nanbaka",
-    "rating": 3
+    "rating": 3,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992062365052973116/91DdsfE9kGL._RI_.jpg"
   },
   {
     "worldName": "Natsuyasumi",
-    "rating": 1
+    "rating": 1,
+    "image": ""
   },
   {
     "worldName": "Nobunaga the Fool",
-    "rating": 4
+    "rating": 4,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992077301871296612/thumb-1920-671294.jpg"
   },
   {
     "worldName": "Senran kagura ",
-    "rating": 3
+    "rating": 3,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992062826933923950/FyJT5k0Gwt273VzK4SQcNEzAlyYf73jh.webp"
   },
   {
     "worldName": "Sherlock Holmes",
@@ -2359,10 +2431,11 @@
   },
   {
     "worldName": "Sleepy Princess in the Demon Castle",
-    "rating": 2
+    "rating": 2,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992055565637398580/SleepyPrincess02_blogsplash_1200x630.jpg"
   },
   {
-    "worldName": "The Death Mage Who Doesn’t Want a Fourth Time",
+    "worldName": "The Death Mage Who Doesn\u2019t Want a Fourth Time",
     "rating": 7,
     "condition": [
       {
@@ -2377,27 +2450,33 @@
         "name": "Lambda",
         "rating": 7
       }
-    ]
+    ],
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992742548466581625/KIuqbURiWIYbhwl-1600x900-noPad.webp"
   },
   {
     "worldName": "The Vampire Diaries",
-    "rating": 8
+    "rating": 8,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992753840413736990/the-vampire-diaries-cast-then-v-now-t.jpg"
   },
   {
     "worldName": "Vikings",
-    "rating": 3
+    "rating": 3,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992064997880500224/A30ZqEoDbchvE7mCZcSp6TEwB1Q.jpg"
   },
   {
     "worldName": "Welcome to Demon School! Iruma-kun",
-    "rating": 3
+    "rating": 3,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/993185997221273600/iruma-kun-season-three-key-visual-e1647451664227.webp"
   },
   {
     "worldName": "World Trigger",
-    "rating": 6
+    "rating": 6,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992401904342671421/World-trigger-chapter-204.jpg"
   },
   {
     "worldName": "Ane Naru Mono",
-    "rating": 10
+    "rating": 10,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992759154030678016/chiyo-ane-naru-mono-brunette-smiling-purple-eyes-hd-wallpaper-preview.jpg"
   },
   {
     "worldName": "Charmed",
@@ -2411,7 +2490,8 @@
   },
   {
     "worldName": "Isekai Meikyu de Harem wo",
-    "rating": 5
+    "rating": 5,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992391817372913664/isekaimeikyuudeharemwo_keyvisual-1-e1648179739159.webp"
   },
   {
     "worldName": "Lucky Star",
@@ -2420,11 +2500,13 @@
   },
   {
     "worldName": "MapleStory",
-    "rating": 8
+    "rating": 8,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992753989835837471/MapleStory-2-Art.jpg"
   },
   {
     "worldName": "Sonic",
-    "rating": 6
+    "rating": 6,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992402008273326142/Sonic-The-Hedgehog-Origins.jpg"
   },
   {
     "worldName": "Suzumiya Haruhi",
@@ -2440,7 +2522,7 @@
   {
     "worldName": "War-torn world",
     "rating": 3,
-    "image": "https://i.imgur.com/bEm3aUQ.jpg",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/993186998644899880/f02911c50cb76766fcf4c53a3235a09b.jpg",
     "additional": "You can pick waifus up to T3 to inhabit the world. If the waifu comes from setting that has technology not present in our current tech, this tech will be incorporated into setting at large. War-torn Solar system expands on it to T6 and includes space warfare, magic and psionics. Maximal Upgrade being War-torn galaxy expands to T10 expanding war to galactic proportions and extremely dangerous planet ending warfare. ",
     "condition": [
       {
@@ -2470,7 +2552,8 @@
   },
   {
     "worldName": "Lost Girl",
-    "rating": 4
+    "rating": 4,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992077807427534878/8b960cda7553ec99a46907c40644d95f.jpg"
   },
   {
     "worldName": "Salem",
@@ -2494,7 +2577,8 @@
   },
   {
     "worldName": "Subverse",
-    "rating": 6
+    "rating": 6,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992402181833633792/QJJvtHP7NMHivpg2BPzKai.jpg"
   },
   {
     "worldName": "God Eater",
@@ -2504,13 +2588,13 @@
   {
     "worldName": "Hercules/Xena",
     "rating": 6,
-    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/G_X_H_I.jpg/1280px-G_X_H_I.jpg"
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992402718910062662/Hercules-and-Xena-Warrior-Princess.webp"
   },
   {
     "worldName": "Jagaaaaaan",
     "rating": 6,
     "additional": "Fractured Human weaknesses are removed and they can now shift forms at will.<bg>Frenzied Frog and its variants are all considered Familiars.",
-    "image": "https://4.bp.blogspot.com/-RoJDoCqm8_A/W_VrjNMybaI/AAAAAAAAAm8/RUOwcL0wvz4hzfso6hWb37UX93oYNMz-QCLcBGAs/s320/DCkqn82VwAAnreb.jpg"
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992402982735970354/jagaaan-destacado.webp"
   },
   {
     "worldName": "Library of Ruina",
@@ -2569,12 +2653,6 @@
     "image": "https://pic1.zhimg.com/v2-d8d543ec3bac7742a3714fa6bf863c39_1440w.jpg"
   },
   {
-    "worldName": "Boruto",
-    "rating": 9,
-    "image": "https://static3.wallpapers-anime.com/upload/20180528/5553/s/0/E/s0ElEF.png",
-    "additional": "The various jinchuuriki have their Tailed Beasts as familiars. Chakra is a form of ki, affected by Soul Talent and Advanced Template Stacking (Enlightened), and usable by anyone. Clone techniques split the user’s internal energy pools evenly across the original body and all clones; Inexhaustible merely prevents these diminished pools from depleting. Stress Defense will protect against the drawbacks of mass clone-based training."
-  },
-  {
     "worldName": "Cultivation Chat Group",
     "rating": 10,
     "image": "https://www.mangaread.org/wp-content/uploads/2019/11/Image01-90.jpg"
@@ -2608,7 +2686,8 @@
         "name": "Overlord 2",
         "rating": 5
       }
-    ]
+    ],
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992390936833302578/CRwygGyUYAA2DH7.jpg"
   },
   {
     "worldName": "The Promised Neverland",
@@ -2671,7 +2750,7 @@
   {
     "worldName": "Corruption of Champions",
     "rating": 7,
-    "image": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/clans/38349270/d00b1000b4085cd27e9d30fc508033fd1caf4cde.png"
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992743074583285840/corruption-of-champions-explainer.jpg"
   },
   {
     "worldName": "Disney",
@@ -2710,7 +2789,8 @@
   },
   {
     "worldName": "Dororo",
-    "rating": 4
+    "rating": 4,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992077934179389520/la-adaptacion-animada-de-dororo-presenta-nuevo-trailer-stage.jpg"
   },
   {
     "worldName": "Girls und Panzer",
@@ -2725,7 +2805,8 @@
   },
   {
     "worldName": "The Gamer",
-    "rating": 8
+    "rating": 8,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992754395890597888/bf9c118bfcac249df1b45016eabf8101.jpg"
   },
   {
     "worldName": "Soulworker",
@@ -2760,12 +2841,13 @@
   },
   {
     "worldName": "A Series of Unfortunate Events",
-    "rating": 3
+    "rating": 3,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992063080844505168/lemonysnicket301.jpg"
   },
   {
     "worldName": "Captain Planet",
     "rating": 6,
-    "image": "https://miscrave.com/wp-content/uploads/2020/04/captain-planet-heroes-and-villains.jpg"
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992403433653010442/captain-planet-gaia-guardians2.jpg"
   },
   {
     "worldName": "Getter Robo",
@@ -2791,17 +2873,19 @@
         "rating": 10,
         "name": "Devolution"
       }
-    ]
+    ],
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992742725600432129/DSC_6222a_2048x2x.webp"
   },
   {
     "worldName": "Hyakka Ryoran",
-    "rating": 4
+    "rating": 4,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992078352510885888/1629170594.19550.45250.jpg"
   },
   {
     "worldName": "Infinite Dendrogram",
     "rating": 2,
     "image": "https://cdn.donmai.us/sample/e1/c4/__nemesis_shu_starling_milianne_grandria_babylon_liliana_grandria_and_8_more_infinite_dendrogram__sample-e1c420079bd9c816659c6b7704fe6b11.jpg",
-    "additional": "All characters with profiles in Infinite Dendrogram will benefit from their toons’ statistics, skills, equipment, and Embryos.",
+    "additional": "All characters with profiles in Infinite Dendrogram will benefit from their toons\u2019 statistics, skills, equipment, and Embryos.",
     "condition": [
       {
         "rating": 2,
@@ -2820,7 +2904,8 @@
   },
   {
     "worldName": "Kenja no Mago",
-    "rating": 5
+    "rating": 5,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992391370151043133/Kenja-no-Mago-ja-tem-data-de-estreia-2.jpg"
   },
   {
     "worldName": "Kill Six Billion Demons",
@@ -2865,7 +2950,8 @@
   },
   {
     "worldName": "Banner Saga",
-    "rating": 5
+    "rating": 5,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992392009866297394/apps.48957.63780272993712086.109751f9-82f0-478b-9124-baeb3782a76a.jpg"
   },
   {
     "worldName": "Beware of Chicken",
@@ -2906,7 +2992,8 @@
         "name": "Takanuva Army",
         "rating": 10
       }
-    ]
+    ],
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992754625558097951/pwf3it832zh51.webp"
   },
   {
     "worldName": "Bravely Default",
@@ -2920,7 +3007,8 @@
         "rating": 10,
         "name": "Bravely Second (Missing Moon)"
       }
-    ]
+    ],
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992402478635175987/1280x720.webp"
   },
   {
     "worldName": "Class ga Isekai",
@@ -2953,7 +3041,8 @@
   },
   {
     "worldName": "Gantz",
-    "rating": 8
+    "rating": 8,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992754897088938055/Gantz.jpg"
   },
   {
     "worldName": "Green Skin",
@@ -2975,11 +3064,13 @@
         "rating": 8,
         "name": "2nd Timeline after 5 years"
       }
-    ]
+    ],
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992392331326136400/maxresdefault_2.jpg"
   },
   {
     "worldName": "Illuminated Until Death",
-    "rating": 3
+    "rating": 3,
+    "image": ""
   },
   {
     "worldName": "In Another World With My Smartphone",
@@ -3002,7 +3093,7 @@
     "rating": 7,
     "condition": [
       {
-        "rating": 100,
+        "rating": 10,
         "name": "After Book 2"
       }
     ],
@@ -3025,7 +3116,8 @@
         "rating": 5,
         "name": "Gallian Civil War-1937"
       }
-    ]
+    ],
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992392487060643951/valkyria-chronicles-remastered-ps4-review-3.jpg"
   },
   {
     "worldName": "Atlantis: The Lost Empire",
@@ -3045,17 +3137,18 @@
   },
   {
     "worldName": "Granblue Fantasy",
-    "rating": 6
+    "rating": 6,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992403648493670432/Cygames-annonce-Granblue-Fantasy-Relink-pour-PC-sortie-mondiale-2022.jpg"
   },
   {
-    "worldName": "Koihime†Musō",
+    "worldName": "Koihime\u2020Mus\u014d",
     "rating": 5,
     "image": "https://cdn.donmai.us/sample/2a/ff/__kan_u_chouun_shokatsuryou_chouhi_bachou_and_1_more_koihime_musou_drawn_by_ooshima_miwa__sample-2aff615b5d8bcce1b72ed2ee09d75160.jpg"
   },
   {
     "worldName": "Saints Row",
     "rating": 3,
-    "image": "https://nerdreactor.com/wp-content/uploads/2020/04/Saints-Row-3-_A4_Cover_Angel.jpg",
+    "image": "https://i.imgur.com/8C0Cde7.jpeg",
     "condition": [
       {
         "rating": 3,
@@ -3073,7 +3166,8 @@
   },
   {
     "worldName": "The Dawn of the Witch",
-    "rating": 7
+    "rating": 7,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992743287117062194/20211029-001949-411.jpg"
   },
   {
     "worldName": "The World Ends With You",
@@ -3088,7 +3182,8 @@
         "name": "Reapers Game",
         "rating": 5
       }
-    ]
+    ],
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992392647073345546/NEO.jpg"
   },
   {
     "worldName": "Where on Earth is Carmen Sandiego",
@@ -3166,7 +3261,8 @@
         "rating": 6,
         "name": "Final Fantasy IV"
       }
-    ]
+    ],
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/993189733616341202/capsule_616x353.jpg"
   },
   {
     "worldName": "Grand Theft Auto",
@@ -3215,7 +3311,8 @@
         "rating": 5,
         "name": "Megaman Star Force"
       }
-    ]
+    ],
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992392852942364802/572139-MS12.jpg"
   },
   {
     "worldName": "Sakura Dungeon",
@@ -3248,7 +3345,8 @@
   },
   {
     "worldName": "Chronicles of Narnia",
-    "rating": 3
+    "rating": 3,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/993187203926740992/1715643.jpg"
   },
   {
     "worldName": "He-man and the Masters of the Universe ",
@@ -3267,7 +3365,8 @@
         "name": "Altia",
         "rating": 6
       }
-    ]
+    ],
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992403889808748544/Screenshot_1.jpg"
   },
   {
     "worldName": "Nande Koko Ni Sensei Ga!?",
@@ -3295,11 +3394,13 @@
         "name": "Prototype 2.",
         "rating": 7
       }
-    ]
+    ],
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992404082251812964/apps.50690.70824803481096376.e3531486-cdc5-426a-b69a-2721624d69c9.jpg"
   },
   {
     "worldName": "Savage Divinity",
-    "rating": 6
+    "rating": 6,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992404570477187122/Screenshot_2.jpg"
   },
   {
     "worldName": "Scarlet Nexus",
@@ -3309,12 +3410,13 @@
         "rating": 9,
         "name": "Doomed Future"
       }
-    ]
+    ],
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992743501043335228/lDgeYs2HiI1G81abpEgf8Lil.webp"
   },
   {
     "worldName": "Terraria",
     "rating": 7,
-    "image": "https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/games_15/nintendo_switch_download_software_1/H2x1_NSwitchDS_Terraria_image1600w.jpg"
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992743910109610108/Terraria-Free-Trial-Nintendo-Switch-Online.jpg"
   },
   {
     "worldName": "The Legendary Mechanic ",
@@ -3332,11 +3434,13 @@
         "name": "World Tree War(Grades S to X)",
         "rating": 10
       }
-    ]
+    ],
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/993590271491178578/Screenshot_2.jpg"
   },
   {
     "worldName": "Trinity Seven",
-    "rating": 7
+    "rating": 7,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992743695998795796/trinity-seven-season-2.jpg"
   },
   {
     "worldName": "Warmachine",
@@ -3376,7 +3480,8 @@
   {
     "worldName": "My wife is a demon queen",
     "rating": 6,
-    "additional": "Forging effectivness would be increased with both Aesthetic Talent and Science Talent, Engineering Talent is redundant and unneeded for forging."
+    "additional": "Forging effectivness would be increased with both Aesthetic Talent and Science Talent, Engineering Talent is redundant and unneeded for forging.",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992404777780641802/My-Wife-Is-A-Demon-Queen-Chapter-330-Release-Date-min.jpg"
   },
   {
     "worldName": "Shomin Sample",
@@ -3410,7 +3515,8 @@
   },
   {
     "worldName": "The Legend Of The Legendary Heroes",
-    "rating": 6
+    "rating": 6,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992404964372647976/81EUk5b0doL._RI_.jpg"
   },
   {
     "worldName": "Kamen Rider",
@@ -3468,12 +3574,13 @@
   },
   {
     "worldName": "Voltron",
-    "rating": 8
+    "rating": 8,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992755054052388864/voltron-legendary-defender-gallery-1-scaled.jpeg"
   },
   {
     "worldName": "The Division",
     "rating": 4,
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992078654232330240/tom-clancys-the-division-listing-thumb-01-ps4-us-15jun15.png",
     "condition": [
       {
         "rating": 4,
@@ -3484,12 +3591,13 @@
   {
     "worldName": "Demon Kings Town Planning! ~The Strongest Dungeon is a Modern City",
     "rating": 7,
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992744767832215562/F2R9KG0.jpg",
     "additional": "Captured Demon Lords will have three named monsters/demons under his control as Familiars."
   },
   {
     "worldName": "Guilty Gear",
-    "rating": 10
+    "rating": 10,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992762241403330611/guilty-gear-strive.jpg"
   },
   {
     "worldName": "Hitsugi no Chaika",
@@ -3522,7 +3630,8 @@
   },
   {
     "worldName": "Planescape",
-    "rating": 9
+    "rating": 9,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992755722356006962/75551-planescape_ladyofpain.jpg"
   },
   {
     "worldName": "Ragnarok - The Animation",
@@ -3560,15 +3669,18 @@
         "rating": 9,
         "name": "The Last Battle"
       }
-    ]
+    ],
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992755325352542299/john-tommy-capuyan-eer-fanart-step-6.jpg"
   },
   {
     "worldName": "Exalted Versus the World of Darkness",
-    "rating": 7
+    "rating": 7,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992409118155472946/1e8cr60sk_exalted_v_wod_banner.jpg"
   },
   {
     "worldName": "Nobilis",
-    "rating": 10
+    "rating": 10,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/993433974946943066/rasmus-thomsen-creation.jpg"
   },
   {
     "worldName": "Rokka no Yuusha",
@@ -3577,7 +3689,8 @@
   },
   {
     "worldName": "Rumble Roses",
-    "rating": 3
+    "rating": 3,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992064833950318663/apps.60986.63650466205623259.ac5d51e7-5399-483d-b7c4-cec96461459f.jpg"
   },
   {
     "worldName": "Scott Pilgrim",
@@ -3597,11 +3710,98 @@
   {
     "worldName": "Ubau Mono Ubawareru Mono",
     "rating": 4,
-    "image": "https://cdn.novelupdates.com/images/2017/06/Screenshot_1.jpg"
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992079201970700308/Ubau.Mono.Ubawa.Reru.Mono.full.2509822.webp"
   },
   {
     "worldName": "Yuru Camp",
     "rating": 1,
     "image": "https://i.imgur.com/6S1glyQ.png"
+  },
+  {
+    "worldName": "Cultos Innombrables",
+    "rating": 10,
+    "image": "https://www.nosolorol.com/63/cultos-innombrables-papel.jpg"
+  },
+  {
+    "worldName": "Dead by Daylight",
+    "rating": 10,
+    "image": "https://cdn1.epicgames.com/offer/611482b8586142cda48a0786eb8a127c/EGS_DeadbyDaylight_BehaviourInteractive_S1_2560x1440-a32581cf9948a9a2e24b2ff15c1577c7"
+  },
+  {
+    "worldName": "Eve Online",
+    "rating": 7,
+    "image": "https://www.pcworld.com/wp-content/uploads/2022/05/Eve-Online.png",
+    "additional": "The pre-Capsuleer story starts at least 120 years before the canon story.",
+    "condition": [
+      {
+        "name": "Pre-Capsuleer",
+        "rating": 5
+      }
+    ]
+  },
+  {
+    "worldName": "Fire Force",
+    "rating": 5,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/993189983848513588/Screenshot_6.jpg"
+  },
+  {
+    "worldName": "InFAMOUS",
+    "rating": 6,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/993190205064487083/Infamous.jpg"
+  },
+  {
+    "worldName": "Left 4 Dead",
+    "rating": 7,
+    "condition": [
+      {
+        "name": "Left 4 Dead 2",
+        "rating": 7
+      }
+    ]
+  },
+  {
+    "worldName": "Lookism",
+    "rating": 2,
+    "image": "https://i.imgur.com/RLtrQsS.jpg",
+    "condition": [
+      {
+        "name": "Generation 0",
+        "rating": 3
+      },
+      {
+        "name": "Generation 1",
+        "rating": 2
+      }
+    ]
+  },
+  {
+    "worldName": "Redfall",
+    "rating": 6,
+    "image": "https://compass-ssl.xbox.com/assets/ff/2c/ff2ca940-5947-4c04-919f-834e2ff35394.jpg?n=Redfall_GLP-Page-Hero-1084_1920x1080.jpgdfall_ArkaneStudios_S4_1200x1600-2f567c0dbf7e69015b741fc9b52c8b91"
+  },
+  {
+    "worldName": "The Disastrous Life of Saiki K",
+    "rating": 2,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/993183426180042863/The-Disastrous-Life-of-Saiki-K-Watch-Order-Guide.jpg"
+  },
+  {
+    "worldName": "The Wandering Inn",
+    "rating": 5,
+    "image": "https://www.wlnupdates.com/cover-img/6355"
+  },
+  {
+    "worldName": "W.I.T.C.H.",
+    "rating": 5,
+    "image": "https://i.ibb.co/vkL2z8y/Witch-new-power.jpg",
+    "condition": [
+      {
+        "rating": 4,
+        "name": "Cartoon"
+      },
+      {
+        "name": "Comic Book",
+        "rating": 5
+      }
+    ]
   }
 ]

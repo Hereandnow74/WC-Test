@@ -1,5 +1,581 @@
 [
   {
+    "author": "OneEyedKing",
+    "reward": "20",
+    "budget": 1200,
+    "title": "Be a good hunter",
+    "conditions": [
+      {
+        "value": ""
+      }
+    ],
+    "objectives": [
+      {
+        "value": "Kill the pig",
+        "reward": "5",
+        "type": "Credits"
+      },
+      {
+        "reward": "5",
+        "type": "Credits",
+        "value": "Make sure she feels comfortable at the chapel"
+      }
+    ],
+    "source": "",
+    "loca": "Bloodborne",
+    "desc": "The little girl was orphaned (or was she) and shes going to the chapel for safety. Protect her and help her through these hard times.",
+    "image": "",
+    "scope": "Standard",
+    "rewardType": "Credits",
+    "uid": ""
+  },
+  {
+    "rewardType": "Other",
+    "loca": "To Aru series",
+    "reward": "You may keep the items or sell each individual object/set for 15 Credits. In addition, you gain the ability to freely convert any magic item or technological trinket from this world which you gain possession of in a process that takes 1 hour. In this state the object loses most of its combat abilities, but gains sexual characteristics befitting a “hentai version”. This process is reversible by the same method. Alternatively, you may gain 100 Credits.",
+    "conditions": [
+      {
+        "value": "Collect the Following items:"
+      },
+      {
+        "value": "1 Copy of the Hentainomicon, the book of perverted names."
+      },
+      {
+        "value": "1 Box with 3 tentacle monster eggs from your friendly neighborhood tentacle shop."
+      },
+      {
+        "value": "A collection of enchanted sex toys including an assortment of transformative anal plugs."
+      },
+      {
+        "value": "A do it yourself chemistry set for quick and dirty love potions, aphrodisiacs and the like."
+      },
+      {
+        "value": "Mystically enhanced bondage gear of submission and domination."
+      },
+      {
+        "value": "One high-quality Rolex time stop clock. (Blackboxed to only work for lewd things.)"
+      },
+      {
+        "value": "Avoid the attention of local authorities as far as possible."
+      },
+      {
+        "value": "You may only capture locals who have been affected by the target items as collateral. Though others are still affected by lures."
+      },
+      {
+        "value": "Only 1 Retinue member may join you on this mission to minimize attention."
+      }
+    ],
+    "source": "",
+    "image": "https://i.imgur.com/KjXJeKX.png",
+    "scope": "Standard",
+    "budget": 200,
+    "objectives": [
+      {
+        "type": "Companions",
+        "value": "We would like you to plant some fake leads in case people do notice that something is off. So please release at least 3 separate perverted items at different locations and make sure they get used to lead attention away.",
+        "reward": "Demia Duodectet from Interspecies Reviewers or 35 Credits."
+      }
+    ],
+    "title": "School Garden of Lust",
+    "author": "Heaven Canceler",
+    "desc": "Well due to some unfortunate accident, a supply drop of various store equipment has been deposited in the wrong dimension. Once the accident was discovered, the materials were unfortunately already gone, likely picked up by some of the locals. Most likely they have found temporary owners that are putting them to use currently. This is where you come in, we would ask you to recollect these objects and make sure that they cannot be traced back to us as far as possible. Unfortunately the objects in question have some degree of tracing protection so finding them won’t be as simple as to scry for magic objects of perversion. Though at least that should make sure that any local forces won’t immediately know the objects were released here. All of them have a certain amount of magic cast on them that “encourages” people to use them. So it is very likely that when you find any of these objects, they will already be in use. Ah, before we forget it, the supply drop was released in a place called ‘School Garden’ within Academy City. We believe it's some kind of all-girl’s exclusive area?",
+    "uid": ""
+  },
+  {
+    "budget": 85,
+    "image": "https://i.imgur.com/QhuOsvP.jpg",
+    "source": "",
+    "reward": "20 credits and Template Stacking for one character from the organization you joined.",
+    "rewardType": "Other",
+    "title": "Mister Mysterious",
+    "scope": "Standard",
+    "objectives": [
+      {
+        "value": "Become a member of both organizations at the same time.",
+        "type": "Perks",
+        "reward": "Template Stacking for one character from the other orginization."
+      },
+      {
+        "type": "Perks",
+        "value": "Don't let anyone know you have supernatural abilities",
+        "reward": "Template Stacking Anya"
+      }
+    ],
+    "author": "Trismegistus",
+    "conditions": [
+      {
+        "value": "Be recognized as a member of the organization."
+      },
+      {
+        "value": "Remain a member for at least 2 months."
+      }
+    ],
+    "loca": "Spy X Family",
+    "desc": "Become a member of Wise or Garden. You do not need to be an official member so long as you provide work for them on a semiregular basis.",
+    "uid": ""
+  },
+  {
+    "scope": "Grand",
+    "author": "bakami",
+    "conditions": [
+      {
+        "value": "No member of the Fantastic four or Characters under their title can be Captured"
+      },
+      {
+        "value": "the affect of lures are greatly reduced"
+      },
+      {
+        "value": "Susan storm and Kaila must marry you and be in happy relationship for the mission to be complete. divorcing Reed is optional."
+      },
+      {
+        "value": "You and your companions cannot time travel."
+      },
+      {
+        "value": "The council of Reeds will interfere after 3 months. ( they can be captured.)"
+      },
+      {
+        "value": "Your wedding(s) must be televised/streamed throughout the universe, and spider-man must take the  pictures. "
+      },
+      {
+        "value": "This mission begins after Johnny as met Kaila and after Reed and Susan have married."
+      }
+    ],
+    "source": "",
+    "title": "Revenge is a dish best served on a wife.",
+    "objectives": [
+      {
+        "value": "Make a viral sex tape featuring Johnny Storm being sad.",
+        "reward": "69",
+        "type": "Credits"
+      },
+      {
+        "type": "Credits",
+        "reward": "150",
+        "value": "Cure Ben Grimm's condition and  give him powers of equal strength."
+      },
+      {
+        "type": "Companions",
+        "reward": "Galacta ",
+        "value": "  Be the one to help  Franklin regain his  full power"
+      },
+      {
+        "reward": "200",
+        "type": "Credits",
+        "value": "Marry Valeria Richards "
+      },
+      {
+        "reward": "100",
+        "type": "Credits",
+        "value": "Attend Ben Grimm's Wedding as his best Man,  the  Maid of honor, or the priest "
+      },
+      {
+        "value": "Marry Doom.",
+        "reward": "latveria will be added to your demiplane",
+        "type": "Companions"
+      },
+      {
+        "value": "Join the FF",
+        "type": "Credits",
+        "reward": "25"
+      },
+      {
+        "reward": "a Baxter Building and all its equipment to be added to your Demiplane",
+        "value": "Reed and Johnny both attened any of your weddings",
+        "type": "Other"
+      }
+    ],
+    "rewardType": "Companions",
+    "image": " https://comic-watch.com/wp-content/uploads/2021/06/Reaction-1.jpg",
+    "loca": "Marvel (616)",
+    "budget": 300,
+    "desc": "You know who has it too good? Johhny Storm and  Reed Richards. Why does HE get to be married, have two(.5?) children. A stable life, a home, happiness?! And that Johnny...Fuck him for fucking my...\nGo and fuck reed's  wife, johnny's sister. and even  johnny's soul mate, Kaila.  Marry these woman, make them happy and the job his done,  I'll even through in a fool named Zora for free.\n-Signed and sponsored by DR.D ",
+    "reward": "Susan Storm with a tier increase of 1. Kaila. Zora Vukovic.",
+    "uid": ""
+  },
+  {
+    "scope": "Standard",
+    "objectives": [
+      {
+        "type": "Other",
+        "reward": "1 TS for a Fertility Deity of your choice or 15 Credits.",
+        "value": "Impregnate all the Gorgon sisters with their permission."
+      },
+      {
+        "value": "After saving the three Gorgon sisters, capture Athena and humiliate her by making her the sister’s maid and slave in revenge.",
+        "type": "Other",
+        "reward": "You may now at will, turn Athena and the Gorgon Sisters into Class Card as exists in Fate/Kaleid. They may be installed by anyone with some magical skills and power to temporarily gain their abilities. Alternatively take 180 Credits"
+      }
+    ],
+    "author": "Heaven Canceler",
+    "rewardType": "Other",
+    "conditions": [
+      {
+        "value": "You must defeat and capture Gorgon Medusa without killing her and also bind her sisters Stheno and Euryale."
+      },
+      {
+        "value": "You will be inserted 3 days before Gorgon Medusa devours her sisters. Should you be too late without a method of resurrecting them, you fail the mission. if you let Gorgon die by Perseus hands after she has eaten her sisters, you fail period."
+      },
+      {
+        "value": "Your retinue may not directly take part in the mission, though they may supply you with equipment, magic blessings or the like."
+      },
+      {
+        "value": "Within 1 week of the above mentioned deadline, Perseus will come to the Shapeless Isle to kill the Gorgon. You must of course stop him from doing that. Warning, the greece gods may give him better equipment or otherwise stack things against you if they notice you."
+      },
+      {
+        "value": "During the main mission, only the Gorgon sisters can be bound. Though lures are still effective on others."
+      }
+    ],
+    "image": "https://i.imgur.com/g3g7hgU.png",
+    "title": "Fate Slayer - Godlayer",
+    "loca": "Nasuverse",
+    "budget": 400,
+    "desc": "Upon the Shapeless Isle lies a terrifying monster, its eyes turn those that meet its gaze to stone. Its fangs are like poison and its strength is that of a hundred men. Imprisoned on that island are a pair of beautiful maidens, waiting to be rescued and who will surely share the embrace of any hero who steals them away from this land. Such is the false tale told to many a poor fool sent to their doom. One after another, they are killed and their deaths increase as Medusa’s hunger rises, growing to enjoy the slaughter of these men that would steal away her beloved sisters. Soon she will turn into a beast, soon the tale will come to an end and then a hero will come to slay the monster, never knowing of the true tragedy that had taken place here. Your purpose is simple, to avert this tragedy entirely. For this purpose, you will be inserted on mainland Greece and then need to make your way to the shapeless isle and stop the tragedy in its make.",
+    "reward": "Medusa may now freely swap between her base, Lancer and Gorgon form. With an optional personality change at your discretion. They may split into 3 independent forms too. Her sisters each gain a TS for a deity of your choice. Alternatively you may take 190 Credits instead. (160 for Gorgon’s upgrade, 30 for the Sister’s TS)",
+    "source": "",
+    "uid": ""
+  },
+  {
+    "source": "",
+    "rewardType": "Credits",
+    "reward": "50",
+    "budget": 140,
+    "objectives": [
+      {
+        "value": "You and your retinue are limited to T6 or lower. If any member is above this, they will be limited to T6 for the duration of this mission.",
+        "type": "Credits",
+        "reward": "50"
+      },
+      {
+        "value": "Grant the Equalists a non-Bending based superpower such as RWBY Aura or similar.",
+        "type": "Perks",
+        "reward": "Talent Sharing for up to two Talents you have purchased for free or 15 credits."
+      },
+      {
+        "value": "Gain the assistance of the Avatar for the movement without the use of any overt mind control.",
+        "type": "Perks",
+        "reward": "Template Stacking 1&2 of Korra's Powers"
+      }
+    ],
+    "author": "TDon123",
+    "title": "An Equal Victory",
+    "scope": "Standard",
+    "conditions": [
+      {
+        "value": "Ensure the Equalist movement wins."
+      }
+    ],
+    "image": "https://i.pinimg.com/originals/c5/cd/f0/c5cdf07dd441b074e30a31b0d4bb176d.jpg",
+    "loca": "Avatar - Legend of Korra",
+    "desc": "A client wishes to see a world in which the Equalists have a decisive victory over the Benders of the world. This can be by taking away all Bending or by arranging a peaceful solution that ensures non-Benders are treated equally, however you can manage to ensure equality between non-Benders and Benders.",
+    "uid": ""
+  },
+  {
+    "objectives": [
+      {
+        "type": "Other",
+        "value": "Comic-based world only: During the Astral Drops' rebellion, bring them to the verge of Capture and then fuse them back permanently with their still free originals",
+        "reward": "+1 Tier on the Guardians once they're Captured"
+      },
+      {
+        "reward": "TS 1 as Phobos",
+        "value": "Capture Miranda by confession",
+        "type": "Other"
+      },
+      {
+        "reward": "One level of Transhuman Heritage (Aethermorph type)",
+        "type": "Other",
+        "value": "Capture Elyon"
+      },
+      {
+        "type": "Other",
+        "value": "Capture Orube",
+        "reward": "TS 1 with a character with the Combatant characteristic"
+      },
+      {
+        "value": "Capture the Guardians' mothers and give them powers taken from someone else",
+        "type": "Other",
+        "reward": "One level of Transhuman Heritage (Aethermorph type)"
+      },
+      {
+        "value": "Capture the previous generation of Guardians",
+        "type": "Other",
+        "reward": "One level of Transhuman Heritage (Aethermorph type)"
+      }
+    ],
+    "image": "https://i.ibb.co/jfJ2CZP/220702kisekae.jpg",
+    "title": "Bewitching Hour on Two Dimes",
+    "author": "Ratcatcher",
+    "loca": "W.I.T.C.H.",
+    "reward": "2000 credits, Kandrakar as either your Demiplane or Dungeon",
+    "source": "",
+    "rewardType": "Other",
+    "budget": 0,
+    "scope": "Grand",
+    "desc": "Oh, my, cousin dear, what have they done to you?! Oh, yes, we haven't met yet. I'm your distant cousin, Mesméra, and since you've been stuck with this \"Two Dime\" mode, I'm giving you a leg up. A nice world for you to build yourself up, the universe known as W.I.T.C.H. See these magical girls? They're yours for the taking. Same as this world of Kandrakar. And anything you want in this universe, but the five Guardians and Kandrakar are essential. OK?",
+    "conditions": [
+      {
+        "value": "Chargen Only, Two Dime challenge. Start as Extra"
+      },
+      {
+        "value": "Mesméra will be your Patron"
+      },
+      {
+        "value": "Free Trace Defence x1. Trust us, you'll need it"
+      },
+      {
+        "value": "The world is a combined version of both the original comic, the cartoon, and a few fan works. The world will be based mainly on either the comic book or the cartoon, but aspects of everything else will show up from time to time"
+      },
+      {
+        "value": "You must Bind by love declaration Will, Irma, Taranee, Cornelia, and Hay Lin"
+      },
+      {
+        "value": "Every member of the Council of Kandrakar must be Bound in any way"
+      }
+    ],
+    "uid": ""
+  },
+  {
+    "title": "Anyone can wear the mask",
+    "objectives": [
+      {
+        "reward": "50",
+        "value": "succeed with a symbiote on yourself or one of your partners",
+        "type": "Credits"
+      },
+      {
+        "reward": "30",
+        "type": "Credits",
+        "value": "have an orgy on a web or use web for sex 10 times"
+      },
+      {
+        "type": "Credits",
+        "value": "Kill or capture Mephisto ",
+        "reward": "500"
+      }
+    ],
+    "reward": "100",
+    "source": "",
+    "loca": "Marvel (world with a spider-man)",
+    "image": "https://i.redd.it/ktp28lzjkn931.png",
+    "author": "bakami",
+    "scope": "Standard",
+    "budget": 100,
+    "conditions": [
+      {
+        "value": "Substiute   a spider-person for example peter himself or Spider-gwen, or Miles as your origin.  "
+      },
+      {
+        "value": "create and maintain a harem of at least three characters without using lures or captures on harem members"
+      },
+      {
+        "value": "be a superhero with a secret identity."
+      },
+      {
+        "value": "be in a health relationship with harem members for 1 year"
+      }
+    ],
+    "desc": "Some guys have all the luck and some have none of it but a lot of chances.\nSpider-people are those types of people. No more! Break the chain, defy fate, spin your webs and get laid.\nLive out the life as your favorite spider and make it a kinky.\nAnybody can be Spider-Man and everybody loves Spider-Man.",
+    "rewardType": "Credits",
+    "uid": ""
+  },
+  {
+    "desc": "Scott W. Pilgrim is ultimately an idiot who got in a lot of trouble by poor communication with his love interests... And a client took exception to that. You, young Contractor, will take his place and make sure he doesn't break up with Envy... And since our client is a fan of the genre you'll then make a harem.",
+    "title": "YOUR Precious Little Harem",
+    "conditions": [
+      {
+        "value": "Chargen only"
+      },
+      {
+        "value": "You Substitute as Scott between him leaving Sonic & Knuckles and his break-up with Envy, keeping his skills in additions to yours. Depending on your preference you can take his name and looks or maintain yours adjusted for your Talents. Costs are waived."
+      },
+      {
+        "value": "Envy will leave for Montreal to form The Clash at Demonheads, and cannot be Captured or subjected to overt forms of mind control until she comes back with the band. In the meantime you must maintain a distance relationship with her. Even then you can't capture her directly, you must make her publicily claim you as her boyfriend to Capture her."
+      },
+      {
+        "value": "You must NOT get romantically involved with Knives, Ramona, or Kim until after Envy has been Captured. You must however become or remain their friend."
+      },
+      {
+        "value": "Once Envy has been Captured you can form a harem that will include at least Envy, Knives, Ramona, Kim, and Lisa Miller."
+      },
+      {
+        "value": "Whatever you do, Gideon will assume that you got romantically involved with Ramona and send the League after you, even if you prove him wrong. ESPECIALLY if you prove him wrong."
+      },
+      {
+        "value": "Unless you have full Corruption Defense, Gideon can and will access Scott's pre-substitution memories. Yours and those formed after the Substitution are off-limits"
+      }
+    ],
+    "rewardType": "Credits",
+    "scope": "Grand",
+    "objectives": [
+      {
+        "value": "Reabsorb Nega Scott",
+        "type": "Other",
+        "reward": "Full Corruption Defense or its equivalent in credit plus restauration of Scott's altered memories"
+      },
+      {
+        "type": "Other",
+        "value": "Seduce Roxie Richter before she comes for you",
+        "reward": "Soul Talent and TS2 of a character with the Combatant characteristic"
+      },
+      {
+        "value": "Seduce Lynette Guycott while she's secretly dating Todd",
+        "type": "Other",
+        "reward": "One level in a Transhuman Heritage of your choice"
+      }
+    ],
+    "loca": "Scott Pilgrim",
+    "image": "https://i.ibb.co/3zZ0ZpH/scott-s-precious-little-harem-by-turtwig123-d2xlb9v-fullview.jpg",
+    "reward": "200 credits plus Corruption Defense x2 or its price in credits",
+    "budget": 15,
+    "author": "Ratcatcher",
+    "source": "",
+    "uid": ""
+  },
+  {
+    "objectives": [],
+    "desc": "Upon re-enacting various activities in the life of Sheogorath, the Daedric Prince of Madness, the Hero of Kvatch successfully mantles Sheogorath as a form of apotheosis in order to stop Jyggalag's (The Daedric Prince of Order) Greymarch. \nThis means that by the end of Oblivion, The Hero of Kvatch has been transformed into Sheogorath's full murderously cheesy glory.\nBring the Hero back.",
+    "conditions": [
+      {
+        "value": "The Hero of Kvatch must either be prevented from becoming Sheogorath whilst also preventing the Greymarch."
+      },
+      {
+        "value": "Or Sheogorath, as seen in TES: Skyrim, must somehow regain his old personality of The Hero of Kvatch"
+      }
+    ],
+    "reward": "600 credits",
+    "image": "https://images6.alphacoders.com/108/thumbbig-1080674.webp",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Un-Mantling",
+    "loca": "The Elder Scrolls",
+    "author": "PaxCruento",
+    "scope": "Standard",
+    "budget": 250,
+    "uid": ""
+  },
+  {
+    "title": "Pick a God, any God",
+    "source": "",
+    "scope": "Standard",
+    "author": "Fetysh",
+    "reward": "You gain a divine spark of your own, and can grant/monitor/update falna, as a god. Your falna and how it works is up to you, allowing you to create your own leveling system, and not have to use Ouranos' version. It does not grant you any other abilities.",
+    "rewardType": "Other",
+    "loca": "Danmachi",
+    "objectives": [
+      {
+        "reward": "Your deity gains the ability to grant/monitor/update falna to any worshipper of theirs in any world, and can directly answer prayers if they so choose and it's within their power to do so.",
+        "value": "Start a brand new religion to your god. It must have at least 1000 worshippers before you leave Danmachi",
+        "type": "Other"
+      }
+    ],
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/993192913884414013/ecaeb5f948cccc39cac45133a6eeddba.jpg",
+    "desc": "Don't enjoy the canon gods in Orario? Think they're all dicks/cunts? Want to choose your own god through all the fiction, but don't want to wait to go to Danmachi later where beating the dungeon is easy so you won't end up getting any excelia by that point?\nWell, here you go! Select any deity up to tier 10. That deity will go with you and be bound without it's divine power, just like the Orario deities, and arrive with you. It's tier will be set to it's base race, and you'll have to pay for that tier, so a human deity like Yahweh would cost a tier 2, while a dragon deity like Bahamut would cost a tier 8 and probably still be too expensive. \nIn order to unlock the god's power, you must pay the difference, just like Power Swap. You cannot leave the Danmachi world until you have paid to unlock your chosen god's power.",
+    "conditions": [
+      {
+        "value": "Must pay off the different in your deity's new tier to it's original tier"
+      }
+    ],
+    "budget": 225,
+    "uid": ""
+  },
+  {
+    "conditions": [
+      {
+        "value": "No Debt allowed"
+      },
+      {
+        "value": "No Origin starting above T5"
+      },
+      {
+        "value": "Universal Calibration, and Meta Shifts are disabled"
+      }
+    ],
+    "reward": "Anytime you wish after you've 'saved' the sleepers or 5 years after arrival: All 400,000 former sleepers are captured and your least wanted half are sold for an average of [ 300 credits ] due to some T5 super-geniuses already among them. You may enhance their tiers before sale for more credits. The other half may be kept and is worth no credits unless raised above copper tier",
+    "desc": "\tOur low-tier R&D division could use a little boost in 'employees' due to too many 'promotions'. Using whatever means, transform all salvageable sleepers on The Hope into lewdified hentai versions of themselves while keeping their scientific minds, creativity, and intellect. Try and avoid straight up binding everything and modifying them with our default methods, will you?\n\tYou could modify the thawing procedures with superscience retro-viral elements to rewrite their DNA into lowering inhibitions, increasing lust, and changing their bodies. Or you could use the magical debt owed from saving them to tell their minds to not resist your magic and then let 400,000 tamed mad-scientists take care of the rest. Or perhaps you could claim the local star and use your energy to infect the souls of everyone who needs its light, eventually capturing the entire solar system.\n\tAll that matters here is the lewdifying of The Hope so you can sell the sleepers to the company, as Humanity in this universe is oddly instinctively adaptable to Company R&D safety protocols; 200,000 mad-engineering compatible Humans, cloned over 43 quadrillion times should keep your local milirad of The Company ticking for a few more days of SCIENCE!",
+    "loca": "The Outer Worlds",
+    "title": "The Lewder Worlds",
+    "source": "",
+    "rewardType": "Credits",
+    "scope": "Grand",
+    "budget": 85,
+    "author": "dikdik",
+    "image": "https://i.imgur.com/y93PN8r.png",
+    "objectives": [
+      {
+        "type": "Perks",
+        "reward": "[ Meta Shift II ], and access to an app dedicated to Contractors sharing/selling slider presets. Dare you enter their magical realm?",
+        "value": "Pave the way for The Hope by changing Halcyon's morals and values into your lewd utopia"
+      },
+      {
+        "reward": "[ Blessed Talent ], and it now applies to Monster-girls and Aliens",
+        "value": "Modify at least 5 of the voracious beasts of Halcyon into craving another kind of meat, after transforming them into something non-murdery, decently intelligent, and bangable. You must fuck each kind created at least 20 times",
+        "type": "Perks"
+      },
+      {
+        "reward": "[ Niven? Never Heard of Him ] no longer has any prerequisites. It also has no built in source of surface heat or light either. If you have Pocket Apartment, only a square KM around your house will be barely habitable by default. The app can only control area that you own through Sweet Home Expansion until you buy Pocket Star",
+        "value": "Go back to Earth and spread the love. The Sol system must be lewdified and have monstergirls introduced and normalized",
+        "type": "Perks"
+      }
+    ],
+    "uid": ""
+  },
+  {
+    "image": "https://i.imgur.com/ou1fEev.png",
+    "objectives": [
+      {
+        "type": "Other",
+        "value": "On at least one occasion, bring Loki to an orgasm in a public space without anyone else noticing you are present.",
+        "reward": "Covert Talent + Imp from Worm or 14 Credits"
+      }
+    ],
+    "desc": "Ah Loki, the Deity of mischief and trickery, who has commited all manner of deeds and fathered and mothered children alike… oh wait that isn't the one. Your job is to go to the city of Orario and become Loki’s lover and absolutely rock her world. Honestly, the girl is so needy that if you do things right, it shouldn’t be particularly hard to get her to give it a try as long as you aren’t ugly as sin. From then on, we'll go crazy. We want you to break her in and sex her up as much as possible. Make her addicted to cock, tentacles or pussy, or all of them and more. We don’t mind the exact details. But here comes the twist, no matter what, your existence must remain a secret to Loki’s familia, friends, rivals and the like. Specifically, they cannot see you, meet you or otherwise know with certainty that you really exist. Even if Loki begs you, you cannot reveal yourself to the public or let her prove that you are her lover.",
+    "scope": "Standard",
+    "rewardType": "Other",
+    "title": "Loki’s Secret Lover?",
+    "author": "Heaven Canceler",
+    "source": "",
+    "budget": 150,
+    "reward": "Komeiji Koishi from Touhou + Jack the Ripper from Nasuverse or 200 Credits",
+    "loca": "Danmachi",
+    "conditions": [
+      {
+        "value": "Loki must get absolutely hooked on you, no matter how frustrated she is about your ‘secrecy’, she must keep coming back to you."
+      },
+      {
+        "value": "You may not bind anyone except Loki for the duration of this mission."
+      },
+      {
+        "value": "Avoid being discovered by anyone in the forbidden categories for 3 weeks. Also make sure that no proof of your existence gets in their hands."
+      },
+      {
+        "value": "This universe really cannot stand the idea of certain people getting laid, Loki is high on that list. Fate will try to stop you from fucking her brains out, but if you are careful that should be fine. Just be aware of unlucky incidents and random people walking in on you."
+      }
+    ],
+    "uid": ""
+  },
+  {
+    "budget": 140,
+    "desc": "everybody loves a good blood sport …well maybe not you but WE certainly do, here's the gig we enter you and you win that's it, take your squad to victory whether purchased teammates or a couple of randos, win this thing preferably as messy as possible ",
+    "author": "jollymerr",
+    "rewardType": "Other",
+    "loca": "Apex Legends",
+    "conditions": [
+      {
+        "value": "you'll be limited down to tier 5 capabilities"
+      },
+      {
+        "value": "in house gear: no schizo tech tech from other realities you'll be provided with some basic body Armor and a jump pack after that you'll have get loot like everyone else"
+      }
+    ],
+    "title": "Apex Legend",
+    "source": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/993193283239018556/Apex-Legends-Wallpaper.jpg",
+    "scope": "Standard",
+    "reward": "50 credits and an auto capture of one of the apex legends",
+    "objectives": [],
+    "uid": ""
+  },
+  {
     "image": "https://cdn.donmai.us/original/a3/12/__toga_himiko_boku_no_hero_academia_drawn_by_mizuki_mau__a3121154fa71224bbfc54238b659792d.png",
     "title": "Toga's Hero Academia",
     "desc": "Toga Himiko's fate is a sad one, driven to insanity and villainy by parental abuse. Let's try and avoid at least part of it: track down Toga before she joins the League of Villains and get her into U.A. to reform.",
@@ -36,7 +612,7 @@
     "budget": 100,
     "source": "",
     "loca": "My Hero Academia",
-    "uid": ""
+    "uid": "hNjfO"
   },
   {
     "loca": "Scott Pilgrim",
@@ -78,7 +654,7 @@
     "title": "YOU vs the World",
     "scope": "Grand",
     "source": "",
-    "uid": ""
+    "uid": "nkGAG"
   },
   {
     "scope": "Standard",
@@ -125,7 +701,7 @@
         "value": "Remain number 1 for at least 2 Years. "
       }
     ],
-    "author": "SunshineDreamer",
+    "author": "DepressedAlucard",
     "uid": "jhhTg",
     "objectives": [
       {
@@ -218,10 +794,10 @@
       }
     ],
     "rewardType": "Other",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992790782270513222/211376.jpg",
     "desc": "Upon entering the world of Homestuck you are given a choice whether or not you and your companions want to be added in as bonus players to any session including caliborn's or Calliopes.\n\nUpon choosing yes and selecting a session the mission begins 1 month before the respective game begins. You and each of your companions are granted a class and aspect that reflects you each best. You are each granted a house and computers of your won design. You each obtain a Sylladex wallet and Strife Deck.\n\nYou must see the game through to the end and have your session spawn a Genesis frog of its own regardless of the original state or type of session in canon. ( in sessions originally without space or time players it is recommend you or one of your companions fulfill the role less you fail the mission from the very start.)",
     "reward": "The ultimate Reward which can be fused to your demiplane/dungeons ",
-    "title": " Sburb Game of the year Company Edition",
+    "title": "Sburb Game of the year Company Edition",
     "source": "",
     "scope": "Grand",
     "loca": "homestuck"
@@ -254,7 +830,7 @@
     "reward": "Moon Castle as your Grand Manor, ten Sweet Home Expansions",
     "rewardType": "Other",
     "scope": "Grand",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992790127355109406/sme-1280-1623097055383.jpg",
     "desc": "Sailor Venus is where the Sailor Moon universe started. If Moon and the others are so effective is because Venus trained them, and they admire her so much that when most of the group was depowered they just assumed Venus had either resisted or regained her powers first. Yet, many mistake her for just Moon's funny clone. Let's change that, and remind everyone she's the Goddess of Love and War by having her conquer the others... But first conquer her yourself.",
     "title": "Venus Victa Sed Victrix",
     "source": "",
@@ -332,7 +908,7 @@
   {
     "desc": "lets face it the jedi seem to think 'balance' means: light overwhelming and the sith …are at best a bunch of unstable emo's ,we're a bit tired of the eternal struggle, your mission should you choose to accept it is to create an order of force users between the Ashla and the Bogan a Bendu order in Laymen's terms an order of grey jedi or grey sith in order to achieve balance",
     "objectives": [],
-    "image": "https://i.imgur.com/INe8qkE.png",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992791364431515668/maxresdefault.jpg",
     "reward": "250 credits",
     "author": "jollymerr",
     "uid": "jhqqg",
@@ -417,7 +993,7 @@
     "title": "Raptor's Nest",
     "reward": "A Romulan Warbird of your choice as a catch-a-ride",
     "desc": "In 2387 the sun of the Romulan homeworld went nova, killing billions that couldn't be evacuated in time and destroying precious infrastructure. The population could have survived in shelters long enough to be evacuated if the sun had been destroyed in a non-explosive way, but Spock, who had the necessary materiel, couldn't arrive in time. Give him a lift and make sure he arrives in time.",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992792811281846373/Screenshot_1.jpg",
     "author": "Ratcatcher",
     "uid": "Ehgfe",
     "loca": "Star Trek"
@@ -440,9 +1016,9 @@
     "objectives": [],
     "budget": 55,
     "author": "jollymerr",
-    "image": "https://i.imgur.com/4XAadGB.jpg",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992792279083389030/1290608.webp",
     "desc": "let's face it despite the fact that our corporation spans the omniverse we could always use another shadow, another hand in the dark so to speak. you'll be sent on covert operations: assassination, espionage those sorts of things, don't be too worried we're not going to throw you at something you can't handle\n(Tier 1 missions: kill a few thugs that stumbled into some info, steal a usb from a low security building)\n(Tier 2 missions: get rid of a low level government official police chief, mayor someone like that or assassination of a tier 4-5 character)\n(Tier 3 missions: break into a high security military base, kill the president or a 6-7 tier character)",
-    "loca": "General (Any)",
+    "loca": "Generic",
     "scope": "Standard",
     "uid": "oxjF7"
   },
@@ -504,13 +1080,13 @@
     "author": "Ratcatcher",
     "scope": "Standard",
     "title": "Gals Panic",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992793415165157436/9feccca35b57e82f768dede148df7428aa-brie-larson.2x.rsocial.w600.webp",
     "desc": "Scott Pilgrim's world is based on music and video games. Your mission is to form a band out of Scott's love interests and a couple other girls, and see them succeed.\nWait, where's the video game? It's Gals Panic, the name of the band!",
     "budget": 25,
     "uid": "86WW7"
   },
   {
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992795346260463626/Screenshot_2.jpg",
     "reward": "Two levels on a heritage of your choice and the equivalent of the purchase price of your former Retinue members and Sailor Venus",
     "conditions": [
       {
@@ -541,7 +1117,7 @@
   {
     "budget": 140,
     "loca": "My Hero Academia",
-    "author": "Sunshine Dreamer",
+    "author": "DepressedAlucard",
     "title": "All For Me",
     "image": "https://cdn.discordapp.com/attachments/894482961578221578/989847221115686922/All_for_one.jpg",
     "objectives": [],
@@ -571,11 +1147,11 @@
         "value": "Happy accidents don't count: if your trying to set up Jaune Arc with Weiss, he can't just stumble into neo when she's horny and looking for sum fuk. it only counts if it's an intentional part of your plan"
       }
     ],
-    "loca": "General (Any)",
+    "loca": "Generic",
     "author": "jollymerr",
     "title": "Being a true Bro",
     "source": "",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992795976790196316/maxresdefault_1.jpg",
     "reward": "20 points for every person you get laid ",
     "objectives": [
       {
@@ -590,7 +1166,7 @@
   },
   {
     "scope": "Standard",
-    "loca": "General (any)",
+    "loca": "Generic",
     "desc": "listen, no matter how many human rights violations (And violations of other species rights) we've committed and will continue to commit at our core we're a porn company ...so with that said get to seducing \n\u2026I mean it our patron want to see some actual effort for once.",
     "title": "We ARE a porn company",
     "budget": 55,
@@ -684,7 +1260,7 @@
   {
     "reward": "Instant capture for Furinki Miu, 200 credits",
     "budget": 400,
-    "image": "https://i.redd.it/duqxuatm2xh81.jpg",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992796443133890590/Screenshot_3.jpg",
     "loca": "History's Strongest Disciple Kenichi",
     "desc": "Furinji Miu is an amazing girl. Beautiful, flexible, agile, knows martial arts and can trounce a dozen yakuzas with ease, can cook, sew, and manage money, and she's amazing with children - in no small part because the martial arts masters she lives with have that kind of maturity. There's exactly one flaw in a potential relationship with her: you first have to defeat her grandfather in single combat, and he's called the Invincible Superman for a reason. Go, young contractor, go and woo her, and remember: Furinji Hayato doesn't kill.",
     "conditions": [
@@ -720,7 +1296,7 @@
       }
     ],
     "desc": "There's no Sailor Earth: Earth's Sailor Crystal belongs to Chiba Mamoru, a male, and since all Sailor Senshi must be women, Earth got shafted. Your job is to correct this by taking the Golden Crystal from Mamoru and giving it to the proper owner, Osaka Naru.",
-    "image": "https://i.ibb.co/mXkY1bm/d2rc5je-b69cfd77-2b36-45cb-99b6-ae145af920d2.jpg",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992797121851953222/Screenshot_4.png",
     "loca": "Sailor Moon",
     "objectives": [],
     "reward": "Instant Capture of Naru as Sailor Earth",
@@ -744,7 +1320,7 @@
       }
     ],
     "desc": "A native of this world, a Diaspro girl, contacted us to solve her problem: she is a princess raised practically from birth as the future wife of Prince Sky of Heraklyon and, eventually, queen and actual ruler, but he fell for another girl, Bloom. You need to Capture her and all her friends to eliminate her competition and insure nobody will discover she's behind it.",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992797543559856209/maxresdefault_2.jpg",
     "loca": "Winx Club",
     "objectives": [
       {
@@ -834,7 +1410,7 @@
       }
     ],
     "desc": "one way or another Unmake Widowmaker, whether by undoing the brainwashing and returning her to Amelie Lacroix or reverse brainwasher her yourself ,get her back on the side of good ...or your own side whatever that may be",
-    "image": "https://i.imgur.com/CTBltoB.jpeg",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992798653079105597/Screenshot_5.jpg",
     "loca": "Overwatch",
     "objectives": [
       {
@@ -954,7 +1530,7 @@
       }
     ],
     "desc": "Via your actions and efforts, you must create a Lewd Mending Rune and apply it to the shattered Elden Ring. You must have an individual to embody, embrace, and exult in Lewdness in all of its forms to develop an internal logic of lewdness that may then be extracted and applied to the Elden Ring, providing a proper foundation once more.",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992799340349366272/Screenshot_7.jpg",
     "loca": "Elden Ring",
     "objectives": [
       {
@@ -991,7 +1567,7 @@
       }
     ],
     "desc": "As a Demon Lord, you must defend your Dungeon core from both adventurers and other Demon Lords. choose an element(Fire, Wind, Water, Wood, Death, Dark, Time...ETC) and protect your dungeon from attacks.",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992799964403093524/Primeras-impresiones-how-not-to-summon-a-demon-lord-elPalomitron-2.webp",
     "loca": "Demon Kings Town Planning! ~The Strongest Dungeon is a Modern City",
     "objectives": [
       {
@@ -1044,7 +1620,7 @@
       }
     ],
     "desc": "The Clone Wars - a conflict between the Galactic Republic, a well-intentioned galactic government that was saddled with insane levels of corruption and manipulated by an evil overlord, and the Confederacy of Independent Systems, well-meaning rebels that were saddled with morally bankrupt corporations and manipulated by the same evil overlord. Whoever won, everyone but the evil overlord lost. Let's change this: become a third side and conquer both Republic and Separatists.",
-    "image": "https://i.ibb.co/G0hLYqX/Battle-over-Coruscant.jpg",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992800665212567672/fMbd6Y.webp",
     "loca": "Star Wars",
     "objectives": [
       {
@@ -1221,7 +1797,7 @@
       }
     ],
     "desc": "Ladies and Mentlegen, you have heard it all before... Poor Taylor, the queen of escalation, blablabla...\nYou can now help her out(though only after the locker) as her very own Siberian!(Lite).\nYes yes, you don't get given her invincibility or other stuff she has(unless you count bigger Boobas).\nYou got to take care of her, make her feel loved and not let her know about the WC that helps her out. \nStarting off with the ability to Phase shift or how the Nasuverse calls it and your own body brought to Taylor's age and to the prime, around tier 3 to 4... That's it, the rest you gotta buy. \nNow let's see the Conditions.\nMake the lady have a Happy end, feel loved and be able to survive Golden Morning without your help. (Instant end if you are able to make her a T10 without binding her, while she loves you.)\n(First day, all the defense are maxed out even if you have not bought any)",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992801120655245482/a0c622af61cddabae92a4aa647e279db.png",
     "loca": "Worm",
     "objectives": [
       {
@@ -1326,7 +1902,7 @@
       }
     ],
     "desc": "Trixie Tang never forgot Timmantha. She's her secret desire. Your job is to give her what she wants: you must get Timmy Turner to wish himself back into Timmantha FOR GOOD, and then deliver her to Trixie.",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992802337833885726/d5ambod-4ea88d4e-019f-4cf4-92de-7067fe222c8d.png",
     "loca": "Fairly Oddparents",
     "objectives": [],
     "reward": "Wanda Fairywinkle",
@@ -1353,7 +1929,7 @@
       }
     ],
     "desc": "The spirit beast race requests urgent help, their fate is destruction as long as the current trend continues. Replace at least three of the five current God Kings with your people and change the Universe rules that bind them in that path.",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992802775362719764/Deep_Sea_Demon_Whale_King1.webp",
     "loca": "Douluo Dalu",
     "objectives": [],
     "reward": "Two TX tickets and full set of 100.000 years class spirit bones",
@@ -1581,7 +2157,7 @@
       }
     ],
     "desc": "It is better to Rule in Hell, then Serve in Heaven.\nThis is your mission statement.\nYou must aquire control of Hell, or a suitable hell dimension. The prior overlord of said Hell may not be captured or sold. Over 80% of he chosen plane MUST recognize you as ruler.",
-    "image": "https://static.wikia.nocookie.net/the-justice-league/images/2/2e/Apokolips.jpg",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992803008385658922/1_Hell_on_Earth.jpg",
     "loca": "Any",
     "objectives": [],
     "reward": "1 TX ticket, 2500 credits toward demiplane/dungeons",
@@ -1736,7 +2312,7 @@
       }
     ],
     "desc": "The Flaxans repeated invasions of earth and planets across the multiverse is just plain annoying. Teach them a lesson and show them how its done.\n Enter one of their portals and take over their world instead.",
-    "image": "https://comicvine.gamespot.com/a/uploads/scale_medium/6/67663/2611363-95.jpg",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/993193789260828722/Invincible_Flaxans_23123.webp",
     "loca": "Invincible",
     "objectives": [
       {
@@ -1874,7 +2450,7 @@
     "uid": "djDJp"
   },
   {
-    "author": "Sarrior ",
+    "author": "Sarrior",
     "budget": 0,
     "conditions": [
       {
@@ -1885,7 +2461,7 @@
       }
     ],
     "desc": "Love comes in the form of overly complex freak accidents to bring teacher and student together. Embrace the taboo!",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992803584116801586/ea487120-cbb4-11eb-95fa-65fb2f390c87_800_420.jpeg",
     "loca": "Nande Koko Ni Sensei Ga!? (Why are you here teacher!?)",
     "objectives": [
       {
@@ -2146,7 +2722,7 @@
       }
     ],
     "desc": "Taylor Hebert dreams of being a hero once she triggers, but fate is usually against her...\nBut this time your here!\nTake the role as her trainer and train her in the arts of heroism Philoctetes style!\nNo you will not get turned into a Satyr...\nUnless you want to be one.\nRegardless! Make Her the greatest hero in her world and have it acknowledged worldwide!",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992804037630103665/Screenshot_1.jpg",
     "loca": "Worm",
     "objectives": [
       {
@@ -2223,7 +2799,7 @@
       }
     ],
     "desc": "Asia Argento was excommunicated from the church and was destined to fall into the world of the Devils and the arms of Issei Hyuudo. Fuck that! This pure cinnamon deserves better! Get her established in the church in Kouh as it's head Nun and attendant officially and reestablished as a saint to the level that the ones who excommunicated her suffer the fate they tried to to her. As a bonus make it so the Church itself protects her and keeps her from ever falling pray to a devil's evil piece.",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992804383932809216/Asia.Argento.full.1262338.jpg",
     "loca": "High School DxD",
     "objectives": [
       {
@@ -2287,7 +2863,7 @@
   },
   {
     "author": "Heaven Canceler",
-    "budget": 150,
+    "budget": 140,
     "conditions": [
       {
         "value": "T6 limit, if you or any waifus are stronger, you will be nerfed to that level while on-site. "
@@ -2370,7 +2946,7 @@
     ],
     "desc": "Our client is a big fan of a certain type of armor style and your job is to show off its superiority. For the purpose of this mission, you will need to go to a type of fantasy setting, then produce and sell bikini armor to the locals. The goal is for bikini armor to become the most popular type of armor for women in at least the local kingdom equivalent. The armor must be superior to local armor of course. You may also create and sell weapons, though the amount of weapons sold may not be greater than the sale of armor sets for this mission to be successful.",
     "image": "https://i.imgur.com/9da414L.png",
-    "loca": "Generic World",
+    "loca": "Generic",
     "objectives": [
       {
         "reward": "1 TS for \"Excalibur\" from Fate applicable to any sword of your choice.",
@@ -2402,7 +2978,7 @@
       }
     ],
     "desc": "A customer is interested in the mecha known as Para-mails and wants someone to get data on them from Arzenal if not an actually suit. They do not want anyone killed or captured during this mission so a stealthy approach and a small crew is recommended. ",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992805057621921892/0002036170.webp",
     "loca": "Cross Ange",
     "objectives": [
       {
@@ -2438,7 +3014,7 @@
       }
     ],
     "desc": "Prevent the sexual coercion, violation, or rape of Mash and Female Ritsuka in a hentai-manga variant of the timeline. For this to count, they must only engage in sex with an explicit romantic partner in order to remain 'pure'. Multiple forms of hentai, ntr, noncon, mindbreak, and similar plots will be directed at them. Events may be skipped at Contractor's discretion, but main story singularities (or other ventures from Chaldea) may not.",
-    "image": "https://pbs.twimg.com/media/D0cwVjmUYAAUHyh.jpg",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/993194578909864028/fate-series-fate-grand-order-fujimaru-ritsuka-mashu-kyrielight-wallpaper-preview.jpg",
     "loca": "Fate/Grand Order",
     "objectives": [
       {
@@ -2737,7 +3313,7 @@
       }
     ],
     "desc": "Arika Anarchia Entheofushia the mother of Negi Springfield disappeared shortly after giving birth to negi, it is unknown if she is dead or not, although it can be assumed that she is dead. So you have to find a way to save her and bring her back to her son.",
-    "image": "https://i.imgur.com/iv3fNHL.png",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992806305125388318/2a5ec395d8357f93d9bd9603d088844e.jpg",
     "loca": "Negima",
     "objectives": [
       {
@@ -3171,7 +3747,7 @@
     ],
     "desc": "The Croce di Pietro, a mystic artefact once used to execute the founder of the Christian church. One of the most holiest objects owned by the Catholic Church. At the right time and plac,e it possesses the power to enforce dominion of the Church itself on any location. Your job is simple, steal the cross before it can be damaged or lost in the depth of the ocean as it would be without your interference. Our magical researchers desire to do certain tests with the cross and are willing to reward any takers for this job lavishly.",
     "image": "https://i.imgur.com/UJzFOLP.png",
-    "loca": "To Aru Verse",
+    "loca": "To Aru Series",
     "objectives": [],
     "reward": "A T9 magic artefact that functions similar to the Croce di Pietro will be given to you. After deployment, it takes 24 hours to activate, customization is possible and will take another 24 hours for changes to affect the spell. It has a range of 10.000 square kilometer. Alternatively, you can take 350 Credits",
     "scope": "Standard",
@@ -3225,7 +3801,7 @@
     ],
     "desc": "Misaka Mikoto's crimes have gone too far! And we are talking about her terrible habit of wearing these terrible boyshorts over her normal underwear. She needs to learn a lesson. As such, we have hired you for a simple job. You need to keep her from wearing any kind of underwear for a week. How you go about this is your choice, but she mustn't be allowed to wear any underwear for longer than 5 minutes before you get rid of it.",
     "image": "",
-    "loca": "To Aru Verse",
+    "loca": "To Aru Series",
     "objectives": [
       {
         "reward": "25 Credits",
@@ -3398,7 +3974,7 @@
     ],
     "desc": "Far too many religious orders these days are oh so prudish. So your job is to spread the glory of lust and perversion. Fortunately, our client has found a fitting target. The Agnese Forces are a small order of nuns that is perfect group. Some of them already wear miniskirts and high heels!<br>Your job will be to corrupt all 250 members of the group, twisting their faith to one of lust and perversion. Their bodies and minds must be dedicated to pleasure and they must consider sex to be the equivalent of worshipful prayer. Optionally, they may literally worship a god of sex, or yourself.",
     "image": "https://i.imgur.com/qJGKygO.png",
-    "loca": "To Aru Verse",
+    "loca": "To Aru Series",
     "objectives": [
       {
         "reward": "You may buy a Nun waifu of your choice up to T6 for free. Alternatively, gain 30 credits.",
@@ -3485,7 +4061,7 @@
     ],
     "desc": "Academy City is a place of science, often mad and cruel. But a recent client of ours has requested that you give things there a perverse new spin since they were frustrated with how the city's scientists wasted perfectly good waifus. You will be slotted in as a scientist in the Sister Project just when the first clones of Misaka Mikoto are being created. You must hijack the project and make sure the clones of Misaka Mikoto are repurposed for the sex toy industry.<br>The main goal will be to sell Misaka clones to the population for the purpose of sexual relief, impregnation and the production of pornography and the like. It is recommended to modify the clones so as to fit a variety of fetishes and grant high paying customers the ability to order a custom made clone. The Testament machine should be used to upload sexual skills and knowledge otherwise needed for whatever other role the Misaka may have.<br>If you fail to make a profit within the desired time frame or your project gets shut down by something, a canon version of Misaka Mikoto and Accelerator will both be informed of your actions and you will have to deal with them on your own. Paper Trail and Science Talent are necessary for this Mission. And a method to deal with Aleister Crowley in case of disagreements is highly recommended.",
     "image": "https://i.imgur.com/4TIqJUG.png",
-    "loca": "To Aru Verse",
+    "loca": "To Aru Series",
     "objectives": [
       {
         "reward": "50 Credits",
@@ -3518,7 +4094,7 @@
       }
     ],
     "desc": "You must spread the glorious word about the Getter Rays! On ten Worlds where Humanity civilizations prosper, they must be thought on how to utilize Getter Rays. They may or may not achieve Space-Flight.<br>If you ever find yourself in the World of Gurren Lagann, the Anti-Spiral will immediately notice and realize that the Getter Rays are the solution to the Spiral Nemesis problem.",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/993511330491416667/Shin_Getter_Robo_overload.webp",
     "loca": "Generic",
     "objectives": [
       {
@@ -3587,7 +4163,7 @@
       }
     ],
     "desc": "Too often we see contractors steam roll their way through canon events using boring meta decks and OTK strategies, turning the honored game of Duel Monsters into Solitaire. Mix it up a bit. Every time you go into a duel, your deck will be randomly selected from a pool of existing, and usable, decks.",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992806809981173780/CardShuffle-TF04-JP-VG.webp",
     "loca": "Yu-Gi-Oh!",
     "objectives": [
       {
@@ -3626,7 +4202,7 @@
     "budget": 500,
     "conditions": [],
     "desc": "Your job is simple permanently kill all members of both the Great Evils and the Angiris Council freeing humanity from both threats.",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992807127443841024/Angiris_Council-BoA.webp",
     "loca": "Diablo 3",
     "objectives": [
       {
@@ -3732,7 +4308,7 @@
       }
     ],
     "desc": "Oh no it seems that you're in the World of SCP in 'the middle of 'When day breaks' find a way out of this Planet leaving this apocalyptic situation behind",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992807797911715890/pedro-guerra-scp001-smallfile.jpg",
     "loca": "SCP - When day breaks",
     "objectives": [
       {
@@ -3763,7 +4339,7 @@
       }
     ],
     "desc": "Roam through the world in search of a Behelit, and find a way to activate it. ",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992807483716415679/0126c9b9c694f7862413e05f924f8a4a.jpg",
     "loca": "Berserk",
     "objectives": [
       {
@@ -3810,7 +4386,7 @@
     "budget": 360,
     "conditions": [],
     "desc": "During your one year sojourn in the Shadowrun Universe, capture a minimum of 5 waifus/husbandos ",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992808551472959518/Screenshot_3.jpg",
     "loca": "Shadowrun",
     "objectives": [],
     "reward": "100 credits",
@@ -3828,7 +4404,7 @@
       }
     ],
     "desc": "Survive the Shadow Run Universe for One Year",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992808078602928288/606dfc55ef261350adf5d775c9da9434.jpg",
     "loca": "Shadowrun",
     "objectives": [],
     "reward": "140 Credits",
@@ -3846,7 +4422,7 @@
       }
     ],
     "desc": "<p>Survive for at least one month and until the end of one randomly selected mission without access to any new Company-related purchases (including new perks and companions) and available applications (including Exit Stage Left and Pocket Space and opening new portals).</p>\n    <p>Warning #1: If chosen mission placed in other world you will be forcefuly transported there. </p>\n    <p>Warning #2: Dying and then resurrection will count as this mission failure.</p>\n    <p>There is no penalty for failure to complete selected mission. You will be able to return to previous world after mission completion or failure.</p>",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992808915127504976/Screenshot_4.jpg",
     "loca": "Any",
     "objectives": [],
     "reward": "100 points + chosen mission rewards",
@@ -3935,7 +4511,7 @@
       }
     ],
     "desc": "By request of a client, the contractor must go to a world filled with dungeon and acquire some different levels inhabitants using a company special capture method.",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992859794627113001/solo-leveling-11-best-arcs-in-the-manhwa-ranked-article-image6.webp",
     "loca": "Random Korean Dungeon World",
     "objectives": [
       {
@@ -4069,7 +4645,7 @@
       }
     ],
     "desc": "Complete the quest non has done in 100 years.\nSlay each of the 5 Dragon Gods.\nAldoron, The Wood Dragon God\nIgnia, The Fire Dragon God\nMercphobia, The Water Dragon God\nSelene, The Moon Dragon God\nViernes, The Gold Dragon God",
-    "image": "https://i.imgur.com/gxpouds.png",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992860237314920508/c191a59aa8d91c004dca576f4e43bdb2.jpg",
     "loca": "Fairy Tail",
     "objectives": [
       {
@@ -4136,7 +4712,7 @@
       }
     ],
     "desc": "Complete the \"Childhood's Beginning\" ending.\nCollect 4 \"One Third of Umbilical Cord\" (5% discount per cord collected)\nSlay Gehrman & Moon Presence",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992860577867235388/Image_bloodborne-boss_04.webp",
     "loca": "Bloodborne",
     "objectives": [],
     "reward": "20% Discount to Outsider Heritage (credits already spent refunded upon completion)",
@@ -4185,7 +4761,7 @@
       }
     ],
     "desc": "It all starts with a girl who was bullied. And unfortunately, justice never prevailed. But fortunately, being an agent from outside, you can influence the situation and become the hammer that hammers the problem.",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992860926405513247/Winslow_sophia1.webp",
     "loca": "Worm",
     "objectives": [
       {
@@ -4215,7 +4791,7 @@
       }
     ],
     "desc": "Completely and utterly destroy all four Chaos Gods in this particular variant of Warhammer 40k. Conceptual removal of all traces of their existence is recommended for mission completion. It is highly recommended to have a full suite of Company Defenses for the duration of this mission.",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992861149689282661/861zo2qiudm71.webp",
     "loca": "Warhammer 40K",
     "objectives": [],
     "reward": "2 TX Tickets or 5000 Credits",
@@ -4242,7 +4818,7 @@
       }
     ],
     "desc": "Youngster Joey is a hard working lad, always trying to improve himself. But a recent loss against a trainer with a red cap has left him in a bit of a rut. You must help this hopeful young trainer and guide him on the way to become a true Pokemon Master!\n\nYou must personally assist him in training, making sure that he improves his team, captures more powerful Pokemon. Only if he truly becomes the very best like no one ever was will you get your rewards!\n\nTo complete the mission, Youngster Joey must at least defeat all 8 Gym Leaders, the Elite 4 in Kanto and become Champion.",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992861490635866173/CLQfP9WUsAAEbvt.jpg",
     "loca": "Pokemon",
     "objectives": [
       {
@@ -4265,7 +4841,7 @@
     "budget": 0,
     "conditions": [],
     "desc": "Rias gremory is currently engaged to riser Phenix and the only way for her to escape from her fate is a rating game you have to help her win this match and gain her freedom",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992861649176383538/High_School_DxD_-_08_-_Large_29.webp",
     "loca": "High School DxD",
     "objectives": [
       {
@@ -4332,7 +4908,7 @@
       }
     ],
     "desc": "The Emperor is dying. The Imperium is a mockery of its former ideals. Xenos filth are devouring the loyal. You alone have the power to avert the end.\n\n(1)You must ensure the light of The Astronomican is uninterrupted.\n(2)You must heal The Emperor, or ensure He smoothly and swiftly reincarnates into a Star Child.\n(3)You must fight beside The Emperor in the annihilation of the xenos threat.\n(4)You must assist Him in cleansing the Imperium of its most egregious necessary evils.\n\nThe Emperor regenerates to ten times His previous strength and as such, after all this is complete it is only a matter of time until the galaxy is united, under His rule. Not even the most powerful of human opponents to The Emperors return can resist the unbound majesty of His radiance. Chaos united and the Tyranids are a mere speedbump to an Imperium as one under this reborn Emperor. \n\n(Now that this multiverse cluster is stabilized we can use the warp as a springboard to potentially new realities, without all those pesky cockroaches hitching a ride and causing promotions)",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992861984926208150/74602e8f71f1eae66e18d28802064b08.jpg",
     "loca": "Warhammer 40K",
     "objectives": [
       {
@@ -4395,7 +4971,7 @@
       }
     ],
     "desc": "Resolve the seven singularitys and restore the human order",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992862866803802112/Fate_Grand_Order_Zettai_Majuu_Sensen_Babylonia_-_21_-_Large_37.jpg",
     "loca": "Fate/Grand Order",
     "objectives": [
       {
@@ -4509,7 +5085,7 @@
       }
     ],
     "desc": "Capture and unite at least 5 of the Great Evils and 5 of the Archangels under your single banner, and have them be at least grudgingly accepting of this. They absolutely despise each-other, obviously; getting them to live together will take massive charisma, mind manipulation, possibly dog training experience, and greater willpower than a shonen protagonist. I recommend several purchases of anthropize as well. Good Luck.",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992863216868802570/Screenshot_1.jpg",
     "loca": "Diablo",
     "objectives": [
       {
@@ -4692,6 +5268,7 @@
     ],
     "reward": "Gain your own copy of Cybertron as a home,all non TX Home perks,1 TX ticket,",
     "scope": "Grand",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992863425531228231/tumblr_inline_o624jlSlmE1sl8r10_1280.jpg",
     "source": "",
     "title": "Pax Cybertronia",
     "uid": "zEx2k"
@@ -4704,7 +5281,7 @@
       }
     ],
     "desc": "The chosen undead may cross paths with the adorable cross-breed Priscilla, putting her in grave danger of being killed. Your mission will be to PROTECT this manifestation of waifuness. \n",
-    "image": "https://i.imgur.com/no9KhWP.jpg",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992863742184398908/alisa-nilsen-priscilla-characters-fantasy-game-art-dark-soul.jpg",
     "loca": "Darksouls 1",
     "objectives": [],
     "reward": "Pocket Space, Pocket Apartment, Life's A Beach (by default this will appear as the painted world and may contain a Waifu)",
@@ -4775,7 +5352,7 @@
     "author": "Gol. D. Roger",
     "conditions": [],
     "desc": "Get a bounty of 50,000,000 Beris",
-    "image": "https://i.imgur.com/8dkPI4z.jpg",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992864054328709150/63ba16e3d649bba2b5e33d3b6d181c0d.jpg",
     "loca": "One Piece",
     "objectives": [
       {
@@ -4819,7 +5396,7 @@
     "author": "irugaa0",
     "conditions": [],
     "desc": "Join the inquisition and Survive the first dark spawn attack.",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992864402661449789/dragon-age-inquisition-concept-art-17.webp",
     "loca": "Dragon Age: inquisition",
     "objectives": [
       {
@@ -4897,7 +5474,7 @@
       }
     ],
     "desc": "the high-level contractor Zelretch organized a little game to prepare the new contractors and entertain himself. Play a \u201ccatch\u201d game with 5 other contractors.",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992865103231844362/ilya2rider.jpg",
     "loca": "Generic",
     "objectives": [
       {
@@ -4990,7 +5567,7 @@
       }
     ],
     "desc": "1 week before your arrival, all participant in nearest incoming grail war will be warned of your power, purpose, and what means you have. \nThis warning will come as hazy prophecy that they will take seriously. \nHow much they will know will depend on how long they will survive in the 'canon' grail war.\n A character that survive to the end will understand about 75% of this prophecy.\n\nIn the grail war itself, you will be treated as a lone master in a new faction, and all of your retinue count as a servant in this grail war",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992865432199503923/fate-zero-fate-zero-27227329-1280-800.jpg",
     "loca": "Nasuverse",
     "objectives": [
       {
@@ -5104,7 +5681,7 @@
       }
     ],
     "desc": "Support Kanto/Johto, Hoenn, Sinnoh, Unova, or Kalos, for the duration of the war.",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992865715558289439/c2afb5e29456e1dcd56a6bc9d0f83d14a59c56e3_hq.jpg",
     "loca": "Pokemon",
     "objectives": [
       {
@@ -5186,7 +5763,7 @@
       }
     ],
     "desc": "Danmachi is a world full of wonders where many gods descended the heavens to form families of adventurers and defy the dungeon.\nJoin the Family and become defy the dungeon yourself.\n\n",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992865930193404004/Loki_Familia_Anime.webp",
     "loca": "Danmachi",
     "objectives": [
       {
@@ -5239,7 +5816,7 @@
       }
     ],
     "desc": "The company is in need of refreshing their stockpile of species from the rifts Multiverse and it's your job to get more. For every species you capture you will be rewarded.",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992866412022485135/bb287198124ec8c71c88f022d1521d2ae5ca76a2672efc92455725cc3dae7133.png",
     "loca": "Rifts",
     "objectives": [],
     "reward": "2 credit for every species captured ",
@@ -5256,7 +5833,7 @@
       }
     ],
     "desc": "Conquer a given setting. If this mission is taken, you may not leave the setting until it is complete.<br>Setting is defined as the general area a work takes place in. <br> Whether it is a nation, planet, or galaxy, depends on the work in question.<br>IE: The setting of Harry Potter is Magical Europe<br>The setting of Star Wars is the Galaxy",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992867132499042436/Screenshot_2.jpg",
     "loca": "Generic",
     "objectives": [
       {
@@ -5290,7 +5867,7 @@
       }
     ],
     "desc": "Spread awareness or ability in magic or the supernatural through a setting.",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992867886299361290/W4stfM6WnnnoBMQdZuZxdD.jpg",
     "loca": "Generic",
     "objectives": [
       {
@@ -5364,7 +5941,7 @@
       }
     ],
     "desc": "Get the Federation Cloaking Device from the USS Pegasus before the USS Enterprise arrives and get out without anybody noticing.",
-    "image": "https://upload.wikimedia.org/wikipedia/en/1/1c/ST-TNG_The_Pegasus.jpg",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992868724975616000/d915a8afc353f7a018717d7d9226c7df.jpg",
     "loca": "Star Trek: The Next Generation",
     "objectives": [],
     "reward": "100 Credits",
@@ -5398,7 +5975,7 @@
       }
     ],
     "desc": "Fairy Tail is a guild in Magnolia Town in the Kingdom of Fiore. The name \"Fairy Tail\" is meant to represent a sense of adventure to learn more about mysteries and destiny. Join the guild and become part of the madness.",
-    "image": "https://static.wikia.nocookie.net/fairytail/images/2/26/Fairy_Tail_Banner.png",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992869229068025856/Screenshot_3.jpg",
     "loca": "Fairy Tail - Magnolia Town",
     "objectives": [],
     "reward": "12 credits or the Soul Talent + Template Stacking 0 with the power \"Magic\".",
@@ -5486,7 +6063,7 @@
       }
     ],
     "desc": "SCP-050 is a small trophy which awards itself to whoever it deems \"The Cleverest\". If the current owner is deceived, pranked, or otherwise outwitted by any means, it will teleport itself into the possession of the person responsible. You (or a member of your retinue) must earn SCP-050 and keep it for seven consecutive days. Attempting to leave the planet with it will be considered a forfeit. The current owner is Dr. Bright.",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992869488930328596/jennifer-swann-scp-050-small.jpg",
     "loca": "SCP",
     "objectives": [],
     "reward": "75 credits",
@@ -5503,7 +6080,7 @@
       }
     ],
     "desc": "Convince character's of submitting to you willingly. Without any magical means. And taking on your means of subjugation willingly.",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992869870830112869/Screenshot_4.jpg",
     "loca": "Generic",
     "objectives": [
       {
@@ -5575,7 +6152,7 @@
       }
     ],
     "desc": "Destroy the true multiversal Darkseid and Apokolips within the 4th world.\nMay not leave the DC multiverse until the mission is concluded.\nStarting bonus of double chargen credits\nDarkseid will expect a threat, but will not know about you directly. He will be looking for said threat everywhere",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992870133829738496/Apokolips.webp",
     "loca": "DC",
     "objectives": [
       {
@@ -5597,7 +6174,7 @@
       }
     ],
     "desc": "Capture all Waifus in the Disgaea World within the Timelimit given.",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992870486461649007/disgaea-rpg-release-date-4.webp",
     "loca": "Disgaea 5",
     "objectives": [],
     "reward": "Template stacking 0 + Template stacking I + 400 Credits",
@@ -5614,7 +6191,7 @@
       }
     ],
     "desc": "There is no Crucible. There is no Deus ex Machina or Macguffin. There is no programming trick, or clever ploy to end the war in one move. You must either defeat the Reapers, or die with the Galaxy.\nYou must prepare accordingly.\n",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992870705811177473/Mass-Effect-fan-shares-incredible-Reaper-art-made-by-his.jpg",
     "loca": "Mass Effect",
     "objectives": [],
     "reward": "Exit Stage Left and All Add ons, 1 TX Ticket",

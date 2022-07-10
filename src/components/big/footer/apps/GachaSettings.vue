@@ -16,7 +16,7 @@
       />
       <Button size="Small" label="Add to Whitelist" @click="gachaSettings.whitelist.push(world)" />
     </div>
-    <div class="flex flex-col gap-1 bg-gray-700 rounded p-1 overflow-y-auto max-h-48 scrollbar">
+    <div v-if="gachaSettings.whitelist.length" class="flex flex-col gap-1 bg-gray-700 rounded p-1 overflow-y-auto max-h-48 scrollbar">
       <div v-for="w, i in gachaSettings.whitelist" :key="w" class="flex gap-2 justify-between border-b-2 pb-1 border-gray-500">
         <div>{{ w }}</div>
         <Button size="Small" label="Del" bg-color="bg-red-600" @click="gachaSettings.whitelist.splice(i, 1)" />
@@ -25,7 +25,7 @@
     <div class="dark whitespace-nowrap flex flex-col gap-1">
       <NumberInput v-model="gachaSettings.rollCost" :min="0" type="number" label="Price for 1 roll" />
       <!-- <NumberInput v-model="gachaSettings.tenRollCost" type="number" label="Price for 10 roll" /> -->
-      <NumberInput v-model="gachaSettings.minTierForTen" :min="1" :max="11" type="number" label="Guarantee tier for 10 roll" />
+      <NumberInput v-model="gachaSettings.minTierForTen" :min="1" :max="11" type="number" label="Guarantee tier for '10 pull'" />
     </div>
   </div>
 </template>

@@ -331,7 +331,7 @@ function createImage() {
 // }, { flush: 'post' })
 
 onMounted(() => {
-  // createImage()
+  createImage()
 })
 
 </script>

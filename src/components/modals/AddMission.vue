@@ -9,11 +9,14 @@
         <Input v-model="source" class="flex-grow" placeholder="Source link" :error-message="errors.source" />
       </div>
       <Input v-model.number="budget" class="" placeholder="Estimated required budget to qualify for this mission" :error-message="errors.budget" />
+      <div class="text-sm font-semibold text-orange-700 dark:text-orange-300">
+        If world doesn't matter for your mission, type 'Generic' in world field
+      </div>
       <div class="flex gap-2">
         <InputWithSearch
           v-model.trim="loca"
           idd="worldSearch"
-          :list="allWorldNames"
+          :list="[...allWorldNames, 'Generic']"
           placeholder="World Name"
           class="flex-grow"
           :error-message="errors.loca"
@@ -24,7 +27,7 @@
         <TextArea v-model="desc" placeholder="Mission description" :rows="'4'" :error-message="errors.desc" />
       </div>
       <div class="flex gap-2">
-        <Select v-model="rewardType" placeholder="Reward Type" :options="['Credits', 'TX Tickets', 'Perks', 'Other']" />
+        <Select v-model="rewardType" placeholder="Reward Type" :options="['Credits', 'TX Tickets', 'Perks', 'Companions', 'Other']" />
         <Input
           v-model="reward"
           class="flex-grow"
@@ -68,7 +71,7 @@
               :error-message="errors.objectives"
             />
             <div class="flex gap-2">
-              <Select v-model="requirement.type" placeholder="Reward Type" :options="['Credits', 'TX Tickets', 'Perks', 'Other']" />
+              <Select v-model="requirement.type" placeholder="Reward Type" :options="['Credits', 'TX Tickets', 'Perks', 'Companions', 'Other']" />
               <Input
                 v-model="requirement.reward"
                 :placeholder="`Bonus reward (optional) #${i + 1}`"

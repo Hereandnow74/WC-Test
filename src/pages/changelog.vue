@@ -5,6 +5,27 @@
     </h2>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
+        07 July 2022
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>~145 new user submitted characters, new missions, 6 new world</li>
+        <li>A lot of new images for perks, missions and worlds were provided by <b>DepressedAlucard</b></li>
+        <li>Text aligment and font-size settings.</li>
+        <li>Bugfixes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
+        03 July 2022
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>~100 new user submitted characters, new missions, 12 new world</li>
+        <li>A lot of new images for perks, missions and worlds were provided by <b>DepressedAlucard</b></li>
+        <li>Bugfixes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
         29 June 2022
       </h3>
       <ul class="list-decimal list-inside">

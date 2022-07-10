@@ -44,4 +44,11 @@ import { useStore } from '~/store/store'
 
 const { budgetMods, specificMods, fee } = useStore()
 
+watch([() => budgetMods.value.plus, () => budgetMods.value.minus], () => {
+  if (budgetMods.value.plus === '')
+    budgetMods.value.plus = 0
+  if (budgetMods.value.minus === '')
+    budgetMods.value.minus = 0
+})
+
 </script>

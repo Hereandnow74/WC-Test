@@ -47,7 +47,7 @@
             </div>
           </div>
           <div class="flex gap-1 text-violet-400">
-            Create trap <Select v-model="trapRank" :options="['Blue', 'Copper', 'Silver', 'Gold']" /><Button title="Create Trap" icon="fluent:add-circle-16-regular" @click="createTrap" />
+            Create a trap <Select v-model="trapRank" :options="['Blue', 'Copper', 'Silver', 'Gold']" /><Button title="Create Trap" icon="fluent:add-circle-16-regular" @click="createTrap" />
           </div>
           <div class="flex flex-col gap-1">
             <div v-for="trap, i in dungeons[activeDungeonInd].traps" :key="trap.name" class="flex gap-1">
