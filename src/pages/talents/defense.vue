@@ -2,6 +2,7 @@
   <div class="sm:p-2">
     <div class="mb-4 max-w-4xl mx-auto">
       <Desc :desc="additionalDefenseDesc" class="bg-amber-200 text-gray-800 text-sm md:text-base w-3/5 float-right mt-8 mx-2 border-3 border-gray-900" />
+      <Desc :desc="authorNote" class="bg-amber-200 text-gray-800 text-sm md:text-base w-3/5 float-right mt-8 mx-2 border-3 border-gray-900" />
       <Desc :desc="defenceDesc" class="p-2 bg-violet-200 dark:bg-violet-900" />
     </div>
     <div
@@ -24,7 +25,7 @@
 </template>
 
 <script lang='ts' setup>
-import { defenceDesc, additionalDefenseDesc } from '~/data/talents'
+import { defenceDesc, additionalDefenseDesc, authorNote } from '~/data/talents'
 import { chooseDefense, defenseAvailable } from '~/logic'
 import { useFullPerks } from '~/logic/localPerks'
 import { useTooltips } from '~/logic/misc'

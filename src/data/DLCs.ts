@@ -357,7 +357,7 @@ DLCperks.push({
   dlc: 'Ruaron',
   title: 'Knowledge Base Upload',
   category: 'Misc Perk',
-  image: '',
+  image: 'https://cdn.discordapp.com/attachments/925963686433132644/995755374349144134/dragon-s-crown-fantasy-art-person-reading-wallpaper-preview.jpg',
   cost: 5,
   costVariants: [5, 10, 20],
   special: '1st stage: 5 credits; 2nd stage: 10 credits; 3rd stage: 20 credits.',

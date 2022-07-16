@@ -1,6 +1,9 @@
 <template>
-  <Modal label="Propose a Mission" class="!z-30">
+  <Modal :label="mission ? 'Edit a Mission' : 'Propose a Mission'" class="!z-30">
     <div class="p-2 flex flex-col gap-2 min-h-0 w-full overflow-y-auto scrollbar">
+      <div v-if="mission" class="text-sm font-semibold text-red-700 dark:text-red-400">
+        This form is for fixing errors, do not use is to submit new missions.
+      </div>
       <div class="flex gap-2">
         <Input v-model="title" class="flex-grow" placeholder="Mission title" :error-message="errors.title" />
       </div>
@@ -27,7 +30,7 @@
         <TextArea v-model="desc" placeholder="Mission description" :rows="'4'" :error-message="errors.desc" />
       </div>
       <div class="flex gap-2">
-        <Select v-model="rewardType" placeholder="Reward Type" :options="['Credits', 'TX Tickets', 'Perks', 'Companions', 'Other']" />
+        <Select v-model="rewardType" placeholder="Reward Type" :options="['Credits', 'TX Tickets', 'Perks', 'Companions', 'Other']" :error-message="errors.rewardType" />
         <Input
           v-model="reward"
           class="flex-grow"
@@ -50,7 +53,7 @@
             v-model="condition.value"
             class="flex-grow"
             :placeholder="`Condition #${i + 1}`"
-            :error-message="errors.conditions"
+            :error-message="errors[`conditions[${i}].value`]"
           />
           <fluent:delete-20-filled class="text-red-500 hover:text-red-400 cursor-pointer" @click="conditions.splice(i, 1)" />
         </div>
@@ -93,13 +96,12 @@
       <div class="flex justify-center gap-2">
         <Button
           :disabled="!buttonActive"
-          label="Send"
+          :label="mission ? 'Send Edited Mission': 'Send'"
           size="small"
           class="px-8"
           bg-color="bg-green-700"
           @click="buttonActive ? addPerk() : errorMessage = 'Wait 30s before submitting again.'"
         />
-        <!-- <Button label="Copy" class="flex-grow" bg-color="bg-red-700" @click="copyText()" /> -->
       </div>
     </div>
   </Modal>
@@ -110,9 +112,17 @@ import * as zod from 'zod'
 import { useForm, useField } from 'vee-validate'
 import { toFormValidator } from '@vee-validate/zod'
 
+import { Mission } from 'global'
+import type { PropType } from '@vue/runtime-core'
 import { proposeMission } from '~/logic'
 import { useWorlds } from '~/data/constants'
 import { useSaves } from '~/store/saves'
+
+const props = defineProps({
+  mission: {
+    type: Object as PropType<Mission>,
+  },
+})
 
 const scopes = ['Quick', 'Standard', 'Grand']
 
@@ -125,37 +135,38 @@ const { userNickname } = useSaves()
 
 const schema = toFormValidator(
   zod.object({
-    title: zod.string().max(128, 'Max length 128 chars').nonempty('Title is required'),
-    author: zod.string().nonempty('Author is required'),
+    title: zod.string().max(128, 'Max length 128 chars').min(1, 'Title is required'),
+    author: zod.string().min(1, 'Author is required'),
     source: zod.string(),
     budget: zod.number().min(0, 'Min 0 credits').max(2000, 'Max 2000 credits'),
-    loca: zod.string().nonempty('Location is required'),
-    scope: zod.string().nonempty('Scope is required'),
-    conditions: zod.object({ value: zod.string() }).array(),
+    loca: zod.string().min(1, 'Location is required'),
+    scope: zod.string().min(1, 'Scope is required'),
+    conditions: zod.object({ value: zod.string().min(1, 'Condition should not be empty') }).array(),
     objectives: zod.object({ value: zod.string(), reward: zod.string(), type: zod.string() }).array(),
-    reward: zod.string().nonempty('Reward is required'),
-    rewardType: zod.string().nonempty('Reward type is required'),
+    reward: zod.string().min(1, 'Reward is required'),
+    rewardType: zod.string().min(1, 'Reward type is required'),
     image: zod.string().regex(/[^ \!@\$\^&\(\)\+\=]+(\.png|\.jpeg|\.gif|\.jpg|\.webp)$/, { message: 'Must be a valid image URL in a jpeg/jpg/png/gif/webp format.' }).max(256, { message: 'Maximum length is 256 chars' }).optional().or(zod.literal('')),
-    desc: zod.string().max(5000, 'Max length is 5000 chars').nonempty('Description is required'),
+    desc: zod.string().max(5000, 'Max length is 5000 chars').min(1, 'Description is required'),
   }),
 )
 
 const { errors, handleSubmit } = useForm({
   validationSchema: schema,
   initialValues: {
-    title: '',
-    author: userNickname.value ? userNickname.value : '',
-    source: '',
-    budget: '',
-    desc: '',
-    loca: '',
-    scope: '',
-    conditions: [
+    title: props.mission?.title || '',
+    author: props.mission?.author ? props.mission.author : (userNickname.value ? userNickname.value : ''),
+    source: props.mission?.source || '',
+    budget: props.mission?.budget || '',
+    desc: props.mission?.desc || '',
+    loca: props.mission?.loca || '',
+    scope: props.mission?.scope || '',
+    conditions: props.mission?.conditions || [
       { value: '' },
     ],
-    objectives: [],
-    reward: '',
-    image: '',
+    objectives: props.mission?.objectives || [],
+    reward: props.mission?.reward || '',
+    rewardType: props.mission?.rewardType || '',
+    image: props.mission?.image || '',
   },
 })
 
@@ -173,7 +184,10 @@ const { value: rewardType } = useField<any[]>('rewardType')
 const { value: image } = useField<string>('image')
 
 const addPerk = handleSubmit((values) => {
-  proposeMission({ ...values, date: new Date().toString() }, () => successMessage.value = 'Mission was send successfully, await until I review and add it')
+  const proposal = { ...values, date: new Date().toString() }
+  if (props.mission)
+    proposal.uid = props.mission.uid
+  proposeMission(proposal, () => successMessage.value = 'Mission was send successfully, await until I review and add it')
   buttonActive.value = false
   setTimeout(() => { buttonActive.value = true; successMessage.value = ''; errorMessage.value = '' }, 30 * 1000)
 })

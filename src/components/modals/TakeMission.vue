@@ -20,7 +20,7 @@
             :list="Object.keys(ALL_PERK_TITLES)"
           />
         </template>
-        <CharacterInput v-else-if="types[i] === 'Companion'" @updateUID="(uid: number) => rewards[i] = uid" />
+        <CharacterInput v-else-if="types[i] === 'Companion'" :idd="`char${i}`" @updateUID="(uid: number) => rewards[i] = uid" />
         <Input v-else v-model="rewards[i]" :disabled="!!missionSave" label="Reward" placeholder="Text or number" />
         <div icon="" size="small" class="hover:text-red-500 cursor-pointer flex items-center" @click="deleteReward(i)">
           <fluent:delete-20-filled />

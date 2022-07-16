@@ -1,9 +1,12 @@
 <template>
-  <div class="bg-[#f2eecb] dark:bg-[#1E1E5C] rounded p-2 shadow-lg flex flex-col gap-1">
+  <div class="relative bg-[#f2eecb] dark:bg-[#1E1E5C] rounded p-2 shadow-lg flex flex-col gap-1">
     <h4 class="text-lg text-center py-1">
       <span v-html="mission.title"></span>
       <span v-if="mission.author" class="text-sm text-gray-500 dark:text-gray-400"> by {{ mission.author }}</span>
     </h4>
+    <div title="Edit Mission" class="text-lg hover:text-orange-500 cursor-pointer flex items-center gap-1 absolute top-1 right-1" @click="showEditCompanion">
+      <bx:bxs-edit />
+    </div>
     <img
       v-if="mission.image && settings.perkImages"
       ref="imageEl"
@@ -74,6 +77,7 @@
       @click="showTakeMission = true"
     />
     <TakeMission v-if="showTakeMission" :mission="mission" @click="showTakeMission = false" />
+    <AddMission v-if="showEditMission" :mission="mission" @click="showEditMission = false" />
   </div>
 </template>
 
@@ -96,7 +100,12 @@ defineProps({
 
 const imageEl = ref(null)
 const showTakeMission = ref(false)
+const showEditMission = ref(false)
 
 onMounted(() => { if (imageEl.value) lazyLoadSingleImg(imageEl.value) })
+
+function showEditCompanion() {
+  showEditMission.value = true
+}
 
 </script>
