@@ -1,4 +1,611 @@
 [
+  
+  {
+    "loca": "The Boys",
+    "rewardType": "Credits",
+    "objectives": [
+      {
+        "type": "Perks",
+        "reward": "Template Stacking: Homelander",
+        "value": "Make one of your company members as popular as Homelander"
+      }
+    ],
+    "budget": 140,
+    "image": "",
+    "scope": "Standard",
+    "author": "Trismegistus",
+    "source": "",
+    "conditions": [
+      {
+        "value": ""
+      }
+    ],
+    "title": "Pharmaceuticals Company",
+    "desc": "Start a rival business to Vought. Your company must provide superpowers. The company must have at least half of the market share of the superhero branch of Vought.\n",
+    "reward": "80",
+    "uid": "poIkn"
+  },
+  {
+    "rewardType": "Other",
+    "source": "",
+    "conditions": [
+      {
+        "value": "Open, buy, or somehow take control of a gym. It can be for basic fitness, a specific sport, or martial arts"
+      },
+      {
+        "value": "Recruit your targets, or pick them among the gymgoers"
+      },
+      {
+        "value": "As a trainer, get your targets to either fall for you or offer you sex. You can't offer them anything in exchange, they must decide it by themselves. Bindings and overt mind control methods are not allowed until this point"
+      }
+    ],
+    "scope": "Standard",
+    "title": "Gym teacher",
+    "objectives": [
+      {
+        "value": "Poach a target from a competing gym",
+        "type": "Credits",
+        "reward": "Credits equivalent to their listed price"
+      }
+    ],
+    "budget": 15,
+    "author": "Ratcatcher",
+    "image": "https://cdn.donmai.us/original/61/27/__sakura_hibiki_and_souryuuin_akemi_dumbbell_nan_kilo_moteru_drawn_by_sadakage__61278b280c70c26c70c86036f18dd939.jpg",
+    "desc": "Gyms are a great place for recruiting beatiful and fit people. Why don't you open one yourself and use it to recruit retinue members?",
+    "reward": "5 credits and one tier at step 6",
+    "loca": "Generic",
+    "uid": "GunAK"
+  },
+  {
+    "desc": "Hi, cousin, it's me, Mesméra. Listen, I got this mission for one of our cousins who took the Two Dime challenge, and I noticed that this universe' rulers need replacing. So, could you go and do the job by capturing Kandrakar and its Guardians? And whatever else you want, but those must be captured.",
+    "author": "Ratcatcher",
+    "conditions": [
+      {
+        "value": "Mesméra as Patron"
+      },
+      {
+        "value": "The world is a combined version of both the original comic, the cartoon, and a few fan works. The world will be based mainly on either the comic book or the cartoon, but aspects of everything else will show up from time to time"
+      },
+      {
+        "value": "In either take, the Oracle, whoever holds the title, will maintain their ability to see almost everything, including the limit about their ability to process the information, and if they give you their full attention they'll quickly realize who you actually are and the threat you pose. Partial Trace Defense will make it harder for them to notice you and give you their full attention, while full Trace Defense will twart them"
+      },
+      {
+        "value": "You must Bind by love declaration Will, Irma, Taranee, Cornelia, and Hay Lin"
+      },
+      {
+        "value": "Every member of the Council of Kandrakar must be Bound in any way"
+      }
+    ],
+    "reward": "3000 credits, Kandrakar as either your Demiplane or Dungeon",
+    "title": "Bewitching Hour",
+    "loca": "W.I.T.C.H.",
+    "scope": "Grand",
+    "rewardType": "Other",
+    "source": "",
+    "objectives": [
+      {
+        "reward": "+1 Tier on the Guardians once they're Captured",
+        "type": "Companions",
+        "value": "Comic-based world only: During the Astral Drops' rebellion, bring them to the verge of Capture and then fuse them back permanently with their still free originals"
+      },
+      {
+        "reward": "TS 1 as Phobos",
+        "type": "Perks",
+        "value": "Capture Miranda by confession"
+      },
+      {
+        "type": "Other",
+        "value": "Capture Elyon",
+        "reward": "One level of Transhuman Heritage (Aethermorph type)"
+      },
+      {
+        "type": "Other",
+        "value": "Capture the Guardians' mothers and give them powers taken from someone else",
+        "reward": "One level of Transhuman Heritage (Aethermorph type)"
+      },
+      {
+        "value": "Capture Orube",
+        "reward": "TS 1 with a character with the Combatant characteristic",
+        "type": "Perks"
+      },
+      {
+        "value": "Capture the previous generation of Guardians",
+        "reward": "One level of Transhuman Heritage (Aethermorph type)",
+        "type": "Other"
+      },
+      {
+        "value": "Capture Lillian Hale by declaration (she must be at least a teenager, even if you have to age her up yourself)",
+        "type": "Companions",
+        "reward": "+1 Tier on her capture"
+      },
+      {
+        "type": "Perks",
+        "reward": "TS 1 as a character with the Mage characteristic",
+        "value": "Capture the Guardians early and force Kandrakar to select a new set of Guardians"
+      },
+      {
+        "type": "TX Tickets",
+        "reward": "1 T11 Ticket",
+        "value": "Capture the five Nymphs and Dark Mother"
+      }
+    ],
+    "image": "https://i.ibb.co/bvYf3JC/220708kisekae.jpg",
+    "budget": 0,
+    "uid": "ErngH"
+  },
+  {
+    "image": "https://d3i71xaburhd42.cloudfront.net/51402b69733c39d4631200e1fee4860a86379ad3/10-Figure2-1.png",
+    "objectives": [
+      {
+        "type": "Other",
+        "value": "Make a moon resemble either the moon of Majora's mask or a giant trollface",
+        "reward": "Reisen Udongein Inaba either as a companion or as a Template Stacking 1"
+      },
+      {
+        "type": "Other",
+        "reward": "Receive The Power from Regular Show, or 150 credits",
+        "value": "Somehow create a random and regular compulsion for crowds to strip and dance in public"
+      },
+      {
+        "value": "Introduce armor resembling Stormtrooper armor, and a sword resembling the lightsabers of Star Wars, then have both of these be as common place as Dwemer equipment.",
+        "type": "Other",
+        "reward": "Receive 2 fully functioning Imperial Battlespires, or 200 credits"
+      },
+      {
+        "type": "Credits",
+        "reward": "Receive 50 credits",
+        "value": "Have a very ugly Khajiit and a blue-tinted Draugr dance naked on a clear blue sky to the tune of Departure from Hunter x Hunter"
+      },
+      {
+        "type": "Other",
+        "value": "Permanently alter a total of 6 humanoids or horses to resemble the main six protagonists of My Little Pony",
+        "reward": "Receive the Elements of Harmony and a Template Stacking 0 which allows you and your retinue to use the Elements of Harmony"
+      }
+    ],
+    "reward": "300",
+    "desc": "A very immature client has suddenly taken a liking to old memes centered around Skyrim. They think it would be absolutely hilarious if you were to recreate some -ahem- \"classic gamer jokes\" as they say. Please be aware that this client's desires does not reflect upon the Company at large.",
+    "author": "PaxCruento",
+    "budget": 150,
+    "loca": "The Elder Scrolls",
+    "source": "",
+    "conditions": [
+      {
+        "value": "Ride a horse with an uncanny resemblance towards Hulk Hogan into a crowd of werewolves"
+      },
+      {
+        "value": "Teach a bear how to play \"Misirlou\" on a lute"
+      },
+      {
+        "value": "Permanently transfigure at least five dragons into something resembling a flying version of Thomas the Tank Engine"
+      },
+      {
+        "value": "Create at least 10 blue humanoid hedgehogs with the racial ability of super speed. You are not allowed to buy anyone from the Sonic franchise for this endeavor."
+      },
+      {
+        "value": "Produce a device that can shoot lethally explosive potatoes"
+      }
+    ],
+    "title": "GamerPoop (Why?)",
+    "rewardType": "Credits",
+    "scope": "Standard",
+    "uid": "ntpOf"
+  },
+  {
+    "budget": 150,
+    "source": "",
+    "loca": "The Elder Scrolls",
+    "objectives": [
+      {
+        "value": "Complete a questline for Azura",
+        "reward": "Free Template Stacking 1 perk of Raven from DC, or 100 credits",
+        "type": "Other"
+      },
+      {
+        "value": "Complete a questline for Boethiah",
+        "reward": "Free Template Stacking 1 of a Paladin with the Oathbreaker subclass from Dungeons & Dragons, or 100 credits",
+        "type": "Other"
+      },
+      {
+        "value": "Complete a questline for Clavicus Vile",
+        "type": "Other",
+        "reward": "Free Template Stacking 1 of Kyubey or Incubator from Puella Magi Madoka Magica, or 100 credits"
+      },
+      {
+        "type": "Other",
+        "value": "Complete a questline for Hermaeus Mora",
+        "reward": "Free Template Stacking 1 of Ninomae Ina'nis from Hololive, or 100 credits"
+      },
+      {
+        "type": "Other",
+        "value": "Complete a questline for Hircine",
+        "reward": "Free Template Stacking 1 of The Good Hunter from Bloodborne, or 100 credits"
+      },
+      {
+        "reward": "Free Template Stacking 1 of Thrall from Warcraft, or 100 credits",
+        "value": "Complete a questline for Malacath",
+        "type": "Other"
+      },
+      {
+        "value": "Complete a questline for Mehrunes Dagon",
+        "reward": "Free Template Stacking 1 of Carol Malus Dienheim from Symphogear, or 100 credits",
+        "type": "Other"
+      },
+      {
+        "type": "Other",
+        "value": "Complete a questline for Mephala",
+        "reward": "Free Template Stacking 1 of Loki from Marvel, or 100 credits"
+      },
+      {
+        "reward": "Free Template Stacking 1 of Saint Celestine from Warhammer 40k, or 100 credits",
+        "type": "Other",
+        "value": "Complete a questline for Meridia"
+      },
+      {
+        "reward": "Free Template Stacking 1 of Femto from Berserk, or 100 credits",
+        "type": "Other",
+        "value": "Complete a questline for Molag Bal"
+      },
+      {
+        "type": "Other",
+        "value": "Complete a questline for Namira",
+        "reward": "Free Template Stacking 1 of Meruem from Hunter x Hunter, or 100 credits"
+      },
+      {
+        "value": "Complete a questline for Nocturnal",
+        "type": "Other",
+        "reward": "Free Template Stacking 1 of Koishi Komeiji from Touhou Project, or 100 credits"
+      },
+      {
+        "type": "Other",
+        "reward": "Free Template Stacking 1 of Malenia, Goddess of Rot from Elden Ring, or 100 credits",
+        "value": "Complete a questline for Peryite"
+      },
+      {
+        "reward": "Free Template Stacking 1 of Pinkie Pie from My Little Pony, or 100 credits",
+        "value": "Complete a questline for Sanguine",
+        "type": "Other"
+      },
+      {
+        "value": "Complete a questline for Sheogorath",
+        "type": "Other",
+        "reward": "Free Template Stacking 1 of Alastor from Hazbin Hotel, or 100 credits"
+      },
+      {
+        "type": "Other",
+        "reward": "Free Template Stacking 1 of Freddy Krueger from A Nightmare on Elm Street, or 100 credits",
+        "value": "Complete a questline for Vaermina"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Increase the population of a Daedric cult in a province by tenfold"
+      },
+      {
+        "value": "Do not let the population of that cult drop from its tenfold-baseline for at least 2 months"
+      }
+    ],
+    "rewardType": "Credits",
+    "title": "Champion of the Daedra",
+    "desc": "The Daedric Princes are a wonderful group of deities who insist on stabbing each other with penis-spears and whatnot. A client is very interested in spreading their particular brand of chaos throughout Tamriel.",
+    "image": "https://i.pinimg.com/564x/0a/54/e6/0a54e6b8e7e50207a8d82bb8a77f285b.jpg",
+    "author": "PaxCruento",
+    "reward": "150",
+    "scope": "Standard",
+    "uid": "mkIfg"
+  },
+  {
+    "objectives": [
+      {
+        "type": "Other",
+        "reward": "Free Template Stacking 1 perk of Joker from Persona 5, or 100 credits",
+        "value": " Complete a \"Thief\" questline for an organization of thieves."
+      },
+      {
+        "reward": "Free Template Stacking 1 perk of Kratos from God of War, or 100 credits",
+        "value": "Complete a \"Warrior\" questline for an organization of warriors",
+        "type": "Other"
+      },
+      {
+        "type": "Other",
+        "value": "Complete a \"Mage\" questline for an organization of mages",
+        "reward": "Free Template Stacking 1 perk of Mordenkainen from Dungeons & Dragons, or 100 credits"
+      },
+      {
+        "type": "Other",
+        "reward": "Free Template Stacking 1 of Dracula from Castlevania, or 100 credits",
+        "value": "Complete a \"Vampire\" questline for an organization of vampires"
+      },
+      {
+        "value": "Complete a \"Monster Hunter\" questline for an organization of monster hunters",
+        "type": "Other",
+        "reward": "Free Template Stacking 1 of Harry Dresden from The Dresden Files, or 100 credits"
+      },
+      {
+        "type": "Other",
+        "value": "Complete an \"Assassin\" questline for an organization of assassins",
+        "reward": "Free Template Stacking 1 of No Name Assassin from Fate/Strange Fake, or 100 credits"
+      }
+    ],
+    "rewardType": "Credits",
+    "source": "",
+    "budget": 75,
+    "title": "B-Plot Hero",
+    "loca": "The Elder Scrolls",
+    "desc": "The only canonical plotlines of each Elder Scrolls game are the main questlines. For this reason, the fates of each faction are left vague through the timelines. You will decide exactly what and how it happened. Fill in for the main protagonist while they're off saving the Tamriel.",
+    "author": "PaxCruento",
+    "image": "https://cdn.donmai.us/sample/02/0b/__serval_kaban_lucky_beast_dovahkiin_and_guard_kemono_friends_and_2_more_drawn_by_okamura_okamura086__sample-020b933d0e150da232b277f9a8d4fab7.jpg",
+    "scope": "Standard",
+    "conditions": [
+      {
+        "value": "Complete the canonical questline of a major faction"
+      },
+      {
+        "value": "Remain as the leader of that faction for at least half a year"
+      }
+    ],
+    "reward": "150",
+    "uid": "ronaJD"
+  },
+  {
+    "rewardType": "Credits",
+    "conditions": [
+      {
+        "value": "3 Companions, must be the same age as a first year student, or aged to fit this requirement."
+      }
+    ],
+    "desc": "Form your very own team at the world's premier huntsman academy, Beacon. The members of your team must not be members of the team RWBY or JNPR, but anyone else is fair game. ",
+    "source": "",
+    "image": "https://i.pinimg.com/originals/cf/da/58/cfda5887fac5568ea798ee13d8fdf90c.jpg",
+    "author": "chest",
+    "objectives": [
+      {
+        "type": "Credits",
+        "reward": "120",
+        "value": "Graduate from Beacon with your team."
+      }
+    ],
+    "scope": "Standard",
+    "title": "JMPR",
+    "budget": 0,
+    "reward": "35",
+    "loca": "RWBY",
+    "uid": "koPdf"
+  },
+  {
+    "budget": 1200,
+    "reward": "20",
+    "scope": "Standard",
+    "loca": "Bloodborne",
+    "rewardType": "Credits",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/994724764671283340/Screenshot_7.jpg",
+    "author": "OneEyedKing ",
+    "source": "",
+    "conditions": [
+      {
+        "value": ""
+      }
+    ],
+    "desc": "The little girl was orphaned (or was she) and shes going to the chapel for safety. Protect her and help her through these hard times.",
+    "title": "Be a good hunter",
+    "objectives": [
+      {
+        "value": "Kill the pig",
+        "reward": "5",
+        "type": "Credits"
+      },
+      {
+        "value": "Make sure she feels comfortable at the chapel",
+        "type": "Credits",
+        "reward": "5"
+      }
+    ],
+    "uid": "GffDr"
+  },
+  {
+    "objectives": [
+      {
+        "value": "We would like you to plant some fake leads in case people do notice that something is off. So please release at least 3 separate perverted items at different locations and make sure they get used to lead attention away.",
+        "type": "Companions",
+        "reward": "Demia Duodectet from Interspecies Reviewers or 35 Credits."
+      }
+    ],
+    "image": "https://i.imgur.com/KjXJeKX.png",
+    "source": "",
+    "loca": "To Aru series",
+    "reward": "You may keep the items or sell each individual object/set for 15 Credits. In addition, you gain the ability to freely convert any magic item or technological trinket from this world which you gain possession of in a process that takes 1 hour. In this state the object loses most of its combat abilities, but gains sexual characteristics befitting a “hentai version”. This process is reversible by the same method. Alternatively, you may gain 100 Credits.",
+    "rewardType": "Other",
+    "title": "School Garden of Lust",
+    "desc": "Well due to some unfortunate accident, a supply drop of various store equipment has been deposited in the wrong dimension. Once the accident was discovered, the materials were unfortunately already gone, likely picked up by some of the locals. Most likely they have found temporary owners that are putting them to use currently. This is where you come in, we would ask you to recollect these objects and make sure that they cannot be traced back to us as far as possible. Unfortunately the objects in question have some degree of tracing protection so finding them won’t be as simple as to scry for magic objects of perversion. Though at least that should make sure that any local forces won’t immediately know the objects were released here. All of them have a certain amount of magic cast on them that “encourages” people to use them. So it is very likely that when you find any of these objects, they will already be in use. Ah, before we forget it, the supply drop was released in a place called ‘School Garden’ within Academy City. We believe it's some kind of all-girl’s exclusive area?",
+    "conditions": [
+      {
+        "value": "Collect the Following items:"
+      },
+      {
+        "value": "1 Copy of the Hentainomicon, the book of perverted names."
+      },
+      {
+        "value": "1 Box with 3 tentacle monster eggs from your friendly neighborhood tentacle shop."
+      },
+      {
+        "value": "A collection of enchanted sex toys including an assortment of transformative anal plugs."
+      },
+      {
+        "value": "A do it yourself chemistry set for quick and dirty love potions, aphrodisiacs and the like."
+      },
+      {
+        "value": "Mystically enhanced bondage gear of submission and domination."
+      },
+      {
+        "value": "One high-quality Rolex time stop clock. (Blackboxed to only work for lewd things.)"
+      },
+      {
+        "value": "Avoid the attention of local authorities as far as possible."
+      },
+      {
+        "value": "You may only capture locals who have been affected by the target items as collateral. Though others are still affected by lures."
+      },
+      {
+        "value": "Only 1 Retinue member may join you on this mission to minimize attention."
+      }
+    ],
+    "author": "Heaven Canceler",
+    "scope": "Standard",
+    "budget": 200,
+    "uid": "ioIdo"
+  },
+  {
+    "conditions": [
+      {
+        "value": "Be recognized as a member of the organization."
+      },
+      {
+        "value": "Remain a member for at least 2 months."
+      }
+    ],
+    "budget": 85,
+    "title": "Mister Mysterious",
+    "reward": "20 credits and Template Stacking for one character from the organization you joined.",
+    "author": "Trismegistus",
+    "objectives": [
+      {
+        "value": "Become a member of both organizations at the same time.",
+        "type": "TX Tickets",
+        "reward": "Template Stacking for one character from the other orginization."
+      },
+      {
+        "reward": "Template Stacking Anya",
+        "type": "TX Tickets",
+        "value": "Don't let anyone know you have supernatural abilities"
+      }
+    ],
+    "rewardType": "TX Tickets",
+    "scope": "Standard",
+    "image": "https://i.imgur.com/QhuOsvP.jpg",
+    "source": "",
+    "loca": "Spy X Family",
+    "desc": "Become a member of Wise or Garden. You do not need to be an official member so long as you provide work for them on a semiregular basis.",
+    "uid": ""
+  },
+  {
+    "budget": 300,
+    "desc": "You know who has it too good? Johhny Storm and  Reed Richards. Why does HE get to be married, have two(.5?) children. A stable life, a home, happiness?! And that Johnny...Fuck him for fucking my...\nGo and fuck reed's  wife, johnny's sister. and even  johnny's soul mate, Kaila.  Marry these woman, make them happy and the job his done,  I'll even through in a fool named Zora for free.\n-Signed and sponsored by DR.D ",
+    "reward": "Susan Storm with a tier increase of 1. Kaila. Zora Vukovic.",
+    "title": "Revenge is a dish best served on a wife.",
+    "scope": "Grand",
+    "image": " https://comic-watch.com/wp-content/uploads/2021/06/Reaction-1.jpg",
+    "objectives": [
+      {
+        "reward": "69",
+        "type": "Credits",
+        "value": "Make a viral sex tape featuring Johnny Storm being sad."
+      },
+      {
+        "type": "Credits",
+        "value": "Cure Ben Grimm's condition and  give him powers of equal strength.",
+        "reward": "150"
+      },
+      {
+        "value": "  Be the one to help  Franklin regain his  full power",
+        "type": "Companions",
+        "reward": "Galacta "
+      },
+      {
+        "type": "Credits",
+        "value": "Marry Valeria Richards ",
+        "reward": "200"
+      },
+      {
+        "reward": "100",
+        "value": "Attend Ben Grimm's Wedding as his best Man,  the  Maid of honor, or the priest ",
+        "type": "Credits"
+      },
+      {
+        "reward": "latveria will be added to your demiplane",
+        "value": "Marry Doom.",
+        "type": "Companions"
+      },
+      {
+        "value": "Join the FF",
+        "type": "Credits",
+        "reward": "25"
+      },
+      {
+        "type": "Other",
+        "value": "Reed and Johnny both attened any of your weddings",
+        "reward": "a Baxter Building and all its equipment to be added to your Demiplane"
+      }
+    ],
+    "source": "",
+    "loca": "Marvel (616)",
+    "author": "bakami",
+    "rewardType": "Companions",
+    "conditions": [
+      {
+        "value": "No member of the Fantastic four or Characters under their title can be Captured"
+      },
+      {
+        "value": "the affect of lures are greatly reduced"
+      },
+      {
+        "value": "Susan storm and Kaila must marry you and be in happy relationship for the mission to be complete. divorcing Reed is optional."
+      },
+      {
+        "value": "You and your companions cannot time travel."
+      },
+      {
+        "value": "The council of Reeds will interfere after 3 months. ( they can be captured.)"
+      },
+      {
+        "value": "Your wedding(s) must be televised/streamed throughout the universe, and spider-man must take the  pictures. "
+      },
+      {
+        "value": "This mission begins after Johnny as met Kaila and after Reed and Susan have married."
+      }
+    ],
+    "uid": "jkOid"
+  },
+  {
+    "image": "https://i.imgur.com/g3g7hgU.png",
+    "objectives": [
+      {
+        "type": "Other",
+        "value": "Impregnate all the Gorgon sisters with their permission.",
+        "reward": "1 TS for a Fertility Deity of your choice or 15 Credits."
+      },
+      {
+        "type": "Other",
+        "reward": "You may now at will, turn Athena and the Gorgon Sisters into Class Card as exists in Fate/Kaleid. They may be installed by anyone with some magical skills and power to temporarily gain their abilities. Alternatively take 180 Credits",
+        "value": "After saving the three Gorgon sisters, capture Athena and humiliate her by making her the sister’s maid and slave in revenge."
+      }
+    ],
+    "reward": "Medusa may now freely swap between her base, Lancer and Gorgon form. With an optional personality change at your discretion. They may split into 3 independent forms too. Her sisters each gain a TS for a deity of your choice. Alternatively you may take 190 Credits instead. (160 for Gorgon’s upgrade, 30 for the Sister’s TS)",
+    "loca": "Nasuverse",
+    "rewardType": "Other",
+    "budget": 400,
+    "source": "",
+    "scope": "Standard",
+    "title": "Fate Slayer - Godlayer",
+    "conditions": [
+      {
+        "value": "You must defeat and capture Gorgon Medusa without killing her and also bind her sisters Stheno and Euryale."
+      },
+      {
+        "value": "You will be inserted 3 days before Gorgon Medusa devours her sisters. Should you be too late without a method of resurrecting them, you fail the mission. if you let Gorgon die by Perseus hands after she has eaten her sisters, you fail period."
+      },
+      {
+        "value": "Your retinue may not directly take part in the mission, though they may supply you with equipment, magic blessings or the like."
+      },
+      {
+        "value": "Within 1 week of the above mentioned deadline, Perseus will come to the Shapeless Isle to kill the Gorgon. You must of course stop him from doing that. Warning, the greece gods may give him better equipment or otherwise stack things against you if they notice you."
+      },
+      {
+        "value": "During the main mission, only the Gorgon sisters can be bound. Though lures are still effective on others."
+      }
+    ],
+    "author": "Heaven Canceler",
+    "desc": "Upon the Shapeless Isle lies a terrifying monster, its eyes turn those that meet its gaze to stone. Its fangs are like poison and its strength is that of a hundred men. Imprisoned on that island are a pair of beautiful maidens, waiting to be rescued and who will surely share the embrace of any hero who steals them away from this land. Such is the false tale told to many a poor fool sent to their doom. One after another, they are killed and their deaths increase as Medusa’s hunger rises, growing to enjoy the slaughter of these men that would steal away her beloved sisters. Soon she will turn into a beast, soon the tale will come to an end and then a hero will come to slay the monster, never knowing of the true tragedy that had taken place here. Your purpose is simple, to avert this tragedy entirely. For this purpose, you will be inserted on mainland Greece and then need to make your way to the shapeless isle and stop the tragedy in its make.",
+    "uid": "qobnO"
+  },
   {
     "author": "OneEyedKing",
     "reward": "20",
@@ -112,85 +719,7 @@
     ],
     "loca": "Spy X Family",
     "desc": "Become a member of Wise or Garden. You do not need to be an official member so long as you provide work for them on a semiregular basis.",
-    "uid": ""
-  },
-  {
-    "scope": "Grand",
-    "author": "bakami",
-    "conditions": [
-      {
-        "value": "No member of the Fantastic four or Characters under their title can be Captured"
-      },
-      {
-        "value": "the affect of lures are greatly reduced"
-      },
-      {
-        "value": "Susan storm and Kaila must marry you and be in happy relationship for the mission to be complete. divorcing Reed is optional."
-      },
-      {
-        "value": "You and your companions cannot time travel."
-      },
-      {
-        "value": "The council of Reeds will interfere after 3 months. ( they can be captured.)"
-      },
-      {
-        "value": "Your wedding(s) must be televised/streamed throughout the universe, and spider-man must take the  pictures. "
-      },
-      {
-        "value": "This mission begins after Johnny as met Kaila and after Reed and Susan have married."
-      }
-    ],
-    "source": "",
-    "title": "Revenge is a dish best served on a wife.",
-    "objectives": [
-      {
-        "value": "Make a viral sex tape featuring Johnny Storm being sad.",
-        "reward": "69",
-        "type": "Credits"
-      },
-      {
-        "type": "Credits",
-        "reward": "150",
-        "value": "Cure Ben Grimm's condition and  give him powers of equal strength."
-      },
-      {
-        "type": "Companions",
-        "reward": "Galacta ",
-        "value": "  Be the one to help  Franklin regain his  full power"
-      },
-      {
-        "reward": "200",
-        "type": "Credits",
-        "value": "Marry Valeria Richards "
-      },
-      {
-        "reward": "100",
-        "type": "Credits",
-        "value": "Attend Ben Grimm's Wedding as his best Man,  the  Maid of honor, or the priest "
-      },
-      {
-        "value": "Marry Doom.",
-        "reward": "latveria will be added to your demiplane",
-        "type": "Companions"
-      },
-      {
-        "value": "Join the FF",
-        "type": "Credits",
-        "reward": "25"
-      },
-      {
-        "reward": "a Baxter Building and all its equipment to be added to your Demiplane",
-        "value": "Reed and Johnny both attened any of your weddings",
-        "type": "Other"
-      }
-    ],
-    "rewardType": "Companions",
-    "image": " https://comic-watch.com/wp-content/uploads/2021/06/Reaction-1.jpg",
-    "loca": "Marvel (616)",
-    "budget": 300,
-    "desc": "You know who has it too good? Johhny Storm and  Reed Richards. Why does HE get to be married, have two(.5?) children. A stable life, a home, happiness?! And that Johnny...Fuck him for fucking my...\nGo and fuck reed's  wife, johnny's sister. and even  johnny's soul mate, Kaila.  Marry these woman, make them happy and the job his done,  I'll even through in a fool named Zora for free.\n-Signed and sponsored by DR.D ",
-    "reward": "Susan Storm with a tier increase of 1. Kaila. Zora Vukovic.",
-    "uid": ""
+    "uid": "mghuI"
   },
   {
     "scope": "Standard",
@@ -232,7 +761,7 @@
     "desc": "Upon the Shapeless Isle lies a terrifying monster, its eyes turn those that meet its gaze to stone. Its fangs are like poison and its strength is that of a hundred men. Imprisoned on that island are a pair of beautiful maidens, waiting to be rescued and who will surely share the embrace of any hero who steals them away from this land. Such is the false tale told to many a poor fool sent to their doom. One after another, they are killed and their deaths increase as Medusa’s hunger rises, growing to enjoy the slaughter of these men that would steal away her beloved sisters. Soon she will turn into a beast, soon the tale will come to an end and then a hero will come to slay the monster, never knowing of the true tragedy that had taken place here. Your purpose is simple, to avert this tragedy entirely. For this purpose, you will be inserted on mainland Greece and then need to make your way to the shapeless isle and stop the tragedy in its make.",
     "reward": "Medusa may now freely swap between her base, Lancer and Gorgon form. With an optional personality change at your discretion. They may split into 3 independent forms too. Her sisters each gain a TS for a deity of your choice. Alternatively you may take 190 Credits instead. (160 for Gorgon’s upgrade, 30 for the Sister’s TS)",
     "source": "",
-    "uid": ""
+    "uid": "bjiId"
   },
   {
     "source": "",
