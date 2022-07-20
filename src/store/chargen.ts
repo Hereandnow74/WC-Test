@@ -56,7 +56,12 @@ const intensities = storeType('intensities', [] as {
 
 const pvpPerks = storeType<Perk[]>('pvpPerks', [])
 
-const binding = storeType<Perk[]>('binding', [])
+const binding = storeType<Perk[]>('binding', [
+  {
+    title: 'Company Stamp',
+    cost: 0,
+  },
+])
 
 const luresBought = storeType<Perk[]>('luresBought', [])
 
@@ -96,7 +101,7 @@ export interface SavedChar {
 
 const companions = storeType('companions', [] as SavedChar[])
 
-const allEffects = storeType('allEffects', [] as string[])
+const allEffects = storeType('allEffects', ['Company Stamp'] as string[])
 
 const budgetMods = storeType('budgetMods', {
   plus: 0,
@@ -116,7 +121,7 @@ const fee = storeType('fee', 0)
 
 const flags = storeType('flags', {
   noBindings: true,
-  noHeritage: true,
+  noHeritage: false,
   danger11Start: false,
   pvpEnabled: false,
   chargen: true,

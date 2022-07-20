@@ -198,7 +198,7 @@ const defenseRetinueDiscount = computed(() => {
         case 2:
           return a += defenseObject[x.title].cost * 0.8
         case 3:
-          return a += defenseObject[x.title].cost
+          return a += defenseObject[x.title].cost * 1.2
         case 4:
           return a += defenseObject[x.title].cost * 1.6
         case 5:
@@ -295,7 +295,7 @@ const totalCost = computed(() => startingOrigin.value.cost + heritageCost.value 
 + waifuPerksCost.value + genericWaifuPerksCost.value + luresCost.value + companionsCost.value + otherCost.value)
 
 const companionsWithoutSold = computed(() => companions.value.filter(c => !c.sold))
-const companionsComp = computed(() => companions.value.filter(cmp => cmp.role === 'Companion' || !cmp.role))
+const companionsComp = computed(() => companionsWithoutSold.value.filter(cmp => cmp.role === 'Companion' || !cmp.role))
 
 const targetList = computed(() => {
   const comps = companionsComp.value.map(x => (x.name))

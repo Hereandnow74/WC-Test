@@ -35,7 +35,7 @@
         <Select v-model="author" :options="authorOptions" label="Author" />
       </div>
       <div>
-        <Select v-model="world" :options="worldOptions" label="World" class="max-w-68" />
+        <Input v-model="world" placeholder="World name" class="max-w-68" />
       </div>
       <div>
         <Select v-model="scope" :options="scopeOptions" label="Scope" />
@@ -53,6 +53,7 @@
 </template>
 
 <script lang="ts" setup>
+import Fuse from 'fuse.js'
 import { Mission } from 'global'
 import { groupBy, sample } from 'lodash-es'
 
@@ -78,12 +79,42 @@ const worldOptions = computed(() => Object.keys(groupBy(missions.value, 'loca'))
 const scopeOptions = ['Any', 'Quick', 'Standard', 'Grand']
 
 const author = ref('Any')
-const world = ref('Any')
+const world = ref('')
 const scope = ref('Any')
 
 const page = ref(0)
 
-const filteredMissions = computed(() => missions.value.filter(mission => (mission.author === author.value || author.value === 'Any') && (mission.loca === world.value || world.value === 'Any') && (mission.scope === scope.value || scope.value === 'Any')))
+const options = reactive({
+  findAllMatches: true,
+  useExtendedSearch: true,
+  threshold: 0.4,
+  ignoreLocation: true,
+  keys: ['loca', 'scope', 'author'],
+  shouldSort: false,
+})
+
+const fuse = computed(() => new Fuse(missions.value, options))
+
+const searchedMissions = computed(() => {
+  const sr = world.value || '!^xxx'
+  const sopt: any = {
+    $and: [
+      { loca: sr },
+    ],
+  }
+  if (scope.value !== 'Any') sopt.$and.push({ scope: `=${scope.value}` })
+  if (author.value !== 'Any') sopt.$and.push({ author: `=${author.value}` })
+  return fuse.value.search(sopt)
+})
+
+watch([world, scope, author], () => {
+  if (world.value || (author.value && author.value !== 'Any') || (scope.value && scope.value !== 'Any'))
+    options.shouldSort = true
+  else
+    options.shouldSort = false
+})
+
+const filteredMissions = computed(() => searchedMissions.value.map(x => x.item))
 
 const gen = new MissionGenerator()
 const gen2 = new MissionGenerator()

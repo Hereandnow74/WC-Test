@@ -85,7 +85,7 @@ const discountedCost = computed(() => {
       case 2:
         return displayedCost.value * 0.6
       case 3:
-        return displayedCost.value * 0.5
+        return displayedCost.value * 0.4
       case 4:
         return displayedCost.value * 0.2
       case 5:

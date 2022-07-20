@@ -100,7 +100,7 @@ const minDR = ref(1)
 const options = {
   findAllMatches: true,
   threshold: 0.3,
-  keys: ['worldName', 'condition.name'],
+  keys: [{ name: 'worldName', weight: 1.2 }, 'condition.name'],
 }
 
 // const subFuse = new Fuse(worldsSubReac.value, options)
@@ -121,7 +121,7 @@ watch(allWorlds, () => fuse.setCollection(allWorlds.value))
 
 const worldsFiltered = computed(() => {
   if (search.value)
-    return fuse.search(search.value).map(x => x.item).sort(sortingFunc).filter(x => x.rating >= minDR.value && x.rating <= maxDR.value)
+    return fuse.search(search.value).map(x => x.item).filter(x => x.rating >= minDR.value && x.rating <= maxDR.value)
   else
     return [...allWorlds.value].sort(sortingFunc).filter(x => x.rating >= minDR.value && x.rating <= maxDR.value)
 })

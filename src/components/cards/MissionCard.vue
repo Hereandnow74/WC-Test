@@ -43,11 +43,13 @@
     <div class="px-2">
       <h4 class="text-green-800 dark:text-green-300 float-left pr-2">
         Reward
-        [
-        <span v-if="mission.rewardType" class="font-semibold text-pink-800 dark:text-pink-300">
-          {{ mission.rewardType }}
-        </span>
-        ]:
+        <span v-if="mission.rewardType">
+          [
+          <span class="font-semibold text-pink-800 dark:text-pink-300">
+            {{ mission.rewardType }}
+          </span>
+          ]
+        </span>:
       </h4>
       <span>{{ mission.reward }}</span>
     </div>
@@ -60,11 +62,13 @@
         <div>
           <span class="font-semibold text-green-800 dark:text-green-300">
             Reward
-            [
-            <span v-if="rew.type" class="font-semibold text-pink-800 dark:text-pink-300">
-              {{ rew.type }}
-            </span>
-            ]:
+            <span v-if="rew.type">
+              [
+              <span class="font-semibold text-pink-800 dark:text-pink-300">
+                {{ rew.type }}
+              </span>
+              ]
+            </span>:
           </span> {{ rew.reward }}
         </div>
       </div>

@@ -52,6 +52,7 @@
           :key="tag.tag"
           class="rounded-md cursor-pointer flex items-center gap-1 select-none p-0.5 px-1"
           :class="tag.color"
+          :style="tag.style"
           :title="tag.desc ? tag.desc : ''"
           @click="tagToggles[tag.short] = threeToggle(tagToggles[tag.short])"
         >
@@ -82,7 +83,7 @@ function toggleAll() {
 const defTags = [
   'Sturdy',
   'Harsh',
-  'from',
+  'Hazard',
   'Monster Tamer',
   'Cool',
   'Materialist',

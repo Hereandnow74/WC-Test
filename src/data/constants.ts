@@ -118,7 +118,7 @@ export const waifuTags = {
   cl: { tag: 'Cool', short: 'cl', effect: '', desc: 'is known for keeping a cool head or having great willpower.', color: 'bg-[#72c7cd] text-black' },
   ml: { tag: 'Materialist', short: 'ml', effect: '', desc: 'known for having a material vice.', color: 'bg-[#4a8108]' },
   ps: { tag: 'Psychic', short: 'ps', effect: '', desc: 'is known as a psychic or mind-manipulator.', color: 'bg-[#61457d]' },
-  mp: { tag: 'Mind Powers', short: 'mp', effect: '', desc: 'is known as a psychic or mind-manipulator.', color: 'bg-[#61457d]' },
+  mp: { tag: 'Mind Manipulator', short: 'mp', effect: '', desc: 'is known as a psychic or mind-manipulator.', color: 'bg-[#61457d]' },
   bj: { tag: 'Bodyjack', short: 'bj', effect: '', desc: 'is known for bodyjacking others.', color: 'bg-[#631900]' },
   dr: { tag: 'Drain HP/MP/SP', short: 'dr', effect: '', desc: 'can drain or feed on life, mana, or souls.', color: 'bg-gradient-to-r to-red-500 from-blue-500' },
   id: { tag: 'Instant Death', short: 'id', effect: '', desc: 'is known for inflicting instant death or not dying even when killed.', color: 'bg-gradient-to-r to-green-500 from-dark-500' },
@@ -149,7 +149,7 @@ export const waifuTags = {
   sn: { tag: 'Scientist', short: 'sn', effect: '', desc: '', color: 'bg-[#2b548d]' },
   sd: { tag: 'Student', short: 'sd', effect: '', desc: '', color: 'bg-[#e9d5ab] text-black' },
   wh: { tag: 'Witch', short: 'wh', effect: '', desc: '', color: 'bg-[#0d7703]' },
-  ai: { tag: 'AI', short: 'ai', effect: '', desc: 'Artificial Intelligence', color: 'bg-gradient-to-t to-gray-400 from-gray-200 text-black' },
+  ai: { tag: 'AI', short: 'ai', effect: '', desc: 'Artificial Intelligence', style: 'bg-gradient-to-t to-gray-400 from-gray-200 text-black' },
   me: { tag: 'Mage', short: 'me', effect: '', desc: '', color: 'bg-teal-500 text-black' },
   cf: { tag: 'Chef', short: 'cf', effect: '', desc: '', color: 'bg-[#dd8812]' },
   pi: { tag: 'Pirate', short: 'pi', effect: '', desc: '', color: 'bg-teal-500 text-black' },
@@ -176,7 +176,7 @@ export const waifuTags = {
   tw: { tag: 'Twins', short: 'tw', effect: '', desc: 'Twins / Triplets / Quadruplets / etc.', color: 'bg-teal-500 text-black' },
   cc: { tag: 'Crafter', short: 'cc', effect: '', desc: 'Any producing profession blacksmith/alchemist/artificer/tailor/etc.', color: 'bg-teal-500 text-black' },
   mm: { tag: 'Magical Girl', short: 'mm', effect: '', desc: '', color: 'bg-teal-500 text-black' },
-  al: { tag: 'Alien', short: 'al', effect: '', desc: '', color: 'bg-teal-500 text-black' },
+  al: { tag: 'Alien', short: 'al', effect: '', desc: '', style: { background: 'linear-gradient(90deg, rgba(12,94,243,1) 0%, rgba(5,227,31,1) 100%)', color: '#fff' } },
   mg: { tag: 'Monster-girl', short: 'mg', effect: '', desc: '', color: 'bg-teal-500 text-black' },
   nd: { tag: 'Nerd', short: 'nd', effect: '', desc: '', color: 'bg-teal-500 text-black' },
   ar: { tag: 'Artist', short: 'ar', effect: '', desc: 'Any artistic talent', color: 'bg-teal-500 text-black' },
@@ -271,6 +271,7 @@ export const LINKS = computed(() => {
   links['Loans and Credit Debt'] = ''
   links['Soul Defense (2x)'] = 'talents/defense'
   links.familiar = ''
+  links.Stamped = 'bindings/bindings'
   return links
 })
 

@@ -24,5 +24,60 @@
   "liveFrame.url": "http://localhost:3333",
   "liveFrame.title": "Local Development",
   "liveFrame.pane": "Beside",
-  "volar.takeOverMode.enabled": true
+  "volar.takeOverMode.enabled": true,
+  "json.schemas": [
+    {
+      "fileMatch": [
+        "userCharacters.json",
+        "characters.json"
+      ],
+      "schema": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "u": {
+              "type": "number"
+            },
+            "n": {
+              "type": "string",
+              "minLength": 1,
+            },
+            "t": {
+              "type": "number",
+              "minimum": 1,
+              "maximum": 11,
+            },
+            "i": {
+              "type": "string"
+            },
+            "s": {
+              "type": "string"
+            },
+            "in": {
+              "type": "string"
+            },
+            "w": {
+              "type": "string",
+              "minLength": 1,
+            },
+            "d": {
+              "type": "string"
+            },
+            "b": {
+              "type": "array"
+            },
+          },
+          "required": [
+            "u",
+            "b",
+            "w",
+            "n",
+            "i",
+            "t"
+          ]
+        }
+      }
+    }
+  ]
 }

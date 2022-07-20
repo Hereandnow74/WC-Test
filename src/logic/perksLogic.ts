@@ -515,7 +515,12 @@ export function clearAll() {
   }
   intensities.value = []
   pvpPerks.value = []
-  binding.value = []
+  binding.value = [
+    {
+      title: 'Company Stamp',
+      cost: 0,
+    },
+  ]
   luresBought.value = []
   otherPerks.value = []
   heritage.value = []
@@ -527,9 +532,11 @@ export function clearAll() {
   genericWaifuPerks.value = []
   waifuPerks.value = []
   companions.value = []
-  allEffects.value = []
+  allEffects.value = [
+    'Company Stamp',
+  ]
   flags.value = {
-    noBindings: true,
+    noBindings: false,
     noHeritage: true,
     danger11Start: false,
     pvpEnabled: false,

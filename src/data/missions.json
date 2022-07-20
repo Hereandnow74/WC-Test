@@ -1,5 +1,185 @@
 [
-  
+  {
+    "title": "YOU vs. the Scott Pilgrim Universe",
+    "desc": "This variant of Scott's Pilgrim's world has gone REALLY wrong: in the forest Scott defeated Nega Scott rather than reaccept him, and now he's a member of the League of Evil Exes. It went so wrong that Envy, Stacey, and Kim have contacted us to deal with this mess: you must find Ramona, start dating her, and then take down the League for good.",
+    "loca": "Scott Pilgrim",
+    "reward": "1000 credits, plus Envy Adams Stacey Pilgrim, and Kim Pine",
+    "budget": 200,
+    "objectives": [
+      {
+        "reward": "Soul Talent or its equivalent in credits",
+        "value": "Defeat Patel by yourself after he summoned the Demon Hipster Chicks",
+        "type": "Other"
+      },
+      {
+        "type": "Other",
+        "value": "Talk down Lucas Lee",
+        "reward": "Communication Talent or its equivalent in credits"
+      },
+      {
+        "value": "Defeat Todd without involving the Vegan Police",
+        "reward": "TS1 as Tetsuo (Akira)",
+        "type": "Perks"
+      },
+      {
+        "value": "Seduce Lynette Guycott",
+        "reward": "One level in a Transhuman Heritage of your choice",
+        "type": "Perks"
+      },
+      {
+        "value": "Capture Roxy Richter without overt mind control",
+        "type": "Companions",
+        "reward": "One level on all local captures"
+      },
+      {
+        "type": "Perks",
+        "value": "Shut the Katayanagi Twins up",
+        "reward": "One level in a Transhuman Heritage of your choice"
+      },
+      {
+        "value": "Make Scott admit he's not perfect and shares the blame for how things went bad",
+        "reward": "The swords Power of Love and Power of Understanding",
+        "type": "Other"
+      },
+      {
+        "value": "Kill Gideon for good on first try",
+        "type": "Perks",
+        "reward": "Full Corruption Defense or its equivalent in credits"
+      }
+    ],
+    "author": "Ratcatcher",
+    "rewardType": "Other",
+    "conditions": [
+      {
+        "value": "Forage: only local captures can help you"
+      },
+      {
+        "value": "Find Ramona Flowers and start dating her. Capture isn't necessary, but you must not use any overt mind control - if she catches you doing it, she's gonna run"
+      },
+      {
+        "value": "Defeat all the Evil Exes. Choose whatever method you want, with most of them, but Gideon must die and STAY dead - so you must use lethal force and make sure he stops respawning"
+      },
+      {
+        "value": "Bit of warning: Gideon managed to get Todd's powers restored"
+      }
+    ],
+    "scope": "Standard",
+    "image": "https://i.ibb.co/v3Rjbm3/Seven-Evil-Exes-Pic.png",
+    "source": "",
+    "uid": "kYEtQ"
+  },
+  {
+    "scope": "Grand",
+    "desc": "A particular client of ours is sick and tired of seeing the Faunus mistreated. Your job is to elevate the Faunus race to the level of humanity or above it, whether through war and the enslavement of all humans, or peace talks and protesting. ",
+    "reward": "350",
+    "loca": "RWBY",
+    "budget": 0,
+    "source": "",
+    "author": "chest",
+    "rewardType": "Credits",
+    "objectives": [
+      {
+        "type": "Credits",
+        "reward": "150",
+        "value": "Create a company that surpasses the Schnee Dust Company"
+      },
+      {
+        "value": "Convince Humanity to willingly submit to the Faunus",
+        "reward": "Weiss Schnee, Winter Schnee, and Willow Schnee for free.",
+        "type": "Companions"
+      }
+    ],
+    "title": "Faunus Superiority ",
+    "image": "https://media.discordapp.net/attachments/868800506364035074/996618650893168661/unknown.png",
+    "conditions": [
+      {
+        "value": "Elevate the Faunus' standing in the world of RWBY"
+      },
+      {
+        "value": "Have animal features yourself (eyes, ears, etc.)"
+      }
+    ],
+    "uid": "DTObn"
+  },
+  {
+    "objectives": [],
+    "scope": "Standard",
+    "desc": "We all know the Evil Counterpart trope, especially in comic books, dare I mention Reverse-Flash, Goku Black, the Justice Lords? Well, these heroes are almost all total idiots who barely share a brain cell between them, so let's give them the ole Evil Counterpart treatment! You and your chosen retinue will be required to use a Bow, a Spear, a Sword, and a Shield respectively before being sent to the Country of Melromarc on the day of the Hero summoning ritual. The goal is to kill all 4 of the Legendary Cardinal Heroes, thus dooming the world to be destroyed by the Waves (or something.)",
+    "title": "The Evil Counterpart Trope",
+    "source": "",
+    "loca": "Rising of the Shield Hero",
+    "budget": 955,
+    "rewardType": "Credits",
+    "conditions": [
+      {
+        "value": "You may not leave the world by any means until all 4 heroes are dead."
+      },
+      {
+        "value": "You and at least members of your retinue must wield a weapon that is either a Shield, a Sword, a Bow, or a Spear. If you have 4 or more retinue members, then select one for each type of weapon."
+      },
+      {
+        "value": "You and your retinue cannot exceed T8 or, if they do, they are limited to this Tier for the duration of the Mission."
+      }
+    ],
+    "image": "https://i.ytimg.com/vi/7HRvZ-ya560/maxresdefault.jpg",
+    "author": "TDon123",
+    "reward": "400",
+    "uid": "DTJoP"
+  },
+  {
+    "conditions": [
+      {
+        "value": "Substitute as Scott Pilgrim. If you wish you can keep your first name and looks"
+      },
+      {
+        "value": "You and Wallace move in with Envy (who moves back to Toronto). Try and keep them from killing each other"
+      },
+      {
+        "value": "You must both get in a relationship with Ramona and seduce Envy. Both will be immune to overt mind control"
+      },
+      {
+        "value": "Warning: as soon as you start dating Ramona Gideon WILL \"spice up\" Scott's memories preceding the Substitution unless you have full Corruption Defense"
+      }
+    ],
+    "loca": "Scott Pilgrim",
+    "desc": "Hi, newbie. Listen, I've seen the new Highly Effective Manager stuck you with her Two Dime scheme, and, well, I've got this mission we've had lying around for a while that nobody ever dared taking. You substitute as Scott Pilgrim between his break-up with Envy and meeting Ramona... But in this universe Scott's parents divorced and remarried to the equally divorced parents of Envy, who is now stuck between being angry at how the break-up played out and the fact you're now her idiot sibling (well, SCOTT is the idiot) and SOMEONE has to look after you... And her new mom and dad talked her into agreeing to do just that. Your job is to take advantage of this and seduce her behind Todd's back while maintaining a relationship with Ramona.",
+    "rewardType": "Credits",
+    "reward": "500 credits",
+    "budget": 20,
+    "title": "Scott's new sister is his ex!",
+    "author": "Ratcatcher",
+    "scope": "Standard",
+    "objectives": [
+      {
+        "type": "Perks",
+        "value": "Seduce your ACTUAL sister, Stacie Pilgrim",
+        "reward": "One level in a Binding of your choice (includes free Binding change)"
+      },
+      {
+        "value": "Expose Todd's cheating on Envy",
+        "type": "Perks",
+        "reward": "TS1 as Tetsuo (Akira)"
+      },
+      {
+        "type": "Perks",
+        "value": "Seduce Lynette away from Todd",
+        "reward": "Either Psychic Talent or Soul Talent"
+      },
+      {
+        "value": "Reabsorb Nega Scott",
+        "reward": "Full Corruption Defense or its equivalent in credit plus restauration of Scott's altered memories",
+        "type": "Perks"
+      },
+      {
+        "type": "Perks",
+        "reward": "TS1 as an anime character of your choice",
+        "value": "Talk pre-relationship Envy into getting photographed while wearing Asuka's plugsuit (you have one, Scott bought it as a birthday present but never gave it when she sold all her anime merchandise)"
+      }
+    ],
+    "source": "",
+    "image": "https://i.ibb.co/r5ZcJ9N/Envy-Adams.png",
+    "uid": "kSPgg"
+  },
   {
     "loca": "The Boys",
     "rewardType": "Credits",
@@ -11,7 +191,7 @@
       }
     ],
     "budget": 140,
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/996370309563306064/Screenshot2020-10-2009.23.27.jpg",
     "scope": "Standard",
     "author": "Trismegistus",
     "source": "",
@@ -26,8 +206,9 @@
     "uid": "poIkn"
   },
   {
-    "rewardType": "Other",
     "source": "",
+    "title": "Gym teacher",
+    "loca": "Generic",
     "conditions": [
       {
         "value": "Open, buy, or somehow take control of a gym. It can be for basic fitness, a specific sport, or martial arts"
@@ -39,22 +220,21 @@
         "value": "As a trainer, get your targets to either fall for you or offer you sex. You can't offer them anything in exchange, they must decide it by themselves. Bindings and overt mind control methods are not allowed until this point"
       }
     ],
+    "budget": 15,
     "scope": "Standard",
-    "title": "Gym teacher",
+    "author": "Ratcatcher",
+    "rewardType": "Other",
+    "reward": "5 credits and one tier at step 6 for every new retinue member",
     "objectives": [
       {
-        "value": "Poach a target from a competing gym",
         "type": "Credits",
-        "reward": "Credits equivalent to their listed price"
+        "reward": "Credits equivalent to their listed price",
+        "value": "Poach a target from a competing gym"
       }
     ],
-    "budget": 15,
-    "author": "Ratcatcher",
     "image": "https://cdn.donmai.us/original/61/27/__sakura_hibiki_and_souryuuin_akemi_dumbbell_nan_kilo_moteru_drawn_by_sadakage__61278b280c70c26c70c86036f18dd939.jpg",
-    "desc": "Gyms are a great place for recruiting beatiful and fit people. Why don't you open one yourself and use it to recruit retinue members?",
-    "reward": "5 credits and one tier at step 6",
-    "loca": "Generic",
-    "uid": "GunAK"
+    "uid": "GunAK",
+    "desc": "Gyms are a great place for recruiting beatiful and fit people. Why don't you open one yourself and use it to recruit retinue members?"
   },
   {
     "desc": "Hi, cousin, it's me, Mesméra. Listen, I got this mission for one of our cousins who took the Two Dime challenge, and I noticed that this universe' rulers need replacing. So, could you go and do the job by capturing Kandrakar and its Guardians? And whatever else you want, but those must be captured.",
@@ -294,47 +474,49 @@
     "uid": "mkIfg"
   },
   {
+    "rewardType": "Credits",
+    "source": "",
+    "author": "PaxCruento",
+    "image": "https://cdn.donmai.us/sample/02/0b/__serval_kaban_lucky_beast_dovahkiin_and_guard_kemono_friends_and_2_more_drawn_by_okamura_okamura086__sample-020b933d0e150da232b277f9a8d4fab7.jpg",
+    "budget": 75,
+    "reward": "150",
+    "loca": "The Elder Scrolls",
+    "desc": "The only canonical plotlines of each Elder Scrolls game are the main questlines. For this reason, the fates of each faction are left vague through the timelines. You will decide exactly what and how it happened. Fill in for the main protagonist while they're off saving Tamriel.",
     "objectives": [
       {
         "type": "Other",
-        "reward": "Free Template Stacking 1 perk of Joker from Persona 5, or 100 credits",
-        "value": " Complete a \"Thief\" questline for an organization of thieves."
+        "value": " Complete a \"Thief\" questline for an organization of thieves.",
+        "reward": "Free Template Stacking 1 perk of Joker from Persona 5, or 100 credits"
       },
       {
-        "reward": "Free Template Stacking 1 perk of Kratos from God of War, or 100 credits",
         "value": "Complete a \"Warrior\" questline for an organization of warriors",
+        "reward": "Free Template Stacking 1 perk of Kratos from God of War, or 100 credits",
         "type": "Other"
       },
       {
+        "reward": "Free Template Stacking 1 perk of Mordenkainen from Dungeons & Dragons, or 100 credits",
         "type": "Other",
-        "value": "Complete a \"Mage\" questline for an organization of mages",
-        "reward": "Free Template Stacking 1 perk of Mordenkainen from Dungeons & Dragons, or 100 credits"
+        "value": "Complete a \"Mage\" questline for an organization of mages"
       },
       {
-        "type": "Other",
         "reward": "Free Template Stacking 1 of Dracula from Castlevania, or 100 credits",
-        "value": "Complete a \"Vampire\" questline for an organization of vampires"
+        "value": "Complete a \"Vampire\" questline for an organization of vampires",
+        "type": "Other"
       },
       {
-        "value": "Complete a \"Monster Hunter\" questline for an organization of monster hunters",
+        "reward": "Free Template Stacking 1 of Harry Dresden from The Dresden Files, or 100 credits",
         "type": "Other",
-        "reward": "Free Template Stacking 1 of Harry Dresden from The Dresden Files, or 100 credits"
+        "value": "Complete a \"Monster Hunter\" questline for an organization of monster hunters"
       },
       {
-        "type": "Other",
         "value": "Complete an \"Assassin\" questline for an organization of assassins",
-        "reward": "Free Template Stacking 1 of No Name Assassin from Fate/Strange Fake, or 100 credits"
+        "reward": "Free Template Stacking 1 of No Name Assassin from Fate/Strange Fake, or 100 credits",
+        "type": "Other"
       }
     ],
-    "rewardType": "Credits",
-    "source": "",
-    "budget": 75,
-    "title": "B-Plot Hero",
-    "loca": "The Elder Scrolls",
-    "desc": "The only canonical plotlines of each Elder Scrolls game are the main questlines. For this reason, the fates of each faction are left vague through the timelines. You will decide exactly what and how it happened. Fill in for the main protagonist while they're off saving the Tamriel.",
-    "author": "PaxCruento",
-    "image": "https://cdn.donmai.us/sample/02/0b/__serval_kaban_lucky_beast_dovahkiin_and_guard_kemono_friends_and_2_more_drawn_by_okamura_okamura086__sample-020b933d0e150da232b277f9a8d4fab7.jpg",
+    "uid": "ronaJD",
     "scope": "Standard",
+    "title": "B-Plot Hero",
     "conditions": [
       {
         "value": "Complete the canonical questline of a major faction"
@@ -342,9 +524,7 @@
       {
         "value": "Remain as the leader of that faction for at least half a year"
       }
-    ],
-    "reward": "150",
-    "uid": "ronaJD"
+    ]
   },
   {
     "rewardType": "Credits",
@@ -372,21 +552,20 @@
     "uid": "koPdf"
   },
   {
-    "budget": 1200,
-    "reward": "20",
-    "scope": "Standard",
-    "loca": "Bloodborne",
+    "desc": "The little girl was orphaned (or was she) and shes going to the chapel for safety. Protect her and help her through these hard times.",
     "rewardType": "Credits",
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/994724764671283340/Screenshot_7.jpg",
-    "author": "OneEyedKing ",
-    "source": "",
+    "loca": "Bloodborne",
+    "scope": "Standard",
     "conditions": [
       {
-        "value": ""
+        "value": "Safely escort the girl to the Chapel. "
+      },
+      {
+        "value": "She must not have suffered any major injuries."
       }
     ],
-    "desc": "The little girl was orphaned (or was she) and shes going to the chapel for safety. Protect her and help her through these hard times.",
-    "title": "Be a good hunter",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/994724764671283340/Screenshot_7.jpg",
+    "uid": "GffDr",
     "objectives": [
       {
         "value": "Kill the pig",
@@ -394,12 +573,16 @@
         "type": "Credits"
       },
       {
-        "value": "Make sure she feels comfortable at the chapel",
+        "reward": "5",
         "type": "Credits",
-        "reward": "5"
+        "value": "Make sure she feels comfortable at the chapel"
       }
     ],
-    "uid": "GffDr"
+    "title": "Be a Good Hunter",
+    "budget": 1200,
+    "author": "OneEyedKing ",
+    "reward": "20",
+    "source": ""
   },
   {
     "objectives": [
@@ -452,39 +635,6 @@
     "scope": "Standard",
     "budget": 200,
     "uid": "ioIdo"
-  },
-  {
-    "conditions": [
-      {
-        "value": "Be recognized as a member of the organization."
-      },
-      {
-        "value": "Remain a member for at least 2 months."
-      }
-    ],
-    "budget": 85,
-    "title": "Mister Mysterious",
-    "reward": "20 credits and Template Stacking for one character from the organization you joined.",
-    "author": "Trismegistus",
-    "objectives": [
-      {
-        "value": "Become a member of both organizations at the same time.",
-        "type": "TX Tickets",
-        "reward": "Template Stacking for one character from the other orginization."
-      },
-      {
-        "reward": "Template Stacking Anya",
-        "type": "TX Tickets",
-        "value": "Don't let anyone know you have supernatural abilities"
-      }
-    ],
-    "rewardType": "TX Tickets",
-    "scope": "Standard",
-    "image": "https://i.imgur.com/QhuOsvP.jpg",
-    "source": "",
-    "loca": "Spy X Family",
-    "desc": "Become a member of Wise or Garden. You do not need to be an official member so long as you provide work for them on a semiregular basis.",
-    "uid": ""
   },
   {
     "budget": 300,
@@ -607,108 +757,9 @@
     "uid": "qobnO"
   },
   {
-    "author": "OneEyedKing",
-    "reward": "20",
-    "budget": 1200,
-    "title": "Be a good hunter",
-    "conditions": [
-      {
-        "value": ""
-      }
-    ],
-    "objectives": [
-      {
-        "value": "Kill the pig",
-        "reward": "5",
-        "type": "Credits"
-      },
-      {
-        "reward": "5",
-        "type": "Credits",
-        "value": "Make sure she feels comfortable at the chapel"
-      }
-    ],
-    "source": "",
-    "loca": "Bloodborne",
-    "desc": "The little girl was orphaned (or was she) and shes going to the chapel for safety. Protect her and help her through these hard times.",
-    "image": "",
+    "desc": "Become a member of Wise or Garden. You do not need to be an official member so long as you provide work for them on a semiregular basis.",
     "scope": "Standard",
-    "rewardType": "Credits",
-    "uid": ""
-  },
-  {
-    "rewardType": "Other",
-    "loca": "To Aru series",
-    "reward": "You may keep the items or sell each individual object/set for 15 Credits. In addition, you gain the ability to freely convert any magic item or technological trinket from this world which you gain possession of in a process that takes 1 hour. In this state the object loses most of its combat abilities, but gains sexual characteristics befitting a “hentai version”. This process is reversible by the same method. Alternatively, you may gain 100 Credits.",
-    "conditions": [
-      {
-        "value": "Collect the Following items:"
-      },
-      {
-        "value": "1 Copy of the Hentainomicon, the book of perverted names."
-      },
-      {
-        "value": "1 Box with 3 tentacle monster eggs from your friendly neighborhood tentacle shop."
-      },
-      {
-        "value": "A collection of enchanted sex toys including an assortment of transformative anal plugs."
-      },
-      {
-        "value": "A do it yourself chemistry set for quick and dirty love potions, aphrodisiacs and the like."
-      },
-      {
-        "value": "Mystically enhanced bondage gear of submission and domination."
-      },
-      {
-        "value": "One high-quality Rolex time stop clock. (Blackboxed to only work for lewd things.)"
-      },
-      {
-        "value": "Avoid the attention of local authorities as far as possible."
-      },
-      {
-        "value": "You may only capture locals who have been affected by the target items as collateral. Though others are still affected by lures."
-      },
-      {
-        "value": "Only 1 Retinue member may join you on this mission to minimize attention."
-      }
-    ],
-    "source": "",
-    "image": "https://i.imgur.com/KjXJeKX.png",
-    "scope": "Standard",
-    "budget": 200,
-    "objectives": [
-      {
-        "type": "Companions",
-        "value": "We would like you to plant some fake leads in case people do notice that something is off. So please release at least 3 separate perverted items at different locations and make sure they get used to lead attention away.",
-        "reward": "Demia Duodectet from Interspecies Reviewers or 35 Credits."
-      }
-    ],
-    "title": "School Garden of Lust",
-    "author": "Heaven Canceler",
-    "desc": "Well due to some unfortunate accident, a supply drop of various store equipment has been deposited in the wrong dimension. Once the accident was discovered, the materials were unfortunately already gone, likely picked up by some of the locals. Most likely they have found temporary owners that are putting them to use currently. This is where you come in, we would ask you to recollect these objects and make sure that they cannot be traced back to us as far as possible. Unfortunately the objects in question have some degree of tracing protection so finding them won’t be as simple as to scry for magic objects of perversion. Though at least that should make sure that any local forces won’t immediately know the objects were released here. All of them have a certain amount of magic cast on them that “encourages” people to use them. So it is very likely that when you find any of these objects, they will already be in use. Ah, before we forget it, the supply drop was released in a place called ‘School Garden’ within Academy City. We believe it's some kind of all-girl’s exclusive area?",
-    "uid": ""
-  },
-  {
     "budget": 85,
-    "image": "https://i.imgur.com/QhuOsvP.jpg",
-    "source": "",
-    "reward": "20 credits and Template Stacking for one character from the organization you joined.",
-    "rewardType": "Other",
-    "title": "Mister Mysterious",
-    "scope": "Standard",
-    "objectives": [
-      {
-        "value": "Become a member of both organizations at the same time.",
-        "type": "Perks",
-        "reward": "Template Stacking for one character from the other orginization."
-      },
-      {
-        "type": "Perks",
-        "value": "Don't let anyone know you have supernatural abilities",
-        "reward": "Template Stacking Anya"
-      }
-    ],
-    "author": "Trismegistus",
     "conditions": [
       {
         "value": "Be recognized as a member of the organization."
@@ -717,51 +768,26 @@
         "value": "Remain a member for at least 2 months."
       }
     ],
-    "loca": "Spy X Family",
-    "desc": "Become a member of Wise or Garden. You do not need to be an official member so long as you provide work for them on a semiregular basis.",
-    "uid": "mghuI"
-  },
-  {
-    "scope": "Standard",
+    "source": "",
     "objectives": [
       {
-        "type": "Other",
-        "reward": "1 TS for a Fertility Deity of your choice or 15 Credits.",
-        "value": "Impregnate all the Gorgon sisters with their permission."
+        "type": "Perks",
+        "reward": "Template Stacking for one character from the other orginization.",
+        "value": "Become a member of both organizations at the same time."
       },
       {
-        "value": "After saving the three Gorgon sisters, capture Athena and humiliate her by making her the sister’s maid and slave in revenge.",
-        "type": "Other",
-        "reward": "You may now at will, turn Athena and the Gorgon Sisters into Class Card as exists in Fate/Kaleid. They may be installed by anyone with some magical skills and power to temporarily gain their abilities. Alternatively take 180 Credits"
+        "value": "Don't let anyone know you have supernatural abilities",
+        "reward": "Template Stacking Anya",
+        "type": "Perks"
       }
     ],
-    "author": "Heaven Canceler",
     "rewardType": "Other",
-    "conditions": [
-      {
-        "value": "You must defeat and capture Gorgon Medusa without killing her and also bind her sisters Stheno and Euryale."
-      },
-      {
-        "value": "You will be inserted 3 days before Gorgon Medusa devours her sisters. Should you be too late without a method of resurrecting them, you fail the mission. if you let Gorgon die by Perseus hands after she has eaten her sisters, you fail period."
-      },
-      {
-        "value": "Your retinue may not directly take part in the mission, though they may supply you with equipment, magic blessings or the like."
-      },
-      {
-        "value": "Within 1 week of the above mentioned deadline, Perseus will come to the Shapeless Isle to kill the Gorgon. You must of course stop him from doing that. Warning, the greece gods may give him better equipment or otherwise stack things against you if they notice you."
-      },
-      {
-        "value": "During the main mission, only the Gorgon sisters can be bound. Though lures are still effective on others."
-      }
-    ],
-    "image": "https://i.imgur.com/g3g7hgU.png",
-    "title": "Fate Slayer - Godlayer",
-    "loca": "Nasuverse",
-    "budget": 400,
-    "desc": "Upon the Shapeless Isle lies a terrifying monster, its eyes turn those that meet its gaze to stone. Its fangs are like poison and its strength is that of a hundred men. Imprisoned on that island are a pair of beautiful maidens, waiting to be rescued and who will surely share the embrace of any hero who steals them away from this land. Such is the false tale told to many a poor fool sent to their doom. One after another, they are killed and their deaths increase as Medusa’s hunger rises, growing to enjoy the slaughter of these men that would steal away her beloved sisters. Soon she will turn into a beast, soon the tale will come to an end and then a hero will come to slay the monster, never knowing of the true tragedy that had taken place here. Your purpose is simple, to avert this tragedy entirely. For this purpose, you will be inserted on mainland Greece and then need to make your way to the shapeless isle and stop the tragedy in its make.",
-    "reward": "Medusa may now freely swap between her base, Lancer and Gorgon form. With an optional personality change at your discretion. They may split into 3 independent forms too. Her sisters each gain a TS for a deity of your choice. Alternatively you may take 190 Credits instead. (160 for Gorgon’s upgrade, 30 for the Sister’s TS)",
-    "source": "",
-    "uid": "bjiId"
+    "reward": "20 credits and Template Stacking for one character from the organization you joined.",
+    "author": "Trismegistus",
+    "image": "https://i.imgur.com/QhuOsvP.jpg",
+    "uid": "kiUjf",
+    "loca": "Spy X Family",
+    "title": "Mister Mysterious"
   },
   {
     "source": "",
@@ -796,7 +822,7 @@
     "image": "https://i.pinimg.com/originals/c5/cd/f0/c5cdf07dd441b074e30a31b0d4bb176d.jpg",
     "loca": "Avatar - Legend of Korra",
     "desc": "A client wishes to see a world in which the Equalists have a decisive victory over the Benders of the world. This can be by taking away all Bending or by arranging a peaceful solution that ensures non-Benders are treated equally, however you can manage to ensure equality between non-Benders and Benders.",
-    "uid": ""
+    "uid": "FgqgP"
   },
   {
     "objectives": [
@@ -861,7 +887,7 @@
         "value": "Every member of the Council of Kandrakar must be Bound in any way"
       }
     ],
-    "uid": ""
+    "uid": "VuIHZ"
   },
   {
     "title": "Anyone can wear the mask",
@@ -905,7 +931,7 @@
     ],
     "desc": "Some guys have all the luck and some have none of it but a lot of chances.\nSpider-people are those types of people. No more! Break the chain, defy fate, spin your webs and get laid.\nLive out the life as your favorite spider and make it a kinky.\nAnybody can be Spider-Man and everybody loves Spider-Man.",
     "rewardType": "Credits",
-    "uid": ""
+    "uid": "ECV5W"
   },
   {
     "desc": "Scott W. Pilgrim is ultimately an idiot who got in a lot of trouble by poor communication with his love interests... And a client took exception to that. You, young Contractor, will take his place and make sure he doesn't break up with Envy... And since our client is a fan of the genre you'll then make a harem.",
@@ -958,7 +984,7 @@
     "budget": 15,
     "author": "Ratcatcher",
     "source": "",
-    "uid": ""
+    "uid": "ulPZw"
   },
   {
     "objectives": [],
@@ -980,7 +1006,7 @@
     "author": "PaxCruento",
     "scope": "Standard",
     "budget": 250,
-    "uid": ""
+    "uid": "bcYFn"
   },
   {
     "title": "Pick a God, any God",
@@ -1005,7 +1031,7 @@
       }
     ],
     "budget": 225,
-    "uid": ""
+    "uid": "CGYj3"
   },
   {
     "conditions": [
@@ -1046,7 +1072,7 @@
         "type": "Perks"
       }
     ],
-    "uid": ""
+    "uid": "BCNSn"
   },
   {
     "image": "https://i.imgur.com/ou1fEev.png",
@@ -1080,7 +1106,7 @@
         "value": "This universe really cannot stand the idea of certain people getting laid, Loki is high on that list. Fate will try to stop you from fucking her brains out, but if you are careful that should be fine. Just be aware of unlucky incidents and random people walking in on you."
       }
     ],
-    "uid": ""
+    "uid": "ZpoGn"
   },
   {
     "budget": 140,
@@ -1102,13 +1128,28 @@
     "scope": "Standard",
     "reward": "50 credits and an auto capture of one of the apex legends",
     "objectives": [],
-    "uid": ""
+    "uid": "mf1ha"
   },
   {
-    "image": "https://cdn.donmai.us/original/a3/12/__toga_himiko_boku_no_hero_academia_drawn_by_mizuki_mau__a3121154fa71224bbfc54238b659792d.png",
+    "loca": "My Hero Academia",
+    "reward": "200 credits",
+    "source": "",
+    "objectives": [
+      {
+        "value": "Toga enters a romantic relationship with Midoriya, Uraraka, or Asui",
+        "reward": "20 credits",
+        "type": "Credits"
+      },
+      {
+        "value": "Toga enters a romantic relationship with Midoriya, Uraraka, and Asui",
+        "reward": "100",
+        "type": "Credits"
+      }
+    ],
+    "uid": "hNjfO",
     "title": "Toga's Hero Academia",
-    "desc": "Toga Himiko's fate is a sad one, driven to insanity and villainy by parental abuse. Let's try and avoid at least part of it: track down Toga before she joins the League of Villains and get her into U.A. to reform.",
-    "rewardType": "Credits",
+    "author": "Ratcatcher",
+    "budget": 100,
     "scope": "Standard",
     "conditions": [
       {
@@ -1124,24 +1165,9 @@
         "value": "By the time of the provisional license exams Toga must have been accepted as a classmate by at least half of her classmates, including Midoriya, Uraraka, Asui, and the class representatives"
       }
     ],
-    "reward": "200 credits",
-    "author": "Ratcatcher",
-    "objectives": [
-      {
-        "reward": "20 credits",
-        "type": "Credits",
-        "value": "Toga enters a romantic relationship with Midoriya, Uraraka, or Asui"
-      },
-      {
-        "value": "Toga enters a romantic relationship with Midoriya, Uraraka, AND Asui",
-        "type": "Credits",
-        "reward": "100"
-      }
-    ],
-    "budget": 100,
-    "source": "",
-    "loca": "My Hero Academia",
-    "uid": "hNjfO"
+    "image": "https://cdn.donmai.us/original/a3/12/__toga_himiko_boku_no_hero_academia_drawn_by_mizuki_mau__a3121154fa71224bbfc54238b659792d.png",
+    "rewardType": "Credits",
+    "desc": "Toga Himiko's fate is a sad one, driven to insanity and villainy by parental abuse. Let's try and avoid at least part of it: track down Toga before she joins the League of Villains and get her into U.A. to reform."
   },
   {
     "loca": "Scott Pilgrim",
@@ -1494,7 +1520,7 @@
     "source": "",
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/990956420923031602/Site26.screencap.webp",
     "rewardType": "Perks",
-    "author": "Ratcatcher",    
+    "author": "Ratcatcher",
     "uid": "KnUgf",
     "budget": 110,
     "conditions": [],
@@ -1644,22 +1670,23 @@
     "uid": "6nIXf"
   },
   {
+    "source": "",
+    "scope": "Standard",
+    "author": "DepressedAlucard",
+    "image": "https://cdn.discordapp.com/attachments/894482961578221578/989847221115686922/All_for_one.jpg",
+    "desc": "All For One is a quirk that has caused untold strife for over a century. With this ability, its current user, one who even took its name as his own, has stolen hundreds of quirks in his lifetime and used them all for his own nefarious deeds. The quirk does not belong in such hands. Instead, it should rest in yours. Your mission is therefore simple: Become the holder of the All for one quirk. ",
+    "rewardType": "Other",
+    "objectives": [],
+    "reward": "50 credits and any 3 villains from the world as retinue members.",
+    "title": "All For Me",
+    "uid": "qT1DI",
     "budget": 140,
     "loca": "My Hero Academia",
-    "author": "DepressedAlucard",
-    "title": "All For Me",
-    "image": "https://cdn.discordapp.com/attachments/894482961578221578/989847221115686922/All_for_one.jpg",
-    "objectives": [],
-    "desc": "Become the holder of the All for One quirk.",
     "conditions": [
       {
         "value": "No lures, bindings or 3rd party mind control on the person who passes All for one to you."
       }
-    ],
-    "scope": "Standard",
-    "source": "",
-    "reward": "30 credits and any 3 villains from the world as retinue members.",
-    "uid": "qT1DI"
+    ]
   },
   {
     "conditions": [
@@ -1689,14 +1716,14 @@
       }
     ],
     "scope": "Standard",
-    "desc": "look we've all and I mean ALL seen a contractor cuck somebody so we're mixing it up with this continuous mission your job ...is to get someone else bitches maybe play shipper and help Jaune from RWBY bang the living daylight out of Weiss or help Ichigo kurosaki get to pound town with Yoruichi Shih\u014din (or rukia if you're not willing to give up a chance at Yoruichi we'd understand) point is be a Bro, be the ultimate wingman and help these dense hopeless idiots get some pussy.",
+    "desc": "look we've all and I mean ALL seen a contractor cuck somebody so we're mixing it up with this continuous mission your job ...is to get someone else bitches maybe play shipper and help Jaune from RWBY bang the living daylight out of Weiss or help Ichigo kurosaki get to pound town with Yoruichi Shihōin (or rukia if you're not willing to give up a chance at Yoruichi we'd understand) point is be a Bro, be the ultimate wingman and help these dense hopeless idiots get some pussy.",
     "budget": 55,
     "uid": "4916O"
   },
   {
     "scope": "Standard",
     "loca": "Generic",
-    "desc": "listen, no matter how many human rights violations (And violations of other species rights) we've committed and will continue to commit at our core we're a porn company ...so with that said get to seducing \n\u2026I mean it our patron want to see some actual effort for once.",
+    "desc": "listen, no matter how many human rights violations (And violations of other species rights) we've committed and will continue to commit at our core we're a porn company ...so with that said get to seducing \n…I mean it our patron want to see some actual effort for once.",
     "title": "We ARE a porn company",
     "budget": 55,
     "conditions": [
@@ -1719,7 +1746,7 @@
   },
   {
     "scope": "Standard",
-    "desc": "Gensokyo, a land of fantasy and dangerous creatures. From childish fairies flying across the sky and playing pranks on others without a care, to terrifying monsters who could destroy a country with ease. It is a place filled with bottomless wonder and incredible powers. For this mission, we will send you out to collect something much treasured in this land of miracles. That is, you are going to steal a lot of headwear. Yes, you heard us right. It seems to be an odd tradition, but basically anyone who is someone in Gensokyo wears some manner of hat or a visible hair ornament. We don\u2019t know why, it may even be that there is some power to the hats themselves! So you will go and steal them, right off of the heads of all these pretty ladies all over Gensokyo. Hats, ribbons, hair clips and other strange things that decorate them, grab them and don\u2019t let them go!",
+    "desc": "Gensokyo, a land of fantasy and dangerous creatures. From childish fairies flying across the sky and playing pranks on others without a care, to terrifying monsters who could destroy a country with ease. It is a place filled with bottomless wonder and incredible powers. For this mission, we will send you out to collect something much treasured in this land of miracles. That is, you are going to steal a lot of headwear. Yes, you heard us right. It seems to be an odd tradition, but basically anyone who is someone in Gensokyo wears some manner of hat or a visible hair ornament. We don’t know why, it may even be that there is some power to the hats themselves! So you will go and steal them, right off of the heads of all these pretty ladies all over Gensokyo. Hats, ribbons, hair clips and other strange things that decorate them, grab them and don’t let them go!",
     "objectives": [
       {
         "value": "Also, steal the panties of the 5 playable characters in addition to their headwear.",
@@ -1737,7 +1764,7 @@
         "value": "Any target whose headwear you have stolen will be physically unable to wear any other. If they try, the piece of headwear will spontaneously evaporate through Company Mechanics. Only getting back the one you took will free them from this effect."
       },
       {
-        "value": "All locals whose headwear you haven\u2019t stolen are immune to bindings and lures are only 25% effective on them."
+        "value": "All locals whose headwear you haven’t stolen are immune to bindings and lures are only 25% effective on them."
       },
       {
         "value": "You may not store any stolen headwear in your pocket dimension or similar company based locations."
@@ -2236,7 +2263,7 @@
         "value": "If Arthur Gaz is revived, you must challenge him for the hands of his daughters and defeat him."
       }
     ],
-    "desc": "Five years ago, the Gaz Empire fell with the death of its ruler Arthur Gaz. The alliance of nations and the heroes that defeated the formerly believed to be immortal emperor\u2019s moved to pick up the pieces. The Empire was divided and an uneasy peace holds so far. But this is where you come in. For this mission, your job will be to carve out a functional successor state from the conquered lands. That is to say, you must create a new and at least equal Empire to the one ruled by Gaz himself. Such actions will naturally bring you into conflict with the six countries that united against the Gaz Empire, but such is life. Of course a proper claim on the Empire, it will likely be hard to get support from local powers. Fortunately, Emperor Gaz has left behind the perfect source of legitimacy, his wonderful \u2018daughters\u2019. Scattered throughout the lands of the former Gaz empire wander the Chaikas, each a \u2018beloved daughter\u2019 of his, searching for his remains. You must collect as many of them as possible and take them as your wives if you wish to make sure that your legitimacy in the eyes of the world is guaranteed.",
+    "desc": "Five years ago, the Gaz Empire fell with the death of its ruler Arthur Gaz. The alliance of nations and the heroes that defeated the formerly believed to be immortal emperor’s moved to pick up the pieces. The Empire was divided and an uneasy peace holds so far. But this is where you come in. For this mission, your job will be to carve out a functional successor state from the conquered lands. That is to say, you must create a new and at least equal Empire to the one ruled by Gaz himself. Such actions will naturally bring you into conflict with the six countries that united against the Gaz Empire, but such is life. Of course a proper claim on the Empire, it will likely be hard to get support from local powers. Fortunately, Emperor Gaz has left behind the perfect source of legitimacy, his wonderful ‘daughters’. Scattered throughout the lands of the former Gaz empire wander the Chaikas, each a ‘beloved daughter’ of his, searching for his remains. You must collect as many of them as possible and take them as your wives if you wish to make sure that your legitimacy in the eyes of the world is guaranteed.",
     "image": "https://i.imgur.com/bGEqayn.png",
     "loca": "Hitsugi no Chaika",
     "objectives": [
@@ -2278,7 +2305,7 @@
     "objectives": [
       {
         "reward": "100 credits or Le Grand Paris as Grand Manor",
-        "value": "Capture Chlo\u00e9 Bourgeois and Zoe Lee"
+        "value": "Capture Chloé Bourgeois and Zoe Lee"
       },
       {
         "reward": "100 credits or Agreste Mansion as Grand Manor",
@@ -2478,7 +2505,7 @@
         "value": "Lures and any form of mind control cannot be used on either Beerus or Whis"
       }
     ],
-    "desc": "After Bulma's party it seems me and Beerus have a taste for earth food...but now I can't help think about food from different earths. Universe 6 is getting theirs back on track...so that's where you come in my other dimensional friend.\n If you could prepare us dishes form others Earths I could give you some of those credits your no doubt in need of. lets say... something on the level of a manchu\u2013Han Imperial Feast, my friend Anshin'in suggested that would be a delight. \nA bit of a warning Beerus may kill you if he doesn't like it. I'll give you one month to prepare and gather ingredients then I'll bring you over.",
+    "desc": "After Bulma's party it seems me and Beerus have a taste for earth food...but now I can't help think about food from different earths. Universe 6 is getting theirs back on track...so that's where you come in my other dimensional friend.\n If you could prepare us dishes form others Earths I could give you some of those credits your no doubt in need of. lets say... something on the level of a manchu–Han Imperial Feast, my friend Anshin'in suggested that would be a delight. \nA bit of a warning Beerus may kill you if he doesn't like it. I'll give you one month to prepare and gather ingredients then I'll bring you over.",
     "image": "https://cdn.donmai.us/original/97/77/__son_goku_vegeta_broly_caulifla_kale_and_1_more_dragon_ball_and_2_more_drawn_by_amaguchi_chiyoko__977796420ee0518bb8f6d2e168390a4c.jpg",
     "loca": "Dragonball series",
     "objectives": [
@@ -2504,7 +2531,7 @@
       },
       {
         "reward": "A year of training under Whis or lord Beerus. No you still cannot capture them during this period but you gain Inexhaustible and Advanced Template Stacking (Enlightened) for all involved.",
-        "value": "Prepare 1000 cr\u00e8me caraslime desserts"
+        "value": "Prepare 1000 crème caraslime desserts"
       }
     ],
     "reward": "250 credits",
@@ -2530,7 +2557,7 @@
         "value": "You may not kill or capture anyone besides the targets until the mission is finished."
       }
     ],
-    "desc": "One of our newer contractors has unfortunately died when going after the target. Specifically, they tried to capture her without the right combat skills and lost an arm to her, then when trying to escape through a dimensional gate they ended up with their soul incinerated by the Crimson God Alastor. This has left a number of former retinue members unaccounted for and the locals possessing limited awareness of our existence. Your job will be to recollect our wayward Company Equipment, capture the target, one \u201cFlame-Haired Burning-Eyed Hunter\u201d also known as Shana. Of note is that the target has been infected with a form of transformative curse that is slowly converting her into a Succubus. This can be accelerated through inducing arousal, exposure to sexual fluids, penetrative sex and similar. Once you capture her, your other job will be to \u2018reeducate\u2019 her, to make sure that she will not give you any trouble. It is advised to avoid the use of dimensional transportation in the presence of any antagonistic Flame Haze.",
+    "desc": "One of our newer contractors has unfortunately died when going after the target. Specifically, they tried to capture her without the right combat skills and lost an arm to her, then when trying to escape through a dimensional gate they ended up with their soul incinerated by the Crimson God Alastor. This has left a number of former retinue members unaccounted for and the locals possessing limited awareness of our existence. Your job will be to recollect our wayward Company Equipment, capture the target, one “Flame-Haired Burning-Eyed Hunter” also known as Shana. Of note is that the target has been infected with a form of transformative curse that is slowly converting her into a Succubus. This can be accelerated through inducing arousal, exposure to sexual fluids, penetrative sex and similar. Once you capture her, your other job will be to ‘reeducate’ her, to make sure that she will not give you any trouble. It is advised to avoid the use of dimensional transportation in the presence of any antagonistic Flame Haze.",
     "image": "https://i.imgur.com/DdmaHvE.jpg",
     "loca": "Shakugan no Shana",
     "objectives": [
@@ -2553,13 +2580,13 @@
         "value": "Set up Oite and Bristol into a romantic relationship that escalates to sex, the details are up to you."
       },
       {
-        "value": "Stealth: The higher ups of the Sakura Empire and Eagle Union mustn\u2019t find out about the relationship until it has been consummated."
+        "value": "Stealth: The higher ups of the Sakura Empire and Eagle Union mustn’t find out about the relationship until it has been consummated."
       },
       {
         "value": "Time Limit: You must complete the mission within 1 month of time."
       }
     ],
-    "desc": "This is a special mission from our client, codenamed Jordy179. Your purpose is to support the love between the two shipgirls called Oite and Bristol, by any means necessary. Now according to our database these two have had basically no contact at all, but well, the customer is always right. So you will go out there, find these two and make sure they develop a romantic relationship. Of course since there is growing tension between the Eagle Union and Sakura Empire, they may need a bit of support to, you know\u2026 meet in the first place and not get the attention of any higher ups.",
+    "desc": "This is a special mission from our client, codenamed Jordy179. Your purpose is to support the love between the two shipgirls called Oite and Bristol, by any means necessary. Now according to our database these two have had basically no contact at all, but well, the customer is always right. So you will go out there, find these two and make sure they develop a romantic relationship. Of course since there is growing tension between the Eagle Union and Sakura Empire, they may need a bit of support to, you know… meet in the first place and not get the attention of any higher ups.",
     "image": "https://i.imgur.com/OZcDfau.png",
     "loca": "Azur Lane",
     "objectives": [
@@ -2609,16 +2636,16 @@
         "value": "Akira and Sana must not be brought into your harem until they try to rape Tomoko on day 94. Doing so any earlier without using their secondary objectives will be an automatic failure"
       }
     ],
-    "desc": "Greetings, contractor. You may have heard of DNA\u00b2, the famous series where an agent is sent back in time to make sure a boy allergic to women wouldn't grow in the Mega Playboy capable of seducing any woman by being there, only for her genetic alterations setting the change in motion and forcing her to find other ways. You may have also heard of Simgirls, the dating sim in that universe where the player character is the would-be Mega Playboy. One of our benefactors has, and found the game's Mega Playboy in need of a serious humiliation. And that is your job, to beat him at his own game by NTRing him of his entire Mega Playboy Ending harem. All six of them.\nJust a warning: to make it more \"satisfying\", the benefactor insisted on a few things, including the Mega Playboy to be at full power from the start - this version may not be able to seduce a woman by existing at her, but he's still quick at seducing almost every girl and a powerful (if unskilled) fighter, easily Tier 5 by fighting power alone.",
+    "desc": "Greetings, contractor. You may have heard of DNA², the famous series where an agent is sent back in time to make sure a boy allergic to women wouldn't grow in the Mega Playboy capable of seducing any woman by being there, only for her genetic alterations setting the change in motion and forcing her to find other ways. You may have also heard of Simgirls, the dating sim in that universe where the player character is the would-be Mega Playboy. One of our benefactors has, and found the game's Mega Playboy in need of a serious humiliation. And that is your job, to beat him at his own game by NTRing him of his entire Mega Playboy Ending harem. All six of them.\nJust a warning: to make it more \"satisfying\", the benefactor insisted on a few things, including the Mega Playboy to be at full power from the start - this version may not be able to seduce a woman by existing at her, but he's still quick at seducing almost every girl and a powerful (if unskilled) fighter, easily Tier 5 by fighting power alone.",
     "image": "https://i.ibb.co/2Yfg3W3/Simgirls.jpg",
-    "loca": "DNA\u00b2 - Simgirls",
+    "loca": "DNA² - Simgirls",
     "objectives": [
       {
         "reward": "Ami falls for you and ditches the Mega Playboy as a love interest, Time Machine not limited by Time Gates, Full Paradox Defense or its full refund if already bought",
         "value": "Complete the Time Machine with Ami"
       },
       {
-        "reward": "Kawasaki Rurara (DNA\u00b2)",
+        "reward": "Kawasaki Rurara (DNA²)",
         "value": "Capture Saeki Tomoru (needs Time Machine to go to the future)"
       },
       {
@@ -2633,7 +2660,7 @@
     "reward": "Template Stacking I for Momonari Junta as the fully powered Mega Playboy",
     "scope": "Standard",
     "source": "",
-    "title": "DNA\u00b3",
+    "title": "DNA³",
     "uid": "vLAPN"
   },
   {
@@ -2700,7 +2727,7 @@
     "budget": 750,
     "conditions": [
       {
-        "value": "All bought retinue members must be part of your magical girl team. They must dress the part and act like magical girls at least when \u201con the job\u201d."
+        "value": "All bought retinue members must be part of your magical girl team. They must dress the part and act like magical girls at least when “on the job”."
       },
       {
         "value": "You must defeat all canonical bosses in the setting you are in and save the world from falling into Darkness."
@@ -2783,9 +2810,9 @@
         "value": "Make sure Tofu Ono doesn't discover you're after Kasumi until the mission is completed"
       }
     ],
-    "desc": "As we know, Tendo Akane is fated to be engaged to Saotome Ranma... But what about her sisters? Don't they deserve some love too? This will be your mission: to become the fianc\u00e9 of one of her sisters and seduce the other into becoming your lover.",
+    "desc": "As we know, Tendo Akane is fated to be engaged to Saotome Ranma... But what about her sisters? Don't they deserve some love too? This will be your mission: to become the fiancé of one of her sisters and seduce the other into becoming your lover.",
     "image": "https://cdn.donmai.us/original/2d/4d/__tendou_nabiki_and_tendou_kasumi_ranma_1_2_drawn_by_wanta_futoshi__2d4d47b7e6e509754c7957309414c7ce.png",
-    "loca": "Ranma \u00bd",
+    "loca": "Ranma ½",
     "objectives": [
       {
         "reward": "The Lure Alluring Whisper with all expansions. If you already have in part or full, you will be reimbursed its full price",
@@ -2829,7 +2856,7 @@
     "reward": "300",
     "scope": "Standard",
     "source": "",
-    "title": "T\u014dboku",
+    "title": "Tōboku",
     "uid": "W6z8U"
   },
   {
@@ -2916,7 +2943,7 @@
         "value": "May not subsitute into a local noble or the protagonist Saito."
       }
     ],
-    "desc": "Halkegenia is a curious continent, split between a small number of countries and dominated by human magic users. Your job here is to gain control over all of the Brimic kingdoms. But you shouldn\u2019t just conquer the kingdoms, rather you must gain control over them through, well, strategic marriages. To finish this mission, Gallia, Tristain, Romalia and Albion must all have both a ruler and heir which are your descendants. In addition, the heir of the strongest noble family in each kingdom must also be your descendant. Since the Kingdom of Romalia is de-facto ruled by their Pope, you will most likely have to either set up reforms to make the position something that can be inherited, or set up a coup.",
+    "desc": "Halkegenia is a curious continent, split between a small number of countries and dominated by human magic users. Your job here is to gain control over all of the Brimic kingdoms. But you shouldn’t just conquer the kingdoms, rather you must gain control over them through, well, strategic marriages. To finish this mission, Gallia, Tristain, Romalia and Albion must all have both a ruler and heir which are your descendants. In addition, the heir of the strongest noble family in each kingdom must also be your descendant. Since the Kingdom of Romalia is de-facto ruled by their Pope, you will most likely have to either set up reforms to make the position something that can be inherited, or set up a coup.",
     "image": "",
     "loca": "Zero no Tsukaima",
     "objectives": [
@@ -2953,10 +2980,10 @@
     ],
     "desc": "Saotome Ranma is well known for two things aside his strength: the beautiful and powerful love interests he just can't decide on, and his own gender-changing curse. So we thought, why not seduce all of them? Your goal is to conquer the love of Saotome Ranma, his fiancees, and Tendo Nabiki and Kasumi.",
     "image": "https://i.ibb.co/S01k6Dz/sample-4c7416e9a4985448f69ff075d8cfa4f2.jpg",
-    "loca": "Ranma \u00bd",
+    "loca": "Ranma ½",
     "objectives": [
       {
-        "reward": "TS1 as Happosai (Ranma \u00bd) or 50 credits",
+        "reward": "TS1 as Happosai (Ranma ½) or 50 credits",
         "value": "Seduce Cologne and Ninomiya Hinako through the same methods as the main mission"
       },
       {
@@ -2998,7 +3025,7 @@
         "value": "Be the teacher!...Oh."
       }
     ],
-    "reward": "Don\u2019t Stand So Close to Me lure or 10 credits. ",
+    "reward": "Don’t Stand So Close to Me lure or 10 credits. ",
     "scope": "Standard",
     "source": "",
     "title": "Final Ejaculation ",
@@ -3183,7 +3210,7 @@
         "value": "Keep Aika Tenkubashi as a personal assistant and sexual relief toy. Make sure that she believes this will make her popular."
       }
     ],
-    "desc": "Seikain Academy for Girls is a secret locked off school for the ultra-rich. These young ladies belong to some of the most influencial and powerful families in Japan. The daughters of influential politicians, CEOs and the like. Recently they have been experiencing some trouble with their graduated students, with most of them becoming NEETs addicted to videogames and the internet after first experiencing the outside world. So a plan was made, to introduce a \"Commoner Sample\" and give these pure ladies a window into the world beyond the gates of their school. Your job is simple, to take this school and twist it into a paradise of perversion. The students are blatantly clueless about the outside and should be easily manipulated. Make sure that their understanding of a \u201cCommoner\u2019s Life\u201d is one that is far more perverted than they could ever consider. Be careful about the teachers though, they at least have a somewhat better understanding about \"common sense\".",
+    "desc": "Seikain Academy for Girls is a secret locked off school for the ultra-rich. These young ladies belong to some of the most influencial and powerful families in Japan. The daughters of influential politicians, CEOs and the like. Recently they have been experiencing some trouble with their graduated students, with most of them becoming NEETs addicted to videogames and the internet after first experiencing the outside world. So a plan was made, to introduce a \"Commoner Sample\" and give these pure ladies a window into the world beyond the gates of their school. Your job is simple, to take this school and twist it into a paradise of perversion. The students are blatantly clueless about the outside and should be easily manipulated. Make sure that their understanding of a “Commoner’s Life” is one that is far more perverted than they could ever consider. Be careful about the teachers though, they at least have a somewhat better understanding about \"common sense\".",
     "image": "https://i.imgur.com/IB60iYm.png",
     "loca": "Shomin Sample",
     "objectives": [
@@ -3212,13 +3239,13 @@
         "value": "The local main characters must play a notable part in at least half the battles with the Angels."
       },
       {
-        "value": "The Seventeenth Angel Tabris will be granted two randomized TS II that will make him a greater threat as the \u201cfinal boss\u201d."
+        "value": "The Seventeenth Angel Tabris will be granted two randomized TS II that will make him a greater threat as the “final boss”."
       },
       {
         "value": "All Angels are immune to Bindings and Lures unless they have been defeated. Captured Angels cannot take part in future battles."
       }
     ],
-    "desc": "For the purpose of this mission you will have to help the locals of this world in defending themselves from the threat of the Angels. Unfortunately, one of our more eccentric agents passed through this word a short time ago and left it in somewhat of a\u2026 sorry state. To make it simple, the contractor in question is a big fan of giant robot shows, but has little interest in anything outside that. So the good news is that Gendo Ikari and most of SEELE are dead as they tried to get in his way. The bad news is that all the Evangelions have been stolen, including the Lance of Longinus since he saw it as a \u201csignature weapon\u201d. Lilith left for parts unknown after a short rampage throughout the city that fortunately didn\u2019t kill too many civilians. This has left the Geofront unguarded, with a piece of Adam that the Angels would desire and the mother of earth\u2019s life unaccounted for. Thus, during this mission you must empower the local main characters in whatever ways you can so that they can defeat the Angels. Without giant robots though, we don\u2019t want to attract our eccentric agent to that particular world again.",
+    "desc": "For the purpose of this mission you will have to help the locals of this world in defending themselves from the threat of the Angels. Unfortunately, one of our more eccentric agents passed through this word a short time ago and left it in somewhat of a… sorry state. To make it simple, the contractor in question is a big fan of giant robot shows, but has little interest in anything outside that. So the good news is that Gendo Ikari and most of SEELE are dead as they tried to get in his way. The bad news is that all the Evangelions have been stolen, including the Lance of Longinus since he saw it as a “signature weapon”. Lilith left for parts unknown after a short rampage throughout the city that fortunately didn’t kill too many civilians. This has left the Geofront unguarded, with a piece of Adam that the Angels would desire and the mother of earth’s life unaccounted for. Thus, during this mission you must empower the local main characters in whatever ways you can so that they can defeat the Angels. Without giant robots though, we don’t want to attract our eccentric agent to that particular world again.",
     "image": "https://i.imgur.com/jctMXSy.png",
     "loca": "Evangelion",
     "objectives": [
@@ -3368,16 +3395,16 @@
         "value": "If you lose or are discovered to be cheating 3 times, the mission is considered a failure. "
       },
       {
-        "value": "You must get married to her officially with at least grudging approval from Sona\u2019s older sister."
+        "value": "You must get married to her officially with at least grudging approval from Sona’s older sister."
       }
     ],
-    "desc": "Sona Sitri has made a declaration that she will only marry someone who can defeat her in the game of chess. Well, why shouldn\u2019t you take her up on this little challenge? Your job is simple, to defeat her in chess and make her your bride. Of course simply beating her in a casual game once won\u2019t be enough. You will have to do it over and over, proving your superiority in totality. The Sona you meet will be particularly competitive and so long as you make sure she doesn\u2019t notice anything untowards will continue to challenge you over and over. And then when she finally falls under you, you must claim her as your bride and marry her.",
+    "desc": "Sona Sitri has made a declaration that she will only marry someone who can defeat her in the game of chess. Well, why shouldn’t you take her up on this little challenge? Your job is simple, to defeat her in chess and make her your bride. Of course simply beating her in a casual game once won’t be enough. You will have to do it over and over, proving your superiority in totality. The Sona you meet will be particularly competitive and so long as you make sure she doesn’t notice anything untowards will continue to challenge you over and over. And then when she finally falls under you, you must claim her as your bride and marry her.",
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/990973857160634378/fcf7db0f5a143381ca98696a18f0f72621944ff6_00_1.jpg",
     "loca": "High School DxD",
     "objectives": [
       {
         "reward": "10 Credits",
-        "value": "Fulfill Saji\u2019s dream while rubbing it in his face by impregnating Sona nad keeping her pregnant and barefoot for you."
+        "value": "Fulfill Saji’s dream while rubbing it in his face by impregnating Sona nad keeping her pregnant and barefoot for you."
       },
       {
         "reward": "Queen Elizabeth and Nagato from Azur Lane, or 80 Credits.",
@@ -3401,19 +3428,19 @@
         "value": "Azula is immune to normal capture methods and blatant mind control for the duration of the Mission. Subtle lures are permitted."
       },
       {
-        "value": "Do not let anyone who isn\u2019t bound to you find out that you are manipulating Azula."
+        "value": "Do not let anyone who isn’t bound to you find out that you are manipulating Azula."
       },
       {
         "value": "Azula must rule 80% of the Elemental nations for at least a year and have a broad approval rating of 65% or higher."
       },
       {
-        "value": "Remove Ozai, Zuko and Avatar Aang from the equation in such a way that they cannot break Azula\u2019s control of the Elemental nations."
+        "value": "Remove Ozai, Zuko and Avatar Aang from the equation in such a way that they cannot break Azula’s control of the Elemental nations."
       },
       {
         "value": "Avoid Azula going crazy, keep her reasonable and try to take care of her obsessions as far as possible."
       }
     ],
-    "desc": "This client is interested in a bit of kingmaking, or queenmaking in this case. Your goal for this mission is to support Azula, favored daughter of the Firelord in becoming the ruler of the Fire Nation and then the entire world. But rather than just her ruling, your job is in making her a legitimately beloved and capable ruler, not just in wartime but also in peacetime. For this job you will be guaranteed a fitting background as a favored childhood friend of Azula\u2019s, just to make sure you can even get to her. From then on you will need to support and manipulate her alike, keeping her more psychotic tendencies in check and guiding her towards rulership. Obviously you will need to take care of both Ozai and the Avatar as they will get in the way of Azula taking over.",
+    "desc": "This client is interested in a bit of kingmaking, or queenmaking in this case. Your goal for this mission is to support Azula, favored daughter of the Firelord in becoming the ruler of the Fire Nation and then the entire world. But rather than just her ruling, your job is in making her a legitimately beloved and capable ruler, not just in wartime but also in peacetime. For this job you will be guaranteed a fitting background as a favored childhood friend of Azula’s, just to make sure you can even get to her. From then on you will need to support and manipulate her alike, keeping her more psychotic tendencies in check and guiding her towards rulership. Obviously you will need to take care of both Ozai and the Avatar as they will get in the way of Azula taking over.",
     "image": "https://i.imgur.com/YUwAPrE.png",
     "loca": "Avatar: The Last Airbender",
     "objectives": [
@@ -3429,7 +3456,7 @@
     "uid": "xbiTw"
   },
   {
-    "author": "\u30b4Di0\u30b4",
+    "author": "ゴDi0ゴ",
     "budget": 100,
     "conditions": [
       {
@@ -3470,7 +3497,7 @@
         "value": "You may only capture a local once they have been a satisfied customer for a week."
       },
       {
-        "value": "Customers mustn\u2019t wear other clothes over your bikini armor during battle for them to count as successful sales, fanservice is important!"
+        "value": "Customers mustn’t wear other clothes over your bikini armor during battle for them to count as successful sales, fanservice is important!"
       }
     ],
     "desc": "Our client is a big fan of a certain type of armor style and your job is to show off its superiority. For the purpose of this mission, you will need to go to a type of fantasy setting, then produce and sell bikini armor to the locals. The goal is for bikini armor to become the most popular type of armor for women in at least the local kingdom equivalent. The armor must be superior to local armor of course. You may also create and sell weapons, though the amount of weapons sold may not be greater than the sale of armor sets for this mission to be successful.",
@@ -3486,7 +3513,7 @@
         "value": "Have a lewd magic effect on at least 10% of your sold armor and weapons while still having at least 90% of these customers as satisfied."
       }
     ],
-    "reward": "Reward: 1 TS for Tolkien\u2019s Feanor, 20% of the capture reward of all your satisfied customers.",
+    "reward": "Reward: 1 TS for Tolkien’s Feanor, 20% of the capture reward of all your satisfied customers.",
     "scope": "Standard",
     "source": "",
     "title": "Bikini Armor Revolution",
@@ -3583,14 +3610,14 @@
         "value": "Complete the Camelot Sexularity while Ritsuka remains virginal (Exempting Mash)"
       }
     ],
-    "reward": "Completing the Grand Order with both girls pure will grant one TX ticket. Completing the Grand Order will grant both girls as Companions, as well as 2 sets of Command Seals, and Generic Command Seals. You may forgo this reward in exchange for doubling the rewards of the mission Epic of Ravishing, which may be started immediately after this Mission\u2019s completion.",
+    "reward": "Completing the Grand Order with both girls pure will grant one TX ticket. Completing the Grand Order will grant both girls as Companions, as well as 2 sets of Command Seals, and Generic Command Seals. You may forgo this reward in exchange for doubling the rewards of the mission Epic of Ravishing, which may be started immediately after this Mission’s completion.",
     "scope": "Grand",
     "source": "",
     "title": "Sexularities",
     "uid": "oVQZ8"
   },
   {
-    "author": "\u30b4Di0\u30b4",
+    "author": "ゴDi0ゴ",
     "budget": 1000,
     "conditions": [
       {
@@ -3727,7 +3754,7 @@
         "value": "You may not promise Homura that you will save Madoka, she must chose you over her."
       }
     ],
-    "desc": "You have been commissioned with a simple but somewhat time-consuming mission, namely to dominate one Homura Akemi. For the purpose of this mission, we have made a minor modification to Homura\u2019s time loop ability. Her looping is now automatically triggered whenever she has experienced 20 orgasms, specifically from you. Your job is simple, fuck her regardles of her own opinions. That is to rape her, repeatedly. The mission is going to be fulfilled when Homura abandons her goal of saving Madoka and decides of her own free will that she would rather serve you as a sex slave. Do be mindful of her guns, she is a bit trigger happy.",
+    "desc": "You have been commissioned with a simple but somewhat time-consuming mission, namely to dominate one Homura Akemi. For the purpose of this mission, we have made a minor modification to Homura’s time loop ability. Her looping is now automatically triggered whenever she has experienced 20 orgasms, specifically from you. Your job is simple, fuck her regardles of her own opinions. That is to rape her, repeatedly. The mission is going to be fulfilled when Homura abandons her goal of saving Madoka and decides of her own free will that she would rather serve you as a sex slave. Do be mindful of her guns, she is a bit trigger happy.",
     "image": "https://i.imgur.com/RMRKexe.png",
     "loca": "Madoka Magica",
     "objectives": [],
@@ -3751,7 +3778,7 @@
         "value": "Get Remilia so addicted to your 'secret sauce' that she decides to drink directly from 'the tap'"
       }
     ],
-    "desc": "The Scarlet Devil Mansion is a mysterious place with many unique features. But they are lacking in one thing, a high quality cook! That is where you come into place. Should you take this mission, you will be inserted into the world with the backstory being that you are a recently hired cook that should take some of Sakuya\u2019s load off her back. But here comes the twist, your true goal isn\u2019t just to produce delicious cuisine for the inhabitants of the mansion. You are also to add a bit extra, in the form of your \u2018sexual juices\u2019. Obviously for this job a dick or something similar is recommended, but something like breast milk can also work. The end goal in this case is to make every major member of the household utterly addicted to your \u2018Secret Sauce\u2019. It must get to the point where even if they find out the truth, they wouldn\u2019t be able to live without your \u2018cooking\u2019.",
+    "desc": "The Scarlet Devil Mansion is a mysterious place with many unique features. But they are lacking in one thing, a high quality cook! That is where you come into place. Should you take this mission, you will be inserted into the world with the backstory being that you are a recently hired cook that should take some of Sakuya’s load off her back. But here comes the twist, your true goal isn’t just to produce delicious cuisine for the inhabitants of the mansion. You are also to add a bit extra, in the form of your ‘sexual juices’. Obviously for this job a dick or something similar is recommended, but something like breast milk can also work. The end goal in this case is to make every major member of the household utterly addicted to your ‘Secret Sauce’. It must get to the point where even if they find out the truth, they wouldn’t be able to live without your ‘cooking’.",
     "image": "https://i.imgur.com/M88CbBV.png",
     "loca": "Touhou",
     "objectives": [
@@ -3763,12 +3790,14 @@
     "reward": "Kirio Hikifune, Sanji, Charmy Pappitson + Fairy Feast and Expansions",
     "scope": "Standard",
     "source": "",
-    "title": "Scarlet Devil\u2019s Secret Sauce",
+    "title": "Scarlet Devil’s Secret Sauce",
     "uid": "TOP4P"
   },
   {
     "author": "Fetysh",
-    "budget": 225,
+    "uid": "J6MXU",
+    "reward": "1 free waifu of tier 10 or lower that possesses the power you taught.",
+    "source": "",
     "conditions": [
       {
         "value": "Must teach the class of at least 10 named canon characters, these can be of any age."
@@ -3777,28 +3806,30 @@
         "value": "Must teach for at least 1 full year"
       }
     ],
-    "desc": "You start 1 year ahead of canon, or about 2 months prior to Midoriya's first day at UA.\nIn that year, you must convince UA to let you teach a class. A class on a power that everyone, even quirkless, can learn.\nYou receive Template Stacking I or OC Donut Steel, as well as Template Stacking II for free, but you must choose powers that can only be gained through learning and that work for everyone, or at least can be unlocked for everyone. Powers such as sorcery from Marvel, or aura from RWBY. You cannot select any powers that require specific genetics, heritage, or anything that can't simply be picked up by every random person, provided they're smart and dedicated enough to use it. The power must be supernatural, not technological.<br>If you do not manage to convince UA to allow you to teach the class, or you are stopped from teaching the full first year, the granted template and all knowledge gained from it is taken back and gifted to both Overhaul and All-for-One, along with both being granted Body and Everlasting Talents. They cannot be captured or bound until you have taught at least one full year at UA.",
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/989860743434367006/4bda6048fd69d2a3dd799a147968a7a7.jpg",
     "loca": "My Hero Academia",
+    "title": "UA - Academia of Sorcery",
+    "scope": "Grand",
     "objectives": [
       {
-        "reward": "250 credits",
-        "value": "Must teach for 2 full years"
+        "value": "Must teach for 2 full years",
+        "type": "Credits",
+        "reward": "250 credits"
       },
       {
         "reward": "250 credits",
+        "type": "Credits",
         "value": "Must teach for 3 full years"
       },
       {
-        "reward": "Sanity Shattering Instruction, Endless Gospels Untold perks, even if you are not an Outsider.",
-        "value": "Must have a student competent to take over teaching for you within 3 years"
+        "value": "Must have a student competent to take over teaching for you within 3 years",
+        "type": "Perks",
+        "reward": "Sanity Shattering Instruction, Endless Gospels Untold perks, even if you are not an Outsider."
       }
     ],
-    "reward": "1 free waifu of tier 10 or lower that possesses the power you taught.",
-    "scope": "Grand",
-    "source": "",
-    "title": "UA - Academia of Sorcery",
-    "uid": "J6MXU"
+    "budget": 225,
+    "rewardType": "Companions",
+    "desc": "You start 1 year ahead of canon, or about 2 months prior to Midoriya's first day at UA.\nIn that year, you must convince UA to let you teach a class on a power that everyone, even quirkless, can learn.\nYou receive Template Stacking I or OC Donut Steel, as well as Template Stacking II for free, but you must choose powers that can only be gained through learning and that work for everyone, or at least can be unlocked for everyone. Powers such as sorcery from Marvel, or aura from RWBY. You cannot select any powers that require specific genetics, heritage, or anything that can't simply be picked up by every random person, provided they're smart and dedicated enough to use it. The power must be supernatural, not technological.<br>If you do not manage to convince UA to allow you to teach the class, or you are stopped from teaching the full first year, the granted template and all knowledge gained from it is taken back and gifted to both Overhaul and All-for-One, along with both being granted Body and Everlasting Talents. They cannot be captured or bound until you have taught at least one full year at UA."
   },
   {
     "author": "Noth",
@@ -3883,7 +3914,7 @@
     "uid": "qdNrx"
   },
   {
-    "author": "\u30b4Di0\u30b4",
+    "author": "ゴDi0ゴ",
     "budget": 700,
     "conditions": [
       {
@@ -4135,7 +4166,7 @@
         "value": "Capture one other deity and keep them as a close companion for at least a year."
       },
       {
-        "reward": "You gain Life\u2019s A Beach and all its requirements for free. You gain the entire dungeon added to your demiplane and its attractive humanoid embodiment as a T10 companion. Over a year they can create a dungeon similar to their first in any energy rich area you want them to.",
+        "reward": "You gain Life’s A Beach and all its requirements for free. You gain the entire dungeon added to your demiplane and its attractive humanoid embodiment as a T10 companion. Over a year they can create a dungeon similar to their first in any energy rich area you want them to.",
         "value": "Capture the dungeon by having your adventurers ritualistically clear at least 10% of each floors monsters--if any--on their way from floor 1 to floor 100(or the bottom) within 6 months. If they leave the dungeon, die, or run out of time their progress on this objective is reset."
       },
       {
@@ -4582,7 +4613,7 @@
         "value": "Within 3 years, make a profit. Then stay in the positive for 3 months."
       },
       {
-        "value": "20% of the population of Academy City must own at least one Misaka Imouto Onahole\u2122"
+        "value": "20% of the population of Academy City must own at least one Misaka Imouto Onahole™"
       },
       {
         "value": "You may not stealth capture any of the Level 5 Espers"
@@ -4598,14 +4629,14 @@
       },
       {
         "reward": "50 Credits",
-        "value": "Have Tokiwadai academy become a major sponsor for your Project. Including giving you access to its students and their DNA to use for further \u2018refinement\u2019 of your work."
+        "value": "Have Tokiwadai academy become a major sponsor for your Project. Including giving you access to its students and their DNA to use for further ‘refinement’ of your work."
       },
       {
         "reward": "50 Credits",
-        "value": "Have Shokuhou Misaki and Misaka Mikoto actively advertise your \u2018product\u2019 and take part in testing and production."
+        "value": "Have Shokuhou Misaki and Misaka Mikoto actively advertise your ‘product’ and take part in testing and production."
       }
     ],
-    "reward": "The local \u201cWill of the Misaka Network\u201d will be bound to you instantly upon the completion of the main objective. Should she not have spawned yet, she will do so at that moment. In addition, she will be granted the full powers of the Demon Lord from Monster Girl Encyclopedia in addition to her normal ability. Alternatively, you may take 650 Credits instead.",
+    "reward": "The local “Will of the Misaka Network” will be bound to you instantly upon the completion of the main objective. Should she not have spawned yet, she will do so at that moment. In addition, she will be granted the full powers of the Demon Lord from Monster Girl Encyclopedia in addition to her normal ability. Alternatively, you may take 650 Credits instead.",
     "scope": "Grand",
     "source": "",
     "title": "Misaka Onahole Project",
@@ -4688,7 +4719,7 @@
         "value": "One mulligan for a new randomized deck per duel is allowed"
       },
       {
-        "value": "You will be provided the deck\u2019s main archetype and boss monster without having to use the 10 minute deck check"
+        "value": "You will be provided the deck’s main archetype and boss monster without having to use the 10 minute deck check"
       }
     ],
     "desc": "Too often we see contractors steam roll their way through canon events using boring meta decks and OTK strategies, turning the honored game of Duel Monsters into Solitaire. Mix it up a bit. Every time you go into a duel, your deck will be randomly selected from a pool of existing, and usable, decks.",
@@ -4739,7 +4770,7 @@
         "value": "Accomplish the mission with no one noticing you"
       }
     ],
-    "reward": "The World of Sanctuary and all it\u2019s inhabitants will recognize you as it\u2019s legitimate ruler.",
+    "reward": "The World of Sanctuary and all it’s inhabitants will recognize you as it’s legitimate ruler.",
     "scope": "Grand",
     "source": "",
     "title": "The End of Eternity",
@@ -4964,7 +4995,7 @@
     "author": "RexNami_1",
     "budget": 600,
     "conditions": [],
-    "desc": "The Uzumaki Clan was brought near total extinction with the destruction of there home Uzushiogakure early in Kushina Uzumaki\u2019s life. Save the Village from destruction and the near extinction of the Uzumaki Clan.",
+    "desc": "The Uzumaki Clan was brought near total extinction with the destruction of there home Uzushiogakure early in Kushina Uzumaki’s life. Save the Village from destruction and the near extinction of the Uzumaki Clan.",
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/989865636790403092/Uzushio.webp",
     "loca": "Naruto - Uzushiogakure",
     "objectives": [
@@ -5086,22 +5117,23 @@
     "uid": "kVJAy"
   },
   {
-    "author": "Trismegistus",
+    "loca": "My Hero Academia",
+    "objectives": [],
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/989860332036038656/One_For_All_Vestiges_28Heroes_Rising29.webp",
     "budget": 140,
+    "author": "Trismegistus",
+    "reward": "Any one of the past holders of One for All as a companion.",
+    "scope": "Standard",
+    "source": "",
+    "uid": "pxMO2",
     "conditions": [
       {
         "value": "No lures, bindings, or other mind control on the person who passes One for All to you"
       }
     ],
-    "desc": "Become the next holder of the One For All quirk",
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/989860332036038656/One_For_All_Vestiges_28Heroes_Rising29.webp",
-    "loca": "My Hero Academia",
-    "objectives": [],
-    "reward": "Any one of the past holders of One for All as a companion",
-    "scope": "Standard",
-    "source": "",
-    "title": "One for You",
-    "uid": "pxMO2"
+    "rewardType": "Companions",
+    "desc": "Born from the depths of despair, when all hope was thought to be lost, One for All is a quirk passed down for over nine generations of heroes. Their mantle was heavy, as each one of them dedicated their lives to defeating the ultimate evil in this world. Time for you to step up as well, and become the next holder of the One for All quirk. ",
+    "title": "One for You"
   },
   {
     "author": "KaizerRyu",
@@ -5334,7 +5366,7 @@
     "budget": 60,
     "conditions": [
       {
-        "value": "Youngster Joey\u2019s Rattata must remain the ace of his party throughout his Journey and cannot be evolved until after he has become Champion."
+        "value": "Youngster Joey’s Rattata must remain the ace of his party throughout his Journey and cannot be evolved until after he has become Champion."
       },
       {
         "value": "You may not have any more waifus with you than Joey has on hand, up to a max of 6. Inside Context: You may only use powers and technology native to the world."
@@ -5490,7 +5522,7 @@
         "value": "Order V - North American Myth War: E Pluribus Unum [The White Cloth of Steel]"
       },
       {
-        "value": "Order VI - Divine Realm of the Round Table: Camelot [The Shining Airgetl\u00e1m]"
+        "value": "Order VI - Divine Realm of the Round Table: Camelot [The Shining Airgetlám]"
       },
       {
         "value": "Order VII - The Absolute Frontline in the War Against the Demonic Beasts: Babylonia [The Chain of Heaven]"
@@ -5987,7 +6019,7 @@
         "value": "Killing directly other members is prohibited."
       },
       {
-        "value": "Can\u2019t leave the designated area."
+        "value": "Can’t leave the designated area."
       },
       {
         "value": "Be the catcher when the game ends: Lose half of your credits."
@@ -6002,17 +6034,17 @@
         "value": "Kill directly other members: lose all your credits and be 100 credits in debt for each player."
       }
     ],
-    "desc": "the high-level contractor Zelretch organized a little game to prepare the new contractors and entertain himself. Play a \u201ccatch\u201d game with 5 other contractors.",
+    "desc": "the high-level contractor Zelretch organized a little game to prepare the new contractors and entertain himself. Play a “catch” game with 5 other contractors.",
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/992865103231844362/ilya2rider.jpg",
     "loca": "Generic",
     "objectives": [
       {
         "reward": "20 credits+any tier 5 companion of your choice.",
-        "value": "Don\u2019t be caught any single time"
+        "value": "Don’t be caught any single time"
       },
       {
         "reward": "10 credits.",
-        "value": "Don\u2019t be the catcher when the game ends "
+        "value": "Don’t be the catcher when the game ends "
       },
       {
         "reward": "10 credits.",
@@ -6051,41 +6083,41 @@
     "author": "Darnoc",
     "conditions": [
       {
-        "value": "Defeat one of the Yonk\u014d/emperors by yourself while he or she is recognized as a Yonk\u014d/emperor."
+        "value": "Defeat one of the Yonkō/emperors by yourself while he or she is recognized as a Yonkō/emperor."
       },
       {
         "value": "Become recognized as the new emperor."
       }
     ],
-    "desc": "The four emperors are the four most notorious and powerful pirate captains in the world.Defeat one of the Yonk\u014d/emperors yourself and be recognized as the new Yonk\u014d/emperor.\nThe corresponding Yonk\u014d/emperor must be defeated by yourself without help. His crew can be defeated by you, your Companions, or your crew.",
+    "desc": "The four emperors are the four most notorious and powerful pirate captains in the world.Defeat one of the Yonkō/emperors yourself and be recognized as the new Yonkō/emperor.\nThe corresponding Yonkō/emperor must be defeated by yourself without help. His crew can be defeated by you, your Companions, or your crew.",
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/990983057362260038/one-pieces-most-powerful-pirates-explained-who-are-the-yonko-main.webp",
     "loca": "One Piece - New World",
     "objectives": [
       {
         "reward": "10 Credits or a Template Stacking 1 with the power \"Soul-Soul Fruit/Soru Soru no Mi\" for you or one Companion.",
-        "value": "Defeat Big Mom/Charlotte Linlin while she is recognized as a Yonk\u014d/emperor."
+        "value": "Defeat Big Mom/Charlotte Linlin while she is recognized as a Yonkō/emperor."
       },
       {
         "reward": "10 Credits or a Template Stacking 1 with the power \"Fish-Fish Fruit, Model Azure Dragon/Uo Uo no Mi, Model: Seiryu\" for you or a companion.",
-        "value": "Defeat Kaidou of the Beasts while he is recognized as a Yonk\u014d/emperor."
+        "value": "Defeat Kaidou of the Beasts while he is recognized as a Yonkō/emperor."
       },
       {
         "reward": "10 Credits or a Template Stacking 1 with the power \"Dark-Dark Fruit/Yami Yami no Mi \" for you or a companion.",
-        "value": "Defeat Blackbeard/Marshall D. Teach while he is recognized as a Yonk\u014d/emperor."
+        "value": "Defeat Blackbeard/Marshall D. Teach while he is recognized as a Yonkō/emperor."
       },
       {
         "reward": "10 Credits or a Template Stacking 1 with the power \"Tremor-Tremor Fruit/Gura Gura no Mi \" for you or a companion.",
-        "value": "Defeat Whitebeard/Edward Newgate while he is recognized as a Yonk\u014d/emperor."
+        "value": "Defeat Whitebeard/Edward Newgate while he is recognized as a Yonkō/emperor."
       },
       {
         "reward": "10 credits or \"Covert Talent\" and \"Talent Sharing\" for \"Covert Talent\".",
-        "value": "Defeat Red Hair/Shanks while he is recognized as a Yonk\u014d/emperor."
+        "value": "Defeat Red Hair/Shanks while he is recognized as a Yonkō/emperor."
       }
     ],
     "reward": "300 Credits",
     "scope": "Grand",
     "source": "https://onepiece.fandom.com/wiki/Four_Emperors",
-    "title": "Become a Yonk\u014d/Emperor",
+    "title": "Become a Yonkō/Emperor",
     "uid": "15ULU"
   },
   {
@@ -6423,21 +6455,29 @@
     "uid": "EkvXB"
   },
   {
-    "author": "KatzSmile",
+    "desc": "Horrors and nightmares must be forgotten. What died must remain dead. Voldemort and his cronies no longer have a place in this world. Prevent the return of dark times by eliminating them.",
     "conditions": [
       {
-        "value": "Secretly get rid of Voldemort and his inner circle before Voldemort appears in public again or his return became widespread public knowledge."
+        "value": "Kills must not be found out by widespread public."
+      },
+      {
+        "value": "Kill Voldemort before his public appearance or his return becomes widespread public knowledge."
+      },
+      {
+        "value": "Kill his Inner Circle before Voldemort's public appearance or his return becomes widespread public knowledge."
       }
     ],
-    "desc": "Horrors and nightmares must be forgotten. What died must remain dead. Prevent the return of dark times.",
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990985871358578688/j12wps08avw01.webp",
-    "loca": "Harry Potter",
-    "objectives": [],
-    "reward": "Ability to wield local magic for you and all of your current and future retinue if you don't have one already. Dumbledore level of mastery of local magic and wizardry for you.",
-    "scope": "Standard",
+    "reward": "Template Stacking 0 for Harry Potter Magic for you and retinue members. Template Stacking II of Dumbledore for you.",
     "source": "",
+    "author": "KatzSmile",
+    "uid": "ozaIH",
+    "loca": "Harry Potter",
+    "scope": "Standard",
+    "objectives": [],
+    "rewardType": "Perks",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990985871358578688/j12wps08avw01.webp",
     "title": "He-Who-Must-Be-Forgotten",
-    "uid": "ozaIH"
+    "budget": 85
   },
   {
     "author": "V",
@@ -6480,38 +6520,54 @@
     "uid": "HdavX"
   },
   {
-    "author": "Darnoc",
     "conditions": [
       {
         "value": "The building is not auctioned off when the Fairy Tail core members reappear after seven years."
       }
     ],
+    "objectives": [
+      {
+        "type": "Credits",
+        "value": "The building is maintained in an excellent shape during the 7 years",
+        "reward": "15"
+      }
+    ],
     "desc": "When the core members of Fairy Tail disappeared for 7 years, the guild almost went bankrupt and could not afford the first building of Fairy Tail, so it was foreclosed. Make sure there is enough money and the building does not have to be auctioned.",
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/990986608771756123/Current_Fairy_Tail_building.webp",
-    "loca": "Fairy Tail",
-    "objectives": [],
-    "reward": "50 credits",
-    "scope": "Standard",
     "source": "",
+    "scope": "Standard",
+    "loca": "Fairy Tail",
+    "rewardType": "Credits",
+    "budget": 225,
+    "reward": "50 credits",
+    "author": "Darnoc",
     "title": "Save the Fairy Tail Building",
     "uid": "2uuJ4"
   },
   {
+    "title": "Join Fairy Tail",
+    "scope": "Standard",
+    "uid": "Pqihq",
+    "rewardType": "Other",
+    "reward": "12 credits or the Soul Talent + Template Stacking 0 with the power \"Magic\".",
+    "desc": "Fairy Tail is a guild in Magnolia Town in the Kingdom of Fiore. The name \"Fairy Tail\" is meant to represent a sense of adventure to learn more about mysteries and destiny. Filled with people from all walks of life with a variety of magical talents, the guild is a place of laughter and fun, where friends, rivals, and adversaries are made on the fly. Join the guild and become a part of the madness.",
+    "loca": "Fairy Tail - Magnolia Town",
     "author": "Darnoc",
+    "objectives": [],
+    "source": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992869229068025856/Screenshot_3.jpg",
+    "budget": 225,
     "conditions": [
       {
-        "value": "So it yourself"
+        "value": "Become a member of Fairy Tail"
+      },
+      {
+        "value": "Remain a member for at least a month"
+      },
+      {
+        "value": "Get the Fairy Tail tattoo applied to your body"
       }
-    ],
-    "desc": "Fairy Tail is a guild in Magnolia Town in the Kingdom of Fiore. The name \"Fairy Tail\" is meant to represent a sense of adventure to learn more about mysteries and destiny. Join the guild and become part of the madness.",
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992869229068025856/Screenshot_3.jpg",
-    "loca": "Fairy Tail - Magnolia Town",
-    "objectives": [],
-    "reward": "12 credits or the Soul Talent + Template Stacking 0 with the power \"Magic\".",
-    "scope": "Quick",
-    "source": "",
-    "title": "Join Fairy Tail",
-    "uid": "Pqihq"
+    ]
   },
   {
     "author": "KatzSmile",
@@ -6562,20 +6618,31 @@
     "uid": "qi4SS"
   },
   {
-    "author": "Zerlestes",
+    "desc": "The defense against the dark arts post at Hogwarts is one of the most prestigious jobs in the wizarding world. Unfortunately, due to a curse placed upon it by Voldemort, each teacher does not last longer than one year in the position. This results in Hogwarts students often receiving an unacceptable subpar education in this subject. This needs to change. Substitute as one of the defense teachers and successfully teach at least until Voldemort is dead. It is high time those students receive the proper education they deserve.",
+    "objectives": [],
     "conditions": [
       {
-        "value": "Only non retinue member students count"
+        "value": "Over 50% of  your students pass the O.W.L.S"
+      },
+      {
+        "value": "Over 50% of  your students pass the N.E.W.T.S"
+      },
+      {
+        "value": "Only non-retinue members count"
+      },
+      {
+        "value": "Remain in the position for at least one school year"
       }
     ],
-    "desc": "Your Mission is simple Substitute one of the Defense Teachers and Teach at Least until Voldemort is Dead.\nYour only receive the reward if the Most of your Students pass the O.W.L.S and N.E.W.T.S ",
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990987605325783050/defence-against-the-dark-arts-teachers.jpg",
-    "loca": "Harry Potter",
-    "objectives": [],
-    "reward": "50 Credits",
-    "scope": "Standard",
     "source": "",
-    "title": "Defense Against Dark arts Teacher",
+    "budget": 85,
+    "scope": "Standard",
+    "loca": "Harry Potter",
+    "rewardType": "Credits",
+    "reward": "50 Credits",
+    "author": "Zerlestes",
+    "title": "The New Defense against the Dark Arts Teacher",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990987605325783050/defence-against-the-dark-arts-teachers.jpg",
     "uid": "ThfSW"
   },
   {
@@ -6602,131 +6669,152 @@
     "uid": "O9aKl"
   },
   {
-    "author": "Ahtu",
-    "conditions": [
-      {
-        "value": "No lures"
-      }
-    ],
-    "desc": "Convince character's of submitting to you willingly. Without any magical means. And taking on your means of subjugation willingly.",
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992869870830112869/Screenshot_4.jpg",
     "loca": "Generic",
     "objectives": [
       {
-        "reward": "reward will double.",
-        "value": "Convince them without offering favors in return"
+        "type": "Other",
+        "value": "Convince them without offering favors in return",
+        "reward": "Reward will double."
       },
       {
-        "reward": "reward will double.",
-        "value": "Do this with at least 5 subjects"
+        "reward": "Reward will double.",
+        "value": "Do this with at least 5 subjects",
+        "type": "Other"
       }
     ],
-    "reward": "Grants three times as much of a capture reward.",
-    "scope": "Standard",
+    "author": "Ahtu",
+    "desc": "With the benefits provided by the Company, convincing a character to join your side becomes deceptively easy, especially with so many different forms of lures, bindings, and mind control. In order to prove yourself as a truly charismatic individual, you must convince characters of submitting and subjugating themselves to you willingly without the use of magical tools and spells. Only you, them, and your charismatic manipulations. ",
     "source": "",
-    "title": "When Loyalty Doesn\\'t Come Cheap(Deal with the Devil).",
-    "uid": "vhElr"
+    "uid": "vhElr",
+    "rewardType": "Other",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992869870830112869/Screenshot_4.jpg",
+    "reward": "Grants three times as much of a capture reward.",
+    "conditions": [
+      {
+        "value": "No Lures, Bindings or 3rd party forms of mind control"
+      }
+    ],
+    "title": "When Loyalty Doesn't Come Cheap",
+    "budget": 35,
+    "scope": "Standard"
   },
   {
-    "author": "Trismegistus",
+    "objectives": [],
+    "scope": "Standard",
+    "source": "",
+    "loca": "One Piece",
+    "rewardType": "Other",
     "conditions": [
       {
         "value": "Become recognized as the ruler of Angel Island"
       },
       {
-        "value": "Become recognized as the ruler of Upper Yard"
+        "value": "Become recognized as the ruler of the Upper Yard"
       },
       {
-        "value": "Become recognized as the ruler of angel island"
+        "value": "Become recognized as the ruler of the Hidden Cloud Village"
       },
       {
-        "value": "Maintain your rule for minimum 1 month"
+        "value": "Remain a ruler for at least 1 month"
       }
     ],
-    "desc": "Become the 'God' of Skypiea. To do so you must become the ruler of the three inhabited regions and have no other claimants to the region",
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990989211693887488/13421130991630495750.webp",
-    "loca": "One Piece",
-    "objectives": [],
     "reward": "100 Credits + The Logia: Cloud-Cloud Fruit",
-    "scope": "Standard",
-    "source": "",
+    "uid": "qd3NK",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990989211693887488/13421130991630495750.webp",
+    "budget": 225,
+    "author": "Trismegistus",
     "title": "Ruler of the Skies",
-    "uid": "qd3NK"
+    "desc": "The legendary floating island of Skypeia is a place of wonder, often considered a myth by those who live below in the blue sea. Unfortunately, in recent history, Enel the wielder of the Goru Goru no mi usurped the previous ruler Gan Fall and imposed his tyrannical rule on the land as the new 'God' of Skypeia.  This cannot be allowed to stand. Remove this fool from power and become the true 'God' of Skypiea. To do so you must become the ruler of the three inhabited regions and have no other claimants to the region."
   },
   {
+    "objectives": [],
+    "desc": "Gold D. Roger was the first pirate king, a boisterous man who succeeded where others did not. Using the four road Phoneglyphs, he and his crew discovered Laugh Tale, the final island on the Grand Line.  There he uncovered the truth of the Void Century and left behind all of his gathered treasure, the legendary One Piece. With his death, the era of pirates began as every man and woman on the high seas began to search for his legacy. You must be the one to succeed and become the Pirate King, the greatest Pirate in all the Blue Sea. ",
+    "rewardType": "Other",
+    "budget": 225,
+    "reward": "500 Credits + Any vehicle from the Ride section. Anyone considered to be a crew member has the effects of Catch a Ride Training",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990988808830996490/one-piece-episodio-mostrato-iconica-reazione-roger-arrivato-laugh-tale-v3-509534.webp.webp",
+    "scope": "Grand",
+    "title": "The Pirate King",
+    "source": "",
     "author": "Trismegistus",
+    "loca": "One Piece",
     "conditions": [
       {
-        "value": "Reach the island of Raftel"
+        "value": "Reach the island of Laugh Tale"
       },
       {
         "value": "Become recognized as the Pirate King by the general public"
       }
     ],
-    "desc": "You must become the Pirate King, greatest pirate in all the blues",
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990988808830996490/one-piece-episodio-mostrato-iconica-reazione-roger-arrivato-laugh-tale-v3-509534.webp.webp",
-    "loca": "One Piece",
-    "objectives": [],
-    "reward": "500 Credits + Any vehicle from the Ride section. Anyone considered to be a crew member has the effects of Catch a Ride Training",
-    "scope": "Grand",
-    "source": "",
-    "title": "The Pirate King",
     "uid": "UJXfS"
   },
   {
-    "author": "Templar9999",
     "conditions": [
       {
         "value": "Destroy Apokoliops"
+      },
+      {
+        "value": "May not leave the DC Universe until mission is concluded."
+      },
+      {
+        "value": "Starting Bonus: Double Chargen Credits"
       }
     ],
-    "desc": "Destroy the true multiversal Darkseid and Apokolips within the 4th world.\nMay not leave the DC multiverse until the mission is concluded.\nStarting bonus of double chargen credits\nDarkseid will expect a threat, but will not know about you directly. He will be looking for said threat everywhere",
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992870133829738496/Apokolips.webp",
-    "loca": "DC",
+    "source": "",
     "objectives": [
       {
+        "type": "TX Tickets",
         "reward": "2 TX Tickets",
         "value": "Destroy (NOT capture) Darkseid "
       }
     ],
-    "reward": "Exit Stage Left and all upgrades, 1 TX tickets and 2000 credits",
+    "desc": "Darkseid is perhaps amongst the greatest, if not the greatest threat the DC multiverse faces as a whole. With his deadly Omega Beams and enormous power, the god of tyranny is not one to be messed with. Such evil must be removed and eradicated from this world. Your mission is therefore to destroy the true multiversal Darkseid and his home base Apokolips within the 4th world. \n\nUnfortunately, your arrival and intentions have been picked up by said god upon your arrival in DC. Darkseid will expect a threat, but will not know about you directly. He will be looking for said threat everywhere. It is recommended to come adequately prepared.  ",
+    "uid": "srnyW",
     "scope": "Grand",
-    "source": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992870133829738496/Apokolips.webp",
+    "loca": "DC",
+    "budget": 300,
+    "rewardType": "Other",
+    "author": "Templar9999",
     "title": "Destroy Apokolips",
-    "uid": "srnyW"
+    "reward": "Exit Stage Left and all upgrades, 1 TX tickets and 2000 credits"
   },
   {
+    "title": "Capture all Waifus: Disgaea Edition",
+    "desc": "From demonic overlords residing in hellish parallel universes to humans hailing from a futuristic human homeworld, Disgaea has plenty of characters and beings to interact with and sample.  As such, why not partake in the madness? Capture all the waifu in Disgaea within the given time limit. ",
+    "loca": "Disgaea 5",
+    "rewardType": "Other",
     "author": "Unknown",
+    "source": "",
+    "reward": "Template stacking 0 + Template stacking I + 400 Credits",
+    "budget": 2000,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992870486461649007/disgaea-rpg-release-date-4.webp",
+    "scope": "Grand",
     "conditions": [
       {
-        "value": "Time limit:3 months"
+        "value": "Time Limit: 3 Months"
       }
     ],
-    "desc": "Capture all Waifus in the Disgaea World within the Timelimit given.",
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992870486461649007/disgaea-rpg-release-date-4.webp",
-    "loca": "Disgaea 5",
     "objectives": [],
-    "reward": "Template stacking 0 + Template stacking I + 400 Credits",
-    "scope": "Standard",
-    "source": "",
-    "title": "Capture all Waifus",
     "uid": "EdnWz"
   },
   {
+    "objectives": [],
+    "budget": 1545,
+    "scope": "Grand",
+    "uid": "jkU5D",
+    "rewardType": "Other",
+    "desc": "There is no Crucible. There is no Deus ex Machina or Macguffin. There is no programming trick, or clever ploy to end the war in one move. You must either defeat the Reapers, or die with the Galaxy.\nYou must prepare accordingly.\n",
+    "source": "",
+    "title": "Uplift to Fight",
     "author": "Templar9999",
+    "reward": "Exit Stage Left and All Add ons, 1 TX Ticket",
+    "loca": "Mass Effect",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992870705811177473/Mass-Effect-fan-shares-incredible-Reaper-art-made-by-his.jpg",
     "conditions": [
       {
         "value": "Defeat the Reapers"
       }
-    ],
-    "desc": "There is no Crucible. There is no Deus ex Machina or Macguffin. There is no programming trick, or clever ploy to end the war in one move. You must either defeat the Reapers, or die with the Galaxy.\nYou must prepare accordingly.\n",
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992870705811177473/Mass-Effect-fan-shares-incredible-Reaper-art-made-by-his.jpg",
-    "loca": "Mass Effect",
-    "objectives": [],
-    "reward": "Exit Stage Left and All Add ons, 1 TX Ticket",
-    "scope": "Grand",
-    "source": "",
-    "title": "Uplift to Fight",
-    "uid": "jkU5D"
+    ]
   }
 ]
