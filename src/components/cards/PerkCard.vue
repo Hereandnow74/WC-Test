@@ -77,7 +77,7 @@
         v-if="perk.table && !settings.hideDesc"
         :headers="perk.table[0]"
         :rows="perk.table.slice(1)"
-        class="sm:float-right sm:mt-4"
+        class="sm:float-right sm:mt-4 ml-2"
       />
       <Desc v-if="(!settings.hideDesc && !collapsedDescsSet.has(perk.uid)) || expand" :desc="perk.desc" />
       <div v-else class="text-center hover:underline cursor-pointer text-gray-700 dark:text-gray-300 flex items-center justify-center" @click.stop="expand = true">

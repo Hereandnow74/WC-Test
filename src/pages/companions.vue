@@ -155,27 +155,23 @@
       <div class="flex gap-4 justify-center pt-1">
         <div v-if="tagsInclude.length" class="flex gap-1">
           Include:
-          <div
+          <Tag
             v-for="tag in tagsInclude"
             :key="tag"
-            class="rounded-md cursor-pointer select-none px-1 hover:bg-red-500 whitespace-nowrap"
-            :class="waifuTags[tag] ? waifuTags[tag].color : 'text-black bg-teal-500'"
+            class="hover:bg-red-500"
+            :tag="waifuTags[tag] || tag"
             @click="tagToggles[tag] = 0"
-          >
-            {{ waifuTags[tag] ? waifuTags[tag].tag : tag }}
-          </div>
+          />
         </div>
         <div v-if="tagsExclude.length" class="flex gap-1">
           Exclude:
-          <div
+          <Tag
             v-for="tag in tagsExclude"
             :key="tag"
-            class="rounded-md cursor-pointer select-none px-1 hover:bg-red-500 whitespace-nowrap"
-            :class="waifuTags[tag].color"
+            class="hover:bg-red-500"
+            :tag="waifuTags[tag] || tag"
             @click="tagToggles[tag] = 0"
-          >
-            {{ waifuTags[tag].tag }}
-          </div>
+          />
         </div>
       </div>
     </div>

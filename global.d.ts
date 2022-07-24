@@ -94,6 +94,7 @@ export interface Perk {
   refund?: number
   anything?: string
   complex?: any
+  type?: string
 }
 
 declare global {

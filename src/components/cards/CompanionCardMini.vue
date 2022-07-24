@@ -97,16 +97,12 @@
         </div>
 
         <div class="flex flex-wrap gap-1 text-xs mb-1">
-          <span
+          <Tag
             v-for="tag in tags"
             :key="tag.tag"
-            class="px-1 rounded-md cursor-pointer"
-            :class="tag.color"
-            :title="tag.desc"
-            :to="tag.tag === 'Perk' ? {path: '/talents/specific', hash: `#${waifusThatHasPerk[fullChar.u]}`} : ''"
-          >
-            {{ tag.tag }}
-          </span>
+            :tag="tag"
+            :link="tag.tag === 'Perk' ? {path: '/talents/specific', hash: `#${waifusThatHasPerk[fullChar.u]}`} : ''"
+          />
         </div>
 
         <div v-if="!char.sold" class="flex gap-2 mt-auto justify-end">

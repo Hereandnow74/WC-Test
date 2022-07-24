@@ -42,6 +42,7 @@ const imageSettings = useStorage('imageSettings', {
   showCompanionsImage: true,
   showAvatarImage: true,
   width: 800,
+  onlyImages: false,
 })
 
 // Misc settings

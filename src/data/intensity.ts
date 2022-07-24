@@ -41,14 +41,14 @@ intensity.push({
 })
 intensity.push({
   uid: 'IpXK4',
-  title: 'Couple’s Account(Cooperative)',
+  title: 'Couple’s Account (Cooperative)',
   image: 'https://i.ibb.co/Vt1Sphq/Couple-SAccount.jpg',
   intensity: 0,
   special: 'Chargen only. May not be taken on DR11.',
   blacklist: ['DR11 start'],
   chargen: true,
   desc: `Your spouse or significant other is a contractor like you, but the two of you are tied much more closely than the friends option above. The two of you share full access to a joint account tied to both of your smart devices. A member of your retinue may be a companion to one of you and merely a familiar to the other.
-<p>You will only pay for the more expensive of your two Origins. The chosen binding method treats you as equal masters, ensuring that your love never fades. (If you have the Symbiote, one of you will usually, but not necessarily, be the queen.) Heritages are purchased separately, but the other of you can buy any Heritage that one of you has at half-price, after all discounts and ignoring the usual discount cap. This does not apply to Tier X Heritage capstones. The control aspects of Bindings, Lures, and any Heritage hierarchy mechanics will only affect your relationship if the two of you are into that. OC Donut Steel, Template Stacking, and relevant waifu perks are purchased individually. All other items need only be purchased once to benefit the both of you equally. Your shared retinue will not enter R.I.P. mode unless you both perish.</p>`,
+<p>You will only pay for the more expensive of your two Origins. The chosen binding method treats you as equal masters, ensuring that your love never fades. (If you have the Symbiote, one of you will usually, but not necessarily, be the queen.) Heritages are purchased separately, but the other of you can buy any Heritage that one of you has at half-price, after all discounts and ignoring the usual discount cap. This does not apply to Tier Χ Heritage capstones. The control aspects of Bindings, Lures, and any Heritage hierarchy mechanics will only affect your relationship if the two of you are into that. Template Stacking and relevant waifu perks are purchased individually. All other items need only be purchased once to benefit the both of you equally. Your shared retinue will not enter R.I.P. mode unless you both perish.</p>`,
 })
 
 intensity.push({

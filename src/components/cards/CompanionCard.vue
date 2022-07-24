@@ -102,18 +102,13 @@
           </div>
         </div>
         <div v-if="showTags" class="flex flex-wrap gap-1 text-sm justify-center">
-          <component
-            :is="tag.tag === 'Perk' ? 'router-link' : 'span'"
+          <Tag
             v-for="tag in tags"
             :key="tag.tag"
-            class="px-1 rounded-md cursor-pointer"
-            :class="tag.color"
-            :title="tag.desc"
-            :to="tag.tag === 'Perk' ? {path: '/talents/specific', hash: `#${waifusThatHasPerk[charData.uid]}`} : ''"
+            :tag="tag"
+            :link="tag.tag === 'Perk' ? {path: '/talents/specific', hash: `#${waifusThatHasPerk[charData.uid]}`} : ''"
             @click="() => tag.short ? tagToggles[tag.short] = 1 : tagToggles[tag.tag] = 1"
-          >
-            {{ tag.tag }}
-          </component>
+          />
         </div>
       </div>
     </div>
@@ -138,7 +133,6 @@ import { findIndex, intersection, random } from 'lodash-es'
 import { CHAR_COSTS, waifusThatHasPerk, waifuTags } from '~/data/constants'
 import { lazyLoadSingleImg, tagToggles } from '~/logic'
 import { confirmDialog } from '~/logic/dialog'
-import { usePlayStore } from '~/store/play'
 import { useStore } from '~/store/store'
 
 const props = defineProps({

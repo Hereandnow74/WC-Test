@@ -1,5 +1,573 @@
 [
   {
+    "conditions": [
+      {
+        "value": "You personally must be the one to grant the protagonist their power."
+      }
+    ],
+    "loca": "Generic",
+    "objectives": [
+      {
+        "reward": "25",
+        "type": "Credits",
+        "value": "The protagonist reaches 25% of their strength in canon"
+      },
+      {
+        "type": "Credits",
+        "reward": "25",
+        "value": "The protagonist reaches 50% of their strength in canon"
+      },
+      {
+        "type": "Credits",
+        "reward": "25",
+        "value": "The protagonist reaches 75% of their strength in canon"
+      },
+      {
+        "reward": "25",
+        "value": "The protagonist reaches 100% of their strength in canon",
+        "type": "Credits"
+      },
+      {
+        "reward": "50",
+        "value": "The protagonist surpasses their original peak strength in canon",
+        "type": "Credits"
+      },
+      {
+        "value": "The protagonist becomes a symbol of power in their world. EX: MHA symbol of peace, Bleach Head Captain",
+        "type": "Credits",
+        "reward": "100"
+      }
+    ],
+    "source": "",
+    "image": "https://dailyanimeart.files.wordpress.com/2012/02/rukia-stabs-ichigo1.jpg",
+    "desc": "Everyone knows the protagonist will always get the power they need to save the day when they are in trouble, right? But the truth is no one tells you of the myriad stories cut short when the protagonist simply doesn't. After all, who would want to read a story where the main character dies in the first ten chapters and the story ends completely? You will go to worlds where All Might knows how to properly secure bottle lids, and where Rukia Kuchiki ran into a second hollow on that fateful day. Your mission will be to grant the protagonist a power and teach them enough about it to allow them to survive.",
+    "budget": 50,
+    "rewardType": "Credits",
+    "scope": "Grand",
+    "title": "Bestowal",
+    "author": "Lazer",
+    "reward": "100",
+    "uid": "DNiVz"
+  },
+  {
+    "image": "https://i.ibb.co/p0sSVcS/pokemon-league-champion-giselle-reference-sheet-by-nico-neko-defhl3t-fullview.jpg",
+    "budget": 85,
+    "reward": "1000 credits plus one level on a Heritage of your choice (no TX levels)",
+    "conditions": [
+      {
+        "value": "Chargen only. Substitute as Giselle (costs are waived)"
+      },
+      {
+        "value": "Make a harem including at least Ash, Misty, May, Dawn, Iris, Serena, Lillie, Mallow, and Lana. They must take your binding willingly"
+      },
+      {
+        "value": "As it is by the Journeys timeline, Ash' tier is raised to 7, and those of the non-Alolan targets excluding Iris are raised to 5"
+      }
+    ],
+    "author": "Ratcatcher",
+    "loca": "Pokemon",
+    "objectives": [
+      {
+        "type": "Perks",
+        "value": "Track down and defeat the trainers from Pallet that started with Ash (Gary Oak, Leaf - serving as Viridian City's temporary gym trainer - and whoever had the Charmender)",
+        "reward": "Free Unison for you and all current members of your retinue"
+      },
+      {
+        "reward": "100 credits",
+        "value": "Find Verity and Risa and have them take your Binding willingly",
+        "type": "Credits"
+      },
+      {
+        "value": "Dawn is Akari - go back in time to Hisui after she defeated Arceus and get her to take the Binding willingly",
+        "reward": "Dawn's rating raised to 8, 1 T-11 Ticket",
+        "type": "Other"
+      }
+    ],
+    "desc": "Early in the Pokemon anime Ash Ketchum met the one girl he was unequivocably attracted to, Giselle. She has never appeared since, even if Ash is finally close to become a Pokemon Master.\nLet's correct this: substitute as Giselle in the Journeys period and make a harem including Ash, the female Pokemon trainers he traveled with for extended periods, and his female classmates back in Alola.",
+    "rewardType": "Other",
+    "title": "Giselle's Revenge",
+    "scope": "Grand",
+    "source": "",
+    "uid": "EzNdh"
+  },
+  {
+    "source": "",
+    "loca": "Grimgar of Fantasy and Ash",
+    "objectives": [
+      {
+        "reward": "20 credits",
+        "value": "Train 20 or more recruits ",
+        "type": "Credits"
+      },
+      {
+        "reward": "50 credits",
+        "type": "Credits",
+        "value": "Train 50 or more recruits "
+      },
+      {
+        "type": "Credits",
+        "reward": "100 credits",
+        "value": "Train 100 or more recruits "
+      },
+      {
+        "value": "Train 5 instructors to the guild ",
+        "reward": "25 credits",
+        "type": "Credits"
+      },
+      {
+        "type": "Companions",
+        "value": "Train 3 or more recruits or instructors to the equivalent of a Tier 5 companion ",
+        "reward": "1 tier 5 companions of your choice."
+      },
+      {
+        "value": "Train 10 or more recruits or instructors to the equivalent of a Tier 5 companion ",
+        "type": "Credits",
+        "reward": "220 credits"
+      },
+      {
+        "reward": "75 credits",
+        "type": "Credits",
+        "value": "Train 1 recruit or instructor to the equivalent of a Tier 6 companion."
+      },
+      {
+        "type": "Perks",
+        "reward": "1 Perk of your choice.",
+        "value": "Make the your one of the most known guilds. "
+      }
+    ],
+    "rewardType": "Credits",
+    "reward": "35",
+    "image": "",
+    "conditions": [
+      {
+        "value": "The guild must have 10 spells/skills or more to be taught to new recruit."
+      },
+      {
+        "value": "The guild must train at least 10 new recruits the basics of a class."
+      },
+      {
+        "value": "The guild must train at least 3 recruits in at least 10 skills of the class."
+      },
+      {
+        "value": "At least one recruit of the guild must be trained to the equivalent of a Tier 5 companion."
+      },
+      {
+        "value": "Train at least 3 instructors to your guild."
+      },
+      {
+        "value": "An instructor must be at least a Tier 4."
+      },
+      {
+        "value": "Train at least one person or leave detailed books/scrolls with a all the guild spells/skills. Minimum of 20."
+      }
+    ],
+    "title": "A New Guild.",
+    "author": "irugaa0",
+    "scope": "Grand",
+    "budget": 250,
+    "desc": "The seven most known guilds: \"Warrior\"; \"Mage\"; \"Paladin\"; \"Priest\"; \"Hunter\"; \"Dread Knight\" and \"Thief\". And some less known guilds: \"Necromancer\" \"Shaman\" \"Sword Dancer\" \"Samurai\" \"Archer\" and \"Paladins\", are some of the options that the Red Moon Volunteer Army, have to choose as a class, Expand this option by introducing a new guild.\n Artificer, Death Knight, Martial Artist, Bard, Spellblade, Warpriest, Druid or Any other class you want.\nSet a new guild and pass it teachings to new recruits.\n",
+    "uid": "EDypJ"
+  },
+  {
+    "scope": "Standard",
+    "budget": 690,
+    "image": "https://images.hdqwalls.com/wallpapers/skyrim-wallpaper-4k-bu.jpg",
+    "conditions": [
+      {
+        "value": "Acquire the Elder Scroll(Dragon)"
+      },
+      {
+        "value": "Acquire the Elder Scroll(Blood)"
+      },
+      {
+        "value": "Acquire the Elder Scroll(Sun)"
+      }
+    ],
+    "title": "Treasure Hunter",
+    "loca": "The Elder Scrolls(Events of Skyrim)",
+    "author": "CyrusFallen",
+    "rewardType": "Credits",
+    "reward": "500",
+    "source": "",
+    "objectives": [
+      {
+        "value": "Assist the Dragonborn in defeating Alduin and recieve an honest confession from them(You can't capture them or use overt mind control but subtle lures are fine)",
+        "type": "Perks",
+        "reward": "TS1(Alduin) for you, 1 level of Dragon Herritage for the Dragonborn"
+      },
+      {
+        "value": "Assist Serana in stopping the Tyranny of the Sun and recieve an honest confession from them(You can't capture them or use overt mind control but subtle lures are fine)",
+        "reward": "TS1(Harkon) for you, a free capture of Valerica",
+        "type": "Perks"
+      },
+      {
+        "value": "Acquire Auriel's Bow",
+        "type": "Credits",
+        "reward": "50"
+      }
+    ],
+    "desc": "Ha, Skyrim! The quintessential fantasy experience! Elves, Dragons, Magic, Booty!\nThis time, you're being sent there with a simple task, one familiar to many a Skyrim player. Hoard!\nYou'll be dropped just outside Riverwood, a month before the destruction of Helgen, and you have to acquire as many \"artifacts\" as you can.",
+    "uid": "NAoZw"
+  },
+  {
+    "rewardType": "Credits",
+    "source": "",
+    "desc": "The company was commissioned to help a world with a zombie plague, you and other contractors will be responsible for cleaning the maximum area possible. ",
+    "loca": "Generic",
+    "conditions": [
+      {
+        "value": "To succeed you clean at least an area of 2 million km², of all zombies."
+      }
+    ],
+    "image": "",
+    "reward": "400 ",
+    "budget": 0,
+    "scope": "Grand",
+    "author": "irugaa0",
+    "objectives": [
+      {
+        "value": "establish one self-sufficient town",
+        "type": "Credits",
+        "reward": "20"
+      },
+      {
+        "reward": "30",
+        "value": "establish one self-sufficient City",
+        "type": "Credits"
+      },
+      {
+        "value": "establish one self-sufficient Capital City",
+        "type": "Credits",
+        "reward": "40"
+      },
+      {
+        "reward": "50",
+        "value": "establish one self-sufficient Country",
+        "type": "Credits"
+      },
+      {
+        "value": "Clean an entire country of all zombies.",
+        "type": "Credits",
+        "reward": "50"
+      },
+      {
+        "value": "Clean 3 entire countries of all zombies.",
+        "reward": "100",
+        "type": "Credits"
+      },
+      {
+        "reward": "200",
+        "type": "Credits",
+        "value": "Clean an entire continent of all zombies."
+      },
+      {
+        "reward": "400",
+        "value": "Clean 2 continents of all zombies.",
+        "type": "Credits"
+      },
+      {
+        "reward": "1000",
+        "value": "Clean the world of all zombies.",
+        "type": "Credits"
+      },
+      {
+        "value": "Discover how the plague started.",
+        "type": "Credits",
+        "reward": "3"
+      },
+      {
+        "value": "Get a sample of the zombie plague to the company.",
+        "type": "Credits",
+        "reward": "1"
+      }
+    ],
+    "title": "Re-establishment of a World.",
+    "uid": "TyWpB"
+  },
+  {
+    "source": "",
+    "author": "irugaa0",
+    "title": "A Song of Ice and Fire – A bright dawn",
+    "budget": 0,
+    "objectives": [
+      {
+        "reward": "5",
+        "value": "Obtain a Valyrian Steel Weapon",
+        "type": "Credits"
+      },
+      {
+        "type": "Credits",
+        "value": "Become a Knight (Only available to drop-in)",
+        "reward": "1"
+      },
+      {
+        "reward": "5",
+        "value": "Become a noble (Only available to drop-in)",
+        "type": "Credits"
+      },
+      {
+        "value": "Become a Lord (Only available to drop-in)",
+        "type": "Credits",
+        "reward": "10"
+      },
+      {
+        "type": "Credits",
+        "reward": "15",
+        "value": "Become a Lord Paramount"
+      },
+      {
+        "value": "Become the King.",
+        "reward": "30",
+        "type": "Credits"
+      },
+      {
+        "reward": "55 ",
+        "type": "Credits",
+        "value": "Win or Prevent the war of 5 kings"
+      },
+      {
+        "type": "Credits",
+        "reward": "30",
+        "value": "Become a Dragon Rider."
+      },
+      {
+        "reward": "20 credits per Kill/capture.",
+        "value": "Kill/capture a White Walkers",
+        "type": "Credits"
+      },
+      {
+        "reward": "1500",
+        "value": "Kill/capture all the White Walkers. (0/1,000)",
+        "type": "Credits"
+      },
+      {
+        "type": "Perks",
+        "reward": "Night King Template + 100 credits",
+        "value": "Kill/capture the Night King"
+      }
+    ],
+    "loca": "A Song of Ice and Fire",
+    "scope": "Standard",
+    "image": "",
+    "rewardType": "Credits",
+    "desc": "Fight for the world and help to defeat the Night King.",
+    "conditions": [
+      {
+        "value": "You must have a active role in the Night King's defeat."
+      }
+    ],
+    "reward": "150",
+    "uid": "GDDQt"
+  },
+  {
+    "title": "A Song of Ice and Fire – The enternal winter",
+    "reward": "150 Credits + White Walker template ",
+    "budget": 0,
+    "desc": "Fight for the night king and help him to conquer the world.",
+    "rewardType": "Credits",
+    "author": "irugaa0",
+    "loca": "A Song of Ice and Fire",
+    "scope": "Standard",
+    "objectives": [
+      {
+        "type": "Credits",
+        "reward": "5",
+        "value": "Obtain a Valyrian Steel Weapon"
+      },
+      {
+        "value": "Kill/capture a minor Noble ",
+        "type": "Credits",
+        "reward": "2 per noble"
+      },
+      {
+        "value": "Kill/capture a Lord ",
+        "type": "Credits",
+        "reward": "5 Credits per target."
+      },
+      {
+        "reward": "15",
+        "value": "Kill/capture a Lord Paramount",
+        "type": "Credits"
+      },
+      {
+        "value": "Kill/capture all Lords Paramount",
+        "reward": "50",
+        "type": "Credits"
+      },
+      {
+        "reward": "50",
+        "type": "Credits",
+        "value": "Kill/Capture the King."
+      },
+      {
+        "value": "Kill/capture a Forest Child",
+        "type": "Credits",
+        "reward": "5 Credits per target."
+      },
+      {
+        "value": "Kill/capture all the Forest Children",
+        "type": "Credits",
+        "reward": "50"
+      },
+      {
+        "value": "Kill/capture the Three eyed Crow",
+        "type": "Perks",
+        "reward": "Three eyed Crow Template "
+      },
+      {
+        "reward": "25",
+        "value": "Kill/capture a Dragon",
+        "type": "Credits"
+      },
+      {
+        "value": "Kill/capture all Dragons",
+        "type": "Credits",
+        "reward": "125 credits"
+      }
+    ],
+    "image": "",
+    "source": "",
+    "conditions": [
+      {
+        "value": "The Night King must conquer at least the Westeros continent."
+      }
+    ],
+    "uid": "cthSF"
+  },
+  {
+    "scope": "Standard",
+    "image": "",
+    "desc": "You and your retinue came to this world as \"Expeditionary Force\" in this new world. You must survive, explore and actively fight in this world during the duration of this mission, for a minimum of 6 months.",
+    "reward": "5",
+    "objectives": [
+      {
+        "type": "Credits",
+        "reward": "5",
+        "value": "Join the Red Moon Volunteer Army and Survive 6 months "
+      },
+      {
+        "type": "Credits",
+        "reward": "10",
+        "value": "Capture a tier 2 or higher waifu"
+      },
+      {
+        "value": "Join a Guild",
+        "type": "Credits",
+        "reward": "5"
+      },
+      {
+        "reward": "10",
+        "type": "Credits",
+        "value": "Learn more than 5 skills from a guild"
+      },
+      {
+        "type": "Credits",
+        "value": "Kill or Capture a distinguished monster ",
+        "reward": "10"
+      },
+      {
+        "type": "Perks",
+        "value": "Travel to other worlds inside this universe.",
+        "reward": "a Perk or talent of your choice"
+      },
+      {
+        "type": "Credits",
+        "reward": "15",
+        "value": "Kill or Capture the Kobold leader Deathspot"
+      },
+      {
+        "value": "Kill or Capture the orc sorcerer Abael",
+        "type": "Credits",
+        "reward": "20"
+      },
+      {
+        "type": "Credits",
+        "reward": "25",
+        "value": "Kill or Capture the orc warlord Zoran Zeshuu"
+      },
+      {
+        "reward": "50",
+        "value": "Kill or Capture the Giant God",
+        "type": "Credits"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You must complete at least two additional objectives"
+      },
+      {
+        "value": "You and your retinue cannot exceed T6 or, if they do, they are limited to this Tier for the duration of the Mission."
+      },
+      {
+        "value": "You must be active in this world"
+      }
+    ],
+    "source": "",
+    "loca": "Grimgar of Fantasy and Ash",
+    "budget": 0,
+    "rewardType": "Credits",
+    "title": "Grimm Fantasy Grimgar",
+    "author": "irugaa0",
+    "uid": "lZMEF"
+  },
+  {
+    "scope": "Grand",
+    "desc": "Let Ludwig the Holy Blade experience a final respectful battle.",
+    "loca": "Bloodborne",
+    "author": "One-EyedKing",
+    "objectives": [],
+    "image": "",
+    "budget": 960,
+    "source": "",
+    "conditions": [
+      {
+        "value": "Let it be a test of skill. No tricks. No overpowering him only skill"
+      }
+    ],
+    "rewardType": "Credits",
+    "reward": "150",
+    "title": "Final battle",
+    "uid": "UMJhc"
+  },
+  {
+    "source": "",
+    "image": "https://cdn.donmai.us/sample/3a/2f/__link_the_legend_of_zelda_and_1_more_drawn_by_nm_cco__sample-3a2f96df5517c534498fb2cd8d6579de.jpg",
+    "budget": 200,
+    "title": "Love under the sun",
+    "reward": "Ganondorf",
+    "objectives": [
+      {
+        "type": "Companions",
+        "reward": "capture all 3",
+        "value": "Have Zelda and  Link happily marry ganondorf"
+      },
+      {
+        "reward": "100",
+        "type": "Credits",
+        "value": "Convince 20  named characters  to join the Gerudo ( you will have to find partners for them)"
+      },
+      {
+        "reward": "Linkle",
+        "type": "Companions",
+        "value": "Create a forest for the Gerudo"
+      }
+    ],
+    "loca": "Legend of Zelda",
+    "conditions": [
+      {
+        "value": "Get every Gerudo  in the village hooked up with someone"
+      },
+      {
+        "value": "The gerudo's partners cannot be captured or directly mind controlled"
+      }
+    ],
+    "author": "bakami",
+    "desc": "Right. It's come to our  attention people have bad taste. Who wouldn't want a 8ft tall amazon? Fools and cowards.\nAfter a oddly short  blonde Gerudo put in this request to help her sisters  out.\nIf you chose to except you must play wingman to the Gerudo people and make sure each member finds a partner.",
+    "scope": "Standard",
+    "rewardType": "Companions",
+    "uid": "jjLKM"
+  },
+  {
     "title": "YOU vs. the Scott Pilgrim Universe",
     "desc": "This variant of Scott's Pilgrim's world has gone REALLY wrong: in the forest Scott defeated Nega Scott rather than reaccept him, and now he's a member of the League of Evil Exes. It went so wrong that Envy, Stacey, and Kim have contacted us to deal with this mess: you must find Ramona, start dating her, and then take down the League for good.",
     "loca": "Scott Pilgrim",
@@ -89,8 +657,8 @@
         "type": "Companions"
       }
     ],
-    "title": "Faunus Superiority ",
-    "image": "https://media.discordapp.net/attachments/868800506364035074/996618650893168661/unknown.png",
+    "title": "Faunus Superiority",
+    "image": "https://static.wikia.nocookie.net/rwby/images/f/fd/V5_10_00082.png/revision/latest/scale-to-width-down/1200?cb=20171219191548",
     "conditions": [
       {
         "value": "Elevate the Faunus' standing in the world of RWBY"
@@ -121,7 +689,7 @@
         "value": "You and your retinue cannot exceed T8 or, if they do, they are limited to this Tier for the duration of the Mission."
       }
     ],
-    "image": "https://i.ytimg.com/vi/7HRvZ-ya560/maxresdefault.jpg",
+    "image": "https://img1.ak.crunchyroll.com/i/spire1/df57eb5ef1bea5de7f252525bd42e4a91551305676_full.png",
     "author": "TDon123",
     "reward": "400",
     "uid": "DTJoP"
@@ -177,7 +745,7 @@
       }
     ],
     "source": "",
-    "image": "https://i.ibb.co/r5ZcJ9N/Envy-Adams.png",
+    "image": "https://64.media.tumblr.com/4038567de86d8fc381fac985dd542f20/81ea1c62b1927923-03/s1280x1920/dece1b5f7461b20c8566c5a2eb522bb0f6d82816.png",
     "uid": "kSPgg"
   },
   {
@@ -1285,7 +1853,7 @@
         "reward": "100 Credits"
       }
     ],
-    "image": "https://img.buzzfeed.com/buzzfeed-static/static/2021-11/19/21/asset/8a85010d8fc5/sub-buzz-847-1637358695-3.jpg",
+    "image": "https://i.pinimg.com/564x/69/de/48/69de4894aba606404f371b61fe1bf475.jpg",
     "scope": "Grand",
     "desc": "All Might, the Symbol of Peace is on his last legs, and his retirement is at hand. With his chosen successor scrambling to master his acquired power, someone needs to step up and become the new pillar society stands on. You must now become the new number one hero in Japan. \n\nOr perhaps you have arrived in a time before All Might. If so, it is now your time to shine. The world is troubled, as villains lurk in the shadows. Perhaps you can be the gleaming torch that pushes the darkness away. ",
     "rewardType": "Other",
@@ -3441,7 +4009,7 @@
       }
     ],
     "desc": "This client is interested in a bit of kingmaking, or queenmaking in this case. Your goal for this mission is to support Azula, favored daughter of the Firelord in becoming the ruler of the Fire Nation and then the entire world. But rather than just her ruling, your job is in making her a legitimately beloved and capable ruler, not just in wartime but also in peacetime. For this job you will be guaranteed a fitting background as a favored childhood friend of Azula’s, just to make sure you can even get to her. From then on you will need to support and manipulate her alike, keeping her more psychotic tendencies in check and guiding her towards rulership. Obviously you will need to take care of both Ozai and the Avatar as they will get in the way of Azula taking over.",
-    "image": "https://i.imgur.com/YUwAPrE.png",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/999447042403344564/Screenshot_2.jpg",
     "loca": "Avatar: The Last Airbender",
     "objectives": [
       {
@@ -4575,35 +5143,39 @@
     "uid": "8TQ8i"
   },
   {
-    "author": "Darnoc",
-    "budget": 140,
-    "conditions": [
-      {
-        "value": " Eddard Stark was not executed and did not die in any other way during the attempted takeover."
-      }
-    ],
-    "desc": "Shortly before King Robert's death, Eddard Stark, the Hand of the King, discovered to his horror that Robert's three legitimate children are the product of incest between Queen Cersei and her brother Jaime, making Robert's heir his younger brother Stannis Baratheon.<br>In order to prevent Joffrey from becoming king after Robert dies shortly afterwards, Eddard Stark, with the help of Lord Petyr Baelish, the master of coin, plans to take power and install Stannis as king. After the attempt fails due to Petyr Baelish's treachery, he must, on the steps of the Great Sept of Baelor, make a false confession to save his life and that of his daughters. King Joffrey then has him executed with Eddard's sword Ice. ",
-    "image": "https://awoiaf.westeros.org/images/8/87/Ned_Stark%27s_execution.jpg",
-    "loca": "A Song of Ice and Fire",
+    "reward": "10 Credits",
     "objectives": [
       {
-        "reward": "7 Credits or the \"Communication Talent\" or \"Talent Sharing\" for \"Communication Talent\".",
-        "value": "Persuade Joffrey not to execute Eddard Stark."
+        "value": "Persuade Joffrey not to execute Eddard Stark.",
+        "type": "Other",
+        "reward": "7 Credits or the \"Communication Talent\" or \"Talent Sharing\" for \"Communication Talent\"."
       },
       {
+        "type": "Other",
         "reward": "7 credits or \"Covert Talent\" and \"Talent Sharing\" for \"Covert Talent\".",
         "value": "Rescue Eddard Stark from the Black cells without being noticed during the rescue."
       },
       {
+        "type": "Other",
         "reward": "10 credits or \"Wild Talent\" and two free purchases of \"Wild Defense\" or \"Talent Sharing\" for \"Wild Talent\" and two free purchases of \"Wild Defense\".",
         "value": " Make sure Eddard Stark, Sansa Stark and Arya arrive safely in the North or with the Northern Army, or with a safe ally, such as an unsieged Riverrun."
       }
     ],
-    "reward": "10 Credits",
-    "scope": "Standard",
+    "uid": "cPjSN",
+    "conditions": [
+      {
+        "value": "Eddard Stark was not executed and did not die in any other way during the attempted takeover."
+      }
+    ],
+    "budget": 140,
     "source": "https://awoiaf.westeros.org/index.php/Eddard_Stark#A_Game_of_Thrones",
+    "desc": "Shortly before King Robert's death, Eddard Stark, the Hand of the King, discovered to his horror that Robert's three legitimate children are the product of incest between Queen Cersei and her brother Jaime, making Robert's heir his younger brother Stannis Baratheon.<br>In order to prevent Joffrey from becoming king after Robert dies shortly afterwards, Eddard Stark, with the help of Lord Petyr Baelish, the master of coin, plans to take power and install Stannis as king. After the attempt fails due to Petyr Baelish's treachery, he must, on the steps of the Great Sept of Baelor, make a false confession to save his life and that of his daughters. King Joffrey then has him executed with Eddard's sword Ice. ",
+    "rewardType": "Credits",
+    "scope": "Standard",
+    "image": "https://i.redd.it/m8awj1ef0n951.jpg",
     "title": "Prevent Eddard Stark's Execution",
-    "uid": "cPjSN"
+    "loca": "A Song of Ice and Fire",
+    "author": "Darnoc"
   },
   {
     "author": "Heaven Canceler",
@@ -5670,111 +6242,129 @@
   },
   {
     "author": "Darnoc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Strix-varia-005.jpg/1280px-Strix-varia-005.jpg",
+    "scope": "Standard",
+    "source": "https://harrypotter.fandom.com/wiki/Ordinary_Wizarding_Level",
+    "rewardType": "Credits",
+    "desc": "An Ordinary Wizarding Level (often abbreviated to O.W.L.) is a standardized subject-specific test taken during the fifth year of school at Hogwarts. The score a student achieved on a particular O.W.L. determined whether or not they could continue taking the subject in subsequent school years. \nPass all your subjects with at least Acceptable.",
+    "loca": "Harry Potter - Hogwarts",
+    "title": "Ordinary Wizarding Level ",
+    "uid": "xTpYU",
+    "reward": "30 Credits",
+    "objectives": [
+      {
+        "value": "Pass all your subjects with at least Exceeds Expectations.",
+        "reward": "10 Credits",
+        "type": "Credits"
+      },
+      {
+        "value": "Pass all your subjects with at least Outstanding.",
+        "type": "Other",
+        "reward": "10 credits or \"Soul Talent\" or\"Talent Sharing\" for \"Soul Talent\"."
+      }
+    ],
+    "budget": 31,
     "conditions": [
       {
         "value": "You are a Hogwarts student."
       }
-    ],
-    "desc": "An Ordinary Wizarding Level (often abbreviated to O.W.L.) is a standardized subject-specific test taken during the fifth year of school at Hogwarts. The score a student achieved on a particular O.W.L. determined whether or not they could continue taking the subject in subsequent school years. \nPass all your subjects with at least Acceptable.",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Strix-varia-005.jpg/1280px-Strix-varia-005.jpg",
-    "loca": "Harry Potter - Hogwarts",
-    "objectives": [
-      {
-        "reward": "10 Credits",
-        "value": "Pass all your subjects with at least Exceeds Expectations."
-      },
-      {
-        "reward": "10 credits or \"Soul Talent\" or\"Talent Sharing\" for \"Soul Talent\".",
-        "value": "Pass all your subjects with at least Outstanding."
-      }
-    ],
-    "reward": "30 Credits",
-    "scope": "Standard",
-    "source": "https://harrypotter.fandom.com/wiki/Ordinary_Wizarding_Level",
-    "title": "Ordinary Wizarding Level ",
-    "uid": "xTpYU"
+    ]
   },
   {
     "author": "Darnoc",
+    "objectives": [
+      {
+        "reward": "15 Credits",
+        "type": "Credits",
+        "value": "Pass all your subjects with at least Exceeds Expectations."
+      },
+      {
+        "reward": "15 Credits",
+        "value": "Pass all your subjects with at least Outstanding.",
+        "type": "Credits"
+      }
+    ],
+    "title": "Nastily Exhausting Wizarding Test",
+    "uid": "hem1u",
     "conditions": [
       {
         "value": "You are a Hogwarts student."
       }
     ],
     "desc": "A Nastily Exhausting Wizarding Test (often abbreviated N.E.W.T.) was a subject-specific exam that seventh-year witches and wizards at Hogwarts School of Witchcraft and Wizardry took to help them pursue certain careers after their graduation, so passing these exams was critical. \nPass all your subjects with at least Acceptable .",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Pleurodeles_waltl_BUD.jpg/1280px-Pleurodeles_waltl_BUD.jpg",
     "loca": "Harry Potter - Hogwarts",
-    "objectives": [
-      {
-        "reward": "15 Credits",
-        "value": "Pass all your subjects with at least Exceeds Expectations."
-      },
-      {
-        "reward": "15 Credits",
-        "value": "Pass all your subjects with at least Outstanding."
-      }
-    ],
-    "reward": "40 Credits",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Pleurodeles_waltl_BUD.jpg/1280px-Pleurodeles_waltl_BUD.jpg",
     "scope": "Standard",
+    "budget": 30,
     "source": "https://harrypotter.fandom.com/wiki/Nastily_Exhausting_Wizarding_Test",
-    "title": "Nastily Exhausting Wizarding Test",
-    "uid": "hem1u"
+    "reward": "40 Credits",
+    "rewardType": "Credits"
   },
   {
+    "objectives": [
+      {
+        "reward": "8 Credits or the \"Soul Talent\" or \"Talent Sharing\" for \"Soul Talent\".",
+        "type": "Other",
+        "value": "Make sure Harry Potter continues to be protected with the Blood Bond spell."
+      },
+      {
+        "type": "Other",
+        "reward": "8 Credits or the \"Communication Talent\" or \"Talent Sharing\" for \"Communication Talent\".",
+        "value": "Make sure that Harry Potter is treated better by Petunia."
+      }
+    ],
+    "loca": "Harry Potter",
+    "scope": "Standard",
+    "rewardType": "Credits",
+    "reward": "50 Credits",
+    "desc": "In his first attempt to circumvent the prophecy, Voldemort, when Harry was one year and three months old, murdered Harry's parents who were trying to protect him. Lily's loving sacrifice led to the unsuccessful attempt to kill Harry and Voldemort's first downfall. This downfall marked the end of the First Wizarding War. According to the prophecy, this attempt to kill Harry also made him, rather than Neville, Voldemort's archenemy.\n\nAnother consequence of Lily's sacrifice was that her orphaned son had to be raised by her only remaining blood relative, his Muggle aunt Petunia Dursley. However, due to Petunia's dislike of her sister and her sister's magical gifts, Harry grew up abused and neglected. In her care, however, he was protected from Lord Voldemort by the blood spell Albus Dumbledore placed on him until he came of age or no longer lived in his aunt's house.\n\nMake sure he lives in a better environment, either by living in a better place for him or by making sure Petunia treats him better.",
     "author": "Darnoc",
+    "budget": 50,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990979769011142697/3093934-dursleys-2.jpg",
     "conditions": [
       {
         "value": "Harry Potter lives in a better environment."
       }
     ],
-    "desc": "In his first attempt to circumvent the prophecy, Voldemort, when Harry was one year and three months old, murdered Harry's parents who were trying to protect him. Lily's loving sacrifice led to the unsuccessful attempt to kill Harry and Voldemort's first downfall. This downfall marked the end of the First Wizarding War. According to the prophecy, this attempt to kill Harry also made him, rather than Neville, Voldemort's archenemy.\n\nAnother consequence of Lily's sacrifice was that her orphaned son had to be raised by her only remaining blood relative, his Muggle aunt Petunia Dursley. However, due to Petunia's dislike of her sister and her sister's magical gifts, Harry grew up abused and neglected. In her care, however, he was protected from Lord Voldemort by the blood spell Albus Dumbledore placed on him until he came of age or no longer lived in his aunt's house.\n\nMake sure he lives in a better environment, either by living in a better place for him or by making sure Petunia treats him better.",
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990979769011142697/3093934-dursleys-2.jpg",
-    "loca": "Harry Potter",
-    "objectives": [
-      {
-        "reward": "8 Credits or the \"Soul Talent\" or \"Talent Sharing\" for \"Soul Talent\".",
-        "value": "Make sure Harry Potter continues to be protected with the Blood Bond spell."
-      },
-      {
-        "reward": "8 Credits or the \"Communication Talent\" or \"Talent Sharing\" for \"Communication Talent\".",
-        "value": "Make sure that Harry Potter is treated better by Petunia."
-      }
-    ],
-    "reward": "50 Credits",
-    "scope": "Standard",
-    "source": "https://harrypotter.fandom.com/wiki/Harry_Potter",
     "title": "Harry Potter's Home Life.",
+    "source": "https://harrypotter.fandom.com/wiki/Harry_Potter",
     "uid": "vo7t8"
   },
   {
-    "author": "Darnoc",
-    "conditions": [],
-    "desc": "Hogwarts School of Witchcraft and Wizardry, often abbreviated as Hogwarts, is a British wizarding school in the Scottish Highlands.\nChildren with magical abilities are enrolled from birth, and admission was confirmed by owl post at the age of eleven. However, if the child was a Muggle child or a half-blood like Harry Potter, who knew nothing of the wizarding world, a member of the school staff would visit the child and his family to inform them of their magical heritage and the existence of the wizarding world. Become a Hogwarts student yourself and learn about magic.",
+    "budget": 30,
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/990980553794785320/d6wp8kt-9fe02009-6ca9-4898-8495-f8a371c75f1b.jpg",
     "loca": "Harry Potter - Hogwarts",
+    "source": "https://harrypotter.fandom.com/wiki/Hogwarts_School_of_Witchcraft_and_Wizardry",
+    "uid": "pHKMO",
+    "desc": "Hogwarts School of Witchcraft and Wizardry, often abbreviated as Hogwarts, is a British wizarding school in the Scottish Highlands.\nChildren with magical abilities are enrolled from birth, and admission was confirmed by owl post at the age of eleven. However, if the child was a Muggle child or a half-blood like Harry Potter, who knew nothing of the wizarding world, a member of the school staff would visit the child and his family to inform them of their magical heritage and the existence of the wizarding world. Become a Hogwarts student yourself and learn about magic.",
+    "author": "Darnoc",
     "objectives": [
       {
+        "value": "Get assigned to Gryffindor by the Sorting Hat and join the House of Lions.",
         "reward": "7 credits or the \"Performance Talent\".",
-        "value": "Get assigned to Gryffindor by the Sorting Hat and join the House of Lions."
+        "type": "Other"
       },
       {
-        "reward": "7 credits or the \"Communication Talent\".",
-        "value": "Get assigned to Hufflepuff by the Sorting Hat and join the House of Badgers."
+        "value": "Get assigned to Hufflepuff by the Sorting Hat and join the House of Badgers.",
+        "type": "Other",
+        "reward": "7 credits or the \"Communication Talent\"."
       },
       {
-        "reward": "7 credits or the \"Aesthetic Talent\".",
-        "value": "Become assigned to Ravenclaw by the Sorting Hat and join the House of Eagles."
+        "type": "Other",
+        "value": "Become assigned to Ravenclaw by the Sorting Hat and join the House of Eagles.",
+        "reward": "7 credits or the \"Aesthetic Talent\"."
       },
       {
-        "reward": "7 credits or the \"Covert Talent\".",
-        "value": "Get assigned to Slytherin by the Sorting Hat and join the House of Snakes."
+        "value": "Get assigned to Slytherin by the Sorting Hat and join the House of Snakes.",
+        "type": "Other",
+        "reward": "7 credits or the \"Covert Talent\"."
       }
     ],
     "reward": "7 Credits or 1 Creature Defense ( you will need it there:) )",
-    "scope": "Quick",
-    "source": "https://harrypotter.fandom.com/wiki/Hogwarts_School_of_Witchcraft_and_Wizardry",
     "title": "Schooltime",
-    "uid": "pHKMO"
+    "conditions": [],
+    "rewardType": "Other",
+    "scope": "Quick"
   },
   {
     "author": "HeraldofGaia",
@@ -5910,26 +6500,45 @@
     "uid": "6gDX7"
   },
   {
-    "author": "Gol. D. Roger",
     "conditions": [],
-    "desc": "Get a bounty of 50,000,000 Beris",
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/992864054328709150/63ba16e3d649bba2b5e33d3b6d181c0d.jpg",
     "loca": "One Piece",
+    "rewardType": "Credits",
+    "uid": "azXhF",
+    "title": "I am Pirate!",
     "objectives": [
       {
-        "reward": "75 Credits",
-        "value": "Get a bounty of 150,000,000 Beris"
+        "value": "Reach a bounty of 150,000,000 Belly or higher",
+        "type": "Credits",
+        "reward": "50 Credits"
       },
       {
-        "reward": "120 Credits",
-        "value": "Get a bounty of 550,000,000 Beris"
+        "reward": "75 Credits",
+        "value": "Reach a bounty of 550,000,000 Belly or higher",
+        "type": "Credits"
+      },
+      {
+        "value": "Reach a bounty of 1,000,000,000 Belly or higher",
+        "type": "Credits",
+        "reward": "125"
+      },
+      {
+        "type": "Credits",
+        "value": "Reach a bounty of 3,000,000,000 Belly or higher",
+        "reward": "150"
+      },
+      {
+        "value": "Reach a bounty of 5,000,000,000 Belly or higher",
+        "type": "Credits",
+        "reward": "225"
       }
     ],
-    "reward": "50 Credits",
     "scope": "Standard",
+    "author": "Gol. D. Roger",
+    "budget": 225,
+    "desc": "Any self-respecting pirate knows that to be recognized on the world stage, he needs to acquire a bounty. This is not just a simple number, but your mark on the world. The larger the bounty, the greater your power and influence.  Reach a bounty of 50,000,000 Belly, the bare minimum required to be at least worth something on the seas. ",
     "source": "",
-    "title": "I am a pirate!",
-    "uid": "azXhF"
+    "reward": "25 Credits"
   },
   {
     "author": "Tactition101",
@@ -6004,13 +6613,30 @@
     "uid": "9MHQl"
   },
   {
-    "author": "irugaa0",
-    "conditions": [
+    "title": "A Game of Catch featuring Zeltrecht",
+    "rewardType": "Credits",
+    "scope": "Standard",
+    "uid": "ECE26",
+    "objectives": [
       {
-        "value": "No Waifus/Husbando is allowed. "
+        "value": "Don’t be caught any single time",
+        "type": "Other",
+        "reward": "20 credits+any tier 5 companion of your choice."
       },
       {
-        "value": "Aura/Magic/ Psychic or any other powers are allowed. "
+        "value": "Don’t be the catcher when the game ends ",
+        "reward": "10 credits.",
+        "type": "Credits"
+      },
+      {
+        "reward": "10 credits.",
+        "type": "Credits",
+        "value": "Be caught less times than the others."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "No Waifus/Husbando are allowed. "
       },
       {
         "value": "Using equipment to catch is allowed. (Ex: sword, chains, ropes.) the catcher must be in contact with the item."
@@ -6028,56 +6654,57 @@
         "value": "Be the one caught more times: Lose half of your credits."
       },
       {
-        "value": "Be the First to be caught: Lose 10 credits."
+        "value": "Be the first to be caught: Lose 10 credits."
       },
       {
-        "value": "Kill directly other members: lose all your credits and be 100 credits in debt for each player."
+        "value": "Kill directly other members: Lose all your credits and be 100 credits in debt for each player."
       }
     ],
-    "desc": "the high-level contractor Zelretch organized a little game to prepare the new contractors and entertain himself. Play a “catch” game with 5 other contractors.",
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992865103231844362/ilya2rider.jpg",
-    "loca": "Generic",
-    "objectives": [
-      {
-        "reward": "20 credits+any tier 5 companion of your choice.",
-        "value": "Don’t be caught any single time"
-      },
-      {
-        "reward": "10 credits.",
-        "value": "Don’t be the catcher when the game ends "
-      },
-      {
-        "reward": "10 credits.",
-        "value": "Be caught less times than the others."
-      }
-    ],
+    "budget": 55,
     "reward": "20 credits.",
-    "scope": "Standard",
+    "author": "irugaa0",
+    "desc": "The high-level contractor Zelretch organized a little game to prepare the new contractors and entertain himself. Play a “catch” game with 5 other contractors.",
+    "loca": "Generic",
     "source": "",
-    "title": "Zelretch the troll wants entertainment. ",
-    "uid": "ECE26"
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992865103231844362/ilya2rider.jpg"
   },
   {
-    "author": "Darnoc",
+    "rewardType": "Credits",
+    "reward": "100 Credits",
     "conditions": [
       {
-        "value": "Besiege Eneru/Enel."
+        "value": "Enel must be defeated."
+      },
+      {
+        "value": "The Upper Yard must not be destroyed or become uninhabitable."
       }
     ],
-    "desc": "Defeat Eneru/Enel. Can be done with the help of Companions.",
+    "scope": "Standard",
+    "uid": "VOhIX",
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/990982745163448410/tadayuki-nomaru-5780998.jpg",
+    "author": "Darnoc",
+    "source": "https://onepiece.fandom.com/wiki/Enel",
     "loca": "One Piece - Sky Island",
+    "title": "Defeat Enel/Eneru",
+    "desc": "Enel/Eneru is the god of Skypiea. In Skypiea, the title \"god\" refers to the ruling body of the Sky Islands. God is generally considered to be a kind of ruling class. However, aside from the title itself, the position of God has no religious or divine undertones, as it is a normal physical being that is neither omnipotent nor perfect. Enel takes this title too seriously and has a god complex. He plans to travel to the Mod and settle there, since he considers it the home of God. Before leaving, however, he plans to destroy Skypiea with the help of his devil powers and his Ark Maxim, which amplifies them. \nThe task is to defeat him and prevent the Upper Yard from being destroyed or becoming uninhabitable. Your Companions can help you with this.\n\nThe task is to defeat Enel/Eneru and prevent the Upper Yard from being destroyed or becoming uninhabitable.",
     "objectives": [
       {
-        "reward": "10 Credits or Template Stacking 1 with the power \"Cloud-Cloud Fruit\" for you or one Companion. ",
-        "value": "Kill Enel or cause him to die."
+        "type": "Other",
+        "value": "Kill Enel/Eneru or cause him to die.",
+        "reward": "Template Stacking 1 with the power \"Cloud-Cloud Fruit\" for you or one Companion or 10 Credits. "
+      },
+      {
+        "reward": "20",
+        "value": "Prevent Angel Island from being destroyed,",
+        "type": "Credits"
+      },
+      {
+        "value": "Defeat Enel/Eneru while you and all Companions involved have the same or a lower tier than Enel.",
+        "reward": "50",
+        "type": "Credits"
       }
     ],
-    "reward": "100 Credits",
-    "scope": "Standard",
-    "source": "",
-    "title": "Defeat Eneru/Enel",
-    "uid": "VOhIX"
+    "budget": 200
   },
   {
     "author": "Darnoc",
@@ -6180,56 +6807,64 @@
     "uid": "Akh47"
   },
   {
-    "author": "Darnoc",
+    "loca": "A Song of Ice and Fire",
     "conditions": [
       {
         "value": "Ramsay Snow/Bolton is Death"
       }
     ],
-    "desc": "Kill Ramsay Snow/Bolton or make sure he dies. \nCan be done by a Companion.",
+    "rewardType": "Other",
+    "uid": "G0pAX",
+    "author": "Darnoc",
+    "source": "",
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/990983518156910652/303ef667fe28ed61c4bef9fbf0b51c88.jpg",
-    "loca": "A Song of Ice and Fire",
+    "desc": "You may remember him as the most hated character ever created by man. There is no redemption for dogs like him. There is no mercy. Only hate, death, and a lot of pain. Kill Ramsay Snow/Bolton and/or ensure he dies. Your Companions can help. They will probably enjoy it too. ",
+    "budget": 85,
+    "title": "Kill Ramsay Snow/Bolton",
     "objectives": [
       {
+        "type": "Credits",
         "reward": "5 Credits",
         "value": "Kill Ramsay Snow/Bolton or make sure he dies before Domeric Bolton dies."
       },
       {
-        "reward": "8 Credits or Body Defense for free",
-        "value": "Kill Ramsay Snow as a Substitute or Possess of Domeric Bolton."
+        "type": "Other",
+        "value": "Kill Ramsay Snow as a Substitute or Possess of Domeric Bolton.",
+        "reward": "8 Credits or Body Defense for free"
       }
     ],
     "reward": "12 Credits or the Template Stacking 1 \"Skinchanger\"",
-    "scope": "Quick",
-    "source": "",
-    "title": "Kill Ramsay Snow/Bolton",
-    "uid": "G0pAX"
+    "scope": "Quick"
   },
   {
+    "desc": "The Company was commissioned to relocate a small town soon to suffer a major disaster in 30 days. You will be responsible for creating new housing on land that you own or that is unclaimed by any nearby governments. To succeed you must create enough infrastructure for at least 1,000 people to become a self sufficient town. Once housing is finished you may request a portal to link the village to your new settlement for 7 days. Once the portal is closed the number of residents that have settled into your town will be counted to determine success. If the population is below 1,000 people you fail the mission and get no rewards except the reactions of the survivors.",
+    "loca": "Generic",
     "author": "13rett",
+    "objectives": [
+      {
+        "type": "Other",
+        "reward": "1 of [30 Credits, Copper Waifu Ticket] per 500 people transported over the 1000 person minimum to a limit of 3000 total population.",
+        "value": "Transport as many people from the village as possible."
+      },
+      {
+        "value": "Convince the Village to swear fealty/loyalty to yourself.",
+        "reward": "+1 of [3 Blue Waifu tickets, 13 credits]",
+        "type": "Other"
+      }
+    ],
+    "budget": 55,
+    "scope": "Standard",
+    "uid": "StIFa",
+    "source": "",
     "conditions": [
       {
         "value": "Countdown Clock: The longer the building process takes the fewer people will remain. In 30 days the disaster will peak leaving fewer than 1,000 survivors and failing the mission."
       }
     ],
-    "desc": "Company was commissioned to relocate a small town soon to suffer a major disaster in 30 days. You will be responsible for creating new housing on land that you own or that is unclaimed by any nearby governments. To succeed you must create enough infrastructure for at least 1,000 people to become a self sufficient town. Once housing is finished you may request a portal to link the village to your new settlement for 7 days. Once the portal is closed the number of residents that have settled into your town will be counted to determine success. If the population is below 1,000 people you fail the mission and get no rewards except the reactions of the survivors.",
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990983959997476874/eddie-mendoza-the-witch-s-quarter.jpg",
-    "loca": "Generic",
-    "objectives": [
-      {
-        "reward": "1 of [30 Credits, Copper Waifu Ticket] per 500 people transported over the 1000 person minimum to a limit of 3000 total population.",
-        "value": "Transport as many people from the village as possible."
-      },
-      {
-        "reward": "+1 of [3 Blue Waifu tickets, 13 credits]",
-        "value": "Convince the Village to swear fealty/loyalty to yourself."
-      }
-    ],
-    "reward": "+1 of [Life's a Beach and 2 levels of Sweet Home Expansion. If you already possess Life's a Beach then it instead becomes 3 purchases of Sweet Home Expansion, 100 Credits]",
-    "scope": "Standard",
-    "source": "",
     "title": "Town Relocation",
-    "uid": "StIFa"
+    "rewardType": "Other",
+    "reward": "+1 of [Life's a Beach and 2 levels of Sweet Home Expansion. If you already possess Life's a Beach then it instead becomes 3 purchases of Sweet Home Expansion, 100 Credits]",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990983959997476874/eddie-mendoza-the-witch-s-quarter.jpg"
   },
   {
     "author": "irugaa0",
@@ -6285,7 +6920,20 @@
     "uid": "YxpBK"
   },
   {
-    "author": "Darnoc",
+    "desc": "The Trade Federation has occupied Naboo.\nHelp liberate Naboo from the Trade Federation occupation and make sure Queen Amidala survives.",
+    "source": "https://starwars.fandom.com/wiki/Invasion_of_Naboo",
+    "objectives": [
+      {
+        "value": "Capture the Lucrehulk-class Droid Control Ship, disable the droid army, and successfully claim the ship for yourself. Can be done by a Companion.",
+        "type": "Other",
+        "reward": "The Lucrehulk-class Droid Control Ship becomes a \"Ride\" and you get the Ride Perk \"Catch-A-Ride Crew Training Program\"."
+      },
+      {
+        "type": "Other",
+        "value": "Defeat Darth Maul without killing Qui-Gon Jinn and Obi-Wan Kenobi. Can be done by a Companion.",
+        "reward": "A \"Stencil Stacking I\" made from a Jedi of your choice for you or a companion. Alternatively, 15 credits."
+      }
+    ],
     "conditions": [
       {
         "value": "The Trade Federation has occupied Naboo."
@@ -6297,24 +6945,15 @@
         "value": "Padme Amidala lives "
       }
     ],
-    "desc": "The Trade Federation has occupied Naboo.\nHelp liberate Naboo from the Trade Federation occupation and make sure Queen Amidala survives.",
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/990984342765465610/TF_Battleship.webp",
-    "loca": "Star Wars",
-    "objectives": [
-      {
-        "reward": "The Lucrehulk-class Droid Control Ship becomes a \"Ride\" and you get the Ride Perk \"Catch-A-Ride Crew Training Program\".",
-        "value": "Capture the Lucrehulk-class Droid Control Ship, disable the droid army, and successfully claim the ship for yourself. Can be done by a Companion."
-      },
-      {
-        "reward": "An \"OC Donut Steel\" made by a Jedi of your choice for you or a Companion. Alternatively 15 credits.",
-        "value": "Defeat Darth Maul without killing Qui-Gon Jinn and Obi-Wan Kenobi. Can be done by a Companion."
-      }
-    ],
-    "reward": "50 Credits",
-    "scope": "Standard",
-    "source": "https://starwars.fandom.com/wiki/Invasion_of_Naboo",
     "title": "Help liberate Naboo",
-    "uid": "x1oww"
+    "uid": "x1oww",
+    "reward": "50 Credits",
+    "loca": "Star Wars",
+    "rewardType": "Credits",
+    "author": "Darnoc",
+    "scope": "Standard",
+    "budget": 180
   },
   {
     "author": "irugaa0",
@@ -6347,7 +6986,13 @@
     "uid": "NQ6tW"
   },
   {
-    "author": "Templar9999",
+    "scope": "Standard",
+    "source": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990984839199076482/lake-of-fire-hell-740x385.jpg",
+    "title": "Hell Bound",
+    "objectives": [],
+    "budget": 225,
+    "rewardType": "Perks",
     "conditions": [
       {
         "value": "No companions available to purchase"
@@ -6356,18 +7001,14 @@
         "value": "No dimensional travel"
       },
       {
-        "value": "No sweet home"
+        "value": "No Sweet Home"
       }
     ],
-    "desc": "You are trapped in Hell.\nYou must escape.\n\nHell is defined as any appropriate hell dimension in the given setting. This includes Tartarus, Nifelheim, etc.",
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990984839199076482/lake-of-fire-hell-740x385.jpg",
-    "loca": "Generic",
-    "objectives": [],
     "reward": "Exit Stage Left, and all canon upgrades for free. Sweet Home and all upgrades to Lifes a Beach for free",
-    "scope": "Standard",
-    "source": "",
-    "title": "Hell Bound",
-    "uid": "TuOgx"
+    "uid": "TuOgx",
+    "desc": "You are trapped in Hell. You must escape. Hell is defined as any appropriate hell dimension in the given setting. This includes Tartarus, Nifelheim, etc.",
+    "loca": "Generic",
+    "author": "Templar9999"
   },
   {
     "author": "Unknown",
@@ -6421,38 +7062,44 @@
     "uid": "hVuTG"
   },
   {
-    "author": "Templar9999",
+    "uid": "EkvXB",
     "conditions": [
       {
         "value": "10% spread"
       }
     ],
-    "desc": "Spread awareness or ability in magic or the supernatural through a setting.",
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992867886299361290/W4stfM6WnnnoBMQdZuZxdD.jpg",
+    "reward": "Blessed Talent for Free",
+    "source": "",
+    "rewardType": "Perks",
+    "budget": 55,
+    "author": "Templar9999",
     "loca": "Generic",
+    "desc": "Imagine living in a world without any supernatural abilities or powers, where life is boring and filled with little to no excitement. Such a travesty cannot be allowed to stand. Someone in the company wishes you to educate the savages on the true wonders of the multiverse. Your goal is therefore to spread awareness or ability in magic and/or the supernatural throughout a setting.",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992867886299361290/W4stfM6WnnnoBMQdZuZxdD.jpg",
+    "title": "Magical Awakening",
     "objectives": [
       {
-        "reward": "30% of the world's starting budget",
-        "value": "25% spread"
+        "value": "25% spread",
+        "type": "Other",
+        "reward": "30% of the world's starting budget"
       },
       {
+        "value": "50% spread",
         "reward": "30% of the world's starting budget",
-        "value": "50% spread"
+        "type": "Other"
       },
       {
-        "reward": "40% of the world's starting budget",
-        "value": "75% spread"
+        "value": "75% spread",
+        "type": "Other",
+        "reward": "40% of the world's starting budget"
       },
       {
         "reward": "100% of the world's starting budget",
-        "value": "100% spread"
+        "value": "100% spread",
+        "type": "Other"
       }
     ],
-    "reward": "Blessed Talent for Free",
-    "scope": "Standard",
-    "source": "",
-    "title": "Magical Awakening",
-    "uid": "EkvXB"
+    "scope": "Grand"
   },
   {
     "desc": "Horrors and nightmares must be forgotten. What died must remain dead. Voldemort and his cronies no longer have a place in this world. Prevent the return of dark times by eliminating them.",
@@ -6596,26 +7243,28 @@
   },
   {
     "author": "KatzSmile",
+    "rewardType": "Other",
+    "uid": "qi4SS",
+    "source": "",
+    "desc": "Compromised of the main group of characters, each a beauty in their own right, Team RWBY is one of the most prominent new hunter teams formed in beacon academy. Filled with powerful and talented individuals cough *waifu* cough this is an opportunity you cannot allow to slip away. Successfully seduce all the girls in Team RWBY without using any lures or capture methods. ",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990987326639444118/73ae6b18d088b748e348712cfb367bfb.jpg",
+    "reward": "Quadruple of their capture cost.",
+    "title": "A Love Full of Color",
+    "scope": "Standard",
+    "budget": 365,
+    "loca": "RWBY",
     "conditions": [
       {
-        "value": "Do not use any lures or capture methods on anyone in RWBY team before succesful seducing."
+        "value": "Do not use any lures or capture methods on anyone in team RWBY before a successful seduction."
       },
       {
-        "value": "Do not blackmail or use mind altering powers on anyone in RWBY team before successful seducing."
+        "value": "Do not blackmail or use mind altering powers on anyone in team RWBY before a successful seduction."
       },
       {
         "value": "Convince them all to join you as companions on their own free will."
       }
     ],
-    "desc": "Seduce all girls in RWBY team without using any lures or capture methods.",
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990987326639444118/73ae6b18d088b748e348712cfb367bfb.jpg",
-    "loca": "RWBY",
-    "objectives": [],
-    "reward": "Quadruple of their capture cost.",
-    "scope": "Standard",
-    "source": "",
-    "title": "Love full of Color",
-    "uid": "qi4SS"
+    "objectives": []
   },
   {
     "desc": "The defense against the dark arts post at Hogwarts is one of the most prestigious jobs in the wizarding world. Unfortunately, due to a curse placed upon it by Voldemort, each teacher does not last longer than one year in the position. This results in Hogwarts students often receiving an unacceptable subpar education in this subject. This needs to change. Substitute as one of the defense teachers and successfully teach at least until Voldemort is dead. It is high time those students receive the proper education they deserve.",
@@ -6646,13 +7295,17 @@
     "uid": "ThfSW"
   },
   {
+    "reward": "75 credits",
+    "uid": "O9aKl",
     "author": "Nisantis",
+    "loca": "SCP",
+    "budget": 2000,
     "conditions": [
       {
         "value": "Maintain ownership of SCP-050 for 1 week"
       },
       {
-        "value": "050\\'s owner must remain on Earth for the duration"
+        "value": "050's owner must remain on Earth for the duration"
       },
       {
         "value": "Do not kill or capture Dr. Bright"
@@ -6660,13 +7313,11 @@
     ],
     "desc": "SCP-050 is a small trophy which awards itself to whoever it deems \"The Cleverest\". If the current owner is deceived, pranked, or otherwise outwitted by any means, it will teleport itself into the possession of the person responsible. You (or a member of your retinue) must earn SCP-050 and keep it for seven consecutive days. Attempting to leave the planet with it will be considered a forfeit. The current owner is Dr. Bright.",
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/992869488930328596/jennifer-swann-scp-050-small.jpg",
-    "loca": "SCP",
     "objectives": [],
-    "reward": "75 credits",
-    "scope": "Quick",
     "source": "",
+    "rewardType": "Credits",
     "title": "Great Researcher Prank War of [REDACTED]",
-    "uid": "O9aKl"
+    "scope": "Quick"
   },
   {
     "loca": "Generic",

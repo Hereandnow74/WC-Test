@@ -10,6 +10,7 @@
           :key="tag"
           class="px-1 rounded whitespace-nowrap flex items-center gap-1 text-white"
           :class="waifuTags[tag] ? waifuTags[tag].color : 'text-white bg-gray-600'"
+          :style="waifuTags[tag] ? waifuTags[tag].style : ''"
         >
           {{ waifuTags[tag] ? waifuTags[tag].tag : tag }}
           <button class="border-none outline-none bg-none text-sm flex text-white hover:text-red-400" @click="removeTag(index)">

@@ -311,6 +311,7 @@ export const bindings: PerkFull[] = [
     category: 'Binding',
     type: 'Symbiote',
     image: 'https://i.imgur.com/Hz8Ngbs.png',
+    complex: 'target',
     freebies: {
       talentPerks: ['Everlasting Talent', 'Body Talent', 'Martial Talent', 'Wild Talent'],
       defensePerks: ['Body Defense', 'Wild Defense', 'Environmental Defense'],
@@ -1069,7 +1070,7 @@ export const otherControls: PerkFull[] = [
     cost: 30,
     whitelist: ['Highway Star'],
     desc: `The retinue member responsible for a victim of Space Truckin' may opt to interact with them during a grace period prior to the victim being sent to their destination world. The victim will be highly accepting of any explanations given to them during this period and unable to harm the retinue member meeting them.
-  <p>During the grace period, you may purchase perks (including Talent Sharing, Template Stacking, and/or OC Donut Steel) to apply to the victim, as though they were being purchased from the Catalog. The benefits of these perks will apply only after the victim arrives in their destination world. In the case that the isekai is unsuccessful, all such perks are automatically returned to the Company for a full refund.</p>
+  <p>During the grace period, you may purchase perks (including Talent Sharing and/or Template Stacking) to apply to the victim, as though they were being purchased from the Catalog. The benefits of these perks will apply only after the victim arrives in their destination world. In the case that the isekai is unsuccessful, all such perks are automatically returned to the Company for a full refund.</p>
   `,
   },
   {

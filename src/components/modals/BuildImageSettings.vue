@@ -10,6 +10,10 @@
         <Toggle v-model="imageSettings.showCompanionsImage" />
       </div>
       <div class="flex gap-2 justify-between border-b border-gray-700 dark:border-gray-400">
+        <div>Display only companions</div>
+        <Toggle v-model="imageSettings.onlyImages" />
+      </div>
+      <div class="flex gap-2 justify-between border-b border-gray-700 dark:border-gray-400">
         <div>Output image width</div>
         <Input v-model.number="imageSettings.width" class="w-14" />
       </div>

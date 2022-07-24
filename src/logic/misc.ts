@@ -205,7 +205,7 @@ function buildString(title: string, items: Perk[], left: object) {
     if (x.complex) {
       if (x.complex[0].flavor && x.complex[0].target) {
         let pw = ''
-        if (['OC Donut Steel', 'Power Swap'].includes(x.title)) pw = ' powers'
+        if (['Power Swap'].includes(x.title)) pw = ' powers'
         const grouped = groupBy(x.complex, c => c.target)
         complexBoth = squreType(`${Object.entries(grouped)
           .map(x => `${x[0]} ${x[0] === 'You' ? 'have' : 'has'} ${x[1]

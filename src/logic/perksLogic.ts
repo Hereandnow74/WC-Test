@@ -208,6 +208,7 @@ export function chooseBinding(bin: Binding, saveData: Perk) {
     }
     allEffects.value.push(bin.title)
     if (bin.complex) saveData.freebies = freebies
+    if (bin.type) saveData.type = bin.type
     if (saveData.freebies) addFreebies(saveData.freebies)
     binding.value.push({ anything, ...saveData })
     flags.value.noBindings = false
@@ -518,6 +519,7 @@ export function clearAll() {
   binding.value = [
     {
       title: 'Company Stamp',
+      type: 'Stamp',
       cost: 0,
     },
   ]

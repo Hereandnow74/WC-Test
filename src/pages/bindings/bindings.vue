@@ -10,11 +10,11 @@
         <div
           v-if="bindingByType[type].length"
           class="px-2 py-1 border-2 rounded cursor-pointer hover:border-orange-400"
-          :class="activeType === type ? 'border-orange-400': ''"
+          :class="[activeType === type ? 'border-orange-400': '', bindingCounts[type] ? 'border-green-600': '']"
           @click="activeType = type"
         >
           <h3>{{ type }}</h3>
-          <div>Total perks: <span>{{ bindingByType[type].length }}</span></div>
+          <div>Total perks: <span v-if="bindingCounts[type]">{{ bindingCounts[type] }} /</span> <span>{{ bindingByType[type].length }}</span></div>
         </div>
       </template>
     </div>
@@ -103,6 +103,7 @@
 <script lang='ts' setup>
 import { onBeforeRouteUpdate } from 'vue-router'
 import { PerkFull } from 'global'
+import { countBy } from 'lodash-es'
 import {
   desc, symbioteRules, shroudElements, tantricDesc,
 } from '~/data/binding'
@@ -152,6 +153,8 @@ const bindingByType = computed(() => {
   return res
 })
 
+const bindingCounts = computed(() => countBy(binding.value, x => x.type))
+
 const activeType = ref<keyof typeof bindingByType.value>('Stamp')
 
 onMounted(() => useTooltips())
@@ -159,11 +162,11 @@ watch(activeType, useTooltips, { flush: 'post' })
 
 const params = useUrlSearchParams('history')
 
-if (params.q) activeType.value = `${params.q}`
+if (params.q) activeType.value = `${params.q}` as keyof typeof bindingByType.value
 
 onBeforeRouteUpdate((to, from, next) => {
   if (to.query.q)
-    activeType.value = `${to.query.q}`
+    activeType.value = `${to.query.q}`as keyof typeof bindingByType.value
 
   setTimeout(next, 1)
 })

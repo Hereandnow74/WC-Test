@@ -72,7 +72,7 @@
         </div>
       </div>
     </div>
-    <template v-if="settings.allChosenAuthors[0] !=='all'">
+    <template v-if="settings.allChosenAuthors[0] !=='all' && !settings.allChosenAuthors.includes('Mortaegus’s Mod')">
       <h2 class="text-2xl text-center">
         Patrons
       </h2>

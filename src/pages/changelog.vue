@@ -5,11 +5,21 @@
     </h2>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
+        23 July 2022
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>~320 new user submitted characters, new missions</li>
+        <li>User added tags now can be seen in Tags window</li>
+        <li>Bugfixes & Small changes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
         16 July 2022
       </h3>
       <ul class="list-decimal list-inside">
         <li>~160 new user submitted characters, new missions, 8 new worlds</li>
-        <li>Location now seachable in missions, Company Stamp now is default for new builds.</li>
+        <li>Location now searchable in missions, Company Stamp now is default for new builds.</li>
         <li>Bugfixes</li>
       </ul>
     </div>

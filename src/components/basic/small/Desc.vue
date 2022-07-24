@@ -5,7 +5,8 @@
 </template>
 
 <script lang='ts' setup>
-import { TOOLTIPS, TOOLTIPS_REG, LINKS, LINKS_REG, QUERIES } from '~/data/constants'
+import { compact } from 'lodash-es'
+import { TOOLTIPS, LINKS, LINKS_REG, QUERIES } from '~/data/constants'
 import { useStore } from '~/store/store'
 
 const props = defineProps({
@@ -18,15 +19,16 @@ const props = defineProps({
 const { settings } = useStore()
 
 const formattedDesc = computed(() => {
-  let desc = props.desc.replace(TOOLTIPS_REG,
-    word => `<span data-tippy-content="${TOOLTIPS[word as keyof typeof TOOLTIPS]}"
-        class="text-green-600 dark:text-green-300">${word}</span>`,
+  const desc = props.desc.replace(LINKS_REG,
+    (full, ...all) => {
+      all = compact(all)
+      if (LINKS.value[all[0]] !== undefined) { return `<router-link @click.stop class="dark:text-blue-300 text-blue-600 hover:underline" :to="{ path: '/${LINKS.value[all[0]]}', hash: '#${all[0]}'${QUERIES.value[all[0]] ? `, query: {q: '${QUERIES.value[all[0]]}'}` : ''}}">${full}</router-link>` }
+      else {
+        return `<span data-tippy-content="${TOOLTIPS[all[0] as keyof typeof TOOLTIPS]}"
+        class="text-green-600 dark:text-green-300">${full}</span>`
+      }
+    },
   )
-
-  desc = desc.replace(LINKS_REG,
-    match => `<router-link @click.stop class="dark:text-blue-300 text-blue-600 hover:underline" :to="{ path: '/${LINKS.value[match]}', hash: '#${match}'${QUERIES.value[match] ? `,query: {q: '${QUERIES.value[match]}'}` : ''}}">${match}</router-link>`,
-  )
-
   return desc
 })
 

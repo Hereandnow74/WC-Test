@@ -204,7 +204,7 @@ talents.push({
 
 talents.push({
   uid: 'Lg121',
-  title: 'Template Stacking 0: Added Potential',
+  title: 'Added Potential',
   category: 'Talent',
   image: 'https://i.ibb.co/3cXr8dW/Template-Stacking0-Added-Potential.jpg',
   cost: 5,
@@ -212,10 +212,10 @@ talents.push({
   anything: 'Power Name',
   special: 'Must be repurchased for each use.',
   desc: `
-<p>The rules of other worlds often bar just anyone from learning or developing special powers. Travelers often find themselves unable to learn any local abilities, even with the help of Science or Soul Talent, simply because they weren’t born in that world. This perk bypasses this limitation, allowing the person it’s bought for, whether yourself or a retinue member, to develop a single local ability, just like anyone else who would normally do so. “A single ability” can be quite broad, ranging from an X-mutation or Quirk unique to the individual, to Remnant-style Aura or Nasuverse Magecraft. These are all generic abilities, in the context of their home worlds; Tier X abilities are not eligible.</p>
-<p>Unlike Template Stacking, this perk does not grant practical power immediately: all purchases start from level zero, as it were, and must be trained before they’ll become usable. Self-study can help in some circumstances, but is no substitute for a proper trainer, whether purchased or a local.</p>
-<p>Abilities that are generic in their source but are expressed uniquely, such as Sacred Gears, Semblances, Academy City Esper powers, Quirks, or the results of the X-gene, will be unique to you as well. This perk and other Meta-Talents together may generate no more than one of each such power per individual.</p>
-<p>If you purchase the same template for any ten of your retinue members including yourself, including through Template Stacking 1 or OC Donut Steel, the rest of your retinue will gain this perk for that specific template for free.</p>
+<p>The rules of other worlds often bar just anyone from learning or developing special powers. Travelers often find themselves unable to learn any local abilities, even with the help of Science or Soul Talent, simply because they weren’t born in that world. This perk bypasses that limitation for any single ability local to any world you’ve visited, or that any of your Companions or Familiars have, allowing the person it’s bought for, whether yourself or a subject, to develop it just like anyone else who would normally do so. “A single ability” can be quite broad, ranging from an X-mutation or Quirk unique to the individual, to Nasuverse Magecraft or Remnant-style Aura. These are all generic abilities, in the context of their home worlds. Tier Χ abilities are not eligible.</p>
+<p>Unlike Template Stacking I, this perk does not grant practical power immediately: all purchases start from level zero, as it were, and must be trained before they’ll become usable. Self-study can help in some circumstances, but is no substitute for a proper trainer, whether purchased or a local. Neither this perk, nor any perks that follow from it, will grant episodic memories or emotional connections of a life in the applied template’s source world.</p>
+<p>Abilities that are generic in their source but are expressed uniquely, such as Sacred Gears, Semblances, Academy City Esper powers, Quirks, or the results of the X-gene, will be unique to you as well. You may not use company means to acquire more than one of each type of ability at a time.</p>
+<p>If you purchase the same Potential for any ten individuals in your retinue, including through Power Swap or Template Stacking 1, the rest of your retinue will gain this perk for that specific template for free.</p>
 `,
 })
 
@@ -277,10 +277,9 @@ talents.push({
   complex: 'target',
   whitelist: [
     'Extra',
-    'OC Donut Steel',
     'Template Stacking I'],
   needed: 1,
-  desc: 'You or your chosen retinue member’s template is upgraded to a version of the template rated at Tier 5. This is a flat increase to power and skill. As with Template Stacking I, the ability can then be trained higher with the appropriate Basic Talent, regardless of whether the original version is rated at Tier 4, 5, or 10. This perk also grants requisite gear for the chosen template. Advanced functionality beyond Tier 5 capabilities will be locked, at first, and become available with training.',
+  desc: 'You or your subject’s template is upgraded to a version of the template rated at Tier 5. This is a flat increase to power, skill, and gear functionality. As with Template Stacking I, the ability can then be trained higher with the appropriate Basic Talent, regardless of whether the original version is rated at Tier 4, 5, or 10.',
 })
 
 talents.push({
@@ -292,7 +291,7 @@ talents.push({
   complex: 'target',
   whitelist: ['Science Talent', 'Soul Talent'],
   desc: `
-<p>The entire spectrum of scientific magic styles is now available to you without further restriction. You must still encounter such styles before you can use them, whether in the field, buying them with OC Donut Steel or Template Stacking, or through the purchase of a retinue member who has one. Additionally, such styles are more effective when you use them and easier to control and develop.</p>
+<p>The entire spectrum of scientific magic styles is now available to you without further restriction. You must still encounter such styles before you can use them, whether in the field, buying them with Template Stacking, or through the purchase of a retinue member who has one. Additionally, such styles are more effective when you use them and easier to control and develop.</p>
 <p>This perk consolidates all purchases of Added Potential that fall under its theme into a single item. Take a refund on all such purchases for the person this is applied to.</p>`,
 })
 
@@ -306,7 +305,7 @@ talents.push({
   whitelist: ['Psychic Talent', 'Body Talent', 'Martial Talent', 'Soul Talent'],
   needed: 2,
   desc: `
-<p>The entire spectrum of ki arts and personal mystical powers are now available to you without further restriction. You must still encounter any such arts and styles before you can use them, whether in the field, buying them with OC Donut Steel or Template Stacking, or through the purchase of a retinue member who has one. Additionally, such arts and styles are more effective and easier to control. This also applies to the inner powers gained from certain Heritages.</p>
+<p>The entire spectrum of ki arts and personal mystical powers are now available to you without further restriction. You must still encounter any such arts and styles before you can use them, whether in the field, buying them with Template Stacking, or through the purchase of a retinue member who has one. Additionally, such arts and styles are more effective and easier to control. This also applies to the inner powers gained from certain Heritages.</p>
 <p>This perk consolidates all purchases of Added Potential that fall under its theme into a single item. Take a refund on all such purchases for the person this is applied to.</p>`,
 })
 
@@ -319,7 +318,7 @@ talents.push({
   complex: 'target',
   whitelist: ['Wild Talent', 'Soul Talent'],
   desc: `
-<p>The entire spectrum of magical styles that draw mystical power from one’s surroundings are now available to you without further restriction. This includes, but is not limited to, Warhammer’s Winds, a Planeswalker’s Lands, Geomancy, or anything powered by leylines or background magical fields. You must still encounter any such styles before you can use them, whether in the field, buying them with OC Donut Steel or Template Stacking, or through the purchase of a retinue member who has one. Additionally, such arts and styles are more effective and easier to control.</p>
+<p>The entire spectrum of magical styles that draw mystical power from one’s surroundings are now available to you without further restriction. This includes, but is not limited to, Warhammer’s Winds, a Planeswalker’s Lands, Geomancy, or anything powered by leylines or background magical fields. You must still encounter any such styles before you can use them, whether in the field, buying them with Template Stacking, or through the purchase of a retinue member who has one. Additionally, such arts and styles are more effective and easier to control.</p>
 <p>This perk consolidates all purchases of Added Potential that fall under its theme into a single item. Take a refund on all such purchases for the person this is applied to.</p>`,
 })
 

@@ -59,6 +59,7 @@ const pvpPerks = storeType<Perk[]>('pvpPerks', [])
 const binding = storeType<Perk[]>('binding', [
   {
     title: 'Company Stamp',
+    type: 'Stamp',
     cost: 0,
   },
 ])

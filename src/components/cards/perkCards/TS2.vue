@@ -49,7 +49,7 @@ const emit = defineEmits(['pickPerk'])
 const { talentPerks } = useStore()
 
 const targetList = computed(() => talentPerks.value
-  .filter(x => ['OC Donut Steel', 'Template Stacking I'].includes(x.title))
+  .filter(x => x.title === 'Template Stacking I')
   .reduce((a, x) => (x.complex ? a.push(...x.complex.map(x => ({ flavor: `${x.target} [${x.flavor}]` }))) : null, a), []))
 
 const complex = reactive({

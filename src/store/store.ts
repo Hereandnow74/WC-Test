@@ -313,7 +313,7 @@ const yourTier = computed(() => {
       if (cost >= heritageTiers[i][0]) return heritageTiers[i][1]
     return 0
   }
-  const talentsTier4 = findIndex(talentPerks.value, x => ['Template Stacking I', 'Racial Template', 'OC Donut Steel'].includes(x.title)) !== -1 ? 4 : 0
+  const talentsTier4 = findIndex(talentPerks.value, x => ['Template Stacking I'].includes(x.title)) !== -1 ? 4 : 0
   const talentsTier5 = findIndex(talentPerks.value, x => ['Template Stacking II'].includes(x.title)) !== -1 ? 5 : 0
   let shroudTier = findIndex(binding.value, { title: 'Shroud of Power' }) !== -1 ? 4 : 0
   shroudTier = Math.max(findIndex(binding.value, { title: 'Alterzelu Symbiote' }) !== -1 ? 4 : 0, shroudTier)

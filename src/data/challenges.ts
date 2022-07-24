@@ -25,7 +25,7 @@ export const challenges = [
     title: 'Two Dime',
     image: 'https://cdn.discordapp.com/attachments/925963686433132644/993238534418858094/D4olW79XkAEhgj-.jpg',
     dlc: 'Om1cr0n',
-    special: 'Minimum World DR is 4',
+    special: 'DR4 or higher',
     cost: 0,
     desc: `
     <p>Company's newly hired Highly Effective Manager come up with the idea of how to increase the profits, she decided that people that where rejected by Company before should be given a chance to succeed with a modified contract. </p>
