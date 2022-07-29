@@ -36,7 +36,7 @@ const props = defineProps({
     default: false,
   },
   link: {
-    type: String,
+    type: [Object, String],
     default: '',
   },
 })

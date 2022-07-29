@@ -5,6 +5,17 @@
     </h2>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
+        27 July 2022
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>~190 new user submitted characters, new missions, 11 new worlds</li>
+        <li>Specific Waifu Perks are now treated as companions</li>
+        <li>You can now buy companions directly from Specific Waifu Perks page</li>
+        <li>Bugfixes & Small changes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
         23 July 2022
       </h3>
       <ul class="list-decimal list-inside">

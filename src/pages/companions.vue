@@ -129,7 +129,7 @@
           <div
             :class="{'bg-red-600': local === -1, 'bg-green-600': local === 1}"
             class="border-l px-2 hover:bg-gray-700 text-gray-200"
-            title="Favorites"
+            title="Local"
             @click="local = threeToggle(local)"
           >
             loc

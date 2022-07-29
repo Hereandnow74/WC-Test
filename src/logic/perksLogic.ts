@@ -424,36 +424,26 @@ export function chooseGenericPerk(perk: PerkFull, saveData: Perk) {
 
 // Specific Waifu Perks
 export function specificAvailable(perk: WaifuPerk): boolean {
-  if (isArray(perk.waifuUID)) {
-    if (intersectionWith(companions.value, perk.waifuUID, (a, b) => a.uid === b).length
+  if (intersectionWith(companions.value, perk.waifuUID, (a, b) => a.uid === b).length
         || perk.waifuUID.includes(startingOrigin.value.uid))
-      return true
-  }
-  else {
-    if (findIndex(companions.value, { uid: perk.waifuUID }) !== -1 || startingOrigin.value.uid === perk.waifuUID)
-      return true
-  }
+    return true
   if (startingOrigin.value.character) {
     const name = startingOrigin.value.character.split(' ')[0]
-    if (isArray(perk.waifu))
-      return perk.waifu.join('').includes(name)
-    else return perk.waifu.includes(name)
+    return perk.waifu.join('').includes(name)
   }
 
   return false
 }
 
 export function chooseWaifuPerk(fullPerk: WaifuPerk, perk: Perk) {
-  if (specificAvailable(fullPerk)) {
-    const ind = findIndex(waifuPerks.value, { title: perk.title })
-    if (ind !== -1) {
-      const toDel = waifuPerks.value.splice(ind, 1)
-      if (!flags.value.chargen && toDel[0].cost < 11111)
-        fee.value += Math.round(toDel[0].cost * 0.2) || 0
-    }
-    else {
-      waifuPerks.value.push(perk)
-    }
+  const ind = findIndex(waifuPerks.value, { uid: perk.uid })
+  if (ind !== -1) {
+    const toDel = waifuPerks.value.splice(ind, 1)
+    if (!flags.value.chargen && toDel[0].cost < 11111)
+      fee.value += Math.round(toDel[0].cost * 0.2) || 0
+  }
+  else if (specificAvailable(fullPerk)) {
+    waifuPerks.value.push(perk)
   }
 }
 

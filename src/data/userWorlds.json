@@ -1054,7 +1054,7 @@
   {
     "worldName": "Supernatural",
     "rating": 5,
-    "image": "https://c.tenor.com/p8OiLUApwWUAAAAC/supernatural-intro.gif"
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/998215944600027146/supernatural-season-15.webp"
   },
   {
     "worldName": "Innocent Witches",
@@ -1148,7 +1148,7 @@
     "additional": "It is recommended that you purchase a madness nullifying or sanity protecting power/defense."
   },
   {
-    "worldName": "Hazbin Hotel/ Helluva Boss",
+    "worldName": "Hazbin Hotel",
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/992756480048635925/wallpapersden.com_alastor-hd-hazbin-hotel_1920x1080.jpg",
     "rating": 9,
     "additional": "If you take Extra and choose Sinner as your species you will be unable to leave the Pride Ring unless summoned or you at least filled Exit Stage left. Choosing Hellborn does not have this limitation. ",
@@ -1160,6 +1160,10 @@
       {
         "rating": 10,
         "name": "Extermination day"
+      },
+      {
+        "rating": 9,
+        "name": "Helluva Boss"
       }
     ]
   },
@@ -2778,40 +2782,11 @@
     "rating": 7,
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/992743074583285840/corruption-of-champions-explainer.jpg"
   },
+  {"worldName":"Disney","rating":1,"image":"https://i.insider.com/60c7608023393a00188e2e91?width=1000&format=jpeg&auto=webp","condition":[{"rating":3,"name":"Sleeping Beauty "},{"rating":2,"name":"The Princess and the Frog "},{"name":"Brave ","rating":2},{"rating":3,"name":"Moana "},{"rating":3,"name":"Lilo and Stitch "},{"rating":2,"name":"Snow White and the 7 Dwarves"},{"rating":2,"name":"Peter Pan"},{"rating":2,"name":"Cinderalla"},{"name":"The Emperors New Groove","rating":3},{"name":"Encanto","rating":2},{"rating":6,"name":"Hercules"},{"rating":2,"name":"Wreck it Ralph"},{"name":"The Little Mermaid","rating":3}]},
   {
-    "worldName": "Disney",
-    "rating": 1,
-    "image": "https://i.insider.com/60c7608023393a00188e2e91?width=1000&format=jpeg&auto=webp",
-    "condition": [
-      {
-        "name": "Agrabah",
-        "rating": 3
-      },
-      {
-        "rating": 3,
-        "name": "Arendelle"
-      },
-      {
-        "rating": 2,
-        "name": "Enchanted Forest"
-      },
-      {
-        "rating": 4,
-        "name": "Moana Pacific"
-      },
-      {
-        "rating": 3,
-        "name": "Lilo and Stitch Hawaii"
-      },
-      {
-        "name": "Historic France",
-        "rating": 3
-      },
-      {
-        "rating": 4,
-        "name": "Mulan Ancient China"
-      }
-    ]
+    "worldName": "Frozen",
+    "rating": 3,
+    "image": ""
   },
   {
     "worldName": "Dororo",
@@ -3838,7 +3813,8 @@
   },
   {
     "worldName": "Dead Space",
-    "rating": 9
+    "rating": 9,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/997964452089581719/1587975630-0x0-0-0.jpg"
   },
   {
     "worldName": "Homeworld",
@@ -3865,7 +3841,8 @@
   },
   {
     "worldName": "Noblesse",
-    "rating": 6
+    "rating": 6,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/998215498359656599/2398025.jpg"
   },
   {
     "worldName": "Stellaris",
@@ -3972,10 +3949,21 @@
     "image": "https://i.imgur.com/mZcfXGQ.jpeg"
   },
   {"worldName":"Alien ( Prometheus )","rating":3,"image":"https://cdn.donmai.us/original/c6/7c/__xenomorph_alien_and_1_more_drawn_by_in_hyuk_lee__c67c1c88cc5d7928610020fe1e19b4f1.jpg","condition":[{"rating":7,"name":"Alien Emergence Event in Population Center"},{"name":"Alien","rating":3},{"rating":5,"name":"Aliens"},{"rating":3,"name":"Alien 3"},{"rating":4,"name":"Alien Resurrection"},{"name":"Prometheus","rating":3},{"name":"Alien: Covenant","rating":6}]},
-  {"worldName":"Animal Crossing","rating":1},
+  {"worldName":"Animal Crossing","rating":1, "image": "https://cdn.discordapp.com/attachments/925963686433132644/997963012067573842/animal-crossing-wallpaper-walmart-3.jpg"},
   {"worldName":"Kid Icarus","rating":6,"image":"https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/games_15/nintendo_3ds_25/SI_3DS_KidIcarusUprising_image1600w.jpg","condition":[{"rating":6,"name":"Start of the game (Uprising)"},{"name":"3 year timeskip (after Aurum invasion)","rating":7}]},
-  {"worldName":"Ninja Scroll ","rating":4,"image":""},
-  {"worldName":"Shuumatsu no Valkyrie ","rating":9,"image":""},
+  {"worldName":"Ninja Scroll ","rating":4,"image":"https://cdn.discordapp.com/attachments/925963686433132644/997963395653435462/ninja-scroll-1.webp"},
+  {"worldName":"Shuumatsu no Valkyrie ","rating":9,"image":"https://cdn.discordapp.com/attachments/925963686433132644/997964052468858890/thumb-1920-1132648.jpg"},
   {"worldName":"Super Smash Bros. ","rating":8,"image":"https://i.kym-cdn.com/photos/images/original/000/198/582/8b0.jpg","condition":[{"name":"World of Light/Ultimate ","rating":8},{"rating":9,"name":"Subspace Emissary/Brawl "}]},
-  {"worldName":"The Outer Worlds","rating":3,"image":"https://i.imgur.com/pqp60Yd.jpeg","condition":[{"name":"Byzantium","rating":1},{"rating":2,"name":"Groundbreaker"},{"rating":3,"name":"Game Start, Edgewater"},{"name":"Hired PI on Gorgon or Eridanos","rating":4},{"rating":5,"name":"Prisoner in The Labyrinth"}]}
+  {"worldName":"The Outer Worlds","rating":3,"image":"https://i.imgur.com/pqp60Yd.jpeg","condition":[{"name":"Byzantium","rating":1},{"rating":2,"name":"Groundbreaker"},{"rating":3,"name":"Game Start, Edgewater"},{"name":"Hired PI on Gorgon or Eridanos","rating":4},{"rating":5,"name":"Prisoner in The Labyrinth"}]},
+  {"worldName":"Asterix","rating":2,"image":"https://images4.alphacoders.com/228/thumb-1920-228906.jpg"},
+  {"worldName":"Blue Exorcist ","rating":5,"image":"https://images5.fanpop.com/image/photos/29900000/GROUP-blue-exorcist-29976358-985-780.jpg"},
+  {"worldName":"CthulhuTech","rating":10},
+  {"worldName":"Dexter","rating":1,"image":"https://p4.wallpaperbetter.com/wallpaper/101/719/752/dexter-tv-series-wallpaper-preview.jpg"},
+  {"worldName":"Fringe","rating":4,"additional":"Observers/Invaders upon capture will have their emotional faculties restored and their high intelligence won't deteriorate be like Michael, AKA The Child, AKA Anomaly XB-678646.","condition":[{"name":"Blue Universe (Main Universe)","rating":4},{"rating":4,"name":"Red Universe (Alternate Universe)"},{"rating":5,"name":"Year 2026"},{"rating":6,"name":"Year 2036"},{"rating":6,"name":"Amber Universe (Merged Universe)"}]},
+  {"worldName":"Hollow Knight","rating":6,"additional":"Captured or purchased characters from this setting can switch between their normal size and human size. Going to this setting also gives you this ability."},
+  {"worldName":"Honor Harrington","rating":6,"image":"https://i.imgur.com/BFNOh0E.jpg","condition":[{"name":"1874 PD (Honor enters the Academy)","rating":4},{"name":"1901 PD (First Battle of Basilisk Station)","rating":5},{"name":"1903 PD (Masadan plot against Grayson)","rating":5},{"name":"1905 PD (Havenite-Manticoran War starts)","rating":6}]},
+  {"worldName":"Lolipop Chainsaw","rating":5,"image":"https://img.game-news24.com/2022/07/James-Gunns-Scult-Game-Lollipop-Chainsaw-Is-Making-A-Remake-Again.png"},
+  {"worldName":"Moriarty the Patriot","rating":3,"image":"https://nefariousreviews.files.wordpress.com/2021/08/moriarty-the-patriot-featured.jpg"},
+  {"worldName":"Skeleton Soldier ","rating":7,"image":"https://www.readm.org/uploads/chapter_files/cover/tbn/1610059228_198x0.jpg"},
+  {"worldName":"Treasure Planet","rating":3,"image":"https://media.timeout.com/images/101558479/750/422/image.jpg"}
 ]

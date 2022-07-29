@@ -8,16 +8,6 @@ export interface World {
   image?: string
 }
 
-export interface Character {
-  uid: number
-  name: string
-  world: string
-  tier: number
-  cost?: number
-  image: string
-  image_nsfw?: string
-}
-
 export interface Origin {
   title: string
   cost: number

@@ -675,8 +675,13 @@
     "b": [
       "F",
       "C",
+      "hl",
+      "di",
       "dm",
-      "an"
+      "an",
+      "sr",
+      "nd",
+      "cm"
     ],
     "d": "Disgaea 1/D2",
     "in": "https://i.imgur.com/TMWcdIC.png"
@@ -1302,7 +1307,7 @@
   {
     "u": 7457,
     "n": "Rosa Farrell",
-    "t": 5,
+    "t": 6,
     "i": "402c9d6d61bb3023fbac645d9703f9cb.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/401879",
     "w": "(Square) Final Fantasy",
@@ -1316,7 +1321,7 @@
   {
     "u": 7458,
     "n": "Rydia",
-    "t": 6,
+    "t": 7,
     "i": "7b301074aac9a36fc95b9c379e618d48.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/1503065",
     "w": "(Square) Final Fantasy",
@@ -2606,7 +2611,10 @@
     "b": [
       "F",
       "C",
-      "ai"
+      "hp",
+      "ai",
+      "al",
+      "cm"
     ],
     "d": "Final Fantasy XIV"
   },
@@ -5044,7 +5052,7 @@
       "F",
       "C",
       "cr",
-      "dv",
+      "dm",
       "sr"
     ],
     "in": "https://peach.paheal.net/_images/19e3e97aa0330f4dfda9f67800ac8b27/362751%20-%20Mara%20Oh_My_Goddess%21.jpg"
@@ -5112,7 +5120,7 @@
       "C",
       "cr",
       "sc",
-      "dv",
+      "dm",
       "rl"
     ],
     "in": "https://peach.paheal.net/_images/10a6dda400325759f198000876d50212/1178380%20-%20Hild%20Oh_My_Goddess%21%20arabatos.jpg"
@@ -9492,7 +9500,8 @@
       "F",
       "C",
       "sc",
-      "tc"
+      "tc",
+      "sa"
     ],
     "d": "Aircraft Carrier",
     "in": "https://i.imgur.com/Ux3wsGF.png"
@@ -9831,7 +9840,7 @@
     "b": [
       "F",
       "C",
-      "Idol"
+      "ar"
     ],
     "d": "Light Cruiser",
     "in": "https://i.imgur.com/E7LnHqa.png"
@@ -14373,7 +14382,9 @@
     "w": "Azur Lane - Sakura Empire",
     "b": [
       "F",
-      "C"
+      "C",
+      "cl",
+      "di"
     ],
     "d": "Aircraft Carrier"
   },
@@ -15142,7 +15153,9 @@
     "b": [
       "F",
       "C",
-      "cl"
+      "st",
+      "cl",
+      "ml"
     ],
     "d": "Destroyer",
     "in": "https://i.imgur.com/ZqOwbCn.png"
@@ -15241,12 +15254,12 @@
     "b": [
       "F",
       "cl",
+      "ps",
       "cr",
       "sc",
       "gd",
       "rs",
-      "ps",
-      "Reality Manipulator"
+      "rw"
     ]
   },
   {
@@ -15306,7 +15319,8 @@
       "F",
       "hr",
       "sc",
-      "Tinkerer"
+      "en",
+      "cc"
     ]
   },
   {
@@ -17481,7 +17495,7 @@
       "hp",
       "ur",
       "tm",
-      "Reality Warper"
+      "rw"
     ]
   },
   {
@@ -19568,7 +19582,7 @@
       "hp",
       "hz",
       "cl",
-      "dv",
+      "dm",
       "ai",
       "cb"
     ],
@@ -23992,7 +24006,7 @@
   {
     "u": 10906,
     "n": "Origami Tobiichi",
-    "t": 6,
+    "t": 5,
     "i": "sample_009549e95ce17f211242ce07600af448.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/7621628",
     "w": "Date A Live",
@@ -24025,6 +24039,7 @@
     "w": "Date A Live",
     "b": [
       "F",
+      "C",
       "tm"
     ]
   },
@@ -24119,12 +24134,13 @@
   {
     "u": 10917,
     "n": "Tohka Yatogami",
-    "t": 6,
+    "t": 7,
     "i": "sample_efa5f4a0ba06798b8a62ffab0ec27ea2.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/7926546",
     "w": "Date A Live",
     "b": [
       "F",
+      "C",
       "P",
       "hz",
       "im",
@@ -24134,11 +24150,13 @@
   {
     "u": 10918,
     "n": "Reine Murasame",
-    "t": 10,
+    "t": 2,
     "i": "[n]ff3dd88027d7d84b6833ba743cf9f375.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/7381616",
     "w": "Date A Live",
     "b": [
+      "C",
+      "P",
       "im",
       "mp",
       "tm",
@@ -24634,7 +24652,7 @@
   {
     "u": 5185,
     "n": "Queen Bee (Earth-16)",
-    "t": 6,
+    "t": 4,
     "i": "queen_bee.png",
     "s": "https://vignette.wikia.nocookie.net/youngjustice/images/f/f0/Queen_Bee.png/revision/latest/top-crop/width/360/height/450?cb=20120416114001",
     "w": "DC",
@@ -26343,7 +26361,7 @@
       "cl",
       "im",
       "dm",
-      "dv",
+      "dm",
       "dh"
     ]
   },
@@ -26360,7 +26378,7 @@
       "cl",
       "im",
       "dm",
-      "dv",
+      "dm",
       "dh"
     ]
   },
@@ -26621,7 +26639,7 @@
       "mp",
       "cr",
       "dm",
-      "dv",
+      "dm",
       "sr",
       "ev",
       "rl"
@@ -32742,7 +32760,7 @@
     "b": [
       "F",
       "cr",
-      "dv"
+      "dm"
     ],
     "in": "https://pictures.hentai-foundry.com/e/EvaSolo/481493/EvaSolo-481493-DOTA_Fanart_Queen_of_Pain.jpg"
   },
@@ -34308,11 +34326,14 @@
     "u": 1215,
     "n": "Cullen Rutherford",
     "t": 3,
-    "i": "",
+    "i": "[n]Cullen-Rutherford-SFW.jpg",
     "w": "Dragon Age",
     "b": [
-      "M"
-    ]
+      "M",
+      "cl",
+      "cm"
+    ],
+    "s": "https://i.ibb.co/1fr58sq/Cullen-Rutherford-SFW.jpg"
   },
   {
     "u": 1216,
@@ -39534,6 +39555,7 @@
     "b": [
       "F",
       "C",
+      "P",
       "hp",
       "mp",
       "dr",
@@ -40266,7 +40288,7 @@
       "im",
       "ur",
       "cr",
-      "dv",
+      "dm",
       "sr",
       "ev"
     ],
@@ -46492,7 +46514,7 @@
   {
     "u": 2729,
     "n": "Lord Harkon Volkihar",
-    "t": 5,
+    "t": 7,
     "i": "d6rmkcv_9d2d7d64_f655_4170_b226_fb6458e1e59e.jpg",
     "s": "https://www.deviantart.com/serpentis-ictus/art/Lord-Harkon-409199503",
     "w": "The Elder Scrolls",
@@ -47795,7 +47817,9 @@
     "s": "https://www.deviantart.com/shivawalker/art/wolf-queen-Potema-Septim-718104530",
     "w": "The Elder Scrolls",
     "b": [
-      "F"
+      "F",
+      "me",
+      "un"
     ],
     "d": "Skyrim"
   },
@@ -52627,7 +52651,7 @@
       "cr",
       "di",
       "tm",
-      "dv",
+      "dm",
       "th",
       "sr"
     ]
@@ -52951,8 +52975,7 @@
       "F",
       "C",
       "mp",
-      "sc",
-      "Psychologist"
+      "sc"
     ]
   },
   {
@@ -53049,7 +53072,9 @@
     "d": "Fate/Grand Order",
     "b": [
       "F",
-      "C"
+      "C",
+      "hl",
+      "dg"
     ]
   },
   {
@@ -53455,8 +53480,8 @@
     "u": 748,
     "n": "Cecil Harvey",
     "t": 6,
-    "i": "35448ceb496b7e40036e1fdab9ce4bd7.png",
-    "s": "https://chan.sankakucomplex.com/post/show/676161",
+    "i": "[n]__cecil_harvey_and_paladin_final_fantasy_and_2_more_drawn_by_krebs__189d7649545f7f2ab800dfd282856fe8.jpg",
+    "s": "https://cdn.donmai.us/original/18/9d/__cecil_harvey_and_paladin_final_fantasy_and_2_more_drawn_by_krebs__189d7649545f7f2ab800dfd282856fe8.jpg",
     "w": "Square (Final Fantasy)",
     "b": [
       "M"
@@ -53471,19 +53496,28 @@
     "s": "https://chan.sankakucomplex.com/post/show/7455203",
     "w": "Final Fantasy 4",
     "b": [
-      "F"
+      "F",
+      "mp",
+      "dr",
+      "cr",
+      "dh",
+      "me",
+      "vn",
+      "cm"
     ]
   },
   {
     "u": 750,
     "n": "Cloud Strife",
     "t": 7,
-    "i": "[n]629449hmniao.jpg",
-    "s": "https://files.yande.re/sample/37ccd7f4178f81529f14c8a36ddf8550/yande.re%20629449%20sample%20cloud_strife%20crossdress%20dress%20final_fantasy%20final_fantasy_vii%20hmniao.jpg",
+    "i": "[n]__cloud_strife_final_fantasy_and_1_more_drawn_by_beckey9415__4b3a2ddd9414ffd705e9ded12a82bfff.jpg",
+    "s": "https://cdn.donmai.us/original/4b/3a/__cloud_strife_final_fantasy_and_1_more_drawn_by_beckey9415__4b3a2ddd9414ffd705e9ded12a82bfff.jpg",
     "w": "Square (Final Fantasy)",
     "b": [
       "M",
-      "tp"
+      "tp",
+      "pr",
+      "cm"
     ],
     "d": "Final Fantasy VII"
   },
@@ -55095,7 +55129,10 @@
     "b": [
       "F",
       "C",
-      "dg"
+      "hr",
+      "dg",
+      "sr",
+      "cm"
     ],
     "d": "11: Awakening",
     "in": "https://tulip.paheal.net/_images/bfb7f0c108fab61ab2dfc15a5123233d/4288482%20-%20Easter%20Fire_Emblem%20Fire_Emblem_Awakening%20Fire_Emblem_Heroes%20LiveActors%20Nah.png"
@@ -55124,7 +55161,10 @@
     "b": [
       "F",
       "C",
-      "dg"
+      "sc",
+      "dg",
+      "sr",
+      "cm"
     ],
     "d": "11: Awakening",
     "in": "https://tulip.paheal.net/_images/42b965d49c1df28e9e562ccba71a53e0/866879%20-%20Fire_Emblem%20Fire_Emblem_Awakening%20Nowi%20tenako.jpg"
@@ -55222,7 +55262,11 @@
     "b": [
       "F",
       "C",
-      "me"
+      "me",
+      "gn",
+      "nd",
+      "sa",
+      "cm"
     ],
     "d": "11: Awakening"
   },
@@ -56566,14 +56610,16 @@
   },
   {
     "u": 12431,
-    "n": "Freddy",
+    "n": "Freddy Fazbear",
     "t": 4,
-    "i": "92c4bfc4ba22020eaa910242bedef8c2.png",
-    "s": "https://e621.net/post/show/1941195",
+    "i": "[n]Freddy-Fazbear-SFW.jpg",
+    "s": "https://i.ibb.co/Dt68D4L/Freddy-Fazbear-SFW.jpg",
     "w": "Five Nights At Freddy's",
     "b": [
-      "O"
-    ]
+      "O",
+      "ad"
+    ],
+    "in": "https://i.ibb.co/F8vFJ33/Freddy-Fazbear-NSFW.jpg"
   },
   {
     "u": 12432,
@@ -68949,17 +68995,6 @@
     "d": "Hogwarts Other"
   },
   {
-    "u": 1848,
-    "n": "Thomas Riddle I",
-    "t": 2,
-    "i": "",
-    "w": "Harry Potter",
-    "b": [
-      "M",
-      "Muggle"
-    ]
-  },
-  {
     "u": 1849,
     "n": "Thomas Riddle Senior (II)",
     "t": 2,
@@ -68978,8 +69013,7 @@
     "i": "[n]cd84bf001efe198863aaa4ac76f55929.jpg",
     "w": "Harry Potter",
     "b": [
-      "M",
-      "Muggle"
+      "M"
     ],
     "s": "https://i.pinimg.com/originals/cd/84/bf/cd84bf001efe198863aaa4ac76f55929.jpg",
     "d": "Muggle"
@@ -69064,7 +69098,7 @@
     "u": 1856,
     "n": "Albus Severus Potter",
     "t": 4,
-    "i": "[n]00f64713b1ade512837c2e0698c5c626486e90c6.png",
+    "i": "[n]tumblr_0b80107f71e7ac4540a95a4f42b68b0e_00f64713_1280.jpg",
     "w": "Harry Potter",
     "b": [
       "M",
@@ -69077,7 +69111,7 @@
   {
     "u": 1857,
     "n": "Anthony Goldstein",
-    "t": 4,
+    "t": 5,
     "i": "https://i.imgur.com/6SmVPB1l.jpg",
     "w": "Harry Potter",
     "b": [
@@ -69107,7 +69141,7 @@
   {
     "u": 1859,
     "n": "Blaise Zabini",
-    "t": 4,
+    "t": 5,
     "i": "[n]449104f599cd2ecb93f3dca01b643948.jpg",
     "w": "Harry Potter",
     "b": [
@@ -69149,7 +69183,7 @@
   {
     "u": 1862,
     "n": "Cedric Diggory",
-    "t": 4,
+    "t": 5,
     "i": "[n]tumblr_bcf654192af21ccf01eb0d3770612731_4cfe25ba_540.jpg",
     "w": "Harry Potter",
     "b": [
@@ -69167,16 +69201,22 @@
     "u": 1863,
     "n": "Colin Creevey",
     "t": 4,
-    "i": "",
+    "i": "[n]7991a636667e9e0ee537dffb3d4439d9.jpg",
     "w": "Harry Potter",
     "b": [
-      "M"
-    ]
+      "M",
+      "sd",
+      "me",
+      "ar",
+      "cm"
+    ],
+    "s": "https://i.pinimg.com/564x/79/91/a6/7991a636667e9e0ee537dffb3d4439d9.jpg",
+    "d": "Hogwarts Student"
   },
   {
     "u": 1864,
     "n": "Cormac McLaggen",
-    "t": 4,
+    "t": 5,
     "i": "[n]cormac-mclaggen.png",
     "w": "Harry Potter",
     "b": [
@@ -69191,7 +69231,7 @@
   {
     "u": 1865,
     "n": "Cornelius Fudge",
-    "t": 4,
+    "t": 5,
     "i": "[n]fudge-tq.jpg",
     "w": "Harry Potter",
     "b": [
@@ -69223,7 +69263,7 @@
   {
     "u": 1867,
     "n": "Dean Thomas",
-    "t": 4,
+    "t": 5,
     "i": "[n]tumblr_pbjexu1Bp51u8yw5ao1_r1_1280.jpg",
     "w": "Harry Potter",
     "b": [
@@ -69284,7 +69324,7 @@
   {
     "u": 1871,
     "n": "Ernest \"Ernie\" Macmillan",
-    "t": 4,
+    "t": 5,
     "i": "[n]ernie_by_hillary_cw.png",
     "w": "Harry Potter",
     "b": [
@@ -69300,11 +69340,12 @@
   {
     "u": 1873,
     "n": "Fenrir Greyback",
-    "t": 4,
+    "t": 5,
     "i": "[n]bcc0b636a36a286bf9e2b5b8b74985c3.jpg",
     "w": "Harry Potter",
     "b": [
       "M",
+      "id",
       "mr",
       "dh",
       "me",
@@ -69320,7 +69361,7 @@
   {
     "u": 1874,
     "n": "Florean Fortescue",
-    "t": 4,
+    "t": 5,
     "i": "[n]23fec2b57ee18664a72a64892e6ebdb4.jpg",
     "w": "Harry Potter",
     "b": [
@@ -69332,7 +69373,7 @@
   {
     "u": 1875,
     "n": "Frank Longbottom",
-    "t": 4,
+    "t": 5,
     "i": "[n]Order-of-the-phoenix-frank.jpg",
     "w": "Harry Potter",
     "b": [
@@ -69347,7 +69388,7 @@
   {
     "u": 1876,
     "n": "Fred Weasley",
-    "t": 4,
+    "t": 5,
     "i": "[n]ron-mk.jpg",
     "w": "Harry Potter",
     "b": [
@@ -69363,7 +69404,7 @@
   {
     "u": 1877,
     "n": "George Weasley",
-    "t": 4,
+    "t": 5,
     "i": "[n]giorgio-abou-mrx-fredorgeorgef.jpg",
     "w": "Harry Potter",
     "b": [
@@ -69409,7 +69450,7 @@
   {
     "u": 1880,
     "n": "Graham Montague",
-    "t": 4,
+    "t": 5,
     "i": "[n]3135c77b560f5f40315222b29bc7d4b8.jpg",
     "w": "Harry Potter",
     "b": [
@@ -69424,11 +69465,16 @@
     "u": 1881,
     "n": "Gregory Goyle",
     "t": 4,
-    "i": "",
+    "i": "[n]tumblr_obvsgkcbRp1ryjn58o1_1280.jpg",
     "w": "Harry Potter",
     "b": [
-      "M"
-    ]
+      "M",
+      "sd",
+      "ev",
+      "cm"
+    ],
+    "s": "https://64.media.tumblr.com/7b6514ba8f7c19375a1dac079eca8fd0/tumblr_obvsgkcbRp1ryjn58o1_1280.jpg",
+    "d": "Hogwarts Student"
   },
   {
     "u": 1882,
@@ -69462,7 +69508,7 @@
   {
     "u": 1884,
     "n": "Justin Finch-Fletchley",
-    "t": 4,
+    "t": 5,
     "i": "[n]cbe9128f68a2d2f7bbaf72e1c468086f.jpg",
     "w": "Harry Potter",
     "b": [
@@ -69493,7 +69539,7 @@
   {
     "u": 1886,
     "n": "Lee Jordan",
-    "t": 4,
+    "t": 5,
     "i": "[n]0a87ea5ee53433a274f9d3b1810c7db7.jpg",
     "w": "Harry Potter",
     "b": [
@@ -69508,7 +69554,7 @@
   {
     "u": 1887,
     "n": "Marcus Flint",
-    "t": 4,
+    "t": 5,
     "i": "[n]00cc72a9937ab9c81f509efc11c64467.jpg",
     "w": "Harry Potter",
     "b": [
@@ -69522,7 +69568,7 @@
   {
     "u": 1888,
     "n": "Marvolo Gaunt",
-    "t": 4,
+    "t": 5,
     "i": "[n]Marvolo-Gaunt.jpg",
     "w": "Harry Potter",
     "b": [
@@ -69536,7 +69582,7 @@
   {
     "u": 1889,
     "n": "Michael Corner",
-    "t": 4,
+    "t": 5,
     "i": "[n]ca6e99ea6bbbae738d69b9ac8a51a019--michael-okeefe.jpg",
     "w": "Harry Potter",
     "b": [
@@ -69552,7 +69598,7 @@
   {
     "u": 1890,
     "n": "Morfin Gaunt",
-    "t": 4,
+    "t": 5,
     "i": "",
     "w": "Harry Potter",
     "b": [
@@ -69566,7 +69612,7 @@
   {
     "u": 1891,
     "n": "Mundungus \"Dung\" Fletcher",
-    "t": 4,
+    "t": 5,
     "i": "[n]a6253f7487c0aa974ea634a96459a9cf.jpg",
     "w": "Harry Potter",
     "b": [
@@ -69581,7 +69627,7 @@
   {
     "u": 1892,
     "n": "Neville Longbottom",
-    "t": 4,
+    "t": 5,
     "i": "[n]f72816d2deb89817d063010610be1ff8.jpg",
     "w": "Harry Potter",
     "b": [
@@ -69600,7 +69646,7 @@
   {
     "u": 1893,
     "n": "Oliver Wood",
-    "t": 4,
+    "t": 5,
     "i": "https://i.imgur.com/Q8PlPkIl.png",
     "w": "Harry Potter",
     "b": [
@@ -69631,7 +69677,7 @@
   {
     "u": 1895,
     "n": "Percy Weasley",
-    "t": 4,
+    "t": 5,
     "i": "[n]557663a3d69d886d2855634b9663e065.jpg",
     "w": "Harry Potter",
     "b": [
@@ -69648,7 +69694,7 @@
   {
     "u": 1896,
     "n": "Reginald Cattermole",
-    "t": 4,
+    "t": 5,
     "i": "[n]e2448e3c3f098a54260c29653e92c47b.jpg",
     "w": "Harry Potter",
     "b": [
@@ -69661,7 +69707,7 @@
   {
     "u": 1897,
     "n": "Roger Davies",
-    "t": 4,
+    "t": 5,
     "i": "[n]8a4f46aa35fccf9bb0025f1768684252--harry-potter-costumes-harry-potter-characters.jpg",
     "w": "Harry Potter",
     "b": [
@@ -69713,11 +69759,12 @@
   {
     "u": 1900,
     "n": "Scabior",
-    "t": 4,
+    "t": 5,
     "i": "[n]0ddb2e84ca76eed181caa9e20c139efe.jpg",
     "w": "Harry Potter",
     "b": [
       "M",
+      "id",
       "me",
       "ev",
       "sa",
@@ -69745,7 +69792,7 @@
   {
     "u": 1902,
     "n": "Seamus Finnigan",
-    "t": 4,
+    "t": 5,
     "i": "[n]afb0bf8d65774c6232b62cb59827befb.jpg",
     "w": "Harry Potter",
     "b": [
@@ -69776,7 +69823,7 @@
   {
     "u": 1904,
     "n": "Stan Shunpike",
-    "t": 4,
+    "t": 5,
     "i": "[n]tumblr_nzkdns5YAP1u9zlnmo1_1280.jpg",
     "w": "Harry Potter",
     "b": [
@@ -69788,7 +69835,7 @@
   {
     "u": 1905,
     "n": "Sturgis Podmore",
-    "t": 4,
+    "t": 5,
     "i": "[n]Sturgis-Podemore-e1646240088693.jpg.webp",
     "w": "Harry Potter",
     "b": [
@@ -69817,7 +69864,7 @@
   {
     "u": 1907,
     "n": "Terry Boot",
-    "t": 4,
+    "t": 5,
     "i": "[n]tumblr_p5zqnaOb8z1wc6mkco1_1280.jpg",
     "w": "Harry Potter",
     "b": [
@@ -69865,7 +69912,7 @@
   {
     "u": 1910,
     "n": "Theodore Nott",
-    "t": 4,
+    "t": 5,
     "i": "[n]8d99e263e0765c92cb650e78054fd08a.jpg",
     "w": "Harry Potter",
     "b": [
@@ -69883,12 +69930,13 @@
   {
     "u": 1911,
     "n": "Travers",
-    "t": 4,
+    "t": 5,
     "i": "[n]death_eater_card_no_28_by_madcarrot.jpg",
     "w": "Harry Potter",
     "b": [
       "M",
       "cl",
+      "id",
       "me",
       "sa",
       "cm"
@@ -69914,7 +69962,7 @@
   {
     "u": 1913,
     "n": "Zacharias Smith",
-    "t": 4,
+    "t": 5,
     "i": "[n]Zacharias.Smith.full.1339680.jpg",
     "w": "Harry Potter",
     "b": [
@@ -69948,6 +69996,7 @@
     "b": [
       "M",
       "cl",
+      "id",
       "sc",
       "di",
       "me",
@@ -69994,6 +70043,7 @@
     "w": "Harry Potter",
     "b": [
       "M",
+      "id",
       "me",
       "tc",
       "ev",
@@ -70025,6 +70075,7 @@
     "w": "Harry Potter",
     "b": [
       "M",
+      "id",
       "me",
       "ev",
       "cm"
@@ -70073,6 +70124,7 @@
     "b": [
       "M",
       "cl",
+      "id",
       "sn",
       "me",
       "ev",
@@ -70174,6 +70226,7 @@
     "w": "Harry Potter",
     "b": [
       "M",
+      "id",
       "me",
       "ev",
       "cm"
@@ -70189,6 +70242,7 @@
     "w": "Harry Potter",
     "b": [
       "M",
+      "id",
       "me",
       "ev",
       "cm"
@@ -70295,7 +70349,7 @@
   {
     "u": 1937,
     "n": "Godric Gryffindor",
-    "t": 5,
+    "t": 6,
     "i": "[n]raph-lomotan-gg.jpg",
     "w": "Harry Potter",
     "b": [
@@ -70315,6 +70369,7 @@
     "w": "Harry Potter",
     "b": [
       "M",
+      "id",
       "me",
       "ev",
       "cm"
@@ -70324,13 +70379,18 @@
   },
   {
     "u": 1939,
-    "n": "Gregorovitch",
+    "n": "Mykew Gregorovitch",
     "t": 5,
-    "i": "",
+    "i": "[n]piotr-roslan-gregorovitch-hires.jpg",
     "w": "Harry Potter",
     "b": [
-      "M"
-    ]
+      "M",
+      "sc",
+      "me",
+      "cc",
+      "cm"
+    ],
+    "s": "https://cdnb.artstation.com/p/assets/images/images/004/392/773/large/piotr-roslan-gregorovitch-hires.jpg"
   },
   {
     "u": 1940,
@@ -70458,6 +70518,7 @@
     "b": [
       "M",
       "cl",
+      "id",
       "me",
       "ev",
       "cc",
@@ -70580,6 +70641,7 @@
     "w": "Harry Potter",
     "b": [
       "M",
+      "id",
       "me",
       "ev",
       "cm"
@@ -70642,11 +70704,19 @@
     "u": 1959,
     "n": "Salazar Slytherin",
     "t": 5,
-    "i": "",
+    "i": "[n]b1ff00d2bee6d59b25e8d55333a8fb28.jpg",
     "w": "Harry Potter",
     "b": [
-      "M"
-    ]
+      "M",
+      "mt",
+      "cl",
+      "mp",
+      "me",
+      "ev",
+      "cm"
+    ],
+    "s": "https://i.pinimg.com/originals/b1/ff/00/b1ff00d2bee6d59b25e8d55333a8fb28.jpg",
+    "d": "Ancient Wizard"
   },
   {
     "u": 1960,
@@ -70747,6 +70817,7 @@
     "w": "Harry Potter",
     "b": [
       "M",
+      "id",
       "me",
       "ev",
       "cm"
@@ -70880,6 +70951,7 @@
     "b": [
       "F",
       "C",
+      "id",
       "wh",
       "ev",
       "cm",
@@ -71381,7 +71453,7 @@
       "F",
       "hr",
       "sc",
-      "dv",
+      "dm",
       "dh",
       "sr",
       "cm"
@@ -71532,7 +71604,7 @@
     "w": "High School DxD",
     "b": [
       "M",
-      "dv"
+      "dm"
     ]
   },
   {
@@ -71543,9 +71615,10 @@
     "w": "High School DxD",
     "b": [
       "M",
+      "an",
       "ev",
-      "Fallen Angel",
-      "vn"
+      "vn",
+      "Fallen Angel"
     ],
     "s": "https://i.imgur.com/D7Qx1HM.jpg"
   },
@@ -71558,7 +71631,7 @@
     "w": "High School DxD",
     "b": [
       "M",
-      "dv",
+      "dm",
       "cf",
       "U"
     ]
@@ -71582,7 +71655,7 @@
     "w": "High School DxD",
     "b": [
       "M",
-      "dv",
+      "dm",
       "dg"
     ],
     "s": "https://i.imgur.com/b7oZk68.jpg"
@@ -71636,7 +71709,7 @@
     "b": [
       "M",
       "tm",
-      "dv",
+      "dm",
       "vp",
       "tp"
     ]
@@ -71665,7 +71738,7 @@
     "w": "High School DxD",
     "b": [
       "M",
-      "dv",
+      "dm",
       "U",
       "vn"
     ]
@@ -71677,7 +71750,8 @@
     "i": "https://i.imgur.com/V9CJgrOl.jpg",
     "w": "High School DxD",
     "b": [
-      "M"
+      "M",
+      "an"
     ],
     "s": "https://i.imgur.com/V9CJgrO.jpg"
   },
@@ -71700,7 +71774,7 @@
     "w": "High School DxD",
     "b": [
       "M",
-      "dv"
+      "dm"
     ],
     "s": "https://i.imgur.com/yEdVE1F.jpg"
   },
@@ -71756,7 +71830,7 @@
     "b": [
       "M",
       "ml",
-      "dv",
+      "dm",
       "dg",
       "sd"
     ],
@@ -71783,7 +71857,7 @@
     "w": "High School DxD",
     "b": [
       "M",
-      "dv"
+      "dm"
     ],
     "s": "https://i.imgur.com/SfRiD8f.jpg"
   },
@@ -71795,7 +71869,7 @@
     "w": "High School DxD",
     "b": [
       "M",
-      "dv"
+      "dm"
     ],
     "s": "https://i.imgur.com/5LM46lz.jpg"
   },
@@ -71808,7 +71882,7 @@
     "w": "High School DxD",
     "b": [
       "M",
-      "dv"
+      "dm"
     ]
   },
   {
@@ -71891,7 +71965,7 @@
       "F",
       "C",
       "hl",
-      "dv",
+      "dm",
       "nn"
     ],
     "in": "https://cdn.donmai.us/original/ab/87/__asia_argento_high_school_dxd_drawn_by_blue_senpai__ab870c035bc5ca578b3a1f83d70137e1.jpg"
@@ -71906,7 +71980,7 @@
     "b": [
       "F",
       "C",
-      "dv"
+      "dm"
     ]
   },
   {
@@ -71931,7 +72005,7 @@
     "b": [
       "F",
       "C",
-      "dv",
+      "dm",
       "tw",
       "mi"
     ]
@@ -71946,7 +72020,7 @@
     "b": [
       "F",
       "C",
-      "dv"
+      "dm"
     ]
   },
   {
@@ -71974,7 +72048,7 @@
     "b": [
       "F",
       "C",
-      "dv"
+      "dm"
     ]
   },
   {
@@ -71987,7 +72061,7 @@
     "b": [
       "F",
       "C",
-      "dv"
+      "dm"
     ]
   },
   {
@@ -72000,7 +72074,7 @@
     "b": [
       "F",
       "C",
-      "dv"
+      "dm"
     ]
   },
   {
@@ -72013,7 +72087,7 @@
     "b": [
       "F",
       "C",
-      "dv"
+      "dm"
     ]
   },
   {
@@ -72041,7 +72115,7 @@
     "b": [
       "F",
       "C",
-      "dv",
+      "dm",
       "ct",
       "tw",
       "mi"
@@ -72073,7 +72147,7 @@
     "b": [
       "F",
       "C",
-      "dv"
+      "dm"
     ]
   },
   {
@@ -72086,7 +72160,7 @@
     "b": [
       "F",
       "C",
-      "dv"
+      "dm"
     ]
   },
   {
@@ -72099,7 +72173,7 @@
     "b": [
       "F",
       "C",
-      "dv"
+      "dm"
     ],
     "in": "https://lotus.paheal.net/_images/b66a287aae8fdebf95d286a3418e2625/1929672%20-%20High_School_DxD%20Xuelan.jpg"
   },
@@ -72113,7 +72187,7 @@
     "b": [
       "F",
       "C",
-      "dv"
+      "dm"
     ]
   },
   {
@@ -72139,7 +72213,7 @@
     "b": [
       "F",
       "C",
-      "dv",
+      "dm",
       "sd"
     ],
     "in": "https://holly.paheal.net/_images/8134791bc41b4ead929a9be04d8146b0/2313524%20-%20High_School_DxD%20Momo_Hanakai.png"
@@ -72168,7 +72242,7 @@
     "b": [
       "F",
       "C",
-      "dv",
+      "dm",
       "sd"
     ]
   },
@@ -72185,7 +72259,7 @@
       "hl",
       "mp",
       "im",
-      "dv",
+      "dm",
       "rg",
       "MILF"
     ]
@@ -72199,7 +72273,9 @@
     "w": "High School DxD",
     "b": [
       "F",
-      "C"
+      "C",
+      "an",
+      "cm"
     ]
   },
   {
@@ -72212,7 +72288,7 @@
     "b": [
       "F",
       "C",
-      "dv",
+      "dm",
       "sd"
     ],
     "in": "https://tulip.paheal.net/_images/58d1dd4cc87f28460441e242dca256a9/2313500%20-%20High_School_DxD%20Tomoe_Meguri.png"
@@ -72239,7 +72315,7 @@
     "b": [
       "F",
       "C",
-      "dv",
+      "dm",
       "MILF"
     ]
   },
@@ -72253,7 +72329,7 @@
     "b": [
       "F",
       "C",
-      "dv",
+      "dm",
       "sd"
     ]
   },
@@ -72269,7 +72345,7 @@
       "C",
       "hl",
       "im",
-      "dv",
+      "dm",
       "rg"
     ],
     "in": "https://cdn.donmai.us/sample/9d/79/__ravel_phenex_high_school_dxd_and_1_more__sample-9d79d334dc4d167ce2cd8779461d002f.jpg"
@@ -72284,7 +72360,7 @@
     "b": [
       "F",
       "C",
-      "dv"
+      "dm"
     ],
     "in": "https://i.imgur.com/4pYnG98.jpg"
   },
@@ -72292,8 +72368,8 @@
     "u": 5876,
     "n": "Sha Wujing",
     "t": 6,
-    "i": "sha_wujing.jpeg",
-    "s": "https://static.wikia.nocookie.net/highschooldxd/images/9/93/Sha_Wujing.jpeg/revision/latest?cb=20190319164642",
+    "i": "https://i.imgur.com/hZPFAPKl.jpg",
+    "s": "https://i.imgur.com/hZPFAPK.jpg",
     "w": "High School DxD",
     "b": [
       "F",
@@ -72317,8 +72393,8 @@
     "u": 5878,
     "n": "Tosca",
     "t": 5,
-    "i": "https://i.imgur.com/tq1Jc1Bl.png",
-    "s": "https://i.imgur.com/tq1Jc1B.png",
+    "i": "https://i.imgur.com/btl5Eh6l.jpg",
+    "s": "https://i.imgur.com/btl5Eh6.jpg",
     "w": "High School DxD",
     "b": [
       "F",
@@ -72334,7 +72410,7 @@
     "w": "High School DxD",
     "b": [
       "F",
-      "dv",
+      "dm",
       "dh",
       "sd",
       "ct"
@@ -72351,7 +72427,7 @@
     "b": [
       "F",
       "C",
-      "dv"
+      "dm"
     ],
     "in": "https://lotus.paheal.net/_images/e42526c239ce19bbf7d197621b38b2e4/2863070%20-%20High_School_DxD%20Yubelluna%20wonderwand1027.png"
   },
@@ -72365,7 +72441,7 @@
     "b": [
       "F",
       "C",
-      "dv",
+      "dm",
       "sd"
     ]
   },
@@ -72378,7 +72454,8 @@
     "w": "High School DxD",
     "b": [
       "F",
-      "C"
+      "C",
+      "dm"
     ]
   },
   {
@@ -72416,7 +72493,7 @@
     "b": [
       "F",
       "C",
-      "dv",
+      "dm",
       "an",
       "sd"
     ],
@@ -72432,7 +72509,7 @@
     "b": [
       "F",
       "C",
-      "dv"
+      "dm"
     ]
   },
   {
@@ -72457,7 +72534,7 @@
     "b": [
       "F",
       "C",
-      "dv"
+      "dm"
     ]
   },
   {
@@ -72470,7 +72547,7 @@
     "b": [
       "F",
       "C",
-      "dv"
+      "dm"
     ]
   },
   {
@@ -72544,7 +72621,7 @@
     "b": [
       "F",
       "C",
-      "dv",
+      "dm",
       "sd"
     ],
     "in": "https://i.imgur.com/VI2Q1Yq.png"
@@ -72559,7 +72636,7 @@
     "b": [
       "F",
       "C",
-      "dv"
+      "dm"
     ],
     "in": "https://cdn.donmai.us/sample/0b/1a/__rossweisse_high_school_dxd_drawn_by_arai29__sample-0b1a67dcf34213029d2dcc259d22ab5b.jpg"
   },
@@ -72573,7 +72650,7 @@
     "b": [
       "F",
       "C",
-      "dv",
+      "dm",
       "sd"
     ],
     "in": "https://tulip.paheal.net/_images/015852d5e10a3697f830771943421798/2313483%20-%20High_School_DxD%20Tsubaki_Shinra.jpg"
@@ -72588,7 +72665,7 @@
     "b": [
       "F",
       "C",
-      "dv",
+      "dm",
       "sd"
     ],
     "in": "https://cdn.donmai.us/sample/72/98/__sona_sitri_high_school_dxd_and_1_more__sample-7298244a3e4aea4bd9f72e19944d5cf3.jpg"
@@ -72603,7 +72680,7 @@
     "b": [
       "F",
       "C",
-      "dv",
+      "dm",
       "ct"
     ],
     "in": "https://cdn.donmai.us/original/50/9c/__kuroka_high_school_dxd_drawn_by_beiyu__509c871a7b7139f2aa9073bf8b17e61b.jpg"
@@ -72618,7 +72695,7 @@
     "b": [
       "F",
       "C",
-      "dv"
+      "dm"
     ],
     "in": "https://tulip.paheal.net/_images/04a6c18d40c0d44f3b2d6a2e156722b9/1948712%20-%20High_School_DxD%20Venelana_Gremory.jpg"
   },
@@ -72644,7 +72721,7 @@
     "b": [
       "F",
       "C",
-      "dv",
+      "dm",
       "sd"
     ],
     "in": "https://cdn.donmai.us/sample/38/0f/__xenovia_quarta_high_school_dxd_drawn_by_chihunhentai__sample-380f9da941f34d1244892a11564d4ba3.jpg"
@@ -72659,7 +72736,7 @@
     "b": [
       "F",
       "C",
-      "dv",
+      "dm",
       "md"
     ],
     "in": "https://cdn.donmai.us/sample/64/e7/__grayfia_lucifuge_high_school_dxd_and_1_more__sample-64e7f82b40750840d7066e5feeff17fd.jpg"
@@ -72686,7 +72763,7 @@
     "b": [
       "F",
       "C",
-      "dv"
+      "dm"
     ],
     "s": "https://i.imgur.com/cz3NFhZ.png"
   },
@@ -72744,7 +72821,7 @@
     "b": [
       "F",
       "C",
-      "dv"
+      "dm"
     ],
     "in": "https://i.imgur.com/6ojR2lw.jpg"
   },
@@ -73346,7 +73423,7 @@
     "b": [
       "F",
       "C",
-      "dv"
+      "dm"
     ],
     "in": "https://i.imgur.com/b9Z1p4Q.png"
   },
@@ -73412,7 +73489,7 @@
     "b": [
       "F",
       "C",
-      "dv"
+      "dm"
     ]
   },
   {
@@ -74366,7 +74443,7 @@
       "cm"
     ],
     "in": "https://pbs.twimg.com/media/E1SXDu7VIAEfdP6.jpg",
-    "d": "Hooligan"
+    "d": "Hooligan Tribe"
   },
   {
     "u": 12547,
@@ -74389,7 +74466,7 @@
   {
     "u": 1786,
     "n": "Hiccup Horrendous Haddock III",
-    "t": 2,
+    "t": 3,
     "i": "[n]0a9a5502529918f1c6c0dd848e51fae4.png",
     "w": "How to Train Your Dragon",
     "b": [
@@ -74406,7 +74483,7 @@
     ],
     "s": "https://i.pinimg.com/originals/0a/9a/55/0a9a5502529918f1c6c0dd848e51fae4.png",
     "in": "https://holly.paheal.net/_images/be98b506d38f6ba2f72ca59a06296f33/2950231%20-%20Bludwing%20Hiccup%20How_to_Train_Your_Dragon.jpg",
-    "d": "Hooligans"
+    "d": "Hooligan Tribe"
   },
   {
     "u": 10395,
@@ -76974,7 +77051,7 @@
     "t": 6,
     "i": "1118full_sara_pezzini.jpg",
     "s": "https://ilarge.lisimg.com/image/8994919/1118full-sara-pezzini.jpg",
-    "w": "Image",
+    "w": "Witchblade",
     "b": [
       "F",
       "C"
@@ -77167,7 +77244,7 @@
     "b": [
       "F",
       "sd",
-      "Analytic"
+      "sa"
     ]
   },
   {
@@ -77223,8 +77300,8 @@
       "F",
       "sn",
       "gn",
-      "Combat Expert",
-      "Insane"
+      "cm",
+      "is"
     ]
   },
   {
@@ -77438,13 +77515,14 @@
     "w": "Is This a Zombie",
     "b": [
       "F",
-      "C"
+      "C",
+      "mm"
     ]
   },
   {
     "u": 5939,
     "n": "Eucliwood Hellscythe",
-    "t": 7,
+    "t": 9,
     "i": "sample_6e7fbe6f0bc106f7e87ef6be54a250d8.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/2520141",
     "w": "Is This a Zombie",
@@ -79147,7 +79225,11 @@
     "w": "Kid Icarus",
     "b": [
       "F",
-      "C"
+      "C",
+      "mt",
+      "di",
+      "gd",
+      "rl"
     ]
   },
   {
@@ -82161,8 +82243,7 @@
       "F",
       "sc",
       "nn",
-      "Fighter",
-      "Holy Powers"
+      "cm"
     ]
   },
   {
@@ -82190,9 +82271,8 @@
     "b": [
       "F",
       "pc",
-      "Split Personality",
-      "Electricity Manipulator",
-      "Swordswoman"
+      "cm",
+      "is"
     ]
   },
   {
@@ -82205,12 +82285,10 @@
     "b": [
       "F",
       "cl",
-      "im",
       "dm",
       "nn",
-      "Overlord",
-      "Fighter",
-      "Holy Powers"
+      "cm",
+      "im"
     ]
   },
   {
@@ -86131,12 +86209,13 @@
     "u": 9964,
     "n": "Araga Kiwi/Leopolt",
     "t": 5,
-    "i": "",
+    "i": "[n]__araga_kiwi_mahou_shoujo_ni_akogarete_drawn_by_makuraha__e02f5debb5872d3a477f284ded2c0904.png",
     "w": "Looking up to Magical Girls",
     "b": [
       "F",
       "C"
-    ]
+    ],
+    "s": "https://cdn.donmai.us/original/e0/2f/__araga_kiwi_mahou_shoujo_ni_akogarete_drawn_by_makuraha__e02f5debb5872d3a477f284ded2c0904.png"
   },
   {
     "u": 9965,
@@ -86627,10 +86706,10 @@
     "w": "Lord of the Mysteries",
     "b": [
       "F",
+      "cl",
       "ps",
       "mp",
-      "sc",
-      "cool"
+      "sc"
     ]
   },
   {
@@ -90811,7 +90890,9 @@
     "i": "[n]Svyelun.jpg",
     "w": "Magic: the Gathering",
     "b": [
-      "F"
+      "F",
+      "gd",
+      "im"
     ],
     "s": "https://images.squarespace-cdn.com/content/v1/5356aa98e4b0e10db1993391/1624492687436-1U926RJL9FB8K3VK7O50/Svyelun.jpg"
   },
@@ -90994,7 +91075,9 @@
     "w": "Magic: the Gathering",
     "b": [
       "F",
-      "mr"
+      "mr",
+      "th",
+      "rl"
     ],
     "s": "https://magicuntapped.com/images/symon/Dreamcast/rs1.jpg"
   },
@@ -91016,7 +91099,8 @@
     "i": "[n]tumblr_njklavzbqe1thxsmlo1_1280.jpg",
     "w": "Magic: the Gathering",
     "b": [
-      "F"
+      "F",
+      "dg"
     ],
     "s": "https://64.media.tumblr.com/05e7011764b0e576da5c620113b79fe8/tumblr_njklavzbqe1thxsmlo1_1280.jpg"
   },
@@ -91179,7 +91263,8 @@
     "b": [
       "F",
       "hp",
-      "hl"
+      "hl",
+      "el"
     ],
     "s": "https://cdn.donmai.us/original/d6/3a/__nissa_revane_magic_the_gathering_drawn_by_prywinko__d63abbdc95788f194c57a14f3cfefab6.jpg",
     "in": "https://lotus.paheal.net/_images/ecfb906e585ab3ced4b2de2ec4cfc7da/2765763%20-%20Magic_the_Gathering%20Nissa_Revane%20Tey.png"
@@ -94317,7 +94402,7 @@
   },
   {
     "u": 5282,
-    "n": "Selene Gallio",
+    "n": "Selene Gallio/Black Queen",
     "t": 8,
     "i": "https://i.imgur.com/FMrd7zgl.jpg",
     "s": "https://i.imgur.com/FMrd7zg.jpg",
@@ -99827,11 +99912,13 @@
     "u": 11896,
     "n": "Vampire Girl",
     "t": 4,
-    "i": "",
-    "s": "https://chan.sankakucomplex.com/post/show/7332414",
+    "i": "[n]80_vgirl_st01.png",
+    "s": "https://static.miraheze.org/mgqwiki/0/0f/80_vgirl_st01.png",
     "w": "Monster Girl Quest",
     "b": [
-      "F"
+      "F",
+      "mp",
+      "vp"
     ]
   },
   {
@@ -99842,7 +99929,8 @@
     "s": "https://chan.sankakucomplex.com/post/show/1836948",
     "w": "Monster Girl Quest",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -99864,17 +99952,10 @@
     "s": "https://chan.sankakucomplex.com/post/show/4637111",
     "w": "Monster Girl Quest",
     "b": [
-      "F"
-    ]
-  },
-  {
-    "u": 11900,
-    "n": "Four Bandits",
-    "t": 5,
-    "i": "",
-    "w": "Monster Girl Quest",
-    "b": [
-      "M"
+      "F",
+      "dg",
+      "cc",
+      "mg"
     ]
   },
   {
@@ -99930,9 +100011,13 @@
     "w": "Monster Girl Quest",
     "b": [
       "F",
+      "dc",
+      "st",
       "dr",
       "en",
-      "wh"
+      "wh",
+      "mg",
+      "su"
     ]
   },
   {
@@ -100051,7 +100136,11 @@
     "s": "https://vignette.wikia.nocookie.net/monstergirlquest/images/1/1c/Queen_Harpy.png/revision/latest?cb=20120316225303",
     "w": "Monster Girl Quest",
     "b": [
-      "F"
+      "F",
+      "sc",
+      "dh",
+      "rl",
+      "mg"
     ]
   },
   {
@@ -100150,7 +100239,8 @@
     "s": "https://vignette.wikia.nocookie.net/monstergirlquest/images/f/f6/Cupid_00.jpg/revision/latest?cb=20130702183308",
     "w": "Monster Girl Quest",
     "b": [
-      "F"
+      "F",
+      "an"
     ]
   },
   {
@@ -100268,7 +100358,11 @@
     "s": "https://vignette.wikia.nocookie.net/monstergirlquest/images/5/5a/Succubus_Witch.png/revision/latest?cb=20120319161628",
     "w": "Monster Girl Quest",
     "b": [
-      "F"
+      "F",
+      "dr",
+      "wh",
+      "mg",
+      "su"
     ]
   },
   {
@@ -100418,13 +100512,17 @@
   },
   {
     "u": 11947,
-    "n": "Elle",
+    "n": "El",
     "t": 3,
     "i": "elle.jpg",
     "s": "https://vignette.wikia.nocookie.net/monstergirlquest/images/f/f2/Elle.jpg/revision/latest?cb=20130603191052",
     "w": "Monster Girl Quest",
     "b": [
-      "F"
+      "F",
+      "hr",
+      "pc",
+      "mg",
+      "Mermaid"
     ]
   },
   {
@@ -100446,7 +100544,10 @@
     "s": "https://vignette.wikia.nocookie.net/monstergirlquest/images/5/5c/Harpy_Twins.png/revision/latest?cb=20120313190551",
     "w": "Monster Girl Quest",
     "b": [
-      "F"
+      "F",
+      "mi",
+      "tw",
+      "mg"
     ]
   },
   {
@@ -101890,7 +101991,13 @@
     "s": "https://chan.sankakucomplex.com/post/show/14642277",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "hl",
+      "ps",
+      "mr",
+      "sr",
+      "mg",
+      "rg"
     ]
   },
   {
@@ -102110,12 +102217,13 @@
     "u": 4858,
     "n": "Mileena",
     "t": 5,
-    "i": "mileena_render_png.png",
-    "s": "https://vignette.wikia.nocookie.net/mkwikia/images/e/e3/Mileena_Render_PNG.png/revision/latest?cb=20150606180946",
+    "i": "[n]__mileena_mortal_kombat_and_1_more_drawn_by_dandon_fuga__sample-48fa86776a36ee702c243ce0ae4b2062.jpg",
+    "s": "https://cdn.donmai.us/sample/48/fa/__mileena_mortal_kombat_and_1_more_drawn_by_dandon_fuga__sample-48fa86776a36ee702c243ce0ae4b2062.jpg",
     "w": "Mortal Kombat",
     "b": [
       "F",
-      "C"
+      "C",
+      "cm"
     ],
     "in": "https://pictures.hentai-foundry.com/r/radsquid/344330/radsquid-344330-Mileena.jpg"
   },
@@ -102123,12 +102231,13 @@
     "u": 4859,
     "n": "Jade",
     "t": 4,
-    "i": "screen_shot_2019_05_24_at_4.20.04_pm.png",
-    "s": "https://7lwy5tgst9-flywheel.netdna-ssl.com/wp-content/uploads/2019/05/Screen-Shot-2019-05-24-at-4.20.04-PM.png",
+    "i": "[n]__jade_mortal_kombat_drawn_by_dandon_fuga__sample-264c0323633b98733b49593716429090.jpg",
+    "s": "https://cdn.donmai.us/sample/26/4c/__jade_mortal_kombat_drawn_by_dandon_fuga__sample-264c0323633b98733b49593716429090.jpg",
     "w": "Mortal Kombat",
     "b": [
       "F",
-      "C"
+      "C",
+      "cm"
     ],
     "in": "https://pictures.hentai-foundry.com/g/Ganassa/103188/Ganassa-103188-Mortal_Kombat_Jade.jpg"
   },
@@ -107463,7 +107572,9 @@
     "s": "https://i.pinimg.com/originals/cc/5f/81/cc5f81195e52ab1bcb23582d46de2376.png",
     "w": "Nasuverse",
     "b": [
-      "M"
+      "M",
+      "dr",
+      "cm"
     ],
     "d": "Servants - Assassin"
   },
@@ -108897,7 +109008,11 @@
     "b": [
       "F",
       "C",
-      "an"
+      "hz",
+      "ml",
+      "an",
+      "nd",
+      "cm"
     ]
   },
   {
@@ -109262,11 +109377,11 @@
     "w": "Omamori Himari",
     "b": [
       "mp",
+      "cr",
+      "dm",
       "me",
       "ct",
-      "sr",
-      "Yokai",
-      "Corruption"
+      "sr"
     ]
   },
   {
@@ -110584,10 +110699,11 @@
       "hz",
       "cl",
       "ml",
+      "tm",
       "th",
       "sp",
-      "cm",
-      "pr"
+      "pr",
+      "cm"
     ],
     "d": "B-Class Hero"
   },
@@ -111930,7 +112046,8 @@
       "gn",
       "cc"
     ],
-    "in": "http://pictures.hentai-foundry.com/t/Toxxy/553650/Toxxy-553650-More_Moira.png"
+    "in": "http://pictures.hentai-foundry.com/t/Toxxy/553650/Toxxy-553650-More_Moira.png",
+    "d": "Talon"
   },
   {
     "u": 8983,
@@ -113719,8 +113836,10 @@
     "s": "https://danbooru.donmai.us/posts/3125563",
     "w": "Pokemon",
     "b": [
-      "F"
-    ]
+      "F",
+      "mt"
+    ],
+    "in": "https://lotus.paheal.net/_images/521ef8704b702e512469fede12196666/286164%20-%20Greta%20Heracross%20Porkyman%20Shedinja%20Soara.png"
   },
   {
     "u": 7886,
@@ -129524,11 +129643,11 @@
     "b": [
       "F",
       "C",
-      "Yokai",
-      "sr",
-      "dr",
       "mp",
-      "Succubus"
+      "dr",
+      "dm",
+      "sr",
+      "su"
     ]
   },
   {
@@ -129614,9 +129733,9 @@
       "C",
       "mp",
       "dr",
-      "sr",
       "sd",
-      "Succubus"
+      "sr",
+      "su"
     ]
   },
   {
@@ -132004,7 +132123,9 @@
     "s": "https://chan.sankakucomplex.com/post/show/4308747",
     "w": "Sekirei",
     "b": [
-      "F"
+      "F",
+      "al",
+      "cm"
     ]
   },
   {
@@ -132029,6 +132150,8 @@
     "b": [
       "F",
       "th",
+      "gn",
+      "al",
       "nd",
       "ha"
     ]
@@ -139931,7 +140054,7 @@
   {
     "u": 9134,
     "n": "Amy Sorel",
-    "t": 3,
+    "t": 4,
     "i": "8d76955b4ab28ef049273f1642a714b5.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/633760",
     "w": "Soul Calibur",
@@ -139984,7 +140107,7 @@
   {
     "u": 9138,
     "n": "Ivy Valentine",
-    "t": 3,
+    "t": 4,
     "i": "sample_8294be3ee270083af7ab526d8a3bbd80.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/6326029",
     "w": "Soul Calibur",
@@ -139997,7 +140120,7 @@
   {
     "u": 9139,
     "n": "Natsu",
-    "t": 3,
+    "t": 4,
     "i": "5297aeb74b660dbfbf0569d009242f06.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/3596791",
     "w": "Soul Calibur",
@@ -140036,7 +140159,7 @@
   {
     "u": 9142,
     "n": "Sophitia Alexandra",
-    "t": 3,
+    "t": 4,
     "i": "sample_3fc1109ad9b7b60485e258a52a4920f0.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/6394238",
     "w": "Soul Calibur",
@@ -140049,7 +140172,7 @@
   {
     "u": 9143,
     "n": "Taki",
-    "t": 3,
+    "t": 4,
     "i": "sample_1262108b243b028e45d402556888dc5d.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/6919816",
     "w": "Soul Calibur",
@@ -140612,7 +140735,11 @@
     "w": "Soulsborne",
     "b": [
       "F",
-      "C"
+      "C",
+      "hr",
+      "dr",
+      "dg",
+      "cm"
     ],
     "d": "Dark Souls 1"
   },
@@ -141067,7 +141194,9 @@
     "w": "Spice & Wolf",
     "b": [
       "F",
-      "C"
+      "C",
+      "gd",
+      "sr"
     ],
     "in": "https://pictures.hentai-foundry.com/m/MinaCream/497101/MinaCream-497101-190_Holo_Spice_and_Wolf.jpg"
   },
@@ -141075,8 +141204,8 @@
     "u": 12463,
     "n": "Mariana",
     "t": 4,
-    "i": "af298781172b0e353abafc6191ba0512.jpg",
-    "s": "https://e621.net/posts/1766343",
+    "i": "[n]Iida00.3621370.jpg",
+    "s": "https://s1.zerochan.net/Iida.%28Splatoon%29.600.3621370.jpg",
     "w": "Splatoon",
     "b": [
       "F"
@@ -141274,17 +141403,6 @@
       "M"
     ],
     "d": "Final Fantasy 15"
-  },
-  {
-    "u": 749,
-    "n": "Golbez",
-    "t": 7,
-    "i": "",
-    "w": "Square (Final Fantasy)",
-    "b": [
-      "M"
-    ],
-    "d": "Final Fantasy 4"
   },
   {
     "u": 761,
@@ -151733,7 +151851,8 @@
       "hr",
       "mt",
       "cl",
-      "mu"
+      "mu",
+      "pr"
     ],
     "d": "The Witcher"
   },
@@ -151854,7 +151973,7 @@
       "cr",
       "fm",
       "tm",
-      "dv"
+      "dm"
     ],
     "d": "The Witcher 3"
   },
@@ -153693,7 +153812,7 @@
       "F",
       "C",
       "dc",
-      "Alien"
+      "al"
     ]
   },
   {
@@ -153836,7 +153955,7 @@
       "mt",
       "sd",
       "pc",
-      "Alien"
+      "al"
     ],
     "in": "https://i.imgur.com/8ntND7y.png"
   },
@@ -158667,8 +158786,8 @@
     "u": 8769,
     "n": "Yrel",
     "t": 6,
-    "i": "d7xcnmp_38044dc3_3895_4ff9_977c_2a003e7103c2.jpg",
-    "s": "https://www.deviantart.com/krysdecker/art/Yrel-479281057",
+    "i": "[n]Blizza2980118.jpeg",
+    "s": "https://img2.joyreactor.cc/pics/post/Blizzard-%D1%84%D1%8D%D0%BD%D0%B4%D0%BE%D0%BC%D1%8B-Yrel-2980118.jpeg",
     "w": "Warcraft",
     "b": [
       "F",
@@ -163105,8 +163224,7 @@
       "F",
       "C",
       "un",
-      "vp",
-      "Nosferatu"
+      "vp"
     ],
     "d": "Vampire: Masquerade Bloodlines",
     "s": "https://i.imgur.com/rIL5NC8.jpg"
@@ -163643,7 +163761,9 @@
     "s": "https://vignette.wikia.nocookie.net/parahumans/images/c/cb/B_B_Wards_Vista.jpg/revision/latest/scale-to-width-down/204?cb=20170111220536",
     "w": "Worm",
     "b": [
-      "F"
+      "F",
+      "sp",
+      "cm"
     ]
   },
   {
@@ -165862,7 +165982,11 @@
     "w": "Legend of Zelda",
     "d": "Breath of the Wild",
     "b": [
-      "F"
+      "F",
+      "en",
+      "sn",
+      "gn",
+      "cc"
     ],
     "in": "http://pictures.hentai-foundry.com/b/Bichrom/854735/Bichrom-854735-Purah_pinup.png"
   },

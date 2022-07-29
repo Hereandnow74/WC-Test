@@ -103,7 +103,7 @@ const searchedMissions = computed(() => {
     ],
   }
   if (scope.value !== 'Any') sopt.$and.push({ scope: `=${scope.value}` })
-  if (author.value !== 'Any') sopt.$and.push({ author: `=${author.value}` })
+  if (author.value !== 'Any') sopt.$and.push({ author: `="${author.value}"` })
   return fuse.value.search(sopt)
 })
 

@@ -25,7 +25,7 @@
 import { isArray } from 'lodash'
 import { waifu_perks, DLCwaifu_perks } from '~/data/waifu_perks'
 import { genericDesc } from '~/data/talents'
-import { lazyLoadImg, useTooltips } from '~/logic/misc'
+import { useTooltips } from '~/logic/misc'
 import { useStore } from '~/store/store'
 
 const { settings, companionsUIDs } = useStore()
@@ -35,8 +35,6 @@ const specificList = ref<HTMLElement|null>(null)
 const modalImage = ref('')
 
 const filterAvailable = ref(false)
-
-onMounted(() => lazyLoadImg(specificList.value))
 
 const specificPerksWithDLC = computed(() => !settings.value.allChosenAuthors[0]
   ? waifu_perks

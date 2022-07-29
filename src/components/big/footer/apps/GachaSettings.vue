@@ -22,6 +22,13 @@
         <Button size="Small" label="Del" bg-color="bg-red-600" @click="gachaSettings.whitelist.splice(i, 1)" />
       </div>
     </div>
+    <div class="flex gap-2 flex-col md:flex-row min-h-0 ">
+      <TagInput
+        v-model="gachaSettings.tagList"
+        class="flex-grow"
+        placeholder="Tags - press Enter to add"
+      />
+    </div>
     <div class="dark whitespace-nowrap flex flex-col gap-1">
       <NumberInput v-model="gachaSettings.rollCost" :min="0" type="number" label="Price for 1 roll" />
       <!-- <NumberInput v-model="gachaSettings.tenRollCost" type="number" label="Price for 10 roll" /> -->
@@ -36,6 +43,7 @@ import { usePlayStore } from '~/store/play'
 
 const { allWorldNames } = useWorlds()
 const world = ref('')
+const tag = ref('')
 const { gachaSettings } = usePlayStore()
 
 const emit = defineEmits(['close'])

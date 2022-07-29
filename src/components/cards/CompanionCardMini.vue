@@ -142,7 +142,9 @@
 
 <script lang="ts" setup>
 import type { PropType } from '@vue/runtime-core'
+import { isNumber } from 'lodash'
 import { CHAR_COSTS, useAllChars, waifusThatHasPerk, waifuTags } from '~/data/constants'
+import { waifuPerksObject } from '~/data/waifu_perks'
 import { imageLink } from '~/logic'
 import { SavedChar } from '~/store/chargen'
 import { useStore } from '~/store/store'
@@ -177,7 +179,12 @@ const emit = defineEmits(['sell', 'undo', 'free'])
 const { flags, settings, manualSellKf } = useStore()
 const { allCharsObject } = useAllChars()
 
-const fullChar = computed(() => allCharsObject.value[props.char.uid])
+const fullChar = computed(() => {
+  if (isNumber(props.char.uid))
+    return allCharsObject.value[props.char.uid] || { i: '', b: [] }
+  else
+    return { i: waifuPerksObject[props.char.uid].image, b: [] }
+})
 
 const tags = computed(() => {
   return fullChar.value.b.map(x => waifuTags[x] ? waifuTags[x] : { tag: x, color: 'bg-teal-600', desc: '' })

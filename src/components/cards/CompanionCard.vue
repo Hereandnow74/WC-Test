@@ -25,16 +25,16 @@
           :class="{'opacity-100': inFocus}"
         >
           <template v-if="!isAlredyBought(charData.uid)">
-            <Button size="Small" bg-color="bg-red-500" label="buy" @click="buyCompanion" />
+            <Button size="Small" bg-color="bg-red-500" label="buy" @click="buyCompanion(charData)" />
             <Button
               v-if="flags.chargen"
               size="Small"
               bg-color="bg-orange-500"
               label="yoink"
-              @click="yoinkCompanion"
+              @click="yoinkCompanion(charData)"
             />
             <Button v-if="charData.tier !== 11" size="Small" bg-color="bg-violet-600" label="used" @click="usedModal = true" />
-            <Button size="Small" :label="`capture${charCost}`" @click="captureCompanion" />
+            <Button size="Small" :label="`capture${charCost}`" @click="captureCompanion(charData)" />
           </template>
           <Button v-else-if="flags.chargen" size="Small" label="undo" @click="undoBuying(charData.uid)" />
         </div>
@@ -123,16 +123,17 @@
       </div>
     </div>
     <teleport to="#app">
-      <SlightlyUsed v-if="usedModal" :char="charData" class="z-20" @click="usedModal = false" @buyUsed="slightlyCompanion" />
+      <SlightlyUsed v-if="usedModal" :char="charData" class="z-20" @click="usedModal = false" @buyUsed="data => slightlyCompanion(data, charData)" />
     </teleport>
   </div>
 </template>
 
 <script lang='ts' setup>
-import { findIndex, intersection, random } from 'lodash-es'
-import { CHAR_COSTS, waifusThatHasPerk, waifuTags } from '~/data/constants'
+import { Character } from 'global'
+import { findIndex, random } from 'lodash-es'
+import { CHAR_COSTS, PLACEHOLDER_IMAGE, waifusThatHasPerk, waifuTags } from '~/data/constants'
 import { lazyLoadSingleImg, tagToggles } from '~/logic'
-import { confirmDialog } from '~/logic/dialog'
+import { buyCompanion, captureCompanion, yoinkCompanion, slightlyCompanion } from '~/logic/waifuLogic'
 import { useStore } from '~/store/store'
 
 const props = defineProps({
@@ -168,7 +169,7 @@ const props = defineProps({
 
 const {
   flags, companions, localUserCharacters, companionsUIDs, captureKoeff, favorites,
-  fullStartingBudget, settings, favoritesObject, csr, baseBudget,
+  settings, favoritesObject,
 } = useStore()
 
 const infoIcon = ref<EventTarget | null>(null)
@@ -188,7 +189,7 @@ const cardEl = ref<HTMLImageElement| null>(null)
 const companionEl = ref<HTMLImageElement| null>(null)
 const inFocus = useElementHover(cardEl)
 
-const charData = computed(() => {
+const charData = computed<Character>(() => {
   const res = props.char.t
     ? {
       uid: props.char.u,
@@ -239,63 +240,12 @@ const imageLink = computed(() => {
       }
     }
     else {
-      return 'data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22400%22%20height%3D%22500%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20400%20500%22%20preserveAspectRatio%3D%22none%22%3E%0A%20%20%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%20%20%3Cstyle%20type%3D%22text%2Fcss%22%3E%0A%20%20%20%20%20%20%20%20%20%20%23holder%20text%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20fill%3A%20%23ffffff%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20font-family%3A%20sans-serif%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20font-size%3A%2050px%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20font-weight%3A%20400%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%3C%2Fstyle%3E%0A%20%20%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%20%20%3Cg%20id%3D%22holder%22%3E%0A%20%20%20%20%20%20%20%20%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23888%22%3E%3C%2Frect%3E%0A%20%20%20%20%20%20%20%20%3Cg%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ctext%20text-anchor%3D%22middle%22%20x%3D%2250%25%22%20y%3D%2250%25%22%20dy%3D%22.3em%22%3Eno%20image%3C%2Ftext%3E%0A%20%20%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%3C%2Fsvg%3E'
+      return PLACEHOLDER_IMAGE
     }
   }
 })
 
-const priceTier = (t: number): number => flags.value.noBindings && t !== 11 && t !== 1 ? t - 1 : t
-
 watch(settings.value, () => nsfw.value = settings.value.nsfw)
-
-function buyCompanion() {
-  const char = charData.value
-  const sex = intersection(char.tags, ['F', 'M', 'O'])[0] || 'F'
-  companions.value.push({ uid: char.uid, name: char.name, world: char.world, sex, tier: char.tier, priceTier: priceTier(char.tier), method: 'buy' })
-}
-
-function captureCompanion() {
-  const char = charData.value
-  // let price = 0
-  const sex = intersection(char.tags, ['F', 'M', 'O'])[0] || 'F'
-  const res = { uid: char.uid, name: char.name, world: char.world, sex, tier: char.tier, priceTier: char.tier, method: 'capture' }
-  // if (underLoan.value && char.tier !== 11) {
-  //   price = Math.ceil(CHAR_COSTS[char.tier] * captureKoeff.value)
-  //   const half = Math.round(price / 2)
-  //   if (half <= loan.value.owed) {
-  //     loan.value.owed -= half
-  //     price -= half
-  //     trHistory.value.push(`Captured ${char.name} +${half}`)
-  //   }
-  //   else {
-  //     price -= loan.value.owed
-  //     trHistory.value.push(`Captured ${char.name} +${loan.value.owed}`)
-  //     loan.value.owed = 0
-  //   }
-  //   res.price = price
-  // }
-
-  companions.value.push(res)
-}
-
-function yoinkCompanion() {
-  const char = charData.value
-  if ((!csr.value && fullStartingBudget.value * 0.2 >= CHAR_COSTS[char.tier]) || (csr.value && (baseBudget.value + fullStartingBudget.value) * 0.2 >= CHAR_COSTS[char.tier])) {
-    const sex = intersection(char.tags, ['F', 'M', 'O'])[0] || 'F'
-    companions.value.push({ uid: char.uid, name: char.name, world: char.world, sex, tier: char.tier, priceTier: priceTier(char.tier), method: 'yoink' })
-  }
-  else {
-    confirmDialog(`20% of your current budget is <span class='text-green-500'>${fullStartingBudget.value * 0.2}</span> which is less than ${CHAR_COSTS[char.tier]} needed to Yoink this character.`, 'info')
-  }
-}
-
-function slightlyCompanion(slightlyUsedData: any) {
-  const char = charData.value
-  const tier = charData.value.tier + slightlyUsedData.tier
-  const pt = priceTier(charData.value.tier + slightlyUsedData.tier - slightlyUsedData.traumaTier)
-  const sex = intersection(char.tags, ['F', 'M', 'O'])[0] || 'F'
-  companions.value.push({ uid: char.uid, name: char.name, world: char.world, sex, tier, priceTier: pt, method: 'used' })
-}
 
 function undoBuying(uid: number) {
   companions.value.splice(findIndex(companions.value, { uid }), 1)

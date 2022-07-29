@@ -11,6 +11,19 @@ interface DBCharacter {
   b: string[]
 }
 
+interface Character {
+  uid: number
+  name: string
+  world: string
+  sub?: string
+  tier: number
+  image: string
+  sourceImage?: string
+  image_nsfw?: string
+  nickname?: string
+  tags: string[]
+}
+
 interface DBWorld {
   worldName: string
   rating: number
@@ -101,6 +114,7 @@ declare global {
 }
 export {
   DBCharacter,
+  Character,
   DBWorld,
   PerkFull,
   Challenge,

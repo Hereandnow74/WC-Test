@@ -42,6 +42,7 @@ const manualDevotees = useStorage<Record<number, number>>('manualDevotees', { 1:
 
 const gachaSettings = useStorage('gachaSettings', {
   whitelist: [] as string[],
+  tagList: [] as string[],
   defaultChances: true,
   useWhiltelist: false,
   chances: [],

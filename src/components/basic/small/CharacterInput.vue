@@ -3,7 +3,7 @@
     <Input
       :id="idd"
       v-model="value"
-      placeholder="Char name"
+      :placeholder="placeholder"
       @click="showTip"
     />
     <div v-if="errorMessage" class="text-sm text-red-600 dark:text-red-300">
@@ -39,7 +39,10 @@ const props = defineProps({
     type: String,
     default: 'chars',
   },
-
+  placeholder: {
+    type: String,
+    default: 'Char Name',
+  },
 })
 
 const listEl = ref<HTMLElement|null>(null)
@@ -50,25 +53,30 @@ const searchResult = ref([] as any[])
 
 const { charSearch } = useCharSearch()
 
-watch(value, () => { if (charSearch.value) searchResult.value = charSearch.value.search(value.value, { limit: 10 }) })
+watch(value, () => { if (charSearch.value && value.value.length <= 10) searchResult.value = charSearch.value.search(value.value, { limit: 10 }) })
 
-let list = null
+const list = null
+
+const charTippy = computed(() => {
+  listEl.value.hidden = false
+  const list = tippy(`#${props.idd}`, {
+    content: listEl.value,
+    allowHTML: true,
+    trigger: 'manual',
+    arrow: false,
+    interactive: true,
+    placement: 'bottom',
+    appendTo: () => document.body,
+  })[0]
+  return list
+})
+
 watch(searchResult, () => {
-  if (list) list.destroy()
-  if (searchResult.value.length > 0 && listEl.value) {
-    listEl.value.hidden = false
-    list = tippy(`#${props.idd}`, {
-      content: listEl.value,
-      allowHTML: true,
-      trigger: 'manual',
-      arrow: false,
-      interactive: true,
-      placement: 'bottom',
-      appendTo: () => document.body,
-    })[0]
-    if (!gotResult.value)
-      list.show()
+  if (searchResult.value.length > 0 && listEl.value && !gotResult.value) {
+    charTippy.value.setContent(listEl.value)
+    charTippy.value.show()
   }
+  else { charTippy.value.hide() }
   gotResult.value = false
 })
 

@@ -114,7 +114,7 @@ export function toReadableTime(seconds: number) {
 
 export function imageLink(link: string, uid: number) {
   if (link) {
-    if (link.startsWith('http')) { return link }
+    if (link.startsWith('http') || link.startsWith('/')) { return link }
     else {
       if (uid > 100000)
         return `https://cdn.statically.io/gh/Om1cr0n/cat_thumb/main/docs/thumbs/${link}`
@@ -143,7 +143,7 @@ export function imageLink(link: string, uid: number) {
 const charSearch = computed(() => {
   const options = {
     findAllMatches: true,
-    threshold: 0.5,
+    threshold: 0.3,
     keys: [{ name: 'n', weight: 2 }, 'w'],
   }
 

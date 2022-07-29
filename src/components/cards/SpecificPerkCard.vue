@@ -2,21 +2,24 @@
   <div
     :id="waifuPerk.title"
     class="relative p-2 max-w-screen-md cursor-pointer"
-    bg="amber-200 dark:amber-800"
     border="3 gray-700"
-    :class="{'!border-green-600 !hover:border-amber-400': specificAvailable(waifuPerk)}"
+    :class="[{'!border-green-600 !hover:border-amber-400': specificAvailable(waifuPerk)}, 'bg-amber-300 dark:(bg-gradient-to-tr to-amber-700 from-yellow-800)']"
     @click="pickWaifuPerk"
   >
     <img
       v-if="waifuPerk.image !=='' && !settings.allImg"
-      class="h-[300px] max-w-1/2 object-contain ml-auto pl-2 inline-block float-right"
+      ref="imageEl"
+      class="max-h-[300px] max-w-1/2 object-contain ml-2 inline-block float-right border border-gray-900"
+      :src="PLACEHOLDER_IMAGE"
       :data-src="waifuPerk.image"
       :alt="waifuPerk.title"
     />
     <img
       v-if="waifuPerk.image_2 && !settings.allImg"
-      class="h-[300px] max-w-1/2 object-contain ml-auto pl-2 inline-block float-right"
-      :src="waifuPerk.image_2"
+      ref="imageEl2"
+      class="max-h-[300px] max-w-1/2 object-contain ml-2 inline-block float-right border border-gray-900"
+      :src="PLACEHOLDER_IMAGE"
+      :data-src="waifuPerk.image_2"
       :alt="waifuPerk.title"
     />
     <icon-park-outline:full-screen-one
@@ -24,24 +27,12 @@
       class="absolute top-3 right-3 text-gray-200 hover:text-blue-400 cursor-pointer mix-blend-difference"
       @click.stop="() => emit('changeModalImage', waifuPerk.image)"
     />
-    <table v-if="waifuPerk.title === 'Lord Camelot'" class="float-right m-2">
-      <thead>
-        <th class="pr-4 border-2 border-gray-700">
-          Credits Paid
-        </th>
-        <th class="pr-4 border-2 border-gray-700">
-          Saint Quartz
-        </th>
-      </thead>
-      <tr v-for="n in 10" :key="n">
-        <td class="border-2 border-gray-700">
-          {{ gachaTable[0][n - 1] }}
-        </td>
-        <td class="border-2 border-gray-700">
-          {{ gachaTable[1][n - 1] }}
-        </td>
-      </tr>
-    </table>
+    <Table
+      v-if="waifuPerk.title === 'Lord Camelot'"
+      class="float-right m-2"
+      :headers="['Credits Paid','Saint Quartz']"
+      :rows="gachaTable"
+    />
     <h3 class="flex gap-1 flex-wrap text-lg font-bold relative">
       {{ waifuPerk.title }}
       <Select
@@ -52,9 +43,9 @@
         @click.stop
       />
       <Select
-        v-if="waifuList.length"
+        v-if="Object.keys(waifuList).length >= 2"
         v-model="chosenWaifu"
-        :options="waifuList"
+        :options="Object.keys(waifuList)"
         class="text-base"
         @click.stop
       />
@@ -73,14 +64,16 @@
     </h3>
     <div>
       <span class="font-bold">Waifu: </span>
-      <span v-if="isArray(waifuPerk.waifu)" class="inline-flex gap-2 text-blue-600 dark:text-blue-200">
-        <router-link v-for="wf in waifuPerk.waifu" :key="wf" :to="`/companions/?name=${wf}`" class="hover:underline">
-          {{ wf }}
-        </router-link>
+      <span class="inline-flex gap-2 text-blue-600 dark:text-blue-300">
+        <span v-for="wf, i in waifuPerk.waifu" :key="wf" class="flex gap-1 items-center">
+          <router-link :to="isNumber(waifuPerk.waifuUID[i]) ? `/companions/?name=${wf}` : `#${wf}`" class="hover:underline">
+            {{ wf }}
+          </router-link>
+          <span v-if="isNumber(waifuPerk.waifuUID[i]) && !companionsUIDs[waifuPerk.waifuUID[i]]" title="Buy companion" class="icon-text-btn bg-gray-600 rounded py-0.5 px-1 text-gray-200" @click.stop="purchaseCompanion(waifuPerk.waifuUID[i])">
+            <mdi:cart-variant />
+          </span>
+        </span>
       </span>
-      <router-link v-else :to="`/companions/?name=${waifuPerk.waifu}`" class="hover:underline text-blue-600 dark:text-blue-200">
-        {{ waifuPerk.waifu }}
-      </router-link>
       from <span class="dark:text-violet-200 text-violet-900">{{ waifuPerk.from }}</span>
     </div>
     <div class="flex gap-4">
@@ -94,11 +87,12 @@
 
 <script lang="ts" setup>
 import type { PropType } from 'vue'
-import { findIndex, isArray } from 'lodash-es'
+import { findIndex, find, isNumber, isString } from 'lodash-es'
 import { WaifuPerk } from '~/data/waifu_perks'
-import { chooseWaifuPerk, specificAvailable } from '~/logic'
+import { chooseWaifuPerk, lazyLoadSingleImg, specificAvailable } from '~/logic'
 import { useStore } from '~/store/store'
-import { useAllChars } from '~/data/constants'
+import { CHAR_COSTS, PLACEHOLDER_IMAGE, useAllChars } from '~/data/constants'
+import { buyCompanion } from '~/logic/waifuLogic'
 
 const props = defineProps({
   waifuPerk: {
@@ -110,27 +104,84 @@ const props = defineProps({
 const { allCharsObject } = useAllChars()
 
 const chosenWaifu = ref('')
+const imageEl = ref<HTMLImageElement | null>(null)
+const imageEl2 = ref<HTMLImageElement | null>(null)
 
 const emit = defineEmits(['changeModalImage'])
 
 const gachaTable = [
-  [1, 2, 5, 10, 20, 50, 100, 200, 500, 1000],
-  [1, 2, 7, 15, 34, 96, 210, 454, 1251, 2677],
+  [1, 1],
+  [2, 2],
+  [5, 7],
+  [10, 15],
+  [20, 34],
+  [50, 96],
+  [100, 210],
+  [200, 254],
+  [500, 1251],
+  [1000, 2677],
 ]
+//  [1, 2, 5, 10, 20, 50, 100, 200, 500, 1000],
+// [1, 2, 7, 15, 34, 96, 210, 454, 1251, 2677],
 
-const { settings, waifuPerks, companionsUIDs } = useStore()
+const { settings, waifuPerks, companionsUIDs, companions } = useStore()
 
 const waifuList = computed(() => {
-  let res = []
-  if (isArray(props.waifuPerk.waifu)) {
-    res = props.waifuPerk.waifu.filter((_, i) => companionsUIDs.value[props.waifuPerk.waifuUID[i]])
-    chosenWaifu.value = res[0]
-  }
+  let res = {} as Record<string, number>
+  res = props.waifuPerk.waifu.reduce((all, waifu, i) => {
+    if (companionsUIDs.value[props.waifuPerk.waifuUID[i]])
+      all[waifu] = props.waifuPerk.waifuUID[i]
+    return all
+  }, {} as Record<string, number>)
+  chosenWaifu.value = Object.keys(res)[0]
   return res
 })
 
 function pickWaifuPerk() {
-  chooseWaifuPerk(props.waifuPerk, { title: props.waifuPerk.title, waifu: chosenWaifu.value, cost: props.waifuPerk.cost || 0, refund: props.waifuPerk.discount || 0 })
+  const charUID = waifuList.value[chosenWaifu.value]
+  if (findIndex(waifuPerks.value, { uid: props.waifuPerk.uid }) !== -1) {
+    chooseWaifuPerk(props.waifuPerk, { title: props.waifuPerk.title, waifu: chosenWaifu.value, uid: props.waifuPerk.uid, cost: props.waifuPerk.cost || 0, refund: props.waifuPerk.discount || 0 })
+    const ind = findIndex(companions.value, { uid: props.waifuPerk.uid })
+    if (ind !== -1)
+      companions.value.splice(ind, 1)
+    return
+  }
+
+  const savedCharInd = findIndex(companions.value, { uid: charUID })
+  const savedChar = companions.value[savedCharInd]
+  // If character UID not equal Waifu Perk UID
+  if (savedChar && savedChar.uid !== props.waifuPerk.uid && props.waifuPerk.tier) {
+    // If old character UID is Waifu Perk UID, delete old Waifu Perk
+    if (isString(savedChar.uid)) {
+      const ind = findIndex(waifuPerks.value, { uid: savedChar.uid })
+      if (ind !== -1)
+        waifuPerks.value.splice(ind, 1)
+    }
+    chooseWaifuPerk(props.waifuPerk, { title: props.waifuPerk.title, waifu: chosenWaifu.value, uid: props.waifuPerk.uid, cost: CHAR_COSTS[props.waifuPerk.tier], refund: props.waifuPerk.discount || 0 })
+
+    savedChar.uid = props.waifuPerk.uid
+    savedChar.tier = props.waifuPerk.tier
+    savedChar.priceTier = 0
+  }
+  else if (!props.waifuPerk.tier) {
+    chooseWaifuPerk(props.waifuPerk, { title: props.waifuPerk.title, waifu: chosenWaifu.value, uid: props.waifuPerk.uid, cost: props.waifuPerk.cost || 0, refund: props.waifuPerk.discount || 0 })
+  }
 }
+
+onMounted(() => {
+  if (imageEl.value)
+    lazyLoadSingleImg(imageEl.value)
+  if (imageEl2.value)
+    lazyLoadSingleImg(imageEl2.value)
+})
+
+function purchaseCompanion(uid: number) {
+  const char = allCharsObject.value[uid]
+  if (char)
+    buyCompanion({ uid: char.u, name: char.n, tier: char.t, world: char.w, tags: char.b })
+}
+
+// Change uid to custom Specific perk UID, change name to perk name?, change tier, use perk uid to futher purchase perks
+// Create shadow uid -> image object
 
 </script>

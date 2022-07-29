@@ -71,7 +71,7 @@ function onePull() {
 const companionsUIDs = computed(() => new Set(companions.value.map(x => x.uid)))
 
 const suitableChars = computed(() => {
-  return allCharsComp.value.filter(char => char.i && char.i.length && (gachaSettings.value.useWhiltelist ? gachaSettings.value.whitelist.includes(char.w) || gachaSettings.value.whitelist.includes(char.d) : true))
+  return allCharsComp.value.filter(char => char.i && char.i.length && (gachaSettings.value.useWhiltelist && gachaSettings.value.whitelist.length ? gachaSettings.value.whitelist.includes(char.w) || gachaSettings.value.whitelist.includes(char.d) : true) && (gachaSettings.value.whitelist && gachaSettings.value.tagList.length ? intersection(gachaSettings.value.tagList, char.b).length : true))
 })
 
 const charsByTier = computed(() => groupBy(suitableChars.value, 't'))
