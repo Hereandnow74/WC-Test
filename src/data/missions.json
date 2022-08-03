@@ -1,5 +1,237 @@
 [
   {
+    "source": "",
+    "title": "Kengan president",
+    "desc": "You may have heard about the Kengan Association and how it controls the Japanese economy in its world... And the Kengan Annihilation Tournament with Chairmanship in place is coming. Why don't you win it?",
+    "author": "Ratcatcher",
+    "scope": "Quick",
+    "rewardType": "Credits",
+    "reward": "500 credits",
+    "loca": "Kengan Ashura",
+    "budget": 100,
+    "objectives": [
+      {
+        "reward": "TS 1 as Tokita Niko",
+        "type": "Perks",
+        "value": "You or your fighter defeat Tokita Ohma"
+      },
+      {
+        "type": "Companions",
+        "reward": "Instant capture of the CEO",
+        "value": "You or your fighter crush a fighter whose CEO is a woman"
+      },
+      {
+        "type": "Other",
+        "value": "Personally defeat Kure Rayan or otherwise prove yourself as strong as him",
+        "reward": "You are betrothed to Kure Karura"
+      },
+      {
+        "type": "Perks",
+        "value": "Personally defeat Kuroki Gensai",
+        "reward": "TS 1 as Kuroki Gensai"
+      },
+      {
+        "type": "Credits",
+        "reward": "1000 credits",
+        "value": "Win while your fighter is Sakura Hibiki"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You can't fight it yourself from the start. You must have a retinue member fight in the tournament for you, and they must not be higher of Tier 6 (they'll be nerfed if needed) or use energy attacks or magic, only martial arts."
+      },
+      {
+        "value": "Establish your own company. It may even be a fake one, all it matters is that it can stand scrutiny"
+      },
+      {
+        "value": "Raise a hundred million yen and win Kengan membership from one of the companies who offer it as prize for unofficial matches. You can't interfere with the one where Yamashita Trading Co. wins membership"
+      },
+      {
+        "value": "Raise five billion yen to enter the tournament."
+      },
+      {
+        "value": "Have your fighter win the preliminaries (you can't kick Yamashita Trading Co. out here) and the early fights."
+      },
+      {
+        "value": "When a substitution is authorized, replace your fighter with yourself. The same limitations apply."
+      },
+      {
+        "value": "Win the tournament and decide who the next chairman is. You can even appoint yourself."
+      }
+    ],
+    "image": "",
+    "uid": "HokGE"
+  },
+  {
+    "source": "",
+    "scope": "Standard",
+    "objectives": [
+      {
+        "value": "Kill them at their strongest",
+        "type": "Perks",
+        "reward": "Free TS 1&2 of their powerset for you or a member of your retinue"
+      }
+    ],
+    "desc": "Have you ever hated the Main Protagonist in a series you really enjoy? Well, here is the mission for you! The goal is to kill all the Protagonists you can throughout the multiverse. ",
+    "image": "",
+    "reward": "The full list price of any Protagonist you kill",
+    "rewardType": "Credits",
+    "title": "Protagonist Hunter",
+    "loca": "Generic",
+    "conditions": [
+      {
+        "value": "You must kill the main protagonist of the \"canon\" of the worlds you enter. (IE Issei in High School DXD, Naruto in Naruto, etc)"
+      }
+    ],
+    "author": "TDon123",
+    "budget": 0,
+    "uid": "QFFyx"
+  },
+  {
+    "author": "Ratcatcher",
+    "desc": "Have you ever dreamed to be a martial artist? Of training under the best and master multiple arts? Or maybe to lead a collection of delinquent students against other delinquents, but villainous? Here's your chance, to become History's Strongest Disciple and one of the namesake founders of Nijima Haruo's gang in Shirahama Kenichi's place. Your dream will be fulfilled... If you survive the training, that is.",
+    "conditions": [
+      {
+        "value": "Chargen only"
+      },
+      {
+        "value": "No overt mind control allowed"
+      },
+      {
+        "value": "You must become the disciple of the Ryozanpaku Masters - and live (the masters WILL bring you to the brink of death and then heal you, and then there's Apachai's lack of \"finesse\")"
+      },
+      {
+        "value": "Insure Kenichi doesn't also become a disciple of all Ryozanpaku Masters, or that he starts studying under one of them until after the Alliance is established"
+      },
+      {
+        "value": "You must also inspire Nijima into reinventing himself as the charismatic leader of what in HSDK was the Shinpaku Alliance. You'll know you succeeded when he stops making rumors about your battles against Ragnarok without you having suffered some catastrophic loss."
+      },
+      {
+        "value": "Mission will be completed once you become a High-Level Disciple"
+      }
+    ],
+    "reward": "500 credits",
+    "source": "",
+    "rewardType": "Credits",
+    "image": "https://i.ibb.co/hWjTvvf/186787-shinpakualliance.jpg",
+    "budget": 30,
+    "loca": "History's Strongest Disciple Kenichi",
+    "title": "Shin-whatever Alliance",
+    "objectives": [
+      {
+        "value": "Get an additional Master to train you and join Ryozanpaku",
+        "type": "Perks",
+        "reward": "One level in your Heritage"
+      },
+      {
+        "type": "Companions",
+        "reward": "Instant capture of Rachel Stanley",
+        "value": "Reach Expert level"
+      },
+      {
+        "type": "Other",
+        "value": "Save Kokorone Rimi from the other members of Titans and seduce her (no overt mind control allowed)",
+        "reward": "One upgrade of your Binding method"
+      },
+      {
+        "type": "Companions",
+        "value": "Get Kisara and Freya into a lesbian relationship",
+        "reward": "One additional tier if you Capture them"
+      },
+      {
+        "type": "Perks",
+        "value": "Reach Master level",
+        "reward": "Ryozanpaku Dojo as Sweet Home Expansion"
+      }
+    ],
+    "scope": "Standard",
+    "uid": "BpxKR"
+  },
+  {
+    "rewardType": "Other",
+    "image": "",
+    "author": "Sleepy Fluffball™",
+    "source": "",
+    "title": "The Missing Chosen Undead",
+    "objectives": [
+      {
+        "type": "Other",
+        "reward": "Knowledge and theory of the Soul Sorcery involved with her Lifehunt Scythe and two choice sorceries related to ice.",
+        "value": "Free Crossbreed Priscilla from the Painted World."
+      },
+      {
+        "reward": "Your own Pyromancy Flame equivalent to that of the Witch of Izalith alongside basic pyromancies such as forming a simple spear of flame.",
+        "value": "Return Chaos Witch Quelaag to her human form. Save her sister and return her to her human form as well.",
+        "type": "Other"
+      },
+      {
+        "type": "Perks",
+        "reward": "Corruption Defense x1",
+        "value": "Loot Seath's entire library before Logan finds it."
+      },
+      {
+        "value": "Permanently end Manus.",
+        "type": "Other",
+        "reward": "An abyssal version of the First Flame with no sentience under your control. Allows your body itself to interact with intangible beings as if they were solid, alongside allowing equipment coated with it to do the same. Other effects require yourself discovering them."
+      },
+      {
+        "value": "Capture the second Chosen Undead instead of killing them.",
+        "type": "Perks",
+        "reward": "Chosen Undead gets a free Template Stacking of a Maiden."
+      },
+      {
+        "type": "Perks",
+        "value": "Tame Sif before capturing him.",
+        "reward": "Sif gets a Template Stacking of Fenrir, while you get a Template Stacking of Artorias."
+      }
+    ],
+    "desc": "Time and time again, there has been a chosen undead appointed to link the First Flame once again. This time we've specifically made a scenario for someone to do the opposite. Upon choosing this mission you take the place of the Chosen Undead, with the objective of freeing humanity from the First Flame. You start off in the same place as the Chosen Undead would at the beginning of their journey with their very curse applied to you, regardless of defenses, but this is additive to what you had before. \n\nShortly after the mission starts another Chosen Undead will be awakened to link the flame once again, and will be hostile whilst unbound, influenced by those who are set on linking the flame still - negotiation is not an option.",
+    "scope": "Grand",
+    "conditions": [
+      {
+        "value": "The contractor needs to link the flame, only then will humanity be freed. Environmental Defense protects from the flame itself but not the process of fueling it; Inexhaustible is recommended for that."
+      },
+      {
+        "value": "Only the contractor, you, can link the flame. This is permanent, and it has roughly the same amount of sentience as a Shroud."
+      }
+    ],
+    "budget": 500,
+    "reward": "Obtain the First Flame which can be removed from the setting, and has enough sapience to communicate, gaining more as time goes on. Has dominion over Flame, Passion and Life within its influence. Whilst used, allows those linked to you in some form to recover and for you to create bonfires to extend its influence; you may summon the coiled swords used to create bonfires at will as they are required for the bonfires to work. You gain no credits from capturing it as it comes pre-captured and is equivalent to a T9 waifu in capabilities. Gain 200 credits alongside a purchase of Exit Stage Left if you do not have it already, or an additional 5 credits if you do.",
+    "loca": "Dark Souls",
+    "uid": "lNnbG"
+  },
+  {
+    "desc": "If you know of the Teen Titans tv show you will know of the feud between Blackfire and Starfire. What you may not know is of how it was born - out of their father's blatant abuse of his older daughter and favoritism for the younger, that eventually resulted in Blackfire just wanting to get one over her sister. A sister who still loves her, but whose patience is not infinite. Settle things right, and have them reconcile as good sisters... And your subjects and consorts, as Blackfire puts a lot of value in her birthright as the next Grand Ruler.",
+    "rewardType": "Companions",
+    "budget": 200,
+    "loca": "DC (space side)",
+    "reward": "Instant capture of Blackfire and Starfire, their full capture price added to the credit reward",
+    "title": "Sisterly reconciliation",
+    "conditions": [
+      {
+        "value": "The events happen in the tv show continuity, before the episode \"Betrothed\""
+      },
+      {
+        "value": "Do it yourself: you can't be helped by any member of your retinue"
+      },
+      {
+        "value": "Defeat Myand'r (Blackfire and Starfire's father) in single unarmed combat and claim Grand Rulership of Tamaran for yourself"
+      },
+      {
+        "value": "Summon both sisters and defeat them in combat, once in single combat each and once both of them at the same time to solidify your claim to the throne and make them your consorts"
+      },
+      {
+        "value": "Once you've claimed them as your consorts make them completely submit. They'll be immune to overt mind control and Capture, but will feel subtler rules"
+      }
+    ],
+    "source": "",
+    "objectives": [],
+    "image": "",
+    "author": "Ratcatcher",
+    "scope": "Quick",
+    "uid": "qLMfc"
+  },
+  {
     "rewardType": "Credits",
     "author": "Masterofbiomes",
     "conditions": [

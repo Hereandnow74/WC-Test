@@ -26,6 +26,7 @@ DLCgenericPerks.push({
   image: 'https://i.ibb.co/rdzSLf2/Grail-Knowledge.jpg',
   complex: 'target',
   cost: 1,
+  max: 5,
   desc: `Does your companion come from a less developed world than your own? Or perhaps their world is incredibly distant in a philosophical sense? Don't worry, we'll fix it!
   <p>Having acquired this perk, you can be sure that your companion will receive all the necessary common knowledge for your world. Including general schooling, hygiene and home appliance skills</p>
   <p>If bougth for 5 times, you will have the ability to give this perk to any member of your retinue at no cost.</p>

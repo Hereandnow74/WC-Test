@@ -167,7 +167,7 @@ const perkToSave = reactive({
     if (props.perk.title === 'Command Seals') countMod = 1
     if (props.increment || props.perk.increment) cs = (perkToSave.count / 2) * (cs * 2 + (perkToSave.count - 1) * cs)
     else
-      cs = (perkToSave.count && props.perk.multiple) ? (cs * (perkToSave.count - countMod)) : cs
+      cs = (perkToSave.count && props.perk.multiple) ? (cs * (Math.min(perkToSave.count, props.perk.max || Infinity) - countMod)) : cs
     return cs
   }),
   target: '',
@@ -203,7 +203,7 @@ function sendPerk() {
       obj.count = obj.complex.length
       perkToSave.count = obj.count
     }
-    obj.cost = cost.value * obj.count
+    obj.cost = cost.value * Math.min(obj.count, props.perk.max || Infinity)
   }
   // Set count to 0 to delete perk if clicked twice
   if (props.savedPerk.count === obj.count && obj.count > 0)

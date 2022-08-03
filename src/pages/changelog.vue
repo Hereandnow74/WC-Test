@@ -5,6 +5,16 @@
     </h2>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
+        30 July 2022
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>~123 new user submitted characters, new missions, 5 new worlds</li>
+        <li>Some new waifu perks (Honkai Impact)</li>
+        <li>Bugfixes & Small changes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
         27 July 2022
       </h3>
       <ul class="list-decimal list-inside">

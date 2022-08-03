@@ -188,7 +188,7 @@
           :char="char"
           :with-image="!settings.allImg"
           :is-user-char="char.type === 'local'"
-          :class="!settings.allImg ? 'h-[500px]' : 'pt-[32px]'"
+          :class="!settings.allImg ? 'h-[500px]' : ''"
           @edit-companion="editCompanion"
           @reportCompanion="reportCompanion"
         />

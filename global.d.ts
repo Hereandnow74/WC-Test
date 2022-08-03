@@ -18,7 +18,7 @@ interface Character {
   sub?: string
   tier: number
   image: string
-  sourceImage?: string
+  sourceImage: string
   image_nsfw?: string
   nickname?: string
   tags: string[]

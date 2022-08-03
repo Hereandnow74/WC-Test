@@ -46,7 +46,14 @@
       <h3 class="text-lg text-gray-400">
         Orbs
       </h3>
-      <Enum color="text-blue-400 hover:text-blue-300" :list="pvpPerks" path="/intensity" empty-message="" />
+      <Enum
+        color="text-blue-400 hover:text-blue-300"
+        :list="pvpPerks"
+        :edit-mode="editMode"
+        :price-mode="priceMode"
+        path="/intensity"
+        empty-message=""
+      />
     </div>
     <div id="Origin">
       <h3 class="text-lg text-gray-400">

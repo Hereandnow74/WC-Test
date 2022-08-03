@@ -292,7 +292,7 @@ const tier11tickets = computed(() => {
 
 const totalCost = computed(() => startingOrigin.value.cost + heritageCost.value + bindingCost.value
 + ridePerksCost.value + homePerksCost.value + talentsCost.value + defensesCost.value + miscPerksCost.value
-+ waifuPerksCost.value + genericWaifuPerksCost.value + luresCost.value + companionsCost.value + otherCost.value)
++ waifuPerksCost.value + genericWaifuPerksCost.value + luresCost.value + companionsCost.value + otherCost.value + pvpPerksCost.value)
 
 const companionsWithoutSold = computed(() => companions.value.filter(c => !c.sold))
 const companionsComp = computed(() => companionsWithoutSold.value.filter(cmp => cmp.role === 'Companion' || !cmp.role))

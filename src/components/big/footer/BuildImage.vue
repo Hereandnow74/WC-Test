@@ -253,7 +253,7 @@
 import html2canvas from 'html2canvas'
 import { useAllChars } from '~/data/constants'
 import { imageLink, isBuildImage, numberToSigned } from '~/logic'
-import { customDialog } from '~/logic/dialog'
+import { confirmDialog, customDialog } from '~/logic/dialog'
 import { useSettings } from '~/logic/searchSettings'
 import { useChallenges } from '~/store/challenges'
 import { useStore } from '~/store/store'
@@ -310,8 +310,14 @@ function createImage() {
       if (answer === 'Copy to Clipboard') {
         canvas.toBlob((blob) => {
           if (blob) {
-            const item = new ClipboardItem({ 'image/png': blob })
-            navigator.clipboard.write([item])
+            try {
+              const item = new ClipboardItem({ 'image/png': blob })
+              navigator.clipboard.write([item])
+              confirmDialog('Image copied successfully.', 'info')
+            }
+            catch (error) {
+              confirmDialog('Your browser don\'t suport <b>ClipboardItem</b>, you can google how to turn it on.', 'info')
+            }
           }
         })
       }

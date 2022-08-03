@@ -38,20 +38,6 @@
     <h3 class="text-center text-xl py-2">
       Other Contractors
     </h3>
-    <Desc class="max-w-screen-md mx-auto dark:bg-gray-800 bg-blue-gray-300 rounded" :desc="contractors" />
-    <div
-      class="mt-4 pb-8 column-gap"
-      :class="settings.columns !== 'auto' ? `column-count-${settings.columns}` : 'md:column-count-2 xl:column-count-3 4xl:column-count-4 5xl:column-count-5'"
-    >
-      <IntensityCard
-        v-for="rule in intensityPvP"
-        :id="rule.title"
-        :key="rule.title"
-        :perk="rule"
-        :is-active="allEffects.includes(rule.title)"
-        @chooseIntensity="chooseIntensity"
-      />
-    </div>
     <Desc class="max-w-screen-md mx-auto dark:bg-gray-800 bg-blue-gray-300 rounded" :desc="invasion" />
     <div
       class="mt-4 pb-8 column-gap md:column-count-2"
@@ -64,6 +50,20 @@
         :is-active="allEffects.includes(rule.title)"
         bg="blue-100 dark:gray-700 hover:blue-200 dark:hover:gray-800"
         @pickPerk="chooseOrb"
+      />
+    </div>
+    <Desc class="max-w-screen-md mx-auto dark:bg-gray-800 bg-blue-gray-300 rounded" :desc="contractors" />
+    <div
+      class="mt-4 pb-8 column-gap"
+      :class="settings.columns !== 'auto' ? `column-count-${settings.columns}` : 'md:column-count-2 xl:column-count-3 4xl:column-count-4 5xl:column-count-5'"
+    >
+      <IntensityCard
+        v-for="rule in intensityPvP"
+        :id="rule.title"
+        :key="rule.title"
+        :perk="rule"
+        :is-active="allEffects.includes(rule.title)"
+        @chooseIntensity="chooseIntensity"
       />
     </div>
   </div>

@@ -157,11 +157,12 @@ function pickWaifuPerk() {
       if (ind !== -1)
         waifuPerks.value.splice(ind, 1)
     }
-    chooseWaifuPerk(props.waifuPerk, { title: props.waifuPerk.title, waifu: chosenWaifu.value, uid: props.waifuPerk.uid, cost: CHAR_COSTS[props.waifuPerk.tier], refund: props.waifuPerk.discount || 0 })
+    chooseWaifuPerk(props.waifuPerk, { title: props.waifuPerk.title, waifu: chosenWaifu.value, uid: props.waifuPerk.uid, cost: props.waifuPerk.cost ? (savedChar.method !== 'capture' ? CHAR_COSTS[props.waifuPerk.tier] : props.waifuPerk.cost) : 0, refund: props.waifuPerk.discount || 0 })
 
     savedChar.uid = props.waifuPerk.uid
     savedChar.tier = props.waifuPerk.tier
-    savedChar.priceTier = 0
+    if (props.waifuPerk.cost && savedChar.method !== 'capture')
+      savedChar.priceTier = 0
   }
   else if (!props.waifuPerk.tier) {
     chooseWaifuPerk(props.waifuPerk, { title: props.waifuPerk.title, waifu: chosenWaifu.value, uid: props.waifuPerk.uid, cost: props.waifuPerk.cost || 0, refund: props.waifuPerk.discount || 0 })

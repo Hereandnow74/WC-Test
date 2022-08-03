@@ -3,17 +3,18 @@
     class="py-1 w-full text-gray-200 bg-warm-gray-700 rounded"
   >
     <div class="border border-gray-800 h-full flex flex-col" :class="[isUserChar ? 'bg-warm-gray-800': 'bg-gray-800']">
-      <div ref="cardEl" class="flex-grow relative">
+      <div ref="cardEl" class="relative flex-grow">
         <img
-          v-show="withImage"
+          v-if="withImage"
           ref="companionEl"
           class="rounded absolute object-cover h-full w-full object-top"
           :data-src="imageLink"
           :alt="charData.name"
         >
+        <div v-else class="h-16"></div>
         <icon-park-outline:full-screen-one
           class="absolute top-1 right-1 hover:text-blue-400 cursor-pointer mix-blend-difference"
-          @click="() => (showModal = true, modalImage=(nsfw ? charData.image_nsfw || imageLink : imageLink))"
+          @click="() => (showModal = true, modalImage=(nsfw ? charData.image_nsfw || imageLink : charData.sourceImage || imageLink))"
         />
         <span
           v-if="charData.image_nsfw"
@@ -34,7 +35,7 @@
               @click="yoinkCompanion(charData)"
             />
             <Button v-if="charData.tier !== 11" size="Small" bg-color="bg-violet-600" label="used" @click="usedModal = true" />
-            <Button size="Small" :label="`capture${charCost}`" @click="captureCompanion(charData)" />
+            <Button class="whitespace-nowrap" size="Small" :label="`capture${charCost}`" @click="captureCompanion(charData)" />
           </template>
           <Button v-else-if="flags.chargen" size="Small" label="undo" @click="undoBuying(charData.uid)" />
         </div>
@@ -114,7 +115,11 @@
     </div>
     <div v-if="showModal" class="fixed inset-0 bg-black bg-opacity-10 flex place-content-center items-center z-20" @click="showModal = false">
       <div class="relative overflow-auto w-max flex place-content-center items-center">
-        <img class="object-contain max-h-screen" :src="modalImageCmp" alt="full image">
+        <img v-if="/[^ \!@\$\^&\(\)\+\=]+(\.png|\.jpeg|\.gif|\.jpg|\.webp)$/.test(modalImageCmp)" class="object-contain max-h-screen" :src="modalImageCmp" alt="full image">
+        <div v-else class="bg-gray-700 rounded p-2">
+          Full image link leads to a different site
+          <a :href="modalImageCmp" target="_blank" rel="noopener noreferrer" class="underline">{{ modalImageCmp }}</a>
+        </div>
         <span
           v-if="charData.image_nsfw"
           class="absolute top-1 right-4 hover:text-blue-400 cursor-pointer mix-blend-difference"

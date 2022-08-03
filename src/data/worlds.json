@@ -939,6 +939,10 @@
         "name": "Chernobog, Kazdel",
         "rating": 6,
         "a": "c"
+      },
+      {
+        "name": "Talos-II",
+        "rating": 7
       }
     ],
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/992079977493319730/Arknights_Official.png"
@@ -1817,7 +1821,29 @@
   {
     "rating": 7,
     "worldName": "Fallout",
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992407118751731792/ss_080a8d33031d68033b9c35040a35caf74b7b1692.1920x1080.jpg"
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992407118751731792/ss_080a8d33031d68033b9c35040a35caf74b7b1692.1920x1080.jpg",
+    "condition": [
+      {
+        "name": "Fallout 1",
+        "rating": 4
+      },
+      {
+        "name": "Fallout 2",
+        "rating": 6
+      },
+      {
+        "name": "Fallout 3",
+        "rating": 5
+      },
+      {
+        "name": "Fallout: New Vegas",
+        "rating": 6
+      },
+      {
+        "name": "Fallout 4",
+        "rating": 5
+      }
+    ]
   },
   {
     "rating": 7,
@@ -2110,6 +2136,10 @@
       {
         "name": "Neo-Gotham (Mainline)",
         "rating": 7
+      },
+      {
+        "name": "Flashpoint",
+        "rating": 9
       }
     ],
     "image": "https://comicvine.gamespot.com/a/uploads/original/11133/111337338/6666703-uyakpr2hud611.jpg"
@@ -2569,6 +2599,10 @@
       {
         "rating": 5,
         "name": "1970-1981 (The First Wizarding War)"
+      },
+      {
+        "name": "Global Wizarding War (1920-1945)",
+        "rating": 5
       }
     ]
   }
