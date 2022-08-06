@@ -6,8 +6,8 @@
       </h3>
       <div>
         Time I spend on Interactive Waifu Catalog so far -
-        <span class="text-amber-500 text-2xl">{{ 423 + 357 }}</span> hours in
-        <span class="text-amber-500 text-2xl">{{ 107 + 118 }}</span> days.
+        <span class="text-amber-500 text-2xl">{{ 423 + 496 }}</span> hours in
+        <span class="text-amber-500 text-2xl">{{ 107 + 200 }}</span> days.
       </div>
       <div>
         If you found some bugs, have any questions about Interactive, suggestions, collaborations or you want to hire me
@@ -72,19 +72,19 @@ const topUsers = ref<[string, number][]>([])
 const nicknames = [
   'Definitely not Dio',
   'Despin',
-  'Templar9999',
-  'Cyrus',
-  'Bryce C.',
-  'Alex W.',
-  'TaiGambol',
-  'BenFang322',
-  'Jason C.',
   'Darin E.',
   'cameron ngo',
+  'Templar9999',
+  'Cyrus',
+  'Alex W.',
+  'TaiGambol',
+  'Bryce C.',
+  'BenFang322',
+  'Jason C.',
   'Cole',
+  'Bobnewland',
   'KatzSmile',
   'Beatrix',
-  'Bobnewland',
 ]
 
 getUserChars().then(x => Object.entries(countBy(x, c => c.k))

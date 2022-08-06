@@ -164,7 +164,7 @@ function pickWaifuPerk() {
     if (props.waifuPerk.cost && savedChar.method !== 'capture')
       savedChar.priceTier = 0
   }
-  else if (!props.waifuPerk.tier) {
+  else if (!props.waifuPerk.tier || !savedChar) {
     chooseWaifuPerk(props.waifuPerk, { title: props.waifuPerk.title, waifu: chosenWaifu.value, uid: props.waifuPerk.uid, cost: props.waifuPerk.cost || 0, refund: props.waifuPerk.discount || 0 })
   }
 }

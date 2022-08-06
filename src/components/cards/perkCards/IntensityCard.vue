@@ -63,7 +63,7 @@
     </div>
     <div v-if="perk.whitelist" class="px-2 flex gap-2">
       Requires:
-      <Enum :list="perk.whitelist" path="/intensity" />
+      <Enum :list="perk.whitelist" />
     </div>
   </div>
 </template>
@@ -93,7 +93,8 @@ const emit = defineEmits(['chooseIntensity'])
 
 const coopCount = ref(1)
 const perkImg = ref<HTMLImageElement | null>(null)
-const coopIntensity = computed(() => coopCount.value * 0.2)
+const coopIntensity = computed(() => parseFloat((coopCount.value * 0.2).toFixed(1)))
+console.log(33)
 
 const { baseBudgetAfter, settings } = useStore()
 

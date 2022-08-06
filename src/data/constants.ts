@@ -4,7 +4,7 @@ import { DLCgenericPerks, DLChomes, DLCperks, DLCtalents, DLCheritages, DLClureE
 import { DLCRides, rides } from './rides'
 import { homes, demiplane, dungeon } from './demdun'
 import { patrons } from './patronsDLC'
-import { intensity, intensityPvP } from '~/data/intensity'
+import { intensity, intensityPvP, invasionPvP } from '~/data/intensity'
 import { origin } from '~/data/origin'
 import { bindings, lures, lureExpansions, otherControls } from '~/data/binding'
 import { heritages } from '~/data/heritage'
@@ -112,35 +112,35 @@ export const waifuTags = {
   hp: { tag: 'Hopper', short: 'hp', effect: '', desc: 'Have a world hopping power', color: 'bg-[#b600e9]' },
   dc: { tag: 'Doctor', short: 'dc', effect: '', desc: 'Trained in medicine', color: 'bg-[#dd1919]' },
   hl: { tag: 'Healer', short: 'hl', effect: '', desc: 'Supernatural healing ability', color: 'bg-[#dd1919]' },
-  st: { tag: 'Sturdy', short: 'st', effect: '', desc: 'is known for handling disease, chemical medicine, or poisons.', color: 'bg-[#612e13]' },
-  hr: { tag: 'Harsh', short: 'hr', effect: '', desc: 'hails from a harsh climate.', color: 'bg-gradient-to-t to-blue-300 from-gray-100 text-black' },
-  hz: { tag: 'Hazard', short: 'hz', effect: '', desc: 'can ignore hazardous environments.', style: { background: 'linear-gradient(0deg, rgba(79,123,2,1) 0%, rgba(163,255,0,1) 70%)', color: '#000' } },
-  mt: { tag: 'Monster Tamer', short: 'mt', effect: '', desc: 'is known as a monster-tamer or otherwise being good with animals.', color: 'bg-gradient-to-t to-red-600 from-gray-100 text-black' },
-  cl: { tag: 'Cool', short: 'cl', effect: '', desc: 'is known for keeping a cool head or having great willpower.', color: 'bg-[#72c7cd] text-black' },
-  ml: { tag: 'Materialist', short: 'ml', effect: '', desc: 'known for having a material vice.', color: 'bg-[#4a8108]' },
-  ps: { tag: 'Psychic', short: 'ps', effect: '', desc: 'is known as a psychic or mind-manipulator.', style: { background: 'linear-gradient(0deg, rgba(124,0,255,1) 0%, rgba(248,0,255,1) 70%)', color: '#fff' } },
-  mp: { tag: 'Mind Manipulator', short: 'mp', effect: '', desc: 'is known as a psychic or mind-manipulator.', color: 'bg-[#61457d]' },
-  bj: { tag: 'Bodyjack', short: 'bj', effect: '', desc: 'is known for bodyjacking others.', color: 'bg-[#631900]' },
-  dr: { tag: 'Drain HP/MP/SP', short: 'dr', effect: '', desc: 'can drain or feed on life, mana, or souls.', color: 'bg-gradient-to-r to-red-500 from-blue-500' },
-  id: { tag: 'Instant Death', short: 'id', effect: '', desc: 'is known for inflicting instant death (conceptual one) ', color: 'bg-gradient-to-r to-green-500 from-dark-500' },
+  st: { tag: 'Sturdy', short: 'st', effect: '', desc: 'Is known for handling disease, chemical medicine, or poisons.', color: 'bg-[#612e13]' },
+  hr: { tag: 'Harsh', short: 'hr', effect: '', desc: 'Hails from a harsh climate.', color: 'bg-gradient-to-t to-blue-300 from-gray-100 text-black' },
+  hz: { tag: 'Hazard', short: 'hz', effect: '', desc: 'Can ignore hazardous environments.', style: { background: 'linear-gradient(0deg, rgba(79,123,2,1) 0%, rgba(163,255,0,1) 70%)', color: '#000' } },
+  mt: { tag: 'Monster Tamer', short: 'mt', effect: '', desc: 'Is known as a monster-tamer or otherwise being good with animals.', color: 'bg-gradient-to-t to-red-600 from-gray-100 text-black' },
+  cl: { tag: 'Cool', short: 'cl', effect: '', desc: 'Is known for keeping a cool head or having great willpower.', color: 'bg-[#72c7cd] text-black' },
+  ml: { tag: 'Materialist', short: 'ml', effect: '', desc: 'Known for having a material vice.', color: 'bg-[#4a8108]' },
+  ps: { tag: 'Psychic', short: 'ps', effect: '', desc: 'Is known as a psychic or mind-manipulator.', style: { background: 'linear-gradient(0deg, rgba(124,0,255,1) 0%, rgba(248,0,255,1) 70%)', color: '#fff' } },
+  mp: { tag: 'Mind Manipulator', short: 'mp', effect: '', desc: 'Is known as a psychic or mind-manipulator.', color: 'bg-[#61457d]' },
+  bj: { tag: 'Bodyjack', short: 'bj', effect: '', desc: 'Is known for bodyjacking others.', color: 'bg-[#631900]' },
+  dr: { tag: 'Drain HP/MP/SP', short: 'dr', effect: '', desc: 'Can drain or feed on life, mana, or souls.', color: 'bg-gradient-to-r to-red-500 from-blue-500' },
+  id: { tag: 'Instant Death', short: 'id', effect: '', desc: 'Is known for inflicting instant death (conceptual one) ', color: 'bg-gradient-to-r to-green-500 from-dark-500' },
   oi: { tag: 'Not Die', short: 'oi', effect: '', desc: 'Do not die even when killed.', color: 'bg-gradient-to-r to-red-300 from-yellow-300 text-black' },
-  pl: { tag: 'Polymorph', short: 'pl', effect: '', desc: 'is known for polymorphing others.', color: 'bg-[#464d6d]' },
-  ur: { tag: 'Unstable Reality', short: 'ur', effect: '', desc: 'hails from a region where the local reality is unstable.', color: 'bg-gradient-to-r to-dark-300 via-purple-700 from-dark-300' },
-  cr: { tag: 'Corrupting', short: 'cr', effect: '', desc: 'is known for forcibly bringing out others’ dark sides.', color: 'bg-gradient-to-r to-dark-900 from-gray-500' },
-  sc: { tag: 'Social', short: 'sc', effect: '', desc: 'is known for their ability to read or sense people.', color: 'bg-[#f9ca94] text-black' },
-  di: { tag: 'Divination', short: 'di', effect: '', desc: 'is known for using divination or other non-technological remote viewing.', color: 'bg-gradient-to-r to-blue-200 via-white from-blue-200 text-black' },
-  fm: { tag: 'Fate manipulation', short: 'fm', effect: '', desc: 'is known as a fate- or luck-manipulator.', color: 'bg-gradient-to-t to-red-900 via-red-500 from-red-900' },
-  lm: { tag: 'Luck manipulation', short: 'lm', effect: '', desc: 'is known as a fate- or luck-manipulator.', color: 'bg-gradient-to-t to-yellow-900 via-yellow-400 from-yellow-900 text-black' },
-  tm: { tag: 'Time manipulation', short: 'tm', effect: '', desc: 'is known as a time-manipulator.', color: 'bg-gradient-to-t to-blue-900 via-blue-400 from-blue-900' },
+  pl: { tag: 'Polymorph', short: 'pl', effect: '', desc: 'Is known for polymorphing others.', color: 'bg-[#464d6d]' },
+  ur: { tag: 'Unstable Reality', short: 'ur', effect: '', desc: 'Hails from a region where the local reality is unstable.', color: 'bg-gradient-to-r to-dark-300 via-purple-700 from-dark-300' },
+  cr: { tag: 'Corrupting', short: 'cr', effect: '', desc: 'Is known for forcibly bringing out others’ dark sides.', color: 'bg-gradient-to-r to-dark-900 from-gray-500' },
+  sc: { tag: 'Social', short: 'sc', effect: '', desc: 'Is known for their ability to read or sense people.', color: 'bg-[#f9ca94] text-black' },
+  di: { tag: 'Divination', short: 'di', effect: '', desc: 'Is known for using divination or other non-technological remote viewing.', color: 'bg-gradient-to-r to-blue-200 via-white from-blue-200 text-black' },
+  fm: { tag: 'Fate Manipulation', short: 'fm', effect: '', desc: 'Is known as a fate- or luck-manipulator.', color: 'bg-gradient-to-t to-red-900 via-red-500 from-red-900' },
+  lm: { tag: 'Luck Manipulation', short: 'lm', effect: '', desc: 'Is known as a fate- or luck-manipulator.', color: 'bg-gradient-to-t to-yellow-900 via-yellow-400 from-yellow-900 text-black' },
+  tm: { tag: 'Time Manipulation', short: 'tm', effect: '', desc: 'Is known as a time-manipulator.', color: 'bg-gradient-to-t to-blue-900 via-blue-400 from-blue-900' },
   lv: { tag: 'Leveling', short: 'lv', effect: '', desc: 'Give access to a leveling/class/job system', style: { background: 'linear-gradient(0deg, rgba(182,159,2,1) 0%, rgba(255,222,0,1) 70%)', color: '#000' } },
 
-  dm: { tag: 'Demon', short: 'dm', effect: '', desc: 'Include Devils as well', style: { background: 'linear-gradient(90deg, rgba(148,1,1,1) 0%, rgba(255,0,0,1) 50%, rgba(148,1,1,1) 100%)', color: '#000' } },
+  dm: { tag: 'Demon', short: 'dm', effect: '', desc: 'Include devils as well', style: { background: 'linear-gradient(90deg, rgba(148,1,1,1) 0%, rgba(255,0,0,1) 50%, rgba(148,1,1,1) 100%)', color: '#000' } },
   an: { tag: 'Angel', short: 'an', effect: '', desc: '', color: 'bg-[#ffffff] text-black' },
   mr: { tag: 'Monster', short: 'mr', effect: '', desc: '', color: 'bg-[#754141]' },
   dg: { tag: 'Dragon', short: 'dg', effect: '', desc: '', style: { background: 'linear-gradient(0deg, rgba(255,201,0,1) 0%, rgba(233,83,28,1) 70%)', color: '#fff' } },
   th: { tag: 'Transhuman', short: 'th', effect: '', desc: '', style: { background: 'linear-gradient(0deg, rgba(167,0,255,1) 0%, rgba(28,0,245,1) 100%)', color: '#fff' } },
   ot: { tag: 'Outsider', short: 'ot', effect: '', desc: '', style: { background: 'linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(83,0,214,1) 100%)', color: '#fff' } },
-  gd: { tag: 'Deity', short: 'gd', effect: '', desc: 'God or Goddess', color: 'bg-[#ffffff] text-black' },
+  gd: { tag: 'Deity', short: 'gd', effect: '', desc: 'A God or Goddess', color: 'bg-[#ffffff] text-black' },
   rs: { tag: 'Resurrection', short: 'rs', effect: '', desc: 'Capable of ressurecting others', color: 'bg-[#ffffff] text-black' },
   mu: { tag: 'Mutant', short: 'mu', effect: '', desc: '', color: 'bg-[#315be5]' },
   dh: { tag: 'Demi-human', short: 'dh', effect: '', desc: '', color: 'bg-[#8d4127]' },
@@ -149,7 +149,7 @@ export const waifuTags = {
   sn: { tag: 'Scientist', short: 'sn', effect: '', desc: '', color: 'bg-[#2b548d]' },
   sd: { tag: 'Student', short: 'sd', effect: '', desc: '', color: 'bg-[#e9d5ab] text-black' },
   wh: { tag: 'Witch', short: 'wh', effect: '', desc: '', color: 'bg-[#0d7703]' },
-  ai: { tag: 'AI', short: 'ai', effect: '', desc: 'Artificial Intelligence', color: 'bg-gradient-to-t to-gray-400 from-gray-200 text-black' },
+  ai: { tag: 'AI', short: 'ai', effect: '', desc: 'An artificial intelligence', color: 'bg-gradient-to-t to-gray-400 from-gray-200 text-black' },
   me: { tag: 'Mage', short: 'me', effect: '', desc: '', color: 'bg-teal-500 text-black' },
   cf: { tag: 'Chef', short: 'cf', effect: '', desc: '', color: 'bg-[#dd8812]' },
   pi: { tag: 'Pirate', short: 'pi', effect: '', desc: '', style: { background: 'linear-gradient(0deg, rgba(4,21,149,1) 0%, rgba(0,120,255,1) 100%)', color: '#fff' } },
@@ -171,7 +171,7 @@ export const waifuTags = {
   ev: { tag: 'Evil', short: 'ev', effect: '', desc: '', style: { background: 'linear-gradient(0deg, rgba(255,0,0,1) 42%, rgba(134,60,60,1) 100%)', color: '#000' } },
   gn: { tag: 'Genius', short: 'gn', effect: '', desc: '', color: 'bg-teal-500 text-black' },
   rl: { tag: 'Ruler', short: 'rl', effect: '', desc: 'rule over a country or region or even just a tribe', color: 'bg-[#FFD700] text-black' },
-  tp: { tag: 'Trap', short: 'tp', effect: '', desc: 'oh, she is cute, but its a boy!', color: 'bg-teal-500 text-black' },
+  tp: { tag: 'Trap', short: 'tp', effect: '', desc: 'Oh, she is cute, but its a boy!', color: 'bg-teal-500 text-black' },
   mi: { tag: 'Multiple', short: 'mi', effect: '', desc: 'Package deal', color: 'bg-teal-500 text-black' },
   tw: { tag: 'Twins', short: 'tw', effect: '', desc: 'Twins / Triplets / Quadruplets / etc.', color: 'bg-teal-500 text-black' },
   cc: { tag: 'Crafter', short: 'cc', effect: '', desc: 'Any producing profession blacksmith/alchemist/artificer/tailor/etc.', style: { background: 'linear-gradient(0deg, rgb(160 97 33) 0%, rgba(225,141,55,1) 70%)', color: '#000' } },
@@ -192,7 +192,7 @@ export const waifuTags = {
   rw: { tag: 'Reality Warper', short: 'rw', effect: '', desc: '', style: { background: 'linear-gradient(90deg, rgba(132,4,185,1) 0%, rgba(255,15,153,1) 50%, rgba(132,4,185,1) 100%)', color: '#fff' } },
   ha: { tag: 'Hacker', short: 'ha', effect: '', desc: '', style: { background: 'linear-gradient(0deg, rgba(71,107,77,1) 0%, rgba(0,255,29,1) 70%)', color: '#000' } },
   im: { tag: 'Immortality', short: 'im', effect: '', desc: 'Any kind of immortality', color: 'bg-gradient-to-r to-red-300 from-yellow-300 text-black' },
-  ir: { tag: 'Spirit', short: 'ir', effect: '', desc: '', color: 'bg-teal-500 text-black' },
+  ir: { tag: 'Spirit', short: 'ir', effect: '', desc: 'Includes Ghosts, Shades, Wraiths, and Yokai as well', color: 'bg-teal-500 text-black' },
 
   U: { tag: 'By User', short: 'U', effect: '', desc: 'Characters that were added to Interactive by users, applied automatically to all submitted characters', color: 'bg-warm-gray-600' },
 } as const
@@ -248,7 +248,9 @@ export const ALL_PERK_STORES = {
 export const LINKS = computed(() => {
   const links = {} as Record<string, string>
   const allCats = {
-    'intensity': [...intensity, ...intensityPvP, ...DLCintensity],
+    'intensity/intensity': [...intensity, ...DLCintensity],
+    'intensity/pvp': intensityPvP,
+    'intensity/orbs': invasionPvP,
     'origin': [...origin, ...patrons],
     'bindings/bindings': [...bindings, ...DLCbindings],
     'bindings/lures': [...lures, ...lureExpansions, ...DLClures, ...DLClureExpansions],
@@ -436,7 +438,7 @@ export const allWorldsNoCondition = computed(() => {
 // export const TOOLTIPS_REG = new RegExp(str, 'g')
 
 export const LINKS_REG = new RegExp([...Object.keys(LINKS.value), ...Object.keys(TOOLTIPS)]
-  .filter(x => x !== 'Resonance')
+  .filter(x => !['Eternal', 'Resonance'].includes(x))
   .map((x) => { x = x.replace('(', '\\('); x = x.replace(')', '\\)'); return `(${x})` })
   .sort((a, b) => b.length - a.length)
   .join('(?:s|’s|ing)?|'), 'g')

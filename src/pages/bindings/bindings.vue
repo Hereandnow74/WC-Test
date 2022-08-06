@@ -20,6 +20,9 @@
     </div>
 
     <Desc v-if="activeType === 'Tantric Arts'" class="p-2 mb-4 max-w-4xl bg-warm-gray-200 dark:bg-warm-gray-800 mx-auto" :desc="tantricDesc" />
+    <Note v-if="activeType === 'Ritual'" class="max-w-4xl mx-auto mb-4" type="warning" title="Old version perks">
+      <div>Ritual Circle binding was replaced with Tantric Arts in new Waifu Catalog version. While it will not get removed from Interactive, use it only if you know what you are doing.</div>
+    </Note>
 
     <div
       class="column-gap"

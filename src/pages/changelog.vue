@@ -5,6 +5,26 @@
     </h2>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
+        6 August 2022
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>~120 new user submitted characters, new missions, 11 new worlds</li>
+        <li>Bugfixes & Small changes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
+        3 August 2022
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>~140 new user submitted characters, new missions</li>
+        <li>Splitted Intensity page into 3 pages</li>
+        <li>New "Tsundere Service" lure perk</li>
+        <li>Bugfixes & Small changes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
         30 July 2022
       </h3>
       <ul class="list-decimal list-inside">

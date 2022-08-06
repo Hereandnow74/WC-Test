@@ -96,17 +96,17 @@
         </div>
         <div class="flex rounded bg-gray-600 cursor-pointer">
           <div
-            :class="image==='' && nsfw==='' ? 'bg-gray-700':''"
+            :class="image===0 && nsfw==='' ? 'bg-gray-700':''"
             class="hover:bg-gray-700 text-green-300 px-2 rounded-l"
-            @click="(image='', nsfw='', favorite=0)"
+            @click="(image=0, nsfw='', favorite=0)"
           >
             all
           </div>
           <div
-            :class="image==='!cvxz' ? 'bg-gray-700':''"
+            :class="{'bg-red-600': image === -1, 'bg-green-600': image === 1}"
             class="border-l px-2 hover:bg-gray-700 text-gray-200"
             title="Have Image"
-            @click="image === ''? image='!cvxz' : image=''"
+            @click="image = threeToggle(image)"
           >
             img
           </div>
@@ -230,7 +230,7 @@ const search = ref('')
 const position = ref(0)
 
 const gender = ref('')
-const image = ref('')
+const image = ref(0)
 const nsfw = ref('')
 const favorite = ref(0)
 const local = ref(0)
@@ -367,7 +367,7 @@ const filteredCharacters = computed(() => {
   }
   if (gender.value) sopt.$and.push({ b: `=${gender.value}` })
 
-  if (image.value) sopt.$and.push({ i: image.value })
+  if (image.value === 1) sopt.$and.push({ i: '!fsdg' })
   if (nsfw.value) sopt.$and.push({ in: nsfw.value })
   if (favorite.value === 1) sopt.$and.push({ u: `=${favorites.value.join('|=')}` })
   if (favorite.value === -1) sopt.$and.push({ u: `!^${favorites.value.join(' !^')}` })
@@ -384,6 +384,7 @@ const secondFilter = computed(() => {
   const tier = (x: DBCharacter) => x.t >= minTier.value && x.t <= maxTier.value
   const blocked = (x: DBCharacter) => blackWhite.value ? blockedSet.value.has(x.w) : !blockedSet.value.has(x.w)
   const localF = (x: DBCharacter) => local.value === 1 ? x.type === 'local' : x.type !== 'local'
+  const emptyImg = (x: DBCharacter) => x.i === ''
 
   const allFilters = [] as ((arg0: DBCharacter) => boolean)[]
 
@@ -397,6 +398,8 @@ const secondFilter = computed(() => {
     allFilters.push(blocked)
   if (local.value !== 0)
     allFilters.push(localF)
+  if (image.value === -1)
+    allFilters.push(emptyImg)
 
   return allFilters.length
     ? filteredCharacters.value.filter((x) => {

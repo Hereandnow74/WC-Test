@@ -834,7 +834,19 @@ export const lures: PerkFull[] = [
     desc: `
 <p>Full Power! Total Destruction! Targets you defeat in combat or another contest, whether physical, mental, or social in nature, will fall for you all the harder. You’ll be at the forefront of all their thoughts as their wish to meet you again to even the score twists itself into a more romantic or sexual yearning. The more decisive and dramatic your victory, and the higher the perceived stakes for each of you, the stronger this lure’s effect. Defeating a target in a training spar will have only negligible results, but stopping a villainess in a life-or-death battle for the fate of a universe will add her to your harem practically the moment she wakes up.</p>
 <p>This lure is optimized for symmetric 1v1 duels in the target’s specialty field. The contest must be initiated or otherwise freely accepted by the target, even implicitly. This lure drops in effectiveness the more you rely on equal teammates; in contests of leadership ability, from team sports to military command, any unit who follows your instructions or plans will not count as a teammate. If your target catches you cheating in a match that has strict rules, this lure will not apply to the result even if you nominally win. If you catch your opponent cheating in such a match, this lure will still apply to the result even if you nominally lose.</p>`,
-  }]
+  },
+  {
+    uid: 'skl9J',
+    title: 'Tsundere Service',
+    image: '',
+    cost: 20,
+    category: 'Lure',
+    whitelist: ['Alluring Whisper', 'Zenryoku Zenkai'],
+    needed: 1,
+    desc: `
+<p>“No, I don’t want to see you again! I just want a rematch, b-baka!” While this lure is active, any aggression towards you by someone you find sexually appealing, regardless of the original cause, will be twisted into the aggressor just being tsun-tsun towards you. Once the aggressor is alone, their pendulum will swing back to create an equal amount of dere-dere (lovey-dovey) feelings. This lure is stronger with deliberate provocation or if the target was already a tsundere, and stacks with the effects of its prerequisites.</p>`,
+  },
+]
 
 export const lureExpansionDesc = 'If you ever trade in a lure, any expansion you bought for it will be refunded automatically at the standard rate. Like all company-supplied powers, the powers granted by these perks cannot be nullified, copied, or stolen.'
 
@@ -916,7 +928,7 @@ export const otherControls: PerkFull[] = [
     image: 'https://i.ibb.co/t2yrJLX/Apportation.jpg',
     cost: 25,
     category: 'Other Control',
-    whitelist: ['Basic Tempest Runes', 'Shroud of Power'],
+    whitelist: ['Art of Summoning', 'Basic Tempest Runes', 'Shroud of Power'],
     needed: 1,
     desc: `
 <p>You and the retinue members you’ve bound, through the method you used to unlock this expansion, are now capable of teleporting yourselves, or anything in hand, to anyone else within your retinue as a whole with a few moments’ concentration. Doing this without some method of advance warning may be ill-advised. If you have Pocket Apartment or higher, you may teleport objects into appropriate spaces in the apartment instead of dropping directly in on someone else. If you have All Roads Lead to Home or Rainbow Bridge, you and your waifus may always teleport into the apartment instead of opening portals therein. If you do so personally and then try to open a portal out, you must still place the exit reasonably close to your previous outside-world location.</p>

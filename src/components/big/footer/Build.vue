@@ -40,7 +40,13 @@
       <h3 class="text-lg text-gray-400">
         Intensity
       </h3>
-      <Enum color="text-blue-400 hover:text-blue-300" :list="intensities" path="/intensity" empty-message="PvE Mode" />
+      <Enum
+        color="text-blue-400 hover:text-blue-300"
+        :list="intensities"
+        :edit-mode="editMode"
+        :price-mode="priceMode"
+        empty-message="PvE Mode"
+      />
     </div>
     <div v-if="pvpPerks.length" id="Orbs">
       <h3 class="text-lg text-gray-400">

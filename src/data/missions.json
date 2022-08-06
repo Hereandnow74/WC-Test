@@ -1,5 +1,79 @@
 [
   {
+    "reward": "1000",
+    "rewardType": "Credits",
+    "title": "Avenging Scott",
+    "loca": "Scott Pilgrim",
+    "author": "Ratcatcher",
+    "objectives": [
+      {
+        "reward": "Swords Power of Love and Power of Understanding, instant capture, reward brought to equivalent of her purchase price",
+        "value": "Make Ramona fall for you",
+        "type": "Other"
+      },
+      {
+        "reward": "Envy's memories restored, instant capture with reward brought to equivalent of her purchase price",
+        "type": "Other",
+        "value": "Seduce Envy and have her cheat on Todd"
+      },
+      {
+        "type": "Perks",
+        "reward": "Soul Talent or its equivalent in credits",
+        "value": "Defeat Patel by yourself after he summoned the Demon Hipster Chicks"
+      },
+      {
+        "type": "Perks",
+        "value": "Talk down Lucas Lee",
+        "reward": "Communication Talent or its equivalent in credits"
+      },
+      {
+        "value": "Get Todd dealt with by HONEST Vegan Police officers",
+        "type": "Companions",
+        "reward": "TS1 as Tetsuo (Akira)"
+      },
+      {
+        "value": "Seduce Lynette Guycott",
+        "type": "Perks",
+        "reward": "One level in your chosen Heritage"
+      },
+      {
+        "type": "Companions",
+        "reward": "One level on all local captures",
+        "value": "Capture Roxy Richter by confession"
+      },
+      {
+        "value": "Shut the Katayanagi Twins up",
+        "reward": "One level in your chosen Heritage",
+        "type": "Perks"
+      },
+      {
+        "type": "Perks",
+        "reward": "Full Corruption Defense or its equivalent in credits",
+        "value": "Kill Gideon for good on first try"
+      }
+    ],
+    "scope": "Standard",
+    "desc": "In this variant of Scott Pilgrim's universe Todd was able to pay off the Vegan Police and then kill Scott for good, before making Envy forget he was cheating on her and lied to her. Gideon has almost won... Let's correct this.",
+    "source": "",
+    "budget": 200,
+    "image": "",
+    "conditions": [
+      {
+        "value": "Forage - only local Captures can help"
+      },
+      {
+        "value": "Convince Ramona to fake date you so to get the League after you. Don't Capture her yet."
+      },
+      {
+        "value": "Defeat every member of the League. Choose whatever method you want, with most of them, but Gideon must die and STAY dead - so you must use lethal force and make sure he stops respawning."
+      },
+      {
+        "value": "Also, get Envy to recover the memories Todd wiped out and insure she can get her revenge, without Capture."
+      }
+    ],
+    "uid": "XNqIu"
+  },
+  {
     "source": "",
     "title": "Kengan president",
     "desc": "You may have heard about the Kengan Association and how it controls the Japanese economy in its world... And the Kengan Annihilation Tournament with Chairmanship in place is coming. Why don't you win it?",
@@ -149,7 +223,7 @@
   },
   {
     "rewardType": "Other",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1002925794366062642/1805520703.jpg",
     "author": "Sleepy Fluffball™",
     "source": "",
     "title": "The Missing Chosen Undead",
@@ -281,7 +355,7 @@
     "source": "",
     "rewardType": "Credits",
     "scope": "Standard",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1002208949547827220/MV5BMGNkMDgyZDctNGE2NS00MjkwLWJlYmEtOThhNjIwNzhiOTU0XkEyXkFqcGdeQXVyODMyNTM0MjM._V1_.jpg",
     "loca": "Spy X Family",
     "conditions": [],
     "budget": 85,
@@ -412,45 +486,45 @@
     "uid": "vKYKq"
   },
   {
-    "reward": "500",
-    "rewardType": "Credits",
-    "desc": "Ha, Skyrim! The quintessential fantasy experience! Elves, Dragons, Magic, Booty!\nThis time, you're being sent there with a simple task, one familiar to many a Skyrim player. Hoard!\nYou'll be dropped just outside Riverwood, a month before the destruction of Helgen, and you have to acquire as many \"artifacts\" as you can.",
-    "title": "Treasure Hunter",
-    "author": "CyrusFallen",
     "source": "",
-    "budget": 690,
-    "image": "https://images.hdqwalls.com/wallpapers/skyrim-wallpaper-4k-bu.jpg",
     "objectives": [
       {
-        "type": "Perks",
-        "reward": "TS1(Alduin) for you, 1 level of Dragon Herritage for the Dragonborn",
-        "value": "Assist the Dragonborn in defeating Alduin and recieve an honest confession from them(You can't capture them or use overt mind control but subtle lures are fine)"
+        "reward": "TS1 (Alduin) for you, 1 level of Dragon Herritage for the Dragonborn",
+        "value": "Assist the Dragonborn in defeating Alduin and recieve an honest confession from them(You can't capture them or use overt mind control but subtle lures are fine)",
+        "type": "Perks"
       },
       {
-        "reward": "TS1(Harkon) for you, a free capture of Valerica",
         "type": "Perks",
-        "value": "Assist Serana in stopping the Tyranny of the Sun and recieve an honest confession from them(You can't capture them or use overt mind control but subtle lures are fine)"
+        "value": "Assist Serana in stopping the Tyranny of the Sun and recieve an honest confession from them(You can't capture them or use overt mind control but subtle lures are fine)",
+        "reward": "TS1 (Harkon) for you, a free capture of Valerica"
       },
       {
-        "value": "Acquire Auriel's Bow",
         "type": "Credits",
-        "reward": "50"
+        "value": "Acquire Auriel's Bow",
+        "reward": "50 Credits"
       }
     ],
+    "scope": "Grand",
+    "uid": "KxtZu",
+    "desc": "Ha, Skyrim! The quintessential fantasy experience! Elves, Dragons, Magic, Booty!\nThis time, you're being sent there with a simple task, one familiar to many a Skyrim player. Hoard!\nYou'll be dropped just outside Riverwood, a month before the destruction of Helgen, and you have to acquire as many \"artifacts\" as you can.",
+    "rewardType": "Credits",
+    "image": "https://images.hdqwalls.com/wallpapers/skyrim-wallpaper-4k-bu.jpg",
+    "loca": "The Elder Scrolls(Events of Skyrim)",
+    "title": "Treasure Hunter",
+    "budget": 690,
+    "reward": "500 Credits",
     "conditions": [
       {
-        "value": "Acquire the Elder Scroll(Dragon)"
+        "value": "Acquire the Elder Scroll (Dragon)"
       },
       {
-        "value": "Acquire the Elder Scroll(Blood)"
+        "value": "Acquire the Elder Scroll (Blood)"
       },
       {
-        "value": "Acquire the Elder Scroll(Sun)"
+        "value": "Acquire the Elder Scroll (Sun)"
       }
     ],
-    "loca": "The Elder Scrolls(Events of Skyrim)",
-    "scope": "Standard",
-    "uid": "KxtZu"
+    "author": "CyrusFallen"
   },
   {
     "rewardType": "Credits",
@@ -979,7 +1053,7 @@
       }
     ],
     "title": "Faunus Superiority",
-    "image": "https://static.wikia.nocookie.net/rwby/images/f/fd/V5_10_00082.png/revision/latest/scale-to-width-down/1200?cb=20171219191548",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1002209388527878245/tumblr_e2aa72ce36aac5c062a25b4156a21d4f_39bfda1b_1280.png",
     "conditions": [
       {
         "value": "Elevate the Faunus' standing in the world of RWBY"
@@ -2183,68 +2257,68 @@
     "loca": "My Hero Academia"
   },
   {
+    "desc": "Upon entering the world of Homestuck you are given a choice whether or not you and your companions want to be added as bonus players to any session including Caliborn's or Calliopes.\n\nUpon choosing Yes and selecting a session, the mission begins one month before the respective game begins. You and your companions are each granted a class and aspect that reflects you best. You are each granted a house and computers of your own design. You each obtain a Sylladex wallet and Strife deck.\n\nYou must see the game through to the end and have your session spawn a Genesis frog of its own regardless of the original state or type of session in canon. ( In sessions originally without space or time players it is recommended you or one of your companions fulfill the role less you fail the mission from the very start).",
+    "source": "",
+    "title": "Sburb Game of the Year: Company Edition",
+    "scope": "Grand",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992790782270513222/211376.jpg",
+    "budget": 1000,
     "author": "bakami",
-    "uid": "piSkf",
+    "loca": "homestuck",
     "conditions": [
       {
-        "value": "you retain all your abilites but your tier is reset to 2 but by climbing the echeladder your tier increases."
+        "value": "You retain all your abilites but your tier is reset to 2. By climbing the echeladder your tier can increase"
       },
       {
         "value": "If any of the players in your session permanently die you fail the mission"
       },
       {
-        "value": "the Genesis frog must be from your session (or purchased via the company if available) to count for completion."
+        "value": "The Genesis frog must be from your session (or purchased via the company if available) to count for completion."
       },
       {
         "value": "All players must complete their quests."
       }
     ],
-    "budget": 1000,
+    "rewardType": "Other",
+    "uid": "piSkf",
     "objectives": [
       {
+        "reward": "50 Credits",
         "type": "Credits",
-        "reward": "50",
-        "value": "get into a relationship with at least 4 homestuck characters"
+        "value": "Get into a relationship with at least 4 Homestuck characters."
       },
       {
-        "reward": "Fatality, paradox, and destiny defense ",
-        "value": "Go god tier",
+        "value": "Go God tier",
+        "reward": "Fatality, Paradox, and Destiny defense. ",
         "type": "Perks"
       },
       {
-        "value": "Defeat or Capture Lord English",
         "reward": "1 tier 11 ticket.",
+        "value": "Defeat or Capture Lord English.",
         "type": "TX Tickets"
       },
       {
-        "value": "Have all players in your session fall in love with you without binds or lures. (not counting your companions)",
         "type": "Credits",
-        "reward": "150"
+        "reward": "150 Credits",
+        "value": "Have all players in your session fall in love with you without bindings or lures (Companions Excluded)."
       },
       {
         "type": "Credits",
-        "reward": "50",
+        "reward": "50 Credits",
         "value": "Cut a meteor in half"
       },
       {
-        "value": "Create a lewd video game",
-        "reward": "50",
-        "type": "Credits"
+        "type": "Credits",
+        "reward": "50 Credits",
+        "value": "Create a lewd video game"
       },
       {
-        "reward": "1 waifu that can manipulate time of tier 10 or lower",
+        "type": "Other",
         "value": "Have a time based orgy of no less than 5 different people each with at least 1 duplicate",
-        "type": "Other"
+        "reward": "1 waifu that can manipulate time of tier 10 or lower"
       }
     ],
-    "rewardType": "Other",
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992790782270513222/211376.jpg",
-    "desc": "Upon entering the world of Homestuck you are given a choice whether or not you and your companions want to be added in as bonus players to any session including caliborn's or Calliopes.\n\nUpon choosing yes and selecting a session the mission begins 1 month before the respective game begins. You and each of your companions are granted a class and aspect that reflects you each best. You are each granted a house and computers of your won design. You each obtain a Sylladex wallet and Strife Deck.\n\nYou must see the game through to the end and have your session spawn a Genesis frog of its own regardless of the original state or type of session in canon. ( in sessions originally without space or time players it is recommend you or one of your companions fulfill the role less you fail the mission from the very start.)",
-    "reward": "The ultimate Reward which can be fused to your demiplane/dungeons ",
-    "title": "Sburb Game of the year Company Edition",
-    "source": "",
-    "scope": "Grand",
-    "loca": "homestuck"
+    "reward": "The Ultimate Reward which can be fused to your demiplane/dungeons "
   },
   {
     "budget": 250,
@@ -3198,8 +3272,53 @@
     "uid": "zai2X"
   },
   {
+    "reward": "200 credits",
+    "uid": "tGONX",
+    "desc": "Lila Rossi could have been a fearsome villainess, had it not been for her weird penchant to just disappear at random times. She'd have certainly been a more competent villain than Hawk Moth.\nYour job is to correct this, in a way: you will substitute Lila shortly before she first met Ladybug, and conquer her.",
+    "rewardType": "Credits",
     "author": "Ratcatcher",
+    "scope": "Standard",
+    "loca": "Miraculous: Tales of Ladybug and Cat Noir",
     "budget": 55,
+    "objectives": [
+      {
+        "type": "Other",
+        "reward": "100 credits or Le Grand Paris as Grand Manor",
+        "value": "Capture Chloé Bourgeois and Zoe Lee"
+      },
+      {
+        "reward": "100 credits or Agreste Mansion as Grand Manor",
+        "type": "Other",
+        "value": "Capture Emilie Agreste"
+      },
+      {
+        "value": "Capture Adrien Agreste/Chat Noir through the same methods as the main mission",
+        "reward": "Fatality Defense x2",
+        "type": "Perks"
+      },
+      {
+        "reward": "Paradox Defense x2",
+        "type": "Perks",
+        "value": "Capture Bunnyx"
+      },
+      {
+        "reward": "Environmental Defense x2",
+        "value": "Capture Ladydragon",
+        "type": "Perks"
+      },
+      {
+        "reward": "The next level of progression on Transhuman Heritage excluding Singularity or its price in credits",
+        "value": "Capture Aeon Hill and Jessica Kaynes",
+        "type": "Perks"
+      },
+      {
+        "value": "Collect all Miraculous of the Chinese Miraculous Box (they can be yours or in possession of retinue members)",
+        "reward": "1 TX Ticket",
+        "type": "TX Tickets"
+      }
+    ],
+    "title": "Lila's Miraculous Conquest",
+    "image": "https://pbs.twimg.com/media/D1-V7erU4AUAY3T.jpg",
     "conditions": [
       {
         "value": "Marinette/Ladybug must be Captured, but she will be immune to any form of Capture until she has at least a crush on you. She can however be swayed by Lures"
@@ -3214,44 +3333,7 @@
         "value": "Forage: only local Captures may help"
       }
     ],
-    "desc": "Lila Rossi could have been a fearsome villainess, had it not been for her weird penchant to just disappear at random times. She'd have certainly been a more competent villain than Hawk Moth.\nYour job is to correct this, in a way: you will substitute Lila shortly before she first met Ladybug, and conquer her.",
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990969085028335637/ddr34lz-77e6aae1-3a0c-414d-93d5-ab9ba3e1b48f.png",
-    "loca": "Miraculous: Tales of Ladybug and Cat Noir",
-    "objectives": [
-      {
-        "reward": "100 credits or Le Grand Paris as Grand Manor",
-        "value": "Capture Chloé Bourgeois and Zoe Lee"
-      },
-      {
-        "reward": "100 credits or Agreste Mansion as Grand Manor",
-        "value": "Capture Emilie Agreste"
-      },
-      {
-        "reward": "Fatality Defense x2",
-        "value": "Capture Adrien Agreste/Chat Noir through the same methods as the main mission"
-      },
-      {
-        "reward": "Paradox Defense x2",
-        "value": "Capture Bunnyx"
-      },
-      {
-        "reward": "Environmental Defense x2",
-        "value": "Capture Ladydragon"
-      },
-      {
-        "reward": "The next level of progression on Transhuman Heritage excluding Singularity or its price in credits",
-        "value": "Capture Aeon Hill and Jessica Kaynes"
-      },
-      {
-        "reward": "1 TX Ticket",
-        "value": "Collect all Miraculous of the Chinese Miraculous Box (they can be yours or in possession of retinue members)"
-      }
-    ],
-    "reward": "200 credits",
-    "scope": "Standard",
-    "source": "",
-    "title": "Lila's Miraculous Conquest",
-    "uid": "tGONX"
+    "source": ""
   },
   {
     "title": "Manton Effect?",
@@ -3326,43 +3408,52 @@
   },
   {
     "author": "Ratcatcher",
+    "desc": "Aaaah, Private Aiichi Symbiosis Academy. A place where girls can feel safe from the molestations of their male classmates because THEY can carry weapons and the boys can't... And have proceeded to throughly abuse of this privilege for years, beating all the boys for any hint of transgression while the Five Supreme Swords, the five strongest female students, would emasculate them through discipline and outright torture. The mission from our client is to enroll the school in Nomura's place the school and to make an example of the current Five Supreme Swords by publicily defeating them and then dominate them... And to do the same to Amou Kirukiru as you're already there.",
+    "title": "Disarmed Girls' Machiavellism",
     "budget": 40,
-    "conditions": [
+    "image": "https://i.ibb.co/bF2Y5vN/Disarmed-Girls-Machiavellism.jpg",
+    "loca": "Armed Girl's Machiavellism",
+    "rewardType": "Other",
+    "uid": "9ObSX",
+    "objectives": [
       {
-        "value": "Do it yourself: you can't be helped by your retinue"
+        "reward": "All rewards for this mission are raised to their purchase price",
+        "value": "Defeat Satori and \"Misogi\" at the same time and then dominate them at the same time",
+        "type": "Other"
       },
       {
-        "value": "For the duration of the mission your physical age will be 15 to match Nomura, and your physical abilities will be reduced to a Tier 3 equivalent"
+        "value": "Defeat the targets at their own fighting styles (Japanese swordsfighting for Rin, Warabi, Satori, and Tsukuyo, European swordsfighting and/or grappling for Mary, Karate for Kirukiru, blowgun for \"Misogi\")",
+        "type": "Companions",
+        "reward": "+1 Tier after step 6 upon capture"
+      },
+      {
+        "value": "Defeat Kyo-bo and Warabi's Three Beasts",
+        "type": "Perks",
+        "reward": "TS1 as Nomura Fudo"
+      },
+      {
+        "value": "Defeat the headmistress in combat",
+        "reward": "Kykyou from Inuyasha or her equivalent in credits",
+        "type": "Other"
+      }
+    ],
+    "reward": "Higurashi Kagome from Inuyasha or 100 credits",
+    "source": "",
+    "scope": "Standard",
+    "conditions": [
+      {
+        "value": "Forage: only local captures can help"
+      },
+      {
+        "value": "For the duration of the mission your physical age will be 16 to match Nomura, and your physical abilities will be reduced to a Tier 3 equivalent"
       },
       {
         "value": "You can only capture the targets and \"Misogi\""
       },
       {
-        "value": "To capture the targets you must first defeat them in public, and then completely dominate them until they surrender to you"
+        "value": "To capture the targets you must first defeat them in public without help, and then completely dominate them until they surrender to you. The domination part can happen whenever and wherever you want"
       }
-    ],
-    "desc": "Aaaah, Private Aiichi Symbiosis Academy. A place where girls can feel safe from the molestations of their male classmates because THEY can carry weapons and the boys can't... And have proceeded to throughly abuse of this privilege for years, beating all the boys for any hint of transgression while the Five Supreme Swords, the five strongest female students, would emasculate them through discipline and outright torture. The mission from our client is to enroll the school in Nomura's place the school and to make an example of the current Five Supreme Swords by publicily defeating them and then dominate them... And to do the same to Amou Kirukiru as you're already there.",
-    "image": "https://i.ibb.co/bF2Y5vN/Disarmed-Girls-Machiavellism.jpg",
-    "loca": "Armed Girl's Machiavellism",
-    "objectives": [
-      {
-        "reward": "+1 Tier after step 6 upon capture",
-        "value": "Defeat the targets at their own fighting styles (Japanese swordsfighting for Rin, Warabi, Satori, and Tsukuyo, European swordsfighting and/or grappling for Mary, Karate for Kirukiru, blowgun for \"Misogi\")"
-      },
-      {
-        "reward": "TS1 as Nomura Fudo",
-        "value": "Defeat Kyo-bo and Warabi's Three Beasts"
-      },
-      {
-        "reward": "Kykyou from Inuyasha",
-        "value": "Defeat the headmistress in combat"
-      }
-    ],
-    "reward": "Higurashi Kagome from Inuyasha or 100 credits",
-    "scope": "Standard",
-    "source": "",
-    "title": "Disarmed Girls' Machiavellism",
-    "uid": "9ObSX"
+    ]
   },
   {
     "author": "Ratcatcher",

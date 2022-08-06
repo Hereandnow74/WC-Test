@@ -6,19 +6,19 @@
       <CompanionCard :char="waifu3" :show-tags="false" :show-tiers="false" font-size="text-xs" :class="orientation ? 'h-full' : 'h-3/5'" />
       <div v-for="n in 3" :key="n" class="flex flex-col gap-1">
         <Button
-          label="kill"
+          label="sell"
           size="Small"
           :bg-color="lockedActions.includes('kill') && locking[n] !== 'kill' ? 'bg-gray-500': 'bg-red-500'"
           @click="locking[n] = locking[n] ? null: 'kill'"
         />
         <Button
-          label="kiss"
+          label="familiar"
           size="Small"
           :bg-color="lockedActions.includes('kiss') && locking[n] !== 'kiss' ? 'bg-gray-500': 'bg-pink-500'"
           @click="locking[n] = locking[n] ? null: 'kiss'"
         />
         <Button
-          label="marry"
+          label="companion"
           size="Small"
           :bg-color="lockedActions.includes('marry') && locking[n] !== 'marry' ? 'bg-gray-500': 'bg-violet-500'"
           @click="locking[n] = locking[n] ? null: 'marry'"

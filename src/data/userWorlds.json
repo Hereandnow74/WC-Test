@@ -2435,7 +2435,7 @@
   {
     "worldName": "Maburaho",
     "rating": 2,
-    "image": "https://cdn.hipwallpaper.com/i/30/69/GfBcpO.jpg"
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1002210650631712868/504129326.jpg"
   },
   {
     "worldName": "Medaka Box",
@@ -2882,7 +2882,7 @@
   {
     "worldName": "Frozen",
     "rating": 3,
-    "image": ""
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1002215722526720090/Cartoon-Disney-Frozen-Backgrounds-PixelsTalk-K-Ultra-HD-.jpg"
   },
   {
     "worldName": "Dororo",
@@ -3473,7 +3473,7 @@
   {
     "worldName": "No Man's Sky",
     "rating": 5,
-    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/6/67/No_Man%27s_Sky.jpg/220px-No_Man%27s_Sky.jpg"
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1002927160329257001/696469.png"
   },
   {
     "worldName": "Prototype",
@@ -3646,7 +3646,7 @@
   {
     "worldName": "Mob Psycho 100",
     "rating": 7,
-    "image": "https://cdn.donmai.us/360x360/18/88/1888871e10a61bb026bb50b1d28e6cef.jpg"
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1002923791703363664/Mob-1024x640.jpg"
   },
   {
     "worldName": "Shakugan no Shana",
@@ -3983,6 +3983,7 @@
   },
   {
     "worldName": "Emperor's Domination",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1002921136251732058/furlo92614.jpg",
     "rating": 10
   },
   {
@@ -4152,9 +4153,9 @@
     ]
   },
   {
-    "worldName": "Asterix",
+    "worldName": "Asterix and Obelix",
     "rating": 2,
-    "image": "https://images4.alphacoders.com/228/thumb-1920-228906.jpg"
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1002210249245208666/Asterix-Obelix-are-back-with-a-brand-new-game.jpg"
   },
   {
     "worldName": "Blue Exorcist ",
@@ -4163,6 +4164,7 @@
   },
   {
     "worldName": "CthulhuTech",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1002926912819179540/thumb-1920-125284.jpg",
     "rating": 10
   },
   {
@@ -4173,6 +4175,7 @@
   {
     "worldName": "Fringe",
     "rating": 4,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1002211311616274462/High_resolution_wallpaper_background_ID_77702158492.jpg",
     "additional": "Observers/Invaders upon capture will have their emotional faculties restored and their high intelligence won't deteriorate be like Michael, AKA The Child, AKA Anomaly XB-678646.",
     "condition": [
       {
@@ -4199,6 +4202,7 @@
   },
   {
     "worldName": "Hollow Knight",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1002211721450098698/998560.jpg",
     "rating": 6,
     "additional": "Captured or purchased characters from this setting can switch between their normal size and human size. Going to this setting also gives you this ability."
   },
@@ -4243,7 +4247,7 @@
   {
     "worldName": "Treasure Planet",
     "rating": 3,
-    "image": "https://media.timeout.com/images/101558479/750/422/image.jpg"
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1002926699501064192/14-148563_treasure-planet-film-movies-hd-wallpaper-treasure-planet.jpg"
   },
   {
     "worldName": "American Gods",
@@ -4257,6 +4261,7 @@
   },
   {
     "worldName": "Recettear",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1002926452804698243/eNBkuqESD5zefRxRLcfUrC-1200-80.jpg",
     "rating": 6
   },
   {
@@ -4267,7 +4272,7 @@
   {
     "worldName": "Zero Escape",
     "rating": 5,
-    "image": "https://upload.wikimedia.org/wikipedia/en/0/0e/Zero_Escape_logo.png",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1002920642145960026/999-vlr.jpg",
     "condition": [
       {
         "name": "Second Nonary Game (2027)",
@@ -4282,5 +4287,16 @@
         "rating": 8
       }
     ]
-  }
+  },
+  {"worldName":"A Hat In Time","rating":4,"image":"https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/games_15/nintendo_switch_download_software_1/H2x1_NSwitchDS_AHatInTime.jpg"},
+  {"worldName":"Aladdin","rating":3,"image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUSIkcrGfUy2vPMy0HXz-CNOzO95t-Lw39R9d3kfIgVTqzrxqvYb7LdM3qPm4jANi6Ceg&usqp=CAU","condition":[{"name":"Aladdin: The Return of Jafar","rating":3}]},
+  {"worldName":"Ben-To","rating":3,"image":"https://www.anime-planet.com/images/anime/covers/ben-to-4231.jpg"},
+  {"worldName":"Classroom of the Elite","rating":2,"image":"https://wallpaperaccess.com/full/2044027.jpg"},
+  {"worldName":"Dota 2","rating":6,"image":"https://i.imgur.com/YepIO7R.jpeg","condition":[{"name":"Dota: Dragon's Blood","rating":6},{"rating":8,"name":"War of the Ancients"}]},
+  {"worldName":"Evil Within","rating":4,"image":"https://cdn.akamai.steamstatic.com/steam/apps/268050/ss_a46ff1aaa4a4b24cd6bc0c44d78b171a7484c5bb.1920x1080.jpg","additional":"","condition":[{"rating":6,"name":"STEM I (Evil wihtin)"},{"rating":7,"name":"STEM II (Evil Within II)"}]},
+  {"worldName":"Kimi wa 008","rating":3,"image":""},
+  {"worldName":"Metal Slug","rating":5,"image":"https://nintendoeverything.com/wp-content/uploads/metal-slug-x.jpg"},
+  {"worldName":"Oregairu","rating":1,"image":""},
+  {"worldName":"Sky High","rating":4,"image":"https://images2.alphacoders.com/111/thumb-350-1112372.webp"},
+  {"worldName":"Zootopia","rating":2,"image":""}
 ]

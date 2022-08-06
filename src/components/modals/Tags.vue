@@ -17,23 +17,15 @@
         <div
           v-for="tag in allTagsFiltered"
           :key="tag.tag"
-          class="flex gap-2 odd:bg-warm-gray-700"
+          class="flex gap-2 odd:bg-warm-gray-700 items-center"
         >
-          <div class="flex">
-            <div
-              class="rounded-md cursor-pointer flex items-center gap-1 select-none p-0.5 px-1 whitespace-nowrap self-center"
-              :class="tag.color"
-              :title="tag.desc ? tag.desc : ''"
-              @click="tagToggles[tag.short] = threeToggle(tagToggles[tag.short])"
-            >
-              <div class="rounded flex gap-1">
-                {{ tag.tag }}
-              </div>
-              <!-- <span v-if="tagToggles[tag.short] !== 0" :key="tagToggles[tag.short]" class="iconify" :data-icon="tagToggles[tag.short] === 1 ? 'akar-icons:circle-check' : 'ant-design:stop-outlined'"></span> -->
-              <akar-icons:circle-check v-if="tagToggles[tag.short] === 1" />
-              <jam:stop-sign v-if="tagToggles[tag.short] === -1" />
-            </div>
-          </div>
+          <Tag
+            :key="tag.tag"
+            :tag="tag"
+            :on-the-list="true"
+            class="whitespace-nowrap"
+            @click="tagToggles[tag.short] = threeToggle(tagToggles[tag.short] || 0)"
+          />
           <div>
             {{ tag.desc }}
           </div>
