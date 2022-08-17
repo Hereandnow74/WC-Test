@@ -5,6 +5,25 @@
     </h2>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
+        14 August 2022
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>~300 new user submitted characters, new missions, 11 new worlds</li>
+        <li>Bugfixes & Small changes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
+        10 August 2022
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>~90 new user submitted characters, new missions, 11 new worlds</li>
+        <li>You can now click on 'No Bindings' to return all binding perks</li>
+        <li>Bugfixes & Small changes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
         6 August 2022
       </h3>
       <ul class="list-decimal list-inside">

@@ -1,6 +1,7 @@
 <template>
   <Modal label="Add New World">
-    <div class="p-2 flex flex-col gap-2 min-h-0">
+    <div class="relative p-2 flex flex-col gap-2 min-h-0">
+      <img ref="testImage" class="absolute h-[1px] w-[1px]" :src="image" alt="" @load="imageLoaded" />
       <div class="flex gap-2">
         <Input v-model="worldName" placeholder="Name of the World" class="w-3/4" :error-message="errors.worldName" />
         <NumberInput
@@ -12,6 +13,9 @@
         />
       </div>
       <Input v-model="image" placeholder="Image URL" :error-message="errors.image" />
+      <div v-if="imageErrorMessage" class="text-red-600 dark:text-red-300 text-sm">
+        {{ imageErrorMessage }}
+      </div>
       <Foldable title="Setting specific rules">
         <span v-if="errors.additional" class="text-xs">{{ errors.additional }}</span>
         <TextArea
@@ -81,6 +85,9 @@ const props = defineProps({
   },
 })
 
+const testImage = ref<HTMLImageElement | null>(null)
+const imageErrorMessage = ref('')
+
 const isOpen = ref(false)
 const localSave = ref(true)
 const proposeGlobal = ref(false)
@@ -135,5 +142,14 @@ const addWorld = handleSubmit((values) => {
   else userWorlds.value.push(values)
   toggleShowAddWorld()
 })
+
+function imageLoaded() {
+  if (testImage.value) {
+    if (testImage.value.naturalHeight && testImage.value.naturalHeight < 380)
+      imageErrorMessage.value = 'Chosen image is of bad quality, there is a high chance it will not be accepted'
+    else
+      imageErrorMessage.value = ''
+  }
+}
 
 </script>

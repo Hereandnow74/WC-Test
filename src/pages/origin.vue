@@ -77,8 +77,8 @@
         Patrons
       </h2>
       <Desc class="p-2 bg-gray-200 dark:bg-teal-900 max-w-4xl mx-auto mt-4" :desc="patronsDesc" />
-      <Note class="my-4 max-w-screen-md" type="info" title="Info">
-        Patrons are not a part of Official Waifu Catalog and come from DLC by Mortaegus - <a target="_blank" rel="noopener noreferrer" href="https://forum.questionablequesting.com/threads/r34-economy-cyoa-thread.11289/page-568#post-3866836" class="underline text-blue-800 dark:text-blue-400">link</a>. This section are currently in a WIP stage, if you have ideas how to better balance/structure it write me on discord.
+      <Note class="my-4 max-w-screen-md" type="error" title="Info">
+        Patrons are not a part of Official Waifu Catalog and come from DLC by Mortaegus - <a target="_blank" rel="noopener noreferrer" href="https://forum.questionablequesting.com/threads/r34-economy-cyoa-thread.11289/page-568#post-3866836" class="underline text-blue-800 dark:text-blue-400">link</a>.
       </Note>
       <div
         class="column-gap pb-8"

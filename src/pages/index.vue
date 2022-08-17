@@ -52,7 +52,7 @@
     </div>
     <div id="pandora" class="bg-amber-100 dark:bg-gray-800 p-1 md:p-4 w-full mx-auto">
       <div class="text-lg text-center mb-2 text-teal-600 dark:text-teal-300">
-        Those Tier lists are aproximations, official tier list do not exist yet.
+        These Tier lists are aproximations, official tier list do not exist yet.
       </div>
       <div class="flex w-full pb-2">
         <div

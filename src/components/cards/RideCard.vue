@@ -77,7 +77,7 @@
       <span class="font-semibold text-gray-600 dark:text-gray-400">Example: </span> {{ ride.example }}
     </div>
     <div v-if="ride.requires || ride.whitelist" class="px-2">
-      <span class="font-semibold text-gray-600 dark:text-gray-400">Requiers: </span>
+      <span class="font-semibold text-gray-600 dark:text-gray-400">Require: </span>
       <span v-if="ride.requires" class="text-cyan-700 dark:text-cyan-300">
         {{ ride.requires }}
       </span>

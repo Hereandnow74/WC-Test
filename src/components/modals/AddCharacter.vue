@@ -1,6 +1,7 @@
 <template>
   <Modal label="Add New Character">
     <div class="max-h-[90vh] flex relative max-w-screen-sm min-h-0">
+      <img ref="testImage" class="absolute h-[1px] w-[1px]" :src="image" alt="" @load="imageLoaded">
       <div class="flex flex-col p-2 gap-2 min-h-0 overflow-y-auto scrollbar">
         <Note type="warning" title="Tier">
           Before adding characters to global - read <b>rules</b> first!
@@ -29,6 +30,9 @@
           />
         </div>
         <Input v-model="image" placeholder="Image URL" :error-message="errors.image" />
+        <div v-if="imageErrorMessage" class="text-red-600 dark:text-red-300 text-sm">
+          {{ imageErrorMessage }}
+        </div>
         <div v-if="image_nsfw" class="text-orange-600 dark:text-orange-300 text-sm">
           No pornographic images please, ideally image should have only submitted character without any extras.
         </div>
@@ -100,6 +104,9 @@ const props = defineProps({
     default: () => ({}),
   },
 })
+
+const testImage = ref<HTMLImageElement | null>(null)
+const imageErrorMessage = ref('')
 
 const { userNickname } = useSaves()
 
@@ -208,5 +215,14 @@ const addCharacter = handleSubmit((values) => {
   if (!serverSave.value)
     toggleShowAddCharacter()
 })
+
+function imageLoaded() {
+  if (testImage.value) {
+    if (testImage.value.naturalHeight && testImage.value.naturalHeight < 380)
+      imageErrorMessage.value = 'Chosen image is of bad quality, there is a high chance it will not be accepted'
+    else
+      imageErrorMessage.value = ''
+  }
+}
 
 </script>

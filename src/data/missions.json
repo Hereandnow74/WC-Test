@@ -1,62 +1,328 @@
 [
+  
   {
-    "reward": "1000",
+    "desc": "Peace leads to contentment, and it will finalize into stagnation. \n\nYour job is to prevent that. Wage wars, unleash monstrous abominations, cast apocalyptic spells- use whatever means you have. As long the world itself can progress, it's allowed. \n\nBe their common enemy, an evil dragon destined to die in a happily ever after story. ",
+    "source": "",
+    "reward": "75 x world's DR, granted at the start",
+    "image": "https://i.ibb.co/FXzB998/33214.jpg",
+    "title": "A necessary evil",
     "rewardType": "Credits",
-    "title": "Avenging Scott",
-    "loca": "Scott Pilgrim",
-    "author": "Ratcatcher",
+    "author": "Raaa",
+    "objectives": [],
+    "budget": 200,
+    "conditions": [
+      {
+        "value": "Your main objective must be kept secret"
+      },
+      {
+        "value": "The world must be progressing further than when you arrived"
+      },
+      {
+        "value": "At least 75% of the world population must not feel content with their live when you finally leave this world"
+      }
+    ],
+    "loca": "Generic",
+    "scope": "Grand",
+    "uid": "lYPdM"
+  },
+  {
     "objectives": [
       {
-        "reward": "Swords Power of Love and Power of Understanding, instant capture, reward brought to equivalent of her purchase price",
-        "value": "Make Ramona fall for you",
+        "value": "Get Sistah Spooky and Mind**** to defect to your group (no overt mind control or seduction allowed).",
+        "type": "Companions",
+        "reward": "Insta-capture of Spooky and Mind****"
+      },
+      {
+        "type": "Companions",
+        "value": "Talk Ninjette into becoming a hero and join your group (no overt mind control or seduction allowed).",
+        "reward": "Insta-capture of Ninjette"
+      },
+      {
+        "reward": "Elissa, Spooky, Mind**** and Ninjette are raised one tier, and the reward is retroactively adjusted",
+        "type": "Companions",
+        "value": "Complete all the other objectives without the Superhomeys figuring out until you make a public announcement"
+      }
+    ],
+    "source": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1006946075996864622/empowered_header.jpg",
+    "author": "Ratcatcher",
+    "budget": 200,
+    "title": "Superhero intelligence agent",
+    "desc": "You may have heard about the Superhomeys, that weird and jerkish yet effective superhero group, and their nice but bondage-prone intern Empowered. They're also rising the ranks of the heroes that provide the most intelligence... All thanks to Empowered and her penchant for listening and writing down everything the supervillains talk about while they've captured her - she even let herself be captured on purpose a few times. She's also a genius analyst, and many of her (poorly advertised) victories come from analyzing the strengths and weaknesses of common superhero and villain tactics and of her opponents, and then shamelessly taking advantage of them.\nSteal that intelligence asset, now!",
+    "scope": "Standard",
+    "reward": "Insta-capture of Elissa Megan Powers",
+    "loca": "Empowered",
+    "conditions": [
+      {
+        "value": "Create your own superhero group with your retinue."
+      },
+      {
+        "value": "Convince Empowered to defect. No overt mind control or seduction allowed."
+      },
+      {
+        "value": "Remember, Empowered is a genius analyst, and could figure you out. If that happens, the mission fails. Oh, and she'll get everyone on your case for being a villain that violated the \"Unwritten Rules\"."
+      }
+    ],
+    "rewardType": "Companions",
+    "uid": "GeaPv"
+  },
+  {
+    "author": "irugaa0",
+    "title": "Veni, vidi, vici - Bloodline",
+    "desc": "A Tricky mission was issued to the company. In a medieval setting world, the contractor must assume the place of a fallen noble son/daughter and restore their house to nobility.  \n\nYour initial resources in the mission are: 100 gold coins, 200 farmers , 50 slaves, 20 soldiers, 50 horses, and 3 months' worth of food in animals and food.",
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "10",
+        "value": "Restore your family to the noble rank - Baron",
+        "type": "Credits"
+      },
+      {
+        "value": "Restore your family to the noble rank - Viscount",
+        "type": "Credits",
+        "reward": "15"
+      },
+      {
+        "value": "Restore your family to the noble rank - Count",
+        "type": "Credits",
+        "reward": "20"
+      },
+      {
+        "reward": "30",
+        "value": "Restore your family to the noble rank - Earl ",
+        "type": "Credits"
+      },
+      {
+        "type": "Credits",
+        "value": "Restore your family to the noble rank - Marquess",
+        "reward": "40"
+      },
+      {
+        "value": "Restore your family to the noble rank - Duke",
+        "reward": "55",
+        "type": "Credits"
+      },
+      {
+        "type": "Credits",
+        "value": "Become a King/Queen",
+        "reward": "100"
+      },
+      {
+        "value": "Buy or Conquest a territory.",
+        "type": "Perks",
+        "reward": "Any Talent or Defense of your choice"
+      },
+      {
+        "value": "Build/Own a Manor, Keep, or Castle. ",
+        "type": "Perks",
+        "reward": "three expasions to your sweet home or 150 credits"
+      },
+      {
+        "type": "Companions",
+        "value": "Found or Conquest your own country",
+        "reward": "any companion with the tag Ruler up to tier 6"
+      }
+    ],
+    "reward": "100 credits",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1006946868456071228/macon-bm-1-f-211-IRHT_095217_2.jpg",
+    "conditions": [
+      {
+        "value": "you MUST use substitute as origin. "
+      },
+      {
+        "value": "You and your Companions tier are initially reduce to Tier 3."
+      },
+      {
+        "value": "you can only take 2 waifus to accompany you during this mission."
+      },
+      {
+        "value": "All powers above T7 are locked and unusuable during the duration of the mission."
+      }
+    ],
+    "rewardType": "Credits",
+    "loca": "Generic",
+    "budget": 500,
+    "source": "",
+    "uid": "UJLtX"
+  },
+  {
+    "scope": "Standard",
+    "desc": "This world has some powerful creatures, the Bit Beasts. They have immense power, enough they could be considered weapons of mass destruction... And they're being used to power up spinning tops in battles. Capture all the active Bit Beasts before these IDIOTS self-destruct.",
+    "title": "Bit Beast Hunt",
+    "conditions": [
+      {
+        "value": "Bakuten Shoot Beyblade timeline, after Vorkov's defeat"
+      },
+      {
+        "value": "Forage: only local captures can help"
+      },
+      {
+        "value": "Seal and/or capture the Bit Beast by fighting it PERSONALLY without a Bit Beast of your own."
+      },
+      {
+        "value": "Local Captures can however fight the enemy Bit Beasts the traditional way, or just steal the bits with the relative Bit Beasts"
+      },
+      {
+        "value": "The Bit Beast of someone who joins your Retinue counts as captured for the mission, but you can only do it for a single member of each team"
+      }
+    ],
+    "budget": 2000,
+    "loca": "Beyblade",
+    "reward": "1",
+    "source": "",
+    "rewardType": "TX Tickets",
+    "author": "Ratcatcher",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1006947407197646948/Screenshot_3.jpg",
+    "objectives": [
+      {
+        "type": "Companions",
+        "value": "Seduce into your Retinue a female beyblader or Hiromi and have them bring to you the Bit Beast of at least two of their teammate",
+        "reward": "1 tier added after step 6"
+      },
+      {
+        "type": "Credits",
+        "value": "Track down and steal Black Dranzer",
+        "reward": "100"
+      }
+    ],
+    "uid": "JqoUC"
+  },
+  {
+    "objectives": [
+      {
+        "value": "Capture a jincuhriki or tailed beast",
+        "reward": "Mastery of sealing jutsu",
         "type": "Other"
       },
       {
-        "reward": "Envy's memories restored, instant capture with reward brought to equivalent of her purchase price",
-        "type": "Other",
-        "value": "Seduce Envy and have her cheat on Todd"
+        "value": "Have at least 10,000 concurrent active shinobi",
+        "reward": "100",
+        "type": "Credits"
       },
       {
-        "type": "Perks",
-        "reward": "Soul Talent or its equivalent in credits",
-        "value": "Defeat Patel by yourself after he summoned the Demon Hipster Chicks"
-      },
-      {
-        "type": "Perks",
-        "value": "Talk down Lucas Lee",
-        "reward": "Communication Talent or its equivalent in credits"
-      },
-      {
-        "value": "Get Todd dealt with by HONEST Vegan Police officers",
-        "type": "Companions",
-        "reward": "TS1 as Tetsuo (Akira)"
-      },
-      {
-        "value": "Seduce Lynette Guycott",
-        "type": "Perks",
-        "reward": "One level in your chosen Heritage"
-      },
-      {
-        "type": "Companions",
-        "reward": "One level on all local captures",
-        "value": "Capture Roxy Richter by confession"
-      },
-      {
-        "value": "Shut the Katayanagi Twins up",
-        "reward": "One level in your chosen Heritage",
-        "type": "Perks"
-      },
-      {
-        "type": "Perks",
-        "reward": "Full Corruption Defense or its equivalent in credits",
-        "value": "Kill Gideon for good on first try"
+        "type": "Credits",
+        "reward": "100",
+        "value": "Be widely recognized as the strongest of the villages"
       }
     ],
-    "scope": "Standard",
-    "desc": "In this variant of Scott Pilgrim's universe Todd was able to pay off the Vegan Police and then kill Scott for good, before making Envy forget he was cheating on her and lied to her. Gideon has almost won... Let's correct this.",
+    "reward": "300",
+    "image": "https://i.imgur.com/HuM9S3J.png",
     "source": "",
+    "budget": 300,
+    "scope": "Standard",
+    "loca": "Naruto",
+    "author": "Aodh",
+    "title": "Village Hidden in the Waifu",
+    "desc": "Establish or take over a hidden village and be recognized as a major power by your peers.",
+    "rewardType": "Credits",
+    "conditions": [
+      {
+        "value": "Cannot purchase any companions from Naruto"
+      },
+      {
+        "value": "All purchased companions must be ninja"
+      },
+      {
+        "value": "Complete this  mission before the end of the Fourth Shinobi World War"
+      }
+    ],
+    "uid": "YLdEu"
+  },
+  {
+    "desc": "Conquer the Milky Way\nAll major cannon factions in the material plane must be destroyed as a functional faction, or acknowledge the PC as their ruler",
+    "source": "",
+    "rewardType": "Other",
+    "title": "In the Grim Darkness there IS victory",
+    "author": "Templar9999 ",
+    "budget": 1500,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1006947646075838544/bode-s-galaxy.jpg",
+    "objectives": [
+      {
+        "type": "TX Tickets",
+        "reward": "2",
+        "value": "End Chaos as a threat to the galaxy"
+      },
+      {
+        "reward": "100",
+        "value": "Capture a Primarch, repeatable",
+        "type": "Credits"
+      },
+      {
+        "value": "Capture all living Primarchs of a faction (loyalist/chaos)",
+        "type": "Companions",
+        "reward": "All nonviliving primarchs of said faction, or a refund if already purchased"
+      }
+    ],
+    "reward": "Full Multiversal Travel, 2 TX Tickets, Apartment upgrade to Ringworld (or full refund if already aquired)",
+    "loca": "Warhammer 40K",
+    "scope": "Grand",
+    "conditions": [
+      {
+        "value": "Must be starting world"
+      },
+      {
+        "value": "May not leave the setting or utilize any form of multiversal travel"
+      },
+      {
+        "value": "If apartment is purchased it will be placed in an in-setting location"
+      }
+    ],
+    "uid": "ykVGn"
+  },
+  {
+    "objectives": [
+      {
+        "value": "If the victim is Izuku Midoriya and you corrupt all his classmates",
+        "reward": "capture all of UA and gain the school and all its facilities  in your demiplane",
+        "type": "Other"
+      },
+      {
+        "value": "be a  slime-like creature",
+        "type": "Credits",
+        "reward": "50"
+      },
+      {
+        "value": "Corrupt an entire town",
+        "type": "Credits",
+        "reward": "100"
+      },
+      {
+        "type": "Other",
+        "value": "the victim is a hero",
+        "reward": "one of their allies can be captured  without breaking the rules of the mission"
+      }
+    ],
+    "desc": "Corruption is a tasty thing even better when someone has to watch the world around them go belly up.  That is gonna be your job, become a symbiote or some other parasite like creature pick a poor scrub and have them  watch you either corrupt everyone they care about   into depraved mirrors of themselves or  you manually control them into such. Go down the list of friends, family, enemies and so on  until the victim gives up and enjoys their new life. Once the victim gives in all people you have corrupted will  be captured.",
+    "source": "",
+    "scope": "Standard",
+    "conditions": [
+      {
+        "value": "All the people you corrupt have to live their normal lives despite what you do to them with no one but the victim or  other corrupted being aware of any changes"
+      },
+      {
+        "value": "you cannot capture anyone the victim knows until they give up"
+      },
+      {
+        "value": "the victim is immune to all things related to the catalog including whatever powers you picked up or created"
+      },
+      {
+        "value": "The victim cannot be mindbroken and must admit they want to continue their new corruption filled life in order for you to win"
+      }
+    ],
+    "rewardType": "Companions",
+    "loca": "Generic",
+    "title": "Slimed up the works",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1006948297447067747/2adfaf64.webp",
+    "reward": "The victim.",
+    "budget": 150,
+    "author": "bakami",
+    "uid": "vFXaj"
+  },
+  {
+    "reward": "1000",
+    "loca": "Scott Pilgrim",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1005499607113015406/Screenshot_2.jpg",
     "budget": 200,
-    "image": "",
     "conditions": [
       {
         "value": "Forage - only local Captures can help"
@@ -71,7 +337,60 @@
         "value": "Also, get Envy to recover the memories Todd wiped out and insure she can get her revenge, without Capture."
       }
     ],
-    "uid": "XNqIu"
+    "uid": "XNqIu",
+    "scope": "Standard",
+    "rewardType": "Credits",
+    "desc": "In this variant of Scott Pilgrim's universe Todd was able to pay off the Vegan Police and then kill Scott for good, before making Envy forget he was cheating on her and lied to her. Gideon has almost won... Let's correct this.",
+    "source": "",
+    "title": "Avenging Scott",
+    "author": "Ratcatcher",
+    "objectives": [
+      {
+        "value": "Make Ramona fall for you",
+        "reward": "Swords Power of Love and Power of Understanding, instant capture, reward brought to equivalent of her purchase price",
+        "type": "Other"
+      },
+      {
+        "type": "Other",
+        "reward": "Envy's memories restored, instant capture with reward brought to equivalent of her purchase price",
+        "value": "Seduce Envy and have her cheat on Todd"
+      },
+      {
+        "reward": "Soul Talent or its equivalent in credits",
+        "value": "Defeat Patel by yourself after he summoned the Demon Hipster Chicks",
+        "type": "Perks"
+      },
+      {
+        "reward": "Communication Talent or its equivalent in credits",
+        "value": "Talk down Lucas Lee",
+        "type": "Perks"
+      },
+      {
+        "value": "Get Todd dealt with by HONEST Vegan Police officers",
+        "reward": "TS1 as Tetsuo (Akira)",
+        "type": "Companions"
+      },
+      {
+        "type": "Perks",
+        "value": "Seduce Lynette Guycott",
+        "reward": "One level in your chosen Heritage"
+      },
+      {
+        "value": "Capture Roxy Richter by confession",
+        "type": "Companions",
+        "reward": "One level on all local captures"
+      },
+      {
+        "value": "Shut the Katayanagi Twins up",
+        "type": "Perks",
+        "reward": "One level in your chosen Heritage"
+      },
+      {
+        "type": "Perks",
+        "reward": "Full Corruption Defense or its equivalent in credits",
+        "value": "Kill Gideon for good on first try"
+      }
+    ]
   },
   {
     "source": "",
@@ -133,7 +452,7 @@
         "value": "Win the tournament and decide who the next chairman is. You can even appoint yourself."
       }
     ],
-    "image": "",
+    "image": "https://i.redd.it/qzceiri6pqs51.png",
     "uid": "HokGE"
   },
   {
@@ -147,7 +466,7 @@
       }
     ],
     "desc": "Have you ever hated the Main Protagonist in a series you really enjoy? Well, here is the mission for you! The goal is to kill all the Protagonists you can throughout the multiverse. ",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1004386112992710706/maxresdefault.jpg",
     "reward": "The full list price of any Protagonist you kill",
     "rewardType": "Credits",
     "title": "Protagonist Hunter",
@@ -222,16 +541,14 @@
     "uid": "BpxKR"
   },
   {
-    "rewardType": "Other",
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1002925794366062642/1805520703.jpg",
-    "author": "Sleepy Fluffball™",
     "source": "",
-    "title": "The Missing Chosen Undead",
+    "reward": "Obtain the First Flame which can be removed from the setting, and has enough sapience to communicate, gaining more as time goes on. Has dominion over Flame, Passion and Life within its influence. Whilst used, allows those linked to you in some form to recover and for you to create bonfires to extend its influence; you may summon the coiled swords used to create bonfires at will as they are required for the bonfires to work. You gain no credits from capturing it as it comes pre-captured and is equivalent to a T9 waifu in capabilities. Gain 200 credits alongside a purchase of Exit Stage Left if you do not have it already, or an additional 5 credits if you do.",
+    "loca": "Dark Souls",
     "objectives": [
       {
-        "type": "Other",
         "reward": "Knowledge and theory of the Soul Sorcery involved with her Lifehunt Scythe and two choice sorceries related to ice.",
-        "value": "Free Crossbreed Priscilla from the Painted World."
+        "value": "Free Crossbreed Priscilla from the Painted World.",
+        "type": "Other"
       },
       {
         "reward": "Your own Pyromancy Flame equivalent to that of the Witch of Izalith alongside basic pyromancies such as forming a simple spear of flame.",
@@ -239,28 +556,28 @@
         "type": "Other"
       },
       {
+        "value": "Loot Seath's entire library before Logan finds it.",
         "type": "Perks",
-        "reward": "Corruption Defense x1",
-        "value": "Loot Seath's entire library before Logan finds it."
+        "reward": "Corruption Defense x1"
       },
       {
-        "value": "Permanently end Manus.",
-        "type": "Other",
-        "reward": "An abyssal version of the First Flame with no sentience under your control. Allows your body itself to interact with intangible beings as if they were solid, alongside allowing equipment coated with it to do the same. Other effects require yourself discovering them."
+        "value": "Permanently end Manus through combat.",
+        "reward": "An abyssal version of the First Flame with no sentience under your control. Allows your body itself to interact with intangible beings as if they were solid, alongside allowing equipment coated with it to do the same. Other effects require yourself discovering them.",
+        "type": "Other"
       },
       {
         "value": "Capture the second Chosen Undead instead of killing them.",
-        "type": "Perks",
-        "reward": "Chosen Undead gets a free Template Stacking of a Maiden."
+        "reward": "Chosen Undead gets a free Template Stacking of a Maiden.",
+        "type": "Perks"
       },
       {
+        "value": "You or one of your retinue members tame Sif before capturing them.",
         "type": "Perks",
-        "value": "Tame Sif before capturing him.",
-        "reward": "Sif gets a Template Stacking of Fenrir, while you get a Template Stacking of Artorias."
+        "reward": "Sif gets a Template Stacking of Fenrir, while the retinue member that did it gets a Template Stacking of Artorias."
       }
     ],
-    "desc": "Time and time again, there has been a chosen undead appointed to link the First Flame once again. This time we've specifically made a scenario for someone to do the opposite. Upon choosing this mission you take the place of the Chosen Undead, with the objective of freeing humanity from the First Flame. You start off in the same place as the Chosen Undead would at the beginning of their journey with their very curse applied to you, regardless of defenses, but this is additive to what you had before. \n\nShortly after the mission starts another Chosen Undead will be awakened to link the flame once again, and will be hostile whilst unbound, influenced by those who are set on linking the flame still - negotiation is not an option.",
-    "scope": "Grand",
+    "uid": "lNnbG",
+    "budget": 1500,
     "conditions": [
       {
         "value": "The contractor needs to link the flame, only then will humanity be freed. Environmental Defense protects from the flame itself but not the process of fueling it; Inexhaustible is recommended for that."
@@ -269,10 +586,12 @@
         "value": "Only the contractor, you, can link the flame. This is permanent, and it has roughly the same amount of sentience as a Shroud."
       }
     ],
-    "budget": 500,
-    "reward": "Obtain the First Flame which can be removed from the setting, and has enough sapience to communicate, gaining more as time goes on. Has dominion over Flame, Passion and Life within its influence. Whilst used, allows those linked to you in some form to recover and for you to create bonfires to extend its influence; you may summon the coiled swords used to create bonfires at will as they are required for the bonfires to work. You gain no credits from capturing it as it comes pre-captured and is equivalent to a T9 waifu in capabilities. Gain 200 credits alongside a purchase of Exit Stage Left if you do not have it already, or an additional 5 credits if you do.",
-    "loca": "Dark Souls",
-    "uid": "lNnbG"
+    "image": "http://assets.vg247.com/current//2016/04/dark_souls_3_kiln_of_the_first_flame.jpg",
+    "scope": "Grand",
+    "desc": "Time and time again, there has been a chosen undead appointed to link the First Flame once again. This time we've specifically made a scenario for someone to do the opposite. Upon choosing this mission you take the place of the Chosen Undead, with the objective of freeing humanity from the First Flame. You start off in the same place as the Chosen Undead would at the beginning of their journey with their very curse applied to you, regardless of defenses, but this is additive to what you had before. \n\nShortly after the mission starts another Chosen Undead will be awakened to link the flame once again, and will be hostile whilst unbound, influenced by those who are set on linking the flame still - negotiation is not an option.",
+    "title": "The Missing Chosen Undead",
+    "rewardType": "Other",
+    "author": "Sleepy Fluffball™"
   },
   {
     "desc": "If you know of the Teen Titans tv show you will know of the feud between Blackfire and Starfire. What you may not know is of how it was born - out of their father's blatant abuse of his older daughter and favoritism for the younger, that eventually resulted in Blackfire just wanting to get one over her sister. A sister who still loves her, but whose patience is not infinite. Settle things right, and have them reconcile as good sisters... And your subjects and consorts, as Blackfire puts a lot of value in her birthright as the next Grand Ruler.",
@@ -300,7 +619,7 @@
     ],
     "source": "",
     "objectives": [],
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1005500365761945691/ddxz91y-4f93673d-ad2d-40eb-b5e6-2ea083085384.png",
     "author": "Ratcatcher",
     "scope": "Quick",
     "uid": "qLMfc"

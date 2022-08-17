@@ -31,8 +31,8 @@
       <div
 
         id="No Bindings"
-        class="mb-2 p-2 bg-light-400 dark:bg-rose-900 column-block max-w-[600px]"
-        :class="flags.noBindings ? 'hover:(yellow-100 dark:bg-rose-800) cursor-pointer': 'dark:bg-gray-600'"
+        class="mb-2 p-2 bg-light-400 dark:bg-rose-900 column-block max-w-[600px] hover:(yellow-100 dark:bg-rose-800) cursor-pointer"
+        @click="sellAllBindings"
       >
         <img
           v-if="settings.perkImages"
@@ -106,18 +106,20 @@
 <script lang='ts' setup>
 import { onBeforeRouteUpdate } from 'vue-router'
 import { PerkFull } from 'global'
-import { countBy } from 'lodash-es'
+import { countBy, remove } from 'lodash-es'
 import {
   desc, symbioteRules, shroudElements, tantricDesc,
 } from '~/data/binding'
 import { useTooltips } from '~/logic/misc'
-import { bindingAvailable, chooseBinding } from '~/logic'
+import { bindingAvailable, chooseBinding, deletePerk } from '~/logic'
 import { useStore } from '~/store/store'
 import { DLCbindings } from '~/data/DLCs'
 import PerkCard from '~/components/cards/PerkCard.vue'
 import GenericPerkCard from '~/components/cards/perkCards/GenericPerkCard.vue'
 import { useFullPerks } from '~/logic/localPerks'
-const { binding, flags, settings } = useStore()
+import { confirmDialog } from '~/logic/dialog'
+
+const { binding, flags, settings, allEffects } = useStore()
 const [showElements, toggleElements] = useToggle()
 const [showRitual, toggleRitual] = useToggle()
 
@@ -203,5 +205,13 @@ function generateProps(perk: PerkFull) {
   if (perk.increment) props.increment = !!perk.increment
   if (perk.title === 'Prismatic Shroud') props.elementList = shroudElements.map(x => ({ flavor: x.title }))
   return props
+}
+
+async function sellAllBindings() {
+  if (await confirmDialog('This action will return all currently purchased binding perks, proceed?', 'confirm')) {
+    deletePerk(binding.value, () => false)
+    // binding.value.splice(0)
+    flags.value.noBindings = true
+  }
 }
 </script>

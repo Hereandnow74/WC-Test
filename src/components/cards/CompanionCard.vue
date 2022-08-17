@@ -91,10 +91,11 @@
           by @{{ charData.nickname }}
         </div>
         <div v-if="showTiers" class="flex justify-between px-4">
-          <div class="text-gray-400">
+          <div class="text-gray-400 justify-self-start">
             Tier: <span class="text-amber-300">{{ (charData.tier) }}</span>
           </div>
-          <div class="text-gray-400">
+          <Button v-model="defenseTags" size="small" label="defenses" class="px-2 mb-1 font-normal" />
+          <div class="text-gray-400 justify-self-end">
             Cost: <span class="text-amber-300">{{ charData.tier === 11 ? 'Tier X ticket' : CHAR_COSTS[charData.tier] }}</span>
             <span
               v-if="flags.noBindings && (charData.tier) !== 11 && (charData.tier) !== 1"
@@ -104,7 +105,7 @@
         </div>
         <div v-if="showTags" class="flex flex-wrap gap-1 text-sm justify-center">
           <Tag
-            v-for="tag in tags"
+            v-for="tag in tags.filter(tag => defenseTags ? defTags.includes(tag.tag) : !defTags.includes(tag.tag))"
             :key="tag.tag"
             :tag="tag"
             :link="tag.tag === 'Perk' ? {path: '/talents/specific', hash: `#${waifusThatHasPerk[charData.uid]}`} : ''"
@@ -136,7 +137,7 @@
 <script lang='ts' setup>
 import { Character } from 'global'
 import { findIndex, random } from 'lodash-es'
-import { CHAR_COSTS, PLACEHOLDER_IMAGE, waifusThatHasPerk, waifuTags } from '~/data/constants'
+import { CHAR_COSTS, defTags, PLACEHOLDER_IMAGE, waifusThatHasPerk, waifuTags } from '~/data/constants'
 import { lazyLoadSingleImg, tagToggles } from '~/logic'
 import { buyCompanion, captureCompanion, yoinkCompanion, slightlyCompanion } from '~/logic/waifuLogic'
 import { useStore } from '~/store/store'
@@ -182,6 +183,8 @@ const editMenu = ref<EventTarget | null>(null)
 const showMenu = ref(false)
 const isInfoHovered = useElementHover(infoIcon)
 const isMenuHovered = useElementHover(editMenu)
+
+const defenseTags = ref(false)
 
 const isTouchpad = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0)
 

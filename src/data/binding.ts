@@ -838,7 +838,7 @@ export const lures: PerkFull[] = [
   {
     uid: 'skl9J',
     title: 'Tsundere Service',
-    image: '',
+    image: 'https://cdn.discordapp.com/attachments/925963686433132644/1005160800358502491/Screenshot_5.jpg',
     cost: 20,
     category: 'Lure',
     whitelist: ['Alluring Whisper', 'Zenryoku Zenkai'],
@@ -980,7 +980,7 @@ export const otherControls: PerkFull[] = [
   {
     uid: 'bcooZ',
     title: 'Command Seals: General Seals',
-    image: 'https://i.ibb.co/qJj0JzJ/Command-Seals-General-Seals.jpg',
+    image: 'https://cdn.discordapp.com/attachments/925963686433132644/1008153693293649920/Fate.Grand.Order.full.2329465.jpg',
     cost: 10,
     category: 'Other Control',
     special: 'Retroactively removes the previous control’s Nasuverse Servant requirement.',

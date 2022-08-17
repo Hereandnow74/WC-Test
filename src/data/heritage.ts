@@ -186,7 +186,7 @@ heritages.push({
 heritages.push({
   uid: 'VKWW1',
   title: 'Double Dragon',
-  image: 'https://i.ibb.co/0QpJFXJ/Dragon-Double.jpg',
+  image: 'https://cdn.discordapp.com/attachments/925963686433132644/1008154966369771571/Screenshot_4.jpg',
   tree: 'Dragon',
   category: 'Heritage',
   type: 'Self',

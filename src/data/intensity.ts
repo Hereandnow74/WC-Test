@@ -23,7 +23,7 @@ export const intensity: Intensity[] = []
 intensity.push({
   uid: 'k5YNK',
   title: 'Me and My Girlfriend(s)(PvE)',
-  image: 'https://i.ibb.co/WgYf6Dn/Me-And-My-Girlfriend-S.jpg',
+  image: 'https://cdn.discordapp.com/attachments/925963686433132644/1007998021373526016/1175372-1463x823-DesktopNexus.com.jpg',
   intensity: 0,
   special: 'Chargen only',
   chargen: true,
@@ -278,7 +278,7 @@ invasionPvP.push({
 invasionPvP.push({
   uid: 'hrfse',
   title: 'Green Eye Orb',
-  image: '',
+  image: 'https://cdn.discordapp.com/attachments/894482928808112208/1007575677597384735/gyrx5mvdvwsr51.jpg',
   cost: 10,
   pvp: true,
   desc: `

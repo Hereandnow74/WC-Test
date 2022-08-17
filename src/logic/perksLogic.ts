@@ -39,6 +39,7 @@ export function deleteFreebies(freebies: object) {
 }
 
 export function addFreebies(freebies: object) {
+  console.log(freebies)
   for (const [key, perk] of Object.entries(freebies) as [keyof typeof allForSave, string[]][]) {
     perk.forEach((title: string) => {
       const ind = findIndex(allForSave[key].value, { title })
@@ -56,7 +57,7 @@ export function addFreebies(freebies: object) {
   }
 }
 
-function deletePerk(perkList: Perk[], checkFunc: (arg: any) => boolean) {
+export function deletePerk(perkList: Perk[], checkFunc: (arg: any) => boolean) {
   const toDel = []
   for (let i = 0; i < perkList.length; i++) {
     const origPerk = ALL_PERK_TITLES.value[perkList[i].title]
@@ -207,7 +208,7 @@ export function chooseBinding(bin: Binding, saveData: Perk) {
         saveData.freebies = shroudElements[i].freebies
     }
     allEffects.value.push(bin.title)
-    if (bin.complex) saveData.freebies = freebies
+    if (bin.complex && Object.keys(freebies).length) saveData.freebies = freebies
     if (bin.type) saveData.type = bin.type
     if (saveData.freebies) addFreebies(saveData.freebies)
     binding.value.push({ anything, ...saveData })

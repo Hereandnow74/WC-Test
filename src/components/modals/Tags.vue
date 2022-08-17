@@ -60,7 +60,7 @@
 </template>
 
 <script lang='ts' setup>
-import { waifuTags, useAllChars } from '~/data/constants'
+import { waifuTags, useAllChars, defTags } from '~/data/constants'
 import { tagToggles, threeToggle } from '~/logic'
 
 const { tagsCount } = useAllChars()
@@ -73,29 +73,6 @@ function toggleAll() {
   const val = threeToggle(tagToggles.F)
   Object.keys(tagToggles).forEach(key => tagToggles[key] = val)
 }
-
-const defTags = [
-  'Sturdy',
-  'Harsh',
-  'Hazard',
-  'Monster Tamer',
-  'Cool',
-  'Materialist',
-  'Psychic',
-  'Mind Powers',
-  'Bodyjack',
-  'Drain HP/MP/SP',
-  'Instant Death',
-  'Not Die',
-  'Polymorph',
-  'Unstable Reality',
-  'Corrupting',
-  'Social',
-  'Divination',
-  'Fate manipulation',
-  'Luck manipulation',
-  'Time manipulation',
-]
 
 const allTagsFiltered = computed(() => {
   return Object.values(waifuTags).filter(tag => onlyDefense.value ? defTags.includes(tag.tag) : true).sort((a, b) => a.tag.localeCompare(b.tag))

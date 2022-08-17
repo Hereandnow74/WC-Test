@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col gap-2 p-2 overflow-y-auto scrollbar min-h-0">
-    <div v-if="csr || !flags.chargen" class="flex flex-col gap-2">
+    <div v-if="csr || !flags.chargen || loan.owed || loan.gained" class="flex flex-col gap-2">
       <div>You can take maximum <span class="text-blue-400">{{ creditLimit - loan.owed }}</span> credits loan.</div>
       <div class="flex gap-2">
         <NumberInput
