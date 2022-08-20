@@ -1,6 +1,6 @@
 
 <template>
-  <div class="lg:pl-0 flex flex-col gap-4 mt-4 mb-8" :class="[currentWidth]">
+  <div class="lg:pl-0 flex flex-col gap-4 mb-8" :class="[currentWidth]">
     <div class="hidden max-w-screen-lg max-w-screen-xl max-w-screen-sm max-w-screen-md"></div>
     <h1 id="rules" class="text-xl md:text-2xl font-bold text-center mt-4">
       Waifu Catalog <span class="text-gray-600 dark:text-gray-400">(by SwiftRosenthal)</span> Interactive v{{ VERSION }} <span class="text-gray-600 dark:text-gray-400">(by Om1cr0n)</span>
@@ -282,8 +282,11 @@ const { worlds } = useWorlds()
 const currentWidth = computed(() => widths[width.value])
 
 function changeWidth() {
-  if (width.value)
+  if (width.value !== null && width.value !== undefined)
     width.value += 1
+  else
+    width.value = 0
+
   if (width.value >= widths.length) width.value = 0
 }
 

@@ -1,5 +1,5 @@
 <template>
-  <nav class="fixed flex justify-center flex-col w-full z-20 pl-10 pr-2 top-0 bg-white dark:bg-[#121212]">
+  <nav class="flex justify-center flex-col w-full z-20 pl-10 pr-2 top-0 bg-white dark:bg-[#121212]">
     <div class="flex justify-center w-full">
       <Navigation :items="routes" :titles="titles" :level="1" class="text-base md:text-xl" />
     </div>

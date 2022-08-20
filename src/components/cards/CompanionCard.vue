@@ -43,6 +43,19 @@
       <div class="py-1 h-max">
         <h4 id="title" class="flex px-1 leading-none relative" :class="fontSize">
           <span class="flex-grow text-center" :class="isUserChar ? 'text-green-200': ''">{{ charData.name }}</span>
+          <div
+            class="text-base text-gray-400 hover:text-orange-500 cursor-pointer absolute left-1"
+            :class="{'opacity-0': !defenseTags.length}"
+            :title="showDefenseTags ? 'Show Tags' : 'Show Defense Tags'"
+            @click="showDefenseTags = !showDefenseTags"
+          >
+            <carbon:tag-group
+              v-if="showDefenseTags"
+            />
+            <charm:shield-tick
+              v-else
+            />
+          </div>
           <div id="companionMenu" class="h-5 absolute right-0 text-right">
             <div ref="infoIcon" class="pr-1 text-gray-500 text-2xl md:text-base" @click="isTouchpad ? showMenu = true : null">
               <ic:outline-report />
@@ -90,12 +103,11 @@
         <div v-if="charData.nickname" class="ml-2 mb-1 text-xs text-gray-400 leading-none">
           by @{{ charData.nickname }}
         </div>
-        <div v-if="showTiers" class="flex justify-between px-4">
+        <div v-if="showTiers" class="flex justify-between px-2">
           <div class="text-gray-400 justify-self-start">
             Tier: <span class="text-amber-300">{{ (charData.tier) }}</span>
           </div>
-          <Button v-model="defenseTags" size="small" label="defenses" class="px-2 mb-1 font-normal" />
-          <div class="text-gray-400 justify-self-end">
+          <div class="text-gray-400 whitespace-nowrap text-right">
             Cost: <span class="text-amber-300">{{ charData.tier === 11 ? 'Tier X ticket' : CHAR_COSTS[charData.tier] }}</span>
             <span
               v-if="flags.noBindings && (charData.tier) !== 11 && (charData.tier) !== 1"
@@ -105,7 +117,7 @@
         </div>
         <div v-if="showTags" class="flex flex-wrap gap-1 text-sm justify-center">
           <Tag
-            v-for="tag in tags.filter(tag => defenseTags ? defTags.includes(tag.tag) : !defTags.includes(tag.tag))"
+            v-for="tag in showDefenseTags && defenseTags.length ? defenseTags : normalTags"
             :key="tag.tag"
             :tag="tag"
             :link="tag.tag === 'Perk' ? {path: '/talents/specific', hash: `#${waifusThatHasPerk[charData.uid]}`} : ''"
@@ -138,7 +150,7 @@
 import { Character } from 'global'
 import { findIndex, random } from 'lodash-es'
 import { CHAR_COSTS, defTags, PLACEHOLDER_IMAGE, waifusThatHasPerk, waifuTags } from '~/data/constants'
-import { lazyLoadSingleImg, tagToggles } from '~/logic'
+import { lazyLoadSingleImg, tagToggles, showDefenseTags } from '~/logic'
 import { buyCompanion, captureCompanion, yoinkCompanion, slightlyCompanion } from '~/logic/waifuLogic'
 import { useStore } from '~/store/store'
 
@@ -184,8 +196,6 @@ const showMenu = ref(false)
 const isInfoHovered = useElementHover(infoIcon)
 const isMenuHovered = useElementHover(editMenu)
 
-const defenseTags = ref(false)
-
 const isTouchpad = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0)
 
 const modalImage = ref('')
@@ -221,6 +231,9 @@ const charCost = computed(() => charData.value.tier === 11 ? '' : ` ${Math.ceil(
 const tags = computed(() => {
   return charData.value.tags.map(x => waifuTags[x] ? waifuTags[x] : { tag: x, color: 'bg-teal-600', desc: '' })
 })
+
+const normalTags = computed(() => tags.value.filter(tag => !defTags.includes(tag.short)))
+const defenseTags = computed(() => tags.value.filter(tag => defTags.includes(tag.short)))
 
 const modalImageCmp = computed(() => {
   if (modalImage.value.includes('imgur') && modalImage.value.split('.').slice(-2, -1)[0].slice(-1) === 'l') {

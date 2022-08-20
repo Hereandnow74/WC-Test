@@ -2507,7 +2507,7 @@
   },
   {
     "worldName": "The Vampire Diaries",
-    "rating": 8,
+    "rating": 4,
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/992753840413736990/the-vampire-diaries-cast-then-v-now-t.jpg"
   },
   {
@@ -4502,5 +4502,14 @@
   {"worldName":"Skullgirls","rating":6,"image":"https://r4.wallpaperflare.com/wallpaper/886/20/22/video-game-skullgirls-marie-skullgirls-peacock-skullgirls-hd-wallpaper-89be5bf6c844c982453b302dc6836225.jpg"},
   {"worldName":"Smite","rating":7,"image":"https://i.ytimg.com/vi/xAPsmI_zDZs/maxresdefault.jpg"},
   {"worldName":"Strike Witches","rating":6,"image":"https://cdn.wallpapersafari.com/18/53/708LmO.jpg"},
-  {"worldName":"Übel Blatt","rating":5,"image":"https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2013/11/260773-2014-llegara-seinen-ubel-blatt.jpg"}
+  {"worldName":"Übel Blatt","rating":5,"image":"https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2013/11/260773-2014-llegara-seinen-ubel-blatt.jpg"},
+  {"worldName":"Edens Zero","rating":5,"image":"https://i.imgur.com/i9g9aRw.jpeg"},
+  {"worldName":"Empowered","rating":8,"image":"https://www.empoweredcomic.com/comics/1447361960-empoweredv1_001.jpg"},
+  {"worldName":"Kyoukai no Kanata","rating":4,"image":"https://m.media-amazon.com/images/M/MV5BY2NmNTdmNDgtMjJmMS00YzQ1LTliN2ItMjQxOGRiMjAwODFhXkEyXkFqcGdeQXVyMjc4OTQ1OTA@._V1_FMjpg_UX1000_.jpg"},
+  {"worldName":"Return Of The Broken Constellation","rating":10,"image":"https://i.imgur.com/miQJ06x.jpeg","condition":[{"name":"Arcadia","rating":10}]},
+  {"worldName":"Scion","rating":9,"image":"https://ksr-ugc.imgix.net/assets/013/754/233/51583d239cba378607b3215741f36830_original.jpg?ixlib=rb-4.0.2&crop=faces&w=1552&h=873&fit=crop&v=1473978952&auto=format&frame=1&q=92&s=e8911b2f376ef03fde4b4e1dc374122b"},
+  {"worldName":"SSS-Class Gacha Hunter","rating":9,"image":"https://i.imgur.com/DxYFgIl.jpeg"},
+  {"worldName":"Tekken","rating":5,"image":"https://libredd.it/img/ojevd3wacj561.jpg"},
+  {"worldName":"Tsugumomo","rating":3,"image":"https://img1.ak.crunchyroll.com/i/spire4/84bbedd335ca8de11b13d85c535cc4691587432639_full.jpg"},
+  {"worldName":"Zoids","rating":6,"image":"https://cdn.donmai.us/original/3c/55/__fiona_van_flyheight_and_zeke_zoids_and_1_more_drawn_by_ueyama_michirou__3c55ec553c765b039c7cac969fef84cb.jpg","condition":[{"rating":6,"name":"Chaotic Century"},{"rating":5,"name":"New Century Zero"},{"name":"Fuzors","rating":5},{"rating":6,"name":"Genesis"}]}
 ]

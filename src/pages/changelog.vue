@@ -5,11 +5,21 @@
     </h2>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
+        18 August 2022
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>~130 new user submitted characters, new missions, 10 new worlds</li>
+        <li>Defense discount tags are now separated from normal tags</li>
+        <li>Bugfixes & small changes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
         14 August 2022
       </h3>
       <ul class="list-decimal list-inside">
         <li>~300 new user submitted characters, new missions, 11 new worlds</li>
-        <li>Bugfixes & Small changes</li>
+        <li>Bugfixes & small changes</li>
       </ul>
     </div>
     <div>
@@ -19,7 +29,7 @@
       <ul class="list-decimal list-inside">
         <li>~90 new user submitted characters, new missions, 11 new worlds</li>
         <li>You can now click on 'No Bindings' to return all binding perks</li>
-        <li>Bugfixes & Small changes</li>
+        <li>Bugfixes & small changes</li>
       </ul>
     </div>
     <div>
@@ -28,7 +38,7 @@
       </h3>
       <ul class="list-decimal list-inside">
         <li>~120 new user submitted characters, new missions, 11 new worlds</li>
-        <li>Bugfixes & Small changes</li>
+        <li>Bugfixes & small changes</li>
       </ul>
     </div>
     <div>
@@ -39,7 +49,7 @@
         <li>~140 new user submitted characters, new missions</li>
         <li>Splitted Intensity page into 3 pages</li>
         <li>New "Tsundere Service" lure perk</li>
-        <li>Bugfixes & Small changes</li>
+        <li>Bugfixes & small changes</li>
       </ul>
     </div>
     <div>
@@ -49,7 +59,7 @@
       <ul class="list-decimal list-inside">
         <li>~123 new user submitted characters, new missions, 5 new worlds</li>
         <li>Some new waifu perks (Honkai Impact)</li>
-        <li>Bugfixes & Small changes</li>
+        <li>Bugfixes & small changes</li>
       </ul>
     </div>
     <div>
@@ -60,7 +70,7 @@
         <li>~190 new user submitted characters, new missions, 11 new worlds</li>
         <li>Specific Waifu Perks are now treated as companions</li>
         <li>You can now buy companions directly from Specific Waifu Perks page</li>
-        <li>Bugfixes & Small changes</li>
+        <li>Bugfixes & small changes</li>
       </ul>
     </div>
     <div>
@@ -70,7 +80,7 @@
       <ul class="list-decimal list-inside">
         <li>~320 new user submitted characters, new missions</li>
         <li>User added tags now can be seen in Tags window</li>
-        <li>Bugfixes & Small changes</li>
+        <li>Bugfixes & small changes</li>
       </ul>
     </div>
     <div>

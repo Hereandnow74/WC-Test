@@ -75,7 +75,7 @@ function toggleAll() {
 }
 
 const allTagsFiltered = computed(() => {
-  return Object.values(waifuTags).filter(tag => onlyDefense.value ? defTags.includes(tag.tag) : true).sort((a, b) => a.tag.localeCompare(b.tag))
+  return Object.values(waifuTags).filter(tag => onlyDefense.value ? defTags.includes(tag.short) : true).sort((a, b) => a.tag.localeCompare(b.tag))
 })
 
 </script>

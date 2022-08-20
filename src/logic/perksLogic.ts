@@ -182,7 +182,7 @@ export function chooseBinding(bin: Binding, saveData: Perk) {
   const ind = findIndex(binding.value, { title: bin.title })
   if (ind !== -1) {
     if (binding.value[ind].count !== saveData.count && saveData.count > 0) {
-      if (bin.complex) {
+      if (bin.complex && bin.uid !== 'aTjfr') {
         deleteFreebies(binding.value[ind].freebies)
         saveData.freebies = freebies
         addFreebies(saveData.freebies)

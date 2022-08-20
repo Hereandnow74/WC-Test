@@ -260,13 +260,19 @@ const { activeChallenges } = useChallenges()
 const editMode = ref(false)
 const priceMode = ref(false)
 
+const archetype = {
+  dr: 'Dragon',
+  th: 'Transhuman',
+  ou: 'Outsider',
+}
+
 const originText = computed(() => {
   const variants = {
     'Drop-In': 'Dropped-In',
-    'Walk-In': `Walked-In as <b>${startingOrigin.value.character}</b> of T${startingOrigin.value.tier}`,
+    'Walk-In': `Walked-In as <b>${startingOrigin.value.character}</b> of T${startingOrigin.value.tier}${startingOrigin.value.hr ? ` [<span class="text-gray-400">${archetype[startingOrigin.value.hr]}</span>]` : ''}`,
     'Extra': `'Extra' with <b>${startingOrigin.value.cost}</b> additional cost`,
-    'Substitute': `Substitute as a <b>${startingOrigin.value.character}</b> of T${startingOrigin.value.tier}`,
-    'Possess': `Possess a <b>${startingOrigin.value.character}</b> of T${startingOrigin.value.tier}`,
+    'Substitute': `Substitute as a <b>${startingOrigin.value.character}</b> of T${startingOrigin.value.tier}${startingOrigin.value.hr ? ` [<span class="text-gray-400">${archetype[startingOrigin.value.hr]}</span>]` : ''}`,
+    'Possess': `Possess a <b>${startingOrigin.value.character}</b> of T${startingOrigin.value.tier}${startingOrigin.value.hr ? ` [<span class="text-gray-400">${archetype[startingOrigin.value.hr]}</span>]` : ''}`,
   } as Record<string, string>
 
   return variants[startingOrigin.value.title]

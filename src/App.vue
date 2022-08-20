@@ -3,13 +3,14 @@
     class="inset-0 absolute flex flex-col"
     text="gray-700 dark:gray-200"
   >
-    <Header />
-    <div class="flex w-full min-h-0 justify-center">
+    <div class="grid grid-cols-[1fr,auto] grid-rows-[auto,1fr] gap-1 min-h-0 justify-center justify-items-center h-full">
+      <Header class="col-span-2" />
       <SideMenu :class="showSideMenu ? 'max-w-0 sm:max-w-9' : 'max-w-[150px] border-r-2'" />
-      <router-view class="min-h-0 mt-6 sm:mt-8 w-full flex flex-col items-center" :class="showSideMenu ? 'sm:pl-10' : 'sm:pl-36'" />
+      <router-view class="min-h-0 w-full flex flex-col items-center overflow-y-auto overflow-x-hidden scrollbar" :class="showSideMenu ? 'sm:pl-10' : 'sm:pl-36'" />
+      <component :is="Smartphone" v-if="buildLayout" class="w-[450px] bg-gray-800 pt-2 max-h-full min-h-0" />
     </div>
     <SideApps />
-    <Footer />
+    <component :is="Footer" v-if="!buildLayout" />
     <Search />
     <ConfirmDialog class="z-20" />
     <InfoDialog class="z-20" />
@@ -34,10 +35,13 @@ import { VERSION } from './data/constants'
 import {
   isSupport, showSaveLoad, showShare, showSideMenu, showAddPerk, toggleShowAddPerk,
   showAddMission, toggleShowAddMission, promoteShown, toggleShowSettings, showSettings, sendStats,
-  buildImage, copyText, clearBuild, isBuildImage, toggleAddFic, showAddFic, currentFic, toggleDark, randomString, sendCount, showIntro, showBuildImageSettings,
+  buildImage, copyText, clearBuild, isBuildImage, toggleAddFic, showAddFic, currentFic, toggleDark, randomString, sendCount, showIntro, showBuildImageSettings, buildLayout,
 } from '~/logic'
 
 const { totalActive, settings, companions, startingWorld, allEffects, ridePerks, waifuPerks } = useStore()
+
+const Smartphone = computed(() => defineAsyncComponent(() => import('./components/big/Smartphone.vue')))
+const Footer = computed(() => defineAsyncComponent(() => import('./components/big/Footer.vue')))
 
 const addPerkComponent = computed(() => defineAsyncComponent(() => import('./components/modals/AddPerk.vue')))
 const addMissionComponent = computed(() => defineAsyncComponent(() => import('./components/modals/AddMission.vue')))

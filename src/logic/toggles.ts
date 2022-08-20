@@ -30,6 +30,7 @@ export const showShare = ref(false)
 export const isBuildImage = ref(false)
 export const showIntro = ref(false)
 export const showBuildImageSettings = ref(false)
+export const [visible, toggleFull] = useToggle()
 
 export const blackWhite = useStorage('blackWhite', false)
 export const blackWhiteDisabled = useStorage('blackWhiteDisabled', false)
@@ -38,7 +39,10 @@ export const promoteShown = useStorage('pr', false)
 
 export const [appMode, toggleAppMode] = useToggle()
 export const orientation = useStorage('ot', false)
+export const buildLayout = useStorage('buildLayout', false)
 export const activeTab = ref(0)
+
+export const showDefenseTags = ref(false)
 
 export const tagToggles = reactive(Object.values(waifuTags).reduce((a, x) => { a[x.short] = 0; return a }, {} as Record<string, number>))
 

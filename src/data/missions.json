@@ -1,6 +1,79 @@
 [
   
   {
+    "scope": "Grand",
+    "loca": "Panty and Stocking with Garterbelt",
+    "conditions": [
+      {
+        "value": "Panty has sex  or Stocking eats anything sweet or sugary"
+      },
+      {
+        "value": "should one slip up their individual  streak is reset."
+      },
+      {
+        "value": "neither sister can be captured  during this mission."
+      },
+      {
+        "value": "if stocking eats over a total of 100 pounds of sweets or if Panty has sex with over a total of  100 people, their streak are reset"
+      }
+    ],
+    "title": "Temperance is a Wild Bitty",
+    "budget": 100,
+    "rewardType": "Other",
+    "reward": "Garterbelt's immortality ",
+    "image": "https://cdn.donmai.us/original/48/0f/__stocking_and_panty_panty_stocking_with_garterbelt__480fdede49116fd8579a9719fe39437b.jpg",
+    "desc": "Prevent Panty from having sex  for 3 months\nPrevent Stocking from eating sweets for 3 months\nWhile they don't have to happen at the same time they each must abstain from  their vices for an un interrupted 3 months each.\n(the sisters are allowed a single cheat day once per month.)",
+    "objectives": [
+      {
+        "type": "Credits",
+        "value": "Stop Panty from any form of foreplay 100 times",
+        "reward": "20"
+      },
+      {
+        "type": "Credits",
+        "value": "Get Stocking to eat something  bitter 100 times",
+        "reward": "20"
+      },
+      {
+        "type": "Credits",
+        "reward": "100",
+        "value": "Refrain from using mindcontrol, captures, or lures during this mission"
+      },
+      {
+        "value": "Teach Chuck a trick",
+        "type": "Credits",
+        "reward": "5"
+      },
+      {
+        "type": "Other",
+        "reward": "Gain a free defense that you are eligible to have ",
+        "value": "If you are an angel, deity, demi-god, priest, nun, or devil"
+      }
+    ],
+    "author": "bakami",
+    "source": "",
+    "uid": "thJup"
+  },
+  {
+    "conditions": [
+      {
+        "value": "Don't get caught stealing before you're done"
+      }
+    ],
+    "objectives": [],
+    "reward": "Covert Talent",
+    "loca": "Generic",
+    "author": "Silveod",
+    "budget": 30,
+    "image": "",
+    "title": "Panty Burglar",
+    "rewardType": "Perks",
+    "source": "",
+    "scope": "Quick",
+    "desc": "Steal underwear belonging to at least 10 unbound potential companions. Then brag about it using a local broadcasting method, like twitter, the newspaper comment section or a town crier.",
+    "uid": "iZKoh"
+  },
+  {
     "desc": "Peace leads to contentment, and it will finalize into stagnation. \n\nYour job is to prevent that. Wage wars, unleash monstrous abominations, cast apocalyptic spells- use whatever means you have. As long the world itself can progress, it's allowed. \n\nBe their common enemy, an evil dragon destined to die in a happily ever after story. ",
     "source": "",
     "reward": "75 x world's DR, granted at the start",
@@ -319,9 +392,8 @@
     "uid": "vFXaj"
   },
   {
-    "reward": "1000",
-    "loca": "Scott Pilgrim",
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1005499607113015406/Screenshot_2.jpg",
+    "scope": "Standard",
+    "rewardType": "Credits",
     "budget": 200,
     "conditions": [
       {
@@ -337,18 +409,17 @@
         "value": "Also, get Envy to recover the memories Todd wiped out and insure she can get her revenge, without Capture."
       }
     ],
-    "uid": "XNqIu",
-    "scope": "Standard",
-    "rewardType": "Credits",
+    "reward": "1000 Credits",
+    "loca": "Scott Pilgrim",
     "desc": "In this variant of Scott Pilgrim's universe Todd was able to pay off the Vegan Police and then kill Scott for good, before making Envy forget he was cheating on her and lied to her. Gideon has almost won... Let's correct this.",
-    "source": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1005499607113015406/Screenshot_2.jpg",
+    "uid": "XNqIu",
     "title": "Avenging Scott",
-    "author": "Ratcatcher",
     "objectives": [
       {
+        "type": "Other",
         "value": "Make Ramona fall for you",
-        "reward": "Swords Power of Love and Power of Understanding, instant capture, reward brought to equivalent of her purchase price",
-        "type": "Other"
+        "reward": "Swords Power of Love and Power of Understanding, instant capture, reward brought to equivalent of her purchase price"
       },
       {
         "type": "Other",
@@ -356,23 +427,23 @@
         "value": "Seduce Envy and have her cheat on Todd"
       },
       {
+        "type": "Perks",
         "reward": "Soul Talent or its equivalent in credits",
-        "value": "Defeat Patel by yourself after he summoned the Demon Hipster Chicks",
-        "type": "Perks"
-      },
-      {
-        "reward": "Communication Talent or its equivalent in credits",
-        "value": "Talk down Lucas Lee",
-        "type": "Perks"
-      },
-      {
-        "value": "Get Todd dealt with by HONEST Vegan Police officers",
-        "reward": "TS1 as Tetsuo (Akira)",
-        "type": "Companions"
+        "value": "Defeat Patel by yourself after he summoned the Demon Hipster Chicks"
       },
       {
         "type": "Perks",
+        "value": "Talk down Lucas Lee",
+        "reward": "Communication Talent or its equivalent in credits"
+      },
+      {
+        "type": "Companions",
+        "value": "Get Todd dealt with by HONEST Vegan Police officers",
+        "reward": "TS1 as Tetsuo (Akira)"
+      },
+      {
         "value": "Seduce Lynette Guycott",
+        "type": "Perks",
         "reward": "One level in your chosen Heritage"
       },
       {
@@ -381,16 +452,18 @@
         "reward": "One level on all local captures"
       },
       {
-        "value": "Shut the Katayanagi Twins up",
         "type": "Perks",
-        "reward": "One level in your chosen Heritage"
+        "reward": "One level in your chosen Heritage",
+        "value": "Shut the Katayanagi Twins up"
       },
       {
+        "value": "Kill Gideon for good on first try",
         "type": "Perks",
-        "reward": "Full Corruption Defense or its equivalent in credits",
-        "value": "Kill Gideon for good on first try"
+        "reward": "Full Corruption Defense or its equivalent in credits"
       }
-    ]
+    ],
+    "source": "",
+    "author": "Ratcatcher"
   },
   {
     "source": "",
@@ -625,14 +698,30 @@
     "uid": "qLMfc"
   },
   {
+    "scope": "Grand",
+    "title": "Win The Holy Grail",
+    "image": "https://i.imgur.com/1OoqqAE.jpg",
+    "objectives": [
+      {
+        "type": "Credits",
+        "value": "Kill none of the masters",
+        "reward": "200"
+      },
+      {
+        "reward": "100",
+        "value": "Kill all of the masters",
+        "type": "Credits"
+      }
+    ],
     "rewardType": "Credits",
-    "author": "Masterofbiomes",
+    "uid": "UqWXJ",
+    "desc": "Enter a holy grail war, and win!",
     "conditions": [
       {
         "value": "May only be taken on Chargen"
       },
       {
-        "value": "Must substitute into a canon master from the war (Shirou, Rin, Illya, Sakura, Kuzuki, or Kirei)"
+        "value": "Must substitute into a canon master from the war (Shirou, Rin, Illya, Sakura, Atrum, Kuzuki, or Kirei)"
       },
       {
         "value": "You will be refunded the full price of your chosen masters cannon servant"
@@ -644,27 +733,11 @@
         "value": "Must win the Holy Grail War"
       }
     ],
-    "scope": "Grand",
-    "image": "https://i.imgur.com/1OoqqAE.jpg",
-    "budget": 365,
-    "desc": "Enter a holy grail war, and win!",
-    "source": "",
-    "objectives": [
-      {
-        "type": "Credits",
-        "reward": "200",
-        "value": "Kill none of the masters"
-      },
-      {
-        "value": "Kill all of the masters",
-        "type": "Credits",
-        "reward": "100"
-      }
-    ],
     "loca": "Nasuverse",
-    "title": "Win The Holy Grail",
+    "source": "",
     "reward": "1000",
-    "uid": "UqWXJ"
+    "author": "Masterofbiomes",
+    "budget": 365
   },
   {
     "author": "Trismegistus",
@@ -1653,34 +1726,40 @@
     "uid": "ntpOf"
   },
   {
-    "budget": 150,
+    "desc": "The Daedric Princes are a wonderful group of deities who insist on stabbing each other with penis-spears and whatnot. A client is very interested in spreading their particular brand of chaos throughout Tamriel.",
     "source": "",
+    "image": "https://i.pinimg.com/564x/0a/54/e6/0a54e6b8e7e50207a8d82bb8a77f285b.jpg",
     "loca": "The Elder Scrolls",
+    "title": "Champion of the Daedra",
+    "author": "PaxCruento",
+    "reward": "150",
+    "budget": 150,
+    "rewardType": "Credits",
     "objectives": [
       {
         "value": "Complete a questline for Azura",
-        "reward": "Free Template Stacking 1 perk of Raven from DC, or 100 credits",
-        "type": "Other"
+        "type": "Other",
+        "reward": "Free Template Stacking 1 perk of Raven from DC, or 100 credits"
       },
       {
-        "value": "Complete a questline for Boethiah",
         "reward": "Free Template Stacking 1 of a Paladin with the Oathbreaker subclass from Dungeons & Dragons, or 100 credits",
-        "type": "Other"
-      },
-      {
-        "value": "Complete a questline for Clavicus Vile",
         "type": "Other",
-        "reward": "Free Template Stacking 1 of Kyubey or Incubator from Puella Magi Madoka Magica, or 100 credits"
+        "value": "Complete a questline for Boethiah"
       },
       {
         "type": "Other",
-        "value": "Complete a questline for Hermaeus Mora",
-        "reward": "Free Template Stacking 1 of Ninomae Ina'nis from Hololive, or 100 credits"
+        "reward": "Free Template Stacking 1 of Kyubey or Incubator from Puella Magi Madoka Magica, or 100 credits",
+        "value": "Complete a questline for Clavicus Vile"
       },
       {
         "type": "Other",
+        "reward": "Free Template Stacking 1 of Ninomae Ina'nis from Hololive, or 100 credits",
+        "value": "Complete a questline for Hermaeus Mora"
+      },
+      {
         "value": "Complete a questline for Hircine",
-        "reward": "Free Template Stacking 1 of The Good Hunter from Bloodborne, or 100 credits"
+        "reward": "Free Template Stacking 1 of The Good Hunter from Bloodborne, or 100 credits",
+        "type": "Other"
       },
       {
         "reward": "Free Template Stacking 1 of Thrall from Warcraft, or 100 credits",
@@ -1688,9 +1767,9 @@
         "type": "Other"
       },
       {
-        "value": "Complete a questline for Mehrunes Dagon",
         "reward": "Free Template Stacking 1 of Carol Malus Dienheim from Symphogear, or 100 credits",
-        "type": "Other"
+        "type": "Other",
+        "value": "Complete a questline for Mehrunes Dagon"
       },
       {
         "type": "Other",
@@ -1698,34 +1777,34 @@
         "reward": "Free Template Stacking 1 of Loki from Marvel, or 100 credits"
       },
       {
+        "value": "Complete a questline for Meridia",
         "reward": "Free Template Stacking 1 of Saint Celestine from Warhammer 40k, or 100 credits",
-        "type": "Other",
-        "value": "Complete a questline for Meridia"
+        "type": "Other"
       },
       {
-        "reward": "Free Template Stacking 1 of Femto from Berserk, or 100 credits",
         "type": "Other",
+        "reward": "Free Template Stacking 1 of Femto from Berserk, or 100 credits",
         "value": "Complete a questline for Molag Bal"
       },
       {
         "type": "Other",
-        "value": "Complete a questline for Namira",
-        "reward": "Free Template Stacking 1 of Meruem from Hunter x Hunter, or 100 credits"
+        "reward": "Free Template Stacking 1 of Meruem from Hunter x Hunter, or 100 credits",
+        "value": "Complete a questline for Namira"
       },
       {
         "value": "Complete a questline for Nocturnal",
-        "type": "Other",
-        "reward": "Free Template Stacking 1 of Koishi Komeiji from Touhou Project, or 100 credits"
+        "reward": "Free Template Stacking 1 of Koishi Komeiji from Touhou Project, or 100 credits",
+        "type": "Other"
       },
       {
+        "value": "Complete a questline for Peryite",
         "type": "Other",
-        "reward": "Free Template Stacking 1 of Malenia, Goddess of Rot from Elden Ring, or 100 credits",
-        "value": "Complete a questline for Peryite"
+        "reward": "Free Template Stacking 1 of Malenia, Goddess of Rot from Elden Ring, or 100 credits"
       },
       {
         "reward": "Free Template Stacking 1 of Pinkie Pie from My Little Pony, or 100 credits",
-        "value": "Complete a questline for Sanguine",
-        "type": "Other"
+        "type": "Other",
+        "value": "Complete a questline for Sanguine"
       },
       {
         "value": "Complete a questline for Sheogorath",
@@ -1736,8 +1815,14 @@
         "type": "Other",
         "reward": "Free Template Stacking 1 of Freddy Krueger from A Nightmare on Elm Street, or 100 credits",
         "value": "Complete a questline for Vaermina"
+      },
+      {
+        "value": "Complete all of the above",
+        "reward": "All the Daedras will now welcome you as one of their own. Take Template Stacking 0, 1 and 2 of Daedric Prince from Skyrim. Your Daedric Prince Domain is Worship.",
+        "type": "Other"
       }
     ],
+    "uid": "mkIfg",
     "conditions": [
       {
         "value": "Increase the population of a Daedric cult in a province by tenfold"
@@ -1746,14 +1831,7 @@
         "value": "Do not let the population of that cult drop from its tenfold-baseline for at least 2 months"
       }
     ],
-    "rewardType": "Credits",
-    "title": "Champion of the Daedra",
-    "desc": "The Daedric Princes are a wonderful group of deities who insist on stabbing each other with penis-spears and whatnot. A client is very interested in spreading their particular brand of chaos throughout Tamriel.",
-    "image": "https://i.pinimg.com/564x/0a/54/e6/0a54e6b8e7e50207a8d82bb8a77f285b.jpg",
-    "author": "PaxCruento",
-    "reward": "150",
-    "scope": "Standard",
-    "uid": "mkIfg"
+    "scope": "Standard"
   },
   {
     "rewardType": "Credits",
@@ -2269,8 +2347,15 @@
     "uid": "ulPZw"
   },
   {
-    "objectives": [],
     "desc": "Upon re-enacting various activities in the life of Sheogorath, the Daedric Prince of Madness, the Hero of Kvatch successfully mantles Sheogorath as a form of apotheosis in order to stop Jyggalag's (The Daedric Prince of Order) Greymarch. \nThis means that by the end of Oblivion, The Hero of Kvatch has been transformed into Sheogorath's full murderously cheesy glory.\nBring the Hero back.",
+    "scope": "Standard",
+    "rewardType": "Credits",
+    "loca": "The Elder Scrolls",
+    "budget": 250,
+    "source": "",
+    "author": "PaxCruento",
+    "uid": "bcYFn",
+    "reward": "600 credits",
     "conditions": [
       {
         "value": "The Hero of Kvatch must either be prevented from becoming Sheogorath whilst also preventing the Greymarch."
@@ -2279,16 +2364,15 @@
         "value": "Or Sheogorath, as seen in TES: Skyrim, must somehow regain his old personality of The Hero of Kvatch"
       }
     ],
-    "reward": "600 credits",
-    "image": "https://images6.alphacoders.com/108/thumbbig-1080674.webp",
-    "rewardType": "Credits",
-    "source": "",
+    "objectives": [
+      {
+        "type": "Other",
+        "reward": "Take TS 1 Sheogorath of The Elder Scrolls",
+        "value": "If you have prevented the Hero of Kvatch from becoming Sheogorath. Congratulations, you are now Sheogorath."
+      }
+    ],
     "title": "Un-Mantling",
-    "loca": "The Elder Scrolls",
-    "author": "PaxCruento",
-    "scope": "Standard",
-    "budget": 250,
-    "uid": "bcYFn"
+    "image": "https://images6.alphacoders.com/108/thumbbig-1080674.webp"
   },
   {
     "title": "Pick a God, any God",
@@ -4033,22 +4117,29 @@
     "uid": "0UHNB"
   },
   {
-    "author": "Templar9999",
+    "uid": "oLjhK",
+    "reward": "1 TX ticket, 2500 credits toward demiplane/dungeons",
+    "loca": "Any",
+    "scope": "Grand",
     "budget": 590,
     "conditions": [
       {
-        "value": ""
+        "value": "Conquer Hell by any means necessary."
+      },
+      {
+        "value": "Upon conquering 80% of this Hell or hellish dimension, all of the ones that you rule must acknowledge you as their one and only ruler."
+      },
+      {
+        "value": "The prior overlord of said Hell MUST not be captured or sold."
       }
     ],
-    "desc": "It is better to Rule in Hell, then Serve in Heaven.\nThis is your mission statement.\nYou must aquire control of Hell, or a suitable hell dimension. The prior overlord of said Hell may not be captured or sold. Over 80% of he chosen plane MUST recognize you as ruler.",
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992803008385658922/1_Hell_on_Earth.jpg",
-    "loca": "Any",
-    "objectives": [],
-    "reward": "1 TX ticket, 2500 credits toward demiplane/dungeons",
-    "scope": "Grand",
+    "author": "Templar9999",
     "source": "",
     "title": "Better to Rule in Hell",
-    "uid": "oLjhK"
+    "objectives": [],
+    "rewardType": "Other",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992803008385658922/1_Hell_on_Earth.jpg",
+    "desc": "It is better to Rule in Hell, then Serve in Heaven.\nThis is your mission statement.\nYou must acquire control of Hell, or a suitable hell dimension. The prior overlord of said Hell may not be captured or sold. Over 80% of the chosen plane MUST recognize you as ruler."
   },
   {
     "author": "Heaven Canceler",
@@ -4945,11 +5036,20 @@
     "uid": "oVQZ8"
   },
   {
+    "desc": "Remember that stupid plan of all stupid plans to turn everyone into some white plant-like humanoid by an idiot who really wants to bone that wood-making guy? No, not that one. I'm talking about Madara's stupid plan. You must hijack it and force everyone to play DOOM the PC game, one way or the other. Use the Genjutsu to make it look like it is VR or something.",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990972785339801600/maxresdefault.jpg",
+    "title": "Moon of the DOOM Plan",
     "author": "ゴDi0ゴ",
-    "budget": 1000,
+    "objectives": [
+      {
+        "value": "Find a way to separate the Tailed Beasts from the Ten-Tails without causing the Ten-Tails to die.",
+        "reward": "Template Stacking (Ten-Tails Jinchuuriki) for free or OCDS (Ten-Tails)",
+        "type": "Other"
+      }
+    ],
     "conditions": [
       {
-        "value": "Kill Madara stealthily"
+        "value": "Kill Madara stealthily after the Moon Plan is initiated."
       },
       {
         "value": "Everyone who are placed on the Genjutsu must play DOOM in their personal heaven, one way or the other"
@@ -4958,19 +5058,12 @@
         "value": "Those who broke out or not part of the Genjutsu must be subjected to the Genjutsu and also play DOOM, one way or the other"
       }
     ],
-    "desc": "Remember that stupid plan of all stupid plans to turn everyone into some white plant-like humanoid by an idiot who really wants to bone that wood-making guy? No, not that one. I'm talking about Madara's stupid plan. You must hijack it and force everyone to play DOOM the PC game, one way or the other. Use the Genjutsu to make it look like it is VR or something.",
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990972785339801600/maxresdefault.jpg",
-    "loca": "Naruto",
-    "objectives": [
-      {
-        "reward": "Template Stacking (Ten-Tails Jinchuuriki) for free or OCDS (Ten-Tails)",
-        "value": "Find a way to separate the Tailed Beasts from the Ten-Tails without causing the Ten-Tails to die."
-      }
-    ],
-    "reward": "1000 Points and OCDS (Aizen) for free.",
+    "rewardType": "Other",
     "scope": "Grand",
     "source": "",
-    "title": "Moon of the DOOM Plan",
+    "loca": "Naruto",
+    "budget": 1000,
+    "reward": "1000 Points and OCDS (Aizen) for free.",
     "uid": "XMwCl"
   },
   {
@@ -5242,38 +5335,53 @@
     "uid": "qdNrx"
   },
   {
-    "author": "ゴDi0ゴ",
-    "budget": 700,
+    "rewardType": "Credits",
     "conditions": [
       {
         "value": "You must possess Ozma. No substitution!"
       },
       {
         "value": "You must have Light Salem as your only Waifu in the world."
+      },
+      {
+        "value": "Everyone must know your love with each other! Shout it out to the world!"
+      },
+      {
+        "value": "Should you have other members in your retinue, they must help you achieve your goals of trolling everyone by making them super jealous."
       }
     ],
-    "desc": "You are going to a world filled with monsters that are borne of darkness and hunt the light, people who hunt down those aforementioned monsters, and the greatest divorce of a lifetime. Your mission, should you choose to accept it, is to cause MASS CONFUSION! Yes that's right. You must cause it by becoming Ozma and having a Pre-Grimm!Salem. With you two, you must show that you two are truly in love and everyone would become super jelly (not actual jelly, but jealous).",
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990973530738937907/V6_03_00007.webp",
+    "scope": "Standard",
+    "desc": "You are going to a world filled with monsters that are borne of darkness and hunt the light, people who hunt down those aforementioned monsters, and the greatest divorce of a lifetime. Your mission, should you choose to accept it, is to cause MASS CONFUSION! Yes that's right. You must cause it by becoming Ozma and having a Pre-Grimm!Salem. With you two, you must show that you two are truly in love and everyone MUST become super jelly (not actual jelly, but jealous). When everyone in Remnant, yes even the Grimm, know that you two are truly in love, you may now leave with pride that everyone is so damn jealous they are bleeding from their mouths and eyes.",
     "loca": "RWBY",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990973530738937907/V6_03_00007.webp",
+    "budget": 700,
     "objectives": [
       {
-        "reward": "250 Credits",
-        "value": "Everyone must know you two are on a honeymoon. Even if you have to pull out a megaphone and shout out that you two are on a honeymoon, much to her embarassment."
+        "value": "Everyone must know you two are on a honeymoon from another world. Even if you have to pull out a megaphone and shout out that you two are on a honeymoon, much to Light Salem's embarrassment.",
+        "type": "Credits",
+        "reward": "250"
       },
       {
+        "value": "Salem must become pregnant with quadruplets by a year's time.",
         "reward": "Free purchase of Seasonal Maiden for each of your children.",
-        "value": "Salem must become pregnant with quadruplets by a year's time."
+        "type": "Credits"
       },
       {
-        "reward": "500 Credits",
-        "value": "Ozpin and Grimm Salem MUST feel that emotion whenever the two of you are in the scene."
+        "reward": "500",
+        "value": "Ozpin and Grimm Salem MUST feel that emotion called 'JEALOUSY' whenever the two of you are in the scene. In fact, make them regret that they divorced one another by acting lovey-dovey whenever you know their factions' members are nearby.",
+        "type": "Credits"
+      },
+      {
+        "type": "TX Tickets",
+        "reward": "1",
+        "value": "If you did all of the additional objectives. Congratulations, everyone is now Super Jelly (not literally, again)! Here, have a TX Ticket."
       }
     ],
-    "reward": "250 Credits",
-    "scope": "Standard",
-    "source": "",
+    "reward": "250",
+    "uid": "Q6E3f",
     "title": "Honeymoon in Remnant: Jealous Exes Are Jealous",
-    "uid": "Q6E3f"
+    "source": "",
+    "author": "ゴDi0ゴ"
   },
   {
     "author": "Heaven Canceler",
@@ -5644,8 +5752,28 @@
     "uid": "BUq1l"
   },
   {
+    "rewardType": "Other",
     "author": "Heaven Canceler",
+    "desc": "Louise de La Valliere has been quite the troublesome young lady. Over the years, in various worlds, she has gotten so many different familiars. And oddly enough, most are quite willing to obey her whims and lead her towards greatness. Our client thinks a bit of karma is in order to balance things out. For this mission you will thus have to make Louise your familiar instead, the details of how this is done is up to you. But your relationship must be one of master and servant, with heavy sexual undertones. The mission will only be considered finishes when she aknowledges you as her master in body, mind and soul.",
+    "uid": "hNw7m",
+    "reward": "Chen from Touhou or 40 Credits",
+    "source": "",
+    "title": "The Master of Zero",
+    "scope": "Standard",
+    "objectives": [
+      {
+        "value": "Actually turn Louise into a catgirl and accept her new state of being.",
+        "reward": "1 TS for a catgirl of your choice or 15 credits",
+        "type": "Other"
+      },
+      {
+        "reward": "20 Credits",
+        "value": "Have at least one member of the Valliere family actively approve and support your work.",
+        "type": "Credits"
+      }
+    ],
     "budget": 200,
+    "image": "https://i.imgur.com/89kpjN8.png",
     "conditions": [
       {
         "value": "No binding or mind controlling the target to give up, slow conditioning is permitted."
@@ -5654,24 +5782,7 @@
         "value": "Make her beg for the honor of bearing your children."
       }
     ],
-    "desc": "Louise de La Valliere has been quite the troublesome young lady. Over the years, in various worlds, she has gotten so many different familiars. And oddly enough, most are quite willing to obey her whims and lead her towards greatness. Our client thinks a bit of karma is in order to balance things out. For this mission you will thus have to make Louise your familiar instead, the details of how this is done is up to you. But your relationship must be one of master and servant, with heavy sexual undertones. The mission will only be considered finishes when she aknowledges you as her master in body, mind and soul.",
-    "image": "https://i.imgur.com/89kpjN8.png",
-    "loca": "Zero no Tsukaima",
-    "objectives": [
-      {
-        "reward": "1 TS for a catgirl of your choice or 15 credits",
-        "value": "Actually turn Louise into a catgirl and accept her new state of being."
-      },
-      {
-        "reward": "20 Credits",
-        "value": "Have at least one member of the Valliere family actively approve and support your work."
-      }
-    ],
-    "reward": "Chen from Touhou or 40 Credits",
-    "scope": "Standard",
-    "source": "",
-    "title": "The Master of Zero",
-    "uid": "hNw7m"
+    "loca": "Zero no Tsukaima"
   },
   {
     "author": "Heaven Canceler",
@@ -5823,8 +5934,18 @@
     "uid": "PdhDe"
   },
   {
-    "author": "Heaven Canceler",
+    "uid": "UT6W2",
+    "title": "Padawan York",
+    "scope": "Quick",
+    "reward": "40 Credits",
+    "desc": "There is a young Shipgirl with a dream, a dream to become a true defender of justice. You are the one she has been waiting for, such is destiny!<br>This job is simple, take York as your Jedi apprentice and teach her the art of the force, lightsaber combat and everything else a proper Jedi needs to know.",
     "budget": 200,
+    "author": "Heaven Canceler",
+    "image": "https://i.imgur.com/5KOPuGL.png",
+    "loca": "Azur Lane",
+    "source": "",
+    "objectives": [],
+    "rewardType": "Credits",
     "conditions": [
       {
         "value": "Train York in the Jedi arts until she has reached Journeyman level of skill."
@@ -5835,16 +5956,7 @@
       {
         "value": "Call Queen Elizabeth Master Yoda for the duration of your stay, refuse to elaborate."
       }
-    ],
-    "desc": "There is a young Shipgirl with a dream, a dream to become a true defender of justice. You are the one she has been waiting for, such is destiny!<br>This job is simple, take York as your Jedi apprentice and teach her the art of the force, lightsaber combat and everything else a proper Jedi needs to know.",
-    "image": "https://i.imgur.com/5KOPuGL.png",
-    "loca": "Azur Lane",
-    "objectives": [],
-    "reward": "40 Credits",
-    "scope": "Quick",
-    "source": "",
-    "title": "Padawan York",
-    "uid": "UT6W2"
+    ]
   },
   {
     "author": "Heaven Canceler",
@@ -5876,7 +5988,6 @@
     "uid": "lXihO"
   },
   {
-    "author": "Heaven Canceler",
     "budget": 700,
     "conditions": [
       {
@@ -5892,14 +6003,16 @@
         "value": "All Home Traits are locked, you may not remain in the same location for more than 3 days."
       }
     ],
-    "desc": "For the purpose of this mission you will have to first sneak into the Scarlet Devil Mansion and steal away the younger of the Scarlet sisters. Your goal will be to escape from there with her, and go on a wild honeymoon throughout Gensokyo. Make sure she sees all sorts of sights, eats great food and play games together with her.",
-    "image": "https://i.imgur.com/hbbGEBJ.jpg",
-    "loca": "Touhou",
-    "objectives": [],
-    "reward": "You get Shuzen Kokoa, Shuzen Kahlua, Shuzen Shuzen Akua and Akashiya Moka",
-    "scope": "Standard",
-    "source": "",
+    "author": "Heaven Canceler",
     "title": "Little Scarlet Bride",
+    "loca": "Touhou",
+    "desc": "For the purpose of this mission you will have to first sneak into the Scarlet Devil Mansion and steal away the younger of the Scarlet sisters. Your goal will be to escape from there with her, and go on a wild honeymoon throughout Gensokyo. Make sure she sees all sorts of sights, eats great food and play games together with her.",
+    "reward": "You get Shuzen Kokoa, Shuzen Kahlua, Shuzen Shuzen Akua and Akashiya Moka",
+    "source": "",
+    "scope": "Standard",
+    "objectives": [],
+    "image": "https://i.imgur.com/hbbGEBJ.jpg",
+    "rewardType": "Companions",
     "uid": "8TQ8i"
   },
   {
@@ -5975,38 +6088,42 @@
     "uid": "pZleg"
   },
   {
-    "author": "Magnus1337",
+    "objectives": [
+      {
+        "value": "Human civilizations must achieve Space-Flight",
+        "type": "Other",
+        "reward": "+100 Credits per World that achieves Space-Flight, A TX Ticket on the last World that achieves a Space-Flight"
+      },
+      {
+        "type": "Other",
+        "reward": "+1 Credit per Planet colonized or conquered",
+        "value": "Colonize or Conquer the Andromeda Galaxy"
+      },
+      {
+        "type": "Other",
+        "value": "The last World visited must be Gurren Lagann",
+        "reward": "Gain a Companion in the form of the Anti-Spiral, Free OCDS purchase of Getter Emperor"
+      }
+    ],
+    "reward": "1 TX Ticket, Schematics for all Getter Robo-related Structures and Machines",
     "budget": 500,
+    "rewardType": "Other",
+    "author": "Magnus1337",
+    "desc": "You must spread the glorious word about the Getter Rays! On ten Worlds where Humanity civilizations prosper, they must be thought on how to utilize Getter Rays. They may or may not achieve Space-Flight.<br>If you ever find yourself in the World of Gurren Lagann, the Anti-Spiral will immediately notice and realize that the Getter Rays are the solution to the Spiral Nemesis problem.",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/993511330491416667/Shin_Getter_Robo_overload.webp",
+    "source": "",
+    "scope": "Grand",
     "conditions": [
       {
         "value": "Must own TS0, TS1, and TS2 Getter Rays"
       },
       {
-        "value": "Teach every Human civilizations you found in the World on how to utilize "
+        "value": "Teach every Human civilizations you found in the World on how to utilize the Getter Rays."
       }
     ],
-    "desc": "You must spread the glorious word about the Getter Rays! On ten Worlds where Humanity civilizations prosper, they must be thought on how to utilize Getter Rays. They may or may not achieve Space-Flight.<br>If you ever find yourself in the World of Gurren Lagann, the Anti-Spiral will immediately notice and realize that the Getter Rays are the solution to the Spiral Nemesis problem.",
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/993511330491416667/Shin_Getter_Robo_overload.webp",
-    "loca": "Generic",
-    "objectives": [
-      {
-        "reward": "+100 Credits per World that achieves Space-Flight, A TX Ticket on the last World that achieves a Space-Flight",
-        "value": "Human civilizations must achieve Space-Flight"
-      },
-      {
-        "reward": "+1 Credit per Planet colonized or conquered",
-        "value": "Colonize or Conquer the Andromeda Galaxy"
-      },
-      {
-        "reward": "Gain a Companion in the form of the Anti-Spiral, Free OCDS purchase of Getter Emperor",
-        "value": "The last World visited must be Gurren Lagann"
-      }
-    ],
-    "reward": "1 TX Ticket, Schematics for all Getter Robo-related Structures and Machines",
-    "scope": "Grand",
-    "source": "",
     "title": "BELIEVE IN GETTER!",
-    "uid": "KDRB3"
+    "uid": "KDRB3",
+    "loca": "Generic"
   },
   {
     "author": "dadude",
@@ -6035,8 +6152,49 @@
     "uid": "NLgay"
   },
   {
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992806809981173780/CardShuffle-TF04-JP-VG.webp",
+    "scope": "Standard",
+    "desc": "Too often we see contractors steam roll their way through canon events using boring meta decks and OTK strategies, turning the honored game of Duel Monsters into Solitaire. Mix it up a bit. Every time you go into a duel, your deck will be randomly selected from a pool of existing, and usable, decks.",
+    "budget": 55,
+    "loca": "Yu-Gi-Oh!",
+    "rewardType": "Credits",
+    "reward": "15 Credits for every duel won against a named character",
+    "uid": "VJbbi",
+    "title": "Shuffling the Deck",
+    "source": "",
+    "objectives": [
+      {
+        "reward": "5 Credits",
+        "type": "Credits",
+        "value": "Do not use the deck mulligan"
+      },
+      {
+        "type": "Credits",
+        "reward": "10 Credits",
+        "value": "Do not use the 10 minute deck check"
+      },
+      {
+        "value": "Win a duel against a major antagonist",
+        "reward": "10 Credits",
+        "type": "Credits"
+      },
+      {
+        "value": "Win a duel against a major antagonist using a random deck",
+        "type": "Credits",
+        "reward": "15 Credits"
+      },
+      {
+        "reward": "150 Credits",
+        "type": "Credits",
+        "value": "Win 10 consecutive duels"
+      },
+      {
+        "value": "By the end of a Canon Series, have a perfect win streak and participate at at least 1 major antagonist duel per Canon Season",
+        "reward": "Any one Catalog Item less than or equal to 500 Credits",
+        "type": "Perks"
+      }
+    ],
     "author": "AMD",
-    "budget": 0,
     "conditions": [
       {
         "value": "Must duel at least 10 times per Canon Season Storyline"
@@ -6053,41 +6211,7 @@
       {
         "value": "You will be provided the deck’s main archetype and boss monster without having to use the 10 minute deck check"
       }
-    ],
-    "desc": "Too often we see contractors steam roll their way through canon events using boring meta decks and OTK strategies, turning the honored game of Duel Monsters into Solitaire. Mix it up a bit. Every time you go into a duel, your deck will be randomly selected from a pool of existing, and usable, decks.",
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992806809981173780/CardShuffle-TF04-JP-VG.webp",
-    "loca": "Yu-Gi-Oh!",
-    "objectives": [
-      {
-        "reward": "5 Credits",
-        "value": "Do not use the deck mulligan"
-      },
-      {
-        "reward": "10 Credits",
-        "value": "Do not use the 10 minute deck check"
-      },
-      {
-        "reward": "10 Credits",
-        "value": "Win a duel against a major antagonist"
-      },
-      {
-        "reward": "15 Credits",
-        "value": "Win a duel against a major antagonist using a random deck"
-      },
-      {
-        "reward": "150 Credits",
-        "value": "Win 10 consecutive duels"
-      },
-      {
-        "reward": "Any one Catalog Item less than or equal to 500 Credits",
-        "value": "By the end of a Canon Series, have a perfect win streak and participate at at least 1 major antagonist duel per Canon Season"
-      }
-    ],
-    "reward": "15 Credits for every duel won against a named character",
-    "scope": "Standard",
-    "source": "",
-    "title": "Shuffling the Deck",
-    "uid": "VJbbi"
+    ]
   },
   {
     "author": "Ono",
@@ -6132,58 +6256,64 @@
     "uid": "WkFBt"
   },
   {
-    "author": "Ruaron",
-    "budget": 365,
+    "rewardType": "Credits",
+    "source": "",
     "conditions": [
       {
         "value": "All types of Grimm, Salem and Pools of Darkness must be neutralized."
       }
     ],
+    "scope": "Grand",
+    "budget": 365,
     "desc": "Alright, contractor! We need this world. To do this, we need to make enough changes to the so-called 'canon', so it will be desynchronized with the original RWBY-cluster and we can take this world into our own hands. Hence, rejoice! You will be the Hero you always wanted! We need you to purge all creatures of Grimm from Remnant. Good luck, contractor!",
     "image": "https://i.imgur.com/0WoozW6.jpg",
     "loca": "RWBY",
+    "reward": "1000 credits.",
+    "author": "Ruaron",
+    "uid": "rPD4T",
     "objectives": [
       {
-        "reward": "125 credits per each saved Kingdom, 500 credits in total.",
-        "value": "It would be nice if you could save humanity as well. We could use the locals. Vale, Atlas, Mistral and Vacuo must survive the Cleaning."
+        "value": "It would be nice if you could save humanity as well. We could use the locals. Vale, Atlas, Mistral and Vacuo must survive the Cleaning.",
+        "type": "Credits",
+        "reward": "125 credits per each saved Kingdom, 500 credits in total."
       },
       {
         "reward": "500 credits.",
-        "value": "We don't need these idiot brothers here. Fortunately, they are too far from this world and do not hear its cry. However, they left their beacons. Get rid of them. Salem, Ozma, Pools of Darkness, Fountain of Life, and all Four Relics must be neutralized."
+        "value": "We don't need these idiot brothers here. Fortunately, they are too far from this world and do not hear its cry. However, they left their beacons. Get rid of them. Salem, Ozma, Pools of Darkness, Fountain of Life, and all Four Relics must be neutralized.",
+        "type": "Credits"
       },
       {
-        "reward": "1 TX ticket.",
-        "value": "If you done Main Mission and all previous Additional Objectives, instead of 2000 credits you can take another reward."
+        "value": "If you done Main Mission and all previous Additional Objectives, instead of 2000 credits you can take another reward.",
+        "type": "TX Tickets",
+        "reward": "1 TX ticket."
       }
     ],
-    "reward": "1000 credits.",
-    "scope": "Grand",
-    "source": "",
-    "title": "House Cleaning",
-    "uid": "rPD4T"
+    "title": "House Cleaning"
   },
   {
-    "author": "Ruaron",
-    "budget": 365,
+    "title": "Queen's Downfall",
+    "rewardType": "Other",
+    "objectives": [
+      {
+        "value": "The Queen has her pawns. Take them off the board first. Cinder, Emerald, Mercury, Roman, Neopolitan, Adam, Tyrian, Hazel and Watts must vanish, drop it, or turn the side.",
+        "type": "Other",
+        "reward": "100 credits and free TS2 of Remnant Magic."
+      }
+    ],
     "conditions": [
       {
         "value": "You have to make it so that she doesn't have time to order the Grimm forces to attack humanity as a final 'damn you' move. Vale, Atlas, Mistral and Vacuo must not fall."
       }
     ],
     "desc": "Love - is a great power. It can take you to the top. But it can also crush you down, into the abyss. Having lost the King, the Queen, blinded by love, plunged into despair and darkness. Literally. But still, there is a hope. The story isn't ended yet and it is now your duty to end this sad tale. Don't let the Red Queen destroy hope and devour the remnants of humanity. Stop Salem one way or another.",
+    "reward": "120 credits and free TS1 of Remnant Magic.",
+    "source": "",
     "image": "https://i.imgur.com/0AIvcNK.jpg",
     "loca": "RWBY",
-    "objectives": [
-      {
-        "reward": "100 credits and free TS2 of Remnant Magic.",
-        "value": "The Queen have her pawns. Take them off the board first. Cinder, Emerald, Mercury, Roman, Neopolitan, Adam, Tyrian, Hazel and Watts must vanish, drop it, or turn the side."
-      }
-    ],
-    "reward": "120 credits and free TS1 of Remnant Magic.",
-    "scope": "Grand",
-    "source": "",
-    "title": "Queen's Downfall",
-    "uid": "MDdDc"
+    "budget": 365,
+    "author": "Ruaron",
+    "uid": "MDdDc",
+    "scope": "Grand"
   },
   {
     "author": "D-boi",
@@ -6643,34 +6773,37 @@
     "uid": "jEevN"
   },
   {
-    "author": "Ruaron",
-    "budget": 590,
+    "scope": "Standard",
+    "reward": "50 Credits",
+    "source": "",
+    "uid": "zGGLi",
     "conditions": [
       {
         "value": "Sophia Hess, Emma Barnes and Madison Clements must answer for their sin."
       },
       {
-        "value": "Taylor must know about it and be satisfied/grateful with it."
+        "value": "Taylor must know about it and be satisfied and/or grateful with it."
       }
     ],
-    "desc": "It all starts with a girl who was bullied. And unfortunately, justice never prevailed. But fortunately, being an agent from outside, you can influence the situation and become the hammer that hammers the problem.",
+    "rewardType": "Credits",
+    "budget": 590,
+    "title": "Long Awaited Justice",
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/992860926405513247/Winslow_sophia1.webp",
+    "author": "Ruaron",
     "loca": "Worm",
+    "desc": "It all starts with a girl who was bullied. And unfortunately, justice never prevailed. But fortunately, being an agent from outside, you can influence the situation and become the hammer that hammers the problem.",
     "objectives": [
       {
-        "reward": "10 Credits and Communication Talent or Talent Sharing for it.",
-        "value": "Make it official (without killing) and sue the school at the same time. "
+        "value": "Make it official (without killing) and sue the school at the same time. ",
+        "type": "Other",
+        "reward": "10 Credits and Communication Talent or Talent Sharing for it."
       },
       {
         "reward": "10 Credits and Covert Talent or Talent Sharing for it.",
-        "value": "Expose PRT's incompetence by showing Sophia as a Shadow Stalker. "
+        "type": "Other",
+        "value": "Expose the PRT's incompetence by showing Sophia as a Shadow Stalker. "
       }
-    ],
-    "reward": "50 Credits.",
-    "scope": "Standard",
-    "source": "",
-    "title": "Long Awaited Justice",
-    "uid": "zGGLi"
+    ]
   },
   {
     "author": "Anon",
@@ -6695,7 +6828,27 @@
   },
   {
     "author": "Heaven Canceler",
-    "budget": 60,
+    "scope": "Standard",
+    "title": "Top Percentage Youngster!",
+    "loca": "Pokemon",
+    "uid": "pR9YE",
+    "rewardType": "Other",
+    "desc": "Youngster Joey is a hard-working lad, always trying to improve himself. But a recent loss against a trainer with a red cap has left him in a bit of a rut. You must help this hopeful young trainer and guide him on the way to becoming a true Pokemon Master!\n\nYou must personally assist him in training, making sure that he improves his team, and captures more powerful Pokemon. Only if he truly becomes the very best like no one ever was will you get your rewards!\n\nTo complete the mission, Youngster Joey must at least defeat all 8 Gym Leaders, the Elite 4 in Kanto, and become Champion.",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992861490635866173/CLQfP9WUsAAEbvt.jpg",
+    "source": "",
+    "reward": "150 Credits + Everyone that was defeated by Joey in a legal Pokemon fight is considered as captured by you.",
+    "objectives": [
+      {
+        "type": "Other",
+        "reward": "50 Credits and one free Master Ball.",
+        "value": "Youngster Joey has defeated Team Rocket and played at least an equal role in its dissolution to Red."
+      },
+      {
+        "value": "Youngster Joey defeated and captured at least 1 legendary Pokemon with his Rattata.",
+        "type": "Other",
+        "reward": "50 Credits and a free Template stacking of a Legendary Pokemon of your choice."
+      }
+    ],
     "conditions": [
       {
         "value": "Youngster Joey’s Rattata must remain the ace of his party throughout his Journey and cannot be evolved until after he has become Champion."
@@ -6704,30 +6857,13 @@
         "value": "You may not have any more waifus with you than Joey has on hand, up to a max of 6. Inside Context: You may only use powers and technology native to the world."
       },
       {
-        "value": "Nerf: All retinue members limited to Tier 6 while in employ."
+        "value": "All retinue members limited to Tier 6 while in employ."
       },
       {
-        "value": "Censor: All retinue members will appear to be Pokemon to anyone except you inside their world."
+        "value": "All retinue members will appear to be Pokemon to anyone except you inside their world."
       }
     ],
-    "desc": "Youngster Joey is a hard working lad, always trying to improve himself. But a recent loss against a trainer with a red cap has left him in a bit of a rut. You must help this hopeful young trainer and guide him on the way to become a true Pokemon Master!\n\nYou must personally assist him in training, making sure that he improves his team, captures more powerful Pokemon. Only if he truly becomes the very best like no one ever was will you get your rewards!\n\nTo complete the mission, Youngster Joey must at least defeat all 8 Gym Leaders, the Elite 4 in Kanto and become Champion.",
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992861490635866173/CLQfP9WUsAAEbvt.jpg",
-    "loca": "Pokemon",
-    "objectives": [
-      {
-        "reward": "50 Credits and one free Master Ball.",
-        "value": "Youngster Joey has defeated Team Rocket and played at least an equal role in its dissolution to Red."
-      },
-      {
-        "reward": "50 Credits and a free Template stacking of a Legendary Pokemon of your choice.",
-        "value": "Youngster Joey defeated and captured at least 1 legendary Pokemon with his Rattata."
-      }
-    ],
-    "reward": "150 Credits + Everyone that was defeated by Joey in a legal Pokemon fight is considered as captured by you.",
-    "scope": "Standard",
-    "source": "",
-    "title": "Top Percentage Youngster!",
-    "uid": "pR9YE"
+    "budget": 60
   },
   {
     "author": "Dontenglish",
@@ -6787,8 +6923,6 @@
     "uid": "VTUz0"
   },
   {
-    "author": "dikdik1238",
-    "budget": 2000,
     "conditions": [
       {
         "value": "You must truly wish to help The Emperor. If you do, He will know."
@@ -6800,36 +6934,44 @@
         "value": "Any dimensional travel outside of company control such as 'Dragon Break' cannot be used during the mission. Even with certain defenses, risking the Ruinous Powers becoming aware of the greater multiverse is unthinkable."
       }
     ],
-    "desc": "The Emperor is dying. The Imperium is a mockery of its former ideals. Xenos filth are devouring the loyal. You alone have the power to avert the end.\n\n(1)You must ensure the light of The Astronomican is uninterrupted.\n(2)You must heal The Emperor, or ensure He smoothly and swiftly reincarnates into a Star Child.\n(3)You must fight beside The Emperor in the annihilation of the xenos threat.\n(4)You must assist Him in cleansing the Imperium of its most egregious necessary evils.\n\nThe Emperor regenerates to ten times His previous strength and as such, after all this is complete it is only a matter of time until the galaxy is united, under His rule. Not even the most powerful of human opponents to The Emperors return can resist the unbound majesty of His radiance. Chaos united and the Tyranids are a mere speedbump to an Imperium as one under this reborn Emperor. \n\n(Now that this multiverse cluster is stabilized we can use the warp as a springboard to potentially new realities, without all those pesky cockroaches hitching a ride and causing promotions)",
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992861984926208150/74602e8f71f1eae66e18d28802064b08.jpg",
+    "source": "",
+    "reward": "A linked split of The God Emperor joins you, as a TX. He/She wants to have fun with you however you wish, to balance the burden of ruling their home reality.",
+    "rewardType": "Companions",
     "loca": "Warhammer 40K",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992861984926208150/74602e8f71f1eae66e18d28802064b08.jpg",
+    "budget": 2000,
+    "author": "dikdik1238",
+    "scope": "Grand",
+    "desc": "The Emperor is dying. The Imperium is a mockery of its former ideals. Xenos filth are devouring the loyal. You alone have the power to avert the end. \n\nYour objectives are the following: Ensure the light of The Astronomican is uninterrupted. You must heal The Emperor, or ensure He smoothly and swiftly reincarnates into a Star Child. You must fight beside The Emperor in the annihilation of the Xenos threat. You must assist Him in cleansing the Imperium of its most egregious necessary evils.\n\nThe Emperor regenerates to ten times His previous strength and as such, after all this is complete, it is only a matter of time until the galaxy is united, under His rule. Not even the most powerful of human opponents to The Emperor's return can resist the unbound majesty of His radiance. Chaos united and the Tyranids are a mere speedbump to an Imperium as one under this reborn Emperor. \n\n(Now that this multiverse cluster is stabilized we can use the warp as a springboard to potentially new realities, without all those pesky cockroaches hitching a ride and causing promotions)",
     "objectives": [
       {
-        "reward": "The Imperium recognizes you as a living saint 2nd only to The God Emperor. The Emperor allows you access to the trillions of loyal human souls he protects within himself.",
-        "value": "Complete the mission while remaining entirely human. No Xenos Racial Template, No Dragon, No Outsider, No Xeno Transhuman traits etc."
+        "value": "Complete the mission while remaining entirely human. No Xenos Racial Template, No Dragon, No Outsider, No Xeno Transhuman traits etc.",
+        "type": "Other",
+        "reward": "The Imperium recognizes you as a living saint 2nd only to The God Emperor. The Emperor allows you access to the trillions of loyal human souls he protects within himself."
       },
       {
-        "reward": "You safely learn all the knowledge that The Old Ones used in the creation of the Orks.",
-        "value": "End the threat of the Orks by any means necessary. Only a total subversion of the psychic network all spores share could neutralize them without killing them all."
+        "type": "Other",
+        "value": "End the threat of the Orks by any means necessary. Only a total subversion of the psychic network all spores share could neutralize them without killing them all.",
+        "reward": "You safely learn all the knowledge that The Old Ones used in the creation of the Orks."
       },
       {
-        "reward": "The Emperor will pass on all His knowledge, skill, and power to you. You are given [OC Donut Steel (God Emperor of Mankind, TX)] disregarding its limits. You will grow swiftly into this power in only a few centuries.",
-        "value": "Perhaps all that time suffering unspeakable torment has broken The Emperor? If He is too far gone to save, He will know. Complete all but the second task to receive this reward."
+        "value": "Perhaps all that time suffering unspeakable torment has broken The Emperor? If He is too far gone to save, He will know. Complete all but the second task to receive this reward.",
+        "type": "Perks",
+        "reward": "The Emperor will pass on all His knowledge, skill, and power to you. You are given [OC Donut Steel (God Emperor of Mankind, TX)] disregarding its limits. You will grow swiftly into this power in only a few centuries."
       },
       {
-        "reward": "Total mastery of The Warp. Bring your own normally undetectable pocket of Warp with you wherever you go. Naked FTL travel? Easy. Terawatt warp lightning? Simple.",
-        "value": "Unite The Ruinous Powers under you, capture them and remake them as yours wholly and completely such that they are only an amusing nuisance at worst."
+        "type": "Other",
+        "value": "Unite The Ruinous Powers under you, capture them and remake them as yours wholly and completely such that they are only an amusing nuisance at worst.",
+        "reward": "Total mastery of The Warp. Bring your own normally undetectable pocket of Warp with you wherever you go. Naked FTL travel? Easy. Terawatt warp lightning? Simple."
       },
       {
-        "reward": "300 Credits.",
-        "value": "Perhaps you could use some more protection in this hellscape? For the price of being totally unable to leave this universe until this missions failure or completion, you instantly receive this reward."
+        "type": "Credits",
+        "value": "Perhaps you could use some more protection in this hellscape? For the price of being totally unable to leave this universe until this missions failure or completion, you instantly receive this reward.",
+        "reward": "300 Credits"
       }
     ],
-    "reward": "A linked split of The God Emperor joins you, as a TX. He/She wants to have /fun/ with you however you wish, to balance the burden of ruling their home reality.",
-    "scope": "Grand",
-    "source": "",
-    "title": "Who dares protect The Emperor?",
-    "uid": "A3EQL"
+    "uid": "A3EQL",
+    "title": "Who dares protect The Emperor?"
   },
   {
     "author": "jim361",
@@ -7153,36 +7295,40 @@
     "uid": "7ntOq"
   },
   {
-    "author": "Everythingman101",
-    "conditions": [
-      {
-        "value": "End the Great War"
-      },
-      {
-        "value": "Have a viable population of cybertronians on cybertron"
-      },
-      {
-        "value": "Peace must Last for 10 Stellar Cycles 1 Stellar Cycle/400 Earth days"
-      }
-    ],
-    "desc": "The Pax Cybertronia (\"Peace on Cybertron\") can be thought of as the ultimate goal of Transformer civilization: permanently ensuring the stability of Cybertron and her colonies, ending the myriad wars that have plagued the Transformer homeworld, and ushering in an era of harmony, enlightenment, and prosperity for all Cybertronians.\n",
-    "loca": "Transformers",
+    "title": "Pax Cybertronia",
     "objectives": [
       {
-        "reward": "Gain Optimus Prime and Megatron as companions",
-        "value": "End the Great War peacefully"
+        "type": "Companions",
+        "value": "End the Great War peacefully",
+        "reward": "Gain Optimus Prime and Megatron as companions"
       },
       {
         "reward": "Gain TX Ticket",
+        "type": "TX Tickets",
         "value": "Kill Unicron"
       }
     ],
-    "reward": "Gain your own copy of Cybertron as a home,all non TX Home perks,1 TX ticket,",
-    "scope": "Grand",
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992863425531228231/tumblr_inline_o624jlSlmE1sl8r10_1280.jpg",
+    "uid": "zEx2k",
+    "budget": 365,
+    "desc": "The Pax Cybertronia (\"Peace on Cybertron\") can be thought of as the ultimate goal of the Transformer civilization: permanently ensuring the stability of Cybertron and her colonies, ending the myriad wars that have plagued the Transformer homeworld, and ushering in an era of harmony, enlightenment, and prosperity for all Cybertronians.",
+    "rewardType": "Other",
     "source": "",
-    "title": "Pax Cybertronia",
-    "uid": "zEx2k"
+    "author": "Everythingman101",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992863425531228231/tumblr_inline_o624jlSlmE1sl8r10_1280.jpg",
+    "loca": "Transformers",
+    "scope": "Grand",
+    "reward": "Gain your own copy of Cybertron as a home, all non TX Home perks, 1 TX ticket,",
+    "conditions": [
+      {
+        "value": "End the Great War once and for all"
+      },
+      {
+        "value": "Have a viable population of Cybertronians on Cybertron"
+      },
+      {
+        "value": "Peace must Last for 10 Stellar Cycles. 1 Stellar Cycle = 400 Earth days"
+      }
+    ]
   },
   {
     "author": "Waterfly",
@@ -7804,21 +7950,23 @@
     "title": "Hell Bound"
   },
   {
+    "budget": 2000,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992866412022485135/bb287198124ec8c71c88f022d1521d2ae5ca76a2672efc92455725cc3dae7133.png",
+    "title": "Gotta rift them all",
+    "rewardType": "Credits",
+    "desc": "The company is in need of refreshing their stockpile of species from the rifts Multiverse and it's your job to get more. For every species you capture you will be rewarded.",
+    "uid": "deeG8",
+    "objectives": [],
     "author": "Unknown",
     "conditions": [
       {
         "value": "Excluding any company bought locations you may not leave the rifts multiverse. Doing so is considered voluntary completion of of this mission and it may not be taken again."
       }
     ],
-    "desc": "The company is in need of refreshing their stockpile of species from the rifts Multiverse and it's your job to get more. For every species you capture you will be rewarded.",
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992866412022485135/bb287198124ec8c71c88f022d1521d2ae5ca76a2672efc92455725cc3dae7133.png",
-    "loca": "Rifts",
-    "objectives": [],
-    "reward": "2 credit for every species captured ",
-    "scope": "Quick",
+    "scope": "Standard",
     "source": "",
-    "title": "Gotta rift them all",
-    "uid": "deeG8"
+    "reward": "2 credit for every species captured ",
+    "loca": "Rifts"
   },
   {
     "author": "Templar9999",
