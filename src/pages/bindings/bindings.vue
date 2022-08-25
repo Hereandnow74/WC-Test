@@ -154,7 +154,7 @@ const bindingByType = computed(() => {
     'Other': [] as PerkFull[],
   }
 
-  bindings.value.forEach(x => x.type ? res[x.type].push(x) : res.Other.push(x))
+  bindings.value.filter(perk => settings.value.hideLegacy ? !perk.legacy : true).forEach(x => x.type ? res[x.type].push(x) : res.Other.push(x))
   return res
 })
 

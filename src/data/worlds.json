@@ -45,11 +45,6 @@
   },
   {
     "rating": 1,
-    "worldName": "(Slice of Life anime/manga)",
-    "image": "https://img5.goodfon.com/original/1024x768/b/47/tri-devushka-v-komnate-televizor-monitory-besporiadok-podrug.jpg"
-  },
-  {
-    "rating": 1,
     "worldName": "Iain Banks' Culture",
     "condition": [
       {
@@ -823,7 +818,7 @@
         "a": "c"
       }
     ],
-    "image": "https://uploads.jovemnerd.com.br/wp-content/uploads/2018/11/hobbit.jpg"
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1008857253379571762/Lord-Of-The-Rings-Cartoon-Wallpapers-Free-Download.jpg"
   },
   {
     "rating": 5,
@@ -894,6 +889,10 @@
         "name": "New World",
         "rating": 8,
         "a": "c"
+      },
+      {
+        "name": "Gold Roger Era",
+        "rating": 7
       }
     ],
     "image": "https://wallpaperaccess.com/full/17350.jpg"
@@ -1159,7 +1158,33 @@
     "q": true,
     "worldName": "Tales Series",
     "additional": "Colette’s angel ancestry is unlocked. Sheena has pacts with all her summons. Gelda has her replica’s powers, even if she’s the original.",
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992084519215714336/tos-pachislot_0.webp"
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992084519215714336/tos-pachislot_0.webp",
+    "condition": [
+      {
+        "name": "Symphonia",
+        "rating": 5
+      },
+      {
+        "name": "Abyss",
+        "rating": 5
+      },
+      {
+        "name": "Vesperia",
+        "rating": 5
+      },
+      {
+        "name": "Xillia",
+        "rating": 5
+      },
+      {
+        "name": "Zestria",
+        "rating": 5
+      },
+      {
+        "name": "Berseria",
+        "rating": 5
+      }
+    ]
   },
   {
     "rating": 6,

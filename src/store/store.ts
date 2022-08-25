@@ -145,8 +145,6 @@ const powerSwapDiscount = computed(() => {
   return discount
 })
 
-// console.log(powerSwapDiscount.value)
-
 const maxHeritageDiscount = computed(() => {
   const discount = { archetype: '', value: 0 }
   if (['Substitute', 'Possess', 'Walk-In'].includes(startingOrigin.value.title) && startingOrigin.value.hr) {
@@ -369,6 +367,7 @@ const settings = useStorage('settings', {
   hideDesc: false,
   textAlign: 'text-left',
   fontSize: 0,
+  hideLegacy: true,
 })
 
 const collapsedDescs = useStorage<string[]>('collapsedDescs', [])

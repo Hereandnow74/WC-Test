@@ -1,136 +1,127 @@
 <template>
-  <div class="max-w-screen-md lg:pl-0">
-    <h1 class="text-xl font-bold text-center pb-2">
-      Index of Everything (Number of perks including DLC: <span class="text-green-500">{{ all.length }}</span>)
-    </h1>
-    <div class="flex items-center">
-      <Input v-model="filter" placeholder="Filter" />
-      <clarity:eraser-solid class="icon-btn w-8" @click="filter = ''" />
-    </div>
-    <Enum v-if="filtered.length" :list="filtered.map(x => x.item)" :color="color" />
-    <div class="flex flex-col gap-4 pb-8">
-      <div>
-        <h3 class="text-lg font-semibold text-lime-700 dark:text-lime-400">
-          Rules
-        </h3>
-        <Enum :list="rulesList" path="/" :color="color" />
+  <div class="flex w-full">
+    <div class="max-w-screen-md lg:pl-0">
+      <h1 class="text-xl font-bold text-center pb-2">
+        Index of Everything (Number of perks including DLC: <span class="text-green-500">{{ all.length }}</span>)
+      </h1>
+      <div class="flex items-center">
+        <Input v-model="filter" placeholder="Filter" />
+        <clarity:eraser-solid class="icon-btn w-8" @click="filter = ''" />
       </div>
-
-      <div>
-        <h3 class="text-lg font-semibold text-lime-700 dark:text-lime-400">
-          CYOA Modes and Other Contractors (Intensity)
-        </h3>
-        <Enum :list="intensity" :color="color" />
-        <h4 class="text-sm font-semibold text-lime-700 dark:text-lime-400">
-          DLC
-        </h4>
-        <Enum :list="DLCintensity" :color="DLCColor" />
-      </div>
-
-      <div>
-        <h3 class="text-lg font-semibold text-lime-700 dark:text-lime-400">
-          Origin
-        </h3>
-        <Enum :list="origin" :color="color" />
-      </div>
-
-      <div>
-        <h3 class="text-lg font-semibold text-lime-700 dark:text-lime-400">
-          Bindings
-        </h3>
-        <Enum :list="bindings" :color="color" />
-        <h4 class="text-sm font-semibold text-lime-700 dark:text-lime-400">
-          DLC
-        </h4>
-        <Enum :list="DLCbindings" :color="DLCColor" />
-      </div>
-
-      <div>
-        <h3 class="text-lg font-semibold text-lime-700 dark:text-lime-400">
-          Lures
-        </h3>
-        <Enum :list="[...lures, ...lureExpansions]" :color="color" />
-        <h4 class="text-sm font-semibold text-lime-700 dark:text-lime-400">
-          DLC
-        </h4>
-        <Enum :list="[...DLClures, ...DLClureExpansions]" :color="DLCColor" />
-      </div>
-
-      <div>
-        <h3 class="text-lg font-semibold text-lime-700 dark:text-lime-400">
-          Other Controls
-        </h3>
-        <Enum :list="otherControls" :color="color" />
-        <h4 class="text-sm font-semibold text-lime-700 dark:text-lime-400">
-          DLC
-        </h4>
-        <Enum :list="DLCotherControls" :color="DLCColor" />
-      </div>
-
-      <div>
-        <h3 class="text-lg font-semibold text-lime-700 dark:text-lime-400">
-          Heritages
-        </h3>
-        <Enum :list="heritages" :color="color" />
-        <h4 class="text-sm font-semibold text-lime-700 dark:text-lime-400">
-          DLC
-        </h4>
-        <Enum :list="DLCheritages" :color="DLCColor" />
-      </div>
-
-      <div>
-        <h3 class="text-lg font-semibold text-lime-700 dark:text-lime-400">
-          Catch-A-Ride
-        </h3>
-        <Enum :list="[...rides, ...ridePerksFull]" :color="color" />
-        <h4 class="text-sm font-semibold text-lime-700 dark:text-lime-400">
-          DLC
-        </h4>
-        <Enum :list="[...DLCRides, ...DLCridePerks]" :color="DLCColor" />
-      </div>
-
-      <div>
-        <h3 class="text-lg font-semibold text-lime-700 dark:text-lime-400">
-          Demiplanes & Dungeons
-        </h3>
-        <Enum :list="[...homes, ...demiplane, ...dungeon]" :color="color" />
-        <h4 class="text-sm font-semibold text-lime-700 dark:text-lime-400">
-          DLC
-        </h4>
-        <Enum :list="DLChomes" :color="DLCColor" />
-      </div>
-
-      <div>
-        <h3 class="text-lg font-semibold text-lime-700 dark:text-lime-400">
-          Talents and Defenses
-        </h3>
-        <Enum :list="[...talents, ...defenses]" :color="color" />
-        <h4 class="text-sm font-semibold text-lime-700 dark:text-lime-400">
-          DLC
-        </h4>
-        <Enum :list="DLCtalents" :color="DLCColor" />
-      </div>
-
-      <div>
-        <h3 class="text-lg font-semibold text-lime-700 dark:text-lime-400">
-          Other Perks
-        </h3>
-        <Enum :list="perks" :color="color" />
-        <h4 class="text-sm font-semibold text-lime-700 dark:text-lime-400">
-          DLC
-        </h4>
-        <Enum :list="DLCperks" :color="DLCColor" />
-      </div>
-
-      <div>
-        <h3 class="text-lg font-semibold text-lime-700 dark:text-lime-400">
-          Specific Waifu Perks
-        </h3>
-        <Enum :list="[...genericPerks,...waifu_perks]" :color="color" />
-        <h4 class="text-sm font-semibold text-lime-700 dark:text-lime-400">
-          DLC
-        </h4>
-        <Enum :list="[...DLCgenericPerks, ...DLCwaifu_perks]" :color="DLCColor" />
+      <Enum v-if="filtered.length" :list="filtered.map(x => x.item)" :color="color" />
+      <div class="flex flex-col gap-4 pb-8">
+        <div>
+          <h3 class="text-lg font-semibold text-lime-700 dark:text-lime-400">
+            Rules
+          </h3>
+          <Enum :list="rulesList" path="/" :color="color" />
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold text-lime-700 dark:text-lime-400">
+            CYOA Modes and Other Contractors (Intensity)
+          </h3>
+          <Enum :list="intensity" :color="color" />
+          <h4 class="text-sm font-semibold text-lime-700 dark:text-lime-400">
+            DLC
+          </h4>
+          <Enum :list="DLCintensity" :color="DLCColor" />
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold text-lime-700 dark:text-lime-400">
+            Origin
+          </h3>
+          <Enum :list="origin" :color="color" />
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold text-lime-700 dark:text-lime-400">
+            Bindings
+          </h3>
+          <Enum :list="bindings" :color="color" />
+          <h4 class="text-sm font-semibold text-lime-700 dark:text-lime-400">
+            DLC
+          </h4>
+          <Enum :list="DLCbindings" :color="DLCColor" />
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold text-lime-700 dark:text-lime-400">
+            Lures
+          </h3>
+          <Enum :list="[...lures, ...lureExpansions]" :color="color" />
+          <h4 class="text-sm font-semibold text-lime-700 dark:text-lime-400">
+            DLC
+          </h4>
+          <Enum :list="[...DLClures, ...DLClureExpansions]" :color="DLCColor" />
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold text-lime-700 dark:text-lime-400">
+            Other Controls
+          </h3>
+          <Enum :list="otherControls" :color="color" />
+          <h4 class="text-sm font-semibold text-lime-700 dark:text-lime-400">
+            DLC
+          </h4>
+          <Enum :list="DLCotherControls" :color="DLCColor" />
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold text-lime-700 dark:text-lime-400">
+            Heritages
+          </h3>
+          <Enum :list="heritages" :color="color" />
+          <h4 class="text-sm font-semibold text-lime-700 dark:text-lime-400">
+            DLC
+          </h4>
+          <Enum :list="DLCheritages" :color="DLCColor" />
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold text-lime-700 dark:text-lime-400">
+            Catch-A-Ride
+          </h3>
+          <Enum :list="[...rides, ...ridePerksFull]" :color="color" />
+          <h4 class="text-sm font-semibold text-lime-700 dark:text-lime-400">
+            DLC
+          </h4>
+          <Enum :list="[...DLCRides, ...DLCridePerks]" :color="DLCColor" />
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold text-lime-700 dark:text-lime-400">
+            Demiplanes & Dungeons
+          </h3>
+          <Enum :list="[...homes, ...demiplane, ...dungeon]" :color="color" />
+          <h4 class="text-sm font-semibold text-lime-700 dark:text-lime-400">
+            DLC
+          </h4>
+          <Enum :list="DLChomes" :color="DLCColor" />
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold text-lime-700 dark:text-lime-400">
+            Talents and Defenses
+          </h3>
+          <Enum :list="[...talents, ...defenses]" :color="color" />
+          <h4 class="text-sm font-semibold text-lime-700 dark:text-lime-400">
+            DLC
+          </h4>
+          <Enum :list="DLCtalents" :color="DLCColor" />
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold text-lime-700 dark:text-lime-400">
+            Other Perks
+          </h3>
+          <Enum :list="perks" :color="color" />
+          <h4 class="text-sm font-semibold text-lime-700 dark:text-lime-400">
+            DLC
+          </h4>
+          <Enum :list="DLCperks" :color="DLCColor" />
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold text-lime-700 dark:text-lime-400">
+            Specific Waifu Perks
+          </h3>
+          <Enum :list="[...genericPerks,...waifu_perks]" :color="color" />
+          <h4 class="text-sm font-semibold text-lime-700 dark:text-lime-400">
+            DLC
+          </h4>
+          <Enum :list="[...DLCgenericPerks, ...DLCwaifu_perks]" :color="DLCColor" />
+        </div>
       </div>
     </div>
   </div>

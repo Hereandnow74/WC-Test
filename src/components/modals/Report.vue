@@ -95,11 +95,11 @@
 import * as zod from 'zod'
 import { useForm, useField } from 'vee-validate'
 import { toFormValidator } from '@vee-validate/zod'
-import { uniq } from 'lodash-es'
+import { difference, uniq } from 'lodash-es'
 import Input from '../basic/Input.vue'
 import NumberInput from '../basic/NumberInput.vue'
 import { filterObject, sendReportToServer } from '~/logic'
-import { getChars, getUserChars, waifuTagsByTag } from '~/data/constants'
+import { getChars, getUserChars, waifuTagsByTag, defTags } from '~/data/constants'
 import { useSaves } from '~/store/saves'
 
 const props = defineProps({
@@ -172,7 +172,7 @@ const zodObject = computed(() => {
   }
   if (wrongTags.value) {
     obj = obj.extend({
-      tags: zod.string().max(24, { message: 'Max tag length is 24 chars' }).nonempty('No empty tags').array().max(10, { message: 'Maximum 10 tags' }),
+      tags: zod.string().max(24, { message: 'Max tag length is 24 chars' }).nonempty('No empty tags').array().refine(tagsArr => difference(tagsArr, defTags).length <= 10, { message: 'Maximum 10 tags' }),
     })
   }
   return toFormValidator(obj)

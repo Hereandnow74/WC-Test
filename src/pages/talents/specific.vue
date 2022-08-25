@@ -4,7 +4,11 @@
     <div>
       <Toggle v-model="filterAvailable" label="Show only available ones" />
     </div>
-    <div ref="specificList" class="grid 4xl:grid-cols-3 lg:grid-cols-2 gap-2 pb-8 justify-center">
+    <div
+      ref="specificList"
+      class="grid 4xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-2 pb-8 justify-center"
+      :class="{'!grid-cols-1': buildLayout}"
+    >
       <SpecificPerkCard
         v-for="waifu in filterAvailable ? specificPerksFiltered : specificPerksWithDLC"
         :key="waifu.uid"
@@ -27,6 +31,7 @@ import { waifu_perks, DLCwaifu_perks } from '~/data/waifu_perks'
 import { genericDesc } from '~/data/talents'
 import { useTooltips } from '~/logic/misc'
 import { useStore } from '~/store/store'
+import { buildLayout } from '~/logic/toggles'
 
 const { settings, companionsUIDs } = useStore()
 

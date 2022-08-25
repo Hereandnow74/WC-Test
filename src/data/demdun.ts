@@ -116,6 +116,7 @@ homes.push({
   uid: '6WOvg',
   dlc: 'Old Version',
   dlclink: 'https://docs.google.com/document/d/1c4QaqLKxENFdzcBVe1-nvWJpZMK-UL0yQH_HCNd3Tes/edit?usp=sharing',
+  legacy: true,
   title: 'Adjustment Field',
   category: 'Home',
   image: 'https://i.ibb.co/6JdPGjB/Adjustment-Field.jpg',

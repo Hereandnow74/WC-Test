@@ -94,7 +94,6 @@ const emit = defineEmits(['chooseIntensity'])
 const coopCount = ref(1)
 const perkImg = ref<HTMLImageElement | null>(null)
 const coopIntensity = computed(() => parseFloat((coopCount.value * 0.2).toFixed(1)))
-console.log(33)
 
 const { baseBudgetAfter, settings } = useStore()
 

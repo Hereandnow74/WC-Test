@@ -74,7 +74,8 @@ export const bindings: PerkFull[] = [
   },
   {
     uid: 'JTCzI',
-    title: 'Megapixel (Old)',
+    title: 'Megapixel (Legacy)',
+    legacy: true,
     cost: 150,
     category: 'Binding',
     type: 'Stamp',
@@ -194,6 +195,7 @@ export const bindings: PerkFull[] = [
   {
     uid: 'TW0hU',
     title: 'Ritual Circle',
+    legacy: true,
     cost: 30,
     category: 'Binding',
     type: 'Ritual',
@@ -208,6 +210,7 @@ export const bindings: PerkFull[] = [
   {
     uid: 'GPf4t',
     title: 'Greater Bandwidth',
+    legacy: true,
     cost: 5,
     category: 'Binding',
     type: 'Ritual',
@@ -221,6 +224,7 @@ export const bindings: PerkFull[] = [
   {
     uid: 'vDavA',
     title: 'Transformation Circle I',
+    legacy: true,
     cost: 20,
     category: 'Binding',
     type: 'Ritual',
@@ -233,6 +237,7 @@ export const bindings: PerkFull[] = [
   {
     uid: 'tph0S',
     title: 'Transformation Circle II',
+    legacy: true,
     cost: 20,
     category: 'Binding',
     type: 'Ritual',
@@ -243,6 +248,7 @@ export const bindings: PerkFull[] = [
   {
     uid: 'Ymscz',
     title: 'Teleportation Circle',
+    legacy: true,
     cost: 25,
     category: 'Binding',
     type: 'Ritual',
@@ -255,6 +261,7 @@ export const bindings: PerkFull[] = [
   {
     uid: 'YjzPm',
     title: 'Portal Runes',
+    legacy: true,
     cost: 10,
     category: 'Binding',
     type: 'Ritual',
@@ -265,6 +272,7 @@ export const bindings: PerkFull[] = [
   {
     uid: 'kQFGD',
     title: 'Geometric Magic',
+    legacy: true,
     cost: 5,
     category: 'Binding',
     type: 'Ritual',
@@ -275,6 +283,7 @@ export const bindings: PerkFull[] = [
   {
     uid: 'y1WER',
     title: 'Destruction Circle',
+    legacy: true,
     cost: 5,
     category: 'Binding',
     type: 'Ritual',
@@ -285,6 +294,7 @@ export const bindings: PerkFull[] = [
   {
     uid: 'CEpgj',
     title: 'Warding Circle',
+    legacy: true,
     cost: 5,
     category: 'Binding',
     type: 'Ritual',
@@ -295,6 +305,7 @@ export const bindings: PerkFull[] = [
   {
     uid: 'PqcuB',
     title: 'Ritual Anchor',
+    legacy: true,
     cost: 15,
     category: 'Binding',
     type: 'Ritual',
@@ -939,6 +950,7 @@ export const otherControls: PerkFull[] = [
     uid: 'RqAFD',
     old: 'Old Version(0.21.09)',
     oldLink: 'https://docs.google.com/document/d/1c4QaqLKxENFdzcBVe1-nvWJpZMK-UL0yQH_HCNd3Tes/edit?usp=sharing',
+    legacy: true,
     title: 'Hotel California',
     image: 'https://i.ibb.co/s6GFYTF/Hotel-California.jpg',
     cost: 20,

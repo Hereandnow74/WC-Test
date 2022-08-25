@@ -178,9 +178,8 @@
     <div ref="companionsList" class="overflow-y-auto w-full relative scrollbar">
       <div
         ref="waifuList"
-        class="relative grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5
-          4xl:grid-cols-6 5xl:grid-cols-7 gap-1 pb-8"
-        :style="`top: ${topPosition}px`"
+        class="relative grid gap-1 pb-8"
+        :style="{top: `${topPosition}px`, 'grid-template-columns': `repeat(${cardRowCount}, 1fr)`}"
       >
         <CompanionCard
           v-for="{ item: char } in slicedChars"
@@ -213,7 +212,7 @@
 
 <script lang="ts" setup>
 import Fuse from 'fuse.js'
-import { every, intersection, some, shuffle } from 'lodash-es'
+import { every, intersection, some, shuffle, repeat } from 'lodash-es'
 import { DBCharacter } from 'global'
 import { useStore } from '~/store/store'
 
@@ -263,16 +262,18 @@ watch(directions, () => {
     isTopVisible.value = false
 })
 
-const cardRowCount = (() => {
-  const wd = document.body.clientWidth || 0
-  if (wd >= 2300) return 7
-  if (wd >= 2000) return 6
-  if (wd >= 1280) return 5
-  if (wd >= 1024) return 4
-  if (wd >= 768) return 3
-  if (wd >= 640) return 2
+const cardRowCount = computed(() => {
+  if (companionsList.value) {
+    const wd = companionsList.value.clientWidth || 0
+    if (wd >= 2300) return 7
+    if (wd >= 2000) return 6
+    if (wd >= 1280) return 5
+    if (wd >= 1024) return 4
+    if (wd >= 768) return 3
+    if (wd >= 640) return 2
+  }
   return 1
-})()
+})
 
 const cardColumnCount = computed(() => {
   if (companionsList.value) {
@@ -283,7 +284,7 @@ const cardColumnCount = computed(() => {
 })
 
 const limit = computed(() => {
-  return cardRowCount * cardColumnCount.value
+  return cardRowCount.value * cardColumnCount.value
 })
 
 const options = {
@@ -470,15 +471,15 @@ function visibilityChanged(entries: IntersectionObserverEntry[]) {
 
   const entry = entries[0]
   if (entry.target.id === 'last' && entry.isIntersecting && position.value + limit.value <= secondFilter.value.length) {
-    position.value += cardRowCount
+    position.value += cardRowCount.value
     return
   }
 
-  if (entry.target.id === 'first' && entry.isIntersecting && position.value >= cardRowCount)
-    position.value -= cardRowCount
+  if (entry.target.id === 'first' && entry.isIntersecting && position.value >= cardRowCount.value)
+    position.value -= cardRowCount.value
 }
 
-const topPosition = computed(() => position.value / cardRowCount * ((firstCard.value?.clientHeight || 0) || 500))
+const topPosition = computed(() => position.value / cardRowCount.value * ((firstCard.value?.clientHeight || 0) || 500))
 
 function editCompanion(char: any) {
   characterToEdit.value = char

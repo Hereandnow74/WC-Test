@@ -5,6 +5,26 @@
     </h2>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
+        25 August 2022
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>~125 new user submitted characters, new missions, 5 new worlds</li>
+        <li>New setting to hide legacy(old) perks, will beturned on for nwe users by default (I think?)</li>
+        <li>Bugfixes & small changes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
+        21 August 2022
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>~45 new user submitted characters, new missions, 2 new worlds</li>
+        <li>New layout with your 'device' being always visible (button is in top left corner of device)</li>
+        <li>Bugfixes & small changes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
         18 August 2022
       </h3>
       <ul class="list-decimal list-inside">

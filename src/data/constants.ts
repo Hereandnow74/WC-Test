@@ -1,4 +1,4 @@
-import { countBy, isArray, uniq } from 'lodash-es'
+import { assign, countBy, isArray, uniq } from 'lodash-es'
 import { DBCharacter, DBWorld, PerkFull } from 'global'
 import { DLCgenericPerks, DLChomes, DLCperks, DLCtalents, DLCheritages, DLClureExpansions, DLCbindings, DLClures, DLCotherControls, DLCridePerks, DLCintensity } from './DLCs'
 import { DLCRides, rides } from './rides'
@@ -115,7 +115,7 @@ export const waifuTags = {
   mt: { tag: 'Creature Defense', short: 'mt', effect: '', desc: 'Is known as a monster-tamer or otherwise being good with animals.', color: 'bg-gradient-to-t to-red-600 from-gray-100 text-black' },
   cl: { tag: 'Stress Defense', short: 'cl', effect: '', desc: 'Is known for keeping a cool head or having great willpower.', color: 'bg-[#72c7cd] text-black' },
   ml: { tag: 'Addiction Defense', short: 'ml', effect: '', desc: 'Known for having a material vice.', color: 'bg-[#4a8108]' },
-  ps: { tag: 'Mind Defense', short: 'ps', effect: '', desc: 'Is known as a psychic or mind-manipulator.', style: { background: 'linear-gradient(0deg, rgba(124,0,255,1) 0%, rgba(248,0,255,1) 70%)', color: '#fff' } },
+  ps: { tag: 'Mind Defense', short: 'ps', effect: '', desc: 'Is known as a psychic or mind-manipulator.', style: { 'background-image': 'url("/img/defenseBack.png")', 'background-size': 'cover', 'color': '#fff', 'font-weight': '600', 'border': '1px solid #777' } },
   bj: { tag: 'Possession Defense', short: 'bj', effect: '', desc: 'Is known for bodyjacking others.', color: 'bg-[#631900]' },
   dr: { tag: 'Soul Defense', short: 'dr', effect: '', desc: 'Can drain or feed on life, mana, or souls.', color: 'bg-gradient-to-r to-red-500 from-blue-500' },
   id: { tag: 'Fatality Defense', short: 'id', effect: '', desc: 'Is known for inflicting instant death or not dying even when killed.', color: 'bg-gradient-to-r to-green-500 from-dark-500' },
@@ -161,7 +161,7 @@ export const waifuTags = {
   me: { tag: 'Mage', short: 'me', effect: '', desc: '', color: 'bg-teal-500 text-black' },
   cf: { tag: 'Chef', short: 'cf', effect: '', desc: '', color: 'bg-[#dd8812]' },
   pi: { tag: 'Pirate', short: 'pi', effect: '', desc: '', style: { background: 'linear-gradient(0deg, rgba(4,21,149,1) 0%, rgba(0,120,255,1) 100%)', color: '#fff' } },
-  tc: { tag: 'Teacher', short: 'tc', effect: '', desc: '', color: 'bg-teal-500 text-black' },
+  tc: { tag: 'Teacher', short: 'tc', effect: '', desc: '', style: { background: 'linear-gradient(90deg, rgba(154,134,102,1) 0%, rgba(250,214,156,1) 50%, rgba(154,134,102,1) 100%)', color: '#fff' } },
   ad: { tag: 'Android', short: 'ad', effect: '', desc: '', color: 'bg-gradient-to-t to-gray-400 from-gray-200 text-black' },
   cb: { tag: 'Cyborg', short: 'cb', effect: '', desc: '', style: { background: 'linear-gradient(90deg, rgba(238,202,178,1) 0%, rgba(168,168,168,1) 100%)', color: '#000' } },
   nn: { tag: 'Nun', short: 'nn', effect: '', desc: '', color: 'bg-gradient-to-t to-gray-400 from-black' },
@@ -174,22 +174,22 @@ export const waifuTags = {
   ct: { tag: 'Catgirl', short: 'ct', effect: '', desc: '', style: { background: 'linear-gradient(0deg, rgba(215,138,12,1) 20%, rgba(240,240,240,1) 100%)', color: '#000' } },
   vp: { tag: 'Vampire', short: 'vp', effect: '', desc: '', style: { background: 'linear-gradient(0deg, rgba(196,2,2,1) 0%, rgba(99,5,5,1) 70%)', color: '#fff' } },
   pt: { tag: 'Priest', short: 'pt', effect: '', desc: '', color: 'bg-[#ffffff] text-black' },
-  nj: { tag: 'Ninja', short: 'nj', effect: '', desc: '', color: 'bg-teal-500 text-black' },
+  nj: { tag: 'Ninja', short: 'nj', effect: '', desc: '', style: { background: 'linear-gradient(0deg, rgba(70,77,81,1) 0%, rgba(154,177,190,1) 70%)', color: '#fff' } },
   sr: { tag: 'Shifter', short: 'sr', effect: '', desc: 'is able to take more than one form', color: 'bg-teal-500 text-black' },
   ev: { tag: 'Evil', short: 'ev', effect: '', desc: '', style: { background: 'linear-gradient(0deg, rgba(255,0,0,1) 42%, rgba(134,60,60,1) 100%)', color: '#000' } },
   gn: { tag: 'Genius', short: 'gn', effect: '', desc: '', style: { background: 'linear-gradient(0deg, rgba(128,0,255,1) 0%, rgba(0,150,255,1) 100%)', color: '#fff' } },
   rl: { tag: 'Ruler', short: 'rl', effect: '', desc: 'rule over a country or region or even just a tribe', color: 'bg-[#FFD700] text-black' },
   tp: { tag: 'Trap', short: 'tp', effect: '', desc: 'Oh, she is cute, but its a boy!', style: { background: 'linear-gradient(0deg, rgba(227,125,255,1) 0%, rgba(132,194,255,1) 100%)', color: '#000' } },
-  mi: { tag: 'Multiple', short: 'mi', effect: '', desc: 'Package deal', color: 'bg-teal-500 text-black' },
+  mi: { tag: 'Multiple', short: 'mi', effect: '', desc: 'Package deal', color: 'bg-teal-[#0ac781] text-black' },
   tw: { tag: 'Twins', short: 'tw', effect: '', desc: 'Twins / Triplets / Quadruplets / etc.', color: 'bg-teal-500 text-black' },
   cc: { tag: 'Crafter', short: 'cc', effect: '', desc: 'Any producing profession blacksmith/alchemist/artificer/tailor/etc.', style: { background: 'linear-gradient(0deg, rgb(160 97 33) 0%, rgba(225,141,55,1) 70%)', color: '#000' } },
   mm: { tag: 'Magical Girl', short: 'mm', effect: '', desc: '', style: { background: 'linear-gradient(0deg, rgba(244,84,84,1) 0%, rgba(255,89,229,1) 70%)', color: '#fff' } },
   al: { tag: 'Alien', short: 'al', effect: '', desc: '', style: { background: 'linear-gradient(90deg, rgba(12,94,243,1) 0%, rgba(5,227,31,1) 100%)', color: '#fff' } },
-  mg: { tag: 'Monster-girl', short: 'mg', effect: '', desc: '', color: 'bg-teal-500 text-black' },
+  mg: { tag: 'Monster-girl', short: 'mg', effect: '', desc: '', style: { background: 'linear-gradient(0deg, rgba(255,62,169,1) 0%, rgba(74,129,255,1) 100%)', color: '#fff' } },
   nd: { tag: 'Nerd', short: 'nd', effect: '', desc: '', style: { background: 'linear-gradient(0deg, rgba(129,125,255,1) 0%, rgba(132,194,255,1) 100%)', color: '#fff' } },
   ar: { tag: 'Artist', short: 'ar', effect: '', desc: 'Any artistic talent', color: 'bg-teal-500 text-black' },
-  sa: { tag: 'Strategist', short: 'sa', effect: '', desc: '', color: 'bg-teal-500 text-black' },
-  fw: { tag: 'Fanwork', short: 'fw', effect: '', desc: 'Character is a fan creation (only established ones)', color: 'bg-teal-500 text-black' },
+  sa: { tag: 'Strategist', short: 'sa', effect: '', desc: '', style: { background: 'linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(0,163,255,1) 80%)', color: '#fff' } },
+  fw: { tag: 'Fanwork', short: 'fw', effect: '', desc: 'Character is a fan creation (only established ones)', style: { background: 'linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(219,255,0,1) 80%)', color: '#fff' } },
   vn: { tag: 'Villain', short: 'vn', effect: '', desc: '', style: { background: 'linear-gradient(0deg, rgba(202,4,51,1) 0%, rgba(109,3,85,1) 100%)', color: '#fff' } },
   sy: { tag: 'Symbiote Theme', short: 'sy', effect: '', desc: 'Will qualify you to recieve specific symbiote theme', style: { background: 'linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(129,129,129,1) 50%, rgba(0,0,0,1) 100%)', color: '#fff' } },
   rg: { tag: 'Regenerator', short: 'rg', effect: '', desc: '', style: { background: 'linear-gradient(0deg, rgba(149,4,48,1) 0%, rgba(255,0,77,1) 100%)', color: '#000' } },
@@ -200,8 +200,8 @@ export const waifuTags = {
   rw: { tag: 'Reality Warper', short: 'rw', effect: '', desc: '', style: { background: 'linear-gradient(90deg, rgba(132,4,185,1) 0%, rgba(255,15,153,1) 50%, rgba(132,4,185,1) 100%)', color: '#fff' } },
   ha: { tag: 'Hacker', short: 'ha', effect: '', desc: '', style: { background: 'linear-gradient(0deg, rgba(71,107,77,1) 0%, rgba(0,255,29,1) 70%)', color: '#000' } },
   im: { tag: 'Immortality', short: 'im', effect: '', desc: 'Any kind of immortality', color: 'bg-gradient-to-r to-red-300 from-yellow-300 text-black' },
-  ir: { tag: 'Spirit', short: 'ir', effect: '', desc: 'Includes Ghosts, Shades, Wraiths, and Yokai as well', color: 'bg-teal-500 text-black' },
-  cu: { tag: 'Cultivator', short: 'cu', effect: '', desc: '', color: 'bg-teal-500 text-black' },
+  ir: { tag: 'Spirit', short: 'ir', effect: '', desc: 'Includes Ghosts, Shades, Wraiths, and Yokai as well', style: { background: 'linear-gradient(0deg, rgba(233,220,255,1) 0%, rgba(125,50,245,1) 100%)', color: '#000' } },
+  cu: { tag: 'Cultivator', short: 'cu', effect: '', desc: '', style: { background: 'radial-gradient(circle, rgba(251,148,63,1) 0%, rgba(255,248,0,1) 100%)', color: '#000' } },
   sh: { tag: 'Stealth', short: 'sh', effect: '', desc: 'Has experience sneaking around or committing hidden actions.', color: 'bg-teal-500 text-black' },
   pm: { tag: 'Power Manipulation', short: 'pm', effect: '', desc: '', color: 'bg-teal-500 text-black' },
 
@@ -415,7 +415,7 @@ async function getWorlds() {
 
 const allWorldNames = computed(() => uniq(allChars.value.map(x => x.w)))
 const allSubs = computed(() => uniq(allChars.value.filter(x => x.d).map(x => x.d)))
-const allWorldTargets = computed(() => countBy(allChars.value.map(x => x.w)))
+const allWorldTargets = computed(() => assign(countBy(allChars.value.map(x => x.w)), countBy(allChars.value.map(x => x.d))))
 
 export function useWorlds() {
   return {

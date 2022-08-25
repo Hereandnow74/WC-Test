@@ -13,9 +13,14 @@
           @click="orientation = !orientation"
         />
         <fluent:content-view-gallery-20-regular
-          v-if="visible || buildLayout"
+          v-if="!buildLayout && visible"
           class="h-6 w-6 cursor-pointer hover:text-amber-500"
-          @click="buildLayout = !buildLayout"
+          @click="changeLayout"
+        />
+        <bi:phone
+          v-if="buildLayout"
+          class="h-6 w-6 cursor-pointer hover:text-amber-500"
+          @click="changeLayout"
         />
       </div>
       <span v-if="loan.owed" class="flex gap-1 items-center cursor-help" title="Current loan / maximum loan">
@@ -96,7 +101,12 @@ const smartMenu = ref(null)
 onClickOutside(smartMenu, () => showSmartMenu.value = false)
 
 const {
-  budget, tier11tickets, loan, creditLimit,
+  budget, tier11tickets, loan, creditLimit, settings,
 } = useStore()
+
+function changeLayout() {
+  buildLayout.value = !buildLayout.value
+  settings.value.columns = buildLayout.value ? 2 : 'auto'
+}
 
 </script>

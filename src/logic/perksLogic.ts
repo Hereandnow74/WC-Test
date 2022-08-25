@@ -39,7 +39,6 @@ export function deleteFreebies(freebies: object) {
 }
 
 export function addFreebies(freebies: object) {
-  console.log(freebies)
   for (const [key, perk] of Object.entries(freebies) as [keyof typeof allForSave, string[]][]) {
     perk.forEach((title: string) => {
       const ind = findIndex(allForSave[key].value, { title })

@@ -53,7 +53,7 @@ import { useFullPerks } from '~/logic/localPerks'
 const { otherPerks, settings } = useStore()
 const { otherControls } = useFullPerks()
 
-const withoutSpaceTruck = computed(() => otherControls.value.filter(perk => perk.type !== 'space'))
+const withoutSpaceTruck = computed(() => otherControls.value.filter(perk => perk.type !== 'space').filter(perk => settings.value.hideLegacy ? !perk.legacy : true))
 
 const otherDLC = computed(() => !settings.value.allChosenAuthors[0]
   ? DLCotherControls.filter(perk => !settings.value.allChosenAuthors.includes(perk.dlc))

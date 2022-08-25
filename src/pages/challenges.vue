@@ -4,7 +4,7 @@
       Challenges
     </h3>
     <Desc :desc="challengesDesc" class="mb-4 max-w-4xl mx-auto bg-l bg-violet-200 dark:bg-violet-900" />
-    <div class="md:column-count-2 lg:column-count-3 pb-8">
+    <div class="pb-8" :class="settings.columns !== 'auto' ? `column-count-${settings.columns}` : 'md:column-count-2 xl:column-count-3 4xl:column-count-4 5xl:column-count-5'">
       <ChallengeCard
         v-for="challenge in challenges"
         :key="challenge.title"
@@ -24,6 +24,9 @@ import { Challenge } from 'global'
 import { findIndex } from 'lodash-es'
 import { challenges, challengesDesc } from '~/data/challenges'
 import { useChallenges } from '~/store/challenges'
+import { useStore } from '~/store/store'
+
+const { settings } = useStore()
 
 const { activeChallenges } = useChallenges()
 

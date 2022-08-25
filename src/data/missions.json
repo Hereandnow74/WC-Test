@@ -1,6 +1,445 @@
 [
   
   {
+    "rewardType": "Credits",
+    "scope": "Standard",
+    "author": "CyrusFallen",
+    "image": "https://epipoca.com.br/wp-content/uploads/2022/07/overlord-12072022.jpg",
+    "conditions": [
+      {
+        "value": "You will be dropped into the New World at the same time as Nazarick."
+      },
+      {
+        "value": "Your build and your companions will be converted into level 100 characters, any supernatural powers will be converted into skills/spells and must follow the setting's rules."
+      },
+      {
+        "value": "Inexhaustible is not allowed for this mission, and defenses will be nerfed to level 1, they still work but certain skills and world items can bypass them."
+      },
+      {
+        "value": "Capture/Kill every floor guardian and Ainz himself to win, captures must be immediately sold."
+      },
+      {
+        "value": "You are allowed one new companion purchase for every guardian you capture/kill, otherwise you are only allowed to purchase defenses during the mission."
+      },
+      {
+        "value": "Take the apartment upgrades up to dungeon for free, your dungeon will be equal in size to Nazarick but can be customized once to any fantasy theme you want, it will have a core and if it is destroyed you lose automatically."
+      },
+      {
+        "value": "Your choices must fit, any purchases that would not fit into a classic high fantasy setting are not allowed."
+      },
+      {
+        "value": "Finally, take an extra 1000 credits, you must spend those on companions but you are allowed to spend more if you wish."
+      }
+    ],
+    "title": "Guild PvP",
+    "reward": "2500",
+    "source": "",
+    "desc": "Welcome to the New World, think DnD but with realistic power levels, where being a group of young adventures is more likely to end with you as some monster's lunch than as a hero of the realm.\nAnd speaking of monsters, a group of them just showed up, and their master plan is to conquer the world!\nYou're not about to let them do it, are you? If anyone's conquering the world, it will be you!",
+    "objectives": [],
+    "budget": 1500,
+    "loca": "Overlord (LN)",
+    "uid": "oYpFt"
+  },
+  {
+    "reward": "20",
+    "source": "",
+    "scope": "Grand",
+    "author": "AnosDT",
+    "objectives": [
+      {
+        "value": "Participate in direct combat with the Endbringer",
+        "type": "Credits",
+        "reward": "20"
+      },
+      {
+        "type": "Credits",
+        "reward": "20",
+        "value": "Reduce the casualties by atleast 20% with your interference"
+      },
+      {
+        "type": "Credits",
+        "value": "Reduce the casualties by atleast 40% with your interference",
+        "reward": "20"
+      },
+      {
+        "reward": "20",
+        "type": "Credits",
+        "value": "Reduce the casualties by atleast 60% with your interference"
+      },
+      {
+        "type": "Credits",
+        "value": "Reduce the casualties by atleast 80% with your interference",
+        "reward": "20"
+      },
+      {
+        "value": "Reduce the casualties by atleast 90% with your interference",
+        "type": "Credits",
+        "reward": "20"
+      },
+      {
+        "type": "Credits",
+        "reward": "20",
+        "value": "Reduce the casualties by atleast 95% with your interference"
+      },
+      {
+        "type": "Credits",
+        "value": "Reduce the casualties by atleast 98% with your interference",
+        "reward": "20"
+      },
+      {
+        "reward": "20",
+        "value": "Reduce the casualties by atleast 99% with your interference",
+        "type": "Credits"
+      },
+      {
+        "value": "Reduce the casualties to zero with your interference",
+        "type": "Credits",
+        "reward": "100"
+      },
+      {
+        "value": "Kill or capture the Endbringer",
+        "reward": "100",
+        "type": "Credits"
+      }
+    ],
+    "budget": 300,
+    "conditions": [],
+    "desc": "Participate in some way in an Endbringer Attack.\nCan be completed multiple times, each completion reduces the rewards by 25% (Up to 75%).",
+    "image": "",
+    "loca": "Worm",
+    "rewardType": "Credits",
+    "title": "The End-Survivor",
+    "uid": "xKYLF"
+  },
+  {
+    "objectives": [
+      {
+        "type": "Other",
+        "reward": "OCDS \"Yawgmoth\" at full power.",
+        "value": "Make Yawgmoth cry with tears of joy from the perfect potato."
+      },
+      {
+        "value": "Give this version of Yawgmoth a potato waifu that you have cultivated.",
+        "type": "Other",
+        "reward": "You are the greatest potato provider of Phyrexia. All of the realm is now yours as Yawgmoth retired peacefully with his potato wife."
+      }
+    ],
+    "source": "",
+    "conditions": [
+      {
+        "value": "Everyone in this version of Phyrexia has potato farms."
+      },
+      {
+        "value": "You must survive the Phyrexian Potato Mafia's goons and the like."
+      },
+      {
+        "value": "Everything battle-related on yourself is disabled for the majority of the mission. "
+      },
+      {
+        "value": "Your retinue still has their battle-related stuff but they aren't allowed to leave your premises, and you can only have four bodyguards whenever you live the premises."
+      },
+      {
+        "value": "Yawgmoth will check the Potato Farms once a month."
+      }
+    ],
+    "rewardType": "Other",
+    "desc": "Remember Technoblade's potato war with that some guy on Minecraft? Yep. That's what you are about to do. Except, you are in Phyrexia and this version of Phyrexia has some 'major' potato farming situation. Your job is to create the number one perfect potato that will make even Yawgmoth bow before you.",
+    "author": "Di0",
+    "reward": "A separate Pocket Dimension hosting a near-perfect replica of Phyrexia is given to you. Unlike this version, your replica has most of its machineries and armaments repaired and not used for potato farming.",
+    "image": "",
+    "scope": "Grand",
+    "budget": 1000,
+    "title": "The Great Potato War of Phyrexia",
+    "loca": "Magic: the Gathering - Phyrexia",
+    "uid": "UaFsQ"
+  },
+  {
+    "author": "40knerd",
+    "reward": "1 Ticket",
+    "loca": "Rifts",
+    "objectives": [
+      {
+        "type": "Credits",
+        "reward": "300",
+        "value": "Through trade agreements, treaties, and other forms of soft power, establish your nation as the dominant power over a region twice as large as the minimum required for a basic mission success, and hold this position for five local years..  This objective can be completed multiple times, once for each multiple of said base area."
+      },
+      {
+        "reward": "All Companions of that nation are captured.  If their are no companions for that faction listed in this catalogue, you get 30 companion levels to build notable enemies as you please.  No one enemy can be higher than T8 or have more than 6 overall / 3 defense tags.",
+        "value": "Conquer and subjugate a major power that is both a general threat to your objectives, and geographically close enough to wage open war without undue strain.  Examples include Tolkeen, The Coalition States, one of the Warlord Clans of Russia, the NGR, the New Japanese Republic, and so on and so forth.  This includes elimination of major guerillas and insurgencies.",
+        "type": "Companions"
+      },
+      {
+        "type": "TX Tickets",
+        "value": "Defeat Lord Splyncryth of Atlantis in such a way that he cannot recover from it.  Then pillage Atlantis (and especially Splyncryth's personal hoard), and give the company a 50/50 split of the take where the company gets first pick.",
+        "reward": "1 TX Ticket"
+      },
+      {
+        "value": "Capture Lord Splyncryth via one of your fully settled Bindings (compatible with the previous objective)",
+        "type": "TX Tickets",
+        "reward": "1 TX Ticket - this replaces your credit reward."
+      },
+      {
+        "type": "Companions",
+        "reward": "Even if you sell them to the Company, you will gain a perfect factory-fresh copy of that Entity as a Companion for free.",
+        "value": "Capture any entity of similar power to Lord Splyncryth via one of your fully settled Bindings. (ie, one of the Vampire God Intelligences, one of the Four Horsemen of the Apocalypse, a Millenium Tree, etc.)  Note that any such entity is a high T10 target at the least."
+      }
+    ],
+    "scope": "Grand",
+    "source": "",
+    "budget": 1600,
+    "conditions": [
+      {
+        "value": "You must conquer and subjugate an area at least the size of what a historian would recognize as equivalent to 2000 AD Italy, including whatever non-citizen territories they may have."
+      },
+      {
+        "value": "In order to be considered sufficiently colonized, this area must be a mostly self-sufficient nation that does not require imports for critical functions like food or power."
+      },
+      {
+        "value": "Additionally, it must be sufficiently strongly defended that no established nation/polity as of your start date will willingly wage open war without provocation."
+      }
+    ],
+    "desc": "Earth in this setting is a prime opportunity for the company - a nexus of travel like few others, and surprisingly lacking in the mass environmental warping that usually makes such a thing unusable for said purpose.  That being said, it is inhabited by FAR too many competing interests that all want to kill each other, many of which have enough strength to make direct conflict unfeasible.\n\nShould you accept this mission, your objective is simple - conquer and subjugate a sizable quantity of land, then colonize it.\n\nYou begin in any point of time between 90 and 100 PA.",
+    "image": "https://images.launchbox-app.com/073a3b28-a498-48eb-bcca-329f21383b12.jpg",
+    "title": "Colonizing the Multiversal Australia",
+    "rewardType": "TX Tickets",
+    "uid": "HgwGr"
+  },
+  {
+    "image": "https://derpicdn.net/img/2020/8/31/2435542/large.png",
+    "author": "Ratcatcher",
+    "conditions": [
+      {
+        "value": "Do it yourself"
+      },
+      {
+        "value": "The targets are immune to long-term mind control, but can be hypnotized or otherwise controlled for brief timespans and are vulnerable to subtler means."
+      },
+      {
+        "value": "The targets must become your willing harem, caring about you over everything else, and also want each other in the group. You can use any mean other than outright capture, even holding them prisoners"
+      }
+    ],
+    "desc": "Three different characters in My Little Pony: Friendship Is Magic have names that refer to the sun going down: Twilight Sparkle, Sunset Scimmer, and the OTHER Twilight Sparkle (AKA Sci-Twi). Your goal in this mission is to corrupt them into a harem.",
+    "loca": "My Little Pony",
+    "objectives": [
+      {
+        "value": "Sci-Twi is corrupted as Midnight Sparkle",
+        "type": "Companions",
+        "reward": "Captured as Midnight Sparkle with the appropriate rating, can change between forms"
+      },
+      {
+        "type": "Companions",
+        "value": "Sunset Shimmer is corrupted while in Daydream Shimmer form",
+        "reward": "Can change between normal and Daydream form, everyone in the group is bumped one tier after Step 6"
+      }
+    ],
+    "scope": "Quick",
+    "title": "Triple Sundown",
+    "budget": 100,
+    "rewardType": "Other",
+    "source": "",
+    "reward": "200 credits, instant Capture of the targets",
+    "uid": "gexgH"
+  },
+  {
+    "scope": "Grand",
+    "conditions": [
+      {
+        "value": "Become a Renowmed VILLAIN."
+      }
+    ],
+    "desc": "In this world of heroes and villains, make your path as a VILLAIN.",
+    "rewardType": "Credits",
+    "budget": 0,
+    "author": "irugaa0",
+    "image": "https://wallpaperaccess.com/full/2057848.jpg",
+    "objectives": [
+      {
+        "reward": "Educational Talent",
+        "type": "Perks",
+        "value": "Kill/Capture a teacher of a hero school."
+      },
+      {
+        "type": "Credits",
+        "value": "As a Villain kill a hero in the national Hero Billboard Chart .",
+        "reward": "10"
+      },
+      {
+        "reward": "10",
+        "type": "Credits",
+        "value": "As a Villain kill a hero in the top 100 of a country."
+      },
+      {
+        "reward": "20",
+        "value": "As a Villain Kill/Capture a hero in the top 50 of a country.",
+        "type": "Credits"
+      },
+      {
+        "reward": "Any template of your choice",
+        "value": "As a Villain Kill/Capture a hero in the top 20 of a country.",
+        "type": "Perks"
+      },
+      {
+        "value": "As a Villain Kill/Capture a hero in the top 10 of a country.",
+        "reward": "Any perk, talent or defense of your choice.",
+        "type": "Perks"
+      },
+      {
+        "reward": "any tier 6 or lower of the current world.",
+        "type": "Companions",
+        "value": "As a Villain Kill/Capture the number 1 hero of a country."
+      },
+      {
+        "type": "Credits",
+        "value": "Become a Yakuza member.",
+        "reward": "20"
+      },
+      {
+        "value": "Become a Yakuza Leader.",
+        "type": "Credits",
+        "reward": "50"
+      },
+      {
+        "type": "Credits",
+        "reward": "30",
+        "value": "Assemble a Yakuza group."
+      },
+      {
+        "value": "Kill/Capture Izuko Midoriya.",
+        "type": "Credits",
+        "reward": "100"
+      },
+      {
+        "reward": "100",
+        "value": "Kill/Capture Allmight.",
+        "type": "Credits"
+      }
+    ],
+    "source": "",
+    "reward": "10",
+    "loca": "My Hero Academia",
+    "title": "My Hero Academia - VILLAIN Path.",
+    "uid": "HaKBp"
+  },
+  {
+    "budget": 0,
+    "rewardType": "Credits",
+    "source": "",
+    "reward": "10",
+    "image": "https://images.everyeye.it/img-notizie/my-hero-academia-fan-art-reimmagina-protagonisti-adulti-v3-358455.jpg",
+    "title": "My Hero Academia - HERO Path.",
+    "author": "irugaa0",
+    "objectives": [
+      {
+        "reward": "Educational Talent",
+        "type": "Perks",
+        "value": "Become a teacher in a hero school."
+      },
+      {
+        "reward": "10",
+        "value": "As a Pro-Hero join the national Hero Billboard Chart ",
+        "type": "Credits"
+      },
+      {
+        "type": "Credits",
+        "value": "As a Pro-Hero join the top 100 of a country.",
+        "reward": "10"
+      },
+      {
+        "type": "Credits",
+        "reward": "20",
+        "value": "As a Pro-Hero join the top 50 of a country."
+      },
+      {
+        "reward": "Any template of your choice",
+        "value": "As a Pro-Hero join the top 20 of a country.",
+        "type": "Perks"
+      },
+      {
+        "reward": "Any perk, talent or defense of your choice.",
+        "type": "Perks",
+        "value": "As a Pro-Hero join the top 10 of a country."
+      },
+      {
+        "reward": "any tier 6 or lower of the current world.",
+        "value": "As a Pro-Hero be the number 1of a country.",
+        "type": "Companions"
+      },
+      {
+        "reward": "10",
+        "type": "Credits",
+        "value": "Kill/Capture a level C or higher Villain."
+      },
+      {
+        "value": "Kill/Capture a level B or higher Villain.",
+        "reward": "15",
+        "type": "Credits"
+      },
+      {
+        "value": "Kill/Capture a level A or higher Villain.",
+        "type": "Companions",
+        "reward": "any tier 5 or lower of the current world."
+      },
+      {
+        "value": "Kill/Capture a level S Villain.",
+        "type": "Companions",
+        "reward": "any tier 6 or lower of the current world."
+      },
+      {
+        "reward": "20",
+        "type": "Credits",
+        "value": "Capture or kill a Yakuza member."
+      },
+      {
+        "type": "Credits",
+        "reward": "50",
+        "value": "Capture or kill a Yakuza Leader."
+      },
+      {
+        "reward": "30",
+        "value": "Disband a Yakuza group.",
+        "type": "Credits"
+      },
+      {
+        "value": "Kill/Capture Shigaraki Tomura",
+        "reward": "100",
+        "type": "Credits"
+      },
+      {
+        "type": "Credits",
+        "value": "Kill/Capture All For One.",
+        "reward": "100"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Become a PRO Hero."
+      }
+    ],
+    "scope": "Grand",
+    "loca": "My Hero Academia",
+    "desc": "In this world of heroes and villains, make your path as a HERO.",
+    "uid": "Nhjoy"
+  },
+  {
+    "objectives": [],
+    "rewardType": "Other",
+    "desc": "Starting Powers :\nLimited version of a Kaleidoscope and 16 peerage pieces (1 for you and 15 others, all from dxd)\n-Can Teleport to any place in the world/universe so long as you are conscious\n-Can Travel to any world at any time so long as you are conscious\n-Can see the whole of a world's timeline before entry, ability is lost when the world is entered\n-When entering a new world, select any place and moment in time to enter.\n-All worlds move at a given rate. A week in your current world means a week has passed in all other previously entered worlds. \n-You are not special or have any plot armor, if you jump to a world like star trek and piss off the Q they will kill you in a nanosecond.\n\nGoal:\nRecruit all 15 members of a peerage. (All the members in Retinue page is your goal, you do not start with any and you must work your way to a complete set. )\n\nWin Condition:\nGame set up by Kischur Zelretch Schweinorg to become his successor\nHighest Point Counter at end wins and gains full power over the kaleidoscope\nZelretch may throw curve balls at you if he find your are boring him\n\nRestrictions:\nMind control of any kind not allowed\nDo not start with any magic knowledge beyond a instinctual understanding of the Kaleidoscope\nOther powers can be learned but the rest of the catalog is off limits for purchase\nCan not access duplicate copies of the same world",
+    "conditions": [
+      {
+        "value": "Power Restrictions"
+      }
+    ],
+    "source": "",
+    "image": "https://cdn.donmai.us/sample/66/34/sample-6634e1d4862cfd81d3f068b8859ec399.jpg",
+    "reward": "Full Use of the Kaleidoscope",
+    "loca": "Generic",
+    "budget": 0,
+    "scope": "Grand",
+    "author": "HaloLoreMaster",
+    "title": "Get a Peerage",
+    "uid": "ojDOV"
+  },
+  {
     "scope": "Grand",
     "loca": "Panty and Stocking with Garterbelt",
     "conditions": [
@@ -65,7 +504,7 @@
     "loca": "Generic",
     "author": "Silveod",
     "budget": 30,
-    "image": "",
+    "image": "https://animecorner.me/wp-content/uploads/2020/12/steal3-1.jpg.webp",
     "title": "Panty Burglar",
     "rewardType": "Perks",
     "source": "",

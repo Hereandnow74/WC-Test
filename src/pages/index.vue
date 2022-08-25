@@ -1,172 +1,174 @@
 
 <template>
-  <div class="lg:pl-0 flex flex-col gap-4 mb-8" :class="[currentWidth]">
-    <div class="hidden max-w-screen-lg max-w-screen-xl max-w-screen-sm max-w-screen-md"></div>
-    <h1 id="rules" class="text-xl md:text-2xl font-bold text-center mt-4">
-      Waifu Catalog <span class="text-gray-600 dark:text-gray-400">(by SwiftRosenthal)</span> Interactive v{{ VERSION }} <span class="text-gray-600 dark:text-gray-400">(by Om1cr0n)</span>
-    </h1>
-    <div class="flex flex-col px-2 w-full">
-      <h3 class="text-xl font-semibold">
-        Rules Index
-      </h3>
-      <router-link
-        to="/help"
-        class="text-green-600 dark:text-green-400 hover:underline text-lg"
-      >
-        Help
-      </router-link>
-      <router-link
-        to="/everything"
-        class="text-green-600 dark:text-green-400 hover:underline text-lg"
-      >
-        List of Everything
-      </router-link>
-      <router-link
-        :to="{ path: '/', hash: '#pandora' }"
-        class="text-amber-600 dark:text-amber-400 hover:underline text-lg"
-      >
-        Pandora’s Alternate Tier Ranks / Despin’s Tier Chart
-      </router-link>
-      <router-link
-        v-for="rule in rulesList"
-        :key="rule.title"
-        :to="{ path: '/', hash: '#' + rule.title }"
-        class="text-blue-600 dark:text-blue-400 hover:underline sm:text-lg"
-      >
-        {{ rule.title2 }}
-      </router-link>
-    </div>
-    <div class="flex w-full -my-3 items-center justify-end">
-      <fluent:auto-fit-width-24-filled class="h-8 w-8 bg-gray-300 dark:bg-gray-800 rounded cursor-pointer hover:scale-105 transform" @click="changeWidth" />
-    </div>
-    <div>
-      <Desc
-        :desc="glossary"
-        class="bg-amber-200 text-gray-800 text-sm md:text-base max-w-[370px] float-right mt-8 mx-2 !p-1 border-3 border-gray-900 indent-xs"
-      />
-      <Desc id="starting" class="bg-warm-gray-200 dark:bg-gray-800" :desc="startingDesc" />
-    </div>
-    <div class="lg:flex bg-amber-100 dark:bg-gray-800 p-1 md:p-4 gap-4 w-full mx-auto">
-      <Table :headers="worldTitles" :rows="worldData" class="text-sm md:text-base" />
-      <Table :headers="waifuTitles" :rows="waifuData" class="text-sm md:text-base w-min flex-grow" />
-    </div>
-    <div id="pandora" class="bg-amber-100 dark:bg-gray-800 p-1 md:p-4 w-full mx-auto">
-      <div class="text-lg text-center mb-2 text-teal-600 dark:text-teal-300">
-        These Tier lists are aproximations, official tier list do not exist yet.
-      </div>
-      <div class="flex w-full pb-2">
-        <div
-          class="border-l border-t border-r px-4 rounded-t-xl cursor-pointer flex-grow text-center font-bold"
-          :class="tiersTab === 0 ? 'bg-amber-500 dark:bg-gray-600' : 'bg-amber-400 dark:bg-gray-700'"
-          @click="tiersTab = 0"
-        >
-          Despin Tier list
-        </div>
-        <div
-          class="border-l border-t border-r px-4 rounded-t-xl cursor-pointer flex-grow text-center font-bold"
-          :class="tiersTab === 1 ? 'bg-amber-500 dark:bg-gray-600' : 'bg-amber-400 dark:bg-gray-700'"
-          @click="tiersTab = 1"
-        >
-          Pandora Tier list
-        </div>
-      </div>
-      <h3 v-if="tiersTab === 1" class="sm:text-lg text-center mb-2">
-        Pandora’s Alternate Tier Ranks (by
-        <a
-          class="text-blue-500 hover:underline"
-          href="https://forum.questionablequesting.com/threads/r34-economy-cyoa-thread.11289/page-63%23post-3167059&sa=D&source=editors&ust=1636169921608000&usg=AOvVaw3lNgOZSmmHTK3NPa9X_SOQ"
-          target="_blank"
-          rel="noopener noreferrer"
-        >Pandora12</a>)
-      </h3>
-      <h3 v-else class="sm:text-lg text-center mb-2">
-        Despin’s Tier Chart (by
-        <a
-          class="text-blue-500 hover:underline"
-          href="https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#"
-          target="_blank"
-          rel="noopener noreferrer"
-        >Despin</a>)
-      </h3>
-      <Table
-        :headers="pandoraTitles"
-        :rows="tiersTab === 1 ? pandoraData : despinData"
-        class="text-sm md:text-base w-full flex-grow text-black"
-      />
-    </div>
-    <div>
-      <Desc
-        :desc="effectiveTiers"
-        class="bg-amber-200 text-gray-800 sm:w-1/2 sm:float-right mt-8 mx-2 border-3 border-gray-900"
-      />
-      <Desc id="captures" :desc="captures" class="bg-warm-gray-200 dark:bg-gray-800" />
-    </div>
-    <Desc id="familiar" :desc="familiars" class="bg-warm-gray-200 dark:bg-gray-800" />
-    <Desc id="purchases" :desc="purchases" class="bg-warm-gray-200 dark:bg-gray-800" />
-    <Desc id="sales" :desc="sales" class="bg-warm-gray-200 dark:bg-gray-800" />
-    <Desc id="waifu11" :desc="waifu11" class="bg-warm-gray-200 dark:bg-gray-800" />
-    <Desc id="danger11" :desc="danger11" class="bg-warm-gray-200 dark:bg-gray-800" />
-    <div>
-      <!-- <Desc
-        :desc="creditValue"
-        class="bg-amber-200 text-gray-800 md:w-1/2 lg:w-1/3 sm:float-right mt-8 mx-2 border-3 border-gray-900"
-      /> -->
-      <Desc id="pvp" class="bg-warm-gray-200 dark:bg-gray-800" :desc="pvpRules" />
-    </div>
-    <h2 id="services" class="text-xl text-center">
-      Company Services
-    </h2>
-    <Desc id="services" :desc="services" class="bg-warm-gray-200 dark:bg-gray-800" />
-    <Desc id="salary" :desc="salary" class="bg-warm-gray-200 dark:bg-gray-800" />
-    <Desc id="helpDesk" :desc="helpDesk" class="bg-warm-gray-200 dark:bg-gray-800" />
-    <Desc id="Loans and Credit Debt" :desc="loans" class="bg-warm-gray-200 dark:bg-gray-800" />
-    <Desc id="Missions" :desc="missions" class="bg-warm-gray-200 dark:bg-gray-800" />
-    <Desc id="refund" :desc="refund" class="bg-warm-gray-200 dark:bg-gray-800" />
-    <h2 id="arranged" class="text-xl text-center">
-      Come Out and Play (Arranged PvP)
-    </h2>
-    <div class>
-      <Table :headers="powerHeaders" :rows="powerTier" class="float-right m-4" />
-      <Desc id="arranged" :desc="arranged" class="bg-warm-gray-200 dark:bg-gray-800" />
-    </div>
-    <div>
-      <Desc
-        :desc="assetValue"
-        class="bg-amber-200 text-gray-800 sm:w-1/2 sm:float-right mt-8 mx-2 border-3 border-gray-900"
-      />
-      <Desc
-        id="arrangedConditions"
-        :desc="arrangedConditions"
-        class="bg-warm-gray-200 dark:bg-gray-800"
-      />
-    </div>
-    <Desc id="arrangedTeam" :desc="arrangedTeam" class="bg-warm-gray-200 dark:bg-gray-800" />
-    <Desc id="arrangedSpecial" :desc="arrangedSpecial" class="bg-warm-gray-200 dark:bg-gray-800" />
-    <h2 id="additional" class="text-xl text-center">
-      Additional Rules
-    </h2>
-    <Desc id="RIP" :desc="rip" class="bg-warm-gray-200 dark:bg-gray-800" />
-    <Desc id="Offspring" :desc="offspring" class="bg-warm-gray-200 dark:bg-gray-800" />
-    <h2 id="additional" class="text-xl text-center">
-      Nasuverse DLC rules
-    </h2>
-    <Desc id="NasuDLC" :desc="nasuDLC" class="bg-warm-gray-200 dark:bg-gray-800" />
-    <h2 id="specific" class="text-xl text-center">
-      Setting Specific Rules
-    </h2>
-    <div class="md:column-count-2 column-gap pb-8">
-      <div
-        v-for="world in worlds.filter(w => w.additional)"
-        :key="world.worldName"
-        class="mb-2 column-block max-w-[600px] bg-warm-gray-200 dark:bg-gray-800"
-      >
-        <h3 class="text-center text-lg">
-          {{ world.worldName }}
+  <div class="flex w-full">
+    <div class="lg:pl-0 flex flex-col gap-4 mb-8 mx-auto" :class="[currentWidth]">
+      <div class="hidden max-w-screen-lg max-w-screen-xl max-w-screen-sm max-w-screen-md"></div>
+      <h1 id="rules" class="text-xl md:text-2xl font-bold text-center mt-4">
+        Waifu Catalog <span class="text-gray-600 dark:text-gray-400">(by SwiftRosenthal)</span> Interactive v{{ VERSION }} <span class="text-gray-600 dark:text-gray-400">(by Om1cr0n)</span>
+      </h1>
+      <div class="flex flex-col px-2 w-full">
+        <h3 class="text-xl font-semibold">
+          Rules Index
         </h3>
-        <Desc :desc="world.additional" />
+        <router-link
+          to="/help"
+          class="text-green-600 dark:text-green-400 hover:underline text-lg"
+        >
+          Help
+        </router-link>
+        <router-link
+          to="/everything"
+          class="text-green-600 dark:text-green-400 hover:underline text-lg"
+        >
+          List of Everything
+        </router-link>
+        <router-link
+          :to="{ path: '/', hash: '#pandora' }"
+          class="text-amber-600 dark:text-amber-400 hover:underline text-lg"
+        >
+          Pandora’s Alternate Tier Ranks / Despin’s Tier Chart
+        </router-link>
+        <router-link
+          v-for="rule in rulesList"
+          :key="rule.title"
+          :to="{ path: '/', hash: '#' + rule.title }"
+          class="text-blue-600 dark:text-blue-400 hover:underline sm:text-lg"
+        >
+          {{ rule.title2 }}
+        </router-link>
       </div>
+      <div class="flex w-full -my-3 items-center justify-end">
+        <fluent:auto-fit-width-24-filled class="h-8 w-8 bg-gray-300 dark:bg-gray-800 rounded cursor-pointer hover:scale-105 transform" @click="changeWidth" />
+      </div>
+      <div>
+        <Desc
+          :desc="glossary"
+          class="bg-amber-200 text-gray-800 text-sm md:text-base max-w-[370px] float-right mt-8 mx-2 !p-1 border-3 border-gray-900 indent-xs"
+        />
+        <Desc id="starting" class="bg-warm-gray-200 dark:bg-gray-800" :desc="startingDesc" />
+      </div>
+      <div class="lg:flex bg-amber-100 dark:bg-gray-800 p-1 md:p-4 gap-4 w-full mx-auto">
+        <Table :headers="worldTitles" :rows="worldData" class="text-sm md:text-base" />
+        <Table :headers="waifuTitles" :rows="waifuData" class="text-sm md:text-base w-min flex-grow" />
+      </div>
+      <div id="pandora" class="bg-amber-100 dark:bg-gray-800 p-1 md:p-4 w-full mx-auto">
+        <div class="text-lg text-center mb-2 text-teal-600 dark:text-teal-300">
+          These Tier lists are aproximations, official tier list do not exist yet.
+        </div>
+        <div class="flex w-full pb-2">
+          <div
+            class="border-l border-t border-r px-4 rounded-t-xl cursor-pointer flex-grow text-center font-bold"
+            :class="tiersTab === 0 ? 'bg-amber-500 dark:bg-gray-600' : 'bg-amber-400 dark:bg-gray-700'"
+            @click="tiersTab = 0"
+          >
+            Despin Tier list
+          </div>
+          <div
+            class="border-l border-t border-r px-4 rounded-t-xl cursor-pointer flex-grow text-center font-bold"
+            :class="tiersTab === 1 ? 'bg-amber-500 dark:bg-gray-600' : 'bg-amber-400 dark:bg-gray-700'"
+            @click="tiersTab = 1"
+          >
+            Pandora Tier list
+          </div>
+        </div>
+        <h3 v-if="tiersTab === 1" class="sm:text-lg text-center mb-2">
+          Pandora’s Alternate Tier Ranks (by
+          <a
+            class="text-blue-500 hover:underline"
+            href="https://forum.questionablequesting.com/threads/r34-economy-cyoa-thread.11289/page-63%23post-3167059&sa=D&source=editors&ust=1636169921608000&usg=AOvVaw3lNgOZSmmHTK3NPa9X_SOQ"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Pandora12</a>)
+        </h3>
+        <h3 v-else class="sm:text-lg text-center mb-2">
+          Despin’s Tier Chart (by
+          <a
+            class="text-blue-500 hover:underline"
+            href="https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Despin</a>)
+        </h3>
+        <Table
+          :headers="pandoraTitles"
+          :rows="tiersTab === 1 ? pandoraData : despinData"
+          class="text-sm md:text-base w-full flex-grow text-black"
+        />
+      </div>
+      <div>
+        <Desc
+          :desc="effectiveTiers"
+          class="bg-amber-200 text-gray-800 sm:w-1/2 sm:float-right mt-8 mx-2 border-3 border-gray-900"
+        />
+        <Desc id="captures" :desc="captures" class="bg-warm-gray-200 dark:bg-gray-800" />
+      </div>
+      <Desc id="familiar" :desc="familiars" class="bg-warm-gray-200 dark:bg-gray-800" />
+      <Desc id="purchases" :desc="purchases" class="bg-warm-gray-200 dark:bg-gray-800" />
+      <Desc id="sales" :desc="sales" class="bg-warm-gray-200 dark:bg-gray-800" />
+      <Desc id="waifu11" :desc="waifu11" class="bg-warm-gray-200 dark:bg-gray-800" />
+      <Desc id="danger11" :desc="danger11" class="bg-warm-gray-200 dark:bg-gray-800" />
+      <div>
+        <!-- <Desc
+          :desc="creditValue"
+          class="bg-amber-200 text-gray-800 md:w-1/2 lg:w-1/3 sm:float-right mt-8 mx-2 border-3 border-gray-900"
+        /> -->
+        <Desc id="pvp" class="bg-warm-gray-200 dark:bg-gray-800" :desc="pvpRules" />
+      </div>
+      <h2 id="services" class="text-xl text-center">
+        Company Services
+      </h2>
+      <Desc id="services" :desc="services" class="bg-warm-gray-200 dark:bg-gray-800" />
+      <Desc id="salary" :desc="salary" class="bg-warm-gray-200 dark:bg-gray-800" />
+      <Desc id="helpDesk" :desc="helpDesk" class="bg-warm-gray-200 dark:bg-gray-800" />
+      <Desc id="Loans and Credit Debt" :desc="loans" class="bg-warm-gray-200 dark:bg-gray-800" />
+      <Desc id="Missions" :desc="missions" class="bg-warm-gray-200 dark:bg-gray-800" />
+      <Desc id="refund" :desc="refund" class="bg-warm-gray-200 dark:bg-gray-800" />
+      <h2 id="arranged" class="text-xl text-center">
+        Come Out and Play (Arranged PvP)
+      </h2>
+      <div class>
+        <Table :headers="powerHeaders" :rows="powerTier" class="float-right m-4" />
+        <Desc id="arranged" :desc="arranged" class="bg-warm-gray-200 dark:bg-gray-800" />
+      </div>
+      <div>
+        <Desc
+          :desc="assetValue"
+          class="bg-amber-200 text-gray-800 sm:w-1/2 sm:float-right mt-8 mx-2 border-3 border-gray-900"
+        />
+        <Desc
+          id="arrangedConditions"
+          :desc="arrangedConditions"
+          class="bg-warm-gray-200 dark:bg-gray-800"
+        />
+      </div>
+      <Desc id="arrangedTeam" :desc="arrangedTeam" class="bg-warm-gray-200 dark:bg-gray-800" />
+      <Desc id="arrangedSpecial" :desc="arrangedSpecial" class="bg-warm-gray-200 dark:bg-gray-800" />
+      <h2 id="additional" class="text-xl text-center">
+        Additional Rules
+      </h2>
+      <Desc id="RIP" :desc="rip" class="bg-warm-gray-200 dark:bg-gray-800" />
+      <Desc id="Offspring" :desc="offspring" class="bg-warm-gray-200 dark:bg-gray-800" />
+      <h2 id="additional" class="text-xl text-center">
+        Nasuverse DLC rules
+      </h2>
+      <Desc id="NasuDLC" :desc="nasuDLC" class="bg-warm-gray-200 dark:bg-gray-800" />
+      <h2 id="specific" class="text-xl text-center">
+        Setting Specific Rules
+      </h2>
+      <div class="md:column-count-2 column-gap pb-8">
+        <div
+          v-for="world in worlds.filter(w => w.additional)"
+          :key="world.worldName"
+          class="mb-2 column-block max-w-[600px] bg-warm-gray-200 dark:bg-gray-800"
+        >
+          <h3 class="text-center text-lg">
+            {{ world.worldName }}
+          </h3>
+          <Desc :desc="world.additional" />
+        </div>
+      </div>
+      <ShareLoad />
     </div>
-    <ShareLoad />
   </div>
 </template>
 
@@ -268,6 +270,7 @@ const powerTier = [
 ]
 
 const widths = [
+  'max-w-full',
   'max-w-screen-lg',
   'max-w-screen-xl',
   'max-w-screen-sm',
