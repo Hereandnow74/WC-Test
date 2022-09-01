@@ -77,7 +77,7 @@ homes.push({
   image: 'https://i.ibb.co/frYhgvK/Warehouse-District.jpg',
   cost: 20,
   whitelist: ['Grand Manor', 'Life’s A Beach'],
-  desc: 'The basic Grand Manor offers an automatically replenishing supply of resources for each workshop, but only a limited amount at a time. Each warehouse in this district is 20 m tall and has about 50,000 sq m of floor space, enough to hold… a lot of materials. You can have as many individual warehouses as you have workshops, though this is also capped by your dimension’s physical space. New resources will appear here, in entire pallets at a time. Your retinue members’ workshops will now pull their materials from this central stockpile instead of generating their own.',
+  desc: 'The basic Grand Manor offers an automatically replenishing supply of resources for each workshop, but only a limited amount at a time. Each warehouse in this district is 20 m tall and has about 50,000 sq m of floor space, enough to hold… a lot of materials. You can have as many individual warehouses as you have workshops, though this is also capped by your dimension’s physical space. New resources will appear here, in entire pallets at a time. Your retinue members’ workshops will now pull their materials from this central stockpile instead of generating their own. You may also define empty warehouses as sections of your Pocket Space.',
 })
 
 homes.push({
@@ -99,7 +99,7 @@ homes.push({
   image: 'https://i.ibb.co/YB9Tpcz/Pocket-Star.jpg',
   cost: 11111,
   whitelist: ['Sweet Home Expansion (25x)'],
-  desc: 'Your planet is no longer alone in its universe. This expands the pocket space’s radius to the same range as a Transhuman Master Core (~104.45 AU) and places a yellow star at the center with your planet orbiting around it. No additional planets or other features are included in this perk.',
+  desc: 'Your planet is no longer alone in its universe. This expands your personal realm’s radius to roughly 104.45 AU and places a yellow star at the center, with your planet orbiting around it. No additional planets or other features are included in this perk.',
 })
 
 homes.push({
@@ -131,7 +131,7 @@ homes.push({
   flag: 'hasARide',
   needed: 1,
   freebies: {
-    binding: ['Advanced Tempest Runes (Body)'],
+    binding: [{ title: 'Advanced Tempest Runes', cost: 0, complex: [{ flavor: 'Body' }], count: 1 }],
   },
   desc: `
 <p>The central console for your mansion now includes the body-modification functions for everyone inside. If you have Basic Tempest Runes, take its expansion Advanced Tempest Runes (Body) for free. If you already have Advanced Tempest Runes (Body) when you buy Adjustment Field, take its expansion Advanced Tempest Runes (Mind) for free. If you already have Advanced Tempest Runes (Mind) when you buy Adjustment Field, you may claim a discount equal to the total value of all Tempest Runes you have already purchased. This perk may also apply to Heritage-granted inner worlds such as the Dragon Cabin, the Biomorph’s creep zone, or the Cybermorph’s digital world.</p>
@@ -161,7 +161,7 @@ export const laws = `
 <h3 class="text-xl">Mechanic: Laws</h3>
 <p>Laws are forbidden actions that automatically apply effects on those that violate them. By default, all are equal under the eye of your Laws, and they apply equally to all beings within your Jurisdiction except the Contractor. You can set all conditions in an app on your smart device.</p>
 <p>Laws are made up of three main components: the Infraction, the Severity, and the Consequence. An Infraction is the specific action of breaking a specific Law. The Consequence is the effect inflicted upon the Offender. The Severity is the degree of the effect inflicted. Laws can only be made regarding or related to things within a Contractor’s Jurisdiction.</p>
-<p><b>A Contractor has Jurisdiction within Company provided spaces (Pocket Apartment and its upgrades, Dragon Cabin, space claimed by Biomorph Creep, etc), meaning Laws only function (and apply their Consequences) within those areas.</b> A Contractor does not have a default set of Laws or actions they can make Laws about, but the default Consequence that all Contractors have access to is to affect an Offender's libido, arousal, or sensitivity.</p>
+<p><b>A Contractor has Jurisdiction within Company provided spaces (Pocket Apartment and its upgrades, Dragon Cabin, space claimed by Alterzelu Creep, etc), meaning Laws only function (and apply their Consequences) within those areas.</b> A Contractor does not have a default set of Laws or actions they can make Laws about, but the default Consequence that all Contractors have access to is to affect an Offender's libido, arousal, or sensitivity.</p>
 <p>Consequences operate similarly to adjustment sliders provided via Tempest Jewelry, Operating on a scale of 0% - 100%. Unlike Tempest Runes, Consequences cap at 500%. You may cap the effect for either specific laws or offenders in general lower than the maximum. Past 300%, most changes become extremely debilitating: examples include breasts the size of their torso or submissiveness to the point of bowing and begging forgiveness for tiny offenses. Offenders that are not applicable targets (such as being featureless geometric robots or formless AIs) instead have a ‘failure’ slider, that upon being filled causes the Offender to break down, fail, or otherwise be rendered inoperable.</p>
 <p>While a single action may break multiple laws, and thus suffer multiple Consequences at once, a specific Law will only apply once per Infraction. A continuous violation (such as flying in a no-flying zone) will apply its Consequences once per hour. A Law’s Consequences may adjust multiple ‘sliders’ that the Contractor has access to at once, but only adjust each one up to the maximum severity of the infraction. Any particular Law will have a maximum severity any Consequences it causes can be, though you may set laws to have smaller effects as desired. By default, these changes fade over time while outside your controlled spaces at a rate of 1% per day.</p>
 <p>A Minor infraction may instill changes up to ~1% per infraction. Major infractions may instill up to ~5% changes per; Severe infractions up to ~10%, and Extreme infractions up to ~25%.</p>
@@ -369,7 +369,7 @@ dungeon.push({
   desc: `
   Devotion Points may now be spent to purchase respawning minions or monsters. Their DP costs are equal to the cost to buy a waifu of the same Tier. These monsters heal or respawn over the course of 24 hours if they are damaged or killed.
   <p>A Dungeon can also create creatures that are capable of utilizing your chosen Binding to Capture targets, such as respawning Symbiote Larvae, androids capable of deploying Tempest Jewelry, or entities made of fragments of your Shroud. This increases their DP cost by half over what their Tier would normally cost.</p>
-  <p>Symbiote Larvae and Ritual Circle ‘magi’ or sustained, self-aware magic patterns must be at least Tier 5, but Tempest Jewelry and Shroud based Creatures are at least Tier 6. Despite the Company R&D’s best efforts, creating self-sustained, self-usable Stamps remains out of reach, and there exists no Stamp-based creature. You must possess a Binding for a Dungeon creature to utilize it.</p>
+  <p>Symbiote Larvae and Tantric Arts ‘magi’ or sustained, self-aware magic patterns must be at least Tier 5, but Tempest Jewelry and Shroud based Creatures are at least Tier 6. Despite the Company R&D’s best efforts, creating self-sustained, self-usable Stamps remains out of reach, and there exists no Stamp-based creature. You must possess a Binding for a Dungeon creature to utilize it.</p>
   `,
 })
 

@@ -19,6 +19,7 @@
           <span class="text-gray-400 text-sm"> ({{ methods[char.method] }})</span>
           <span v-if="char.sold" class="text-red-500 ml-1">SOLD</span>
         </div>
+        <span v-if="char.role" class="text-gray-500">Status: <span class="text-orange-200">{{ char.role }}</span></span>
         <span class="text-gray-500">From: <span class="text-gray-400">{{ char.world }}</span></span>
       </div>
     </div>

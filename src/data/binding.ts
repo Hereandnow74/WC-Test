@@ -69,7 +69,6 @@ export const bindings: PerkFull[] = [
     type: 'Stamp',
     image: 'https://i.ibb.co/mGVgnzh/Empty-Hand.jpg',
     whitelist: ['Company Stamp'],
-    blacklist: ['Megapixel'],
     desc: 'You have the stamp binding, but not the physical stamp itself. All individuals you purchase or capture will still count as being bound by a stamp, but you will need to use other means to do the capturing.',
   },
   {
@@ -92,12 +91,35 @@ export const bindings: PerkFull[] = [
     type: 'Jewelry',
     image: 'https://i.ibb.co/G2smr4v/Tempest-Jewelry.jpg',
     desc: `
-<p>Magitech chokers, bracelets, or anklets reward obedience through pleasure. Items are available in ruby, orange topaz, citrine, emerald, sapphire, amethyst, alexandrite, and clear and black diamond varieties. Bands may be leather, silk, or metal. This binding will be applied to purchased waifus before delivery. You receive one new choker each day, up to a limit in reserve of 5 plus the number of items currently worn by yourself or members of your retinue.</p>
-<p>Wearers’ libido is highly enhanced, as is submissiveness to both their masters and any more dominant members of the same retinue. Several options are available for punishing disobedience, including inducement of emotional numbness or preventing a wearer from experiencing release for a set time. You are your own master and not subject to any unwanted side-effects of your own equipment.</p>
-<p>When a choker's (bracelets, anklets) latch is first closed around a wearer, the latch disappears and manual removal becomes impossible as the choker automatically activates. Active chokers are indestructible and may not otherwise be warped away. If a wearer dematerializes, swaps bodies, or otherwise transforms away from a standard humanoid height and build, the choker will disappear with, into, or otherwise follow the wearer for the duration.</p>
-<p>Removal of a wearer's own choker becomes unthinkable after one full week (168 hours), via a gradual process of rationalization, physical comfort, the automatic reward and punishment system, and, in extreme circumstances, short-term memory loss. Captures are finalized at this point if no other effort is spent. The process can be accelerated to as few as three days (72 hours), however, if the wearer loses all will to resist. Removing a choker from a subject before that point will stop their capture process, voiding all progress. Any punishment system you program for jewelry wearers will start working from the moment the latch is first closed, not just when the capture is finalized. If you (the contractor) wear a choker, you may deactivate and remove your choker at any time.</p>
-<p>You may deactivate any of your retinue's jewelry through the associated software, installed as an app on your smart device. The latch will reappear and may then be undone (and the item removed) normally. Your retinue may use other app features added by expansion perks, but cannot perceive the deactivation option. (They may still use it if directly ordered.) This app will uninstall itself if you trade in the Jewelry for a more advanced Binding. This is company software and benefits from all such protections.</p>
+    <p>These magitech jewels reward obedience through pleasure. You receive one new piece of jewelry each day, up to a limit of 5 unused collars at a time. This limit increases by one for each member of your retinue, including yourself, currently wearing this jewelry. This binding will be applied to purchased companions before delivery.</p>
+    <p>When you purchase this binding, select one type of jewelry to give to your companions: choker, ring, (bracelet and anklet), (armlet and thighlet), mask, or (crown and tiara). The other options may be purchased with a later perk. Tempest bands may be leather, silk, or metal, depending on jewelry type. All Tempest items have a central mounted gem: ruby, orange topaz, citrine, emerald, sapphire, amethyst, alexandrite, and clear and black diamonds are all available.</p>
+    <p>Wearers’ libido is highly enhanced, as is submissiveness to both their masters and any more dominant members of the same retinue. Several options are available for punishing disobedience, including induced emotional numbness or release denial for a set time. You are your own master and not subject to any unwanted side- effects of your own equipment.</p>
+    <p>When a Tempest item’s latch (if it has one) is first closed around a wearer, the latch disappears and manual removal becomes impossible as the jewelry automatically activates. Active jewelry is indestructible and may not otherwise be warped away. If a wearer dematerializes, swaps bodies, or otherwise transforms away from a standard humanoid height and build, the jewelry will disappear with, into, or otherwise follow the wearer for the duration.</p>
+    <p>Removal of a wearer's own Tempest item becomes unthinkable after one full week (168 hours), via a gradual process of rationalization, physical comfort, the automatic reward and punishment system, and, in extreme circumstances, short-term memory loss. Captures are finalized at this point if no other effort is spent. The process can be accelerated to as few as three days (72 hours), however, if the wearer loses all will to resist. Removing a jewelry from a subject before that point will stop their capture process, voiding all progress. Any punishment system you program for jewelry wearers will start working from the moment the latch is first closed, not just when the capture is finalized. If you (the contractor) wear a Tempest item, you may deactivate and remove it at any time.</p>
+    <p>You may deactivate any of your retinue's jewelry through the associated software, installed as an app on your smart device. The latch will reappear and may then be undone (and the jewelry removed) normally. Your retinue may use other app features added by expansion perks, but cannot perceive the deactivation option. (They may still use it if directly ordered.) This app will uninstall itself if you trade in the Jewelry for a more advanced Binding. This is company software and benefits from all such protections.</p>
 `,
+  },
+  {
+    uid: 'koHdq',
+    title: 'Luxury Goods',
+    cost: 5,
+    category: 'Binding',
+    type: 'Jewelry',
+    image: '',
+    multiple: true,
+    whitelist: ['Tempest Jewelry'],
+    desc: 'Select an additional jewelry type for your Tempest items. This may be repurchased until every jewelry type is available to you.',
+  },
+  {
+    uid: 'ubLJy',
+    title: 'Additional Stock',
+    cost: 5,
+    category: 'Binding',
+    type: 'Jewelry',
+    image: 'https://i.ibb.co/kKwy6VP/Additional-Stock.jpg',
+    whitelist: ['Tempest Jewelry'],
+    multiple: true,
+    desc: 'You receive an additional Tempest item each day. Your reserve cap increases by 5. This may be repurchased for the same effect any number of times.',
   },
   {
     uid: 'lg88f',
@@ -108,8 +130,9 @@ export const bindings: PerkFull[] = [
     image: 'https://i.ibb.co/qdLDy87/Basic-Tempest-Runes.jpg',
     whitelist: ['Tempest Jewelry'],
     desc: `
-<p>Tempest Chokers (bracelets, anklets) now have a built-in translator function, giving their wearers the ability to speak any language you also speak, plus the standard and/or trade languages of any place they visit. This knowledge persists after they leave the area where the language is spoken. The chokers also gain a communications and monitoring system, allowing you to track their locations and vitals and speak with them (and them with each other) remotely from any distance, even between different multiverses. These comms are not telepathic and will not work without actual speech or third-party thought-to-comms devices.</p>
-<p>Additionally, the chokers may now apply temporary disguises to their wearers, shifting their apparent race (human, kitsune, vulcan, etc.) and phenotype to blend in better with the local populace. The chokers cannot emulate abilities that the wearer cannot perform normally. These disguises are not customizable and simply reflect what the wearer would look like if they were born as that race. You may only save one disguise at a time into each wearer’s profile.</p>`,
+    <p>Tempest items now have a variety of mundane uses. The bracelets are now smart, with many electronic functions beyond a basic clock (digital or analog, depending on taste) and calculator. Automatic translation gives a wearer the ability to speak any language that you also speak, plus the standard and/or trade languages of any place they visit. This knowledge persists after they leave the area where the language is spoken.</p>
+    <p>A communications and monitoring app allows you to track your subjects’ locations and vitals and speak with them (and them with each other) remotely from any distance, even between different multiverses. These comms are not telepathic and will not work without actual speech or third- party thought-to-comms devices, limiting their use with thighlets and anklets.</p>
+    <p>A disguise app can temporarily shift the wearer’s apparent race (human, kitsune, vulcan, etc.) and phenotype to blend in better with the local populace. This app cannot emulate abilities that the wearer cannot perform normally. These disguises are not customizable and simply reflect what the wearer would look like if they were born as that race. You may only save one disguise at a time into each wearer’s profile.</p>`,
   },
   {
     uid: '206E2',
@@ -119,12 +142,14 @@ export const bindings: PerkFull[] = [
     type: 'Jewelry',
     image: 'https://i.ibb.co/0c2NBNy/Advanced-Tempest-Runes-Body.jpg',
     whitelist: ['Basic Tempest Runes'],
-    freebies: { talentPerks: ['Body Talent'] },
+    freebies: { talentPerks: [{ title: 'Body Talent', cost: 0, count: 1 }] },
+    /* html */
     desc: `
-<p>Tempest Chokers (bracelets, anklets) may now apply direct physical transformations to their wearers. Take Body Talent for free. Every valid physical parameter for a member of the wearer's race (human, kitsune, vulcan, etc.) may be altered, from age, height, and gender to muscle density and sexual characteristics. This also applies to you, if you wear a choker, and wearers who have not yet been fully captured. A wearer's race may also be changed, but only if you already have a natural example of the target race in your retinue. (“Natural example” does not include examples created through Extra or Template Stacking.) This perk cannot emulate the effects of party-wide Heritage perks such as Dragon Thrall. The disguises created by this perk’s prerequisite may now be customized.</p>
-<p>The jewelry app now includes configuration pages for every wearer of an active choker. Parameters may be adjusted here, mostly using sliders from 0% (typically the minimum value for a healthy human) to 100%. (Transformation speed and duration are also parameters.) A choker’s central gem will visibly glow while a transformation progresses, more brightly if the transformation is faster or more intense. 100% for hair length stretches to the upper calves; for breasts are the size of the woman’s head; for the belly is equivalent to a full-term pregnancy, and for hips/ass makes each buttock the size of a volleyball.</p>
-<p>You may save an unlimited number of presets for each wearer and switch between them at any time. If a wearer has a defined alternate form (not a generalized shapeshifter), all of their forms will automatically be saved as presets. Any number of disguises made by this perk’s prerequisite may now be saved as presets. "Exactly how the wearer appeared when the choker (bracelet, anklet) was first worn" is always available as a default preset. Any changes made to this preset will instead output an otherwise-identical copy as a new preset. Deactivating a choker will restore the wearer to their original appearance unless you desire otherwise.</p>
-<p>Any sufficiently-disabling transformation that is applied to you will have an automatic time limit of 48 hours so you don’t get stuck. If you return to that same transformation within 10 minutes, the time limit will be doubled each time until your streak ends. You may set a shorter limit if you like.</p>`,
+    <p>Tempest items may now apply direct physical transformations to your retinue. Take Body Talent for free. Every valid physical parameter for a member of the wearer's race (human, kitsune, vulcan, etc.) may be altered, from age, height, and gender to muscle density and sexual characteristics. This also applies to you, if you wear a Tempest item, and wearers who are counted among your subjects. A wearer's race may also be changed, but only if you already have a natural example of the target race in your retinue. (“Natural example” does not include examples created through Extra or Template Stacking.) This perk cannot emulate the effects of party-wide Heritage perks such as Dragon Thrall. The disguises created by this perk’s prerequisite may now be customized.</p>
+    <p>The jewelry app now includes configuration pages for every wearer of active jewelry. Parameters may be adjusted here, mostly using sliders from 0% (typically the minimum value for a healthy human) to 100%. Transformation speed and duration are also parameters. A jewelry piece’s central gem will visibly glow while a transformation progresses, and more brightly if the transformation is faster or more intense.</p>
+    <p>For example, hair length uses a linear scale of 1% = 1 cm, while other assets scale exponentially: +100% = 20x the mass. For the average adult human female, a breast measurement of 0% is about 100 g for each breast, 50% is about 450 g, and 100% is about 2 kg; full charts for Tempest sizes are available elsewhere. Height instead uses a multiplier relative to 168cm, with an initial range for humans from 7/8x (147cm) to 1.25x (210 cm).</p>
+    <p>You may save an unlimited number of presets for each wearer and switch between them at any time. If a wearer has a defined alternate form (not a generalized shapeshifter), all of their forms will automatically be saved as presets. Any number of disguises made by this perk’s prerequisite may now be saved as presets. "Exactly how the wearer appeared when the jewelry was first worn, even if the wearer’s original sizes were beyond this perk’s normal limits," is always available as a default preset. Any changes made to this preset will instead output an otherwise- identical copy as a new preset. Deactivating a Tempest item will restore the wearer to their original appearance, unless you desire otherwise.</p>
+    <p>Any sufficiently-disabling transformation that is applied to you will have an automatic time limit of 48 hours so you don’t get stuck. If you reactivate that transformation within 10 minutes, the time limit will be doubled each time until your streak ends. You may set a shorter limit if you like.</p>`,
   },
   {
     uid: '238gu',
@@ -144,7 +169,7 @@ export const bindings: PerkFull[] = [
     type: 'Jewelry',
     image: 'https://i.ibb.co/F46qpPs/Advanced-Tempest-Runes-Hybrid.jpg',
     whitelist: ['Advanced Tempest Runes (Body)'],
-    desc: 'You can now alter the members of your retinue into hybrid races (human, kitsune, vulcan, etc.), limited by the natural examples of such races that you have in your retinue. There is no theoretical limit on how many races you can hybridize into one individual. However, the result having all of the strengths of both sides and none of their weaknesses is only guaranteed when there are only two donor races present. More complex combinations are increasingly unreliable. The effects of party-wide Heritage perks such as Dragon Thrall do not count against this limit.',
+    desc: 'You can now alter the Tempest-wearing members of your retinue into hybrid races (human, kitsune, vulcan, etc.), limited by the natural examples of such races that you have in your retinue. There is no theoretical limit on how many races you can hybridize into one individual. However, the result having all of the strengths of both sides and none of their weaknesses is only guaranteed when there are only two donor races present. More complex combinations are increasingly unreliable. The effects of party-wide Heritage perks such as Dragon Thrall do not count against this limit.',
   },
   {
     uid: 'B2ow8',
@@ -156,20 +181,10 @@ export const bindings: PerkFull[] = [
     whitelist: ['Tempest Jewelry'],
     desc: `
 <p>Disobedience is no longer allowed. Captured jewelry wearers will perform any intentional, direct order you give them, within the realm of physical or mental possibility. Orders do not need to be consciously possible. Will-saves, intelligence-saves, or reinterpretations are not allowed. Even if a wearer wants to resist, their body or mind will perform as ordered regardless. Unlike other controls, this enforces your exact words, not your intent: “Do X” and “Make and follow a plan to do X” can have vastly different results.</p>
-<p>If you have Advanced Tempest Runes (Body), the limits of its body modification are vastly raised. The more often and determinedly any wearer resists your orders, the higher the upper limit for all wearers’ parameters (and the lower limit for certain parameters such as height) will increase (or decrease for the lower limits). This limit’s increase has no hard cap, only a soft cap from your retinue’s ability to maintain resistance to your orders. This applies even if the wearer is not yet fully captured.</p>
-<p>If you have Advanced Tempest Runes (Mind), standing orders may be edited, deleted, or copy-pasted to new subjects quickly, cleanly, and across any distance. This also applies to the issuing of new orders.</p>`,
+<p>If you have Advanced Tempest Runes (Body), the limits of its body modification are vastly raised. The more often and determinedly any wearer resists your orders, the higher the upper limit for all wearers’ parameters will increase. This will also decrease the lower limits for certain parameters, such as height. This limit’s increase has no hard cap, only a soft cap from your retinue’s ability to maintain resistance to your orders. These effects apply even if the wearer is not yet fully captured, and this perk allows ATR(B)’s regular effects to apply to wearers who are not yet captured as well. Note: most measurements become physically unwieldy past 160% and very little testing was performed beyond 300%. Some form of weight reduction or strength boost, whether magical, technological, or otherwise, is highly recommended for such hyper sizes.</p>
+<p>If you have Advanced Tempest Runes (Mind), standing orders may be edited, deleted, or copy-pasted to new subjects quickly, cleanly, and across any distance. This also applies to the issuing of new orders. Wearers who are not yet fully captured are not affected by this synergy.</p>`,
   },
-  {
-    uid: 'ubLJy',
-    title: 'Additional Stock',
-    cost: 5,
-    category: 'Binding',
-    type: 'Jewelry',
-    image: 'https://i.ibb.co/kKwy6VP/Additional-Stock.jpg',
-    whitelist: ['Tempest Jewelry'],
-    multiple: true,
-    desc: 'You receive an additional Tempest item each day. Your reserve cap increases by 5. This may be repurchased for the same effect any number of times.',
-  },
+
   {
     uid: '2HqiU',
     title: 'Jewels of Discord',
@@ -179,8 +194,10 @@ export const bindings: PerkFull[] = [
     image: 'https://i.ibb.co/GJNrt3F/Jewels-Of-Discord-New.jpg',
     whitelist: ['Tempest Jewelry'],
     desc: `
-<p>Tempest items can now adjust their appearance to better match the rest of the wearer’s clothing. Anyone attempting to remove one, other than you and retinue members you order to do so, will fail to do so, then miss the fact that it’s still there afterwards. This applies to both used and unused chokers (bracelets, anklets).</p>
-<p>With unused chokers (bracelets, anklets) only, you may reverse this effect and make the item unusually interesting to potential targets. This applies to all potential targets who see it in person and may spark fights over the item. When a potential target touches the item, they will be overcome with an urge to wear it. This effect lasts 48 hours or until the item is worn, whichever comes first. It becomes stronger on increasingly higher-tiered targets than lower tiers, but has no noticeable effect on Tier Xs. This effect may only be applied to one item at a time. Potential targets affected by this attractor, who fail to wear the specific choker themselves, will remain affected after it finds a wearer and transfer their desire to future chokers (with this effect active) they see without any cognitive dissonance.</p>`,
+    <p>Tempest items can now adjust their styles to better match the rest of the wearer’s clothing, with no changes to their type. A ring will always be a ring. Anyone attempting to remove a Tempest item, other than you and subjects you order to do so, will fail, then miss the fact that it’s still there afterwards. This applies to both used and unused items.</p>
+    <pWith unused jewels only, you may reverse this effect and make the item unusually interesting to potential targets. This applies to all potential targets who see it in person and may spark fights over the item. When a potential target touches the item, they will be overcome with an urge to wear it. This effect lasts 48 hours or until the item is worn, whichever comes first. It becomes stronger on increasingly higher-tiered targets than lower tiers. but has no noticeable effect on Tier Χs. This effect may only be applied to one item at a time.</p>
+    <p>Potential targets affected by this attractor, who fail to wear the specific jewelry piece themselves, will remain affected after it finds a wearer and transfer their desire to future jewelry (with this effect active) they see without any cognitive dissonance.</p>
+    `,
   },
   {
     uid: 'zLn2I',
@@ -190,7 +207,8 @@ export const bindings: PerkFull[] = [
     type: 'Jewelry',
     image: 'https://i.ibb.co/kq0j8hk/Aggressive-Initiations-New.jpg',
     whitelist: ['Tempest Jewelry'],
-    desc: 'The minimum time required to confirm a target’s capture is removed. A subject’s capture may now be greatly accelerated through sexual submission to yourself or more dominant members of your retinue. The more and stronger orgasms the subject experiences at their dominator’s hand, the faster the capture will progress. Transformations from Advanced Runes (Body) and (Mind) also benefit from this perk, regardless of the subject’s capture state.',
+    desc: `The minimum time required to confirm a Tempest capture may now be reduced to zero, through the target’s sexual submission to yourself or more dominant members of your retinue. The more and stronger orgasms the subject experiences at their dominator’s hand, the faster the capture will progress. Otherwise, the capture will still take the normal amount of time.
+    <p>Transformations from Advanced Runes (Body) and (Mind) also benefit from this perk, regardless of the subject’s capture state.</p>`,
   },
   {
     uid: 'TW0hU',
@@ -324,14 +342,14 @@ export const bindings: PerkFull[] = [
     image: 'https://i.imgur.com/Hz8Ngbs.png',
     complex: 'target',
     freebies: {
-      talentPerks: ['Everlasting Talent', 'Body Talent', 'Martial Talent', 'Wild Talent'],
-      defensePerks: ['Body Defense', 'Wild Defense', 'Environmental Defense'],
+      talentPerks: [{ title: 'Everlasting Talent', cost: 0, count: 1 }, { title: 'Body Talent', cost: 0, count: 1 }, { title: 'Martial Talent', cost: 0, count: 1 }, { title: 'Wild Talent', cost: 0, count: 1 }],
+      defensePerks: [{ title: 'Body Defense', cost: 0, count: 1 }, { title: 'Wild Defense', cost: 0, count: 1 }, { title: 'Wild Defense', cost: 0, count: 1 }],
     },
     desc: `
 <p>Build your own swarm using this engineered species of alien symbiotes. You and all bound retinue members benefit from Everlasting. Body, Martial, and Wild Talents. (Take these four perks for free. If you have Talent Sharing (Martial) or Talent Sharing (Wild), take a full refund for them as applicable.) Take one copy each of Body, Wild, and Environmental Defenses for free as well.</p>
 <p>Alterzelu hosts can, at will, form an environmentally-sealed suit of bio-armor, with Gigeresque black chitin aesthetics, a retractable helmet, sharp claws, and a long tail for combat and maneuverability. This includes you. Existing enchanted gear or otherwise super outfits, such as Life Fibers, power armor, or magical girl uniforms, will be integrated into this bio-armor. This does not apply to gear that is held rather than worn. Hosts also gain superhuman senses, strength, agility, and durability; this is enough to push any blue-star waifu up to Tier 4 or any copper-star waifu up one tier, but is not a significant gain for higher tiers.</p>
 <p>One single waifu in your initial purchase will be the queen to your king. You and her both will already be merged with your symbiotes when you arrive in your first world. Symbiosis alters the target’s mind, making her see you as either her mate or king, whose orders are to be obeyed and whose survival is paramount to the species. If you are naturally female or Possessed or Substituted a female vessel, you may act as your own queen, with no need for a king - just consorts at most. A lone female in an otherwise all-male swarm will always be the queen, while an all-male swarm will have to externalize its egg production by some means. If your queen is part of a set that can only be purchased together, the actual queen is the most dominant one according to their natural personalities; if the members of the set are truly co-equal, then they’ll serve as co-equal queens.</p>
-<p>Alternative Symbiote Theming: Xenomorphs aren’t for everyone, and that’s okay. If your chosen queen is canonically associated with metaphysical corruption or purification, or are known for polymorphing others or spawning or controlling large numbers of mooks, all stages of the symbiote life cycle will follow their aesthetic and theming instead in all stages of the symbiote life cycle: egg, larva, or bonded host. Such queens include (but are not limited to) Salem, Madokami, most versions of Circe, and the subjects of certain waifu perks.</p>
+<p>Alternative Symbiote Theming: Xenomorphs aren’t for everyone, and that’s okay. If your chosen queen is canonically associated with metaphysical corruption or purification, or are canonically known for polymorphing others or spawning or controlling large numbers of mooks, all stages of the symbiote life cycle will follow their aesthetic and theming instead in all parts of the symbiote ecosystem. The functionality of each part will remain the same. Such queens include (but are not limited to) Salem, Madokami, most versions of Circe, and the subjects of certain waifu perks. This is a canonicity factor and is thus affected by Power Swap.</p>
 <p>All symbiote hosts besides yourself will see the queen as the first among them, regardless of previous relationships, and arrange themselves into a pyramidal hierarchy beneath her. Symbiote hosts’ personalities are otherwise unchanged.</p>
 `,
     additionalDesc: `
@@ -361,7 +379,7 @@ If you Possessed or Substituted a waifu or are otherwise female, you may act as 
     type: 'Symbiote',
     image: 'https://i.ibb.co/fvRfGb1/Second-Generation-Symbiote.jpg',
     freebies: {
-      talentPerks: ['Psychic Talent', 'Talent Sharing (Psychic)'],
+      talentPerks: [{ title: 'Psychic Talent', cost: 0, count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Psychic Talent' }], count: 1 }],
     },
     whitelist: ['Alterzelu Symbiote'],
     desc: 'This adds a number of upgrades to the symbiote’s functionality. You and all waifus benefit from Psychic Talent, as if you had purchased Basic Talent Sharing (Psychic). (Take Psychic Talent for free. If you already have Basic Talent Sharing (Psychic), take a full refund for it.) The lowest tier of targets that can fight off a symbiote larva will increase by 1 for each effective tier (after step 6) that the queen is above 7: Tier 6 targets can no longer fight off a Tier 8 queen’s larvae, while only Tier 10 and 11 targets can fight off larvae produced by a Tier X queen. On the target side, use their effective tier after step 6, but skip steps 4 and 5. Finally, symbiote larvae now emit a weak psychic field that reduces a target’s willingness to resist future attacks every time she fights one off. This reduction stacks indefinitely until she finally gives in.',
@@ -401,8 +419,9 @@ If you Possessed or Substituted a waifu or are otherwise female, you may act as 
 <p>Until she is bound, your accumulated will within her will slowly dissipate whenever she loses contact with your Shroud. It takes approximately a month for the process to completely reset for a waifu who’s just short of being fully captured. Shroud-bound do not count as your Shroud for the purposes of binding new targets. Direct contact with one will, however, delay the fading of any will you've already built up within her.</p>
 <p>If a target has an already-existing mental or spiritual connection to other bodies or people, the shroud can follow that connection to bind everyone on it at once. Examples of this include the Misaka Network, divine avatars or those who’ve taken mortal hosts, and multi-summon Servants like Gemini, Valkyrie, or Anne and Mary. Mere followers or even clerics of a god do not count.</p>
 <h4 class="font-semibold text-md">Shroud: Failure?</h4>
-<p>With only the basic Shroud, however, the bind can fail to take in subjects that are T5 or higher. This happens when the subject’s effective tier after step 6 is more than one higher than your own, skipping steps 4 and 5 for the target but not you. In this event, which will occur regardless of the subject’s consent and even if the subject was a purchase, the bind will appear to succeed, only to break after a short time. Consenting subjects whose bindings fail will still be captured and marked with a stamp tattoo so you can make a later attempt with the Shroud, while non-consenting subjects will break free completely, denying you their capture credits until a successful attempt is made.</p>
-<p>If a subject who is already shroud-bound becomes strong enough to rise past this limit while in your service, their binding will not break. This includes the upgrades from capturing a character “early” and the expiration of any step 6 tier-reducing debuffs.</p>
+<p>With only the basic Shroud, the bind can fail to take in subjects that have too much personal power, compared to your own, at the moment of attempted binding. This will ignore the subject’s consent and even purchase status.</p>
+<p>Consenting subjects whose bindings fail will still be captured and marked with a stamp tattoo, so you can make a later attempt with the Shroud. Non-consenting subjects will break free completely, denying you their capture credits until a successful attempt is made.</p>
+<p>Subjects who are already shroud-bound will remain so, even if they become strong enough that you would be unable to re-bind them. This includes the upgrades from capturing a character “early” and the expiration of any step 6 modifiers to effective tier.</p>
 `,
   },
   {
@@ -431,7 +450,7 @@ If you Possessed or Substituted a waifu or are otherwise female, you may act as 
     element: '',
     // complex: 'flavor',
     freebies: {
-      talentPerks: ['Body Talent', 'Soul Talent'],
+      talentPerks: [{ title: 'Body Talent', cost: 0, count: 1 }, { title: 'Soul Talent', cost: 0, count: 1 }],
     },
     desc: `
 <p>Congratulations! Your Shroud has been upgraded to the elemental manifestation type! Choose one element for your personal Shroud from the list in the Additional Rules section. (Your retinues’ cloaks are not affected.) No longer purely physical, the Shroud is an elemental manifestation of your will, granting you a noticeable buff to your affinity with that element, as well as allowing you to generate and control significant amounts of it. The cap on the effective tier of subjects you can successfully bind is raised by one.</p>
@@ -466,10 +485,10 @@ If you Possessed or Substituted a waifu or are otherwise female, you may act as 
     whitelist: ['Elemental Shroud'],
     max: 10,
     desc: `
-<p>Select a member of your retinue. They are now shroud-bound, bypassing the tier limit, with a cloak that has elemental properties much like your own. Unless you deign to allow them an element you personally possess, one will be extrapolated from their current affinities and hypothetical developmental trajectories. Your waifus may have unique elements not found on the standard list, whether hybridized from standard elements or entirely new. If you buy this perk for a waifu when you purchase her, she will be shroud-bound before delivery, bypassing the tier limit.</p>
+<p>Select a member of your retinue. They are now shroud-bound, bypassing any failure chance., with a cloak that has elemental properties much like your own. Unless you deign to allow them an element you personally possess, one will be extrapolated from their current affinities and hypothetical developmental trajectories. Your waifus may have unique elements not found on the standard list, whether hybridized from standard elements or entirely new. If you buy this perk for a waifu when you purchase her, she will be shroud-bound before delivery, bypassing any failure chance.</p>
 <p>In this way, your waifu will gain all the benefits like your own Elemental Shroud, that is, aesthetic harmonization for their constructs and cloak, an affinity for the element in other power systems, and the ability to generate and control said element. Unlike you, retinue members may only have a single element. This increases the Shroud tier boost for your retinue members to +3 for blue-stars, +2 for copper, and +1 for silver. Your retinue members who benefit from this perk do not receive the free Talents or Defenses that you get from Elemental Shroud or each particular element.</p>
 <p>Additionally, with the first purchase of this perk, you can project your own Shroud through shroud-bound members of your retinue. This bypasses the usual limitation against your retinue members binding others using your shroud, but requires a powerful multitasking ability or extreme amount of practice to do so effectively.</p>
-<p>Once you’ve purchased this perk ten times, all new shroud-bound waifus will automatically receive an Element without any further purchases. The cap on the effective tier of subjects you can successfully bind will be raised by one. Additionally, all new purchased waifus will be shroud-bound before delivery. This removes the shroud-binding tier limit for all purchases and consenting captures. If you buy ten copies of this perk in your starting build, this will apply to all waifus purchased at that time as well.</p>`,
+<p>Once you’ve purchased this perk ten times, all new shroud-bound waifus will automatically receive an Element without any further purchases. Your ability to bind targets stronger than yourself is now more forgiving. Additionally, all new purchased waifus will be shroud-bound before delivery. This removes the failure chance for all purchases and consenting captures. If you buy ten copies of this perk in your starting build, this will apply to all waifus purchased at that time as well.</p>`,
   },
   {
     uid: 'CmH9Z',
@@ -480,13 +499,14 @@ If you Possessed or Substituted a waifu or are otherwise female, you may act as 
     image: 'https://i.ibb.co/6rF3FGC/Grand-Tapestry.jpg',
     whitelist: ['Complementary Colors', 'Conjunction'],
     freebies: {
-      talentPerks: ['Psychic Talent'],
+      talentPerks: [{ title: 'Psychic Talent', cost: 0, count: 1 }],
     },
     desc: `
-<p>You and your companions with elemental shrouds are now able to access each other’s elements through the sympathetic bond your Shroud represents. On a basic level, drawing on another’s Element allows you to generate and manipulate things within their purview as if the element was your own, complete with aesthetic palette swaps and altered material profiles as appropriate.</p>
-<p>Affinities granted by someone else’s element, however, are capped by the intimacy - or at least, the intensity - of one’s relationship with them, which can complicate attempts to squeeze waifus for power. Conversely, maximizing social links through careful harem management (or blunt mind control) will allow even diametrically opposed and incompatible themes to be reconciled and harmonized with each other as one through the strength of shared affinities. These bonds also support your ability to bind more powerful subjects, raising the cap on the effective tier of subjects you can successfully bind by one.</p>
-<p>Take Psychic Talent for free. Shroud-bound retinue members will benefit from the effects of it and all other Basic Talents you have that do not otherwise apply to your retinue, whether you have Talent Sharing or not. (Take a full refund on all previous purchases of Talent Sharing. Those purchases will continue to apply to non-shroud retinue members.)</p>
-<p>Skill at manipulating constructs and phenomena is tracked separately and individually for each theme. Juggling and utilizing multiple themes at once is also a skill to be mastered.</p>`,
+<p>You and your companions with elemental shrouds can access each other’s elements through the sympathetic bond your Shroud represents. On a basic level, drawing on another’s Element allows you to generate and manipulate things within their purview as if the element was your own, complete with aesthetic palette swaps and altered material profiles as appropriate.</p>
+<p>Affinities granted by someone else’s element, however, are capped by the intimacy (or at least, the intensity) of one’s relationship with them, which can complicate attempts to squeeze waifus for power. Conversely, maximizing social links through careful harem management (or blunt mind control) will allow even diametrically opposed and incompatible themes to be reconciled and harmonized with each other as one through the strength of shared affinities. These bonds also support your ability to bind more powerful subjects. If you also have ten purchases of this perk’s prerequisite, this will remove the failure chance entirely.</p>
+<p>Take Psychic Talent and a copy of Talent Sharing for all eligible Basic Talents you own, for free. Previously- purchased copies of Talent Sharing will continue to apply to non-shroud retinue members.</p>
+<p>Skill at manipulating constructs and phenomena is tracked separately and individually for each theme. Juggling and utilizing multiple themes at once is another skill that you can master.</p>
+<p>Finally, this perk enhances your ability to project your own Shroud through shroud-bound subjects, to the point of being able to, temporarily, completely override their elements with your own, whether your original element or additional purchases from Prismatic Shroud. This only applies to subjects who benefit from Complementary Colors.</p>`,
   },
   {
     uid: 'BmgvX',
@@ -511,9 +531,11 @@ If you Possessed or Substituted a waifu or are otherwise female, you may act as 
     image: 'https://i.ibb.co/v1z9SCS/Deep-Weave.jpg',
     whitelist: ['Elemental Loom'],
     desc: `
-<p>Your Shroud is no longer merely an extension of your will, but part of your being. You are able to transform portions of yourself into your element(s) and heal or recharge yourself by absorbing manifestations of said element that you didn't create. If you had not already been capable of flight with your Shroud, you are now capable of such.</p>
-<p>Once again, controlling an elemental manifestation that has a will of its own involves usurping said will with your own like any other sapient target. This process is based on the Possess Origin. Individuals absorbed in such a manner, such as a gynoid via the Cyber Shroud, or a normal human via the Primal Shroud, may be bound like anyone else, recreated and released from your service, or their form stolen. This process is instant if performed on a shroud-bound retinue member. New skills, traits, and abilities gained via this method are added to your true form as if you had Possessed the character. You also gain the target’s episodic memory, as if you had Substituted into them.</p>
-<p>Manifestations whose forms were stolen count as captured, but you do not get a credit reward for doing so. You may still sell a stolen form to the company afterward like any other target for 20% of the list price for the target’s effective tier after step 4, rounded up to the nearest whole number. This will remove the form from your library.</p>`,
+    <p>Your Shroud is no longer merely an extension of your will, but part of your being. You are able to transform portions of yourself into your element(s) and heal or recharge yourself by absorbing manifestations of said element that you didn't create. If you had not already been capable of flight with your Shroud, you are now capable of such.</p>
+    <p>Once again, controlling an elemental manifestation that has a will of its own involves usurping said will with your own like any other sapient target. This process is based on the Possess Origin. Individuals absorbed in such a manner, such as a gynoid via the Cyber Shroud, or a normal human via the Primal Shroud, may be bound like anyone else, recreated and released from your service, or their form stolen. This process is instant if performed on a shroud- bound retinue member and has the same possibility of failure as standard Shroud capturing.</p>
+    <p>The target’s skills, and any traits and abilities that match a Shroud Element that you’ve purchased for yourself or an Advanced Template Stacking that you purchased for yourself, will be copied to your true form. You also gain the target’s episodic memory, as if you had Substituted into them. All other traits and abilities, including any purchases of Template Stacking that you made for the target, will remain tied to the target’s form.</p>
+    <p>When copying an ability that is generic in its source but expressed uniquely, such as a Sacred Gear, Noble Phantasm, Quirk, or X-gene mutation, the ability that your true form gains will be unique to you as well and comparable in power or utility to the strongest version that a target of this perk possessed. If that changes, your version will grow to match the new strongest version. This perk may generate no more than one Sacred Gear, Semblance, Quirk, X-gene mutation, or other such power each, and no more than three Noble Phantasms. This perk may only generate or upgrade one Noble Phantasm at a time.</p>
+    <p>Manifestations whose forms were merely stolen but not bound are also not captured and you do not get a credit reward for doing so. You may still sell a stolen form to the company afterward, like any other target, for 20% of the list price for the target’s effective tier after step 4, rounded up to the nearest whole number. This will remove the form from your library.</p>`,
   },
   {
     uid: 'Hvfre',
@@ -756,7 +778,8 @@ If you Possessed or Substituted a waifu or are otherwise female, you may act as 
   },
 ]
 
-export const lureDesc = 'Lure-type controls are more subtle than bindings, but cannot directly capture targets. All lures work equally well on male, female, and other targets, and instead only obey the user’s orientation. You may purchase any number of lures. Like all company-supplied powers, lures cannot be nullified, copied, or stolen.'
+export const lureDesc = `Lure-type controls are more subtle than bindings, but cannot directly capture targets. All lures work equally well on male, female, and other targets, and instead only obey the user’s orientation. You may purchase any number of lures. Like all company-supplied powers, lures cannot be nullified, copied, or stolen.
+<p>Warning: Use of lures on targets who are hollow inside or do not understand love is known to have additional side-effects, most notably yandere feelings instead of the intended results. This risk is not inherent to the lures, but from inducing love in such targets regardless of method.</p>`
 
 export const lures: PerkFull[] = [
 
@@ -911,7 +934,7 @@ export const lureExpansions: PerkFull[] = [
     cost: 80,
     whitelist: ['Alluring Whisper'],
     freebies: {
-      talentPerks: ['Performance Talent'],
+      talentPerks: [{ title: 'Performance Talent', cost: 0, count: 1 }],
     },
     desc: 'Your voice is supernaturally compelling. As an active effect, you can empower your words to give specific commands to individuals, or rally a crowd with a song. Additionally, take Performance Talent for free. Beings with sufficient willpower can resist or even block this lure. It will never affect someone who lacks a sense of hearing.',
   }]
@@ -948,8 +971,8 @@ export const otherControls: PerkFull[] = [
   },
   {
     uid: 'RqAFD',
-    old: 'Old Version(0.21.09)',
-    oldLink: 'https://docs.google.com/document/d/1c4QaqLKxENFdzcBVe1-nvWJpZMK-UL0yQH_HCNd3Tes/edit?usp=sharing',
+    dlc: 'Old Version(0.21.09)',
+    dlclink: 'https://docs.google.com/document/d/1c4QaqLKxENFdzcBVe1-nvWJpZMK-UL0yQH_HCNd3Tes/edit?usp=sharing',
     legacy: true,
     title: 'Hotel California',
     image: 'https://i.ibb.co/s6GFYTF/Hotel-California.jpg',
@@ -1056,7 +1079,7 @@ export const otherControls: PerkFull[] = [
     cost: 10,
     whitelist: ['Space Truckin’', 'Paper Trail (x10)'],
     desc: `You may extend the benefits of Paper Trail to your victims, granting them any needed basic documentation and a place in their new world. You may pay additional credits to have them integrated more thoroughly into their destination world, making them a part of it in the process and adjusting the local ‘history’ as per the Extra origin. This fee will change according to that origin’s normal rules.
-  <p>If you have Transformation Circle I, Advanced Tempest Runes (Body), or Advanced Tempest Runes (Hybrid), you will be granted a grace period, prior to your victim’s arrival, to further customize their new body within the limits of those perks. Exotic changes beyond the possible, or normally feasible, within the destination world require Meta Shift I and can cause unpredictable changes in the victim’s new background.</p>
+  <p>If you have Demiplane Laws, Art of Transformation, Advanced Tempest Runes (Body), or Advanced Tempest Runes (Hybrid), you will be granted a grace period, prior to your victim’s arrival, to further customize their new body within the limits of those perks. Exotic changes beyond the possible, or normally feasible, within the destination world require Meta Shift I and can cause unpredictable changes in the victim’s new background.</p>
   `,
   },
   {
@@ -1213,17 +1236,17 @@ export const shroudElements = [
     'Streamlined costume features': 'A formal suit, dress, or robes in a consistent white and gold color scheme.',
     'Heavy costume features': 'Full coverage hard light armor with shoulder-attached cape. Masculine and feminine styles only differ in curvature.',
     'Freebies': 'Communication Talent, Performance Talent, Blessed Talent',
-    'freebies': { talentPerks: ['Communication Talent', 'Performance Talent', 'Blessed Talent'] },
+    'freebies': { talentPerks: [{ title: 'Communication Talent', cost: 0, count: 1 }, { title: 'Performance Talent', cost: 0, count: 1 }, 'Blessed Talent'] },
   },
   {
     'uid': 'DmpEp',
     'title': 'Fearful (Shadow)',
-    'Elemental Ability': 'Shadow and gravity generation and control. Constructs made from it tend to be hazy and semi-transparent. Intense effects tend to involve black voids and inky clouds of shadow, while subtle usage can be dimming of ambient light, or subtle shifts in gravity.',
+    'Elemental Ability': 'Shadow and silence generation and control. Constructs made from it tend to be hazy and semi-transparent. Intense effects tend to involve black voids and inky clouds of shadow, while subtle usage can be dimming of ambient light, or subtle shifts in acoustics.',
     'Body Effects': 'Black sclera and lips, dark facial tattoos, sharpened black finger- and toenails.',
     'Streamlined costume features': 'All gothic black leather and fishnet. Often has black leather gloves and boots.',
     'Heavy costume features': 'Dark overlord style full armor with menacing spikes, shoulder-attached cape, and a full face-concealing helmet. Feminine design only differs in curvature.',
     'Freebies': 'Covert Talent, Performance Talent, Blessed Talent',
-    'freebies': { talentPerks: ['Covert Talent', 'Performance Talent', 'Blessed Talent'] },
+    'freebies': { talentPerks: ['Covert Talent', { title: 'Performance Talent', cost: 0, count: 1 }, 'Blessed Talent'] },
   },
   {
     'uid': 'gm6KJ',
@@ -1234,8 +1257,8 @@ export const shroudElements = [
     'Heavy costume features': 'Full body armor, seemingly melted into place with a burning inner glow.',
     'Freebies': 'Martial Talent, Wild Talent, Wild Defense (2x), Environmental Defense',
     'freebies': {
-      talentPerks: ['Martial Talent', 'Wild Talent'],
-      defensePerks: ['Wild Defense', 'Wild Defense', 'Environmental Defense'],
+      talentPerks: [{ title: 'Martial Talent', cost: 0, count: 1 }, { title: 'Wild Talent', cost: 0, count: 1 }],
+      defensePerks: [{ title: 'Wild Defense', cost: 0, count: 2 }],
     },
   },
   {
@@ -1247,8 +1270,8 @@ export const shroudElements = [
     'Heavy costume features': 'Fur, heavy materials, layers of silks.',
     'Freebies': 'Martial Talent, Wild Talent, Wild Defense (2x), Environmental Defense',
     'freebies': {
-      talentPerks: ['Martial Talent', 'Wild Talent'],
-      defensePerks: ['Wild Defense', 'Wild Defense', 'Environmental Defense'],
+      talentPerks: [{ title: 'Martial Talent', cost: 0, count: 1 }, { title: 'Wild Talent', cost: 0, count: 1 }],
+      defensePerks: [{ title: 'Wild Defense', cost: 0, count: 2 }],
     },
   },
   {
@@ -1260,8 +1283,8 @@ export const shroudElements = [
     'Heavy costume features': 'Metal plating, gemstones.',
     'Freebies': 'Martial Talent, Wild Talent, Wild Defense (2x), Environmental Defense',
     'freebies': {
-      talentPerks: ['Martial Talent', 'Wild Talent'],
-      defensePerks: ['Wild Defense', 'Wild Defense', 'Environmental Defense'],
+      talentPerks: [{ title: 'Martial Talent', cost: 0, count: 1 }, { title: 'Wild Talent', cost: 0, count: 1 }],
+      defensePerks: [{ title: 'Wild Defense', cost: 0, count: 2 }],
     },
   },
   {
@@ -1273,8 +1296,8 @@ export const shroudElements = [
     'Heavy costume features': 'A diving suit with attached helmet, a full wetsuit, coral plating',
     'Freebies': 'Martial Talent, Wild Talent, Wild Defense (2x), Environmental Defense',
     'freebies': {
-      talentPerks: ['Martial Talent', 'Wild Talent'],
-      defensePerks: ['Wild Defense', 'Wild Defense', 'Environmental Defense'],
+      talentPerks: [{ title: 'Martial Talent', cost: 0, count: 1 }, { title: 'Wild Talent', cost: 0, count: 1 }],
+      defensePerks: [{ title: 'Wild Defense', cost: 0, count: 2 }],
     },
   },
   {
@@ -1282,12 +1305,12 @@ export const shroudElements = [
     'title': 'Storm (Sky)',
     'Elemental Ability': 'Wind, lightning, and cloud generation and control. Constructs tend to be compressed wind or semi-solid clouds. Intense manifestations tend to be clouds, lightning, or howling winds, while subtle manifestations of the Storm Shroud are some of the most versatile out there, able to alter the weather, and manipulate the very air currents.',
     'Body Effects': 'Smell of fresh breeze or ozone. Eyes crackle with lightning at times. A dramatic wind always occurs when needed. Head wings.',
-    'Streamlined costume features': 'Both designs have a leather coat and winged boots. Feminine design has bikini; boots are thigh-highs. Masculine design has tight pants and no shirt. Fishnet and scarf optional.',
+    'Streamlined costume features': 'Both designs have a leather coat and winged boots. Feminine design has bikini; boots are thigh-high boots. Masculine design has tight pants and no shirt. Fishnet and scarf optional.',
     'Heavy costume features': 'Scarves, tassels, flowing robes',
     'Freebies': 'Martial Talent, Wild Talent, Wild Defense (2x), Environmental Defense',
     'freebies': {
-      talentPerks: ['Martial Talent', 'Wild Talent'],
-      defensePerks: ['Wild Defense', 'Wild Defense', 'Environmental Defense'],
+      talentPerks: [{ title: 'Martial Talent', cost: 0, count: 1 }, { title: 'Wild Talent', cost: 0, count: 1 }],
+      defensePerks: [{ title: 'Wild Defense', cost: 0, count: 2 }],
     },
   },
   {
@@ -1299,8 +1322,8 @@ export const shroudElements = [
     'Heavy costume features': 'Interweaved exoskeletons, heavy leather with fur trim',
     'Freebies': 'Everlasting Talent, Wild Talent, Body Defense, Wild Defense (2x), Creature Defense (2x)',
     'freebies': {
-      talentPerks: ['Everlasting Talent', 'Wild Talent'],
-      defensePerks: ['Body Defense', 'Wild Defense', 'Wild Defense', 'Creature Defense', 'Creature Defense'],
+      talentPerks: [{ title: 'Everlasting Talent', cost: 0, count: 1 }, { title: 'Wild Talent', cost: 0, count: 1 }],
+      defensePerks: [{ title: 'Body Defense', cost: 0, count: 1 }, { title: 'Wild Defense', cost: 0, count: 2 }, { title: 'Creature Defense', cost: 0, count: 2 }],
     },
   },
   {
@@ -1312,8 +1335,8 @@ export const shroudElements = [
     'Heavy costume features': 'Flowers, bark, and petals as well as thick vines.',
     'Freebies': 'Everlasting Talent, Wild Talent, Body Defense, Wild Defense (2x), Creature Defense (2x)',
     'freebies': {
-      talentPerks: ['Everlasting Talent', 'Wild Talent'],
-      defensePerks: ['Body Defense', 'Wild Defense', 'Wild Defense', 'Creature Defense', 'Creature Defense'],
+      talentPerks: [{ title: 'Everlasting Talent', cost: 0, count: 1 }, { title: 'Wild Talent', cost: 0, count: 1 }],
+      defensePerks: [{ title: 'Body Defense', cost: 0, count: 1 }, { title: 'Wild Defense', cost: 0, count: 2 }, { title: 'Creature Defense', cost: 0, count: 2 }],
     },
   },
   {
@@ -1325,8 +1348,8 @@ export const shroudElements = [
     'Heavy costume features': 'Bone plating, tattered shrouds, robes, and veils, original outfits but tattered and ragged',
     'Freebies': 'Everlasting Talent. Body Defense (2x), Stress Defense, Soul Defense',
     'freebies': {
-      talentPerks: ['Everlasting Talent'],
-      defensePerks: ['Body Defense', 'Body Defense', 'Stress Defense', 'Soul Defense'],
+      talentPerks: [{ title: 'Everlasting Talent', cost: 0, count: 1 }],
+      defensePerks: [{ title: 'Body Defense', cost: 0, count: 2 }, { title: 'Stress Defense', cost: 0, count: 1 }, { title: 'Soul Defense', cost: 0, count: 1 }],
     },
   },
   {
@@ -1338,7 +1361,7 @@ export const shroudElements = [
     'Heavy costume features': 'Heavy costume features: Both designs have a neck-down bodysuit beneath shoulder pads, wrist-to-elbow gauntlets, torso and hip armor, and knee-high boots. Feminine design’s boots perfectly hide tall wedge heels. Masculine design armors thighs as well. Heads-up display projected onto bulky head-mounted display, completely hiding eyes. Headpiece completely attached to headset, with aesthetic antenna spikes pointed up and behind ears (at least two spikes on each side). Neon patterns resembling circuitry are standard across all body pieces.',
     'Freebies': 'Science Talent, Engineering Talent',
     'freebies': {
-      talentPerks: ['Science Talent', 'Engineering Talent'],
+      talentPerks: [{ title: 'Science Talent', cost: 0, count: 1 }, { title: 'Engineering Talent', cost: 0, count: 1 }],
     },
   },
   {
@@ -1349,7 +1372,7 @@ export const shroudElements = [
     'Streamlined costume features': 'Semi-sheer material that glitters and sparkles, feminine designs tend to involve deep cleavage, while masculine tend to involve black latex.',
     'Heavy costume features': 'Dark, spacesuit-like outfit, the material glittering with pinpricks of light like stars.',
     'Freebies': 'Paradox Defense',
-    'freebies': { defensePerks: ['Paradox Defense'] },
+    'freebies': { defensePerks: [{ title: 'Paradox Defense', cost: 0, count: 1 }] },
   },
   {
     'uid': 'e8C98',
@@ -1360,7 +1383,7 @@ export const shroudElements = [
     'Heavy costume features': 'Heavy costume depend on the military/warrior attire of the most common beings of your chosen element.',
     'Freebies': 'Everlasting Talent, Wild Defense, Environmental Defense',
     'freebies': {
-      talentPerks: ['Everlasting Talent'],
-      defensePerks: ['Wild Defense', 'Environmental Defense'],
+      talentPerks: [{ title: 'Everlasting Talent', cost: 0, count: 1 }],
+      defensePerks: [{ title: 'Wild Defense', cost: 0, count: 1 }, { title: 'Wild Defense', cost: 0, count: 1 }],
     },
   }]

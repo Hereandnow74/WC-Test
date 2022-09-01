@@ -678,6 +678,129 @@ DLCotherControls.push({
   whitelist: ['Hypnos'],
 })
 
+DLCotherControls.push({
+  uid: 'gqjwm',
+  dlc: 'by Skelethin',
+  dlclink: 'https://docs.google.com/document/d/1HGcpJGpGbLCeA3VO8LFrQjxQqkYANdeoWbCKlCOnK0A/edit',
+  title: 'Grail System',
+  category: 'Other Controls',
+  image: '',
+  cost: 50,
+  desc: `You become the center of a Holy Grail system. This creates an additional binding between you and your entire retinue similar to that between Master and Servant in a Holy Grail War. This system allows for optional adjustments to the general binding granting the ability to lower compulsions up to half of their original strength. 
+  <p>Those bound to your Grail can materialize and dematerialize one set of armor and weapons at will. This equipment must be provided, and does not come with this feature. The weapons and armor may be summoned as individual pieces, or as a set. Any worn outfit will immediately be dismissed when armor is summoned, and will return in its previous state when the armor is dismissed. A “Set” of armor and/or weapons can be created by being equipped whilst going through a short ritual with a duration of at least 60 seconds. Any changes to a set must be made via the same process. Consumables that are part of a “Set” are not renewed and are consumed as usual.</p>
+  <p>In addition, those affected by this binding become empowered, gaining increased vitality and inner mystical energy regeneration (Magical, Psychic, or Soul). Procedures like Mana Transfer Rituals can boost this even further, allowing one to literally fuck a waifu into perfect health. As a side effect of this increase in power, all those bound also gain superhuman senses, strength, agility, and durability; this is enough to push any blue-star subject up to Tier 4 or any copper-star up one tier, but is not a significant gain for higher tiers. This boost explicitly does not stack, only use the largest boost at Step 5.</p>
+  <p>As an additional binding effect, this allows a Command Seal to be used to cut the remaining binding time in half of any target of your current Tier or lower that you are in physical contact with. Multiple seals used for this effect are always treated as being used sequentially. This does not affect any target of a higher Tier than yourself, and TX targets are immune.</p>
+  `,
+  whitelist: ['Command Seals: General Seals'],
+})
+
+DLCotherControls.push({
+  uid: 'ko94c',
+  dlc: 'by Skelethin',
+  dlclink: 'https://docs.google.com/document/d/1HGcpJGpGbLCeA3VO8LFrQjxQqkYANdeoWbCKlCOnK0A/edit',
+  title: 'Class Cards',
+  category: 'Other Controls',
+  image: '',
+  multiple: true,
+  max: 16,
+  cost: 10,
+  desc: `This gives access to the Servant Class Card system. Each class provides a set of skills that are innate to that class, as well as minor boosts to related abilities. These boosts are relative to base status, but not enough to be noticeable on a Tier level. Each Class must be purchased separately. An additional purchase for each Class must be made for it to also work on Familiars or lower. Each Class may be applied an unlimited number of times, and only the most recent Class Card effect applies. 
+  <p>Class Cards Available:</p>
+  <ul>
+    <li class="list-inside list-disc">
+    <b>Saber</b>: This class boosts the agility and power of melee warriors armed with swords, or sword-like objects. It grants the special ability of Magic Resistance, providing immunity  to low tier (4 tiers or lower than current tier) mystical abilities (those generally covered by Soul, Psychic, or Science Talents). It also grants the Riding Skill, though notably weaker than the Rider class as it only works on mundane-level mounts.
+    </li>
+    <li class="list-inside list-disc">
+    <b>Lancer</b>: This class boosts agility and skill with long-range melee weapons, such as spears, lances, etc. It grants the special ability Deflect Projectiles, increasing your chances to deflect or dodge ranged attacks.
+    </li>
+    <li class="list-inside list-disc">
+    <b>Archer</b>: This class boosts proficiency with projectiles and has the special ability Eagle Eye which grants the ability to boost all of the user's senses while also granting a zoom-like enhancement to sight.
+    </li>
+    <li class="list-inside list-disc">
+    <b>Rider</b>: This class places an emphasis upon speed and powerful mounts, enhanced further by the special skill of Riding, which allows one to fully utilize the abilities of their mount (anything from horses to mechanical vehicles to divine or supernatural creatures)  even without training.
+    </li>
+    <li class="list-inside list-disc">
+    <b>Caster</b>: This class boosts proficiency in all mystical abilities (those generally covered by Soul, Psychic, or Science Talents) and has the special ability Territory Creation, which allows one to alter and adjust space around oneself to enhance one's own mystical abilities.
+    </li>
+    <li class="list-inside list-disc">
+    <b>Assassin</b>: This class boosts proficiency in assassination, stealth, and most things covered by the Covert Talent. It grants the special ability of Presence Concealment, which  significantly enhances one’s ability to remain undetected.
+    </li>
+    <li class="list-inside list-disc">
+    <b>Berserker</b>: This class grants one the use of the special ability Mad Enhancement, which trades consciousness (i.e. sanity), for a larger general power boost.
+    </li>
+    <li class="list-inside list-disc">
+    <b>Shielder</b>: This class primarily boosts defensive techniques and shields. It grants the special ability Defense Field which grants a defensive aura that allows one to alter and adjust space around oneself to enhance protection for oneself and nearby allies.
+    </li>
+  </ul>
+  `,
+  whitelist: ['Grail System'],
+})
+DLCotherControls.push({
+  uid: 'gqjwm',
+  dlc: 'by Skelethin',
+  dlclink: 'https://docs.google.com/document/d/1HGcpJGpGbLCeA3VO8LFrQjxQqkYANdeoWbCKlCOnK0A/edit',
+  title: 'Demi-Servant',
+  category: 'Other Controls',
+  image: '',
+  cost: 120,
+  desc: `All those synced to the Grail System get further boosted to be fully on the level of at least a Low Class Servant. You and your retinue gain the Body, Martial, Science, and Soul Talents. (Take these four perks, plus Talent Sharing (Martial), Talent Sharing (Science) and Talent Sharing (Soul), for free.) You also gain Body, and Wild Defenses for free as well. 
+  <p>Each member may permanently gain the effect of a Class Card they have access to. Unlike Class Cards however, this is a fixed choice, and must be in theme with that companion’s personality, skill, and current affinities. Those who would otherwise qualify for multiple classes may decide to switch classes via a ritual that requires being without a class for more than 24 hours, after which a new class may be selected.</p>
+  <p>Reaching the level of a Demi-Servant further enhances the senses, strength, agility, and durability of a companion, boosting their tier by  +3 for Blue-stars, +2 for Copper-star, and +1 for Silver-stars. This replaces Grail System’s boost, and explicitly does not stack with boosts from other binding methods. Only use the largest Step 5 boost. In addition, the Tier for which you may use a Command Seal to instantly complete the binding of a waifu increases by 1. TX targets remain immune to this effect.</p>
+  <p>Class Cards may still be used on companions with a chosen Demi-Servant class, and will add the Class Card enhancements and special skill to those granted by becoming a Demi-Servant. This explicitly allows a companion to either have a dual class effect, or double the strength of the current  one.</p>
+  `,
+  whitelist: ['Class Cards'],
+})
+DLCotherControls.push({
+  uid: 'gqjwm',
+  dlc: 'by Skelethin',
+  dlclink: 'https://docs.google.com/document/d/1HGcpJGpGbLCeA3VO8LFrQjxQqkYANdeoWbCKlCOnK0A/edit',
+  title: 'True Name',
+  category: 'Other Controls',
+  image: '',
+  cost: 25,
+  multiple: true,
+  max: 10,
+  desc: `Select a member of your retinue that can equip a Class Card. They now have access to a Noble Phantasm, the crystallization of a key part of their history, personality, skill, and abilities that would be part of their Legend as if they were a character from myth. This Noble Phantasm is unique to themselves, where even companions that are copies of the same target will produce different results. Its activation provides a conceptual effect in theme with the personality, skill, current affinities, and hypothetical development trajectories (Legend and projected Legend) of the member in question. The exact conditions to set up, initiate, or otherwise invoke the Noble Phantasm are unique to each companion. They are most commonly invoked through either a short aria or by invoking its True Name. 
+  <p>This perk can also upgrade an item or effect that is intrinsically part of that member's Legend to Noble Phantasm status, including all the boosts associated with it (Immunity to mundane breakage, conceptual protections in theme of the item, etc). The form that the Noble Phantasm takes is frequently physical weaponry (e.g. swords, spears, bows) or support items (e.g. shields, rings, crowns). They can also be abstractions such as unique, often magical and/or supernatural abilities, unique or perhaps conceptual means of attack, curses, and even changes to the surrounding environments' physical or supernatural properties. This becomes their Primary Noble Phantasm, and they its owner.</p>
+  <p>The power of a Noble Phantasm generally starts at roughly for the owner’s current Tier. As it is part of a still Living Legend, the power can be raised higher. Unlike most abilities, training does nothing to a Noble Phantasm’s power, only one's skill in wielding it . Its power is instead related to the story of its wielder, and deeds they accomplish using the Noble Phantasm.</p>
+  <p>The expressed power of an invoked Noble Phantasm is such that an “average” release is directly comparable to a fully powered, fully charged similar effect as used by an average person of equivalent Tier, without the need for any charge or preparation. Secondary effects tied to a person’s story may manifest as secondary Phantasms, whose power is always at least a full tier weaker than their owner. A high level Noble Phantasm is equivalent to someone at the peak of the current tier, whilst the absolute most powerful can manifest power 1 tier higher than the owner’s current Tier. This explicitly does not allow a T10 to wield TX level power.</p>
+  <p>Invoking a Noble Phantasm drains the user of energy relative to the Tier and power of the effect invoked. Treat standard tier effects as roughly half the total energy capacity of a normal member of that Tier. Each increase in effective tier requires roughly 75% more energy/power than the previous, and each decrease in Tier cuts the energy cost by half. This cost can knock out or even kill the user if they do not have enough energy/mana/vitality when it is Invoked.</p>
+  <p>This Perk may be purchased multiple times, with a limit of 1 per person. Once you have purchased this perk 10 times, all additional Demi-Servants that qualify automatically gain this perk without further purchase.</p>
+  `,
+  whitelist: ['Demi-Servant'],
+})
+DLCotherControls.push({
+  uid: 'gqjwm',
+  dlc: 'by Skelethin',
+  dlclink: 'https://docs.google.com/document/d/1HGcpJGpGbLCeA3VO8LFrQjxQqkYANdeoWbCKlCOnK0A/edit',
+  title: 'Ruler',
+  category: 'Other Controls',
+  image: '',
+  cost: 40,
+  desc: `You can now designate a waifu as a Ruler-class Demi-Servant. This is not available to anyone under a lesser level of binding than Companion. This means that other retinue members such as familiars are unable to receive this perk. 
+  <p>Ruler class grants a significant boost to all of a companions abilities, making them stronger than any other class of servant, as well providing them with the ability to use Command Seals on other Servants and Demi-Servants. This boost on its own is not enough to boost a tier of a companion. Unlike a normal class, Ruler-class explicitly allows this to combine with boosts from other sources to upgrade a Tier, provided a Companion is already at the peak of their current Tier. This explicitly does not provide enough for a T10 to upgrade to TX.</p>
+  <p>A Ruler-class may carry six additional sets of Seals on their body. These extra Seals are granted free as part of this perk, do not count towards the general command seal limit, regenerate independently from any others, and may have active charges transferred to you, or other retinue members that have Command Seals.</p>
+  <p>You may only purchase this upgrade once per 14 non-Ruler Demi-Servant Companion-tier retinue members you have. Canon Ruler class servants count as regular servants for this limit.</p>
+  <p>This perk also grants access to the Conjunction Perk. For Conjuction’s effects, treat Rulers as a secondary hub of the mental network. Rulers also have higher authority access to the network, allowing them limited access to the minds and senses of waifus in the network. With only this perk for access, reading a waifu’s mind or senses is not very intuitive, with ease and quality of access highly dependent on how close of a bond you have with that specific waifu.</p>
+  `,
+  whitelist: ['Demi-Servant'],
+})
+DLCotherControls.push({
+  uid: 'gqjwm',
+  dlc: 'by Skelethin',
+  dlclink: 'https://docs.google.com/document/d/1HGcpJGpGbLCeA3VO8LFrQjxQqkYANdeoWbCKlCOnK0A/edit',
+  title: 'Saint Graph Library',
+  category: 'Other Controls',
+  image: '',
+  cost: 50,
+  desc: `This perk provides an easy way to switch between Classes as a Demi-Servant. A Demi-Servant may save their current class configuration as a Saint Graph, a metaphysical template that stores abilities and memories of that Demi-Servant. Switching classes using  Saint Graphs requires directly accessing a Saint Graph Library in which the Demi-Servant has already saved a copy of the Saint Graph they wish to switch to. If the companion does not have any saved Saint Graphs of the class they wish to switch to, they must first switch to that class normally to be able to save that class configuration as a Saint Graph for future use. 
+  <p>The Saint Graph Library itself exists to hold these imprints separate from any Throne of Heroes. Its primary form exists as a large server-sized device placed in a secure pocket space, or other location if you do not have one. Secondary form is that of a high tech briefcase. Saved Graphs may also be accessed via an app on the Company provided phone.</p>
+  <p>If you already possess Warranty Plan, this provides an additional way to restore anyone under a Warranty plan by resummoning them via a saved Graph. This method treats the delay for a revival by summoning as the cooldown from Warranty Plan or 24 hours, whichever is lower.  This requires direct access to the Saint Graph Library the information is stored in, and a summoning circle.</p>
+  <p>If a waifu is mission-killed in such a way that Warranty Plan could be activated to force a respawn, you can instead instantly resummon said companion through a Saint Graph.</p>
+  `,
+  whitelist: ['Demi-Servant'],
+})
+
 // Lure Expansions
 export const DLClureExpansions: DLCPerk[] = []
 

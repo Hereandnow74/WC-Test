@@ -1,4 +1,4 @@
-export const desc = 'Pick one and only one of these five options at the start of your build. This choice is permanent. With Extra and Substitute, any companions that you purchase as part of your initial build will have valid documentation, as necessary, and a local backstory. Later purchases will not benefit from this, nor will you have such benefits in later worlds - unless you or your companions make it yourselves. Like all company-supplied powers, abilities gained through Substitute, Possess, or Extra cannot be nullified, copied, or stolen.'
+export const desc = 'Pick one and only one of these five options at the start of your build. This choice is permanent. With Extra and Substitute, any companions that you purchase as part of your initial build will have valid documentation, as necessary, and a local backstory. Later purchases will not benefit from this, nor will you have such benefits in later worlds - unless you or your companions make it yourselves. Like all company-supplied powers, abilities gained through Substitute, Possess, or Extra cannot be nullified, copied, or stolen. The two perks Power Swap and Memoria are also available, as optional modifiers to your Origin.'
 
 export interface Origin {
   uid: string
@@ -32,7 +32,7 @@ origin.push({
   cost: 0,
   image: '/img/origin/walkin2.jpg',
   character: true,
-  desc: 'You are not… you, not precisely. You are instead a canon character from some established work. This acts as a blend of Drop-In and Substitute: canon characters do not need to pay extra to be themselves, but their only knowledge of any world they might visit comes from any works they may have experienced personally and whatever spoilers they’ve encountered while browsing Company systems.',
+  desc: 'Instead of yourself, “you” are a canon character from some established work, starting in either their homeworld (at its original DR) or somewhere else. Canon characters don’t see this as a distinct option from Drop-In, nor do they need to pay extra to be themselves. However,  their only knowledge of any world they might visit comes from any works they may have experienced personally and whatever spoilers they’ve encountered while browsing Company systems.',
   blacklist: [],
 })
 
@@ -42,10 +42,10 @@ origin.push({
   cost: 1,
   image: '/img/origin/extra2.jpg',
   variants: [{ title: 'T1-T3', cost: 1 }, { title: 'T4-T6', cost: 10 }, { title: 'T7-T9', cost: 100 }],
-  desc: `You reincarnate into a non-canon “normie” character from your starting world, the equivalent of a tier 1 companion, an alternate you who grew up in your starting world. (If you’re naturally a T2 or T3 instead, your IRL skill set will not be removed or otherwise reduced.) Your original memories are downloaded into the new you’s head at some point before the start of your story, but not before puberty. You can distinguish between the two sets of memories without difficulty.
-    <p>
-      If your starting world is one where even the “normie” characters have in-born special abilities equivalent to a copper-star companion, the local you will have some low-superhuman ability that fits the setting and this origin costs 10 credits. If the “normie” characters are instead equivalent to silver-star companions, you will be equivalent to them and this origin will cost 100 credits.
-    </p>`,
+  desc: `You reincarnate into a non-canon “normie” character from your starting world, the equivalent of a tier 1 companion, an alternate you who grew up in your starting world. (If you’re naturally a T2 or T3 instead, your IRL skill set will not be removed or otherwise reduced.) Your original memories are downloaded into the new you’s head at some point before the start of your story, but not before the new you is the equivalent of 13 human years old. You can distinguish between the two sets of memories without difficulty.
+  <p>
+    If your starting world is one where even the “normie” characters have in-born special abilities equivalent to a copper-star companion, the local you will have some low-superhuman ability that fits the setting and this origin costs 10 credits. If the “normie” characters are instead equivalent to silver-star companions, you will be equivalent to them and this origin will cost 100 credits.
+  </p>`,
   blacklist: [],
 })
 
@@ -57,10 +57,9 @@ origin.push({
   image: '/img/origin/substitute2.jpg',
   character: true,
   max: 20,
-  desc: `You reincarnate into a canon character from your starting world, whether that's a waifu or husbando. You will be them, for all Intents and purposes, with your original memories adding to theirs at some point before the start of your story, but not before puberty. You can distinguish between the two sets of memories without difficulty. Rule 63 variants of substitution targets require Universal Calibration, unless the target Is androgynous or customizable. If the target is part of a set that are purchased together, choose one to insert into and take the others as free retinue members. If the target has any number of humanoid familiars, take them as free retinue members as well.
-<p>
-  You will keep all of your substitution target's skills, powers, and special traits, as they were at the point of substitution. A framework will guide you through learning whatever canon abilities are missing, just like what early captures get. Any crippling, categorical weakness that your target has will be eliminated when you/they first awaken, just as if you'd bound your target as a waifu or husbando.</p>
-  <p>You must purchase your substitution target at their full price, adjusted according to their ability at the time you enter. This will often be lower than their listed price. You may not spend more than 20% of your intensity-adjusted starting budget on this perk.</p>
+  desc: `You reincarnate into a canon character from your starting world, whether that’s a waifu or husbando, at a time when they’re alive. You will be them, for all intents and purposes, with your original memories adding to theirs at some point before the start of your story, but not before the equivalent of 13 human years old. You can distinguish between the two sets of memories without difficulty. Rule 63 variants of substitution targets require Universal Calibration, unless the target is androgynous or customizable. If the target is part of a set that are purchased together, choose one to insert into and take the others as free retinue members. If the target has any number of humanoid familiars, take them as free retinue members as well.
+  <p>You will keep all of your substitution target’s skills, powers, and special traits, as they were at the point of substitution. The Skill Framework and Crippling, Categorical Weakness adjustments, as described in Basic Rules, still apply to your substitution choice.</p>
+  <p>You must purchase your substitution target as if they were a companion. Their price will be adjusted to their ability at the time you enter and will often be lower than their listed price. Abilities that require no material effort to awaken or develop should be treated as though they are already awakened/developed for this purpose. You may not spend more than 20% of your intensity-adjusted starting budget on this perk.</p>
 `,
 })
 

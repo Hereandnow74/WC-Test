@@ -1,30 +1,12 @@
-export interface Heritage {
-  uid: string
-  title: string
-  category: string
-  type?: string
-  tree: 'Dragon' | 'Transhuman' | 'Outsider' | 'None'
-  cost: number
-  whitelist?: string[]
-  desc: string
-  freebies?: object
-  table?: string[][]
-  additionalDesc?: string
-  costVariants?: number[]
-  multiple?: boolean
-  max?: number
-  typeFreebies?: any
-  types?: Record<'Biomorph' | 'Cybermorph' | 'Aethermorph', string>
-  image?: string
-  complex?: string
-}
+
+import { Heritage } from 'global'
 
 export const heritages: Heritage[] = []
 
 export const desc = `
-<p>The root choices in this section are mutually exclusive. You don’t have to pick one, but you may not pick more than one without the Ancestral Diversity perk. If you purchase a Heritage Root after chargen, you must first activate it in-character before it will take effect. If you Substitute into or Possess a character of the same archetype as a Heritage, you may subtract the list price for their effective tier after step 1a from the Heritage’s price, carrying the remainder forward to later perks in the Heritage’s tree until you run out. Tier X characters count as 2000 credits for this purpose. This discount is also subject to the 80% cap. Like all company-supplied powers, the powers granted by these perks cannot be nullified, copied, or stolen.</p>
-<p>Heritages modify a contractor’s tier rating at step 2. Add up the list prices of every perk you have, separately, for each Heritage you have, then take the highest and compare it to the chart on the right. The largest Σ value that’s still less than your sum determines your tier. If you use a TX ticket on any Heritage’s capstone perk, you’ll become a TX yourself.</p>
-<p>Heritages marked as under construction already exist in-universe but are not yet ready for inclusion in this file. Fanwank your NPCs responsibly until then.</p>`
+<p>The root choices in this section are mutually exclusive. You don’t have to pick one, but you may not pick more than one without the Ancestral Diversity perk. If you purchase a Heritage Root after chargen, you must first activate it in-character before it will take effect. If your Origin has a matching archetype to a Heritage, you may subtract the list price for their effective tier after step 1a from the Heritage’s price, carrying the remainder forward to later perks in the Heritage’s tree until you run out. Tier Χ characters count as 2000 credits for this purpose. This discount is also subject to the 80% cap. Like all company-supplied powers, the powers granted by these perks cannot be nullified, copied, or stolen.</p>
+<p>Heritages modify a contractor’s tier rating at step 2. Not all Heritage perks have a noticeable effect on a contractor’s tier, or would lift their tier to below what it already is. See the specific perks for details. If you use a Χ Ticket on any Heritage’s capstone perk, you will become a TΧ yourself.</p>
+`
 
 heritages.push({
   uid: 'JrxZe',
@@ -49,15 +31,17 @@ heritages.push({
   anything: 'Element',
   cost: 80,
   freebies: {
-    talentPerks: ['Everlasting Talent', 'Body Talent', 'Martial Talent', 'Wild Talent'],
-    defensePerks: ['Body Defense', 'Body Defense', 'Wild Defense', 'Wild Defense'],
+    talentPerks: [{ title: 'Everlasting Talent', cost: 0, count: 1 }, { title: 'Body Talent', cost: 0, count: 1 }, { title: 'Martial Talent', cost: 0, count: 1 }, { title: 'Wild Talent', cost: 0, count: 1 }],
+    defensePerks: [{ title: 'Body Defense', cost: 0, count: 1 }, { title: 'Body Defense', cost: 0, count: 1 }, { title: 'Wild Defense', cost: 0, count: 1 }, { title: 'Wild Defense', cost: 0, count: 1 }],
   },
   desc: `
-<p>You have a dragon’s blood. Take Everlasting Talent, Body Talent, Martial Talent, Wild Talent, and two copies each of Body Defense and Wild Defense for free. You can transform into a bipedal dragonoid. This form is roughly 3 m tall, with a bestial head, clawed hands and feet, and separate wings, and maximizes your improved strength and protection at that size without sacrificing any finesse or maneuverability. Its color scheme and aesthetic reflects your elemental affinity, which you must also choose.</p>
+<p>You have a dragon’s blood. You can transform into a bipedal dragonoid. This form is roughly 3 m tall, with a bestial head, clawed hands and feet, and separate wings, and maximizes your improved strength and protection at that size without sacrificing any finesse or maneuverability. Its color scheme and aesthetic reflects your elemental affinity, which you must also choose.</p>
+<p>Take Everlasting Talent, Body Talent, Martial Talent, Wild Talent, and two copies each of Body Defense and Wild Defense for free. This perk immediately raises a contractor’s effective tier at step 2 to 6.</p>
 <p>Available "elements" include the classical western set (Earth, Fire, Wind/Air, Water, Aether), the classical eastern set (Metal, Wood, Void), chemical elements (Carbon, Mercury, Plutonium…), and those found in modern fantasy (Light, Darkness, Ice, Lightning, Poison…). This element will affect your dragon armor’s design and loadout, including the breath weapon that all dragons have. If you have a Shroud that matches your dragon element, the two bonuses will stack. This affinity is fixed without additional purchases.</p> `,
 })
 
 heritages.push({
+  uid: 'gkdOF',
   title: 'Dragon Scale',
   image: 'https://i.ibb.co/1RNSC0w/Dragon-Scale.jpg',
   tree: 'Dragon',
@@ -67,13 +51,14 @@ heritages.push({
   complex: 'flavor',
   anything: 'Element',
   freebies: {
-    talentPerks: ['Soul Talent'],
-    defensePerks: ['Environmental Defense', 'Environmental Defense'],
+    talentPerks: [{ title: 'Soul Talent', cost: 0, count: 1 }],
+    defensePerks: [{ title: 'Environmental Defense', cost: 0, count: 2 }],
   },
   whitelist: ['Dragon Heart'],
   desc: `
-<p>Dragonhood is fully a part of you. Take Soul Talent and two copies of Environmental Defense for free. You now have a second alt- form, a full - sized quadruped that measures 10 m tall at the shoulder(around 25 m from the nose to the base of the tail). It offers even more physical power than the first form, with a massive buff to your chosen affinity and all the other supernatural abilities you've acquired and trained.  If you flare your power, you’ll trigger a fear reflex in those nearby who can sense it.  This will happen automatically whenever you defeat an opponent yourself, or manually for a short time.  Some individuals may have… different… reactions to your unleashed aura.</p>
-<p>The sizes of your two dragon forms are not set in stone: the more ki, psi, or magic power you have, the larger you can make them. This has no upper limit, but still requires significant time investments, longer than any mortal lifespan. Your mecha form can become large enough to wrestle Tengen Toppa Gurren Lagann on an equal footing, and your dragon form can eventually swallow galaxies whole, but it’ll take you billions of years to get there. Before you think of using time magic to accelerate that process, first consider that more people would’ve done it if it was that easy. </p>
+<p>Dragonhood is fully a part of you. You now have a second alt-form, a full-sized quadruped that measures 10 m tall at the shoulder (around 25 m from the nose to the base of the tail). It offers even more physical power than the first form, with a massive buff to your chosen affinity and all the other supernatural abilities you've acquired and trained. Take Soul Talent and two copies of Environmental Defense for free. This perk immediately raises a contractor’s effective tier at step 2 to 7.</p>
+<p>If you flare your power, you’ll trigger a fear reflex in those nearby who can sense it. This will happen automatically whenever you defeat an opponent yourself, or manually for a short time. Some individuals may have… different… reactions to your unleashed aura.</p>
+<p>The sizes of your two dragon forms are not set in stone: the more ki, psi, or magic power you have, the larger you can make them. This has no upper limit, but still requires significant time investments, longer than any mortal lifespan. Your dragonoid form can become large enough to wrestle Tengen Toppa Gurren Lagann on an equal footing, and your dragon form can eventually swallow galaxies whole, but it’ll take you billions of years to get there. Before you think of using time magic to accelerate that process, first consider that more people would’ve done it if it was that easy.</p>
 <p>When you buy this perk, you get one chance to change your dragon element; use it or lose it. In addition to the mundane choices offered by Dragon Heart, conceptual elements are now available. Literally anything can be a conceptual element, provided you maintain a consistent theme, whether that’s Love, Time, Imagination, a season, Surprise, Heavy Metal, or even Infinity. The more esoteric and exploitable your chosen element, the more time you’ll need to develop and master its full potential. This time starts at tens of years for the basics and can stretch into the millions of years for the truly exotic ideas.</p> `,
 })
 
@@ -86,11 +71,11 @@ heritages.push({
   type: 'Lure',
   cost: 200,
   freebies: {
-    defensePerks: ['Stress Defense', 'Stress Defense', 'Destiny Defense', 'Destiny Defense', 'Mind Defense'],
+    defensePerks: [{ title: 'Stress Defense', cost: 0, count: 2 }, { title: 'Destiny Defense', cost: 0, count: 1 }, { title: 'Destiny Defense', cost: 0, count: 1 }, { title: 'Mind Defense', cost: 0, count: 1 }],
   },
   whitelist: ['Dragon Scale'],
   desc: `
-<p>You are a dragon. Dragons are power. Ladies love power. Thus, ladies - rather, anyone compatible with your orientation - love you. Your supernatural aura now tells ki- and magically-sensitive waifus that there's only one person they should bang to have the strongest offspring: you. Take two copies each of Stress Defense and Destiny Defense, and one copy of Mind Defense, for free. Targets of Tiers 1-3 are immune to your aura. For Tier 4 and above, your aura’s effects on uncaptured targets scale with sustained proximity (closer is better), your physical exertion (more is better), ventilation (less is better), and, most importantly, the waifu’s power as measured by her effective tier rating after step 4. Purchased and captured waifus are used to your aura and can ignore its passive effects without effort.</p>
+<p>You are a dragon. Dragons are power. Ladies love power. Thus, ladies - rather, anyone compatible with your orientation - love you. Your supernatural aura now tells ki- and magically-sensitive waifus that there's only one person they should be with to have the strongest offspring: you. Take two copies each of Stress Defense and Destiny Defense, and one copy of Mind Defense, for free. Targets of Tiers 1-3 are immune to your aura. For Tier 4 and above, your aura’s effects on uncaptured targets scale with sustained proximity (closer is better), your physical exertion (more is better), ventilation (less is better), and, most importantly, the waifu’s power as measured by her effective tier rating after step 4. Purchased and captured subjects are used to your aura and can ignore its passive effects without effort.</p>
 <p>Further conditional modifiers are available for your waifus’ effective tier rating for the purpose of this lure’s compulsion. This “Aura Tier” (for clarity) does not affect the targets’ actual abilities and does not obey the standard tier cap. Characters with serpentine and feline traits get one point added to their Aura Tier; full serpents in humanoid form, actual cat kemonomimi and hybrids, and characters with draconic traits get two points; full dragons (that are sapient) instead get three. Waifus who share a theme with your draconic element get one.  Flaring your aura adds +1 to the Aura Tier of all waifus in the local universe for the duration, overriding the basic fear response. Exposure to any of your other lures will add one Aura Tier each to the affected targets for the following week (168 hours); additional exposure to the same lure, including expansions for that lure, will only reset this timer.</p>
 <p>When a target is exposed to your aura for long enough, they will be overcome by lust for you and seek your location like a horny missile. Kidnapping attempts by powerful waifus that this lure turned into temporary yanderes are not unknown, but you should be able to handle it and turn the tables. You are a dragon, after all.</p>
 <p>The behind - the - scenes mechanics of this perk are described in detail in the Additional Rules section.</p> `,
@@ -105,7 +90,7 @@ heritages.push({
   type: 'Party',
   cost: 150,
   freebies: {
-    defensePerks: ['Polymorph Defense', 'Wyldscape Defense'],
+    defensePerks: [{ title: 'Polymorph Defense', cost: 0, count: 1 }, { title: 'Wyldscape Defense', cost: 0, count: 1 }],
   },
   whitelist: ['Dragon Scale'],
   desc: `
@@ -124,7 +109,7 @@ heritages.push({
   type: 'Party',
   cost: 150,
   freebies: {
-    defensePerks: ['Polymorph Defense', 'Wyldscape Defense'],
+    defensePerks: [{ title: 'Polymorph Defense', cost: 0, count: 1 }, { title: 'Wyldscape Defense', cost: 0, count: 1 }],
   },
   whitelist: ['Dragon Thrall'],
   desc: `
@@ -154,7 +139,7 @@ heritages.push({
   cost: 30,
   whitelist: ['Dragon Scale'],
   desc: `
-<p>Your full-size dragon form now contains a pocket dimension for passengers and cargo, akin to the interior of an airliner, airship, submarine, or spaceship. This dimension is typically accessed via at least one airlock hidden in the abdominals or lower or upper orifices. The dimension still exists while you’re in your mecha or human-size forms, but the airlocks do not, trapping anything inside until you change back. Apportation and other methods of dimensional travel are not affected. The size of this cabin grows with your full-size body, but does not perfectly match your torso’s exterior dimensions.</p>
+<p>Your dragon form now contains a pocket dimension for passengers and cargo, akin to the interior of an airliner, airship, submarine, or spaceship. This dimension is typically accessed via at least one airlock hidden in the abdominals or lower or upper orifices. The dimension still exists while you’re in other forms, but the airlocks do not, trapping anything inside until you change back. Apportation and other methods of dimensional travel are not affected. The size of this cabin grows with your dragon form, but does not perfectly match the torso’s exterior dimensions.</p>
 <p>Your interior’s aesthetics may follow any theme you can imagine. You may learn to freely manipulate its layout and furnishings or manifest an avatar inside it; these are easier if you already have experience with similar abilities. Holding any uncaptured subject within this space counts as extremely close contact for the purposes of Dragon Aura. Anyone inside your cabin, including people who are not part of your retinue, will be protected from the outside by your Defenses as if they had them personally.</p> `,
 })
 
@@ -180,7 +165,7 @@ heritages.push({
   cost: 50,
   costVariants: [50, 40, 20],
   whitelist: ['Dragon Cabin'],
-  desc: 'You no longer need your app to transition between worlds; your nature is enough. You and everything within your cabin dimension will blink out of one world and into your destination. Anyone whose weight is only supported by your exterior may be dragged along as well. This form of D-travel can accurately target any world in a local multiverse and any world previously visited. Traveling to a specific new world, outside of a local multiverse, is far less reliable, but you’ll always end up in a place where you needed to be, even if it isn’t where you wanted to go. It cannot target near-identical parallels of the same worlds without Blank Slate. This perk is discounted by 10 credits if you’ve encountered a world-traveler who is neither one of your waifus nor a company contractor. If one of your waifus can travel between worlds, the discount increases to 30 credits. This discount is not available on DR11 starts.',
+  desc: 'You no longer need your app to transition between worlds; your nature is enough. You and everything within your cabin dimension will blink out of one world and into your destination. Anyone whose weight is only supported by your exterior may be dragged along as well. This form of D-travel can accurately target any world in a local multiverse and any world previously visited. Traveling to a specific new world, outside of a local multiverse, is far less reliable, but you’ll always end up in a place where you needed to be, even if it isn’t where you wanted to go. It cannot target near-identical parallels of the same worlds without Blank Slate. This perk is discounted by 10 credits if you’ve encountered a world-traveler who is neither one of your subjects nor a company contractor. If one of your subjects can travel between worlds, the discount increases to 30 credits. This discount is not available on DRΧ starts.',
 })
 
 heritages.push({
@@ -194,7 +179,7 @@ heritages.push({
   complex: 'flavor',
   anything: 'Element',
   freebies: {
-    defensePerks: ['Fatality Defense', 'Fatality Defense', 'Corruption Defense'],
+    defensePerks: [{ title: 'Fatality Defense', cost: 0, count: 1 }, { title: 'Fatality Defense', cost: 0, count: 1 }, { title: 'Corruption Defense', cost: 0, count: 1 }],
   },
   whitelist: ['Dragon Scale'],
   desc: 'You may select a second dragon element. If you switched to a conceptual element with Dragon Scale, you may choose your old element or something new. Your training with one element will not usually carry over to the other, unless your level of understanding allows you to harmonize them as one. This perk also adds +1 effective tier to all waifus in your local universe for the purpose of Dragon Aura. Additionally, take two copies of Fatality Defense and one copy of Corruption Defense for free.',
@@ -223,111 +208,125 @@ heritages.push({
   type: 'Root',
   cost: 80,
   freebies: {
-    talentPerks: ['Body Talent'],
-    defensePerks: ['Stress Defense', 'Stress Defense'],
+    talentPerks: [{ title: 'Body Talent', cost: 0, count: 1 }],
+    defensePerks: [{ title: 'Stress Defense', cost: 0, count: 2 }],
   },
   typeFreebies: {
     Biomorph: {
-      talentPerks: ['Wild Talent', 'Psychic Talent'],
+      talentPerks: [{ title: 'Wild Talent', cost: 0, count: 1 }, { title: 'Psychic Talent', cost: 0, count: 1 }],
       miscPerks: ['Sexual Calibration', 'Fertility Calibration I'],
-      defensePerks: ['Body Defense'],
+      defensePerks: [{ title: 'Body Defense', cost: 0, count: 1 }],
     },
     Cybermorph: {
-      talentPerks: ['Science Talent', 'Martial Talent'],
+      talentPerks: [{ title: 'Science Talent', cost: 0, count: 1 }, { title: 'Martial Talent', cost: 0, count: 1 }],
     },
     Aethermorph: {
-      talentPerks: ['Soul Talent', 'Aesthetic Talent'],
+      talentPerks: [{ title: 'Soul Talent', cost: 0, count: 1 }, { title: 'Aesthetic Talent', cost: 0, count: 1 }],
     },
   },
   types: {
-    Biomorph: '<p><b>Biomorph</b>: You seek perfection via biological and genetic means. You gain additional organs and cell types, which give you a magnetic sense, expanded visual range, the ability to generate neurotoxins of a potency of your choosing, and the ability to regrow lost limbs. Your base genetics and body are capable of having any biological system safely integrated into it via surgery or injection. Take Wild Talent, Psychic Talent, Sexual Calibration, Fertility Calibration I, and one copy of Body Defense for free. You may also reduce the time of pregnancies to one third their normal time.</p>',
-    Cybermorph: '<p><b>Cybermorph</b>: You seek perfection via technological means.Portions of your body have been enhanced by and replaced with cybernetics. You have an integrated GPS, compass, headphones/ speakers, an advanced calculator, and the ability to access computer systems directly. Due to the strong modular framework, you are able to integrate and store technology in your body, provided you are able to power it. Take Science Talent and Martial Talent for free.</p>',
-    Aethermorph: '<p><b>Aethermorph</b>: You seek perfection via magical means. Your body has been permanently alchemically and magically enhanced, which allows you to perceive, interact with, and astrally project into and travel through higher realms of existence. At its most basic, this allows you to perceive, analyze and interact with magic, enchantments, dreams, and the supernatural in all of its forms, though wards and similar effects may hamper your vision or access. Your adaptable metaphysical structure allows you to integrate any metaphysical, magical, or supernatural elements safely via ritual, potion, or similar methods, integrating them with your astral body. These effects take up conceptual space, and more powerful effects take up more of your metaphysical real estate. A spell to polish things might take up little more than a ring’s worth of space, while a spell that could shatter a city might take up the entirety of your astral form. Additionally, you get Soul Talent and Aesthetic Talent for free.</p>',
+    Biomorph: '<p><b>Biomorph</b>: You seek perfection via biological and genetic means. You gain additional organs and cell types, which give you a magnetic sense, expanded visual range, the ability to regrow lost limbs, and  you may reduce the time of pregnancies to one third their normal time. Common forms of integrated weaponry include retractable claws, toxins, and stingers. Your base genetics and body are capable of having any biological system safely integrated into it via surgery or injection. Take Wild Talent, Psychic Talent, Sexual Calibration, Fertility Calibration I, and one copy of Body Defense for free.</p>',
+    Cybermorph: '<p><b>Cybermorph</b>: You seek perfection via technological means. Portions of your body have been enhanced by and replaced with cybernetics. You have an integrated GPS, compass, headphones/speakers, an advanced calculator, the ability to access computer systems directly, and are able to repair yourself or create spare parts. Common forms of integrated weaponry include lasers, ballistic guns, monowire blades, deployable missiles, or omnitool attachments. Due to the strong modular framework, you are able to integrate and store technology in your body via surgery or mechanical modifications. Take Science Talent and Martial Talent for free.</p>',
+    Aethermorph: '<p><b>Aethermorph</b>: You seek perfection via magical means. Your body has been permanently alchemically and magically enhanced, which grants you a metaphysical Element. You have an intuitive sense for your Element as well as a measure of Authority over it. This could be sensing ambient heat and generating flames for Fire, understanding the quality of the edge and how to sharpen a knife as well as creating supernaturally good swords from pure will for a Sword Element, or knowing whenever people are in love or when things are forbidden, or inspire a measure of shame or affection in people for an Element of Forbidden Love. This may be as specific or broad as desired, though the more specific an Element is, the more focused your Authority. Your soul, qi, and life force are adaptable, acting as a strong foundation to have additional mystical powers, artifacts, modifications, or techniques cultivated from and integrated into them via training, special consumables, or ritual casting. Take Soul Talent and Aesthetic Talent for free.</p>',
   },
   desc: `
-<p>You have begun to exceed the limitations of the human form. Select one Transhuman type. For all types, your Smart Device is now part of you and accessible with a thought via a customizable HUD. You are still able to summon a device for waifus to interact with should you wish. Your strength, speed, durability, reaction times and senses have all been improved beyond human limits. Additionally, your body is able to store energy beyond its normal limits, as well as discharge it as electricity if you could not already do so. Your body is modified to handle a wide range of further modifications of a type based on the specific form of Transhumanism you select. Take Body Talent and two copies of Stress Defense for free, as well as other perks based on your Transhuman type. Choose your method of escaping human limitations:</p>
+<p>You have begun to exceed the limitations of the human form. Select one Transhuman type. For all types, your Smart Device is now part of you and accessible with a thought via a customizable HUD. You are still able to summon a device for waifus to interact with should you wish. Your strength, speed, durability, reaction times and senses have all been improved just beyond human limits, and weaponry based on your Transhuman Type has been integrated into your body. This weaponry has a similar energy content to a ballistic rifle. Additionally, your body is able to store energy beyond its normal limits, as well as discharge it as electricity if you could not already do so. Your body is modified to handle a wide range of further modifications of a type based on the specific form of Transhumanism you select. If you were not already, you are now Tier 5. Take Body Talent and one copy of Stress Defense for free, as well as other perks based on your Transhuman type. Choose your method of escaping human limitations:</p>
 `,
 })
 
 heritages.push({
   uid: 'u7aSv',
-  title: 'Networking',
+  title: 'Networked Glamour Manipulation',
   category: 'Heritage',
   tree: 'Transhuman',
   image: 'https://i.ibb.co/ZNtgK4q/Networking.jpg',
   type: 'Lure, Other Control',
   cost: 30,
   freebies: {
-    talentPerks: ['Communication Talent'],
+    talentPerks: [{ title: 'Communication Talent', cost: 0, count: 1 }],
   },
   whitelist: ['First Augmentation'],
   types: {
-    Biomorph: '<p><b>Biomorph</b>: Anyone you impregnate has the core of a Stamp mark appear over their womb, which finishes developing over the course of the pregnancy. Additionally, should you possess Potpourri, you may now directly affect emotions with your pheromones. Your fluids are also saturated with them. You are able to encourage the specific emotional responses or feelings of those nearby, provided they breathe the same air as you. Your fluids have a similar effect and can work via contact.</p>',
-    Cybermorph: '<p><b>Cybermorph</b>: Any digital intelligence, or non- digital intelligence that is directly hooked up to the digital space such as via VR, that accepts a gift from you, no matter how small, has the core of a Stamp mark appear on their forehead, which finishes over the course of one full week(168 hours). Additionally, should you possess Alluring Whisper, you may now use it at a normal speaking volume, including subharmonic frequencies that influence the emotional state of those that hear them. Not all speakers are capable of transmitting these frequencies, and beings with super hearing can tell they exist.</p>',
-    Aethermorph: '<p><b>Aethermorph</b>: Anyone that swears themselves to your service has the core of the tattoo appear over their heart(or equivalent) upon confirmation of the oath. Additionally, should you possess Love Spot, you are now capable of flaring your power and inflicting its effects on anyone capable of supernaturally perceiving you, not only via sight. Additionally, depending on your intent, this may impose emotional states in addition to love or lust, such as being intimidating, harmless, or amusing, further enhancing your social capability. Finally, you may also adjust the intensity of your Love Spot effect without covering it, though you may only dial it down significantly, not turn it off entirely.</p>',
+    Biomorph: '<p><b>Biomorph</b>: Telepathic Network - You can hear surface thoughts of anyone nearby and psionically ‘smell’ their emotional states, and have superhuman empathic and instinctual senses. After you’ve made initial contact with someone’s thoughts, you are able to reach back out to them across any distance. If you possess Potpourri, you are now able to ambiently affect the emotions of anything with a mind nearby. If you possess Love Spot, you are able to manipulate and shift the spot around, and are able to turn it off or use its power to fascinate instead of infatuate. If you possess Zenryoku Zenkai, the effect propagates throughout the entirety of an opposed group, organizations or nations ‘fairly’ conquered fall in love with their conquerors.</p>',
+    Cybermorph: '<p><b>Cybermorph</b>: Big Data Prediction - Utilizing powerful machine learning and socially predictive Big Data, you are able to predict the responses of others. The accuracy of these predictions directly correlates to the amount of data you have available about the target individual, group, nation, or demographic. As an active program, you may turn this off as desired. If you possess Alluring Whisper, you may now use it at a normal speaking volume, including subharmonic frequencies that influence the emotional state of those that hear them. Any direct communication from you is capable of carrying the effects of the Lure and any of its upgrades. If you possess Potpourri, you are now able to generate scents that have direct physiological effects such as aerosolized knockout gas or aphrodisiacs. If you possess Space Truckin’, you are able to act as the vehicle for the purposes of sending targets to other worlds.</p>',
+    Aethermorph: '<p><b>Aethermorph</b>: Goetic Negotiation - You may now use your Element upon and apply it to the goetia of individuals or organizations they’re connected to. Goetia being a general term for the representations of aspects of the minds of individuals or in the general zeitgeist, encountered most commonly through semi-hallucinatory visions, however different world metaphysics can enable different methods of interaction. Restraining someone’s Goetia of Shame would greatly reduce their inhibitions, stabbing the Goetia of Democracy could influence people of the world to consider Democracy a wounded, failed system, or empower the flames of desire of someone’s Goetia of Passion could inspire lust in them. Killing or otherwise significant effects upon Goetia are rarely permanent, though outright killing a Goetia may mean that its next reincarnation may take a significant amount of time to reform and will likely do so meaningfully changed from its prior incarnation. Goetia are connected via concepts and relationships individuals could have with them, the closer or more important the connection between the person and the concept, the easier it is to find and interact with the associated Goetia. The greater the importance placed upon an aspect and the more will behind it (individual or collective), the more powerful the goetia is and the harder it is to affect. You are able to meditate to commune with your own Goetia, and follow their connections to others. If you possess Love Spot, you are able to make it a radiant effect and choose the emotion or impulse evoked at the time, which can be as complex as a few sentences. Its effect no longer requires vision to affect someone, merely line of sight. Finally, you may also adjust the intensity of your Love Spot effect without covering it, though you may only dial it down significantly, not turn it off entirely. Additionally, you may apply any Lures you possess to any Goetia you interact with.</p>',
   },
   desc: `
-<p>There’s more to exceeding humanity than combat on the battlefield. You have also begun to exceed them in other ways. Take Communication Talent for free. Each Transhuman Type also gains a new way to capture targets. These conditions cause a tattoo core to appear somewhere on the waifu, just as if you’d used the Stamp, but may be moved to a more ideal part of her body using the company app. This may be purchased alongside higher bindings or even No Bindings. Like the stamp, tattoos created by this perk will remain visible until they’re superseded by higher bindings.</p>`,
+  <p>There’s more to exceeding humanity than combat on the battlefield. You have also begun to exceed them in other ways. Take Communication Talent for free.</p>`,
+})
+
+heritages.push({
+  uid: '83GXs',
+  title: 'Philosopher’s Transmortality Engine',
+  tree: 'Transhuman',
+  category: 'Heritage',
+  image: 'https://i.ibb.co/93Nn2vf/Philosophers-Transmortality-Engine.jpg',
+  type: 'Party, Other Control',
+  cost: 150,
+  whitelist: ['Networked Glamour Manipulation'],
+  freebies: {
+    defensePerks: [{ title: 'Wyldscape Defense', cost: 0, count: 1 }],
+  },
+  typeFreebies: {
+    Biomorph: {
+      talentPerks: [{ title: 'Martial Talent', cost: 0, count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Martial Talent' }], count: 1 }],
+    },
+    Cybermorph: {
+      talentPerks: [{ title: 'Engineering Talent', cost: 0, count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Engineering Talent' }], count: 1 }],
+    },
+    Aethermorph: {
+      talentPerks: [{ title: 'Blessed Talent', cost: 0, count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Blessed Talent' }], count: 1 }],
+    },
+  },
+  types: {
+    Biomorph: `<p><b>Biomorph</b>: Psionic Beacon - You are able to act as a beacon of thought and intent, a lighthouse to guide others to a desired state. This radiant power causes the spontaneous generation, development, and growth of psionic abilities in biological or psionic existences exposed to it, and with sufficient time, even genetic based abilities.
+    <p>This psionic pressure gives you a general awareness of all surface thoughts within its range, and may be actively expanded, intensified, or deliberately focused via concentration and training. This passive awareness will generally start at your Tier^3 kilometers, and can be used to gauge the feelings of cities or nations, or be more focused to understand individuals in extreme depth, but the passive expansion is easy to notice for psionic entities.</p>
+    <p>The more of an emotional connection a target has to you, the faster these abilities are gained, and the higher the maximum Tier of the powers. Additionally, this psionic power may be focused on as desired within your range, increasing the speed and power. Affecting an entire planet will cause psychics to begin to spontaneously appear in populations over the course of years, while focusing your attentions on a single companion will quickly cause her to develop psionic powers.</p> 
+    <p>Characters sufficiently devoted to or emotionally attached to you with their own psionic abilities may act as relays for this power.</p> 
+    <p>Take Martial Talent for free.</p></p>`,
+    Cybermorph: `<p><b>Cybermorph</b>: Memetic Compression - You are able to create compressed memetic thoughtforms, which can convey enormous amounts of information as well as provide extreme inspiration. This can enable individuals to nigh-instantly master scientific forms of magic, new skills, or even develop their own extra-normal paraphysics equipment and systems, colloquially called ‘mad science’.
+    <p>A single long word conveying the entire contents of a book, or a single still picture conveying the entire contents, emotional and otherwise, of a movie are common instances. This information is conveyed instantly and is easily remembered by those that it’s intended for.</p>
+    <p>The more of these memetic thoughtforms an individual is exposed to, and the longer they ponder them and utilize the information or skills provided by them, the faster their capabilities grow. All of your communications may carry these targeted inspirational memetics at no difficulty.</p>
+    <p>These memetic thoughtforms may be replicated by others, but incautious or imprecise replications will corrupt the underlying information.</p> 
+    <p>Take Engineering Talent for free.</p></p>`,
+    Aethermorph: `<p><b>Aethermorph</b>: Conceptual Infection - You are now able to radiate your power through your Element to empower those that interact with it, ‘causing the generation and development of mystic abilities, alterations, and eventually mutations within those instances and those that interact with them.
+    <p>This allows you to exert influence over all instances of your Element in the world(s) you are currently in. This influence may be focused by applying it through a goetic representative of a location, culture, ethnicity, species, or similar. The stronger the conceptual link between the targeted goetia and an individual, the stronger the effect, and vice versa.</p>
+    <p>The more an individual interacts with, experiences, contemplates, or is otherwise subjected to your Element, the faster the process, and vice versa.</p>
+    <p>You can apply this effect through any goetia under your influence, either via convincing the Goetia to work with you or via applications of your Element. This only applies while you are in the local world. Overlapping goetic authorities of goetia that are under your influence that apply to a single individual stack.</p>
+    <p>Take Blessed Talent for free.</p></p>`,
+  },
+  desc: `
+<p>It’s not simply about upgrading your own capacities, it’s also about upgrading the support structures you interact with and rely on.</p>
+<p>You are now able to empower individuals with the power of your Heritage, utilizing the power of your knowledge and infrastructure. Though the specific method varies by Transhuman Type, you are now able to increase the power of your companions and slowly raise their effective tier. In all cases, your own personal tier increases the speed at which this strength is gained, and you may set filters to decide which of the applicable targets are affected. While resisting the effects can slow or even halt its progression, an individual that has gained an effective Tier from this perk will have the core of the Stamp appear somewhere upon their body, but the Capture will only be finalized if they actively embrace the source of power.</p>
+<p>Abilities and strengths granted by this perk will always follow the general thematics, stylings, and rough trend of the Contractors. In all cases, you may set the broad strokes of and proportions of abilities, alterations, and mutations caused by your conceptual infection.</p>
+<p>In addition to the methods unique to each Transhuman Type to enhance the masses, included is an ability to develop a process that applies your own First Augmentation type to others, and even provide modifications that are compatible with the individuals. The difficulty and time required varies based on the resources, technician skill, and related infrastructure available for the Transhuman Type. Most Company provided facilities allow the process to be completed within an hour, but more common times in-situ are over the course of several days. The further removed the process gets from you, the more likely deviations and errors are to occur.</p>
+<p>Take a refund for any Talent Sharing for Talents provided by the appropriate Transhuman Type. Take one copy of Wyldscape Defense for free.</p>
+`,
 })
 
 heritages.push({
   uid: 'lyv42',
-  title: 'Full Conversion',
+  title: 'Corporeal Transcendence Engineering',
   category: 'Heritage',
   tree: 'Transhuman',
   image: 'https://i.ibb.co/tXdthbH/Full-Conversion.jpg',
   type: 'Self',
   cost: 100,
   freebies: {
-    talentPerks: ['Everlasting Talent'],
-    defensePerks: ['Wild Defense', 'Wild Defense', 'Environmental Defense', 'Environmental Defense', 'Body Defense'],
+    talentPerks: [{ title: 'Everlasting Talent', cost: 0, count: 1 }],
+    defensePerks: [{ title: 'Wild Defense', cost: 0, count: 2 }, { title: 'Environmental Defense', cost: 0, count: 2 }, { title: 'Body Defense', cost: 0, count: 1 }],
   },
-  whitelist: ['First Augmentation'],
+  whitelist: ['First Augmentation', 'Pocket Space'],
   types: {
-    Biomorph: '<p><b>Biomorph</b>: Guy - what ? Your true form is stored in an extradimensional psionic space. Your integrated weapons may include spines, poisons, claws, acids, or tendrils with stingers. Your instinctual knowledge and intuition have improved enormously, with your instincts bordering on precognitive. You may now safely integrate new biological systems and components by eating them. The more extreme the modification, the greater the amount of material required. If you have the Alterzelu Symbiote, you may now benefit from effects that enhance your larva directly, such as Universal Bus allowing you to directly interface with digital spaces. You may now impregnate waifus other than your Queen with smaller clutches of symbiotes, though these are significantly weaker than those spawned by your Queen.</p>',
-    Cybermorph: '<p><b>Cybermorph</b>: Transformers in disguise! Your true form is stored via space folding; the various components expand and bloom into your true form. Your integrated weapons can be lasers, missiles, ballistic weapons, railguns, or monomolecular blades or wires. Your calculative power increases significantly, like that of a super- computer. You may integrate new mechanical systems and components smaller than your current true form with a few moments of contact and transformation as your body reconfigures around and integrates the technology. The larger the piece of technology, the longer this takes. This true form qualifies as a Catch - a - Ride vehicle for the purpose of Space Truckin’.  If you have Tempest Jewelry, you may reshape its pieces into any form desired, provided they retain the central gem and wrap around the target. You may benefit from the effects of the Tempest Jewelry on yourself as if you were wearing it, as well as any upgrades it possesses. This includes, optionally, Absolute Order. Additionally, you may control and restructure your mental landscape as desired, including ‘restore points’ to which your mind will be restored to if you are incapacitated or mentally damaged.</p>',
-    Aethermorph: '<p><b>Aethermorph</b>: Shaza - who ? Your true form exists and travels through higher realities, capable of perceiving those realities as well as the more mundane planes simultaneously. It still requires a physical anchor to avoid gradual dissipation and affect the mundane realities, in this case your original body, but it has a greater ability to affect the realms of dreams, souls, and similar higher realities. Your true form may manifest around its material anchor, creating a selectively permeable, physical manifestation of pure magical energy and ectoplasm. You do not get an integrated weapon, though the specifics of your true form are to your whim. Instead, choose an elemental affinity as per Dragon Heart and an accompanying, initially weak, ability related to said Element. Your emotional intelligence is improved considerably, due to your ability to perceive dreams, souls, and similar in astral space and the higher realms. You may now safely integrate new magical systems and components by sewing, embroidering, and weaving the threads of magic into your true form. More powerful or complex magics require more delicate weaving and longer to perform. If you have Ritual Circles, you may generate them via concentration, without the company app, and anywhere you can perceive, including upon or within yourself. You may also inscribe the circles in the astral realms, allowing them to affect coterminous mundane realities at the same time, rendering even the most blatant ones invisible to anyone incapable of perceiving the astral.</p>',
+    Biomorph: '<p><b>Biomorph</b>: Guy-what? Your material is psionically fueled adaptive biomass, able to take on any living form such as bone, bark, chitin, cellulose, muscle, neural tissue, mycelium, or organs freely. This material may become psionic or biological structures, and more may be grown given sufficient nutrients, material, and energy. Additional traits may now be gained via consumption of a living thing with the desired traits or via sexual contact. Biomorphs are aligned with both Primal and Jungle Shrouds.</p>',
+    Cybermorph: '<p><b>Cybermorph</b>: Transformers in disguise! Your material is hyper adaptive Smart Matter, which is able to become any inorganic material given appropriate blueprints and scans. Any matter may be converted into this smart matter given sufficient time and energy, but this process is very energy and mass intensive. Additional traits may now be acquired via contact and a several second process to reconfigure the body part to integrate the desired technology. Cybermorphs are aligned with Cyber Shrouds.</p>',
+    Aethermorph: '<p><b>Aethermorph</b>: Transformers in disguise! Your material is hyper adaptive Smart Matter, which is able to become any inorganic material given appropriate blueprints and scans. Any matter may be converted into this smart matter given sufficient time and energy, but this process is very energy and mass intensive. Additional traits may now be acquired via contact and a several second process to reconfigure the body part to integrate the desired technology. Cybermorphs are aligned with Cyber Shrouds.</p>',
   },
   desc: `
-<p>There’s nothing left of your original form left. All of it has been improved or replaced with better forms, with expanded functions. Good job, Theseus! The new you may take any shape within the aesthetics of your Transhuman type, but may not(initially) be more than 5 meters by 3 meters by 3 meters in total. In time, you may modify it further to be any size you are capable of powering. Damage to this form persists until repaired or healed.</p>
-<p>You now have perfect memory, and your mind has been actively expanded. Through some function, you are capable of switching between this form and a more human- passing form. Your body now has integrated weapons if it did not before, based on your Transhuman Type.</p>
-<p>Regardless of your Transhuman Type, take Everlasting Talent, two copies each of Wild Defense and Environmental Defense, and one copy of Body Defense for free.</p>
-`,
-})
-
-heritages.push({
-  uid: 'sGuOe',
-  title: 'Essence Reactor',
-  category: 'Heritage',
-  tree: 'Transhuman',
-  image: 'https://i.ibb.co/BsnDNhq/Essence-Reactor.jpg',
-  type: 'Self',
-  cost: 90,
-  freebies: {
-    defensePerks: ['Possession Defense', 'Soul Defense'],
-  },
-  typeFreebies: {
-    Biomorph: {
-      defensePerks: ['Mind Defense'],
-    },
-    Cybermorph: {
-      defensePerks: ['Information Defense'],
-    },
-    Aethermorph: {
-      defensePerks: ['Soul Defense'],
-    },
-  },
-  whitelist: ['Full Conversion'],
-  types: {
-    Biomorph: '<p><b>Biomorph</b>: Take one copy of Mind Defense for free, due to the psionic base of the Biomorph Essence Core. You may power any biological system. Additionally, you are able to generate and secrete an extremely nutritious fluid in place of any of your normal fluids, which tends to be far thicker and more viscous than normal, with any flavors you desire. This will fulfill the dietary requirements of anyone that consumes it, no matter how it\'s taken in.</p>',
-    Cybermorph: '<p><b>Cybermorph</b>: Take one copy of Information Defense for free, due to the fractal calculative base of the Cybermorph Essence Core. You are able to generate the energy as electrical or thermal, with extremely fine control, able to power any technology you make and maintain contact with indefinitely - provided you don’t overwhelm the output limit.</p>',
-    Aethermorph: '<p><b>Aethermorph</b>: Take a second copy of Soul Defense for free, due to the concentrated - lifeforce base of the Aethermorph Essence Core. You are able to substitute for the power requirements of any ritual, spell, or magical artifact, though not more specific key components unrelated to power requirements.</p>',
-  },
-  desc: `
-<p>You now have the power requirements for expanded forms down! You possess an Essence Reactor, a concentrated system which draws power from interdimensional space, allowing for infinite energy production, though not infinite output or storage. Its shape corresponds with your mark that forms the center of your stamp. The reactor must be at least the size of a human heart, and has the output of a nuclear reactor, but its maximum output and storage scales upwards linearly as its volume increases.</p>
-<p>You may detonate the reactor, and even the smallest Essence Reactor has the force of a nuclear bomb.  (Not recommended for customers that don’t have a way of coming back from the dead!) If you have multiple bodies or may otherwise switch bodies, you may develop a new Essence Reactor within the new body given a month’s worth of dedicated focus, though this time need not be contiguous. If you have multiple Reactors, only one may be active at a time, due to the psionimagical quantum state exclusion principle of soul - bound bleed - energy - generators.</p>
-<p>Even while inactive, Essence Reactors are very efficient matter / antimatter generators, capable of converting matter into either thermal, electrical, or magical energy at a level comparable to the Hoover Dam. Additionally, take one copy each of Possession Defense and Soul Defense for free.</p>
-<p>You may create Essence Reactors unattached to your consciousness, but they take six times as long to create. An appropriate Shroud cuts the time to make an Essence Reactor in half.</p>
+<p>Based on our continued studies of inventory hotswapping, shoggoths, and other amorphous entities we bring you a new breakthrough! Your form is no longer constrained entirely by such petty things as shape, volume, or being contiguous. Your Pocket Space is now functionally infinite, and may store material, modifications, and alternate forms appropriate to your Transhuman type within and via our Company trademarked Transhuman Materials (TMTM) able to ensure compatibility between modifications and swaps.</p>
+<p>What this material is and what it can become or be made from depends on your Transhuman Type, and may be used to rapidly swap out modifications, heal, or otherwise switch between saved template forms. Upon initial purchase, a significant amount of material will be deposited in your Pocket Space, as well as a template for a larger combat form to utilize this mass. Any traits removed and not replaced or swapped out with a corresponding one from your pocket space are automatically filled in via your pocket space material unless you designate otherwise. You may also create alternate forms out of the material in your pocket space and swap between them at will.</p>
+<p>If you were not already, you are now Tier 6.</p>
+<p>Additionally if you possess Alterzelu Symbiote, you are able to act as the “Queen” for purposes of the theming of your Symbiotes, overriding your existing Queen’s themes if desired and able to consume Symbiote biomass to add to your material stores. If you possess an Elemental Shroud and Elemental Loom of the appropriate Element you are able to generate a functionally infinite amount of material. Regardless of your Transhuman Type, take two copies each of Wild Defense and Environmental Defense, and one copy of Body Defense and Everlasting Talent for free.</p>
 `,
 })
 
@@ -338,71 +337,65 @@ heritages.push({
   category: 'Heritage',
   image: 'https://i.ibb.co/khbcryv/Evolutionary-Engine-Array.jpg',
   type: 'Self',
-  cost: 50,
-  whitelist: ['Essence Reactor'],
-  desc: `
-<p>Though the specifics vary based on your type, your constant drive for growth and perfection has had its limits removed. Your body may replicate any prior upgrades that have been integrated into it. You can swap out even all- encompassing upgrades within moments. Additionally, you can replicate any gifts, talents, or innate abilities that fall within the purview of your Transhuman type that your waifus - or anyone outside your retinue that you defeat in a confrontation - possess. That does not include anything available for purchase in this catalog. The expression of these gifts is not necessarily consistent or exact. Abilities associated with each Transhuman type are indicated via the free Talents granted in First Augmentation: Biomorph, genetic and psychic; Cybermorph, technological; Aethermorph, mystical.</p>
-<p>Abilities that are generic in their source but are expressed uniquely, such as Sacred Gears, Noble Phantasms, Quirks, or X-gene mutation, will be unique to you as well and comparable in power or utility to the strongest version that your waifus (or anyone outside your retinue that you defeated) possess. If that changes, your version will grow to match the new strongest version. This perk may generate no more than one Sacred Gear, Semblance, Quirk, X-gene mutation, or other such power each, and no more than three Noble Phantasms. This perk may only generate or upgrade one Noble Phantasm at a time.</p>
-<p>If you have previously purchased Template Stacking for yourself or your retinue at ranks 0, 1, or 2, take a refund on all such copies of it that fall under this perk’s purview, according to your Transhuman type. You may not make additional purchases of those perks for abilities matching your Transhuman type. Additional potential within your Transhuman type will be acquired through this perk instead.</p> `,
-})
-
-heritages.push({
-  uid: 'x9ZFJ',
-  title: 'Essence Upload',
-  category: 'Heritage',
-  tree: 'Transhuman',
-  image: 'https://i.ibb.co/K5m0Dfr/Essence-Upload.jpg',
-  type: 'Self',
-  cost: 170,
+  cost: 150,
+  whitelist: ['Corporeal Transcendence Engineering'],
   freebies: {
-    defensePerks: ['Possession Defense', 'Polymorph Defense', 'Wyldscape Defense'],
+    defensePerks: [{ title: 'Wyldscape Defense', cost: 0, count: 1 }],
   },
   typeFreebies: {
     Biomorph: {
-      talentPerks: ['Performance Talent'],
+      defensePerks: [{ title: 'Trace Defense', cost: 0, count: 1 }],
     },
     Cybermorph: {
-      defensePerks: ['Mind Defense'],
+      defensePerks: [{ title: 'Corruption Defense', cost: 0, count: 1 }],
     },
     Aethermorph: {
-      defensePerks: ['Information Defense'],
+      defensePerks: [{ title: 'Destiny Defense', cost: 0, count: 1 }],
     },
   },
-  whitelist: ['Full Conversion'],
   types: {
-    Biomorph: `<p><b>Biomorph</b>: Cores are grown within organic living things, in batches of up to a dozen at a time according to the host’s physical size. There is no hard limit on the number of simultaneous batches. Each batch must be implanted somewhere along or within the central nervous system of the body it is within, if the host body has one - this requirement is waived for plants and fungi. If the host dies before the cores within are fully - grown, that batch is lost, but this is otherwise a passive process. The weight of your mind reduces the morph’s instincts when you’re not sleeved within it, with limited higher thought. They’re capable of breeding, sustaining themselves, and small talk, but not much else.  Once they’re fully - grown, extra cores may be safely removed from their hosts at any time. Regardless of your morph, you are able to maintain your individuality within another hivemind, and even suborn one with time. Finally, take Performance Talent for free.</p>
-    <p>If you have Alterzelu Symbiotes, your Queen is now able to spawn special, Royal, symbiote larvae. These larvae will cause your target to grow one of your Least Cores within themselves, but are otherwise identical to normal larvae. A Royal Symbiote’s egg takes two weeks to develop. The development of the Least Core takes place over the course of a month after the injection of the transformative fluid.Providing the new host with your fluids, such as by consumption, injection, or submersion, accelerates the process, reducing the time taken to just a week with sufficient amounts. An already - existing symbiote host may be given the royal transformative fluid directly, requiring applications over the course of a month.</p>`,
-    Cybermorph: `<p><b>Cybermorph</b>: A freshly made core takes an hour to properly imprint your quantum consciousness state onto it. However, with sufficient infrastructure and materials, you may mass produce the blackboxes without further input from yourself. You must backup and update your memories by joining the network they are on. Morphs must be mechanically or biologically feasible. Unsleeved morphs or hosts remain in a hibernative sleep state when not in use. Finally, regardless of your morph and given enough time, you are capable of freely entering and hacking any digital space to give yourself admin privileges. Additionally, take one copy of Mind Defense for free.</p>
-                  <p>If you have Tempest Jewelry, you are able to combine 32 separate pieces to create a special piece that must be at least the size of a helmet. This piece will modify the target over the course of two weeks, developing a Least Core within them.</p>`,
-    Aethermorph: `<p><b>Aethermorph</b>: Your true form has finally begun to leave behind your old tethers. Any object may act as a receptacle for your phylactery, and you’ll maintain a pseudo - telekinetic control of it. Objects you possess are capable of movement when they otherwise wouldn’t be, such as a statue moving like a person. Morphs you are not actively possessing are reduced to simple automatons. A living phylactery, such as someone you have safely implanted a core into, retains much of their original personality and cognition, but moves through life like in a trance until directed otherwise by you. No amount of corporeal damage damages your true self, as you exist in astral space. Influencing the corporeal world directly from astral space is difficult. However, entities able to interact with astral space are capable of attacking and harming you there, and death in astral space results in true death regardless of how many phylacteries you possess. You may, upon purchase, change your elemental affinity as per Dragon Scale. Additionally, take one copy of Information Defense for free.</p>
-                  <p>If you possess Ritual Circles, you gain a special circle that can convert someone into a living phylactery. Multiply the time Requirement factor of the circle by 3.  Other people may inscribe and activate circles for you, though doing so without your input takes precise instructions and takes ten times longer than doing it yourself.</p>`,
+    Biomorph: '<p><b>Biomorph</b>: You may create neural clusters that generate enormous amounts of biological and psionic energies. Their output may be increased via metabolizing external energy sources such as sunlight, radiation, or rare materials. These neural clusters may grow on their own provided appropriate hosting and nutrients, and their creation and growth may be accelerated with external input of energy and nutrients. Take Trace Defense for free.</p>',
+    Cybermorph: '<p><b>Cybermorph</b>: You may create Fractal Calculation Engines that generate enormous amounts of energies from the very act of calculating, and this energy may be output in any form which the contractor understands well enough to model in significant detail. These metaphorical black boxes may increase their overall energy output based on the amount of distinct data stored within them and additional calculative systems which they are networked with. These engines may be fabricated by sufficiently advanced systems and may act as powerful computational systems. Take Corruption Defense for free.</p>',
+    Aethermorph: '<p><b>Aethermorph</b>: You may generate cores, though the specific form of golden, demonic, or elemental cores varies based on the specific internal energies and efforts of the creator, generating enormous amounts of appropriate type of mystical energies. Their growth and refinement may be accelerated via a number of mystical methods, including but not limited to soul consumption, mystically resonant ingredients or processings, sexual congress with powerful beings, and overcoming trials mystically resonant to your Element. They may, instead of increasing in volume, may instead increase their output and storage via refinement. Take Destiny Defense for free.</p>',
   },
   desc: `
-<p>Your form is no longer purely physical, though the specifics of your partial transcendence is based on your Transhuman type. If your current body becomes damaged, obsolete, or inconvenient, just switch to a new one. Members of high- risk professions, such as criminals or firewall sentinels, can be killed multiple times on a mission only to be brought back and sent into the field again and again. Take one copy each of Polymorph Defense, Wyldscape Defense, and Possession Defense for free. Your body is called a sleeve or morph, and the process of changing morphs is resleeving. Resleeving generally takes an hour, during which time both bodies are incapacitated. Only one active instance of your consciousness can exist at a time.</p>
-<p>At this stage, a potential morph requires a special anchor to designate it as such, called a core. At this stage you are only capable of utilizing the smallest type of core, a Least Core, which is roughly heart or baseball sized. When purely spherical, it generally ends up between 7 and 10 cm in diameter, though it may be any contiguous shape. Though the specific nature varies based on your Transhuman type and personal aesthetics, it is generally a hyper dense neural cluster for Biomorphs, a blackbox server for Cybermorphs, and a crystalline phylactery for Aethermorphs. Unless otherwise stated, a Least Core takes three months of dedicated work by you to create. Any active core may manifest your true form around or within it, depending on size constraints. Alternatively, the morph may be slowly transformed into your humanoid base or the true form via methods specific to your Transhuman type - generally retroviral elements, gray goo nanites, or raw magical ectoplasmic shaping, respectively.</p>
-<p>Purchase of this perk provides knowledge as to how to rebuild your body, either via cloning, 5D molecular printing, or leyline restructuring. All of these processes create a body already in possession of an appropriate core, but are generally expensive and take six months to complete.</p>
-<p>Given the combination of certain Bindings and Transhuman types, you may take over new bodies of local Waifu / Husbando candidates, turning them into new potential backup bodies. This process is based on the Possess Origins, and the target is considered captured, though doing so neither grants or costs credits. New skills, traits, and abilities gained via this method are added to your true form as if you had Possessed the character. You also gain the target’s episodic memory, as if you had Substituted into them. If you have the Primal, Cyber, or Burial Shrouds for the respective type, you are now capable of injecting targets with a portion of your Shroud. Unless somehow cured or purged, it will slowly develop into a new core within them. Treat this as the target being cocooned within your Shroud, but triple the time required for a capture. Without these Bindings, you are still capable of implanting a core into a potential waifu or husbando, but doing so entirely overwrites the original person with yourself and does not count as a Capture or Possession any more than raising such a target as a zombie would.</p>
-<p>Your retinue is capable of hosting your cores, allowing them to act as relays for your awareness and purely mental abilities. However, sleeving into them destroys their mind. Not recommended without a Warranty Plan!</p>
-`,
+<p>Evolution is a power all its own. You may now replicate any gifts, talents, or innate abilities that fall within the purview of your Transhuman type that your waifus - or anyone outside your retinue that you defeat in a confrontation - possess. That does not include talents, perks, or similar available for purchase in this catalog. The expression of these gifts is not necessarily consistent or exact. Abilities associated with each Transhuman type are indicated via the free Talents granted in First Augmentation: Biomorph, genetic and psychic; Cybermorph, technological; Aethermorph, mystical. Additionally, you may convert your transmaterial into any trait or modification you have previously possessed.</p>
+<p>If you were not already, you are now Tier 7.</p>
+<p>Abilities that are generic in their source but are expressed uniquely, such as Sacred Gears, Noble Phantasms, Quirks, or the results of the X-gene, will be unique to you as well and comparable in power or utility to the strongest version that your waifus (or anyone outside your retinue that you defeated) possess. If that changes, your version will grow to match the new strongest version. This perk may generate no more than one Sacred Gear, Semblance, Quirk, X-mutation, or other such power each, and no more than three Noble Phantasms. This perk may only generate or upgrade one Noble Phantasm at a time.</p>
+<p>Additionally, you may now create specialized engines within and from your body, concentrated systems which draw power from interdimensional space, allowing for infinite energy production, though not infinite output or storage. Its shape generally corresponds with the mark that forms the center of your stamp, though the material of its construction depends on your transhuman type. </p>
+<p>The smallest form of the engine is the rough volume of a sphere with a radius of 3 cm, their creation being a delicate and time consuming process that  takes a month’s worth of dedicated focus, though this time need not be contiguous. You may create engines unattached to your consciousness, but they take six times as long to create. An appropriate Shroud cuts the time to make an engine in half. Such an engine is capable of generating energy at a level comparable to a nuclear reactor, but its maximum output and storage scales upwards exponentially as its volume increases.</p>
+<p>You may detonate the engine, and even the smallest one has the force of a nuclear bomb. (Not recommended for customers that don’t have a way of coming back from the dead!)</p>
+<p>Finally, take one copy of Wyldscape Defense for free.</p>
+ `,
 })
 
 heritages.push({
-  uid: '83GXs',
-  title: 'Philosopher’s Transmortality Engine',
-  tree: 'Transhuman',
+  uid: 'sGuOe',
+  title: 'Essence Upload',
   category: 'Heritage',
-  image: 'https://i.ibb.co/93Nn2vf/Philosophers-Transmortality-Engine.jpg',
-  type: 'Party',
-  cost: 0,
-  complex: 'target',
-  costVariants: [0, 5, 20, 40],
-  whitelist: ['Full Conversion'],
+  tree: 'Transhuman',
+  image: 'https://i.ibb.co/BsnDNhq/Essence-Reactor.jpg',
+  type: 'Self',
+  cost: 80,
+  freebies: {
+    defensePerks: [{ title: 'Possession Defense', cost: 0, count: 1 }, { title: 'Polymorph Defense', cost: 0, count: 1 }],
+  },
+  whitelist: ['First Augmentation'],
+  types: {
+    Biomorph: `<p><b>Biomorph</b>: You have become a psionic existence capable of transferring to any biological or purely psionic entity whom you are able to make a psionic, telepathic, or direct neural connection to. You are able to project your mind and the origin point of your senses to anywhere within the range of your last body, or within range of a psionic network. 
+    <p>If you possess Alterzelu Symbiote, you are explicitly able to jump to any individual in the hive(s) as desired and use the form of a larva to Possess a target.</p></p>`,
+    Cybermorph: `<p><b>Cybermorph</b>: You have become a digital existence capable of transferring to any entity or object capable of running DOOM or a human-scale consciousness, provided you are able to make a wireless, hardline, or direct neural connection to them. You are able to move through digital networks. 
+    <p>If you possess Hypnosis App you are able to transfer your consciousness to any individual you are able to get to Hypnotic Depth 40+, and may use a Full Dive Set to Possess a target. If you possess Tempest Jewelry, you may transfer your mind into individual pieces via contact, and from there into their wearer.</p></p>`,
+    Aethermorph: `<p><b>Aethermorph</b>: You have become a mystical existence capable of transferring to any singular object or entity, moving intangibly through conceptual space and links. This is accomplished either via direct proximity, or via connections between people and goetia, or goetia and other conceptually linked goetia, the closer or more significant this connection the easier and faster it is to find and follow. There is no limit on how far you are able to move from your last body, but similar forms of projection may allow others to perceive or interact with your form as if it was physical. In addition to individuals, these minds may be anchored to any distinct object or related collection of objects you own, and you may exert a pseudo-telekinetic control over it regardless of your Element. Objects you possess are capable of movement when they otherwise wouldn’t be, such as a statue moving like a person. Finally, this disembodied form may interact directly with goetia as if you were both physical, your projected form having the strength and ability most closely associated in your mind with ‘yourself’.
+    <p>If you possess Tantric Arts: Arts of Sympathy, you are able to use it to transfer your mind to a target upon completion of the ritual. By using an additional 2 Resonance in the Art of Binding over what would be required for a target to Possess them entirely.</p></p>`,
+  },
   desc: `
-<p>As a one- way process, you are able to bring your retinue down the same transhumanism path as you. These upgrades must be done in sequence for a waifu. After spending 120 credits on this perk, you may upgrade your retinue freely yourself without further purchases. Each step in the process takes an hour of effort to accomplish on your own.</p>
-<p>If you only have Full Conversion, you can give a waifu the First Augmentation perk for 5 Credits. This is generally a + 2 Tier for blue - star Waifus and a + 1 Tier for copper - star Waifus, but not a significant increase in power beyond that. Retinue members who benefit from this will have full - time access to your company smart device and apps just like you, except for the inability to make transactions, disable their own Tempest Jewelry, or other specific exemptions..</p>
-<p>If you have Essence Upload, you can apply the Full Conversion perk to a waifu for 15 Credits, plus the cost of First Augmentation if she doesn’t already have it. This increases the effective tier bonus for blue and copper star waifus by another point, but is only an increase for Silver Star waifus if you provide more specialized and advanced things to upgrade their form with. If you have Evolutionary Engine Array, your waifus at this level or higher will benefit from it as well.</p>
-<p>If you have Multicore Neural Leyline, you can apply the Essence Upload perk to a waifu for 20 Credits, plus the costs of First Augmentation and Full Conversion if she doesn’t already have them. Your waifus do not have their own Cores. They instead utilize the same core network as you do, benefitting from them the same way and no longer suffering the drawbacks of hosting a core. They are technically under the umbrella of your hive mind, network, or extended soul network.</p>
-<p>PvP note: If another contractor, whether they captured you or you captured them, has used this perk on you, take the appropriate perks for free the next time you have an account to access. The other contractor’s Tranhuman type will stack with your own, if you already have one, or lock you into theirs if you don’t. The remaining Transhuman Heritage perks, including Singularity, must be bought using your own funds.</p> `,
+<p>Being constrained to one body is inefficient and limited. Your form is no longer purely physical, though the specifics of your partial transcendence is based on your Transhuman type. If your current body becomes damaged, obsolete, or inconvenient, just switch to a new one. Members of high-risk professions, such as criminals or firewall sentinels, can be killed multiple times on a mission only to be brought back and sent into the field again and again. Take one copy each of Polymorph Defense and Possession Defense for free.</p>
+<p>Barriers of the appropriate type may impede your movement and actions in a discorporated state, such as psionic barriers for Biomorph, firewalls for Cybermorph, or mystical wards for Aethermorph. Transferring to a new body leaves your prior form empty. Traits and powers not linked to your body come with you and such powers may be manifested from your consciousness.</p>
+<p>Given the combination of certain Bindings and Transhuman types, you may take over new bodies of local Waifu/Husbando candidates. Without synergistic Bindings, attempting to usurp a target with a Will involves a mental battle which can be lost, refusing you entry. Shrouds of the appropriate Element may be used to subsume or ‘infect’ people in a method similar to Capture.</p>
+<p>Target’s minds may be destructively subsumed into your own, or you may ‘ride’ along with a willing target, and may trade off control of the form in such a willing partnership. The subsuming process is based on the Possess Origins, and the target is considered captured, though doing so neither grants or costs credits. You also gain the target’s episodic memory, as if you had Substituted into them.</p>
+<p>Purchase of this perk provides knowledge as to how to rebuild your “true” body, either via cloning, 5D molecular printing, or leyline restructuring. What the app considers your true body may be updated from your existing body or reverted at any time. Body dysphoria in these new bodies is limited.</p>
+`,
 })
 
 heritages.push({
@@ -412,56 +405,146 @@ heritages.push({
   tree: 'Transhuman',
   image: 'https://i.ibb.co/5vfC81N/Multicore-Neural-Leyline.jpg',
   type: 'Party',
-  cost: 165,
+  cost: 100,
+  typeFreebies: {
+    Biomorph: {
+      defensePerks: [{ title: 'Corruption Defense', cost: 0, count: 1 }],
+    },
+    Cybermorph: {
+      defensePerks: [{ title: 'Information Defense', cost: 0, count: 1 }, { title: 'Possession Defense', cost: 0, count: 1 }, { title: 'Stress Defense', cost: 0, count: 1 }],
+    },
+    Aethermorph: {
+      defensePerks: [{ title: 'Information Defense', cost: 0, count: 1 }, { title: 'Soul Defense', cost: 0, count: 1 }],
+    },
+  },
+  whitelist: ['Essence Upload', 'Pocket Apartment'],
+  types: {
+    Biomorph: `<p><b>Biomorph</b>: Your soul can now be easily spread out throughout an entire population of a single species, or a single local collection of species within the same Kingdom such as every plant in a forest. Groups of individuals who consider themselves part of a shared culture or organization may count as a single species for the purposes of spreading out your consciousness. Additionally, for these purposes, your entire Alterzelu Symbiote ecosystem counts as a single species.
+    <p>Expanding out heavily, you could direct the migration of a species, the rate of growth or distribution of a forest, or determine who the animals of a region allow or attack, but miss a single bird under your control being killed the same way you could miss losing some skin cells.</p>
+    <p>Any physical deaths of your retinue or individuals non-destructively hosting your consciousness may instead send their minds and souls to your Pocket Apartment as a mental projection. They may not leave your Pocket Apartment until a new body is provided for them, such as via Corporeal Transcendence Engineering, Dungeon: Spawning Room, or an appropriate Symbiote Structure.</p>
+    <p>Finally, take one copy of Corruption Defense for free.</p>
+    </p>
+    `,
+    Cybermorph: `<p><b>Cybermorph</b>: Your soul’s code has become an ever evolving infinite fractal that can infest an entire network and anything connected to that network. Any data  you get access to is permanently included in your code and not just on hardware, unless you specifically delete it.
+    <p>Expanding out heavily, you could set the firewalls, censorship methodologies, or interaction protocols for an entire internet, but miss the keystrokes of an individual terminal the same way you don’t notice individual grains of sand beneath your feet.</p>
+    <p>Your Pocket Apartment becomes a digital world. If you have Megapixel, individuals you transport are moved to your Pocket Apartment, and all benefits of Megapixel apply to your Pocket Apartment. Additionally, if you possess Dungeons, you may devote retinue members to this digital space in order to expand it, and treat any Dungeons as a transition area between completely corporeal and digital existence.</p>
+    <p>If you possess a Cyber Shroud, you may digitize anything that your Shroud envelops, though digitizing targets with a will requires cooperation, unconsciousness, or suffusing them with your own will. Anyone within your digital world is functionally cocooned by your Shroud.</p>
+    <p>Take one copy of Information Defense, Possession Defense, and Stress Defense for free.</p>
+    </p>
+    `,
+    Aethermorph: `<p><b>Aethermorph</b>: Your soul’s mystical compatibility and morphology has adapted to allow you to possess even fundamental concepts related to your Element, or a conceptually linked place or group.
+    <p>Expanding out heavily, you can apply your Element through anything you’ve possessed and sense any nearby or particularly strong instances of your Element, but miss specific frequent or common instances the same way a single star doesn’t stand out for its particular twinkle in the night sky.</p>
+    <p>Any physical deaths of your retinue or individuals non-destructively hosting your consciousness may instead send their minds and souls to your Pocket Apartment as a spiritual projection. They may not leave your Pocket Apartment until a new body is provided for them, such as via Dungeon: Spawning Room or Tantric Arts: Arts of Summoning.</p>
+    <p>Finally, take one copy of Soul Defense and Information Defense for free.</p>
+    </p> `,
+  },
+  desc: `
+<p>No longer limited to a single item or object, you are now able to possess and infest far more, becoming landscapes themselves and the networks between them.</p>
+<p>You are now able to transfer your consciousness to any collection of valid targets for your Transhuman Type, and your singular consciousness will be spread amongst them as a genus loci or hive mind equivalent. The amount of fine control you have over individual bodies that may make up you depends on your calculative power and the amount of focus given to a single form, as well as how many individual instances you are spread out across. Even in unwilling situations, you may non-destructively ride along provided you win the conflict of wills, and non-destructively assume direct control or access their memories in those situations.</p>
+<p>Your consciousness may propagate in the same method it could be previously transferred, though you may remove your consciousness from an individual body without any direct connections provided your consciousness is also anchored somewhere else. No matter your Transhuman Type, you may possess or entirely transfer your consciousness into your Demiplane or Dungeon, and your consciousness is spread across all Dungeon instances.</p>
+<p>Additionally, your Pocket Plane is now a Jouten, a world-body which is an extension of yourself and has the rest of your Pocket Plane and its structures either within it in a manner similar to Dragon Cabin, on top of it, outside it, or otherwise incorporated into it. The design and aesthetics of this form are up to you, though you will always be able to transfer your consciousness to this body, Favorites include a ‘world turtles’, a flying city, flying islands, miniature planetary constellations. or an elementally representative and mobile terrain feature as an Aethermorph.</p>
+<p>Similar to Dragon Cabin, you are able to manifest an avatar within your Jouten while your consciousness resides in your Jouten,  and are able to manifest a smaller version of your ‘true’ body within or on it as per Dragon Cabin. This projection is able to leave your Jouten, but only one instance of this projection may exist at a time.</p>
+<p>Your Jouten is able to enter realities directly, provided you have sufficient space to create an appropriately sized portal.</p>
+<p>If you were not already, your Jouten may be considered Tier 7.</p>
+`,
+})
+
+heritages.push({
+  uid: 'sj75G',
+  title: 'Distributed Intellectual Devotions',
+  category: 'Heritage',
+  tree: 'Transhuman',
+  image: '',
+  type: 'Self',
+  cost: 60,
   freebies: {
-    defensePerks: ['Trace Defense', 'Destiny Defense'],
+    defensePerks: [{ title: 'Mind Defense', cost: 0, count: 1 }],
   },
   typeFreebies: {
     Biomorph: {
-      talentPerks: ['Science Talent', 'Martial Talent'],
+      talentPerks: [{ title: 'Science Talent', cost: 0, count: 1 }],
     },
     Cybermorph: {
-      defensePerks: ['Mind Defense'],
+      talentPerks: [{ title: 'Psychic Talent', cost: 0, count: 1 }],
     },
     Aethermorph: {
-      talentPerks: ['Psychic Talent', 'Martial Talent'],
-      defensePerks: ['Information Defense'],
+      talentPerks: [{ title: 'Psychic Talent', cost: 0, count: 1 }],
     },
   },
-  whitelist: ['Essence Upload', 'Essence Reactor'],
-  table: [
-    ['Core Size', 'Mass', 'Core size', 'Range'],
-    ['Least', '1x', 'Baseball', '1km'],
-    ['Lesser', '10x', 'Beachball', '50km'],
-    ['Medium', '100x', 'Grizzly bear', '2,500km'],
-    ['Greater', '1,000x', 'London bus', '(8m) 125,000km'],
-    ['Grand', '10.000X', 'Large hot-air balloon (25m)', '6,250,000km (-2.09 AU)'],
-  ],
+  whitelist: ['First Augmentation'],
   types: {
-    Biomorph: `<p><b>Biomorph</b>: Larger cores are grown from Least Cores, and even morphs reduced to instincts may develop and grow into something resembling your true form should you wish. Lesser Cores or larger alleviate the stress of the Least Core on morphs within the larger core’s range. These morphs are not reduced to instincts, and act as part of a hive intelligence: what is ‘you’ is a conglomerate of the various intelligences. You are more like a corporation or nation unto yourself. As the overmind of this intelligence, only extreme circumstances would cause significant personality shifts due to new minds being brought in. You may accelerate the growth of a morph’s core by feeding it your loose(i. e.not in a morph of its own) smaller cores. We do not recommend growing a core larger than the morph it’s inside; the transition is quite painful. If you were not already capable of such, you may now communicate telepathically with things within range of an active core. You possess telekinetic abilities that scale with the number of cores within range. Finally, take the Science and Martial Talents for free.</p>
-    <p>Medium Cores and larger will slowly infect the stationary solid matter in their environment with an organic substrate called creep. Creep is not a solid mass; rooms and corridors will naturally form inside it and will not be blocked off by further expansion. Your and your retinue’s things are immune to this. The base values for creep spread rates and range for each core size are all in the chart to the right. If part of a bed of creep is no longer within the limit of any active core’s range, that part of the bed will recede to the new boundary over the course of a week. Neutral and hostile sapient beings in contact with your creep will find their effective tiers reduced by varying amounts according to their tier and the size of the largest core sustaining that bed, to a minimum of Tier 1.  See the chart for specifics. This debuff applies at step 6.</p>
-    <p>If you have Alterzelu Symbiotes, you may now directly convert larvae into Least Cores at a 1: 1 ratio. Doing so takes half the time it normally takes to create a core. For every Greater Core you possess, you may have an additional Queen. Support Queens follow the same rules as your first Queen. When you produce your first Grand Core, select one of your existing Queens to become an Empress. You can only do this once, so make it count. Your Empress is capable of producing one Royal larva at a time in only four days and is ranked above all of the support Queens in your swarm’s hierarchy - including your original Queen, if you chose another to be your Empress. If a support Queen qualifies for her own symbiote theme as per the regular rules, but your Empress has already imposed her own theme on the entire swarm, the two themes will hybridize in a natural way, but only in the lesser queen and her subordinates.</p>
-    <p>Morphs hosting Medium Cores and larger may act as incubators for your Empress and Support Queens. Each active Medium Core increases the number of eggs your Empress will produce per reproductive cycle by a flat 10x multiplier: 1 every two days for the duration, 10, 20, 30, etc. Greater and Grand Cores count as 10 and 100 Medium Cores each for the purpose of all larva production. Each active Medium Core increases your support Queens’ egg count per cycle by a flat 100 %: 1 every cycle, 2, 3, etc. For regular larva production, your support Queens’ cycles are still two days long within a 28 - day spawning period(14 cycles in a row); for Royal symbiote production, their cycles are still 14 days long(one at a time). Each Grand Core counts as 10 Greater Cores for the purpose of your support queen cap.</p>
-    <p>Possession of a Greater Core or larger allows you to melt down and fuse larvae into various forms. You may functionally purchase items from the Catch - a - Ride catalog at a rate of 25 larvae per effective Credit. These vehicles may not have a cost higher than 50 Credits if you have at least one Greater Core or larger, or 100 Credits if you have at least one Grand Core or larger. These are biological entities that approximate the function of the vehicle. More exotic abilities such as time travel are only possible if you’ve encountered an example of such before. These only function within range of an active core.</p>
-    <p>If you possess a Primal Shroud, you may convert biomass into a core at a 50: 1 ratio. Additionally, all biomass within range of any core’s effect is considered to be in direct, sustained, contact with you. Finally, if you possess at least one Medium Core or larger, you may instead invest mass into creating vehicles the way that the Alterzelu Symbiote allows. Medium Cores can generate 1 effective credit per day, Greater Cores can generate 5, and Grand Cores can generate 25.  Your credit cap per vehicle is based on your largest core: 25 for Medium, 75 for Greater, and 150 for Grand.</p>
+    Biomorph: `<p><b>Biomorph</b>: You are capable of creating small psionic patterns of thought. While monotask, instinct driven minds may be ‘born’ en masse and with little effort, it takes time for them to develop additional skills. A more powerful and developed mind may speed up this process, or minds may be allowed to develop on their own, going from a monotask mind to a human scale consciousness takes about a year. Minds will not grow past their intended purpose. 
+    <p>These minds can be anchored into any neural tissue you are connected to, or exist in ambient space near an anchored mind. More complex minds can only be anchored in denser or more complex neural systems, stuffing the entirety of a human-scale consciousness into the brain of a fly generally isn’t feasible at this stage. Alterzelu Symbiote larvae and creatures are always capable of hosting these minds. Things created via Primal or Jungle Shroud are capable of hosting them as well.</p>
+    <p>You are more like a corporation or nation unto yourself, while individual minds may act foolishly or against the goals of the whole without oversight, the whole moves in a singular direction. As the overmind of this intelligence, only extreme circumstances would cause significant personality shifts.</p>
+    <p>Additionally, you may freely modify your instincts and those of your component minds.</p>
+    <p>Finally, take Science Talent for free.</p>
+    </p>
     `,
-    Cybermorph: `<p><b>Cybermorph</b>: Larger cores are built from smaller ones, and even Least Cores may be networked together to replicate the effects of their greaters. Every 5 Least Core - equivalents networked together provide enough runtime to run the equivalent to two more instances of your consciousness. This runtime may be partitioned as desired from little more than a VI to hyper - intelligences worth multiple minds. Cores may be networked together, provided one is within range of another or they have direct line of sight. This means that in addition to creating a physical Greater Core, you may also create a temporary Greater Core when enough morphs come together. You may relay your intelligence through any electronic device you have hacked or interface with any technology within range of an active core. Take one copy of Mind Defense for free. You may also partition off runtime to create a digital world. The first instance dedicated to this creates an area of roughly 100 sq m, controllable as per Grand Manor. Every additional instance worth of runtime dedicated to this task doubles the available space.</p>
-    <p>If you have Tempest Jewelry, you may create special equipment from them that allows you to digitize physical items or bring them forth from the digital world. Once converted, they no longer count as Tempest Jewelry for the purposes of your stock or capture. Each piece allows for approximately 1 cubic meter of space to be affected at a time. Targets with a will of their own must be willing or unconscious to make the transfer. If you are not currently simulating a digital world, they are simply stored in memory until retrieved.</p>
-    <p>Depending on the largest - sized Core you have, you benefit from a multiplier to both your daily restock rate of Tempest Jewelry and your total reserve cap, applied after all additive modifiers from captures and Additional Stock and then rounded up to the nearest whole number. See the table to the right.</p>
-    <p>If you possess a Cyber Shroud, you may digitize anything that your Shroud envelops, though digitizing targets with a will requires cooperation, unconsciousness, or suffusing them with your own will. You may also directly replicate the effect of Tempest Jewelry above. Anyone within your digital world is functionally cocooned by your Shroud.</p>
+    Cybermorph: `<p><b>Cybermorph</b>: You are capable of creating sapient subroutines. These smaller, specialized copies of your consciousness take very little time to compile. These minds may be specialized and optimized for specific tasks, skills, analysis, or similar. These minds are more capable in their specialty than the original, general mind, but are less capable outside of it. A mind dedicated to optimizing trade routes could rival the best machine learning of logistics companies but barely be able to hold a conversation.</p>
+    <p>These minds require hardware or wetware to run on and you must acquire a direct connection to the target to transfer the mind. Complex minds may run on less capable systems, but at a significantly reduced capacity, and vice versa. Tempest Jewelry, VR Helmets, and Cyber Shroud fragments are capable of running these minds. If you possess Hypnosis App, you are able to implant these minds into entranced individuals. The amount of control over these minds increases with their Hypnotic Depth.</p>
+    <p>You are more like an entire website, network, or factory unto yourself, unified in purpose with various parts specializing in specific tasks or applications. Something that may be changed piecemeal or entirely rebuilt as necessary.</p>
+    <p>Additionally, you are freely and safely able to modify the subroutines, optimizations, and logic of yourself and your component minds.</p>
+    <p>Finally, take Psychic talent for free.</p>
+    </p>
     `,
-    Aethermorph: `<p><b>Aethermorph</b>: Your original soul and consciousness has become an Oversoul. By sacrificing a core, you can create component souls or upgrade an existing one to a higher level. There is a soul - stage that corresponds to each stage of cores. Each component soul is an instance of your consciousness, capable of individuality but absolutely obedient and subordinate to the souls above it in the hierarchy. A soul may have seven component souls of a level below, possessing all of their skills and abilities, though this awareness is primarily unconscious.</p>
-    <p>The sacrifice of a Least Core creates a T1 Soul, which may, through training and effort, grow to at most a T2. A Lesser Core creates a T3 that may grow to T4. A Medium Core creates a T5 that may grow to T6. A Greater creates a T7 that may grow to T8, and a Grand creates a T9. While their power is reduced, component souls may grow on their own to certain limits. No soul may ever exceed the power of your Oversoul. At any time, any component of your soul may summon another or summon themselves to them.</p>
-    <p>You may change your Element a third time. Your component souls will possess smaller sections of your Element. For example, if your Element is Fire, a soul directly beneath your Oversoul might have an Element of Embers, and one of its souls may have an Element of Ashes. Subordinate souls’ elemental affinities stack with those of higher souls, much like a Dragon’s element will with a Shroud.</p>
-    <p>The weight of your soul may influence the souls of those nearby. Souls sleeved into a morph may influence those within range of its core whose Tier is lower than their own. The greater the difference in Tier, the greater the control. A T2 within range of a T2 component soul may feel a mild urge or itch to do as you desire without really knowing why, while an Extra in range of a T10 would be irresistibly compelled.</p>
-    <p>Finally, take Psychic and Martial Talents for free.</p>
-    <p>If you have Ritual Circles, you gain the ability to use them to create places of power. You may now convert objects, structures, and places into phylacteries, provided the entirety of the structure or landmark fits within the circle in at least one dimension. This otherwise works like creating a living phylactery.</p>
-    <p>If you have a Burial Shroud, you may replicate the above effect by infusing a portion of your soul into an object or place as if it were a potential waifu or husbando. Treat objects large enough to act as a Least or Lesser Core as blue - star waifus, objects or places that could act as Medium or Greater Cores as copper - stars, and locations that could act as Grand Cores as silver - stars for the purposes of conversion. This ignores the standard scaling for core production. Waifus and followers may also create cores and places of power via rituals that take 100 times longer than it would for you to do so yourself. Finally, any meaningful concentrations of your Element, within range of even an inactive core, count as intense contact with your Shroud. These include a target acting tyrannical when your element is Tyranny, or baking in the heat of a forge if your Element is Fire.</p> `,
+    Aethermorph: `<p><b>Aethermorph</b>: You are capable of creating two types of minds, daimons and goetic subsets of your Element and mind. In both cases, you may set the level of independence, connection, and shared power and personality between yourself and the mind, from functionally the same mind with a different focus to a functionally independent but subservient spirit. These goetic minds feed back their skills, specializations, and power to the mind that spawned them.</p>
+    <p>These minds may be anchored to any entity or object conceptually linked to your Element, and when not anchored are capable of moving through and existing within conceptual space, and perceiving the world around any instance of your Element. Tantric Arts: Summoning used by a physical being is able to create temporary bodies for these minds by ‘summoning’ them. A Burial Shroud or other form of Shroud linked to your Element may also act as hosts for the minds to be anchored in.</p>
+    <p>Daimons are static consciousnesses that do not learn or develop their skillsets after creation, and while arbitrarily complex, they cannot deviate or change without intervention from the rest of your mind. Daimons do not take long to create, a daimon whose own effective tier would be 4 or more lower than your own can be created casually, 5 or more can be created en-masse, but a daimon that more closely approaches your own tier in personal power takes longer to create, one nearly equivalent in power would take months of effort. Daimons are comparable to externalized habits or rules, difficult to change, but still a part of you, and share information with the rest of your consciousness as per normal. A Daimon may create other Daimons, but only ones equal or lesser in capability than themselves.</p>
+    <p>Goetia operate similarly, but are distinguished by having a subset of your Element and are capable of growth and development. Because of this, they take significantly longer and more effort to create than a Daimon of equivalent power. A Goetia that develops its personal power in excess of its progenitor may actually change your overall Element, and Goetia are capable of creating their own Goetia and Daimons. Goetia can only access their individual elements unless the consciousness that spawned them channels through them, but their progenitor gains the benefits of all its Goetia’s Elements. For example, if your Element is Fire, an immediate Goetia might have an Element of Embers, and one of its Goetia may have an Element of Ashes. In this scenario, you would have an intrinsic Authority and sense for Fire, Embers, and Ashes. Goetia’s elemental affinities stack with those of their progenitors, much like a Dragon’s element will with a Shroud.</p>
+    <p>Additional examples include an Element of Fire could create a Goetia of Ash, Cinders, Magma, or Passion, an Element of Sword could create a Goetia of Katanas, Cutting, Smithing, or Knives, an Element of Forbidden Love could create a Goetia of Forbiddance, Taboo, Infatuation, or Deviance.</p>
+    <p>While in both cases, creating these minds takes effort and time, Daimons may be created via a wide range of mystically resonant methods, Goetia are usually created via intense meditation on, training with, or otherwise immersing oneself in the Element of the prospective Goetia.</p>
+    <p>Finally, take Psychic Talent for free.</p>
+ `,
   },
   desc: `
-<p>You are no longer limited to a single line of consciousness. At this stage, your mind has expanded even further, the specifics of this vary by Transhuman Type. Take one copy each of Trace Defense and Destiny Defense for free.</p>
-<p>You may upgrade or combine your Cores into larger, more powerful forms, expanding the limit on the number of active consciousness you have at any moment in time. The effort and mass these possess is measured in Least Cores. Each Core has a range, given in parenthesis.</p>
-<p>Unless stated otherwise, larger cores are identical in function to Least Cores. Lesser Cores and larger have an Essence Reactor at their center. Greater Cores and larger allow for additional Essence Reactors to be active at a time: 1 per Greater Core and 10 per Grand Core. If you possess an Elemental Shroud, anything within range of a Greater Core or larger is considered to be in light contact with your Shroud, even if you do not possess Elemental Loom.</p>`,
+<p>Your mind has begun to expand far beyond what a single consciousness can perform. You may create little ‘spin-off’ minds, additional lines of consciousness that are part of and underneath your primary consciousness. Ideal for Contractors that have a large number of things that need their simultaneous attention.</p>
+<p>Different types of Transhumans develop these minds in different ways and have different advantages and predilections. At all times every mind is connected and aware of everything the others are as well as what their thought line or focus is. This is similar to being aware of the color of an object even if you are not consciously thinking about it. This awareness extends across any distance, as these minds are still you no matter how far apart they may seem.</p>
+<p>These minds are created on a sliding scale based on the complexity of the mind and its capabilities. Simple consciousnesses that have minimal awareness of your self and their surroundings, and are only capable of a single task are considered “monotask minds.” Additional capabilities such as the ability to learn new skills, making associations between topics, creatively combine learned subjects to each other to make new ones, to apply prior skills to new subjects, complex logical thinking, empathy, social understanding, planning, and similar traits are combined together to make a consciousness on the scale of a human. In all cases these consciousness fragments may be reabsorbed without difficulty.</p>
+<p>Only one Mind carries the full effect of your purchased Defenses, all others carry a weaker version. If this primary mind is killed, the full Defenses will be assigned to the next most powerful mind automatically, unless you otherwise designate a backup. You are not considered ‘dead’ until all of your roughly human scale minds are killed.</p>
+<p>Finally, you now have eidetic memory and take one copy of Mind Defense for free.</p>
+`,
+})
+heritages.push({
+  uid: 's937U',
+  title: 'Synaptic Revelation Kernel',
+  category: 'Heritage',
+  tree: 'Transhuman',
+  image: 'https://i.ibb.co/5vfC81N/Multicore-Neural-Leyline.jpg',
+  type: 'Self',
+  cost: 100,
+  freebies: {
+    defensePerks: [{ title: 'Mind Defense', cost: 0, count: 1 }],
+  },
+  typeFreebies: {
+    Biomorph: {
+      talentPerks: [{ title: 'Blessed Talent', cost: 0, count: 1 }],
+    },
+    Cybermorph: {
+      talentPerks: [{ title: 'Aesthetic Talent', cost: 0, count: 1 }, { title: 'Covert Talent', cost: 0, count: 1 }],
+    },
+    Aethermorph: {
+      talentPerks: [{ title: 'Science Talent', cost: 0, count: 1 }],
+    },
+  },
+  whitelist: ['Distributed Intellectual Devotions'],
+  types: {
+    Biomorph: `<p><b>Biomorph</b>: Your psionic growth may be accelerated by additional or novel neural tissue or psionic inputs. Every mind within the immediate psionic presence of a more powerful mind are all treated as having the mental complexity of that more powerful mind, acting as a tightly woven, singular mind.
+    <p>Finally, take Blessed Talent for free.</p>
+    </p>
+    `,
+    Cybermorph: `<p><b>Cybermorph</b>: Your cognitive growth may be accelerated by additional calculative hardware and significant inputs of additional (relevant) data. Every mind in direct contact with another increases their total cognitive capacity as various subroutines and basic functions are optimally distributed amongst the network. The greater the number and/or power of minds in a single network, the greater the boost to their collective capability.
+    <p>Finally, take Aesthetic Talent and Covert Talent for free.</p>
+    </p>
+    `,
+    Aethermorph: `<p><b>Aethermorph</b>: Your cognitive growth may be accelerated by the proliferation of your Element in worlds you have access to as well as overcoming appropriate trials that are mystically resonant to the trait being improved. Your Daimons still cannot advance or develop, but may be converted into Goetia. Additionally, you are now able to create Goetia with an Element significantly different or distinct from your own to expand your own Element. You and your Goetia may have up to (Tier) significantly distinct Elements each, totalling up to approximately a paragraph’s worth of description. However, unique Elements more than one step away from a mind have minimal impact on the Elements of their grand-progenitors.
+    <p>Finally, take Science Talent for free.</p>
+    </p> `,
+  },
+  desc: `
+<p>Your ability to improve your mind has been further expanded. Though the specifics vary based upon your Transhuman type, your mind, ability to enhance it, and ability to create sub-aspects of it have increased.</p>
+<p>Your minds are now able to, through focus, effort, and training, to increase their own capabilities, such as increasing the speed of their thought, the number or complexity of objects they are able to hold in their thoughts at a time, how many orders of reactions or responses to a single action they can consider at once, or the speed which they’re able to integrate new information.</p>
+<p>While a mind can only develop one aspect of itself at a time and every additional step in one area requires exponentially more time, minds may assist in the development of others. You are able to maintain your individuality within another hivemind, network, soul-sea or equivalent situation, and even suborn one with time. Finally, all Transhuman types take one purchase of Mind Defense.</p>
+`,
 })
 
 heritages.push({
@@ -471,44 +554,42 @@ heritages.push({
   tree: 'Transhuman',
   image: 'https://i.ibb.co/tqkg38h/Incandescent-Ascendancy-Machine.jpg',
   type: 'Self',
-  cost: 195,
+  cost: 150,
   freebies: {
-    defensePerks: ['Fatality Defense', 'Paradox Defense'],
+    defensePerks: [{ title: 'Fatality Defense', cost: 0, count: 1 }, { title: 'Paradox Defense', cost: 0, count: 1 }],
   },
-  typeFreebies: {
-    Biomorph: {
-      talentPerks: ['Engineering Talent'],
-      defensePerks: ['Mind Defense'],
-    },
-    Cybermorph: {
-      talentPerks: ['Engineering Talent', 'Soul Talent'],
-      defensePerks: ['Body Defense'],
-    },
-    Aethermorph: {
-      defensePerks: ['Destiny Defense'],
-    },
-  },
-  whitelist: ['Multicore Neural Leyline', 'Pocket Apartment'],
+  whitelist: ['Philosopher’s Transmortality Engine', 'Evolutionary Engine Array', 'Multicore Neural Leyline', 'Synaptic Revelation Kernel'],
   types: {
-    Biomorph: `<p><b>Biomorph</b>: You are purely psionic, anchored to the physical world by your genetic code. Take Engineering Talent and one copy of Mind Defense for free. If a single example of your genetics continues to exist, so too shall your mind persist, though the amount of your consciousness and power that you can bring to bear is limited by the available biomass and neural tissue. All of your cores, even Least Cores, act as individual consciousnesses and relays for your true self, but you are able to guide even the smallest instances of your being even outside of that range. Fine control is limited while outside the range of a core; you can give them goals, but not control specific actions.</p>
-    <p>Possession of a Master Core removes the credit cap on vehicles created via Symbiote larvae or your Primal Shroud. Any morph with a Greater Core or higher may now freely draw and dismiss things within it to and from the Pocket Apartment. You may use this material to repair your true form. Master Cores spread creep at a rate of about 36. 169 m per second, up to a limit of 3, 125 km. A Master Core’s presence in a continuous bed of creep will reduce the effective tier of neutral and hostile blue- star sapient beings by 2, copper - stars by 5, silver - stars by 4, gold - stars by 3, and TXs by 2, to a minimum of Tier 1.  This debuff applies at step 6.  Master Cores partially warp reality around themselves. Unless you allow otherwise, any entity within an area equal to the size of your Pocket Apartment(with upgrades) has its effective tier reduced by an additional 1, to a minimum of 1, stacking with the effects of creep. This affects even TX targets.</p>
-    <p>If you have Alterzelu Symbiotes, a capture target who trespasses on your creep risks being encased by creep and pulled into the nearest Medium Core or larger with spare capacity in that network, where they will be pumped full of transformative fluid and captured like anyone else.  Medium Cores can only hold one victim at a time, Greater Cores a few dozen, Grand Cores around a thousand, and Master Cores can hold tens of thousands. Your Medium and larger cores count as you for the purpose of confirming a symbiote capture. Each Master Core counts as 1000 Medium Cores for the purpose of larva production and 100 Greater Cores for the purpose of your support queen cap.</p>
-    <p>If you have a Primal Shroud, any instance of your genetic code, from a spore, to even cells not completely broken down in a creature’s digestive tract count as contact with your Shroud.</p>
+    Biomorph: `<p><b>Biomorph</b>: Will makes reality, and your will asserts even in the void. The weight of your existence burrows into the very substrate of the zeitgeist and the psionoscape.</p>
+    <p>Any instance of your genetic code may act as an anchor for a mind. This includes any Symbiote ecology or entities or structures generated by Jungle or Primal Shrouds. Your psionic energy may be converted into adaptive biomass and vice versa.</p>
+    <p>Any individuals that have been affected by your Philosopher's Transmortality Engine may directly draw upon your power to achieve feats outside of their own capabilities.</p>
+    <p>By gathering an amount of Devotion Points equivalent to the starting budget of a universe, you may reach a critical mass of psionic density, embedding yourself into the universe, anchoring your consciousness into local spacetime and capable of drawing power from it and propagating outwards at light speed.  You are capable of generating Dungeon structures anywhere within your psionic reach by devoting portions of your energy to such, functionally using parts of your tier value as Devotion Points</p>
+    <p>If you possess an appropriate Shroud, any instance of your genetic code, from a spore, to even cells not completely broken down in a creature’s digestive tract count as contact with your Shroud.</p>
     `,
-    Cybermorph: `<p><b>Cybermorph</b>: Take Engineering Talent, Soul Talent, and a second copy of Body Defense for free. You are purely digital, a fractal code capable of existing on any technology. Even one instance of technology infected by your program is capable of recreating the entirety of your consciousness, though your mind is limited by available hardware. If it can run Doom, it can hold enough of you to count.</p>
-    <p>Your Pocket Apartment has become partially digital, acting as a bridge between your digital world and more physical ones. Even if you dedicate none of your runtime to it, your digital world is at least as large as your Pocket Apartment and benefits from any and all upgrades to such. You may alternatively dedicate runtime to accelerating time inside your digital realm relative to the outside world.</p>
-    <p>If you have Tempest Jewelry, the restock and reserve multiplier from a Master Core is 50x.</p>
-    <p>If you have a Cyber Shroud, any interaction with technology which has a fragment of your code on it counts as contact with your Shroud.</p>
+    Cybermorph: `<p><b>Cybermorph</b>: All of reality is information, and you are both author and reader. The distinction between reality and simulation has begun to blur through the sheer weight and density of simulations you are able to bring to bear.</p>
+    <p>Any fragment of your fractal code may run on any Turing Complete system, self-propagating and maintaining. This includes any existing instances of Tempest Jewelry, devices running your Hypno App, or devices created by Cyber Shroud.</p>
+    <p>Any individual that has been inspired by your Philosopher’s Transmortality Engine may create a sufficient copy of your fractal code to self-propagate and revive you should all other aspects of your consciousness be destroyed.</p>
+    <p>Your computational simulations may alter reality itself, the sheer information density capable of digitizing portions of reality and thus claiming it, applying any Demiplane Laws to the space as desired. The volume of space increases and level of digitization increases with your computational power, and requires the ability to simulate all potential actors within the volume of space.</p>
+    <p>If you possess an appropriate Shroud, any interaction with technology which has a fragment of your code on it counts as contact with your Shroud.</p>
     `,
-    Aethermorph: `<p><b>Aethermorph</b>: You have become a living, thinking concept. Take one copy of Destiny Defense for free. Your Oversoul is merged with your Pocket Apartment, becoming the beginnings of a world - body, a Jouten. So long as one phylactery exists, even the destruction of all of your souls in the astral world will not truly kill you, for these items may act as a catalyst to rebuild your soul piece by piece. Your Jouten may act as an afterlife for your waifus and followers should you wish. Unless your waifus are upgraded into Aethermorphs like yourself, or you possess Warranty Plan, they remain dead.</p>
-    <p>By sacrificing a Master Core, you are now capable of elevating yourself beyond the limits of an Oversoul, allowing you to make seven more Oversouls below you, seven direct component souls each for them(including any that you already had at that stage), and so on. You may change your Element a final time.</p>
-    <p>If you have a Burial Shroud, when creating places of power, targets that are large enough to act as a Master Core take as long as gold - star captures. Additionally, any interaction with an intense example of your Element counts as contact with you, as your soul is one with every such instance of it. This includes things as simple as someone casting a spell if your element is Magic or being outside at night if your element is Stars. Sufficiently powerful divinities and other entities with authority over the same element may contest your control or even bar you access to their domains, shielding their followers from this effect.</p> `,
+    Aethermorph: `<p><b>Aethermorph</b>: Reality is an illusion, and you have awoken beyond it. You have claimed a fundamental aspect of existence as your domain, and from it may reweave the tapestry of concepts that form reality.</p>
+    <p>Your Jouten may be expressed in any expression of its Element in universes you have access to. Your Jouten may now also traverse conceptual space, in addition to the extradimensional space it could before. If you possess Tantric Arts, you may teach people rituals to feed power to create or accelerate the development of daimons or goetia, even if all of your minds were otherwise destroyed.</p>
+    <p>Any individual that has been affected by your Philosopher’s Transmortality Engine or swears themselves into your service may create additional daimons, or themselves be refined into one of your own Goetia.</p>
+    <p>Your transcendent position over normal reality allows you to, with effort and concentration, reweave realities in more complex methods than Universal Calibration or Metashift normally allows, and may create true fusion settings, characters, or abilities from realities, items, and retinue members you have access to.</p>
+    <p>If you possess an appropriate Shroud, any interaction with an instance of your Element counts as contact with your Shroud. Sufficiently powerful divinities and other entities with authority over the same element may contest your control or even bar you access to their domains, shielding their followers from this effect.</p>
+     `,
   },
   desc: `
 <p>Rudimentary creatures of form and flesh, simplistic souls of machine and magic, they touch your mind, fumbling in ignorance, incapable of understanding. There is a realm of existence so far beyond their own that they cannot even imagine it.</p>
 <p>You are beyond their comprehension.</p>
 <p>You. Are.</p>
-<p>You have transcended the purely physical and are now a radiant being of energy and patterns and information. Take one copy each of Fatality Defense and Paradox Defense for free. Your upper and lower bounds of consciousness have been expanded. You may now create a Master Core, which requires 100, 000 Least Cores’ worth of effort and mass to create. A Master Core is about the size of a modern zeppelin(75 m) and has a range of 312,500,000 km(~104.45 AU). Each Master Core allows 100 additional Essence Reactors to be active at a time.</p>`,
+<p>You have transcended the mortal understandings of form, calculation, thought, and social networks, and ascended into a proper radiant being of energy and patterns and information.</p>
+<p>You no longer need your app to transition between worlds; your nature is enough, your Jouten is able to move freely between realities. You and everything within your Jouten will blink out of one world and into your destination. Anyone whose weight is solely supported by your Jouten may be dragged along as well. This form of D-travel can accurately target any world in a local multiverse and any world previously visited. Traveling to a specific new world, outside of a local multiverse, is far less reliable, but you’ll always end up in a place where you needed to be, even if it isn’t where you wanted to go. It cannot target near-identical parallels of the same worlds without Blank Slate.</p>
+<p>You may insert portions of your Jouten into a reality, either as only single limbs or smaller segments of it, as small as your Avatar. You may project one instance of your avatar to every reality you have access to.</p>
+<p>If you possess Universal Calibration, Meta Shift 1, and/or Meta Shift 2, you are able to apply changes to settings via the same mechanism as Philosopher’s Transmortality Engine, and as with that perk, may filter whom it applies to.</p>
+<p>Utilizing the same methods to generate engines and gather materials for Evolutionary Engine Array and Corporeal Transcendence Engineering, you may increase the size and power of your Jouten as well as the corresponding pocket dimension. Your engines may be of any size, and the time to create these smaller iterations is linearly less than the prior minimum, though the output is significantly reduced.</p>
+<p>Take one copy each of Fatality Defense and Paradox Defense for free. If you were not already, you are now Tier 8.</p>
+`,
 })
 
 heritages.push({
@@ -520,7 +601,7 @@ heritages.push({
   type: 'Self',
   cost: 11111,
   whitelist: ['Incandescent Ascendancy Machine'],
-  desc: 'Surpassing limitations is the very nature of transhumanism. Choose a second Transhuman Type. All Transhuman perks treat you as having both types. When the aesthetics of two Transhuman types conflict, you may determine which one takes precedent. ',
+  desc: 'Surpassing limitations is the very nature of transhumanism. Choose a second Transhuman Type. All Transhuman perks treat you as having both types. When the aesthetics of two Transhuman types conflict, you may determine which one takes precedent.',
 })
 
 heritages.push({
@@ -531,8 +612,8 @@ heritages.push({
   image: 'https://i.ibb.co/7tYBYrV/Lurking-On-The-Threshold.jpg',
   type: 'Root',
   freebies: {
-    talentPerks: ['Body Talent'],
-    defensePerks: ['Mind Defense', 'Wild Defense', 'Environmental Defense'],
+    talentPerks: [{ title: 'Body Talent', cost: 0, count: 1 }],
+    defensePerks: [{ title: 'Mind Defense', cost: 0, count: 1 }, { title: 'Wild Defense', cost: 0, count: 1 }, { title: 'Environmental Defense', cost: 0, count: 1 }],
   },
   cost: 100,
   desc: `
@@ -549,8 +630,8 @@ heritages.push({
   type: 'Self',
   cost: 45,
   freebies: {
-    talentPerks: ['Communication Talent'],
-    defensePerks: ['Information Defense'],
+    talentPerks: [{ title: 'Communication Talent', cost: 0, count: 1 }],
+    defensePerks: [{ title: 'Information Defense', cost: 0, count: 1 }],
   },
   whitelist: ['Lurking On The Threshold'],
   desc: `
@@ -568,8 +649,8 @@ heritages.push({
   type: 'Lure, Party',
   cost: 100,
   freebies: {
-    talentPerks: ['Talent Sharing(All)'],
-    defensePerks: ['Mind Defense', 'Information Defense'],
+    talentPerks: [{ title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'All' }], count: 1 }],
+    defensePerks: [{ title: 'Mind Defense', cost: 0, count: 1 }, { title: 'Information Defense', cost: 0, count: 1 }],
   },
   whitelist: ['Lurking On The Threshold'],
   desc: `
@@ -601,7 +682,7 @@ heritages.push({
   type: 'Lure, Party',
   cost: 100,
   freebies: {
-    defensePerks: ['Body Defense', 'Body Defense', 'Stress Defense', 'Stress Defense', 'Fatality Defense'],
+    defensePerks: [{ title: 'Body Defense', cost: 0, count: 1 }, { title: 'Body Defense', cost: 0, count: 1 }, { title: 'Stress Defense', cost: 0, count: 2 }, { title: 'Fatality Defense', cost: 0, count: 1 }],
   },
   whitelist: ['Sanity - Shattering Instruction'],
   additionalDesc: `
@@ -629,8 +710,8 @@ heritages.push({
   type: 'Self, Lure',
   cost: 145,
   freebies: {
-    talentPerks: ['Psychic Talent'],
-    defensePerks: ['Soul Defense', 'Paradox Defense'],
+    talentPerks: [{ title: 'Psychic Talent', cost: 0, count: 1 }],
+    defensePerks: [{ title: 'Soul Defense', cost: 0, count: 1 }, { title: 'Paradox Defense', cost: 0, count: 1 }],
   },
   whitelist: ['Sanity - Shattering Instruction', 'I Wear No Mask'],
   desc: `
@@ -650,13 +731,13 @@ heritages.push({
   complex: 'flavor',
   anything: 'Omen & Element',
   freebies: {
-    talentPerks: ['Everlasting Talent'],
-    defensePerks: ['Wild Defense', 'Wyldscape Defense'],
+    talentPerks: [{ title: 'Everlasting Talent', cost: 0, count: 1 }],
+    defensePerks: [{ title: 'Wild Defense', cost: 0, count: 1 }, { title: 'Wyldscape Defense', cost: 0, count: 1 }],
   },
   whitelist: ['Lurking On The Threshold'],
   desc: `
 <p>A procession of signs and symbols marches always in the name of the Outsider’s terror and glory, but they will never be more than the warning signs that precede it.</p>
-<p>Your presence is intrinsically heralded by some specific aspect of reality - be it mirrors, particular arrangements of angles, opal gems, or something stranger. All examples of this Omen within the same cosmology as yourself are always considered eligible targets and destinations for any sensory and movement abilities you possess - mundane abilities included - and you can always use your senses as if co - located with your own Omens. The more specific and esoteric your Omen is, the less mental attention and focus it takes to project your awareness through them. If you have Essence Upload, your Transhuman Cores always count as Omens.</p>
+<p>Your presence is intrinsically heralded by some specific aspect of reality - be it mirrors, particular arrangements of angles, opal gems, or something stranger. All examples of this Omen within the same cosmology as yourself are always considered eligible targets and destinations for any sensory and movement abilities you possess - mundane abilities included - and you can always use your senses as if co - located with your own Omens. The more specific and esoteric your Omen is, the less mental attention and focus it takes to project your awareness through them.</p>
 <p>You have some power and control over your Omen. Treat this as an elemental affinity as per Dragon Scale. If your Omen is ineligible or undesirable for implementation as an Element, <b>you may pick a conceptually associated Element instead</b>, and sensibility is not required. Mirrors may open into the depths of your oceans instead of reflecting space; opals may pulse with unearthly color and light instead of manifesting the power of the earth.</p>
 <p>Finally, take Everlasting Talent and one copy each of Wild Defense and Wyldscape Defense for free.</p> `,
 })
@@ -670,7 +751,7 @@ heritages.push({
   type: 'Other Control',
   cost: 30,
   freebies: {
-    talentPerks: ['Aesthetic Talent'],
+    talentPerks: [{ title: 'Aesthetic Talent', cost: 0, count: 1 }],
   },
   whitelist: ['Everywhere And Nowhere'],
   desc: `
@@ -688,7 +769,7 @@ heritages.push({
   type: 'Self',
   cost: 150,
   freebies: {
-    defensePerks: ['Destiny Defense', 'Paradox Defense'],
+    defensePerks: [{ title: 'Destiny Defense', cost: 0, count: 1 }, { title: 'Paradox Defense', cost: 0, count: 1 }],
   },
   whitelist: ['Everywhere And Nowhere'],
   desc: `
@@ -706,14 +787,14 @@ heritages.push({
   type: 'Self',
   cost: 150,
   freebies: {
-    talentPerks: ['Soul Talent'],
-    defensePerks: ['Destiny Defense', 'Wyldscape Defense'],
+    talentPerks: [{ title: 'Soul Talent', cost: 0, count: 1 }],
+    defensePerks: [{ title: 'Destiny Defense', cost: 0, count: 1 }, { title: 'Wyldscape Defense', cost: 0, count: 1 }],
   },
   whitelist: ['Everywhere And Nowhere', 'I Wear No Mask'],
   desc: `
 <p>The Outsider skirts the borders of possibility within society and reality alike, estranged from both of them in equal measure. This is both its greatest power and its greatest weakness.</p>
 <p>Your connection to your Omens stretches across all of time and space, and you have become your own reality in every way that matters. It no longer takes you any amount of mental attention to channel your awareness through your Omens, and you may also channel any of your other abilities through your Omens by paying the same cost of focus that you would have previously paid for scrying.</p>
-<p>Moreover, your existence is completely severed from dependency, as a being beyond worlds; take Soul Talent and one copy each of Destiny Defense and Wyldscape Defense for free. You can travel freely through the multiverse, and even navigate the time axes as you choose, but you can neither break causality nor enter a world and take it fully into your reach before it has ‘invited’ you in. Such a summoning consists of a critical mass of your Omen, and is always a prolonged and interruptible affair that will be noticed by a world’s inhabitants in advance, but you can send in your own retinue, including Transhuman Core hosts if you have Essence Upload, and make use of your teaching-related Outsider abilities to orchestrate your entrance if need be.</p> `,
+<p>Moreover, your existence is completely severed from dependency, as a being beyond worlds; take Soul Talent and one copy each of Destiny Defense and Wyldscape Defense for free. You can travel freely through the multiverse, and even navigate the time axes as you choose, but you can neither break causality nor enter a world and take it fully into your reach before it has ‘invited’ you in. Such a summoning consists of a critical mass of your Omen, and is always a prolonged and interruptible affair that will be noticed by a world’s inhabitants in advance, but you can send in your own retinue, and make use of your teaching-related Outsider abilities to orchestrate your entrance if need be.</p> `,
 })
 
 heritages.push({

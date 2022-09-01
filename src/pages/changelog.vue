@@ -5,6 +5,27 @@
     </h2>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
+        28 September 2022
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>~90 new user submitted characters, new missions</li>
+        <li>Transhuman rework added.</li>
+        <li>Most of the rules updated to new stable version</li>
+        <li>Changed code for freebies distribution a bit, so now Talent Sharing freebies should work, but expect bugs.</li>
+        <li>Bugfixes & small changes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
+        28 August 2022
+      </h3>
+      <ul class="list-decimal list-inside">
+        <li>~90 new user submitted characters, new missions</li>
+        <li>Bugfixes & small changes</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-lg font-semibold text-center py-2">
         25 August 2022
       </h3>
       <ul class="list-decimal list-inside">

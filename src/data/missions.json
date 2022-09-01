@@ -1,6 +1,248 @@
 [
   
   {
+    "source": "",
+    "conditions": [
+      {
+        "value": "Cannot purchase any companions from The Witcher or in case you already have one you can’t use them."
+      },
+      {
+        "value": "Can only choose 5 companions up to tier 5, to accompany you on this mission"
+      },
+      {
+        "value": "Complete this mission before the end of the events of canon"
+      },
+      {
+        "value": "Need to complete at least 5 additional objectives to success"
+      }
+    ],
+    "budget": 100,
+    "image": "",
+    "rewardType": "Credits",
+    "scope": "Grand",
+    "title": "My Witcher School",
+    "reward": "300",
+    "loca": "The Witcher",
+    "author": "irugaa0",
+    "desc": "Establish or take over a Witcher school and be recognized as a major power around the world.",
+    "objectives": [
+      {
+        "value": "Recruit a known witcher from cannon to join you",
+        "reward": "10",
+        "type": "Credits"
+      },
+      {
+        "type": "Credits",
+        "reward": "50",
+        "value": "Recruit 5 known witchers from cannon to join you"
+      },
+      {
+        "reward": "10",
+        "value": "Be widely recognized as a famous school",
+        "type": "Credits"
+      },
+      {
+        "value": "Be widely recognized as the largest school",
+        "reward": "30",
+        "type": "Credits"
+      },
+      {
+        "value": "Be widely recognized as the strongest school",
+        "type": "Credits",
+        "reward": "50"
+      },
+      {
+        "reward": "15 per famous member.",
+        "value": "Have a famous Witcher from your school",
+        "type": "Credits"
+      },
+      {
+        "value": "Recruit and train at least 10 orphans ",
+        "reward": "10",
+        "type": "Credits"
+      },
+      {
+        "type": "Credits",
+        "value": "Recruit and train at least 20 orphans ",
+        "reward": "20"
+      },
+      {
+        "reward": "30",
+        "type": "Credits",
+        "value": "Recruit and train at least 50 orphans "
+      },
+      {
+        "value": "Recruit and train at least 100 orphans ",
+        "type": "Credits",
+        "reward": "50"
+      },
+      {
+        "value": "Recruit or train at least 1 sorcerer/witch",
+        "reward": "20",
+        "type": "Credits"
+      },
+      {
+        "reward": "50",
+        "value": "Recruit or train at least 3 sorcerers/witches",
+        "type": "Credits"
+      },
+      {
+        "type": "Credits",
+        "reward": "150",
+        "value": "Recruit or train at least 10 sorcerers/witches"
+      },
+      {
+        "reward": "a Template stack I of anyone with the tag Crafter",
+        "value": "Recruit or train a Blacksmith and an Alchemist",
+        "type": "Perks"
+      },
+      {
+        "value": "Recruit or train a Blacksmith and an Alchemist",
+        "type": "Perks",
+        "reward": " Template stack II upgrade"
+      },
+      {
+        "type": "Perks",
+        "value": "Create a gear or weapon Diagram for your school ",
+        "reward": "Engineering talent or 10 credits"
+      },
+      {
+        "value": "Create 10 gears or weapons Diagrams for your school ",
+        "reward": "Aesthetic talent or 10 credits",
+        "type": "Perks"
+      },
+      {
+        "reward": "Soul talent or 10 credits",
+        "type": "Perks",
+        "value": "Create a Magical Sign for your school"
+      },
+      {
+        "reward": "8",
+        "type": "Credits",
+        "value": "Have 20% of the recruits of the opposite gender. (EX:8 male :2 Female / or 8 Female :2 male)"
+      },
+      {
+        "value": "Have 50% of the recruits of the opposite gender. (EX:5 male: 5 Female)",
+        "type": "Perks",
+        "reward": "1 Lure of your choice"
+      },
+      {
+        "type": "Credits",
+        "reward": "15",
+        "value": "Have a witcher creation success rate of 30% or higher"
+      },
+      {
+        "reward": "50",
+        "value": "Have a witcher creation success rate of 50% or higher",
+        "type": "Credits"
+      },
+      {
+        "type": "Credits",
+        "reward": "75",
+        "value": "Have a witcher creation success rate of 75% or higher"
+      },
+      {
+        "value": "Have a witcher creation success rate of 100% or higher",
+        "type": "Credits",
+        "reward": "100"
+      },
+      {
+        "type": "Credits",
+        "value": "Have at least 10 active witchers in your school",
+        "reward": "10"
+      },
+      {
+        "value": "Have at least 20 active witchers in your school",
+        "type": "Credits",
+        "reward": "25"
+      },
+      {
+        "reward": "75",
+        "type": "Credits",
+        "value": "Have at least 50 active witchers in your school"
+      },
+      {
+        "reward": "150",
+        "value": "Have at least 100 active witchers in your school",
+        "type": "Credits"
+      },
+      {
+        "type": "Credits",
+        "value": "Actively fight the wild hunt",
+        "reward": "10"
+      },
+      {
+        "reward": "10",
+        "value": "Kill a member of the wild hunt",
+        "type": "Credits"
+      },
+      {
+        "reward": "20",
+        "value": "Kill an official of the wild hunt",
+        "type": "Credits"
+      },
+      {
+        "reward": "70",
+        "value": "Kill the entire wild hunt",
+        "type": "Credits"
+      }
+    ],
+    "uid": "QACWa"
+  },
+  {
+    "desc": "There is an innocent young girl, a self-proclaimed nun in-training who professes her faith in god and his divine virtues. Your job is to utterly and totally defile and corrupt that girl. Index Librorum Prohibitorum, she possesses the knowledge of 103.000 forbidden grimoires, each of which could turn a normal person to madness. As such, it isn’t going to be easy to corrupt her. You must steal her away from any guardians or people hunting her, bring her to a location and steadily break down her virtue. All the while avoiding capture by any of these that would protect her purity.",
+    "title": "Index of Perverse Books",
+    "scope": "Quick",
+    "reward": "Index’s Walking Church artifact is repaired if destroyed and transforms into a blasphemous artifact instead. In addition to its defensive properties, it gains the power to corrupt any holy object, holy ground, inverting its normal properties. In addition, wearing it heavily strengthens any sin based magics and it can transform into tentacles at command. Index herself is granted a T5 TS of a Demon or Fallen Angel of your choice. Alternatively, you may take 100 Credits instead.",
+    "rewardType": "Other",
+    "budget": 360,
+    "objectives": [],
+    "conditions": [
+      {
+        "value": "For the purpose of this mission Index is immune to bindings and lures are only half as effective."
+      },
+      {
+        "value": "Index must renounce her faith in god and any loyalty to his earthly church to instead vow eternal submission to you."
+      },
+      {
+        "value": "You must make her indulge in each of the seven deadly sins knowingly."
+      },
+      {
+        "value": "Only retinue members who are devils, fallen angels or heavily aligned with sin may help you on this mission."
+      },
+      {
+        "value": "For the purpose of this mission, you and any retinue members helping you can not step on holy ground unless invited by Index or a member of clergy. You will also be repelled by holy objects, weakening your tier by 1 when in its presence and 2 when touching it. (Duration 30 minutes)"
+      }
+    ],
+    "source": "",
+    "loca": "To Aru series",
+    "author": "Heaven Canceler",
+    "image": "",
+    "uid": "nkkhK"
+  },
+  {
+    "objectives": [],
+    "loca": "Fairy Tail",
+    "image": "https://i.imgur.com/9g9aEe5.jpg",
+    "desc": "Some of our contractors are just looking for some simple repetitive television, ya know like a police procedural, so here's the rub: Complete Quests whilst a member of a mage guild.\nC RANK: 5 CREDITS,\nB RANK: 10 CREDITS,\nA RANK: 20 CREDITS,\nS RANK: 40 CREDITS,\nSS RANK: 80 CREDITS,\nSSS RANK: 160, CREDITS. ",
+    "source": "",
+    "budget": 180,
+    "author": "jollymerr",
+    "rewardType": "Credits",
+    "reward": "C-5, B-10, A-20, S-40, SS-80, SSS-160",
+    "conditions": [
+      {
+        "value": "D Rank and bellow don't count, so no gardening for you, other than that go ham"
+      },
+      {
+        "value": "This Quest is an on going quest and will be constantly active whilst you are in this world or are in world with a quest system in place"
+      }
+    ],
+    "scope": "Standard",
+    "title": "Congratulations you're an Advent- Wizard, you're a Wizard",
+    "uid": "VfnuG"
+  },
+  {
     "rewardType": "Credits",
     "scope": "Standard",
     "author": "CyrusFallen",
@@ -4817,8 +5059,8 @@
     "uid": "oVHKO"
   },
   {
+    "rewardType": "Other",
     "author": "Ratcatcher",
-    "budget": 85,
     "conditions": [
       {
         "value": "Forage: only local captures can help"
@@ -4836,32 +5078,37 @@
         "value": "Do not be discovered by Tendo Soun, Ranma's parents, Kuno Tatewaki, or Cologne until all targets have been captured (fulfilling additional objective #1 allows Cologne to find out without causing an automatic failure)."
       }
     ],
-    "desc": "Saotome Ranma is well known for two things aside his strength: the beautiful and powerful love interests he just can't decide on, and his own gender-changing curse. So we thought, why not seduce all of them? Your goal is to conquer the love of Saotome Ranma, his fiancees, and Tendo Nabiki and Kasumi.",
-    "image": "https://i.ibb.co/S01k6Dz/sample-4c7416e9a4985448f69ff075d8cfa4f2.jpg",
-    "loca": "Ranma ½",
     "objectives": [
       {
+        "value": "Seduce Cologne and Ninomiya Hinako through the same methods as the main mission",
         "reward": "TS1 as Happosai (Ranma ½) or 50 credits",
-        "value": "Seduce Cologne and Ninomiya Hinako through the same methods as the main mission"
+        "type": "Other"
       },
       {
+        "type": "Companions",
         "reward": "The twins Pink and Link",
         "value": "Seduce Herb through the same methods as the main mission and make him renounce his manhood to be with you"
       },
       {
+        "type": "Companions",
         "reward": "The twins Ling Ling & Lang Lang",
         "value": "Seduce Rouge through the same methods as the main mission"
       },
       {
+        "type": "Credits",
         "reward": "Twice the capture price",
-        "value": "Convince Saotome Nodoka that you did well making Ranma part of your retinue and have seduced by Ranma herself"
+        "value": "Convince Saotome Nodoka that you did well making Ranma part of your retinue and have her seduced by Ranma herself"
       }
     ],
-    "reward": "Template Stacking 1 for Wei Wuxian (Grandmaster of Demonic Cultivation: Mo Dao Zu Shi) or 200 credits",
+    "loca": "Ranma ½",
+    "desc": "Saotome Ranma is well known for two things aside his strength: the beautiful and powerful love interests he just can't decide on, and his own gender-changing curse. So we thought, why not seduce all of them? Your goal is to conquer the love of Saotome Ranma, his fiancees, and Tendo Nabiki and Kasumi.",
+    "image": "https://i.ibb.co/S01k6Dz/sample-4c7416e9a4985448f69ff075d8cfa4f2.jpg",
+    "budget": 85,
+    "uid": "djDJp",
     "scope": "Grand",
     "source": "",
-    "title": "Fighter Stable",
-    "uid": "djDJp"
+    "reward": "Template Stacking 1 for Wei Wuxian (Grandmaster of Demonic Cultivation: Mo Dao Zu Shi) or 200 credits",
+    "title": "Fighter Stable"
   },
   {
     "author": "Sarrior",

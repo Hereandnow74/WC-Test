@@ -21,11 +21,14 @@ const router = createRouter({
   routes,
   scrollBehavior(to, from, savedPosition) {
     if (to.hash) {
-      return {
-        el: to.hash,
-        behavior: 'smooth',
-        top: 78,
-      }
+      const element = document.querySelector(to.hash.replaceAll(' ', '\\ '))
+      nextTick(() => element?.scrollIntoView({ behavior: 'smooth' }))
+      // element?.scrollIntoView({ behavior: 'smooth' })
+      return
+      // return {
+      //   selector: to.hash,
+      //   behavior: 'smooth',
+      // }
     }
     if (savedPosition)
       return savedPosition

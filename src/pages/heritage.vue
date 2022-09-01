@@ -1,11 +1,11 @@
 <template>
   <div class="sm:p-2 pb-8">
     <div class="mb-4 max-w-4xl mx-auto">
-      <Table
+      <!-- <Table
         :headers="['&sum;', 'Tier']"
         :rows="heritageTiers"
         class="float-right m-2 mt-4"
-      />
+      /> -->
       <Desc :desc="desc" class="p-2 bg-violet-200 dark:bg-violet-900" />
     </div>
     <div class="flex gap-x-4 gap-y-2 gap flex-wrap justify-center mb-4">
@@ -67,7 +67,7 @@
         </template>
         <template #rules>
           <h6 v-if="flags.isTranshuman && hr.tree === 'Transhuman'" class="text-center font-sm text-gray-600 dark:text-gray-400">
-            <span > ({{ flags.transhumanType }})</span>
+            <span> ({{ flags.transhumanType }})</span>
           </h6>
         </template>
         <template #underDesc>

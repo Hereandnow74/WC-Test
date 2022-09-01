@@ -1,5 +1,5 @@
 import { find, findIndex, intersection, intersectionWith, isArray, isEmpty, isObject, mergeWith, remove, sample, uniqBy } from 'lodash-es'
-import { DLCPerk, PerkFull } from 'global'
+import { DLCPerk, Freebie, PerkFull } from 'global'
 import { shroudElements } from '~/data/binding'
 import { Heritage } from '~/data/heritage'
 import { Intensity } from '~/data/intensity'
@@ -22,16 +22,16 @@ const { activeChallenges } = useChallenges()
 
 // General functions
 export function deleteFreebies(freebies: object) {
-  for (const [key, perk] of Object.entries(freebies) as [keyof typeof allForSave, string[]][]) {
-    perk.forEach((n: string) => {
-      const ind = findIndex(allForSave[key].value, { title: n })
+  for (const [key, perks] of Object.entries(freebies) as [keyof typeof allForSave, Freebie[]][]) {
+    perks.forEach((n: Freebie) => {
+      const ind = findIndex(allForSave[key].value, { title: n.title })
       if (ind !== -1) {
         if (allForSave[key].value[ind].count && allForSave[key].value[ind].count > 1) {
           allForSave[key].value[ind].count -= 1
         }
         else {
           allForSave[key].value.splice(ind, 1)
-          allEffects.value.splice(allEffects.value.indexOf(n), 1)
+          allEffects.value.splice(allEffects.value.indexOf(n.title), 1)
         }
       }
     })
@@ -39,12 +39,12 @@ export function deleteFreebies(freebies: object) {
 }
 
 export function addFreebies(freebies: object) {
-  for (const [key, perk] of Object.entries(freebies) as [keyof typeof allForSave, string[]][]) {
-    perk.forEach((title: string) => {
-      const ind = findIndex(allForSave[key].value, { title })
+  for (const [key, perk] of Object.entries(freebies) as [keyof typeof allForSave, Freebie[]][]) {
+    perk.forEach((freebie: Freebie) => {
+      const ind = findIndex(allForSave[key].value, { title: freebie.title })
       if (ind === -1) {
-        allForSave[key].value.push({ title, cost: 0, count: 1 })
-        allEffects.value.push(title)
+        allForSave[key].value.push(freebie)
+        allEffects.value.push(freebie.title)
       }
       else {
         if (allForSave[key].value[ind].count)

@@ -162,7 +162,7 @@ const {
   startingWorld, startingOrigin, intensities, binding, homePerks, defensePerks,
   companions, heritage, talentPerks, waifuPerks, ridePerks, miscPerks, luresBought, genericWaifuPerks,
   companionsCost, baseBudget, companionProfit, companionProfitSold, otherPerks, loan, csr,
-  usedHeritageDiscount, talentsDiscount, defensesDiscount, defenseRetinueDiscount, patron, specificMods, specificModsCost, missionRewardCredits,
+  usedHeritageDiscount, talentsDiscount, defensesDiscount, defenseRetinueDiscount, patron, specificMods, specificModsCost, missionRewardCredits, pvpPerks,
 } = useStore()
 
 const { activeChallenges } = useChallenges()
@@ -243,6 +243,9 @@ export function copyText() {
       a += `${x.title} +${x.intensity > 10 ? x.intensity : baseBudget.value * x.intensity} [${(fullCost.c += x.intensity > 10 ? x.intensity : baseBudget.value * x.intensity, fullCost.c)}]\n\n`
     , '')}`
     : ''
+
+  full += pvpPerks.value.length ? `${buildString('Orbs', pvpPerks.value, fullCost)}\n` : ''
+
   fullCost.c -= startingOrigin.value.cost || 0
   full += originTextClean.value ? `${originTextClean.value} -${startingOrigin.value.cost} [${fullCost.c}]\n\n` : ''
   if (usedHeritageDiscount.value > 0) {

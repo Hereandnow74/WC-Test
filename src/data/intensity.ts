@@ -44,8 +44,8 @@ intensity.push({
   title: 'Couple’s Account (Cooperative)',
   image: 'https://i.ibb.co/Vt1Sphq/Couple-SAccount.jpg',
   intensity: 0,
-  special: 'Chargen only. May not be taken on DR11.',
-  blacklist: ['DR11 start'],
+  special: 'Chargen only. May not be taken on DRX.',
+  blacklist: ['DRX start'],
   chargen: true,
   desc: `Your spouse or significant other is a contractor like you, but the two of you are tied much more closely than the friends option above. The two of you share full access to a joint account tied to both of your smart devices. A member of your retinue may be a companion to one of you and merely a familiar to the other.
 <p>You will only pay for the more expensive of your two Origins. The chosen binding method treats you as equal masters, ensuring that your love never fades. (If you have the Symbiote, one of you will usually, but not necessarily, be the queen.) Heritages are purchased separately, but the other of you can buy any Heritage that one of you has at half-price, after all discounts and ignoring the usual discount cap. This does not apply to Tier Χ Heritage capstones. The control aspects of Bindings, Lures, and any Heritage hierarchy mechanics will only affect your relationship if the two of you are into that. Template Stacking and relevant waifu perks are purchased individually. All other items need only be purchased once to benefit the both of you equally. Your shared retinue will not enter R.I.P. mode unless you both perish.</p>`,
@@ -53,12 +53,12 @@ intensity.push({
 
 intensity.push({
   uid: 'jUgfP',
-  title: 'DR11 start',
-  image: 'https://i.ibb.co/XVm9GqG/DR11-Start2.jpg',
+  title: 'DRX start',
+  image: 'https://i.ibb.co/XVm9GqG/DRX-Start2.jpg',
   intensity: 0,
   special: 'Chargen only',
   chargen: true,
-  blacklist: ['Cash Still Rules', 'Wage Slave', 'Couple’s Account(Cooperative)'],
+  blacklist: ['Cash Still Rules', 'Wage Slave', 'Couple’s Account (Cooperative)'],
   desc: `Danger Rating 11 build's have special <a @click.stop href="/#danger11" class="text-cyan-500 hover:text-cyan-600 underline">rules</a>
   <p>This perk does not modify starting world in any way all the danger comes from mandatory TX companion of your choice, while Company guarantee that they will not kill you outright, how obedient they are completely depends on chosen companion and your perks.</p>
   `,
@@ -69,8 +69,8 @@ intensity.push({
   title: 'Cash Still Rules',
   image: 'https://i.ibb.co/3yVkg19/Cash-Still-Rules.jpg',
   intensity: 0,
-  special: 'Chargen only. May not be taken on DR11.',
-  blacklist: ['DR11 start'],
+  special: 'Chargen only. May not be taken on DRX.',
+  blacklist: ['DRX start'],
   chargen: true,
   desc: `Your signing bonus… isn’t. Whatever you spend from it will instead be a loan, subject to the rules in Loans and Credit Debt. Your starting world will not necessarily have enough available credits to pay back your loan or even the interest, but Missions and Invasion PvP can help cover that. If this is taken, all Captures will be valued at 80% of their list price, instead of the base 60%.
   <p>Budgets below 500, from a Danger Rating of 6 or below, will experience an effective increase to 500 using the Loan rules, while budgets above 500 will be overcapped until you’ve paid enough of the principal and/or visited enough new worlds to fall beneath the cap.</p>
@@ -92,9 +92,9 @@ intensity.push({
   title: 'Wage Slave',
   image: 'https://i.ibb.co/By4QXkR/Wage-Slave.jpg',
   intensity: 0.6,
-  special: 'Chargen only. May not be taken on DR11.',
+  special: 'Chargen only. May not be taken on DRX.',
   chargen: true,
-  blacklist: ['Fight For Your Right', 'One In Ten', 'DR11 start'],
+  blacklist: ['Fight For Your Right', 'One In Ten', 'DRX start'],
   desc: 'We aren\'t a charity, Contractor. We\'ve decided you need to put in some more effort to earn your keep. While your starting budget is not negatively impacted, from here on out, you can only gain credits for completing missions, winning arranged PvP matches, or by completing other similar activities on behalf of the Company. Captures and sales will provide no inherent value beyond the targets themselves and any discounts they might provide retroactively. However, captures will still provide a bonus to Contractor salary. We do not advise taking Cash Still Rules with this, as that mode provides no benefits with this mode active. However, if you wish to start heavily indebted to us, without any easy ways of paying us back… we won’t stop you.',
 })
 
@@ -258,8 +258,10 @@ invasionPvP.push({
   image: 'https://cdn.discordapp.com/attachments/925963686433132644/993105142561914880/Screenshot_1.jpg',
   cost: 75,
   pvp: true,
-  desc: `<p>When the defending side of an invasion calls for help, this orb allows you to answer, and demonstrate the value of Jolly Cooperation. The PvP asset value of the force you send must be within the same range as the defender and attacker: between 80% of the higher value and 125% of the lower value. The defender may call as many allied forces as they want, though this will affect their prize payout if they win (see below). Answering calls to arms is optional; White Eye Orbs have a Do Not Disturb function that can make refusals automatic. You do not need to have visited your own parallel of a world to answer a call to arms there, but a call to arms will not count as visiting that world for We Will Meet Again, Rainbow Bridge, and other dimensional travel purposes.</p>
-  <p>Similarly to the invading force, your strike force will appear as shining White Phantasms in the invaded world. A contractor whose retinue maintains a win ratio of at least 90% after at least 20 calls-to-arms will instead have Gold Phantasms. This change has no in-battle effects, but the prestige of success comes with responsibilities: a gold-rated retinue cannot actively refuse a call to arms. This does not include auto-refusals from Do Not Disturb, but keeping that function on for more than two continuous weeks (336 hours) will forfeit your gold rating. You can re-qualify after at least 20 new calls-to-arms, provided your win ratio remains over 90%.</p>
+  desc: `
+  When the defending side of an invasion calls for help, this orb allows you to answer, and demonstrate the value of Jolly Cooperation. The PvP asset value of the force you send must be within the same range as the defender and attacker: between 80% of the higher value and 125% of the lower value. Similarly to the invading force, your strike force will appear as shining White Phantasms in the invaded world.
+  <pThe defender may call up to three allied forces if they want, though this will affect their prize payout if they win (see below). Answering calls to arms is optional; White Eye Orbs have a Do Not Disturb function that can make refusals automatic. You do not need to have visited your own parallel of a world to answer a call to arms there, but a call to arms will not count as visiting that world for We Will Meet Again, Rainbow Bridge, and other dimensional travel purposes.</p>
+  <p>A contractor whose retinue maintains a win ratio of at least 90% after at least 20 calls-to-arms will instead have Gold Phantasms. This change has no in-battle effects, but the prestige of success comes with responsibilities: a gold-rated retinue cannot actively refuse a call to arms. This does not include auto-refusals from Do Not Disturb, but keeping that function on for more than two continuous weeks (336 hours) will forfeit your gold rating. You can re-qualify after at least 20 new calls-to-arms, provided your win ratio remains over 90%.</p>
 `,
 })
 

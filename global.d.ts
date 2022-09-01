@@ -35,6 +35,13 @@ interface DBWorld {
   image?: string
 }
 
+interface Freebie {
+  title: string
+  cost: 0
+  count: number
+  complex?: any[]
+}
+
 interface PerkFull {
   uid: string
   title: string
@@ -57,19 +64,30 @@ interface PerkFull {
   anything?: string
   table?: string[][]
   costVariants?: number[]
-  freebies?: any
+  freebies?: {
+    talentPerks?: Freebie[]
+    defensePerks?: Freebie[]
+    binding?: Freebie[]
+  }
   complex?: string
   chargen?: boolean
   increment?: boolean
   tree?: string
   type?: string
-  old?: string
-  oldLink?: string
+  legacy?: boolean
+  dlc?: string
+  dlclink?: string
 }
 
 interface DLCPerk extends PerkFull {
   dlc: string
   dlclink?: string
+}
+
+interface Heritage extends PerkFull {
+  tree: 'Dragon' | 'Transhuman' | 'Outsider' | 'None'
+  typeFreebies?: any
+  types?: Record<'Biomorph' | 'Cybermorph' | 'Aethermorph', string>
 }
 
 interface Challenge {
@@ -121,4 +139,6 @@ export {
   Mission,
   DLCPerk,
   Perk,
+  Freebie,
+  Heritage,
 }
