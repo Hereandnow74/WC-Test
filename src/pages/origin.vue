@@ -174,7 +174,7 @@ function pickOrigin() {
       return
     }
     if (flags.value.danger11Start && chosenOrigin.tier > 6) {
-      costError.value = 'Maximum substitute tier is 6 for DR11 start'
+      costError.value = 'Maximum substitute tier is 6 for DRX start'
       return
     }
   }

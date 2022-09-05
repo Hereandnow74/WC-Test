@@ -194,8 +194,8 @@ export const bindings: PerkFull[] = [
     image: 'https://i.ibb.co/GJNrt3F/Jewels-Of-Discord-New.jpg',
     whitelist: ['Tempest Jewelry'],
     desc: `
-    <p>Tempest items can now adjust their styles to better match the rest of the wearer’s clothing, with no changes to their type. A ring will always be a ring. Anyone attempting to remove a Tempest item, other than you and subjects you order to do so, will fail, then miss the fact that it’s still there afterwards. This applies to both used and unused items.</p>
-    <pWith unused jewels only, you may reverse this effect and make the item unusually interesting to potential targets. This applies to all potential targets who see it in person and may spark fights over the item. When a potential target touches the item, they will be overcome with an urge to wear it. This effect lasts 48 hours or until the item is worn, whichever comes first. It becomes stronger on increasingly higher-tiered targets than lower tiers. but has no noticeable effect on Tier Χs. This effect may only be applied to one item at a time.</p>
+    Tempest items can now adjust their styles to better match the rest of the wearer’s clothing, with no changes to their type. A ring will always be a ring. Anyone attempting to remove a Tempest item, other than you and subjects you order to do so, will fail, then miss the fact that it’s still there afterwards. This applies to both used and unused items.
+    <p>With unused jewels only, you may reverse this effect and make the item unusually interesting to potential targets. This applies to all potential targets who see it in person and may spark fights over the item. When a potential target touches the item, they will be overcome with an urge to wear it. This effect lasts 48 hours or until the item is worn, whichever comes first. It becomes stronger on increasingly higher-tiered targets than lower tiers. but has no noticeable effect on Tier Χs. This effect may only be applied to one item at a time.</p>
     <p>Potential targets affected by this attractor, who fail to wear the specific jewelry piece themselves, will remain affected after it finds a wearer and transfer their desire to future jewelry (with this effect active) they see without any cognitive dissonance.</p>
     `,
   },
@@ -1026,7 +1026,7 @@ export const otherControls: PerkFull[] = [
     uid: 'VTfqo',
     title: 'Divine Marking',
     category: 'Other Control',
-    image: 'https://i.ibb.co/7GZQrFv/Divine-Marking.jpg',
+    image: 'https://cdn.discordapp.com/attachments/925963686433132644/1014955774457434174/tumblr_nmz3zlVLtz1u1uof4o1_1280.png',
     cost: 20,
     special: 'At least one deity from the Danmachi setting',
     desc: 'A deity in your service who grants or updates a Falna, including non-Danmachi deities who’ve learned how to do so, are considered to be applying a Stamp to the Falna’s holder, even if you lack that binding. The Falna itself will seem no different than normal. This Falna-Stamp requires the normal three-day period to fully bind the recipient.',
@@ -1236,7 +1236,7 @@ export const shroudElements = [
     'Streamlined costume features': 'A formal suit, dress, or robes in a consistent white and gold color scheme.',
     'Heavy costume features': 'Full coverage hard light armor with shoulder-attached cape. Masculine and feminine styles only differ in curvature.',
     'Freebies': 'Communication Talent, Performance Talent, Blessed Talent',
-    'freebies': { talentPerks: [{ title: 'Communication Talent', cost: 0, count: 1 }, { title: 'Performance Talent', cost: 0, count: 1 }, 'Blessed Talent'] },
+    'freebies': { talentPerks: [{ title: 'Communication Talent', cost: 0, count: 1 }, { title: 'Performance Talent', cost: 0, count: 1 }, { title: 'Blessed Talent', cost: 0, count: 1 }] },
   },
   {
     'uid': 'DmpEp',
@@ -1246,7 +1246,7 @@ export const shroudElements = [
     'Streamlined costume features': 'All gothic black leather and fishnet. Often has black leather gloves and boots.',
     'Heavy costume features': 'Dark overlord style full armor with menacing spikes, shoulder-attached cape, and a full face-concealing helmet. Feminine design only differs in curvature.',
     'Freebies': 'Covert Talent, Performance Talent, Blessed Talent',
-    'freebies': { talentPerks: ['Covert Talent', { title: 'Performance Talent', cost: 0, count: 1 }, 'Blessed Talent'] },
+    'freebies': { talentPerks: [{ title: 'Covert Talent', cost: 0, count: 1 }, { title: 'Performance Talent', cost: 0, count: 1 }, { title: 'Blessed Talent', cost: 0, count: 1 }] },
   },
   {
     'uid': 'gm6KJ',

@@ -1,6 +1,6 @@
 <template>
   <Modal :label="mission ? 'Edit a Mission' : 'Propose a Mission'" class="!z-30">
-    <div class="p-2 flex flex-col gap-2 min-h-0 w-full overflow-y-auto scrollbar">
+    <div class="max-h-[90vh] p-2 flex flex-col gap-2 min-h-0 w-full overflow-y-auto scrollbar">
       <div v-if="mission" class="text-sm font-semibold text-red-700 dark:text-red-400">
         This form is for fixing errors, do not use is to submit new missions.
       </div>
@@ -112,7 +112,7 @@ import * as zod from 'zod'
 import { useForm, useField } from 'vee-validate'
 import { toFormValidator } from '@vee-validate/zod'
 
-import { Mission } from 'global'
+import type { Mission } from 'global'
 import type { PropType } from '@vue/runtime-core'
 import { proposeMission } from '~/logic'
 import { useWorlds } from '~/data/constants'

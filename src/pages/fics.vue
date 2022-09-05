@@ -52,7 +52,7 @@
           </div>
         </div>
         <div v-if="fic.tags.length" class="flex gap-1 flex-wrap font-semibold mt-1 justify-center">
-          <div v-for="tag in fic.tags" :key="tag" class="bg-teal-300 border-teal-500 dark:(bg-teal-800 border-teal-600) rounded border-b-2 border-r-2  px-1 w-max cursor-pointer" @click="filteredTags.push(tag)">
+          <div v-for="tag in fic.tags" :key="tag" class="bg-teal-300 border-teal-500 dark:(bg-teal-800 border-teal-600) rounded border-b-2 border-r-2  px-1 w-max cursor-pointer" @click="filteredTags.includes(tag) ? null : filteredTags.push(tag)">
             {{ tag }}
           </div>
         </div>

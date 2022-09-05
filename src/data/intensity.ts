@@ -23,7 +23,7 @@ export const intensity: Intensity[] = []
 intensity.push({
   uid: 'k5YNK',
   title: 'Me and My Girlfriend(s)(PvE)',
-  image: 'https://cdn.discordapp.com/attachments/925963686433132644/1007998021373526016/1175372-1463x823-DesktopNexus.com.jpg',
+  image: 'https://i.imgur.com/Hlj01dK.jpg',
   intensity: 0,
   special: 'Chargen only',
   chargen: true,
@@ -258,9 +258,9 @@ invasionPvP.push({
   image: 'https://cdn.discordapp.com/attachments/925963686433132644/993105142561914880/Screenshot_1.jpg',
   cost: 75,
   pvp: true,
-  desc: `
-  When the defending side of an invasion calls for help, this orb allows you to answer, and demonstrate the value of Jolly Cooperation. The PvP asset value of the force you send must be within the same range as the defender and attacker: between 80% of the higher value and 125% of the lower value. Similarly to the invading force, your strike force will appear as shining White Phantasms in the invaded world.
-  <pThe defender may call up to three allied forces if they want, though this will affect their prize payout if they win (see below). Answering calls to arms is optional; White Eye Orbs have a Do Not Disturb function that can make refusals automatic. You do not need to have visited your own parallel of a world to answer a call to arms there, but a call to arms will not count as visiting that world for We Will Meet Again, Rainbow Bridge, and other dimensional travel purposes.</p>
+  /* html */
+  desc: `When the defending side of an invasion calls for help, this orb allows you to answer, and demonstrate the value of Jolly Cooperation. The PvP asset value of the force you send must be within the same range as the defender and attacker: between 80% of the higher value and 125% of the lower value. Similarly to the invading force, your strike force will appear as shining White Phantasms in the invaded world.
+  <p>The defender may call up to three allied forces if they want, though this will affect their prize payout if they win (see below). Answering calls to arms is optional; White Eye Orbs have a Do Not Disturb function that can make refusals automatic. You do not need to have visited your own parallel of a world to answer a call to arms there, but a call to arms will not count as visiting that world for We Will Meet Again, Rainbow Bridge, and other dimensional travel purposes.</p>
   <p>A contractor whose retinue maintains a win ratio of at least 90% after at least 20 calls-to-arms will instead have Gold Phantasms. This change has no in-battle effects, but the prestige of success comes with responsibilities: a gold-rated retinue cannot actively refuse a call to arms. This does not include auto-refusals from Do Not Disturb, but keeping that function on for more than two continuous weeks (336 hours) will forfeit your gold rating. You can re-qualify after at least 20 new calls-to-arms, provided your win ratio remains over 90%.</p>
 `,
 })
@@ -271,8 +271,7 @@ invasionPvP.push({
   image: 'https://cdn.discordapp.com/attachments/925963686433132644/993106116600934490/Screenshot_2.jpg',
   cost: 100,
   pvp: true,
-  desc: `
-  <p>Hardly different at all from the original items, as they were used in the many parallels of an ashen world, ownership of one of these orbs lets you and a strike force invade another contractor’s world and ruin their hard work.</p>
+  desc: `Hardly different at all from the original items, as they were used in the many parallels of an ashen world, ownership of one of these orbs lets you and a strike force invade another contractor’s world and ruin their hard work.
   <p>To qualify as an invasion target, the enemy contractor must first own a Red Eye Orb of their own. Yes, this means you may find yourself the defender in this scenario. This is your warning. Second, they have visited a parallel of at least one world that you’ve visited. The battle will take place in that parallel. Third, their PvP credit value must be in the same ballpark as your force’s PvP asset value, with the higher of the two no more than 25% more than the lower. Invasion targets are randomly selected by company systems; contractors have no influence on the process.</p>
   <p>An invader’s strike force will appear as Red Phantasms, as explained in the Glossary. All harm or other effects done to the defender’s retinue will be real, however, including PvP Captures; see that section for details. Invaders may retreat at any time, as individuals or a group, though any who do so will suffer the full recuperation period as if they were slain outright.</p>`,
 })
@@ -283,8 +282,7 @@ invasionPvP.push({
   image: 'https://cdn.discordapp.com/attachments/894482928808112208/1007575677597384735/gyrx5mvdvwsr51.jpg',
   cost: 10,
   pvp: true,
-  desc: `
-  <p>This is your invitation to any one of the company’s exclusive clubs for contractors. You can bring up to three members of your retinue to eat, drink, game, make new friends and rivals, and do business with other contractors and retinues at these neutral grounds. Both indoor and outdoor environments and services are available.</p>
+  desc: `This is your invitation to any one of the company’s exclusive clubs for contractors. You can bring up to three members of your retinue to eat, drink, game, make new friends and rivals, and do business with other contractors and retinues at these neutral grounds. Both indoor and outdoor environments and services are available.
   <p>Conflict between contractors, including poaching each others’ retinues, is actively prevented in real time via <b>Demiplane Laws</b>. Note that the company does not enforce fairness in trades between contractors, so take care to watch your own back.</p>`,
 })
 
@@ -294,8 +292,7 @@ invasionPvP.push({
   image: 'https://cdn.discordapp.com/attachments/925963686433132644/993109119378665482/Screenshot_3.jpg',
   cost: 15,
   pvp: true,
-  desc: `
-  <p>More similar to the red soapstone or dragon eyes from the many parallels of an ashen world than the original blue eye orb, ownership of this item allows you to specifically invite another contractor to a duel between your two teams, skipping the normal matchmaking process. This otherwise follows the regular Arranged PvP procedures.</p>
+  desc: `More similar to the red soapstone or dragon eyes from the many parallels of an ashen world than the original blue eye orb, ownership of this item allows you to specifically invite another contractor to a duel between your two teams, skipping the normal matchmaking process. This otherwise follows the regular Arranged PvP procedures.
   <p>You can only challenge contractors that you’ve met in person. This may happen by any means, including Green Eye Orb use, regular Arranged PvP, Invasions, or unregulated encounters.
   </p>`,
 })

@@ -282,9 +282,7 @@ export function heritageAvailable(hr: Heritage): boolean {
 
 export function chooseHeritage(hr: Heritage, saveData: Perk) {
   if (heritageAvailable(hr)) {
-    if (['Dragon God', 'Philosopher’s Transmortality Engine'].includes(saveData.title)) {
-      if (saveData.title === 'Philosopher’s Transmortality Engine')
-        saveData.tree = 'Transhuman'
+    if (['Dragon God'].includes(saveData.title)) {
       pickSimplePerk(hr, saveData, heritageAvailable, heritage.value)
       return
     }

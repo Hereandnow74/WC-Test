@@ -1936,7 +1936,7 @@
   {
     "worldName": "World's End Harem",
     "rating": 2,
-    "image": "https://i.imgur.com/WoTCPFc_d.webp?maxwidth=640&shape=thumb&fidelity=medium"
+    "image": "https://wallpaperaccess.in/public/uploads/preview/anime-girls-worlds-end-harem-wallpaper-5.png"
   },
   {
     "worldName": "Asura's Wrath",
@@ -2839,7 +2839,7 @@
   {
     "worldName": "Disney",
     "rating": 1,
-    "image": "https://i.insider.com/60c7608023393a00188e2e91?width=1000&format=jpeg&auto=webp",
+    "image": "https://wallpaper.dog/large/975514.jpg",
     "condition": [
       {
         "rating": 3,
@@ -4677,9 +4677,15 @@
     "rating": 7,
     "image": "https://cdn.vox-cdn.com/thumbor/UcV4hcK_EbiaIfez6cW7LccgeMg=/1400x1050/filters:format(png)/cdn.vox-cdn.com/uploads/chorus_asset/file/22637954/The_Winx_S6_Trailer.png"
   },
-  {"worldName":"Dead Tube","rating":4},
-  {"worldName":"Miss Guillotine","rating":6,"condition":[{"name":"Canon Start","rating":6},{"rating":6,"name":"Pre-Canon (Pre-Revelator Julie)"}]},
+  {"worldName":"Dead Tube","rating":4,"image": "https://cdn.discordapp.com/attachments/925963686433132644/1012366628652056716/1466268786.jpg"},
+  {"worldName":"Miss Guillotine","image": "https://cdn.discordapp.com/attachments/925963686433132644/1012366800341708830/miss_guillotine_12203.jpg", "rating":6,"condition":[{"name":"Canon Start","rating":6},{"rating":6,"name":"Pre-Canon (Pre-Revelator Julie)"}]},
   {"worldName":"Ragnarok ","rating":6,"image":"https://cdn.discordapp.com/attachments/1010632867639996469/1011065372226637875/unknown.png"},
   {"worldName":"Shrek","rating":3,"image":"https://images8.alphacoders.com/679/679877.jpg","condition":[{"name":"Rumpelstiltskin AU","rating":3}]},
-  {"worldName":"Thundercats","rating":7,"image":"https://i.imgur.com/6QjrKEN.jpeg"}
+  {"worldName":"Thundercats","rating":7,"image":"https://i.imgur.com/6QjrKEN.jpeg"},
+  {"worldName":"Baki The Grappler","rating":5,"image":"https://cdn.donmai.us/sample/c4/11/__hanma_yuujirou_hanma_baki_orochi_doppo_retsu_kaiou_hanayama_kaoru_and_1_more_grappler_baki_drawn_by_kazama_raita__sample-c4111ef4ddb5dcefeddb041aa2ee0a10.jpg"},
+  {"worldName":"Dishonored ","rating":5,"image":"https://m.media-amazon.com/images/M/MV5BYmQ2ZjZiZDAtZGNhZC00ZDI5LTkzMWQtMTA2MTFlNjkyODc0XkEyXkFqcGdeQXVyMzY0MTE3NzU@._V1_.jpg"},
+  {"worldName":"Futabu!","rating":1,"image":""},
+  {"worldName":"Houseki no Kuni","rating":4,"image":"","additional":"All human scale sophonts within Houseki no Kuni are fully human compatible. Gems have complete human anatomy, but are still made of their respective gemstone and don't require any of it.\nAll gems become able to soften their bodies to become more like actual flesh."},
+  {"worldName":"Seirei Gensouki","rating":4,"image":"https://cdn.donmai.us/sample/64/25/__celia_claire_rio_ayase_miharu_and_aishia_seirei_gensouki__sample-64257bbe9771cb3b4f4429b16e1316ee.jpg"},
+  {"worldName":"The 100","rating":4,"image":"https://images8.alphacoders.com/108/1082036.jpg"}
 ]

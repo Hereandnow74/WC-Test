@@ -3,6 +3,7 @@ export interface WaifuPerk {
   title: string
   waifu: string[]
   waifuUID: number[]
+  perkUID?: string[]
   from: string
   tier?: number
   image: string
@@ -60,8 +61,7 @@ export const waifu_perks: WaifuPerk[] = [
       -1,
     ],
     from: 'Date A Live',
-    image: '/img/waifu_perks/image159.png',
-    image_2: '/img/waifu_perks/image170.png',
+    image: '/img/waifu_perks/image170.png',
     cost: 50,
     desc: 'Kaguya and Yuzuru may now freely merge into their original self, Yamai Kazamachi, and split back apart at will. As a result of this fusion, Yamai exhibits a sharp increase to her abilities, in comparison to her component selves, and can access her Angel Raphael’s full power. This perk does not change Yamai’s tier rating.',
   },
@@ -75,7 +75,7 @@ export const waifu_perks: WaifuPerk[] = [
       10908,
     ],
     from: 'Date A Live',
-    image: '',
+    image: '/img/waifu_perks/image159.png',
     cost: 50,
     desc: 'Kurumi obtains a copy of Nia’s Sephira Crystal, allowing her to use the Angel Raziel’s abilities in conjunction with her original Angel. Kurumi will always have this perk if captured after the events of Mio True End. This perk does not change Kurumi’s tier rating.',
   },
@@ -958,6 +958,9 @@ export const waifu_perks: WaifuPerk[] = [
     waifuUID: [
       'gC8zD',
     ],
+    perkUID: [
+      'gC8zD',
+    ],
     image: '/img/waifu_perks/image194.png',
     cost: 20,
     desc: 'Kiana (K423) has reclaimed Himeko’s legacy, defeated the Herrscher of the Void for good, and used the power of both the cores of Void and Flames to become a new Herrscher, different from her predecessor. Gathering additional Herrscher cores, as Sirin did during the Second Honkai War, will increase her tier further. This perk adds the Herrscher of Flamescion battlesuit to Kiana’s panoply, in addition to the suits granted by its prerequisite. Kiana will always have this perk if captured after the events of Chapter 25. This perk is unavailable to Sirin and does not increase Kiana’s tier rating.',
@@ -970,6 +973,9 @@ export const waifu_perks: WaifuPerk[] = [
     ],
     from: 'Honkai Impact',
     waifuUID: [
+      'gC8zD',
+    ],
+    perkUID: [
       'gC8zD',
     ],
     tier: 9,
@@ -986,6 +992,10 @@ export const waifu_perks: WaifuPerk[] = [
     ],
     from: 'Honkai Impact',
     waifuUID: [
+      'w2qOJ',
+      'oHFJy',
+    ],
+    perkUID: [
       'w2qOJ',
       'oHFJy',
     ],
@@ -1018,6 +1028,9 @@ export const waifu_perks: WaifuPerk[] = [
     ],
     from: 'Honkai Impact',
     waifuUID: [
+      'jhiHF',
+    ],
+    perkUID: [
       'jhiHF',
     ],
     tier: 8,

@@ -6,7 +6,7 @@
       :class="settings.columns !== 'auto' ? `column-count-${settings.columns}` : 'md:column-count-2 xl:column-count-3 4xl:column-count-4 5xl:column-count-5'"
     >
       <component
-        :is="rule.title ==='DR11 start' ? DR11 : IntensityCard"
+        :is="rule.title ==='DRX start' ? DR11 : IntensityCard"
         v-for="rule in intensity"
         :id="rule.title"
         :key="rule.title"

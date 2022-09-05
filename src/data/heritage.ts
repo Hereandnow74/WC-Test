@@ -209,12 +209,12 @@ heritages.push({
   cost: 80,
   freebies: {
     talentPerks: [{ title: 'Body Talent', cost: 0, count: 1 }],
-    defensePerks: [{ title: 'Stress Defense', cost: 0, count: 2 }],
+    defensePerks: [{ title: 'Stress Defense', cost: 0, count: 1 }],
   },
   typeFreebies: {
     Biomorph: {
       talentPerks: [{ title: 'Wild Talent', cost: 0, count: 1 }, { title: 'Psychic Talent', cost: 0, count: 1 }],
-      miscPerks: ['Sexual Calibration', 'Fertility Calibration I'],
+      miscPerks: [{ title: 'Sexual Calibration', cost: 0, count: 1 }, { title: 'Fertility Calibration I', cost: 0, count: 1 }],
       defensePerks: [{ title: 'Body Defense', cost: 0, count: 1 }],
     },
     Cybermorph: {
@@ -320,7 +320,7 @@ heritages.push({
   types: {
     Biomorph: '<p><b>Biomorph</b>: Guy-what? Your material is psionically fueled adaptive biomass, able to take on any living form such as bone, bark, chitin, cellulose, muscle, neural tissue, mycelium, or organs freely. This material may become psionic or biological structures, and more may be grown given sufficient nutrients, material, and energy. Additional traits may now be gained via consumption of a living thing with the desired traits or via sexual contact. Biomorphs are aligned with both Primal and Jungle Shrouds.</p>',
     Cybermorph: '<p><b>Cybermorph</b>: Transformers in disguise! Your material is hyper adaptive Smart Matter, which is able to become any inorganic material given appropriate blueprints and scans. Any matter may be converted into this smart matter given sufficient time and energy, but this process is very energy and mass intensive. Additional traits may now be acquired via contact and a several second process to reconfigure the body part to integrate the desired technology. Cybermorphs are aligned with Cyber Shrouds.</p>',
-    Aethermorph: '<p><b>Aethermorph</b>: Transformers in disguise! Your material is hyper adaptive Smart Matter, which is able to become any inorganic material given appropriate blueprints and scans. Any matter may be converted into this smart matter given sufficient time and energy, but this process is very energy and mass intensive. Additional traits may now be acquired via contact and a several second process to reconfigure the body part to integrate the desired technology. Cybermorphs are aligned with Cyber Shrouds.</p>',
+    Aethermorph: '<p><b>Aethermorph</b>: Shaza-who? Your material is Patterned Elemental Weave, essentially concentrated and manifested amounts of your Element. You will slowly generate more material over time, but may absorb existing instances of your Element in order to accelerate the process. Your body is capable of becoming entirely your Element, which may mean increased durability, intangibility, or other varying effects depending on your Element, such as making an opponent Love you upon being struck with an Element of Forbidden Love. Mystical artifacts and similar may be integrated into your metaphysical form via training or surgery in order to grant you their powers and capabilities. If you possess Tantric Arts: Arts of Sympathy, you are able to use these to permanently copy a trait from a target, this requires (Effective Tier of the desired trait, 1 by default) Resonance. By default, Aethermorph’s are aligned with Burial Shrouds, but other Shrouds may align with specific Elements and also generate material.</p>',
   },
   desc: `
 <p>Based on our continued studies of inventory hotswapping, shoggoths, and other amorphous entities we bring you a new breakthrough! Your form is no longer constrained entirely by such petty things as shape, volume, or being contiguous. Your Pocket Space is now functionally infinite, and may store material, modifications, and alternate forms appropriate to your Transhuman type within and via our Company trademarked Transhuman Materials (TMTM) able to ensure compatibility between modifications and swaps.</p>
@@ -485,7 +485,6 @@ heritages.push({
     <p>You are more like an entire website, network, or factory unto yourself, unified in purpose with various parts specializing in specific tasks or applications. Something that may be changed piecemeal or entirely rebuilt as necessary.</p>
     <p>Additionally, you are freely and safely able to modify the subroutines, optimizations, and logic of yourself and your component minds.</p>
     <p>Finally, take Psychic talent for free.</p>
-    </p>
     `,
     Aethermorph: `<p><b>Aethermorph</b>: You are capable of creating two types of minds, daimons and goetic subsets of your Element and mind. In both cases, you may set the level of independence, connection, and shared power and personality between yourself and the mind, from functionally the same mind with a different focus to a functionally independent but subservient spirit. These goetic minds feed back their skills, specializations, and power to the mind that spawned them.</p>
     <p>These minds may be anchored to any entity or object conceptually linked to your Element, and when not anchored are capable of moving through and existing within conceptual space, and perceiving the world around any instance of your Element. Tantric Arts: Summoning used by a physical being is able to create temporary bodies for these minds by ‘summoning’ them. A Burial Shroud or other form of Shroud linked to your Element may also act as hosts for the minds to be anchored in.</p>

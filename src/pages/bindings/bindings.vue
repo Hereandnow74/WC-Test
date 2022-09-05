@@ -46,10 +46,10 @@
           <fa-solid:check v-if="flags.noBindings" class="text-green-500 absolute top-1 right-1" />
         </h3>
         <Desc
-          desc="`None of your companions or familiars will be affected by any of the effects common to all company bindings. This is your warning.
+          desc="None of your companions or familiars will be affected by any of the effects common to all company bindings. This is your warning.
           <p>If you purchase and use a real binding method later, the discount will disappear and you will go into debt. You do not need to bind your previously- purchased companions immediately.</p>
           <p>Capturing any companion without bindings will award you the standard capture value of her original tier, before this option’s purchase discount. It will also give her a dormant tattoo, which you can activate at any time by using the Stamp (should you purchase it) or removing a higher Binding. If you instead switch to this option after already having bound companions, the basic effects common to all bindings will persist in your companions or familiars until interactions or events change their minds naturally.</p>
-          <p>This option does not affect the price of Substitute, Possess, or Power Swap.</p>`"
+          <p>This option does not affect the price of Substitute, Possess, or Power Swap.</p>"
         />
         <div class="text-violet-700 dark:text-yellow-200 px-2">
           All waifus of tiers 2-10 are discounted by one full rank.

@@ -50,6 +50,7 @@
         v-model="coopCount"
         class="inline"
         :min="1"
+        :max="49"
         @click.stop
       />
     </div>

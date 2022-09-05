@@ -1,4 +1,5 @@
 <template>
+  <!-- :class="{'border-3 sm:p-[0.3em] border-green-500 rounded-sm': perkExist}" -->
   <div
     class="sm:p-2 mb-2 column-block cursor-pointer max-w-[600px] relative"
     @click="sendPerk"

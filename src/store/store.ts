@@ -1,4 +1,5 @@
 import { findIndex, find } from 'lodash-es'
+import { Perk } from 'global'
 import { useChallenges } from './challenges'
 import { usePlayStore } from './play'
 import { useChargenStore } from './chargen'
@@ -306,24 +307,25 @@ const targetList = computed(() => {
 })
 
 const yourTier = computed(() => {
-  const calcTier = (cost: number) => {
-    if (cost >= 11111) return 11
-    for (let i = heritageTiers.length - 1; i > 0; i--)
-      if (cost >= heritageTiers[i][0]) return heritageTiers[i][1]
-    return 0
+  const calcTier = (perks: Perk[]) => {
+    let tier = 5
+    perks.forEach((perk) => {
+      if (tier < 6 && ['Corporeal Transcendence Engineering', 'Dragon Heart'].includes(perk.title)) tier = 6
+      if (tier < 7 && ['Evolutionary Engine Array', 'Dragon Scale'].includes(perk.title)) tier = 7
+      if (tier < 8 && ['Incandescent Ascendancy Machine', 'Double Dragon'].includes(perk.title)) tier = 8
+    })
+    return 5
   }
   const talentsTier4 = findIndex(talentPerks.value, x => ['Template Stacking I'].includes(x.title)) !== -1 ? 4 : 0
   const talentsTier5 = findIndex(talentPerks.value, x => ['Template Stacking II'].includes(x.title)) !== -1 ? 5 : 0
   let shroudTier = findIndex(binding.value, { title: 'Shroud of Power' }) !== -1 ? 4 : 0
   shroudTier = Math.max(findIndex(binding.value, { title: 'Alterzelu Symbiote' }) !== -1 ? 4 : 0, shroudTier)
   const originTier = startingOrigin.value.tier || 0
-  const dragonTier = calcTier(heritage.value.filter(x => x.tree && x.tree === 'Dragon').reduce((a, x) => a += x.cost, 0))
-  const transhumanTier = calcTier(heritage.value.filter(x => x.tree && x.tree === 'Transhuman').reduce((a, x) => a += x.cost, 0))
-  const outsiderTier = calcTier(heritage.value.filter(x => x.tree && x.tree === 'Outsider').reduce((a, x) => a += x.cost, 0))
+  const heritageTier = calcTier(heritage.value)
   const powerSwap = find(genericWaifuPerks.value, x => x.title === 'Power Swap')
   const yourPowerSwap = powerSwap ? find(powerSwap.complex, x => x.target === 'You') : undefined
   const powerSwapTier = yourPowerSwap ? yourPowerSwap.newTier : 0
-  return Math.max(originTier, dragonTier, transhumanTier, outsiderTier, talentsTier4, talentsTier5, shroudTier, powerSwapTier)
+  return Math.max(originTier, heritageTier, talentsTier4, talentsTier5, shroudTier, powerSwapTier)
 })
 
 const companionsUIDs = computed(() => companions.value.reduce((a, c) => (a[c.uid] = true, a), {} as Record<number, boolean>))

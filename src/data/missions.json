@@ -1,6 +1,290 @@
 [
   
   {
+    "reward": "Psychic Talent or a Template Stacking of a Psychic  power or a character with Psychic  tag, or 25 credits.",
+    "scope": "Standard",
+    "author": "irugaa0",
+    "image": "",
+    "objectives": [
+      {
+        "reward": "5 per person",
+        "value": "Prevent “Party” from dying",
+        "type": "Credits"
+      },
+      {
+        "value": "Prevent “Party’ Allies” from dying",
+        "type": "Credits",
+        "reward": "5 per ally"
+      },
+      {
+        "reward": "25",
+        "value": "Kill or have one member of your retinue kill an Invader.",
+        "type": "Credits"
+      },
+      {
+        "type": "Credits",
+        "value": "Kill the shorty alien (Gantz) brought by the invaders.",
+        "reward": "20"
+      },
+      {
+        "value": "Kill the xenomorph (Alien) brought by the invaders.",
+        "type": "Credits",
+        "reward": "20"
+      },
+      {
+        "type": "Credits",
+        "value": "Kill the “Demogorgon” army created by the invaders. (0/50)",
+        "reward": "100"
+      },
+      {
+        "value": "Prevent Henry Creel/ Vecna from allying with the invaders.",
+        "reward": "20",
+        "type": "Credits"
+      },
+      {
+        "type": "Credits",
+        "reward": "50",
+        "value": "Prevent Mind Flayer from allying with the invaders."
+      },
+      {
+        "value": "Close all portal between the worlds. (0/8)",
+        "type": "Credits",
+        "reward": "80"
+      },
+      {
+        "type": "Credits",
+        "value": "Prevent a nuclear holocaust.",
+        "reward": "50"
+      }
+    ],
+    "title": "Stranger Things Invasion",
+    "budget": 250,
+    "rewardType": "Other",
+    "conditions": [
+      {
+        "value": "Keep the usage of “exotic powers” to a minimal.            "
+      },
+      {
+        "value": "Unless necessary avoid the usage of power in front of people outside the Party and their allies."
+      },
+      {
+        "value": "All magic templates are fixed in tier 5, for the duration of the mission."
+      },
+      {
+        "value": "The open use of supernatural powers, in only approved if the enemy start to openly use them first or in case of emergency."
+      },
+      {
+        "value": "You and your retinue maximum tier are fixed in tier 6."
+      },
+      {
+        "value": "Kill all invaders (3)"
+      }
+    ],
+    "desc": "An emergence mission was issued by the company, and a group of external invaders aka “reincarnators” entered the Stranger Things world and started to heavily interfere with the world course. Go there with two other contractors and eliminate the invaders.",
+    "source": "",
+    "loca": "Stranger Things",
+    "uid": "ZEpgt"
+  },
+  {
+    "reward": "You gain one special “EX” template applicable to any Touhou waifu of your choice, vastly increasing their power and turning them into “EX” versions at T9, or T10 if they are already T9. These are based on their Touhoumon EX versions and could be alternative versions such as Advent Cirno, permanently unlocked super-modes such as EX-Keine or generic empowered types like EX Koishi.",
+    "scope": "Grand",
+    "image": "https://i.imgur.com/AwflCvs.jpg",
+    "budget": 600,
+    "objectives": [
+      {
+        "type": "Perks",
+        "reward": " Zenryoku Zenkai and Social Talent. You also gain the capture value of any returned waifu even without needing to capture them.",
+        "value": "Defeat or convince Lily White, Star Sapphire, Sunny Milk and Luna Child to surrender. Then return them to the client. Warning, they may have been empowered beyond their base abilities."
+      },
+      {
+        "type": "Perks",
+        "value": "Find and retrieve Hiiragi Kagami, Hiiragi Tsukasa and Izumi Konata from Lucky Star without letting them die.",
+        "reward": "You gain a free instant powerswap up to T7 usable only on retinue members that were originally T1 or T2."
+      },
+      {
+        "reward": "All Faerie Feast perks and a TS for both targets to be distributed among your retinue. Alternatively, 120 Credits.",
+        "type": "Perks",
+        "value": "The company would like to see a happy recovery for this client. Please if possible capture the local versions of Cirno and Daiyousei as replacements for the maddened Rumia."
+      }
+    ],
+    "rewardType": "Other",
+    "loca": "Touhou",
+    "source": "",
+    "conditions": [
+      {
+        "value": "Defeat EX-Rumia (T10), without letting her damage Gensokyo beyond repair. Make sure that the client survives without permanent harm to body or mind."
+      },
+      {
+        "value": "All Pocket Space and Sweet Home related perks are disabled for the duration of the Mission"
+      },
+      {
+        "value": "Do not let Yukari Yakumo discover who was responsible for releasing Rumia’s power."
+      },
+      {
+        "value": "No killing the locals, stick to the Danmaku rules unless they break them first."
+      }
+    ],
+    "author": "Heaven Canceler",
+    "desc": "Erhh… hello? I am gonna be honest, I am kinda panicking badly here. I sort of started in a lower level slice of life setting and stuff and randomly ended up in Touhou by the power of RNG. Tried to keep a low profile of course. Fortunately I got faerie feast and stuff, so I managed to get a few of the local fairies to like me and stuff. A few careless confessions later and I was sure everything was going great.\n\nThen I got my hands on Rumia and things went to hell. I thought I needed someone who can do more than shoot magic bullets down the line, so I decided to give her a little power up. Saber Alter seemed fitting… I mean the aesthetics should fit with her darkness powers and all that. I thought that would be perfect.\n\nExcept it turns out the whole thing with Ex-Rumia wasn’t just a meme. Send help, she almost killed me when that damn ribbon came off. I think the power has driven her mad, but at least she hasn’t killed me. That said, she kinda chained me to the kitchen and is currently trying to burn down Gensokyo to stop anyone from stealing me, together with some other waifus of mine she has scared into submission. A few other girls got away and I think they may be trying to get help from the locals… I think she may have also affected some of them with the grail mud corruption from the Alter power-up... Please, if you get me out of here, you can have Rumia, hell feel free to catch any free waifu in this place. I just want to get out of this alive and whole.",
+    "title": "EX-Rumia Ascendant",
+    "uid": "KIcka"
+  },
+  {
+    "image": "",
+    "objectives": [
+      {
+        "reward": "Covert Talent refund and 1 TS II for an exorcist of your choice. Alternatively, 30 Cedits.",
+        "value": "Steal the mirror from the principal's office, while he is present, without being discovered until you are out of the room.",
+        "type": "Perks"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Forage: Only local captures may help you on this job."
+      },
+      {
+        "value": "You must send a business card or similar at least 24 hours before the heist to inform them of what you are planning."
+      },
+      {
+        "value": "No killing any locals and try to avoid property damage if possible."
+      },
+      {
+        "value": "Be dressed for the occasion, something fancy like a tuxedo. We will leave it to your discretion."
+      }
+    ],
+    "rewardType": "Perks",
+    "title": "Phantom Mirror Theft",
+    "reward": "A waifu of your choice gains the mirror's powers, including the power to transform into a pixie at will. In addition, they can now copy the powers of any being considered a \"monster\" they meet once a day for 1 hour. Alternatively, you may gain 50 Credits.",
+    "loca": "Rosario + Vampire",
+    "budget": 360,
+    "author": "Heaven Canceler",
+    "source": "",
+    "desc": "One of our customers is interested in a certain object, specifically a mirror located within Yokai Academy. The mirror of Lilith is a magic object that contains an artifact spirit in the form of a rather vindictive pixie. It has the power to forcefully release the true form of a monster, causing their instincts and desires to run wild. Obviously such an object is quite valuable in the right hands and we are willing to pay a nice sum for it if you do this job right. We expect you to bring it along undamaged and with minimal fuss of course. And style, we wouldn’t want you to do this without proper style.",
+    "scope": "Quick",
+    "uid": "jiCte"
+  },
+  {
+    "conditions": [
+      {
+        "value": "Must Start on the Moon."
+      },
+      {
+        "value": "Use the entirety of the Moon as a resource for an OP Weapon."
+      },
+      {
+        "value": "Everyone must misunderstand that something went wrong."
+      },
+      {
+        "value": "Give the Weapon to Seiya before he faces the Demon King."
+      }
+    ],
+    "author": "Di0",
+    "scope": "Grand",
+    "rewardType": "Other",
+    "desc": "The Demon King of Gaeabrande's weakness is a weapon out of this World. Make one literally. No, not the World. There are people living there. Use the Moon instead.",
+    "budget": 1000,
+    "image": "https://i.redd.it/76ta32z3g6lz.gif",
+    "objectives": [
+      {
+        "reward": "A complete copy of Seiya's skills.",
+        "value": "Seiya nods in approval.",
+        "type": "Other"
+      },
+      {
+        "value": "Bitchslap the Demon King as a distraction. DON'T kill the Demon King upon doing so.",
+        "reward": "TS1 of Excalibur from Soul Eater.",
+        "type": "Other"
+      },
+      {
+        "type": "Other",
+        "value": "Seduce Chaos Machina.",
+        "reward": "TS1 of Asgore Dreemurr."
+      }
+    ],
+    "source": "",
+    "reward": "TS1 of Muramasa from FGO and a PA Commander of your choice as a Ride.",
+    "loca": "Cautious Hero",
+    "title": "A Weapon out of this World, Literally",
+    "uid": "ObZvy"
+  },
+  {
+    "desc": "Despite all of Reimu's BS, she still hasn't gotten any donations. Your job, should you accept it, donate on the Hakurei Shrine. Then seduce her.",
+    "title": "Operation Sugar Daddy (or Mommy)",
+    "conditions": [
+      {
+        "value": "You must've Yukari Yakumo on your retinue before this Mission is accepted."
+      },
+      {
+        "value": "Seduce Reimu with the power called, simping- I mean Donations."
+      },
+      {
+        "value": "Everyone in Gensokyo must misunderstand that you are Reimu's Sugar Daddy or Mommy."
+      },
+      {
+        "value": " Also Yukari must seduce Reimu to get her Yin-Yang Balls."
+      }
+    ],
+    "rewardType": "Other",
+    "reward": "TS1 of Hakurei God",
+    "author": "Di0",
+    "source": "",
+    "budget": 1000,
+    "image": "https://images.anime-pictures.net/185/185139daeda97c4a3d25dcf543edc334.png",
+    "scope": "Standard",
+    "loca": "Touhou",
+    "objectives": [
+      {
+        "type": "Credits",
+        "reward": "100",
+        "value": "Everyone in Gensokyo must feel jealous on how lovey-dovey you three are. Yes, three."
+      },
+      {
+        "value": "Aya must make at least three articles filled with how she is so jealous of Reimu, Yukari, and you acting so lovey-dovey with one another that she attempts to join.",
+        "reward": "Shameless Journalist, Aya Shameimaru, joins your Retinue.",
+        "type": "Companions"
+      }
+    ],
+    "uid": "sLPmq"
+  },
+  {
+    "desc": "The horrors of the 41st millenium are going to invade your current setting. You have five years to educate the local populace on Warhammer lore and combat tactics against it's various factions, and ensure the survival of it's people.",
+    "reward": "1",
+    "title": "A lesson in Grim Darkness",
+    "rewardType": "TX Tickets",
+    "conditions": [
+      {
+        "value": "Make your current setting survive a full year after the start of the invasion through your teachings."
+      },
+      {
+        "value": "Spend at least one lesson on every faction."
+      }
+    ],
+    "source": "",
+    "budget": 15,
+    "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.wallpapersden.com%2Fimage%2Fdownload%2Fwarhammer-40k-concept-art_bGlna2eUmZqaraWkpJRnamtlrWZpaWU.jpg",
+    "objectives": [
+      {
+        "value": "Make your current setting dominate the invading forces through your teachings.",
+        "type": "TX Tickets",
+        "reward": "1"
+      },
+      {
+        "type": "Credits",
+        "value": "Don't let your teachings traumatize any of it's students.",
+        "reward": "200"
+      },
+      {
+        "type": "TX Tickets",
+        "reward": "10",
+        "value": "Don't let your teachings disturb any of it's students."
+      }
+    ],
+    "scope": "Grand",
+    "author": "Z-Perv",
+    "loca": "Generic",
+    "uid": "gQlid"
+  },
+  {
     "source": "",
     "conditions": [
       {
@@ -17,7 +301,7 @@
       }
     ],
     "budget": 100,
-    "image": "",
+    "image": "https://static.wikia.nocookie.net/witcher/images/0/06/Tw3_pendulum_ciri.png/revision/latest/scale-to-width-down/1200?cb=20181004163557",
     "rewardType": "Credits",
     "scope": "Grand",
     "title": "My Witcher School",
@@ -217,13 +501,13 @@
     "source": "",
     "loca": "To Aru series",
     "author": "Heaven Canceler",
-    "image": "",
+    "image": "https://static.wikia.nocookie.net/to-aru-majutsu-no-index/images/0/09/Indexlibrorumprohibitorum.png/revision/latest?cb=20160704014949",
     "uid": "nkkhK"
   },
   {
     "objectives": [],
     "loca": "Fairy Tail",
-    "image": "https://i.imgur.com/9g9aEe5.jpg",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1013476826728902707/Screenshot_2.jpg",
     "desc": "Some of our contractors are just looking for some simple repetitive television, ya know like a police procedural, so here's the rub: Complete Quests whilst a member of a mage guild.\nC RANK: 5 CREDITS,\nB RANK: 10 CREDITS,\nA RANK: 20 CREDITS,\nS RANK: 40 CREDITS,\nSS RANK: 80 CREDITS,\nSSS RANK: 160, CREDITS. ",
     "source": "",
     "budget": 180,
@@ -347,7 +631,7 @@
     "budget": 300,
     "conditions": [],
     "desc": "Participate in some way in an Endbringer Attack.\nCan be completed multiple times, each completion reduces the rewards by 25% (Up to 75%).",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1012368245522702426/TzEYxojYjw4Qg9uhfMascUH2MFhe3E7ionQ9Nd6iVGs.webp",
     "loca": "Worm",
     "rewardType": "Credits",
     "title": "The End-Survivor",
@@ -388,7 +672,7 @@
     "desc": "Remember Technoblade's potato war with that some guy on Minecraft? Yep. That's what you are about to do. Except, you are in Phyrexia and this version of Phyrexia has some 'major' potato farming situation. Your job is to create the number one perfect potato that will make even Yawgmoth bow before you.",
     "author": "Di0",
     "reward": "A separate Pocket Dimension hosting a near-perfect replica of Phyrexia is given to you. Unlike this version, your replica has most of its machineries and armaments repaired and not used for potato farming.",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1012368498577637506/40hillmoel_POTATO_FOR_THE_POTATO_GOD.webp",
     "scope": "Grand",
     "budget": 1000,
     "title": "The Great Potato War of Phyrexia",

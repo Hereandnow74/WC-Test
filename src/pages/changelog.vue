@@ -5,13 +5,15 @@
     </h2>
     <div>
       <h3 class="text-lg font-semibold text-center py-2">
-        28 September 2022
+        02 September 2022
       </h3>
       <ul class="list-decimal list-inside">
-        <li>~90 new user submitted characters, new missions</li>
+        <li>~190 new user submitted characters, new missions, 6 new worlds</li>
         <li>Transhuman rework added.</li>
-        <li>Most of the rules updated to new stable version</li>
-        <li>Changed code for freebies distribution a bit, so now Talent Sharing freebies should work, but expect bugs.</li>
+        <li>Most of the rules updated to new stable version.</li>
+        <li>Changed code for freebies distribution a bit, so now Talent Sharing freebies should work, but expect bugs (I think it should work fine as long as you don't have 2 copies of the same Talent Sharing).</li>
+        <li>Unnoficial trauma tiers for Slightly Used waifus are added with examples of traumas, provided by DepressedAlucard</li>
+        <li>Added DLC perks for Command Seals by <b>Skelethin</b></li>
         <li>Bugfixes & small changes</li>
       </ul>
     </div>
