@@ -256,6 +256,13 @@ const budget = computed(() => {
   return bd + loan.value.gained
 })
 
+watch(csr, () => {
+  if (csr.value === false) {
+    loan.value.gained = 0
+    loan.value.owed = 0
+  }
+})
+
 const companionTicketProfit = computed(() => {
   return captureKoeff.value > 0
     ? companions.value.reduce((a, x) => {
@@ -314,7 +321,7 @@ const yourTier = computed(() => {
       if (tier < 7 && ['Evolutionary Engine Array', 'Dragon Scale'].includes(perk.title)) tier = 7
       if (tier < 8 && ['Incandescent Ascendancy Machine', 'Double Dragon'].includes(perk.title)) tier = 8
     })
-    return 5
+    return tier
   }
   const talentsTier4 = findIndex(talentPerks.value, x => ['Template Stacking I'].includes(x.title)) !== -1 ? 4 : 0
   const talentsTier5 = findIndex(talentPerks.value, x => ['Template Stacking II'].includes(x.title)) !== -1 ? 5 : 0

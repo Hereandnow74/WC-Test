@@ -45,15 +45,19 @@
         <NumberInput v-model="maxDR" :min="minDR" :max="10" />
       </div>
       <span class="hidden md:block whitespace-nowrap">Results: {{ worldsFiltered.length }}</span>
-      <div class="flex gap-1 items-center border rounded border-gray-600 dark:border-gray-300 px-2 whitespace-nowrap text-sm">
-        <div class="border border-gray-700 bg-yellow-300 w-4 h-4"></div>
-        <div title="World or Condition from official WC spreadsheet">
-          - Official DR
+      <div class="flex gap-1 px-0.5 items-center border rounded border-gray-600 dark:border-gray-300 whitespace-nowrap text-sm">
+        <div class="flex gap-1 px-1 rounded items-center cursor-pointer hover:(bg-green-500 bg-opacity-60)" :class="filterUserWorlds === 'canon' ? 'bg-green-500 bg-opacity-60' : ''">
+          <div class="border border-gray-700 bg-yellow-300 w-4 h-4"></div>
+          <div title="World or Condition from official WC spreadsheet" @click="filterUserWorlds = filterUserWorlds ? '': 'canon'">
+            - Official DR
+          </div>
         </div>
         <div class="h-4 w-[1px] bg-gray-400"></div>
-        <div class="border border-gray-700 bg-gray-300 w-4 h-4"></div>
-        <div title="World or Condition submitted by user">
-          - User DR
+        <div class="flex gap-1 px-1 rounded items-center cursor-pointer hover:(bg-green-500 bg-opacity-60)" :class="filterUserWorlds === 'user' ? 'bg-green-500 bg-opacity-60' : ''">
+          <div class="border border-gray-700 bg-gray-300 w-4 h-4"></div>
+          <div title="World or Condition submitted by user" @click="filterUserWorlds = filterUserWorlds ? '': 'user'">
+            - User DR
+          </div>
         </div>
       </div>
       <Button size="Small" label="Add World" class="whitespace-nowrap" @click="() => (editMode = false, toggleShowAddWorld())" />
@@ -94,6 +98,8 @@ const sortAlpha = ref(0)
 const sortRating = ref(1)
 const sortTargets = ref(0)
 
+const filterUserWorlds = ref('')
+
 const maxDR = ref(10)
 const minDR = ref(1)
 
@@ -121,9 +127,9 @@ watch(allWorlds, () => fuse.setCollection(allWorlds.value))
 
 const worldsFiltered = computed(() => {
   if (search.value)
-    return fuse.search(search.value).map(x => x.item).filter(x => x.rating >= minDR.value && x.rating <= maxDR.value)
+    return fuse.search(search.value).map(x => x.item).filter(x => x.rating >= minDR.value && x.rating <= maxDR.value).filter(x => filterUserWorlds.value ? x.type === filterUserWorlds.value : true)
   else
-    return [...allWorlds.value].sort(sortingFunc).filter(x => x.rating >= minDR.value && x.rating <= maxDR.value)
+    return [...allWorlds.value].sort(sortingFunc).filter(x => x.rating >= minDR.value && x.rating <= maxDR.value).filter(x => filterUserWorlds.value ? x.type === filterUserWorlds.value : true)
 })
 
 // const userWorldsFiltered = computed(() => {

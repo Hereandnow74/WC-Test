@@ -14,6 +14,9 @@
         <Button label="Take a loan" size="Small" @click="takeLoan" />
         <Button label="Take max loan" size="Small" @click="takeMaxLoan" />
       </div>
+      <div v-if="flags.chargen" class="text-sm text-red-500">
+        Returning a loan in chargen stage is not advised and can cause bugs
+      </div>
       <div v-if="underLoan" class="flex gap-2">
         <NumberInput v-model="payAmount" label="Return amount" class="whitespace-nowrap" :min="1" :max="loan.owed" />
         <Button label="Pay for a loan" bg-color="bg-amber-500" size="Small" @click="payLoan" />

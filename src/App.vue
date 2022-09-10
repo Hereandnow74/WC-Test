@@ -58,8 +58,10 @@ if (!intro) {
   window.localStorage.setItem('intro', VERSION)
 }
 else {
-  if (intro !== VERSION)
+  if (intro !== VERSION) {
     showIntro.value = true
+    window.localStorage.setItem('intro', VERSION)
+  }
 }
 
 // Total activity counter

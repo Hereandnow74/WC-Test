@@ -75,7 +75,7 @@ export const TOOLTIPS = {
 export const rulesList = [
   { title: 'starting', title2: 'Creating Your Build' },
   { title: 'captures', title2: 'Extending Your Build: Captures' },
-  { title: 'familiars', title2: 'Familiars' },
+  { title: 'familiar', title2: 'Familiars' },
   { title: 'purchases', title2: 'Extending Your Build: Purchases' },
   { title: 'sales', title2: 'Extending Your Build: Sales' },
   { title: 'waifu11', title2: 'These Waifus Go Up to 11' },

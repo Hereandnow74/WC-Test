@@ -745,7 +745,7 @@ DLCotherControls.push({
   cost: 120,
   desc: `All those synced to the Grail System get further boosted to be fully on the level of at least a Low Class Servant. You and your retinue gain the Body, Martial, Science, and Soul Talents. (Take these four perks, plus Talent Sharing (Martial), Talent Sharing (Science) and Talent Sharing (Soul), for free.) You also gain Body, and Wild Defenses for free as well. 
   <p>Each member may permanently gain the effect of a Class Card they have access to. Unlike Class Cards however, this is a fixed choice, and must be in theme with that companion’s personality, skill, and current affinities. Those who would otherwise qualify for multiple classes may decide to switch classes via a ritual that requires being without a class for more than 24 hours, after which a new class may be selected.</p>
-  <p>Reaching the level of a Demi-Servant further enhances the senses, strength, agility, and durability of a companion, boosting their tier by  +3 for Blue-stars, +2 for Copper-star, and +1 for Silver-stars. This replaces Grail System’s boost, and explicitly does not stack with boosts from other binding methods. Only use the largest Step 5 boost. In addition, the Tier for which you may use a Command Seal to instantly complete the binding of a waifu increases by 1. TX targets remain immune to this effect.</p>
+  <p>Reaching the level of a Demi-Servant further enhances the senses, strength, agility, and durability of a companion, boosting their tier by  +3 for Blue-stars, +2 for Copper-star, and +1 for Silver-stars. This replaces Grail System’s boost, and explicitly does not stack with boosts from other binding methods. Only use the largest Step 5 boost. In addition, the Tier for which you may use a Command Seal to halve the time to complete the binding of a waifu increases by 1. TX targets remain immune to this effect.</p>
   <p>Class Cards may still be used on companions with a chosen Demi-Servant class, and will add the Class Card enhancements and special skill to those granted by becoming a Demi-Servant. This explicitly allows a companion to either have a dual class effect, or double the strength of the current  one.</p>
   `,
   whitelist: ['Class Cards'],
@@ -756,7 +756,7 @@ DLCotherControls.push({
   dlclink: 'https://docs.google.com/document/d/1HGcpJGpGbLCeA3VO8LFrQjxQqkYANdeoWbCKlCOnK0A/edit',
   title: 'True Name',
   category: 'Other Controls',
-  image: '',
+  image: 'https://cdn.discordapp.com/attachments/925963686433132644/1015233099157749860/fate-stay-night-sudba-noch-skhvatki-seiber-devushka-arturi-3.jpg',
   cost: 25,
   multiple: true,
   max: 10,
@@ -775,7 +775,7 @@ DLCotherControls.push({
   dlclink: 'https://docs.google.com/document/d/1HGcpJGpGbLCeA3VO8LFrQjxQqkYANdeoWbCKlCOnK0A/edit',
   title: 'Ruler',
   category: 'Other Controls',
-  image: '',
+  image: 'https://cdn.discordapp.com/attachments/925963686433132644/1015235426145013821/HD-wallpaper-jeanne-d-arc-ruler-fate-apocrypha-fate-series-sword-manga-artwork-fate-grand-order-type-moon.jpg',
   cost: 40,
   desc: `You can now designate a waifu as a Ruler-class Demi-Servant. This is not available to anyone under a lesser level of binding than Companion. This means that other retinue members such as familiars are unable to receive this perk. 
   <p>Ruler class grants a significant boost to all of a companions abilities, making them stronger than any other class of servant, as well providing them with the ability to use Command Seals on other Servants and Demi-Servants. This boost on its own is not enough to boost a tier of a companion. Unlike a normal class, Ruler-class explicitly allows this to combine with boosts from other sources to upgrade a Tier, provided a Companion is already at the peak of their current Tier. This explicitly does not provide enough for a T10 to upgrade to TX.</p>
@@ -791,7 +791,7 @@ DLCotherControls.push({
   dlclink: 'https://docs.google.com/document/d/1HGcpJGpGbLCeA3VO8LFrQjxQqkYANdeoWbCKlCOnK0A/edit',
   title: 'Saint Graph Library',
   category: 'Other Controls',
-  image: '',
+  image: 'https://cdn.discordapp.com/attachments/925963686433132644/1015456416619827221/Chaldea_servant_briefcase.png',
   cost: 50,
   desc: `This perk provides an easy way to switch between Classes as a Demi-Servant. A Demi-Servant may save their current class configuration as a Saint Graph, a metaphysical template that stores abilities and memories of that Demi-Servant. Switching classes using  Saint Graphs requires directly accessing a Saint Graph Library in which the Demi-Servant has already saved a copy of the Saint Graph they wish to switch to. If the companion does not have any saved Saint Graphs of the class they wish to switch to, they must first switch to that class normally to be able to save that class configuration as a Saint Graph for future use. 
   <p>The Saint Graph Library itself exists to hold these imprints separate from any Throne of Heroes. Its primary form exists as a large server-sized device placed in a secure pocket space, or other location if you do not have one. Secondary form is that of a high tech briefcase. Saved Graphs may also be accessed via an app on the Company provided phone.</p>

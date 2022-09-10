@@ -342,8 +342,8 @@ export const bindings: PerkFull[] = [
     image: 'https://i.imgur.com/Hz8Ngbs.png',
     complex: 'target',
     freebies: {
-      talentPerks: [{ title: 'Everlasting Talent', cost: 0, count: 1 }, { title: 'Body Talent', cost: 0, count: 1 }, { title: 'Martial Talent', cost: 0, count: 1 }, { title: 'Wild Talent', cost: 0, count: 1 }],
-      defensePerks: [{ title: 'Body Defense', cost: 0, count: 1 }, { title: 'Wild Defense', cost: 0, count: 1 }, { title: 'Wild Defense', cost: 0, count: 1 }],
+      talentPerks: [{ title: 'Everlasting Talent', cost: 0, count: 1 }, { title: 'Body Talent', cost: 0, count: 1 }, { title: 'Martial Talent', cost: 0, count: 1 }, { title: 'Wild Talent', cost: 0, count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Martial Talent' }], count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Wild Talent' }], count: 1 }],
+      defensePerks: [{ title: 'Body Defense', cost: 0, count: 1 }, { title: 'Wild Defense', cost: 0, count: 1 }, { title: 'Environmental Defense', cost: 0, count: 1 }],
     },
     desc: `
 <p>Build your own swarm using this engineered species of alien symbiotes. You and all bound retinue members benefit from Everlasting. Body, Martial, and Wild Talents. (Take these four perks for free. If you have Talent Sharing (Martial) or Talent Sharing (Wild), take a full refund for them as applicable.) Take one copy each of Body, Wild, and Environmental Defenses for free as well.</p>

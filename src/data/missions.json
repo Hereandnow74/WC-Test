@@ -1,10 +1,110 @@
 [
   
   {
+    "rewardType": "Credits",
+    "reward": "50",
+    "source": "",
+    "budget": 0,
+    "image": "",
+    "objectives": [
+      {
+        "type": "Companions",
+        "value": "Become a Thane of a hold",
+        "reward": "One character with the Tag ruler up to Tier-3"
+      },
+      {
+        "type": "Perks",
+        "value": "Become a Thane in all holds",
+        "reward": "One perk of your choice"
+      },
+      {
+        "value": "Become a Jarl of a hold",
+        "type": "Perks",
+        "reward": "One Template stacking of a character with the Tag ruler up to Tier-4"
+      },
+      {
+        "type": "Perks",
+        "reward": "One Template stacking of a character with the Tag Mage up to Tier-5",
+        "value": "Become the Arch-Mage of the College"
+      },
+      {
+        "reward": "One Template stacking of a character with the Tag Combatant up to Tier-5",
+        "type": "Perks",
+        "value": "Become the leader of The Companions"
+      },
+      {
+        "value": "Become the High King of Skyrim",
+        "reward": "One Template stacking of a character with the Tag ruler up to Tier-7 that is not a deity.",
+        "type": "Perks"
+      },
+      {
+        "value": "Become the Emperor",
+        "type": "Perks",
+        "reward": "Template stacking 1 & 2 of either the last dragonborn or miraak "
+      }
+    ],
+    "desc": "The company issued a new mission, go to the world of Skyrim, and establish a base of power and influence for yourself. ",
+    "title": "An Influent Voice.",
+    "scope": "Standard",
+    "loca": "The Elder Scrolls V: Skyrim",
+    "conditions": [
+      {
+        "value": ": All talents but Soul and Martial talents are unavailable for the duration of this mission."
+      },
+      {
+        "value": "You CANNOT be the last dragonborn."
+      },
+      {
+        "value": "In case of you or a member of your retinue either have a Template Stacking of Dragonborn or be one you must keep it a secret and not let anyone know or spread it"
+      },
+      {
+        "value": "You must become influent enough to affect at least one hold."
+      },
+      {
+        "value": "You must become influent enough to be Known in at least three holds."
+      }
+    ],
+    "author": "irugaa0",
+    "uid": "yffVB"
+  },
+  {
+    "objectives": [
+      {
+        "type": "Other",
+        "reward": "Spartan III Project's full information (Data, sérum formula, training, equipment blueprints, etc).",
+        "value": "Save Noble Team"
+      },
+      {
+        "reward": "Spartan II TS2 or 100 credits.",
+        "type": "Other",
+        "value": "Make sure Chief reach Installation 04"
+      }
+    ],
+    "desc": "July 24, 2552, the Covenant are here. To make humanity bleed, strike them where it hurts, by taking down the fortress world, Reach. That's where you came in Contractor. Objectif : Save Reach at any cost.",
+    "conditions": [
+      {
+        "value": "May not be anything else than Human, Cyborg or AI."
+      },
+      {
+        "value": "Companion's Tier may not be above 5."
+      }
+    ],
+    "rewardType": "Other",
+    "loca": "Halo - Reach",
+    "title": "Reach Upon the Stars",
+    "reward": "A full copie of UNSC fortress world of Reach in your Sweet Home Expansion, UNCS infrastructure include",
+    "image": "",
+    "scope": "Grand",
+    "author": "AusthinH7",
+    "source": "",
+    "budget": 1250,
+    "uid": "suiFg"
+  },
+  {
     "reward": "Psychic Talent or a Template Stacking of a Psychic  power or a character with Psychic  tag, or 25 credits.",
     "scope": "Standard",
     "author": "irugaa0",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1015216409158094938/stranger-things-season-4_3840x2160_xtrafondos.com.jpg",
     "objectives": [
       {
         "reward": "5 per person",
@@ -130,7 +230,7 @@
     "uid": "KIcka"
   },
   {
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1015216786049863750/Rosario_youkai_0085.webp",
     "objectives": [
       {
         "reward": "Covert Talent refund and 1 TS II for an exorcist of your choice. Alternatively, 30 Cedits.",
@@ -301,7 +401,7 @@
       }
     ],
     "budget": 100,
-    "image": "https://static.wikia.nocookie.net/witcher/images/0/06/Tw3_pendulum_ciri.png/revision/latest/scale-to-width-down/1200?cb=20181004163557",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1015217104254931024/Ciri-Training-Witcher-3.png",
     "rewardType": "Credits",
     "scope": "Grand",
     "title": "My Witcher School",
@@ -501,7 +601,7 @@
     "source": "",
     "loca": "To Aru series",
     "author": "Heaven Canceler",
-    "image": "https://static.wikia.nocookie.net/to-aru-majutsu-no-index/images/0/09/Indexlibrorumprohibitorum.png/revision/latest?cb=20160704014949",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1015217362535972934/thumb-1920-742752.png",
     "uid": "nkkhK"
   },
   {
@@ -1663,14 +1763,14 @@
     "uid": "qLMfc"
   },
   {
-    "scope": "Grand",
-    "title": "Win The Holy Grail",
     "image": "https://i.imgur.com/1OoqqAE.jpg",
+    "scope": "Grand",
+    "uid": "UqWXJ",
     "objectives": [
       {
+        "reward": "200",
         "type": "Credits",
-        "value": "Kill none of the masters",
-        "reward": "200"
+        "value": "Kill none of the masters"
       },
       {
         "reward": "100",
@@ -1678,15 +1778,14 @@
         "type": "Credits"
       }
     ],
-    "rewardType": "Credits",
-    "uid": "UqWXJ",
-    "desc": "Enter a holy grail war, and win!",
+    "title": "Win The Holy Grail",
+    "author": "Masterofbiomes",
     "conditions": [
       {
         "value": "May only be taken on Chargen"
       },
       {
-        "value": "Must substitute into a canon master from the war (Shirou, Rin, Illya, Sakura, Atrum, Kuzuki, or Kirei)"
+        "value": "Must substitute into a canon master from the war (Shirou, Rin, Shinji, Illya, Sakura, Atrum, Kuzuki, or Kirei)"
       },
       {
         "value": "You will be refunded the full price of your chosen masters cannon servant"
@@ -1698,10 +1797,11 @@
         "value": "Must win the Holy Grail War"
       }
     ],
-    "loca": "Nasuverse",
-    "source": "",
     "reward": "1000",
-    "author": "Masterofbiomes",
+    "source": "",
+    "desc": "Enter a holy grail war, and win!",
+    "loca": "Nasuverse",
+    "rewardType": "Credits",
     "budget": 365
   },
   {
@@ -3914,7 +4014,7 @@
     "uid": "oxjF7"
   },
   {
-    "image": "https://w0.peakpx.com/wallpaper/632/466/HD-wallpaper-forgive-me-pretty-dress-glow-beautiful-woman-sweet-anime-beauty-long-hair-light-blue-art-female-lovely-blonde-church-cute-girl-lady-thumbnail.jpg",
+    "image": "https://cdn.discordapp.com/attachments/894482928808112208/1017037092863356968/HD-wallpaper-forgive-me-pretty-dress-glow-beautiful-woman-sweet-anime-beauty-long-hair-light-blue-art-female-lovely-blonde-church-cute-girl-lady.png",
     "objectives": [
       {
         "value": "Gain over 500 followers.",
@@ -5328,7 +5428,7 @@
       }
     ],
     "desc": "Halkegenia is a curious continent, split between a small number of countries and dominated by human magic users. Your job here is to gain control over all of the Brimic kingdoms. But you shouldn’t just conquer the kingdoms, rather you must gain control over them through, well, strategic marriages. To finish this mission, Gallia, Tristain, Romalia and Albion must all have both a ruler and heir which are your descendants. In addition, the heir of the strongest noble family in each kingdom must also be your descendant. Since the Kingdom of Romalia is de-facto ruled by their Pope, you will most likely have to either set up reforms to make the position something that can be inherited, or set up a coup.",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1015212754891718676/MapCharLoc-ZnT07-006.webp",
     "loca": "Zero no Tsukaima",
     "objectives": [
       {
@@ -6045,7 +6145,7 @@
       }
     ],
     "desc": "6 origins, 1 Hero. Not on your watch! Save them from their bad ends and lead them to Ostagar. ",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1015236441648943204/Dragon-Age-All-Character-Origins-Explained.webp",
     "loca": "Dragon Age",
     "objectives": [
       {
@@ -6424,7 +6524,7 @@
       }
     ],
     "desc": "Infernus Scholasticus is quite the troublesome spell that can force a target to go to school until it is lifted. It forces the target to at least put in a token effort and limits their power greatly while the spellwork is active. For your job you are supposed to hijack the spell used on one Evangeline A.K. McDowell and... transfer her to a different school. One under your control. The school itself must be set out with a focus on sexuality. That is, rather than teaching the students math and science, it should be a school to educate them how to seduce others, how to strip and make a show. Your mission will be complete if Evangeline finishes a full year in your school and is considered a well trained sex slave.",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1015249845952454778/Evangeline.A.K..McDowell.full.209319.jpg",
     "loca": "Negima",
     "objectives": [
       {
@@ -6564,7 +6664,7 @@
       }
     ],
     "desc": "You are being tapped to star in a direct to DVD re-imagining of the ancient classic \"Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka\". Try to keep things at least a little 'normal' so we don't have to switch main timelines too much, lostbelts are expensive; don't rush to the end in a month like a maniac, don't start exponential capturing, don't be an exploiter, and don't worry about cameras or anything, we're always watching. Ask yourself how the actual deity would act and try not to go out of character too often, OK?",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1015251826653794385/18th_Floor.webp",
     "loca": "Danmachi",
     "objectives": [
       {
@@ -6605,7 +6705,7 @@
       }
     ],
     "desc": "Diclonii are essentially a mutation of normal humans, possessing an impressive psychic power that lets them control telekinetic \"arms\". They also seem to possess some kind of instinct that makes them see humans as enemies. Not necessarily unwaranted given the local scientists decided the best solution to their presence is comically evil experiments and torture.<br>Your job will be to capture as many Diclonii and book it. Fuck off from this world and move to a better place. We will supply you an empty unclaimed world without any intelligent life if you don't have a place to settle.",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1015250756196122624/Clone_Diclonius.JPG.webp",
     "loca": "Elfen Lied",
     "objectives": [],
     "reward": "Kokkoro from Princess Connect + 100 Credits",
@@ -6769,7 +6869,7 @@
       }
     ],
     "desc": "Misaka Mikoto's crimes have gone too far! And we are talking about her terrible habit of wearing these terrible boyshorts over her normal underwear. She needs to learn a lesson. As such, we have hired you for a simple job. You need to keep her from wearing any kind of underwear for a week. How you go about this is your choice, but she mustn't be allowed to wear any underwear for longer than 5 minutes before you get rid of it.",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1015252103578521670/Toaru_Majutsu_no_Index_E10_04m_25s.webp",
     "loca": "To Aru Series",
     "objectives": [
       {
@@ -6824,7 +6924,7 @@
       }
     ],
     "desc": " The Federation has launched a massive attack on Arachnids' homeworld. It is a pity that this is a trap set by the Arachnids to wipe out a majority of the Federation mobile infantry and fleet. Plasma Bugs along with countless Warrior Bugs are being grown by the Queens. While the Brain Bugs manipulate the Federation high command arrogance to unseen heights. This is the minimum of what you must face saving the Federation forces in the battle for Klendathu. Be warned other Arachnids forces exist on this battlefield and if necessary a Bug fleet will intervene. ",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1015252495079059528/ericunsl-starship-troopers-ba-1-53ef441d-5rdb.jpg",
     "loca": "Starship Troopers",
     "objectives": [
       {
@@ -6943,7 +7043,7 @@
       }
     ],
     "desc": "Far too many religious orders these days are oh so prudish. So your job is to spread the glory of lust and perversion. Fortunately, our client has found a fitting target. The Agnese Forces are a small order of nuns that is perfect group. Some of them already wear miniskirts and high heels!<br>Your job will be to corrupt all 250 members of the group, twisting their faith to one of lust and perversion. Their bodies and minds must be dedicated to pleasure and they must consider sex to be the equivalent of worshipful prayer. Optionally, they may literally worship a god of sex, or yourself.",
-    "image": "https://i.imgur.com/qJGKygO.png",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1015253200502276137/Toaru_Majutsu_no_Index_III_E12_03m_16s.webp",
     "loca": "To Aru Series",
     "objectives": [
       {
@@ -8016,7 +8116,7 @@
       }
     ],
     "desc": "DR upgraded to 7\n\nSPECIAL RULES, RESTRICTIONS, AND DRAWBACKS:\n\nHeritage(s), Home(s), Ride(s), Binding(s), Exit Stage Left, We Will Meet Again, Pursued By Bear, Racial Template(s), TemplateStacking(s), Corruption Defense(s), Heavenbuilt, and all other Travel Perk(s)/Power(s)/Tech(s) are all disabled until after completion of all Challenge Objectives except where noted below, but may still be purchased for afterwards.\n\n\nLocation, Location, Location: Regardless of your Origin(s) you will arrive at The Hamlet just when the Canonical Game Would have for the first time. (Aka the start of a new game.)\n\nRace Lock: Regardless of your Current Race you will be made Human, and only Origin(s) that are Human may be chosen for Possession or Walk-In.\n\nTier Cap: T5 and higher Waifus/Husbandos may not be purchased until after Challenge Completion.",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1015254027178614894/maxresdefault.jpg",
     "loca": "Darkest Dungeon",
     "objectives": [],
     "reward": "After all Objectives are completed, you will be given free purchases of Exit Stage Left, We Will Meet Again, Pursued By a Bear, Warranty Plan, 50 points to spend on Home or Ride(s), Two Copies of Corruption Defense, Two Copies of Stress Defense, and One Free T-7 Waifu Ticket of your choice. If you have already purchased any of these, you will be refunded the points paid or the current catalog price, whichever is higher. In addition, you will receive 250 points to spend as you please, and One Free World Selection Coordinates. (Can be used at ANYTIME to add a World of your choice and Timeline as your next Travel World.) And finally Regardless of your Current Catalog Tier/Access level it will be upgraded to Full Catalog Access with all Rights and Privileges of such. (This WILL/WOULD override any other RESTRICTIONS such as NO Binding/etc, this makes them able to be purchased for their normal cost.)",
@@ -8688,7 +8788,7 @@
       }
     ],
     "desc": "[Period: Before the Saint's War]\nA Skaenite cult in Defiance Bay are plotting to disrupt trade into the Free Palatinate of the Dyrwood, and therefore destabilize the control of its ruling elite, by bringing its capital city and largest port to it's knees. This has been determined to run counter to the interests of the Company.\n\nObjectives:\n-Prevent the activation of the Engwithan Machine in Heritage Hill.\n-Sunder the Skaenite Blood Pool underneath the slums of Ondra's Gift.\n-Mitigate the armed Skaenite uprising to the point that the Free Palatinate and allied forces will be able to manage it.",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1015254391982391306/PE2_Overgrowth.webp",
     "loca": "Pillars of Eternity/Defiance Bay",
     "objectives": [
       {
