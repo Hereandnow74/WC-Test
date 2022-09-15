@@ -149,7 +149,7 @@
 <script lang='ts' setup>
 import { Character } from 'global'
 import { findIndex, random } from 'lodash-es'
-import { CHAR_COSTS, defTags, PLACEHOLDER_IMAGE, waifusThatHasPerk, waifuTags } from '~/data/constants'
+import { CHAR_COSTS, defTags, PLACEHOLDER_NO_IMAGE, waifusThatHasPerk, waifuTags } from '~/data/constants'
 import { lazyLoadSingleImg, tagToggles, showDefenseTags } from '~/logic'
 import { buyCompanion, captureCompanion, yoinkCompanion, slightlyCompanion } from '~/logic/waifuLogic'
 import { useStore } from '~/store/store'
@@ -261,7 +261,7 @@ const imageLink = computed(() => {
       }
     }
     else {
-      return PLACEHOLDER_IMAGE
+      return PLACEHOLDER_NO_IMAGE
     }
   }
 })

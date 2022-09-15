@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex justify-between border border-gray-400 rounded p-1"
+    class="flex flex-col justify-between border border-gray-400 rounded p-1"
     :class="char.sold ? 'text-gray-600': ''"
   >
     <div class="flex gap-2 w-full">
@@ -30,7 +30,8 @@
             v-model="char.tier"
             theme="dark"
             :max="11"
-            label="Tier"
+            label="T"
+            :label-inside="true"
             class="whitespace-nowrap"
           />
           <NumberInput
@@ -66,7 +67,6 @@
               color="text-blue-400 hover:text-blue-300"
               class="text-gray-100"
               :list="talentsList"
-              path="/talents/talent"
               empty-message="No Talents"
             />
           </span>
@@ -78,7 +78,6 @@
               color="text-blue-400 hover:text-blue-300"
               class="text-gray-100"
               :list="perksList"
-              path="/talents/specific"
               empty-message="No Perks"
             />
           </span>
@@ -90,13 +89,12 @@
               color="text-blue-400 hover:text-blue-300"
               class="text-gray-100"
               :list="specificList"
-              path="/talents/specific"
               empty-message="No Waifu Perks"
             />
           </span>
         </div>
 
-        <div class="flex flex-wrap gap-1 text-xs mb-1">
+        <div class="flex flex-wrap gap-1 text-xs mb-2 mt-1">
           <Tag
             v-for="tag in tags"
             :key="tag.tag"
@@ -104,9 +102,52 @@
             :link="tag.tag === 'Perk' ? {path: '/talents/specific', hash: `#${waifusThatHasPerk[fullChar.u]}`} : ''"
           />
         </div>
-
-        <div v-if="!char.sold" class="flex gap-2 mt-auto justify-end">
-          <Button
+      </div>
+    </div>
+    <TextArea v-if="showNote" v-model="char.note" class="my-2" placeholder="Character notes" rows="4" />
+    <div v-if="!char.sold" class="flex gap-2 mt-auto justify-end bg-dark-200 rounded self-end px-2">
+      <div
+        v-if="flags.chargen"
+        class="cursor-pointer hover:(bg-gray-600 text-amber-400) rounded-xl p-1 pr-4"
+        :class="{'text-green-500' : char.note}"
+        title="Make a note"
+        @click="showNote = !showNote"
+      >
+        <fluent:notepad-edit-16-filled />
+      </div>
+      <div
+        v-if="flags.chargen"
+        class="cursor-pointer hover:(bg-gray-600 text-amber-400) rounded-xl p-1"
+        title="Undo"
+        @click="$emit('undo', char.uid)"
+      >
+        <ion:arrow-undo />
+      </div>
+      <div
+        v-if="char.method !== 'unbound' && settings.ableSell"
+        class="cursor-pointer hover:(bg-gray-600 text-amber-400) rounded-xl p-1"
+        title="Free"
+        @click="freeCompanion(char.uid)"
+      >
+        <mdi:bird />
+      </div>
+      <div
+        v-if="['capture'].includes(char.method)"
+        class="cursor-pointer hover:(bg-gray-600 text-amber-400) rounded-xl p-1"
+        :title="`Sell for ${char.tier === 11 ? '1 ticket' : Math.floor(CHAR_COSTS[char.tier] * manualSellKf) + 'c'}`"
+        @click="sellCompanion(char.uid)"
+      >
+        <healthicons:money-bag />
+      </div>
+      <div
+        v-if="['buy', 'used', 'yoink'].includes(char.method)"
+        class="cursor-pointer hover:(bg-gray-600 text-amber-400) rounded-xl p-1"
+        :title="`Return for ${char.priceTier === 11 ? '1 ticket' : Math.round(CHAR_COSTS[char.priceTier] * 0.8) + 'c'}`"
+        @click="sellCompanion(char.uid)"
+      >
+        <ic:baseline-assignment-return />
+      </div>
+      <!-- <Button
             v-if="char.method !== 'unbound' && settings.ableSell"
             bg-color="bg-teal-500"
             size="Small"
@@ -133,7 +174,13 @@
             size="Small"
             bg-color="bg-yellow-600"
             @click="sellCompanion(char.uid)"
-          />
+          /> -->
+      <div class="flex gap-1 items-center pl-4">
+        <div class="cursor-pointer hover:bg-gray-500 rounded-xl p-1" title="Move Up" @click="moveRetinue(-1)">
+          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"><path fill="currentColor" fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z" /></svg>
+        </div>
+        <div class="cursor-pointer hover:bg-gray-500 rounded-xl p-1" title="Move Down" @click="moveRetinue(1)">
+          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"><path fill="currentColor" fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" /></svg>
         </div>
       </div>
     </div>
@@ -142,7 +189,8 @@
 
 <script lang="ts" setup>
 import type { PropType } from '@vue/runtime-core'
-import { isNumber } from 'lodash'
+import { findIndex, isNumber } from 'lodash'
+import TextArea from '../basic/TextArea.vue'
 import { CHAR_COSTS, useAllChars, waifusThatHasPerk, waifuTags } from '~/data/constants'
 import { waifuPerksObject } from '~/data/waifu_perks'
 import { imageLink } from '~/logic'
@@ -176,7 +224,9 @@ const methods = {
 
 const emit = defineEmits(['sell', 'undo', 'free'])
 
-const { flags, settings, manualSellKf } = useStore()
+const showNote = ref(false)
+
+const { flags, settings, manualSellKf, companions } = useStore()
 const { allCharsObject } = useAllChars()
 
 const fullChar = computed(() => {
@@ -206,6 +256,15 @@ function sellCompanion(uid: number) {
 
 function freeCompanion(uid: number) {
   emit('free', uid)
+}
+
+function moveRetinue(n: number) {
+  const startIndex = findIndex(companions.value, { uid: props.char.uid })
+  const saveChar = companions.value[startIndex]
+  if ((startIndex + n) >= 0 && (startIndex + n) < companions.value.length) {
+    companions.value[startIndex] = companions.value[startIndex + n]
+    companions.value[startIndex + n] = saveChar
+  }
 }
 
 </script>

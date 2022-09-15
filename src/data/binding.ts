@@ -465,7 +465,7 @@ If you Possessed or Substituted a waifu or are otherwise female, you may act as 
     cost: 64,
     type: 'Shroud',
     category: 'Binding',
-    image: 'https://i.ibb.co/3NtrqMS/Prismatic-Shroud.jpg',
+    image: 'https://cdn.discordapp.com/attachments/925963686433132644/1018095164591452190/wallpapersden.com_sung-jin-woo-8k-solo-leveling_1600x1200.jpg',
     whitelist: ['Elemental Shroud'],
     // element: '',
     complex: 'flavor',

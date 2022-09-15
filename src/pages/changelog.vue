@@ -6,6 +6,26 @@
       </h2>
       <div>
         <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          15 September 2022
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~80 new user submitted characters, new missions.</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          11 September 2022
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~30 new user submitted characters, 8 new worlds, new missions.</li>
+          <li>Up and Down buttons to rearrange retinue members</li>
+          <li>Notes for retinue members</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
           08 September 2022
         </h3>
         <ul class="list-decimal list-inside">

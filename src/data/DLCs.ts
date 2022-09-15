@@ -57,9 +57,9 @@ DLCgenericPerks.push({
   cost: 50,
   max: 10,
   complex: 'target',
-  desc: `You can turn your abilities down or off, using your HUD. This can take the form of percentages or numerical sliders, but is not limited to such.
-  <p>If you purchase this perk for any ten of your retinue members, including yourself, the rest of your retinue may gain this perk for free.</p>
-  <p>Example: Kryptonian, but don't want to hear a world's suffering? Turn that Super Hearing down to 1/1000. Don't want your Shroud to shift or change due to unconscious desires? Off switch!</p>
+  desc: `You can use your HUD to adjust absolutely any and all abilities, perks, skills, traits, etc. that you have, from this CYOA or 3rd party sources, from 0-100%. This perk does not allow you to raise any ability or parameter above 100%, even if something else is reduced or turned off. 
+  <p>  The Contractor can access the abilities of all subjects that have a copy of this perk and has final say, even including the ability to disable subjects’ perks or alter the enforced loyalty of a Binding. Once you’ve purchased this perk ten times, it will apply to every member of your retinue.</p>
+  <p>Uses of this perk include: Reduce super senses. Turn off Shroud shifting due to unconscious desires. Limit yourself and a Saiyan sparring partner to T6 to not need to worry about the planet if you lose control. Turn off out of context abilities to play at being a local. Turn off the retinue's powers on board game night, and reduce card counters' memory to even the playing field.</p>
     `,
   needed: 1,
   whitelist: ['HUD', 'First Augmentation'],
@@ -76,23 +76,6 @@ DLCgenericPerks.push({
   complex: 'target',
   desc: `Got a waifu that you just can’t touch, some sort of giant monster, or not quite flesh and blood? Well with this perk, let all your worries slip away. AI’s gain a physical body they can summon at will, giant monsters gain a human-ish. Think cat-girl level humanization. They don’t loose their powers, but they can now fit in your living room. Same thing with robots and the like. They’ll get a human-ish form with some robot bits somewhere, but now instead of only being able to cuddle cold hard metal at night, you get a nice warm human lookin kind of thing. All anthropized forms can be swapped out at will by the waifu this is applied to. 10 purchases for your retinue will let you apply this to any waifu you have in your retinue.
      `,
-})
-
-DLCgenericPerks.push({
-  uid: 'GbO2V',
-  dlc: 'CelestialDragon DLC',
-  category: 'Generic',
-  dlclink: 'https://docs.google.com/spreadsheets/d/1FM6PNbDEyZV4T4rVLWjPYBc3O0jmmwd1obkFD7jLDt8/edit?usp=sharing',
-  title: 'Does it come in Black',
-  image: 'https://i.ibb.co/jrw1kCG/Does-It-Come-In-Black.jpg',
-  cost: 1,
-  max: 10,
-  complex: 'target',
-  special: 'Only in the moment of purchase',
-  desc: `<p>This companion is different from original one, they are version from a fan-fiction, abridged, future version, alternate timeline etc.</p>
-  <p>If their tier is different from the catalog entry you need to pay appropriate difference in listed price.</p>
-  <p>If you have Warranty Plan you can change any companion personality any time, when you apply this perk to them they will disappear and appear after 1 sec of delay.</p>
-  `,
 })
 
 DLCgenericPerks.push({
@@ -680,7 +663,7 @@ DLCotherControls.push({
 
 DLCotherControls.push({
   uid: 'gqjwm',
-  dlc: 'by Skelethin',
+  dlc: 'DLC by Skelethin',
   dlclink: 'https://docs.google.com/document/d/1HGcpJGpGbLCeA3VO8LFrQjxQqkYANdeoWbCKlCOnK0A/edit',
   title: 'Grail System',
   category: 'Other Controls',
@@ -696,7 +679,7 @@ DLCotherControls.push({
 
 DLCotherControls.push({
   uid: 'ko94c',
-  dlc: 'by Skelethin',
+  dlc: 'DLC by Skelethin',
   dlclink: 'https://docs.google.com/document/d/1HGcpJGpGbLCeA3VO8LFrQjxQqkYANdeoWbCKlCOnK0A/edit',
   title: 'Class Cards',
   category: 'Other Controls',
@@ -737,11 +720,11 @@ DLCotherControls.push({
 })
 DLCotherControls.push({
   uid: 'gqjwm',
-  dlc: 'by Skelethin',
+  dlc: 'DLC by Skelethin',
   dlclink: 'https://docs.google.com/document/d/1HGcpJGpGbLCeA3VO8LFrQjxQqkYANdeoWbCKlCOnK0A/edit',
   title: 'Demi-Servant',
   category: 'Other Controls',
-  image: '',
+  image: 'https://cdn.discordapp.com/attachments/925963686433132644/1015230828122472459/HSSM.webp',
   cost: 120,
   desc: `All those synced to the Grail System get further boosted to be fully on the level of at least a Low Class Servant. You and your retinue gain the Body, Martial, Science, and Soul Talents. (Take these four perks, plus Talent Sharing (Martial), Talent Sharing (Science) and Talent Sharing (Soul), for free.) You also gain Body, and Wild Defenses for free as well. 
   <p>Each member may permanently gain the effect of a Class Card they have access to. Unlike Class Cards however, this is a fixed choice, and must be in theme with that companion’s personality, skill, and current affinities. Those who would otherwise qualify for multiple classes may decide to switch classes via a ritual that requires being without a class for more than 24 hours, after which a new class may be selected.</p>
@@ -752,7 +735,7 @@ DLCotherControls.push({
 })
 DLCotherControls.push({
   uid: 'gqjwm',
-  dlc: 'by Skelethin',
+  dlc: 'DLC by Skelethin',
   dlclink: 'https://docs.google.com/document/d/1HGcpJGpGbLCeA3VO8LFrQjxQqkYANdeoWbCKlCOnK0A/edit',
   title: 'True Name',
   category: 'Other Controls',
@@ -771,7 +754,7 @@ DLCotherControls.push({
 })
 DLCotherControls.push({
   uid: 'gqjwm',
-  dlc: 'by Skelethin',
+  dlc: 'DLC by Skelethin',
   dlclink: 'https://docs.google.com/document/d/1HGcpJGpGbLCeA3VO8LFrQjxQqkYANdeoWbCKlCOnK0A/edit',
   title: 'Ruler',
   category: 'Other Controls',
@@ -787,7 +770,7 @@ DLCotherControls.push({
 })
 DLCotherControls.push({
   uid: 'gqjwm',
-  dlc: 'by Skelethin',
+  dlc: 'DLC by Skelethin',
   dlclink: 'https://docs.google.com/document/d/1HGcpJGpGbLCeA3VO8LFrQjxQqkYANdeoWbCKlCOnK0A/edit',
   title: 'Saint Graph Library',
   category: 'Other Controls',

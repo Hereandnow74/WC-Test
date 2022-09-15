@@ -1,6 +1,7 @@
 <template>
   <div class="rounded p-2">
     <div class="flex gap-2 justify-center items-center flex-wrap py-2">
+      {{ fics.length }}
       <Input v-model="search" placeholder="Fic name or author" />
       <clarity:eraser-solid class="icon-btn w-8" @click="clearAndReset" />
       <Select v-model="author" :options="authorOptions" label="Author" class="max-w-48">

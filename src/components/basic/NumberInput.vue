@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="inline-flex w-min h-max" :class="{'dark': theme === 'dark'}">
-      <label v-if="label" for="" class="mr-2">{{ label }}</label>
+      <label v-if="label && !labelInside" for="" class="mr-2">{{ label }}</label>
       <div
         ref="minusButton"
         class="rounded-l-lg hover:bg-orange-500 w-4 text-center cursor-pointer select-none bg-warm-gray-300 text-gray-800 dark:(bg-warm-gray-700 text-gray-400)"
@@ -15,7 +15,7 @@
         name=""
         class="focus:outline-none text-center text-gray-800 dark:(text-gray-200 bg-warm-gray-600)"
         :style="width"
-        :value="value"
+        :value="newValue"
       >
       <div
         ref="plusButton"
@@ -59,6 +59,10 @@ const props = defineProps({
     type: Number,
     default: 1,
   },
+  labelInside: {
+    type: Boolean,
+    default: false,
+  },
   errorMessage: {
     type: String,
     default: '',
@@ -69,7 +73,8 @@ const value = ref(props.modelValue || props.min)
 
 const emit = defineEmits(['update:modelValue'])
 
-const width = computed(() => `width: ${`${value.value}`.length + 1}ch`)
+const newValue = computed(() => props.labelInside ? `${props.label}${value.value}` : value.value)
+const width = computed(() => `width: ${`${newValue.value}`.length + 1}ch`)
 
 watch(props, () => value.value = props.modelValue)
 

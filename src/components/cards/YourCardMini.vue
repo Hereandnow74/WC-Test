@@ -25,7 +25,8 @@
             v-model="startingOrigin.tier"
             theme="dark"
             :max="11"
-            label="Tier"
+            label="T"
+            :label-inside="true"
             class="whitespace-nowrap"
           />
           <div v-if="flags.chargen && ['Substitute', 'Walk-In'].includes(startingOrigin.title) && noUC">

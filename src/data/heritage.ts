@@ -454,7 +454,7 @@ heritages.push({
   title: 'Distributed Intellectual Devotions',
   category: 'Heritage',
   tree: 'Transhuman',
-  image: '',
+  image: 'https://cdn.discordapp.com/attachments/925963686433132644/1017136465555226684/3dfd6c0d21b4a3780870eb57aacdb5c3.jpg',
   type: 'Self',
   cost: 60,
   freebies: {

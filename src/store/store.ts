@@ -315,8 +315,9 @@ const targetList = computed(() => {
 
 const yourTier = computed(() => {
   const calcTier = (perks: Perk[]) => {
-    let tier = 5
+    let tier = 1
     perks.forEach((perk) => {
+      if (tier < 5 && ['First Augmentation', 'Lurking On The Threshold'].includes(perk.title)) tier = 5
       if (tier < 6 && ['Corporeal Transcendence Engineering', 'Dragon Heart'].includes(perk.title)) tier = 6
       if (tier < 7 && ['Evolutionary Engine Array', 'Dragon Scale'].includes(perk.title)) tier = 7
       if (tier < 8 && ['Incandescent Ascendancy Machine', 'Double Dragon'].includes(perk.title)) tier = 8

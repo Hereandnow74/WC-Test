@@ -87,7 +87,7 @@
           <Button v-show="currentPage !== companionsDataChunks.length - 1" label="Last" bg-color="bg-teal-500" size="Small" @click="currentPage = companionsDataChunks.length - 1" />
         </div>
       </div>
-      <div v-if="companionsDataFiltered.length" class="flex gap-2 justify-end mt-2 px-2">
+      <div v-if="companionsDataFiltered.length" class="flex gap-2 justify-center mt-2 px-2">
         <Button size="Small" label="Undo All" bg-color="bg-blue-500" @click="undoAll" />
         <Button size="Small" label="Sell All" bg-color="bg-red-500" @click="sellAll" />
         <Button size="Small" label="Return All" bg-color="bg-amber-600" @click="returnAll" />

@@ -1,11 +1,314 @@
 [
   
   {
+    "objectives": [
+      {
+        "type": "Perks",
+        "reward": " Soul Talent and you gain a TS II for Berserker Heracles.",
+        "value": "Find a way to purify the Holy Grail and have Illya actually gain the True Magic of the Einzbern without dying or dooming humanity. "
+      }
+    ],
+    "image": "",
+    "reward": "Irisviel von Einzbern, Kiritsugu Emiya, Hisau Maya and Natalia Kaminski are revived and bound to you. 50% of the capture value of every Servant you defeated in combat.",
+    "desc": "Illyasviel von Einzbern is expected to become master of servant Berserker during the 5th Holy Grail War. Unfortunately her fate during it rarely leads to a happy ending. At best she can hope to live a few more years beyond the war, dying young but at least with bittersweet happiness on her lips. At other times she sacrifices her life for the sake of her adopted sibling. Worst case she ends up dying painfully, heart ripped out after her protector got slaughtered trying to defend her. We of the Company are curious to see if a sponsored guardian of ours could do better, which is where you come in. For this mission you will replace Berserker as Illya's Servant and his job to protect her from danger. Your victory conditions are for her to survive the Grail War, have her health problems fixed and deal with her adopted sibling.",
+    "loca": "Nasuverse",
+    "title": "Snow Fairy's Bodyguard",
+    "budget": 360,
+    "rewardType": "Companions",
+    "scope": "Standard",
+    "conditions": [
+      {
+        "value": "You must possess a non-native of the Nasuverse or drop in as is. A TS of a generic Servant must be applied to you."
+      },
+      {
+        "value": "You will be given the non-standard \"Foreigner\" class and a new person will be given a command seal by the Grail to fill the missing slot for a basic class."
+      },
+      {
+        "value": "Illya and other Masters are considered immune to Bindings for the duration of the mission. Lures have reduced effectiveness on them too."
+      },
+      {
+        "value": "Either get Illya her revenge on Emiya Shirou or fix the relationship between the estranged siblings. "
+      }
+    ],
+    "author": "Heaven Canceler",
+    "source": "",
+    "uid": "Syplv"
+  },
+  {
+    "source": "",
+    "title": "A Naughty Christmas",
+    "objectives": [],
+    "desc": "Whelp, Santa Claus got run over by a car. The good news is, he is alive and will make a full recovery according to the north pole’s medical team. The bad news is that it is only 3 days until Christmas and he will take at least a month before he can walk properly again, never mind jump in and out of chimneys while twisting the space-time continuum.\n\nYour job is to step in for Santa while he is down for the count. We hope you have some experience with sleds and like reindeer, because it's going to be a wild ride. That said, in exchange for supplying Santa with a quick replacement, you have been granted some extra privileges. Namely, you get to have some extra fun “rewarding” good boys and girls in lewd ways while punishing the bad ones in equally lewd ways. We leave the details to you, but attached you find an image for inspiration.",
+    "budget": 100,
+    "rewardType": "Other",
+    "loca": "Generic",
+    "conditions": [
+      {
+        "value": "Gotta keep up the theme, wear something Christmas like. Same goes for any Retinue members you take along."
+      },
+      {
+        "value": "Don't get caught by any \"adults\" or these who want to get a good picture of Santa."
+      },
+      {
+        "value": "No capturing good girls and boys, though feel free to do so with the bad ones."
+      }
+    ],
+    "image": "https://i.imgur.com/WTpKvD5.png",
+    "scope": "Quick",
+    "reward": " You gain a Free TS for Christmas magic, and a copy of Santa’s Sled, need to get your own reindeers though.",
+    "author": "Heaven Canceler",
+    "uid": "aSoTF"
+  },
+  {
+    "conditions": [
+      {
+        "value": "Hakuno must become a Succubus, Sex Goddess or otherwise a being of sexual desire that transcends humanity. Ascension into a Heroic Spirit or equivalent is valid."
+      },
+      {
+        "value": "Hakuno must wear a erotic costume during battle in order to further exemplify her nature as a being of desire. We recommend something like the “Beast Mode” outfit or Nightingale’s “Trick or Treatment” costume."
+      },
+      {
+        "value": "Others may not directly fight by Hakuno’s side during the final battle against Kiara, but may serve as support, boosting her abilities or debuffing the enemy in non-damaging ways."
+      }
+    ],
+    "source": "",
+    "image": "https://i.imgur.com/YzfWOw1.jpg",
+    "reward": "You gain 1 TX ticket and 1000 Credits. Hakuno is now officially considered a TX Beast type existence and can be sold for an additional TX ticket if desired. You also gain all Demplane Perks or a refund if you already possess them, including the “Laws of Reality” which will come pre-programmed with a Moon Cell esque system allowing for digitalization of reality and setting you as the system administrator.",
+    "objectives": [
+      {
+        "value": "Have Hakuno sexually dominate Rin Tohsaka and Rani VIII and have them willingly accept becoming her sex slaves.",
+        "reward": "Servant Class Cards for Medb and Yang Guifei are auto-equipped on these two respectively. These may be removed and equipped by anyone with magic potential. Alternatively, you may gain 80 Credits.",
+        "type": "Other"
+      },
+      {
+        "type": "Other",
+        "reward": "Alice and Nursery Rhyme gain the ability to fuse. In this state, they become a new unique type of High Servant, gaining access to Aspects of Kama, Aphrodite and Ishtar.",
+        "value": "Capture Master Alice and Servant Nursery Rhyme and train the former up in sexual powers like Hakuno until she reaches T7. They must defeat at least one of AI Sakura Matou’s Alter Egos."
+      }
+    ],
+    "loca": "Nasuverse",
+    "rewardType": "TX Tickets",
+    "desc": "Hakuno Kishinami, the one who is destined to claim the title of “Sovereign of the Moon”. For the purpose of this mission you will target her, capture her and then raise her into far greater heights. We desire for this focused, quiet and intelligent person to be raised to the heights of debauchery. Not only do we want you to make her a perverted lustful woman, we want you to push her to the very brink in both pure desire and power and then break these limits. Because nothing less will help you succeed in this mission. For at the end, she must challenge Sessyoin Kiara at the height of her power in the form of “Heaven’s Hole” and defeat her. Not simply by defeating her with raw destructive power, but to eclipse her in pure desire and lust. That is, we wish for you to defeat a Beast level entity using the very power that they use. It is recommended to start this mission at the beginning of the original Fate/Extra plotline to give more time for developing Hakuno, but if you desire an even greater challenge you may start in CCC.",
+    "title": "Fallen Sovereign of the Moon",
+    "author": "Heaven Canceler",
+    "scope": "Standard",
+    "budget": 600,
+    "uid": "bLymV"
+  },
+  {
+    "loca": "Any world with Magical Girls",
+    "author": "Ratcatcher",
+    "image": "https://cdn.donmai.us/original/07/dd/__tsukino_usagi_and_sailor_moon_bishoujo_senshi_sailor_moon_drawn_by_zero130__07dd39e5d7714f85cd3186cbe7bb53d3.png",
+    "source": "",
+    "conditions": [
+      {
+        "value": "You must have a direct hand in corrupting the targeted Magical Girl."
+      },
+      {
+        "value": "Bindings cannot be used to fully Capture the targets, but can be used to speed things up. Lures can be used freely"
+      },
+      {
+        "value": "The targeted Magical Girl is captured when she fully dedicates herself to you"
+      }
+    ],
+    "objectives": [
+      {
+        "type": "Credits",
+        "value": "Capture all Magical Girls in a setting",
+        "reward": "The setting's budget"
+      }
+    ],
+    "rewardType": "Credits",
+    "scope": "Grand",
+    "desc": "Magical Girls. The unstoppable defenders of many worlds. Invincible, incorruptible... Or are they? Your job is to bring them on your side... The hard way.",
+    "budget": 500,
+    "title": "Magical Girl Conqueror",
+    "reward": "The captured Magical Girl's purchase price",
+    "uid": "tZRYu"
+  },
+  {
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1018575772358803466/macbeth-about-to-murder-king-duncan-in-ken-welsh.jpg",
+    "conditions": [
+      {
+        "value": "Kill a king."
+      },
+      {
+        "value": "Can’t use no help from retinue"
+      },
+      {
+        "value": "Your max tier is set at 5. "
+      },
+      {
+        "value": "Collect the king’s head"
+      }
+    ],
+    "rewardType": "Credits",
+    "loca": "Generic",
+    "source": "",
+    "desc": "One of our clients is fissured in kin-slaying after repeatedly listening to the song, kill the king from the band Megadeth. So you are hired to do it.",
+    "author": "irugaa0",
+    "objectives": [
+      {
+        "value": "Play Megadeth’s kill the king song while you kill the king.",
+        "reward": "a Tier 4 or lower companion.",
+        "type": "Companions"
+      }
+    ],
+    "title": "Kill The King ",
+    "budget": 0,
+    "reward": "25",
+    "scope": "Quick",
+    "uid": "yjKFF"
+  },
+  {
+    "loca": "Pokemon",
+    "source": "",
+    "image": "https://static1.srcdn.com/wordpress/wp-content/uploads/2021/02/is-team-rocket-still-active-pokemon.jpg",
+    "objectives": [
+      {
+        "type": "Other",
+        "value": "Defeat Red at Mount Moon",
+        "reward": "Ariana is replaced by a different potential target as Viridian City's replacement gym leader (target will be from the Pokemon franchise and at least tier 5, tier will be raised if needed)"
+      },
+      {
+        "value": "Foil professor Oak's plan without Red becoming champion",
+        "type": "Other",
+        "reward": "Agatha is rejuvened, chance of capturing her and Lorelei"
+      },
+      {
+        "type": "Perks",
+        "value": "Capture all 151 first generation Pokemon",
+        "reward": "Unison for all retinue members from the Pokemon franchise"
+      }
+    ],
+    "desc": "The first generation Pokemon games tease you with the idea of joining Team Rocket. Here, you will do just that, starting out as a Rocket Grunt and rising the ranks on the background of Red's rise to Championship.",
+    "conditions": [
+      {
+        "value": "Follow the events of colonelsalt's Pokemon Fire Red Rocket Edition rom hack until the defeat of Champion Red."
+      },
+      {
+        "value": "Use of outside abilities is banned until the defeat of Champion Red or Oak's plan is foiled, whichever comes first."
+      },
+      {
+        "value": "Existing members of your retinue can be Pokemon trainer and help as needed. Team Rocket must not find out until you are promoted to boss."
+      },
+      {
+        "value": "Red can be replaced by Leaf, depending on your preference"
+      }
+    ],
+    "author": "Ratcatcher",
+    "title": "Rocket Edition",
+    "budget": 35,
+    "scope": "Standard",
+    "rewardType": "Credits",
+    "reward": "200",
+    "uid": "duZLZ"
+  },
+  {
+    "conditions": [
+      {
+        "value": "Once you enter you can not leave. All travel off world is prohibited and will result in immediate and total destruction."
+      },
+      {
+        "value": "Your build must be xompany original (shrouds, heritages, etc) or approite (comes from MMOs, RPGs, Fantasy, and/or Isekai games/anime)"
+      },
+      {
+        "value": "Your access to Commpany services will be limited. "
+      }
+    ],
+    "author": "NO1",
+    "scope": "Grand",
+    "source": "",
+    "objectives": [
+      {
+        "reward": "1000",
+        "type": "Credits",
+        "value": "Conquest: Conquer the New World, by diplomacy, force, trickery, it does not matter. Be ruler of the World for a year and have an heir ti complete."
+      },
+      {
+        "type": "Other",
+        "value": "Break Out: Find and resolve what caused the anomaly.",
+        "reward": "Lock down is lifted early, 2000 credits"
+      },
+      {
+        "reward": "The New World becomes your Demiplane/Dungeon. 2x Discount of upgrades for demiplanes/dungeons. In galactic scale setti gs it will become a planet in the setting under your control.",
+        "type": "Other",
+        "value": "Veni, Vidi, Vici: If you complete Break Out while you are ruler of the world."
+      }
+    ],
+    "budget": 1200,
+    "rewardType": "TX Tickets",
+    "title": "NWEP - New World Expansion Pack",
+    "desc": "Something went horribly wrong. Some anomalous event has tainted this version of OVERLORD. This time YGGDRASIL was not the only game to be connected. Now characters from other games of the MMO variety, be it OC Players or NPCs, are there as well. As such this world is now under quartine by the Company until futher notice, and you just got locked in. Now you must contend with this expanded world, survive until the lock down is lifted in 200 years. Conquer the world, or find and deal with the cause yourself.",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1018577472322797648/image-asset.png",
+    "loca": "Overlord (LN)",
+    "reward": "1",
+    "uid": "hxYVM"
+  },
+  {
+    "scope": "Standard",
+    "conditions": [
+      {
+        "value": "Become a Daedric Prince"
+      },
+      {
+        "value": "Conquer, Create or Steal and rule a Realm in oblivion"
+      },
+      {
+        "value": "Create a new Tier-4 Daedra "
+      },
+      {
+        "value": "Create a new humanoid Tier-5 Daedra "
+      },
+      {
+        "value": "Create at least 3 daedric Artifacts"
+      },
+      {
+        "value": "Give one of your artifacts to a mortal. "
+      },
+      {
+        "value": "Have a Champion"
+      }
+    ],
+    "loca": "The Elder Scrolls",
+    "author": "irugaa0",
+    "budget": 0,
+    "desc": "The Daedric Princes are an exotic group of deities who exist in the Elder Scrolls Universe. And one client is very interested in seeing the chaos that a new Daedric Prince, would bring to Tamriel.",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1018577045665620099/ufw1ykj9zm271.webp",
+    "title": "Succession of Daedric Lords",
+    "objectives": [
+      {
+        "value": "Have a Champion of tier - 5 or higher",
+        "reward": "a Tier-5 or lower Companion of your choice.",
+        "type": "Companions"
+      },
+      {
+        "value": "Have a small Daedric cult for yourself. (0/10)",
+        "reward": "20",
+        "type": "Credits"
+      },
+      {
+        "type": "Credits",
+        "reward": "50",
+        "value": "Have a medium Daedric cult for yourself. (0/30)"
+      },
+      {
+        "value": "Have a large Daedric cult for yourself. (0/100)",
+        "reward": "10",
+        "type": "Credits"
+      }
+    ],
+    "source": "",
+    "reward": "2 heritage perks of your choice.",
+    "rewardType": "Other",
+    "uid": "XXFtz"
+  },
+  {
     "rewardType": "Credits",
     "reward": "50",
     "source": "",
     "budget": 0,
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1018578938370465925/Screenshot_2.jpg",
     "objectives": [
       {
         "type": "Companions",
@@ -68,37 +371,47 @@
     "uid": "yffVB"
   },
   {
+    "title": "Reach Upon the Stars",
+    "uid": "suiFg",
+    "rewardType": "Other",
+    "reward": "A full copie of UNSC fortress world of Reach in your Sweet Home Expansion, UNCS infrastructure include",
+    "author": "AusthinH7",
+    "source": "",
+    "scope": "Grand",
+    "budget": 1250,
     "objectives": [
       {
         "type": "Other",
-        "reward": "Spartan III Project's full information (Data, sérum formula, training, equipment blueprints, etc).",
-        "value": "Save Noble Team"
+        "value": "Save Noble Team",
+        "reward": "Spartan III Project's full information (Data, sérum formula, training, equipment blueprints, etc)."
       },
       {
+        "value": "Make sure Chief reach Installation 04",
         "reward": "Spartan II TS2 or 100 credits.",
+        "type": "Other"
+      },
+      {
+        "value": "Save the Spartans",
+        "reward": "50 credits by Spartans saved",
+        "type": "Credits"
+      },
+      {
+        "reward": "600 credits or 300 Headhunters Spartan III companion",
         "type": "Other",
-        "value": "Make sure Chief reach Installation 04"
+        "value": "Save Reach in the shadow "
       }
     ],
+    "loca": "Halo - Reach",
     "desc": "July 24, 2552, the Covenant are here. To make humanity bleed, strike them where it hurts, by taking down the fortress world, Reach. That's where you came in Contractor. Objectif : Save Reach at any cost.",
     "conditions": [
       {
         "value": "May not be anything else than Human, Cyborg or AI."
       },
       {
-        "value": "Companion's Tier may not be above 5."
+        "value": "Companion's Tier may not be above 7."
       }
     ],
-    "rewardType": "Other",
-    "loca": "Halo - Reach",
-    "title": "Reach Upon the Stars",
-    "reward": "A full copie of UNSC fortress world of Reach in your Sweet Home Expansion, UNCS infrastructure include",
-    "image": "",
-    "scope": "Grand",
-    "author": "AusthinH7",
-    "source": "",
-    "budget": 1250,
-    "uid": "suiFg"
+    "image": "https://i.imgur.com/sSPpPEd.jpeg"
   },
   {
     "reward": "Psychic Talent or a Template Stacking of a Psychic  power or a character with Psychic  tag, or 25 credits.",
@@ -627,10 +940,18 @@
     "uid": "VfnuG"
   },
   {
-    "rewardType": "Credits",
+    "loca": "Overlord (LN)",
     "scope": "Standard",
+    "title": "Guild PvP",
+    "desc": "Welcome to the New World, think DnD but with realistic power levels, where being a group of young adventures is more likely to end with you as some monster's lunch than as a hero of the realm.\nAnd speaking of monsters, a group of them just showed up, and their master plan is to conquer the world!\nYou're not about to let them do it, are you? If anyone's conquering the world, it will be you!",
     "author": "CyrusFallen",
+    "reward": "2500",
+    "uid": "oYpFt",
+    "budget": 1500,
+    "source": "",
     "image": "https://epipoca.com.br/wp-content/uploads/2022/07/overlord-12072022.jpg",
+    "rewardType": "Credits",
+    "objectives": [],
     "conditions": [
       {
         "value": "You will be dropped into the New World at the same time as Nazarick."
@@ -640,9 +961,6 @@
       },
       {
         "value": "Inexhaustible is not allowed for this mission, and defenses will be nerfed to level 1, they still work but certain skills and world items can bypass them."
-      },
-      {
-        "value": "Capture/Kill every floor guardian and Ainz himself to win, captures must be immediately sold."
       },
       {
         "value": "You are allowed one new companion purchase for every guardian you capture/kill, otherwise you are only allowed to purchase defenses during the mission."
@@ -656,15 +974,7 @@
       {
         "value": "Finally, take an extra 1000 credits, you must spend those on companions but you are allowed to spend more if you wish."
       }
-    ],
-    "title": "Guild PvP",
-    "reward": "2500",
-    "source": "",
-    "desc": "Welcome to the New World, think DnD but with realistic power levels, where being a group of young adventures is more likely to end with you as some monster's lunch than as a hero of the realm.\nAnd speaking of monsters, a group of them just showed up, and their master plan is to conquer the world!\nYou're not about to let them do it, are you? If anyone's conquering the world, it will be you!",
-    "objectives": [],
-    "budget": 1500,
-    "loca": "Overlord (LN)",
-    "uid": "oYpFt"
+    ]
   },
   {
     "reward": "20",
@@ -4740,54 +5050,13 @@
     "uid": "zai2X"
   },
   {
-    "reward": "200 credits",
-    "uid": "tGONX",
-    "desc": "Lila Rossi could have been a fearsome villainess, had it not been for her weird penchant to just disappear at random times. She'd have certainly been a more competent villain than Hawk Moth.\nYour job is to correct this, in a way: you will substitute Lila shortly before she first met Ladybug, and conquer her.",
-    "rewardType": "Credits",
-    "author": "Ratcatcher",
     "scope": "Standard",
-    "loca": "Miraculous: Tales of Ladybug and Cat Noir",
-    "budget": 55,
-    "objectives": [
-      {
-        "type": "Other",
-        "reward": "100 credits or Le Grand Paris as Grand Manor",
-        "value": "Capture Chloé Bourgeois and Zoe Lee"
-      },
-      {
-        "reward": "100 credits or Agreste Mansion as Grand Manor",
-        "type": "Other",
-        "value": "Capture Emilie Agreste"
-      },
-      {
-        "value": "Capture Adrien Agreste/Chat Noir through the same methods as the main mission",
-        "reward": "Fatality Defense x2",
-        "type": "Perks"
-      },
-      {
-        "reward": "Paradox Defense x2",
-        "type": "Perks",
-        "value": "Capture Bunnyx"
-      },
-      {
-        "reward": "Environmental Defense x2",
-        "value": "Capture Ladydragon",
-        "type": "Perks"
-      },
-      {
-        "reward": "The next level of progression on Transhuman Heritage excluding Singularity or its price in credits",
-        "value": "Capture Aeon Hill and Jessica Kaynes",
-        "type": "Perks"
-      },
-      {
-        "value": "Collect all Miraculous of the Chinese Miraculous Box (they can be yours or in possession of retinue members)",
-        "reward": "1 TX Ticket",
-        "type": "TX Tickets"
-      }
-    ],
-    "title": "Lila's Miraculous Conquest",
-    "image": "https://pbs.twimg.com/media/D1-V7erU4AUAY3T.jpg",
+    "uid": "tGONX",
+    "author": "Ratcatcher",
     "conditions": [
+      {
+        "value": "Chargen only: subtitute as Lila Rossi. You only have the abilities she has at her debut"
+      },
       {
         "value": "Marinette/Ladybug must be Captured, but she will be immune to any form of Capture until she has at least a crush on you. She can however be swayed by Lures"
       },
@@ -4796,12 +5065,53 @@
       },
       {
         "value": "You must not be discovered as a villainess by anyone but Bunnyx"
-      },
-      {
-        "value": "Forage: only local Captures may help"
       }
     ],
-    "source": ""
+    "image": "https://pbs.twimg.com/media/D1-V7erU4AUAY3T.jpg",
+    "reward": "200 credits",
+    "loca": "Miraculous: Tales of Ladybug and Cat Noir",
+    "budget": 55,
+    "title": "Lila's Miraculous Conquest",
+    "desc": "Lila Rossi could have been a fearsome villainess, had it not been for her weird penchant to just disappear at random times. She'd have certainly been a more competent villain than Hawk Moth.\nYour job is to correct this, in a way: you will substitute Lila shortly before she first met Ladybug, and conquer her.",
+    "rewardType": "Credits",
+    "source": "",
+    "objectives": [
+      {
+        "type": "Other",
+        "value": "Capture Chloé Bourgeois and Zoe Lee",
+        "reward": "100 credits or Le Grand Paris as Grand Manor"
+      },
+      {
+        "value": "Capture Emilie Agreste",
+        "reward": "100 credits or Agreste Mansion as Grand Manor",
+        "type": "Other"
+      },
+      {
+        "type": "Perks",
+        "value": "Capture Adrien Agreste/Chat Noir through the same methods as the main mission",
+        "reward": "Fatality Defense x2"
+      },
+      {
+        "value": "Capture Bunnyx",
+        "reward": "Paradox Defense x2",
+        "type": "Perks"
+      },
+      {
+        "value": "Capture Ladydragon",
+        "type": "Perks",
+        "reward": "Environmental Defense x2"
+      },
+      {
+        "value": "Capture Aeon Hill and Jessica Kaynes",
+        "reward": "The next level of progression on Transhuman Heritage excluding Singularity or its price in credits",
+        "type": "Perks"
+      },
+      {
+        "value": "Collect all Miraculous of the Chinese Miraculous Box (they can be yours or in possession of retinue members)",
+        "reward": "1 TX Ticket",
+        "type": "TX Tickets"
+      }
+    ]
   },
   {
     "title": "Manton Effect?",

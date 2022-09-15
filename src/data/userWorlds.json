@@ -2892,6 +2892,10 @@
       {
         "name": "The Little Mermaid",
         "rating": 3
+      },
+      {
+        "name": "Tangled",
+        "rating": 3
       }
     ]
   },
@@ -4685,7 +4689,15 @@
   {"worldName":"Baki The Grappler","rating":5,"image":"https://cdn.donmai.us/sample/c4/11/__hanma_yuujirou_hanma_baki_orochi_doppo_retsu_kaiou_hanayama_kaoru_and_1_more_grappler_baki_drawn_by_kazama_raita__sample-c4111ef4ddb5dcefeddb041aa2ee0a10.jpg"},
   {"worldName":"Dishonored ","rating":5,"image":"https://m.media-amazon.com/images/M/MV5BYmQ2ZjZiZDAtZGNhZC00ZDI5LTkzMWQtMTA2MTFlNjkyODc0XkEyXkFqcGdeQXVyMzY0MTE3NzU@._V1_.jpg"},
   {"worldName":"Futabu!","rating":1,"image":"https://cdn.discordapp.com/attachments/925963686433132644/1015321626402898000/5qWohbsqEAJhgJZtH2xcLhhL5vw.jpg"},
-  {"worldName":"Houseki no Kuni","rating":4,"image":"https://cdn.discordapp.com/attachments/925963686433132644/1015322046357569636/Houseki-no-Kuni.jpg","additional":"All human scale sophonts within Houseki no Kuni are fully human compatible. Gems have complete human anatomy, but are still made of their respective gemstone and don't require any of it.\nAll gems become able to soften their bodies to become more like actual flesh."},
+  {"worldName":"Houseki no Kuni","rating":4,"image":"https://cdn.discordapp.com/attachments/925963686433132644/1018584600601182338/Screenshot_7.jpg","additional":"All human scale sophonts within Houseki no Kuni are fully human compatible. Gems have complete human anatomy, but are still made of their respective gemstone and don't require any of it.\nAll gems become able to soften their bodies to become more like actual flesh."},
   {"worldName":"Seirei Gensouki","rating":4,"image":"https://cdn.donmai.us/sample/64/25/__celia_claire_rio_ayase_miharu_and_aishia_seirei_gensouki__sample-64257bbe9771cb3b4f4429b16e1316ee.jpg"},
-  {"worldName":"The 100","rating":4,"image":"https://images8.alphacoders.com/108/1082036.jpg"}
+  {"worldName":"The 100","rating":4,"image":"https://images8.alphacoders.com/108/1082036.jpg"},
+  {"worldName":"A Will Eternal","rating":10, "image":"https://cdn.discordapp.com/attachments/925963686433132644/1018582881322401853/YNYH2-scaled-1-1825x1080.jpg"},
+  {"worldName":"Elf-san wa Yaserarenai","rating":1,"image":"https://i.imgur.com/MjAU1Oh.png"},
+  {"worldName":"Fable","rating":5,"image":"https://cdn.discordapp.com/attachments/925963686433132644/1018583701682147339/615952.jpg","condition":[{"rating":7,"name":"Fable 3"}]},
+  {"worldName":"Fruits basket","rating":1,"image":"https://cdn.discordapp.com/attachments/925963686433132644/1018583380675268638/2683583.webp"},
+  {"worldName":"How to Treat a Lady Knight Right","rating":4,"image":"https://cdn.discordapp.com/attachments/925963686433132644/1018584087428075520/ERjCswmU8AAh7dU.jpg"},
+  {"worldName":"Hunger Games","rating":3,"image":"https://wallpapercave.com/wp/wp4340543.jpg","condition":[{"name":"Pre-Panem Era","rating":4},{"name":"The Panem Era","rating":3},{"name":"The First Rebellion","rating":4},{"name":"The Hunger Games Era ","rating":3},{"rating":4,"name":"The Second Rebellion"},{"rating":3,"name":"The Republic Era"}]},
+  {"worldName":"Ori and the Blind Forest","rating":3,"image":"https://cdn.discordapp.com/attachments/925963686433132644/1018583114055962754/thumb-1920-581580.jpg"},
+  {"worldName":"The Last of Us","rating":4,"image":"https://theflyspeaks.files.wordpress.com/2014/10/thelastofus_banner.jpg"}
 ]

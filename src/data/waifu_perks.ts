@@ -703,6 +703,36 @@ export const waifu_perks: WaifuPerk[] = [
     desc: 'Azazel, after falling into demonhood, conquers Hell and becomes Loremaster, The Science Demon. She\'s become strong enough that even Lucifer has been forced into becoming her personal maid. While still just as curious, cheerful, and enthusiastic as she was as an angel, she\'s become merciless and sadistic after turning Hell into her personal research facility. Despite the thousands of years that it took to conquer hell, she still fully believes she\'s an angel, denying any evidence to the contrary. Loremaser qualifies for special Alterzelu Symbiote theming.',
   },
   {
+    uid: 'gqdPD',
+    title: 'Fallen Angel',
+    waifu: [
+      'Larxene',
+    ],
+    from: 'Kingdom Hearts',
+    waifuUID: [
+      9079435,
+    ],
+    tier: 9,
+    image: '/img/waifu_perks/image137.png',
+    cost: 300,
+    desc: 'Larxene has become recompleted, returning to her Somebody, Elrena. Elrena retains all the abilities Larxene had, while also being able to use her Keyblade and its associated powers. Her base Keyblade is the basic form of Missing Ache, and she can form-change her blade into her Foudre Knives.',
+  },
+  {
+    uid: 'GSDts',
+    title: 'Memories are the Key',
+    waifu: [
+      'Naminé',
+    ],
+    from: 'Kingdom Hearts',
+    waifuUID: [
+      7571,
+    ],
+    tier: 9,
+    image: '/img/waifu_perks/image147.png',
+    cost: 300,
+    desc: 'Naminé can now wield her own Keyblade, just like her Somebody. Along with this, she receives an increase in skill and magic so as to be useful in combat, though not to the point of being a Keyblade Master. You can decide which Keyblade she gets upon purchasing this perk.',
+  },
+  {
     uid: 'mSqsM',
     title: 'Millennial Gate',
     waifu: [
@@ -1152,9 +1182,24 @@ export const waifu_perks: WaifuPerk[] = [
       7263,
     ],
     tier: 8,
-    image: 'https://i.imgur.com/dzYkNAa.png?1',
+    image: '/img/waifu_perks/image251.png',
+    image_2: '/img/waifu_perks/image257.png',
     cost: 100,
-    desc: 'Fu Hua gets access to all her memories of the past without any negative effects or periodic cleaning with Fenghuang Down, as well as the physicals of her time as a MANTIS Warrior. May not be applied to the same Fu Hua as Herrscher of Sentience. If you already have the Herrscher of Sentience, you may still purchase this, pre-applied to a new Fu Hua, for 200 credits. Fu Hua will not have the battlesuits Phoenix or Azure Empyrea without this perk.',
+    desc: 'Fu Hua gets access to all her memories of the past without any negative effects or periodic cleaning with Fenghuang Down, as well as the physicals of her time as a MANTIS Flame Chaser and the Book of Fuxi as a familiar. Fu Hua will always have this perk if captured during the Previous Era or medieval Shenzhou. She will not have the battlesuits Phoenix or Azure Empyrea without this perk.',
+  },
+  {
+    uid: 'LogLf',
+    title: 'Silverwing N-EX',
+    waifu: [
+      'Bronya Zaychik',
+    ],
+    from: 'Honkai Impact',
+    waifuUID: [
+      7262,
+    ],
+    image: '',
+    cost: 20,
+    desc: 'Bronya is instead her adult self, the veteran captain of the reformed Schicksal (and game developer) from A Post-Honkai Odyssey. Buying this perk for an existing Bronya will give her new skills, memories, and gear from the decade or so between the end of the main story and APHO. This perk is not mutually exclusive with Herrscher of Reason and does not raise Bronya’s tier rating.',
   },
   // {
   //   uid: 'iCn3S',

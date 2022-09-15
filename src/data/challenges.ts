@@ -14,9 +14,9 @@ const { fullStartingBudget, companions, baseBudget, startingWorld } = useStore()
 const employee = { uid: 6666666, name: 'Employee #6.02214076e23', world: 'The Company', tier: 10, priceTier: 0, method: 'unbound' }
 let rouletteWatcher = null
 const cultFreebies = {
-  defensePerks: ['Stress Defense', 'Stress Defense'],
-  talentPerks: ['Everlasting Talent'],
-  homePerks: ['Pocket Space', 'Pocket Apartment'],
+  defensePerks: [{ title: 'Stress Defense', cost: 0, count: 1 }, { title: 'Stress Defense', cost: 0, count: 1 }],
+  talentPerks: [{ title: 'Everlasting Talent', cost: 0, count: 1 }],
+  homePerks: [{ title: 'Pocket Space', cost: 0, count: 1 }, { title: 'Pocket Apartment', cost: 0, count: 1 }],
 }
 
 export const challenges = [
