@@ -27,12 +27,11 @@
           <div>Trauma roll: <span class="text-green-500">{{ author ? data.trauma : '??' }}</span></div>
           <Button :disabled="bought" size="Small" bg-color="bg-violet-600 mx-auto my-4  row-span-3" :label="`buy for ${data.cost}`" @click="buyUsed(data, i)" />
           <div class="">
-            Ability tier: <span class="text-green-500">+{{ author ? data.tier : '??' }}</span>
+            Ability tier: <span class="text-orange-400">{{ author ? data.tier : '??' }}</span>
           </div>
           <div class="">
             Trauma tier: <span class="text-green-500">-{{ author ? data.traumaTier : '??' }}</span>
           </div>
-          <div>Effective tier: <span class="text-orange-400">{{ author ? data.effectiveTier : '??' }}</span></div>
           <div class="flex gap-2 items-center">
             Suffers from:
             <span class="text-red-400">{{ author ? traumaReac || data.traumaExample : '??' }}</span>
@@ -98,44 +97,53 @@ const traumaExamples = {
   ],
 } as Record<number, string[]>
 
-function slightlyTier(n: number, tier: number, isTrauma: boolean): number {
-  const plus = [
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [2, 1, 0, 0, 0, 0, 0, 0, 0, 0],
-    [3, 2, 1, 0, 0, 0, 0, 0, 0, 0],
-    [4, 3, 2, 1, 0, 0, 0, 0, 0, 0],
-    [5, 4, 3, 2, 1, 0, 0, 0, 0, 0],
-    [6, 5, 4, 3, 2, 1, 0, 0, 0, 0],
-    [7, 6, 5, 4, 3, 2, 1, 0, 0, 0],
-    [8, 7, 6, 5, 4, 3, 2, 1, 0, 0],
-    [9, 8, 7, 6, 5, 4, 3, 2, 1, 0],
-    [10, 9, 8, 7, 6, 5, 4, 3, 2, 1],
-  ]
-  if (n < 8) return isTrauma ? 0 : 0
-  if (n >= 9 && n <= 11) return isTrauma ? 0 : plus[1][tier - 1]
-  if (n >= 12 && n <= 14) return isTrauma ? 0 : plus[2][tier - 1]
-  if (n >= 15 && n <= 17) return isTrauma ? 0 : plus[3][tier - 1]
-  if (n >= 18 && n <= 20) return isTrauma ? 0 : plus[4][tier - 1]
-  if (n >= 21 && n <= 23) return isTrauma ? 1 : plus[5][tier - 1]
-  if (n >= 24 && n <= 26) return isTrauma ? 1 : plus[6][tier - 1]
-  if (n >= 27 && n <= 29) return isTrauma ? 2 : plus[7][tier - 1]
-  if (n >= 30 && n <= 32) return isTrauma ? 2 : plus[8][tier - 1]
-  if (n >= 33 && n <= 35) return isTrauma ? 3 : plus[9][tier - 1]
-  return isTrauma ? 3 : plus[10][tier - 1]
+function whatTrauma(n: number): number {
+  if (n < 8) return 0
+  if (n >= 9 && n <= 11) return 0
+  if (n >= 12 && n <= 14) return 0
+  if (n >= 15 && n <= 17) return 0
+  if (n >= 18 && n <= 20) return 0
+  if (n >= 21 && n <= 23) return 1
+  if (n >= 24 && n <= 26) return 1
+  if (n >= 27 && n <= 29) return 2
+  if (n >= 30 && n <= 32) return 2
+  if (n >= 33 && n <= 35) return 3
+  return 3
+}
+
+function whatTier(n: number): number {
+  if (n < 8) return 1
+  if (n >= 9 && n <= 11) return 2
+  if (n >= 12 && n <= 14) return 3
+  if (n >= 15 && n <= 17) return 4
+  if (n >= 18 && n <= 20) return 5
+  if (n >= 21 && n <= 23) return 6
+  if (n >= 24 && n <= 26) return 7
+  if (n >= 27 && n <= 29) return 8
+  if (n >= 30 && n <= 32) return 9
+  if (n >= 33 && n <= 35) return 10
+  return 11
 }
 
 function slightlyUsed(char: any) {
   const ability = random(1, 6) + random(1, 6) + random(1, 6) + random(1, 6) + random(1, 6) + random(1, 6)
   const trauma = random(1, 6) + random(1, 6) + random(1, 6) + random(1, 6) + random(1, 6) + random(1, 6)
-  const traumaTier = slightlyTier(trauma, char.tier, true)
+  const traumaTier = whatTrauma(trauma)
   return {
     ability,
     trauma,
-    tier: slightlyTier(ability, char.tier, false),
+    tier: whatTier(ability),
     traumaTier,
     traumaExample: traumaExamples[traumaTier][Math.floor(Math.random() * traumaExamples[traumaTier].length)],
   }
+}
+
+function PSProbability(origin, roll, trauma) {
+  const probs = [0.000600, 0.009302, 0.050862, 0.145083, 0.247728, 0.267040, 0.182913, 0.076796, 0.017876, 0.001779, 0.000021]
+  return probs[origin]
+  + (origin >= 1 ? probs[origin - 1] * (probs[5] + probs[6]) : 0)
+  + (origin >= 2 ? probs[origin - 2] * (probs[7] + probs[8]) : 0)
+  + (origin >= 3 ? probs[origin - 3] * (probs[9] + probs[10]) : 0)
 }
 
 const usedWaifus = computed(() => {
@@ -145,8 +153,8 @@ const usedWaifus = computed(() => {
   res.push(slightlyUsed(props.char))
   res = res.map(x => ({
     ...x,
-    cost: props.char.tier + x.tier - x.traumaTier === 11 ? 'TX ticket' : CHAR_COSTS[props.char.tier + x.tier - x.traumaTier] || 1,
-    effectiveTier: props.char.tier + x.tier,
+    cost: x.tier - x.traumaTier === 11 ? 'TX ticket' : CHAR_COSTS[x.tier - x.traumaTier] || 1,
+    effectiveTier: x.tier,
   }))
   return res
 })

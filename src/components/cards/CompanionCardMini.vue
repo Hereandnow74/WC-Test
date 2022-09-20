@@ -105,9 +105,8 @@
       </div>
     </div>
     <TextArea v-if="showNote" v-model="char.note" class="my-2" placeholder="Character notes" rows="4" />
-    <div v-if="!char.sold" class="flex gap-2 mt-auto justify-end bg-dark-200 rounded self-end px-2">
+    <div class="flex gap-2 bg-dark-200 text-gray-200 rounded self-end px-2 select-none">
       <div
-        v-if="flags.chargen"
         class="cursor-pointer hover:(bg-gray-600 text-amber-400) rounded-xl p-1 pr-4"
         :class="{'text-green-500' : char.note}"
         title="Make a note"
@@ -116,7 +115,7 @@
         <fluent:notepad-edit-16-filled />
       </div>
       <div
-        v-if="flags.chargen"
+        v-if="flags.chargen && !char.sold"
         class="cursor-pointer hover:(bg-gray-600 text-amber-400) rounded-xl p-1"
         title="Undo"
         @click="$emit('undo', char.uid)"
@@ -124,7 +123,15 @@
         <ion:arrow-undo />
       </div>
       <div
-        v-if="char.method !== 'unbound' && settings.ableSell"
+        v-if="flags.chargen && char.sold"
+        class="cursor-pointer hover:(bg-gray-600 text-amber-400) rounded-xl p-1"
+        title="Undo Sell"
+        @click="$emit('undoSell', char.uid)"
+      >
+        <ion:arrow-undo />
+      </div>
+      <div
+        v-if="char.method !== 'unbound' && settings.ableSell && !char.sold"
         class="cursor-pointer hover:(bg-gray-600 text-amber-400) rounded-xl p-1"
         title="Free"
         @click="freeCompanion(char.uid)"
@@ -132,7 +139,7 @@
         <mdi:bird />
       </div>
       <div
-        v-if="['capture'].includes(char.method)"
+        v-if="['capture'].includes(char.method) && !char.sold"
         class="cursor-pointer hover:(bg-gray-600 text-amber-400) rounded-xl p-1"
         :title="`Sell for ${char.tier === 11 ? '1 ticket' : Math.floor(CHAR_COSTS[char.tier] * manualSellKf) + 'c'}`"
         @click="sellCompanion(char.uid)"
@@ -140,7 +147,7 @@
         <healthicons:money-bag />
       </div>
       <div
-        v-if="['buy', 'used', 'yoink'].includes(char.method)"
+        v-if="['buy', 'used', 'yoink'].includes(char.method) && !char.sold"
         class="cursor-pointer hover:(bg-gray-600 text-amber-400) rounded-xl p-1"
         :title="`Return for ${char.priceTier === 11 ? '1 ticket' : Math.round(CHAR_COSTS[char.priceTier] * 0.8) + 'c'}`"
         @click="sellCompanion(char.uid)"

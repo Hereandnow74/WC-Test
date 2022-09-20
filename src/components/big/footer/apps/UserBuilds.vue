@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col gap-2 pb-4 px-2 text-gray-200">
     <div class="flex justify-between">
-      <div>Experimental app? - total builds: {{ buildList.length }}</div>
+      <div>Total builds: {{ buildList.length }}</div>
     </div>
     <div
       v-for="save in displayList"

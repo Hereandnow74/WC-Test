@@ -45,10 +45,8 @@ const appsList = [
 ]
 
 const apps = computed(() => {
-  if (homePerks.value.length)
-    appsList.push({ icon: 'bi:box-seam', name: 'Pocket Space', component: 'PocketSpace', color: '#0d6efd' })
-
-  return appsList
+  const pocket = { icon: 'bi:box-seam', name: 'Pocket Space', component: 'PocketSpace', color: '#0d6efd' }
+  return homePerks.value.length ? [...appsList, pocket] : appsList
 })
 
 const appComponents = {

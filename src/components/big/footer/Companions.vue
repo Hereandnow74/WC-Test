@@ -54,6 +54,11 @@
         :edit-mode="isRetinueEdit"
         class="mb-2"
       />
+      <CoupleCardMini
+        v-if="isCouple"
+        :edit-mode="isRetinueEdit"
+        class="mb-2"
+      />
       <div
         ref="waifuList"
         class="grid gap-2 min-h-0"
@@ -67,6 +72,7 @@
           :edit-mode="isRetinueEdit"
           @sell="sellCompanion"
           @undo="undoBuying"
+          @undoSell="undoSelling"
           @free="freeCompanion"
         />
       </div>
@@ -104,7 +110,7 @@ import { useStore } from '~/store/store'
 import { waifu_perks, DLCwaifu_perks } from '~/data/waifu_perks'
 import { confirmDialog } from '~/logic/dialog'
 
-const { companions, talentPerks, genericWaifuPerks, waifuPerks } = useStore()
+const { companions, talentPerks, genericWaifuPerks, waifuPerks, isCouple } = useStore()
 
 const specificPerksWithDLC = waifu_perks.concat(DLCwaifu_perks)
 
@@ -252,6 +258,11 @@ async function freeCompanion(uid: number) {
 
 function undoBuying(uid: number) {
   companions.value.splice(findIndex(companions.value, { uid }), 1)
+}
+
+function undoSelling(uid: number) {
+  const cmp = companions.value[findIndex(companions.value, { uid })]
+  cmp.sold = false
 }
 
 function sellAll() {

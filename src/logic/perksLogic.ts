@@ -26,8 +26,8 @@ export function deleteFreebies(freebies: object) {
     perks.forEach((n: Freebie) => {
       const ind = findIndex(allForSave[key].value, { title: n.title })
       if (ind !== -1) {
-        if (allForSave[key].value[ind].count && allForSave[key].value[ind].count > 1) {
-          allForSave[key].value[ind].count -= 1
+        if (allForSave[key].value[ind].count && allForSave[key].value[ind].count > n.count) {
+          allForSave[key].value[ind].count -= n.count
         }
         else {
           allForSave[key].value.splice(ind, 1)

@@ -1,5 +1,822 @@
 [
-  
+  {
+    "source": "",
+    "conditions": [
+      {
+        "value": "Train and sell at least 100 slaves to satisfied customers."
+      },
+      {
+        "value": "Sell at least 5 different species as slaves through your slave market."
+      },
+      {
+        "value": "Avoid having your slave market closed by the authorities either by being too powerful or by influencing the legal proceedings so slavery isn’t made illegal."
+      },
+      {
+        "value": "All slaves you sell must be of high quality, obedient and willing to indulge their new master in any fetish desire. Though you may set exception rules such as no snuff or the like."
+      }
+    ],
+    "budget": 230,
+    "image": "https://i.imgur.com/QENehQi.png",
+    "title": "A Slave Market on This Wonderful World",
+    "author": "Heaven Canceler",
+    "reward": "A Refund for the basic Demiplane or Dungeons perk and 40 Credits. Your Slave Market is now considered part of your part of your Demiplane or Dungeon if it isn’t already.",
+    "desc": "Ah, the slave harem in another world, what a wonderful fantasy. The perfect way to get yourself a bunch of waifus that obediently serve your every whim. Unfortunately it appears that this particular world lacks this most delicious of institutions. As such we would like to hire you to change that. For the purpose of this mission we want you to set up a proper slave market and kickstart the slave economy. You must produce quality ‘products’ and sell them to customers you consider worth the material. Unfortunately, slavery is currently not legal within Belzerg kingdom or its neighbours. Fortunately it appears that there is some loopholes in the current laws on slavery and forced labor involving monsters as they are legally not considered people and fair to kill at will. So enslaving monsters appears to be perfectly legal and there is a good chance that you can at least argue that other nonhumans like Elves also fall under that. Though the latter is likely to give you more outrage then the former. Still, it is likely that these laws will be adjusted after enough time passes, so we recommend that you make preparations for that.",
+    "rewardType": "Perks",
+    "objectives": [
+      {
+        "type": "Perks",
+        "value": "Train at least 1 member of the original Konosuba main group into your personal sex slave. No, it cannot be Darkness.",
+        "reward": "1 TS I and TS II for Magia Baiser of “Looking up to Magical Girls”. Alternatively 30 Credits."
+      },
+      {
+        "value": "Train the Demon King’s Daughter into your Personal Sex Slave.",
+        "type": "Perks",
+        "reward": "1 TS and TS II of any race that was canonically enslaved, the same for a demon of your choice. Alternatively 60 Credits."
+      }
+    ],
+    "scope": "Standard",
+    "loca": "KonoSuba",
+    "uid": "LxNHB"
+  },
+  {
+    "desc": "Office of Naval Intelligence also know as ONI. The infamous Boogeyman of \"pre contact\" humanity is the intelligence service of the UNSC naval command, in short, space CIA/KGB but worse. What is it like to be the big boss of such an agency ? Your mission, dear contractor, is to takeover ONI. Objectif: Big Browser.\n-We suggest you do so by either taking the seat at it's creation, substitute an actual boss, or impressed an aging boss enough to succeed them.\nGood luck, contractor.",
+    "objectives": [
+      {
+        "value": "Make sure the innies became a minor treat by 2560.",
+        "reward": "10 Hyper Lethal Vector Spartan II Headhunters companions ",
+        "type": "Companions"
+      },
+      {
+        "reward": "100 credits",
+        "type": "Credits",
+        "value": "Train and nurture a Spartan recruit (II or III) to take your place one day."
+      },
+      {
+        "type": "Companions",
+        "reward": "10 Servant/Heroic Spirit Spartans companions ",
+        "value": "Find a way to stay at power without anyone finding for a 3 generation, one way or another."
+      }
+    ],
+    "title": "Spooky Big Browser",
+    "author": "AusthinH7",
+    "reward": "2000 credits, 1TX ticket, Total access to ONI database",
+    "scope": "Grand",
+    "conditions": [
+      {
+        "value": "Try not to leave any trail would you ? It's a spy agency after all."
+      },
+      {
+        "value": "Stay at the top until the end of Halo 3, meaning no stopping the Spartan II program."
+      }
+    ],
+    "budget": 1500,
+    "rewardType": "Other",
+    "image": "",
+    "loca": "Halo",
+    "source": "",
+    "uid": "IwgNW"
+  },
+  {
+    "desc": "Captain Marvel is bitch, we all know that. You know what contractor ? Why don't you take her down her high horse and show her a righteous place ? Your mission is simple: Make that bitch, YOUR bitch.",
+    "rewardType": "Other",
+    "source": "",
+    "author": "AusthinH7",
+    "scope": "Standard",
+    "title": "Bitch Smack !",
+    "reward": "TS I and II of Captain Marvel aka Carol Danvers, Capture of Captain Marvel",
+    "image": "",
+    "conditions": [
+      {
+        "value": "Binding are forbidden, do this the old way, Company style"
+      },
+      {
+        "value": "Everything is fair game"
+      }
+    ],
+    "budget": 1500,
+    "objectives": [
+      {
+        "type": "Credits",
+        "reward": "50",
+        "value": "Make Carol acknowledge her faults, force is authorized"
+      },
+      {
+        "reward": "50",
+        "value": "'Train' her into a proper maid",
+        "type": "Credits"
+      }
+    ],
+    "loca": "Marvel",
+    "uid": "kHUyN"
+  },
+  {
+    "desc": "Have a threesome with a pair of siblings.",
+    "author": "Ryeguy",
+    "conditions": [
+      {
+        "value": "Have a threesome with a pair of siblings."
+      }
+    ],
+    "rewardType": "Credits",
+    "title": "Bang a pair of siblings",
+    "objectives": [
+      {
+        "type": "Credits",
+        "reward": "30",
+        "value": "Twins."
+      },
+      {
+        "value": "Triplets",
+        "reward": "60",
+        "type": "Credits"
+      },
+      {
+        "reward": "90",
+        "type": "Credits",
+        "value": "Quadruplets"
+      },
+      {
+        "type": "Credits",
+        "reward": "120",
+        "value": "Quintuplets"
+      }
+    ],
+    "reward": "30",
+    "loca": "Any",
+    "scope": "Quick",
+    "budget": 5,
+    "source": "",
+    "image": "",
+    "uid": "WzGEb"
+  },
+  {
+    "objectives": [
+      {
+        "reward": "50",
+        "type": "Credits",
+        "value": "Assassinate a faction leader of tier 6 or higher."
+      },
+      {
+        "reward": "200",
+        "value": "Assassinate a faction leader of tier 8 or higher",
+        "type": "Credits"
+      },
+      {
+        "value": "Assassinate a tier 10 faction leader.",
+        "type": "Credits",
+        "reward": "1000"
+      },
+      {
+        "reward": "1",
+        "value": "Assassinate a tier X faction leader.",
+        "type": "TX Tickets"
+      },
+      {
+        "value": "Don't get caught.",
+        "type": "Credits",
+        "reward": "50"
+      },
+      {
+        "value": "Pin the blame on another party.",
+        "reward": "50",
+        "type": "Credits"
+      },
+      {
+        "reward": "Covert Talent",
+        "value": "Hide in a cardboard box at some point during the mission.",
+        "type": "Perks"
+      }
+    ],
+    "author": "Ryeguy",
+    "image": "",
+    "budget": 5,
+    "reward": "50",
+    "source": "",
+    "loca": "Any",
+    "title": "Assassinate the leader of a faction",
+    "rewardType": "Credits",
+    "desc": "Assassinate the leader of any pre-existing faction in your current world. This quest may be taken once per faction leader.",
+    "scope": "Standard",
+    "conditions": [
+      {
+        "value": "Assassinate a faction leader of any tier."
+      }
+    ],
+    "uid": "oCtwv"
+  },
+  {
+    "desc": "Become the leader of a faction. May be repeated once per each faction you join. May be taken with the \"Form a New Faction\" mission, but can only be considered complete when your new faction has more than 50 people or more than 12 members higher than Tier 6. Note, faction members may not become your familiars/companions until after they have joined the faction for the purposes of this mission (aka no building a peerage of devils and calling it a faction or just having your already acquired waifus become a new faction).",
+    "image": "",
+    "author": "Ryeguy",
+    "title": "Become the leader of a faction.",
+    "budget": 5,
+    "rewardType": "Credits",
+    "loca": "Any",
+    "scope": "Quick",
+    "source": "",
+    "reward": "150",
+    "objectives": [],
+    "conditions": [
+      {
+        "value": "Play a significant role in forming a new faction in your new world."
+      }
+    ],
+    "uid": "NWrsT"
+  },
+  {
+    "rewardType": "Credits",
+    "budget": 5,
+    "image": "",
+    "source": "",
+    "desc": "Play a significant role in forming a new faction in your new world. May be repeated once per world.",
+    "reward": "50",
+    "conditions": [
+      {
+        "value": "Play a significant role in forming a new faction in your new world."
+      }
+    ],
+    "scope": "Quick",
+    "author": "Ryeguy",
+    "loca": "Any",
+    "objectives": [],
+    "title": "Form a new Faction",
+    "uid": "SpGTZ"
+  },
+  {
+    "scope": "Quick",
+    "desc": "Join any faction in your new world. May be repeated once per world.",
+    "title": "Join a Faction",
+    "loca": "Any",
+    "objectives": [],
+    "author": "Ryeguy",
+    "budget": 5,
+    "image": "",
+    "source": "",
+    "conditions": [
+      {
+        "value": "Join any faction in your new world."
+      }
+    ],
+    "rewardType": "Credits",
+    "reward": "15",
+    "uid": "EPDzi"
+  },
+  {
+    "author": "irugaa0",
+    "rewardType": "Perks",
+    "scope": "Standard",
+    "image": "",
+    "title": "Blessing in this world",
+    "source": "",
+    "reward": "Template Stacking I&II of your choice.",
+    "objectives": [
+      {
+        "reward": "1",
+        "type": "Credits",
+        "value": "Get Adventurer Card"
+      },
+      {
+        "reward": "10",
+        "value": "Get an Advanced Job.",
+        "type": "Credits"
+      },
+      {
+        "type": "Credits",
+        "reward": "20",
+        "value": "Learn all available skills for one job."
+      },
+      {
+        "value": "Complete at Least 20 missions in the guild.",
+        "type": "Credits",
+        "reward": "10"
+      },
+      {
+        "type": "Credits",
+        "reward": "25",
+        "value": "Complete at Least 50 missions in the guild"
+      },
+      {
+        "value": "Complete at Least 100 missions in the guild",
+        "type": "Credits",
+        "reward": "50"
+      },
+      {
+        "type": "Credits",
+        "value": "Kill a Newbie Killer",
+        "reward": "20"
+      },
+      {
+        "value": "Kill the Black Death",
+        "type": "Credits",
+        "reward": "40"
+      },
+      {
+        "reward": "80",
+        "value": "Kill the One Hit Bear",
+        "type": "Credits"
+      },
+      {
+        "type": "Credits",
+        "value": "Reach at least the level 60",
+        "reward": "60"
+      },
+      {
+        "value": "Kill one of the Demon Lord’s Generals",
+        "reward": "20",
+        "type": "Credits"
+      },
+      {
+        "type": "Credits",
+        "value": "Kill All of the Demon Lord’s Generals",
+        "reward": "100"
+      },
+      {
+        "reward": "100",
+        "value": "Kill the Demon Lord.",
+        "type": "Credits"
+      },
+      {
+        "value": "Kill/capture an Arch Demon.",
+        "type": "Credits",
+        "reward": "30"
+      },
+      {
+        "value": "Recover/Steal one Artifact owned by the reincarnators. ",
+        "type": "Credits",
+        "reward": "Template Stacking I&II of the reincarnator."
+      },
+      {
+        "value": "Capture a Goddess",
+        "type": "Credits",
+        "reward": "100"
+      }
+    ],
+    "desc": "Enjoy the Company's blessing and become a great adventurer in this wonderful world.",
+    "conditions": [
+      {
+        "value": "Become a Renowned Adventurer."
+      },
+      {
+        "value": "Must Become a \"High Level\" Adventurer. (LVL 50)"
+      },
+      {
+        "value": "The Demon King must die."
+      }
+    ],
+    "budget": 0,
+    "loca": "KonoSuba",
+    "uid": "qHkwV"
+  },
+  {
+    "scope": "Grand",
+    "reward": "A Template Stacking I of a Zeus, Poseidon or Hades demigod.",
+    "source": "",
+    "title": "Percy Jackson - Redo.",
+    "objectives": [
+      {
+        "value": "Kill the minotaur and recover its horn",
+        "type": "Credits",
+        "reward": "20 and Instant capture of Minotaur "
+      },
+      {
+        "value": "Kill Nemean Lion and recover its Pelt",
+        "type": "Credits",
+        "reward": "50"
+      },
+      {
+        "reward": "50",
+        "type": "Credits",
+        "value": "Kill the Hydra"
+      },
+      {
+        "value": "Kill the Medusa and recover its Head",
+        "type": "Credits",
+        "reward": "50 and Instant capture of Medusa "
+      },
+      {
+        "value": "Steal one Golden Apple.",
+        "type": "Credits",
+        "reward": "100"
+      },
+      {
+        "value": "Capture Sally Jackson",
+        "type": "Credits",
+        "reward": "5"
+      },
+      {
+        "value": "Capture Annabeth Chase",
+        "type": "Credits",
+        "reward": "25"
+      },
+      {
+        "type": "Credits",
+        "value": "Capture Clarisse La Rue",
+        "reward": "25"
+      },
+      {
+        "type": "Credits",
+        "reward": "50",
+        "value": "Find the Cornucopia"
+      },
+      {
+        "value": "Defeat Achelous and retrieve it’s horn",
+        "reward": "60",
+        "type": "Credits"
+      }
+    ],
+    "author": "irugaa0",
+    "budget": 0,
+    "loca": "Riordanverse",
+    "conditions": [
+      {
+        "value": "Survive until the events of The Titan's Curse."
+      }
+    ],
+    "image": "",
+    "desc": "Go to the Riordanverse during the events of Percy Jackson, and change things as one of the children of the big three. ",
+    "rewardType": "Other",
+    "uid": "UPjKr"
+  },
+  {
+    "author": "irugaa0",
+    "objectives": [],
+    "title": "Survival Of The FITTEST ",
+    "loca": "Generic",
+    "source": "",
+    "conditions": [
+      {
+        "value": "Your maximum tier is set at 4."
+      },
+      {
+        "value": "All perks and talents bought besides Martial talent, are disabled for this mission."
+      },
+      {
+        "value": "You can choose 2 tier-4 or lower companion to assist you."
+      },
+      {
+        "value": "Non-human contractor are allowed, but all powers are disabled."
+      },
+      {
+        "value": "No external use of powers is permitted."
+      },
+      {
+        "value": "Cybernetics enhancements are allowed"
+      },
+      {
+        "value": "You must use “worldly” ways to kill the other contractors. (EX:Guns, swords, martial arts)"
+      },
+      {
+        "value": "Self-powers like, bullet time, super-senses, or super-intelligence are allowed."
+      },
+      {
+        "value": "Must kill all other contractors in the specified time. (60 Days)"
+      }
+    ],
+    "image": "",
+    "reward": "1 tier-8 companion of your choice.",
+    "desc": "A unique mission was issued to the company, a large-scale PVP with 20 contractors was arranged, and you must be the last one standing.",
+    "budget": 0,
+    "rewardType": "Companions",
+    "scope": "Quick",
+    "uid": "ymFoe"
+  },
+  {
+    "author": "irugaa0",
+    "objectives": [
+      {
+        "value": "Capture/Kill a criminal with a 5 million or higher reward and collect their bounty.",
+        "type": "Credits",
+        "reward": "5"
+      },
+      {
+        "reward": "5",
+        "type": "Credits",
+        "value": "Capture/Kill a criminal with a 10 million or higher reward and collect their bounty."
+      },
+      {
+        "value": "Capture/Kill a criminal with a 30 million or higher reward and collect their bounty.",
+        "type": "Credits",
+        "reward": "10"
+      },
+      {
+        "type": "Credits",
+        "value": "Capture/Kill a criminal with a 50 million or higher reward and collect their bounty.",
+        "reward": "10"
+      },
+      {
+        "reward": "10",
+        "value": "Capture/Kill a criminal with a 100 million or higher reward and collect their bounty.",
+        "type": "Credits"
+      },
+      {
+        "type": "Credits",
+        "value": "Capture/Kill a criminal with a 200 million or higher reward and collect their bounty.",
+        "reward": "20"
+      },
+      {
+        "value": "Capture/Kill a criminal with a 300 million or higher reward and collect their bounty.",
+        "type": "Credits",
+        "reward": "20"
+      },
+      {
+        "type": "Credits",
+        "value": "Capture/Kill a criminal with a 500 million or higher reward and collect their bounty.",
+        "reward": "50"
+      },
+      {
+        "value": "Capture/Kill a criminal with an 800 million or higher reward and collect their bounty.",
+        "type": "Credits",
+        "reward": "50"
+      },
+      {
+        "type": "Credits",
+        "value": "Capture/Kill a criminal with a 900 million or higher reward and collect their bounty.",
+        "reward": "50"
+      },
+      {
+        "reward": "Template Stacking of T-6 one piece character for you or any member if your retinue.",
+        "value": "Capture/Kill a criminal with a 1 billion or higher reward and collect their bounty.",
+        "type": "Other"
+      },
+      {
+        "type": "Other",
+        "reward": "Template Stacking of T-6 one piece character for you or any member if your retinue.",
+        "value": "Capture/Kill a criminal with a 2 billion or higher reward and collect their bounty."
+      },
+      {
+        "type": "Other",
+        "value": "Capture/Kill a criminal with a 3 billion or higher reward and collect their bounty.",
+        "reward": "Template Stacking of T-7 one piece character for you or any member if your retinue."
+      },
+      {
+        "reward": "Template Stacking of T-7 one piece character for you or any member if your retinue.",
+        "value": "Capture/Kill a criminal with a 4 billion or higher reward and collect their bounty.",
+        "type": "Other"
+      },
+      {
+        "reward": "Template Stacking of T-8 one piece character for you or any member if your retinue.",
+        "value": "Capture/Kill a criminal with a 5 billion or higher reward and collect their bounty.",
+        "type": "Other"
+      }
+    ],
+    "source": "",
+    "reward": "20",
+    "desc": "In the world of legendary pirates and marines, make your way in the world as a Bounty Hunter, and make your fortune. ",
+    "title": "Lucrative Bounty",
+    "loca": "One Piece",
+    "budget": 0,
+    "rewardType": "Credits",
+    "image": "",
+    "conditions": [
+      {
+        "value": "You can select up to four tier-5 or lower to accompany you in this mission."
+      },
+      {
+        "value": "Your tier is reduced to 5 in the begging of this mission."
+      },
+      {
+        "value": "ALL AZUR LANE waifus are BANNED from this mission."
+      },
+      {
+        "value": "ALL Kantai Collection waifus are BANNED from this mission."
+      },
+      {
+        "value": "Collect at Least a total of 1 Billion in Bounties. "
+      }
+    ],
+    "scope": "Grand",
+    "uid": "unpYo"
+  },
+  {
+    "author": "irugaa0",
+    "rewardType": "Credits",
+    "title": "Justice",
+    "budget": 0,
+    "reward": "50",
+    "scope": "Grand",
+    "image": "",
+    "loca": "One Piece",
+    "objectives": [
+      {
+        "type": "Credits",
+        "reward": "5",
+        "value": "Join the marine with at least a Warrant officer rank"
+      },
+      {
+        "type": "Credits",
+        "reward": "5",
+        "value": "Be promoted to Lieutenant"
+      },
+      {
+        "value": "Be promoted to Lieutenant Commander",
+        "type": "Credits",
+        "reward": "5"
+      },
+      {
+        "value": "Be promoted to Commander",
+        "reward": "5",
+        "type": "Credits"
+      },
+      {
+        "value": "Be promoted to Captain",
+        "type": "Credits",
+        "reward": "10"
+      },
+      {
+        "reward": "10",
+        "value": "Be promoted to Commodore",
+        "type": "Credits"
+      },
+      {
+        "type": "Credits",
+        "reward": "20",
+        "value": "Be promoted to Rear Admiral"
+      },
+      {
+        "value": "Be promoted to Vice-Admiral ",
+        "type": "Credits",
+        "reward": "50"
+      },
+      {
+        "value": "Be promoted to Admiral",
+        "type": "Credits",
+        "reward": "50"
+      },
+      {
+        "type": "Credits",
+        "reward": "100",
+        "value": "Be promoted to Fleet Admiral"
+      },
+      {
+        "value": "Fight a Yonko and survive",
+        "reward": "50",
+        "type": "Credits"
+      },
+      {
+        "value": "Fight and win against a Yonko",
+        "type": "Other",
+        "reward": "Template Stacking of Yonko you defeated"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You must join the marine and fight in the Summit War of Marineford"
+      },
+      {
+        "value": "Your tier is reduced to 5 in the begging of this mission."
+      },
+      {
+        "value": "You can only bring one Tier-6 or lower companion to assist you."
+      },
+      {
+        "value": "ALL AZUR LANE waifus are BANNED from this mission."
+      },
+      {
+        "value": "ALL Kantai Collection waifus are BANNED from this mission."
+      }
+    ],
+    "desc": "In the world of legendary pirates and marines, make your way in the world as one member of the “justice” forces and become a marine.",
+    "source": "",
+    "uid": "iMJks"
+  },
+  {
+    "source": "",
+    "image": "",
+    "conditions": [
+      {
+        "value": "You must build a crew and had a reward high enough to be part of the worst generation by the time you all reach the Sabaody Archipelago around the same time or before the other members of the worst generation."
+      },
+      {
+        "value": "Your and your retinue tiers are reduced to 5 in the begging of this mission."
+      },
+      {
+        "value": "You can only bring Two companions to assist you in this mission."
+      },
+      {
+        "value": "ALL AZUR LANE waifus are BANNED from this mission."
+      },
+      {
+        "value": "ALL Kantai Collection waifus are BANNED from this mission."
+      }
+    ],
+    "scope": "Grand",
+    "rewardType": "Companions",
+    "author": "irugaa0",
+    "objectives": [
+      {
+        "reward": "25",
+        "value": "Have a crewmate in the Worst Generation",
+        "type": "Credits"
+      },
+      {
+        "type": "Credits",
+        "value": "Have three crewmates in the Worst Generation",
+        "reward": "25"
+      },
+      {
+        "value": "Have your entire main crew in the Worst Generation",
+        "type": "Credits",
+        "reward": "100"
+      },
+      {
+        "value": "Have the highest reward of the Worst Generation",
+        "type": "Perks",
+        "reward": "1 perk of your choice"
+      },
+      {
+        "value": "Have the highest crew reward of the Worst Generation",
+        "type": "Other",
+        "reward": "200 credits to be used in the Ride Perks Section."
+      },
+      {
+        "value": "Face Admiral Kizaru and survive",
+        "type": "Credits",
+        "reward": "50"
+      },
+      {
+        "type": "Other",
+        "reward": "Template Stacking I&II of Admiral Kizaru for you or any member of your retinue.",
+        "value": "Fight and win against Admiral Kizaru "
+      }
+    ],
+    "budget": 0,
+    "loca": "One Piece",
+    "reward": "One Tier-7 or lower Companion of your choice.",
+    "title": "The Worst Generation",
+    "desc": " In the world of legendary pirates and marines, make your way in the world as one member of the most infamous generations of pirates and join the WORST GENERATION.",
+    "uid": "MzEfX"
+  },
+  {
+    "conditions": [
+      {
+        "value": "You must seduce the main Protagonist of the \"canon\" of the worlds you enter (IE Ranma Saotome in Ranma 1/2, Usagi Tsukino in Sailor Moon, Bloom in Winx Club, etc). All means but full Binding are allowed (Bindings can be used to \"sped up\" things)."
+      }
+    ],
+    "loca": "Generic",
+    "objectives": [
+      {
+        "value": "The Protagonist has a canonical gender-bent form, and you seduce them in that form",
+        "reward": "Free TS 1&2 of their powerset for you or a member of your retinue",
+        "type": "Perks"
+      },
+      {
+        "type": "Credits",
+        "reward": "The target's full list price",
+        "value": "Seduce the Protagonist AND their canonical final love interest (IE Akane Tendo in Ranma 1/2, Mamoru Chiba in Sailor Moon, Sky in Winx Club, etc) through the same means as the main objective."
+      }
+    ],
+    "image": "https://cdn.donmai.us/original/38/d4/__suzumiya_haruhi_suzumiya_haruhi_no_yuuutsu_drawn_by_zen_kamuro__38d4bbf61551cc5e8b919fd23f6c2fd4.jpg",
+    "source": "",
+    "scope": "Standard",
+    "title": "Protagonist Seducer",
+    "reward": "The full list price of any Protagonist you seduce",
+    "rewardType": "Credits",
+    "author": "Ratcatcher",
+    "desc": "Let's face it, more often than not Protagonists are hot. We'd often want them as our lovers... And this is the mission: the goal is to seduce all the Protagonists you can throughout the multiverse.",
+    "budget": 0,
+    "uid": "yTSkj"
+  },
+  {
+    "desc": "Okay so look dude, I really just wanna see if the meme is real and turning the Lady Squirrel into 'Hazel' will result in a more politically stable Camelot. So yeah, go out and grab that little squirrel and turn her into a human and make sure they can get together. She can be a mistress even, though that will likely make things a bit harder unless Guinevere really just wanted threesomes all along.",
+    "loca": "The Sword in the Stone",
+    "conditions": [
+      {
+        "value": "Secret: The General population and Arthur's knights cannot find out that Hazel was originally a squirrel."
+      },
+      {
+        "value": "Keep interference with the \"plot\" minimal. Its not about whether \"You\" can stabilize Camelot."
+      },
+      {
+        "value": "This mission can technically be done in any Arthurian setting, but better hope there is a squirrel the local Arthur has a thing for..."
+      }
+    ],
+    "source": "",
+    "reward": "Creature Defense or 8 Credits",
+    "title": "For the Once and Fuzzy King!",
+    "rewardType": "Other",
+    "objectives": [
+      {
+        "value": "Establish 'Lady Hazel' as a noble eligible status for marriage to a king.",
+        "type": "Perks",
+        "reward": "TS I of any King Arthur of your choice or 8 Credits"
+      },
+      {
+        "type": "Perks",
+        "value": "Establish 'Lady Hazel' as a noble of status equal or greater then that of lady Guinevere",
+        "reward": "TS II of any King Arthur (upgrade of the above.)"
+      },
+      {
+        "reward": "Unique Defense: Merlin Defense (acts as Universal Defensive coverage, and optional perception filtering... but only to people named Merlin) or 16 additional points",
+        "type": "Other",
+        "value": "Complete Lady Squirrel's transformation without the notice of Arthur's guardian Merlin."
+      }
+    ],
+    "author": "Mizuki Stone",
+    "scope": "Standard",
+    "budget": 50,
+    "image": "https://i.imgur.com/n6g1v6k.png",
+    "uid": "SygdN"
+  },
   {
     "objectives": [
       {
@@ -35,13 +852,14 @@
     "uid": "Syplv"
   },
   {
-    "source": "",
-    "title": "A Naughty Christmas",
-    "objectives": [],
-    "desc": "Whelp, Santa Claus got run over by a car. The good news is, he is alive and will make a full recovery according to the north pole’s medical team. The bad news is that it is only 3 days until Christmas and he will take at least a month before he can walk properly again, never mind jump in and out of chimneys while twisting the space-time continuum.\n\nYour job is to step in for Santa while he is down for the count. We hope you have some experience with sleds and like reindeer, because it's going to be a wild ride. That said, in exchange for supplying Santa with a quick replacement, you have been granted some extra privileges. Namely, you get to have some extra fun “rewarding” good boys and girls in lewd ways while punishing the bad ones in equally lewd ways. We leave the details to you, but attached you find an image for inspiration.",
-    "budget": 100,
-    "rewardType": "Other",
+    "image": "https://i.imgur.com/0xJBMOr.png",
     "loca": "Generic",
+    "reward": " You gain a Free TS for Christmas magic, and a copy of Santa’s Sled, need to get your own reindeers though.",
+    "rewardType": "Other",
+    "source": "",
+    "uid": "aSoTF",
+    "title": "A Naughty Christmas",
+    "desc": "Whelp, Santa Claus got run over by a car. The good news is, he is alive and will make a full recovery according to the north pole’s medical team. The bad news is that it is only 3 days until Christmas and he will take at least a month before he can walk properly again, never mind jump in and out of chimneys while twisting the space-time continuum.\n\nYour job is to step in for Santa while he is down for the count. We hope you have some experience with sleds and like reindeer, because it's going to be a wild ride. That said, in exchange for supplying Santa with a quick replacement, you have been granted some extra privileges. Namely, you get to have some extra fun “rewarding” good boys and girls in lewd ways while punishing the bad ones in equally lewd ways. We leave the details to you, but attached you find an image for inspiration.",
     "conditions": [
       {
         "value": "Gotta keep up the theme, wear something Christmas like. Same goes for any Retinue members you take along."
@@ -53,11 +871,10 @@
         "value": "No capturing good girls and boys, though feel free to do so with the bad ones."
       }
     ],
-    "image": "https://i.imgur.com/WTpKvD5.png",
     "scope": "Quick",
-    "reward": " You gain a Free TS for Christmas magic, and a copy of Santa’s Sled, need to get your own reindeers though.",
     "author": "Heaven Canceler",
-    "uid": "aSoTF"
+    "objectives": [],
+    "budget": 100
   },
   {
     "conditions": [
@@ -371,38 +1188,34 @@
     "uid": "yffVB"
   },
   {
-    "title": "Reach Upon the Stars",
-    "uid": "suiFg",
-    "rewardType": "Other",
-    "reward": "A full copie of UNSC fortress world of Reach in your Sweet Home Expansion, UNCS infrastructure include",
+    "desc": "July 24, 2552, the Covenant are here. To make humanity bleed, strike them where it hurts, by taking down the fortress world, Reach. That's where you came in Contractor. Objectif : Save Reach at any cost.",
     "author": "AusthinH7",
     "source": "",
-    "scope": "Grand",
-    "budget": 1250,
     "objectives": [
       {
-        "type": "Other",
         "value": "Save Noble Team",
-        "reward": "Spartan III Project's full information (Data, sérum formula, training, equipment blueprints, etc)."
-      },
-      {
-        "value": "Make sure Chief reach Installation 04",
-        "reward": "Spartan II TS2 or 100 credits.",
+        "reward": "Spartan III Programm's full information (Data, serum formula, training, equipment blueprints, etc).",
         "type": "Other"
       },
       {
+        "type": "Other",
+        "reward": "Spartan II TS1 and 2 or 100 credits.",
+        "value": "Make sure Chief reach Installation 04"
+      },
+      {
+        "type": "Credits",
         "value": "Save the Spartans",
-        "reward": "50 credits by Spartans saved",
-        "type": "Credits"
+        "reward": "50 credits by Spartans saved"
       },
       {
         "reward": "600 credits or 300 Headhunters Spartan III companion",
-        "type": "Other",
-        "value": "Save Reach in the shadow "
+        "value": "Save Reach in the shadow ",
+        "type": "Other"
       }
     ],
-    "loca": "Halo - Reach",
-    "desc": "July 24, 2552, the Covenant are here. To make humanity bleed, strike them where it hurts, by taking down the fortress world, Reach. That's where you came in Contractor. Objectif : Save Reach at any cost.",
+    "title": "Reach Upon the Stars",
+    "budget": 1250,
+    "uid": "suiFg",
     "conditions": [
       {
         "value": "May not be anything else than Human, Cyborg or AI."
@@ -411,7 +1224,11 @@
         "value": "Companion's Tier may not be above 7."
       }
     ],
-    "image": "https://i.imgur.com/sSPpPEd.jpeg"
+    "image": "https://i.imgur.com/sSPpPEd.jpeg",
+    "loca": "Halo - Reach",
+    "rewardType": "Other",
+    "reward": "A full copie of UNSC fortress world of Reach in your Sweet Home Expansion, UNCS infrastructure include",
+    "scope": "Grand"
   },
   {
     "reward": "Psychic Talent or a Template Stacking of a Psychic  power or a character with Psychic  tag, or 25 credits.",
@@ -5328,8 +6145,8 @@
     "uid": "FtqRG"
   },
   {
-    "author": "Heaven Canceler",
-    "budget": 150,
+    "loca": "Shakugan no Shana",
+    "uid": "Cqp5y",
     "conditions": [
       {
         "value": "Capture Shana and complete her transformation into a variant Succubus. Sexually train her so she accepts her new position."
@@ -5345,19 +6162,21 @@
       }
     ],
     "desc": "One of our newer contractors has unfortunately died when going after the target. Specifically, they tried to capture her without the right combat skills and lost an arm to her, then when trying to escape through a dimensional gate they ended up with their soul incinerated by the Crimson God Alastor. This has left a number of former retinue members unaccounted for and the locals possessing limited awareness of our existence. Your job will be to recollect our wayward Company Equipment, capture the target, one “Flame-Haired Burning-Eyed Hunter” also known as Shana. Of note is that the target has been infected with a form of transformative curse that is slowly converting her into a Succubus. This can be accelerated through inducing arousal, exposure to sexual fluids, penetrative sex and similar. Once you capture her, your other job will be to ‘reeducate’ her, to make sure that she will not give you any trouble. It is advised to avoid the use of dimensional transportation in the presence of any antagonistic Flame Haze.",
+    "budget": 150,
+    "title": "Flame-Haired Burning-Eyed... Succubus?",
+    "reward": "Shana gains a special TS I and II for \"Voice: Rie Kugimiya\" that allows her to gain access to the powers of any character voiced by Rie Kugimiya. She only has access to one other character at a time and can switch her powerset every 24 hours but the time limit can be decreased with training.",
+    "source": "",
+    "rewardType": "Companions",
     "image": "https://i.imgur.com/DdmaHvE.jpg",
-    "loca": "Shakugan no Shana",
+    "author": "Heaven Canceler",
+    "scope": "Standard",
     "objectives": [
       {
-        "reward": "1 TS for Amaterasu from Okami + Gwynevere from Dark Souls or 85 Credits",
-        "value": "Capture Crimson God Alastor himself and have him declare Shana your personal possession."
+        "type": "Perks",
+        "value": "Capture Crimson God Alastor himself and have him declare Shana your personal possession.",
+        "reward": "1 TS I and II for Amaterasu from Okami + Gwynevere from Dark Souls or 85 Credits"
       }
-    ],
-    "reward": "Koakuma from Touhou and Louise from Zero no Tsukaima or 70 Credits.",
-    "scope": "Standard",
-    "source": "",
-    "title": "Flame-Haired Burning-Eyed... Succubus?",
-    "uid": "Cqp5y"
+    ]
   },
   {
     "author": "Heaven Canceler",

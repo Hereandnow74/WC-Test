@@ -34,7 +34,7 @@
               label="yoink"
               @click="yoinkCompanion(charData)"
             />
-            <Button v-if="charData.tier !== 11" size="Small" bg-color="bg-violet-600" label="used" @click="usedModal = true" />
+            <Button size="Small" bg-color="bg-violet-600" label="used" @click="usedModal = true" />
             <Button class="whitespace-nowrap" size="Small" :label="`capture${charCost}`" @click="captureCompanion(charData)" />
           </template>
           <Button v-else-if="flags.chargen" size="Small" label="undo" @click="undoBuying(charData.uid)" />

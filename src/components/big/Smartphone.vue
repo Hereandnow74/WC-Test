@@ -54,6 +54,7 @@
           class="flex-grow rounded-t cursor-pointer flex gap-1 items-center justify-center"
           border="t-2 green-500"
           :class="activeTab === i ? 'bg-green-600': 'hover:text-orange-400'"
+          :title="tabTitles[i]"
           @click="activeTab = i"
         >
           <span class="iconify" :data-icon="tabIcons[i]"></span>
@@ -86,6 +87,7 @@ import { useStore } from '~/store/store'
 import { activeTab, orientation, appMode, toggleAppMode, toggleSmartMenu, showSmartMenu, showIntro, visible, toggleFull, buildLayout } from '~/logic'
 
 const tabs = ['Build', 'Retinue', 'Apps', 'Spendings', '']
+const tabTitles = ['Your Build', 'Your Retinue Members', 'Apps', 'Spending\'s', 'Manual Controls']
 const tabIcons = ['bx:bx-spreadsheet', 'bi:people-fill', 'ion:apps-sharp', 'la:coins', 'fluent:wrench-16-filled']
 
 const tabComponents = [

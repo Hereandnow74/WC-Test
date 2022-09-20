@@ -667,7 +667,7 @@ DLCotherControls.push({
   dlclink: 'https://docs.google.com/document/d/1HGcpJGpGbLCeA3VO8LFrQjxQqkYANdeoWbCKlCOnK0A/edit',
   title: 'Grail System',
   category: 'Other Controls',
-  image: '',
+  image: 'https://cdn.discordapp.com/attachments/925963686433132644/1015233924701626419/maxresdefault_1.webp',
   cost: 50,
   desc: `You become the center of a Holy Grail system. This creates an additional binding between you and your entire retinue similar to that between Master and Servant in a Holy Grail War. This system allows for optional adjustments to the general binding granting the ability to lower compulsions up to half of their original strength. 
   <p>Those bound to your Grail can materialize and dematerialize one set of armor and weapons at will. This equipment must be provided, and does not come with this feature. The weapons and armor may be summoned as individual pieces, or as a set. Any worn outfit will immediately be dismissed when armor is summoned, and will return in its previous state when the armor is dismissed. A “Set” of armor and/or weapons can be created by being equipped whilst going through a short ritual with a duration of at least 60 seconds. Any changes to a set must be made via the same process. Consumables that are part of a “Set” are not renewed and are consumed as usual.</p>

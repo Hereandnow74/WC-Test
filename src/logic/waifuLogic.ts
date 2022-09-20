@@ -47,8 +47,8 @@ export function yoinkCompanion(char: Character) {
 }
 
 export function slightlyCompanion(slightlyUsedData: any, char: Character) {
-  const tier = char.tier + slightlyUsedData.tier
-  const pt = priceTier(char.tier + slightlyUsedData.tier - slightlyUsedData.traumaTier)
+  const tier = slightlyUsedData.tier
+  const pt = priceTier(slightlyUsedData.tier - slightlyUsedData.traumaTier)
   const sex = (intersection(char.tags, ['F', 'M', 'O'])[0] || 'F') as 'F' | 'M' | 'O'
   companions.value.push({ uid: char.uid, name: char.name, world: char.world, sex, tier, priceTier: pt, method: 'used' })
 }

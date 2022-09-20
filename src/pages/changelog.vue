@@ -1,9 +1,20 @@
 <template>
   <div class="w-full overflow-y-auto scrollbar">
-    <div class="w-screen-md lg:pl-2 bg-gray-200 dark:bg-gray-800 p-2 mt-4 !items-stretch gap-4 ">
+    <div class="md:w-screen-md lg:pl-2 bg-gray-200 dark:bg-gray-800 p-2 mt-4 !items-stretch gap-4 ">
       <h2 class="text-xl font-bold text-center">
         Changelog
       </h2>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          18 September 2022
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~50 new user submitted characters, 6 new worlds, new missions.</li>
+          <li>Slightly Used now work by different rules.</li>
+          <li>6 new official generic waifu perks.</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
       <div>
         <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
           15 September 2022

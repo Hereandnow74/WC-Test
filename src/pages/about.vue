@@ -7,7 +7,7 @@
       <div>
         Time I spend on Interactive Waifu Catalog so far -
         <span class="text-amber-500">more than a 1000</span> hours in
-        <span class="text-amber-500">almost a year</span>.
+        <span class="text-amber-500">more than a year</span>.
       </div>
       <div>
         If you found some bugs, have any questions about Interactive, suggestions, collaborations or you want to hire me
@@ -38,13 +38,13 @@
       </div>
       <div>
         <h4 class="text-2xl text-center">
-          Top 20 users by submitted characters
+          Top users by submitted characters
         </h4>
         <div class="flex flex-wrap gap-x-2 justify-center">
           <div v-for="user in topUsers.slice(0, 20)" :key="user[0]" class="text-semibold">
             {{ user[0] }}(<span class="text-amber-500">{{ user[1] }}</span>)
           </div>
-          <div><span class="text-blue-500">{{ topUsers.length - 20 }}</span> others...</div>
+          <div>and <span class="text-blue-500">{{ topUsers.length - 20 }}</span> others...</div>
         </div>
       </div>
       <div>

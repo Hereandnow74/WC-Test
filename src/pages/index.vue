@@ -75,7 +75,7 @@
           Pandora’s Alternate Tier Ranks (by
           <a
             class="text-blue-500 hover:underline"
-            href="https://forum.questionablequesting.com/threads/r34-economy-cyoa-thread.11289/page-63%23post-3167059&sa=D&source=editors&ust=1636169921608000&usg=AOvVaw3lNgOZSmmHTK3NPa9X_SOQ"
+            href="https://forum.questionablequesting.com/threads/r34-economy-cyoa-thread.11289/page-63#post-3167059"
             target="_blank"
             rel="noopener noreferrer"
           >Pandora12</a>)

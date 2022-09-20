@@ -15,26 +15,10 @@
 </template>
 
 <script lang="ts" setup>
-import { useStore } from '~/store/store'
-import { activeTab, orientation, appMode, toggleAppMode, toggleSmartMenu, showSmartMenu, showIntro, visible } from '~/logic'
-
-const tabs = ['Build', 'Retinue', 'Apps', 'Spendings', '']
-const tabIcons = ['bx:bx-spreadsheet', 'bi:people-fill', 'ion:apps-sharp', 'la:coins', 'fluent:wrench-16-filled']
-
-const tabComponents = [
-  defineAsyncComponent(() => import('./footer/Build.vue')),
-  defineAsyncComponent(() => import('./footer/Companions.vue')),
-  defineAsyncComponent(() => import('./footer/Apps.vue')),
-  defineAsyncComponent(() => import('./footer/Spendings.vue')),
-  defineAsyncComponent(() => import('./footer/Manual.vue')),
-]
+import { orientation, showSmartMenu, visible } from '~/logic'
 
 const smartMenu = ref(null)
 
 onClickOutside(smartMenu, () => showSmartMenu.value = false)
-
-const {
-  budget, tier11tickets, loan, creditLimit,
-} = useStore()
 
 </script>

@@ -37,6 +37,14 @@ const startingOrigin = storeType<Origin>('startingOrigin', {
   cost: 0,
 })
 
+const coupleOrigin = storeType<Origin>('coupleOrigin', {
+  title: '',
+  character: 'Significant Other',
+  sex: 'F',
+  tier: 1,
+  cost: 0,
+})
+
 const intensities = storeType('intensities', [] as {
   title: string
   intensity: number
@@ -144,6 +152,7 @@ export function useChargenStore() {
     allEffects,
     startingWorld,
     startingOrigin,
+    coupleOrigin,
     userWorlds,
     localUserWorlds,
     intensities,

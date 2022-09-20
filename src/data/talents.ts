@@ -816,7 +816,7 @@ genericPerks.push({
   category: 'Generic',
   image: 'https://i.ibb.co/k5XPSRL/Slightly-Used.jpg',
   cost: 1,
-  special: 'Use directly in companions. Non TX',
+  special: 'Use directly in companions.',
   whitelist: ['Directly in Companions'],
   desc: `
 <p>This waifu is an original version, captured by a previous contractor and resold to you. All direct effects of previous contractors' controls and perks are removed during reprocessing. This includes Defenses, Talents, and Binding benefits, but not any non-baseline abilities they trained in using their former contractor’s Talents, equipment they wield, or Heritage upgrades applied to them. When you select this perk for a purchase, you will see three options for which specific version of the subject you wish to buy.</p>
@@ -883,7 +883,7 @@ genericPerks.push({
   category: 'Generic',
   special: 'Requires at least one first - party Azur Lane shipgirl.',
   complex: 'target',
-  requires: '(Any Azur Lane collaboration shipgirl)',
+  requires: 'Any Azur Lane collaboration shipgirl',
   image: 'https://i.ibb.co/6y1sh85/Third-Party-Riggings.jpg',
   cost: 20,
   desc: `Dead or Alive, Neptunia, Utawarerumono, Hololive, and others have all had guest appearances on the high seas. This perk grants these characters their shipgirl riggings, allowing them to play by those rules instead and making them eligible for Bifurcation and Space Shipgirl below. If a collaboration shipgirl’s tier after step 1a is less than the following, it will be raised to that value.
@@ -899,7 +899,7 @@ genericPerks.push({
   uid: 'piGae',
   title: 'Retrofit',
   category: 'Generic',
-  requires: '(Any eligible Azur Lane shipgirl)',
+  requires: 'Any eligible Azur Lane shipgirl',
   complex: 'target',
   image: 'https://i.ibb.co/H26yFLZ/Retrofit.jpg',
   cost: 0,
@@ -917,7 +917,7 @@ genericPerks.push({
   uid: 'qJBhY',
   title: 'Bifurcation',
   category: 'Generic',
-  requires: '(Any Azur Lane Shipgirl)',
+  requires: 'Any Azur Lane Shipgirl',
   complex: 'target',
   image: 'https://i.ibb.co/zQWtns3/Bifurcation.jpg',
   cost: 15,
@@ -931,7 +931,7 @@ genericPerks.push({
   uid: 'rRNoF',
   title: 'Space Shipgirl',
   category: 'Generic',
-  requires: '(Any Azur Lane shipgirl)',
+  requires: 'Any Azur Lane shipgirl',
   complex: 'target',
   image: 'https://i.ibb.co/zQ0GNfb/Space-Shipgirl.jpg',
   cost: 30,
@@ -945,7 +945,7 @@ genericPerks.push({
   uid: 'yib6z',
   title: 'I\'m on a Boat',
   category: 'Generic',
-  requires: '(Any Kantai Collection Shipgirl)',
+  requires: 'Any Kantai Collection Shipgirl',
   complex: 'target',
   image: 'https://i.ibb.co/ssVPcG3/Im-On-ABoat.jpg',
   cost: 10,
@@ -955,10 +955,36 @@ genericPerks.push({
 })
 
 genericPerks.push({
+  uid: 'KfjKL',
+  title: 'Heart of Light',
+  category: 'Generic',
+  requires: 'Any Non-Evil waifu from Disney or Square-Enix',
+  complex: 'target',
+  image: '',
+  cost: 10,
+  desc: `
+  Your chosen Disney or Square-Enix Waifu has now become a Princess of Heart, giving them a Heart of Pure Light. They're now protected from Corruption, even if you lack Corruption Defense, and can sense and push away corruptive forces, with their abilities growing stronger the more of them gathered in one place. Purchasing this perk will elevate the character to Tier 4, if she wasn't already. Repurchases for the same character would do nothing and thus are not allowed.
+  <p>By default, you can only have 7 Princesses of Heart. Additional sets of 7 Princess Titles become available with each member of your retinue, including yourself, whose effective tier after step five is at least T8: one for each T8, two for each T9, five for each T10, and ten for each TΧ. If one of your Waifus is already a Princess of Heart when you capture her, that counts against your total, unless you take a refund for this perk. If this puts you over your cap for Titles, you must refund the perk.</p>`,
+})
+
+genericPerks.push({
+  uid: 'kgjKf',
+  title: 'Blade of Endings',
+  category: 'Generic',
+  requires: 'Any Keyblade wielder',
+  complex: 'target',
+  image: '',
+  cost: 1000,
+  desc: `
+  The Origin of Keyblades, the Ⲭ-Blade is the companion to the True Kingdom Hearts, and the only blade which can open its door. With this perk, your Keyblade wielding character (yourself included, if you have a Keyblade) can now summon the legendary blade itself. With it, you can call upon both its powers and the powers of Kingdom Hearts itself by summoning it. 
+  <p>You may only have one Ⲭ-Blade at a time, whether or not this perk is applied. It can be passed around your various Keyblade Wielders, but only the one whom this perk is applied to can summon or unsummon the blade at will. You can change which Keyblade Wielder in your Retinue (yourself included if you have a Keyblade) this perk is applied to in your Company App, but you must wait one week (168 hours) after purchasing or after changing targets before you can do so (again).</p>`,
+})
+
+genericPerks.push({
   uid: 'hkEPg',
   title: 'Mirage Master',
   category: 'Generic',
-  requires: '(Any T1- T3 waifu + any Fire Emblem character rated T6 or below)',
+  requires: 'Any T1- T3 waifu + any Fire Emblem character rated T6 or below',
   complex: 'target',
   cost: 50,
   image: 'https://i.ibb.co/XbXqB6y/Mirage-Master.jpg',
@@ -972,7 +998,7 @@ genericPerks.push({
   uid: 'hndM0',
   title: 'Unison',
   category: 'Generic',
-  requires: '(Any Pokémon trainer)',
+  requires: 'Any Pokémon trainer',
   complex: 'target',
   cost: 40,
   image: 'https://i.ibb.co/rdn5hH5/Unison.jpg',
@@ -980,10 +1006,21 @@ genericPerks.push({
 })
 
 genericPerks.push({
+  uid: '8Kgf8',
+  title: 'Spiritual Inversion',
+  category: 'Generic',
+  requires: 'Any Date A Live spirit',
+  complex: 'target',
+  cost: 40,
+  image: '',
+  desc: 'The Spirit can now enter her Inverse Form, greatly increasing her strength and changing her Angel into a Demon King. The Spirit will remain in full control of herself. This perk may be applied to any Spirit from Date A Live, including those who lack a canonical Inverse Form or aren’t listed in the catalog as Spirits. This perk is free if you capture the Spirit while she’s in her Inverse Form, or if she unlocks it herself by force.',
+})
+
+genericPerks.push({
   uid: '1rWq8',
   title: 'Galactic Presence',
   category: 'Generic',
-  requires: '(Any Warhammer Fantasy deity)',
+  requires: 'Any Warhammer Fantasy deity',
   complex: 'target',
   image: 'https://i.ibb.co/wJPQ4wt/Galactic-Presence.jpg',
   cost: 50,
@@ -994,7 +1031,7 @@ genericPerks.push({
   uid: 'Pqi8M',
   title: 'Four Seasons',
   category: 'Generic',
-  requires: '(Any female RWBY character of T6 or below)',
+  requires: 'Any female RWBY character of T6 or below',
   complex: 'target_c',
   multiple: true,
   image: 'https://i.ibb.co/1QhZdpg/Four-Seasons.jpg',
@@ -1006,7 +1043,7 @@ genericPerks.push({
   uid: '2kSwK',
   title: 'Salvation',
   category: 'Generic',
-  requires: '(Any Puella Magi)',
+  requires: 'Any Puella Magi',
   complex: 'target',
   costVariants: [20, 0],
   image: 'https://i.ibb.co/CK7zwYY/Salvation.jpg',
@@ -1014,6 +1051,43 @@ genericPerks.push({
   desc: `
 <p>When your waifu's soul gem darkens completely, she may choose to manifest her Doppel: a materialization of her witch-self which may take the form of an discrete projection, an extension of her body, or even a partial physical transformation, depending upon the details of her relationship to her witch-self and what it represents. An activated Doppel is extremely powerful in its own right, but draws upon the darkness in its master's soul gem to manifest, quickly and completely purifying its master's gem until she can no longer support it - leaving her Doppel as a briefly activated trump card or a simple magic recharge mechanic unless it's somehow further refined. If you have Inexhaustible, any meguca in your retinue, whom this perk has been applied to, will only benefit from this perk.</p>
 <p>If you have Madokami, Akuma Homura, Satomi Touka, Lapin, or any other meguca who is canonically capable of breaking the balance of hope and despair in your retinue, then this perk is free. If you already have this perk when you acquire a relevant waifu, then take a full refund on the value of this perk for as many times as you've purchased it. Upon ten purchases of this perk, all meguca you may purchase will automatically have this perk applied to them.</p>`,
+})
+
+genericPerks.push({
+  uid: 'lgk5f',
+  title: 'Mamonomorphosis (Papillon)',
+  category: 'Generic',
+  requires: 'any Monster Girl Encyclopedia Greenworm',
+  complex: 'target',
+  image: '',
+  cost: 5,
+  desc: `
+<p>The Greenworm’s youthful appearance comes from her nature as the larval forms of Papillon, a butterfly mamono. This perk skips the natural maturation process, immediately converting the target Greenworm into a Papillon. All Greenworms qualify for this perk, whether they’re naturally- born or converted from another race by natural means, Power Swap, or Template Stacking.</p>`,
+})
+
+genericPerks.push({
+  uid: 'aoqp9',
+  title: 'Mamonomorphosis (Succubus)',
+  category: 'Generic',
+  requires: 'any Monster Girl Encyclopedia Lesser Succubus',
+  complex: 'target',
+  image: '',
+  cost: 40,
+  desc: `
+<p>Any Lesser Succubus will eventually mature into the full-blooded variant with enough time and sexual energy intake. This perk skips the natural maturation process, immediately converting the target into a full Succubus. All Lesser Succubi qualify for this perk, whether they’re naturally-born or converted from another race by natural means, Power Swap, or Template Stacking.</p>`,
+})
+
+genericPerks.push({
+  uid: 'qsmot',
+  title: 'Lilithspawn',
+  category: 'Generic',
+  requires: 'any Monster Girl Encyclopedia Mamono, except for Lilims and the Demon Lord',
+  complex: 'target',
+  image: '',
+  cost: 200,
+  desc: `
+  The iconic Lilims are all Succubi, but the term simply applies to any daughter of the Demon Lord. In theory, any mamono, of any breed, could be elevated to the role. The Queen of Hearts is a Lilim Alice, for example.
+  <p>This perk augments your mamono into a Lilim, granting her the associated prowess and magical power of a T8. All Lilims, even artificial mamono created by Template Stacking before they received this perk, qualify for special Alterzelu Symbiote theming.</p>`,
 })
 
 export const talentsObject = talents.reduce((a, x) => { a[x.title] = x; return a }, {} as Record<string, PerkFull>)

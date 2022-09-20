@@ -13,6 +13,7 @@ const {
   allEffects,
   startingWorld,
   startingOrigin,
+  coupleOrigin,
   userWorlds,
   localUserWorlds,
   intensities,
@@ -388,6 +389,19 @@ export const appName = ref('')
 
 const favoritesObject = computed(() => favorites.value.reduce((a, f) => (a[f] = f, a), {} as Record<string, string>))
 
+const isCouple = computed(() => findIndex(intensities.value, { title: 'Couple’s Account (Cooperative)' }) !== -1)
+watch(() => intensities.value.length, () => {
+  if (!isCouple.value && coupleOrigin.value.tier > 1) {
+    coupleOrigin.value = {
+      title: '',
+      character: 'Significant Other',
+      sex: 'F',
+      tier: 1,
+      cost: 0,
+    }
+  }
+})
+
 export function useStore() {
   return {
     budget,
@@ -396,6 +410,7 @@ export function useStore() {
     allEffects,
     startingWorld,
     startingOrigin,
+    coupleOrigin,
     userWorlds,
     localUserWorlds,
     intensities,
@@ -469,5 +484,6 @@ export function useStore() {
     favoritesObject,
     specificModsCost,
     missionRewardCredits,
+    isCouple,
   }
 }

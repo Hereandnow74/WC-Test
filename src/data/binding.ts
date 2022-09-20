@@ -1258,7 +1258,7 @@ export const shroudElements = [
     'Freebies': 'Martial Talent, Wild Talent, Wild Defense (2x), Environmental Defense',
     'freebies': {
       talentPerks: [{ title: 'Martial Talent', cost: 0, count: 1 }, { title: 'Wild Talent', cost: 0, count: 1 }],
-      defensePerks: [{ title: 'Wild Defense', cost: 0, count: 2 }],
+      defensePerks: [{ title: 'Wild Defense', cost: 0, count: 2 }, { title: 'Environmental Defense', cost: 0, count: 1 }],
     },
   },
   {
@@ -1271,7 +1271,7 @@ export const shroudElements = [
     'Freebies': 'Martial Talent, Wild Talent, Wild Defense (2x), Environmental Defense',
     'freebies': {
       talentPerks: [{ title: 'Martial Talent', cost: 0, count: 1 }, { title: 'Wild Talent', cost: 0, count: 1 }],
-      defensePerks: [{ title: 'Wild Defense', cost: 0, count: 2 }],
+      defensePerks: [{ title: 'Wild Defense', cost: 0, count: 2 }, { title: 'Environmental Defense', cost: 0, count: 1 }],
     },
   },
   {
@@ -1284,7 +1284,7 @@ export const shroudElements = [
     'Freebies': 'Martial Talent, Wild Talent, Wild Defense (2x), Environmental Defense',
     'freebies': {
       talentPerks: [{ title: 'Martial Talent', cost: 0, count: 1 }, { title: 'Wild Talent', cost: 0, count: 1 }],
-      defensePerks: [{ title: 'Wild Defense', cost: 0, count: 2 }],
+      defensePerks: [{ title: 'Wild Defense', cost: 0, count: 2 }, { title: 'Environmental Defense', cost: 0, count: 1 }],
     },
   },
   {
@@ -1297,7 +1297,7 @@ export const shroudElements = [
     'Freebies': 'Martial Talent, Wild Talent, Wild Defense (2x), Environmental Defense',
     'freebies': {
       talentPerks: [{ title: 'Martial Talent', cost: 0, count: 1 }, { title: 'Wild Talent', cost: 0, count: 1 }],
-      defensePerks: [{ title: 'Wild Defense', cost: 0, count: 2 }],
+      defensePerks: [{ title: 'Wild Defense', cost: 0, count: 2 }, { title: 'Environmental Defense', cost: 0, count: 1 }],
     },
   },
   {
@@ -1310,7 +1310,7 @@ export const shroudElements = [
     'Freebies': 'Martial Talent, Wild Talent, Wild Defense (2x), Environmental Defense',
     'freebies': {
       talentPerks: [{ title: 'Martial Talent', cost: 0, count: 1 }, { title: 'Wild Talent', cost: 0, count: 1 }],
-      defensePerks: [{ title: 'Wild Defense', cost: 0, count: 2 }],
+      defensePerks: [{ title: 'Wild Defense', cost: 0, count: 2 }, { title: 'Environmental Defense', cost: 0, count: 1 }],
     },
   },
   {
@@ -1384,6 +1384,6 @@ export const shroudElements = [
     'Freebies': 'Everlasting Talent, Wild Defense, Environmental Defense',
     'freebies': {
       talentPerks: [{ title: 'Everlasting Talent', cost: 0, count: 1 }],
-      defensePerks: [{ title: 'Wild Defense', cost: 0, count: 1 }, { title: 'Wild Defense', cost: 0, count: 1 }],
+      defensePerks: [{ title: 'Wild Defense', cost: 0, count: 2 }, { title: 'Environmental Defense', cost: 0, count: 1 }],
     },
   }]
