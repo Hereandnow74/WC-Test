@@ -13,7 +13,7 @@ import { ALL_PERK_STORES, ALL_PERK_TITLES, useAllChars } from '~/data/constants'
 const {
   allEffects, intensities, luresBought, binding, flags, allForSave, heritage,
   ridePerks, homePerks, talentPerks, defensePerks, miscPerks, genericWaifuPerks, companions, startingOrigin,
-  waifuPerks, baseBudget, startingWorld, budgetMods, otherPerks, fee, specificMods, patron, pvpPerks,
+  waifuPerks, baseBudget, startingWorld, budgetMods, otherPerks, fee, specificMods, patron, pvpPerks, coupleOrigin,
 } = useStore()
 
 const { currentWorld, jumpChain, rdnWorld, loan, trHistory, missionRewards } = usePlayStore()
@@ -168,22 +168,14 @@ export function intensityAvailable(rule: Intensity): boolean {
 }
 
 // Bindings
-export function chooseBinding(bin: Binding, saveData: Perk) {
-  if (!bindingAvailable(bin)) return
-
-  const freebies = {}
-  if (bin.complex) {
-    mergeWith(freebies,
-      ...shroudElements.filter(x => findIndex(saveData.complex, { flavor: x.title }) !== -1).map(x => x.freebies),
-      (a, b) => { if (isArray(a)) return a.concat(b) })
-  }
+export function chooseBinding(bin: PerkFull, saveData: Perk, checkFunc = bindingAvailable) {
+  if (!checkFunc(bin)) return
 
   const ind = findIndex(binding.value, { title: bin.title })
   if (ind !== -1) {
-    if (binding.value[ind].count !== saveData.count && saveData.count > 0) {
-      if (bin.complex && bin.uid !== 'aTjfr') {
+    if (binding.value[ind].count !== saveData.count && saveData.count !== 0) {
+      if ((bin.complex || saveData.complex) && bin.uid !== 'aTjfr') {
         deleteFreebies(binding.value[ind].freebies)
-        saveData.freebies = freebies
         addFreebies(saveData.freebies)
       }
       binding.value[ind] = saveData
@@ -193,29 +185,23 @@ export function chooseBinding(bin: Binding, saveData: Perk) {
       if (toDel.freebies) deleteFreebies(toDel.freebies)
       if (!flags.value.chargen && toDel.cost < 11111) fee.value += Math.round(toDel.cost * 0.2) || 0
       allEffects.value.splice(allEffects.value.indexOf(toDel.title), 1)
-      deletePerk(binding.value, bindingAvailable)
+      deletePerk(binding.value, checkFunc)
       if (binding.value.length === 0) flags.value.noBindings = true
     }
   }
   else {
-    const anything = bin.element
-    if (bin.element) {
-      const i = findIndex(shroudElements, { title: bin.element })
-      if (saveData.freebies)
-        mergeWith(saveData.freebies, shroudElements[i].freebies, (a, b) => { if (isArray(a)) return a.concat(b) })
-      else
-        saveData.freebies = shroudElements[i].freebies
-    }
-    allEffects.value.push(bin.title)
-    if (bin.complex && Object.keys(freebies).length) saveData.freebies = freebies
+    if (saveData.count === 0)
+      return
+    if (findIndex(allEffects.value, bin.title) === -1)
+      allEffects.value.push(bin.title)
     if (bin.type) saveData.type = bin.type
     if (saveData.freebies) addFreebies(saveData.freebies)
-    binding.value.push({ anything, ...saveData })
+    binding.value.push(saveData)
     flags.value.noBindings = false
   }
 }
 
-export function bindingAvailable(bin: Binding): boolean {
+export function bindingAvailable(bin: PerkFull): boolean {
   if (flags.value.noBindings && !bin.whitelist) {
     return true
   }
@@ -232,8 +218,20 @@ export function bindingAvailable(bin: Binding): boolean {
   return false
 }
 
+export function symbioteAvailable(bin: PerkFull): boolean {
+  if (flags.value.noBindings && bin.uid === 'grbul')
+    return true
+  if (!bin.whitelist && findIndex(binding.value, { title: bin.title }) !== -1)
+    return true
+  if (!bin.whitelist && findIndex(binding.value, { uid: 'grbul' }) !== -1)
+    return true
+  if (bin.whitelist && intersection(allEffects.value, bin.whitelist).length >= (bin.needed || bin.whitelist.length))
+    return true
+  return false
+}
+
 // Lures
-export function chooseLure(lure: Binding, saveData: Perk) {
+export function chooseLure(lure: PerkFull, saveData: Perk) {
   const { allEffects } = useStore()
   if (lureAvailable(lure)) {
     const ind = findIndex(luresBought.value, { title: lure.title })
@@ -252,11 +250,11 @@ export function chooseLure(lure: Binding, saveData: Perk) {
   }
 }
 
-export function chooseOther(other: Binding, saveData: Perk) {
+export function chooseOther(other: PerkFull, saveData: Perk) {
   pickSimplePerk(other, saveData, lureAvailable, otherPerks.value)
 }
 
-export function lureAvailable(lure: Binding): boolean {
+export function lureAvailable(lure: PerkFull): boolean {
   if (lure.title === 'Strange Kind of Woman') {
     const truck = findIndex(otherPerks.value, { title: 'Space Truckin’' }) !== -1
     const tenPaper = findIndex(genericWaifuPerks.value, x => x.title === 'Paper Trail' && x.count && x.count >= 10) !== -1
@@ -495,10 +493,14 @@ export function removeAnyCompanion(uid: number) {
 export function clearAll() {
   baseBudget.value = 55
   startingWorld.value = {
-    worldName: 'Current world',
-    rating: 2,
+    worldName: 'No World',
+    rating: 0,
   }
   startingOrigin.value = {
+    title: '',
+    cost: 0,
+  }
+  coupleOrigin.value = {
     title: '',
     cost: 0,
   }
@@ -560,6 +562,7 @@ export function writeBuildValues(build: any) {
   baseBudget.value = build.baseBudget || 0
   startingWorld.value = build.startingWorld
   startingOrigin.value = build.startingOrigin
+  coupleOrigin.value = build.coupleOrigin
   intensities.value = build.intensities || []
   binding.value = build.binding || []
   otherPerks.value = build.otherPerks || []
@@ -591,6 +594,7 @@ export const saveObject = computed(() => {
     baseBudget: baseBudget.value,
     startingWorld: startingWorld.value,
     startingOrigin: startingOrigin.value,
+    coupleOrigin: coupleOrigin.value,
     intensities: intensities.value,
     binding: binding.value,
     luresBought: luresBought.value,

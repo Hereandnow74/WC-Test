@@ -2,7 +2,7 @@
   <div
     class="rounded cursor-pointer flex-grow text-gray-100 text-shadow flex flex-col gap-1 pb-2"
     border="2 gray-400 hover:orange-600"
-    :class="world.worldName === startingWorld.worldName || startingWorld.worldName === 'Current world' || !pickAble ?
+    :class="world.worldName === startingWorld.worldName || startingWorld.worldName === 'No World' || !pickAble ?
       WORLD_COLORS[rating - 1] || 'bg-gray-600' : 'bg-gray-600'"
     @click="pickAbleAfter ? pickWorld(world) : null"
   >
@@ -28,7 +28,7 @@
         Targets: <span class="text-lime-300 font-medium">{{ world.targets }}</span>
       </router-link>
       <div>
-        Budget: <span class="text-green-200 font-medium">{{ WORLD_RATINGS[rating - 1]?.budget || 'None' }}</span>
+        Budget: <span class="text-green-200 font-medium">{{ WORLD_RATINGS[rating]?.budget || 'None' }}</span>
       </div>
     </div>
     <div v-if="world.condition && isArray(world.condition)" class="mx-2 flex gap-2">
@@ -115,14 +115,14 @@ function pickWorld(world: World) {
   if (startingWorld.value.worldName === world.worldName
   && (startingWorld.value.condition === condition.name
   || (condition.name === 'No condition' && !startingWorld.value.condition))) {
-    startingWorld.value = { worldName: 'Current world', rating: 2 }
-    baseBudget.value = 55
+    startingWorld.value = { worldName: 'No World', rating: 0 }
+    baseBudget.value = 0
   }
   else {
     const rating = condition.rating || world.rating
     startingWorld.value = { worldName: world.worldName, rating }
     if (condition.name && condition.name !== 'No condition') startingWorld.value.condition = condition.name
-    baseBudget.value = WORLD_RATINGS[rating - 1]?.budget || 0
+    baseBudget.value = WORLD_RATINGS[rating]?.budget || 0
   }
 }
 

@@ -19,9 +19,17 @@
         <span v-else>DLC by {{ perk.dlc }}</span>
       </span>
       <slot name="title" />
-      <span v-if="displayedCost !== 0" text="gray-500 dark:gray-400" class="whitespace-nowrap">
+      <NumberInput
+        v-model="count"
+        :min="1"
+        :max="9999"
+        class="text-base ml-2"
+        @click.stop
+      />
+      <span text="gray-500 dark:gray-400" class="whitespace-nowrap">
         <slot name="cost">
-          (Cost: <span text="green-600 dark:green-300">{{ displayedCost }}</span>)
+          <span v-if="displayedCost !== 0">(Cost: <span text="green-600 dark:green-300">{{ displayedCost }}</span>)</span>
+          <span v-if="perk.dCost">(DP Cost: <span text="pink-600 dark:violet-300">{{ perk.dCost * count }}</span>)</span>
         </slot>
       </span>
       <fa-solid:check
@@ -80,20 +88,26 @@ const emit = defineEmits(['pickPerk'])
 const perkImg = ref<HTMLImageElement | null>(null)
 const { settings, collapsedDescs, collapsedDescsSet } = useStore()
 
-const perkToSave = reactive({
-  uid: props.perk.uid,
-  title: props.perk.title,
-  cost: props.perk.cost,
-  freebies: { ...props.perk.freebies } || undefined,
+const count = ref(1)
+
+const perkToSave = computed(() => {
+  return {
+    uid: props.perk.uid,
+    title: props.perk.title,
+    cost: props.perk.cost,
+    count: count.value,
+    dCost: count.value * props.perk.dCost,
+    freebies: { ...props.perk.freebies } || undefined,
+  }
 })
 
 const displayedCost = computed(() => {
-  const s = perkToSave.cost / 11111 === 0 || perkToSave.cost / 11111 >= 2 ? 's' : ''
-  return props.perk.cost >= 11111 ? `${perkToSave.cost / 11111} TX ticket${s}` : perkToSave.cost
+  const s = perkToSave.value.cost / 11111 === 0 || perkToSave.value.cost / 11111 >= 2 ? 's' : ''
+  return props.perk.cost >= 11111 ? `${perkToSave.value.cost / 11111} TX ticket${s}` : perkToSave.value.cost
 })
 
 function sendPerk() {
-  const obj = filterObject(perkToSave)
+  const obj = filterObject(perkToSave.value)
   emit('pickPerk', props.perk, obj)
 }
 

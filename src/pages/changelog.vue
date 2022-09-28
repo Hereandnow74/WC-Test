@@ -6,6 +6,18 @@
       </h2>
       <div>
         <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          23 September 2022
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~120 new user submitted characters, 4 new worlds, new missions.</li>
+          <li>Slightly new way to buy Prismatic Shroud, expect new bugs</li>
+          <li>Your SO card now shows in Retinue if you pick Couples Account in intensity (it does not do anything) </li>
+          <li>AND/OR switch for the search by tags</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
           18 September 2022
         </h3>
         <ul class="list-decimal list-inside">

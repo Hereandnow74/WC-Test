@@ -56,7 +56,7 @@
         class="mx-1 inline-block text-base"
         @click.stop
       />
-      <span text="gray-500 dark:gray-400" class="whitespace-nowrap">
+      <span v-if="displayedCost !== 0" text="gray-500 dark:gray-400" class="whitespace-nowrap">
         (Cost: <span text="green-600 dark:green-300">{{ displayedCost }}</span>)
       </span>
       <fa-solid:check
@@ -161,7 +161,7 @@ const complex = reactive({
 
 const perkToSave = reactive({
   title: props.perk.title,
-  count: props.savedPerk.count || 0,
+  count: props.savedPerk.count || 1,
   cost: computed(() => {
     let cs = cost.value
     let countMod = 0

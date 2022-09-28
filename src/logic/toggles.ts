@@ -42,6 +42,7 @@ export const orientation = useStorage('ot', false)
 export const buildLayout = useStorage('buildLayout', false)
 export const activeTab = ref(0)
 
+export const andOr = ref(false)
 export const showDefenseTags = ref(false)
 
 export const tagToggles = reactive(Object.values(waifuTags).reduce((a, x) => { a[x.short] = 0; return a }, {} as Record<string, number>))

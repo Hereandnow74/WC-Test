@@ -37,6 +37,10 @@
         <bi:ticket-perforated style="color: #faf0e6;" />
         <span :class="tier11tickets >= 0 ? '' : 'text-red-500'">{{ tier11tickets }}</span>
       </span>
+      <span v-if="devotionPoints !== 0" class="flex gap-1 items-center cursor-help" title="Devotion Points">
+        <ri:home-heart-line style="color: #EC52C7;" />
+        <span :class="devotionPoints >= 0 ? '' : 'text-red-500'">{{ devotionPoints }}</span>
+      </span>
       <span
         v-if="!buildLayout"
         class="absolute right-4 text-xl cursor-pointer hover:text-green-500"
@@ -103,7 +107,7 @@ const smartMenu = ref(null)
 onClickOutside(smartMenu, () => showSmartMenu.value = false)
 
 const {
-  budget, tier11tickets, loan, creditLimit, settings,
+  budget, tier11tickets, loan, creditLimit, settings, devotionPoints,
 } = useStore()
 
 function changeLayout() {

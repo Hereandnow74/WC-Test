@@ -28,8 +28,8 @@ function storeType<T>(name: string, value: T) {
 const baseBudget = storeType('baseBudget', 55)
 
 const startingWorld = storeType<World>('startingWorld', {
-  worldName: 'Current world',
-  rating: 2,
+  worldName: 'No World',
+  rating: 0,
 })
 
 const startingOrigin = storeType<Origin>('startingOrigin', {

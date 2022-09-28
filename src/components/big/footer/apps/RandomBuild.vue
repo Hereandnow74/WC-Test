@@ -168,8 +168,8 @@ async function generateRandomBuild() {
   await new Promise(resolve => setTimeout(resolve, 500))
   startingWorld.value = { worldName: world.worldName, rating: world.rating }
   if (world.condition) startingWorld.value.condition = world.condition
-  baseBudget.value = WORLD_RATINGS[world.rating - 1]?.budget || 0
-  budgetMods.value.plus = clampedTarget - (WORLD_RATINGS[world.rating - 1]?.budget || 0)
+  baseBudget.value = WORLD_RATINGS[world.rating]?.budget || 0
+  budgetMods.value.plus = clampedTarget - (WORLD_RATINGS[world.rating]?.budget || 0)
   // Intensity
   await new Promise(resolve => setTimeout(resolve, 500))
   intensities.value.push({ title: intensity[0].title, intensity: 0, count: 1 })

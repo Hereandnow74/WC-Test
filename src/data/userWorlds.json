@@ -1203,11 +1203,6 @@
     "image": "https://hentaiporns.net/wp-content/uploads/2016/01/HuniePot-HuniePop-Digital-Art-Collection-HuniePop000.jpg"
   },
   {
-    "worldName": "Baki: The Grappler",
-    "rating": 5,
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992086635208511488/image-w1280.webp"
-  },
-  {
     "worldName": "Guild Wars / Boundless",
     "rating": 8,
     "image": "https://i.pinimg.com/736x/ca/dd/c8/caddc830e3de3af6364d455da35d1669.jpg",
@@ -4590,7 +4585,7 @@
   {
     "worldName": "Übel Blatt",
     "rating": 5,
-    "image": "https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2013/11/260773-2014-llegara-seinen-ubel-blatt.jpg"
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1019997257975734292/Konachan.com_-_189954_armor_dragon_fang_fire_koinzell_pointed_ears_sword_ubel_blatt_weapon_wings.png"
   },
   {
     "worldName": "Edens Zero",
@@ -4631,7 +4626,7 @@
   {
     "worldName": "Tekken",
     "rating": 5,
-    "image": "https://libredd.it/img/ojevd3wacj561.jpg"
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1019997542341148822/thumb-1920-694711.jpg"
   },
   {
     "worldName": "Tsugumomo",
@@ -4705,5 +4700,9 @@
   {"worldName":"He Who Fights Monsters","rating":10,"image":""},
   {"worldName":"Pandora Hearts","rating":5,"image":""},
   {"worldName":"Sidonia no Kishi","rating":8,"image":""},
-  {"worldName":"Xiaolin Showdown","rating":4,"image":""}
+  {"worldName":"Xiaolin Showdown","rating":4,"image":""},
+  {"worldName":"A Practical Guide to Evil","rating":8,"image":"https://external-preview.redd.it/wSWYkgCdqBm_tXwawQ2Kta3FK4lDp-LbJZiXD1cBUco.jpg?auto=webp&s=eb61bc69d4555f502834ade1467d7b6fa7fd6292"},
+  {"worldName":"Call of Duty","rating":4,"condition":[{"rating":4,"name":"Modern Warfare"},{"rating":4,"name":"Black Ops"},{"rating":5,"name":"Zombie"}]},
+  {"worldName":"My Dress Up Darling","rating":1,"image":"https://external-preview.redd.it/IO5mFZACU1Q07sL1-2SlS1dFiPWFDa7Zt4rFwLaENgs.jpg?auto=webp&s=c007b0e96e90e6013e20eb74a0486bc79b826a3f"},
+  {"worldName":"Valiant","rating":5,"image":"https://i.imgur.com/QuBsKB5.jpg"}
 ]

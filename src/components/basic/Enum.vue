@@ -31,7 +31,7 @@
             </template>
           </span>
         </router-link>
-        <span v-if="priceMode && costOrIntensity(el)">[<span :style="[numberColor ? {color: numberColor} : '']" class="text-gray-300">{{ costOrIntensity(el) }}</span>]</span>
+        <span v-if="priceMode && costOrIntensity(el)">[<span :style="[numberColor ? {color: numberColor} : '']" class="text-gray-300">{{ costOrIntensity(el) > 0 ? '+' : '' }}{{ costOrIntensity(el) }}</span>]</span>
         <span v-if="editMode" class="text-red-400 hover:text-red-500 cursor-pointer" @click.stop="deletePerk(el)"><fluent:delete-20-filled /></span>
       </template>
       ]
@@ -46,7 +46,6 @@
 import { isArray, groupBy, findIndex, remove } from 'lodash-es'
 import type { PropType } from 'vue'
 import { ALL_DLC_PERK_TITLES, LINKS, QUERIES } from '~/data/constants'
-import { removeAnyPerk } from '~/logic'
 import { useStore } from '~/store/store'
 
 const { baseBudget } = useStore()
@@ -82,8 +81,6 @@ const props = defineProps({
   },
 })
 
-const emit = defineEmits(['deletePerk'])
-
 const costOrIntensity = (el: any) => {
   if (el.cost || el.cost === 0) {
     if (el.cost === 0)
@@ -92,7 +89,7 @@ const costOrIntensity = (el: any) => {
       return el.cost >= 11111 ? `${el.cost / 11111} TX ticket(s)` : el.cost * (-1)
   }
   if (el.intensity) {
-    if (el.intensity <= 1)
+    if (el.intensity <= 10)
       return el.intensity * baseBudget.value
     else
       return el.intensity

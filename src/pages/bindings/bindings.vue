@@ -13,16 +13,20 @@
           :class="[activeType === type ? 'border-orange-400': '', bindingCounts[type] ? 'border-green-600': '']"
           @click="activeType = type"
         >
-          <h3>{{ type }}</h3>
-          <div>Total perks: <span v-if="bindingCounts[type]">{{ bindingCounts[type] }} /</span> <span>{{ bindingByType[type].length }}</span></div>
+          <h3 class="font-semibold">
+            {{ type }}
+          </h3>
+          <div class="text-gray-700 dark:text-gray-300">
+            Total perks: <span v-if="bindingCounts[type]" class="text-blue-700 dark:text-blue-300">{{ bindingCounts[type] }} /</span> <span class="text-blue-700 dark:text-blue-300">{{ bindingByType[type].length }}</span>
+          </div>
         </div>
       </template>
     </div>
 
-    <Desc v-if="activeType === 'Tantric Arts'" class="p-2 mb-4 max-w-4xl bg-warm-gray-200 dark:bg-warm-gray-800 mx-auto" :desc="tantricDesc" />
     <Note v-if="activeType === 'Ritual'" class="max-w-4xl mx-auto mb-4" type="warning" title="Old version perks">
       <div>Ritual Circle binding was replaced with Tantric Arts in new Waifu Catalog version. While it will not get removed from Interactive, use it only if you know what you are doing.</div>
     </Note>
+    <Desc v-if="activeType === 'Tantric Arts'" class="p-2 mb-4 max-w-4xl bg-warm-gray-200 dark:bg-warm-gray-800 mx-auto" :desc="tantricDesc" />
 
     <div
       class="column-gap"
@@ -67,9 +71,9 @@
           savedPerk: allBindings[bnd.title],
           ...generateProps(bnd)
         }"
-        @pickPerk="chooseBinding"
+        @pickPerk="(a,b) => ['Elemental Shroud', 'Prismatic Shroud'].includes(bnd.title) ? null : chooseBinding(a,b)"
       >
-        <template v-if="['Elemental Shroud'].includes(bnd.title)" #title>
+        <template v-if="['Elemental Shroud', 'Prismatic Shroud'].includes(bnd.title)" #title>
           <Button size="Small" label="element" class="mx-1" @click.stop="chooseElement(bnd)" />
         </template>
         <template v-if="bnd.type === 'Ritual'" #rules>
@@ -78,7 +82,7 @@
       </component>
     </div>
     <Desc
-      v-if="activeType === 'Symbiote'"
+      v-if="activeType === 'Symbiote Legacy'"
       :desc="symbioteRules"
       class="p-2 my-4 max-w-4xl bg-warm-gray-200 dark:bg-warm-gray-800 mx-auto"
     />
@@ -102,7 +106,7 @@
       >
       </PerkCard>
     </template>
-    <ShroudElements v-if="showElements" @click="toggleElements" @toggleElement="toggleCurrentElement" />
+    <ShroudElements v-if="showElements" :current-binding="currentBinding" @click="showElements = false" @close="showElements = false" />
     <RitualCircle v-if="showRitual" @click="toggleRitual" />
     <div class="h-8"></div>
   </div>
@@ -111,10 +115,8 @@
 <script lang='ts' setup>
 import { onBeforeRouteUpdate } from 'vue-router'
 import { PerkFull } from 'global'
-import { countBy, remove } from 'lodash-es'
-import {
-  desc, symbioteRules, shroudElements, tantricDesc,
-} from '~/data/binding'
+import { countBy } from 'lodash-es'
+import { desc, symbioteRules, tantricDesc } from '~/data/binding'
 import { useTooltips } from '~/logic/misc'
 import { bindingAvailable, chooseBinding, deletePerk } from '~/logic'
 import { useStore } from '~/store/store'
@@ -123,24 +125,21 @@ import PerkCard from '~/components/cards/PerkCard.vue'
 import GenericPerkCard from '~/components/cards/perkCards/GenericPerkCard.vue'
 import { useFullPerks } from '~/logic/localPerks'
 import { confirmDialog } from '~/logic/dialog'
+import { symbioteQueen, symbioteUnits, alternativeTheming } from '~/data/symbiote'
 
-const { binding, flags, settings, allEffects } = useStore()
-const [showElements, toggleElements] = useToggle()
+const { binding, flags, settings } = useStore()
+const [showElements] = useToggle()
 const [showRitual, toggleRitual] = useToggle()
 
 const currentBinding = ref<PerkFull|null>(null)
 
 const { bindings } = useFullPerks()
 
-const perkCards = {
-  'Prismatic Shroud': defineAsyncComponent(() => import('~/components/cards/perkCards/PrismaticShroud.vue')),
-} as Record<string, any>
-
 const bindingCard = (bnd: PerkFull) => {
   let generic = null
   if (!bnd.multiple && !bnd.waifu && !bnd.complex && bnd.element)
     generic = GenericPerkCard
-  return perkCards[bnd.title] || generic || PerkCard
+  return generic || PerkCard
 }
 
 const bindingsDLC = computed(() => !settings.value.allChosenAuthors[0]
@@ -149,17 +148,19 @@ const bindingsDLC = computed(() => !settings.value.allChosenAuthors[0]
 
 const bindingByType = computed(() => {
   const res = {
-    'Stamp': [] as PerkFull[],
-    'Jewelry': [] as PerkFull[],
-    'Ritual': [] as PerkFull[],
-    'Symbiote': [] as PerkFull[],
-    'Shroud': [] as PerkFull[],
-    'Hypnosis App': [] as PerkFull[],
-    'Tantric Arts': [] as PerkFull[],
-    'Other': [] as PerkFull[],
-  }
+    // 'Stamp': [] as PerkFull[],
+    // 'Jewelry': [] as PerkFull[],
+    // 'Ritual': [] as PerkFull[],
+    // 'Symbiote': [] as PerkFull[],
+    // 'Shroud': [] as PerkFull[],
+    // 'Hypnosis App': [] as PerkFull[],
+    // 'Tantric Arts': [] as PerkFull[],
+    // 'Other': [] as PerkFull[],
+  } as Record<string, PerkFull[]>
 
-  bindings.value.filter(perk => settings.value.hideLegacy ? !perk.legacy : true).forEach(x => x.type ? res[x.type].push(x) : res.Other.push(x))
+  bindings.value
+    .filter(perk => settings.value.hideLegacy ? !perk.legacy : true)
+    .forEach(x => x.type ? res[x.type] ? res[x.type].push(x) : res[x.type] = [x] : res.Other ? res.Other.push(x) : res.Other = [x])
   return res
 })
 
@@ -192,23 +193,10 @@ function chooseElement(bnd: PerkFull) {
   currentBinding.value = bnd
 }
 
-function toggleCurrentElement(title: string, custom: string) {
-  if (currentBinding.value) {
-    if (currentBinding.value.element === title)
-      currentBinding.value.element = ''
-    else
-      currentBinding.value.element = title
-  }
-  const saveBin = { cost: 96, title: 'Elemental Shroud', freebies: { talentPerks: [{ title: 'Body Talent', cost: 0, count: 1 }, { title: 'Soul Talent', cost: 0, count: 1 }] } }
-  if (custom) saveBin.target = custom
-  chooseBinding(currentBinding.value, saveBin)
-  toggleElements()
-}
-
 function generateProps(perk: PerkFull) {
   const props = {}
   if (perk.increment) props.increment = !!perk.increment
-  if (perk.title === 'Prismatic Shroud') props.elementList = shroudElements.map(x => ({ flavor: x.title }))
+  // if (perk.title === 'Prismatic Shroud') props.elementList = shroudElements.map(x => ({ flavor: x.title }))
   return props
 }
 

@@ -391,7 +391,7 @@ DLChomes.push({
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'A God Am I',
   category: 'Home',
-  image: 'https://i.ibb.co/0X86GqM/AGodAmI.jpg',
+  image: 'https://cdn.discordapp.com/attachments/925963686433132644/1020819161846390944/Image.png',
   cost: 11111,
   desc: `From your control center, you can create life to populate your Demiplane. Binding creatures from your Demiplane may be possible, but does not provide credits.
   <p>If you aren’t already, you become a TX yourself.</p>
@@ -478,7 +478,7 @@ DLCtalents.push({
   dlc: 'DLC by Despin',
   category: 'Home',
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
-  title: 'Presence',
+  title: 'Presentation',
   image: 'https://i.ibb.co/vmN3jBY/Presence.jpg',
   cost: 30,
   desc: `
@@ -683,7 +683,7 @@ DLCotherControls.push({
   dlclink: 'https://docs.google.com/document/d/1HGcpJGpGbLCeA3VO8LFrQjxQqkYANdeoWbCKlCOnK0A/edit',
   title: 'Class Cards',
   category: 'Other Controls',
-  image: '',
+  image: 'https://cdn.discordapp.com/attachments/925963686433132644/1020817612860575815/blodqf4lb1h71.png',
   multiple: true,
   max: 16,
   cost: 10,

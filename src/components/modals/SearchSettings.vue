@@ -9,7 +9,7 @@
           <NumberInput v-model="maxTier" :min="minTier" :max="11" />
         </div>
         <Checkbox
-          v-if="currentWorld.worldName !== 'Current world'"
+          v-if="currentWorld.worldName !== 'No World'"
           v-model="isLimited"
           :label="`Limit to ${currentWorld.worldName}`"
           class="border rounded px-1 border-gray-300 dark:border-gray-500"

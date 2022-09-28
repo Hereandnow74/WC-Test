@@ -33,7 +33,7 @@ export const challenges = [
     `,
     effect: {
       set: () => baseBudget.value = 20,
-      remove: () => baseBudget.value = WORLD_RATINGS[startingWorld.value.rating - 1].budget,
+      remove: () => baseBudget.value = WORLD_RATINGS[startingWorld.value.rating].budget,
     },
   },
   {
@@ -157,7 +157,7 @@ export const challenges = [
         const world = sample(allWorldsNoCondition.value)
         startingWorld.value = { worldName: world.worldName, rating: world.rating }
         if (world.condition) startingWorld.value.condition = world.condition
-        baseBudget.value = (WORLD_RATINGS[world.rating - 1]?.budget || 0) * 1.5
+        baseBudget.value = (WORLD_RATINGS[world.rating]?.budget || 0) * 1.5
       },
       remove: () => baseBudget.value = baseBudget.value / 1.5,
     },

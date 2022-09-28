@@ -32,7 +32,7 @@
           <div class="">
             Trauma tier: <span class="text-green-500">-{{ author ? data.traumaTier : '??' }}</span>
           </div>
-          <div class="flex gap-2 items-center">
+          <div class="flex gap-2 items-center cursor-help" title="Its just an example, you can ignore it and use your own trauma ideas.">
             Suffers from:
             <span class="text-red-400">{{ author ? traumaReac || data.traumaExample : '??' }}</span>
             <dashicons:update-alt v-if="author && bought" class="hover:text-amber-500 cursor-pointer" @click="() => traumaReac = traumaExamples[data.traumaTier][Math.floor(Math.random() * traumaExamples[data.traumaTier].length)]" />

@@ -248,7 +248,7 @@ const budget = computed(() => {
   // CSR implementation 3.0
   if (flags.value.chargen && csr.value) {
     if (bd + loan.value.gained < 0) {
-      const budget = Math.max(WORLD_RATINGS[startingWorld.value.rating - 1].budget, 500)
+      const budget = Math.max(WORLD_RATINGS[startingWorld.value.rating].budget, 500)
       loan.value.gained = Math.min(Math.abs(bd), budget)
       loan.value.owed = loan.value.gained
     }
@@ -305,12 +305,16 @@ const totalCost = computed(() => startingOrigin.value.cost + heritageCost.value 
 const companionsWithoutSold = computed(() => companions.value.filter(c => !c.sold))
 const companionsComp = computed(() => companionsWithoutSold.value.filter(cmp => cmp.role === 'Companion' || !cmp.role))
 
+const isCouple = computed(() => findIndex(intensities.value, { title: 'Couple’s Account (Cooperative)' }) !== -1)
+
 const targetList = computed(() => {
   const comps = companionsComp.value.map(x => (x.name))
   if (['Substitute', 'Possess'].includes(startingOrigin.value.title))
     comps.unshift(startingOrigin.value.character || 'You')
   else
     comps.unshift('You')
+  if (isCouple.value)
+    comps.unshift(coupleOrigin.value.character || 'Your SO')
   return comps
 })
 
@@ -389,7 +393,6 @@ export const appName = ref('')
 
 const favoritesObject = computed(() => favorites.value.reduce((a, f) => (a[f] = f, a), {} as Record<string, string>))
 
-const isCouple = computed(() => findIndex(intensities.value, { title: 'Couple’s Account (Cooperative)' }) !== -1)
 watch(() => intensities.value.length, () => {
   if (!isCouple.value && coupleOrigin.value.tier > 1) {
     coupleOrigin.value = {
@@ -401,6 +404,8 @@ watch(() => intensities.value.length, () => {
     }
   }
 })
+
+const devotionPoints = computed(() => binding.value.reduce((a, x) => a += x.dCost ? x.dCost : 0, 0))
 
 export function useStore() {
   return {
@@ -485,5 +490,6 @@ export function useStore() {
     specificModsCost,
     missionRewardCredits,
     isCouple,
+    devotionPoints,
   }
 }

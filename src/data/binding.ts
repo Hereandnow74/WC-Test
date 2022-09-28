@@ -333,12 +333,13 @@ export const bindings: PerkFull[] = [
 <p>Instead of having to draw a circle, you are able to inscribe runes upon an item. The item acts as the center of the circle for the sphere as an ambient field, or may be at any designated point within the cylinder setting. More powerful circles require larger anchors. A circle with 6 points or less spent on it can be infused into something the size of a marble (10mm). Something the size of a heart or baseball could handle 12 points. Something the size of a basketball or head could handle 18, and a torso or beachball could handle 24.</p>
 <p>Objects infused with Teleport Circles transport those that touch them. Objects infused with Destruction Circles are not damaged by the effect, even if they are within the radius.</p>`,
   },
+
   {
     uid: 'QrpgY',
     title: 'Alterzelu Symbiote',
     cost: 100,
     category: 'Binding',
-    type: 'Symbiote',
+    type: 'Symbiote Legacy',
     image: 'https://i.imgur.com/Hz8Ngbs.png',
     complex: 'target',
     freebies: {
@@ -357,13 +358,14 @@ export const bindings: PerkFull[] = [
 If you Possessed or Substituted a waifu or are otherwise female, you may act as your own queen, with no need for a king - just consorts at most. A lone female in an otherwise all-male hive will always be the queen, while an all-male hive will have to externalize its egg production by some means. If your queen is part of a set that can only be purchased together, the actual queen is the most dominant one according to their natural personalities; if the members of the set are truly co-equal, then they’ll serve as co-equal queens.
 `,
   },
+
   {
     uid: 'odRGB',
     title: 'Universal Bus',
     // type: 'Expansion',
     cost: 50,
     category: 'Binding',
-    type: 'Symbiote',
+    type: 'Symbiote Legacy',
     image: 'https://i.ibb.co/jMhSPRT/Universal-Bus.jpg',
     whitelist: ['Alterzelu Symbiote'],
     desc: `
@@ -376,7 +378,7 @@ If you Possessed or Substituted a waifu or are otherwise female, you may act as 
     // type: 'Expansion',
     cost: 30,
     category: 'Binding',
-    type: 'Symbiote',
+    type: 'Symbiote Legacy',
     image: 'https://i.ibb.co/fvRfGb1/Second-Generation-Symbiote.jpg',
     freebies: {
       talentPerks: [{ title: 'Psychic Talent', cost: 0, count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Psychic Talent' }], count: 1 }],
@@ -390,7 +392,7 @@ If you Possessed or Substituted a waifu or are otherwise female, you may act as 
     // type: 'Expansion',
     cost: 60,
     category: 'Binding',
-    type: 'Symbiote',
+    type: 'Symbiote Legacy',
     image: 'https://i.ibb.co/g3Txp6g/Third-Generation-Symbiote-New.jpg',
     whitelist: ['Second-Generation Symbiote'],
     desc: `
@@ -447,7 +449,7 @@ If you Possessed or Substituted a waifu or are otherwise female, you may act as 
     category: 'Binding',
     image: 'https://i.ibb.co/G0phJPp/Elemental-Shroud.jpg',
     whitelist: ['Shroud of Power'],
-    element: '',
+    // element: '',
     // complex: 'flavor',
     freebies: {
       talentPerks: [{ title: 'Body Talent', cost: 0, count: 1 }, { title: 'Soul Talent', cost: 0, count: 1 }],
@@ -468,8 +470,8 @@ If you Possessed or Substituted a waifu or are otherwise female, you may act as 
     image: 'https://cdn.discordapp.com/attachments/925963686433132644/1018095164591452190/wallpapersden.com_sung-jin-woo-8k-solo-leveling_1600x1200.jpg',
     whitelist: ['Elemental Shroud'],
     // element: '',
-    complex: 'flavor',
-    anything: 'Shroud Element',
+    // complex: 'flavor',
+    // anything: 'Shroud Element',
     desc: `
 <p>Choose an additional element for your Shroud. It may now express either of these elements or themes, but only one at a time. True mergers of multiple elements are not possible, but practice will let you rapidly switch between them and keep the previous element’s manifestations active for longer afterwards. Doing so with directly-conflicting elements, such as the Volcanic and Boreal or Primal and Burial Shrouds, requires much more practice.</p>
 <p>This expansion may be repurchased as many times as desired, until all listed Shrouds are acquired. Each purchase costs 54 credits, plus 10 credits for each element you already have, including the element from Elemental Shroud.</p>`,

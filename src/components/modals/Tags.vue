@@ -5,13 +5,22 @@
         <Button
           size="Small"
           bg-color="bg-blue-400"
-          label="Toggle all"
+          label="Clear all"
           class="whitespace-nowrap"
-          @click="toggleAll"
+          @click="clearAll"
         />
         <Toggle v-model="onlyDefense" label="Only defense discount tags" />
         <Toggle v-model="fullTags" label="Full" />
         <Toggle v-model="showOfficial" label="Show users tags" />
+        <div class="flex gap-1">
+          <div :class="{'font-bold': !andOr}">
+            AND
+          </div>
+          <Toggle v-model="andOr" />
+          <div :class="{'font-bold': andOr}">
+            OR
+          </div>
+        </div>
       </div>
       <div v-if="fullTags" class="flex flex-col gap-1 overflow-y-auto scrollbar mx-1 my-2 p-1 border rounded border-gray-500">
         <div
@@ -61,7 +70,7 @@
 
 <script lang='ts' setup>
 import { waifuTags, useAllChars, defTags } from '~/data/constants'
-import { tagToggles, threeToggle } from '~/logic'
+import { tagToggles, threeToggle, andOr } from '~/logic'
 
 const { tagsCount } = useAllChars()
 
@@ -69,9 +78,8 @@ const onlyDefense = ref(false)
 const fullTags = ref(false)
 const showOfficial = ref(false)
 
-function toggleAll() {
-  const val = threeToggle(tagToggles.F)
-  Object.keys(tagToggles).forEach(key => tagToggles[key] = val)
+function clearAll() {
+  Object.keys(tagToggles).forEach(key => tagToggles[key] = 0)
 }
 
 const allTagsFiltered = computed(() => {

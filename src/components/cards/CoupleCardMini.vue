@@ -29,11 +29,7 @@
             :label-inside="true"
             class="whitespace-nowrap"
           />
-          <div v-if="flags.chargen && ['Substitute', 'Walk-In'].includes(coupleOrigin.title) && noUC">
-            Sex: {{ coupleOrigin.sex }}
-          </div>
           <Variants
-            v-else
             v-model="coupleOrigin.sex"
             theme="dark"
             label="Sex"
@@ -43,10 +39,17 @@
         <div v-if="editMode">
           <Input v-model="image" class="w-full" placeholder="Your image only from Imgur.com example: https://i.imgur.com/jm8eCCA.png" />
           <Input v-model="coupleOrigin.w" class="w-full mt-1" placeholder="Place you're from" />
-          <div class="flex gap-1">
-            <Select v-model="coupleOrigin.o" :options="['Extra', 'Substitute', 'Possess']" class="w-full flex-grow mt-1" placeholder="Origin" />
-            <Input placeholder="Target Name" />
-            <Input placeholder="Cost" />
+          <div class="flex gap-1 mt-1">
+            <Select v-model="coupleOrigin.title" :options="['Drop-In', 'Extra', 'Substitute', 'Possess']" placeholder="Origin" />
+            <CharacterInput
+              v-if="['Substitute', 'Possess'].includes(coupleOrigin.title)"
+              idd="spouseCard"
+              placeholder="Target Name"
+              class="flex-grow"
+              @updateUID="(uid) => coupleOrigin.uid = uid"
+              @updateTier="(tier) => {coupleOrigin.tier = tier; coupleOrigin.cost = CHAR_COSTS[tier] || 1}"
+            />
+            <Input v-if="['Extra', 'Substitute', 'Possess'].includes(coupleOrigin.title)" v-model="coupleOrigin.cost" class="w-28" placeholder="Cost" />
           </div>
         </div>
       </div>
@@ -57,7 +60,7 @@
 <script lang="ts" setup>
 import { findIndex } from 'lodash-es'
 import Input from '../basic/Input.vue'
-import { useAllChars } from '~/data/constants'
+import { CHAR_COSTS, useAllChars } from '~/data/constants'
 import { imageLink } from '~/logic'
 import { useStore } from '~/store/store'
 
@@ -71,7 +74,7 @@ defineProps({
     default: false,
   },
 })
-const { flags, miscPerks, yourTier, coupleOrigin } = useStore()
+const { flags, miscPerks, coupleOrigin } = useStore()
 
 const noUC = computed(() => findIndex(miscPerks.value, { title: 'Universal Calibration' }) === -1)
 

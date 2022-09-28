@@ -3,16 +3,6 @@
     v-bind="{perk, isActive: perkExist, savedPerk}"
     @pickPerk="sendPerk"
   >
-    <template #title>
-      <AnythingInput
-        v-model="complex.flavor"
-        :list="elementList"
-        :bought-list="savedPerk.complex"
-        :placeholder="perk.anything"
-        class="text-base mx-1 w-42"
-        @click.stop
-      />
-    </template>
     <template #cost>
       (Cost: <span text="green-600 dark:green-300">{{ displayedCost }}</span>)
     </template>
@@ -35,10 +25,6 @@ const props = defineProps({
   savedPerk: {
     type: Object,
     default: () => ({}),
-  },
-  elementList: {
-    type: Array,
-    default: () => [],
   },
 })
 

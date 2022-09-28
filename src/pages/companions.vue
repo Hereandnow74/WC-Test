@@ -216,7 +216,7 @@ import { every, intersection, some, shuffle, repeat } from 'lodash-es'
 import { DBCharacter } from 'global'
 import { useStore } from '~/store/store'
 
-import { toggleShowAddCharacter, showAddCharacter, toggleShowFilterTags, showFilterTags, tagToggles, threeToggle, toggleShowReport, showReport, showSearchSettings, toggleSearchSetting, blackWhite, blackWhiteDisabled } from '~/logic'
+import { toggleShowAddCharacter, showAddCharacter, toggleShowFilterTags, showFilterTags, tagToggles, threeToggle, toggleShowReport, showReport, showSearchSettings, toggleSearchSetting, blackWhite, blackWhiteDisabled, andOr } from '~/logic'
 import { waifuTags, useAllChars } from '~/data/constants'
 import { usePlayStore } from '~/store/play'
 import { useSettings } from '~/logic/searchSettings'
@@ -380,7 +380,7 @@ const filteredCharacters = computed(() => {
 })
 
 const secondFilter = computed(() => {
-  const tagsI = (x: DBCharacter) => intersection(x.b, tagsInclude.value).length === tagsInclude.value.length
+  const tagsI = (x: DBCharacter) => andOr.value ? intersection(x.b, tagsInclude.value).length >= 1 : intersection(x.b, tagsInclude.value).length === tagsInclude.value.length
   const tagsE = (x: DBCharacter) => !some(x.b, x => tagsExclude.value.includes(x))
   const tier = (x: DBCharacter) => x.t >= minTier.value && x.t <= maxTier.value
   const blocked = (x: DBCharacter) => blackWhite.value ? blockedSet.value.has(x.w) : !blockedSet.value.has(x.w)

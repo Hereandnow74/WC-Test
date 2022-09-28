@@ -1,4 +1,61 @@
 [
+  
+  {
+    "desc": "To procure new Retinuers you normally have to Bind them yourself... But why couldn't the retinue do the job for you? Find targets and have existing Companions Bind them. ",
+    "objectives": [],
+    "budget": 0,
+    "loca": "Generic",
+    "source": "",
+    "reward": "The purchase price of every new Subj captured this way",
+    "image": "",
+    "author": "Ratcatcher",
+    "scope": "Standard",
+    "title": "Self-expanding harem",
+    "conditions": [
+      {
+        "value": "Your Companions find and Bind the target. Any method other than outright brainwashing is admitted"
+      },
+      {
+        "value": "No more than two Companions must deal with a target"
+      }
+    ],
+    "rewardType": "Credits",
+    "uid": "Hjsgp"
+  },
+  {
+    "image": "https://i.imgur.com/CLmqt8f.png",
+    "conditions": [
+      {
+        "value": "Soul Defense is mandatory, seriously don’t be a moron. Advanced sex skills are also highly recommended here."
+      },
+      {
+        "value": "Due to the recent reality changes by our dead contractor, all reality altering effects like Metashift and Time Travel are currently blocked and will remain so for 1 month after you have finished the mission."
+      },
+      {
+        "value": "Warning: Due to the large amount of material used for Metashift, we can only give a very broad overview of how ‘canon’ has been affected. Be vigilant for surprises."
+      },
+      {
+        "value": "You have a time limit of 4 days to finish the main mission, by that point the soul of our contractor will be too digested for recovery to be profitable."
+      }
+    ],
+    "loca": "Generic",
+    "reward": "Love Spot, Potpourri and the target’s capture value extra. ",
+    "scope": "Standard",
+    "rewardType": "Perks",
+    "desc": "Well, one of our newer contractors ended up getting himself killed. They decided that a normal world would not be entertaining enough and thus decided to use the Metashift feature, enforcing a number of changes on the world. Mostly in the form of various rather 'cultured' doujinshi from a wide variety of authors specializing in niche and 'extreme' fetishes. Unfortunately, in their hurry to enjoy this newly enhanced world they did not consider the threats present. He ended up trying to 'instant loss' a local that had been shifted into the role of ancient Succubus, not considering that such an being would naturally have a trail of victories before inevitably ending up as a cumdumpster. And well, he was not the one to break her streak. Having not bothered to pick the right defenses, the poor fool got his soul eaten. Unfortunately he did have some other potent abilities, which have been inherited by said Succubus. She has been using this to enhance her position as a ruler of the magical underworld. Some of our contractor's former waifus joined her while others joined the local anti-demon alliance. Your job is simple, capture the Succubus in question so we can recover the powers she had absorbed and the soul of our former contractor for processing and contractual reevaluation. If possible, we would also like you to capture the waifus that once belonged to our former contractor.",
+    "author": "Heaven Canceler",
+    "source": "",
+    "title": "Bad End Retrieval",
+    "budget": 345,
+    "objectives": [
+      {
+        "type": "Perks",
+        "reward": "50% of the target’s capture value extra. Plus 1 TS for a Demon Hunter and 1 TS for a Witch of your choice or 30 Credits.",
+        "value": "Recapture the 3 waifus that joined the local anti-demon organization and the 2 that work under the Succubus."
+      }
+    ],
+    "uid": "yAJXG"
+  },
   {
     "source": "",
     "conditions": [
@@ -20,7 +77,7 @@
     "title": "A Slave Market on This Wonderful World",
     "author": "Heaven Canceler",
     "reward": "A Refund for the basic Demiplane or Dungeons perk and 40 Credits. Your Slave Market is now considered part of your part of your Demiplane or Dungeon if it isn’t already.",
-    "desc": "Ah, the slave harem in another world, what a wonderful fantasy. The perfect way to get yourself a bunch of waifus that obediently serve your every whim. Unfortunately it appears that this particular world lacks this most delicious of institutions. As such we would like to hire you to change that. For the purpose of this mission we want you to set up a proper slave market and kickstart the slave economy. You must produce quality ‘products’ and sell them to customers you consider worth the material. Unfortunately, slavery is currently not legal within Belzerg kingdom or its neighbours. Fortunately it appears that there is some loopholes in the current laws on slavery and forced labor involving monsters as they are legally not considered people and fair to kill at will. So enslaving monsters appears to be perfectly legal and there is a good chance that you can at least argue that other nonhumans like Elves also fall under that. Though the latter is likely to give you more outrage then the former. Still, it is likely that these laws will be adjusted after enough time passes, so we recommend that you make preparations for that.",
+    "desc": "Ah, the slave harem in another world, what a wonderful fantasy. The perfect way to get yourself a bunch of waifus that obediently serve your every whim. Unfortunately it appears that this particular world lacks this most delicious of institutions. As such we would like to hire you to change that. For the purpose of this mission we want you to set up a proper slave market and kickstart the slave economy. You must produce quality ‘products’ and sell them to customers you consider worth the material. Unfortunately, slavery is currently not legal within Belzerg kingdom or its neighbors. Fortunately it appears that there is some loopholes in the current laws on slavery and forced labor involving monsters as they are legally not considered people and fair to kill at will. So enslaving monsters appears to be perfectly legal and there is a good chance that you can at least argue that other nonhumans like Elves also fall under that. Though the latter is likely to give you more outrage then the former. Still, it is likely that these laws will be adjusted after enough time passes, so we recommend that you make preparations for that.",
     "rewardType": "Perks",
     "objectives": [
       {
@@ -265,7 +322,7 @@
     "author": "irugaa0",
     "rewardType": "Perks",
     "scope": "Standard",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1021142419116400650/Screenshot_3.jpg",
     "title": "Blessing in this world",
     "source": "",
     "reward": "Template Stacking I&II of your choice.",
@@ -432,7 +489,7 @@
         "value": "Survive until the events of The Titan's Curse."
       }
     ],
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1021141934837878784/the_big_three_s_children_by_aireenscolor_dcj2v1g-fullview.jpg",
     "desc": "Go to the Riordanverse during the events of Percy Jackson, and change things as one of the children of the big three. ",
     "rewardType": "Other",
     "uid": "UPjKr"
@@ -472,7 +529,7 @@
         "value": "Must kill all other contractors in the specified time. (60 Days)"
       }
     ],
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1021141548026572841/7cfbf6114f9fb1260d7f19fd167bf2c5.jpg",
     "reward": "1 tier-8 companion of your choice.",
     "desc": "A unique mission was issued to the company, a large-scale PVP with 20 contractors was arranged, and you must be the last one standing.",
     "budget": 0,
@@ -566,7 +623,7 @@
     "loca": "One Piece",
     "budget": 0,
     "rewardType": "Credits",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1021141303712546976/Zoro_vs._100_Bounty_Hunters.webp",
     "conditions": [
       {
         "value": "You can select up to four tier-5 or lower to accompany you in this mission."
@@ -594,7 +651,7 @@
     "budget": 0,
     "reward": "50",
     "scope": "Grand",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1021141039916011590/wp7517243.webp",
     "loca": "One Piece",
     "objectives": [
       {
@@ -681,7 +738,7 @@
   },
   {
     "source": "",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1021140651921903748/df6fpih-b1c59667-8bb1-4b47-9b38-9df91d551c9f.jpg",
     "conditions": [
       {
         "value": "You must build a crew and had a reward high enough to be part of the worst generation by the time you all reach the Sabaody Archipelago around the same time or before the other members of the worst generation."
@@ -825,7 +882,7 @@
         "value": "Find a way to purify the Holy Grail and have Illya actually gain the True Magic of the Einzbern without dying or dooming humanity. "
       }
     ],
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1020005823264600155/42116112830c9b74d588084b3350d216.png",
     "reward": "Irisviel von Einzbern, Kiritsugu Emiya, Hisau Maya and Natalia Kaminski are revived and bound to you. 50% of the capture value of every Servant you defeated in combat.",
     "desc": "Illyasviel von Einzbern is expected to become master of servant Berserker during the 5th Holy Grail War. Unfortunately her fate during it rarely leads to a happy ending. At best she can hope to live a few more years beyond the war, dying young but at least with bittersweet happiness on her lips. At other times she sacrifices her life for the sake of her adopted sibling. Worst case she ends up dying painfully, heart ripped out after her protector got slaughtered trying to defend her. We of the Company are curious to see if a sponsored guardian of ours could do better, which is where you come in. For this mission you will replace Berserker as Illya's Servant and his job to protect her from danger. Your victory conditions are for her to survive the Grail War, have her health problems fixed and deal with her adopted sibling.",
     "loca": "Nasuverse",
@@ -1704,13 +1761,14 @@
     "uid": "QACWa"
   },
   {
+    "uid": "nkkhK",
+    "scope": "Quick",
+    "reward": "Index’s Walking Church artifact is repaired if destroyed and transforms into a blasphemous artifact instead. In addition to its defensive properties, it gains the power to corrupt any holy object, holy ground, inverting its normal properties. In addition, wearing it heavily strengthens any sin based magics and it can transform into tentacles at command. Index herself is granted a T5 TS I and TS II of a Demon or Fallen Angel of your choice. Alternatively, you may take 100 Credits instead.",
     "desc": "There is an innocent young girl, a self-proclaimed nun in-training who professes her faith in god and his divine virtues. Your job is to utterly and totally defile and corrupt that girl. Index Librorum Prohibitorum, she possesses the knowledge of 103.000 forbidden grimoires, each of which could turn a normal person to madness. As such, it isn’t going to be easy to corrupt her. You must steal her away from any guardians or people hunting her, bring her to a location and steadily break down her virtue. All the while avoiding capture by any of these that would protect her purity.",
     "title": "Index of Perverse Books",
-    "scope": "Quick",
-    "reward": "Index’s Walking Church artifact is repaired if destroyed and transforms into a blasphemous artifact instead. In addition to its defensive properties, it gains the power to corrupt any holy object, holy ground, inverting its normal properties. In addition, wearing it heavily strengthens any sin based magics and it can transform into tentacles at command. Index herself is granted a T5 TS of a Demon or Fallen Angel of your choice. Alternatively, you may take 100 Credits instead.",
-    "rewardType": "Other",
-    "budget": 360,
-    "objectives": [],
+    "source": "",
+    "loca": "To Aru series",
+    "author": "Heaven Canceler",
     "conditions": [
       {
         "value": "For the purpose of this mission Index is immune to bindings and lures are only half as effective."
@@ -1728,11 +1786,10 @@
         "value": "For the purpose of this mission, you and any retinue members helping you can not step on holy ground unless invited by Index or a member of clergy. You will also be repelled by holy objects, weakening your tier by 1 when in its presence and 2 when touching it. (Duration 30 minutes)"
       }
     ],
-    "source": "",
-    "loca": "To Aru series",
-    "author": "Heaven Canceler",
+    "objectives": [],
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/1015217362535972934/thumb-1920-742752.png",
-    "uid": "nkkhK"
+    "budget": 360,
+    "rewardType": "Other"
   },
   {
     "objectives": [],
@@ -6336,8 +6393,11 @@
     "desc": "It is better to Rule in Hell, then Serve in Heaven.\nThis is your mission statement.\nYou must acquire control of Hell, or a suitable hell dimension. The prior overlord of said Hell may not be captured or sold. Over 80% of the chosen plane MUST recognize you as ruler."
   },
   {
+    "loca": "Dark Souls",
     "author": "Heaven Canceler",
+    "reward": "Anime version Sailor Moon, Yuki Yuna and Kinomoto Sakura or 700 Credits",
     "budget": 750,
+    "rewardType": "Companions",
     "conditions": [
       {
         "value": "All bought retinue members must be part of your magical girl team. They must dress the part and act like magical girls at least when “on the job”."
@@ -6349,20 +6409,19 @@
         "value": "Somehow Rekindle the First Flame without anyone getting sacrificed to it."
       }
     ],
-    "desc": "Ah the world of Dark Souls. The ever repeating cycle of slow death and rebirth as another sacrifices himself for the good of all. Filled to the brim with tragedy, harsh and grim fantasy and horrifying monsters that can break all but the greatest of warriors. The curse of undeath gnawing at the minds and souls of people as they struggle to go on, truly the epitome of a tragic fantasy story. So why not throw in some girls in frilly dresses who make speeches about the power of love and justice? For this mission you must crash the normal thematics of the setting by creating a team of magical girls and lead them on the path to victory. To achieve victory, you must go through the canon plot of one of the Dark Souls storylines, defeating the enemies in a suitably magical girl-like fashion. Saving innocents, purifying the corrupted and making speeches about love and justice.",
     "image": "https://i.imgur.com/xJxnCwW.png",
-    "loca": "Dark Souls",
+    "scope": "Standard",
+    "desc": "Ah the world of Dark Souls. The ever repeating cycle of slow death and rebirth as another sacrifices himself for the good of all. Filled to the brim with tragedy, harsh and grim fantasy and horrifying monsters that can break all but the greatest of warriors. The curse of undeath gnawing at the minds and souls of people as they struggle to go on, truly the epitome of a tragic fantasy story. So why not throw in some girls in frilly dresses who make speeches about the power of love and justice? For this mission you must crash the normal thematics of the setting by creating a team of magical girls and lead them on the path to victory. To achieve victory, you must go through the canon plot of one of the Dark Souls storylines, defeating the enemies in a suitably magical girl-like fashion. Saving innocents, purifying the corrupted and making speeches about love and justice.",
+    "uid": "XJGcs",
+    "title": "In the Name Of The Moon!",
+    "source": "",
     "objectives": [
       {
-        "reward": "1 TS for Kyubey from Madoka Magica, 1 TS Kerberos from Sakura Cardcaptor",
+        "type": "Perks",
+        "reward": "1 TS I and TS II for any magical girl mascot of your choice.",
         "value": "Force a Boss monster to become your magical mascot."
       }
-    ],
-    "reward": "Anime version Sailor Moon, Yuki Yuna and Kinomoto Sakura or 700 Credits",
-    "scope": "Standard",
-    "source": "",
-    "title": "In the Name Of The Moon!",
-    "uid": "XJGcs"
+    ]
   },
   {
     "author": "Ratcatcher",
@@ -8112,8 +8171,8 @@
     "uid": "Bxxiq"
   },
   {
-    "author": "Heaven Canceler",
-    "budget": 250,
+    "desc": "This client has been deeply angered by the shameless teasing of this pretty shipgirl. Her sexy body, these delicious thighs and most importantly that glorious butt! This cannot be ignored, you must discipline this bunny.<br>Your job is to capture Le Malin and absolutely wreck her. Fuck her in every way you can think. Train her ass with butt plugs and anal beads until she will cum with barely a touch. Our client won't be satisfied until Le Malin has been utterly ruined as a woman.",
+    "loca": "Azur Lane",
     "conditions": [
       {
         "value": "Target may not be bound until the mission is finished"
@@ -8122,15 +8181,16 @@
         "value": "No Help from any waifus"
       }
     ],
-    "desc": "This client has been deeply angered by the shameless teasing of this pretty shipgirl. Her sexy body, these delicious thighs and most importantly that glorious butt! This cannot be ignored, you must discipline this bunny.<br>Your job is to capture Le Malin and absolutely wreck her. Fuck her in every way you can think. Train her ass with butt plugs and anal beads until she will cum with barely a touch. Our client won't be satisfied until Le Malin has been utterly ruined as a woman.",
+    "source": "",
+    "budget": 250,
+    "scope": "Quick",
+    "uid": "PdhDe",
+    "title": "Lustful Lapin",
     "image": "https://i.imgur.com/iHlQny3.png",
-    "loca": "Azur Lane",
+    "rewardType": "Other",
     "objectives": [],
     "reward": "1 magical onahole that is connected to a waifu of your choice and 25 Credits",
-    "scope": "Quick",
-    "source": "",
-    "title": "Lustful Lapin",
-    "uid": "PdhDe"
+    "author": "Heaven Canceler"
   },
   {
     "uid": "UT6W2",

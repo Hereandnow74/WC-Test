@@ -183,7 +183,7 @@ import {
 import { useTooltips } from '~/logic/misc'
 
 const worldTitles = ['Danger Rating', 'Difficulty Title', 'Budget']
-const worldData = WORLD_RATINGS.slice(0, 10).map(x => [x.rating, x.title, x.budget])
+const worldData = WORLD_RATINGS.slice(1, 11).map(x => [x.rating, x.title, x.budget])
 worldData.push([11, 'One', 'Tier X ticket'])
 
 const waifuTitles = ['Waifu Tier', 'Cost', 'Steal', 'Capture', 'Capture + Sale', 'Short']
