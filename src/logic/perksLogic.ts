@@ -51,6 +51,8 @@ export function addFreebies(freebies: object) {
           allForSave[key].value[ind].count += 1
         else
           allForSave[key].value[ind].count = 2
+        if (freebie.complex && allForSave[key].value[ind].complex)
+          allForSave[key].value[ind].complex = allForSave[key].value[ind].complex.concat(freebie.complex)
       }
     })
   }
@@ -491,7 +493,7 @@ export function removeAnyCompanion(uid: number) {
 }
 
 export function clearAll() {
-  baseBudget.value = 55
+  baseBudget.value = 0
   startingWorld.value = {
     worldName: 'No World',
     rating: 0,

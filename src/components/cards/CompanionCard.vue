@@ -21,6 +21,62 @@
           class="absolute top-1 right-8 hover:text-blue-400 cursor-pointer mix-blend-difference"
           @click="nsfw = !nsfw"
         >{{ nsfw ? 'NSFW' : 'SFW' }}</span>
+        <div v-if="changes[charData.uid]" class="absolute top-1 left-0 text-sm flex flex-col justify-start items-start gap-1 cursor-pointer" @click="showChange = true">
+          <div v-if="changes[charData.uid].image !== undefined" class="bg-green-600 rounded-r-lg px-2 shadow-md">
+            new image
+          </div>
+          <div v-if="changes[charData.uid].world" class="bg-blue-700 rounded-r-lg px-2 shadow-md">
+            new world
+          </div>
+          <div v-if="changes[charData.uid].sub" class="bg-blue-600 rounded-r-lg px-2 shadow-md">
+            new subcategory
+          </div>
+          <div v-if="changes[charData.uid].name" class="bg-gray-800 rounded-r-lg px-2 shadow-md">
+            new name
+          </div>
+          <div v-if="changes[charData.uid].tier" class="bg-orange-600 rounded-r-lg px-2 shadow-md">
+            new tier
+          </div>
+          <div v-if="changes[charData.uid].tags" class="bg-amber-400 text-gray-800 rounded-r-lg px-2 shadow-md">
+            changed tags
+          </div>
+          <div v-if="changes[charData.uid].nickname" class="bg-gray-600 rounded-r-lg px-2 shadow-md">
+            by {{ changes[charData.uid].nickname }}
+          </div>
+        </div>
+        <div v-if="showChange" class="absolute z-30 inset-0 flex gap-1 bg-gray-800 p-1 rounded h-full w-full">
+          <div class="h-full hover:bg-gray-700 rounded text-center flex items-center cursor-pointer" @click="showChange = false">
+            <akar-icons:arrow-back-thick-fill />
+          </div>
+          <div>
+            <div v-if="changes[charData.uid].source !== undefined" class="">
+              <strong>Old image</strong>: <a class="text-blue-500 underline" :href="changes[charData.uid].source" target="_blank" rel="noopener noreferrer">link</a>
+            </div>
+            <div v-if="changes[charData.uid].world" class="">
+              <strong>Old World</strong>: {{ changes[charData.uid].world }}
+            </div>
+            <div v-if="changes[charData.uid].sub" class="">
+              <strong>Old subcategory</strong>: {{ changes[charData.uid].sub }}
+            </div>
+            <div v-if="changes[charData.uid].name" class="">
+              <strong>Old name</strong>: {{ changes[charData.uid].name }}
+            </div>
+            <div v-if="changes[charData.uid].tier" class="">
+              <strong>Old tier</strong>: {{ changes[charData.uid].tier }}
+            </div>
+            <div v-if="changes[charData.uid].tags" class="whitespace-nowrap">
+              <div class="flex flex-wrap gap-1 text-sm">
+                <strong>Changed tags:</strong>
+                <div v-for="tag in changes[charData.uid].tags" :key="tag" class="bg-gray-700 rounded px-0.5" :class="[charData.tags.includes(tag) ? 'text-green-500' : 'text-red-500']">
+                  {{ waifuTags[tag].tag }}
+                </div>
+              </div>
+            </div>
+            <div v-if="changes[charData.uid].nickname" class="">
+              by {{ changes[charData.uid].nickname }}
+            </div>
+          </div>
+        </div>
         <div
           class="absolute bottom-0 py-1 w-full flex justify-center gap-4 transition-opacity duration-500 opacity-0 bg-black bg-opacity-25"
           :class="{'opacity-100': inFocus}"
@@ -100,8 +156,8 @@
           <span>{{ charData.world }}</span>
           <span v-if="charData.sub" class="text-blue-200"> - {{ charData.sub }}</span>
         </div>
-        <div v-if="charData.nickname" class="ml-2 mb-1 text-xs text-gray-400 leading-none">
-          by @{{ charData.nickname }}
+        <div v-if="charData.nickname" class="ml-2 mb-1 text-xs text-gray-400 leading-none" :title="nicknames.includes(charData.nickname) ? 'Patron' : ''">
+          by <span :class="{'text-red-400 cursor-help font-semibold': nicknames.includes(charData.nickname)}">{{ charData.nickname }}</span>
         </div>
         <div v-if="showTiers" class="flex justify-between px-2">
           <div class="text-gray-400 justify-self-start">
@@ -149,7 +205,7 @@
 <script lang='ts' setup>
 import { Character } from 'global'
 import { findIndex, random } from 'lodash-es'
-import { CHAR_COSTS, defTags, PLACEHOLDER_NO_IMAGE, waifusThatHasPerk, waifuTags } from '~/data/constants'
+import { CHAR_COSTS, defTags, PLACEHOLDER_NO_IMAGE, useAllChars, waifusThatHasPerk, waifuTags, nicknames } from '~/data/constants'
 import { lazyLoadSingleImg, tagToggles, showDefenseTags } from '~/logic'
 import { buyCompanion, captureCompanion, yoinkCompanion, slightlyCompanion } from '~/logic/waifuLogic'
 import { useStore } from '~/store/store'
@@ -190,6 +246,8 @@ const {
   settings, favoritesObject,
 } = useStore()
 
+const { changes } = useAllChars()
+
 const infoIcon = ref<EventTarget | null>(null)
 const editMenu = ref<EventTarget | null>(null)
 const showMenu = ref(false)
@@ -202,6 +260,7 @@ const modalImage = ref('')
 const showModal = ref(false)
 const usedModal = ref(false)
 const nsfw = ref(settings.value.nsfw)
+const showChange = ref(false)
 
 const cardEl = ref<HTMLImageElement| null>(null)
 const companionEl = ref<HTMLImageElement| null>(null)

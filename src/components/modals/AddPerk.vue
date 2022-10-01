@@ -57,7 +57,7 @@
         />
       </div>
     </div>
-    <LocalPerksManager v-if="showPerksManager" @click="togglePerksManager" @sendDelete="deletePerk" @sendEdit="editPerk" />
+    <LocalPerksManager v-if="showPerksManager" @click="showPerksManager = false" @sendDelete="deletePerk" @sendEdit="editPerk" />
   </Modal>
 </template>
 

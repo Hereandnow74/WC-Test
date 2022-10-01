@@ -372,7 +372,7 @@ export const symbioteBinding: PerkFull[] = [
     <p>The first swarm queen, whether your original or a support queen, to consume 20 liters of Imperial Honey will become your swarm’s Empress, ranked above all other queens in your swarm’s hierarchy. This can only happen once, so make it count. The Empress gains +1 to her effective tier, stacking with the queen bonus. If she is already Tier 10, her power will double, but her effective tier will not increase any further. These permanent benefits will also apply to a swarm king who has this perk and consumes enough honey.</p>
     <p>Any clutch that an Empress lays, whether personally or while installed in a Lair, will hatch in half of the usual time. If a support Queen qualifies for her own symbiote theme as per the regular rules, but your Empress has already imposed her own theme on the entire swarm, the two themes will hybridize in a natural way, but only in the lesser queen and her subordinates.</p>
     `,
-    whitelist: ['Hatchery'],
+    whitelist: ['Hive', 'Evolution Chamber', 'Royal Honey'],
   },
   {
     uid: 'yhrPM',
@@ -523,6 +523,7 @@ export const symBuildings: PerkFull[] = [
     <p>The Nest is the primary production building for non-sapient air units. Upgrading a Den to a Nest whitelist an additional 70 Devotion Points as construction material, minus any recycled from other swarm structures within the Nest’s new footprint. After 48 hours of new growth, a new Nest will reach its maximum size of 65 meters tall, and an additional 10 vertical meters of basements, with a 2,100 square meter footprint.</p>
     <p>Nests have much the same spawning interface as Lairs, with a specialized organ that a mature female subject can install herself into and create new eggs. A Nest’s eggs are limited to non-larval air units only, whether the pre-designed options, local species assimilated into your swarm, or creatures that your geneticists and bioengineers have custom-designed at an Evolution Chamber.</p>
     `,
+    whitelist: ['Lair'],
   },
   {
     uid: 'eJ8Gw',
@@ -536,6 +537,7 @@ export const symBuildings: PerkFull[] = [
     <p>The Reef is the primary production building for non-sapient sea units. Upgrading a Den to a Reef whitelist water access and an additional 70 Devotion Points as construction material, minus any recycled from other swarm structures within the Reef’s new footprint. After 48 hours of new growth, a new Reef will reach its maximum size of 20 meters tall, and an additional 10 vertical meters of basements, with a 5,250 square meter footprint.</p>
     <p>Reefs have much the same spawning interface as Lairs, with a specialized organ that a mature female subject can install herself into and create new eggs. A Reef’s eggs are limited to non-larval sea units only, whether the pre-designed options, local species assimilated into your swarm, or creatures that your geneticists and bioengineers have custom designed at an Evolution Chamber.</p>
     `,
+    whitelist: ['Lair'],
   },
   {
     uid: 'tr0zP',
@@ -586,6 +588,7 @@ export const symBuildings: PerkFull[] = [
     <p>After 9 days (216 hours) of growth, the new Colony will reach its full size at 100 meters tall, with an additional 40 vertical meters of basements underground, with a 50,000 square meter footprint. A finished Colony will spread Creep to about a 25 kilometer radius, centered on the spawning pool, reaching its maximum extent another 3 weeks (504 hours) after construction.</p>
     <p>Once you’ve purchased access to Colonies, you and all symbiote-bound subjects will benefit from Psychic Talent, as if you had purchased Talent Sharing (Psychic). (Take Psychic Talent and Talent Sharing (Psychic) for free.)</p>
     `,
+    needed: 2,
     whitelist: ['Evolution Chamber', 'Burrow', 'Nest', 'Reef'],
   },
   {

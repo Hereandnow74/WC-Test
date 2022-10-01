@@ -54,17 +54,13 @@
         :edit-mode="isRetinueEdit"
         class="mb-2"
       />
-      <CoupleCardMini
-        v-if="isCouple"
-        :edit-mode="isRetinueEdit"
-        class="mb-2"
-      />
       <div
         ref="waifuList"
         class="grid gap-2 min-h-0"
         :class="orientation ? 'grid-cols-2': 'grid-cols-1'"
       >
-        <CompanionCardMini
+        <component
+          :is="char.spouse ? CoupleCardMini : CompanionCardMini"
           v-for="char in companionsDataChunks[currentPage]"
           :key="char.uid"
           :char="char"
@@ -109,6 +105,8 @@ import { lazyLoadImg, orientation, isRetinueEdit, threeToggle } from '~/logic'
 import { useStore } from '~/store/store'
 import { waifu_perks, DLCwaifu_perks } from '~/data/waifu_perks'
 import { confirmDialog } from '~/logic/dialog'
+import CompanionCardMini from '~/components/cards/CompanionCardMini.vue'
+import CoupleCardMini from '~/components/cards/CoupleCardMini.vue'
 
 const { companions, talentPerks, genericWaifuPerks, waifuPerks, isCouple } = useStore()
 

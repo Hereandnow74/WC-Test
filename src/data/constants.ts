@@ -1,4 +1,4 @@
-import { assign, countBy, isArray, uniq } from 'lodash-es'
+import { assign, countBy, isArray, isEmpty, uniq } from 'lodash-es'
 import { DBCharacter, DBWorld, PerkFull } from 'global'
 import { DLCgenericPerks, DLChomes, DLCperks, DLCtalents, DLCheritages, DLClureExpansions, DLCbindings, DLClures, DLCotherControls, DLCridePerks, DLCintensity } from './DLCs'
 import { DLCRides, rides } from './rides'
@@ -18,6 +18,27 @@ import { useChargenStore } from '~/store/chargen'
 const { userWorlds, localUserWorlds, localUserCharacters } = useStore()
 
 export const VERSION = '0.8'
+
+export const nicknames = [
+  'Definitely not Dio',
+  'Darin E.',
+  'cameron ngo',
+  'Despin',
+  'Templar9999',
+  'Cyrus',
+  'Alex W.',
+  'TaiGambol',
+  'Bryce C.',
+  'Bobnewland',
+  'BenFang322',
+  'Jason C.',
+  'Cole',
+  'KatzSmile',
+  'Just_A_Knight',
+  'Kevin S.',
+  'Beatrix',
+  'Zerlestes',
+]
 
 export const WORLD_COLORS = ['bg-green-600', 'bg-teal-600', 'bg-cyan-600',
   'bg-blue-500', 'bg-indigo-500', 'bg-purple-500', 'bg-amber-600',
@@ -351,12 +372,20 @@ export const QUERIES = computed(() => {
 
 let chars: any = null
 let userChars: any = null
+const changes = ref({})
 
 export async function getChars(): Promise<DBCharacter[]> {
   if (!chars)
-    chars = (await import('~/data/characters.json')).default // chars = Object.values(await getCharsObject())
+    chars = (await import('~/data/characters.json')).default
   return chars
 }
+
+export async function getChanges() {
+  if (isEmpty(changes.value))
+    changes.value = (await import('~/data/whatChanged/newChanges.json')).default
+}
+
+getChanges()
 
 export async function getUserChars(): Promise<DBCharacter[]> {
   if (!userChars) {
@@ -408,6 +437,7 @@ export function useAllChars() {
     allCharsObject,
     allCharsComp,
     tagsCount,
+    changes,
   }
 }
 

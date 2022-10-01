@@ -149,6 +149,10 @@
       {
         "name": "Paradox, Normal Situation",
         "rating": 6
+      },
+      {
+        "name": "Paradox, Third Tartarus",
+        "rating": 8
       }
     ],
     "image": "https://pbs.twimg.com/media/Dr68fNsWoAA5Hbs.jpg"
@@ -267,7 +271,13 @@
   {
     "worldName": "Cyberpunk 2077",
     "rating": 7,
-    "image": "https://i.imgur.com/2BDGlCOl.jpeg"
+    "image": "https://i.imgur.com/2BDGlCOl.jpeg",
+    "condition": [
+      {
+        "name": "Edge Runners 2076",
+        "rating": 7
+      }
+    ]
   },
   {
     "worldName": "Darksiders",
@@ -2919,7 +2929,29 @@
     "worldName": "Hyperdimension Neptunia",
     "rating": 8,
     "image": "https://oyster.ignimgs.com/wordpress/stg.ign.com/2014/09/HDNRebirth_091014_1600.jpg",
-    "additional": "Visiting the setting or having any waifu from Neptunia will give you access to its leveling systems."
+    "additional": "Visiting the setting or having any waifu from Neptunia will give you access to its leveling systems.",
+    "condition": [
+      {
+        "name": "Hyperdimension",
+        "rating": 8
+      },
+      {
+        "name": "Ultradimension",
+        "rating": 7
+      },
+      {
+        "name": "Zero Dimension",
+        "rating": 9
+      },
+      {
+        "name": "Blanc + Neptunia VS Zombies",
+        "rating": 5
+      },
+      {
+        "name": "Alsgard",
+        "rating": 8
+      }
+    ]
   },
   {
     "worldName": "The Gamer",
@@ -4676,33 +4708,259 @@
     "rating": 7,
     "image": "https://cdn.vox-cdn.com/thumbor/UcV4hcK_EbiaIfez6cW7LccgeMg=/1400x1050/filters:format(png)/cdn.vox-cdn.com/uploads/chorus_asset/file/22637954/The_Winx_S6_Trailer.png"
   },
-  {"worldName":"Dead Tube","rating":4,"image": "https://cdn.discordapp.com/attachments/925963686433132644/1012366628652056716/1466268786.jpg"},
-  {"worldName":"Miss Guillotine","image": "https://cdn.discordapp.com/attachments/925963686433132644/1012366800341708830/miss_guillotine_12203.jpg", "rating":6,"condition":[{"name":"Canon Start","rating":6},{"rating":6,"name":"Pre-Canon (Pre-Revelator Julie)"}]},
-  {"worldName":"Ragnarok ","rating":6,"image":"https://cdn.discordapp.com/attachments/1010632867639996469/1011065372226637875/unknown.png"},
-  {"worldName":"Shrek","rating":3,"image":"https://images8.alphacoders.com/679/679877.jpg","condition":[{"name":"Rumpelstiltskin AU","rating":3}]},
-  {"worldName":"Thundercats","rating":7,"image":"https://i.imgur.com/6QjrKEN.jpeg"},
-  {"worldName":"Baki The Grappler","rating":5,"image":"https://cdn.donmai.us/sample/c4/11/__hanma_yuujirou_hanma_baki_orochi_doppo_retsu_kaiou_hanayama_kaoru_and_1_more_grappler_baki_drawn_by_kazama_raita__sample-c4111ef4ddb5dcefeddb041aa2ee0a10.jpg"},
-  {"worldName":"Dishonored ","rating":5,"image":"https://m.media-amazon.com/images/M/MV5BYmQ2ZjZiZDAtZGNhZC00ZDI5LTkzMWQtMTA2MTFlNjkyODc0XkEyXkFqcGdeQXVyMzY0MTE3NzU@._V1_.jpg"},
-  {"worldName":"Futabu!","rating":1,"image":"https://cdn.discordapp.com/attachments/925963686433132644/1015321626402898000/5qWohbsqEAJhgJZtH2xcLhhL5vw.jpg"},
-  {"worldName":"Houseki no Kuni","rating":4,"image":"https://cdn.discordapp.com/attachments/925963686433132644/1018584600601182338/Screenshot_7.jpg","additional":"All human scale sophonts within Houseki no Kuni are fully human compatible. Gems have complete human anatomy, but are still made of their respective gemstone and don't require any of it.\nAll gems become able to soften their bodies to become more like actual flesh."},
-  {"worldName":"Seirei Gensouki","rating":4,"image":"https://cdn.donmai.us/sample/64/25/__celia_claire_rio_ayase_miharu_and_aishia_seirei_gensouki__sample-64257bbe9771cb3b4f4429b16e1316ee.jpg"},
-  {"worldName":"The 100","rating":4,"image":"https://images8.alphacoders.com/108/1082036.jpg"},
-  {"worldName":"A Will Eternal","rating":10, "image":"https://cdn.discordapp.com/attachments/925963686433132644/1018582881322401853/YNYH2-scaled-1-1825x1080.jpg"},
-  {"worldName":"Elf-san wa Yaserarenai","rating":1,"image":"https://i.imgur.com/MjAU1Oh.png"},
-  {"worldName":"Fable","rating":5,"image":"https://cdn.discordapp.com/attachments/925963686433132644/1018583701682147339/615952.jpg","condition":[{"rating":7,"name":"Fable 3"}]},
-  {"worldName":"Fruits basket","rating":1,"image":"https://cdn.discordapp.com/attachments/925963686433132644/1018583380675268638/2683583.webp"},
-  {"worldName":"How to Treat a Lady Knight Right","rating":4,"image":"https://cdn.discordapp.com/attachments/925963686433132644/1018584087428075520/ERjCswmU8AAh7dU.jpg"},
-  {"worldName":"Hunger Games","rating":3,"image":"https://wallpapercave.com/wp/wp4340543.jpg","condition":[{"name":"Pre-Panem Era","rating":4},{"name":"The Panem Era","rating":3},{"name":"The First Rebellion","rating":4},{"name":"The Hunger Games Era ","rating":3},{"rating":4,"name":"The Second Rebellion"},{"rating":3,"name":"The Republic Era"}]},
-  {"worldName":"Ori and the Blind Forest","rating":3,"image":"https://cdn.discordapp.com/attachments/925963686433132644/1018583114055962754/thumb-1920-581580.jpg"},
-  {"worldName":"The Last of Us","rating":4,"image":"https://theflyspeaks.files.wordpress.com/2014/10/thelastofus_banner.jpg"},
-  {"worldName":"Battle Angel Alita/Gunmm","rating":7,"image":""},
-  {"worldName":"Delicious in Dungeon","rating":6,"image":""},
-  {"worldName":"He Who Fights Monsters","rating":10,"image":""},
-  {"worldName":"Pandora Hearts","rating":5,"image":""},
-  {"worldName":"Sidonia no Kishi","rating":8,"image":""},
-  {"worldName":"Xiaolin Showdown","rating":4,"image":""},
-  {"worldName":"A Practical Guide to Evil","rating":8,"image":"https://external-preview.redd.it/wSWYkgCdqBm_tXwawQ2Kta3FK4lDp-LbJZiXD1cBUco.jpg?auto=webp&s=eb61bc69d4555f502834ade1467d7b6fa7fd6292"},
-  {"worldName":"Call of Duty","rating":4,"condition":[{"rating":4,"name":"Modern Warfare"},{"rating":4,"name":"Black Ops"},{"rating":5,"name":"Zombie"}]},
-  {"worldName":"My Dress Up Darling","rating":1,"image":"https://external-preview.redd.it/IO5mFZACU1Q07sL1-2SlS1dFiPWFDa7Zt4rFwLaENgs.jpg?auto=webp&s=c007b0e96e90e6013e20eb74a0486bc79b826a3f"},
-  {"worldName":"Valiant","rating":5,"image":"https://i.imgur.com/QuBsKB5.jpg"}
+  {
+    "worldName": "Dead Tube",
+    "rating": 4,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1012366628652056716/1466268786.jpg"
+  },
+  {
+    "worldName": "Miss Guillotine",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1012366800341708830/miss_guillotine_12203.jpg",
+    "rating": 6,
+    "condition": [
+      {
+        "name": "Canon Start",
+        "rating": 6
+      },
+      {
+        "rating": 6,
+        "name": "Pre-Canon (Pre-Revelator Julie)"
+      }
+    ]
+  },
+  {
+    "worldName": "Ragnarok ",
+    "rating": 6,
+    "image": "https://cdn.discordapp.com/attachments/1010632867639996469/1011065372226637875/unknown.png"
+  },
+  {
+    "worldName": "Shrek",
+    "rating": 3,
+    "image": "https://images8.alphacoders.com/679/679877.jpg",
+    "condition": [
+      {
+        "name": "Rumpelstiltskin AU",
+        "rating": 3
+      }
+    ]
+  },
+  {
+    "worldName": "Thundercats",
+    "rating": 7,
+    "image": "https://i.imgur.com/6QjrKEN.jpeg"
+  },
+  {
+    "worldName": "Baki The Grappler",
+    "rating": 5,
+    "image": "https://cdn.donmai.us/sample/c4/11/__hanma_yuujirou_hanma_baki_orochi_doppo_retsu_kaiou_hanayama_kaoru_and_1_more_grappler_baki_drawn_by_kazama_raita__sample-c4111ef4ddb5dcefeddb041aa2ee0a10.jpg"
+  },
+  {
+    "worldName": "Dishonored ",
+    "rating": 5,
+    "image": "https://m.media-amazon.com/images/M/MV5BYmQ2ZjZiZDAtZGNhZC00ZDI5LTkzMWQtMTA2MTFlNjkyODc0XkEyXkFqcGdeQXVyMzY0MTE3NzU@._V1_.jpg"
+  },
+  {
+    "worldName": "Futabu!",
+    "rating": 1,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1015321626402898000/5qWohbsqEAJhgJZtH2xcLhhL5vw.jpg"
+  },
+  {
+    "worldName": "Houseki no Kuni",
+    "rating": 4,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1018584600601182338/Screenshot_7.jpg",
+    "additional": "All human scale sophonts within Houseki no Kuni are fully human compatible. Gems have complete human anatomy, but are still made of their respective gemstone and don't require any of it.\nAll gems become able to soften their bodies to become more like actual flesh."
+  },
+  {
+    "worldName": "Seirei Gensouki",
+    "rating": 4,
+    "image": "https://cdn.donmai.us/sample/64/25/__celia_claire_rio_ayase_miharu_and_aishia_seirei_gensouki__sample-64257bbe9771cb3b4f4429b16e1316ee.jpg"
+  },
+  {
+    "worldName": "The 100",
+    "rating": 4,
+    "image": "https://images8.alphacoders.com/108/1082036.jpg"
+  },
+  {
+    "worldName": "A Will Eternal",
+    "rating": 10,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1018582881322401853/YNYH2-scaled-1-1825x1080.jpg"
+  },
+  {
+    "worldName": "Elf-san wa Yaserarenai",
+    "rating": 1,
+    "image": "https://i.imgur.com/MjAU1Oh.png"
+  },
+  {
+    "worldName": "Fable",
+    "rating": 5,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1018583701682147339/615952.jpg",
+    "condition": [
+      {
+        "rating": 7,
+        "name": "Fable 3"
+      }
+    ]
+  },
+  {
+    "worldName": "Fruits basket",
+    "rating": 1,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1018583380675268638/2683583.webp"
+  },
+  {
+    "worldName": "How to Treat a Lady Knight Right",
+    "rating": 4,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1018584087428075520/ERjCswmU8AAh7dU.jpg"
+  },
+  {
+    "worldName": "Hunger Games",
+    "rating": 3,
+    "image": "https://wallpapercave.com/wp/wp4340543.jpg",
+    "condition": [
+      {
+        "name": "Pre-Panem Era",
+        "rating": 4
+      },
+      {
+        "name": "The Panem Era",
+        "rating": 3
+      },
+      {
+        "name": "The First Rebellion",
+        "rating": 4
+      },
+      {
+        "name": "The Hunger Games Era ",
+        "rating": 3
+      },
+      {
+        "rating": 4,
+        "name": "The Second Rebellion"
+      },
+      {
+        "rating": 3,
+        "name": "The Republic Era"
+      }
+    ]
+  },
+  {
+    "worldName": "Ori and the Blind Forest",
+    "rating": 3,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1018583114055962754/thumb-1920-581580.jpg"
+  },
+  {
+    "worldName": "The Last of Us",
+    "rating": 4,
+    "image": "https://theflyspeaks.files.wordpress.com/2014/10/thelastofus_banner.jpg"
+  },
+  {
+    "worldName": "Battle Angel Alita/Gunmm",
+    "rating": 7,
+    "image": ""
+  },
+  {
+    "worldName": "Delicious in Dungeon",
+    "rating": 6,
+    "image": ""
+  },
+  {
+    "worldName": "He Who Fights Monsters",
+    "rating": 10,
+    "image": ""
+  },
+  {
+    "worldName": "Pandora Hearts",
+    "rating": 5,
+    "image": ""
+  },
+  {
+    "worldName": "Sidonia no Kishi",
+    "rating": 8,
+    "image": ""
+  },
+  {
+    "worldName": "Xiaolin Showdown",
+    "rating": 4,
+    "image": ""
+  },
+  {
+    "worldName": "A Practical Guide to Evil",
+    "rating": 8,
+    "image": "https://external-preview.redd.it/wSWYkgCdqBm_tXwawQ2Kta3FK4lDp-LbJZiXD1cBUco.jpg?auto=webp&s=eb61bc69d4555f502834ade1467d7b6fa7fd6292"
+  },
+  {
+    "worldName": "Call of Duty",
+    "rating": 4,
+    "condition": [
+      {
+        "rating": 4,
+        "name": "Modern Warfare"
+      },
+      {
+        "rating": 4,
+        "name": "Black Ops"
+      },
+      {
+        "rating": 5,
+        "name": "Zombie"
+      }
+    ]
+  },
+  {
+    "worldName": "My Dress Up Darling",
+    "rating": 1,
+    "image": "https://external-preview.redd.it/IO5mFZACU1Q07sL1-2SlS1dFiPWFDa7Zt4rFwLaENgs.jpg?auto=webp&s=c007b0e96e90e6013e20eb74a0486bc79b826a3f"
+  },
+  {
+    "worldName": "Valiant",
+    "rating": 5,
+    "image": "https://i.imgur.com/QuBsKB5.jpg"
+  },
+  {
+    "worldName": "Deus Ex",
+    "rating": 7,
+    "image": "https://i.imgur.com/t3astnk.jpeg"
+  },
+  {
+    "worldName": "Mobile Suit Gundam",
+    "rating": 8,
+    "image": "",
+    "condition": [
+      {
+        "name": "Universal Century",
+        "rating": 8
+      },
+      {
+        "rating": 8,
+        "name": "Cosmic Era"
+      },
+      {
+        "rating": 8,
+        "name": "After Colony"
+      }
+    ]
+  },
+  {
+    "worldName": "Nekopara ",
+    "rating": 1,
+    "image": "https://i.imgur.com/V7CGb5l.jpg"
+  },
+  {
+    "worldName": "Splatoon",
+    "rating": 3,
+    "image": "https://cdn.donmai.us/original/a2/c1/__callie_and_marie_splatoon_and_1_more_drawn_by_hou_ppo__a2c17ed61d7c04023d9c0f6e807497b5.png",
+    "condition": [
+      {
+        "name": "Octo Expansion ",
+        "rating": 4
+      },
+      {
+        "name": "Splatoon 1",
+        "rating": 3
+      },
+      {
+        "rating": 3,
+        "name": "Splatoon 2"
+      }
+    ]
+  }
 ]

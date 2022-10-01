@@ -162,7 +162,7 @@ const {
   startingWorld, startingOrigin, intensities, binding, homePerks, defensePerks,
   companions, heritage, talentPerks, waifuPerks, ridePerks, miscPerks, luresBought, genericWaifuPerks,
   companionsCost, baseBudget, companionProfit, companionProfitSold, otherPerks, loan, csr,
-  usedHeritageDiscount, talentsDiscount, defensesDiscount, defenseRetinueDiscount, patron, specificMods, specificModsCost, missionRewardCredits, pvpPerks,
+  usedHeritageDiscount, talentsDiscount, defensesDiscount, defenseRetinueDiscount, patron, specificMods, specificModsCost, missionRewardCredits, pvpPerks, baseBudgetAfter,
 } = useStore()
 
 const { activeChallenges } = useChallenges()
@@ -240,7 +240,7 @@ export function copyText() {
 
   full += intensities.value.length
     ? `Intensity \n${intensities.value.reduce((a, x) =>
-      a += `${x.title} +${x.intensity > 10 ? x.intensity : baseBudget.value * x.intensity} [${(fullCost.c += x.intensity > 10 ? x.intensity : baseBudget.value * x.intensity, fullCost.c)}]\n\n`
+      a += `${x.title} +${x.intensity > 10 ? x.intensity : baseBudgetAfter.value * x.intensity} [${(fullCost.c += x.intensity > 10 ? x.intensity : baseBudgetAfter.value * x.intensity, fullCost.c)}]\n\n`
     , '')}`
     : ''
 
@@ -317,5 +317,5 @@ export function buildImage() {
 
 export function randomString(n = 5): string {
   const chars = 'QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm1234567890'
-  return new Array(n).reduce(a => a += sample(chars), '')
+  return new Array(n).fill(0).reduce(a => a += sample(chars), '')
 }

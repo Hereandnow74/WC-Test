@@ -37,7 +37,7 @@
           All waifus of tiers 2-10 are discounted by one full rank.
         </div>
       </div>
-      <GenericPerkCard
+      <PerkCard
         v-for="bnd in symbioteBinding"
         :key="bnd.title"
         v-bind="{

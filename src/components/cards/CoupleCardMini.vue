@@ -4,25 +4,26 @@
   >
     <div class="flex gap-2 w-full">
       <img
-        :src="coupleOrigin.image || (char.i ? imageLink(char.i, char.u) : '/img/Contractor.jpg')"
-        :alt="coupleOrigin.character"
+        :src="char.image || '/img/Contractor.jpg'"
+        :data-src="char.image || '/img/Contractor.jpg'"
+        :alt="char.name"
         class="rounded object-cover max-h-[140px] max-w-[90px] object-top w-24"
       >
       <div class="flex flex-col w-full">
         <div class="flex">
-          <Input v-if="editMode" v-model="coupleOrigin.character" placeholder="Your name" />
+          <Input v-if="editMode" v-model="char.name" placeholder="Your name" />
           <span v-else>
-            {{ coupleOrigin.character }}
+            {{ char.name }}
             <span class="text-gray-500 text-sm">
-              (It's your spouse<span v-if="coupleOrigin.title"> as {{ coupleOrigin.title }}</span>)
+              (It's your SO<span v-if="char.origin"> as {{ char.origin }}</span>)
             </span>
           </span>
-          <span class="text-gray-500 ml-auto whitespace-nowrap"> Tier: <span class="text-green-500">{{ coupleOrigin.tier || 1 }}</span></span>
+          <span class="text-gray-500 ml-auto whitespace-nowrap"> Tier: <span class="text-green-500">{{ char.tier || 1 }}</span></span>
         </div>
-        <span v-if="coupleOrigin.w || char.w" class="text-gray-500">From: <span class="text-gray-400">{{ coupleOrigin.w || char.w }}</span></span>
+        <span v-if="char.world" class="text-gray-500">From: <span class="text-gray-400">{{ char.world }}</span></span>
         <div v-if="!infoMode" class="flex gap-2 mb-1 text-sm">
           <NumberInput
-            v-model="coupleOrigin.tier"
+            v-model="char.tier"
             theme="dark"
             :max="11"
             label="T"
@@ -30,26 +31,61 @@
             class="whitespace-nowrap"
           />
           <Variants
-            v-model="coupleOrigin.sex"
+            v-model="char.sex"
             theme="dark"
             label="Sex"
             :list="['F', 'M', 'O']"
           />
         </div>
+        <div>
+          <span
+            v-if="talentsList.length > 0"
+            class="text-gray-500"
+          >Talents:
+            <Enum
+              color="text-blue-400 hover:text-blue-300"
+              class="text-gray-100"
+              :list="talentsList"
+              empty-message="No Talents"
+            />
+          </span>
+          <span
+            v-if="perksList.length > 0"
+            class="text-gray-500"
+          >Perks:
+            <Enum
+              color="text-blue-400 hover:text-blue-300"
+              class="text-gray-100"
+              :list="perksList"
+              empty-message="No Perks"
+            />
+          </span>
+          <span
+            v-if="specificList.length > 0"
+            class="text-gray-500"
+          >Specific:
+            <Enum
+              color="text-blue-400 hover:text-blue-300"
+              class="text-gray-100"
+              :list="specificList"
+              empty-message="No Waifu Perks"
+            />
+          </span>
+        </div>
         <div v-if="editMode">
           <Input v-model="image" class="w-full" placeholder="Your image only from Imgur.com example: https://i.imgur.com/jm8eCCA.png" />
-          <Input v-model="coupleOrigin.w" class="w-full mt-1" placeholder="Place you're from" />
+          <Input v-model="char.world" class="w-full mt-1" placeholder="Place your SO from" />
           <div class="flex gap-1 mt-1">
-            <Select v-model="coupleOrigin.title" :options="['Drop-In', 'Extra', 'Substitute', 'Possess']" placeholder="Origin" />
+            <Select v-model="char.origin" :options="['Drop-In', 'Extra', 'Substitute', 'Possess']" placeholder="Origin" />
             <CharacterInput
-              v-if="['Substitute', 'Possess'].includes(coupleOrigin.title)"
-              idd="spouseCard"
+              v-if="['Substitute', 'Possess'].includes(char.origin)"
+              idd="charCard"
               placeholder="Target Name"
               class="flex-grow"
-              @updateUID="(uid) => coupleOrigin.uid = uid"
-              @updateTier="(tier) => {coupleOrigin.tier = tier; coupleOrigin.cost = CHAR_COSTS[tier] || 1}"
+              @updateUID="(uid: number) => char.uid = uid"
+              @updateTier="(tier: number) => {char.tier = tier; char.price=CHAR_COSTS[tier]}"
             />
-            <Input v-if="['Extra', 'Substitute', 'Possess'].includes(coupleOrigin.title)" v-model="coupleOrigin.cost" class="w-28" placeholder="Cost" />
+            <Input v-if="['Extra', 'Substitute', 'Possess'].includes(char.origin)" v-model="char.price" class="w-28" placeholder="Cost" />
           </div>
         </div>
       </div>
@@ -59,12 +95,14 @@
 
 <script lang="ts" setup>
 import { findIndex } from 'lodash-es'
+import type { PropType } from 'vue'
 import Input from '../basic/Input.vue'
 import { CHAR_COSTS, useAllChars } from '~/data/constants'
 import { imageLink } from '~/logic'
 import { useStore } from '~/store/store'
+import { SavedChar } from '~/store/chargen'
 
-defineProps({
+const props = defineProps({
   editMode: {
     type: Boolean,
     default: false,
@@ -73,25 +111,43 @@ defineProps({
     type: Boolean,
     default: false,
   },
+  char: {
+    type: Object as PropType<SavedChar>,
+    default: () => {},
+  },
+  perks: {
+    type: Object,
+    default: () => ({}),
+  },
 })
-const { flags, miscPerks, coupleOrigin } = useStore()
-
-const noUC = computed(() => findIndex(miscPerks.value, { title: 'Universal Calibration' }) === -1)
 
 const { allCharsObject } = useAllChars()
 
-const image = ref(coupleOrigin.value.image || '')
+const image = ref('')
 
-const char = computed(() => allCharsObject.value[coupleOrigin.value.uid] || {})
+const talentsList = computed(() => {
+  return props.perks.talents || []
+})
+const perksList = computed(() => {
+  return props.perks.perks || []
+})
+const specificList = computed(() => {
+  return props.perks.specific || []
+})
 
-if (!coupleOrigin.value.sex)
-  coupleOrigin.value.sex = char.value.b ? (char.value.b?.includes('F') ? 'F' : 'M') : 'M'
-
-watch(char, () => char.value.b ? coupleOrigin.value.sex = char.value.b.includes('F') ? 'F' : 'M' : null)
+watch(() => props.char.uid, () => {
+  if (props.char.uid !== 777777777) {
+    const char = allCharsObject.value[props.char.uid]
+    if (char) {
+      props.char.image = imageLink(char.i, char.u)
+      props.char.sex = char.b.includes('F') ? 'F' : 'M'
+    }
+  }
+})
 
 watch(image, () => {
   if (image.value.startsWith('https://i.imgur.com/') || /.*\.imagebam\.com.*/.test(image.value))
-    coupleOrigin.value.image = image.value
+    props.char.image = image.value
 })
 
 </script>

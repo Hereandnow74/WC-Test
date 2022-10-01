@@ -1,6 +1,6 @@
 <template>
-  <div class="max-w-screen-md mt-8 lg:pl-0 pb-8 text-lg">
-    <div class="bg-green-100 dark:bg-green-900 p-4 shadow-lg rounded dark:shadow-gray-800 flex flex-col gap-4">
+  <div class="max-w-screen-md mt-2 lg:pl-0 mb-8 text-lg">
+    <div class="bg-green-100 dark:bg-green-900 p-4 shadow-md rounded flex flex-col gap-4">
       <h3 class="text-2xl text-center">
         About Page
       </h3>
@@ -65,30 +65,9 @@
 
 <script lang="ts" setup>
 import { countBy } from 'lodash-es'
-import { getUserChars } from '~/data/constants'
+import { getUserChars, nicknames } from '~/data/constants'
 
 const topUsers = ref<[string, number][]>([])
-
-const nicknames = [
-  'Definitely not Dio',
-  'Darin E.',
-  'cameron ngo',
-  'Despin',
-  'Templar9999',
-  'Cyrus',
-  'Alex W.',
-  'TaiGambol',
-  'Bryce C.',
-  'Bobnewland',
-  'BenFang322',
-  'Jason C.',
-  'Cole',
-  'KatzSmile',
-  'Just_A_Knight',
-  'Kevin S.',
-  'Beatrix',
-  'Zerlestes',
-]
 
 getUserChars().then(x => Object.entries(countBy(x, c => c.k))
   .filter(x => x[0] !== 'undefined')

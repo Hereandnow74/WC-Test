@@ -32,7 +32,7 @@
         </div>
       </div>
     </div>
-    <CodeEditor v-if="showCodeEditor" :code="currentCode" @click="toggleCodeEditor" />
+    <CodeEditor v-if="showCodeEditor" :code="currentCode" @click="showCodeEditor = false" />
   </Modal>
 </template>
 

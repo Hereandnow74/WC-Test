@@ -6,6 +6,18 @@
       </h2>
       <div>
         <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          28 September 2022
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~130 new user submitted characters, 4 new worlds, new missions.</li>
+          <li>New Symbiote binding.</li>
+          <li>New filter for changed in the current update companions.</li>
+          <li></li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
           23 September 2022
         </h3>
         <ul class="list-decimal list-inside">

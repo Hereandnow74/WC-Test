@@ -25,7 +25,7 @@ if (params.load?.length)
 function storeType<T>(name: string, value: T) {
   return mode.value === 'local' ? useStorage<T>(name, value) : ref<T>(value)
 }
-const baseBudget = storeType('baseBudget', 55)
+const baseBudget = storeType('baseBudget', 0)
 
 const startingWorld = storeType<World>('startingWorld', {
   worldName: 'No World',

@@ -15,7 +15,7 @@
 <script lang="ts" setup>
 import { showSideMenu, showIntro } from '~/logic'
 
-const titles = ['World', 'Intensity', 'Origin', 'Binding & Lure', 'Heritage', 'Talents & Perks', 'Companions']
-const routes = ['world', 'intensity', 'origin', 'bindings', 'heritage', 'talents', 'companions']
+const titles = ['Rules', 'World', 'Intensity', 'Origin', 'Binding & Lure', 'Heritage', 'Talents & Perks', 'Companions']
+const routes = ['', 'world', 'intensity', 'origin', 'bindings', 'heritage', 'talents', 'companions']
 
 </script>

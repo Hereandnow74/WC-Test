@@ -41,7 +41,7 @@
       <PerkCard
         v-for="hr in heritageByTree[activeTree]"
         :key="hr.title"
-        :class="heritageAvailable(hr) ? heritageColors[hr.tree]: 'bg-gray-200 dark:bg-gray-600'"
+        :class="heritageAvailable(hr) ? heritageColors[hr.tree] || heritageColors['None']: 'bg-gray-200 dark:bg-gray-600'"
         :perk="hr"
         :is-active="!!allHeritages[hr.title]"
         :saved-perk="allHeritages[hr.title]"
@@ -112,6 +112,7 @@
 
 import { onBeforeRouteUpdate } from 'vue-router'
 import { isArray, mergeWith, countBy } from 'lodash-es'
+import { PerkFull } from 'global'
 import { desc, Heritage } from '~/data/heritage'
 import { useTooltips } from '~/logic/misc'
 import { useStore } from '~/store/store'
@@ -139,12 +140,12 @@ const heritagesDLC = computed(() => !settings.value.allChosenAuthors[0]
 
 const heritageByTree = computed(() => {
   const res = {
-    Dragon: [] as Heritage[],
-    Transhuman: [] as Heritage[],
-    Outsider: [] as Heritage[],
-    Other: [] as Heritage[],
-  }
-  heritages.value.forEach(x => x.tree && x.tree !== 'None' ? res[x.tree].push(x) : x.tree ? null : res.Other.push(x))
+    // Dragon: [] as Heritage[],
+    // Transhuman: [] as Heritage[],
+    // Outsider: [] as Heritage[],
+    // Other: [] as Heritage[],
+  } as Record<string, PerkFull[]>
+  heritages.value.slice(1).forEach(x => x.tree ? res[x.tree] ? res[x.tree].push(x) : res[x.tree] = [x] : res.Other ? res.Other.push(x) : res.Other = [x])
   return res
 })
 

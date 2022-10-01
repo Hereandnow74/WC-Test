@@ -1,4 +1,4 @@
-import { findIndex, find } from 'lodash-es'
+import { findIndex, find, remove } from 'lodash-es'
 import { Perk } from 'global'
 import { useChallenges } from './challenges'
 import { usePlayStore } from './play'
@@ -307,14 +307,30 @@ const companionsComp = computed(() => companionsWithoutSold.value.filter(cmp => 
 
 const isCouple = computed(() => findIndex(intensities.value, { title: 'Couple’s Account (Cooperative)' }) !== -1)
 
+watch(isCouple, () => {
+  if (isCouple.value) {
+    companions.value.push({
+      uid: 777777777,
+      name: 'Your SO',
+      sex: 'F',
+      world: '',
+      tier: 1,
+      priceTier: 0,
+      method: 'unbound',
+      spouse: true,
+    })
+  }
+  else {
+    remove(companions.value, cmp => cmp.spouse)
+  }
+})
+
 const targetList = computed(() => {
   const comps = companionsComp.value.map(x => (x.name))
   if (['Substitute', 'Possess'].includes(startingOrigin.value.title))
     comps.unshift(startingOrigin.value.character || 'You')
   else
     comps.unshift('You')
-  if (isCouple.value)
-    comps.unshift(coupleOrigin.value.character || 'Your SO')
   return comps
 })
 

@@ -1,26 +1,408 @@
 [
   
   {
-    "desc": "To procure new Retinuers you normally have to Bind them yourself... But why couldn't the retinue do the job for you? Find targets and have existing Companions Bind them. ",
-    "objectives": [],
-    "budget": 0,
-    "loca": "Generic",
-    "source": "",
-    "reward": "The purchase price of every new Subj captured this way",
-    "image": "",
-    "author": "Ratcatcher",
-    "scope": "Standard",
-    "title": "Self-expanding harem",
     "conditions": [
       {
-        "value": "Your Companions find and Bind the target. Any method other than outright brainwashing is admitted"
-      },
-      {
-        "value": "No more than two Companions must deal with a target"
+        "value": "Capture exclusively Waifus that are loyal to Nazarick."
       }
     ],
+    "author": "Vorlonos",
+    "objectives": [
+      {
+        "value": "All 10 of your captures are T7+",
+        "type": "Credits",
+        "reward": "1000"
+      },
+      {
+        "type": "Perks",
+        "value": "Capture Albedo and 4 other Floor Guardians.",
+        "reward": "Gain the 4 Demiplane Laws (Or a refund on purchased Laws) [Law of Man, Law of Magic, Law of Science, Law of Cognition]"
+      },
+      {
+        "value": "Capture Ainz Ooal Gown",
+        "reward": "Gain full Purchase Price of Waifus captured",
+        "type": "Other"
+      },
+      {
+        "value": "Don't allow Ainz Ooal Gown or Nazarick at large to learn you are targeting them until you are finished",
+        "type": "TX Tickets",
+        "reward": "1"
+      }
+    ],
+    "source": "",
+    "budget": 1000,
     "rewardType": "Credits",
-    "uid": "Hjsgp"
+    "reward": "500",
+    "scope": "Grand",
+    "title": "Heavy is the Sorcerer's Crown",
+    "loca": "Overlord (LN)",
+    "image": "https://staticdelivery.nexusmods.com/mods/1704/images/17481/17481-1610479040-1849207780.jpeg",
+    "desc": "The New World truly isn't prepared for Nazarick. That's not really their fault, Momonga, Ainz, whatever you call him, has a stacked base.\nAnd a small army of powerful Waifus.\nWhy don't you even those odd a little?\nTake any 10 Waifus that are directly loyal to Nazarick",
+    "uid": "QBuXh"
+  },
+  {
+    "objectives": [],
+    "author": "Silveod",
+    "rewardType": "Perks",
+    "reward": "+1 Three-Piece Suit OR 8 credits",
+    "loca": "Generic",
+    "desc": "Assemble a complete outfit according to local standards, and wear it.",
+    "image": "http://animebathscenewiki.com/images/thumb/a/ab/UQ_Holder_2_70.png/1200px-UQ_Holder_2_70.png",
+    "scope": "Quick",
+    "conditions": [
+      {
+        "value": "Start out naked."
+      },
+      {
+        "value": "Only using materials aquired in the local environment."
+      },
+      {
+        "value": "Complete the mission within 1 day."
+      }
+    ],
+    "budget": 10,
+    "title": "This isn’t Degrees of Lewdity, put on something more appropriate than a towel!",
+    "source": "",
+    "uid": "JPBtc"
+  },
+  {
+    "author": "Heaven Canceler",
+    "scope": "Standard",
+    "source": "",
+    "loca": "Azur Lane",
+    "reward": "Reward: You gain the ability to engrave a “Lewd Crest” on intelligent targets once every 5 days. In Retinue members it will overlap their tattoo and each target can only have one crest. This crest will grant them a personality based power of T4 with potential for further growth. Targets will slowly have their minds and bodies affected, increasing sexual hunger, lust and natural lasciviousness the more they use the power and begin to crave sex with you specifically.",
+    "desc": "Azur Lane’s Hammann is something of a prude. Always talking about how the Admiral is a pervert and how she hates lewd things. She just acts like she is better than others and as if she has never so much as wanted to try anything perverted or looked at a porn mag in her entire life. Which is why we have hired you to awaken her inner exhibitionist! I mean just look at some of these costumes she has been wearing. Her santa outfit, or that idol costume with the blatant fetish appeal! She is clearly trying to draw people in and is just in denial. So we want you to draw out her inner pervert and make her fully aware of the appeal of nudity and revealing her body to others. Of course we wouldn’t want her reputation to be carelessly ruined because of her training, so please do keep that in mind.",
+    "image": "https://i.imgur.com/fDlvv1e.png",
+    "objectives": [
+      {
+        "type": "Perks",
+        "reward": "Covert Talent + Covert Talent Sharing or 16 Credits",
+        "value": "Capture Hammann’s sister Sims and have her join in Hammann’s exhibitionist training. She is always pranking people so this is just perfect payback."
+      }
+    ],
+    "title": "Hammann’s Lewd Exhibitionist Training",
+    "rewardType": "Other",
+    "budget": 150,
+    "conditions": [
+      {
+        "value": "You cannot just mind control her directly into a pervert, we want some slower conditioning."
+      },
+      {
+        "value": "Force her to go to work and missions without underwear and wear more and more revealing clothes. She must enjoy the process even if she tries to deny it."
+      },
+      {
+        "value": "Do something to keep her nice and buzzed at the thought of being discovered. Like having her wear vibrators throughout the day or using some portal play on her."
+      },
+      {
+        "value": "You may not capture people beyond the targets within the Eagle Union dormitories. Avoid Hammann or your own activities being discovered."
+      },
+      {
+        "value": "To finish the mission, Hammann must be capable of experiencing orgasm from simply having someone watch her naked. She must also aknowledge her new status as a slutty exhibitionist pervert."
+      }
+    ],
+    "uid": "ujPiy"
+  },
+  {
+    "rewardType": "Other",
+    "reward": "5 credits + Added potential of DXD Devil Magic.",
+    "author": "irugaa0",
+    "source": "",
+    "desc": "For new contractors, the lack of reliable help can be a giant problem, so one of our senior contractors Zatouji the familiar master is ensuing a mission to remediate this situation. Go to the familiar forest and guarantee some familiars to yourself. But Beware ALL kinds of monsters and Beast from Different universes can Be Found there. Also, be aware that each creature has a “value”.",
+    "scope": "Quick",
+    "objectives": [
+      {
+        "value": "Make a HIGH-Level creature your familiar.",
+        "reward": "10",
+        "type": "Credits"
+      },
+      {
+        "value": "Make a ULTIMATE Level creature your familiar.",
+        "reward": "30",
+        "type": "Credits"
+      },
+      {
+        "value": "Make an eastern dragon your familiar.",
+        "type": "Credits",
+        "reward": "20"
+      },
+      {
+        "type": "Credits",
+        "reward": "20",
+        "value": "Make a Western dragons your familiar."
+      },
+      {
+        "type": "Credits",
+        "value": "Make a Imoogi your familiar.",
+        "reward": "10"
+      },
+      {
+        "type": "Credits",
+        "value": "Make a Mountain God your familiar.",
+        "reward": "30"
+      },
+      {
+        "value": "Make a Baphomet your familiar.",
+        "reward": "40",
+        "type": "Credits"
+      },
+      {
+        "type": "Credits",
+        "value": "Make a 9 headed-hydra your familiar.",
+        "reward": "25"
+      },
+      {
+        "value": "Make a Tiamat your familiar.",
+        "reward": "A Tier-7 or lower companion of your choice",
+        "type": "Companions"
+      },
+      {
+        "value": "Have the highest amount of points during the end of the event.",
+        "type": "Companions",
+        "reward": "A Tier-7 or lower companion of your choice"
+      }
+    ],
+    "loca": "Generic",
+    "conditions": [
+      {
+        "value": "Must capture at least one Familiar"
+      },
+      {
+        "value": "Neither You or your retinue can’t steal or interfere with other contractors’ chances of getting a familiar. "
+      },
+      {
+        "value": "Can’t Attack or Harm others contractors’ or their Retinue in any way or form."
+      },
+      {
+        "value": "IF you have any companion and bring him to this mission, all of them must to get at least one familiar."
+      },
+      {
+        "value": "Only new contractors can take this mission."
+      },
+      {
+        "value": "All contractors have a total of 72 hours (3 days) to get a familiar."
+      }
+    ],
+    "title": "Long Live Familiars",
+    "budget": 0,
+    "image": "",
+    "uid": "LfKuq"
+  },
+  {
+    "budget": 100,
+    "author": "Ratcatcher",
+    "reward": "600 credits",
+    "desc": "The Heroes Association is hamstrung by the quirky personalities of their strongest Heroes, the inadequate dedication of many of the lower ranks, and the inefficiency and even corruption among the administrative, support and mission control side of the organization. That was why the Neo Heroes got so many recruits... But once you look underneath their facade you find a YAKUZA among their higher-ups, and it only gets worse from there. That world needs a more effective heroic group - and this mission is about you doing just that.",
+    "title": "A new force of Heroes",
+    "loca": "One Punch Man",
+    "source": "",
+    "objectives": [
+      {
+        "type": "Companions",
+        "value": "Prevent the rise of the Neo Heroes as serious competition",
+        "reward": "Instant Capture of Suiko and Lin Lin"
+      },
+      {
+        "type": "Credits",
+        "reward": "Their full Capture price",
+        "value": "Poach Captain Mizuki, Tanktop Girl, and Shadow Ring from the Heroes Association without Capture until after they're fully loyal"
+      },
+      {
+        "reward": "One more tier for each local capture (reward retroactively applied)",
+        "type": "Companions",
+        "value": "Poach the S-class Heroes (minus Blast, Tatsumaki, Bofoi and Genos) from the Heroes Association without Capture until after they're fully loyal"
+      },
+      {
+        "reward": "Instant Capture of them and the Blizzard Group",
+        "value": "Seduce the Psychic Sisters",
+        "type": "Companions"
+      },
+      {
+        "type": "Credits",
+        "value": "Get Sweet Mask to join your group without his real looks being exposed",
+        "reward": "100"
+      },
+      {
+        "value": "Expose the Neo Heroes' role in the rising Monster attacks",
+        "reward": "50",
+        "type": "Credits"
+      },
+      {
+        "reward": "Psykos gains the ability to switch between her fused form and that of her fusee at will without losing power, all local ESPER captures gain enough power to increase their Tier by 1",
+        "type": "Companions",
+        "value": "Capture Psykos while she's fused with Orochi"
+      },
+      {
+        "value": "Convince Saitama to join your group",
+        "type": "TX Tickets",
+        "reward": "1"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Create a new heroic organization with your Retinue."
+      },
+      {
+        "value": "Supplant both the Hero Association and the Neo Heroes."
+      },
+      {
+        "value": "Prevent the end of mankind."
+      }
+    ],
+    "image": "",
+    "rewardType": "Credits",
+    "scope": "Standard",
+    "uid": "GGpZP"
+  },
+  {
+    "rewardType": "Other",
+    "author": "Heaven Canceler",
+    "loca": "To Love-Ru",
+    "desc": "Momo and Nana Deviluke were simply planning to set up a little test for their sister’s betrothed. Using a half finished video game dimension created by their sister that had been heavily inspired by earth’s pop culture, they planned to set up a hero’s journey to get a closer look at their target’s motivations and true feelings. Unfortunately, the AI of the “Demon Lord” ended up developing full sapience and managed to subvert their controls entirely. And after dealing with the twins, the ‘Demon Lord’ turned her eyes on the rest of her world. These that were drawn into this video game world had their memories suppressed, making them think that this was their real homeworld. This is where you come in. You will be inserted into this game dimension and must defeat the ‘Demon Lord’ Kyoko to free everyone from their prison.",
+    "scope": "Standard",
+    "objectives": [
+      {
+        "type": "Companions",
+        "value": "Capture the entire canon party of ‘heroes’ in the form of Lala’s betrothed, Yui, Mikan and Haruna and take them along to defeat the ‘Demon Lord’ without them finding out their past until the final battle.",
+        "reward": "‘Demon Lord’ Kyoko (T7) and her two minions in the form of Momo and Nana will be bound to you. Kyoko has her ingame powers and the ability to grant the ingame leveling class system to others."
+      }
+    ],
+    "budget": 240,
+    "reward": "All people within the Digital World will get their game avatar’s powers in addition to their normal abilities. The game world itself will be overlayed on this world’s Japan, bending space and creating a new province right next to Sainan Town. Take a refund for Pocket Space and Pocket Apartment or their Credit Cost.",
+    "source": "",
+    "title": "Quest of Digital Deviancies",
+    "image": "https://i.imgur.com/2JwHGW3.png",
+    "conditions": [
+      {
+        "value": "To win you must defeat the ‘Demon Lord’ Kyouko and rescue Lala. Be aware that she has partial admin access, so she may cheat. But she cannot make it actually impossible to win, even if you may need a specific key object to win."
+      },
+      {
+        "value": "Should you corner her, she will cheat in various ways including but not limited to more obstacles to surpass, more minions to fight, or even more requirements for her defeat. She will temporarily lose Status Points for every attempt she makes during this point, for the rest of the encounter to varying extents based on the cheat used."
+      },
+      {
+        "value": "The original game-world was already somewhat perverted, but this has gotten quite a bit more erotic due to Kyoko’s preferences. Be aware that things can get quite graphic."
+      },
+      {
+        "value": "To avoid attention from the ‘Demon Lord’, you should try to keep the locals unaware of what is really going on. Them recovering their memories isn’t a failure condition on its own, but will lead to increased scrutiny from Kyoko and more danger. They may still join the journey to defeat the target though. "
+      },
+      {
+        "value": "Up to three retinue members from outside the setting may join you on this mission. They can be a maximum of T6, if they are higher they will be nerfed to that point."
+      },
+      {
+        "value": "You need to finish this mission within 3 months, otherwise the King of Deviluke will find out about this and personally crack open the Digital Reality."
+      }
+    ],
+    "uid": "bWlCO"
+  },
+  {
+    "source": "",
+    "objectives": [
+      {
+        "value": "Complete or Organize 100 jobs as a Merc or Fixer respectively.",
+        "reward": "2 Sweet Home Expansions",
+        "type": "Perks"
+      },
+      {
+        "value": "Complete or Organize a Job for a Megacorporation. (Ex: Arasaka, Militech, etc.)",
+        "type": "Credits",
+        "reward": "20"
+      },
+      {
+        "type": "Companions",
+        "reward": "Capture of Adam Smasher",
+        "value": "Have a GOOD reputation with Megacorporation. (Ex: Arasaka, Militech, etc.)"
+      },
+      {
+        "value": "Have a BAD reputation with Megacorporation. (Ex: Arasaka, Militech, etc.)",
+        "reward": "Capture of Johnny Silverhand ",
+        "type": "Companions"
+      },
+      {
+        "type": "Companions",
+        "value": "Complete or Organize a Heist Job against a Megacorporation. (Ex: Arasaka, Militech, etc.)",
+        "reward": "Capture of V (Sex of your choice)"
+      }
+    ],
+    "desc": "Night City is mega-metropolis, overrun by corporations, corruption, organized crime, and gang violence. In this scenario, people need to make a name for themselves and become a legend or die in obscurity. Use all means at your disposal and rise on the city social ladder and either become a Living legend Mercenary or an influential Fixer that everyone looks for work. Alternatively, you can also try for a political career or influential Corporative Position.",
+    "rewardType": "Perks",
+    "author": "irugaa0",
+    "scope": "Grand",
+    "conditions": [
+      {
+        "value": "Become Either a Famous Fixer or Merc. Must be known for at least the main people among your career."
+      },
+      {
+        "value": "If you chose the last option, you must assume a high political position (at least Mayor) Or Become leader of a Megacorporation."
+      },
+      {
+        "value": "Deal/Organize at least 10 successful jobs as a fixer"
+      },
+      {
+        "value": "Complete at least 10 successful jobs as a Merc."
+      }
+    ],
+    "reward": "1 Perk of Your Choice",
+    "title": "OX in the Shadow or Finger in The ASS and Screaming.",
+    "loca": "Cyberpunk 2077",
+    "budget": 100,
+    "image": "",
+    "uid": "lJlYN"
+  },
+  {
+    "source": "",
+    "author": "irugaa0",
+    "image": "",
+    "loca": "Cyberpunk 2077",
+    "objectives": [
+      {
+        "type": "Credits",
+        "value": "Complete 10 minor jobs",
+        "reward": "10"
+      },
+      {
+        "value": "Complete 10 major jobs",
+        "type": "Credits",
+        "reward": "10"
+      },
+      {
+        "value": "Complete 3 heists",
+        "type": "Credits",
+        "reward": "20"
+      },
+      {
+        "type": "Other",
+        "value": "Get a Full body Cyber enhancements.",
+        "reward": "ALL your enhancements no matter which are now biological and fused to your body, and can be enhanced with training, unless you want otherwise."
+      },
+      {
+        "type": "Credits",
+        "reward": "60 plus their capture value.",
+        "value": "Capture at least 3 Cyberpsychos"
+      }
+    ],
+    "reward": "Any Perk of Your choice.",
+    "budget": 0,
+    "conditions": [
+      {
+        "value": "Complete 3 minor jobs"
+      },
+      {
+        "value": "Complete 1 major jobs or Heist."
+      },
+      {
+        "value": "Get at least half body Cyber enhancements."
+      },
+      {
+        "value": "Capture at least 1 Cyberpsycho"
+      },
+      {
+        "value": "Visit all 8 Districts of Night City"
+      }
+    ],
+    "scope": "Quick",
+    "rewardType": "Perks",
+    "desc": "Night City is mega-metropolis, overrun by corporations, corruption, organized crime, and gang violence. In this scenario, people need to make a name for themselves and become a legend or die in obscurity. Luck for you the company only wants you to have a small dose of what is like to live in a setting like that.",
+    "title": "Welcome to Night City – Edgerunner Edition",
+    "uid": "BgXZH"
   },
   {
     "image": "https://i.imgur.com/CLmqt8f.png",
@@ -57,7 +439,7 @@
     "uid": "yAJXG"
   },
   {
-    "source": "",
+    "image": "https://i.imgur.com/QENehQi.png",
     "conditions": [
       {
         "value": "Train and sell at least 100 slaves to satisfied customers."
@@ -72,17 +454,11 @@
         "value": "All slaves you sell must be of high quality, obedient and willing to indulge their new master in any fetish desire. Though you may set exception rules such as no snuff or the like."
       }
     ],
-    "budget": 230,
-    "image": "https://i.imgur.com/QENehQi.png",
-    "title": "A Slave Market on This Wonderful World",
-    "author": "Heaven Canceler",
-    "reward": "A Refund for the basic Demiplane or Dungeons perk and 40 Credits. Your Slave Market is now considered part of your part of your Demiplane or Dungeon if it isn’t already.",
-    "desc": "Ah, the slave harem in another world, what a wonderful fantasy. The perfect way to get yourself a bunch of waifus that obediently serve your every whim. Unfortunately it appears that this particular world lacks this most delicious of institutions. As such we would like to hire you to change that. For the purpose of this mission we want you to set up a proper slave market and kickstart the slave economy. You must produce quality ‘products’ and sell them to customers you consider worth the material. Unfortunately, slavery is currently not legal within Belzerg kingdom or its neighbors. Fortunately it appears that there is some loopholes in the current laws on slavery and forced labor involving monsters as they are legally not considered people and fair to kill at will. So enslaving monsters appears to be perfectly legal and there is a good chance that you can at least argue that other nonhumans like Elves also fall under that. Though the latter is likely to give you more outrage then the former. Still, it is likely that these laws will be adjusted after enough time passes, so we recommend that you make preparations for that.",
-    "rewardType": "Perks",
+    "scope": "Standard",
     "objectives": [
       {
-        "type": "Perks",
         "value": "Train at least 1 member of the original Konosuba main group into your personal sex slave. No, it cannot be Darkness.",
+        "type": "Perks",
         "reward": "1 TS I and TS II for Magia Baiser of “Looking up to Magical Girls”. Alternatively 30 Credits."
       },
       {
@@ -91,47 +467,56 @@
         "reward": "1 TS and TS II of any race that was canonically enslaved, the same for a demon of your choice. Alternatively 60 Credits."
       }
     ],
-    "scope": "Standard",
+    "author": "Heaven Canceler",
+    "budget": 230,
     "loca": "KonoSuba",
-    "uid": "LxNHB"
+    "desc": "Ah, the slave harem in another world, what a wonderful fantasy. The perfect way to get yourself a bunch of waifus that obediently serve your every whim. Unfortunately it appears that this particular world lacks this most delicious of institutions. As such we would like to hire you to change that. For the purpose of this mission we want you to set up a proper slave market and kickstart the slave economy. You must produce quality ‘products’ and sell them to customers you consider worth the material. Unfortunately, slavery is currently not legal within Belzerg kingdom or its neighbors. Fortunately it appears that there is some loopholes in the current laws on slavery and forced labor involving monsters as they are legally not considered people and fair to kill at will. So enslaving monsters appears to be perfectly legal and there is a good chance that you can at least argue that other nonhumans like Elves also fall under that. Though the latter is likely to give you more outrage then the former. Still, it is likely that these laws will be adjusted after enough time passes, so we recommend that you make preparations for that.",
+    "uid": "LxNHB",
+    "title": "A Slave Market on This Wonderful World",
+    "source": "",
+    "reward": "A Refund for the basic Demiplane or Dungeons perk and 40 Credits. Your Slave Market is now considered part of your Demiplane or Dungeon if it isn’t already.",
+    "rewardType": "Perks"
   },
   {
-    "desc": "Office of Naval Intelligence also know as ONI. The infamous Boogeyman of \"pre contact\" humanity is the intelligence service of the UNSC naval command, in short, space CIA/KGB but worse. What is it like to be the big boss of such an agency ? Your mission, dear contractor, is to takeover ONI. Objectif: Big Browser.\n-We suggest you do so by either taking the seat at it's creation, substitute an actual boss, or impressed an aging boss enough to succeed them.\nGood luck, contractor.",
-    "objectives": [
-      {
-        "value": "Make sure the innies became a minor treat by 2560.",
-        "reward": "10 Hyper Lethal Vector Spartan II Headhunters companions ",
-        "type": "Companions"
-      },
-      {
-        "reward": "100 credits",
-        "type": "Credits",
-        "value": "Train and nurture a Spartan recruit (II or III) to take your place one day."
-      },
-      {
-        "type": "Companions",
-        "reward": "10 Servant/Heroic Spirit Spartans companions ",
-        "value": "Find a way to stay at power without anyone finding for a 3 generation, one way or another."
-      }
-    ],
-    "title": "Spooky Big Browser",
-    "author": "AusthinH7",
-    "reward": "2000 credits, 1TX ticket, Total access to ONI database",
     "scope": "Grand",
+    "budget": 1500,
+    "image": "https://i.imgur.com/kedx0S8.jpeg",
+    "desc": "Office of Naval Intelligence also know as ONI. The infamous Boogeyman of \"pre contact\" humanity is the intelligence service of the UNSC naval command, in short, space CIA/KGB but worse. What is it like to be the big boss of such an agency, the CINCONI ? Your mission, dear contractor, is to takeover ONI. Objectif: Big Browser.\n-We suggest you do so by either taking the seat at it's creation, substitute an actual boss, or impressed an aging boss enough to succeed them.\nGood luck, contractor.",
+    "title": "Spooky Big Browser",
     "conditions": [
       {
         "value": "Try not to leave any trail would you ? It's a spy agency after all."
       },
       {
         "value": "Stay at the top until the end of Halo 3, meaning no stopping the Spartan II program."
+      },
+      {
+        "value": "Chargen Substitute is not allowed"
       }
     ],
-    "budget": 1500,
     "rewardType": "Other",
-    "image": "",
-    "loca": "Halo",
+    "reward": "2000 credits or 1TX ticket, Total access to ONI database",
     "source": "",
-    "uid": "IwgNW"
+    "uid": "IwgNW",
+    "author": "AusthinH7",
+    "loca": "Halo",
+    "objectives": [
+      {
+        "value": "Make sure the innies became a minor treat by 2560.",
+        "type": "Companions",
+        "reward": "10 Hyper Lethal Vector Spartan II Headhunters companions "
+      },
+      {
+        "value": "Train and nurture a Spartan recruit (II or III) to take your place one day.",
+        "type": "Credits",
+        "reward": "100 credits"
+      },
+      {
+        "type": "Companions",
+        "value": "Find a way to stay at power without anyone finding for a 3 generation, one way or another.",
+        "reward": "10 Servant/Heroic Spirit Spartans companions "
+      }
+    ]
   },
   {
     "desc": "Captain Marvel is bitch, we all know that. You know what contractor ? Why don't you take her down her high horse and show her a righteous place ? Your mission is simple: Make that bitch, YOUR bitch.",
@@ -8193,18 +8578,11 @@
     "author": "Heaven Canceler"
   },
   {
-    "uid": "UT6W2",
-    "title": "Padawan York",
-    "scope": "Quick",
-    "reward": "40 Credits",
-    "desc": "There is a young Shipgirl with a dream, a dream to become a true defender of justice. You are the one she has been waiting for, such is destiny!<br>This job is simple, take York as your Jedi apprentice and teach her the art of the force, lightsaber combat and everything else a proper Jedi needs to know.",
-    "budget": 200,
-    "author": "Heaven Canceler",
+    "scope": "Standard",
+    "rewardType": "Perks",
     "image": "https://i.imgur.com/5KOPuGL.png",
-    "loca": "Azur Lane",
-    "source": "",
-    "objectives": [],
-    "rewardType": "Credits",
+    "reward": "1 TS I of any Jedi. A Copy of the Crystal Caves of Ilum is transplanted into your Demiplane or a world you have visited.",
+    "title": "Padawan York",
     "conditions": [
       {
         "value": "Train York in the Jedi arts until she has reached Journeyman level of skill."
@@ -8215,7 +8593,14 @@
       {
         "value": "Call Queen Elizabeth Master Yoda for the duration of your stay, refuse to elaborate."
       }
-    ]
+    ],
+    "uid": "UT6W2",
+    "source": "",
+    "budget": 200,
+    "author": "Heaven Canceler",
+    "desc": "There is a young Shipgirl with a dream, a dream to become a true defender of justice. You are the one she has been waiting for, such is destiny!<br>This job is simple, take York as your Jedi apprentice and teach her the art of the force, lightsaber combat and everything else a proper Jedi needs to know.",
+    "loca": "Azur Lane",
+    "objectives": []
   },
   {
     "author": "Heaven Canceler",
@@ -8884,27 +9269,32 @@
     "uid": "9BAUY"
   },
   {
-    "author": "Heaven Canceler",
-    "budget": 250,
     "conditions": [
       {
         "value": "Do not capture any other waifus from Azur Lane beforehand."
+      },
+      {
+        "value": "Solo: You must finish this mission on your own."
+      }
+    ],
+    "title": "Pick Your Starter",
+    "loca": "Azur Lane",
+    "uid": "MpK4L",
+    "author": "Heaven Canceler",
+    "scope": "Quick",
+    "objectives": [
+      {
+        "value": "Also Capture Long Island and Repulse.",
+        "type": "Credits",
+        "reward": "40 Credits"
       }
     ],
     "desc": "Any proper Admiral needs their starter ship!\n\nAs such, you must capture one of the classic examples. Laffey, Ayanami, Z23 or Javelin",
-    "image": "https://i.imgur.com/sIr7fb4.png",
-    "loca": "Azur Lane",
-    "objectives": [
-      {
-        "reward": "50 Credits",
-        "value": "Also Capture Long Island and Repulse."
-      }
-    ],
-    "reward": "25 Credits",
-    "scope": "Quick",
+    "budget": 250,
     "source": "",
-    "title": "Pick Your Starter",
-    "uid": "MpK4L"
+    "rewardType": "Perks",
+    "image": "https://i.imgur.com/sIr7fb4.png",
+    "reward": "The waifu is given 1 TS I of any \"Starter Mon\" type character, alternatively 15 Credits."
   },
   {
     "author": "V",

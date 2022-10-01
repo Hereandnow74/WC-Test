@@ -272,6 +272,10 @@
         "name": "Show continuity",
         "rating": 3,
         "a": "c"
+      },
+      {
+        "name": "House of the dragons",
+        "rating": 4
       }
     ]
   },
@@ -998,6 +1002,14 @@
       {
         "name": "Sacred Stones",
         "rating": 5
+      },
+      {
+        "name": "Path of Radiance",
+        "rating": 5
+      },
+      {
+        "name": "Radiant Dawn",
+        "rating": 6
       }
     ]
   },
@@ -1445,6 +1457,10 @@
       {
         "name": "Arcane: League of Legends",
         "rating": 6
+      },
+      {
+        "name": "Void War",
+        "rating": 8
       }
     ]
   },
@@ -1709,6 +1725,10 @@
         "name": "Sengoku Jidai",
         "rating": 7,
         "a": "c"
+      },
+      {
+        "name": "Modern Japan",
+        "rating": 2
       }
     ],
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/992406281631572080/InuYasha-1-1024x576.webp"
@@ -2250,6 +2270,10 @@
         "name": "Standard",
         "rating": 9,
         "a": "c"
+      },
+      {
+        "name": "The Sundering",
+        "rating": 9
       }
     ],
     "image": "https://i.imgur.com/rqmYEib.jpeg"

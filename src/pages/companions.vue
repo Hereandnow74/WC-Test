@@ -142,6 +142,14 @@
           >
             ret
           </div>
+          <div
+            :class="{'bg-green-600': newChanges}"
+            class="border-l px-2 hover:bg-gray-700 text-gray-200 rounded-r"
+            title="New Changes"
+            @click="newChanges = !newChanges"
+          >
+            new
+          </div>
         </div>
         <bi:gear-fill class="icon-btn" @click="toggleSearchSetting" />
         <div class="hidden md:block">
@@ -212,7 +220,7 @@
 
 <script lang="ts" setup>
 import Fuse from 'fuse.js'
-import { every, intersection, some, shuffle, repeat } from 'lodash-es'
+import { every, intersection, some, shuffle, repeat, remove } from 'lodash-es'
 import { DBCharacter } from 'global'
 import { useStore } from '~/store/store'
 
@@ -234,6 +242,7 @@ const nsfw = ref('')
 const favorite = ref(0)
 const local = ref(0)
 const retinue = ref(0)
+const newChanges = ref(false)
 
 const sortAlpha = ref(0)
 const sortRating = ref(0)
@@ -243,7 +252,7 @@ const shuffleOn = ref(false)
 // const characters = ref({})
 const loading = ref(true)
 
-const { allCharsComp: allChars } = useAllChars()
+const { allCharsComp: allChars, changes } = useAllChars()
 
 const editMode = ref(false)
 const characterToEdit = ref({})
@@ -372,6 +381,7 @@ const filteredCharacters = computed(() => {
   if (nsfw.value) sopt.$and.push({ in: nsfw.value })
   if (favorite.value === 1) sopt.$and.push({ u: `=${favorites.value.join('|=')}` })
   if (favorite.value === -1) sopt.$and.push({ u: `!^${favorites.value.join(' !^')}` })
+  if (newChanges.value) sopt.$and.push({ u: `=${Object.keys(changes.value).join('|=')}` })
   if (retinue.value === 1) sopt.$and.push({ u: `=${Object.keys(companionsUIDs.value).join('|=')}` })
   if (retinue.value === -1) sopt.$and.push({ u: `!^${Object.keys(companionsUIDs.value).join(' !^')}` })
   if (search.value.length === 0)
