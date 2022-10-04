@@ -160,6 +160,7 @@ const complex = reactive({
 })
 
 const perkToSave = reactive({
+  uid: props.perk.uid,
   title: props.perk.title,
   count: props.savedPerk.count || 1,
   cost: computed(() => {

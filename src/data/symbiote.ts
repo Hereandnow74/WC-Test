@@ -353,7 +353,7 @@ export const symbioteBinding: PerkFull[] = [
     cost: 20,
     category: 'Binding',
     type: 'Expansion',
-    image: '',
+    image: 'https://cdn.discordapp.com/attachments/925963686433132644/1024766028275798036/20220929_023345.jpg',
     desc: `
     <p>Your Colonies now produce a highly-nutritious honey-like substance, a vital material for the promotion of new queens. Ingesting one half-liter of Royal Honey over the course of a single day will apply the same physical transformation that marks your king or queen to any humanoid of the appropriate gender who does so, following all of the same rules. This includes the extra +1 tier. Under normal conditions, this effect only lasts for 14 days (332 hours) after the initial sip and then recedes the next time the drinker sleeps.</p>
     <p>However, a female humanoid who experiences this effect while installed into a Hatchery, whether or not she was already affected when she stepped in, will become a Support Queen, equal in rank and benefitting from all of the same rules as your original queen. The promotion to Support Queen is permanent. The number of support queens you can have at any time is equal to 1 for each Colony, plus 10 for each Hive.</p>
@@ -366,7 +366,7 @@ export const symbioteBinding: PerkFull[] = [
     cost: 40,
     category: 'Binding',
     type: 'Expansion',
-    image: '',
+    image: 'https://cdn.discordapp.com/attachments/925963686433132644/1024774391978004551/images_-_2022-09-29T023039.438.jpg',
     desc: `
     <p>This variant of Royal Honey, produced only in Hives and in far smaller amounts, is even more nutritious than the regular kind. The same half-liter dose will instead take its drinker to target sizes of 180% on the scales defined in Advanced Tempest Runes (Body), with up to 20% error in either direction. This transformation will last for 14 days (332 hours) after the initial sip and then recede down to Royal Honey levels the next time the drinker sleeps. The drinker will only return to their original proportions after another two weeks.</p>
     <p>The first swarm queen, whether your original or a support queen, to consume 20 liters of Imperial Honey will become your swarm’s Empress, ranked above all other queens in your swarm’s hierarchy. This can only happen once, so make it count. The Empress gains +1 to her effective tier, stacking with the queen bonus. If she is already Tier 10, her power will double, but her effective tier will not increase any further. These permanent benefits will also apply to a swarm king who has this perk and consumes enough honey.</p>

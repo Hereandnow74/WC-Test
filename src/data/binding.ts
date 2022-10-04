@@ -342,6 +342,7 @@ export const bindings: PerkFull[] = [
     type: 'Symbiote Legacy',
     image: 'https://i.imgur.com/Hz8Ngbs.png',
     complex: 'target',
+    legacy: true,
     freebies: {
       talentPerks: [{ title: 'Everlasting Talent', cost: 0, count: 1 }, { title: 'Body Talent', cost: 0, count: 1 }, { title: 'Martial Talent', cost: 0, count: 1 }, { title: 'Wild Talent', cost: 0, count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Martial Talent' }], count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Wild Talent' }], count: 1 }],
       defensePerks: [{ title: 'Body Defense', cost: 0, count: 1 }, { title: 'Wild Defense', cost: 0, count: 1 }, { title: 'Environmental Defense', cost: 0, count: 1 }],
@@ -366,6 +367,7 @@ If you Possessed or Substituted a waifu or are otherwise female, you may act as 
     cost: 50,
     category: 'Binding',
     type: 'Symbiote Legacy',
+    legacy: true,
     image: 'https://i.ibb.co/jMhSPRT/Universal-Bus.jpg',
     whitelist: ['Alterzelu Symbiote'],
     desc: `
@@ -379,6 +381,7 @@ If you Possessed or Substituted a waifu or are otherwise female, you may act as 
     cost: 30,
     category: 'Binding',
     type: 'Symbiote Legacy',
+    legacy: true,
     image: 'https://i.ibb.co/fvRfGb1/Second-Generation-Symbiote.jpg',
     freebies: {
       talentPerks: [{ title: 'Psychic Talent', cost: 0, count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Psychic Talent' }], count: 1 }],
@@ -393,6 +396,7 @@ If you Possessed or Substituted a waifu or are otherwise female, you may act as 
     cost: 60,
     category: 'Binding',
     type: 'Symbiote Legacy',
+    legacy: true,
     image: 'https://i.ibb.co/g3Txp6g/Third-Generation-Symbiote-New.jpg',
     whitelist: ['Second-Generation Symbiote'],
     desc: `

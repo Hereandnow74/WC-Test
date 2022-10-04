@@ -1,6 +1,48 @@
 [
   
   {
+    "scope": "Grand",
+    "rewardType": "Perks",
+    "reward": "All Catch a Ride Upgrades and 1 free purchase of Catch a ride Plus",
+    "loca": "Stellaris",
+    "image": "",
+    "title": "Relic Hunters",
+    "conditions": [
+      {
+        "value": "Form a Team with your Retinue and/or other Relic Hunters from the  Stellaris Universe"
+      },
+      {
+        "value": "You must be the Admiral/Scientist in Charge of the excavations and the Main Leader of the group."
+      },
+      {
+        "value": "You must be recognized by atleast 1 Empire as a Relic Hunter Group"
+      },
+      {
+        "value": "Collect Atleast 25 Minor Artifacts and 2 Crisis/Precursor/Other Relics and don't lose them to Rival Groups/Empires.(selling of Minor Artifacts is allowed and won't affect your count)"
+      },
+      {
+        "value": "The Rubricator and The Galatron's (for the purposes of this Contract) Relic Generation will only give 2 Credits for each Minor Artifact created with it and count  5 of the Generated Artifacts towards the previous goal"
+      }
+    ],
+    "source": "",
+    "objectives": [
+      {
+        "value": "Succesfully steal a Relic from an Empire without being noticed",
+        "reward": "x2 credit amount of the Relic in question that was Stolen",
+        "type": "Credits"
+      },
+      {
+        "type": "Companions",
+        "value": " if present , Steal Pods of Biological/Mechanical Population from an Ancient Caretaker, Keepers of Knowledge or from the Enigmatic Observers",
+        "reward": "if the Pods were stolen from an Ancient Caretaker/Keepers of Knowledge, gain a Companion with the Android tag up to tier 6, if from Enigmatic Observers gain a Companion that has either Engineer, Scientist or Crafter tag up to tier 6 excluding AI. As well as 25 Credits due to the Pod technology being considered Ancient technology."
+      }
+    ],
+    "budget": 200,
+    "desc": " Miniature Galaxy, The Last Baol, Head of Zarqlan and many Minor Artifacts. It's time to get a Collection started, Form a Crew and get yourself a ship running it's time to go and Excavate, steal or fight for some Relics! If you have Bounty Tracker, you'll be able to see points of interest/Excavation for Minor Artifacts and Relics(though the app won't tell you which Relic is where, though it will tell you if the relics been acquired by someone else)\nMinor Artifacts: 5 Credits each\nPrecursor/Other Relics: 25 Credits Each\nCrisis Relics: 50 Credits Each( 100 if the Faction that has the Artifact in question happens to be the Nemesis, a Total-War Empire and/or are the number 1-5 in the galaxies Military/Economic Powers)",
+    "author": "Demontty",
+    "uid": "DVSfm"
+  },
+  {
     "conditions": [
       {
         "value": "Capture exclusively Waifus that are loyal to Nazarick."
@@ -519,14 +561,9 @@
     ]
   },
   {
-    "desc": "Captain Marvel is bitch, we all know that. You know what contractor ? Why don't you take her down her high horse and show her a righteous place ? Your mission is simple: Make that bitch, YOUR bitch.",
-    "rewardType": "Other",
-    "source": "",
-    "author": "AusthinH7",
-    "scope": "Standard",
-    "title": "Bitch Smack !",
     "reward": "TS I and II of Captain Marvel aka Carol Danvers, Capture of Captain Marvel",
-    "image": "",
+    "desc": "Captain Marvel is bitch, we all know that. You know what contractor ? Why don't you take her down her high horse and show her a righteous place ? Your mission is simple: Make that bitch, YOUR bitch.",
+    "scope": "Standard",
     "conditions": [
       {
         "value": "Binding are forbidden, do this the old way, Company style"
@@ -535,19 +572,24 @@
         "value": "Everything is fair game"
       }
     ],
-    "budget": 1500,
+    "source": "",
     "objectives": [
       {
         "type": "Credits",
-        "reward": "50",
-        "value": "Make Carol acknowledge her faults, force is authorized"
+        "value": "Make Carol acknowledge her faults, force is authorized",
+        "reward": "50"
       },
       {
-        "reward": "50",
         "value": "'Train' her into a proper maid",
-        "type": "Credits"
+        "type": "Credits",
+        "reward": "50"
       }
     ],
+    "rewardType": "Other",
+    "title": "Bitch Smack !",
+    "image": "https://i.imgur.com/xeDsexW.jpeg",
+    "author": "AusthinH7",
+    "budget": 1500,
     "loca": "Marvel",
     "uid": "kHUyN"
   },

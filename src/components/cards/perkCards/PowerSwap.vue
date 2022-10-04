@@ -68,7 +68,7 @@
             <div class="flex flex-col gap-2">
               <h3 class="flex gap-2 text-sm">
                 {{ companion.name }}
-                <span class="text-gray-500">({{ companion.world }})</span>
+                <span v-if="companion.world" class="text-gray-500">({{ companion.world }})</span>
               </h3>
               <CharacterInput
                 v-model="swapPower[companion.name].name"
@@ -135,12 +135,6 @@ const props = defineProps({
 })
 
 const emit = defineEmits(['pickPerk'])
-
-// const powers = reactive<Record<string, string[]>>(props.savedPerk?.complex?.reduce((a, x) => {
-//   if (a[x.target]) a[x.target].push(x.flavor)
-//   else a[x.target] = [x.flavor]
-//   return a
-// }, {}) || {})
 
 const heritageOptions = [
   { label: 'None', value: '' },

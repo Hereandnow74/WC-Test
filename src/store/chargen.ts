@@ -1,9 +1,14 @@
 import { Perk } from 'global'
 
+interface Condition {
+  rating: number
+  name: string
+}
+
 export interface World {
   worldName: string
   rating: number
-  condition?: string | any[]
+  condition?: Condition[]
   additional?: string
   image?: string
 }

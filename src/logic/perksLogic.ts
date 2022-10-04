@@ -1,3 +1,4 @@
+import { count } from 'console'
 import { find, findIndex, intersection, intersectionWith, isArray, isEmpty, isObject, mergeWith, remove, sample, uniqBy } from 'lodash-es'
 import { DLCPerk, Freebie, PerkFull } from 'global'
 import { shroudElements } from '~/data/binding'
@@ -108,7 +109,7 @@ export function pickSimplePerk(perk: PerkFull, saveData: Perk, isAvailable: (arg
   if (isAvailable(perk)) {
     const ind = findIndex(perks, { title: perk.title })
     if (ind !== -1) {
-      if ((saveData.complex && saveData.complex.length > 0) || (saveData.count && saveData.count > 0)) {
+      if ((saveData.complex && saveData.complex.length > 0) || (saveData.count && saveData.count > 0 && perks[ind].count !== saveData.count)) {
         perks[ind] = saveData
       }
       else {
@@ -220,10 +221,18 @@ export function bindingAvailable(bin: PerkFull): boolean {
   return false
 }
 
+// KYeJi wQZU5 qaVE7 8Q4UU
 export function symbioteAvailable(bin: PerkFull): boolean {
-  if (flags.value.noBindings && bin.uid === 'grbul')
-    return true
+  const larvaCount = binding.value.filter(x => ['KYeJi', 'wQZU5', 'qaVE7', '8Q4UU'].includes(x.uid)).length
+  const larvaAvailable = binding.value.filter(x => ['LjU3E', 'EG3MX', 'ys3bz'].includes(x.uid)).length + 1
   if (!bin.whitelist && findIndex(binding.value, { title: bin.title }) !== -1)
+    return true
+  if (bin.type === 'Larva' && larvaCount < larvaAvailable) { return true }
+  else {
+    if (bin.type === 'Larva')
+      return false
+  }
+  if (flags.value.noBindings && bin.uid === 'grbul')
     return true
   if (!bin.whitelist && findIndex(binding.value, { uid: 'grbul' }) !== -1)
     return true
@@ -337,9 +346,15 @@ export function chooseRide(ride: Ride, selectedRide: Ride) {
       flags.value.hasARide = true
     }
     else {
-      const del = ridePerks.value.splice(ind, 1)
-      if (!flags.value.chargen && del[0].cost < 11111) fee.value += Math.round(del[0].cost * 0.2) || 0
-      flags.value.hasARide = !!ridePerks.value.length
+      if (selectedRide.count !== 0 && ridePerks.value[ind].count !== selectedRide.count) {
+        ridePerks.value[ind].count = selectedRide.count
+        ridePerks.value[ind].cost = selectedRide.cost
+      }
+      else {
+        const del = ridePerks.value.splice(ind, 1)
+        if (!flags.value.chargen && del[0].cost < 11111) fee.value += Math.round(del[0].cost * 0.2) || 0
+        flags.value.hasARide = !!ridePerks.value.length
+      }
     }
   }
 }
@@ -389,7 +404,24 @@ export function defenseAvailable(def: PerkFull): boolean {
 }
 
 export function chooseDefense(def: PerkFull, saveData: Perk) {
-  pickSimplePerk(def, saveData, defenseAvailable, defensePerks.value)
+  if (defenseAvailable(def)) {
+    const ind = findIndex(defensePerks.value, { title: def.title })
+    if (ind !== -1) {
+      if ((saveData.complex && saveData.complex.length > 0) || (defensePerks.value[ind].count !== saveData.count || saveData.defDiscount !== defensePerks.value[ind].defDiscount)) {
+        defensePerks.value[ind] = saveData
+      }
+      else {
+        const toDel = defensePerks.value.splice(ind, 1)
+        allEffects.value.splice(allEffects.value.indexOf(toDel[0].title), 1)
+        if (!flags.value.chargen && toDel[0].cost < 11111) fee.value += Math.round(toDel[0].cost * 0.2) || 0
+        deletePerk(defensePerks.value, defenseAvailable)
+      }
+    }
+    else if (saveData.count === undefined || (saveData.count !== undefined && saveData.count !== 0)) {
+      allEffects.value.push(def.title)
+      defensePerks.value.push(saveData)
+    }
+  }
 }
 
 // Misc Perks

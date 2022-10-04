@@ -34,19 +34,6 @@
     <div v-if="world.condition && isArray(world.condition)" class="mx-2 flex gap-2">
       <span class="text-gray-200">Condition:</span>
       <CustomSelect :model-value="condition.name" :list="conditionList(world.condition)" @update:modelValue="changeCondition" @click.stop />
-      <!-- <select
-        name="condition"
-        class="text-gray-800 flex-grow min-w-0 rounded"
-        @change="changeCondition"
-        @click.stop
-      >
-        <option value="No condition">
-          No condition
-        </option>
-        <option v-for="cnd in world.condition" :key="cnd.name" :value="cnd.name">
-          {{ cnd.name }} ({{ cnd.rating }})
-        </option>
-      </select> -->
     </div>
     <div v-else-if="world.condition" class="mx-2">
       {{ world.condition }}
@@ -60,6 +47,7 @@
 <script lang='ts' setup>
 import { findIndex, isArray } from 'lodash-es'
 import type { PropType } from 'vue'
+import { number } from 'zod'
 import { useWorlds, WORLD_COLORS, WORLD_RATINGS } from '~/data/constants'
 import { lazyLoadSingleImg } from '~/logic'
 import { confirmDialog } from '~/logic/dialog'
@@ -78,6 +66,14 @@ const props = defineProps({
   type: {
     type: String as PropType<'canon' | 'user' | 'local'>,
     default: 'canon',
+  },
+  min: {
+    type: Number,
+    default: 1,
+  },
+  max: {
+    type: Number,
+    default: 10,
   },
 })
 
@@ -105,6 +101,27 @@ const pickAbleAfter = computed(() => props.pickAble && !flags.value.chargen ? fa
 const condition = reactive({
   name: 'No condition',
   rating: 0,
+})
+
+if ((props.min !== 1 || props.max !== 10) && props.world.condition?.length) {
+  const conditions = props.world.condition.filter(cnd => cnd.rating >= props.min && cnd.rating <= props.max)
+  if (conditions.length) {
+    condition.name = conditions[0].name
+    condition.rating = conditions[0].rating
+  }
+}
+watch([() => props.min, () => props.max], () => {
+  if ((props.min !== 1 || props.max !== 10) && props.world.condition?.length) {
+    const conditions = props.world.condition.filter(cnd => cnd.rating >= props.min && cnd.rating <= props.max)
+    if (conditions.length) {
+      condition.name = conditions[0].name
+      condition.rating = conditions[0].rating
+    }
+  }
+  if ((props.min === 1 && props.max === 10) && props.world.condition?.length && condition.name !== 'No condition') {
+    condition.name = 'No condition'
+    condition.rating = 0
+  }
 })
 
 const worldImg = ref<HTMLImageElement | null>(null)

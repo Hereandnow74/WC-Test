@@ -44,7 +44,6 @@
         -
         <NumberInput v-model="maxDR" :min="minDR" :max="10" />
       </div>
-      <span class="hidden md:block whitespace-nowrap">Results: {{ worldsFiltered.length }}</span>
       <div class="flex gap-1 px-0.5 items-center border rounded border-gray-600 dark:border-gray-300 whitespace-nowrap text-sm">
         <div class="flex gap-1 px-1 rounded items-center cursor-pointer hover:(bg-green-500 bg-opacity-60)" :class="filterUserWorlds === 'canon' ? 'bg-green-500 bg-opacity-60' : ''">
           <div class="border border-gray-700 bg-yellow-300 w-4 h-4"></div>
@@ -60,6 +59,7 @@
           </div>
         </div>
       </div>
+      <span class="hidden md:block whitespace-nowrap">Results: <span class="text-blue-500">{{ worldsFiltered.length }}</span></span>
       <Button size="Small" label="Add World" class="whitespace-nowrap" @click="() => (editMode = false, toggleShowAddWorld())" />
     </div>
     <div class="grid grid-cols-1 grid-flow-row-dense 4xl:grid-cols-6 5xl:grid-cols-7 xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-1 overflow-y-auto pb-8">
@@ -70,6 +70,8 @@
         :type="world.type"
         :class="{'row-span-2 min-h-72': world.image && !settings.hideWorldImg, 'sm:col-span-2': world.additional, 'sm:row-span-4': world.image && world.additional && !settings.hideWorldImg}"
         class="w-full"
+        :min="minDR"
+        :max="maxDR"
         @edit-world="editWorld"
       />
       <div v-if="!worldsFiltered.length" class="text-center flex-grow">
@@ -82,7 +84,7 @@
 
 <script lang="ts" setup>
 import Fuse from 'fuse.js'
-import { isArray } from 'lodash'
+import { isArray, some } from 'lodash'
 import { useStore } from '~/store/store'
 import { toggleShowAddWorld, showAddWorld, threeToggle } from '~/logic'
 import { useWorlds } from '~/data/constants'
@@ -125,11 +127,23 @@ const allWorlds = computed(() => {
 const fuse = new Fuse(allWorlds.value, options)
 watch(allWorlds, () => fuse.setCollection(allWorlds.value))
 
+function checkConditions(conditions: any[] | undefined): boolean {
+  if (conditions === undefined)
+    return false
+  return some(conditions, x => x.rating >= minDR.value && x.rating <= maxDR.value)
+}
+
 const worldsFiltered = computed(() => {
-  if (search.value)
-    return fuse.search(search.value).map(x => x.item).filter(x => x.rating >= minDR.value && x.rating <= maxDR.value).filter(x => filterUserWorlds.value ? x.type === filterUserWorlds.value : true)
-  else
-    return [...allWorlds.value].sort(sortingFunc).filter(x => x.rating >= minDR.value && x.rating <= maxDR.value).filter(x => filterUserWorlds.value ? x.type === filterUserWorlds.value : true)
+  if (search.value) {
+    return fuse.search(search.value).map(x => x.item)
+      .filter(x => (x.rating >= minDR.value && x.rating <= maxDR.value) || checkConditions(x.condition))
+      .filter(x => filterUserWorlds.value ? x.type === filterUserWorlds.value : true)
+  }
+  else {
+    return [...allWorlds.value].sort(sortingFunc)
+      .filter(x => (x.rating >= minDR.value && x.rating <= maxDR.value) || checkConditions(x.condition))
+      .filter(x => filterUserWorlds.value ? x.type === filterUserWorlds.value : true)
+  }
 })
 
 // const userWorldsFiltered = computed(() => {

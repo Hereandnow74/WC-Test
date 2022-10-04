@@ -13,25 +13,35 @@
     <h3 class="relative text-center text-base sm:text-xl">
       {{ ride.title }} <span text="gray-500 dark:gray-400 base">
         (Cost: <span class="text-green-500 dark:text-green-300 font-semibold">
-          {{ ride.cost >= 11111 ? 'Tier X ticket' : active ? selectedRide.cost : ride.cost }}
+          {{ ride.cost >= 11111 ? 'Tier X ticket' : active ? displayedCost : ride.cost }}
         </span>)
       </span>
-      <Button
-        v-if="active"
-        class="text-base ml-2"
-        :label="bought ? 'sell' : 'buy'"
-        size="Small"
-        bg-color="bg-blue-500"
-        @click.stop="pickRide"
-      />
-      <Button
-        v-if="local"
-        class="text-base ml-2"
-        label="delete"
-        size="Small"
-        bg-color="bg-red-500"
-        @click.stop="deleteRide"
-      />
+      <div class="flex gap-1">
+        <Button
+          v-if="active"
+          class="text-base ml-2"
+          label="buy"
+          size="Small"
+          bg-color="bg-blue-500"
+          @click.stop="buyRide"
+        />
+        <Button
+          v-if="active && bought"
+          class="text-base ml-2"
+          label="sell"
+          size="Small"
+          bg-color="bg-blue-500"
+          @click.stop="sellRide"
+        />
+        <Button
+          v-if="local"
+          class="text-base ml-2"
+          label="delete"
+          size="Small"
+          bg-color="bg-red-500"
+          @click.stop="deleteRide"
+        />
+      </div>
       <fa-solid:check v-if="bought" class="absolute top-1 right-1 text-green-500" />
     </h3>
     <div v-if="ride.source" class="px-2">
@@ -116,32 +126,48 @@ const rideImg = ref<HTMLImageElement | null>(null)
 
 const selectedRide = reactive({
   title: props.ride.title,
-  cost: props.ride.cost,
+  cost: 0,
+  count: 0,
+  addonsCost: 0,
   addons: [] as string[],
   variant: '',
 })
+
+const displayedCost = computed(() => selectedRide.cost + props.ride.cost + selectedRide.addonsCost)
 
 function installAddon(addon: any[]) {
   const ind = selectedRide.addons.indexOf(addon[0])
   if (ind === -1) {
     selectedRide.addons.push(addon[0])
-    selectedRide.cost += addon[1]
+    selectedRide.addonsCost += addon[1]
   }
   else {
     selectedRide.addons.splice(ind, 1)
-    selectedRide.cost -= addon[1]
+    selectedRide.addonsCost -= addon[1]
   }
 }
 
 function pickRideVariant(variant: any[]) {
   if (selectedRide.variant === variant[0]) {
     selectedRide.variant = ''
-    selectedRide.cost -= variant[1]
+    selectedRide.addonsCost -= variant[1]
   }
   else {
     selectedRide.variant = variant[0]
-    selectedRide.cost += variant[1]
+    selectedRide.addonsCost += variant[1]
   }
+}
+
+function buyRide() {
+  selectedRide.count += 1
+  selectedRide.cost += props.ride.cost + selectedRide.addonsCost
+  pickRide()
+}
+
+function sellRide() {
+  selectedRide.count -= 1
+  selectedRide.cost -= props.ride.cost + selectedRide.addonsCost
+  pickRide()
 }
 
 function pickRide() {

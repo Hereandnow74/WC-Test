@@ -112,6 +112,5 @@ function buyElement(title: string) {
     saveBin.cost = calcCost(saveBin.count)
     chooseBinding(props.currentBinding, saveBin)
   }
-  console.log('click')
 }
 </script>

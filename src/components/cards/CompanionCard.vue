@@ -28,7 +28,7 @@
           <div v-if="changes[charData.uid].world" class="bg-blue-700 rounded-r-lg px-2 shadow-md">
             new world
           </div>
-          <div v-if="changes[charData.uid].sub" class="bg-blue-600 rounded-r-lg px-2 shadow-md">
+          <div v-if="changes[charData.uid].sub !== undefined" class="bg-blue-600 rounded-r-lg px-2 shadow-md">
             new subcategory
           </div>
           <div v-if="changes[charData.uid].name" class="bg-gray-800 rounded-r-lg px-2 shadow-md">
@@ -55,8 +55,8 @@
             <div v-if="changes[charData.uid].world" class="">
               <strong>Old World</strong>: {{ changes[charData.uid].world }}
             </div>
-            <div v-if="changes[charData.uid].sub" class="">
-              <strong>Old subcategory</strong>: {{ changes[charData.uid].sub }}
+            <div v-if="changes[charData.uid].sub !== undefined" class="">
+              <strong>Old subcategory</strong>: {{ changes[charData.uid].sub || 'None' }}
             </div>
             <div v-if="changes[charData.uid].name" class="">
               <strong>Old name</strong>: {{ changes[charData.uid].name }}
