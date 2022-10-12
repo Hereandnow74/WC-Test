@@ -86,7 +86,7 @@ const options = {
 const fuse = new Fuse(Object.values(waifuTags), options)
 const listEl = ref<HTMLElement|null>(null)
 
-const searchResult = computed(() => fuse.search(newTag.value || '!^xxx'))
+const searchResult = computed(() => newTag.value ? fuse.search(newTag.value || '!^xxx') : fuse.search('!^xxx').sort((a, b) => a.item.tag.localeCompare(b.item.tag)))
 
 let list = null
 watch(searchResult, () => {

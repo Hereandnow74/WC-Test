@@ -25,6 +25,9 @@
           <div v-if="changes[charData.uid].image !== undefined" class="bg-green-600 rounded-r-lg px-2 shadow-md">
             new image
           </div>
+          <div v-if="changes[charData.uid].nsfw !== undefined" class="bg-pink-500 rounded-r-lg px-2 shadow-md">
+            new nsfw image
+          </div>
           <div v-if="changes[charData.uid].world" class="bg-blue-700 rounded-r-lg px-2 shadow-md">
             new world
           </div>
@@ -51,6 +54,11 @@
           <div>
             <div v-if="changes[charData.uid].source !== undefined" class="">
               <strong>Old image</strong>: <a class="text-blue-500 underline" :href="changes[charData.uid].source" target="_blank" rel="noopener noreferrer">link</a>
+            </div>
+            <div v-if="changes[charData.uid].nsfw !== undefined" class="">
+              <strong>Old nsfw image</strong>:
+              <a v-if="changes[charData.uid].nsfw !== 'None'" class="text-blue-500 underline" :href="changes[charData.uid].nsfw" target="_blank" rel="noopener noreferrer">link</a>
+              <span v-else>None</span>
             </div>
             <div v-if="changes[charData.uid].world" class="">
               <strong>Old World</strong>: {{ changes[charData.uid].world }}

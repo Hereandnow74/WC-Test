@@ -407,7 +407,7 @@ export function chooseDefense(def: PerkFull, saveData: Perk) {
   if (defenseAvailable(def)) {
     const ind = findIndex(defensePerks.value, { title: def.title })
     if (ind !== -1) {
-      if ((saveData.complex && saveData.complex.length > 0) || (defensePerks.value[ind].count !== saveData.count || saveData.defDiscount !== defensePerks.value[ind].defDiscount)) {
+      if ((defensePerks.value[ind].count !== saveData.count || saveData.defDiscount !== defensePerks.value[ind].defDiscount) && saveData.count !== 0) {
         defensePerks.value[ind] = saveData
       }
       else {

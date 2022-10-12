@@ -20,16 +20,20 @@
           <a href="https://imgur.com" target="_blank" rel="noopener noreferrer">Imgur</a>
         </div>
       </Note>
+      <Note type="warning" title="R63 images">
+        Due to popular vote male characters with R63 images will not be accepted. NSFW R63 images are allowed though.
+      </Note>
       <h3>Rules are sorted in order of importance and <b>forbidding</b> in nature, while breaking lower ones can still be tolerated, it will increase the chance that your character won't be added, top ones is flat out no.</h3>
-      <ul class="list-disc list-inside">
+      <ul class="list-decimal list-inside">
         <li>Duplicates / Gender Bender / Alternative looking ones of <b>already existing</b> characters</li>
-        <li>Lolicon in NSFW images</li>
-        <li>Characters that use not <b>their own image</b></li>
+        <li>Lolicon in NSFW images.</li>
+        <li>Characters that use not <b>their own image.</b></li>
         <li>Characters with a <b>photo</b> where an <b>art</b> option is available. Photos of real people that did not reached 18 years old.</li>
-        <li>Original Characters that didn't appeared anywhere or don't have <b>original art</b> (if you can't find them in google they don't exist)</li>
-        <li>Tier 1-2 characters with <b>bad images</b> or from relatively <b>unpopular</b> works</li>
-        <li>NSFW images that not NSFW in nature won't be accepted</li>
-        <li>Bad quality images</li>
+        <li>Original Characters that didn't appeared anywhere or don't have <b>original art</b> (if you can't find them in google they don't exist).</li>
+        <li>Alternative versions of same characters.</li>
+        <li>Tier 1-2 characters with <b>bad images</b> or from relatively <b>unpopular</b> works.</li>
+        <li>NSFW images that not NSFW in nature won't be accepted.</li>
+        <li>Bad quality images.</li>
       </ul>
     </div>
   </Modal>

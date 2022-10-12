@@ -52,7 +52,7 @@
       >
       </PerkCard>
     </div>
-    <AddRide v-if="showAddRide" @click="toggleShowAddRide" />
+    <AddRide v-if="showAddRide" @click="showAddRide = false" />
   </div>
 </template>
 

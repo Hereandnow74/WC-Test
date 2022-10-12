@@ -1,6 +1,25 @@
 [
   
   {
+    "conditions": [
+      {
+        "value": "Don't use any powers you don't gain in a VRMMO"
+      }
+    ],
+    "desc": "Win a Bullet of Bullets Tournament in Gun Gale Online by eliminating all other players! This can be any of the specific events on the American or Japanese servers for the game including the one where Kirito and Sinon compete.",
+    "reward": "50",
+    "loca": "Sword Art Online",
+    "budget": 55,
+    "title": "Win a Bullet of Bullets Event",
+    "author": "TDon123",
+    "scope": "Quick",
+    "rewardType": "Credits",
+    "image": "",
+    "objectives": [],
+    "source": "",
+    "uid": "fnEXX"
+  },
+  {
     "scope": "Grand",
     "rewardType": "Perks",
     "reward": "All Catch a Ride Upgrades and 1 free purchase of Catch a ride Plus",
@@ -561,9 +580,7 @@
     ]
   },
   {
-    "reward": "TS I and II of Captain Marvel aka Carol Danvers, Capture of Captain Marvel",
-    "desc": "Captain Marvel is bitch, we all know that. You know what contractor ? Why don't you take her down her high horse and show her a righteous place ? Your mission is simple: Make that bitch, YOUR bitch.",
-    "scope": "Standard",
+    "image": "https://i.imgur.com/nR8mSBT.jpeg",
     "conditions": [
       {
         "value": "Binding are forbidden, do this the old way, Company style"
@@ -572,12 +589,19 @@
         "value": "Everything is fair game"
       }
     ],
+    "scope": "Standard",
     "source": "",
+    "loca": "Marvel",
+    "rewardType": "Other",
+    "reward": "TS I and II of Captain Marvel aka Carol Danvers, Capture of Captain Marvel",
+    "author": "AusthinH7",
+    "desc": "Captain Marvel is bitch, we all know that. You know what contractor ? Why don't you take her down her high horse and show her a righteous place ? Your mission is simple: Make that bitch, YOUR bitch.",
+    "budget": 1500,
     "objectives": [
       {
         "type": "Credits",
-        "value": "Make Carol acknowledge her faults, force is authorized",
-        "reward": "50"
+        "reward": "50",
+        "value": "Make Carol acknowledge her faults, force is authorized"
       },
       {
         "value": "'Train' her into a proper maid",
@@ -585,13 +609,8 @@
         "reward": "50"
       }
     ],
-    "rewardType": "Other",
-    "title": "Bitch Smack !",
-    "image": "https://i.imgur.com/xeDsexW.jpeg",
-    "author": "AusthinH7",
-    "budget": 1500,
-    "loca": "Marvel",
-    "uid": "kHUyN"
+    "uid": "kHUyN",
+    "title": "Bitch Smack !"
   },
   {
     "desc": "Have a threesome with a pair of siblings.",
@@ -1302,20 +1321,10 @@
     "uid": "SygdN"
   },
   {
-    "objectives": [
-      {
-        "type": "Perks",
-        "reward": " Soul Talent and you gain a TS II for Berserker Heracles.",
-        "value": "Find a way to purify the Holy Grail and have Illya actually gain the True Magic of the Einzbern without dying or dooming humanity. "
-      }
-    ],
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1020005823264600155/42116112830c9b74d588084b3350d216.png",
-    "reward": "Irisviel von Einzbern, Kiritsugu Emiya, Hisau Maya and Natalia Kaminski are revived and bound to you. 50% of the capture value of every Servant you defeated in combat.",
-    "desc": "Illyasviel von Einzbern is expected to become master of servant Berserker during the 5th Holy Grail War. Unfortunately her fate during it rarely leads to a happy ending. At best she can hope to live a few more years beyond the war, dying young but at least with bittersweet happiness on her lips. At other times she sacrifices her life for the sake of her adopted sibling. Worst case she ends up dying painfully, heart ripped out after her protector got slaughtered trying to defend her. We of the Company are curious to see if a sponsored guardian of ours could do better, which is where you come in. For this mission you will replace Berserker as Illya's Servant and his job to protect her from danger. Your victory conditions are for her to survive the Grail War, have her health problems fixed and deal with her adopted sibling.",
-    "loca": "Nasuverse",
-    "title": "Snow Fairy's Bodyguard",
-    "budget": 360,
     "rewardType": "Companions",
+    "source": "",
+    "uid": "Syplv",
+    "budget": 360,
     "scope": "Standard",
     "conditions": [
       {
@@ -1331,9 +1340,19 @@
         "value": "Either get Illya her revenge on Emiya Shirou or fix the relationship between the estranged siblings. "
       }
     ],
-    "author": "Heaven Canceler",
-    "source": "",
-    "uid": "Syplv"
+    "desc": "Illyasviel von Einzbern is expected to become master of servant Berserker during the 5th Holy Grail War. Unfortunately her fate during it rarely leads to a happy ending. At best she can hope to live a few more years beyond the war, dying young but at least with bittersweet happiness on her lips. At other times she sacrifices her life for the sake of her adopted sibling. Worst case she ends up dying painfully, heart ripped out after her protector got slaughtered trying to defend her. We of the Company are curious to see if a sponsored guardian of ours could do better, which is where you come in. For this mission you will replace Berserker as Illya's Servant and his job to protect her from danger. Your victory conditions are for her to survive the Grail War, have her health problems fixed and deal with her adopted sibling.",
+    "title": "Snow Fairy's Bodyguard",
+    "loca": "Nasuverse",
+    "reward": "Irisviel von Einzbern, Kiritsugu Emiya, Hisau Maya and Natalia Kaminski are revived and bound to you. 50% of the capture value of every Servant you defeated in combat.",
+    "objectives": [
+      {
+        "reward": " Soul Talent and you gain a TS I and II for Berserker Heracles.",
+        "type": "Perks",
+        "value": "Find a way to purify the Holy Grail and have Illya actually gain the True Magic of the Einzbern without dying or dooming humanity. "
+      }
+    ],
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1020005823264600155/42116112830c9b74d588084b3350d216.png",
+    "author": "Heaven Canceler"
   },
   {
     "image": "https://i.imgur.com/0xJBMOr.png",
@@ -1672,34 +1691,39 @@
     "uid": "yffVB"
   },
   {
+    "uid": "suiFg",
+    "budget": 1250,
+    "reward": "A full copie of UNSC fortress world of Reach in your Sweet Home Expansion, UNCS infrastructure include",
+    "loca": "Halo - Reach",
     "desc": "July 24, 2552, the Covenant are here. To make humanity bleed, strike them where it hurts, by taking down the fortress world, Reach. That's where you came in Contractor. Objectif : Save Reach at any cost.",
-    "author": "AusthinH7",
     "source": "",
+    "title": "Reach Upon the Stars",
     "objectives": [
       {
         "value": "Save Noble Team",
-        "reward": "Spartan III Programm's full information (Data, serum formula, training, equipment blueprints, etc).",
+        "type": "Other",
+        "reward": "Spartan III Programm's full information (Data, serum formula, training, equipment blueprints, etc)."
+      },
+      {
+        "reward": "Spartan II TS1 and 2 or 100 credits.",
+        "value": "Make sure Chief and Pillar of Autumn crew reach Installation 04",
         "type": "Other"
+      },
+      {
+        "reward": "50 credits by Spartans saved",
+        "type": "Credits",
+        "value": "Save the Spartans"
       },
       {
         "type": "Other",
-        "reward": "Spartan II TS1 and 2 or 100 credits.",
-        "value": "Make sure Chief reach Installation 04"
-      },
-      {
-        "type": "Credits",
-        "value": "Save the Spartans",
-        "reward": "50 credits by Spartans saved"
-      },
-      {
-        "reward": "600 credits or 300 Headhunters Spartan III companion",
-        "value": "Save Reach in the shadow ",
-        "type": "Other"
+        "value": "Save Reach without revealing who you are",
+        "reward": "600 credits or 300 Headhunters Spartan III companion"
       }
     ],
-    "title": "Reach Upon the Stars",
-    "budget": 1250,
-    "uid": "suiFg",
+    "scope": "Grand",
+    "rewardType": "Other",
+    "author": "AusthinH7",
+    "image": "https://i.imgur.com/sSPpPEd.jpeg",
     "conditions": [
       {
         "value": "May not be anything else than Human, Cyborg or AI."
@@ -1707,12 +1731,7 @@
       {
         "value": "Companion's Tier may not be above 7."
       }
-    ],
-    "image": "https://i.imgur.com/sSPpPEd.jpeg",
-    "loca": "Halo - Reach",
-    "rewardType": "Other",
-    "reward": "A full copie of UNSC fortress world of Reach in your Sweet Home Expansion, UNCS infrastructure include",
-    "scope": "Grand"
+    ]
   },
   {
     "reward": "Psychic Talent or a Template Stacking of a Psychic  power or a character with Psychic  tag, or 25 credits.",

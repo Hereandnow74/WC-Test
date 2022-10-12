@@ -37,6 +37,8 @@ export const nicknames = [
   'Just_A_Knight',
   'Kevin S.',
   'Beatrix',
+  'Joe T.',
+  'Cynicalto',
   'Zerlestes',
 ]
 
@@ -237,6 +239,7 @@ export const waifuTags = {
   os: { tag: 'Onee-san', short: 'os', effect: '', desc: 'Personality type that always takes care of others', color: 'bg-teal-500 text-black' },
   ci: { tag: 'Chuuni', short: 'ci', effect: '', desc: '', color: 'bg-teal-500 text-black' },
   gi: { tag: 'Genki', short: 'gi', effect: '', desc: '', color: 'bg-teal-500 text-black' },
+  ge: { tag: 'Generic', short: 'ge', effect: '', desc: 'For generic entries like pokemons, MGE monster girls, etc.', color: 'bg-teal-500 text-black' },
 
   U: { tag: 'By User', short: 'U', effect: '', desc: 'Characters that were added to Interactive by users, applied automatically to all submitted characters', color: 'bg-warm-gray-600' },
 } as const
