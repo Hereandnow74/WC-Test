@@ -596,7 +596,10 @@ export function writeBuildValues(build: any) {
   baseBudget.value = build.baseBudget || 0
   startingWorld.value = build.startingWorld
   startingOrigin.value = build.startingOrigin
-  coupleOrigin.value = build.coupleOrigin
+  coupleOrigin.value = build.coupleOrigin || {
+    title: '',
+    cost: 0,
+  }
   intensities.value = build.intensities || []
   binding.value = build.binding || []
   otherPerks.value = build.otherPerks || []

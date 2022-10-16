@@ -61,7 +61,7 @@
         </div>
       </div>
     </div>
-    <ImpExpChars v-if="showImpExpChars" @click="toggleImpExpChars" />
+    <ImpExpChars v-if="showImpExpChars" @click="showImpExpChars = false" />
   </Modal>
 </template>
 

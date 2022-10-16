@@ -71,6 +71,9 @@
             </div>
             <div v-if="changes[charData.uid].tier" class="">
               <strong>Old tier</strong>: {{ changes[charData.uid].tier }}
+              <div v-if="changes[charData.uid].arg">
+                <strong>Argument for change</strong>: {{ changes[charData.uid].arg }}
+              </div>
             </div>
             <div v-if="changes[charData.uid].tags" class="whitespace-nowrap">
               <div class="flex flex-wrap gap-1 text-sm">

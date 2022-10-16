@@ -6,6 +6,16 @@
       </h2>
       <div>
         <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          12 October 2022
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>150 new user submitted characters, 11 new worlds, new missions.</li>
+          <li>Arguments for tier change for characters now visible.</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
           08 October 2022
         </h3>
         <ul class="list-decimal list-inside">

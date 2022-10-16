@@ -3,6 +3,162 @@
   {
     "conditions": [
       {
+        "value": "Someone with the Blood of Aenarion walks through the fires of Asuryan and becomes the Phoenix King"
+      },
+      {
+        "value": "Capture targets that are a part of rival kingdoms cannot be affected by bindings, until after they submit to your rule."
+      },
+      {
+        "value": "Elvenkind is united under the Phoenix Kings banner"
+      }
+    ],
+    "budget": 1200,
+    "rewardType": "Perks",
+    "desc": "Elvenkind has been shattered for too long. Have someone descended from Aenarion the Defender, become the Phoenix King and reunite all the Elves under one banner.",
+    "title": "True Phoenix King",
+    "reward": "Template Stacking of Asuryan",
+    "source": "",
+    "objectives": [
+      {
+        "type": "Credits",
+        "value": "Capture and Control Naggarond",
+        "reward": "10"
+      },
+      {
+        "value": "Capture and Control Clar Karond",
+        "reward": "10",
+        "type": "Credits"
+      },
+      {
+        "type": "Credits",
+        "reward": "10",
+        "value": "Capture and Control Karond Kar"
+      },
+      {
+        "type": "Credits",
+        "reward": "10",
+        "value": "Capture and Control Har Ganeth"
+      },
+      {
+        "reward": "10",
+        "value": "Capture and Control Ghrond",
+        "type": "Credits"
+      },
+      {
+        "value": "Capture and Control Hag Graef",
+        "reward": "10",
+        "type": "Credits"
+      },
+      {
+        "reward": "10",
+        "value": "Capture and Control the Ancient City of Quintex",
+        "type": "Credits"
+      },
+      {
+        "value": "Capture the Ruler of each Dark Elven City",
+        "type": "Other",
+        "reward": "Template Stack of Sorceress or 20 credits"
+      },
+      {
+        "type": "Credits",
+        "reward": "10",
+        "value": "Capture and Control Eataine"
+      },
+      {
+        "reward": "10",
+        "type": "Credits",
+        "value": "Capture and Control Caledor"
+      },
+      {
+        "value": "Capture and Control Avelorn",
+        "type": "Credits",
+        "reward": "10"
+      },
+      {
+        "type": "Credits",
+        "reward": "10",
+        "value": "Capture and Control Ellyrion"
+      },
+      {
+        "type": "Credits",
+        "reward": "10",
+        "value": "Capture and Control Saphery"
+      },
+      {
+        "reward": "10",
+        "value": "Capture and Control Yvresse",
+        "type": "Credits"
+      },
+      {
+        "type": "Credits",
+        "reward": "10",
+        "value": "Capture and Control Cothique"
+      },
+      {
+        "value": "Capture and Control Chrace",
+        "type": "Credits",
+        "reward": "10"
+      },
+      {
+        "type": "Credits",
+        "reward": "10",
+        "value": "Capture and Control Nagarythe "
+      },
+      {
+        "type": "Credits",
+        "reward": "10",
+        "value": "Capture and Control Tiranoc "
+      },
+      {
+        "type": "Other",
+        "value": "Capture the Ruler of each High Elves Kingdom",
+        "reward": "Template Stacking of Lore master of Hoeth or 20 credits"
+      },
+      {
+        "reward": "20",
+        "type": "Credits",
+        "value": "Capture and Control the Oak of Ages "
+      },
+      {
+        "type": "Other",
+        "reward": "Template stacking of Waystalker, or 20 credits",
+        "value": "Capture Ariel and Orion"
+      }
+    ],
+    "loca": "Warhammer Fantasy",
+    "scope": "Standard",
+    "image": "https://i.pinimg.com/originals/44/3e/c1/443ec15fa86575441393cd58dbdd6f94.jpg",
+    "author": "Rhivan",
+    "uid": "eCVVi"
+  },
+  {
+    "conditions": [
+      {
+        "value": "it really doesn't matter whether you go all guardian angel or substitute into one of the main cast just get the damn job done"
+      }
+    ],
+    "author": "jollymerr",
+    "objectives": [
+      {
+        "value": "We'll add in an extra 35 creds if you humiliate adam smasher before either his termination or capture (he's in high demand right now, ALOT of people want do unspeakable things that bastard)",
+        "type": "Credits",
+        "reward": "35"
+      }
+    ],
+    "rewardType": "Credits",
+    "desc": "Yeah David got a shit hand and for that matter so did Rebecca, so at the behest of many, MANY of our paying customers we're cheating and stacking the deck, \nyour mission should you choose to accept it: ensure the survival of the main cast past 2076 (Minus kiwi fuk dat bitch up)",
+    "loca": "Cyberpunk 2077",
+    "source": "",
+    "budget": 590,
+    "image": "https://i.imgur.com/h9MiWGt.jpg",
+    "reward": "100",
+    "title": "Somebody's winning in Night City",
+    "scope": "Standard",
+    "uid": "VkeMj"
+  },
+  {
+    "conditions": [
+      {
         "value": "Don't use any powers you don't gain in a VRMMO"
       }
     ],

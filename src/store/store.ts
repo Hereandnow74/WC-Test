@@ -325,6 +325,11 @@ watch(isCouple, () => {
   }
 })
 
+watch(() => budgetMods.value.sell11, () => {
+  if (budgetMods.value.sell11 === undefined)
+    budgetMods.value.sell11 = 0
+})
+
 const targetList = computed(() => {
   const comps = companionsComp.value.map(x => (x.name))
   if (['Substitute', 'Possess'].includes(startingOrigin.value.title))

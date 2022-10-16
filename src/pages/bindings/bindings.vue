@@ -107,7 +107,7 @@
       </PerkCard>
     </template>
     <ShroudElements v-if="showElements" :current-binding="currentBinding" @click="showElements = false" @close="showElements = false" />
-    <RitualCircle v-if="showRitual" @click="toggleRitual" />
+    <RitualCircle v-if="showRitual" @click="showRitual = false" />
     <div class="h-8"></div>
   </div>
 </template>

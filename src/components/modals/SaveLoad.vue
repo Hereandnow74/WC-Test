@@ -5,7 +5,7 @@
         <Input v-model="filter" placeholder="Filter by name of the save" />
         <Button size="Small" label="Clear" bg-color="bg-red-500" @click="filter = ''" />
       </div>
-      <div class="flex flex-col gap-2 pb-4 md:px-2 overflow-y-auto">
+      <div class="flex flex-col gap-2 pb-4 md:px-2 overflow-y-auto scrollbar">
         <div
           v-for="save in sortedSaveList"
           :key="save.worldName"

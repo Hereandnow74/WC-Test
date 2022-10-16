@@ -891,7 +891,7 @@
       },
       {
         "name": "New World",
-        "rating": 8,
+        "rating": 7,
         "a": "c"
       },
       {
@@ -1058,6 +1058,41 @@
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/991001283966165112/7a7392e7d1c42998a2dcc8125dd3f89a.jpg",
     "additional": "Fatality Defense will protect against Mavis’s Curse of Contradiction. Purchased or captured Mavises will have their curses converted into a form of death magic under her complete control. This conversion will remain even after her master’s demise. Purchasing Irene gets you Heine & Juliet for free as her familiars. Kinana can assume her Cubellios form at will.",
     "condition": [
+      {
+        "name": "Canon Start (X777 to Tenrou Arc)",
+        "a": "c",
+        "rating": 5
+      },
+      {
+        "name": "Edolas World",
+        "a": "c",
+        "rating": 5
+      },
+      {
+        "name": "Post-Tenrou Arc to Second Timeskip",
+        "a": "c",
+        "rating": 6
+      },
+      {
+        "name": "Alvarez Arc",
+        "a": "c",
+        "rating": 7
+      },
+      {
+        "name": "Elentir World",
+        "a": "c",
+        "rating": 7
+      },
+      {
+        "name": "Hundred Years' Quest",
+        "a": "c",
+        "rating": 8
+      },
+      {
+        "name": "Dragon Civil War",
+        "a": "c",
+        "rating": 8
+      },
       {
         "name": "Dragon War (400 years in the past)",
         "rating": 8
