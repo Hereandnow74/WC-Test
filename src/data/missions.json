@@ -1,5 +1,166 @@
 [
-  
+  {
+    "budget": 200,
+    "conditions": [
+      {
+        "value": "Start after Malty is convicted after the Three Heroes' Church mess"
+      },
+      {
+        "value": "Capture princess Melty Q. Melromarc through love declaration."
+      },
+      {
+        "value": "Kidnap Queen Mirelia Q. Melromarc and rape her into taking your Binding (Malty has been specific in this)."
+      },
+      {
+        "value": "Also capture princess Malty (she asked to DRAG DOWN the others with her, after all). You're free to use whatever mean you wish."
+      }
+    ],
+    "source": "",
+    "title": "Despair of the Red Princess",
+    "image": "",
+    "desc": "Remember Malty S. Melromarc, the villainess from Rising of the Shield Hero? Turns out she has an excuse, namely her dear mother having betrothed her to her perverted uncle infamous for raping his wives to death, and she's gone sociopathic and insane out of despair. Insane enough that now that she's been exposed for scamming she just decided to try and summon a demon to at least drag down her mother and sister with her. Go and grant her wish, OK?",
+    "rewardType": "Credits",
+    "author": "Ratcatcher",
+    "objectives": [
+      {
+        "type": "Credits",
+        "reward": "400 credits",
+        "value": "Defeat and capture the Four Heroes"
+      },
+      {
+        "reward": "Malty's tier raised to 6",
+        "value": "Have Malty receive the Vassal Staff before capturing her",
+        "type": "Companions"
+      },
+      {
+        "value": "Conquer Melromarc and install Malty as the new queen",
+        "reward": "1000 credits",
+        "type": "Credits"
+      }
+    ],
+    "scope": "Standard",
+    "reward": "200 credits",
+    "loca": "Rising of the Shield Hero",
+    "uid": "ahrUR"
+  },
+  {
+    "source": "https://forum.questionablequesting.com/threads/there-goes-sixty-years-of-planning-fate-cyoa.16557/",
+    "conditions": [
+      {
+        "value": "Win the Great Holy Grail War"
+      }
+    ],
+    "loca": "Fate/Apocrypha",
+    "scope": "Standard",
+    "objectives": [
+      {
+        "value": "Capture between 2-7 Servants and complete the primary mission",
+        "type": "Credits",
+        "reward": "(sub-mission reward depends on number of Servants captured)"
+      },
+      {
+        "reward": "(sub-mission reward depends on number of Servants Sold)",
+        "value": "Sell between 2-7 Servants and complete the primary mission ",
+        "type": "Credits"
+      }
+    ],
+    "desc": "Win the Great Holy Grail War",
+    "title": "Win the Great Holy Grail War",
+    "reward": "Custom",
+    "image": "",
+    "budget": 365,
+    "rewardType": "Credits",
+    "author": "Shiras54",
+    "uid": "qLAKM"
+  },
+  {
+    "conditions": [
+      {
+        "value": "You can't choose this contract if your chosen world is not a  mundane world.(magic free, Metashift can be used to make the contract available)"
+      },
+      {
+        "value": "You are Limited to Tier 6 Until the 10 Years are up or you succesfully awaken enough Psionics to reach 50%."
+      }
+    ],
+    "author": "Demontty",
+    "source": "",
+    "reward": "a Heritage Perk for free.",
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "gain Blessed Talent and 30 Credits",
+        "value": " Reach 50% Psionic population on your world before 10 years are up.",
+        "type": "Perks"
+      },
+      {
+        "reward": "50% off  Advanced Template Stacking(Arcane) ",
+        "value": "Create a Psionic Archive of all of your Teachings and leave it behind to be discovered before 10 years are up.(The Archive must have all the information required to become a Tier 6 Psionic at a minimum, wether you choose to make is soo only Psionics can learn from the Archive is up to you)",
+        "type": "Perks"
+      }
+    ],
+    "loca": "Generic",
+    "title": "Offering from the Beyond",
+    "image": "https://stellaris.paradoxwikis.com/images/f/f5/Shroud_room.png",
+    "rewardType": "Perks",
+    "budget": 35,
+    "desc": "The Stellaris Shroud, a more toned down version of Warhammer 40k's warp and  regular customers of the Company. Incomprehensibly powerful ,they wish to enter other Galaxies and spread their influence into and soo they either attempt to do it themselves(the hard way, very energy intensive) or give gifts to the contractors of the company(preferably those that dont have alot of credits) to become the link to that Universe until they can establish a more permanent connection in exchange (depending on which Entity you choose the offering is different) they'll give you some nice boons to start off with and also change your world abit more, all they ask is to sit in your chosen world for 10 years until they establish a permanent connection to that universe. each year that passes 5% of the population will 'awaken' with psionic powers until it reaches 50%  after which youll be allowed to leave. Now let's get to the offerings each entity provides do note that by default you get a template stacking of Psionic  from all of them. (also as time goes on , Zro ,the psionic enhancing and highly addictive drug will become more common on your world with Deposits of it appearing out of nowhere)\nComposer of Strands:  Body Talent and Everlasting Talent for free. every year that passes a random plot relevant person gets Psionic powers Rated at Tier 6.( if there are no more plot relevant Characters then Composer will choose a random individual and will influence their path towards you)\nEater of Worlds: Martial Talent ,Psychic Talent and TS II for Psionic for free. Awakened Psionics start at  Tier 5. Every year there's a 50% chance a plot relevant character 'disappears'(read: gets eaten) as well as 2% of the non-powered population.\n Instrument of Desire : Soul Talent , Sticky Fingers and all Hypnosis App and Tantric Arts binding perks are 50% off. Every year that passes people become more needy and rebelious eventually leading to full-on rebellions , your most favorite Waifu from this World gains the Nymphomaniac trait.\nWhisperers in the Void : Covert Talent, Science Talent and Performance Talent or Communication talent. The First Psionics that awaken will be influenced to create a  Shadow Conspiracy Organization between eachother with the Sole purpose of secretly overthrowing all other governments and establishing themselves as the Global Government. The first Psionics start off at a higher tier than everyone else (Tier 6). Substance abuse(Specifically Zro) is more common in the Psionic Population",
+    "uid": "DLdCx"
+  },
+  {
+    "title": "It's more of an omniversal fistula than an abyss, really",
+    "loca": "Made in Abyss",
+    "budget": 365,
+    "image": "",
+    "conditions": [
+      {
+        "value": "You and your retinue are lowered to T6 during the mission."
+      },
+      {
+        "value": "No self-sustenance abilities."
+      },
+      {
+        "value": "Only 1 non-forage Retinue member is allowed."
+      },
+      {
+        "value": "Lures and 3rd party mental manipulation is capped at 10% of normal power and control against those outside your retinue."
+      },
+      {
+        "value": "All defenses are capped at level one."
+      },
+      {
+        "value": "For every capture you make you must have personally witnessed the death of a sophont."
+      }
+    ],
+    "desc": "We've finally located the core universes of the 'Made in Abyss' multiverse cluster and they're pretty interesting, delve to the bottom of one of those Core Abysses and experience eternity with your own eyes*. These specific 'Made in Abyss' worlds are one DR higher than normal. Warning: Regardless of Conditions your Defenses will be raised to maximum level while directly interacting with The Anomaly, Safety not guaranteed, Company is not liable for any helical trauma or conceptual sloughing. \n[1] *You don't actually need eyes where you are going.",
+    "scope": "Grand",
+    "reward": "After all desired missions are complete The Anomaly at the bottom of your Abyss is moved to your Sweet Home and mashed together with one of our rejected perks, it now functions as an equal trade based gacha system, and is rendered totally harmless.* Payment and results generally line up with each other in both complexity level and usage; if you throw something highly refined and complex into the vortex, you will receive something highly refined and complex back; if something thrown in has a specific use then you will receive an item with a similar use in return. (Antibiotics sacrificed might return healing potions, a self-casting grimoire sacrificed might return a man-portable railgun). Trades of lifeforms is not recommended without a >=Tier8 healer on standby; retinue members sacrificed in this way are gone forever and removed from your retinue. Further trades of received objects/lifeforms is not recommended at this time.",
+    "objectives": [
+      {
+        "reward": "The Abyss you survived in is transferred to your demiplane. Your home will always be at the deepest level while using this optional Demiplane transformation and the control of your Demiplane through company methods starts at weak and decreases sharply with distance from the control panel.",
+        "value": "Reach the bottom of the Abyss and live there for a year.",
+        "type": "Other"
+      },
+      {
+        "type": "Other",
+        "reward": "Anyone that freely enters a place you consider your home (even the land around it), accepts any hospitality (even something like food from your fridge while you aren't there), and sleeps there for at least three hours will from then on be capturable instantly with any binding method.",
+        "value": "Have your retinue lead at least 5 delvers to your house in the Abyss, and they must want to stay with you for at least a year. These 5 cannot be captured until they have stayed with you for a year."
+      },
+      {
+        "value": "Make an actual homey place to live in the lowest level, and you must consider it your home. Your requirements for food, water, shelter, and sleep must still be at around human levels and you must forage everything only from what the Abyss provides.",
+        "type": "Other",
+        "reward": "Even after mission completion, your Abyss remains a multiversal lost-and-found. Random 'lost' things from the multiverse find themselves in random parts of your Abyss; lost people usually arrive on the surface. These arrivals won't be inherently harmful or hostile to you."
+      },
+      {
+        "reward": "Anyone you have ever used a lure on who is lower tier or power than you will find themselves in the land above your Abyss when they die. People in your demiplane that are added in this way--or through random arrivals--cause your demiplane to automatically expand at need to support them. Anyone that dies in your Abyss or demiplane will be reborn on the surface within a millennium with their memories of previous lives sealed.",
+        "type": "Other",
+        "value": "Complete all other additional objectives."
+      }
+    ],
+    "author": "anon",
+    "rewardType": "Other",
+    "source": "",
+    "uid": "MGKJI"
+  },
   {
     "conditions": [
       {
@@ -3518,12 +3679,18 @@
     "author": "Sleepy Fluffball™"
   },
   {
-    "desc": "If you know of the Teen Titans tv show you will know of the feud between Blackfire and Starfire. What you may not know is of how it was born - out of their father's blatant abuse of his older daughter and favoritism for the younger, that eventually resulted in Blackfire just wanting to get one over her sister. A sister who still loves her, but whose patience is not infinite. Settle things right, and have them reconcile as good sisters... And your subjects and consorts, as Blackfire puts a lot of value in her birthright as the next Grand Ruler.",
-    "rewardType": "Companions",
-    "budget": 200,
+    "uid": "qLMfc",
+    "author": "Ratcatcher",
+    "scope": "Quick",
+    "objectives": [],
     "loca": "DC (space side)",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1005500365761945691/ddxz91y-4f93673d-ad2d-40eb-b5e6-2ea083085384.png",
+    "desc": "If you know of the Teen Titans tv show you will know of the feud between Blackfire and Starfire. What you may not know is of how it was born - out of their father's blatant abuse of his older daughter and favoritism for the younger, that eventually resulted in Blackfire just wanting to get one over her sister. A sister who still loves her, but whose patience is not infinite. Settle things right, and have them reconcile as good sisters... And your subjects and consorts, as Blackfire puts a lot of value in her birthright as the next Grand Ruler.",
+    "budget": 200,
+    "title": "Sisterly Reconciliation",
+    "rewardType": "Companions",
     "reward": "Instant capture of Blackfire and Starfire, their full capture price added to the credit reward",
-    "title": "Sisterly reconciliation",
+    "source": "",
     "conditions": [
       {
         "value": "The events happen in the tv show continuity, before the episode \"Betrothed\""
@@ -3540,13 +3707,7 @@
       {
         "value": "Once you've claimed them as your consorts make them completely submit. They'll be immune to overt mind control and Capture, but will feel subtler rules"
       }
-    ],
-    "source": "",
-    "objectives": [],
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1005500365761945691/ddxz91y-4f93673d-ad2d-40eb-b5e6-2ea083085384.png",
-    "author": "Ratcatcher",
-    "scope": "Quick",
-    "uid": "qLMfc"
+    ]
   },
   {
     "image": "https://i.imgur.com/1OoqqAE.jpg",
@@ -6526,9 +6687,10 @@
     "uid": "zai2X"
   },
   {
-    "scope": "Standard",
+    "title": "Lila's Miraculous Conquest",
+    "rewardType": "Credits",
+    "reward": "200 credits",
     "uid": "tGONX",
-    "author": "Ratcatcher",
     "conditions": [
       {
         "value": "Chargen only: subtitute as Lila Rossi. You only have the abilities she has at her debut"
@@ -6541,16 +6703,12 @@
       },
       {
         "value": "You must not be discovered as a villainess by anyone but Bunnyx"
+      },
+      {
+        "value": "For the purpose of this mission, Bunnyx is the one from the future of the original timeline and a distinct individual from Alix Kubdel"
       }
     ],
-    "image": "https://pbs.twimg.com/media/D1-V7erU4AUAY3T.jpg",
-    "reward": "200 credits",
     "loca": "Miraculous: Tales of Ladybug and Cat Noir",
-    "budget": 55,
-    "title": "Lila's Miraculous Conquest",
-    "desc": "Lila Rossi could have been a fearsome villainess, had it not been for her weird penchant to just disappear at random times. She'd have certainly been a more competent villain than Hawk Moth.\nYour job is to correct this, in a way: you will substitute Lila shortly before she first met Ladybug, and conquer her.",
-    "rewardType": "Credits",
-    "source": "",
     "objectives": [
       {
         "type": "Other",
@@ -6559,23 +6717,23 @@
       },
       {
         "value": "Capture Emilie Agreste",
-        "reward": "100 credits or Agreste Mansion as Grand Manor",
-        "type": "Other"
+        "type": "Other",
+        "reward": "100 credits or Agreste Mansion as Grand Manor"
       },
       {
-        "type": "Perks",
+        "reward": "Fatality Defense x2",
         "value": "Capture Adrien Agreste/Chat Noir through the same methods as the main mission",
-        "reward": "Fatality Defense x2"
-      },
-      {
-        "value": "Capture Bunnyx",
-        "reward": "Paradox Defense x2",
         "type": "Perks"
       },
       {
-        "value": "Capture Ladydragon",
         "type": "Perks",
-        "reward": "Environmental Defense x2"
+        "value": "Capture Bunnyx",
+        "reward": "Paradox Defense x2"
+      },
+      {
+        "reward": "Environmental Defense x2",
+        "value": "Capture Ladydragon",
+        "type": "Perks"
       },
       {
         "value": "Capture Aeon Hill and Jessica Kaynes",
@@ -6587,7 +6745,13 @@
         "reward": "1 TX Ticket",
         "type": "TX Tickets"
       }
-    ]
+    ],
+    "author": "Ratcatcher",
+    "source": "",
+    "image": "https://pbs.twimg.com/media/D1-V7erU4AUAY3T.jpg",
+    "budget": 55,
+    "scope": "Standard",
+    "desc": "Lila Rossi could have been a fearsome villainess, had it not been for her weird penchant to just disappear at random times. She'd have certainly been a more competent villain than Hawk Moth.\nYour job is to correct this, in a way: you will substitute Lila shortly before she first met Ladybug, and conquer her."
   },
   {
     "title": "Manton Effect?",
@@ -10720,13 +10884,6 @@
     "uid": "YxpBK"
   },
   {
-    "source": "https://starwars.fandom.com/wiki/Invasion_of_Naboo",
-    "loca": "Star Wars",
-    "title": "Help liberate Naboo",
-    "scope": "Standard",
-    "uid": "x1oww",
-    "rewardType": "Credits",
-    "reward": "50 Credits",
     "conditions": [
       {
         "value": "The Trade Federation has occupied Naboo."
@@ -10738,22 +10895,29 @@
         "value": "Padme Amidala lives "
       }
     ],
+    "rewardType": "Credits",
+    "loca": "Star Wars",
     "budget": 180,
-    "author": "Darnoc",
+    "reward": "50 Credits",
+    "uid": "x1oww",
     "desc": "The Trade Federation has occupied Naboo.\nHelp liberate Naboo from the Trade Federation occupation and make sure Queen Amidala survives.",
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990984342765465610/TF_Battleship.webp",
     "objectives": [
       {
         "type": "Other",
-        "reward": "The Lucrehulk-class Droid Control Ship becomes a \"Ride\" and you get the Ride Perk \"Catch-A-Ride Crew Training Program\".",
-        "value": "Capture the Lucrehulk-class Droid Control Ship, disable the droid army, and successfully claim the ship for yourself. Can be done by a Companion."
+        "value": "Capture the Lucrehulk-class Droid Control Ship, disable the droid army, and successfully claim the ship for yourself. Can be done by a Companion.",
+        "reward": "The Lucrehulk-class Droid Control Ship becomes a \"Ride\" and you get the Ride Perk \"Catch-A-Ride Crew Training Program\"."
       },
       {
-        "type": "Other",
         "value": "Defeat Darth Maul without killing Qui-Gon Jinn and Obi-Wan Kenobi. Can be done by a Companion.",
-        "reward": "A \"Stencil Stacking I\" made from a Jedi of your choice for you or a companion. Alternatively, 15 credits."
+        "type": "Other",
+        "reward": "A \"Template Stacking I\" made from a Jedi of your choice for you or a companion. Alternatively, 15 credits."
       }
-    ]
+    ],
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990984342765465610/TF_Battleship.webp",
+    "scope": "Standard",
+    "author": "Darnoc",
+    "title": "Help liberate Naboo",
+    "source": "https://starwars.fandom.com/wiki/Invasion_of_Naboo"
   },
   {
     "loca": "Danmachi",

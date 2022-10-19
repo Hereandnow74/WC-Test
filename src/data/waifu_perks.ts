@@ -1443,10 +1443,12 @@ export const waifu_perks: WaifuPerk[] = [
     title: 'The Everdistant Utopia',
     waifu: [
       'Artoria Pendragon',
+      'Arthur Pendragon',
     ],
     from: 'Nasuverse',
     waifuUID: [
       9836,
+      2161,
     ],
     tier: 8,
     image: 'https://i.imgur.com/4MKhpON.png?1',

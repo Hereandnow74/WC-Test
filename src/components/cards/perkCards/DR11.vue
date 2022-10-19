@@ -54,18 +54,18 @@ const emit = defineEmits(['chooseIntensity'])
 
 const perkImg = ref<HTMLImageElement | null>(null)
 
-function allTalents() {
+function allTalents(cost = false) {
   talents.slice(0, 13).forEach((tl) => {
     if (talentAvailable(tl) && findIndex(talentPerks.value, { title: tl.title }) === -1)
-      chooseTalent(tl, { title: tl?.title, cost: tl?.cost })
+      chooseTalent(tl, { title: tl?.title, cost: cost ? tl?.cost : 0, count: 1 })
   })
 }
 
-function allDefenses() {
+function allDefenses(cost = false) {
   defenses.forEach((def) => {
     if (defenseAvailable(def)) {
       const ind = findIndex(defensePerks.value, { title: def.title })
-      if (ind === -1) chooseDefense(def, { title: def?.title, cost: def?.cost * 2, count: 2 })
+      if (ind === -1) chooseDefense(def, { title: def?.title, cost: cost ? def?.cost : 0 * 2, count: 2 })
     }
   })
 }

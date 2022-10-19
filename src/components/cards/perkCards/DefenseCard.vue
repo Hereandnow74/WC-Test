@@ -11,6 +11,7 @@
         @click.stop
       />
       <NumberInput
+        v-if="settings.rebates"
         v-model="perkToSave.defDiscount"
         class="mx-1 inline-block text-base"
         label="Discount"
@@ -22,10 +23,10 @@
     </template>
     <template #cost>
       <span text="gray-500 dark:gray-400" class="whitespace-nowrap">
-        (Cost: <span text="green-600 dark:green-300">{{ displayedCost }}</span>
-        <span v-if="perkToSave.defDiscount" text="amber-600 dark:amber-300">
+        <span>(Cost: </span><span text="green-600 dark:green-300">{{ displayedCost }}</span>
+        <span v-if="discountedCost !== displayedCost" text="amber-600 dark:amber-300">
           [{{ discountedCost }}]</span>
-        )
+        <span>)</span>
       </span>
     </template>
   </GenericPerkCard>
@@ -33,6 +34,7 @@
 
 <script lang='ts' setup>
 import { filterObject } from '~/logic'
+import { useStore } from '~/store/store'
 
 const props = defineProps({
   perk: {
@@ -49,6 +51,7 @@ const props = defineProps({
   },
 })
 
+const { settings, defenseRetinueDiscountAuto } = useStore()
 const emit = defineEmits(['pickPerk'])
 
 const perkToSave = reactive({
@@ -65,32 +68,37 @@ const displayedCost = computed(() => {
 const freeCount = computed(() => ((props.savedPerk.count || 0) * props.perk.cost - (props.savedPerk.cost || 0)) / props.perk.cost)
 
 const discountedCost = computed(() => {
-  if (!perkToSave.defDiscount) return
-  if (perkToSave.count <= 1) {
-    switch (perkToSave.defDiscount) {
-      case 1:
-        return displayedCost.value * 0.6
-      case 2:
-        return displayedCost.value * 0.2
-      case 3:
-        return 0
-      default:
-        return 0
+  if (settings.value.rebates) {
+    if (!perkToSave.defDiscount) return
+    if (perkToSave.count <= 1) {
+      switch (perkToSave.defDiscount) {
+        case 1:
+          return displayedCost.value * 0.6
+        case 2:
+          return displayedCost.value * 0.2
+        case 3:
+          return 0
+        default:
+          return 0
+      }
+    }
+    else {
+      switch (perkToSave.defDiscount) {
+        case 1:
+          return displayedCost.value * 0.8
+        case 2:
+          return displayedCost.value * 0.6
+        case 3:
+          return displayedCost.value * 0.4
+        case 4:
+          return displayedCost.value * 0.2
+        case 5:
+          return 0
+      }
     }
   }
   else {
-    switch (perkToSave.defDiscount) {
-      case 1:
-        return displayedCost.value * 0.8
-      case 2:
-        return displayedCost.value * 0.6
-      case 3:
-        return displayedCost.value * 0.4
-      case 4:
-        return displayedCost.value * 0.2
-      case 5:
-        return 0
-    }
+    return displayedCost.value - (defenseRetinueDiscountAuto.value[props.perk.title] ? defenseRetinueDiscountAuto.value[props.perk.title].discount : 0)
   }
 })
 

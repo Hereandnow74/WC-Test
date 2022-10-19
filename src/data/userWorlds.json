@@ -4860,27 +4860,27 @@
   {
     "worldName": "Delicious in Dungeon",
     "rating": 6,
-    "image": ""
+    "image": "https://img1.ak.crunchyroll.com/i/spire4/0d73900670b3eb0db14dbb937f24473f1660054173_main.png"
   },
   {
     "worldName": "He Who Fights Monsters",
     "rating": 10,
-    "image": ""
+    "image": "https://amusementmuse.com/wp-content/uploads/2022/04/He-Who-Fights-with-Monsters.jpg"
   },
   {
     "worldName": "Pandora Hearts",
     "rating": 5,
-    "image": ""
+    "image": "https://theawesomeone.com/wp-content/uploads/2022/01/Pandora-Hearts-Season-2-Images-1.jpg"
   },
   {
     "worldName": "Sidonia no Kishi",
     "rating": 8,
-    "image": ""
+    "image": "https://d1fz32b7q4znht.cloudfront.net/wp-content/uploads/2015/04/Sidonia-no-Kishi-II.jpg"
   },
   {
     "worldName": "Xiaolin Showdown",
     "rating": 4,
-    "image": ""
+    "image": "https://i.redd.it/klt1638qxuu81.png"
   },
   {
     "worldName": "A Practical Guide to Evil",
@@ -4890,6 +4890,7 @@
   {
     "worldName": "Call of Duty",
     "rating": 4,
+    "image": "https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/mw2/home/reveal/new-era/new_era-mw2.jpg",
     "condition": [
       {
         "rating": 4,
@@ -4923,7 +4924,7 @@
   {
     "worldName": "Mobile Suit Gundam",
     "rating": 8,
-    "image": "",
+    "image": "https://wallpaperaccess.com/full/1455346.jpg",
     "condition": [
       {
         "name": "Universal Century",
@@ -4940,7 +4941,7 @@
     ]
   },
   {
-    "worldName": "Nekopara ",
+    "worldName": "Nekopara",
     "rating": 1,
     "image": "https://i.imgur.com/V7CGb5l.jpg"
   },
@@ -4963,19 +4964,21 @@
       }
     ]
   },
-  {"worldName":"Beastars","rating":4,"image":""},
+  {"worldName":"Beastars","rating":4,"image":"https://www.kolpaper.com/wp-content/uploads/2021/03/Beastars-Wallpaper-11.jpg"},
   {"worldName":"Dead or Alive","rating":3,"image":"https://getwallpapers.com/wallpaper/full/7/5/c/401642.jpg"},
   {"worldName":"Lobotomy Corporation","rating":7,"image":"https://cdn.donmai.us/original/3f/16/__angela_tiphereth_a_netzach_malkuth_gebura_and_7_more_project_moon_and_1_more_drawn_by_kankan33333__3f16951867c823cc5f20f2b733c7b788.jpg"},
-  {"worldName":"My Son is So Cute I Just Cant Help Myself","rating":3,"image":""},
-  {"worldName":"A-Channel","rating":1},
-  {"worldName":"Absolute Duo","rating":3},
-  {"worldName":"Air Gear","rating":3},
-  {"worldName":"Aldnoah.Zero","rating":7},
+  {"worldName":"My Son is So Cute I Just Cant Help Myself","rating":3,"image":"https://mangametalsite.files.wordpress.com/2017/10/aaaab.jpg?w=1024"},
+  {"worldName":"A-Channel","rating":1,"image":"http://images4.fanpop.com/image/photos/21700000/run-yuuko-tooru-nagi-a-channel-21705269-2560-1600.jpg"},
+  {"worldName":"Absolute Duo","rating":3,"image":"https://animetide.com/wp-content/uploads/absolute-duo-season-2.jpg"},
+  {"worldName":"Air Gear","rating":3,"image":"https://is1-ssl.mzstatic.com/image/thumb/N4McP5zIujRFfNpVCoLnKA/1200x675.jpg"},
+  {"worldName":"Aldnoah.Zero","rating":7,"image":"https://c4.wallpaperflare.com/wallpaper/80/495/735/5927x4092-px-aldnoah-zero-asseylum-vers-allusia-kaizuka-inaho-slaine-troyard-nature-flowers-hd-art-wallpaper-preview.jpg"},
   {"worldName":"Anima Beyond Fantasy","rating":1,"image":"https://pbs.twimg.com/media/E7t-ag2WEAYpZ9m?format=jpg&name=medium"},
-  {"worldName":"Assassination Classroom","rating":2},
-  {"worldName":"Gokusen","rating":1},
-  {"worldName":"Great Teacher Onizuka","rating":1},
-  {"worldName":"Komi Can't Communicate","rating":1,"image":""},
-  {"worldName":"Satina","rating":1,"image":""},
-  {"worldName":"The Eminence in Shadow","rating":8,"image":""}
+  {"worldName":"Assassination Classroom","rating":2,"image":"https://animecorner.me/wp-content/uploads/2021/01/th-20.jpg"},
+  {"worldName":"Gokusen","rating":1,"image":"https://pic-bstarstatic.akamaized.net/ugc/0f28ede1b24b1f1233f7f20174fbde89.jpg@1200w_630h_1e_1c_1f.webp"},
+  {"worldName":"Great Teacher Onizuka","rating":1,"image":"https://animemotivation.com/wp-content/uploads/2019/03/gto-anime-wallpaper.jpg"},
+  {"worldName":"Komi Can't Communicate","rating":1,"image":"https://moviespotify.com/wp-content/uploads/2021/07/Komi-Cant-Communicate-Season-1-Release-date.jpg"},
+  {"worldName":"Satina","rating":1,"image":"https://picon.ngfiles.com/753000/flash_753121_card.png?f1650442867"},
+  {"worldName":"The Eminence in Shadow","rating":8,"image":"https://www.theanimedaily.com/wp-content/uploads/2021/12/16408687226867297459499488340881.jpg"},
+  {"worldName":"Madan No Ou To Vanadis","rating":5,"image":"https://rightwingotaku.files.wordpress.com/2014/10/vanadis093e4.jpg"},
+  {"worldName":"Temtem","rating":3,"image":"https://news.xbox.com/en-us/wp-content/uploads/sites/2/2022/09/Temtem_Launch_XboxWire-22749b86ebea998c1317.jpg"}
 ]

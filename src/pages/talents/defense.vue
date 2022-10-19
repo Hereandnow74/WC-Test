@@ -31,7 +31,7 @@ import { useFullPerks } from '~/logic/localPerks'
 import { useTooltips } from '~/logic/misc'
 import { useStore } from '~/store/store'
 
-const { defensePerks, settings } = useStore()
+const { defensePerks, settings, defenseRetinueDiscountAuto } = useStore()
 const { defenses } = useFullPerks()
 
 const allDefenses = computed(() => {

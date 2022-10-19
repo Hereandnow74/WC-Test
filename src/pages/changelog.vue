@@ -6,6 +6,26 @@
       </h2>
       <div>
         <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          19 October 2022
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~165 new user submitted characters.</li>
+          <li>Defenses rebates now counted <b>automatically</b>, old system can be turned on in settings.</li>
+          <li>You can now use old Slightly USed rules for rolls.</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          16 October 2022
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>180 new user submitted characters, 2 new worlds, new missions.</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
           12 October 2022
         </h3>
         <ul class="list-decimal list-inside">

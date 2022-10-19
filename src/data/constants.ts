@@ -240,6 +240,8 @@ export const waifuTags = {
   ci: { tag: 'Chuuni', short: 'ci', effect: '', desc: '', color: 'bg-teal-500 text-black' },
   gi: { tag: 'Genki', short: 'gi', effect: '', desc: '', color: 'bg-teal-500 text-black' },
   ge: { tag: 'Generic', short: 'ge', effect: '', desc: 'For generic entries like pokemons, MGE monster girls, etc.', color: 'bg-teal-500 text-black' },
+  nc: { tag: 'Necromancer', short: 'nc', effect: '', desc: '', color: 'bg-teal-500 text-black' },
+  cs: { tag: 'Custom', short: 'cs', effect: '', desc: 'This character looks and gender can be customized at a purchase. (Ussualy RPG protagonists)', color: 'bg-teal-500 text-black' },
 
   U: { tag: 'By User', short: 'U', effect: '', desc: 'Characters that were added to Interactive by users, applied automatically to all submitted characters', color: 'bg-warm-gray-600' },
 } as const

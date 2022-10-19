@@ -106,6 +106,7 @@ import { useStore } from '~/store/store'
 import { filterObject, lazyLoadSingleImg } from '~/logic'
 import { localPerks } from '~/logic/localPerks'
 import { PLACEHOLDER_IMAGE } from '~/data/constants'
+import { defenseObject, talentsObject } from '~/data/talents'
 
 const props = defineProps({
   perk: {
@@ -180,6 +181,15 @@ const perkToSave = reactive({
 const displayedCost = computed(() => {
   const s = perkToSave.cost / 11111 === 0 || perkToSave.cost / 11111 >= 2 ? 's' : ''
   return props.perk.cost >= 11111 ? `${perkToSave.cost / 11111} TX ticket${s}` : perkToSave.cost
+})
+
+const freebieCosts = computed(() => {
+  let totalCost = 0
+  if (props.perk.freebies && props.perk.freebies.talentPerks)
+    totalCost += props.perk.freebies.talentPerks.reduce((a, x) => a += x.count * talentsObject[x.title].cost, 0)
+  if (props.perk.freebies && props.perk.freebies.defensePerks)
+    totalCost += props.perk.freebies.defensePerks.reduce((a, x) => a += x.count * defenseObject[x.title].cost, 0)
+  return totalCost
 })
 
 function sendPerk() {

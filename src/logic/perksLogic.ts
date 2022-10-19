@@ -49,7 +49,7 @@ export function addFreebies(freebies: object) {
       }
       else {
         if (allForSave[key].value[ind].count)
-          allForSave[key].value[ind].count += 1
+          allForSave[key].value[ind].count += freebie.count
         else
           allForSave[key].value[ind].count = 2
         if (freebie.complex && allForSave[key].value[ind].complex)

@@ -229,7 +229,7 @@ import { waifuTags, useAllChars } from '~/data/constants'
 import { usePlayStore } from '~/store/play'
 import { useSettings } from '~/logic/searchSettings'
 
-const { startingWorld, favorites, settings, companionsUIDs } = useStore()
+const { startingWorld, favorites, settings, companionsUIDs, defenseRetinueDiscountAuto } = useStore()
 const { jumpChain } = usePlayStore()
 const { minTier, maxTier, worldName, blockedWorlds } = useSettings()
 

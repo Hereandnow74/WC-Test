@@ -80,6 +80,10 @@
           <div>Hide <b>legacy</b> perks by default</div>
           <Toggle v-model="settings.hideLegacy" />
         </div>
+        <div class="flex justify-between gap-4 border-b border-gray-500">
+          <div>Use manual defense rebates calculation</div>
+          <Toggle v-model="settings.rebates" />
+        </div>
       </div>
       <h3 class="text-lg text-lime-700 dark:text-lime-400 font-semibold">
         Turn off DLC's

@@ -3,7 +3,7 @@ import { Perk } from 'global'
 import { useChallenges } from './challenges'
 import { usePlayStore } from './play'
 import { useChargenStore } from './chargen'
-import { CHAR_COSTS, heritageTiers, WORLD_RATINGS } from '~/data/constants'
+import { CHAR_COSTS, heritageTiers, useAllChars, WORLD_RATINGS } from '~/data/constants'
 import { defenseObject, talentsObject } from '~/data/talents'
 
 const { loan, jumpChain, currentWorld, trHistory, missionRewards } = usePlayStore()
@@ -43,6 +43,21 @@ const {
   specificMods,
   patron,
 } = useChargenStore()
+
+const settings = useStorage('settings', {
+  allChosenAuthors: [] as string[],
+  nsfw: false,
+  perkImages: true,
+  columns: 'auto' as number | 'auto',
+  hideWorldImg: false,
+  allImg: false,
+  ableSell: true,
+  hideDesc: false,
+  textAlign: 'text-left',
+  fontSize: 0,
+  hideLegacy: true,
+  rebates: false,
+})
 
 const csr = computed(() => findIndex(intensities.value, { title: 'Cash Still Rules' }) !== -1)
 
@@ -128,6 +143,8 @@ const companionProfitSold = computed(() => {
     : 0
 })
 
+const companionsWithoutSold = computed(() => companions.value.filter(c => !c.sold))
+
 // Discounts
 const types = {
   dr: 'Dragon',
@@ -178,37 +195,87 @@ const defensesDiscount = computed(() => {
   return cost
 })
 
+const defenseRetinueDiscountAuto = computed(() => {
+  const { allCharsObject } = useAllChars()
+
+  const allDefTags = {
+    st: 'Body Defense',
+    hr: 'Wild Defense',
+    hz: 'Environmental Defense',
+    mt: 'Creature Defense',
+    cl: 'Stress Defense',
+    ml: 'Addiction Defense',
+    ps: 'Mind Defense',
+    bj: 'Possession Defense',
+    dr: 'Soul Defense',
+    id: 'Fatality Defense',
+    pl: 'Polymorph Defense',
+    ur: 'Wyldscape Defense',
+    cr: 'Corruption Defense',
+    sc: 'Information Defense',
+    di: 'Trace Defense',
+    fm: 'Destiny Defense',
+    tm: 'Paradox Defense',
+  } as Record<string, string>
+
+  const allDefsDiscounts = defensePerks.value.reduce((a, x) => (a[x.title] = { discount: 0, count: x.count >= 2 ? 2 : 1 }, a), {} as Record<string, {discount: number; count: number}>)
+
+  companionsWithoutSold.value.forEach((cmp) => {
+    let availableDisc = CHAR_COSTS[cmp.priceTier]
+    if (allCharsObject.value[cmp.uid]) {
+      allCharsObject.value[cmp.uid].b.forEach((tag) => {
+        const defName = allDefTags[tag]
+        if (defName && allDefsDiscounts[defName] !== undefined) {
+          const dis = Math.min(availableDisc, defenseObject[defName].cost * 0.4)
+          const totalPossible = defenseObject[defName].cost * allDefsDiscounts[defName].count
+          allDefsDiscounts[defName].discount += Math.min(dis, totalPossible - allDefsDiscounts[defName].discount)
+          availableDisc -= Math.min(dis, totalPossible - allDefsDiscounts[defName].discount)
+        }
+      })
+    }
+  })
+
+  return allDefsDiscounts
+})
+
+const defenseRetinueDiscountAutoCredits = computed(() => Object.values(defenseRetinueDiscountAuto.value).reduce((a, x) => a += x.discount, 0))
+
 const defenseRetinueDiscount = computed(() => {
-  const cost = defensePerks.value.filter(x => x.defDiscount).reduce((a, x) => {
-    if (x.count <= 1) {
-      switch (x.defDiscount) {
-        case 1:
-          return a += defenseObject[x.title].cost * 0.4
-        case 2:
-          return a += defenseObject[x.title].cost * 0.8
-        case 3:
-          return a += defenseObject[x.title].cost
-        default:
-          return a += defenseObject[x.title].cost
+  if (settings.value.rebates) {
+    const cost = defensePerks.value.filter(x => x.defDiscount).reduce((a, x) => {
+      if (x.count <= 1) {
+        switch (x.defDiscount) {
+          case 1:
+            return a += defenseObject[x.title].cost * 0.4
+          case 2:
+            return a += defenseObject[x.title].cost * 0.8
+          case 3:
+            return a += defenseObject[x.title].cost
+          default:
+            return a += defenseObject[x.title].cost
+        }
       }
-    }
-    else {
-      switch (x.defDiscount) {
-        case 1:
-          return a += defenseObject[x.title].cost * 0.4
-        case 2:
-          return a += defenseObject[x.title].cost * 0.8
-        case 3:
-          return a += defenseObject[x.title].cost * 1.2
-        case 4:
-          return a += defenseObject[x.title].cost * 1.6
-        case 5:
-          return a += defenseObject[x.title].cost * 2
+      else {
+        switch (x.defDiscount) {
+          case 1:
+            return a += defenseObject[x.title].cost * 0.4
+          case 2:
+            return a += defenseObject[x.title].cost * 0.8
+          case 3:
+            return a += defenseObject[x.title].cost * 1.2
+          case 4:
+            return a += defenseObject[x.title].cost * 1.6
+          case 5:
+            return a += defenseObject[x.title].cost * 2
+        }
       }
-    }
-    return a
-  }, 0)
-  return cost
+      return a
+    }, 0)
+    return cost
+  }
+  else {
+    return defenseRetinueDiscountAutoCredits.value
+  }
 })
 
 const totalDiscount = computed(() => usedHeritageDiscount.value + talentsDiscount.value + defensesDiscount.value + defenseRetinueDiscount.value)
@@ -242,8 +309,8 @@ const budget = computed(() => {
       - talentsCost.value - defensesCost.value - miscPerksCost.value - waifuPerksCost.value
       - genericWaifuPerksCost.value - companionsCost.value - otherCost.value - fee.value
       - budgetMods.value.minus + budgetMods.value.plus + companionProfit.value + companionProfitSold.value
-      + usedHeritageDiscount.value + talentsDiscount.value + defensesDiscount.value
-      + defenseRetinueDiscount.value + specificModsCost.value + budgetMods.value.sell11 * 2000 + missionRewardCredits.value
+      + usedHeritageDiscount.value + talentsDiscount.value + defensesDiscount.value + specificModsCost.value
+      + budgetMods.value.sell11 * 2000 + missionRewardCredits.value + defenseRetinueDiscount.value
 
   // CSR implementation 3.0
   if (flags.value.chargen && csr.value) {
@@ -302,7 +369,6 @@ const totalCost = computed(() => startingOrigin.value.cost + heritageCost.value 
 + ridePerksCost.value + homePerksCost.value + talentsCost.value + defensesCost.value + miscPerksCost.value
 + waifuPerksCost.value + genericWaifuPerksCost.value + luresCost.value + companionsCost.value + otherCost.value + pvpPerksCost.value)
 
-const companionsWithoutSold = computed(() => companions.value.filter(c => !c.sold))
 const companionsComp = computed(() => companionsWithoutSold.value.filter(cmp => cmp.role === 'Companion' || !cmp.role))
 
 const isCouple = computed(() => findIndex(intensities.value, { title: 'Couple’s Account (Cooperative)' }) !== -1)
@@ -392,20 +458,6 @@ watch(startingWorld, () => {
 const favorites = useStorage<string[]>('favorites', [])
 
 const totalActive = useStorage('ta', 0)
-
-const settings = useStorage('settings', {
-  allChosenAuthors: [] as string[],
-  nsfw: false,
-  perkImages: true,
-  columns: 'auto' as number | 'auto',
-  hideWorldImg: false,
-  allImg: false,
-  ableSell: true,
-  hideDesc: false,
-  textAlign: 'text-left',
-  fontSize: 0,
-  hideLegacy: true,
-})
 
 const collapsedDescs = useStorage<string[]>('collapsedDescs', [])
 const collapsedDescsSet = computed(() => new Set<string>(collapsedDescs.value))
@@ -512,5 +564,7 @@ export function useStore() {
     missionRewardCredits,
     isCouple,
     devotionPoints,
+    defenseRetinueDiscountAuto,
+    defenseRetinueDiscountAutoCredits,
   }
 }

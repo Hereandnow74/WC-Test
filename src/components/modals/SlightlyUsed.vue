@@ -11,12 +11,18 @@
     <div v-if="startingTab" class="min-h-0 overflow-y-auto scrollbar">
       <h3
         class="text-lg text-center text-amber-500 dark:text-amber-400 flex gap-2 justify-center items-center px-2 mt-2"
-        title="Information for author"
-        @click="author = !author"
       >
-        Slightly used <span class="text-gray-800 dark:text-gray-200 font-semibold">{{ char.name }}</span>
-        <akar-icons:eye-open v-if="author" class="cursor-pointer hover:text-green-500" />
-        <akar-icons:eye-slashed v-else class="cursor-pointer hover:text-green-500" />
+        <div class="flex gap-2 items-center" title="Information for author" @click="author = !author">
+          Slightly used <span class="text-gray-800 dark:text-gray-200 font-semibold">{{ char.name }}</span>
+          <akar-icons:eye-open v-if="author" class="cursor-pointer hover:text-green-500" />
+          <akar-icons:eye-slashed v-else class="cursor-pointer hover:text-green-500" />
+        </div>
+        <div title="Reroll (its against the rules)" class="select-none">
+          <akar-icons:arrow-cycle class="cursor-pointer text-red-500 hover:text-red-300" @click="rerollConst *= -1" />
+        </div>
+        <div class="text-gray-800 dark:text-gray-300">
+          <Toggle v-model="useOLDSU" label="Use old rules" />
+        </div>
       </h3>
       <div class="p-2 text-lg flex flex-col gap-4">
         <div v-if="author && !bought" class="border-2 border-red-500 p-1 rounded text-sm">
@@ -56,6 +62,7 @@
 
 <script lang='ts' setup>
 import { random } from 'lodash-es'
+import Toggle from '../basic/Toggle.vue'
 import { CHAR_COSTS } from '~/data/constants'
 
 const props = defineProps({
@@ -73,6 +80,9 @@ const visibility = ref([true, true, true])
 
 const startingTab = ref(true)
 const traumaReac = ref('')
+
+const useOLDSU = ref(false)
+const rerollConst = ref(1)
 
 const traumaDefinitions = [
   'The Waifu you gain with this trauma tier suffer from slight trauma, primarily due to their difficult but not horrific experience with their past contractor. This can include minor mental, spiritual or physical defects. Waifu at this trauma tier are of an equal level of a problem as those not bound by any company binding, solved primarily via the copious application of Faerie Feast, Sticky Fingers, or other similar activities. Mind control or selective memory wipeout are viable ways to help a waifu recuperate from any experiences they had with their previous contractors at this level of trauma. Subjects using their powers will not cause any problems for you or your retinue if you can keep them in a good mood.',
@@ -125,6 +135,33 @@ function whatTier(n: number): number {
   return 11
 }
 
+function oldTier(n: number, tier: number): number {
+  const plus = [
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [3, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+    [4, 3, 2, 1, 0, 0, 0, 0, 0, 0, 0],
+    [5, 4, 3, 2, 1, 0, 0, 0, 0, 0, 0],
+    [6, 5, 4, 3, 2, 1, 0, 0, 0, 0, 0],
+    [7, 6, 5, 4, 3, 2, 1, 0, 0, 0, 0],
+    [8, 7, 6, 5, 4, 3, 2, 1, 0, 0, 0],
+    [9, 8, 7, 6, 5, 4, 3, 2, 1, 0, 0],
+    [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0],
+  ]
+  if (n < 8) return 0
+  if (n >= 9 && n <= 11) return plus[1][tier - 1]
+  if (n >= 12 && n <= 14) return plus[2][tier - 1]
+  if (n >= 15 && n <= 17) return plus[3][tier - 1]
+  if (n >= 18 && n <= 20) return plus[4][tier - 1]
+  if (n >= 21 && n <= 23) return plus[5][tier - 1]
+  if (n >= 24 && n <= 26) return plus[6][tier - 1]
+  if (n >= 27 && n <= 29) return plus[7][tier - 1]
+  if (n >= 30 && n <= 32) return plus[8][tier - 1]
+  if (n >= 33 && n <= 35) return plus[9][tier - 1]
+  return plus[10][tier - 1]
+}
+
 function slightlyUsed(char: any) {
   const ability = random(1, 6) + random(1, 6) + random(1, 6) + random(1, 6) + random(1, 6) + random(1, 6)
   const trauma = random(1, 6) + random(1, 6) + random(1, 6) + random(1, 6) + random(1, 6) + random(1, 6)
@@ -132,18 +169,10 @@ function slightlyUsed(char: any) {
   return {
     ability,
     trauma,
-    tier: whatTier(ability),
+    tier: useOLDSU.value ? char.tier + oldTier(ability, char.tier) : whatTier(ability),
     traumaTier,
     traumaExample: traumaExamples[traumaTier][Math.floor(Math.random() * traumaExamples[traumaTier].length)],
   }
-}
-
-function PSProbability(origin, roll, trauma) {
-  const probs = [0.000600, 0.009302, 0.050862, 0.145083, 0.247728, 0.267040, 0.182913, 0.076796, 0.017876, 0.001779, 0.000021]
-  return probs[origin]
-  + (origin >= 1 ? probs[origin - 1] * (probs[5] + probs[6]) : 0)
-  + (origin >= 2 ? probs[origin - 2] * (probs[7] + probs[8]) : 0)
-  + (origin >= 3 ? probs[origin - 3] * (probs[9] + probs[10]) : 0)
 }
 
 const usedWaifus = computed(() => {
@@ -151,6 +180,7 @@ const usedWaifus = computed(() => {
   res.push(slightlyUsed(props.char))
   res.push(slightlyUsed(props.char))
   res.push(slightlyUsed(props.char))
+  rerollConst.value *= -1
   res = res.map(x => ({
     ...x,
     cost: x.tier - x.traumaTier === 11 ? 'TX ticket' : CHAR_COSTS[x.tier - x.traumaTier] || 1,

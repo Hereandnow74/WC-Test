@@ -20,7 +20,9 @@
         </div>
         <div class="flex gap-2">
           <span class="text-gray-300">Rating:</span>
-          <span class="text-teal-300 font-semibold">{{ startingWorld.rating || 'Unknown' }}</span>
+          <span class="text-teal-300 font-semibold">{{ startingWorld.rating || 'Unknown' }}
+            <span class="text-blue-300 font-semibold">({{ WORLD_RATINGS[startingWorld.rating]?.budget || 0 }})</span>
+          </span>
         </div>
       </div>
     </div>
@@ -248,6 +250,7 @@ import { useStore } from '~/store/store'
 import { chooseBinding } from '~/logic'
 import { useChallenges } from '~/store/challenges'
 import { confirmDialog } from '~/logic/dialog'
+import { WORLD_RATINGS } from '~/data/constants'
 
 const {
   startingWorld, startingOrigin, intensities, binding, homePerks, defensePerks,
