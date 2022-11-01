@@ -1,8 +1,8 @@
-import { findIndex, find, remove } from 'lodash-es'
+import { findIndex, find, remove, intersection } from 'lodash-es'
 import { Perk } from 'global'
 import { useChallenges } from './challenges'
 import { usePlayStore } from './play'
-import { useChargenStore } from './chargen'
+import { SavedChar, useChargenStore } from './chargen'
 import { CHAR_COSTS, heritageTiers, useAllChars, WORLD_RATINGS } from '~/data/constants'
 import { defenseObject, talentsObject } from '~/data/talents'
 
@@ -84,6 +84,11 @@ const specificModsCost = computed(() => specificMods.value.reduce((a, x) => a +=
 
 const companionsCost = computed(() => {
   return companions.value.reduce((a, x) => {
+    if (x.swap)
+      a += x.swap.cost - x.swap.refund
+    if (x.perk)
+      a += x.perk.cost - x.perk.refund
+
     if (['buy', 'unbound'].includes(x.method) && x.priceTier !== 11)
       return a += CHAR_COSTS[x.priceTier] || 0
     if (x.method === 'yoink' && x.priceTier !== 11) {
@@ -220,8 +225,19 @@ const defenseRetinueDiscountAuto = computed(() => {
 
   const allDefsDiscounts = defensePerks.value.reduce((a, x) => (a[x.title] = { discount: 0, count: x.count >= 2 ? 2 : 1 }, a), {} as Record<string, {discount: number; count: number}>)
 
-  companionsWithoutSold.value.forEach((cmp) => {
-    let availableDisc = CHAR_COSTS[cmp.priceTier]
+  const sortedCompanions = (() => {
+    const cmp = [] as {uid: number; cost: number}[]
+    if (startingOrigin.value.uid)
+      cmp.push({ uid: startingOrigin.value.swap?.uid || startingOrigin.value.uid, cost: CHAR_COSTS[startingOrigin.value.swap?.tier || 0] || startingOrigin.value.cost })
+
+    companionsWithoutSold.value.forEach(companion => cmp.push(
+      { uid: companion.swap ? companion.swap.uid : companion.uid, cost: CHAR_COSTS[companion.swap?.tier || companion.priceTier] }))
+
+    return cmp.sort((a, b) => b.cost - a.cost || intersection(allCharsObject.value[a.uid]?.b, Object.keys(allDefTags)).length - intersection(allCharsObject.value[b.uid]?.b, Object.keys(allDefTags)).length)
+  })()
+
+  sortedCompanions.forEach((cmp) => {
+    let availableDisc = cmp.cost
     if (allCharsObject.value[cmp.uid]) {
       allCharsObject.value[cmp.uid].b.forEach((tag) => {
         const defName = allDefTags[tag]
@@ -274,7 +290,7 @@ const defenseRetinueDiscount = computed(() => {
     return cost
   }
   else {
-    return defenseRetinueDiscountAutoCredits.value
+    return flags.value.danger11Start ? 0 : defenseRetinueDiscountAutoCredits.value
   }
 })
 
@@ -304,7 +320,7 @@ const missionRewardCredits = computed(() => Object.values(missionRewards.value).
 const missionRewardTickets = computed(() => Object.values(missionRewards.value).reduce((sum, miss) => sum += miss.rewards.reduce((missSum, rw) => rw.type === 'TX Tickets' ? missSum += parseInt(`${rw.value}`) || 0 : missSum, 0), 0))
 
 const budget = computed(() => {
-  const bd = fullStartingBudget.value - startingOrigin.value.cost - pvpPerksCost.value
+  let bd = fullStartingBudget.value - startingOrigin.value.cost - pvpPerksCost.value
       - bindingCost.value - heritageCost.value - luresCost.value - ridePerksCost.value - homePerksCost.value
       - talentsCost.value - defensesCost.value - miscPerksCost.value - waifuPerksCost.value
       - genericWaifuPerksCost.value - companionsCost.value - otherCost.value - fee.value
@@ -312,6 +328,12 @@ const budget = computed(() => {
       + usedHeritageDiscount.value + talentsDiscount.value + defensesDiscount.value + specificModsCost.value
       + budgetMods.value.sell11 * 2000 + missionRewardCredits.value + defenseRetinueDiscount.value
 
+  if (startingOrigin.value.swap) {
+    if (startingOrigin.value.swap.tier !== 11)
+      bd -= startingOrigin.value.swap.cost - startingOrigin.value.swap.refund
+    else
+      bd += startingOrigin.value.swap.refund
+  }
   // CSR implementation 3.0
   if (flags.value.chargen && csr.value) {
     if (bd + loan.value.gained < 0) {
@@ -357,19 +379,25 @@ const tier11tickets = computed(() => {
   const genericWaifuPerksCost = genericWaifuPerks.value.reduce((a, x) => a += x.cost === 11111 ? 1 : 0, 0)
   const luresCost = luresBought.value.reduce((a, x) => a += x.cost === 11111 ? 1 : 0, 0)
   const companionsCost = companions.value.reduce((a, x) => {
+    if (x.perk && x.perk.tier === 11)
+      a += 1
+    if (x.swap)
+      return x.swap.tier === 11 ? a += 1 : a
     return x.priceTier === 11 && x.method !== 'capture' ? a += 1 : a
   }, 0)
 
+  const originPSTicket = startingOrigin.value.swap && startingOrigin.value.swap.tier === 11 ? 1 : 0
+
   return ticket - heritageCost - ridePerksCost - homePerksCost - talentsCost - defensesCost - miscPerksCost
     - waifuPerksCost - genericWaifuPerksCost - luresCost - companionsCost - bindingCost
-    - budgetMods.value.minus11 + budgetMods.value.plus11 + companionTicketProfit.value - budgetMods.value.sell11 + missionRewardTickets.value
+    - budgetMods.value.minus11 + budgetMods.value.plus11 + companionTicketProfit.value - budgetMods.value.sell11 + missionRewardTickets.value - originPSTicket
 })
 
 const totalCost = computed(() => startingOrigin.value.cost + heritageCost.value + bindingCost.value
 + ridePerksCost.value + homePerksCost.value + talentsCost.value + defensesCost.value + miscPerksCost.value
 + waifuPerksCost.value + genericWaifuPerksCost.value + luresCost.value + companionsCost.value + otherCost.value + pvpPerksCost.value)
 
-const companionsComp = computed(() => companionsWithoutSold.value.filter(cmp => cmp.role === 'Companion' || !cmp.role))
+const companionsComp = computed(() => companionsWithoutSold.value.filter(cmp => ['Companion', 'Familiar'].includes(cmp.role) || !cmp.role))
 
 const isCouple = computed(() => findIndex(intensities.value, { title: 'Couple’s Account (Cooperative)' }) !== -1)
 
@@ -405,6 +433,15 @@ const targetList = computed(() => {
   return comps
 })
 
+const targetListwithUID = computed(() => {
+  const comps = companionsComp.value.map(x => ({ name: x.name, uid: x.uid }))
+  if (['Substitute', 'Possess'].includes(startingOrigin.value.title))
+    comps.unshift({ name: startingOrigin.value.character || 'You', uid: startingOrigin.value.uid || 0 })
+  else
+    comps.unshift({ name: 'You', uid: 0 })
+  return comps
+})
+
 const yourTier = computed(() => {
   const calcTier = (perks: Perk[]) => {
     let tier = 1
@@ -422,13 +459,12 @@ const yourTier = computed(() => {
   shroudTier = Math.max(findIndex(binding.value, { title: 'Alterzelu Symbiote' }) !== -1 ? 4 : 0, shroudTier)
   const originTier = startingOrigin.value.tier || 0
   const heritageTier = calcTier(heritage.value)
-  const powerSwap = find(genericWaifuPerks.value, x => x.title === 'Power Swap')
-  const yourPowerSwap = powerSwap ? find(powerSwap.complex, x => x.target === 'You') : undefined
-  const powerSwapTier = yourPowerSwap ? yourPowerSwap.newTier : 0
+  const powerSwapTier = startingOrigin.value.swap && startingOrigin.value.swap.tier ? startingOrigin.value.swap.tier : 0
   return Math.max(originTier, heritageTier, talentsTier4, talentsTier5, shroudTier, powerSwapTier)
 })
 
-const companionsUIDs = computed(() => companions.value.reduce((a, c) => (a[c.uid] = true, a), {} as Record<number, boolean>))
+const companionsUIDs = computed(() => companions.value.reduce((a, c) => (a[c.uid] = c, a), {} as Record<number, SavedChar>))
+const companionsByUID = computed(() => companions.value.reduce((a, c) => (a[c.perk?.uid || c.swap?.uid || c.uid] = c, a), {} as Record<number, SavedChar>))
 
 const underLoan = computed(() => loan.value.owed > 0)
 
@@ -436,26 +472,7 @@ watch(startingWorld, () => {
   currentWorld.value = startingWorld.value
 })
 
-// watch(() => jumpChain.value.length, () => {
-//   if (jumpChain.value.length > 0) {
-//     if (fee.value)
-//       fee.value += Math.round(loan.value.owed * 0.1)
-//     else
-//       fee.value = Math.round(loan.value.owed * 0.1)
-//   }
-// })
-
-// watch(budget, () => {
-//   if (csr.value && budget.value < 0) {
-//     const need = Math.abs(budget.value)
-//     if ((creditLimit.value - loan.value.owed) > need) {
-//       loan.value.gained += need
-//       loan.value.owed += need
-//     }
-//   }
-// })
-
-const favorites = useStorage<string[]>('favorites', [])
+const favorites = useStorage<number[]>('favorites', [])
 
 const totalActive = useStorage('ta', 0)
 
@@ -524,6 +541,7 @@ export function useStore() {
     budgetMods,
     allForSave,
     targetList,
+    targetListwithUID,
     companionProfit,
     companionProfitSold,
     totalCost,
@@ -533,6 +551,7 @@ export function useStore() {
     localUserRides,
     yourTier,
     companionsUIDs,
+    companionsByUID,
     fullStartingBudget,
     fee,
     captureKoeff,

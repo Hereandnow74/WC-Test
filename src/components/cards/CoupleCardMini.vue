@@ -139,7 +139,7 @@ watch(() => props.char.uid, () => {
   if (props.char.uid !== 777777777) {
     const char = allCharsObject.value[props.char.uid]
     if (char) {
-      props.char.image = imageLink(char.i, char.u)
+      props.char.image = imageLink(char.u)
       props.char.sex = char.b.includes('F') ? 'F' : 'M'
     }
   }

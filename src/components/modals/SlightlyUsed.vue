@@ -95,15 +95,15 @@ const traumaExamples = {
   1: ['Muscle Tremors', 'Constant Anxiety', 'Appetite Disturbances', 'Disorientation', 'Numbness/Desensitization', 'Avoidant Behaviours', 'Alcohol Addiction', 'Smoking Addiction', 'Argumentative Behaviour', 'Nightmares/ Sleep Disorder', 'Depression', 'Phobia', 'Persistent Fatigue',
     'Emotional Detachment', 'Cum Addiction', 'Loss of Purpose', 'Excessive guilt', 'Excessive Paranoia',
     'Mute', 'Extreme Submissiveness', 'Excessive Daydreaming', 'Oral Obsession', 'Compulsive Masturbation',
-    'Compulsive Liar', 'Ditzy'],
+    'Compulsive Liar', 'Ditzy', 'Compulsive Kleptomania'],
   2: ['Suicidal Behaviour', 'Intrusive Memories/Flashbacks', 'Completely Apathy', 'Hallucinations',
     'Uncontrollable Fear', 'Depersonalization', 'Mood Swings/ Instability', 'Multiple Triggers',
     'Amnesiac', 'Regular Self Harm', 'Time Tracking Difficulty', 'Frequent Seizures', 'Extreme Masochist',
-    'Eternal Arousal', 'Extreme Gender Dysphoria', 'Flipped Personality', 'Bimbo Personality',
+    'Eternal Arousal', 'Extreme Gender Dysphoria', 'Flipped Personality', 'Bimbo Personality', 'Extreme Sadist',
   ],
   3: ['Blank Slate Personality', 'Fleshlight Mentality', 'Manic Behaviour/ Psychosis', 'Coma/Vegetable state',
     'Brainwashed Idealization/Fanatical', 'Extreme Multiple Personality Disorder', 'Broodmother Mentality',
-    'Drone Mentality', 'Absolute Nymphomania',
+    'Drone Mentality', 'Absolute Nymphomania', 'Extreme Petplay Conditioning',
   ],
 } as Record<number, string[]>
 

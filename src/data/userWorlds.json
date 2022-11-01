@@ -2901,7 +2901,8 @@
       {
         "name": "Tangled",
         "rating": 3
-      }
+      },
+      {"name":"Disney Villains Victorious","rating":8}
     ]
   },
   {
@@ -3914,11 +3915,11 @@
   },
   {
     "worldName": "Left 4 Dead",
-    "rating": 7,
+    "rating": 5,
     "condition": [
       {
         "name": "Left 4 Dead 2",
-        "rating": 7
+        "rating": 5
       }
     ],
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/994979172856377445/4dcc974e2c11cf31347f0d60bc18affc.0.jpg"
@@ -4855,7 +4856,7 @@
   {
     "worldName": "Battle Angel Alita/Gunmm",
     "rating": 7,
-    "image": ""
+    "image": "https://images7.alphacoders.com/391/391921.jpg"
   },
   {
     "worldName": "Delicious in Dungeon",
@@ -4980,5 +4981,16 @@
   {"worldName":"Satina","rating":1,"image":"https://picon.ngfiles.com/753000/flash_753121_card.png?f1650442867"},
   {"worldName":"The Eminence in Shadow","rating":8,"image":"https://www.theanimedaily.com/wp-content/uploads/2021/12/16408687226867297459499488340881.jpg"},
   {"worldName":"Madan No Ou To Vanadis","rating":5,"image":"https://rightwingotaku.files.wordpress.com/2014/10/vanadis093e4.jpg"},
-  {"worldName":"Temtem","rating":3,"image":"https://news.xbox.com/en-us/wp-content/uploads/sites/2/2022/09/Temtem_Launch_XboxWire-22749b86ebea998c1317.jpg"}
+  {"worldName":"Temtem","rating":3,"image":"https://news.xbox.com/en-us/wp-content/uploads/sites/2/2022/09/Temtem_Launch_XboxWire-22749b86ebea998c1317.jpg"},
+  {"worldName":"Black Rock Shooter","rating":7,"image":"https://cdn.donmai.us/original/46/9d/__black_rock_shooter_dead_master_strength_and_black_gold_saw_black_rock_shooter_drawn_by_iceky__469dd0d58cce3d5d285912902d4c3501.jpg","additional":"All humans have their Otherselves as familiars. If you already have the otherself when you buy their human counterpart, you’ll be refunded the appropriate familiars’ full costs.","condition":[{"rating":6,"name":"OVA"},{"rating":7,"name":"Anime"},{"rating":7,"name":"The Game"},{"name":"Innocent Soul","rating":7}]},
+  {"worldName":"Gunslinger Girl","rating":4,"image":"https://i.imgur.com/dk9mDDc.png"},
+  {"worldName":"Inside An Adult Game As A Former Hero","rating":7,"image":""},
+  {"worldName":"Kaguya-sama: Love is War","rating":2,"image":""},
+  {"worldName":"Little Busters!","rating":1,"image":"https://cdn.donmai.us/sample/34/97/__natsume_rin_naoe_riki_natsume_kyousuke_inohara_masato_and_miyazawa_kengo_little_busters_drawn_by_sakamuke__sample-3497a582f291d8e22b85f4823f7378c4.jpg"},
+  {"worldName":"Nioh","rating":5,"image":"https://i.imgur.com/kfVIc7R.jpeg","condition":[{"rating":5,"name":"Nioh"},{"name":"Nioh 2","rating":6}]},
+  {"worldName":"Sakura Wars","rating":6,"image":"https://i.imgur.com/kj5kWW9.png"},
+  {"worldName":"Yandere simulator","rating":3,"image":"https://i.kym-cdn.com/photos/images/original/000/998/314/ce8.jpg"},
+  {"worldName":"Invader Zim","rating":7,"image":"https://c4.wallpaperflare.com/wallpaper/300/340/846/invader-zim-nickelodeon-gir-wallpaper-preview.jpg"},
+  {"worldName":"Suikoden Series","rating":5,"image":"https://i.pinimg.com/564x/13/2f/84/132f844597c14abeec426cd6544f99a1.jpg","condition":[{"name":"Suikoden 1 (Gate Rune War)","rating":5},{"rating":4,"name":"Suikoden 2 (Dunan Unification War)"},{"name":"Suikoden 3 (Second Fire Bringer War)","rating":5},{"rating":4,"name":"Suikoden 4 (Island Liberation War)"},{"name":"Suikoden 5 (Sun Rune War)","rating":4}]},
+  {"worldName":"Trigun","rating":6,"image":"https://i.imgur.com/w7u0QbL.jpg","condition":[{"name":"Crash Era","rating":7},{"rating":6,"name":"Post-Colonization"}]}
 ]

@@ -3,7 +3,7 @@
     class="inset-0 absolute flex flex-col"
     text="gray-700 dark:gray-200"
   >
-    <div class="grid grid-cols-[1fr,auto] grid-rows-[auto,1fr] gap-1 min-h-0 justify-center justify-items-center h-full">
+    <div class="grid grid-cols-[1fr,auto] grid-rows-[auto,1fr] gap-1 min-h-0 justify-center justify-items-center max-h-screen">
       <Header class="col-span-2" />
       <SideMenu :class="showSideMenu ? 'max-w-0 sm:max-w-9' : 'max-w-[150px] border-r-2'" />
       <router-view class="min-h-0 w-full flex flex-col items-center overflow-y-auto overflow-x-hidden scrollbar" :class="showSideMenu ? 'sm:pl-10' : 'sm:pl-36'" />
@@ -12,20 +12,22 @@
     <SideApps />
     <component :is="Footer" v-if="!buildLayout" class="z-20" />
     <Search />
-    <ConfirmDialog class="z-20" />
-    <InfoDialog class="z-20" />
-    <CustomDialog class="z-20" />
     <Intro v-if="showIntro" @click="showIntro = false" />
 
-    <component :is="PromoteDialog" v-if="(totalActive > 60 * 60 && !promoteShown) || isSupport" />
-    <component :is="SaveLoad" v-if="showSaveLoad" class="z-20" @click="showSaveLoad = !showSaveLoad" />
-    <component :is="BuildImageSettings" v-if="showBuildImageSettings" class="z-20" @click="showBuildImageSettings = !showBuildImageSettings" />
-    <component :is="Share" v-if="showShare" class="z-20" @click="showShare = !showShare" />
-    <component :is="addPerkComponent" v-if="showAddPerk" @click="toggleShowAddPerk()" />
-    <component :is="addMissionComponent" v-if="showAddMission" @click="toggleShowAddMission()" />
-    <component :is="settingsComponent" v-if="showSettings" @click="toggleShowSettings()" />
-    <component :is="addFicComponent" v-if="showAddFic" :fic="currentFic" @click="toggleAddFic()" />
-    <BuildImage v-if="isBuildImage" />
+    <div v-auto-animate class="overflow-hidden">
+      <ConfirmDialog class="z-20" />
+      <InfoDialog class="z-20" />
+      <CustomDialog class="z-20" />
+      <component :is="PromoteDialog" v-if="(totalActive > 60 * 60 && !promoteShown) || isSupport" />
+      <component :is="SaveLoad" v-if="showSaveLoad" class="z-20" @click="showSaveLoad = !showSaveLoad" />
+      <component :is="BuildImageSettings" v-if="showBuildImageSettings" class="z-20" @click="showBuildImageSettings = !showBuildImageSettings" />
+      <component :is="Share" v-if="showShare" class="z-20" @click="showShare = !showShare" />
+      <component :is="addPerkComponent" v-if="showAddPerk" @click="toggleShowAddPerk()" />
+      <component :is="addMissionComponent" v-if="showAddMission" @click="toggleShowAddMission()" />
+      <component :is="settingsComponent" v-if="showSettings" @click="toggleShowSettings()" />
+      <component :is="addFicComponent" v-if="showAddFic" :fic="currentFic" @click="toggleAddFic()" />
+      <BuildImage v-if="isBuildImage" />
+    </div>
   </main>
 </template>
 

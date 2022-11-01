@@ -71,14 +71,19 @@
             <Input
               v-model="requirement.value"
               :placeholder="`Requirement #${i + 1}`"
-              :error-message="errors.objectives"
+              :error-message="errors[`objectives[${i}].value`]"
             />
             <div class="flex gap-2">
-              <Select v-model="requirement.type" placeholder="Reward Type" :options="['Credits', 'TX Tickets', 'Perks', 'Companions', 'Other']" />
+              <Select
+                v-model="requirement.type"
+                placeholder="Reward Type"
+                :options="['Credits', 'TX Tickets', 'Perks', 'Companions', 'Other']"
+                :error-message="errors[`objectives[${i}].type`]"
+              />
               <Input
                 v-model="requirement.reward"
                 :placeholder="`Bonus reward (optional) #${i + 1}`"
-                :error-message="errors.objectives"
+                :error-message="errors[`objectives[${i}].reward`]"
                 class="flex-grow"
               />
             </div>
@@ -142,7 +147,7 @@ const schema = toFormValidator(
     loca: zod.string().min(1, 'Location is required'),
     scope: zod.string().min(1, 'Scope is required'),
     conditions: zod.object({ value: zod.string().min(1, 'Condition should not be empty') }).array(),
-    objectives: zod.object({ value: zod.string(), reward: zod.string(), type: zod.string() }).array(),
+    objectives: zod.object({ value: zod.string().min(1, 'Requirement should not be empty'), reward: zod.string().min(1, 'Reward should not be empty'), type: zod.string().min(1, 'Choose a Reward Type') }).array(),
     reward: zod.string().min(1, 'Reward is required'),
     rewardType: zod.string().min(1, 'Reward type is required'),
     image: zod.string().regex(/[^ \!@\$\^&\(\)\+\=]+(\.png|\.jpeg|\.gif|\.jpg|\.webp)$/, { message: 'Must be a valid image URL in a jpeg/jpg/png/gif/webp format.' }).max(256, { message: 'Maximum length is 256 chars' }).optional().or(zod.literal('')),

@@ -16,21 +16,19 @@
     <h3 :id="perk.title" class="relative flex-wrap flex justify-center items-center text-base sm:text-xl">
       <span class="whitespace-nowrap">{{ perk.title }}</span>
       <span v-if="perk.dlc" class="text-sm ml-1" text="gray-700 dark:amber-400" @click.stop>
-        <a v-if="perk.dlclink" :href="perk.dlclink" target="_blank" rel="noopener noreferrer" class="underline">{{ perk.dlc }}</a>
+        <a v-if="perk.dlclink" :href="perk.dlclink" target="_blank" rel="noopener noreferrer" class="underline">DLC by {{ perk.dlc }}</a>
         <span v-else>DLC by {{ perk.dlc }}</span>
       </span>
       <span v-if="savedPerk.anything">({{ savedPerk.anything }})</span>
-      <AnythingInput
+      <TargetInput
         v-if="complexFields.target"
-        v-model="complex.target"
         placeholder="For whom"
         class="text-base ml-2 w-42"
-        :list="targetList"
         :bought-list="savedPerk.complex"
         :do-not-close-list="true"
         @click.stop
-      >
-      </AnythingInput>
+        @targetChange="changeTarget"
+      />
       <AnythingInput
         v-if="complexFields.flavor"
         v-model="complex.flavor"
@@ -149,17 +147,20 @@ const perkImg = ref<HTMLImageElement | null>(null)
 // const count = ref(props.savedPerk.count - (props.savedPerk?.target?.length || 0) - (props.savedPerk?.anything?.length) || 0)
 
 const complexFields = {
+  uid: ['target', 'target_f', 'target_c'].includes(props.perk.complex),
   target: ['target', 'target_f', 'target_c'].includes(props.perk.complex),
   flavor: ['flavor', 'target_f'].includes(props.perk.complex),
   count: ['target_c'].includes(props.perk.complex),
 }
 
 const complex = reactive({
+  uid: 0,
   target: '',
   flavor: '',
   count: 0,
 })
 
+// There a bug somewhere in this aproach, need to clear all data before it can be used when buy/modify/sell/buy scenario
 const perkToSave = reactive({
   uid: props.perk.uid,
   title: props.perk.title,
@@ -191,6 +192,12 @@ const freebieCosts = computed(() => {
     totalCost += props.perk.freebies.defensePerks.reduce((a, x) => a += x.count * defenseObject[x.title].cost, 0)
   return totalCost
 })
+
+function changeTarget(target: {uid: number; name: string}) {
+  complex.uid = target.uid
+  complex.target = target.name
+  sendPerk()
+}
 
 function sendPerk() {
   const obj = filterObject(perkToSave)

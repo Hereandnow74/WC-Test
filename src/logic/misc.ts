@@ -1,5 +1,5 @@
 import Fuse from 'fuse.js'
-import { random, groupBy, sampleSize, findIndex, sample, isNumber } from 'lodash-es'
+import { random, groupBy, sampleSize, findIndex, sample, isNumber, xor } from 'lodash-es'
 import tippy from 'tippy.js'
 import { DBWorld } from 'global'
 import { allWorldsNoCondition, ALL_DLC_PERK_TITLES, CHAR_COSTS, getAllChars, useAllChars } from '~/data/constants'
@@ -11,7 +11,7 @@ import { useChallenges } from '~/store/challenges'
 import { Perk } from '~/store/chargen'
 import { usePlayStore } from '~/store/play'
 
-const { allCharsComp } = useAllChars()
+const { allCharsComp, allCharsObject } = useAllChars()
 
 export const useTooltips = () => tippy('[data-tippy-content]', {
   animation: false,
@@ -43,6 +43,10 @@ export function lazyLoadImg(list: HTMLElement| null) {
 }
 export function lazyLoadSingleImg(img: HTMLImageElement) {
   if (img) {
+    if (img.src && img.src !== img.dataset.src) {
+      img.src = img.dataset.src || ''
+      return
+    }
     const options = {
       root: null,
       threshold: 0,
@@ -112,7 +116,8 @@ export function toReadableTime(seconds: number) {
   return res
 }
 
-export function imageLink(link: string, uid: number) {
+export function imageLink(uid: number) {
+  const link = allCharsObject.value[uid]?.i
   if (link) {
     if (link.startsWith('http') || link.startsWith('/')) { return link }
     else {
@@ -240,7 +245,7 @@ export function copyText() {
 
   full += intensities.value.length
     ? `Intensity \n${intensities.value.reduce((a, x) =>
-      a += `${x.title} +${x.intensity > 10 ? x.intensity : baseBudgetAfter.value * x.intensity} [${(fullCost.c += x.intensity > 10 ? x.intensity : baseBudgetAfter.value * x.intensity, fullCost.c)}]\n\n`
+      a += `${x.title} +${x.intensity > 10 ? x.intensity : Math.round(baseBudgetAfter.value * x.intensity)} [${(fullCost.c += x.intensity > 10 ? x.intensity : Math.round(baseBudgetAfter.value * x.intensity), fullCost.c)}]\n\n`
     , '')}`
     : ''
 
@@ -282,16 +287,28 @@ export function copyText() {
 
   fullCost.c -= companionsCost.value
   full += companionsBought.length
-    ? `Companions bought -${companionsCost.value} [${fullCost.c}]\n${companionsBought.reduce((a, x) =>
-      a += `${x.name}(T${x.tier})[${x.method}]${x.role && x.role !== 'Companion' ? `{${x.role}}` : ''} from ${x.world}\n`
+    ? `Companions bought -${companionsCost.value} [${fullCost.c}]\n${companionsBought.reduce((a, x) => {
+      a += `${x.name}(T${x.tier})[${x.method}]${x.role && x.role !== 'Companion' ? `{${x.role}}` : ''} from ${x.world}`
+      if (x.swap)
+        a += ` Power Swapped to ${x.swap.name} of [T${x.swap.tier}]`
+      if (x.perk)
+        a += ` with Specific Waifu Perk ${x.perk.title} [T${x.perk.tier}]`
+      return `${a}\n`
+    }
     , '')}`
     : ''
 
   fullCost.c += companionProfit.value + companionProfitSold.value
 
   full += companionsCaptured.length
-    ? `\nCompanions captured +${companionProfit.value}; sold +${companionProfitSold.value} [${fullCost.c}]\n${companionsCaptured.reduce((a, x) =>
-      a += `${x.name}(T${x.tier})${x.role && x.role !== 'Companion' ? `{${x.role}}` : ''} from ${x.world}${x.sold ? ' --SOLD' : ''}\n`
+    ? `\nCompanions captured +${companionProfit.value}; sold +${companionProfitSold.value} [${fullCost.c}]\n${companionsCaptured.reduce((a, x) => {
+      a += `${x.name}(T${x.tier})${x.role && x.role !== 'Companion' ? `{${x.role}}` : ''} from ${x.world}${x.sold ? ' --SOLD' : ''}`
+      if (x.swap)
+        a += ` Power Swapped to ${x.swap.name} of [T${x.swap.tier}]`
+      if (x.perk)
+        a += ` with Specific Waifu Perk ${x.perk.title} [T${x.perk.tier}]`
+      return `${a}\n`
+    }
     , '')}`
     : ''
 

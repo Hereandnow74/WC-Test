@@ -4,7 +4,7 @@
   >
     <div class="flex gap-2 w-full">
       <img
-        :src="startingOrigin.image || (char.i ? imageLink(char.i, char.u) : '/img/Contractor.jpg')"
+        :src="startingOrigin.image || (char.i ? imageLink(char.u) : '/img/Contractor.jpg')"
         :alt="startingOrigin.character"
         class="rounded object-cover max-h-[140px] max-w-[90px] object-top w-24"
       >
@@ -40,8 +40,20 @@
             :list="['F', 'M', 'O']"
           />
         </div>
+        <div
+          v-if="startingOrigin.swap"
+          class="text-gray-400"
+        >
+          Power Swap to: <span class="text-gray-200">{{ startingOrigin.swap.name }}</span> [<span class="text-green-400">T{{ startingOrigin.swap.tier }}</span>]
+        </div>
+        <div
+          v-if="startingOrigin.perk"
+          class="text-gray-400"
+        >
+          Specific Waifu Perk: <span class="text-gray-200">{{ startingOrigin.perk.title }}</span> [<span class="text-green-400">T{{ startingOrigin.perk.tier }}</span>]
+        </div>
         <div v-if="editMode">
-          <Input v-model="image" class="w-full" placeholder="Your image only from Imgur.com example: https://i.imgur.com/jm8eCCA.png" />
+          <Input v-model="startingOrigin.image" class="w-full" placeholder="Direct link to an image" />
           <Input v-model="startingOrigin.w" class="w-full mt-1" placeholder="Place you're from" />
         </div>
       </div>
@@ -71,18 +83,11 @@ const noUC = computed(() => findIndex(miscPerks.value, { title: 'Universal Calib
 
 const { allCharsObject } = useAllChars()
 
-const image = ref(startingOrigin.value.image || '')
-
 const char = computed(() => allCharsObject.value[startingOrigin.value.uid] || {})
 
 if (!startingOrigin.value.sex)
   startingOrigin.value.sex = char.value.b ? (char.value.b?.includes('F') ? 'F' : 'M') : 'M'
 
 watch(char, () => char.value.b ? startingOrigin.value.sex = char.value.b.includes('F') ? 'F' : 'M' : null)
-
-watch(image, () => {
-  if (image.value.startsWith('https://i.imgur.com/') || /.*\.imagebam\.com.*/.test(image.value))
-    startingOrigin.value.image = image.value
-})
 
 </script>

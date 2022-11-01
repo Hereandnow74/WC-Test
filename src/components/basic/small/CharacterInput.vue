@@ -55,8 +55,6 @@ const { charSearch } = useCharSearch()
 
 watch(value, () => { if (charSearch.value && value.value.length <= 10) searchResult.value = charSearch.value.search(value.value, { limit: 10 }) })
 
-const list = null
-
 const charTippy = computed(() => {
   listEl.value.hidden = false
   const list = tippy(`#${props.idd}`, {
@@ -80,19 +78,20 @@ watch(searchResult, () => {
   gotResult.value = false
 })
 
-const emit = defineEmits(['update:modelValue', 'updateTier', 'updateUID'])
+const emit = defineEmits(['update:modelValue', 'updateTier', 'updateUID', 'onChar'])
 
 watch(value, () => emit('update:modelValue', value.value))
 
 function chooseChar(char: any) {
   gotResult.value = true
-  if (list) list.hide()
+  if (charTippy.value) charTippy.value.hide()
   value.value = char.item.n
   emit('updateTier', char.item.t)
   emit('updateUID', char.item.u)
+  emit('onChar', char.item)
 }
 
 function showTip() {
-  if (list) list.show()
+  if (charTippy.value) charTippy.value.show()
 }
 </script>

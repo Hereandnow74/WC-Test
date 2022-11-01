@@ -5,8 +5,9 @@
   >
     <div class="flex gap-2 w-full">
       <img
-        v-if="fullChar.i && !settings.allImg"
-        :data-src="imageLink(fullChar.i, fullChar.u)"
+        v-if="image && !settings.allImg"
+        ref="imageEl"
+        :data-src="image"
         :alt="char.name"
         class="rounded object-cover max-h-[140px] max-w-[90px] object-top"
       >
@@ -17,9 +18,9 @@
             {{ char.name }}<span class="text-gray-500 text-sm"> ({{ methods[char.method] }})</span>
           </router-link>
           <span v-if="char.sold" class="text-red-500 ml-1">SOLD</span>
-          <span class="text-gray-500 ml-auto whitespace-nowrap"> Tier: <span class="text-green-500">{{ char.tier }}</span></span>
+          <span class="text-gray-500 ml-auto whitespace-nowrap"> Tier: <span class="text-green-500">{{ char.perk?.tier || char.swap?.tier || char.tier }}</span></span>
           <span
-            v-if="char.tier !== char.priceTier"
+            v-if="char.tier !== char.priceTier && char.priceTier"
             class="text-gray-500 ml-2 whitespace-nowrap"
           > Original: <span class="text-green-500">{{ char.priceTier }}</span></span>
         </div>
@@ -58,7 +59,22 @@
           />
         </div>
 
+        <div v-if="editMode">
+          <Input v-model="char.image" class="w-full" placeholder="Direct link to an image" />
+        </div>
         <div>
+          <span
+            v-if="char.swap"
+            class="text-gray-400"
+          >
+            Power Swap to: <span class="text-gray-200">{{ char.swap.name }}</span> [<span class="text-green-400">T{{ char.swap.tier }}</span>]
+          </span>
+          <span
+            v-if="char.perk"
+            class="text-gray-400"
+          >
+            Specific Waifu Perk: <span class="text-gray-200">{{ char.perk.title }}</span> [<span class="text-green-400">T{{ char.perk.tier }}</span>]
+          </span>
           <span
             v-if="talentsList.length > 0"
             class="text-gray-500"
@@ -154,34 +170,6 @@
       >
         <ic:baseline-assignment-return />
       </div>
-      <!-- <Button
-            v-if="char.method !== 'unbound' && settings.ableSell"
-            bg-color="bg-teal-500"
-            size="Small"
-            label="free"
-            @click="freeCompanion(char.uid)"
-          />
-          <Button
-            v-if="flags.chargen"
-            label="undo"
-            size="Small"
-            bg-color="bg-blue-500"
-            @click="$emit('undo', char.uid)"
-          />
-          <Button
-            v-if="['capture'].includes(char.method)"
-            :label="`sell ${char.tier === 11 ? '1 ticket' : Math.floor(CHAR_COSTS[char.tier] * manualSellKf) + 'c'}`"
-            size="Small"
-            bg-color="bg-red-500"
-            @click="sellCompanion(char.uid)"
-          />
-          <Button
-            v-if="['buy', 'used', 'yoink'].includes(char.method)"
-            :label="`return ${char.priceTier === 11 ? '1 ticket' : Math.round(CHAR_COSTS[char.priceTier] * 0.8) + 'c'}`"
-            size="Small"
-            bg-color="bg-yellow-600"
-            @click="sellCompanion(char.uid)"
-          /> -->
       <div class="flex gap-1 items-center pl-4">
         <div class="cursor-pointer hover:bg-gray-500 rounded-xl p-1" title="Move Up" @click="moveRetinue(-1)">
           <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"><path fill="currentColor" fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z" /></svg>
@@ -200,7 +188,7 @@ import { findIndex, isNumber } from 'lodash'
 import TextArea from '../basic/TextArea.vue'
 import { CHAR_COSTS, useAllChars, waifusThatHasPerk, waifuTags } from '~/data/constants'
 import { waifuPerksObject } from '~/data/waifu_perks'
-import { imageLink } from '~/logic'
+import { imageLink, lazyLoadSingleImg } from '~/logic'
 import { SavedChar } from '~/store/chargen'
 import { useStore } from '~/store/store'
 
@@ -218,6 +206,8 @@ const props = defineProps({
     default: () => ({}),
   },
 })
+
+const imageEl = ref<null|HTMLImageElement>(null)
 
 const methods = {
   buy: 'Bought',
@@ -238,13 +228,21 @@ const { allCharsObject } = useAllChars()
 
 const fullChar = computed(() => {
   if (isNumber(props.char.uid))
-    return allCharsObject.value[props.char.uid] || { i: '', b: [] }
+    return allCharsObject.value[props.char.originUID || props.char.uid] || { i: '', b: [] }
   else
     return { i: waifuPerksObject[props.char.uid].image, b: [] }
 })
 
+const image = computed(() => props.char.image || (!props.char.perk ? imageLink(props.char.originUID || props.char.uid) : waifuPerksObject[props.char.perk.uid].image || ''))
+watch(image, () => imageEl.value ? lazyLoadSingleImg(imageEl.value) : null, { flush: 'post' })
+
 const tags = computed(() => {
-  return fullChar.value.b.map(x => waifuTags[x] ? waifuTags[x] : { tag: x, color: 'bg-teal-600', desc: '' })
+  const t = []
+  if (props.char.swap)
+    t.push(...allCharsObject.value[props.char.swap.uid].b)
+  else
+    t.push(...(allCharsObject.value[props.char.originUID || props.char.uid]?.b || []))
+  return t.map(x => waifuTags[x] ? waifuTags[x] : { tag: x, color: 'bg-teal-600', desc: '' })
 })
 
 const talentsList = computed(() => {

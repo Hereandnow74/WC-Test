@@ -6,12 +6,36 @@
       </h2>
       <div>
         <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          30 October 2022
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~340 new user submitted characters, new worlds and missions.</li>
+          <li>Reworked Power Swap code to allow for TX, expect bugs</li>
+          <li>Reworked Specific Waifu Perks code, expect bugs</li>
+          <li>Now you can assign custom images to Retinue from any source.</li>
+          <li>Now you can capture copies of companions, although they will not be eligible for Specific Waifu Perks.</li>
+          <li>Worlds page now use infinite scroll, maybe it will improve performance</li>
+          <li>Now you can safely rename characters with Template Stack & other targeted perks, without selling and buying them again. Expect bugs in old saves.</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          23 October 2022
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~215 new user submitted characters, new worlds and missions.</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
           19 October 2022
         </h3>
         <ul class="list-decimal list-inside">
           <li>~165 new user submitted characters.</li>
           <li>Defenses rebates now counted <b>automatically</b>, old system can be turned on in settings.</li>
-          <li>You can now use old Slightly USed rules for rolls.</li>
+          <li>You can now use old Slightly Used rules for rolls.</li>
           <li>Bugfixes & small changes</li>
         </ul>
       </div>

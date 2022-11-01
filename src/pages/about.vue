@@ -5,7 +5,7 @@
         About Page
       </h3>
       <div>
-        Time I spend on Interactive Waifu Catalog so far -
+        Time I spent on Interactive Waifu Catalog so far -
         <span class="text-amber-500">more than a 1000</span> hours in
         <span class="text-amber-500">more than a year</span>.
       </div>

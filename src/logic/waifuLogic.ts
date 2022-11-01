@@ -1,4 +1,4 @@
-import { Character } from 'global'
+import { Character, DBCharacter } from 'global'
 import { intersection } from 'lodash-es'
 import { confirmDialog } from './dialog'
 import { CHAR_COSTS } from '~/data/constants'
@@ -10,9 +10,9 @@ const {
 
 const priceTier = (t: number): number => flags.value.noBindings && t !== 11 && t !== 1 ? t - 1 : t
 
-export function buyCompanion(char: Character) {
-  const sex = (intersection(char.tags, ['F', 'M', 'O'])[0] || 'F') as 'F' | 'M' | 'O'
-  companions.value.push({ uid: char.uid, name: char.name, world: char.world, sex, tier: char.tier, priceTier: priceTier(char.tier), method: 'buy' })
+export function buyCompanion(char: DBCharacter) {
+  const sex = (intersection(char.b, ['F', 'M', 'O'])[0] || 'F') as 'F' | 'M' | 'O'
+  companions.value.push({ uid: char.u, name: char.n, world: char.w, sex, tier: char.t, priceTier: priceTier(char.t), method: 'buy' })
 }
 
 export function captureCompanion(char: Character) {

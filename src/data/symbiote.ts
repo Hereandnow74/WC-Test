@@ -66,7 +66,7 @@ export const synUnits: Units[] = [
     title: 'Buzzers',
     type: 'Larva',
     cost: 0,
-    image: '',
+    image: 'https://cdn.discordapp.com/attachments/925963686433132644/1032739343195983963/Screenshot_3.jpg',
     desc: `
     <p>These wasp-like creatures, as large as an adult human’s fist, can fly to a local altitude of 100m. Buzzers’ mandibles and stingers are laced with transformative fluid, allowing them to infect a target through any open wound or fluid. This dose is quite small, and thus whitelist far more time to take effect than those of other larva types. One Buzzer carries enough transformative to dose 12 targets before it falls to the ground, dead.</p>
     <p>One clutch of buzzers has 24 eggs, with each one roughly the size of a quail’s. Buzzers typically feed on fruits, but can cultivate their own type of honey as a more stable food supply. They require three days to feed and grow large enough for practical use.</p>
@@ -78,7 +78,7 @@ export const synUnits: Units[] = [
     title: 'Floaters',
     type: 'Larva',
     cost: 0,
-    image: '',
+    image: 'https://cdn.discordapp.com/attachments/925963686433132644/1032740233621536880/Screenshot_5.jpg',
     desc: `
     <p>These jellyfish-like creatures, with main bodies large enough to hold a human within, move as their name suggests and can reach anywhere in a local atmosphere. Their tentacles carry a chemical sedative that most creatures absorb on skin contact and can knock out a tier 2 adult human within twenty seconds. Resistance to this chemical is increasingly common in higher-tiered targets: at effective tier (after step 6) 6 or above, most targets are too resistant, or can fight back too well, for Floater-based capturing to remain viable. They can escape a Floater’s grasp (or even kill it outright!) before the sedative can fully affect them.</p>
     <p>Floater clutches have only four eggs each, but the egg is very large, roughly the size of an ostrich’s. Floaters are obligate carnivores and prefer large game. They require two weeks to feed and grow large enough for practical use, but can continue growing beyond that point, with no hard limit. Multiple Floaters can join together to abduct especially large or numerous targets. When this occurs, they cannot separate until the capture completes.</p>
@@ -105,7 +105,7 @@ export const synUnits: Units[] = [
     title: 'Skitterers',
     type: 'Larva',
     cost: 0,
-    image: '',
+    image: 'https://cdn.discordapp.com/attachments/925963686433132644/1032758849909833790/828456-Alien-Monsters-Painting-Art-Teeth-Fan-ART.jpg',
     desc: `
     <p>The original Alterzelu larva type, these long-tailed pseudo-arachnids generally resemble a small Xenomorph, but always have the strongest similarity to a symbiote host’s bioarmor, no matter the queen’s theme. Skitterers are comparable in size to a small dog or wild cat, such as a beagle or lynx. They can climb up walls and across ceilings with ease and use their tails to reach surprising speeds underwater. Though not truly sapient, living only to merge with a future host, Skitterers are dangerously clever, capable of using teamwork, tactics, and trickery. They cannot be fought off by any target of effective tier (after step 6) 5 or below. Outside of a theoretical “white room” scenario, they can leverage their advantages to pose major threats against even some Tier 7s and 8s.</p>
     <p>One clutch of Skitterers has 8 eggs, with each one roughly the size of a goose’s. Skitterers are obligate carnivores, preferring small mammals and fish, and require one week to feed and grow large enough for practical use.</p>
@@ -608,7 +608,7 @@ export const symBuildings: PerkFull[] = [
   {
     uid: 'GCJsO',
     title: 'Fortress',
-    cost: 115,
+    cost: 0,
     dCost: 3000,
     category: 'Binding',
     type: 'Freestanding',

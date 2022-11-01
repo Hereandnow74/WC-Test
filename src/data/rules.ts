@@ -3,7 +3,7 @@ export const startingDesc = `<h3 class="font-bold text-lg">Creating Your Build</
 
 <p>Next, modify your starting budget by your intensity multiplier. The base multiplier is 1x. This multiplier is modified using the co-operative and PvP options found in the CYOA Modes section. All changes to the intensity multiplier are additive. Now that you know your budget, pick an Origin, one Binding-type control, and as many of the Lures, Other Controls, Perks, Companions, and Familiars as you desire or can afford.</p>
 
-<p>The company’s Companions and Familiars are all clones manufactured on demand, except where noted. They come packaged with their iconic outfits, personal equipment, and familiars or treasured pets, when appropriate. The largest equipment normally allowed are motorcycles, but there are some rare exceptions. For your own ease of accounting, you may only purchase one copy of any distinct entry at a time. They are sorted into eleven tiers, each of which has a different cost. See the table on the first page of the spreadsheet for details. The waifu lists properly begin on page 3 of the spreadsheet. Third-party lists of companions are also allowed and may be found elsewhere.</p>
+<p>The company’s Companions and Familiars are all clones manufactured on demand, except where noted. They come packaged with their iconic outfits, personal equipment, and familiars or treasured pets, when appropriate. The largest equipment normally allowed are motorcycles, but there are some rare exceptions. For your own ease of accounting, you may only purchase one copy of any distinct entry at a time. They are sorted into eleven tiers, each of which has a different cost.</p>
 
 `
 

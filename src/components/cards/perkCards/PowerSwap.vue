@@ -1,19 +1,12 @@
 <template>
-  <GenericPerkCard
-    v-bind="{perk, isActive: !!savedPerk.title, savedPerk}"
-  >
+  <GenericPerkCard v-bind="{perk, isActive: !!savedPerk.title, savedPerk}" @pickPerk.stop>
     <template #title>
       <Button label="Buy" bg-color="bg-blue-500" size="Small" class="mx-1" @click.stop="showBuyPerk = true" />
     </template>
-    <template #cost>
-      (Cost: <span text="green-600 dark:green-300">{{ displayedCost }}</span>)
-    </template>
     <template #underDesc>
-      <Modal v-if="showBuyPerk" :label="`Total cost: ${displayedCost}`" @click="showBuyPerk = false">
+      <Modal v-if="showBuyPerk" label="Power Swap" @click="showBuyPerk = false">
         <div ref="charList" class="min-h-0 overflow-y-auto max-h-[75vh] scrollbar grid md:grid-cols-2 gap-2 p-1">
-          <div
-            class="flex gap-2 w-full rounded bg-gray-300 dark:bg-gray-800 p-1"
-          >
+          <div class="flex gap-2 w-full rounded bg-gray-300 dark:bg-gray-800 p-1">
             <img
               :data-src="startingOrigin.image || '/img/Contractor.jpg'"
               alt="Your image"
@@ -26,30 +19,30 @@
               </h3>
 
               <CharacterInput
-                v-model="swapPower[startingOrigin.character || 'You'].name"
                 idd="idyou"
+                :model-value="startingOrigin.swap?.name"
                 placeholder="Character name"
                 class="flex-grow"
                 error-message=""
-                @updateTier="swapPower[startingOrigin.character || 'You'].swap = $event"
+                @onChar="buyPowerswapForYou"
               />
-              <Select v-model="swapPower[startingOrigin.character || 'You'].hr" :options="heritageOptions" placeholder="Archetype" />
+              <Select
+                v-model="startingOrigin.hr"
+                :options="heritageOptions"
+                placeholder="Archetype"
+              />
               <div class="flex gap-2">
-                <NumberInput
-                  v-model="startingOrigin.tier"
-                  :min="0"
-                  :max="10"
-                  label="Tier"
-                  class="whitespace-nowrap"
+                <div>
+                  T{{ startingOrigin.tier || 1 }} <span class="font-bold">-></span> T{{ startingOrigin?.swap?.tier || 0 }} =
+                  <span :class="((startingOrigin?.swap?.cost || 0) - (startingOrigin?.swap?.refund || 0)) <= 0 ? 'text-green-700 dark:text-green-400' : 'text-red-700 dark:text-red-400'">{{ ((startingOrigin?.swap?.cost || 0) - (startingOrigin?.swap?.refund || 0)) }}</span> credits
+                </div>
+                <Button
+                  icon="ant-design:clear-outlined"
+                  bg-color="bg-orange-500"
+                  label=""
+                  class="self-center"
+                  @click="() => delete startingOrigin.swap"
                 />
-                <NumberInput
-                  v-model="swapPower[startingOrigin.character || 'You'].swap"
-                  :min="0"
-                  :max="10"
-                  label="Swap to"
-                  class="whitespace-nowrap"
-                />
-                <Button icon="ant-design:clear-outlined" bg-color="bg-orange-500" label="" class="self-center" @click="() => swapPower[startingOrigin.character || 'You'].swap = 0" />
               </div>
             </div>
           </div>
@@ -59,45 +52,40 @@
             class="flex gap-2 w-full rounded bg-gray-300 dark:bg-gray-800 p-1"
           >
             <img
-              v-if="allCharsObject[companion.uid] && allCharsObject[companion.uid].i && !settings.allImg"
-              :data-src="imageLink(allCharsObject[companion.uid].i, companion.uid)"
+              v-if="(allCharsObject[companion.originUID || companion.uid] && allCharsObject[companion.originUID || companion.uid].i) || companion.image && !settings.allImg"
+              :data-src="companion.image || imageLink(companion.originUID || companion.uid)"
               :alt="companion.name"
               class="rounded object-cover w-1/4 object-top"
               @load="setHeight"
             >
-            <div class="flex flex-col gap-2">
+            <div class="flex flex-col gap-2 w-full">
               <h3 class="flex gap-2 text-sm">
                 {{ companion.name }}
                 <span v-if="companion.world" class="text-gray-500">({{ companion.world }})</span>
               </h3>
               <CharacterInput
-                v-model="swapPower[companion.name].name"
+                :model-value="companion.swap?.name"
                 :idd="'id'+companion.uid"
                 placeholder="Character name"
                 class="flex-grow"
                 error-message=""
-                @updateTier="swapPower[companion.name].swap = $event"
+                @onChar="(char: DBCharacter) => buyPowerswap(char, companion)"
               />
-              <div class="flex gap-2">
-                <NumberInput
-                  :model-value="companion.tier"
-                  :min="0"
-                  :max="10"
-                  placeholder="Tier"
-                />
-                <NumberInput
-                  v-model="swapPower[companion.name].swap"
-                  :min="0"
-                  :max="10"
-                  placeholder="Tier"
-                />
+              <div class="flex gap-2 justify-between">
+                <div>
+                  T{{ companion.tier }} <span class="font-bold">-></span> T{{ companion?.swap?.tier || 0 }} =
+                  <span
+                    :class="((companion?.swap?.cost || 0) - (companion?.swap?.refund || 0)) <= 0 ? 'text-green-700 dark:text-green-400' : 'text-red-700 dark:text-red-400'"
+                  >{{ ((companion?.swap?.cost || 0) - (companion?.swap?.refund || 0)) }}
+                  </span> credits
+                </div>
                 <Button
                   icon="ant-design:clear-outlined"
                   bg-color="bg-orange-500"
                   label=""
                   title="clear"
                   class="self-center"
-                  @click="() => swapPower[companion.name].swap = 0"
+                  @click="() => {delete companion.swap}"
                 />
               </div>
             </div>
@@ -109,8 +97,10 @@
 </template>
 
 <script lang='ts' setup>
+import { DBCharacter } from 'global'
 import { CHAR_COSTS, useAllChars } from '~/data/constants'
 import { lazyLoadImg, imageLink } from '~/logic'
+import { SavedChar } from '~/store/chargen'
 import { useStore } from '~/store/store'
 
 const { companionsComp, settings, startingOrigin } = useStore()
@@ -134,8 +124,6 @@ const props = defineProps({
   },
 })
 
-const emit = defineEmits(['pickPerk'])
-
 const heritageOptions = [
   { label: 'None', value: '' },
   { label: 'Dragon', value: 'dr' },
@@ -143,67 +131,30 @@ const heritageOptions = [
   { label: 'Outsider', value: 'ou' },
 ]
 
-interface CharPower {
-  name: string
-  tier: number
-  swap: number
-  cap: boolean
-}
-
-const swapPower = reactive<Record<string, CharPower>>(companionsComp.value.reduce((a, x) => {
-  a[x.name] = { name: '', tier: x.tier, swap: 0, cap: x.method === 'capture' || x.priceTier === 0 }
-  return a
-}, {}) || {})
-
-swapPower[startingOrigin.value.character || 'You'] = { name: '', tier: startingOrigin.value.tier || 1, swap: 0, hr: '' }
-
-props.savedPerk?.complex?.forEach((x) => {
-  if (swapPower[x.target]) {
-    swapPower[x.target].name = x.flavor
-    swapPower[x.target].swap = x.newTier || 0
-  }
-})
-
 const showBuyPerk = ref(false)
 const charList = ref<HTMLElement | null>(null)
 
 const { allCharsObject } = useAllChars()
 
-const displayedCost = computed(() => {
-  return Object.values(swapPower).reduce((a, x) => {
-    if (x.swap !== 0) {
-      if (x.cap)
-        a += Math.max((CHAR_COSTS[x.swap] - CHAR_COSTS[x.tier]) || 0, 0)
-      else
-        a += (CHAR_COSTS[x.swap] - CHAR_COSTS[x.tier]) || 0
-    }
-    return a
-  }, 0)
-})
-
-function sendPerk() {
-  const obj = {
-    title: props.perk.title,
+function buyPowerswap(char: DBCharacter, companion: SavedChar) {
+  companion.swap = {
+    tier: char.t,
+    uid: char.u,
+    name: char.n,
+    cost: char.t !== 11 ? CHAR_COSTS[char.t] : 0,
+    refund: companion.tier !== 11 ? companion.method !== 'capture' ? CHAR_COSTS[companion.tier] : (char.t >= companion.tier ? CHAR_COSTS[companion.tier] : CHAR_COSTS[char.t]) : 0,
   }
-
-  obj.complex = Object.entries(swapPower).filter(x => x[1].swap !== 0).reduce((a, x) => {
-    const cmp = { target: x[0], flavor: x[1].name, newTier: x[1].swap }
-    if (x[1].hr)
-      cmp.hr = x[1].hr
-    a.push(cmp)
-    return a
-  }, [] as {target: string; flavor: string; newTier: number}[])
-
-  obj.count = obj.complex.length
-  obj.cost = displayedCost.value
-
-  // if (swapPower[startingOrigin.value.character || 'You'].swap > 0)
-  //   startingOrigin.value.tier = swapPower[startingOrigin.value.character || 'You'].swap
-
-  emit('pickPerk', props.perk, obj)
 }
 
-watch(swapPower, sendPerk)
+function buyPowerswapForYou(char: DBCharacter) {
+  startingOrigin.value.swap = {
+    tier: char.t,
+    uid: char.u,
+    name: char.n,
+    cost: CHAR_COSTS[char.t],
+    refund: CHAR_COSTS[startingOrigin.value.tier || 1],
+  }
+}
 
 function setHeight(event: Event) {
   event.target.style['max-height'] = `${event.target.clientWidth * 1.7 || 90}px`

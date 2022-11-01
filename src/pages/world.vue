@@ -1,7 +1,7 @@
 
 <template>
-  <div class="p-2 !block">
-    <div class="max-w-4xl pb-1 md:p-2 mx-auto flex gap-2 flex-wrap md:flex-nowrap">
+  <div class="px-2 !block flex flex-col h-full !overflow-hidden">
+    <div class="max-w-4xl pb-1 mx-auto flex gap-2 flex-wrap md:flex-nowrap">
       <div class="flex items-center flex-grow">
         <Input
           v-model="search"
@@ -62,9 +62,12 @@
       <span class="hidden md:block whitespace-nowrap">Results: <span class="text-blue-500">{{ worldsFiltered.length }}</span></span>
       <Button size="Small" label="Add World" class="whitespace-nowrap" @click="() => (editMode = false, toggleShowAddWorld())" />
     </div>
-    <div class="grid grid-cols-1 grid-flow-row-dense 4xl:grid-cols-6 5xl:grid-cols-7 xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-1 overflow-y-auto pb-8">
+    <div
+      ref="worldWrapper"
+      class="grid grid-cols-1 grid-flow-row-dense 4xl:grid-cols-6 5xl:grid-cols-7 xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-1 pb-8 h-full min-h-0 overflow-y-auto scrollbar"
+    >
       <WorldCard
-        v-for="world in worldsFiltered"
+        v-for="world in infiniteWorlds"
         :key="world.key"
         :world="world"
         :type="world.type"
@@ -111,6 +114,8 @@ const options = {
   keys: [{ name: 'worldName', weight: 1.2 }, 'condition.name'],
 }
 
+const worldWrapper = ref<HTMLElement>(null)
+
 // const subFuse = new Fuse(worldsSubReac.value, options)
 
 const allUserWorlds = computed(() => userWorlds.value.concat(localUserWorlds.value))
@@ -145,6 +150,21 @@ const worldsFiltered = computed(() => {
       .filter(x => filterUserWorlds.value ? x.type === filterUserWorlds.value : true)
   }
 })
+
+const startingWorldCount = settings.value.hideWorldImg ? 60 : 30
+
+const infiniteWorlds = ref(worldsFiltered.value.slice(0, startingWorldCount))
+watch(worldsFiltered, () => {
+  infiniteWorlds.value = worldsFiltered.value.slice(0, startingWorldCount)
+})
+
+useInfiniteScroll(
+  worldWrapper,
+  () => {
+    infiniteWorlds.value.push(...worldsFiltered.value.slice(infiniteWorlds.value.length, infiniteWorlds.value.length + 20))
+  },
+  { distance: 10 },
+)
 
 // const userWorldsFiltered = computed(() => {
 //   if (search.value)

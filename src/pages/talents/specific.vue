@@ -33,7 +33,7 @@ import { useTooltips } from '~/logic/misc'
 import { useStore } from '~/store/store'
 import { buildLayout } from '~/logic/toggles'
 
-const { settings, companionsUIDs } = useStore()
+const { settings, companionsUIDs, companionsByUID } = useStore()
 
 const showModal = ref(false)
 const specificList = ref<HTMLElement|null>(null)
@@ -49,10 +49,12 @@ const specificPerksWithDLC = computed(() => !settings.value.allChosenAuthors[0]
 
 const specificPerksFiltered = computed(() => specificPerksWithDLC.value.filter((perk) => {
   let res = false
+  if (companionsByUID.value[perk.uid])
+    return true
   if (isArray(perk.waifuUID))
-    res = perk.waifuUID.some(val => companionsUIDs.value[val])
+    res = perk.waifuUID.some(val => companionsUIDs.value[val] || companionsByUID.value[val])
   else
-    res = perk.waifuUID ? companionsUIDs.value[perk.waifuUID] : false
+    res = perk.waifuUID ? (!!companionsUIDs.value[perk.waifuUID] || !!companionsByUID.value[perk.waifuUID]) : false
   return res
 }))
 

@@ -30,18 +30,19 @@
                   label=""
                   class="self-center"
                   title="Add power"
-                  @click="addPower(startingOrigin.character || 'You')"
+                  @click="addPower(startingOrigin.uid || 0)"
                 />
               </h3>
-              <div v-for="power, i in powers[startingOrigin.character || 'You']" :key="i" class="flex gap-2">
+              <div v-for="power, i in powers[startingOrigin.uid || 0]" :key="i" class="flex gap-2">
                 <CharacterInput
-                  v-model="powers[startingOrigin.character || 'You'][i]"
+                  v-model="power.flavor"
                   :idd="'idyou' + i"
                   placeholder="Character / Race / Power name"
                   class="flex-grow"
                   error-message=""
+                  @onChar="(char: DBCharacter) => (power.flavor = char.n, power.target = startingOrigin.character || 'You', power.uid = startingOrigin.uid || 0)"
                 />
-                <Button icon="fluent:delete-20-filled" bg-color="bg-red-500" label="" class="self-center" @click="() => powers[startingOrigin.character || 'You'].splice(i, 1)" />
+                <Button icon="fluent:delete-20-filled" bg-color="bg-red-500" label="" class="self-center" @click="() => powers[startingOrigin.uid || 0].splice(i, 1)" />
               </div>
             </div>
           </div>
@@ -51,8 +52,8 @@
             class="flex gap-2 w-full rounded bg-gray-300 dark:bg-gray-800 p-1"
           >
             <img
-              v-if="allCharsObject[companion.uid] && !settings.allImg"
-              :data-src="imageLink(allCharsObject[companion.uid].i, companion.uid)"
+              v-if="(allCharsObject[companion.originUID || companion.uid] && allCharsObject[companion.originUID || companion.uid].i) || companion.image && !settings.allImg"
+              :data-src="companion.image || imageLink(companion.originUID || companion.uid)"
               :alt="companion.name"
               class="rounded object-cover w-1/4 object-top"
               @load="setHeight"
@@ -67,18 +68,19 @@
                   label=""
                   class="self-center"
                   title="Add power"
-                  @click="addPower(companion.name)"
+                  @click="addPower(companion.uid)"
                 />
               </h3>
-              <div v-for="power, i in powers[companion.name]" :key="i" class="flex gap-2">
+              <div v-for="power, i in powers[companion.uid]" :key="i" class="flex gap-2">
                 <CharacterInput
-                  v-model="powers[companion.name][i]"
+                  v-model="power.flavor"
                   :idd="'id'+companion.uid + i"
                   placeholder="Character / Race / Power name"
                   class="flex-grow"
                   error-message=""
+                  @onChar="(char: DBCharacter) => (power.flavor = char.n, power.target = companion.name, power.uid = companion.uid)"
                 />
-                <Button icon="fluent:delete-20-filled" bg-color="bg-red-500" label="" class="self-center" @click="() => powers[companion.name].splice(i, 1)" />
+                <Button icon="fluent:delete-20-filled" bg-color="bg-red-500" label="" class="self-center" @click="() => powers[companion.uid].splice(i, 1)" />
               </div>
             </div>
           </div>
@@ -89,6 +91,8 @@
 </template>
 
 <script lang='ts' setup>
+import { DBCharacter } from 'global'
+import { find } from 'lodash-es'
 import { useAllChars } from '~/data/constants'
 import { lazyLoadImg, imageLink } from '~/logic'
 import { useSettings } from '~/logic/searchSettings'
@@ -117,10 +121,13 @@ const props = defineProps({
 })
 
 const emit = defineEmits(['pickPerk'])
+const powers = reactive<Record<string, {target: string; flavor: string; uid: number}[]>>(props.savedPerk?.complex?.reduce((a, x) => {
+  // temporary fix to support old saves
+  if (!x.uid)
+    x.uid = find(companionsComp.value, ch => ch.name === x.target)?.uid || startingOrigin.value.uid || 0
 
-const powers = reactive<Record<string, string[]>>(props.savedPerk?.complex?.reduce((a, x) => {
-  if (a[x.target]) a[x.target].push(x.flavor)
-  else a[x.target] = [x.flavor]
+  if (a[x.uid]) a[x.uid].push({ target: x.target || '', uid: x.uid, flavor: x.flavor })
+  else a[x.uid] = [{ target: x.target || '', uid: x.uid, flavor: x.flavor }]
   return a
 }, {}) || {})
 
@@ -145,9 +152,9 @@ function sendPerk() {
   }
 
   obj.complex = Object.entries(powers).reduce((a, x) => {
-    x[1].forEach(power => a.push({ target: x[0], flavor: power }))
+    x[1].forEach(power => a.push({ target: power.target, flavor: power.flavor, uid: power.uid }))
     return a
-  }, [] as {target: string; flavor: string}[])
+  }, [] as {uid: number; target: string; flavor: string}[])
 
   obj.count = fullCount.value
   obj.cost = displayedCost.value
@@ -163,8 +170,8 @@ function setHeight(event: Event) {
 }
 
 function addPower(uid: number) {
-  if (powers[uid]) powers[uid].push('')
-  else powers[uid] = ['']
+  if (powers[uid]) powers[uid].push({ target: '', uid: 0, flavor: '' })
+  else powers[uid] = [{ target: '', uid: 0, flavor: '' }]
 }
 
 watch(showBuyPerk, () => lazyLoadImg(charList.value), { flush: 'post' })

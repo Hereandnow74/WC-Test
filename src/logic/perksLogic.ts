@@ -454,7 +454,14 @@ export function chooseGenericPerk(perk: PerkFull, saveData: Perk) {
 
 // Specific Waifu Perks
 export function specificAvailable(perk: WaifuPerk): boolean {
-  if (intersectionWith(companions.value, perk.waifuUID, (a, b) => a.uid === b).length
+  if (intersectionWith(companions.value, perk.waifuUID, (a, b) => {
+    if (a.perk)
+      return a.perk.uid === b
+    if (a.swap)
+      return a.swap.uid === b
+    else
+      return a.uid === b
+  }).length
         || perk.waifuUID.includes(startingOrigin.value.uid))
     return true
   if (startingOrigin.value.character) {

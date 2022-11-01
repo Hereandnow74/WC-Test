@@ -52,41 +52,41 @@
         Options
       </h3>
       <div class="flex flex-col gap-2">
-        <div class="flex justify-between gap-2 border-b border-gray-500">
+        <div class="flex justify-between gap-2 border-b border-gray-500 border-dotted">
           <div>Show images for <b>perk's</b></div>
           <Toggle v-model="settings.perkImages" />
         </div>
-        <div class="flex justify-between gap-4 border-b border-gray-500">
+        <div class="flex justify-between gap-4 border-b border-gray-500 border-dotted">
           <div>Load <b>NSFW</b> Images for characters by default</div>
           <Toggle v-model="settings.nsfw" />
         </div>
-        <div class="flex justify-between gap-4 border-b border-gray-500">
+        <div class="flex justify-between gap-4 border-b border-gray-500 border-dotted">
           <div>Hide <b>World</b> images</div>
           <Toggle v-model="settings.hideWorldImg" />
         </div>
-        <div class="flex justify-between gap-4 border-b border-gray-500">
+        <div class="flex justify-between gap-4 border-b border-gray-500 border-dotted">
           <div>Hide <b>Companions / Waifu perks</b> images</div>
           <Toggle v-model="settings.allImg" />
         </div>
-        <div class="flex justify-between gap-4 border-b border-gray-500">
+        <div class="flex justify-between gap-4 border-b border-gray-500 border-dotted">
           <div>Turn on the ability to <b>free</b> retinue members</div>
           <Toggle v-model="settings.ableSell" />
         </div>
-        <div class="flex justify-between gap-4 border-b border-gray-500">
+        <div class="flex justify-between gap-4 border-b border-gray-500 border-dotted">
           <div>Hide <b>descriptions</b> for perks by default</div>
           <Toggle v-model="settings.hideDesc" />
         </div>
-        <div class="flex justify-between gap-4 border-b border-gray-500">
+        <div class="flex justify-between gap-4 border-b border-gray-500 border-dotted">
           <div>Hide <b>legacy</b> perks by default</div>
           <Toggle v-model="settings.hideLegacy" />
         </div>
-        <div class="flex justify-between gap-4 border-b border-gray-500">
-          <div>Use manual defense rebates calculation</div>
+        <div class="flex justify-between gap-4 border-b border-gray-500 border-dotted">
+          <div>Use manual defense <b>rebates</b> calculation</div>
           <Toggle v-model="settings.rebates" />
         </div>
       </div>
       <h3 class="text-lg text-lime-700 dark:text-lime-400 font-semibold">
-        Turn off DLC's
+        Turn off DLC's by author
       </h3>
       <div class="flex gap-2 flex-wrap">
         <Toggle
@@ -102,6 +102,8 @@
           :value="name"
           :label="name"
           class="border border-gray-700 dark:border-gray-400 rounded p-0.5"
+          :class="[nicknames.includes(name) ? 'text-red-600 dark:text-red-400 font-semibold' : '']"
+          :title="nicknames.includes(name) ? 'Patron' : ''"
         />
       </div>
     </div>
@@ -109,6 +111,7 @@
 </template>
 
 <script lang="ts" setup>
+import { nicknames } from '~/data/constants'
 import {
   DLCgenericPerks, DLChomes, DLCperks, DLCtalents, DLCheritages, DLClureExpansions,
   DLCbindings, DLClures, DLCotherControls, DLCridePerks,

@@ -75,7 +75,7 @@
       </div>
       <CompanionCard
         v-if="name"
-        class="hidden xl:block absolute h-[500px] -top-18 w-[350px] left-[calc(100%+0.5rem)]"
+        class="hidden xl:block absolute h-[530px] -top-18 w-[300px] left-[calc(100%+0.5rem)]"
         :char="companion"
         :lazy="false"
       />

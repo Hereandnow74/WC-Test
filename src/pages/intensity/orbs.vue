@@ -1,6 +1,6 @@
 <template>
   <div class="sm:p-2">
-    <h3 class="text-center text-xl py-2">
+    <h3 class="text-center text-xl pb-2">
       Other Contractors
     </h3>
     <Desc class="max-w-screen-md mx-auto dark:bg-gray-800 bg-blue-gray-300 rounded" :desc="invasion" />

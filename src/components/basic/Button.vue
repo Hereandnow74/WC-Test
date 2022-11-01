@@ -1,8 +1,8 @@
 <template>
   <button
-    class="text-gray-100 font-medium rounded hover:scale-105 transform flex items-center
+    class="text-gray-100 font-medium rounded hover:text-gray-200 transform flex items-center
     justify-center gap-1 shadow shadow-dark-50"
-    :class="[bgColor, sizes[size], {'!bg-gray-500 hover:scale-100 cursor-not-allowed': disabled}]"
+    :class="[bgColor, sizes[size], {'!bg-gray-500 cursor-not-allowed': disabled}]"
   >
     <span v-if="icon" class="flex items-center" :class="{'text-xl': size !== 'Small'}"><span class="iconify" :data-icon="icon"></span></span>
     <span v-if="label">{{ label }}</span>

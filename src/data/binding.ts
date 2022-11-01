@@ -954,7 +954,7 @@ export const otherControls: PerkFull[] = [
     image: 'https://i.ibb.co/gg2wM9D/Conjunction.jpg',
     category: 'Other Control',
     cost: 25,
-    whitelist: ['Second-Generation Symbiote', 'Complementary Colors'],
+    whitelist: ['Second-Generation Symbiote', 'Shroud of Power'],
     needed: 1,
     desc: `
 <p>In addition to its other effects, the Binding method you use now adds its subjects to an empathic and telepathic group mind centered on yourself. This group mind operates on two levels: the higher, active, level allows everyone connected to participate in the telepathic equivalent of a chatroom, regardless of distance or barriers, such that you could even communicate between different multiverses. Your retinue members may actively share and experience each others’ senses through this network. The deeper, passive, level gives your waifus a full awareness of your activity and needs, such that they may even respond to orders that you haven't consciously given yet.</p>

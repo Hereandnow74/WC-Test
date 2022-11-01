@@ -254,6 +254,7 @@
 <script lang="ts" setup>
 import html2canvas from 'html2canvas'
 import { useAllChars } from '~/data/constants'
+import { waifuPerksObject } from '~/data/waifu_perks'
 import { imageLink, isBuildImage, numberToSigned } from '~/logic'
 import { confirmDialog, customDialog } from '~/logic/dialog'
 import { useSettings } from '~/logic/searchSettings'
@@ -303,9 +304,9 @@ const originText = computed(() => {
 const companionImages = computed(() => {
   const res = {} as Record<number, string>
   companions.value.forEach((char) => {
-    const charInfo = allCharsObject.value[char.uid]
+    const charInfo = allCharsObject.value[char.originUID || char.uid]
     if (charInfo !== undefined)
-      res[char.uid] = imageLink(charInfo.i, charInfo.u)
+      res[char.uid] = !char.perk ? (char.image || imageLink(charInfo.u)) : waifuPerksObject[char.perk.uid].image || ''
   })
   return res
 })

@@ -1,20 +1,20 @@
 <template>
   <div
-    class="py-1 w-full text-gray-200 bg-warm-gray-700 rounded"
+    class="py-1 w-full dark:text-gray-200 bg-warm-gray-300 dark:bg-warm-gray-700 rounded"
   >
-    <div class="border border-gray-800 h-full flex flex-col" :class="[isUserChar ? 'bg-warm-gray-800': 'bg-gray-800']">
+    <div class="border border-gray-400 rounded dark:border-gray-800 h-full flex flex-col" :class="[isUserChar ? 'bg-warm-gray-400 dark:bg-warm-gray-800': 'bg-gray-300 dark:bg-gray-800']">
       <div ref="cardEl" class="relative flex-grow">
         <img
           v-if="withImage"
           ref="companionEl"
           class="rounded absolute object-cover h-full w-full object-top"
-          :data-src="imageLink"
+          :data-src="image"
           :alt="charData.name"
         >
         <div v-else class="h-16"></div>
         <icon-park-outline:full-screen-one
           class="absolute top-1 right-1 hover:text-blue-400 cursor-pointer mix-blend-difference"
-          @click="() => (showModal = true, modalImage=(nsfw ? charData.image_nsfw || imageLink : charData.sourceImage || imageLink))"
+          @click="() => (showModal = true, modalImage=(nsfw ? charData.image_nsfw || image : charData.sourceImage || image))"
         />
         <span
           v-if="charData.image_nsfw"
@@ -92,8 +92,8 @@
           class="absolute bottom-0 py-1 w-full flex justify-center gap-4 transition-opacity duration-500 opacity-0 bg-black bg-opacity-25"
           :class="{'opacity-100': inFocus}"
         >
-          <template v-if="!isAlredyBought(charData.uid)">
-            <Button size="Small" bg-color="bg-red-500" label="buy" @click="buyCompanion(charData)" />
+          <template v-if="!isAlreadyBought(charData.uid)">
+            <Button size="Small" bg-color="bg-red-500" label="buy" @click="buyCompanion(char)" />
             <Button
               v-if="flags.chargen"
               size="Small"
@@ -104,7 +104,10 @@
             <Button size="Small" bg-color="bg-violet-600" label="used" @click="usedModal = true" />
             <Button class="whitespace-nowrap" size="Small" :label="`capture${charCost}`" @click="captureCompanion(charData)" />
           </template>
-          <Button v-else-if="flags.chargen" size="Small" label="undo" @click="undoBuying(charData.uid)" />
+          <template v-else>
+            <Button v-if="flags.chargen" size="Small" label="undo" @click="undoBuying(charData.uid)" />
+            <Button size="Small" :label="`capture copy ${copyCount ? `#${copyCount + 1}` : ''}`" bg-color="bg-orange-500" @click="captureCopy(charData.uid)" />
+          </template>
         </div>
       </div>
       <div class="py-1 h-max">
@@ -127,7 +130,7 @@
             <div ref="infoIcon" class="pr-1 text-gray-500 text-2xl md:text-base" @click="isTouchpad ? showMenu = true : null">
               <ic:outline-report />
             </div>
-            <div v-show="showTiers && (isTouchpad ? showMenu : isInfoHovered || isMenuHovered)" ref="editMenu" class="w-max flex flex-col gap-3 md:gap-1 absolute right-0 -top-8 edit-icons bg-gray-700 p-1" @click="isTouchpad ? showMenu = false : null">
+            <div v-show="showTiers && (isTouchpad ? showMenu : isInfoHovered || isMenuHovered)" ref="editMenu" class="w-max flex flex-col gap-3 md:gap-1 absolute right-0 -top-8 edit-icons bg-gray-700 text-gray-200 p-1" @click="isTouchpad ? showMenu = false : null">
               <a
                 v-if="charData.sourceImage"
                 class="hover:(text-gray-300 bg-gray-600) cursor-pointer flex items-center gap-1"
@@ -163,26 +166,26 @@
             </div>
           </div>
         </h4>
-        <div class="text-center leading-none text-blue-300">
+        <div class="text-center leading-none text-blue-900 dark:text-blue-300">
           <span>{{ charData.world }}</span>
           <span v-if="charData.sub" class="text-blue-200"> - {{ charData.sub }}</span>
         </div>
-        <div v-if="charData.nickname" class="ml-2 mb-1 text-xs text-gray-400 leading-none" :title="nicknames.includes(charData.nickname) ? 'Patron' : ''">
+        <div v-if="charData.nickname" class="ml-2 mb-1 text-xs text-gray-600 dark:text-gray-400 leading-none" :title="nicknames.includes(charData.nickname) ? 'Patron' : ''">
           by <span :class="{'text-red-400 cursor-help font-semibold': nicknames.includes(charData.nickname)}">{{ charData.nickname }}</span>
         </div>
         <div v-if="showTiers" class="flex justify-between px-2">
-          <div class="text-gray-400 justify-self-start">
-            Tier: <span class="text-amber-300">{{ (charData.tier) }}</span>
+          <div class="text-gray-600 dark:text-gray-400 justify-self-start">
+            Tier: <span class="text-amber-600 dark:text-amber-300">{{ (charData.tier) }}</span>
           </div>
-          <div class="text-gray-400 whitespace-nowrap text-right">
-            Cost: <span class="text-amber-300">{{ charData.tier === 11 ? 'Tier X ticket' : CHAR_COSTS[charData.tier] }}</span>
+          <div class="text-gray-600 dark:text-gray-400 whitespace-nowrap text-right">
+            Cost: <span class="text-amber-600 dark:text-amber-300">{{ charData.tier === 11 ? 'Tier X ticket' : CHAR_COSTS[charData.tier] }}</span>
             <span
               v-if="flags.noBindings && (charData.tier) !== 11 && (charData.tier) !== 1"
               title="Discount from No Binding"
             >({{ CHAR_COSTS[(charData.tier) - 1] }})</span>
           </div>
         </div>
-        <div v-if="showTags" class="flex flex-wrap gap-1 text-sm justify-center">
+        <div v-if="showTags" class="flex flex-wrap gap-1 text-sm justify-center text-gray-200">
           <Tag
             v-for="tag in showDefenseTags && defenseTags.length ? defenseTags : normalTags"
             :key="tag.tag"
@@ -203,7 +206,7 @@
         <span
           v-if="charData.image_nsfw"
           class="absolute top-1 right-4 hover:text-blue-400 cursor-pointer mix-blend-difference"
-          @click.stop="(nsfw = !nsfw, modalImage=(nsfw ? charData.image_nsfw || imageLink : imageLink))"
+          @click.stop="(nsfw = !nsfw, modalImage=(nsfw ? charData.image_nsfw || imageLink(charData.uid) : imageLink(charData.uid)))"
         >{{ nsfw ? 'NSFW' : 'SFW' }}</span>
       </div>
     </div>
@@ -214,16 +217,17 @@
 </template>
 
 <script lang='ts' setup>
-import { Character } from 'global'
-import { findIndex, random } from 'lodash-es'
+import type { PropType } from '@vue/runtime-core'
+import { Character, DBCharacter } from 'global'
+import { findIndex, intersection, random } from 'lodash-es'
 import { CHAR_COSTS, defTags, PLACEHOLDER_NO_IMAGE, useAllChars, waifusThatHasPerk, waifuTags, nicknames } from '~/data/constants'
-import { lazyLoadSingleImg, tagToggles, showDefenseTags } from '~/logic'
+import { lazyLoadSingleImg, tagToggles, showDefenseTags, imageLink } from '~/logic'
 import { buyCompanion, captureCompanion, yoinkCompanion, slightlyCompanion } from '~/logic/waifuLogic'
 import { useStore } from '~/store/store'
 
 const props = defineProps({
   char: {
-    type: Object,
+    type: Object as PropType<DBCharacter>,
     default: () => ({}),
   },
   isUserChar: {
@@ -277,7 +281,9 @@ const cardEl = ref<HTMLImageElement| null>(null)
 const companionEl = ref<HTMLImageElement| null>(null)
 const inFocus = useElementHover(cardEl)
 
-const charData = computed<Character>(() => {
+const copyCount = ref(0)
+
+const charData = computed(() => {
   const res = props.char.t
     ? {
       uid: props.char.u,
@@ -293,7 +299,7 @@ const charData = computed<Character>(() => {
     }
     : props.char
   if (!res.uid) res.uid = random(10000000, 99999999)
-  return res
+  return res as Character
 })
 
 const charCost = computed(() => charData.value.tier === 11 ? '' : ` ${Math.ceil(CHAR_COSTS[charData.value.tier] * captureKoeff.value)}c`)
@@ -315,20 +321,14 @@ const modalImageCmp = computed(() => {
   return modalImage.value
 })
 
-const imageLink = computed(() => {
+const image = computed(() => {
   if (nsfw.value && charData.value.image_nsfw) {
     return charData.value.image_nsfw
   }
   else {
     if (charData.value.image) {
-      if (charData.value.image.startsWith('http')) { return charData.value.image }
-      else {
-        if (charData.value.uid >= 100000)
-          return `https://cdn.statically.io/gh/Om1cr0n/cat_thumb/main/docs/thumbs/${charData.value.image}`
-        if (charData.value.image.startsWith('[n]'))
-          return `https://cdn.statically.io/gh/Om1cr0n/cat_thumb/main/docs/thumbs/${charData.value.image.slice(3)}`
-        return `https://cdn.statically.io/gh/klassekatze/waifucatimg/master/imagecache_thumb/${charData.value.image}`
-      }
+      if (charData.value.image.startsWith('http')) return charData.value.image
+      return imageLink(charData.value.uid)
     }
     else {
       return PLACEHOLDER_NO_IMAGE
@@ -342,8 +342,14 @@ function undoBuying(uid: number) {
   companions.value.splice(findIndex(companions.value, { uid }), 1)
 }
 
-function isAlredyBought(uid: number): boolean {
-  return companionsUIDs.value[uid]
+function captureCopy() {
+  const sex = (intersection(charData.value.tags, ['F', 'M', 'O'])[0] || 'F') as 'F' | 'M' | 'O'
+  companions.value.push({ uid: random(10000000, 99999999), originUID: charData.value.uid, name: charData.value.name, world: charData.value.world, sex, tier: charData.value.tier, priceTier: 0, method: 'capture' })
+  copyCount.value += 1
+}
+
+function isAlreadyBought(uid: number): boolean {
+  return !!companionsUIDs.value[uid]
 }
 
 function deleteCharacter() {
@@ -354,10 +360,10 @@ function deleteCharacter() {
 
 onMounted(() => {
   if ((!props.lazy || settings.value.nsfw) && companionEl.value)
-    companionEl.value.src = imageLink.value
+    companionEl.value.src = image.value
   else if (companionEl.value)
     lazyLoadSingleImg(companionEl.value)
 })
 
-watch(imageLink, () => companionEl.value ? companionEl.value.src = imageLink.value : null)
+watch(image, () => companionEl.value ? companionEl.value.src = image.value : null)
 </script>

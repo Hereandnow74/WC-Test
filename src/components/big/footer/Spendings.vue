@@ -49,6 +49,9 @@
       Discounts: <span class="text-green-500">{{ totalDiscount }}</span>
     </div>
     <div class="font-semibold flex justify-between mx-4 border-b border-gray-700">
+      Total loan amount: <span class="text-orange-500">{{ loan.gained }}</span>
+    </div>
+    <div class="font-semibold flex justify-between mx-4 border-b border-gray-700">
       Total:
       <span>
         <span class="text-red-500">{{ totalCost }}</span> -
@@ -79,7 +82,7 @@ import { useStore } from '~/store/store'
 const {
   startingOrigin, heritageCost, bindingCost, ridePerksCost, homePerksCost, talentsCost, defensesCost,
   miscPerksCost, waifuPerksCost, genericWaifuPerksCost, luresCost, companionsCost, companionProfit,
-  companionProfitSold, totalCost, companions, otherCost, totalDiscount,
+  companionProfitSold, totalCost, companions, otherCost, totalDiscount, loan,
 } = useStore()
 
 const companionTotalCredits = computed(() => {

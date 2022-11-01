@@ -32,7 +32,7 @@
           </span>
         </router-link>
         <span v-if="priceMode && costOrIntensity(el)">[<span :style="[numberColor ? {color: numberColor} : '']" class="text-gray-300">{{ costOrIntensity(el) > 0 ? '+' : '' }}{{ costOrIntensity(el) }}</span>]</span>
-        <span v-if="editMode" class="text-red-400 hover:text-red-500 cursor-pointer" @click.stop="deletePerk(el)"><fluent:delete-20-filled /></span>
+        <fluent:delete-20-filled v-if="editMode" class="text-red-400 hover:text-red-500 cursor-pointer inline-block ml-1" @click.stop="deletePerk(el)" />
       </template>
       ]
     </div>

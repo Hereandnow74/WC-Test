@@ -1,4 +1,4 @@
-import { Perk } from 'global'
+import { Character, Perk } from 'global'
 
 interface Condition {
   rating: number
@@ -13,13 +13,33 @@ export interface World {
   image?: string
 }
 
+export interface Swap {
+  uid: number
+  name: string
+  tier: number
+  cost: number
+  refund: number
+}
+
+export interface SWP {
+  uid: string
+  title: string
+  tier: number
+  cost: number
+  refund: number
+}
+
 export interface Origin {
   title: string
   cost: number
   character?: string
   hr?: 'dr' | 'th' | 'ou'
   tier?: number
+  sex?: 'F' | 'M' | 'O'
   uid?: number
+  swap?: Swap
+  perk?: SWP
+  image?: string
 }
 
 const params = useUrlSearchParams('history')
@@ -91,6 +111,7 @@ const patron = storeType<Perk[]>('patron', [])
 
 export interface SavedChar {
   uid: number
+  originUID?: number
   name: string
   sex: 'F' | 'M' | 'O'
   world: string
@@ -101,6 +122,9 @@ export interface SavedChar {
   price?: number
   soldPrice?: number
   role?: 'Companion' | 'Familiar' | 'Unbound' | 'Devotee' | 'Dead'
+  swap?: Swap
+  perk?: SWP
+  image?: string
 }
 
 const companions = storeType('companions', [] as SavedChar[])

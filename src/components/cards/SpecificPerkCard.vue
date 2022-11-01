@@ -61,6 +61,14 @@
         v-if="findIndex(waifuPerks, { title: waifuPerk.title }) !== -1"
         class="inline text-green-500"
       />
+      <!-- <fa-solid:check
+        v-if="findIndex(companions, cmp => cmp.perk?.uid === waifuPerk.uid) !== -1"
+        class="inline text-green-500"
+      /> -->
+      <fa-solid:check
+        v-if="companionsByUID[waifuPerk.uid]"
+        class="inline text-green-500"
+      />
     </h3>
     <div>
       <span class="font-bold">Waifu: </span>
@@ -87,7 +95,7 @@
 
 <script lang="ts" setup>
 import type { PropType } from 'vue'
-import { findIndex, find, isNumber, isString } from 'lodash-es'
+import { findIndex, isNumber, isString, find } from 'lodash-es'
 import { WaifuPerk } from '~/data/waifu_perks'
 import { chooseWaifuPerk, lazyLoadSingleImg, specificAvailable } from '~/logic'
 import { useStore } from '~/store/store'
@@ -103,7 +111,7 @@ const props = defineProps({
 
 const { allCharsObject } = useAllChars()
 
-const chosenWaifu = ref('')
+const chosenWaifu = ref(props.waifuPerk.tier ? props.waifuPerk.waifu[0] : '')
 const imageEl = ref<HTMLImageElement | null>(null)
 const imageEl2 = ref<HTMLImageElement | null>(null)
 
@@ -121,15 +129,13 @@ const gachaTable = [
   [500, 1251],
   [1000, 2677],
 ]
-//  [1, 2, 5, 10, 20, 50, 100, 200, 500, 1000],
-// [1, 2, 7, 15, 34, 96, 210, 454, 1251, 2677],
 
-const { settings, waifuPerks, companionsUIDs, companions } = useStore()
+const { settings, waifuPerks, companionsByUID, companions, companionsUIDs } = useStore()
 
 const waifuList = computed(() => {
   let res = {} as Record<string, number>
   res = props.waifuPerk.waifu.reduce((all, waifu, i) => {
-    if (companionsUIDs.value[props.waifuPerk.waifuUID[i]])
+    if (companionsByUID.value[props.waifuPerk.waifuUID[i]] || companionsUIDs.value[props.waifuPerk.waifuUID[i]])
       all[waifu] = props.waifuPerk.waifuUID[i]
     return all
   }, {} as Record<string, number>)
@@ -139,34 +145,75 @@ const waifuList = computed(() => {
 
 function pickWaifuPerk() {
   const charUID = waifuList.value[chosenWaifu.value]
-  if (findIndex(waifuPerks.value, { uid: props.waifuPerk.uid }) !== -1) {
-    chooseWaifuPerk(props.waifuPerk, { title: props.waifuPerk.title, waifu: chosenWaifu.value, uid: props.waifuPerk.uid, cost: props.waifuPerk.cost || 0, refund: props.waifuPerk.discount || 0 })
-    const ind = findIndex(companions.value, { uid: props.waifuPerk.uid })
-    if (ind !== -1)
-      companions.value.splice(ind, 1)
-    return
-  }
-
-  const savedCharInd = findIndex(companions.value, { uid: charUID })
-  const savedChar = companions.value[savedCharInd]
-  // If character UID not equal Waifu Perk UID
-  if (savedChar && savedChar.uid !== props.waifuPerk.uid && props.waifuPerk.tier) {
-    // If old character UID is Waifu Perk UID, delete old Waifu Perk
-    if (isString(savedChar.uid)) {
-      const ind = findIndex(waifuPerks.value, { uid: savedChar.uid })
-      if (ind !== -1)
-        waifuPerks.value.splice(ind, 1)
+  if (charUID) {
+    // If its a normal perk
+    if (!props.waifuPerk.tier) {
+      chooseWaifuPerk(props.waifuPerk,
+        { uid: props.waifuPerk.uid, title: props.waifuPerk.title, cost: props.waifuPerk.cost })
     }
-    chooseWaifuPerk(props.waifuPerk, { title: props.waifuPerk.title, waifu: chosenWaifu.value, uid: props.waifuPerk.uid, cost: props.waifuPerk.cost ? (savedChar.method !== 'capture' ? CHAR_COSTS[props.waifuPerk.tier] : props.waifuPerk.cost) : 0, refund: props.waifuPerk.discount || 0 })
+    // Its a perk that change tier
+    else {
+      let char = isNumber(charUID) ? companionsUIDs.value[charUID] : companionsByUID.value[charUID]
+      if (!char)
+        char = companionsByUID.value[charUID]
+      if (char) {
+        if (char.perk) {
+          if (char.perk.uid === props.waifuPerk.uid) { delete char.perk }
+          else {
+            char.perk = {
+              uid: props.waifuPerk.uid,
+              title: props.waifuPerk.title,
+              tier: props.waifuPerk.tier,
+              cost: props.waifuPerk.tier !== 11 ? CHAR_COSTS[props.waifuPerk.tier] : 0,
+              refund: char.priceTier !== 11 ? CHAR_COSTS[char.priceTier] : 0,
+            }
+          }
+        }
+        else {
+          char.perk = {
+            uid: props.waifuPerk.uid,
+            title: props.waifuPerk.title,
+            tier: props.waifuPerk.tier,
+            cost: props.waifuPerk.tier !== 11 ? CHAR_COSTS[props.waifuPerk.tier] : 0,
+            refund: char.priceTier !== 11 ? CHAR_COSTS[char.priceTier] : 0,
+          }
+        }
+      }
+    }
+  }
+  else {
+    if (companionsByUID.value[props.waifuPerk.uid])
+      delete companionsByUID.value[props.waifuPerk.uid].perk
+  }
 
-    savedChar.uid = props.waifuPerk.uid
-    savedChar.tier = props.waifuPerk.tier
-    if (props.waifuPerk.cost && savedChar.method !== 'capture')
-      savedChar.priceTier = 0
-  }
-  else if (!props.waifuPerk.tier || !savedChar) {
-    chooseWaifuPerk(props.waifuPerk, { title: props.waifuPerk.title, waifu: chosenWaifu.value, uid: props.waifuPerk.uid, cost: props.waifuPerk.cost || 0, refund: props.waifuPerk.discount || 0 })
-  }
+  // if (findIndex(waifuPerks.value, { uid: props.waifuPerk.uid }) !== -1) {
+  //   chooseWaifuPerk(props.waifuPerk, { title: props.waifuPerk.title, waifu: chosenWaifu.value, uid: props.waifuPerk.uid, cost: props.waifuPerk.cost || 0, refund: props.waifuPerk.discount || 0 })
+  //   const ind = findIndex(companions.value, { uid: props.waifuPerk.uid })
+  //   if (ind !== -1)
+  //     companions.value.splice(ind, 1)
+  //   return
+  // }
+
+  // const savedCharInd = findIndex(companions.value, { uid: charUID })
+  // const savedChar = companions.value[savedCharInd]
+  // // If character UID not equal Waifu Perk UID
+  // if (savedChar && savedChar.uid !== props.waifuPerk.uid && props.waifuPerk.tier) {
+  //   // If old character UID is Waifu Perk UID, delete old Waifu Perk
+  //   if (isString(savedChar.uid)) {
+  //     const ind = findIndex(waifuPerks.value, { uid: savedChar.uid })
+  //     if (ind !== -1)
+  //       waifuPerks.value.splice(ind, 1)
+  //   }
+  //   chooseWaifuPerk(props.waifuPerk, { title: props.waifuPerk.title, waifu: chosenWaifu.value, uid: props.waifuPerk.uid, cost: props.waifuPerk.cost ? (savedChar.method !== 'capture' ? CHAR_COSTS[props.waifuPerk.tier] : props.waifuPerk.cost) : 0, refund: props.waifuPerk.discount || 0 })
+
+  //   savedChar.uid = props.waifuPerk.uid
+  //   savedChar.tier = props.waifuPerk.tier
+  //   if (props.waifuPerk.cost && savedChar.method !== 'capture')
+  //     savedChar.priceTier = 0
+  // }
+  // else if (!props.waifuPerk.tier || !savedChar) {
+  //   chooseWaifuPerk(props.waifuPerk, { title: props.waifuPerk.title, waifu: chosenWaifu.value, uid: props.waifuPerk.uid, cost: props.waifuPerk.cost || 0, refund: props.waifuPerk.discount || 0 })
+  // }
 }
 
 onMounted(() => {
@@ -179,10 +226,7 @@ onMounted(() => {
 function purchaseCompanion(uid: number) {
   const char = allCharsObject.value[uid]
   if (char)
-    buyCompanion({ uid: char.u, name: char.n, tier: char.t, world: char.w, tags: char.b })
+    buyCompanion(char)
 }
-
-// Change uid to custom Specific perk UID, change name to perk name?, change tier, use perk uid to futher purchase perks
-// Create shadow uid -> image object
 
 </script>

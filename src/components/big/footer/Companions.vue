@@ -56,6 +56,7 @@
       />
       <div
         ref="waifuList"
+        v-auto-animate
         class="grid gap-2 min-h-0"
         :class="orientation ? 'grid-cols-2': 'grid-cols-1'"
       >

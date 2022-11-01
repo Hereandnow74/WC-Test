@@ -242,6 +242,7 @@ export const waifuTags = {
   ge: { tag: 'Generic', short: 'ge', effect: '', desc: 'For generic entries like pokemons, MGE monster girls, etc.', color: 'bg-teal-500 text-black' },
   nc: { tag: 'Necromancer', short: 'nc', effect: '', desc: '', color: 'bg-teal-500 text-black' },
   cs: { tag: 'Custom', short: 'cs', effect: '', desc: 'This character looks and gender can be customized at a purchase. (Ussualy RPG protagonists)', color: 'bg-teal-500 text-black' },
+  sg: { tag: 'Ship-girl', short: 'sg', effect: '', desc: '', color: 'bg-teal-500 text-black' },
 
   U: { tag: 'By User', short: 'U', effect: '', desc: 'Characters that were added to Interactive by users, applied automatically to all submitted characters', color: 'bg-warm-gray-600' },
 } as const
@@ -377,7 +378,21 @@ export const QUERIES = computed(() => {
 
 let chars: any = null
 let userChars: any = null
-const changes = ref({})
+
+interface Changes {
+  u: number
+  nickname: string
+  tags?: string[]
+  tier?: number
+  arg?: string
+  source?: string
+  nsfw?: string
+  image?: string
+  world?: string
+  sub?: string
+  name?: string
+}
+const changes = ref<Record<number | string, Changes>>({})
 
 export async function getChars(): Promise<DBCharacter[]> {
   if (!chars)

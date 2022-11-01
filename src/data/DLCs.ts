@@ -34,7 +34,7 @@ DLCgenericPerks.push({
 })
 DLCgenericPerks.push({
   uid: 'fJRGz',
-  dlc: 'DLC by Despin',
+  dlc: 'Despin',
   category: 'Generic',
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'HUD',
@@ -49,7 +49,7 @@ DLCgenericPerks.push({
 
 DLCgenericPerks.push({
   uid: 'S84Eb',
-  dlc: 'DLC by Despin',
+  dlc: 'Despin',
   category: 'Generic',
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'Toggle',
@@ -80,7 +80,7 @@ DLCgenericPerks.push({
 
 DLCgenericPerks.push({
   uid: 'EsNrD',
-  dlc: 'DLC by Despin',
+  dlc: 'Despin',
   category: 'Generic',
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'Native Merger',
@@ -100,7 +100,7 @@ DLCgenericPerks.push({
 
 DLCgenericPerks.push({
   uid: 'bq0Nc',
-  dlc: 'DLC by Despin',
+  dlc: 'Despin',
   category: 'Generic',
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'Open Rolls',
@@ -185,7 +185,7 @@ DLCperks.push({
 
 DLCperks.push({
   uid: 'te1Zv',
-  dlc: 'DLC by Gforce1000',
+  dlc: 'GForce1000',
   category: 'Misc Perk',
   dlclink: 'https://imgur.com/gallery/suU1RXx',
   title: 'Time-Savers',
@@ -198,7 +198,7 @@ DLCperks.push({
 
 DLCperks.push({
   uid: '3EnoU',
-  dlc: 'DLC by Despin',
+  dlc: 'Despin',
   category: 'Misc Perk',
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'I Want Out',
@@ -211,7 +211,7 @@ DLCperks.push({
 
 DLCperks.push({
   uid: 'tG4yC',
-  dlc: 'DLC by Despin',
+  dlc: 'Despin',
   category: 'Misc Perk',
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'Trajectory. Agreement.',
@@ -225,7 +225,7 @@ DLCperks.push({
 
 DLCperks.push({
   uid: 'sEFxf',
-  dlc: 'DLC by Merior',
+  dlc: 'Merior',
   category: 'Misc Perk',
   dlclink: 'https://docs.google.com/document/d/1j9emHb4IWvOTnp13RASTAuINAFuKDMSSQyQ-7ta9sjA/edit#',
   title: 'Gone And Forgotten',
@@ -238,7 +238,7 @@ DLCperks.push({
 
 DLCperks.push({
   uid: 'eIljw',
-  dlc: 'DLC by Merior',
+  dlc: 'Merior',
   category: 'Misc Perk',
   dlclink: 'https://docs.google.com/document/d/1j9emHb4IWvOTnp13RASTAuINAFuKDMSSQyQ-7ta9sjA/edit#',
   title: 'Pavlov\'s Bell',
@@ -309,7 +309,7 @@ DLCperks.push({
 
 DLCperks.push({
   uid: 'JhATq',
-  dlc: 'DLC by Despin',
+  dlc: 'Despin',
   category: 'Misc Perk',
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'Amazon-free Warranty',
@@ -359,7 +359,7 @@ export const DLChomes: DLCPerk[] = []
 
 DLChomes.push({
   uid: 'kTjFA',
-  dlc: 'DLC by Despin',
+  dlc: 'Despin',
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'Creature Feature I',
   category: 'Home',
@@ -373,7 +373,7 @@ DLChomes.push({
 
 DLChomes.push({
   uid: 'Jsh2A',
-  dlc: 'DLC by Despin',
+  dlc: 'Despin',
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'Creature Feature II',
   category: 'Home',
@@ -387,7 +387,7 @@ DLChomes.push({
 
 DLChomes.push({
   uid: 'T7TG1',
-  dlc: 'DLC by Despin',
+  dlc: 'Despin',
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'A God Am I',
   category: 'Home',
@@ -413,7 +413,7 @@ DLChomes.push({
 
 DLChomes.push({
   uid: '4ed0g',
-  dlc: 'DLC by Despin',
+  dlc: 'Despin',
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'Control Center App',
   category: 'Home',
@@ -460,7 +460,7 @@ DLChomes.push({
 
 DLChomes.push({
   uid: 'pftN2',
-  dlc: 'DLC by Despin',
+  dlc: 'Despin',
   category: 'Home',
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'Home Security',
@@ -475,7 +475,7 @@ export const DLCtalents: DLCPerk[] = []
 
 DLCtalents.push({
   uid: 'hRlCG',
-  dlc: 'DLC by Despin',
+  dlc: 'Despin',
   category: 'Home',
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'Presentation',
@@ -489,7 +489,7 @@ DLCtalents.push({
 
 DLCtalents.push({
   uid: 'AOY9D',
-  dlc: 'DLC by Doomsought',
+  dlc: 'Doomsought',
   category: 'Home',
   dlclink: 'https://forum.questionablequesting.com/threads/r34-economy-cyoa-thread.11289/page-879#post-4440542',
   title: 'Money Talent',
@@ -503,7 +503,7 @@ DLCtalents.push({
 
 DLCtalents.push({
   uid: 'l6MHt',
-  dlc: 'DLC by Merior',
+  dlc: 'Merior',
   category: 'Home',
   dlclink: 'https://docs.google.com/document/d/1j9emHb4IWvOTnp13RASTAuINAFuKDMSSQyQ-7ta9sjA/edit#',
   title: 'Educational Talent',
@@ -516,7 +516,7 @@ DLCtalents.push({
 
 DLCtalents.push({
   uid: 'vW82l',
-  dlc: 'DLC by Merior',
+  dlc: 'Merior',
   dlclink: 'https://docs.google.com/document/d/1j9emHb4IWvOTnp13RASTAuINAFuKDMSSQyQ-7ta9sjA/edit#',
   title: 'Inculcation Talent',
   category: 'Home',
@@ -535,7 +535,7 @@ export const DLClures: DLCPerk[] = []
 
 DLClures.push({
   uid: 'ugDHv',
-  dlc: 'DLC by Merior',
+  dlc: 'Merior',
   dlclink: 'https://docs.google.com/document/d/1j9emHb4IWvOTnp13RASTAuINAFuKDMSSQyQ-7ta9sjA/edit#',
   image: 'https://i.ibb.co/sFDhQBX/Fools-Gold.jpg',
   category: 'Lure',
@@ -546,7 +546,7 @@ DLClures.push({
 
 DLClures.push({
   uid: '2YzxQ',
-  dlc: 'DLC by Merior',
+  dlc: 'Merior',
   dlclink: 'https://docs.google.com/document/d/1j9emHb4IWvOTnp13RASTAuINAFuKDMSSQyQ-7ta9sjA/edit#',
   image: 'https://i.ibb.co/2sVT2BZ/Stud-Service.jpg',
   title: 'Stud Service',
@@ -587,7 +587,7 @@ export const DLCotherControls: DLCPerk[] = []
 
 DLCotherControls.push({
   uid: 'Uvc6m',
-  dlc: 'DLC by Merior',
+  dlc: 'Merior',
   dlclink: 'https://docs.google.com/document/d/1j9emHb4IWvOTnp13RASTAuINAFuKDMSSQyQ-7ta9sjA/edit#',
   title: 'Nine Tenths Law',
   category: 'Lure',
@@ -598,7 +598,7 @@ DLCotherControls.push({
 
 DLCotherControls.push({
   uid: 'YzNrj',
-  dlc: 'DLC by Merior',
+  dlc: 'Merior',
   dlclink: 'https://docs.google.com/document/d/1j9emHb4IWvOTnp13RASTAuINAFuKDMSSQyQ-7ta9sjA/edit#',
   title: 'Signed and Sealed',
   category: 'Lure',
@@ -611,7 +611,7 @@ DLCotherControls.push({
 
 DLCotherControls.push({
   uid: 'ExW28',
-  dlc: 'DLC by Merior',
+  dlc: 'Merior',
   dlclink: 'https://docs.google.com/document/d/1j9emHb4IWvOTnp13RASTAuINAFuKDMSSQyQ-7ta9sjA/edit#',
   title: 'Letter of the Law',
   category: 'Lure',
@@ -624,16 +624,18 @@ DLCotherControls.push({
 
 DLCotherControls.push({
   uid: 'iCmw0',
-  dlc: 'DLC by Merior',
+  dlc: 'Merior',
   dlclink: 'https://docs.google.com/document/d/1j9emHb4IWvOTnp13RASTAuINAFuKDMSSQyQ-7ta9sjA/edit#',
   title: 'Needful Things',
+  legacy: true,
   category: 'Lure',
   image: 'https://i.ibb.co/q0vxrBD/Needful-Things.jpg',
   cost: 20,
+  needed: 1,
   desc: `The items, good, and/or services provided by your business are simply better than they otherwise would be and certainly seem more appealing. This enhancement is inversely proportional to the original quality, turning poor goods into average ones but will improve top-of-the-line products only fractionally. It will always make what you offer at least appear to have an edge over products of similar quality from elsewhere.
   <p>This enhanced appeal raises the likelihood that appropriate forms of theft (including defaulting on loans, shoplifting, or 'dining-and-dashing') takes place, but that can be a benefit. Anyone who commits such an act, and those who knowingly benefit from it such as consuming stolen food, are considered to have agreed to 'experience' the business per Hotel California and become similarly captured.</p>
   `,
-  whitelist: ['Hotel California'],
+  whitelist: ['Hotel California', 'Commerce Room: Hotel California'],
 })
 
 DLCotherControls.push({
@@ -663,7 +665,7 @@ DLCotherControls.push({
 
 DLCotherControls.push({
   uid: 'gqjwm',
-  dlc: 'DLC by Skelethin',
+  dlc: 'Skelethin',
   dlclink: 'https://docs.google.com/document/d/1HGcpJGpGbLCeA3VO8LFrQjxQqkYANdeoWbCKlCOnK0A/edit',
   title: 'Grail System',
   category: 'Other Controls',
@@ -679,7 +681,7 @@ DLCotherControls.push({
 
 DLCotherControls.push({
   uid: 'ko94c',
-  dlc: 'DLC by Skelethin',
+  dlc: 'Skelethin',
   dlclink: 'https://docs.google.com/document/d/1HGcpJGpGbLCeA3VO8LFrQjxQqkYANdeoWbCKlCOnK0A/edit',
   title: 'Class Cards',
   category: 'Other Controls',
@@ -720,7 +722,7 @@ DLCotherControls.push({
 })
 DLCotherControls.push({
   uid: 'gqjwm',
-  dlc: 'DLC by Skelethin',
+  dlc: 'Skelethin',
   dlclink: 'https://docs.google.com/document/d/1HGcpJGpGbLCeA3VO8LFrQjxQqkYANdeoWbCKlCOnK0A/edit',
   title: 'Demi-Servant',
   category: 'Other Controls',
@@ -735,7 +737,7 @@ DLCotherControls.push({
 })
 DLCotherControls.push({
   uid: 'gqjwm',
-  dlc: 'DLC by Skelethin',
+  dlc: 'Skelethin',
   dlclink: 'https://docs.google.com/document/d/1HGcpJGpGbLCeA3VO8LFrQjxQqkYANdeoWbCKlCOnK0A/edit',
   title: 'True Name',
   category: 'Other Controls',
@@ -754,7 +756,7 @@ DLCotherControls.push({
 })
 DLCotherControls.push({
   uid: 'gqjwm',
-  dlc: 'DLC by Skelethin',
+  dlc: 'Skelethin',
   dlclink: 'https://docs.google.com/document/d/1HGcpJGpGbLCeA3VO8LFrQjxQqkYANdeoWbCKlCOnK0A/edit',
   title: 'Ruler',
   category: 'Other Controls',
@@ -770,7 +772,7 @@ DLCotherControls.push({
 })
 DLCotherControls.push({
   uid: 'gqjwm',
-  dlc: 'DLC by Skelethin',
+  dlc: 'Skelethin',
   dlclink: 'https://docs.google.com/document/d/1HGcpJGpGbLCeA3VO8LFrQjxQqkYANdeoWbCKlCOnK0A/edit',
   title: 'Saint Graph Library',
   category: 'Other Controls',
@@ -846,7 +848,7 @@ export const DLCbindings: DLCPerk[] = []
 
 DLCbindings.push({
   uid: 'mU9YC',
-  dlc: 'DLC by Despin',
+  dlc: 'Despin',
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   image: 'https://i.ibb.co/QfStyFN/Additional-Binding.jpg',
   title: 'Additional Binding',
@@ -914,7 +916,7 @@ DLCridePerks.push({
 
 DLCridePerks.push({
   uid: 'qbHdP',
-  dlc: 'DLC by Despin',
+  dlc: 'Despin',
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'Catch a Ride Plus',
   category: 'RidePerk',
@@ -930,7 +932,7 @@ DLCridePerks.push({
 
 DLCridePerks.push({
   uid: 'tnzQS',
-  dlc: 'DLC by Despin',
+  dlc: 'Despin',
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'Extended Warranty',
   category: 'RidePerk',

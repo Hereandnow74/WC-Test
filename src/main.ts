@@ -3,6 +3,7 @@ import { createApp } from 'vue'
 import { createRouter, createWebHistory } from 'vue-router'
 import routes from 'virtual:generated-pages'
 import { registerSW } from 'virtual:pwa-register'
+import { autoAnimatePlugin } from '@formkit/auto-animate/vue'
 import App from './App.vue'
 
 import '@purge-icons/generated'
@@ -36,6 +37,7 @@ const router = createRouter({
   },
 })
 app.use(router)
+app.use(autoAnimatePlugin)
 app.mount('#app')
 
 const updateSW = registerSW({

@@ -13,7 +13,7 @@
       <div class="flex flex-col w-full">
         <div class="flex flex-wrap gap-x-1 items-center">
           {{ char.name }}
-          <span class="text-green-500 text-sm"> [T{{ char.tier }}]
+          <span class="text-green-500 text-sm"> [T{{ char.perk?.tier || char.swap?.tier || char.tier }}]
             <span class="text-purple-400">[{{ charCost }}]</span>
           </span>
           <span class="text-gray-400 text-sm"> ({{ methods[char.method] }})</span>
@@ -21,6 +21,18 @@
         </div>
         <span v-if="char.role" class="text-gray-500">Status: <span class="text-orange-200">{{ char.role }}</span></span>
         <span v-if="char.world" class="text-gray-500">From: <span class="text-gray-400">{{ char.world }}</span></span>
+        <span
+          v-if="char.swap"
+          class="text-gray-400"
+        >
+          Power Swap to: <span class="text-gray-200">{{ char.swap.name }}</span> [<span class="text-green-400">T{{ char.swap.tier }}</span>] <span class="text-purple-400">[{{ (char.swap.cost - char.swap.refund) * -1 }}]</span>
+        </span>
+        <span
+          v-if="char.perk"
+          class="text-gray-400"
+        >
+          Specific Waifu Perk: <span class="text-gray-200">{{ char.perk.title }}</span> [<span class="text-green-400">T{{ char.perk.tier }}</span>] <span class="text-purple-400">[{{ (char.perk.cost - char.perk.refund) * -1 }}]</span>
+        </span>
       </div>
     </div>
   </div>

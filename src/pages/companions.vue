@@ -220,7 +220,7 @@
 
 <script lang="ts" setup>
 import Fuse from 'fuse.js'
-import { every, intersection, some, shuffle, repeat, remove } from 'lodash-es'
+import { every, intersection, some, shuffle, repeat, remove, groupBy, flatten } from 'lodash-es'
 import { DBCharacter } from 'global'
 import { useStore } from '~/store/store'
 
@@ -433,10 +433,13 @@ const sortedResults = computed(() => {
 })
 
 const slicedChars = computed(() => {
-  // const groupped = groupBy(filteredCharacters.value, (n) => { return n.item.u })
+  // const groupped = groupBy(filteredCharacters.value, (n) => { return n.item.n.toLowerCase() })
+  // const moreThan2 = Object.values(groupped).filter(x => x.length >= 2)
+  // const result = flatten(moreThan2)
   // const result = uniq(flatten(filter(groupped, (n) => { return n.length > 1 })))
   // return result.slice(limit.value > 100 ? limit.value - 100 : 0, limit.value)
   return sortedResults.value.slice(position.value, position.value + limit.value)
+  // return result.slice(position.value, position.value + limit.value)
 })
 
 watch(sortedResults, () => {

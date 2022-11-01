@@ -3,7 +3,7 @@
   <div class="flex w-full">
     <div class="lg:pl-0 flex flex-col gap-4 mb-8 mx-auto" :class="[currentWidth]">
       <div class="hidden max-w-screen-lg max-w-screen-xl max-w-screen-sm max-w-screen-md"></div>
-      <h1 id="rules" class="text-xl md:text-2xl font-bold text-center mt-4">
+      <h1 id="rules" class="text-xl md:text-2xl font-bold text-center">
         Waifu Catalog <span class="text-gray-600 dark:text-gray-400">(by SwiftRosenthal)</span> Interactive v{{ VERSION }} <span class="text-gray-600 dark:text-gray-400">(by Om1cr0n)</span>
       </h1>
       <div class="flex flex-col px-2 w-full">

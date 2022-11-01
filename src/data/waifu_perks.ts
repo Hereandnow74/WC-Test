@@ -53,12 +53,10 @@ export const waifu_perks: WaifuPerk[] = [
     uid: 'knloP',
     title: 'Double Vision',
     waifu: [
-      'Yamai Kaguya',
-      'Yamai Yuzuru',
+      'Yamai Kaguya & Yamai Yuzuru',
     ],
     waifuUID: [
-      -1,
-      -1,
+      4215127,
     ],
     from: 'Date A Live',
     image: '/img/waifu_perks/compressed/image170.png',
@@ -1506,11 +1504,11 @@ export const waifu_perks: WaifuPerk[] = [
     uid: 'sTWUS',
     title: 'Bull of Heaven',
     waifu: [
-      'Ishtar',
+      'Mistress of Heaven',
     ],
     from: 'Nasuverse',
     waifuUID: [
-      9935,
+      'NxNJJ',
     ],
     image: 'https://i.imgur.com/haMwMjv.png?1',
     cost: 500,

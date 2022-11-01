@@ -1,5 +1,517 @@
 [
   {
+    "budget": 85,
+    "author": "Darkarma",
+    "reward": "100",
+    "objectives": [
+      {
+        "reward": "Template Stacking I & II: Dementor, Added Potential: Metamorphmagus",
+        "value": "Ensure that no supporter leaves Azkaban alive or unbound",
+        "type": "Perks"
+      },
+      {
+        "reward": "Reimbursed Credits for 25% of each Canon Death Eater's value, Smart Device updated with the location of all valuables and loot belonging to them. Worth 250,000 USD",
+        "type": "Perks",
+        "value": "Genocide Run: Kill every Death Eater"
+      },
+      {
+        "value": "Slaver Run: Sell every Death Eater to the Company",
+        "reward": "Promotion +10,000 to Monthly Salary",
+        "type": "Other"
+      },
+      {
+        "value": "Root Canal: Thoroughly clean house of all the friends, family and associates of the Death Eaters",
+        "type": "Other",
+        "reward": "Your current home or residence will be upgraded with a Library containing all the information you could ever need to carry you up to Tier 7 on dark magic alone"
+      },
+      {
+        "value": "Vegence Run: Bring Pettigrew to Sirius Black in Azkaban for final judgement",
+        "type": "Companions",
+        "reward": "Capture: Sirius Black [T5] and 20 Cedits"
+      },
+      {
+        "reward": "Capture: Neville Longbottom [T5] and 20 Credits",
+        "type": "Companions",
+        "value": "Vengence Run II: Bring Neville to Azkaban, to confront Bellatrix"
+      }
+    ],
+    "loca": "Harry Potter",
+    "scope": "Standard",
+    "source": "",
+    "image": "https://i.imgur.com/s6WWeoR.jpg",
+    "title": "Judge and Jury",
+    "uid": "YgHcg",
+    "desc": "Hunt down all those who have actively supported Voldemort either directly or indirectly. Judge them for their crimes, and bring them to justice by death or lifetime enslavement to the Company. Either way when it's done, none shall breathe another breath of their home planet's air again.",
+    "rewardType": "Credits",
+    "conditions": [
+      {
+        "value": "No one can know that you are responsible until after this is accomplished"
+      },
+      {
+        "value": "They must be removed before Voldemort can be resurrected."
+      }
+    ]
+  },
+  {
+    "title": "The Saiyan Job",
+    "conditions": [
+      {
+        "value": "Don't get caught by the Frieza Force or Time Patrol both are on high alert"
+      },
+      {
+        "value": "Do not kill anyone while on Planet Vegeta"
+      },
+      {
+        "value": "You'll have to source a Frieza Force uniform on arrival"
+      }
+    ],
+    "budget": 500,
+    "rewardType": "Perks",
+    "desc": "Our head of the Catalog department says we're actually lacking some diversity in our Dragonball listings and we need more Saiyans. Personally, I think he's had too much skooma, but orders are orders. Head to these coordinates, and capture as many T5, and T7 Saiyans as you can before Frieza blows them all up. The minimum is five but you can do better. You should show up three days before the short man himself appears.\n\nAny Saiyans you choose to keep for yourself don't count toward your total.\n\nDo this and we can source a geneticist to help you with any certain deficiencies.",
+    "scope": "Quick",
+    "reward": "Template Stacking I: Saiyan, Hybridized. We'll include a free tail too.",
+    "loca": "Dragonball",
+    "author": "Darkarma",
+    "source": "",
+    "objectives": [
+      {
+        "reward": "Company backed Gravity Chamber added to your Home/Island",
+        "type": "Perks",
+        "value": "Capture ten Saiyans"
+      },
+      {
+        "reward": "Unlock Saiyan God ki, you'll need to unlock Super Saiyan separately",
+        "type": "Other",
+        "value": "Captures include Goku, Gine and Bardock"
+      },
+      {
+        "reward": "Blutz wave Generator added to your Gravity Chamber",
+        "type": "Other",
+        "value": "Capture twenty-five Saiyans"
+      },
+      {
+        "value": "Capture fifty Saiyans",
+        "reward": "Upgrade the Gravity Chamber to a full Room of Spirit and Time with 5:1 time compression.",
+        "type": "Other"
+      },
+      {
+        "reward": "Replace with Template stacking I: DBS Legendary Super Saiyan, Hybridized",
+        "type": "Perks",
+        "value": "Capture one-hundred Saiyans"
+      }
+    ],
+    "image": "https://i.imgur.com/8MNMQq5.jpg",
+    "uid": "iEcPo"
+  },
+  {
+    "rewardType": "Other",
+    "title": "Corporate Espionage",
+    "source": "",
+    "author": "Darkarma",
+    "budget": 1000,
+    "conditions": [
+      {
+        "value": "They were last sighted on a world a VIP claimed for themselves. Try to keep the damage to a minimum."
+      }
+    ],
+    "objectives": [
+      {
+        "reward": "500",
+        "value": "Save the VIP from having being killed and their Smart Device usurped",
+        "type": "Credits"
+      },
+      {
+        "type": "TX Tickets",
+        "value": "Capture the rogue Contractor alive and recover their method of usurping Company technology",
+        "reward": "1"
+      }
+    ],
+    "desc": "A group calling itself the Corporation has decided to usurp one of our Contractors who in turn is hunting down the newbies and somehow subsuming their Smart Devices, credits, and purchases made since insertion. We'll handle their sponsor, you need to kill the contractor.",
+    "image": "",
+    "scope": "Quick",
+    "reward": "Promotion, +50,000 monthly Salary",
+    "loca": "Generic",
+    "uid": "JKkgh"
+  },
+  {
+    "image": "https://i.imgur.com/PQYaH2q.jpg",
+    "loca": "Harry Potter",
+    "source": "",
+    "scope": "Quick",
+    "objectives": [
+      {
+        "type": "Perks",
+        "value": "Rescue and rehome at least five innocents who's fate have been altered by the Anomaly.",
+        "reward": "Rainbow Bridge"
+      },
+      {
+        "type": "Companions",
+        "reward": "Tier 8 Mage Ticket",
+        "value": "Ensure Harry Potter, Albus Dumbledore and Tom Riddle do not escape to any other universe before this one collapses."
+      }
+    ],
+    "budget": 500,
+    "conditions": [
+      {
+        "value": "Investigate the source of the world without arousing suspicion."
+      }
+    ],
+    "desc": "An anomalous world has cropped up, one not created by the Company or a Contractor's Meta Shift. One that seems to adapt itself the whoever has the strongest destiny or power level.\n\nIf you want in, think of Harry Potter, only it's every bad fanfiction trope that's ever been written in here, to the point where it's almost a parody. Almost. Identify the source of the change and kill it. Our readings indicate that once you do, the world itself should collapse under its own weight.\n\nIt should be an in-and-out job, but we won't begrudge you if you take longer. Despite its eccentricities, a Contractor like yourself should find a lot of ways to indulge.\n\nWe're giving this world a DR8 Condition, expect every empowered individual to be at least one to three tiers more powerful than they would normally be.\n\nOn the plus side, Magical Cores are a thing here, so unlike canon, people can suffer Magical Exhaustion which is to your benefit.",
+    "rewardType": "Perks",
+    "author": "Darkarma",
+    "title": "So mote it be!",
+    "reward": "+4 Sweet Home Expansions",
+    "uid": "kErTw"
+  },
+  {
+    "rewardType": "Credits",
+    "source": "",
+    "title": "A Small Favor and a very big Ripple",
+    "scope": "Standard",
+    "image": "https://i.imgur.com/RZUjMz4.png",
+    "objectives": [
+      {
+        "reward": "Template Stack I: Winter Court Handmaiden",
+        "value": "Change Maeve's tune about the benefits of being able to lie and being infected",
+        "type": "Perks"
+      },
+      {
+        "reward": "Tier 6 Spirit Ticket",
+        "value": "Help Maeve catch up on hundred years of neglected obligations by recruiting from the Unseelie Vassels",
+        "type": "Companions"
+      },
+      {
+        "value": "Kill the Company empowered Winter Knight, Loyd Slate",
+        "type": "Other",
+        "reward": "A boon from Queen Mab"
+      },
+      {
+        "reward": "1",
+        "value": "Discover and deal with the Nemesis infected Contractor",
+        "type": "TX Tickets"
+      }
+    ],
+    "author": "Darkarma",
+    "loca": "Dresden Files",
+    "budget": 400,
+    "conditions": [
+      {
+        "value": "Expunge Nemesis without permanently harming the Winter Lady and  Summer Lady."
+      },
+      {
+        "value": "Ensure that the rest of the World does not learn the existence of the Company."
+      },
+      {
+        "value": "Prevent the Summer Queen, Titania, from finding about her daughter being compromised."
+      },
+      {
+        "value": "Complete this Mission with the Assistance of the Leansidhe, without Binding or Capturing her."
+      }
+    ],
+    "desc": "One of our Contractors screwed up on a covert mission, badly, and now Queen Mab is aware of the Company's existence, as well as the fact that the Contractor may have inadvertently caused both the Winter and Summer Ladies to become host to the Nemesis years early. This is unfortunate.\n\nThe responsible party, the Contractor lives, but they currently wish they hadn't. Your job is three-fold. Negotiate the release of the Contractor or make sure they die, and expunge the Adversary's infection of both Ladies.\n\nThe Winter Lady is restrained in Arctis Tor, however, the Summer Lady is unaccounted for somewhere in Seelie territory.\n\nRecommended Defenses:  Mind, Possession, Corruption, Paradox",
+    "reward": "200",
+    "uid": "vXEZl"
+  },
+  {
+    "image": "https://i.imgur.com/c5jWh4S.png",
+    "rewardType": "Companions",
+    "objectives": [
+      {
+        "value": "Escort her to a Shinigami so she can safely be sent on to the afterlife",
+        "reward": "Added Potential: Zanpakuto",
+        "type": "Perks"
+      }
+    ],
+    "title": "A Little Hollow",
+    "scope": "Quick",
+    "reward": "T1 to T4 Spirit Companion Ticket or 15 Credits",
+    "budget": 50,
+    "desc": "At the very beginning of Bleach there was a little girl who was killed in a car accident, and left to haunt the site where she died. No Shinigami came around to send her to the afterlife. Instead, drawn by Ichigo's presence this little ghost was slaughtered by a Hollow and denied a chance to reincarnate.\n\nYour job is to save her.",
+    "source": "",
+    "loca": "Bleach",
+    "uid": "hbKVq",
+    "conditions": [
+      {
+        "value": "Save the girl without killing the Hallow"
+      },
+      {
+        "value": "Ichigo must still become a Shinigami"
+      }
+    ],
+    "author": "Darkarma"
+  },
+  {
+    "desc": "Many want to be in Ranma Saotome's place, both for the strength and the girls... And you can actually get there, Japanese society is funny like that. All you need to do is to be adopted by Genma (at an age you can defend yourself, obviously) and made the new heir of the Saotome School of Indiscriminate Grappling. And, of course, defeat Ranma in such a complete way Genma would actually go for it.",
+    "author": "Ratcatcher",
+    "objectives": [
+      {
+        "value": "Crush Ranma in Happosai's presence",
+        "type": "Other",
+        "reward": "Inheritance of the ORIGINAL School of Indiscriminate Grappling with training for all their techniques"
+      },
+      {
+        "type": "Companions",
+        "reward": "Instant capture of Ranma or 50 credits",
+        "value": "Talk Genma into engaging Ranma to you as a secondary wife"
+      }
+    ],
+    "title": "Adopted Saotome",
+    "reward": "Inheritance of the Saotome School of Indiscriminate Grappling with training for all their techniques, engagement to a Tendo sister of your choice and a crush from the other two",
+    "scope": "Quick",
+    "budget": 50,
+    "loca": "Ranma ½",
+    "conditions": [
+      {
+        "value": "Defeat Ranma in an official challenge for the role of Saotome heir or completely crush him in an unrelated official challenge Genma witnessed"
+      }
+    ],
+    "image": "https://cdn.donmai.us/original/3a/48/__saotome_ranma_ranma_1_2_drawn_by_nabeko_be_yan3__3a48be24687da4cdc9f22aebedd5d55e.jpg",
+    "rewardType": "Other",
+    "source": "",
+    "uid": "HdCBP"
+  },
+  {
+    "source": "",
+    "loca": "Generic",
+    "image": "https://cdn.donmai.us/original/24/c7/__akemi_homura_kaname_madoka_miki_sayaka_sakura_kyouko_tomoe_mami_and_1_more_mahou_shoujo_madoka_magica_drawn_by_n_n__24c750d9acbf1bd7f1731fb6051af371.jpg",
+    "rewardType": "Companions",
+    "objectives": [],
+    "desc": "Everyone loves magical girls, right? Then, make more of them! Find waifus that are supposed to receive non-magical girl magic powers and turn them into magical girls.",
+    "scope": "Standard",
+    "author": "Ratcatcher",
+    "conditions": [
+      {
+        "value": "Find a waifus that is going to have non-magical girl magical powers, or has them but is unable to access them."
+      },
+      {
+        "value": "Find a way for them to access their magic through a magical girl transformation"
+      }
+    ],
+    "reward": "Every new magical girl is now crushing on you independently of orientation and is raised one tier upon capture after step 6",
+    "budget": 0,
+    "title": "Magical Girl Maker",
+    "uid": "PXFIi"
+  },
+  {
+    "budget": 950,
+    "desc": "Overlord Zenon, the “God of All Overlords”, who killed a 1000 Demon Lords and 99 Overlords in a single night. His story is one feared and respected among demons across countless worlds. Within the small backwater world of Veldime the story of Overlord Zenon continues, but something is wrong. Rozalin, the supposed daughter, searches for her “father” together with young Adell who wishes to defeat him for allegedly turning everyone on Veldime into demons. This is where you come into things. Your job is to take over as “Overlord Zenon”, that is to make Rozalin and everyone else believe that you are legitimately her “father” and the True Zenon. But there is another who is also claiming the name of Zenon, a fool who is trying to take something he does not deserve! You must of course make it clear who is the “True Zenon” in the end.",
+    "source": "",
+    "title": "Daddy Zenon Is Back",
+    "scope": "Standard",
+    "reward": "Gain the Full Abilities of “True Zenon”, the pre-incarnation of Rozalin at T10 for free or 800 Credits. You also gain the ability to reincarnate yourself into new worlds, either of your choice or a random one, taking the place of a support character like the Extra origin. You will be reduced to a level 1 at first, but have the ability to regain all of your powers over time through methods like but not limited to, training, meditation, finding hidden spots of energy and more. The more you do this the more easily you will be able to regain your power. If you have an ability like the Transhuman power to manage multiple bodies and minds, you will be able to split off a specific instance of yourself into that world instead.  Also you gain 1 special T9 Ticket that lets you buy any waifu of your choice and grant her a demonic powerset of your choice. If they are below T9, their power will simply be boosted to an appropriate point. Alternatively, take 400 Credits.",
+    "author": "Heaven Canceler",
+    "conditions": [
+      {
+        "value": "Must be a demon of some kind or otherwise similar enough as to easily pass for one."
+      },
+      {
+        "value": "Rozalin is considered immune to Bindings and Lures unless she has acknowledged you as her real father."
+      },
+      {
+        "value": "The general population of Veldime must at least know that you are proclaiming yourself as the real Overlord Zenon."
+      },
+      {
+        "value": "You must make everyone in Adell's party believe that you are the true Overlord Zenon by the finale of Disgaea 2’s plot. You may not brainwash them into believing you. Naturally, Rozalin awakening as “True Zenon” is a failure condition."
+      },
+      {
+        "value": "You must defeat “Fake Zenon” at the final battle of the story, Adell and Rozalin may help you."
+      },
+      {
+        "value": "You will attract a number of powerful Foes from across the multiverse as your fame increases, you must defeat any challengers to your position. You may not bind or use mind control on any Overlord or Demon Lord class enemy unless you defeat them."
+      }
+    ],
+    "rewardType": "Other",
+    "objectives": [],
+    "loca": "(NIS) Disgaea",
+    "image": "https://i.imgur.com/Mxwawk9.png",
+    "uid": "VBGSZ"
+  },
+  {
+    "rewardType": "Other",
+    "author": "King",
+    "conditions": [
+      {
+        "value": "Find a way to heal the Soul King (Necessary to have captured or killed those with the necessary pieces of the Soul King)"
+      },
+      {
+        "value": "Kill or capture Yhwatch "
+      },
+      {
+        "value": "Must kill or capture all Royal Guads"
+      },
+      {
+        "value": "Cannot capture the Soul King (doing so means instant loss of existence)"
+      }
+    ],
+    "image": "",
+    "budget": 1400,
+    "objectives": [],
+    "title": "Soul King Reborn",
+    "scope": "Standard",
+    "reward": "T11 ticket and 1000 points",
+    "loca": "Bleach - 1000 years War",
+    "source": "",
+    "desc": "The 1000 years war is about to start, and the consciousness of the Soul King does not feel like dying, or staying in a vegetative state forever. As such, it has requested for someone to heal it back up as soon as possible and make.sure that his unruly son is dealt with. ",
+    "uid": "sdRFO"
+  },
+  {
+    "loca": "High School DxD",
+    "rewardType": "Other",
+    "source": "",
+    "author": "Heaven Canceler",
+    "image": "https://i.imgur.com/wpofDuL.jpg",
+    "scope": "Standard",
+    "title": "Kuoh Strip Research Club",
+    "reward": "Once every 3 days, you can now grant people an “Magical Stripper” or “Magical Prostitute” transformation in a similar way to a magical girl by making a contract with them. Their abilities are based on their personality and natural talent at sexual sexually satisfying others, most getting a T4 or T5 power. They will grow stronger the more their sexual skills improve rather than through normal training. All workers in your strip club instantly gain this power with a minimum of T5. You gain also gain a special superiority that affects potential waifu or husbando that actively attempt to use their sexual skills to manipulate or tease you, automatically reflecting any seduction attempts and sexual damage unless otherwise desired. Alternatively, you may take 250 Credits.",
+    "desc": "Every city needs a bit of entertainment and Kuoh town is quite lacking, so we want you to make things a bit more exciting. For this mission, you will have to open up a strip club and get some high quality employees. Fortunately, there are a number of potential recruits for this business venture in town. First among them are Rias Gremory and Sona Sitri and their Peerages. After all, as devils surely they will have some appreciation for such things. Unfortunately, they may be just a tad too prideful for this kind of job, but hey, I am sure you can make them understand the appeal of tumbling clothes as they write and dance to the watchful eyes of your customers. And if you are already at it, I am sure you can find some additional staff to round out the service a little more.",
+    "objectives": [
+      {
+        "value": "Capture each one natural member of the following species native to the universe and employ them in the club. They cannot be canonical members of Ria’s or Sona’s Peerage at any point. One Angel, Fallen Angel, Pureblood Devil, Vampire, God and Dragon.",
+        "type": "Other",
+        "reward": "You get 25 Credits for every species on the list. In addition, if you get all of them, take the basic Demiplane or Dungeon Perk for free. From now on, any strip club you own for at least 1 week is automatically considered part of Company Space. Employees doing business outside temporarily create company space within a reasonable range while working. The size of this space increases the larger the number of employees and the greater the “event”. Alternatively, take 115 Credits."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Employ at least all female members of the original Gremory and Sitri Peerages from the start of Volume 2."
+      },
+      {
+        "value": "Have at least one pole dance strip show using the costumes the girls wore in the anime ending StudyXStudy."
+      },
+      {
+        "value": "All employees must enjoy their work, free will optional."
+      },
+      {
+        "value": "The strip club must run successfully for at least 1 month after collecting all mandatory targets."
+      }
+    ],
+    "budget": 340,
+    "uid": "aWLMF"
+  },
+  {
+    "objectives": [
+      {
+        "reward": "one T-7 companion",
+        "value": "Kill/capture the Traitor Companion: Pariah Dark Tier-7",
+        "type": "Companions"
+      },
+      {
+        "value": "Kill/capture the Traitor Companion: Lucan Tier-7",
+        "reward": "one T-7 companion",
+        "type": "Companions"
+      },
+      {
+        "value": "Kill/capture the Traitor Companion: Querehsha Tier-8",
+        "type": "Companions",
+        "reward": "one T-8 companion"
+      }
+    ],
+    "budget": 500,
+    "scope": "Quick",
+    "image": "",
+    "loca": "Generic",
+    "conditions": [
+      {
+        "value": "Condition: Kill the Traitor "
+      }
+    ],
+    "source": "",
+    "reward": "1500 + one T-8 companion",
+    "rewardType": "Other",
+    "desc": " – For some reason one of our Tier-8 Contractors betrayed the company and killed an entire newbie team before running, our sources indicate that this traitor acquired some kind of Meta Essence, and even after being stripped of all purchased powers, talents and defenses, he Still posses a Tier-7 or higher treat. You and a Team of 5 plus your retinues must go to the last world he was tracked and kill him and IF possible, recapture the companions that are loyal to him. ",
+    "title": "Rogue Contractor",
+    "author": "irugaa0",
+    "uid": "xjoNl"
+  },
+  {
+    "source": "",
+    "loca": "Generic",
+    "reward": "10% of starting budget for your current setting.",
+    "desc": "You'll dominate, and you'll do so true to your species. \n\nAll conditions must be true for a whole year. After the year is up, you'll receive the reward. The mission is continuous, meaning you'll receive the reward again if you keep it up for another year.\n\nIf you fail, the mission no longer counts as accepted. You cannot accept the mission again, and will no longer receive the reward.",
+    "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fartfiles.alphacoders.com%2F108%2F108350.jpg",
+    "budget": 0,
+    "author": "Z-Perv",
+    "uid": "OLAjJ",
+    "rewardType": "Credits",
+    "title": "I'm just a human",
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "50% increased capture reward.",
+        "type": "Credits",
+        "value": "Capture a non-human waifu (repeatable)."
+      },
+      {
+        "reward": "50% decreased capture reward.",
+        "type": "Credits",
+        "value": "Capture a human waifu (repeatable)."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Have no purchased Heritage. You cannot accept this mission if you do."
+      },
+      {
+        "value": "Do not purchase any Heritage throughout the year."
+      },
+      {
+        "value": "Be a full-blooded human for the whole year, without any race-change or transformation."
+      },
+      {
+        "value": "Get through the whole year without being mistaken for a non-human."
+      },
+      {
+        "value": "Must socialize with at least 12 different intelligent beings throughout the year. Beings that you have socialized with the previous year do not count."
+      }
+    ]
+  },
+  {
+    "reward": "Lum's UFO as a Catch-a-Ride",
+    "desc": "In the world of Urusei Yatsura, Moroboshi Ataru is a harem seeker who COULD have a chance and a decent reputation if it wasn't for the alien girl who just decided they were engaged and her troublesome alien friends. Why don't you fulfill his dream in his place?",
+    "source": "",
+    "conditions": [
+      {
+        "value": "Replace Ataru as the guy who has to catch Lum in the tag game, win, and talk her into declaring herself your fiancee."
+      },
+      {
+        "value": "Once Lum is at your home, capture her and Shinobu through any method except direct binding."
+      },
+      {
+        "value": "Do the same for Oyuki, Benten, and Ran."
+      }
+    ],
+    "author": "Ratcatcher",
+    "loca": "Urusei Yatsura",
+    "objectives": [
+      {
+        "value": "Make Kurama willing to never have children if it means having sex with you, without binding her (no brainwashing allowed)",
+        "type": "Credits",
+        "reward": "Instant capture of Kurama for twice her purchase price as reward"
+      },
+      {
+        "type": "Perks",
+        "value": "Talk Mendo in engaging you to his sister, and then capture her through love declaration",
+        "reward": "Her section of the Mendou estate as Grand Manor"
+      },
+      {
+        "reward": "Instant capture of Sakura for twice her purchase price as reward",
+        "type": "Credits",
+        "value": "Restore Sakura's health without being haunted by the demons in her body"
+      },
+      {
+        "reward": "Ryunosuke is Captured with her tier raised one level",
+        "value": "Teach Ryunosuke how to be feminine (can be done with your retinue's assistance), and then seduce her",
+        "type": "Companions"
+      }
+    ],
+    "scope": "Standard",
+    "image": "https://cdn.donmai.us/original/50/e2/__lum_moroboshi_ataru_miyake_shinobu_ran_fujinami_ryuunosuke_and_6_more_urusei_yatsura_drawn_by_lum10__50e23e9b310072fafbb6905861ee56e2.jpg",
+    "rewardType": "Other",
+    "title": "Troublesome alien harem",
+    "budget": 20,
+    "uid": "LkvIT"
+  },
+  {
     "budget": 200,
     "conditions": [
       {
@@ -17,7 +529,7 @@
     ],
     "source": "",
     "title": "Despair of the Red Princess",
-    "image": "",
+    "image": "https://i.ytimg.com/vi/t8wf0zmJlO8/maxresdefault.jpg",
     "desc": "Remember Malty S. Melromarc, the villainess from Rising of the Shield Hero? Turns out she has an excuse, namely her dear mother having betrothed her to her perverted uncle infamous for raping his wives to death, and she's gone sociopathic and insane out of despair. Insane enough that now that she's been exposed for scamming she just decided to try and summon a demon to at least drag down her mother and sister with her. Go and grant her wish, OK?",
     "rewardType": "Credits",
     "author": "Ratcatcher",
@@ -67,7 +579,7 @@
     "desc": "Win the Great Holy Grail War",
     "title": "Win the Great Holy Grail War",
     "reward": "Custom",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1032418477711052870/6fb422_7130723.jpg",
     "budget": 365,
     "rewardType": "Credits",
     "author": "Shiras54",
@@ -110,7 +622,7 @@
     "title": "It's more of an omniversal fistula than an abyss, really",
     "loca": "Made in Abyss",
     "budget": 365,
-    "image": "",
+    "image": "http://pm1.narvii.com/6897/f65973cd27414c8418f839591c728596149fe0b8r1-1280-720v2_uhq.jpg",
     "conditions": [
       {
         "value": "You and your retinue are lowered to T6 during the mission."
@@ -331,7 +843,7 @@
     "author": "TDon123",
     "scope": "Quick",
     "rewardType": "Credits",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1032419045082943528/maxresdefault.jpg",
     "objectives": [],
     "source": "",
     "uid": "fnEXX"
@@ -341,7 +853,7 @@
     "rewardType": "Perks",
     "reward": "All Catch a Ride Upgrades and 1 free purchase of Catch a ride Plus",
     "loca": "Stellaris",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1032420561537732618/od6wsbosc2131.webp",
     "title": "Relic Hunters",
     "conditions": [
       {
@@ -562,7 +1074,7 @@
     ],
     "title": "Long Live Familiars",
     "budget": 0,
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1032421011095834674/4cb64caf722d41aba195d8d2-1000x625.jpg",
     "uid": "LfKuq"
   },
   {
@@ -626,7 +1138,7 @@
         "value": "Prevent the end of mankind."
       }
     ],
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1032421532061941820/nxvify5xyy6jICN83fh-o.jpg",
     "rewardType": "Credits",
     "scope": "Standard",
     "uid": "GGpZP"
@@ -722,13 +1234,13 @@
     "title": "OX in the Shadow or Finger in The ASS and Screaming.",
     "loca": "Cyberpunk 2077",
     "budget": 100,
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1032423081844682762/maxresdefault_1.jpg",
     "uid": "lJlYN"
   },
   {
     "source": "",
     "author": "irugaa0",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1032422264530018404/tc902k.webp",
     "loca": "Cyberpunk 2077",
     "objectives": [
       {
@@ -783,7 +1295,15 @@
     "uid": "BgXZH"
   },
   {
-    "image": "https://i.imgur.com/CLmqt8f.png",
+    "objectives": [
+      {
+        "type": "Perks",
+        "value": "Recapture the 3 waifus that joined the local anti-demon organization and the 2 that work under the Succubus.",
+        "reward": "50% of the target’s capture value extra. Plus 1 TS for a Demon Hunter and 1 TS for a Witch of your choice or 30 Credits."
+      }
+    ],
+    "desc": "Well, one of our newer contractors ended up getting himself killed. They decided that a normal world would not be entertaining enough and thus decided to use the Metashift feature, enforcing a number of changes on the world. Mostly in the form of various rather 'cultured' doujinshi from a wide variety of authors specializing in niche and 'extreme' fetishes. Unfortunately, in their hurry to enjoy this newly enhanced world they did not consider the threats present. He ended up trying to 'instant loss' a local that had been shifted into the role of ancient Succubus, not considering that such an being would naturally have a trail of victories before inevitably ending up as a cumdumpster. And well, he was not the one to break her streak. Having not bothered to pick the right defenses, the poor fool got his soul eaten. Unfortunately he did have some other potent abilities, which have been inherited by said Succubus. She has been using this to enhance her position as a ruler of the magical underworld. Some of our contractor's former waifus joined her while others joined the local anti-demon alliance. Your job is simple, capture the Succubus in question so we can recover the powers she had absorbed and the soul of our former contractor for processing and contractual reevaluation. If possible, we would also like you to capture the waifus that once belonged to our former contractor.",
+    "loca": "Generic",
     "conditions": [
       {
         "value": "Soul Defense is mandatory, seriously don’t be a moron. Advanced sex skills are also highly recommended here."
@@ -798,23 +1318,15 @@
         "value": "You have a time limit of 4 days to finish the main mission, by that point the soul of our contractor will be too digested for recovery to be profitable."
       }
     ],
-    "loca": "Generic",
-    "reward": "Love Spot, Potpourri and the target’s capture value extra. ",
+    "uid": "yAJXG",
     "scope": "Standard",
-    "rewardType": "Perks",
-    "desc": "Well, one of our newer contractors ended up getting himself killed. They decided that a normal world would not be entertaining enough and thus decided to use the Metashift feature, enforcing a number of changes on the world. Mostly in the form of various rather 'cultured' doujinshi from a wide variety of authors specializing in niche and 'extreme' fetishes. Unfortunately, in their hurry to enjoy this newly enhanced world they did not consider the threats present. He ended up trying to 'instant loss' a local that had been shifted into the role of ancient Succubus, not considering that such an being would naturally have a trail of victories before inevitably ending up as a cumdumpster. And well, he was not the one to break her streak. Having not bothered to pick the right defenses, the poor fool got his soul eaten. Unfortunately he did have some other potent abilities, which have been inherited by said Succubus. She has been using this to enhance her position as a ruler of the magical underworld. Some of our contractor's former waifus joined her while others joined the local anti-demon alliance. Your job is simple, capture the Succubus in question so we can recover the powers she had absorbed and the soul of our former contractor for processing and contractual reevaluation. If possible, we would also like you to capture the waifus that once belonged to our former contractor.",
-    "author": "Heaven Canceler",
-    "source": "",
-    "title": "Bad End Retrieval",
     "budget": 345,
-    "objectives": [
-      {
-        "type": "Perks",
-        "reward": "50% of the target’s capture value extra. Plus 1 TS for a Demon Hunter and 1 TS for a Witch of your choice or 30 Credits.",
-        "value": "Recapture the 3 waifus that joined the local anti-demon organization and the 2 that work under the Succubus."
-      }
-    ],
-    "uid": "yAJXG"
+    "title": "Bad End Retrieval",
+    "author": "Heaven Canceler",
+    "image": "https://i.imgur.com/CLmqt8f.png",
+    "source": "",
+    "reward": "Love Spot, Potpourri and the target’s capture value extra. ",
+    "rewardType": "Perks"
   },
   {
     "image": "https://i.imgur.com/QENehQi.png",
@@ -897,7 +1409,7 @@
     ]
   },
   {
-    "image": "https://i.imgur.com/nR8mSBT.jpeg",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1032423927978397798/Captain-Marvel-Mjolnir-in-What-If.jpg",
     "conditions": [
       {
         "value": "Binding are forbidden, do this the old way, Company style"
@@ -930,15 +1442,15 @@
     "title": "Bitch Smack !"
   },
   {
-    "desc": "Have a threesome with a pair of siblings.",
-    "author": "Ryeguy",
+    "loca": "Generic",
+    "budget": 5,
+    "title": "Very Close Family",
     "conditions": [
       {
         "value": "Have a threesome with a pair of siblings."
       }
     ],
-    "rewardType": "Credits",
-    "title": "Bang a pair of siblings",
+    "desc": "Have a threesome with a pair of siblings.",
     "objectives": [
       {
         "type": "Credits",
@@ -947,27 +1459,27 @@
       },
       {
         "value": "Triplets",
-        "reward": "60",
+        "type": "Credits",
+        "reward": "60"
+      },
+      {
+        "value": "Quadruplets",
+        "reward": "90",
         "type": "Credits"
       },
       {
-        "reward": "90",
-        "type": "Credits",
-        "value": "Quadruplets"
-      },
-      {
-        "type": "Credits",
         "reward": "120",
-        "value": "Quintuplets"
+        "value": "Quintuplets",
+        "type": "Credits"
       }
     ],
-    "reward": "30",
-    "loca": "Any",
-    "scope": "Quick",
-    "budget": 5,
+    "uid": "WzGEb",
     "source": "",
-    "image": "",
-    "uid": "WzGEb"
+    "scope": "Quick",
+    "rewardType": "Credits",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1032424634278219806/1ZloUc.jpg",
+    "author": "Ryeguy",
+    "reward": "30"
   },
   {
     "objectives": [
@@ -1008,7 +1520,7 @@
       }
     ],
     "author": "Ryeguy",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1032425442981978232/wallpapersden.com_last-death-wish-anime_3840x2408.jpg",
     "budget": 5,
     "reward": "50",
     "source": "",
@@ -1026,7 +1538,7 @@
   },
   {
     "desc": "Become the leader of a faction. May be repeated once per each faction you join. May be taken with the \"Form a New Faction\" mission, but can only be considered complete when your new faction has more than 50 people or more than 12 members higher than Tier 6. Note, faction members may not become your familiars/companions until after they have joined the faction for the purposes of this mission (aka no building a peerage of devils and calling it a faction or just having your already acquired waifus become a new faction).",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1032426658843590706/bouno-satoshi-hats-scarves-gloves-wallpaper.jpg",
     "author": "Ryeguy",
     "title": "Become the leader of a faction.",
     "budget": 5,
@@ -1046,7 +1558,7 @@
   {
     "rewardType": "Credits",
     "budget": 5,
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1032426878444765205/Saber.Fate.stay.night.full.1797948.jpg",
     "source": "",
     "desc": "Play a significant role in forming a new faction in your new world. May be repeated once per world.",
     "reward": "50",
@@ -1070,7 +1582,7 @@
     "objectives": [],
     "author": "Ryeguy",
     "budget": 5,
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1032428161318801478/attack-on-titan-training-corps-iifxwvynzuhicsxc-iifxwvynzuhicsxc.webp",
     "source": "",
     "conditions": [
       {
@@ -4907,7 +5419,7 @@
     ],
     "desc": "Form your very own team at the world's premier huntsman academy, Beacon. The members of your team must not be members of the team RWBY or JNPR, but anyone else is fair game. ",
     "source": "",
-    "image": "https://i.pinimg.com/originals/cf/da/58/cfda5887fac5568ea798ee13d8fdf90c.jpg",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1032430057123229746/mu6y56zp4k201.webp",
     "author": "chest",
     "objectives": [
       {
@@ -6754,16 +7266,44 @@
     "desc": "Lila Rossi could have been a fearsome villainess, had it not been for her weird penchant to just disappear at random times. She'd have certainly been a more competent villain than Hawk Moth.\nYour job is to correct this, in a way: you will substitute Lila shortly before she first met Ladybug, and conquer her."
   },
   {
-    "title": "Manton Effect?",
-    "desc": "Ladies and Mentlegen, you have heard it all before... Poor Taylor, the queen of escalation, blablabla...\nYou can now help her out (though only after the locker) as her very own Siberian! (Lite).\nYes yes, you don't get given her invincibility or other stuff she has (unless you count bigger Boobas).\nYou got to take care of her, make her feel loved, and not let her know about the WC that helps her out. \nStarting off with the ability to Phase shift or how the Nasuverse calls it and your own body brought to Taylor's age and to the prime, around tier 3 to 4... That's it, the rest you gotta buy. \nNow let's see have a look at the details.\nGive the lady a happy end,  make her feel loved, and have her survive Golden Morning without your help. If you are a miracle worker and make her a tier 10 without binding her, the mission instantly ends and you can enjoy the rewards. Note that she must still love you at this time. As a small bonus, since Worm is not the friendliest of worlds, all the defenses are maxed out even if you have not bought any on your first day there. ",
-    "reward": "Captured Eden and Scion, even if they have been killed.",
-    "uid": "gVkNs",
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992801120655245482/a0c622af61cddabae92a4aa647e279db.png",
     "budget": 590,
-    "loca": "Worm",
-    "source": "",
+    "desc": "Ladies and Mentlegen, you have heard it all before... Poor Taylor, the queen of escalation, blablabla...\nYou can now help her out (though only after the locker) as her very own Siberian! (Lite).\nYes yes, you don't get given her invincibility or other stuff she has (unless you count bigger Boobas).\nYou got to take care of her, make her feel loved, and not let her know about the WC that helps her out. \nStarting off with the ability to Phase shift or how the Nasuverse calls it and your own body brought to Taylor's age and to the prime, around tier 3 to 4... That's it, the rest you gotta buy. \nNow let's see have a look at the details.\nGive the lady a happy end,  make her feel loved, and have her survive Golden Morning without your help. If you are a miracle worker and make her a tier 10 without binding her, the mission instantly ends and you can enjoy the rewards. Note that she must still love you at this time. As a small bonus, since Worm is not the friendliest of worlds, all the defenses are maxed out even if you have not bought any on your first day there. ",
     "rewardType": "Companions",
-    "scope": "Grand",
+    "loca": "Worm",
+    "author": "LordHD",
+    "source": "",
+    "objectives": [
+      {
+        "value": "Get both the Heberts in therapy and get it to help.",
+        "reward": "Annette Rose Hebert with a PowerSwap of Khepri ",
+        "type": "Companions"
+      },
+      {
+        "reward": "A Template Stack II of the leader of the Cape-Team Taylor joins onto Taylor OR 20 credits",
+        "value": "Get Taylor to join a Cape-Team before Lung's attack on the Undersiders.",
+        "type": "Other"
+      },
+      {
+        "type": "Credits",
+        "reward": "50 credits",
+        "value": "Get Taylor into the position of leader of any Cape-Team she joins."
+      },
+      {
+        "type": "Credits",
+        "value": "Arrange for members of her Canon teams to follow their lovely leader to the side she is on.",
+        "reward": "20 credits per member you get to follow her."
+      },
+      {
+        "value": "Have Taylor(or yourself) play a part in the defeat of a Cape-Team(Repeatable).",
+        "type": "Credits",
+        "reward": "50 credits"
+      },
+      {
+        "type": "Other",
+        "value": "Have Taylor(or yourself) defeat/capture an Endbringer(Repeatable).",
+        "reward": "A Tier-8 Template Stacking of the Endbringer onto Taylor OR 250 credits"
+      }
+    ],
     "conditions": [
       {
         "value": "You're *technically* Taylor's protection so listen to her commands?"
@@ -6775,19 +7315,11 @@
         "value": "You are unable to go beyond what Taylor would do, so no killing until she allows or does it herself. "
       }
     ],
-    "objectives": [
-      {
-        "reward": "Annette Rose Hebert at Taylor's age with Khepri's power at Tier 7",
-        "type": "Companions",
-        "value": "Get both the Heberts in therapy and getting it to help."
-      },
-      {
-        "value": "Get her Canon team to follow their lovely leader to the side she is on. ",
-        "type": "Companions",
-        "reward": "The team get female versions of themselves with powered up versions of the originals added"
-      }
-    ],
-    "author": "LordHD"
+    "title": "Manton Effect?",
+    "scope": "Grand",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992801120655245482/a0c622af61cddabae92a4aa647e279db.png",
+    "uid": "gVkNs",
+    "reward": "Captured Eden and Scion, even if they have been killed."
   },
   {
     "author": "bakami",
@@ -7298,25 +7830,27 @@
     "uid": "W6z8U"
   },
   {
-    "author": "Bakami",
+    "source": "",
     "budget": 590,
+    "loca": "Invincible",
+    "scope": "Grand",
+    "rewardType": "Other",
+    "desc": "The Flaxans repeated invasions of earth and planets across the multiverse are just plain annoying. Teach them a lesson and show them how it's done.\nEnter one of their portals and take over their world instead.",
+    "author": "Bakami",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/993193789260828722/Invincible_Flaxans_23123.webp",
+    "reward": "150 credits, science talent, and engineering talent",
     "conditions": [
       {
-        "value": ""
+        "value": "Defeat the Flaxans using any means necessary"
       }
     ],
-    "desc": "The Flaxans repeated invasions of earth and planets across the multiverse is just plain annoying. Teach them a lesson and show them how its done.\n Enter one of their portals and take over their world instead.",
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/993193789260828722/Invincible_Flaxans_23123.webp",
-    "loca": "Invincible",
     "objectives": [
       {
-        "reward": "Communication talent, 200 points to spend on your demiplane & dungeons and Rides",
-        "value": "Get them to follow you as a beloved leader"
+        "value": "Get them to follow you as a beloved leader",
+        "type": "Other",
+        "reward": "Communication talent, 200 points to spend on your demiplane & dungeons and Rides"
       }
     ],
-    "reward": "150 points, science talent, and engineering talent",
-    "scope": "Grand",
-    "source": "",
     "title": "Only company approved multiverse invasions are allowed",
     "uid": "Dw4iN"
   },
@@ -8725,7 +9259,7 @@
       }
     ],
     "desc": "Become a specialist of a single Pokemon type, capture at least a full team of 6, and collect 8 Gym Badges.",
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990975258913800292/All-Pokemon-Types-768x432.jpg",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1032430981149364284/Screenshot_1.jpg",
     "loca": "Pokemon",
     "objectives": [
       {
