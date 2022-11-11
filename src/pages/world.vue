@@ -38,6 +38,14 @@
         >
           <fluent:target-20-filled class="inline-block rounded" />
         </div>
+        <div
+          class="flex items-center bg-gray-200 dark:bg-gray-700 px-1 rounded cursor-pointer"
+          :class="sortAdded ? 'border border-red-500' : ''"
+          title="Show new worlds first"
+          @click="sortAdded = !sortAdded"
+        >
+          <bi:calendar2-date class="inline-block rounded" />
+        </div>
       </div>
       <div class="flex gap-1">
         <NumberInput v-model="minDR" :min="1" :max="maxDR" />
@@ -77,6 +85,7 @@
         :max="maxDR"
         @edit-world="editWorld"
       />
+      <Button v-if="worldWrapper && worldWrapper.clientHeight >= worldWrapper.scrollHeight && worldsFiltered.length > infiniteWorlds.length" bg-color="bg-orange-500" class="self-center justify-self-center" label="Load More" @click="infiniteWorlds.push(...worldsFiltered.slice(infiniteWorlds.length, infiniteWorlds.length + 10))" />
       <div v-if="!worldsFiltered.length" class="text-center flex-grow">
         <p>No worlds found.</p>
       </div>
@@ -102,6 +111,7 @@ const { userWorlds, localUserWorlds, settings } = useStore()
 const sortAlpha = ref(0)
 const sortRating = ref(1)
 const sortTargets = ref(0)
+const sortAdded = ref(false)
 
 const filterUserWorlds = ref('')
 
@@ -145,9 +155,11 @@ const worldsFiltered = computed(() => {
       .filter(x => filterUserWorlds.value ? x.type === filterUserWorlds.value : true)
   }
   else {
-    return [...allWorlds.value].sort(sortingFunc)
-      .filter(x => (x.rating >= minDR.value && x.rating <= maxDR.value) || checkConditions(x.condition))
-      .filter(x => filterUserWorlds.value ? x.type === filterUserWorlds.value : true)
+    return sortAdded.value
+      ? [...allWorlds.value].reverse()
+      : [...allWorlds.value].sort(sortingFunc)
+        .filter(x => (x.rating >= minDR.value && x.rating <= maxDR.value) || checkConditions(x.condition))
+        .filter(x => filterUserWorlds.value ? x.type === filterUserWorlds.value : true)
   }
 })
 

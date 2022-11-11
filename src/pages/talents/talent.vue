@@ -7,7 +7,7 @@
     >
       <component
         :is="getComponent(talent)"
-        v-for="talent in talents"
+        v-for="talent in talentsFiltered"
         :key="talent.title"
         :perk="talent"
         :bg="talentAvailable(talent) ? 'green-200 dark:green-900 hover:(green-100 dark:green-800)'
@@ -70,11 +70,14 @@ const talentsDLC = computed(() => !settings.value.allChosenAuthors[0]
   : [])
 
 const talentsList = computed(() => {
-  const shareable = ['Martial Talent', 'Wild Talent', 'Science Talent', 'Engineering Talent', 'Aesthetic Talent',
+  const shareable = ['Athletic Talent', 'Martial Talent', 'Wild Talent', 'Science Talent', 'Engineering Talent', 'Aesthetic Talent',
     'Communication Talent', 'Performance Talent', 'Soul Talent', 'Blessed Talent', 'Psychic Talent',
     'Covert Talent', 'Sticky Fingers', 'Money Talent', 'Presence', 'Educational Talent', 'Inculcation Talent']
   return intersection(allEffects.value, shareable).map(x => ({ flavor: x }))
 })
+
+const talentsFiltered = computed(() => talents.value.filter(perk => settings.value.hideLegacy ? !perk.legacy : true))
+
 onMounted(() => useTooltips())
 
 function getComponent(perk: PerkFull) {

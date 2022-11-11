@@ -8,6 +8,9 @@
         class="-mt-1/2 sm:mt-0 min-w-[320px] h-max bg-warm-gray-800 text-gray-100 cursor-pointer rounded-l p-1 border-l-2 border-t-2 border-b-2 border-gray-400"
         @click="showDanger11 = !showDanger11"
       >
+        <Note type="warning">
+          DRX helper is in a WIP stage and can show wrong values.
+        </Note>
         <div>
           TX Companion -
           <Valid :condition="tier11Companion" />

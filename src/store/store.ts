@@ -189,7 +189,7 @@ const usedHeritageDiscount = computed(() => {
 
 const talentsDiscount = computed(() => {
   const cost = talentPerks.value.filter(x => x.count && x.count > 1 && !x.complex)
-    .reduce((a, x) => a += (x.count - 1) * talentsObject[x.title].cost, 0)
+    .reduce((a, x) => a += (x.count - 1) * talentsObject[x.title]?.cost || 0, 0)
   // cost += talentPerks.value.filter(x => x.complex && x.complex.length).reduce((a, x) => a += x.complex.reduce((b, y) => b += (y.count - 1) * talentsObject[x.title].cost, 0), 0)
   return cost
 })
@@ -227,7 +227,7 @@ const defenseRetinueDiscountAuto = computed(() => {
 
   const sortedCompanions = (() => {
     const cmp = [] as {uid: number; cost: number}[]
-    if (startingOrigin.value.uid)
+    if (startingOrigin.value.swap || startingOrigin.value.uid)
       cmp.push({ uid: startingOrigin.value.swap?.uid || startingOrigin.value.uid, cost: CHAR_COSTS[startingOrigin.value.swap?.tier || 0] || startingOrigin.value.cost })
 
     companionsWithoutSold.value.forEach(companion => cmp.push(

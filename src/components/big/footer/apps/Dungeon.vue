@@ -40,7 +40,7 @@
             Create a portal of tier:<NumberInput v-model="portalTier" :max="10" /><Button title="Create Portal" icon="fluent:add-circle-16-regular" @click="createPortal" />
           </div>
           <div class="flex flex-col gap-1">
-            <div v-for="portal, i in dungeons[activeDungeonInd].portals" :key="portal.name" class="flex gap-1">
+            <div v-for="portal, i in dungeons[activeDungeonInd].portals" :key="i" class="flex gap-1">
               <Input v-model="portal.name" class="flex-grow" />
               <NumberInput v-model="portal.tier" :max="10" label="Tier" />
               <Button title="Delete Portal" icon="fluent:delete-20-filled" @click="dungeons[activeDungeonInd].portals.splice(i, 1)" />
@@ -50,7 +50,7 @@
             Create a trap <Select v-model="trapRank" :options="['Blue', 'Copper', 'Silver', 'Gold']" /><Button title="Create Trap" icon="fluent:add-circle-16-regular" @click="createTrap" />
           </div>
           <div class="flex flex-col gap-1">
-            <div v-for="trap, i in dungeons[activeDungeonInd].traps" :key="trap.name" class="flex gap-1">
+            <div v-for="trap, i in dungeons[activeDungeonInd].traps" :key="i" class="flex gap-1">
               <Input v-model="trap.name" class="flex-grow" />
               Rank: {{ trap.rank }}
               <Button title="Delete Trap" icon="fluent:delete-20-filled" @click="dungeons[activeDungeonInd].traps.splice(i, 1)" />
@@ -62,7 +62,7 @@
             Create a monster of tier: <NumberInput v-model="monsterTier" :max="10" /><Toggle v-model="monsterUseBinding" label="Use Binding" /><Button title="Create Portal" icon="fluent:add-circle-16-regular" @click="createMonster" />
           </div>
           <div class="flex flex-col gap-1 pt-1">
-            <div v-for="monster, i in dungeons[activeDungeonInd].monsters" :key="monster.name" class="flex gap-1">
+            <div v-for="monster, i in dungeons[activeDungeonInd].monsters" :key="i" class="flex gap-1">
               <Input v-model="monster.name" class="flex-grow" />
               <NumberInput v-model="monster.tier" :max="10" label="Tier" />
               <span v-if="monster.binding">Can Bind</span>

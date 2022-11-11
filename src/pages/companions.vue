@@ -366,14 +366,21 @@ const filteredCharacters = computed(() => {
       break
     // Search by name with locked world
     case !!worldName.value:
+    {
+      let searchPrefix = '\''
+      let searchString = worldName.value
+      if (worldName.value.startsWith('=')) {
+        searchString = worldName.value.slice(1)
+        searchPrefix = '='
+      }
       sopt.$and.push(
         {
           $or: [
-            { w: `'"${worldName.value}"` }, { d: `'"${worldName.value}"` },
+            { w: `${searchPrefix}"${searchString}"` }, { d: `${searchPrefix}"${searchString}"` },
           ],
         },
       )
-      break
+      break }
   }
   if (gender.value) sopt.$and.push({ b: `=${gender.value}` })
 

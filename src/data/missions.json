@@ -1,4 +1,571 @@
 [
+  
+  {
+    "image": "https://i.ibb.co/HnNMsfD/499650ff6011bb54bd7d20e7785cae59.png",
+    "desc": "Shizuki Hitomi is for some reason convinced girls can't love girls. Convince her otherwise by having her enter a relationship with her good friend Sayaka.",
+    "rewardType": "Credits",
+    "loca": "Madoka Magica",
+    "reward": "60",
+    "title": "Girls Can Love Girls",
+    "objectives": [
+      {
+        "type": "Credits",
+        "reward": "120",
+        "value": "Make their relationship a threesome with either Kyoko or Madoka"
+      },
+      {
+        "type": "Credits",
+        "reward": "300",
+        "value": "Make their relationship a foursome with Kyoko AND Madoka"
+      }
+    ],
+    "budget": 20,
+    "conditions": [
+      {
+        "value": "Hitomi and Sayaka must become lovers by their own will. No mind control allowed"
+      }
+    ],
+    "source": "",
+    "author": "Ratcatcher",
+    "scope": "Quick",
+    "uid": "SMuni"
+  },
+  {
+    "source": "",
+    "image": "https://i.ibb.co/hCMz9G0/b8e9313be20171a14ed554bebc6c6da1.jpg",
+    "reward": "Twice the love interest's list price",
+    "scope": "Quick",
+    "loca": "Generic",
+    "desc": "Quite often, protagonists are very punchable people, and some don't get why they get the love interest. So, why don't you go and cuck them?",
+    "budget": 0,
+    "rewardType": "Credits",
+    "title": "Protagonist Cucker",
+    "author": "Ratcatcher",
+    "conditions": [
+      {
+        "value": "You must seduce the \"winning\" love interest of the world's protagonist after they and the protagonist already got together."
+      },
+      {
+        "value": "The love interest must sleep with you by their own will, so no mind control. Lures are allowed, though."
+      },
+      {
+        "value": "Make the protagonist find out."
+      }
+    ],
+    "objectives": [],
+    "uid": "kDddH"
+  },
+  {
+    "title": "The Halo Experiance",
+    "rewardType": "Other",
+    "source": "",
+    "loca": "Halo",
+    "reward": "Your very own Halo Ringworld",
+    "conditions": [
+      {
+        "value": "Must be tier 5 or lower"
+      }
+    ],
+    "image": "https://www.gameinformer.com/sites/default/files/2020/11/11/0f496586/1594986105_353610_1594986382_noticia_normal.jpg",
+    "desc": "Love the Campaign of the Halo series, wish you could be there. Well now you can starting From Reach, Halo Ce, 2 3 4 5, and Infinite help the Master Cheif and experience the Halo Campaigns",
+    "author": "SittingBear",
+    "objectives": [
+      {
+        "type": "Credits",
+        "value": "Complete the campaign as a Spartan!",
+        "reward": "50"
+      },
+      {
+        "value": "Complete the campaign as a ODST!",
+        "type": "Credits",
+        "reward": "100"
+      },
+      {
+        "value": "Complete the Campaign as a Marine!",
+        "reward": "500",
+        "type": "Credits"
+      },
+      {
+        "value": "Complete the campaign as a Civilian!",
+        "type": "Credits",
+        "reward": "1000"
+      }
+    ],
+    "scope": "Grand",
+    "budget": 20,
+    "uid": "qpTSl"
+  },
+  {
+    "desc": "This World and its Women are wasted on Issei Hyoudou. Who has a literal harem throwing themselves at them and a massive libido, yet still has their V Card?! It isn't fair to the average man and it sure as hell isn't fair to the women. Now you are to fix that.\n\nStart in this World with the Sacred Gear: Boosted Gear. Work towards becoming the Greatest Red Dragon Emperor to ever live and have a harem (three minimum) of satisfied women.",
+    "conditions": [
+      {
+        "value": "Extra (10) Origin or a Blue Star Substitute/Possess With Template Stacking I (Boosted Gear)"
+      },
+      {
+        "value": "1 Year Time Limit"
+      },
+      {
+        "value": "Non-Native Retinue can't step foot outside your Demiplane (or your house if you don't have one yet)"
+      },
+      {
+        "value": "Local Abilities only"
+      },
+      {
+        "value": "Binding's don't Capture anyone until they either confess their Love to you or they get pregnant with your Child"
+      }
+    ],
+    "objectives": [
+      {
+        "reward": "Template Stacking I (Angel) for one of your Retinue. If the person is of a Darker Personality, they will Fall Immediately. If you wish to keep them as a Pure Angel, you will have to exercise your Contractor Abilities.",
+        "value": "Defeat Raynere during the Assassination Attempt (your survival is optional)",
+        "type": "Perks"
+      },
+      {
+        "type": "Other",
+        "value": "Become a Reincarnated Devil under a Pureblood King.",
+        "reward": "The Ability to 'Reincarnate' Blue Star Retinue Members into a Role. The Wings they gain is entirely on what type of personality they have and which DxD Species is closest. Knights/Bishops are raised to Teir 4, Rooks are raised to Teir 5 and Queens are raised to Teir 6. There are no 'Pawns' and a 'Side' must be finished before you can have more of them. 2x for each type per Side except Queens which is 1x per side."
+      },
+      {
+        "value": "Become a Brave Saint under a Seraph",
+        "reward": "The Ability to 'Reincarnate' Blue Star Retinue Members into a Number. They gain Angel Wings, but if they have a Darker Personality, they will Fall Immediately. If five Numbers are together, they gain a small boost based on the 'Hand' they make. This boost works on Poker rules with the boost being 10% for each of the 10 possibilities in reverse value. Royal Flush giving each a 100% boost while a High Card gives only a 10% Boost. The 'Numbers' must be part of Making the Hand to get the Boost. A new Suit can only be gained when the previous one is filled.",
+        "type": "Other"
+      },
+      {
+        "value": "Save Asia Argento before her Sacred Gear can be stolen",
+        "reward": "Asia Argento Capture",
+        "type": "Companions"
+      },
+      {
+        "reward": "Template Stacking I (Regeneration)",
+        "value": "Defeat Riser Phenex in the Initial Rating Game solo",
+        "type": "Perks"
+      },
+      {
+        "value": "Defeat Irina Shidou and Xenovia Quarta in a spar",
+        "type": "Perks",
+        "reward": "Template Stacking I (Holy Element) or 30 Credits if you already have it."
+      },
+      {
+        "value": "Defeat Kokabiel when he appears in Kuoh before Vali can get to him.",
+        "type": "Credits",
+        "reward": "200 Credits"
+      },
+      {
+        "type": "Credits",
+        "reward": "250 Credits",
+        "value": "Defeat Vali when he betrays Azazel during the Peace Talks"
+      },
+      {
+        "reward": "Template Stacking I (DxD Senjutsu)",
+        "value": "Subdue Kuroka when she tries to Kidnap Koneko Toujou",
+        "type": "Perks"
+      },
+      {
+        "value": "Wound Loki before he is subdued",
+        "reward": "Lady Loki from Marvel Comics",
+        "type": "Companions"
+      },
+      {
+        "value": "Defeat Cao Cao in your initial encounter",
+        "type": "Companions",
+        "reward": "Yasaka Capture and Kunuo Adoption (this will last at least until her 18th birthday)"
+      },
+      {
+        "type": "Other",
+        "reward": "Unlocks the ability to have Multiple sets of Wings if you're a Devil. 300 Credits if you aren't.",
+        "value": "Defeat a Satan (Old or New)"
+      },
+      {
+        "type": "Companions",
+        "value": "Save Ophis from Rizevim Lucifer",
+        "reward": "Ophis Capture and her Spawn Lilith (Clone)"
+      },
+      {
+        "reward": "Misla Bael (Clone) with a Power Swap with Sairaorg Bael",
+        "type": "Companions",
+        "value": "Defeat Sairaorg Bael one on one"
+      },
+      {
+        "value": "Defeat or Befriend Great Red",
+        "reward": "True Dragon Form Similar to Ddraig's unlocked.",
+        "type": "Other"
+      }
+    ],
+    "scope": "Grand",
+    "reward": "2 TX Tickets",
+    "source": "",
+    "budget": 300,
+    "author": "FinSexual92",
+    "image": "",
+    "title": "Be A Better Red Dragon Emperor",
+    "loca": "High School DxD",
+    "rewardType": "TX Tickets",
+    "uid": "EZojS"
+  },
+  {
+    "rewardType": "Credits",
+    "loca": "Generic",
+    "conditions": [
+      {
+        "value": "Fight Decade to a standstill, either by your lonesome, with the help of your retinue,  or even recruiting help from the locals. You MUST force him to retreat."
+      }
+    ],
+    "image": "",
+    "reward": "1000",
+    "title": "The Devil",
+    "scope": "Grand",
+    "objectives": [],
+    "desc": "The Destroyer of Worlds, The Magenta Devil, Kamen Rider Decade. In one of his dark episodes, Decade has arrived into your current world, and has decided to fulfill his duty. He cannot be reasoned with, he is here only to destroy this world.",
+    "source": "",
+    "author": "darthwolf15",
+    "budget": 1545,
+    "uid": "AxGWF"
+  },
+  {
+    "author": "FinSexual92",
+    "scope": "Grand",
+    "title": "A True Dark Lord",
+    "reward": "All British Magical Areas added to your Demiplane (or make up your Demiplane if you don't have one yet). It will be populated by the same populace all loyal to you via a Company Stamp no matter what Binding you use (or don't).",
+    "source": "",
+    "objectives": [
+      {
+        "value": "Steal the Philosopher's/Sorcerer's Stone.",
+        "reward": "Token for an Alchemist Companion of any Teir",
+        "type": "Companions"
+      },
+      {
+        "reward": "Myrtle Warren (Clone)",
+        "type": "Companions",
+        "value": "Destroy the Diary Horcrux Personally."
+      },
+      {
+        "type": "Other",
+        "reward": "Basilisk Hatchery",
+        "value": "Kill the Basilisk of the Chamber of Secrets solo."
+      },
+      {
+        "type": "Companions",
+        "reward": "Nymphadora Tonks capture.",
+        "value": "Kill Remus Lupin during his teaching year at Hogwarts and get away with it."
+      },
+      {
+        "value": "Capture any Weasley or Weasley-to-be before they start a relationship with their future husband.",
+        "type": "Other",
+        "reward": "Extra Points equal to their Capture Reward and a Company Clone of any female children they had in Canon (aged up to 18)."
+      },
+      {
+        "reward": "250 Credits",
+        "value": "Kill Voldemort before he can resurrect himself.",
+        "type": "Credits"
+      },
+      {
+        "type": "Credits",
+        "value": "Allow Voldemort to resurrect himself and kill him in the Graveyard.",
+        "reward": "200 Credits"
+      },
+      {
+        "value": "Execute Delores Umbridge in a public spectacle.",
+        "reward": "1 TX Ticket",
+        "type": "TX Tickets"
+      },
+      {
+        "type": "Credits",
+        "value": "Sacrifice Albus Too Many Names Dumbledore before your take over is done.",
+        "reward": "200 Credits"
+      },
+      {
+        "type": "Companions",
+        "reward": "Lily J Potter nee Evans (Clone)",
+        "value": "Capture Harry Potter and fake his Death."
+      },
+      {
+        "value": "Capture all Three Black Sisters (Bellatrix, Andromeda and Narcissa)",
+        "type": "Credits",
+        "reward": "200 Credits"
+      },
+      {
+        "value": "Persuade (or blackmail) the Patil Twins into becoming your Concubines before Capturing them.",
+        "type": "Credits",
+        "reward": "100 Credits"
+      },
+      {
+        "type": "Credits",
+        "reward": "30 Credits",
+        "value": "Have a non-human Impregnate a Pureblood woman (Only one of the coupling need to be in your Retinue but they can't be even part Human). [Repeatable]"
+      },
+      {
+        "reward": "Nagini Capture and Delphini Riddle (Clone)",
+        "value": "Remove the Horcrux from Nagini without killing her.",
+        "type": "Companions"
+      }
+    ],
+    "desc": "The Wizarding World is filled with corrupt idiots and fools with delusions of adequacy. Any decent Dark Lord could take it over in less than five years (if they were being lazy). You know what? Why don't you do that.\n\nYou have Five Years to conquer Magical Britain and rid yourself of your competition be they Death Eaters, Order of the Phoenix or Ministry. Be the one that EVERYONE knows is in charge.",
+    "conditions": [
+      {
+        "value": "Five Year Time Limit."
+      },
+      {
+        "value": "No Companion above Teir 6 can be used."
+      },
+      {
+        "value": "At least 50% of the Magical Populace must survive."
+      },
+      {
+        "value": "The Mundane World must remain mostly unaware of Magic."
+      },
+      {
+        "value": "During the Conquest, you must Capture at least 1 Pureblood, Half-Blood and Muggleborn."
+      }
+    ],
+    "rewardType": "Other",
+    "image": "",
+    "budget": 50,
+    "loca": "Harry Potter",
+    "uid": "higuE"
+  },
+  {
+    "desc": "Listen, there's this Client that wants a Scott Pilgrim harem... Without Scott in it. In fact, he HATES Scott. So, you're going to cuck him repeatedly until he's without any love interest, OK?",
+    "source": "",
+    "objectives": [
+      {
+        "type": "Perks",
+        "reward": "Upon Capture Envy receives a Template Stacking for Asuka Soryu Langley",
+        "value": "Talk Envy into playing with The Clash at Demonhead while wearing Asuka's plugsuit"
+      },
+      {
+        "reward": "Either Psychic Talent or Soul Talent",
+        "value": "Seduce Lynette away from Todd, and then Capture her by confession",
+        "type": "Perks"
+      },
+      {
+        "value": "Seduce and Capture by confession Roxie Richter",
+        "reward": "TS1 of a character with the Combatant characteristic",
+        "type": "Perks"
+      },
+      {
+        "reward": "50",
+        "value": "Get Stacey Pilgrim and Julie Powers in a relationship, and then seduce and Capture them by confession",
+        "type": "Credits"
+      },
+      {
+        "reward": "TS1 of an anime character for every local Capture",
+        "type": "Perks",
+        "value": "Defeat Scott and a temporarily bodied Nega Scott at the same time without help"
+      }
+    ],
+    "scope": "Standard",
+    "conditions": [
+      {
+        "value": "Forage: only local captures may help"
+      },
+      {
+        "value": "Your main targets are Ramona Flowers, Envy Adams, Knives Chau, Kim Pine, and Lisa Miller. No mind control besides Lures is allowed."
+      },
+      {
+        "value": "Since the Client wants Scott cucked, you must seduce the targets other than Lisa Miller into cheating on him at least once, and Capture them by Confession. You don't have to capture them on the spot."
+      },
+      {
+        "value": "The Client hates Todd even more than Scott, so Envy has to be seduced into cucking both Scott and Todd before being Captured."
+      }
+    ],
+    "author": "Ratcatcher",
+    "budget": 200,
+    "rewardType": "Other",
+    "image": "https://cdn.donmai.us/original/e9/ab/__ramona_v_flowers_kim_pine_knives_chau_lisa_miller_and_envy_adams_scott_pilgrim_drawn_by_miri00__e9ab32694976933ad3d9117c82bebd21.png",
+    "title": "YOUR Precious Little World",
+    "reward": "200 credits and Performance Talent",
+    "loca": "Scott Pilgrim",
+    "uid": "TNzsj"
+  },
+  {
+    "scope": "Quick",
+    "objectives": [
+      {
+        "type": "Perks",
+        "value": "Destroy the Earth",
+        "reward": "+1 Sweet Home Expansion or 40 Credits"
+      }
+    ],
+    "source": "",
+    "reward": "Benjamin Tennyson [TX] & Gwendolyn Tennyson [TX], or one TX Ticket and 500 credits.",
+    "desc": "A bad Meta Shift has occurred, possibly the result of someone attempting to Jailbreak a universe from Company control. While we've managed to retain access, what's left of the world requires a finer touch, yours. Why? The Ben 10 and Gwen 10 universes have been merged into one. Unexpectedly this has resulted in a Flipped Morality. Anyone who was good is evil and vice versa. Why is that bad? Think about it, we now have a pair of evil ten-year-olds who both have access to the Omnimatrix. This is not a good thing.\n\nKill them and we'll reformat them into their originals, or Capture them if you want to keep the little evil shits. If possible get rid of the earth too before you skedaddle.",
+    "rewardType": "Companions",
+    "conditions": [
+      {
+        "value": "Don't attract Vilgax's attention, he's a goody two-shoes who will try and stop you from carrying out your mission."
+      },
+      {
+        "value": "Kill Grandpa Max, assume T6 capabilies and a tyrant."
+      }
+    ],
+    "budget": 100,
+    "author": "Darkarma",
+    "title": "Abandonned Metaverse",
+    "loca": "Ben 10",
+    "image": "",
+    "uid": "llYHW"
+  },
+  {
+    "conditions": [
+      {
+        "value": "No Outside abilities to be used."
+      },
+      {
+        "value": "Neither Bindings nor Lures work on the Gremory Peerage."
+      },
+      {
+        "value": "Origin must be Extra (10) as part of the Phenex Clan. And Male. Does not require you to be a sibling of Riser, just a member of the Phenex Clan"
+      }
+    ],
+    "desc": "Everyone brought up in Political Families knows that marrying is never for love, but that doesn't mean such marriages need to be nasty.\n\nOf course, no one has dared tell Rias this and now she is throwing a temper tantrum about not being able to marry for love.\n\nIf it was Riser like in Canon then we could be sympathetic. But this isn't Canon. Instead of Riser, it is you who is engaged to the Crimson Princess.\n\nFind a way to make sure the marriage goes through while having the sympathy of most Devil kind for having to marry such a brat.",
+    "budget": 250,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1038858162977112074/pi8txibfehc61.png",
+    "scope": "Standard",
+    "objectives": [
+      {
+        "value": "Should it come to it, win the Rating Game fair and square",
+        "reward": "Akeno Himejima, Koneko Toujou, Asia Argento, Yuuto Kiba, Issei Hyoudou and Gasper Vladi",
+        "type": "Companions"
+      },
+      {
+        "value": "Defeat Rias yourself. One on one.",
+        "type": "Credits",
+        "reward": "100"
+      },
+      {
+        "value": "Allow one of your Peerage to defeat Rias one on one.",
+        "reward": "Template Stacking I (Bael Pureblood) for the Peerage Member",
+        "type": "Perks"
+      },
+      {
+        "type": "Companions",
+        "reward": "Grayfia Lucifuge (Clone)",
+        "value": "Get Sirzechs to back off through reasonable means."
+      },
+      {
+        "value": "Get the marriage to go through without a Rating Game",
+        "type": "Other",
+        "reward": "One time reality rewrite to alter Rias' Peerage Members to the preferred Gender. (Those that like only girls can change the boys to girls, those that like boys can do the same to the girls. Those that like both get to pick and choose). Once done, everyone not in your retinue will believe they have always been that gender, including them."
+      }
+    ],
+    "rewardType": "Companions",
+    "reward": "Rias Gremory",
+    "title": "Be Reasonable, Rias.",
+    "author": "FinSexual92",
+    "loca": "High School DxD",
+    "source": "",
+    "uid": "DiVaG"
+  },
+  {
+    "loca": "Fate/ (Mainline)",
+    "rewardType": "Companions",
+    "reward": "Instant capture of Tohsaka Rin, Matou Sakura, and the Servant deities that had been in their bodies",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1038858455135567993/2f5d2d6aebdb28f6cda75adfe90a0706.jpg",
+    "desc": "For an astounding coincidence, the sisters Tohsaka Rin and Matou Sakura can be the hosts of deities, or at least their Servant selves. Trick them into summoning the Servant deities in their bodies, and then screw them into submission.",
+    "conditions": [
+      {
+        "value": "Do it yourself: can't have help from members of your retinue"
+      },
+      {
+        "value": "You can't use force or outright brainwashing, though subtler lures will work"
+      },
+      {
+        "value": "Once the girls are turned into divine Pseudo-Servants, sexually dominate them until they submit."
+      }
+    ],
+    "objectives": [
+      {
+        "value": "You convinced Rin to use Kaleidostick Magical Ruby as part of the summoning process",
+        "reward": "Rin comes with the Kaleidostick Magical Ruby Perk pre-applied (maintains normal memories)",
+        "type": "Perks"
+      },
+      {
+        "type": "Perks",
+        "value": "Convince Sakura to use her blood as part of the summoning process",
+        "reward": "Sakura comes with the Perk Tainted Vessel pre-applied (maintains normal memories)"
+      },
+      {
+        "value": "Pull the same trick of the main objective with Luvia, Karen, Ilya, or Taiga",
+        "reward": "Both summoner and pseudo-deity are instant captured",
+        "type": "Companions"
+      },
+      {
+        "reward": "Luvia comes with the Kaleidostick Magical Sapphire Perk pre-applied (maintains normal memories)",
+        "value": "Convince Luvia to use Kaleidostick Magical Sapphire as part of the summoning process",
+        "type": "Perks"
+      }
+    ],
+    "title": "Divine and human sisters",
+    "scope": "Quick",
+    "budget": 200,
+    "author": "Ratcatcher",
+    "source": "",
+    "uid": "YDKQC"
+  },
+  {
+    "scope": "Quick",
+    "loca": "Fate/ (Mainline)",
+    "desc": "Tohsaka Rin doesn't like to admit it, but she really loves her sister... And in most timelines is firmly convinced she's living a peaceful life, so she doesn't interfere with her. In this one, however, she learned the truth, and, realizing she can't save Sakura by herself, went and summoned you to do the job for her, no matter how and what she has to pay for it.",
+    "reward": "Instant Capture of Tohsaka Rin",
+    "source": "",
+    "conditions": [
+      {
+        "value": "Zouken is killed for good"
+      },
+      {
+        "value": "Matou Shinji is neutralized"
+      },
+      {
+        "value": "Sakura is cleansed of her Crest Worm infestation and the link to the Holy Grail"
+      },
+      {
+        "value": "Do it yourself: no member of your retinue can help"
+      }
+    ],
+    "author": "Ratcatcher",
+    "title": "A Sister's Love",
+    "rewardType": "Companions",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1038858818479738880/dbu6ylhd89h61.jpg",
+    "objectives": [
+      {
+        "value": "Make Rin able to destroy Zouken by herself through the power of Ishtar and/or Kaleido Ruby",
+        "type": "Companions",
+        "reward": "Rin is Captured with either Mistress of Heaven or Kaleidostick Magical Ruby already applied"
+      },
+      {
+        "type": "Companions",
+        "value": "Purify Sakura through a tantric ritual with you",
+        "reward": "Instant Capture of Matou Sakura"
+      }
+    ],
+    "budget": 200,
+    "uid": "AJZHK"
+  },
+  {
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1038859386644344953/ss.png",
+    "loca": "RWBY",
+    "desc": "Those dragons are assholes. Not just assholes, but idiots as well. Jackasses, that's what they are. Well, this is your world now Contractor. End the Brothers.\n\nDon't stop them from arriving, no... summon them with their beacons, and kill them both. Or you can sell them to us, whichever. You are not permitted to keep them however. If you do sell them, you sacrifice their sale price for your TX ticket, as a capture is easier than a kill.",
+    "conditions": [
+      {
+        "value": "No TX11 Start, RWBY must be your first world."
+      }
+    ],
+    "reward": "1",
+    "author": "Lunasmeow",
+    "uid": "DHTvW",
+    "scope": "Grand",
+    "budget": 0,
+    "title": "Ruler of Remnant",
+    "rewardType": "TX Tickets",
+    "objectives": [
+      {
+        "value": "Remnant isn't a world that will do well without some type of Gods to look after it. Magic is too powerful to not be controlled. Well, Dragons once ruled this world, thus they shall again. Summon both Tiamat and Bahamut into this world, then free them to serve as its gods in place of the Brothers.",
+        "type": "TX Tickets",
+        "reward": "1"
+      }
+    ],
+    "source": ""
+  },
   {
     "budget": 85,
     "author": "Darkarma",
@@ -127,21 +694,27 @@
       }
     ],
     "desc": "A group calling itself the Corporation has decided to usurp one of our Contractors who in turn is hunting down the newbies and somehow subsuming their Smart Devices, credits, and purchases made since insertion. We'll handle their sponsor, you need to kill the contractor.",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1033786810599489538/145818-artwork-fantasy-art-Moon-fire-dark-steampunk.jpg",
     "scope": "Quick",
     "reward": "Promotion, +50,000 monthly Salary",
     "loca": "Generic",
     "uid": "JKkgh"
   },
   {
+    "uid": "kErTw",
+    "rewardType": "Perks",
+    "conditions": [
+      {
+        "value": "Investigate the source of the world without arousing suspicion."
+      }
+    ],
     "image": "https://i.imgur.com/PQYaH2q.jpg",
     "loca": "Harry Potter",
-    "source": "",
-    "scope": "Quick",
+    "budget": 500,
     "objectives": [
       {
-        "type": "Perks",
         "value": "Rescue and rehome at least five innocents who's fate have been altered by the Anomaly.",
+        "type": "Perks",
         "reward": "Rainbow Bridge"
       },
       {
@@ -150,18 +723,12 @@
         "value": "Ensure Harry Potter, Albus Dumbledore and Tom Riddle do not escape to any other universe before this one collapses."
       }
     ],
-    "budget": 500,
-    "conditions": [
-      {
-        "value": "Investigate the source of the world without arousing suspicion."
-      }
-    ],
-    "desc": "An anomalous world has cropped up, one not created by the Company or a Contractor's Meta Shift. One that seems to adapt itself the whoever has the strongest destiny or power level.\n\nIf you want in, think of Harry Potter, only it's every bad fanfiction trope that's ever been written in here, to the point where it's almost a parody. Almost. Identify the source of the change and kill it. Our readings indicate that once you do, the world itself should collapse under its own weight.\n\nIt should be an in-and-out job, but we won't begrudge you if you take longer. Despite its eccentricities, a Contractor like yourself should find a lot of ways to indulge.\n\nWe're giving this world a DR8 Condition, expect every empowered individual to be at least one to three tiers more powerful than they would normally be.\n\nOn the plus side, Magical Cores are a thing here, so unlike canon, people can suffer Magical Exhaustion which is to your benefit.",
-    "rewardType": "Perks",
-    "author": "Darkarma",
-    "title": "So mote it be!",
     "reward": "+4 Sweet Home Expansions",
-    "uid": "kErTw"
+    "desc": "An anomalous world has cropped up, one not created by the Company or a Contractor's Meta Shift. One that seems to adapt itself to whoever has the strongest destiny or power level.\n\nIf you want in, think of Harry Potter, only it's every bad fanfiction trope that's ever been written in here, to the point where it's almost a parody. Almost. Identify the source of the change and kill it. Our readings indicate that once you do, the world itself should collapse under its own weight.\n\nIt should be an in-and-out job, but we won't begrudge you if you take longer. Despite its eccentricities, a Contractor like yourself should find a lot of ways to indulge.\n\nWe're giving this world a DR8 Condition, expect every empowered individual to be at least one to three tiers more powerful than they would normally be.\n\nOn the plus side, Magical Cores are a thing here, so unlike canon, people can suffer Magical Exhaustion which is to your benefit.",
+    "source": "",
+    "scope": "Quick",
+    "title": "So mote it be!",
+    "author": "Darkarma"
   },
   {
     "rewardType": "Credits",
@@ -343,7 +910,7 @@
         "value": "Cannot capture the Soul King (doing so means instant loss of existence)"
       }
     ],
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1038859810424246363/Screenshot_2.jpg",
     "budget": 1400,
     "objectives": [],
     "title": "Soul King Reborn",
@@ -408,7 +975,7 @@
     ],
     "budget": 500,
     "scope": "Quick",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1038860711578832916/159659-fantasy-art-fan-art-artwork-digital-art-concept-art-dragon-wizard-creature.jpg",
     "loca": "Generic",
     "conditions": [
       {
@@ -586,6 +1153,10 @@
     "uid": "qLAKM"
   },
   {
+    "uid": "DLdCx",
+    "scope": "Grand",
+    "title": "Offering from the Beyond",
+    "image": "https://stellaris.paradoxwikis.com/images/f/f5/Shroud_room.png",
     "conditions": [
       {
         "value": "You can't choose this contract if your chosen world is not a  mundane world.(magic free, Metashift can be used to make the contract available)"
@@ -594,15 +1165,11 @@
         "value": "You are Limited to Tier 6 Until the 10 Years are up or you succesfully awaken enough Psionics to reach 50%."
       }
     ],
-    "author": "Demontty",
-    "source": "",
-    "reward": "a Heritage Perk for free.",
-    "scope": "Grand",
     "objectives": [
       {
-        "reward": "gain Blessed Talent and 30 Credits",
         "value": " Reach 50% Psionic population on your world before 10 years are up.",
-        "type": "Perks"
+        "type": "Perks",
+        "reward": "gain Blessed Talent and 30 Credits"
       },
       {
         "reward": "50% off  Advanced Template Stacking(Arcane) ",
@@ -610,13 +1177,13 @@
         "type": "Perks"
       }
     ],
-    "loca": "Generic",
-    "title": "Offering from the Beyond",
-    "image": "https://stellaris.paradoxwikis.com/images/f/f5/Shroud_room.png",
+    "desc": "The Stellaris Shroud, a more toned down version of Warhammer 40k's warp and  regular customers of the Company. Incomprehensibly powerful ,they wish to enter other Galaxies and spread their influence into and soo they either attempt to do it themselves(the hard way, very energy intensive) or give gifts to the contractors of the company(preferably those that dont have alot of credits) to become the link to that Universe until they can establish a more permanent connection in exchange (depending on which Entity you choose the offering is different) they'll give you some nice boons to start off with and also change your world abit more, all they ask is to sit in your chosen world for 10 years until they establish a permanent connection to that universe. each year that passes 5% of the population will 'awaken' with psionic powers until it reaches 50%  after which youll be allowed to leave. Now let's get to the offerings each entity provides do note that by default you get a template stacking of Psionic  from all of them. (also as time goes on , Zro ,the psionic enhancing and highly addictive drug will become more common on your world with Deposits of it appearing out of nowhere)\nComposer of Strands:  Body Tune-up, Athletic Talent and Everlasting Talent for free. every year that passes a random plot relevant person gets Psionic powers Rated at Tier 6.( if there are no more plot relevant Characters then Composer will choose a random individual and will influence their path towards you)\nEater of Worlds: Martial Talent ,Psychic Talent and TS II for Psionic for free. Awakened Psionics start at  Tier 5. Every year there's a 50% chance a plot relevant character 'disappears'(read: gets eaten) as well as 2% of the non-powered population.\n Instrument of Desire : Soul Talent , Sticky Fingers and all Hypnosis App and Tantric Arts binding perks are 50% off. Every year that passes people become more needy and rebelious eventually leading to full-on rebellions , your most favorite Waifu from this World gains the Nymphomaniac trait.\nWhisperers in the Void : Covert Talent, Science Talent and Performance Talent or Communication talent. The First Psionics that awaken will be influenced to create a  Shadow Conspiracy Organization between eachother with the Sole purpose of secretly overthrowing all other governments and establishing themselves as the Global Government. The first Psionics start off at a higher tier than everyone else (Tier 6). Substance abuse(Specifically Zro) is more common in the Psionic Population",
+    "reward": "a Heritage Perk for free.",
     "rewardType": "Perks",
+    "loca": "Generic",
+    "source": "",
     "budget": 35,
-    "desc": "The Stellaris Shroud, a more toned down version of Warhammer 40k's warp and  regular customers of the Company. Incomprehensibly powerful ,they wish to enter other Galaxies and spread their influence into and soo they either attempt to do it themselves(the hard way, very energy intensive) or give gifts to the contractors of the company(preferably those that dont have alot of credits) to become the link to that Universe until they can establish a more permanent connection in exchange (depending on which Entity you choose the offering is different) they'll give you some nice boons to start off with and also change your world abit more, all they ask is to sit in your chosen world for 10 years until they establish a permanent connection to that universe. each year that passes 5% of the population will 'awaken' with psionic powers until it reaches 50%  after which youll be allowed to leave. Now let's get to the offerings each entity provides do note that by default you get a template stacking of Psionic  from all of them. (also as time goes on , Zro ,the psionic enhancing and highly addictive drug will become more common on your world with Deposits of it appearing out of nowhere)\nComposer of Strands:  Body Talent and Everlasting Talent for free. every year that passes a random plot relevant person gets Psionic powers Rated at Tier 6.( if there are no more plot relevant Characters then Composer will choose a random individual and will influence their path towards you)\nEater of Worlds: Martial Talent ,Psychic Talent and TS II for Psionic for free. Awakened Psionics start at  Tier 5. Every year there's a 50% chance a plot relevant character 'disappears'(read: gets eaten) as well as 2% of the non-powered population.\n Instrument of Desire : Soul Talent , Sticky Fingers and all Hypnosis App and Tantric Arts binding perks are 50% off. Every year that passes people become more needy and rebelious eventually leading to full-on rebellions , your most favorite Waifu from this World gains the Nymphomaniac trait.\nWhisperers in the Void : Covert Talent, Science Talent and Performance Talent or Communication talent. The First Psionics that awaken will be influenced to create a  Shadow Conspiracy Organization between eachother with the Sole purpose of secretly overthrowing all other governments and establishing themselves as the Global Government. The first Psionics start off at a higher tier than everyone else (Tier 6). Substance abuse(Specifically Zro) is more common in the Psionic Population",
-    "uid": "DLdCx"
+    "author": "Demontty"
   },
   {
     "title": "It's more of an omniversal fistula than an abyss, really",
@@ -1524,7 +2091,7 @@
     "budget": 5,
     "reward": "50",
     "source": "",
-    "loca": "Any",
+    "loca": "Generic",
     "title": "Assassinate the leader of a faction",
     "rewardType": "Credits",
     "desc": "Assassinate the leader of any pre-existing faction in your current world. This quest may be taken once per faction leader.",
@@ -1537,23 +2104,23 @@
     "uid": "oCtwv"
   },
   {
+    "source": "",
+    "uid": "NWrsT",
     "desc": "Become the leader of a faction. May be repeated once per each faction you join. May be taken with the \"Form a New Faction\" mission, but can only be considered complete when your new faction has more than 50 people or more than 12 members higher than Tier 6. Note, faction members may not become your familiars/companions until after they have joined the faction for the purposes of this mission (aka no building a peerage of devils and calling it a faction or just having your already acquired waifus become a new faction).",
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1032426658843590706/bouno-satoshi-hats-scarves-gloves-wallpaper.jpg",
+    "loca": "Generic",
+    "scope": "Quick",
+    "rewardType": "Credits",
+    "reward": "150",
     "author": "Ryeguy",
     "title": "Become the leader of a faction.",
-    "budget": 5,
-    "rewardType": "Credits",
-    "loca": "Any",
-    "scope": "Quick",
-    "source": "",
-    "reward": "150",
-    "objectives": [],
     "conditions": [
       {
-        "value": "Play a significant role in forming a new faction in your new world."
+        "value": "Become the leader of a faction in your new world."
       }
     ],
-    "uid": "NWrsT"
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1032426658843590706/bouno-satoshi-hats-scarves-gloves-wallpaper.jpg",
+    "objectives": [],
+    "budget": 5
   },
   {
     "rewardType": "Credits",
@@ -1569,7 +2136,7 @@
     ],
     "scope": "Quick",
     "author": "Ryeguy",
-    "loca": "Any",
+    "loca": "Generic",
     "objectives": [],
     "title": "Form a new Faction",
     "uid": "SpGTZ"
@@ -1578,7 +2145,7 @@
     "scope": "Quick",
     "desc": "Join any faction in your new world. May be repeated once per world.",
     "title": "Join a Faction",
-    "loca": "Any",
+    "loca": "Generic",
     "objectives": [],
     "author": "Ryeguy",
     "budget": 5,
@@ -2079,34 +2646,34 @@
     "uid": "MzEfX"
   },
   {
+    "author": "Ratcatcher",
     "conditions": [
       {
         "value": "You must seduce the main Protagonist of the \"canon\" of the worlds you enter (IE Ranma Saotome in Ranma 1/2, Usagi Tsukino in Sailor Moon, Bloom in Winx Club, etc). All means but full Binding are allowed (Bindings can be used to \"sped up\" things)."
       }
     ],
-    "loca": "Generic",
-    "objectives": [
-      {
-        "value": "The Protagonist has a canonical gender-bent form, and you seduce them in that form",
-        "reward": "Free TS 1&2 of their powerset for you or a member of your retinue",
-        "type": "Perks"
-      },
-      {
-        "type": "Credits",
-        "reward": "The target's full list price",
-        "value": "Seduce the Protagonist AND their canonical final love interest (IE Akane Tendo in Ranma 1/2, Mamoru Chiba in Sailor Moon, Sky in Winx Club, etc) through the same means as the main objective."
-      }
-    ],
-    "image": "https://cdn.donmai.us/original/38/d4/__suzumiya_haruhi_suzumiya_haruhi_no_yuuutsu_drawn_by_zen_kamuro__38d4bbf61551cc5e8b919fd23f6c2fd4.jpg",
     "source": "",
     "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "Free TS 1&2 of their powerset for you or a member of your retinue",
+        "type": "Perks",
+        "value": "The Protagonist has a canonical gender-bent form, and you seduce them in that form"
+      },
+      {
+        "reward": "Twice their combined list price",
+        "value": "Seduce the Protagonist AND their canonical final love interest (IE Akane Tendo in Ranma 1/2, Mamoru Chiba in Sailor Moon, Sky in Winx Club, etc) through the same means as the main objective.",
+        "type": "Credits"
+      }
+    ],
+    "loca": "Generic",
+    "uid": "yTSkj",
     "title": "Protagonist Seducer",
-    "reward": "The full list price of any Protagonist you seduce",
-    "rewardType": "Credits",
-    "author": "Ratcatcher",
-    "desc": "Let's face it, more often than not Protagonists are hot. We'd often want them as our lovers... And this is the mission: the goal is to seduce all the Protagonists you can throughout the multiverse.",
     "budget": 0,
-    "uid": "yTSkj"
+    "desc": "Let's face it, more often than not Protagonists are hot. We'd often want them as our lovers... And this is the mission: the goal is to seduce all the Protagonists you can throughout the multiverse.",
+    "image": "https://cdn.donmai.us/original/38/d4/__suzumiya_haruhi_suzumiya_haruhi_no_yuuutsu_drawn_by_zen_kamuro__38d4bbf61551cc5e8b919fd23f6c2fd4.jpg",
+    "rewardType": "Credits",
+    "reward": "The full list price of any Protagonist you seduce"
   },
   {
     "desc": "Okay so look dude, I really just wanna see if the meme is real and turning the Lady Squirrel into 'Hazel' will result in a more politically stable Camelot. So yeah, go out and grab that little squirrel and turn her into a human and make sure they can get together. She can be a mistress even, though that will likely make things a bit harder unless Guinevere really just wanted threesomes all along.",
@@ -6953,7 +7520,7 @@
     ],
     "desc": "Wait. Wha-\n\"Alrighty! So you want quests do yeah well I have a lot of ideas.\nHow about...Becoming a henchman! I reccomend it, the job really builds character. I'll even let you have your pick of the litter. You wanna tussle with superman under Lex maybe get some sweet Mercy? Or follow DOOM and learn the best way to toot a shell? What about dea-...Slade and fuck Robin and Terra? Maybe get a kiss from momma ivy for doing a goodjob? Try out a Harely while laughing and Joker's jokes? Hell work FOR Harely and kick the Joker in the balls! Go on! Have some real fun. Its why you're here.\"\n",
     "image": "https://pbs.twimg.com/media/Ew8hB6nWEAAJqWc.jpg",
-    "loca": "any superhero world",
+    "loca": "Any superhero world",
     "objectives": [
       {
         "reward": "50 points ",
@@ -7668,7 +8235,7 @@
   {
     "uid": "oLjhK",
     "reward": "1 TX ticket, 2500 credits toward demiplane/dungeons",
-    "loca": "Any",
+    "loca": "Generic",
     "scope": "Grand",
     "budget": 590,
     "conditions": [
@@ -7931,11 +8498,13 @@
     "uid": "oVHKO"
   },
   {
-    "rewardType": "Other",
-    "author": "Ratcatcher",
+    "loca": "Ranma ½",
     "conditions": [
       {
         "value": "Forage: only local captures can help"
+      },
+      {
+        "value": "You must Capture Saotome Ranma, the Tendo sisters, Shampoo, Kuonji Ukyo, and Kuno Kodachi."
       },
       {
         "value": "No overt mind control will work on your targets... Unless done by third parties. Subtler methods will work"
@@ -7950,37 +8519,38 @@
         "value": "Do not be discovered by Tendo Soun, Ranma's parents, Kuno Tatewaki, or Cologne until all targets have been captured (fulfilling additional objective #1 allows Cologne to find out without causing an automatic failure)."
       }
     ],
+    "desc": "Saotome Ranma is well known for two things aside his strength: the beautiful and powerful love interests he just can't decide on, and his own gender-changing curse. So we thought, why not seduce all of them? Your goal is to conquer the love of Saotome Ranma, his fiancees, and Tendo Nabiki and Kasumi.",
+    "title": "Fighter Stable",
+    "source": "",
+    "budget": 85,
+    "author": "Ratcatcher",
+    "reward": "Template Stacking 1 for Wei Wuxian (Grandmaster of Demonic Cultivation: Mo Dao Zu Shi) or 200 credits",
+    "rewardType": "Other",
     "objectives": [
       {
-        "value": "Seduce Cologne and Ninomiya Hinako through the same methods as the main mission",
         "reward": "TS1 as Happosai (Ranma ½) or 50 credits",
+        "value": "Seduce Cologne and Ninomiya Hinako through the same methods as the main mission",
         "type": "Other"
       },
       {
-        "type": "Companions",
+        "value": "Seduce Herb through the same methods as the main mission and make him renounce his manhood to be with you",
         "reward": "The twins Pink and Link",
-        "value": "Seduce Herb through the same methods as the main mission and make him renounce his manhood to be with you"
+        "type": "Companions"
       },
       {
-        "type": "Companions",
+        "value": "Seduce Rouge through the same methods as the main mission",
         "reward": "The twins Ling Ling & Lang Lang",
-        "value": "Seduce Rouge through the same methods as the main mission"
+        "type": "Companions"
       },
       {
+        "value": "Convince Saotome Nodoka that you did well making Ranma part of your retinue and have her seduced by Ranma herself",
         "type": "Credits",
-        "reward": "Twice the capture price",
-        "value": "Convince Saotome Nodoka that you did well making Ranma part of your retinue and have her seduced by Ranma herself"
+        "reward": "Twice the capture price"
       }
     ],
-    "loca": "Ranma ½",
-    "desc": "Saotome Ranma is well known for two things aside his strength: the beautiful and powerful love interests he just can't decide on, and his own gender-changing curse. So we thought, why not seduce all of them? Your goal is to conquer the love of Saotome Ranma, his fiancees, and Tendo Nabiki and Kasumi.",
-    "image": "https://i.ibb.co/S01k6Dz/sample-4c7416e9a4985448f69ff075d8cfa4f2.jpg",
-    "budget": 85,
     "uid": "djDJp",
     "scope": "Grand",
-    "source": "",
-    "reward": "Template Stacking 1 for Wei Wuxian (Grandmaster of Demonic Cultivation: Mo Dao Zu Shi) or 200 credits",
-    "title": "Fighter Stable"
+    "image": "https://i.ibb.co/S01k6Dz/sample-4c7416e9a4985448f69ff075d8cfa4f2.jpg"
   },
   {
     "author": "Sarrior",
@@ -10004,7 +10574,7 @@
     ],
     "desc": "<p>Survive for at least one month and until the end of one randomly selected mission without access to any new Company-related purchases (including new perks and companions) and available applications (including Exit Stage Left and Pocket Space and opening new portals).</p>\n    <p>Warning #1: If chosen mission placed in other world you will be forcefuly transported there. </p>\n    <p>Warning #2: Dying and then resurrection will count as this mission failure.</p>\n    <p>There is no penalty for failure to complete selected mission. You will be able to return to previous world after mission completion or failure.</p>",
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/992808915127504976/Screenshot_4.jpg",
-    "loca": "Any",
+    "loca": "Generic",
     "objectives": [],
     "reward": "100 points + chosen mission rewards",
     "scope": "Standard",

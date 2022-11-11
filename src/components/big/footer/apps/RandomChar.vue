@@ -1,10 +1,10 @@
 <template>
   <div class="p-2 flex flex-col items-center h-full">
-    <CompanionCard v-if="char.n" :char="char" :lazy="false" class="flex-grow" />
+    <CompanionCard v-if="char.n" :char="char" :lazy="false" class="flex-grow max-w-[400px]" />
     <div class="flex gap-2 self-center">
       <Button label="Random character" size="Small" bg-color="bg-orange-400" @click="getRandomChar" />
       <Checkbox v-model="withImg" label="Only with img" />
-      <NumberInput v-model="tier" :min="0" />
+      <NumberInput v-model="tier" :min="0" :max="11" />
     </div>
   </div>
 </template>

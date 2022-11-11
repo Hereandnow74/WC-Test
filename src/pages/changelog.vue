@@ -6,6 +6,34 @@
       </h2>
       <div>
         <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          9 November 2022
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~155 new user submitted characters, new worlds and missions.</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          5 November 2022
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~113 new user submitted characters, new worlds and missions.</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          2 November 2022
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~120 new user submitted characters, new worlds and missions.</li>
+          <li>A button to sort worlds by newly added.</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
           30 October 2022
         </h3>
         <ul class="list-decimal list-inside">

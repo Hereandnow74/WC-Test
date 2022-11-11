@@ -40,6 +40,7 @@ export const nicknames = [
   'Joe T.',
   'Cynicalto',
   'Zerlestes',
+  'Darkarma',
 ]
 
 export const WORLD_COLORS = ['bg-green-600', 'bg-teal-600', 'bg-cyan-600',
@@ -402,7 +403,7 @@ export async function getChars(): Promise<DBCharacter[]> {
 
 export async function getChanges() {
   if (isEmpty(changes.value))
-    changes.value = (await import('~/data/whatChanged/newChanges.json')).default
+    changes.value = (await import('~/data/whatChanged/9Changes.json')).default
 }
 
 getChanges()

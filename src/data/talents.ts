@@ -41,6 +41,20 @@ export const talentsDesc = 'Like all company-supplied powers, the powers granted
 export const talents: PerkFull[] = []
 
 talents.push({
+  uid: '1t7o3',
+  title: 'Body Tune-Up',
+  category: 'Talent',
+  image: 'https://i.ibb.co/fkqgJ8Z/Body-Talent.jpg',
+  cost: 5,
+  desc: `
+<p>You lift. Your body is now in perfect fitness and health, with significant muscle growth, within healthy human standards. If your natural height was less, you are now between 170 and 210 cm tall - or will be, if you aren’t yet fully grown. Your clothes are all resized and your muscle memory adjusted to fit. (You may opt out of this height boost.)</p>
+<p>In the event of a mismatch, your body will change to match your gender identity, reflecting what you might have looked like if you’d been born as such, unless you created or maintained a mismatch with your choice of targets for Substitute or Possess. You knew what you were getting into when you did that.</p>
+<p>All unwanted pre-existing medical conditions, from skin blemishes and unwanted body hair to chronic disease, missing limbs, detrimental genetic irregularities, and physical transformations are erased. (Cyborgs will find their reproductive system restored and augmentations optimized within their technological base.) This full heal will automatically trigger only once for each member of your retinue, including yourself: when you first purchase this perk or when the person joins your retinue, whichever happens second. You are immune to further minor illnesses, but not diseases or injuries. All healing or medical operations performed on you will complete without complications, residual pain, or unwanted scars.</p>
+<p>The individual benefits of this Talent may also apply, at your discretion, to any/all of your purchased and captured subjects. Unwanted conditions are erased according to your wants, not theirs. If you purchased Extra, Substitute, or Possess, this perk will be retroactively applied to your new body, with the exception noted above.</p>
+`,
+})
+
+talents.push({
   uid: 'nvlMp',
   title: 'Everlasting Talent',
   category: 'Talent',
@@ -52,17 +66,13 @@ talents.push({
 })
 
 talents.push({
-  uid: '1t7o3',
-  title: 'Body Talent',
+  uid: 'qcpHF',
+  title: 'Athletic Talent',
   category: 'Talent',
-  image: 'https://i.ibb.co/fkqgJ8Z/Body-Talent.jpg',
-  cost: 10,
-  desc: `
-<p>You lift. Your body is now in perfect fitness and health, with significant muscle growth, within healthy human standards. If your natural height was less, you are now between 170 and 210 cm tall - or will be, if you aren’t yet fully grown. Your clothes are all resized and your muscle memory adjusted to fit. (You may opt out of this height boost.) In the event of a mismatch, your body will change to match your gender identity, reflecting what you might have looked like if you’d been born as such, unless you created or maintained a mismatch with your choice of targets for Substitute or Possess. (You knew what you were getting into when you did that.)</p>
-<p>All unwanted pre-existing medical conditions, from skin blemishes and unwanted body hair to chronic disease, missing limbs, detrimental genetic irregularities, and physical transformations are erased. (Cyborgs will find their reproductive system restored and augmentations optimized within their technological base.) This full heal will automatically trigger only once for each member of your retinue, including yourself: when you first purchase Body Talent or when the person joins your retinue, whichever happens second.</p>
-<p>You are immune to further minor illnesses, but not diseases or injuries. All healing or medical operations performed on you will complete without complications, residual pain, or unwanted scars.</p>
-<p>Additionally, you can rapidly learn any non-supernatural athletic skills you encounter: acrobatics, physical sports, parkour, swimming, etc. Skills directly related to combat fall under Martial Talent instead, while supernatural extensions of skill are affected by Psychic or Soul Talents. This is an experience and skill acquisition multiplier, not a flat improvement, and scales to the strength and skill of your opponents and trainers: the better they are than you, the faster you learn, until you’ve caught up to them.</p>
-<p>The individual benefits of this Talent may also apply, at your discretion, to any/all of your purchased and captured waifus. Unwanted conditions are erased according to your wants, not theirs. If you purchased Extra, Substitute, or Possess, this perk will be retroactively applied to your new body, with the exception noted above.</p>`,
+  image: '',
+  cost: 5,
+  desc: `You can rapidly learn any non-supernatural athletic skills you encounter: acrobatics, physical sports, parkour, swimming, etc. Skills directly related to combat fall under Martial Talent instead, while supernatural extensions of skill are affected by Psychic, Soul, or other Talents. This is an experience and skill acquisition multiplier, not a flat improvement, and scales to the strength and skill of your opponents and trainers: the better they are than you, the faster you learn, until you’ve caught up to them.
+  `,
 })
 
 talents.push({
@@ -90,7 +100,7 @@ talents.push({
   image: 'https://i.ibb.co/2snqdq0/Science-Talent.jpg',
   cost: 20,
   additionalDesc: `
-  To unlock new types of scientific magic beyond "styles anyone can use" and whatever might be unlocked by your Extra, Substitute, or Possess origin, use Added Potential. Advanced Template Stacking (Arcane), or various Heritage perks.
+  To unlock new types of scientific magic beyond “styles anyone can use” and whatever might be unlocked by your Extra, Substitute, or Possess origin, use Added Potential or various Heritage perks.
   `,
   desc: `You know. You can keep up with scientific babble, operate any computer, smart device, or vehicle as if you grew up with it, and rapidly learn any scientific magic you encounter and are capable of using. This is an experience and skill acquisition multiplier, not a flat improvement, and scales to the strength and skill of your opponents and trainers: the better they are than you, the faster you learn, until you’ve caught up to them.
   <p>Many magical styles benefit from both Science and Soul Talents. In these cases, Science Talent helps you build skill and finesse, for improved spell complexity.</p>`,
@@ -142,7 +152,7 @@ talents.push({
   image: 'https://i.ibb.co/MsvBc4N/Soul-Talent.jpg',
   cost: 10,
   additionalDesc: `
-  To unlock new types of mystical arts beyond “styles anyone can use* and whatever might be unlocked by your Extra, Substitute, or Possess origin, use Added Potential, Advanced Template Stacking (Enlightened), Advanced Template Stacking (Green), or various Heritage perks.
+  To unlock new types of personal mystical arts beyond “styles anyone can use” and whatever might be unlocked by your Extra, Substitute, or Possess origin, use Added Potential or various Heritages.
   `,
   desc: `You feel. You have prodigious talent for ki arts (aura, chi, Hamon, Phonic Gain, Spiral Power, etc.) and magic and will rapidly learn any such mystical arts you encounter and are capable of using. Unlike the buffs from Heritage or Shroud elements,  this is an experience and skill acquisition multiplier, not a flat improvement. This effect scales to the strength and skill of your opponents and trainers: the better they are than you, the faster you learn, until you’ve caught up to them. This does not apply to purely scientific forms of magic.
   <p>Many magical styles benefit from both Soul and Science Talents. In these cases, Soul Talent improves your improvisation ability and raw power.</p>`,
@@ -161,11 +171,26 @@ talents.push({
 })
 
 talents.push({
+  uid: 'PGFje',
+  title: 'Land Talent',
+  category: 'Talent',
+  image: '',
+  cost: 30,
+  whitelist: ['Wild Talent', 'Soul Talent'],
+  desc: `
+<p>You are one with the environment. You have additional prowess with magical styles that draw mystical power from one’s surroundings. This includes, but is not limited to, Warhammer’s Winds, a Planeswalker’s Lands, Geomancy, or anything powered by leylines or background magical fields. These arts and styles are more effective and easier to control.</p>
+<p>Your green thumb also extends to agriculture, mining, and other forms of resource gathering. This is an experience and skill acquisition multiplier, not a flat improvement, and scales to the strength and skill of your opponents and trainers: the better they are than you, the faster you learn, until you’ve caught up to them.</p>`,
+})
+
+talents.push({
   uid: 'OQ6SY',
   title: 'Psychic Talent',
   category: 'Talent',
   image: 'https://i.ibb.co/cJnMd28/Psychic-Talent.jpg',
   cost: 20,
+  additionalDesc: `
+  To unlock new types of ambient mystical arts beyond “styles anyone can use” and whatever might be unlocked by your Extra, Substitute, or Possess origin, use Added Potential or various Heritages.
+  `,
   desc: `
 <p>You think. You have prodigious psychic talent and can rapidly learn any psychic abilities you encounter: from the telepathy and telekinesis that are so common in otherwise-hard sci-fi to Academy City esper powers, Biotics, and even the extremes typical of western comic-book psychics. This applies to any supernatural ability with neither magical nor technological trappings, or is not otherwise covered by Science, Engineering, Soul, or Blessed Talents.</p>
 <p>This perk does not make you a perfect, unlimited power copier. If an ability requires a specific organic component, you must still acquire it by other means.</p>
@@ -181,7 +206,7 @@ talents.push({
   cost: 10,
   desc: `
 <p>You lie, cheat, and steal. You have a prodigious talent for larceny, trespassing, theft, espionage, counterintelligence, and other forms of covert activity, whether it’s performed on a government’s dime or not. You can disappear into any crowd, no matter how sparse.</p>
-<p>This synergizes with many other Talents. For example, with Engineering Talent, you can learn to hack any device. With Communication or Performance Talents, you can grift the best con artists out of their money. With Aesthetic Talent, you can make perfect forgeries of any artist’s style. Body Talent’s boost to athleticism also synergizes with this perk.</p>
+<p>This synergizes with many other Talents. For example, with Engineering Talent, you can learn to hack any device. With Communication or Performance Talents, you can grift the best con artists out of their money. With Aesthetic Talent, you can make perfect forgeries of any artist’s style. Body Tune-Up’s boost to athleticism also synergizes with this perk.</p>
 <p>This is an experience and skill acquisition multiplier, not a flat improvement, and scales to the strength and skill of your opponents, rivals, and trainers: the better they are than you, the faster you learn, until you’ve caught up to them.</p>`,
 })
 
@@ -289,6 +314,7 @@ talents.push({
   uid: 'LhG7H',
   title: 'Advanced Template Stacking (Arcane)',
   category: 'Talent',
+  legacy: true,
   image: 'https://i.ibb.co/Htm5DvK/Advanced-Template-Stacking-Arcane.jpg',
   cost: 100,
   complex: 'target',
@@ -302,10 +328,11 @@ talents.push({
   uid: 'zHT96',
   title: 'Advanced Template Stacking (Enlightened)',
   category: 'Talent',
+  legacy: true,
   image: 'https://i.ibb.co/gdHJ4n1/Advanced-Template-Stacking-Enlightened.jpg',
   cost: 100,
   complex: 'target',
-  whitelist: ['Psychic Talent', 'Body Talent', 'Martial Talent', 'Soul Talent'],
+  whitelist: ['Psychic Talent', 'Body Tune-Up', 'Martial Talent', 'Soul Talent'],
   needed: 2,
   desc: `
 <p>The entire spectrum of ki arts and personal mystical powers are now available to you without further restriction. You must still encounter any such arts and styles before you can use them, whether in the field, buying them with Template Stacking, or through the purchase of a retinue member who has one. Additionally, such arts and styles are more effective and easier to control. This also applies to the inner powers gained from certain Heritages.</p>
@@ -316,6 +343,7 @@ talents.push({
   uid: 'yfzjc',
   title: 'Advanced Template Stacking (Green)',
   category: 'Talent',
+  legacy: true,
   image: 'https://i.ibb.co/x5ykynX/Advanced-Template-Stacking-Green.jpg',
   cost: 100,
   complex: 'target',
@@ -350,10 +378,10 @@ defenses.push({
   special: '<Individual> is known for working with diseases, chemical medicine, or poisons.',
   image: 'https://i.ibb.co/kgWFFz9/Body-Defense.jpg',
   cost: 5,
-  whitelist: ['Body Talent'],
+  whitelist: ['Body Tune-Up'],
   desc: `
 <p>You have protection from all diseases, toxins, and targeted radiation. Lethal or crippling afflictions will leave you sick enough to most likely stay in bed, unless you really have to move - because you're attacked, for example. Anything short of that will leave you weakened and uncomfortable, but functional.</p>
-<p>Additionally, you get an extra one-time full heal, identical to the one offered by Body Talent, with each purchase of this Defense. These are counted separately for each member of your retinue, including yourself and anyone acquired after the purchase of this Defense. These may be kept for future use.</p>
+<p>Additionally, you get an extra one-time full heal, identical to the one offered by Body Tune-Up, with each purchase of this Defense. These are counted separately for each member of your retinue, including yourself and anyone acquired after the purchase of this Defense. These may be kept for future use.</p>
 <p>This perk still does not protect against injury or provide any sort of healing factor; if you want one, you’ll have to find it yourself.</p>`,
 })
 
@@ -642,7 +670,7 @@ perks.push({
   max: 8,
   whitelist: ['Fertility Calibration I'],
   desc: `You can now ensure that a sexual encounter involving anyone in your retinue will result in twins. This perk may be purchased up to eight times, with each purchase allowing you to guarantee up to twice as many fetuses: second purchase quadruplets, third purchase octuplets, fourth purchase 16, etc. This perk does not apply to Symbiote larvae or other spawn with a different body structure than yourself.
-  <p>A sufficiently large pregnant belly will count as an opponent for the purpose of the athletic training portion of Body Talent.</p>`,
+  <p>A sufficiently large pregnant belly will count as an opponent for the purpose of the athletic training portion of Body Tune-Up.</p>`,
 })
 
 // Navigation Perks
@@ -973,7 +1001,7 @@ genericPerks.push({
   category: 'Generic',
   requires: 'Any Keyblade wielder',
   complex: 'target',
-  image: '',
+  image: 'https://cdn.discordapp.com/attachments/925963686433132644/1033791989826727956/d3jfqpd-7d7a16a8-8d1e-4e12-b2dc-9457daabb97e.jpg',
   cost: 1000,
   desc: `
   The Origin of Keyblades, the Ⲭ-Blade is the companion to the True Kingdom Hearts, and the only blade which can open its door. With this perk, your Keyblade wielding character (yourself included, if you have a Keyblade) can now summon the legendary blade itself. With it, you can call upon both its powers and the powers of Kingdom Hearts itself by summoning it. 
@@ -1012,7 +1040,7 @@ genericPerks.push({
   requires: 'Any Date A Live spirit',
   complex: 'target',
   cost: 40,
-  image: '',
+  image: 'https://cdn.discordapp.com/attachments/925963686433132644/1033792517285609612/ddquv43-e31deade-e61e-46bc-ade1-d6f4d80a5594.png',
   desc: 'The Spirit can now enter her Inverse Form, greatly increasing her strength and changing her Angel into a Demon King. The Spirit will remain in full control of herself. This perk may be applied to any Spirit from Date A Live, including those who lack a canonical Inverse Form or aren’t listed in the catalog as Spirits. This perk is free if you capture the Spirit while she’s in her Inverse Form, or if she unlocks it herself by force.',
 })
 
@@ -1059,7 +1087,7 @@ genericPerks.push({
   category: 'Generic',
   requires: 'any Monster Girl Encyclopedia Greenworm',
   complex: 'target',
-  image: '',
+  image: 'https://cdn.discordapp.com/attachments/925963686433132644/1033793382444707871/Screenshot_2.png',
   cost: 5,
   desc: `
 <p>The Greenworm’s youthful appearance comes from her nature as the larval forms of Papillon, a butterfly mamono. This perk skips the natural maturation process, immediately converting the target Greenworm into a Papillon. All Greenworms qualify for this perk, whether they’re naturally- born or converted from another race by natural means, Power Swap, or Template Stacking.</p>`,
@@ -1071,7 +1099,7 @@ genericPerks.push({
   category: 'Generic',
   requires: 'any Monster Girl Encyclopedia Lesser Succubus',
   complex: 'target',
-  image: '',
+  image: 'https://cdn.discordapp.com/attachments/925963686433132644/1033793960184926218/yande.re_907602_sample_devil_horns_lilim_monster_girl_encyclopedia_monster_girl_encyclopedia_no_bra_pointy_ears_veralde_wings.jpg',
   cost: 40,
   desc: `
 <p>Any Lesser Succubus will eventually mature into the full-blooded variant with enough time and sexual energy intake. This perk skips the natural maturation process, immediately converting the target into a full Succubus. All Lesser Succubi qualify for this perk, whether they’re naturally-born or converted from another race by natural means, Power Swap, or Template Stacking.</p>`,
@@ -1083,7 +1111,7 @@ genericPerks.push({
   category: 'Generic',
   requires: 'any Monster Girl Encyclopedia Mamono, except for Lilims and the Demon Lord',
   complex: 'target',
-  image: '',
+  image: 'https://cdn.discordapp.com/attachments/925963686433132644/1033794994143764560/sss.png',
   cost: 200,
   desc: `
   The iconic Lilims are all Succubi, but the term simply applies to any daughter of the Demon Lord. In theory, any mamono, of any breed, could be elevated to the role. The Queen of Hearts is a Lilim Alice, for example.

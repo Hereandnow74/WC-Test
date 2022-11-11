@@ -25,7 +25,7 @@ const { localUserCharacters } = useStore()
 function importChars() {
   const chars = JSON.parse(charData.value)
   if (isArray(chars)) {
-    localUserCharacters.value = chars
+    localUserCharacters.value.push(...chars)
     message.value = 'Successfully imported characters'
   }
 }

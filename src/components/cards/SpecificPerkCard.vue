@@ -130,7 +130,7 @@ const gachaTable = [
   [1000, 2677],
 ]
 
-const { settings, waifuPerks, companionsByUID, companions, companionsUIDs } = useStore()
+const { settings, waifuPerks, companionsByUID, companions, companionsUIDs, startingOrigin } = useStore()
 
 const waifuList = computed(() => {
   let res = {} as Record<string, number>

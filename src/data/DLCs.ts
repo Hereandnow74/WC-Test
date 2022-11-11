@@ -145,6 +145,21 @@ DLCgenericPerks.push({
 // Misc DLC Perks
 
 export const DLCperks: DLCPerk[] = []
+
+DLCperks.push({
+  uid: 'hRlCG',
+  dlc: 'Despin',
+  category: 'Misc Perk',
+  dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
+  title: 'Presentation',
+  image: 'https://cdn.discordapp.com/attachments/925963686433132644/1035675422098202744/Screenshot_1.jpg',
+  cost: 30,
+  desc: `
+  Through a mix of perception alteration and minor reality alteration, the world itself seems to aid you in presenting the bearing you intend. From making you seem supernaturally beautiful, always being seen or recorded from a flattering angle and lighting, your dramatic declarations echoing even on an open field, etc. At your discretion, this perk can also allow situational coincidences such as relevant music to start playing or lightning to strike dramatically behind you as you cackle.
+  `,
+  whitelist: ['Communication Talent'],
+})
+
 DLCperks.push({
   uid: 'GsCat',
   dlc: 'CelestialDragon DLC',
@@ -474,20 +489,6 @@ DLChomes.push({
 export const DLCtalents: DLCPerk[] = []
 
 DLCtalents.push({
-  uid: 'hRlCG',
-  dlc: 'Despin',
-  category: 'Home',
-  dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
-  title: 'Presentation',
-  image: 'https://i.ibb.co/vmN3jBY/Presence.jpg',
-  cost: 30,
-  desc: `
-  Through a mix of perception alteration and minor reality alteration, the world itself seems to aid you in presenting the bearing you intend. From making you seem supernaturally beautiful, always being seen or recorded from a flattering angle and lighting, your dramatic declarations echoing even on an open field, etc. At your discretion, this perk can also allow situational coincidences such as relevant music to start playing or lightning to strike dramatically behind you as you cackle.
-  `,
-  whitelist: ['Communication Talent'],
-})
-
-DLCtalents.push({
   uid: 'AOY9D',
   dlc: 'Doomsought',
   category: 'Home',
@@ -728,7 +729,10 @@ DLCotherControls.push({
   category: 'Other Controls',
   image: 'https://cdn.discordapp.com/attachments/925963686433132644/1015230828122472459/HSSM.webp',
   cost: 120,
-  desc: `All those synced to the Grail System get further boosted to be fully on the level of at least a Low Class Servant. You and your retinue gain the Body, Martial, Science, and Soul Talents. (Take these four perks, plus Talent Sharing (Martial), Talent Sharing (Science) and Talent Sharing (Soul), for free.) You also gain Body, and Wild Defenses for free as well. 
+  freebies: {
+    talentPerks: [{ title: 'Body Tune-Up', cost: 0, count: 1 }, { title: 'Martial Talent', cost: 0, count: 1 }, { title: 'Science Talent', cost: 0, count: 1 }, { title: 'Soul Talent', cost: 0, count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Martial Talent' }], count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Soul Talent' }], count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Science Talent' }], count: 1 }],
+  },
+  desc: `All those synced to the Grail System get further boosted to be fully on the level of at least a Low Class Servant. You and your retinue gain the Body Tune-Up, Martial, Science, and Soul Talents. (Take these four perks, plus Talent Sharing (Martial), Talent Sharing (Science) and Talent Sharing (Soul), for free.) You also gain Body, and Wild Defenses for free as well. 
   <p>Each member may permanently gain the effect of a Class Card they have access to. Unlike Class Cards however, this is a fixed choice, and must be in theme with that companion’s personality, skill, and current affinities. Those who would otherwise qualify for multiple classes may decide to switch classes via a ritual that requires being without a class for more than 24 hours, after which a new class may be selected.</p>
   <p>Reaching the level of a Demi-Servant further enhances the senses, strength, agility, and durability of a companion, boosting their tier by  +3 for Blue-stars, +2 for Copper-star, and +1 for Silver-stars. This replaces Grail System’s boost, and explicitly does not stack with boosts from other binding methods. Only use the largest Step 5 boost. In addition, the Tier for which you may use a Command Seal to halve the time to complete the binding of a waifu increases by 1. TX targets remain immune to this effect.</p>
   <p>Class Cards may still be used on companions with a chosen Demi-Servant class, and will add the Class Card enhancements and special skill to those granted by becoming a Demi-Servant. This explicitly allows a companion to either have a dual class effect, or double the strength of the current  one.</p>

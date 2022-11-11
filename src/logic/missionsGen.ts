@@ -58,13 +58,13 @@ export class MissionGenerator {
       'You must use locals as an proxy to kill your target',
     ]
 
-    const targets = this.allChars.value.filter(x => x.b && x.b.includes('ev'))
+    const targets = this.allChars.value.filter(x => x.b && x.b.some(x => ['ev', 'vn'].includes(x)) && x.t >= 4)
     const target = sample(targets)
     this.title = 'Kill Someone'
     if (target) {
       this.scope = 'Quick'
       this.title = `Eliminate: <i>${target.n}</i>`
-      this.description = `Eliminate <b>${target.n}</b>(T${target.t}) from <b>${target.w}</b>, they definitely deserve it or not, who cares!`
+      this.description = `Eliminate <b>${target.n}</b>(T${target.t}) from <b>${target.w}</b>, they definitely deserve it, or not, who cares!`
       this.conditions = [{ value: sample(conditions) as string }]
       this.loca = target.w
       this.reward = 'Half of the listed target cost'

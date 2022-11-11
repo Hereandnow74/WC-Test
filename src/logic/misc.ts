@@ -252,11 +252,20 @@ export function copyText() {
   full += pvpPerks.value.length ? `${buildString('Orbs', pvpPerks.value, fullCost)}\n` : ''
 
   fullCost.c -= startingOrigin.value.cost || 0
-  full += originTextClean.value ? `${originTextClean.value} -${startingOrigin.value.cost} [${fullCost.c}]\n\n` : ''
+  full += originTextClean.value ? `${originTextClean.value} -${startingOrigin.value.cost} [${fullCost.c}]\n` : ''
+  if (startingOrigin.value.swap) {
+    fullCost.c -= (startingOrigin.value.swap.cost - startingOrigin.value.swap.refund) || 0
+    full += `Power Swap to ${startingOrigin.value.swap.name}(T${startingOrigin.value.swap.tier}) ${startingOrigin.value.swap.cost - startingOrigin.value.swap.refund} [${fullCost.c}]\n`
+  }
+  if (startingOrigin.value.perk) {
+    fullCost.c -= (startingOrigin.value.perk.cost - startingOrigin.value.perk.refund) || 0
+    full += `Waifu Perk ${startingOrigin.value.perk.title}(T${startingOrigin.value.perk.tier}) ${startingOrigin.value.perk.cost - startingOrigin.value.perk.refund} [${fullCost.c}]\n`
+  }
   if (usedHeritageDiscount.value > 0) {
     fullCost.c += usedHeritageDiscount.value
     full += `Discounted because of your archetype +${usedHeritageDiscount.value} [${fullCost.c}]\n`
   }
+  full += '\n'
   full += heritage.value.length ? `${buildString('Heritage', heritage.value, fullCost)}\n` : ''
   full += binding.value.length ? `${buildString('Bindings', binding.value, fullCost)}\n` : ''
   full += luresBought.value.length ? `${buildString('Lures', luresBought.value, fullCost)}\n` : ''

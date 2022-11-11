@@ -557,7 +557,7 @@
         "a": "c"
       }
     ],
-    "additional": "Micronization: Zentraedi and Meltrandi characters are Microne (human)-sized by default. The presence of one will add a Micronization chamber to your Grand Manor, if you have one. Advanced Tempest Runes (Body) allows them, and any other member of our retinue who’s used a Micronization chamber, to shift between Microne and Macrone forms on the fly. Body Talent is enough to let Klan Klein maintain her adult figure while micronized. Additionally, all Zentraedi and Meltrandi combatants have a personal Pocket Space for their battlesuits. Battlesuits stored this way will automatically resize themselves to fit their wearer, regardless of whether the wearer is in Microne or Macrone form. Other: Mylene has her pet… tribble(?) Guvava as a familiar. We don’t actually know what Guvava is, just that it’s cute and fuzzy. Ranka has her squirrel-like pet Ai-kun as a familiar.",
+    "additional": "Micronization: Zentraedi and Meltrandi characters are Microne (human)-sized by default. The presence of one will add a Micronization chamber to your Grand Manor, if you have one. Advanced Tempest Runes (Body) allows them, and any other member of our retinue who’s used a Micronization chamber, to shift between Microne and Macrone forms on the fly. Body Tune-Up is enough to let Klan Klein maintain her adult figure while micronized. Additionally, all Zentraedi and Meltrandi combatants have a personal Pocket Space for their battlesuits. Battlesuits stored this way will automatically resize themselves to fit their wearer, regardless of whether the wearer is in Microne or Macrone form. Other: Mylene has her pet… tribble(?) Guvava as a familiar. We don’t actually know what Guvava is, just that it’s cute and fuzzy. Ranka has her squirrel-like pet Ai-kun as a familiar.",
     "image": "https://cdn.donmai.us/sample/68/26/__vf_1_and_vf_1a_macross_and_1_more_drawn_by_myonmyon_kai__sample-6826d3e3c39f68db7faa07f45e534549.jpg"
   },
   {
@@ -1015,7 +1015,7 @@
   },
   {
     "rating": 5,
-    "worldName": "Final Fantasy XV",
+    "worldName": "Final Fantasy 15",
     "condition": [
       {
         "name": "pre-crystal",
@@ -1037,7 +1037,7 @@
   },
   {
     "rating": 5,
-    "worldName": "Final Fantasy XIV",
+    "worldName": "Final Fantasy 14",
     "condition": [
       {
         "name": "The Source",
@@ -1224,6 +1224,10 @@
         "rating": 5
       },
       {
+        "name": "Xillia 2",
+        "rating": 7
+      },
+      {
         "name": "Zestria",
         "rating": 5
       },
@@ -1253,7 +1257,7 @@
   {
     "rating": 6,
     "worldName": "To Aru series",
-    "additional": "<p>Misaka Network: The purchase just gives you Misaka Worst and Last Order. If you have Grand Manor or a Catch-a-Ride large enough to contain one, a Misaka cloning facility will appear within the structure within which you can grow the other 20,000. This replaces Warranty Plan, which instead only covers Misaka Worst and Last Order; designating which vat each numbered Misaka is to be re-grown in will ensure that she resleeves properly. Without Grand Manor or a large enough Catch-a-Ride, numbered Misakas will only return to your service one at a time, by the standard Warranty Plan rules. The full heal from Body Talent and Body Defense can be triggered for each Misaka sister individually. The Will of your Misaka Network will eventually spawn on her own. Dolly is not one of the 20,002 networked Misakas, but can join the Network if you have it.</p><p>Others: Frenda Seivelun has a personal Pocket Space in her skirt, equal in size to the one offered to contractors, where can store her explosives and other weapons. If Kuriba Ryouko rebuilds her Doppelganger, she can transfer its consciousness to its new body without complications. Esper power training benefits from Psychic Talent’s feedback loops if at least two Espers whom the perk applies to train together, even if their powers are wildly different and the principles behind one can’t be directly applied to the other.</p>",
+    "additional": "<p>Misaka Network: The purchase just gives you Misaka Worst and Last Order. If you have Grand Manor or a Catch-a-Ride large enough to contain one, a Misaka cloning facility will appear within the structure within which you can grow the other 20,000. This replaces Warranty Plan, which instead only covers Misaka Worst and Last Order; designating which vat each numbered Misaka is to be re-grown in will ensure that she resleeves properly. Without Grand Manor or a large enough Catch-a-Ride, numbered Misakas will only return to your service one at a time, by the standard Warranty Plan rules. The full heal from Body Tune-Up and Body Defense can be triggered for each Misaka sister individually. The Will of your Misaka Network will eventually spawn on her own. Dolly is not one of the 20,002 networked Misakas, but can join the Network if you have it.</p><p>Others: Frenda Seivelun has a personal Pocket Space in her skirt, equal in size to the one offered to contractors, where can store her explosives and other weapons. If Kuriba Ryouko rebuilds her Doppelganger, she can transfer its consciousness to its new body without complications. Esper power training benefits from Psychic Talent’s feedback loops if at least two Espers whom the perk applies to train together, even if their powers are wildly different and the principles behind one can’t be directly applied to the other.</p>",
     "image": "https://i.pinimg.com/originals/5c/84/1c/5c841c3b794af5e12afb42640a2b6f65.jpg"
   },
   {
@@ -1613,7 +1617,7 @@
     "rating": 6,
     "q": true,
     "worldName": "Fate/Apocrypha",
-    "additional": "Body Talent will cure Fiore’s paralysis without requiring her to lose her Magic Circuits.",
+    "additional": "Body Tune-Up will cure Fiore’s paralysis without requiring her to lose her Magic Circuits.",
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/992398557103542432/Fate-Apocrypha-avis-0000.jpg"
   },
   {
@@ -1891,12 +1895,12 @@
   },
   {
     "rating": 7,
-    "worldName": "Final Fantasy VII",
+    "worldName": "Final Fantasy 7",
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/993190678043574282/2588316.webp"
   },
   {
     "rating": 7,
-    "worldName": "Final Fantasy IX",
+    "worldName": "Final Fantasy 9",
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/993191005576773683/2kUthW.webp"
   },
   {
@@ -1990,7 +1994,7 @@
         "rating": 6
       }
     ],
-    "additional": "Cortana will be plugged into your smart device. The Tier 5 version of her reflects her status at the end of the original trilogy. Body Talent will give Spartans a functioning sex drive.",
+    "additional": "Cortana will be plugged into your smart device. The Tier 5 version of her reflects her status at the end of the original trilogy. Body Tune-Up will give Spartans a functioning sex drive.",
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/992407717371183175/Halo-Infinite-Chief-Weapon-scaled.jpg"
   },
   {
@@ -2134,7 +2138,7 @@
   },
   {
     "rating": 8,
-    "worldName": "Final Fantasy X",
+    "worldName": "Final Fantasy 10",
     "additional": "Summons (general): Summons that you purchase or capture separately from their summoners will become active full-time; the summoner’s call will instead teleport them to her location. All of your summoners share the same summon pool. Summons that appeared in many different games will have your preferred design, not necessarily the one that matches the first summoner you purchased or captured. Summons (non-humanoid): Non-humanoid summons, including Phoenix, Valefor, and Anima, can switch between their humanoid and original forms at will. Anima’s human form can't use Pain or Oblivion, but knows all generic skills/spells from FFX by default. Her Aeon form is mobile, with no chains and a complete lower body. Her original lower half, 'the Shadow,' has its own complete lower body and lives in an explicit pocket universe. Oblivion feeds a target to the Shadow like normal. Anima may also temporarily switch places with her Shadow; this tends to result in extreme collateral damage. Other: White Mage has her 8-Bit Theater characterization. If you have a waifu from FFV, the four Crystals will spawn not too far out of your way, allowing you and your waifus access to the game’s job system. Lenna Tycoon has the wind drake Hiryu as a familiar - likewise for the other two female party members from FFV: Faris Scherwiz and her sea dragon Syldra, and Krile and her own wind drake that has no canon name. If you have at least one waifu from FFVII and Life’s a Beach or Grand Manor, Mako Springs will appear in your Home and produce natural Materia at an accelerated rate. If you visit Spira or have at least one waifu from FFX, you and all of your retinue will gain Sphere Grids; this may be one single shared grid, several grids shared by subsets of your retinue, or individual grids for everyone. Lightning, Vanille, and Fang have Odin, Hecatoncheir, and Bahamut, respectively.",
     "condition": [
       {
@@ -2147,7 +2151,7 @@
   },
   {
     "rating": 8,
-    "worldName": "Final Fantasy VIII",
+    "worldName": "Final Fantasy 8",
     "condition": [
       {
         "name": "Permanent crisis",
@@ -2231,22 +2235,22 @@
     "condition": [
       {
         "rating": 8,
-        "name": "Standard",
-        "a": "c"
-      },
-      {
-        "rating": 7,
         "name": "1999 CE",
         "a": "c"
       },
       {
         "rating": 7,
-        "name": "Zeal (12)",
+        "name": "Zeal (12,000 BCE)",
         "a": "c"
       },
       {
         "rating": 6,
-        "name": "65",
+        "name": "65,000,000 BCE",
+        "a": "c"
+      },
+      {
+        "rating": 6,
+        "name": "2300 CE",
         "a": "c"
       },
       {

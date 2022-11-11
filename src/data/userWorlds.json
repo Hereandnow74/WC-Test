@@ -2713,7 +2713,7 @@
   },
   {
     "worldName": "Back 4 Blood",
-    "rating": 7,
+    "rating": 5,
     "image": "https://www.gamesvillage.it/wp-content/uploads/2021/03/back-4-blood-art_jpg_1400x0_q85.jpg"
   },
   {
@@ -3234,17 +3234,7 @@
     "rating": 10,
     "image": "https://i.pinimg.com/736x/08/aa/f5/08aaf5998e9fda76cf4c810900a7d6ca.jpg"
   },
-  {
-    "worldName": "Mistborn",
-    "rating": 7,
-    "condition": [
-      {
-        "rating": 10,
-        "name": "After Book 2"
-      }
-    ],
-    "image": "https://i.pinimg.com/originals/e4/ef/7c/e4ef7c12ecb245ca74f06ba9dca19ffc.jpg"
-  },
+  {"worldName":"Cosmere","rating":6,"image":"https://i.pinimg.com/originals/e4/ef/7c/e4ef7c12ecb245ca74f06ba9dca19ffc.jpg","additional":"For each world, increase the DR of the matching Cognitive Realm by 1. For Sel's Cognitive Realm increase the DR by +3.","condition":[{"rating":6,"name":"Scadrial - Lord Ruler's Reign (Mistborn 1)"},{"name":"Scadrial - Post Lord Ruler (Mistborn 2/3)","rating":8},{"rating":5,"name":"Scadrial - Harmony (Wax & Wayne)"},{"rating":4,"name":"Sel - Post Splintering (Elantris & tES)"},{"rating":3,"name":"Nalthis - Court of Gods (Warbreaker)"},{"rating":7,"name":"Taldain - Dayside (White Sand)"},{"rating":7,"name":"Roshar - Prior Desolations (Way of Kings)"},{"name":"Roshar - Pre-Assassination (Way of Kings)","rating":5},{"name":"Roshar - Reckoning (Way of Kings)","rating":6},{"name":"Roshar - Everstorm (Oathbringer)","rating":8},{"name":"Threnody - Anytime (SoSitFoH)","rating":6},{"name":"First of the Sun - Anytime","rating":4}]},
   {
     "worldName": "Rakudai Kishi no Cavalry",
     "rating": 6,
@@ -3388,24 +3378,24 @@
     ]
   },
   {
-    "worldName": "Final Fantasy I-IV",
+    "worldName": "Final Fantasy 1-4",
     "rating": 5,
     "condition": [
       {
-        "name": "Final Fantasy I",
+        "name": "Final Fantasy 1",
         "rating": 5
       },
       {
-        "name": "Final Fantasy  II",
+        "name": "Final Fantasy  2",
         "rating": 5
       },
       {
         "rating": 6,
-        "name": "Final Fantasy III"
+        "name": "Final Fantasy 3"
       },
       {
         "rating": 6,
-        "name": "Final Fantasy IV"
+        "name": "Final Fantasy 4"
       }
     ],
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/993189733616341202/capsule_616x353.jpg"
@@ -4985,12 +4975,22 @@
   {"worldName":"Black Rock Shooter","rating":7,"image":"https://cdn.donmai.us/original/46/9d/__black_rock_shooter_dead_master_strength_and_black_gold_saw_black_rock_shooter_drawn_by_iceky__469dd0d58cce3d5d285912902d4c3501.jpg","additional":"All humans have their Otherselves as familiars. If you already have the otherself when you buy their human counterpart, you’ll be refunded the appropriate familiars’ full costs.","condition":[{"rating":6,"name":"OVA"},{"rating":7,"name":"Anime"},{"rating":7,"name":"The Game"},{"name":"Innocent Soul","rating":7}]},
   {"worldName":"Gunslinger Girl","rating":4,"image":"https://i.imgur.com/dk9mDDc.png"},
   {"worldName":"Inside An Adult Game As A Former Hero","rating":7,"image":""},
-  {"worldName":"Kaguya-sama: Love is War","rating":2,"image":""},
+  {"worldName":"Kaguya-sama: Love is War","rating":2,"image":"https://i0.wp.com/www.animegeek.com/wp-content/uploads/2022/05/Kaguya-sama-Love-is-War-Season-4-release-date-Kaguya-sama-wa-Kokurasetai-Tensai-tachi-no-Renai-Zunousen-Season-4-Anime.jpg?fit=1200%2C675&ssl=1"},
   {"worldName":"Little Busters!","rating":1,"image":"https://cdn.donmai.us/sample/34/97/__natsume_rin_naoe_riki_natsume_kyousuke_inohara_masato_and_miyazawa_kengo_little_busters_drawn_by_sakamuke__sample-3497a582f291d8e22b85f4823f7378c4.jpg"},
   {"worldName":"Nioh","rating":5,"image":"https://i.imgur.com/kfVIc7R.jpeg","condition":[{"rating":5,"name":"Nioh"},{"name":"Nioh 2","rating":6}]},
   {"worldName":"Sakura Wars","rating":6,"image":"https://i.imgur.com/kj5kWW9.png"},
-  {"worldName":"Yandere simulator","rating":3,"image":"https://i.kym-cdn.com/photos/images/original/000/998/314/ce8.jpg"},
+  {"worldName":"Yandere Simulator","rating":3,"image":"https://wallpapersmug.com/download/1024x768/bc42f4/yandere-simulator-anime-artwork.jpg"},
   {"worldName":"Invader Zim","rating":7,"image":"https://c4.wallpaperflare.com/wallpaper/300/340/846/invader-zim-nickelodeon-gir-wallpaper-preview.jpg"},
   {"worldName":"Suikoden Series","rating":5,"image":"https://i.pinimg.com/564x/13/2f/84/132f844597c14abeec426cd6544f99a1.jpg","condition":[{"name":"Suikoden 1 (Gate Rune War)","rating":5},{"rating":4,"name":"Suikoden 2 (Dunan Unification War)"},{"name":"Suikoden 3 (Second Fire Bringer War)","rating":5},{"rating":4,"name":"Suikoden 4 (Island Liberation War)"},{"name":"Suikoden 5 (Sun Rune War)","rating":4}]},
-  {"worldName":"Trigun","rating":6,"image":"https://i.imgur.com/w7u0QbL.jpg","condition":[{"name":"Crash Era","rating":7},{"rating":6,"name":"Post-Colonization"}]}
+  {"worldName":"Trigun","rating":6,"image":"https://i.imgur.com/w7u0QbL.jpg","condition":[{"name":"Crash Era","rating":7},{"rating":6,"name":"Post-Colonization"}]},
+  {"worldName":"Redo of Healer","rating":7, "image":"https://cdn.discordapp.com/attachments/925963686433132644/1038854551496835153/wp8438651.jpg"},
+  {"worldName":"Blend S","rating":1,"image":"https://cdn.discordapp.com/attachments/925963686433132644/1038854818078412880/890913.jpg"},
+  {"worldName":"Demon Mother: My Son is so Cute, I Just Can't Help Myself!","rating":3,"image":"https://cdn.discordapp.com/attachments/925963686433132644/1038855212552691732/CoI-EElUEAARhLV.jpg","condition":[{"name":"Human Demon War","rating":7},{"name":"Post Human Demon War","rating":3},{"rating":5,"name":"Demon Rebellion"}]},
+  {"worldName":"Primal","rating":7,"image":"https://cdn.discordapp.com/attachments/925963686433132644/1038853653978693823/primal-61884783d6575.jpg"},
+  {"worldName":"Rimworld","rating":7,"image":"https://i.ytimg.com/vi/nBduHE6sDkc/maxresdefault.jpg","additional":""},
+  {"worldName":"Westworld","rating":5,"image":"https://i.imgur.com/sKQ8YqR.jpg"},
+  {"worldName":"Assassin's Creed","rating":4,"image":"https://www.throneofgeeks.com/wp-content/uploads/2022/09/AC.webp","condition":[{"name":"AC Odyssey","rating":5},{"name":"AC Origins","rating":4},{"name":"AC Valhalla","rating":5},{"name":"AC Syndicate","rating":4},{"name":"AC Unity ","rating":4},{"rating":4,"name":"AC Black Flag "}]},
+  {"worldName":"Image Universe","rating":5,"image":"https://i.ytimg.com/vi/4xc5dIr6_8Q/maxresdefault.jpg","condition":[{"name":"Spawn","rating":8}]},
+  {"worldName":"Lollipop Chainsaw","rating":5,"image":"https://img.game-news24.com/2022/07/James-Gunns-Scult-Game-Lollipop-Chainsaw-Is-Making-A-Remake-Again.png"},
+  {"worldName":"Reincarnated as a Sword","rating":7,"image":"https://m.ani4u.org/wp-content/uploads/2022/10/game4v-Reincarnated-as-a-Sword-anime-6-1632470742-31-1140x647-1.jpg"}
 ]

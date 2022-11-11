@@ -23,6 +23,7 @@ const { activeChallenges } = useChallenges()
 
 // General functions
 export function deleteFreebies(freebies: object) {
+  if (!freebies) return
   for (const [key, perks] of Object.entries(freebies) as [keyof typeof allForSave, Freebie[]][]) {
     perks.forEach((n: Freebie) => {
       const ind = findIndex(allForSave[key].value, { title: n.title })
@@ -40,6 +41,7 @@ export function deleteFreebies(freebies: object) {
 }
 
 export function addFreebies(freebies: object) {
+  if (!freebies) return
   for (const [key, perk] of Object.entries(freebies) as [keyof typeof allForSave, Freebie[]][]) {
     perk.forEach((freebie: Freebie) => {
       const ind = findIndex(allForSave[key].value, { title: freebie.title })
@@ -111,8 +113,11 @@ export function pickSimplePerk(perk: PerkFull, saveData: Perk, isAvailable: (arg
     if (ind !== -1) {
       if ((saveData.complex && saveData.complex.length > 0) || (saveData.count && saveData.count > 0 && perks[ind].count !== saveData.count)) {
         perks[ind] = saveData
+        deleteFreebies(perks[ind].freebies)
+        addFreebies(saveData.freebies)
       }
       else {
+        deleteFreebies(perks[ind].freebies)
         const toDel = perks.splice(ind, 1)
         allEffects.value.splice(allEffects.value.indexOf(toDel[0].title), 1)
         if (!flags.value.chargen && toDel[0].cost < 11111) fee.value += Math.round(toDel[0].cost * 0.2) || 0
@@ -122,6 +127,7 @@ export function pickSimplePerk(perk: PerkFull, saveData: Perk, isAvailable: (arg
     else if (saveData.count === undefined || (saveData.count !== undefined && saveData.count !== 0)) {
       allEffects.value.push(perk.title)
       perks.push(saveData)
+      addFreebies(saveData.freebies)
     }
   }
 }
@@ -173,7 +179,6 @@ export function intensityAvailable(rule: Intensity): boolean {
 // Bindings
 export function chooseBinding(bin: PerkFull, saveData: Perk, checkFunc = bindingAvailable) {
   if (!checkFunc(bin)) return
-
   const ind = findIndex(binding.value, { title: bin.title })
   if (ind !== -1) {
     if (binding.value[ind].count !== saveData.count && saveData.count !== 0) {

@@ -35,12 +35,22 @@
               </h3>
               <div v-for="power, i in powers[startingOrigin.uid || 0]" :key="i" class="flex gap-2">
                 <CharacterInput
-                  v-model="power.flavor"
+                  v-if="perk.title === 'Template Stacking I'"
+                  :model-value="power.flavor"
                   :idd="'idyou' + i"
                   placeholder="Character / Race / Power name"
                   class="flex-grow"
                   error-message=""
-                  @onChar="(char: DBCharacter) => (power.flavor = char.n, power.target = startingOrigin.character || 'You', power.uid = startingOrigin.uid || 0)"
+                  @onChar="(char: DBCharacter) => (power.flavor = `${char.n}(${char.w})`, power.target = startingOrigin.character || 'You', power.uid = startingOrigin.uid || 0)"
+                  @update:modelValue="(val) => (power.flavor = val, power.target = startingOrigin.character || 'You', power.uid = startingOrigin.uid || 0)"
+                />
+                <AnythingInput
+                  v-else
+                  :model-value="power.flavor"
+                  placeholder="Power name"
+                  class="flex-grow"
+                  error-message=""
+                  @update:modelValue="(val) => (power.flavor = val, power.target = startingOrigin.character || 'You', power.uid = startingOrigin.uid || 0)"
                 />
                 <Button icon="fluent:delete-20-filled" bg-color="bg-red-500" label="" class="self-center" @click="() => powers[startingOrigin.uid || 0].splice(i, 1)" />
               </div>
@@ -73,12 +83,22 @@
               </h3>
               <div v-for="power, i in powers[companion.uid]" :key="i" class="flex gap-2">
                 <CharacterInput
-                  v-model="power.flavor"
+                  v-if="perk.title === 'Template Stacking I'"
+                  :model-value="power.flavor"
                   :idd="'id'+companion.uid + i"
                   placeholder="Character / Race / Power name"
                   class="flex-grow"
                   error-message=""
-                  @onChar="(char: DBCharacter) => (power.flavor = char.n, power.target = companion.name, power.uid = companion.uid)"
+                  @onChar="(char: DBCharacter) => (power.flavor = `${char.n}(${char.w})`, power.target = companion.name, power.uid = companion.uid)"
+                  @update:modelValue="(val) => (power.flavor = val, power.target = companion.name, power.uid = companion.uid)"
+                />
+                <AnythingInput
+                  v-else
+                  :model-value="power.flavor"
+                  placeholder="Power name"
+                  class="flex-grow"
+                  error-message=""
+                  @update:modelValue="(val) => (power.flavor = val, power.target = companion.name, power.uid = companion.uid)"
                 />
                 <Button icon="fluent:delete-20-filled" bg-color="bg-red-500" label="" class="self-center" @click="() => powers[companion.uid].splice(i, 1)" />
               </div>
@@ -123,9 +143,10 @@ const props = defineProps({
 const emit = defineEmits(['pickPerk'])
 const powers = reactive<Record<string, {target: string; flavor: string; uid: number}[]>>(props.savedPerk?.complex?.reduce((a, x) => {
   // temporary fix to support old saves
-  if (!x.uid)
+  if (!x.uid) {
     x.uid = find(companionsComp.value, ch => ch.name === x.target)?.uid || startingOrigin.value.uid || 0
-
+    x.uid = x.uid === -1 ? 0 : x.uid
+  }
   if (a[x.uid]) a[x.uid].push({ target: x.target || '', uid: x.uid, flavor: x.flavor })
   else a[x.uid] = [{ target: x.target || '', uid: x.uid, flavor: x.flavor }]
   return a

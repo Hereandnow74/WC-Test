@@ -19,6 +19,9 @@
         <a v-if="perk.dlclink" :href="perk.dlclink" target="_blank" rel="noopener noreferrer" class="underline">DLC by {{ perk.dlc }}</a>
         <span v-else>DLC by {{ perk.dlc }}</span>
       </span>
+      <span v-if="perk.legacy" class="text-sm ml-1" text="red-700 dark:red-400" title="This perk was deleted or changed in the new waifu catalog version">
+        <span>(Legacy perk)</span>
+      </span>
       <span v-if="savedPerk.anything">({{ savedPerk.anything }})</span>
       <TargetInput
         v-if="complexFields.target"
@@ -231,12 +234,15 @@ function sendPerk() {
 }
 
 const perkExist = computed(() => {
-  return props.savedPerk.complex ? findIndex(props.savedPerk.complex, filterObject(complex)) !== -1 : props.isActive
+  const c = { target: complex.target, flavor: complex.flavor }
+  if (complex.uid)
+    c.uid = complex.uid
+  return props.savedPerk.complex ? findIndex(props.savedPerk.complex, filterObject(c)) !== -1 : props.isActive
 })
 
 onMounted(() => { if (perkImg.value) lazyLoadSingleImg(perkImg.value) })
 watch(settings.value, () => { if (perkImg.value) lazyLoadSingleImg(perkImg.value) }, { flush: 'post' })
-watch(() => complex.target, sendPerk)
+// watch(() => complex.target, sendPerk)
 
 function collapse() {
   if (expand.value) {

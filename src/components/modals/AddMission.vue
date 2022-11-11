@@ -164,7 +164,7 @@ const { errors, handleSubmit } = useForm({
     budget: props.mission?.budget || '',
     desc: props.mission?.desc || '',
     loca: props.mission?.loca || '',
-    scope: props.mission?.scope || '',
+    scope: props.mission?.scope || 'Standard',
     conditions: props.mission?.conditions || [
       { value: '' },
     ],

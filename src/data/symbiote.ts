@@ -9,7 +9,7 @@ export const symbioteQueen = `
 <h3 class="text-lg font-semibold text-center">Symbiote: The Swarm Queen</h3>
 <p>One single waifu in your initial purchase will be the queen to your king. You and she both will already be merged with your symbiotes when you arrive in your first world, and gain an additional +1 tier, capped at 10. If the queen is already T10, her power will double, but her effective tier will not rise any further. Symbiosis alters a subject’s mind, making them see you as a mate (Companions), king (Familiars), or both, whose orders are to be obeyed and whose survival is paramount to the species. All symbiote hosts besides yourself will see the queen as the first among them, regardless of previous relationships, and arrange themselves into a pyramidal hierarchy under her. If you do not already have a queen, the first female subject that you capture using any Symbiote-related method will automatically become your queen.</p>
 <p>The queen must always be female. If you are naturally female or Possessed or Substituted a female vessel, you may act as your own queen, with no need for a king - only consorts. A lone female in an otherwise all-male swarm will always be the queen, while a primarily male swarm still whitelist at least one female Familiar for the role. If your queen is part of a set that can only be purchased together, the actual queen will be the most dominant one according to their natural personalities; if the members of the set are truly co-equal, then they’ll serve as co-equal queens.</p>
-<p>The King and Queen are visibly distinct from the rest of a swarm. Their initial blending with their symbiote is accompanied by non-optional physical growth, affecting the peak of their physical maturity. Swarm royals who are not yet physically mature will grow into this state naturally over time. Both king and queen experience significant increases in muscle definition, particularly in the arms, abdominals, glutes, and legs. The queen also experiences severe non- muscular growth of the breasts, rear and thighs, while the king instead gains even more muscle and increased genital size, even beyond any improvements from Body Talent.</p>
+<p>The King and Queen are visibly distinct from the rest of a swarm. Their initial blending with their symbiote is accompanied by non-optional physical growth, affecting the peak of their physical maturity. Swarm royals who are not yet physically mature will grow into this state naturally over time. Both king and queen experience significant increases in muscle definition, particularly in the arms, abdominals, glutes, and legs. The queen also experiences severe non- muscular growth of the breasts, rear and thighs, while the king instead gains even more muscle and increased genital size, even beyond any improvements from Body Tune-Up.</p>
 <p>Regardless of gender, the target sizes for any trait are roughly 130% on the scales defined in Advanced Tempest Runes (Body), with up to 10% error in either direction. If desired, this growth may recede down to the royals’ baseline sizes at a rate of 3% every 5 hours. The full extent of this recession, if any, depends on the contractor’s desires. This growth may be manually re-triggered, with the aid of a larva or swarm member, at any time.</p>
 <p>You and your queen may always capture a target in person by transmitting a transformative fluid from your mouth or tail. You or your queen can let your tail out without the rest of the armor, make out or have sex with the conversion target, and then leave. This transformation takes about two hours to complete; the target will experience a gradually-building surge of lust during that time, which will only fade when satisfied by you or another symbiote host whose lust surge has previously been satisfied. Capture credits are rewarded once this lust has faded. <strong>Targets that are not sexually mature cannot be captured in this way.</strong></p>
 `
@@ -92,7 +92,7 @@ export const synUnits: Units[] = [
     title: 'Globsters',
     type: 'Larva',
     cost: 0,
-    image: '',
+    image: 'https://cdn.discordapp.com/attachments/925963686433132644/1038867524902723725/zyro-image.png',
     desc: `
     <p>These slime creatures, roughly the size of a watermelon, can spread themselves thin to flow across solid surfaces undetected, including walls and ceilings. Together with a limited form of camouflage, to mimic the appearance of a single surface that they have contact with, they have the most functional stealth of all larva types, though they can still be detected by supernatural means. Globsters cannot be fought off by any target of effective tier (after step 6) 4 or below.</p>
     <p>One clutch of Globsters has 16 eggs, with each one roughly the size of a chicken’s. Their eggs don’t so much hatch as melt into the newly-born Globster when the time is right. Globsters are omnivorous and will devour whatever is small enough for them to engulf. They require one week to feed and grow large enough for practical use.</p>
@@ -119,7 +119,7 @@ export const synUnits: Units[] = [
     whitelist: ['Burrow'],
     type: 'Tank',
     cost: 0,
-    image: '',
+    image: 'https://cdn.discordapp.com/attachments/925963686433132644/1039522417908920320/sample-3f625fad3a9527b3f238bb147df2ed8b.jpg',
     desc: `
     <p>A Lingoth is a modified ankylosaurus, a muscular, thick-skinned quadruped with a heavily-armored spiked shell and long, clubbed tail. Lingoths are vegetarian, focused on low- growing shrubs and fruits, and will make great use of any Groves within your creep zone.</p>
     <p>With Maru Mari, Lingoths will grow a round hatch where humanoid swarm members can access it, allowing them entrance to an internal passenger space while in ball form. Junior Lingoths may carry a single passenger in this way, Adult Lingoths 20, and Elder Lingoths 400. While inside a Lingoth, swarm members must remain in ball form, but can remain aware of the outside world by tapping into their ride’s senses. With Presence, they can project ghostly avatars anywhere within 2 m of the Lingoth’s shell and use their own senses instead.</p>
@@ -134,7 +134,7 @@ export const synUnits: Units[] = [
     whitelist: ['Burrow'],
     type: 'Artillery',
     cost: 0,
-    image: '',
+    image: 'https://cdn.discordapp.com/attachments/925963686433132644/1038869452466434129/3522-wasteland-scorpion.jpg',
     desc: `
     <p>The Linkor is a modified giant scorpion, with the stinger replaced with a quill launcher for indirect fire. Linkors are pack-hunting carnivores: one grapples a prey and the rest shoot their quills at the prey until it dies. Linkor exoskeletons are relatively light, offering much less protection than a Lingoth shell and no interior space for Maru Mari or cargo. Any would-be passengers must ride on a Linkor’s back.</p>
     <p>The standard quill, used by all Linkors, measures 140 mm across and 35 cm long, and takes 30 seconds to grow within the launcher. Chemicals inside the launch tube keep quills malleable so the Linkor can move its tail properly. After launch, with those chemicals no longer present, quills rapidly harden into a more recognizable 105 cm spike, with small fins for more stable flight.</p>
@@ -150,7 +150,7 @@ export const synUnits: Units[] = [
     type: 'Support',
     cost: 0,
     whitelist: ['Burrow'],
-    image: '',
+    image: 'https://cdn.discordapp.com/attachments/925963686433132644/1038870047797555342/969694.jpg',
     desc: `
     <p>The Linguu is a close variant of the Lingoth, but with a taller dome, closer to a tortoise’s, and a short neck and tail. They share the same diet as their Lingoth cousins. They have no inherent offensive abilities, beyond simply being large creatures that can ram or trample smaller creatures that get in their way. They make up for that in defense, with a significantly tougher shell than a Lingoth’s.</p>
     <p>A Linguu shell is hollow at all stages. Linguu bellies have a loading ramp that can drop down to the ground below, allowing humanoids or cargo to enter on foot. Specialized ligaments between the main cabin and the outer part of the shell act as a suspension system, ensuring a smooth ride. With Maru Mari, this space between the outer shell and the cabin wall will be accessible to ball forms, allowing them to remain secure while the individuals sleep, project their Presence outside (within 2 m of the Linguu’s shell), or enter the local Mindscape.</p>
@@ -165,7 +165,7 @@ export const synUnits: Units[] = [
     type: 'Air Superiority',
     cost: 0,
     whitelist: ['Nest'],
-    image: '',
+    image: 'https://cdn.discordapp.com/attachments/925963686433132644/1039514270926381186/unknown.png',
     desc: `
     <p>The Ailgoth is a modified eagle, with additional traits from bats and pterosaurs. Ailgoths hunt in pairs over land and at sea. The talons on both their feet and wings allow them to carry heavy loads back to their nests, though especially large prey must still be eaten on site. These are not necessarily mated pairs; an Ailgoth is as likely to hunt with a humanoid rider as another Ailgoth.</p>
     <p>An Ailgoth’s airspeed is greatly limited when carrying anything in its talons. When one is not loaded down, it can tuck its feet and wings into its body, cutting its apparent wingspan by two-thirds and allowing it to reach its full speed. Conversely, untucked Ailgoth wings are a highly effective airbrake.</p>
@@ -181,7 +181,7 @@ export const synUnits: Units[] = [
     whitelist: ['Nest'],
     cost: 0,
     type: 'Ground Attack',
-    image: '',
+    image: 'https://cdn.discordapp.com/attachments/925963686433132644/1038871864254140436/tumblr_pl90wjNNIX1v972zjo1_1280.jpg',
     desc: `
     <p>The Ailkor is a modified giant moth that feeds exclusively on Buzzer honey. Ailkors can release chemical powders on command, from their four wings, that can inflict a variety of different effects on whatever living things are unfortunate enough to be caught in such clouds. The older and larger the Ailkor, the wider the cloud it can produce on its own.</p>
     <p>A newly-hatched Ailkor will become combat-ready, as a Junior Ailkor, about 12 months after hatching. A Junior Ailkor’s main body measures about 5-6 m long and 2-2.5 m wide, and its wingspan is about 7-8 m across. They can only release a single type of powder, a mist that dampens sound and reduces local visibility to less than 10 m.</p>
@@ -195,17 +195,17 @@ export const symbioteBinding: PerkFull[] = [
   {
     uid: 'grbul',
     title: 'Alterzelu Symbiote',
-    cost: 115,
+    cost: 125,
     category: 'Binding',
     type: 'Symbiote',
     image: '',
     complex: 'target',
     freebies: {
-      talentPerks: [{ title: 'Everlasting Talent', cost: 0, count: 1 }, { title: 'Body Talent', cost: 0, count: 1 }, { title: 'Martial Talent', cost: 0, count: 1 }, { title: 'Wild Talent', cost: 0, count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Martial Talent' }], count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Wild Talent' }], count: 1 }],
+      talentPerks: [{ title: 'Everlasting Talent', cost: 0, count: 1 }, { title: 'Body Tune-Up', cost: 0, count: 1 }, { title: 'Athletic Talent', cost: 0, count: 1 }, { title: 'Martial Talent', cost: 0, count: 1 }, { title: 'Wild Talent', cost: 0, count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Martial Talent' }], count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Wild Talent' }], count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Athletic Talent' }], count: 1 }],
       defensePerks: [{ title: 'Body Defense', cost: 0, count: 1 }, { title: 'Wild Defense', cost: 0, count: 1 }, { title: 'Environmental Defense', cost: 0, count: 1 }],
     },
     desc: `
-    <p>Build your own swarm using this engineered species of alien symbiotes. You and all bound retinue members benefit from Everlasting, Body, Martial, and Wild Talents. (Take these four perks, plus Talent Sharing (Martial) and Talent Sharing (Wild), for free.) Take one copy each of Body, Wild, and Environmental Defenses for free as well.</p>
+    <p>Build your own swarm using this engineered species of alien symbiotes. You and all bound retinue members benefit from Body Tune-Up and Everlasting, Athletic, Martial, and Wild Talents. (Take these four perks, plus Talent Sharing (Martial), Talent Sharing (Wild), and Talent Sharing (Athletic), for free.) Take one copy each of Body, Wild, and Environmental Defenses for free as well.</p>
     <p>Alterzelu hosts can, at will, form an environmentally- sealed suit of bio-armor, with Gigeresque black chitin aesthetics, a retractable helmet, sharp claws, and a long tail for combat and maneuverability. This includes you. Existing enchanted gear or otherwise super outfits, such as Life Fibers, power armor, or magical girl uniforms, will be integrated into this bio-armor. This does not apply to gear that is held rather than worn. Hosts also gain superhuman senses, strength, agility, and durability; this is enough to push any blue-star subject up to Tier 4 or any copper-star up one tier, but is not a significant gain for higher tiers.</p>
     `,
   },
@@ -424,7 +424,7 @@ export const symBuildings: PerkFull[] = [
   {
     uid: '22NAS',
     title: 'Hatchery',
-    cost: 40,
+    cost: 30,
     dCost: 20,
     category: 'Binding',
     type: 'Freestanding',
@@ -444,7 +444,7 @@ export const symBuildings: PerkFull[] = [
     dCost: 5,
     category: 'Binding',
     type: 'Add-on (Hatchery)',
-    image: '',
+    image: 'https://cdn.discordapp.com/attachments/925963686433132644/1038872712321433631/c74ec043a0148f2cb671fb55972d5438.jpg',
     desc: `
     <p>Nurseries increase the efficiency of your unit production buildings and provide additional incubation space. Nurseries can only be built attached to a Hatchery, Burrow, Nest, Reef, or another Nursery. Even if a large mass of Hatcheries and Nurseries flow together, each Nursery will only accept eggs from a single production building at a time. A Nursery will grow to full size in 8 hours, reaching a maximum size of 5 meters tall with a 250 square meter footprint.</p>
     <p>Each Nursery can hold up to 20 egg clutches from the attached production building. This capacity increases with the highest-upgraded Hatchery in the same creep zone: 40 clutches (+20) with a Lair, 60 clutches (+20) with a Colony, and 80 clutches (+20) with a Hive.</p>
@@ -459,7 +459,7 @@ export const symBuildings: PerkFull[] = [
     dCost: 5,
     category: 'Binding',
     type: 'Freestanding',
-    image: '',
+    image: 'https://cdn.discordapp.com/attachments/925963686433132644/1038873759140020345/88070758ecb46e2c4bbeca48c21c8b7a.jpg',
     desc: `
     <p>Groves serve as parkland for any wildlife in your Creep zones or sapient subjects who enjoy the outdoors. Groves also make a Hatchery’s creep more nutritious, decreasing the maturation time for all units produced in that Creep zone.</p>
     <p>Every 5 Devotion Points dedicates 40,000 square meters of land to Groves and reduces the maturation time for larvae by 2.5%. The dedication process takes only 3 hours. After the first 100 Devotion Points are invested into Groves in a single Creep zone, every 100 more in the same Creep zone will cut the maturation time for larvae in half again, with no limit. Units produced at Burrows, Nests, and Reefs require ten times as much Grove land in a single Creep zone to achieve the same reduction.</p>
@@ -473,7 +473,7 @@ export const symBuildings: PerkFull[] = [
     dCost: 10,
     category: 'Binding',
     type: 'Freestanding',
-    image: '',
+    image: 'https://cdn.discordapp.com/attachments/925963686433132644/1038872858815909949/d49u5y6-214ff8b8-973d-42b5-b2b4-77d46185c311.jpg',
     desc: `
     <p>Dens provide shelter to your sapient subjects and act as structural foundations for later, larger structures.</p>
     <p>After 12 hours of growth, a new Den will reach its maximum size of 10 meters tall, and an additional 5 vertical meters of basements underground, with a 500 square meter footprint.</p>
@@ -493,7 +493,7 @@ export const symBuildings: PerkFull[] = [
     <p>After 3 days (72 hours) of growth, the new Lair will reach its maximum size at 50 meters tall, and an additional 20 vertical meters of basements underground, with a 10,000 square meter footprint. A finished Lair will spread Creep to about a 5 kilometer radius, centered on the spawning pool, reaching its maximum extent another 2 weeks (336 hours) after construction.</p>
     <p>The presence of at least a Lair in a Creep zone allows the Creep to assimilate stationary, non-sapient creatures, converting them into your familiars and enforcing your swarm’s aesthetics upon them. Standard reproduction for assimilated species will continue within your swarm, allowing you to take advantage of any useful traits their evolution creates without micromanaging their populations.</p>
     <p>You may install a mature female subject, not already Devoted in a building’s construction or elsewhere, into the spawning organ of a Lair on a longer-term basis. If a non-queen is installed, her clutches will take 50% longer to hatch than the queen’s clutches: at the base rate, +7 days. Either way, new clutches will be produced as room allows.</p>
-    <p>Queens may remove themselves from this organ at will, but removing a non-queen takes 24 hours, whitelist your consent, and will halt all new egg production at that site during that time. The spawning organ is a very intense experience, with sustained installation causing both physical and mental side-effects. Body Talent and Stress, Addiction, and Mind Defenses are highly recommended.</p>
+    <p>Queens may remove themselves from this organ at will, but removing a non-queen takes 24 hours, whitelist your consent, and will halt all new egg production at that site during that time. The spawning organ is a very intense experience, with sustained installation causing both physical and mental side-effects. Body Tune-Up and Stress, Addiction, and Mind Defenses are highly recommended.</p>
     `,
     whitelist: ['Den'],
   },
@@ -504,7 +504,7 @@ export const symBuildings: PerkFull[] = [
     dCost: 60,
     category: 'Binding',
     type: 'Upgrade (Den)',
-    image: '',
+    image: 'https://cdn.discordapp.com/attachments/925963686433132644/1038875154568183939/insect_hive_by_dentifrix_dd9otnd-fullview.jpg',
     desc: `
     <p>The Burrow is the primary production building for non-sapient land units. Upgrading a Den to a Burrow whitelist an additional 50 Devotion Points as construction material, minus any recycled from other swarm structures within the Burrow’s new footprint. After 48 hours of new growth, a new Burrow will reach its maximum size of 15 meters tall, and an additional 20 vertical meters of basements, with a 4,500 square meter footprint.</p>
     <p>Burrows have much the same spawning interface as Lairs, with a specialized organ that a mature female subject can install herself into and create new eggs. A Burrow’s eggs are limited to non-larval land units only, whether the pre-designed options, local species assimilated into your swarm, or creatures that your geneticists and bioengineers have custom-designed at an Evolution Chamber.</p>
