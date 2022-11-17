@@ -33,10 +33,11 @@
             </div>
             <div v-if="item.character && chosenOrigin.title === item.title" class="flex gap-1">
               <CharacterInput
-                v-model="chosenOrigin.character"
+                :model-value="chosenOrigin.character"
                 :error-message="costError"
                 @updateTier="chosenOrigin.tier = $event"
-                @updateUID="chosenOrigin.uid = $event"
+                @onChar="(char: DBCharacter) => {chosenOrigin.uid = char.u; chosenOrigin.character = item.title !== 'Walk-In' ? `You as ${char.n}` : char.n; chosenOrigin.tier = char.t}"
+                @update:modelValue="chosenOrigin.character = $event"
               />
               <Input
                 v-model="chosenOrigin.tier"
@@ -100,6 +101,7 @@
 
 <script lang='ts' setup>
 import { findIndex } from 'lodash'
+import { DBCharacter } from 'global'
 import { CHAR_COSTS } from '~/data/constants'
 import { desc, origin, Origin } from '~/data/origin'
 import { confirmDialog } from '~/logic/dialog'

@@ -38,6 +38,7 @@ interface Dungeon {
 }
 
 const dungeons = useStorage<Dungeon[]>('dungeons', [])
+const symbiotes = useStorage<Dungeon[]>('symbiotes', [])
 const manualDevotees = useStorage<Record<number, number>>('manualDevotees', { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0, 9: 0, 10: 0 })
 
 const gachaSettings = useStorage('gachaSettings', {
@@ -78,6 +79,7 @@ export function usePlayStore() {
     investedEffect,
     investedNetwork,
     dungeons,
+    symbiotes,
     manualDevotees,
     gachaSettings,
     missionRewards,

@@ -178,8 +178,8 @@ const originTextClean = computed(() => {
     'Drop-In': 'Dropped-In',
     'Walk-In': `Walked-In as ${startingOrigin.value.character} of T${startingOrigin.value.tier}`,
     'Extra': `'Extra' with ${startingOrigin.value.cost} additional cost`,
-    'Substitute': `Substitute as a ${startingOrigin.value.character} of T${startingOrigin.value.tier}`,
-    'Possess': `Possess a ${startingOrigin.value.character} of T${startingOrigin.value.tier}`,
+    'Substitute': `${startingOrigin.value.character} (Substitute) of T${startingOrigin.value.tier}`,
+    'Possess': `${startingOrigin.value.character} (Possess) of T${startingOrigin.value.tier}`,
   } as Record<string, string>
 
   return variants[startingOrigin.value.title]

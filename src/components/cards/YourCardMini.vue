@@ -14,7 +14,7 @@
           <span v-else>
             {{ startingOrigin.character }}
             <span class="text-gray-500 text-sm">
-              (It's you<span v-if="startingOrigin.title"> as {{ startingOrigin.title }}</span>)
+              (<span v-if="startingOrigin.title">{{ startingOrigin.title }}</span>)
             </span>
           </span>
           <span class="text-gray-500 ml-auto whitespace-nowrap"> Tier: <span class="text-green-500">{{ Math.max(startingOrigin.tier || 1, yourTier) }}</span></span>

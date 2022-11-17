@@ -1,6 +1,602 @@
 [
   
   {
+    "image": "",
+    "desc": "The Grandchild of a Contractor has decided to strike out as a Contractor themselves. Of course, the Demi-Stamp only goes so far after the first Generation, so we need to ensure they don't do anything stupid like join The Corporation or the ACC.\n\nTo that end we put out this mission as a sort of working Vacation. Your job is to Substitute into an important Female within the Starting World, be it a Protagonist, Antagonist, Love Interest or Good Friend. As long as they are prominent in the world. They can't be a Mentor character though. As this Character, you will monitor the Grandchild to ensure they are loyal. You have until they leave their Starting World, when someone else will take over if we aren't convinced either way.",
+    "scope": "Standard",
+    "loca": "Generic",
+    "budget": 0,
+    "title": "Descendent Babysitting",
+    "reward": "500 Credits plus the Starting Budget for the world you were in and the Character you were becomes an Alt Form",
+    "conditions": [
+      {
+        "value": "All Company abilities are locked down, leaving only that of your Character. There will only be enough defences to ensure that the Target can't figure out you're watching them via Scrying or Psychic means"
+      },
+      {
+        "value": "No one can know you aren't the original Character"
+      },
+      {
+        "value": "You, personally, can't alter your Character's fate if it is a sticky one. You'll just have to hope the Grandchild wants to keep you around or has changed enough to allow it not to happen"
+      }
+    ],
+    "rewardType": "Credits",
+    "source": "",
+    "objectives": [
+      {
+        "value": "Have a sexual encounter with the Grandchild without being Captured at that time. (Captures that rely on sexual acts to Bind do not count). This is a repeatable objective.",
+        "reward": "You get a Companion Ticket for the first of each act (determined by the act and the Highest Tier of you and the Grandchild). 2 Tiers below the Higher Tier for kissing (with tongue only) and clothed Groping. 1 Tier below the Higher Tier if the act is unclothed Groping or non-penetrative. Tier equal to the Higher Tier should it be penetrative in any way (you or the Grandchild). If you repeat an act, you will get the Capture Value of the Tiered Act instead.",
+        "type": "Companions"
+      },
+      {
+        "reward": "A Companion Ticket equal to your Tier and another equal to the Grandchild's.",
+        "type": "Companions",
+        "value": "Allow yourself to be 'Captured' without letting on that something isn't right"
+      },
+      {
+        "type": "Credits",
+        "value": "Allow yourself to become Pregnant with a Canon Child. (Goes by the Mother first, then the Father should you get pregnant after that with someone else. Non-Canon Twins become variants of the Canon version instead of going to the next child in line. For example, having twins as Hinata would lead to birthing Boruto and a Boruto Variant instead of Boruto and Himawari)",
+        "reward": "Credits equal to the Buy Value of each Child you birth. (Variants are equal to their original)"
+      },
+      {
+        "value": "Uncover Undeniable proof of the Grandchild's loyalty (or lack of) to the Company before he leaves the Starting World",
+        "type": "Credits",
+        "reward": "Double the Credit Value of the Base Mission"
+      }
+    ],
+    "author": "FinSexual92",
+    "uid": "FElyJ"
+  },
+  {
+    "budget": 500,
+    "author": "FinSexual92",
+    "desc": "It seems we have a Rival Company, Contractor. One that is seemingly opposed to our Enslaving ways. These Anti-Company Paladins are your equivalent and the backbone of the Anti-Company Corps. Their Goal is to end you and those like you. And with the Abilities given to them, they may actually succeed.\n\nThey come in 3 Variations, each wearing a headband similar to Ryuu from Street Fighter. The colour denotes their type.\n\nRedeemers (Blue) - The soft ones of the ACP. They will have no problem ripping out your spine like Sub-Zero but they will not use lethal force against your retinue. Watch out though, they have the means to break your Bindings and you may find yourself on the wrong end of your 'Loved' Ones Wrath.\n\nDemolishers (Red) - These are just as dedicated to seeing you dead as the Redeemers. The difference is they will have no issue killing your Retinue to get to you, seeing what you have likely put them through as too scarring to recover from and believe Death to be a Mercy.\n\nAvengers (Green) - The most dangerous of the Three in our opinion. These are actually Former Retinue Members that have been 'saved' by the ACC and have decided to aid them in destroying us. They retain the abilities the had before they were 'Freed' and can earn even more as ACP.\n\nWhy are we giving you this Info Dump? Easy, our intelligence shows one has arrived in your current world and is seeking you out.\n\nDo us a favour and end the threat, showing we aren't to be messed with.",
+    "conditions": [
+      {
+        "value": "You will not be able to Bind anyone until they are dealt with"
+      },
+      {
+        "value": "They will find evidence of your existence and seek you out, even breaking into your Demiplane if given enough time"
+      },
+      {
+        "value": "ACP below Tier 5 never work alone. Fortunately, they always go out in threes."
+      },
+      {
+        "value": "Locals may be roped in to help them, they too will have to be dealt with"
+      }
+    ],
+    "scope": "Standard",
+    "loca": "Generic",
+    "title": "Rival Reward",
+    "rewardType": "Credits",
+    "image": "",
+    "reward": "Credits equal to the Buy Value of the Tier above the ACP's current Tier. (If you are able to beat a Tier X ACP then you will receive a TX Ticket and 2000 Credits)",
+    "objectives": [
+      {
+        "type": "Credits",
+        "reward": "An Extra 50% Credits to what you get for ending the threat and Template Stacking I of their Signature Ability for any of your Retinue (once)",
+        "value": "Capture the ACP(s) sent after you. Note: If you do this, you will never be able to mould their minds. They will follow orders like a good meat puppet, but they will always look to you with hate and await the day you die."
+      },
+      {
+        "value": "Recover Intelligence that may lead to the ACC HQ",
+        "type": "Perks",
+        "reward": "A Token for any Waifu Perk you wish (Yes, this includes those that cost TX Tickets. They may not be refunded so choose wisely)"
+      },
+      {
+        "reward": "Company Clone of the ACP (the first of them we will make) as a loyal Retinue Member. They will be treated like any other Retinue Member as long as they remain unaware that they are a Clone. As far as they're aware, they were left in your custody after interrogation and not dissected for their Secrets.",
+        "type": "Companions",
+        "value": "Persuade the ACP (blue or red) to surrender to your custody and arrange for us to pick them up"
+      },
+      {
+        "reward": "Company Clone of the ACP complete with all their abilities (natural, Company given, and Corps given). This Clone will have all the memories of the ACP but will believe that they had been brainwashed by the ACC. You will also receive a Ticket for a Company Clone of the Same Tier (though it can't be used for any from the same Setting i.e. If ACP is Tifa, it can't be used to get an Aerith, but can be used for Tier 7 Final Fantasy Companions from other Games)",
+        "value": "Decimate the ACP (green) so thoroughly that their Wrath flees and they beg for Mercy, that they will not receive after we take them off your hands",
+        "type": "Companions"
+      },
+      {
+        "type": "TX Tickets",
+        "reward": "1 TX Ticket",
+        "value": "Find a Local ACC Outpost and kill all inside."
+      },
+      {
+        "value": "Kill any Local that sides with an ACP painfully",
+        "reward": "Company Clone of the Local with their knowledge",
+        "type": "Companions"
+      }
+    ],
+    "source": "",
+    "uid": "PEhbt"
+  },
+  {
+    "objectives": [
+      {
+        "type": "Other",
+        "value": "Capture Princess Jade of Dragon Quest XI",
+        "reward": "Re-Vamp ability for you and 100 Credits"
+      },
+      {
+        "value": "Capture Princess Peach of the Mario Series",
+        "reward": "Peach Castle added to your Demiplane and Toadstool attendants",
+        "type": "Other"
+      },
+      {
+        "value": "Capture Princess Daisy of the Mario Series",
+        "type": "Other",
+        "reward": "Sarasaland added to your Demiplane with wildlife"
+      },
+      {
+        "type": "Other",
+        "reward": "The Comet Observatory added to your Demiplane and the Lumas",
+        "value": "Capture Princess Rosaline of the Mario Series"
+      },
+      {
+        "type": "Other",
+        "reward": "Mario Kart Locations and Tracks added to your Demiplane as well as a store selling Mario Powerups manned by a mysterious Merchant Toad",
+        "value": "Capture any Mario Series Princess"
+      },
+      {
+        "type": "Other",
+        "reward": "Hyrule Castle (of the variation you Capture) added to your Demiplane",
+        "value": "Capture Princess Zelda (any variation)"
+      },
+      {
+        "value": "Capture any Disney Princess",
+        "type": "Credits",
+        "reward": "30 Credits"
+      },
+      {
+        "type": "Other",
+        "reward": "Alt Form of their species (if a Hybrid it will include the more dominant or non-human half) for all your Retinue",
+        "value": "Capture any Non-Human Princess"
+      }
+    ],
+    "desc": "Everyone knows about Diodora and his Nun Fetish. Everyone knows about Riser and his Harem of Types (though it is clear he didn't touch his sister). Now one of our people has proposed a Challenge.\n\nCreate a Peerage exclusively of hot Princesses.\n\nQueen = Princess\nKnights = Princesses\nBishops = Princesses\nRooks = Princesses\nPawns = Princesses\n\nTo help you, many other Kingdoms will be added as Realms as if they had always been connected to DxD, so expect overlap.",
+    "rewardType": "TX Tickets",
+    "title": "The Princess Peerage",
+    "reward": "1 TX Ticket",
+    "scope": "Standard",
+    "source": "",
+    "conditions": [
+      {
+        "value": "Universal Calibration must be part of your Build"
+      },
+      {
+        "value": "Extra (10) as a Pureblood Devil (Need not be one of the 72 Pillars)"
+      },
+      {
+        "value": "Must not be an Heir of the House"
+      },
+      {
+        "value": "Evil Pieces are the only Binding that will work on anyone a Princess"
+      },
+      {
+        "value": "Must be an actual Princess and not a Queen or some equivalent. (If they have the Princess Tag then this may be relaxed)"
+      }
+    ],
+    "budget": 300,
+    "image": "",
+    "loca": "High School DxD",
+    "author": "FinSexual92",
+    "uid": "MBfGn"
+  },
+  {
+    "source": "",
+    "loca": "Worm",
+    "image": "",
+    "reward": "1",
+    "author": "Lunasmeow",
+    "objectives": [
+      {
+        "reward": "1",
+        "value": "Scion's new method of dealing with his pain is finding something to nurture and protect. The humans of Earth, all Earths.",
+        "type": "TX Tickets"
+      }
+    ],
+    "desc": "Jack Slash sets off Scion and turns him into a monster. Scion is looking for some way to end \"his\" pain after the death of Eden... find a better route to this branching path, that doesn't end in the death of Scion, or the end of the world from the Cycle.",
+    "rewardType": "TX Tickets",
+    "scope": "Grand",
+    "conditions": [
+      {
+        "value": "Cannot play as Jack Slash or the man who controls Scion in-setting."
+      },
+      {
+        "value": "Cannot have captured Jack Slash or Scion."
+      }
+    ],
+    "budget": 0,
+    "title": "Salvation From Above?",
+    "uid": "iKHOW"
+  },
+  {
+    "source": "",
+    "conditions": [
+      {
+        "value": "If you capture Amy Dallon, she must maintain her \"rules\". She can only use her full power as an antagonist. Not just in WORM. Everywhere."
+      }
+    ],
+    "author": "Lunasmeow",
+    "budget": 0,
+    "rewardType": "TX Tickets",
+    "desc": "Everyone and their grandmother uses Amy Dallon to make \"new creatures\" or some other nonsense in their bid for power in WORM. Stop it. It's FAR to damn easy. Amy's power is only good when limited (following her rules) or if she is an antagonist. Your story of her making creatures and winning after that is boring. Don't do it.",
+    "reward": "One TX ticket.",
+    "loca": "Worm",
+    "scope": "Grand",
+    "objectives": [],
+    "image": "",
+    "title": "No More Monsters!!!",
+    "uid": "McqqY"
+  },
+  {
+    "objectives": [],
+    "scope": "Grand",
+    "title": "Save the World. For Real This Time.",
+    "desc": "People seem to not realize that defeating giant space whales doesn't save the world. That these alien beings were a HIVE MIND. That defeating their greater selves only buys time.\n\nOnce shards have \"budded\" they can exist just like they originally did on their home world as separate beings. Eventually they will devour everything on earth, then on alternate earths, and the cycle will begin again once they realize the same thing the originals did on their home world.\n\nDon't just stall the end of the world, STOP it. Save the world, for real this time.",
+    "image": "",
+    "reward": "3",
+    "loca": "Worm",
+    "source": "",
+    "author": "Lunasmeow",
+    "budget": 0,
+    "rewardType": "TX Tickets",
+    "conditions": [
+      {
+        "value": "Eliminate EVERY shard on the planet."
+      }
+    ],
+    "uid": "pBDaA"
+  },
+  {
+    "scope": "Standard",
+    "loca": "Worm",
+    "author": "Lunasmeow",
+    "rewardType": "Credits",
+    "image": "",
+    "conditions": [
+      {
+        "value": "Do it yourself."
+      }
+    ],
+    "reward": "100",
+    "objectives": [
+      {
+        "type": "Credits",
+        "value": "Do so AFTER she triggers, and also eliminate the Queen Administrator shard.",
+        "reward": "500"
+      },
+      {
+        "value": "Save the world without the whiny bitch, and without her powers/shard.",
+        "reward": "One TX ticket.",
+        "type": "TX Tickets"
+      },
+      {
+        "value": "Do so as either Emma Barnes, or Shadow Stalker.",
+        "reward": "Even if you get caught, Emma's father gets you off scott free (maybe some community service) in court. Somehow. If you don't get caught, take another extra TX ticket, but only AFTER you save the world without Hebert's powers/shard.",
+        "type": "Other"
+      }
+    ],
+    "title": "End the Obsession",
+    "desc": "Taylor Hebert is a hypocritical bitch, who does not even TRY to help herself, but then does nothing but complain when others don't help her, as if they should care about her more than she herself does.\n\nWell, screw that noise. I'm tired of all the fuss over this whiny brat.\n\nKill Taylor Hebert.",
+    "budget": 0,
+    "source": "",
+    "uid": "DPYGX"
+  },
+  {
+    "desc": "Purity is an ex-Nazi who, depending on the world, manages to fall right back into the E88's hands.\n\nNow, there's admittedly something to say for those raised in such a group, are brainwashed into their ways from a young age, but who learn better and leave of their own will. That's admirable... but then there's those who know better and go back.\n\nMake sure Purity is NEVER in a position to return to her old \"friends\".\n\nShe must, rather publically, do something that ensures she can never be accepted by the E88 or their ilk again. Or do something that you have irrefutable evidence for, via recording or other proof, that you can hold against her should she ever try to return.\n\nNote: Additional rewards do NOT grant you the captures automatically, you simply gain the additional price upon actually performing said capture.",
+    "title": "The Repentant Nazi? - Ebony & Ivory",
+    "author": "Lunasmeow",
+    "scope": "Standard",
+    "rewardType": "Credits",
+    "image": "",
+    "objectives": [
+      {
+        "type": "Companions",
+        "reward": "Purity and her lover at 2x capture price.",
+        "value": "Purity is outed as having engaged in a relationship with a \"person of color\"."
+      },
+      {
+        "type": "Companions",
+        "value": "Purity is outed as a lesbian by engaging in a relationship with a woman.",
+        "reward": "Purity and her lover at 2x capture price."
+      },
+      {
+        "value": "Purity is outed as BOTH a lesbian AND having engaged in a relationship with a woman. (Not separately, in one. Her lover must be a \"woman of color\".)",
+        "type": "Companions",
+        "reward": "Purity and her lover at 6x capture price."
+      },
+      {
+        "type": "TX Tickets",
+        "value": "Purity is outed on video/camera/in public by being caught eating Miss Militia's pussy.",
+        "reward": "One TX ticket, and Purity and Miss Militia at 6x capture price."
+      },
+      {
+        "value": "Not only Purity, but even Fenja OR Menja have succumbed to their \"hidden desire\" for this forbidden fruit.",
+        "reward": "One extra TX ticket.",
+        "type": "TX Tickets"
+      },
+      {
+        "value": "Not only Purity, but even Fenja AND Menja have succumbed to their \"hidden desire\" for this forbidden fruit.",
+        "reward": "An additional extra TX ticket.",
+        "type": "TX Tickets"
+      },
+      {
+        "type": "TX Tickets",
+        "value": "Purity (and potentially Fenja and Menja) are known to be subs to Miss Militia with her as their \"dommy mommy\".",
+        "reward": "One extra TX Ticket for each known sub."
+      }
+    ],
+    "source": "",
+    "reward": "200",
+    "loca": "Worm",
+    "budget": 0,
+    "conditions": [
+      {
+        "value": "No *being* Purity for this mission. You may be her love interest, but if you are, rewards are reduced by half. (TX Ticket options are removed as well from additional rewards.)"
+      },
+      {
+        "value": "Purity and her lover, must perform the action of their own will. No Mind Control. Lures are fine, so long as they are \"subtle\" - no addiction level lures for example. Toggle should help."
+      },
+      {
+        "value": "Mission must be completed BEFORE capturing Purity or her lover."
+      },
+      {
+        "value": "Everyone (the general populace of every \"faction\" and civilians) must believe that no \"Mastery\" has occurred. (You can have a few who \"refuse to believe it\" like Max Anders and some forum people or something like that but everyone must assume they're in denial.) Even if you did not use Mind Control, if people THINK you did, you fail this mission, unless you manage to get that debunked somehow and the knowledge of that debunking distributed to the general public. (The agencies involved must believe this of their own will, not due to your Mind Control.)"
+      }
+    ],
+    "uid": "hmtdq"
+  },
+  {
+    "desc": "We at The Company are getting bored with this world and the complaints about how much of a Fail Alpha Derek Hale is (the less said about goody-two-shoes True Fail Scott McCall the better). To that end, we want to see how you would do as the Alpha. Of course, we aren't going to just hand you this power. That would be boring. You will be started the day that Scott McCall gets bit and you must become the Alpha.",
+    "title": "I am the Alpha",
+    "budget": 80,
+    "image": "",
+    "loca": "Teen Wolf",
+    "scope": "Standard",
+    "rewardType": "Credits",
+    "reward": "500 Credits and the ability to transfer basic Power Sets you have via a bite.",
+    "author": "FinSexual82",
+    "source": "",
+    "objectives": [
+      {
+        "type": "Other",
+        "reward": "Full Wolf Shift unlocked regardless of blood",
+        "value": "Persuade Derek Hale to become your Beta"
+      },
+      {
+        "value": "Devour Kate Argent's black Heart",
+        "reward": "Beast Form unlocked for you, your Pack can unlock it by eating a Human Heart themselves",
+        "type": "Other"
+      },
+      {
+        "type": "Companions",
+        "value": "Persuade Allison Argent to become your Beta without Capturing her",
+        "reward": "Allison Argent capture and a +50% to all Captures that are either Hunters of some type or Archers."
+      },
+      {
+        "type": "TX Tickets",
+        "reward": "1 TX Ticket (we really can't stand the 'man')",
+        "value": "Kill Gerard Argent before he can become a Kamina Master"
+      },
+      {
+        "value": "Persuade Stiles Stilinski to join your Pack",
+        "reward": "Your very own Roscoe (with infinite gas)",
+        "type": "Other"
+      },
+      {
+        "type": "Credits",
+        "value": "Persuade Scott McCall to join your Pack",
+        "reward": "20 Credits (is it really worth it?)"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "No Outside Abilities. Magic is allowed only at low levels."
+      },
+      {
+        "value": "You can't leave until you are an Alpha"
+      },
+      {
+        "value": "You must make at least 3 Betas yourself"
+      },
+      {
+        "value": "Extra Origin is a Must. Spending 1 Credit makes you a normal human that gets bit on the same day as Scott McCall. Spending 10 makes you a Born Werewolf of the Hale Pack that survived the fire but was left behind. Your name need not be Hale but your WW Parent must have been Bitten by Talia"
+      }
+    ],
+    "uid": "XIhlj"
+  },
+  {
+    "scope": "Standard",
+    "author": "FinSexual92",
+    "budget": 0,
+    "reward": "Company Clones of The OTP (altered to your preferences) or their combined Credit Value",
+    "conditions": [
+      {
+        "value": "No Bindings on the OTP or the Pretender"
+      },
+      {
+        "value": "Six Months to get them to admit something may be there"
+      },
+      {
+        "value": "Do not involve yourself in the OTP"
+      }
+    ],
+    "loca": "Generic",
+    "rewardType": "Companions",
+    "objectives": [
+      {
+        "reward": "Plushie of the Pretender",
+        "type": "Other",
+        "value": "Outright kill the Pretender and get away with it"
+      },
+      {
+        "value": "Turn your OTP into a OTH (One True Harem)",
+        "type": "Companions",
+        "reward": "Company Clones of the OTH, the Pretender and 50 Credits per extra person. Or the combined Credit Value of the OTH with the 50 Credit bonus on top"
+      },
+      {
+        "value": "Capture the biggest condemner of the OTP (that isn't the Pretender) and keep them barefoot and pregnant until the OTP is set in stone. (Free Gender Swap should they be a guy, though no one else will notice. Doesn't need to be you knocking them up.)",
+        "type": "Credits",
+        "reward": "Credit Value of the condemner is doubled"
+      }
+    ],
+    "desc": "Have you ever been annoyed that the Protagonist, or one of their friends, settles into a relationship you believe to be below them or unhealthy (as if we have any room to talk)?\n\nWell, we need more positive Karma so we're letting you have this easy mission. Go to a world and ensure your OTP comes true there. Regardless of the Pretender's wishes.",
+    "source": "",
+    "title": "That is NOT my OTP",
+    "image": "",
+    "uid": "vdKHN"
+  },
+  {
+    "author": "FinSexual92",
+    "title": "Call Me Batman",
+    "desc": "Everyone goes for the Heroes with the best powers. This is especially true with the Quirkest Nature of MHA's Society. Your mission is to become a known Hero in such a society without powers at all. That means no Quirk, no Sacred Gear, not even a Noble Phantasm.",
+    "rewardType": "Other",
+    "reward": "Gain a Batcave underneath every property you own/reside in as a permanent address. It will be stacked with everything you need to make your Gadgets and Suits, materials renewing on a weekly basis.",
+    "budget": 100,
+    "objectives": [
+      {
+        "type": "Credits",
+        "reward": "5 Credits per deed (doing multiple things to achieve one deed still counts as one)",
+        "value": "Do a small Heroic deed in an official capacity. (Repeatable)"
+      },
+      {
+        "reward": "A T4 and a T5 Superhero/Supervillain Companion Ticket",
+        "type": "Companions",
+        "value": "Be Acknowledged as one of the Big Three of your Class"
+      },
+      {
+        "type": "Perks",
+        "value": "Achieve a Harem without raising suspicions. (3 Companions Minimum)",
+        "reward": "Talent Sharing Perk of your Choice per Companion"
+      },
+      {
+        "value": "Capture (as a Hero, not a Contractor) Tomura Shigiraki during the USJ Raid",
+        "type": "Perks",
+        "reward": "Fatality Defence Perk"
+      },
+      {
+        "type": "Other",
+        "value": "Rescue Eri from Overhaul before the raid on the Yakuza",
+        "reward": "Time Manipulation Abilities added to your Home/Demiplane."
+      },
+      {
+        "type": "Other",
+        "value": "Reach the Top 10 Hero Rankings before leaving MHA",
+        "reward": "Your own Watchtower in your Demiplane"
+      },
+      {
+        "type": "Other",
+        "value": "Capture a Supervillain (as a Contractor)",
+        "reward": "Halves the Capture time of any non-Government Superhero/Supervillains Companions. (Those that work under extreme duress like the Suicide Squad form DC do not count as Government Companions)"
+      },
+      {
+        "value": "Found A Hero Agency and keep it open for a year with at least 10 Employees",
+        "type": "Other",
+        "reward": "The Hero Agency will be accessible and considered Legitimate in all Superhero Worlds from now on."
+      },
+      {
+        "value": "Defeat Endevour one on one",
+        "reward": "Rei Todoroki (Clone)",
+        "type": "Companions"
+      },
+      {
+        "value": "Defeat All Might (pre-retirement)",
+        "type": "Companions",
+        "reward": "Nana Shimura (Clone) and One-For-All Power (Izuku Midoriya version) Copy in your next World"
+      }
+    ],
+    "loca": "My Hero Academia",
+    "scope": "Grand",
+    "source": "",
+    "image": "",
+    "conditions": [
+      {
+        "value": "No Powers. Bindings still work as Bindings, but nothing more."
+      },
+      {
+        "value": "You must not knowingly break the Law. Bending it is fine."
+      },
+      {
+        "value": "If you Bind someone, you mustn't raise suspicions that you are more than a Quirkless person."
+      },
+      {
+        "value": "Graduate from a Hero School with the respect of at least 50% of your teachers."
+      }
+    ],
+    "uid": "rzXhM"
+  },
+  {
+    "scope": "Standard",
+    "rewardType": "Credits",
+    "image": "https://safebooru.org//images/2863/909c22d8c59ff48cd248268d0bbb38d3bedb98c2.jpg",
+    "conditions": [],
+    "source": "",
+    "budget": 300,
+    "reward": "500",
+    "objectives": [
+      {
+        "value": "All Masters survive",
+        "type": "Credits",
+        "reward": "200"
+      },
+      {
+        "type": "Credits",
+        "reward": "200",
+        "value": "All Servants survive"
+      },
+      {
+        "type": "Credits",
+        "reward": "300",
+        "value": "No Survivors (Kill all other servants and masters)"
+      },
+      {
+        "value": "Heal Sakura",
+        "reward": "100",
+        "type": "Credits"
+      },
+      {
+        "value": "Prevent Kirei from betraying Bazett",
+        "reward": "100",
+        "type": "Credits"
+      },
+      {
+        "value": "Capture (or Kill) Gilgamesh",
+        "type": "Credits",
+        "reward": "200"
+      },
+      {
+        "type": "Credits",
+        "reward": "200",
+        "value": "Cleanse the Grail"
+      },
+      {
+        "type": "Credits",
+        "value": "Capture all Masters and Servants (not including Gilgamesh)",
+        "reward": "200"
+      }
+    ],
+    "author": "Dr_Mike",
+    "desc": "The Fifth Holy Grail War is an absolute mess. One of our clients would like you to fix that. Your main objective is to eliminate all Masters and Servants who are participating. You can accomplish this in a variety of ways, from killing everyone to persuading them to drop out. You do not have to be a master (or even a magic user) to accomplish this mission.\n\nPossessing TS Magic User or any stronger logic based caster (such as TS D&D Wizard) will enable you to summon a servant. Your servant is not automatically bound, but you do gain the usual three command seals. You cannot pick your servant, but if you can find an artifact associated with a servant you can shift the summoning towards that servant. You start three weeks before Heracles is summoned (November 2003). ",
+    "title": "Grail Panic",
+    "loca": "Nasuverse",
+    "uid": "tTaRU"
+  },
+  {
+    "image": "https://i.pinimg.com/564x/22/eb/9f/22eb9f61c84a0d0f192667f16ceafad0.jpg",
+    "loca": "BTVS/Angel",
+    "budget": 140,
+    "reward": "Template Stacking I (Vampiric Powers) for a member of your retinue",
+    "source": "",
+    "objectives": [],
+    "rewardType": "Perks",
+    "desc": "Get Angel to impregnate Darla before she dies. Their child is a hero of prophecy and canonically the parent of the incarnation of higher being Jasmine.",
+    "conditions": [
+      {
+        "value": "Don't capture either of Darla and Angel before the child is born"
+      }
+    ],
+    "scope": "Quick",
+    "author": "Silveod",
+    "title": "Early eugenics miracle baby",
+    "uid": "tBYcE"
+  },
+  {
     "image": "https://i.ibb.co/HnNMsfD/499650ff6011bb54bd7d20e7785cae59.png",
     "desc": "Shizuki Hitomi is for some reason convinced girls can't love girls. Convince her otherwise by having her enter a relationship with her good friend Sayaka.",
     "rewardType": "Credits",
@@ -1153,37 +1749,62 @@
     "uid": "qLAKM"
   },
   {
-    "uid": "DLdCx",
-    "scope": "Grand",
-    "title": "Offering from the Beyond",
-    "image": "https://stellaris.paradoxwikis.com/images/f/f5/Shroud_room.png",
-    "conditions": [
-      {
-        "value": "You can't choose this contract if your chosen world is not a  mundane world.(magic free, Metashift can be used to make the contract available)"
-      },
-      {
-        "value": "You are Limited to Tier 6 Until the 10 Years are up or you succesfully awaken enough Psionics to reach 50%."
-      }
-    ],
     "objectives": [
       {
-        "value": " Reach 50% Psionic population on your world before 10 years are up.",
-        "type": "Perks",
-        "reward": "gain Blessed Talent and 30 Credits"
+        "value": "Composer of strands : Succesfully defeat the enemy swarm and it's king/queen in under a year.",
+        "reward": "25% off on DP points for Colony Upgrade.",
+        "type": "Other"
       },
       {
-        "reward": "50% off  Advanced Template Stacking(Arcane) ",
-        "value": "Create a Psionic Archive of all of your Teachings and leave it behind to be discovered before 10 years are up.(The Archive must have all the information required to become a Tier 6 Psionic at a minimum, wether you choose to make is soo only Psionics can learn from the Archive is up to you)",
+        "reward": "1 Template Stacking of Psionic and 1 Template Stacking of any individual that's in your starting world for your retinue, or 40 credits.",
+        "type": "Perks",
+        "value": "Eater of worlds: Consume 45% of the super-powered population before the year ends."
+      },
+      {
+        "reward": "1 Binding perk and 1 Lure.",
+        "value": "Instrument of Desire:  Acquire 6+ Retinue Members in under 2 months with either Tantric arts or Hypnosis App.",
         "type": "Perks"
+      },
+      {
+        "reward": "Covert Talent and 70 Credits.",
+        "value": "The Whisperers of the Void: Convince the Conspiracy group to dissolve in under 1 year.",
+        "type": "Other"
       }
     ],
-    "desc": "The Stellaris Shroud, a more toned down version of Warhammer 40k's warp and  regular customers of the Company. Incomprehensibly powerful ,they wish to enter other Galaxies and spread their influence into and soo they either attempt to do it themselves(the hard way, very energy intensive) or give gifts to the contractors of the company(preferably those that dont have alot of credits) to become the link to that Universe until they can establish a more permanent connection in exchange (depending on which Entity you choose the offering is different) they'll give you some nice boons to start off with and also change your world abit more, all they ask is to sit in your chosen world for 10 years until they establish a permanent connection to that universe. each year that passes 5% of the population will 'awaken' with psionic powers until it reaches 50%  after which youll be allowed to leave. Now let's get to the offerings each entity provides do note that by default you get a template stacking of Psionic  from all of them. (also as time goes on , Zro ,the psionic enhancing and highly addictive drug will become more common on your world with Deposits of it appearing out of nowhere)\nComposer of Strands:  Body Tune-up, Athletic Talent and Everlasting Talent for free. every year that passes a random plot relevant person gets Psionic powers Rated at Tier 6.( if there are no more plot relevant Characters then Composer will choose a random individual and will influence their path towards you)\nEater of Worlds: Martial Talent ,Psychic Talent and TS II for Psionic for free. Awakened Psionics start at  Tier 5. Every year there's a 50% chance a plot relevant character 'disappears'(read: gets eaten) as well as 2% of the non-powered population.\n Instrument of Desire : Soul Talent , Sticky Fingers and all Hypnosis App and Tantric Arts binding perks are 50% off. Every year that passes people become more needy and rebelious eventually leading to full-on rebellions , your most favorite Waifu from this World gains the Nymphomaniac trait.\nWhisperers in the Void : Covert Talent, Science Talent and Performance Talent or Communication talent. The First Psionics that awaken will be influenced to create a  Shadow Conspiracy Organization between eachother with the Sole purpose of secretly overthrowing all other governments and establishing themselves as the Global Government. The first Psionics start off at a higher tier than everyone else (Tier 6). Substance abuse(Specifically Zro) is more common in the Psionic Population",
-    "reward": "a Heritage Perk for free.",
+    "uid": "DLdCx",
+    "image": "https://stellaris.paradoxwikis.com/images/f/f5/Shroud_room.png",
+    "scope": "Grand",
+    "conditions": [
+      {
+        "value": "This contract can't be picked if your starting world is above DR 7."
+      },
+      {
+        "value": "Your main Objective is to survive 5 years in your starting world, while every year 10% of the population will awaken as psionics."
+      },
+      {
+        "value": "Composer of Strands: When you first enter you world, Composer will  empower whoever you consider to be an Antagonist/Villain with the Alterzelu Symbiote perk and reducing the hatching time of his swarm by 2 days. You must kill/capture them and subsume their swarm into yours."
+      },
+      {
+        "value": "The Eater of Worlds :  You must Consume 15% of the super-powered population in your first year. \tYour Starting World will slowly start to form fierce Warrior cultures or Militarist factions. All Awakened Psionics will be Tier 5 and in the first year 30% of the population will be affected by the awakening."
+      },
+      {
+        "value": "The Instrument of Desire : Acquire 6+ Retinue Members .Your Patron will slowly increase the material needs and amenities of the population every 4 months."
+      },
+      {
+        "value": "The Whisperers of the Void: The Psionics that Awaken will begin forming a Shadow Conspiracy Group, your objective is succesfully install yourself as supreme Leader of the Group or Destroy them. These Psionics will have Mind Defense and start at Tier 5."
+      },
+      {
+        "value": "Do note that you CAN only pick one of these 4 Patrons."
+      }
+    ],
+    "title": "Offering from the Beyond",
+    "desc": "The Stellaris Shroud, a place in habited by incomphrehensibly powerful entities and Regular Customers and traders with the company, great powers to the contractor at the cost of no longer being able to visit their own starting world, for those that don't have alot of credits to start with or have taken two dime challenge. accepting this contract will give you Template stacking of Psionic(Stellaris), low level telekinesis, telepathy and precognition with a strong psionic shield at the start, and whatever patron you choose some extra goodies strapped with more conditions. The Following Patrons are available with their respective extra powerups : \nThe Composer of Strands: Alterzelu Symbiote Perk permanently and a temporary -5 DP points on all(except 5 DP cost buildings) buildings for the remainder of this contract.\n The Eater of Worlds: 1 Template Stacking of your choice and 1 Template Stacking that gives you powers to drain/eat the energies of other psionics or super-powered individuals.\n The Instrument of Desire: 50% off on Hypnosis app and Tantric Arts perks for the remainder of the contract and 2 free Lures.\n The Whisperers of the Void: one purchase of Information Defense and Mind Defense. Temporary Covert Talent for the remainder of the Contract.",
     "rewardType": "Perks",
-    "loca": "Generic",
+    "author": "Demontty",
     "source": "",
-    "budget": 35,
-    "author": "Demontty"
+    "reward": "a Heritage Perk for free.",
+    "loca": "Generic",
+    "budget": 35
   },
   {
     "title": "It's more of an omniversal fistula than an abyss, really",
@@ -4705,43 +5326,7 @@
     "uid": "BpxKR"
   },
   {
-    "source": "",
-    "reward": "Obtain the First Flame which can be removed from the setting, and has enough sapience to communicate, gaining more as time goes on. Has dominion over Flame, Passion and Life within its influence. Whilst used, allows those linked to you in some form to recover and for you to create bonfires to extend its influence; you may summon the coiled swords used to create bonfires at will as they are required for the bonfires to work. You gain no credits from capturing it as it comes pre-captured and is equivalent to a T9 waifu in capabilities. Gain 200 credits alongside a purchase of Exit Stage Left if you do not have it already, or an additional 5 credits if you do.",
-    "loca": "Dark Souls",
-    "objectives": [
-      {
-        "reward": "Knowledge and theory of the Soul Sorcery involved with her Lifehunt Scythe and two choice sorceries related to ice.",
-        "value": "Free Crossbreed Priscilla from the Painted World.",
-        "type": "Other"
-      },
-      {
-        "reward": "Your own Pyromancy Flame equivalent to that of the Witch of Izalith alongside basic pyromancies such as forming a simple spear of flame.",
-        "value": "Return Chaos Witch Quelaag to her human form. Save her sister and return her to her human form as well.",
-        "type": "Other"
-      },
-      {
-        "value": "Loot Seath's entire library before Logan finds it.",
-        "type": "Perks",
-        "reward": "Corruption Defense x1"
-      },
-      {
-        "value": "Permanently end Manus through combat.",
-        "reward": "An abyssal version of the First Flame with no sentience under your control. Allows your body itself to interact with intangible beings as if they were solid, alongside allowing equipment coated with it to do the same. Other effects require yourself discovering them.",
-        "type": "Other"
-      },
-      {
-        "value": "Capture the second Chosen Undead instead of killing them.",
-        "reward": "Chosen Undead gets a free Template Stacking of a Maiden.",
-        "type": "Perks"
-      },
-      {
-        "value": "You or one of your retinue members tame Sif before capturing them.",
-        "type": "Perks",
-        "reward": "Sif gets a Template Stacking of Fenrir, while the retinue member that did it gets a Template Stacking of Artorias."
-      }
-    ],
-    "uid": "lNnbG",
-    "budget": 1500,
+    "scope": "Standard",
     "conditions": [
       {
         "value": "The contractor needs to link the flame, only then will humanity be freed. Environmental Defense protects from the flame itself but not the process of fueling it; Inexhaustible is recommended for that."
@@ -4750,12 +5335,48 @@
         "value": "Only the contractor, you, can link the flame. This is permanent, and it has roughly the same amount of sentience as a Shroud."
       }
     ],
-    "image": "http://assets.vg247.com/current//2016/04/dark_souls_3_kiln_of_the_first_flame.jpg",
-    "scope": "Grand",
-    "desc": "Time and time again, there has been a chosen undead appointed to link the First Flame once again. This time we've specifically made a scenario for someone to do the opposite. Upon choosing this mission you take the place of the Chosen Undead, with the objective of freeing humanity from the First Flame. You start off in the same place as the Chosen Undead would at the beginning of their journey with their very curse applied to you, regardless of defenses, but this is additive to what you had before. \n\nShortly after the mission starts another Chosen Undead will be awakened to link the flame once again, and will be hostile whilst unbound, influenced by those who are set on linking the flame still - negotiation is not an option.",
+    "author": "Sleepy Fluffball™",
+    "loca": "Dark Souls",
+    "uid": "lNnbG",
+    "objectives": [
+      {
+        "value": "Free Crossbreed Priscilla from the Painted World.",
+        "type": "Other",
+        "reward": "Knowledge and theory of the Soul Sorcery involved with her Lifehunt Scythe and two choice sorceries related to ice."
+      },
+      {
+        "reward": "Your own Pyromancy Flame equivalent to that of the Witch of Izalith alongside basic pyromancies such as forming a simple spear of flame.",
+        "type": "Other",
+        "value": "Return Chaos Witch Quelaag to her human form. Save her sister and return her to her human form as well."
+      },
+      {
+        "type": "Perks",
+        "value": "Loot Seath's entire library before Logan finds it.",
+        "reward": "Corruption Defense x1"
+      },
+      {
+        "reward": "An abyssal version of the First Flame with no sentience under your control. Allows your body itself to interact with intangible beings as if they were solid, alongside allowing equipment coated with it to do the same. Other effects require yourself discovering them.",
+        "type": "Other",
+        "value": "Permanently end Manus through combat."
+      },
+      {
+        "reward": "Chosen Undead gets a free Template Stacking of a Maiden.",
+        "type": "Perks",
+        "value": "Capture the second Chosen Undead instead of killing them."
+      },
+      {
+        "type": "Perks",
+        "value": "You or one of your retinue members tame Sif before capturing them.",
+        "reward": "Sif gets a Template Stacking of Fenrir, while the retinue member that did it gets a Template Stacking of Artorias."
+      }
+    ],
     "title": "The Missing Chosen Undead",
-    "rewardType": "Other",
-    "author": "Sleepy Fluffball™"
+    "reward": "Obtain the First Flame which can be removed from the setting, and has enough sapience to communicate, gaining more as time goes on. Has dominion over Flame, Passion and Life within its influence. Whilst used, allows those linked to you in some form to recover and for you to create bonfires to extend its influence; you may summon the coiled swords used to create bonfires at will as they are required for the bonfires to work. You gain no credits from capturing it as it comes pre-captured and is equivalent to a T9 waifu in capabilities. Gain 200 credits alongside a purchase of Exit Stage Left if you do not have it already, or an additional 5 credits if you do.",
+    "image": "http://assets.vg247.com/current//2016/04/dark_souls_3_kiln_of_the_first_flame.jpg",
+    "budget": 1500,
+    "source": "",
+    "desc": "Time and time again, there has been a chosen undead appointed to link the First Flame once again. This time we've specifically made a scenario for someone to do the opposite. Upon choosing this mission you take the place of the Chosen Undead, with the objective of freeing humanity from the First Flame. You start off in the same place as the Chosen Undead would at the beginning of their journey with their very curse applied to you, regardless of defenses, but this is additive to what you had before. \n\nShortly after the mission starts another Chosen Undead will be awakened to link the flame once again, and will be hostile whilst unbound, influenced by those who are set on linking the flame still - negotiation is not an option.",
+    "rewardType": "Other"
   },
   {
     "uid": "qLMfc",
@@ -9818,8 +10439,7 @@
     "uid": "JF7w8"
   },
   {
-    "author": "Zatch P",
-    "budget": 1,
+    "scope": "Standard",
     "conditions": [
       {
         "value": "You may only use Pokemon that have your chosen type in their final evolution stage. Not having it in earlier stages is fine. "
@@ -9828,32 +10448,38 @@
         "value": "No using things like Dragon Thrall to directly power up Pokemon."
       }
     ],
-    "desc": "Become a specialist of a single Pokemon type, capture at least a full team of 6, and collect 8 Gym Badges.",
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1032430981149364284/Screenshot_1.jpg",
+    "reward": "A free purchase of either Templete Stacking 1 or OC Donut Steel, gaining a power set appropriate for the type you've specialized in.",
     "loca": "Pokemon",
+    "budget": 1,
+    "title": "Type Specialist",
+    "uid": "jUAvp",
+    "rewardType": "Other",
+    "desc": "Become a specialist of a single Pokemon type, capture at least a full team of 6, and collect 8 Gym Badges.",
+    "author": "Zatch P",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1032430981149364284/Screenshot_1.jpg",
+    "source": "",
     "objectives": [
       {
-        "reward": "Gain the Unison perk for yourself.",
-        "value": "Compete in a Pokemon League and place at least 16th, or defeat at least 2 Elite Four Members."
+        "value": "Compete in a Pokemon League and place at least 16th, or defeat at least 2 Elite Four Members.",
+        "type": "Perks",
+        "reward": "Gain the Unison perk for yourself."
       },
       {
+        "type": "Companions",
         "reward": "Free Tier 7 or lower Pokemon of your chosen type.",
         "value": "Win a Pokemon League or defeat all 4 Elite Four members."
       },
       {
         "reward": "Free Tier 9 or lower Pokemon of your choice. If not of your type, they know a move that functions like a self-targeting Forest's Curse, temporarily adding your chosen type to them (potentially giving 3 types) when used.",
-        "value": "Defeat a Champion or be recognized as a Master of your Type"
+        "value": "Defeat a Champion or be recognized as a Master of your Type",
+        "type": "Companions"
       },
       {
-        "reward": "1 Key Stone and 3 Mega Stones of your choice.",
-        "value": "Capture a Legendary or Mythical Pokemon of your chosen type using only in-universe methods."
+        "type": "Other",
+        "value": "Capture a Legendary or Mythical Pokemon of your chosen type using only in-universe methods.",
+        "reward": "1 Key Stone and 3 Mega Stones of your choice."
       }
-    ],
-    "reward": "A free purchase of either Templete Stacking 1 or OC Donut Steel, gaining gaining a power set appropriate for the type you've specialized in.",
-    "scope": "Standard",
-    "source": "",
-    "title": "Type Specialist",
-    "uid": "jUAvp"
+    ]
   },
   {
     "author": "Heaven Canceler",
@@ -11935,7 +12561,10 @@
     "budget": 55
   },
   {
-    "author": "irugaa0",
+    "budget": 80,
+    "uid": "YxpBK",
+    "scope": "Grand",
+    "desc": "Support Kanto/Johto, Hoenn, Sinnoh, Unova, or Kalos, for the duration of the war.",
     "conditions": [
       {
         "value": "Must fight for any of the sides."
@@ -11944,48 +12573,55 @@
         "value": "Must fight for a minimum of 6 Months. "
       }
     ],
-    "desc": "Support Kanto/Johto, Hoenn, Sinnoh, Unova, or Kalos, for the duration of the war.",
+    "author": "irugaa0",
+    "reward": "Any 3 pokemons of choice + 250 Credits.",
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/992865715558289439/c2afb5e29456e1dcd56a6bc9d0f83d14a59c56e3_hq.jpg",
+    "source": "",
+    "rewardType": "Other",
     "loca": "Pokemon",
+    "title": "Regional Wars",
     "objectives": [
       {
         "reward": "50 credits + All pokemons currently owned. ",
+        "type": "Other",
         "value": "Fight the entire war (Variable - Maximum 1 Year.)"
       },
       {
+        "type": "Credits",
         "reward": "10 - 100 credits",
         "value": "Receive War Merits"
       },
       {
-        "reward": "25 credits per Gym Leader",
-        "value": "Kill a Captain (Gym Leader) of an enemy region "
+        "value": "Kill a Captain (Gym Leader) of an enemy region ",
+        "type": "Credits",
+        "reward": "25 credits per Gym Leader"
       },
       {
         "reward": "200 credit + 20% discount in any Waifu/Husbando",
+        "type": "Other",
         "value": "Kill all Captains (Gym Leader) of an enemy region "
       },
       {
+        "value": "Kill an Elite 4 member of a enemy region.",
         "reward": "100 credits ",
-        "value": "Kill a Elite 4 member of a enemy region."
+        "type": "Other"
       },
       {
-        "reward": "150 credits + 40% discount",
-        "value": "Kill all Elite 4 members of a enemy region."
+        "value": "Kill all Elite 4 members of a enemy region.",
+        "type": "Other",
+        "reward": "150 credits + 40% discount"
       },
       {
-        "reward": "500 credits + 20 discount",
-        "value": "Kill the champion of a enemy region"
+        "type": "Other",
+        "value": "Kill the champion of a enemy region",
+        "reward": "500 credits + 20 discount"
       },
       {
         "reward": "2000 credits + 50% discount + Any tier 6 or Lower Waifu/Husbando",
-        "value": "Kill all the champion of a enemy region"
+        "value": "Kill all the champions of a enemy region",
+        "type": "Other"
       }
-    ],
-    "reward": "Any 3 pokemons of choice + 250 Credits.",
-    "scope": "Grand",
-    "source": "",
-    "title": "Regional Wars",
-    "uid": "YxpBK"
+    ]
   },
   {
     "conditions": [

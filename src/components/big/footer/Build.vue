@@ -274,8 +274,8 @@ const originText = computed(() => {
     'Drop-In': 'Dropped-In',
     'Walk-In': `Walked-In as <b>${startingOrigin.value.character}</b> of T${startingOrigin.value.tier}${startingOrigin.value.hr ? ` [<span class="text-gray-400">${archetype[startingOrigin.value.hr]}</span>]` : ''}`,
     'Extra': `'Extra' with <b>${startingOrigin.value.cost}</b> additional cost`,
-    'Substitute': `Substitute as a <b>${startingOrigin.value.character}</b> of T${startingOrigin.value.tier}${startingOrigin.value.hr ? ` [<span class="text-gray-400">${archetype[startingOrigin.value.hr]}</span>]` : ''}`,
-    'Possess': `Possess a <b>${startingOrigin.value.character}</b> of T${startingOrigin.value.tier}${startingOrigin.value.hr ? ` [<span class="text-gray-400">${archetype[startingOrigin.value.hr]}</span>]` : ''}`,
+    'Substitute': `<b>${startingOrigin.value.character}</b> (Substitute) of T${startingOrigin.value.tier}${startingOrigin.value.hr ? ` [<span class="text-gray-400">${archetype[startingOrigin.value.hr]}</span>]` : ''}`,
+    'Possess': `<b>${startingOrigin.value.character}</b> (Possess) of T${startingOrigin.value.tier}${startingOrigin.value.hr ? ` [<span class="text-gray-400">${archetype[startingOrigin.value.hr]}</span>]` : ''}`,
   } as Record<string, string>
 
   return variants[startingOrigin.value.title]

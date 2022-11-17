@@ -42,6 +42,7 @@ const appsList = [
   { icon: 'emojione:kiss-mark', name: 'Companion / Familiar / Sell game', component: 'KissKillMarry', color: '#5a933d' },
   { icon: 'noto-v1:wrapped-gift', name: 'Gacha', component: 'Gacha', color: '#5a933d' },
   { icon: 'fa-solid:dungeon', name: 'Dungeon', component: 'Dungeon', color: '#555555' },
+  { icon: 'game-icons:alien-bug', name: 'Symbiote', component: 'Symbiote', color: 'rgb(112 17 212)' },
 ]
 
 const apps = computed(() => {
@@ -67,6 +68,7 @@ const appComponents = {
   Discounts: defineAsyncComponent(() => import('./apps/Discounts.vue')),
   Gacha: defineAsyncComponent(() => import('./apps/Gacha.vue')),
   Dungeon: defineAsyncComponent(() => import('./apps/Dungeon.vue')),
+  Symbiote: defineAsyncComponent(() => import('./apps/Symbiote.vue')),
 }
 
 const appComponent = computed(() => appComponents[appName.value as keyof typeof appComponents])

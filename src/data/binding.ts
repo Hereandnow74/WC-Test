@@ -336,7 +336,7 @@ export const bindings: PerkFull[] = [
 
   {
     uid: 'QrpgY',
-    title: 'Alterzelu Symbiote',
+    title: 'Alterzelu Symbiote Legacy',
     cost: 100,
     category: 'Binding',
     type: 'Symbiote Legacy',
@@ -369,7 +369,7 @@ If you Possessed or Substituted a waifu or are otherwise female, you may act as 
     type: 'Symbiote Legacy',
     legacy: true,
     image: 'https://i.ibb.co/jMhSPRT/Universal-Bus.jpg',
-    whitelist: ['Alterzelu Symbiote'],
+    whitelist: ['Alterzelu Symbiote Legacy'],
     desc: `
 <p>Symbiote larvae may now target digital entities. A larva changes the shape of its “tongue”  to interface with any external computer port, then projects itself into a representation of virtual space. (If a virtual space already exists, the larva will simply enter that instead.) Once there, it may stalk and convert the locals as normal. Software AI or brain uploads that do not have physical bodies will manifest into one at the real-world location of the larva, skipping to the penultimate stage of the normal process.</p>
 <p>End-users of consumer VR products are also vulnerable. Their physical bodies will be transformed on-site; they may stay logged in and convert others or log out and search for their new master’s physical location on their own time. The conversion will disable any anti-logout prevention or punishment systems. Existing symbiote hosts may also log in; their powers and transformative fluid will function in digital worlds as well.</p>`,
@@ -386,7 +386,7 @@ If you Possessed or Substituted a waifu or are otherwise female, you may act as 
     freebies: {
       talentPerks: [{ title: 'Psychic Talent', cost: 0, count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Psychic Talent' }], count: 1 }],
     },
-    whitelist: ['Alterzelu Symbiote'],
+    whitelist: ['Alterzelu Symbiote Legacy'],
     desc: 'This adds a number of upgrades to the symbiote’s functionality. You and all waifus benefit from Psychic Talent, as if you had purchased Basic Talent Sharing (Psychic). (Take Psychic Talent for free. If you already have Basic Talent Sharing (Psychic), take a full refund for it.) The lowest tier of targets that can fight off a symbiote larva will increase by 1 for each effective tier (after step 6) that the queen is above 7: Tier 6 targets can no longer fight off a Tier 8 queen’s larvae, while only Tier 10 and 11 targets can fight off larvae produced by a Tier X queen. On the target side, use their effective tier after step 6, but skip steps 4 and 5. Finally, symbiote larvae now emit a weak psychic field that reduces a target’s willingness to resist future attacks every time she fights one off. This reduction stacks indefinitely until she finally gives in.',
   },
   {

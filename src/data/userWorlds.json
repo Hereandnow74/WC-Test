@@ -3028,7 +3028,7 @@
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/992742725600432129/DSC_6222a_2048x2x.webp"
   },
   {
-    "worldName": "Hyakka Ryoran",
+    "worldName": "Hyakka Ryouran Samurai Girls",
     "rating": 4,
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/992078352510885888/1629170594.19550.45250.jpg"
   },
@@ -4958,7 +4958,6 @@
   {"worldName":"Beastars","rating":4,"image":"https://www.kolpaper.com/wp-content/uploads/2021/03/Beastars-Wallpaper-11.jpg"},
   {"worldName":"Dead or Alive","rating":3,"image":"https://getwallpapers.com/wallpaper/full/7/5/c/401642.jpg"},
   {"worldName":"Lobotomy Corporation","rating":7,"image":"https://cdn.donmai.us/original/3f/16/__angela_tiphereth_a_netzach_malkuth_gebura_and_7_more_project_moon_and_1_more_drawn_by_kankan33333__3f16951867c823cc5f20f2b733c7b788.jpg"},
-  {"worldName":"My Son is So Cute I Just Cant Help Myself","rating":3,"image":"https://mangametalsite.files.wordpress.com/2017/10/aaaab.jpg?w=1024"},
   {"worldName":"A-Channel","rating":1,"image":"http://images4.fanpop.com/image/photos/21700000/run-yuuko-tooru-nagi-a-channel-21705269-2560-1600.jpg"},
   {"worldName":"Absolute Duo","rating":3,"image":"https://animetide.com/wp-content/uploads/absolute-duo-season-2.jpg"},
   {"worldName":"Air Gear","rating":3,"image":"https://is1-ssl.mzstatic.com/image/thumb/N4McP5zIujRFfNpVCoLnKA/1200x675.jpg"},
@@ -4985,12 +4984,15 @@
   {"worldName":"Trigun","rating":6,"image":"https://i.imgur.com/w7u0QbL.jpg","condition":[{"name":"Crash Era","rating":7},{"rating":6,"name":"Post-Colonization"}]},
   {"worldName":"Redo of Healer","rating":7, "image":"https://cdn.discordapp.com/attachments/925963686433132644/1038854551496835153/wp8438651.jpg"},
   {"worldName":"Blend S","rating":1,"image":"https://cdn.discordapp.com/attachments/925963686433132644/1038854818078412880/890913.jpg"},
-  {"worldName":"Demon Mother: My Son is so Cute, I Just Can't Help Myself!","rating":3,"image":"https://cdn.discordapp.com/attachments/925963686433132644/1038855212552691732/CoI-EElUEAARhLV.jpg","condition":[{"name":"Human Demon War","rating":7},{"name":"Post Human Demon War","rating":3},{"rating":5,"name":"Demon Rebellion"}]},
+  {"worldName":"My Son is So Cute I Just Cant Help Myself","rating":3,"image":"https://cdn.discordapp.com/attachments/925963686433132644/1038855212552691732/CoI-EElUEAARhLV.jpg","condition":[{"name":"Human Demon War","rating":7},{"name":"Post Human Demon War","rating":3},{"rating":5,"name":"Demon Rebellion"}]},
   {"worldName":"Primal","rating":7,"image":"https://cdn.discordapp.com/attachments/925963686433132644/1038853653978693823/primal-61884783d6575.jpg"},
   {"worldName":"Rimworld","rating":7,"image":"https://i.ytimg.com/vi/nBduHE6sDkc/maxresdefault.jpg","additional":""},
   {"worldName":"Westworld","rating":5,"image":"https://i.imgur.com/sKQ8YqR.jpg"},
   {"worldName":"Assassin's Creed","rating":4,"image":"https://www.throneofgeeks.com/wp-content/uploads/2022/09/AC.webp","condition":[{"name":"AC Odyssey","rating":5},{"name":"AC Origins","rating":4},{"name":"AC Valhalla","rating":5},{"name":"AC Syndicate","rating":4},{"name":"AC Unity ","rating":4},{"rating":4,"name":"AC Black Flag "}]},
   {"worldName":"Image Universe","rating":5,"image":"https://i.ytimg.com/vi/4xc5dIr6_8Q/maxresdefault.jpg","condition":[{"name":"Spawn","rating":8}]},
   {"worldName":"Lollipop Chainsaw","rating":5,"image":"https://img.game-news24.com/2022/07/James-Gunns-Scult-Game-Lollipop-Chainsaw-Is-Making-A-Remake-Again.png"},
-  {"worldName":"Reincarnated as a Sword","rating":7,"image":"https://m.ani4u.org/wp-content/uploads/2022/10/game4v-Reincarnated-as-a-Sword-anime-6-1632470742-31-1140x647-1.jpg"}
+  {"worldName":"Reincarnated as a Sword","rating":7,"image":"https://m.ani4u.org/wp-content/uploads/2022/10/game4v-Reincarnated-as-a-Sword-anime-6-1632470742-31-1140x647-1.jpg"},
+  {"worldName":"Cardfight Vanguard","rating":4,"image":"https://i.ytimg.com/vi/Yf2NkpOuyV0/maxresdefault.jpg","additional":"You can buy decks depending on the time you appear.\n\nYou are unable to Buy Link Joker Decks until the Link Joker Arc.\n\nYou are unable to buy Royal Paladins, Shadow Paladins or Kagero Clan decks during the Asia Circuit.\n\nDuring Link Joker Arc, you may acquire \"Reverse\" Units of select cards.","condition":[{"rating":4,"name":"Season 1"},{"name":"Season 2 - Asia Circuit","rating":5},{"rating":6,"name":"Season 3 - Link Joker "}]},
+  {"worldName":"Knights of Sidonia","rating":7,"image":""},
+  {"worldName":"The Loud House","rating":1,"image":"https://deadline.com/wp-content/uploads/2022/03/The-Loud-House.jpg?w=681&h=383&crop=1"}
 ]

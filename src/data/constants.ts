@@ -30,6 +30,7 @@ export const nicknames = [
   'TaiGambol',
   'Bryce C.',
   'Bobnewland',
+  'ClayUndead',
   'BenFang322',
   'Jason C.',
   'Cole',
@@ -403,7 +404,7 @@ export async function getChars(): Promise<DBCharacter[]> {
 
 export async function getChanges() {
   if (isEmpty(changes.value))
-    changes.value = (await import('~/data/whatChanged/9Changes.json')).default
+    changes.value = (await import('~/data/whatChanged/newChanges.json')).default
 }
 
 getChanges()
