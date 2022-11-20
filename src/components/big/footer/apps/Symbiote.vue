@@ -19,17 +19,145 @@
       </div>
       <div class="flex gap-1 items-center">
         <Select v-model="activeDungeonInd" class="flex-grow" :options="dungeonList" :placeholder="dungeonList.length ? '': 'You don\'t have any symbiote bases yet'" />
-        <Button v-if="activeDungeonInd !== ''" title="Remove Base" icon="fluent:delete-20-filled" @click="deleteDungeon(activeDungeonInd)" />
+        <Button v-if="activeDungeonInd !== undefined" title="Remove Base" icon="fluent:delete-20-filled" @click="deleteDungeon(activeDungeonInd)" />
         <Button title="Add Base" icon="fluent:add-circle-16-regular" @click="addBase" />
       </div>
-      <div v-if="activeDungeonInd !== ''">
-        <div>Larva maturation time bonus: {{ 0 }}</div>
-        <div>All units incubation time bonus: {{ 0 }}</div> (1 + 0,5) ^ N buildings / 20 + Leftover * 2.5
-        <Foldable v-if="boughtPerks['Hatchery']" title="Hatcheries" :is-open="true" class="flex flex-col gap-1" title-style="text-amber-400">
-          <div v-for="hatch, i in symbiotes[activeDungeonInd].Hatchery" :key="i">
-            {{ hatch }}
+      <div v-if="activeDungeonInd !== undefined">
+        <div class="flex gap-1">
+          <Input v-model="symbiotes[activeDungeonInd].name" class="pb-2 flex-grow" label="Name" />
+          <span v-if="usedDP" :class="usedDP > availableDP ? 'text-red-400' : 'text-green-400'">{{ usedDP }} / {{ availableDP }}</span>
+        </div>
+        Queen can produce one clutch in 4 weeks, and the clutch will spend additional 2 weeks in incubation
+        <div class="text-green-500 flex flex-col gap-1">
+          <NumberInput label="Buzzers" :min="0" :increment="24" />
+          <NumberInput label="Floaters" :min="0" :increment="4" />
+          <NumberInput label="Globsters" :min="0" :increment="16" />
+          <NumberInput label="Skitterers" :min="0" :increment="8" />
+        </div>
+        <div v-if="boughtPerks['Hatchery']" title="" class="flex flex-col gap-1">
+          <Button
+            v-if="boughtPerks['Lair']"
+            label="Add new Creep zone"
+            title=""
+            size="Small"
+            class="mt-2 self-start px-4"
+            bg-color="bg-purple-700"
+            @click="addZone"
+          />
+          <div class="flex flex-col gap-4">
+            <Foldable
+              v-for="base, i in symbiotes[activeDungeonInd].bases"
+              :key="i"
+              :title="`Creep Zone #${ i+1 } [<span class='text-green-300'>${totalCreepZone[i]}km²</span>/<span class='text-red-300'>${usedFootprint[i] >= 1000000 ? (usedFootprint[i] / 1000000).toFixed(1) + 'km²' : usedFootprint[i] + 'm²'}</span>]`"
+              :is-open="true"
+              class="flex flex-col gap-2"
+              title-style="text-amber-400 text-xl"
+            >
+              <template #buttons>
+                <fluent:delete-20-filled class="text-gray-400 hover:text-red-500 cursor-pointer" @click="deleteZone(i)" />
+              </template>
+              <Foldable :title="`Larva maturation time <span class='text-pink-300'>${Math.floor(maturationTimeBonus[i] * 100000) / 1000}%</span> from base`" title-style="text-amber-400">
+                <table class="unitsTable">
+                  <thead>
+                    <th>Name</th>
+                    <th>Base</th>
+                    <th>Usable</th>
+                    <th>Adult</th>
+                    <th>Elder</th>
+                  </thead>
+                  <tbody>
+                    <tr v-for="info, unit in unitsInfo" :key="unit">
+                      <td class="text-green-500">
+                        {{ unit }}
+                      </td>
+                      <td><span class="text-blue-300">{{ toReadableTime(info.junior) }}</span></td>
+                      <td><span class="text-blue-300">{{ toReadableTime(info.junior * maturationTimeBonus[i]) }}</span></td>
+                      <td>
+                        <span v-if="info.adult">
+                          <span class="text-blue-300">{{ toReadableTime(info.adult * maturationTimeBonus[i]) }}</span>
+                        </span>
+                      </td>
+                      <td>
+                        <span v-if="info.elder">
+                          <span class="text-blue-300">{{ toReadableTime(info.elder * maturationTimeBonus[i]) }}</span>
+                        </span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </Foldable>
+              <div class="flex gap-2">
+                {{ base.type }}
+                [ DP: <span class="text-violet-400">{{ baseCost[i] }}</span> Footprint: <span class="text-blue-300">{{ basePrint[i] }}m²</span>]
+                <Button
+                  v-if="base.type === 'Hatchery' && boughtPerks['Lair']"
+                  label="Upgrade"
+                  title="Upgrade to Lair"
+                  size="Small"
+                  @click="base.type = 'Lair'"
+                />
+                <Button
+                  v-if="base.type === 'Lair' && boughtPerks['Colony']"
+                  label="Upgrade"
+                  title="Upgrade to Colony"
+                  size="Small"
+                  @click="base.type = 'Colony'"
+                />
+                <Button
+                  v-if="base.type === 'Colony' && boughtPerks['Hive']"
+                  label="Upgrade"
+                  title="Upgrade to Hive"
+                  size="Small"
+                  @click="base.type = 'Hive'"
+                />
+              </div>
+              <div v-if="boughtPerks['Nursery']" class="whitespace-nowrap flex gap-x-2 flex-wrap">
+                <NumberInput v-model="base['Nursery'].count" label="Nurseries" :min="0" />
+                DP: <span class="text-violet-400">{{ nurseryCost[i] }}</span> Footprint: <span class="text-blue-300">{{ nurseryPrint[i] }}m²</span>
+                <div>
+                  Incubation time is <span class="text-pink-300">{{ Math.floor(incubationTimeBonus[i] * 100000) / 1000 }}%</span> from base <span class="text-pink-500">[{{ Math.floor(336 * incubationTimeBonus[i] * 1000) / 1000 }} hours]</span>
+                </div>
+              </div>
+              <Desc v-else desc="You don't have a Nursery unlocked" class="p-0 indent-0em" />
+              <div v-if="boughtPerks['Grove']" class="whitespace-nowrap flex gap-2">
+                <NumberInput v-model="base['Grove'].count" label="Groves" :min="0" />
+                DP: <span class="text-violet-400">{{ groveCost[i] }}</span> Footprint: <span class="text-blue-300">{{ grovePrint[i] }}m²</span>
+              </div>
+              <Desc v-else desc="You don't have a Grove unlocked" class="p-0 indent-0em" />
+              <Foldable v-if="boughtPerks['Den']" title="Dens and its upgrades" :is-open="true" title-style="text-amber-400" class="flex flex-col gap-1">
+                <div v-for="den, key in base['Dens']" :key="key" class="flex gap-1 whitespace-nowrap">
+                  <NumberInput v-model="base['Dens'][key]" :label="`${key}s`" :min="0" />
+                </div>
+                <div>Total DP: <span class="text-violet-400">{{ densCost[i] }}</span> Total Footprint: <span class="text-blue-300">{{ densPrint[i] }}m²</span></div>
+              </Foldable>
+              <Desc v-else desc="You don't have a Den unlocked" class="p-0 indent-0em" />
+
+              <Foldable title="Miscellaneous buildings" :is-open="true" title-style="text-amber-400" class="flex flex-col gap-1">
+                <div v-if="boughtPerks['Evolution Chamber']" class="whitespace-nowrap flex gap-2">
+                  <NumberInput v-model="base['Evolution Chamber'].count" label="Evolution Chambers" :min="0" />
+                  DP: <span class="text-violet-400">{{ evolutionCost[i] }}</span> Footprint: <span class="text-blue-300">{{ evolutionPrint[i] }}m²</span>
+                </div>
+                <Desc v-else desc="You don't have a Evolution Chamber unlocked" class="p-0 indent-0em" />
+                <div v-if="boughtPerks['Guard Spire']" class="whitespace-nowrap flex gap-2">
+                  <NumberInput v-model="base['Guard Spire'].count" label="Guard Spire's" :min="0" />
+                  DP: <span class="text-violet-400">{{ spireCost[i] }}</span> Footprint: <span class="text-blue-300">{{ spirePrint[i] }}m²</span>
+                </div>
+                <Desc v-else desc="You don't have a Guard Spire unlocked" class="p-0 indent-0em" />
+                <div v-if="boughtPerks['Nexus']" class="whitespace-nowrap flex gap-2">
+                  <NumberInput v-model="base['Nexus'].count" label="Nexuses" :min="0" />
+                  DP: <span class="text-violet-400">{{ nexusCost[i] }}</span> Footprint: <span class="text-blue-300">{{ nexusPrint[i] }}m²</span>
+                </div>
+                <Desc v-else desc="You don't have a Nexus unlocked" class="p-0 indent-0em" />
+                <div v-if="boughtPerks['Fortress']" class="whitespace-nowrap flex gap-2">
+                  <NumberInput v-model="base['Fortress'].count" label="Fortresses" :min="0" />
+                  DP: <span class="text-violet-400">{{ fortressCost[i] }}</span> Footprint: <span class="text-blue-300">{{ fortressPrint[i] }}m²</span>
+                </div>
+                <Desc v-else desc="You don't have a Fortress unlocked" class="p-0 indent-0em" />
+              </Foldable>
+            </Foldable>
           </div>
-        </Foldable>
+        </div>
+        <Desc v-else desc="You don't have Hatchery unlocked" class="p-0 indent-0em" />
       </div>
     </div>
     <Desc v-else desc="You need to have a Alterzelu Symbiote perk to access this app." />
@@ -37,21 +165,55 @@
 </template>
 
 <script lang="ts" setup>
-import { orientation } from '~/logic'
+import { sum } from 'lodash-es'
+import { orientation, randomString, toReadableTime } from '~/logic'
 import { useStore } from '~/store/store'
 import { usePlayStore } from '~/store/play'
 import { CHAR_COSTS } from '~/data/constants'
+import { symbioteBuildingsObject } from '~/data/symbiote'
 
 const { binding, companions } = useStore()
 const { symbiotes, manualDevotees } = usePlayStore()
 
-const activeDungeonInd = ref<number>(symbiotes.value.length ? 0 : '')
-const manualDevEdit = ref(false)
+const maxCreep = {
+  Hatchery: 1,
+  Lair: 5,
+  Colony: 25,
+  Hive: 125,
+  Fortress: 20,
+}
 
-const portalTier = ref(1)
-const trapRank = ref('Blue')
-const monsterTier = ref(1)
-const monsterUseBinding = ref(false)
+const footprint = {
+  'Hatchery': 2000,
+  'Nursery': 250,
+  'Grove': 40000,
+  'Den': 500,
+  'Lair': 10000,
+  'Burrow': 4500,
+  'Nest': 2100,
+  'Reef': 5250,
+  'Evolution Chamber': 6000,
+  'Guard Spire': 250,
+  'Colony': 50000,
+  'Nexus': 24000,
+  'Fortress': 24500,
+  'Hive': 250000,
+}
+
+const unitsInfo = {
+  Buzzers: { clutch: 24, junior: 259200 },
+  Floaters: { clutch: 4, junior: 1209600 },
+  Globsters: { clutch: 16, junior: 604800 },
+  Skitterers: { clutch: 8, junior: 604800 },
+  Lingoth: { clutch: 1, junior: 2592000 * 6, adult: 63072000, elder: 315360000 },
+  Linkor: { clutch: 1, junior: 2592000 * 6, adult: 63072000, elder: 315360000 },
+  Linguu: { clutch: 1, junior: 2592000 * 5, adult: 49932000, elder: 315360000 },
+  Ailgoth: { clutch: 1, junior: 2592000 * 8, adult: 84096000, elder: 409968000 },
+  Ailkor: { clutch: 1, junior: 31536000, adult: 126144000, elder: 630720000 },
+}
+
+const activeDungeonInd = ref<number| undefined>(symbiotes.value.length ? 0 : undefined)
+const manualDevEdit = ref(false)
 
 const listDevotees = computed(() => {
   const list = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0, 9: 0, 10: 0 } as Record<number, number>
@@ -72,6 +234,139 @@ const totalDevotionPoints = computed(() => Object.entries(listDevoteesFull.value
 
 const dungeonList = computed(() => symbiotes.value.map((dungeon, i) => ({ label: dungeon.name, value: i })))
 
+const baseCost = computed(() => {
+  if (activeDungeonInd.value !== undefined)
+    return symbiotes.value[activeDungeonInd.value].bases.map(base => symbioteBuildingsObject[base.type].dCost)
+  return [0]
+})
+const basePrint = computed(() => {
+  if (activeDungeonInd.value !== undefined)
+    return symbiotes.value[activeDungeonInd.value].bases.map(base => footprint[base.type])
+  return [0]
+})
+
+const nurseryCost = computed(() => {
+  if (activeDungeonInd.value !== undefined)
+    return symbiotes.value[activeDungeonInd.value].bases.map(base => symbioteBuildingsObject.Nursery.dCost * base.Nursery.count)
+  return [0]
+})
+const nurseryPrint = computed(() => {
+  if (activeDungeonInd.value !== undefined)
+    return symbiotes.value[activeDungeonInd.value].bases.map(base => footprint.Nursery * base.Nursery.count)
+  return [0]
+})
+
+const groveCost = computed(() => {
+  if (activeDungeonInd.value !== undefined)
+    return symbiotes.value[activeDungeonInd.value].bases.map(base => symbioteBuildingsObject.Grove.dCost * base.Grove.count)
+  return [0]
+})
+const grovePrint = computed(() => {
+  if (activeDungeonInd.value !== undefined)
+    return symbiotes.value[activeDungeonInd.value].bases.map(base => footprint.Grove * base.Grove.count)
+  return [0]
+})
+
+const densCost = computed(() => {
+  if (activeDungeonInd.value !== undefined) {
+    return symbiotes.value[activeDungeonInd.value].bases.map(base =>
+      symbioteBuildingsObject.Den.dCost * base.Dens.Den
+    + symbioteBuildingsObject.Burrow.dCost * base.Dens.Burrow
+    + symbioteBuildingsObject.Nest.dCost * base.Dens.Nest
+    + symbioteBuildingsObject.Reef.dCost * base.Dens.Reef)
+  }
+  return [0]
+})
+const densPrint = computed(() => {
+  if (activeDungeonInd.value !== undefined) {
+    return symbiotes.value[activeDungeonInd.value].bases.map(base =>
+      footprint.Den * base.Dens.Den
+    + footprint.Burrow * base.Dens.Burrow
+    + footprint.Nest * base.Dens.Nest
+    + footprint.Reef * base.Dens.Reef)
+  }
+  return [0]
+})
+
+const evolutionCost = computed(() => {
+  if (activeDungeonInd.value !== undefined)
+    return symbiotes.value[activeDungeonInd.value].bases.map(base => symbioteBuildingsObject['Evolution Chamber'].dCost * base['Evolution Chamber'].count)
+  return [0]
+})
+const evolutionPrint = computed(() => {
+  if (activeDungeonInd.value !== undefined)
+    return symbiotes.value[activeDungeonInd.value].bases.map(base => footprint['Evolution Chamber'] * base['Evolution Chamber'].count)
+  return [0]
+})
+
+const spireCost = computed(() => {
+  if (activeDungeonInd.value !== undefined)
+    return symbiotes.value[activeDungeonInd.value].bases.map(base => symbioteBuildingsObject['Guard Spire'].dCost * base['Guard Spire'].count)
+  return [0]
+})
+const spirePrint = computed(() => {
+  if (activeDungeonInd.value !== undefined)
+    return symbiotes.value[activeDungeonInd.value].bases.map(base => footprint['Guard Spire'] * base['Guard Spire'].count)
+  return [0]
+})
+
+const nexusCost = computed(() => {
+  if (activeDungeonInd.value !== undefined)
+    return symbiotes.value[activeDungeonInd.value].bases.map(base => symbioteBuildingsObject.Nexus.dCost * base.Nexus.count)
+  return [0]
+})
+const nexusPrint = computed(() => {
+  if (activeDungeonInd.value !== undefined)
+    return symbiotes.value[activeDungeonInd.value].bases.map(base => footprint.Nexus * base.Nexus.count)
+  return [0]
+})
+
+const fortressCost = computed(() => {
+  if (activeDungeonInd.value !== undefined)
+    return symbiotes.value[activeDungeonInd.value].bases.map(base => symbioteBuildingsObject.Fortress.dCost * base.Fortress.count)
+  return [0]
+})
+const fortressPrint = computed(() => {
+  if (activeDungeonInd.value !== undefined)
+    return symbiotes.value[activeDungeonInd.value].bases.map(base => footprint.Fortress * base.Fortress.count)
+  return [0]
+})
+
+const usedFootprint = computed(() => {
+  let FP = [0]
+
+  if (activeDungeonInd.value !== undefined)
+    FP = basePrint.value.map((n, i) => n + nurseryPrint.value[i] + densPrint.value[i] + grovePrint.value[i] + evolutionPrint.value[i] + spirePrint.value[i] + nexusPrint.value[i] + fortressPrint.value[i])
+
+  return FP
+})
+
+const totalCreepZone = computed(() => {
+  let CZ = [0]
+
+  if (activeDungeonInd.value !== undefined)
+    CZ = symbiotes.value[activeDungeonInd.value].bases.map(base => Math.floor((Math.pow(maxCreep[base.type], 2)) * Math.PI) + Math.floor(((Math.pow(maxCreep.Fortress, 2)) * Math.PI) / 2) * base.Fortress.count)
+
+  return CZ
+})
+
+const usedDP = computed(() => {
+  let DP = 0
+
+  if (activeDungeonInd.value !== undefined) {
+    DP += sum(baseCost.value)
+    DP += sum(nurseryCost.value)
+    DP += sum(densCost.value)
+    DP += sum(groveCost.value)
+    DP += sum(evolutionCost.value)
+    DP += sum(spireCost.value)
+    DP += sum(nexusCost.value)
+    DP += sum(fortressCost.value)
+  }
+
+  return DP
+})
+
 const availableDP = computed(() => {
   symbiotes.value[activeDungeonInd.value].used = Array(10).fill(0)
   const dev = minDevotees(usedDP.value)
@@ -89,6 +384,14 @@ function arraySum(array: any[]) {
 }
 
 const usedDevotees = computed(() => symbiotes.value?.[activeDungeonInd.value]?.used ? arraySum(symbiotes.value) : Array(10).fill(0))
+
+const incubationTimeBonus = computed(() => symbiotes.value?.[activeDungeonInd.value]?.bases.map(
+  base => Math.pow(0.5, Math.floor(base.Nursery.count / 20)) - (0.025 / Math.pow(2, Math.floor(base.Nursery.count / 20)) * (base.Nursery.count % 20)),
+))
+
+const maturationTimeBonus = computed(() => symbiotes.value?.[activeDungeonInd.value]?.bases.map(
+  base => Math.pow(0.5, Math.floor(base.Grove.count / 20)) - (0.025 / Math.pow(2, Math.floor(base.Grove.count / 20)) * (base.Grove.count % 20)),
+))
 
 const boughtPerks = computed(() => {
   const perks = {
@@ -124,32 +427,47 @@ const boughtPerks = computed(() => {
   return perks
 })
 
+const basicCreepZone
+  = {
+    'uid': randomString(5),
+    'type': 'Hatchery',
+    'Nursery': { name: 'Nursery', count: 0 },
+    'Grove': { name: 'Grove', count: 0 },
+    'Dens': {
+      Den: 0,
+      Burrow: 0,
+      Nest: 0,
+      Reef: 0,
+    },
+    'Evolution Chamber': { name: 'Evolution Chamber', count: 0 },
+    'Guard Spire': { name: 'Guard Spire', count: 0 },
+    'Nexus': { name: 'Nexus', count: 0 },
+    'Fortress': { name: 'Fortress', count: 0 },
+  }
+
 function addBase() {
   const name = `Base #${Math.floor(Math.random() * 1000)}`
   symbiotes.value.push({
     name,
-    'used': Array(10).fill(0),
-    'Hatchery': [{ name: 'Hatchery', count: 0, baseProduction: 160, nurseries: 0, bonusProduction: 0 }],
-    'Nursery': [{ name: 'Nursery', count: 0 }],
-    'Grove': [{ name: 'Grove', count: 0 }],
-    'Den': [{ name: 'Den', count: 0 }],
-    'Lair': [{ name: 'Lair', count: 0 }],
-    'Burrow': [{ name: 'Burrow', count: 0 }],
-    'Nest': [{ name: 'Nest', count: 0 }],
-    'Reef': [{ name: 'Reef', count: 0 }],
-    'Evolution Chamber': [{ name: 'Evolution Chamber', count: 0 }],
-    'Guard Spire': [{ name: 'Guard Spire', count: 0 }],
-    'Colony': [{ name: 'Colony', count: 0 }],
-    'Nexus': [{ name: 'Nexus', count: 0 }],
-    'Fortress': [{ name: 'Fortress', count: 0 }],
-    'Hive': [{ name: 'Hive', count: 0 }],
+    used: Array(10).fill(0),
+    bases: [
+      { ...basicCreepZone },
+    ],
   })
   activeDungeonInd.value = symbiotes.value.length - 1
 }
 
+function addZone() {
+  symbiotes.value[activeDungeonInd.value].bases.push({ ...basicCreepZone })
+}
+
+function deleteZone(i: number) {
+  symbiotes.value[activeDungeonInd.value].bases.splice(i, 1)
+}
+
 function deleteDungeon(ind: number) {
   symbiotes.value.splice(ind, 1)
-  symbiotes.value.length ? activeDungeonInd.value = 0 : activeDungeonInd.value = ''
+  symbiotes.value.length ? activeDungeonInd.value = 0 : activeDungeonInd.value = undefined
 }
 
 function changeDevCount(e: number, key: number) {
@@ -183,3 +501,18 @@ function deleteAll() {
   manualDevotees.value = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0, 9: 0, 10: 0 }
 }
 </script>
+
+<style>
+.unitsTable {
+  @apply border-collapse bg-gray-700 text-gray-300;
+}
+
+.unitsTable tr{
+ @apply odd:(bg-black bg-opacity-15);
+}
+
+.unitsTable th,td{
+ @apply border border-gray-600 px-2;
+}
+
+</style>

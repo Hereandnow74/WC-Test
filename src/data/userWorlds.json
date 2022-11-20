@@ -1599,7 +1599,7 @@
     "image": "http://einfogames.com/reviews/files/2013/01/afrosamurai_hero.jpg"
   },
   {
-    "worldName": "Ark: Evolution",
+    "worldName": "ARK: Survival Evolved",
     "rating": 3,
     "additional": "All Fauna are capturable as familiars by the contractor or by companions.  They may be captured by in universe methods or by stamp or other company provided methods.",
     "condition": [
@@ -4864,11 +4864,6 @@
     "image": "https://theawesomeone.com/wp-content/uploads/2022/01/Pandora-Hearts-Season-2-Images-1.jpg"
   },
   {
-    "worldName": "Sidonia no Kishi",
-    "rating": 8,
-    "image": "https://d1fz32b7q4znht.cloudfront.net/wp-content/uploads/2015/04/Sidonia-no-Kishi-II.jpg"
-  },
-  {
     "worldName": "Xiaolin Showdown",
     "rating": 4,
     "image": "https://i.redd.it/klt1638qxuu81.png"
@@ -4993,6 +4988,7 @@
   {"worldName":"Lollipop Chainsaw","rating":5,"image":"https://img.game-news24.com/2022/07/James-Gunns-Scult-Game-Lollipop-Chainsaw-Is-Making-A-Remake-Again.png"},
   {"worldName":"Reincarnated as a Sword","rating":7,"image":"https://m.ani4u.org/wp-content/uploads/2022/10/game4v-Reincarnated-as-a-Sword-anime-6-1632470742-31-1140x647-1.jpg"},
   {"worldName":"Cardfight Vanguard","rating":4,"image":"https://i.ytimg.com/vi/Yf2NkpOuyV0/maxresdefault.jpg","additional":"You can buy decks depending on the time you appear.\n\nYou are unable to Buy Link Joker Decks until the Link Joker Arc.\n\nYou are unable to buy Royal Paladins, Shadow Paladins or Kagero Clan decks during the Asia Circuit.\n\nDuring Link Joker Arc, you may acquire \"Reverse\" Units of select cards.","condition":[{"rating":4,"name":"Season 1"},{"name":"Season 2 - Asia Circuit","rating":5},{"rating":6,"name":"Season 3 - Link Joker "}]},
-  {"worldName":"Knights of Sidonia","rating":7,"image":""},
-  {"worldName":"The Loud House","rating":1,"image":"https://deadline.com/wp-content/uploads/2022/03/The-Loud-House.jpg?w=681&h=383&crop=1"}
+  {"worldName":"Knights of Sidonia","rating":7,"image":"https://www.mobileyouth.org/wp-content/uploads/knights-of-sidonia-season-3-1.jpg"},
+  {"worldName":"The Loud House","rating":1,"image":"https://deadline.com/wp-content/uploads/2022/03/The-Loud-House.jpg?w=681&h=383&crop=1"},
+  {"worldName":"The Reckoners","rating":6,"condition":[{"name":"Before Calamity Arrives","rating":2},{"rating":5,"name":"Rise of the Epics"},{"rating":6,"name":"The Age of the Epics"},{"name":"After Calamity Leaves","rating":5}]}
 ]

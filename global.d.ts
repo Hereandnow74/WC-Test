@@ -75,6 +75,7 @@ interface PerkFull {
   tree?: string
   type?: string
   legacy?: boolean
+  dCost?: number
   dlc?: string
   dlclink?: string
 }

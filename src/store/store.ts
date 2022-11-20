@@ -156,28 +156,26 @@ const types = {
   th: 'Transhuman',
   ou: 'Outsider',
 }
-const powerSwapDiscount = computed(() => {
-  const ps = find(genericWaifuPerks.value, { title: 'Power Swap' })
-  const discount = { value: 0, archetype: '' }
-  if (ps) {
-    const yourPS = find(ps.complex, el => !!el.hr)
-    if (yourPS) {
-      discount.value = CHAR_COSTS[yourPS.newTier]
-      discount.archetype = types[yourPS.hr] || ''
-    }
-  }
-  return discount
-})
+// const powerSwapDiscount = computed(() => {
+//   const ps = startingOrigin.value.swap?.tier
+//   const discount = { value: 0, archetype: '' }
+//   if (ps) {
+//     const yourPS = find(ps.complex, el => !!el.hr)
+//     if (yourPS) {
+//       discount.value = CHAR_COSTS[yourPS.newTier]
+//       discount.archetype = types[yourPS.hr] || ''
+//     }
+//   }
+//   return discount
+// })
 
 const maxHeritageDiscount = computed(() => {
   const discount = { archetype: '', value: 0 }
-  if (['Substitute', 'Possess', 'Walk-In'].includes(startingOrigin.value.title) && startingOrigin.value.hr) {
+  if (startingOrigin.value.hr) {
     discount.archetype = types[startingOrigin.value.hr] || ''
-    discount.value = CHAR_COSTS[startingOrigin.value.tier] || 0
+    discount.value = CHAR_COSTS[startingOrigin.value.swap?.tier || startingOrigin.value.tier || 0] || 0
     if (discount.value === 11111) discount.value = 2000
   }
-  if (powerSwapDiscount.value.value > 0)
-    return powerSwapDiscount.value
   return discount
 })
 

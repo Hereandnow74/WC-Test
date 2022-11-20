@@ -111,7 +111,7 @@ export function toReadableTime(seconds: number) {
     seconds -= minutes * 60
   }
   if (seconds > 0)
-    res += `${seconds}s `
+    res += `${Math.round(seconds)}s `
   if (!res.length) res = 'instantly'
   return res
 }

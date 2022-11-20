@@ -1,7 +1,575 @@
 [
   
   {
+    "scope": "Standard",
+    "conditions": [
+      {
+        "value": "You may not Substitute as any named character from Azur Lane that is canonically part of the maid corps."
+      },
+      {
+        "value": "Within 6 months, twist the common sense of the maid squad so that all of them consider lewd sexual service to be the right and proper way of pleasing a master."
+      },
+      {
+        "value": "Set things up to make the maid costumes more revealing, implement events such as naked apron waiter service, sponge baths and hands on sexual relief to the stressed Queen who can surely use some relaxation from all that paperwork she has to do."
+      },
+      {
+        "value": "Make sure that Queen Elizabeth, her sisters and the other higher ranking members of the Royal Navy accept your changes to the status quo."
+      }
+    ],
+    "title": "Royal Maid Service",
+    "budget": 930,
+    "loca": "Azur Lane",
+    "author": "Heaven Canceler",
+    "source": "",
+    "desc": "The maid corps of the Royal Navy is a special organization, both formed to service the aristocratic class within the faction and also to battle at the frontlines. They range from strategis over high class combatants to those that prefer mundane service over combat itself. But all of them share a sense of devotion to their mistress Queen Elizabeth and whoever shall be the Admiral of their navy. For this mission your job is actually not to simply take over… rather it is to “join” the maid corps. How you go about this is mostly your choice so long as you do not lessen the goal itself by replacing one of the maids. Now for your actual job, you must corrupt the maid squad from within, instituting a different, much lewder sense of service directed at their masters. And if you yourself enjoy things while slowly taking a more active role in directing everyone’s desires, why is that only right and proper too, isn’t it?",
+    "objectives": [
+      {
+        "value": "Make Laffey, Javelin, Ayanami and Z23 join the maid corps and subvert them for lewd purposes.",
+        "reward": "30 Credits and Don’t Stand Close to Me",
+        "type": "Credits"
+      }
+    ],
+    "reward": "Faerie Feast and its Expansions, You also gain 1 Ticket Redeemable for any Maid of T8 or below. (If she is weaker than T8, her powers will be increased to the appropriate rank.) She will come pre-installed with a shipgirl powerset of your choice and optionally a lewd skill-set comparable to the 3 most capable maids in your retinue.",
+    "image": "https://i.imgur.com/WTpKvD5.png",
+    "rewardType": "Perks",
+    "uid": "xVoXz"
+  },
+  {
+    "title": "Supreme Helper Minion",
+    "scope": "Grand",
+    "desc": "The Angler is in need of someone to help him collect fish, get your Rod out( no not the one in your pants THE OTHER ONE!), it's time to help the Angler by Collecting a total of 200 Unique Fishes for him, and he might just reward you with the Ultimate Rod, the pinnacle of a  Fisherman's Career, the Zenith of Rods, THE ULTIMATE ROD if you will, now get back to collecting those fishes.",
+    "objectives": [],
+    "reward": "You Recieve a Fishing Rod titled Rod of the Fishing Ages, it is the ultimate tool any Self-mastered Fishermen will ever need, This ROD can pull up many things such as: Fish, more Fish, Treasures, your future Waifu and (maybe i havent tested) your will to live from the bottom of the Ocean after having undergone the trials of this Mission. oh and you also get 2 credits.",
+    "loca": "Terraria",
+    "source": "",
     "image": "",
+    "author": "Demontty",
+    "budget": 0,
+    "rewardType": "Other",
+    "conditions": [
+      {
+        "value": "You can only hand in 1 unique fish to the Angler everyday."
+      },
+      {
+        "value": "You must accomplish your mission within the 200 day timeframe you've been given"
+      },
+      {
+        "value": "The Angler is not allowed to die, and you cant bind him for the duration of this Mission, if he's already been binded then he will be unbounded."
+      },
+      {
+        "value": "You cannot use powers to speedup the cycle of day/night or other methods that could speed up the handover process."
+      },
+      {
+        "value": "Your Locked to T6 for the remainder of this mission."
+      },
+      {
+        "value": "Don't Lose whatever remains of your Sanity."
+      }
+    ],
+    "uid": "iyDQN"
+  },
+  {
+    "image": "",
+    "author": "CanvasRose",
+    "loca": "Akame ga Kill!",
+    "conditions": [
+      {
+        "value": "You are not allowed to kill or hurt the Emperor, you must also protect him from any harm"
+      },
+      {
+        "value": "You can not use any bindings, lures, and any other form of mind control on the Emperor"
+      },
+      {
+        "value": "You must kidnap the Emperor and bring him outside of the capital"
+      },
+      {
+        "value": "You must teach and guide the young Emperor into becoming a better ruler and person"
+      },
+      {
+        "value": "Expose the truth about Honest and the Empire's corruption"
+      },
+      {
+        "value": "The emperor is not allowed to go back to the empire castle until he has matured"
+      },
+      {
+        "value": "You will become the Emperor's Teacher, Bodyguard and Kidnapper all at once"
+      },
+      {
+        "value": "Make the Empire better with the Emperor's help"
+      },
+      {
+        "value": "Do not let Night Raid execute the Emperor!"
+      }
+    ],
+    "reward": "250 Credits and your very own portable castle similar to the one found in the empire. You also get the emperor as a companion and a free TS of one of the characters from AKG",
+    "rewardType": "Credits",
+    "budget": 0,
+    "objectives": [
+      {
+        "reward": "30 Credits and Talent Sharing of Communication Talent",
+        "value": "Repair the Emperor's reputation to the point of people considering him a good leader",
+        "type": "Credits"
+      },
+      {
+        "value": "Remove the vast majority of the corruption in the empire",
+        "type": "Perks",
+        "reward": "Free TS of Norn Clatalissa Jioral"
+      },
+      {
+        "type": "Companions",
+        "value": "Find a way to turn the Revolutionary army into the Emperor's allies",
+        "reward": "Gain a T6 companion of your choice"
+      },
+      {
+        "value": "Have the Emperor consider you as their best friend/ father figure",
+        "reward": "You gain nothing except the knowledge that you have changed the fate of one unfortunate child; ",
+        "type": "Other"
+      }
+    ],
+    "scope": "Grand",
+    "title": "Kill the Unfairness",
+    "desc": "The emperor's story is truly tragic. A good-hearted young man who was used as a puppet throughout his entire life by the one he most trusted. That same individual murdered his parents. Because of all the corruption, his empire is falling apart, but he is unaware of it because his \"trusted\" advisers are feeding him lies. The people he tries to protect either fear or detest him because, despite his desire to be a good ruler, his own inexperience prevented him from being one. The single person that backs him is ineffective and does nothing to address the problem. And by the time he realized that instead of bringing his people peace and prosperity, he had only brought them suffering, it was too late, and he was sentenced to death. A sad ending for the boy, who will most likely be remembered as history’s worst emperor. How pitiful it really demonstrates how unfair life can be. So what if we decide to alter his fate? By making you, the most unfair existence on the planet, his ally.",
+    "source": "",
+    "uid": "EEstV"
+  },
+  {
+    "objectives": [
+      {
+        "type": "Credits",
+        "reward": "100",
+        "value": "Capture 10 ninjas by seducing them."
+      },
+      {
+        "reward": "500",
+        "value": "Capture 20 ninjas by seducing them",
+        "type": "Credits"
+      },
+      {
+        "reward": "1000",
+        "value": "Kill, marry, or BECOME the kage of a ninja village.",
+        "type": "Credits"
+      },
+      {
+        "type": "Credits",
+        "value": "Marry your canon spouse if you insert yourself into a character who has one ",
+        "reward": "500"
+      },
+      {
+        "type": "TX Tickets",
+        "value": "Unite the Elemental Nations with the power of love (and a promise of lewds!). You must prevent the next shinobi war or great disaster that will occur in the era you insert yourself into, and it should not be acheived through violent means. You will only get the rewards if you succeed at your first attempt, without a large scale battle occuring between the uniting factions.",
+        "reward": "1"
+      },
+      {
+        "reward": "And additional credit bonus equal to the tier of your capture target.",
+        "value": "Steal away the spouses of canon characters from under their noses or before they even realise that it was even an option.",
+        "type": "Credits"
+      },
+      {
+        "value": "Complete your mission in the 'Naruto' world without anyone realising that anything is wrong. No-one must discover the binding process or realise that you are a Contractor for the entire duration. Not even your captures.",
+        "type": "Credits",
+        "reward": "500"
+      },
+      {
+        "type": "Credits",
+        "value": "Spend an entire decade in the 'Naruto' world without anyone realising that anything is wrong. You can receive the same reward multiple times for each additional decade you spend there. No-one must discover the binding process or realise that you are a Contractor for the entire duration. Not even your captures.",
+        "reward": "1500"
+      }
+    ],
+    "desc": "Ninja are secretive assassins who lurk in the night, who seduce, lie, gaslight and infiltrate their way into a well defended locations to strike a critical blow. \n\nAnd while the elite ninjas of Naruto have that quality, it has become a so integrated into their way of life, that most chakra wielders have abandoned any idea of subtlety. \n\nYou must insert yourself into the world as a canon character, infiltrate a shinobi village and seduce your way through their ranks!\n\nP.S : Despite the description, ninjas are paranoid nuts no matter what world you are in so good luck!\n\nYou can take all the lures, talents and Pocket space perks up to the 'sweet home expansion' perk, you require for the mission free of charge, or refund yourself for the credits spent buying them.",
+    "scope": "Standard",
+    "conditions": [
+      {
+        "value": "Do not take any bindings."
+      },
+      {
+        "value": "You must posses or insert into ninja society by choosing a template that is a valid ninja character who is alive during the era you insert yourself into. You can take this template free of charge so long as it is below tier 8"
+      },
+      {
+        "value": "Do not take any heritages"
+      }
+    ],
+    "loca": "Naruto",
+    "budget": 300,
+    "reward": "Gain a credit bonus equal to the tier value of the character you seduced into your harem.",
+    "source": "",
+    "author": "Silverlight",
+    "title": "Deep Ninja Infiltration Mission",
+    "image": "",
+    "rewardType": "Credits",
+    "uid": "QzLxK"
+  },
+   {
+    "author": "Silverlight",
+    "loca": "Generic",
+    "title": "Multiversal Entanglement Resolution",
+    "conditions": [
+      {
+        "value": "Avoid using abilities with reality warping or world-ending capabilities. This will result in an immediate and extreme retaliation by the observing parties. There are simply too many of them that company is unwilling to spend the resources required to completely block off their access."
+      },
+      {
+        "value": "Do not being any Tier 11 companions, or accept the mission if you are a tier 11 yourself unless you are prepared to come in contact with beings and pantheons vastly more powerful than yourself. And no, you will not be powerful enough to deal with an entire group of such beings. While they won't interfere directly, they have long memories..."
+      }
+    ],
+    "budget": 1200,
+    "image": "https://www.comicbasics.com/wp-content/uploads/2019/05/100-Greatest-Superheroes.jpg",
+    "desc": "One of our more experienced contractors have turned traitor, and was discovered leaking out company secrets like the inner workings of our Stamp™ and Smart Devices™ to enemies and rival organizations. We have managed to limit the damage but the problem is one that must be dealt with extreme prejudice before it escalates into an actual crisis. \nThe traitor is unfortunately very crafty, and while that is a trait that the company values very much in our contractors, it is currently acting to our detriment as said traitor is deceptively proficient in escaping danger. \nThe company has managed to quarantine the Traitor to a series of worlds ranging the Danger Ratings of 8 and 9, and have even disabled all his travel options. However, he proved himself annoying once again by deploying corrupted versions of the Elden Ring whose reality warping functions were rigged to caused multiple realities to collapse into each other, and form permanently open rifts between them through which anyone can freely travel. \n\nThe worlds you'll be sent to will most likely be undergoing one form of apocalyptic scenario or the other due to all the multiversal incursions, breaches and displacements whittling down the local society and economy, You must navigate delicate sociopolitical landscapes and explore dangerous war-zones to locate and retrieve the corrupted Elden Rings responsible for the local nexus. \nThe local factions will aid or hinder you depending on which world you are on and how you approach them, so some preparation before establishing contact is necessary. Especially so since they might have valuable intel on the threats you may encounter on said world. \n\nAfter all, it is nearly impossible to predict what entity will cross over next, and some especially dangerous threats may have already passed through undetected due to all the distortions on site making any attempt at a comprehensive scan unreliable.  \n\nThe Greater WIll, along with other such powerful multiversal Outer Gods are interested in the situation and are watching. \nAnd while the Greater Will in particular doesn't mind others taking its damaged toys, it will very much get annoyed if you make too much of a ruckus while doing so. It will most likely retaliate by deploying 'stars' the likes of Astel and the Elden Beast to deal with you and resolve the situation on its own. Retreat in case of such a scenario, as their attacks will be indiscriminate and any fight with them will ruin entire nations and worlds in the process, which is a severe loss of company resources. All entities sent at you in such a scenario will be Tier 9, or reality warpers at the very least. \n \nThe attacks may even extend to company managed locations, and while we can fight it back, it is a needless waste of resources, and no-one will thank you for causing it.\n\nMission Allotment\n\n- You will be allowed an extra use of 1000 credits SOLELY to spend on companions to help you deal with the situation. \n- You can also take as many defenses as you need before heading in.\n- You can also take all the pocket space upgrades up to demiplane for free. \n\nyou will be refunded the exact number of credits you spent while doing so.\n\nProceed with caution.",
+    "scope": "Grand",
+    "source": "",
+    "rewardType": "TX Tickets",
+    "objectives": [
+      {
+        "value": "Repair the Elden Ring. If you manage to do so on your own, you can keep it's more... animated form as a companion.",
+        "reward": "Receive pet 'Elden Beast' - Praise the dog?",
+        "type": "Companions"
+      },
+      {
+        "value": "Capture an extradimensional companion",
+        "type": "Perks",
+        "reward": "You can add a single geographical feature, or a non-sentient creature of or below the same tier from their home reality into your demiplane."
+      },
+      {
+        "type": "Credits",
+        "reward": "200",
+        "value": "The traitor has been to your world once already. Determine is he is still there, and report back if you have found any clues about his current whereabouts."
+      },
+      {
+        "reward": "1000",
+        "value": "Kill the traitor if he is on your world",
+        "type": "Credits"
+      },
+      {
+        "value": "Subdue and contain the traitor alive, and retreive information about his fellow conspirators and allies.",
+        "reward": "1500",
+        "type": "Credits"
+      },
+      {
+        "value": "Creatively utilise the resources you have access to in order to restore and repair the veil that seperates realities. The Company rewards initiative.",
+        "type": "TX Tickets",
+        "reward": "1"
+      },
+      {
+        "value": "Sometimes, the corrupted Elden Ring might retain its awareness and try to defend itself. Slay the corrupted god before it superimposes its will on your reality. Unless you beleive you can fight it in its own domain of course...",
+        "type": "TX Tickets",
+        "reward": "1"
+      },
+      {
+        "type": "Credits",
+        "value": "Return all unwilling extradimensional immigrants to their home realities. A charity has been set up by a 'sympathetic' beings to pay for your efforts.",
+        "reward": "500"
+      },
+      {
+        "type": "Credits",
+        "value": "Aid a fellow field agent in distress if you encounter one.",
+        "reward": "200"
+      }
+    ],
+    "reward": "1 ",
+    "uid": "TDnSf"
+  },
+
+  {
+    "author": "FinSexual92",
+    "loca": "High School DxD",
+    "budget": 365,
+    "title": "Really, Raynere?",
+    "reward": "500 Credits",
+    "desc": "Everyone knows that Raynere is an idiot of the highest order and one of the worst antagonists ever written. Honestly, she killed a perv that should have known something was iffy and ripped out part of Asia's soul (someone who has less fight in her than fish in a barrel). She even failed to kill Issei a second time!\n\nYour mission, Contractor, is to be the Villain needed to make the Grigori the undisputed rulers of Kuoh. Azazel has been informed that you are going to ensure Raynere doesn't bring down the Wrath of Sis-Con Satans on the Grigori so don't worry about him. He's even got official orders that Raynere's band of misfits are your bitches.",
+    "objectives": [
+      {
+        "reward": "Template Stacking I (Boosted Gear) for one of your Retinue. (Just don't use it on a Local or they may be found out)",
+        "type": "Perks",
+        "value": "Kill Issei Hyoudou without it pointing to the Grigori"
+      },
+      {
+        "value": "Keep Asia Argento safe and happy to the point that she will refuse to become a Brave Saint of Michael's when offered at the Peace Conference",
+        "reward": "Asia Argento capture and Lures are twice as effective on Draconic Retinue Targets",
+        "type": "Companions"
+      },
+      {
+        "value": "Give the appearance of Co-Ruling with Sona Sitri until her Father gets Sleeping Disease",
+        "type": "Companions",
+        "reward": "Company Clones of Sona Sitri's Peerage (including her) and of Serafall Leviathan, altered to your liking"
+      },
+      {
+        "value": "Kill Freed Sellzen in your first meeting with him",
+        "reward": "200 Credits",
+        "type": "Credits"
+      },
+      {
+        "value": "Seduce and Impregnate one of the Original Four Fallen (Azazel won't mind giving you his Gender Ray Gun if you want to use Dohnaseek)",
+        "reward": "Capture of the Fallen in question and 50 Credits",
+        "type": "Companions"
+      },
+      {
+        "reward": "Company Clones of Xenovia Quatra, Irina Shidou and Griselda Quatra",
+        "type": "Companions",
+        "value": "Imprison Xenovia Quatra and Irina Shidou when they show up in the Excalibur Arc, return them to Griselda Quatra whole and healthy when she seeks them out"
+      },
+      {
+        "value": "Defeat Kokabiel one on one",
+        "type": "Companions",
+        "reward": "Gabriel (Clone) from DxD "
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You are unable to use Bindings to Capture people"
+      },
+      {
+        "value": "Non-Local Retinue are unable to set foot in DxD, they must stay in your Demiplane or your Local House"
+      },
+      {
+        "value": "At least 1 of the Original Four Fallen must survive until you have ruled for at least a year"
+      }
+    ],
+    "rewardType": "Credits",
+    "image": "",
+    "source": "",
+    "scope": "Standard",
+    "uid": "ZNtkt"
+  },
+  {
+    "scope": "Standard",
+    "image": "",
+    "loca": "High School DxD",
+    "source": "",
+    "author": "FinSexual92",
+    "rewardType": "Credits",
+    "title": "Righting A Wrong",
+    "budget": 365,
+    "conditions": [
+      {
+        "value": "Your Initial Peerage must leave room for Akeno Himejima as Queen, Koneko Toujou as a Rook, and Gasper Vladi and Asia Argento as Bishops"
+      },
+      {
+        "value": "No Member of your Peerage can be above T6 before joining. Those that are T6 must be a Queen or Rook. T4 and T5 must be a non-Pawn piece. T1 to T3 take up only one Pawn Piece"
+      },
+      {
+        "value": "Non-Local abilities must conform to Local Standards regardless of their Origin's Lore. If there is no equivalent in DxD (like RWBY Aura or JJBA Stands) then it can't be used in DxD"
+      },
+      {
+        "value": "You must defeat Rizevim Lucifer before he releases Trihexa (and ensure his death doesn't release it)"
+      },
+      {
+        "value": "You will be engaged to Ravel Phenex, because Politics. She is immune to Company Abilities because of this and you must keep her willing for the marriage (even if she doesn't like you)"
+      }
+    ],
+    "reward": "365 Credits upon leaving DxD",
+    "desc": "DxD is one of our best earning Worlds, but it is a dangerous place. It seems one of your Peers has forgotten that and somehow (we have no idea how they managed it) got killed while being a Rias Substitute. Since we like this World, we try to keep variations existing. Your job is to pick up the slack created by the death of Rias Gremory, Yuuto Kiba and Issei Hyoudou has created. You will Extra in as a Male Cousin from a Pacifist Sister of Zeoticus Gremory and take over as Heir Gremory (because Sirzechs is furious and made sure Millicas is a Lucifuge).",
+    "objectives": [
+      {
+        "value": "Have Ravel Phenex fall for you",
+        "type": "Companions",
+        "reward": "Ravel Phenex Capture at double points and her immunity is lifted"
+      },
+      {
+        "type": "Companions",
+        "value": "Persuade Riser Phenex to trade you a Knight or Pawn as a sign of his 'regret'.",
+        "reward": "The Traded Piece as a Capture and a Company Clone of their 'partner' (i.e. their twin or the one that shares their type)"
+      },
+      {
+        "reward": "Company Clone of Grayfia Lucifuge and Yubelluna",
+        "type": "Companions",
+        "value": "Help Riser persuade Sirzechs of his 'Regret'"
+      },
+      {
+        "value": "Have any of Rias' original Peerage fall for you without Binding",
+        "reward": "Their Buy Value in Credits on top of what you get for Capturing them via love confession",
+        "type": "Credits"
+      },
+      {
+        "reward": "Rias Gremory (Clone)",
+        "type": "Companions",
+        "value": "Impregnate Venelana Gremory without Zeoticus finding out that he isn't the Father"
+      }
+    ],
+    "uid": "ZMUxs"
+  },
+   {
+    "desc": "Welcome Contractor. Today is the first of the rest of your life under the Company's umbrella. As such we've provided you with a basic tutorial quest.\nExplore your Starter World for the day!\nCatch and/or explore your first Waifu!\nLearn how to use the resources granted to you!\nDo something exciting!",
+    "source": "",
+    "conditions": [
+      {
+        "value": "Can only be accomplished on your starting world."
+      },
+      {
+        "value": "Can only occur within your first week."
+      },
+      {
+        "value": "Cannot be repeated."
+      }
+    ],
+    "objectives": [
+      {
+        "reward": "10",
+        "value": "Have a threesome",
+        "type": "Credits"
+      },
+      {
+        "reward": "Free Binding Perk at 20 Credits or less",
+        "value": "Capture and Sell a T4+ Target",
+        "type": "Perks"
+      },
+      {
+        "reward": "Gain specific additional Paper Trail perk for world adding you to the plot.",
+        "value": "Interact with plot relevant characters",
+        "type": "Other"
+      },
+      {
+        "reward": "20",
+        "value": "Break a major law and don't get caught",
+        "type": "Credits"
+      }
+    ],
+    "author": "Darkarma",
+    "title": "Tutorial",
+    "scope": "Standard",
+    "rewardType": "Other",
+    "loca": "Generic",
+    "budget": 1,
+    "reward": "10 Credits",
+    "image": "https://i.imgur.com/i91lHMP.png",
+    "uid": "hoSeC"
+  },
+  {
+    "loca": "Danmachi",
+    "budget": 230,
+    "objectives": [
+      {
+        "value": "Corrupt and Capture Tione and Tiona Hiryute using a Minotaur-esque form or monster.",
+        "type": "Perks",
+        "reward": "Two TSI and TSII of any Amazon or 65 Credits. Also, you gain a special Lure called “Amazon Breaker” which functions similar to “Alluring Whisper: Dirty Minds”. Whenever you sexually assault someone, the lure instills the idea that it is perfectly okay for them to let you do this as they are simply enjoying themselves and could fight you off anytime they want. The greater the apparent (but not real) power gap between you is within their mind, the stronger the lure affects them. After enough time, they will be unable to resist any advance even should you prove yourself stronger and accept their place as mere breeding sows. This lure is especially effective against Amazons, Warriors, Demon-Hunters and similar categories. Alternatively, 60 Credits."
+      },
+      {
+        "value": "Corrupt and capture the Goddess Hephaistos.",
+        "type": "Perks",
+        "reward": "Your Dungeon can now automatically produce treasure and drops based on Ero-Games and Doujins. The materials and items are all useful and valuable, but universally have some lewd perks or erotic curses to them. You and your retinue members may not simply collect these yourself unless you challenge the Dungeon yourself in a fair battle where you have a realistic chance of losing."
+      },
+      {
+        "type": "Perks",
+        "reward": "Your Dungeon now has a passive lure effect for those who are either lonely or those looking for someone who would love them for who they are. The range of this lure is based off the scale of your Dungeon and will expand and contract respective to any alterations made. You gain a new biome template related to The Hearth, similar to a memetic zone of happiness and satisfaction, where visitors will regret leaving should they do so.",
+        "value": "Corrupt and capture the Goddess Hestia"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "All Dungeon Perks are 50% cheaper rounded down. If you fail the mission, you will have to repay the difference."
+      },
+      {
+        "value": "The Dungeon will optionally be made more lewd through a Metashift of semi randomized hentai with a lewd Dungeon Theme. Be aware that it will still be dangerous and deadly though."
+      },
+      {
+        "value": "Your lewd Dungeon must reach at least the 25th Floor and control at least 1/4th of these Floors total space within 2 years of time. You must also capture at least 3 Level 5 Adventurers."
+      },
+      {
+        "value": "You should avoid killing any adventurers exploring your dungeon as far as possible, you may make an exception when defending your own life, those of retinue members or the integrity of your Dungeon as a whole."
+      },
+      {
+        "value": "You can only capture Adventurers inside your Dungeon once their will to resist the sexual attacks of yourself and your Dungeon is broken. For the purpose of this, you gain a HUD that lets you see important stats such as lust, number of orgasms, willpower, submissiveness and corruption. Unless they actively seek out a challenge beyond them, you must always give an adventurer at least a small chance to win or escape."
+      },
+      {
+        "value": "The gods will sooner or later notice that your Dungeon does not have the same function of auto-hating them as the normal one and come to check it out themselves."
+      }
+    ],
+    "image": "https://i.imgur.com/nAAU8bH.jpg",
+    "scope": "Standard",
+    "reward": "A full discount of all Dungeon Perks you purchased or will purchase in the future. Also Neptune and Noire from Hyperdimension Neptunia or 170 Credits.",
+    "title": "Is it Okay to Corrupt Waifus in the Dungeon?",
+    "rewardType": "Credits",
+    "source": "",
+    "desc": "Orario is a city of wonder, the promise of adventure, riches and glory drawing in the young and hopeful. Of course this leads to an early grave quite often, but those that manage to survive often achieve a lot of power, prestige and riches. This is not what we want you to do. Rather, to make things more interesting we want you to take the role of the “enemy” of adventurers everywhere, though not necessarily the murderous sort as the local Dungeon does. Thus for this mission, your goal isn’t to conquer the Dungeon, it's to subvert it to much more fun and lewd purposes. Really, we just want to see someone going and making a full on hentai dungeon if we are honest. We can somewhat tilt things in your favor by making the base Dungeon lewder, just don’t expect it to be less dangerous. Note that the Dungeon will be actively trying to oust you, but if you are careful you can steadily subsume it while gathering support for yourself.",
+    "author": "Heaven Canceler",
+    "uid": "jReRZ"
+  },
+  {
+    "title": "Stop the Yandere",
+    "desc": "Today we want you to do a good deed: have Ayano Aishii get help.",
+    "conditions": [
+      {
+        "value": "Persuade Ayano to seek psychiatric help by her own volition. No mind control or lures allowed"
+      },
+      {
+        "value": "She must seek help before she murders anyone."
+      }
+    ],
+    "loca": "Yandere Simulator",
+    "reward": "20",
+    "author": "Ratcatcher",
+    "source": "",
+    "budget": 0,
+    "image": "",
+    "objectives": [
+      {
+        "type": "Credits",
+        "reward": "50",
+        "value": "Get Ayano together with her sempai anyway"
+      },
+      {
+        "reward": "100",
+        "type": "Credits",
+        "value": "Expose the crimes of Ayano's mother"
+      }
+    ],
+    "scope": "Quick",
+    "rewardType": "Credits",
+    "uid": "pFdxE"
+  },
+  {
+    "title": "Morning H3R0 Idol",
+    "objectives": [
+      {
+        "value": "All members of the group reach S-Class",
+        "type": "Perks",
+        "reward": "Template Stacking I (Any S-Class Hero) to a member of your retinue"
+      },
+      {
+        "value": "One of your songs get 100 million downloads",
+        "type": "Other",
+        "reward": "You can now play your songs in the background whenever you want, you also get an additional 40 credits"
+      },
+      {
+        "type": "Companions",
+        "value": "Have Amai Mask acknowledge and consider your group as the perfect heroes",
+        "reward": "Capture Amai Mask and gain 20 credits"
+      },
+      {
+        "reward": "Talent Sharing of Communication Talent",
+        "value": "All members of the group win individual awards in various fields",
+        "type": "Perks"
+      },
+      {
+        "type": "Credits",
+        "reward": "30 credits",
+        "value": "Become a famous manager whose skill is respected by the members of the Hero association"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Create a Hero Idol group consisting of your waifus"
+      },
+      {
+        "value": "Become their manager and handle the duties that come with it"
+      },
+      {
+        "value": "One of the members become an S-Class Hero"
+      },
+      {
+        "value": "One of the members become 1st in the Hero popularity poll"
+      }
+    ],
+    "reward": "200",
+    "author": "CanvasRose",
+    "rewardType": "Credits",
+    "scope": "Standard",
+    "source": "",
+    "image": "https://i.pinimg.com/originals/f9/3d/aa/f93daaafa9093ecfb7de3aba490d1838.png",
+    "budget": 0,
+    "desc": "Amai Mask believes that a hero should be swift, powerful, and most importantly overwhelmingly beautiful. Unfortunately the current S-class heroes are all quite \"unique\" and none of them have the requirements needed to be the the ideal hero. This is where you and your waifus will come along and grant Amai his wish by becoming the greatest idol group in the world. Go and show the world what being a hero truly is! ",
+    "loca": "One Punch Man",
+    "uid": "DrzYk"
+  },
+  {
+    "image": "https://i.ytimg.com/vi/wHY74zD7Pp0/maxresdefault.jpg",
     "desc": "The Grandchild of a Contractor has decided to strike out as a Contractor themselves. Of course, the Demi-Stamp only goes so far after the first Generation, so we need to ensure they don't do anything stupid like join The Corporation or the ACC.\n\nTo that end we put out this mission as a sort of working Vacation. Your job is to Substitute into an important Female within the Starting World, be it a Protagonist, Antagonist, Love Interest or Good Friend. As long as they are prominent in the world. They can't be a Mentor character though. As this Character, you will monitor the Grandchild to ensure they are loyal. You have until they leave their Starting World, when someone else will take over if we aren't convinced either way.",
     "scope": "Standard",
     "loca": "Generic",
@@ -68,7 +636,7 @@
     "loca": "Generic",
     "title": "Rival Reward",
     "rewardType": "Credits",
-    "image": "",
+    "image": "https://img3.goodfon.com/wallpaper/nbig/8/ea/street-fighter-evil-ryu.jpg",
     "reward": "Credits equal to the Buy Value of the Tier above the ACP's current Tier. (If you are able to beat a Tier X ACP then you will receive a TX Ticket and 2000 Credits)",
     "objectives": [
       {
@@ -172,217 +740,43 @@
       }
     ],
     "budget": 300,
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1041430532921249822/33.jpg",
     "loca": "High School DxD",
     "author": "FinSexual92",
     "uid": "MBfGn"
   },
   {
-    "source": "",
-    "loca": "Worm",
-    "image": "",
-    "reward": "1",
-    "author": "Lunasmeow",
-    "objectives": [
-      {
-        "reward": "1",
-        "value": "Scion's new method of dealing with his pain is finding something to nurture and protect. The humans of Earth, all Earths.",
-        "type": "TX Tickets"
-      }
-    ],
-    "desc": "Jack Slash sets off Scion and turns him into a monster. Scion is looking for some way to end \"his\" pain after the death of Eden... find a better route to this branching path, that doesn't end in the death of Scion, or the end of the world from the Cycle.",
-    "rewardType": "TX Tickets",
-    "scope": "Grand",
-    "conditions": [
-      {
-        "value": "Cannot play as Jack Slash or the man who controls Scion in-setting."
-      },
-      {
-        "value": "Cannot have captured Jack Slash or Scion."
-      }
-    ],
-    "budget": 0,
-    "title": "Salvation From Above?",
-    "uid": "iKHOW"
-  },
-  {
-    "source": "",
-    "conditions": [
-      {
-        "value": "If you capture Amy Dallon, she must maintain her \"rules\". She can only use her full power as an antagonist. Not just in WORM. Everywhere."
-      }
-    ],
-    "author": "Lunasmeow",
-    "budget": 0,
-    "rewardType": "TX Tickets",
-    "desc": "Everyone and their grandmother uses Amy Dallon to make \"new creatures\" or some other nonsense in their bid for power in WORM. Stop it. It's FAR to damn easy. Amy's power is only good when limited (following her rules) or if she is an antagonist. Your story of her making creatures and winning after that is boring. Don't do it.",
-    "reward": "One TX ticket.",
-    "loca": "Worm",
-    "scope": "Grand",
-    "objectives": [],
-    "image": "",
-    "title": "No More Monsters!!!",
-    "uid": "McqqY"
-  },
-  {
-    "objectives": [],
-    "scope": "Grand",
-    "title": "Save the World. For Real This Time.",
-    "desc": "People seem to not realize that defeating giant space whales doesn't save the world. That these alien beings were a HIVE MIND. That defeating their greater selves only buys time.\n\nOnce shards have \"budded\" they can exist just like they originally did on their home world as separate beings. Eventually they will devour everything on earth, then on alternate earths, and the cycle will begin again once they realize the same thing the originals did on their home world.\n\nDon't just stall the end of the world, STOP it. Save the world, for real this time.",
-    "image": "",
-    "reward": "3",
-    "loca": "Worm",
-    "source": "",
-    "author": "Lunasmeow",
-    "budget": 0,
-    "rewardType": "TX Tickets",
-    "conditions": [
-      {
-        "value": "Eliminate EVERY shard on the planet."
-      }
-    ],
-    "uid": "pBDaA"
-  },
-  {
-    "scope": "Standard",
-    "loca": "Worm",
-    "author": "Lunasmeow",
-    "rewardType": "Credits",
-    "image": "",
-    "conditions": [
-      {
-        "value": "Do it yourself."
-      }
-    ],
-    "reward": "100",
-    "objectives": [
-      {
-        "type": "Credits",
-        "value": "Do so AFTER she triggers, and also eliminate the Queen Administrator shard.",
-        "reward": "500"
-      },
-      {
-        "value": "Save the world without the whiny bitch, and without her powers/shard.",
-        "reward": "One TX ticket.",
-        "type": "TX Tickets"
-      },
-      {
-        "value": "Do so as either Emma Barnes, or Shadow Stalker.",
-        "reward": "Even if you get caught, Emma's father gets you off scott free (maybe some community service) in court. Somehow. If you don't get caught, take another extra TX ticket, but only AFTER you save the world without Hebert's powers/shard.",
-        "type": "Other"
-      }
-    ],
-    "title": "End the Obsession",
-    "desc": "Taylor Hebert is a hypocritical bitch, who does not even TRY to help herself, but then does nothing but complain when others don't help her, as if they should care about her more than she herself does.\n\nWell, screw that noise. I'm tired of all the fuss over this whiny brat.\n\nKill Taylor Hebert.",
-    "budget": 0,
-    "source": "",
-    "uid": "DPYGX"
-  },
-  {
-    "desc": "Purity is an ex-Nazi who, depending on the world, manages to fall right back into the E88's hands.\n\nNow, there's admittedly something to say for those raised in such a group, are brainwashed into their ways from a young age, but who learn better and leave of their own will. That's admirable... but then there's those who know better and go back.\n\nMake sure Purity is NEVER in a position to return to her old \"friends\".\n\nShe must, rather publically, do something that ensures she can never be accepted by the E88 or their ilk again. Or do something that you have irrefutable evidence for, via recording or other proof, that you can hold against her should she ever try to return.\n\nNote: Additional rewards do NOT grant you the captures automatically, you simply gain the additional price upon actually performing said capture.",
-    "title": "The Repentant Nazi? - Ebony & Ivory",
-    "author": "Lunasmeow",
-    "scope": "Standard",
-    "rewardType": "Credits",
-    "image": "",
-    "objectives": [
-      {
-        "type": "Companions",
-        "reward": "Purity and her lover at 2x capture price.",
-        "value": "Purity is outed as having engaged in a relationship with a \"person of color\"."
-      },
-      {
-        "type": "Companions",
-        "value": "Purity is outed as a lesbian by engaging in a relationship with a woman.",
-        "reward": "Purity and her lover at 2x capture price."
-      },
-      {
-        "value": "Purity is outed as BOTH a lesbian AND having engaged in a relationship with a woman. (Not separately, in one. Her lover must be a \"woman of color\".)",
-        "type": "Companions",
-        "reward": "Purity and her lover at 6x capture price."
-      },
-      {
-        "type": "TX Tickets",
-        "value": "Purity is outed on video/camera/in public by being caught eating Miss Militia's pussy.",
-        "reward": "One TX ticket, and Purity and Miss Militia at 6x capture price."
-      },
-      {
-        "value": "Not only Purity, but even Fenja OR Menja have succumbed to their \"hidden desire\" for this forbidden fruit.",
-        "reward": "One extra TX ticket.",
-        "type": "TX Tickets"
-      },
-      {
-        "value": "Not only Purity, but even Fenja AND Menja have succumbed to their \"hidden desire\" for this forbidden fruit.",
-        "reward": "An additional extra TX ticket.",
-        "type": "TX Tickets"
-      },
-      {
-        "type": "TX Tickets",
-        "value": "Purity (and potentially Fenja and Menja) are known to be subs to Miss Militia with her as their \"dommy mommy\".",
-        "reward": "One extra TX Ticket for each known sub."
-      }
-    ],
-    "source": "",
-    "reward": "200",
-    "loca": "Worm",
-    "budget": 0,
-    "conditions": [
-      {
-        "value": "No *being* Purity for this mission. You may be her love interest, but if you are, rewards are reduced by half. (TX Ticket options are removed as well from additional rewards.)"
-      },
-      {
-        "value": "Purity and her lover, must perform the action of their own will. No Mind Control. Lures are fine, so long as they are \"subtle\" - no addiction level lures for example. Toggle should help."
-      },
-      {
-        "value": "Mission must be completed BEFORE capturing Purity or her lover."
-      },
-      {
-        "value": "Everyone (the general populace of every \"faction\" and civilians) must believe that no \"Mastery\" has occurred. (You can have a few who \"refuse to believe it\" like Max Anders and some forum people or something like that but everyone must assume they're in denial.) Even if you did not use Mind Control, if people THINK you did, you fail this mission, unless you manage to get that debunked somehow and the knowledge of that debunking distributed to the general public. (The agencies involved must believe this of their own will, not due to your Mind Control.)"
-      }
-    ],
-    "uid": "hmtdq"
-  },
-  {
-    "desc": "We at The Company are getting bored with this world and the complaints about how much of a Fail Alpha Derek Hale is (the less said about goody-two-shoes True Fail Scott McCall the better). To that end, we want to see how you would do as the Alpha. Of course, we aren't going to just hand you this power. That would be boring. You will be started the day that Scott McCall gets bit and you must become the Alpha.",
-    "title": "I am the Alpha",
     "budget": 80,
-    "image": "",
-    "loca": "Teen Wolf",
-    "scope": "Standard",
-    "rewardType": "Credits",
-    "reward": "500 Credits and the ability to transfer basic Power Sets you have via a bite.",
-    "author": "FinSexual82",
-    "source": "",
     "objectives": [
       {
+        "value": "Persuade Derek Hale to become your Beta",
         "type": "Other",
-        "reward": "Full Wolf Shift unlocked regardless of blood",
-        "value": "Persuade Derek Hale to become your Beta"
+        "reward": "Full Wolf Shift unlocked regardless of blood"
       },
       {
-        "value": "Devour Kate Argent's black Heart",
         "reward": "Beast Form unlocked for you, your Pack can unlock it by eating a Human Heart themselves",
+        "value": "Devour Kate Argent's black Heart",
         "type": "Other"
       },
       {
-        "type": "Companions",
         "value": "Persuade Allison Argent to become your Beta without Capturing her",
+        "type": "Companions",
         "reward": "Allison Argent capture and a +50% to all Captures that are either Hunters of some type or Archers."
       },
       {
         "type": "TX Tickets",
-        "reward": "1 TX Ticket (we really can't stand the 'man')",
-        "value": "Kill Gerard Argent before he can become a Kamina Master"
+        "value": "Kill Gerard Argent before he can become a Kamina Master",
+        "reward": "1 TX Ticket (we really can't stand the 'man')"
       },
       {
-        "value": "Persuade Stiles Stilinski to join your Pack",
+        "type": "Other",
         "reward": "Your very own Roscoe (with infinite gas)",
-        "type": "Other"
+        "value": "Persuade Stiles Stilinski to join your Pack"
       },
       {
-        "type": "Credits",
         "value": "Persuade Scott McCall to join your Pack",
-        "reward": "20 Credits (is it really worth it?)"
+        "reward": "20 Credits (is it really worth it?)",
+        "type": "Credits"
       }
     ],
     "conditions": [
@@ -399,7 +793,16 @@
         "value": "Extra Origin is a Must. Spending 1 Credit makes you a normal human that gets bit on the same day as Scott McCall. Spending 10 makes you a Born Werewolf of the Hale Pack that survived the fire but was left behind. Your name need not be Hale but your WW Parent must have been Bitten by Talia"
       }
     ],
-    "uid": "XIhlj"
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1041470358047432805/Screenshot_9.jpg",
+    "rewardType": "Credits",
+    "uid": "XIhlj",
+    "reward": "500 Credits and the ability to transfer basic Power Sets you have via a bite.",
+    "loca": "Teen Wolf",
+    "scope": "Standard",
+    "desc": "We at The Company are getting bored with this world and the complaints about how much of a Fail Alpha Derek Hale is (the less said about goody-two-shoes True Fail Scott McCall the better). To that end, we want to see how you would do as the Alpha. Of course, we aren't going to just hand you this power. That would be boring. You will be started the day that Scott McCall gets bit and you must become the Alpha.",
+    "source": "",
+    "author": "FinSexual82",
+    "title": "I am the Alpha"
   },
   {
     "scope": "Standard",
@@ -439,7 +842,7 @@
     "desc": "Have you ever been annoyed that the Protagonist, or one of their friends, settles into a relationship you believe to be below them or unhealthy (as if we have any room to talk)?\n\nWell, we need more positive Karma so we're letting you have this easy mission. Go to a world and ensure your OTP comes true there. Regardless of the Pretender's wishes.",
     "source": "",
     "title": "That is NOT my OTP",
-    "image": "",
+    "image": "https://i.pinimg.com/originals/0a/4d/2d/0a4d2d6e3461670a178276502a13699c.jpg",
     "uid": "vdKHN"
   },
   {
@@ -504,7 +907,7 @@
     "loca": "My Hero Academia",
     "scope": "Grand",
     "source": "",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1041470223921979482/Screenshot_8.jpg",
     "conditions": [
       {
         "value": "No Powers. Bindings still work as Bindings, but nothing more."
@@ -578,7 +981,7 @@
     "uid": "tTaRU"
   },
   {
-    "image": "https://i.pinimg.com/564x/22/eb/9f/22eb9f61c84a0d0f192667f16ceafad0.jpg",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1041471388927668405/Screenshot_10.jpg",
     "loca": "BTVS/Angel",
     "budget": 140,
     "reward": "Template Stacking I (Vampiric Powers) for a member of your retinue",
@@ -967,7 +1370,7 @@
     "author": "Ratcatcher",
     "budget": 200,
     "rewardType": "Other",
-    "image": "https://cdn.donmai.us/original/e9/ab/__ramona_v_flowers_kim_pine_knives_chau_lisa_miller_and_envy_adams_scott_pilgrim_drawn_by_miri00__e9ab32694976933ad3d9117c82bebd21.png",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1041472018463346718/Screenshot_1_clipdrop-enhance.jpg",
     "title": "YOUR Precious Little World",
     "reward": "200 credits and Performance Talent",
     "loca": "Scott Pilgrim",
@@ -1137,31 +1540,7 @@
     "budget": 200,
     "uid": "AJZHK"
   },
-  {
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1038859386644344953/ss.png",
-    "loca": "RWBY",
-    "desc": "Those dragons are assholes. Not just assholes, but idiots as well. Jackasses, that's what they are. Well, this is your world now Contractor. End the Brothers.\n\nDon't stop them from arriving, no... summon them with their beacons, and kill them both. Or you can sell them to us, whichever. You are not permitted to keep them however. If you do sell them, you sacrifice their sale price for your TX ticket, as a capture is easier than a kill.",
-    "conditions": [
-      {
-        "value": "No TX11 Start, RWBY must be your first world."
-      }
-    ],
-    "reward": "1",
-    "author": "Lunasmeow",
-    "uid": "DHTvW",
-    "scope": "Grand",
-    "budget": 0,
-    "title": "Ruler of Remnant",
-    "rewardType": "TX Tickets",
-    "objectives": [
-      {
-        "value": "Remnant isn't a world that will do well without some type of Gods to look after it. Magic is too powerful to not be controlled. Well, Dragons once ruled this world, thus they shall again. Summon both Tiamat and Bahamut into this world, then free them to serve as its gods in place of the Brothers.",
-        "type": "TX Tickets",
-        "reward": "1"
-      }
-    ],
-    "source": ""
-  },
+  
   {
     "budget": 85,
     "author": "Darkarma",
@@ -8688,8 +9067,7 @@
     "uid": "FtqRG"
   },
   {
-    "loca": "Shakugan no Shana",
-    "uid": "Cqp5y",
+    "scope": "Standard",
     "conditions": [
       {
         "value": "Capture Shana and complete her transformation into a variant Succubus. Sexually train her so she accepts her new position."
@@ -8704,22 +9082,23 @@
         "value": "You may not kill or capture anyone besides the targets until the mission is finished."
       }
     ],
-    "desc": "One of our newer contractors has unfortunately died when going after the target. Specifically, they tried to capture her without the right combat skills and lost an arm to her, then when trying to escape through a dimensional gate they ended up with their soul incinerated by the Crimson God Alastor. This has left a number of former retinue members unaccounted for and the locals possessing limited awareness of our existence. Your job will be to recollect our wayward Company Equipment, capture the target, one “Flame-Haired Burning-Eyed Hunter” also known as Shana. Of note is that the target has been infected with a form of transformative curse that is slowly converting her into a Succubus. This can be accelerated through inducing arousal, exposure to sexual fluids, penetrative sex and similar. Once you capture her, your other job will be to ‘reeducate’ her, to make sure that she will not give you any trouble. It is advised to avoid the use of dimensional transportation in the presence of any antagonistic Flame Haze.",
+    "loca": "Shakugan no Shana",
     "budget": 150,
-    "title": "Flame-Haired Burning-Eyed... Succubus?",
     "reward": "Shana gains a special TS I and II for \"Voice: Rie Kugimiya\" that allows her to gain access to the powers of any character voiced by Rie Kugimiya. She only has access to one other character at a time and can switch her powerset every 24 hours but the time limit can be decreased with training.",
-    "source": "",
-    "rewardType": "Companions",
-    "image": "https://i.imgur.com/DdmaHvE.jpg",
     "author": "Heaven Canceler",
-    "scope": "Standard",
     "objectives": [
       {
-        "type": "Perks",
         "value": "Capture Crimson God Alastor himself and have him declare Shana your personal possession.",
-        "reward": "1 TS I and II for Amaterasu from Okami + Gwynevere from Dark Souls or 85 Credits"
+        "type": "Perks",
+        "reward": "1 TS I and II for Amaterasu from Okami + Gwynevere from Dark Souls or 75 Credits"
       }
-    ]
+    ],
+    "desc": "One of our newer contractors has unfortunately died when going after the target. Specifically, they tried to capture her without the right combat skills and lost an arm to her, then when trying to escape through a dimensional gate they ended up with their soul incinerated by the Crimson God Alastor. This has left a number of former retinue members unaccounted for and the locals possessing limited awareness of our existence. Your job will be to recollect our wayward Company Equipment, capture the target, one “Flame-Haired Burning-Eyed Hunter” also known as Shana. Of note is that the target has been infected with a form of transformative curse that is slowly converting her into a Succubus. This can be accelerated through inducing arousal, exposure to sexual fluids, penetrative sex and similar. Once you capture her, your other job will be to ‘reeducate’ her, to make sure that she will not give you any trouble. It is advised to avoid the use of dimensional transportation in the presence of any antagonistic Flame Haze.",
+    "source": "",
+    "title": "Flame-Haired Burning-Eyed... Succubus?",
+    "uid": "Cqp5y",
+    "image": "https://i.imgur.com/DdmaHvE.jpg",
+    "rewardType": "Companions"
   },
   {
     "author": "Heaven Canceler",

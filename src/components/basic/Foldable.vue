@@ -1,13 +1,12 @@
 <template>
   <div>
     <div class="flex justify-between border-b border-gray-300 dark:border-gray-200 mb-2 leading-snug">
-      <div class="flex gap-2">
-        <h4 class="cursor-pointer" :class="titleStyle" @click="() => toggleFolded()">
-          {{ title }}
+      <div class="flex gap-2 items-center">
+        <h4 class="cursor-pointer" :class="titleStyle" @click="() => toggleFolded()" v-html="title">
         </h4>
         <slot name="buttons" />
       </div>
-      <div class="hover:text-blue-500 cursor-pointer" @click="() => toggleFolded()">
+      <div class="hover:text-blue-500 cursor-pointer select-none" @click="() => toggleFolded()">
         <codicon:fold-up v-if="isFolded" />
         <codicon:fold-down v-else />
       </div>

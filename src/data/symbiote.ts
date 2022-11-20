@@ -215,7 +215,7 @@ export const symbioteBinding: PerkFull[] = [
     cost: 10,
     category: 'Binding',
     type: 'Expansion',
-    image: '',
+    image: 'https://cdn.discordapp.com/attachments/925963686433132644/1040739968261304320/Screenshot_10.jpg',
     desc: `
     <p>The sympathetic connection between the queen and the rest of the hive allows her to transfer her new eggs directly to the nearest Hatchery that has room to spare in the same creep zone. This ability will fail if all Hatcheries within that zone are already full.</p>
     `,
@@ -227,7 +227,7 @@ export const symbioteBinding: PerkFull[] = [
     cost: 20,
     category: 'Binding',
     type: 'Expansion',
-    image: '',
+    image: 'https://cdn.discordapp.com/attachments/925963686433132644/1040722352947863602/Screenshot_8.jpg',
     desc: `
     <p>The fluid in a Lair’s spawning pool is highly viscous and mutative. Anyone who touches the surface, who is not already part of your swarm, will be pulled under, then transformed, converted, and captured into a new member of your swarm within a minute. Wyldscape Defense protects against the transformation, though Environmental Defense is also recommended for anyone attempting to crawl out the hard way.</p>
     `,
@@ -239,7 +239,7 @@ export const symbioteBinding: PerkFull[] = [
     cost: 15,
     category: 'Binding',
     type: 'Expansion',
-    image: '',
+    image: 'https://static.wikia.nocookie.net/starcraft/images/c/cc/ZergEgg_SC2_Cncpt2.jpg/revision/latest/scale-to-width-down/1920?cb=20110709135247',
     desc: `
     <p>Sapient, human-sized swarm members may now curl themselves into a spherical ball, roughly 1m in diameter. This ball form has no distinct internal bits and a fully-armored exterior. Swarm members may roll around freely in ball form, but often have trouble on slopes.</p>
     <p>Active Burrows, Nests, and Reefs now have a second entrance to the spawning organ, appropriately sized for the ball form to roll into. This entrance leads into the core of the spawning organ, where a swarm member in ball form will be reconfigured into a major unit’s egg and eventually be reborn as the new unit’s animate intelligence.</p>
@@ -254,7 +254,7 @@ export const symbioteBinding: PerkFull[] = [
     cost: 15,
     category: 'Binding',
     type: 'Expansion',
-    image: '',
+    image: 'https://cdn.discordapp.com/attachments/925963686433132644/1041030310265094144/22.png',
     desc: `
     <p>Many hands make light work. Your Lairs now have multiple spawning organs, allowing more than one individual to contribute new clutches to the building’s shared spawning pool at the same time. Each Lair now has 3 spawning organs, each Colony has 9, and each Hive has 27. The new spawning organs function identically to the original. Burrows, Nests, and Reefs do not benefit from this perk.</p>
     `,
@@ -266,7 +266,7 @@ export const symbioteBinding: PerkFull[] = [
     cost: 15,
     category: 'Binding',
     type: 'Expansion',
-    image: '',
+    image: 'https://cdn.discordapp.com/attachments/925963686433132644/1040738856300970066/Screenshot_9.jpg',
     desc: `
     <p>Individuals installed into a Lair, Burrow, Nest, or Reef can now project a psychic avatar anywhere in the structure, allowing them more options to mingle with other members of your swarm. This does not help them ignore the sensations that their flesh body experiences. Individuals who have not yet cultivated that ability tend to exhibit erratic behavior - similar to, as our beta testers frequently reported, “clubgoers on ecstasy.”</p>
     `,
@@ -278,7 +278,7 @@ export const symbioteBinding: PerkFull[] = [
     cost: 30,
     category: 'Binding',
     type: 'Expansion',
-    image: '',
+    image: 'https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/deviant-illusions-of-the-hivemind-susan-maxwell-schmidt.jpg',
     desc: `
     <p>You, your Queens, and all individuals installed into a Lair, Burrow, Nest, or Reef can now project their minds into a virtual space within the swarm’s Conjunction network, allowing for face-to-face communication and activities. Lucid dreaming rules apply: if someone in this space can imagine it, they can manifest it. However, this space cannot accurately represent scenes or places that the swarm has never observed, whether directly or via existing supernatural abilities. Separate mindscapes are also available to Maru Mari individuals riding inside Linguus and other passenger- carrying units.</p>
     `,
@@ -290,7 +290,7 @@ export const symbioteBinding: PerkFull[] = [
     cost: 50,
     category: 'Binding',
     type: 'Expansion',
-    image: '',
+    image: 'https://i.pinimg.com/originals/ce/3f/ae/ce3fae62ab9bdb109e8f63329d616bf2.png',
     desc: `
     <p>You may now build mobile Hatcheries, Burrows, Nests, Reefs, Evolution Chambers, and Nexuses into air, sea, or space units that are large enough to hold them. These may be used to resupply forces in transit or act as seeds to colonize distant lands.</p>
     `,
@@ -315,7 +315,7 @@ export const symbioteBinding: PerkFull[] = [
     cost: 50,
     category: 'Binding',
     type: 'Expansion',
-    image: '',
+    image: 'https://cdn.discordapp.com/attachments/925963686433132644/1040716164680126654/Screenshot_6.jpg',
     desc: `
     <p>The presence of at least a Colony in a Creep zone applies the effects of any of the five sensory Lures to any/all connected creep. This Expansion cannot apply the effects of sensory Lures that you haven’t purchased.</p>
     <p>Faerie Feast makes any food that creep zone produces, whether plant or animal, as addictive as food you prepared. Love Spot and Alluring Whisper allow for visual and auditory hallucinations, respectively, with hypnotic effects. Potpourri allows fine control of scents throughout the entire region. Finally, Sticky Fingers allows the creep’s flora to detain and ravish intruders.</p>
@@ -328,7 +328,7 @@ export const symbioteBinding: PerkFull[] = [
     cost: 40,
     category: 'Binding',
     type: 'Expansion',
-    image: '',
+    image: 'https://cdn.discordapp.com/attachments/925963686433132644/1040709521946980442/Screenshot_5.png',
     desc: `
     <p>Hives now alter the climate in your Creep zone to better fit the aesthetics of your symbiote theme. Your swarm will be able to shrug off any extreme weather or other hazards that this produces. Intruders will not be so fortunate, and will all find their tiers reduced by 1, to a minimum of 1. This stacks with the tier debuffs from Fortresses.</p>
     `,
@@ -353,7 +353,7 @@ export const symbioteBinding: PerkFull[] = [
     cost: 20,
     category: 'Binding',
     type: 'Expansion',
-    image: 'https://cdn.discordapp.com/attachments/925963686433132644/1024766028275798036/20220929_023345.jpg',
+    image: 'https://cdn.discordapp.com/attachments/925963686433132644/1040713231846609006/22.png',
     desc: `
     <p>Your Colonies now produce a highly-nutritious honey-like substance, a vital material for the promotion of new queens. Ingesting one half-liter of Royal Honey over the course of a single day will apply the same physical transformation that marks your king or queen to any humanoid of the appropriate gender who does so, following all of the same rules. This includes the extra +1 tier. Under normal conditions, this effect only lasts for 14 days (332 hours) after the initial sip and then recedes the next time the drinker sleeps.</p>
     <p>However, a female humanoid who experiences this effect while installed into a Hatchery, whether or not she was already affected when she stepped in, will become a Support Queen, equal in rank and benefitting from all of the same rules as your original queen. The promotion to Support Queen is permanent. The number of support queens you can have at any time is equal to 1 for each Colony, plus 10 for each Hive.</p>
@@ -410,7 +410,7 @@ export const symbioteBinding: PerkFull[] = [
     cost: 50,
     category: 'Binding',
     type: 'Expansion',
-    image: '',
+    image: 'https://cdn.discordapp.com/attachments/925963686433132644/1040711567509045310/HD-wallpaper-alien-robot.jpg',
     desc: `
     <p>Skitterers may now target digital entities. A Skitterer changes the shape of its “tongue”  to interface with any external computer port, then projects itself into a representation of virtual space. If a virtual space already exists, the Skitterer will simply enter that instead. Once there, it may stalk and convert the locals as normal.</p>
     <p>Conversion will pull a software AI or brain upload into a new physical body at the real-world location of the Skitterer, skipping to the penultimate stage of the normal process. These bodies are often natural cyborgs or technopaths, with no loss of ability compared to their previous selves, though the exact end-states after conversion are highly variable. Again, your Evolution Chambers may only copy technological abilities from one member of your swarm to another if you have a Hive.</p>
@@ -428,7 +428,7 @@ export const symBuildings: PerkFull[] = [
     dCost: 20,
     category: 'Binding',
     type: 'Freestanding',
-    image: '',
+    image: 'https://cdn.discordapp.com/attachments/925963686433132644/1040723170233171978/FirstSpawningPool_SC2-HotS_Art1.webp',
     desc: `
     <p>Your queen no longer has to carry the burden of new eggs herself. This fixed structure can do so instead. Any queen within your swarm may sexually interface with the spawning organ at the center of the Hatchery. This tall and narrow pool, shaped like a champagne flute and filled with water, will lock itself around the queen’s waist after she enters, leaving her upper body exposed. Any of a queen’s clothes that are caught within the organ when it locks will be heavily damaged or worse, so it’s important that she either enter while nude or banish any clothes that she wants to keep into a Pocket Space.</p>
     <p>Once in place, the organ will continuously ravish the queen as she produces a new clutch of larval eggs immediately after each orgasm, skipping the gestation period and automatically depositing each clutch into a spawning pool below the organ, until that pool is filled to capacity. Spawning pools are ideal environments for the eggs’ incubation and can hold up to 160 clutches at a time.</p>
@@ -518,7 +518,7 @@ export const symBuildings: PerkFull[] = [
     dCost: 80,
     category: 'Binding',
     type: 'Upgrade (Den)',
-    image: '',
+    image: 'https://i.pinimg.com/originals/c1/97/98/c197987a80635987ee4836634d78ea0e.jpg',
     desc: `
     <p>The Nest is the primary production building for non-sapient air units. Upgrading a Den to a Nest whitelist an additional 70 Devotion Points as construction material, minus any recycled from other swarm structures within the Nest’s new footprint. After 48 hours of new growth, a new Nest will reach its maximum size of 65 meters tall, and an additional 10 vertical meters of basements, with a 2,100 square meter footprint.</p>
     <p>Nests have much the same spawning interface as Lairs, with a specialized organ that a mature female subject can install herself into and create new eggs. A Nest’s eggs are limited to non-larval air units only, whether the pre-designed options, local species assimilated into your swarm, or creatures that your geneticists and bioengineers have custom-designed at an Evolution Chamber.</p>
@@ -532,7 +532,7 @@ export const symBuildings: PerkFull[] = [
     dCost: 80,
     category: 'Binding',
     type: 'Upgrade (Den)',
-    image: '',
+    image: 'https://2dartistmag.com/wp-content/uploads/2016/02/final_image-2.jpg',
     desc: `
     <p>The Reef is the primary production building for non-sapient sea units. Upgrading a Den to a Reef whitelist water access and an additional 70 Devotion Points as construction material, minus any recycled from other swarm structures within the Reef’s new footprint. After 48 hours of new growth, a new Reef will reach its maximum size of 20 meters tall, and an additional 10 vertical meters of basements, with a 5,250 square meter footprint.</p>
     <p>Reefs have much the same spawning interface as Lairs, with a specialized organ that a mature female subject can install herself into and create new eggs. A Reef’s eggs are limited to non-larval sea units only, whether the pre-designed options, local species assimilated into your swarm, or creatures that your geneticists and bioengineers have custom designed at an Evolution Chamber.</p>
@@ -563,7 +563,7 @@ export const symBuildings: PerkFull[] = [
     dCost: 30,
     category: 'Binding',
     type: 'Freestanding',
-    image: '',
+    image: 'http://2.bp.blogspot.com/-HKtvApKZZPY/TdwiuWiyzAI/AAAAAAAAAgw/UJN-JfowAfU/s1600/04+-+clouds.jpg',
     desc: `
     <p>This is your basic defensive emplacement, a tower 60 meters tall, with an additional 10 vertical meters of basements underground and a 250 square meter footprint. Spires are suitable sites from which swarm members can observe their surroundings or use their own weaponry against intruders.</p>
     <p>With an Evolution Chamber, your swarm’s bioscientists can adapt any special abilities allowed at that structure into new Spire variants. With a Nexus, psionic abilities become viable as well, and mystical and technological traits with a Hive. The more complex or esoteric the ability, the harder it is to adapt and the more expensive the variant becomes in Devotion Points.</p>
@@ -578,7 +578,7 @@ export const symBuildings: PerkFull[] = [
     dCost: 2000,
     category: 'Binding',
     type: 'Upgrade (Lair)',
-    image: '',
+    image: 'https://cdnb.artstation.com/p/assets/images/images/001/486/647/large/david-levy-formic-planetsurface-abovefactory-a-02.jpg?1447263416',
     freebies: {
       talentPerks: [{ title: 'Psychic Talent', cost: 0, count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Psychic Talent' }], count: 1 }],
       defensePerks: [],
@@ -598,7 +598,7 @@ export const symBuildings: PerkFull[] = [
     dCost: 400,
     category: 'Binding',
     type: 'Freestanding',
-    image: '',
+    image: 'https://cdn.discordapp.com/attachments/925963686433132644/1040718230592962630/Screenshot_7.jpg',
     desc: `
     <p>The Nexus is a focal point for your swarm’s psionic power and foundation for further growth. It is required for most psychic Expansions and allows all supernatural abilities present in your swarm to be added to your unit and structure designs. After 7 days (168 hours) of growth, a new Nexus will reach its full size at 30 meters tall, and an additional 20 meters of basements underground, with a 24,000 square meter footprint.</p>
     <p>A Nexus is always a suitable training site for supernatural abilities. If a sapient member of your swarm trains a supernatural ability at one, the appropriate Basic Talent will instead scale to the most potent sapient swarm member in the field being trained, regardless of whether or not they are physically present or actively participating in any training exercises.</p>
@@ -612,7 +612,7 @@ export const symBuildings: PerkFull[] = [
     dCost: 3000,
     category: 'Binding',
     type: 'Freestanding',
-    image: '',
+    image: 'https://cdnb.artstation.com/p/assets/images/images/001/486/527/large/david-levy-fr-formiccity-ilo-120316-sr0350-1120-01-dl.jpg?1447261903',
     desc: `
     <p>This is your mid-level defensive emplacement, about 85 meters tall, with an additional 40 vertical meters of basements underground, and a 24,500 square meter footprint. A fully-grown Fortress will spread Creep to about a 20 kilometer radius, reaching its maximum extent another 3 weeks (504 hours) after construction. Fortresses must be grown on existing Creep beds.A Fortress’s interior has an excess of internal space, so feel free to dedicate it to a variety of administrative or military roles as needed.</p>
     <p>Like Guard Spires, Fortresses are always suitable sites from which swarm members can observe their surroundings or use their own weaponry against intruders. With an Evolution Chamber, your swarm’s scientists can adapt any special abilities found in the biology of your swarm members - both the non-sapients assimilated by your swarm’s Creep and your sapient subjects - into new Fortress variants. With a Nexus, psionic abilities become viable as well, and mystical and technological traits with a Hive Fortresses can support abilities that are appropriate for combatants of up to Tier 6.</p>
@@ -627,7 +627,7 @@ export const symBuildings: PerkFull[] = [
     dCost: 20000,
     category: 'Binding',
     type: 'Upgrade (Colony)',
-    image: '',
+    image: 'https://cdnb.artstation.com/p/assets/images/images/001/486/653/large/david-levy-formic-planetsurface-d-01.jpg?1447263430',
     desc: `
     <p>The Hive is a direct upgrade to the Colony, with all of the features and abilities of its predecessor. It can incubate up to 80,000 clutches at a time. Upgrading a Colony to a Lair whitelist an additional 18,000 Devotion Points as construction material, minus any recycled from other swarm structures within the Hive’s new footprint. At this stage, you may build additional Colonies, but only upgrade a single one to a Hive.</p>
     <p>After 27 days (648 hours) of growth, the new Hive will reach its full size at 200 meters tall, and an additional 80 vertical meters of basements underground, with a 250,000 square meter footprint. A finished Hive will spread Creep to about a 125 kilometer radius, centered on the spawning pool, reaching its maximum extent another 4 weeks (672 hours) after construction.</p>
@@ -636,3 +636,6 @@ export const symBuildings: PerkFull[] = [
     whitelist: ['Nexus', 'Fortress'],
   },
 ]
+
+export const symbiotePerksObject = symbioteBinding.reduce((a, x) => { a[x.title] = x; return a }, {} as Record<string, PerkFull>)
+export const symbioteBuildingsObject = symBuildings.reduce((a, x) => { a[x.title] = x; return a }, {} as Record<string, PerkFull>)
