@@ -1,6 +1,900 @@
 [
   
   {
+    "author": "Ratcatcher",
+    "budget": 200,
+    "title": "Royal Stable",
+    "loca": "My Little Pony",
+    "conditions": [
+      {
+        "value": "Twilight Sparkle must be the ruling Princess of Equestria and a member of your Retinue. If she isn't the latter yet, go and Capture her."
+      },
+      {
+        "value": "Have Twilight seduce Rainbow Dash, Rarity, Pinkie Pie, Applejack, and Fluttershy. She must do it alone or at most with the help of other members of the Mane Six she has already seduced."
+      },
+      {
+        "value": "Once they're seduced, have Twilight talk them into having sex with her and you at the same time, and make them cum until they faint. It can be with one at a time or in groups, or even all of them together"
+      }
+    ],
+    "desc": "It's traditional in many cultures for a ruler to have a harem as a show of wealth and power, and it's said friendship is a form of love. Logically, that means Twilight Sparkle's friends should become her harem upon accession to the Equestrian throne, right? Especially if you have already Captured her.",
+    "scope": "Quick",
+    "image": "https://i.ibb.co/DwzjHSy/2fa6ad27e0986b72c12e5afc9f10b2a6.jpg",
+    "source": "",
+    "reward": "The rest of the Mane Six are Captured with +1 Tier after step six, 200 credits",
+    "rewardType": "Other",
+    "objectives": [
+      {
+        "value": "Get the other Princesses in Twilight's harem as you did with the Mane Six",
+        "type": "Companions",
+        "reward": "Celestia, Cadance and Luna Captured with +1 Tier after step six"
+      }
+    ],
+    "uid": "SmqrJ"
+  },
+  {
+    "objectives": [
+      {
+        "value": "Kidnap Shaina and Marin, talk them into having sex with you alongside Saori, and then force them to fight against the rescue party",
+        "reward": "Shaina and Marin are Captured with Saori with a +1 Tier increase",
+        "type": "Companions"
+      },
+      {
+        "value": "Same as the above with Shaina, but she Awakens her Seventh Sense",
+        "reward": "Shaina obtains the Gold Cloth of Ophiuchus and upon Capture is raised by two Tiers.",
+        "type": "Companions"
+      }
+    ],
+    "scope": "Quick",
+    "desc": "You all know how things tend to go in the Saint Seiya universe, Saori gets in trouble and her quintet of overpowered Bronze Saints has to race against the clock to solve the mess before she dies. With this mission, YOU will be the villain and get to face the Saints.",
+    "image": "https://cdn.donmai.us/original/75/25/__kido_saori_and_athena_saint_seiya_drawn_by_cirnos__7525536d500ce3e4715b383f3d521adb.jpg",
+    "loca": "Saint Seiya",
+    "budget": 400,
+    "rewardType": "Companions",
+    "conditions": [
+      {
+        "value": "You can take with you up to twelve retinue members, of tier equal or inferior to 8. If you or any of them are of higher tier, your powers will be nerfed for the duration. Local captures are not counted for this condition"
+      },
+      {
+        "value": "Capture Saori from the Sanctuary, and steal her armor (it will be camouflaged as the Athena Parthenos statue behind the Pope's office)."
+      },
+      {
+        "value": "Talk Saori into wearing her armor and having sex with you by taking advantage of her self-sacrificing streak, and then do her until she faints. After that, apply your Binding and let it run its course. Don't touch her again unless specifically required by the Binding."
+      },
+      {
+        "value": "Have the five Bronze Saints find your base of operations and try and stop you, while you and your retinue members try and stop them. You must guard Saori, and can't engage the Saints directly until they arrive to your position"
+      },
+      {
+        "value": "The moment the Binding runs its course, Saori is Captured and the mission completed. This will happen at least six hours after the rescue party arrives to your location no matter other conditions."
+      }
+    ],
+    "source": "",
+    "title": "Athena's conquest",
+    "reward": "Kido Saori is Captured with a +1 Tier increase",
+    "author": "Ratcatcher",
+    "uid": "qLCHD"
+  },
+  {
+    "desc": "In a setting where Earth is being largely invaded by aliens and humans despite technology, are having problems dealing with them, You are now responsible for changing the scales in favor of Humanity, and making sure that Earth belongs to its rightful owners.",
+    "image": "",
+    "budget": 0,
+    "title": "Earth For The humans ",
+    "reward": "955 Credits ",
+    "conditions": [
+      {
+        "value": "Magic is allowed only at low levels. Tier-4 or lower."
+      },
+      {
+        "value": "Need to make a completely new build for this mission with ONLY 100 credits."
+      },
+      {
+        "value": "No Retinue members are allowed."
+      },
+      {
+        "value": "Complete at least 10 Gantz Missions before leaving the team."
+      }
+    ],
+    "loca": "Gantz",
+    "author": "irugaa0",
+    "rewardType": "Credits",
+    "objectives": [
+      {
+        "reward": "10 credits ",
+        "value": "Gain 100 points at least 1 time.",
+        "type": "Credits"
+      },
+      {
+        "reward": "30 credits ",
+        "type": "Credits",
+        "value": "Gain 100 points at least 3 time."
+      },
+      {
+        "reward": "Gantz World technology “Akashic records”.",
+        "type": "Other",
+        "value": "Capture the Tokyo team Gantz."
+      },
+      {
+        "value": "Protect Rice the dog",
+        "reward": "5 credits ",
+        "type": "Credits"
+      },
+      {
+        "reward": "5 credits ",
+        "type": "Credits",
+        "value": "Protect Hoi Hoi the panda"
+      },
+      {
+        "reward": "10 credits per species.",
+        "type": "Credits",
+        "value": "Capture 10 or more species of Alien."
+      },
+      {
+        "value": "Kill Tanaka Alien Boss without a Gantz suit",
+        "type": "Credits",
+        "reward": "20"
+      },
+      {
+        "reward": "20",
+        "value": "During the Buddhist Temple Alien Mission kill the greatest number of aliens.",
+        "type": "Credits"
+      },
+      {
+        "value": "During the Shorty Alien Mission kill all aliens",
+        "reward": "20",
+        "type": "Credits"
+      },
+      {
+        "value": "During the Dinosaur Alien Mission kill the greatest number of aliens.",
+        "type": "Credits",
+        "reward": "20"
+      },
+      {
+        "value": "Kill the Ring Alien Boss with a katana",
+        "reward": "20",
+        "type": "Credits"
+      },
+      {
+        "value": "During the Oni Alien Mission kill the aliens using your bare-hands",
+        "type": "Credits",
+        "reward": "20"
+      },
+      {
+        "reward": "20",
+        "value": "During the Nurarihyon Alien Mission kill or capture the greatest number of aliens",
+        "type": "Credits"
+      },
+      {
+        "value": "During the Nurarihyon Alien Mission CAPTURE the 3 leaders.",
+        "type": "Credits",
+        "reward": "20"
+      },
+      {
+        "type": "Credits",
+        "reward": "20",
+        "value": "Capture one “Vampire”"
+      },
+      {
+        "reward": "20",
+        "type": "Credits",
+        "value": "Kill or Capture the 4 “Vampire” bosses"
+      },
+      {
+        "reward": "One exact copy of the alien ship as a ride, plus the original if not destroyed.",
+        "value": "During the Alien Ship Takeover Mission, Takeover the ship and control it.",
+        "type": "Other"
+      },
+      {
+        "type": "Credits",
+        "value": "During the Destroy the Tower Mission, Be the one to destroy the tower. ",
+        "reward": "50"
+      },
+      {
+        "value": "Duel with the Giant alien Eeva Gund and win",
+        "reward": "100",
+        "type": "Credits"
+      },
+      {
+        "reward": "1000",
+        "value": "Capture a God Alien.",
+        "type": "Credits"
+      }
+    ],
+    "source": "",
+    "scope": "Standard",
+    "uid": "pHFIj"
+  },
+  {
+    "objectives": [
+      {
+        "value": "Visit The River of Light",
+        "reward": "20",
+        "type": "Credits"
+      },
+      {
+        "reward": "20",
+        "value": "Capture a mountain Master or Mountain God",
+        "type": "Credits"
+      },
+      {
+        "value": "Capture a Kuchinawa",
+        "reward": "50",
+        "type": "Credits"
+      },
+      {
+        "value": "Visit the boy whose left hand is like a god's",
+        "type": "Perks",
+        "reward": "template stacking of the kid's power."
+      },
+      {
+        "reward": "20",
+        "type": "Credits",
+        "value": "Research or Collect at least 20 Mushi"
+      },
+      {
+        "type": "Credits",
+        "reward": "50",
+        "value": "Research or Collect at least 50 Mushi"
+      },
+      {
+        "value": "Research or Collect at least 100 Mushi",
+        "type": "Credits",
+        "reward": "100"
+      },
+      {
+        "value": "Research or Collect at least 500 Mushi",
+        "reward": "500 + a Tier 6 Companion",
+        "type": "Other"
+      }
+    ],
+    "budget": 0,
+    "source": "",
+    "image": "",
+    "reward": "200 Credits",
+    "scope": "Grand",
+    "conditions": [
+      {
+        "value": "Collect 10 species of Mushis"
+      },
+      {
+        "value": "Solve at least 10 Mushi related cases"
+      },
+      {
+        "value": "Meet at least one Mushishi during the mission"
+      },
+      {
+        "value": "Must travel at least 10 000 miles during this mission."
+      },
+      {
+        "value": "Must Explore this world for at least 3 Years."
+      }
+    ],
+    "desc": "Mushishi is such an amazing setting that is a pity that so few of our contractors take the time to travel there, to change it our clients the Wandering Traveler and Sore Feet Explorer, decided to give us this mission. ",
+    "loca": "Mushishi",
+    "rewardType": "Credits",
+    "title": "The Sore Feet Mission ",
+    "author": "irugaa0",
+    "uid": "TsZfM"
+  },
+  {
+    "source": "",
+    "desc": "One of our clients is addicted to the English tv series the misfits. So unfortunately for you, you were randomly chosen to participate in this little experience of his",
+    "budget": 0,
+    "objectives": [
+      {
+        "value": "Visit an alternate timeline",
+        "reward": "50",
+        "type": "Credits"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You get one RANDOM power, to use during this mission."
+      },
+      {
+        "value": "All powers and perks are disabled for the duration of mission. "
+      },
+      {
+        "value": "the mission last until the beginning of season 4"
+      }
+    ],
+    "image": "",
+    "scope": "Grand",
+    "reward": "200 Credits",
+    "title": "Misfiting in Misfits",
+    "loca": "The Misfits",
+    "rewardType": "Credits",
+    "author": "irugaa0",
+    "uid": "bKffz"
+  },
+  {
+    "reward": "500 Credits.",
+    "image": "",
+    "loca": "Generic",
+    "scope": "Quick",
+    "conditions": [
+      {
+        "value": "Must avoid large scale destruction at any cost"
+      },
+      {
+        "value": "All bindings are inefficient, so do it manually."
+      },
+      {
+        "value": "Must avoid indiscriminate killing."
+      }
+    ],
+    "objectives": [
+      {
+        "value": "Capture the Target alive.",
+        "type": "Other",
+        "reward": "A power similar to one of the essences held by target."
+      }
+    ],
+    "source": "",
+    "author": "irugaa0",
+    "budget": 0,
+    "desc": " Recently several of our Low and Middle levels contractor were systematically killed by an unidentified killer, through our means it was identified that the killer is a user of Essences, the amount of essences in the target’s possession are unknown to us, but we were capable of identifying the essences of the: Mad Doctor and Force, In the target. Go there and deal with him/her.",
+    "rewardType": "Credits",
+    "title": "Essence Hunter ",
+    "uid": "gGzhM"
+  },
+  {
+    "image": "",
+    "source": "",
+    "conditions": [
+      {
+        "value": "Become a Mafia Boss "
+      },
+      {
+        "value": "Can only choose two retinue members as part of your Guardians"
+      }
+    ],
+    "rewardType": "Perks",
+    "author": "irugaa0",
+    "budget": 0,
+    "objectives": [
+      {
+        "value": "Have your own signature equipment",
+        "reward": "15 credits",
+        "type": "Credits"
+      },
+      {
+        "reward": "20 credits",
+        "value": "Have one Special Flames",
+        "type": "Credits"
+      },
+      {
+        "type": "Credits",
+        "value": "Have a personal Box Weapon",
+        "reward": "10 credits"
+      },
+      {
+        "value": "Recruit 7 Guardians ",
+        "reward": "300 credits",
+        "type": "Credits"
+      },
+      {
+        "reward": "50 credits",
+        "value": "Collect one Hell Rings",
+        "type": "Credits"
+      },
+      {
+        "reward": "500 credits",
+        "type": "Credits",
+        "value": "Collect all Hell Rings"
+      },
+      {
+        "type": "Credits",
+        "reward": "100 credits",
+        "value": "Recruit an Arcobaleno"
+      },
+      {
+        "reward": "200 credits + t7 companion",
+        "value": "Acquire all The Vongola Rings",
+        "type": "Other"
+      },
+      {
+        "type": "Other",
+        "reward": "200 credits + t7 companion",
+        "value": "Acquire all The Mare Rings"
+      },
+      {
+        "value": "Acquire all The Arcobaleno Pacifiers",
+        "type": "Other",
+        "reward": "200 credits + t8 companion"
+      },
+      {
+        "value": "Acquire all The Simon Rings",
+        "type": "Other",
+        "reward": "200 credits + TS- Earth Dying Will Flame for your entire retinue."
+      },
+      {
+        "type": "TX Tickets",
+        "reward": "1",
+        "value": "Complete the Tri-ni-sette"
+      }
+    ],
+    "scope": "Standard",
+    "title": "The Flame in all of US",
+    "loca": "Katekyo Hitman Reborn",
+    "reward": "TS1&2- Sky Dying Will Flame for all your Retinue.",
+    "desc": "The Katekyō Hitman Reborn is a setting where mafia families use the power of the flames to fight. In this setting, You Must either Create a new Familia or assume the leadership of one, chose between sky or earth Dying Will Flames, and recruit guardians to the Familia. ",
+    "uid": "tCmDJ"
+  },
+  {
+    "title": "A Farmer’s Life - Stardew Valley Expanded Edition.",
+    "desc": "The Retired PRO-Farmer, one of our main Clients, is tired of watching our contractors wagging war and fighting in the multiverse, all he wants is to watch is the peaceful life of new farmers trying to learn how to live out the soil.",
+    "scope": "Grand",
+    "image": "",
+    "conditions": [
+      {
+        "value": "Must complete one year. "
+      }
+    ],
+    "source": "",
+    "objectives": [
+      {
+        "value": "Plant all plants.",
+        "type": "Credits",
+        "reward": "10"
+      },
+      {
+        "reward": "10",
+        "type": "Credits",
+        "value": "Collect all artifacts."
+      },
+      {
+        "reward": "10",
+        "value": "Mine all ores.",
+        "type": "Credits"
+      },
+      {
+        "reward": "10",
+        "value": "Fish all fishes.",
+        "type": "Credits"
+      },
+      {
+        "reward": "5",
+        "type": "Credits",
+        "value": "Participate of ALL events at least once."
+      },
+      {
+        "type": "Credits",
+        "value": "Have a Fish Tank with all 10 Legendary Fishes.",
+        "reward": "20"
+      },
+      {
+        "reward": "20",
+        "type": "Credits",
+        "value": "Restore de Community Center."
+      },
+      {
+        "reward": "5",
+        "value": "Have an 8 Heaths friendship.",
+        "type": "Credits"
+      },
+      {
+        "reward": "25",
+        "type": "Credits",
+        "value": "Have an 8 Heaths friendship with 5 people."
+      },
+      {
+        "type": "Credits",
+        "reward": "20",
+        "value": "Marry Someone. "
+      },
+      {
+        "reward": "10",
+        "value": "Travel to all available places.",
+        "type": "Credits"
+      },
+      {
+        "value": "Raise all available animals.",
+        "type": "Credits",
+        "reward": "10"
+      },
+      {
+        "value": "Receive all 4 stars in the shrine.",
+        "reward": "10",
+        "type": "Credits"
+      },
+      {
+        "value": "Collect all the Golden walnuts.",
+        "reward": "130",
+        "type": "Credits"
+      },
+      {
+        "value": "Collect all the Star drops.",
+        "reward": "30",
+        "type": "Credits"
+      },
+      {
+        "reward": "100",
+        "value": "Collect 100 Qi Gems.",
+        "type": "Credits"
+      },
+      {
+        "type": "Credits",
+        "reward": "10",
+        "value": "Cook every recipe.\t"
+      },
+      {
+        "type": "Credits",
+        "reward": "10",
+        "value": "Craft all items."
+      },
+      {
+        "type": "Credits",
+        "reward": "25",
+        "value": "Complete all monster eradication goals."
+      },
+      {
+        "type": "Credits",
+        "value": "Gather a total of 100.000 money",
+        "reward": "10"
+      },
+      {
+        "value": "Gather a total of 1.000.000 money",
+        "type": "Other",
+        "reward": "Monetary Perk or 10 credits"
+      }
+    ],
+    "loca": "Stardew Valley",
+    "budget": 0,
+    "reward": "20",
+    "rewardType": "Credits",
+    "author": "irugaa0",
+    "uid": "Qnnlw"
+  },
+  {
+    "objectives": [
+      {
+        "type": "Perks",
+        "reward": "50 credits, the Maestro perk upgrade, or its cost in points refunded.",
+        "value": "Find and return, by force if necessary, The Corinthian to Dream's realm."
+      }
+    ],
+    "desc": "The Lord of the Realm of Dreams, Morpheus, Dream of the Endless, has been imprisoned by mortal hands. Even now, they profit from his pilfered treasures' powers. Your mission is to be the one who frees Morpheus from his prison. How you accomplish this matters not, but the Dreamlord must be able to resume his dominion over mankind's slumber as soon as possible.",
+    "source": "",
+    "loca": "DC (magic side)",
+    "image": "https://theenvoyweb.com/wp-content/uploads/2022/08/Spell-The-Sandman-1024x576.jpg",
+    "scope": "Standard",
+    "budget": 365,
+    "reward": "100 credits, the Hypnos lure, and Dream's realm becomes accessible through your sweet home/demiplane's portals.",
+    "rewardType": "Perks",
+    "conditions": [
+      {
+        "value": "Dream of the Endless may not be captured or bound unknowingly, and must be freed and returned to his realm before any such offers can be made."
+      },
+      {
+        "value": "The Helm, The Ruby, and The Sand must be returned to Dream's possession by any means necessary."
+      }
+    ],
+    "title": "Jailbreak",
+    "author": "GuileGale",
+    "uid": "NXNeh"
+  },
+  {
+    "source": "",
+    "image": "",
+    "title": "Not All About Violence",
+    "reward": "150 Credits",
+    "scope": "Standard",
+    "loca": "Mario Series",
+    "conditions": [
+      {
+        "value": "No Bindings and No Captures period"
+      },
+      {
+        "value": "Violence outside what is allowed in the activity is prohibited"
+      },
+      {
+        "value": "You may make bets with your competitors but you can't throw any match/race"
+      },
+      {
+        "value": "You may have sexual relations with Locals, but there will be no Offspring from it even with Fertility Calibration I"
+      }
+    ],
+    "budget": 0,
+    "rewardType": "Credits",
+    "author": "FinSexual92",
+    "objectives": [
+      {
+        "value": "Take part in a Kart Championship and come at least 3rd",
+        "type": "Other",
+        "reward": "A Garage in your Demiplane (attached or unattached to your home depends on your preference). It will contain two Rides, your Kart and your Bike"
+      },
+      {
+        "value": "Take part in a Kart Championship and come at least 2nd ",
+        "type": "Other",
+        "reward": "A Track Maker is added to your Control Panel (if you don't have one before, you now have one that does only this)"
+      },
+      {
+        "value": "Take part in a Kart Championship and come 1st [repeatable]",
+        "type": "Companions",
+        "reward": "1 Companion Tokens for anyone that has been a part of the Mario Series (either directly or as a guest character. this does include Smash Characters as well)"
+      },
+      {
+        "reward": "Warp Pipes added to your Demiplane",
+        "value": "Take part in a Golf Championship and come at least 3rd",
+        "type": "Other"
+      },
+      {
+        "value": "Take part in a Golf Championship and come at least 2nd",
+        "reward": "A Golf Course maker is added to your Control Panel (if you don't have one before, you now have one that does only this)",
+        "type": "Other"
+      },
+      {
+        "reward": "Mario Series buildings, residents and landmarks are unlocked for your Demiplane",
+        "value": "Take part in a Gold Championship and come 1st",
+        "type": "Other"
+      },
+      {
+        "type": "Other",
+        "value": "Take part in a Tennis Doubles match with your partner being a Local and win",
+        "reward": "Mario Power ups and Smash Items appear naturally in your Demiplane"
+      },
+      {
+        "type": "Other",
+        "value": "Take part in a Tennis Singles match and win",
+        "reward": "A token allowing you to learn a single ability from a Local (be they commands from RPGs or moves in Smash)"
+      },
+      {
+        "reward": "A Stadium for your Demiplane that will reconfigure itself for any sport (from Olympics to Smash Arenas)",
+        "type": "Other",
+        "value": "Take part in a Baseball game with only Locals"
+      },
+      {
+        "type": "Other",
+        "reward": "Herds of Yoshis in your Demiplane that count as Rides rather than Companions",
+        "value": "Take part in a Yoshi Race and win"
+      },
+      {
+        "value": "Take part in a league of the Olympic Games",
+        "reward": "Olympic equipment available in your Demiplane",
+        "type": "Other"
+      },
+      {
+        "type": "Other",
+        "value": "Take part in a Soccer game with only Locals",
+        "reward": "1 Token allowing one of your Retinue to learn  a single ability from a Local (be they commands from RPGs or moves in Smash)"
+      }
+    ],
+    "desc": "Sometimes you just want the river of blood to stop. We may not agree, but we can make it work. The skills you learn may come in useful at some point. The Mario Series has a variety of Activities you can partake in to stave off your boredom. Karting, Soccer, Golf, Baseball, Yoshi racing, Olympics, etc. Do not worry, this was a version created by one of your fellows so it is rather lewd.",
+    "uid": "bCCmf"
+  },
+  {
+    "source": "",
+    "objectives": [
+      {
+        "value": "Impregnate/be impregnated by a god/dess within the Dungeon.",
+        "type": "Companions",
+        "reward": "Automatic capture of the god/dess in question after the child is born."
+      },
+      {
+        "value": "Impregnate any female individual with Falna in the Dungeon",
+        "reward": "Automatic capture of the female in question after the child is born.",
+        "type": "Companions"
+      }
+    ],
+    "author": "Fetysh",
+    "title": "Hentai Dungeon Run",
+    "desc": "Congratulations Contractor! You've been chosen as the newest runner of the Dungeon, hentai edition! You are being sent to Danmachi. Good luck making it through the Rape version of the Dungeon. This will be televised to our many customers and clients.",
+    "conditions": [
+      {
+        "value": "You cannot power swap to, possess, or substitute any character higher than tier 5."
+      },
+      {
+        "value": "You cannot leave the universe under any circumstances beyond Exit Stage Left and it's upgrades, and the progress bar does not fill until you've captured the Dungeon. You are granted ESL and it's upgrades for free to track this."
+      },
+      {
+        "value": "You cannot bring any waifus or husbandos that are over tier 5."
+      },
+      {
+        "value": "You can select heritages, but no perks that bring you over tier 5, on character generation. You can select them later."
+      },
+      {
+        "value": "Wage Slave is required."
+      },
+      {
+        "value": "You are given Universal Calibration, Meta Shift I and Meta Shift II. The changes these grant are already chosen for you and implemented. You cannot change them until you leave Danmachi. These are free."
+      },
+      {
+        "value": "You are given sexual and fertility calibration. Fertility calibration is set to guaranteed fertility with anything in the Dungeon (including people/deities) and infertile outside the Dungeon."
+      },
+      {
+        "value": "You must be female, and cannot use any powers to shapeshift away from being female. You can, temporarily, become futa, so long as you have the power to do so."
+      },
+      {
+        "value": "You are given Information Defense II for free."
+      },
+      {
+        "value": "You cannot capture any deities or individuals with Falna."
+      }
+    ],
+    "rewardType": "Other",
+    "image": "",
+    "reward": "1000 credits. You receive the perfect combination nursery, daycare and school in your Sweet Home for any and all children, including monstrous ones. This will grow in size as needed. Your nursery contains perfect caretakers that will raise your children exactly how you want.",
+    "budget": 360,
+    "loca": "Danmachi",
+    "scope": "Grand",
+    "uid": "aaecu"
+  },
+  {
+    "author": "ClayUndead",
+    "loca": "One Punch Man",
+    "scope": "Grand",
+    "conditions": [
+      {
+        "value": "Take over the Monster Association"
+      },
+      {
+        "value": "Destroy the Hero Association"
+      },
+      {
+        "value": "Reign as the Monster King for Five Years"
+      }
+    ],
+    "title": "Long reign the Monster Association!",
+    "objectives": [
+      {
+        "value": "Break Psykos to your will without capturing her(Lures are allowed)",
+        "reward": "250 Credits and Auto-Capture of Psykos.",
+        "type": "Other"
+      },
+      {
+        "reward": "1 TX Ticket ",
+        "type": "TX Tickets",
+        "value": "Defeat God in a 1v1 battle without destroying the Earth."
+      },
+      {
+        "type": "TX Tickets",
+        "reward": "1 TX Ticket ",
+        "value": "Defeat Saitama in a 1v1 battle without destroying the Earth."
+      },
+      {
+        "value": "Defeat and Humiliate Tatsumaki publicly.",
+        "reward": "500 credits and Auto-capture of Tatsumaki.",
+        "type": "Other"
+      },
+      {
+        "value": "Defeat Blast in a 1v1 battle.",
+        "type": "Other",
+        "reward": "500 credits and a Hoopa Gijinka Egg"
+      },
+      {
+        "reward": "20 credits and an Oppai Hoodie",
+        "type": "Other",
+        "value": "Defeat and Humiliate King publicly."
+      },
+      {
+        "reward": "100 credits",
+        "type": "Credits",
+        "value": "Defeat a S-Class Hero(Repeatable)."
+      },
+      {
+        "value": "Defeat a A-Class Hero(Repeatable).",
+        "type": "Credits",
+        "reward": "50 Credits"
+      },
+      {
+        "type": "Credits",
+        "value": "Defeat a B-Class Hero(Repeatable).",
+        "reward": "20 Credits"
+      },
+      {
+        "value": "Defeat a C-Class Hero(Repeatable).",
+        "reward": "10 Credits",
+        "type": "Credits"
+      }
+    ],
+    "source": "",
+    "rewardType": "Credits",
+    "budget": 500,
+    "desc": "This setting is always \"Heroes this\" and \"Heroism that.\" Well goody-goody-gumdrops for their pansy asses, I want a world of Monsters, for monsters!  And you're gonna be the one to make it! I want you to supplant Orochi as the Monster King and lead the MA into a new age of Monsters.",
+    "image": "",
+    "reward": "1000 Credits",
+    "uid": "EUODc"
+  },
+  {
+    "desc": "Vegeta has had a rough life, he had to survive while being tortured by the person whom has Killed his family, his planet and almost his entire Race.\nHe has seen the mood of his Owner, raise to hights of joy to lows of sheer anger.... Contractor, bring forth the power of the royal bloodline, make the nightmares that still haunt the prince stop so he can finally make the saiyan race return at the height they were meant to be.\n\"Because Frieza, You're not dealing with the average Saiyan Warrior anymore.... I, KING Vegeta am a SUPER SAIYAN! That's right Frieza, I've arisen beyond the limits of a normal saiyan and into the realm of legend! The legend that you fear, The legend known throughout the entire universe as the most powerful warrior to ever exist! I, Emperor Vegeta have become a SUPER SAIYAN!\"",
+    "source": "",
+    "objectives": [
+      {
+        "type": "Companions",
+        "value": "Kill the fucker by yourself... No help needed *Fighting/Killing* it.",
+        "reward": "Universal Calibrated Frieza family whom has regeneration on their lower half."
+      },
+      {
+        "reward": "Fully in control Black-Frieza Family maids, very submissive to Contractor.",
+        "type": "Companions",
+        "value": "Kill Freiza at full strength while it cries... *Like a little Bitch*."
+      },
+      {
+        "reward": "Grade 4(Mastery) for any form... Yet only after the battle.",
+        "value": "Become the first Super Saiyan in front of Goku, Frieza and the gang while doing the \"Quote\"",
+        "type": "Other"
+      },
+      {
+        "type": "Other",
+        "value": "Get Frieza to commit sedoku after destroying It's mind with overwhelming Power.",
+        "reward": "Majin (Saiyan)Tail, pinkish purple apperance which can extend... Thicken and its able to absorb people through it but people can't steal your dna without your permission... (Additionally Fertility Calibration I is given.)"
+      },
+      {
+        "reward": "Zenkai Boosted T8 Raditz with double tail... Uncaptured for you to enjoy.",
+        "value": "Get the remaining pair of alive, uncaptured saiyans on Namek to call you their Ruler of their own free will",
+        "type": "Companions"
+      }
+    ],
+    "scope": "Standard",
+    "reward": "Powerswap with T10 Vegetto(Buu Saga) for free as well as a free Body swap to any they like, even their original body.",
+    "author": "LordHD",
+    "title": "Vegeta's PRIDE!",
+    "budget": 955,
+    "rewardType": "Other",
+    "image": "https://i.imgur.com/JbLJ9xw.png",
+    "loca": "Dragonball",
+    "conditions": [
+      {
+        "value": "Subsitite as (T7)Vegeta, you shall Wake up when he lands on the green planet."
+      },
+      {
+        "value": "No Powerswapping, Template Stacking, buying Waifus or Potential adding."
+      },
+      {
+        "value": "Kill Frieza before the planet explodes... Yes we mean Kill, not leave him behind barely alive where he \"Could\" be saved and brought back to full health... KILL IT!"
+      }
+    ],
+    "uid": "FHvli"
+  },
+  {
+    "image": "",
+    "scope": "Grand",
+    "conditions": [
+      {
+        "value": "You must start as a \"Saberface\" Possess origin (Any version of Artoria, Jeanne or Nero)"
+      },
+      {
+        "value": "Your Retinue must only Include Saberfaces"
+      },
+      {
+        "value": "You must acquire one of each Saber face"
+      },
+      {
+        "value": "You must Complete all three basic Fate Routes."
+      }
+    ],
+    "budget": 500,
+    "rewardType": "TX Tickets",
+    "source": "",
+    "reward": "1",
+    "loca": "Nasuverse",
+    "title": "Grand Saber Face",
+    "desc": "So many women who share the same face and yet all of them almost never interact with each other outside a certain carnival..\n\nLet's fix that shall we?",
+    "author": "Meline Sureli",
+    "objectives": [
+      {
+        "value": "Defeat the Jerusalem Singularity",
+        "reward": "Artoria Pendragon (Lancer) Companion",
+        "type": "Companions"
+      },
+      {
+        "type": "Companions",
+        "value": "Defeat Fate/Stay Night Route",
+        "reward": "Artoria Pendragon (Saber) Companion"
+      },
+      {
+        "value": "Defeat Fate/Stay Heaven's Feel Route",
+        "type": "Companions",
+        "reward": "Artoria Alter (Saber) Companion"
+      },
+      {
+        "type": "Other",
+        "value": "Convince Emiya Shirou to cook for you at least once",
+        "reward": "EMIYA Template stack"
+      }
+    ],
+    "uid": "sQFIn"
+  },
+  {
     "scope": "Standard",
     "conditions": [
       {
@@ -69,9 +963,37 @@
     "uid": "iyDQN"
   },
   {
-    "image": "",
-    "author": "CanvasRose",
+    "title": "Kill the Unfairness",
+    "uid": "EEstV",
+    "reward": "250 Credits and your very own portable castle similar to the one found in the empire. You also get the emperor as a companion and a free TS of one of the characters from AKG",
     "loca": "Akame ga Kill!",
+    "scope": "Grand",
+    "objectives": [
+      {
+        "value": "Repair the Emperor's reputation to the point of people considering him a good leader",
+        "reward": "30 Credits and Talent Sharing of Communication Talent",
+        "type": "Credits"
+      },
+      {
+        "reward": "Free TS of Norn Clatalissa Jioral",
+        "value": "Remove the vast majority of the corruption in the empire",
+        "type": "Perks"
+      },
+      {
+        "type": "Companions",
+        "value": "Find a way to turn the Revolutionary army into the Emperor's allies",
+        "reward": "Gain a T6 companion of your choice"
+      },
+      {
+        "reward": "You gain nothing except the knowledge that you have changed the fate of one unfortunate child; ",
+        "type": "Other",
+        "value": "Have the Emperor consider you as their best friend/ father figure"
+      }
+    ],
+    "author": "CanvasRose",
+    "source": "",
+    "desc": "The emperor's story is truly tragic. A good-hearted young man who was used as a puppet throughout his entire life by the one he most trusted. That same individual murdered his parents. Because of all the corruption, his empire is falling apart, but he is unaware of it because his \"trusted\" advisers are feeding him lies. The people he tries to protect either fear or detest him because, despite his desire to be a good ruler, his own inexperience prevented him from being one. The single person that backs him is ineffective and does nothing to address the problem. And by the time he realized that instead of bringing his people peace and prosperity, he had only brought them suffering, it was too late, and he was sentenced to death. A sad ending for the boy, who will most likely be remembered as history’s worst emperor. How pitiful it really demonstrates how unfair life can be. So what if we decide to alter his fate? By making you, the most unfair existence on the planet, his ally.",
+    "image": "https://i.imgur.com/4O3fLlb.jpg",
     "conditions": [
       {
         "value": "You are not allowed to kill or hurt the Emperor, you must also protect him from any harm"
@@ -101,36 +1023,8 @@
         "value": "Do not let Night Raid execute the Emperor!"
       }
     ],
-    "reward": "250 Credits and your very own portable castle similar to the one found in the empire. You also get the emperor as a companion and a free TS of one of the characters from AKG",
     "rewardType": "Credits",
-    "budget": 0,
-    "objectives": [
-      {
-        "reward": "30 Credits and Talent Sharing of Communication Talent",
-        "value": "Repair the Emperor's reputation to the point of people considering him a good leader",
-        "type": "Credits"
-      },
-      {
-        "value": "Remove the vast majority of the corruption in the empire",
-        "type": "Perks",
-        "reward": "Free TS of Norn Clatalissa Jioral"
-      },
-      {
-        "type": "Companions",
-        "value": "Find a way to turn the Revolutionary army into the Emperor's allies",
-        "reward": "Gain a T6 companion of your choice"
-      },
-      {
-        "value": "Have the Emperor consider you as their best friend/ father figure",
-        "reward": "You gain nothing except the knowledge that you have changed the fate of one unfortunate child; ",
-        "type": "Other"
-      }
-    ],
-    "scope": "Grand",
-    "title": "Kill the Unfairness",
-    "desc": "The emperor's story is truly tragic. A good-hearted young man who was used as a puppet throughout his entire life by the one he most trusted. That same individual murdered his parents. Because of all the corruption, his empire is falling apart, but he is unaware of it because his \"trusted\" advisers are feeding him lies. The people he tries to protect either fear or detest him because, despite his desire to be a good ruler, his own inexperience prevented him from being one. The single person that backs him is ineffective and does nothing to address the problem. And by the time he realized that instead of bringing his people peace and prosperity, he had only brought them suffering, it was too late, and he was sentenced to death. A sad ending for the boy, who will most likely be remembered as history’s worst emperor. How pitiful it really demonstrates how unfair life can be. So what if we decide to alter his fate? By making you, the most unfair existence on the planet, his ally.",
-    "source": "",
-    "uid": "EEstV"
+    "budget": 0
   },
   {
     "objectives": [
@@ -194,28 +1088,30 @@
     "source": "",
     "author": "Silverlight",
     "title": "Deep Ninja Infiltration Mission",
-    "image": "",
+    "image": "https://i.pinimg.com/originals/51/54/6c/51546c83b05014db4429d0c0ae08e1a3.jpg",
     "rewardType": "Credits",
     "uid": "QzLxK"
   },
-   {
-    "author": "Silverlight",
-    "loca": "Generic",
-    "title": "Multiversal Entanglement Resolution",
+  {
+    "source": "",
+    "reward": "1 ",
+    "uid": "TDnSf",
     "conditions": [
       {
         "value": "Avoid using abilities with reality warping or world-ending capabilities. This will result in an immediate and extreme retaliation by the observing parties. There are simply too many of them that company is unwilling to spend the resources required to completely block off their access."
       },
       {
-        "value": "Do not being any Tier 11 companions, or accept the mission if you are a tier 11 yourself unless you are prepared to come in contact with beings and pantheons vastly more powerful than yourself. And no, you will not be powerful enough to deal with an entire group of such beings. While they won't interfere directly, they have long memories..."
+        "value": "Do not bring any Tier 11 companions, or accept the mission if you are a tier 11 yourself unless you are prepared to come in contact with beings and pantheons vastly more powerful than yourself. And no, you will not be powerful enough to deal with an entire group of such beings. While they won't interfere directly, they have long memories..."
       }
     ],
-    "budget": 1200,
-    "image": "https://www.comicbasics.com/wp-content/uploads/2019/05/100-Greatest-Superheroes.jpg",
-    "desc": "One of our more experienced contractors have turned traitor, and was discovered leaking out company secrets like the inner workings of our Stamp™ and Smart Devices™ to enemies and rival organizations. We have managed to limit the damage but the problem is one that must be dealt with extreme prejudice before it escalates into an actual crisis. \nThe traitor is unfortunately very crafty, and while that is a trait that the company values very much in our contractors, it is currently acting to our detriment as said traitor is deceptively proficient in escaping danger. \nThe company has managed to quarantine the Traitor to a series of worlds ranging the Danger Ratings of 8 and 9, and have even disabled all his travel options. However, he proved himself annoying once again by deploying corrupted versions of the Elden Ring whose reality warping functions were rigged to caused multiple realities to collapse into each other, and form permanently open rifts between them through which anyone can freely travel. \n\nThe worlds you'll be sent to will most likely be undergoing one form of apocalyptic scenario or the other due to all the multiversal incursions, breaches and displacements whittling down the local society and economy, You must navigate delicate sociopolitical landscapes and explore dangerous war-zones to locate and retrieve the corrupted Elden Rings responsible for the local nexus. \nThe local factions will aid or hinder you depending on which world you are on and how you approach them, so some preparation before establishing contact is necessary. Especially so since they might have valuable intel on the threats you may encounter on said world. \n\nAfter all, it is nearly impossible to predict what entity will cross over next, and some especially dangerous threats may have already passed through undetected due to all the distortions on site making any attempt at a comprehensive scan unreliable.  \n\nThe Greater WIll, along with other such powerful multiversal Outer Gods are interested in the situation and are watching. \nAnd while the Greater Will in particular doesn't mind others taking its damaged toys, it will very much get annoyed if you make too much of a ruckus while doing so. It will most likely retaliate by deploying 'stars' the likes of Astel and the Elden Beast to deal with you and resolve the situation on its own. Retreat in case of such a scenario, as their attacks will be indiscriminate and any fight with them will ruin entire nations and worlds in the process, which is a severe loss of company resources. All entities sent at you in such a scenario will be Tier 9, or reality warpers at the very least. \n \nThe attacks may even extend to company managed locations, and while we can fight it back, it is a needless waste of resources, and no-one will thank you for causing it.\n\nMission Allotment\n\n- You will be allowed an extra use of 1000 credits SOLELY to spend on companions to help you deal with the situation. \n- You can also take as many defenses as you need before heading in.\n- You can also take all the pocket space upgrades up to demiplane for free. \n\nyou will be refunded the exact number of credits you spent while doing so.\n\nProceed with caution.",
-    "scope": "Grand",
-    "source": "",
     "rewardType": "TX Tickets",
+    "scope": "Grand",
+    "title": "Multiversal Entanglement Resolution",
+    "desc": "One of our more experienced contractors have turned traitor, and was discovered leaking out company secrets like the inner workings of our Stamp™ and Smart Devices™ to enemies and rival organizations. We have managed to limit the damage but the problem is one that must be dealt with extreme prejudice before it escalates into an actual crisis. \nThe traitor is unfortunately very crafty, and while that is a trait that the company values very much in our contractors, it is currently acting to our detriment as said traitor is deceptively proficient in escaping danger. \nThe company has managed to quarantine the Traitor to a series of worlds ranging the Danger Ratings of 8 and 9, and have even disabled all his travel options. However, he proved himself annoying once again by deploying corrupted versions of the Elden Ring whose reality warping functions were rigged to caused multiple realities to collapse into each other, and form permanently open rifts between them through which anyone can freely travel. \n\nThe worlds you'll be sent to will most likely be undergoing one form of apocalyptic scenario or the other due to all the multiversal incursions, breaches and displacements whittling down the local society and economy, You must navigate delicate sociopolitical landscapes and explore dangerous war-zones to locate and retrieve the corrupted Elden Rings responsible for the local nexus. \nThe local factions will aid or hinder you depending on which world you are on and how you approach them, so some preparation before establishing contact is necessary. Especially so since they might have valuable intel on the threats you may encounter on said world. \n\nAfter all, it is nearly impossible to predict what entity will cross over next, and some especially dangerous threats may have already passed through undetected due to all the distortions on site making any attempt at a comprehensive scan unreliable.  \n\nThe Greater WIll, along with other such powerful multiversal Outer Gods are interested in the situation and are watching. \nAnd while the Greater Will in particular doesn't mind others taking its damaged toys, it will very much get annoyed if you make too much of a ruckus while doing so. It will most likely retaliate by deploying 'stars' the likes of Astel and the Elden Beast to deal with you and resolve the situation on its own. Retreat in case of such a scenario, as their attacks will be indiscriminate and any fight with them will ruin entire nations and worlds in the process, which is a severe loss of company resources. All entities sent at you in such a scenario will be Tier 9, or reality warpers at the very least. \n \nThe attacks may even extend to company managed locations, and while we can fight it back, it is a needless waste of resources, and no-one will thank you for causing it.\n\nMission Allotment\n\n- You will be allowed an extra use of 1000 credits SOLELY to spend on companions to help you deal with the situation. \n- You can also take as many defenses as you need before heading in.\n- You can also take all the pocket space upgrades up to demiplane for free. \n\nyou will be refunded the exact number of credits you spent while doing so.\n\nProceed with caution.",
+    "image": "https://www.comicbasics.com/wp-content/uploads/2019/05/100-Greatest-Superheroes.jpg",
+    "budget": 1200,
+    "author": "Silverlight",
+    "loca": "Generic",
     "objectives": [
       {
         "value": "Repair the Elden Ring. If you manage to do so on your own, you can keep it's more... animated form as a companion.",
@@ -223,19 +1119,19 @@
         "type": "Companions"
       },
       {
-        "value": "Capture an extradimensional companion",
         "type": "Perks",
-        "reward": "You can add a single geographical feature, or a non-sentient creature of or below the same tier from their home reality into your demiplane."
+        "reward": "You can add a single geographical feature, or a non-sentient creature of or below the same tier from their home reality into your demiplane.",
+        "value": "Capture an extradimensional companion"
+      },
+      {
+        "reward": "200",
+        "value": "The traitor has been to your world once already. Determine is he is still there, and report back if you have found any clues about his current whereabouts.",
+        "type": "Credits"
       },
       {
         "type": "Credits",
-        "reward": "200",
-        "value": "The traitor has been to your world once already. Determine is he is still there, and report back if you have found any clues about his current whereabouts."
-      },
-      {
         "reward": "1000",
-        "value": "Kill the traitor if he is on your world",
-        "type": "Credits"
+        "value": "Kill the traitor if he is on your world"
       },
       {
         "value": "Subdue and contain the traitor alive, and retreive information about his fellow conspirators and allies.",
@@ -243,30 +1139,27 @@
         "type": "Credits"
       },
       {
+        "reward": "1",
         "value": "Creatively utilise the resources you have access to in order to restore and repair the veil that seperates realities. The Company rewards initiative.",
-        "type": "TX Tickets",
-        "reward": "1"
+        "type": "TX Tickets"
       },
       {
-        "value": "Sometimes, the corrupted Elden Ring might retain its awareness and try to defend itself. Slay the corrupted god before it superimposes its will on your reality. Unless you beleive you can fight it in its own domain of course...",
+        "reward": "1",
         "type": "TX Tickets",
-        "reward": "1"
+        "value": "Sometimes, the corrupted Elden Ring might retain its awareness and try to defend itself. Slay the corrupted god before it superimposes its will on your reality. Unless you beleive you can fight it in its own domain of course..."
       },
       {
-        "type": "Credits",
         "value": "Return all unwilling extradimensional immigrants to their home realities. A charity has been set up by a 'sympathetic' beings to pay for your efforts.",
+        "type": "Credits",
         "reward": "500"
       },
       {
-        "type": "Credits",
         "value": "Aid a fellow field agent in distress if you encounter one.",
+        "type": "Credits",
         "reward": "200"
       }
-    ],
-    "reward": "1 ",
-    "uid": "TDnSf"
+    ]
   },
-
   {
     "author": "FinSexual92",
     "loca": "High School DxD",
@@ -323,14 +1216,14 @@
       }
     ],
     "rewardType": "Credits",
-    "image": "",
+    "image": "https://i.pinimg.com/originals/08/c6/bc/08c6bc52067d2f38e73f9733a0b22927.jpg",
     "source": "",
     "scope": "Standard",
     "uid": "ZNtkt"
   },
   {
     "scope": "Standard",
-    "image": "",
+    "image": "https://i.pinimg.com/564x/93/6a/9d/936a9dd1bfae6f9244b94527dbc6c846.jpg",
     "loca": "High School DxD",
     "source": "",
     "author": "FinSexual92",
@@ -385,8 +1278,37 @@
     ],
     "uid": "ZMUxs"
   },
-   {
-    "desc": "Welcome Contractor. Today is the first of the rest of your life under the Company's umbrella. As such we've provided you with a basic tutorial quest.\nExplore your Starter World for the day!\nCatch and/or explore your first Waifu!\nLearn how to use the resources granted to you!\nDo something exciting!",
+  {
+    "rewardType": "Credits",
+    "title": "Tutorial",
+    "objectives": [
+      {
+        "type": "Credits",
+        "value": "Have a threesome",
+        "reward": "10"
+      },
+      {
+        "reward": "Free Binding/Lure Perk at 20 Credits or less",
+        "value": "Capture and Sell a T4+ Target",
+        "type": "Perks"
+      },
+      {
+        "type": "Other",
+        "reward": "Gain specific additional Paper Trail perk for world adding you to the plot.",
+        "value": "Interact with plot relevant characters"
+      },
+      {
+        "value": "Break a major law and don't get caught",
+        "reward": "20",
+        "type": "Credits"
+      }
+    ],
+    "author": "Darkarma",
+    "reward": "10 Credits",
+    "scope": "Standard",
+    "desc": "Welcome Contractor. Today is the first day of the rest of your life under the Company's umbrella. As such we've provided you with a basic tutorial quest.\nExplore your Starter World for the day!\nCatch and/or explore your first Waifu!\nLearn how to use the resources granted to you!\nDo something exciting!",
+    "loca": "Generic",
+    "budget": 1,
     "source": "",
     "conditions": [
       {
@@ -399,35 +1321,6 @@
         "value": "Cannot be repeated."
       }
     ],
-    "objectives": [
-      {
-        "reward": "10",
-        "value": "Have a threesome",
-        "type": "Credits"
-      },
-      {
-        "reward": "Free Binding Perk at 20 Credits or less",
-        "value": "Capture and Sell a T4+ Target",
-        "type": "Perks"
-      },
-      {
-        "reward": "Gain specific additional Paper Trail perk for world adding you to the plot.",
-        "value": "Interact with plot relevant characters",
-        "type": "Other"
-      },
-      {
-        "reward": "20",
-        "value": "Break a major law and don't get caught",
-        "type": "Credits"
-      }
-    ],
-    "author": "Darkarma",
-    "title": "Tutorial",
-    "scope": "Standard",
-    "rewardType": "Other",
-    "loca": "Generic",
-    "budget": 1,
-    "reward": "10 Credits",
     "image": "https://i.imgur.com/i91lHMP.png",
     "uid": "hoSeC"
   },
@@ -497,7 +1390,7 @@
     "author": "Ratcatcher",
     "source": "",
     "budget": 0,
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1042902262328070274/Screenshot_3.jpg",
     "objectives": [
       {
         "type": "Credits",
@@ -746,7 +1639,9 @@
     "uid": "MBfGn"
   },
   {
-    "budget": 80,
+    "desc": "We at The Company are getting bored with this world and the complaints about how much of a Fail Alpha Derek Hale is (the less said about goody-two-shoes True Fail Scott McCall the better). To that end, we want to see how you would do as the Alpha. Of course, we aren't going to just hand you this power. That would be boring. You will be started the day that Scott McCall gets bit and you must become the Alpha.",
+    "author": "FinSexual82",
+    "loca": "Teen Wolf",
     "objectives": [
       {
         "value": "Persuade Derek Hale to become your Beta",
@@ -754,31 +1649,48 @@
         "reward": "Full Wolf Shift unlocked regardless of blood"
       },
       {
+        "type": "Other",
         "reward": "Beast Form unlocked for you, your Pack can unlock it by eating a Human Heart themselves",
-        "value": "Devour Kate Argent's black Heart",
+        "value": "Devour Kate Argent's black Heart"
+      },
+      {
+        "reward": "Allison Argent capture and a +50% to all Captures that are either Hunters of some type or Archers.",
+        "type": "Companions",
+        "value": "Persuade Allison Argent to become your Beta without Capturing her"
+      },
+      {
+        "reward": "1 TX Ticket (we really can't stand the 'man')",
+        "value": "Kill Gerard Argent before he can become a Kamina Master",
+        "type": "TX Tickets"
+      },
+      {
+        "reward": "Your very own Roscoe (with infinite gas)",
+        "value": "Persuade Stiles Stilinski to join your Pack",
         "type": "Other"
       },
       {
-        "value": "Persuade Allison Argent to become your Beta without Capturing her",
-        "type": "Companions",
-        "reward": "Allison Argent capture and a +50% to all Captures that are either Hunters of some type or Archers."
+        "reward": "20 Credits (is it really worth it?)",
+        "type": "Credits",
+        "value": "Persuade Scott McCall to join your Pack"
       },
       {
-        "type": "TX Tickets",
-        "value": "Kill Gerard Argent before he can become a Kamina Master",
-        "reward": "1 TX Ticket (we really can't stand the 'man')"
+        "value": "Persuade Lydia Martin to join your Pack",
+        "reward": "Lydia Martin Capture and an upgrade to the power of her scream",
+        "type": "Companions"
       },
       {
         "type": "Other",
-        "reward": "Your very own Roscoe (with infinite gas)",
-        "value": "Persuade Stiles Stilinski to join your Pack"
-      },
-      {
-        "value": "Persuade Scott McCall to join your Pack",
-        "reward": "20 Credits (is it really worth it?)",
-        "type": "Credits"
+        "reward": "The ability to give Kamina Venom to 3 of your Retinue, their delivery organ will be altered to something they want it to be (tail, teeth, fangs, saliva, sexual fluids, etc)",
+        "value": "Persuade Jackson Whittmore to join your pack"
       }
     ],
+    "reward": "500 Credits and the ability to transfer basic Power Sets you have via a bite.",
+    "title": "I am the Alpha",
+    "rewardType": "Credits",
+    "budget": 80,
+    "source": "",
+    "scope": "Standard",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1041470358047432805/Screenshot_9.jpg",
     "conditions": [
       {
         "value": "No Outside Abilities. Magic is allowed only at low levels."
@@ -793,16 +1705,7 @@
         "value": "Extra Origin is a Must. Spending 1 Credit makes you a normal human that gets bit on the same day as Scott McCall. Spending 10 makes you a Born Werewolf of the Hale Pack that survived the fire but was left behind. Your name need not be Hale but your WW Parent must have been Bitten by Talia"
       }
     ],
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1041470358047432805/Screenshot_9.jpg",
-    "rewardType": "Credits",
-    "uid": "XIhlj",
-    "reward": "500 Credits and the ability to transfer basic Power Sets you have via a bite.",
-    "loca": "Teen Wolf",
-    "scope": "Standard",
-    "desc": "We at The Company are getting bored with this world and the complaints about how much of a Fail Alpha Derek Hale is (the less said about goody-two-shoes True Fail Scott McCall the better). To that end, we want to see how you would do as the Alpha. Of course, we aren't going to just hand you this power. That would be boring. You will be started the day that Scott McCall gets bit and you must become the Alpha.",
-    "source": "",
-    "author": "FinSexual82",
-    "title": "I am the Alpha"
+    "uid": "XIhlj"
   },
   {
     "scope": "Standard",
@@ -1000,7 +1903,7 @@
     "uid": "tBYcE"
   },
   {
-    "image": "https://i.ibb.co/HnNMsfD/499650ff6011bb54bd7d20e7785cae59.png",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1040417284822405151/Screenshot_7.jpg",
     "desc": "Shizuki Hitomi is for some reason convinced girls can't love girls. Convince her otherwise by having her enter a relationship with her good friend Sayaka.",
     "rewardType": "Credits",
     "loca": "Madoka Magica",
@@ -1195,7 +2098,7 @@
     "source": "",
     "budget": 300,
     "author": "FinSexual92",
-    "image": "",
+    "image": "https://wallpapercave.com/wp/wp5320220.jpg",
     "title": "Be A Better Red Dragon Emperor",
     "loca": "High School DxD",
     "rewardType": "TX Tickets",
@@ -1209,7 +2112,7 @@
         "value": "Fight Decade to a standstill, either by your lonesome, with the help of your retinue,  or even recruiting help from the locals. You MUST force him to retreat."
       }
     ],
-    "image": "",
+    "image": "https://cdn.donmai.us/original/61/00/__kamen_rider_decade_kamen_rider_and_1_more_drawn_by_nof__61000c227f4b4fb5f5efe876886d544f.jpg",
     "reward": "1000",
     "title": "The Devil",
     "scope": "Grand",
@@ -1317,7 +2220,7 @@
       }
     ],
     "rewardType": "Other",
-    "image": "",
+    "image": "https://cdna.artstation.com/p/assets/images/images/009/240/276/large/sjoerd-bijkerk-dark-wizzard.jpg?1517874876",
     "budget": 50,
     "loca": "Harry Potter",
     "uid": "higuE"
@@ -1540,7 +2443,6 @@
     "budget": 200,
     "uid": "AJZHK"
   },
-  
   {
     "budget": 85,
     "author": "Darkarma",
@@ -3921,25 +4823,16 @@
     "uid": "duZLZ"
   },
   {
-    "conditions": [
-      {
-        "value": "Once you enter you can not leave. All travel off world is prohibited and will result in immediate and total destruction."
-      },
-      {
-        "value": "Your build must be xompany original (shrouds, heritages, etc) or approite (comes from MMOs, RPGs, Fantasy, and/or Isekai games/anime)"
-      },
-      {
-        "value": "Your access to Commpany services will be limited. "
-      }
-    ],
     "author": "NO1",
-    "scope": "Grand",
+    "reward": "1",
     "source": "",
+    "budget": 1200,
+    "rewardType": "TX Tickets",
     "objectives": [
       {
         "reward": "1000",
-        "type": "Credits",
-        "value": "Conquest: Conquer the New World, by diplomacy, force, trickery, it does not matter. Be ruler of the World for a year and have an heir ti complete."
+        "value": "Conquest: Conquer the New World, by diplomacy, force or trickery; it does not matter. Be ruler of the World for a year and have an heir to complete.",
+        "type": "Credits"
       },
       {
         "type": "Other",
@@ -3947,19 +4840,28 @@
         "reward": "Lock down is lifted early, 2000 credits"
       },
       {
+        "value": "Veni, Vidi, Vici: If you complete Break Out while you are ruler of the world.",
         "reward": "The New World becomes your Demiplane/Dungeon. 2x Discount of upgrades for demiplanes/dungeons. In galactic scale setti gs it will become a planet in the setting under your control.",
-        "type": "Other",
-        "value": "Veni, Vidi, Vici: If you complete Break Out while you are ruler of the world."
+        "type": "Other"
       }
     ],
-    "budget": 1200,
-    "rewardType": "TX Tickets",
-    "title": "NWEP - New World Expansion Pack",
-    "desc": "Something went horribly wrong. Some anomalous event has tainted this version of OVERLORD. This time YGGDRASIL was not the only game to be connected. Now characters from other games of the MMO variety, be it OC Players or NPCs, are there as well. As such this world is now under quartine by the Company until futher notice, and you just got locked in. Now you must contend with this expanded world, survive until the lock down is lifted in 200 years. Conquer the world, or find and deal with the cause yourself.",
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1018577472322797648/image-asset.png",
     "loca": "Overlord (LN)",
-    "reward": "1",
-    "uid": "hxYVM"
+    "conditions": [
+      {
+        "value": "Once you enter you can not leave. All travel off world is prohibited and will result in immediate and total destruction."
+      },
+      {
+        "value": "Your build must be Company original (shrouds, heritages, etc) or appropriate (comes from MMOs, RPGs, Fantasy, and/or Isekai games/anime)"
+      },
+      {
+        "value": "Your access to Company services will be limited. "
+      }
+    ],
+    "scope": "Grand",
+    "uid": "hxYVM",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1018577472322797648/image-asset.png",
+    "desc": "Something went horribly wrong. Some anomalous event has tainted this version of OVERLORD. This time YGGDRASIL was not the only game to be connected. Now characters from other games of the MMO variety, be it OC Players or NPCs, are there as well. As such this world is now under quartine by the Company until futher notice, and you just got locked in. Now you must contend with this expanded world, survive until the lock down is lifted in 200 years. Conquer the world, or find and deal with the cause yourself.",
+    "title": "NWEP - New World Expansion Pack"
   },
   {
     "scope": "Standard",

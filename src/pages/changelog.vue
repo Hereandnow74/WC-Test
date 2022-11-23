@@ -6,6 +6,27 @@
       </h2>
       <div>
         <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          xx November 2022
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~160 new user submitted characters, new worlds and missions.</li>
+          <li>Symbiote App [Commissioned by ClayUndead] (finished)</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          20 November 2022
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~160 new user submitted characters, new worlds and missions.</li>
+          <li>Symbiote App [Commissioned by ClayUndead] (WIP, I underestimated the complexity, again...)</li>
+          <li>Lunasmeow asked to delete all his submitted missions from the site</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
           17 November 2022
         </h3>
         <ul class="list-decimal list-inside">

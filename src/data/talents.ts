@@ -69,7 +69,7 @@ talents.push({
   uid: 'qcpHF',
   title: 'Athletic Talent',
   category: 'Talent',
-  image: '',
+  image: 'https://fictionhorizon.com/wp-content/uploads/2021/12/Captain-Tsubasa-2018-1024x576.jpg',
   cost: 5,
   desc: `You can rapidly learn any non-supernatural athletic skills you encounter: acrobatics, physical sports, parkour, swimming, etc. Skills directly related to combat fall under Martial Talent instead, while supernatural extensions of skill are affected by Psychic, Soul, or other Talents. This is an experience and skill acquisition multiplier, not a flat improvement, and scales to the strength and skill of your opponents and trainers: the better they are than you, the faster you learn, until you’ve caught up to them.
   `,
@@ -174,7 +174,7 @@ talents.push({
   uid: 'PGFje',
   title: 'Land Talent',
   category: 'Talent',
-  image: '',
+  image: 'https://wallpaper.dog/large/5484199.jpg',
   cost: 30,
   whitelist: ['Wild Talent', 'Soul Talent'],
   desc: `
@@ -988,7 +988,7 @@ genericPerks.push({
   category: 'Generic',
   requires: 'Any Non-Evil waifu from Disney or Square-Enix',
   complex: 'target',
-  image: '',
+  image: 'https://wallpapers.com/images/hd/disney-princesses-with-vanellope-qoundwr88ga1bash.jpg',
   cost: 10,
   desc: `
   Your chosen Disney or Square-Enix Waifu has now become a Princess of Heart, giving them a Heart of Pure Light. They're now protected from Corruption, even if you lack Corruption Defense, and can sense and push away corruptive forces, with their abilities growing stronger the more of them gathered in one place. Purchasing this perk will elevate the character to Tier 4, if she wasn't already. Repurchases for the same character would do nothing and thus are not allowed.

@@ -4968,7 +4968,7 @@
   {"worldName":"Temtem","rating":3,"image":"https://news.xbox.com/en-us/wp-content/uploads/sites/2/2022/09/Temtem_Launch_XboxWire-22749b86ebea998c1317.jpg"},
   {"worldName":"Black Rock Shooter","rating":7,"image":"https://cdn.donmai.us/original/46/9d/__black_rock_shooter_dead_master_strength_and_black_gold_saw_black_rock_shooter_drawn_by_iceky__469dd0d58cce3d5d285912902d4c3501.jpg","additional":"All humans have their Otherselves as familiars. If you already have the otherself when you buy their human counterpart, you’ll be refunded the appropriate familiars’ full costs.","condition":[{"rating":6,"name":"OVA"},{"rating":7,"name":"Anime"},{"rating":7,"name":"The Game"},{"name":"Innocent Soul","rating":7}]},
   {"worldName":"Gunslinger Girl","rating":4,"image":"https://i.imgur.com/dk9mDDc.png"},
-  {"worldName":"Inside An Adult Game As A Former Hero","rating":7,"image":""},
+  {"worldName":"Inside An Adult Game As A Former Hero","rating":7,"image":"https://cdn.discordapp.com/attachments/925963686433132644/1043242025950134272/ww.png"},
   {"worldName":"Kaguya-sama: Love is War","rating":2,"image":"https://i0.wp.com/www.animegeek.com/wp-content/uploads/2022/05/Kaguya-sama-Love-is-War-Season-4-release-date-Kaguya-sama-wa-Kokurasetai-Tensai-tachi-no-Renai-Zunousen-Season-4-Anime.jpg?fit=1200%2C675&ssl=1"},
   {"worldName":"Little Busters!","rating":1,"image":"https://cdn.donmai.us/sample/34/97/__natsume_rin_naoe_riki_natsume_kyousuke_inohara_masato_and_miyazawa_kengo_little_busters_drawn_by_sakamuke__sample-3497a582f291d8e22b85f4823f7378c4.jpg"},
   {"worldName":"Nioh","rating":5,"image":"https://i.imgur.com/kfVIc7R.jpeg","condition":[{"rating":5,"name":"Nioh"},{"name":"Nioh 2","rating":6}]},
@@ -4990,5 +4990,7 @@
   {"worldName":"Cardfight Vanguard","rating":4,"image":"https://i.ytimg.com/vi/Yf2NkpOuyV0/maxresdefault.jpg","additional":"You can buy decks depending on the time you appear.\n\nYou are unable to Buy Link Joker Decks until the Link Joker Arc.\n\nYou are unable to buy Royal Paladins, Shadow Paladins or Kagero Clan decks during the Asia Circuit.\n\nDuring Link Joker Arc, you may acquire \"Reverse\" Units of select cards.","condition":[{"rating":4,"name":"Season 1"},{"name":"Season 2 - Asia Circuit","rating":5},{"rating":6,"name":"Season 3 - Link Joker "}]},
   {"worldName":"Knights of Sidonia","rating":7,"image":"https://www.mobileyouth.org/wp-content/uploads/knights-of-sidonia-season-3-1.jpg"},
   {"worldName":"The Loud House","rating":1,"image":"https://deadline.com/wp-content/uploads/2022/03/The-Loud-House.jpg?w=681&h=383&crop=1"},
-  {"worldName":"The Reckoners","rating":6,"condition":[{"name":"Before Calamity Arrives","rating":2},{"rating":5,"name":"Rise of the Epics"},{"rating":6,"name":"The Age of the Epics"},{"name":"After Calamity Leaves","rating":5}]}
+  {"worldName":"The Reckoners","image": "https://gugimages.s3.us-east-2.amazonaws.com/wp-content/uploads/2019/02/22013928/Feature-photo.jpg","rating":6,"condition":[{"name":"Before Calamity Arrives","rating":2},{"rating":5,"name":"Rise of the Epics"},{"rating":6,"name":"The Age of the Epics"},{"name":"After Calamity Leaves","rating":5}]},
+  {"worldName":"Family Guy","rating":4,"image":"https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/D8A6789735136D2B05E66924316712DC196F1CD82CF3B632C73E8D7EAB5E0C88/scale?width=1200&aspectRatio=1.78&format=jpeg"},
+  {"worldName":"NIKKE: Goddess of Victory","rating":6,"image":"https://i.imgur.com/B9yMyZM.jpg"}
 ]

@@ -198,7 +198,7 @@ export const symbioteBinding: PerkFull[] = [
     cost: 125,
     category: 'Binding',
     type: 'Symbiote',
-    image: '',
+    image: 'https://cdn.discordapp.com/attachments/925963686433132644/1043498457077383168/ss.png',
     complex: 'target',
     freebies: {
       talentPerks: [{ title: 'Everlasting Talent', cost: 0, count: 1 }, { title: 'Body Tune-Up', cost: 0, count: 1 }, { title: 'Athletic Talent', cost: 0, count: 1 }, { title: 'Martial Talent', cost: 0, count: 1 }, { title: 'Wild Talent', cost: 0, count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Martial Talent' }], count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Wild Talent' }], count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Athletic Talent' }], count: 1 }],
@@ -239,7 +239,7 @@ export const symbioteBinding: PerkFull[] = [
     cost: 15,
     category: 'Binding',
     type: 'Expansion',
-    image: 'https://static.wikia.nocookie.net/starcraft/images/c/cc/ZergEgg_SC2_Cncpt2.jpg/revision/latest/scale-to-width-down/1920?cb=20110709135247',
+    image: 'https://64.media.tumblr.com/193ba9f95921b165eb8f7bc73c9dc357/0f6261c49c8e6c15-19/s1280x1920/6ef505046cbd4d4c74fadaf9c63d9c88e8ed00dd.jpg',
     desc: `
     <p>Sapient, human-sized swarm members may now curl themselves into a spherical ball, roughly 1m in diameter. This ball form has no distinct internal bits and a fully-armored exterior. Swarm members may roll around freely in ball form, but often have trouble on slopes.</p>
     <p>Active Burrows, Nests, and Reefs now have a second entrance to the spawning organ, appropriately sized for the ball form to roll into. This entrance leads into the core of the spawning organ, where a swarm member in ball form will be reconfigured into a major unit’s egg and eventually be reborn as the new unit’s animate intelligence.</p>
@@ -303,7 +303,7 @@ export const symbioteBinding: PerkFull[] = [
     cost: 20,
     category: 'Binding',
     type: 'Expansion',
-    image: '',
+    image: 'https://cdna.artstation.com/p/assets/images/images/002/421/644/large/piero-macgowan-xcom2-25-psi-gate.jpg?1461551889',
     desc: `
     <p>Your Colonies and Fortresses now include portals that enable instant travel from one to another. This is part of the same network as Rainbow Bridge, if you have that perk. Psi Gate portals cannot be larger than the structure they’re built into.</p>
     `,
@@ -340,7 +340,7 @@ export const symbioteBinding: PerkFull[] = [
     cost: 30,
     category: 'Binding',
     type: 'Expansion',
-    image: '',
+    image: 'https://wallpapercave.com/wp/wp5755421.jpg',
     desc: `
     <p>This adds a number of upgrades to the symbiote’s functionality. The lowest tier of targets that can fight off a symbiote larva will increase by 1 for each effective tier (after step 6) that the queen is above 7: Tier 6 targets can no longer fight off a Tier 8 queen’s Skitterers, for example, while only Tier 10 and Χ targets can fight off Skitterers produced by a Tier Χ queen. On the target side, use their effective tier after step 6, but skip steps 4 and 5.</p>
     <p>Additionally, symbiote larvae now emit a weak psychic field that reduces a target’s willingness to resist future attacks every time that individual fights one off. Each stack of this effect will last 7 days (168 hours), but there is no cap on the number of stacks that can be applied at once.</p>
@@ -380,7 +380,7 @@ export const symbioteBinding: PerkFull[] = [
     cost: 40,
     category: 'Binding',
     type: 'Expansion',
-    image: '',
+    image: 'https://cdn.discordapp.com/attachments/925963686433132644/1043497058553823242/ww.png',
     desc: `
     <p>The Globsters’ ability is now part of the basic functions available to all of your humanoid swarm members, bringing them a step closer to the original wild shoggoths that were used to create Globsters. All humanoid swarm members may now melt into a semisolid amoeboid form for better infiltration, whether by flowing through vents, along a ceiling or wall, or hitching a ride on a person.</p>
     <p>The slime form may be maintained indefinitely, obey conservation of mass, and must remain contiguous. A swarm member otherwise has full control over the form's shape, texture, and coloration. Symbiote hosts that have innate supernatural abilities of biological or genetic origin (ex. X-gene, Quirks, hereditary magic potential, alien racial abilities, etc.) retain them in their slime form. If they have enough room, they may revert to their original or symbiote forms at will.</p>
@@ -487,7 +487,7 @@ export const symBuildings: PerkFull[] = [
     dCost: 200,
     category: 'Binding',
     type: 'Upgrade (Hatchery)',
-    image: '',
+    image: 'https://cdnb.artstation.com/p/assets/images/images/002/102/807/large/henry-ledesma-the-hive.jpg?1457285526',
     desc: `
     <p>The Lair is a direct upgrade to the Hatchery, with all of the features and abilities of its predecessor. It can incubate up to 1600 clutches at a time, plus the effects of attached Nurseries. Upgrading a Hatchery to a Lair whitelist an additional 180 Devotion Points as construction material, minus any recycled from other swarm structures within the Lair’s new footprint. At this stage, you may build additional Hatcheries, but only upgrade a single one to a Lair.</p>
     <p>After 3 days (72 hours) of growth, the new Lair will reach its maximum size at 50 meters tall, and an additional 20 vertical meters of basements underground, with a 10,000 square meter footprint. A finished Lair will spread Creep to about a 5 kilometer radius, centered on the spawning pool, reaching its maximum extent another 2 weeks (336 hours) after construction.</p>
@@ -546,7 +546,7 @@ export const symBuildings: PerkFull[] = [
     dCost: 50,
     category: 'Binding',
     type: 'Freestanding',
-    image: '',
+    image: 'https://cdn.discordapp.com/attachments/925963686433132644/1043493854806032404/dd3714m-558ad435-ea4e-4204-bc91-83cc764d391d.jpg',
     desc: `
     <p>Evolution Chambers are specialized workshops for your geneticists, fleshcrafters, and bio-manipulators, where they can create new breeds of warbeast for your armies. After 48 hours of growth, an Evolution Chamber will reach its full size of 15 meters tall, and an additional 10 vertical meters of basements, with a 6,000 square meter footprint.</p>
     <p>At an Evolution Chamber, your design teams may freely mix, match, and customize biological features from any species that your creep has assimilated, in addition to features from any of the default larva types available to your swarm, any pre-designed symbiote units available to your swarm, and your queens’ inborn supernatural traits. Upgrades are not auto-applied to all eligible recipients. Sapient subjects must visit an Evolution Chamber as individuals for their modifications. Major units are instead recycled at the same type of production building (not necessarily the exact building) that spawned them.</p>

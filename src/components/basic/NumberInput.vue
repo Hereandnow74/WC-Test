@@ -10,12 +10,11 @@
         -
       </div>
       <input
-        id=""
         type="text"
-        name=""
         class="focus:outline-none text-center text-gray-800 dark:(text-gray-200 bg-warm-gray-600)"
         :style="width"
         :value="newValue"
+        @input="numberInput"
       >
       <div
         ref="plusButton"
@@ -88,6 +87,14 @@ function plus() {
 function minus() {
   if (value.value - props.increment >= props.min) {
     value.value -= props.increment
+    emit('update:modelValue', value.value)
+  }
+}
+
+function numberInput(e) {
+  const n = parseInt(e.target.value)
+  if (n >= props.min && n <= props.max) {
+    value.value = n
     emit('update:modelValue', value.value)
   }
 }
