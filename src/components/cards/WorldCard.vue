@@ -38,7 +38,7 @@
     <div v-else-if="world.condition" class="mx-2">
       {{ world.condition }}
     </div>
-    <Foldable v-if="world.additional" title="Setting Specific Rules" class="px-2" @click.stop>
+    <Foldable v-if="world.additional" v-auto-animate title="Setting Specific Rules" class="px-2" @click.stop>
       <Desc :desc="world.additional" class="p-1 rounded bg-black bg-opacity-20" />
     </Foldable>
   </div>

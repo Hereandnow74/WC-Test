@@ -6,6 +6,7 @@
       </h1>
       <Button size="Small" label="Close" bg-color="bg-red-600" @click="emit('close')" />
     </div>
+    <Toggle v-model="gachaSettings.justRandom" label="Ignore chances (behave like Random Character app)" />
     <Toggle v-model="gachaSettings.useWhiltelist" label="Use Whitelist" />
     <div class="flex gap-2 flex-col md:flex-row min-h-0 ">
       <InputWithSearch

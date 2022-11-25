@@ -31,7 +31,7 @@
 </template>
 
 <script lang="ts" setup>
-import { groupBy, intersection, sample } from 'lodash-es'
+import { groupBy, intersection, random, sample } from 'lodash-es'
 import { orientation, randomChar } from '~/logic'
 import { CHAR_COSTS, useAllChars } from '~/data/constants'
 import { useStore } from '~/store/store'
@@ -102,14 +102,19 @@ function emptyRoll() {
 async function getRandomChar(fixedTier = 0): Promise<number> {
   isRevealing.value = false
   let tier = 0
-  if (fixedTier === 0) {
-    const roll = Math.random()
-    chances.forEach((x, i) => {
-      if (roll <= x)
-        tier = i
-    })
+  if (gachaSettings.value.justRandom) {
+    tier = random(0, 10)
   }
-  else { tier = fixedTier }
+  else {
+    if (fixedTier === 0) {
+      const roll = Math.random()
+      chances.forEach((x, i) => {
+        if (roll <= x)
+          tier = i
+      })
+    }
+    else { tier = fixedTier }
+  }
   const x = sample(charsByTier.value[tier + 1])
   if (!x) {
     return emptyRoll()

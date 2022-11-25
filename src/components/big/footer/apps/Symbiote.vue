@@ -54,6 +54,7 @@
             <Foldable
               v-for="base, i in symbiotes[activeDungeonInd].bases"
               :key="i"
+              v-auto-animate
               :title="`Creep Zone #${ i+1 } [<span class='text-green-300'>${totalCreepZone[i]}km²</span>/<span class='text-red-300'>${usedFootprint[i] >= 1000000 ? (usedFootprint[i] / 1000000).toFixed(1) + 'km²' : usedFootprint[i] + 'm²'}</span>]`"
               :is-open="true"
               class="flex flex-col gap-2"
@@ -62,7 +63,7 @@
               <template #buttons>
                 <fluent:delete-20-filled class="text-gray-400 hover:text-red-500 cursor-pointer" @click="deleteZone(i)" />
               </template>
-              <Foldable :title="`Larva maturation time is <span class='text-pink-300'>${Math.floor(maturationTimeBonus[i] * 100000) / 1000}%</span> from the base`" title-style="text-amber-400">
+              <Foldable v-auto-animate :title="`Larva maturation time is <span class='text-pink-300'>${Math.floor(maturationTimeBonus[i] * 100000) / 1000}%</span> from the base`" title-style="text-amber-400">
                 <table class="unitsTable">
                   <thead>
                     <th>Name</th>
@@ -92,7 +93,7 @@
                   </tbody>
                 </table>
               </Foldable>
-              <Foldable :title="`Units production estimates`" title-style="text-amber-400">
+              <Foldable v-auto-animate :title="`Units production estimates`" title-style="text-amber-400">
                 <div class="bg-gray-700 p-1 flex flex-col gap-1">
                   <div>Total clutch production capacity: <span class="text-teal-200">{{ totalClutchCapacity[i] }}</span></div>
                   <div></div>
@@ -156,7 +157,14 @@
                 DP: <span class="text-violet-400">{{ groveCost[i] }}</span> Footprint: <span class="text-blue-300">{{ grovePrint[i] }}m²</span>
               </div>
               <Desc v-else desc="You don't have a Grove unlocked" class="p-0 indent-0em" />
-              <Foldable v-if="boughtPerks['Den']" title="Dens and its upgrades" :is-open="true" title-style="text-amber-400" class="flex flex-col gap-1">
+              <Foldable
+                v-if="boughtPerks['Den']"
+                v-auto-animate
+                title="Dens and its upgrades"
+                :is-open="true"
+                title-style="text-amber-400"
+                class="flex flex-col gap-1"
+              >
                 <div v-for="den, key in base['Dens']" :key="key" class="flex gap-1 whitespace-nowrap">
                   <NumberInput v-if="boughtPerks[key]" v-model="base['Dens'][key]" :label="`${key}s`" :min="0" />
                   <Desc v-else :desc="`You don't have a ${key} unlocked`" class="p-0 indent-0em" />
@@ -165,7 +173,7 @@
               </Foldable>
               <Desc v-else desc="You don't have a Den unlocked" class="p-0 indent-0em" />
 
-              <Foldable title="Miscellaneous buildings" :is-open="true" title-style="text-amber-400" class="flex flex-col gap-1">
+              <Foldable v-auto-animate title="Miscellaneous buildings" :is-open="true" title-style="text-amber-400" class="flex flex-col gap-1">
                 <div v-if="boughtPerks['Evolution Chamber']" class="whitespace-nowrap flex gap-2">
                   <NumberInput v-model="base['Evolution Chamber'].count" label="Evolution Chambers" :min="0" />
                   DP: <span class="text-violet-400">{{ evolutionCost[i] }}</span> Footprint: <span class="text-blue-300">{{ evolutionPrint[i] }}m²</span>

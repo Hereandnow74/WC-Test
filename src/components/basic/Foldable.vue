@@ -1,5 +1,5 @@
 <template>
-  <div v-auto-animate>
+  <div>
     <div class="flex justify-between border-b border-gray-300 dark:border-gray-200 mb-2 leading-snug">
       <div class="flex gap-2 items-center">
         <h4 class="cursor-pointer" :class="titleStyle" @click="() => toggleFolded()" v-html="title">

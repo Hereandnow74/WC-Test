@@ -897,6 +897,18 @@
       {
         "name": "Gold Roger Era",
         "rating": 7
+      },
+      {
+        "name": "Four Blues",
+        "rating": 5
+      },
+      {
+        "name": "New World - During the Era of Rocks D. Xebec",
+        "rating": 8
+      },
+      {
+        "name": "Void Century",
+        "rating": 8
       }
     ],
     "image": "https://wallpaperaccess.com/full/17350.jpg"
@@ -1570,7 +1582,21 @@
     "q": true,
     "worldName": "Genshin Impact",
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/991004286160863343/genshin-impact-surpasses-3-billion.jpg",
-    "additional": "Lumine (and Aether) has the T1 version of Paimon as a humanoid familiar. If you have both, they’ll share her."
+    "additional": "Lumine (and Aether) has the T1 version of Paimon as a humanoid familiar. If you have both, they’ll share her.",
+    "condition": [
+      {
+        "name": "Canon/Game-Start",
+        "rating": 6
+      },
+      {
+        "name": "Archon-War",
+        "rating": 8
+      },
+      {
+        "name": "Cataclysm",
+        "rating": 8
+      }
+    ]
   },
   {
     "rating": 6,
@@ -1654,6 +1680,10 @@
         "name": "Eden is alive",
         "rating": 8,
         "a": "u"
+      },
+      {
+        "name": "Ward",
+        "rating": 7
       }
     ],
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/992405638292439102/Undersiders_by_shadaan-dahwc9f.webp"
@@ -2094,6 +2124,14 @@
       {
         "name": "2010s Marvel Animated Universe (Earth-12041)",
         "rating": 7
+      },
+      {
+        "name": "Ultimate Universe (Earth-1610)",
+        "rating": 8
+      },
+      {
+        "name": "Cinematic Universe w/ TV shows and Mutants (TVA Present)",
+        "rating": 8
       }
     ],
     "image": "https://sc02.alicdn.com/kf/HTB15Y38doo09KJjSZFDq6z9npXau/200664728/HTB15Y38doo09KJjSZFDq6z9npXau.jpg"
@@ -2288,7 +2326,13 @@
     "q": true,
     "worldName": "Tenchi Muyo!",
     "additional": "Mitoto’s teleportation ability works as long as she has a mop or other cleaning tool in her hands. Anyone she brings with her must have one as well.",
-    "image": "https://instachronicles.com/wp-content/uploads/2021/06/79620-4.jpg"
+    "image": "https://instachronicles.com/wp-content/uploads/2021/06/79620-4.jpg",
+    "condition": [
+      {
+        "name": "War on Geminar",
+        "rating": 7
+      }
+    ]
   },
   {
     "rating": 9,
@@ -2393,6 +2437,10 @@
       },
       {
         "name": "Ressurection F",
+        "rating": 10
+      },
+      {
+        "name": "Xenoverse",
         "rating": 10
       }
     ],
@@ -2586,6 +2634,10 @@
       },
       {
         "name": "Gunstar Autochthonia",
+        "rating": 10
+      },
+      {
+        "name": "First Age",
         "rating": 10
       }
     ],

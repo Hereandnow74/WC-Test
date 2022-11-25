@@ -45,6 +45,7 @@ const gachaSettings = useStorage('gachaSettings', {
   whitelist: [] as string[],
   tagList: [] as string[],
   defaultChances: true,
+  justRandom: false,
   useWhiltelist: false,
   chances: [],
   rollCost: 3,

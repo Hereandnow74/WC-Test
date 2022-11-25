@@ -1,6 +1,202 @@
 [
   
   {
+    "conditions": [
+      {
+        "value": "You have exactly two weeks to drive them round the bend"
+      },
+      {
+        "value": "You can't Capture, Lure or Kill them"
+      },
+      {
+        "value": "You may not physically touch them sexually"
+      }
+    ],
+    "desc": "Have you ever seen something and despised a character you were meant to like? It could be a Comic Relief character that just isn't funny.  A High Strung character that just needs a chill pill. A Broody Emo Idiot that needs to get their head out their arse. Our Clients have and one of them is in your world. Go forth and make them feel the irritation that our Clients feel.",
+    "budget": 80,
+    "scope": "Quick",
+    "author": "FinSexual92",
+    "reward": "300 Credits",
+    "source": "",
+    "rewardType": "Credits",
+    "objectives": [
+      {
+        "value": "Seduce and/or Capture their crush/love interest and fuck them on the target's bed",
+        "reward": "100 Credits",
+        "type": "Credits"
+      },
+      {
+        "type": "Credits",
+        "value": "Steal the underwear of a female linked to the target and frame the target for it (extra points if target is male and questionable stains are found on them)",
+        "reward": "50 Credits (or 75 Credits if you go that extra mile)"
+      },
+      {
+        "reward": "30 Credits",
+        "value": "Sneak into their room while they sleep and draw a dick on their forehead three nights in a row",
+        "type": "Credits"
+      },
+      {
+        "type": "Credits",
+        "reward": "75 Credits",
+        "value": "Vandalise but do not destroy a valued item they cherish"
+      }
+    ],
+    "image": "",
+    "loca": "Generic",
+    "title": "There Is Always One",
+    "uid": "kfGQw"
+  },
+  {
+    "objectives": [
+      {
+        "reward": "Credits equal to 50% of the base mission Credit Reward",
+        "value": "Be such a good mentor that they return to you rather than getting their canon ending",
+        "type": "Credits"
+      },
+      {
+        "value": "Manage to keep them from having their heartbroken if a relationship isn't meant to work out (you get multiple tries should they several in canon)",
+        "type": "Companions",
+        "reward": "A Company Clone of the love interest for yourself (no one will find this weird even if the Clone meets the original) or their Credit equavalent"
+      },
+      {
+        "reward": "Talent Sharing I of their abilities for any member of your Retinue",
+        "value": "Personally teach one of their comrades something that will keep them alive when they would otherwise die",
+        "type": "Perks"
+      },
+      {
+        "value": "Seduce a Mentor and/or parental figure of one of their comrade",
+        "type": "Companions",
+        "reward": "Instant Capture of said person and a Company Clone of said comrade (or their Credit equivalent)"
+      }
+    ],
+    "rewardType": "Credits",
+    "reward": "Credits equal to your protégé's and their foe's Tier Buy Values compined",
+    "title": "I'll Make A (Wo)Man Out Of You",
+    "source": "",
+    "budget": 20,
+    "author": "FinSexual92",
+    "desc": "We of the Company do sparingly encourage good deeds (it works like a Karmic Tax Write-off) so we have finally included this mission. Many Heroes and their Companions tend to go through horrible things before becoming the person they need to be to win the day. Few truly get the help they need after these events, which is where you come in. You will be sent to a world just after the tragedy of a Hero or their Companion. You must persuade them to come with you to your Demiplane (if you don't have one then one will be provided for the duration of this mission) and you must raise them to be a good and true hero, capable of taking on the great evil and getting a measure of revenge (since so few actually get to slaughter their tormentor).",
+    "conditions": [
+      {
+        "value": "They must be old enough to make a decision themselves (no younger than 6, if the tragedy happens before that age then they have to go through their canon life till then)"
+      },
+      {
+        "value": "The abilities taught to them must be of the same sort as their canon abilities and only one 'Extra' type can be taught (i.e. Harry Potter can learn how to use Materia or Fate/series Circuits but never together and never chakra from Naruto)"
+      },
+      {
+        "value": "This at most counts as a Free Adoption. You may not Capture them and they will be immune to your Lures like all your children)"
+      },
+      {
+        "value": "While physical abilities can be trained in pretty much all worlds, there is a limit to how far they can go. (To use Harry Potter as an example again, he will never be Dragonball Level Martial Arts, but may use his magic to physically match that of fighting game characters)"
+      }
+    ],
+    "image": "",
+    "scope": "Standard",
+    "loca": "Generic",
+    "uid": "lwpSp"
+  },
+  {
+    "reward": "1 TX Ticket",
+    "objectives": [
+      {
+        "reward": "Company Clones of Lyanna Stark and Catalyn Stark",
+        "value": "Persuade Ned Stark to hire you for his Anti-Coup attempt and ensure he survives",
+        "type": "Companions"
+      },
+      {
+        "reward": "Sansa Stark capture and 50 Credits",
+        "value": "Personally rescue Sansa Stark from Joffrey Baratheon once he is King",
+        "type": "Companions"
+      },
+      {
+        "reward": "Arya Stark capture and she gains the knowledge of the Faceless Men",
+        "type": "Companions",
+        "value": "Recruit 'Arry' into your group and keep her from going to the Faceless Men"
+      },
+      {
+        "reward": "Yara Greyjoy capture and 50 Credits",
+        "type": "Companions",
+        "value": "Defeat Yara Greyjoy in single combat and take her as a Salt Wife in front of her surviving men"
+      },
+      {
+        "value": "Impregnate Margaery Tyrell without capturing her, allowing her to proclaim it Renly's Heir",
+        "reward": "Margaery Tyrell capture and a Company Clone of Brienne of Tarth",
+        "type": "Companions"
+      },
+      {
+        "value": "Kill Stannis Baratheon before he can kill Renly (the killer has to be part of your group)",
+        "type": "Companions",
+        "reward": "Shireen Baratheon capture (grayscale cured) and Melisandre capture"
+      },
+      {
+        "reward": "Danaerys Targaryen capture and three Dragon Eggs",
+        "value": "Extract Danaerys Targaryen from Braavos before her marriage to Khal Drogo",
+        "type": "Companions"
+      },
+      {
+        "type": "Companions",
+        "reward": "Your choice of a Company Clone of Cersei Lannister or Myrcella Baratheon capture",
+        "value": "Kill Cersei Lannister in a way that doesn't raise suspicions"
+      },
+      {
+        "value": "Defeat Oberyn Martell in single combat and kill the Mountain",
+        "reward": "Company Clones of Obara Sand, Nymeria Sand and Tyene Sand",
+        "type": "Companions"
+      },
+      {
+        "type": "Companions",
+        "value": "Persuade Jon Snow to join your group",
+        "reward": "Company Clone of Ygritte"
+      },
+      {
+        "value": "Use your group to conquer Westeros yourself",
+        "reward": "1 TX Ticket",
+        "type": "TX Tickets"
+      },
+      {
+        "type": "Credits",
+        "value": "Father a Bastard with a mother from each of the Seven Kingdoms without capturing the Mother",
+        "reward": "700 Credits"
+      }
+    ],
+    "source": "",
+    "title": "Game of Mercenaries",
+    "author": "FinSexual92",
+    "scope": "Grand",
+    "rewardType": "TX Tickets",
+    "image": "",
+    "loca": "A Song of Ice and Fire",
+    "conditions": [
+      {
+        "value": "You must take jobs from all sides of the Wars. You may favour one side over the other, but that is all"
+      },
+      {
+        "value": "Your Retinue members above T5 are brought down to T5 in this world"
+      },
+      {
+        "value": "You and your Retinues can only use abilities that fit your Path (You may improve tech in any path but only in the Tech Path can it really go far)"
+      },
+      {
+        "value": "You can't marry any Local, not even for an Alliance. You may officially marry one of your retinue"
+      },
+      {
+        "value": "Psychic Abilities are locked to the Faith Path"
+      },
+      {
+        "value": "Alt Form Abilities are locked to the Mystic Path"
+      },
+      {
+        "value": "Vehicles beyond local abilities are locked to the Tech Path"
+      },
+      {
+        "value": "When the War is done, your Group must still operate"
+      }
+    ],
+    "desc": "It is a bit odd that Braavos is the only side of the world with Mercs. In Westeros it is always Bannermen and such, now is the time to change that. Become the Big Boss of Westeros and lead a Mercenary Group to become a force to be reckoned with. You start with a rundown Fortress and a Path (one of three). The Faith Path has you and your soldiers using the power of Gods (Old, New or Other). The Mystic Path has you and your soldiers using the power of Ki and Senjutsu. The Tech Path has you and your soldiers using tech, starting with muskets but never going beyond WW2 tech.",
+    "budget": 80,
+    "uid": "IjQYv"
+  },
+  {
     "author": "Ratcatcher",
     "budget": 200,
     "title": "Royal Stable",
@@ -4772,7 +4968,7 @@
         "type": "Companions"
       }
     ],
-    "title": "Kill The King ",
+    "title": "Kill The King",
     "budget": 0,
     "reward": "25",
     "scope": "Quick",
@@ -6013,7 +6209,7 @@
     "title": "Temperance is a Wild Bitty",
     "budget": 100,
     "rewardType": "Other",
-    "reward": "Garterbelt's immortality ",
+    "reward": "Garterbelt's immortality",
     "image": "https://cdn.donmai.us/original/48/0f/__stocking_and_panty_panty_stocking_with_garterbelt__480fdede49116fd8579a9719fe39437b.jpg",
     "desc": "Prevent Panty from having sex  for 3 months\nPrevent Stocking from eating sweets for 3 months\nWhile they don't have to happen at the same time they each must abstain from  their vices for an un interrupted 3 months each.\n(the sisters are allowed a single cheat day once per month.)",
     "objectives": [
@@ -6299,7 +6495,7 @@
     "source": "",
     "rewardType": "Other",
     "title": "In the Grim Darkness there IS victory",
-    "author": "Templar9999 ",
+    "author": "Templar9999",
     "budget": 1500,
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/1006947646075838544/bode-s-galaxy.jpg",
     "objectives": [

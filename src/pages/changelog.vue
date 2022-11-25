@@ -6,11 +6,12 @@
       </h2>
       <div>
         <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
-          xx November 2022
+          24 November 2022
         </h3>
         <ul class="list-decimal list-inside">
-          <li>~160 new user submitted characters, new worlds and missions.</li>
+          <li>~310 new user submitted characters, new worlds and missions.</li>
           <li>Symbiote App [Commissioned by ClayUndead] (finished)</li>
+          <li>Infinite scrolling and search for missions.</li>
           <li>Bugfixes & small changes</li>
         </ul>
       </div>

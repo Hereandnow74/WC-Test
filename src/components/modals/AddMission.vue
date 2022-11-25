@@ -5,10 +5,10 @@
         This form is for fixing errors, do not use is to submit new missions.
       </div>
       <div class="flex gap-2">
-        <Input v-model="title" class="flex-grow" placeholder="Mission title" :error-message="errors.title" />
+        <Input v-model.trim="title" class="flex-grow" placeholder="Mission title" :error-message="errors.title" />
       </div>
       <div class="flex gap-2">
-        <Input v-model="author" class="w-1/3" placeholder="Author" :error-message="errors.author" />
+        <Input v-model.trim="author" class="w-1/3" placeholder="Author" :error-message="errors.author" />
         <Input v-model="source" class="flex-grow" placeholder="Source link" :error-message="errors.source" />
       </div>
       <Input v-model.number="budget" class="" placeholder="Estimated required budget to qualify for this mission" :error-message="errors.budget" />
@@ -32,7 +32,7 @@
       <div class="flex gap-2">
         <Select v-model="rewardType" placeholder="Reward Type" :options="['Credits', 'TX Tickets', 'Perks', 'Companions', 'Other']" :error-message="errors.rewardType" />
         <Input
-          v-model="reward"
+          v-model.trim="reward"
           class="flex-grow"
           placeholder="Main reward"
           :error-message="errors.reward"
@@ -50,7 +50,7 @@
           class="flex gap-1"
         >
           <Input
-            v-model="condition.value"
+            v-model.trim="condition.value"
             class="flex-grow"
             :placeholder="`Condition #${i + 1}`"
             :error-message="errors[`conditions[${i}].value`]"
@@ -69,7 +69,7 @@
         >
           <div class="flex flex-col gap-2 flex-grow">
             <Input
-              v-model="requirement.value"
+              v-model.trim="requirement.value"
               :placeholder="`Requirement #${i + 1}`"
               :error-message="errors[`objectives[${i}].value`]"
             />
@@ -81,7 +81,7 @@
                 :error-message="errors[`objectives[${i}].type`]"
               />
               <Input
-                v-model="requirement.reward"
+                v-model.trim="requirement.reward"
                 :placeholder="`Bonus reward (optional) #${i + 1}`"
                 :error-message="errors[`objectives[${i}].reward`]"
                 class="flex-grow"

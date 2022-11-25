@@ -31,11 +31,12 @@
       />
     </h3>
     <div v-if="page === 0" class="flex gap-2 justify-center flex-wrap">
+      <Input v-model="search" placeholder="Search" />
       <div>
         <Select v-model="author" :options="authorOptions" label="Author" />
       </div>
       <div>
-        <Input v-model="world" placeholder="World name" class="max-w-68" />
+        <InputWithSearch v-model="world" :list="worldOptions" placeholder="World name" class="max-w-68" />
       </div>
       <div>
         <Select v-model="scope" :options="scopeOptions" label="Scope" />
@@ -45,8 +46,8 @@
     <Note v-if="page === 1" type="warning" title="Work in progress">
       This section is in WIP stage, you can suggest simple missions/conditions/objectives for random mission generation on Discord
     </Note>
-    <div class="grid 2xl:grid-cols-3 lg:grid-cols-2 gap-4 pb-8 justify-center">
-      <MissionCard v-for="mission in displayedMissions" :key="mission.title" class="max-w-[600px]" :mission="mission" />
+    <div ref="missionWrapper" class="grid 2xl:grid-cols-3 lg:grid-cols-2 gap-4 pb-8 justify-center overflow-y-auto scrollbar">
+      <MissionCard v-for="mission in displayedMissions" :key="mission.uid" class="max-w-[600px]" :mission="mission" />
     </div>
     <div class="h-8"></div>
   </div>
@@ -64,6 +65,10 @@ import { usePlayStore } from '~/store/play'
 const { currentWorld, missionRewards } = usePlayStore()
 const missions = ref<Mission[]>([])
 
+const missionWrapper = ref<HTMLElement>(null)
+
+const search = ref('')
+
 async function getMissions() {
   missions.value = (await import('~/data/missions.json')).default
 }
@@ -75,7 +80,7 @@ const authorOptions = computed(() => {
   authors.unshift('Any')
   return authors
 })
-const worldOptions = computed(() => Object.keys(groupBy(missions.value, 'loca')).sort((a, b) => a.localeCompare(b)))
+const worldOptions = computed(() => Object.keys(groupBy(missions.value, 'loca')))
 const scopeOptions = ['Any', 'Quick', 'Standard', 'Grand']
 
 const author = ref('Any')
@@ -87,9 +92,9 @@ const page = ref(0)
 const options = reactive({
   findAllMatches: true,
   useExtendedSearch: true,
-  threshold: 0.4,
+  threshold: 0.6,
   ignoreLocation: true,
-  keys: ['loca', 'scope', 'author'],
+  keys: ['loca', 'scope', 'author', 'desc', 'conditions.value', 'objectives.value', 'objectives.reward', 'reward'],
   shouldSort: false,
 })
 
@@ -101,6 +106,16 @@ const searchedMissions = computed(() => {
     $and: [
       { loca: sr },
     ],
+  }
+  if (search.value) {
+    sopt.$and.push({
+      $or: [
+        { desc: `'"${search.value}"` },
+        { reward: `'"${search.value}"` },
+        { 'conditions.value': `'"${search.value}"` },
+        { 'objectives.value': `'"${search.value}"` },
+        { 'objectives.reward': `'"${search.value}"` }],
+    })
   }
   if (scope.value !== 'Any') sopt.$and.push({ scope: `=${scope.value}` })
   if (author.value !== 'Any') sopt.$and.push({ author: `="${author.value}"` })
@@ -127,10 +142,22 @@ const generatedMissions = computed(() => {
 
 const threeMission = computed(() => [sample(missions.value), sample(missions.value), gen2.generateRandom(currentWorld.value.worldName).getObject()])
 
+const startingMissionsCount = 10
+const infiniteMissions = ref(filteredMissions.value.slice(0, startingMissionsCount))
+watch(filteredMissions, () => infiniteMissions.value = filteredMissions.value.slice(0, startingMissionsCount))
+
+useInfiniteScroll(
+  missionWrapper,
+  () => {
+    infiniteMissions.value.push(...filteredMissions.value.slice(infiniteMissions.value.length, infiniteMissions.value.length + startingMissionsCount))
+  },
+  { distance: 10 },
+)
+
 const displayedMissions = computed(() => {
   switch (page.value) {
     case 0:
-      return filteredMissions.value
+      return infiniteMissions.value
     case 1:
       return generatedMissions.value
     case 2:
