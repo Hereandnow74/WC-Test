@@ -49,6 +49,7 @@ const settings = useStorage('settings', {
   nsfw: false,
   perkImages: true,
   columns: 'auto' as number | 'auto',
+  columnsCompanions: 0,
   hideWorldImg: false,
   allImg: false,
   ableSell: true,
@@ -133,6 +134,7 @@ const companionProfit = computed(() => {
     : 0
 })
 
+// Note: Return waifus when u Have a Wage Slave rules are unclear
 const companionProfitSold = computed(() => {
   return captureKoeff.value > 0
     ? companions.value.reduce((a, x) => {

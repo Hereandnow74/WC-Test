@@ -10,6 +10,10 @@
           <Select v-model="settings.columns" :options="['auto', 1, 2, 3, 4, 5]" />
         </div>
         <div class="flex justify-between">
+          <div>Number of columns for companions (0 = auto)</div>
+          <NumberInput v-model="settings.columnsCompanions" :min="0" :max="20" />
+        </div>
+        <div class="flex justify-between">
           <div class="flex gap-1">
             <div>Text Aligment: </div>
             <div

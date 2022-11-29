@@ -6,7 +6,7 @@
       WORLD_COLORS[rating - 1] || 'bg-gray-600' : 'bg-gray-600'"
     @click="pickAbleAfter ? pickWorld(world) : null"
   >
-    <div v-if="world.image && !settings.hideWorldImg" class="flex-grow relative min-h-[170px]">
+    <div v-if="world.image && !settings.hideWorldImg" class="flex-grow relative">
       <img
         ref="worldImg"
         class="rounded absolute object-cover h-full w-full object-center"

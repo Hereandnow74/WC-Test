@@ -4369,11 +4369,6 @@
     ]
   },
   {
-    "worldName": "Lolipop Chainsaw",
-    "rating": 5,
-    "image": "https://img.game-news24.com/2022/07/James-Gunns-Scult-Game-Lollipop-Chainsaw-Is-Making-A-Remake-Again.png"
-  },
-  {
     "worldName": "Moriarty the Patriot",
     "rating": 3,
     "image": "https://nefariousreviews.files.wordpress.com/2021/08/moriarty-the-patriot-featured.jpg"
@@ -5252,8 +5247,8 @@
         "rating": 3
       },
       {
-        "rating": 5,
-        "name": "Demon Rebellion"
+        "name": "Demon Rebellion",
+        "rating": 5
       }
     ]
   },
@@ -5388,10 +5383,12 @@
     "rating": 6,
     "image": "https://i.imgur.com/B9yMyZM.jpg"
   },
-  {"worldName":"Aria The Scarlet Ammo","rating":4,"image":""},
-  {"worldName":"Black Summoner","rating":6,"image":""},
+  {"worldName":"Aria The Scarlet Ammo","rating":4,"image":"https://cdn.discordapp.com/attachments/925963686433132644/1045388227093213254/wp7402615.webp"},
+  {"worldName":"Black Summoner","rating":6,"image":"https://i0.wp.com/www.animegeek.com/wp-content/uploads/2022/08/Black-Summoner-Season-2-release-date-Kuro-no-Shoukanshi-Season-2-Anime.jpg?fit=1200%2C675&ssl=1"},
   {"worldName":"Destiny Child","rating":6,"image":"https://static.dc-static.com/event/dcg/official/movie_thmb.jpg?v=1"},
-  {"worldName":"Samurai Jack","rating":6,"image":"https://ntvb.tmsimg.com/assets/p481593_b_h10_ad.jpg?w=1280&h=720"},
+  {"worldName":"Samurai Jack","rating":6,"image":"https://images3.alphacoders.com/114/thumb-1920-1144085.jpg"},
   {"worldName":"Star Vs. The Forces of Evil","rating":5,"image":"https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/6777E47B4FC7F996E1526C2D679CB683FAFA6D69BCDACBA6E0D5257DEDAC16D3/scale?width=1200&aspectRatio=1.78&format=jpeg"},
-  {"worldName":"The Amazing World of Gumball","rating":4,"image":"https://tvline.com/wp-content/uploads/2021/09/amazing-world-of-gumball.jpg?w=620"}
+  {"worldName":"The Amazing World of Gumball","rating":4,"image":"https://tvline.com/wp-content/uploads/2021/09/amazing-world-of-gumball.jpg?w=620"},
+  {"worldName":"Chaos","rating":7,"image":"https://bloody-disgusting.com/wp-content/uploads/2014/03/Chaos_Comics_Characters.jpg"},
+  {"worldName":"The Simpsons","rating":4,"image":"https://cdn.vox-cdn.com/thumbor/IQab79SuQ1PnrneGti_uy_pxTKo=/148x0:1768x1080/1280x854/cdn.vox-cdn.com/uploads/chorus_image/image/47413330/the-simpsons-tv-series-cast-wallpaper-109911.0.0.jpeg"}
 ]

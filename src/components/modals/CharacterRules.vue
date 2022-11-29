@@ -21,7 +21,7 @@
         </div>
       </Note>
       <Note type="warning" title="R63 images">
-        Due to popular vote male characters with R63 images will not be accepted. NSFW R63 images are allowed though.
+        Due to popular vote male characters with R63 images will not be accepted. NSFW R63 images are allowed though (they need to be NSFW still).
       </Note>
       <h3>Rules are sorted in order of importance and <b>forbidding</b> in nature, while breaking lower ones can still be tolerated, it will increase the chance that your character won't be added, top ones is flat out no.</h3>
       <ul class="list-decimal list-inside">

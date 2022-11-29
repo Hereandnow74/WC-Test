@@ -48,6 +48,7 @@ const props = defineProps({
 const listEl = ref<HTMLElement|null>(null)
 const value = ref(props.modelValue)
 const gotResult = ref(false)
+const alreadySent = ref(false)
 
 const searchResult = ref([] as any[])
 
@@ -80,10 +81,15 @@ watch(searchResult, () => {
 
 const emit = defineEmits(['update:modelValue', 'updateTier', 'updateUID', 'onChar'])
 
-watch(value, () => emit('update:modelValue', value.value))
+watch(value, () => {
+  if (!alreadySent.value)
+    emit('update:modelValue', value.value)
+  alreadySent.value = false
+})
 
 function chooseChar(char: any) {
   gotResult.value = true
+  alreadySent.value = true
   if (charTippy.value) charTippy.value.hide()
   value.value = char.item.n
   emit('updateTier', char.item.t)

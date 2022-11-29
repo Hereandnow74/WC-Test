@@ -56,7 +56,7 @@
 
         <template v-else>
           <Tag
-            v-for="tag in Object.keys(tagsCount).filter(tag => tag.length > 2).map(tag => ({tag, desc:'', short: tag, style: '', color: 'bg-teal-400 text-black'}))"
+            v-for="tag in Object.keys(tagsCount).filter(tag => tag.length > 2).map(tag => ({tag, desc:'', short: tag, style: '', color: 'bg-teal-400 text-black'})).sort((a, b) => a.tag.localeCompare(b.tag))"
             :key="tag.tag"
             :tag="tag"
             :on-the-list="true"

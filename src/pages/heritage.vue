@@ -174,6 +174,7 @@ onBeforeRouteUpdate((to, from, next) => {
   nextTick(next)
 })
 
+// TODO: Check this code for potential bugs
 function pickSingularityType(type: string, perk: any) {
   const allHrWFr = heritages.value.filter(x => x.typeFreebies)
   const fr = {}

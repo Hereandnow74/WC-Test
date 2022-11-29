@@ -397,7 +397,7 @@ export const symbioteBinding: PerkFull[] = [
     cost: 20,
     category: 'Binding',
     type: 'Expansion',
-    image: '',
+    image: 'https://cdn.discordapp.com/attachments/925963686433132644/1045752304894226573/LlQIDqW.png',
     desc: `
     <p>If more than one member of your symbiote swarm has entered their slime form, they can combine into a larger slime with one body, multiple minds, and one will. Swarm members may freely enter and exit such fusions without any negative side-effects.</p>
     <p>If any members of such a fusion have innate biological or genetic abilities, this will catalyze the appearance of those in the others. The specific expressions of these gifts will not always be consistent between subjects. For example, a Quirk user in such a fusion would cause others in it to gain Quirks of their own, and not necessarily similar ones. This feature cannot copy Heritage powers.</p>

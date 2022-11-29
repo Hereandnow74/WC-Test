@@ -6,6 +6,26 @@
       </h2>
       <div>
         <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          xx November 2022
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~60 new user submitted characters, new worlds and missions.</li>
+          <li>Custom setting for number of columns of companions.</li>
+          <li>Patron rework (Only text so far)</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          27 November 2022
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~60 new user submitted characters, new worlds and missions.</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
           24 November 2022
         </h3>
         <ul class="list-decimal list-inside">

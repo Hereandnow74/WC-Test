@@ -74,9 +74,9 @@
       </div>
     </div>
     <Button
-      class="bg-red-700 text-gray-100 rounded cursor-pointer hover:bg-red-800 px-2 mt-auto self-center"
+      class="text-gray-100 rounded cursor-pointer hover:bg-orange-500 px-2 mt-auto self-center"
       :label="missionRewards[mission.uid] ? 'Edit the rewards': 'Take the Mission'"
-      :class="{'bg-orange-600': missionRewards[mission.uid]}"
+      :bg-color="!!missionRewards[mission.uid] ? 'bg-orange-600': 'bg-red-700'"
       icon="charm:swords"
       @click="showTakeMission = true"
     />

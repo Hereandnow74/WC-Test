@@ -1,6 +1,31 @@
 [
   
   {
+    "source": "",
+    "rewardType": "Other",
+    "loca": "Warhammer 40K",
+    "objectives": [],
+    "budget": 2000,
+    "conditions": [
+      {
+        "value": "Lures, Bindings, and Mind Control may not be used on Vect or anyone in his Kabal until after it is destroyed."
+      },
+      {
+        "value": "Undermine and weaken the Kabal of the Black Heart, and Vect's powerbase until all abandon him and consider him weak."
+      },
+      {
+        "value": "Aid or create a Kabal and overthrow Vect. Making said Kabal the dominant power in Commoragh"
+      }
+    ],
+    "reward": "Commoragh is added to your Home Sweet Home. It retains connection to the Warhammer 40k universe it was connected to. You are in control of every entrance and exit.",
+    "author": "Rhivan",
+    "image": "https://i.pinimg.com/originals/27/e2/44/27e2447de5d7e5172c0ed436a65d3e17.jpg",
+    "title": "Black Heart, Broken",
+    "scope": "Standard",
+    "desc": "Asdrubael Vect has been Supreme Overlord of Commoragh for too long. Fix that. Slowly and subtly destroy his powerbase, his authority, and his Kabal. \n\nOnly once everything he has built has been turned to ashes, and a new Kabal has usurped dominance over Commoragh may you capture Vect.",
+    "uid": "IOxkx"
+  },
+  {
     "conditions": [
       {
         "value": "You have exactly two weeks to drive them round the bend"
@@ -41,7 +66,7 @@
         "value": "Vandalise but do not destroy a valued item they cherish"
       }
     ],
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1045393989563600967/Sasukee.webp",
     "loca": "Generic",
     "title": "There Is Always One",
     "uid": "kfGQw"
@@ -90,7 +115,7 @@
         "value": "While physical abilities can be trained in pretty much all worlds, there is a limit to how far they can go. (To use Harry Potter as an example again, he will never be Dragonball Level Martial Arts, but may use his magic to physically match that of fighting game characters)"
       }
     ],
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1045390328770867200/ww.jpg",
     "scope": "Standard",
     "loca": "Generic",
     "uid": "lwpSp"
@@ -164,7 +189,7 @@
     "author": "FinSexual92",
     "scope": "Grand",
     "rewardType": "TX Tickets",
-    "image": "",
+    "image": "https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2021/6/23/vsfm9jubhl7o46drgzlm/diablo-immortal-heroes-art",
     "loca": "A Song of Ice and Fire",
     "conditions": [
       {
@@ -242,7 +267,7 @@
     ],
     "scope": "Quick",
     "desc": "You all know how things tend to go in the Saint Seiya universe, Saori gets in trouble and her quintet of overpowered Bronze Saints has to race against the clock to solve the mess before she dies. With this mission, YOU will be the villain and get to face the Saints.",
-    "image": "https://cdn.donmai.us/original/75/25/__kido_saori_and_athena_saint_seiya_drawn_by_cirnos__7525536d500ce3e4715b383f3d521adb.jpg",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1044267142209622046/Screenshot_2.jpg",
     "loca": "Saint Seiya",
     "budget": 400,
     "rewardType": "Companions",
@@ -271,9 +296,9 @@
   },
   {
     "desc": "In a setting where Earth is being largely invaded by aliens and humans despite technology, are having problems dealing with them, You are now responsible for changing the scales in favor of Humanity, and making sure that Earth belongs to its rightful owners.",
-    "image": "",
+    "image": "https://i.pinimg.com/originals/cf/5e/b6/cf5eb69ff4fe5057340344d895695455.jpg",
     "budget": 0,
-    "title": "Earth For The humans ",
+    "title": "Earth For The humans",
     "reward": "955 Credits ",
     "conditions": [
       {
@@ -443,7 +468,7 @@
     ],
     "budget": 0,
     "source": "",
-    "image": "",
+    "image": "https://millennialeye.files.wordpress.com/2015/03/ginkomushishifull1654264_zps739dd889.jpg",
     "reward": "200 Credits",
     "scope": "Grand",
     "conditions": [
@@ -492,7 +517,7 @@
         "value": "the mission last until the beginning of season 4"
       }
     ],
-    "image": "",
+    "image": "http://www.redcarpetnewstv.com/wp-content/uploads/2012/10/Misfits-season-four-cast-interview.jpg",
     "scope": "Grand",
     "reward": "200 Credits",
     "title": "Misfiting in Misfits",
@@ -503,7 +528,7 @@
   },
   {
     "reward": "500 Credits.",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1044268833432666112/Screenshot_3.jpg",
     "loca": "Generic",
     "scope": "Quick",
     "conditions": [
@@ -533,7 +558,7 @@
     "uid": "gGzhM"
   },
   {
-    "image": "",
+    "image": "https://img2.goodfon.com/wallpaper/nbig/f/77/uchitel-mafiozi-reborn.jpg",
     "source": "",
     "conditions": [
       {
@@ -619,7 +644,7 @@
     "title": "A Farmer’s Life - Stardew Valley Expanded Edition.",
     "desc": "The Retired PRO-Farmer, one of our main Clients, is tired of watching our contractors wagging war and fighting in the multiverse, all he wants is to watch is the peaceful life of new farmers trying to learn how to live out the soil.",
     "scope": "Grand",
-    "image": "",
+    "image": "https://i.redd.it/et4x8ifhsnn41.jpg",
     "conditions": [
       {
         "value": "Must complete one year. "
@@ -751,7 +776,7 @@
     "desc": "The Lord of the Realm of Dreams, Morpheus, Dream of the Endless, has been imprisoned by mortal hands. Even now, they profit from his pilfered treasures' powers. Your mission is to be the one who frees Morpheus from his prison. How you accomplish this matters not, but the Dreamlord must be able to resume his dominion over mankind's slumber as soon as possible.",
     "source": "",
     "loca": "DC (magic side)",
-    "image": "https://theenvoyweb.com/wp-content/uploads/2022/08/Spell-The-Sandman-1024x576.jpg",
+    "image": "https://sm.ign.com/ign_latam/screenshot/default/hero-imagefillsize-1248x702v1659476888_62y4.jpg",
     "scope": "Standard",
     "budget": 365,
     "reward": "100 credits, the Hypnos lure, and Dream's realm becomes accessible through your sweet home/demiplane's portals.",
@@ -770,7 +795,7 @@
   },
   {
     "source": "",
-    "image": "",
+    "image": "https://www.kotaku.com.au/wp-content/uploads/sites/3/2018/06/22/e4dbdxxxw9nvx4f8dklz.png?quality=80&resize=1280,720",
     "title": "Not All About Violence",
     "reward": "150 Credits",
     "scope": "Standard",
@@ -907,7 +932,7 @@
       }
     ],
     "rewardType": "Other",
-    "image": "",
+    "image": "https://images4.alphacoders.com/249/thumb-1920-249716.jpg",
     "reward": "1000 credits. You receive the perfect combination nursery, daycare and school in your Sweet Home for any and all children, including monstrous ones. This will grow in size as needed. Your nursery contains perfect caretakers that will raise your children exactly how you want.",
     "budget": 360,
     "loca": "Danmachi",
@@ -986,7 +1011,7 @@
     "rewardType": "Credits",
     "budget": 500,
     "desc": "This setting is always \"Heroes this\" and \"Heroism that.\" Well goody-goody-gumdrops for their pansy asses, I want a world of Monsters, for monsters!  And you're gonna be the one to make it! I want you to supplant Orochi as the Monster King and lead the MA into a new age of Monsters.",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1044271290091048970/22.png",
     "reward": "1000 Credits",
     "uid": "EUODc"
   },
@@ -1026,7 +1051,7 @@
     "title": "Vegeta's PRIDE!",
     "budget": 955,
     "rewardType": "Other",
-    "image": "https://i.imgur.com/JbLJ9xw.png",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1044272847037665290/Screenshot_6.jpg",
     "loca": "Dragonball",
     "conditions": [
       {
@@ -1042,7 +1067,7 @@
     "uid": "FHvli"
   },
   {
-    "image": "",
+    "image": "https://i.redd.it/n42kcix5gzs41.jpg",
     "scope": "Grand",
     "conditions": [
       {
@@ -1132,7 +1157,7 @@
     "reward": "You Recieve a Fishing Rod titled Rod of the Fishing Ages, it is the ultimate tool any Self-mastered Fishermen will ever need, This ROD can pull up many things such as: Fish, more Fish, Treasures, your future Waifu and (maybe i havent tested) your will to live from the bottom of the Ocean after having undergone the trials of this Mission. oh and you also get 2 credits.",
     "loca": "Terraria",
     "source": "",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1044281211293536306/Screenshot_11.jpg",
     "author": "Demontty",
     "budget": 0,
     "rewardType": "Other",
@@ -3339,6 +3364,117 @@
     "uid": "MGKJI"
   },
   {
+    "reward": "You gain the ability to create a fire that is conceptually tied to yourself. If an elf willingly walks into that fire and are able to endure the pain. You can bless them with a template stacking of you. In addition their form will subtly change to be more in line with your preferences.",
+    "objectives": [
+      {
+        "value": "Capture and Control Naggarond",
+        "reward": "10",
+        "type": "Credits"
+      },
+      {
+        "type": "Credits",
+        "reward": "10",
+        "value": "Capture and Control Clar Karond"
+      },
+      {
+        "reward": "10",
+        "value": "Capture and Control Karond Kar",
+        "type": "Credits"
+      },
+      {
+        "type": "Credits",
+        "value": "Capture and Control Har Ganeth",
+        "reward": "10"
+      },
+      {
+        "reward": "10",
+        "type": "Credits",
+        "value": "Capture and Control Ghrond"
+      },
+      {
+        "type": "Credits",
+        "reward": "10",
+        "value": "Capture and Control Hag Graef"
+      },
+      {
+        "type": "Credits",
+        "reward": "10",
+        "value": "Capture and Control the Ancient City of Quintex"
+      },
+      {
+        "value": "Capture the Ruler of each Dark Elven City",
+        "type": "Other",
+        "reward": "Gain a ring that makes Dark Elves of any setting naturally drawn towards, and more subservient towards the wearer."
+      },
+      {
+        "value": "Capture and Control Eataine",
+        "type": "Credits",
+        "reward": "10"
+      },
+      {
+        "value": "Capture and Control Caledor",
+        "reward": "10",
+        "type": "Credits"
+      },
+      {
+        "type": "Credits",
+        "value": "Capture and Control Avelorn",
+        "reward": "10"
+      },
+      {
+        "type": "Credits",
+        "value": "Capture and Control Ellyrion",
+        "reward": "10"
+      },
+      {
+        "type": "Credits",
+        "reward": "10",
+        "value": "Capture and Control Saphery"
+      },
+      {
+        "value": "Capture and Control Yvresse",
+        "type": "Credits",
+        "reward": "10"
+      },
+      {
+        "reward": "10",
+        "value": "Capture and Control Cothique",
+        "type": "Credits"
+      },
+      {
+        "value": "Capture and Control Chrace",
+        "type": "Credits",
+        "reward": "10"
+      },
+      {
+        "type": "Credits",
+        "value": "Capture and Control Nagarythe ",
+        "reward": "10"
+      },
+      {
+        "value": "Capture and Control Tiranoc ",
+        "reward": "10",
+        "type": "Credits"
+      },
+      {
+        "reward": "Gain a ring that makes High Elves of any setting naturally drawn towards, and more subservient towards the wearer.",
+        "value": "Capture the Ruler of each High Elves Kingdom",
+        "type": "Other"
+      },
+      {
+        "value": "Capture and Control the Oak of Ages ",
+        "reward": "20",
+        "type": "Credits"
+      },
+      {
+        "value": "Capture Ariel and Orion",
+        "type": "Other",
+        "reward": "Gain a ring that makes Wood Elves of any setting naturally drawn towards, and more subservient towards the wearer."
+      }
+    ],
+    "desc": "Elvenkind has been shattered for too long. Have someone descended from Aenarion the Defender, become the Phoenix King and reunite all the Elves under one banner.",
+    "author": "Rhivan",
+    "rewardType": "Other",
     "conditions": [
       {
         "value": "Someone with the Blood of Aenarion walks through the fires of Asuryan and becomes the Phoenix King"
@@ -3350,123 +3486,12 @@
         "value": "Elvenkind is united under the Phoenix Kings banner"
       }
     ],
-    "budget": 1200,
-    "rewardType": "Perks",
-    "desc": "Elvenkind has been shattered for too long. Have someone descended from Aenarion the Defender, become the Phoenix King and reunite all the Elves under one banner.",
-    "title": "True Phoenix King",
-    "reward": "Template Stacking of Asuryan",
+    "scope": "Grand",
     "source": "",
-    "objectives": [
-      {
-        "type": "Credits",
-        "value": "Capture and Control Naggarond",
-        "reward": "10"
-      },
-      {
-        "value": "Capture and Control Clar Karond",
-        "reward": "10",
-        "type": "Credits"
-      },
-      {
-        "type": "Credits",
-        "reward": "10",
-        "value": "Capture and Control Karond Kar"
-      },
-      {
-        "type": "Credits",
-        "reward": "10",
-        "value": "Capture and Control Har Ganeth"
-      },
-      {
-        "reward": "10",
-        "value": "Capture and Control Ghrond",
-        "type": "Credits"
-      },
-      {
-        "value": "Capture and Control Hag Graef",
-        "reward": "10",
-        "type": "Credits"
-      },
-      {
-        "reward": "10",
-        "value": "Capture and Control the Ancient City of Quintex",
-        "type": "Credits"
-      },
-      {
-        "value": "Capture the Ruler of each Dark Elven City",
-        "type": "Other",
-        "reward": "Template Stack of Sorceress or 20 credits"
-      },
-      {
-        "type": "Credits",
-        "reward": "10",
-        "value": "Capture and Control Eataine"
-      },
-      {
-        "reward": "10",
-        "type": "Credits",
-        "value": "Capture and Control Caledor"
-      },
-      {
-        "value": "Capture and Control Avelorn",
-        "type": "Credits",
-        "reward": "10"
-      },
-      {
-        "type": "Credits",
-        "reward": "10",
-        "value": "Capture and Control Ellyrion"
-      },
-      {
-        "type": "Credits",
-        "reward": "10",
-        "value": "Capture and Control Saphery"
-      },
-      {
-        "reward": "10",
-        "value": "Capture and Control Yvresse",
-        "type": "Credits"
-      },
-      {
-        "type": "Credits",
-        "reward": "10",
-        "value": "Capture and Control Cothique"
-      },
-      {
-        "value": "Capture and Control Chrace",
-        "type": "Credits",
-        "reward": "10"
-      },
-      {
-        "type": "Credits",
-        "reward": "10",
-        "value": "Capture and Control Nagarythe "
-      },
-      {
-        "type": "Credits",
-        "reward": "10",
-        "value": "Capture and Control Tiranoc "
-      },
-      {
-        "type": "Other",
-        "value": "Capture the Ruler of each High Elves Kingdom",
-        "reward": "Template Stacking of Lore master of Hoeth or 20 credits"
-      },
-      {
-        "reward": "20",
-        "type": "Credits",
-        "value": "Capture and Control the Oak of Ages "
-      },
-      {
-        "type": "Other",
-        "reward": "Template stacking of Waystalker, or 20 credits",
-        "value": "Capture Ariel and Orion"
-      }
-    ],
-    "loca": "Warhammer Fantasy",
-    "scope": "Standard",
+    "budget": 1200,
     "image": "https://i.pinimg.com/originals/44/3e/c1/443ec15fa86575441393cd58dbdd6f94.jpg",
-    "author": "Rhivan",
+    "loca": "Warhammer Fantasy",
+    "title": "True Phoenix King",
     "uid": "eCVVi"
   },
   {
@@ -7026,33 +7051,34 @@
     "uid": "GajvD"
   },
   {
-    "source": "",
-    "loca": "Pokemon",
-    "scope": "Grand",
     "rewardType": "Other",
-    "title": "Giselle's Revenge",
+    "loca": "Pokemon",
+    "image": "https://i.ibb.co/p0sSVcS/pokemon-league-champion-giselle-reference-sheet-by-nico-neko-defhl3t-fullview.jpg",
+    "author": "Ratcatcher",
+    "budget": 85,
+    "scope": "Grand",
+    "source": "",
     "reward": "1000 credits plus one level on a Heritage of your choice (no TX levels)",
-    "desc": "Early in the Pokemon anime Ash Ketchum met the one girl he was unequivocably attracted to, Giselle. She has never appeared since, even if Ash is finally close to become a Pokemon Master.\nLet's correct this: substitute as Giselle in the Journeys period and make a harem including Ash, the female Pokemon trainers he traveled with for extended periods, and his female classmates back in Alola.",
     "objectives": [
       {
-        "reward": "Free Unison for you and all current members of your retinue",
+        "value": "Track down and defeat the trainers from Pallet that started with Ash (Gary Oak, Leaf - serving as Viridian City's temporary gym leader - and whoever had the Charmender)",
         "type": "Perks",
-        "value": "Track down and defeat the trainers from Pallet that started with Ash (Gary Oak, Leaf - serving as Viridian City's temporary gym trainer - and whoever had the Charmender)"
+        "reward": "Free Unison for you and all current members of your retinue"
       },
       {
         "value": "Find Verity and Risa and have them take your Binding willingly",
-        "type": "Credits",
-        "reward": "100 credits"
+        "reward": "100 credits",
+        "type": "Credits"
       },
       {
-        "value": "Dawn is Akari - go back in time to Hisui after she defeated Arceus and get her to take the Binding willingly",
+        "type": "Other",
         "reward": "Dawn's rating raised to 8, 1 T-11 Ticket",
-        "type": "Other"
+        "value": "Dawn is Akari - go back in time to Hisui after she defeated Arceus and get her to take the Binding willingly"
       }
     ],
-    "author": "Ratcatcher",
-    "budget": 85,
-    "image": "https://i.ibb.co/p0sSVcS/pokemon-league-champion-giselle-reference-sheet-by-nico-neko-defhl3t-fullview.jpg",
+    "desc": "Early in the Pokemon anime Ash Ketchum met the one girl he was unequivocably attracted to, Giselle. She has never appeared since, even if Ash is finally close to become a Pokemon Master.\nLet's correct this: substitute as Giselle in the Journeys period and make a harem including Ash, the female Pokemon trainers he traveled with for extended periods, and his female classmates back in Alola.",
+    "title": "Giselle's Revenge",
+    "uid": "vKYKq",
     "conditions": [
       {
         "value": "Chargen only. Substitute as Giselle (costs are waived)"
@@ -7063,8 +7089,7 @@
       {
         "value": "As it is by the Journeys timeline, Ash' tier is raised to 7, and those of the non-Alolan targets excluding Iris are raised to 5"
       }
-    ],
-    "uid": "vKYKq"
+    ]
   },
   {
     "source": "",

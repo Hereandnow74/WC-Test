@@ -272,6 +272,8 @@ watch(directions, () => {
 })
 
 const cardRowCount = computed(() => {
+  if (settings.value.columnsCompanions !== 0 && settings.value.columnsCompanions !== undefined)
+    return settings.value.columnsCompanions
   if (companionsList.value) {
     const wd = companionsList.value.clientWidth || 0
     if (wd >= 2300) return 7

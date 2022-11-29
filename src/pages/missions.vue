@@ -1,47 +1,53 @@
 <template>
   <div class="rounded p-2 flex flex-col gap-2">
-    <h3 class="text-center flex gap-2 flex-wrap">
-      <Button
-        :class="page === 0 ? 'bg-blue-800': ''"
-        class="bg-purple-700 text-gray-100 rounded cursor-pointer hover:bg-purple-800 px-2"
-        label="User submitted Missions"
-        icon="carbon:user-avatar-filled-alt"
-        @click="page = 0"
-      />
-      <Button
-        :class="page === 1 ? 'bg-blue-800': ''"
-        class="bg-purple-700 text-gray-100 rounded cursor-pointer hover:bg-purple-800 px-2"
-        label="Generated Missions"
-        icon="icon-park-solid:robot-one"
-        @click="page = 1"
-      />
-      <Button
-        :class="page === 2 ? 'bg-blue-800': ''"
-        class="bg-purple-700 text-gray-100 rounded cursor-pointer hover:bg-purple-800 px-2"
-        label="3 random missions"
-        icon="bi:patch-question-fill"
-        @click="page = 2"
-      />
-      <Button
-        class="text-base"
-        icon="fluent:book-question-mark-24-regular"
-        label="Propose a Mission"
-        bg-color="bg-amber-600"
-        @click="() => toggleShowAddMission()"
-      />
-    </h3>
-    <div v-if="page === 0" class="flex gap-2 justify-center flex-wrap">
-      <Input v-model="search" placeholder="Search" />
-      <div>
-        <Select v-model="author" :options="authorOptions" label="Author" />
+    <div ref="topElement" class="text-sm md:text-base transition-all flex flex-col gap-2" :style="isTopVisible ? '' : `margin-top: -${topHeight + 8}px`">
+      <h3 class="text-center flex gap-2 flex-wrap ">
+        <Button
+          :class="page === 0 ? 'bg-blue-800': ''"
+          class="bg-purple-700 text-gray-100 rounded cursor-pointer hover:bg-purple-800 px-2"
+          label="User submitted Missions"
+          size="Small"
+          icon="carbon:user-avatar-filled-alt"
+          @click="page = 0"
+        />
+        <Button
+          :class="page === 1 ? 'bg-blue-800': ''"
+          class="bg-purple-700 text-gray-100 rounded cursor-pointer hover:bg-purple-800 px-2"
+          label="Generated Missions"
+          size="Small"
+          icon="icon-park-solid:robot-one"
+          @click="page = 1"
+        />
+        <Button
+          :class="page === 2 ? 'bg-blue-800': ''"
+          class="bg-purple-700 text-gray-100 rounded cursor-pointer hover:bg-purple-800 px-2"
+          label="3 random missions"
+          size="Small"
+          icon="bi:patch-question-fill"
+          @click="page = 2"
+        />
+        <Button
+          class="text-base"
+          icon="fluent:book-question-mark-24-regular"
+          label="Propose a Mission"
+          size="Small"
+          bg-color="bg-amber-600"
+          @click="() => toggleShowAddMission()"
+        />
+      </h3>
+      <div v-if="page === 0" class="flex gap-2 justify-center flex-wrap">
+        <Input v-model="search" placeholder="Search" class="flex-grow" />
+        <div>
+          <Select v-model="author" :options="authorOptions" label="Author" />
+        </div>
+        <div>
+          <InputWithSearch v-model="world" :list="worldOptions" placeholder="World name" class="max-w-68" />
+        </div>
+        <div>
+          <Select v-model="scope" :options="scopeOptions" label="Scope" />
+        </div>
+        <Button v-if="Object.values(missionRewards).length" size="Small" label="Delete all rewards" bg-color="bg-red-600" @click="missionRewards = {}" />
       </div>
-      <div>
-        <InputWithSearch v-model="world" :list="worldOptions" placeholder="World name" class="max-w-68" />
-      </div>
-      <div>
-        <Select v-model="scope" :options="scopeOptions" label="Scope" />
-      </div>
-      <Button v-if="Object.values(missionRewards).length" size="Small" label="Delete all rewards" bg-color="bg-red-600" @click="missionRewards = {}" />
     </div>
     <Note v-if="page === 1" type="warning" title="Work in progress">
       This section is in WIP stage, you can suggest simple missions/conditions/objectives for random mission generation on Discord
@@ -68,6 +74,18 @@ const missions = ref<Mission[]>([])
 const missionWrapper = ref<HTMLElement>(null)
 
 const search = ref('')
+
+const { directions } = useScroll(missionWrapper)
+const isTopVisible = ref(true)
+const topElement = ref<HTMLElement>(null)
+const { height: topHeight } = useElementSize(topElement)
+
+watch(directions, () => {
+  if (directions.top)
+    isTopVisible.value = true
+  if (directions.bottom)
+    isTopVisible.value = false
+})
 
 async function getMissions() {
   missions.value = (await import('~/data/missions.json')).default
@@ -163,6 +181,7 @@ const displayedMissions = computed(() => {
     case 2:
       return threeMission.value
   }
+  return infiniteMissions.value
 })
 
 </script>
