@@ -57,7 +57,7 @@
       <div
         ref="waifuList"
         v-auto-animate
-        class="grid gap-2 min-h-0"
+        class="grid gap-2 min-h-0 waifulist"
         :class="orientation ? 'grid-cols-2': 'grid-cols-1'"
       >
         <component
@@ -67,6 +67,7 @@
           :char="char"
           :perks="companionsPerksList[char.uid] || {}"
           :edit-mode="isRetinueEdit"
+          class="packItem"
           @sell="sellCompanion"
           @undo="undoBuying"
           @undoSell="undoSelling"
@@ -198,12 +199,8 @@ const companionsPerksList = computed(() => {
     waifuPerks.value.forEach((specific) => {
       const sourceWaifuPerk = find(specificPerksWithDLC, specPerk => specPerk.title === specific.title)
       if (sourceWaifuPerk) {
-        if (isArray(sourceWaifuPerk.uid)) {
-          if (sourceWaifuPerk.uid.includes(rchar.uid))
-            specificList.push({ title: specific.title, tier: sourceWaifuPerk.tier })
-        }
-        else {
-          if (sourceWaifuPerk.uid === rchar.uid)
+        if (isArray(sourceWaifuPerk.waifuUID)) {
+          if (sourceWaifuPerk.waifuUID.includes(rchar.uid))
             specificList.push({ title: specific.title, tier: sourceWaifuPerk.tier })
         }
       }

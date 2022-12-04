@@ -3,8 +3,8 @@
     <teleport to="nav">
       <div class="flex text-base px-2 justify-center w-full bg-white dark:bg-[#121212] z-20">
         <Navigation
-          :items="['patron', 'origin']"
-          :titles="['Patrons', 'Origin']"
+          :items="['origin', 'patron']"
+          :titles="['Origin', 'Patrons']"
           prefix="origin"
         />
       </div>

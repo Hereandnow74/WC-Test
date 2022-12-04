@@ -1,6 +1,296 @@
 [
   
   {
+    "author": "ClayUndead",
+    "desc": "All the Villains today are so booooooring… \"No one understands me!\"-this and \"DEATH! DEATH! DEATH!\"-that. That's why I'm hiring a few of you Company blokes! You see, I like the classics gag villains, like Stiltman(may he rest in peace), so I bought some shares in the company to facilitate my interest. That's where you come in. I'm going to be paying you, yes you, to be a weekly villain for any Single Superhero, Dynamic Duo, Fantastic Family, or Terrific Team.",
+    "loca": "Generic Superhero world",
+    "title": "For the Glory of Villainy",
+    "image": "",
+    "objectives": [
+      {
+        "value": "Steal Candy from a Baby",
+        "type": "Credits",
+        "reward": "1 Credit"
+      },
+      {
+        "value": "Rob a bank once a month for the year.",
+        "reward": "5 Credits per Monthly Bank robbed.",
+        "type": "Credits"
+      },
+      {
+        "type": "Credits",
+        "reward": "5 Credits per Bi-weekly Hostage taken.",
+        "value": "Kidnap a Damsel to hold hostage and monologue to, every other week."
+      },
+      {
+        "value": "Set up a RubeGoldberg-esque 'Death'-trap for your Hero.",
+        "reward": "25 Credits",
+        "type": "Credits"
+      },
+      {
+        "value": "Train up a local Protege/Sidekick to help you in your villainous deeds.",
+        "type": "Credits",
+        "reward": "One Template Stack of your choice for your Protege/Sidekick."
+      },
+      {
+        "reward": "75 credits",
+        "type": "Credits",
+        "value": "Never Get Caught! MWUHAHAHAHAHA!"
+      },
+      {
+        "reward": "25 Credits",
+        "value": "Convince your Hero to go Go-karting with you.",
+        "type": "Credits"
+      },
+      {
+        "reward": "Faerie Feast or 10 Credits",
+        "value": "Steal 40 Cakes!",
+        "type": "Perks"
+      }
+    ],
+    "budget": 1,
+    "conditions": [
+      {
+        "value": "No serious stuff."
+      },
+      {
+        "value": "Get into a kerfuffle with a hero at least once a week for a year."
+      },
+      {
+        "value": "If you kill someone, in anything but a total and uncontrollable accident or as a last ditch effort of self defense, I will pull some strings to curse you with incurable Depression and Erectile Dysfunction for a hundred centuries."
+      },
+      {
+        "value": "While the Hijinks can be lewd, No Raping The Heroes. Seduce them if you want."
+      },
+      {
+        "value": "The Heroes you choose to oppose, can not be bound and are resistant to lures."
+      },
+      {
+        "value": "If you're caught/Incapacitated/Imprisoned, you have a month grace period to escape. Time Imprisoned do not count as time spent as a villain."
+      }
+    ],
+    "rewardType": "Credits",
+    "reward": "100 Credits",
+    "source": "",
+    "scope": "Standard",
+    "uid": "BrQim"
+  },
+  {
+    "image": "",
+    "reward": "1 Credits",
+    "budget": 500,
+    "loca": "Borderlands",
+    "conditions": [
+      {
+        "value": "You will be given an App for your company device to scan a weapon for it's rarity."
+      },
+      {
+        "value": "Must obtain the weapon yourself, No Waifu Pyramid schemes"
+      }
+    ],
+    "source": "",
+    "title": "Bombs, Bullets, and Badasses",
+    "desc": "Hello Contractor! I'm Clay, a purveyor of goods for the Company. Today, I contacted you for a simple goal. Munitions. Someone has to supply the weapons and gear for the limitless soldiers and low-rank contractors. That's why I'm willing to pay for supplies from a universe called Borderlands. Normally, I would go there myself to aquire the goods, but an asshole named Marcus managed to strike a deal with one of my higher ups that prevents me from entering that multiverse.\n\nThat's why I'm asking you for you to sell to me 100 \"White/Common\" Guns/Shields/Grenades/Artifacts/Relics(This is Repeatable)",
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "5 Credits",
+        "value": "sell to me 50 \"Green/Uncommon\" Guns/Shields/Grenades/Artifacts/Relics(Repeatable)",
+        "type": "Credits"
+      },
+      {
+        "reward": "10",
+        "value": "sell to me 25 \"Blue/Rare\" Guns/Shields/Grenades/Artifacts/Relics(Repeatable)",
+        "type": "Credits"
+      },
+      {
+        "value": "sell to me 10 \"Purple/Epic\" Guns/Shields/Grenades/Artifacts/Relics (Repeatable)",
+        "reward": "25 Credits",
+        "type": "Credits"
+      },
+      {
+        "type": "Credits",
+        "reward": "50 Credits",
+        "value": "sell to me 5 \"Orange/Legendary\" Guns/Shields/Grenades/Artifacts/Relics(Repeatable x100)"
+      },
+      {
+        "value": "sell to me 1 \"Magenta/E-Tech\" Guns/Shields/Grenades/Artifacts/Relics(Repeatable x50)",
+        "type": "Credits",
+        "reward": "75 Credits"
+      },
+      {
+        "type": "Credits",
+        "value": "sell to me 1 \"Pink/Seraph\" Guns/Shields/Grenades/Artifacts/Relics(Repeatable x25)",
+        "reward": "150 Credits"
+      },
+      {
+        "value": "sell to me 1 \"Cyan/Pearlescent\" Guns/Shields/Grenades/Artifacts/Relics(Repeatable x10)",
+        "reward": "300 Credits",
+        "type": "Credits"
+      },
+      {
+        "value": "sell to me 1 \"Rainbow/Effervescent\" Guns/Shields/Grenades/Artifacts/Relics",
+        "type": "Credits",
+        "reward": "500 Credits"
+      }
+    ],
+    "rewardType": "Credits",
+    "author": "ClayUndead",
+    "uid": "ViaQA"
+  },
+  {
+    "desc": "Contractors come in all shapes, sizes and adequacy. We don't pay too much attention to them unless we have to. This Mission may change that. Drop Into Fallout (any game) and take over the local Wasteland. It doesn't matter if you become the Minute Men of Vegas, the Mr House of DC or the Enclave of Boston. All that matters is you surviving, coming out on top and being bereft of every Perk, Skill, Ability, Ride and Retinue from the Company.",
+    "source": "",
+    "scope": "Standard",
+    "rewardType": "Other",
+    "title": "Prove Yourself",
+    "image": "",
+    "author": "FinSexual92",
+    "reward": "Company Promotion to Elite Contractor, coming with a monthly salary of $500,000",
+    "objectives": [
+      {
+        "value": "Follow a Path of Good Karma",
+        "type": "Companions",
+        "reward": "A T7 Companion Ticket for someone on the Side of Good"
+      },
+      {
+        "value": "Follow a Path of Bad Karma",
+        "type": "Companions",
+        "reward": "A T7 Companion Ticket for someone on the Dark side"
+      },
+      {
+        "value": "Fold a Faction into your Forces",
+        "type": "Other",
+        "reward": "Their Tech and Forces are available to you even after this Mission"
+      },
+      {
+        "type": "Other",
+        "value": "Utterly destroy a Faction opposing you",
+        "reward": "Their Tech or their Forces available to you once you leave the World"
+      }
+    ],
+    "loca": "Fallout",
+    "conditions": [
+      {
+        "value": "You retain nothing from the Company, only your natural abilities from before we signed you on"
+      },
+      {
+        "value": "Any love confessions don't count as Captures until you are done here"
+      },
+      {
+        "value": "You must be the known Ruler (or the one everyone knows is really in charge) for at least 1 year"
+      },
+      {
+        "value": "Any Weapons you retain and personal Buildings you have will come with you when you finish"
+      }
+    ],
+    "budget": 0,
+    "uid": "Wsuxa"
+  },
+  {
+    "image": "",
+    "loca": "Generic",
+    "budget": 0,
+    "title": "Fate's Wrath",
+    "rewardType": "TX Tickets",
+    "conditions": [
+      {
+        "value": "You must not kill the Anomaly, you will need to tag them with a spell that will bind them to you as a ghost"
+      },
+      {
+        "value": "You must not kill the Protagonist, you must bring their world down around them. You may capture them to give them a front row seat but they will be mentally immune to the effects until they're broken."
+      },
+      {
+        "value": "You must remain free to cause havoc, if you are captured then you have 48 hours to get free or you will fail this mission"
+      },
+      {
+        "value": "Your Binding will not work on anyone but the Protagonist for the length of this Mission"
+      },
+      {
+        "value": "Your Retinue is not permitted to help beyond helping you train"
+      }
+    ],
+    "author": "FinSexual92",
+    "scope": "Standard",
+    "source": "",
+    "desc": "We are hardly the only ones in the Omniverse giving out power, Contractor. This time, someone has decided to save their favourite character the canon heartache in such a way that Fate itself has reached out to us. They want a lesson to be taught about defying it in such a way, and you will be the instrument of their wrath.",
+    "objectives": [
+      {
+        "value": "Capture the Protagonist and have them tag the Anomaly with the spell",
+        "reward": "250 Credits",
+        "type": "Credits"
+      },
+      {
+        "type": "Companions",
+        "value": "Arrange to kill the Protagonist's loved ones in front of them while they can't act (Note: they can't be Captured at this point for it to count)",
+        "reward": "Company Clones of the loved ones or their Buy Value Credit Equivalent (Can be mixed so you get some Clones and some Credits)"
+      },
+      {
+        "type": "Perks",
+        "reward": "Template Stacking I of both Protagonist and Rival for you or a member of your Retinue",
+        "value": "Train the Protagonist's Rival to defeat them when they would otherwise win"
+      },
+      {
+        "value": "Arrange for the Protagonist's Love Interest to be in the care of their Destined Nemesis without them being killed (Note: this disqualifies them from the first optional objective)",
+        "type": "Companions",
+        "reward": "Company Clones of the Love Interest and Destined Nemesis"
+      },
+      {
+        "value": "Impregnate (or have them Impregnate someone) before leaving the World in Question and train the child to conquer the World as they watch unable to stop it",
+        "type": "Credits",
+        "reward": "500 Credits and Company Clones of any Canon Children they have (or their Full Value in Credits)"
+      }
+    ],
+    "reward": "1 TX Ticket",
+    "uid": "ZrZFY"
+  },
+  {
+    "budget": 300,
+    "author": "Ratcatcher",
+    "conditions": [
+      {
+        "value": "You cannot use powers from other universes, and your personal abilities are reduced to what humans can do in the Pokemon anime"
+      },
+      {
+        "value": "You must find and destroy Team Rocket's HQ"
+      },
+      {
+        "value": "Defeat Giovanni in a Pokemon battle without help, and either prevent him from fleeing or make it so one-sided he decides to retire."
+      }
+    ],
+    "title": "Blast Them Off",
+    "source": "",
+    "scope": "Standard",
+    "objectives": [
+      {
+        "type": "Companions",
+        "reward": "Instant Capture of Jessie and James (the latter's gender may change according to your preference)",
+        "value": "Defeat Jessie and James and capture Meowth in a Pokeball (you can be helped by a Retinue member)"
+      },
+      {
+        "value": "Defeat the Rocket admins without numerical superiority",
+        "reward": "Either instant capture of the Admin or their listed price",
+        "type": "Other"
+      },
+      {
+        "value": "Defeat Domino in single combat without Pokemon",
+        "type": "Companions",
+        "reward": "Instant Capture of Domino"
+      },
+      {
+        "value": "Free or capture yourself the Rayquaza imprisoned by Team Rocket",
+        "reward": "One Legendary Pokemon of your choice",
+        "type": "Other"
+      }
+    ],
+    "rewardType": "Other",
+    "image": "",
+    "reward": "500 credits plus either Giovanni or a Ground Type Pokemon of your choice (maximum tier 6)",
+    "desc": "In the games, Team Rocket was defeated again and again until Giovanni and the admins fled and the organization faded into irrilevance. In the anime, however, Team Rocket is still strong and led by Giovanni. Let's correct this.",
+    "loca": "Pokemon",
+    "uid": "Gzipa"
+  },
+  {
     "source": "",
     "rewardType": "Other",
     "loca": "Warhammer 40K",
@@ -9193,18 +9483,8 @@
     "uid": "O2il2"
   },
   {
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992793415165157436/9feccca35b57e82f768dede148df7428aa-brie-larson.2x.rsocial.w600.webp",
     "reward": "200 credits, Performance Talent or its credit equivalent",
-    "objectives": [
-      {
-        "reward": "Full Corruption Defense or its equivalent in credits",
-        "value": "Kill Gideon while he's gaping at your band"
-      },
-      {
-        "value": "Have Envy fall for you while she's dating Todd and live to tell the tale",
-        "reward": "Psychic Talent + 1000 credits"
-      }
-    ],
-    "loca": "Scott Pilgrim",
     "conditions": [
       {
         "value": "Have Envy fall for you without the use of any form of mind control"
@@ -9216,12 +9496,25 @@
         "value": "Have them play at the opening night of Toronto's Chaos Theater. Gideon must not realize Ramona is in the band until they start playing"
       }
     ],
-    "source": "",
-    "author": "Ratcatcher",
-    "scope": "Standard",
+    "rewardType": "Other",
     "title": "Gals Panic",
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992793415165157436/9feccca35b57e82f768dede148df7428aa-brie-larson.2x.rsocial.w600.webp",
+    "loca": "Scott Pilgrim",
+    "scope": "Standard",
     "desc": "Scott Pilgrim's world is based on music and video games. Your mission is to form a band out of Scott's love interests and a couple other girls, and see them succeed.\nWait, where's the video game? It's Gals Panic, the name of the band!",
+    "source": "",
+    "objectives": [
+      {
+        "value": "Kill Gideon while he's gaping at your band",
+        "type": "Other",
+        "reward": "Full Corruption Defense or its equivalent in credits"
+      },
+      {
+        "reward": "Psychic Talent + 1000 credits",
+        "value": "Have Envy fall for you while she's dating Todd and live to tell the tale",
+        "type": "Other"
+      }
+    ],
+    "author": "Ratcatcher",
     "budget": 25,
     "uid": "86WW7"
   },
@@ -9416,11 +9709,11 @@
     "uid": "OthuR"
   },
   {
-    "reward": "Instant capture for Furinki Miu, 200 credits",
-    "budget": 400,
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992796443133890590/Screenshot_3.jpg",
     "loca": "History's Strongest Disciple Kenichi",
     "desc": "Furinji Miu is an amazing girl. Beautiful, flexible, agile, knows martial arts and can trounce a dozen yakuzas with ease, can cook, sew, and manage money, and she's amazing with children - in no small part because the martial arts masters she lives with have that kind of maturity. There's exactly one flaw in a potential relationship with her: you first have to defeat her grandfather in single combat, and he's called the Invincible Superman for a reason. Go, young contractor, go and woo her, and remember: Furinji Hayato doesn't kill.",
+    "scope": "Quick",
+    "source": "",
+    "budget": 400,
     "conditions": [
       {
         "value": "You are limited to Tier 7 for the mission. If you are stronger, you will be nerfed for the duration"
@@ -9432,12 +9725,13 @@
         "value": "You must win without killing Furinji Hayato"
       }
     ],
-    "scope": "Quick",
-    "objectives": [],
-    "source": "",
     "title": "Beat the grampa to get the waifu",
+    "reward": "Instant capture for Furinki Miu, 200 credits",
     "author": "Ratcatcher",
-    "uid": "Hdw18"
+    "uid": "Hdw18",
+    "rewardType": "Other",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992796443133890590/Screenshot_3.jpg",
+    "objectives": []
   },
   {
     "author": "Ratcatcher",
@@ -13405,64 +13699,64 @@
     "uid": "IkROA"
   },
   {
-    "source": "https://harrypotter.fandom.com/wiki/Ordinary_Wizarding_Level",
-    "conditions": [
-      {
-        "value": "You are a Hogwarts student."
-      }
-    ],
+    "title": "Ordinary Wizarding Level ",
     "desc": "An Ordinary Wizarding Level (often abbreviated to O.W.L.) is a standardized subject-specific test taken during the fifth year of school at Hogwarts. The score a student achieved on a particular O.W.L. determined whether or not they could continue taking the subject in subsequent school years. \nPass all your subjects with at least Acceptable.",
-    "budget": 31,
-    "rewardType": "Credits",
-    "loca": "Harry Potter - Hogwarts",
-    "uid": "xTpYU",
-    "reward": "30 Credits",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Strix-varia-005.jpg/1280px-Strix-varia-005.jpg",
-    "objectives": [
-      {
-        "reward": "10 Credits",
-        "type": "Credits",
-        "value": "Pass all your subjects with at least Exceeds Expectations."
-      },
-      {
-        "type": "Other",
-        "reward": "10 credits or \"Soul Talent\" or\"Talent Sharing\" for \"Soul Talent\".",
-        "value": "Pass all your subjects with at least Outstanding."
-      }
-    ],
-    "author": "Darnoc",
-    "scope": "Standard",
-    "title": "Ordinary Wizarding Level "
-  },
-  {
     "conditions": [
       {
         "value": "You are a Hogwarts student."
       }
     ],
-    "budget": 30,
+    "loca": "Harry Potter",
+    "budget": 31,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Strix-varia-005.jpg/1280px-Strix-varia-005.jpg",
+    "author": "Darnoc",
+    "reward": "30 Credits",
+    "source": "https://harrypotter.fandom.com/wiki/Ordinary_Wizarding_Level",
+    "scope": "Standard",
+    "rewardType": "Credits",
+    "uid": "xTpYU",
     "objectives": [
       {
-        "reward": "15 Credits",
         "value": "Pass all your subjects with at least Exceeds Expectations.",
+        "reward": "10 Credits",
         "type": "Credits"
       },
       {
-        "type": "Credits",
-        "reward": "15 Credits",
+        "reward": "10 credits or \"Soul Talent\" or\"Talent Sharing\" for \"Soul Talent\".",
+        "type": "Other",
         "value": "Pass all your subjects with at least Outstanding."
       }
-    ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Pleurodeles_waltl_BUD.jpg/1280px-Pleurodeles_waltl_BUD.jpg",
-    "desc": "A Nastily Exhausting Wizarding Test (often abbreviated N.E.W.T.) was a subject-specific exam that seventh-year witches and wizards at Hogwarts School of Witchcraft and Wizardry took to help them pursue certain careers after their graduation, so passing these exams was critical. \nPass all your subjects with at least Acceptable .",
-    "loca": "Harry Potter - Hogwarts",
-    "rewardType": "Credits",
-    "source": "https://harrypotter.fandom.com/wiki/Nastily_Exhausting_Wizarding_Test",
-    "scope": "Standard",
-    "reward": "40 Credits",
+    ]
+  },
+  {
     "author": "Darnoc",
+    "reward": "40 Credits",
+    "loca": "Harry Potter",
+    "conditions": [
+      {
+        "value": "You are a Hogwarts student."
+      }
+    ],
     "uid": "hem1u",
-    "title": "Nastily Exhausting Wizarding Test"
+    "budget": 30,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Pleurodeles_waltl_BUD.jpg/1280px-Pleurodeles_waltl_BUD.jpg",
+    "scope": "Standard",
+    "title": "Nastily Exhausting Wizarding Test",
+    "source": "https://harrypotter.fandom.com/wiki/Nastily_Exhausting_Wizarding_Test",
+    "desc": "A Nastily Exhausting Wizarding Test (often abbreviated N.E.W.T.) was a subject-specific exam that seventh-year witches and wizards at Hogwarts School of Witchcraft and Wizardry took to help them pursue certain careers after their graduation, so passing these exams was critical. \nPass all your subjects with at least Acceptable .",
+    "rewardType": "Credits",
+    "objectives": [
+      {
+        "type": "Credits",
+        "value": "Pass all your subjects with at least Exceeds Expectations.",
+        "reward": "15 Credits"
+      },
+      {
+        "reward": "15 Credits",
+        "value": "Pass all your subjects with at least Outstanding.",
+        "type": "Credits"
+      }
+    ]
   },
   {
     "conditions": [
@@ -13495,25 +13789,26 @@
     "loca": "Harry Potter"
   },
   {
-    "desc": "Hogwarts School of Witchcraft and Wizardry, often abbreviated as Hogwarts, is a British wizarding school in the Scottish Highlands.\nChildren with magical abilities are enrolled from birth, and admission was confirmed by owl post at the age of eleven. However, if the child was a Muggle child or a half-blood like Harry Potter, who knew nothing of the wizarding world, a member of the school staff would visit the child and his family to inform them of their magical heritage and the existence of the wizarding world. Become a Hogwarts student yourself and learn about magic.",
-    "uid": "pHKMO",
-    "source": "https://harrypotter.fandom.com/wiki/Hogwarts_School_of_Witchcraft_and_Wizardry",
     "title": "Schooltime",
-    "reward": "7 Credits or 1 Creature Defense ( you will need it there:) )",
-    "scope": "Quick",
-    "rewardType": "Other",
-    "author": "Darnoc",
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/990980553794785320/d6wp8kt-9fe02009-6ca9-4898-8495-f8a371c75f1b.jpg",
     "budget": 30,
+    "rewardType": "Other",
+    "desc": "Hogwarts School of Witchcraft and Wizardry, often abbreviated as Hogwarts, is a British wizarding school in the Scottish Highlands.\nChildren with magical abilities are enrolled from birth, and admission was confirmed by owl post at the age of eleven. However, if the child was a Muggle child or a half-blood like Harry Potter, who knew nothing of the wizarding world, a member of the school staff would visit the child and his family to inform them of their magical heritage and the existence of the wizarding world. Become a Hogwarts student yourself and learn about magic.",
+    "loca": "Harry Potter",
+    "reward": "7 Credits or 1 Creature Defense ( you will need it there:) )",
+    "conditions": [],
+    "scope": "Quick",
+    "author": "Darnoc",
+    "source": "https://harrypotter.fandom.com/wiki/Hogwarts_School_of_Witchcraft_and_Wizardry",
     "objectives": [
       {
+        "value": "Get assigned to Gryffindor by the Sorting Hat and join the House of Lions.",
         "reward": "7 credits or the \"Performance Talent\".",
-        "type": "Other",
-        "value": "Get assigned to Gryffindor by the Sorting Hat and join the House of Lions."
+        "type": "Other"
       },
       {
-        "type": "Other",
         "reward": "7 credits or the \"Communication Talent\".",
+        "type": "Other",
         "value": "Get assigned to Hufflepuff by the Sorting Hat and join the House of Badgers."
       },
       {
@@ -13523,12 +13818,11 @@
       },
       {
         "reward": "7 credits or the \"Covert Talent\".",
-        "value": "Get assigned to Slytherin by the Sorting Hat and join the House of Snakes.",
-        "type": "Other"
+        "type": "Other",
+        "value": "Get assigned to Slytherin by the Sorting Hat and join the House of Snakes."
       }
     ],
-    "loca": "Harry Potter - Hogwarts",
-    "conditions": []
+    "uid": "pHKMO"
   },
   {
     "author": "HeraldofGaia",

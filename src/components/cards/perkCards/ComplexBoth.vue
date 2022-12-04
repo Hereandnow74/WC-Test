@@ -30,7 +30,7 @@
                   label=""
                   class="self-center"
                   title="Add power"
-                  @click="addPower(startingOrigin.uid || 0)"
+                  @click="addPower(startingOrigin.uid || 0, startingOrigin.character || 'You')"
                 />
               </h3>
               <div v-for="power, i in powers[startingOrigin.uid || 0]" :key="i" class="flex gap-2">
@@ -78,14 +78,15 @@
                   label=""
                   class="self-center"
                   title="Add power"
-                  @click="addPower(companion.uid)"
+                  @click="addPower(companion.uid, companion.name)"
                 />
               </h3>
-              <div v-for="power, i in powers[companion.uid]" :key="i" class="flex gap-2">
+              <div v-for="power, i in powers[companion.uid]" id="complexPerks" :key="i" class="flex gap-2">
                 <CharacterInput
                   v-if="perk.title === 'Template Stacking I'"
                   :model-value="power.flavor"
                   :idd="'id'+companion.uid + i"
+                  append-id="complexPerks"
                   placeholder="Character / Race / Power name"
                   class="flex-grow"
                   error-message=""
@@ -190,9 +191,9 @@ function setHeight(event: Event) {
     event.target.style['max-height'] = `${event.target.clientWidth * 1.7 || 90}px`
 }
 
-function addPower(uid: number) {
-  if (powers[uid]) powers[uid].push({ target: '', uid: 0, flavor: '' })
-  else powers[uid] = [{ target: '', uid: 0, flavor: '' }]
+function addPower(uid: number, name: string) {
+  if (powers[uid]) powers[uid].push({ target: name, uid, flavor: '' })
+  else powers[uid] = [{ target: name, uid, flavor: '' }]
 }
 
 watch(showBuyPerk, () => lazyLoadImg(charList.value), { flush: 'post' })

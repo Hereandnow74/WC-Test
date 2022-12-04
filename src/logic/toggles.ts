@@ -1,5 +1,3 @@
-import { waifuTags } from '~/data/constants'
-
 export const isDark = useDark()
 export const toggleDark = useToggle(isDark)
 
@@ -45,7 +43,7 @@ export const activeTab = ref(0)
 export const andOr = ref(false)
 export const showDefenseTags = ref(false)
 
-export const tagToggles = reactive(Object.values(waifuTags).reduce((a, x) => { a[x.short] = 0; return a }, {} as Record<string, number>))
+export const tagToggles = reactive({})
 
 export function threeToggle(val: number) {
   switch (val) {

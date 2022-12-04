@@ -1,28 +1,16 @@
-import { count } from 'console'
-import { find, findIndex, intersection, intersectionWith, isArray, isEmpty, isObject, mergeWith, remove, sample, uniqBy } from 'lodash-es'
+import { find, findIndex, intersection, intersectionWith, isEmpty, isObject, remove, sample, uniqBy } from 'lodash-es'
 import { DLCPerk, Freebie, PerkFull } from 'global'
-import { shroudElements } from '~/data/binding'
-import { Heritage } from '~/data/heritage'
 import { Intensity } from '~/data/intensity'
 import { WaifuPerk } from '~/data/waifu_perks'
 import { useChallenges } from '~/store/challenges'
 import { usePlayStore } from '~/store/play'
-import { Perk, SavedChar } from '~/store/chargen'
+import { SavedChar } from '~/store/chargen'
 import { useStore } from '~/store/store'
 import { ALL_PERK_STORES, ALL_PERK_TITLES, useAllChars } from '~/data/constants'
 
-const {
-  allEffects, intensities, luresBought, binding, flags, allForSave, heritage,
-  ridePerks, homePerks, talentPerks, defensePerks, miscPerks, genericWaifuPerks, companions, startingOrigin,
-  waifuPerks, baseBudget, startingWorld, budgetMods, otherPerks, fee, specificMods, patron, pvpPerks, coupleOrigin,
-} = useStore()
-
-const { currentWorld, jumpChain, rdnWorld, loan, trHistory, missionRewards } = usePlayStore()
-
-const { activeChallenges } = useChallenges()
-
 // General functions
 export function deleteFreebies(freebies: object) {
+  const { allEffects, allForSave } = useStore()
   if (!freebies) return
   for (const [key, perks] of Object.entries(freebies) as [keyof typeof allForSave, Freebie[]][]) {
     perks.forEach((n: Freebie) => {
@@ -41,6 +29,7 @@ export function deleteFreebies(freebies: object) {
 }
 
 export function addFreebies(freebies: object) {
+  const { allEffects, allForSave } = useStore()
   if (!freebies) return
   for (const [key, perk] of Object.entries(freebies) as [keyof typeof allForSave, Freebie[]][]) {
     perk.forEach((freebie: Freebie) => {
@@ -62,6 +51,7 @@ export function addFreebies(freebies: object) {
 }
 
 export function deletePerk(perkList: Perk[], checkFunc: (arg: any) => boolean) {
+  const { allEffects, flags, fee } = useStore()
   const toDel = []
   for (let i = 0; i < perkList.length; i++) {
     const origPerk = ALL_PERK_TITLES.value[perkList[i].title]
@@ -108,6 +98,7 @@ function logPerkAddition(title: string, cost: number) {
 }
 
 export function pickSimplePerk(perk: PerkFull, saveData: Perk, isAvailable: (arg: any) => boolean, perks: Perk[]) {
+  const { allEffects, flags, fee } = useStore()
   if (isAvailable(perk)) {
     const ind = findIndex(perks, { title: perk.title })
     if (ind !== -1) {
@@ -133,6 +124,7 @@ export function pickSimplePerk(perk: PerkFull, saveData: Perk, isAvailable: (arg
 }
 
 export function simpleIsAvailable(perk: PerkFull) {
+  const { allEffects } = useStore()
   if (!perk.whitelist) return true
   if (perk.whitelist && intersection(allEffects.value, perk.whitelist).length >= (perk.needed || perk.whitelist.length))
     return true
@@ -141,6 +133,7 @@ export function simpleIsAvailable(perk: PerkFull) {
 
 // Intensity
 export function chooseIntensity(rule: Intensity, coopIntensity = 0, coopCount = 0) {
+  const { allEffects, flags, fee, intensities } = useStore()
   const ind = findIndex(intensities.value, { title: rule.title })
   if (ind !== -1) {
     const toDel = intensities.value.splice(ind, 1)[0]
@@ -169,6 +162,7 @@ export function chooseIntensity(rule: Intensity, coopIntensity = 0, coopCount = 
 }
 
 export function intensityAvailable(rule: Intensity): boolean {
+  const { allEffects, flags } = useStore()
   if (rule.chargen && !flags.value.chargen) return false
   if (intersection(rule.blacklist, allEffects.value).length) return false
   if (intersection(rule.whitelist, allEffects.value).length !== (rule.needed || rule.whitelist?.length || 0))
@@ -178,6 +172,7 @@ export function intensityAvailable(rule: Intensity): boolean {
 
 // Bindings
 export function chooseBinding(bin: PerkFull, saveData: Perk, checkFunc = bindingAvailable) {
+  const { allEffects, flags, fee, binding } = useStore()
   if (!checkFunc(bin)) return
   const ind = findIndex(binding.value, { title: bin.title })
   if (ind !== -1) {
@@ -210,6 +205,7 @@ export function chooseBinding(bin: PerkFull, saveData: Perk, checkFunc = binding
 }
 
 export function bindingAvailable(bin: PerkFull): boolean {
+  const { allEffects, flags, binding } = useStore()
   if (flags.value.noBindings && !bin.whitelist) {
     return true
   }
@@ -228,6 +224,7 @@ export function bindingAvailable(bin: PerkFull): boolean {
 
 // KYeJi wQZU5 qaVE7 8Q4UU
 export function symbioteAvailable(bin: PerkFull): boolean {
+  const { allEffects, flags, binding } = useStore()
   const larvaCount = binding.value.filter(x => ['KYeJi', 'wQZU5', 'qaVE7', '8Q4UU'].includes(x.uid)).length
   const larvaAvailable = binding.value.filter(x => ['LjU3E', 'EG3MX', 'ys3bz'].includes(x.uid)).length + 1
   if (!bin.whitelist && findIndex(binding.value, { title: bin.title }) !== -1)
@@ -248,7 +245,7 @@ export function symbioteAvailable(bin: PerkFull): boolean {
 
 // Lures
 export function chooseLure(lure: PerkFull, saveData: Perk) {
-  const { allEffects } = useStore()
+  const { allEffects, flags, fee, luresBought } = useStore()
   if (lureAvailable(lure)) {
     const ind = findIndex(luresBought.value, { title: lure.title })
     if (ind === -1) {
@@ -267,10 +264,12 @@ export function chooseLure(lure: PerkFull, saveData: Perk) {
 }
 
 export function chooseOther(other: PerkFull, saveData: Perk) {
+  const { otherPerks } = useStore()
   pickSimplePerk(other, saveData, lureAvailable, otherPerks.value)
 }
 
 export function lureAvailable(lure: PerkFull): boolean {
+  const { otherPerks, genericWaifuPerks } = useStore()
   if (lure.title === 'Strange Kind of Woman') {
     const truck = findIndex(otherPerks.value, { title: 'Space Truckin’' }) !== -1
     const tenPaper = findIndex(genericWaifuPerks.value, x => x.title === 'Paper Trail' && x.count && x.count >= 10) !== -1
@@ -280,9 +279,13 @@ export function lureAvailable(lure: PerkFull): boolean {
 }
 
 // Heritages
-const heritageTrees = computed(() => uniqBy(heritage.value, 'tree').map(x => x.tree).filter(x => x !== 'None'))
+const heritageTrees = computed(() => {
+  const { heritage } = useStore()
+  return uniqBy(heritage.value, 'tree').map(x => x.tree).filter(x => x !== 'None')
+})
 
 export function heritageAvailable(hr: Heritage): boolean {
+  const { heritage } = useStore()
   if ((heritageTrees.value.length === 0 || hr.title === 'Ancestral Diversity') && !hr.whitelist) { return true }
   else {
     if (heritageTrees.value.includes(hr.tree))
@@ -295,6 +298,7 @@ export function heritageAvailable(hr: Heritage): boolean {
 }
 
 export function chooseHeritage(hr: Heritage, saveData: Perk) {
+  const { allEffects, flags, fee, heritage } = useStore()
   if (heritageAvailable(hr)) {
     if (['Dragon God'].includes(saveData.title)) {
       pickSimplePerk(hr, saveData, heritageAvailable, heritage.value)
@@ -335,6 +339,7 @@ export function chooseHeritage(hr: Heritage, saveData: Perk) {
 // Rides
 
 export function rideAvailable(perk: Ride): boolean {
+  const { allEffects, flags } = useStore()
   if (perk.whitelist) {
     if (intersection(perk.whitelist, allEffects.value).length !== perk.whitelist.length)
       return false
@@ -344,6 +349,7 @@ export function rideAvailable(perk: Ride): boolean {
 }
 
 export function chooseRide(ride: Ride, selectedRide: Ride) {
+  const { flags, fee, ridePerks } = useStore()
   if (rideAvailable(ride)) {
     const ind = findIndex(ridePerks.value, { title: selectedRide.title })
     if (ind === -1) {
@@ -366,6 +372,7 @@ export function chooseRide(ride: Ride, selectedRide: Ride) {
 
 // Home Perks
 export function homeAvailable(home: PerkFull): boolean {
+  const { allEffects, flags, homePerks } = useStore()
   if (home.whitelist) {
     // TODO: Do it better
     if (home.whitelist[0].match(/\(\d+x\)/) && findIndex(homePerks.value, { count: 25 }) !== -1)
@@ -379,11 +386,13 @@ export function homeAvailable(home: PerkFull): boolean {
 }
 
 export function chooseHome(home: PerkFull, saveData: Perk) {
+  const { homePerks } = useStore()
   pickSimplePerk(home, saveData, homeAvailable, homePerks.value)
 }
 
 // Talents
 export function talentAvailable(tlt: PerkFull): boolean {
+  const { allEffects, talentPerks, defensePerks } = useStore()
   if (!tlt.whitelist) { return true }
   else {
     if (intersection(tlt.whitelist, allEffects.value).length >= (tlt.needed || tlt.whitelist.length))
@@ -398,6 +407,7 @@ export function talentAvailable(tlt: PerkFull): boolean {
 }
 
 export function chooseTalent(tlt: PerkFull, saveData: Perk) {
+  const { talentPerks } = useStore()
   // If talent are from freebies do not allow to sell it
   if (saveData.count === 0 && find(talentPerks.value, { title: saveData.title })?.cost === 0) return
   pickSimplePerk(tlt, saveData, talentAvailable, talentPerks.value)
@@ -409,6 +419,7 @@ export function defenseAvailable(def: PerkFull): boolean {
 }
 
 export function chooseDefense(def: PerkFull, saveData: Perk) {
+  const { allEffects, flags, fee, defensePerks } = useStore()
   if (defenseAvailable(def)) {
     const ind = findIndex(defensePerks.value, { title: def.title })
     if (ind !== -1) {
@@ -431,16 +442,19 @@ export function chooseDefense(def: PerkFull, saveData: Perk) {
 
 // Misc Perks
 export function miscAvailable(perk: PerkFull): boolean {
+  const { flags } = useStore()
   if (perk.chargen && !flags.value.chargen) return false
   return simpleIsAvailable(perk)
 }
 
 export function choosePerk(perk: PerkFull, saveData: Perk) {
+  const { miscPerks } = useStore()
   pickSimplePerk(perk, saveData, miscAvailable, miscPerks.value)
 }
 
 // Generic Waifu Perks
 export function genericAvailable(perk: PerkFull): boolean {
+  const { allEffects, flags } = useStore()
   if (!perk.whitelist) { return true }
   else {
     if (intersection(perk.whitelist, allEffects.value).length >= (perk.needed || perk.whitelist.length)) {
@@ -454,11 +468,13 @@ export function genericAvailable(perk: PerkFull): boolean {
 }
 
 export function chooseGenericPerk(perk: PerkFull, saveData: Perk) {
+  const { genericWaifuPerks } = useStore()
   pickSimplePerk(perk, saveData, genericAvailable, genericWaifuPerks.value)
 }
 
 // Specific Waifu Perks
 export function specificAvailable(perk: WaifuPerk): boolean {
+  const { companions, startingOrigin } = useStore()
   if (intersectionWith(companions.value, perk.waifuUID, (a, b) => {
     if (a.perk)
       return a.perk.uid === b
@@ -478,6 +494,7 @@ export function specificAvailable(perk: WaifuPerk): boolean {
 }
 
 export function chooseWaifuPerk(fullPerk: WaifuPerk, perk: Perk) {
+  const { waifuPerks, flags, fee } = useStore()
   const ind = findIndex(waifuPerks.value, { uid: perk.uid })
   if (ind !== -1) {
     const toDel = waifuPerks.value.splice(ind, 1)
@@ -521,6 +538,7 @@ export function removeAnyPerk(perkName: string, count = 1) {
 const { allCharsObject } = useAllChars()
 
 export function buyAnyCompanion(uid: number, price = -1, method: SavedChar['method'] = 'buy') {
+  const { companions } = useStore()
   const char = allCharsObject.value[uid]
   if (char) {
     const sex = (intersection(char.b, ['F', 'M', 'O'])[0] || 'F') as 'F' | 'M' | 'O'
@@ -531,12 +549,23 @@ export function buyAnyCompanion(uid: number, price = -1, method: SavedChar['meth
 }
 
 export function removeAnyCompanion(uid: number) {
+  const { companions } = useStore()
   const ind = findIndex(companions.value, { uid })
   if (ind !== -1)
     companions.value.splice(ind, 1)
 }
 
 export function clearAll() {
+  const {
+    allEffects, intensities, luresBought, binding, flags, heritage,
+    ridePerks, homePerks, talentPerks, defensePerks, miscPerks, genericWaifuPerks, companions, startingOrigin,
+    waifuPerks, baseBudget, startingWorld, budgetMods, otherPerks, fee, specificMods, patron, pvpPerks, coupleOrigin,
+  } = useStore()
+
+  const { currentWorld, jumpChain, rdnWorld, loan, trHistory, missionRewards } = usePlayStore()
+
+  const { activeChallenges } = useChallenges()
+
   baseBudget.value = 0
   startingWorld.value = {
     worldName: 'No World',
@@ -604,6 +633,16 @@ export function clearAll() {
 }
 
 export function writeBuildValues(build: any) {
+  const {
+    allEffects, intensities, luresBought, binding, flags, heritage,
+    ridePerks, homePerks, talentPerks, defensePerks, miscPerks, genericWaifuPerks, companions, startingOrigin,
+    waifuPerks, baseBudget, startingWorld, budgetMods, otherPerks, fee, specificMods, patron, pvpPerks, coupleOrigin,
+  } = useStore()
+
+  const { jumpChain, loan, missionRewards } = usePlayStore()
+
+  const { activeChallenges } = useChallenges()
+
   clearAll()
   baseBudget.value = build.baseBudget || 0
   startingWorld.value = build.startingWorld
@@ -639,6 +678,15 @@ export function writeBuildValues(build: any) {
 }
 
 export const saveObject = computed(() => {
+  const {
+    allEffects, intensities, luresBought, binding, flags, heritage,
+    ridePerks, homePerks, talentPerks, defensePerks, miscPerks, genericWaifuPerks, companions, startingOrigin,
+    waifuPerks, baseBudget, startingWorld, budgetMods, otherPerks, fee, specificMods, patron, pvpPerks, coupleOrigin,
+  } = useStore()
+
+  const { jumpChain, loan, missionRewards } = usePlayStore()
+
+  const { activeChallenges } = useChallenges()
   return {
     baseBudget: baseBudget.value,
     startingWorld: startingWorld.value,

@@ -7,6 +7,14 @@
     <div title="Edit Mission" class="text-lg hover:text-orange-500 cursor-pointer flex items-center gap-1 absolute top-1 right-1" @click="showEditCompanion">
       <bx:bxs-edit />
     </div>
+    <div class="hover:(text-red-400) text-lg cursor-pointer flex items-center gap-1 absolute top-1 left-1" title="Add to Favorites" @click="missionFavoritesSet.has(mission.uid) ? missionFavorites.splice(missionFavorites.indexOf(mission.uid), 1) : missionFavorites.push(mission.uid)">
+      <span class="text-red-500">
+        <ci:heart-fill
+          v-if="missionFavoritesSet.has(mission.uid)"
+        />
+        <ci:heart-outline v-else />
+      </span>
+    </div>
     <img
       v-if="mission.image && settings.perkImages"
       ref="imageEl"
@@ -90,10 +98,12 @@ import { Mission } from 'global'
 import type { PropType } from 'vue'
 import { lazyLoadSingleImg } from '~/logic'
 import { usePlayStore } from '~/store/play'
+import { useSaves } from '~/store/saves'
 import { useStore } from '~/store/store'
 
 const { settings } = useStore()
 const { missionRewards } = usePlayStore()
+const { missionFavorites } = useSaves()
 
 defineProps({
   mission: {
@@ -105,6 +115,8 @@ defineProps({
 const imageEl = ref(null)
 const showTakeMission = ref(false)
 const showEditMission = ref(false)
+
+const missionFavoritesSet = computed(() => new Set(missionFavorites.value))
 
 onMounted(() => { if (imageEl.value) lazyLoadSingleImg(imageEl.value) })
 

@@ -2241,7 +2241,7 @@
         "rating": 9
       },
       {
-        "name": "Teen Titians (Animated series)",
+        "name": "Teen Titans (Animated series)",
         "rating": 7
       },
       {
@@ -2420,20 +2420,37 @@
     "worldName": "Dragonball",
     "condition": [
       {
-        "rating": 7,
-        "name": "Saiyans Attack"
+        "rating": 5,
+        "name": "Classic Adventure",
+        "a": "c"
+      },
+      {
+        "rating": 9,
+        "name": "Start of Saiyan Saga",
+        "a": "c"
+      },
+      {
+        "rating": 10,
+        "name": "Start of Android Saga",
+        "a": "c"
+      },
+      {
+        "rating": 10,
+        "name": "GT",
+        "a": "c"
+      },
+      {
+        "rating": 10,
+        "name": "Super",
+        "a": "c"
       },
       {
         "name": "Androids Awaken",
-        "rating": 8
+        "rating": 9
       },
       {
         "rating": 10,
         "name": "Majin Buu unsealed"
-      },
-      {
-        "name": "Original Adventure",
-        "rating": 5
       },
       {
         "name": "Ressurection F",

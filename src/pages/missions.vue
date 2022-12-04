@@ -46,6 +46,14 @@
         <div>
           <Select v-model="scope" :options="scopeOptions" label="Scope" />
         </div>
+        <div class="hover:(text-red-400) text-lg cursor-pointer flex items-center gap-1" title="Filter by favorites" @click="(filterByFavorites = !filterByFavorites)">
+          <span class="text-red-500">
+            <ci:heart-fill
+              v-if="filterByFavorites"
+            />
+            <ci:heart-outline v-else />
+          </span>
+        </div>
         <Button v-if="Object.values(missionRewards).length" size="Small" label="Delete all rewards" bg-color="bg-red-600" @click="missionRewards = {}" />
       </div>
     </div>
@@ -54,6 +62,9 @@
     </Note>
     <div ref="missionWrapper" class="grid 2xl:grid-cols-3 lg:grid-cols-2 gap-4 pb-8 justify-center overflow-y-auto scrollbar">
       <MissionCard v-for="mission in displayedMissions" :key="mission.uid" class="max-w-[600px]" :mission="mission" />
+      <div v-if="!displayedMissions.length">
+        No results matching your filter settings
+      </div>
     </div>
     <div class="h-8"></div>
   </div>
@@ -67,8 +78,13 @@ import { groupBy, sample } from 'lodash-es'
 import { toggleShowAddMission } from '~/logic'
 import { MissionGenerator } from '~/logic/missionsGen'
 import { usePlayStore } from '~/store/play'
+import { useSaves } from '~/store/saves'
 
 const { currentWorld, missionRewards } = usePlayStore()
+const { missionFavorites } = useSaves()
+
+const filterByFavorites = ref(false)
+
 const missions = ref<Mission[]>([])
 
 const missionWrapper = ref<HTMLElement>(null)
@@ -147,7 +163,7 @@ watch([world, scope, author], () => {
     options.shouldSort = false
 })
 
-const filteredMissions = computed(() => searchedMissions.value.map(x => x.item))
+const filteredMissions = computed(() => searchedMissions.value.map(x => x.item).filter(x => filterByFavorites.value ? missionFavorites.value.includes(x.uid) : true))
 
 const gen = new MissionGenerator()
 const gen2 = new MissionGenerator()

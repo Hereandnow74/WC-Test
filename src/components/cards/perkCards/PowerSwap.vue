@@ -5,7 +5,7 @@
     </template>
     <template #underDesc>
       <Modal v-if="showBuyPerk" label="Power Swap" @click="showBuyPerk = false">
-        <div ref="charList" class="min-h-0 overflow-y-auto max-h-[75vh] scrollbar grid md:grid-cols-2 gap-2 p-1">
+        <div id="powerSwap" ref="charList" class="min-h-0 overflow-y-auto max-h-[75vh] scrollbar grid md:grid-cols-2 gap-2 p-1">
           <div class="flex gap-2 w-full rounded bg-gray-300 dark:bg-gray-800 p-1">
             <img
               :data-src="startingOrigin.image || '/img/Contractor.jpg'"
@@ -66,6 +66,7 @@
               <CharacterInput
                 :model-value="companion.swap?.name"
                 :idd="'id'+companion.uid"
+                append-id="powerSwap"
                 placeholder="Character name"
                 class="flex-grow"
                 error-message=""

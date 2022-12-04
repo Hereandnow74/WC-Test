@@ -71,7 +71,7 @@ const talentsDLC = computed(() => !settings.value.allChosenAuthors[0]
 
 const talentsList = computed(() => {
   const shareable = ['Athletic Talent', 'Martial Talent', 'Wild Talent', 'Science Talent', 'Engineering Talent', 'Aesthetic Talent',
-    'Communication Talent', 'Performance Talent', 'Soul Talent', 'Blessed Talent', 'Psychic Talent',
+    'Communication Talent', 'Performance Talent', 'Soul Talent', 'Blessed Talent', 'Psychic Talent', 'Land Talent',
     'Covert Talent', 'Sticky Fingers', 'Money Talent', 'Presence', 'Educational Talent', 'Inculcation Talent']
   return intersection(allEffects.value, shareable).map(x => ({ flavor: x }))
 })

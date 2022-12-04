@@ -794,7 +794,7 @@ perks.push({
   title: 'Warranty Plan',
   category: 'Misc',
   image: 'https://i.ibb.co/Mp0vpwj/Warranty-Plan.jpg',
-  cost: 200,
+  cost: 160,
   additionalDesc: `
   For the purpose of this perk, an "amazon" is:
 <ul class="list-upper-alpha list-inside">
@@ -807,12 +807,24 @@ perks.push({
 </ul>
   `,
   desc: `
-<p>Any purchased or captured retinue member who dies on you will be re-delivered to you at no additional cost. This perk will not help if you die, even if you took the Substitute or Possess origins. The default respawn time for your waifus is 72 hours. Respawned waifus will retain all of their previous incarnation’s memories, including anything related to their previous incarnation’s cause of death, except for some minor trauma reduction. All relevant effects of Lures, Binds, Perks, and waifu perks will be re-applied before shipment. If you have Everlasting Talent, characters whom you’ve blacklisted from it will be considered expendable and their automatic respawn will likewise be disabled; you may still trigger it manually.,</p>
-<p>Each amazon you purchase or capture will reduce the respawn timer by 1 hour, to a soft limit of 48 hours. Additional amazons in your retinue after the first 24 will still decrease the timer, but are subject to diminishing returns: each additional 24 will only reduce the timer by another third, indefinitely.</p>
-<p>If a waifu has a soulbound artifact along the lines of an Exaltation or Sacred Gear, an exact duplicate of the artifact will be produced for her specifically, and persist through respawns, and the original one released back into the waifu’s homeworld; you will also benefit from this feature if one of your retinue members resurrects you with their own abilities.</p>
-<p>If a waifu you’ve Stamped dies before the full tattoo can complete, the company will send you a fresh copy of her, free of charge. This is not affected by the amazon respawn bonus above. This death must occur through no fault of your own: any intentionality to the individual’s death on your part, including both deliberate action and knowing inaction, but not unintended consequences from deliberate action, will void that individual’s warranty.</p>
-<p>If one of your waifus is merely mission-killed in a way that’s prohibitively difficult to undo (petrified, stuck in a black hole, etc.), an option in the company app will let you actually-kill her current body and force a respawn.</p>
+<p>Any purchased or captured subject who dies on you will be re-delivered to you at no additional cost. This perk will not help if you die, even if you took the Substitute or Possess origins. The default respawn time for your subjects is 90 days (2160 hours). Respawned subjects will retain all of their previous incarnation’s memories, including anything related to their previous incarnation’s cause of death, except for some minor trauma reduction. All relevant effects of Lures, Binds, Perks, and waifu perks will be re-applied before shipment. If you have Everlasting Talent, characters whom you’ve blacklisted from it will be considered expendable and their automatic respawn will likewise be disabled; you may still trigger it manually.</p>
+<p>Each amazon you purchase or capture will reduce the respawn timer by 1 day (24 hours), to a soft limit of 60 days. Additional amazons in your retinue after the first 30 will still decrease the timer, but are subject to Diminishing Returns. See the appropriate section in Additional Rules for details.</p>
+<p>If a subject has a soulbound artifact along the lines of an Exaltation or Sacred Gear, an exact duplicate of the artifact will be produced for her specifically, and persist through respawns, while the original one released back into the waifu’s homeworld. You will also benefit from this feature, if one of your subjects resurrects you with their own abilities.</p>
+<p>If a subject you’ve Stamped dies before the full tattoo can complete, the company will send you a fresh copy, free of charge. This is not affected by the amazon respawn bonus above. This death must occur through no fault of your own: any intentionality to the individual’s death on your part, including both deliberate action and knowing inaction, but not unintended consequences from deliberate action, will void that individual’s warranty.</p>
+<p>If one of your subjects is merely mission-killed in a way that’s prohibitively difficult to undo (petrified, stuck in a black hole, etc.), an option in the company app will let you actually-kill their current body and force a respawn.</p>
 `,
+})
+
+perks.push({
+  uid: '4qh4k',
+  title: 'Express Delivery',
+  category: 'Misc',
+  image: '',
+  cost: 640,
+  desc: `
+<p>You are now on the priority list for warranty resurrections. The default respawn time for your subjects is now only 72 hours. Each amazon you purchase or capture will reduce the timer by 1 hour, to a soft limit of 48 hours. Additional amazons in your retinue after the first 24 will still decrease the timer, but are subject to Diminishing Returns.</p>
+`,
+  whitelist: ['Warranty Plan'],
 })
 
 // Generic Waifu Perks

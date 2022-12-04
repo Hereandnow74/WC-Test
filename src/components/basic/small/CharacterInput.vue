@@ -43,6 +43,10 @@ const props = defineProps({
     type: String,
     default: 'Char Name',
   },
+  appendId: {
+    type: String,
+    default: '',
+  },
 })
 
 const listEl = ref<HTMLElement|null>(null)
@@ -56,26 +60,29 @@ const { charSearch } = useCharSearch()
 
 watch(value, () => { if (charSearch.value && value.value.length <= 10) searchResult.value = charSearch.value.search(value.value, { limit: 10 }) })
 
-const charTippy = computed(() => {
+let charTippy = null
+function createTippy() {
   listEl.value.hidden = false
   const list = tippy(`#${props.idd}`, {
-    content: listEl.value,
+    content: listEl.value?.innerHTML,
     allowHTML: true,
     trigger: 'manual',
     arrow: false,
     interactive: true,
     placement: 'bottom',
-    appendTo: () => document.body,
+    appendTo: () => props.appendId ? document.getElementById(props.appendId) : document.body,
   })[0]
   return list
-})
+}
 
 watch(searchResult, () => {
+  if (!charTippy)
+    charTippy = createTippy()
   if (searchResult.value.length > 0 && listEl.value && !gotResult.value) {
-    charTippy.value.setContent(listEl.value)
-    charTippy.value.show()
+    charTippy.setContent(listEl.value)
+    charTippy.show()
   }
-  else { charTippy.value.hide() }
+  // else { charTippy.hide() }
   gotResult.value = false
 })
 
@@ -90,7 +97,7 @@ watch(value, () => {
 function chooseChar(char: any) {
   gotResult.value = true
   alreadySent.value = true
-  if (charTippy.value) charTippy.value.hide()
+  if (charTippy) charTippy.hide()
   value.value = char.item.n
   emit('updateTier', char.item.t)
   emit('updateUID', char.item.u)
@@ -98,6 +105,6 @@ function chooseChar(char: any) {
 }
 
 function showTip() {
-  if (charTippy.value) charTippy.value.show()
+  if (charTippy) charTippy.show()
 }
 </script>

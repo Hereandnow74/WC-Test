@@ -1,16 +1,23 @@
 <template>
   <div class="p-2">
     <template v-if="settings.allChosenAuthors[0] !=='all' && !settings.allChosenAuthors.includes('Mortaegus’s Mod')">
-      <h2 class="text-2xl text-center flex flex-col">
-        <span class="font-semibold">Patron Overhaul V. 1.0</span>
+      <h3 class="text-2xl text-center flex flex-col">
+        <a class="hover:underline" href="https://docs.google.com/document/d/1ETbNQt4mcekIh1VWPEJ6K2vbVguAzZmgkGaxQjMuQ2s/edit#" target="_blank" rel="noopener noreferrer"><span class="font-semibold">Patron Overhaul V. 1.0</span></a>
         <span class="text-base">By Rhivan, DepressedAlucard, and Despin</span>
-      </h2>
+      </h3>
       <Note class="my-4 max-w-screen-md mx-auto" type="info" title="Info">
-        This is a rework of the original Patrons idea by Mortaegus that can be found <router-link class="text-blue-700 dark:text-blue-300 underline" to="/origin/patronOld">
+        This is a rework of the original Patrons DLC idea by Mortaegus that can be found <router-link class="text-blue-700 dark:text-blue-300 underline" to="/origin/patronOld">
           here
         </router-link>
       </Note>
-      <Desc class="p-2 bg-gray-200 dark:bg-teal-900 max-w-4xl mx-auto my-4" :desc="intro" />
+
+      <Desc class="p-2 bg-gray-200 dark:bg-teal-900 max-w-4xl mx-auto my-4 italic" :desc="patronIntro" />
+
+      <div class="mb-4 max-w-4xl mx-auto">
+        <Desc class="bg-amber-200 text-gray-800 text-sm w-2/5 float-right mt-4 mx-2 border-3 border-gray-900" :desc="patronNote" />
+        <Desc class="p-2 bg-gray-200 dark:bg-teal-900 max-w-4xl mx-auto my-4" :desc="intro" />
+      </div>
+
       <div
         class="column-gap pb-8"
         :class="settings.columns !== 'auto' ? `column-count-${settings.columns}` : 'md:column-count-2 xl:column-count-3 4xl:column-count-4 5xl:column-count-5'"
@@ -35,7 +42,7 @@ import { findIndex } from 'lodash'
 import { useTooltips } from '~/logic/misc'
 import { useStore } from '~/store/store'
 
-import { intro, patrons } from '~/data/patronsRework'
+import { intro, patrons, patronNote, patronIntro } from '~/data/patronsRework'
 
 const { settings, patron } = useStore()
 
@@ -45,11 +52,13 @@ function choosePatron(pt: typeof patrons[0], saveInfo: {title: string; cost: num
   if (!patronAvailable(pt)) return
   const ind = findIndex(patron.value, { title: pt.title })
   if (ind !== -1) {
-    pt.effect.remove()
+    if (pt.effect?.remove)
+      pt.effect.remove()
     patron.value.splice(ind, 1)
   }
   else {
-    pt.effect.set()
+    if (pt.effect?.set)
+      pt.effect.set()
     patron.value.push(saveInfo)
   }
 }

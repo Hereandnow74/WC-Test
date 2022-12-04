@@ -1,6 +1,6 @@
 <template>
   <Modal label="Filter by Tag" class="bg-warm-gray-800">
-    <div class="bg-warm-gray-800 flex flex-col min-h-0 max-h-[85vh]">
+    <div class="bg gray-300 dark:bg-warm-gray-800 flex flex-col min-h-0 max-h-[85vh]">
       <div class="mx-4 flex gap-2 flex-wrap">
         <Button
           size="Small"
@@ -9,7 +9,7 @@
           class="whitespace-nowrap"
           @click="clearAll"
         />
-        <Toggle v-model="onlyDefense" label="Only defense discount tags" />
+        <Select v-model="tagCategory" :options="['All', ...tagCategories]" />
         <Toggle v-model="fullTags" label="Full" />
         <Toggle v-model="showOfficial" label="Show users tags" />
         <div class="flex gap-1">
@@ -50,7 +50,7 @@
             :key="tag.tag"
             :tag="tag"
             :on-the-list="true"
-            @click="tagToggles[tag.short] = threeToggle(tagToggles[tag.short])"
+            @click="tagToggles[tag.short] = threeToggle(tagToggles[tag.short] || 0)"
           />
         </template>
 
@@ -69,12 +69,12 @@
 </template>
 
 <script lang='ts' setup>
-import { waifuTags, useAllChars, defTags } from '~/data/constants'
+import { waifuTags, useAllChars, defTags, tagCategories } from '~/data/constants'
 import { tagToggles, threeToggle, andOr } from '~/logic'
 
 const { tagsCount } = useAllChars()
 
-const onlyDefense = ref(false)
+const tagCategory = ref('All')
 const fullTags = ref(false)
 const showOfficial = ref(false)
 
@@ -83,7 +83,7 @@ function clearAll() {
 }
 
 const allTagsFiltered = computed(() => {
-  return Object.values(waifuTags).filter(tag => onlyDefense.value ? defTags.includes(tag.short) : true).sort((a, b) => a.tag.localeCompare(b.tag))
+  return Object.values(waifuTags).filter(tag => tagCategory.value !== 'All' ? tag.category === tagCategory.value : true).sort((a, b) => a.tag.localeCompare(b.tag))
 })
 
 </script>

@@ -3934,7 +3934,7 @@
     "image": "https://i.ibb.co/qmk5rby/spvw-header-art-v7.webp"
   },
   {
-    "worldName": "Terraformars",
+    "worldName": "TerraforMARS",
     "rating": 5,
     "image": "https://sucodemanga.com.br/wp-content/uploads/2018/04/terra-formars-thumb.jpg"
   },
@@ -5153,6 +5153,7 @@
   },
   {
     "worldName": "Nioh",
+    "additional": "Like any other Souls-like empowerment system, the company ensures you gain the appropriate resource, in this case the local material called Amrita, from whatever enemies you defeat in combat. Alongside being harvestable from beaten enemies, you are able to extract and trade Amrita with others. Amrita takes the form of an orange-gold crystal reminiscent of Quartz and Amber in its default state, and could be confused with others.",
     "rating": 5,
     "image": "https://i.imgur.com/kfVIc7R.jpeg",
     "condition": [
@@ -5390,5 +5391,8 @@
   {"worldName":"Star Vs. The Forces of Evil","rating":5,"image":"https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/6777E47B4FC7F996E1526C2D679CB683FAFA6D69BCDACBA6E0D5257DEDAC16D3/scale?width=1200&aspectRatio=1.78&format=jpeg"},
   {"worldName":"The Amazing World of Gumball","rating":4,"image":"https://tvline.com/wp-content/uploads/2021/09/amazing-world-of-gumball.jpg?w=620"},
   {"worldName":"Chaos","rating":7,"image":"https://bloody-disgusting.com/wp-content/uploads/2014/03/Chaos_Comics_Characters.jpg"},
-  {"worldName":"The Simpsons","rating":4,"image":"https://cdn.vox-cdn.com/thumbor/IQab79SuQ1PnrneGti_uy_pxTKo=/148x0:1768x1080/1280x854/cdn.vox-cdn.com/uploads/chorus_image/image/47413330/the-simpsons-tv-series-cast-wallpaper-109911.0.0.jpeg"}
+  {"worldName":"The Simpsons","rating":4,"image":"https://cdn.vox-cdn.com/thumbor/IQab79SuQ1PnrneGti_uy_pxTKo=/148x0:1768x1080/1280x854/cdn.vox-cdn.com/uploads/chorus_image/image/47413330/the-simpsons-tv-series-cast-wallpaper-109911.0.0.jpeg"},
+  {"worldName":"Hotel Transylvania","rating":3,"image":"https://static01.nyt.com/images/2022/01/13/arts/13hotel-transylvania-review/13hotel-transylvania-review-videoSixteenByNine3000.jpg"},
+  {"worldName":"Maji de Watashi ni Koi Shinasai!!","rating":5},
+  {"worldName":"Seiken Tsukai no World Break","rating":6,"image":"https://yaranakya.files.wordpress.com/2015/12/seiken-tsukai.png","condition":[{"name":"Anime Continuity","rating":6}]}
 ]

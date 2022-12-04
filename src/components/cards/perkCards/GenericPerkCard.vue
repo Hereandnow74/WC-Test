@@ -33,12 +33,13 @@
     <div v-if="perk.special" class="mx-2">
       Special: <span class="text-purple-500 dark:text-purple-300">{{ perk.special }}</span>
     </div>
-    <div>
+    <div class="relative">
       <slot name="beforeDesc" />
       <Desc v-if="(!settings.hideDesc && !collapsedDescsSet.has(perk.uid)) || expand" :desc="perk.desc" />
       <div v-else class="text-center hover:underline cursor-pointer text-gray-700 dark:text-gray-300 flex items-center justify-center" @click.stop="expand = true">
         Expand description <entypo:triangle-down />
       </div>
+      <bi:arrows-collapse class="absolute top-3 -left-1 w-4 h-4 hover:text-lime-500" @click.stop="collapse" />
       <slot name="underDesc" />
     </div>
     <div v-if="perk.requires" class="mx-2">

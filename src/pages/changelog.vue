@@ -6,12 +6,15 @@
       </h2>
       <div>
         <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
-          xx November 2022
+          01 December 2022
         </h3>
         <ul class="list-decimal list-inside">
-          <li>~60 new user submitted characters, new worlds and missions.</li>
+          <li>~190 new user submitted characters, new worlds and missions.</li>
+          <li>Warranty Plan split into 2 perks.</li>
+          <li>You now can filter missions by favorite</li>
           <li>Custom setting for number of columns of companions.</li>
-          <li>Patron rework (Only text so far)</li>
+          <li>Patron rework added.</li>
+          <li>Several Specific Waifu Perks by DepressedAlucard added</li>
           <li>Bugfixes & small changes</li>
         </ul>
       </div>

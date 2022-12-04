@@ -93,15 +93,15 @@
           :class="{'opacity-100': inFocus}"
         >
           <template v-if="!isAlreadyBought(charData.uid)">
-            <Button size="Small" bg-color="bg-red-500" label="buy" @click="buyCompanion(char)" />
+            <Button v-if="canPurchase" size="Small" bg-color="bg-red-500" label="buy" @click="buyCompanion(char)" />
             <Button
-              v-if="flags.chargen"
+              v-if="(flags.chargen && canPurchase)"
               size="Small"
               bg-color="bg-orange-500"
               label="yoink"
               @click="yoinkCompanion(charData)"
             />
-            <Button size="Small" bg-color="bg-violet-600" label="used" @click="usedModal = true" />
+            <Button v-if="canPurchase" size="Small" bg-color="bg-violet-600" label="used" @click="usedModal = true" />
             <Button class="whitespace-nowrap" size="Small" :label="`capture${charCost}`" @click="captureCompanion(charData)" />
           </template>
           <template v-else>
@@ -223,6 +223,7 @@ import { findIndex, intersection, random } from 'lodash-es'
 import { CHAR_COSTS, defTags, PLACEHOLDER_NO_IMAGE, useAllChars, waifusThatHasPerk, waifuTags, nicknames } from '~/data/constants'
 import { lazyLoadSingleImg, tagToggles, showDefenseTags, imageLink } from '~/logic'
 import { buyCompanion, captureCompanion, yoinkCompanion, slightlyCompanion } from '~/logic/waifuLogic'
+import { useGlobalSettings } from '~/store/settings'
 import { useStore } from '~/store/store'
 
 const props = defineProps({
@@ -260,6 +261,7 @@ const {
   flags, companions, localUserCharacters, companionsUIDs, captureKoeff, favorites,
   settings, favoritesObject,
 } = useStore()
+const { canPurchase } = useGlobalSettings()
 
 const { changes } = useAllChars()
 
