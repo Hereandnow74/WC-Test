@@ -1,11 +1,229 @@
 [
   
   {
+    "author": "SittingBear",
+    "image": "https://i.pinimg.com/originals/54/da/e9/54dae90405dcb86fa09735f93eb811c5.jpg",
+    "source": "",
+    "loca": "Undertale",
+    "scope": "Grand",
+    "objectives": [
+      {
+        "value": "True Pacifist run",
+        "reward": "Every single Monster Underground becomes your companion.",
+        "type": "Companions"
+      },
+      {
+        "value": "True Genocide Run",
+        "type": "TX Tickets",
+        "reward": "A single TX Ticket you monster in all but name"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You must survive the underground and reach the end."
+      }
+    ],
+    "title": "The Undertale Experience",
+    "reward": "Demiplane of the Underground",
+    "desc": "Long ago humans and monsters lived on this earth until the humans forced them underground. Now Trapped you go up to mount Ebott and head underground. Will they live or will they die as you go through the underground to meet or kill them? It is up to you as you experience the Undertale",
+    "budget": 1,
+    "rewardType": "Other",
+    "uid": "XnRKu"
+  },
+  {
+    "reward": "2000",
+    "scope": "Grand",
+    "rewardType": "Credits",
+    "conditions": [
+      {
+        "value": "Chargen only."
+      },
+      {
+        "value": "Substitute as Ash at the beginning of his voyage, Tier reduced to 2 due his lack of experience."
+      },
+      {
+        "value": "You must seduce Misty, May, Dawn, Iris, Serena, and Lillie, and achieve Capture by Confession for each of them."
+      },
+      {
+        "value": "Also, you must complete his voyages and solve the same crisis he solved. You can win the tournaments he lost, if you manage it."
+      }
+    ],
+    "image": "https://cdn.donmai.us/original/9b/58/__pikachu_dawn_may_ash_ketchum_serena_and_11_more_pokemon_and_7_more_drawn_by_mushi_gyouza__9b5897cf0f71dbf15d78415f57e1d937.png",
+    "desc": "Ash Ketchum gets shipped with every girl he travels with, though he rarely if ever shows any interest in romance - and the girls DO seem interested in him in some way. Wanna take his place and take advantage of that?",
+    "budget": 85,
+    "loca": "Pokemon",
+    "source": "",
+    "objectives": [
+      {
+        "type": "Companions",
+        "value": "Seduce Giselle",
+        "reward": "Instant Capture of Giselle"
+      },
+      {
+        "value": "Capture the Gastly of Maiden's Peak",
+        "type": "TX Tickets",
+        "reward": "1"
+      },
+      {
+        "type": "Perks",
+        "value": "Capture Jessie and James",
+        "reward": "Unison for you and all your current companions"
+      },
+      {
+        "type": "Other",
+        "value": "Seduce Gary's Cheerleaders",
+        "reward": "Two Heritage levels"
+      }
+    ],
+    "author": "Ratcatcher",
+    "title": "Gotta Do 'Em All",
+    "uid": "GGPWA"
+  },
+  {
+    "loca": "The Boys",
+    "author": "Everythingman101",
+    "desc": "The Seven are a group of legendary superheroes owned and managed by Vought International. They are believed to be the epitome of good in the world, time to proof that assumption wrong.",
+    "rewardType": "Credits",
+    "reward": "200",
+    "budget": 140,
+    "objectives": [
+      {
+        "type": "Companions",
+        "reward": "Gain Starlight as companion",
+        "value": "Capture or get starlight to peacefully join you"
+      },
+      {
+        "type": "Companions",
+        "value": "Capture or get Queen Maeve to peacefully join you",
+        "reward": "Gain Queen Maeve as Companion"
+      },
+      {
+        "value": "Prove to the world that Vought and their heroes are corrupt",
+        "type": "Credits",
+        "reward": "50"
+      }
+    ],
+    "scope": "Quick",
+    "conditions": [
+      {
+        "value": "No TX Companions can be used"
+      }
+    ],
+    "source": "",
+    "image": "https://i.imgur.com/mAe0xf3.jpg",
+    "title": "Fall of The Seven",
+    "uid": "pgyjD"
+  },
+  {
+    "image": "",
+    "objectives": [
+      {
+        "type": "Credits",
+        "reward": "5 Credits plus a glass bottle filled with Your Milk (after a 7 day streak you get limited to a daily replenishing bottle per Max Work Bodies at one time)",
+        "value": "Spend Final Hour as a 'Cow' in the Cow Room (where you may grab the eye of a Minotaur)"
+      },
+      {
+        "type": "Credits",
+        "reward": "5 Credits and the Sub Package from your first time there",
+        "value": "Spend Final Hour as a Sub in the D&S Room (note that you will be compelled to follow orders even if you wouldn't outside the room)"
+      },
+      {
+        "value": "Spend Final Hour as a Domme in the D&S Room (note you will be compelled to follow the script of the client and will never deviate from it)",
+        "type": "Credits",
+        "reward": "5 Credits and the Domme Package from your first visit there"
+      },
+      {
+        "value": "Spend Final Hour as the Bound in the B&D Room",
+        "reward": "8 Credits and a Bondage Dungeon in all your properties (added magically if needed and only in your Home in your Demiplane) unless you already have it",
+        "type": "Credits"
+      },
+      {
+        "type": "Credits",
+        "value": "Spend Final Hour as the Binder in the B&D Room",
+        "reward": "8 Credits and a Bondage Dungeon in all your properties (added magically if needed and only in your Home in your Demiplane) unless you already have it"
+      },
+      {
+        "reward": "10 Credits and the Sadist Package from your first time there",
+        "type": "Credits",
+        "value": "Spend Final Hour as the Sadist in the S&M Room (note you will be compelled to follow the client's script)"
+      },
+      {
+        "value": "Spend Final Hour as the Masochist in the S&M Room (note you will be compelled to follow the client's script and there will be no pain relief until after the session)",
+        "reward": "10 Credits",
+        "type": "Credits"
+      },
+      {
+        "type": "Credits",
+        "value": "Spend Final Hour as the Chef in the Food Room",
+        "reward": "15 Credits (as long as the client is satisfied)"
+      },
+      {
+        "value": "Spend Final Hour as the Food in the Food Room (note that no pregnant body can be used in this role and while you will die, your consciousness will be aware until the time is up and you will return to your body as you would any other day)",
+        "reward": "15 Credits",
+        "type": "Credits"
+      },
+      {
+        "value": "Spend Final Hour as the Sculptor in the Statue Room",
+        "type": "Credits",
+        "reward": "15 Credits"
+      },
+      {
+        "value": "Spend Final Hour as the Statue in the Statue Room",
+        "type": "Credits",
+        "reward": "15 Credits and your choice of a copy of each statue you become"
+      },
+      {
+        "value": "Spend Final Hour as the Carver in the Gore Room",
+        "type": "Credits",
+        "reward": "20 Credits should the client be satisfied and your choice of any successful works you make"
+      },
+      {
+        "value": "Spend Final Hour as the Meat in the Gore Room (You will unable to move and feel everything the client does even if things are severed)",
+        "type": "Credits",
+        "reward": "20 Credits and your choice of which works you are made into"
+      },
+      {
+        "reward": "15 Credits should the Client be satisfied",
+        "value": "Spend Final Hour as the Pet in the Pet Room (depending on the client's preference you may find your Work Body's DNA altered to give them the real deal)",
+        "type": "Credits"
+      },
+      {
+        "reward": "15 Credits and any Beast Form you take as an Alt Form (If Pregnancy happens as a result of it will follow the usual rules (Human/Beast relations will result in a Beast Kin and Beast/Beast relations will result in a pure breed or hybrid regardless of biology's laws)",
+        "value": "Spend Final Hour as the Prey (Human or Beast) in the Beast Room (Clients will take on either a spectator role or their mind will be transported into a Beast, their desire isn't always sexual so you may die in this room like several others)",
+        "type": "Credits"
+      }
+    ],
+    "title": "A Year as a Company Barmaid",
+    "source": "",
+    "author": "FinSexual92",
+    "budget": 0,
+    "loca": "Generic",
+    "scope": "Standard",
+    "reward": "2 Credits per Hour worked (Overtime is paid at a 1.0 rate if you volunteered, it is unpaid if you haven't)",
+    "desc": "If you're reading this, you're desperate for Credits or you've pissed off the wrong person and this has been auto-accepted. From 8pm to 2am (Friday to Sunday if Voluntary, every night if you aren't) you're going to work in a Company Exclusive Bar. Getting Orders and taking them to Tables might seem tame (especially as money isn't involved) despite the wandering hands and being target practice for cum shots. Did we mention you're going to find yourself in a female body during Work Hours that has Anime sized Melons and an ass that stops traffic all contained in a skimpy outfit that matches the current theme? Or that Final Call is replaced with Final Hour from 2am to 3am and each Barmaid either services (sexually of course) a table of up to five people of varying Genders or attend one of the Special Rooms that may take longer than an hour? No? Well that is what is happening. Expect to go home covered in liquids (not all may be white) and with aches in your pelvis area and jaw after being bent over tables, stools and seats.",
+    "rewardType": "Credits",
+    "conditions": [
+      {
+        "value": "During Work Hours you will be put into your Work Body and transported to the Company Bar"
+      },
+      {
+        "value": "Your Work body lacks your Talents and Defences. STDs aren't likely to be an issue but neither do you have the Hentai Physics your clients will"
+      },
+      {
+        "value": "If your Work Body gets pregnant during the year, it will not be a part of Final Hour (unless you want to go to the Preg Kink Room) and to compensate you will be given a Another Work Body. You will control and be aware of all Work Bodies at the same time during Work Hours"
+      },
+      {
+        "value": "Clients get to decide if they want to keep the child of said Pregnancies themselves, and if they want you to be a part of their lives. (Note that if they don't want the kid you will have no choice but to care for them)"
+      }
+    ],
+    "uid": "vWzfy"
+  },
+  {
     "author": "ClayUndead",
     "desc": "All the Villains today are so booooooring… \"No one understands me!\"-this and \"DEATH! DEATH! DEATH!\"-that. That's why I'm hiring a few of you Company blokes! You see, I like the classics gag villains, like Stiltman(may he rest in peace), so I bought some shares in the company to facilitate my interest. That's where you come in. I'm going to be paying you, yes you, to be a weekly villain for any Single Superhero, Dynamic Duo, Fantastic Family, or Terrific Team.",
     "loca": "Generic Superhero world",
     "title": "For the Glory of Villainy",
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1047916451786412072/hires-27-d057205ad3c14af6eecc09ed18a7444a_clipdrop-enhance.webp",
     "objectives": [
       {
         "value": "Steal Candy from a Baby",
@@ -76,7 +294,7 @@
     "uid": "BrQim"
   },
   {
-    "image": "",
+    "image": "https://cdn.2kgames.com/borderlands/news/Article+Embeds/Sanctuary+III/sanc-marcus-full.jpg",
     "reward": "1 Credits",
     "budget": 500,
     "loca": "Borderlands",
@@ -144,7 +362,7 @@
     "scope": "Standard",
     "rewardType": "Other",
     "title": "Prove Yourself",
-    "image": "",
+    "image": "https://i.imgur.com/hKzv4Iu.jpg",
     "author": "FinSexual92",
     "reward": "Company Promotion to Elite Contractor, coming with a monthly salary of $500,000",
     "objectives": [
@@ -188,7 +406,7 @@
     "uid": "Wsuxa"
   },
   {
-    "image": "",
+    "image": "https://i.imgur.com/gh0LGDy.jpg",
     "loca": "Generic",
     "budget": 0,
     "title": "Fate's Wrath",
@@ -284,7 +502,7 @@
       }
     ],
     "rewardType": "Other",
-    "image": "",
+    "image": "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2021/04/Pokemon-TCG-Giovanni-Card-Art-2.jpg",
     "reward": "500 credits plus either Giovanni or a Ground Type Pokemon of your choice (maximum tier 6)",
     "desc": "In the games, Team Rocket was defeated again and again until Giovanni and the admins fled and the organization faded into irrilevance. In the anime, however, Team Rocket is still strong and led by Giovanni. Let's correct this.",
     "loca": "Pokemon",
@@ -309,7 +527,7 @@
     ],
     "reward": "Commoragh is added to your Home Sweet Home. It retains connection to the Warhammer 40k universe it was connected to. You are in control of every entrance and exit.",
     "author": "Rhivan",
-    "image": "https://i.pinimg.com/originals/27/e2/44/27e2447de5d7e5172c0ed436a65d3e17.jpg",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1048026232958226542/Wh_asdruvect-1_clipdrop-enhance.jpg",
     "title": "Black Heart, Broken",
     "scope": "Standard",
     "desc": "Asdrubael Vect has been Supreme Overlord of Commoragh for too long. Fix that. Slowly and subtly destroy his powerbase, his authority, and his Kabal. \n\nOnly once everything he has built has been turned to ashes, and a new Kabal has usurped dominance over Commoragh may you capture Vect.",
@@ -7341,14 +7559,9 @@
     "uid": "GajvD"
   },
   {
-    "rewardType": "Other",
-    "loca": "Pokemon",
-    "image": "https://i.ibb.co/p0sSVcS/pokemon-league-champion-giselle-reference-sheet-by-nico-neko-defhl3t-fullview.jpg",
-    "author": "Ratcatcher",
-    "budget": 85,
-    "scope": "Grand",
+    "uid": "vKYKq",
     "source": "",
-    "reward": "1000 credits plus one level on a Heritage of your choice (no TX levels)",
+    "rewardType": "Other",
     "objectives": [
       {
         "value": "Track down and defeat the trainers from Pallet that started with Ash (Gary Oak, Leaf - serving as Viridian City's temporary gym leader - and whoever had the Charmender)",
@@ -7356,19 +7569,19 @@
         "reward": "Free Unison for you and all current members of your retinue"
       },
       {
+        "type": "Credits",
         "value": "Find Verity and Risa and have them take your Binding willingly",
-        "reward": "100 credits",
-        "type": "Credits"
+        "reward": "100 credits"
       },
       {
         "type": "Other",
-        "reward": "Dawn's rating raised to 8, 1 T-11 Ticket",
-        "value": "Dawn is Akari - go back in time to Hisui after she defeated Arceus and get her to take the Binding willingly"
+        "value": "Dawn is Akari - go back in time to Hisui after she defeated Arceus and get her to take the Binding willingly",
+        "reward": "Dawn's rating raised to 8, 1 IMG Ticket"
       }
     ],
-    "desc": "Early in the Pokemon anime Ash Ketchum met the one girl he was unequivocably attracted to, Giselle. She has never appeared since, even if Ash is finally close to become a Pokemon Master.\nLet's correct this: substitute as Giselle in the Journeys period and make a harem including Ash, the female Pokemon trainers he traveled with for extended periods, and his female classmates back in Alola.",
-    "title": "Giselle's Revenge",
-    "uid": "vKYKq",
+    "image": "https://i.ibb.co/p0sSVcS/pokemon-league-champion-giselle-reference-sheet-by-nico-neko-defhl3t-fullview.jpg",
+    "author": "Ratcatcher",
+    "reward": "1000 credits plus one level on a Heritage of your choice (no TX levels)",
     "conditions": [
       {
         "value": "Chargen only. Substitute as Giselle (costs are waived)"
@@ -7377,9 +7590,14 @@
         "value": "Make a harem including at least Ash, Misty, May, Dawn, Iris, Serena, Lillie, Mallow, and Lana. They must take your binding willingly"
       },
       {
-        "value": "As it is by the Journeys timeline, Ash' tier is raised to 7, and those of the non-Alolan targets excluding Iris are raised to 5"
+        "value": "As it is in the anime timeline during the Journeys series, Misty, May and Dawn's tiers are 5, while Serena is Tier 4"
       }
-    ]
+    ],
+    "budget": 85,
+    "scope": "Grand",
+    "desc": "Early in the Pokemon anime Ash Ketchum met the one girl he was unequivocably attracted to, Giselle. She has never appeared since, even if Ash is finally close to become a Pokemon Master.\nLet's correct this: substitute as Giselle in the Journeys period and make a harem including Ash, the female Pokemon trainers he traveled with for extended periods, and his female classmates back in Alola.",
+    "title": "Giselle's Revenge",
+    "loca": "Pokemon"
   },
   {
     "source": "",

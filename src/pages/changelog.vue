@@ -6,6 +6,15 @@
       </h2>
       <div>
         <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          04 December 2022
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~70 new user submitted characters, new missions.</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
           01 December 2022
         </h3>
         <ul class="list-decimal list-inside">

@@ -803,18 +803,6 @@
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/992072484922859580/tenjou-tenge-featured.jpg"
   },
   {
-    "worldName": "Tier 1 Town (Meta)",
-    "rating": 1,
-    "additional": "A special setting taking place in a large town or small city one could find a generic slice of life anime.\n\nContains any tier 1 waifus of your choice for potential capture.\n\nDue to the world's slice of life nature, nobody will age, be maimed, or die as long as you're here, though you may optionally turn this off. Nobody will find any of this weird.\n\nIf you select Tier 2 Town, the protections against maiming and death are automatically turned off, but you can also encounter any tier 2 waifus of your choice.",
-    "condition": [
-      {
-        "rating": 2,
-        "name": "Tier 2 Town"
-      }
-    ],
-    "image": "https://img5.goodfon.ru/original/640x480/1/60/arseniy-chebynkin-by-arseniy-chebynkin-japan-city-day-road-l.jpg"
-  },
-  {
     "worldName": "Wheel of Time",
     "rating": 7,
     "image": "https://i.imgur.com/5TFJH2kl.jpg",
@@ -5392,7 +5380,7 @@
   {"worldName":"The Amazing World of Gumball","rating":4,"image":"https://tvline.com/wp-content/uploads/2021/09/amazing-world-of-gumball.jpg?w=620"},
   {"worldName":"Chaos","rating":7,"image":"https://bloody-disgusting.com/wp-content/uploads/2014/03/Chaos_Comics_Characters.jpg"},
   {"worldName":"The Simpsons","rating":4,"image":"https://cdn.vox-cdn.com/thumbor/IQab79SuQ1PnrneGti_uy_pxTKo=/148x0:1768x1080/1280x854/cdn.vox-cdn.com/uploads/chorus_image/image/47413330/the-simpsons-tv-series-cast-wallpaper-109911.0.0.jpeg"},
-  {"worldName":"Hotel Transylvania","rating":3,"image":"https://static01.nyt.com/images/2022/01/13/arts/13hotel-transylvania-review/13hotel-transylvania-review-videoSixteenByNine3000.jpg"},
-  {"worldName":"Maji de Watashi ni Koi Shinasai!!","rating":5},
-  {"worldName":"Seiken Tsukai no World Break","rating":6,"image":"https://yaranakya.files.wordpress.com/2015/12/seiken-tsukai.png","condition":[{"name":"Anime Continuity","rating":6}]}
+  {"worldName":"Hotel Transylvania","rating":3,"image":"https://media.wired.com/photos/5932a1419be5e55af6c2640e/master/pass/hotel-transylvania-3d-1680x1050.jpg"},
+  {"worldName":"Maji de Watashi ni Koi Shinasai!!","rating":5, "image": "https://i.ytimg.com/vi/gWF9_4TjJCM/maxresdefault.jpg"},
+  {"worldName":"Seiken Tsukai no World Break","rating":6,"image":"https://animetide.com/wp-content/uploads/world-break-aria-of-curse-for-a-holy-swordsman-season-2.jpg","condition":[{"name":"Anime Continuity","rating":6}]}
 ]

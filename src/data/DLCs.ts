@@ -244,7 +244,7 @@ DLCperks.push({
   category: 'Misc Perk',
   dlclink: 'https://docs.google.com/document/d/1j9emHb4IWvOTnp13RASTAuINAFuKDMSSQyQ-7ta9sjA/edit#',
   title: 'Gone And Forgotten',
-  image: 'https://i.ibb.co/561Q7WM/Gone-And-Forgotten.jpg',
+  image: 'https://cdn.discordapp.com/attachments/925963686433132644/1048205426077995088/Screenshot_2.jpg',
   cost: 10,
   desc: `When you sell a waifu to the Company all traces of them begin to vanish. Others will not notice the waifu's absence and, over the course of a year and a day, memories and physical evidence will change to match that the waifu had never existed at all.
   <p>At the moment of each sale may opt to have your memories, your other waifus memories, the sold waifu's name on the Company's list of purchasable waifus, and/or any evidence stored in your Sweet Home to be unaffected.</p>

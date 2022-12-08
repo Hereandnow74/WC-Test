@@ -221,7 +221,7 @@ function buildString(title: string, items: Perk[], left: object) {
       if (x.complex[0].target)
         complexCompanion = squreType(`${x.complex.map(x => `${x.target}`).join(', ')}`)
     }
-    str += `${x.title}${dlc}${count}${complexBoth || complexCompanion || complexFlavor} ${x.cost ? `-${x.cost}` : 'free'} [${left.c}]\n`
+    str += `${x.title.replace(/ Talent| Defense/, '')}${dlc}${count}${complexBoth || complexCompanion || complexFlavor} ${x.cost ? `-${x.cost}` : 'free'} [${left.c}]\n`
   })
   return str
 }

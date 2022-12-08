@@ -594,7 +594,7 @@ perks.push({
   uid: 'ZVCai',
   title: 'Universal Calibration',
   category: 'Misc',
-  image: 'https://i.ibb.co/BCBHDkS/Temporal-Calibration.jpg',
+  image: 'https://i.imgur.com/EWG1gya.png',
   cost: 10,
   desc: `
 <p>Entering a new world, only to learn that the capture targets are out of your strike zone, can be… inconvenient. This perk will automatically adjust the ages, sexes, and sexualities of any canon characters, and the population’s average beauty level, to better suit your preferences. This will occur before you or anyone in your retinue enter each world for the first time, and even affect the portions of the population that you have no interest in.
@@ -819,7 +819,7 @@ perks.push({
   uid: '4qh4k',
   title: 'Express Delivery',
   category: 'Misc',
-  image: '',
+  image: 'https://i.imgur.com/b519IuD.jpg',
   cost: 640,
   desc: `
 <p>You are now on the priority list for warranty resurrections. The default respawn time for your subjects is now only 72 hours. Each amazon you purchase or capture will reduce the timer by 1 hour, to a soft limit of 48 hours. Additional amazons in your retinue after the first 24 will still decrease the timer, but are subject to Diminishing Returns.</p>

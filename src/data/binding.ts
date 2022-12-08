@@ -823,7 +823,7 @@ export const lures: PerkFull[] = [
     title: 'Arlo',
     cost: 15,
     category: 'Lure',
-    image: 'https://i.ibb.co/XzLg3RR/Arlo.jpg',
+    image: 'https://i.imgur.com/SfAmPoq.jpg',
     special: 'at least one retinue member whose apparent age is younger than yourself.',
     desc: `
 <p>The sight of a cute kid calling a new haremette “mama” has real power. Select a retinue member whose apparent age is younger than yourself to act as bait and approach the target together. This need not be the same individual every time. The bait acts as your child or younger sibling, playing the target’s parental/nurturing instincts against them by signaling that you have a need for a caretaker in your household - and the bait would prefer that caretaker to be the candidate right in front of them. This lure is stronger if:</p>
