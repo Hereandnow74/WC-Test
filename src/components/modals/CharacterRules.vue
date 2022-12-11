@@ -23,7 +23,7 @@
       <Note type="warning" title="R63 images">
         Due to popular vote male characters with R63 images will not be accepted. NSFW R63 images are allowed though (they need to be NSFW still).
       </Note>
-      <h3>Rules are sorted in order of importance and <b>forbidding</b> in nature, while breaking lower ones can still be tolerated, it will increase the chance that your character won't be added, top ones is flat out no.</h3>
+      <h3>Rules are sorted in order of importance and <b>forbidding</b> in nature. While breaking the lower ones can still be tolerated, it will increase the chance that your character won't be added. Tops one is a flat-out no.</h3>
       <ul class="list-decimal list-inside">
         <li>Duplicates / Gender Bender / Alternative looking ones of <b>already existing</b> characters</li>
         <li>Lolicon in NSFW images.</li>

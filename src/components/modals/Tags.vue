@@ -44,6 +44,8 @@
         v-else
         class="flex flex-wrap gap-1 text-sm justify-center text-white p-2 scrollbar overflow-y-auto min-h-0 max-h-[60vh]"
       >
+        <!-- User tags Count : {{ Object.keys(tagsCount).length }}
+        Official tags Count : {{ allTagsFiltered.length }} -->
         <template v-if="!showOfficial">
           <Tag
             v-for="tag in allTagsFiltered"
@@ -53,10 +55,10 @@
             @click="tagToggles[tag.short] = threeToggle(tagToggles[tag.short] || 0)"
           />
         </template>
-
+        <!-- .sort((a, b) => a.tag.localeCompare(b.tag)) -->
         <template v-else>
           <Tag
-            v-for="tag in Object.keys(tagsCount).filter(tag => tag.length > 2).map(tag => ({tag, desc:'', short: tag, style: '', color: 'bg-teal-400 text-black'})).sort((a, b) => a.tag.localeCompare(b.tag))"
+            v-for="tag in Object.keys(tagsCount).filter(tag => tag.length > 2).map((tag, k) => ({tag: `${tag} [${tagsCount[tag]}]`, desc:'', short: tag, style: '', color: ''})).sort((a, b) => a.tag.localeCompare(b.tag)).map((tag, k )=> (tag.color = (k % 2) === 0 ? 'bg-teal-300 text-black font-semibold' : 'bg-amber-200 text-black font-semibold', tag))"
             :key="tag.tag"
             :tag="tag"
             :on-the-list="true"

@@ -8,7 +8,7 @@
           :class="color"
         >
           <span v-if="i != 0" class="text-orange-500">, </span>
-          <span class="hover:underline">{{ el.title2 || el.title || el }}</span>
+          <span class="hover:underline">{{ (el.title2 || el.title || el).replace(/ Talent| Defense/, '') }}</span>
           <span v-if="ALL_DLC_PERK_TITLES[el.title2 || el.title || el]" class="text-teal-200">ᵈˡᶜ</span>
           <span v-if="el?.anything?.length" class="text-yellow-500">({{ el.anything }})</span>
           <span v-if="el.count && el.count > 1" class="text-gray-300">(<span :style="[numberColor ? {color: numberColor} : {color:'rgba(34, 211, 238)'}]">x{{ el.count }}</span>)</span>

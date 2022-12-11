@@ -442,7 +442,7 @@ defenses.push({
   title: 'Mind Defense',
   category: 'Defense',
   special: '<Individual> is known as a psychic or mind-manipulator.',
-  image: 'https://i.ibb.co/KXZzvSK/Mind-Defense.jpg',
+  image: 'https://i.imgur.com/dKgUldp.png',
   cost: 25,
   desc: 'You are protected from all mind control effects from outside of your retinue and unwanted attempts from within. Attempts to influence you will be weaker and you have an easier time noticing them and fighting them off. At least part of your mind will always remain beyond any control, leaving you free to fight your controller from within - creatively reinterpreting orders, temporarily suppressing or weakening their influence, leaving part or all of your body locked in indecisive spasms, or even throwing off their control entirely if what they\'re trying to make you do goes too far against your true self. Successful mind control within your retinue will require your consent, not the victim’s. Friendly psychics may still contact you or your retinue through telepathy.',
 })
@@ -464,7 +464,7 @@ defenses.push({
   title: 'Soul Defense',
   category: 'Defense',
   special: '<Individual> can drain or feed on life, mana, or souls.',
-  image: 'https://i.ibb.co/Gxn3ycq/Soul-Defense.jpg',
+  image: 'https://i.imgur.com/XMwNgsN.png',
   cost: 25,
   desc: 'You are the master of your soul. You are protected from all vitality-, mana-, and soul-draining effects. At the resistance level, attempts to feed on you will have diminishing returns, leaving your attacker unable to drain you completely. Waifus who feed on souls or lifeforce can get all the nutrition they need from you or your other waifus without causing harm, even from side effects such as loss of fluids. This protects you and your retinue from third parties, but not vice versa. This perk does not reduce the energy use from your own efforts in any way - you want Inexhaustible for that.',
   additionalDesc: `
@@ -517,7 +517,7 @@ defenses.push({
   title: 'Corruption Defense',
   category: 'Defense',
   special: '<Individual> is known for forcibly bringing out others’ dark sides.',
-  image: 'https://i.ibb.co/kGF8tHp/Corruption-Defense.jpg',
+  image: 'https://i.imgur.com/NzbaAPT.jpg',
   cost: 50,
   whitelist: ['Soul Defense', 'Polymorph Defense', 'Wyldscape Defense'],
   needed: 1,

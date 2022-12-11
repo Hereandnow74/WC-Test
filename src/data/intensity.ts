@@ -42,7 +42,7 @@ intensity.push({
 intensity.push({
   uid: 'IpXK4',
   title: 'Couple’s Account (Cooperative)',
-  image: 'https://i.ibb.co/Vt1Sphq/Couple-SAccount.jpg',
+  image: 'https://i.imgur.com/oSOVjZI.png',
   intensity: 0,
   special: 'Chargen only. May not be taken on DRX.',
   blacklist: ['DRX start'],

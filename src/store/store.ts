@@ -334,6 +334,12 @@ const budget = computed(() => {
     else
       bd += startingOrigin.value.swap.refund
   }
+  if (startingOrigin.value.perk) {
+    if (startingOrigin.value.perk.tier !== 11)
+      bd -= startingOrigin.value.perk.cost - startingOrigin.value.perk.refund
+    else
+      bd += startingOrigin.value.perk.refund
+  }
   // CSR implementation 3.0
   if (flags.value.chargen && csr.value) {
     if (bd + loan.value.gained < 0) {
@@ -457,7 +463,7 @@ const yourTier = computed(() => {
   const talentsTier5 = findIndex(talentPerks.value, x => ['Template Stacking II'].includes(x.title)) !== -1 ? 5 : 0
   let shroudTier = findIndex(binding.value, { title: 'Shroud of Power' }) !== -1 ? 4 : 0
   shroudTier = Math.max(findIndex(binding.value, { title: 'Alterzelu Symbiote' }) !== -1 ? 4 : 0, shroudTier)
-  const originTier = startingOrigin.value.tier || 0
+  const originTier = startingOrigin.value?.perk?.tier || startingOrigin.value.tier || 0
   const heritageTier = calcTier(heritage.value)
   const powerSwapTier = startingOrigin.value.swap && startingOrigin.value.swap.tier ? startingOrigin.value.swap.tier : 0
   return Math.max(originTier, heritageTier, talentsTier4, talentsTier5, shroudTier, powerSwapTier)

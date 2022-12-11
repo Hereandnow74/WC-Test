@@ -66,7 +66,7 @@
         class="inline text-green-500"
       /> -->
       <fa-solid:check
-        v-if="companionsByUID[waifuPerk.uid]"
+        v-if="(companionsByUID[waifuPerk.uid] || startingOrigin.perk?.uid === waifuPerk.uid)"
         class="inline text-green-500"
       />
     </h3>
@@ -135,7 +135,7 @@ const { settings, waifuPerks, companionsByUID, companions, companionsUIDs, start
 const waifuList = computed(() => {
   let res = {} as Record<string, number>
   res = props.waifuPerk.waifu.reduce((all, waifu, i) => {
-    if (companionsByUID.value[props.waifuPerk.waifuUID[i]] || companionsUIDs.value[props.waifuPerk.waifuUID[i]])
+    if (companionsByUID.value[props.waifuPerk.waifuUID[i]] || companionsUIDs.value[props.waifuPerk.waifuUID[i]] || startingOrigin.value.uid === props.waifuPerk.waifuUID[i])
       all[waifu] = props.waifuPerk.waifuUID[i]
     return all
   }, {} as Record<string, number>)
@@ -155,8 +155,9 @@ function pickWaifuPerk() {
     else {
       let char = isNumber(charUID) ? companionsUIDs.value[charUID] : companionsByUID.value[charUID]
       if (!char)
-        char = companionsByUID.value[charUID]
+        char = startingOrigin.value
       if (char) {
+        const tier = char.priceTier || char.tier || 0
         if (char.perk) {
           if (char.perk.uid === props.waifuPerk.uid) { delete char.perk }
           else {
@@ -165,7 +166,7 @@ function pickWaifuPerk() {
               title: props.waifuPerk.title,
               tier: props.waifuPerk.tier,
               cost: props.waifuPerk.tier !== 11 ? CHAR_COSTS[props.waifuPerk.tier] : 0,
-              refund: char.priceTier !== 11 ? CHAR_COSTS[char.priceTier] : 0,
+              refund: tier !== 11 ? CHAR_COSTS[tier] : 0,
             }
           }
         }
@@ -175,7 +176,7 @@ function pickWaifuPerk() {
             title: props.waifuPerk.title,
             tier: props.waifuPerk.tier,
             cost: props.waifuPerk.tier !== 11 ? CHAR_COSTS[props.waifuPerk.tier] : 0,
-            refund: char.priceTier !== 11 ? CHAR_COSTS[char.priceTier] : 0,
+            refund: tier !== 11 ? CHAR_COSTS[tier] : 0,
           }
         }
       }

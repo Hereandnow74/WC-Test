@@ -520,7 +520,7 @@ If you Possessed or Substituted a waifu or are otherwise female, you may act as 
     cost: 50,
     category: 'Binding',
     type: 'Shroud',
-    image: 'https://i.ibb.co/31fc3BW/Elemental-Loom.jpg',
+    image: 'https://cdn.discordapp.com/attachments/925963686433132644/1048314200365224037/doppel-gangers-bleach-yamamoto3.jpg',
     whitelist: ['Elemental Shroud'],
     desc: `
 <p>Your Shroud has been upgraded into a gaseous aura and its manifestations no longer need to be obvious and intense. A Volcanic Shroud no longer needs to create flames, but instead be a temperature change; the Primal Shroud can create and manipulate bacteria and viruses, the Cyber Shroud can affect purely digital code, etc.</p>

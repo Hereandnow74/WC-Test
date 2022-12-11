@@ -14,7 +14,7 @@
         The Company is known for its laid-back approach when handling contractors and will therefore not interfere in any of their decisions, nor attempt to force them into anything they do not choose to accept of their own volition.
       </p>
       <p class="pt-2 text-lg text-teal-600 dark:text-teal-400">
-        The Interactive Waifu Catalogue contains three main parts:
+        The Interactive Waifu Catalog contains three main parts:
       </p>
       <ol class="list-decimal list-inside">
         <li class="font-semibold">
@@ -28,7 +28,7 @@
         </li>
       </ol>
       <p class="mt-2">
-        Note that the Waifu Catalogue is a continuous CYOA which means that you will not lose access to your build after its initial creation, and can instead interact with it throughout your journey.
+        Note that the Waifu Catalog is a continuous CYOA which means that you will not lose access to your build after its initial creation, and can instead interact with it throughout your journey.
       </p>
       <p class="pt-2">
         Links to the original Waifu Catalog - <a class="text-blue-600 font-semibold dark:text-blue-400" href="https://docs.google.com/document/d/1ILzH_MYYTsS40Dx4YnnqbGiFaHiqVRZD-yJBEz4CnEg/edit#" target="_blank" rel="noopener noreferrer">document</a>,<a class="text-blue-600 font-semibold dark:text-blue-400 pl-2" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRY8R1QpF5c_R3UESoYXYscEVJ2AayfCLJ7QVxU3xjfwqKfZU8HnNVsTKwFOX9J7DX8MPM1tp06el9G/pubhtml#" target="_blank" rel="noopener noreferrer">spreadsheet</a>.

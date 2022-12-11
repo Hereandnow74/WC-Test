@@ -1,6 +1,228 @@
 [
   
   {
+    "desc": "Before YHVH came to the picture the world was full of entities called 'Nahobino' who are all essentially gods who all fought over the The Throne of Creation which grants whomever claims it control over the Universe as a near Omnipotent being.When YHVH Claimed it he took the Nahobinos' Knowledge reducing them to demons a little while later Lucifer tempt Humans into eating the Fruit of Knowledge Claiming it for themselves allowing demons the opportunity to fuse with those who has their knowledge to become Nahobino once more and try to claim for the throne once more. This is where you come in Contractor, In this world god is dead and the throne is empty, become a Nahobino and Claim the Throne for yourself.",
+    "rewardType": "TX Tickets",
+    "image": "https://static1.thegamerimages.com/wordpress/wp-content/uploads/2021/11/Shin-Megami-Tensei-V-Uphold-Gods-Order-Ending.jpg",
+    "objectives": [
+      {
+        "type": "Credits",
+        "reward": "100",
+        "value": "Do all the sidequest from SMT 5"
+      },
+      {
+        "type": "Credits",
+        "reward": "150",
+        "value": "Prevent Tao's death and have her join you on her own will. (No Bindings or Lures)"
+      },
+      {
+        "type": "Perks",
+        "value": "Complete the Demonic Compendium",
+        "reward": "Template Stacking I"
+      },
+      {
+        "reward": "Pocket star",
+        "value": "Defeat Lucifer by yourself",
+        "type": "Perks"
+      },
+      {
+        "value": "Defeat all the Fiends and Defeat and recruit the Demi-Fiend",
+        "reward": "Demi-Fiend and Pixie with Uber-Pixie",
+        "type": "Companions"
+      }
+    ],
+    "reward": "1",
+    "source": "",
+    "loca": "Shin Megami Tensei",
+    "budget": 1545,
+    "scope": "Grand",
+    "author": "Bot Lucifer",
+    "conditions": [
+      {
+        "value": "Must Have Added Potential:Nahobino or ave substitute of SMT 5 Protagonisth"
+      },
+      {
+        "value": "Defeat all Rivals who want the Throne"
+      },
+      {
+        "value": "Defeat Shiva and prevent him from destroying the universe"
+      },
+      {
+        "value": "Have No Heritages"
+      }
+    ],
+    "title": "The War for The Throne",
+    "uid": "OBnkB"
+  },
+  {
+    "title": "Sensational Foursome",
+    "rewardType": "Credits",
+    "image": "https://i.ibb.co/cYMJW0L/434fb57b388deec8a04669768c07ce65711ed250r1-720-885v2-uhq.jpg",
+    "reward": "25",
+    "source": "",
+    "scope": "Quick",
+    "budget": 0,
+    "objectives": [
+      {
+        "value": "If you're substituting as Ash, have Misty declare she loves you during the sex",
+        "type": "Other",
+        "reward": "Misty captured with twice the reward"
+      }
+    ],
+    "author": "Ratcatcher",
+    "loca": "Pokemon",
+    "conditions": [
+      {
+        "value": "This must happen before Misty and her sisters start getting along."
+      },
+      {
+        "value": "None of the four can be Captured. They must also not be coerced or mind controlled into the foursome. Lures are OK."
+      }
+    ],
+    "desc": "You know how Misty doesn't get along with her sisters, right? Talk them all into a foursome",
+    "uid": "xsKDw"
+  },
+  {
+    "rewardType": "Other",
+    "desc": "The Black Family has a long and dark history that is left in ruins because of idiots. A Client wishes to see the Black name flourish once again, which is where you come in Contractor. As the Son of the Eldest Black Daughter, you will bring the Name back as something to be feared and respected.",
+    "title": "The Black of Black",
+    "author": "FinSexual92",
+    "reward": "A Tome of Magic on any Branch you wish",
+    "conditions": [
+      {
+        "value": "All Non-Local Abilities and Retinue are forbidden"
+      },
+      {
+        "value": "Bindings do not work, captures only happen via confessions or rewards"
+      }
+    ],
+    "loca": "Harry Potter",
+    "objectives": [
+      {
+        "value": "Marry Nelly Longbottom and make her Lady Lestrange [Requires Universal Calibration to alter Neville's Gender]",
+        "type": "Companions",
+        "reward": "Instant Capture of Nelly Longbottom and a T5 Ticket for a non-HP member"
+      },
+      {
+        "value": "Marry Henrietta Potter and make her Lady Black [Requires Universal Calibration to alter Harry's Gender]",
+        "type": "Companions",
+        "reward": "Instant Capture of Henrietta Potter and a T5 Ticket for a non-HP Member"
+      },
+      {
+        "type": "Companions",
+        "value": "Persuade a witch to become your Mistress without Blackmail or Mind Control",
+        "reward": "Instant Capture of the witch and 25 Credits"
+      },
+      {
+        "type": "Credits",
+        "reward": "10 Credits",
+        "value": "Persuade a witch to give you a blowjob (doesn't count if they're captured or married to you)"
+      },
+      {
+        "reward": "20 Credits (+15 if extra)",
+        "value": "Blackmail a witch into sleeping with you (extra if they're in a position of authority over you)",
+        "type": "Credits"
+      }
+    ],
+    "budget": 80,
+    "scope": "Standard",
+    "source": "",
+    "image": "https://i.imgur.com/vODPivj.jpg",
+    "uid": "MTNfM"
+  },
+  {
+    "image": "https://progameguides.com/wp-content/uploads/2019/12/cuberpunk-2077-desktop-wallpaper018.jpg",
+    "title": "Up and comers",
+    "conditions": [
+      {
+        "value": "T5 limit imposed for retinue and your own powers"
+      },
+      {
+        "value": "Pick a theme for your gang and make everyone in your gang follow it"
+      },
+      {
+        "value": "No overtly magical powers for either you or your retinue (if it can be masked as implant then it can be used as long as nobody finds out)"
+      }
+    ],
+    "loca": "Cyberpunk 2077",
+    "author": "Flying Pepperoni",
+    "reward": "200",
+    "budget": 0,
+    "rewardType": "Credits",
+    "source": "",
+    "desc": "Night City is full of various gangs, which control various parts of the city. Client is though not much fan of one of the gangs and want to see them replaced by someone else. That someone else is you, choomba. Destroy the gang holding the district and take it for yourself, holding it for 5 years ",
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "200",
+        "type": "Credits",
+        "value": "Hold the District for 5 more years"
+      },
+      {
+        "value": "Starting in Edgerunners era, make sure that both the anime and game main cast survive",
+        "reward": "100",
+        "type": "Credits"
+      },
+      {
+        "type": "Credits",
+        "value": "Ally Corporation and keep that alliance for duration of at least half of your run",
+        "reward": "50"
+      },
+      {
+        "type": "Credits",
+        "value": "Cripple corporation significantly to point of reducing their presence in Night City significantly",
+        "reward": "300"
+      },
+      {
+        "type": "Credits",
+        "value": "Secure support of local fixer for your gang (Cooperative relationship in most of their dealings) and keep it that way till the end of the run",
+        "reward": "50"
+      },
+      {
+        "type": "Credits",
+        "reward": "400",
+        "value": "Take control of half of Night City's districts"
+      },
+      {
+        "value": "Control whole Night City for additional 5 years",
+        "type": "Credits",
+        "reward": "600"
+      }
+    ],
+    "uid": "tIQQE"
+  },
+  {
+    "author": "Heaven Canceler",
+    "loca": "High School DxD",
+    "budget": 850,
+    "reward": "300 Credits, Also 7 Sets of Enchanted Epic Class Bikini Armors and assorted customized weaponry of your choice, each of which boosts a wielder to a minimum of T8.",
+    "title": "The Great Red Bikini Legacy",
+    "image": "https://i.imgur.com/GfM56ke.png",
+    "rewardType": "Other",
+    "desc": "Well, well, Great Red is the much feared terrifying god-dragon that guards the dimensional rift that connects the world of DxD with other realities. He is considered the most terrifyingly powerful being in the entire world, though this is questionable given he is going to get oneshot by a passing by random god-monster from another dimension to further make sure that nobody is around that could take the limelight away from the protagonist. All the while Issei is gonna go collect the Twelve Heavenly Boobs and save the multiverse through the power of tiddies and yeah we all know that DxD is pretty silly and the client that has requested this mission is quite bored of this nonsense. So for the purpose of this job, you are to slip in during Great Red’s final fight, or more correctly slaughter, and get his body. As a being holding the aspect of dreams, every part of his body is a potent reagent and our client wants to create a proper legacy for this ancient dragon that fits his pathetic ending. So get that body, bring it to the pre-selected exit point and we will process the body to make… the greatest set of bikini armors and assorted weapons from his body that has ever been seen!",
+    "objectives": [
+      {
+        "type": "Other",
+        "value": "Get Ophis the Infinite Dragon to wear one of these bikini armors after you have succeeded at the mission and keep wearing it for at least 24 hours.",
+        "reward": "One customized Bikini Armor and weapon enchanted with Ophis power of “Infinity” that holds a similar strength to the armor made from Great Red. If you have bound Ophis, she may fuse with the armor to further increase its power beyond the max, allowing others to temporarily wield her power in its fullness."
+      }
+    ],
+    "source": "",
+    "scope": "Standard",
+    "conditions": [
+      {
+        "value": "Get the body with minimal damage, all limbs must still be on it, all major organs except what was necessary for Great Red’s death must be functional."
+      },
+      {
+        "value": "The one who killed Great Red, Regalzeva is unlikely to be happy with you grabbing the body of his foe. He will attack you if he notices what you are doing. Either defeat him or escape with your loot."
+      },
+      {
+        "value": "You have a time limit of 30 minutes after insertion, the unstable nature of Great Red’s body as a dreamlike existence will make it destabilize if you take longer."
+      }
+    ],
+    "uid": "fXawK"
+  },
+  {
     "author": "SittingBear",
     "image": "https://i.pinimg.com/originals/54/da/e9/54dae90405dcb86fa09735f93eb811c5.jpg",
     "source": "",
@@ -31,9 +253,37 @@
     "uid": "XnRKu"
   },
   {
-    "reward": "2000",
+    "author": "Ratcatcher",
+    "loca": "Pokemon",
+    "budget": 85,
+    "objectives": [
+      {
+        "reward": "Instant Capture of Giselle",
+        "value": "Seduce Giselle",
+        "type": "Companions"
+      },
+      {
+        "value": "Capture the Gastly of Maiden's Peak",
+        "reward": "1 TX ticket, the Ghost of Maiden's Peak as a companion",
+        "type": "Other"
+      },
+      {
+        "reward": "Unison for you and all your current companions",
+        "value": "Capture Jessie and James",
+        "type": "Perks"
+      },
+      {
+        "value": "Seduce Gary's Cheerleaders",
+        "reward": "Two Heritage levels",
+        "type": "Other"
+      }
+    ],
     "scope": "Grand",
+    "title": "Gotta Do 'Em All",
     "rewardType": "Credits",
+    "desc": "Ash Ketchum gets shipped with every girl he travels with, though he rarely if ever shows any interest in romance - and the girls DO seem interested in him in some way. Wanna take his place and take advantage of that?",
+    "reward": "2000",
+    "image": "https://cdn.donmai.us/original/9b/58/__pikachu_dawn_may_ash_ketchum_serena_and_11_more_pokemon_and_7_more_drawn_by_mushi_gyouza__9b5897cf0f71dbf15d78415f57e1d937.png",
     "conditions": [
       {
         "value": "Chargen only."
@@ -48,49 +298,20 @@
         "value": "Also, you must complete his voyages and solve the same crisis he solved. You can win the tournaments he lost, if you manage it."
       }
     ],
-    "image": "https://cdn.donmai.us/original/9b/58/__pikachu_dawn_may_ash_ketchum_serena_and_11_more_pokemon_and_7_more_drawn_by_mushi_gyouza__9b5897cf0f71dbf15d78415f57e1d937.png",
-    "desc": "Ash Ketchum gets shipped with every girl he travels with, though he rarely if ever shows any interest in romance - and the girls DO seem interested in him in some way. Wanna take his place and take advantage of that?",
-    "budget": 85,
-    "loca": "Pokemon",
-    "source": "",
-    "objectives": [
-      {
-        "type": "Companions",
-        "value": "Seduce Giselle",
-        "reward": "Instant Capture of Giselle"
-      },
-      {
-        "value": "Capture the Gastly of Maiden's Peak",
-        "type": "TX Tickets",
-        "reward": "1"
-      },
-      {
-        "type": "Perks",
-        "value": "Capture Jessie and James",
-        "reward": "Unison for you and all your current companions"
-      },
-      {
-        "type": "Other",
-        "value": "Seduce Gary's Cheerleaders",
-        "reward": "Two Heritage levels"
-      }
-    ],
-    "author": "Ratcatcher",
-    "title": "Gotta Do 'Em All",
-    "uid": "GGPWA"
+    "uid": "GGPWA",
+    "source": ""
   },
   {
-    "loca": "The Boys",
+    "scope": "Quick",
     "author": "Everythingman101",
-    "desc": "The Seven are a group of legendary superheroes owned and managed by Vought International. They are believed to be the epitome of good in the world, time to proof that assumption wrong.",
+    "desc": "The Seven are a group of legendary superheroes owned and managed by Vought International. They are believed to be the epitome of good in the world, time to prove that assumption wrong.",
     "rewardType": "Credits",
-    "reward": "200",
-    "budget": 140,
+    "title": "Fall of The Seven",
     "objectives": [
       {
         "type": "Companions",
         "reward": "Gain Starlight as companion",
-        "value": "Capture or get starlight to peacefully join you"
+        "value": "Capture or get Starlight to peacefully join you"
       },
       {
         "type": "Companions",
@@ -98,24 +319,25 @@
         "reward": "Gain Queen Maeve as Companion"
       },
       {
-        "value": "Prove to the world that Vought and their heroes are corrupt",
         "type": "Credits",
-        "reward": "50"
+        "reward": "50",
+        "value": "Prove to the world that Vought and their heroes are corrupt"
       }
     ],
-    "scope": "Quick",
+    "image": "https://i.imgur.com/mAe0xf3.jpg",
+    "source": "",
+    "uid": "pgyjD",
+    "reward": "200",
+    "budget": 140,
     "conditions": [
       {
         "value": "No TX Companions can be used"
       }
     ],
-    "source": "",
-    "image": "https://i.imgur.com/mAe0xf3.jpg",
-    "title": "Fall of The Seven",
-    "uid": "pgyjD"
+    "loca": "The Boys"
   },
   {
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1050066692417523734/art-kate-fox-katrin-dance.jpg",
     "objectives": [
       {
         "type": "Credits",
@@ -730,10 +952,7 @@
     "uid": "IjQYv"
   },
   {
-    "author": "Ratcatcher",
-    "budget": 200,
     "title": "Royal Stable",
-    "loca": "My Little Pony",
     "conditions": [
       {
         "value": "Twilight Sparkle must be the ruling Princess of Equestria and a member of your Retinue. If she isn't the latter yet, go and Capture her."
@@ -745,20 +964,23 @@
         "value": "Once they're seduced, have Twilight talk them into having sex with her and you at the same time, and make them cum until they faint. It can be with one at a time or in groups, or even all of them together"
       }
     ],
-    "desc": "It's traditional in many cultures for a ruler to have a harem as a show of wealth and power, and it's said friendship is a form of love. Logically, that means Twilight Sparkle's friends should become her harem upon accession to the Equestrian throne, right? Especially if you have already Captured her.",
-    "scope": "Quick",
-    "image": "https://i.ibb.co/DwzjHSy/2fa6ad27e0986b72c12e5afc9f10b2a6.jpg",
-    "source": "",
-    "reward": "The rest of the Mane Six are Captured with +1 Tier after step six, 200 credits",
-    "rewardType": "Other",
+    "loca": "My Little Pony",
     "objectives": [
       {
         "value": "Get the other Princesses in Twilight's harem as you did with the Mane Six",
-        "type": "Companions",
-        "reward": "Celestia, Cadance and Luna Captured with +1 Tier after step six"
+        "reward": "Celestia, Cadance and Luna Captured with +1 Tier after step six",
+        "type": "Companions"
       }
     ],
-    "uid": "SmqrJ"
+    "author": "Ratcatcher",
+    "reward": "The rest of the Mane Six are Captured with +1 Tier after step six, 200 credits",
+    "uid": "SmqrJ",
+    "image": "https://i.ibb.co/DwzjHSy/2fa6ad27e0986b72c12e5afc9f10b2a6.jpg",
+    "budget": 200,
+    "source": "",
+    "desc": "It's traditional in many cultures for a ruler to have a harem as a show of wealth and power, and it's said friendship is a form of love. Logically, that means Twilight Sparkle's friends should become her harem upon ascension to the Equestrian throne, right? Especially if you have already Captured her.",
+    "scope": "Quick",
+    "rewardType": "Other"
   },
   {
     "objectives": [
@@ -1890,22 +2112,21 @@
     ]
   },
   {
-    "author": "FinSexual92",
+    "desc": "Everyone knows that Raynare is an idiot of the highest order and one of the worst antagonists ever written. Honestly, she killed a perv that should have known something was iffy and ripped out part of Asia's soul (someone who has less fight in her than fish in a barrel). She even failed to kill Issei a second time!\n\nYour mission, Contractor, is to be the Villain needed to make the Grigori the undisputed rulers of Kuoh. Azazel has been informed that you are going to ensure Raynare doesn't bring down the Wrath of Sis-Con Satans on the Grigori so don't worry about him. He's even got official orders that Raynare's band of misfits are your bitches.",
+    "source": "",
     "loca": "High School DxD",
     "budget": 365,
-    "title": "Really, Raynere?",
-    "reward": "500 Credits",
-    "desc": "Everyone knows that Raynere is an idiot of the highest order and one of the worst antagonists ever written. Honestly, she killed a perv that should have known something was iffy and ripped out part of Asia's soul (someone who has less fight in her than fish in a barrel). She even failed to kill Issei a second time!\n\nYour mission, Contractor, is to be the Villain needed to make the Grigori the undisputed rulers of Kuoh. Azazel has been informed that you are going to ensure Raynere doesn't bring down the Wrath of Sis-Con Satans on the Grigori so don't worry about him. He's even got official orders that Raynere's band of misfits are your bitches.",
+    "scope": "Standard",
     "objectives": [
       {
+        "value": "Kill Issei Hyoudou without it pointing to the Grigori",
         "reward": "Template Stacking I (Boosted Gear) for one of your Retinue. (Just don't use it on a Local or they may be found out)",
-        "type": "Perks",
-        "value": "Kill Issei Hyoudou without it pointing to the Grigori"
+        "type": "Perks"
       },
       {
         "value": "Keep Asia Argento safe and happy to the point that she will refuse to become a Brave Saint of Michael's when offered at the Peace Conference",
-        "reward": "Asia Argento capture and Lures are twice as effective on Draconic Retinue Targets",
-        "type": "Companions"
+        "type": "Companions",
+        "reward": "Asia Argento capture and Lures are twice as effective on Draconic Retinue Targets"
       },
       {
         "value": "Give the appearance of Co-Ruling with Sona Sitri until her Father gets Sleeping Disease",
@@ -1913,26 +2134,27 @@
         "reward": "Company Clones of Sona Sitri's Peerage (including her) and of Serafall Leviathan, altered to your liking"
       },
       {
-        "value": "Kill Freed Sellzen in your first meeting with him",
+        "type": "Credits",
         "reward": "200 Credits",
-        "type": "Credits"
+        "value": "Kill Freed Sellzen in your first meeting with him"
       },
       {
-        "value": "Seduce and Impregnate one of the Original Four Fallen (Azazel won't mind giving you his Gender Ray Gun if you want to use Dohnaseek)",
         "reward": "Capture of the Fallen in question and 50 Credits",
+        "value": "Seduce and Impregnate one of the Original Four Fallen (Azazel won't mind giving you his Gender Ray Gun if you want to use Dohnaseek)",
         "type": "Companions"
       },
       {
-        "reward": "Company Clones of Xenovia Quatra, Irina Shidou and Griselda Quatra",
         "type": "Companions",
+        "reward": "Company Clones of Xenovia Quatra, Irina Shidou and Griselda Quatra",
         "value": "Imprison Xenovia Quatra and Irina Shidou when they show up in the Excalibur Arc, return them to Griselda Quatra whole and healthy when she seeks them out"
       },
       {
-        "value": "Defeat Kokabiel one on one",
         "type": "Companions",
-        "reward": "Gabriel (Clone) from DxD "
+        "reward": "Gabriel (Clone) from DxD ",
+        "value": "Defeat Kokabiel one on one"
       }
     ],
+    "reward": "500 Credits",
     "conditions": [
       {
         "value": "You are unable to use Bindings to Capture people"
@@ -1944,21 +2166,22 @@
         "value": "At least 1 of the Original Four Fallen must survive until you have ruled for at least a year"
       }
     ],
-    "rewardType": "Credits",
+    "author": "FinSexual92",
     "image": "https://i.pinimg.com/originals/08/c6/bc/08c6bc52067d2f38e73f9733a0b22927.jpg",
-    "source": "",
-    "scope": "Standard",
-    "uid": "ZNtkt"
+    "rewardType": "Credits",
+    "uid": "ZNtkt",
+    "title": "Really, Raynare?"
   },
   {
-    "scope": "Standard",
-    "image": "https://i.pinimg.com/564x/93/6a/9d/936a9dd1bfae6f9244b94527dbc6c846.jpg",
-    "loca": "High School DxD",
     "source": "",
-    "author": "FinSexual92",
-    "rewardType": "Credits",
-    "title": "Righting A Wrong",
     "budget": 365,
+    "author": "FinSexual92",
+    "scope": "Standard",
+    "loca": "High School DxD",
+    "rewardType": "Credits",
+    "reward": "365 Credits upon leaving DxD",
+    "image": "https://i.pinimg.com/564x/93/6a/9d/936a9dd1bfae6f9244b94527dbc6c846.jpg",
+    "desc": "DxD is one of our best earning Worlds, but it is a dangerous place. It seems one of your Peers has forgotten that and somehow (we have no idea how they managed it) got killed while being a Rias Substitute. Since we like this World, we try to keep variations existing. Your job is to pick up the slack created by the death of Rias Gremory, Yuuto Kiba and Issei Hyoudou has created. You will Extra in as a Male Cousin from a Pacifist Sister of Zeoticus Gremory and take over as Heir Gremory (because Sirzechs is furious and made sure Millicas is a Lucifuge).",
     "conditions": [
       {
         "value": "Your Initial Peerage must leave room for Akeno Himejima as Queen, Koneko Toujou as a Rook, and Gasper Vladi and Asia Argento as Bishops"
@@ -1976,8 +2199,7 @@
         "value": "You will be engaged to Ravel Phenex, because Politics. She is immune to Company Abilities because of this and you must keep her willing for the marriage (even if she doesn't like you)"
       }
     ],
-    "reward": "365 Credits upon leaving DxD",
-    "desc": "DxD is one of our best earning Worlds, but it is a dangerous place. It seems one of your Peers has forgotten that and somehow (we have no idea how they managed it) got killed while being a Rias Substitute. Since we like this World, we try to keep variations existing. Your job is to pick up the slack created by the death of Rias Gremory, Yuuto Kiba and Issei Hyoudou has created. You will Extra in as a Male Cousin from a Pacifist Sister of Zeoticus Gremory and take over as Heir Gremory (because Sirzechs is furious and made sure Millicas is a Lucifuge).",
+    "title": "Righting A Wrong",
     "objectives": [
       {
         "value": "Have Ravel Phenex fall for you",
@@ -1990,19 +2212,19 @@
         "reward": "The Traded Piece as a Capture and a Company Clone of their 'partner' (i.e. their twin or the one that shares their type)"
       },
       {
+        "value": "Help Riser persuade Sirzechs of his 'Regret'",
         "reward": "Company Clone of Grayfia Lucifuge and Yubelluna",
-        "type": "Companions",
-        "value": "Help Riser persuade Sirzechs of his 'Regret'"
+        "type": "Companions"
       },
       {
-        "value": "Have any of Rias' original Peerage fall for you without Binding",
+        "type": "Credits",
         "reward": "Their Buy Value in Credits on top of what you get for Capturing them via love confession",
-        "type": "Credits"
+        "value": "Have any of Rias' original Peerage fall for you without Binding"
       },
       {
+        "value": "Impregnate Venelana Gremory without Zeoticus finding out that he isn't the Father",
         "reward": "Rias Gremory (Clone)",
-        "type": "Companions",
-        "value": "Impregnate Venelana Gremory without Zeoticus finding out that he isn't the Father"
+        "type": "Companions"
       }
     ],
     "uid": "ZMUxs"
@@ -2613,23 +2835,23 @@
     "uid": "tTaRU"
   },
   {
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1041471388927668405/Screenshot_10.jpg",
-    "loca": "BTVS/Angel",
     "budget": 140,
+    "loca": "BTVS/Angel",
+    "title": "Early eugenics miracle baby",
     "reward": "Template Stacking I (Vampiric Powers) for a member of your retinue",
-    "source": "",
     "objectives": [],
-    "rewardType": "Perks",
     "desc": "Get Angel to impregnate Darla before she dies. Their child is a hero of prophecy and canonically the parent of the incarnation of higher being Jasmine.",
+    "scope": "Quick",
+    "uid": "tBYcE",
+    "rewardType": "Perks",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1041471388927668405/Screenshot_10.jpg",
+    "source": "",
     "conditions": [
       {
-        "value": "Don't capture either of Darla and Angel before the child is born"
+        "value": "Don't capture either Darla or Angel before the child is born"
       }
     ],
-    "scope": "Quick",
-    "author": "Silveod",
-    "title": "Early eugenics miracle baby",
-    "uid": "tBYcE"
+    "author": "Silveod"
   },
   {
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/1040417284822405151/Screenshot_7.jpg",
@@ -2727,7 +2949,9 @@
     "uid": "qpTSl"
   },
   {
-    "desc": "This World and its Women are wasted on Issei Hyoudou. Who has a literal harem throwing themselves at them and a massive libido, yet still has their V Card?! It isn't fair to the average man and it sure as hell isn't fair to the women. Now you are to fix that.\n\nStart in this World with the Sacred Gear: Boosted Gear. Work towards becoming the Greatest Red Dragon Emperor to ever live and have a harem (three minimum) of satisfied women.",
+    "image": "https://wallpapercave.com/wp/wp5320220.jpg",
+    "source": "",
+    "title": "Be A Better Red Dragon Emperor",
     "conditions": [
       {
         "value": "Extra (10) Origin or a Blue Star Substitute/Possess With Template Stacking I (Boosted Gear)"
@@ -2745,41 +2969,43 @@
         "value": "Binding's don't Capture anyone until they either confess their Love to you or they get pregnant with your Child"
       }
     ],
+    "scope": "Grand",
+    "reward": "2 TX Tickets",
     "objectives": [
       {
+        "type": "Perks",
         "reward": "Template Stacking I (Angel) for one of your Retinue. If the person is of a Darker Personality, they will Fall Immediately. If you wish to keep them as a Pure Angel, you will have to exercise your Contractor Abilities.",
-        "value": "Defeat Raynere during the Assassination Attempt (your survival is optional)",
-        "type": "Perks"
+        "value": "Defeat Raynare during the Assassination Attempt (your survival is optional)"
       },
       {
-        "type": "Other",
         "value": "Become a Reincarnated Devil under a Pureblood King.",
+        "type": "Other",
         "reward": "The Ability to 'Reincarnate' Blue Star Retinue Members into a Role. The Wings they gain is entirely on what type of personality they have and which DxD Species is closest. Knights/Bishops are raised to Teir 4, Rooks are raised to Teir 5 and Queens are raised to Teir 6. There are no 'Pawns' and a 'Side' must be finished before you can have more of them. 2x for each type per Side except Queens which is 1x per side."
       },
       {
-        "value": "Become a Brave Saint under a Seraph",
         "reward": "The Ability to 'Reincarnate' Blue Star Retinue Members into a Number. They gain Angel Wings, but if they have a Darker Personality, they will Fall Immediately. If five Numbers are together, they gain a small boost based on the 'Hand' they make. This boost works on Poker rules with the boost being 10% for each of the 10 possibilities in reverse value. Royal Flush giving each a 100% boost while a High Card gives only a 10% Boost. The 'Numbers' must be part of Making the Hand to get the Boost. A new Suit can only be gained when the previous one is filled.",
-        "type": "Other"
+        "type": "Other",
+        "value": "Become a Brave Saint under a Seraph"
       },
       {
-        "value": "Save Asia Argento before her Sacred Gear can be stolen",
+        "type": "Companions",
         "reward": "Asia Argento Capture",
-        "type": "Companions"
+        "value": "Save Asia Argento before her Sacred Gear can be stolen"
       },
       {
-        "reward": "Template Stacking I (Regeneration)",
         "value": "Defeat Riser Phenex in the Initial Rating Game solo",
+        "type": "Perks",
+        "reward": "Template Stacking I (Regeneration)"
+      },
+      {
+        "reward": "Template Stacking I (Holy Element) or 30 Credits if you already have it.",
+        "value": "Defeat Irina Shidou and Xenovia Quarta in a spar",
         "type": "Perks"
       },
       {
-        "value": "Defeat Irina Shidou and Xenovia Quarta in a spar",
-        "type": "Perks",
-        "reward": "Template Stacking I (Holy Element) or 30 Credits if you already have it."
-      },
-      {
+        "reward": "200 Credits",
         "value": "Defeat Kokabiel when he appears in Kuoh before Vali can get to him.",
-        "type": "Credits",
-        "reward": "200 Credits"
+        "type": "Credits"
       },
       {
         "type": "Credits",
@@ -2787,14 +3013,14 @@
         "value": "Defeat Vali when he betrays Azazel during the Peace Talks"
       },
       {
-        "reward": "Template Stacking I (DxD Senjutsu)",
+        "type": "Perks",
         "value": "Subdue Kuroka when she tries to Kidnap Koneko Toujou",
-        "type": "Perks"
+        "reward": "Template Stacking I (DxD Senjutsu)"
       },
       {
         "value": "Wound Loki before he is subdued",
-        "reward": "Lady Loki from Marvel Comics",
-        "type": "Companions"
+        "type": "Companions",
+        "reward": "Lady Loki from Marvel Comics"
       },
       {
         "value": "Defeat Cao Cao in your initial encounter",
@@ -2802,36 +3028,32 @@
         "reward": "Yasaka Capture and Kunuo Adoption (this will last at least until her 18th birthday)"
       },
       {
+        "value": "Defeat a Satan (Old or New)",
         "type": "Other",
-        "reward": "Unlocks the ability to have Multiple sets of Wings if you're a Devil. 300 Credits if you aren't.",
-        "value": "Defeat a Satan (Old or New)"
+        "reward": "Unlocks the ability to have Multiple sets of Wings if you're a Devil. 300 Credits if you aren't."
       },
       {
-        "type": "Companions",
+        "reward": "Ophis Capture and her Spawn Lilith (Clone)",
         "value": "Save Ophis from Rizevim Lucifer",
-        "reward": "Ophis Capture and her Spawn Lilith (Clone)"
+        "type": "Companions"
       },
       {
-        "reward": "Misla Bael (Clone) with a Power Swap with Sairaorg Bael",
+        "value": "Defeat Sairaorg Bael one on one",
         "type": "Companions",
-        "value": "Defeat Sairaorg Bael one on one"
+        "reward": "Misla Bael (Clone) with a Power Swap with Sairaorg Bael"
       },
       {
         "value": "Defeat or Befriend Great Red",
-        "reward": "True Dragon Form Similar to Ddraig's unlocked.",
-        "type": "Other"
+        "type": "Other",
+        "reward": "True Dragon Form Similar to Ddraig's unlocked."
       }
     ],
-    "scope": "Grand",
-    "reward": "2 TX Tickets",
-    "source": "",
-    "budget": 300,
     "author": "FinSexual92",
-    "image": "https://wallpapercave.com/wp/wp5320220.jpg",
-    "title": "Be A Better Red Dragon Emperor",
-    "loca": "High School DxD",
+    "uid": "EZojS",
+    "budget": 300,
     "rewardType": "TX Tickets",
-    "uid": "EZojS"
+    "desc": "This World and its Women are wasted on Issei Hyoudou. Who has a literal harem throwing themselves at them and a massive libido, yet still has their V Card?! It isn't fair to the average man and it sure as hell isn't fair to the women. Now you are to fix that.\n\nStart in this World with the Sacred Gear: Boosted Gear. Work towards becoming the Greatest Red Dragon Emperor to ever live and have a harem (three minimum) of satisfied women.",
+    "loca": "High School DxD"
   },
   {
     "rewardType": "Credits",
@@ -5348,14 +5570,21 @@
     "uid": "SygdN"
   },
   {
-    "rewardType": "Companions",
-    "source": "",
+    "objectives": [
+      {
+        "type": "Perks",
+        "value": "Find a way to purify the Holy Grail and have Illya actually gain the True Magic of the Einzbern without dying or dooming humanity. ",
+        "reward": " Soul Talent and you gain a TS I and II for Berserker Heracles."
+      }
+    ],
+    "reward": "Irisviel von Einzbern, Kiritsugu Emiya, Hisau Maya and Natalia Kaminski are revived and bound to you. 50% of the capture value of every Servant you defeated in combat.",
     "uid": "Syplv",
-    "budget": 360,
     "scope": "Standard",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1020005823264600155/42116112830c9b74d588084b3350d216.png",
+    "budget": 360,
     "conditions": [
       {
-        "value": "You must possess a non-native of the Nasuverse or drop in as is. A TS of a generic Servant must be applied to you."
+        "value": "You must possess a non-native of the Nasuverse or drop in as is. A TS of a generic Servant will be applied to you free of charge."
       },
       {
         "value": "You will be given the non-standard \"Foreigner\" class and a new person will be given a command seal by the Grail to fill the missing slot for a basic class."
@@ -5367,19 +5596,12 @@
         "value": "Either get Illya her revenge on Emiya Shirou or fix the relationship between the estranged siblings. "
       }
     ],
-    "desc": "Illyasviel von Einzbern is expected to become master of servant Berserker during the 5th Holy Grail War. Unfortunately her fate during it rarely leads to a happy ending. At best she can hope to live a few more years beyond the war, dying young but at least with bittersweet happiness on her lips. At other times she sacrifices her life for the sake of her adopted sibling. Worst case she ends up dying painfully, heart ripped out after her protector got slaughtered trying to defend her. We of the Company are curious to see if a sponsored guardian of ours could do better, which is where you come in. For this mission you will replace Berserker as Illya's Servant and his job to protect her from danger. Your victory conditions are for her to survive the Grail War, have her health problems fixed and deal with her adopted sibling.",
-    "title": "Snow Fairy's Bodyguard",
+    "source": "",
     "loca": "Nasuverse",
-    "reward": "Irisviel von Einzbern, Kiritsugu Emiya, Hisau Maya and Natalia Kaminski are revived and bound to you. 50% of the capture value of every Servant you defeated in combat.",
-    "objectives": [
-      {
-        "reward": " Soul Talent and you gain a TS I and II for Berserker Heracles.",
-        "type": "Perks",
-        "value": "Find a way to purify the Holy Grail and have Illya actually gain the True Magic of the Einzbern without dying or dooming humanity. "
-      }
-    ],
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1020005823264600155/42116112830c9b74d588084b3350d216.png",
-    "author": "Heaven Canceler"
+    "author": "Heaven Canceler",
+    "rewardType": "Companions",
+    "desc": "Illyasviel von Einzbern is expected to become master of servant Berserker during the 5th Holy Grail War. Unfortunately her fate during it rarely leads to a happy ending. At best she can hope to live a few more years beyond the war, dying young but at least with bittersweet happiness on her lips. At other times she sacrifices her life for the sake of her adopted sibling. Worst case she ends up dying painfully, heart ripped out after her protector got slaughtered trying to defend her. We of the Company are curious to see if a sponsored guardian of ours could do better, which is where you come in. For this mission you will replace Berserker as Illya's Servant and his job to protect her from danger. Your victory conditions are for her to survive the Grail War, have her health problems fixed and deal with her adopted sibling.",
+    "title": "Snow Fairy's Bodyguard"
   },
   {
     "image": "https://i.imgur.com/0xJBMOr.png",
@@ -6490,6 +6712,25 @@
   {
     "image": "https://derpicdn.net/img/2020/8/31/2435542/large.png",
     "author": "Ratcatcher",
+    "loca": "My Little Pony",
+    "uid": "gexgH",
+    "scope": "Quick",
+    "reward": "200 credits, instant Capture of the targets",
+    "title": "Triple Sundown",
+    "desc": "Three different characters in My Little Pony: Friendship Is Magic have names that refer to the sun going down: Twilight Sparkle, Sunset Shimmer, and the OTHER Twilight Sparkle (AKA Sci-Twi). Your goal in this mission is to corrupt them into a harem.",
+    "budget": 100,
+    "objectives": [
+      {
+        "reward": "Captured as Midnight Sparkle with the appropriate rating, can change between forms",
+        "value": "Sci-Twi is corrupted as Midnight Sparkle",
+        "type": "Companions"
+      },
+      {
+        "type": "Companions",
+        "value": "Sunset Shimmer is corrupted while in Daydream Shimmer form",
+        "reward": "Can change between normal and Daydream form, everyone in the group is bumped one tier after Step 6"
+      }
+    ],
     "conditions": [
       {
         "value": "Do it yourself"
@@ -6501,27 +6742,8 @@
         "value": "The targets must become your willing harem, caring about you over everything else, and also want each other in the group. You can use any mean other than outright capture, even holding them prisoners"
       }
     ],
-    "desc": "Three different characters in My Little Pony: Friendship Is Magic have names that refer to the sun going down: Twilight Sparkle, Sunset Scimmer, and the OTHER Twilight Sparkle (AKA Sci-Twi). Your goal in this mission is to corrupt them into a harem.",
-    "loca": "My Little Pony",
-    "objectives": [
-      {
-        "value": "Sci-Twi is corrupted as Midnight Sparkle",
-        "type": "Companions",
-        "reward": "Captured as Midnight Sparkle with the appropriate rating, can change between forms"
-      },
-      {
-        "type": "Companions",
-        "value": "Sunset Shimmer is corrupted while in Daydream Shimmer form",
-        "reward": "Can change between normal and Daydream form, everyone in the group is bumped one tier after Step 6"
-      }
-    ],
-    "scope": "Quick",
-    "title": "Triple Sundown",
-    "budget": 100,
-    "rewardType": "Other",
     "source": "",
-    "reward": "200 credits, instant Capture of the targets",
-    "uid": "gexgH"
+    "rewardType": "Other"
   },
   {
     "scope": "Grand",
@@ -13640,27 +13862,30 @@
     "budget": 60
   },
   {
-    "author": "Dontenglish",
-    "budget": 0,
-    "conditions": [],
-    "desc": "Rias gremory is currently engaged to riser Phenix and the only way for her to escape from her fate is a rating game you have to help her win this match and gain her freedom",
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992861649176383538/High_School_DxD_-_08_-_Large_29.webp",
     "loca": "High School DxD",
+    "author": "Dontenglish",
+    "conditions": [],
+    "uid": "ChAy7",
+    "source": "",
+    "rewardType": "Other",
     "objectives": [
       {
-        "reward": "+10 credits or racial template Devil variant phenix",
-        "value": "beat riser phenix by your self"
+        "reward": "+10 credits or Racial Template Devil variantPhenex",
+        "type": "Other",
+        "value": "Beat Riser Phenex by yourself"
       },
       {
-        "reward": "+30 credits an one free tier 7 or below devil from highschool dxd",
-        "value": "beat riser and his whole team by your self"
+        "type": "Other",
+        "value": "Beat Riser and his whole team by yourself",
+        "reward": "+30 credits an one free tier 7 or below devil from highschool dxd"
       }
     ],
-    "reward": "+20 credits or any current loan you have is half ",
-    "scope": "Quick",
-    "source": "",
+    "reward": "+20 credits or any current loan you have is reduced by half",
+    "budget": 300,
     "title": "winner winner chicken dinner",
-    "uid": "ChAy7"
+    "scope": "Quick",
+    "desc": "Rias Gremory is currently engaged to Riser Phenex and the only way for her to escape from her fate is to win a rating game. You have to help her win this match and gain her freedom.",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992861649176383538/High_School_DxD_-_08_-_Large_29.webp"
   },
   {
     "author": "Dontenglish",

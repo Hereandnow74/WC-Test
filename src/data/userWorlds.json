@@ -1966,12 +1966,6 @@
     "image": "https://static3.cbrimages.com/wordpress/wp-content/uploads/2021/11/Dynasty-Warriors.jpg"
   },
   {
-    "worldName": "Elden Ring",
-    "rating": 9,
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992756813466456115/1219390.jpg",
-    "additional": "Melina allows you and your waifus to pay for level-ups with Runes, just like their counterparts from the other games."
-  },
-  {
     "worldName": "Hellboy",
     "rating": 4,
     "condition": [
@@ -5382,5 +5376,11 @@
   {"worldName":"The Simpsons","rating":4,"image":"https://cdn.vox-cdn.com/thumbor/IQab79SuQ1PnrneGti_uy_pxTKo=/148x0:1768x1080/1280x854/cdn.vox-cdn.com/uploads/chorus_image/image/47413330/the-simpsons-tv-series-cast-wallpaper-109911.0.0.jpeg"},
   {"worldName":"Hotel Transylvania","rating":3,"image":"https://media.wired.com/photos/5932a1419be5e55af6c2640e/master/pass/hotel-transylvania-3d-1680x1050.jpg"},
   {"worldName":"Maji de Watashi ni Koi Shinasai!!","rating":5, "image": "https://i.ytimg.com/vi/gWF9_4TjJCM/maxresdefault.jpg"},
-  {"worldName":"Seiken Tsukai no World Break","rating":6,"image":"https://animetide.com/wp-content/uploads/world-break-aria-of-curse-for-a-holy-swordsman-season-2.jpg","condition":[{"name":"Anime Continuity","rating":6}]}
+  {"worldName":"Seiken Tsukai no World Break","rating":6,"image":"https://animetide.com/wp-content/uploads/world-break-aria-of-curse-for-a-holy-swordsman-season-2.jpg","condition":[{"name":"Anime Continuity","rating":6}]},
+  {"worldName":"Queen's Blade","rating":5,"image":"https://i.imgur.com/W4N2SjB.jpg"},
+  {"worldName":"Beast Tamer","rating":3,"image":""},
+  {"worldName":"Blue Archive","rating":5,"image":"https://i.imgur.com/EvcdoG4.png"},
+  {"worldName":"Kidnapped Dragons","rating":7,"image":"","condition":[{"rating":8,"name":"Bad End - Failed Regression"},{"name":"Unexpected Variable ","rating":9}]},
+  {"worldName":"Parasyte","rating":3,"image":""},
+  {"worldName":"The Addams Family","rating":2,"image":"https://popculturetimes.com/wp-content/uploads/2020/06/maxresdefault-5.jpg","condition":[{"name":"Wednesday","rating":3}]}
 ]

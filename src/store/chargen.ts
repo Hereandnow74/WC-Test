@@ -80,11 +80,7 @@ const intensities = storeType('intensities', [] as {
 const pvpPerks = storeType<Perk[]>('pvpPerks', [])
 
 const binding = storeType<Perk[]>('binding', [
-  {
-    title: 'Company Stamp',
-    type: 'Stamp',
-    cost: 0,
-  },
+  { uid: 'XnYV4', title: 'Company Stamp', count: 1, cost: 0, type: 'Stamp' },
 ])
 
 const luresBought = storeType<Perk[]>('luresBought', [])

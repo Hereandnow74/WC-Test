@@ -2,7 +2,7 @@
 <template>
   <div
     class="fixed bottom-0 w-full text-gray-100 transition-transform transform"
-    :style="visible ? `background: url('/img/giphy.gif') repeat;` : ''"
+    :style="visible ? `background: url('/img/giphy3.gif') repeat;` : ''"
     :class="visible ? 'translate-y-0' : 'translate-y-[calc(100%-1.8rem)]'"
     @mousedown="visible = false"
   >

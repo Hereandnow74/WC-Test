@@ -485,11 +485,6 @@ export function specificAvailable(perk: WaifuPerk): boolean {
   }).length
         || perk.waifuUID.includes(startingOrigin.value.uid))
     return true
-  if (startingOrigin.value.character) {
-    const name = startingOrigin.value.character.split(' ')[0]
-    return perk.waifu.join('').includes(name)
-  }
-
   return false
 }
 
@@ -582,11 +577,7 @@ export function clearAll() {
   intensities.value = []
   pvpPerks.value = []
   binding.value = [
-    {
-      title: 'Company Stamp',
-      type: 'Stamp',
-      cost: 0,
-    },
+    { uid: 'XnYV4', title: 'Company Stamp', count: 1, cost: 0, type: 'Stamp' },
   ]
   luresBought.value = []
   otherPerks.value = []

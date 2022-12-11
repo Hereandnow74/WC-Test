@@ -3,7 +3,7 @@
     <span class="text-gray-100">{{ start }}</span>
     <span v-for="el, i in list" :key="i" :class="color">
       <span v-if="i != 0" class="text-orange-500">, </span>
-      {{ el[listKey] }}
+      {{ el[listKey].replace(/ Talent| Defense/, '') }}
     </span>
     <span class="text-gray-100 ml-1"> {{ end }}</span>
   </span>

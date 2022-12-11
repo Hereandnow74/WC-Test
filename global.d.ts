@@ -115,6 +115,7 @@ interface Mission {
 }
 
 export interface Perk {
+  uid: string
   title: string
   cost: number
   count?: number
