@@ -79,7 +79,7 @@ export const questionableDLC: DLCPerk[] = [
     title: 'Waifu Scanner',
     image: 'https://i.pinimg.com/originals/ea/ec/5e/eaec5ea0f9f447bd981df4ac47794ad4.png',
     cost: 1,
-    desc: 'The Company doesn’t expect you to know or recognize every single waifu in the setting you are in, so they throw you a bone. With this perk, if you focus on a person it will show you if they are in the Catalog and their tier no matter what disguies they are using.',
+    desc: 'The Company doesn’t expect you to know or recognize every single waifu in the setting you are in, so they throw you a bone. With this perk, if you focus on a person it will show you if they are in the Catalog and their tier no matter what disguises they are using.',
     category: 'Other',
     whitelist: [],
     special: '',

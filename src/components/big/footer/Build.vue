@@ -226,22 +226,32 @@
         </li>
       </ul>
     </div>
-    <Button
-      v-if="flags.chargen"
-      label="Finish Build"
-      size="Small"
-      bg-color="bg-red-500"
-      class="self-end"
-      @click="finishBuild"
-    />
-    <Button
-      v-else
-      label="Return to Chargen"
-      size="Small"
-      bg-color="bg-gray-600"
-      class="self-end"
-      @click="returnToChargen"
-    />
+    <div class="flex gap-2 py-2 self-end">
+      <Button
+        v-if="flags.chargen"
+        label="Finish Build"
+        size="Small"
+        bg-color="bg-red-500"
+        class="self-end"
+        @click="finishBuild"
+      />
+      <!-- <Button
+        v-if="flags.chargen"
+        label="Publish Build"
+        size="Small"
+        bg-color="bg-purple-500"
+        class="self-end"
+        @click="finishBuild"
+      /> -->
+      <Button
+        v-else
+        label="Return to Chargen"
+        size="Small"
+        bg-color="bg-gray-600"
+        class="self-end"
+        @click="returnToChargen"
+      />
+    </div>
   </div>
 </template>
 

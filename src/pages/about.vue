@@ -1,6 +1,17 @@
 <template>
   <div class="max-w-screen-md mt-2 lg:pl-0 mb-8 text-lg">
     <div class="bg-green-100 dark:bg-green-900 p-4 shadow-md rounded flex flex-col gap-4">
+      <div class="bg-green-500 text-white p-4 rounded-lg shadow">
+        <h3 class="font-bold text-xl mb-2">
+          Green Card
+        </h3>
+        <p class="mb-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+        <button class="bg-green-400 text-white px-4 py-2 rounded-lg">
+          Click me!
+        </button>
+      </div>
       <h3 class="text-2xl text-center">
         About Page
       </h3>

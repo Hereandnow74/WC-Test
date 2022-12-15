@@ -54,7 +54,7 @@ DLCgenericPerks.push({
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'Toggle',
   image: 'https://i.ibb.co/tmwDN2Q/Toggle.jpg',
-  cost: 50,
+  cost: 20,
   max: 10,
   complex: 'target',
   desc: `You can use your HUD to adjust absolutely any and all abilities, perks, skills, traits, etc. that you have, from this CYOA or 3rd party sources, from 0-100%. This perk does not allow you to raise any ability or parameter above 100%, even if something else is reduced or turned off. 
@@ -330,11 +330,9 @@ DLCperks.push({
   title: 'Amazon-free Warranty',
   image: 'https://i.ibb.co/yn9FF3j/Amazon-Free-Warranty.jpg',
   cost: 200,
-  multiple: true,
-  max: 4,
-  desc: `Instead of tracking the Amazon discount in Warranty Plan, you can directly pay for a shorter respawn timer. This perk can be purchased up to 4 times, with each purchase further reducing the respawn time of your subjects. The first purchase of this perk reduces the time to 12 hours, then 1 hour after the second purchase, 5 minutes after the third, and instant after the fourth.
+  desc: `Amazon tracking can be incredibly inconvenient. Who knows when your delivery will actually arrive? Instead of masses of Amazons to reduce Warranty Plan’s timer, this perk directly shortens the respawn timer for your subjects to 5 minutes.
   `,
-  whitelist: ['Warranty Plan'],
+  whitelist: ['Express Delivery'],
 })
 
 DLCperks.push({
@@ -380,24 +378,9 @@ DLChomes.push({
   category: 'Home',
   image: 'https://i.ibb.co/9Y746Qf/Creature-Feature-I.jpg',
   cost: 500,
-  desc: `From your control center, you can select any non-sapient wildlife you have encountered of T6 or less to populate your Demiplane. Binding wildlife from your Demiplane as a Familiar may be possible, but does not provide credits.
-  <p>Examples: Jurassic Park, Star Wars’ Rancor and Krayt Dragon</p>
+  desc: `From your control center, you can select any wildlife you have encountered to populate your Demiplane. Binding wildlife from your Demiplane as a Familiar does not provide credits.
     `,
-  whitelist: ['Life’s A Beach'],
-})
-
-DLChomes.push({
-  uid: 'Jsh2A',
-  dlc: 'Despin',
-  dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
-  title: 'Creature Feature II',
-  category: 'Home',
-  image: 'https://i.ibb.co/GsP7G0g/Creature-Feature-II.jpg',
-  cost: 11111,
-  desc: `From your control center, you can select any wildlife you have encountered to populate your Demiplane. Binding wildlife from your Demiplane as a Familiar may be possible, but does not provide credits.
-  <p>Examples: nearly anything from Dungeons & Dragons, Go Go Godzilla!</p>
-    `,
-  whitelist: ['Creature Feature I'],
+  whitelist: ['Laws of the Jungle'],
 })
 
 DLChomes.push({
@@ -408,10 +391,10 @@ DLChomes.push({
   category: 'Home',
   image: 'https://cdn.discordapp.com/attachments/925963686433132644/1020819161846390944/Image.png',
   cost: 11111,
-  desc: `From your control center, you can create life to populate your Demiplane. Binding creatures from your Demiplane may be possible, but does not provide credits.
+  desc: `From your control center, you can create life to populate your Demiplane. Binding creatures from your Demiplane does not provide credits.
   <p>If you aren’t already, you become a TX yourself.</p>
     `,
-  whitelist: ['Creature Feature II'],
+  whitelist: ['Creature Feature'],
 })
 
 DLChomes.push({

@@ -81,7 +81,7 @@ export const challenges = [
     dlc: 'Om1cr0n',
     cost: 0,
     desc: `
-    <p>All bindings will work only on unconsciousness and defeated by you copanions, binding will happen after 3s of continuous application regardless of previous requirements.</p>
+    <p>All bindings will work only on unconsciousness and defeated by you characters, binding will happen after 3s of continuous application regardless of previous requirements.</p>
     `,
   },
   {
