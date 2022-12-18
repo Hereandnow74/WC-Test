@@ -255,7 +255,7 @@ export const invasionPvP: IntensityPvP[] = []
 invasionPvP.push({
   uid: 'G8xXT',
   title: 'White Eye Orb',
-  image: 'https://cdn.discordapp.com/attachments/925963686433132644/993105142561914880/Screenshot_1.jpg',
+  image: 'https://i.imgur.com/Aq3mmTg.jpg',
   cost: 75,
   pvp: true,
   /* html */
@@ -289,7 +289,7 @@ invasionPvP.push({
 invasionPvP.push({
   uid: 'pdsFe',
   title: 'Blue Eye Orb',
-  image: 'https://cdn.discordapp.com/attachments/925963686433132644/993109119378665482/Screenshot_3.jpg',
+  image: 'https://i.imgur.com/djT31F8.jpg',
   cost: 15,
   pvp: true,
   desc: `More similar to the red soapstone or dragon eyes from the many parallels of an ashen world than the original blue eye orb, ownership of this item allows you to specifically invite another contractor to a duel between your two teams, skipping the normal matchmaking process. This otherwise follows the regular Arranged PvP procedures.

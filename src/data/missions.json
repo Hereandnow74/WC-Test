@@ -1,45 +1,447 @@
 [
-  
   {
-    "desc": "Before YHVH came to the picture the world was full of entities called 'Nahobino' who are all essentially gods who all fought over the The Throne of Creation which grants whomever claims it control over the Universe as a near Omnipotent being.When YHVH Claimed it he took the Nahobinos' Knowledge reducing them to demons a little while later Lucifer tempt Humans into eating the Fruit of Knowledge Claiming it for themselves allowing demons the opportunity to fuse with those who has their knowledge to become Nahobino once more and try to claim for the throne once more. This is where you come in Contractor, In this world god is dead and the throne is empty, become a Nahobino and Claim the Throne for yourself.",
-    "rewardType": "TX Tickets",
-    "image": "https://static1.thegamerimages.com/wordpress/wp-content/uploads/2021/11/Shin-Megami-Tensei-V-Uphold-Gods-Order-Ending.jpg",
+    "reward": "Twice the capture reward",
+    "rewardType": "Other",
+    "budget": 500,
+    "author": "Ratcatcher",
+    "image": "",
+    "scope": "Grand",
+    "desc": "Sailor Moon and her Guardians have a rather blatant weakness: boys. A skilled lover could take advantage of it by seducing them all... And that's your job for this mission.",
+    "loca": "Sailor Moon",
+    "title": "Seduction Under the Moon",
+    "source": "",
+    "conditions": [
+      {
+        "value": "Forage: only local captures may help."
+      },
+      {
+        "value": "You cannot use force at all. If they push you, you go away. If they say no and mean it, you leave them alone for the time being (though if you can make them doubt them about it, go on). If it's in a BDSM session, ignore it unless they say the safe word."
+      },
+      {
+        "value": "You must seduce Usagi, Minako, Ami, Rei, and Makoto without using any Binding. Then proceed to have sex with them until they're too tired to continue, and repeat until they fall for you."
+      }
+    ],
     "objectives": [
       {
-        "type": "Credits",
-        "reward": "100",
-        "value": "Do all the sidequest from SMT 5"
+        "value": "Seduce Haruka, Michiru, and Setsuna through the same methods as the main mission.",
+        "reward": "Copy of the Three Talismans and the Holy Grail for your own use",
+        "type": "Other"
       },
       {
-        "type": "Credits",
-        "reward": "150",
-        "value": "Prevent Tao's death and have her join you on her own will. (No Bindings or Lures)"
-      },
-      {
-        "type": "Perks",
-        "value": "Complete the Demonic Compendium",
-        "reward": "Template Stacking I"
-      },
-      {
-        "reward": "Pocket star",
-        "value": "Defeat Lucifer by yourself",
+        "reward": "No Moon and Pharaoh's Herald perks applied automatically",
+        "value": "Seduce Chibiusa and Hotaru through the same methods as the main mission.",
         "type": "Perks"
       },
       {
-        "value": "Defeat all the Fiends and Defeat and recruit the Demi-Fiend",
+        "reward": "Your own Silver Crystal, plus the Crystal Palace added to your Grand Manor",
+        "value": "Pull it off during Crystal Tokyo",
+        "type": "Other"
+      }
+    ],
+    "uid": "NCWRa"
+  },
+  {
+    "loca": "Generic",
+    "reward": "5 Credits per night",
+    "scope": "Quick",
+    "image": "",
+    "title": "A Toy's Story",
+    "source": "",
+    "desc": "When you were a child and you wanted a bit more pocket money, you did a few more chores. This is our version of that Contractor. Not all our clients can afford our best services and quite frankly, we need out entertainment somehow. In exchange for a few Credits you will spend a night as a sex toy as it is being used by someone. You will have an awareness of what is happening and feel everything that happens to your toy self. We recommend at least one Stack of Stress and Addiction Defence. There is no limit to how many times you can take this Missino.",
+    "rewardType": "Credits",
+    "objectives": [
+      {
+        "reward": "5 Credits",
+        "value": "Be a worn inactive sex toy (Spanking Glove, Clamp, Ball Gag, etc)",
+        "type": "Credits"
+      },
+      {
+        "value": "Be a mechanical and/or penetrative sex toy (Dildos, Vibrators, Fleshlights, etc)",
+        "type": "Credits",
+        "reward": "10 Credits"
+      },
+      {
+        "value": "Be a large or intricate sex toy (Blow Up Doll, Fuck Machine, Furniture with a Penetrative Element)",
+        "type": "Credits",
+        "reward": "15 Credits"
+      },
+      {
+        "value": "Sign up to be more than one sex toy at once (you will be aware of all of them at the same time and may only be one of each type at once)",
+        "reward": "Double the Credit total you earn",
+        "type": "Credits"
+      }
+    ],
+    "author": "FinSexual92",
+    "budget": 0,
+    "conditions": [
+      {
+        "value": "Your body will be a sex toy. One that is in on the action rather than say a table or cuff"
+      }
+    ],
+    "uid": "Tsmyj"
+  },
+  {
+    "budget": 80,
+    "rewardType": "Credits",
+    "objectives": [
+      {
+        "reward": "250 Credits and a Companion Ticket of equal Tier to the World Tier",
+        "value": "Forgo the Protection against Vampire Weaknesses (though you may gain them yourself through hard work and pain)",
+        "type": "Credits"
+      },
+      {
+        "value": "Seduce and Turn your Vampire Hunter Rival at their own request",
+        "reward": "Corruption Defence x1",
+        "type": "Perks"
+      },
+      {
+        "reward": "Mind Defence x1",
+        "value": "Capture (physically) and Break your Vampire Hunter Rival's mind to get a Love Confession",
+        "type": "Perks"
+      },
+      {
+        "reward": "Companion Ticket of equal Tier to the Vampire Hunter Rival",
+        "type": "Companions",
+        "value": "Forcefully Turn your Vampire Hunter Rival and ensure they commit suicide"
+      },
+      {
+        "value": "Impregnate (or be Impregnated) by your Vampire Hunter Rival while they are human and ensure the child survives till birth",
+        "type": "Credits",
+        "reward": "100 Credits"
+      },
+      {
+        "value": "Find a way to Evolve into a Higher Tier of Vampire",
+        "reward": "You can now teach Vampire abilities to anyone that is either a Vampire or has friendly relations to Vampires regardless of species (even if you yourself do not yet have said abilities but someone in your Retinue does)",
+        "type": "Other"
+      },
+      {
+        "type": "TX Tickets",
+        "value": "Conquer the World you are in and rule for a Decade",
+        "reward": "1 TX Ticket"
+      }
+    ],
+    "author": "FinSexual92",
+    "source": "",
+    "scope": "Standard",
+    "reward": "500 Credits and a $2,000,000 Bonus (or equivalent)",
+    "title": "Red Is My Colour",
+    "image": "",
+    "desc": "One of our VIPs is still furious about the whole 'Twilight' thing making a mockery of their Vampire Fetish. They want a proper Vampire story to be told which is where you come in, Contractor. By accepting this mission, you will be given Template Stacking I of a Vampire and your exploits there will inspire a novel for the VIP. Your type of Vampire may vary a little but the basics are thus; Enhanced Senses, Strength in the low Ton range, Peak Human Speed with Flitting for bursts of speed (around 50m/s sustainable for around 2s at most) and a form of Magic (be it shapeshifting or hypnotism). By Default you and your KISS are immune to traditional Vampire Weaknesses, aren't Undead and are Fertile enough to breed with anything (this is not a euphemism or much of an exaggeration, anything that breeds with Egg and Sperm Combos can Impregnate you or be Impregnated by you if you have the right bits). To ensure it isn't all sunshine and daisies, there will be someone out there who is exactly your type but dead set on becoming a Vampire Hunter (by the time you meet they will be of equal Tier to you even if they're completely human).",
+    "loca": "Generic",
+    "conditions": [
+      {
+        "value": "The only Non-Vampire Abilities you can are the local ones"
+      },
+      {
+        "value": "You must create a lasting Vampire Dynasty and have at least three 'Brides' by the end of your time there. (Depending on your Gender and Preference this can be relaxed as long as you have three main SO)"
+      },
+      {
+        "value": "The World you go to will not have a Vampire Population (or not one properly relevant to Canon like Harry Potter)"
+      },
+      {
+        "value": "Bindings don't work. Captures are done via Turning or Love Confessions (mind rape doesn't count but breaking their will does)"
+      }
+    ],
+    "uid": "qHDCY"
+  },
+  {
+    "rewardType": "Credits",
+    "budget": 0,
+    "desc": "You know what I could see more of? Overlords! Evil Kings! Arch-Mages of evil persuasions! That's where you come in. I'm willing to pay you company credits for entertaining me as an Evil Ruler. Just drop into a setting and take it(or at least a medium-sized country) over within a years time. I'll even add in bonus rewards for doing a good job.",
+    "image": "",
+    "title": "With an Iron Fist",
+    "source": "",
+    "loca": "Generic",
+    "author": "ClayUndead",
+    "scope": "Grand",
+    "reward": "50 Credits",
+    "objectives": [
+      {
+        "reward": "100",
+        "value": "Rule for a Decade",
+        "type": "Credits"
+      },
+      {
+        "type": "Credits",
+        "reward": "250",
+        "value": "Rule for a Century"
+      },
+      {
+        "reward": "500",
+        "value": "Rule for a Millennia",
+        "type": "Credits"
+      },
+      {
+        "type": "TX Tickets",
+        "reward": "1 TX ticket",
+        "value": "Don't leave your controlled territory for the entirety of the Millennia"
+      },
+      {
+        "reward": "The full capture price of the captive OR 50 Credits",
+        "value": "Kidnap a Princess(or princess-like figure) and hold her captive for a year.",
+        "type": "Credits"
+      },
+      {
+        "value": "Start a rumor of a Prophecy of your downfall.",
+        "type": "Perks",
+        "reward": "Covert Talent OR 10 Credits"
+      },
+      {
+        "type": "Perks",
+        "value": "Defeat a Party of Heroes/Main Characters sent to end you.",
+        "reward": "Destiny Defense OR 50 Credits"
+      },
+      {
+        "reward": "50 Credits per Conquest",
+        "value": "Conquer another Country/Planet/System/Etc. (Repeatable)",
+        "type": "Credits"
+      },
+      {
+        "type": "TX Tickets",
+        "value": "Become the sole ruler in the setting",
+        "reward": "1 TX Ticket"
+      },
+      {
+        "value": "Collect a hoard of Gold, Treasures and Artifacts. Enough to fill 1000 cubic meters.",
+        "type": "Perks",
+        "reward": "Dragon Heart & Dragon Scale OR 150 Credits"
+      },
+      {
+        "type": "Credits",
+        "value": "Create a Phylactery via local methods.",
+        "reward": "25 Credits"
+      },
+      {
+        "type": "Credits",
+        "value": "Defeat or Enslave an already established Overlord/Evil King/Evil Arch-Mage",
+        "reward": "100 Credits"
+      },
+      {
+        "type": "Other",
+        "reward": "a T8 TS of any Danmachi God",
+        "value": "Start a religion with you as the Arch-Deity, where 90% of the worshipers truly believe you're a god."
+      },
+      {
+        "type": "Credits",
+        "reward": "15 Credits",
+        "value": "Capture and Train a local to be your Evil Misstress"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Conquer a medium-sized country/planet/System/Etc. compared to the entire setting."
+      },
+      {
+        "value": "Rule as an Evil King/Overlord/etc. for a year."
+      }
+    ],
+    "uid": "HDZZh"
+  },
+  {
+    "author": "NeroAlmia",
+    "image": "https://cdn.imgchest.com/files/k739cmrjl7q.jpg",
+    "title": "Bloody Palace - Multiversal Edition",
+    "objectives": [
+      {
+        "type": "Credits",
+        "value": "Defeat a foe for the first time.",
+        "reward": "5"
+      },
+      {
+        "reward": "5",
+        "value": "Defeat every foe in a Floor for the first time.",
+        "type": "Credits"
+      },
+      {
+        "value": "Reach Floor 10.",
+        "reward": "10",
+        "type": "Credits"
+      },
+      {
+        "value": "Defeat a Boss for the first time.",
+        "type": "Credits",
+        "reward": "10"
+      },
+      {
+        "type": "Credits",
+        "reward": "25",
+        "value": "Reach Floor 20 without losing a Companion for the first time."
+      },
+      {
+        "reward": "Tier 3 Ticket x1",
+        "value": "Reach Floor 20 alone for the first time.",
+        "type": "Companions"
+      },
+      {
+        "reward": "Tier 6 Ticket x1",
+        "value": "Reach Floor 50 for the first time.",
+        "type": "Companions"
+      },
+      {
+        "value": "Reach Floor 50 without losing any companion for the first time.",
+        "type": "Credits",
+        "reward": "75"
+      },
+      {
+        "type": "Credits",
+        "value": "Reach Floor 100 for the first time.",
+        "reward": "150"
+      },
+      {
+        "type": "Companions",
+        "reward": "Pick two previously fought Bosses as your Companions.",
+        "value": "Reach Floor 100 without taking damage."
+      }
+    ],
+    "reward": "None",
+    "budget": 0,
+    "conditions": [
+      {
+        "value": "This mission can be taken as many times as you want, unless you are currently completing another mission-"
+      },
+      {
+        "value": "All of the damage received during your stay at the Bloody Palace will be undone by the completion of the mission, including but not limited to the destruction of your body, mind and soul."
+      },
+      {
+        "value": "The mission will be considered completed when all of the combatants in the Contractor's side (Including the contractor himself) are no longer able to fight., or until the Contractor decides to leave after completing a floor."
+      },
+      {
+        "value": "The fights themselves are divided by \"floors\". Once you kill every foe in a floor, you will be given the chance to either proceed to a different floor, or to leave the Palace."
+      },
+      {
+        "value": "The battle on the floors are completely randomized. That said, every ten floors you will face a \"Boss\" for a lack of a better term that so while you may not be able to predict or anticipate your next foe, you can up to a certain extent prepare yourself for the challenge."
+      },
+      {
+        "value": "The difficulty of the challenge will be adjusted depending on your own capabilities, and those of your companions should you enter with them."
+      },
+      {
+        "value": "For fairness sake, you WON'T BE ABLE TO CAPTURE any of the foes in the Palace, and the effects of your Talents and Defenses will be reduced to their lower capacity until the completion of the mission."
+      }
+    ],
+    "desc": "Finding a chance to improve your skills and test your mettle without risking your life in the process is something that many of our Contractors seems to have trouble in doing. While there are a lot of non-combatant Contractors in our organization, thanks to recent developments with the ACC, we have deemed appropriate to both prepare our future Contractors to hold their ground in the case of finding their lives (Or worse, our devices) at risk, and to provide a place in where they might be able to improve their skills in real-life combat without having to face any of those pesky problems most humans complains such as suffering a permanent death or losing a limb o two.\n\nAs such, we have created the [Bloody Palace], or at least, a version based of the original thing, in where you can experience all of the hardships of a real fight to the death without having to worry about receiving permanent damage or losing your life, all while providing you with a nearly endless supply of targets and enemies to release your wrath.\n\nYou can enter alone, or with your retinue, but be warned that the challenge will adapt itself to your number and your Tier. Also, unlike the place this instance of the Bloody Palace is based from, this version is not limited to just demons. \n\nYorHa Androids, Machines infected with the Punishing Virus, SMT demons, Demonic Beasts, Servants, and even beings rated above Tier 9 may appear in the regular. If you ever feel like training yourself and acquire skills and knowledge that you won't normally have the chance of getting without throwing your life on the line, then go ahead and enter the Bloody Palace.",
+    "rewardType": "Other",
+    "loca": "Generic",
+    "source": "",
+    "scope": "Quick",
+    "uid": "hOpFq"
+  },
+  {
+    "loca": "Re:Zero",
+    "scope": "Standard",
+    "rewardType": "Other",
+    "reward": "A free individual copy of Template Stacking I&II of all of the aforementioned targets for you or your retinue. 250 Credits. A T6 Waifu of your own choosing. A Company-modified Authority of your own choosing, free of any secondary effects it would normally have on you.",
+    "budget": 10,
+    "author": "NeroAlmia",
+    "source": "https://forum.questionablequesting.com/members/neroalmia.72205/",
+    "conditions": [
+      {
+        "value": "The OG Setting: Universal Calibration, Calming Up and Meta-Shift are temporally disabled until the end of the mission."
+      },
+      {
+        "value": "Hidden Dragon: Your Tier will be limited to Tier 6 until the end of the mission or until we deem is safe enough for you to go all out. If your Tier is below 4, you will be granted a copy of Template Stacking I&II (limited to Tier 5) of your own choosing until the completion of the mission."
+      },
+      {
+        "value": "Don't Stand Out: You may only use Companions whose effective tier after step 4a is 6 or below, and only those whose physical features can be considered normal by this world's standard, or can be concealed to be perceived as such."
+      },
+      {
+        "value": "Late Insertion: You will be inserted in the capital of Lugnica during the start of Arc 3 to avoid any possible butterfly effect an early insertion might bring."
+      },
+      {
+        "value": "Capture all of the actives Archbishops of Sin in the current era (Petelgeuse, Regulus, Capella, Sirius and the Gluttony siblings)"
+      },
+      {
+        "value": "Capture the Knight of the Royal Candidate Priscilla Barielle, Aldebaraan."
+      },
+      {
+        "value": "Capture the Protagonist of the Setting, Subaru Natsuki."
+      }
+    ],
+    "objectives": [
+      {
+        "value": "Capture Subaru Natsuki without making him use his own Authority even once before the deed is done",
+        "type": "Credits",
+        "reward": "45 Credits"
+      },
+      {
+        "type": "Perks",
+        "value": "Capture the Royal Candidate, Emilia before the end of Arc 4 without Puck interfering",
+        "reward": "A copy of Template Stacking I&II: Emilia"
+      },
+      {
+        "reward": "20 Credits, A copy of Added Potential: Spirit Magic (Re:Zero) for yourself.",
+        "type": "Other",
+        "value": "Capture the Artificial Spirit, Beatrice, before reaching the half of Arc 4"
+      },
+      {
+        "value": "Track down and obtain the Authority of Melancholy",
+        "reward": "35 Credits",
+        "type": "Credits"
+      },
+      {
+        "type": "Other",
+        "reward": "20 Credits, a copy of Template Stacking I&II of every Witch of Sin captured.",
+        "value": "Search for a way to capture the Witches of Sin"
+      },
+      {
+        "value": "Capture the Witch of Envy, Satella.",
+        "type": "Other",
+        "reward": "A copy of Template Stacking I&II: Satella, plus an additional custom Authority"
+      },
+      {
+        "type": "Other",
+        "value": "Capture the Witch of Vainglory, Pandora",
+        "reward": "A copy of Template Stacking I & II: Pandora, plus an additional custom Authority"
+      },
+      {
+        "value": "Convince at least ONE of your Targets to accept the Binding willingly, while accepting all of what it entails.",
+        "type": "Credits",
+        "reward": "+10 Credits for every Capture who willingly accepted being Bound to you."
+      }
+    ],
+    "desc": "If there is something you should already be aware of by now, is that we in the Company are far from being infallible or all-knowledgeable. Most of our information from a specific setting comes from our Contractors, our Clients, our World Suppliers, or most of the time our employees from the Exploration & Tourism department, who have their own branch of freelancers workers doing the exploration and info gathering for us.\n\nAnd it is from them we got an important piece of information we might have overlooked in our initial forrays in this partcular World. Apparently in this setting, there are some very specific and limited set of abilities known as \"Authorities\" (Yes, we know the name sounds pretty generic, but it's not our fault this time) that, as far as we have seen, grants their user a special supernatural skill of their own, not unlike a Semblance in which it seems to be unique in nature, based on one of the \"sevens deadly sins\".\n\nSo if for example, you get the Authority of, say, Greed, chances are that you will get an ability heavily associated with the sin, like the ability to steal conceptual shit or mark things as yours pretty much like a second Binding, but less effective. There is a downside, though, because it SEEMS there is a correlation between the Authority's power and the mental sanity of the User. The more unhinged you are, the stronger your Authority will be.\n\nYour task is pretty simple, regardless of how easy I made it sound. You go in, capture all of the Archbishops of Sin plus anyone that holds an Authority by the moment of your insertion, and get out. And if you can capture anyone who seems to know something about the inner workings of a Witch Gene, it will be greatly appreciated.\n\nWe have to warn you though, this world is far more dangerous than how it might seem at a first glance. Don't get too cocky because their Tier is lower than what you would usually consider a threat to your life. Ram (HALF of a Tier 5 Waifu) was able to fight Roswaal L. Mathers to a standstill, Emilia might be holding an Authority of her own while having the Apocalypse itself as her familiar, Reinhard seems to embody the concept of \"Unfairness\" and Subaru might become your worst nightmare if you fuck things up. That said, as long as you proceed with caution, this should be not more difficult than your regular mission.",
+    "image": "https://cdn.imgchest.com/files/84jdc9pj94k.png",
+    "title": "A Good Ol' Witch Hunt",
+    "uid": "HuLNm"
+  },
+  {
+    "reward": "1",
+    "rewardType": "TX Tickets",
+    "desc": "Before YHVH came to the picture the world was full of entities called 'Nahobino' who are all essentially gods who all fought over the The Throne of Creation which grants whomever claims it control over the Universe as a near Omnipotent being.When YHVH Claimed it he took the Nahobinos' Knowledge reducing them to demons a little while later Lucifer tempt Humans into eating the Fruit of Knowledge Claiming it for themselves, allowing demons the opportunity to fuse with those who has their knowledge to become Nahobino once more and try to claim for the throne. This is where you come in Contractor, In this world god is dead and the throne is empty, become a Nahobino and Claim the Throne for yourself.",
+    "image": "https://static1.thegamerimages.com/wordpress/wp-content/uploads/2021/11/Shin-Megami-Tensei-V-Uphold-Gods-Order-Ending.jpg",
+    "objectives": [
+      {
+        "value": "Do all the sidequest from SMT 5",
+        "reward": "100",
+        "type": "Credits"
+      },
+      {
+        "reward": "150",
+        "type": "Credits",
+        "value": "Prevent Tao's death and have her join you on her own will. (No Bindings or Lures)"
+      },
+      {
+        "value": "Complete the Demonic Compendium",
+        "reward": "Template Stacking I",
+        "type": "Perks"
+      },
+      {
+        "value": "Defeat Lucifer by yourself",
+        "reward": "Pocket star",
+        "type": "Perks"
+      },
+      {
         "reward": "Demi-Fiend and Pixie with Uber-Pixie",
+        "value": "Defeat all the Fiends and Defeat and recruit the Demi-Fiend",
         "type": "Companions"
       }
     ],
-    "reward": "1",
-    "source": "",
-    "loca": "Shin Megami Tensei",
-    "budget": 1545,
+    "uid": "OBnkB",
     "scope": "Grand",
-    "author": "Bot Lucifer",
+    "source": "",
+    "title": "The War for The Throne",
     "conditions": [
       {
-        "value": "Must Have Added Potential:Nahobino or ave substitute of SMT 5 Protagonisth"
+        "value": "Must Have Added Potential:Nahobino or have substitute of SMT 5 Protagonist"
       },
       {
         "value": "Defeat all Rivals who want the Throne"
@@ -51,8 +453,9 @@
         "value": "Have No Heritages"
       }
     ],
-    "title": "The War for The Throne",
-    "uid": "OBnkB"
+    "author": "Bot Lucifer",
+    "loca": "Shin Megami Tensei",
+    "budget": 1545
   },
   {
     "title": "Sensational Foursome",
@@ -248,42 +651,41 @@
     "title": "The Undertale Experience",
     "reward": "Demiplane of the Underground",
     "desc": "Long ago humans and monsters lived on this earth until the humans forced them underground. Now Trapped you go up to mount Ebott and head underground. Will they live or will they die as you go through the underground to meet or kill them? It is up to you as you experience the Undertale",
-    "budget": 1,
+    "budget": 0,
     "rewardType": "Other",
     "uid": "XnRKu"
   },
   {
     "author": "Ratcatcher",
-    "loca": "Pokemon",
-    "budget": 85,
+    "source": "",
     "objectives": [
       {
         "reward": "Instant Capture of Giselle",
-        "value": "Seduce Giselle",
-        "type": "Companions"
+        "type": "Companions",
+        "value": "Seduce Giselle"
       },
       {
+        "type": "Other",
         "value": "Capture the Gastly of Maiden's Peak",
-        "reward": "1 TX ticket, the Ghost of Maiden's Peak as a companion",
-        "type": "Other"
+        "reward": "1 TX ticket, the Ghost of Maiden's Peak as a companion"
       },
       {
-        "reward": "Unison for you and all your current companions",
         "value": "Capture Jessie and James",
-        "type": "Perks"
+        "type": "Perks",
+        "reward": "Unison for you and all your current companions"
       },
       {
+        "type": "Other",
         "value": "Seduce Gary's Cheerleaders",
-        "reward": "Two Heritage levels",
-        "type": "Other"
+        "reward": "Two Heritage levels"
       }
     ],
-    "scope": "Grand",
-    "title": "Gotta Do 'Em All",
-    "rewardType": "Credits",
     "desc": "Ash Ketchum gets shipped with every girl he travels with, though he rarely if ever shows any interest in romance - and the girls DO seem interested in him in some way. Wanna take his place and take advantage of that?",
     "reward": "2000",
-    "image": "https://cdn.donmai.us/original/9b/58/__pikachu_dawn_may_ash_ketchum_serena_and_11_more_pokemon_and_7_more_drawn_by_mushi_gyouza__9b5897cf0f71dbf15d78415f57e1d937.png",
+    "scope": "Grand",
+    "uid": "GGPWA",
+    "budget": 85,
+    "rewardType": "Credits",
     "conditions": [
       {
         "value": "Chargen only."
@@ -292,14 +694,15 @@
         "value": "Substitute as Ash at the beginning of his voyage, Tier reduced to 2 due his lack of experience."
       },
       {
-        "value": "You must seduce Misty, May, Dawn, Iris, Serena, and Lillie, and achieve Capture by Confession for each of them."
+        "value": "You must seduce Misty, May, Dawn, Iris, Serena and Lillie, and achieve Capture by Confession for each of them."
       },
       {
-        "value": "Also, you must complete his voyages and solve the same crisis he solved. You can win the tournaments he lost, if you manage it."
+        "value": "Also, you must complete his voyages and solve the same crisis he solved, up to the Alola-Region. You can win the tournaments he lost, if you manage it."
       }
     ],
-    "uid": "GGPWA",
-    "source": ""
+    "title": "Gotta Do 'Em All",
+    "loca": "Pokemon",
+    "image": "https://cdn.donmai.us/original/9b/58/__pikachu_dawn_may_ash_ketchum_serena_and_11_more_pokemon_and_7_more_drawn_by_mushi_gyouza__9b5897cf0f71dbf15d78415f57e1d937.png"
   },
   {
     "scope": "Quick",
@@ -488,7 +891,7 @@
         "type": "Perks"
       }
     ],
-    "budget": 1,
+    "budget": 0,
     "conditions": [
       {
         "value": "No serious stuff."
@@ -685,8 +1088,36 @@
     "uid": "ZrZFY"
   },
   {
+    "title": "Blast Them Off",
+    "uid": "Gzipa",
+    "source": "",
+    "loca": "Pokemon",
+    "desc": "In the games, Team Rocket was defeated again and again until Giovanni and the admins fled and the organization faded into irrilevance. In the anime, however, Team Rocket is still strong and led by Giovanni. Let's correct this.",
+    "rewardType": "Other",
+    "objectives": [
+      {
+        "value": "Defeat Jessie and James and capture Meowth in a Pokeball (you can be helped by a Retinue member)",
+        "type": "Companions",
+        "reward": "Instant Capture of Jessie and James (the latter's gender may change according to your preference)"
+      },
+      {
+        "type": "Other",
+        "reward": "Either instant capture of the Admin or their listed price",
+        "value": "Defeat the Rocket admins without numerical superiority"
+      },
+      {
+        "type": "Companions",
+        "value": "Defeat Domino in single combat without Pokemon",
+        "reward": "Instant Capture of Domino"
+      },
+      {
+        "reward": "One Legendary Pokemon of your choice",
+        "type": "Other",
+        "value": "Free or capture yourself the Rayquaza imprisoned by Team Rocket"
+      }
+    ],
     "budget": 300,
-    "author": "Ratcatcher",
+    "scope": "Standard",
     "conditions": [
       {
         "value": "You cannot use powers from other universes, and your personal abilities are reduced to what humans can do in the Pokemon anime"
@@ -698,37 +1129,9 @@
         "value": "Defeat Giovanni in a Pokemon battle without help, and either prevent him from fleeing or make it so one-sided he decides to retire."
       }
     ],
-    "title": "Blast Them Off",
-    "source": "",
-    "scope": "Standard",
-    "objectives": [
-      {
-        "type": "Companions",
-        "reward": "Instant Capture of Jessie and James (the latter's gender may change according to your preference)",
-        "value": "Defeat Jessie and James and capture Meowth in a Pokeball (you can be helped by a Retinue member)"
-      },
-      {
-        "value": "Defeat the Rocket admins without numerical superiority",
-        "reward": "Either instant capture of the Admin or their listed price",
-        "type": "Other"
-      },
-      {
-        "value": "Defeat Domino in single combat without Pokemon",
-        "type": "Companions",
-        "reward": "Instant Capture of Domino"
-      },
-      {
-        "value": "Free or capture yourself the Rayquaza imprisoned by Team Rocket",
-        "reward": "One Legendary Pokemon of your choice",
-        "type": "Other"
-      }
-    ],
-    "rewardType": "Other",
+    "reward": "500 credits plus instant-capture of either Giovanni or a Ground Type Pokemon of your choice (maximum tier 6)",
     "image": "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2021/04/Pokemon-TCG-Giovanni-Card-Art-2.jpg",
-    "reward": "500 credits plus either Giovanni or a Ground Type Pokemon of your choice (maximum tier 6)",
-    "desc": "In the games, Team Rocket was defeated again and again until Giovanni and the admins fled and the organization faded into irrilevance. In the anime, however, Team Rocket is still strong and led by Giovanni. Let's correct this.",
-    "loca": "Pokemon",
-    "uid": "Gzipa"
+    "author": "Ratcatcher"
   },
   {
     "source": "",
@@ -2259,7 +2662,7 @@
     "scope": "Standard",
     "desc": "Welcome Contractor. Today is the first day of the rest of your life under the Company's umbrella. As such we've provided you with a basic tutorial quest.\nExplore your Starter World for the day!\nCatch and/or explore your first Waifu!\nLearn how to use the resources granted to you!\nDo something exciting!",
     "loca": "Generic",
-    "budget": 1,
+    "budget": 0,
     "source": "",
     "conditions": [
       {
@@ -9668,7 +10071,28 @@
     "reward": "The Ultimate Reward which can be fused to your demiplane/dungeons "
   },
   {
-    "budget": 250,
+    "objectives": [
+      {
+        "type": "Other",
+        "value": "Complete the Sailor Earth mission",
+        "reward": "Instant capture of Naru as Sailor Earth at T9"
+      },
+      {
+        "reward": "The Asteroid Senshi",
+        "type": "Other",
+        "value": "Conquer Sailor Chibimoon (also boosted to Tier 10)"
+      },
+      {
+        "value": "Defeat and Bind Sailor Galaxia",
+        "reward": "One villain of your choice from each of the five main villain organization",
+        "type": "Other"
+      },
+      {
+        "reward": "The Sailor Starlights",
+        "value": "Conquer Princess Kakyuu",
+        "type": "Other"
+      }
+    ],
     "conditions": [
       {
         "value": "As this happens in the manga setting, the Sailor Senshi other than Sailor Moon are upgraded to Tier 9 (10 for Saturn) with the consequent power boost. Be wary."
@@ -9692,38 +10116,17 @@
         "value": "A final warning: for this mission only, Sailor Moon's magic can break your control over any of the Conquered Senshi other than Venus. If that happens she will forget how you conquered her and who else is already on your side, but you will have to reconquer her before making any other attempt at Sailor Moon"
       }
     ],
-    "reward": "Moon Castle as your Grand Manor, ten Sweet Home Expansions",
-    "rewardType": "Other",
-    "scope": "Grand",
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992790127355109406/sme-1280-1623097055383.jpg",
-    "desc": "Sailor Venus is where the Sailor Moon universe started. If Moon and the others are so effective is because Venus trained them, and they admire her so much that when most of the group was depowered they just assumed Venus had either resisted or regained her powers first. Yet, many mistake her for just Moon's funny clone. Let's change that, and remind everyone she's the Goddess of Love and War by having her conquer the others... But first conquer her yourself.",
-    "title": "Venus Victa Sed Victrix",
-    "source": "",
-    "objectives": [
-      {
-        "type": "Other",
-        "value": "Complete the Sailor Earth mission",
-        "reward": "Instant capture of Naru as Sailor Earth at T9"
-      },
-      {
-        "value": "Conquer Sailor Chibimoon (also boosted to Tier 10)",
-        "type": "Other",
-        "reward": "The Asteroid Senshi"
-      },
-      {
-        "value": "Defeat and Bind Sailor Galaxia",
-        "reward": "One villain of your choice from each of the five main villain organization",
-        "type": "Other"
-      },
-      {
-        "reward": "The Sailor Starlights",
-        "type": "Other",
-        "value": "Conquer Princess Kakyuu"
-      }
-    ],
     "author": "Ratcatcher",
+    "budget": 250,
+    "loca": "Sailor Moon (manga)",
+    "scope": "Grand",
+    "source": "",
+    "desc": "Sailor Venus is where the Sailor Moon universe started. If Moon and the others are so effective is because Venus trained them, and they admire her so much that when most of the group was depowered they just assumed Venus had either resisted or regained her powers first. Yet, many mistake her for just Moon's funny clone. Let's change that, and remind everyone she's the Goddess of Love and War by having her conquer the others... But first conquer her yourself.",
+    "rewardType": "Other",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992790127355109406/sme-1280-1623097055383.jpg",
     "uid": "egAff",
-    "loca": "Sailor Moon (manga)"
+    "title": "Venus Victa Sed Victrix",
+    "reward": "Moon Castle or Crystal Palace as your Grand Manor, ten Sweet Home Expansions"
   },
   {
     "desc": "The world of Fairy Britain, a reality that has gone off rails and changed into something entirely alien and removed from human history. But it is a twisted world, for its inhabitants are flawed in their perfection, hearts pure and innocent, yet that very thing makes them terrifying. Like children that may kill ants in amusement, they follow their instincts regardless of the consequences, even if doing so will be their own undoing. In this land, there rules a cold jaded tyrant queen that once upon a time was pure and hopeful. At her side stand her knights and army, trying to keep Fairy Britain functional in an endless struggle. For the very world considers the existence of this world a crime and continuously spills forth curses and evil to destroy it. Others rise up to challenge her reign, from would-be rebels over these that challenge her right to the throne. And a child of prophecy will rise to redeem the fae in the eyes of Gaia, even as that very act will surely erase the very world in which she lives in favor of a world that was denied long ago. Well, we say fuck all that shit. Your job is simple and straightforward. We will insert you some years before the canon events of Fate/Grand Order into Fairy Britain and then you must take over. Subjugate the Fairies, take over as ruler for Morgan and make the realm yours by taking out any competitors left around. It will be a struggle, as there are many other factions trying to gain power or undermine the current ruler already and you are unlikely to be more welcome than Morgan. Not to mention the capricious and innocently cruel nature of the fairies themselves. You will need to truly make them understand that you are in charge, in every way possible.",
@@ -9959,8 +10362,19 @@
     "uid": "86WW7"
   },
   {
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992795346260463626/Screenshot_2.jpg",
-    "reward": "Two levels on a heritage of your choice and the equivalent of the purchase price of your former Retinue members and Sailor Venus",
+    "source": "",
+    "desc": "Soon after the start of your adventure, you and your small Retinue (up to nine, all Tier 5 and below), have been defeated and captured by another Contractor with a more combat-oriented power set... Who then went brought everyone in the Sailor Moon manga world and was promptly slain by Sailor Venus. Thankfully, she realized you and the others were victims, so she spared everyone, and even brought you to the Secret Base. Take the chance to restart with a bang, getting your Retinue back together and adding Sailor Venus to it.",
+    "uid": "6nIXf",
+    "objectives": [
+      {
+        "value": "Get all your former Retinue members to rejoin you willingly",
+        "reward": "Full restoration of your former Binding method and lures",
+        "type": "Other"
+      }
+    ],
+    "rewardType": "Perks",
+    "budget": 0,
+    "scope": "Standard",
     "conditions": [
       {
         "value": "Find all former members of your Retinue and get them back under your control. Hurry up, because if one of them spills the beans with Sailor Venus she'll kill you"
@@ -9972,20 +10386,11 @@
         "value": "You can't Capture anyone else until Sailor Venus has been Captured"
       }
     ],
-    "author": "Ratcatcher",
-    "objectives": [
-      {
-        "value": "Get all your former Retinue members to rejoin you willingly",
-        "reward": "Full restoration of your former Binding method and lures"
-      }
-    ],
     "title": "Rise from the ashes",
     "loca": "Sailor Moon (manga version)",
-    "scope": "Standard",
-    "source": "",
-    "desc": "Soon after the start of your adventure, you and your Retinue of seven Waifus (all Tier 5 and below), have been defeated and captured by another Contractor with a more combat-oriented power set... Who then went brought everyone in the Sailor Moon manga world and was promptly slain by Sailor Venus. Thankfully, she realized you and the others were victims, so she spared everyone, and even brought you to the Secret Base. Take the chance to restart with a bang, getting your Retinue back together and adding Sailor Venus to it.",
-    "budget": 0,
-    "uid": "6nIXf"
+    "author": "Ratcatcher",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992795346260463626/Screenshot_2.jpg",
+    "reward": "Two levels on a heritage of your choice and the equivalent of the purchase price of your former Retinue members and Sailor Venus"
   },
   {
     "reward": "50 credits and any 3 villains from the world as retinue members.",
@@ -12686,7 +13091,7 @@
     ],
     "reward": "A free purchase of either Templete Stacking 1 or OC Donut Steel, gaining a power set appropriate for the type you've specialized in.",
     "loca": "Pokemon",
-    "budget": 1,
+    "budget": 0,
     "title": "Type Specialist",
     "uid": "jUAvp",
     "rewardType": "Other",
