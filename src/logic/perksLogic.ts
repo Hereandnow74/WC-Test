@@ -181,6 +181,7 @@ export function chooseBinding(bin: PerkFull, saveData: Perk, checkFunc = binding
         deleteFreebies(binding.value[ind].freebies)
         addFreebies(saveData.freebies)
       }
+      if (bin.type) saveData.type = bin.type
       binding.value[ind] = saveData
     }
     else {

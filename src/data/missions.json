@@ -1,15 +1,211 @@
 [
   {
+    "budget": 1,
+    "image": "",
+    "reward": "250 Credits",
+    "conditions": [
+      {
+        "value": "You must Substitute or Extra Into the setting. If this is not your Chargen world, if this is not your first world Papertrail would suffice but we would recommend not letting the Target see you."
+      },
+      {
+        "value": "You must drive the target into desperation, until they wholeheartedly agree to sell out his benefactors."
+      },
+      {
+        "value": "The Target's benefactors make them immune to Bindings and Lures."
+      },
+      {
+        "value": "Do not kill them. We need them alive. If you kill them this mission is forfeit."
+      }
+    ],
+    "loca": "Generic",
+    "scope": "Standard",
+    "objectives": [
+      {
+        "type": "Credits",
+        "value": "Get them to break without physically binding the Target.",
+        "reward": "100 Credits"
+      },
+      {
+        "type": "Credits",
+        "reward": "25 Credits",
+        "value": "Seduce or Rape the Target's favorite Waifu/Husbando."
+      },
+      {
+        "reward": "50 Credits",
+        "value": "Convince the Target's new friends to turn on them.",
+        "type": "Credits"
+      },
+      {
+        "value": "Frame them for a crime.",
+        "type": "Perks",
+        "reward": "Covert Talent and Talent Sharing(Covert) OR 20 Credits"
+      },
+      {
+        "value": "Successfully seduce the Target without your Bindings or Lures and break their heart.",
+        "reward": "100 Credits",
+        "type": "Credits"
+      },
+      {
+        "value": "Rape the Target and make them enjoy it.(Hentai powers are recommended)",
+        "reward": "25 Credits",
+        "type": "Credits"
+      },
+      {
+        "value": "Cripple the Target in any way.(Paralysis, Amputation, Blinding, Etc.)",
+        "reward": "5 Credits",
+        "type": "Credits"
+      },
+      {
+        "value": "Convince the Target that their new friends genuinely hate them.",
+        "type": "Perks",
+        "reward": "Communication and Performance Talent OR 20 Credits"
+      },
+      {
+        "reward": "100 Credits",
+        "value": "Never be outed as an entity not from the setting.",
+        "type": "Credits"
+      }
+    ],
+    "desc": "Contractor, you are being hired for a very special mission. The Company is a large and expansive conglomerate that owns a good and hefty chunk of the Multiverse. Sadly, it seems that an upstart competitor didn't get the message to not fuck with us. A world within our domain was poached by some \"Grand Isekai Service\" and gifted to some pleb for an OP Isekai. We want you to ruin it. Don't get me wrong, we send plenty of randos on OP Isekai, but we need to make an example. You will Substitute or Extra Into a setting and work to drive them to us, where we can use his para-spacial connection to link into Grand Isekai Service's servers and take them down from the inside. As for your target, all we know is that they have four essences, two of which we don't know. The two we do know are The Binder and The Isekai Hero.",
+    "author": "ClayUndead",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Not so happy Isekai.",
+    "uid": "ICigW"
+  },
+  {
+    "image": "",
+    "author": "noi",
+    "scope": "Standard",
+    "conditions": [
+      {
+        "value": "Survive each world. Brand at least 1 person on each world that is in the main cast."
+      }
+    ],
+    "reward": "100",
+    "objectives": [
+      {
+        "value": "Brand the main protagonist",
+        "reward": "Gain selling price for branding",
+        "type": "Other"
+      },
+      {
+        "value": "Brand the main antagonist",
+        "type": "Other",
+        "reward": "Gain 1Xof it's template"
+      },
+      {
+        "type": "Other",
+        "value": "Plot Derailment - change winners and losers in scenario",
+        "reward": "gain 50 points"
+      }
+    ],
+    "source": "",
+    "title": "Horror Night Chills",
+    "budget": 85,
+    "rewardType": "Credits",
+    "loca": "Generic",
+    "desc": "Visit 13 Horror Worlds in a row and survive. \nYou only get 85 point budget for all. ",
+    "uid": "lmbtY"
+  },
+  {
+    "budget": 140,
+    "image": "https://i.kym-cdn.com/photos/images/newsfeed/001/843/833/c02.jpg",
+    "source": "",
+    "author": "noi",
+    "desc": "Visit 10 apocalypse worlds in a row. They may be in the process of apocalypse or right on the brink of it. \nApocalypse is something that either destroys a civilization worldwide or devastates at least a continent utterly. \n\nYour mission is to survive the apocalypse at least a year. ",
+    "rewardType": "Other",
+    "title": "Another One For Apocalypse Bingo",
+    "scope": "Standard",
+    "objectives": [
+      {
+        "type": "Credits",
+        "value": "Save the protagonist (per)",
+        "reward": "10"
+      },
+      {
+        "type": "Credits",
+        "reward": "1",
+        "value": "Save human group (1 point every 10 humans)"
+      }
+    ],
+    "reward": "Fully upgraded pocket dimension.",
+    "conditions": [
+      {
+        "value": "Any sort of pocket dimensions and dimensional travel are disabled."
+      },
+      {
+        "value": "You start with a 140 point budget and don't gain more when changing dimensions."
+      }
+    ],
+    "loca": "Generic",
+    "uid": "YAGyM"
+  },
+  {
+    "reward": "2000 credits plus 1 TX ticket",
+    "image": "https://i.ibb.co/gykxn49/Ladybug-e-Chat-Noir-2.webp",
+    "desc": "The Miraculous are a great power, and together they become one that cannot be wielded in full by any one person. Not even you.\nBut hey, nothing says you can't wield the wielders, right?",
+    "title": "Miracle King",
+    "objectives": [
+      {
+        "value": "Become Master Fu's successor",
+        "reward": "Guardian training, all Miraculous are under your control and can choose new wielders",
+        "type": "Other"
+      },
+      {
+        "reward": "1",
+        "value": "Complete the mission without becoming a permanent Miraculous Holder",
+        "type": "TX Tickets"
+      }
+    ],
+    "scope": "Grand",
+    "rewardType": "Other",
+    "author": "Ratcatcher",
+    "budget": 85,
+    "loca": "Miraculous: Tales of Ladybug and Cat Noir",
+    "source": "",
+    "conditions": [
+      {
+        "value": "Chargen Only. Origin as either Drop-In, Extra, or Substitute."
+      },
+      {
+        "value": "Have all Miraculous in the Chinese Miracle Box under your control, either directly or through your Retinue. You cannot wield more than two Miraculous by yourself at any one time."
+      },
+      {
+        "value": "Have a Retinue of at least 18 members, each wielding a Miraculous."
+      },
+      {
+        "value": "Any character who canonically doesn't have a Miraculous and is Captured while wielding one is automatically bumped to Tier 6 at step 1a."
+      }
+    ],
+    "uid": "YhsXt"
+  },
+  {
+    "desc": "Sailor Moon and her Guardians have a rather blatant weakness: boys. A skilled lover could take advantage of it by seducing them all... And that's your job for this mission.",
+    "source": "",
+    "objectives": [
+      {
+        "value": "Seduce Haruka, Michiru, and Setsuna through the same methods as the main mission.",
+        "reward": "Copy of the Three Talismans and the Holy Grail for your own use",
+        "type": "Other"
+      },
+      {
+        "reward": "No Moon and Pharaoh's Herald perks applied automatically",
+        "type": "Perks",
+        "value": "Seduce Chibiusa and Hotaru through the same methods as the main mission."
+      },
+      {
+        "type": "Other",
+        "value": "Pull it off during Crystal Tokyo",
+        "reward": "Your own Silver Crystal, plus the Crystal Palace added to your Grand Manor"
+      }
+    ],
+    "author": "Ratcatcher",
+    "scope": "Grand",
+    "budget": 500,
     "reward": "Twice the capture reward",
     "rewardType": "Other",
-    "budget": 500,
-    "author": "Ratcatcher",
-    "image": "",
-    "scope": "Grand",
-    "desc": "Sailor Moon and her Guardians have a rather blatant weakness: boys. A skilled lover could take advantage of it by seducing them all... And that's your job for this mission.",
     "loca": "Sailor Moon",
-    "title": "Seduction Under the Moon",
-    "source": "",
     "conditions": [
       {
         "value": "Forage: only local captures may help."
@@ -21,24 +217,9 @@
         "value": "You must seduce Usagi, Minako, Ami, Rei, and Makoto without using any Binding. Then proceed to have sex with them until they're too tired to continue, and repeat until they fall for you."
       }
     ],
-    "objectives": [
-      {
-        "value": "Seduce Haruka, Michiru, and Setsuna through the same methods as the main mission.",
-        "reward": "Copy of the Three Talismans and the Holy Grail for your own use",
-        "type": "Other"
-      },
-      {
-        "reward": "No Moon and Pharaoh's Herald perks applied automatically",
-        "value": "Seduce Chibiusa and Hotaru through the same methods as the main mission.",
-        "type": "Perks"
-      },
-      {
-        "reward": "Your own Silver Crystal, plus the Crystal Palace added to your Grand Manor",
-        "value": "Pull it off during Crystal Tokyo",
-        "type": "Other"
-      }
-    ],
-    "uid": "NCWRa"
+    "image": "https://holly.paheal.net/_images/cd01fa89f44d7bc5e2bdee6771e8bccf/1532676%20-%20Ami_Mizuno%20Makoto_Kino%20Minako_Aino%20Prince_Demande%20Rei_Hino%20Sailor_Moon%20Usagi_Tsukino%20jadenkaiba.png",
+    "uid": "NCWRa",
+    "title": "Seduction Under the Moon"
   },
   {
     "loca": "Generic",

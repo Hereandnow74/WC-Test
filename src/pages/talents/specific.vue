@@ -53,8 +53,6 @@ const specificPerksFiltered = computed(() => specificPerksWithDLC.value.filter((
     return true
   if (isArray(perk.waifuUID))
     res = perk.waifuUID.some(val => companionsUIDs.value[val] || companionsByUID.value[val])
-  else
-    res = perk.waifuUID ? (!!companionsUIDs.value[perk.waifuUID] || !!companionsByUID.value[perk.waifuUID]) : false
   return res
 }))
 
