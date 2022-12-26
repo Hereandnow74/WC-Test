@@ -1,11 +1,335 @@
 [
   {
-    "budget": 1,
+    "budget": 0,
+    "desc": "The client has requested that a specific person be... dealt with. Their name is Hayato and in a few hours after you get dropped off he'll meet one Saki Yoshida. The client wishes this meeting to never happen, or baring that, that the two of them are unable to get to the Karaoke joint Hayato will lead the young lady too. Additional rewards are available for going above and beyond.\n\nMission Parameters:\nYou will arrive in Tokyo the morning Saki and Hayato are to meet each other.\nYou will arrive less than a block from the convenience store they will meet at.\nIntercept Hayato before him and Saki make it to whichever Karaoke joint he intends for them to spend time at.\n\nMax reward is 60 credits\n\nAlternate rewards are  available should you wish:\n\nShould you not wish for a credit reward items equal to the max credit reward you obtained times 1.4 (84 credits equivalent value for max reward) are on offer.\nSome examples are:\nA scroll of any ninth level spell from DnD 5e is available for the equivalent of 22 credits each\nA Catch-a-Ride of choice within the limits of your reward, multiple may be chosen\nLower than ninth level spell scrolls from DnD at Spell level * 2 credit equivalent\n36 trained and equipped soldiers (T2) prebound alongside three APC's to carry them at max reward.\n",
+    "reward": "20",
+    "loca": "Hentai",
+    "conditions": [],
+    "scope": "Quick",
+    "objectives": [
+      {
+        "value": "Intercept Hayato before he meets Saki at all.",
+        "type": "Credits",
+        "reward": "5"
+      },
+      {
+        "type": "Credits",
+        "reward": "5",
+        "value": "Beat Hayato"
+      },
+      {
+        "value": "Execute Hayato",
+        "type": "Credits",
+        "reward": "5"
+      },
+      {
+        "value": "Make Hayato suffer for as many days as you can",
+        "type": "Credits",
+        "reward": "5/day"
+      }
+    ],
     "image": "",
-    "reward": "250 Credits",
+    "author": "LeastDevotee",
+    "source": "",
+    "rewardType": "Credits",
+    "title": "Knee-breaker",
+    "uid": "JBQoS"
+  },
+  {
+    "budget": 0,
+    "reward": "50 credits or ~2tons of the highest quality Dust",
+    "author": "LeastDevotee",
+    "source": "",
+    "loca": "RWBY",
+    "scope": "Standard",
+    "rewardType": "Other",
+    "desc": "Mission Client: Jacques Schnee nee Gele\n\nMr. Schnee (a rather minor client of the company who purchased a Template Stacking Zero (Added potential nowadays) some time before marrying into the Schnee family) wishes for his youngest daughter to no longer attend Beacon Academy. While there are a number of ways to do so he's found that the simplest and easiest way to have someone removed from the Academy roster is for them to not attend classes for seven days without permission or extenuating circumstances after which they are expelled. Due to not wanting any issues to reflect on the Schnee family he is paying for his daughters entire team to be removed from Beacon Academy.\n\nMission Parameters:\nEnsure that team RWBY doesn't attend classes at Beacon Academy for seven days in a row within the time limit by any means the contractor is capable of. Weiss Schnee must be alive at the end of the mission.\n",
+    "image": "",
+    "objectives": [],
     "conditions": [
       {
-        "value": "You must Substitute or Extra Into the setting. If this is not your Chargen world, if this is not your first world Papertrail would suffice but we would recommend not letting the Target see you."
+        "value": "Time: Job must be done in three months"
+      }
+    ],
+    "title": "Involuntary Extraction",
+    "uid": "CCQBu"
+  },
+  {
+    "title": "Divine Cuisine",
+    "scope": "Standard",
+    "objectives": [
+      {
+        "value": "Sell to me 100 \"Capture Level 26-50\" Foodstuffs (Repeatable x200)",
+        "type": "Credits",
+        "reward": "5 Credits"
+      },
+      {
+        "value": "Sell to me 50 \"Capture Level 51-100\" Foodstuffs (Repeatable x100)",
+        "reward": "15 Credits",
+        "type": "Credits"
+      },
+      {
+        "type": "Credits",
+        "value": "Sell to me 20 \"Capture Level 101-200\" Foodstuffs (Repeatable x75)",
+        "reward": "50 Credits"
+      },
+      {
+        "reward": "100 Credist",
+        "type": "Credits",
+        "value": "Sell to me 10 \"Capture Level 201-500\" Foodstuffs (Repeatable x50)"
+      },
+      {
+        "reward": "200 Credits",
+        "value": "Sell to me 1 \"Capture Level 501-1000\" Foodstuffs (Repeatable x25)",
+        "type": "Credits"
+      },
+      {
+        "value": "Sell to me 1 \"Capture Level 2000+\" Foodstuffs",
+        "reward": "500 Credits",
+        "type": "Credits"
+      }
+    ],
+    "author": "ClayUndead",
+    "conditions": [
+      {
+        "value": "You will be given an App for your company device to scan and identify the Foodstuffs for its 'Capture Level'."
+      },
+      {
+        "value": "Must obtain the Foodstuffs yourself, No Servants, Workers, Industrialization, or Waifu Pyramid schemes."
+      },
+      {
+        "value": "No duplication and/or other forms of bringing excess into reality.(they say it ruins the taste)"
+      }
+    ],
+    "reward": "1 Credit",
+    "image": "",
+    "loca": "Toriko",
+    "budget": 1,
+    "rewardType": "Credits",
+    "desc": "Hello Contractor! I'm Clay, a purveyor of goods for the Company. Today, I contacted you for a simple goal. Food! You see, some of my superiors like the delicious and dangerous food from Toriko. Thankfully they just so happen to have in universe labels for how dangerous it is to gather/hunt the foodstuffs. Let's use that as a basis for your pay.\n\nI want you to sell to me 200 \"Capture Level 1-25\" Foodstuffs.(Repeatable x500)",
+    "source": "",
+    "uid": "rSQIy"
+  },
+  {
+    "budget": 1200,
+    "loca": "Warcraft",
+    "scope": "Standard",
+    "title": "Iron Horde Invasion",
+    "author": "Rhivan",
+    "rewardType": "Other",
+    "desc": "The Iron Horde planned to invade Azeroth as Garrosh Hellscream wanted revenge for his imprisonment... However due to company interference the Iron Horde invasion is now arriving at the world you are currently in. Stop the Iron Horde however you'd like and take Draenor for yourself.",
+    "reward": "Alternate Draenor is added to your Demi-plane / Home Sweet Home",
+    "image": "https://warcraft.blizzplanet.com/wp-content/uploads/2015/01/warlords-of-draenor-the-dark-portal-10.jpg",
+    "objectives": [],
+    "conditions": [
+      {
+        "value": "Alternate Draenor is NOT the world you are in"
+      },
+      {
+        "value": "Defeat the leaders of the Iron Horde, and either destroy or subjugate it."
+      }
+    ],
+    "source": "",
+    "uid": "vyUUW"
+  },
+  {
+    "rewardType": "TX Tickets",
+    "objectives": [
+      {
+        "type": "Credits",
+        "reward": "The budget of a DR3 world with Wage Slave",
+        "value": "Complete the main plot and all submissions of your first world"
+      },
+      {
+        "type": "Credits",
+        "value": "Complete the main plot and all submissions of your second world, which must be DR4/5",
+        "reward": "The budget of a DR5 world with Wage Slave"
+      },
+      {
+        "value": "Complete the main plot and all submissions of your third world, which must be DR6/7",
+        "type": "Credits",
+        "reward": "The budget of a DR7 world with Wage Slave"
+      },
+      {
+        "reward": "The budget of a DR9 world with Wage Slave",
+        "type": "Credits",
+        "value": "Complete the main plot and all submissions of your fourth world, which must be DR8/9"
+      },
+      {
+        "reward": "The budget of a DR10 world with Wage Slave",
+        "value": "Complete the main plot and all submissions of your fifth world, which must be DR10",
+        "type": "Credits"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Your first world must be at most DR3, we don't need more corpses"
+      },
+      {
+        "value": "You must take Wage Slave and can't take Cash Still Rules, we need you to earn enough of your power to notdie like a moron"
+      },
+      {
+        "value": "You will recieve a set of submissions while on the field, mostly capturing specific targets, you have to complete them"
+      },
+      {
+        "value": "You will be locked to the tier of the DR of your current world, so no matter how much you train you won't surpass T3 while in a DR3 world and can't use abilities that would push you past T3"
+      },
+      {
+        "value": "You may not buy companions with a tier higher than the DR of your current world"
+      }
+    ],
+    "source": "",
+    "image": "",
+    "budget": 0,
+    "author": "CyrusFallen",
+    "reward": "1 TX Ticket for full completion",
+    "loca": "Generic",
+    "title": "Contractor Training Program",
+    "desc": "It shouldn't come as a surprise that when given the opportunity for unlimited power most new contractors get greedy and bite off more than they can chew. Normally that isn't a problem as we can recover most of their credits and their initial captures tend to cover the rest of the expenses.\nRecently, however, we are having a problem that pops up every few eons. Too many of our veteran contractors are retiring to a single world to spend the rest of eternity with their harem, no longer interested in acquiring more waifus and not needing any more credits.\nSo we need new blood and we can't afford to let power-hungry morons kill themselves before they can become lucrative veteran contractors that handle the high-tier captures.\nThat's where you come in!",
+    "scope": "Standard",
+    "uid": "bYlik"
+  },
+  {
+    "title": "Unfuck the World",
+    "loca": "Elden Ring",
+    "author": "Lord Aether",
+    "source": "",
+    "scope": "Grand",
+    "budget": 1000,
+    "desc": "The Lands Between, once a beautiful and prosperous place, has been royally screwed over by the Greater Will and all his fellow Outer Gods. This has resulted in the absence of death, and more than half the races in this world being considered \"cursed\". Some Higher-ups in the Entertainment department want to see you fix this mess. You must complete the Elden Ring by returning the Rune of Death (not that cheap cursemark copy) and find a way to kick all the various Outer Gods off the planet. The Tarnished is supposed to save the world, after all.\n\nObjective: Find Malekith and obtain the Rune of Death and integrate it into the Elden Ring",
+    "objectives": [
+      {
+        "type": "Credits",
+        "reward": "500 credits",
+        "value": "Restore Miqaella to the Haligtree."
+      },
+      {
+        "reward": "150 credits per rune",
+        "value": "Gather all Mending Runes",
+        "type": "Credits"
+      },
+      {
+        "type": "Credits",
+        "value": "Gather and activate all Great Runes",
+        "reward": "250 credits per rune"
+      },
+      {
+        "reward": "2 IMG tickets",
+        "type": "TX Tickets",
+        "value": "Upgrade Miqaellal's Needle to full power and integrate it into the Elden Ring"
+      }
+    ],
+    "reward": "All Home perks up to Life's a beach, with a template of Leyndell, plus Demiplane perk",
+    "conditions": [
+      {
+        "value": "Chargen only"
+      },
+      {
+        "value": "Substitute (TheTarnishrd) (T4) required. We'll have you work your way up to power."
+      },
+      {
+        "value": "No purchased companions. You're on your own for this one."
+      },
+      {
+        "value": "You may not Power Swap. Only Template Stacking I is available."
+      },
+      {
+        "value": "Home perks are disabled for the duration of this mission."
+      }
+    ],
+    "image": "",
+    "rewardType": "Perks",
+    "uid": "Xqoeh"
+  },
+  {
+    "objectives": [
+      {
+        "value": "Make sure the Setting is worse off than the canon ending.",
+        "reward": "5% of the DR",
+        "type": "Credits"
+      },
+      {
+        "reward": "5% of the DR",
+        "value": "Convince the Hero to turn evil.",
+        "type": "Credits"
+      },
+      {
+        "type": "Credits",
+        "reward": "5% of the DR",
+        "value": "Ruin the living standard of the setting."
+      }
+    ],
+    "title": "Be the Villain!",
+    "scope": "Standard",
+    "loca": "Generic",
+    "rewardType": "Credits",
+    "uid": "tRuSn",
+    "reward": "20% of the DR",
+    "author": "ClayUndead",
+    "desc": "So… It seems that a Contractor has been going around and nabbing villains from settings and leaving them unsatisfactory. A Higher Up is willing to pay folks like you to be the Villain and challenge the Main Character and his cronies.",
+    "image": "https://i.imgur.com/VRSUcAJ.jpg",
+    "source": "",
+    "conditions": [
+      {
+        "value": "The Main Villain and their supporting cast have been captured already and are no longer in the universe."
+      },
+      {
+        "value": "The Contractor specified that you have to End the world, be the big bad, and/or fulfill the Prophecy."
+      },
+      {
+        "value": "No Hero Business"
+      }
+    ],
+    "budget": 1
+  },
+  {
+    "budget": 1,
+    "loca": "Generic",
+    "title": "Be the Hero!",
+    "author": "ClayUndead",
+    "rewardType": "Credits",
+    "desc": "Whoops! A contractor nabbed the main character and a couple of their friends and then ESL'd as soon as possible. This is normal of course, lots of people do it, unfortunately they forgot to buy We Will Meet Again. Again, usually not our problem, but this one feels bad about dooming a world and convinced a Higher Up(their daddy) that the world can be salvaged for resources. That's where you come in. We're going to send you in to take the place of Protagonists and save the day.",
+    "source": "",
+    "objectives": [
+      {
+        "reward": "5% of the DR",
+        "type": "Credits",
+        "value": "Make sure the Setting is better off than the canon ending."
+      },
+      {
+        "value": "Convince the Big Bad to repent.",
+        "type": "Credits",
+        "reward": "5% of the DR"
+      },
+      {
+        "type": "Credits",
+        "reward": "5% of the DR",
+        "value": "Improve the living standard of the setting."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "The Main Character and their supporting cast have been captured already and are no longer in the universe."
+      },
+      {
+        "value": "The Contractor specified that you have to Save the world, Prevent the big bad from happening, and/or fulfill the Prophecy."
+      },
+      {
+        "value": "No murderhobo-ing"
+      }
+    ],
+    "reward": "20% of the DR",
+    "uid": "KJLOj",
+    "image": "https://i.imgur.com/kpWKxn7.jpg",
+    "scope": "Standard"
+  },
+  {
+    "source": "",
+    "author": "ClayUndead",
+    "title": "Not so happy Isekai.",
+    "conditions": [
+      {
+        "value": "You must Substitute or Extra Into the setting. If this is not your Chargen world Papertrail would suffice but we would recommend not letting the Target see you."
       },
       {
         "value": "You must drive the target into desperation, until they wholeheartedly agree to sell out his benefactors."
@@ -17,18 +341,21 @@
         "value": "Do not kill them. We need them alive. If you kill them this mission is forfeit."
       }
     ],
-    "loca": "Generic",
-    "scope": "Standard",
+    "desc": "Contractor, you are being hired for a very special mission. The Company is a large and expansive conglomerate that owns a good and hefty chunk of the Multiverse. Sadly, it seems that an upstart competitor didn't get the message to not fuck with us. A world within our domain was poached by some \"Grand Isekai Service\" and gifted to some pleb for an OP Isekai. We want you to ruin it. Don't get me wrong, we send plenty of randos on OP Isekai, but we need to make an example. You will Substitute or Extra Into a setting and work to drive them to us, where we can use his para-spacial connection to link into Grand Isekai Service's servers and take them down from the inside. As for your target, all we know is that they have four essences, two of which we don't know. The two we do know are The Binder and The Isekai Hero.",
+    "uid": "ICigW",
+    "image": "https://i.imgur.com/eu3lacE.jpg",
+    "reward": "250 Credits",
+    "budget": 1,
     "objectives": [
       {
         "type": "Credits",
-        "value": "Get them to break without physically binding the Target.",
-        "reward": "100 Credits"
+        "reward": "100 Credits",
+        "value": "Get them to break without physically binding the Target."
       },
       {
-        "type": "Credits",
         "reward": "25 Credits",
-        "value": "Seduce or Rape the Target's favorite Waifu/Husbando."
+        "value": "Seduce or Rape the Target's favorite Waifu/Husbando.",
+        "type": "Credits"
       },
       {
         "reward": "50 Credits",
@@ -41,40 +368,37 @@
         "reward": "Covert Talent and Talent Sharing(Covert) OR 20 Credits"
       },
       {
+        "reward": "100 Credits",
         "value": "Successfully seduce the Target without your Bindings or Lures and break their heart.",
-        "reward": "100 Credits",
         "type": "Credits"
       },
       {
+        "type": "Credits",
         "value": "Rape the Target and make them enjoy it.(Hentai powers are recommended)",
-        "reward": "25 Credits",
-        "type": "Credits"
+        "reward": "25 Credits"
       },
       {
-        "value": "Cripple the Target in any way.(Paralysis, Amputation, Blinding, Etc.)",
+        "type": "Credits",
         "reward": "5 Credits",
-        "type": "Credits"
+        "value": "Cripple the Target in any way.(Paralysis, Amputation, Blinding, Etc.)"
       },
       {
+        "reward": "Communication and Performance Talent OR 20 Credits",
         "value": "Convince the Target that their new friends genuinely hate them.",
-        "type": "Perks",
-        "reward": "Communication and Performance Talent OR 20 Credits"
+        "type": "Perks"
       },
       {
-        "reward": "100 Credits",
         "value": "Never be outed as an entity not from the setting.",
+        "reward": "100 Credits",
         "type": "Credits"
       }
     ],
-    "desc": "Contractor, you are being hired for a very special mission. The Company is a large and expansive conglomerate that owns a good and hefty chunk of the Multiverse. Sadly, it seems that an upstart competitor didn't get the message to not fuck with us. A world within our domain was poached by some \"Grand Isekai Service\" and gifted to some pleb for an OP Isekai. We want you to ruin it. Don't get me wrong, we send plenty of randos on OP Isekai, but we need to make an example. You will Substitute or Extra Into a setting and work to drive them to us, where we can use his para-spacial connection to link into Grand Isekai Service's servers and take them down from the inside. As for your target, all we know is that they have four essences, two of which we don't know. The two we do know are The Binder and The Isekai Hero.",
-    "author": "ClayUndead",
     "rewardType": "Credits",
-    "source": "",
-    "title": "Not so happy Isekai.",
-    "uid": "ICigW"
+    "loca": "Generic",
+    "scope": "Standard"
   },
   {
-    "image": "",
+    "image": "https://i.imgur.com/Da6C8dc.jpg",
     "author": "noi",
     "scope": "Standard",
     "conditions": [
@@ -110,7 +434,7 @@
   },
   {
     "budget": 140,
-    "image": "https://i.kym-cdn.com/photos/images/newsfeed/001/843/833/c02.jpg",
+    "image": "https://i.imgur.com/ZyupILK.jpg",
     "source": "",
     "author": "noi",
     "desc": "Visit 10 apocalypse worlds in a row. They may be in the process of apocalypse or right on the brink of it. \nApocalypse is something that either destroys a civilization worldwide or devastates at least a continent utterly. \n\nYour mission is to survive the apocalypse at least a year. ",
@@ -142,28 +466,13 @@
     "uid": "YAGyM"
   },
   {
-    "reward": "2000 credits plus 1 TX ticket",
-    "image": "https://i.ibb.co/gykxn49/Ladybug-e-Chat-Noir-2.webp",
-    "desc": "The Miraculous are a great power, and together they become one that cannot be wielded in full by any one person. Not even you.\nBut hey, nothing says you can't wield the wielders, right?",
+    "budget": 55,
     "title": "Miracle King",
-    "objectives": [
-      {
-        "value": "Become Master Fu's successor",
-        "reward": "Guardian training, all Miraculous are under your control and can choose new wielders",
-        "type": "Other"
-      },
-      {
-        "reward": "1",
-        "value": "Complete the mission without becoming a permanent Miraculous Holder",
-        "type": "TX Tickets"
-      }
-    ],
     "scope": "Grand",
+    "source": "",
+    "loca": "Miraculous: Tales of Ladybug and Cat Noir",
     "rewardType": "Other",
     "author": "Ratcatcher",
-    "budget": 85,
-    "loca": "Miraculous: Tales of Ladybug and Cat Noir",
-    "source": "",
     "conditions": [
       {
         "value": "Chargen Only. Origin as either Drop-In, Extra, or Substitute."
@@ -178,34 +487,27 @@
         "value": "Any character who canonically doesn't have a Miraculous and is Captured while wielding one is automatically bumped to Tier 6 at step 1a."
       }
     ],
+    "image": "https://i.imgur.com/bSoMhCc.jpg",
+    "objectives": [
+      {
+        "value": "Become Master Fu's successor",
+        "type": "Other",
+        "reward": "Guardian training, all Miraculous are under your control and can choose new wielders"
+      },
+      {
+        "reward": "1",
+        "type": "TX Tickets",
+        "value": "Complete the mission without becoming a permanent Miraculous Holder"
+      }
+    ],
+    "desc": "The Miraculous are a great power, and together they become one that cannot be wielded in full by any one person. Not even you.\nBut hey, nothing says you can't wield the wielders, right?",
+    "reward": "2000 credits plus 1 TX ticket",
     "uid": "YhsXt"
   },
   {
-    "desc": "Sailor Moon and her Guardians have a rather blatant weakness: boys. A skilled lover could take advantage of it by seducing them all... And that's your job for this mission.",
-    "source": "",
-    "objectives": [
-      {
-        "value": "Seduce Haruka, Michiru, and Setsuna through the same methods as the main mission.",
-        "reward": "Copy of the Three Talismans and the Holy Grail for your own use",
-        "type": "Other"
-      },
-      {
-        "reward": "No Moon and Pharaoh's Herald perks applied automatically",
-        "type": "Perks",
-        "value": "Seduce Chibiusa and Hotaru through the same methods as the main mission."
-      },
-      {
-        "type": "Other",
-        "value": "Pull it off during Crystal Tokyo",
-        "reward": "Your own Silver Crystal, plus the Crystal Palace added to your Grand Manor"
-      }
-    ],
     "author": "Ratcatcher",
-    "scope": "Grand",
-    "budget": 500,
-    "reward": "Twice the capture reward",
-    "rewardType": "Other",
-    "loca": "Sailor Moon",
+    "image": "https://holly.paheal.net/_images/cd01fa89f44d7bc5e2bdee6771e8bccf/1532676%20-%20Ami_Mizuno%20Makoto_Kino%20Minako_Aino%20Prince_Demande%20Rei_Hino%20Sailor_Moon%20Usagi_Tsukino%20jadenkaiba.png",
+    "title": "Seduction Under the Moon",
     "conditions": [
       {
         "value": "Forage: only local captures may help."
@@ -217,15 +519,42 @@
         "value": "You must seduce Usagi, Minako, Ami, Rei, and Makoto without using any Binding. Then proceed to have sex with them until they're too tired to continue, and repeat until they fall for you."
       }
     ],
-    "image": "https://holly.paheal.net/_images/cd01fa89f44d7bc5e2bdee6771e8bccf/1532676%20-%20Ami_Mizuno%20Makoto_Kino%20Minako_Aino%20Prince_Demande%20Rei_Hino%20Sailor_Moon%20Usagi_Tsukino%20jadenkaiba.png",
+    "objectives": [
+      {
+        "value": "Seduce Haruka, Michiru, and Setsuna through the same methods as the main mission.",
+        "type": "Other",
+        "reward": "Copy of the Three Talismans and the Holy Grail for your own use"
+      },
+      {
+        "reward": "No Moon and Pharaoh's Herald perks applied automatically",
+        "value": "Seduce Chibiusa and Hotaru through the same methods as the main mission.",
+        "type": "Perks"
+      },
+      {
+        "value": "Pull it off during Crystal Tokyo",
+        "reward": "Your own Silver Crystal, plus the Crystal Palace added to your Grand Manor",
+        "type": "Other"
+      },
+      {
+        "value": "Seduce Usagi after her marriage with Mamoru and force him to watch her cheating on him",
+        "reward": "Your own copy of the Golden Crystal",
+        "type": "Other"
+      }
+    ],
     "uid": "NCWRa",
-    "title": "Seduction Under the Moon"
+    "source": "",
+    "reward": "Twice the capture reward",
+    "scope": "Grand",
+    "budget": 500,
+    "desc": "Sailor Moon and her Guardians have a rather blatant weakness: boys. A skilled lover could take advantage of it by seducing them all... And that's your job for this mission.",
+    "loca": "Sailor Moon",
+    "rewardType": "Other"
   },
   {
     "loca": "Generic",
     "reward": "5 Credits per night",
     "scope": "Quick",
-    "image": "",
+    "image": "https://i.imgur.com/VK1htPM.jpg",
     "title": "A Toy's Story",
     "source": "",
     "desc": "When you were a child and you wanted a bit more pocket money, you did a few more chores. This is our version of that Contractor. Not all our clients can afford our best services and quite frankly, we need out entertainment somehow. In exchange for a few Credits you will spend a night as a sex toy as it is being used by someone. You will have an awareness of what is happening and feel everything that happens to your toy self. We recommend at least one Stack of Stress and Addiction Defence. There is no limit to how many times you can take this Missino.",
@@ -306,7 +635,7 @@
     "scope": "Standard",
     "reward": "500 Credits and a $2,000,000 Bonus (or equivalent)",
     "title": "Red Is My Colour",
-    "image": "",
+    "image": "https://i.imgur.com/BUyWmt1.jpg",
     "desc": "One of our VIPs is still furious about the whole 'Twilight' thing making a mockery of their Vampire Fetish. They want a proper Vampire story to be told which is where you come in, Contractor. By accepting this mission, you will be given Template Stacking I of a Vampire and your exploits there will inspire a novel for the VIP. Your type of Vampire may vary a little but the basics are thus; Enhanced Senses, Strength in the low Ton range, Peak Human Speed with Flitting for bursts of speed (around 50m/s sustainable for around 2s at most) and a form of Magic (be it shapeshifting or hypnotism). By Default you and your KISS are immune to traditional Vampire Weaknesses, aren't Undead and are Fertile enough to breed with anything (this is not a euphemism or much of an exaggeration, anything that breeds with Egg and Sperm Combos can Impregnate you or be Impregnated by you if you have the right bits). To ensure it isn't all sunshine and daisies, there will be someone out there who is exactly your type but dead set on becoming a Vampire Hunter (by the time you meet they will be of equal Tier to you even if they're completely human).",
     "loca": "Generic",
     "conditions": [
@@ -329,7 +658,7 @@
     "rewardType": "Credits",
     "budget": 0,
     "desc": "You know what I could see more of? Overlords! Evil Kings! Arch-Mages of evil persuasions! That's where you come in. I'm willing to pay you company credits for entertaining me as an Evil Ruler. Just drop into a setting and take it(or at least a medium-sized country) over within a years time. I'll even add in bonus rewards for doing a good job.",
-    "image": "",
+    "image": "https://i.imgur.com/MV6YjCt.jpg",
     "title": "With an Iron Fist",
     "source": "",
     "loca": "Generic",
@@ -641,7 +970,7 @@
   {
     "title": "Sensational Foursome",
     "rewardType": "Credits",
-    "image": "https://i.ibb.co/cYMJW0L/434fb57b388deec8a04669768c07ce65711ed250r1-720-885v2-uhq.jpg",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1056349929678839980/b7f85cc11a7bc27c9fdb985a1e7a682b.jpg",
     "reward": "25",
     "source": "",
     "scope": "Quick",
@@ -837,36 +1166,43 @@
     "uid": "XnRKu"
   },
   {
+    "loca": "Pokemon",
+    "image": "https://cdn.donmai.us/original/9b/58/__pikachu_dawn_may_ash_ketchum_serena_and_11_more_pokemon_and_7_more_drawn_by_mushi_gyouza__9b5897cf0f71dbf15d78415f57e1d937.png",
+    "scope": "Grand",
+    "rewardType": "Credits",
+    "desc": "Ash Ketchum gets shipped with every girl he travels with, though he rarely if ever shows any interest in romance - and the girls DO seem interested in him in some way. Wanna take his place and take advantage of that?",
+    "budget": 85,
+    "title": "Gotta Do 'Em All",
     "author": "Ratcatcher",
-    "source": "",
+    "reward": "2000",
+    "uid": "GGPWA",
     "objectives": [
       {
-        "reward": "Instant Capture of Giselle",
+        "type": "Credits",
+        "reward": "20",
+        "value": "Repeat Ash' mess with the Spearow flock and capture the leader"
+      },
+      {
+        "reward": "Instant Capture of Giselle with twice the reward",
         "type": "Companions",
         "value": "Seduce Giselle"
       },
       {
-        "type": "Other",
         "value": "Capture the Gastly of Maiden's Peak",
-        "reward": "1 TX ticket, the Ghost of Maiden's Peak as a companion"
+        "reward": "1 TX ticket, the Ghost of Maiden's Peak as a companion",
+        "type": "Other"
       },
       {
-        "value": "Capture Jessie and James",
+        "reward": "Unison for you and all your current companions",
         "type": "Perks",
-        "reward": "Unison for you and all your current companions"
+        "value": "Capture Jessie and James"
       },
       {
-        "type": "Other",
+        "reward": "Two Heritage levels",
         "value": "Seduce Gary's Cheerleaders",
-        "reward": "Two Heritage levels"
+        "type": "Other"
       }
     ],
-    "desc": "Ash Ketchum gets shipped with every girl he travels with, though he rarely if ever shows any interest in romance - and the girls DO seem interested in him in some way. Wanna take his place and take advantage of that?",
-    "reward": "2000",
-    "scope": "Grand",
-    "uid": "GGPWA",
-    "budget": 85,
-    "rewardType": "Credits",
     "conditions": [
       {
         "value": "Chargen only."
@@ -881,9 +1217,7 @@
         "value": "Also, you must complete his voyages and solve the same crisis he solved, up to the Alola-Region. You can win the tournaments he lost, if you manage it."
       }
     ],
-    "title": "Gotta Do 'Em All",
-    "loca": "Pokemon",
-    "image": "https://cdn.donmai.us/original/9b/58/__pikachu_dawn_may_ash_ketchum_serena_and_11_more_pokemon_and_7_more_drawn_by_mushi_gyouza__9b5897cf0f71dbf15d78415f57e1d937.png"
+    "source": ""
   },
   {
     "scope": "Quick",
@@ -4250,14 +4584,19 @@
     "uid": "HdCBP"
   },
   {
-    "source": "",
-    "loca": "Generic",
-    "image": "https://cdn.donmai.us/original/24/c7/__akemi_homura_kaname_madoka_miki_sayaka_sakura_kyouko_tomoe_mami_and_1_more_mahou_shoujo_madoka_magica_drawn_by_n_n__24c750d9acbf1bd7f1731fb6051af371.jpg",
-    "rewardType": "Companions",
-    "objectives": [],
     "desc": "Everyone loves magical girls, right? Then, make more of them! Find waifus that are supposed to receive non-magical girl magic powers and turn them into magical girls.",
-    "scope": "Standard",
-    "author": "Ratcatcher",
+    "uid": "PXFIi",
+    "objectives": [
+      {
+        "reward": "Twice the reward upon Capture",
+        "value": "Give magical girl powers to someone who isn't going to have any long-term magic",
+        "type": "Credits"
+      }
+    ],
+    "rewardType": "Companions",
+    "budget": 0,
+    "loca": "Generic",
+    "title": "Magical Girl Maker",
     "conditions": [
       {
         "value": "Find a waifus that is going to have non-magical girl magical powers, or has them but is unable to access them."
@@ -4266,10 +4605,11 @@
         "value": "Find a way for them to access their magic through a magical girl transformation"
       }
     ],
+    "author": "Ratcatcher",
+    "scope": "Standard",
+    "image": "https://cdn.donmai.us/original/24/c7/__akemi_homura_kaname_madoka_miki_sayaka_sakura_kyouko_tomoe_mami_and_1_more_mahou_shoujo_madoka_magica_drawn_by_n_n__24c750d9acbf1bd7f1731fb6051af371.jpg",
     "reward": "Every new magical girl is now crushing on you independently of orientation and is raised one tier upon capture after step 6",
-    "budget": 0,
-    "title": "Magical Girl Maker",
-    "uid": "PXFIi"
+    "source": ""
   },
   {
     "budget": 950,

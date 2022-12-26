@@ -60,7 +60,7 @@
     <Note v-if="page === 1" type="warning" title="Work in progress">
       This section is in WIP stage, you can suggest simple missions/conditions/objectives for random mission generation on Discord
     </Note>
-    <div ref="missionWrapper" class="grid 2xl:grid-cols-3 lg:grid-cols-2 gap-4 pb-8 justify-center overflow-y-auto scrollbar">
+    <div ref="missionWrapper" class="w-full grid 2xl:grid-cols-[auto,auto,auto] lg:grid-cols-[auto,auto] gap-4 pb-8 justify-center overflow-y-auto scrollbar">
       <MissionCard v-for="mission in displayedMissions" :key="mission.uid" class="max-w-[600px]" :mission="mission" />
       <div v-if="!displayedMissions.length">
         No results matching your filter settings

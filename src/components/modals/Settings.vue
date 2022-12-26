@@ -120,13 +120,14 @@ import {
   DLCgenericPerks, DLChomes, DLCperks, DLCtalents, DLCheritages, DLClureExpansions,
   DLCbindings, DLClures, DLCotherControls, DLCridePerks,
 } from '~/data/DLCs'
+import { fullHeritagesDLC } from '~/data/heritageDLC'
 
 import { useStore } from '~/store/store'
 
 const { settings } = useStore()
 
 const allDLCAuthors = [DLCgenericPerks, DLChomes, DLCperks, DLCtalents, DLCheritages, DLClureExpansions,
-  DLCbindings, DLClures, DLCotherControls, DLCridePerks].reduce((a, dlc) => {
+  DLCbindings, DLClures, DLCotherControls, DLCridePerks, fullHeritagesDLC].reduce((a, dlc) => {
   dlc.forEach((perk) => { if (!a.includes(perk.dlc)) a.push(perk.dlc) })
   return a
 }, [] as string[])

@@ -1,11 +1,6 @@
 <template>
   <div class="sm:p-2 pb-8">
     <div class="mb-4 max-w-4xl mx-auto">
-      <!-- <Table
-        :headers="['&sum;', 'Tier']"
-        :rows="heritageTiers"
-        class="float-right m-2 mt-4"
-      /> -->
       <Desc :desc="desc" class="p-2 bg-violet-200 dark:bg-violet-900" />
     </div>
     <div class="flex gap-x-4 gap-y-2 gap flex-wrap justify-center mb-4">
@@ -24,6 +19,9 @@
         </div>
       </template>
     </div>
+    <Note v-if="['Mastermind', 'Psychopomp', 'Wendigo'].includes(activeTree)" class="max-w-4xl mx-auto mb-4" type="warning" title="DLC Heritage">
+      <div>This heritage is a DLC, you can leave a feedback for it on <a class="text-blue-500 underline" href="https://discord.gg/cZf4U5rmPV" target="_blank" rel="noopener noreferrer">discord</a></div>
+    </Note>
     <div class="hidden column-count-2 column-count-3 column-count-4 column-count-5"></div>
     <div
       class="column-gap pb-8"
@@ -86,7 +84,7 @@
     </div>
     <template v-if="heritagesDLC.length">
       <h2 class="text-2xl text-center">
-        DLC Heritages
+        DLC Heritage Perks
       </h2>
       <DLCNote />
       <div
@@ -118,14 +116,13 @@ import { useTooltips } from '~/logic/misc'
 import { useStore } from '~/store/store'
 import Select from '~/components/basic/Select.vue'
 import { chooseHeritage, heritageAvailable } from '~/logic'
-import { heritageTiers } from '~/data/constants'
 import { DLCheritages } from '~/data/DLCs'
 import { useFullPerks } from '~/logic/localPerks'
+import { fullHeritagesDLC } from '~/data/heritageDLC'
 
 const { heritage, flags, settings } = useStore()
 const { heritages } = useFullPerks()
 
-// const availableClasses = 'cursor-pointer'
 const heritageColors = {
   Dragon: 'bg-purple-200 dark:bg-purple-900 hover:(bg-purple-300 dark:bg-purple-800)',
   Transhuman: 'bg-cyan-200 dark:bg-cyan-900 hover:(bg-cyan-300 dark:bg-cyan-800)',
@@ -138,6 +135,10 @@ const heritagesDLC = computed(() => !settings.value.allChosenAuthors[0]
   ? DLCheritages.filter(perk => !settings.value.allChosenAuthors.includes(perk.dlc))
   : [])
 
+const heritagesDLC2 = computed(() => !settings.value.allChosenAuthors[0]
+  ? fullHeritagesDLC.filter(perk => !settings.value.allChosenAuthors.includes(perk.dlc))
+  : [])
+
 const heritageByTree = computed(() => {
   const res = {
     // Dragon: [] as Heritage[],
@@ -145,7 +146,7 @@ const heritageByTree = computed(() => {
     // Outsider: [] as Heritage[],
     // Other: [] as Heritage[],
   } as Record<string, PerkFull[]>
-  heritages.value.slice(1).forEach(x => x.tree ? res[x.tree] ? res[x.tree].push(x) : res[x.tree] = [x] : res.Other ? res.Other.push(x) : res.Other = [x])
+  [...heritages.value, ...heritagesDLC2.value].slice(1).forEach(x => x.tree ? res[x.tree] ? res[x.tree].push(x) : res[x.tree] = [x] : res.Other ? res.Other.push(x) : res.Other = [x])
   return res
 })
 

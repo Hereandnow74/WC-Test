@@ -1,9 +1,6 @@
 <template>
   <div class="sm:p-2">
     <Desc class="p-2 mb-4 max-w-4xl bg-warm-gray-200 dark:bg-warm-gray-800 mx-auto" :desc="desc" />
-
-    {{ bindingCounts }}
-
     <div class="flex flex-wrap gap-x-4 gap-y-2 justify-center mb-4">
       <template
         v-for="type in Object.keys(bindingByType)"

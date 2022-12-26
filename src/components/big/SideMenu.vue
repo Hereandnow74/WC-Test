@@ -89,6 +89,9 @@
     <router-link class="icon-text-btn mx-2" title="WC Fics" to="/fics">
       <fa-solid:book />Fanfics
     </router-link>
+    <router-link class="icon-text-btn mx-2" title="WC Builds" to="/sharedBuilds">
+      <bx:bx-spreadsheet />Builds
+    </router-link>
     <router-link class="icon-text-btn mx-2" title="Help" to="/help">
       <bx:bx-help-circle />Help
     </router-link>

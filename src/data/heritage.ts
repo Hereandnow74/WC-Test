@@ -180,10 +180,10 @@ heritages.push({
   complex: 'flavor',
   anything: 'Element',
   freebies: {
-    defensePerks: [{ title: 'Fatality Defense', cost: 0, count: 1 }, { title: 'Fatality Defense', cost: 0, count: 1 }, { title: 'Corruption Defense', cost: 0, count: 1 }],
+    defensePerks: [{ title: 'Fatality Defense', cost: 0, count: 2 }, { title: 'Corruption Defense', cost: 0, count: 1 }],
   },
   whitelist: ['Dragon Scale'],
-  desc: 'You may select a second dragon element. If you switched to a conceptual element with Dragon Scale, you may choose your old element or something new. Your training with one element will not usually carry over to the other, unless your level of understanding allows you to harmonize them as one. This perk also adds +1 effective tier to all waifus in your local universe for the purpose of Dragon Aura. Additionally, take two copies of Fatality Defense and one copy of Corruption Defense for free.',
+  desc: 'You may select a second dragon element. If you switched to a conceptual element with Dragon Scale, you may choose your old element or something new. Your training with one element will not usually carry over to the other, unless your level of understanding allows you to harmonize them as one. This perk also adds +1 effective tier to all waifus in your local universe for the purpose of Dragon Aura and immediately raises a contractor’s effective tier at step 2 to 8. Additionally, take two copies of Fatality Defense and one copy of Corruption Defense for free.',
 })
 
 heritages.push({

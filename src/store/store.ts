@@ -3,7 +3,7 @@ import { Perk } from 'global'
 import { useChallenges } from './challenges'
 import { usePlayStore } from './play'
 import { SavedChar, useChargenStore } from './chargen'
-import { CHAR_COSTS, heritageTiers, useAllChars, WORLD_RATINGS } from '~/data/constants'
+import { CHAR_COSTS, useAllChars, WORLD_RATINGS } from '~/data/constants'
 import { defenseObject, talentsObject } from '~/data/talents'
 
 const { loan, jumpChain, currentWorld, trHistory, missionRewards } = usePlayStore()

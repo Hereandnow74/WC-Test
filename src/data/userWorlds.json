@@ -2234,11 +2234,6 @@
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/992062217488973924/Machikado-Mazoku-Season-2-1.jpg"
   },
   {
-    "worldName": "Marvel Ultimate Universe",
-    "rating": 7,
-    "image": "http://2.bp.blogspot.com/-5kyKLsz6FOY/Uxpdu6j6iUI/AAAAAAAAPBs/AiNwBESlXg0/s1600/ultmtespdrmn200pg3pic.jpg"
-  },
-  {
     "worldName": "Reboot",
     "rating": 6,
     "additional": "In game users are capturable, but only have the abilities and rank of the in game avatar, not the in-universe User/Admin.",
@@ -5387,5 +5382,6 @@
   {"worldName":"Umbrella Academy","rating":5,"image":"https://cdn.dribbble.com/users/3562273/screenshots/14924591/media/802944991df126daeffaa2885aa0c199.jpg"},
   {"worldName":"Zenescope","rating":6,"image":"https://images.comicbooktreasury.com/wp-content/uploads/2021/12/Grimm-Fairy-Tales-Presents-Wonderland-Zenescope-Reading-Order.jpg"},
   {"worldName":"Bastard!!","rating":10,"image":"https://animecristal.com/wp-content/uploads/2022/07/Wallpaper-Bastard-003-1536x864.jpg"},
-  {"worldName":"Epic Seven","rating":7,"image":"https://static.smilegatemegaport.com/event/live/epic7/brand/v2/images/en/img_share_630.jpg","condition":[{"name":"During Archdemon War","rating":9}]}
+  {"worldName":"Epic Seven","rating":7,"image":"https://static.smilegatemegaport.com/event/live/epic7/brand/v2/images/en/img_share_630.jpg","condition":[{"name":"During Archdemon War","rating":9}]},
+  {"worldName":"The Idaten Deities Know Only Peace","rating":7,"image":"http://st.cdjapan.co.jp/pictures/l/11/19/FBAC-152.jpg","condition":[{"name":"Peaceful Generation","rating":7},{"rating":8,"name":"Previous Idaten Generation"}]}
 ]

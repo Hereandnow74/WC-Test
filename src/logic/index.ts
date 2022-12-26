@@ -1,5 +1,5 @@
 import { initializeApp } from 'firebase/app'
-import { getFirestore, collection, addDoc, doc, getDoc, runTransaction } from 'firebase/firestore/lite'
+import { getFirestore, collection, addDoc, doc, getDoc, runTransaction, query, where, getDocs, orderBy, limit, startAt, endAt, startAfter } from 'firebase/firestore/lite'
 
 export * from './toggles'
 export * from './misc'
@@ -90,6 +90,15 @@ export function shareLink(buildData: any, callback: any) {
   }
 }
 
+export function saveBuildGlobally(buildData: any, callback: any) {
+  try {
+    addDoc(collection(db, 'shared'), buildData).then(callback)
+  }
+  catch (e) {
+    console.error('Error while sharing a build: ', e)
+  }
+}
+
 export function sendStats(statsData: any, callback: any) {
   try {
     addDoc(collection(db, 'stats'), statsData).then(callback)
@@ -129,5 +138,27 @@ export function getBuilds(callback: any) {
   getDoc(docRef).then((docSnap) => {
     if (docSnap.exists()) callback(docSnap.data())
     else callback()
+  })
+}
+
+export function getBuildsQuery(callback: any, last = null) {
+  const docRef = collection(db, 'shared')
+  let q = null
+  if (last)
+    q = query(docRef, orderBy('date', 'desc'), startAfter(last), limit(15))
+  else
+    q = query(docRef, orderBy('date', 'desc'), limit(15))
+  getDocs(q).then((docSnap) => {
+    const result = []
+    docSnap.forEach((x) => {
+      if (x.exists()) {
+        result.push(x.data())
+        last = x
+      }
+    })
+    if (docSnap.empty)
+      callback(result)
+    else
+      callback(result, last)
   })
 }

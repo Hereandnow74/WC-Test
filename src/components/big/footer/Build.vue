@@ -226,7 +226,14 @@
         </li>
       </ul>
     </div>
-    <div class="flex gap-2 py-2 self-end">
+    <div class="flex gap-2 py-2 justify-between">
+      <Button
+        label="Publish Build"
+        size="Small"
+        bg-color="bg-purple-500"
+        class="self-start"
+        @click="publishBuild"
+      />
       <Button
         v-if="flags.chargen"
         label="Finish Build"
@@ -235,14 +242,6 @@
         class="self-end"
         @click="finishBuild"
       />
-      <!-- <Button
-        v-if="flags.chargen"
-        label="Publish Build"
-        size="Small"
-        bg-color="bg-purple-500"
-        class="self-end"
-        @click="finishBuild"
-      /> -->
       <Button
         v-else
         label="Return to Chargen"
@@ -252,12 +251,13 @@
         @click="returnToChargen"
       />
     </div>
+    <PublishBuild v-if="showPublish" @click="showPublish = false" />
   </div>
 </template>
 
 <script lang="ts" setup>
 import { useStore } from '~/store/store'
-import { chooseBinding } from '~/logic'
+
 import { useChallenges } from '~/store/challenges'
 import { confirmDialog } from '~/logic/dialog'
 import { WORLD_RATINGS } from '~/data/constants'
@@ -272,6 +272,7 @@ const { activeChallenges } = useChallenges()
 
 const editMode = ref(false)
 const priceMode = ref(false)
+const showPublish = ref(false)
 
 const archetype = {
   dr: 'Dragon',
@@ -295,6 +296,10 @@ async function finishBuild() {
   const confirm = await confirmDialog('This action will lock all \'chargen\' perks and if you return any of your chosen perks/companions you will only receive 80% of their cost back.')
   if (confirm)
     flags.value.chargen = false
+}
+
+async function publishBuild() {
+  showPublish.value = true
 }
 
 async function returnToChargen() {

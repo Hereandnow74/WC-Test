@@ -144,15 +144,15 @@ const specificMods = storeType('spMod', [] as {desc: string; mod: number}[])
 const fee = storeType('fee', 0)
 
 const flags = storeType('flags', {
-  noBindings: true,
+  noBindings: false,
   noHeritage: false,
   danger11Start: false,
   pvpEnabled: false,
   chargen: true,
   hasARide: false,
-  skipUsed: undefined,
+  skipUsed: null,
   isTranshuman: false,
-  transhumanType: undefined,
+  transhumanType: null,
 })
 
 const allForSave = {

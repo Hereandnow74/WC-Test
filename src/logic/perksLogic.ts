@@ -137,7 +137,7 @@ export function chooseIntensity(rule: Intensity, coopIntensity = 0, coopCount = 
   const ind = findIndex(intensities.value, { title: rule.title })
   if (ind !== -1) {
     const toDel = intensities.value.splice(ind, 1)[0]
-    if (!flags.value.chargen && toDel.cost < 11111) fee.value += Math.round(toDel.cost * 0.2) || 0
+    if (!flags.value.chargen && toDel.cost < 11111 && toDel.cost > 0) fee.value += Math.round(toDel.cost * 0.2) || 0
     allEffects.value.splice(allEffects.value.indexOf(toDel.title), 1)
     deletePerk(intensities.value, intensityAvailable)
   }
@@ -187,7 +187,7 @@ export function chooseBinding(bin: PerkFull, saveData: Perk, checkFunc = binding
     else {
       const toDel = binding.value.splice(ind, 1)[0]
       if (toDel.freebies) deleteFreebies(toDel.freebies)
-      if (!flags.value.chargen && toDel.cost < 11111) fee.value += Math.round(toDel.cost * 0.2) || 0
+      if (!flags.value.chargen && toDel.cost < 11111 && toDel.cost > 0) fee.value += Math.round(toDel.cost * 0.2) || 0
       allEffects.value.splice(allEffects.value.indexOf(toDel.title), 1)
       deletePerk(binding.value, checkFunc)
       if (binding.value.length === 0) flags.value.noBindings = true
@@ -256,7 +256,7 @@ export function chooseLure(lure: PerkFull, saveData: Perk) {
     }
     else {
       const toDel = luresBought.value.splice(ind, 1)[0]
-      if (!flags.value.chargen && toDel.cost < 11111) fee.value += Math.round(toDel.cost * 0.2) || 0
+      if (!flags.value.chargen && toDel.cost < 11111 && toDel.cost > 0) fee.value += Math.round(toDel.cost * 0.2) || 0
       allEffects.value.splice(allEffects.value.indexOf(toDel.title), 1)
       deletePerk(luresBought.value, lureAvailable)
       if (lure.freebies) deleteFreebies(lure.freebies)
@@ -312,11 +312,11 @@ export function chooseHeritage(hr: Heritage, saveData: Perk) {
         deleteFreebies(hr.typeFreebies[flags.value.transhumanType])
       if (hr.title === 'First Augmentation') {
         flags.value.isTranshuman = false
-        flags.value.transhumanType = undefined
+        flags.value.transhumanType = null
       }
       const toDel = heritage.value.splice(ind, 1)[0]
       if (toDel.freebies) deleteFreebies(toDel.freebies)
-      if (!flags.value.chargen && toDel.cost < 11111) fee.value += Math.round(toDel.cost * 0.2) || 0
+      if (!flags.value.chargen && toDel.cost < 11111 && toDel.cost > 0) fee.value += Math.round(toDel.cost * 0.2) || 0
       allEffects.value.splice(allEffects.value.indexOf(toDel.title), 1)
       deletePerk(heritage.value, heritageAvailable)
     }
@@ -600,10 +600,10 @@ export function clearAll() {
     danger11Start: false,
     pvpEnabled: false,
     chargen: true,
-    skipUsed: undefined,
+    skipUsed: null,
     hasARide: false,
     isTranshuman: false,
-    transhumanType: undefined,
+    transhumanType: null,
   }
   budgetMods.value = {
     plus: 0,

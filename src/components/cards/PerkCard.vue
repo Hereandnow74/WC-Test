@@ -58,7 +58,9 @@
         @click.stop
       />
       <span v-if="displayedCost !== 0" text="gray-500 dark:gray-400" class="whitespace-nowrap">
-        (Cost: <span text="green-600 dark:green-300">{{ displayedCost }}</span>)
+        (Cost: <span text="green-600 dark:green-300">{{ displayedCost }}
+        </span>)
+        <!-- Free:<span class="text-amber-500">{{ freebieCosts }}</span> -->
       </span>
       <fa-solid:check
         v-if="perkExist"
@@ -190,9 +192,9 @@ const displayedCost = computed(() => {
 const freebieCosts = computed(() => {
   let totalCost = 0
   if (props.perk.freebies && props.perk.freebies.talentPerks)
-    totalCost += props.perk.freebies.talentPerks.reduce((a, x) => a += x.count * talentsObject[x.title].cost, 0)
+    totalCost += props.perk.freebies.talentPerks.reduce((a, x) => (console.log(x.title), a += x.count * talentsObject[x.title].cost), 0)
   if (props.perk.freebies && props.perk.freebies.defensePerks)
-    totalCost += props.perk.freebies.defensePerks.reduce((a, x) => a += x.count * defenseObject[x.title].cost, 0)
+    totalCost += props.perk.freebies.defensePerks.reduce((a, x) => (console.log(x.title), a += x.count * defenseObject[x.title].cost), 0)
   return totalCost
 })
 

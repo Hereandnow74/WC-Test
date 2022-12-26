@@ -4,6 +4,7 @@ import { DLCgenericPerks, DLChomes, DLCperks, DLCtalents, DLCheritages, DLClureE
 import { DLCRides, rides } from './rides'
 import { homes, demiplane, dungeon } from './demdun'
 import { patrons } from './patronsRework'
+import { fullHeritagesDLC } from './heritageDLC'
 import { intensity, intensityPvP, invasionPvP } from '~/data/intensity'
 import { origin } from '~/data/origin'
 import { bindings, lures, lureExpansions, otherControls } from '~/data/binding'
@@ -69,7 +70,6 @@ export const WORLD_RATINGS = [
 ]
 
 export const CHAR_COSTS = [0, 1, 2, 5, 10, 20, 50, 100, 200, 500, 1000, 11111]
-export const heritageTiers = [[4, 4], [16, 5], [38, 6], [80, 7], [160, 8], [380, 9], [800, 10]]
 
 export const TOOLTIPS = {
   'Chargen': 'Only during character generation stage',
@@ -281,14 +281,14 @@ export const ALL_OFF_PERK_TITLES = computed(() => {
 
 export const ALL_DLC_PERK_TITLES = computed(() => {
   const result = {} as Record<string, PerkFull>
-  const all = [DLCperks, DLChomes, DLCgenericPerks, DLCheritages, DLCtalents, DLClureExpansions, DLCbindings, DLClures, DLCotherControls, DLCridePerks, DLCintensity, DLCRides]
+  const all = [DLCperks, DLChomes, DLCgenericPerks, DLCheritages, DLCtalents, DLClureExpansions, DLCbindings, DLClures, DLCotherControls, DLCridePerks, DLCintensity, DLCRides, fullHeritagesDLC]
   all.forEach(p => addTitles<typeof p[0]>(result, p))
   return result
 })
 
 export const ALL_PERK_TITLES = computed(() => {
   const result = {} as Record<string, PerkFull>
-  const all = [intensity, bindings, lures, lureExpansions, otherControls, heritages, homes, demiplane, dungeon, defenses, talents, perks, genericPerks, waifu_perks, DLCperks, DLChomes, DLCgenericPerks, DLCheritages, DLCtalents, DLClureExpansions, DLCbindings, DLClures, DLCotherControls, DLCridePerks]
+  const all = [intensity, bindings, lures, lureExpansions, otherControls, heritages, homes, demiplane, dungeon, defenses, talents, perks, genericPerks, waifu_perks, DLCperks, DLChomes, DLCgenericPerks, DLCheritages, DLCtalents, DLClureExpansions, DLCbindings, DLClures, DLCotherControls, DLCridePerks, fullHeritagesDLC]
   all.forEach(p => addTitles<typeof p[0]>(result, p))
   return result
 })
@@ -322,7 +322,7 @@ export const LINKS = computed(() => {
     'bindings/controls': [...otherControls.filter(perk => perk.type !== 'space'), ...DLCotherControls],
     'bindings/space': otherControls.filter(perk => perk.type === 'space'),
     'bindings/symbiote': [...symbioteBinding, ...symBuildings, ...synUnits],
-    'heritage': [...heritages, ...DLCheritages],
+    'heritage': [...heritages, ...DLCheritages, ...fullHeritagesDLC],
     'talents/ride': [...rides, ...ridePerksFull, ...DLCridePerks, ...DLCRides],
     'talents/home': [...homes, ...demiplane, ...dungeon, ...DLChomes],
     'talents/defense': defenses,
