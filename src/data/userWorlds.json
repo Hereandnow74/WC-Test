@@ -9,10 +9,6 @@
     "rating": 4,
     "condition": [
       {
-        "name": "Amaris Coup (in the Hegemony)/First Succession War/Second Succession War",
-        "rating": 6
-      },
-      {
         "name": "Third Succession War/\"Peacetime\"",
         "rating": 3
       },
@@ -23,6 +19,10 @@
       {
         "rating": 5,
         "name": "Jihad/Dark Age(?)"
+      },
+      {
+        "name": "Amaris Coup (in the Hegemony)/First Succession War/Second Succession War",
+        "rating": 6
       }
     ],
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/992067310657478746/battletech-1280-1524629881484_160w.jpg"
@@ -81,12 +81,12 @@
     "rating": 9,
     "condition": [
       {
-        "name": "Wrath of the Righteous",
-        "rating": 10
-      },
-      {
         "name": "Kingmaker",
         "rating": 9
+      },
+      {
+        "name": "Wrath of the Righteous",
+        "rating": 10
       }
     ],
     "image": "https://i.ytimg.com/vi/ESoB9KD3yKg/maxresdefault.jpg"
@@ -116,12 +116,12 @@
     "rating": 2,
     "condition": [
       {
-        "name": "RL-Craft",
-        "rating": 7
-      },
-      {
         "name": "Minecraft Dungeons",
         "rating": 6
+      },
+      {
+        "name": "RL-Craft",
+        "rating": 7
       },
       {
         "name": "Minecraft Legends",
@@ -143,12 +143,12 @@
         "name": "Original Trilogy, normal situation"
       },
       {
-        "name": "Original Trilogy, MGQ 3",
-        "rating": 8
-      },
-      {
         "name": "Paradox, Normal Situation",
         "rating": 6
+      },
+      {
+        "name": "Original Trilogy, MGQ 3",
+        "rating": 8
       },
       {
         "name": "Paradox, Third Tartarus",
@@ -224,20 +224,24 @@
         "name": "Percy Jackson and the Olympians"
       },
       {
+        "rating": 6,
+        "name": "Roman Empire"
+      },
+      {
+        "name": "Ancient Roman Empire",
+        "rating": 6
+      },
+      {
+        "name": "The Trials of Apollo",
+        "rating": 6
+      },
+      {
         "name": "The Heroes of Olympus",
         "rating": 7
       },
       {
         "name": "Ancient Greece",
         "rating": 7
-      },
-      {
-        "rating": 6,
-        "name": "Roman Empire"
-      },
-      {
-        "name": "Birth of the Primordials",
-        "rating": 10
       },
       {
         "name": "Birth of the Olympians",
@@ -252,12 +256,8 @@
         "rating": 8
       },
       {
-        "name": "Ancient Roman Empire",
-        "rating": 6
-      },
-      {
-        "name": "The Trials of Apollo",
-        "rating": 6
+        "name": "Birth of the Primordials",
+        "rating": 10
       }
     ],
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/992751586965205083/8bb304a6f8c617d03d55cd618a983329.jpg"
@@ -308,10 +308,6 @@
     "rating": 8,
     "condition": [
       {
-        "name": "Darksiders 1 Timeline",
-        "rating": 8
-      },
-      {
         "name": "Darksiders 2 Timeline",
         "rating": 7
       },
@@ -322,6 +318,10 @@
       {
         "name": "Nephilim Purge",
         "rating": 7
+      },
+      {
+        "name": "Darksiders 1 Timeline",
+        "rating": 8
       }
     ],
     "image": "https://free4kwallpapers.com/uploads/originals/2019/12/07/darksiders-genesis---strife-wallpaper.jpg"
@@ -336,20 +336,20 @@
         "rating": 8
       },
       {
-        "rating": 10,
-        "name": "Douluo Dalu 2.5"
-      },
-      {
         "name": "Douluo Dalu 2",
         "rating": 8
       },
       {
-        "rating": 10,
-        "name": "Douluo Dalu 3.5"
-      },
-      {
         "name": "Douluo Dalu 3",
         "rating": 8
+      },
+      {
+        "rating": 10,
+        "name": "Douluo Dalu 2.5"
+      },
+      {
+        "rating": 10,
+        "name": "Douluo Dalu 3.5"
       },
       {
         "name": "Douluo Dalu 4",
@@ -371,12 +371,12 @@
         "name": "After Olympus Fall"
       },
       {
-        "name": "Main Storyline Events",
-        "rating": 8
-      },
-      {
         "rating": 7,
         "name": "Midgard"
+      },
+      {
+        "name": "Main Storyline Events",
+        "rating": 8
       }
     ]
   },
@@ -450,20 +450,20 @@
     "rating": 10,
     "condition": [
       {
-        "name": "Paradise Lost",
-        "rating": 9
-      },
-      {
         "name": "Dies Irae",
         "rating": 8
       },
       {
-        "rating": 10,
-        "name": "Kajiri Kamui Kagura"
+        "name": "Paradise Lost",
+        "rating": 9
       },
       {
         "name": "Avesta of Black and White",
         "rating": 9
+      },
+      {
+        "rating": 10,
+        "name": "Kajiri Kamui Kagura"
       }
     ],
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/992757972797247498/Kajiri_Kamui_Kagura_.webp"
@@ -580,16 +580,16 @@
     "additional": "When capturing a rider one also captures their dragon.",
     "condition": [
       {
-        "name": "Reign of Galbatorix",
-        "rating": 5
-      },
-      {
         "name": "Age of Riders",
         "rating": 4
       },
       {
         "name": "Post Galbatorix",
         "rating": 4
+      },
+      {
+        "name": "Reign of Galbatorix",
+        "rating": 5
       }
     ]
   },
@@ -691,10 +691,6 @@
         "rating": 3
       },
       {
-        "name": "Collapse",
-        "rating": 8
-      },
-      {
         "rating": 6,
         "name": "Last City Age"
       },
@@ -705,6 +701,10 @@
       {
         "name": "Red War",
         "rating": 7
+      },
+      {
+        "name": "Collapse",
+        "rating": 8
       },
       {
         "rating": 8,
@@ -726,24 +726,24 @@
         "rating": 4
       },
       {
-        "name": "Tamers",
-        "rating": 5
-      },
-      {
-        "rating": 6,
-        "name": "Frontier"
-      },
-      {
-        "rating": 5,
-        "name": "Savers"
-      },
-      {
         "rating": 4,
         "name": "DS games"
       },
       {
         "name": "Cyber Sleuth",
         "rating": 4
+      },
+      {
+        "name": "Tamers",
+        "rating": 5
+      },
+      {
+        "rating": 5,
+        "name": "Savers"
+      },
+      {
+        "rating": 6,
+        "name": "Frontier"
       }
     ],
     "image": "https://i.pinimg.com/736x/99/26/5e/99265ece8618637b2f4e5a9f57738f87--digimon--digimon-tamers.jpg"
@@ -809,11 +809,11 @@
     "additional": "Dark One's taint on Saidin halves effectiveness of Corruption, Mind, & Soul Defenses for all male Channelers until the taint is cleanse from the One Power. Only applies during the Third Age.\n\nUsers of the One Power are subjected to its gendered rules, Saidin channelers, the male half of the One Power being on average stronger than Saidar channelers, while a linked circle of 13 Saidar channelers can overpower the strongest Saidin channeler.",
     "condition": [
       {
-        "name": "Age of Legends",
-        "rating": 10
+        "name": "After Breaking",
+        "rating": 7
       },
       {
-        "name": "After Breaking",
+        "name": "War of the Hundred Years",
         "rating": 7
       },
       {
@@ -821,12 +821,12 @@
         "rating": 8
       },
       {
-        "name": "War of the Hundred Years",
-        "rating": 7
-      },
-      {
         "name": "Tarmon Gai'don",
         "rating": 9
+      },
+      {
+        "name": "Age of Legends",
+        "rating": 10
       }
     ]
   },
@@ -857,6 +857,10 @@
         "rating": 4
       },
       {
+        "rating": 4,
+        "name": "Zexal"
+      },
+      {
         "rating": 5,
         "name": "Duel Monsters"
       },
@@ -869,20 +873,16 @@
         "rating": 5
       },
       {
-        "rating": 4,
-        "name": "Zexal"
-      },
-      {
         "name": "Arc V",
         "rating": 5
       },
       {
-        "rating": 7,
-        "name": "Duel Terminal"
-      },
-      {
         "rating": 6,
         "name": "World Legacy"
+      },
+      {
+        "rating": 7,
+        "name": "Duel Terminal"
       }
     ],
     "image": "https://i.pinimg.com/originals/3f/de/aa/3fdeaaf3ca7da87c52728d04bc2151a7.jpg"
@@ -952,12 +952,12 @@
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/992407859038007326/Asagi_trains_her_students.webp",
     "condition": [
       {
-        "name": "Dark Future Timeline",
-        "rating": 8
-      },
-      {
         "name": "Action Taimanin",
         "rating": 7
+      },
+      {
+        "name": "Dark Future Timeline",
+        "rating": 8
       },
       {
         "name": "RPGX",
@@ -1011,12 +1011,12 @@
     "rating": 7,
     "condition": [
       {
-        "name": "Nightosphere",
-        "rating": 8
-      },
-      {
         "rating": 6,
         "name": "Candy Kingdom"
+      },
+      {
+        "name": "Nightosphere",
+        "rating": 8
       }
     ],
     "image": "https://images4.imagebam.com/b4/10/b7/MEA0MYF_o.png"
@@ -1127,12 +1127,12 @@
         "rating": 6
       },
       {
-        "rating": 9,
-        "name": "Alien Force"
-      },
-      {
         "name": "Ultimate",
         "rating": 8
+      },
+      {
+        "rating": 9,
+        "name": "Alien Force"
       },
       {
         "rating": 10,
@@ -1189,12 +1189,12 @@
         "rating": 4
       },
       {
-        "rating": 10,
-        "name": "Extermination day"
-      },
-      {
         "rating": 9,
         "name": "Helluva Boss"
+      },
+      {
+        "rating": 10,
+        "name": "Extermination day"
       }
     ]
   },
@@ -1231,12 +1231,12 @@
     "additional": "All Techniques and Magic you learn inside the F.I.V.R. MMORPG 'Boundless' is real. Ingredients, Materials and other Items can be stored inside your Pocket Space/Inventory and will even be automatically supplied should you have a Warehouse District. ",
     "condition": [
       {
-        "name": "First Timeline (Doomed)",
-        "rating": 9
-      },
-      {
         "rating": 8,
         "name": "Second Timeline - Start of Canon"
+      },
+      {
+        "name": "First Timeline (Doomed)",
+        "rating": 9
       }
     ]
   },
@@ -1251,12 +1251,12 @@
     "image": "https://www.giantfreakinrobot.com/wp-content/uploads/2020/09/conan-the-barbarian-feature-1200x675.jpg",
     "condition": [
       {
-        "name": "Comic Book continuity",
-        "rating": 4
-      },
-      {
         "name": "Movies",
         "rating": 3
+      },
+      {
+        "name": "Comic Book continuity",
+        "rating": 4
       }
     ]
   },
@@ -1343,16 +1343,16 @@
     "additional": "All kith may be bound, but only sapient non-Kith races. Bound companions whose abilities are ordinarily dependent on Eora's abundant environmental soul essence can utilize these abilities off-world. Bound animatic constructs, including gods, can be sustained by infusions of magical energy other than soul essence comparable to their ordinary requirements.",
     "condition": [
       {
+        "name": "Waidwen Victorious! (AU: Raedceras wins Saint's War)",
+        "rating": 5
+      },
+      {
         "rating": 6,
         "name": "Hollowborn Crisis (PoE 1)"
       },
       {
         "name": "The Titan Walks (PoE 2)",
         "rating": 6
-      },
-      {
-        "name": "Waidwen Victorious! (AU: Raedceras wins Saint's War)",
-        "rating": 5
       },
       {
         "name": "The Adra Dims (AU: Everything that could go wrong, has gone wrong)",
@@ -1376,12 +1376,12 @@
     "rating": 6,
     "condition": [
       {
-        "name": "G1",
-        "rating": 7
-      },
-      {
         "rating": 6,
         "name": "Beast Wars"
+      },
+      {
+        "name": "G1",
+        "rating": 7
       },
       {
         "rating": 7,
@@ -1426,12 +1426,12 @@
     "rating": 5,
     "condition": [
       {
-        "name": "Weirdmageddon",
-        "rating": 8
-      },
-      {
         "name": "Reverse Falls",
         "rating": 6
+      },
+      {
+        "name": "Weirdmageddon",
+        "rating": 8
       }
     ],
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/992086979099500554/scale.jpg"
@@ -1514,12 +1514,12 @@
         "rating": 5
       },
       {
-        "rating": 6,
-        "name": "Terminator: Dark Fate-Future"
-      },
-      {
         "name": "Terminator: The Sarah Connor Chronicles",
         "rating": 5
+      },
+      {
+        "rating": 6,
+        "name": "Terminator: Dark Fate-Future"
       }
     ]
   },
@@ -1562,14 +1562,6 @@
         "name": "Black Mesa Incident"
       },
       {
-        "rating": 6,
-        "name": "Portal Storm"
-      },
-      {
-        "name": "Seven Hour War",
-        "rating": 7
-      },
-      {
         "rating": 5,
         "name": "Half-Life 2"
       },
@@ -1580,6 +1572,14 @@
       {
         "name": "Xen",
         "rating": 5
+      },
+      {
+        "rating": 6,
+        "name": "Portal Storm"
+      },
+      {
+        "name": "Seven Hour War",
+        "rating": 7
       }
     ],
     "image": "https://images2.alphacoders.com/633/633455.jpg"
@@ -1642,12 +1642,12 @@
     "image": "https://cdn.donmai.us/original/14/5c/__sadida_evangelyne_cra_amalia_sheran_sharm_yugo_and_3_more_wakfu_drawn_by_xaxaxa__145c4615d64be2e16d23c4fc3f1720c6.png",
     "condition": [
       {
-        "name": "Dofus",
-        "rating": 10
-      },
-      {
         "name": "Wakfu",
         "rating": 9
+      },
+      {
+        "name": "Dofus",
+        "rating": 10
       }
     ]
   },
@@ -1673,12 +1673,12 @@
     "image": "https://upload.wikimedia.org/wikipedia/en/3/30/Medabots.jpg",
     "condition": [
       {
-        "name": "Anime Version 3",
-        "rating": 3
-      },
-      {
         "name": "Game Version 1",
         "rating": 1
+      },
+      {
+        "name": "Anime Version 3",
+        "rating": 3
       }
     ]
   },
@@ -1696,12 +1696,12 @@
         "name": "Extra"
       },
       {
-        "rating": 9,
-        "name": "Unlimited"
-      },
-      {
         "rating": 7,
         "name": "Alternate"
+      },
+      {
+        "rating": 9,
+        "name": "Unlimited"
       }
     ],
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/992408989319053385/capsule_616x353.jpg"
@@ -1941,12 +1941,12 @@
     "image": "https://i.imgur.com/DVENIP5.jpeg",
     "condition": [
       {
-        "rating": 7,
-        "name": "Pre-Fabletown"
-      },
-      {
         "name": "Present",
         "rating": 5
+      },
+      {
+        "rating": 7,
+        "name": "Pre-Fabletown"
       }
     ]
   },
@@ -2032,16 +2032,16 @@
     "image": "https://i.imgur.com/4IBTjN9.jpg",
     "condition": [
       {
+        "rating": 4,
+        "name": "Apex Games"
+      },
+      {
         "name": "Titanfall 1",
         "rating": 6
       },
       {
         "rating": 6,
         "name": "Titanfall 2"
-      },
-      {
-        "rating": 4,
-        "name": "Apex Games"
       }
     ]
   },
@@ -2051,10 +2051,6 @@
     "image": "https://i.imgur.com/svVkrov.jpeg",
     "additional": "The City is a spherical mega-structure roughly 966 million miles in diameter. You can choose your general starting locations properties and will start in the middle layers within half of a million miles of your choices.\nAll human scale sophonts within Blame! are fully human compatible.\nWhile within Blame! the Mapper perk gains general localized information that any group of over 50 humans within 1 AU of you knows, and the Target Tracker perk records the general direction of anything as large as a human moving under its own power within 1 million miles of you.\nThe Virus is still carried by some surviving humans; it can be fully resisted as a carrier by Body Defense I, and is fully destroyed by Body Defense II. All humans you capture with the Net Terminal Gene inactive or damaged within them can have the Gene reactivated, if you wish.",
     "condition": [
-      {
-        "name": "Silicon Life has taken control of The City",
-        "rating": 9
-      },
       {
         "name": "The Virus never existed",
         "rating": 2
@@ -2066,6 +2062,10 @@
       {
         "rating": 8,
         "name": "Just after Killy was released"
+      },
+      {
+        "name": "Silicon Life has taken control of The City",
+        "rating": 9
       }
     ]
   },
@@ -2106,12 +2106,12 @@
     "rating": 6,
     "condition": [
       {
-        "name": "Comics",
-        "rating": 7
-      },
-      {
         "rating": 6,
         "name": "Tv Series"
+      },
+      {
+        "name": "Comics",
+        "rating": 7
       }
     ],
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/992400247038943283/Ebene-Magazine-Jupiters-Legacy-agrave-Lucifer-les-conseils-de-la-seacuterie-pour-mai.jpeg"
@@ -2340,6 +2340,10 @@
     "rating": 7,
     "condition": [
       {
+        "name": "Dragon Quest V",
+        "rating": 5
+      },
+      {
         "name": "Dragon Quest III",
         "rating": 7
       },
@@ -2350,10 +2354,6 @@
       {
         "name": "Dragon Quest IX",
         "rating": 7
-      },
-      {
-        "name": "Dragon Quest V",
-        "rating": 5
       },
       {
         "name": "Dragon Quest VI",
@@ -2646,12 +2646,12 @@
     "image": "https://i.pinimg.com/originals/d4/80/b4/d480b49e8927e2234d8d6c80d251c299.jpg",
     "condition": [
       {
-        "name": "God Eater 2",
-        "rating": 9
-      },
-      {
         "name": "God Eater 3",
         "rating": 8
+      },
+      {
+        "name": "God Eater 2",
+        "rating": 9
       }
     ]
   },
@@ -2780,12 +2780,12 @@
         "rating": 3
       },
       {
-        "rating": 4,
-        "name": "Food don't talk"
-      },
-      {
         "rating": 3,
         "name": "Budding haven"
+      },
+      {
+        "rating": 4,
+        "name": "Food don't talk"
       }
     ]
   },
@@ -2833,12 +2833,12 @@
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/992743074583285840/corruption-of-champions-explainer.jpg",
     "condition": [
       {
-        "name": "CoC 1",
-        "rating": 7
-      },
-      {
         "name": "CoC 2",
         "rating": 6
+      },
+      {
+        "name": "CoC 1",
+        "rating": 7
       }
     ]
   },
@@ -2848,24 +2848,12 @@
     "image": "https://wallpaper.dog/large/975514.jpg",
     "condition": [
       {
-        "rating": 3,
-        "name": "Sleeping Beauty "
-      },
-      {
         "rating": 2,
         "name": "The Princess and the Frog "
       },
       {
         "name": "Brave ",
         "rating": 2
-      },
-      {
-        "rating": 3,
-        "name": "Moana "
-      },
-      {
-        "rating": 3,
-        "name": "Lilo and Stitch "
       },
       {
         "rating": 2,
@@ -2880,20 +2868,28 @@
         "name": "Cinderalla"
       },
       {
-        "name": "The Emperors New Groove",
-        "rating": 3
-      },
-      {
         "name": "Encanto",
         "rating": 2
       },
       {
-        "rating": 6,
-        "name": "Hercules"
-      },
-      {
         "rating": 2,
         "name": "Wreck it Ralph"
+      },
+      {
+        "rating": 3,
+        "name": "Sleeping Beauty "
+      },
+      {
+        "rating": 3,
+        "name": "Moana "
+      },
+      {
+        "rating": 3,
+        "name": "Lilo and Stitch "
+      },
+      {
+        "name": "The Emperors New Groove",
+        "rating": 3
       },
       {
         "name": "The Little Mermaid",
@@ -2902,6 +2898,10 @@
       {
         "name": "Tangled",
         "rating": 3
+      },
+      {
+        "rating": 6,
+        "name": "Hercules"
       },
       {
         "name": "Disney Villains Victorious",
@@ -2937,24 +2937,24 @@
     "additional": "Visiting the setting or having any waifu from Neptunia will give you access to its leveling systems.",
     "condition": [
       {
-        "name": "Hyperdimension",
-        "rating": 8
+        "name": "Blanc + Neptunia VS Zombies",
+        "rating": 5
       },
       {
         "name": "Ultradimension",
         "rating": 7
       },
       {
-        "name": "Zero Dimension",
-        "rating": 9
-      },
-      {
-        "name": "Blanc + Neptunia VS Zombies",
-        "rating": 5
+        "name": "Hyperdimension",
+        "rating": 8
       },
       {
         "name": "Alsgard",
         "rating": 8
+      },
+      {
+        "name": "Zero Dimension",
+        "rating": 9
       }
     ]
   },
@@ -2969,12 +2969,12 @@
     "image": "https://honeysanime.com/wp-content/uploads/2021/09/soulworker_splash.jpg",
     "condition": [
       {
-        "rating": 9,
-        "name": "The Great Void"
-      },
-      {
         "rating": 8,
         "name": "Character's Worlds"
+      },
+      {
+        "rating": 9,
+        "name": "The Great Void"
       },
       {
         "name": "Merged Worlds",
@@ -3009,16 +3009,16 @@
     "rating": 7,
     "condition": [
       {
+        "name": "Anime Timeline",
+        "rating": 7
+      },
+      {
         "name": "Into the Ishikawa-verse / Kyomu Senki",
         "rating": 8
       },
       {
         "rating": 9,
         "name": "Manga Timeline"
-      },
-      {
-        "name": "Anime Timeline",
-        "rating": 7
       },
       {
         "name": "Armageddon",
@@ -3245,24 +3245,36 @@
     "additional": "For each world, increase the DR of the matching Cognitive Realm by 1. For Sel's Cognitive Realm increase the DR by +3.",
     "condition": [
       {
-        "rating": 6,
-        "name": "Scadrial - Lord Ruler's Reign (Mistborn 1)"
-      },
-      {
-        "name": "Scadrial - Post Lord Ruler (Mistborn 2/3)",
-        "rating": 8
-      },
-      {
-        "rating": 5,
-        "name": "Scadrial - Harmony (Wax & Wayne)"
+        "rating": 3,
+        "name": "Nalthis - Court of Gods (Warbreaker)"
       },
       {
         "rating": 4,
         "name": "Sel - Post Splintering (Elantris & tES)"
       },
       {
-        "rating": 3,
-        "name": "Nalthis - Court of Gods (Warbreaker)"
+        "name": "First of the Sun - Anytime",
+        "rating": 4
+      },
+      {
+        "rating": 5,
+        "name": "Scadrial - Harmony (Wax & Wayne)"
+      },
+      {
+        "name": "Roshar - Pre-Assassination (Way of Kings)",
+        "rating": 5
+      },
+      {
+        "rating": 6,
+        "name": "Scadrial - Lord Ruler's Reign (Mistborn 1)"
+      },
+      {
+        "name": "Roshar - Reckoning (Way of Kings)",
+        "rating": 6
+      },
+      {
+        "name": "Threnody - Anytime (SoSitFoH)",
+        "rating": 6
       },
       {
         "rating": 7,
@@ -3273,24 +3285,12 @@
         "name": "Roshar - Prior Desolations (Way of Kings)"
       },
       {
-        "name": "Roshar - Pre-Assassination (Way of Kings)",
-        "rating": 5
-      },
-      {
-        "name": "Roshar - Reckoning (Way of Kings)",
-        "rating": 6
+        "name": "Scadrial - Post Lord Ruler (Mistborn 2/3)",
+        "rating": 8
       },
       {
         "name": "Roshar - Everstorm (Oathbringer)",
         "rating": 8
-      },
-      {
-        "name": "Threnody - Anytime (SoSitFoH)",
-        "rating": 6
-      },
-      {
-        "name": "First of the Sun - Anytime",
-        "rating": 4
       }
     ]
   },
@@ -3427,12 +3427,12 @@
     "image": "https://get.wallhere.com/photo/illustration-anime-anime-girls-cartoon-Dog-Days-Millhiore-F-Biscotti-Leonmitchelli-Galette-des-Rois-Elmar-Ricotta-clair-Martinozzi-Yukikaze-Panettone-Brioche-d-Arquien-mangaka-153228.jpg",
     "condition": [
       {
-        "name": "Flonyard",
-        "rating": 2
-      },
-      {
         "name": "Earth",
         "rating": 1
+      },
+      {
+        "name": "Flonyard",
+        "rating": 2
       }
     ]
   },
@@ -3479,12 +3479,20 @@
         "name": "Classic"
       },
       {
-        "rating": 7,
-        "name": "X series"
+        "name": "Battle Network (as a navi)",
+        "rating": 5
       },
       {
-        "name": "X series (X-5)",
-        "rating": 8
+        "rating": 5,
+        "name": "Megaman Star Force"
+      },
+      {
+        "rating": 6,
+        "name": "Megaman Legends"
+      },
+      {
+        "rating": 7,
+        "name": "X series"
       },
       {
         "rating": 7,
@@ -3495,16 +3503,8 @@
         "name": "Megaman ZX"
       },
       {
-        "rating": 6,
-        "name": "Megaman Legends"
-      },
-      {
-        "name": "Battle Network (as a navi)",
-        "rating": 5
-      },
-      {
-        "rating": 5,
-        "name": "Megaman Star Force"
+        "name": "X series (X-5)",
+        "rating": 8
       }
     ],
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/992392852942364802/572139-MS12.jpg"
@@ -3525,12 +3525,12 @@
     "image": "https://cdn.donmai.us/sample/1e/a5/__angelica_rafa_redgrave_leon_fou_bartford_olivia_luxion_arroganz_and_3_more_otome_gee_sekai_wa_mob_ni_kibishii_sekai_desu_drawn_by_minatoasu_and_shiosato_jun__sample-1ea50d2e3861d4bd40f6fc0c6c014d69.jpg",
     "condition": [
       {
-        "name": "Novel Canon ",
-        "rating": 7
-      },
-      {
         "rating": 6,
         "name": "Game Canon "
+      },
+      {
+        "name": "Novel Canon ",
+        "rating": 7
       },
       {
         "name": "Marie Route",
@@ -3673,12 +3673,12 @@
     "additional": "Captured targets that are Awakeners will also automatically add their Divine Knights as familiars.",
     "condition": [
       {
-        "name": "War of the Lions",
-        "rating": 7
-      },
-      {
         "name": "Erebonian Civil War",
         "rating": 6
+      },
+      {
+        "name": "War of the Lions",
+        "rating": 7
       },
       {
         "rating": 7,
@@ -3741,16 +3741,16 @@
         "name": "Showa"
       },
       {
+        "name": "Ohma Zi-O Timeline",
+        "rating": 6
+      },
+      {
         "rating": 7,
         "name": "Heisei"
       },
       {
         "name": "Raiwa",
         "rating": 7
-      },
-      {
-        "name": "Ohma Zi-O Timeline",
-        "rating": 6
       }
     ]
   },
@@ -3828,12 +3828,12 @@
     "image": "https://i.imgur.com/GY0PieH.jpg",
     "condition": [
       {
-        "name": "Start of Series",
-        "rating": 5
-      },
-      {
         "rating": 4,
         "name": "Sindbad no Bouken"
+      },
+      {
+        "name": "Start of Series",
+        "rating": 5
       },
       {
         "name": "Ancient Alma Torran",
@@ -3979,12 +3979,12 @@
     "image": "https://i.imgur.com/RLtrQsS.jpg",
     "condition": [
       {
-        "name": "Generation 0",
-        "rating": 3
-      },
-      {
         "name": "Generation 1",
         "rating": 2
+      },
+      {
+        "name": "Generation 0",
+        "rating": 3
       }
     ]
   },
@@ -4038,12 +4038,12 @@
         "name": "Deserts of Kharak"
       },
       {
-        "name": "Homeworld 1",
-        "rating": 8
-      },
-      {
         "rating": 7,
         "name": "Homeworld 2 (Vaygr War)"
+      },
+      {
+        "name": "Homeworld 1",
+        "rating": 8
       },
       {
         "rating": 10,
@@ -4114,12 +4114,12 @@
     "additional": "By entering this world you gain access to the levelling system available to it's citizens. The same is true if you purchase a companion from this world.",
     "condition": [
       {
-        "name": "Demon Queen Velverosa's first raid",
-        "rating": 6
-      },
-      {
         "name": "Failed hero summoning",
         "rating": 5
+      },
+      {
+        "name": "Demon Queen Velverosa's first raid",
+        "rating": 6
       },
       {
         "name": "Season 1 Chapter 1",
@@ -4167,32 +4167,32 @@
     "image": "https://cdn.donmai.us/original/c6/7c/__xenomorph_alien_and_1_more_drawn_by_in_hyuk_lee__c67c1c88cc5d7928610020fe1e19b4f1.jpg",
     "condition": [
       {
-        "rating": 7,
-        "name": "Alien Emergence Event in Population Center"
-      },
-      {
         "name": "Alien",
         "rating": 3
-      },
-      {
-        "rating": 5,
-        "name": "Aliens"
       },
       {
         "rating": 3,
         "name": "Alien 3"
       },
       {
-        "rating": 4,
-        "name": "Alien Resurrection"
-      },
-      {
         "name": "Prometheus",
         "rating": 3
       },
       {
+        "rating": 4,
+        "name": "Alien Resurrection"
+      },
+      {
+        "rating": 5,
+        "name": "Aliens"
+      },
+      {
         "name": "Alien: Covenant",
         "rating": 6
+      },
+      {
+        "rating": 7,
+        "name": "Alien Emergence Event in Population Center"
       }
     ]
   },
@@ -4505,12 +4505,12 @@
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/1006943921097687040/2784.webp",
     "condition": [
       {
-        "rating": 7,
-        "name": "Survival Game Participant "
-      },
-      {
         "name": "Non-Participant ",
         "rating": 2
+      },
+      {
+        "rating": 7,
+        "name": "Survival Game Participant "
       }
     ]
   },
@@ -4716,16 +4716,16 @@
     "image": "https://cdn.donmai.us/original/3c/55/__fiona_van_flyheight_and_zeke_zoids_and_1_more_drawn_by_ueyama_michirou__3c55ec553c765b039c7cac969fef84cb.jpg",
     "condition": [
       {
-        "rating": 6,
-        "name": "Chaotic Century"
-      },
-      {
         "rating": 5,
         "name": "New Century Zero"
       },
       {
         "name": "Fuzors",
         "rating": 5
+      },
+      {
+        "rating": 6,
+        "name": "Chaotic Century"
       },
       {
         "rating": 6,
@@ -4739,12 +4739,12 @@
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/1010945965055807558/ee9eb204967ad0d177d2e2f3fd0a9029.jpg",
     "condition": [
       {
-        "name": "Original Timeline",
-        "rating": 7
-      },
-      {
         "rating": 6,
         "name": "Regression Timeline (Ian Page returns back in time)"
+      },
+      {
+        "name": "Original Timeline",
+        "rating": 7
       }
     ]
   },
@@ -4862,28 +4862,28 @@
     "image": "https://wallpapercave.com/wp/wp4340543.jpg",
     "condition": [
       {
-        "name": "Pre-Panem Era",
-        "rating": 4
-      },
-      {
         "name": "The Panem Era",
         "rating": 3
-      },
-      {
-        "name": "The First Rebellion",
-        "rating": 4
       },
       {
         "name": "The Hunger Games Era ",
         "rating": 3
       },
       {
-        "rating": 4,
-        "name": "The Second Rebellion"
-      },
-      {
         "rating": 3,
         "name": "The Republic Era"
+      },
+      {
+        "name": "Pre-Panem Era",
+        "rating": 4
+      },
+      {
+        "name": "The First Rebellion",
+        "rating": 4
+      },
+      {
+        "rating": 4,
+        "name": "The Second Rebellion"
       }
     ]
   },
@@ -4991,16 +4991,16 @@
     "image": "https://cdn.donmai.us/original/a2/c1/__callie_and_marie_splatoon_and_1_more_drawn_by_hou_ppo__a2c17ed61d7c04023d9c0f6e807497b5.png",
     "condition": [
       {
-        "name": "Octo Expansion ",
-        "rating": 4
-      },
-      {
         "name": "Splatoon 1",
         "rating": 3
       },
       {
         "rating": 3,
         "name": "Splatoon 2"
+      },
+      {
+        "name": "Octo Expansion ",
+        "rating": 4
       }
     ]
   },
@@ -5165,16 +5165,8 @@
     "image": "https://i.pinimg.com/564x/13/2f/84/132f844597c14abeec426cd6544f99a1.jpg",
     "condition": [
       {
-        "name": "Suikoden 1 (Gate Rune War)",
-        "rating": 5
-      },
-      {
         "rating": 4,
         "name": "Suikoden 2 (Dunan Unification War)"
-      },
-      {
-        "name": "Suikoden 3 (Second Fire Bringer War)",
-        "rating": 5
       },
       {
         "rating": 4,
@@ -5183,6 +5175,14 @@
       {
         "name": "Suikoden 5 (Sun Rune War)",
         "rating": 4
+      },
+      {
+        "name": "Suikoden 1 (Gate Rune War)",
+        "rating": 5
+      },
+      {
+        "name": "Suikoden 3 (Second Fire Bringer War)",
+        "rating": 5
       }
     ]
   },
@@ -5192,12 +5192,12 @@
     "image": "https://i.imgur.com/w7u0QbL.jpg",
     "condition": [
       {
-        "name": "Crash Era",
-        "rating": 7
-      },
-      {
         "rating": 6,
         "name": "Post-Colonization"
+      },
+      {
+        "name": "Crash Era",
+        "rating": 7
       }
     ]
   },
@@ -5217,16 +5217,16 @@
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/1038855212552691732/CoI-EElUEAARhLV.jpg",
     "condition": [
       {
-        "name": "Human Demon War",
-        "rating": 7
-      },
-      {
         "name": "Post Human Demon War",
         "rating": 3
       },
       {
         "name": "Demon Rebellion",
         "rating": 5
+      },
+      {
+        "name": "Human Demon War",
+        "rating": 7
       }
     ]
   },
@@ -5252,16 +5252,8 @@
     "image": "https://www.throneofgeeks.com/wp-content/uploads/2022/09/AC.webp",
     "condition": [
       {
-        "name": "AC Odyssey",
-        "rating": 5
-      },
-      {
         "name": "AC Origins",
         "rating": 4
-      },
-      {
-        "name": "AC Valhalla",
-        "rating": 5
       },
       {
         "name": "AC Syndicate",
@@ -5274,6 +5266,14 @@
       {
         "rating": 4,
         "name": "AC Black Flag "
+      },
+      {
+        "name": "AC Odyssey",
+        "rating": 5
+      },
+      {
+        "name": "AC Valhalla",
+        "rating": 5
       }
     ]
   },
@@ -5342,12 +5342,12 @@
         "name": "Rise of the Epics"
       },
       {
-        "rating": 6,
-        "name": "The Age of the Epics"
-      },
-      {
         "name": "After Calamity Leaves",
         "rating": 5
+      },
+      {
+        "rating": 6,
+        "name": "The Age of the Epics"
       }
     ]
   },
@@ -5361,27 +5361,157 @@
     "rating": 6,
     "image": "https://i.imgur.com/B9yMyZM.jpg"
   },
-  {"worldName":"Aria The Scarlet Ammo","rating":4,"image":"https://cdn.discordapp.com/attachments/925963686433132644/1045388227093213254/wp7402615.webp"},
-  {"worldName":"Black Summoner","rating":6,"image":"https://i0.wp.com/www.animegeek.com/wp-content/uploads/2022/08/Black-Summoner-Season-2-release-date-Kuro-no-Shoukanshi-Season-2-Anime.jpg?fit=1200%2C675&ssl=1"},
-  {"worldName":"Destiny Child","rating":6,"image":"https://static.dc-static.com/event/dcg/official/movie_thmb.jpg?v=1"},
-  {"worldName":"Samurai Jack","rating":6,"image":"https://images3.alphacoders.com/114/thumb-1920-1144085.jpg"},
-  {"worldName":"Star Vs. The Forces of Evil","rating":5,"image":"https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/6777E47B4FC7F996E1526C2D679CB683FAFA6D69BCDACBA6E0D5257DEDAC16D3/scale?width=1200&aspectRatio=1.78&format=jpeg"},
-  {"worldName":"The Amazing World of Gumball","rating":4,"image":"https://tvline.com/wp-content/uploads/2021/09/amazing-world-of-gumball.jpg?w=620"},
-  {"worldName":"Chaos","rating":7,"image":"https://bloody-disgusting.com/wp-content/uploads/2014/03/Chaos_Comics_Characters.jpg"},
-  {"worldName":"The Simpsons","rating":4,"image":"https://cdn.vox-cdn.com/thumbor/IQab79SuQ1PnrneGti_uy_pxTKo=/148x0:1768x1080/1280x854/cdn.vox-cdn.com/uploads/chorus_image/image/47413330/the-simpsons-tv-series-cast-wallpaper-109911.0.0.jpeg"},
-  {"worldName":"Hotel Transylvania","rating":3,"image":"https://media.wired.com/photos/5932a1419be5e55af6c2640e/master/pass/hotel-transylvania-3d-1680x1050.jpg"},
-  {"worldName":"Maji de Watashi ni Koi Shinasai!!","rating":5, "image": "https://i.ytimg.com/vi/gWF9_4TjJCM/maxresdefault.jpg"},
-  {"worldName":"Seiken Tsukai no World Break","rating":6,"image":"https://animetide.com/wp-content/uploads/world-break-aria-of-curse-for-a-holy-swordsman-season-2.jpg","condition":[{"name":"Anime Continuity","rating":6}]},
-  {"worldName":"Queen's Blade","rating":5,"image":"https://i.imgur.com/W4N2SjB.jpg"},
-  {"worldName":"Beast Tamer","rating":3,"image":"https://i.imgur.com/t6UTSzj.jpg"},
-  {"worldName":"Blue Archive","rating":5,"image":"https://i.imgur.com/EvcdoG4.png"},
-  {"worldName":"Kidnapped Dragons","rating":7,"image":"","condition":[{"rating":8,"name":"Bad End - Failed Regression"},{"name":"Unexpected Variable ","rating":9}]},
-  {"worldName":"Parasyte","rating":3,"image":"https://i.imgur.com/Au98IdG.jpg"},
-  {"worldName":"The Addams Family","rating":2,"image":"http://www.zbrushcentral.com/uploads/default/original/4X/d/a/a/daaa8edc70176d756fefb5e235a2685baeb89ac5.jpeg","condition":[{"name":"Wednesday","rating":3}]},
-  {"worldName":"Chrome Shelled Regios","rating":6,"image":"https://m.media-amazon.com/images/I/81N+BRRRjRL._RI_.jpg"},
-  {"worldName":"Umbrella Academy","rating":5,"image":"https://cdn.dribbble.com/users/3562273/screenshots/14924591/media/802944991df126daeffaa2885aa0c199.jpg"},
-  {"worldName":"Zenescope","rating":6,"image":"https://images.comicbooktreasury.com/wp-content/uploads/2021/12/Grimm-Fairy-Tales-Presents-Wonderland-Zenescope-Reading-Order.jpg"},
-  {"worldName":"Bastard!!","rating":10,"image":"https://animecristal.com/wp-content/uploads/2022/07/Wallpaper-Bastard-003-1536x864.jpg"},
-  {"worldName":"Epic Seven","rating":7,"image":"https://static.smilegatemegaport.com/event/live/epic7/brand/v2/images/en/img_share_630.jpg","condition":[{"name":"During Archdemon War","rating":9}]},
-  {"worldName":"The Idaten Deities Know Only Peace","rating":7,"image":"http://st.cdjapan.co.jp/pictures/l/11/19/FBAC-152.jpg","condition":[{"name":"Peaceful Generation","rating":7},{"rating":8,"name":"Previous Idaten Generation"}]}
+  {
+    "worldName": "Aria The Scarlet Ammo",
+    "rating": 4,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1045388227093213254/wp7402615.webp"
+  },
+  {
+    "worldName": "Black Summoner",
+    "rating": 6,
+    "image": "https://i0.wp.com/www.animegeek.com/wp-content/uploads/2022/08/Black-Summoner-Season-2-release-date-Kuro-no-Shoukanshi-Season-2-Anime.jpg?fit=1200%2C675&ssl=1"
+  },
+  {
+    "worldName": "Destiny Child",
+    "rating": 6,
+    "image": "https://static.dc-static.com/event/dcg/official/movie_thmb.jpg?v=1"
+  },
+  {
+    "worldName": "Samurai Jack",
+    "rating": 6,
+    "image": "https://images3.alphacoders.com/114/thumb-1920-1144085.jpg"
+  },
+  {
+    "worldName": "Star Vs. The Forces of Evil",
+    "rating": 5,
+    "image": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/6777E47B4FC7F996E1526C2D679CB683FAFA6D69BCDACBA6E0D5257DEDAC16D3/scale?width=1200&aspectRatio=1.78&format=jpeg"
+  },
+  {
+    "worldName": "The Amazing World of Gumball",
+    "rating": 4,
+    "image": "https://tvline.com/wp-content/uploads/2021/09/amazing-world-of-gumball.jpg?w=620"
+  },
+  {
+    "worldName": "Chaos",
+    "rating": 7,
+    "image": "https://bloody-disgusting.com/wp-content/uploads/2014/03/Chaos_Comics_Characters.jpg"
+  },
+  {
+    "worldName": "The Simpsons",
+    "rating": 4,
+    "image": "https://cdn.vox-cdn.com/thumbor/IQab79SuQ1PnrneGti_uy_pxTKo=/148x0:1768x1080/1280x854/cdn.vox-cdn.com/uploads/chorus_image/image/47413330/the-simpsons-tv-series-cast-wallpaper-109911.0.0.jpeg"
+  },
+  {
+    "worldName": "Hotel Transylvania",
+    "rating": 3,
+    "image": "https://media.wired.com/photos/5932a1419be5e55af6c2640e/master/pass/hotel-transylvania-3d-1680x1050.jpg"
+  },
+  {
+    "worldName": "Maji de Watashi ni Koi Shinasai!!",
+    "rating": 5,
+    "image": "https://i.ytimg.com/vi/gWF9_4TjJCM/maxresdefault.jpg"
+  },
+  {
+    "worldName": "Seiken Tsukai no World Break",
+    "rating": 6,
+    "image": "https://animetide.com/wp-content/uploads/world-break-aria-of-curse-for-a-holy-swordsman-season-2.jpg",
+    "condition": [
+      {
+        "name": "Anime Continuity",
+        "rating": 6
+      }
+    ]
+  },
+  {
+    "worldName": "Queen's Blade",
+    "rating": 5,
+    "image": "https://i.imgur.com/W4N2SjB.jpg"
+  },
+  {
+    "worldName": "Beast Tamer",
+    "rating": 3,
+    "image": "https://i.imgur.com/t6UTSzj.jpg"
+  },
+  {
+    "worldName": "Blue Archive",
+    "rating": 5,
+    "image": "https://i.imgur.com/EvcdoG4.png"
+  },
+  {
+    "worldName": "Kidnapped Dragons",
+    "rating": 7,
+    "image": "",
+    "condition": [
+      {
+        "rating": 8,
+        "name": "Bad End - Failed Regression"
+      },
+      {
+        "name": "Unexpected Variable ",
+        "rating": 9
+      }
+    ]
+  },
+  {
+    "worldName": "Parasyte",
+    "rating": 3,
+    "image": "https://i.imgur.com/Au98IdG.jpg"
+  },
+  {
+    "worldName": "The Addams Family",
+    "rating": 2,
+    "image": "http://www.zbrushcentral.com/uploads/default/original/4X/d/a/a/daaa8edc70176d756fefb5e235a2685baeb89ac5.jpeg",
+    "condition": [
+      {
+        "name": "Wednesday",
+        "rating": 3
+      }
+    ]
+  },
+  {
+    "worldName": "Chrome Shelled Regios",
+    "rating": 6,
+    "image": "https://m.media-amazon.com/images/I/81N+BRRRjRL._RI_.jpg"
+  },
+  {
+    "worldName": "Umbrella Academy",
+    "rating": 5,
+    "image": "https://cdn.dribbble.com/users/3562273/screenshots/14924591/media/802944991df126daeffaa2885aa0c199.jpg"
+  },
+  {
+    "worldName": "Zenescope",
+    "rating": 6,
+    "image": "https://images.comicbooktreasury.com/wp-content/uploads/2021/12/Grimm-Fairy-Tales-Presents-Wonderland-Zenescope-Reading-Order.jpg"
+  },
+  {
+    "worldName": "Bastard!!",
+    "rating": 10,
+    "image": "https://animecristal.com/wp-content/uploads/2022/07/Wallpaper-Bastard-003-1536x864.jpg"
+  },
+  {
+    "worldName": "Epic Seven",
+    "rating": 7,
+    "image": "https://static.smilegatemegaport.com/event/live/epic7/brand/v2/images/en/img_share_630.jpg",
+    "condition": [
+      {
+        "name": "During Archdemon War",
+        "rating": 9
+      }
+    ]
+  },
+  {
+    "worldName": "The Idaten Deities Know Only Peace",
+    "rating": 7,
+    "image": "http://st.cdjapan.co.jp/pictures/l/11/19/FBAC-152.jpg",
+    "condition": [
+      {
+        "name": "Peaceful Generation",
+        "rating": 7
+      },
+      {
+        "rating": 8,
+        "name": "Previous Idaten Generation"
+      }
+    ]
+  }
 ]

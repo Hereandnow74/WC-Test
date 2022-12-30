@@ -319,6 +319,8 @@ const missionRewardCredits = computed(() => Object.values(missionRewards.value).
 
 const missionRewardTickets = computed(() => Object.values(missionRewards.value).reduce((sum, miss) => sum += miss.rewards.reduce((missSum, rw) => rw.type === 'TX Tickets' ? missSum += parseInt(`${rw.value}`) || 0 : missSum, 0), 0))
 
+const challengesCost = computed(() => activeChallenges.value.reduce((a, x) => a += x.cost, 0))
+
 const budget = computed(() => {
   let bd = fullStartingBudget.value - startingOrigin.value.cost - pvpPerksCost.value
       - bindingCost.value - heritageCost.value - luresCost.value - ridePerksCost.value - homePerksCost.value
@@ -326,7 +328,7 @@ const budget = computed(() => {
       - genericWaifuPerksCost.value - companionsCost.value - otherCost.value - fee.value
       - budgetMods.value.minus + budgetMods.value.plus + companionProfit.value + companionProfitSold.value
       + usedHeritageDiscount.value + talentsDiscount.value + defensesDiscount.value + specificModsCost.value
-      + budgetMods.value.sell11 * 2000 + missionRewardCredits.value + defenseRetinueDiscount.value
+      + budgetMods.value.sell11 * 2000 + missionRewardCredits.value + defenseRetinueDiscount.value + challengesCost.value
 
   if (startingOrigin.value.swap) {
     if (startingOrigin.value.swap.tier !== 11)

@@ -1,5 +1,67 @@
 [
   {
+    "rewardType": "Credits",
+    "title": "Punishing Two Wrongs",
+    "author": "FinSexual92",
+    "loca": "RWBY",
+    "desc": "One of our Retired Contractors, a Demi-Human, has been introduced to the Web-Cartoon of RWBY, and he is not happy with the Racism towards Faunus or how the White Fang degraded because of Ghira's weak will. He has paid us handsomely to ensure the Two Pillars of Faunus Discrimination (Jacques Schnee and Ghira Belladonna) are brought low. He even went as far as to buy you the ability to control Grimm and for the assassination of Salem via a Dementor.",
+    "budget": 350,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "Company Clones of Raven Branwen and Summer Rose",
+        "type": "Companions",
+        "value": "Create and release a Porn Tape of each Matriarch (separately) being defiled by a Grimm (your choice) onto the local equivalent of the Internet"
+      },
+      {
+        "value": "Create and release a Porn Tape of each Daughter (separately) being defiled by Grimm (your choice) onto the local equivalent of the internet",
+        "reward": "Company Clones of Ruby Rose, Yang Xiao Long and Penny Polendina",
+        "type": "Companions"
+      },
+      {
+        "type": "Credits",
+        "reward": "25 Credits per person invited. This objective can only be done once per Family and requires all the women of the Family to count. You may double the Credits if you send a tape of the fun to the Patriarch of the Women you kidnapped",
+        "value": "Before they are bound, kidnap all the woman of one Family and place them in a Pillory (created to disrupt Aura use) inside a warehouse. Then invite a gang of the opposite race to have their way with them while wearing a mask of the opposite Family's Patriarch (Humans will fuck the Belladonnas with Jacques Schnee Masks and Faunus will fuck the Schnees with Ghira Belladonna Masks). During this time they will be protected by Sexual Calibration even if you do not have it, allowing otherwise impossible things to be possible and safe"
+      },
+      {
+        "value": "Wipe out the White Fang completely (as in Kill them all, no captures)",
+        "type": "Companions",
+        "reward": "Company Clones of Sienna Khan, Illia Amitola, Deery, Trifa, their combined Capture Prices and Template Stacking I of Adam Taurus for any member of your Retinue"
+      },
+      {
+        "value": "Completely Ruin the Schnee Dust Company allow the resurge of their former competition",
+        "type": "Other",
+        "reward": "Natural Dust added to your Demiplane and a Case of each Processed Dust type in your Warehouses"
+      },
+      {
+        "type": "Other",
+        "reward": "Island of Menagerie added to your Demiplane and a 50 strong force of T4 Faunus wearing the Original White Fang uniform (these are treated like the Clone Productions for your Rides)",
+        "value": "Have Ghira ousted as Mayor of Menagerie and replaced with someone willing to actually fight for Faunus Kind, even if it means fighting Extremist Faunus"
+      }
+    ],
+    "reward": "400 Credits",
+    "conditions": [
+      {
+        "value": "You receive Template Stacking I of Grimm Control"
+      },
+      {
+        "value": "Your Bindings do not work on Jacques or Ghira"
+      },
+      {
+        "value": "Their Crimes against Faunus Kind must be known to all, with proof lawyers can't truly explain away"
+      },
+      {
+        "value": "By the time you leave, you must have captured all 3 Schnee Women and both Belladonna Women"
+      },
+      {
+        "value": "You must also cripple the White Fang's reputation"
+      }
+    ],
+    "image": "",
+    "source": "",
+    "uid": "XKFZr"
+  },
+  {
     "budget": 0,
     "desc": "The client has requested that a specific person be... dealt with. Their name is Hayato and in a few hours after you get dropped off he'll meet one Saki Yoshida. The client wishes this meeting to never happen, or baring that, that the two of them are unable to get to the Karaoke joint Hayato will lead the young lady too. Additional rewards are available for going above and beyond.\n\nMission Parameters:\nYou will arrive in Tokyo the morning Saki and Hayato are to meet each other.\nYou will arrive less than a block from the convenience store they will meet at.\nIntercept Hayato before him and Saki make it to whichever Karaoke joint he intends for them to spend time at.\n\nMax reward is 60 credits\n\nAlternate rewards are  available should you wish:\n\nShould you not wish for a credit reward items equal to the max credit reward you obtained times 1.4 (84 credits equivalent value for max reward) are on offer.\nSome examples are:\nA scroll of any ninth level spell from DnD 5e is available for the equivalent of 22 credits each\nA Catch-a-Ride of choice within the limits of your reward, multiple may be chosen\nLower than ninth level spell scrolls from DnD at Spell level * 2 credit equivalent\n36 trained and equipped soldiers (T2) prebound alongside three APC's to carry them at max reward.\n",
     "reward": "20",
@@ -8566,23 +8628,28 @@
     ]
   },
   {
+    "rewardType": "Credits",
+    "budget": 365,
+    "reward": "1000",
+    "author": "Masterofbiomes",
     "image": "https://i.imgur.com/1OoqqAE.jpg",
-    "scope": "Grand",
-    "uid": "UqWXJ",
+    "source": "",
+    "title": "Win The Holy Grail",
+    "loca": "Nasuverse",
     "objectives": [
       {
+        "value": "Kill none of the masters",
         "reward": "200",
-        "type": "Credits",
-        "value": "Kill none of the masters"
+        "type": "Credits"
       },
       {
-        "reward": "100",
+        "type": "Credits",
         "value": "Kill all of the masters",
-        "type": "Credits"
+        "reward": "100"
       }
     ],
-    "title": "Win The Holy Grail",
-    "author": "Masterofbiomes",
+    "uid": "UqWXJ",
+    "scope": "Grand",
     "conditions": [
       {
         "value": "May only be taken on Chargen"
@@ -8591,7 +8658,7 @@
         "value": "Must substitute into a canon master from the war (Shirou, Rin, Shinji, Illya, Sakura, Atrum, Kuzuki, or Kirei)"
       },
       {
-        "value": "You will be refunded the full price of your chosen masters cannon servant"
+        "value": "You will be refunded the full price of your chosen masters canon servant"
       },
       {
         "value": "Must purchase one Nasuverse servant and at least one copy of the Command Seals from the 'Other Controls' section"
@@ -8600,12 +8667,7 @@
         "value": "Must win the Holy Grail War"
       }
     ],
-    "reward": "1000",
-    "source": "",
-    "desc": "Enter a holy grail war, and win!",
-    "loca": "Nasuverse",
-    "rewardType": "Credits",
-    "budget": 365
+    "desc": "Enter a holy grail war, and win!"
   },
   {
     "author": "Trismegistus",

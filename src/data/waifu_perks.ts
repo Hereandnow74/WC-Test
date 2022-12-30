@@ -1849,7 +1849,7 @@ export const waifu_perks: WaifuPerk[] = [
     tier: 10,
     image: 'https://i.imgur.com/tfJAhlu.png?1',
     cost: 800,
-    desc: 'Kama\'s other half, Mara, the true Demon King of the Sixth Heaven, has awakened as Beast 11 l/L (Lapse), an Evil of Humanity. Kama/Mara is the true counterpart to Beast lll/R (Rapture) Sessyoin Kiara and qualifies for special Alterzelu Symbiote theming. ',
+    desc: 'Kama\'s other half, Mara, the true Demon King of the Sixth Heaven, has awakened as Beast lll/L (Lapse), an Evil of Humanity. Kama/Mara is the true counterpart to Beast lll/R (Rapture) Sessyoin Kiara and qualifies for special Alterzelu Symbiote theming. ',
   },
   {
     uid: 'v2xHM',

@@ -32,13 +32,13 @@
         "a": "c"
       },
       {
+        "name": "Pokemon Legends Arceus",
+        "rating": 5
+      },
+      {
         "name": "Adventures/Special (manga)",
         "rating": 6,
         "a": "c"
-      },
-      {
-        "name": "Pokemon Legends Arceus",
-        "rating": 5
       }
     ],
     "image": "https://w0.peakpx.com/wallpaper/484/959/HD-wallpaper-pokemon-dawn-pokemon-elaine-pokemon-girl-gloria-pokemon-hilda-pokemon-kris-pokemon-leaf-pokemon-lyra-pokemon-may-pokemon-selene-pokemon-serena-pokemon.jpg"
@@ -70,17 +70,17 @@
         "a": "c"
       },
       {
-        "name": "Online",
-        "rating": 7,
-        "a": "c"
-      },
-      {
         "name": "Dominion War",
         "rating": 5
       },
       {
         "name": "Voyager",
         "rating": 6
+      },
+      {
+        "name": "Online",
+        "rating": 7,
+        "a": "c"
       }
     ],
     "image": "https://stevetobak.com/wp-content/uploads/2017/08/Star-Trek-Original-.jpg"
@@ -234,13 +234,13 @@
     "additional": "The titular Sekirei are psychic as a species and drawn to individuals with stronger psychic presences. Template Stacking (Ashikabi) is therefore unnecessary, just Psychic Talent or some other psychic template, together with sufficient training to build up a presence.",
     "condition": [
       {
-        "name": "Shinto Teito",
-        "rating": 3,
+        "name": "Outside Shinto Teito",
+        "rating": 2,
         "a": "c"
       },
       {
-        "name": "Outside Shinto Teito",
-        "rating": 2,
+        "name": "Shinto Teito",
+        "rating": 3,
         "a": "c"
       }
     ]
@@ -527,6 +527,11 @@
         "a": "c"
       },
       {
+        "name": "Zero",
+        "rating": 4,
+        "a": "c"
+      },
+      {
         "name": "Plus",
         "rating": 5,
         "a": "c"
@@ -550,11 +555,6 @@
         "name": "Frontier",
         "rating": 7,
         "a": "c"
-      },
-      {
-        "name": "Zero",
-        "rating": 4,
-        "a": "c"
       }
     ],
     "additional": "Micronization: Zentraedi and Meltrandi characters are Microne (human)-sized by default. The presence of one will add a Micronization chamber to your Grand Manor, if you have one. Advanced Tempest Runes (Body) allows them, and any other member of our retinue who’s used a Micronization chamber, to shift between Microne and Macrone forms on the fly. Body Tune-Up is enough to let Klan Klein maintain her adult figure while micronized. Additionally, all Zentraedi and Meltrandi combatants have a personal Pocket Space for their battlesuits. Battlesuits stored this way will automatically resize themselves to fit their wearer, regardless of whether the wearer is in Microne or Macrone form. Other: Mylene has her pet… tribble(?) Guvava as a familiar. We don’t actually know what Guvava is, just that it’s cute and fuzzy. Ranka has her squirrel-like pet Ai-kun as a familiar.",
@@ -565,6 +565,11 @@
     "worldName": "Ace Combat",
     "condition": [
       {
+        "name": "AC 4",
+        "rating": 3,
+        "a": "c"
+      },
+      {
         "name": "Standard",
         "rating": 4,
         "a": "c"
@@ -572,11 +577,6 @@
       {
         "name": "AC 7",
         "rating": 5,
-        "a": "c"
-      },
-      {
-        "name": "AC 4",
-        "rating": 3,
         "a": "c"
       }
     ],
@@ -624,13 +624,12 @@
     "additional": "Midna cannot take her imp form by default and would strongly prefer not to ever again. She instead has a strong affinity for shadow magic, capable of melting into shadows and teleporting through a world’s Twilight Realm, even if it doesn’t have one. The imp form may still be remade as a shadow magic spell, for use on herself or others. Fi brings the Master Sword with her, as if she was a Unison Device from MGLN; its aesthetics may change if she’s bound by a Symbiote.",
     "condition": [
       {
-        "name": "Breath of the Wild",
-        "rating": 5,
-        "a": "c"
+        "name": "Spirit Tracks",
+        "rating": 1
       },
       {
-        "name": "The Legend of Zelda",
-        "rating": 5
+        "rating": 2,
+        "name": "Tri Force Heroes"
       },
       {
         "rating": 4,
@@ -643,16 +642,6 @@
       {
         "name": "Link's Awakening",
         "rating": 4,
-        "a": "c"
-      },
-      {
-        "name": "Ocarina of Time",
-        "rating": 6,
-        "a": "c"
-      },
-      {
-        "name": "Majora's Mask",
-        "rating": 6,
         "a": "c"
       },
       {
@@ -673,25 +662,36 @@
         "name": "The Minish Cap"
       },
       {
-        "rating": 6,
-        "name": "Twilight Princess",
+        "name": "A Link Between Worlds",
+        "rating": 4
+      },
+      {
+        "name": "Breath of the Wild",
+        "rating": 5,
         "a": "c"
       },
       {
-        "name": "Spirit Tracks",
-        "rating": 1
+        "name": "The Legend of Zelda",
+        "rating": 5
       },
       {
         "rating": 5,
         "name": "Skyward Sword"
       },
       {
-        "name": "A Link Between Worlds",
-        "rating": 4
+        "name": "Ocarina of Time",
+        "rating": 6,
+        "a": "c"
       },
       {
-        "rating": 2,
-        "name": "Tri Force Heroes"
+        "name": "Majora's Mask",
+        "rating": 6,
+        "a": "c"
+      },
+      {
+        "rating": 6,
+        "name": "Twilight Princess",
+        "a": "c"
       }
     ],
     "image": "https://i.imgur.com/iXuJjfE.jpeg"
@@ -885,6 +885,10 @@
         "a": "c"
       },
       {
+        "name": "Four Blues",
+        "rating": 5
+      },
+      {
         "name": "Grand Line - Paradise",
         "rating": 6,
         "a": "c"
@@ -897,10 +901,6 @@
       {
         "name": "Gold Roger Era",
         "rating": 7
-      },
-      {
-        "name": "Four Blues",
-        "rating": 5
       },
       {
         "name": "New World - During the Era of Rocks D. Xebec",
@@ -987,6 +987,11 @@
     "additional": "Second-generation characters from Jugdral, Awakening, and Fates can have whichever gameplay-valid parents you want. Robin, Corrin, Byleth, and other Avatars can have any gameplay-legal build. Cavaliers, Pegasus Knights, Wyvern Knights, and other mounted units have their mounts as familiars.",
     "condition": [
       {
+        "name": "Three Houses (pre-timeskip)",
+        "rating": 4,
+        "a": "c"
+      },
+      {
         "name": "Awakening (present)",
         "rating": 5,
         "a": "c"
@@ -994,16 +999,6 @@
       {
         "name": "Three Houses (post-timeskip)",
         "rating": 5,
-        "a": "c"
-      },
-      {
-        "name": "Three Houses (pre-timeskip)",
-        "rating": 4,
-        "a": "c"
-      },
-      {
-        "name": "Awakening (Doomed Future)",
-        "rating": 8,
         "a": "c"
       },
       {
@@ -1022,6 +1017,11 @@
       {
         "name": "Radiant Dawn",
         "rating": 6
+      },
+      {
+        "name": "Awakening (Doomed Future)",
+        "rating": 8,
+        "a": "c"
       }
     ]
   },
@@ -1052,13 +1052,13 @@
     "worldName": "Final Fantasy 14",
     "condition": [
       {
-        "name": "The Source",
-        "rating": 7,
+        "name": "The First",
+        "rating": 6,
         "a": "c"
       },
       {
-        "name": "The First",
-        "rating": 6,
+        "name": "The Source",
+        "rating": 7,
         "a": "c"
       }
     ],
@@ -1236,16 +1236,16 @@
         "rating": 5
       },
       {
-        "name": "Xillia 2",
-        "rating": 7
-      },
-      {
         "name": "Zestria",
         "rating": 5
       },
       {
         "name": "Berseria",
         "rating": 5
+      },
+      {
+        "name": "Xillia 2",
+        "rating": 7
       }
     ]
   },
@@ -1363,11 +1363,6 @@
         "a": "c"
       },
       {
-        "name": "Cosmos in the Lostbelt",
-        "rating": 9,
-        "a": "c"
-      },
-      {
         "name": "Grand Order: Part 1",
         "rating": 8
       },
@@ -1378,6 +1373,11 @@
       {
         "rating": 8,
         "name": "River of Time"
+      },
+      {
+        "name": "Cosmos in the Lostbelt",
+        "rating": 9,
+        "a": "c"
       }
     ]
   },
@@ -1393,13 +1393,13 @@
         "a": "c"
       },
       {
+        "name": "Third Shinobi World War",
+        "rating": 6
+      },
+      {
         "name": "Kaguya or Otsutsuki active",
         "rating": 7,
         "a": "c"
-      },
-      {
-        "name": "Third Shinobi World War",
-        "rating": 6
       },
       {
         "name": "Boruto: Naruto Next Generations",
@@ -1476,17 +1476,17 @@
         "a": "c"
       },
       {
-        "name": "Hueco Mundo",
-        "rating": 8,
-        "a": "c"
-      },
-      {
         "name": "Human World",
         "rating": 6
       },
       {
         "name": "Soul Society",
         "rating": 7
+      },
+      {
+        "name": "Hueco Mundo",
+        "rating": 8,
+        "a": "c"
       },
       {
         "name": "1000 Years War",
@@ -1677,13 +1677,13 @@
     "additional": "Template Stacking only grants a specific parahuman’s power, not the shard connection. Science and Engineering Talents apply to parahuman Tinker databases. Psychic Talent applies to all other parahuman powers.<br> Captured parahumans will be disconnected from their shards and their powers seamlessly integrated into their true forms. Information and Trace Defenses will prevent a shard from seeing the disconnection.<br> Entities’ avatars are T10, but a Waifu Perk can upgrade them to their full Tier Χ self. To capture a Tier Χ Entity, it must have incorporated a vast majority of its shards, either by the Entity being captured between cycles or by a bound Avatar ending a cycle and reclaiming its shards. Binding a single shard in no way binds an Entity.",
     "condition": [
       {
+        "name": "Ward",
+        "rating": 7
+      },
+      {
         "name": "Eden is alive",
         "rating": 8,
         "a": "u"
-      },
-      {
-        "name": "Ward",
-        "rating": 7
       }
     ],
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/992405638292439102/Undersiders_by_shadaan-dahwc9f.webp"
@@ -1710,16 +1710,32 @@
     "worldName": "Warcraft",
     "condition": [
       {
+        "name": "During the Events of WoW 'Classic'",
+        "rating": 6
+      },
+      {
         "name": "No active crisis",
         "rating": 7,
         "a": "c"
       },
       {
-        "name": "During the Events of WoW 'Classic'",
-        "rating": 6
+        "name": "During the Events of WoW 'The Burning Crusade'",
+        "rating": 7
       },
       {
-        "name": "During the Events of WoW 'The Burning Crusade'",
+        "rating": 7,
+        "name": "During the Events of WoW 'Mists of Pandaria'"
+      },
+      {
+        "rating": 7,
+        "name": "During the Events of WoW 'Warlords of Draenor'"
+      },
+      {
+        "name": "During the Events of the Second War",
+        "rating": 7
+      },
+      {
+        "name": "During the Events of the First War",
         "rating": 7
       },
       {
@@ -1731,14 +1747,6 @@
         "name": "During the Events of WoW 'Cataclysm'"
       },
       {
-        "rating": 7,
-        "name": "During the Events of WoW 'Mists of Pandaria'"
-      },
-      {
-        "rating": 7,
-        "name": "During the Events of WoW 'Warlords of Draenor'"
-      },
-      {
         "rating": 8,
         "name": "During the Events of WoW 'Legion'"
       },
@@ -1747,24 +1755,16 @@
         "name": "During the Events of WoW 'Battle for Azeroth'"
       },
       {
-        "name": "During the Events of WoW 'Shadowlands'",
-        "rating": 9
-      },
-      {
         "name": "During the Events of Third War",
         "rating": 8
       },
       {
-        "name": "During the Events of the Second War",
-        "rating": 7
-      },
-      {
-        "name": "During the Events of the First War",
-        "rating": 7
-      },
-      {
         "name": "During the Events of the War of the Ancients",
         "rating": 8
+      },
+      {
+        "name": "During the Events of WoW 'Shadowlands'",
+        "rating": 9
       }
     ],
     "image": "https://leviathyn.com/wp-content/uploads/2014/11/rsz_warcraft-warcraft-actor-ben-foster-reveals-major-character-magic-and-guns-2-1050x429.jpg"
@@ -1791,13 +1791,13 @@
     "additional": "Sango has Kirara as a familiar. Kikyou has up to eight soul collectors as familiars.",
     "condition": [
       {
+        "name": "Modern Japan",
+        "rating": 2
+      },
+      {
         "name": "Sengoku Jidai",
         "rating": 7,
         "a": "c"
-      },
-      {
-        "name": "Modern Japan",
-        "rating": 2
       }
     ],
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/992406281631572080/InuYasha-1-1024x576.webp"
@@ -1846,13 +1846,13 @@
     "rating": 7,
     "condition": [
       {
-        "rating": 8,
-        "name": "Post-BBS through KH1",
+        "name": "Post KH1",
+        "rating": 7,
         "a": "c"
       },
       {
-        "name": "Post KH1",
-        "rating": 7,
+        "rating": 8,
+        "name": "Post-BBS through KH1",
         "a": "c"
       },
       {
@@ -1884,8 +1884,8 @@
     "worldName": "Guild Wars",
     "condition": [
       {
-        "name": "Dragons awake",
-        "rating": 7,
+        "name": "Elder Dragons asleep",
+        "rating": 5,
         "a": "c"
       },
       {
@@ -1894,13 +1894,13 @@
         "a": "c"
       },
       {
-        "name": "Several dragons awake",
-        "rating": 8,
+        "name": "Dragons awake",
+        "rating": 7,
         "a": "c"
       },
       {
-        "name": "Elder Dragons asleep",
-        "rating": 5,
+        "name": "Several dragons awake",
+        "rating": 8,
         "a": "c"
       }
     ],
@@ -1943,20 +1943,20 @@
         "rating": 4
       },
       {
-        "name": "Fallout 2",
-        "rating": 6
-      },
-      {
         "name": "Fallout 3",
         "rating": 5
       },
       {
-        "name": "Fallout: New Vegas",
+        "name": "Fallout 4",
+        "rating": 5
+      },
+      {
+        "name": "Fallout 2",
         "rating": 6
       },
       {
-        "name": "Fallout 4",
-        "rating": 5
+        "name": "Fallout: New Vegas",
+        "rating": 6
       }
     ]
   },
@@ -2000,12 +2000,20 @@
         "rating": 2
       },
       {
-        "rating": 8,
-        "name": "Forerunner-Precursor War"
-      },
-      {
         "rating": 3,
         "name": "Ancient Humanity Golden Age"
+      },
+      {
+        "name": "Post Covanent War (Halo 4 and 5)",
+        "rating": 6
+      },
+      {
+        "name": "Human-Covenant War (Original Trilogy)",
+        "rating": 7
+      },
+      {
+        "rating": 8,
+        "name": "Forerunner-Precursor War"
       },
       {
         "rating": 8,
@@ -2014,14 +2022,6 @@
       {
         "name": "Forerunner-Flood War",
         "rating": 10
-      },
-      {
-        "name": "Human-Covenant War (Original Trilogy)",
-        "rating": 7
-      },
-      {
-        "name": "Post Covanent War (Halo 4 and 5)",
-        "rating": 6
       }
     ],
     "additional": "Cortana will be plugged into your smart device. The Tier 5 version of her reflects her status at the end of the original trilogy. Body Tune-Up will give Spartans a functioning sex drive.",
@@ -2076,14 +2076,18 @@
     "worldName": "Marvel",
     "condition": [
       {
-        "name": "Mainline comics (Earth-616)",
-        "rating": 8,
+        "name": "Cinematic Universe (no TVA)",
+        "rating": 5,
         "a": "c"
       },
       {
-        "name": "Big Hero Six (Earth-14123)",
-        "rating": 7,
+        "name": "X-Men Evolution",
+        "rating": 5,
         "a": "c"
+      },
+      {
+        "name": "Spectacular Earth-26496 (NYC)",
+        "rating": 5
       },
       {
         "name": "Animated Universe (90s cartoons)",
@@ -2096,26 +2100,9 @@
         "a": "c"
       },
       {
-        "name": "Cinematic Universe (no TVA)",
-        "rating": 5,
+        "name": "Big Hero Six (Earth-14123)",
+        "rating": 7,
         "a": "c"
-      },
-      {
-        "name": "X-Men Evolution",
-        "rating": 5,
-        "a": "c"
-      },
-      {
-        "name": "Old Man Logan(Earth-807128)",
-        "rating": 9
-      },
-      {
-        "name": "Spectacular Earth-26496 (NYC)",
-        "rating": 5
-      },
-      {
-        "name": "Secret Wars(2015)",
-        "rating": 10
       },
       {
         "name": "Cinematic Universe w/ TV shows and Mutants (No TVA)",
@@ -2126,12 +2113,25 @@
         "rating": 7
       },
       {
+        "name": "Mainline comics (Earth-616)",
+        "rating": 8,
+        "a": "c"
+      },
+      {
         "name": "Ultimate Universe (Earth-1610)",
         "rating": 8
       },
       {
         "name": "Cinematic Universe w/ TV shows and Mutants (TVA Present)",
         "rating": 8
+      },
+      {
+        "name": "Old Man Logan(Earth-807128)",
+        "rating": 9
+      },
+      {
+        "name": "Secret Wars(2015)",
+        "rating": 10
       }
     ],
     "image": "https://sc02.alicdn.com/kf/HTB15Y38doo09KJjSZFDq6z9npXau/200664728/HTB15Y38doo09KJjSZFDq6z9npXau.jpg"
@@ -2141,6 +2141,11 @@
     "worldName": "Honkai Impact 3rd",
     "additional": "Each Herrscher qualifies for unique Alterzelu Symbiote theming. If you have Pocket Apartment and Apportation, valkyries may swap between different battlesuits (and their associated weapons) on the fly. Doctor MEI has a blank Divine Key that can temporarily connect to Herrscher cores, even those within other Divine Keys, and grant her a Herrscher form of her own at great physical expense.",
     "condition": [
+      {
+        "name": "Pre-Second Eruption",
+        "rating": 7,
+        "a": "c"
+      },
       {
         "name": "Start of canon",
         "rating": 8,
@@ -2159,11 +2164,6 @@
       {
         "name": "Second Eruption",
         "rating": 9,
-        "a": "c"
-      },
-      {
-        "name": "Pre-Second Eruption",
-        "rating": 7,
         "a": "c"
       }
     ],
@@ -2204,28 +2204,8 @@
     "worldName": "DC",
     "condition": [
       {
-        "rating": 8,
-        "name": "Mainline comics",
-        "a": "c"
-      },
-      {
-        "rating": 7,
-        "name": "Young Justice",
-        "a": "c"
-      },
-      {
         "rating": 6,
         "name": "DCAU",
-        "a": "c"
-      },
-      {
-        "rating": 10,
-        "name": "Hell Dimension",
-        "a": "c"
-      },
-      {
-        "rating": 9,
-        "name": "Injustice",
         "a": "c"
       },
       {
@@ -2237,8 +2217,9 @@
         "rating": 6
       },
       {
-        "name": "Earth III (Crime syndicate) ",
-        "rating": 9
+        "rating": 7,
+        "name": "Young Justice",
+        "a": "c"
       },
       {
         "name": "Teen Titans (Animated series)",
@@ -2249,20 +2230,39 @@
         "rating": 7
       },
       {
+        "name": "Neo-Gotham (Mainline)",
+        "rating": 7
+      },
+      {
+        "rating": 8,
+        "name": "Mainline comics",
+        "a": "c"
+      },
+      {
+        "rating": 9,
+        "name": "Injustice",
+        "a": "c"
+      },
+      {
+        "name": "Earth III (Crime syndicate) ",
+        "rating": 9
+      },
+      {
+        "name": "Flashpoint",
+        "rating": 9
+      },
+      {
+        "rating": 10,
+        "name": "Hell Dimension",
+        "a": "c"
+      },
+      {
         "name": "Blackest Night",
         "rating": 10
       },
       {
         "name": "Crisis on Infinite Earths",
         "rating": 10
-      },
-      {
-        "name": "Neo-Gotham (Mainline)",
-        "rating": 7
-      },
-      {
-        "name": "Flashpoint",
-        "rating": 9
       }
     ],
     "image": "https://comicvine.gamespot.com/a/uploads/original/11133/111337338/6666703-uyakpr2hud611.jpg"
@@ -2272,13 +2272,13 @@
     "worldName": "Chrono Trigger",
     "condition": [
       {
-        "rating": 8,
-        "name": "1999 CE",
+        "rating": 4,
+        "name": "1000 CE",
         "a": "c"
       },
       {
-        "rating": 7,
-        "name": "Zeal (12,000 BCE)",
+        "rating": 5,
+        "name": "600 CE",
         "a": "c"
       },
       {
@@ -2292,13 +2292,13 @@
         "a": "c"
       },
       {
-        "rating": 5,
-        "name": "600 CE",
+        "rating": 7,
+        "name": "Zeal (12,000 BCE)",
         "a": "c"
       },
       {
-        "rating": 4,
-        "name": "1000 CE",
+        "rating": 8,
+        "name": "1999 CE",
         "a": "c"
       }
     ],
@@ -2340,13 +2340,13 @@
     "additional": "The Lady and Lileath would be identical twins if not for their different races; if you have both, they’ll argue over which one is the older sister. Vampires no longer suffer from any of their weaknesses. Hellebron and Morathi are both young again. Khalida is alive and young again. Valkia is metaphysically separated from Khorne.",
     "condition": [
       {
-        "name": "Mousillon, Chaos Wastes, etc.",
-        "rating": 8,
+        "name": "No active crisis",
+        "rating": 7,
         "a": "c"
       },
       {
-        "name": "No active crisis",
-        "rating": 7,
+        "name": "Mousillon, Chaos Wastes, etc.",
+        "rating": 8,
         "a": "c"
       },
       {
@@ -2397,6 +2397,14 @@
         "a": "c"
       },
       {
+        "name": "New World (No Players active)",
+        "rating": 6
+      },
+      {
+        "name": "New World (Bonus Volume)",
+        "rating": 7
+      },
+      {
         "name": "New World (Against Nazarick)",
         "rating": 8,
         "a": "c"
@@ -2405,14 +2413,6 @@
         "name": "New World (multiple active guilds)",
         "rating": 9,
         "a": "c"
-      },
-      {
-        "name": "New World (No Players active)",
-        "rating": 6
-      },
-      {
-        "name": "New World (Bonus Volume)",
-        "rating": 7
       }
     ]
   },
@@ -2436,6 +2436,10 @@
         "a": "c"
       },
       {
+        "name": "Androids Awaken",
+        "rating": 9
+      },
+      {
         "rating": 10,
         "name": "Start of Android Saga",
         "a": "c"
@@ -2449,10 +2453,6 @@
         "rating": 10,
         "name": "Super",
         "a": "c"
-      },
-      {
-        "name": "Androids Awaken",
-        "rating": 9
       },
       {
         "rating": 10,
@@ -2480,13 +2480,8 @@
     "additional": "All Persona users can manifest their abilities in the real world. Velvet Room attendants (Elizabeth, Margaret, Lavenza) can activate your Personas, not just Izanami or Marie. Lavenza can split into Caroline and Justine, at will, and merge back with physical contact.",
     "condition": [
       {
-        "name": "Mainline series",
-        "rating": 10,
-        "a": "c"
-      },
-      {
-        "name": "Persona 3",
-        "rating": 5,
+        "name": "Persona 4",
+        "rating": 3,
         "a": "c"
       },
       {
@@ -2495,13 +2490,18 @@
         "a": "c"
       },
       {
-        "name": "Persona 4",
-        "rating": 3,
+        "name": "Persona 3",
+        "rating": 5,
         "a": "c"
       },
       {
         "name": "Devil Survivor",
         "rating": 8
+      },
+      {
+        "name": "Mainline series",
+        "rating": 10,
+        "a": "c"
       }
     ],
     "image": "https://ricedigital.co.uk/wp-content/uploads/2017/11/SMT-Demon-poll.jpg"
@@ -2516,83 +2516,23 @@
     "worldName": "Magic: The Gathering",
     "condition": [
       {
-        "name": "Phyrexia",
-        "rating": 10,
+        "name": "Alara (Bant)",
+        "rating": 3,
         "a": "c"
       },
       {
-        "name": "Zendikar (Eldrazi Awakening)",
-        "rating": 9,
+        "name": "Arcavios",
+        "rating": 3,
         "a": "c"
       },
       {
-        "name": "Amonkhet",
-        "rating": 8,
+        "name": "Kylem",
+        "rating": 3,
         "a": "c"
       },
       {
-        "name": "Zendikar (default)",
-        "rating": 8,
-        "a": "c"
-      },
-      {
-        "name": "Alara (Grixis)",
-        "rating": 7,
-        "a": "c"
-      },
-      {
-        "name": "Ikoria",
-        "rating": 7,
-        "a": "c"
-      },
-      {
-        "name": "Innistrad",
-        "rating": 7,
-        "a": "c"
-      },
-      {
-        "name": "Tarkir",
-        "rating": 7,
-        "a": "c"
-      },
-      {
-        "name": "Alara (Jund)",
-        "rating": 6,
-        "a": "c"
-      },
-      {
-        "name": "Ravnica",
-        "rating": 6,
-        "a": "c"
-      },
-      {
-        "name": "Shadowmoor",
-        "rating": 6,
-        "a": "c"
-      },
-      {
-        "name": "Theros",
-        "rating": 6,
-        "a": "c"
-      },
-      {
-        "name": "Alara (Esper)",
-        "rating": 5,
-        "a": "c"
-      },
-      {
-        "name": "Fiora",
-        "rating": 5,
-        "a": "c"
-      },
-      {
-        "name": "Ixalan",
-        "rating": 5,
-        "a": "c"
-      },
-      {
-        "name": "Kamigawa",
-        "rating": 5,
+        "name": "Segovia",
+        "rating": 3,
         "a": "c"
       },
       {
@@ -2616,23 +2556,82 @@
         "a": "c"
       },
       {
-        "name": "Alara (Bant)",
-        "rating": 3,
+        "name": "Alara (Esper)",
+        "rating": 5,
         "a": "c"
       },
       {
-        "name": "Arcavios",
-        "rating": 3,
+        "name": "Fiora",
+        "rating": 5,
         "a": "c"
       },
       {
-        "name": "Kylem",
-        "rating": 3,
+        "name": "Ixalan",
+        "rating": 5,
         "a": "c"
       },
       {
-        "name": "Segovia",
-        "rating": 3,
+        "name": "Kamigawa",
+        "rating": 5,
+        "a": "c"
+      },
+      {
+        "name": "Dominaria",
+        "rating": 5
+      },
+      {
+        "name": "Alara (Jund)",
+        "rating": 6,
+        "a": "c"
+      },
+      {
+        "name": "Ravnica",
+        "rating": 6,
+        "a": "c"
+      },
+      {
+        "name": "Shadowmoor",
+        "rating": 6,
+        "a": "c"
+      },
+      {
+        "name": "Theros",
+        "rating": 6,
+        "a": "c"
+      },
+      {
+        "name": "Alara (Grixis)",
+        "rating": 7,
+        "a": "c"
+      },
+      {
+        "name": "Ikoria",
+        "rating": 7,
+        "a": "c"
+      },
+      {
+        "name": "Innistrad",
+        "rating": 7,
+        "a": "c"
+      },
+      {
+        "name": "Tarkir",
+        "rating": 7,
+        "a": "c"
+      },
+      {
+        "name": "Amonkhet",
+        "rating": 8,
+        "a": "c"
+      },
+      {
+        "name": "Zendikar (default)",
+        "rating": 8,
+        "a": "c"
+      },
+      {
+        "name": "Zendikar (Eldrazi Awakening)",
+        "rating": 9,
         "a": "c"
       },
       {
@@ -2640,8 +2639,9 @@
         "name": "New Phyrexia"
       },
       {
-        "name": "Dominaria",
-        "rating": 5
+        "name": "Phyrexia",
+        "rating": 10,
+        "a": "c"
       }
     ],
     "image": "https://64.media.tumblr.com/34bc7a2da7cf1a0853b530cdb12d20f0/tumblr_pcpoii9tPn1wxwk8ro1_1280.jpg"
@@ -2677,18 +2677,8 @@
     "additional": "Visiting the setting or having any waifu from Disgaea will give you access to its leveling systems. Any system that relies on infrastructure will only be available once you have a home turf that it can be built into, whether that’s a local property, Ride, Demiplane, Dungeon, or Heritage-granted personal world. Note that good experience, by Disgaea standards, is extremely rare outside of Item Worlds or the Disgaea setting itself.",
     "condition": [
       {
-        "name": "Disgaea 5, Disgaea 6",
-        "rating": 10,
-        "a": "c"
-      },
-      {
-        "name": "Disgaea 4, Makai Kingdom",
-        "rating": 9,
-        "a": "c"
-      },
-      {
-        "name": "Disgaea 2, Disgaea 3",
-        "rating": 8,
+        "rating": 6,
+        "name": "La Pucelle, Phantom Brave",
         "a": "c"
       },
       {
@@ -2697,13 +2687,23 @@
         "a": "c"
       },
       {
-        "rating": 6,
-        "name": "La Pucelle, Phantom Brave",
+        "name": "Disgaea 2, Disgaea 3",
+        "rating": 8,
         "a": "c"
       },
       {
         "rating": 8,
         "name": "Soul Nomad and the World Eaters"
+      },
+      {
+        "name": "Disgaea 4, Makai Kingdom",
+        "rating": 9,
+        "a": "c"
+      },
+      {
+        "name": "Disgaea 5, Disgaea 6",
+        "rating": 10,
+        "a": "c"
       }
     ],
     "image": "https://www.thatvideogameblog.com/wp-content/uploads/2017/08/disgaea-5-complete-set-to-sell-over-100k-in-the-west.jpg"
@@ -2712,11 +2712,6 @@
     "rating": 10,
     "worldName": "Diablo",
     "condition": [
-      {
-        "name": "Diablo 3",
-        "rating": 10,
-        "a": "c"
-      },
       {
         "name": "Diablo 1",
         "rating": 9
@@ -2728,6 +2723,11 @@
       {
         "name": "Diablo 2.5",
         "rating": 9
+      },
+      {
+        "name": "Diablo 3",
+        "rating": 10,
+        "a": "c"
       }
     ],
     "image": "https://expertgamereviews.com/wp-content/uploads/2021/07/Diablo-2-Builds-Feature-1280x720.jpg"

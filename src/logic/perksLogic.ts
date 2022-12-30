@@ -1,4 +1,4 @@
-import { find, findIndex, intersection, intersectionWith, isEmpty, isObject, remove, sample, uniqBy } from 'lodash-es'
+import { difference, differenceBy, find, findIndex, intersection, intersectionWith, isEmpty, isObject, remove, sample, uniqBy } from 'lodash-es'
 import { DLCPerk, Freebie, PerkFull } from 'global'
 import { Intensity } from '~/data/intensity'
 import { WaifuPerk } from '~/data/waifu_perks'
@@ -18,6 +18,8 @@ export function deleteFreebies(freebies: object) {
       if (ind !== -1) {
         if (allForSave[key].value[ind].count && allForSave[key].value[ind].count > n.count) {
           allForSave[key].value[ind].count -= n.count
+          if (n.complex && allForSave[key].value[ind].complex)
+            allForSave[key].value[ind].complex = differenceBy(allForSave[key].value[ind].complex, n.complex, 'flavor')
         }
         else {
           allForSave[key].value.splice(ind, 1)

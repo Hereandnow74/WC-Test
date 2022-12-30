@@ -25,7 +25,7 @@
       <div>Perks Count: <span class="text-orange-500">{{ build.allEffects.length }}</span></div>
       <div>Companions: <span class="text-orange-500">{{ build.companions.length }}</span></div>
     </div>
-    <div class="flex gap-1 flex-wrap mt-1 bg-blue-200 dark:bg-blue-900 p-1 rounded">
+    <div class="flex gap-1 flex-wrap mt-1 bg-blue-200 dark:bg-blue-900 p-1 rounded justify-center">
       <div v-for="tag in buildTags" :key="tag" class="bg-teal-300 border-teal-500 dark:(bg-teal-800 border-teal-600) rounded border-b-2 border-r-2  px-1 w-max cursor-pointer whitespace-nowrap">
         {{ tag }}
       </div>
@@ -35,6 +35,7 @@
 
 <script lang="ts" setup>
 import type { PropType } from 'vue'
+import { ALL_DLC_PERK_TITLES } from '~/data/constants'
 import { confirmDialog } from '~/logic/dialog'
 import { writeBuildValues } from '~/logic/perksLogic'
 import { useStore } from '~/store/store'
@@ -59,6 +60,7 @@ const buildTags = computed(() => {
   if (props.build.loan.owed > 0) tags.push('Under Loan')
   if (props.build.companions.some(x => x.image)) tags.push('Custom Images')
   if (props.build.activeChallenges.length > 0) tags.push(props.build.activeChallenges[0].title)
+  if (props.build.allEffects.some((x: string) => ALL_DLC_PERK_TITLES.value[x])) tags.push('Use DLC')
   return tags
 })
 

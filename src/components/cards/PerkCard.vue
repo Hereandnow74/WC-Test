@@ -192,9 +192,9 @@ const displayedCost = computed(() => {
 const freebieCosts = computed(() => {
   let totalCost = 0
   if (props.perk.freebies && props.perk.freebies.talentPerks)
-    totalCost += props.perk.freebies.talentPerks.reduce((a, x) => (console.log(x.title), a += x.count * talentsObject[x.title].cost), 0)
+    totalCost += props.perk.freebies.talentPerks.reduce((a, x) => a += x.count * talentsObject[x.title].cost, 0)
   if (props.perk.freebies && props.perk.freebies.defensePerks)
-    totalCost += props.perk.freebies.defensePerks.reduce((a, x) => (console.log(x.title), a += x.count * defenseObject[x.title].cost), 0)
+    totalCost += props.perk.freebies.defensePerks.reduce((a, x) => a += x.count * defenseObject[x.title].cost, 0)
   return totalCost
 })
 

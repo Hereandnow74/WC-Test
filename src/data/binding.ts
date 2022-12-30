@@ -1381,6 +1381,19 @@ export const shroudElements = [
     'freebies': { defensePerks: [{ title: 'Paradox Defense', cost: 0, count: 1 }] },
   },
   {
+    'uid': '1ofJq',
+    'title': 'Dream (Mind)',
+    'Elemental Ability': 'Telekinesis, telepathy, oneiromancy, and empathy. Usages of telekinesis, telepathy, and empathy are generally invisible to the naked eye, but can take many forms in local mental planes, such as the astral plane. Intense usage often becomes visible as blue, violet, or indigo energy. Dream constructs can often take the form of anything the user can imagine or dream up, but can only be manifested in a mind or dreamscape (unless the Contractor has some other way to manifest them in a local reality).',
+    'Body Effects': ' Levitating hair, emotionally intense gaze, altered emotions of those nearby, mild hallucinations in viewers, monochrome eyes in the user.',
+    'Streamlined costume features': 'Simple robes of plain or dark colors, or skin-tight suits that leave the head bare in purples and blues.',
+    'Heavy costume features': 'Heavier robes with cowls that hide the face, except for visible glowing eyes and sleeves long enough to hide hands, completely concealing any body underneath. Alternatively renders the user nude, appearing translucent as a thoughtform, an idealized mental concept of themselves.',
+    'Freebies': 'Psychic Talent, Stress Defense, Mind Defense',
+    'freebies': {
+      defensePerks: [{ title: 'Stress Defense', cost: 0, count: 1 }, { title: 'Mind Defense', cost: 0, count: 1 }],
+      talentPerks: [{ title: 'Psychic Talent', cost: 0, count: 1 }],
+    },
+  },
+  {
     'uid': 'e8C98',
     'title': 'Custom Element',
     'Elemental Ability': 'If you aren\'t satisfied with Company provided options you can choose custom element for yourself, while Company systems are adapting to new element you may experience some glitches. Your custom element will start at the weakest level of power compared to Company provided elements, but it will match them when you attain mastery in every way.',

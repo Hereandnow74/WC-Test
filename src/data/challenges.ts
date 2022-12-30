@@ -162,4 +162,171 @@ export const challenges = [
       remove: () => baseBudget.value = baseBudget.value / 1.5,
     },
   },
+  {
+    uid: 'ZpyEq',
+    dlc: 'shifty-sword',
+    title: 'Skyblock',
+    image: 'https://i.imgur.com/xcZQTi5.png',
+    special: 'Chargen only. May not be taken on DR11. Cannot be taken with Wage Slave, Cash Still Rules, or Calming Up',
+    cost: 0,
+    desc: `
+      A hardcore challenge inspired by Minecraft Skyblock mod, in which you start on an piece of land floating in the sky on a empty world.
+      Your starting benefits will look like this:
+      <ul class="list-disc list-inside">
+        <li>0 Credits (On the Interactive you will receive 20 credits, so you can buy your T5 companion.)</li>
+        <li>1 Company Stamp</li>
+        <li>1 T5 Companion of your choice</li>
+        <li>1 Skyblock</li>
+      </ul>
+      <b>Selecting this challenge will open another section with the full rules.</p>
+    `,
+    effect: {
+      set: () => baseBudget.value = 20,
+      remove: () => WORLD_RATINGS[startingWorld.value.rating].budget || 0,
+    },
+  },
+]
+
+export const skyblockRules = `
+<h3 class="text-lg font-semibold">Skyblock challenge rules</h3>
+<p>You and your chosen companion will start on your Skyblock with a Survival Kit.</p>
+
+<p>The Skyblock is a special Demiplane that is an empty and infinite sky with a singular structure within it. The structure is a 25-meter x 25-meter x 25-meter cube. The bottom half of the structure is solid sandstone and contains no ores, gems, or other materials. The top half consists of normal dirt. It contains enough nutrients to grow crops and is covered in grass except for a small pond that contains clean, drinkable water.</p>
+
+<p>On the surface is also a single tree. This tree produces up to 5 large fruits a day. Each fruit provides enough nourishment to sustain an adult person for one day. These fruits rot 24 hours after being picked unless kept in a cold place, at which point they last for a week instead. Each fruit contains one seed that can be grown into a new tree that will bear fruit at the same rate. From the time of planting, it takes six months for the tree to grow to full maturation and start producing fruit. The tree’s wood is mundane and soft enough that it can be cut using the provided tools.</p>
+
+<p>When you first arrive on the Skyblock you will also find the Survival Kit, a wooden crate that contains a tent for two people, two sleeping bags, an ax, a shovel, a pick ax, a knife, flint & steel, ten emergency meals, and two canteens. Additional or replacement Survival Kits can be purchased for 5 Credits.</p>
+
+<p>Aside from the structure's position being locked into place, the Skyblock follows normal laws of physics. The structure is not indestructible. Additions to the structure are subject to gravity unless some power or other means prevent it. The sky follows a 24-hour night/day cycle, but the climate is always moderate. Any kind of weather can occur including rain, snow, hail, or even tornadoes. You have a guaranteed six months before any dangerous weather effects appear, after which point it is random. </p>
+
+<p>For Catalog purposes, the Skyblock counts as a base Demiplane, but NOT as a Pocket Apartment/Sweet Home/Grand Manor.</p>
+
+<p>On every seventh day, from 00:00 to 23:59, a 2-meter tall 1-meter wide portal will open in the center of the topmost layer of the Skyblock. This portal is large enough to accommodate the passage of a human-sized being. It comes with all Company standard protections and Neutral, hostile, and uninvited eyes will not notice a portal’s presence, activation, or use, and cannot pass through.</p>
+
+<p>The portal will lead to a random world. The maximum DR of the world is equal to the number of months since you have started plus three. For example, in your first month, the maximum DR of the world is 3, in the second month it will be 4, etc etc. This, of course, caps out at DR 10.</p>
+
+<p>You will have access to the world as long as the portal is open. The portal will appear at a random spot, but relevant, spot within the setting and cannot be moved. You will have 24 hours to gather any resources you desire, including Companions. Any members of your Retinue not on your Skyblock when the portal closes will be forcibly pulled back. As a penalty, the next portal will be open for 1 hour less for each Retinue member teleported like this. If that would reduce the timer to below zero, the portal will not open and the remaining penalty time will be taken out of the next portal opening. Timers for penalties and portal schedules can be found on your Company Smart Device.</p>
+
+<p>Capture timers are not reduced. A Stamp will still take 72 hours to capture. In-progress captures do not count as Retinue members and will not be teleported to your Skyblock when the portal closes, nor will they be teleported when they are fully captured. Captures of this nature will add them to your retinue, assign them all the benefits, and grant you Capture Credits, but they will be stranded in their world unless they were brought through the portal before it closed. However, they can be sold remotely even when the portal is closed. If they are not sold, Companions can be collected by purchasing a Visitation Pass for that world or by the portal randomly opening in their world again. In this situation, they will count as Retinue members, and they will be teleported to your Skyblock when the portal closes again.</p>
+`
+
+export const skyblockRulesAdditional = `
+<h3 class="text-lg font-semibold">Additional Rules</h3>
+<ul class="list-decimal list-inside">
+  <li>Cannot be taken with Wage Slave, Cash Still Rules, or Calming Up
+  </li>
+  <li>Pocket Space is purchasable. However, Pocket Home is not.</li>
+  <li>The Skyblock is dimension-locked. No dimensional hoppers can teleport out of it while the portal is closed. Their powers function fine outside of the Skyblock, but they are also subject to the rules of the Skyblock and will be forcibly brought back when the portal closes.</li>
+  <li>Dimensional transportation, through teleportation, vehicle, or other methods such as Dragon Break, can still be performed from other worlds. This means that while the portal from your Skyblock is open your multiversal travel options are not limited. However, when the portal closes, you will be yanked back to the Skyblock no matter what world you are in</li>
+  <li>Exit Stage Left cannot be purchased</li>
+  <li>Missions that take you to other worlds will not be offered. However, Quick Missions for worlds that the portal leads to can be accepted while the portal is open. A Mission is considered failed if the portal closes before it is done.</li>
+  <li>Art of Domains will still function correctly but claimed areas cannot be linked to the Skyblock in a way that allows for any kind of communication or travel.</li>
+  <li>Apportation will not allow teleportation between your Skyblock and a world unless there is a portal open connecting to that world, or a world within the local multiverse of the world the portal is opened to.</li>
+  <li>Laws of the Jungle no longer requires Life’s a Beach as a prerequisite</li>
+</ul>
+`
+
+export const skyblockPerks = [
+  {
+    uid: 'ZpyEq',
+    dlc: 'shifty-sword',
+    dlclink: 'https://docs.google.com/document/d/1Dasg0Yq3tgZ9mA6zL3G7_1VdBcq4pW_4qpwGImtXzRc/edit#',
+    title: 'Extra Block',
+    image: '',
+    category: 'Challenge',
+    whitelist: ['Skyblock'],
+    multiple: true,
+    cost: 10,
+    desc: `You can purchase an additional block of dirt and stone and place it anywhere you want by using the Catalog app on your Company Smart Device. It does not have to be touching any existing block. This block follows the same rules as the starting block. This perk can be purchased as many times as you wish.
+    `,
+  },
+  {
+    uid: 'ZpyEq',
+    dlc: 'shifty-sword',
+    dlclink: 'https://docs.google.com/document/d/1Dasg0Yq3tgZ9mA6zL3G7_1VdBcq4pW_4qpwGImtXzRc/edit#',
+    title: 'Bigger Portal',
+    image: '',
+    whitelist: ['Skyblock'],
+    cost: 15,
+    desc: `
+    The portal is now five meters tall and three meters wide, allowing for larger beings and vehicles to pass through it.
+    `,
+  },
+  {
+    uid: 'ZpyEq',
+    dlc: 'shifty-sword',
+    dlclink: 'https://docs.google.com/document/d/1Dasg0Yq3tgZ9mA6zL3G7_1VdBcq4pW_4qpwGImtXzRc/edit#',
+    title: 'Biggest Portal',
+    image: '',
+    whitelist: ['Bigger Portal'],
+    cost: 30,
+    desc: `
+    Beings or Vehicles of any size can now pass through the portal. The portal does not increase in size, instead it warps space to allow passage.
+    `,
+  },
+  {
+    uid: 'ZpyEq',
+    dlc: 'shifty-sword',
+    dlclink: 'https://docs.google.com/document/d/1Dasg0Yq3tgZ9mA6zL3G7_1VdBcq4pW_4qpwGImtXzRc/edit#',
+    title: 'Move Portal',
+    image: '',
+    whitelist: ['Skyblock'],
+    cost: 5,
+    multiple: true,
+    desc: `
+    Designate a new spot for the portal to appear. This perk must be repurchased each time you wish to move the portal.
+    `,
+  },
+  {
+    uid: 'ZpyEq',
+    dlc: 'shifty-sword',
+    dlclink: 'https://docs.google.com/document/d/1Dasg0Yq3tgZ9mA6zL3G7_1VdBcq4pW_4qpwGImtXzRc/edit#',
+    title: 'Pocket Inventory',
+    image: '',
+    whitelist: ['Pocket Space'],
+    cost: 5,
+    desc: `
+    Items in your Pocket Space can be accessed by thought instead of through an app.
+    `,
+  },
+  {
+    uid: 'ZpyEq',
+    dlc: 'shifty-sword',
+    dlclink: 'https://docs.google.com/document/d/1Dasg0Yq3tgZ9mA6zL3G7_1VdBcq4pW_4qpwGImtXzRc/edit#',
+    title: 'Shared Inventory',
+    image: '',
+    whitelist: ['Pocket Inventory'],
+    cost: 15,
+    desc: `
+    All members of your Retinue can now access your Pocket Inventory.
+    `,
+  },
+  {
+    uid: 'ZpyEq',
+    dlc: 'shifty-sword',
+    dlclink: 'https://docs.google.com/document/d/1Dasg0Yq3tgZ9mA6zL3G7_1VdBcq4pW_4qpwGImtXzRc/edit#',
+    title: 'Visitation Pass',
+    image: '',
+    whitelist: ['Skyblock'],
+    cost: 10,
+    multiple: true,
+    desc: `
+    Each time you purchase this perk, you can choose to have the next portal location be a world you’ve already visited. You choose the world when this perk is purchased. This perk can only be purchased if it has not already been purchased for the next portal.
+    <p>The cost of this perk is dependent on the Danger Rating of the world and is equal to the rating times 10. For example, a DR1 world would cost 10 Credits and a DR5 world would cost 50 Credits.</p>
+    `,
+  },
+  {
+    uid: 'ZpyEq',
+    dlc: 'shifty-sword',
+    dlclink: 'https://docs.google.com/document/d/1Dasg0Yq3tgZ9mA6zL3G7_1VdBcq4pW_4qpwGImtXzRc/edit#',
+    title: 'Escape Clause',
+    image: '',
+    whitelist: ['Skyblock'],
+    cost: 5000,
+    desc: `
+    As much of a challenge as the Skyblock is, there will inevitably come a time where you have amassed enough resources to trivialize it. As such, this perk allows you to break free from this challenge and become a normal Contractor, should you have the excessive amount of Credits required for it.
+    <p>With this purchase, all restrictions specific to this challenge are lifted. You can treat your Skyblock as Sweet Home and Grand Manor for the purposes of purchasing upgrades. Sweet Home Expansion will provide free copies of Extra Block equivalent to the mass of the expansion and the final purchase will turn your Skyblock into a proper planet. If you do not wish it to become a planet, simply keep purchasing Extra Block.</p>
+    <p>Additionally, you’ll receive Exit Stage Left, All Roads Lead To Home, We Will Meet Again, and Rainbow Bridge for free. All worlds that your Skyblock portal ever opened to are treated as visited worlds for the purposes of We Will Meet Again and Rainbow Bridge, giving you unlimited access to them. Additionally, a portal will open up, this time without a time limit, to your next Exit Stage Left world.</p>
+    `,
+  },
 ]

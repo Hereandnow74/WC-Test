@@ -33,7 +33,7 @@ const appsList = [
   { icon: 'fa-solid:dice', name: 'Dice Machine', component: 'DiceMachine', color: 'white' },
   { icon: 'fluent:globe-search-24-regular', name: 'Random World', component: 'RandomWorld', color: '#ff8888' },
   { icon: 'fluent:person-question-mark-16-regular', name: 'Random Character', component: 'RandomChar', color: '#f9ec52' },
-  { icon: 'bx:bx-spreadsheet', name: 'Global Users Builds', component: 'UserBuilds', color: '#3a64b1' },
+  // { icon: 'bx:bx-spreadsheet', name: 'Global Users Builds', component: 'UserBuilds', color: '#3a64b1' },
   { icon: 'la:dragon', name: 'Dragon Aura Calculator', component: 'DragonAura', color: '#c90000' },
   { icon: 'carbon:circle-packing', name: 'Ritual Circle', component: 'RitualCircle', color: '#b912b4' },
   { icon: 'clarity:note-edit-line', name: 'Notes', component: 'Notes', color: '#e9d385' },

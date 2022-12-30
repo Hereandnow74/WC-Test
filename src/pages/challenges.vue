@@ -16,17 +16,37 @@
       >
       </ChallengeCard>
     </div>
+    <div v-if="findIndex(activeChallenges, (x) => x.title === 'Skyblock') !== -1">
+      <Note title="Warning" type="warning" class="max-w-[600px] mx-auto mb-4">
+        Interactive does not enforce any of the rules below, so do not cheat. Also you can use <b>Random World</b> app for your random portal rolls.
+      </Note>
+      <Desc :desc="skyblockRules" class="mb-4 max-w-4xl mx-auto bg-l bg-violet-200 dark:bg-violet-900" />
+      <Desc :desc="skyblockRulesAdditional" class="mb-4 max-w-4xl mx-auto bg-l bg-violet-200 dark:bg-violet-900" />
+      <div class="pb-8" :class="settings.columns !== 'auto' ? `column-count-${settings.columns}` : 'md:column-count-2 xl:column-count-3 4xl:column-count-4 5xl:column-count-5'">
+        <PerkCard
+          v-for="challenge in skyblockPerks"
+          :key="challenge.title"
+          :perk="challenge"
+          :is-active="!!allChallenges[challenge.title]"
+          :saved-perk="allChallenges[challenge.title]"
+          :bg="challengeAvailable(challenge) ? 'light-300 dark:gray-800 hover:(blue-100 dark:blue-900)'
+            : 'gray-200 dark:gray-600'"
+          @pickPerk="(perk, save) => pickChallenge(save)"
+        >
+        </PerkCard>
+      </div>
+    </div>
   </div>
 </template>
 
 <script lang="ts" setup>
 import { Challenge } from 'global'
-import { findIndex } from 'lodash-es'
-import { challenges, challengesDesc } from '~/data/challenges'
+import { findIndex, intersection } from 'lodash-es'
+import { challenges, challengesDesc, skyblockRules, skyblockRulesAdditional, skyblockPerks } from '~/data/challenges'
 import { useChallenges } from '~/store/challenges'
 import { useStore } from '~/store/store'
 
-const { settings } = useStore()
+const { settings, allEffects } = useStore()
 
 const { activeChallenges } = useChallenges()
 
@@ -37,7 +57,11 @@ const allChallenges = computed(() => activeChallenges.value
   }, {} as Record<string, Challenge>))
 
 function challengeAvailable(challenge: any) {
-  return true
+  if (!challenge.whitelist) return true
+  if (challenge.title === 'Pocket Inventory' && allEffects.value.includes('Pocket Space')) return true
+  if (challenge.whitelist && intersection(activeChallenges.value.map(x => x.title), challenge.whitelist).length >= (challenge.needed || challenge.whitelist.length))
+    return true
+  return false
 }
 
 function pickChallenge(challenge: any) {
