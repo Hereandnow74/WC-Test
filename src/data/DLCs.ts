@@ -303,7 +303,7 @@ DLCperks.push({
   cost: 5,
   multiple: true,
   max: 3,
-  desc: `You can take all the stuff you owned in your birth world, example includes - your notes / phone / computer / things of sentimental value, the amount of the stuff is limited to the things you can carry with you in a backpack. If you have a Sweet Home or it's upgrades one of the room of your house will be filled with your possessions instead.
+  desc: `You can take all the stuff you owned in your birth world, example includes - your notes / phone / computer / things of sentimental value, the amount of the stuff is limited to the things you can carry with you in a backpack. Your smartphone and computer will have a snapshot of your world internet, regardless their technical capability for it. If you have a Sweet Home or it's upgrades one of the room of your house will be filled with your possessions instead.
   <p>With a second  purchase the company will bring along any pets you had even if they no longer alive, they will get the Everlasting Talent for free.</p>
   <p>The third purchase gives you an ability to change your pet species, limited to one time for each. This has no affect for a pet strength at the start, but can be trained up, the same as Added Potential. Examples of available species include: dragonling; kelpie; hippogriff; yeti; etc.</p>
   `,
@@ -714,6 +714,7 @@ DLCotherControls.push({
   cost: 120,
   freebies: {
     talentPerks: [{ title: 'Body Tune-Up', cost: 0, count: 1 }, { title: 'Martial Talent', cost: 0, count: 1 }, { title: 'Science Talent', cost: 0, count: 1 }, { title: 'Soul Talent', cost: 0, count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Martial Talent' }], count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Soul Talent' }], count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Science Talent' }], count: 1 }],
+    defensePerks: [{ title: 'Wild Defense', cost: 0, count: 1 }, { title: 'Body Defense', cost: 0, count: 1 }],
   },
   desc: `All those synced to the Grail System get further boosted to be fully on the level of at least a Low Class Servant. You and your retinue gain the Body Tune-Up, Martial, Science, and Soul Talents. (Take these four perks, plus Talent Sharing (Martial), Talent Sharing (Science) and Talent Sharing (Soul), for free.) You also gain Body, and Wild Defenses for free as well. 
   <p>Each member may permanently gain the effect of a Class Card they have access to. Unlike Class Cards however, this is a fixed choice, and must be in theme with that companion’s personality, skill, and current affinities. Those who would otherwise qualify for multiple classes may decide to switch classes via a ritual that requires being without a class for more than 24 hours, after which a new class may be selected.</p>

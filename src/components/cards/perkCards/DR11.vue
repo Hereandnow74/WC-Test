@@ -56,7 +56,7 @@ const perkImg = ref<HTMLImageElement | null>(null)
 
 function allTalents(cost = false) {
   talents.slice(0, 15).forEach((tl) => {
-    if (talentAvailable(tl) && findIndex(talentPerks.value, { title: tl.title }) === -1)
+    if (talentAvailable(tl) && (findIndex(talentPerks.value, { title: tl.title }) === -1 || cost))
       chooseTalent(tl, { title: tl?.title, cost: cost ? tl?.cost : 0, count: 1 })
   })
 }
@@ -65,7 +65,7 @@ function allDefenses(cost = false) {
   defenses.forEach((def) => {
     if (defenseAvailable(def)) {
       const ind = findIndex(defensePerks.value, { title: def.title })
-      if (ind === -1) chooseDefense(def, { title: def?.title, cost: cost ? def?.cost : 0 * 2, count: 2 })
+      if (ind === -1 || cost) chooseDefense(def, { title: def?.title, cost: cost ? def?.cost : 0 * 2, count: 2 })
     }
   })
 }
@@ -74,6 +74,8 @@ function startDR11() {
   if (intensityAvailable(props.perk)) {
     if (flags.value.danger11Start) {
       flags.value.danger11Start = false
+      allTalents(true)
+      allDefenses(true)
       emit('chooseIntensity', props.perk)
     }
     else {

@@ -1,5 +1,828 @@
 [
   {
+    "author": "ClayUndead",
+    "image": "",
+    "reward": "500 credits",
+    "conditions": [
+      {
+        "value": "collect all of the remaining 39 Teigu."
+      },
+      {
+        "value": "prevent anymore from breaking."
+      },
+      {
+        "value": "Have fun in Sadism-land!"
+      }
+    ],
+    "scope": "Standard",
+    "loca": "Akame ga Kill!",
+    "rewardType": "Credits",
+    "title": "Gotta Collect 'em All",
+    "objectives": [
+      {
+        "value": "Juice Esdeath for the Demon's Extract",
+        "type": "Companions",
+        "reward": "a clone of Esdeath with custom Mind Runes engraved to her soul. Feel free to program her to your will."
+      },
+      {
+        "reward": "a Template Stacking of the Boosted Gear",
+        "type": "Perks",
+        "value": "Rip Incursio from Tatsumi's/Bulat's hands."
+      },
+      {
+        "type": "Perks",
+        "value": "Steal Grand Chariot from Wave.",
+        "reward": "A Template Stacking of the Divine Dividing"
+      },
+      {
+        "type": "Other",
+        "value": "Take the Murasame from Akane.",
+        "reward": "Cloud Strife's Omni-blade"
+      },
+      {
+        "value": "Take Yatsufusa from Kurome.",
+        "reward": "Sephiroth's Masamune",
+        "type": "Other"
+      },
+      {
+        "type": "Other",
+        "value": "Kill Honest and Loot Erastone from his body.",
+        "reward": "An Adamantium lock-box to put that sucker in."
+      },
+      {
+        "value": "Take control of the Shikoutazer.",
+        "type": "Other",
+        "reward": "I'll add an ability to shrink it down to Power Armor at will, it won't lose any of its strength or durability."
+      },
+      {
+        "value": "Convince Susano'o to follow you willingly.(Threats of killing his friends is actually encouraged)",
+        "type": "Credits",
+        "reward": "100 Credits"
+      }
+    ],
+    "desc": "Hello Contractor! Who am I? I'm just an eccentric who likes sets. Sets like the 48 Teigu. Sadly the full set is lost, what with the destruction of several of them. That's why I'm tasking you with collecting the remaining set. Feel free to keep them or Sell them on the Green Orb Market. All I care about is that they remain a set. Oh! Don't worry about only being able to use one Teigu at a time, Stress Defense and Body Tune-Up should get rid of that limit with a little training.",
+    "source": "",
+    "budget": 1,
+    "uid": "nzmtD"
+  },
+  {
+    "image": "",
+    "objectives": [
+      {
+        "type": "Perks",
+        "value": "Breed all 34 main monster breeds",
+        "reward": "Creature Feature for your Demiplane"
+      },
+      {
+        "value": "Breed all 328 monsters available.",
+        "reward": "A Shrine were you can summon any monster in your Book",
+        "type": "Other"
+      },
+      {
+        "value": "Fully Explore the Togle Cave",
+        "type": "Credits",
+        "reward": "20"
+      },
+      {
+        "type": "Credits",
+        "value": "Fully Explore the Kalaragi Jungle",
+        "reward": "40"
+      },
+      {
+        "reward": "60",
+        "value": "Fully Explore the Promiass Ruins",
+        "type": "Credits"
+      },
+      {
+        "value": "Fully Explore the Kawrea Volcano",
+        "reward": "100",
+        "type": "Credits"
+      },
+      {
+        "reward": "10",
+        "value": "Win The Fullmoon Cup",
+        "type": "Credits"
+      },
+      {
+        "value": "Win The Blizzard Cup",
+        "type": "Credits",
+        "reward": "10"
+      },
+      {
+        "type": "Credits",
+        "reward": "10",
+        "value": "Win The Valentine Cup"
+      },
+      {
+        "value": "Win The Pisces Cup",
+        "reward": "10",
+        "type": "Credits"
+      },
+      {
+        "value": "Win The Rookie League",
+        "reward": "10",
+        "type": "Credits"
+      },
+      {
+        "reward": "10",
+        "value": "Win The Torble Cannon Cup",
+        "type": "Credits"
+      },
+      {
+        "type": "Credits",
+        "reward": "10",
+        "value": "Win The Sagittarius Cup"
+      },
+      {
+        "value": "Win The Galaxy Cup",
+        "reward": "10",
+        "type": "Credits"
+      },
+      {
+        "type": "Credits",
+        "reward": "10",
+        "value": "Win The Iera Tag Tournament"
+      },
+      {
+        "reward": "10",
+        "value": "Win The Star Festival Tournament",
+        "type": "Credits"
+      },
+      {
+        "reward": "10",
+        "value": "Win The Garuda Tournament",
+        "type": "Credits"
+      },
+      {
+        "type": "Credits",
+        "value": "Win The Virgo Cup",
+        "reward": "10"
+      },
+      {
+        "type": "Credits",
+        "reward": "10",
+        "value": "Win The Regulus Cup"
+      },
+      {
+        "value": "Win The Scorpion Cup",
+        "reward": "10",
+        "type": "Credits"
+      },
+      {
+        "type": "Credits",
+        "value": "Win The Queen's Cup",
+        "reward": "1"
+      },
+      {
+        "reward": "10",
+        "type": "Credits",
+        "value": "Win The Uranus Cup"
+      },
+      {
+        "type": "Credits",
+        "reward": "10",
+        "value": "Win The Christmas Cup"
+      },
+      {
+        "type": "Credits",
+        "value": "Win The Official Grade E",
+        "reward": "5"
+      },
+      {
+        "value": "Win The Official Grade D",
+        "type": "Credits",
+        "reward": "10"
+      },
+      {
+        "reward": "20",
+        "value": "Win The Official Grade C",
+        "type": "Credits"
+      },
+      {
+        "type": "Credits",
+        "value": "Win The Official Grade B",
+        "reward": "30"
+      },
+      {
+        "type": "Credits",
+        "reward": "50",
+        "value": "Win The Official Grade A"
+      },
+      {
+        "reward": "80",
+        "type": "Credits",
+        "value": "Win The Official Grade S"
+      }
+    ],
+    "author": "irugaa0",
+    "reward": "100",
+    "budget": 0,
+    "conditions": [
+      {
+        "value": "Must Wins 10 Cups or Tournaments"
+      },
+      {
+        "value": "Must Breed 12 of the main monster breeds"
+      },
+      {
+        "value": "Must Breed 20 different monster breeds"
+      },
+      {
+        "value": "No Tier-5 or higher Companions Allowed"
+      }
+    ],
+    "loca": "Monster Rancher",
+    "title": "I’m want to be the very best in Monster Rancher?",
+    "rewardType": "Credits",
+    "scope": "Grand",
+    "source": "",
+    "desc": "Go to The Monster Rancher 4 Setting and Make your Ranch and Monsters are The Very Best. ",
+    "uid": "wYsxY"
+  },
+  {
+    "reward": "Any companions of your choice.",
+    "title": "Plus Ultra Alter",
+    "author": "irugaa0",
+    "desc": " One of our clients recently bought a set of My hero academia worlds and posted a mission in the company, go to one of these worlds and change the events around the protagonist to give him a completely new set of superhuman abilities by any means at your disposal.",
+    "scope": "Standard",
+    "objectives": [
+      {
+        "type": "Credits",
+        "reward": "20",
+        "value": "Wait to meet Izuku Right after the 1st encounter with All Might."
+      },
+      {
+        "reward": "50",
+        "value": "Izuku can defeat Nomu at USJ",
+        "type": "Credits"
+      },
+      {
+        "value": "Izuku Pass the U.A Entrace Exam in 1st place",
+        "type": "Credits",
+        "reward": "25"
+      },
+      {
+        "type": "Credits",
+        "reward": "40",
+        "value": "Izuku gets 1st Place in the Sports Festival."
+      },
+      {
+        "value": "2x stronger Than Cannon counterpart.",
+        "type": "Companions",
+        "reward": "1 Tier – 6 Companion of choice"
+      },
+      {
+        "type": "Companions",
+        "value": "3x stronger Than Cannon counterpart.",
+        "reward": "1 Tier – 7 Companion of choice"
+      }
+    ],
+    "image": "",
+    "source": "",
+    "loca": "My Hero Academia",
+    "rewardType": "Companions",
+    "budget": 0,
+    "conditions": [
+      {
+        "value": "Izuku must Either refuse or not be offered OFA"
+      },
+      {
+        "value": "Can’t capture Izuku until the end of mission."
+      }
+    ],
+    "uid": "mGCRv"
+  },
+  {
+    "title": "Hunter’s Paradise",
+    "image": "",
+    "source": "",
+    "author": "irugaa0",
+    "rewardType": "Credits",
+    "reward": "50",
+    "conditions": [
+      {
+        "value": "Become a Pro-Hunter"
+      },
+      {
+        "value": "Pass the hunter secret-test"
+      },
+      {
+        "value": "You Can only Capture someone after Defeating them."
+      }
+    ],
+    "objectives": [
+      {
+        "type": "Credits",
+        "value": "Fight in the Heavens Arena",
+        "reward": "5"
+      },
+      {
+        "value": "Fight in the Heavens Arena and Reach 100th floor",
+        "type": "Credits",
+        "reward": "10"
+      },
+      {
+        "value": "Fight in the Heavens Arena and Reach 200th floor",
+        "type": "Credits",
+        "reward": "20"
+      },
+      {
+        "type": "Credits",
+        "reward": "50",
+        "value": "Defeat one of the Floor Masters"
+      },
+      {
+        "value": "Get a Greed Island Console.",
+        "reward": "30",
+        "type": "Credits"
+      },
+      {
+        "reward": "30 per console",
+        "type": "Credits",
+        "value": "Get more than one Greed Island Console."
+      },
+      {
+        "reward": "A perfect copy of the Greed Island in your pocket space, including Monsters, Fauna, Flora, Locations And NPCs. acessible by any console.",
+        "type": "Other",
+        "value": "Win Greed Island game."
+      },
+      {
+        "reward": "50",
+        "value": "Fight and Defeat at least 5 pro-hunter or nen-users.",
+        "type": "Credits"
+      },
+      {
+        "type": "Credits",
+        "value": "Join the Phantom Troupe",
+        "reward": "50"
+      },
+      {
+        "reward": "250",
+        "value": "Defeat the Phantom Troupe",
+        "type": "Credits"
+      },
+      {
+        "value": "Kill or Capture 10 Chimera-Ant Squadron Leaders",
+        "reward": "20",
+        "type": "Credits"
+      },
+      {
+        "value": "Kill or Capture the Chimera-Ant Royal Guards",
+        "type": "Credits",
+        "reward": "40"
+      },
+      {
+        "value": "Kill or Capture the Chimera-Ant Queen",
+        "reward": "80",
+        "type": "Credits"
+      },
+      {
+        "value": "Kill or Capture the Chimera-Ant King",
+        "reward": "80",
+        "type": "Credits"
+      },
+      {
+        "value": "Become a 1-star Pro-Hunter",
+        "reward": "20",
+        "type": "Credits"
+      },
+      {
+        "type": "Credits",
+        "value": "Become a 2-stars Pro-Hunter",
+        "reward": "30"
+      },
+      {
+        "reward": "40",
+        "value": "Become a 3-stars Pro-Hunter",
+        "type": "Credits"
+      },
+      {
+        "value": "Become the Chairman of the Hunter Association",
+        "reward": "80",
+        "type": "Credits"
+      },
+      {
+        "value": "Climb a World Tree using only your physical capabilities.",
+        "reward": "15",
+        "type": "Credits"
+      },
+      {
+        "reward": "50",
+        "type": "Credits",
+        "value": "Travel and Explore the Dark Continent"
+      },
+      {
+        "value": "Collect at Least 3 resources (mineral, fauna or flora) in the Dark Continent.",
+        "type": "Other",
+        "reward": "Collected Resources will appear in your Grand Manor or in the Wharehouse every month"
+      }
+    ],
+    "desc": "Strangely this wonderful setting is not as popular as some others available to the company so the Underhill Explorer and the Eternal Hunter decided to set this mission. You Will need to go to this setting and complete all the conditions and at least 8 of the additional objectives.",
+    "scope": "Grand",
+    "loca": "Hunter x Hunter",
+    "budget": 0,
+    "uid": "XaVue"
+  },
+  {
+    "title": "A Farmer’s Life – Stardew Valley Expanded Edition.",
+    "rewardType": "Credits",
+    "conditions": [
+      {
+        "value": "Bindings Will NOT work for the duration of the mission."
+      }
+    ],
+    "author": "irugaa0",
+    "reward": "100",
+    "loca": "Stardew Valley",
+    "source": "",
+    "objectives": [
+      {
+        "type": "Credits",
+        "value": "Plant all plants.",
+        "reward": "10"
+      },
+      {
+        "reward": "10",
+        "type": "Credits",
+        "value": "Collect all artifacts."
+      },
+      {
+        "value": "Mine all ores.",
+        "reward": "10",
+        "type": "Credits"
+      },
+      {
+        "type": "Credits",
+        "value": "Fish all fishes.",
+        "reward": "10"
+      },
+      {
+        "value": "Participate of ALL events at least once.",
+        "type": "Credits",
+        "reward": "5"
+      },
+      {
+        "reward": "20",
+        "value": "Have a Fish Tank with all 10 Legendary Fishes.",
+        "type": "Credits"
+      },
+      {
+        "type": "Credits",
+        "value": "Restore de Community Center.",
+        "reward": "20"
+      },
+      {
+        "reward": "5",
+        "type": "Credits",
+        "value": "Have an 8 Heaths friendship."
+      },
+      {
+        "type": "Credits",
+        "reward": "25",
+        "value": "Have an 8 Heaths friendship with 5 people."
+      },
+      {
+        "reward": "20",
+        "value": "Marry Someone.",
+        "type": "Credits"
+      },
+      {
+        "type": "Credits",
+        "value": "Travel to all available places.",
+        "reward": "10"
+      },
+      {
+        "value": "Raise all available animals.",
+        "reward": "Creature Defense 1 and 2",
+        "type": "Perks"
+      },
+      {
+        "type": "Credits",
+        "value": "Receive all 4 stars in the shrine.",
+        "reward": "1"
+      },
+      {
+        "type": "Credits",
+        "reward": "10",
+        "value": "Collect all the Golden walnuts."
+      },
+      {
+        "type": "Credits",
+        "value": "Collect all the Star drops.",
+        "reward": "20 Plus one Star Drop Seed."
+      },
+      {
+        "reward": "10",
+        "type": "Credits",
+        "value": "Collect all the Qi Gems."
+      },
+      {
+        "value": "Cook every recipe.",
+        "type": "Credits",
+        "reward": "Any Tier-6 Or lower companion with the Chef Tag."
+      },
+      {
+        "reward": "Any Tier-6 Or lower companion with the Crafter Tag.",
+        "value": "Craft all items.",
+        "type": "Companions"
+      },
+      {
+        "type": "Credits",
+        "value": "Complete all monster eradication goals.",
+        "reward": "25"
+      },
+      {
+        "reward": "10",
+        "value": "Gather a total of 100.000 money",
+        "type": "Credits"
+      },
+      {
+        "type": "Other",
+        "reward": "Monetary Perk or 10",
+        "value": "Gather a total of 1.000.000 money"
+      }
+    ],
+    "desc": " The Retired PRO-Farmer, one of our main Clients, is tired of watching our contractors wagging war and fighting in the multiverse, all he wants is to watch the peaceful life of a new farmer trying to learn how to live out the soil.",
+    "scope": "Grand",
+    "image": "",
+    "budget": 0,
+    "uid": "CXSpi"
+  },
+  {
+    "objectives": [
+      {
+        "value": "Become a High-Class Level Being",
+        "reward": "10",
+        "type": "Credits"
+      },
+      {
+        "value": "Become an Ultimate Level Being",
+        "type": "Credits",
+        "reward": "20"
+      },
+      {
+        "reward": "30",
+        "value": "Become a Satan/Seraph Level Being",
+        "type": "Credits"
+      },
+      {
+        "type": "Credits",
+        "value": "Become a Super Level Being",
+        "reward": "50"
+      },
+      {
+        "value": "Join a Faction",
+        "reward": "A Ride that cost 50 credits or less plus ALL their  ADD-ons",
+        "type": "Other"
+      },
+      {
+        "type": "Credits",
+        "value": "Create a Faction",
+        "reward": "30"
+      },
+      {
+        "type": "Credits",
+        "value": "Wage War against a Faction.",
+        "reward": "10"
+      },
+      {
+        "type": "Credits",
+        "value": "Defeat a Faction",
+        "reward": "80"
+      },
+      {
+        "value": "Completely Destroy a Faction.",
+        "type": "Perks",
+        "reward": "Any Talent or Perk of your choice."
+      },
+      {
+        "reward": "300",
+        "value": "survive for at least 2 years being actively part of the supernatural",
+        "type": "Credits"
+      },
+      {
+        "type": "Credits",
+        "reward": "300",
+        "value": "survive for at least 3 years being actively part of the supernatural"
+      }
+    ],
+    "rewardType": "Credits",
+    "desc": "  The setting of high school DxD is one of the company's most popular settings and the favored for several new contractors, however, most tend to forget the dangers because of the boobs. Currently, 98 in every 100 contractors die in this setting in less than a year. As such is required to more experienced contractors to personally go to this setting with a completely new “build” and reevaluate the Rating.",
+    "source": "",
+    "author": "irugaa0",
+    "title": "Changing the Pace – HIGHSCHOOL DXD.",
+    "budget": 365,
+    "reward": "400",
+    "conditions": [
+      {
+        "value": "Make a completely new Build with the world budget (365) and survive for at least 1 year being actively part of the supernatural."
+      },
+      {
+        "value": "Your STARTING Tier is Set at Tier-5."
+      },
+      {
+        "value": "Unused budget credits will be lost."
+      }
+    ],
+    "loca": "High School DxD",
+    "image": "",
+    "scope": "Standard",
+    "uid": "iTlcR"
+  },
+  {
+    "author": "irugaa0",
+    "loca": "Zero no Tsukaima",
+    "source": "",
+    "budget": 200,
+    "image": "",
+    "objectives": [
+      {
+        "value": "Capture / OR Get The Runes of All Void Familiars",
+        "type": "Credits",
+        "reward": "80"
+      },
+      {
+        "type": "Credits",
+        "reward": "50",
+        "value": "Wage War Against a Nation"
+      },
+      {
+        "type": "Credits",
+        "reward": "200",
+        "value": "Wage War Against all Nations"
+      },
+      {
+        "value": "Change the Class system in that World.",
+        "reward": "20",
+        "type": "Credits"
+      },
+      {
+        "type": "Credits",
+        "value": "Take over a country",
+        "reward": "50"
+      },
+      {
+        "type": "Credits",
+        "reward": "50",
+        "value": "Create a country were elves are accepted"
+      }
+    ],
+    "scope": "Grand",
+    "rewardType": "Credits",
+    "desc": "For several reasons some of our clients absolutely despise Louise de La Vallière or the entire world of Zero no Tsukaima, as such you were hired to deal with them. Go to that world substituting Louise's Familiar and cause as much damage as possible using ALL the means at your disposal.",
+    "reward": "550",
+    "conditions": [
+      {
+        "value": "None of your retinue can accompany you during this mission."
+      }
+    ],
+    "title": "Putting Her in Her Place.",
+    "uid": "taUpI"
+  },
+  {
+    "reward": "A Full Template of a Devil of the family you choose.",
+    "desc": "Over time, the rating games became an important and indispensable part of the living of devils and a popular form of entertainment for other supernatural beings, it became so popular that even some of our clients became fans of it, and decided to spice things up, by contracting our contractors to join the game and evaluate their performance in these games.",
+    "conditions": [
+      {
+        "value": "Must Win 15 rating games"
+      },
+      {
+        "value": "Must Win at least 5 rating games in a row."
+      },
+      {
+        "value": "If you choose Either chose Posses or Extra as origin you start of as a Pure Middle-Class Devil."
+      },
+      {
+        "value": "Outers powers are limited to Tier-5 and lower."
+      }
+    ],
+    "author": "irugaa0",
+    "loca": "High School DxD",
+    "objectives": [
+      {
+        "type": "Credits",
+        "value": "Win all 15 rating games in a row.",
+        "reward": "150"
+      },
+      {
+        "value": "Win a Dice Figure Game",
+        "reward": "10",
+        "type": "Credits"
+      },
+      {
+        "value": "Win a Scramble Flag Game",
+        "type": "Credits",
+        "reward": "10"
+      },
+      {
+        "value": "Win an Object Break Game",
+        "reward": "10",
+        "type": "Credits"
+      },
+      {
+        "type": "Credits",
+        "reward": "10",
+        "value": "Win a Rampage Ball Game"
+      },
+      {
+        "value": "Win a Lightning-Fast Game",
+        "type": "Credits",
+        "reward": "10"
+      },
+      {
+        "type": "Credits",
+        "reward": "10",
+        "value": "Win a One Day Long War"
+      },
+      {
+        "reward": "10",
+        "type": "Credits",
+        "value": "Win a Board Collapse Game"
+      },
+      {
+        "type": "Credits",
+        "value": "Win an Yggdrasil Climb Game",
+        "reward": "10"
+      },
+      {
+        "value": "Win a Youth Devil Rating Game Tournament",
+        "reward": "100",
+        "type": "Credits"
+      },
+      {
+        "value": "Win an Azazel Cup",
+        "type": "Credits",
+        "reward": "100"
+      },
+      {
+        "value": "Be In the Top 10",
+        "reward": "50",
+        "type": "Credits"
+      },
+      {
+        "reward": "60",
+        "value": "Be In the Top 5",
+        "type": "Credits"
+      },
+      {
+        "type": "Credits",
+        "reward": "80",
+        "value": "Be In the Top 3"
+      },
+      {
+        "value": "BE The Champion of the Rating Game",
+        "reward": "150",
+        "type": "Credits"
+      }
+    ],
+    "budget": 200,
+    "rewardType": "Perks",
+    "source": "",
+    "image": "",
+    "title": "Rating Game King",
+    "scope": "Grand",
+    "uid": "hnDmY"
+  },
+  {
+    "objectives": [
+      {
+        "type": "Perks",
+        "value": "Capture Idunn",
+        "reward": "Free purchase of Alterzelu Symbiote"
+      },
+      {
+        "type": "Credits",
+        "reward": "Refund of all credits spent on Dragon Heart, Dragon Scale, and Double Dragon, along with a credit reward for their equivalent cost (375)",
+        "value": "Capture Medeus, Duma, Idunn, Grima, and Anonkos"
+      }
+    ],
+    "title": "There's Always a Dragon",
+    "reward": "Free purchase of Elder Dragon",
+    "conditions": [
+      {
+        "value": "Contractor must have the Dragon Heritage"
+      },
+      {
+        "value": "Contractors using the Symbiote binding must be dragon themed"
+      },
+      {
+        "value": "Contractors, their retinue, and any Symbiote units receive increased damage from anti-dragon weapons"
+      },
+      {
+        "value": "Contractors may only go to Fire Emblem worlds unless they complete or abandon the mission"
+      }
+    ],
+    "loca": "Fire Emblem",
+    "budget": 80,
+    "image": "",
+    "desc": "If there's one thing Fire Emblem loves, it's dragons. As a matter of fact, a decent amount of their final bosses are dragons! But as final bosses, they are of course destined to be defeated by a plucky band of heroes. Clearly, we are in need of a new breed of final bosses.\n\nYour mission, should you accept it, is to conquer the main continents of the Fire Emblem games: Archanea, Valentia, Jugdral, Elibe, Magvel, Tellius, Ylisse, Hoshido/Nohr/Valla, and Fodlan. You may choose to proceed in whatever order you'd like. For the continent of Magvel, you may choose between the Binding Blade timeline or the Blazing Blade timeline, or to conquer one then leap to a fresh World of the other. For the continent of Fodlan, you may choose between Three Houses or Three Hopes. Any future mainline games or spin-offs may be included at will.\n\nConquering a continent requires the subjugation of every country on it. This includes capturing or killing their leaders, pacifying the citizens, and ensuring no uprisings can occur. It does not necessarily require capturing the entire cast, although you may do so if you'd like.\n\nTo keep with the theme, this mission is only available to Contractors with the Dragon Heritage, including those with Ancestral Diversity. If a Contractor uses the Symbiote binding, units must be dragon-themed. And finally, to make it somewhat fair for the natives, weapons with increased potency against dragons similarly affect the Contractor, his retinue, and any Symbiote units, ignoring any Company Defenses.",
+    "author": "Scumbag",
+    "source": "",
+    "scope": "Grand",
+    "rewardType": "Perks",
+    "uid": "HYDTk"
+  },
+  {
     "rewardType": "Credits",
     "title": "Punishing Two Wrongs",
     "author": "FinSexual92",
@@ -3093,30 +3916,35 @@
   },
   {
     "desc": "Everyone knows that Raynare is an idiot of the highest order and one of the worst antagonists ever written. Honestly, she killed a perv that should have known something was iffy and ripped out part of Asia's soul (someone who has less fight in her than fish in a barrel). She even failed to kill Issei a second time!\n\nYour mission, Contractor, is to be the Villain needed to make the Grigori the undisputed rulers of Kuoh. Azazel has been informed that you are going to ensure Raynare doesn't bring down the Wrath of Sis-Con Satans on the Grigori so don't worry about him. He's even got official orders that Raynare's band of misfits are your bitches.",
+    "title": "Really, Raynare?",
+    "uid": "ZNtkt",
     "source": "",
-    "loca": "High School DxD",
     "budget": 365,
+    "author": "FinSexual92",
     "scope": "Standard",
+    "reward": "500 Credits",
+    "image": "https://i.pinimg.com/originals/08/c6/bc/08c6bc52067d2f38e73f9733a0b22927.jpg",
+    "rewardType": "Credits",
     "objectives": [
       {
         "value": "Kill Issei Hyoudou without it pointing to the Grigori",
-        "reward": "Template Stacking I (Boosted Gear) for one of your Retinue. (Just don't use it on a Local or they may be found out)",
-        "type": "Perks"
+        "type": "Perks",
+        "reward": "Template Stacking I (Boosted Gear) for one of your Retinue. (Just don't use it on a Local or they may be found out)"
       },
       {
-        "value": "Keep Asia Argento safe and happy to the point that she will refuse to become a Brave Saint of Michael's when offered at the Peace Conference",
+        "reward": "Asia Argento capture and Lures are twice as effective on Draconic Retinue Targets",
         "type": "Companions",
-        "reward": "Asia Argento capture and Lures are twice as effective on Draconic Retinue Targets"
+        "value": "Keep Asia Argento safe and happy to the point that she will refuse to become a Brave Saint of Michael's when offered at the Peace Conference"
       },
       {
-        "value": "Give the appearance of Co-Ruling with Sona Sitri until her Father gets Sleeping Disease",
+        "reward": "Company Clones of Sona Sitri's Peerage (including her) and of Serafall Leviathan, altered to your liking",
         "type": "Companions",
-        "reward": "Company Clones of Sona Sitri's Peerage (including her) and of Serafall Leviathan, altered to your liking"
+        "value": "Give the appearance of Co-Ruling with Sona Sitri until her Father gets Sleeping Disease"
       },
       {
+        "value": "Kill Freed Sellzen in your first meeting with him",
         "type": "Credits",
-        "reward": "200 Credits",
-        "value": "Kill Freed Sellzen in your first meeting with him"
+        "reward": "200 Credits"
       },
       {
         "reward": "Capture of the Fallen in question and 50 Credits",
@@ -3125,16 +3953,16 @@
       },
       {
         "type": "Companions",
-        "reward": "Company Clones of Xenovia Quatra, Irina Shidou and Griselda Quatra",
-        "value": "Imprison Xenovia Quatra and Irina Shidou when they show up in the Excalibur Arc, return them to Griselda Quatra whole and healthy when she seeks them out"
+        "value": "Imprison Xenovia Quarta and Irina Shidou when they show up in the Excalibur Arc, return them to Griselda Quatra whole and healthy when she seeks them out",
+        "reward": "Company Clones of Xenovia Quatra, Irina Shidou and Griselda Quatra"
       },
       {
-        "type": "Companions",
         "reward": "Gabriel (Clone) from DxD ",
+        "type": "Companions",
         "value": "Defeat Kokabiel one on one"
       }
     ],
-    "reward": "500 Credits",
+    "loca": "High School DxD",
     "conditions": [
       {
         "value": "You are unable to use Bindings to Capture people"
@@ -3145,12 +3973,7 @@
       {
         "value": "At least 1 of the Original Four Fallen must survive until you have ruled for at least a year"
       }
-    ],
-    "author": "FinSexual92",
-    "image": "https://i.pinimg.com/originals/08/c6/bc/08c6bc52067d2f38e73f9733a0b22927.jpg",
-    "rewardType": "Credits",
-    "uid": "ZNtkt",
-    "title": "Really, Raynare?"
+    ]
   },
   {
     "source": "",
@@ -9412,38 +10235,17 @@
     "uid": "DTJoP"
   },
   {
+    "loca": "Scott Pilgrim",
+    "uid": "kSPgg",
+    "source": "",
+    "title": "Scott's new sister is his ex!",
+    "author": "Ratcatcher",
+    "scope": "Standard",
+    "budget": 20,
+    "desc": "Hi, newbie. Listen, I've seen the new Highly Effective Manager stuck you with her Two Dime scheme, and, well, I've got this mission we've had lying around for a while that nobody ever dared taking. You substitute as Scott Pilgrim between his break-up with Envy and meeting Ramona... But in this universe Scott's parents divorced and remarried to the equally divorced parents of Envy, who is now stuck between being angry at how the break-up played out and the fact you're now her idiot sibling (well, SCOTT is the idiot) and SOMEONE has to look after you... And her new mom and dad talked her into agreeing to do just that. Your job is to take advantage of this and seduce her behind Todd's back while maintaining a relationship with Ramona.",
     "rewardType": "Credits",
     "reward": "500 credits",
-    "uid": "kSPgg",
-    "author": "Ratcatcher",
-    "objectives": [
-      {
-        "type": "Perks",
-        "value": "Seduce your ACTUAL sister, Stacie Pilgrim",
-        "reward": "One level in a Binding of your choice (includes free Binding change)"
-      },
-      {
-        "reward": "TS1 as Tetsuo (Akira)",
-        "value": "Expose Todd's cheating on Envy",
-        "type": "Perks"
-      },
-      {
-        "value": "Seduce Lynette away from Todd",
-        "reward": "Either Psychic Talent or Soul Talent",
-        "type": "Perks"
-      },
-      {
-        "value": "Reabsorb Nega Scott",
-        "reward": "Full Corruption Defense or its equivalent in credit plus restauration of Scott's altered memories",
-        "type": "Perks"
-      },
-      {
-        "value": "Talk pre-relationship Envy into getting photographed while wearing Asuka's plugsuit (you have one, Scott bought it as a birthday present but never gave it when she sold all her anime merchandise)",
-        "type": "Perks",
-        "reward": "TS1 as an anime character of your choice"
-      }
-    ],
-    "loca": "Scott Pilgrim",
+    "image": "https://64.media.tumblr.com/4038567de86d8fc381fac985dd542f20/81ea1c62b1927923-03/s1280x1920/dece1b5f7461b20c8566c5a2eb522bb0f6d82816.png",
     "conditions": [
       {
         "value": "Substitute as Scott Pilgrim. If you wish you can keep your first name and looks"
@@ -9458,12 +10260,33 @@
         "value": "Warning: as soon as you start dating Ramona Gideon WILL \"spice up\" Scott's memories preceding the Substitution unless you have full Corruption Defense"
       }
     ],
-    "budget": 20,
-    "desc": "Hi, newbie. Listen, I've seen the new Highly Effective Manager stuck you with her Two Dime scheme, and, well, I've got this mission we've had lying around for a while that nobody ever dared taking. You substitute as Scott Pilgrim between his break-up with Envy and meeting Ramona... But in this universe Scott's parents divorced and remarried to the equally divorced parents of Envy, who is now stuck between being angry at how the break-up played out and the fact you're now her idiot sibling (well, SCOTT is the idiot) and SOMEONE has to look after you... And her new mom and dad talked her into agreeing to do just that. Your job is to take advantage of this and seduce her behind Todd's back while maintaining a relationship with Ramona.",
-    "source": "",
-    "scope": "Standard",
-    "title": "Scott's new sister is his ex!",
-    "image": "https://64.media.tumblr.com/4038567de86d8fc381fac985dd542f20/81ea1c62b1927923-03/s1280x1920/dece1b5f7461b20c8566c5a2eb522bb0f6d82816.png"
+    "objectives": [
+      {
+        "value": "Seduce your ACTUAL sister, Stacie Pilgrim",
+        "type": "Perks",
+        "reward": "One level in a Binding of your choice (includes free Binding change)"
+      },
+      {
+        "reward": "TS1 as Tetsuo (Akira)",
+        "value": "Expose Todd's cheating on Envy",
+        "type": "Perks"
+      },
+      {
+        "value": "Seduce Lynette away from Todd",
+        "type": "Perks",
+        "reward": "Either Psychic Talent or Soul Talent"
+      },
+      {
+        "value": "Reabsorb Nega Scott",
+        "reward": "Full Corruption Defense or its equivalent in credit plus restoration of Scott's altered memories",
+        "type": "Perks"
+      },
+      {
+        "value": "Talk pre-relationship Envy into getting photographed while wearing Asuka's plugsuit (you have one, Scott bought it as a birthday present but never gave it when she sold all her anime merchandise)",
+        "type": "Perks",
+        "reward": "TS1 as an anime character of your choice"
+      }
+    ]
   },
   {
     "loca": "The Boys",

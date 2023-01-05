@@ -9,7 +9,8 @@ Challenges are not a part of a canon Waifu Catalog so you have more freedom in i
 <p>You can pick a several challenges at the same time if they don't conflict with each other.</p>
 `
 
-const { fullStartingBudget, companions, baseBudget, startingWorld } = useStore()
+const { fullStartingBudget, companions, baseBudget, startingWorld, defensePerks } = useStore()
+let defenseWatcher = null
 
 const employee = { uid: 6666666, name: 'Employee #6.02214076e23', world: 'The Company', tier: 10, priceTier: 0, method: 'unbound' }
 let rouletteWatcher = null
@@ -61,7 +62,7 @@ export const challenges = [
     cost: 0,
     desc: `
     <p>While you are prime candidate for becoming a Contractor our automatic &#9632;&#9632;&#9632;&#9632;&#9632;&#9632; marked you as a &#9632;&#9632;&#9632;&#9632;&#9632;&#9632;&#9632;&#9632; all Contactors with this designation have their personal power restricted to that of T4 and this restriction is absolute you will not be able to do anything that will increase your power level more that T4 such as operating Power armor, changing your race, using TX tickets and all other possible methods will simply won't work or their output will be restricted to T4 level.</p>
-    <p>Receive 80% of companion cost for the capture.</p>
+    <p>Receive 80% of companion cost for the capture, instead of the default 60%.</p>
     `,
   },
   {
@@ -71,7 +72,7 @@ export const challenges = [
     dlc: 'Om1cr0n',
     cost: 0,
     desc: `
-    <p>Company decided to enforce stricter rules for World Traveling, from now on travel by any other methods other than Company perks will be restricted so that you can only travel to already visited Worlds. If you don't have We Will Meet Again after each jump to a new World, other traveling methods will be disabled completely until you fill the progress bar to the next World by 100%.</p>
+    <p>The Company has decided to enforce stricter rules for world traveling. From now on, multiversal travel by any other means other than the company-provided Exit Stage Left functionality will be restricted.  Travel to worlds apart from those you visited already is forbidden. If you don't have We Will Meet Again after each jump to a new World, other traveling methods will be disabled completely until you fill the Exit Stage Left progress bar to the next World to 100%.</p>
     `,
   },
   {
@@ -135,7 +136,7 @@ export const challenges = [
     <p>But from now on, you will only be a client of our company.</p>
     <p>We are deeply sorry, but you will not be able to sell any targets you have captured. However, you can still participate in arranged PvP matches and complete missions or quests for our company, earning credits for them.</p>
     <p>Also the "Cash Still Rules" perk is no longer available to you. We do not need debtors who cannot pay.</p>
-    <p>All purchases(except companions) you do will be final you wouldn't be able to return them or buy anything else after chargen so choose carefully.</p>
+    <p>All purchases you do, except companions, will be final, you wouldn't be able to return them or buy anything else after chargen so choose carefully.</p>
     `,
     effect: {
       set: () => baseBudget.value = baseBudget.value * 2,
@@ -150,7 +151,7 @@ export const challenges = [
     special: 'Chargen only. May not be taken on DR11.',
     cost: 0,
     desc: `
-      You have been chosen by the higher ups to try something different. After noting that the Random selection function for the build is never requested it was estimated that absolute randomness is not too appealing, so they will only randomize the world. Your starter world will be entirely random and, in exchange, get a 50% increase to your starter budget (that is your only tip to what world you will be going).
+      You have been chosen by the higher-ups to try something a bit different. The company has noted the long time it takes for contractors to choose their starting world. As this decreases processing efficiency, a new proposition was accepted to have the ■■■■■■■■ department select it at random. Newly accepted contractors will therefore have their starting world left entirely up to chance. In return, the company will provide  50% of the selected world's budget as a bonus.
     `,
     effect: {
       set: () => {
@@ -165,12 +166,13 @@ export const challenges = [
   {
     uid: 'ZpyEq',
     dlc: 'shifty-sword',
+    dlclink: 'https://docs.google.com/document/d/1Dasg0Yq3tgZ9mA6zL3G7_1VdBcq4pW_4qpwGImtXzRc/edit#',
     title: 'Skyblock',
     image: 'https://i.imgur.com/xcZQTi5.png',
     special: 'Chargen only. May not be taken on DR11. Cannot be taken with Wage Slave, Cash Still Rules, or Calming Up',
     cost: 0,
     desc: `
-      A hardcore challenge inspired by Minecraft Skyblock mod, in which you start on an piece of land floating in the sky on a empty world.
+      A hardcore challenge inspired by Minecraft Skyblock mod, in which you start on a piece of land floating in the sky on a empty world.
       Your starting benefits will look like this:
       <ul class="list-disc list-inside">
         <li>0 Credits (On the Interactive you will receive 20 credits, so you can buy your T5 companion.)</li>
@@ -178,11 +180,80 @@ export const challenges = [
         <li>1 T5 Companion of your choice</li>
         <li>1 Skyblock</li>
       </ul>
-      <b>Selecting this challenge will open another section with the full rules.</p>
+      <b>Selecting this challenge will open another section with the full rules.</b>
     `,
     effect: {
       set: () => baseBudget.value = 20,
       remove: () => WORLD_RATINGS[startingWorld.value.rating].budget || 0,
+    },
+  },
+  {
+    uid: 'ZpyEq',
+    dlc: 'DepressedAlucard',
+    dlclink: 'https://docs.google.com/document/d/18LaGf5cy9hDA7ZAInhxVJoTocWfeLo0PI_msQsFu76Q/edit#',
+    title: 'Glass Cannon',
+    image: '',
+    special: 'Chargen Only, DR6 or higher, May not be taken on DR11.',
+    cost: 0,
+    desc: `
+    For those who wish to either die as quickly as possible or rise to the greatest of heights, the company offers to forgo any company-provided defenses. No immunities, not even the basic resistances. Even the greatest of Chad's aren’t this suicidal. The only protections you will ever be able to acquire are those you gain along your journey or from the powersets you decide to acquire. As compensation for the <span class="line-through">hell</span> fun you are walking into, receive 80% of your starting world's budget as a bonus.
+    `,
+    effect: {
+      set: () => {
+        baseBudget.value = baseBudget.value * 1.8
+        defenseWatcher = watch(() => defensePerks.value.length, () => defensePerks.value.length && (defensePerks.value = []))
+      },
+      remove: () => {
+        baseBudget.value = baseBudget.value / 1.8
+        if (defenseWatcher) defenseWatcher()
+      },
+    },
+  },
+  {
+    uid: 'ZpyEq',
+    dlc: 'DepressedAlucard',
+    dlclink: 'https://docs.google.com/document/d/18LaGf5cy9hDA7ZAInhxVJoTocWfeLo0PI_msQsFu76Q/edit#',
+    title: 'Natural Progression',
+    image: '',
+    special: 'Chargen Only.',
+    cost: 0,
+    desc: `
+    Sometimes it's not the final destination but the journey you took to get there that matters. The company has taken heed of the contractors who rush into worlds with their new powers, easily climbing up to the upper echelons of power with minimal effort. It has therefore decided to impose stricter rules on the manner in which contractor progress with their new abilities, in order to encourage a more natural and fluid form of progression.
+    <p>All purchased powers and perks will now require actual time and effort to develop or unlock, as everything now starts at a T4 level of power. Purchasing a Heritage perk will no longer instantly grant the associated boons, instead bestowing upon the contractor only the potential to eventually unlock said abilities and develop them further with experience, grit, and training. This does not affect static Items such as Psychic Paper and still allows defenses at the second level  to give you their full immunity.</p>
+    `,
+  },
+  {
+    uid: 'ZpyEq',
+    dlc: 'DepressedAlucard',
+    dlclink: 'https://docs.google.com/document/d/18LaGf5cy9hDA7ZAInhxVJoTocWfeLo0PI_msQsFu76Q/edit#',
+    title: 'Lost Goods',
+    image: '',
+    special: 'Chargen Only.',
+    cost: 0,
+    desc: `
+    Sometimes, not even the company manages to keep perfect track of every little detail in its infinite roster of contractors. Unfortunately for you, either due to an error in the system, some interference from the higher-ups, or just poor luck, one tiny little detail in your processing procedure was screwed up. It seems your memories were not carried over.
+    <p>Upon your arrival to your chosen world, you will have no idea who, what or where are you. All your knowledge of fictional realities, any knowledge of the perks you have chosen, and why there are cute girls following you has been lost with no chance of recovery. As compensation for this minor error, the company will issue 40% of your starting world's budget as a bonus. </p>
+    `,
+    effect: {
+      set: () => baseBudget.value = baseBudget.value * 1.4,
+      remove: () => baseBudget.value = baseBudget.value / 1.4,
+    },
+  },
+  {
+    uid: 'ZpyEq',
+    dlc: 'DepressedAlucard',
+    dlclink: 'https://docs.google.com/document/d/18LaGf5cy9hDA7ZAInhxVJoTocWfeLo0PI_msQsFu76Q/edit#',
+    title: 'Frog in a Well',
+    image: '',
+    special: 'Chargen Only.',
+    cost: 0,
+    desc: `
+    It seems that you won’t be getting the omniversal world-hopping adventure you were promised. Your starting world will now be the one and only world you will ever visit. No hopper power, company perk, or waifu will be able to help you leave the world you first chose to appear in unless it's to visit your Demiplane or the Green Eye Orb Markets.
+    <p>You are fortunately granted some extra leeway in worlds composed of multiple universes, as in this case you are able to travel between them without any complications. If however, your world canonically does not have any alternate universes or is not part of a multiverse, perks or powers like Blank Slate will not work. Your unfortunate circumstances grant you an extra 20% of your starting world's budget as a bonus from the company.</p>
+    `,
+    effect: {
+      set: () => baseBudget.value = baseBudget.value * 1.2,
+      remove: () => baseBudget.value = baseBudget.value / 1.2,
     },
   },
 ]
@@ -330,3 +401,69 @@ export const skyblockPerks = [
     `,
   },
 ]
+
+// {
+//   "author": "Darkarma",
+//   "image": "https://i.imgur.com/7rWhwFp.png",
+//   "reward": "1 Credit earned each day you survive in Skyblock",
+//   "objectives": [
+//     {
+//       "type": "Credits",
+//       "reward": "25",
+//       "value": "Permanently increase the Danger Rating of the Skyblock to 2. Hostile T2 mobs spawn in complete darkness. Extreme weather occurs more frequently."
+//     },
+//     {
+//       "value": "Permanently increase the Danger Rating of the Skyblock to 3. Hostile T3 mobs spawn in low darkness. Extreme weather occurs more frequently.",
+//       "reward": "25",
+//       "type": "Credits"
+//     },
+//     {
+//       "type": "Credits",
+//       "reward": "25",
+//       "value": "Permanently increase the Danger Rating of the Skyblock to 4. Hostile T4 mobs spawn in low darkness, with mild resistance to the sun. Hostile mobs may also spawn with enchanted equipment or supernatural abilities. Extreme weather can no occur rarely in Spring and Fall."
+//     },
+//     {
+//       "value": "Permanently increase the Danger Rating of the Skyblock to 5. Hostile T4 mobs spawn in low darkness in much greater numbers. Full moons cause them to spawn at a T5 rating.",
+//       "type": "Credits",
+//       "reward": "25"
+//     },
+//     {
+//       "type": "Credits",
+//       "value": "Permanently increase the Danger Rating of the Skyblock to 6, 7, 8, 9 or 10. Hostile mobs matching DR -1 rating and spawn in low darkness in much greater numbers. Full moons cause them to spawn at a DR +1 Tier rating. Extremely resistant to sunlight.",
+//       "reward": "25 for each increase"
+//     },
+//     {
+//       "value": "Have sex with one of your Waifus for the first time (Repeatable)",
+//       "type": "Other",
+//       "reward": "One unbreakable/unmoveable Bedrock block, spawn it using your Company Smart Device"
+//     }
+//   ],
+//   "scope": "Standard",
+//   "desc": "So the standard Skyblock isn't enough of a challenge? Well here's how we make it more interesting. ",
+//   "rewardType": "Credits",
+//   "loca": "Skyblock",
+//   "conditions": [
+//     {
+//       "value": "Your Skyblock Demiplane now has a Danger Rating of 1 and has normal full quarter-year-long seasons. Hostile T1 mobs may spawn under the light of a full moon or in complete darkness during a full moon. Extreme weather happens rarely during Summer and Winter. Spring and Fall have peaceful weather patterns."
+//     },
+//     {
+//       "value": "Guaranteed to have one typhoon a year. Damage done based on Skyblock DR, though always recoverable."
+//     },
+//     {
+//       "value": "Capturing Waifus does not award any points. Selling Waifus can only be done via Green Orb, all prices will be below Slightly Used value."
+//     },
+//     {
+//       "value": "Green Orb is only accessible through the Portal, on the standard portal days."
+//     },
+//     {
+//       "value": "Loans are completely disabled."
+//     },
+//     {
+//       "value": "Demiplane enhanced recovery is disabled."
+//     }
+//   ],
+//   "source": "",
+//   "budget": 1,
+//   "title": "Skyblock, Expanded Ruleset",
+//   "uid": "vQgWM"
+// },

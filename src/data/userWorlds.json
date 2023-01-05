@@ -2436,11 +2436,6 @@
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/992062585430089768/maxresdefault.jpg"
   },
   {
-    "worldName": "Lord Marksman and Vanadis",
-    "rating": 5,
-    "image": "https://rightwingotaku.files.wordpress.com/2014/10/vanadis093e4.jpg"
-  },
-  {
     "worldName": "Maburaho",
     "rating": 2,
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/1002210650631712868/504129326.jpg"
@@ -5513,5 +5508,7 @@
         "name": "Previous Idaten Generation"
       }
     ]
-  }
+  },
+  {"worldName":"Doki Doki Literature Club","rating":3,"image":"https://www.internetmatters.org/wp-content/uploads/2018/06/Doki.Doki-1200.png"},
+  {"worldName":"Dorohedoro","rating":6,"image":"https://occ-0-1723-1360.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABW6_Y9wHLyf1gv6Fglc90YNG36pxz6FDzuG3jX8tlPdU_-Nz0DT5FR1yte9vMu3A_xBjQ2Uf0jjF_svUHDmyB6UW6H1w-ffWqhTq.jpg?r=1ba"}
 ]

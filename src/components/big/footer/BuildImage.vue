@@ -325,7 +325,7 @@ function createImage() {
               confirmDialog('Image copied successfully.', 'info')
             }
             catch (error) {
-              confirmDialog('Your browser don\'t suport <b>ClipboardItem</b>, you can google how to turn it on.', 'info')
+              confirmDialog('Your browser don\'t support <b>ClipboardItem</b>, you can google how to turn it on.', 'info')
             }
           }
         })

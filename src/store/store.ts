@@ -328,7 +328,7 @@ const budget = computed(() => {
       - genericWaifuPerksCost.value - companionsCost.value - otherCost.value - fee.value
       - budgetMods.value.minus + budgetMods.value.plus + companionProfit.value + companionProfitSold.value
       + usedHeritageDiscount.value + talentsDiscount.value + defensesDiscount.value + specificModsCost.value
-      + budgetMods.value.sell11 * 2000 + missionRewardCredits.value + defenseRetinueDiscount.value + challengesCost.value
+      + budgetMods.value.sell11 * 2000 + missionRewardCredits.value + defenseRetinueDiscount.value - challengesCost.value
 
   if (startingOrigin.value.swap) {
     if (startingOrigin.value.swap.tier !== 11)
