@@ -1382,6 +1382,7 @@ export const shroudElements = [
   },
   {
     'uid': '1ofJq',
+    'dlc': 'Fetysh',
     'title': 'Dream (Mind)',
     'Elemental Ability': 'Telekinesis, telepathy, oneiromancy, and empathy. Usages of telekinesis, telepathy, and empathy are generally invisible to the naked eye, but can take many forms in local mental planes, such as the astral plane. Intense usage often becomes visible as blue, violet, or indigo energy. Dream constructs can often take the form of anything the user can imagine or dream up, but can only be manifested in a mind or dreamscape (unless the Contractor has some other way to manifest them in a local reality).',
     'Body Effects': ' Levitating hair, emotionally intense gaze, altered emotions of those nearby, mild hallucinations in viewers, monochrome eyes in the user.',
@@ -1395,6 +1396,7 @@ export const shroudElements = [
   },
   {
     'uid': 'e8C98',
+    'dlc': 'Om1cr0n',
     'title': 'Custom Element',
     'Elemental Ability': 'If you aren\'t satisfied with Company provided options you can choose custom element for yourself, while Company systems are adapting to new element you may experience some glitches. Your custom element will start at the weakest level of power compared to Company provided elements, but it will match them when you attain mastery in every way.',
     'Body Effects': 'Effects on body heavily depend on chosen element the more conceptual the element is the more bizarre effects you will experience. Elements that have little to no effect on your body are possible as well(Human Element, Beauty Element, etc.)',

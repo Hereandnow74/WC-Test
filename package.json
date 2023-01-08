@@ -13,6 +13,7 @@
     "@popperjs/core": "^2.11.5",
     "@vee-validate/zod": "^4.5.11",
     "@vueuse/core": "^9.4.0",
+    "@vueuse/firebase": "^9.10.0",
     "firebase": "^9.8.3",
     "fuse.js": "^6.6.2",
     "html2canvas": "^1.4.1",

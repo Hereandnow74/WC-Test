@@ -1,5 +1,6 @@
+import { GoogleAuthProvider, getAuth, signInWithPopup, Auth } from 'firebase/auth'
 import { initializeApp } from 'firebase/app'
-import { getFirestore, collection, addDoc, doc, getDoc, runTransaction, query, where, getDocs, orderBy, limit, startAt, endAt, startAfter } from 'firebase/firestore/lite'
+import { getFirestore, collection, addDoc, doc, getDoc, runTransaction, query, where, getDocs, orderBy, limit, startAt, endAt, startAfter, deleteDoc } from 'firebase/firestore/lite'
 
 export * from './toggles'
 export * from './misc'
@@ -16,6 +17,29 @@ const app = initializeApp({
 })
 
 const db = getFirestore(app)
+
+const provider = new GoogleAuthProvider()
+export const auth = getAuth(app)
+
+export const signIn = () => signInWithPopup(auth, provider)
+  .then((result) => {
+    // This gives you a Google Access Token. You can use it to access the Google API.
+    const credential = GoogleAuthProvider.credentialFromResult(result)
+    const token = credential?.accessToken
+    // The signed-in user info.
+    const user = result.user
+    // ...
+  }).catch((error) => {
+    // Handle Errors here.
+    const errorCode = error.code
+    const errorMessage = error.message
+    // The email of the user's account used.
+    const email = error.email
+    // The AuthCredential type that was used.
+    const credential = GoogleAuthProvider.credentialFromError(error)
+    console.log(errorCode, errorMessage, email, credential)
+    // ...
+  })
 
 export function proposeWorld(world: any) {
   try {
@@ -99,6 +123,15 @@ export function saveBuildGlobally(buildData: any, callback: any) {
   }
 }
 
+export function deleteSaveBuildGlobally(id: any) {
+  try {
+    deleteDoc(doc(db, 'shared', id))
+  }
+  catch (e) {
+    console.error('Error while deleting a build: ', e)
+  }
+}
+
 export function sendStats(statsData: any, callback: any) {
   try {
     addDoc(collection(db, 'stats'), statsData).then(callback)
@@ -152,7 +185,7 @@ export function getBuildsQuery(callback: any, last = null) {
     const result = []
     docSnap.forEach((x) => {
       if (x.exists()) {
-        result.push(x.data())
+        result.push([x.id, x.data()])
         last = x
       }
     })

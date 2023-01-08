@@ -56,15 +56,20 @@
           class="flex-grow"
           :error-message="errors.fixWorld"
         />
-        <InputWithSearch
-          v-model="fixSub"
-          placeholder="Correct Sub world name (optional)"
-          idd="subSearch"
-          :list="allSubs"
-          label="Subcategory"
-          class="flex-grow"
-          :error-message="errors.fixSub"
-        />
+        <div class="flex gap-2 items-center">
+          <InputWithSearch
+            v-model="fixSub"
+            placeholder="Correct Sub world name (optional)"
+            idd="subSearch"
+            :list="allSubs"
+            label="Subcategory"
+            class="flex-grow"
+            :error-message="errors.fixSub"
+          />
+          <div v-if="character.sub" class="cursor-pointer hover:text-red-500" title="Delete Sub-category from global" @click="fixSub = 'Will be deleted.'">
+            <fluent:delete-20-filled />
+          </div>
+        </div>
       </div>
       <div v-if="wrongImage" class="flex flex-col gap-2">
         <Input v-if="!onlyNSFW" v-model="image" placeholder="Image URL" class="flex-grow" :error-message="errors.image" />
@@ -211,7 +216,8 @@ const sendReport = handleSubmit((values) => {
     delete values.tier
   values = filterObject(values)
   userNickname.value = values.nickname
-  sendReportToServer({ ...values, date: new Date().toString(), uid: props.character.uid }, (msg) => {
+  const seed = window.localStorage.getItem('seed')
+  sendReportToServer({ ...values, date: new Date().toString(), uid: props.character.uid, seed }, (msg) => {
     submitMessage.value = msg
     setTimeout(() => submitMessage.value = '', 5000)
   })

@@ -1,8 +1,11 @@
 <template>
-  <div class="relative bg-[#f2eecb] dark:bg-[#1E1E5C] rounded p-2 shadow-lg flex flex-col gap-1 h-full">
-    <h3 class="text-lg leading-none">
+  <div class="relative bg-[#f2eecb] dark:bg-[#1E1E5C] rounded p-2 shadow-lg flex flex-col gap-1 h-full relative">
+    <h3 class="text-lg leading-none ">
       {{ build.title || "No Title" }}
       <span class="text-base dark:text-slate-300 text-slate-700">by {{ build.nickname || 'unknown' }}</span>
+      <div v-if="isAuthenticated" class="absolute top-1 right-1 cursor-pointer hover:text-red-500" @click="deleteBuild">
+        <fluent:delete-20-filled />
+      </div>
     </h3>
     <div class="text-xs text-gray-600 dark:text-gray-400 leading-none flex justify-between">
       {{ new Date(build.date).toLocaleString() }}
@@ -34,16 +37,23 @@
 </template>
 
 <script lang="ts" setup>
+import { useAuth } from '@vueuse/firebase/useAuth'
 import type { PropType } from 'vue'
 import { ALL_DLC_PERK_TITLES } from '~/data/constants'
+import { auth, deleteSaveBuildGlobally } from '~/logic'
 import { confirmDialog } from '~/logic/dialog'
 import { writeBuildValues } from '~/logic/perksLogic'
-import { useStore } from '~/store/store'
+
+const { isAuthenticated } = useAuth(auth)
 
 const props = defineProps({
   build: {
     type: Object as PropType<Build>,
     default: () => ({}),
+  },
+  buildId: {
+    type: String,
+    default: '',
   },
 })
 
@@ -68,6 +78,10 @@ async function loadBuild() {
   const confirm = await confirmDialog('This action will load global build and overwrite your current build, proceed?')
   if (confirm)
     writeBuildValues(props.build)
+}
+
+function deleteBuild() {
+  deleteSaveBuildGlobally(props.buildId)
 }
 
 </script>

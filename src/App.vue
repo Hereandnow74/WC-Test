@@ -66,6 +66,10 @@ else {
   }
 }
 
+const seed = window.localStorage.getItem('seed')
+if (!seed)
+  window.localStorage.setItem('seed', randomString(12))
+
 // Total activity counter
 let start = new Date()
 const { idle } = useIdle(10000)

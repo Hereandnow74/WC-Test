@@ -168,7 +168,7 @@
         </h4>
         <div class="text-center leading-none text-blue-900 dark:text-blue-300">
           <span>{{ charData.world }}</span>
-          <span v-if="charData.sub" class="text-ble-800 dark:text-blue-200"> - {{ charData.sub }}</span>
+          <span v-if="charData.sub && charData.sub!== 'Will be deleted.'" class="text-ble-800 dark:text-blue-200"> - {{ charData.sub }}</span>
         </div>
         <div v-if="charData.nickname" class="ml-2 mb-1 text-xs text-gray-600 dark:text-gray-400 leading-none" :title="nicknames.includes(charData.nickname) ? 'Patron' : ''">
           by <span :class="{'text-red-400 cursor-help font-semibold': nicknames.includes(charData.nickname)}">{{ charData.nickname }}</span>

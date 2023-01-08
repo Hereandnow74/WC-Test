@@ -469,7 +469,7 @@
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/992757972797247498/Kajiri_Kamui_Kagura_.webp"
   },
   {
-    "worldName": "Gate: And thus the JSDF fought there",
+    "worldName": "GATE: Thus the JSDF Fought There!",
     "rating": 4,
     "condition": [
       {
@@ -2660,22 +2660,6 @@
     "rating": 6,
     "additional": "Fractured Human weaknesses are removed and they can now shift forms at will.<bg>Frenzied Frog and its variants are all considered Familiars.",
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/992402982735970354/jagaaan-destacado.webp"
-  },
-  {
-    "worldName": "Library of Ruina",
-    "rating": 6,
-    "image": "https://www.gameinformer.com/sites/default/files/styles/full/public/2021/08/17/653f6706/library-of-ruina.jpg",
-    "additional": "E.G.O. is enhanced by Psychic Talent, not Soul Talent.",
-    "condition": [
-      {
-        "name": "Before the White Nights and Dark days",
-        "rating": 6
-      },
-      {
-        "rating": 7,
-        "name": "Library already a Star of the City"
-      }
-    ]
   },
   {
     "worldName": "Otoyomegatari",
@@ -5011,7 +4995,13 @@
   },
   {
     "worldName": "Lobotomy Corporation",
-    "rating": 7,
+    "condition": [
+      {
+        "name": "Library of Ruina",
+        "rating": 8
+      }
+    ],
+    "rating": 8,
     "image": "https://cdn.donmai.us/original/3f/16/__angela_tiphereth_a_netzach_malkuth_gebura_and_7_more_project_moon_and_1_more_drawn_by_kankan33333__3f16951867c823cc5f20f2b733c7b788.jpg"
   },
   {
@@ -5510,5 +5500,8 @@
     ]
   },
   {"worldName":"Doki Doki Literature Club","rating":3,"image":"https://www.internetmatters.org/wp-content/uploads/2018/06/Doki.Doki-1200.png"},
-  {"worldName":"Dorohedoro","rating":6,"image":"https://occ-0-1723-1360.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABW6_Y9wHLyf1gv6Fglc90YNG36pxz6FDzuG3jX8tlPdU_-Nz0DT5FR1yte9vMu3A_xBjQ2Uf0jjF_svUHDmyB6UW6H1w-ffWqhTq.jpg?r=1ba"}
+  {"worldName":"Dorohedoro","rating":6,"image":"https://occ-0-1723-1360.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABW6_Y9wHLyf1gv6Fglc90YNG36pxz6FDzuG3jX8tlPdU_-Nz0DT5FR1yte9vMu3A_xBjQ2Uf0jjF_svUHDmyB6UW6H1w-ffWqhTq.jpg?r=1ba"},
+  {"worldName":"By the Grace of the Gods","rating":4,"image":"https://www.gamersdecide.com/sites/default/files/styles/news_images/public/article-cute-art-style-anime-2a.jpg"},
+  {"worldName":"Kissxsis","rating":1,"image":""},
+  {"worldName":"Combatants Will Be Dispatched!","rating":5,"image":"https://i.imgur.com/V1AKOla.jpeg"}
 ]

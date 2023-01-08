@@ -5,8 +5,8 @@
     </Note>
     <div class="overflow-y-auto scrollbar w-full">
       <div class="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-1">
-        <div v-for="build in builds" :key="build.date">
-          <BuildCard class="max-w-[390px]" :build="build" />
+        <div v-for="build in builds" :key="build[0]">
+          <BuildCard class="max-w-[390px]" :build="build[1]" :build-id="build[0]" />
         </div>
       </div>
       <Button v-if="thereIsMore" label="Load More" bg-color="bg-gray-800" class="my-4 mx-auto px-8" @click="getBuilds" />

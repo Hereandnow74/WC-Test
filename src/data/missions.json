@@ -1,5 +1,168 @@
 [
   {
+    "budget": 1000,
+    "title": "I Need A Doctor!",
+    "image": "",
+    "source": "",
+    "loca": "Doctor Who",
+    "rewardType": "TX Tickets",
+    "desc": "The Doctor is dead, but the universe needs them. You aren’t a Time Lord, but you must keep this timeline from falling apart, from the Big Bang to the End Of Time. Good luck; you’re going to need it. ",
+    "scope": "Grand",
+    "objectives": [],
+    "author": "Sef Era",
+    "reward": "5 TX Tickets",
+    "conditions": [
+      {
+        "value": "Paradox Defense is disabled for the duration of this mission."
+      },
+      {
+        "value": "You cannot have Companions higher than T9; this is your mission, not theirs."
+      }
+    ],
+    "uid": "TYfvI"
+  },
+  {
+    "reward": "100",
+    "budget": 225,
+    "conditions": [
+      {
+        "value": "None of the Hashira's can die"
+      },
+      {
+        "value": "You can't kill the upper moons for them though you can provide assistance"
+      },
+      {
+        "value": "You must persoanlly teach them their new powers/abilities/skills"
+      }
+    ],
+    "scope": "Grand",
+    "objectives": [
+      {
+        "value": "Have Rengoku win against Akaza in a one on one battle",
+        "type": "Other",
+        "reward": "You gain mastery of flame breathing"
+      },
+      {
+        "reward": "You gain full mastery of insect breathing",
+        "type": "Other",
+        "value": "Have Shinobu win against Douma in a one on one battle"
+      },
+      {
+        "value": "Have Muichiro win against Kokushibo in a one on one battle",
+        "type": "Other",
+        "reward": "You gain full mastery of mist and moon breathing"
+      },
+      {
+        "value": "Prevent the massacre of the lower rank slayers (at least 70% must survive)",
+        "type": "Credits",
+        "reward": "50"
+      },
+      {
+        "reward": "You gain full mastery of sun breathing",
+        "type": "Other",
+        "value": "Have the slayers kill Muzan without relying on the sun"
+      }
+    ],
+    "rewardType": "Credits",
+    "source": "",
+    "image": "https://wallpaperaccess.com/full/2269432.jpg",
+    "loca": "Kimetsu no Yaiba/Demon Slayer",
+    "desc": "The Demon Slayers have stuck their necks out for hundreds of years trying to protect people who for the most part are unaware of the massive graveyards being filled for their sakes. It's about time the Slayers catch a break, and that break is you. Teach the slayers enough powers/abilities/skills so none of the Hashira's die in their encounters against the upper moons.",
+    "author": "Lazer",
+    "title": "A Helping Hand",
+    "uid": "LCaTU"
+  },
+  {
+    "author": "CyrusFallen",
+    "desc": "Planetos is a common target for contractors looking for a world to conquer and make into their home base. It has both the background magical framework to allow for more high magic works and the low level of technology that gives the freedom to have the tech base be whatever the contractor desires.\nContractors being contractors, there are those who enjoy the work of building it up themselves and those with more credits than patience. That's where you come in!",
+    "image": "",
+    "source": "",
+    "reward": "100",
+    "loca": "A Song of Ice and Fire",
+    "scope": "Standard",
+    "title": "World Building",
+    "objectives": [
+      {
+        "value": "Conquer the surrounding planets in the local solar system and uplift your empire to the equivalent of a Type 2 Civilization(every planet will be a different world from the catalog's list of settings with no common space travel)",
+        "type": "Credits",
+        "reward": "500"
+      },
+      {
+        "type": "Credits",
+        "reward": "800",
+        "value": "Conquer the whole Galaxy and uplift your empire to the equivalent to a Type 3 Civilization(you will come into contact with a space empire from another setting)"
+      }
+    ],
+    "budget": 150,
+    "rewardType": "Credits",
+    "conditions": [
+      {
+        "value": "Conquer the entirety of Planetos and uplift it to the equivalent of a Type 1 Civilization"
+      }
+    ],
+    "uid": "DxuHm"
+  },
+  {
+    "title": "Wishing orb",
+    "rewardType": "Perks",
+    "conditions": [
+      {
+        "value": "Kill Aizen by yourself without being put under kyoka suigetsu."
+      },
+      {
+        "value": "You must face him in a fight no poison in his drink or something."
+      },
+      {
+        "value": "You can do anything once you begin the battle aside from outside interference."
+      },
+      {
+        "value": "You cannot power swap, possess, or substitute with any character."
+      },
+      {
+        "value": "You cannot tell any character new information based on your meta knowledge you can bypass this if you discover something in the world using said knowledge."
+      },
+      {
+        "value": "You cannot buy mind defense or use any powers to negate kyoka suigetsu. Aside from Mission rewards."
+      }
+    ],
+    "loca": "Bleach",
+    "desc": "Bleach has a special orb \"plot device\" that grants any wish \"within possibility\" to whoever has it. Aizen wants it that means you do to unless you'd like to be ruled over by a immortal megalomaniac.   ",
+    "source": "",
+    "author": "Corn",
+    "budget": 365,
+    "image": "https://cdn.discordapp.com/attachments/894482928808112208/1060074022831931412/latest.png",
+    "scope": "Standard",
+    "reward": "Powerswap with Aizen",
+    "objectives": [
+      {
+        "value": "Prevent Aizen from escaping soul society with the hogyoku",
+        "type": "Credits",
+        "reward": "250"
+      },
+      {
+        "reward": "Rukia Kuchiki T5",
+        "value": "Prevent Rukia from being taken to Soul Society",
+        "type": "Companions"
+      },
+      {
+        "reward": "Mind Defense",
+        "value": "Get Gin and Tosen to abandon Aizen",
+        "type": "Perks"
+      },
+      {
+        "reward": "Added Potential: Vizard",
+        "type": "Perks",
+        "value": "Get the Vizards to train you"
+      },
+      {
+        "type": "Companions",
+        "reward": "Ichigo Kurosaki T5",
+        "value": "Convince Ichigo to train with you and go to Soul Society"
+      }
+    ],
+    "uid": "FwVMU"
+  },
+  {
     "author": "ClayUndead",
     "image": "",
     "reward": "500 credits",
@@ -240,16 +403,13 @@
     "uid": "wYsxY"
   },
   {
-    "reward": "Any companions of your choice.",
-    "title": "Plus Ultra Alter",
-    "author": "irugaa0",
-    "desc": " One of our clients recently bought a set of My hero academia worlds and posted a mission in the company, go to one of these worlds and change the events around the protagonist to give him a completely new set of superhuman abilities by any means at your disposal.",
+    "uid": "mGCRv",
     "scope": "Standard",
     "objectives": [
       {
         "type": "Credits",
-        "reward": "20",
-        "value": "Wait to meet Izuku Right after the 1st encounter with All Might."
+        "value": "Wait to meet Izuku Right after the 1st encounter with All Might.",
+        "reward": "20"
       },
       {
         "reward": "50",
@@ -267,21 +427,23 @@
         "value": "Izuku gets 1st Place in the Sports Festival."
       },
       {
-        "value": "2x stronger Than Cannon counterpart.",
+        "reward": "One Tier 6 Companion of choice",
         "type": "Companions",
-        "reward": "1 Tier – 6 Companion of choice"
+        "value": "2x stronger Than Cannon counterpart."
       },
       {
-        "type": "Companions",
+        "reward": "One Tier 7 Companion of choice",
         "value": "3x stronger Than Cannon counterpart.",
-        "reward": "1 Tier – 7 Companion of choice"
+        "type": "Companions"
       }
     ],
-    "image": "",
-    "source": "",
-    "loca": "My Hero Academia",
     "rewardType": "Companions",
-    "budget": 0,
+    "budget": 365,
+    "loca": "My Hero Academia",
+    "reward": "Any Tier 7 or lower companion of your choice.",
+    "title": "Plus Ultra Alter",
+    "source": "",
+    "desc": " One of our clients recently bought a set of My hero academia worlds and posted a mission in the company, go to one of these worlds and change the events around the protagonist to give him a completely new set of superhuman abilities by any means at your disposal.",
     "conditions": [
       {
         "value": "Izuku must Either refuse or not be offered OFA"
@@ -290,7 +452,8 @@
         "value": "Can’t capture Izuku until the end of mission."
       }
     ],
-    "uid": "mGCRv"
+    "image": "",
+    "author": "irugaa0"
   },
   {
     "title": "Hunter’s Paradise",
@@ -422,131 +585,6 @@
     "loca": "Hunter x Hunter",
     "budget": 0,
     "uid": "XaVue"
-  },
-  {
-    "title": "A Farmer’s Life – Stardew Valley Expanded Edition.",
-    "rewardType": "Credits",
-    "conditions": [
-      {
-        "value": "Bindings Will NOT work for the duration of the mission."
-      }
-    ],
-    "author": "irugaa0",
-    "reward": "100",
-    "loca": "Stardew Valley",
-    "source": "",
-    "objectives": [
-      {
-        "type": "Credits",
-        "value": "Plant all plants.",
-        "reward": "10"
-      },
-      {
-        "reward": "10",
-        "type": "Credits",
-        "value": "Collect all artifacts."
-      },
-      {
-        "value": "Mine all ores.",
-        "reward": "10",
-        "type": "Credits"
-      },
-      {
-        "type": "Credits",
-        "value": "Fish all fishes.",
-        "reward": "10"
-      },
-      {
-        "value": "Participate of ALL events at least once.",
-        "type": "Credits",
-        "reward": "5"
-      },
-      {
-        "reward": "20",
-        "value": "Have a Fish Tank with all 10 Legendary Fishes.",
-        "type": "Credits"
-      },
-      {
-        "type": "Credits",
-        "value": "Restore de Community Center.",
-        "reward": "20"
-      },
-      {
-        "reward": "5",
-        "type": "Credits",
-        "value": "Have an 8 Heaths friendship."
-      },
-      {
-        "type": "Credits",
-        "reward": "25",
-        "value": "Have an 8 Heaths friendship with 5 people."
-      },
-      {
-        "reward": "20",
-        "value": "Marry Someone.",
-        "type": "Credits"
-      },
-      {
-        "type": "Credits",
-        "value": "Travel to all available places.",
-        "reward": "10"
-      },
-      {
-        "value": "Raise all available animals.",
-        "reward": "Creature Defense 1 and 2",
-        "type": "Perks"
-      },
-      {
-        "type": "Credits",
-        "value": "Receive all 4 stars in the shrine.",
-        "reward": "1"
-      },
-      {
-        "type": "Credits",
-        "reward": "10",
-        "value": "Collect all the Golden walnuts."
-      },
-      {
-        "type": "Credits",
-        "value": "Collect all the Star drops.",
-        "reward": "20 Plus one Star Drop Seed."
-      },
-      {
-        "reward": "10",
-        "type": "Credits",
-        "value": "Collect all the Qi Gems."
-      },
-      {
-        "value": "Cook every recipe.",
-        "type": "Credits",
-        "reward": "Any Tier-6 Or lower companion with the Chef Tag."
-      },
-      {
-        "reward": "Any Tier-6 Or lower companion with the Crafter Tag.",
-        "value": "Craft all items.",
-        "type": "Companions"
-      },
-      {
-        "type": "Credits",
-        "value": "Complete all monster eradication goals.",
-        "reward": "25"
-      },
-      {
-        "reward": "10",
-        "value": "Gather a total of 100.000 money",
-        "type": "Credits"
-      },
-      {
-        "type": "Other",
-        "reward": "Monetary Perk or 10",
-        "value": "Gather a total of 1.000.000 money"
-      }
-    ],
-    "desc": " The Retired PRO-Farmer, one of our main Clients, is tired of watching our contractors wagging war and fighting in the multiverse, all he wants is to watch the peaceful life of a new farmer trying to learn how to live out the soil.",
-    "scope": "Grand",
-    "image": "",
-    "budget": 0,
-    "uid": "CXSpi"
   },
   {
     "objectives": [
@@ -5531,8 +5569,17 @@
     "uid": "VBGSZ"
   },
   {
+    "uid": "sdRFO",
+    "desc": "The 1000 years war is about to start, and the consciousness of the Soul King does not feel like dying, or staying in a vegetative state forever. As such, it has requested for someone to heal it back up as soon as possible and make sure that his unruly son is dealt with. ",
+    "source": "",
+    "scope": "Standard",
+    "title": "Soul King Reborn",
+    "budget": 1400,
     "rewardType": "Other",
-    "author": "King",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1038859810424246363/Screenshot_2.jpg",
+    "loca": "Bleach - 1000 years War",
+    "objectives": [],
+    "reward": "T11 ticket and 1000 points",
     "conditions": [
       {
         "value": "Find a way to heal the Soul King (Necessary to have captured or killed those with the necessary pieces of the Soul King)"
@@ -5547,16 +5594,7 @@
         "value": "Cannot capture the Soul King (doing so means instant loss of existence)"
       }
     ],
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1038859810424246363/Screenshot_2.jpg",
-    "budget": 1400,
-    "objectives": [],
-    "title": "Soul King Reborn",
-    "scope": "Standard",
-    "reward": "T11 ticket and 1000 points",
-    "loca": "Bleach - 1000 years War",
-    "source": "",
-    "desc": "The 1000 years war is about to start, and the consciousness of the Soul King does not feel like dying, or staying in a vegetative state forever. As such, it has requested for someone to heal it back up as soon as possible and make.sure that his unruly son is dealt with. ",
-    "uid": "sdRFO"
+    "author": "King"
   },
   {
     "loca": "High School DxD",
@@ -12099,7 +12137,7 @@
     "uid": "WTO7e"
   },
   {
-    "author": "Jollymerr",
+    "author": "jollymerr",
     "budget": 85,
     "conditions": [
       {
@@ -12260,7 +12298,7 @@
     "scope": "Grand"
   },
   {
-    "author": "Irugaa0",
+    "author": "irugaa0",
     "budget": 0,
     "conditions": [
       {

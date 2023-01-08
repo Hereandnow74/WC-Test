@@ -11,7 +11,7 @@
           <Input v-model.trim="name" placeholder="Name" class="flex-grow" :error-message="errors.name" />
           <NumberInput v-model="tier" label="Tier" :max="11" :error-message="errors.tier" />
         </div>
-        <div class="flex gap-2">
+        <div class="flex gap-2 items-center">
           <InputWithSearch
             v-model.trim="world"
             idd="worldSearch"
@@ -28,6 +28,9 @@
             class="flex-grow"
             :error-message="errors.sub"
           />
+          <div v-if="editMode && sub" class="cursor-pointer hover:text-red-500" title="Delete Sub-category from global" @click="sub = 'Will be deleted.'">
+            <fluent:delete-20-filled />
+          </div>
         </div>
         <Input v-model="image" placeholder="Image URL" :error-message="errors.image" />
         <div v-if="imageErrorMessage" class="text-red-600 dark:text-red-300 text-sm">
@@ -199,7 +202,8 @@ const addCharacter = handleSubmit((values) => {
   if (serverSave.value) {
     processing.value = true
     userNickname.value = values.nickname
-    proposeCompanion({ ...values, date: new Date().toString() }, (msg) => {
+    const seed = window.localStorage.getItem('seed')
+    proposeCompanion({ ...values, date: new Date().toString(), seed }, (msg) => {
       processing.value = false
       submitMessage.value = msg
       setTimeout(() => submitMessage.value = '', 5000)

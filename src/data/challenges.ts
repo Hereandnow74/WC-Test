@@ -192,7 +192,7 @@ export const challenges = [
     dlc: 'DepressedAlucard',
     dlclink: 'https://docs.google.com/document/d/18LaGf5cy9hDA7ZAInhxVJoTocWfeLo0PI_msQsFu76Q/edit#',
     title: 'Glass Cannon',
-    image: '',
+    image: 'https://i.imgur.com/QFV6MEdl.jpg',
     special: 'Chargen Only, DR6 or higher, May not be taken on DR11.',
     cost: 0,
     desc: `
@@ -214,12 +214,12 @@ export const challenges = [
     dlc: 'DepressedAlucard',
     dlclink: 'https://docs.google.com/document/d/18LaGf5cy9hDA7ZAInhxVJoTocWfeLo0PI_msQsFu76Q/edit#',
     title: 'Natural Progression',
-    image: '',
+    image: 'https://i.imgur.com/b3Vnr41l.jpg',
     special: 'Chargen Only.',
     cost: 0,
     desc: `
     Sometimes it's not the final destination but the journey you took to get there that matters. The company has taken heed of the contractors who rush into worlds with their new powers, easily climbing up to the upper echelons of power with minimal effort. It has therefore decided to impose stricter rules on the manner in which contractor progress with their new abilities, in order to encourage a more natural and fluid form of progression.
-    <p>All purchased powers and perks will now require actual time and effort to develop or unlock, as everything now starts at a T4 level of power. Purchasing a Heritage perk will no longer instantly grant the associated boons, instead bestowing upon the contractor only the potential to eventually unlock said abilities and develop them further with experience, grit, and training. This does not affect static Items such as Psychic Paper and still allows defenses at the second level  to give you their full immunity.</p>
+    <p>All purchased powers and perks will now require actual time and effort to develop or unlock, as everything now starts at a level zero of power. Purchasing a Heritage perk will no longer instantly grant the associated boons, instead bestowing upon the contractor only the potential to eventually unlock said abilities and develop them further with experience, grit, and training. This does not affect static Items such as Psychic Paper and still allows defenses at the second level  to give you their full immunity.</p>
     `,
   },
   {
@@ -227,7 +227,7 @@ export const challenges = [
     dlc: 'DepressedAlucard',
     dlclink: 'https://docs.google.com/document/d/18LaGf5cy9hDA7ZAInhxVJoTocWfeLo0PI_msQsFu76Q/edit#',
     title: 'Lost Goods',
-    image: '',
+    image: 'https://i.imgur.com/r9pZJ5wl.jpg',
     special: 'Chargen Only.',
     cost: 0,
     desc: `
@@ -244,7 +244,7 @@ export const challenges = [
     dlc: 'DepressedAlucard',
     dlclink: 'https://docs.google.com/document/d/18LaGf5cy9hDA7ZAInhxVJoTocWfeLo0PI_msQsFu76Q/edit#',
     title: 'Frog in a Well',
-    image: '',
+    image: 'https://i.imgur.com/XyHjUKDl.jpg',
     special: 'Chargen Only.',
     cost: 0,
     desc: `

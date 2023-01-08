@@ -29,6 +29,7 @@ export const nicknames = [
   'Templar9999',
   'Cyrus',
   'TaiGambol',
+  'the_taken',
   'Alex W.',
   'Bobnewland',
   'Bryce C.',

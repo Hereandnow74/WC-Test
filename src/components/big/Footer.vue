@@ -2,7 +2,6 @@
 <template>
   <div
     class="fixed bottom-0 w-full text-gray-100 transition-transform transform"
-    :style="visible ? `background: url('/img/giphy3.gif') repeat;` : ''"
     :class="visible ? 'translate-y-0' : 'translate-y-[calc(100%-1.8rem)]'"
     @mousedown="visible = false"
   >
@@ -12,10 +11,11 @@
       border="2 gray-400"
       :class="orientation ? 'max-w-[940px]' : 'max-w-[440px]'"
     />
+    <!-- :style="visible ? `background: url('/img/giphy3.gif') repeat;` : ''" -->
     <!-- pointer-events-none -->
-    <div v-if="visible" class="hidden md:block absolute bottom-0.5 right-8  w-16 cursor-pointer z-60" @mousedown.stop @click="playAudio('https://www.myinstants.com/media/sounds/merry-christmas_8GIggbm.mp3')">
+    <!-- <div v-if="visible" class="hidden md:block absolute bottom-0.5 right-8  w-16 cursor-pointer z-60" @mousedown.stop @click="playAudio('https://www.myinstants.com/media/sounds/merry-christmas_8GIggbm.mp3')">
       <img src="https://media.tenor.com/1cUMUU2xtgcAAAAi/padoru.gif" alt="padoru">
-    </div>
+    </div> -->
   </div>
 </template>
 
