@@ -325,15 +325,15 @@ const originCost = computed(() => {
   let bd = 0
   if (startingOrigin.value.swap) {
     if (startingOrigin.value.swap.tier !== 11)
-      bd -= startingOrigin.value.swap.cost - startingOrigin.value.swap.refund
+      bd += startingOrigin.value.swap.cost - startingOrigin.value.swap.refund
     else
-      bd += startingOrigin.value.swap.refund
+      bd -= startingOrigin.value.swap.refund
   }
   if (startingOrigin.value.perk) {
     if (startingOrigin.value.perk.tier !== 11)
-      bd -= startingOrigin.value.perk.cost - startingOrigin.value.perk.refund
+      bd += startingOrigin.value.perk.cost - startingOrigin.value.perk.refund
     else
-      bd += startingOrigin.value.perk.refund
+      bd -= startingOrigin.value.perk.refund
   }
   return bd
 })

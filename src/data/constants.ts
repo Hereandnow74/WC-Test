@@ -208,7 +208,7 @@ export const waifuTags = {
   un: { tag: 'Undead', category: 'Race', short: 'un', effect: '', desc: 'A being technically dead but still animate', color: 'bg-[#2c5332]' },
   sp: { tag: 'Superhero', category: 'Occupation', short: 'sp', effect: '', desc: '', style: { background: 'linear-gradient(90deg, rgba(52,141,255,1) 0%, rgba(255,58,58,1) 50%, rgba(244,255,71,1) 100%)', color: '#000' } },
   pc: { tag: 'Princess', category: 'Occupation', short: 'pc', effect: '', desc: 'A daughter of a Ruler. Is not mutually exclusive with Ruler, due to the existence of Queen Incumbents.', color: 'bg-[#dd12db]' },
-  az: { tag: 'Amazon', category: 'Race', short: 'az', effect: '', desc: 'See Warranty Plan for qualifiers', color: 'bg-[#fdb978] text-black' },
+  az: { tag: 'Warranty', category: 'Utility', short: 'az', effect: '', desc: 'See Warranty Plan for qualifiers', color: 'bg-[#fdb978] text-black' },
   de: { tag: 'Demigod', category: 'Race', short: 'de', effect: '', desc: 'The child or champion of a Deity.', style: { background: 'linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,192,0,1) 70%)', color: '#000' } },
   el: { tag: 'Elf', category: 'Race', short: 'el', effect: '', desc: '', style: { background: 'linear-gradient(0deg, rgba(4,202,31,1) 0%, rgba(0,123,17,1) 70%)', color: '#fff' } },
   ct: { tag: 'Catgirl', category: 'Race', short: 'ct', effect: '', desc: 'A being that is human or of a similar humanoid race with catlike features.', style: { background: 'linear-gradient(0deg, rgba(215,138,12,1) 20%, rgba(240,240,240,1) 100%)', color: '#000' } },

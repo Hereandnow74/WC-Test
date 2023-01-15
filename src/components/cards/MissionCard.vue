@@ -66,6 +66,10 @@
         Additional objectives:
       </h4>
       <div v-for="rew in mission.objectives" :key="rew.value" class="p-1 pl-4 bg-blue-200 dark:bg-blue-gray-700 flex flex-col gap-2">
+        <!-- <div class="flex gap-2 whitespace-nowrap">
+          <label for="">Completed: <input id="" type="checkbox" name=""></label>
+          <NumberInput v-if="Math.random() > 0.7" label="Number of times" />
+        </div> -->
         <div><b>Objective</b>: {{ rew.value }}</div>
         <div>
           <span class="font-semibold text-green-800 dark:text-green-300">

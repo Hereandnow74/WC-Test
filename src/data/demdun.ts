@@ -22,7 +22,7 @@ homes.push({
   cost: 20,
   whitelist: ['Pocket Space'],
   desc: `
-<p>A 100 sq m extradimensional residence, for when you need a place to crash. It has all the basics: two medium bedrooms, one bathroom, a living area, kitchenette, and closet space. All characters with alternate outfits, shown in any official source, will find them stored in their room or closet.</p>
+<p>A 100 sq m extradimensional residence, for when you need a place to crash. It has all the basics: two medium bedrooms, one bathroom, a living area, kitchenette, and closet space. All characters with alternate outfits, shown in any official source, will find them stored in their room or closet. This includes phone, TV, internet, and other network access to any worlds visited after chargen. Be careful not to mix up separate networks; URLs may not lead to the same place from one world to the next.</p>
 <p>Access it by plopping a portal onto any reasonably flat surface. Only one portal may exist at a time and you may close it with a thought at any time, whether you’re in or out of the apartment; if you’re inside when the portal is closed, the new exit must be reasonably close to the previous entrance.</p>
 <p>Some independent multiverse travelers may enter your universe directly, but only requires dedicated and deliberate effort and a beacon to follow.</p>
 <p>Your inventory becomes a sealed vault inside the apartment. You may open the vault while in your Pocket Space, but doing so subjects its contents to the passage of time. If you or a resisting or unwilling subject is inside the vault when it is sealed again, time will continue to pass.</p>`,

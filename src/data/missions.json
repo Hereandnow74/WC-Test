@@ -1,8 +1,179 @@
 [
+  
+  {
+    "title": "Cleaning our Mess",
+    "desc": "So as a company sometimes we had to take responsibility because of our stupid contractor shenanigans, LUCKLY we can just call other contractors to clean the mess for us. So, one of our new contractors got stupidly drunk and shoved an Hogyoku, yes the wishing granting orb, inside the rear end of the mythic moon chasing wolf Hatii, which is now wreaking havoc across several dimensions. So, we need a contractor to capture the wolf, recover the Hogyoku and retrieve the wolf to its rightful dimension. Also please do try to kill the contractor who fucked-up.",
+    "author": "irugaa0",
+    "loca": "Generic",
+    "budget": 200,
+    "conditions": [
+      {
+        "value": "Do the mission and keep it quiet, no one needs to know the company's dirt."
+      }
+    ],
+    "rewardType": "Credits",
+    "reward": "100",
+    "objectives": [
+      {
+        "value": "kill the contractor who fucked-up",
+        "type": "Other",
+        "reward": "Any perk of your Choice, Even any TX-tier."
+      }
+    ],
+    "source": "",
+    "image": "",
+    "scope": "Standard",
+    "uid": "xMkso"
+  },
+  {
+    "image": "",
+    "scope": "Standard",
+    "source": "",
+    "reward": "50",
+    "objectives": [
+      {
+        "value": "Guarantee that the Dethklok band writes three songs in less than one year.",
+        "reward": "200",
+        "type": "Credits"
+      },
+      {
+        "reward": "1500",
+        "value": "Guarantee that the Dethklok band writes 10 songs in less than one decade.",
+        "type": "Credits"
+      },
+      {
+        "reward": "100",
+        "type": "Credits",
+        "value": "Guarantee at least 100 mutilations or deaths."
+      },
+      {
+        "reward": "1.000",
+        "value": "Guarantee at least 1.000 mutilations or deaths.",
+        "type": "Credits"
+      }
+    ],
+    "title": "PLEASE! Make Them Write A Goddamn Song",
+    "desc": "AS much as the company wants it to be a joke, several of our Metalocalypse worlds are completely collapsing because of the Dethklok band not writing enough songs to prevent the end of the world. Is up to you now to make them write a song and prevent that. If possible, also make sure that enough deaths or mutilations happen in their concerts, after all these are some of the best sacrifices.",
+    "loca": "Metalocalypse",
+    "conditions": [
+      {
+        "value": "Guarantee that the Dethklok band writes one song in less than one month."
+      }
+    ],
+    "budget": 0,
+    "author": "irugaa0",
+    "rewardType": "Credits",
+    "uid": "xzjJs"
+  },
+  {
+    "objectives": [
+      {
+        "value": "Get Others Poneglyphs",
+        "reward": "10",
+        "type": "Credits"
+      },
+      {
+        "value": "Get 3 Poneglyphs",
+        "type": "Credits",
+        "reward": "30"
+      },
+      {
+        "type": "Credits",
+        "reward": "100",
+        "value": "Get 10 Poneglyphs"
+      },
+      {
+        "value": "Get a Road Poneglyph",
+        "reward": "100 - Or any Companion with pirate tag",
+        "type": "Credits"
+      },
+      {
+        "value": "Get all 4 Road Poneglyph",
+        "type": "Companions",
+        "reward": "Any One piece Companion of your Choice"
+      }
+    ],
+    "title": "Road to Poneglyph",
+    "source": "",
+    "author": "irugaa0",
+    "scope": "Quick",
+    "loca": "One Piece",
+    "rewardType": "Credits",
+    "conditions": [
+      {
+        "value": "Get the Arabasta Poneglyph"
+      }
+    ],
+    "reward": "20",
+    "budget": 0,
+    "desc": " One of our clients developed an interest in archeology, mineralogy, and linguistics, and he thought that the better study material to start was mysterious Poneglyphs from one piece world, it is supposed to be a simple and quick mission, please go there and get one Poneglyph for our client. ",
+    "image": "",
+    "uid": "wjdMh"
+  },
+  {
+    "title": "Devil Fruit Hunter",
+    "conditions": [
+      {
+        "value": "Get the Nemu Nemu no Mi Paramecia"
+      }
+    ],
+    "image": "",
+    "objectives": [
+      {
+        "reward": "10",
+        "value": "Get 1 zoan",
+        "type": "Credits"
+      },
+      {
+        "reward": "20",
+        "type": "Credits",
+        "value": "Get 1 paramecia"
+      },
+      {
+        "type": "Credits",
+        "value": "Get 1 logia",
+        "reward": "30"
+      },
+      {
+        "value": "Get 3 Devil-Fruits",
+        "reward": "80",
+        "type": "Credits"
+      },
+      {
+        "type": "Other",
+        "value": "Get 10 Devil-Fruits",
+        "reward": "1 perk or ride"
+      },
+      {
+        "type": "Credits",
+        "reward": "100",
+        "value": "Get Special paramecia"
+      },
+      {
+        "value": "Get Ancient zoan",
+        "type": "Credits",
+        "reward": "100"
+      },
+      {
+        "reward": "100",
+        "value": "Get Mithic Zoan",
+        "type": "Credits"
+      }
+    ],
+    "budget": 0,
+    "rewardType": "Credits",
+    "author": "irugaa0",
+    "loca": "One Piece",
+    "desc": " Well, you all know the drill, one of our clients wants something so we try our best to get it. Now one of our clients wants you to get him Devil-Fruits from the one-piece setting for his research. Mind you that our client wants the fruits not the user so you have to deal with it.",
+    "scope": "Quick",
+    "source": "",
+    "reward": "20",
+    "uid": "aTgiM"
+  },
   {
     "budget": 1000,
     "title": "I Need A Doctor!",
-    "image": "",
+    "image": "https://i.imgur.com/hGMZFbb.jpg",
     "source": "",
     "loca": "Doctor Who",
     "rewardType": "TX Tickets",
@@ -75,7 +246,7 @@
   {
     "author": "CyrusFallen",
     "desc": "Planetos is a common target for contractors looking for a world to conquer and make into their home base. It has both the background magical framework to allow for more high magic works and the low level of technology that gives the freedom to have the tech base be whatever the contractor desires.\nContractors being contractors, there are those who enjoy the work of building it up themselves and those with more credits than patience. That's where you come in!",
-    "image": "",
+    "image": "https://i.imgur.com/T4YT01z.jpg",
     "source": "",
     "reward": "100",
     "loca": "A Song of Ice and Fire",
@@ -130,7 +301,7 @@
     "source": "",
     "author": "Corn",
     "budget": 365,
-    "image": "https://cdn.discordapp.com/attachments/894482928808112208/1060074022831931412/latest.png",
+    "image": "https://i.imgur.com/eolBAbL.png",
     "scope": "Standard",
     "reward": "Powerswap with Aizen",
     "objectives": [
@@ -164,7 +335,7 @@
   },
   {
     "author": "ClayUndead",
-    "image": "",
+    "image": "https://i.imgur.com/aDIEQP7.jpg",
     "reward": "500 credits",
     "conditions": [
       {
@@ -229,7 +400,7 @@
     "uid": "nzmtD"
   },
   {
-    "image": "",
+    "image": "https://i.imgur.com/eTCTGOq.jpg",
     "objectives": [
       {
         "type": "Perks",
@@ -404,22 +575,39 @@
   },
   {
     "uid": "mGCRv",
+    "rewardType": "Companions",
+    "loca": "My Hero Academia",
+    "image": "https://i.imgur.com/ah0VWFG.jpg",
+    "author": "irugaa0",
+    "source": "",
     "scope": "Standard",
-    "objectives": [
+    "conditions": [
       {
-        "type": "Credits",
-        "value": "Wait to meet Izuku Right after the 1st encounter with All Might.",
-        "reward": "20"
+        "value": "Izuku must Either refuse or not be offered OFA"
       },
       {
-        "reward": "50",
+        "value": "Can’t capture Izuku until the end of mission."
+      }
+    ],
+    "desc": " One of our clients recently bought a set of My hero academia worlds and posted a mission in the company, go to one of these worlds and change the events around the protagonist to give him a completely new set of superhuman abilities by any means at your disposal.",
+    "reward": "Any Tier 7 or lower companion of your choice.",
+    "budget": 365,
+    "title": "Plus Ultra Alter",
+    "objectives": [
+      {
+        "reward": "20",
+        "type": "Credits",
+        "value": "Wait to meet Izuku Right after the 1st encounter with All Might."
+      },
+      {
         "value": "Izuku can defeat Nomu at USJ",
-        "type": "Credits"
+        "type": "Credits",
+        "reward": "50"
       },
       {
         "value": "Izuku Pass the U.A Entrace Exam in 1st place",
-        "type": "Credits",
-        "reward": "25"
+        "reward": "25",
+        "type": "Credits"
       },
       {
         "type": "Credits",
@@ -436,28 +624,11 @@
         "value": "3x stronger Than Cannon counterpart.",
         "type": "Companions"
       }
-    ],
-    "rewardType": "Companions",
-    "budget": 365,
-    "loca": "My Hero Academia",
-    "reward": "Any Tier 7 or lower companion of your choice.",
-    "title": "Plus Ultra Alter",
-    "source": "",
-    "desc": " One of our clients recently bought a set of My hero academia worlds and posted a mission in the company, go to one of these worlds and change the events around the protagonist to give him a completely new set of superhuman abilities by any means at your disposal.",
-    "conditions": [
-      {
-        "value": "Izuku must Either refuse or not be offered OFA"
-      },
-      {
-        "value": "Can’t capture Izuku until the end of mission."
-      }
-    ],
-    "image": "",
-    "author": "irugaa0"
+    ]
   },
   {
     "title": "Hunter’s Paradise",
-    "image": "",
+    "image": "https://i.imgur.com/SzotOIT.jpg",
     "source": "",
     "author": "irugaa0",
     "rewardType": "Credits",
@@ -663,7 +834,7 @@
       }
     ],
     "loca": "High School DxD",
-    "image": "",
+    "image": "https://i.imgur.com/BtCZL3L.jpg",
     "scope": "Standard",
     "uid": "iTlcR"
   },
@@ -672,7 +843,7 @@
     "loca": "Zero no Tsukaima",
     "source": "",
     "budget": 200,
-    "image": "",
+    "image": "https://i.imgur.com/JVfkY1t.jpg",
     "objectives": [
       {
         "value": "Capture / OR Get The Runes of All Void Familiars",
@@ -816,7 +987,7 @@
     "budget": 200,
     "rewardType": "Perks",
     "source": "",
-    "image": "",
+    "image": "https://i.imgur.com/AKfinjB.jpg",
     "title": "Rating Game King",
     "scope": "Grand",
     "uid": "hnDmY"
@@ -852,7 +1023,7 @@
     ],
     "loca": "Fire Emblem",
     "budget": 80,
-    "image": "",
+    "image": "https://i.imgur.com/Sk3xfmG.jpg",
     "desc": "If there's one thing Fire Emblem loves, it's dragons. As a matter of fact, a decent amount of their final bosses are dragons! But as final bosses, they are of course destined to be defeated by a plucky band of heroes. Clearly, we are in need of a new breed of final bosses.\n\nYour mission, should you accept it, is to conquer the main continents of the Fire Emblem games: Archanea, Valentia, Jugdral, Elibe, Magvel, Tellius, Ylisse, Hoshido/Nohr/Valla, and Fodlan. You may choose to proceed in whatever order you'd like. For the continent of Magvel, you may choose between the Binding Blade timeline or the Blazing Blade timeline, or to conquer one then leap to a fresh World of the other. For the continent of Fodlan, you may choose between Three Houses or Three Hopes. Any future mainline games or spin-offs may be included at will.\n\nConquering a continent requires the subjugation of every country on it. This includes capturing or killing their leaders, pacifying the citizens, and ensuring no uprisings can occur. It does not necessarily require capturing the entire cast, although you may do so if you'd like.\n\nTo keep with the theme, this mission is only available to Contractors with the Dragon Heritage, including those with Ancestral Diversity. If a Contractor uses the Symbiote binding, units must be dragon-themed. And finally, to make it somewhat fair for the natives, weapons with increased potency against dragons similarly affect the Contractor, his retinue, and any Symbiote units, ignoring any Company Defenses.",
     "author": "Scumbag",
     "source": "",
@@ -918,7 +1089,7 @@
         "value": "You must also cripple the White Fang's reputation"
       }
     ],
-    "image": "",
+    "image": "https://i.imgur.com/ZJRyfz8.png",
     "source": "",
     "uid": "XKFZr"
   },
@@ -951,7 +1122,7 @@
         "reward": "5/day"
       }
     ],
-    "image": "",
+    "image": "https://i.imgur.com/kew6dhG.jpg",
     "author": "LeastDevotee",
     "source": "",
     "rewardType": "Credits",
@@ -967,7 +1138,7 @@
     "scope": "Standard",
     "rewardType": "Other",
     "desc": "Mission Client: Jacques Schnee nee Gele\n\nMr. Schnee (a rather minor client of the company who purchased a Template Stacking Zero (Added potential nowadays) some time before marrying into the Schnee family) wishes for his youngest daughter to no longer attend Beacon Academy. While there are a number of ways to do so he's found that the simplest and easiest way to have someone removed from the Academy roster is for them to not attend classes for seven days without permission or extenuating circumstances after which they are expelled. Due to not wanting any issues to reflect on the Schnee family he is paying for his daughters entire team to be removed from Beacon Academy.\n\nMission Parameters:\nEnsure that team RWBY doesn't attend classes at Beacon Academy for seven days in a row within the time limit by any means the contractor is capable of. Weiss Schnee must be alive at the end of the mission.\n",
-    "image": "",
+    "image": "https://i.imgur.com/FXXkKf5.jpg",
     "objectives": [],
     "conditions": [
       {
@@ -1025,7 +1196,7 @@
       }
     ],
     "reward": "1 Credit",
-    "image": "",
+    "image": "https://i.imgur.com/JuyqDXx.jpg",
     "loca": "Toriko",
     "budget": 1,
     "rewardType": "Credits",
@@ -1042,7 +1213,7 @@
     "rewardType": "Other",
     "desc": "The Iron Horde planned to invade Azeroth as Garrosh Hellscream wanted revenge for his imprisonment... However due to company interference the Iron Horde invasion is now arriving at the world you are currently in. Stop the Iron Horde however you'd like and take Draenor for yourself.",
     "reward": "Alternate Draenor is added to your Demi-plane / Home Sweet Home",
-    "image": "https://warcraft.blizzplanet.com/wp-content/uploads/2015/01/warlords-of-draenor-the-dark-portal-10.jpg",
+    "image": "https://i.imgur.com/1r9ME7B.jpg",
     "objectives": [],
     "conditions": [
       {
@@ -1102,7 +1273,7 @@
       }
     ],
     "source": "",
-    "image": "",
+    "image": "https://i.imgur.com/f23unZq.jpg",
     "budget": 0,
     "author": "CyrusFallen",
     "reward": "1 TX Ticket for full completion",
@@ -1160,7 +1331,7 @@
         "value": "Home perks are disabled for the duration of this mission."
       }
     ],
-    "image": "",
+    "image": "https://i.imgur.com/JJSAKUm.jpg",
     "rewardType": "Perks",
     "uid": "Xqoeh"
   },
@@ -8076,10 +8247,12 @@
     "uid": "sLPmq"
   },
   {
-    "desc": "The horrors of the 41st millenium are going to invade your current setting. You have five years to educate the local populace on Warhammer lore and combat tactics against it's various factions, and ensure the survival of it's people.",
+    "source": "",
+    "author": "Z-Perv",
+    "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.wallpapersden.com%2Fimage%2Fdownload%2Fwarhammer-40k-concept-art_bGlna2eUmZqaraWkpJRnamtlrWZpaWU.jpg",
+    "uid": "gQlid",
+    "scope": "Grand",
     "reward": "1",
-    "title": "A lesson in Grim Darkness",
-    "rewardType": "TX Tickets",
     "conditions": [
       {
         "value": "Make your current setting survive a full year after the start of the invasion through your teachings."
@@ -8088,9 +8261,10 @@
         "value": "Spend at least one lesson on every faction."
       }
     ],
-    "source": "",
-    "budget": 15,
-    "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.wallpapersden.com%2Fimage%2Fdownload%2Fwarhammer-40k-concept-art_bGlna2eUmZqaraWkpJRnamtlrWZpaWU.jpg",
+    "title": "A lesson in Grim Darkness",
+    "budget": 12,
+    "rewardType": "TX Tickets",
+    "desc": "The horrors of the 41st millenium are going to invade your current setting. You have five years to educate the local populace on Warhammer lore and combat tactics against it's various factions, and ensure the survival of it's people.",
     "objectives": [
       {
         "value": "Make your current setting dominate the invading forces through your teachings.",
@@ -8103,15 +8277,12 @@
         "reward": "200"
       },
       {
+        "value": "Don't let your teachings disturb any of it's students.",
         "type": "TX Tickets",
-        "reward": "10",
-        "value": "Don't let your teachings disturb any of it's students."
+        "reward": "10"
       }
     ],
-    "scope": "Grand",
-    "author": "Z-Perv",
-    "loca": "Generic",
-    "uid": "gQlid"
+    "loca": "Generic"
   },
   {
     "source": "",
@@ -16179,21 +16350,23 @@
     ]
   },
   {
-    "author": "Waterfly",
+    "title": "Save the dragon WAIFU",
+    "rewardType": "Perks",
     "conditions": [
       {
         "value": "Do not capture Priscilla until the danger has passed."
       }
     ],
-    "desc": "The chosen undead may cross paths with the adorable cross-breed Priscilla, putting her in grave danger of being killed. Your mission will be to PROTECT this manifestation of waifuness. \n",
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992863742184398908/alisa-nilsen-priscilla-characters-fantasy-game-art-dark-soul.jpg",
-    "loca": "Darksouls 1",
-    "objectives": [],
-    "reward": "Pocket Space, Pocket Apartment, Life's A Beach (by default this will appear as the painted world and may contain a Waifu)",
     "scope": "Quick",
+    "loca": "Soulsborne",
+    "budget": 0,
+    "desc": "The chosen undead may cross paths with the adorable cross-breed Priscilla, putting her in grave danger of being killed. Your mission will be to PROTECT this manifestation of waifuness. \n",
+    "author": "Waterfly",
+    "uid": "mCU0C",
     "source": "",
-    "title": "Save the dragon WAIFU",
-    "uid": "mCU0C"
+    "objectives": [],
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992863742184398908/alisa-nilsen-priscilla-characters-fantasy-game-art-dark-soul.jpg",
+    "reward": "Pocket Space, Pocket Apartment, Life's A Beach (by default this will appear as the painted world and may contain a Waifu)"
   },
   {
     "conditions": [

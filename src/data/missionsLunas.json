@@ -208,5 +208,51 @@
     "title": "The Repentant Nazi? - Ebony & Ivory",
     "loca": "Worm",
     "budget": 590
+  },
+  {
+    "desc": "Become a patron of either Eris or Aqua. The gods of konosuba have been searching out people from other worlds to help them get rid of the Demon King. They have agreed to be your patron for your help in finding heroes to save the day. Between Isekai missions, you hang out in heaven assisting your patron with her other duties. Since you will be stuck in heaven outside of your Isekai missions, use your Points to assist your Companions to defeat the demon king. Because the Konosuba Gods are poor and Overworked, there is a limit to the amount of Isekai jobs, and overall power of companions you can take. While the gods are good at dealing with the cycle of reincarnation, they aren't as good at dealing with Trauma, so they require you to take Mind Defense II for full safety during the duration of the Program.\n\nFreely go to any world on the world list with your truck in a area nearby your desired companion, bar the konosuba world for obvious reasons. If you die, or at your choice with your App, you return unharmed to Konosuba's Heaven. You are limited to visiting a total of 5 worlds in this way. You cannot retry a world you died in.\n\nThose you Isekai gain no bonuses for going to konosuba, bar anything companions would normally get. For example Defenses and shared Talents bought with points for capturing companions.\n\nIf your patron is Aqua then Kazuma is never Isekaid into the world, and Aqua stays in heaven, never visiting the world of konosuba.\n\nOnce the Demon King is defeated, each companion is teleported back to their original world, a moment after you left their world. Choose one of the Isekaied companions worlds to go to. Your other Isekaied companion's worlds will be available as an option with Exit Stage Left until you have visited each one. When you go to a Isekaied companions world, no time has passed for them and you appear near them.",
+    "objectives": [
+      {
+        "reward": "Pocket space and Pocket Apartment for free.",
+        "type": "Other",
+        "value": "Take Aqus as your Patron, derailing canon."
+      }
+    ],
+    "source": "",
+    "loca": "KonoSuba",
+    "budget": 0,
+    "reward": "Gain Eris or Aqua as a companion, whichever you chose as your Patron.",
+    "rewardType": "Companions",
+    "image": "",
+    "title": "Konosuba Gods Patron Isekai Program!",
+    "author": "YouandIDon'tKnowMe",
+    "conditions": [
+      {
+        "value": "Chargen Only."
+      },
+      {
+        "value": "Cannot gain any points at Chargen above the points that Konosubas world gives you."
+      },
+      {
+        "value": "Cannot Take a loan."
+      },
+      {
+        "value": "Must Take Mind Defense II, Space Trucker, Demon's Eye, Pictures of Home at Chargen."
+      },
+      {
+        "value": "You can only capture 170 credits worth of companions, until the Demon King is defeated."
+      },
+      {
+        "value": "Cannot have another Patron."
+      },
+      {
+        "value": "Can only capture with Space Trucker until the demon King is defeated."
+      },
+      {
+        "value": "Can only spend points on defenses, Talents if you also buy talent sharing for that talent, and on talents for your Companions."
+      }
+    ],
+    "scope": "Grand",
+    "uid": "xYnMO"
   }
 ]

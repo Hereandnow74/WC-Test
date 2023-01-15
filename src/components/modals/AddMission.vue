@@ -31,11 +31,20 @@
       </div>
       <div class="flex gap-2">
         <Select v-model="rewardType" placeholder="Reward Type" :options="['Credits', 'TX Tickets', 'Perks', 'Companions', 'Other']" :error-message="errors.rewardType" />
-        <Input
+        <NumberInput
+          v-if="['Credits', 'TX Tickets'].includes(rewardType)"
           v-model.trim="reward"
-          class="flex-grow"
           placeholder="Main reward"
           :error-message="errors.reward"
+          :min="0"
+          class="flex-grow"
+        />
+        <Input
+          v-else
+          v-model.trim="reward"
+          placeholder="Main reward"
+          :error-message="errors.reward"
+          class="flex-grow"
         />
       </div>
       <h3 class="flex gap-2 items-center cursor-pointer" @click="conditions.push({value: ''})">
@@ -68,9 +77,10 @@
           class="flex gap-1 items-center bg-gray-300 dark:bg-gray-600 p-1 rounded"
         >
           <div class="flex flex-col gap-2 flex-grow">
-            <Input
+            <TextArea
               v-model.trim="requirement.value"
               :placeholder="`Requirement #${i + 1}`"
+              :rows="'1'"
               :error-message="errors[`objectives[${i}].value`]"
             />
             <div class="flex gap-2">
@@ -80,7 +90,16 @@
                 :options="['Credits', 'TX Tickets', 'Perks', 'Companions', 'Other']"
                 :error-message="errors[`objectives[${i}].type`]"
               />
+              <NumberInput
+                v-if="['Credits', 'TX Tickets'].includes(requirement.type)"
+                v-model.trim="requirement.reward"
+                :placeholder="`Bonus reward (optional) #${i + 1}`"
+                :error-message="errors[`objectives[${i}].reward`]"
+                :min="0"
+                class="flex-grow"
+              />
               <Input
+                v-else
                 v-model.trim="requirement.reward"
                 :placeholder="`Bonus reward (optional) #${i + 1}`"
                 :error-message="errors[`objectives[${i}].reward`]"
@@ -146,8 +165,8 @@ const schema = toFormValidator(
     budget: zod.number().min(0, 'Min 0 credits').max(2000, 'Max 2000 credits'),
     loca: zod.string().min(1, 'Location is required'),
     scope: zod.string().min(1, 'Scope is required'),
-    conditions: zod.object({ value: zod.string().min(1, 'Condition should not be empty') }).array(),
-    objectives: zod.object({ value: zod.string().min(1, 'Requirement should not be empty'), reward: zod.string().min(1, 'Reward should not be empty'), type: zod.string().min(1, 'Choose a Reward Type') }).array(),
+    conditions: zod.object({ value: zod.string().min(1, 'Condition should not be empty').max(256, 'Max 256 characters') }).array(),
+    objectives: zod.object({ value: zod.string().min(1, 'Requirement should not be empty').max(256, 'Max 256 characters'), reward: zod.string().min(1, 'Reward should not be empty').max(128, 'Max 128 characters'), type: zod.string().min(1, 'Choose a Reward Type') }).array(),
     reward: zod.string().min(1, 'Reward is required'),
     rewardType: zod.string().min(1, 'Reward type is required'),
     image: zod.string().regex(/[^ \!@\$\^&\(\)\+\=]+(\.png|\.jpeg|\.gif|\.jpg|\.webp)$/, { message: 'Must be a valid image URL in a jpeg/jpg/png/gif/webp format.' }).max(256, { message: 'Maximum length is 256 chars' }).optional().or(zod.literal('')),
