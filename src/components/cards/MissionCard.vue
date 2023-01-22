@@ -1,7 +1,9 @@
 <template>
   <div class="relative bg-[#f2eecb] dark:bg-[#1E1E5C] rounded p-2 shadow-lg flex flex-col gap-1">
     <h4 class="text-lg text-center py-1">
-      <span v-html="mission.title"></span>
+      <router-link :to="`/missions?q=${mission.uid}`" class="hover:underline">
+        <span v-html="mission.title"></span>
+      </router-link>
       <span v-if="mission.author" class="text-sm text-gray-500 dark:text-gray-400"> by {{ mission.author }}</span>
     </h4>
     <div title="Edit Mission" class="text-lg hover:text-orange-500 cursor-pointer flex items-center gap-1 absolute top-1 right-1" @click="showEditCompanion">
@@ -65,12 +67,12 @@
       <h4 class="text-amber-800 dark:text-amber-300">
         Additional objectives:
       </h4>
-      <div v-for="rew in mission.objectives" :key="rew.value" class="p-1 pl-4 bg-blue-200 dark:bg-blue-gray-700 flex flex-col gap-2">
+      <div v-for="rew, n in mission.objectives" :key="rew.value" class="p-1 pl-4 bg-blue-200 dark:bg-blue-gray-700 flex flex-col gap-2">
         <!-- <div class="flex gap-2 whitespace-nowrap">
           <label for="">Completed: <input id="" type="checkbox" name=""></label>
           <NumberInput v-if="Math.random() > 0.7" label="Number of times" />
         </div> -->
-        <div><b>Objective</b>: {{ rew.value }}</div>
+        <div><b>Objective {{ n + 1 }}</b>: {{ rew.value }}</div>
         <div>
           <span class="font-semibold text-green-800 dark:text-green-300">
             Reward

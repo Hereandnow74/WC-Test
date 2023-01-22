@@ -33,7 +33,7 @@
         <Select v-model="rewardType" placeholder="Reward Type" :options="['Credits', 'TX Tickets', 'Perks', 'Companions', 'Other']" :error-message="errors.rewardType" />
         <NumberInput
           v-if="['Credits', 'TX Tickets'].includes(rewardType)"
-          v-model.trim="reward"
+          v-model="reward"
           placeholder="Main reward"
           :error-message="errors.reward"
           :min="0"
@@ -92,7 +92,7 @@
               />
               <NumberInput
                 v-if="['Credits', 'TX Tickets'].includes(requirement.type)"
-                v-model.trim="requirement.reward"
+                v-model="requirement.reward"
                 :placeholder="`Bonus reward (optional) #${i + 1}`"
                 :error-message="errors[`objectives[${i}].reward`]"
                 :min="0"
@@ -166,8 +166,12 @@ const schema = toFormValidator(
     loca: zod.string().min(1, 'Location is required'),
     scope: zod.string().min(1, 'Scope is required'),
     conditions: zod.object({ value: zod.string().min(1, 'Condition should not be empty').max(256, 'Max 256 characters') }).array(),
-    objectives: zod.object({ value: zod.string().min(1, 'Requirement should not be empty').max(256, 'Max 256 characters'), reward: zod.string().min(1, 'Reward should not be empty').max(128, 'Max 128 characters'), type: zod.string().min(1, 'Choose a Reward Type') }).array(),
-    reward: zod.string().min(1, 'Reward is required'),
+    objectives: zod.object({
+      value: zod.string().min(1, 'Requirement should not be empty').max(256, 'Max 256 characters'),
+      reward: zod.string().min(1, 'Reward should not be empty').max(128, 'Max 128 characters').or(zod.number().min(0, 'Min 0 credits').max(20000, 'Max 20000 credits')),
+      type: zod.string().min(1, 'Choose a Reward Type'),
+    }).array(),
+    reward: zod.string().min(1, 'Reward should not be empty').max(256, 'Max 256 characters').or(zod.number().min(0, 'Min 0 credits').max(20000, 'Max 20000 credits')),
     rewardType: zod.string().min(1, 'Reward type is required'),
     image: zod.string().regex(/[^ \!@\$\^&\(\)\+\=]+(\.png|\.jpeg|\.gif|\.jpg|\.webp)$/, { message: 'Must be a valid image URL in a jpeg/jpg/png/gif/webp format.' }).max(256, { message: 'Maximum length is 256 chars' }).optional().or(zod.literal('')),
     desc: zod.string().max(5000, 'Max length is 5000 chars').min(1, 'Description is required'),

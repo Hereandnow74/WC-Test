@@ -41,7 +41,7 @@
         :error-message="errors.tags"
       />
       <div v-if="isDuplicate" class="flex flex-col gap-2">
-        <Input v-model="duplicate" placeholder="Name of the duplicate (optional)" label="Duplicate Name" class="flex-grow" :error-message="errors.duplicate" />
+        <Input v-model="duplicate" placeholder="Name of the duplicate or reason for deletion" label="Duplicate Name" class="flex-grow" :error-message="errors.duplicate" />
       </div>
       <div v-if="wrongName" class="flex flex-col gap-2">
         <Input v-model="fixName" placeholder="Correct name" :label="`Name [${character.name}]`" class="flex-grow" :error-message="errors.fixName" />

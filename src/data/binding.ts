@@ -107,6 +107,7 @@ export const bindings: PerkFull[] = [
     type: 'Jewelry',
     image: 'https://cdn.discordapp.com/attachments/925963686433132644/1040761911349870603/Screenshot_13.jpg',
     multiple: true,
+    max: 6,
     whitelist: ['Tempest Jewelry'],
     desc: 'Select an additional jewelry type for your Tempest items. This may be repurchased until every jewelry type is available to you.',
   },

@@ -69,6 +69,7 @@ const buildTags = computed(() => {
   if (props.build.allEffects.includes('Black-mark')) tags.push('Black-mark')
   if (props.build.loan.owed > 0) tags.push('Under Loan')
   if (props.build.companions.some(x => x.image)) tags.push('Custom Images')
+  if (props.build.companions.some(x => x.note)) tags.push('Retinue Notes')
   if (props.build.activeChallenges.length > 0) tags.push(props.build.activeChallenges[0].title)
   if (props.build.allEffects.some((x: string) => ALL_DLC_PERK_TITLES.value[x])) tags.push('Use DLC')
   return tags

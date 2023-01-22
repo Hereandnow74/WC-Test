@@ -23,6 +23,7 @@
         />
       </div>
       <TextArea v-model="desc" placeholder="Ride description" :rows="'2'" :error-message="errors.desc" />
+      <Input v-model="image" placeholder="Image URL" :error-message="errors.image" />
       <Foldable title="Addons" :is-open="isAddonOpen" class="flex flex-col min-h-0">
         <template #buttons>
           <div class="cursor-pointer hover:text-green-500" @click="addAddon">
@@ -128,6 +129,7 @@ const schema = toFormValidator(
     size: zod.string().nonempty('Size is required'),
     cost: zod.number().min(0, { message: 'Minimum Cost is 0' }),
     desc: zod.string().nonempty('Description is required'),
+    image: zod.string(),
     addons: zod.object({
       addon: zod.string().nonempty('Addon name is required'),
       cost: zod.number().min(0, { message: 'Minimum Cost is 0' }),
@@ -146,12 +148,14 @@ const { errors, handleSubmit } = useForm({
     source: props.ride.source || '',
     cost: props.ride.cost || 0,
     desc: props.ride.desc || '',
+    image: '',
     addons: [],
     variants: [],
   },
 })
 
 const { value: title } = useField<string>('title')
+const { value: image } = useField<string>('image')
 const { value: source } = useField<string>('source')
 const { value: category } = useField<string>('category')
 const { value: size } = useField<string>('size')

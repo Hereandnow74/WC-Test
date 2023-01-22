@@ -73,7 +73,8 @@
 <script lang="ts" setup>
 import Fuse from 'fuse.js'
 import { Mission } from 'global'
-import { groupBy, sample } from 'lodash-es'
+import { find, groupBy, sample } from 'lodash-es'
+import { onBeforeRouteUpdate } from 'vue-router'
 
 import { toggleShowAddMission } from '~/logic'
 import { MissionGenerator } from '~/logic/missionsGen'
@@ -174,6 +175,32 @@ const generatedMissions = computed(() => {
   return arr
 })
 
+const missionUID = ref('')
+const params = useUrlSearchParams('history')
+if (params.q)
+  missionUID.value = `${params.q}`
+
+const singleMission = computed(() => {
+  if (missionUID.value) {
+    page.value = 3
+    const mission = find(missions.value, { uid: missionUID.value })
+    return mission ? [mission] : []
+  }
+  else {
+    page.value = 0
+  }
+  return []
+})
+
+onBeforeRouteUpdate((to, from, next) => {
+  if (to.query.q)
+    missionUID.value = `${to.query.q}`
+  else
+    page.value = 0
+
+  setTimeout(next, 1)
+})
+
 const threeMission = computed(() => [sample(missions.value), sample(missions.value), gen2.generateRandom(currentWorld.value.worldName).getObject()])
 
 const startingMissionsCount = 10
@@ -189,6 +216,7 @@ useInfiniteScroll(
 )
 
 const displayedMissions = computed(() => {
+  console.log(singleMission.value)
   switch (page.value) {
     case 0:
       return infiniteMissions.value
@@ -196,6 +224,8 @@ const displayedMissions = computed(() => {
       return generatedMissions.value
     case 2:
       return threeMission.value
+    case 3:
+      return singleMission.value
   }
   return infiniteMissions.value
 })

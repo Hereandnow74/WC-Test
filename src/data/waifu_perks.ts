@@ -267,6 +267,21 @@ export const waifu_perks: WaifuPerk[] = [
     desc: 'Ranka\'s familiar Ai-kun is actually an infant member of the Vajra, the hostile bug race of her home series. This perk allows a purchased Ranka\'s Ai-kun to mature to adulthood and qualifies Ranka for special Alterzelu Symbiote theming. Captured or Substituted Rankas will earn this perk when Ai-kun fully matures.',
   },
   {
+    uid: 'ckO71',
+    title: 'Epilogue',
+    waifu: [
+      'Kurokami Medaka',
+    ],
+    from: 'Medaka Box',
+    waifuUID: [
+      6537,
+    ],
+    tier: 10,
+    image: 'https://i.ytimg.com/vi/67moHOR2CI4/maxresdefault.jpg',
+    cost: 900,
+    desc: 'The Tier 7 purchase of Kurokami Medaka possesses only the abilities that she has gained until the end of the Thirteen Party Arc. With this perk, Medaka will gain all abilities copied afterward and through the canon epilogue, including All Fiction and the portion of the quadrillion skills copied from Ajimu. If a captured or purchased Medaka gains the copied quadrillion skills from Ajimu by copying them normally, this perk is automatically gained for free, including any missing abilities.',
+  },
+  {
     uid: 'MVq5h',
     title: 'Eye of the Tiger',
     waifu: [
@@ -940,8 +955,8 @@ export const waifu_perks: WaifuPerk[] = [
       7260,
     ],
     image: '/img/waifu_perks/compressed/image206.png',
-    tier: 7,
-    cost: 50,
+    tier: 6,
+    cost: 30,
     desc: 'After shaking off her possession by the Herrscher of the Void, Kiana has taken ownership of the Gem of Serenity and begun to mantle her predecessor’s power as her own. This perk represents Kiana’s Void Drifter form - a partial manifestation of the Herrscher - as well as the Knight Moonbeam mode of her White Comet battlesuit. Neither one is available to her otherwise. Kiana will always have this perk if captured between the events of Chapter 9 and the events of Chapter 25. Capturing Kiana during that period will also eject the Herrscher of the Void into a new body, allowing her to be captured separately, as a version of Sirin with the Herrscher of the Void perk.',
   },
   {
@@ -955,8 +970,8 @@ export const waifu_perks: WaifuPerk[] = [
       7280,
     ],
     image: 'https://i.imgur.com/HyNKujz.jpg?1',
-    tier: 7,
-    cost: 98,
+    tier: 6,
+    cost: 48,
     desc: 'Born from Sirin\'s wish to have another chance at life as Cecilia Schariac\'s daughter, Sirin instead awakens in the body of K423. Unlike what transpired in canon, she retains her memories in full, lacking only the hatred of humanity that birthed a Herrscher personality. Here, the Herrscher was instead spawned directly by the Will of Honkai. In addition, Sirin will obtain all equipment - including the Gem of Serenity - signature outfits, and combat skills that Kiana Kaslana (K423) has with the Void Drifter perk.',
   },
   {
@@ -973,7 +988,7 @@ export const waifu_perks: WaifuPerk[] = [
     ],
     tier: 8,
     image: '/img/waifu_perks/compressed/image128.png',
-    cost: 100,
+    cost: 150,
     desc: 'Kiana has mastered the powers of the Void and is no longer haunted by the Herrscher personality of Sirin, her past life. Purchased versions of Kiana will always have this perk, as will any captured after the events of Chapter 25',
   },
   {
@@ -1043,9 +1058,9 @@ export const waifu_perks: WaifuPerk[] = [
     waifuUID: [
       7261,
     ],
-    tier: 7,
+    tier: 6,
     image: '/img/waifu_perks/compressed/image210.png',
-    cost: 50,
+    cost: 30,
     desc: 'Mei has begun to mantle the powers of the Herrscher of Thunder as her own. This perk represents her Lightning Empress form - a partial manifestation of the Herrscher - as well as the Striker Fulminata and Danzai Spectromancer upgrades to her existing Valkyrie Bladestrike and Shadow Dash battlesuits, respectively. Mei cannot be captured with only this perk. Instead, she will either be her T6 baseline self or the Herrscher of Thunder.',
   },
   {
@@ -1063,7 +1078,7 @@ export const waifu_perks: WaifuPerk[] = [
     ],
     tier: 8,
     image: '/img/waifu_perks/compressed/image185.png',
-    cost: 100,
+    cost: 150,
     desc: 'Mei is now in full control of her powers as the Herrscher of Thunder, including the service of the red dragon Kurikara as her familiar. Gathering additional Herrscher cores, as Sirin did during the Second Honkai War, will increase her tier further. Mei will always have this perk if captured after her return to Nagazora (chapter 17).',
   },
   {
@@ -1076,10 +1091,25 @@ export const waifu_perks: WaifuPerk[] = [
     waifuUID: [
       7262,
     ],
-    tier: 8,
+    tier: 7,
     image: '/img/waifu_perks/compressed/image224.png',
-    cost: 100,
+    cost: 50,
     desc: 'Bronya has inherited Welt Yang’s mantle as the Herrscher of Reason, using that power to thoroughly remodel her machine familiar Project Bunny and escape the Sea of Quanta. Gathering additional Herrscher cores, as Sirin did during the Second Honkai War, will increase her tier further. Bronya will always have this perk if captured after her reunion with Seele (chapter 11).',
+  },
+  {
+    uid: 'JDJf1',
+    title: 'Metamorphosis of Reason',
+    waifu: [
+      'Herrscher of Reason',
+    ],
+    from: 'Honkai Impact',
+    waifuUID: [
+      'JDJfo',
+    ],
+    tier: 8,
+    image: 'https://cdn.donmai.us/sample/2e/7e/__bronya_zaychik_project_bunny_and_bronya_zaychik_honkai_and_1_more_drawn_by_broseele__sample-2e7e6a3765efa300a89f556fc6c7c07d.jpg',
+    cost: 100,
+    desc: 'Bronya has absorbed the other 300,000 souls that make up the Herrscher of Reason, metamorphosing her power into the Herrscher of Truth. Bronya will always have this perk if captured after the events of New Atra and the Final Crater (chapter 31).',
   },
   {
     uid: 'KFOfj',
@@ -1091,9 +1121,9 @@ export const waifu_perks: WaifuPerk[] = [
     waifuUID: [
       7271,
     ],
-    tier: 9,
+    tier: 8,
     image: '/img/waifu_perks/compressed/image173.png',
-    cost: 300,
+    cost: 100,
     desc: 'Durandal’s ancestry has tested her and found her worthy. Now aware of her birth identity, she rides into battle on the Honkai horse Krishna, wielding the full power of the combined Kaslana and Schariac bloodlines. If captured or purchased, she will also regain her childhood memories, seeing Kiana (K423) and Sirin as her younger sisters. Durandal will always have this perk if captured after the events in Kolosten.',
   },
   {
@@ -1106,9 +1136,9 @@ export const waifu_perks: WaifuPerk[] = [
     waifuUID: [
       7265,
     ],
-    tier: 8,
+    tier: 7,
     image: '/img/waifu_perks/compressed/image255.png',
-    cost: 100,
+    cost: 50,
     desc: 'The limiters built into Theresa during her creation are released, allowing her to access her full power as a clone of Kallen Kaslana. This perk represents the Godslayer-type battlesuit, Twilight Paladin. Theresa will always have this perk if captured after the events of chapter 12.',
   },
   // {
@@ -1182,7 +1212,7 @@ export const waifu_perks: WaifuPerk[] = [
     tier: 8,
     image: '/img/waifu_perks/compressed/image251.png',
     image_2: '/img/waifu_perks/compressed/image257.png',
-    cost: 100,
+    cost: 150,
     desc: 'Fu Hua gets access to all her memories of the past without any negative effects or periodic cleaning with Fenghuang Down, as well as the physicals of her time as a MANTIS Flame Chaser and the Book of Fuxi as a familiar. Fu Hua will always have this perk if captured during the Previous Era or medieval Shenzhou. She will not have the battlesuits Phoenix or Azure Empyrea without this perk.',
   },
   {
@@ -1296,9 +1326,9 @@ export const waifu_perks: WaifuPerk[] = [
     waifuUID: [
       7269,
     ],
-    tier: 9,
+    tier: 8,
     image: 'https://i.imgur.com/4K3oU4Q.png?1',
-    cost: 400,
+    cost: 200,
     desc: 'Rita gets access to Kevin Kaslana\'s powers and abilities from the bubble universe/Su\'s illusion where she became Humanity\'s strongest warrior and took Kevin\'s place. This perk also gives Rita the Judgement of Shamash pistols.',
   },
   {
@@ -1388,8 +1418,24 @@ export const waifu_perks: WaifuPerk[] = [
       7279,
     ],
     image: 'https://i.imgur.com/h1HSXoX.png?1',
-    cost: 100,
-    desc: 'Ana gains the abilities of the Herrscher of Rimestar, a form that combined her core with that of Owl\'s Herrscher of the Earth. Not only does she retain her Ice manipulation, she also gains gravity manipulation and black hole creation. This does not change Ana\'s tier rating. ',
+    tier: 8,
+    cost: 150,
+    desc: 'Ana gains the abilities of the Herrscher of Rimestar, a form that combined her core with that of Owl’s Herrscher of the Earth. Not only does she retain her Ice manipulation, she also gains gravity manipulation and black hole creation.',
+  },
+  {
+    uid: 'O1235',
+    title: 'Purified Corruption',
+    waifu: [
+      'Yae Sakura (medieval)',
+    ],
+    from: 'Honkai Impact',
+    waifuUID: [
+      7267,
+    ],
+    image: 'https://cdn.donmai.us/sample/4a/fd/__yae_sakura_and_yae_sakura_honkai_and_1_more_drawn_by_rabbit_tukenitian__sample-4afdaaee21c64c27f8af309d6a32e5d4.jpg',
+    tier: 7,
+    cost: 50,
+    desc: 'Yae Sakura has purified the Black Box of Corruption and forged that core into the Divine Key it always was meant to be. Now able to wield the curse that has haunted her, either both she and her familiar Higokumaru can now unleash the deadly force that is the 12th Herrscher of the Previous Era.',
   },
   {
     uid: '1xKBt',

@@ -45,6 +45,7 @@ export const nicknames = [
   'Zerlestes',
   'Darkarma',
   'Kirron 999',
+  'Gregory B.',
 ]
 
 export const WORLD_COLORS = ['bg-green-600', 'bg-teal-600', 'bg-cyan-600',
@@ -257,8 +258,6 @@ export const waifuTags = {
   sg: { tag: 'Ship-girl', category: 'Race', short: 'sg', effect: '', desc: 'Female Waifu featuring design elements of a ride/anthropomorphization of a ride', color: 'bg-teal-500 text-black' },
   fa: { tag: 'Familiars', category: 'Utility', short: 'fa', effect: '', desc: 'Character has a familiar(s) that comes with purchase, and factored into their tier', color: 'bg-teal-500 text-black' },
   ff: { tag: 'Fairy', category: 'Race', short: 'ff', effect: '', desc: '', color: 'bg-teal-500 text-black' },
-
-  U: { tag: 'By User', category: 'Utility', short: 'U', effect: '', desc: 'Characters that were added to Interactive by users, applied automatically to all submitted characters', color: 'bg-warm-gray-600' },
 } as const
 
 export const tagCategories = uniqWith(Object.values(waifuTags), (tagA, tagB) => tagA.category === tagB.category).map(tag => tag.category)
@@ -425,14 +424,8 @@ export async function getChanges() {
 getChanges()
 
 export async function getUserChars(): Promise<DBCharacter[]> {
-  if (!userChars) {
-    userChars = (await import('~/data/userCharacters.json')).default.map((char) => {
-      char.type = 'sub'
-      if (!char.b.includes('U'))
-        char.b.push('U')
-      return char
-    })
-  }
+  if (!userChars)
+    userChars = (await import('~/data/userCharacters.json')).default
   return userChars
 }
 

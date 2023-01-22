@@ -1,5 +1,764 @@
 [
-  
+  {
+    "source": "",
+    "conditions": [
+      {
+        "value": "You must purchase [Destiny Defense(II)] and [Paradox Defense(II)]."
+      },
+      {
+        "value": "You will enter 'Harry Potter'[DR3] on the day Harry recieves his first Hogwarts Letter."
+      },
+      {
+        "value": "You must kill Tom Marvolo Riddle Jr. until the end of Harry Potter's Seventh Year at Hogwards."
+      },
+      {
+        "value": "Tom Marvolo Riddle Jr. cannot be Captured."
+      },
+      {
+        "value": "Neither you nor your Waifu can leave the World for the duration of the Mission."
+      }
+    ],
+    "image": "https://media.tenor.com/qNu2IB0eDUEAAAAd/voldemort-death.gif",
+    "author": "Zaralann",
+    "scope": "Grand",
+    "title": "No Fate...",
+    "objectives": [
+      {
+        "value": "Capture Hermione Jane Granger.",
+        "type": "Perks",
+        "reward": "You gain [Soul Talent] for Free."
+      },
+      {
+        "reward": "You gain [Communication Talent] for Free.",
+        "type": "Perks",
+        "value": "Capture Ginevra Molly Weasley."
+      },
+      {
+        "value": "Capture Fleur Isabelle Delacour and Gabrielle Delacour.",
+        "type": "Perks",
+        "reward": "You gain [Love Spot] for Free."
+      },
+      {
+        "type": "Perks",
+        "value": "Capture and Sell Severus Snape.",
+        "reward": "You gain [Sience Talent] for Free."
+      },
+      {
+        "type": "Perks",
+        "value": "Capture Bellatrix Black.",
+        "reward": "You gain [Martial Talent] for Free."
+      },
+      {
+        "value": "Narcissa Black.",
+        "type": "Perks",
+        "reward": "You gain [Alluring Whisper] for Free."
+      },
+      {
+        "value": "Capture and Sell Albus Percival Wulfric Brian Dumbledore.",
+        "reward": "You gain [Mind Defense(II)] for Free.",
+        "type": "Perks"
+      },
+      {
+        "type": "Perks",
+        "value": "Capture and Sell Draco Lucius Malfoy.",
+        "reward": "You gain [Fatality Defense(II)] for Free."
+      },
+      {
+        "value": "Capture and Sell Lucius Malfoy.",
+        "type": "Perks",
+        "reward": "You gain [Information Defense(II)] for Free."
+      },
+      {
+        "value": "Capture Daphne and Astoria Greengrass.",
+        "reward": "You gain [Tsundere Service] for Free.",
+        "type": "Perks"
+      },
+      {
+        "reward": "You gain [Potpourri] for Free.",
+        "value": "Capture and Sell Vincent Crabbe and Gregory Goyle.",
+        "type": "Perks"
+      },
+      {
+        "value": "Capture and Sell Quirinus Quirrell.",
+        "type": "Perks",
+        "reward": "You gain [Possession Defense(II)] for Free."
+      },
+      {
+        "type": "Other",
+        "reward": "100 Credits.",
+        "value": "Prevent Harry Potter from finding out about the Philosopher Stone or discovering the Forbidden Corridor during his First Year."
+      },
+      {
+        "type": "Other",
+        "value": "Prevent the release of Basilisk during Harry Potter's Second Year.",
+        "reward": "100 Credits."
+      },
+      {
+        "type": "Other",
+        "value": "Prevent Ginevra Molly Weasley from being possessed by a Horcrux of Tom Marvolo Riddle Jr. during Harry Potter's Second Year.",
+        "reward": "50 Credits."
+      },
+      {
+        "value": "Capture Luna Lovegood.",
+        "type": "Perks",
+        "reward": "You gain [Trace Defense(II)] for Free."
+      },
+      {
+        "type": "Perks",
+        "reward": "You gain [Covert Talent] for Free.",
+        "value": "Capture and Sell Peter Pettigrew."
+      },
+      {
+        "reward": "You gain [Wild Talent] and [Wild Defense(II)] for Free.",
+        "type": "Perks",
+        "value": "Prove the innocence of Sirius Orion Black before the end of Harry Potter's Third Year."
+      },
+      {
+        "value": "Prevent Harry Potter's entrance into the Triwizard Tournament during his Fourth Year.",
+        "reward": "Full Refund for [Destiny Defense(II)].",
+        "type": "Perks"
+      },
+      {
+        "reward": "You gain [Corruption Defense(II)] for Free.",
+        "value": "Capture and Sell Bartemius Crouch Jr.",
+        "type": "Perks"
+      },
+      {
+        "reward": "500 Credits per 1st Place in a Task, 400 Credits per 2nd Place, 300 Credits per 3rd Place.",
+        "value": "Enter Ronald Bilius Weasley into Triwizard Tournament and assure his victory without directly interfering with Tasks or other participants. Credits are Awarded only if Ronald wins the Tournament.",
+        "type": "Other"
+      },
+      {
+        "type": "Other",
+        "reward": "You gain [Body Defense(II)] for Free.",
+        "value": "Prevent Harry Potter from departing to Ministry of Magic to 'save' Sirius Orion Black."
+      },
+      {
+        "type": "Perks",
+        "value": "Kill a Dementor.",
+        "reward": "You gain [Soul Defense(II)] for Free."
+      },
+      {
+        "value": "Prevent Dolores Jane Umbridge from gaining a position at Hogwarts. Capturing or killing her will forfeight this Objective during Harry Potter's Fifth Year, doing so before or after would not.",
+        "type": "Perks",
+        "reward": "You gain [Don’t Stand So Close to Me] for Free."
+      },
+      {
+        "type": "Perks",
+        "value": "Capture and Sell Dolores Jane Umbridge.",
+        "reward": "You gain [Sticky Fingers] for Free."
+      },
+      {
+        "type": "Perks",
+        "reward": "You gain [Land Talent] for Free.",
+        "value": "Prevent the invasion of Death Eaters during Harry Potter's Sixth Year."
+      },
+      {
+        "type": "Companions",
+        "reward": "You will gain a Waifu: Merlin(Prototype)[Tier 8] for Free.",
+        "value": "Kill Albus Percival Wulfric Brian Dumbledore during Harry Potter's Sixth Year. Capturing and Selling him before or during this period would forefeight this Objective, doing so after would not."
+      },
+      {
+        "reward": "You gain [Polymorph Defense(II)] for Free.",
+        "value": "Capture Nagini.",
+        "type": "Perks"
+      },
+      {
+        "value": "Kill Severus Snape during Harry Potter's Seventh Year, Capturing and Selling him before or during this period would forefeight this Objective. Doing so after wouldn't.",
+        "type": "Perks",
+        "reward": "You gain [Performance Talent] for Free."
+      },
+      {
+        "value": "Destroy Tom Marvolor Jr.'s Horcruxes. Only count if you destroye them directly and personally.",
+        "reward": "150 Credits per Horcrux.",
+        "type": "Other"
+      },
+      {
+        "value": "Capture Nymphadora Tonks.",
+        "type": "Perks",
+        "reward": "You gain [Aesthetic Talent] for Free."
+      },
+      {
+        "reward": "You gain [Sexual Calibration], [Fertility Calibration I] and [Fertility Calibration II(VIII)] for Free.",
+        "value": "Impregnate Nymphadora Tonks with her giving birth before the end of Harry Potter's Seventh Year.",
+        "type": "Perks"
+      }
+    ],
+    "budget": 200,
+    "rewardType": "Other",
+    "loca": "Harry Potter",
+    "desc": "Do you believe in 'Destiny' or 'Fate', O' Contractor? We don't either. It should not be the chain that binds and we believe it should not be tempered with either. So we give out a missing that would destroy it beyond any doubt.",
+    "reward": "750 Credits.",
+    "uid": "TWFlG"
+  },
+  {
+    "loca": "High School DxD",
+    "budget": 235,
+    "title": "Weeb? No! Visionary!",
+    "reward": "5,000 Credits.",
+    "conditions": [
+      {
+        "value": "You must enter the 'High School DxD' [DR6]."
+      },
+      {
+        "value": "You must purchase following Basic Talents [Body Tune-Up], [Everlasting Talent], [Martial Talent], [Science Talent], [Engineering Talent], [Soul Talent] and [Land Talent]."
+      },
+      {
+        "value": "You must use [Share Talents] on each Basic Talent mentioned above."
+      },
+      {
+        "value": "You will enter the World eighteen years before the start of Canon, on the day of Rias' birth."
+      },
+      {
+        "value": "You must Capture Rias Gremory."
+      },
+      {
+        "value": "You must train Rias Gremory till the start of Canon for her to become strong enough to be able to Reincarnate Hyōdō Issei with a single normal [Pawn](Actual Reincarnation of him into her Peerage is not required, only the capability to do so)."
+      },
+      {
+        "value": "Rias Gremory must be powerful on aspects of Magic, Bloodline, Hand-to-Hand Combat, Wielding a single Type of a Weapon and also wielding Senjutsu and Tōki."
+      },
+      {
+        "value": "You and/or Rias Gremory cannot leave the World before the start of Canon."
+      }
+    ],
+    "source": "",
+    "scope": "Grand",
+    "desc": "Rias Gremory was seen as a 'weeb' in the Light Novel, she was seen as much worse in Anime. But what if you can change it? This Mission is for those who are ready to accept that such things can be changed! ",
+    "objectives": [
+      {
+        "reward": "500 Credits.",
+        "value": "Rias Gremory must the the strongest Devil in her Generation by the start of Canon.",
+        "type": "Other"
+      },
+      {
+        "value": "Rias Gremory must not betroth to Riser Phenex by the start of Canon.",
+        "type": "Other",
+        "reward": "250 Credits."
+      },
+      {
+        "type": "Other",
+        "value": "Rias Gremory must never lose a battle against anyone but yourself, sparrings do not count by the start of Canon.",
+        "reward": "750 Credits."
+      },
+      {
+        "value": "Rias Gremory has an all-female Peerage of Named Characters with each one being Captured and each taking only one Evil Piece by the start of Canon.",
+        "reward": "450 Credits",
+        "type": "Other"
+      },
+      {
+        "value": "Rias Gremory must be bethroth/married to you by the start of Canon.",
+        "type": "Other",
+        "reward": "1,500 Credits."
+      },
+      {
+        "reward": "100 Credits.",
+        "value": "Shirone is Reincarnated into Rias Gremory's Peerage by the start of Canon and does not change her name nor is afraid of using her full capabilities.",
+        "type": "Other"
+      },
+      {
+        "value": "Himajima Akeno is Reincarnated into Rias Gremory's Peerage by the start of Canon and is not afraid of using her full capabilities.",
+        "reward": "100 Credits.",
+        "type": "Other"
+      },
+      {
+        "value": "Ingvild Leviathan is Reincarnated into Rias Gremory's Peerage by the start of Canon.",
+        "reward": "350 Credits.",
+        "type": "Other"
+      },
+      {
+        "value": "Rias Gremory enters TOP 10 Strongest Beings by the start of Canon.",
+        "reward": "25,000 Credits.",
+        "type": "Other"
+      },
+      {
+        "reward": "10,000 Credits",
+        "value": "You must be in TOP 10 Strongest Beings by the start of Canon.",
+        "type": "Other"
+      },
+      {
+        "type": "Other",
+        "reward": "5,000 Credits.",
+        "value": "Every member of Rias Gremory's Peerage must be beyond Ultimate-Class in strength by the start of Canon."
+      },
+      {
+        "value": "[Boosted Gear] is extracted from Hyōdō Issei and transfered to you/Rias Gremory by the start of Canon.",
+        "reward": "750 Credits.",
+        "type": "Other"
+      }
+    ],
+    "author": "Zaralann",
+    "rewardType": "Other",
+    "image": "https://pbs.twimg.com/media/FHEz0OLXEAwCArz.jpg",
+    "uid": "RKeJB"
+  },
+  {
+    "budget": 80,
+    "title": "Know Your Place, Granger",
+    "loca": "Harry Potter",
+    "scope": "Grand",
+    "image": "",
+    "desc": "Hello Contractor, one of our Clients is furious with the girl known as Hermione Granger. We aren't sure if it is her Self Righteous Nature, her shoving her 'Intelligence' in people's faces, her lack of respect for foreign culture (because Magical Britain is not Muggle Britain) or it could simply be that they hate that she doesn't even do the bare minimum to maintain her looks. Honestly, we don't care. They're paying us and we are, in turn, giving you this mission. Upon arrival in this world you will be given a Special Binding, a metal collar not too dissimilar to Tempest Jewellery. You will use this to enslave Hermione Granger and show her that her place is at your feet.",
+    "rewardType": "Companions",
+    "author": "FinSexual92",
+    "reward": "1 Tier 5 Mage Ticket",
+    "conditions": [
+      {
+        "value": "Once the Metal Collar is on it can't be removed (and will count as a Capture). It will also ensure she acts normally around others that don't know about her enslavement while ensuring her compliance (She will still have her mind unclouded though)"
+      },
+      {
+        "value": "No one is to know. (The only exception being those that believe she should know her place. If they find out they will insist on helping)"
+      },
+      {
+        "value": "She must remain child free until she has sat her NEWTS. Afterwards she must have at least 3 children before you leave"
+      }
+    ],
+    "source": "",
+    "objectives": [
+      {
+        "type": "Companions",
+        "reward": "Company Clone of Lily Potter nee Evans",
+        "value": "Alter her looks to match Lily Potter and let Severus Snape fulfil his wildest dreams"
+      },
+      {
+        "value": "Let Malfoy and his Bodyguards go wild one night",
+        "type": "Companions",
+        "reward": "Company Clone of Narcissa Malfoy"
+      },
+      {
+        "type": "Companions",
+        "reward": "House Elves will be created to care for your properties",
+        "value": "Let the House Elves take revenge on She-Who-Must-Not-Be-Named"
+      },
+      {
+        "type": "Other",
+        "reward": "25 Credits (each time)",
+        "value": "Take Hermione to the Centaur Horde in the Forbidden Forest"
+      },
+      {
+        "value": "After Hogwarts, have her visit Grawp and be impregnated with his child",
+        "type": "Companions",
+        "reward": "Company Clone of Madam Maxinne"
+      },
+      {
+        "value": "Use Universal Calibration to give Ron an Cuckold Fetish and let him watch at least during the time she gets pregnant once. Credits are doubled if she has married him at this point.",
+        "reward": "25 Credits (50 Credits if married)",
+        "type": "Other"
+      }
+    ],
+    "uid": "NUPEy"
+  },
+  {
+    "image": "https://i.ytimg.com/vi/ToA_d8NHJYE/hqdefault.jpg",
+    "loca": "High School DxD",
+    "budget": 0,
+    "scope": "Grand",
+    "desc": "This Mission is one of Salvation... Children, they're clumsy sort, they can be unobservant or even worse, forgetful. This is what happened to the Protagonist, Hyōdō Issei, in this World. He dropped the pamplet that was supposed to Summon Rias Gremory and perished and now the World would be worse for it... No matter how perverted, disgusting and disturbing he was, his actions still led to the survival of many people and resolution of many conflicts. And here you enter the picture... Save this World in his steed, save it with only what you have on hand.",
+    "conditions": [
+      {
+        "value": "Your Origin must be [Drop-In] and the only Binding that you will have is [Company Stamp]."
+      },
+      {
+        "value": "You cannot purchase anything for Credits until specific condtions are met, you would still be awarded them for Capture and/or Selling but you cannot spend them for the durations of the Mission."
+      },
+      {
+        "value": "Mission ends when all the Canonical Antagonists have been killed/defeated."
+      }
+    ],
+    "uid": "VIywe",
+    "reward": "5500",
+    "objectives": [
+      {
+        "value": "Capture Raynare, Kalawarna and Mittelt.",
+        "reward": "You can Purchase [Communication Talent].",
+        "type": "Perks"
+      },
+      {
+        "value": "Sell Dohnaseek.",
+        "reward": "You can Purchase [Soul Talent].",
+        "type": "Perks"
+      },
+      {
+        "value": "Sell Freed Sellzen.",
+        "type": "Perks",
+        "reward": "You can Purchase [Martial Talent]."
+      },
+      {
+        "type": "Perks",
+        "reward": "You can Purchase [Blessed Talent].",
+        "value": "Capture Asia Argento."
+      },
+      {
+        "value": "Capture Rias Gremory.",
+        "reward": "You can Purchase [Sticky Fingers].",
+        "type": "Perks"
+      },
+      {
+        "reward": "You can Purchase [Faerie Feast].",
+        "type": "Perks",
+        "value": "Capture Akeno Himejima and Shirone."
+      },
+      {
+        "reward": "You can Purchase [Athletic Talent].",
+        "value": "Capture Viser.",
+        "type": "Perks"
+      },
+      {
+        "value": "Capture Grayfia Lucifuge.",
+        "type": "Perks",
+        "reward": "You can Purchase [Pocket Space]."
+      },
+      {
+        "type": "Perks",
+        "value": "Sell Riser Phenex.",
+        "reward": "You can Purchase [Body Defense]."
+      },
+      {
+        "type": "Perks",
+        "reward": "You can Purchase [Warranty Plan].",
+        "value": "Capture Ravel Phenex."
+      },
+      {
+        "value": "Capture Yubelluna, Mihae, Karlamine, Siris, Isabela, Xuelan, Ile, Nel,\tNi, Li, Marion, Burent, Shuriya and Mira.",
+        "type": "Perks",
+        "reward": "You can Purchase [Pocket Apartment], [Sweet Home] and [Grand Manor]."
+      },
+      {
+        "type": "Perks",
+        "reward": "You can Purchase [Soul Defense].",
+        "value": "Capture Shidō Irina and Xenovia Quarta."
+      },
+      {
+        "type": "Perks",
+        "reward": "You can Purchase [Science Talent].",
+        "value": "Sell Valper Galilei."
+      },
+      {
+        "value": "Sell Kokabiel.",
+        "reward": "You can Purchase [Mind Defense].",
+        "type": "Perks"
+      },
+      {
+        "type": "Perks",
+        "value": "Sell Vali Lucifer.",
+        "reward": "You can Purchase [Dragon Heart]."
+      },
+      {
+        "type": "Perks",
+        "reward": "You can Purchase [Trace Defense].",
+        "value": "Capture Kuroka."
+      },
+      {
+        "reward": "You can Purchase [Don’t Stand So Close to Me].",
+        "type": "Perks",
+        "value": "Capture Sōna Sitri."
+      },
+      {
+        "type": "Perks",
+        "value": "Capture Shinra Tsubaki, Hanakai Momo, Kusaka Reya, Meguri Tomoe, Yura Tsubasa and Nimura Ruruko.",
+        "reward": "You can Purchase [Love Spot]."
+      },
+      {
+        "type": "Perks",
+        "reward": "You can Purchase [Alluring Whisper].",
+        "value": "Sell Diodora Astaroth."
+      },
+      {
+        "reward": "You can Purchase [Corruption Defense].",
+        "type": "Perks",
+        "value": "Capture all members of Diodora Astaroth's Peerage."
+      },
+      {
+        "value": "Sell Creuserey Asmodeus, Shalba Beelzebub.",
+        "type": "Perks",
+        "reward": "You can Purchase [Engineering Talent]."
+      },
+      {
+        "value": "Capture Ophis.",
+        "reward": "You can Purchase [Inexhaustible].",
+        "type": "Perks"
+      },
+      {
+        "type": "Perks",
+        "value": "Sell Loki.",
+        "reward": "You can Purchase [Information Defense]."
+      },
+      {
+        "value": "Capture Rossweisse.",
+        "type": "Perks",
+        "reward": "You can Purchase [Fatality Defense]."
+      },
+      {
+        "type": "Perks",
+        "reward": "You can Purchase [Stress Defense].",
+        "value": "Sell Connla."
+      },
+      {
+        "type": "Perks",
+        "reward": "You can Purchase [Wyldscape Defense].",
+        "value": "Sell Arthur Pendragon."
+      },
+      {
+        "value": "Capture Le Fay Pendragon.",
+        "type": "Perks",
+        "reward": "You can Purchase [Polymorph Defense]."
+      },
+      {
+        "reward": "You can Purchase [Land Talent].",
+        "value": "Sell Bikō.",
+        "type": "Perks"
+      },
+      {
+        "value": "Sell Georg.",
+        "type": "Perks",
+        "reward": "You can Purchase [Possession Defense]."
+      },
+      {
+        "type": "Perks",
+        "reward": "You can Purchase [Creature Defense].",
+        "value": "Sell Leonardo."
+      },
+      {
+        "value": "Capture Jeanne.",
+        "type": "Perks",
+        "reward": "You can Purchase [Covert Talent]."
+      },
+      {
+        "type": "Perks",
+        "reward": "You can Purchase [Target Tracker].",
+        "value": "Sell Heracles."
+      },
+      {
+        "reward": "You can Purchase [Dragon Scale].",
+        "value": "Sell Siegfried.",
+        "type": "Perks"
+      },
+      {
+        "reward": "You can Purchase [Destiny Defense].",
+        "value": "Sell Cao Cao.",
+        "type": "Perks"
+      },
+      {
+        "reward": "You can Purchase a Waifu: Tamamo Cat(Nasuverse: Tier 6)",
+        "type": "Companions",
+        "value": "Capture Kunō."
+      },
+      {
+        "type": "Companions",
+        "value": "Capture Yasaka.",
+        "reward": "You can Purchase a Waifu: Tamamo-no-Mae(Nasuverse: Tier 8)"
+      },
+      {
+        "type": "Perks",
+        "value": "Capture Kuisha Abaddon.",
+        "reward": "You can Purchase [Environmental Defense]."
+      },
+      {
+        "reward": "You can Purchase [Wild Defense].",
+        "type": "Perks",
+        "value": "Capture Coriana Andrealphus."
+      },
+      {
+        "value": "Capture Misla Vapula.",
+        "type": "Perks",
+        "reward": "You can Purchase [Potpourri]."
+      },
+      {
+        "value": "Sell Hades.",
+        "type": "Companions",
+        "reward": "You can Purchase a Waifu: Eucliwood Hellscythe(Kore wa Zombie Desuka?: Tier 9)"
+      },
+      {
+        "reward": "You can Purchase a Waifu: Morgiana(Magi: Tier 5)",
+        "type": "Companions",
+        "value": "Reincarnate as a Devil by Rias Gremory."
+      }
+    ],
+    "author": "Zaralann",
+    "source": "",
+    "rewardType": "Credits",
+    "title": "Come as Your Aren't..."
+  },
+  {
+    "image": "https://cdn.discordapp.com/attachments/869700348971982879/1064248316189220935/build.png",
+    "conditions": [
+      {
+        "value": "For the earned Credits you can only purchase Basic Talents and [Talent Sharing] for them until the end of the Mission."
+      },
+      {
+        "value": "For the earned Credits you can only purchase Tier 1 Waifu until the end of the Mission."
+      },
+      {
+        "value": "You start exactly 36 Hours before the start of Episode 1, the location is the alleyway two kilometres from the High School."
+      }
+    ],
+    "loca": "Highschool of the Dead",
+    "uid": "eCchC",
+    "objectives": [
+      {
+        "type": "Companions",
+        "value": "You must Bind following Waifu: Maresato Alice, Nakaoka Asami, Miyamoto Kiriko, Marikawa Shizuka, Miyamoto Rei, Busujima Saeko, Takagi Saya.",
+        "reward": "Any Tier 7 Waifu, [Power Swap] cannot be used."
+      },
+      {
+        "reward": "100",
+        "value": "You must Bind and Sell following Individuals: Shidō Kōichi.",
+        "type": "Credits"
+      },
+      {
+        "type": "Credits",
+        "reward": "100",
+        "value": "You must survive without losing any of your Waifu for 366 Days."
+      },
+      {
+        "reward": "100",
+        "value": "You must Impregnate at least five Local Waifu and they must give birth before the timeframe of [3] is up.",
+        "type": "Credits"
+      },
+      {
+        "value": "You must not leave Japan.",
+        "reward": "100",
+        "type": "Credits"
+      },
+      {
+        "value": "You cannot kill any Survivors unless they attack you or a Bound Waifu with lethal intent.",
+        "type": "Credits",
+        "reward": "100"
+      }
+    ],
+    "budget": 55,
+    "scope": "Grand",
+    "desc": "You're alone with no help and with the background that doesn't exist, ahead of you is a year of facing death. Due to you being a Contractor you cannot be so easily swayed by Death so you would be given this task to save as many as you can and bring new Life to this World.",
+    "title": "They Are Coming...",
+    "reward": "200 Credits",
+    "rewardType": "Credits",
+    "source": "https://cdn.discordapp.com/attachments/869700348971982879/1064248316189220935/build.png",
+    "author": "Zaralann"
+  },
+  {
+    "reward": "2 Werewolf Companion Tickets",
+    "source": "",
+    "author": "FinSexual92",
+    "desc": "One of our Clients is unhappy with the plight, and representation, of Werewolves in the Wizarding World. It doesn't help that the only Werewolves really given a personality were a psychotic beast that targeted children and a self hating guy that shirked his responsibilities where he could. You are going to change that and how Werewolves are treated by the Wizarding World. Of course, you will be a Werewolf, bitten young, and on your way to Hogwarts because you've managed to hide it well and Dumbledore is focused on Harry.",
+    "image": "",
+    "title": "The Moon is my Mistress",
+    "rewardType": "Companions",
+    "conditions": [
+      {
+        "value": "You must stay in Hogwarts for the entire 7 years"
+      },
+      {
+        "value": "This World's Werewolves have a Wolf Spirit inside them. Harmonising with this Spirit will allow greater physical abilities and senses even in human form, along with being able to shift outside of the Full Moon"
+      },
+      {
+        "value": "You will never have control on the Nights of the Full Moon, but Harmonised Werewolves will not attack anyone that isn't seen as a threat"
+      },
+      {
+        "value": "You need to bite at least one person per year at Hogwarts"
+      }
+    ],
+    "objectives": [
+      {
+        "value": "Have sex with a Local Non-Werewolf that hasn't been Captured. (Bindings that take time once applied can't be used either)",
+        "reward": "1 Non-Human Companion Ticket of equal Tier to the partner(repeatable but requires a different partner each time)",
+        "type": "Companions"
+      },
+      {
+        "value": "Kill Fenrir Greyback in an Alpha to Alpha fight to the death (Alpha merely being the name of a Leader of a pack. Being one doesn't grant you anything but responsibilities)",
+        "reward": "1 Vampire Companion Ticket",
+        "type": "Companions"
+      },
+      {
+        "value": "Seduce a Pureblood girl from each of the Four Houses and have sex with them once they know of your werewolf nature",
+        "reward": "4 Companion Tickets, one for each of the Four Houses",
+        "type": "Companions"
+      },
+      {
+        "type": "Companions",
+        "reward": "Company Clones of Helga Hufflepuff, Rowena Ravenclaw and a Companion Ticket for both Gryffindor and Slytherin",
+        "value": "Become Hogwarts Headmaster and re-earn the school the Title of Greatest Magical School in the World"
+      },
+      {
+        "value": "Revive a Ghost as a Human and then turn them into a Werewolf",
+        "reward": "Instant Capture of the Ghost in question and a Paper Trail for them stating they are somehow related to the Ghost in question",
+        "type": "Companions"
+      },
+      {
+        "type": "Companions",
+        "reward": "Instant Capture of Nymphadora Tonks and Andromeda Tonks",
+        "value": "Kill Remus Lupin and seduce Nymphadora Tonks"
+      },
+      {
+        "value": "Have Draco Malfoy die in an 'accident'",
+        "reward": "Instant Capture of Narcissa Malfoy and Astoria Greengrass",
+        "type": "Companions"
+      },
+      {
+        "value": "Save Hermione Granger from the Troll",
+        "reward": "Instant Capture of Hermione Granger and a Company Clone of Rose Weasley",
+        "type": "Companions"
+      },
+      {
+        "value": "Save Ginny Weasley from the Diary",
+        "type": "Companions",
+        "reward": "Instant Capture of Ginny Weasley and a Company Clone of Lily Luna Potter"
+      },
+      {
+        "value": "Save Buckbeak without the Time Turner",
+        "reward": "Instant Capture of Buckbeak as a Familiar and 50 Credits",
+        "type": "Companions"
+      },
+      {
+        "reward": "Instant Capture of Fleur Delacour",
+        "type": "Companions",
+        "value": "Go to the Yule Ball with Fleur Delacour"
+      },
+      {
+        "value": "Defeat Bellatrix Lestrange at the Battle of the Department of Mysteries",
+        "type": "Companions",
+        "reward": "Instant Capture of Bellatrix Lestrange and a Company Clone of Delphini Riddle"
+      }
+    ],
+    "scope": "Grand",
+    "budget": 80,
+    "loca": "Harry Potter",
+    "uid": "MyNiw"
+  },
+  {
+    "loca": "Generic",
+    "budget": 225,
+    "image": "https://w0.peakpx.com/wallpaper/983/805/HD-wallpaper-akame-akame-ga-kill-anime-esdeaht-kurome-mine-najenda-tatsumi-waifu-xaons.jpg",
+    "reward": "25% of capture credits for kill (minimum 1 credit)",
+    "source": "",
+    "author": "Lazer",
+    "title": "Contract Killing",
+    "conditions": [
+      {
+        "value": "You or a retinue member must complete the kill"
+      }
+    ],
+    "desc": "The multiverse is huge and we have many clients who hate someone enough that they don’t want that person to be captured, they just want them dead. The reward varies based on how determined the client is in wanting them dead. Go forth and kill for profit!",
+    "rewardType": "Other",
+    "scope": "Standard",
+    "objectives": [
+      {
+        "type": "Other",
+        "reward": "50% capture credits for kill",
+        "value": "Client really hates the target"
+      },
+      {
+        "value": "Client will do near anything to kill the target",
+        "reward": "100% capture credits for kill",
+        "type": "Other"
+      },
+      {
+        "reward": "200% capture credits for kill",
+        "value": "Client is willing to sell their soul to kill the target",
+        "type": "Other"
+      }
+    ],
+    "uid": "kukCQ"
+  },
   {
     "title": "Cleaning our Mess",
     "desc": "So as a company sometimes we had to take responsibility because of our stupid contractor shenanigans, LUCKLY we can just call other contractors to clean the mess for us. So, one of our new contractors got stupidly drunk and shoved an Hogyoku, yes the wishing granting orb, inside the rear end of the mythic moon chasing wolf Hatii, which is now wreaking havoc across several dimensions. So, we need a contractor to capture the wolf, recover the Hogyoku and retrieve the wolf to its rightful dimension. Also please do try to kill the contractor who fucked-up.",
@@ -21,12 +780,12 @@
       }
     ],
     "source": "",
-    "image": "",
+    "image": "https://i.imgur.com/zDk80oB.jpg",
     "scope": "Standard",
     "uid": "xMkso"
   },
   {
-    "image": "",
+    "image": "https://i.imgur.com/pl2Nrp4.jpg",
     "scope": "Standard",
     "source": "",
     "reward": "50",
@@ -107,7 +866,7 @@
     "reward": "20",
     "budget": 0,
     "desc": " One of our clients developed an interest in archeology, mineralogy, and linguistics, and he thought that the better study material to start was mysterious Poneglyphs from one piece world, it is supposed to be a simple and quick mission, please go there and get one Poneglyph for our client. ",
-    "image": "",
+    "image": "https://i.imgur.com/1B2eZlN.jpg",
     "uid": "wjdMh"
   },
   {
@@ -117,7 +876,7 @@
         "value": "Get the Nemu Nemu no Mi Paramecia"
       }
     ],
-    "image": "",
+    "image": "https://i.imgur.com/e08dyrZ.jpg",
     "objectives": [
       {
         "reward": "10",
@@ -1418,9 +2177,8 @@
     "scope": "Standard"
   },
   {
-    "source": "",
-    "author": "ClayUndead",
-    "title": "Not so happy Isekai.",
+    "scope": "Standard",
+    "desc": "Contractor, you are being hired for a very special mission. The Company is a large and expansive conglomerate that owns a good and hefty chunk of the Multiverse. Sadly, it seems that an upstart competitor didn't get the message to not fuck with us. A world within our domain was poached by some \"Grand Isekai Service\" and gifted to some pleb for an OP Isekai. We want you to ruin it. Don't get me wrong, we send plenty of randos on OP Isekai, but we need to make an example. You will Substitute or Extra Into a setting and work to drive them to us, where we can use his para-spacial connection to link into Grand Isekai Service's servers and take them down from the inside. As for your target, all we know is that they have a Standard Isekai Gamer System(TM), meaning that they're gonna be more powerful the more time goes on.",
     "conditions": [
       {
         "value": "You must Substitute or Extra Into the setting. If this is not your Chargen world Papertrail would suffice but we would recommend not letting the Target see you."
@@ -1435,41 +2193,39 @@
         "value": "Do not kill them. We need them alive. If you kill them this mission is forfeit."
       }
     ],
-    "desc": "Contractor, you are being hired for a very special mission. The Company is a large and expansive conglomerate that owns a good and hefty chunk of the Multiverse. Sadly, it seems that an upstart competitor didn't get the message to not fuck with us. A world within our domain was poached by some \"Grand Isekai Service\" and gifted to some pleb for an OP Isekai. We want you to ruin it. Don't get me wrong, we send plenty of randos on OP Isekai, but we need to make an example. You will Substitute or Extra Into a setting and work to drive them to us, where we can use his para-spacial connection to link into Grand Isekai Service's servers and take them down from the inside. As for your target, all we know is that they have four essences, two of which we don't know. The two we do know are The Binder and The Isekai Hero.",
-    "uid": "ICigW",
-    "image": "https://i.imgur.com/eu3lacE.jpg",
-    "reward": "250 Credits",
     "budget": 1,
+    "reward": "250 Credits",
+    "uid": "ICigW",
     "objectives": [
       {
-        "type": "Credits",
         "reward": "100 Credits",
-        "value": "Get them to break without physically binding the Target."
+        "value": "Get them to break without physically binding the Target.",
+        "type": "Credits"
       },
       {
         "reward": "25 Credits",
-        "value": "Seduce or Rape the Target's favorite Waifu/Husbando.",
-        "type": "Credits"
-      },
-      {
-        "reward": "50 Credits",
-        "value": "Convince the Target's new friends to turn on them.",
-        "type": "Credits"
-      },
-      {
-        "value": "Frame them for a crime.",
-        "type": "Perks",
-        "reward": "Covert Talent and Talent Sharing(Covert) OR 20 Credits"
-      },
-      {
-        "reward": "100 Credits",
-        "value": "Successfully seduce the Target without your Bindings or Lures and break their heart.",
-        "type": "Credits"
-      },
-      {
         "type": "Credits",
+        "value": "Seduce or Rape the Target's favorite Waifu/Husbando."
+      },
+      {
+        "value": "Convince the Target's new friends to turn on them.",
+        "type": "Credits",
+        "reward": "50 Credits"
+      },
+      {
+        "type": "Perks",
+        "reward": "Covert Talent and Talent Sharing(Covert) OR 20 Credits",
+        "value": "Frame them for a crime."
+      },
+      {
+        "value": "Successfully seduce the Target without your Bindings or Lures and break their heart.",
+        "type": "Credits",
+        "reward": "100 Credits"
+      },
+      {
         "value": "Rape the Target and make them enjoy it.(Hentai powers are recommended)",
-        "reward": "25 Credits"
+        "reward": "25 Credits",
+        "type": "Credits"
       },
       {
         "type": "Credits",
@@ -1478,8 +2234,8 @@
       },
       {
         "reward": "Communication and Performance Talent OR 20 Credits",
-        "value": "Convince the Target that their new friends genuinely hate them.",
-        "type": "Perks"
+        "type": "Perks",
+        "value": "Convince the Target that their new friends genuinely hate them."
       },
       {
         "value": "Never be outed as an entity not from the setting.",
@@ -1487,9 +2243,12 @@
         "type": "Credits"
       }
     ],
-    "rewardType": "Credits",
+    "source": "",
     "loca": "Generic",
-    "scope": "Standard"
+    "author": "ClayUndead",
+    "title": "Not so happy Isekai.",
+    "image": "https://i.imgur.com/eu3lacE.jpg",
+    "rewardType": "Credits"
   },
   {
     "image": "https://i.imgur.com/Da6C8dc.jpg",
@@ -4243,35 +5002,34 @@
   },
   {
     "rewardType": "Credits",
-    "title": "Tutorial",
     "objectives": [
       {
-        "type": "Credits",
         "value": "Have a threesome",
+        "type": "Credits",
         "reward": "10"
       },
       {
+        "type": "Perks",
         "reward": "Free Binding/Lure Perk at 20 Credits or less",
-        "value": "Capture and Sell a T4+ Target",
-        "type": "Perks"
+        "value": "Capture and Sell a T4+ Target"
       },
       {
+        "value": "Interact with plot relevant characters",
         "type": "Other",
-        "reward": "Gain specific additional Paper Trail perk for world adding you to the plot.",
-        "value": "Interact with plot relevant characters"
+        "reward": "Gain specific additional Paper Trail perk for world adding you to the plot."
       },
       {
+        "type": "Credits",
         "value": "Break a major law and don't get caught",
-        "reward": "20",
-        "type": "Credits"
+        "reward": "20"
       }
     ],
-    "author": "Darkarma",
-    "reward": "10 Credits",
-    "scope": "Standard",
+    "image": "https://i.imgur.com/i91lHMP.png",
+    "scope": "Quick",
     "desc": "Welcome Contractor. Today is the first day of the rest of your life under the Company's umbrella. As such we've provided you with a basic tutorial quest.\nExplore your Starter World for the day!\nCatch and/or explore your first Waifu!\nLearn how to use the resources granted to you!\nDo something exciting!",
     "loca": "Generic",
     "budget": 0,
+    "title": "Tutorial",
     "source": "",
     "conditions": [
       {
@@ -4284,7 +5042,8 @@
         "value": "Cannot be repeated."
       }
     ],
-    "image": "https://i.imgur.com/i91lHMP.png",
+    "reward": "10 Credits",
+    "author": "Darkarma",
     "uid": "hoSeC"
   },
   {
@@ -4921,19 +5680,11 @@
     "uid": "kDddH"
   },
   {
-    "title": "The Halo Experiance",
-    "rewardType": "Other",
-    "source": "",
-    "loca": "Halo",
-    "reward": "Your very own Halo Ringworld",
-    "conditions": [
-      {
-        "value": "Must be tier 5 or lower"
-      }
-    ],
-    "image": "https://www.gameinformer.com/sites/default/files/2020/11/11/0f496586/1594986105_353610_1594986382_noticia_normal.jpg",
-    "desc": "Love the Campaign of the Halo series, wish you could be there. Well now you can starting From Reach, Halo Ce, 2 3 4 5, and Infinite help the Master Cheif and experience the Halo Campaigns",
+    "desc": "Love the Campaign of the Halo series, wish you could be there. Well now you can starting From Reach, Halo Ce, 2 3 4 5, and Infinite help the Master Chief and experience the Halo Campaigns",
+    "scope": "Grand",
+    "uid": "qpTSl",
     "author": "SittingBear",
+    "source": "",
     "objectives": [
       {
         "type": "Credits",
@@ -4941,14 +5692,14 @@
         "reward": "50"
       },
       {
-        "value": "Complete the campaign as a ODST!",
         "type": "Credits",
+        "value": "Complete the campaign as a ODST!",
         "reward": "100"
       },
       {
         "value": "Complete the Campaign as a Marine!",
-        "reward": "500",
-        "type": "Credits"
+        "type": "Credits",
+        "reward": "500"
       },
       {
         "value": "Complete the campaign as a Civilian!",
@@ -4956,9 +5707,17 @@
         "reward": "1000"
       }
     ],
-    "scope": "Grand",
+    "rewardType": "Other",
+    "image": "https://www.gameinformer.com/sites/default/files/2020/11/11/0f496586/1594986105_353610_1594986382_noticia_normal.jpg",
+    "conditions": [
+      {
+        "value": "Must be tier 5 or lower"
+      }
+    ],
+    "reward": "Your very own Halo Ringworld",
+    "loca": "Halo",
     "budget": 20,
-    "uid": "qpTSl"
+    "title": "The Halo Experience"
   },
   {
     "image": "https://wallpapercave.com/wp/wp5320220.jpg",
