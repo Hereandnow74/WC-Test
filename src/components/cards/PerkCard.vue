@@ -39,6 +39,7 @@
         :bought-list="savedPerk.complex"
         :placeholder="perk.anything"
         class="text-base mx-1 w-42"
+        :do-not-close-list="true"
         @click.stop
       />
       <NumberInput
@@ -163,6 +164,7 @@ const complex = reactive({
   target: '',
   flavor: '',
   count: 0,
+  cost: props.perk.cost,
 })
 
 // There a bug somewhere in this aproach, need to clear all data before it can be used when buy/modify/sell/buy scenario
@@ -204,6 +206,8 @@ function changeTarget(target: {uid: number; name: string}) {
   sendPerk()
 }
 
+watch(() => complex.flavor, () => sendPerk())
+
 function sendPerk() {
   const obj = filterObject(perkToSave)
   if (props.perk.complex && (complex.count || complex.flavor || complex.target)) {
@@ -228,6 +232,9 @@ function sendPerk() {
       perkToSave.count = obj.count
     }
     obj.cost = cost.value * Math.min(obj.count, props.perk.max || Infinity)
+    // A clutch for Talent Sharing bug
+    if (obj.uid === 'xhM0D')
+      obj.cost = obj.complex.reduce((a, x) => a += x.cost !== undefined ? x.cost : cost.value, 0)
   }
   // Set count to 0 to delete perk if clicked twice
   if (props.savedPerk.count === obj.count && obj.count > 0)

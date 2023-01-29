@@ -201,7 +201,7 @@ export const symbioteBinding: PerkFull[] = [
     image: 'https://cdn.discordapp.com/attachments/925963686433132644/1043498457077383168/ss.png',
     complex: 'target',
     freebies: {
-      talentPerks: [{ title: 'Everlasting Talent', cost: 0, count: 1 }, { title: 'Body Tune-Up', cost: 0, count: 1 }, { title: 'Athletic Talent', cost: 0, count: 1 }, { title: 'Martial Talent', cost: 0, count: 1 }, { title: 'Wild Talent', cost: 0, count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Martial Talent' }], count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Wild Talent' }], count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Athletic Talent' }], count: 1 }],
+      talentPerks: [{ title: 'Everlasting Talent', cost: 0, count: 1 }, { title: 'Body Tune-Up', cost: 0, count: 1 }, { title: 'Athletic Talent', cost: 0, count: 1 }, { title: 'Martial Talent', cost: 0, count: 1 }, { title: 'Wild Talent', cost: 0, count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Martial Talent', cost: 0 }], count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Wild Talent', cost: 0 }], count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Athletic Talent', cost: 0 }], count: 1 }],
       defensePerks: [{ title: 'Body Defense', cost: 0, count: 1 }, { title: 'Wild Defense', cost: 0, count: 1 }, { title: 'Environmental Defense', cost: 0, count: 1 }],
     },
     desc: `
@@ -580,7 +580,7 @@ export const symBuildings: PerkFull[] = [
     type: 'Upgrade (Lair)',
     image: 'https://cdnb.artstation.com/p/assets/images/images/001/486/647/large/david-levy-formic-planetsurface-abovefactory-a-02.jpg?1447263416',
     freebies: {
-      talentPerks: [{ title: 'Psychic Talent', cost: 0, count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Psychic Talent' }], count: 1 }],
+      talentPerks: [{ title: 'Psychic Talent', cost: 0, count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Psychic Talent', cost: 0 }], count: 1 }],
       defensePerks: [],
     },
     desc: `

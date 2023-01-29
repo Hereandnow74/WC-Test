@@ -713,7 +713,7 @@ DLCotherControls.push({
   image: 'https://cdn.discordapp.com/attachments/925963686433132644/1015230828122472459/HSSM.webp',
   cost: 120,
   freebies: {
-    talentPerks: [{ title: 'Body Tune-Up', cost: 0, count: 1 }, { title: 'Martial Talent', cost: 0, count: 1 }, { title: 'Science Talent', cost: 0, count: 1 }, { title: 'Soul Talent', cost: 0, count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Martial Talent' }], count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Soul Talent' }], count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Science Talent' }], count: 1 }],
+    talentPerks: [{ title: 'Body Tune-Up', cost: 0, count: 1 }, { title: 'Martial Talent', cost: 0, count: 1 }, { title: 'Science Talent', cost: 0, count: 1 }, { title: 'Soul Talent', cost: 0, count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Martial Talent', cost: 0 }], count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Soul Talent', cost: 0 }], count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Science Talent', cost: 0 }], count: 1 }],
     defensePerks: [{ title: 'Wild Defense', cost: 0, count: 1 }, { title: 'Body Defense', cost: 0, count: 1 }],
   },
   desc: `All those synced to the Grail System get further boosted to be fully on the level of at least a Low Class Servant. You and your retinue gain the Body Tune-Up, Martial, Science, and Soul Talents. (Take these four perks, plus Talent Sharing (Martial), Talent Sharing (Science) and Talent Sharing (Soul), for free.) You also gain Body, and Wild Defenses for free as well. 

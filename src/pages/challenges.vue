@@ -65,6 +65,7 @@ function challengeAvailable(challenge: any) {
 }
 
 function pickChallenge(challenge: any) {
+  if (!challengeAvailable(challenge)) return
   const ind = findIndex(activeChallenges.value, { title: challenge.title })
   if (ind === -1) {
     activeChallenges.value.push({ title: challenge.title, cost: challenge.cost })

@@ -29,6 +29,9 @@
     <div v-if="challenge.special" class="mx-2">
       Special: <span class="text-purple-500 dark:text-purple-300">{{ challenge.special }}</span>
     </div>
+    <div v-if="challenge.bonus" class="mx-2">
+      Bonus: <span class="text-green-500 dark:text-green-300">{{ `${challenge.bonus * 100}% (${WORLD_RATINGS[startingWorld.rating].budget * challenge.bonus})` }}</span>
+    </div>
     <div>
       <Desc :desc="challenge.desc" />
       <slot name="underDesc" />
@@ -46,7 +49,7 @@
 </template>
 
 <script lang='ts' setup>
-import { PLACEHOLDER_IMAGE } from '~/data/constants'
+import { PLACEHOLDER_IMAGE, WORLD_RATINGS } from '~/data/constants'
 import { lazyLoadSingleImg } from '~/logic'
 import { useStore } from '~/store/store'
 
@@ -65,7 +68,7 @@ const props = defineProps({
   },
 })
 
-const { settings } = useStore()
+const { settings, startingWorld } = useStore()
 
 const emit = defineEmits(['pickPerk'])
 

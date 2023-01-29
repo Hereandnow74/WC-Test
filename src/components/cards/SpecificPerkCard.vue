@@ -27,12 +27,6 @@
       class="absolute top-3 right-3 text-gray-200 hover:text-blue-400 cursor-pointer mix-blend-difference"
       @click.stop="() => emit('changeModalImage', waifuPerk.image)"
     />
-    <Table
-      v-if="waifuPerk.title === 'Lord Camelot'"
-      class="float-right m-2"
-      :headers="['Credits Paid','Saint Quartz']"
-      :rows="gachaTable"
-    />
     <h3 class="flex gap-1 flex-wrap text-lg font-bold relative">
       {{ waifuPerk.title }}
       <Select
@@ -89,6 +83,12 @@
       <span v-if="waifuPerk.discount"><span class="font-bold">Refund:</span> {{ waifuPerk.discount }}</span>
       <span v-if="waifuPerk.tier"><span class="font-bold">Become:</span> T{{ waifuPerk.tier }}</span>
     </div>
+    <Table
+      v-if="waifuPerk.title === 'Lord Camelot'"
+      class="float-right m-2"
+      :headers="['Credits Paid','Saint Quartz']"
+      :rows="gachaTable"
+    />
     <Desc :desc="waifuPerk.desc" class="p-0" />
   </div>
 </template>

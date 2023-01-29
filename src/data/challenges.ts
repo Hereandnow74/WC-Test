@@ -5,7 +5,7 @@ import { useStore } from '~/store/store'
 
 export const challengesDesc = `
 <p>Challenges should be picked after you pick the World but before you make any other purchases.
-Challenges are not a part of a canon Waifu Catalog so you have more freedom in interpreting them or proposing new ones though 'Propose Perk' button.</p>
+Challenges are not a part of a canon Waifu Catalog so you have more freedom in interpreting them or proposing new ones though 'Propose Perk' button or on <a href="https://discord.gg/cZf4U5rmPV" class="text-amber-500 hover:underline">Interactive's Discord server</a>.</p>
 <p>You can pick a several challenges at the same time if they don't conflict with each other.</p>
 `
 
@@ -130,6 +130,7 @@ export const challenges = [
     image: 'https://cdn.discordapp.com/attachments/925963686433132644/993233703893475520/05d2405d8ecfce5206766d28c6a0f630.jpg',
     special: 'Chargen only. May not be taken on DR11.',
     cost: 0,
+    bonus: 1,
     desc: `
     <p>You are incredibly lucky! You receive a unique offer from our company - an exciting journey through the multiverse.</p>
     <p>Only today you can choose any starting world and get +100% to its starting budget!</p>
@@ -150,6 +151,7 @@ export const challenges = [
     image: 'https://cdn.discordapp.com/attachments/925963686433132644/993233300678246420/12_Universes.webp',
     special: 'Chargen only. May not be taken on DR11.',
     cost: 0,
+    bonus: 0.5,
     desc: `
       You have been chosen by the higher-ups to try something a bit different. The company has noted the long time it takes for contractors to choose their starting world. As this decreases processing efficiency, a new proposition was accepted to have the ■■■■■■■■ department select it at random. Newly accepted contractors will therefore have their starting world left entirely up to chance. In return, the company will provide  50% of the selected world's budget as a bonus.
     `,
@@ -160,7 +162,7 @@ export const challenges = [
         if (world.condition) startingWorld.value.condition = world.condition
         baseBudget.value = (WORLD_RATINGS[world.rating]?.budget || 0) * 1.5
       },
-      remove: () => baseBudget.value = baseBudget.value / 1.5,
+      remove: () => baseBudget.value = (WORLD_RATINGS[startingWorld.value.rating]?.budget || 0),
     },
   },
   {
@@ -195,16 +197,17 @@ export const challenges = [
     image: 'https://i.imgur.com/QFV6MEdl.jpg',
     special: 'Chargen Only, DR6 or higher, May not be taken on DR11.',
     cost: 0,
+    bonus: 0.8,
     desc: `
     For those who wish to either die as quickly as possible or rise to the greatest of heights, the company offers to forgo any company-provided defenses. No immunities, not even the basic resistances. Even the greatest of Chad's aren’t this suicidal. The only protections you will ever be able to acquire are those you gain along your journey or from the powersets you decide to acquire. As compensation for the <span class="line-through">hell</span> fun you are walking into, receive 80% of your starting world's budget as a bonus.
     `,
     effect: {
       set: () => {
-        baseBudget.value = baseBudget.value * 1.8
+        baseBudget.value += (WORLD_RATINGS[startingWorld.value.rating].budget || 0) * 0.8
         defenseWatcher = watch(() => defensePerks.value.length, () => defensePerks.value.length && (defensePerks.value = []))
       },
       remove: () => {
-        baseBudget.value = baseBudget.value / 1.8
+        baseBudget.value -= (WORLD_RATINGS[startingWorld.value.rating].budget || 0) * 0.8
         if (defenseWatcher) defenseWatcher()
       },
     },
@@ -230,13 +233,14 @@ export const challenges = [
     image: 'https://i.imgur.com/r9pZJ5wl.jpg',
     special: 'Chargen Only.',
     cost: 0,
+    bonus: 0.4,
     desc: `
     Sometimes, not even the company manages to keep perfect track of every little detail in its infinite roster of contractors. Unfortunately for you, either due to an error in the system, some interference from the higher-ups, or just poor luck, one tiny little detail in your processing procedure was screwed up. It seems your memories were not carried over.
     <p>Upon your arrival to your chosen world, you will have no idea who, what or where are you. All your knowledge of fictional realities, any knowledge of the perks you have chosen, and why there are cute girls following you has been lost with no chance of recovery. As compensation for this minor error, the company will issue 40% of your starting world's budget as a bonus. </p>
     `,
     effect: {
-      set: () => baseBudget.value = baseBudget.value * 1.4,
-      remove: () => baseBudget.value = baseBudget.value / 1.4,
+      set: () => baseBudget.value += (WORLD_RATINGS[startingWorld.value.rating].budget || 0) * 0.4,
+      remove: () => baseBudget.value -= (WORLD_RATINGS[startingWorld.value.rating].budget || 0) * 0.4,
     },
   },
   {
@@ -247,14 +251,164 @@ export const challenges = [
     image: 'https://i.imgur.com/XyHjUKDl.jpg',
     special: 'Chargen Only.',
     cost: 0,
+    bonus: 0.2,
     desc: `
     It seems that you won’t be getting the omniversal world-hopping adventure you were promised. Your starting world will now be the one and only world you will ever visit. No hopper power, company perk, or waifu will be able to help you leave the world you first chose to appear in unless it's to visit your Demiplane or the Green Eye Orb Markets.
     <p>You are fortunately granted some extra leeway in worlds composed of multiple universes, as in this case you are able to travel between them without any complications. If however, your world canonically does not have any alternate universes or is not part of a multiverse, perks or powers like Blank Slate will not work. Your unfortunate circumstances grant you an extra 20% of your starting world's budget as a bonus from the company.</p>
     `,
     effect: {
-      set: () => baseBudget.value = baseBudget.value * 1.2,
-      remove: () => baseBudget.value = baseBudget.value / 1.2,
+      set: () => baseBudget.value += (WORLD_RATINGS[startingWorld.value.rating].budget || 0) * 0.2,
+      remove: () => baseBudget.value -= (WORLD_RATINGS[startingWorld.value.rating].budget || 0) * 0.2,
     },
+  },
+  {
+    uid: 'ZpyEq',
+    dlc: 'DepressedAlucard',
+    dlclink: 'https://docs.google.com/document/d/18LaGf5cy9hDA7ZAInhxVJoTocWfeLo0PI_msQsFu76Q/edit#',
+    title: 'No Continues',
+    image: 'https://i.imgur.com/u0mwviV.jpg',
+    special: 'Chargen Only.',
+    cost: 0,
+    bonus: 0.8,
+    desc: `
+    There will be no second chances. No resurrections, no revival countdown timer, no mechanisms to escape death. When you die, that's it. One death, one slip up, and your service under the company ends permanently. And yet, what better thrill is there in life than knowing it might be your last? To maximize your chances of not dying too quickly, the company is willing to offer you an additional 80% of your world's starting budget. 
+    `,
+    effect: {
+      set: () => baseBudget.value += (WORLD_RATINGS[startingWorld.value.rating].budget || 0) * 0.8,
+      remove: () => baseBudget.value -= (WORLD_RATINGS[startingWorld.value.rating].budget || 0) * 0.8,
+    },
+  },
+  {
+    uid: 'ZpyEq',
+    dlc: 'DepressedAlucard',
+    dlclink: 'https://docs.google.com/document/d/18LaGf5cy9hDA7ZAInhxVJoTocWfeLo0PI_msQsFu76Q/edit#',
+    title: 'Forgetful Hopper',
+    image: 'https://i.imgur.com/CM735ow.jpg',
+    special: 'Chargen Only.',
+    cost: 0,
+    bonus: 0.6,
+    desc: `
+    For some mysterious reason, perhaps because of your retinue of hot waifu, your brain will fry upon each arrival to a new world, as all knowledge of the world, your retinue, and your powers disappear. Left completely clueless as to what is going on, it will be up to your waifu or yourself to restore that which you have lost. No powers or abilities will help fast-track this process, as only time and care will help you recover. The company recognizes the troubles you will face and provides you with a bonus of 60% of your starting world's budget to prepare. 
+    `,
+    effect: {
+      set: () => baseBudget.value += (WORLD_RATINGS[startingWorld.value.rating].budget || 0) * 0.6,
+      remove: () => baseBudget.value -= (WORLD_RATINGS[startingWorld.value.rating].budget || 0) * 0.6,
+    },
+  },
+  {
+    uid: 'ZpyEq',
+    dlc: 'DepressedAlucard',
+    dlclink: 'https://docs.google.com/document/d/18LaGf5cy9hDA7ZAInhxVJoTocWfeLo0PI_msQsFu76Q/edit#',
+    title: 'Worthy Opponent',
+    image: 'https://i.imgur.com/wFamtCG.jpg',
+    cost: 0,
+    desc: `
+    Someone in the company really must hate you. You must have failed to make a good impression. From now on, whatever world you go to, someone or something will begin to act against you. Perhaps you will know them, perhaps not, but whatever the case, they will be there. Your efforts will be undermined, and the safety of you and your retinue will be at risk as this foe will constantly antagonize you, seeking your end. 
+    <p>This will be no simple adversary you can easily capture, no comic book villain or weak rival. Expect to be pushed beyond your capabilities, and that of your retinue as well. Whether you are an ordinary human or an eldritch entity does not matter as your enemy will be just as if not more powerful than you. You will need everything you have, all of your aces, all your tricks, and at times, the strength of the entire world to defeat them. Adversaries do not run from each other, and as such, you too will not be able to leave a world until your nemesis has been defeated. </p>
+    `,
+  },
+  {
+    uid: 'ZpyEq',
+    dlc: 'DepressedAlucard',
+    dlclink: 'https://docs.google.com/document/d/18LaGf5cy9hDA7ZAInhxVJoTocWfeLo0PI_msQsFu76Q/edit#',
+    title: 'Insider information',
+    image: 'https://i.imgur.com/5OFyYb1.jpg',
+    cost: 0,
+    desc: `
+    You really must have screwed up. There's pretty much no other explanation as to why this would happen. Somehow your opponent knows that which he should not and has information about your status as a contractor and the company as a whole. Expect your opponent to now use this knowledge to his best advantage when preparing his next move against you, either to discover more about you and your retinue or put you down for good. 
+    `,
+    whitelist: ['Worthy Opponent'],
+  },
+  {
+    uid: 'ZpyEq',
+    dlc: 'DepressedAlucard',
+    dlclink: 'https://docs.google.com/document/d/18LaGf5cy9hDA7ZAInhxVJoTocWfeLo0PI_msQsFu76Q/edit#',
+    title: 'Time Bomb Situation',
+    image: 'https://i.imgur.com/SUVHmo3.jpg',
+    cost: 0,
+    desc: `
+    This is getting ridiculous. Whatever you did to deserve this must have been something truly terrible. Your conflict with your opponent now has a time limit during which you must successfully defeat them. Fail to do so and you, your nemesis, and the entire world you are in will be permanently erased from existence. 
+    <p>The years you have left before your erasure is calculated by taking the danger rating of your world and setting it as an exponent of 10, before proceeding to divide the result by another ten years. Trying to use the knowledge of the upcoming catastrophe against your nemesis will, unfortunately, prove to be useless, as they would rather die than see you live.  </p>
+    `,
+    whitelist: ['Worthy Opponent'],
+  },
+  {
+    uid: 'ZpyEq',
+    dlc: 'DepressedAlucard',
+    dlclink: 'https://docs.google.com/document/d/18LaGf5cy9hDA7ZAInhxVJoTocWfeLo0PI_msQsFu76Q/edit#',
+    title: 'Eternal Rivalry',
+    image: 'https://i.imgur.com/vaMVLnE.jpg',
+    special: 'Chargen Only.',
+    cost: 0,
+    desc: `
+    The company has decided that a competitive environment will lead to greater capture rates amongst contractors. You will enter your starting world with a fellow rival contractor, who has similar to you just begun their adventure. Both of you will be tasked to stop each other's efforts in this and any subsequent world you go to, with a running tally being kept of the winner of each round. 
+    <p>A bonus of 5% of the world's budget is given to both the winner and loser of each round unless the winner is already leading in the overall tally. In this case, only the loser of the round receives the bonus. The winner of each round is given the choice to select the next world both contractors will be going to. Directly killing a rival will lead to a round's immediate termination, locking you out of the world and transporting you to the next. The loser of the previous round and any of his retinue members killed during it will be revived for the next. If your current rival dies via a third party, the tally is reset and another contractor of an equal power level to yours will take his place.</p>
+    `,
+  },
+  {
+    uid: 'ZpyEq',
+    dlc: 'DepressedAlucard',
+    dlclink: 'https://docs.google.com/document/d/18LaGf5cy9hDA7ZAInhxVJoTocWfeLo0PI_msQsFu76Q/edit#',
+    title: 'Random Encounters',
+    image: 'https://i.imgur.com/tHg2brU.jpg',
+    cost: 0,
+    desc: `
+    The Omniverse is a large place, though it can be made a bit smaller. While the company does not typically permit Unregulated PvP with other contractors in the wild, it seems it will now turn a blind eye when it comes to you. You are now many times more likely to encounter other enemy contractors throughout your travels in different worlds. The worst of the worst, these contractors will seek naught but your death and the enslavement of your retinue. Perhaps turning the tables on them will allow you to find a benefit in your new circumstances.
+    `,
+  },
+  {
+    uid: 'ZpyEq',
+    dlc: 'DepressedAlucard',
+    dlclink: 'https://docs.google.com/document/d/18LaGf5cy9hDA7ZAInhxVJoTocWfeLo0PI_msQsFu76Q/edit#',
+    title: 'Rebellious Brats',
+    image: 'https://i.imgur.com/OZZnWQY.jpg',
+    special: 'Chargen Only.',
+    cost: 0,
+    bonus: 0.1,
+    desc: `
+    There is beauty in seeing your children follow in your footsteps is there not? Unfortunately for you, it seems that any offspring you might have will one day attempt to take your place, killing you to become contractors in their own right. Whether this is because of bad parenting, teenage rebellion, or inborn issues won't matter, as it will happen and when it does, you best be prepared. Your descendants will also be immune to the effects of any bindings you might possess. Take 10% of your starting world's budget for your troubles. 
+    `,
+    effect: {
+      set: () => baseBudget.value += (WORLD_RATINGS[startingWorld.value.rating].budget || 0) * 0.1,
+      remove: () => baseBudget.value -= (WORLD_RATINGS[startingWorld.value.rating].budget || 0) * 0.1,
+    },
+  },
+  {
+    uid: 'ZpyEq',
+    dlc: 'DepressedAlucard',
+    dlclink: 'https://docs.google.com/document/d/18LaGf5cy9hDA7ZAInhxVJoTocWfeLo0PI_msQsFu76Q/edit#',
+    title: 'Part-Timer',
+    image: 'https://i.imgur.com/Gymb62D.jpg',
+    special: 'Chargen Only.',
+    cost: 0,
+    desc: `
+    It seems that you are unable to fully accept your status as a company contractor. This usually happens when you have something strong tying you back to whatever universe you were taken from, preventing you from accepting your new reality. This unfortunately means that you will no longer be able to benefit from being a full-time company contractor and will be assigned to a role as a part-timer with a flexible schedule instead. 
+    <p>You will be returned to your home universe, and tasked with choosing three working days per week during which you can travel the omniverse and perform your duties as a contractor. At the end of each day, unless the next is also a working day, you will be transported back to your home universe, stripped of any abilities, items, or companions you have gathered during your adventure. Unless healed, any injuries or conditions accumulated during your adventure will be carried over at the end of a working day. </p>
+    `,
+  },
+  {
+    uid: 'ZpyEq',
+    dlc: 'DepressedAlucard',
+    dlclink: 'https://docs.google.com/document/d/18LaGf5cy9hDA7ZAInhxVJoTocWfeLo0PI_msQsFu76Q/edit#',
+    title: 'Just a Dream',
+    image: 'https://i.imgur.com/2n3UayU.jpg',
+    cost: 0,
+    desc: `
+    Your ability to handle your new circumstances is even worse than first believed, as you are simply unable to bear the fact that the company is real. You are therefore limited in experiencing your journey as a contractor only as a dream each time your body in your home universe falls asleep. While this, unfortunately, makes you unfit to capture waifu as a traditional contractor, the company still has a use for you, as it has been found that simulated contractor journeys are a viable source of research data to devise new company experiences. 
+    `,
+    whitelist: ['Part-Timer'],
+  },
+  {
+    uid: 'ZpyEq',
+    dlc: 'DepressedAlucard',
+    dlclink: 'https://docs.google.com/document/d/18LaGf5cy9hDA7ZAInhxVJoTocWfeLo0PI_msQsFu76Q/edit#',
+    title: 'Lucid Reality',
+    image: 'https://i.imgur.com/G7Gtlps.jpg',
+    cost: 0,
+    desc: `
+    Your worldview has shattered as you lose the ability to understand what is real and what is not. Are you an ordinary being or a contractor with  powerful abilities and a retinue of beautiful waifu? Is this the world you are walking in that of the mundane or the supernatural? Is your companion an actual living person or just a figment of your imagination? The looming monster about to attack you is not a threat, right? The company can unfortunately no longer do anything for you, as only you are now able to understand what reality you are living in. 
+    `,
+    whitelist: ['Just a Dream'],
   },
 ]
 

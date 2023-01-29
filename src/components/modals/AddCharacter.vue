@@ -9,7 +9,7 @@
         </Note>
         <div class="flex gap-2">
           <Input v-model.trim="name" placeholder="Name" class="flex-grow" :error-message="errors.name" />
-          <NumberInput v-model="tier" label="Tier" :max="11" :error-message="errors.tier" />
+          <Tiers v-model="tier" label="Tier" :max="11" :error-message="errors.tier" />
         </div>
         <div class="flex gap-2 items-center">
           <InputWithSearch

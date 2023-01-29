@@ -3,8 +3,8 @@
     <teleport to="nav">
       <div class="flex text-base px-2 justify-center w-full bg-white dark:bg-[#121212] z-20">
         <Navigation
-          :items="['intensity', 'pvp', 'orbs']"
-          :titles="['Modes', 'Continuous PvP', 'Invasion PvP']"
+          :items="['intensity', 'pvp', 'orbs', 'tournament']"
+          :titles="['Modes', 'Continuous PvP', 'Invasion PvP', 'Tournament PvP ']"
           prefix="intensity"
         />
       </div>

@@ -553,7 +553,7 @@ fullHeritagesDLC.push({
   cost: 20,
   freebies: {
     defensePerks: [{ title: 'Stress Defense', cost: 0, count: 1 }],
-    talentPerks: [{ title: 'Covert Talent', cost: 0, count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Athletic Talent' }, { flavor: 'Covert Talent' }, { flavor: 'Performance Talent' }], count: 3 }],
+    talentPerks: [{ title: 'Covert Talent', cost: 0, count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Athletic Talent', cost: 0 }, { flavor: 'Covert Talent', cost: 0 }, { flavor: 'Performance Talent' }], count: 3 }],
   },
   tree: 'Mastermind',
   desc: `Your Estate gains priority access to temp-work agencies and job boards. This allows you to gain a new category for your Retinue, Minions. They gain about a third of the benefits of any talents, perks, or Defenses as anyone in your retinue. While they have negligible value to the company as captures, in terms of abilities they are roughly equal to a mundane Extra insert for the local world. If you have a Hideout they can contribute Devotion to improve it, though only a twentieth as well as a normal retinue member. They are recruited by the handful every week, less on holidays but more right after, depending entirely on the world's population density and ease of movement.
@@ -602,7 +602,7 @@ fullHeritagesDLC.push({
   image: 'https://i.imgur.com/kUKW1nCl.jpg',
   cost: 20,
   freebies: {
-    talentPerks: [{ title: 'Communication Talent', cost: 0, count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Science Talent' }, { flavor: 'Communication Talent' }, { flavor: 'Engineering Talent' }], count: 3 }],
+    talentPerks: [{ title: 'Communication Talent', cost: 0, count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Science Talent', cost: 0 }, { flavor: 'Communication Talent', cost: 0 }, { flavor: 'Engineering Talent', cost: 0 }], count: 3 }],
   },
   tree: 'Mastermind',
   desc: `Your Estate develops connections to tech firms, employment groups, and state archives. From these sources you gain a new category of Minions specialized in academics, research, and development, Functionaries. They will mostly help you discover obscure local technologies by datamining patent offices and university grants, but may occasionally come up with new procedures or inventions on their own.
@@ -622,7 +622,7 @@ fullHeritagesDLC.push({
   image: 'https://i.imgur.com/IFqeWGdl.jpg',
   cost: 50,
   freebies: {
-    talentPerks: [{ title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Aesthetic Talent' }, { flavor: 'Blessed Talent' }, { flavor: 'Land Talent' }], count: 3 }],
+    talentPerks: [{ title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Aesthetic Talent', cost: 0 }, { flavor: 'Blessed Talent', cost: 0 }, { flavor: 'Land Talent', cost: 0 }], count: 3 }],
     defensePerks: [{ title: 'Mind Defense', cost: 0, count: 1 }],
   },
   tree: 'Mastermind',
@@ -642,7 +642,7 @@ fullHeritagesDLC.push({
   image: 'https://i.imgur.com/WUKeoTul.jpg',
   cost: 20,
   freebies: {
-    talentPerks: [{ title: 'Martial Talent', cost: 0, count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Martial Talent' }, { flavor: 'Wild Talent' }], count: 2 }],
+    talentPerks: [{ title: 'Martial Talent', cost: 0, count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Martial Talent', cost: 0 }, { flavor: 'Wild Talent', cost: 0 }], count: 2 }],
   },
   tree: 'Mastermind',
   desc: `Your Estate is expanded to interact with the more martial elements of the local economy, which lets you recruit Minions that are specifically suited for combat. They are generally as good as fully trained soldiers, and may even be former law enforcement, local combat veterans, disenfranchised criminals, D-list martial artists and sportsmen, or down on their luck mercenaries. These Mooks are fully willing and capable of engaging in combat on your behalf, though despite their apparent skill you may find their performance lacking when you aren't paying attention.
@@ -682,7 +682,7 @@ fullHeritagesDLC.push({
   image: 'https://i.imgur.com/DzYATLyl.jpg',
   cost: 100,
   freebies: {
-    talentPerks: [{ title: 'Soul Talent', cost: 0, count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Psychic Talent' }, { flavor: 'Soul Talent' }], count: 2 }],
+    talentPerks: [{ title: 'Soul Talent', cost: 0, count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Psychic Talent', cost: 0 }, { flavor: 'Soul Talent', cost: 0 }], count: 2 }],
     defensePerks: [{ title: 'Creature Defense', cost: 0, count: 1 }, { title: 'Possession Defense', cost: 0, count: 1 }, { title: 'Corruption Defense', cost: 0, count: 1 }],
   },
   tree: 'Mastermind',

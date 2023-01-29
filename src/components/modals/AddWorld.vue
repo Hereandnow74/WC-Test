@@ -40,7 +40,7 @@
               v-model.number="condition.rating"
               label="Rating"
               :min="1"
-              :max="11"
+              :max="10"
               :error-message="errors[`condition[${i}].rating`]"
             />
             <div
@@ -96,12 +96,12 @@ const { userWorlds, localUserWorlds } = useStore()
 const schema = toFormValidator(
   zod.object({
     worldName: zod.string().nonempty('World name is required'),
-    rating: zod.number().min(1, { message: 'Minimum World rating is 1' }).max(11, { message: 'Maximum World level is 11' }),
+    rating: zod.number().min(1, { message: 'Minimum World rating is 1' }).max(10, { message: 'Maximum World level is 10' }),
     image: zod.string().url({ message: 'Must be a valid URL' }).max(256, { message: 'Maximum length is 256 chars' }).optional().or(zod.literal('')),
     additional: zod.string(),
     condition: zod.object({
       name: zod.string().nonempty('Condition is required'),
-      rating: zod.number().min(1, { message: 'Minimum World rating is 1' }).max(11, { message: 'Maximum World level is 11' }),
+      rating: zod.number().min(1, { message: 'Minimum World rating is 1' }).max(10, { message: 'Maximum World level is 10' }),
     }).array(),
   }),
 )

@@ -5,6 +5,7 @@ import { DLCRides, rides } from './rides'
 import { homes, demiplane, dungeon } from './demdun'
 import { patrons } from './patronsRework'
 import { fullHeritagesDLC } from './heritageDLC'
+import { tournamentPerks } from './tournamentDLC'
 import { intensity, intensityPvP, invasionPvP } from '~/data/intensity'
 import { origin } from '~/data/origin'
 import { bindings, lures, lureExpansions, otherControls } from '~/data/binding'
@@ -173,7 +174,7 @@ export const waifuTags = {
   ip: { tag: 'Mind Manipulator', category: 'Powers', short: 'ip', effect: '', desc: 'Have superpower that can manipulate minds.', color: 'bg-[#61457d]' },
   bk: { tag: 'Bodyjack', category: 'Powers', short: 'bk', effect: '', desc: 'Has power to bodyjacking others.', color: 'bg-[#631900]' },
   ih: { tag: 'Instant Death', category: 'Powers', short: 'ih', effect: '', desc: 'Is known for inflicting instant death (conceptual one)', color: 'bg-gradient-to-r to-green-500 from-dark-500' },
-  sl: { tag: 'Social', category: 'Other', short: 'sl', effect: '', desc: 'Is known to be good with people.', color: 'bg-[#f9ca94] text-black' },
+  sl: { tag: 'Social', category: 'Other', short: 'sl', effect: '', desc: 'Is known to be good with people or experienced in interacting/communicating with others', color: 'bg-[#f9ca94] text-black' },
   dn: { tag: 'Divination', category: 'Powers', short: 'dn', effect: '', desc: 'Is known for using divination or other non-technological remote viewing.', color: 'bg-gradient-to-r to-blue-200 via-white from-blue-200 text-black' },
   fn: { tag: 'Fate Manipulation', category: 'Powers', short: 'fn', effect: '', desc: 'Is known as a fate-manipulator.', color: 'bg-gradient-to-t to-red-900 via-red-500 from-red-900' },
   lm: { tag: 'Luck Manipulation', category: 'Powers', short: 'lm', effect: '', desc: 'Is known as a luck-manipulator.', color: 'bg-gradient-to-t to-yellow-900 via-yellow-400 from-yellow-900 text-black' },
@@ -181,7 +182,7 @@ export const waifuTags = {
 
   hp: { tag: 'Hopper', category: 'Other', short: 'hp', effect: '', desc: 'Have a world hopping power', color: 'bg-[#b600e9]' },
   dc: { tag: 'Doctor', category: 'Occupation', short: 'dc', effect: '', desc: 'Trained in medicine', color: 'bg-[#dd1919]' },
-  hl: { tag: 'Healer', category: 'Powers', short: 'hl', effect: '', desc: 'Supernatural healing ability', color: 'bg-[#dd1919]' },
+  hl: { tag: 'Healer', category: 'Powers', short: 'hl', effect: '', desc: 'A being with a supernatural healing ability that can be used on others', color: 'bg-[#dd1919]' },
   lv: { tag: 'Leveling', category: 'Utility', short: 'lv', effect: '', desc: 'Give access to a leveling/class/job system', style: { background: 'linear-gradient(0deg, rgba(182,159,2,1) 0%, rgba(255,222,0,1) 70%)', color: '#000' } },
   dm: { tag: 'Demon', category: 'Race', short: 'dm', effect: '', desc: 'Include devils as well', style: { background: 'linear-gradient(90deg, rgba(148,1,1,1) 0%, rgba(255,0,0,1) 50%, rgba(148,1,1,1) 100%)', color: '#000' } },
   an: { tag: 'Angel', category: 'Race', short: 'an', effect: '', desc: 'A servant of a God, usually with wings though may be abstract figures of Lovecraftian form with countless eyes and on fire.', color: 'bg-[#ffffff] text-black' },
@@ -190,7 +191,7 @@ export const waifuTags = {
   th: { tag: 'Transhuman', category: 'Personality', short: 'th', effect: '', desc: 'Strives to surpass his current limitations and achieve transcendence', style: { background: 'linear-gradient(0deg, rgba(167,0,255,1) 0%, rgba(28,0,245,1) 100%)', color: '#fff' } },
   ot: { tag: 'Outsider', category: 'Other', short: 'ot', effect: '', desc: '', style: { background: 'linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(83,0,214,1) 100%)', color: '#fff' } },
   gd: { tag: 'Deity', category: 'Race', short: 'gd', effect: '', desc: 'A God or Goddess', color: 'bg-[#ffffff] text-black' },
-  rs: { tag: 'Resurrection', category: 'Powers', short: 'rs', effect: '', desc: 'Capable of ressurecting others', color: 'bg-[#ffffff] text-black' },
+  rs: { tag: 'Resurrection', category: 'Powers', short: 'rs', effect: '', desc: 'Is capable of fully ressurecting others', color: 'bg-[#ffffff] text-black' },
   mu: { tag: 'Mutant', category: 'Race', short: 'mu', effect: '', desc: 'A character biologically different from the majority of his species in his world', color: 'bg-[#315be5]' },
   dh: { tag: 'Demi-human', category: 'Race', short: 'dh', effect: '', desc: 'All races that are partially human in appearance yet are not Aliens.', color: 'bg-[#8d4127]' },
   md: { tag: 'Maid', category: 'Occupation', short: 'md', effect: '', desc: '', color: 'bg-gradient-to-t to-gray-400 from-black' },
@@ -202,7 +203,7 @@ export const waifuTags = {
   me: { tag: 'Mage', category: 'Powers', short: 'me', effect: '', desc: 'A being who is experienced in the magical arts.', color: 'bg-teal-500 text-black' },
   cf: { tag: 'Chef', category: 'Occupation', short: 'cf', effect: '', desc: 'A being who is skilled or specializes in culinary arts.', color: 'bg-[#dd8812]' },
   pi: { tag: 'Pirate', category: 'Occupation', short: 'pi', effect: '', desc: '', style: { background: 'linear-gradient(0deg, rgba(4,21,149,1) 0%, rgba(0,120,255,1) 100%)', color: '#fff' } },
-  tc: { tag: 'Teacher', category: 'Occupation', short: 'tc', effect: '', desc: '', style: { background: 'linear-gradient(90deg, rgba(154,134,102,1) 0%, rgba(250,214,156,1) 50%, rgba(154,134,102,1) 100%)', color: '#000' } },
+  tc: { tag: 'Teacher', category: 'Occupation', short: 'tc', effect: '', desc: 'Is known for teaching or mentoring others in proffesional capacity', style: { background: 'linear-gradient(90deg, rgba(154,134,102,1) 0%, rgba(250,214,156,1) 50%, rgba(154,134,102,1) 100%)', color: '#000' } },
   ad: { tag: 'Android', category: 'Race', short: 'ad', effect: '', desc: 'An artificially created sapient being, not to be confused with genetic clones, purely digital artificial intelligence, and similar beings.', color: 'bg-gradient-to-t to-gray-400 from-gray-200 text-black' },
   cb: { tag: 'Cyborg', category: 'Race', short: 'cb', effect: '', desc: 'A being who is largely cybernetic in regards to their body, usually being visibly altered.', style: { background: 'linear-gradient(90deg, rgba(238,202,178,1) 0%, rgba(168,168,168,1) 100%)', color: '#000' } },
   nn: { tag: 'Nun', category: 'Occupation', short: 'nn', effect: '', desc: '', color: 'bg-gradient-to-t to-gray-400 from-black' },
@@ -219,7 +220,7 @@ export const waifuTags = {
   sr: { tag: 'Shifter', category: 'Powers', short: 'sr', effect: '', desc: 'is able to take more than one form', color: 'bg-teal-500 text-black' },
   ev: { tag: 'Evil', category: 'Personality', short: 'ev', effect: '', desc: '', style: { background: 'linear-gradient(0deg, rgba(255,0,0,1) 42%, rgba(134,60,60,1) 100%)', color: '#000' } },
   gn: { tag: 'Genius', category: 'Personality', short: 'gn', effect: '', desc: '', style: { background: 'linear-gradient(0deg, rgba(128,0,255,1) 0%, rgba(0,150,255,1) 100%)', color: '#fff' } },
-  rl: { tag: 'Ruler', category: 'Occupation', short: 'rl', effect: '', desc: 'rule over a country or region or even just a tribe', color: 'bg-[#FFD700] text-black' },
+  rl: { tag: 'Ruler', category: 'Occupation', short: 'rl', effect: '', desc: 'Rule over a country or region, need to have significant political power.', color: 'bg-[#FFD700] text-black' },
   tp: { tag: 'Trap', category: 'Personality', short: 'tp', effect: '', desc: 'Oh, she is cute, but its a boy!', style: { background: 'linear-gradient(0deg, rgba(227,125,255,1) 0%, rgba(132,194,255,1) 100%)', color: '#000' } },
   mi: { tag: 'Multiple', category: 'Utility', short: 'mi', effect: '', desc: 'Package deal', color: 'bg-teal-[#0ac781] text-black' },
   tw: { tag: 'Twins', category: 'Other', short: 'tw', effect: '', desc: 'Twins / Triplets / Quadruplets / etc.', color: 'bg-teal-500 text-black' },
@@ -227,7 +228,7 @@ export const waifuTags = {
   mm: { tag: 'Magical Girl', category: 'Occupation', short: 'mm', effect: '', desc: '', style: { background: 'linear-gradient(0deg, rgba(244,84,84,1) 0%, rgba(255,89,229,1) 70%)', color: '#fff' } },
   al: { tag: 'Alien', category: 'Race', short: 'al', effect: '', desc: 'Being from a planet or dimension other than the setting\'s primary planet or dimension.', style: { background: 'linear-gradient(90deg, rgba(12,94,243,1) 0%, rgba(5,227,31,1) 100%)', color: '#fff' } },
   mg: { tag: 'Monster-girl', category: 'Race', short: 'mg', effect: '', desc: 'A Female who is partially a humanoid Monster, often portrayed as having perverse intentions rather than lethal with their prey.', style: { background: 'linear-gradient(0deg, rgba(255,62,169,1) 0%, rgba(74,129,255,1) 100%)', color: '#fff' } },
-  nd: { tag: 'Nerd', category: 'Personality', short: 'nd', effect: '', desc: '', style: { background: 'linear-gradient(0deg, rgba(129,125,255,1) 0%, rgba(132,194,255,1) 100%)', color: '#fff' } },
+  nd: { tag: 'Nerd', category: 'Personality', short: 'nd', effect: '', desc: 'A person who is extremely enthusiastic and knowledgeable about a particular subject, especially one of specialist or niche interest.', style: { background: 'linear-gradient(0deg, rgba(129,125,255,1) 0%, rgba(132,194,255,1) 100%)', color: '#fff' } },
   ar: { tag: 'Artist', category: 'Occupation', short: 'ar', effect: '', desc: 'Any artistic talent', color: 'bg-teal-500 text-black' },
   sa: { tag: 'Strategist', category: 'Occupation', short: 'sa', effect: '', desc: 'Has experience in laying plans and developing strategies or tactics', style: { background: 'linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(0,163,255,1) 80%)', color: '#fff' } },
   fw: { tag: 'Fanwork', category: 'Utility', short: 'fw', effect: '', desc: 'Character is a fan creation (only established ones)', style: { background: 'linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(219,255,0,1) 80%)', color: '#000' } },
@@ -316,6 +317,7 @@ export const LINKS = computed(() => {
     'intensity/intensity': [...intensity, ...DLCintensity],
     'intensity/pvp': intensityPvP,
     'intensity/orbs': invasionPvP,
+    'intensity/tournament': tournamentPerks,
     'origin/origin': origin,
     'origin/patron': patrons,
     'bindings/bindings': [...bindings, ...DLCbindings],

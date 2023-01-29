@@ -1,67 +1,472 @@
 [
   {
+    "loca": "Overlord (LN)",
+    "reward": 1,
+    "author": "ClayUndead",
+    "rewardType": "TX Tickets",
+    "objectives": [
+      {
+        "type": "Credits",
+        "value": "Capture or Kill the Guild Master(GM) of a Guild(Repeatable)",
+        "reward": 200
+      },
+      {
+        "value": "Capture or Kill a Level 100 NPC or Player(Repeatable)",
+        "type": "Credits",
+        "reward": 50
+      },
+      {
+        "type": "Credits",
+        "reward": 200,
+        "value": "Steal all of the World Items of a Guild(Repeatable)"
+      },
+      {
+        "value": "Capture the Guild Base of a Guild(Repeatable)",
+        "type": "Credits",
+        "reward": 1000
+      },
+      {
+        "type": "Credits",
+        "reward": 300,
+        "value": "Become the Ruler of a Nation"
+      },
+      {
+        "reward": 500,
+        "value": "Kill or Enslave the True Dragon Lords",
+        "type": "Credits"
+      },
+      {
+        "type": "TX Tickets",
+        "value": "Become the Sole Ruler of the New World",
+        "reward": 2
+      },
+      {
+        "type": "Credits",
+        "value": "TS the Yggdrasil System and reach Level 100",
+        "reward": 100
+      }
+    ],
+    "scope": "Grand",
     "source": "",
     "conditions": [
       {
-        "value": "You must purchase [Destiny Defense(II)] and [Paradox Defense(II)]."
+        "value": "Survive five years in this New World."
       },
       {
-        "value": "You will enter 'Harry Potter'[DR3] on the day Harry recieves his first Hogwarts Letter."
+        "value": "That's it."
       },
       {
-        "value": "You must kill Tom Marvolo Riddle Jr. until the end of Harry Potter's Seventh Year at Hogwards."
+        "value": "Well, not really."
       },
       {
-        "value": "Tom Marvolo Riddle Jr. cannot be Captured."
+        "value": "Conquer at least one of the Yggdrasil Guilds."
       },
       {
-        "value": "Neither you nor your Waifu can leave the World for the duration of the Mission."
+        "value": "That and your Demiplane will be intergrated into this reality. Expect for it to be found eventually."
       }
     ],
-    "image": "https://media.tenor.com/qNu2IB0eDUEAAAAd/voldemort-death.gif",
-    "author": "Zaralann",
+    "image": "",
+    "desc": "Hello Ladies, Gentlemen, and that Technicolor Rainbow in-between! I'm Clay, you ever handsome host of this Royal rumble of an evening. I was bored and decided to take the regular old setting of Overlord and throw in a couple more guilds from Yggdrasil. Specifically there will be Nine, one for each space on the D&D alignment chart. Naturally, Nazerick will take the place of Neutral Evil. \"Why?\", You might ask. Because I want to throw a Contractor(You) in and watch the Fireworks.",
+    "budget": 1,
+    "title": "Second Age of the Gods",
+    "uid": "wAHuU"
+  },
+  {
+    "budget": 200,
+    "author": "CyrusFallen",
+    "title": "Uplifting",
+    "source": "",
     "scope": "Grand",
-    "title": "No Fate...",
+    "image": "",
+    "loca": "Generic",
+    "conditions": [
+      {
+        "value": "The civilization cannot be more advanced than modern as a whole, small pockets of advanced technology are allowed"
+      },
+      {
+        "value": "The mission is considered complete if your civilization is at least Type 2"
+      },
+      {
+        "value": "You have 1000 years"
+      }
+    ],
+    "desc": "To ensure the quality of Warehouse District's materials the Company tends to purchase them in bulk from advanced civilizations, as opposed to willing them into existence with magic.\nThe problem is, civilizations advanced enough to produce the materials we need in the amount we need are hard to come by. Most civilizations either destroy themselves it grow complacent before they get that far.\nYour mission, should you choose to accept it, is to uplift a civilization to the point where they can supply us adequately.",
+    "reward": "800 credits",
     "objectives": [
       {
+        "value": "Don't take over the civilization and uplift them as a private individual/corporation, influence is fine but you can't be the shadow ruler",
+        "type": "Companions",
+        "reward": "1 Companion with the Ruler tag of T8 or lower"
+      },
+      {
+        "reward": "500 credits",
+        "type": "Other",
+        "value": "Complete the mission in under 500 years"
+      },
+      {
+        "type": "Companions",
+        "value": "Complete the mission in under 200 years",
+        "reward": "1 Companion with the Scientist or Engineer tag of any tier"
+      },
+      {
+        "value": "Uplift your civilization into an utopia",
+        "type": "TX Tickets",
+        "reward": 1
+      }
+    ],
+    "rewardType": "Other",
+    "uid": "UGSoO"
+  },
+  {
+    "source": "",
+    "desc": "One of our Clients is a big fan of Ron Weasley before he was ruined by JK Rowling so he reached out. Unfortunately for him, someone that hates him immensely paid extra to alter his mission, which was basically to have a Contractor Mentor Ron to be the best he could be. Instead you will be Ron and by the time you leave, he will be the most famous Wizard of all time, married to his school crush Hermione Granger and living with his sister and almost as Famous Sister-In-Law Fem!Harry (names vary). The public won't know that you are living with a Sex Toy (Hermione), Sex Maid (Fem!Harry) and Incestuous Broodmare (Ginny). Also, you will have to use your fame to put through laws to increase the population of the Wizarding World.  And deal with Voldemort and his Death Eaters.",
+    "rewardType": "Companions",
+    "objectives": [
+      {
+        "value": "Steal the Philosopher's Stone before it is placed in the Mirror of Erised",
+        "type": "Perks",
+        "reward": "Warranty Plan Perk"
+      },
+      {
+        "value": "Destroy the Diary before Ginny is possessed the first time",
+        "reward": "Parseltongue for you and your Retinue (it is for snakes, some other Reptiles may understand your words but don't count on it)",
+        "type": "Other"
+      },
+      {
+        "reward": "The Animagus Transformation for you and your Retinue",
+        "type": "Other",
+        "value": "Expose Wormtail when Sirius Black breaks into Gryffindor Tower"
+      },
+      {
+        "reward": "The ability to make Magically Bound Deals. Breaking a deal forfeits the Magical Core to the other party.",
+        "value": "Keep Barty Crouch Jr from putting Fem!Harry's name in the Goblet of Fire",
+        "type": "Other"
+      },
+      {
+        "type": "Perks",
+        "reward": "Alluring Whisper Lure",
+        "value": "Be the Leader of the DA (you can change the name) by a clear Majority."
+      },
+      {
+        "reward": "1 T4 Artist Ticket",
+        "value": "Join the Slug Club",
+        "type": "Companions"
+      },
+      {
+        "reward": 100,
+        "value": "Attend your 7th Year without Death Eater oversight",
+        "type": "Credits"
+      },
+      {
+        "value": "Capture Hermione's Roommates Lavender Brown and Parvati Patil",
+        "reward": "Instant Capture of Sybil Trelawney",
+        "type": "Companions"
+      },
+      {
+        "value": "Capture at least one person from Each House in your year (note that the Gryffindor one can't be Hermione)",
+        "reward": "1 Alumni Ticket for each of the Houses (So four in total)",
+        "type": "Companions"
+      },
+      {
+        "value": "Capture all three Delacour Women",
+        "type": "Companions",
+        "reward": "3 Demi Human Tickets"
+      },
+      {
+        "reward": "Covert Talent and 50 Credits",
+        "type": "Perks",
+        "value": "Capture the Flying Foxes without the Weasley Twins or Lee Jordan realising they're being cuckholded"
+      },
+      {
+        "type": "Companions",
+        "reward": "Instant Capture of Nymphadora Tonks, 1 Multiple Ticket and 1 Twin Ticket",
+        "value": "Capture the Sibling Groups of the Black Sisters, Greengrass Sisters and the Patil Twins."
+      }
+    ],
+    "title": "Ronald Bilius Weasley, the G.O.A.T.",
+    "loca": "Harry Potter",
+    "image": "",
+    "reward": "1 T8 Mage Ticket, a TX Ticket for Perks only and 750 Credits",
+    "author": "FinSexual92",
+    "scope": "Grand",
+    "budget": 80,
+    "conditions": [
+      {
+        "value": "The world will be altered so that it is the Girl-Who-Lived and Hogwarts starts at 13, so you start with all your memories in 1st Year"
+      },
+      {
+        "value": "Your Captures must not get pregnant before they finish their NEWTS and neither should any flings you have"
+      },
+      {
+        "value": "Dumbledore isn't evil, just a bit out of touch with reality"
+      },
+      {
+        "value": "No one can know that you're gathering a harem, except those inducted into the harem"
+      }
+    ],
+    "uid": "GRLUy"
+  },
+  {
+    "desc": "Hello contractor. One of our less savory but wealthy clients has a few worlds he'd like to see with women in their proper place, but he's willing to pay for any world to be re-educated.\nIn short, you need to go into a world and make it so every society on that world sees women (where women are defined as being feminine presenting, having a pussy, and lacking a penis) as second class citizens at best. How you do this is up to you, but it should be thorough enough to be codified into law and be worldwide.",
+    "source": "",
+    "objectives": [
+      {
+        "value": "All women must be straight up slaves",
+        "type": "Other",
+        "reward": "100 credits or 1 ticket for a t8 or under waifu/husbando known for slave training/breaking/selling."
+      },
+      {
+        "type": "Other",
+        "reward": "100 credits, or all of your waifus produce milk that is on par with Ambrosia or Manna, or other divine foods.",
+        "value": "A significant minority of women must be seen as cattle, used only for producing milk."
+      },
+      {
+        "value": "A significant minority of women must be seen as breeding slaves, used only for producing new slaves and male citizens.",
+        "reward": "50 credits, or granted all levels of fertility calibration along with being able to choose your offspring's genetics perfectly.",
+        "type": "Other"
+      },
+      {
+        "type": "Other",
+        "value": "A significant minority of women must be seen as pleasure slaves, used only for whatever pleasure their bodies can bring.",
+        "reward": "50 credits, or Sticky Fingers and talent sharing for it. Future sexual partners not in your retinue will temporarily have it."
+      },
+      {
+        "type": "Other",
+        "reward": "50 credits, or the ability to alter your retinue into kemonomimi of any kind, at any time.",
+        "value": "A significant minority of women must be seen as pets (puppygirls, catgirls, etc.,), disallowed speech and wearing petgirl paraphernalia."
+      },
+      {
+        "value": "A significant minority of women must be seen as ponygirls, used for manual labor and pulling carts while stuck in ponygirl paraphernalia.",
+        "type": "Other",
+        "reward": "50 credits, or each of your retinue instead receive a perk that doubles their movement speed. This doubling applies last."
+      },
+      {
+        "reward": "Double all credit rewards, or alternatively take the credits and optional reward both.",
+        "value": "Complete this mission while being and presenting female yourself the entire time.",
+        "type": "Other"
+      }
+    ],
+    "reward": "400 credits",
+    "scope": "Grand",
+    "loca": "Generic",
+    "conditions": [
+      {
+        "value": "All women must be socially and legally second class citizens."
+      },
+      {
+        "value": "The objectives will complete so long as 99% of women fall under it's completed objectives, so a single free woman hiding in the wilderness won't ruin your mission."
+      },
+      {
+        "value": "Women can fulfill more than one bonus objective."
+      }
+    ],
+    "author": "Fetysh",
+    "image": "",
+    "budget": 300,
+    "rewardType": "Other",
+    "title": "Misogyny",
+    "uid": "bwXeX"
+  },
+  {
+    "author": "Uubrik",
+    "desc": "Reagan Ridley is a brilliant and driven scientist manager and operative.\n\nIt is also not inaccurate to say that due to the purposeful and focused neglect and manipulation of her father that she does not have emotional and social issues so much as she has full subscriptions.\n\nThe objective is to convince Reagan to remove herself from the environment she is in and allow herself to be safe, healthy, and happy.\n\nThe mission is considered completed if Reagan has been out of contact with any affiliate of Cognito Inc or related secret societies or entities of her reality for 30 continuous days.",
+    "source": "",
+    "image": "https://i.imgur.com/Zk2mr1P.png",
+    "reward": "Reagan Ridley or if she is already in the Contractor's retinue 20 credits",
+    "scope": "Standard",
+    "title": "How Dangerous Could She Be?",
+    "rewardType": "Companions",
+    "loca": "Inside Job",
+    "budget": 0,
+    "objectives": [
+      {
+        "reward": "Beds placed in Contractor's demiplane provide the effect of 8 hours of restful sleep after only 4 hours asleep in bed.",
+        "type": "Other",
+        "value": "Reagan Ridley sleeps no less then 5 hours every day for the mission time frame."
+      },
+      {
+        "type": "Perks",
+        "reward": "Gain Addiction Defense 1 for free",
+        "value": "Any recreational narcotics or alcohol consumption that occurs during the mission time frame is in amounts that does not result in notable loss of Reagan Ridley's faculties."
+      },
+      {
+        "reward": "Gain Sticky Fingers for free",
+        "type": "Perks",
+        "value": "Reagan Ridley receives and/or gives 1 hug per day of the mission time frame."
+      },
+      {
+        "value": "Reagan Ridley eats at least 2 full meals per day of the mission time frame",
+        "type": "Perks",
+        "reward": "Gain Faerie Feast for free"
+      },
+      {
+        "value": "Reagan Ridley spends less then 4 hours per day performing research or experimentation for purposes other then her own amusement or curiosity for the mission time frame.",
+        "reward": "Gain Pocket Apartment for free",
+        "type": "Perks"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Company and 3rd party mind control effects do not work on Reagan Ridley for the duration of this mission."
+      },
+      {
+        "value": "Company and 3rd party multiverse travel is disabled for the duration of this mission."
+      },
+      {
+        "value": "Access to Demiplane is restricted for the duration of this mission, with the exception that Pocket Space can still be used so long as it is not used to store Reagan Ridley."
+      },
+      {
+        "value": "Body Defense, Information Defense, and Mind Defense are required to prevent chemical sedation and mind reading or alteration."
+      }
+    ],
+    "uid": "LXtiA"
+  },
+  {
+    "desc": "Hello Contractor, one of our VIP Clients watched High School DxD and was disgusted with the lack of respect towards Sona Sitri who he fell for instantly. He has his own Clone already so you don't have to deal with that, but he isn't going to be satisfied with just that. He wants High School DxD: Sona Edition. To that end you are being sent there and you are to train Sona from the age of eight so that when Canon comes around, it is her dealing with everything and not her Rival. Don't worry about Capturing her. As long as you're not a complete prick to her, she'll fall for you (regardless of your gender)",
+    "source": "",
+    "scope": "Grand",
+    "title": "Sona's Rise To Super Devil",
+    "loca": "High School DxD",
+    "author": "FinSexual92",
+    "budget": 350,
+    "image": "",
+    "reward": 500,
+    "objectives": [
+      {
+        "type": "Companions",
+        "value": "Persuade Sona and Rias to make Forfeits of their bets Lewd (you may sell tapes of these lewd acts among your fellow Contractors for a few extra Credits)",
+        "reward": "Company Clone of Rias Gremory"
+      },
+      {
+        "value": "Convince Sona to give into Serafall's advances",
+        "reward": "Instant Capture of Serafall Leviathan and a Company Clone of Grayfia Lucifuge",
+        "type": "Companions"
+      },
+      {
+        "reward": "Company Clones of Raynere, Miltelt and Kalawarner along with a Tier 4 Angel Ticket",
+        "value": "Have Sona deal with the Fallen that kill Issei, before they kill Issei",
+        "type": "Companions"
+      },
+      {
+        "type": "Companions",
+        "value": "Train Sona well enough that she is powerful enough to have her Canon Pawns and have enough left to Reincarnate Issei Hyoudou and Asia Argento as Pawns",
+        "reward": "Company Clones of all Four Pawns with a choice of their Gender"
+      },
+      {
+        "reward": "Company Clones of Rias' Peerage (except her) and Riser Phenex's Peerage with a choice of their Gender",
+        "value": "Through training Sona, indirectly be the cause of Rias winning against Riser Phenex even if she doesn't have Issei Hyoudou or Asia Argento.",
+        "type": "Companions"
+      },
+      {
+        "type": "Companions",
+        "reward": "Instant Capture of Xenovia Quarta and Irina Shidou (regardless of where their 'true' loyalties lie after the Arc)",
+        "value": "Have Sona and her Peerage deal with Kokabiel and his cohorts"
+      },
+      {
+        "type": "Companions",
+        "reward": "Company Clone of Gabriel",
+        "value": "Have Sona deal the finishing blow to Kokabiel before Vali can save him"
+      },
+      {
+        "type": "Companions",
+        "reward": "Companion Ticket of equal Tier to the Bound Peerage Member",
+        "value": "Bind a member of Sona's Canon Peerage (except Pawns)"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You can't Bind Sona Sitri or Rias Gremory, Sona will only be Captured via Love Confession and you may earn a Company Clone of Rias"
+      },
+      {
+        "value": "You must not join a Peerage or Brave Saint Deck"
+      },
+      {
+        "value": "Your Non-Local Retinue can't interfere in Canon Battles, but they can help train Sona and her Peerage if they (or rather you) wish to"
+      },
+      {
+        "value": "By the time Canon comes around, Sona must be Sairaorg's Rival for Strongest of their Generation"
+      },
+      {
+        "value": "By the time Trihexa is meant to happen, Sona must have the power of a Super Devil"
+      }
+    ],
+    "rewardType": "Credits",
+    "uid": "eHkmg"
+  },
+  {
+    "reward": "1000 credits",
+    "conditions": [
+      {
+        "value": "You must go into a corrupted version of one of our settings, expect everything you know to be wrong and everyone to be a wallflower or an asshole"
+      },
+      {
+        "value": "You must solve the main plot of the world, which is likely not to be the main plot of the baseline"
+      },
+      {
+        "value": "You must capture the corrupted versions of the main cast and villains from the setting"
+      },
+      {
+        "value": "The world will work against you, expect to be constantly overshadowed by the MC and be treated as a devil for daring to so much as question them"
+      },
+      {
+        "value": "You must go alone, while they can't overpower the binding those worlds' MC will likely take that as a chance to cuck you even against the wishes of your waifus"
+      }
+    ],
+    "image": "",
+    "rewardType": "Other",
+    "source": "",
+    "scope": "Standard",
+    "desc": "Every so often we find what we like to call \"Corrupted Worlds\", versions of our target worlds that are borderline mockeries of their baseline. The MC is neglected, everyone but a few people are hateful caricatures of their baseline, someone is ridiculously edgy and gets a harem that would make a contractor jealous just because, the MC's backstory goes from tragic to torture porn.\nWe usually just lock down those worlds to prevent the corruption from spreading, but every now and then we get a masochistic client who enjoy the products from them.",
+    "author": "CyrusFallen",
+    "budget": 500,
+    "loca": "Generic",
+    "title": "Corrupted Worlds",
+    "objectives": [],
+    "uid": "Nlymf"
+  },
+  {
+    "desc": "Do you believe in 'Destiny' or 'Fate', O' Contractor? We don't either. It should not be the chain that binds and we believe it should not be tampered with either. So we're giving out a mission that would destroy it beyond any doubt.",
+    "budget": 200,
+    "objectives": [
+      {
+        "reward": "You gain [Soul Talent] for Free.",
         "value": "Capture Hermione Jane Granger.",
-        "type": "Perks",
-        "reward": "You gain [Soul Talent] for Free."
-      },
-      {
-        "reward": "You gain [Communication Talent] for Free.",
-        "type": "Perks",
-        "value": "Capture Ginevra Molly Weasley."
-      },
-      {
-        "value": "Capture Fleur Isabelle Delacour and Gabrielle Delacour.",
-        "type": "Perks",
-        "reward": "You gain [Love Spot] for Free."
-      },
-      {
-        "type": "Perks",
-        "value": "Capture and Sell Severus Snape.",
-        "reward": "You gain [Sience Talent] for Free."
-      },
-      {
-        "type": "Perks",
-        "value": "Capture Bellatrix Black.",
-        "reward": "You gain [Martial Talent] for Free."
-      },
-      {
-        "value": "Narcissa Black.",
-        "type": "Perks",
-        "reward": "You gain [Alluring Whisper] for Free."
-      },
-      {
-        "value": "Capture and Sell Albus Percival Wulfric Brian Dumbledore.",
-        "reward": "You gain [Mind Defense(II)] for Free.",
         "type": "Perks"
       },
       {
         "type": "Perks",
+        "reward": "You gain [Communication Talent] for Free.",
+        "value": "Capture Ginevra Molly Weasley."
+      },
+      {
+        "type": "Perks",
+        "reward": "You gain [Love Spot] for Free.",
+        "value": "Capture Fleur Isabelle Delacour and Gabrielle Delacour."
+      },
+      {
+        "reward": "You gain [Sience Talent] for Free.",
+        "type": "Perks",
+        "value": "Capture and Sell Severus Snape."
+      },
+      {
+        "value": "Capture Bellatrix Black.",
+        "reward": "You gain [Martial Talent] for Free.",
+        "type": "Perks"
+      },
+      {
+        "reward": "You gain [Alluring Whisper] for Free.",
+        "value": "Capture Narcissa Black.",
+        "type": "Perks"
+      },
+      {
+        "reward": "You gain [Mind Defense(II)] for Free.",
+        "type": "Perks",
+        "value": "Capture and Sell Albus Percival Wulfric Brian Dumbledore."
+      },
+      {
         "value": "Capture and Sell Draco Lucius Malfoy.",
-        "reward": "You gain [Fatality Defense(II)] for Free."
+        "reward": "You gain [Fatality Defense(II)] for Free.",
+        "type": "Perks"
       },
       {
         "value": "Capture and Sell Lucius Malfoy.",
@@ -70,13 +475,13 @@
       },
       {
         "value": "Capture Daphne and Astoria Greengrass.",
-        "reward": "You gain [Tsundere Service] for Free.",
-        "type": "Perks"
+        "type": "Perks",
+        "reward": "You gain [Tsundere Service] for Free."
       },
       {
-        "reward": "You gain [Potpourri] for Free.",
         "value": "Capture and Sell Vincent Crabbe and Gregory Goyle.",
-        "type": "Perks"
+        "type": "Perks",
+        "reward": "You gain [Potpourri] for Free."
       },
       {
         "value": "Capture and Sell Quirinus Quirrell.",
@@ -85,28 +490,28 @@
       },
       {
         "type": "Other",
-        "reward": "100 Credits.",
-        "value": "Prevent Harry Potter from finding out about the Philosopher Stone or discovering the Forbidden Corridor during his First Year."
-      },
-      {
-        "type": "Other",
-        "value": "Prevent the release of Basilisk during Harry Potter's Second Year.",
+        "value": "Prevent Harry Potter from finding out about the Philosopher Stone or discovering the Forbidden Corridor during his First Year.",
         "reward": "100 Credits."
       },
       {
+        "reward": "100 Credits.",
         "type": "Other",
+        "value": "Prevent the release of Basilisk during Harry Potter's Second Year."
+      },
+      {
         "value": "Prevent Ginevra Molly Weasley from being possessed by a Horcrux of Tom Marvolo Riddle Jr. during Harry Potter's Second Year.",
+        "type": "Other",
         "reward": "50 Credits."
       },
       {
-        "value": "Capture Luna Lovegood.",
         "type": "Perks",
-        "reward": "You gain [Trace Defense(II)] for Free."
+        "reward": "You gain [Trace Defense(II)] for Free.",
+        "value": "Capture Luna Lovegood."
       },
       {
         "type": "Perks",
-        "reward": "You gain [Covert Talent] for Free.",
-        "value": "Capture and Sell Peter Pettigrew."
+        "value": "Capture and Sell Peter Pettigrew.",
+        "reward": "You gain [Covert Talent] for Free."
       },
       {
         "reward": "You gain [Wild Talent] and [Wild Defense(II)] for Free.",
@@ -114,34 +519,34 @@
         "value": "Prove the innocence of Sirius Orion Black before the end of Harry Potter's Third Year."
       },
       {
-        "value": "Prevent Harry Potter's entrance into the Triwizard Tournament during his Fourth Year.",
         "reward": "Full Refund for [Destiny Defense(II)].",
+        "value": "Prevent Harry Potter's entrance into the Triwizard Tournament during his Fourth Year.",
         "type": "Perks"
       },
       {
-        "reward": "You gain [Corruption Defense(II)] for Free.",
         "value": "Capture and Sell Bartemius Crouch Jr.",
-        "type": "Perks"
-      },
-      {
-        "reward": "500 Credits per 1st Place in a Task, 400 Credits per 2nd Place, 300 Credits per 3rd Place.",
-        "value": "Enter Ronald Bilius Weasley into Triwizard Tournament and assure his victory without directly interfering with Tasks or other participants. Credits are Awarded only if Ronald wins the Tournament.",
-        "type": "Other"
+        "type": "Perks",
+        "reward": "You gain [Corruption Defense(II)] for Free."
       },
       {
         "type": "Other",
+        "value": "Enter Ronald Bilius Weasley into Triwizard Tournament and assure his victory without directly interfering with Tasks or other participants. Credits are Awarded only if Ronald wins the Tournament.",
+        "reward": "500 Credits per 1st Place in a Task, 400 Credits per 2nd Place, 300 Credits per 3rd Place."
+      },
+      {
         "reward": "You gain [Body Defense(II)] for Free.",
-        "value": "Prevent Harry Potter from departing to Ministry of Magic to 'save' Sirius Orion Black."
+        "value": "Prevent Harry Potter from departing to Ministry of Magic to 'save' Sirius Orion Black.",
+        "type": "Other"
       },
       {
-        "type": "Perks",
         "value": "Kill a Dementor.",
-        "reward": "You gain [Soul Defense(II)] for Free."
+        "reward": "You gain [Soul Defense(II)] for Free.",
+        "type": "Perks"
       },
       {
-        "value": "Prevent Dolores Jane Umbridge from gaining a position at Hogwarts. Capturing or killing her will forfeight this Objective during Harry Potter's Fifth Year, doing so before or after would not.",
         "type": "Perks",
-        "reward": "You gain [Don’t Stand So Close to Me] for Free."
+        "reward": "You gain [Don’t Stand So Close to Me] for Free.",
+        "value": "Prevent Dolores Jane Umbridge from gaining a position at Hogwarts. Capturing or killing her will forfeight this Objective during Harry Potter's Fifth Year, doing so before or after would not."
       },
       {
         "type": "Perks",
@@ -154,14 +559,14 @@
         "value": "Prevent the invasion of Death Eaters during Harry Potter's Sixth Year."
       },
       {
-        "type": "Companions",
         "reward": "You will gain a Waifu: Merlin(Prototype)[Tier 8] for Free.",
-        "value": "Kill Albus Percival Wulfric Brian Dumbledore during Harry Potter's Sixth Year. Capturing and Selling him before or during this period would forefeight this Objective, doing so after would not."
+        "value": "Kill Albus Percival Wulfric Brian Dumbledore during Harry Potter's Sixth Year. Capturing and Selling him before or during this period would forefeight this Objective, doing so after would not.",
+        "type": "Companions"
       },
       {
-        "reward": "You gain [Polymorph Defense(II)] for Free.",
         "value": "Capture Nagini.",
-        "type": "Perks"
+        "type": "Perks",
+        "reward": "You gain [Polymorph Defense(II)] for Free."
       },
       {
         "value": "Kill Severus Snape during Harry Potter's Seventh Year, Capturing and Selling him before or during this period would forefeight this Objective. Doing so after wouldn't.",
@@ -174,21 +579,41 @@
         "type": "Other"
       },
       {
-        "value": "Capture Nymphadora Tonks.",
         "type": "Perks",
+        "value": "Capture Nymphadora Tonks.",
         "reward": "You gain [Aesthetic Talent] for Free."
       },
       {
-        "reward": "You gain [Sexual Calibration], [Fertility Calibration I] and [Fertility Calibration II(VIII)] for Free.",
         "value": "Impregnate Nymphadora Tonks with her giving birth before the end of Harry Potter's Seventh Year.",
-        "type": "Perks"
+        "type": "Perks",
+        "reward": "You gain [Sexual Calibration], [Fertility Calibration I] and [Fertility Calibration II(VIII)] for Free."
       }
     ],
-    "budget": 200,
-    "rewardType": "Other",
     "loca": "Harry Potter",
-    "desc": "Do you believe in 'Destiny' or 'Fate', O' Contractor? We don't either. It should not be the chain that binds and we believe it should not be tempered with either. So we give out a missing that would destroy it beyond any doubt.",
+    "conditions": [
+      {
+        "value": "You must purchase [Destiny Defense(II)] and [Paradox Defense(II)]."
+      },
+      {
+        "value": "You will enter 'Harry Potter'[DR3] on the day Harry recieves his first Hogwarts Letter."
+      },
+      {
+        "value": "You must not kill Tom Marvolo Riddle Jr. until the end of Harry Potter's Seventh Year at Hogwards."
+      },
+      {
+        "value": "Tom Marvolo Riddle Jr. cannot be Captured."
+      },
+      {
+        "value": "Neither you nor your Waifu can leave the World for the duration of the Mission."
+      }
+    ],
+    "image": "https://media.tenor.com/qNu2IB0eDUEAAAAd/voldemort-death.gif",
+    "scope": "Grand",
+    "author": "Zaralann",
     "reward": "750 Credits.",
+    "title": "No Fate...",
+    "rewardType": "Other",
+    "source": "",
     "uid": "TWFlG"
   },
   {
@@ -2508,46 +2933,53 @@
     "uid": "qHDCY"
   },
   {
-    "rewardType": "Credits",
-    "budget": 0,
-    "desc": "You know what I could see more of? Overlords! Evil Kings! Arch-Mages of evil persuasions! That's where you come in. I'm willing to pay you company credits for entertaining me as an Evil Ruler. Just drop into a setting and take it(or at least a medium-sized country) over within a years time. I'll even add in bonus rewards for doing a good job.",
-    "image": "https://i.imgur.com/MV6YjCt.jpg",
-    "title": "With an Iron Fist",
-    "source": "",
-    "loca": "Generic",
-    "author": "ClayUndead",
     "scope": "Grand",
-    "reward": "50 Credits",
+    "uid": "HDZZh",
+    "image": "https://i.imgur.com/MV6YjCt.jpg",
+    "author": "ClayUndead",
+    "rewardType": "Credits",
+    "desc": "You know what I could see more of? Overlords! Evil Kings! Arch-Mages of evil persuasions! That's where you come in. I'm willing to pay you company credits for entertaining me as an Evil Ruler. Just drop into a setting and take it(or at least a medium-sized country) over within a years time. I'll even add in bonus rewards for doing a good job.",
+    "budget": 1,
+    "conditions": [
+      {
+        "value": "Conquer a medium-sized country/planet/System/Etc. compared to the entire setting."
+      },
+      {
+        "value": "Rule as an Evil King/Overlord/etc. for a year."
+      }
+    ],
+    "loca": "Generic",
+    "reward": 100,
     "objectives": [
       {
-        "reward": "100",
+        "reward": 250,
         "value": "Rule for a Decade",
         "type": "Credits"
       },
       {
+        "value": "Rule for a Century",
+        "reward": 500,
+        "type": "Credits"
+      },
+      {
         "type": "Credits",
-        "reward": "250",
-        "value": "Rule for a Century"
-      },
-      {
-        "reward": "500",
         "value": "Rule for a Millennia",
-        "type": "Credits"
+        "reward": 1000
       },
       {
+        "value": "Don't leave your controlled territory for the entirety of the Millennia",
         "type": "TX Tickets",
-        "reward": "1 TX ticket",
-        "value": "Don't leave your controlled territory for the entirety of the Millennia"
+        "reward": 1
       },
       {
-        "reward": "The full capture price of the captive OR 50 Credits",
+        "type": "Credits",
         "value": "Kidnap a Princess(or princess-like figure) and hold her captive for a year.",
-        "type": "Credits"
+        "reward": "The full capture price of the captive OR 50 Credits"
       },
       {
-        "value": "Start a rumor of a Prophecy of your downfall.",
         "type": "Perks",
-        "reward": "Covert Talent OR 10 Credits"
+        "reward": "Covert Talent OR 10 Credits",
+        "value": "Start a rumor of a Prophecy of your downfall."
       },
       {
         "type": "Perks",
@@ -2560,9 +2992,9 @@
         "type": "Credits"
       },
       {
-        "type": "TX Tickets",
         "value": "Become the sole ruler in the setting",
-        "reward": "1 TX Ticket"
+        "reward": 2,
+        "type": "TX Tickets"
       },
       {
         "value": "Collect a hoard of Gold, Treasures and Artifacts. Enough to fill 1000 cubic meters.",
@@ -2575,30 +3007,23 @@
         "reward": "25 Credits"
       },
       {
+        "reward": "100 Credits",
         "type": "Credits",
-        "value": "Defeat or Enslave an already established Overlord/Evil King/Evil Arch-Mage",
-        "reward": "100 Credits"
+        "value": "Defeat or Enslave an already established Overlord/Evil King/Evil Arch-Mage"
       },
       {
+        "value": "Start a religion with you as the Arch-Deity, where 90% of the worshipers truly believe you're a god.",
         "type": "Other",
-        "reward": "a T8 TS of any Danmachi God",
-        "value": "Start a religion with you as the Arch-Deity, where 90% of the worshipers truly believe you're a god."
+        "reward": "a T8 TS of any Divinity"
       },
       {
-        "type": "Credits",
-        "reward": "15 Credits",
-        "value": "Capture and Train a local to be your Evil Misstress"
+        "reward": 50,
+        "value": "Capture and Train a local to be your Evil Misstress",
+        "type": "Credits"
       }
     ],
-    "conditions": [
-      {
-        "value": "Conquer a medium-sized country/planet/System/Etc. compared to the entire setting."
-      },
-      {
-        "value": "Rule as an Evil King/Overlord/etc. for a year."
-      }
-    ],
-    "uid": "HDZZh"
+    "title": "With an Iron Fist",
+    "source": ""
   },
   {
     "author": "NeroAlmia",
@@ -5362,7 +5787,7 @@
   },
   {
     "desc": "We at The Company are getting bored with this world and the complaints about how much of a Fail Alpha Derek Hale is (the less said about goody-two-shoes True Fail Scott McCall the better). To that end, we want to see how you would do as the Alpha. Of course, we aren't going to just hand you this power. That would be boring. You will be started the day that Scott McCall gets bit and you must become the Alpha.",
-    "author": "FinSexual82",
+    "author": "FinSexual92",
     "loca": "Teen Wolf",
     "objectives": [
       {
@@ -6865,7 +7290,7 @@
         "value": "Complete all other additional objectives."
       }
     ],
-    "author": "anon",
+    "author": "Anon",
     "rewardType": "Other",
     "source": "",
     "uid": "MGKJI"
@@ -11282,9 +11707,15 @@
     "uid": "poIkn"
   },
   {
-    "source": "",
-    "title": "Gym teacher",
-    "loca": "Generic",
+    "objectives": [
+      {
+        "value": "Poach a target from a competing gym",
+        "type": "Credits",
+        "reward": "Credits equivalent to their listed price"
+      }
+    ],
+    "desc": "Gyms are a great place for recruiting beatiful and fit people. Why don't you open one yourself and use it to recruit retinue members?",
+    "title": "Gym Teacher",
     "conditions": [
       {
         "value": "Open, buy, or somehow take control of a gym. It can be for basic fitness, a specific sport, or martial arts"
@@ -11296,21 +11727,15 @@
         "value": "As a trainer, get your targets to either fall for you or offer you sex. You can't offer them anything in exchange, they must decide it by themselves. Bindings and overt mind control methods are not allowed until this point"
       }
     ],
-    "budget": 15,
-    "scope": "Standard",
     "author": "Ratcatcher",
-    "rewardType": "Other",
     "reward": "5 credits and one tier at step 6 for every new retinue member",
-    "objectives": [
-      {
-        "type": "Credits",
-        "reward": "Credits equivalent to their listed price",
-        "value": "Poach a target from a competing gym"
-      }
-    ],
+    "loca": "Generic",
+    "rewardType": "Other",
+    "budget": 15,
     "image": "https://cdn.donmai.us/original/61/27/__sakura_hibiki_and_souryuuin_akemi_dumbbell_nan_kilo_moteru_drawn_by_sadakage__61278b280c70c26c70c86036f18dd939.jpg",
     "uid": "GunAK",
-    "desc": "Gyms are a great place for recruiting beatiful and fit people. Why don't you open one yourself and use it to recruit retinue members?"
+    "source": "",
+    "scope": "Standard"
   },
   {
     "desc": "Hi, cousin, it's me, Mesméra. Listen, I got this mission for one of our cousins who took the Two Dime challenge, and I noticed that this universe' rulers need replacing. So, could you go and do the job by capturing Kandrakar and its Guardians? And whatever else you want, but those must be captured.",
@@ -12140,7 +12565,7 @@
     "rewardType": "Credits",
     "scope": "Grand",
     "budget": 85,
-    "author": "dikdik",
+    "author": "dikdik1238",
     "image": "https://i.imgur.com/y93PN8r.png",
     "objectives": [
       {

@@ -23,7 +23,6 @@
       <component :is="BuildImageSettings" v-if="showBuildImageSettings" class="z-20" @click="showBuildImageSettings = !showBuildImageSettings" />
       <component :is="Share" v-if="showShare" class="z-20" @click="showShare = !showShare" />
       <component :is="addPerkComponent" v-if="showAddPerk" @click="toggleShowAddPerk()" />
-      <component :is="addMissionComponent" v-if="showAddMission" @click="toggleShowAddMission()" />
       <component :is="settingsComponent" v-if="showSettings" @click="toggleShowSettings()" />
       <component :is="addFicComponent" v-if="showAddFic" :fic="currentFic" @click="toggleAddFic()" />
       <BuildImage v-if="isBuildImage" />
@@ -46,7 +45,6 @@ const Smartphone = computed(() => defineAsyncComponent(() => import('./component
 const Footer = computed(() => defineAsyncComponent(() => import('./components/big/Footer.vue')))
 
 const addPerkComponent = computed(() => defineAsyncComponent(() => import('./components/modals/AddPerk.vue')))
-const addMissionComponent = computed(() => defineAsyncComponent(() => import('./components/modals/AddMission.vue')))
 const addFicComponent = computed(() => defineAsyncComponent(() => import('./components/modals/AddFic.vue')))
 const settingsComponent = computed(() => defineAsyncComponent(() => import('./components/modals/Settings.vue')))
 const PromoteDialog = computed(() => defineAsyncComponent(() => import('./components/modals/dialogs/PromoteDialog.vue')))

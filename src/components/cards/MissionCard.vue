@@ -6,6 +6,9 @@
       </router-link>
       <span v-if="mission.author" class="text-sm text-gray-500 dark:text-gray-400"> by {{ mission.author }}</span>
     </h4>
+    <div v-if="mission.temprorary" class="text-red-700 dark:text-red-400">
+      This is the mission you just added, it shown just for your convenience, and will disappear if you press F5.
+    </div>
     <div title="Edit Mission" class="text-lg hover:text-orange-500 cursor-pointer flex items-center gap-1 absolute top-1 right-1" @click="showEditCompanion">
       <bx:bxs-edit />
     </div>
@@ -17,14 +20,20 @@
         <ci:heart-outline v-else />
       </span>
     </div>
-    <img
-      v-if="mission.image && settings.perkImages"
-      ref="imageEl"
-      class="max-h-sm object-cover rounded"
-      draggable="false"
-      :data-src="mission.image"
-      alt="mission image"
-    >
+    <div class="max-h-sm overflow-hidden relative flex">
+      <img
+        v-if="mission.image && settings.perkImages"
+        ref="imageEl"
+        class="object-cover rounded "
+        :class="showImage ? '' : 'filter blur-2xl transition'"
+        draggable="false"
+        :data-src="mission.image"
+        alt="mission image"
+      >
+      <div v-if="!showImage" class="rounded inset-0 absolute w-1/2 h-12 bg-[rgba(0,0,0,0.4)] color-white cursor-pointer text-center m-auto leading-12" @click="showImage=true">
+        Click to show image
+      </div>
+    </div>
     <div class="flex gap-2 justify-between px-2 float-right">
       <div v-if="mission.loca === 'Generic'" class="font-semibold">
         <span class=" text-teal-600 dark:text-teal-300">Generic mission</span>
@@ -67,7 +76,7 @@
       <h4 class="text-amber-800 dark:text-amber-300">
         Additional objectives:
       </h4>
-      <div v-for="rew, n in mission.objectives" :key="rew.value" class="p-1 pl-4 bg-blue-200 dark:bg-blue-gray-700 flex flex-col gap-2">
+      <div v-for="rew, n in mission.objectives.slice(0, 8)" :key="rew.value" class="p-1 pl-4 bg-blue-200 dark:bg-blue-gray-700 flex flex-col gap-2">
         <!-- <div class="flex gap-2 whitespace-nowrap">
           <label for="">Completed: <input id="" type="checkbox" name=""></label>
           <NumberInput v-if="Math.random() > 0.7" label="Number of times" />
@@ -85,6 +94,35 @@
             </span>:
           </span> {{ rew.reward }}
         </div>
+      </div>
+      <div v-if="mission.objectives.length > 8 && !allObjectives" class="rounded w-1/2 h-8 hover:underline color-white cursor-pointer leading-8 flex items-center text-blue-800 dark:text-blue-300" @click="allObjectives = true">
+        Show rest {{ mission.objectives.length - 8 }} objectives
+        <ic:baseline-keyboard-double-arrow-down class="w-8" />
+      </div>
+      <template v-if="allObjectives">
+        <div v-for="rew, n in mission.objectives.slice(8)" :key="rew.value" class="p-1 pl-4 bg-blue-200 dark:bg-blue-gray-700 flex flex-col gap-2">
+          <!-- <div class="flex gap-2 whitespace-nowrap">
+            <label for="">Completed: <input id="" type="checkbox" name=""></label>
+            <NumberInput v-if="Math.random() > 0.7" label="Number of times" />
+          </div> -->
+          <div><b>Objective {{ n + 9 }}</b>: {{ rew.value }}</div>
+          <div>
+            <span class="font-semibold text-green-800 dark:text-green-300">
+              Reward
+              <span v-if="rew.type">
+                [
+                <span class="font-semibold text-pink-800 dark:text-pink-300">
+                  {{ rew.type }}
+                </span>
+                ]
+              </span>:
+            </span> {{ rew.reward }}
+          </div>
+        </div>
+      </template>
+      <div v-if="mission.objectives.length > 8 && allObjectives" class="rounded w-1/2 h-8 hover:underline color-white cursor-pointer text-center leading-8  text-blue-800 dark:text-blue-300 flex items-center" @click="allObjectives = false">
+        Hide them again
+        <ic:baseline-keyboard-double-arrow-up class="w-8" />
       </div>
     </div>
     <Button
@@ -111,7 +149,7 @@ const { settings } = useStore()
 const { missionRewards } = usePlayStore()
 const { missionFavorites } = useSaves()
 
-defineProps({
+const props = defineProps({
   mission: {
     type: Object as PropType<Mission>,
     default: () => ({}),
@@ -121,6 +159,9 @@ defineProps({
 const imageEl = ref(null)
 const showTakeMission = ref(false)
 const showEditMission = ref(false)
+
+const showImage = ref(!props.mission.lewd)
+const allObjectives = ref(false)
 
 const missionFavoritesSet = computed(() => new Set(missionFavorites.value))
 

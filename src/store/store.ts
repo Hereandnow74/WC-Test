@@ -66,20 +66,24 @@ const baseBudgetAfter = computed(
   () => baseBudget.value + intensities.value.reduce((a, x) => x.intensity > 1 ? a + x.intensity : a, 0),
 )
 
-const pvpPerksCost = computed(() => pvpPerks.value.reduce((a, x) => a += x.cost >= 11111 ? 0 : x.cost, 0))
+function costCalc(a: number, x: Perk) {
+  return a += x.cost >= 11111 ? 0 : x.cost
+}
 
-const bindingCost = computed(() => binding.value.reduce((a, x) => a += x.cost >= 11111 ? 0 : x.cost, 0))
-const heritageCost = computed(() => heritage.value.reduce((a, x) => a += x.cost >= 11111 ? 0 : x.cost, 0))
+const pvpPerksCost = computed(() => pvpPerks.value.reduce(costCalc, 0))
 
-const ridePerksCost = computed(() => ridePerks.value.reduce((a, x) => a += x.cost === 11111 ? 0 : x.cost, 0))
-const homePerksCost = computed(() => homePerks.value.reduce((a, x) => a += x.cost === 11111 ? 0 : x.cost, 0))
-const talentsCost = computed(() => talentPerks.value.reduce((a, x) => a += x.cost === 11111 ? 0 : x.cost, 0))
-const defensesCost = computed(() => defensePerks.value.reduce((a, x) => a += x.cost === 11111 ? 0 : x.cost, 0))
-const miscPerksCost = computed(() => miscPerks.value.reduce((a, x) => a += x.cost === 11111 ? 0 : x.cost, 0))
+const bindingCost = computed(() => binding.value.reduce(costCalc, 0))
+const heritageCost = computed(() => heritage.value.reduce(costCalc, 0))
+
+const ridePerksCost = computed(() => ridePerks.value.reduce(costCalc, 0))
+const homePerksCost = computed(() => homePerks.value.reduce(costCalc, 0))
+const talentsCost = computed(() => talentPerks.value.reduce(costCalc, 0))
+const defensesCost = computed(() => defensePerks.value.reduce(costCalc, 0))
+const miscPerksCost = computed(() => miscPerks.value.reduce(costCalc, 0))
 const waifuPerksCost = computed(() => waifuPerks.value.reduce((a, x) => a += x.cost === 11111 ? -(x.refund || 0) : x.cost - (x.refund || 0), 0))
-const genericWaifuPerksCost = computed(() => genericWaifuPerks.value.reduce((a, x) => a += x.cost === 11111 ? 0 : x.cost, 0))
-const luresCost = computed(() => luresBought.value.reduce((a, x) => a += x.cost === 11111 ? 0 : x.cost, 0))
-const otherCost = computed(() => otherPerks.value.reduce((a, x) => a += x.cost === 11111 ? 0 : x.cost, 0))
+const genericWaifuPerksCost = computed(() => genericWaifuPerks.value.reduce(costCalc, 0))
+const luresCost = computed(() => luresBought.value.reduce(costCalc, 0))
+const otherCost = computed(() => otherPerks.value.reduce(costCalc, 0))
 
 const specificModsCost = computed(() => specificMods.value.reduce((a, x) => a += x.mod, 0))
 
@@ -468,7 +472,7 @@ const yourTier = computed(() => {
   }
   const talentsTier4 = findIndex(talentPerks.value, x => ['Template Stacking I'].includes(x.title)) !== -1 ? 4 : 0
   const talentsTier5 = findIndex(talentPerks.value, x => ['Template Stacking II'].includes(x.title)) !== -1 ? 5 : 0
-  let shroudTier = findIndex(binding.value, { title: 'Shroud of Power' }) !== -1 ? 4 : 0
+  let shroudTier = findIndex(binding.value, { title: 'Shroud of Power' }) !== -1 ? 5 : 0
   shroudTier = Math.max(findIndex(binding.value, { title: 'Alterzelu Symbiote' }) !== -1 ? 4 : 0, shroudTier)
   const originTier = startingOrigin.value?.perk?.tier || startingOrigin.value.tier || 0
   const heritageTier = calcTier(heritage.value)

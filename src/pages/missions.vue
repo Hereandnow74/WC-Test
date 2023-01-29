@@ -67,6 +67,7 @@
       </div>
     </div>
     <div class="h-8"></div>
+    <component :is="addMissionComponent" v-if="showAddMission" :missions="missions" @click="toggleShowAddMission()" />
   </div>
 </template>
 
@@ -76,13 +77,15 @@ import { Mission } from 'global'
 import { find, groupBy, sample } from 'lodash-es'
 import { onBeforeRouteUpdate } from 'vue-router'
 
-import { toggleShowAddMission } from '~/logic'
+import { toggleShowAddMission, showAddMission } from '~/logic'
 import { MissionGenerator } from '~/logic/missionsGen'
 import { usePlayStore } from '~/store/play'
 import { useSaves } from '~/store/saves'
 
 const { currentWorld, missionRewards } = usePlayStore()
 const { missionFavorites } = useSaves()
+
+const addMissionComponent = computed(() => defineAsyncComponent(() => import('../components/modals/AddMission.vue')))
 
 const filterByFavorites = ref(false)
 
@@ -216,7 +219,6 @@ useInfiniteScroll(
 )
 
 const displayedMissions = computed(() => {
-  console.log(singleMission.value)
   switch (page.value) {
     case 0:
       return infiniteMissions.value

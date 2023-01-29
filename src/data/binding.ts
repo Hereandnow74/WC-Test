@@ -107,7 +107,7 @@ export const bindings: PerkFull[] = [
     type: 'Jewelry',
     image: 'https://cdn.discordapp.com/attachments/925963686433132644/1040761911349870603/Screenshot_13.jpg',
     multiple: true,
-    max: 6,
+    max: 5,
     whitelist: ['Tempest Jewelry'],
     desc: 'Select an additional jewelry type for your Tempest items. This may be repurchased until every jewelry type is available to you.',
   },
@@ -345,7 +345,7 @@ export const bindings: PerkFull[] = [
     complex: 'target',
     legacy: true,
     freebies: {
-      talentPerks: [{ title: 'Everlasting Talent', cost: 0, count: 1 }, { title: 'Body Tune-Up', cost: 0, count: 1 }, { title: 'Martial Talent', cost: 0, count: 1 }, { title: 'Wild Talent', cost: 0, count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Martial Talent' }], count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Wild Talent' }], count: 1 }],
+      talentPerks: [{ title: 'Everlasting Talent', cost: 0, count: 1 }, { title: 'Body Tune-Up', cost: 0, count: 1 }, { title: 'Martial Talent', cost: 0, count: 1 }, { title: 'Wild Talent', cost: 0, count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Martial Talent', cost: 0 }], count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Wild Talent', cost: 0 }], count: 1 }],
       defensePerks: [{ title: 'Body Defense', cost: 0, count: 1 }, { title: 'Wild Defense', cost: 0, count: 1 }, { title: 'Environmental Defense', cost: 0, count: 1 }],
     },
     desc: `
@@ -385,7 +385,7 @@ If you Possessed or Substituted a waifu or are otherwise female, you may act as 
     legacy: true,
     image: 'https://i.ibb.co/fvRfGb1/Second-Generation-Symbiote.jpg',
     freebies: {
-      talentPerks: [{ title: 'Psychic Talent', cost: 0, count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Psychic Talent' }], count: 1 }],
+      talentPerks: [{ title: 'Psychic Talent', cost: 0, count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Psychic Talent', cost: 0 }], count: 1 }],
     },
     whitelist: ['Alterzelu Symbiote Legacy'],
     desc: 'This adds a number of upgrades to the symbiote’s functionality. You and all waifus benefit from Psychic Talent, as if you had purchased Basic Talent Sharing (Psychic). (Take Psychic Talent for free. If you already have Basic Talent Sharing (Psychic), take a full refund for it.) The lowest tier of targets that can fight off a symbiote larva will increase by 1 for each effective tier (after step 6) that the queen is above 7: Tier 6 targets can no longer fight off a Tier 8 queen’s larvae, while only Tier 10 and 11 targets can fight off larvae produced by a Tier X queen. On the target side, use their effective tier after step 6, but skip steps 4 and 5. Finally, symbiote larvae now emit a weak psychic field that reduces a target’s willingness to resist future attacks every time she fights one off. This reduction stacks indefinitely until she finally gives in.',
@@ -409,16 +409,16 @@ If you Possessed or Substituted a waifu or are otherwise female, you may act as 
   {
     uid: 'QQmH7',
     title: 'Shroud of Power',
-    cost: 80,
+    cost: 60,
     category: 'Binding',
     type: 'Shroud',
     image: 'https://i.ibb.co/gyhsvSR/Shroud-Of-Power-New.jpg',
     desc: `
 <p>You gain a semi-sapient cape of solidified magic that acts as an extension of your will. It shifts and transforms at a thought, even unconscious ones. By draping it over or wrapping up a waifu with it, you are able to infuse your target with your will and bind them to it.</p>
 <p>This cape is subject to the same protections as the company smart device. It can shift its form and texture into a wide variety of shapes and imitate any other outfit, ropes, tendrils, hands, blades, and similar forms. The constructs of the Shroud may have the textures and forms of textiles like leathers, latex, or other forms of clothing. The shroud is extremely durable and capable of significant amounts of strength and speed, and you gain a form of tactile feedback from it.</p>
-<p>Once completely infused, the waifu becomes one of your Shroud-bound. A newly Shroud-bound waifu’s clothes and makeup are absorbed into a cloak of her own, subordinate to your Shroud, and replaced with a new thematic style in line with your tastes and the personal mark of your stamp. Existing enchanted gear or otherwise super outfits, such as Life Fibers, power armor, or magical girl uniforms, will be integrated into this cloak, as will any upgrades added after the fact. This does not apply to gear that is held rather than worn.</p>
-<p>A Shroud-bound waifu will always consider her cloak her most comfortable outfit, but she may still dismiss it and wear normal outfits at any time. Both of you will be able to manipulate this outfit much like you can your Shroud, though your will supersedes hers in such manners. These powers are innate abilities, granted by the Shroud, and do not require any magical talent. Altogether, this is enough to push any blue-star subject up to Tier 4 or any copper-star up one tier, but is not a significant gain for higher tiers. Your own rating immediately increases to Tier 4, if it wasn’t already, and can increase further as you train with the Shroud and discover new uses.</p>
-<p>A new Shroud capture gains an unconscious awareness of your activity and needs. They may even respond to orders you haven’t consciously given yet. They will greatly struggle to go against your direct orders, and even the strongest willed waifus will be unable to go against your intent once bound. Additionally, the infusion will shift Shroud-bound waifus’ figures to your tastes.</p>
+<p>Once completely infused, the waifu becomes one of your Shroud-bound. A newly Shroud-bound waifu’s clothes and makeup are absorbed into a cloak of her own, subordinate to your Shroud, and replaced with a new thematic style in line with your tastes and the personal mark of your stamp. A Shroud-bound waifu will always consider her cloak her most comfortable outfit, but she may still dismiss it and wear normal outfits at any time.</p>
+<p>Both you and the waifu will be able to manipulate her outfit much like you can with your Shroud, though your will supersedes hers in such manners. These powers are innate abilities, granted by the Shroud, and do not require any magical talent. Altogether, this is enough to push any blue-star subject up to Tier 4 or any copper-star up one tier, but is not a significant gain for higher tiers. Your own rating immediately increases to Tier 5, if it wasn’t already, and can increase further as you train with the Shroud and discover new uses.</p>
+<p>A new Shroud capture gains a subconscious awareness of your activity and needs. They may even respond to orders you haven’t consciously given yet. They will greatly struggle to go against your direct orders, and even the strongest-willed subjects will be unable to go against your intent once bound. Additionally, the infusion will shift Shroud-bound companions’ figures to your tastes.</p>
 <h4 class="font-semibold text-md">Shroud: Capturing</h4>
 <p>To capture a target, you or your Shroud must maintain contact with them or one of their projections until you’ve infused enough of your will, whether through the target wearing an outfit your Shroud has been transformed into, being cocooned by your Shroud’s constructs, or similar. As a general rule, the more of your Shroud is focused on, inside of, or otherwise in contact with your target, the less time it takes. The greater the power, will, or resistance your target has, the longer it will take.</p>
 <p>With the entirety of your Shroud around a target, even if they put their all into the struggle, it will usually take less than a minute for a blue-star subject, under ten minutes for a copper-star subject, an hour for a silver-star subject, three hours for a gold-star subject, and 12 hours for a TX subject. Lesser amounts of your Shroud in contact with a target, or only intermittent contact, will extend the time required, up to years.</p>
@@ -429,6 +429,11 @@ If you Possessed or Substituted a waifu or are otherwise female, you may act as 
 <p>With only the basic Shroud, the bind can fail to take in subjects that have too much personal power, compared to your own, at the moment of attempted binding. This will ignore the subject’s consent and even purchase status.</p>
 <p>Consenting subjects whose bindings fail will still be captured and marked with a stamp tattoo, so you can make a later attempt with the Shroud. Non-consenting subjects will break free completely, denying you their capture credits until a successful attempt is made.</p>
 <p>Subjects who are already shroud-bound will remain so, even if they become strong enough that you would be unable to re-bind them. This includes the upgrades from capturing a character “early” and the expiration of any step 6 modifiers to effective tier.</p>
+`,
+    additionalDesc: `
+<h3 class="text-lg font-semibold text-center">Hen-SHIN!</h3>
+<p>If you have Pocket Space, you and your shroud-bound subjects may store additional outfits within the Shroud and quick-change in and out of them with a thought. The Shroud will automatically envelop these outfits, reinforcing them with the wearer’s power and palette-swapping them (for the duration) to match the shroud’s aesthetics. At the most extreme, heavy power armor can look and feel like a maid costume while retaining its full capabilities. This is most relevant for existing enchanted gear or otherwise super outfits, such as Life Fibers, power armor, or magical girl uniforms.</p>
+<p>Gear that is held rather than worn may also be stored this way, but the palette swap effect is far weaker.</p>
 `,
   },
   {

@@ -1355,7 +1355,7 @@ export const waifu_perks: WaifuPerk[] = [
     waifuUID: [
       7270,
     ],
-    image: 'https://cdn.statically.io/gh/klassekatze/waifucatimg/master/imagecache_thumb/890__sample_bf6d81bd98a260c66ee5709226ee3b0a.jpg',
+    image: 'https://cdn.donmai.us/sample/c3/c4/__seele_vollerei_seele_and_seele_vollerei_honkai_and_1_more_drawn_by_aka26540655__sample-c3c4500c14fcb9e87c63da329172f289.jpg',
     cost: 20,
     desc: 'With this perk, you can split Seele into her two halves: Seele herself and her dark side, Veliona. Seele uses her original battlesuit Swallowtail Phantasm, while Veliona uses the battlesuit Starchasm Nyx. This does not change Seele\'s tier rating. Starchasm Nyx is not available without this perk. ',
   },
@@ -1466,6 +1466,21 @@ export const waifu_perks: WaifuPerk[] = [
     image: 'https://i.imgur.com/KfE5NMx.png?1',
     cost: 50,
     desc: 'Sion is fused with the 13th Dead Apostle Ancestor, the Night of Wallachia aka TATARI. She has White Len as a familiar, if you don\'t already have a White Len via Aozaki Aoko, and qualifies for special Alterzelu Symbiote theming. ',
+  },
+  {
+    uid: 'p57Pq',
+    title: 'Artificial Apostle',
+    waifu: [
+      'Aizome Noel',
+    ],
+    from: 'Nasuverse',
+    waifuUID: [
+      5858697,
+    ],
+    tier: 7,
+    image: 'https://cdn.donmai.us/original/0d/80/__noel_and_dead_apostle_noel_tsukihime_and_3_more_drawn_by_hinoru_saikusa__0d8086f2d68419a3a0c9a5a099250404.jpg',
+    cost: 50,
+    desc: 'Noel\'s wish for strength has been granted, turning her into an artificially created Dead Apostle, with all of one’s usual abilities, as well as Mystic Eyes of Rita Rozay-en. Versions of Noel captured after receiving any dosage of Idea Replica will always have this perk. Any version of Noel with this perk will be stable and capable of using her Mystic Eyes as if they were the original.',
   },
   {
     uid: 'FoVJu',
@@ -1605,7 +1620,7 @@ export const waifu_perks: WaifuPerk[] = [
       9769,
     ],
     tier: 5,
-    image: 'https://i.imgur.com/zI7FLcjm.png',
+    image: '/img/waifu_perks/compressed/image205.png',
     cost: 18,
     desc: 'Sakura is instead the non-canon Tohsaka Sakura, a version who was trained in her Imaginary Numbers element and may or may not have separated from her sister. If you already have Matou Rin alongside this Sakura, they will recognize each other. This perk may not be applied to the same Sakura as Tainted Vessel, Knight of the Cherry Blossom, or Kouhai of Light. If you already have either of those perks and want Tohsaka Sakura, you may still purchase this, pre-applied to a new Sakura, for 20 credits.',
   },
@@ -1761,6 +1776,21 @@ export const waifu_perks: WaifuPerk[] = [
     desc: 'Altrouge\'s or Mash\'s pet. known by the former as Primate Murder and the latter as just Fou, is no mere familiar, but the dormant form of Beast IV (Comparison). When either of its mistresses is purchased or captured, it will appear in its non-sapient, depowered form as their familiar; merely applying a binding will not bypass the purchase of this perk, even if you capture the real Primate Murder/Fou before it\'s depowered. This perk restores its intelligence and powers to their full potential and allows it to assume a humanoid form if desired. You may only have one Beast IV at a time, whether or not this perk is applied; if you have both Altrouge and Mash, they will both take care of it. This perk will not affect Altrouge\'s or Mash\'s own tier ratings.',
   },
   {
+    uid: 'vSSIq',
+    title: 'Infinity Chocolate',
+    waifu: [
+      'Mysterious Heroine X Alter',
+    ],
+    from: 'Nasuverse',
+    waifuUID: [
+      9924,
+    ],
+    image: 'https://cdn.donmai.us/sample/ca/92/__artoria_pendragon_mysterious_heroine_xx_mysterious_heroine_x_alter_and_mysterious_heroine_x_alter_fate_and_1_more_drawn_by_kagami_uekusa__sample-ca922e304a5c836036d4f95b3683a6aa.jpg',
+    tier: 10,
+    cost: 900,
+    desc: 'Desire. Sugar content. Sales location. Cost price. Production. Demand. With these six elements, the Anti-Anti-Saber Ultimate Weapon gains infinity power, capable of turning half the universe into a confectionery factory. Mysterious Heroine X Alter technically always has this, as the skill “Black Bean Paste EX,” but the normal version of her doesn’t understand what she holds. This perk represents that understanding… though Ecchan may still lack the motivation to use it. As a bonus, this perk also grants Ecchan a body type comparable to Mysterious Heroine X’s adult form.',
+  },
+  {
     uid: 'jmjx6',
     title: 'Kaleidostick Magical Ruby',
     waifu: [
@@ -1850,6 +1880,20 @@ export const waifu_perks: WaifuPerk[] = [
     image: '',
     cost: 150,
     desc: 'The Round Table, a gathering place for heroes: the round shape of Mash\'s shield and its direct connection to the original Round Table are the catalyst for Chaldea\'s FATE Servant-summoning system. This perk allows you to roll on Fate/Grand Order\u2019s infamous gacha both in- and outside of the Nasuverse. Servants summoned using this perk are not automatically bound, but may be controlled using the same Command Seals that you acquired elsewhere in the Nasuverse or purchased in the Other Controls section. This perk does not alter Mash\'s tier rating. Individuals summoned through Lord Camelot will not award credits upon capture or sale. You get one free 10-roll when you purchase this perk and can earn additional Saint Quartz under the same rules as Exit Stage Left, at a rate of 1 SQ per 5% progression. Saint Quartz may also be purchased with company credits. The rates on offer may be found in the chart to the right. <h3 class="text-lg">Other Gachas</h3><p>If you have at least one character in your retinue who\u2019s from a world that started as a mobile game, that gacha\u2019s roll list will be added to Grand Order\'s. For example, having Eula Lawrence or Beidou will add the Genshin Impact roll list, having Enterprise or Zuikaku will add the Azur Lane roll list, and having Siege or Ch\u2019en will add the Arknights roll list. </p>',
+  },
+  {
+    uid: 'UseQ1',
+    title: 'Ortinax',
+    waifu: [
+      'Mash Kyrielight',
+    ],
+    from: 'Nasuverse',
+    waifuUID: [
+      9831,
+    ],
+    image: 'https://cdn.donmai.us/sample/0c/cf/__mash_kyrielight_and_mash_kyrielight_fate_and_1_more_drawn_by_sakuramochi1003__sample-0ccf3e569ceedd1f170635b4e2fda826.jpg',
+    cost: 30,
+    desc: 'When her decision to continue fighting for humanity cost her Galahad’s support and powers, Mash asked Da Vinci to build her a new set of armor so she could return to the field without him. This suit, dubbed Ortinax, was later upgraded with a replica of the god-killing superweapon Black Barrel. Buying this perk will not disable Mash’s normal Demi-Servant abilities, nor will it alter Mash’s tier rating.',
   },
   {
     uid: 'UseQ2',

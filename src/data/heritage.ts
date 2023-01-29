@@ -270,13 +270,13 @@ heritages.push({
   },
   typeFreebies: {
     Biomorph: {
-      talentPerks: [{ title: 'Martial Talent', cost: 0, count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Martial Talent' }], count: 1 }],
+      talentPerks: [{ title: 'Martial Talent', cost: 0, count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Martial Talent', cost: 0 }], count: 1 }],
     },
     Cybermorph: {
-      talentPerks: [{ title: 'Engineering Talent', cost: 0, count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Engineering Talent' }], count: 1 }],
+      talentPerks: [{ title: 'Engineering Talent', cost: 0, count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Engineering Talent', cost: 0 }], count: 1 }],
     },
     Aethermorph: {
-      talentPerks: [{ title: 'Blessed Talent', cost: 0, count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Blessed Talent' }], count: 1 }],
+      talentPerks: [{ title: 'Blessed Talent', cost: 0, count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Blessed Talent', cost: 0 }], count: 1 }],
     },
   },
   types: {
@@ -649,7 +649,7 @@ heritages.push({
   type: 'Lure, Party',
   cost: 100,
   freebies: {
-    talentPerks: [{ title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'All' }], count: 1 }],
+    talentPerks: [{ title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'All', cost: 0 }], count: 1 }],
     defensePerks: [{ title: 'Mind Defense', cost: 0, count: 1 }, { title: 'Information Defense', cost: 0, count: 1 }],
   },
   whitelist: ['Lurking On The Threshold'],

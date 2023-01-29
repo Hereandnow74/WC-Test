@@ -32,7 +32,7 @@
         {{ tag }}
       </div>
     </div>
-    <div class="grid 2xl:grid-cols-3 lg:grid-cols-2 gap-4 pb-8 justify-center">
+    <div class="grid 2xl:grid-cols-5 lg:grid-cols-3 md:grid-cols-2 gap-4 pb-8 justify-center">
       <div v-for="fic in filteredFics" :key="fic.title" class="bg-amber-100 dark:bg-indigo-900 rounded p-2 relative">
         <a
           :href="fic.link"

@@ -35,7 +35,9 @@
     </div>
     <div class="relative">
       <slot name="beforeDesc" />
-      <Desc v-if="(!settings.hideDesc && !collapsedDescsSet.has(perk.uid)) || expand" :desc="perk.desc" />
+      <slot v-if="(!settings.hideDesc && !collapsedDescsSet.has(perk.uid)) || expand" name="justDesc">
+        <Desc :desc="perk.desc" />
+      </slot>
       <div v-else class="text-center hover:underline cursor-pointer text-gray-700 dark:text-gray-300 flex items-center justify-center" @click.stop="expand = true">
         Expand description <entypo:triangle-down />
       </div>

@@ -58,7 +58,7 @@ talents.push({
   uid: 'nvlMp',
   title: 'Everlasting Talent',
   category: 'Talent',
-  image: 'https://i.ibb.co/b6ShsQS/Everlasting-Talent.jpg',
+  image: 'https://cdn.discordapp.com/attachments/925963686433132644/1066349990265487461/3da894ddd385056564070cdd094d7990.png',
   cost: 10,
   desc: `You live. You have weak immortality and eternal youth. If you are older than the peak age for your species (25 years for humans), your body is reset to that point; otherwise you'll continue to physically mature to that point but not experience any aging afterwards. This will not interfere with deliberate age-manipulation effects from within your retinue, whether from the company’s transformation suite or third-parties. If your maturation process had been halted by any means, it will now continue until your peak age. The "Fog of Ages," including atrophy of unused skills, will never affect you.
   <p>This perk will not make you unkillable or grant any form of auto-resurrection. It just means you won’t grow feeble and die of “natural causes,” so don’t try anything foolish. The benefits of this perk will apply to your purchased and captured waifus, but you can disable it for specific individuals if you wish.</p>

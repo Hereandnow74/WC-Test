@@ -175,7 +175,7 @@
         </div>
         <div v-if="showTiers" class="flex justify-between px-2">
           <div class="text-gray-600 dark:text-gray-400 justify-self-start">
-            Tier: <span class="text-amber-600 dark:text-amber-300">{{ (charData.tier) }}</span>
+            Tier: <span class="text-amber-600 dark:text-amber-300">{{ charData.tier=== 11 ? 'TX' : charData.tier }}</span>
           </div>
           <div class="text-gray-600 dark:text-gray-400 whitespace-nowrap text-right">
             Cost: <span class="text-amber-600 dark:text-amber-300">{{ charData.tier === 11 ? 'Tier X ticket' : CHAR_COSTS[charData.tier] }}</span>
