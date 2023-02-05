@@ -15,12 +15,20 @@
           <div
             class="flex gap-2 w-full rounded bg-gray-300 dark:bg-gray-800 p-1"
           >
-            <img
-              :data-src="startingOrigin.image || '/img/Contractor.jpg'"
-              alt="Your image"
-              class="rounded object-cover w-1/4 object-top"
-              @load="setHeight"
-            >
+            <div class="w-1/4">
+              <img
+                :data-src="startingOrigin.image || '/img/Contractor.jpg'"
+                alt="Your image"
+                class="rounded object-cover object-top w-full"
+                @load="setHeight"
+              >
+              <div v-if="powers[startingOrigin.uid || 0]?.length" class="text-center" title="Total count and cost of Templates for a character">
+                [<span class="text-orange-800 dark:text-orange-400">{{ powers[startingOrigin.uid || 0].length }}</span>]
+                [<span class="text-green-800 dark:text-green-400">
+                  {{ 20 * ((Math.pow(2, powers[startingOrigin.uid || 0].length) - 1) / (2 - 1)) }}
+                </span>]
+              </div>
+            </div>
             <div class="flex flex-col gap-2 flex-grow">
               <h3 class="flex gap-2 text-sm">
                 {{ startingOrigin.character || 'You' }}
@@ -61,13 +69,23 @@
             :key="companion.uid"
             class="flex gap-2 w-full rounded bg-gray-300 dark:bg-gray-800 p-1"
           >
-            <img
-              v-if="(allCharsObject[companion.originUID || companion.uid] && allCharsObject[companion.originUID || companion.uid].i) || companion.image && !settings.allImg"
-              :data-src="companion.image || imageLink(companion.originUID || companion.uid)"
-              :alt="companion.name"
-              class="rounded object-cover w-1/4 object-top"
-              @load="setHeight"
-            >
+            <div class="w-1/4">
+              <img
+                v-if="(allCharsObject[companion.originUID || companion.uid] && allCharsObject[companion.originUID || companion.uid].i) || companion.image && !settings.allImg"
+                :data-src="companion.image || imageLink(companion.originUID || companion.uid)"
+                :alt="companion.name"
+                class="rounded object-cover w-full object-top"
+                @load="setHeight"
+              >
+              <div v-if="powers[companion.uid]?.length" class="text-center" title="Total count and cost of Templates for a character">
+                [<span class="text-orange-800 dark:text-orange-400">
+                  {{ powers[companion.uid].length }}
+                </span>]
+                [<span class="text-green-800 dark:text-green-400">
+                  {{ 20 * ((Math.pow(2, powers[companion.uid].length) - 1) / (2 - 1)) }}
+                </span>]
+              </div>
+            </div>
             <div class="flex flex-col gap-2 flex-grow">
               <h3 class="flex gap-2 text-sm">
                 {{ companion.name }}

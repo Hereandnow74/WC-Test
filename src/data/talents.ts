@@ -174,7 +174,7 @@ talents.push({
   uid: 'PGFje',
   title: 'Land Talent',
   category: 'Talent',
-  image: 'https://wallpaper.dog/large/5484199.jpg',
+  image: 'https://i.imgur.com/05GApMTl.jpg',
   cost: 30,
   whitelist: ['Wild Talent', 'Soul Talent'],
   desc: `

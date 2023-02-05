@@ -160,17 +160,17 @@ DLCperks.push({
   whitelist: ['Communication Talent'],
 })
 
-DLCperks.push({
-  uid: 'GsCat',
-  dlc: 'CelestialDragon DLC',
-  category: 'Misc Perk',
-  dlclink: 'https://docs.google.com/spreadsheets/d/1FM6PNbDEyZV4T4rVLWjPYBc3O0jmmwd1obkFD7jLDt8/edit?usp=sharing',
-  title: 'Returning Home',
-  image: 'https://i.ibb.co/prHZrjj/Returning-Home.jpg',
-  cost: 0,
-  desc: 'At the end of your first world, or after you complete the mission or at your own discretion you can return home with all the powers, perks and waifus that you obtained. Able to go back and forth between worlds at any time. The time on Earth will not have moved since you left and you can change how fast or slow (or at all) Earths time and the other worlds time flow.',
-  whitelist: ['Exit Stage Left'],
-})
+// DLCperks.push({
+//   uid: 'GsCat',
+//   dlc: 'CelestialDragon DLC',
+//   category: 'Misc Perk',
+//   dlclink: 'https://docs.google.com/spreadsheets/d/1FM6PNbDEyZV4T4rVLWjPYBc3O0jmmwd1obkFD7jLDt8/edit?usp=sharing',
+//   title: 'Returning Home',
+//   image: 'https://i.ibb.co/prHZrjj/Returning-Home.jpg',
+//   cost: 0,
+//   desc: 'At the end of your first world, or after you complete the mission or at your own discretion you can return home with all the powers, perks and waifus that you obtained. Able to go back and forth between worlds at any time. The time on Earth will not have moved since you left and you can change how fast or slow (or at all) Earths time and the other worlds time flow.',
+//   whitelist: ['Exit Stage Left'],
+// })
 
 DLCperks.push({
   uid: 'jcBEK',
@@ -206,8 +206,10 @@ DLCperks.push({
   title: 'Time-Savers',
   image: 'https://i.ibb.co/s6b25Kb/Time-Savers.jpg',
   cost: 2,
+  costVariants: [2, 10],
   desc: `
   You humans have to do so much useless stuff that just wastes the day away in order to simply function. No more! Your body is now self cleaning, meaning you'll almost always stay sparkly, well groomed, and smelling great. All of your hair and nails will eternally be at your desired length. You'll be able to fall asleep within a few minutes of trying to, and you'll only need six hours to feel completely rested and rejuvenated. Finally you'll never have to excrete any sort of waste ever again. It says here that all of these can be turned down or off whenever you like, but come on? What possible reason would someone want to be able to, lets say, go to the bathroom if you never need to again? ...It's a fetish thing, isn't it?
+  <p>For 10 credits you will get the version that is applied to a whole retinue, with the ability to turn it off for individuals or entire groups, such as familiars.</p>
   `,
 })
 
@@ -275,7 +277,7 @@ DLCperks.push({
   multiple: true,
   max: 99,
   increment: true,
-  desc: 'You now receive an allotment of one point for every three days, which you may spend on anything that points can purchase from the waifu catalogue; this perk can be taken multiple times and its effects stack additively, but each additional purchase costs twice as much as the previous purchase, so while the first only costs one-thousand points, the second will cost two-thousand points, the third will cost three-thousand points, the fourth will cost four-thousand points, and so on and so on; three instances can be purchased in exchange for a tier eleven token',
+  desc: 'You now receive an allotment of one point for every three days, which you may spend on anything that points can purchase from the waifu catalogue; this perk can be taken multiple times and its effects stack additively, but each additional purchase costs one thousand more than the previous purchase, so while the first only costs one-thousand points, the second will cost two-thousand points, the third will cost three-thousand points, the fourth will cost four-thousand points, and so on and so on; three instances can be purchased in exchange for a TX ticket',
 })
 
 DLCperks.push({
@@ -466,6 +468,17 @@ DLChomes.push({
   cost: 0,
   desc: 'The portals to access your Pocket Apartment, and any perks that follow from it, can not be perceived or entered by anything you do not allow, including creatures, contaminants, and remote viewing.',
   whitelist: ['Pocket Apartment'],
+})
+
+DLChomes.push({
+  uid: 'pftNh',
+  dlc: 'ProtagNeptune',
+  category: 'Home',
+  title: 'The House on The Homeworld',
+  image: 'https://i.imgur.com/TJHUNSFl.png',
+  cost: 600,
+  desc: 'Your homeworld, the Planet Earth with the Moon, will be brought into your dimension immediately after purchase. We hope you won\'t mind the probable unrest of the human population on your homeworld when they inevitably realize that the stars in the sky have changed, with an unknown planet or ringworld of your personal realm.',
+  whitelist: ['Pocket Star'],
 })
 
 // DLC talents
@@ -800,6 +813,30 @@ DLClureExpansions.push({
   whitelist: ['Hypnos'],
 })
 
+DLClureExpansions.push({
+  uid: 'nuDNq',
+  dlc: 'DepressedAlucard',
+  title: 'Arlo: Fluff is Life',
+  category: 'Lure',
+  image: 'https://i.imgur.com/0SwOqDtl.jpg',
+  cost: 10,
+  desc: `Sometimes a target is not interested in taking the bait. Maybe the waifu does not care for kids, or perhaps they are of a race incapable of having children. Where children do not work, a cute pet might. You are now able to make use of your beastly familiars as an alternative bait to draw in waifu. The effectiveness of this bait depends on the personality of the subject in question, where some waifu might be strongly drawn to a fluffy cat and others to a monstrous leviathan.
+  `,
+  whitelist: ['Arlo'],
+})
+
+DLClureExpansions.push({
+  uid: 'nuDNn',
+  dlc: 'DepressedAlucard',
+  title: 'Lovespot: Signature Clothing',
+  category: 'Lure',
+  image: 'https://i.imgur.com/bTro7eTl.jpg',
+  cost: 30,
+  desc: `Sometimes, a individual is remembered not by their voice, nor their face but one particular article of clothing or accessory that stood out amongst the others. It could be a ring that they wore everyday and never bothered to take off, or a bright red coat easily spotted from far away. You may now choose to make one such article or accessory act as a love spot that catches the eyes of the target, drawing their attention and luring them in. Only an article that has been worn for a minimal duration of a month may be chosen to act as a love spot. You may choose to switch what article of clothing or accessory is used to another at any moment provided it meets the established requirements. Only one article of clothing or accessory can be made into a love spot at a time.
+  `,
+  whitelist: ['Love Spot'],
+})
+
 // DLC Heritages
 export const DLCheritages: DLCPerk[] = []
 
@@ -827,8 +864,26 @@ DLCheritages.push({
   complex: 'flavor',
   anything: 'Element',
   cost: 11111,
-  whitelist: ['Double Dragon', 'Dragon Blood', 'Elder Dragon'],
-  desc: 'Why stop at just three elements? You may now pick an additional Element per purchase of this Perk.',
+  increment: true,
+  whitelist: ['Elder Dragon'],
+  desc: 'The dragon has ascended, as the elements bend to its might. There are so many left to discover, so why stop at just three? You may now pick an additional element per purchase of this perk. The price of this perk will increase by one ticket each time.',
+})
+
+DLCheritages.push({
+  uid: 'rBXUp',
+  dlc: 'DepressedAlucard',
+  dlclink: 'https://docs.google.com/document/d/18LaGf5cy9hDA7ZAInhxVJoTocWfeLo0PI_msQsFu76Q/edit',
+  title: 'Pillar of Reality',
+  category: 'Heritage',
+  image: 'https://i.imgur.com/plNzoTml.jpg',
+  tree: 'Outsider',
+  type: 'Self',
+  complex: 'flavor',
+  anything: 'Element',
+  cost: 11111,
+  increment: true,
+  whitelist: ['An Answer To Reason'],
+  desc: 'As the presence of an Outsider grows, all of reality shudders. One aspect of it may no longer be sufficient to contain the spread of your reach. You may now select an additional Omen and associated Element with each purchase of this perk. You may choose which Omen will herald your approach, and may make use of several if you so desire. The price of this perk will increase by one ticket each time.',
 })
 
 // DLC Bindings

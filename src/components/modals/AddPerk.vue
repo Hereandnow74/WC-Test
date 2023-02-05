@@ -88,7 +88,7 @@ const schema = toFormValidator(
     source: zod.string(),
     special: zod.string(),
     requires: zod.string().array(),
-    cost: zod.number().min(0, { message: 'Minimum Cost is 0' }),
+    cost: zod.number(),
     max: zod.number().min(1, { message: 'Minimum count is 1' }),
     type: zod.string().nonempty('Type is required'),
     subType: zod.string(),

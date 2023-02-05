@@ -6,6 +6,34 @@
       </h2>
       <div>
         <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          05 February 2023
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~200 new user submitted characters, new missions, new worlds</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          02 February 2023
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~170 new user submitted characters, new missions</li>
+          <li>2 new Expansion Lure DLC perks, 1 Home DLC Perk and 1 Heritage DLC perk</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          29 January 2023
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~100 new user submitted characters, new missions</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
           26 January 2023
         </h3>
         <ul class="list-decimal list-inside">

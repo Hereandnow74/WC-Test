@@ -59,7 +59,7 @@ export function deletePerk(perkList: Perk[], checkFunc: (arg: any) => boolean) {
     const origPerk = ALL_PERK_TITLES.value[perkList[i].title]
     if (!checkFunc(origPerk)) {
       toDel.push(perkList[i].title)
-      if (!flags.value.chargen && perkList[i].cost < 11111) fee.value += Math.round(perkList[i].cost * 0.2) || 0
+      if (!flags.value.chargen && perkList[i].cost < 11111 && perkList[i].cost > 0) fee.value += Math.round(perkList[i].cost * 0.2) || 0
       if (perkList[i].freebies) deleteFreebies(perkList[i].freebies)
       if (origPerk.typeFreebies)
         deleteFreebies(origPerk.typeFreebies[flags.value.transhumanType])
@@ -303,7 +303,7 @@ export function heritageAvailable(hr: Heritage): boolean {
 export function chooseHeritage(hr: Heritage, saveData: Perk) {
   const { allEffects, flags, fee, heritage } = useStore()
   if (heritageAvailable(hr)) {
-    if (['Dragon God'].includes(saveData.title)) {
+    if (['Dragon God', 'Pillar of Reality'].includes(saveData.title)) {
       pickSimplePerk(hr, saveData, heritageAvailable, heritage.value)
       return
     }

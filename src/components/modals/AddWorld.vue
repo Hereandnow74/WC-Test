@@ -3,7 +3,7 @@
     <div class="relative p-2 flex flex-col gap-2 min-h-0">
       <img ref="testImage" class="absolute h-[1px] w-[1px]" :src="image" alt="" @load="imageLoaded" />
       <div class="flex gap-2">
-        <Input v-model="worldName" placeholder="Name of the World" class="w-3/4" :error-message="errors.worldName" />
+        <Input v-model.trim="worldName" placeholder="Name of the World" class="w-3/4" :error-message="errors.worldName" />
         <NumberInput
           v-model.number="rating"
           label="Rating"
@@ -19,7 +19,7 @@
       <Foldable title="Setting specific rules">
         <span v-if="errors.additional" class="text-xs">{{ errors.additional }}</span>
         <TextArea
-          v-model="additional"
+          v-model.trim="additional"
           placeholder="Some specific change in the world so it would fit the Company theme more."
         />
       </Foldable>
@@ -32,7 +32,7 @@
         <div class="overflow-y-auto flex flex-col gap-2">
           <div v-for="condition, i in condition" :key="i" class="flex gap-2">
             <Input
-              v-model="condition.name"
+              v-model.trim="condition.name"
               :placeholder="'Condition #' + i"
               :error-message="errors[`condition[${i}].name`]"
             />
@@ -97,7 +97,7 @@ const schema = toFormValidator(
   zod.object({
     worldName: zod.string().nonempty('World name is required'),
     rating: zod.number().min(1, { message: 'Minimum World rating is 1' }).max(10, { message: 'Maximum World level is 10' }),
-    image: zod.string().url({ message: 'Must be a valid URL' }).max(256, { message: 'Maximum length is 256 chars' }).optional().or(zod.literal('')),
+    image: zod.string().url({ message: 'Must be a valid URL' }).min(1, { message: 'Image is required' }).max(256, { message: 'Maximum length is 256 chars' }).optional().or(zod.literal('')),
     additional: zod.string(),
     condition: zod.object({
       name: zod.string().nonempty('Condition is required'),

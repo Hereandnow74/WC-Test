@@ -11,6 +11,8 @@ fullHeritagesDLC.push({
   category: 'Heritage',
   image: 'https://i.imgur.com/of6Geukl.png',
   cost: 100,
+  complex: 'flavor',
+  anything: 'Type',
   freebies: {
     talentPerks: [{ title: 'Body Tune-Up', cost: 0, count: 1 }, { title: 'Everlasting Talent', cost: 0, count: 1 }, { title: 'Soul Talent', cost: 0, count: 1 }],
     defensePerks: [{ title: 'Body Defense', cost: 0, count: 1 }, { title: 'Destiny Defense', cost: 0, count: 1 }],
@@ -56,10 +58,10 @@ fullHeritagesDLC.push({
 fullHeritagesDLC.push({
   dlc: 'Gale',
   dlclink: 'https://docs.google.com/document/d/1oHccbJhaeGa6rkFJpqeRRe5bmG2Ozy6y6k64AVxncYk/edit#heading=h.yytwjyibr91u',
-  uid: 'JrxZe',
+  uid: 'JrxZa',
   title: 'Harbinger of Deаth',
   category: 'Heritage',
-  image: 'https://i.imgur.com/8oOZyUol.png',
+  image: 'https://i.imgur.com/Wyyo4ogl.png',
   cost: 175,
   freebies: {
     talentPerks: [{ title: 'Martial Talent', cost: 0, count: 1 }],

@@ -69,6 +69,9 @@ const baseBudgetAfter = computed(
 function costCalc(a: number, x: Perk) {
   return a += x.cost >= 11111 ? 0 : x.cost
 }
+function costCalcNoTX(a: number, x: Perk) {
+  return a += x.cost || 0
+}
 
 const pvpPerksCost = computed(() => pvpPerks.value.reduce(costCalc, 0))
 
@@ -77,8 +80,8 @@ const heritageCost = computed(() => heritage.value.reduce(costCalc, 0))
 
 const ridePerksCost = computed(() => ridePerks.value.reduce(costCalc, 0))
 const homePerksCost = computed(() => homePerks.value.reduce(costCalc, 0))
-const talentsCost = computed(() => talentPerks.value.reduce(costCalc, 0))
-const defensesCost = computed(() => defensePerks.value.reduce(costCalc, 0))
+const talentsCost = computed(() => talentPerks.value.reduce(costCalcNoTX, 0))
+const defensesCost = computed(() => defensePerks.value.reduce(costCalcNoTX, 0))
 const miscPerksCost = computed(() => miscPerks.value.reduce(costCalc, 0))
 const waifuPerksCost = computed(() => waifuPerks.value.reduce((a, x) => a += x.cost === 11111 ? -(x.refund || 0) : x.cost - (x.refund || 0), 0))
 const genericWaifuPerksCost = computed(() => genericWaifuPerks.value.reduce(costCalc, 0))

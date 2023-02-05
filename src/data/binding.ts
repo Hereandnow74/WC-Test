@@ -818,7 +818,7 @@ export const lures: PerkFull[] = [
     uid: 'ak3fJ',
     title: 'Don’t Stand So Close to Me',
     category: 'Lure',
-    image: 'https://i.ibb.co/Qd20Thb/Dont-Stand-So-Close-To-Me.jpg',
+    image: 'https://i.imgur.com/47UHJSPl.jpg',
     cost: 15,
     desc: `
 <p>Targets that either teach you or are taught by you, no matter the subject, will start to fall for you. They’ll find themselves thinking about the subject matter, about your instruction, about the next lesson, and you yourself will worm your way to the forefront of their thoughts, even as worrying about their next lesson, getting good grades, or encouraging learning twists itself into a more romantic or sexual nature.</p>
@@ -845,7 +845,7 @@ export const lures: PerkFull[] = [
     uid: '2ObHB',
     title: 'Alluring Whisper',
     category: 'Lure',
-    image: 'https://i.ibb.co/rFCDPSH/Alluring-Whisper.jpg',
+    image: 'https://i.imgur.com/oTCyA3Ll.png',
     cost: 20,
     desc: 'Your voice is supernaturally alluring. Merely whisper in a target’s ear, and her heart (and panties) will turn to goo. Better results will come with vocal training and improved phrasing. (You can also use this perk to become an ASMR superstar. We won’t judge.) Beings with sufficient willpower can resist or even block this lure. It will never affect someone who lacks a sense of hearing.',
   },

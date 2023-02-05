@@ -64,7 +64,7 @@ const props = defineProps({
     default: false,
   },
 })
-const emit = defineEmits(['update:modelValue'])
+const emit = defineEmits(['update:modelValue', 'clickedOnChoice'])
 
 const listEl = ref<HTMLElement|null>(null)
 const tippyEl = ref<Element|null>(null)
@@ -111,6 +111,7 @@ function chooseItem(e: Event, item: string) {
   if (props.doNotCloseList)
     e.stopPropagation()
   value.value = item
+  emit('clickedOnChoice', value.value)
 }
 
 </script>

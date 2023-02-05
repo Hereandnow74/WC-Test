@@ -26,7 +26,7 @@
           :to="{ path: '/', hash: '#pandora' }"
           class="text-amber-600 dark:text-amber-400 hover:underline text-lg"
         >
-          Pandora’s Alternate Tier Ranks / Despin’s Tier Chart
+          Despin’s Tier Chart
         </router-link>
         <router-link
           v-for="rule in rulesList"
@@ -55,7 +55,7 @@
         <div class="text-lg text-center mb-2 text-teal-600 dark:text-teal-300">
           These Tier lists are aproximations, official tier list do not exist yet.
         </div>
-        <div class="flex w-full pb-2">
+        <!-- <div class="flex w-full pb-2">
           <div
             class="border-l border-t border-r px-4 rounded-t-xl cursor-pointer flex-grow text-center font-bold"
             :class="tiersTab === 0 ? 'bg-amber-500 dark:bg-gray-600' : 'bg-amber-400 dark:bg-gray-700'"
@@ -70,7 +70,7 @@
           >
             Pandora Tier list
           </div>
-        </div>
+        </div> -->
         <h3 v-if="tiersTab === 1" class="sm:text-lg text-center mb-2">
           Pandora’s Alternate Tier Ranks (by
           <a

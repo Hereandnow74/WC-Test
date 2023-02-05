@@ -40,6 +40,7 @@
         :placeholder="perk.anything"
         class="text-base mx-1 w-42"
         :do-not-close-list="true"
+        @clickedOnChoice="(val) => (complex.flavor = val, sendPerk())"
         @click.stop
       />
       <NumberInput
@@ -206,7 +207,7 @@ function changeTarget(target: {uid: number; name: string}) {
   sendPerk()
 }
 
-watch(() => complex.flavor, () => sendPerk())
+// watch(() => complex.flavor, () => sendPerk())
 
 function sendPerk() {
   const obj = filterObject(perkToSave)

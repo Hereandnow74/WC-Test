@@ -170,7 +170,7 @@
           <span>{{ charData.world }}</span>
           <span v-if="charData.sub && charData.sub!== 'Will be deleted.'" class="text-ble-800 dark:text-blue-200"> - {{ charData.sub }}</span>
         </div>
-        <div v-if="charData.nickname" class="ml-2 mb-1 text-xs text-gray-600 dark:text-gray-400 leading-none" :title="nicknames.includes(charData.nickname) ? 'Patron' : ''">
+        <div v-if="charData.nickname" class="ml-2 mb-1 text-xs text-gray-600 dark:text-gray-400 leading-none" :title="nicknames.includes(charData.nickname) ? 'Supporter' : ''">
           by <span :class="{'text-red-400 cursor-help font-semibold': nicknames.includes(charData.nickname)}">{{ charData.nickname }}</span>
         </div>
         <div v-if="showTiers" class="flex justify-between px-2">

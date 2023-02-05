@@ -1,6 +1,6 @@
 <template>
   <Modal label="Rules for submitting a character">
-    <div class="max-h-[85vh] md:h-3/4 bg-gray-300 dark:bg-gray-800 overflow-y-auto min-h-0 flex flex-col gap-2 p-2">
+    <div class="max-h-[85vh] md:h-3/4 bg-gray-300 dark:bg-gray-800 overflow-y-auto min-h-0 flex flex-col gap-2 p-2 scrollbar">
       <Note type="info" title="Tier">
         If you don't know what Tier assign to a Character check out
         <router-link :to="{path:'/', hash:'#pandora'}" class="text-teal-500 hover:underline">
@@ -23,17 +23,22 @@
       <Note type="warning" title="R63 images">
         Due to popular vote male characters with R63 images will not be accepted. NSFW R63 images are allowed though (they need to be NSFW still).
       </Note>
-      <h3>Rules are sorted in order of importance and <b>forbidding</b> in nature. While breaking the lower ones can still be tolerated, it will increase the chance that your character won't be added. Tops one is a flat-out no.</h3>
-      <ul class="list-decimal list-inside">
+      <h3>
+        Rules are sorted in order of importance and <b>forbidding</b> in nature. While breaking the lower ones can still be tolerated, it will increase the chance that your character won't be added. Tops one is a flat-out no. Do note that these rules are purely on who gets added to Interactive's global database, and not a rules for actual WC, these are described in <router-link class="text-blue-800 dark:text-blue-400 hover:underline" :to="{path: '/', hash: '#captures'}">
+          Extending Your Build: Captures
+        </router-link> rules.
+      </h3>
+      <ul class="list-decimal list-inside leading-relaxed text-lg">
+        <li>Real Life people born after 19th century</li>
         <li>Duplicates / Gender Bender / Alternative looking ones of <b>already existing</b> characters</li>
         <li>Lolicon in NSFW images.</li>
         <li>Characters that use not <b>their own image.</b></li>
         <li>Characters with a <b>photo</b> where an <b>art</b> option is available. Photos of real people that did not reached 18 years old.</li>
+        <li>Bad quality images.</li>
         <li>Original Characters that didn't appeared anywhere or don't have <b>original art</b> (if you can't find them in google they don't exist).</li>
         <li>Alternative versions of same characters.</li>
         <li>Tier 1-2 characters with <b>bad images</b> or from relatively <b>unpopular</b> works.</li>
         <li>NSFW images that not NSFW in nature won't be accepted.</li>
-        <li>Bad quality images.</li>
       </ul>
     </div>
   </Modal>

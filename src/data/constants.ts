@@ -237,7 +237,7 @@ export const waifuTags = {
   rg: { tag: 'Regenerator', category: 'Powers', short: 'rg', effect: '', desc: 'Is able to subconsciously heal himself from wounds and injuries', style: { background: 'linear-gradient(0deg, rgba(149,4,48,1) 0%, rgba(255,0,77,1) 100%)', color: '#000' } },
   pr: { tag: 'Protagonist', category: 'Other', short: 'pr', effect: '', desc: 'The leading character(s) in a world', style: { background: 'linear-gradient(0deg, rgba(245,70,0,1) 0%, rgba(243,233,0,1) 70%)', color: '#000' } },
   su: { tag: 'Succubus', category: 'Race', short: 'su', effect: '', desc: 'Include Incubus as well', style: { background: 'linear-gradient(0deg, rgba(51,0,95,1) 0%, rgba(214,0,137,1) 70%)', color: '#fff' } },
-  cm: { tag: 'Combatant', category: 'Other', short: 'cm', effect: '', desc: 'have a combat expirience / have a combat oriented powerset', style: { background: 'linear-gradient(0deg, rgba(255,90,0,1) 0%, rgba(255,0,26,1) 70%)', color: '#fff' } },
+  cm: { tag: 'Combatant', category: 'Other', short: 'cm', effect: '', desc: 'have a combat experience / have a combat oriented powerset', style: { background: 'linear-gradient(0deg, rgba(255,90,0,1) 0%, rgba(255,0,26,1) 70%)', color: '#fff' } },
   is: { tag: 'Insane', category: 'Personality', short: 'is', effect: '', desc: '', style: { background: 'linear-gradient(90deg, rgba(165,5,199,1) 0%, rgba(243,104,245,1) 50%, rgba(165,5,199,1) 100%)', color: '#fff' } },
   rw: { tag: 'Reality Warper', category: 'Powers', short: 'rw', effect: '', desc: 'Is able to manipulate, change or alter reality in any way shape or form', style: { background: 'linear-gradient(90deg, rgba(132,4,185,1) 0%, rgba(255,15,153,1) 50%, rgba(132,4,185,1) 100%)', color: '#fff' } },
   ha: { tag: 'Hacker', category: 'Occupation', short: 'ha', effect: '', desc: 'A being who specializes in reverse engineering, finding loopholes, and exploiting programs and digital systems in general.', style: { background: 'linear-gradient(0deg, rgba(71,107,77,1) 0%, rgba(0,255,29,1) 70%)', color: '#000' } },
@@ -259,6 +259,7 @@ export const waifuTags = {
   sg: { tag: 'Ship-girl', category: 'Race', short: 'sg', effect: '', desc: 'Female Waifu featuring design elements of a ride/anthropomorphization of a ride', color: 'bg-teal-500 text-black' },
   fa: { tag: 'Familiars', category: 'Utility', short: 'fa', effect: '', desc: 'Character has a familiar(s) that comes with purchase, and factored into their tier', color: 'bg-teal-500 text-black' },
   ff: { tag: 'Fairy', category: 'Race', short: 'ff', effect: '', desc: '', color: 'bg-teal-500 text-black' },
+  vt: { tag: 'VTuber', category: 'Occupation', short: 'vt', effect: '', desc: 'This character is an avatar not related to real person behind the scene in any way', color: 'bg-teal-500 text-black' },
 } as const
 
 export const tagCategories = uniqWith(Object.values(waifuTags), (tagA, tagB) => tagA.category === tagB.category).map(tag => tag.category)
