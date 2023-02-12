@@ -79,7 +79,7 @@
               <div class="flex flex-wrap gap-1 text-sm">
                 <strong>Changed tags:</strong>
                 <div v-for="tag in changes[charData.uid].tags" :key="tag" class="bg-gray-700 rounded px-0.5" :class="[charData.tags.includes(tag) ? 'text-green-500' : 'text-red-500']">
-                  {{ waifuTags[tag].tag }}
+                  {{ waifuTags[tag]?.tag || tag }}
                 </div>
               </div>
             </div>

@@ -1,7 +1,8 @@
 <template>
   <div class="flex flex-col gap-2 pb-8 sm:p-2">
     <Desc :desc="genericDesc" class="p-2 mb-4 max-w-4xl mx-auto bg-violet-200 dark:bg-violet-900" />
-    <div>
+    <div class="flex gap-2 mx-auto">
+      <Button size="Small" bg-color="bg-orange-500" label="Propose Waifu Perk" @click="showAddWaifuPerk = true" />
       <Toggle v-model="filterAvailable" label="Show only available ones" />
     </div>
     <div
@@ -10,7 +11,7 @@
       :class="{'!grid-cols-1': buildLayout}"
     >
       <SpecificPerkCard
-        v-for="waifu in filterAvailable ? specificPerksFiltered : specificPerksWithDLC"
+        v-for="waifu in filterAvailable ? specificPerksFiltered : specificPerksWithLocal"
         :key="waifu.uid"
         :waifu-perk="waifu"
         @changeModalImage="(img: string) => modalImage = img"
@@ -31,7 +32,8 @@ import { waifu_perks, DLCwaifu_perks } from '~/data/waifu_perks'
 import { genericDesc } from '~/data/talents'
 import { useTooltips } from '~/logic/misc'
 import { useStore } from '~/store/store'
-import { buildLayout } from '~/logic/toggles'
+import { buildLayout, showAddWaifuPerk } from '~/logic/toggles'
+import { localPerks } from '~/logic/localPerks'
 
 const { settings, companionsUIDs, companionsByUID } = useStore()
 
@@ -47,7 +49,9 @@ const specificPerksWithDLC = computed(() => !settings.value.allChosenAuthors[0]
       .filter(perk => perk.dlc && !settings.value.allChosenAuthors.includes(perk.dlc)))
   : waifu_perks)
 
-const specificPerksFiltered = computed(() => specificPerksWithDLC.value.filter((perk) => {
+const specificPerksWithLocal = computed(() => specificPerksWithDLC.value.concat(localPerks.value['Specific waifu perk'] || []))
+
+const specificPerksFiltered = computed(() => specificPerksWithLocal.value.filter((perk) => {
   let res = false
   if (companionsByUID.value[perk.uid])
     return true

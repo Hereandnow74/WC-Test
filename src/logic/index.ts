@@ -87,6 +87,14 @@ export function proposePerk(perk: any, callback: any) {
     console.error('Error proposing a perk: ', e)
   }
 }
+export function proposeWaifuPerk(perk: any, callback: any) {
+  try {
+    addDoc(collection(db, 'waifuPerks'), perk).then(callback)
+  }
+  catch (e) {
+    console.error('Error proposing a perk: ', e)
+  }
+}
 
 export function proposeMission(mission: any, callback: any) {
   try {

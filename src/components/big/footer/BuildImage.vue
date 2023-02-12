@@ -222,9 +222,9 @@
         <div class="float-left mr-2" :style="{'color': imageSettings.categoryColor}">
           Specific Credit Modifiers:
         </div>
-        <div v-for="mod in specificMods" :key="mod.desc" :style="{'color': imageSettings.perkColor}">
+        <div v-for="mod,i in specificMods" :key="mod.desc" :style="{'color': imageSettings.perkColor}">
           <span>{{ mod.desc }}</span>
-          <span>[<span :style="{'color': imageSettings.numberColor}">{{ numberToSigned(mod.mod) }}</span>]</span>
+          <span>[<span :style="{'color': imageSettings.numberColor}">{{ numberToSigned(mod.mod) }}</span>]<span v-if="i !== specificMods.length -1" class="text-orange-500">,</span></span>
         </div>
       </div>
     </template>

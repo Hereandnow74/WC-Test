@@ -87,7 +87,7 @@ const types = {
     title: 'World was added by user',
   },
   local: {
-    color: 'text-blue-200',
+    color: 'text-blue-300',
     title: 'The world that you added locally',
   },
 }

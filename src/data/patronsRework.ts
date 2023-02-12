@@ -54,8 +54,8 @@ export const patrons = [
     image: 'https://i.imgur.com/hb4RdnI.png',
     cost: 0,
     desc: `
-      <i>The Fae have a curiosity unlike all others. They seek to collect. To understand. Their curiosity is alien, though some merely call it whimsical. A few examples of their esoteric desires are a laugh, a concept, or a firstborn child. All of these have meanings they wish to comprehend. They are Tricksters, Scientists, and Unknowable entities in equal measure</i> 
-      <p>Alternatively, they only adopt that Zen Fairy attitude when their contractors are around, as it’s really fun to mess with people when telling someone to acquire something so bizarre as a laugh.</p>
+      <i>The Fae have a curiosity unlike all others. They seek to collect. To understand. Their curiosity is alien, though some merely call it whimsical. A few examples of their esoteric desires are a laugh, a concept, or a firstborn child. All of these have meanings they wish to comprehend. They are Tricksters, Scientists, and Unknowable entities in equal measure
+      <p>Alternatively, they only adopt that Zen Fairy attitude when their contractors are around, as it’s really fun to mess with people when telling someone to acquire something so bizarre as a laugh.</p></i> 
       <p>In exchange for doing the odd jobs issued to you, the Fae are willing to double all credits you receive from missions. They will not double non-credit rewards, including TX Tickets.</p>
       <p>Unfortunately, the Fae’s influence rubs off on Contractors they sponsor. Those under the patronage of the Fae lose the ability to overtly lie. Instead they must learn to conceal, misdirect and omit that which they know in the case they are put in a situation where they must do so. Though many have tried, no power, talent or amount of TX tickets will allow you to regain the ability to directly lie to others.</p>
     `,

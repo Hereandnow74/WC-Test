@@ -57,32 +57,32 @@
       </h3>
       <div class="flex flex-col gap-2">
         <div class="flex justify-between gap-2 border-b border-gray-500 border-dotted">
-          <div>Show images for <b>perk's</b></div>
-          <Toggle v-model="settings.perkImages" />
+          <div>Hide images for <b>Perks</b></div>
+          <Toggle :value="!settings.perkImages" @click="settings.perkImages = !settings.perkImages" />
+        </div>
+        <div class="flex justify-between gap-4 border-b border-gray-500 border-dotted">
+          <div>Hide images for <b>Worlds</b></div>
+          <Toggle v-model="settings.hideWorldImg" />
+        </div>
+        <div class="flex justify-between gap-4 border-b border-gray-500 border-dotted">
+          <div>Hide images for <b>Companions / Waifu perks</b> </div>
+          <Toggle v-model="settings.allImg" />
         </div>
         <div class="flex justify-between gap-4 border-b border-gray-500 border-dotted">
           <div>Load <b>NSFW</b> Images for characters by default</div>
           <Toggle v-model="settings.nsfw" />
         </div>
         <div class="flex justify-between gap-4 border-b border-gray-500 border-dotted">
-          <div>Hide <b>World</b> images</div>
-          <Toggle v-model="settings.hideWorldImg" />
+          <div>Hide <b>descriptions for perks</b> by default</div>
+          <Toggle v-model="settings.hideDesc" />
         </div>
         <div class="flex justify-between gap-4 border-b border-gray-500 border-dotted">
-          <div>Hide <b>Companions / Waifu perks</b> images</div>
-          <Toggle v-model="settings.allImg" />
+          <div>Hide <b>legacy perks</b>  by default</div>
+          <Toggle v-model="settings.hideLegacy" />
         </div>
         <div class="flex justify-between gap-4 border-b border-gray-500 border-dotted">
           <div>Turn on the ability to <b>free</b> retinue members</div>
           <Toggle v-model="settings.ableSell" />
-        </div>
-        <div class="flex justify-between gap-4 border-b border-gray-500 border-dotted">
-          <div>Hide <b>descriptions</b> for perks by default</div>
-          <Toggle v-model="settings.hideDesc" />
-        </div>
-        <div class="flex justify-between gap-4 border-b border-gray-500 border-dotted">
-          <div>Hide <b>legacy</b> perks by default</div>
-          <Toggle v-model="settings.hideLegacy" />
         </div>
         <div class="flex justify-between gap-4 border-b border-gray-500 border-dotted">
           <div>Use manual defense <b>rebates</b> calculation</div>

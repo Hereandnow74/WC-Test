@@ -23,6 +23,7 @@
       <component :is="BuildImageSettings" v-if="showBuildImageSettings" class="z-20" @click="showBuildImageSettings = !showBuildImageSettings" />
       <component :is="Share" v-if="showShare" class="z-20" @click="showShare = !showShare" />
       <component :is="addPerkComponent" v-if="showAddPerk" @click="toggleShowAddPerk()" />
+      <component :is="addWaifuPerkComponent" v-if="showAddWaifuPerk" @click="toggleShowAddWaifuPerk()" />
       <component :is="settingsComponent" v-if="showSettings" @click="toggleShowSettings()" />
       <component :is="addFicComponent" v-if="showAddFic" :fic="currentFic" @click="toggleAddFic()" />
       <BuildImage v-if="isBuildImage" />
@@ -36,7 +37,7 @@ import { VERSION } from './data/constants'
 import {
   isSupport, showSaveLoad, showShare, showSideMenu, showAddPerk, toggleShowAddPerk,
   showAddMission, toggleShowAddMission, promoteShown, toggleShowSettings, showSettings, sendStats,
-  buildImage, copyText, clearBuild, isBuildImage, toggleAddFic, showAddFic, currentFic, toggleDark, randomString, sendCount, showIntro, showBuildImageSettings, buildLayout,
+  buildImage, copyText, clearBuild, isBuildImage, toggleAddFic, showAddFic, currentFic, toggleDark, randomString, sendCount, showIntro, showBuildImageSettings, buildLayout, showAddWaifuPerk, toggleShowAddWaifuPerk,
 } from '~/logic'
 
 const { totalActive, settings, companions, startingWorld, allEffects, ridePerks, waifuPerks } = useStore()
@@ -45,6 +46,7 @@ const Smartphone = computed(() => defineAsyncComponent(() => import('./component
 const Footer = computed(() => defineAsyncComponent(() => import('./components/big/Footer.vue')))
 
 const addPerkComponent = computed(() => defineAsyncComponent(() => import('./components/modals/AddPerk.vue')))
+const addWaifuPerkComponent = computed(() => defineAsyncComponent(() => import('./components/modals/AddWaifuPerk.vue')))
 const addFicComponent = computed(() => defineAsyncComponent(() => import('./components/modals/AddFic.vue')))
 const settingsComponent = computed(() => defineAsyncComponent(() => import('./components/modals/Settings.vue')))
 const PromoteDialog = computed(() => defineAsyncComponent(() => import('./components/modals/dialogs/PromoteDialog.vue')))

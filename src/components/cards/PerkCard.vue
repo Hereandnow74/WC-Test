@@ -75,7 +75,7 @@
     </div>
     <div class="relative">
       <Desc
-        v-if="perk.additionalDesc && !settings.hideDesc"
+        v-if="perk.additionalDesc && (!settings.hideDesc && !collapsedDescsSet.has(perk.uid))"
         :desc="perk.additionalDesc"
         class="bg-amber-200 text-gray-800 text-sm md:text-base w-3/5 float-right mt-8 mx-2 border-3 border-gray-900"
       />

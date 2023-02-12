@@ -130,7 +130,7 @@ const page = ref(0)
 const options = reactive({
   findAllMatches: true,
   useExtendedSearch: true,
-  threshold: 0.6,
+  threshold: 0.4,
   ignoreLocation: true,
   keys: ['loca', 'scope', 'author', 'desc', 'conditions.value', 'objectives.value', 'objectives.reward', 'reward'],
   shouldSort: false,

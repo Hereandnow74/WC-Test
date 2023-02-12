@@ -6,6 +6,16 @@
       </h2>
       <div>
         <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          09 February 2023
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~120 new user submitted characters, new missions, new worlds</li>
+          <li>A separate form for proposing Specific Waifu Perks, it allows adding local perks too.</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
           05 February 2023
         </h3>
         <ul class="list-decimal list-inside">
