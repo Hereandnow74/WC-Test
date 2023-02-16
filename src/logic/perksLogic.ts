@@ -59,7 +59,7 @@ export function deletePerk(perkList: Perk[], checkFunc: (arg: any) => boolean) {
     const origPerk = ALL_PERK_TITLES.value[perkList[i].title]
     if (!checkFunc(origPerk)) {
       toDel.push(perkList[i].title)
-      if (!flags.value.chargen && perkList[i].cost < 11111 && perkList[i].cost > 0) fee.value += Math.round(perkList[i].cost * 0.2) || 0
+      if (!flags.value.chargen && perkList[i].cost > 0) fee.value += Math.round(perkList[i].cost * 0.2) || 0
       if (perkList[i].freebies) deleteFreebies(perkList[i].freebies)
       if (origPerk.typeFreebies)
         deleteFreebies(origPerk.typeFreebies[flags.value.transhumanType])
@@ -113,7 +113,7 @@ export function pickSimplePerk(perk: PerkFull, saveData: Perk, isAvailable: (arg
         deleteFreebies(perks[ind].freebies)
         const toDel = perks.splice(ind, 1)
         allEffects.value.splice(allEffects.value.indexOf(toDel[0].title), 1)
-        if (!flags.value.chargen && toDel[0].cost < 11111) fee.value += Math.round(toDel[0].cost * 0.2) || 0
+        if (!flags.value.chargen && toDel[0].cost > 0) fee.value += Math.round(toDel[0].cost * 0.2) || 0
         deletePerk(perks, isAvailable)
       }
     }
@@ -139,7 +139,7 @@ export function chooseIntensity(rule: Intensity, coopIntensity = 0, coopCount = 
   const ind = findIndex(intensities.value, { title: rule.title })
   if (ind !== -1) {
     const toDel = intensities.value.splice(ind, 1)[0]
-    if (!flags.value.chargen && toDel.cost < 11111 && toDel.cost > 0) fee.value += Math.round(toDel.cost * 0.2) || 0
+    if (!flags.value.chargen && toDel.cost > 0) fee.value += Math.round(toDel.cost * 0.2) || 0
     allEffects.value.splice(allEffects.value.indexOf(toDel.title), 1)
     deletePerk(intensities.value, intensityAvailable)
   }
@@ -189,7 +189,7 @@ export function chooseBinding(bin: PerkFull, saveData: Perk, checkFunc = binding
     else {
       const toDel = binding.value.splice(ind, 1)[0]
       if (toDel.freebies) deleteFreebies(toDel.freebies)
-      if (!flags.value.chargen && toDel.cost < 11111 && toDel.cost > 0) fee.value += Math.round(toDel.cost * 0.2) || 0
+      if (!flags.value.chargen && toDel.cost > 0) fee.value += Math.round(toDel.cost * 0.2) || 0
       allEffects.value.splice(allEffects.value.indexOf(toDel.title), 1)
       deletePerk(binding.value, checkFunc)
       if (binding.value.length === 0) flags.value.noBindings = true
@@ -258,7 +258,7 @@ export function chooseLure(lure: PerkFull, saveData: Perk) {
     }
     else {
       const toDel = luresBought.value.splice(ind, 1)[0]
-      if (!flags.value.chargen && toDel.cost < 11111 && toDel.cost > 0) fee.value += Math.round(toDel.cost * 0.2) || 0
+      if (!flags.value.chargen && toDel.cost > 0) fee.value += Math.round(toDel.cost * 0.2) || 0
       allEffects.value.splice(allEffects.value.indexOf(toDel.title), 1)
       deletePerk(luresBought.value, lureAvailable)
       if (lure.freebies) deleteFreebies(lure.freebies)
@@ -318,7 +318,7 @@ export function chooseHeritage(hr: Heritage, saveData: Perk) {
       }
       const toDel = heritage.value.splice(ind, 1)[0]
       if (toDel.freebies) deleteFreebies(toDel.freebies)
-      if (!flags.value.chargen && toDel.cost < 11111 && toDel.cost > 0) fee.value += Math.round(toDel.cost * 0.2) || 0
+      if (!flags.value.chargen && toDel.cost > 0) fee.value += Math.round(toDel.cost * 0.2) || 0
       allEffects.value.splice(allEffects.value.indexOf(toDel.title), 1)
       deletePerk(heritage.value, heritageAvailable)
     }
@@ -366,7 +366,7 @@ export function chooseRide(ride: Ride, selectedRide: Ride) {
       }
       else {
         const del = ridePerks.value.splice(ind, 1)
-        if (!flags.value.chargen && del[0].cost < 11111) fee.value += Math.round(del[0].cost * 0.2) || 0
+        if (!flags.value.chargen && del[0].cost > 0) fee.value += Math.round(del[0].cost * 0.2) || 0
         flags.value.hasARide = !!ridePerks.value.length
       }
     }
@@ -432,7 +432,7 @@ export function chooseDefense(def: PerkFull, saveData: Perk) {
       else {
         const toDel = defensePerks.value.splice(ind, 1)
         allEffects.value.splice(allEffects.value.indexOf(toDel[0].title), 1)
-        if (!flags.value.chargen && toDel[0].cost < 11111) fee.value += Math.round(toDel[0].cost * 0.2) || 0
+        if (!flags.value.chargen && toDel[0].cost > 0) fee.value += Math.round(toDel[0].cost * 0.2) || 0
         deletePerk(defensePerks.value, defenseAvailable)
       }
     }
@@ -496,7 +496,7 @@ export function chooseWaifuPerk(fullPerk: WaifuPerk, perk: Perk) {
   const ind = findIndex(waifuPerks.value, { uid: perk.uid })
   if (ind !== -1) {
     const toDel = waifuPerks.value.splice(ind, 1)
-    if (!flags.value.chargen && toDel[0].cost < 11111)
+    if (!flags.value.chargen && toDel[0].cost > 0)
       fee.value += Math.round(toDel[0].cost * 0.2) || 0
   }
   else if (specificAvailable(fullPerk)) {

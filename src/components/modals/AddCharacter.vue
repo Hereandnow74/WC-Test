@@ -132,7 +132,7 @@ const zodObject = zod.object({
   name: zod.string().nonempty('Character name is required').max(64, { message: 'Maximum length is 64 chars' }),
   world: zod.string().nonempty('World name is required').max(64, { message: 'Maximum length is 64 chars' }),
   sub: zod.string().nonempty('World name is required').max(64, { message: 'Maximum length is 64 chars' }).optional().or(zod.literal('')),
-  tier: zod.number().min(1, { message: 'Minimum tier is 1' }).max(11, { message: 'Maximum tier is 11' }),
+  tier: zod.number().min(1, { message: 'Minimum tier is 1' }).max(13, { message: 'Maximum tier is TZ' }),
   image: zod.string().regex(/[^ \!@\$\^&\(\)\+\=]+(\.png|\.jpeg|\.gif|\.jpg|\.webp)$/, { message: 'Must be a valid image URL in a jpeg/jpg/png/gif/webp format.' }).max(256, { message: 'Maximum length is 256 chars' }),
   image_nsfw: zod.string().regex(/[^ \!@\$\^&\(\)\+\=]+(\.png|\.jpeg|\.gif|\.jpg|\.webp)$/, { message: 'Must be a valid image URL in a jpeg/jpg/png/gif/webp format.' }).max(256, { message: 'Maximum length is 256 chars' }).optional().or(zod.literal('')),
   tags: zod.string().max(24, { message: 'Max tag length is 24 chars' }).nonempty('No empty tags').array().refine(tagsArr => difference(tagsArr, defTags).length <= 10, { message: 'Maximum 10 tags' }),
@@ -141,6 +141,7 @@ const zodObject = zod.object({
 const zodGlobal = zodObject.extend({ nickname: zod.string().nonempty('Nickname is required') })
 
 const schema = computed(() => serverSave.value ? toFormValidator(zodGlobal) : toFormValidator(zodObject))
+console.log(props.character)
 
 const { errors, handleSubmit } = useForm({
   validationSchema: schema,
@@ -149,7 +150,7 @@ const { errors, handleSubmit } = useForm({
     world: props.editMode ? props.character.world || '' : '',
     sub: props.editMode ? props.character.sub || '' : '',
     name: props.editMode ? props.character.name || '' : '',
-    image: props.editMode ? props.character.image || '' : '',
+    image: props.editMode ? props.character.sourceImage || props.character.image || '' : '',
     image_nsfw: props.editMode ? props.character.image_nsfw || '' : '',
     tags: props.editMode ? props.character.tags || [] : [],
     nickname: userNickname.value ? userNickname.value : '',

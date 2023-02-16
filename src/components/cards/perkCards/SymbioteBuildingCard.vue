@@ -96,14 +96,14 @@ const perkToSave = computed(() => {
     title: props.perk.title,
     cost: props.perk.cost,
     count: count.value,
+    costT: props.perk.costT,
     dCost: count.value * props.perk.dCost,
     freebies: { ...props.perk.freebies } || undefined,
   }
 })
 
 const displayedCost = computed(() => {
-  const s = perkToSave.value.cost / 11111 === 0 || perkToSave.value.cost / 11111 >= 2 ? 's' : ''
-  return props.perk.cost >= 11111 ? `${perkToSave.value.cost / 11111} TX ticket${s}` : perkToSave.value.cost
+  return props.perk.costT ? `${perkToSave.costT} IMG` : perkToSave.cost
 })
 
 function sendPerk() {

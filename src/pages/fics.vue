@@ -116,7 +116,7 @@ const filteredFics = computed(() => {
 })
 
 async function loadFics() {
-  fics.value = (await import('~/data/fics.json')).default as Fic[]
+  fics.value = (await import('~/data/json/fics.json')).default as Fic[]
 }
 
 function editFic(fic: any) {

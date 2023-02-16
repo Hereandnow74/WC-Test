@@ -30,9 +30,9 @@
         <TextArea v-model="desc" placeholder="Mission description" :rows="'4'" :error-message="errors.desc" />
       </div>
       <div class="flex gap-2">
-        <Select v-model="rewardType" placeholder="Reward Type" :options="['Credits', 'TX Tickets', 'Perks', 'Companions', 'Other']" :error-message="errors.rewardType" />
+        <Select v-model="rewardType" placeholder="Reward Type" :options="['Credits', 'IMG Tickets', 'Perks', 'Companions', 'Other']" :error-message="errors.rewardType" />
         <NumberInput
-          v-if="['Credits', 'TX Tickets'].includes(rewardType)"
+          v-if="['Credits', 'IMG Tickets'].includes(rewardType)"
           v-model="reward"
           placeholder="Main reward"
           :error-message="errors.reward"
@@ -87,11 +87,11 @@
               <Select
                 v-model="requirement.type"
                 placeholder="Reward Type"
-                :options="['Credits', 'TX Tickets', 'Perks', 'Companions', 'Other']"
+                :options="['Credits', 'IMG Tickets', 'Perks', 'Companions', 'Other']"
                 :error-message="errors[`objectives[${i}].type`]"
               />
               <NumberInput
-                v-if="['Credits', 'TX Tickets'].includes(requirement.type)"
+                v-if="['Credits', 'IMG Tickets'].includes(requirement.type)"
                 v-model="requirement.reward"
                 :placeholder="`Bonus reward (optional) #${i + 1}`"
                 :error-message="errors[`objectives[${i}].reward`]"

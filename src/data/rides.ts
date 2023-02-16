@@ -429,7 +429,8 @@ rides.push({
   category: 'Space',
   size: 'Medium',
   image: 'https://i.ibb.co/BcRqzgZ/Ideon-And-Solo.jpg',
-  cost: 11111,
+  cost: 0,
+  costT: 1,
   desc: '(Solo): DS Drive, onboard forest. (Ideon): Three-part combining mecha, arbitrarily powerful weapons and defenses, infinite energy.',
   capacity: '3 mech pilots, ? crew',
 })

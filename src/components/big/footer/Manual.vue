@@ -9,19 +9,19 @@
       <Input v-model.number="budgetMods.minus" class="w-24" />
     </div>
     <div class="flex justify-between">
-      Plus TX tickets
+      Plus IMG tickets
       <NumberInput v-model="budgetMods.plus11" theme="dark" :min="0" class="w-24" />
     </div>
     <div class="flex justify-between">
-      Minus TX tickets
+      Minus IMG tickets
       <NumberInput v-model="budgetMods.minus11" theme="dark" :min="0" class="w-24" />
     </div>
     <div class="flex justify-between">
-      Sell TX ticket for 2000 credits
+      Sell IMG ticket for 2000 credits
       <NumberInput v-model="budgetMods.sell11" theme="dark" :min="0" class="w-24" />
     </div>
     <div class="flex justify-between">
-      <span>Fee <span class="text-sm text-gray-400">(forever lost credits from selling perks)</span></span>
+      <span>Fee <span class="text-sm text-gray-400">(forever lost credits from selling perks and loan repayment)</span></span>
       <Input v-model.number="fee" class="w-24" />
     </div>
     <div class="flex flex-col gap-2 text-gray-800 border rounded p-2">

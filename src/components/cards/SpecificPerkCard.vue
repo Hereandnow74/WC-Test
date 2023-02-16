@@ -22,11 +22,11 @@
       :data-src="waifuPerk.image_2"
       :alt="waifuPerk.title"
     />
-    <icon-park-outline:full-screen-one
+    <!-- <icon-park-outline:full-screen-one
       v-if="waifuPerk.image !==''"
       class="absolute top-3 right-3 text-gray-200 hover:text-blue-400 cursor-pointer mix-blend-difference"
       @click.stop="() => emit('changeModalImage', waifuPerk.image)"
-    />
+    /> -->
     <h3 class="flex gap-1 flex-wrap text-lg font-bold relative">
       {{ waifuPerk.title }}
       <Select
@@ -79,9 +79,10 @@
       from <span class="dark:text-violet-200 text-violet-900">{{ waifuPerk.from }}</span>
     </div>
     <div class="flex gap-4">
-      <span v-if="waifuPerk.cost"><span class="font-bold">Cost:</span> {{ waifuPerk.cost===11111 ? 'Tier X ticket' : waifuPerk.cost }} </span>
+      <span v-if="waifuPerk.costT"><span class="font-bold">Cost:</span> {{ waifuPerk.costT + ' IMG' }} </span>
+      <span v-if="waifuPerk.cost"><span class="font-bold">Cost:</span> {{ waifuPerk.cost }} </span>
       <span v-if="waifuPerk.discount"><span class="font-bold">Refund:</span> {{ waifuPerk.discount }}</span>
-      <span v-if="waifuPerk.tier"><span class="font-bold">Become:</span> T{{ waifuPerk.tier }}</span>
+      <span v-if="waifuPerk.tier"><span class="font-bold">Become:</span> T<TierDisplay :tier="waifuPerk.tier" /></span>
     </div>
     <Table
       v-if="waifuPerk.title === 'Lord Camelot'"
@@ -99,7 +100,7 @@ import { findIndex, isNumber, isString, find } from 'lodash-es'
 import { WaifuPerk } from '~/data/waifu_perks'
 import { chooseWaifuPerk, lazyLoadSingleImg, specificAvailable } from '~/logic'
 import { useStore } from '~/store/store'
-import { CHAR_COSTS, PLACEHOLDER_IMAGE, useAllChars } from '~/data/constants'
+import { CHAR_COSTS, CHAR_COSTS_TICKET, PLACEHOLDER_IMAGE, useAllChars } from '~/data/constants'
 import { buyCompanion } from '~/logic/waifuLogic'
 
 const props = defineProps({
@@ -165,8 +166,9 @@ function pickWaifuPerk() {
               uid: props.waifuPerk.uid,
               title: props.waifuPerk.title,
               tier: props.waifuPerk.tier,
-              cost: props.waifuPerk.tier !== 11 ? CHAR_COSTS[props.waifuPerk.tier] : 0,
-              refund: tier !== 11 ? CHAR_COSTS[tier] : 0,
+              cost: CHAR_COSTS[props.waifuPerk.tier],
+              costT: CHAR_COSTS_TICKET[props.waifuPerk.tier],
+              refund: CHAR_COSTS[tier],
             }
           }
         }
@@ -175,8 +177,9 @@ function pickWaifuPerk() {
             uid: props.waifuPerk.uid,
             title: props.waifuPerk.title,
             tier: props.waifuPerk.tier,
-            cost: props.waifuPerk.tier !== 11 ? CHAR_COSTS[props.waifuPerk.tier] : 0,
-            refund: tier !== 11 ? CHAR_COSTS[tier] : 0,
+            cost: CHAR_COSTS[props.waifuPerk.tier],
+            costT: CHAR_COSTS_TICKET[props.waifuPerk.tier],
+            refund: CHAR_COSTS[tier],
           }
         }
       }
@@ -186,35 +189,6 @@ function pickWaifuPerk() {
     if (companionsByUID.value[props.waifuPerk.uid])
       delete companionsByUID.value[props.waifuPerk.uid].perk
   }
-
-  // if (findIndex(waifuPerks.value, { uid: props.waifuPerk.uid }) !== -1) {
-  //   chooseWaifuPerk(props.waifuPerk, { title: props.waifuPerk.title, waifu: chosenWaifu.value, uid: props.waifuPerk.uid, cost: props.waifuPerk.cost || 0, refund: props.waifuPerk.discount || 0 })
-  //   const ind = findIndex(companions.value, { uid: props.waifuPerk.uid })
-  //   if (ind !== -1)
-  //     companions.value.splice(ind, 1)
-  //   return
-  // }
-
-  // const savedCharInd = findIndex(companions.value, { uid: charUID })
-  // const savedChar = companions.value[savedCharInd]
-  // // If character UID not equal Waifu Perk UID
-  // if (savedChar && savedChar.uid !== props.waifuPerk.uid && props.waifuPerk.tier) {
-  //   // If old character UID is Waifu Perk UID, delete old Waifu Perk
-  //   if (isString(savedChar.uid)) {
-  //     const ind = findIndex(waifuPerks.value, { uid: savedChar.uid })
-  //     if (ind !== -1)
-  //       waifuPerks.value.splice(ind, 1)
-  //   }
-  //   chooseWaifuPerk(props.waifuPerk, { title: props.waifuPerk.title, waifu: chosenWaifu.value, uid: props.waifuPerk.uid, cost: props.waifuPerk.cost ? (savedChar.method !== 'capture' ? CHAR_COSTS[props.waifuPerk.tier] : props.waifuPerk.cost) : 0, refund: props.waifuPerk.discount || 0 })
-
-  //   savedChar.uid = props.waifuPerk.uid
-  //   savedChar.tier = props.waifuPerk.tier
-  //   if (props.waifuPerk.cost && savedChar.method !== 'capture')
-  //     savedChar.priceTier = 0
-  // }
-  // else if (!props.waifuPerk.tier || !savedChar) {
-  //   chooseWaifuPerk(props.waifuPerk, { title: props.waifuPerk.title, waifu: chosenWaifu.value, uid: props.waifuPerk.uid, cost: props.waifuPerk.cost || 0, refund: props.waifuPerk.discount || 0 })
-  // }
 }
 
 onMounted(() => {

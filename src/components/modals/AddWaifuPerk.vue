@@ -116,7 +116,7 @@ const localPerksExist = computed(() => Object.values(localPerks.value).some(x =>
 watch([tier, () => waifu.value.length], () => {
   if (tier.value && waifuUID.value.length)
     cost.value = (CHAR_COSTS[+tier.value] || 0) - (CHAR_COSTS[tempTier.value] || 0)
-  if (cost.value > 1000) cost.value = 'TX Ticket'
+  if (cost.value > 1000) cost.value = 'IMG Ticket'
 })
 
 const addPerk = handleSubmit((values) => {

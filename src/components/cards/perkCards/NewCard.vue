@@ -83,12 +83,12 @@ const { settings, collapsedDescs, collapsedDescsSet } = useStore()
 const perkToSave = reactive({
   title: props.perk.title,
   cost: props.perk.cost,
+  costT: props.perk.costT,
   freebies: { ...props.perk.freebies } || undefined,
 })
 
 const displayedCost = computed(() => {
-  const s = perkToSave.cost / 11111 === 0 || perkToSave.cost / 11111 >= 2 ? 's' : ''
-  return props.perk.cost >= 11111 ? `${perkToSave.cost / 11111} TX ticket${s}` : perkToSave.cost
+  return props.perk.costT ? `${perkToSave.costT} IMG` : perkToSave.cost
 })
 
 function sendPerk() {

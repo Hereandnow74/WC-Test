@@ -18,10 +18,8 @@
         </Note>
         <div class="flex gap-2 justify-between">
           <div>Current tier: {{ character.tier }}</div>
-          <NumberInput
+          <Tiers
             v-model="tier"
-            :min="1"
-            :max="11"
             label="Correct tier"
             class="whitespace-nowrap"
             :error-message="errors.tier"
@@ -145,7 +143,7 @@ const zodObject = computed(() => {
   let obj = zod.object({ nickname: zod.string().nonempty('Nickname is required') })
   if (wrongTier.value) {
     obj = obj.extend({
-      tier: zod.number().min(1, { message: 'Minimum tier is 1' }).max(11, { message: 'Maximum tier is 11' }).refine(val => val !== props.character.tier, { message: 'Should not equal old tier' }),
+      tier: zod.number().min(1, { message: 'Minimum tier is 1' }).max(13, { message: 'Maximum tier is TZ' }).refine(val => val !== props.character.tier, { message: 'Should not equal old tier' }),
       args: zod.string().nonempty({ message: 'Arguments are required' }).max(256, { message: 'Maximum length is 256 chars' }),
     })
   }

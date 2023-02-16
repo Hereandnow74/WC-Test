@@ -2,7 +2,7 @@ import Fuse from 'fuse.js'
 import { random, groupBy, sampleSize, findIndex, sample, isNumber, xor } from 'lodash-es'
 import tippy from 'tippy.js'
 import { DBWorld } from 'global'
-import { allWorldsNoCondition, ALL_DLC_PERK_TITLES, CHAR_COSTS, getAllChars, useAllChars } from '~/data/constants'
+import { allWorldsNoCondition, ALL_DLC_PERK_TITLES, CHAR_COSTS, getAllChars, shownValue, useAllChars } from '~/data/constants'
 
 import { useStore } from '~/store/store'
 import { clearAll, isBuildImage } from '~/logic'
@@ -179,7 +179,7 @@ const originTextClean = computed(() => {
     'Walk-In': `Walked-In as ${startingOrigin.value.character} of T${startingOrigin.value.tier}`,
     'Extra': `'Extra' with ${startingOrigin.value.cost} additional cost`,
     'Substitute': `${startingOrigin.value.character} (Substitute) of T${startingOrigin.value.tier}`,
-    'Possess': `${startingOrigin.value.character} (Possess) of T${startingOrigin.value.tier}`,
+    'Possess': `${startingOrigin.value.character} (Possess) of T${shownValue[startingOrigin.value.tier || 0]}`,
   } as Record<string, string>
 
   return variants[startingOrigin.value.title]
@@ -231,7 +231,7 @@ export function numberToSigned(n: number): string {
 }
 
 export function copyText() {
-  const fullCost = { c: baseBudget.value === 11111 ? 0 : baseBudget.value }
+  const fullCost = { c: baseBudget.value }
   if (csr.value) fullCost.c = 0
 
   let full = `Starting World: ${startingWorld.value.worldName}${startingWorld.value.condition ? ` [${startingWorld.value.condition}]` : ''}\nStarting budget ${fullCost.c}\n\n`

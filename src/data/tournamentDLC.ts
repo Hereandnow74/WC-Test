@@ -5,8 +5,8 @@ export const tournamentRules = `
 <p>Each time you complete a round, you get a twenty-four hour rest period, during which the battlespace is not accessible. For the duration of the Tournament, a comfortable rest area is provided that allows d-travel for your retinue, though any team members not present when a round begins can’t participate until the next round. During rests, team members can be withdrawn and other retinue members can be swapped in, as long as the team stays within the Weight Class limits.</p>
 <p>A Tournament is not a death game. Team members who would die are instead ejected to the rest area. All harm done to a team member is reversed upon ejection, up to and including death.</p>
 <p>Winning Round 2 earns Weight Class x 50 credits. Every two rounds, you can decide whether to drop out with your current winnings or continue for doubled rewards, stacking exponentially.</p>
-<p>If your winnings are over 1,000 credits, you may choose to receive one or more TX Tickets in lieu of multiples of 1,000 credits. This opportunity is lost if not used immediately. This does not allow you to convert other credits you have into Tickets.</p>
-<p>As a bonus if you win all 10 rounds, you unlock the option to purchase the dimensional coordinates to your original homeworld in a format compatible with Rainbow Bridge and your other travel methods for 1 TX Ticket.</p>
+<p>If your winnings are over 1,000 credits, you may choose to receive one or more IMG Tickets in lieu of multiples of 1,000 credits. This opportunity is lost if not used immediately. This does not allow you to convert other credits you have into Tickets.</p>
+<p>As a bonus if you win all 10 rounds, you unlock the option to purchase the dimensional coordinates to your original homeworld in a format compatible with Rainbow Bridge and your other travel methods for 1 IMG Ticket.</p>
 `
 
 export const weighTable = [

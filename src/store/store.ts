@@ -3,7 +3,7 @@ import { Perk } from 'global'
 import { useChallenges } from './challenges'
 import { usePlayStore } from './play'
 import { SavedChar, useChargenStore } from './chargen'
-import { CHAR_COSTS, useAllChars, WORLD_RATINGS } from '~/data/constants'
+import { CHAR_COSTS, CHAR_COSTS_TICKET, useAllChars, WORLD_RATINGS } from '~/data/constants'
 import { defenseObject, talentsObject } from '~/data/talents'
 
 const { loan, jumpChain, currentWorld, trHistory, missionRewards } = usePlayStore()
@@ -67,9 +67,6 @@ const baseBudgetAfter = computed(
 )
 
 function costCalc(a: number, x: Perk) {
-  return a += x.cost >= 11111 ? 0 : x.cost
-}
-function costCalcNoTX(a: number, x: Perk) {
   return a += x.cost || 0
 }
 
@@ -80,10 +77,10 @@ const heritageCost = computed(() => heritage.value.reduce(costCalc, 0))
 
 const ridePerksCost = computed(() => ridePerks.value.reduce(costCalc, 0))
 const homePerksCost = computed(() => homePerks.value.reduce(costCalc, 0))
-const talentsCost = computed(() => talentPerks.value.reduce(costCalcNoTX, 0))
-const defensesCost = computed(() => defensePerks.value.reduce(costCalcNoTX, 0))
+const talentsCost = computed(() => talentPerks.value.reduce(costCalc, 0))
+const defensesCost = computed(() => defensePerks.value.reduce(costCalc, 0))
 const miscPerksCost = computed(() => miscPerks.value.reduce(costCalc, 0))
-const waifuPerksCost = computed(() => waifuPerks.value.reduce((a, x) => a += x.cost === 11111 ? -(x.refund || 0) : x.cost - (x.refund || 0), 0))
+const waifuPerksCost = computed(() => waifuPerks.value.reduce((a, x) => a += x.costT ? -(x.refund || 0) : x.cost - (x.refund || 0), 0))
 const genericWaifuPerksCost = computed(() => genericWaifuPerks.value.reduce(costCalc, 0))
 const luresCost = computed(() => luresBought.value.reduce(costCalc, 0))
 const otherCost = computed(() => otherPerks.value.reduce(costCalc, 0))
@@ -92,19 +89,20 @@ const specificModsCost = computed(() => specificMods.value.reduce((a, x) => a +=
 
 const companionsCost = computed(() => {
   return companions.value.reduce((a, x) => {
+    console.log(x)
     if (x.swap)
       a += x.swap.cost - x.swap.refund
     if (x.perk)
       a += x.perk.cost - x.perk.refund
 
-    if (['buy', 'unbound'].includes(x.method) && x.priceTier !== 11)
+    if (['buy', 'unbound'].includes(x.method))
       return a += CHAR_COSTS[x.priceTier] || 0
-    if (x.method === 'yoink' && x.priceTier !== 11) {
+    if (x.method === 'yoink') {
       const cost = CHAR_COSTS[x.priceTier] || 0
       const yoinkCost = cost * 0.2 < 1 ? 1 : cost * 0.2
       return a += cost + yoinkCost
     }
-    if (x.method === 'used' && x.priceTier !== 11)
+    if (x.method === 'used')
       return a += CHAR_COSTS[x.priceTier] || 0
     return a
   }, 0)
@@ -124,13 +122,14 @@ const captureKoeff = computed(() => {
   return manualKf.value || kf
 })
 
+const sellKoeff = computed(() => manualSellKf.value)
+
 const companionProfit = computed(() => {
   return captureKoeff.value > 0
     ? companions.value.reduce((a, x) => {
-      if (x.method === 'capture' && x.priceTier !== 11) {
+      if (x.method === 'capture' && x.priceTier <= 10) {
         if (x.price === undefined && x.priceTier !== 0) {
-          let captureCost = Math.ceil(CHAR_COSTS[x.priceTier] * captureKoeff.value)
-          captureCost = Math.max(1, captureCost)
+          const captureCost = Math.floor(CHAR_COSTS[x.priceTier] * captureKoeff.value)
           a += captureCost
         }
         else { a += x.price || 0 }
@@ -145,13 +144,13 @@ const companionProfit = computed(() => {
 const companionProfitSold = computed(() => {
   return captureKoeff.value > 0
     ? companions.value.reduce((a, x) => {
-      if (x.sold && x.tier !== 11 && ['capture'].includes(x.method)) {
+      if (x.sold && x.tier <= 11 && ['capture'].includes(x.method)) {
         if (x.soldPrice === undefined)
-          return a += Math.round(CHAR_COSTS[x.tier] * manualSellKf.value)
+          return a += Math.floor(CHAR_COSTS[x.tier] || 2000 * sellKoeff.value)
         else return a += x.soldPrice
       }
-      if (x.sold && x.priceTier !== 11 && ['buy', 'used', 'yoink'].includes(x.method))
-        return a += Math.round(CHAR_COSTS[x.priceTier] * manualReturnKf.value)
+      if (x.sold && x.priceTier <= 10 && ['buy', 'used', 'yoink'].includes(x.method))
+        return a += Math.floor(CHAR_COSTS[x.priceTier] * manualReturnKf.value)
       return a
     }, 0)
     : 0
@@ -182,8 +181,7 @@ const maxHeritageDiscount = computed(() => {
   const discount = { archetype: '', value: 0 }
   if (startingOrigin.value.hr) {
     discount.archetype = types[startingOrigin.value.hr] || ''
-    discount.value = CHAR_COSTS[startingOrigin.value.swap?.tier || startingOrigin.value.tier || 0] || 0
-    if (discount.value === 11111) discount.value = 2000
+    discount.value = CHAR_COSTS[startingOrigin.value.swap?.tier || startingOrigin.value.tier || 0] || CHAR_COSTS_TICKET[startingOrigin.value.swap?.tier || startingOrigin.value.tier || 0] * 1000 || 0
   }
   return discount
 })
@@ -352,7 +350,7 @@ const budget = computed(() => {
       - genericWaifuPerksCost.value - companionsCost.value - otherCost.value - fee.value
       - budgetMods.value.minus + budgetMods.value.plus + companionProfit.value + companionProfitSold.value
       + usedHeritageDiscount.value + talentsDiscount.value + defensesDiscount.value + specificModsCost.value
-      + budgetMods.value.sell11 * 2000 + missionRewardCredits.value + defenseRetinueDiscount.value - challengesCost.value - originCost.value
+      + budgetMods.value.sell11 * 1000 + missionRewardCredits.value + defenseRetinueDiscount.value - challengesCost.value - originCost.value
 
   // CSR implementation 3.0
   if (flags.value.chargen && csr.value) {
@@ -374,39 +372,43 @@ watch(csr, () => {
 })
 
 const companionTicketProfit = computed(() => {
-  return captureKoeff.value > 0
-    ? companions.value.reduce((a, x) => {
-      if (x.method === 'capture' && x.priceTier === 11) a += 1
-      if (x.sold && x.tier === 11) a += 1
-      return a
-    }, 0)
-    : 0
+  return companions.value.reduce((a, x) => {
+    if (x.method === 'capture' && x.priceTier >= 11) a += Math.floor(CHAR_COSTS_TICKET[x.priceTier] * captureKoeff.value)
+    if (x.method === 'capture' && x.sold && x.tier >= 11) a += Math.floor(CHAR_COSTS_TICKET[x.priceTier] * sellKoeff.value)
+    if (x.method !== 'capture' && x.sold && x.tier >= 11) a += Math.floor(CHAR_COSTS_TICKET[x.priceTier] * manualReturnKf.value)
+    return a
+  }, 0)
 })
+
+function costCalcTX(a: number, x: Perk) {
+  console.log(x)
+  return a += x.costT || 0
+}
 
 const tier11tickets = computed(() => {
   let ticket = 0
-  if (flags.value.danger11Start) ticket += 1
+  if (flags.value.danger11Start) ticket += 5
 
-  const bindingCost = binding.value.reduce((a, x) => a += x.cost >= 11111 ? x.cost / 11111 : 0, 0)
-  const heritageCost = heritage.value.reduce((a, x) => a += x.cost >= 11111 ? x.cost / 11111 : 0, 0)
+  const bindingCost = binding.value.reduce(costCalcTX, 0)
+  const heritageCost = heritage.value.reduce(costCalcTX, 0)
 
-  const ridePerksCost = ridePerks.value.reduce((a, x) => a += x.cost === 11111 ? 1 : 0, 0)
-  const homePerksCost = homePerks.value.reduce((a, x) => a += x.cost === 11111 ? 1 : 0, 0)
-  const talentsCost = talentPerks.value.reduce((a, x) => a += x.cost === 11111 ? 1 : 0, 0)
-  const defensesCost = defensePerks.value.reduce((a, x) => a += x.cost === 11111 ? 1 : 0, 0)
-  const miscPerksCost = miscPerks.value.reduce((a, x) => a += x.cost === 11111 ? 1 : 0, 0)
-  const waifuPerksCost = waifuPerks.value.reduce((a, x) => a += x.cost === 11111 ? 1 : 0, 0)
-  const genericWaifuPerksCost = genericWaifuPerks.value.reduce((a, x) => a += x.cost === 11111 ? 1 : 0, 0)
-  const luresCost = luresBought.value.reduce((a, x) => a += x.cost === 11111 ? 1 : 0, 0)
+  const ridePerksCost = ridePerks.value.reduce(costCalcTX, 0)
+  const homePerksCost = homePerks.value.reduce(costCalcTX, 0)
+  const talentsCost = talentPerks.value.reduce(costCalcTX, 0)
+  const defensesCost = defensePerks.value.reduce(costCalcTX, 0)
+  const miscPerksCost = miscPerks.value.reduce(costCalcTX, 0)
+  const waifuPerksCost = waifuPerks.value.reduce(costCalcTX, 0)
+  const genericWaifuPerksCost = genericWaifuPerks.value.reduce(costCalcTX, 0)
+  const luresCost = luresBought.value.reduce(costCalcTX, 0)
   const companionsCost = companions.value.reduce((a, x) => {
-    if (x.perk && x.perk.tier === 11)
-      a += 1
+    if (x.perk && x.perk.tier >= 11)
+      a += CHAR_COSTS_TICKET[x.perk.tier]
     if (x.swap)
-      return x.swap.tier === 11 ? a += 1 : a
-    return x.priceTier === 11 && x.method !== 'capture' ? a += 1 : a
+      return x.swap.tier >= 11 ? a += CHAR_COSTS_TICKET[x.swap.tier] : a
+    return x.priceTier >= 11 && x.method !== 'capture' ? a += CHAR_COSTS_TICKET[x.priceTier] : a
   }, 0)
 
-  const originPSTicket = startingOrigin.value.swap && startingOrigin.value.swap.tier === 11 ? 1 : 0
+  const originPSTicket = startingOrigin.value.swap && startingOrigin.value.swap.tier >= 11 ? CHAR_COSTS_TICKET[startingOrigin.value.swap.tier] : 0
 
   return ticket - heritageCost - ridePerksCost - homePerksCost - talentsCost - defensesCost - miscPerksCost
     - waifuPerksCost - genericWaifuPerksCost - luresCost - companionsCost - bindingCost

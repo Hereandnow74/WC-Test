@@ -35,7 +35,7 @@ import { useStore } from '~/store/store'
 import { buildLayout, showAddWaifuPerk } from '~/logic/toggles'
 import { localPerks } from '~/logic/localPerks'
 
-const { settings, companionsUIDs, companionsByUID } = useStore()
+const { settings, companionsUIDs, companionsByUID, startingOrigin } = useStore()
 
 const showModal = ref(false)
 const specificList = ref<HTMLElement|null>(null)
@@ -56,7 +56,7 @@ const specificPerksFiltered = computed(() => specificPerksWithLocal.value.filter
   if (companionsByUID.value[perk.uid])
     return true
   if (isArray(perk.waifuUID))
-    res = perk.waifuUID.some(val => companionsUIDs.value[val] || companionsByUID.value[val])
+    res = perk.waifuUID.some(val => companionsUIDs.value[val] || companionsByUID.value[val] || startingOrigin.value.uid === val || startingOrigin.value.swap?.uid === val || startingOrigin.value.perk?.uid === val)
   return res
 }))
 

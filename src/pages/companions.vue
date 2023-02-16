@@ -96,19 +96,11 @@
         </div>
         <div class="flex rounded bg-gray-600 cursor-pointer">
           <div
-            :class="image===0 && nsfw==='' ? 'bg-gray-700':''"
+            :class="nsfw==='' ? 'bg-gray-700':''"
             class="hover:bg-gray-700 text-green-300 px-2 rounded-l"
-            @click="(image=0, nsfw='', favorite=0)"
+            @click="(nsfw='', favorite=0)"
           >
             all
-          </div>
-          <div
-            :class="{'bg-red-600': image === -1, 'bg-green-600': image === 1}"
-            class="border-l px-2 hover:bg-gray-700 text-gray-200"
-            title="Have Image"
-            @click="image = threeToggle(image)"
-          >
-            img
           </div>
           <div
             :class="nsfw==='!cvxz' ? 'bg-gray-700':''"
@@ -219,8 +211,7 @@
 </template>
 
 <script lang="ts" setup>
-import Fuse from 'fuse.js'
-import { every, intersection, some, shuffle, repeat, remove, groupBy, flatten } from 'lodash-es'
+import { every, intersection, some, shuffle } from 'lodash-es'
 import { DBCharacter } from 'global'
 import { useStore } from '~/store/store'
 
@@ -228,6 +219,7 @@ import { toggleShowAddCharacter, showAddCharacter, toggleShowFilterTags, showFil
 import { waifuTags, useAllChars } from '~/data/constants'
 import { usePlayStore } from '~/store/play'
 import { useSettings } from '~/logic/searchSettings'
+import { useCompanionsLogic } from '~/logic/pagesLogic/companionsLogic'
 
 const { startingWorld, favorites, settings, companionsUIDs, defenseRetinueDiscountAuto } = useStore()
 const { jumpChain } = usePlayStore()
@@ -237,7 +229,6 @@ const search = ref('')
 const position = ref(0)
 
 const gender = ref('')
-const image = ref(0)
 const nsfw = ref('')
 const favorite = ref(0)
 const local = ref(0)
@@ -252,7 +243,8 @@ const shuffleOn = ref(false)
 // const characters = ref({})
 const loading = ref(true)
 
-const { allCharsComp: allChars, changes } = useAllChars()
+const { allCharsComp: changes } = useAllChars()
+const { fuse, fuseNoSort } = useCompanionsLogic()
 
 const editMode = ref(false)
 const characterToEdit = ref({})
@@ -298,25 +290,6 @@ const limit = computed(() => {
   return cardRowCount.value * cardColumnCount.value
 })
 
-const options = {
-  findAllMatches: true,
-  useExtendedSearch: true,
-  threshold: 0.4,
-  ignoreLocation: true,
-  keys: [{ name: 'n', weight: 1.1 }, 'w', 'b', 'i', 'd', 'in', 'u', 'k'],
-}
-
-const options2 = {
-  useExtendedSearch: true,
-  findAllMatches: true,
-  threshold: 0.4,
-  keys: ['n', 'w', 'b', 'i', 'd', 'in', 'u', 'k'],
-  shouldSort: false,
-}
-
-const fuse = computed(() => new Fuse(allChars.value, options))
-const fuseNoSort = computed(() => new Fuse(allChars.value, options2))
-
 const params = useUrlSearchParams('history')
 
 onMounted(async() => {
@@ -339,6 +312,7 @@ const blockedSet = computed(() => new Set(blockedWorlds.value))
 // })
 
 const filteredCharacters = computed(() => {
+  console.log('filteredCharacters')
   const sr = search.value || '!^xxx'
   const sopt: any = {
     $and: [
@@ -351,22 +325,22 @@ const filteredCharacters = computed(() => {
       sopt.$and.pop()
       sopt.$and.push({ k: sr.slice(1) })
       break
-    // Search by name
+      // Search by name
     case sr.startsWith('#'):
       sopt.$and.pop()
       sopt.$and.push({ n: sr.slice(1) })
       break
-    // Search by world
+      // Search by world
     case sr.startsWith('%'):
       sopt.$and.pop()
       sopt.$and.push({ w: sr.slice(1) })
       break
-    // Search by subworld
+      // Search by subworld
     case sr.startsWith('$'):
       sopt.$and.pop()
       sopt.$and.push({ d: sr.slice(1) })
       break
-    // Search by name with locked world
+      // Search by name with locked world
     case !!worldName.value:
     {
       let searchPrefix = '\''
@@ -386,7 +360,6 @@ const filteredCharacters = computed(() => {
   }
   if (gender.value) sopt.$and.push({ b: `=${gender.value}` })
 
-  if (image.value === 1) sopt.$and.push({ i: '!fsdg' })
   if (nsfw.value) sopt.$and.push({ in: nsfw.value })
   if (favorite.value === 1) sopt.$and.push({ u: `=${favorites.value.join('|=')}` })
   if (favorite.value === -1) sopt.$and.push({ u: `!^${favorites.value.join(' !^')}` })
@@ -399,12 +372,12 @@ const filteredCharacters = computed(() => {
 })
 
 const secondFilter = computed(() => {
+  console.log('secondFilter')
   const tagsI = (x: DBCharacter) => andOr.value ? intersection(x.b, tagsInclude.value).length >= 1 : intersection(x.b, tagsInclude.value).length === tagsInclude.value.length
   const tagsE = (x: DBCharacter) => !some(x.b, x => tagsExclude.value.includes(x))
   const tier = (x: DBCharacter) => x.t >= minTier.value && x.t <= maxTier.value
   const blocked = (x: DBCharacter) => blackWhite.value ? blockedSet.value.has(x.w) : !blockedSet.value.has(x.w)
   const localF = (x: DBCharacter) => local.value === 1 ? x.type === 'local' : x.type !== 'local'
-  const emptyImg = (x: DBCharacter) => x.i === ''
 
   const allFilters = [] as ((arg0: DBCharacter) => boolean)[]
 
@@ -418,8 +391,6 @@ const secondFilter = computed(() => {
     allFilters.push(blocked)
   if (local.value !== 0)
     allFilters.push(localF)
-  if (image.value === -1)
-    allFilters.push(emptyImg)
 
   return allFilters.length
     ? filteredCharacters.value.filter((x) => {
@@ -430,10 +401,11 @@ const secondFilter = computed(() => {
 
 const sortingFunc = (a: any, b: any) =>
   (sortRating.value !== 0 ? (a.item.t - b.item.t) * sortRating.value : 0)
-|| (sortWorld.value !== 0 ? `${a.item.w}${a.item.d}`.localeCompare(`${b.item.w}${b.item.d}`) * sortWorld.value : 0)
-|| (sortAlpha.value !== 0 ? a.item.n.localeCompare(b.item.n) * sortAlpha.value : 0)
+  || (sortWorld.value !== 0 ? `${a.item.w}${a.item.d}`.localeCompare(`${b.item.w}${b.item.d}`) * sortWorld.value : 0)
+  || (sortAlpha.value !== 0 ? a.item.n.localeCompare(b.item.n) * sortAlpha.value : 0)
 
 const sortedResults = computed(() => {
+  console.log('sortedResults')
   if (shuffleOn.value)
     return shuffle(secondFilter.value)
   if (sortRating.value || sortAlpha.value || sortWorld.value)
@@ -442,13 +414,7 @@ const sortedResults = computed(() => {
 })
 
 const slicedChars = computed(() => {
-  // const groupped = groupBy(filteredCharacters.value, (n) => { return n.item.n.toLowerCase() })
-  // const moreThan2 = Object.values(groupped).filter(x => x.length >= 2)
-  // const result = flatten(moreThan2)
-  // const result = uniq(flatten(filter(groupped, (n) => { return n.length > 1 })))
-  // return result.slice(limit.value > 100 ? limit.value - 100 : 0, limit.value)
   return sortedResults.value.slice(position.value, position.value + limit.value)
-  // return result.slice(position.value, position.value + limit.value)
 })
 
 watch(sortedResults, () => {
@@ -456,8 +422,6 @@ watch(sortedResults, () => {
     companionsList.value.scrollTop = 0
   position.value = 0
 })
-
-// const allCredits = computed(() => charArr.value.reduce((a, b) => b.t !== 11 ? a += CHAR_COSTS[b.t] : a, 0))
 
 const firstCard = ref<Element|null>(null)
 const lastCard = ref<Element|null>(null)
@@ -530,7 +494,7 @@ function clearAndReset() {
   search.value = ''
   position.value = 0
   minTier.value = 1
-  maxTier.value = 11
+  maxTier.value = 13
   if (companionsList.value)
     companionsList.value.scrollTop = 0
 }
@@ -539,7 +503,7 @@ function clearAndResetWorld() {
   worldName.value = ''
   position.value = 0
   minTier.value = 1
-  maxTier.value = 11
+  maxTier.value = 13
   if (companionsList.value)
     companionsList.value.scrollTop = 0
 }

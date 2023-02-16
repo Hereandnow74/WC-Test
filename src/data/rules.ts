@@ -60,15 +60,15 @@ export const sales = `<h3 class="font-bold text-lg">Extending Your Build: Sales<
 `
 
 export const waifu11 = `<h3 class="font-bold text-lg">X-tended Tier Scaling</h3>
-<p>Tier X companions are not bought with standard credits. They instead require a special ticket, only available for starting builds on Danger Rating X. If you choose this instead, ignore the entire list of regular companions. Instead, go to the Tier X list on the fifth page of the spreadsheet and spend your special ticket on one and only one of the companions there. You must spend this starting ticket on a Tier X companion. Tier X companions that are listed as Perks or Waifu Perks have further details in the appropriate section below. Heritage and other Perks that cost a TX ticket cannot be purchased in a starting build.</p>
-<p>Captured Tier X companions may be shipped back to the company for an additional ticket, on top of the reward for capturing one in the first place. If, after your starting build, you ever find yourself with a spare Tier X ticket and nobody you want to buy with it, you may exchange it for 2000 credits. This cannot be undone. OC Tier X captures are valued at 5% of that exchange rate: 100 credits each.</p>
-<p>All Tier X companions are freely capable of multiversal travel, even if they showed no such abilities or explicitly could not in their original canons.</p>
+<p>Some companions are not bought with standard credits. Tier χ/X, Ψ/Y, and Ω/Z companions instead cost varying amounts of Imaginary Tickets (IMG), only available for starting builds on Danger Rating X. Both the Greek and Latin names for these Imaginary Tiers are acceptable. Imaginary Tier companions that are listed as Perks or Waifu Perks have further details in the appropriate sections.</p>
+<p>Captured Imaginary Tier companions may be shipped back to the company like any other. These follow the same capture and sale rates as regular companions, including the effects of Wage Slave and Cash Still Rules, but measured in IMG instead of credits. If, after your starting build, you ever find yourself with spare IMG and nothing or nobody you want to buy with it, you may exchange the tickets for 1000 credits each. This cannot be undone. OC Imaginary Tier captures are valued at 5% of this exchange rate: 100, 250, or 500 credits each.</p>
+<p>All Imaginary Tier companions are freely capable of multiversal travel, even if they showed no such abilities or explicitly could not in their original canons.</p>
 `
 
 export const danger11 = `<h3 class="font-bold text-lg">Danger Rating X Build Rules</h3>
 <p>When creating a Danger Rating 11 build, ignore the basic build creation rules found above. You will instead start with the following:</p>
 <ul class="list-disc list-inside">
-  <li>One TX ticket. Must be spent on a Companion.</li>
+  <li>One companion of Tier χ/X or Ψ/Y. Power Swapping a different companion to one of these tiers is allowed, as are Heavenbuilt Proto and Piece of Silver. This companion may not be sold.</li>
   <li>Any Origin, free of charge. Substitute and Possess are limited to T6 and below.</li>
   <li>A single basic Binding-type control.</li>
   <li>As many official basic Lures as desired.</li>
@@ -78,7 +78,8 @@ export const danger11 = `<h3 class="font-bold text-lg">Danger Rating X Build Rul
   <li>A 500-credit budget for Demiplanes & Dungeons.</li>
   <li>A single 600-credit budget for all other official perks found in this catalog, including Binding and Lure expansions.</li>
 </ul>
-<p>Once your build is finalized, any leftover credits will carry forward to your regular account. This remainder may not be accessed before seven days (168 hours) have passed, but may be used for any purpose. Any Waifu Perks purchased for yourself in the initial build, including Power Swap, cannot raise your tier above 6; this only applies at that moment and not afterward. You may start in any world you like, regardless of the above Danger restrictions. If you start in your companion’s homeworld, Yoink will automatically be applied at no cost. Go anywhere you want, follow the special rules, and have fun.</p>
+<p>Once your build is finalized, any leftover credits will carry forward to your regular account. This remainder may not be accessed before seven days (168 hours) have passed, but may be used for any purpose. Any Waifu Perks purchased for yourself in the initial build, including Power Swap, cannot raise your tier above 6; this only applies at that moment and not afterward.</p>
+<p>You may start in any world you like, regardless of the above Danger restrictions. If you start in your companion’s homeworld, Yoink will automatically be applied at no cost. Go anywhere you want, follow the special rules, and have fun.</p>
 `
 
 export const creditValue = `
@@ -122,7 +123,7 @@ export const pvpRules = `
   <i>Enabled for: Invasions (non-Phantasms), Gauntlet, Unregulated</i>
   <p>
   If a member of a retinue is captured by an enemy and held in their territory (whether that territory is purchased from the company or acquired locally) for a period of 24 hours, the hostage loses the benefits of Creature, Stress, Mind, Addiction, Wyldscape, and Corruption Defenses until rescued. The timer begins only when the hostage is both defeated and restrained, and it will reset if they are touched by their master or leave enemy territory unrestrained. The timer will pause if they leave while still restrained by the enemy.  </p>
-  <p>Once the timer has run its course, the kidnapper is free to use any bindings, lures, or third-party mind control methods they have, as if the hostage were free. Targets stolen from another contractor are worth 0 capture credits, but may be sold at the usual rate, adjusting for their effective tier after step 4. TXs are an exemption to this and maintain their normal rates for capture and sale. Recapturing one of your own companions does not grant any credits.</p>
+  <p>Once the timer has run its course, the kidnapper is free to use any bindings, lures, or third-party mind control methods they have, as if the hostage were free. Targets stolen from another contractor are worth 0 capture credits, but may be sold at the usual rate, adjusting for their effective tier after step 4. Recapturing one of your own companions does not grant any credits.</p>
 
   <h3 class="font-bold text-lg mt-4">Gauntlet(Continuous PvP)</h3>
   Starting one week into your journey, another contractor will appear in your current world, with their own
@@ -228,7 +229,13 @@ export const missions = `<h3 class="font-bold text-lg">Missions</h3>
 `
 
 export const refund = `<h3 class="font-bold text-lg">Refund and Return Policy</h3>
-<p>Any purchased companion may be returned for any reason. If you return her within two weeks (336 hours) of purchase, you will be refunded the full price you paid, including waifu perks but not meta-Talents. If you return a companion after that point, or return any Control, Perk, or non-Tier X Waifu Perk, you’ll only receive 80% the price you paid, again including waifu perks but not meta-Talents. If you use Evolutionary Engine Array or other means to copy the purchase’s abilities, or otherwise bought that person with the intent of returning them after a task or time, that’s treated as a rental and capped at the same 80% as the previous. For ease of calculation, all refunds from Tier X Waifu Perks are 100%. Heritages, and chargen TXs, are non-refundable. If you return a Control or Perk that gives other items for free, but wish to keep the packaged items, their list prices will be deducted from the standard refund value.</p>
+<p>Origins, Heritages, and subjects that were purchased at chargen in DRX are all non-refundable.</p>
+<p>All items in the Bindings, Lures and Other Controls, Demiplanes & Dungeons, Talents and Defenses, Catch-a- Ride Perks, Other Perks, and Waifu Perks sections may be refunded at any time, for 80% of the full price you paid. If you return a Control or Perk that gives other items for free, but wish to keep the bundled items, their list prices will be deducted from the standard refund value.</p>
+<p>If you return a purchased subject or Ride within two weeks (336 hours) of purchase, you will be refunded the full price you paid, including any waifu perks or Ride add-ons applied to the returnee. Meta-Talents applied to the returnee will only be refunded up to 80%.</p>
+<p>If you return a purchased subject or Ride after that point, you’ll only receive 80% the price you paid, including the total cost of waifu perks, meta-Talents, and Ride add-ons applied to the returnee.</p>
+<p>If you use Evolutionary Engine Array or other means to copy the purchase’s abilities, or otherwise bought that person with the intent of returning them after a task or time, the original purchase will be treated as a rental and capped at 60%.</p>
+<p>If a returned subject is damaged or robbed, such that her effective tier at step 4 is less than her tier at step 1a, the return value will instead be relative to the purchase price of her new tier, not her original tier. This applies to all three of the previous contexts.</p>
+<p>IMG refunds are all calculated the same way, but valued in IMG instead of credits. If an IMG refund is not measured in whole tickets, the remainder will be converted into an equivalent number of credits.</p>
 `
 
 export const arranged = `<p>Smaller-scale PvP matchmaking is available for contractors who don’t wish to get involved with a career-defining project on the scale of the Gauntlet. This is accessible through a specialized app on your smart device, provided you are not currently participating in PvP and are not in debt..</p>

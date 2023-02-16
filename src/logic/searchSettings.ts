@@ -3,7 +3,7 @@ import { useStore } from '~/store/store'
 
 // Search settings
 const minTier = ref(1)
-const maxTier = ref(11)
+const maxTier = ref(13)
 const worldName = ref('')
 const blockedWorlds = useStorage<string[]>('bl', [])
 const isLimited = ref(false)

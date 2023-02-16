@@ -774,7 +774,8 @@ perks.push({
   title: 'Heavenbuilt Proto',
   category: 'Misc',
   image: 'https://i.ibb.co/28vbybD/Heavenbuilt-Proto.jpg',
-  cost: 11111,
+  cost: 0,
+  costT: 2,
   desc: `
 <p>Run the Built in the <a href="https://imgur.com/gallery/dUkFmZF" target="_blank" rel="noopener noreferrer" class="text-red-500 hover:underline">Heavens CYOA</a>, (<a href="https://built-in-the-heavens.neocities.org/"  target="_blank" rel="noopener noreferrer" class="text-red-500 hover:underline">interactive version</a>), ignoring the origins choice and all personal perks. The only allowed complications are the ones that grant followers. These followers will count as their original inspirations: Broken Toy (YorHa A2), Jewelled Collar (Starfire and Blackfire), All According to Plan (Taldeer), Yan Yan Dere Dere (Monika), Forgotten and Lost (Dragon from Worm, in the body of Cibo from Blame!), From Heights Brought Low (Shub-Niggurath), or A Loyal Vizier (Caster Tamamo-no-Mae). These followers cannot be refunded for credits, so you should only take the ones you want. Otherwise, follow its rules as written. You will start aboard your ship, in the same star system as your starting world, unless you also purchased Life’s A Beach. Your ship's AI counts as a purchased waifu of Tier 6. Alternatively, you may plug one of your purchased or captured waifus into your ship to make her a pseudo-AI or shipgirl and take a 50-credit toward future purchases, you monster. All characters with alternate outfits, shown in any official source, will find them stored in their room or closet.,</p>
 <p>In addition to the ship’s Tier X-granted multiversal capability, if you have a time-travel-capable waifu, she'll be able to channel her power through your ship so it can make such journeys too, even if you keep the Heavenbuilt AI as a separate waifu.</p>`,
@@ -785,7 +786,8 @@ perks.push({
   title: 'Piece of Silver',
   category: 'Misc',
   image: 'https://i.ibb.co/QjWz9fg/Piece-Of-Silver.jpg',
-  cost: 11111,
+  cost: 0,
+  costT: 2,
   desc: 'Whoever warned you not to pick up loose change was right. You are now partnered with a Denarian fallen angel from the Dresden Files, either Lasciel (“Lash”) or an OC of your (author’s) design. If you have No Bindings or the Stamp, she will be bound to her coin, able to assume a physical form within a 10 meter radius of her coin or you but not able to touch her coin herself: if it moves, so must she. If you have at least a company-provided personal space, such as Dragon Cabin, Pocket Apartment, or a registered Catch-a-Ride vehicle, she will be able to move anywhere inside. If you have a higher binding, that will replace her coin and remove her physical leash completely. Your other purchased and captured waifus can see, hear, feel, etc. the Denarian at all times.',
 })
 
@@ -1077,7 +1079,9 @@ genericPerks.push({
   multiple: true,
   image: 'https://i.ibb.co/1QhZdpg/Four-Seasons.jpg',
   cost: 20,
-  desc: 'Maidenhood is special on Remnant, but not particularly so. Anyone can become one under the right circumstances. By default, this perk may be purchased up to four times, once for each temperate season (Spring, Summer, Fall, Winter). Purchasing this twice for the same character will elevate her to T6, if she isn’t already, and four times to T7. Additional sets of Maiden mantles become available with each member of your retinue, including yourself, whose effective tier after step five is at least T8: one for each T8, two for each T9, five for each T10, and ten for each TX. If one of your waifus is already a Maiden when you capture her, that counts against your total, unless you take a refund for this perk. If this puts you over your cap for a particular mantle, you may not buy any more of that mantle until you’ve raised the cap further.',
+  desc: `Maidenhood is special on Remnant, but not particularly so. Anyone can become one under the right circumstances. By default, this perk may be purchased up to four times, once for each temperate season (Spring, Summer, Fall, Winter). Purchasing this once will elevate a character to T6, if she isn’t already. Repurchases for the same character are allowed, but only one for each season and will not affect a tier further.
+  <p>Additional sets of Maiden mantles become available with each member of your retinue, including yourself, whose effective tier after step five is at least T8: one for each T8, two for each T9, five for each T10, ten for each TX, twenty for each TY, and fifty for each TZ. If one of your waifus is already a Maiden when you capture her, that counts against your total, unless you take a refund for this perk. If this puts you over your cap for a particular mantle, you may not buy any more of that mantle until you’ve raised the cap further.</p>
+  `,
 })
 
 genericPerks.push({

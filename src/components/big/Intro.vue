@@ -31,7 +31,7 @@
         Note that the Waifu Catalog is a continuous CYOA which means that you will not lose access to your build after its initial creation, and can instead interact with it throughout your journey.
       </p>
       <p class="pt-2">
-        Links to the original Waifu Catalog - <a class="text-blue-600 font-semibold dark:text-blue-400" href="https://docs.google.com/document/d/1ILzH_MYYTsS40Dx4YnnqbGiFaHiqVRZD-yJBEz4CnEg/edit#" target="_blank" rel="noopener noreferrer">document</a>,<a class="text-blue-600 font-semibold dark:text-blue-400 pl-2" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRY8R1QpF5c_R3UESoYXYscEVJ2AayfCLJ7QVxU3xjfwqKfZU8HnNVsTKwFOX9J7DX8MPM1tp06el9G/pubhtml#" target="_blank" rel="noopener noreferrer">spreadsheet</a>.
+        Links to the original Waifu Catalog - <a class="text-blue-600 font-semibold dark:text-blue-400" href="https://docs.google.com/document/d/1ILzH_MYYTsS40Dx4YnnqbGiFaHiqVRZD-yJBEz4CnEg/edit#" target="_blank" rel="noopener noreferrer">document</a>,<a class="text-blue-600 font-semibold dark:text-blue-400 pl-2" href="https://docs.google.com/spreadsheets/d/1TZhqe4x8DrDq-uB_E7c73DJnv5ouIOx1W7Aj96ut63Q/edit" target="_blank" rel="noopener noreferrer">spreadsheet</a>.
       </p>
       <h2 class="text-lg font-semibold text-center text-red-500 dark:text-red-400 py-2">
         By continuing you confirm that you are 18+ years old.

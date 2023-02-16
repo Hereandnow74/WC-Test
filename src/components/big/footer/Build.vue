@@ -111,7 +111,7 @@
     </div>
     <div id="Heritage">
       <h3 class="text-lg text-gray-400">
-        Heritage <span v-if="yourTier > 0" class="font-semibold">( Your tier - <span class="text-orange-300">T{{ yourTier }}</span> )</span>
+        Heritage <span v-if="yourTier > 0" class="font-semibold">( Your tier - <span class="text-orange-300">T<TierDisplay :tier="yourTier" /></span> )</span>
       </h3>
       <Enum
         color="text-blue-400 hover:text-blue-300"
@@ -260,7 +260,7 @@ import { useStore } from '~/store/store'
 
 import { useChallenges } from '~/store/challenges'
 import { confirmDialog } from '~/logic/dialog'
-import { WORLD_RATINGS } from '~/data/constants'
+import { shownValue, WORLD_RATINGS } from '~/data/constants'
 
 const {
   startingWorld, startingOrigin, intensities, binding, homePerks, defensePerks,
@@ -286,7 +286,7 @@ const originText = computed(() => {
     'Walk-In': `Walked-In as <b>${startingOrigin.value.character}</b> of T${startingOrigin.value.tier}${startingOrigin.value.hr ? ` [<span class="text-gray-400">${archetype[startingOrigin.value.hr]}</span>]` : ''}`,
     'Extra': `'Extra' with <b>${startingOrigin.value.cost}</b> additional cost`,
     'Substitute': `<b>${startingOrigin.value.character}</b> (Substitute) of T${startingOrigin.value.tier}${startingOrigin.value.hr ? ` [<span class="text-gray-400">${archetype[startingOrigin.value.hr]}</span>]` : ''}`,
-    'Possess': `<b>${startingOrigin.value.character}</b> (Possess) of T${startingOrigin.value.tier}${startingOrigin.value.hr ? ` [<span class="text-gray-400">${archetype[startingOrigin.value.hr]}</span>]` : ''}`,
+    'Possess': `<b>${startingOrigin.value.character}</b> (Possess) of T${shownValue[startingOrigin.value.tier || 0]}${startingOrigin.value.hr ? ` [<span class="text-gray-400">${archetype[startingOrigin.value.hr]}</span>]` : ''}`,
   } as Record<string, string>
 
   return variants[startingOrigin.value.title]

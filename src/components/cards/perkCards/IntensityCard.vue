@@ -38,10 +38,8 @@
       <span
         v-if="perk.intensity < 1"
         text="green-600 dark:green-300"
-      >{{ Math.round(baseBudgetAfter * (perk.title === 'With A Little Help From My Friends(Cooperative)'
-        ? coopIntensity : perk.intensity)) }}
-        ({{ Math.round((perk.title === 'With A Little Help From My Friends(Cooperative)'
-          ? coopIntensity : perk.intensity) * 100) }}%)
+      >{{ Math.round(baseBudgetAfter * perk.intensity) }}
+        ({{ Math.round(perk.intensity * 100) }}%)
       </span>
       <span v-else text="green-600 dark:green-300">{{ perk.intensity }}</span>
       credits.
@@ -50,7 +48,7 @@
         v-model="coopCount"
         class="inline"
         :min="1"
-        :max="49"
+        :max="Infinity"
         @click.stop
       />
     </div>
@@ -94,12 +92,11 @@ const emit = defineEmits(['chooseIntensity'])
 
 const coopCount = ref(1)
 const perkImg = ref<HTMLImageElement | null>(null)
-const coopIntensity = computed(() => parseFloat((coopCount.value * 0.2).toFixed(1)))
 
 const { baseBudgetAfter, settings } = useStore()
 
 function chooseIntensity(val: any) {
-  emit('chooseIntensity', val, coopIntensity.value, coopCount.value)
+  emit('chooseIntensity', val, -0.2, coopCount.value)
 }
 
 onMounted(() => { if (perkImg.value) lazyLoadSingleImg(perkImg.value) })

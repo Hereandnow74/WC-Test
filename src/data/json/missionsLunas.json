@@ -1,0 +1,258 @@
+[
+    {
+        "rewardType": "TX Tickets",
+        "conditions": [
+          {
+            "value": "Cannot purchase T11 Companions, they can ONLY be captured. Permanently."
+          }
+        ],
+        "desc": "T11 Waifu's make TX Tickets redundant. Literally. So, here's a challenge for you contractor:\n\nAny TX Tickets you obtain can ONLY be used for abilities/perks and never for Companions. All T11 Companions MUST be captures.\n\nIn exchange, you get one TX Ticket to start, and for every two T11 Waifus, you get one TX Ticket free, on top of the normal TX Ticket capture bonus.",
+        "objectives": [],
+        "loca": "Generic",
+        "scope": "Grand",
+        "image": "",
+        "budget": 0,
+        "title": "Balancing the Scales",
+        "author": "Lunasmeow",
+        "reward": "1",
+        "source": "",
+        "uid": "luYZD"
+      },
+      {
+        "objectives": [
+          {
+            "type": "Credits",
+            "value": "Scion's new method of dealing with his pain is finding something to nurture and protect. The humans of Earth, all Earths.",
+            "reward": "1000"
+          }
+        ],
+        "author": "Lunasmeow",
+        "reward": "500",
+        "source": "",
+        "desc": "Jack Slash sets off Scion and turns him into a monster. Scion is looking for some way to end \"his\" pain after the death of Eden... find a better route to this branching path, that doesn't end in the death of Scion, or the end of the world from the Cycle.",
+        "image": "https://cdn.discordapp.com/attachments/925963686433132644/1041431072132583505/Screenshot_3.jpg",
+        "conditions": [
+          {
+            "value": "Cannot play as Jack Slash or the man who controls Scion in-setting."
+          },
+          {
+            "value": "Cannot have captured Jack Slash or Scion."
+          }
+        ],
+        "rewardType": "Credits",
+        "budget": 590,
+        "loca": "Worm",
+        "title": "Salvation From Above?",
+        "scope": "Grand",
+        "uid": "iKHOW"
+      },
+      {
+        "image": "https://cdn.discordapp.com/attachments/925963686433132644/1041467079716519946/Screenshot_5.jpg",
+        "reward": "One TX ticket.  Only useable for abilities/talents/perks, not a companion.",
+        "budget": 0,
+        "objectives": [],
+        "desc": "Everyone and their grandmother uses Amy Dallon to make \"new creatures\" or some other nonsense in their bid for power in WORM. Stop it. It's FAR to damn easy. Amy's power is only good when limited (following her rules) or if she is an antagonist. Your story of her making creatures and winning after that is boring. Don't do it.",
+        "author": "Lunasmeow",
+        "rewardType": "TX Tickets",
+        "source": "",
+        "scope": "Grand",
+        "title": "No More Monsters!!!",
+        "uid": "McqqY",
+        "conditions": [
+          {
+            "value": "If you capture Amy Dallon, she must maintain her \"rules\". She can only use her full power as an antagonist. Not just in WORM. Everywhere."
+          }
+        ],
+        "loca": "Worm"
+      },
+      {
+        "loca": "RWBY",
+        "image": "https://cdn.discordapp.com/attachments/925963686433132644/1038859386644344953/ss.png",
+        "uid": "DHTvW",
+        "source": "",
+        "reward": "500",
+        "scope": "Grand",
+        "author": "Lunasmeow",
+        "objectives": [
+          {
+            "reward": "200",
+            "type": "Credits",
+            "value": "Remnant isn't a world that will do well without some type of Gods to look after it. Magic is too powerful to not be controlled. Well, Dragons once ruled this world, thus they shall again. Summon both Tiamat and Bahamut into this world, then free them to serve as its gods in place of the Brothers."
+          }
+        ],
+        "desc": "Those dragons are assholes. Not just assholes, but idiots as well. Jackasses, that's what they are. Well, this is your world now Contractor. End the Brothers.\n\nDon't stop them from arriving, no... summon them with their beacons, and kill them both. Or you can sell them to us, whichever. You are not permitted to keep them, however. If you do sell them, you sacrifice their sale price for your TX ticket, as a capture is easier than a kill.",
+        "budget": 365,
+        "title": "Ruler of Remnant",
+        "conditions": [
+          {
+            "value": "No TX11 Start, RWBY must be your first world."
+          }
+        ],
+        "rewardType": "Credits"
+      },
+      {
+        "reward": "500",
+        "rewardType": "Credits",
+        "budget": 590,
+        "source": "",
+        "scope": "Grand",
+        "desc": "People seem to not realize that defeating giant space whales doesn't save the world. That these alien beings were a HIVE MIND. That defeating their greater selves only buys time.\n\nOnce shards have \"budded\" they can exist just like they originally did on their home world as separate beings. Eventually they will devour everything on earth, then on alternate earths, and the cycle will begin again once they realize the same thing the originals did on their home world.\n\nDon't just stall the end of the world, STOP it. Save the world, for real this time.",
+        "objectives": [],
+        "image": "https://cdn.discordapp.com/attachments/925963686433132644/1041468005261004901/Screenshot_6.jpg",
+        "loca": "Worm",
+        "uid": "pBDaA",
+        "conditions": [
+          {
+            "value": "Eliminate EVERY shard on the planet."
+          }
+        ],
+        "author": "Lunasmeow",
+        "title": "Save the World. For Real This Time."
+      },
+      
+  {
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1041468715457323008/Screenshot_7.jpg",
+    "reward": "100",
+    "objectives": [
+      {
+        "value": "Do so AFTER she triggers, and also eliminate the Queen Administrator shard.",
+        "reward": "50",
+        "type": "Credits"
+      },
+      {
+        "value": "Save the world without the whiny bitch, and without her powers/shard.",
+        "reward": "500",
+        "type": "Credits"
+      },
+      {
+        "type": "Other",
+        "value": "Do so as either Emma Barnes, or Shadow Stalker.",
+        "reward": "Even if you get caught, Emma's father gets you off scott free (maybe some community service) in court. Somehow. If you don't get caught, take another 50 credits, but only AFTER you save the world without Hebert's powers/shard."
+      }
+    ],
+    "title": "End the Obsession",
+    "rewardType": "Credits",
+    "conditions": [
+      {
+        "value": "Do it yourself."
+      }
+    ],
+    "author": "Lunasmeow",
+    "desc": "Taylor Hebert is a hypocritical bitch, who does not even TRY to help herself, but then does nothing but complain when others don't help her, as if they should care about her more than she herself does.\n\nWell, screw that noise. I'm tired of all the fuss over this whiny brat.\n\nKill Taylor Hebert.",
+    "loca": "Worm",
+    "scope": "Standard",
+    "budget": 590,
+    "uid": "DPYGX",
+    "source": ""
+  },
+  {
+    "desc": "Purity is an ex-Nazi who, depending on the world, manages to fall right back into the E88's hands.\n\nNow, there's admittedly something to say for those raised in such a group, are brainwashed into their ways from a young age, but who learn better and leave of their own will. That's admirable... but then there's those who know better and go back.\n\nMake sure Purity is NEVER in a position to return to her old \"friends\".\n\nShe must, rather publically, do something that ensures she can never be accepted by the E88 or their ilk again. Or do something that you have irrefutable evidence for, via recording or other proof, that you can hold against her should she ever try to return.\n\nNote: Additional rewards do NOT grant you the captures automatically, you simply gain the additional price upon actually performing said capture.",
+    "author": "Lunasmeow",
+    "scope": "Standard",
+    "source": "",
+    "image": "https://i.imgur.com/767WrkR.jpg",
+    "rewardType": "Credits",
+    "uid": "hmtdq",
+    "objectives": [
+      {
+        "value": "Purity is outed as having engaged in a relationship with a \"person of color\".",
+        "type": "Companions",
+        "reward": "Purity and her lover at 2x capture price."
+      },
+      {
+        "reward": "Purity and her lover at 2x capture price.",
+        "value": "Purity is outed as a lesbian by engaging in a relationship with a woman.",
+        "type": "Companions"
+      },
+      {
+        "value": "Purity is outed as BOTH a lesbian AND having engaged in a relationship with a woman. (Not separately, in one. Her lover must be a \"woman of color\".)",
+        "reward": "Purity and her lover at 6x capture price.",
+        "type": "Companions"
+      },
+      {
+        "type": "Companions",
+        "value": "Purity is outed on video/camera/in public by being caught eating Miss Militia's pussy.",
+        "reward": "Purity and Miss Militia at 6x capture price."
+      },
+      {
+        "reward": "50 Credits",
+        "value": "Not only Purity, but even Fenja OR Menja have succumbed to their \"hidden desire\" for this forbidden fruit.",
+        "type": "Credits"
+      },
+      {
+        "reward": "100 Credits",
+        "value": "Not only Purity, but even Fenja AND Menja have succumbed to their \"hidden desire\" for this forbidden fruit.",
+        "type": "Credits"
+      },
+      {
+        "value": "Purity (and potentially Fenja and Menja) are known to be subs to Miss Militia with her as their \"dommy mommy\".",
+        "reward": "50 Credits for each known sub.",
+        "type": "Credits"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "No *being* Purity for this mission. You may be her love interest, but if you are, rewards are reduced by half. (TX Ticket options are removed as well from additional rewards.)"
+      },
+      {
+        "value": "Purity and her lover, must perform the action of their own will. No Mind Control. Lures are fine, so long as they are \"subtle\" - no addiction level lures for example. Toggle should help."
+      },
+      {
+        "value": "Mission must be completed BEFORE capturing Purity or her lover."
+      },
+      {
+        "value": "Everyone (the general populace of every \"faction\" and civilians) must believe that no \"Mastery\" has occurred. (You can have a few who \"refuse to believe it\" like Max Anders and some forum people or something like that but everyone must assume they're in denial.) Even if you did not use Mind Control, if people THINK you did, you fail this mission, unless you manage to get that debunked somehow and the knowledge of that debunking distributed to the general public. (The agencies involved must believe this of their own will, not due to your Mind Control.)"
+      }
+    ],
+    "reward": "200",
+    "title": "The Repentant Nazi? - Ebony & Ivory",
+    "loca": "Worm",
+    "budget": 590
+  },
+  {
+    "desc": "Become a patron of either Eris or Aqua. The gods of konosuba have been searching out people from other worlds to help them get rid of the Demon King. They have agreed to be your patron for your help in finding heroes to save the day. Between Isekai missions, you hang out in heaven assisting your patron with her other duties. Since you will be stuck in heaven outside of your Isekai missions, use your Points to assist your Companions to defeat the demon king. Because the Konosuba Gods are poor and Overworked, there is a limit to the amount of Isekai jobs, and overall power of companions you can take. While the gods are good at dealing with the cycle of reincarnation, they aren't as good at dealing with Trauma, so they require you to take Mind Defense II for full safety during the duration of the Program.\n\nFreely go to any world on the world list with your truck in a area nearby your desired companion, bar the konosuba world for obvious reasons. If you die, or at your choice with your App, you return unharmed to Konosuba's Heaven. You are limited to visiting a total of 5 worlds in this way. You cannot retry a world you died in.\n\nThose you Isekai gain no bonuses for going to konosuba, bar anything companions would normally get. For example Defenses and shared Talents bought with points for capturing companions.\n\nIf your patron is Aqua then Kazuma is never Isekaid into the world, and Aqua stays in heaven, never visiting the world of konosuba.\n\nOnce the Demon King is defeated, each companion is teleported back to their original world, a moment after you left their world. Choose one of the Isekaied companions worlds to go to. Your other Isekaied companion's worlds will be available as an option with Exit Stage Left until you have visited each one. When you go to a Isekaied companions world, no time has passed for them and you appear near them.",
+    "objectives": [
+      {
+        "reward": "Pocket space and Pocket Apartment for free.",
+        "type": "Other",
+        "value": "Take Aqus as your Patron, derailing canon."
+      }
+    ],
+    "source": "",
+    "loca": "KonoSuba",
+    "budget": 0,
+    "reward": "Gain Eris or Aqua as a companion, whichever you chose as your Patron.",
+    "rewardType": "Companions",
+    "image": "",
+    "title": "Konosuba Gods Patron Isekai Program!",
+    "author": "YouandIDon'tKnowMe",
+    "conditions": [
+      {
+        "value": "Chargen Only."
+      },
+      {
+        "value": "Cannot gain any points at Chargen above the points that Konosubas world gives you."
+      },
+      {
+        "value": "Cannot Take a loan."
+      },
+      {
+        "value": "Must Take Mind Defense II, Space Trucker, Demon's Eye, Pictures of Home at Chargen."
+      },
+      {
+        "value": "You can only capture 170 credits worth of companions, until the Demon King is defeated."
+      },
+      {
+        "value": "Cannot have another Patron."
+      },
+      {
+        "value": "Can only capture with Space Trucker until the demon King is defeated."
+      },
+      {
+        "value": "Can only spend points on defenses, Talents if you also buy talent sharing for that talent, and on talents for your Companions."
+      }
+    ],
+    "scope": "Grand",
+    "uid": "xYnMO"
+  }
+]

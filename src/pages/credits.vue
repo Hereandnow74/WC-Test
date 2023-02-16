@@ -26,7 +26,7 @@
             <a class="text-blue-400" href="https://docs.google.com/document/d/1ILzH_MYYTsS40Dx4YnnqbGiFaHiqVRZD-yJBEz4CnEg/edit#" target="_blank" rel="noopener noreferrer">Waifu Catalog</a>
           </li>
           <li class="pl-4">
-            <a class="text-blue-400" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRY8R1QpF5c_R3UESoYXYscEVJ2AayfCLJ7QVxU3xjfwqKfZU8HnNVsTKwFOX9J7DX8MPM1tp06el9G/pubhtml#" target="_blank" rel="noopener noreferrer">Spreadsheet</a>
+            <a class="text-blue-400" href="https://docs.google.com/spreadsheets/d/1TZhqe4x8DrDq-uB_E7c73DJnv5ouIOx1W7Aj96ut63Q/edit" target="_blank" rel="noopener noreferrer">Spreadsheet</a>
           </li>
         </ol>
       </div>

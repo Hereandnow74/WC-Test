@@ -12,7 +12,7 @@
           DRX helper is in a WIP stage and can show wrong values.
         </Note>
         <div>
-          TX Companion -
+          IMG Companion -
           <Valid :condition="tier11Companion" />
         </div>
         <div>
@@ -54,7 +54,7 @@ const {
   genericWaifuPerksCost, companions, startingOrigin, binding, luresBought, talentPerks, bindingCost, otherCost,
 } = useStore()
 
-const tier11Companion = computed(() => companions.value.length === 1 && companions.value[0].tier === 11)
+const tier11Companion = computed(() => companions.value.length === 1 && companions.value[0].tier >= 11 && companions.value[0].tier < 13)
 const originT6 = computed(() => startingOrigin.value.title.length > 0 && (!startingOrigin.value.tier || startingOrigin.value.tier < 7))
 const singleBinding = computed(() => binding.value.length >= 1)
 

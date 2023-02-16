@@ -46,6 +46,7 @@ interface PerkFull {
   uid: string
   title: string
   cost: number
+  costT?: number
   desc: string
   category: string
   whitelist?: string[]

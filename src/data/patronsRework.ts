@@ -56,8 +56,8 @@ export const patrons = [
     desc: `
       <i>The Fae have a curiosity unlike all others. They seek to collect. To understand. Their curiosity is alien, though some merely call it whimsical. A few examples of their esoteric desires are a laugh, a concept, or a firstborn child. All of these have meanings they wish to comprehend. They are Tricksters, Scientists, and Unknowable entities in equal measure
       <p>Alternatively, they only adopt that Zen Fairy attitude when their contractors are around, as it’s really fun to mess with people when telling someone to acquire something so bizarre as a laugh.</p></i> 
-      <p>In exchange for doing the odd jobs issued to you, the Fae are willing to double all credits you receive from missions. They will not double non-credit rewards, including TX Tickets.</p>
-      <p>Unfortunately, the Fae’s influence rubs off on Contractors they sponsor. Those under the patronage of the Fae lose the ability to overtly lie. Instead they must learn to conceal, misdirect and omit that which they know in the case they are put in a situation where they must do so. Though many have tried, no power, talent or amount of TX tickets will allow you to regain the ability to directly lie to others.</p>
+      <p>In exchange for doing the odd jobs issued to you, the Fae are willing to double all credits you receive from missions. They will not double non-credit rewards, including IMG Tickets.</p>
+      <p>Unfortunately, the Fae’s influence rubs off on Contractors they sponsor. Those under the patronage of the Fae lose the ability to overtly lie. Instead they must learn to conceal, misdirect and omit that which they know in the case they are put in a situation where they must do so. Though many have tried, no power, talent or amount of IMG tickets will allow you to regain the ability to directly lie to others.</p>
     `,
   },
   {
@@ -105,7 +105,7 @@ export const patrons = [
     desc: `
       <i>It was asleep until it accidentally woke from its slumber. Unfortunately, this led to your instant demise, for your existence was tied to a dream that was disrupted.</i> 
       <p>The Great Old One brought your soul back from its collapse, though doing so fundamentally changed the nature of your being. Your soul is now in tune with that of the Outsider, and you gain Lurking on the Threshold free of charge. To make up for your lack of choice in your Heritage, you also receive one instance of Ancestral Diversity for free.</p>
-      <p>Your connection to the Dreamer turns your dreams to nightmares whenever you sleep. Your nightmares then manifest into reality, and are hostile to you. They cannot be bound, and will not rest, relentlessly seeking your destruction above all else to return to the calm oblivion from whence they came. Only a TX ticket will appease the Dreamer and put your nightmares to rest.</p>
+      <p>Your connection to the Dreamer turns your dreams to nightmares whenever you sleep. Your nightmares then manifest into reality, and are hostile to you. They cannot be bound, and will not rest, relentlessly seeking your destruction above all else to return to the calm oblivion from whence they came. Only a IMG ticket will appease the Dreamer and put your nightmares to rest.</p>
       <p>Your tribulations do not end there however, as your connection to the Great Old One attracts other outsiders in the same universe. The greater your tier, the more powerful the pull.</p>
     `,
     effect: {
@@ -120,7 +120,7 @@ export const patrons = [
     cost: 0,
     desc: `
       <i>An infinite omniverse means an infinite supply of goods to sell and an infinite number of customers willing to buy. The Merchant, and now you, seek to fill the demand and maximize your personal profits</i> 
-      <p>You gain the Green Eye Orb for free. As one of the greatest traders in the Omniverse, the Merchant is able to give you a 20% discount on non-TX purchases from associated company Markets. You also get Communication Talent for free to facilitate communication and give an edge for haggling and bartering.</p>
+      <p>You gain the Green Eye Orb for free. As one of the greatest traders in the Omniverse, the Merchant is able to give you a 20% discount on non-IMG tier purchases from associated company Markets. You also get Communication Talent for free to facilitate communication and give an edge for haggling and bartering.</p>
       <p>The merchant sees you as a potentially worthwhile investment and acts as your lender for the Cash Still Rules loan.</p>
       <p>The avaricious nature of the merchant has a lasting influence on you, amplifying your own greed and materialistic desire. You are more likely to periodically obsess over gaining wealth and making a profit.</p>
     `,
@@ -149,7 +149,7 @@ export const patrons = [
     desc: `
       <i>A truck running someone over to send them to another world is a shockingly popular joke in the wider omniverse. However, there is a grain of truth to it, a warning for that malevolent entity masquerading as a mere truck. Now you number among its victims, and are forced to continue its sick game by serving as another driver to send others on.</i> 
       <p>To fulfill your new duties as a truck driver of doom, take Space Truckin for free. You also receive the obligatory truck as a registered Catch-A-Ride vehicle. Truck-kun waives Space Truckin’s normal requirement for a deity or resurrector.</p>
-      <p>On the topic of duties, you now have a quota to Isekai 1 + your current tier individuals per month. If you are not keeping up with your quota, Truck-kun will make sure to motivate you. Truck-kun will find you and run you over again, sending you to another random world. Truck-kun will no longer threaten to Isekai you only if you become a TX.</p>
+      <p>On the topic of duties, you now have a quota to Isekai 1 + your current tier individuals per month. If you are not keeping up with your quota, Truck-kun will make sure to motivate you. Truck-kun will find you and run you over again, sending you to another random world. Truck-kun will no longer threaten to Isekai you only if you become a TX or more.</p>
     `,
   },
   {

@@ -18,29 +18,24 @@
             {{ char.name }}<span class="text-gray-500 text-sm"> ({{ methods[char.method] }})</span>
           </router-link>
           <span v-if="char.sold" class="text-red-500 ml-1">SOLD</span>
-          <span class="text-gray-500 ml-auto whitespace-nowrap"> Tier: <span class="text-green-500">{{ char.perk?.tier || char.swap?.tier || char.tier }}</span></span>
+          <span class="text-gray-500 ml-auto whitespace-nowrap"> Tier: <TierDisplay :tier="char.perk?.tier || char.swap?.tier || char.tier" /></span>
           <span
             v-if="char.tier !== char.priceTier && char.priceTier"
             class="text-gray-500 ml-2 whitespace-nowrap"
-          > Original: <span class="text-green-500">{{ char.priceTier }}</span></span>
+          > Original: <TierDisplay :tier="char.priceTier" /></span>
         </div>
         <span class="text-gray-500">From: <span class="text-gray-400">{{ char.world }}</span></span>
         <div class="flex flex-wrap gap-2 mb-1 text-sm">
-          <NumberInput
+          <Tiers
             v-if="!char.sold"
             v-model="char.tier"
-            theme="dark"
-            :max="11"
-            label="T"
-            :label-inside="true"
+            :dark="true"
             class="whitespace-nowrap"
           />
-          <NumberInput
+          <Tiers
             v-if="!char.sold && editMode"
             v-model="char.priceTier"
-            theme="dark"
-            :min="0"
-            :max="11"
+            :dark="true"
             label="Original Tier"
             class="whitespace-nowrap"
           />
@@ -157,7 +152,7 @@
       <div
         v-if="['capture'].includes(char.method) && !char.sold"
         class="cursor-pointer hover:(bg-gray-600 text-amber-400) rounded-xl p-1"
-        :title="`Sell for ${char.tier === 11 ? '1 ticket' : Math.floor(CHAR_COSTS[char.tier] * manualSellKf) + 'c'}`"
+        :title="`Sell for ${char.tier >= 11 ? Math.floor(CHAR_COSTS_TICKET[char.tier] * manualSellKf)+' IMG' : Math.floor(CHAR_COSTS[char.tier] * manualSellKf) + 'c'}`"
         @click="sellCompanion(char.uid)"
       >
         <healthicons:money-bag />
@@ -165,7 +160,7 @@
       <div
         v-if="['buy', 'used', 'yoink'].includes(char.method) && !char.sold"
         class="cursor-pointer hover:(bg-gray-600 text-amber-400) rounded-xl p-1"
-        :title="`Return for ${char.priceTier === 11 ? '1 ticket' : Math.round(CHAR_COSTS[char.priceTier] * 0.8) + 'c'}`"
+        :title="`Return for ${char.priceTier >= 11 ? Math.floor(CHAR_COSTS_TICKET[char.priceTier] * 0.8) + ' IMG' : Math.floor(CHAR_COSTS[char.priceTier] * 0.8) + 'c'}`"
         @click="sellCompanion(char.uid)"
       >
         <ic:baseline-assignment-return />
@@ -186,7 +181,7 @@
 import type { PropType } from '@vue/runtime-core'
 import { findIndex, isNumber } from 'lodash'
 import TextArea from '../basic/TextArea.vue'
-import { CHAR_COSTS, useAllChars, waifusThatHasPerk, waifuTags } from '~/data/constants'
+import { CHAR_COSTS, CHAR_COSTS_TICKET, useAllChars, waifusThatHasPerk, waifuTags } from '~/data/constants'
 import { waifuPerksObject } from '~/data/waifu_perks'
 import { imageLink, lazyLoadSingleImg } from '~/logic'
 import { SavedChar } from '~/store/chargen'

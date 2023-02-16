@@ -108,7 +108,7 @@ watch(directions, () => {
 })
 
 async function getMissions() {
-  missions.value = (await import('~/data/missions.json')).default
+  missions.value = (await import('~/data/json/missions.json')).default
 }
 
 getMissions()

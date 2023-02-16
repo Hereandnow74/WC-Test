@@ -175,12 +175,12 @@
         </div>
         <div v-if="showTiers" class="flex justify-between px-2">
           <div class="text-gray-600 dark:text-gray-400 justify-self-start">
-            Tier: <span class="text-amber-600 dark:text-amber-300">{{ charData.tier=== 11 ? 'TX' : charData.tier }}</span>
+            Tier: <TierDisplay class="text-amber-600 dark:text-amber-300" :tier="charData.tier" />
           </div>
           <div class="text-gray-600 dark:text-gray-400 whitespace-nowrap text-right">
-            Cost: <span class="text-amber-600 dark:text-amber-300">{{ charData.tier === 11 ? 'Tier X ticket' : CHAR_COSTS[charData.tier] }}</span>
+            Cost: <span class="text-amber-600 dark:text-amber-300">{{ CHAR_COSTS[charData.tier] || `${CHAR_COSTS_TICKET[charData.tier]} IMG` }}</span>
             <span
-              v-if="flags.noBindings && (charData.tier) !== 11 && (charData.tier) !== 1"
+              v-if="flags.noBindings && (charData.tier) <= 10 && (charData.tier) !== 1"
               title="Discount from No Binding"
             >({{ CHAR_COSTS[(charData.tier) - 1] }})</span>
           </div>
@@ -220,7 +220,7 @@
 import type { PropType } from '@vue/runtime-core'
 import { Character, DBCharacter } from 'global'
 import { findIndex, intersection, random } from 'lodash-es'
-import { CHAR_COSTS, defTags, PLACEHOLDER_NO_IMAGE, useAllChars, waifusThatHasPerk, waifuTags, nicknames } from '~/data/constants'
+import { CHAR_COSTS, defTags, PLACEHOLDER_NO_IMAGE, useAllChars, waifusThatHasPerk, waifuTags, nicknames, CHAR_COSTS_TICKET } from '~/data/constants'
 import { lazyLoadSingleImg, tagToggles, showDefenseTags, imageLink } from '~/logic'
 import { buyCompanion, captureCompanion, yoinkCompanion, slightlyCompanion } from '~/logic/waifuLogic'
 import { useGlobalSettings } from '~/store/settings'
@@ -304,7 +304,7 @@ const charData = computed(() => {
   return res as Character
 })
 
-const charCost = computed(() => charData.value.tier === 11 ? '' : ` ${Math.ceil(CHAR_COSTS[charData.value.tier] * captureKoeff.value)}c`)
+const charCost = computed(() => charData.value.tier >= 11 ? ` ${Math.floor(CHAR_COSTS_TICKET[charData.value.tier] * captureKoeff.value)}t` : ` ${Math.floor(CHAR_COSTS[charData.value.tier] * captureKoeff.value)}c`)
 
 const tags = computed(() => {
   return charData.value.tags.map(x => waifuTags[x] ? waifuTags[x] : { tag: x, color: 'bg-teal-600', desc: '' })

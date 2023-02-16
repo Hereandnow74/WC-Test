@@ -86,7 +86,7 @@ const costOrIntensity = (el: any) => {
     if (el.cost === 0)
       return 'free'
     else
-      return el.cost >= 11111 ? `${el.cost / 11111} TX ticket(s)` : el.cost * (-1)
+      return el.tCost ? `${el.tCost} IMG` : el.cost * (-1)
   }
   if (el.intensity) {
     if (el.intensity <= 10)

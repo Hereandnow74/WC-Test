@@ -16,7 +16,7 @@
         class="hover:bg-gray-600 cursor-pointer"
         @click="chooseChar(name)"
       >
-        {{ name.item.n }} (<span class="text-green-400">T{{ name.item.t }}</span>) (<span class="text-gray-400">{{ name.item.w }}</span>)
+        {{ name.item.n }} (<span class="text-green-400">T<TierDisplay :tier="name.item.t" /></span>) (<span class="text-gray-400">{{ name.item.w }}</span>)
       </div>
     </div>
   </div>

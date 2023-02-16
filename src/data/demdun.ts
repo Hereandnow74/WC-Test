@@ -97,7 +97,8 @@ homes.push({
   title: 'Pocket Star',
   category: 'Home',
   image: 'https://i.ibb.co/YB9Tpcz/Pocket-Star.jpg',
-  cost: 11111,
+  cost: 0,
+  costT: 1,
   whitelist: ['Sweet Home Expansion (25x)'],
   desc: 'Your planet is no longer alone in its universe. This expands your personal realm’s radius to roughly 104.45 AU and places a yellow star at the center, with your planet orbiting around it. No additional planets or other features are included in this perk.',
 })
@@ -152,7 +153,7 @@ homes.push({
 
 export const demdunDesc = `
 <h3 class="text-xl">Advanced Perks: Demiplane or Dungeon?</h3>
-<p>You may take one of two directions with your pocket space, opening it up to other realities or further concentrating its power on itself. You may initially only choose one of either Demiplane or Dungeon. Upon doing so, the cost of the other perk becomes a TX Ticket.</p>
+<p>You may take one of two directions with your pocket space, opening it up to other realities or further concentrating its power on itself. You may initially only choose one of either Demiplane or Dungeon. Upon doing so, the cost of the other perk becomes a IMG Ticket.</p>
 <p>By further concentrating the power of the space upon itself and making it your own Demiplane, you increase its defenses and your control over its space. If you instead expand it out to other realities, you are better able to shape its physical form and bring it into a world as a Dungeon. In both cases, you may make any decisions about your Sweet Home’s layout, design, and rules via your Company provided Smart Device. Any changes take a week to fully settle into place, no matter how small or grand. Unwanted teleportation into, out of, or from point to point within your owned space(s) is nearly impossible for people not part of your retinue.</p>
 <p>There are two major mechanics that are involved with the two upgrade paths, Laws and Retinue Devotion, mostly correlating to Demiplanes and Dungeons respectively.</p>
 `

@@ -53,7 +53,7 @@
       </div>
       <div id="pandora" class="bg-amber-100 dark:bg-gray-800 p-1 md:p-4 w-full mx-auto">
         <div class="text-lg text-center mb-2 text-teal-600 dark:text-teal-300">
-          These Tier lists are aproximations, official tier list do not exist yet.
+          This Tier list is approximation, official tier list do not exist yet.
         </div>
         <!-- <div class="flex w-full pb-2">
           <div
@@ -198,22 +198,9 @@ const waifuData = [
   ['T8', '200', '20', '120', '160', ['★★', 'text-gray-400']],
   ['T9', '500', '50', '300', '400', ['★★★', 'text-gray-400']],
   ['T10', '1000', '100', '600', '800', ['★', 'text-yellow-500']],
-  ['TX', 'TX ticket', 'TX ticket', 'TX ticket', '2 TX tickets'],
-]
-
-const pandoraTitles = ['Waifu Tier', 'Tier Name', 'Tier Meaning']
-const pandoraData = [
-  ['T1', 'Muggle Tier', 'Completely baseline human, no special abilities or talents to speak of. Normie character.'],
-  ['T2', 'Talented Tier', 'Someone who has some fighting skill, or political clout, but not exceptionally so, falling between tiers one and three.'],
-  ['T3', 'Badass Normal Tier', 'Peak human. These characters are Made of Iron Badass Normals who can push the upper limits of what a human is capable of. They may have gotten Training from Hell, or are experts at martial arts, Good Old Fisticuffs, Gun Kata, Le Parkour, Improbable Weapon Usage and the like, or is part of the Red Shirt Army. Basically, this is a character anyone could become, bar the setting.'],
-  ['T4', 'Abnormal Tier', 'Characters in this weight class have an ability, trait, or talent that is supernatural or superhuman, but are otherwise comparable to normal humans. Their abilities are generally very specific and limited and may be useless in some situations, rendering the characters just as helpless as normal un-powered humans. Usually, characters of this type lack the Required Secondary Powers to optimize or protect themselves from their own powers. Perhaps their only powers are to cancel other powers. Most of the time, their ability is something we can mimic or even surpass using common science or low-grade cybernetics.'],
-  ['T5', 'Super Tier', 'Characters in this weight class can no longer be considered normal. Their powers, even if they are limited, may be used in a variety of ways, and tend to have Required Secondary Powers. Most of your run-of-the-mill Super Heroes, Shounen characters, and Mages will likely start here, possibly being pushed higher as they continue their adventures.'],
-  ['T6', 'Peak Super Tier', 'Someone who qualifies as a Rank 5 character, but who is especially talented even within that tier. Typically, those who can leverage their powers to affect entire cities or at least large portions of them are at least this level.'],
-  ['T7', 'Hyper Tier', 'These characters typically can cause, stop, or reverse large scale disasters, break the laws of or flat out warp physics with their powers. Those who can affect large regions encompassing multiple cities are typically at this tier.'],
-  ['T8', 'Ultra Tier', 'These characters have abilities that can affect entire worlds (such as Earth or others comparable to it in size) either positively or negatively, or may even be a manifestation of a planet, with all that implies. Those who can reach into other dimensions go here.'],
-  ['T9', 'Demigod Tier', 'These characters are powerful enough to be considered lesser gods, and are nigh-unchallenged in power in their setting.'],
-  ['T10', 'God Tier', 'Characters that are this powerful aren\'t so much characters as forces of nature, wielding power beyond observable human science.'],
-  ['TX', 'Author Tier', 'Characters in this weight class are absolutely Omnipotent and likely Omniscient. They are capable of exerting their will on all of reality and the entire universe (or even the totality of the multiverse) without exception. Destiny/Fate is their play-thing. They cannot be killed/destroyed by any means. Any limits they have are self-imposed.'],
+  ['TX', '2 IMG', '1 IMG', '400', '1 IMG + 400'],
+  ['TY', '5 IMG', '3 IMG', '1 IMG', '4 IMG'],
+  ['TZ', '10 IMG', '6 IMG', '2 IMG', '8 IMG'],
 ]
 
 const despinData = [

@@ -63,7 +63,7 @@
 <script lang='ts' setup>
 import { random } from 'lodash-es'
 import Toggle from '../basic/Toggle.vue'
-import { CHAR_COSTS } from '~/data/constants'
+import { CHAR_COSTS, CHAR_COSTS_TICKET } from '~/data/constants'
 
 const props = defineProps({
   char: {
@@ -183,7 +183,7 @@ const usedWaifus = computed(() => {
   rerollConst.value *= -1
   res = res.map(x => ({
     ...x,
-    cost: x.tier - x.traumaTier === 11 ? 'TX ticket' : CHAR_COSTS[x.tier - x.traumaTier] || 1,
+    cost: x.tier - x.traumaTier >= 11 ? `${CHAR_COSTS_TICKET[x.tier - x.traumaTier]} IMG` : CHAR_COSTS[x.tier - x.traumaTier] || 1,
     effectiveTier: x.tier,
   }))
   return res

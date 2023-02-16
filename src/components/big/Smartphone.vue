@@ -33,7 +33,7 @@
           {{ budget }}
         </span>
       </span>
-      <span v-if="tier11tickets !== 0" class="flex gap-1 items-center cursor-help" title="Your current tickets">
+      <span v-if="tier11tickets !== 0" class="flex gap-1 items-center cursor-help" title="Your current IMG tickets">
         <bi:ticket-perforated style="color: #faf0e6;" />
         <span :class="tier11tickets >= 0 ? '' : 'text-red-500'">{{ tier11tickets }}</span>
       </span>

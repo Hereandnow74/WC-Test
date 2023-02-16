@@ -108,7 +108,7 @@
       </div>
       <div v-if="heritage.length" id="Heritage">
         <h3 class="text-lg" :style="{'color': imageSettings.categoryColor}">
-          Heritage <span v-if="yourTier > 0" class="font-semibold">( Your tier - <span class="text-orange-300">T{{ yourTier }}</span> )</span>
+          Heritage <span v-if="yourTier > 0" class="font-semibold">( Your tier - <span class="text-orange-300">T<TierDisplay :tier="yourTier" /></span> )</span>
         </h3>
         <Enum
           :number-color="imageSettings.numberColor"

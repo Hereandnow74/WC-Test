@@ -112,7 +112,7 @@ export class MissionGenerator {
       this.description = `Be considered a god in <b>${world.worldName}(DR${world.rating})</b>, you need to be worshipped by at least 51% (counted at the moment of arrival) of the non-retinue sentient population.`
       this.conditions = [{ value: 'Can\'t use 3rd party mind-control.' }, { value: sample(conditions) as string }]
       this.loca = `${world.worldName}${world.condition ? ` - ${world.condition}` : ''}`
-      this.reward = 'TX ticket'
+      this.reward = '2 IMG tickets'
     }
     return this
   }

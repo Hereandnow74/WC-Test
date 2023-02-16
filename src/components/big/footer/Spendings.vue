@@ -79,7 +79,7 @@
 </template>
 
 <script lang="ts" setup>
-import { CHAR_COSTS } from '~/data/constants'
+import { CHAR_COSTS, CHAR_COSTS_TICKET } from '~/data/constants'
 import { useStore } from '~/store/store'
 
 const {
@@ -90,11 +90,9 @@ const {
 
 const companionTotalCredits = computed(() => {
   return companions.value.reduce((a, x) => {
-    if (x.method === 'capture') {
-      let captureCost = Math.ceil(CHAR_COSTS[x.tier])
-      captureCost = captureCost === 11111 ? 2000 : captureCost
-      return a += captureCost
-    }
+    if (x.method === 'capture')
+      return a += CHAR_COSTS[x.tier] || CHAR_COSTS_TICKET[x.tier] * 1000
+
     return a
   }, 0)
 })

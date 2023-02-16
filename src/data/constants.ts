@@ -72,7 +72,9 @@ export const WORLD_RATINGS = [
   { rating: 11, title: 'One', budget: 0 },
 ]
 
-export const CHAR_COSTS = [0, 1, 2, 5, 10, 20, 50, 100, 200, 500, 1000, 11111]
+export const CHAR_COSTS = [0, 1, 2, 5, 10, 20, 50, 100, 200, 500, 1000, 0, 0, 0]
+export const CHAR_COSTS_TICKET = { 11: 2, 12: 5, 13: 10 } as Record<number, number>
+export const shownValue = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 'X', 'Y', 'Z']
 
 export const TOOLTIPS = {
   'Chargen': 'Only during character generation stage',
@@ -96,8 +98,9 @@ export const TOOLTIPS = {
   'T8': 'Cost: 200',
   'T9': 'Cost: 500',
   'T10': 'Cost: 1000',
-  'TX': 'Cost: TX Ticket',
-  'TΧ': 'Cost: TX Ticket',
+  'TX': 'Cost: 2 IMG',
+  'TY': 'Cost: 5 IMG',
+  'TZ': 'Cost: 10 IMG',
   'Negotiable': 'Negotiables - people you can negotiate with, for lack of a better term. While they may have an agenda that runs counter to yours, they will not become hostile unless provoked by some means: competition over the same capture target, a breach of ethical standards, manipulation by local parties, or just self-defense against your aggression. Negotiable contractors count as defeated once they’re either killed or permanently accommodated.',
   'Rival': 'Rivals they don’t have an issue with you in particular, but you will stand directly in the way of their goals: their list of local capture targets overlaps with yours, you and they want a member of each other’s retinue and aren’t willing to back off or trade, members of your retinues know each other and want their counterpart to join them, etc. If you leave for another world, your rival will connect to that world too and have objectives there that are incompatible with your own. Rivals are defeated when they are no longer capable and/or willing to pursue their goals.',
   'Enemy': 'Enemies - when you and an enemy are first connected to the same world, your smart devices will receive alerts with each other’s name and face: as you look at that moment, minus any makeup. Like rivals, enemies will also pursue you across worlds. Assume that every enemy you encounter seeks to stripmine your visited worlds of all credit value, claim your retinue as their own, or even sell them off for credits. The only choice is to kill or be killed.',
@@ -243,7 +246,7 @@ export const waifuTags = {
   ha: { tag: 'Hacker', category: 'Occupation', short: 'ha', effect: '', desc: 'A being who specializes in reverse engineering, finding loopholes, and exploiting programs and digital systems in general.', style: { background: 'linear-gradient(0deg, rgba(71,107,77,1) 0%, rgba(0,255,29,1) 70%)', color: '#000' } },
   im: { tag: 'Immortality', category: 'Powers', short: 'im', effect: '', desc: 'Any kind of immortality', color: 'bg-gradient-to-r to-red-300 from-yellow-300 text-black' },
   ir: { tag: 'Spirit', category: 'Race', short: 'ir', effect: '', desc: 'Includes Ghosts, Shades, Wraiths, and Yokai as well', style: { background: 'linear-gradient(0deg, rgba(233,220,255,1) 0%, rgba(125,50,245,1) 100%)', color: '#000' } },
-  cu: { tag: 'Cultivator', category: 'Occupation', short: 'cu', effect: '', desc: 'A being who seeks to overthrow Heaven through personal efforts, usually of Eastern-influenced origin. Almost always qualifies for Transhuman.', style: { background: 'radial-gradient(circle, rgba(251,148,63,1) 0%, rgba(255,248,0,1) 100%)', color: '#000' } },
+  cu: { tag: 'Cultivator', category: 'Occupation', short: 'cu', effect: '', desc: 'A being who seeks to reach the pinnacle of their discipline, usually of Eastern-influenced origin. Almost always qualifies for Transhuman.', style: { background: 'radial-gradient(circle, rgba(251,148,63,1) 0%, rgba(255,248,0,1) 100%)', color: '#000' } },
   sh: { tag: 'Stealth', category: 'Powers', short: 'sh', effect: '', desc: 'Has experience sneaking around or committing hidden actions.', style: { background: 'linear-gradient(90deg, rgba(26,24,59,1) 0%, rgba(108,98,139,1) 50%, rgba(26,24,59,1) 100%)', color: '#fff' } },
   pm: { tag: 'Power Manipulation', category: 'Powers', short: 'pm', effect: '', desc: 'Is known to control, alter, or manipulate powers and abilities in any way or form', style: { background: 'linear-gradient(0deg, rgba(74,0,143,1) 0%, rgba(157,86,222,1) 52%, rgba(74,0,143,1) 100%)', color: '#fff' } },
 
@@ -415,7 +418,7 @@ const changes = ref<Record<number | string, Changes>>({})
 
 export async function getChars(): Promise<DBCharacter[]> {
   if (!chars)
-    chars = (await import('~/data/characters.json')).default
+    chars = (await import('~/data/json/characters.json')).default
   return chars
 }
 
@@ -428,7 +431,7 @@ getChanges()
 
 export async function getUserChars(): Promise<DBCharacter[]> {
   if (!userChars)
-    userChars = (await import('~/data/userCharacters.json')).default
+    userChars = (await import('~/data/json/userCharacters.json')).default
   return userChars
 }
 
@@ -478,8 +481,8 @@ const worlds = ref<DBWorld[]>([])
 const subWorlds = ref<DBWorld[]>([])
 
 async function getWorlds() {
-  worlds.value = (await import('~/data/worlds.json')).default
-  subWorlds.value = (await import('~/data/userWorlds.json')).default
+  worlds.value = (await import('~/data/json/worlds.json')).default
+  subWorlds.value = (await import('~/data/json/userWorlds.json')).default
 }
 
 const allWorldNames = computed(() => uniq(allChars.value.map(x => x.w)))

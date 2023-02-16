@@ -17,17 +17,14 @@
               (<span v-if="startingOrigin.title">{{ startingOrigin.title }}</span>)
             </span>
           </span>
-          <span class="text-gray-500 ml-auto whitespace-nowrap"> Tier: <span class="text-green-500">{{ Math.max(startingOrigin.tier || 1, yourTier) }}</span></span>
+          <span class="text-gray-500 ml-auto whitespace-nowrap"> Tier: <span class="text-green-500"><TierDisplay :tier="Math.max(startingOrigin.tier || 1, yourTier)" /></span></span>
         </div>
         <Input v-if="editMode" v-model="startingOrigin.character" class="mt-1" placeholder="Your possess name" />
         <span v-if="startingOrigin.w || char.w" class="text-gray-500">From: <span class="text-gray-400">{{ startingOrigin.w || char.w }}</span></span>
         <div v-if="!infoMode" class="flex gap-2 mb-1 text-sm">
-          <NumberInput
+          <Tiers
             v-model="startingOrigin.tier"
-            theme="dark"
-            :max="11"
-            label="T"
-            :label-inside="true"
+            :dark="true"
             class="whitespace-nowrap"
           />
           <div v-if="flags.chargen && ['Substitute', 'Walk-In'].includes(startingOrigin.title) && noUC">

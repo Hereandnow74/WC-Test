@@ -13,7 +13,8 @@ heritages.push({
   title: 'Ancestral Diversity',
   category: 'Heritage',
   image: 'https://i.ibb.co/Hqzvfds/Ancestral-Diversity.jpg',
-  cost: 11111,
+  cost: 0,
+  costT: 1,
   tree: 'None',
   multiple: true,
   max: 12,
@@ -197,7 +198,8 @@ heritages.push({
   type: 'Self',
   complex: 'flavor',
   anything: 'Element',
-  cost: 11111,
+  cost: 0,
+  costT: 1,
   whitelist: ['Double Dragon', 'Dragon Blood'],
   desc: 'You may select a third dragon element. Your ability to master each of your elements is vastly accelerated: you can achieve the same results in only one- thousandth of the total time. All waifus in your local universe gain another effective tier for the purpose of Dragon Aura. ',
 })
@@ -601,7 +603,8 @@ heritages.push({
   tree: 'Transhuman',
   image: 'https://i.ibb.co/Lr1fgBW/Singularity.jpg',
   type: 'Self',
-  cost: 11111,
+  cost: 0,
+  costT: 1,
   whitelist: ['Incandescent Ascendancy Machine'],
   desc: 'Surpassing limitations is the very nature of transhumanism. Choose a second Transhuman Type. All Transhuman perks treat you as having both types. When the aesthetics of two Transhuman types conflict, you may determine which one takes precedent.',
 })
@@ -806,7 +809,8 @@ heritages.push({
   tree: 'Outsider',
   image: 'https://i.ibb.co/5Tm2wM5/An-Answer-To-Reason.jpg',
   type: 'Self',
-  cost: 11111,
+  cost: 0,
+  costT: 1,
   whitelist: ['Prophet Of Paradox', 'The Gate And The Key'],
   desc: `
 <p>You are capable of teaching the members of your retinue how to become Outsiders; they gain their own true forms, their own Omens, and their own Elemental affinities in the process, acting with all of your Outsider abilities except for Elder Sign and Endless Gospels Unspoken.</p>

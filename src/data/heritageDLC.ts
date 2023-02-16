@@ -141,7 +141,7 @@ fullHeritagesDLC.push({
     defensePerks: [{ title: 'Trace Defense', cost: 0, count: 1 }, { title: 'Possession Defense', cost: 0, count: 2 }],
   },
   tree: 'Psychopomp',
-  desc: `Deаth takes everyone eventually so why not let your loved ones get a headstart? Take one copy of Trace Defense and two copies of Possession Defense for free. You may now gift souls to those you have bound, slowly pulling them into the same limbo you exist in. Retinue members fed enough souls will begin to take on traits of your harbinger form if you have acquired it, culminating in them gaining one of their own, raising their effective tier by 1. TX individuals do not benefit from this increase. The number of souls required to gain this benefit is proportional to a waifu’s effective tier, with retinue members of a higher tier requiring more souls to power their evolution to attain a harbinger form.
+  desc: `Deаth takes everyone eventually so why not let your loved ones get a headstart? Take one copy of Trace Defense and two copies of Possession Defense for free. You may now gift souls to those you have bound, slowly pulling them into the same limbo you exist in. Retinue members fed enough souls will begin to take on traits of your harbinger form if you have acquired it, culminating in them gaining one of their own, raising their effective tier by 1. IMG tier individuals do not benefit from this increase. The number of souls required to gain this benefit is proportional to a waifu’s effective tier, with retinue members of a higher tier requiring more souls to power their evolution to attain a harbinger form.
     `,
   whitelist: ['Your Soul Is Mine'],
 })
@@ -201,7 +201,8 @@ fullHeritagesDLC.push({
   title: 'Evermore',
   category: 'Heritage',
   image: 'https://i.imgur.com/WTcI4HPl.png',
-  cost: 11111,
+  cost: 0,
+  costT: 1,
   tree: 'Psychopomp',
   desc: `At long last, you arrive at the pinnacle. You Are Deаth, and none shall escape you. The souls within your grasp are yours to mold as you please; every secret and aspect is available to you to peruse or alter at your leisure. You no longer need to destroy a soul in order to learn its secrets, and any magics or skills that might be gleaned from such an act are learned in their totality. You may, at will, incarnate souls you possess, allowing them to walk the earth once more in your service. Soul-bound items have their ownership transferred to you when you take possession of the soul they reside within, and you may allow their original wielders to make use of them if you have incarnated them
     <p>While within your Deаth-realm, you may call upon any soul you possess and work your magics through them. Be it a single servant, a powerful warrior, or indeed an entire army to raise arms against your enemies, they will answer and serve. Your Harbinger weapons may now have multiple souls placed within them, though they may only hold four at most. Any Demiplane laws you have purchased will now affect the territory of None Can Excel.</p>
@@ -241,7 +242,7 @@ fullHeritagesDLC.push({
     defensePerks: [{ title: 'Trace Defense', cost: 0, count: 1 }],
   },
   tree: 'Wendigo',
-  desc: `The Hunting Ground of a Wendigo is a place many have faced their downfall, consumed by the creature to satiate its limitless appetite. You now benefit from a circular area with a radius of your Tier^2 kilometers around a location of your choice, where your effective tier is raised by one unless you are a TX already. A Hunting Ground is established through slaughter, requiring the blood of ten sapient beings to be spilled at its center. A Hunting Ground can be established anywhere, whether that be in an urban, rural, or alien environment. You can sense anyone with an equal or lower tier than you within your Hunting Ground and are completely invisible to any methods of detection and sensing from beings inside of it. Take Athletic Talent and one copy of Trace Defense for free. 
+  desc: `The Hunting Ground of a Wendigo is a place many have faced their downfall, consumed by the creature to satiate its limitless appetite. You now benefit from a circular area with a radius of your Tier^2 kilometers around a location of your choice, where your effective tier is raised by one unless you are a TX or more already. A Hunting Ground is established through slaughter, requiring the blood of ten sapient beings to be spilled at its center. A Hunting Ground can be established anywhere, whether that be in an urban, rural, or alien environment. You can sense anyone with an equal or lower tier than you within your Hunting Ground and are completely invisible to any methods of detection and sensing from beings inside of it. Take Athletic Talent and one copy of Trace Defense for free. 
     <p>You are able to grow your Hunting Ground by your Tier^2 meters for each sapient being you either directly or indirectly kill and consume inside of it. Total consumption is not required as a mass as large as a human limb will count towards the expansion of your grounds. While you are limited to only one Hunting Ground, you may choose to move its location once every month. This will require a fresh massacre to be committed and will shrink it back to its initial size. </p>
     `,
   whitelist: ['The First Bite'],
@@ -260,7 +261,7 @@ fullHeritagesDLC.push({
   tree: 'Wendigo',
   desc: `Wendigos are the embodiments of winter and frost, with hearts so cold that even the hottest fires cannot hope to melt them. Your bone-chilling presence now weakens the willpower of those around you, as they slowly lose their will to fight back or run to escape your jaws. While those with exceptionally strong wills may be resistant to this effect, most others will be immobilized, ripe to become your next meal.
     <p>Your Hunting Ground now reflects this change in you and will be shrouded in a harsh blizzard whose intensity you may control at will. The aesthetic of this storm can be altered to match that of your Elemental Shroud or Heritage Element if you possess one. Take two copies of Stress Defense and Wild Defense, as well as one copy of Trace Defense for free.</p>
-    <p>Any being you choose to deem as prey inside your Hunting Ground will be afflicted by a growing and unnatural feeling of hunger and famine, which will weaken them in correlation to their body size and the time they remain on your grounds, up to a full one-tier drop in strength. The greater the tier of the being, the more time it will take for this effect to take hold. For example, while a Tier 3 humanoid will begin to feel the effects after just a few minutes spent in your Hunting Ground, those of higher tiers may require several days or even years. TX beings remain immune to this effect.</p>
+    <p>Any being you choose to deem as prey inside your Hunting Ground will be afflicted by a growing and unnatural feeling of hunger and famine, which will weaken them in correlation to their body size and the time they remain on your grounds, up to a full one-tier drop in strength. The greater the tier of the being, the more time it will take for this effect to take hold. For example, while a Tier 3 humanoid will begin to feel the effects after just a few minutes spent in your Hunting Ground, those of higher tiers may require several days or even years. IMG tier beings remain immune to this effect.</p>
     `,
   whitelist: ['Hunting Ground'],
 })
@@ -314,7 +315,7 @@ fullHeritagesDLC.push({
   tree: 'Wendigo',
   desc: `The darkness inside of you now seeps outside, permeating the air and corrupting the very land you reside in. You can now emit and control a stench of darkness and rot in the form of a dark miasma from your Wendigo form, which will spread in a Tier^3 meter-wide area around you. Living beings that smell these vapors will be twice as susceptible to your willpower-draining presence. This foul darkness does not stop there, weakening and perverting the possessions of those it touches. Swords will dull, enchantments will weaken, armor becomes brittle and magical items will fail to work. The strength of this effect increases with exposure and may be used to completely wither away or subvert an item bound to an individual to belong to you.
     <p>You Hunting Ground now reflects this change as the darkness seeps through it, twisting and corrupting anything that resides within. At your discretion, nature will seem to twist and warp, becoming a perverse reflection of what it once was, as the land is saturated with your power. The strength of your blizzard increases, as you may raise its intensity to a degree that any individual deemed as prey and of a lower tier than you will instantly freeze over in a time proportional to the difference in tiers. This effect varies if you have an Elemental Shroud or a Heritage Element, as prey may instead be immolated or poisoned if the respective element is chosen as the aesthetic of the storm.</p>
-    <p>Your influence spreads to the sky above your Hunting Ground, providing  you with the option to have it shrouded in an eternal night, increasing your effective tier by another tier  inside of your territory unless you are a TX already. This change in the heavens is imperceptible to those located outside of your territory's boundaries, and will gradually appear as one ventures further toward its center. The ambient darkness now resides within your tokens, transforming them at will into shadowy rifts you can use to travel around your Hunting Ground. Take Land Talent as well as one copy of Corruption Defense and two copies of Creature Defense for free. If you were not already, you are now a Tier 7.</p>
+    <p>Your influence spreads to the sky above your Hunting Ground, providing  you with the option to have it shrouded in an eternal night, increasing your effective tier by another tier  inside of your territory unless you are a TX or more already. This change in the heavens is imperceptible to those located outside of your territory's boundaries, and will gradually appear as one ventures further toward its center. The ambient darkness now resides within your tokens, transforming them at will into shadowy rifts you can use to travel around your Hunting Ground. Take Land Talent as well as one copy of Corruption Defense and two copies of Creature Defense for free. If you were not already, you are now a Tier 7.</p>
     `,
   whitelist: ['Heart of Ice'],
 })
@@ -389,7 +390,7 @@ fullHeritagesDLC.push({
   },
   tree: 'Wendigo',
   desc: `Wendigos are the embodiment of selfishness and care only for themselves. You are now able to grow in power by doing the unthinkable and consuming the flesh of your very own retinue members. By consuming their flesh you can acquire all the biological and racial powers and abilities they may have. The amount of power you receive depends on their status in your retinue and the quantity of their flesh you have consumed
-    <p>Consuming a familiar in its entirety will provide you with a replica of all biological and racial abilities they may have. Consuming a companion in their entirety will provide you with all the biological and racial abilities they have at one tier higher than their current strength. TX companions will only provide you with an exact copy of their powers. The greater the bond you had with your companion or familiar, the more natural these abilities will feel when first utilized and the easier it will be to integrate them with any you possessed beforehand.</p>
+    <p>Consuming a familiar in its entirety will provide you with a replica of all biological and racial abilities they may have. Consuming a companion in their entirety will provide you with all the biological and racial abilities they have at one tier higher than their current strength. IMG tier companions will only provide you with an exact copy of their powers. The greater the bond you had with your companion or familiar, the more natural these abilities will feel when first utilized and the easier it will be to integrate them with any you possessed beforehand.</p>
     <p>If you have purchased the Overhauled Menu perk, you will no longer be limited to purely biological powers or traits and will be able to acquire the soul, psychic, or conceptual abilities and characteristics of your retinue members linked to your respective element. Take one copy of Soul Defense and  Fatality Defense for free.</p>
     `,
   whitelist: ['The Great Hunger'],
@@ -401,7 +402,8 @@ fullHeritagesDLC.push({
   title: 'A Wendigo World',
   category: 'Heritage',
   image: 'https://i.imgur.com/Y6nvz5Ul.jpg',
-  cost: 11111,
+  cost: 0,
+  costT: 1,
   tree: 'Wendigo',
   desc: `You have become the embodiment of endless gluttony, with an appetite larger than that of any other. To sate it, your Lesser Wendigos are able to leave your Hunting Ground and form Hunting Grounds of their own via the required massacre. These new Hunting Grounds benefit from the Heart of Ice, Foul Darkness, Call of the Wild, and Sacred Taboos perks. If you so choose, any taboos you have imposed on your Hunting Ground will be applied to those of your Lesser Wendigo. The flesh of your retinue members can now be used as an alternative when creating new Lesser Wendigo. Retinue members infused to the point of being able to consume your respective element will now contribute to the growth of your Hunting Ground.
     <p>If you have purchased the Rainbow Bridge perk, these Hunting Grounds are not limited to just one world, as your Lesser Wendigos will be able to operate in any you have visited before. You can also choose to travel between these worlds via the rifts formed by the tokens located in the various Hunting Grounds.</p>
@@ -718,7 +720,8 @@ fullHeritagesDLC.push({
   title: 'Pinnacle of Dominion',
   category: 'Heritage',
   image: 'https://i.imgur.com/d8LHaNMl.jpg',
-  cost: 11111,
+  cost: 0,
+  costT: 1,
   tree: 'Mastermind',
   desc: `Your Estate is now a cornerstone of civilization in whatever world you go to, and you are its icon. Whatever your activities or goals are, they are considered acceptable for an exceptional few privileged. The more time you spend in the spotlight, the more those privileged to follow your path are drawn to join your retinue, while those that aren't become more permissive to your activities with the understanding that it's just the way things are meant to be.
     <p>If you have access to multiple worlds, you can assign a different retinue member to be your Champion and Lieutenant in each. You can even assign a Lieutenant to pull double duty as a Champion. The size of any new Hideouts (or Headquarters) you acquire is tripled.</p>
