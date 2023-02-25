@@ -57,6 +57,7 @@ const allChallenges = computed(() => activeChallenges.value
   }, {} as Record<string, Challenge>))
 
 function challengeAvailable(challenge: any) {
+  if (intersection(challenge.blacklist, allEffects.value).length) return false
   if (!challenge.whitelist) return true
   if (challenge.title === 'Pocket Inventory' && allEffects.value.includes('Pocket Space')) return true
   if (challenge.whitelist && intersection(activeChallenges.value.map(x => x.title), challenge.whitelist).length >= (challenge.needed || challenge.whitelist.length))
@@ -68,11 +69,13 @@ function pickChallenge(challenge: any) {
   if (!challengeAvailable(challenge)) return
   const ind = findIndex(activeChallenges.value, { title: challenge.title })
   if (ind === -1) {
+    allEffects.value.push(challenge.title)
     activeChallenges.value.push({ title: challenge.title, cost: challenge.cost })
     if (challenge.effect) challenge.effect.set()
   }
   else {
     if (challenge.effect) challenge.effect.remove()
+    allEffects.value.splice(allEffects.value.indexOf(challenge.title), 1)
     activeChallenges.value.splice(ind, 1)
   }
 }

@@ -49,7 +49,7 @@
             "t": {
               "type": "number",
               "minimum": 1,
-              "maximum": 11,
+              "maximum": 13,
             },
             "i": {
               "type": "string"

@@ -45,6 +45,10 @@
       </span>
       <Enum :list="challenge.whitelist" />
     </div>
+    <div v-if="challenge.blacklist" class="px-2 flex gap-2">
+      Mutually exclusive with:
+      <Enum :list="challenge.blacklist" />
+    </div>
   </div>
 </template>
 

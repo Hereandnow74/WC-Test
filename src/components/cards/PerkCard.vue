@@ -182,14 +182,18 @@ const perkToSave = reactive({
       cs = (perkToSave.count && props.perk.multiple) ? (cs * (Math.min(perkToSave.count, props.perk.max || Infinity) - countMod)) : cs
     return cs
   }),
-  costT: props.perk.costT,
+  costT: computed(() => {
+    let cs = props.perk.costT
+    if (props.increment || props.perk.increment) cs = (perkToSave.count / 2) * (cs * 2 + (perkToSave.count - 1) * cs)
+    return cs
+  }),
   target: '',
   anything: '',
   freebies: { ...props.perk.freebies } || undefined,
 })
 
 const displayedCost = computed(() => {
-  return props.perk.costT ? `${perkToSave.costT} IMG` : perkToSave.cost
+  return props.perk.costT ? `${perkToSave.costT || 1} IMG` : perkToSave.cost
 })
 
 const freebieCosts = computed(() => {

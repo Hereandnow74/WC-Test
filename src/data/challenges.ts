@@ -1,7 +1,8 @@
-import { findIndex, sample, random } from 'lodash-es'
+import { findIndex, sample, random, countBy } from 'lodash-es'
 import { WORLD_RATINGS, allWorldsNoCondition } from './constants'
 import { addFreebies, deleteFreebies } from '~/logic'
 import { useStore } from '~/store/store'
+import { useChallenges } from '~/store/challenges'
 
 export const challengesDesc = `
 <p>Challenges should be picked after you pick the World but before you make any other purchases.
@@ -10,7 +11,9 @@ Challenges are not a part of a canon Waifu Catalog so you have more freedom in i
 `
 
 const { fullStartingBudget, companions, baseBudget, startingWorld, defensePerks } = useStore()
+
 let defenseWatcher = null
+let exileWatcher = null
 
 const employee = { uid: 6666666, name: 'Employee #6.02214076e23', world: 'The Company', tier: 10, priceTier: 0, method: 'unbound' }
 let rouletteWatcher = null
@@ -131,6 +134,7 @@ export const challenges = [
     special: 'Chargen only. May not be taken on DR11.',
     cost: 0,
     bonus: 1,
+    blacklist: ['Wage Slave', 'Black-mark', 'Fight For Your Right', 'One In Ten'],
     desc: `
     <p>You are incredibly lucky! You receive a unique offer from our company - an exciting journey through the multiverse.</p>
     <p>Only today you can choose any starting world and get +100% to its starting budget!</p>
@@ -409,6 +413,31 @@ export const challenges = [
     Your worldview has shattered as you lose the ability to understand what is real and what is not. Are you an ordinary being or a contractor with  powerful abilities and a retinue of beautiful waifu? Is this the world you are walking in that of the mundane or the supernatural? Is your companion an actual living person or just a figment of your imagination? The looming monster about to attack you is not a threat, right? The company can unfortunately no longer do anything for you, as only you are now able to understand what reality you are living in. 
     `,
     whitelist: ['Just a Dream'],
+  },
+  {
+    uid: 'Zgyrq',
+    dlc: 'Om1cr0n',
+    dlclink: '',
+    title: 'Small Team',
+    image: 'https://i.imgur.com/uqpekR6l.png',
+    cost: 0,
+    special: 'Chargen only.',
+    desc: `
+    Your retinue would be restricted to a maximum of 5 members, excluding you. All other captures or purchases that you will obtain will get the status of 'Exile'. An 'Exile' retinue member do not receive any catalog benefits, such as defenses or talents, or provide any, such as rebates or devotion points.
+    <p>You can freely change the status of your companions to 'Exile' and back, provided you stay within the limit, but they will lose any applied to them perks and proficiency with them, and will need to start anew, if you will restore their status.</p>
+    <p>Receive 70% of companion cost for the capture, instead of the default 60%.</p>
+    `,
+    effect: {
+      set: () => {
+        exileWatcher = watch(() => companions.value.length, () => {
+          if (countBy(companions.value, x => x.role !== 'Exile').true > 5)
+            companions.value[companions.value.length - 1].role = 'Exile'
+        })
+      },
+      remove: () => {
+        if (exileWatcher) exileWatcher()
+      },
+    },
   },
 ]
 

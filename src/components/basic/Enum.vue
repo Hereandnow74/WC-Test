@@ -82,11 +82,12 @@ const props = defineProps({
 })
 
 const costOrIntensity = (el: any) => {
+  console.log(el)
   if (el.cost || el.cost === 0) {
-    if (el.cost === 0)
+    if (el.cost === 0 && !el.costT)
       return 'free'
     else
-      return el.tCost ? `${el.tCost} IMG` : el.cost * (-1)
+      return el.costT ? `${el.costT} IMG` : el.cost * (-1)
   }
   if (el.intensity) {
     if (el.intensity <= 10)

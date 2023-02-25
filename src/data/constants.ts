@@ -73,6 +73,7 @@ export const WORLD_RATINGS = [
 ]
 
 export const CHAR_COSTS = [0, 1, 2, 5, 10, 20, 50, 100, 200, 500, 1000, 0, 0, 0]
+export const CHAR_COSTS_FULL = [0, 1, 2, 5, 10, 20, 50, 100, 200, 500, 1000, 2000, 5000, 10000]
 export const CHAR_COSTS_TICKET = { 11: 2, 12: 5, 13: 10 } as Record<number, number>
 export const shownValue = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 'X', 'Y', 'Z']
 
@@ -148,9 +149,9 @@ export const waifusThatHasPerk = [...waifu_perks, ...DLCwaifu_perks]
 // 7. Utility (Perk, Multiple, Official WC)
 // 8. Other
 export const waifuTags = {
-  F: { tag: 'Female', category: 'Gender', short: 'F', effect: '', desc: '', color: 'bg-pink-500' },
-  M: { tag: 'Male', category: 'Gender', short: 'M', effect: '', desc: '', color: 'bg-blue-500' },
-  O: { tag: 'Other', category: 'Gender', short: 'O', effect: '', desc: 'Genderless or someone in between male and female.', color: 'bg-fuchsia-700' },
+  F: { tag: 'Female', category: 'Gender', short: 'F', effect: '', desc: '', color: 'bg-pink-500 text-white' },
+  M: { tag: 'Male', category: 'Gender', short: 'M', effect: '', desc: '', color: 'bg-blue-500 text-white' },
+  O: { tag: 'Other', category: 'Gender', short: 'O', effect: '', desc: 'Genderless or someone whose gender cannot be indentified.', color: 'bg-fuchsia-700' },
   C: { tag: 'Official WC', category: 'Utility', short: 'C', effect: '', desc: 'From official/canon spreadsheet', color: 'bg-yellow-400 text-black' },
   P: { tag: 'Perk', category: 'Utility', short: 'P', effect: '', desc: 'Have a specific waifu perk', color: 'bg-amber-200 text-black' },
 
@@ -174,7 +175,7 @@ export const waifuTags = {
 
   mo: { tag: 'Monster Tamer', category: 'Occupation', short: 'mo', effect: '', desc: 'Is known as a monster-tamer or otherwise being good with animals.', color: 'bg-gradient-to-t to-red-600 from-gray-100 text-black' },
   py: { tag: 'Psychic', category: 'Powers', short: 'py', effect: '', desc: 'Have Psychic powers.', style: { background: 'linear-gradient(0deg, rgba(124,0,255,1) 0%, rgba(248,0,255,1) 70%)', color: '#fff' } },
-  ip: { tag: 'Mind Manipulator', category: 'Powers', short: 'ip', effect: '', desc: 'Have superpower that can manipulate minds.', color: 'bg-[#61457d]' },
+  ip: { tag: 'Mind Manipulator', category: 'Powers', short: 'ip', effect: '', desc: 'Have superpower that can manipulate minds.', color: 'bg-[#61457d] text-white' },
   bk: { tag: 'Bodyjack', category: 'Powers', short: 'bk', effect: '', desc: 'Has power to bodyjacking others.', color: 'bg-[#631900]' },
   ih: { tag: 'Instant Death', category: 'Powers', short: 'ih', effect: '', desc: 'Is known for inflicting instant death (conceptual one)', color: 'bg-gradient-to-r to-green-500 from-dark-500' },
   sl: { tag: 'Social', category: 'Other', short: 'sl', effect: '', desc: 'Is known to be good with people or experienced in interacting/communicating with others', color: 'bg-[#f9ca94] text-black' },

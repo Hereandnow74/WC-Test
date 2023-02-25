@@ -33,7 +33,7 @@
               />
               <div class="flex gap-2">
                 <div>
-                  T{{ startingOrigin.tier || 1 }} <span class="font-bold">-></span> T{{ startingOrigin?.swap?.tier || 0 }} =
+                  T<TierDisplay :tier="startingOrigin.tier || 1" /> <span class="font-bold">-></span> T<TierDisplay :tier="startingOrigin?.swap?.tier || 0 " /> =
                   <span :class="((startingOrigin?.swap?.cost || 0) - (startingOrigin?.swap?.refund || 0)) <= 0 ? 'text-green-700 dark:text-green-400' : 'text-red-700 dark:text-red-400'">{{ ((startingOrigin?.swap?.cost || 0) - (startingOrigin?.swap?.refund || 0)) }}</span> credits
                 </div>
                 <Button
@@ -74,7 +74,7 @@
               />
               <div class="flex gap-2 justify-between">
                 <div>
-                  T{{ companion.tier }} <span class="font-bold">-></span> T{{ companion?.swap?.tier || 0 }} =
+                  T<TierDisplay :tier="companion.tier" /> <span class="font-bold">-></span> T<TierDisplay :tier="companion?.swap?.tier || 0" /> =
                   <span
                     :class="((companion?.swap?.cost || 0) - (companion?.swap?.refund || 0)) <= 0 ? 'text-green-700 dark:text-green-400' : 'text-red-700 dark:text-red-400'"
                   >{{ ((companion?.swap?.cost || 0) - (companion?.swap?.refund || 0)) }}
@@ -142,8 +142,8 @@ function buyPowerswap(char: DBCharacter, companion: SavedChar) {
     tier: char.t,
     uid: char.u,
     name: char.n,
-    cost: char.t !== 11 ? CHAR_COSTS[char.t] : 0,
-    refund: companion.tier !== 11 ? companion.method !== 'capture' ? CHAR_COSTS[companion.tier] : (char.t >= companion.tier ? CHAR_COSTS[companion.tier] : CHAR_COSTS[char.t]) : 0,
+    cost: char.t < 11 ? CHAR_COSTS[char.t] : 0,
+    refund: companion.tier < 11 ? companion.method !== 'capture' ? CHAR_COSTS[companion.tier] : (char.t >= companion.tier ? CHAR_COSTS[companion.tier] : CHAR_COSTS[char.t]) : 0,
   }
 }
 

@@ -136,7 +136,7 @@ const { settings, waifuPerks, companionsByUID, companions, companionsUIDs, start
 const waifuList = computed(() => {
   let res = {} as Record<string, number>
   res = props.waifuPerk.waifu.reduce((all, waifu, i) => {
-    if (companionsByUID.value[props.waifuPerk.waifuUID[i]] || companionsUIDs.value[props.waifuPerk.waifuUID[i]] || startingOrigin.value.uid === props.waifuPerk.waifuUID[i])
+    if (companionsByUID.value[props.waifuPerk.waifuUID[i]] || companionsUIDs.value[props.waifuPerk.waifuUID[i]] || startingOrigin.value.uid === props.waifuPerk.waifuUID[i] || startingOrigin.value?.perk?.uid === props.waifuPerk.waifuUID[i] || startingOrigin.value?.swap?.uid === props.waifuPerk.waifuUID[i])
       all[waifu] = props.waifuPerk.waifuUID[i]
     return all
   }, {} as Record<string, number>)

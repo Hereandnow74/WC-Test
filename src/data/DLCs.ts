@@ -850,7 +850,8 @@ DLCheritages.push({
   tree: 'Transhuman',
   category: 'Heritage',
   type: 'Self',
-  cost: 22222,
+  cost: 0,
+  costT: 4,
   whitelist: ['Singularity'],
   desc: 'Surpassing limitations is the very nature of transhumanism. You now can unlock the third Transhuman type. All Transhuman perks treat you as having all three types. When the aesthetics of three Transhuman types conflict, you may determine which one takes precedent.',
 })
@@ -873,7 +874,7 @@ DLCheritages.push({
 })
 
 DLCheritages.push({
-  uid: 'rBXUp',
+  uid: 'rBXgh',
   dlc: 'DepressedAlucard',
   dlclink: 'https://docs.google.com/document/d/18LaGf5cy9hDA7ZAInhxVJoTocWfeLo0PI_msQsFu76Q/edit',
   title: 'Pillar of Reality',
@@ -903,6 +904,7 @@ DLCbindings.push({
   cost: 0,
   costT: 1,
   multiple: true,
+  increment: true,
   desc: `
   You are no longer limited to a single Binding. You may now purchase an additional Binding and expansions. You must still spend the credits as normal. This perk may be purchased multiple times. Its price will increase by 1 ticket each time. You are able to decide what purchased binding effects, including mental, are applied to any or all of your retinue. For example, you could Bind someone with the Shroud, then use Third-Generation Symbiote to share access to the Symbiote’s bio-armor as well. 
   `,
@@ -1003,6 +1005,6 @@ DLCintensity.push({
   intensity: 0.8,
   special: 'Chargen only. May not be taken on DR11.',
   chargen: true,
-  blacklist: ['Wage Slave', 'Fight For Your Right', 'One In Ten'],
+  blacklist: ['Wage Slave', 'Fight For Your Right', 'One In Ten', 'Power Trip'],
   desc: 'You\'re blacklisted from using any of Company services after chargen, no new perks, no buying companions or rides - nothing. If you become qualified for new discounts after chargen by capturing new companions freed credits would stay dead on your account with no ability to spend them. Missions that give perks or tickets as a reward are still available, but you would not be able to receive those rewards. Help-desk is not available for you either instead you get limited ability to interpret vague rules in your favor.',
 })

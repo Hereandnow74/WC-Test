@@ -46,11 +46,10 @@
             label="Sex"
             :list="['F', 'M', 'O']"
           />
-          <Variants
+          <VariantsRetinue
             v-if="!char.sold && char.method !== 'unbound'"
             v-model="char.role"
             theme="dark"
-            :list="['Companion', 'Familiar', 'Devotee', 'Offspring', 'Dead']"
           />
         </div>
 
@@ -228,7 +227,7 @@ const fullChar = computed(() => {
     return { i: waifuPerksObject[props.char.uid].image, b: [] }
 })
 
-const image = computed(() => props.char.image || (!props.char.perk ? imageLink(props.char.originUID || props.char.uid) : waifuPerksObject[props.char.perk.uid].image || ''))
+const image = computed(() => props.char.image || (props.char.perk && waifuPerksObject[props.char.perk.uid].image ? waifuPerksObject[props.char.perk.uid].image || '' : imageLink(props.char.originUID || props.char.uid)))
 watch(image, () => imageEl.value ? lazyLoadSingleImg(imageEl.value) : null, { flush: 'post' })
 
 const tags = computed(() => {

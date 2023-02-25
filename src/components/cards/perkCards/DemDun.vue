@@ -39,15 +39,15 @@ const { homePerks } = useStore()
 
 const displayedCost = computed(() => {
   if (props.perk.title === 'Dungeons' && findIndex(homePerks.value, { title: 'Demiplane' }) !== -1)
-    return 'IMG'
+    return '1 IMG'
   if (props.perk.title === 'Demiplane' && findIndex(homePerks.value, { title: 'Dungeons' }) !== -1)
-    return 'IMG'
+    return '1 IMG'
   return props.perk.cost
 })
 
 function sendPerk(perk: any, perkToSave: any) {
   const obj = filterObject(perkToSave)
-  if (displayedCost.value === 'IMG')
+  if (displayedCost.value === '1 IMG')
     obj.costT = 1
   emit('pickPerk', perk, obj)
 }

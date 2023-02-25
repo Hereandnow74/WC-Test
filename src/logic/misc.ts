@@ -43,7 +43,7 @@ export function lazyLoadImg(list: HTMLElement| null) {
 }
 export function lazyLoadSingleImg(img: HTMLImageElement) {
   if (img) {
-    if (img.src && img.src !== img.dataset.src) {
+    if (img.src && img.src === img.dataset.src) {
       img.src = img.dataset.src || ''
       return
     }

@@ -28,7 +28,7 @@
       />
       <span text="gray-500 dark:gray-400" class="whitespace-nowrap">
         <slot name="cost">
-          <span v-if="displayedCost !== 0">(Cost: <span text="green-600 dark:green-300">{{ displayedCost }}</span>)</span>
+          <span v-if="displayedCost && displayedCost !== 0">(Cost: <span text="green-600 dark:green-300">{{ displayedCost }}</span>)</span>
           <span v-if="perk.dCost">(DP Cost: <span text="pink-600 dark:violet-300">{{ perk.dCost * count }}</span>)</span>
         </slot>
       </span>
@@ -103,7 +103,7 @@ const perkToSave = computed(() => {
 })
 
 const displayedCost = computed(() => {
-  return props.perk.costT ? `${perkToSave.costT} IMG` : perkToSave.cost
+  return props.perk.costT ? `${perkToSave.costT} IMG` : props.perk.cost
 })
 
 function sendPerk() {

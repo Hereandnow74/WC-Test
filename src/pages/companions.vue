@@ -243,7 +243,7 @@ const shuffleOn = ref(false)
 // const characters = ref({})
 const loading = ref(true)
 
-const { allCharsComp: changes } = useAllChars()
+const { changes } = useAllChars()
 const { fuse, fuseNoSort } = useCompanionsLogic()
 
 const editMode = ref(false)
@@ -363,6 +363,7 @@ const filteredCharacters = computed(() => {
   if (nsfw.value) sopt.$and.push({ in: nsfw.value })
   if (favorite.value === 1) sopt.$and.push({ u: `=${favorites.value.join('|=')}` })
   if (favorite.value === -1) sopt.$and.push({ u: `!^${favorites.value.join(' !^')}` })
+  // console.log(changes.value)
   if (newChanges.value) sopt.$and.push({ u: `=${Object.keys(changes.value).join('|=')}` })
   if (retinue.value === 1) sopt.$and.push({ u: `=${Object.keys(companionsUIDs.value).join('|=')}` })
   if (retinue.value === -1) sopt.$and.push({ u: `!^${Object.keys(companionsUIDs.value).join(' !^')}` })

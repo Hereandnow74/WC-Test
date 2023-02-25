@@ -306,7 +306,7 @@ const companionImages = computed(() => {
   companions.value.forEach((char) => {
     const charInfo = allCharsObject.value[char.originUID || char.uid]
     if (charInfo !== undefined)
-      res[char.uid] = !char.perk ? (char.image || imageLink(charInfo.u)) : waifuPerksObject[char.perk.uid].image || ''
+      res[char.uid] = char.perk && waifuPerksObject[char.perk.uid] ? waifuPerksObject[char.perk.uid].image || '' : (char.image || imageLink(charInfo.u))
   })
   return res
 })

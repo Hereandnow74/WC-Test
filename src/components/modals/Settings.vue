@@ -58,7 +58,7 @@
       <div class="flex flex-col gap-2">
         <div class="flex justify-between gap-2 border-b border-gray-500 border-dotted">
           <div>Hide images for <b>Perks</b></div>
-          <Toggle :value="!settings.perkImages" @click="settings.perkImages = !settings.perkImages" />
+          <Toggle :value="!settings.perkImages" @click="settings.perkImages = !settings.perkImages || false" />
         </div>
         <div class="flex justify-between gap-4 border-b border-gray-500 border-dotted">
           <div>Hide images for <b>Worlds</b></div>

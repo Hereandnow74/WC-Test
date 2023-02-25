@@ -17,7 +17,7 @@
       <NumberInput v-model="budgetMods.minus11" theme="dark" :min="0" class="w-24" />
     </div>
     <div class="flex justify-between">
-      Sell IMG ticket for 2000 credits
+      Sell IMG ticket for 1000 credits
       <NumberInput v-model="budgetMods.sell11" theme="dark" :min="0" class="w-24" />
     </div>
     <div class="flex justify-between">

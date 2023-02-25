@@ -78,7 +78,7 @@ const charCost = computed(() => {
       cost = CHAR_COSTS[props.char.priceTier] || CHAR_COSTS_TICKET[props.char.priceTier]
       break
     case 'capture':
-      cost = Math.floor((CHAR_COSTS[props.char.priceTier] || CHAR_COSTS_TICKET[props.char.priceTier]) * captureKoeff.value) * (-1)
+      cost = Math.floor((CHAR_COSTS[props.char.priceTier] || CHAR_COSTS_TICKET[props.char.priceTier] || 0) * captureKoeff.value) * (-1)
       break
     case 'used':
       cost = CHAR_COSTS[props.char.priceTier] || CHAR_COSTS_TICKET[props.char.priceTier]

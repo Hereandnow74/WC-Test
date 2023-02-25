@@ -294,7 +294,7 @@ export function heritageAvailable(hr: Heritage): boolean {
     if (heritageTrees.value.includes(hr.tree))
       return simpleIsAvailable(hr)
     const ind = findIndex(heritage.value, { title: 'Ancestral Diversity' })
-    if (ind !== -1 && heritage.value[ind].count >= heritageTrees.value.length)
+    if (ind !== -1 && (heritage.value[ind].count || 1) >= heritageTrees.value.length)
       return simpleIsAvailable(hr)
   }
   return false
@@ -323,7 +323,7 @@ export function chooseHeritage(hr: Heritage, saveData: Perk) {
       deletePerk(heritage.value, heritageAvailable)
     }
     else {
-      if (saveData.cost === 0) return
+      if (saveData.cost === 0 && !saveData.costT) return
       if (hr.title === 'First Augmentation') {
         flags.value.isTranshuman = true
         flags.value.transhumanType = flags.value.transhumanType || sample(['Biomorph', 'Cybermorph', 'Aethermorph'])
@@ -486,7 +486,9 @@ export function specificAvailable(perk: WaifuPerk): boolean {
     else
       return a.uid === b
   }).length
-        || perk.waifuUID.includes(startingOrigin.value.uid))
+        || perk.waifuUID.includes(startingOrigin.value.uid)
+        || perk.waifuUID.includes(startingOrigin.value?.perk?.uid)
+        || perk.waifuUID.includes(startingOrigin.value?.swap?.uid))
     return true
   return false
 }

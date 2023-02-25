@@ -65,7 +65,7 @@
             </div>
           </div>
           <div
-            v-for="companion in companionsComp"
+            v-for="companion in companionsWithoutSold"
             :key="companion.uid"
             class="flex gap-2 w-full rounded bg-gray-300 dark:bg-gray-800 p-1"
           >
@@ -137,7 +137,7 @@ import { lazyLoadImg, imageLink } from '~/logic'
 import { useSettings } from '~/logic/searchSettings'
 import { useStore } from '~/store/store'
 
-const { companionsComp, settings, startingOrigin } = useStore()
+const { companionsWithoutSold, settings, startingOrigin } = useStore()
 const { newPrice } = useSettings()
 
 const props = defineProps({
@@ -163,7 +163,7 @@ const emit = defineEmits(['pickPerk'])
 const powers = reactive<Record<string, {target: string; flavor: string; uid: number}[]>>(props.savedPerk?.complex?.reduce((a, x) => {
   // temporary fix to support old saves
   if (!x.uid) {
-    x.uid = find(companionsComp.value, ch => ch.name === x.target)?.uid || startingOrigin.value.uid || 0
+    x.uid = find(companionsWithoutSold.value, ch => ch.name === x.target)?.uid || startingOrigin.value.uid || 0
     x.uid = x.uid === -1 ? 0 : x.uid
   }
   if (a[x.uid]) a[x.uid].push({ target: x.target || '', uid: x.uid, flavor: x.flavor })

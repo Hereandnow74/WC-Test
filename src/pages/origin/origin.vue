@@ -39,9 +39,8 @@
                 @onChar="(char: DBCharacter) => {chosenOrigin.uid = char.u; chosenOrigin.character = item.title !== 'Walk-In' ? `You as ${char.n}` : char.n; chosenOrigin.tier = char.t}"
                 @update:modelValue="chosenOrigin.character = $event"
               />
-              <Input
+              <Tiers
                 v-model="chosenOrigin.tier"
-                class="w-12"
                 placeholder="Tier"
               />
             </div>
@@ -78,7 +77,7 @@
 
 <script lang='ts' setup>
 import { DBCharacter } from 'global'
-import { CHAR_COSTS } from '~/data/constants'
+import { CHAR_COSTS, CHAR_COSTS_TICKET } from '~/data/constants'
 import { desc, origin, Origin } from '~/data/origin'
 import { confirmDialog } from '~/logic/dialog'
 import { useTooltips } from '~/logic/misc'
@@ -115,8 +114,11 @@ const maxSubTier = computed(() => {
 })
 
 watch(chosenOrigin, () => {
-  if (['Substitute', 'Possess'].includes(chosenOrigin.title))
+  if (['Substitute', 'Possess'].includes(chosenOrigin.title)) {
     chosenOrigin.cost = CHAR_COSTS[chosenOrigin.tier] || 0
+    if (chosenOrigin.tier >= 11)
+      chosenOrigin.costT = CHAR_COSTS_TICKET[chosenOrigin.tier] || 0
+  }
 })
 
 function chooseOrigin(item: Origin) {

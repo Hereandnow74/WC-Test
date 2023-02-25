@@ -3999,11 +3999,6 @@
     "image": "https://compass-ssl.xbox.com/assets/ff/2c/ff2ca940-5947-4c04-919f-834e2ff35394.jpg?n=Redfall_GLP-Page-Hero-1084_1920x1080.jpgdfall_ArkaneStudios_S4_1200x1600-2f567c0dbf7e69015b741fc9b52c8b91"
   },
   {
-    "worldName": "The Disastrous Life of Saiki K",
-    "rating": 2,
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/993183426180042863/The-Disastrous-Life-of-Saiki-K-Watch-Order-Guide.jpg"
-  },
-  {
     "worldName": "The Wandering Inn",
     "rating": 5,
     "image": "https://www.wlnupdates.com/cover-img/6355"
@@ -5689,5 +5684,12 @@
     "image": "https://www.animenewsnetwork.com/hotlink/thumbnails/crop1200x630g11/cms/feature/96112/noragamifestival.jpg",
     "additional": "After capture Kofuku can manipulate freely the effects of her luck power."
   },
-  {"worldName":"Dragonar Academy","rating":4,"image":"https://i.imgur.com/GwWIP76.png"}
+  {"worldName":"Dragonar Academy","rating":4,"image":"https://i.imgur.com/GwWIP76.png"},
+  {"worldName":"Guardians of Childhood","rating":3,"image":"https://i.imgur.com/5yW8xCi.jpg"},
+  {"worldName":"Maze Runner","rating":5,"image":"https://i.imgur.com/iBv0gjX.jpg","condition":[{"name":"Before \"X\" Day","rating":2},{"name":"Kill Order","rating":4}]},
+  {"worldName":"The Disastrous Life of Saiki K.","rating":2,"image":"https://cdn.discordapp.com/attachments/925963686433132644/993183426180042863/The-Disastrous-Life-of-Saiki-K-Watch-Order-Guide.jpg"},
+  {"worldName":"Witch Craft Works","rating":7,"image":"https://c4.wallpaperflare.com/wallpaper/164/195/592/witch-craft-works-kagari-ayaka-takamiya-honoka-manga-wallpaper-preview.jpg"},
+  {"worldName":"Atomic Heart","rating":5,"image":"https://www.charlieintel.com/wp-content/uploads/2023/01/Does-Atomic-Heart-have-multiplayer-or-co-op-1000x600.jpg"},
+  {"worldName":"My Mom and Sister are Size Queen Sluts","rating":1,"image":"https://i.imgur.com/Yru1T8T.jpg"},
+  {"worldName":"Seikon no Qwaser","rating":5,"image":"https://img2.goodfon.com/wallpaper/nbig/f/35/seikon-no-qwaser-sasha-devushki.jpg"}
 ]

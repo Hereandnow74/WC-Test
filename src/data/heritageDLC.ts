@@ -496,7 +496,7 @@ fullHeritagesDLC.push({
   uid: 'MsOll',
   title: 'Esoteric Toolbox',
   category: 'Heritage',
-  image: 'https://i.imgur.com/3jwTrsbl.jpg',
+  image: 'https://i.imgur.com/pBsPD8sl.jpg',
   cost: 125,
   freebies: {
     talentPerks: [{ title: 'Engineering Talent', cost: 0, count: 1 }, { title: 'Aesthetic Talent', cost: 0, count: 1 }],

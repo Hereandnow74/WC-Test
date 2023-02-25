@@ -3,7 +3,7 @@ import { Perk } from 'global'
 import { useChallenges } from './challenges'
 import { usePlayStore } from './play'
 import { SavedChar, useChargenStore } from './chargen'
-import { CHAR_COSTS, CHAR_COSTS_TICKET, useAllChars, WORLD_RATINGS } from '~/data/constants'
+import { CHAR_COSTS, CHAR_COSTS_FULL, CHAR_COSTS_TICKET, useAllChars, WORLD_RATINGS } from '~/data/constants'
 import { defenseObject, talentsObject } from '~/data/talents'
 
 const { loan, jumpChain, currentWorld, trHistory, missionRewards } = usePlayStore()
@@ -89,7 +89,6 @@ const specificModsCost = computed(() => specificMods.value.reduce((a, x) => a +=
 
 const companionsCost = computed(() => {
   return companions.value.reduce((a, x) => {
-    console.log(x)
     if (x.swap)
       a += x.swap.cost - x.swap.refund
     if (x.perk)
@@ -118,6 +117,7 @@ const captureKoeff = computed(() => {
   let kf = 0.6
   if (findIndex(intensities.value, { title: 'Cash Still Rules' }) !== -1) kf = 0.8
   if (findIndex(activeChallenges.value, { title: 'Waifu Manager' }) !== -1) kf = 0.8
+  if (findIndex(activeChallenges.value, { title: 'Small Team' }) !== -1) kf = 0.7
   if (findIndex(intensities.value, { title: 'Wage Slave' }) !== -1) kf = 0
   return manualKf.value || kf
 })
@@ -145,9 +145,13 @@ const companionProfitSold = computed(() => {
   return captureKoeff.value > 0
     ? companions.value.reduce((a, x) => {
       if (x.sold && x.tier <= 11 && ['capture'].includes(x.method)) {
-        if (x.soldPrice === undefined)
-          return a += Math.floor(CHAR_COSTS[x.tier] || 2000 * sellKoeff.value)
-        else return a += x.soldPrice
+        if (x.soldPrice === undefined) {
+          if (x.tier === 11)
+            return a += Math.floor(CHAR_COSTS_FULL[x.tier] * sellKoeff.value)
+          else
+            return a += Math.floor(CHAR_COSTS[x.tier] * sellKoeff.value)
+        }
+        else { return a += x.soldPrice }
       }
       if (x.sold && x.priceTier <= 10 && ['buy', 'used', 'yoink'].includes(x.method))
         return a += Math.floor(CHAR_COSTS[x.priceTier] * manualReturnKf.value)
@@ -156,7 +160,7 @@ const companionProfitSold = computed(() => {
     : 0
 })
 
-const companionsWithoutSold = computed(() => companions.value.filter(c => !c.sold))
+const companionsWithoutSold = computed(() => companions.value.filter(c => !c.sold && c.role !== 'Exile'))
 
 // Discounts
 const types = {
@@ -181,7 +185,7 @@ const maxHeritageDiscount = computed(() => {
   const discount = { archetype: '', value: 0 }
   if (startingOrigin.value.hr) {
     discount.archetype = types[startingOrigin.value.hr] || ''
-    discount.value = CHAR_COSTS[startingOrigin.value.swap?.tier || startingOrigin.value.tier || 0] || CHAR_COSTS_TICKET[startingOrigin.value.swap?.tier || startingOrigin.value.tier || 0] * 1000 || 0
+    discount.value = CHAR_COSTS_FULL[startingOrigin.value.swap?.tier || startingOrigin.value.tier || 0] || 0
   }
   return discount
 })
@@ -233,10 +237,10 @@ const defenseRetinueDiscountAuto = computed(() => {
   const sortedCompanions = (() => {
     const cmp = [] as {uid: number; cost: number}[]
     if (startingOrigin.value.swap || startingOrigin.value.uid)
-      cmp.push({ uid: startingOrigin.value.swap?.uid || startingOrigin.value.uid, cost: CHAR_COSTS[startingOrigin.value.swap?.tier || 0] || startingOrigin.value.cost })
+      cmp.push({ uid: startingOrigin.value.swap?.uid || startingOrigin.value.uid, cost: CHAR_COSTS_FULL[startingOrigin.value.swap?.tier || 0] || startingOrigin.value.cost })
 
     companionsWithoutSold.value.forEach(companion => cmp.push(
-      { uid: companion.swap ? companion.swap.uid : companion.uid, cost: CHAR_COSTS[companion.swap?.tier || companion.priceTier] }))
+      { uid: companion.swap ? companion.swap.uid : companion.uid, cost: CHAR_COSTS_FULL[companion.swap?.tier || companion.priceTier] }))
 
     return cmp.sort((a, b) => b.cost - a.cost || intersection(allCharsObject.value[a.uid]?.b, Object.keys(allDefTags)).length - intersection(allCharsObject.value[b.uid]?.b, Object.keys(allDefTags)).length)
   })()
@@ -322,20 +326,20 @@ const creditLimit = computed(() => 500 + jumpChain.value.length * 100)
 
 const missionRewardCredits = computed(() => Object.values(missionRewards.value).reduce((sum, miss) => sum += miss.rewards.reduce((missSum, rw) => rw.type === 'Credits' ? missSum += parseInt(`${rw.value}`) || 0 : missSum, 0), 0))
 
-const missionRewardTickets = computed(() => Object.values(missionRewards.value).reduce((sum, miss) => sum += miss.rewards.reduce((missSum, rw) => rw.type === 'TX Tickets' ? missSum += parseInt(`${rw.value}`) || 0 : missSum, 0), 0))
+const missionRewardTickets = computed(() => Object.values(missionRewards.value).reduce((sum, miss) => sum += miss.rewards.reduce((missSum, rw) => rw.type === 'IMG Tickets' || rw.type === 'TX Tickets' ? missSum += parseInt(`${rw.value}`) || 0 : missSum, 0), 0))
 
 const challengesCost = computed(() => activeChallenges.value.reduce((a, x) => a += x.cost, 0))
 
 const originCost = computed(() => {
   let bd = 0
   if (startingOrigin.value.swap) {
-    if (startingOrigin.value.swap.tier !== 11)
+    if (startingOrigin.value.swap.tier <= 10)
       bd += startingOrigin.value.swap.cost - startingOrigin.value.swap.refund
     else
       bd -= startingOrigin.value.swap.refund
   }
   if (startingOrigin.value.perk) {
-    if (startingOrigin.value.perk.tier !== 11)
+    if (startingOrigin.value.perk.tier <= 10)
       bd += startingOrigin.value.perk.cost - startingOrigin.value.perk.refund
     else
       bd -= startingOrigin.value.perk.refund
@@ -374,14 +378,13 @@ watch(csr, () => {
 const companionTicketProfit = computed(() => {
   return companions.value.reduce((a, x) => {
     if (x.method === 'capture' && x.priceTier >= 11) a += Math.floor(CHAR_COSTS_TICKET[x.priceTier] * captureKoeff.value)
-    if (x.method === 'capture' && x.sold && x.tier >= 11) a += Math.floor(CHAR_COSTS_TICKET[x.priceTier] * sellKoeff.value)
-    if (x.method !== 'capture' && x.sold && x.tier >= 11) a += Math.floor(CHAR_COSTS_TICKET[x.priceTier] * manualReturnKf.value)
+    if (x.method === 'capture' && x.sold && x.tier >= 11) a += Math.floor(CHAR_COSTS_TICKET[x.tier] * sellKoeff.value)
+    if (x.method !== 'capture' && x.sold && x.priceTier >= 11) a += Math.floor(CHAR_COSTS_TICKET[x.priceTier] * manualReturnKf.value)
     return a
   }, 0)
 })
 
 function costCalcTX(a: number, x: Perk) {
-  console.log(x)
   return a += x.costT || 0
 }
 
@@ -412,7 +415,7 @@ const tier11tickets = computed(() => {
 
   return ticket - heritageCost - ridePerksCost - homePerksCost - talentsCost - defensesCost - miscPerksCost
     - waifuPerksCost - genericWaifuPerksCost - luresCost - companionsCost - bindingCost
-    - budgetMods.value.minus11 + budgetMods.value.plus11 + companionTicketProfit.value - budgetMods.value.sell11 + missionRewardTickets.value - originPSTicket
+    - budgetMods.value.minus11 + budgetMods.value.plus11 + companionTicketProfit.value - budgetMods.value.sell11 + missionRewardTickets.value - originPSTicket - (startingOrigin.value.costT || 0)
 })
 
 const totalCost = computed(() => startingOrigin.value.cost + heritageCost.value + bindingCost.value
