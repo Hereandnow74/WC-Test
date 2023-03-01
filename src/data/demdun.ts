@@ -19,13 +19,16 @@ homes.push({
   title: 'Pocket Apartment',
   category: 'Home',
   image: 'https://i.ibb.co/DCWhpf4/Pocket-Apartment.jpg',
-  cost: 20,
+  cost: 10,
+  multiple: true,
+  max: 2,
   whitelist: ['Pocket Space'],
   desc: `
-<p>A 100 sq m extradimensional residence, for when you need a place to crash. It has all the basics: two medium bedrooms, one bathroom, a living area, kitchenette, and closet space. All characters with alternate outfits, shown in any official source, will find them stored in their room or closet. This includes phone, TV, internet, and other network access to any worlds visited after chargen. Be careful not to mix up separate networks; URLs may not lead to the same place from one world to the next.</p>
-<p>Access it by plopping a portal onto any reasonably flat surface. Only one portal may exist at a time and you may close it with a thought at any time, whether you’re in or out of the apartment; if you’re inside when the portal is closed, the new exit must be reasonably close to the previous entrance.</p>
-<p>Some independent multiverse travelers may enter your universe directly, but only requires dedicated and deliberate effort and a beacon to follow.</p>
-<p>Your inventory becomes a sealed vault inside the apartment. You may open the vault while in your Pocket Space, but doing so subjects its contents to the passage of time. If you or a resisting or unwilling subject is inside the vault when it is sealed again, time will continue to pass.</p>`,
+<p>A 75 sq m extradimensional residence, for when you need a place to crash. It has all the basics: two medium bedrooms, one bathroom, a living area, kitchenette, and closet space. All characters with alternate outfits, shown in any official source, will find them stored in their room or closet. This includes phone, TV, internet, and other network access to any worlds visited after chargen. Be careful not to mix up separate networks; URLs may not lead to the same place from one world to the next.</p>
+<p>Access it by plopping a portal onto any reasonably flat surface. Only one portal may exist at a time and you may close it with a thought at any time, whether you’re in or out of the apartment; if you’re inside when the portal is closed, the new exit must be reasonably close to the previous entrance. Some independent multiverse travelers may enter your universe directly. This requires dedicated and deliberate effort and a beacon to follow.</p>
+<p>Your inventory becomes a sealed vault inside the apartment. You may open the vault while in your Pocket Space, but doing so subjects its contents to the passage of time. If you or a resisting or unwilling subject is inside the vault when it is sealed again, time will continue to pass.</p>
+<p>A second purchase of this perk will double the floor area to 150 sq m. Whether the additional space is a loft, basement, or just a larger main level is your choice.</p>
+`,
 })
 
 homes.push({
@@ -44,8 +47,14 @@ homes.push({
   category: 'Home',
   image: 'https://i.ibb.co/mRzHnHt/Sweet-Home-New.jpg',
   cost: 10,
+  multiple: true,
+  max: 2,
   whitelist: ['Pocket Apartment'],
-  desc: 'Your residence is double the size: 200 sq m, equivalent to a small house. It has a master suite (one large bedroom and one attached large bathroom), three other medium bedrooms, one and a half other bathrooms, a large living area, full-size kitchen with attached eating area, closet spaces, and one each of very large, large, and medium rooms that you can decide how to use: dojo, garage, library, a shared workshop, extra bedrooms, separate dining room, etc. You may also repurpose unneeded bedrooms until they’re filled. You may now make your Pocket Space any clearly delineated space within your Sweet Home, and not simply a physical vault.',
+  desc: `Your residence’s floor space is doubled again. It now measures 300 sq m, equivalent to a large house. This includes a master suite (one large bedroom, with one each attached large bathroom and walk-in closet), three other medium bedrooms with their own closets, two and a half other bathrooms, a large living area, full-size kitchen with attached eating area, closet spaces, and one each of very large, large, and medium rooms that you can decide how to use: dojo, garage, library, a shared workshop, extra bedrooms, separate dining room, etc. You may also repurpose unneeded bedrooms until they’re filled.
+  <p>Your property now sits on a plot of land. The total area is one hectare (not necessarily an exact square), with the ground extending down 10 meters and the sky going up 20 meters.</p>
+  <p>You may now make your Pocket Space any clearly delineated space within your Sweet Home, and not simply a physical vault.</p>
+  <p>A second purchase of this perk will double all stated measurements: 600 sq m interior floor space, 2 hectares area, 20 vertical meters of ground, and 40 vertical meters of sky. The number and size of rooms within your Home will increase accordingly.</p>
+  `,
 })
 
 homes.push({
@@ -53,9 +62,14 @@ homes.push({
   title: 'Grand Manor',
   category: 'Home',
   image: 'https://i.ibb.co/9vZbxG4/Grand-Manor-New.jpg',
-  cost: 20,
+  cost: 10,
+  multiple: true,
+  max: 2,
   whitelist: ['Sweet Home'],
-  desc: 'Your living space is significantly larger, at 1,000 sq m, with every living, training, and workshop area you and your waifus might need. A control room deep in the mansion will allow you to customize the structure however you like. Specialized workshop equipment and exotic resources will only be available if you have someone who knows how to use them, whether that’s a purchased or captured retinue member, your Substitute or Possess target, or by some other means. For safety reasons, all personnel and important items will be ejected from areas undergoing rearrangement.',
+  desc: `Your living space is significantly larger. It now has 1,200 sq m of floor space, with every living, training, and workshop area you and your waifus might need. If you do not have Life’s a Beach, your property’s land area will also increase, to 20 hectares.
+  <p>A control room deep in the mansion now allows you to customize the structure however you like. Specialized workshop equipment and exotic resources will only be available if you have someone who knows how to use them, whether that’s a purchased or captured retinue member, your Substitute or Possess target, or by some other means. For safety reasons, all personnel and important items will be ejected from areas undergoing rearrangement.</p>
+  <p>A second purchase of this perk will double the interior and exterior measurements again: 2,400 sq m floor space inside, 40 hectares outside.</p>
+  `,
 })
 
 homes.push({
@@ -66,8 +80,10 @@ homes.push({
   cost: 10,
   whitelist: ['Sweet Home'],
   desc: `
-<p>Your Sweet Home now has a lawn - 15.2 sq km of it. A control center deep in the apartment will allow you to customize the landscape however you like: the default is a tropical island paradise with a standard equatorial day/night cycle and perfect weather all the time. This is the same control system as what Grand Manor provides. With this perk, your starting position will be within 30 minutes’ walk of the mansion, with a clear view of and path toward your destination so you don’t get lost. However you set the landscape, the edge of your pocket dimension will be selectively-permeable, allowing biome-appropriate wildlife to wander in from worlds that you and your retinue have visited or call home, without any issues from invasive species, implanted transmitters, pollutants, unwanted predators, etc. For safety reasons, all personnel and important items will be ejected from areas undergoing rearrangement.</p>
-<p>If you bring a vehicle into the pocket dimension via Rainbow Bridge or some other method, regardless of whether the vehicle was purchased through this catalog, your dimension will have an appropriately-sized garage, dock, or hangar for it. If you have a starship from Catch-a-Ride, Heavenbuilt Proto, or third-party sources, it will be able to enter and land in your pocket universe even without a multiversal drive. Especially large dreadnoughts may require some geographic rearrangement first.</p>`,
+<p>Your Sweet Home’s lawn is significantly larger, now measuring 15.2 sq km across, with 24 vertical meters of ground and 48 vertical meters of sky. A control center deep in the apartment will allow you to customize the landscape however you like: the default is a tropical island paradise with a standard equatorial day/night cycle and perfect weather all the time. This is the same control system as what Grand Manor provides. If you have either rank of that perk, you can use the control room to add new wings and other features to the manor, within the 20 (40) hectares of manor lands and the vertical clearance offered by this perk and Sweet Home Expansion.</p>
+<p>However you set the landscape, the edge of your pocket dimension will be selectively-permeable, allowing biome-appropriate wildlife to wander in from worlds that you and your retinue have visited or call home, without any issues from invasive species, implanted transmitters, pollutants, unwanted predators, etc. For safety reasons, all personnel and important items will be ejected from areas undergoing rearrangement.</p>
+<p>If you bring a vehicle into the pocket dimension via Rainbow Bridge or some other method, regardless of whether the vehicle was purchased through this catalog, your dimension will have an appropriately-sized garage, dock, or hangar for it. If you have a starship from Catch-a-Ride, Heavenbuilt Proto, or third-party sources, it will be able to enter and land in your pocket universe even without a multiversal drive. Especially large dreadnoughts may require some geographic rearrangement first.</p>
+`,
 })
 
 homes.push({
@@ -89,7 +105,7 @@ homes.push({
   whitelist: ['Life’s A Beach'],
   multiple: true,
   max: 25,
-  desc: 'Each purchase of this perk will double the surface area of your personal world. This perk may be purchased up to 25 times, with the final purchase expanding the world into, ultimately, a round planet the size of Earth. Warning: the mansion’s control room can only manage the weather and climate of the core region. Weather patterns in the outer areas will emerge naturally.',
+  desc: 'Each purchase of this perk will double the surface area of your personal world. This perk may be purchased up to 25 times, with the final purchase expanding the world into, ultimately, a round planet the size of Earth, including 12,740 vertical km of atmosphere and low to medium orbit. Warning: the mansion’s control room can only manage the core region. Terrain, weather, and climate outside the core region will auto-generate and buildings there must be constructed manually.',
 })
 
 homes.push({

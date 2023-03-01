@@ -6,10 +6,21 @@
       </h2>
       <div>
         <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          26 February 2023
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~100 new user submitted characters, new missions, new worlds</li>
+          <li>A lot of new SWP perks</li>
+          <li>A new Window that display some statistic for World targets.</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
           23 February 2023
         </h3>
         <ul class="list-decimal list-inside">
-          <li>!175 new user submitted characters, new missions, new worlds</li>
+          <li>~175 new user submitted characters, new missions, new worlds</li>
           <li>Bugfixes & small changes</li>
         </ul>
       </div>

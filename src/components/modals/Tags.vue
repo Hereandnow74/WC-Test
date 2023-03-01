@@ -57,8 +57,9 @@
         </template>
         <!-- .sort((a, b) => a.tag.localeCompare(b.tag)) -->
         <template v-else>
+          <Toggle v-model="countSort" label="Sort by Count" />
           <Tag
-            v-for="tag in Object.keys(tagsCount).filter(tag => tag.length > 2).map((tag, k) => ({tag: `${tag} [${tagsCount[tag]}]`, desc:'', short: tag, style: '', color: ''})).sort((a, b) => a.tag.localeCompare(b.tag)).map((tag, k )=> (tag.color = (k % 2) === 0 ? 'bg-teal-300 text-black font-semibold' : 'bg-amber-200 text-black font-semibold', tag))"
+            v-for="tag in userTagsSorted.map((tag, k )=> (tag.color = (k % 2) === 0 ? 'bg-teal-300 text-black font-semibold' : 'bg-amber-200 text-black font-semibold', tag))"
             :key="tag.tag"
             :tag="tag"
             :on-the-list="true"
@@ -80,12 +81,23 @@ const tagCategory = ref('All')
 const fullTags = ref(false)
 const showOfficial = ref(false)
 
+const countSort = ref(false)
+
 function clearAll() {
   Object.keys(tagToggles).forEach(key => tagToggles[key] = 0)
 }
 
 const allTagsFiltered = computed(() => {
   return Object.values(waifuTags).filter(tag => tagCategory.value !== 'All' ? tag.category === tagCategory.value : true).sort((a, b) => a.tag.localeCompare(b.tag))
+})
+
+const userTags = computed(() => Object.keys(tagsCount.value).filter(tag => tag.length > 2).map((tag, k) => ({ tag: `${tag} [${tagsCount.value[tag]}]`, desc: '', short: tag, style: '', color: '' })))
+
+const userTagsSorted = computed(() => {
+  if (!countSort.value)
+    return [...userTags.value.sort((a, b) => a.tag.localeCompare(b.tag))]
+  else
+    return [...userTags.value.sort((a, b) => tagsCount.value[b.short] - tagsCount.value[a.short])]
 })
 
 </script>

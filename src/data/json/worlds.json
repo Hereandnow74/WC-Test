@@ -455,34 +455,80 @@
   {
     "worldName": "Star Wars",
     "rating": 4,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992067055098535946/star_wars_poster.0.jpg",
     "additional": "Unrestricted Clone Wars is setting modification where Palpatine's plan is fully discovered and with him taking over leadership CIS, CIS is allowed to go on without restrictions.",
     "condition": [
       {
-        "name": "Empire Era, OT",
         "rating": 4,
+        "name": "Star Wars (Disney)- Empire Era",
         "a": "c"
       },
       {
-        "name": "Old Republic era, Prequels era",
+        "rating": 4,
+        "name": "Star Wars (Disney)- Original Trilogy",
+        "a": "c"
+      },
+      {
+        "rating": 4,
+        "name": "Star Wars (Legends)- Core and Colonies (No Galactic Conflict)",
+        "a": "c"
+      },
+      {
+        "rating": 5,
+        "name": "Star Wars (Disney)- Prequels Trilogy (Disney)",
+        "a": "c"
+      },
+      {
+        "rating": 5,
+        "name": "Star Wars (Legends)- Expansion Territory to Outer Rim (No Galactic Conflict)",
+        "a": "c"
+      },
+      {
+        "name": "Star Wars (Legends)- Core and Colonies (Galactic Conflict)",
         "rating": 5,
         "a": "c"
       },
       {
+        "rating": 5,
+        "name": "Star Wars (Legends)- Core and Colonies (Vong Galactic Conflict)",
+        "a": "c"
+      },
+      {
         "rating": 6,
-        "name": "Legends post-OT",
+        "name": "Star Wars (Disney)- Sequel Trilogy",
         "a": "c"
       },
       {
-        "name": "Unrestricted Clone Wars",
-        "rating": 7,
+        "name": "Star Wars (Legends)- Unknown Regions and Beyond the Outer Rim (No Galactic Conflict)",
+        "rating": 6,
         "a": "c"
       },
       {
-        "name": "The Old Republic(MMO)",
-        "rating": 7
+        "rating": 6,
+        "name": "Star Wars (Legends)- Expansion Territory to Outer Rim (Galactic Conflict)",
+        "a": "c"
+      },
+      {
+        "name": "Star Wars (Legends)- Unknown Regions and Beyond the Outer Rim (Galactic Conflict)",
+        "rating": 6,
+        "a": "c"
+      },
+      {
+        "rating": 6,
+        "name": "Star Wars (Legends)- Expansion Territory to Outer Rim (Vong Galactic Conflict)",
+        "a": "c"
+      },
+      {
+        "name": "Star Wars (Legends)- Unknown Regions and Beyond the Outer Rim (Vong Galactic Conflict)",
+        "rating": 8,
+        "a": "c"
+      },
+      {
+        "rating": 8,
+        "name": "Star Wars (Legends)- Stranded in Deep Space",
+        "a": "c"
       }
-    ],
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992067055098535946/star_wars_poster.0.jpg"
+    ]
   },
   {
     "rating": 4,
@@ -2855,6 +2901,10 @@
       {
         "name": "Global Wizarding War (1920-1945)",
         "rating": 5
+      },
+      {
+        "name": "Hogwarts Legacy (1890)",
+        "rating": 4
       }
     ]
   },

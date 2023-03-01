@@ -109,9 +109,9 @@ const companionsCost = computed(() => {
 
 const { activeChallenges } = useChallenges()
 
-const manualKf = ref(0)
-const manualSellKf = ref(0.2)
-const manualReturnKf = ref(0.8)
+const manualKf = useStorage('manualKf', 0)
+const manualSellKf = useStorage('manualSellKf', 0)
+const manualReturnKf = useStorage('manualReturnKf', 0)
 
 const captureKoeff = computed(() => {
   let kf = 0.6
@@ -122,7 +122,8 @@ const captureKoeff = computed(() => {
   return manualKf.value || kf
 })
 
-const sellKoeff = computed(() => manualSellKf.value)
+const sellKoeff = computed(() => manualSellKf.value || 0.2)
+const returnKoeff = computed(() => manualReturnKf.value || 0.8)
 
 const companionProfit = computed(() => {
   return captureKoeff.value > 0
@@ -154,7 +155,7 @@ const companionProfitSold = computed(() => {
         else { return a += x.soldPrice }
       }
       if (x.sold && x.priceTier <= 10 && ['buy', 'used', 'yoink'].includes(x.method))
-        return a += Math.floor(CHAR_COSTS[x.priceTier] * manualReturnKf.value)
+        return a += Math.floor(CHAR_COSTS[x.priceTier] * returnKoeff.value)
       return a
     }, 0)
     : 0
@@ -379,7 +380,7 @@ const companionTicketProfit = computed(() => {
   return companions.value.reduce((a, x) => {
     if (x.method === 'capture' && x.priceTier >= 11) a += Math.floor(CHAR_COSTS_TICKET[x.priceTier] * captureKoeff.value)
     if (x.method === 'capture' && x.sold && x.tier >= 11) a += Math.floor(CHAR_COSTS_TICKET[x.tier] * sellKoeff.value)
-    if (x.method !== 'capture' && x.sold && x.priceTier >= 11) a += Math.floor(CHAR_COSTS_TICKET[x.priceTier] * manualReturnKf.value)
+    if (x.method !== 'capture' && x.sold && x.priceTier >= 11) a += Math.floor(CHAR_COSTS_TICKET[x.priceTier] * returnKoeff.value)
     return a
   }, 0)
 })
@@ -604,6 +605,9 @@ export function useStore() {
     collapsedDescsSet,
     manualKf,
     manualSellKf,
+    manualReturnKf,
+    sellKoeff,
+    returnKoeff,
     favoritesObject,
     specificModsCost,
     missionRewardCredits,

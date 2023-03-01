@@ -47,6 +47,9 @@ export const nicknames = [
   'Darkarma',
   'Kirron 999',
   'Gregory B.',
+  'ProtagNeptune',
+  'Exactingspoon',
+  'DragonBoy.EXE',
 ]
 
 export const WORLD_COLORS = ['bg-green-600', 'bg-teal-600', 'bg-cyan-600',

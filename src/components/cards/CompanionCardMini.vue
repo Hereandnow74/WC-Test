@@ -151,7 +151,7 @@
       <div
         v-if="['capture'].includes(char.method) && !char.sold"
         class="cursor-pointer hover:(bg-gray-600 text-amber-400) rounded-xl p-1"
-        :title="`Sell for ${char.tier >= 11 ? Math.floor(CHAR_COSTS_TICKET[char.tier] * manualSellKf)+' IMG' : Math.floor(CHAR_COSTS[char.tier] * manualSellKf) + 'c'}`"
+        :title="`Sell for ${char.tier >= 11 ? Math.floor(CHAR_COSTS_TICKET[char.tier] * sellKoeff)+' IMG' : Math.floor(CHAR_COSTS[char.tier] * sellKoeff) + 'c'}`"
         @click="sellCompanion(char.uid)"
       >
         <healthicons:money-bag />
@@ -217,7 +217,7 @@ const emit = defineEmits(['sell', 'undo', 'free'])
 
 const showNote = ref(false)
 
-const { flags, settings, manualSellKf, companions } = useStore()
+const { flags, settings, sellKoeff, companions } = useStore()
 const { allCharsObject } = useAllChars()
 
 const fullChar = computed(() => {
@@ -227,7 +227,7 @@ const fullChar = computed(() => {
     return { i: waifuPerksObject[props.char.uid].image, b: [] }
 })
 
-const image = computed(() => props.char.image || (props.char.perk && waifuPerksObject[props.char.perk.uid].image ? waifuPerksObject[props.char.perk.uid].image || '' : imageLink(props.char.originUID || props.char.uid)))
+const image = computed(() => props.char.image || (props.char.perk && waifuPerksObject[props.char.perk.uid] && waifuPerksObject[props.char.perk.uid].image ? waifuPerksObject[props.char.perk.uid].image || '' : imageLink(props.char.originUID || props.char.uid)))
 watch(image, () => imageEl.value ? lazyLoadSingleImg(imageEl.value) : null, { flush: 'post' })
 
 const tags = computed(() => {

@@ -64,9 +64,9 @@
         class="inline text-green-500"
       />
     </h3>
-    <div>
+    <div class="flex flex-col">
       <span class="font-bold">Waifu: </span>
-      <span class="inline-flex gap-2 text-blue-600 dark:text-blue-300">
+      <span class="inline-flex gap-2 flex-wrap text-blue-600 dark:text-blue-300">
         <span v-for="wf, i in waifuPerk.waifu" :key="wf" class="flex gap-1 items-center">
           <router-link :to="isNumber(waifuPerk.waifuUID[i]) ? `/companions/?name=${wf}` : `#${wf}`" class="hover:underline">
             {{ wf }}
@@ -75,11 +75,11 @@
             <mdi:cart-variant />
           </span>
         </span>
+        <span class="text-gray-800 dark:text-gray-200">from <span class="dark:text-violet-200 text-violet-900">{{ waifuPerk.from }}</span></span>
       </span>
-      from <span class="dark:text-violet-200 text-violet-900">{{ waifuPerk.from }}</span>
     </div>
     <div class="flex gap-4">
-      <span v-if="waifuPerk.costT"><span class="font-bold">Cost:</span> {{ waifuPerk.costT + ' IMG' }} </span>
+      <span v-if="waifuPerk.costT"><span class="font-bold">IMG Cost:</span> {{ waifuPerk.costT }} </span>
       <span v-if="waifuPerk.cost"><span class="font-bold">Cost:</span> {{ waifuPerk.cost }} </span>
       <span v-if="waifuPerk.discount"><span class="font-bold">Refund:</span> {{ waifuPerk.discount }}</span>
       <span v-if="waifuPerk.tier"><span class="font-bold">Become:</span> T<TierDisplay :tier="waifuPerk.tier" /></span>

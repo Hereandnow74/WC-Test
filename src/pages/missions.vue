@@ -180,8 +180,10 @@ const generatedMissions = computed(() => {
 
 const missionUID = ref('')
 const params = useUrlSearchParams('history')
-if (params.q)
+if (params.q) {
   missionUID.value = `${params.q}`
+  page.value = 3
+}
 
 const singleMission = computed(() => {
   if (missionUID.value) {
@@ -196,11 +198,11 @@ const singleMission = computed(() => {
 })
 
 onBeforeRouteUpdate((to, from, next) => {
-  if (to.query.q)
+  if (to.query.q) {
     missionUID.value = `${to.query.q}`
-  else
-    page.value = 0
-
+    page.value = 3
+  }
+  else { page.value = 0 }
   setTimeout(next, 1)
 })
 

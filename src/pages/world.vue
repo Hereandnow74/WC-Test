@@ -78,19 +78,22 @@
         v-for="world in infiniteWorlds"
         :key="world.key"
         :world="world"
+        :targets="allWorldsTargets[world.worldName]"
         :type="world.type"
         :class="{'row-span-2 min-h-72': world.image && !settings.hideWorldImg, 'sm:col-span-2': world.additional, 'sm:row-span-4': world.image && world.additional && !settings.hideWorldImg}"
         class="w-full"
         :min="minDR"
         :max="maxDR"
         @edit-world="editWorld"
+        @showWorldInfo="worldInfo"
       />
       <Button v-if="worldWrapper && worldWrapper.clientHeight >= worldWrapper.scrollHeight && worldsFiltered.length > infiniteWorlds.length" bg-color="bg-orange-500" class="self-center justify-self-center" label="Load More" @click="infiniteWorlds.push(...worldsFiltered.slice(infiniteWorlds.length, infiniteWorlds.length + 10))" />
       <div v-if="!worldsFiltered.length" class="text-center flex-grow">
         <p>No worlds found.</p>
       </div>
     </div>
-    <AddWorld v-if="showAddWorld" :world="worldToEdit" :edit-mode="editMode" @click="toggleShowAddWorld()" />
+    <component :is="AddWorld" v-if="showAddWorld" :world="worldToEdit" :edit-mode="editMode" @click="toggleShowAddWorld()" />
+    <component :is="WorldInfoModal" v-if="showWorldInfo" :world="worldToEdit" @click="showWorldInfo = false" />
   </div>
 </template>
 
@@ -102,10 +105,14 @@ import { toggleShowAddWorld, showAddWorld, threeToggle } from '~/logic'
 import { useWorlds } from '~/data/constants'
 import { World } from '~/store/chargen'
 
+const AddWorld = computed(() => defineAsyncComponent(() => import('../components/modals/AddWorld.vue')))
+const WorldInfoModal = computed(() => defineAsyncComponent(() => import('../components/modals/WorldInfoModal.vue')))
+
 const search = ref('')
 const { worlds: worldsReac, subWorlds: worldsSubReac, allWorldTargets } = useWorlds()
 const worldToEdit = ref({})
 const editMode = ref(false)
+const showWorldInfo = ref(false)
 
 const { userWorlds, localUserWorlds, settings } = useStore()
 const sortAlpha = ref(0)
@@ -130,14 +137,19 @@ const worldWrapper = ref<HTMLElement>(null)
 
 const allUserWorlds = computed(() => userWorlds.value.concat(localUserWorlds.value))
 
+const allWorlds = computed(() => {
+  return [...allUserWorlds.value.map(x => (x.type = 'local', x.key = x.worldName + x.type, x)), ...worldsReac.value.map(x => (x.type = 'canon', x.key = x.worldName + x.type, x)), ...worldsSubReac.value.map(x => (x.type = 'user', x.key = x.worldName + x.type, x))]
+})
+
+const allWorldsTargets = computed(() => {
+  return allWorlds.value.reduce((a, x) => (a[x.worldName] = calcTargets(x), a), {} as Record<string, number>)
+},
+)
+
 const sortingFunc = (a: any, b: any) =>
   (sortRating.value !== 0 ? (a.rating - b.rating) * sortRating.value : 0)
-|| (sortTargets.value !== 0 ? (a.targets - b.targets) * sortTargets.value : 0)
+|| (sortTargets.value !== 0 ? (allWorldsTargets.value[a.worldName] - allWorldsTargets.value[b.worldName]) * sortTargets.value : 0)
 || (sortAlpha.value !== 0 ? a.worldName.localeCompare(b.worldName) * sortAlpha.value : 0)
-
-const allWorlds = computed(() => {
-  return [...allUserWorlds.value.map(x => (x.type = 'local', x.key = x.worldName + x.type, x)), ...worldsReac.value.map(x => (x.type = 'canon', x.key = x.worldName + x.type, x)), ...worldsSubReac.value.map(x => (x.type = 'user', x.key = x.worldName + x.type, x))].map(world => calcTargets(world) ? (world.targets = calcTargets(world), world) : (world.targets = 0, world))
-})
 
 const fuse = new Fuse(allWorlds.value, options)
 watch(allWorlds, () => fuse.setCollection(allWorlds.value))
@@ -185,10 +197,15 @@ useInfiniteScroll(
 //     return [...worldsSubReac.value].sort(sortingFunc)
 // })
 
-function editWorld(world: typeof worlds[number]) {
+function editWorld(world: World) {
   worldToEdit.value = world
   editMode.value = true
   toggleShowAddWorld()
+}
+
+function worldInfo(world: World) {
+  worldToEdit.value = world
+  showWorldInfo.value = true
 }
 
 function calcTargets(world: World) {

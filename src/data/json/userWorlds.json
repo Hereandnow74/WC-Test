@@ -1975,11 +1975,7 @@
     "rating": 5,
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/992389185677824060/dtbj8vdXqS813QvirK3x1GWPRaZ.jpg"
   },
-  {
-    "worldName": "Sora no Otoshimono",
-    "rating": 1,
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1005495449580470312/1920x1200-3321470-girl-sora-no-otoshimono-ikaros-cute-smile-candy.jpg"
-  },
+  {"worldName":"Sora no Otoshimono","rating":3,"image":"https://cdn.discordapp.com/attachments/925963686433132644/1005495449580470312/1920x1200-3321470-girl-sora-no-otoshimono-ikaros-cute-smile-candy.jpg","condition":[{"name":"Synapsis","rating":6}]},
   {
     "worldName": "The Wolf Among Us",
     "rating": 5,
@@ -2618,22 +2614,6 @@
       }
     ],
     "image": "https://www.wallpaperup.com/uploads/wallpapers/2016/11/18/1048320/1dbb4f97e93749b3ccfdc0165f001d69-1000.jpg"
-  },
-  {
-    "worldName": "War-torn world",
-    "rating": 3,
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/993186998644899880/f02911c50cb76766fcf4c53a3235a09b.jpg",
-    "additional": "You can pick waifus up to T3 to inhabit the world. If the waifu comes from setting that has technology not present in our current tech, this tech will be incorporated into setting at large. War-torn Solar system expands on it to T6 and includes space warfare, magic and psionics. Maximal Upgrade being War-torn galaxy expands to T10 expanding war to galactic proportions and extremely dangerous planet ending warfare.",
-    "condition": [
-      {
-        "rating": 6,
-        "name": "War-torn Solar System"
-      },
-      {
-        "name": "War-torn Galaxy",
-        "rating": 10
-      }
-    ]
   },
   {
     "worldName": "Azure Striker Gunvolt",
@@ -5075,11 +5055,7 @@
     "rating": 1,
     "image": "https://picon.ngfiles.com/753000/flash_753121_card.png?f1650442867"
   },
-  {
-    "worldName": "The Eminence in Shadow",
-    "rating": 6,
-    "image": "https://www.theanimedaily.com/wp-content/uploads/2021/12/16408687226867297459499488340881.jpg"
-  },
+  {"worldName":"The Eminence in Shadow","rating":6,"image":"https://shadow-garden.jp/assets/img/special/special1/visual.jpg"},
   {
     "worldName": "Madan No Ou To Vanadis",
     "rating": 5,
@@ -5690,6 +5666,15 @@
   {"worldName":"The Disastrous Life of Saiki K.","rating":2,"image":"https://cdn.discordapp.com/attachments/925963686433132644/993183426180042863/The-Disastrous-Life-of-Saiki-K-Watch-Order-Guide.jpg"},
   {"worldName":"Witch Craft Works","rating":7,"image":"https://c4.wallpaperflare.com/wallpaper/164/195/592/witch-craft-works-kagari-ayaka-takamiya-honoka-manga-wallpaper-preview.jpg"},
   {"worldName":"Atomic Heart","rating":5,"image":"https://www.charlieintel.com/wp-content/uploads/2023/01/Does-Atomic-Heart-have-multiplayer-or-co-op-1000x600.jpg"},
-  {"worldName":"My Mom and Sister are Size Queen Sluts","rating":1,"image":"https://i.imgur.com/Yru1T8T.jpg"},
-  {"worldName":"Seikon no Qwaser","rating":5,"image":"https://img2.goodfon.com/wallpaper/nbig/f/35/seikon-no-qwaser-sasha-devushki.jpg"}
+  {"worldName":"My Mom and Sister are Size Queen Sluts","rating":1,"image":"https://i.imgur.com/Yru1T8Tl.jpg"},
+  {"worldName":"Seikon no Qwaser","rating":5,"image":"https://img2.goodfon.com/wallpaper/nbig/f/35/seikon-no-qwaser-sasha-devushki.jpg"},
+  {"worldName":"Charlotte","rating":3,"image":"https://i.imgur.com/g4QZoo2l.jpg"},
+  {"worldName":"Demon Gaze","rating":7,"image":"https://cdn.mos.cms.futurecdn.net/1f78991b7c737a97a7d367abee711a62.jpg"},
+  {"worldName":"Hybrid x Heart Magias Academy Ataraxia","rating":8,"image":"https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/169c6922669f253b862966c08d649584.jpe","additional":"[Added Potential] does not allow to break the gender-specific limitations, you would need [Template Stacking I/II] to do so.","condition":[{"rating":9,"name":"Atlantis"}]},
+  {"worldName":"Ijiranaide, Nagatoro-san","rating":1,"image":"https://c4.wallpaperflare.com/wallpaper/599/219/830/nagatoro-hayase-ijiranaide-nagatoro-san-please-don-t-bully-me-nagatoro-hd-wallpaper-preview.jpg"},
+  {"worldName":"Indivisible","rating":6,"image":"https://i.imgur.com/m39sLZU.jpg"},
+  {"worldName":"Last Origin","rating":6,"image":"https://cdn.donmai.us/sample/91/4f/__lrl_griffon_and_constantia_s2_last_origin_drawn_by_kakiman__sample-914ff9cfb1a216869661a699aaf98e9d.jpg"},
+  {"worldName":"Manyū Hiken-chō","rating":5,"image":"https://m.media-amazon.com/images/M/MV5BNzRhNjExNTMtYjc2Zi00NTk1LWIyNjItNDY0NTM3MGUxMGM3XkEyXkFqcGdeQXVyNzQwMzAwNTI@._V1_.jpg"},
+  {"worldName":"Monster Musume no Oishasan","rating":2,"image":"https://i.imgur.com/zSNJ7j2l.jpg"},
+  {"worldName":"Prince of Persia","rating":4,"image":"https://asset.vg247.com/Prince-of-Persia-Remake-Key-Art-1-09102020.jpg/BROK/resize/1920x1920%3E/format/jpg/quality/80/Prince-of-Persia-Remake-Key-Art-1-09102020.jpg","condition":[{"rating":4,"name":"Original Trilogy"},{"rating":5,"name":"Reboot(2008)"},{"name":"Sands of Time Trilogy","rating":7}]}
 ]

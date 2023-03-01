@@ -90,8 +90,7 @@
           >Despin</a>)
         </h3>
         <Table
-          :headers="pandoraTitles"
-          :rows="tiersTab === 1 ? pandoraData : despinData"
+          :rows="despinData"
           class="text-sm md:text-base w-full flex-grow text-black"
         />
       </div>
@@ -184,20 +183,20 @@ import { useTooltips } from '~/logic/misc'
 
 const worldTitles = ['Danger Rating', 'Difficulty Title', 'Budget']
 const worldData = WORLD_RATINGS.slice(1, 11).map(x => [x.rating, x.title, x.budget])
-worldData.push([11, 'One', 'Tier X ticket'])
+worldData.push([11, 'One', '2-5 IMG tickets'])
 
-const waifuTitles = ['Waifu Tier', 'Cost', 'Steal', 'Capture', 'Capture + Sale', 'Short']
+const waifuTitles = ['Waifu Tier', 'Cost', 'Capture', 'Sale', 'Capture + Sale', 'Short']
 const waifuData = [
-  ['T1', '1', '1', '1', '1', ['★', 'text-blue-600']],
-  ['T2', '2', '1', '2', '2', ['★★', 'text-blue-600']],
-  ['T3', '5', '1', '3', '4', ['★★★', 'text-blue-600']],
-  ['T4', '10', '1', '6', '8', ['★', 'text-red-600']],
-  ['T5', '20', '2', '12', '16', ['★★', 'text-red-600']],
-  ['T6', '50', '5', '30', '40', ['★★★', 'text-red-600']],
-  ['T7', '100', '10', '60', '80', ['★', 'text-gray-400']],
-  ['T8', '200', '20', '120', '160', ['★★', 'text-gray-400']],
-  ['T9', '500', '50', '300', '400', ['★★★', 'text-gray-400']],
-  ['T10', '1000', '100', '600', '800', ['★', 'text-yellow-500']],
+  ['T1', '1', '1', '0', '1', ['★', 'text-blue-600']],
+  ['T2', '2', '2', '0', '2', ['★★', 'text-blue-600']],
+  ['T3', '5', '3', '1', '4', ['★★★', 'text-blue-600']],
+  ['T4', '10', '6', '2', '8', ['★', 'text-red-600']],
+  ['T5', '20', '12', '4', '16', ['★★', 'text-red-600']],
+  ['T6', '50', '30', '10', '40', ['★★★', 'text-red-600']],
+  ['T7', '100', '60', '20', '80', ['★', 'text-gray-400']],
+  ['T8', '200', '120', '40', '160', ['★★', 'text-gray-400']],
+  ['T9', '500', '300', '100', '400', ['★★★', 'text-gray-400']],
+  ['T10', '1000', '600', '200', '800', ['★', 'text-yellow-500']],
   ['TX', '2 IMG', '1 IMG', '400', '1 IMG + 400'],
   ['TY', '5 IMG', '3 IMG', '1 IMG', '4 IMG'],
   ['TZ', '10 IMG', '6 IMG', '2 IMG', '8 IMG'],

@@ -1,6 +1,6 @@
 <template>
   <Modal label="Local Perks Manager">
-    <div class="flex flex-col gap-1">
+    <div class="flex flex-col gap-1 overflow-y-auto scrollbar">
       <div class="font-semibold text-green-700 dark:text-green-300 grid grid-cols-10 px-1 even:bg-gray-300 dark:even:bg-warm-gray-700">
         <div class="col-span-6">
           Title

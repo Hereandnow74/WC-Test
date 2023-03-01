@@ -44,7 +44,7 @@ import { toFormValidator } from '@vee-validate/zod'
 
 import { findIndex } from 'lodash'
 import { randomString, showAddPerk, togglePerksManager, showPerksManager, proposeWaifuPerk } from '~/logic'
-import { CHAR_COSTS } from '~/data/constants'
+import { CHAR_COSTS, CHAR_COSTS_TICKET } from '~/data/constants'
 import { localPerks } from '~/logic/localPerks'
 
 const successMessage = ref('')
@@ -116,7 +116,7 @@ const localPerksExist = computed(() => Object.values(localPerks.value).some(x =>
 watch([tier, () => waifu.value.length], () => {
   if (tier.value && waifuUID.value.length)
     cost.value = (CHAR_COSTS[+tier.value] || 0) - (CHAR_COSTS[tempTier.value] || 0)
-  if (cost.value > 1000) cost.value = 'IMG Ticket'
+  if (+tier.value > 10) cost.value = CHAR_COSTS_TICKET[tempTier.value]
 })
 
 const addPerk = handleSubmit((values) => {
@@ -144,9 +144,10 @@ function editPerk(perk: any) {
   author.value = perk.dlc
   image.value = perk.image
   tier.value = perk.tier
+  cost.value = perk.cost
   waifu.value = perk.waifu
   waifuUID.value = perk.waifuUID
-  from.value = perk.waifu
+  from.value = perk.from
   togglePerksManager()
 }
 

@@ -1,5 +1,113 @@
 [
-  
+    {
+    "title": "Hunt the Hero's",
+    "conditions": [
+      {
+        "value": "render all of vaught to ruin"
+      },
+      {
+        "value": "destroy the Seven"
+      },
+      {
+        "value": "kill 80% percent of the Hero's of the world"
+      },
+      {
+        "value": "have the media know your name as the premier death"
+      }
+    ],
+    "objectives": [
+      {
+        "type": "Credits",
+        "value": "pity the fools who wishes to be a hero. If you see fit, spare the ones that are willing to be a hero if you can to have better prey in the future.",
+        "reward": 500
+      }
+    ],
+    "loca": "The Boys",
+    "lewd": false,
+    "rewardType": "Credits",
+    "author": "world scientist",
+    "source": "",
+    "desc": "You've come here to not to be a hero or villain. But to Hunt.....HUNT the worthy prey. Make sure to be efficient hunter, this world was not made for subpar hero's, but superpower weak minded people. Show this world \"Hero\" what it means to have a real predator",
+    "image": "",
+    "reward": 3000,
+    "scope": "Grand",
+    "budget": 0,
+    "uid": "ilEfi"
+  },
+  {
+    "lewd": false,
+    "objectives": [
+      {
+        "type": "Credits",
+        "reward": 300,
+        "value": "Prevent the sacrifice of Kiana Kaslana."
+      },
+      {
+        "value": "Kill Kevin Kaslana",
+        "type": "Perks",
+        "reward": "TS of your choosing to be of equal Tier."
+      },
+      {
+        "value": "Kill Jackal",
+        "reward": "One scientist of equal tier.",
+        "type": "Companions"
+      }
+    ],
+    "rewardType": "Credits",
+    "loca": "Honkai Impact 3rd",
+    "title": "Defanging the Serpent",
+    "budget": 0,
+    "conditions": [
+      {
+        "value": "World Serpent's assests are neutralized."
+      },
+      {
+        "value": "Binding Kevin is not allowed."
+      },
+      {
+        "value": "Stop the Honkai in another way."
+      }
+    ],
+    "scope": "Grand",
+    "reward": "3500",
+    "author": "Tigerboltsniper",
+    "image": "",
+    "source": "",
+    "desc": "PROJECT STIGMA\n\nThe plan to elevate humanity into a existence of Imagnairy Entity and coexist with the Honkai. A very....questionable project akin to the Instumantaily Project of another world. \nForcing this unto the world and making all of the sacrifces done by the cast pointless. \nStop it. Kill Kevin Kaslana and relieve him of his duty. Find another way to solve this conflict. ",
+    "uid": "UqDNq"
+  },
+  {
+    "objectives": [
+      {
+        "type": "Perks",
+        "value": "Corrupt one of the three main targets and have her help you by betraying the others and lure them into a trap for you.",
+        "reward": "Alluring Whispers and Sticky Fingers or a refund for them."
+      }
+    ],
+    "desc": "Magical girls, love, justice, revealing costumes and the embrace of young maidens as they grow closer upon the field of battle. And what is a better addition to this than some good old corruption? After all, the purer something is, the more satisfying it is to corrupt it. So for the purpose of this mission, you will be the one to play the corruptive force targeting our heroines of justice. That is the heroines of this story, Illyasviel von Einzbern, her “sister” Chloe and the sweet adorable Miyu, though other targets are also welcome. We want the whole shebang, twist their common sense, make them abandon their morality and loyalty to others for you instead. Be the Evil Overlord, Demon King, or Succubus Queen that opposes these heroines of purity and kindness.\n",
+    "conditions": [
+      {
+        "value": "We want some style, really play up the villain role. Play into the magical girl tropes, be the master of darkness and lewd things. Being stealthy is fine, but when chips are down, you gotta ham it up."
+      },
+      {
+        "value": "All three main targets must have sworn themselves to you mind, body and soul and have been made to submit to you through sexual means."
+      },
+      {
+        "value": "The Main Targets cannot be bound unless they have been properly ravished. We want you to put some real work into this."
+      }
+    ],
+    "author": "Heaven Canceler",
+    "scope": "Standard",
+    "loca": "Prisma Illya",
+    "budget": 370,
+    "rewardType": "Other",
+    "title": "Fate/Blackened Prism",
+    "image": "https://i.imgur.com/FrFMSrZ.png",
+    "reward": "100 Credits and a third Kaleidostick is created of a color and personality of your choosing. It can be attached to a waifu of your choice to create a new Magical Girl form for them.",
+    "source": "",
+    "lewd": true,
+    "uid": "rffGR"
+  },
   {
     "lewd": false,
     "desc": "Huzzah, grand tidings Contractor! My name is Ser Clay of the Undead. I bring Grand news! You and another contractor have been chosen to participate in Company Sanctioned Battle. But wait, this isn't like regular PvP, No you will be playing an alternative take of the game of chess. You and another contractor will be given Free Companion Tickets, along with the regular payout of the DR of the world you Battle in, to do battle with each other. One Silver Star ticket(Your Queen), Six Copper Star tickets(Your Rooks, Bishops, and Knights), and Eight Blue Star tickets(Your Pawns). Fear not, these do not have to be your only Waifu/Troops, but sadly you will have to pay regular Credits for others. The game shall begin forthright.",
@@ -35,7 +143,7 @@
         "reward": 5
       }
     ],
-    "image": "",
+    "image": "https://i.imgur.com/lUp5lyz.jpg",
     "reward": 1,
     "rewardType": "IMG Tickets",
     "scope": "Grand",
@@ -64,77 +172,11 @@
     "uid": "shzRz"
   },
   {
-    "reward": 3500,
-    "source": "",
     "title": "Heroes? There is no such thing...",
-    "desc": "Heroes? Why would anyone need them? The actual purpose of them was already lost, everything went wrong and now you're contracted to salvage the incredable mess that was left behind. You will enter 'The Rising of the Shield Hero'[DR8] exactly twelve hours before the there will be an attempt to call upon the Four Cardinal Heroes. The attempt will fail, nobody would be summoned and no Legendary Weapons would be brought to bear to save the World. But you would be present, you would be the one to actually do the deed and save this World, any means nessesary...",
-    "scope": "Grand",
-    "objectives": [
-      {
-        "reward": 50,
-        "type": "Credits",
-        "value": "Capture Raphtalia."
-      },
-      {
-        "value": "Capture Filo",
-        "reward": 50,
-        "type": "Credits"
-      },
-      {
-        "type": "Credits",
-        "reward": 100,
-        "value": "Sell Malty S Melromarc."
-      },
-      {
-        "value": "Sell Lüge Lansarz Faubrey.",
-        "type": "Credits",
-        "reward": 150
-      },
-      {
-        "value": "Capture Rishia Ivyred.",
-        "type": "Credits",
-        "reward": 100
-      },
-      {
-        "type": "Credits",
-        "value": "Capture Eclair Seaetto.",
-        "reward": 150
-      },
-      {
-        "reward": 500,
-        "value": "Capture Rifana.",
-        "type": "Credits"
-      },
-      {
-        "reward": 200,
-        "value": "Capture Fitoria.",
-        "type": "Credits"
-      },
-      {
-        "type": "Credits",
-        "value": "Sell Idol Rabier.",
-        "reward": 50
-      },
-      {
-        "value": "Sell Biscas T. Balmus.",
-        "reward": 200,
-        "type": "Credits"
-      },
-      {
-        "reward": 2500,
-        "type": "Credits",
-        "value": "Capture Medea Pideth Machina."
-      },
-      {
-        "value": "Impregnate Raphtalia, Rifana and Rishia with minimum of five children each.",
-        "reward": 500,
-        "type": "Credits"
-      }
-    ],
-    "loca": "Rising of the Shield Hero",
+    "rewardType": "Credits",
     "conditions": [
       {
-        "value": "You or you Waifu cannot leave the Wolrd for the duration of the Mission."
+        "value": "You or your Waifu cannot leave the Wolrd for the duration of the Mission."
       },
       {
         "value": "You cannot purcahse any Waifu for the duration of the Mission."
@@ -152,15 +194,81 @@
         "value": "You must have at least two other Worlds Unlocked before this one."
       }
     ],
+    "uid": "lOgrr",
+    "desc": "Heroes? Why would anyone need them? The actual purpose of them was already lost, everything went wrong and now you're contracted to salvage the incredable mess that was left behind. You will enter 'The Rising of the Shield Hero'[DR8] exactly twelve hours before the there will be an attempt to call upon the Four Cardinal Heroes. The attempt will fail, nobody would be summoned and no Legendary Weapons would be brought to bear to save the World. But you would be present, you would be the one to actually do the deed and save this World, any means nessesary...",
     "author": "Zaralann",
-    "rewardType": "Credits",
-    "image": "https://i0.wp.com/anitrendz.net/news/wp-content/uploads/2022/02/shield-hero-season-2-new-visual-scaled-e1644450107151.jpg",
+    "loca": "Rising of the Shield Hero",
     "lewd": false,
+    "objectives": [
+      {
+        "reward": 50,
+        "value": "Capture Raphtalia.",
+        "type": "Credits"
+      },
+      {
+        "reward": 50,
+        "value": "Capture Filo",
+        "type": "Credits"
+      },
+      {
+        "value": "Sell Malty S Melromarc.",
+        "reward": 100,
+        "type": "Credits"
+      },
+      {
+        "value": "Sell Lüge Lansarz Faubrey.",
+        "type": "Credits",
+        "reward": 150
+      },
+      {
+        "reward": 100,
+        "value": "Capture Rishia Ivyred.",
+        "type": "Credits"
+      },
+      {
+        "reward": 150,
+        "type": "Credits",
+        "value": "Capture Eclair Seaetto."
+      },
+      {
+        "value": "Capture Rifana.",
+        "reward": 500,
+        "type": "Credits"
+      },
+      {
+        "value": "Capture Fitoria.",
+        "type": "Credits",
+        "reward": 200
+      },
+      {
+        "type": "Credits",
+        "reward": 50,
+        "value": "Sell Idol Rabier."
+      },
+      {
+        "value": "Sell Biscas T. Balmus.",
+        "reward": 200,
+        "type": "Credits"
+      },
+      {
+        "type": "Credits",
+        "reward": 2500,
+        "value": "Capture Medea Pideth Machina."
+      },
+      {
+        "type": "Credits",
+        "reward": 500,
+        "value": "Impregnate Raphtalia, Rifana and Rishia with minimum of five children each."
+      }
+    ],
     "budget": 5,
-    "uid": "lOgrr"
+    "reward": 3500,
+    "source": "",
+    "image": "https://i0.wp.com/anitrendz.net/news/wp-content/uploads/2022/02/shield-hero-season-2-new-visual-scaled-e1644450107151.jpg",
+    "scope": "Grand"
   },
   {
-    "image": "",
+    "image": "https://i.imgur.com/XP6zPNg.jpg",
     "title": "Teacher of the Herrschers",
     "scope": "Standard",
     "budget": 0,
@@ -198,7 +306,7 @@
     "desc": "One of our Contractors has failed their Sponsor and as such they have taken extreme, and if we're being honest amusing, measures. They've forwarded the reports on the Contractor to their Mother and she is furious about their slacking! So much so that she has hired us to kill him, knowing it will cause him to start over with nothing to make him appreciate what he has. Of course, there are a few extra things you can do given she has also gotten the low down of the world he is in.",
     "rewardType": "Companions",
     "source": "",
-    "image": "",
+    "image": "https://i.imgur.com/0Q5HW0A.jpg",
     "budget": 350,
     "lewd": false,
     "loca": "Naruto",
@@ -253,7 +361,7 @@
     "uid": "aRkZH"
   },
   {
-    "image": "",
+    "image": "https://i.imgur.com/VYsGqcI.jpg",
     "title": "The Sinner's Seven - Harry Potter",
     "objectives": [
       {
@@ -367,14 +475,13 @@
       }
     ],
     "lewd": false,
-    "image": "",
+    "image": "https://i.imgur.com/TkkzMSU.jpg",
     "uid": "livoY"
-  }
-,
+  },
   {
     "desc": "A particularly ancient Contractor is gathering fellow Contractors to form a demonic cabal. The reason? They're getting sick and tired of all these 'good demon' or 'hentai demon' that are all over the place. People are beginning to forget what a REAL demon is like, and there is only one remedy. Give. Them. Hell. Once accepted the mission, you will be sent to a world where demon are extremely unconventional (in a way that discredit the concept of demon) to raise Hell and show them what a real demonic being is like.",
     "loca": "Generic",
-    "image": "",
+    "image": "https://i.imgur.com/ihSrZyN.jpg",
     "title": "Show Them True Demon",
     "scope": "Grand",
     "lewd": false,
@@ -456,7 +563,7 @@
     "title": "Jackie Chan Adventures - Scout",
     "source": "",
     "budget": 0,
-    "image": "https://i.pinimg.com/564x/48/a8/9d/48a89d2a27e26e9ee3234a4975d4a165--jackie-chan-adventures-vans-online.jpg",
+    "image": "https://i.imgur.com/k9uQidb.jpg",
     "lewd": false,
     "objectives": [
       {
@@ -562,7 +669,7 @@
         "value": "Master the Hengen Muso and spread it."
       }
     ],
-    "image": "",
+    "image": "https://i.imgur.com/Z2ywxEE.jpg",
     "title": "Canon Divergence",
     "loca": "Rising of the Shield Hero",
     "budget": 500,
@@ -626,7 +733,7 @@
       }
     ],
     "desc": "An emergency mission was issued to the company, an insect army is attacking a human outpost in a new planet found by the federation, protect the outpost and clean the world of the presence of insects by any means.",
-    "image": "https://www.syfy.com/sites/syfy/files/styles/scale--1200/public/2019/01/starship_troopers_traitor_of_mars_via_sony_website_2019.jpg",
+    "image": "https://i.imgur.com/rCqceNB.jpg",
     "source": "",
     "reward": 300,
     "scope": "Grand",
@@ -704,7 +811,7 @@
     "scope": "Quick",
     "title": "Meat Trophies",
     "source": "",
-    "image": "",
+    "image": "https://i.imgur.com/DYzS0PY.jpg",
     "rewardType": "Companions",
     "objectives": [
       {
@@ -792,7 +899,7 @@
     ],
     "author": "idk",
     "rewardType": "Perks",
-    "image": "https://superkawaiigl.files.wordpress.com/2019/10/20191028_232903916.jpeg",
+    "image": "https://i.imgur.com/GjGUTSG.jpg",
     "source": "",
     "loca": "Mage and demon queen",
     "objectives": [
@@ -938,13 +1045,13 @@
     "author": "FinSexual92",
     "desc": "Most our Contractors are men, this mission isn't for them. This is for the few Females we employ (that must have some attraction to the Male Gender). One of our VIPs is sick of watching High School DxD worlds and seeing Rias' drama with Riser Phenex. Your Mission is to live a life as the younger sister of Rias Gremory (Be it twin or not) and to survive from birth (with the sexual parts of your build coming into play at thirteen) till the Peace Treaty is signed in which an excuse will be made to have you World Jump. That will be as far as we will interfere though, so if you want an otherwordly Peerage be ready to buy Paper Trails for them.",
     "rewardType": "Credits",
-    "image": "",
+    "image": "https://i.imgur.com/Q2M7Z60.jpg",
     "uid": "mUuVt"
   },
   {
     "title": "Futa Supremacy",
     "scope": "Grand",
-    "image": "",
+    "image": "https://i.imgur.com/OtJaJx1.jpg",
     "objectives": [
       {
         "type": "Companions",
@@ -1034,7 +1141,7 @@
   {
     "loca": "Generic",
     "scope": "Standard",
-    "image": "https://i.imgur.com/3Xy4Nhz.png",
+    "image": "https://i.imgur.com/glfliQe.jpg",
     "rewardType": "Other",
     "lewd": false,
     "budget": 0,
@@ -1080,7 +1187,7 @@
     "uid": "nEypn"
   },
   {
-    "image": "",
+    "image": "https://i.imgur.com/QWjYVta.jpg",
     "scope": "Grand",
     "budget": 0,
     "title": "Harry Mother F*cking Potter",
@@ -1432,7 +1539,7 @@
   {
     "budget": 1500,
     "source": "https://docs.google.com/document/d/19B5ReC_Nr-pW4hDNeZiI00j_OuSJGhHhG3fVFS9XPGE/edit?usp=sharing",
-    "image": "",
+    "image": "https://i.imgur.com/nVtew4w.jpg",
     "loca": "Warhammer 40K",
     "scope": "Grand",
     "rewardType": "Credits",
@@ -1469,7 +1576,7 @@
     "desc": "Venture into the Lands Between as an emissary of an Outer God (The Company or your Patron can act the role) and conquer it. Brandish the Elden Ring and replace the existing order with one of your own making.",
     "budget": 1200,
     "scope": "Grand",
-    "image": "https://cdn-ggbgl.nitrocdn.com/BxNnyXQaRWZsvraElQmsbEFLGomRULSs/assets/images/optimized/rev-19893fa/wp-content/uploads/EldenRingTGA_6-765x428.jpg",
+    "image": "https://i.imgur.com/q4q9NxM.jpg",
     "rewardType": "TX Tickets",
     "objectives": [
       {
@@ -2210,7 +2317,8 @@
         "value": "You must go alone, while they can't overpower the binding those worlds' MC will likely take that as a chance to cuck you even against the wishes of your waifus"
       }
     ],
-    "image": "",
+    "image": "https://i.imgur.com/wBbDA2Bl.jpg",
+    "lewd": true,
     "rewardType": "Other",
     "source": "",
     "scope": "Standard",
