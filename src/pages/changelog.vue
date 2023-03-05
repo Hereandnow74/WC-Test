@@ -6,6 +6,17 @@
       </h2>
       <div>
         <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          02 March 2023
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~125 new user submitted characters, new missions, new worlds</li>
+          <li>Now you can set coefficients for capture/sale manually in settings.</li>
+          <li>Several new SWP perks, some olf DLC SWP's edited by DepressedAlucard</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
           26 February 2023
         </h3>
         <ul class="list-decimal list-inside">

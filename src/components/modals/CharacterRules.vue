@@ -30,6 +30,7 @@
       </h3>
       <ul class="list-decimal list-inside leading-relaxed text-lg">
         <li>Real Life people born after 19th century</li>
+        <li>Kids without aged-up images</li>
         <li>Duplicates / Gender Bender / Alternative looking ones of <b>already existing</b> characters</li>
         <li>Lolicon in NSFW images.</li>
         <li>Characters that use not <b>their own image.</b></li>
@@ -38,7 +39,7 @@
         <li>Original Characters that didn't appeared anywhere or don't have <b>original art</b> (if you can't find them in google they don't exist).</li>
         <li>Alternative versions of same characters.</li>
         <li>Tier 1-2 characters with <b>bad images</b> or from relatively <b>unpopular</b> works.</li>
-        <li>NSFW images that not NSFW in nature won't be accepted.</li>
+        <li>NSFW images that not NSFW in nature.</li>
       </ul>
     </div>
   </Modal>

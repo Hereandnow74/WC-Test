@@ -2,10 +2,10 @@
   <Modal label="Settings">
     <div class="p-1 overflow-y-auto min-h-0 max-h-[85vh] scrollbar">
       <div class="flex gap-1">
-        <div class="border-t border-r border-l dark:border-gray-700 rounded-t-md py-1 px-2 cursor-pointer" :class="tab===0 ? 'bg-gray-200 dark:bg-dark-700': 'bg-gray-100 dark:bg-dark-100'" @click="tab = 0">
+        <div class="border-t border-r border-l dark:border-gray-700 rounded-t-md py-1 px-2 cursor-pointer" :class="tab===0 ? 'bg-gray-200 dark:bg-dark-700': 'bg-gray-300 dark:bg-dark-100'" @click="tab = 0">
           General
         </div>
-        <div class="border-t border-r border-l dark:border-gray-700 rounded-t-md py-1 px-2 cursor-pointer" :class="tab===1 ? 'bg-gray-200 dark:bg-dark-700': 'bg-gray-100 dark:bg-dark-100'" @click="tab = 1">
+        <div class="border-t border-r border-l dark:border-gray-700 rounded-t-md py-1 px-2 cursor-pointer" :class="tab===1 ? 'bg-gray-200 dark:bg-dark-700': 'bg-gray-300 dark:bg-dark-100'" @click="tab = 1">
           Mechanics
         </div>
       </div>

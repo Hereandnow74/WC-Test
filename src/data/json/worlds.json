@@ -2357,10 +2357,6 @@
         "rating": 10
       },
       {
-        "name": "Teen Titians (Animated series)",
-        "rating": 7
-      },
-      {
         "name": "DCAMU",
         "rating": 7
       }
@@ -2920,5 +2916,10 @@
     "q": true,
     "additional": "All ships who have µ (idol) variants can swap to the alternative rigging in your Pocket Apartment. If you also have Apportation, they can change loadouts on the fly. When copying a shipgirl’s power through Template Stacking, µ (idol) variants must still be purchased individually.",
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/992753002031091772/azur-lane-crosswave-switch-review-header.jpg"
+  },
+  {
+    "worldName": "Kirby series",
+    "rating": 10,
+    "image": "https://cdn.wikirby.com/c/c5/KSA_Popstar.jpg"
   }
 ]

@@ -1172,11 +1172,6 @@
     "image": "https://pbs.twimg.com/media/EaDrMs2XQAAEe9O.jpg"
   },
   {
-    "worldName": "Kirby (Anime & Games)",
-    "rating": 8,
-    "image": "https://cdn.wikirby.com/c/c5/KSA_Popstar.jpg"
-  },
-  {
     "worldName": "BTVS/Angel",
     "rating": 4,
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/992071708938870784/p7896383_b_h10_an.jpg"
@@ -5676,5 +5671,10 @@
   {"worldName":"Last Origin","rating":6,"image":"https://cdn.donmai.us/sample/91/4f/__lrl_griffon_and_constantia_s2_last_origin_drawn_by_kakiman__sample-914ff9cfb1a216869661a699aaf98e9d.jpg"},
   {"worldName":"Manyū Hiken-chō","rating":5,"image":"https://m.media-amazon.com/images/M/MV5BNzRhNjExNTMtYjc2Zi00NTk1LWIyNjItNDY0NTM3MGUxMGM3XkEyXkFqcGdeQXVyNzQwMzAwNTI@._V1_.jpg"},
   {"worldName":"Monster Musume no Oishasan","rating":2,"image":"https://i.imgur.com/zSNJ7j2l.jpg"},
-  {"worldName":"Prince of Persia","rating":4,"image":"https://asset.vg247.com/Prince-of-Persia-Remake-Key-Art-1-09102020.jpg/BROK/resize/1920x1920%3E/format/jpg/quality/80/Prince-of-Persia-Remake-Key-Art-1-09102020.jpg","condition":[{"rating":4,"name":"Original Trilogy"},{"rating":5,"name":"Reboot(2008)"},{"name":"Sands of Time Trilogy","rating":7}]}
+  {"worldName":"Prince of Persia","rating":4,"image":"https://asset.vg247.com/Prince-of-Persia-Remake-Key-Art-1-09102020.jpg/BROK/resize/1920x1920%3E/format/jpg/quality/80/Prince-of-Persia-Remake-Key-Art-1-09102020.jpg","condition":[{"rating":4,"name":"Original Trilogy"},{"rating":5,"name":"Reboot(2008)"},{"name":"Sands of Time Trilogy","rating":7}]},
+  {"worldName":"BloodRayne","rating":5,"image":"https://image.api.playstation.com/vulcan/ap/rnd/202110/2619/3Kz1IqDr8snB34ujgttD9Z9I.jpg","condition":[{"rating":4,"name":"BloodRayne 2"}]},
+  {"worldName":"Gosick","rating":3,"image":"https://rare-gallery.com/uploads/posts/1008233-anime-Gosick-Victorique-de-Blois-Kazuya-Kujou-clothing-snapshot-mangaka.jpg"},
+  {"worldName":"Kung Fu Panda","rating":4,"image":"https://i.imgur.com/Sq1dpCw.jpg"},
+  {"worldName":"Monster","rating":2,"image":"https://i.imgur.com/e76LHYZ.jpg"},
+  {"worldName":"Princess Principal","rating":4,"image":"https://images3.alphacoders.com/858/858459.jpg"}
 ]

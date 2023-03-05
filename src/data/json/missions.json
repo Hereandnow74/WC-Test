@@ -1,5 +1,41 @@
 [
-    {
+  {
+    "loca": "Generic",
+    "image": "",
+    "lewd": false,
+    "rewardType": "Credits",
+    "conditions": [
+      {
+        "value": "Join the Student Council (Officially or Unofficially)"
+      }
+    ],
+    "scope": "Standard",
+    "objectives": [
+      {
+        "value": "Become the Secretary or Treasurer",
+        "type": "Credits",
+        "reward": 5
+      },
+      {
+        "value": "Become the Vice-President",
+        "reward": 10,
+        "type": "Credits"
+      },
+      {
+        "value": "Become the President",
+        "type": "Credits",
+        "reward": 15
+      }
+    ],
+    "budget": 0,
+    "title": "Anime Student Councilman",
+    "author": "Ataraxia",
+    "source": "",
+    "desc": "Across most if not all anime taking place in a school setting, there is one group of individuals that reign supreme over all others— The local 'Student Council' and its members. Some merely have total control over the school or student body, while others even have control over the local town, government, or beyond. \n\nThe goal of this mission? Join those vaunted ranks, and become a member (official or otherwise) of your local student council, assuming you have one. Obviously though, you do need to either be a student of or a similar age to the students of whichever school this student council belongs to. ",
+    "reward": 5,
+    "uid": "ADReP"
+  },
+  {
     "title": "Hunt the Hero's",
     "conditions": [
       {
@@ -479,15 +515,11 @@
     "uid": "livoY"
   },
   {
-    "desc": "A particularly ancient Contractor is gathering fellow Contractors to form a demonic cabal. The reason? They're getting sick and tired of all these 'good demon' or 'hentai demon' that are all over the place. People are beginning to forget what a REAL demon is like, and there is only one remedy. Give. Them. Hell. Once accepted the mission, you will be sent to a world where demon are extremely unconventional (in a way that discredit the concept of demon) to raise Hell and show them what a real demonic being is like.",
-    "loca": "Generic",
-    "image": "https://i.imgur.com/ihSrZyN.jpg",
+    "reward": 1000,
+    "uid": "qrKft",
+    "source": "",
     "title": "Show Them True Demon",
     "scope": "Grand",
-    "lewd": false,
-    "reward": 1000,
-    "rewardType": "Credits",
-    "author": "sarin555",
     "conditions": [
       {
         "value": "First, you must become a demonic entity, with, at the minimal, Template Stacking anyone classify as 'demonic'."
@@ -505,10 +537,10 @@
         "value": "Worlds were demon exist in an unconventional way, but are still taken seriously as 'demon' are not a viable destination, such as 'Hazbin Hotel' and 'Kimetsu no Yaiba/Demon Slayer'."
       },
       {
-        "value": "You are not allow to act like a 'good guy' for the duration of the mission."
+        "value": "You are not allowed to act like a 'good guy' for the duration of the mission."
       },
       {
-        "value": "You're, however, not expected to be insanely evil either. So you're not forced to inflict massive suffering, but you must stick to your theme of sinning."
+        "value": "You're, however, not expected to be insanely evil either. So you're not forced to inflict massive suffering, but you must stick to your chosen theme."
       },
       {
         "value": "If you're reported to have break any condition, the cabal will review the evident before giving an appropriate punishment."
@@ -520,41 +552,45 @@
         "value": "You will have a support in a form of advices and meta knowledge from other members in the cabal"
       }
     ],
+    "rewardType": "Credits",
+    "loca": "Generic",
+    "author": "sarin555",
     "objectives": [
       {
-        "value": "You remember that bit about 'not forced to inflict massive suffering'? That's still true, but if you do it out of your own free will, you will be rewarded for it. The level of massive suffering here but be equal to at least an aftermath of an Earthquake.",
+        "value": "You remember that bit about 'not forced to inflict massive suffering'? That's still true, but if you do it out of your own free will, you will be rewarded for it. The level of massive suffering here must be equal to at least an aftermath of an Earthquake.",
         "type": "Other",
         "reward": "Negotiable rewards depending on the level of massive suffering, with a TX Ticket being the highest reward."
       },
       {
-        "reward": "Soul Talent",
+        "value": "While this isn't always the case, the classic demon always honors the deal once it is made, even if they try to make the deal fell through. If you make deals with mortal and either fulfill them or sabotage them, you will receive Soul Talent.",
         "type": "Other",
-        "value": "While this isn't always the case, the classic demon always honors the deal once it is made, even if they try to make the deal fell through. If you make deals with mortal and either fulfill them or sabotage them, you will receive Soul Talent."
+        "reward": "Soul Talent"
       },
       {
         "reward": 100,
-        "value": "If you take this mission during your Chargen, you will receive a flat 100 extra credit to help in your character creation.",
-        "type": "Credits"
+        "type": "Credits",
+        "value": "If you take this mission during your Chargen, you will receive 100 extra credits to help starting out."
       },
       {
         "type": "Credits",
         "reward": 100,
-        "value": "If you choose to go to either 'Taimanin' or 'High School DxD' world, you will receive extra credit. If these worlds are chosen during Chargen, you will receive this credit immediately to help you out."
+        "value": "If you choose to go to either 'Taimanin' or 'High School DxD' world, you will receive extra credit after the mission. If these worlds are chosen during Chargen, however, you will receive this credit immediately to help you out."
       },
       {
-        "reward": "Templete Stacking of any demon below Tier 10.",
-        "type": "Other",
-        "value": "Take any demon companion that would normally be considered an affront what the cabal stand for and bring them to our way of thinking. Some examples of demon like this are Charlie (Hazbin Hotel), Sona Sitri (Highschool DxD), and Arueshalae (Pathfinder)."
+        "reward": "Templete Stacking of any demon up to Tier 10.",
+        "value": "Take any demon companion that would normally be considered an affront to what the cabal stand for and bring them to our way of thinking.",
+        "type": "Other"
       },
       {
-        "value": "Kick a normal puppy AND a normal baby, don't have to be lethal, at the same time, or with any lasting damage.",
         "reward": "Respect from the cabal.",
+        "value": "Kick a normal puppy AND a normal baby, don't have to be lethal, at the same time, or with any lasting damage.",
         "type": "Other"
       }
     ],
-    "source": "",
+    "desc": "A particularly ancient Contractor is gathering fellow Contractors to form a demonic cabal. The reason? They're getting sick and tired of all these 'good demon' or 'hentai demon' that are all over the place. People are beginning to forget what a REAL demon is like, and there is only one remedy. Give. Them. Hell. Once accepted, you will be sent to a world where demon are extremely unconventional (in a way that discredit the concept of demon) to raise Hell and show them what a real demonic being is like.",
+    "image": "https://i.imgur.com/ihSrZyN.jpg",
     "budget": 0,
-    "uid": "qrKft"
+    "lewd": false
   },
   {
     "conditions": [],

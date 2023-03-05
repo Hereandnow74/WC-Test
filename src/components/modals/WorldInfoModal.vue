@@ -1,6 +1,6 @@
 <template>
   <Modal label="World Statistic">
-    <div class="relative p-2 flex flex-col gap-2 min-h-0">
+    <div class="relative p-2 flex flex-col gap-2 min-h-0 overflow-y-scroll scrollbar">
       <Table :rows="worldData" :headers="['Name', 'Targets', 'Capture Credits', 'Sell Credits', 'Capture+Sell']" />
       <Table :rows="[worldCharsCountByTier]" :headers="['-', 'T1', 'T2', 'T3', 'T4', 'T5','T6', 'T7', 'T8', 'T9', 'T10','TX', 'TY', 'TZ']" />
     </div>

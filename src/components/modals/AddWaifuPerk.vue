@@ -4,6 +4,7 @@
       <div class="flex gap-2">
         <Input v-model="title" class="flex-grow" placeholder="Perk title" :error-message="errors.title" />
         <Input v-model.number="cost" class="w-24" label="Cost" :error-message="errors.cost" />
+        <Input v-if="costT" v-model.number="costT" class="w-24" label="IMG" :error-message="errors.costT" />
       </div>
       <div class="flex gap-2">
         <Input v-model="author" class="w-1/3" placeholder="Author" :error-message="errors.author" />
@@ -56,7 +57,8 @@ const schema = toFormValidator(
     title: zod.string().max(128, 'Max length 128 chars').nonempty('Title is required'),
     author: zod.string().nonempty('Author is required'),
     source: zod.string(),
-    cost: zod.number().or(zod.string()),
+    cost: zod.number().min(-1000, 'Minimum cost is -1000'),
+    costT: zod.number().min(-10, 'Minimum IMG cost is -10'),
     tier: zod.number().min(0, 'There is no tiers less than 0'),
     from: zod.string().min(1, 'World is required'),
     waifu: zod.string().min(1, 'Name is required').array().min(1, 'At least one companion is required'),
@@ -73,6 +75,7 @@ const { errors, handleSubmit } = useForm({
     author: '',
     source: '',
     cost: 0,
+    costT: 0,
     tier: 0,
     desc: '',
     from: '',
@@ -87,6 +90,7 @@ const { value: title } = useField<string>('title')
 const { value: source } = useField<string>('source')
 const { value: author } = useField<string>('author')
 const { value: cost } = useField<number>('cost')
+const { value: costT } = useField<number>('costT')
 const { value: desc } = useField<string>('desc')
 const { value: image } = useField<string>('image')
 const { value: waifu } = useField<string[]>('waifu')
@@ -102,6 +106,7 @@ const submittedPerk = computed(() => {
     title: title.value,
     dlc: author.value,
     cost: cost.value,
+    costT: costT.value,
     desc: desc.value,
     image: image.value,
     from: from.value,
@@ -116,7 +121,10 @@ const localPerksExist = computed(() => Object.values(localPerks.value).some(x =>
 watch([tier, () => waifu.value.length], () => {
   if (tier.value && waifuUID.value.length)
     cost.value = (CHAR_COSTS[+tier.value] || 0) - (CHAR_COSTS[tempTier.value] || 0)
-  if (+tier.value > 10) cost.value = CHAR_COSTS_TICKET[tempTier.value]
+  if (+tier.value > 10)
+    costT.value = -CHAR_COSTS_TICKET[+tier.value] || 0
+  if (tempTier.value > 10)
+    costT.value = CHAR_COSTS_TICKET[tempTier.value] || 0
 })
 
 const addPerk = handleSubmit((values) => {
@@ -145,6 +153,7 @@ function editPerk(perk: any) {
   image.value = perk.image
   tier.value = perk.tier
   cost.value = perk.cost
+  costT.value = perk.costT
   waifu.value = perk.waifu
   waifuUID.value = perk.waifuUID
   from.value = perk.from

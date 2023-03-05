@@ -13,15 +13,15 @@
         >
         <div v-else class="h-16"></div>
         <icon-park-outline:full-screen-one
-          class="absolute top-1 right-1 hover:text-blue-400 cursor-pointer mix-blend-difference"
+          class="text-light-400  absolute top-1 right-1 hover:text-blue-400 cursor-pointer mix-blend-difference"
           @click="() => (showModal = true, modalImage=(nsfw ? charData.image_nsfw || image : charData.sourceImage || image))"
         />
         <span
           v-if="charData.image_nsfw"
-          class="absolute top-1 right-8 hover:text-blue-400 cursor-pointer mix-blend-difference"
+          class="text-light-400 absolute top-1 right-8 hover:text-blue-400 cursor-pointer mix-blend-difference"
           @click="nsfw = !nsfw"
         >{{ nsfw ? 'NSFW' : 'SFW' }}</span>
-        <div v-if="changes[charData.uid]" class="absolute top-1 left-0 text-sm flex flex-col justify-start items-start gap-1 cursor-pointer" @click="showChange = true">
+        <div v-if="changes[charData.uid]" class="absolute top-1 left-0 text-sm flex flex-col justify-start items-start gap-1 cursor-pointer text-gray-200" @click="showChange = true">
           <div v-if="changes[charData.uid].image !== undefined" class="bg-green-600 rounded-r-lg px-2 shadow-md">
             new image
           </div>
@@ -47,7 +47,7 @@
             by {{ changes[charData.uid].nickname }}
           </div>
         </div>
-        <div v-if="showChange" class="absolute z-30 inset-0 flex gap-1 bg-gray-800 p-1 rounded h-full w-full">
+        <div v-if="showChange" class="absolute z-30 inset-0 flex gap-1 bg-blue-200 dark:bg-gray-800 p-1 rounded h-full w-full">
           <div class="h-full hover:bg-gray-700 rounded text-center flex items-center cursor-pointer" @click="showChange = false">
             <akar-icons:arrow-back-thick-fill />
           </div>
