@@ -6,6 +6,33 @@
       </h2>
       <div>
         <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          12 March 2023
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~55 new user submitted characters, new missions, new worlds, new DLC SWP's</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          09 March 2023
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~130 new user submitted characters, new missions, new worlds, new DLC SWP's</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          05 March 2023
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~80 new user submitted characters, new missions, new worlds, new DLC SWP's</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
           02 March 2023
         </h3>
         <ul class="list-decimal list-inside">

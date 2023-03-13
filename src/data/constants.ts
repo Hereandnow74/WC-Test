@@ -23,6 +23,7 @@ export const VERSION = '0.8'
 
 export const nicknames = [
   'Definitely not Dio',
+  'Roger M.',
   'Darin E.',
   'cameron ngo',
   'ClayUndead',
@@ -177,7 +178,7 @@ export const waifuTags = {
   tm: { tag: 'Paradox Defense', category: 'Defense', short: 'tm', effect: '', desc: 'Known as a time-manipulator.', style: { 'background-image': 'url("https://i.imgur.com/qDdxPu7m.png")', 'background-size': 'cover', 'color': '#fff', 'font-weight': '600', 'border': '1px solid #777' } },
 
   mo: { tag: 'Monster Tamer', category: 'Occupation', short: 'mo', effect: '', desc: 'Known as a monster-tamer or otherwise being good with animals.', color: 'bg-gradient-to-t to-red-600 from-gray-100 text-black' },
-  py: { tag: 'Psychic', category: 'Powers', short: 'py', effect: '', desc: 'Has Psychic powers.', style: { background: 'linear-gradient(0deg, rgba(124,0,255,1) 0%, rgba(248,0,255,1) 70%)', color: '#fff' } },
+  py: { tag: 'Psychic', category: 'Powers', short: 'py', effect: '', desc: 'Is a known psychic and/or is able to telepathically read minds.', style: { background: 'linear-gradient(0deg, rgba(124,0,255,1) 0%, rgba(248,0,255,1) 70%)', color: '#fff' } },
   ip: { tag: 'Mind Manipulator', category: 'Powers', short: 'ip', effect: '', desc: 'Has a power that can manipulate minds.', color: 'bg-[#61457d] text-white' },
   bk: { tag: 'Bodyjack', category: 'Powers', short: 'bk', effect: '', desc: 'Has a power that can bodyjack others.', color: 'bg-[#631900]' },
   ih: { tag: 'Instant Death', category: 'Powers', short: 'ih', effect: '', desc: 'Known for inflicting instant (conceptual) death.', color: 'bg-gradient-to-r to-green-500 from-dark-500' },
@@ -211,7 +212,7 @@ export const waifuTags = {
   cf: { tag: 'Chef', category: 'Occupation', short: 'cf', effect: '', desc: 'Skilled or specializes in culinary arts.', color: 'bg-[#dd8812]' },
   pi: { tag: 'Pirate', category: 'Occupation', short: 'pi', effect: '', desc: '', style: { background: 'linear-gradient(0deg, rgba(4,21,149,1) 0%, rgba(0,120,255,1) 100%)', color: '#fff' } },
   tc: { tag: 'Teacher', category: 'Occupation', short: 'tc', effect: '', desc: 'Known for teaching or mentoring others in a professional capacity.', style: { background: 'linear-gradient(90deg, rgba(154,134,102,1) 0%, rgba(250,214,156,1) 50%, rgba(154,134,102,1) 100%)', color: '#000' } },
-  ad: { tag: 'Android', category: 'Race', short: 'ad', effect: '', desc: 'An artificially created sapient being, not to be confused with genetic clones, purely digital artificial intelligence, and similar beings.', color: 'bg-gradient-to-t to-gray-400 from-gray-200 text-black' },
+  ad: { tag: 'Android', category: 'Race', short: 'ad', effect: '', desc: 'An artificially created sapient with a non-biological humanlike body.', color: 'bg-gradient-to-t to-gray-400 from-gray-200 text-black' },
   cb: { tag: 'Cyborg', category: 'Race', short: 'cb', effect: '', desc: 'Largely cybernetic in regards to their body, usually being visibly altered.', style: { background: 'linear-gradient(90deg, rgba(238,202,178,1) 0%, rgba(168,168,168,1) 100%)', color: '#000' } },
   nn: { tag: 'Nun', category: 'Occupation', short: 'nn', effect: '', desc: '', color: 'bg-gradient-to-t to-gray-400 from-black' },
   un: { tag: 'Undead', category: 'Race', short: 'un', effect: '', desc: 'Technically dead but still animate.', color: 'bg-[#2c5332]' },

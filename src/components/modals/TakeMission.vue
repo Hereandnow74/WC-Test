@@ -11,7 +11,7 @@
         <Select v-model="types[i]" :disabled="!!missionSave" label="Type" placeholder="Reward Type" :options="['Credits', 'TX Tickets', 'Perk', 'Companion', 'Other']" />
         <template v-if="types[i] === 'Perk'">
           <div class="text-red-500 text-xs max-w-40">
-            Perk rewards can be buggy, advised to use only for simple preks for now.
+            Perk rewards can be buggy, advised to use only for simple perks for now.
           </div>
           <InputWithSearch
             v-model="rewards[i]"

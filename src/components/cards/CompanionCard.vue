@@ -2,12 +2,12 @@
   <div
     class="py-1 w-full dark:text-gray-200 bg-warm-gray-300 dark:bg-warm-gray-700 rounded"
   >
-    <div class="border border-gray-400 rounded dark:border-gray-800 h-full flex flex-col" :class="[isUserChar ? 'bg-warm-gray-400 dark:bg-warm-gray-800': 'bg-gray-300 dark:bg-gray-800']">
+    <div class="h-full flex flex-col" :class="[isUserChar ? 'bg-lime-50 dark:bg-warm-gray-800': 'bg-gray-300 dark:bg-gray-800']">
       <div ref="cardEl" class="relative flex-grow">
         <img
           v-if="withImage"
           ref="companionEl"
-          class="rounded absolute object-cover h-full w-full object-top"
+          class="rounded absolute object-cover h-full w-full object-top border border-gray-400 rounded dark:border-gray-700"
           :data-src="image"
           :alt="charData.name"
         >
@@ -112,7 +112,7 @@
       </div>
       <div class="py-1 h-max">
         <h4 id="title" class="flex px-1 leading-none relative" :class="fontSize">
-          <span class="flex-grow text-center" :class="isUserChar ? 'text-green-200': ''">{{ charData.name }}</span>
+          <span class="flex-grow text-center" :class="isUserChar ? 'text-green-800 dark:text-green-200': ''">{{ charData.name }}</span>
           <div
             class="text-base text-gray-400 hover:text-orange-500 cursor-pointer absolute left-1"
             :class="{'opacity-0': !defenseTags.length}"
@@ -199,7 +199,7 @@
     <div v-if="showModal" class="fixed inset-0 bg-black bg-opacity-10 flex place-content-center items-center z-20" @click="showModal = false">
       <div class="relative overflow-auto w-max flex place-content-center items-center">
         <img v-if="/[^ \!@\$\^&\(\)\+\=]+(\.png|\.jpeg|\.gif|\.jpg|\.webp)$/.test(modalImageCmp)" class="object-contain max-h-screen" :src="modalImageCmp" alt="full image">
-        <div v-else class="bg-gray-700 rounded p-2">
+        <div v-else class="bg-gray-700 text-gray-200 rounded p-2">
           Full image link leads to a different site
           <a :href="modalImageCmp" target="_blank" rel="noopener noreferrer" class="underline">{{ modalImageCmp }}</a>
         </div>

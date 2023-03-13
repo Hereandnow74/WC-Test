@@ -49,7 +49,7 @@
                   placeholder="Character / Race / Power name"
                   class="flex-grow"
                   error-message=""
-                  @onChar="(char: DBCharacter) => (power.flavor = `${char.n}(${char.w})`, power.target = startingOrigin.character || 'You', power.uid = startingOrigin.uid || 0)"
+                  @onChar="(char: DBCharacter) => (power.flavor = `${char.n} (${char.w})`, power.target = startingOrigin.character || 'You', power.uid = startingOrigin.uid || 0)"
                   @update:modelValue="(val) => (power.flavor = val, power.target = startingOrigin.character || 'You', power.uid = startingOrigin.uid || 0)"
                 />
                 <AnythingInput
@@ -108,7 +108,7 @@
                   placeholder="Character / Race / Power name"
                   class="flex-grow"
                   error-message=""
-                  @onChar="(char: DBCharacter) => (power.flavor = `${char.n}(${char.w})`, power.target = companion.name, power.uid = companion.uid)"
+                  @onChar="(char: DBCharacter) => (power.flavor = `${char.n} (${char.w})`, power.target = companion.name, power.uid = companion.uid)"
                   @update:modelValue="(val) => (power.flavor = val, power.target = companion.name, power.uid = companion.uid)"
                 />
                 <AnythingInput

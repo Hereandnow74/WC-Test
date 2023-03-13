@@ -1,6 +1,6 @@
 
 <template>
-  <div class="px-2 !block flex flex-col h-full !overflow-hidden">
+  <div class="px-2 !block grid grid-cols-1 grid-rows-[1fr,100%] h-full !overflow-hidden">
     <div class="max-w-4xl pb-1 mx-auto flex gap-2 flex-wrap md:flex-nowrap">
       <div class="flex items-center flex-grow">
         <Input
@@ -72,7 +72,7 @@
     </div>
     <div
       ref="worldWrapper"
-      class="grid grid-cols-1 grid-flow-row-dense 4xl:grid-cols-6 5xl:grid-cols-7 xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-1 pb-8 h-full min-h-0 overflow-y-auto scrollbar"
+      class="grid grid-cols-1 grid-flow-row-dense 4xl:grid-cols-6 5xl:grid-cols-7 xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-1 h-full pb-16 min-h-0 overflow-y-auto scrollbar"
     >
       <WorldCard
         v-for="world in infiniteWorlds"

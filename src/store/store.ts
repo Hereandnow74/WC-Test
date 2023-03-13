@@ -429,16 +429,18 @@ const isCouple = computed(() => findIndex(intensities.value, { title: 'Couple’
 
 watch(isCouple, () => {
   if (isCouple.value) {
-    companions.value.push({
-      uid: 777777777,
-      name: 'Your SO',
-      sex: 'F',
-      world: '',
-      tier: 1,
-      priceTier: 0,
-      method: 'unbound',
-      spouse: true,
-    })
+    if (findIndex(companions.value, { spouse: true }) === -1) {
+      companions.value.push({
+        uid: 777777777,
+        name: 'Your SO',
+        sex: 'F',
+        world: '',
+        tier: 1,
+        priceTier: 0,
+        method: 'unbound',
+        spouse: true,
+      })
+    }
   }
   else {
     remove(companions.value, cmp => cmp.spouse)

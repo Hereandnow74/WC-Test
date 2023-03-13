@@ -13,6 +13,13 @@
       <tabler:arrow-bar-to-left v-else />
     </button>
     <h3 v-if="!showSideMenu" class="mx-2 opacity-50 border-b">
+      You
+    </h3>
+    <div v-else class="bg-gray-600 dark:bg-gray-200 rounded my-2 w-5 h-[2px] mx-2"></div>
+    <router-link class="icon-text-btn mx-2" :title="user.name" to="/auth/user">
+      <mdi:user />{{ user.name }}
+    </router-link>
+    <h3 v-if="!showSideMenu" class="mx-2 opacity-50 border-b">
       Options
     </h3>
     <div v-else class="bg-gray-600 dark:bg-gray-200 rounded my-2 w-5 h-[2px] mx-2"></div>
@@ -115,6 +122,7 @@ import {
   isDark, toggleDark, showSideMenu, toggleShowAddPerk,
   toggleSupport, promoteShown, toggleShowSettings, showIntro,
 } from '~/logic'
+import { user } from '~/logic/auth/authLogic'
 
 const sidemenu = ref(null)
 

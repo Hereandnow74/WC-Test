@@ -54,7 +54,7 @@
         "rating": 8
       }
     ],
-    "image": "https://65861.smushcdn.com/2428448/wp-content/uploads/2021/08/1592584714606_fullres_orig.jpg"
+    "image": "https://i.imgur.com/c3Ct79jl.jpg"
   },
   {
     "worldName": "Devil May Cry",
@@ -919,27 +919,27 @@
   },
   {
     "worldName": "Command and Conquer",
-    "rating": 3,
+    "rating": 4,
     "additional": "Rating is variable by time period/Timeline.",
     "condition": [
       {
         "name": "Red Alert/2/Yuri's Revenge",
-        "rating": 3
-      },
-      {
-        "name": "Red Alert 3",
         "rating": 4
       },
       {
-        "rating": 4,
-        "name": "Tiberian Dawn/Sun"
+        "name": "Red Alert 3",
+        "rating": 5
       },
       {
         "rating": 5,
+        "name": "Tiberian Dawn/Sun"
+      },
+      {
+        "rating": 6,
         "name": "Tiberium Wars/Twilight/Scrin Invasion"
       }
     ],
-    "image": "https://i.pinimg.com/originals/6b/3b/d3/6b3bd38cc3073cb5794a41ebf7d9779a.jpg"
+    "image": "https://i.imgur.com/ZI8mfGAl.jpg"
   },
   {
     "worldName": "Infinite Stratos",
@@ -5669,12 +5669,19 @@
   {"worldName":"Ijiranaide, Nagatoro-san","rating":1,"image":"https://c4.wallpaperflare.com/wallpaper/599/219/830/nagatoro-hayase-ijiranaide-nagatoro-san-please-don-t-bully-me-nagatoro-hd-wallpaper-preview.jpg"},
   {"worldName":"Indivisible","rating":6,"image":"https://i.imgur.com/m39sLZU.jpg"},
   {"worldName":"Last Origin","rating":6,"image":"https://cdn.donmai.us/sample/91/4f/__lrl_griffon_and_constantia_s2_last_origin_drawn_by_kakiman__sample-914ff9cfb1a216869661a699aaf98e9d.jpg"},
-  {"worldName":"Manyū Hiken-chō","rating":5,"image":"https://m.media-amazon.com/images/M/MV5BNzRhNjExNTMtYjc2Zi00NTk1LWIyNjItNDY0NTM3MGUxMGM3XkEyXkFqcGdeQXVyNzQwMzAwNTI@._V1_.jpg"},
+  {"worldName":"Manyuu Hikenchou","rating":5,"image":"https://m.media-amazon.com/images/M/MV5BNzRhNjExNTMtYjc2Zi00NTk1LWIyNjItNDY0NTM3MGUxMGM3XkEyXkFqcGdeQXVyNzQwMzAwNTI@._V1_.jpg"},
   {"worldName":"Monster Musume no Oishasan","rating":2,"image":"https://i.imgur.com/zSNJ7j2l.jpg"},
   {"worldName":"Prince of Persia","rating":4,"image":"https://asset.vg247.com/Prince-of-Persia-Remake-Key-Art-1-09102020.jpg/BROK/resize/1920x1920%3E/format/jpg/quality/80/Prince-of-Persia-Remake-Key-Art-1-09102020.jpg","condition":[{"rating":4,"name":"Original Trilogy"},{"rating":5,"name":"Reboot(2008)"},{"name":"Sands of Time Trilogy","rating":7}]},
   {"worldName":"BloodRayne","rating":5,"image":"https://image.api.playstation.com/vulcan/ap/rnd/202110/2619/3Kz1IqDr8snB34ujgttD9Z9I.jpg","condition":[{"rating":4,"name":"BloodRayne 2"}]},
   {"worldName":"Gosick","rating":3,"image":"https://rare-gallery.com/uploads/posts/1008233-anime-Gosick-Victorique-de-Blois-Kazuya-Kujou-clothing-snapshot-mangaka.jpg"},
   {"worldName":"Kung Fu Panda","rating":4,"image":"https://i.imgur.com/Sq1dpCw.jpg"},
   {"worldName":"Monster","rating":2,"image":"https://i.imgur.com/e76LHYZ.jpg"},
-  {"worldName":"Princess Principal","rating":4,"image":"https://images3.alphacoders.com/858/858459.jpg"}
+  {"worldName":"Princess Principal","rating":4,"image":"https://images3.alphacoders.com/858/858459.jpg"},
+  {"worldName":"Money Heist","rating":2,"image":"https://i.imgur.com/QvQtOab.jpg"},
+  {"worldName":"The Magicians","rating":3,"image":"https://i.imgur.com/bmHHl0Z.jpg","condition":[{"rating":3,"name":"Earth- Start of Canon"},{"name":"Earth- Great Blank Spot","rating":4},{"rating":4,"name":"Earth- Timeline 23"},{"rating":5,"name":"Earth- Return of Magic"},{"rating":5,"name":"Fillory- Normal"},{"rating":6,"name":"Fillory- Great Blank Spot"}]},
+  {"worldName":"CrossCode","rating":2,"image":"https://i.imgur.com/KEhRZsj.png","additional":"Upon capture, Instant Matter avatars will lose the weaknesses and flaws of Instant Matter and gain the properties and abilities described by the game simulation layer of CrossCode. The limitations on abilities reliant on a background magical field described in the base rules will also apply to them.\n\nAvatars controlled by a human player will have the two fuse into whichever body is closest to the Contractor at the time of capture. They will gain the ability to swap between their avatar form and their original human form, which lacks all powers except the ability to respawn."},
+  {"worldName":"NieR","rating":7,"image":"https://twinfinite.net/wp-content/uploads/2021/04/nier-replicant-cover-8.jpg","condition":[{"name":"Pre-3300s, Post-2053","rating":8},{"name":"Post-Game Era","rating":6},{"name":"2003-2053","rating":5}]},
+  {"worldName":"Shadow of the Colossus","rating":5,"image":"https://i.imgur.com/I7V8Rcml.jpg","additional":"You would need both [Corruption Defense] and [Soul Defense] to protect yourself from the Curse after slaying a Collossus."},
+  {"worldName":"The Devil Is a Part-Timer!","rating":4,"image":"https://www.animenewsnetwork.com/hotlink/thumbnails/crop1200x630gB7/cms/news.5/180550/maousama2_kv2.jpg","condition":[{"rating":6,"name":"Ente Isla"}]},
+  {"worldName":"Our Last Crusade or the Rise of a New World","rating":4,"image":"https://i.imgur.com/siHHPZW.jpg"}
 ]
