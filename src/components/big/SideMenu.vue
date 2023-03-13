@@ -16,8 +16,11 @@
       You
     </h3>
     <div v-else class="bg-gray-600 dark:bg-gray-200 rounded my-2 w-5 h-[2px] mx-2"></div>
-    <router-link class="icon-text-btn mx-2" :title="user.name" to="/auth/user">
+    <router-link v-if="user && user.name" class="icon-text-btn mx-2" :title="user.name" to="/auth/user">
       <mdi:user />{{ user.name }}
+    </router-link>
+    <router-link v-else class="icon-text-btn mx-2" title="Register" to="/auth/register">
+      <mdi:user />Register
     </router-link>
     <h3 v-if="!showSideMenu" class="mx-2 opacity-50 border-b">
       Options
