@@ -9,6 +9,7 @@ import Components from 'unplugin-vue-components/vite'
 import WindiCSS from 'vite-plugin-windicss'
 import AutoImport from 'unplugin-auto-import/vite'
 import PurgeIcons from 'vite-plugin-purge-icons'
+import { viteStaticCopy } from 'vite-plugin-static-copy'
 
 export default defineConfig({
   resolve: {
@@ -21,6 +22,7 @@ export default defineConfig({
     Vue(),
 
     VitePWA({
+      registerType: 'autoUpdate',
       includeAssets: ['favicon.svg', 'favicon.ico', 'robots.txt', 'apple-touch-icon.png'],
       manifest: {
         name: 'Waifu Catalog Interactive',
@@ -80,6 +82,19 @@ export default defineConfig({
 
     // https://github.com/antfu/vite-plugin-windicss
     WindiCSS(),
+
+    viteStaticCopy({
+      targets: [
+        {
+          src: './src/data/json/characters.json',
+          dest: 'json/',
+        },
+        {
+          src: './src/data/json/userCharacters.json',
+          dest: 'json/',
+        },
+      ],
+    }),
   ],
 
   server: {
@@ -109,6 +124,7 @@ export default defineConfig({
         chunkFileNames: 'assets/[name].js',
         assetFileNames: 'assets/[name][extname]',
         entryFileNames: 'assets/[name].js',
+        manualChunks: id => id.includes('node_modules') ? 'vendor' : null,
       },
     },
   },

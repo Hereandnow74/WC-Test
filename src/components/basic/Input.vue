@@ -11,6 +11,7 @@
         border="~ gray-800"
         :placeholder="placeholder"
         :value="modelValue"
+        :autocomplete="autocomplete"
         @input="$emit('update:modelValue', ($event.target as HTMLInputElement).value)"
       >
     </label>
@@ -49,6 +50,10 @@ defineProps({
   disabled: {
     type: Boolean,
     default: false,
+  },
+  autocomplete: {
+    type: String,
+    default: '',
   },
 })
 

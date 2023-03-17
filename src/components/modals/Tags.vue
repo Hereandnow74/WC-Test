@@ -84,7 +84,7 @@ const showOfficial = ref(false)
 const countSort = ref(false)
 
 function clearAll() {
-  Object.keys(tagToggles).forEach(key => tagToggles[key] = 0)
+  Object.keys(tagToggles.value).forEach(key => tagToggles.value[key] = 0)
 }
 
 const allTagsFiltered = computed(() => {

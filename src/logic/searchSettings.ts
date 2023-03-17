@@ -1,5 +1,5 @@
-import { usePlayStore } from '~/store/play'
-import { useStore } from '~/store/store'
+import { useChargenStore } from '../store/chargen'
+import { useStore } from '../store/store'
 
 // Search settings
 const minTier = ref(1)
@@ -24,7 +24,7 @@ const worldNameDict = {
 } as Record<string, string>
 
 const { startingWorld } = useStore()
-const { currentWorld } = usePlayStore()
+const { currentWorld } = useChargenStore()
 
 watch([isLimited, currentWorld], () => {
   if (isLimited.value)

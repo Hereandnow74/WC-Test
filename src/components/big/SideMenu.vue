@@ -19,8 +19,8 @@
     <router-link v-if="user && user.name" class="icon-text-btn mx-2" :title="user.name" to="/auth/user">
       <mdi:user />{{ user.name }}
     </router-link>
-    <router-link v-else class="icon-text-btn mx-2" title="Register" to="/auth/register">
-      <mdi:user />Register
+    <router-link v-else class="icon-text-btn mx-2" title="Login" to="/auth/login">
+      <mdi:user />Login
     </router-link>
     <h3 v-if="!showSideMenu" class="mx-2 opacity-50 border-b">
       Options
@@ -80,9 +80,6 @@
     >
       <ri:patreon-line /> Patreon
     </a>
-    <div v-if="promoteShown" class="icon-text-btn mx-2 whitespace-nowrap" title="Support" @click="() => toggleSupport()">
-      <ci:heart-fill class="text-pink-500" />Support
-    </div>
     <h3 v-if="!showSideMenu" class="mx-2 opacity-50 border-b">
       Menu
     </h3>
@@ -123,18 +120,12 @@
 <script lang='ts' setup>
 import {
   isDark, toggleDark, showSideMenu, toggleShowAddPerk,
-  toggleSupport, promoteShown, toggleShowSettings, showIntro,
+  toggleShowSettings, showIntro,
 } from '~/logic'
-import { user } from '~/logic/auth/authLogic'
+import { useUser } from '~/store/user'
+
+const { user } = useUser()
 
 const sidemenu = ref(null)
 
 </script>
-
-<style>
-.transition-width {
-  transition-property: max-width;
-  @apply ease-in-out;
-  @apply duration-150;
-}
-</style>

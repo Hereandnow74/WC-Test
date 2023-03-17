@@ -152,7 +152,7 @@
       <div v-else class="">
         Loading... <span class="inline-block text-xl"><eos-icons:bubble-loading /></span>
       </div>
-      <div class="flex gap-4 justify-center pt-1">
+      <div class="flex gap-4 justify-center pt-1 text-sm">
         <div v-if="tagsInclude.length" class="flex gap-1">
           Include:
           <Tag
@@ -173,6 +173,7 @@
             @click="tagToggles[tag] = 0"
           />
         </div>
+        <Button v-if="tagsInclude.length || tagsExclude.length" size="Small" label="Clear All" bg-color="bg-blue-500" @click="tagToggles = {}" />
       </div>
     </div>
     <div ref="companionsList" class="overflow-y-auto w-full relative scrollbar">
@@ -187,6 +188,7 @@
           :char="char"
           :with-image="!settings.allImg"
           :is-user-char="char.type === 'local'"
+          :char-likes="likes[char.u] || 0"
           :class="!settings.allImg ? 'h-[500px]' : ''"
           @edit-companion="editCompanion"
           @reportCompanion="reportCompanion"
@@ -211,7 +213,7 @@
 </template>
 
 <script lang="ts" setup>
-import { every, intersection, some, shuffle } from 'lodash-es'
+import { every, intersection, some, shuffle, throttle } from 'lodash-es'
 import { DBCharacter } from 'global'
 import { useStore } from '~/store/store'
 
@@ -220,9 +222,10 @@ import { waifuTags, useAllChars } from '~/data/constants'
 import { usePlayStore } from '~/store/play'
 import { useSettings } from '~/logic/searchSettings'
 import { useCompanionsLogic } from '~/logic/pagesLogic/companionsLogic'
+import { getLikesByUid } from '~/logic/auth/authLogic'
 
 const { startingWorld, favorites, settings, companionsUIDs, defenseRetinueDiscountAuto } = useStore()
-const { jumpChain } = usePlayStore()
+const { jumpChain, likes } = usePlayStore()
 const { minTier, maxTier, worldName, blockedWorlds } = useSettings()
 
 const search = ref('')
@@ -301,8 +304,8 @@ onMounted(async() => {
 })
 
 type tagKeys = keyof typeof waifuTags
-const tagsInclude = computed(() => Object.keys(tagToggles).filter(key => tagToggles[key] === 1) as tagKeys[])
-const tagsExclude = computed(() => Object.keys(tagToggles).filter(key => tagToggles[key] === -1) as tagKeys[])
+const tagsInclude = computed(() => Object.keys(tagToggles.value).filter(key => tagToggles.value[key] === 1) as tagKeys[])
+const tagsExclude = computed(() => Object.keys(tagToggles.value).filter(key => tagToggles.value[key] === -1) as tagKeys[])
 
 const blockedSet = computed(() => new Set(blockedWorlds.value))
 
@@ -416,6 +419,17 @@ const sortedResults = computed(() => {
 
 const slicedChars = computed(() => {
   return sortedResults.value.slice(position.value, position.value + limit.value)
+})
+
+async function getLikes() {
+  likes.value = await getLikesByUid(slicedChars.value.map(x => x.item.u))
+}
+
+const throttledLikes = throttle(getLikes, 200)
+
+watch(slicedChars, async() => {
+  if (slicedChars.value.length)
+    throttledLikes()
 })
 
 watch(sortedResults, () => {

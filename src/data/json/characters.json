@@ -1690,13 +1690,16 @@
     "u": 7461,
     "n": "Magus Sisters",
     "t": 7,
-    "i": "ffltns_magus_sisters.png",
-    "s": "https://vignette.wikia.nocookie.net/finalfantasy/images/6/65/FFLTnS_Magus_Sisters.png/revision/latest?cb=20150423113215",
+    "i": "[n]tXWKizD.jpg",
+    "s": "https://cdn.donmai.us/original/b0/77/__magus_sisters_mindy_magus_sandy_magus_and_cindy_magus_final_fantasy__b07701c8dc88f3299bc35487365f5a47.png",
     "w": "(Square) Final Fantasy",
     "b": [
       "F",
       "C",
-      "mi"
+      "lv",
+      "me",
+      "mi",
+      "cm"
     ],
     "d": "Final Fantasy (Summons)"
   },
@@ -21317,7 +21320,7 @@
   },
   {
     "u": 9709,
-    "n": "Minor Ayatsuki Mercury/Nine the Phantom",
+    "n": "Konoe Ayatsuki Mercury (Nine the Phantom)",
     "t": 9,
     "i": "[n]a72.jpg",
     "s": "https://i.kym-cdn.com/photos/images/facebook/001/276/176/a72.jpg",
@@ -25852,61 +25855,68 @@
     "u": 5570,
     "n": "Asahina Aoi",
     "t": 2,
-    "i": "criis_chan__2d7b423d2c75efb56a87ab7ef6133781.jpg",
-    "s": "https://danbooru.donmai.us/posts/4210259",
-    "w": "Danganronpa 1",
+    "i": "[n]JfXZZkY.jpg",
+    "s": "https://cdn.donmai.us/original/2d/7b/__asahina_aoi_danganronpa_and_1_more_drawn_by_criis_chan__2d7b423d2c75efb56a87ab7ef6133781.jpg",
+    "w": "Danganronpa",
     "b": [
       "F",
       "C"
-    ]
+    ],
+    "in": "https://tulip.paheal.net/_images/9d5b8f6bb220a94886092bd53620418b/5095562%20-%20Aoi_Asahina%20BadLavender%20Dangan_Ronpa.jpg",
+    "d": "Trigger Happy Havoc"
   },
   {
     "u": 5571,
     "n": "Celestia Ludenberg",
     "t": 2,
-    "i": "tip__sample_d88e19b0ab6684c45c77fb6d64120a47.jpg",
-    "s": "https://danbooru.donmai.us/posts/4095366",
-    "w": "Danganronpa 1",
+    "i": "[n]EEgcEtc.jpg",
+    "s": "https://cdn.donmai.us/sample/d8/8e/__celestia_ludenberg_danganronpa_and_1_more_drawn_by_ggatip__sample-d88e19b0ab6684c45c77fb6d64120a47.jpg",
+    "w": "Danganronpa",
     "b": [
       "F",
       "C"
-    ]
+    ],
+    "d": "Trigger Happy Havoc"
   },
   {
     "u": 5572,
     "n": "Kirigiri Kyouko",
     "t": 2,
-    "i": "criis_chan__edca473bee45ac090d81f2c1322a9cfb.png",
-    "s": "https://danbooru.donmai.us/posts/4218882",
-    "w": "Danganronpa 1",
+    "i": "[n]sofecCJ.jpg",
+    "s": "https://cdn.donmai.us/sample/af/68/__kirigiri_kyouko_danganronpa_and_1_more_drawn_by_onyang__sample-af68f1709fb19ebb594d411b982b80f4.jpg",
+    "w": "Danganronpa",
     "b": [
       "F",
       "C",
       "sc",
       "sd",
       "sl"
-    ]
+    ],
+    "in": "https://cdn.donmai.us/sample/4b/a5/__kirigiri_kyouko_danganronpa_and_1_more_drawn_by_mojimaru__sample-4ba5d44835c7b0790a763371061b7ee5.jpg",
+    "d": "Trigger Happy Havoc"
   },
   {
     "u": 5573,
     "n": "Maizono Sayaka",
     "t": 2,
-    "i": "sayaka_maizono_illustration.png",
-    "s": "https://vignette.wikia.nocookie.net/danganronpa/images/b/ba/Sayaka_Maizono_Illustration.png/revision/latest?cb=20170310000647",
-    "w": "Danganronpa 1",
+    "i": "[n]LYnfFrV.jpg",
+    "s": "https://cdn.donmai.us/original/8c/1b/__maizono_sayaka_danganronpa_and_1_more_drawn_by_raito47__8c1b3fa793bc0f61edd42ef5e5f9dbe0.jpg",
+    "w": "Danganronpa",
     "b": [
       "F",
       "C",
       "ar"
-    ]
+    ],
+    "in": "https://lotus.paheal.net/_images/840e17ffecbc41cce74da5a191957e16/2426053%20-%20Dangan_Ronpa%20Sayaka_Maizono%20akisora.jpg",
+    "d": "Trigger Happy Havoc"
   },
   {
     "u": 5574,
     "n": "Fukawa Touko",
     "t": 3,
-    "i": "hat_noir86__aebb99ec6eef5913b6cec8276f66faf6.jpg",
-    "s": "https://danbooru.donmai.us/posts/3255954",
-    "w": "Danganronpa 1",
+    "i": "[n]hUMgVvV.jpg",
+    "s": "https://cdn.donmai.us/sample/c3/e6/__fukawa_touko_danganronpa_and_1_more_drawn_by_0202ase__sample-c3e64f9c4f931182697098073fd7bc88.jpg",
+    "w": "Danganronpa",
     "b": [
       "F",
       "C",
@@ -25917,7 +25927,8 @@
       "is",
       "sh"
     ],
-    "in": "https://cdn.donmai.us/original/ce/ea/__fukawa_touko_danganronpa_and_1_more_drawn_by_afrobull__ceea690b0bf1ffb323b25269d59c3990.png"
+    "in": "https://cdn.donmai.us/original/ce/ea/__fukawa_touko_danganronpa_and_1_more_drawn_by_afrobull__ceea690b0bf1ffb323b25269d59c3990.png",
+    "d": "Trigger Happy Havoc"
   },
   {
     "u": 5575,
@@ -25925,7 +25936,7 @@
     "t": 3,
     "i": "[n]TSLPeNy.jpg",
     "s": "https://cdn.donmai.us/original/e9/c6/__ikusaba_mukuro_danganronpa_and_1_more_drawn_by_bibon_boileddangan__e9c6fd1bc7a00031d523021d32d8d535.jpg",
-    "w": "Danganronpa 1",
+    "w": "Danganronpa",
     "b": [
       "F",
       "C",
@@ -25935,15 +25946,17 @@
       "vn",
       "cm",
       "sh"
-    ]
+    ],
+    "in": "https://i.redd.it/e2dsm5ysqfk21.jpg",
+    "d": "Trigger Happy Havoc"
   },
   {
     "u": 5576,
     "n": "Enoshima Junko",
     "t": 4,
-    "i": "yumiyokiak__b4456ec60622cb7fd3286fe74df3773f.jpg",
-    "s": "https://danbooru.donmai.us/posts/4009526",
-    "w": "Danganronpa 1",
+    "i": "[n]pwRZFwq.jpg",
+    "s": "https://cdn.donmai.us/original/b4/45/__enoshima_junko_danganronpa_and_1_more_drawn_by_yumiyokiak__b4456ec60622cb7fd3286fe74df3773f.jpg",
+    "w": "Danganronpa",
     "b": [
       "F",
       "C",
@@ -25954,82 +25967,92 @@
       "sd",
       "gn",
       "is"
-    ]
+    ],
+    "in": "https://lotus.paheal.net/_images/abb8b3138d3aba7b646b14872e21f826/5120432%20-%20Dangan_Ronpa%20Junko_Enoshima%20PoeChan.png",
+    "d": "Trigger Happy Havoc"
   },
   {
     "u": 5577,
     "n": "Oogami Sakura",
     "t": 4,
-    "i": "_by_sakuyu__e94d6f5f87b5ecd7571b889311ebe21a.png",
-    "s": "https://danbooru.donmai.us/posts/3653140",
-    "w": "Danganronpa 1",
+    "i": "[n]PEtUlBS.jpg",
+    "s": "https://cdn.donmai.us/original/e9/4d/__oogami_sakura_danganronpa_and_1_more_drawn_by_sakuyu__e94d6f5f87b5ecd7571b889311ebe21a.png",
+    "w": "Danganronpa",
     "b": [
       "F",
       "C",
       "cm"
-    ]
+    ],
+    "in": "https://tulip.paheal.net/_images/dcff36644ae79ee4f376507e1d2eb1df/1158564%20-%20Dangan_Ronpa%20Sakura_Oogami.jpg",
+    "d": "Trigger Happy Havoc"
   },
   {
     "u": 5578,
     "n": "Koizumi Mahiru",
     "t": 2,
-    "i": "uyu__sample_3a9ae01ba78376b16d424c63492bcf82.jpg",
-    "s": "https://danbooru.donmai.us/posts/3432412",
-    "w": "Danganronpa 2",
+    "i": "[n]zKtNjvl.jpg",
+    "s": "https://cdn.donmai.us/sample/3a/9a/__koizumi_mahiru_danganronpa_and_1_more_drawn_by_sakuyu__sample-3a9ae01ba78376b16d424c63492bcf82.jpg",
+    "w": "Danganronpa",
     "b": [
       "F",
       "C"
     ],
-    "in": "https://cdn.donmai.us/sample/6b/b7/__koizumi_mahiru_danganronpa_and_1_more_drawn_by_afrobull__sample-6bb7dff59f3721a68d47d85118398613.jpg"
+    "in": "https://cdn.donmai.us/sample/6b/b7/__koizumi_mahiru_danganronpa_and_1_more_drawn_by_afrobull__sample-6bb7dff59f3721a68d47d85118398613.jpg",
+    "d": "Goodbye Despair"
   },
   {
     "u": 5579,
     "n": "Mioda Ibuki",
     "t": 2,
-    "i": "vat__sample_cc56213b1be6db5087ada794cae5f855.jpg",
-    "s": "https://danbooru.donmai.us/posts/4223279",
-    "w": "Danganronpa 2",
+    "i": "[n]aOjrFAw.jpg",
+    "s": "https://cdn.donmai.us/sample/cc/56/__mioda_ibuki_danganronpa_and_1_more_drawn_by_datcravat__sample-cc56213b1be6db5087ada794cae5f855.jpg",
+    "w": "Danganronpa",
     "b": [
       "F",
       "C",
       "ar"
-    ]
+    ],
+    "in": "https://tulip.paheal.net/_images/2f6198ba24672b3544d74be7831fbba2/5487039%20-%20Ibuki_Mioda%20Super_Dangan_Ronpa_2.png",
+    "d": "Goodbye Despair"
   },
   {
     "u": 5580,
     "n": "Nanami Chiaki",
     "t": 2,
-    "i": "uru__sample_53ecc3ea35dd79ef7ad89be4cd0b9d47.jpg",
-    "s": "https://danbooru.donmai.us/posts/4215326",
-    "w": "Danganronpa 2",
+    "i": "[n]MMlHOuv.jpg",
+    "s": "https://cdn.donmai.us/sample/b8/f4/__nanami_chiaki_monokuma_and_monomi_danganronpa_and_2_more_drawn_by_ranf__sample-b8f4a66e5c015d8bd7f1238f37fc37a2.jpg",
+    "w": "Danganronpa",
     "b": [
       "F",
       "C",
       "cl",
       "sd",
       "nd"
-    ]
+    ],
+    "in": "https://tulip.paheal.net/_images/61e025444fc1211c85a8b7f52104ed6a/3815564%20-%20Chiaki_Nanami%20Kinkymation%20Super_Dangan_Ronpa_2.png",
+    "d": "Goodbye Despair"
   },
   {
     "u": 5581,
     "n": "Saionji Hiyoko",
     "t": 2,
-    "i": "_by_sakuyu__995915bdcd891e81d008c000af73b810.png",
-    "s": "https://danbooru.donmai.us/posts/4039709",
-    "w": "Danganronpa 2",
+    "i": "[n]PudCVwb.jpg",
+    "s": "https://cdn.donmai.us/original/99/59/__saionji_hiyoko_danganronpa_and_1_more_drawn_by_sakuyu__995915bdcd891e81d008c000af73b810.png",
+    "w": "Danganronpa",
     "b": [
       "F",
       "C",
       "ar"
-    ]
+    ],
+    "d": "Goodbye Despair"
   },
   {
     "u": 5582,
     "n": "Sonia Nevermind",
     "t": 2,
-    "i": "_chan1moon__46b36153c952f01ee4ac5055ae25f9ac.png",
-    "s": "https://danbooru.donmai.us/posts/3791562",
-    "w": "Danganronpa 2",
+    "i": "[n]QagKGWP.jpg",
+    "s": "https://cdn.donmai.us/original/46/b3/__sonia_nevermind_danganronpa_and_1_more_drawn_by_chan1moon__46b36153c952f01ee4ac5055ae25f9ac.png",
+    "w": "Danganronpa",
     "b": [
       "F",
       "C",
@@ -26037,29 +26060,33 @@
       "sc",
       "sd",
       "pc"
-    ]
+    ],
+    "d": "Goodbye Despair"
   },
   {
     "u": 5583,
     "n": "Tsumiki Mikan",
     "t": 2,
-    "i": "uit__sample_3fb830bd7cd383bf3c32c68f54d82820.jpg",
-    "s": "https://danbooru.donmai.us/posts/4214332",
-    "w": "Danganronpa 2",
+    "i": "[n]lQkQkHQ.jpg",
+    "s": "https://cdn.donmai.us/sample/3f/b8/__tsumiki_mikan_danganronpa_and_1_more_drawn_by_takae_poupee_en_biscuit__sample-3fb830bd7cd383bf3c32c68f54d82820.jpg",
+    "w": "Danganronpa",
     "b": [
       "F",
       "C",
       "st",
       "ml",
-      "dc"
-    ]
+      "dc",
+      "ye"
+    ],
+    "in": "https://lotus.paheal.net/_images/f68926120dd2c59d93c019adfb1d1443/4463965%20-%20Dangan_Ronpa%20Mikan_Tsumiki%20QQQ%20Super_Dangan_Ronpa_2.png",
+    "d": "Goodbye Despair"
   },
   {
     "u": 5584,
     "n": "Pekoyama Peko",
     "t": 3,
-    "i": "_by_sakuyu__53906cf329e96893b2e597919b42d7f2.png",
-    "s": "https://danbooru.donmai.us/posts/4039708",
+    "i": "[n]qsdEKTb.jpg",
+    "s": "https://cdn.donmai.us/original/6b/d9/__pekoyama_peko_danganronpa_and_1_more_drawn_by_md_md_dr12__6bd96ff74ab5189dabe7da592702b05c.jpg",
     "w": "Danganronpa ",
     "b": [
       "F",
@@ -26067,44 +26094,51 @@
       "cl",
       "cm"
     ],
-    "in": "https://loveliveforever.com/wp-content/uploads/2022/04/50502040103202249.jpg",
+    "in": "https://tulip.paheal.net/_images/289fb610f700947318016b9556456f1a/4796309%20-%20Dangan_Ronpa%20Peko_Pekoyama%20Super_Dangan_Ronpa_2%20rojen.jpg",
     "d": "Goodbye Despair"
   },
   {
     "u": 5585,
     "n": "Owari Akane",
     "t": 4,
-    "i": "hat_noir86__f86bfa823d116b19579038f441a1e246.jpg",
-    "s": "https://danbooru.donmai.us/posts/1763737",
-    "w": "Danganronpa 2",
+    "i": "[n]mhWzewk.jpg",
+    "s": "https://cdn.donmai.us/sample/d3/04/__owari_akane_danganronpa_and_1_more_drawn_by_sema_vivaviva_02__sample-d3041bde19eea9f5cfb47e2845cf9ad6.jpg",
+    "w": "Danganronpa",
     "b": [
       "F",
-      "C"
-    ]
+      "C",
+      "cm"
+    ],
+    "in": "https://lotus.paheal.net/_images/9321c07365a80827b2899aec24f33a6e/5197681%20-%20Akane_Owari%20Dangan_Ronpa%20Super_Dangan_Ronpa_2%20brave_bengal.jpg",
+    "d": "Goodbye Despair"
   },
   {
     "u": 5586,
     "n": "Kuzuryuu Natsumi",
     "t": 1,
-    "i": "otomiracle__7aba16fc6f31be8d0634cc6a63a9010f.jpg",
-    "s": "https://danbooru.donmai.us/posts/2501162",
-    "w": "Danganronpa 3",
+    "i": "[n]FKkMVdN.jpg",
+    "s": "https://cdn.donmai.us/original/7a/ba/__kuzuryuu_natsumi_danganronpa_and_1_more_drawn_by_kotomiracle__7aba16fc6f31be8d0634cc6a63a9010f.jpg",
+    "w": "Danganronpa",
     "b": [
       "F",
       "C"
-    ]
+    ],
+    "in": "https://tulip.paheal.net/_images/2a20d4ab51f02df0f7e63332da89ac58/2775059%20-%20Dangan_Ronpa_3%3A_The_End_of_Hope%27s_Peak_Academy%20Natsumi_Kuzuryu%20edit.png",
+    "d": "Despair Arc"
   },
   {
     "u": 5587,
     "n": "Satou",
     "t": 1,
-    "i": "rumarumaru__331571241ce0f411583a67e362ced57e.png",
-    "s": "https://danbooru.donmai.us/posts/3510249",
-    "w": "Danganronpa 3",
+    "i": "[n]JpvgMHp.jpg",
+    "s": "https://cdn.donmai.us/original/33/15/__satou_danganronpa_and_1_more_drawn_by_yumaru_marumarumaru__331571241ce0f411583a67e362ced57e.png",
+    "w": "Danganronpa",
     "b": [
       "F",
       "C"
-    ]
+    ],
+    "in": "https://tulip.paheal.net/_images/f07dcc4446a62345eedaf7b822ab74f0/1965597%20-%20Dangan_Ronpa%20Dangan_Ronpa_3%3A_The_End_of_Hope%27s_Peak_Academy%20Sato.png",
+    "d": "Despair Arc"
   },
   {
     "u": 5588,
@@ -26112,7 +26146,7 @@
     "t": 2,
     "i": "sample_3dc8168f4855c7abcf96d2eeea38bf0a.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/5688721",
-    "w": "Danganronpa 3",
+    "w": "Danganronpa",
     "b": [
       "F",
       "C",
@@ -26120,33 +26154,38 @@
       "ps",
       "ip",
       "cf"
-    ]
+    ],
+    "in": "https://lotus.paheal.net/_images/f6c92312de50c6829eff28567e7ed6f6/1995296%20-%20Dangan_Ronpa_3%3A_The_End_of_Hope%27s_Peak_Academy%20Ruruka_Ando.jpg",
+    "d": "Future Arc"
   },
   {
     "u": 5589,
     "n": "Gekkogahara Miaya",
     "t": 2,
-    "i": "y_azami194__9a85532e7da122703b5ae75259be55e0.jpg",
-    "s": "https://danbooru.donmai.us/posts/2490037",
-    "w": "Danganronpa 3",
+    "i": "[n]rTmyWyq.jpg",
+    "s": "https://cdn.donmai.us/original/9a/85/__gekkougahara_miaya_danganronpa_and_1_more_drawn_by_azami194__9a85532e7da122703b5ae75259be55e0.jpg",
+    "w": "Danganronpa",
     "b": [
       "F",
       "C"
-    ]
+    ],
+    "d": "Future Arc"
   },
   {
     "u": 5590,
     "n": "Yukizome Chisa",
     "t": 2,
-    "i": "tti__sample_0632c8ceded62be218a8cad65c243977.jpg",
-    "s": "https://danbooru.donmai.us/posts/4003264",
-    "w": "Danganronpa 3",
+    "i": "[n]aWReCQB.jpg",
+    "s": "https://cdn.donmai.us/sample/06/32/__yukizome_chisa_danganronpa_and_1_more_drawn_by_sketti__sample-0632c8ceded62be218a8cad65c243977.jpg",
+    "w": "Danganronpa",
     "b": [
       "F",
       "C",
       "md",
       "tc"
-    ]
+    ],
+    "in": "https://cdn.donmai.us/sample/00/61/__yukizome_chisa_danganronpa_and_1_more_drawn_by_newovermind__sample-006138278fdb1330915ef6ffa25722ca.jpg",
+    "d": "Despair Arc"
   },
   {
     "u": 5591,
@@ -26154,146 +26193,167 @@
     "t": 4,
     "i": "_shiroichi__726fd35537d376dd0f3505de2c462053.png",
     "s": "https://danbooru.donmai.us/posts/2448327",
-    "w": "Danganronpa 3",
+    "w": "Danganronpa",
     "b": [
       "F",
       "C",
       "st",
       "dc"
-    ]
+    ],
+    "in": "https://i.imgur.com/QdQCKlT.png",
+    "d": "Future Arc"
   },
   {
     "u": 5592,
     "n": "Akamatsu Kaede",
     "t": 2,
-    "i": "npa__sample_3c3933aa5686c0e2cc58a3cfcd1ea6cf.jpg",
-    "s": "https://danbooru.donmai.us/posts/4197750",
-    "w": "Danganronpa V3",
+    "i": "[n]zYAYEck.jpg",
+    "s": "https://cdn.donmai.us/sample/3c/39/__akamatsu_kaede_danganronpa_and_1_more_drawn_by_deki_dekiebi__sample-3c3933aa5686c0e2cc58a3cfcd1ea6cf.jpg",
+    "w": "Danganronpa",
     "b": [
       "F",
-      "C"
+      "C",
+      "ar"
     ],
-    "in": "https://pictures.hentai-foundry.com/m/MinaCream/883053/MinaCream-883053-691_Kaede_Akamatsu_Danganronpa.jpg"
+    "in": "https://pictures.hentai-foundry.com/m/MinaCream/883053/MinaCream-883053-691_Kaede_Akamatsu_Danganronpa.jpg",
+    "d": "V3"
   },
   {
     "u": 5593,
     "n": "Toujou Kirumi",
     "t": 2,
-    "i": "rez__sample_743f4c09ddddd871ae4b717924c291dd.jpg",
-    "s": "https://danbooru.donmai.us/posts/3554757",
-    "w": "Danganronpa V3",
+    "i": "[n]xWKmLxC.jpg",
+    "s": "https://cdn.donmai.us/sample/74/3f/__toujou_kirumi_danganronpa_and_1_more_drawn_by_stratozpherez__sample-743f4c09ddddd871ae4b717924c291dd.jpg",
+    "w": "Danganronpa",
     "b": [
       "F",
       "C",
       "cl",
       "md",
       "sd"
-    ]
+    ],
+    "in": "https://tulip.paheal.net/_images/471b45f9f496c7072ecd2cad7441e256/2162118%20-%20Kirumi_Tojo%20New_Danganronpa_V3%3A_Everyone%27s_New_Semester_of_Killing%20akisora.jpg",
+    "d": "V3"
   },
   {
     "u": 5594,
     "n": "Yonaga Angie",
     "t": 2,
-    "i": "hat_noir86__9daea34a482f2e5e04195fb8301790f4.png",
-    "s": "https://danbooru.donmai.us/posts/3615188",
-    "w": "Danganronpa V3",
+    "i": "[n]KqMcGim.jpg",
+    "s": "https://cdn.donmai.us/original/9d/ae/__yonaga_angie_danganronpa_and_1_more_drawn_by_z_epto_chat_noir86__9daea34a482f2e5e04195fb8301790f4.png",
+    "w": "Danganronpa",
     "b": [
       "F",
       "C",
       "sl",
       "rl",
       "ar"
-    ]
+    ],
+    "in": "https://tulip.paheal.net/_images/a33ec72429deea224078775c7f9e582b/3953064%20-%20Angie_Yonaga%20FailureOfASavior%20New_Danganronpa_V3%3A_Everyone%27s_New_Semester_of_Killing.png",
+    "d": "V3"
   },
   {
     "u": 5595,
     "n": "Yumeno Himiko",
     "t": 2,
-    "i": "_dalrye_v3__6fd4fb1e2d9dcd31b65c18583b5868de.png",
-    "s": "https://danbooru.donmai.us/posts/4182716",
-    "w": "Danganronpa V3",
+    "i": "[n]fMYSyCs.jpg",
+    "s": "https://cdn.donmai.us/original/6f/d4/__yumeno_himiko_danganronpa_and_1_more_drawn_by_dalrye_v3__6fd4fb1e2d9dcd31b65c18583b5868de.png",
+    "w": "Danganronpa",
     "b": [
       "F",
       "C"
-    ]
+    ],
+    "d": "V3"
   },
   {
     "u": 5596,
     "n": "Chabashira Tenko",
     "t": 3,
-    "i": "uyu__sample_bcc304fa847b6c9297ceb7eecb636d23.jpg",
-    "s": "https://danbooru.donmai.us/posts/4039739",
-    "w": "Danganronpa V3",
+    "i": "[n]cZCftHY.jpg",
+    "s": "https://cdn.donmai.us/sample/bc/c3/__chabashira_tenko_danganronpa_and_1_more_drawn_by_sakuyu__sample-bcc304fa847b6c9297ceb7eecb636d23.jpg",
+    "w": "Danganronpa",
     "b": [
       "F",
       "C",
       "cm"
-    ]
+    ],
+    "in": "https://lotus.paheal.net/_images/4b5eeaa7c4b7f411b8285780a823f123/2370736%20-%20New_Danganronpa_V3%3A_Everyone%27s_New_Semester_of_Killing%20Tenko_Chabashira.jpg",
+    "d": "V3"
   },
   {
     "u": 5597,
     "n": "Harukawa Maki",
     "t": 3,
-    "i": "criis_chan__d59034c933ec740d1e7280601d340b7d.png",
-    "s": "https://danbooru.donmai.us/posts/4220291",
-    "w": "Danganronpa V3",
+    "i": "[n]QOhqGOa.jpg",
+    "s": "https://cdn.donmai.us/original/d5/90/__harukawa_maki_danganronpa_and_1_more_drawn_by_criis_chan__d59034c933ec740d1e7280601d340b7d.png",
+    "w": "Danganronpa",
     "b": [
       "F",
       "C",
       "cm",
       "sh"
-    ]
+    ],
+    "in": "https://lotus.paheal.net/_images/d7c9a2cd2b75587d41ba5d57af105aa5/2114142%20-%20Maki_Harukawa%20New_Danganronpa_V3%3A_Everyone%27s_New_Semester_of_Killing.jpg",
+    "d": "V3"
   },
   {
     "u": 5598,
     "n": "Iruma Miu",
     "t": 3,
-    "i": "agi__sample_603f9c3f4577d9273041b2c9328c08fd.jpg",
-    "s": "https://danbooru.donmai.us/posts/3459544",
-    "w": "Danganronpa V3",
+    "i": "[n]NMIauri.jpg",
+    "s": "https://cdn.donmai.us/sample/60/3f/__iruma_miu_danganronpa_and_1_more_drawn_by_toosaka_asagi__sample-603f9c3f4577d9273041b2c9328c08fd.jpg",
+    "w": "Danganronpa",
     "b": [
       "F",
       "C",
       "en",
       "gn"
     ],
-    "in": "https://cdn.donmai.us/sample/42/5b/__iruma_miu_danganronpa_and_1_more_drawn_by_afrobull__sample-425bbf53ba49ad2007c8f5432a340d08.jpg"
+    "in": "https://cdn.donmai.us/sample/42/5b/__iruma_miu_danganronpa_and_1_more_drawn_by_afrobull__sample-425bbf53ba49ad2007c8f5432a340d08.jpg",
+    "d": "V3"
   },
   {
     "u": 5599,
     "n": "Shirogane Tsumugi",
     "t": 4,
-    "i": "hat_noir86__af50d6aa4c8f1a9500fc8322d0535c3e.png",
-    "s": "https://danbooru.donmai.us/posts/3333888",
-    "w": "Danganronpa V3",
+    "i": "[n]YnCyIsm.jpg",
+    "s": "https://cdn.donmai.us/original/af/50/__shirogane_tsumugi_danganronpa_and_1_more_drawn_by_z_epto_chat_noir86__af50d6aa4c8f1a9500fc8322d0535c3e.png",
+    "w": "Danganronpa",
     "b": [
       "F",
       "C"
-    ]
+    ],
+    "d": "V3"
   },
   {
     "u": 5600,
     "n": "Hagakure Hiroko",
     "t": 1,
-    "i": "hat_noir86__03a93abb07686d59356dd444a6dcae88.jpg",
-    "s": "https://danbooru.donmai.us/posts/2360680",
-    "w": "Danganronpa: Ultra Despair Girls",
+    "i": "[n]tJeElXN.jpg",
+    "s": "https://cdn.donmai.us/original/03/a9/__hagakure_hiroko_danganronpa_and_1_more_drawn_by_z_epto_chat_noir86__03a93abb07686d59356dd444a6dcae88.jpg",
+    "w": "Danganronpa",
     "b": [
       "F",
-      "C"
-    ]
+      "C",
+      "MILF"
+    ],
+    "in": "https://tulip.paheal.net/_images/5cfb4e8abdac09521329ce706b5df9d2/1451824%20-%20Dangan_Ronpa_Another_Episode%20Hiroko_Hagakure.jpg",
+    "d": "Ultra Despair Girls"
   },
   {
     "u": 5601,
     "n": "Naegi Komaru",
     "t": 1,
-    "i": "a_butsugen__11f165a9716b286014680ecaa79d2aa9.jpg",
-    "s": "https://danbooru.donmai.us/posts/1947382",
-    "w": "Danganronpa: Ultra Despair Girls",
+    "i": "[n]YZsUVPh.jpg",
+    "s": "https://cdn.donmai.us/original/11/f1/__naegi_komaru_danganronpa_and_1_more_drawn_by_gaa_butsugen__11f165a9716b286014680ecaa79d2aa9.jpg",
+    "w": "Danganronpa",
     "b": [
       "F",
-      "C"
-    ]
+      "C",
+      "pr"
+    ],
+    "in": "https://tulip.paheal.net/_images/c73a44ff500a48279194a0a17a8e8d32/3670377%20-%2027Lsd%20Dangan_Ronpa_Another_Episode%20Komaru_Naegi.png",
+    "d": "Ultra Despair Girls"
   },
   {
     "u": 5716,
@@ -30114,9 +30174,13 @@
     "w": "DC (Gotham)",
     "b": [
       "M",
+      "P",
       "st",
+      "cl",
       "ev",
       "gn",
+      "sa",
+      "cm",
       "is"
     ]
   },
@@ -30479,11 +30543,13 @@
       "F",
       "C",
       "st",
+      "hz",
       "cl",
       "ps",
       "sc",
       "ip",
       "sl",
+      "sp",
       "pc",
       "az",
       "de",
@@ -45151,12 +45217,13 @@
     "u": 10324,
     "n": "Bonnie Swanson",
     "t": 1,
-    "i": "9ea9b34fdb5e9d8e72d5991173bdc916.png",
-    "s": "https://chan.sankakucomplex.com/post/show/6881532",
+    "i": "[n]WFGAiSt.jpg",
+    "s": "https://cdn.imgchest.com/files/pyvdcn8mbyk.png",
     "w": "Family Guy",
     "b": [
       "F"
-    ]
+    ],
+    "in": "https://tulip.paheal.net/_images/70037960255207c9323e1970dfb28cbc/2755407%20-%20Bonnie_Swanson%20Family_Guy%20Tovio_Rogers.jpg"
   },
   {
     "u": 10325,
@@ -46112,7 +46179,11 @@
     "w": "Nasuverse",
     "b": [
       "F",
-      "C"
+      "C",
+      "sc",
+      "th",
+      "me",
+      "cc"
     ],
     "d": "Fate/ (Mainline)"
   },
@@ -52791,7 +52862,14 @@
     "w": "Genshin Impact",
     "b": [
       "F",
-      "C"
+      "C",
+      "cl",
+      "sc",
+      "sl",
+      "pc",
+      "ar",
+      "sa",
+      "cm"
     ],
     "d": "Inazuma"
   },
@@ -68430,8 +68508,8 @@
     "u": 371,
     "n": "Hisoka",
     "t": 6,
-    "i": "nonlee_r63_hisoka_hunter_x_hunter_5782345.png",
-    "s": "http://img10.reactor.cc/pics/post/NonLee-r63-Hisoka-Hunter-X-Hunter-5782345.png",
+    "i": "https://i.imgur.com/y1wDHo7l.png",
+    "s": "https://i.imgur.com/y1wDHo7.png",
     "w": "Hunter x Hunter",
     "b": [
       "M"
@@ -77522,9 +77600,16 @@
     "w": "League of Legends",
     "b": [
       "M",
+      "ml",
+      "ps",
+      "bj",
+      "dr",
+      "ip",
+      "bk",
       "th",
       "me",
       "vp",
+      "rg",
       "im"
     ],
     "in": "https://cdn.donmai.us/original/b2/68/__vladimir_league_of_legends_drawn_by_mukka__b268b2950cbf49f88ae9369d69a03fc7.jpg"
@@ -89149,7 +89234,7 @@
   },
   {
     "u": 5286,
-    "n": "Animax",
+    "n": "Blake Schiel / Animax",
     "t": 6,
     "i": "blake_schiel_from_uncanny_x_men_vol_3_35_001.jpg",
     "s": "https://vignette.wikia.nocookie.net/marveldatabase/images/8/8a/Blake_Schiel_from_Uncanny_X-Men_Vol_3_35_001.jpg/revision/latest/top-crop/width/360/height/450?cb=20150906211449",
@@ -89860,16 +89945,17 @@
     "b": [
       "F",
       "P",
-      "hl",
       "mt",
-      "im",
-      "sc",
-      "mu",
       "ps",
-      "ev",
+      "sc",
       "mo",
       "py",
-      "sl"
+      "sl",
+      "hl",
+      "mu",
+      "ev",
+      "rw",
+      "im"
     ]
   },
   {
@@ -91118,7 +91204,14 @@
     "w": "Medaka Box",
     "b": [
       "F",
-      "C"
+      "C",
+      "st",
+      "py",
+      "en",
+      "sn",
+      "sd",
+      "gn",
+      "cm"
     ]
   },
   {
@@ -102721,6 +102814,9 @@
     "b": [
       "F",
       "C",
+      "pl",
+      "di",
+      "dn",
       "nj"
     ],
     "in": "https://i.redd.it/mki5jl0de2g21.jpg"
@@ -103684,7 +103780,8 @@
       "sl",
       "fn",
       "lm",
-      "tp"
+      "tp",
+      "ir"
     ],
     "d": "Servants - Rider",
     "in": "http://pictures.hentai-foundry.com/b/BDOne/905848/BDOne-905848-April_Poll_Winner_Astolfo.jpg"
@@ -103696,7 +103793,8 @@
     "i": "[n]ArchanStage3.png",
     "w": "Nasuverse",
     "b": [
-      "M"
+      "M",
+      "ir"
     ],
     "s": "https://static.wikia.nocookie.net/typemoon/images/b/b6/ArcherA%C5%9Bvatth%C4%81manStage3.png",
     "d": "Servants - Archer"
@@ -103714,9 +103812,10 @@
       "dr",
       "sc",
       "fm",
-      "lm",
       "sl",
-      "fn"
+      "fn",
+      "lm",
+      "ir"
     ],
     "d": "Servants - Saber"
   },
@@ -107996,8 +108095,8 @@
     "u": 6720,
     "n": "Charlotte Smoothie",
     "t": 6,
-    "i": "[n]tYVOrUr.jpg",
-    "s": "https://i.redd.it/uz5tza7w6v251.jpg",
+    "i": "https://i.imgur.com/8eq3Ht4l.jpg",
+    "s": "https://i.imgur.com/8eq3Ht4.jpg",
     "w": "One Piece",
     "b": [
       "F",
@@ -108641,7 +108740,8 @@
     "w": "Oregairu",
     "b": [
       "F",
-      "C"
+      "C",
+      "sd"
     ]
   },
   {
@@ -109283,8 +109383,10 @@
     "w": "Overlord (LN)",
     "b": [
       "F",
+      "ps",
       "dr",
       "sc",
+      "ip",
       "lv",
       "me",
       "vp",
@@ -111882,7 +111984,10 @@
     "s": "https://danbooru.donmai.us/posts/4016704",
     "w": "Pokemon",
     "b": [
-      "F"
+      "F",
+      "mt",
+      "cl",
+      "mo"
     ]
   },
   {
@@ -112006,7 +112111,10 @@
     "w": "Pokemon",
     "b": [
       "F",
-      "C"
+      "C",
+      "mt",
+      "cl",
+      "mo"
     ],
     "d": "4/Sinnoh"
   },
@@ -113220,18 +113328,6 @@
     ]
   },
   {
-    "u": 13969,
-    "n": "Tsuwabuki Daigo",
-    "t": 1,
-    "i": "ab43e18bf16aa90dcdee3c97ca23ca7b.jpg",
-    "s": "https://chan.sankakucomplex.com/post/show/4632473",
-    "w": "Pokemon",
-    "d": "3/Hoenn",
-    "b": [
-      "F"
-    ]
-  },
-  {
     "u": 13970,
     "n": "Cilan, Chili and Cress",
     "t": 5,
@@ -113301,18 +113397,6 @@
     "t": 2,
     "i": "sample_4d82d553f397ca97958c4ebd1827a9a6.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/18965280",
-    "w": "Pokemon",
-    "d": "8/Galar",
-    "b": [
-      "F"
-    ]
-  },
-  {
-    "u": 13977,
-    "n": "Yarrow",
-    "t": 2,
-    "i": "sample_86b3e77b545fa4039898570147728034.jpg",
-    "s": "https://chan.sankakucomplex.com/post/show/18717006",
     "w": "Pokemon",
     "d": "8/Galar",
     "b": [
@@ -115786,12 +115870,14 @@
     "i": "[n]NAZIPKy.jpg",
     "w": "Pokemon Expansion",
     "b": [
-      "F",
+      "O",
       "mr",
-      "cm"
+      "cm",
+      "ge"
     ],
     "s": "https://cdn.discordapp.com/attachments/1010632867639996469/1013107715544989766/unknown.png",
-    "in": "https://cdn.discordapp.com/attachments/1010632867639996469/1013105754410074132/SPOILER_unknown.png"
+    "in": "https://cdn.discordapp.com/attachments/1010632867639996469/1013105754410074132/SPOILER_unknown.png",
+    "d": "5/Unova"
   },
   {
     "u": 13233,
@@ -118923,8 +119009,11 @@
     "w": "Queen's Blade",
     "b": [
       "F",
+      "hr",
+      "sl",
       "cc",
       "cm",
+      "os",
       "MILF"
     ]
   },
@@ -120329,6 +120418,7 @@
       "F",
       "C",
       "cr",
+      "sl",
       "rw",
       "gi"
     ],
@@ -123490,13 +123580,12 @@
       "hr",
       "cl",
       "sd",
-      "me",
       "pr",
       "cm",
       "te",
       "fa"
     ],
-    "in": "https://i.imgur.com/4DWbQVs.jpg"
+    "in": "https://i.imgur.com/lFPBPLn.png"
   },
   {
     "u": 9595,
@@ -128270,6 +128359,7 @@
     "b": [
       "F",
       "C",
+      "st",
       "dr",
       "sc",
       "fm",
@@ -128278,7 +128368,8 @@
       "dh",
       "me",
       "de",
-      "sr"
+      "sr",
+      "cm"
     ],
     "in": "https://cdn.discordapp.com/attachments/1010632867639996469/1013882304206209024/unknown.png"
   },
@@ -129527,7 +129618,18 @@
     "s": "https://danbooru.donmai.us/posts/4186217?q=voyager_%28fate%29+",
     "w": "Nasuverse",
     "b": [
-      "M"
+      "M",
+      "hz",
+      "cl",
+      "dr",
+      "ur",
+      "sc",
+      "fm",
+      "cm",
+      "rw",
+      "ir",
+      "sh",
+      "sg"
     ],
     "d": "Servants - Foreigner"
   },
@@ -132363,8 +132465,8 @@
     "u": 4989,
     "n": "Layla Williams",
     "t": 5,
-    "i": "[n]MEAGW27_o.png",
-    "s": "https://images4.imagebam.com/0b/7a/6b/MEAGW27_o.png",
+    "i": "https://i.imgur.com/FUkAZwLl.jpg",
+    "s": "https://i.imgur.com/FUkAZwL.jpg",
     "w": "Disney",
     "b": [
       "F",
@@ -140765,7 +140867,8 @@
     "s": "https://e621.net/posts/886837",
     "w": "The Amazing World of Gumball",
     "b": [
-      "F"
+      "F",
+      "cm"
     ]
   },
   {
@@ -140776,7 +140879,8 @@
     "s": "https://e621.net/post/show/702273",
     "w": "The Amazing World of Gumball",
     "b": [
-      "F"
+      "F",
+      "sr"
     ]
   },
   {
@@ -141867,7 +141971,11 @@
     "b": [
       "F",
       "C",
-      "al"
+      "en",
+      "cc",
+      "al",
+      "nd",
+      "ha"
     ]
   },
   {
@@ -150296,14 +150404,24 @@
     "u": 8759,
     "n": "Arcanist Valtrois",
     "t": 6,
-    "i": "angeline_roussel_valtrois_small.jpg",
-    "s": "https://cdna.artstation.com/p/assets/images/images/009/618/726/large/angeline-roussel-valtrois-small.jpg?1519964700",
+    "i": "[n]wuEntqL.jpg",
+    "s": "https://cdna.artstation.com/p/assets/images/images/009/618/726/large/angeline-roussel-valtrois-small.jpg",
     "w": "Warcraft",
     "b": [
       "F",
       "C",
-      "el",
-      "me"
+      "cl",
+      "ml",
+      "bj",
+      "dr",
+      "pl",
+      "sc",
+      "di",
+      "tm",
+      "dn",
+      "tn",
+      "me",
+      "el"
     ],
     "d": "Azeroth"
   },

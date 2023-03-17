@@ -1,11 +1,7 @@
 
 import { DBWorld } from 'global'
-import { useChargenStore } from './chargen'
-
-const { startingWorld } = useChargenStore()
 
 const jumpChain = useStorage<DBWorld[]>('jumpChain', [])
-const currentWorld = useStorage('currentWorld', startingWorld.value)
 const rdnWorld = useStorage<any[]>('rdnWorld', [])
 
 interface Loan {
@@ -66,10 +62,11 @@ interface MissionsReward {
 
 const missionRewards = useStorage<MissionsReward>('missionRewards', {})
 
+const likes = ref<Record<number, number>>({})
+
 export function usePlayStore() {
   return {
     jumpChain,
-    currentWorld,
     rdnWorld,
     loan,
     trHistory,
@@ -84,5 +81,6 @@ export function usePlayStore() {
     manualDevotees,
     gachaSettings,
     missionRewards,
+    likes,
   }
 }

@@ -9,7 +9,6 @@ export const [showFilterTags, toggleShowFilterTags] = useToggle()
 export const [showAddPerk, toggleShowAddPerk] = useToggle()
 export const [showAddWaifuPerk, toggleShowAddWaifuPerk] = useToggle()
 export const [showAddMission, toggleShowAddMission] = useToggle()
-export const [isSupport, toggleSupport] = useToggle(false)
 export const [isRetinueEdit, toggleRetinueEdit] = useToggle(false)
 export const [showSettings, toggleShowSettings] = useToggle(false)
 export const [showReport, toggleShowReport] = useToggle(false)
@@ -34,8 +33,6 @@ export const [visible, toggleFull] = useToggle()
 export const blackWhite = useStorage('blackWhite', false)
 export const blackWhiteDisabled = useStorage('blackWhiteDisabled', false)
 
-export const promoteShown = useStorage('pr', false)
-
 export const [appMode, toggleAppMode] = useToggle()
 export const orientation = useStorage('ot', false)
 export const buildLayout = useStorage('buildLayout', false)
@@ -44,7 +41,7 @@ export const activeTab = ref(0)
 export const andOr = ref(false)
 export const showDefenseTags = ref(false)
 
-export const tagToggles = reactive({})
+export const tagToggles = useStorage('tagToggles', {})
 
 export function threeToggle(val: number) {
   switch (val) {

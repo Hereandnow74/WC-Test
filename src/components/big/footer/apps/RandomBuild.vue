@@ -11,8 +11,8 @@
 </template>
 
 <script lang="ts" setup>
-import { findIndex, random, sample } from 'lodash'
-import { clamp } from 'lodash-es'
+import { findIndex, random, sample, clamp } from 'lodash-es'
+
 import {
   activeTab, bindingAvailable, chooseBinding, chooseDefense, chooseGenericPerk, chooseHeritage, chooseHome, chooseLure, chooseOther, choosePerk, chooseRide, chooseTalent, chooseWaifuPerk, clearAll, defenseAvailable, genericAvailable, heritageAvailable, homeAvailable, lureAvailable, miscAvailable, randomChar,
   rideAvailable, specificAvailable, talentAvailable,

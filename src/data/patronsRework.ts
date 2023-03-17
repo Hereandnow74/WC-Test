@@ -1,6 +1,5 @@
-import { useStore } from '~/store/store'
-import { useGlobalSettings } from '~/store/settings'
-// import { buyAnyPerk, removeAnyPerk } from '~/logic'
+import { useStore } from '../store/store'
+import { useGlobalSettings } from '../store/settings'
 
 export const patronIntro = `
 So you wish to have a Patron do you? Patrons typically demand a bit more personal effort from you then the company does. For some, it's not always worth the benefits they give out. Few Contractors appreciate how hands off the company is till their Patron demands entertainment they no longer wish to provide. 

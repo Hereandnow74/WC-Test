@@ -3330,11 +3330,6 @@
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/994978147776856114/D-and-D-cartoon.jpg"
   },
   {
-    "worldName": "Granblue Fantasy",
-    "rating": 6,
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992403648493670432/Cygames-annonce-Granblue-Fantasy-Relink-pour-PC-sortie-mondiale-2022.jpg"
-  },
-  {
     "worldName": "Koihime†Musō",
     "rating": 5,
     "image": "https://cdn.donmai.us/sample/2a/ff/__kan_u_chouun_shokatsuryou_chouhi_bachou_and_1_more_koihime_musou_drawn_by_ooshima_miwa__sample-2aff615b5d8bcce1b72ed2ee09d75160.jpg"
@@ -5683,5 +5678,7 @@
   {"worldName":"NieR","rating":7,"image":"https://twinfinite.net/wp-content/uploads/2021/04/nier-replicant-cover-8.jpg","condition":[{"name":"Pre-3300s, Post-2053","rating":8},{"name":"Post-Game Era","rating":6},{"name":"2003-2053","rating":5}]},
   {"worldName":"Shadow of the Colossus","rating":5,"image":"https://i.imgur.com/I7V8Rcml.jpg","additional":"You would need both [Corruption Defense] and [Soul Defense] to protect yourself from the Curse after slaying a Collossus."},
   {"worldName":"The Devil Is a Part-Timer!","rating":4,"image":"https://www.animenewsnetwork.com/hotlink/thumbnails/crop1200x630gB7/cms/news.5/180550/maousama2_kv2.jpg","condition":[{"rating":6,"name":"Ente Isla"}]},
-  {"worldName":"Our Last Crusade or the Rise of a New World","rating":4,"image":"https://i.imgur.com/siHHPZW.jpg"}
+  {"worldName":"Our Last Crusade or the Rise of a New World","rating":4,"image":"https://i.imgur.com/siHHPZW.jpg"},
+  {"worldName":"Control","rating":6,"image":"https://images.hdqwalls.com/wallpapers/control-b4.jpg"},
+  {"worldName":"counter:side","rating":7,"image":"https://www.droidgamers.com/wp-content/uploads/2022/08/F6B5AB38-09E9-47AA-A941-F2F0B24C4391.jpeg"}
 ]

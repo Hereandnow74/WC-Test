@@ -17,7 +17,10 @@
 </template>
 
 <script lang='ts' setup>
-import { user, verifyEmail } from '~/logic/auth/authLogic'
+import { verifyEmail } from '~/logic/auth/authLogic'
+import { useUser } from '~/store/user'
+
+const { user } = useUser()
 
 const statusCode = ref(0)
 const token = ref('')

@@ -18,8 +18,7 @@
 
 <script lang='ts' setup>
 import type { PropType } from 'vue'
-import { World } from '~/store/chargen'
-import { usePlayStore } from '~/store/play'
+import { useChargenStore, World } from '~/store/chargen'
 
 const props = defineProps({
   world: {
@@ -28,7 +27,7 @@ const props = defineProps({
   },
 })
 
-const { currentWorld } = usePlayStore()
+const { currentWorld } = useChargenStore()
 
 function chooseWorld() {
   const world = { worldName: props.world.worldName, rating: props.world.rating }

@@ -1,5 +1,5 @@
 import Fuse from 'fuse.js'
-import { useAllChars } from '~/data/constants'
+import { useAllChars } from '../../data/constants'
 
 const { allCharsComp: allChars } = useAllChars()
 

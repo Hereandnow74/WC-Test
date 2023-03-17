@@ -1,5 +1,5 @@
+import { useStore } from '../store/store'
 import { WORLD_RATINGS } from './constants'
-import { useStore } from '~/store/store'
 
 const { baseBudget, startingWorld, manualKf, manualSellKf } = useStore()
 

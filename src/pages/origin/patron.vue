@@ -37,7 +37,7 @@
 </template>
 
 <script lang='ts' setup>
-import { findIndex } from 'lodash'
+import { findIndex } from 'lodash-es'
 
 import { useTooltips } from '~/logic/misc'
 import { useStore } from '~/store/store'

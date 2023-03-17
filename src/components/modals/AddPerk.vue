@@ -66,7 +66,7 @@ import * as zod from 'zod'
 import { useForm, useField } from 'vee-validate'
 import { toFormValidator } from '@vee-validate/zod'
 
-import { findIndex } from 'lodash'
+import { findIndex } from 'lodash-es'
 import { proposePerk, randomString, showAddPerk, togglePerksManager, showPerksManager } from '~/logic'
 import { ALL_PERK_TITLES } from '~/data/constants'
 import { localPerks } from '~/logic/localPerks'

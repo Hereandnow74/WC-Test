@@ -99,7 +99,7 @@
 
 <script lang="ts" setup>
 import Fuse from 'fuse.js'
-import { isArray, some } from 'lodash'
+import { isArray, some } from 'lodash-es'
 import { useStore } from '~/store/store'
 import { toggleShowAddWorld, showAddWorld, threeToggle } from '~/logic'
 import { useWorlds } from '~/data/constants'

@@ -178,7 +178,7 @@
 
 <script lang="ts" setup>
 import type { PropType } from '@vue/runtime-core'
-import { findIndex, isNumber } from 'lodash'
+import { findIndex, isNumber } from 'lodash-es'
 import TextArea from '../basic/TextArea.vue'
 import { CHAR_COSTS, CHAR_COSTS_TICKET, useAllChars, waifusThatHasPerk, waifuTags } from '~/data/constants'
 import { waifuPerksObject } from '~/data/waifu_perks'

@@ -1,4 +1,4 @@
-import { GoogleAuthProvider, getAuth, signInWithPopup, Auth } from 'firebase/auth'
+import { GoogleAuthProvider, getAuth, signInWithPopup } from 'firebase/auth'
 import { initializeApp } from 'firebase/app'
 import { getFirestore, collection, addDoc, doc, getDoc, runTransaction, query, where, getDocs, orderBy, limit, startAt, endAt, startAfter, deleteDoc } from 'firebase/firestore/lite'
 

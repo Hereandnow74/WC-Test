@@ -164,3 +164,10 @@ select:invalid { color: rgb(134, 133, 133); }
   break-inside: avoid-column;
   page-break-inside: avoid;
 }
+
+/* Side menu animation style */
+.transition-width {
+  transition-property: max-width;
+  @apply ease-in-out;
+  @apply duration-150;
+}

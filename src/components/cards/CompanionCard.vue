@@ -12,6 +12,16 @@
           :alt="charData.name"
         >
         <div v-else class="h-16"></div>
+        <div class="absolute top-1 left-1 cursor-pointer flex items-center gap-1 text-lg leading-none" @click="likeChar">
+          <span class="text-red-500 flex items-center gap-0.5">
+            <span v-if="charLikes" class="font-semibold">{{ charLikes }}</span>
+            <ci:heart-fill
+              v-if="favoritesObject[charData.uid] !== undefined"
+              class="hover:(text-gray-300 bg-gray-600)"
+            />
+            <ci:heart-outline v-else class="hover:(text-pink-300 bg-pink-600)" />
+          </span>
+        </div>
         <icon-park-outline:full-screen-one
           class="text-light-400  absolute top-1 right-1 hover:text-blue-400 cursor-pointer mix-blend-difference"
           @click="() => (showModal = true, modalImage=(nsfw ? charData.image_nsfw || image : charData.sourceImage || image))"
@@ -154,15 +164,6 @@
                 <fluent:delete-20-filled />
                 Delete
               </div>
-              <div class="hover:(text-gray-300 bg-gray-600) cursor-pointer flex items-center gap-1" @click="favoritesObject[charData.uid] !== undefined ? favorites.splice(favorites.indexOf(charData.uid), 1) : favorites.push(charData.uid)">
-                <span class="text-red-500" title="Add to Favorites">
-                  <ci:heart-fill
-                    v-if="favoritesObject[charData.uid] !== undefined"
-                  />
-                  <ci:heart-outline v-else />
-                </span>
-                Favorite
-              </div>
             </div>
           </div>
         </h4>
@@ -221,10 +222,13 @@ import type { PropType } from '@vue/runtime-core'
 import { Character, DBCharacter } from 'global'
 import { findIndex, intersection, random } from 'lodash-es'
 import { CHAR_COSTS, defTags, PLACEHOLDER_NO_IMAGE, useAllChars, waifusThatHasPerk, waifuTags, nicknames, CHAR_COSTS_TICKET } from '~/data/constants'
-import { lazyLoadSingleImg, tagToggles, showDefenseTags, imageLink } from '~/logic'
+import { lazyLoadSingleImg, tagToggles, showDefenseTags, imageLink, userCharactersShown } from '~/logic'
+import { updateLikesForUser } from '~/logic/auth/authLogic'
 import { buyCompanion, captureCompanion, yoinkCompanion, slightlyCompanion } from '~/logic/waifuLogic'
+import { usePlayStore } from '~/store/play'
 import { useGlobalSettings } from '~/store/settings'
 import { useStore } from '~/store/store'
+import { useUser } from '~/store/user'
 
 const props = defineProps({
   char: {
@@ -255,6 +259,10 @@ const props = defineProps({
     type: String,
     default: 'text-lg',
   },
+  charLikes: {
+    type: Number,
+    default: 0,
+  },
 })
 
 const {
@@ -262,8 +270,9 @@ const {
   settings, favoritesObject,
 } = useStore()
 const { canPurchase } = useGlobalSettings()
-
+const { likes } = usePlayStore()
 const { changes } = useAllChars()
+const { user } = useUser()
 
 const infoIcon = ref<EventTarget | null>(null)
 const editMenu = ref<EventTarget | null>(null)
@@ -368,4 +377,22 @@ onMounted(() => {
 })
 
 watch(image, () => companionEl.value ? companionEl.value.src = image.value : null)
+
+function likeChar() {
+  if (favoritesObject.value[charData.value.uid] !== undefined) {
+    favorites.value.splice(favorites.value.indexOf(charData.value.uid), 1)
+    if (likes.value[charData.value.uid] && user.value.id)
+      likes.value[charData.value.uid] -= 1
+  }
+  else {
+    favorites.value.push(charData.value.uid)
+    if (user.value.id) {
+      if (likes.value[charData.value.uid] !== undefined)
+        likes.value[charData.value.uid] += 1
+      else
+        likes.value[charData.value.uid] = 1
+    }
+  }
+  updateLikesForUser()
+}
 </script>

@@ -27,7 +27,7 @@
 </template>
 
 <script lang='ts' setup>
-import { isArray } from 'lodash'
+import { isArray } from 'lodash-es'
 import { waifu_perks, DLCwaifu_perks } from '~/data/waifu_perks'
 import { genericDesc } from '~/data/talents'
 import { useTooltips } from '~/logic/misc'

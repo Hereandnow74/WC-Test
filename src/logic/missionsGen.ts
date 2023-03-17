@@ -1,6 +1,6 @@
 import { DBCharacter } from 'global'
 import { groupBy, sample, shuffle } from 'lodash-es'
-import { allWorldsNoCondition, useAllChars } from '~/data/constants'
+import { allWorldsNoCondition, useAllChars } from '../data/constants'
 
 const { allCharsComp } = useAllChars()
 

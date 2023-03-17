@@ -79,11 +79,13 @@ import { onBeforeRouteUpdate } from 'vue-router'
 
 import { toggleShowAddMission, showAddMission } from '~/logic'
 import { MissionGenerator } from '~/logic/missionsGen'
+import { useChargenStore } from '~/store/chargen'
 import { usePlayStore } from '~/store/play'
 import { useSaves } from '~/store/saves'
 
-const { currentWorld, missionRewards } = usePlayStore()
+const { missionRewards } = usePlayStore()
 const { missionFavorites } = useSaves()
+const { currentWorld } = useChargenStore()
 
 const addMissionComponent = computed(() => defineAsyncComponent(() => import('../components/modals/AddMission.vue')))
 

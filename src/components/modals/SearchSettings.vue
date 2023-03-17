@@ -86,10 +86,9 @@ import { allCompanionsWorlds } from '~/data/constants'
 import { showImpExpChars, toggleImpExpChars, blackWhite, blackWhiteDisabled } from '~/logic'
 import { confirmDialog } from '~/logic/dialog'
 import { useSettings } from '~/logic/searchSettings'
-import { usePlayStore } from '~/store/play'
 import { useStore } from '~/store/store'
 
-const { currentWorld } = usePlayStore()
+const { currentWorld } = useChargenStore()
 const { minTier, maxTier, blockedWorlds, isLimited } = useSettings()
 const { localUserCharacters } = useStore()
 
@@ -139,4 +138,7 @@ function fromSpreadsheet() {
   }
 }
 
+function useChargenStore(): { currentWorld: any } {
+  throw new Error('Function not implemented.')
+}
 </script>

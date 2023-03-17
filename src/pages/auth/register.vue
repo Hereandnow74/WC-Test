@@ -8,10 +8,19 @@
         <h3 class="text-center text-2xl font-semibold">
           Register
         </h3>
-        <Input v-model="name" class="flex-grow" placeholder="Nickname*" :error-message="errors.name" />
+        <Input
+          v-model="name"
+          name="username"
+          autocomplete="username"
+          class="flex-grow"
+          placeholder="Nickname*"
+          :error-message="errors.name"
+        />
         <Input
           v-model="password"
           type="password"
+          name="password"
+          autocomplete="new-password"
           class="flex-grow"
           placeholder="Password*"
           :error-message="errors.password"
@@ -19,6 +28,7 @@
         <Input
           v-model="password2"
           type="password"
+          autocomplete="new-password"
           class="flex-grow"
           placeholder="Confirm Password*"
           :error-message="errors.password2"
@@ -32,9 +42,6 @@
           {{ errorMessage }}
         </div>
       </form>
-      <div v-else>
-        You already registered as {{ user.name }}
-      </div>
     </template>
   </div>
 </template>
@@ -43,7 +50,12 @@
 import * as zod from 'zod'
 import { useForm, useField } from 'vee-validate'
 import { toFormValidator } from '@vee-validate/zod'
-import { postRegisterInfoToEndpoint, user } from '~/logic/auth/authLogic'
+import { postRegisterInfoToEndpoint } from '~/logic/auth/authLogic'
+import { useUser } from '~/store/user'
+import { useStore } from '~/store/store'
+
+const { user } = useUser()
+const { favorites } = useStore()
 
 const successMessage = ref('')
 const errorMessage = ref('')
@@ -77,11 +89,11 @@ const { value: password2 } = useField<string>('password2')
 const { value: email } = useField<string>('email')
 
 const register = handleSubmit((values) => {
-  // TODO: Add favorites here
   const whatSendToServer = {
     name: values.name,
     password: values.password,
     email: values.email,
+    likedCharacters: favorites.value,
   }
   postRegisterInfoToEndpoint(whatSendToServer).then(message => errorMessage.value = message)
   buttonActive.value = false

@@ -1,10 +1,10 @@
 
 import { PerkFull } from 'global'
-import { bindings, lureExpansions, lures, otherControls } from '~/data/binding'
-import { homes } from '~/data/demdun'
-import { heritages } from '~/data/heritage'
-import { defenses, genericPerks, perks, talents } from '~/data/talents'
-import { waifu_perks } from '~/data/waifu_perks'
+import { bindings, lures, otherControls } from '../data/binding'
+import { homes } from '../data/demdun'
+import { heritages } from '../data/heritage'
+import { defenses, genericPerks, perks, talents } from '../data/talents'
+import { waifu_perks } from '../data/waifu_perks'
 
 interface PerkStorage {
   'Challenge': PerkFull[]

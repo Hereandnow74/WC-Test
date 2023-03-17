@@ -1,8 +1,7 @@
 import { findIndex, sample, random, countBy } from 'lodash-es'
+import { addFreebies, deleteFreebies } from '../logic'
+import { useStore } from '../store/store'
 import { WORLD_RATINGS, allWorldsNoCondition } from './constants'
-import { addFreebies, deleteFreebies } from '~/logic'
-import { useStore } from '~/store/store'
-import { useChallenges } from '~/store/challenges'
 
 export const challengesDesc = `
 <p>Challenges should be picked after you pick the World but before you make any other purchases.
@@ -10,7 +9,7 @@ Challenges are not a part of a canon Waifu Catalog so you have more freedom in i
 <p>You can pick a several challenges at the same time if they don't conflict with each other.</p>
 `
 
-const { fullStartingBudget, companions, baseBudget, startingWorld, defensePerks } = useStore()
+const { companions, baseBudget, startingWorld, defensePerks } = useStore()
 
 let defenseWatcher = null
 let exileWatcher = null

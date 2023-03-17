@@ -74,8 +74,8 @@
 
 <script lang='ts' setup>
 import { useTimeAgo } from '@vueuse/core'
-import { random } from 'lodash'
-import { remove } from 'lodash-es'
+import { random, remove } from 'lodash-es'
+
 import Prism from 'prismjs'
 import Input from '../basic/Input.vue'
 import { useSaves } from '~/store/saves'

@@ -1,21 +1,21 @@
 import { assign, countBy, isArray, isEmpty, uniq, uniqWith } from 'lodash-es'
 import { DBCharacter, DBWorld, PerkFull } from 'global'
-import { DLCgenericPerks, DLChomes, DLCperks, DLCtalents, DLCheritages, DLClureExpansions, DLCbindings, DLClures, DLCotherControls, DLCridePerks, DLCintensity } from './DLCs'
-import { DLCRides, rides } from './rides'
-import { homes, demiplane, dungeon } from './demdun'
-import { patrons } from './patronsRework'
-import { fullHeritagesDLC } from './heritageDLC'
-import { tournamentPerks } from './tournamentDLC'
-import { intensity, intensityPvP, invasionPvP } from '~/data/intensity'
-import { origin } from '~/data/origin'
-import { bindings, lures, lureExpansions, otherControls } from '~/data/binding'
-import { heritages } from '~/data/heritage'
-import { ridePerksFull, defenses, talents, perks, genericPerks } from '~/data/talents'
-import { DLCwaifu_perks, waifu_perks } from '~/data/waifu_perks'
-import { symbioteBinding, symBuildings, synUnits } from '~/data/symbiote'
+import { intensity, intensityPvP, invasionPvP } from '../data/intensity'
+import { origin } from '../data/origin'
+import { bindings, lures, lureExpansions, otherControls } from '../data/binding'
+import { heritages } from '../data/heritage'
+import { ridePerksFull, defenses, talents, perks, genericPerks } from '../data/talents'
+import { DLCwaifu_perks, waifu_perks } from '../data/waifu_perks'
+import { symbioteBinding, symBuildings, synUnits } from '../data/symbiote'
 
-import { useStore } from '~/store/store'
-import { useChargenStore } from '~/store/chargen'
+import { useStore } from '../store/store'
+import { useChargenStore } from '../store/chargen'
+import { tournamentPerks } from './tournamentDLC'
+import { fullHeritagesDLC } from './heritageDLC'
+import { patrons } from './patronsRework'
+import { homes, demiplane, dungeon } from './demdun'
+import { DLCRides, rides } from './rides'
+import { DLCgenericPerks, DLChomes, DLCperks, DLCtalents, DLCheritages, DLClureExpansions, DLCbindings, DLClures, DLCotherControls, DLCridePerks, DLCintensity } from './DLCs'
 
 const { userWorlds, localUserWorlds, localUserCharacters } = useStore()
 
@@ -41,6 +41,7 @@ export const nicknames = [
   'Just_A_Knight',
   'Kevin S.',
   'Joe T.',
+  'Kaleb',
   'KatzSmile',
   'Cynicalto',
   'Beatrix',
@@ -446,7 +447,9 @@ export const getAllChars = async() => {
   if (running) return allChars.value
   if (!allChars.value.length) {
     running = true
-    allChars.value.push(...(await getUserChars()).reverse(), ...(await getChars()))
+    const userChars = (await getUserChars()).reverse()
+    const spreadheetChars = (await getChars())
+    allChars.value.push(...userChars, ...spreadheetChars)
     running = false
   }
 
@@ -454,8 +457,19 @@ export const getAllChars = async() => {
 }
 
 const allCharsComp = computed(() => {
-  return [...localUserCharacters.value.map(x => ({ u: x.uid, n: x.name, w: x.world, t: x.tier, d: x.sub, b: x.tags, i: x.image, in: x.image_nsfw, type: 'local' }))].concat(allChars.value)
+  return [].concat(allChars.value, localUserCharacters.value.map(x => ({ u: x.uid, n: x.name, w: x.world, t: x.tier, d: x.sub, b: x.tags, i: x.image, in: x.image_nsfw, type: 'local' }))) as DBCharacter[]
 })
+
+// Search for UID duplicates
+// export const dupsX = computed(() => {
+//   const UIDs = allCharsComp.value.map(x => x.u)
+//   const setU = {}
+//   UIDs.forEach((x) => {
+//     if (setU[x])
+//       console.log(x)
+//     setU[x] = 1
+//   })
+// })
 
 const allCharsObject = computed(() => {
   const res = {} as Record<number, DBCharacter>

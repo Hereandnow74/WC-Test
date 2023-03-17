@@ -57,6 +57,8 @@ const startingWorld = storeType<World>('startingWorld', {
   rating: 0,
 })
 
+const currentWorld = useStorage('currentWorld', startingWorld.value)
+
 const startingOrigin = storeType<Origin>('startingOrigin', {
   title: '',
   cost: 0,
@@ -206,5 +208,6 @@ export function useChargenStore() {
     fee,
     specificMods,
     patron,
+    currentWorld,
   }
 }

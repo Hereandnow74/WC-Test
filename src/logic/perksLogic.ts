@@ -1,12 +1,12 @@
-import { difference, differenceBy, find, findIndex, intersection, intersectionWith, isEmpty, isObject, remove, sample, uniqBy } from 'lodash-es'
+import { differenceBy, find, findIndex, intersection, intersectionWith, isEmpty, isObject, remove, sample, uniqBy } from 'lodash-es'
 import { DLCPerk, Freebie, PerkFull } from 'global'
-import { Intensity } from '~/data/intensity'
-import { WaifuPerk } from '~/data/waifu_perks'
-import { useChallenges } from '~/store/challenges'
-import { usePlayStore } from '~/store/play'
-import { SavedChar } from '~/store/chargen'
-import { useStore } from '~/store/store'
-import { ALL_PERK_STORES, ALL_PERK_TITLES, useAllChars } from '~/data/constants'
+import { Intensity } from '../data/intensity'
+import { WaifuPerk } from '../data/waifu_perks'
+import { useChallenges } from '../store/challenges'
+import { usePlayStore } from '../store/play'
+import { SavedChar, useChargenStore } from '../store/chargen'
+import { useStore } from '../store/store'
+import { ALL_PERK_STORES, ALL_PERK_TITLES, useAllChars } from '../data/constants'
 
 // General functions
 export function deleteFreebies(freebies: object) {
@@ -562,7 +562,8 @@ export function clearAll() {
     waifuPerks, baseBudget, startingWorld, budgetMods, otherPerks, fee, specificMods, patron, pvpPerks, coupleOrigin,
   } = useStore()
 
-  const { currentWorld, jumpChain, rdnWorld, loan, trHistory, missionRewards } = usePlayStore()
+  const { jumpChain, rdnWorld, loan, trHistory, missionRewards } = usePlayStore()
+  const { currentWorld } = useChargenStore()
 
   const { activeChallenges } = useChallenges()
 

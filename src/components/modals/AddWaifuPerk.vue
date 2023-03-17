@@ -1,6 +1,9 @@
 <template>
   <Modal label="Propose a Waifu Perk" class="!z-30">
     <div class="p-2 flex flex-col gap-2 min-h-0 w-full">
+      <div class="cursor-pointer hover:text-red-500 text-red-800 dark:text-red-300" @click="showRules = true">
+        Specific Waifu Perk Submission Rules
+      </div>
       <div class="flex gap-2">
         <Input v-model="title" class="flex-grow" placeholder="Perk title" :error-message="errors.title" />
         <Input v-model.number="cost" class="w-24" label="Cost" :error-message="errors.cost" />
@@ -35,6 +38,13 @@
       </div>
     </div>
     <LocalPerksManager v-if="showPerksManager" @click="showPerksManager = false" @sendDelete="deletePerk" @sendEdit="editPerk" />
+    <Modal v-if="showRules" label="Rules" @click="showRules=false">
+      <div class="p-2 flex flex-col gap-2 min-h-0 w-full">
+        <p>Specific Waifu Perks are perks created to grant waifu access to abilities and forms that would be <b>unobtainable</b> to them <b>without external means</b>. This could be via an artifact that is not typically part of their iconic equipment, a powerup granted by a third party, an alternate form that does not qualify for a separate catalog entry or a fusion form that requires another waifu to be achieved. A powerup that can be unlocked through regular training is an example of an upgrade that <b>does not</b> qualify to be locked behind a Specific Waifu Perk.</p>
+        <p>It is <b>highly recommended</b> to check the Setting Specific Rules of a world before submitting a specific or generic waifu perk. More often than not these rules cover the specifics of an alternate form or powerup of a waifu for which a perk can be made, making the submission of such a perk redundant. Perks submitted to unlock powerups or forms addressed by the Setting Specific Rules will be rejected. </p>
+        <p>Low-effort perks of one or two sentences, as well as those written poorly, will have increasingly low chances of being accepted. Perks also require a good quality and meaningful image. </p>
+      </div>
+    </Modal>
   </Modal>
 </template>
 
@@ -43,7 +53,7 @@ import * as zod from 'zod'
 import { useForm, useField } from 'vee-validate'
 import { toFormValidator } from '@vee-validate/zod'
 
-import { findIndex } from 'lodash'
+import { findIndex } from 'lodash-es'
 import { randomString, showAddPerk, togglePerksManager, showPerksManager, proposeWaifuPerk } from '~/logic'
 import { CHAR_COSTS, CHAR_COSTS_TICKET } from '~/data/constants'
 import { localPerks } from '~/logic/localPerks'
@@ -51,6 +61,7 @@ import { localPerks } from '~/logic/localPerks'
 const successMessage = ref('')
 const errorMessage = ref('')
 const buttonActive = ref(true)
+const showRules = ref(false)
 
 const schema = toFormValidator(
   zod.object({

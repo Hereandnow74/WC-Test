@@ -2,14 +2,13 @@ import Fuse from 'fuse.js'
 import { random, groupBy, sampleSize, findIndex, sample, isNumber, xor } from 'lodash-es'
 import tippy from 'tippy.js'
 import { DBWorld } from 'global'
-import { allWorldsNoCondition, ALL_DLC_PERK_TITLES, CHAR_COSTS, getAllChars, shownValue, useAllChars } from '~/data/constants'
+import { allWorldsNoCondition, ALL_DLC_PERK_TITLES, CHAR_COSTS, getAllChars, shownValue, useAllChars } from '../data/constants'
 
-import { useStore } from '~/store/store'
-import { clearAll, isBuildImage } from '~/logic'
-import { confirmDialog } from '~/logic/dialog'
-import { useChallenges } from '~/store/challenges'
-import { Perk } from '~/store/chargen'
-import { usePlayStore } from '~/store/play'
+import { useStore } from '../store/store'
+import { clearAll, isBuildImage } from '../logic'
+import { confirmDialog } from '../logic/dialog'
+import { useChallenges } from '../store/challenges'
+import { usePlayStore } from '../store/play'
 
 const { allCharsComp, allCharsObject } = useAllChars()
 

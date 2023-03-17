@@ -1439,7 +1439,7 @@
     "rating": 6,
     "worldName": "Nasuverse",
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/991003593454800996/E-4lL3BWUAEeMtQ.jpg",
-    "additional": "Tohno Shiki has Len as a familiar. Aoko has White Len as a familiar. If you already have Len when you buy Shiki or White Len when you buy Aoko, you’ll be refunded the appropriate familiars’ full costs.",
+    "additional": "Tohno Shiki has Len as a familiar. Aoko has White Len as a familiar. If you already have Len when you buy Shiki or White Len when you buy Aoko, you’ll be refunded the appropriate familiars’ full costs.<br><br>Body Tune-Up will cure Fiore’s paralysis without requiring her to lose her Magic Circuits.<br><br>Rani VIII and the Extra version of Rin are both demi-Servants with Lu Bu and Cú Chulainn, respectively, as they were in Last Encore. If you already have Saint Kiara, the T10 Devil Kiara purchase may instead apply as a waifu perk, giving her the abilities of either her Devil or hypothetical Saver versions (one or the other) with no changes to her personality.<br><br>All Olympian gods, including Aphrodite, Artemis, and Demeter, can change to their machine forms and have their divine nanomachines. For the purposes of Exit Stage Left and Rainbow Bridge, each of Singularities 1-7, the Pseudo-Singularities, the Servant Universe, and the Lostbelts count as separate worlds, so that completing each one unlocks a new world through our systems. This also includes some other major events, such as GUDAGUDA, SE.RA.PH, Ooku, and Imaginary Scramble. The primary Fate/Grand Order world will count as completed at the end of the Observer on Timeless Temple or (if the contractor arrives afterward) Cosmos in the Lostbelt arcs.    Pseudo-Servants and Other Alternates    The following pairs are mutually exclusive at chargen: Saint Kiara and Devil Kiara; Nero and Nero Alter; Medea and Medea Lily; Medusa and Gorgon. If you buy a Pseudo-Servant waifu perk at any time after you purchased or captured them, the Servant’s memories and personality will seamlessly integrate into the host’s, in much the same way as the Memoria perk or Extra and Substitute origins.    Not mutually exclusive: Kama and BB with any Sakura and each other; Ereshkigal and Space Ishtar with any Rin and each other; Scáthach and Skadi; Carmilla and Elizabeth Bathory.",
     "condition": [
       {
         "name": "Grail Wars/Case Files",
@@ -1462,12 +1462,18 @@
         "a": "c"
       },
       {
-        "name": "Grand Order: Part 1",
-        "rating": 8
+        "rating": 6,
+        "name": "Fate/Apocrypha"
       },
       {
-        "name": "Grand Order: Epic of Remnant",
-        "rating": 8
+        "rating": 7,
+        "name": "Fate/Extra",
+        "a": "c"
+      },
+      {
+        "rating": 8,
+        "name": "Fate/Grand Order",
+        "a": "c"
       },
       {
         "rating": 8,
@@ -1737,13 +1743,6 @@
     "worldName": "Kara no Kyoukai",
     "additional": "Kokutou Azaka will believe you to be her sibling and cannot be convinced otherwise. If you go to KnK and capture Shiki there, she will always be the basic Tier 7 version; this does not apply to the Saber-class guest-star at Chaldea.",
     "image": "https://community.gamepress.gg/uploads/default/original/3X/5/5/55c918f8720f914ff1340dd5b3acfab59cf82d4a.jpeg"
-  },
-  {
-    "rating": 6,
-    "q": true,
-    "worldName": "Fate/Apocrypha",
-    "additional": "Body Tune-Up will cure Fiore’s paralysis without requiring her to lose her Magic Circuits.",
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992398557103542432/Fate-Apocrypha-avis-0000.jpg"
   },
   {
     "rating": 6,
@@ -2127,12 +2126,6 @@
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/992407717371183175/Halo-Infinite-Chief-Weapon-scaled.jpg"
   },
   {
-    "rating": 7,
-    "worldName": "Fate/Extra",
-    "additional": "Rani VIII and the Extra version of Rin are both demi-Servants with Lu Bu and Cú Chulainn, respectively, as they were in Last Encore. If you already have Saint Kiara, the T10 Devil Kiara purchase may instead apply as a waifu perk, giving her the abilities of either her Devil or hypothetical Saver versions (one or the other) with no changes to her personality.",
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992407569366782042/Game-Page-Featured_Fate-EXTRA-Record-Inits.jpg"
-  },
-  {
     "rating": 8,
     "worldName": "Warframe",
     "condition": [
@@ -2409,12 +2402,6 @@
     "worldName": "I'm a Spider, So What?",
     "additional": "Visiting the setting or having any waifu from the work will give you access to its leveling systems. Fatality Defense will block the local leveling system’s negative effects on its users.",
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/992747918257819648/So-i-am-a-spider-so-what.jpg"
-  },
-  {
-    "rating": 8,
-    "worldName": "Fate/Grand Order",
-    "additional": "All Olympian gods, including Aphrodite, Artemis, and Demeter, can change to their machine forms and have their divine nanomachines. For the purposes of Exit Stage Left and Rainbow Bridge, each of Singularities 1-7, the Pseudo-Singularities, the Servant Universe, and the Lostbelts count as separate worlds, so that completing each one unlocks a new world through our systems. This also includes some other major events, such as GUDAGUDA, SE.RA.PH, Ooku, and Imaginary Scramble. The primary Fate/Grand Order world will count as completed at the end of the Observer on Timeless Temple or (if the contractor arrives afterward) Cosmos in the Lostbelt arcs.    Pseudo-Servants and Other Alternates    The following pairs are mutually exclusive at chargen: Saint Kiara and Devil Kiara; Nero and Nero Alter; Medea and Medea Lily; Medusa and Gorgon. If you buy a Pseudo-Servant waifu perk at any time after you purchased or captured them, the Servant’s memories and personality will seamlessly integrate into the host’s, in much the same way as the Memoria perk or Extra and Substitute origins.    Not mutually exclusive: Kama and BB with any Sakura and each other; Ereshkigal and Space Ishtar with any Rin and each other; Scáthach and Skadi; Carmilla and Elizabeth Bathory.",
-    "image": "https://wallpapercave.com/wp/wp2539656.jpg"
   },
   {
     "rating": 9,
@@ -2920,5 +2907,17 @@
     "worldName": "Kirby series",
     "rating": 10,
     "image": "https://cdn.wikirby.com/c/c5/KSA_Popstar.jpg"
+  },
+  {
+    "worldName": "Granblue Fantasy",
+    "rating": 6,
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992403648493670432/Cygames-annonce-Granblue-Fantasy-Relink-pour-PC-sortie-mondiale-2022.jpg",
+    "condition": [
+      {
+        "rating": 6,
+        "name": "No Primal Beasts active",
+        "a": "c"
+      }
+    ]
   }
 ]

@@ -124,7 +124,7 @@
 </template>
 
 <script lang="ts" setup>
-import { find } from 'lodash'
+import { find } from 'lodash-es'
 import { orientation } from '~/logic'
 import { useStore } from '~/store/store'
 import { rides, DLCRides } from '~/data/rides'

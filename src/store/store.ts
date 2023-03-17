@@ -1,12 +1,12 @@
 import { findIndex, find, remove, intersection } from 'lodash-es'
 import { Perk } from 'global'
+import { CHAR_COSTS, CHAR_COSTS_FULL, CHAR_COSTS_TICKET, useAllChars, WORLD_RATINGS } from '../data/constants'
+import { defenseObject, talentsObject } from '../data/talents'
 import { useChallenges } from './challenges'
 import { usePlayStore } from './play'
 import { SavedChar, useChargenStore } from './chargen'
-import { CHAR_COSTS, CHAR_COSTS_FULL, CHAR_COSTS_TICKET, useAllChars, WORLD_RATINGS } from '~/data/constants'
-import { defenseObject, talentsObject } from '~/data/talents'
 
-const { loan, jumpChain, currentWorld, trHistory, missionRewards } = usePlayStore()
+const { loan, jumpChain, trHistory, missionRewards } = usePlayStore()
 
 const {
   baseBudget,
@@ -42,6 +42,7 @@ const {
   fee,
   specificMods,
   patron,
+  currentWorld,
 } = useChargenStore()
 
 const settings = useStorage('settings', {
@@ -503,8 +504,6 @@ watch(startingWorld, () => {
 
 const favorites = useStorage<number[]>('favorites', [])
 
-const totalActive = useStorage('ta', 0)
-
 const collapsedDescs = useStorage<string[]>('collapsedDescs', [])
 const collapsedDescsSet = computed(() => new Set<string>(collapsedDescs.value))
 
@@ -590,7 +589,6 @@ export function useStore() {
     loan,
     trHistory,
     favorites,
-    totalActive,
     usedHeritageDiscount,
     maxHeritageDiscount,
     talentsDiscount,

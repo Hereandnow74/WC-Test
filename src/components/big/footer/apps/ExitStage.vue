@@ -81,19 +81,19 @@
 </template>
 
 <script lang="ts" setup>
-import { findIndex } from 'lodash'
-import some from 'lodash-es/some'
+import { findIndex, some } from 'lodash-es'
 import { randomWorld } from '~/logic'
 import { usePlayStore } from '~/store/play'
 import { useStore } from '~/store/store'
 
 import { confirmDialog } from '~/logic/dialog'
-import { World } from '~/store/chargen'
+import { useChargenStore, World } from '~/store/chargen'
 import { allWorldsNoCondition } from '~/data/constants'
 
 const tabIndex = ref(0)
 
-const { currentWorld, jumpChain, rdnWorld } = usePlayStore()
+const { jumpChain, rdnWorld } = usePlayStore()
+const { currentWorld } = useChargenStore()
 const { miscPerks, startingWorld } = useStore()
 
 const progress = ref(0)

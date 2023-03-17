@@ -36,7 +36,7 @@
 
 <script lang='ts' setup>
 import type { PropType } from '@vue/runtime-core'
-import { findIndex } from 'lodash'
+import { findIndex } from 'lodash-es'
 import tippy from 'tippy.js'
 import { useStore } from '~/store/store'
 

@@ -1,8 +1,8 @@
 import { Character, DBCharacter } from 'global'
 import { intersection } from 'lodash-es'
+import { CHAR_COSTS } from '../data/constants'
+import { useStore } from '../store/store'
 import { confirmDialog } from './dialog'
-import { CHAR_COSTS } from '~/data/constants'
-import { useStore } from '~/store/store'
 
 const {
   companions, fullStartingBudget, csr, baseBudget, flags,
