@@ -4,7 +4,7 @@ import { useUser } from '~/store/user'
 const { user, tokens } = useUser()
 
 // const SERVER_URL = 'http://localhost:3000'
-const SERVER_URL = 'http://216.250.116.9:3000'
+const SERVER_URL = 'https://interactive-apps.net'
 const API_VERSION = 'v1'
 
 export async function verifyEmail(token: string): Promise<number> {
@@ -235,7 +235,7 @@ export async function getLikesByUid(uidArr: number[]): Promise<{}> {
   }
 }
 
-export async function updateLikesForUser(): Promise<void> {
+export async function updateLikesForUser(tried = false): Promise<void> {
   if (tokens.value?.access?.token) {
     const { favorites } = useStore()
     const apiUrl = `${SERVER_URL}/${API_VERSION}/users/${user.value.id}`
@@ -250,6 +250,8 @@ export async function updateLikesForUser(): Promise<void> {
 
     if (!response.ok) {
       const errorText = await response.text()
+      if (!tried)
+        refreshTokens().then(x => updateLikesForUser(true))
       return JSON.parse(errorText).message
     }
     else {
@@ -257,6 +259,28 @@ export async function updateLikesForUser(): Promise<void> {
       const jsonPayload = JSON.parse(payload)
       if (jsonPayload.id)
         user.value = jsonPayload
+    }
+  }
+}
+
+export async function recalculateLikesOnServer(): Promise<void> {
+  if (tokens.value?.access?.token) {
+    const apiUrl = `${SERVER_URL}/${API_VERSION}/characters/recalculateFields`
+    const response = await fetch(apiUrl, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${tokens.value.access.token}`,
+      },
+    })
+
+    if (!response.ok) {
+      const errorText = await response.text()
+      console.log(JSON.parse(errorText).message)
+    }
+    else {
+      const payload = await response.text()
+      console.log(payload)
     }
   }
 }

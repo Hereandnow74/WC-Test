@@ -86,6 +86,7 @@ import { allCompanionsWorlds } from '~/data/constants'
 import { showImpExpChars, toggleImpExpChars, blackWhite, blackWhiteDisabled } from '~/logic'
 import { confirmDialog } from '~/logic/dialog'
 import { useSettings } from '~/logic/searchSettings'
+import { useChargenStore } from '~/store/chargen'
 import { useStore } from '~/store/store'
 
 const { currentWorld } = useChargenStore()
@@ -138,7 +139,4 @@ function fromSpreadsheet() {
   }
 }
 
-function useChargenStore(): { currentWorld: any } {
-  throw new Error('Function not implemented.')
-}
 </script>

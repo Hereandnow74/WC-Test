@@ -18,13 +18,14 @@
         <Button v-if="user.role === 'admin'" label="Rebase" @click="rebase" />
         <Button v-if="user.role === 'admin'" label="Get Likes" @click="getLikes" />
         <Button v-if="user.role === 'admin'" label="Get Chars" @click="getChars" />
+        <Button v-if="user.role === 'admin'" label="Recalculate Likes" @click="recalculateLikes" />
       </template>
     </div>
   </div>
 </template>
 
 <script lang='ts' setup>
-import { getUserFromServer, rebaseCharactersToServer, getCharactersFromServer, getLikesByUid, logoutFromServer } from '~/logic/auth/authLogic'
+import { getUserFromServer, rebaseCharactersToServer, getCharactersFromServer, getLikesByUid, logoutFromServer, recalculateLikesOnServer } from '~/logic/auth/authLogic'
 import { useUser } from '~/store/user'
 
 const { user, tokens } = useUser()
@@ -48,5 +49,9 @@ function getChars() {
 
 function getLikes() {
   getLikesByUid().then(x => console.log(x))
+}
+
+function recalculateLikes() {
+  recalculateLikesOnServer()
 }
 </script>

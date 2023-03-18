@@ -457,7 +457,7 @@ export const getAllChars = async() => {
 }
 
 const allCharsComp = computed(() => {
-  return [].concat(allChars.value, localUserCharacters.value.map(x => ({ u: x.uid, n: x.name, w: x.world, t: x.tier, d: x.sub, b: x.tags, i: x.image, in: x.image_nsfw, type: 'local' }))) as DBCharacter[]
+  return [].concat(localUserCharacters.value.map(x => ({ u: x.uid, n: x.name, w: x.world, t: x.tier, d: x.sub, b: x.tags, i: x.image, in: x.image_nsfw, type: 'local' })), allChars.value) as DBCharacter[]
 })
 
 // Search for UID duplicates

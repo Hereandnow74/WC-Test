@@ -12,7 +12,7 @@
           :alt="charData.name"
         >
         <div v-else class="h-16"></div>
-        <div class="absolute top-1 left-1 cursor-pointer flex items-center gap-1 text-lg leading-none" @click="likeChar">
+        <div class="absolute top-7 right-0.5 cursor-pointer flex items-center gap-1 text-lg leading-none" @click="likeChar">
           <span class="text-red-500 flex items-center gap-0.5">
             <span v-if="charLikes" class="font-semibold">{{ charLikes }}</span>
             <ci:heart-fill

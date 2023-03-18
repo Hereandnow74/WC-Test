@@ -9,9 +9,9 @@
           17 March 2023
         </h3>
         <ul class="list-decimal list-inside">
-          <li>~55 new user submitted characters, new missions, new worlds, new DLC SWP's</li>
+          <li>~100 new user submitted characters, new missions, new worlds, new DLC SWP's</li>
           <li>Registration (confirmation email doesn't work, as I was not able to find suitable SMTP service)</li>
-          <li>Likes for characters, works the same as favorites, counts only for registered users.</li>
+          <li>Likes for characters, works the same as favorites, counts only for registered users. (Kudos to Somdudewillson, as he wrote most of the server code for this change)</li>
           <li>Bugfixes & small changes</li>
         </ul>
       </div>
