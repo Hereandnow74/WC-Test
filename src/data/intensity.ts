@@ -257,6 +257,7 @@ invasionPvP.push({
   title: 'White Eye Orb',
   image: 'https://i.imgur.com/Aq3mmTg.jpg',
   cost: 75,
+  category: 'Invasion',
   pvp: true,
   /* html */
   desc: `When the defending side of an invasion calls for help, this orb allows you to answer, and demonstrate the value of Jolly Cooperation. The PvP asset value of the force you send must be within the same range as the defender and attacker: between 80% of the higher value and 125% of the lower value. Similarly to the invading force, your strike force will appear as shining White Phantasms in the invaded world.
@@ -270,6 +271,7 @@ invasionPvP.push({
   title: 'Red Eye Orb',
   image: 'https://cdn.discordapp.com/attachments/925963686433132644/993106116600934490/Screenshot_2.jpg',
   cost: 100,
+  category: 'Invasion',
   pvp: true,
   desc: `Hardly different at all from the original items, as they were used in the many parallels of an ashen world, ownership of one of these orbs lets you and a strike force invade another contractor’s world and ruin their hard work.
   <p>To qualify as an invasion target, the enemy contractor must first own a Red Eye Orb of their own. Yes, this means you may find yourself the defender in this scenario. This is your warning. Second, they have visited a parallel of at least one world that you’ve visited. The battle will take place in that parallel. Third, their PvP credit value must be in the same ballpark as your force’s PvP asset value, with the higher of the two no more than 25% more than the lower. Invasion targets are randomly selected by company systems; contractors have no influence on the process.</p>
@@ -281,6 +283,7 @@ invasionPvP.push({
   title: 'Green Eye Orb',
   image: 'https://cdn.discordapp.com/attachments/894482928808112208/1007575677597384735/gyrx5mvdvwsr51.jpg',
   cost: 10,
+  category: 'Invasion',
   pvp: true,
   desc: `This is your invitation to any one of the company’s exclusive clubs for contractors. You can bring up to three members of your retinue to eat, drink, game, make new friends and rivals, and do business with other contractors and retinues at these neutral grounds. Both indoor and outdoor environments and services are available.
   <p>Conflict between contractors, including poaching each others’ retinues, is actively prevented in real time via <b>Demiplane Laws</b>. Note that the company does not enforce fairness in trades between contractors, so take care to watch your own back.</p>`,
@@ -291,6 +294,7 @@ invasionPvP.push({
   title: 'Blue Eye Orb',
   image: 'https://i.imgur.com/djT31F8.jpg',
   cost: 15,
+  category: 'Invasion',
   pvp: true,
   desc: `More similar to the red soapstone or dragon eyes from the many parallels of an ashen world than the original blue eye orb, ownership of this item allows you to specifically invite another contractor to a duel between your two teams, skipping the normal matchmaking process. This otherwise follows the regular Arranged PvP procedures.
   <p>You can only challenge contractors that you’ve met in person. This may happen by any means, including Green Eye Orb use, regular Arranged PvP, Invasions, or unregulated encounters.

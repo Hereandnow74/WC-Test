@@ -1,26 +1,44 @@
 <template>
   <div class="max-w-screen-md lg:pl-0 flex flex-col gap-4">
+    <h3>All effects</h3>
     <div>{{ allEffects }}</div>
+    <h3>intensities</h3>
     <div>{{ intensities }}</div>
+    <h3>luresBought</h3>
     <div>{{ luresBought }}</div>
+    <h3>binding</h3>
     <div>{{ binding }}</div>
+    <h3>flags</h3>
     <div>{{ flags }}</div>
+    <h3>heritage</h3>
     <div>{{ heritage }}</div>
+    <h3>ridePerks</h3>
     <div>{{ ridePerks }}</div>
+    <h3>homePerks</h3>
     <div>{{ homePerks }}</div>
     <h3>TALENTS</h3>
     <div>{{ talentPerks }}</div>
     <h3>DEFENSES</h3>
     <div>{{ defensePerks }}</div>
+    <h3>miscPerks</h3>
     <div>{{ miscPerks }}</div>
+    <h3>genericWaifuPerks</h3>
     <div>{{ genericWaifuPerks }}</div>
+    <h3>companions</h3>
     <div>{{ companions }}</div>
+    <h3>startingOrigin</h3>
     <div>{{ startingOrigin }}</div>
+    <h3>waifuPerks</h3>
     <div>{{ waifuPerks }}</div>
+    <h3>baseBudget</h3>
     <div>{{ baseBudget }}</div>
+    <h3>startingWorld</h3>
     <div>{{ startingWorld }}</div>
+    <h3>budgetMods</h3>
     <div>{{ budgetMods }}</div>
+    <h3>otherPerks</h3>
     <div>{{ otherPerks }}</div>
+    <h3>fee</h3>
     <div>{{ fee }}</div>
 
     <div class="flex flex-wrap gap-2  pb-8">

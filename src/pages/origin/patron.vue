@@ -43,32 +43,29 @@ import { useTooltips } from '~/logic/misc'
 import { useStore } from '~/store/store'
 
 import { intro, patrons, patronNote, patronIntro } from '~/data/patronsRework'
+import { patronEffects } from '~/logic/pagesLogic/patronsLogic'
 
 const { settings, patron } = useStore()
 
 onMounted(() => useTooltips())
 
-function choosePatron(pt: typeof patrons[0], saveInfo: {title: string; cost: number}) {
+function choosePatron(pt: typeof patrons[0], saveInfo: {uid: string; title: string; cost: number}) {
   if (!patronAvailable(pt)) return
   const ind = findIndex(patron.value, { title: pt.title })
   if (ind !== -1) {
-    if (pt.effect?.remove)
-      pt.effect.remove()
+    if (patronEffects[pt.title])
+      patronEffects[pt.title].remove()
     patron.value.splice(ind, 1)
   }
   else {
-    if (pt.effect?.set)
-      pt.effect.set()
+    if (patronEffects[pt.title])
+      patronEffects[pt.title].add()
     patron.value.push(saveInfo)
   }
 }
 
 function patronAvailable(pt: typeof patrons[0]) {
-  let numOfPatrons = 1
-  if (patron.value.length && patron.value[0].title === 'Archdeity of Eternity')
-    numOfPatrons = 2
-
-  return (patron.value.length < numOfPatrons) || (findIndex(patron.value, { title: pt.title }) !== -1)
+  return (patron.value.length < 1) || (findIndex(patron.value, { title: pt.title }) !== -1)
 }
 
 </script>

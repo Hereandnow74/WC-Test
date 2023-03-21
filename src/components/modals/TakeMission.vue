@@ -38,7 +38,8 @@ import type { PropType } from '@vue/runtime-core'
 import TextArea from '../basic/TextArea.vue'
 import { usePlayStore } from '~/store/play'
 import { ALL_PERK_TITLES } from '~/data/constants'
-import { buyAnyCompanion, buyAnyPerk, removeAnyCompanion, removeAnyPerk } from '~/logic/perksLogic'
+import { buyAnyPerk, removeAnyPerk } from '~/logic/perksLogic'
+import { buyAnyCompanion, removeAnyCompanion } from '~/logic/waifuLogic'
 
 const props = defineProps({
   mission: {

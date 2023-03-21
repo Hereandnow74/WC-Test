@@ -65,7 +65,7 @@
           <div class="flex gap-2">
             <Checkbox v-model="localSave" label="Local save" />
             <Checkbox v-model="serverSave" label="Propose to global" />
-            <Checkbox v-if="editMode" v-model="newEntry" label="New entry" title="Add this character as a new one and not an edit" />
+            <Checkbox v-if="editMode" v-model="oldEntry" label="Keep old UID" title="Kee UID so if there is a Waifu Perk for them, it will still work" />
           </div>
           <Button
             :disabled="!!submitMessage || !!processing"
@@ -115,7 +115,7 @@ const { userNickname } = useSaves()
 
 const localSave = ref(true)
 const serverSave = ref(false)
-const newEntry = ref(false)
+const oldEntry = ref(false)
 const sex = ref(props?.character?.tags?.[0] || 'F')
 
 const tierError = ref('')
@@ -199,7 +199,7 @@ const addCharacter = handleSubmit((values) => {
   if (!values.tags.includes(sex.value))
     values.tags.push(sex.value)
   values.tags = values.tags.map((x: string) => waifuTagsByTag[x] ? waifuTagsByTag[x].short : x)
-  values.uid = props.editMode && !newEntry.value ? props.character.uid || random(10000000, 99999999) : random(10000000, 99999999)
+  values.uid = props.editMode && oldEntry.value ? props.character.uid || random(10000000, 99999999) : random(10000000, 99999999)
   if (serverSave.value) {
     processing.value = true
     userNickname.value = values.nickname

@@ -5,8 +5,11 @@ import { defenseObject, talentsObject } from '../data/talents'
 import { useChallenges } from './challenges'
 import { usePlayStore } from './play'
 import { SavedChar, useChargenStore } from './chargen'
+import { useGlobalSettings } from './settings'
 
 const { loan, jumpChain, trHistory, missionRewards } = usePlayStore()
+
+const { bindingDiscount, luresDiscount } = useGlobalSettings()
 
 const {
   baseBudget,
@@ -73,7 +76,7 @@ function costCalc(a: number, x: Perk) {
 
 const pvpPerksCost = computed(() => pvpPerks.value.reduce(costCalc, 0))
 
-const bindingCost = computed(() => binding.value.reduce(costCalc, 0))
+const bindingCost = computed(() => binding.value.reduce(costCalc, 0) * bindingDiscount.value)
 const heritageCost = computed(() => heritage.value.reduce(costCalc, 0))
 
 const ridePerksCost = computed(() => ridePerks.value.reduce(costCalc, 0))
@@ -83,7 +86,7 @@ const defensesCost = computed(() => defensePerks.value.reduce(costCalc, 0))
 const miscPerksCost = computed(() => miscPerks.value.reduce(costCalc, 0))
 const waifuPerksCost = computed(() => waifuPerks.value.reduce((a, x) => a += x.costT ? -(x.refund || 0) : x.cost - (x.refund || 0), 0))
 const genericWaifuPerksCost = computed(() => genericWaifuPerks.value.reduce(costCalc, 0))
-const luresCost = computed(() => luresBought.value.reduce(costCalc, 0))
+const luresCost = computed(() => luresBought.value.reduce(costCalc, 0) * luresDiscount.value)
 const otherCost = computed(() => otherPerks.value.reduce(costCalc, 0))
 
 const specificModsCost = computed(() => specificMods.value.reduce((a, x) => a += x.mod, 0))
@@ -96,7 +99,7 @@ const companionsCost = computed(() => {
       a += x.perk.cost - x.perk.refund
 
     if (['buy', 'unbound'].includes(x.method))
-      return a += CHAR_COSTS[x.priceTier] || 0
+      return a += x.price !== undefined && x.price !== -1 ? x.price : (CHAR_COSTS[x.priceTier] || 0)
     if (x.method === 'yoink') {
       const cost = CHAR_COSTS[x.priceTier] || 0
       const yoinkCost = cost * 0.2 < 1 ? 1 : cost * 0.2
@@ -130,7 +133,7 @@ const companionProfit = computed(() => {
   return captureKoeff.value > 0
     ? companions.value.reduce((a, x) => {
       if (x.method === 'capture' && x.priceTier <= 10) {
-        if (x.price === undefined && x.priceTier !== 0) {
+        if (x.price === undefined) {
           const captureCost = Math.floor(CHAR_COSTS[x.priceTier] * captureKoeff.value)
           a += captureCost
         }

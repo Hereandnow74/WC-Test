@@ -144,6 +144,7 @@ function buyPowerswap(char: DBCharacter, companion: SavedChar) {
     name: char.n,
     cost: char.t < 11 ? CHAR_COSTS[char.t] : 0,
     refund: companion.tier < 11 ? companion.method !== 'capture' ? CHAR_COSTS[companion.tier] : (char.t >= companion.tier ? CHAR_COSTS[companion.tier] : CHAR_COSTS[char.t]) : 0,
+    tags: char.b,
   }
 }
 
@@ -154,6 +155,7 @@ function buyPowerswapForYou(char: DBCharacter) {
     name: char.n,
     cost: CHAR_COSTS[char.t],
     refund: CHAR_COSTS[startingOrigin.value.tier || 1],
+    tags: char.b,
   }
 }
 

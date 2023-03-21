@@ -19,6 +19,7 @@ export interface Swap {
   tier: number
   cost: number
   refund: number
+  tags: string[]
 }
 
 export interface SWP {
@@ -111,7 +112,7 @@ export interface SavedChar {
   uid: number
   originUID?: number
   name: string
-  sex: 'F' | 'M' | 'O'
+  tags: string[]
   world: string
   tier: number
   priceTier: number

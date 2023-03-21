@@ -1,3 +1,5 @@
+import { SavedChar } from '~/store/chargen'
+
 const showInfo = ref(false)
 const showConfirm = ref(false)
 const showCustom = ref(false)
@@ -27,6 +29,20 @@ export function customDialog(msg: string, actions: any[]) {
   })
 }
 
+const showBuyCharDialog = ref(false)
+const buyCompanionOptions = ref<Record<string, any>>({})
+export function buyCompanionDialog(minTier = 0, maxTier = 0) {
+  dialogMessage.value = 'Choose your free companion (max T5)'
+  if (minTier)
+    buyCompanionOptions.value.minTier = minTier
+  if (maxTier)
+    buyCompanionOptions.value.maxTier = maxTier
+  return new Promise<string>((resolve, reject) => {
+    showBuyCharDialog.value = true
+    dialogBus.on(val => val === 'reject' ? reject(new Error('Action Canceled')) : resolve(val))
+  })
+}
+
 export function useDialogs() {
   return {
     showInfo,
@@ -35,5 +51,6 @@ export function useDialogs() {
     dialogMessage,
     showCustom,
     dialogActions,
+    showBuyCharDialog,
   }
 }

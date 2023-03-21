@@ -103,20 +103,20 @@
           :class="{'opacity-100': inFocus}"
         >
           <template v-if="!isAlreadyBought(charData.uid)">
-            <Button v-if="canPurchase" size="Small" bg-color="bg-red-500" label="buy" @click="buyCompanion(char)" />
+            <Button v-if="canPurchase" size="Small" bg-color="bg-red-500" label="buy" @click="buyAnyCompanion(char.u)" />
             <Button
               v-if="(flags.chargen && canPurchase)"
               size="Small"
               bg-color="bg-orange-500"
               label="yoink"
-              @click="yoinkCompanion(charData)"
+              @click="yoinkCompanion(charData.uid)"
             />
             <Button v-if="canPurchase" size="Small" bg-color="bg-violet-600" label="used" @click="usedModal = true" />
-            <Button class="whitespace-nowrap" size="Small" :label="`capture${charCost}`" @click="captureCompanion(charData)" />
+            <Button class="whitespace-nowrap" size="Small" :label="`capture${charCost}`" @click="captureCompanion(charData.uid)" />
           </template>
           <template v-else>
             <Button v-if="flags.chargen" size="Small" label="undo" @click="undoBuying(charData.uid)" />
-            <Button size="Small" :label="`capture copy ${copyCount ? `#${copyCount + 1}` : ''}`" bg-color="bg-orange-500" @click="captureCopy(charData.uid)" />
+            <Button size="Small" :label="`capture copy ${copyCount ? `#${copyCount + 1}` : ''}`" bg-color="bg-orange-500" @click="{captureCopyCompanion(charData.uid); copyCount += 1}" />
           </template>
         </div>
       </div>
@@ -160,7 +160,7 @@
                 <ic:outline-report />
                 Report errors
               </div>
-              <div v-if="isUserChar" class="hover:(text-gray-300 bg-gray-600) cursor-pointer flex items-center gap-1" @click="deleteCharacter">
+              <div v-if="isUserChar" class="hover:(text-gray-300 bg-gray-600) cursor-pointer flex items-center gap-1" @click="deleteLocalCharacter(charData.uid)">
                 <fluent:delete-20-filled />
                 Delete
               </div>
@@ -220,11 +220,11 @@
 <script lang='ts' setup>
 import type { PropType } from '@vue/runtime-core'
 import { Character, DBCharacter } from 'global'
-import { findIndex, intersection, random } from 'lodash-es'
+import { random } from 'lodash-es'
 import { CHAR_COSTS, defTags, PLACEHOLDER_NO_IMAGE, useAllChars, waifusThatHasPerk, waifuTags, nicknames, CHAR_COSTS_TICKET } from '~/data/constants'
-import { lazyLoadSingleImg, tagToggles, showDefenseTags, imageLink, userCharactersShown } from '~/logic'
-import { updateLikesForUser } from '~/logic/auth/authLogic'
-import { buyCompanion, captureCompanion, yoinkCompanion, slightlyCompanion } from '~/logic/waifuLogic'
+import { lazyLoadSingleImg, tagToggles, showDefenseTags, imageLink } from '~/logic'
+import { updateUserInfo, updateUserLikes } from '~/logic/auth/authLogic'
+import { captureCopyCompanion, captureCompanion, yoinkCompanion, slightlyCompanion, deleteLocalCharacter, buyAnyCompanion, undoBuying, isAlreadyBought } from '~/logic/waifuLogic'
 import { usePlayStore } from '~/store/play'
 import { useGlobalSettings } from '~/store/settings'
 import { useStore } from '~/store/store'
@@ -266,7 +266,7 @@ const props = defineProps({
 })
 
 const {
-  flags, companions, localUserCharacters, companionsUIDs, captureKoeff, favorites,
+  flags, captureKoeff, favorites,
   settings, favoritesObject,
 } = useStore()
 const { canPurchase } = useGlobalSettings()
@@ -349,26 +349,6 @@ const image = computed(() => {
 
 watch(settings.value, () => nsfw.value = settings.value.nsfw)
 
-function undoBuying(uid: number) {
-  companions.value.splice(findIndex(companions.value, { uid }), 1)
-}
-
-function captureCopy() {
-  const sex = (intersection(charData.value.tags, ['F', 'M', 'O'])[0] || 'F') as 'F' | 'M' | 'O'
-  companions.value.push({ uid: random(10000000, 99999999), originUID: charData.value.uid, name: charData.value.name, world: charData.value.world, sex, tier: charData.value.tier, priceTier: 0, method: 'capture' })
-  copyCount.value += 1
-}
-
-function isAlreadyBought(uid: number): boolean {
-  return !!companionsUIDs.value[uid]
-}
-
-function deleteCharacter() {
-  const ind = findIndex(localUserCharacters.value, { uid: charData.value.uid })
-  if (ind !== -1)
-    localUserCharacters.value.splice(ind, 1)
-}
-
 onMounted(() => {
   if ((!props.lazy || settings.value.nsfw) && companionEl.value)
     companionEl.value.src = image.value
@@ -381,18 +361,23 @@ watch(image, () => companionEl.value ? companionEl.value.src = image.value : nul
 function likeChar() {
   if (favoritesObject.value[charData.value.uid] !== undefined) {
     favorites.value.splice(favorites.value.indexOf(charData.value.uid), 1)
-    if (likes.value[charData.value.uid] && user.value.id)
+    if (likes.value[charData.value.uid] && user.value.id) {
       likes.value[charData.value.uid] -= 1
+      updateUserLikes(false, { characterUid: charData.value.uid, liked: false })
+    }
   }
   else {
     favorites.value.push(charData.value.uid)
     if (user.value.id) {
-      if (likes.value[charData.value.uid] !== undefined)
+      if (likes.value[charData.value.uid] !== undefined) {
         likes.value[charData.value.uid] += 1
-      else
+        updateUserLikes(false, { characterUid: charData.value.uid, liked: true })
+      }
+      else {
         likes.value[charData.value.uid] = 1
+        updateUserLikes(false, { characterUid: charData.value.uid, liked: true })
+      }
     }
   }
-  updateLikesForUser()
 }
 </script>

@@ -76,7 +76,7 @@
           <Input v-model="image" class="w-full" placeholder="Your image only from Imgur.com example: https://i.imgur.com/jm8eCCA.png" />
           <Input v-model="char.world" class="w-full mt-1" placeholder="Place your SO from" />
           <div class="flex gap-1 mt-1">
-            <Select v-model="char.origin" :options="['Drop-In', 'Extra', 'Substitute', 'Possess']" placeholder="Origin" />
+            <Select v-model="char.origin" :options="startingOrigin.title ==='Walk-In' ? ['Walk-In'] : ['Drop-In', 'Extra', 'Substitute', 'Possess']" placeholder="Origin" />
             <CharacterInput
               v-if="['Substitute', 'Possess'].includes(char.origin)"
               idd="charCard"
@@ -94,7 +94,6 @@
 </template>
 
 <script lang="ts" setup>
-import { findIndex } from 'lodash-es'
 import type { PropType } from 'vue'
 import Input from '../basic/Input.vue'
 import { CHAR_COSTS, useAllChars } from '~/data/constants'
@@ -121,6 +120,7 @@ const props = defineProps({
   },
 })
 
+const { startingOrigin } = useStore()
 const { allCharsObject } = useAllChars()
 
 const image = ref('')

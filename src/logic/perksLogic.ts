@@ -1,12 +1,12 @@
-import { differenceBy, find, findIndex, intersection, intersectionWith, isEmpty, isObject, remove, sample, uniqBy } from 'lodash-es'
+import { differenceBy, find, findIndex, intersection, intersectionWith, isEmpty, isObject, remove, sample, uniqBy, filter } from 'lodash-es'
 import { DLCPerk, Freebie, PerkFull } from 'global'
 import { Intensity } from '../data/intensity'
 import { WaifuPerk } from '../data/waifu_perks'
 import { useChallenges } from '../store/challenges'
 import { usePlayStore } from '../store/play'
-import { SavedChar, useChargenStore } from '../store/chargen'
+import { useChargenStore } from '../store/chargen'
 import { useStore } from '../store/store'
-import { ALL_PERK_STORES, ALL_PERK_TITLES, useAllChars } from '../data/constants'
+import { ALL_PERK_STORES, ALL_PERK_TITLES } from '../data/constants'
 
 // General functions
 export function deleteFreebies(freebies: object) {
@@ -377,10 +377,12 @@ export function chooseRide(ride: Ride, selectedRide: Ride) {
 export function homeAvailable(home: PerkFull): boolean {
   const { allEffects, flags, homePerks } = useStore()
   if (home.whitelist) {
-    // TODO: Do it better
-    if (home.whitelist[0].match(/\(\d+x\)/) && findIndex(homePerks.value, { count: 25 }) !== -1)
+    if (home.title === 'Rainbow Bridge' && intersection(home.whitelist, allEffects.value).length >= (home.needed || home.whitelist.length))
       return true
-    if (intersection(home.whitelist, allEffects.value).length >= (home.needed || home.whitelist.length))
+    if (filter(home.whitelist, (perk) => {
+      const query = perk.title ? { title: perk.title, count: perk.count } : { title: perk }
+      return findIndex(homePerks.value, query) !== -1
+    }).length >= (home.needed || home.whitelist.length))
       return true
     if (home.flag) return flags.value[home.flag]
     return false
@@ -533,26 +535,6 @@ export function removeAnyPerk(perkName: string, count = 1) {
         remove(saveStore, { title: perkName })
     }
   }
-}
-
-const { allCharsObject } = useAllChars()
-
-export function buyAnyCompanion(uid: number, price = -1, method: SavedChar['method'] = 'buy') {
-  const { companions } = useStore()
-  const char = allCharsObject.value[uid]
-  if (char) {
-    const sex = (intersection(char.b, ['F', 'M', 'O'])[0] || 'F') as 'F' | 'M' | 'O'
-    companions.value.push({ uid: char.u, name: char.n, world: char.w, sex, tier: char.t, priceTier: price === -1 ? char.t : 0, method })
-    if (price > 0)
-      companions.value[companions.value.length - 1].price = price
-  }
-}
-
-export function removeAnyCompanion(uid: number) {
-  const { companions } = useStore()
-  const ind = findIndex(companions.value, { uid })
-  if (ind !== -1)
-    companions.value.splice(ind, 1)
 }
 
 export function clearAll() {

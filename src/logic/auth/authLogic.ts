@@ -1,3 +1,4 @@
+import { DBCharacter } from 'global'
 import { useStore } from '~/store/store'
 import { useUser } from '~/store/user'
 
@@ -75,6 +76,7 @@ export async function postRegisterInfoToEndpoint(registerInfo: any): Promise<str
 
 export async function loginToServer(registerInfo: any): Promise<string> {
   const apiUrl = `${SERVER_URL}/${API_VERSION}/auth/login`
+  const { favorites } = useStore()
   const response = await fetch(apiUrl, {
     method: 'POST',
     headers: {
@@ -93,12 +95,14 @@ export async function loginToServer(registerInfo: any): Promise<string> {
     const jsonPayload = JSON.parse(payload)
     tokens.value = jsonPayload.tokens
     user.value = jsonPayload.user
-    const status = await sendVerificationEmail()
-    return status
+    if (!favorites.value || favorites.value.length === 0)
+      favorites.value = user.value.likedCharacters
+    return 'Success'
   }
   // return 'Success'
 }
 
+// TODO: Logout when 401 is returned
 export async function refreshTokens(): Promise<string> {
   if (tokens.value?.refresh?.token) {
     const apiUrl = `${SERVER_URL}/${API_VERSION}/auth/refresh-tokens`
@@ -207,20 +211,21 @@ export async function getCharactersFromServer(): Promise<any[]> {
       const payload = await response.text()
       const jsonPayload = JSON.parse(payload)
       console.log(jsonPayload)
-      return 'Success'
+      return jsonPayload
     }
   }
-  return 'No Token'
+  return ['No Token']
 }
 
 export async function getLikesByUid(uidArr: number[]): Promise<{}> {
+  const uniqUids = Array.from(new Set(uidArr))
   const apiUrl = `${SERVER_URL}/${API_VERSION}/characters/likes`
   const response = await fetch(apiUrl, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
     },
-    body: JSON.stringify(uidArr),
+    body: JSON.stringify(uniqUids),
   })
 
   if (!response.ok) {
@@ -235,9 +240,8 @@ export async function getLikesByUid(uidArr: number[]): Promise<{}> {
   }
 }
 
-export async function updateLikesForUser(tried = false): Promise<void> {
+export async function updateUserInfo(tried = false, info: object): Promise<string> {
   if (tokens.value?.access?.token) {
-    const { favorites } = useStore()
     const apiUrl = `${SERVER_URL}/${API_VERSION}/users/${user.value.id}`
     const response = await fetch(apiUrl, {
       method: 'PATCH',
@@ -245,13 +249,13 @@ export async function updateLikesForUser(tried = false): Promise<void> {
         'Content-Type': 'application/json',
         'Authorization': `Bearer ${tokens.value.access.token}`,
       },
-      body: JSON.stringify({ likedCharacters: favorites.value }),
+      body: JSON.stringify(info),
     })
 
     if (!response.ok) {
       const errorText = await response.text()
       if (!tried)
-        refreshTokens().then(x => updateLikesForUser(true))
+        refreshTokens().then(x => updateUserInfo(true, info))
       return JSON.parse(errorText).message
     }
     else {
@@ -259,8 +263,39 @@ export async function updateLikesForUser(tried = false): Promise<void> {
       const jsonPayload = JSON.parse(payload)
       if (jsonPayload.id)
         user.value = jsonPayload
+      return 'Successfully updated your user info.'
     }
   }
+  return 'Don\'t have access, you need to login.'
+}
+
+export async function updateUserLikes(tried = false, info: {characterUid: number; liked: boolean}): Promise<string> {
+  if (tokens.value?.access?.token) {
+    const apiUrl = `${SERVER_URL}/${API_VERSION}/users/${user.value.id}/likes`
+    const response = await fetch(apiUrl, {
+      method: 'PATCH',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${tokens.value.access.token}`,
+      },
+      body: JSON.stringify(info),
+    })
+
+    if (!response.ok) {
+      const errorText = await response.text()
+      if (!tried)
+        refreshTokens().then(x => updateUserInfo(true, info))
+      return JSON.parse(errorText).message
+    }
+    else {
+      const payload = await response.text()
+      const jsonPayload = JSON.parse(payload)
+      if (jsonPayload.length)
+        user.value.likedCharacters = jsonPayload
+      return 'Successfully updated your likes.'
+    }
+  }
+  return 'Don\'t have access, you need to login.'
 }
 
 export async function recalculateLikesOnServer(): Promise<void> {
@@ -282,5 +317,43 @@ export async function recalculateLikesOnServer(): Promise<void> {
       const payload = await response.text()
       console.log(payload)
     }
+  }
+}
+
+interface SearchRequest {
+  tier?: {
+    minTier: number
+    maxTier: number
+  }
+  tags?: {
+    tag: string
+    include: boolean
+  }[]
+  hasNsfw?: boolean
+  newerThan?: Date
+  sortBy?: string // Example: likes:desc or likes:asc
+  limit?: number
+  page?: number
+}
+
+export async function searchForCharacters(request: SearchRequest): Promise<DBCharacter[]> {
+  const apiUrl = `${SERVER_URL}/${API_VERSION}/characters/search`
+  const response = await fetch(apiUrl, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(request),
+  })
+
+  if (!response.ok) {
+    const errorText = await response.text()
+    console.log(JSON.parse(errorText).message)
+    return []
+  }
+  else {
+    const payload = await response.text()
+    const jsonPayload = JSON.parse(payload)
+    return jsonPayload
   }
 }

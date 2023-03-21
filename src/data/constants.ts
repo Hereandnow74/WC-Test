@@ -23,11 +23,11 @@ export const VERSION = '0.8'
 
 export const nicknames = [
   'Definitely not Dio',
+  'Despin',
   'Roger M.',
   'Darin E.',
   'cameron ngo',
   'ClayUndead',
-  'Despin',
   'Templar9999',
   'Cyrus',
   'TaiGambol',
@@ -300,25 +300,27 @@ export const ALL_DLC_PERK_TITLES = computed(() => {
 
 export const ALL_PERK_TITLES = computed(() => {
   const result = {} as Record<string, PerkFull>
-  const all = [intensity, bindings, lures, lureExpansions, otherControls, heritages, homes, demiplane, dungeon, defenses, talents, perks, genericPerks, waifu_perks, DLCperks, DLChomes, DLCgenericPerks, DLCheritages, DLCtalents, DLClureExpansions, DLCbindings, DLClures, DLCotherControls, DLCridePerks, fullHeritagesDLC]
+  const all = [intensity, bindings, lures, lureExpansions, otherControls, heritages, homes, demiplane, dungeon, defenses, talents, perks, genericPerks, waifu_perks, DLCperks, DLChomes, DLCgenericPerks, DLCheritages, DLCtalents, DLClureExpansions, DLCbindings, DLClures, DLCotherControls, DLCridePerks, fullHeritagesDLC, invasionPvP]
   all.forEach(p => addTitles<typeof p[0]>(result, p))
   return result
 })
 
-const { binding, luresBought, heritage, ridePerks, homePerks, talentPerks, defensePerks, otherPerks, miscPerks, waifuPerks, genericWaifuPerks } = useChargenStore()
+const { binding, luresBought, heritage, ridePerks, homePerks, talentPerks, defensePerks, otherPerks, miscPerks, waifuPerks, genericWaifuPerks, pvpPerks } = useChargenStore()
 
 export const ALL_PERK_STORES = {
-  Binding: binding.value,
-  Lure: luresBought.value,
-  Heritage: heritage.value,
-  RidePerk: ridePerks.value,
-  Home: homePerks.value,
-  Talent: talentPerks.value,
-  Defense: defensePerks.value,
-  Other: otherPerks.value,
-  Misc: miscPerks.value,
-  Waifu: waifuPerks.value,
-  Generic: genericWaifuPerks.value,
+  'Binding': binding.value,
+  'Lure': luresBought.value,
+  'Heritage': heritage.value,
+  'RidePerk': ridePerks.value,
+  'Home': homePerks.value,
+  'Talent': talentPerks.value,
+  'Defense': defensePerks.value,
+  'Other': otherPerks.value,
+  'Misc': miscPerks.value,
+  'Waifu': waifuPerks.value,
+  'Generic': genericWaifuPerks.value,
+  'Invasion': pvpPerks.value,
+  'Other Control': otherPerks.value,
 }
 
 export const LINKS = computed(() => {

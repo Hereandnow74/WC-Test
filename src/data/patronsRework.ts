@@ -1,5 +1,3 @@
-import { useStore } from '../store/store'
-import { useGlobalSettings } from '../store/settings'
 
 export const patronIntro = `
 So you wish to have a Patron do you? Patrons typically demand a bit more personal effort from you then the company does. For some, it's not always worth the benefits they give out. Few Contractors appreciate how hands off the company is till their Patron demands entertainment they no longer wish to provide. 
@@ -14,9 +12,6 @@ export const patronNote = `
 <h3 class='font-semibold underline text-center'>Authors note</h3>
 Patrons are generic for a reason. Make them fun and interesting for your story. By default, a Patron is a part of the company, however authors can choose instead to have Patrons as beings separate from the company that are offering a version of the catalog that they are backing.
 `
-
-const { baseBudget, startingWorld, manualKf, manualSellKf } = useStore()
-const { canPurchase } = useGlobalSettings()
 
 export const patrons = [
   {
@@ -42,10 +37,6 @@ export const patrons = [
       <p>However, it wouldn’t be an isekai adventure if you didn’t go seeking adventure. You cannot leave a world until you complete a local Standard or Grand mission in it. Accessing company spaces and taking a mission elsewhere are the only exceptions to this rule.</p>
       <p>Finally, the genie forbids you from purchasing Waifus. It isn’t an adventure if you don’t make a party yourself over the course of your journey.</p>
     `,
-    effect: {
-      set: () => canPurchase.value = false,
-      remove: () => canPurchase.value = true,
-    },
   },
   {
     title: 'The Fae',
@@ -91,10 +82,7 @@ export const patrons = [
       <p>As a gift, take the Red and White Eye Orbs for free.  Whenever you join an invasion, the Devil grants you the ability to choose who you wish  to support. This may be the invader, the defender, or neither. The Devil's interference replaces your crimson or golden aura with an inky darkness instead, making it impossible for others to identify your allegiance. You will be a dark horse on the board that many may instead wish to eliminate in fear of you interfering with their plans. The Devil does not want its protege to grow complacent in their power, revoking your option to turn down invasions from your White Eye Orb.</p>
       <p>The Devil loves to see some additional entertainment and will provide an incentive for you to supply it. When participating in Arranged or Gauntlet PvP, you receive an extra 10% to the credits you would normally receive.</p>
     `,
-    effect: {
-      // set: () => { buyAnyPerk('White Eye Orb'); buyAnyPerk('Red Eye Orb') },
-      // remove: () => { removeAnyPerk('White Eye Orb'); removeAnyPerk('Red Eye Orb') },
-    },
+
   },
   {
     title: 'Great Old One',
@@ -107,10 +95,6 @@ export const patrons = [
       <p>Your connection to the Dreamer turns your dreams to nightmares whenever you sleep. Your nightmares then manifest into reality, and are hostile to you. They cannot be bound, and will not rest, relentlessly seeking your destruction above all else to return to the calm oblivion from whence they came. Only a IMG ticket will appease the Dreamer and put your nightmares to rest.</p>
       <p>Your tribulations do not end there however, as your connection to the Great Old One attracts other outsiders in the same universe. The greater your tier, the more powerful the pull.</p>
     `,
-    effect: {
-      // set: () => { buyAnyPerk('Lurking on the Threshold'); buyAnyPerk('Ancestral Diversity') },
-      // remove: () => { removeAnyPerk('Lurking on the Threshold'); removeAnyPerk('Ancestral Diversity') },
-    },
   },
   {
     title: 'The Merchant',
@@ -123,10 +107,6 @@ export const patrons = [
       <p>The merchant sees you as a potentially worthwhile investment and acts as your lender for the Cash Still Rules loan.</p>
       <p>The avaricious nature of the merchant has a lasting influence on you, amplifying your own greed and materialistic desire. You are more likely to periodically obsess over gaining wealth and making a profit.</p>
     `,
-    effect: {
-      // set: () => { buyAnyPerk('Green Eye Orb'); buyAnyPerk('Communication Talent') },
-      // remove: () => { removeAnyPerk('Green Eye Orb'); removeAnyPerk('Communication Talent') },
-    },
   },
   {
     title: 'The Programmer',
@@ -163,10 +143,6 @@ export const patrons = [
       <p>The Fallen Legion does not allow those left behind to suffer alone. As such you can only have traumatized waifus as members of your retinue. No effort will be able to fix and heal the trauma that will forever be a part of them. You can make sure they do not suffer alone, and look after them all the same. Furthermore, capturing a target now causes them to relive their greatest trauma giving them 1 or 2 trauma tiers depending on the severity. Refer to Slightly Used for more details.</p>
       <p>The Legion ensures that you are only able to purchase Slightly Used Waifu with a trauma of tier 2 or higher. In fact, when it comes to spinning the metaphorical wheel, they will  ensure that you receive no waifu with a lower trauma tier. To compensate, purchased Slightly Used waifu are guaranteed to be tier 4 or higher, and the chances for a purchased Slightly used Waifu to be of a greater tier are quadrupled.</p>
     `,
-    effect: {
-      // set: () => { buyAnyPerk('Conjunction'); buyAnyPerk('Communication Talent') },
-      // remove: () => { removeAnyPerk('Conjunction'); removeAnyPerk('Communication Talent') },
-    },
   },
   {
     title: 'Nice Guy',

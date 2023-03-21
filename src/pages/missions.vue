@@ -134,7 +134,7 @@ const options = reactive({
   useExtendedSearch: true,
   threshold: 0.4,
   ignoreLocation: true,
-  keys: ['loca', 'scope', 'author', 'desc', 'conditions.value', 'objectives.value', 'objectives.reward', 'reward'],
+  keys: ['title', 'loca', 'scope', 'author', 'desc', 'conditions.value', 'objectives.value', 'objectives.reward', 'reward'],
   shouldSort: false,
 })
 
@@ -150,6 +150,7 @@ const searchedMissions = computed(() => {
   if (search.value) {
     sopt.$and.push({
       $or: [
+        { title: `'"${search.value}"` },
         { desc: `'"${search.value}"` },
         { reward: `'"${search.value}"` },
         { 'conditions.value': `'"${search.value}"` },

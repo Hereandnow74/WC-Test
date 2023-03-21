@@ -57,7 +57,10 @@ const list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
 const value = ref(props.modelValue || list[0] || 0)
 const index = ref(list.indexOf(value.value))
 
-watch(props, () => value.value = props.modelValue)
+watch(props, () => {
+  value.value = props.modelValue
+  index.value = list.indexOf(value.value)
+})
 
 const emit = defineEmits(['update:modelValue'])
 

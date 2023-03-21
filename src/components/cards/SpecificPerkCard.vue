@@ -71,7 +71,7 @@
           <router-link :to="isNumber(waifuPerk.waifuUID[i]) ? `/companions/?name=${wf}` : `#${wf}`" class="hover:underline">
             {{ wf }}
           </router-link>
-          <span v-if="isNumber(waifuPerk.waifuUID[i]) && !companionsUIDs[waifuPerk.waifuUID[i]]" title="Buy companion" class="icon-text-btn bg-gray-600 rounded py-0.5 px-1 text-gray-200" @click.stop="purchaseCompanion(waifuPerk.waifuUID[i])">
+          <span v-if="isNumber(waifuPerk.waifuUID[i]) && !companionsUIDs[waifuPerk.waifuUID[i]]" title="Buy companion" class="icon-text-btn bg-gray-600 rounded py-0.5 px-1 text-gray-200" @click.stop="buyAnyCompanion(waifuPerk.waifuUID[i])">
             <mdi:cart-variant />
           </span>
         </span>
@@ -96,12 +96,12 @@
 
 <script lang="ts" setup>
 import type { PropType } from 'vue'
-import { findIndex, isNumber, isString, find } from 'lodash-es'
+import { findIndex, isNumber } from 'lodash-es'
 import { WaifuPerk } from '~/data/waifu_perks'
 import { chooseWaifuPerk, lazyLoadSingleImg, specificAvailable } from '~/logic'
 import { useStore } from '~/store/store'
-import { CHAR_COSTS, CHAR_COSTS_TICKET, PLACEHOLDER_IMAGE, useAllChars } from '~/data/constants'
-import { buyCompanion } from '~/logic/waifuLogic'
+import { CHAR_COSTS, CHAR_COSTS_TICKET, PLACEHOLDER_IMAGE } from '~/data/constants'
+import { buyAnyCompanion } from '~/logic/waifuLogic'
 
 const props = defineProps({
   waifuPerk: {
@@ -109,8 +109,6 @@ const props = defineProps({
     default: () => ({}),
   },
 })
-
-const { allCharsObject } = useAllChars()
 
 const chosenWaifu = ref(props.waifuPerk.tier ? props.waifuPerk.waifu[0] : '')
 const imageEl = ref<HTMLImageElement | null>(null)
@@ -131,7 +129,7 @@ const gachaTable = [
   [1000, 2677],
 ]
 
-const { settings, waifuPerks, companionsByUID, companions, companionsUIDs, startingOrigin } = useStore()
+const { settings, waifuPerks, companionsByUID, companionsUIDs, startingOrigin } = useStore()
 
 const waifuList = computed(() => {
   let res = {} as Record<string, number>
@@ -197,11 +195,5 @@ onMounted(() => {
   if (imageEl2.value)
     lazyLoadSingleImg(imageEl2.value)
 })
-
-function purchaseCompanion(uid: number) {
-  const char = allCharsObject.value[uid]
-  if (char)
-    buyCompanion(char)
-}
 
 </script>

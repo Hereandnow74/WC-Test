@@ -62,40 +62,6 @@
         </div>
         <div class="flex rounded bg-gray-600 cursor-pointer">
           <div
-            :class="gender==='F' ? 'bg-gray-700':''"
-            class="hover:bg-gray-700 text-pink-300 px-2 rounded-l"
-            title="Female"
-            @click="gender='F'"
-          >
-            F
-          </div>
-          <div
-            :class="gender==='M' ? 'bg-gray-700':''"
-            class="border-l border-r px-2 hover:bg-gray-700 text-blue-400"
-            title="Male"
-            @click="gender='M'"
-          >
-            M
-          </div>
-          <div
-            :class="gender==='O' ? 'bg-gray-700':''"
-            class="border-l border-r px-2 hover:bg-gray-700 text-violet-400"
-            title="Other"
-            @click="gender='O'"
-          >
-            O
-          </div>
-          <div
-            :class="gender==='' ? 'bg-gray-700':''"
-            class="hover:bg-gray-700 px-2 text-gray-200 rounded-r"
-            title="All"
-            @click="gender=''"
-          >
-            A
-          </div>
-        </div>
-        <div class="flex rounded bg-gray-600 cursor-pointer">
-          <div
             :class="nsfw==='' ? 'bg-gray-700':''"
             class="hover:bg-gray-700 text-green-300 px-2 rounded-l"
             @click="(nsfw='', favorite=0)"
@@ -143,6 +109,14 @@
             new
           </div>
         </div>
+        <div
+          :class="{'bg-green-600': top100}"
+          class="px-2 hover:bg-gray-700 text-gray-200 rounded bg-gray-600 cursor-pointer text-red-500"
+          title="New Changes"
+          @click="top100 = !top100"
+        >
+          top 100
+        </div>
         <bi:gear-fill class="icon-btn" @click="toggleSearchSetting" />
         <div class="hidden md:block">
           {{ sortedResults.length }} results
@@ -183,7 +157,7 @@
         :style="{top: `${topPosition}px`, 'grid-template-columns': `repeat(${cardRowCount}, 1fr)`}"
       >
         <CompanionCard
-          v-for="{ item: char } in slicedChars"
+          v-for="char in slicedChars"
           :key="char.type === 'local' ? `l${char.u}` : char.u"
           :char="char"
           :with-image="!settings.allImg"
@@ -213,7 +187,7 @@
 </template>
 
 <script lang="ts" setup>
-import { every, intersection, some, shuffle, throttle } from 'lodash-es'
+import { every, intersection, some, shuffle, throttle, slice } from 'lodash-es'
 import { DBCharacter } from 'global'
 import { useStore } from '~/store/store'
 
@@ -222,7 +196,7 @@ import { waifuTags, useAllChars } from '~/data/constants'
 import { usePlayStore } from '~/store/play'
 import { useSettings } from '~/logic/searchSettings'
 import { useCompanionsLogic } from '~/logic/pagesLogic/companionsLogic'
-import { getLikesByUid } from '~/logic/auth/authLogic'
+import { getLikesByUid, searchForCharacters } from '~/logic/auth/authLogic'
 
 const { startingWorld, favorites, settings, companionsUIDs, defenseRetinueDiscountAuto } = useStore()
 const { jumpChain, likes } = usePlayStore()
@@ -231,7 +205,8 @@ const { minTier, maxTier, worldName, blockedWorlds } = useSettings()
 const search = ref('')
 const position = ref(0)
 
-const gender = ref('')
+const top100 = ref(false)
+
 const nsfw = ref('')
 const favorite = ref(0)
 const local = ref(0)
@@ -361,7 +336,6 @@ const filteredCharacters = computed(() => {
       )
       break }
   }
-  if (gender.value) sopt.$and.push({ b: `=${gender.value}` })
 
   if (nsfw.value) sopt.$and.push({ in: nsfw.value })
   if (favorite.value === 1) sopt.$and.push({ u: `=${favorites.value.join('|=')}` })
@@ -411,18 +385,21 @@ const sortingFunc = (a: any, b: any) =>
 const sortedResults = computed(() => {
   console.log('sortedResults')
   if (shuffleOn.value)
-    return shuffle(secondFilter.value)
+    return shuffle(secondFilter.value).map(x => x.item)
   if (sortRating.value || sortAlpha.value || sortWorld.value)
-    return [...secondFilter.value].sort(sortingFunc)
-  return secondFilter.value
+    return [...secondFilter.value].sort(sortingFunc).map(x => x.item)
+  return secondFilter.value.map(x => x.item)
 })
 
+const top100chars = ref<DBCharacter[]>([])
+watch(top100, () => top100.value ? searchForCharacters({ sortBy: 'likes:desc', limit: 100 }).then(x => top100chars.value = x.results.map(char => ({ u: char.uid, n: char.name, w: char.world, t: char.tier, b: char.tags, i: char.sfwImage, s: char.sfwImageSource, d: char.subWorld, in: char.nsfwImage }))) : null)
+
 const slicedChars = computed(() => {
-  return sortedResults.value.slice(position.value, position.value + limit.value)
+  return top100.value ? top100chars.value : sortedResults.value.slice(position.value, position.value + limit.value)
 })
 
 async function getLikes() {
-  likes.value = await getLikesByUid(slicedChars.value.map(x => x.item.u))
+  likes.value = await getLikesByUid(slicedChars.value.map(x => x.u))
 }
 
 const throttledLikes = throttle(getLikes, 200)
@@ -449,7 +426,7 @@ const opt = {
 const observer = new IntersectionObserver(visibilityChanged, opt)
 
 watch(slicedChars, () => {
-  if (sortedResults.value.length <= limit.value) return
+  if (sortedResults.value.length <= limit.value || slicedChars.value.length === 100) return
   observer.disconnect()
   if (firstCard.value && lastCard.value) {
     firstCard.value.id = ''

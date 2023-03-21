@@ -1,6 +1,63 @@
 [
   
   {
+    "reward": 500,
+    "image": "",
+    "author": "ForPlot",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "A Doom Splintered",
+    "loca": "Tolkien's Legendarium",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "Fingolfin",
+        "type": "Companions",
+        "value": "Prevent the Noldor under Fingon and Fingolfin from being part of the Kinslaying at Alqualondë"
+      },
+      {
+        "reward": 40,
+        "type": "Credits",
+        "value": "Prevent the Fall of Gondolin"
+      },
+      {
+        "reward": 25,
+        "type": "Credits",
+        "value": "Prevent the fall of Barad Eithel"
+      },
+      {
+        "reward": 25,
+        "type": "Credits",
+        "value": "Prevent the fall of Nargothrond"
+      },
+      {
+        "reward": 1,
+        "type": "IMG Tickets",
+        "value": "Complete the Mission as a dragon (aka hard mode)"
+      },
+      {
+        "reward": 500,
+        "type": "Credits",
+        "value": "Complete the Mission while being unable to remember any of your prior knowledge of Tolkien's Legendarium and any sources of said knowledge being unavailable."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You can only use mind control on the forces of Morgoth."
+      },
+      {
+        "value": "The use of technology not native to Tolkien's Legendarium is prohibited."
+      },
+      {
+        "value": "You and any of your retinue above T7 will be limited to T7 strength and abilities for the duration of the mission."
+      }
+    ],
+    "budget": 0,
+    "desc": "This mission is to prevent the fall of the Noldor and the fading of the fantasy elements from Middle-Earth.",
+    "uid": "nCDpK"
+  },
+  {
     "reward": 3,
     "image": "",
     "author": "Ataraxia",
@@ -42,7 +99,7 @@
     ],
     "budget": 0,
     "desc": "Let's face it, there's a lot of settings where being in school is the norm, whether it's the main focus or merely a plot device to set up another list of ideas, and more often than not these schools have some kind of unique requirements, tests, or entrance exams that you need to pass before you're allowed entry. \n\nThe goal for this mission? \n\nBe recognized as one of the 'Top Scorers' for your local school's entrance exams, being in the overall \"Top Ten\" scorers across all tested subjects. \n\nAlternatively, if the time for Entrance exams have already passed, be recognized as a Top Scorer for the Mid-Terms or Final Exams instead. \n\nP.S. \nThis is repeatable if you're going to be stuck in the school for a while, or if you enter a new school. And no, the additional objectives do not stack with each other, so if you rank 1st or get a perfect score you get the base reward plus the bonus for that, not all rewards for all the other additional objectives as well.",
-    "uid": "QjJBJ"
+    "uid": "ZFDOT"
   },
   {
     "reward": 500,
@@ -58,22 +115,22 @@
       {
         "reward": 50,
         "type": "Credits",
-        "value": "Advance the setting on average to produce technology for a Type-0.5 civilization on the Kardashev Scale"
+        "value": "Advance the setting on average to a Type-0.5 civilization on the Kardashev Scale"
       },
       {
         "reward": 250,
         "type": "Credits",
-        "value": "Advance the setting on average to produce technology for a Type-1 civilization on the Kardashev Scale"
+        "value": "Advance the setting on average to a Type-1 civilization on the Kardashev Scale"
       },
       {
         "reward": 1000,
         "type": "Credits",
-        "value": "Advance the setting on average to produce technology for a Type-1.5 civilization on the Kardashev Scale"
+        "value": "Advance the setting on average to a Type-1.5 civilization on the Kardashev Scale"
       },
       {
         "reward": 1,
         "type": "IMG Tickets",
-        "value": "Advance the setting on average to produce technology for a Type-2 civilization on the Kardashev Scale"
+        "value": "Advance the setting on average to a Type-2 civilization on the Kardashev Scale"
       },
       {
         "reward": 50,
@@ -135,7 +192,7 @@
     ],
     "budget": 1,
     "desc": "Welcome, welcome Contractor. My name is Clay the Undead and I bring you grim tidings(or happy, depending on your standing.). You see, you have been selected to become an Endbringer, a creature of destruction and carnage made to oppose a civilization. But, don't let the name fool you! Endbringers don't actually end them. No, Endbringers are there to force a civilization to adapt and overcome, to evolve and think! Your job is to sow chaos and force a civilization to overcome you. Fortunately that, while this mission isn't a choice, I was able to secure you an extra 200 Credits for your initial build to help facilitate your destruction.",
-    "uid": "NnuNK"
+    "uid": "IJGFR"
   },
   {
     "reward": "Taylor",
@@ -151,7 +208,7 @@
     "conditions": [],
     "desc": "Mission Conditions:\nTaylor Hebert Triggered for lack of anyone who cared enough to save her. Congratulations — you're her savior and her partner. Your primary purpose is to ensure Taylor Hebert finds success and happiness in life. Good luck.\nYou are acting as Taylor's power. This has a number of different effects — you cannot directly countermand her instructions, although you can creatively interpret them. Additionally, you can't simply solve things in the background without her knowing, and you aren't allowed to intentionally escalate past Taylor. Until she willingly has you kill, maim, or use one of your Bindings or Master abilities you can't go around using them on your own.\nTaylor is immune to all forms of control, including Bindings and the memetic addictive effects of Lures. She is not immune to social manipulation, gaslighting, grooming, or any other more mundane methods of control if you're subtle and skilled enough to pierce her bubble of stubborn bullheadedness. She cannot be captured by any means until the mission is completed.\nDespite this, Taylor counts as a member of your retinue for all other purposes, including Talents, Heritage perks, Defenses, and other effects. You can freely purchase Template Stacking for her, although you can't Power Swap her to anyone else — you're her power, after all. Also, as you're acting as her power, she is of course without her canonical insect control ability.\nThe Mission does not count as complete until Taylor is truly and fully satisfied with her life. In most world lines, this will involve being a successful hero, but other good ends do exist for her depending on your nature and the choices you both make.\nMission Rewards:\nDue to the mission's duration and nature locking you to Taylor for an extended period, you do get some bonuses.\nFor the duration of your stay in Earth Bet, you will benefit from all defenses at a level of your choice. This is opt-in and can be fine-tuned to your personal desires.\nEvery time Taylor wins a cape fight, you receive a small sum of credits. This is subject to diminishing returns based on how significant the win is, so you can't simply grind the same street-level gangs for infinite budget.\nIf Taylor becomes part of a Cape Team, this rewards credits depending on the number, strength, and coherence of the team. Having a smaller, closer team is worth more than a massive loose collection. Social links matter. Taylor being or becoming the leader, officially or not, increases this value.\nYou cannot buy waifus for the duration of the mission.",
     "budget": 0,
-    "uid": "nWFnB"
+    "uid": "tMoMk"
   },
   {
     "reward": "Template 1 & 2 of spider-man + 20 credits",
@@ -213,7 +270,7 @@
     ],
     "budget": 0,
     "desc": "Peter Parker a person better known by his hero identity Spider-Man,  and an important integrant of the Web of Life and Destiny, is dead. In a world with strong similarities to the MCU and the Spider-man Games, our hero was ambushed by the sinister's six, and later died in his bed from the wounds. One of our clients issued this mission to help the fallen hero settle some of his issues left. ",
-    "uid": "gFQoB"
+    "uid": "PdDIo"
   },
   {
     "conditions": [
@@ -943,7 +1000,7 @@
     "author": "Zaralann",
     "loca": "Harry Potter",
     "scope": "Grand",
-    "image": "https://i.imgur.com/7LNzQIpl.jpg",
+    "image": "https://i.imgur.com/vYDQarL.jpg",
     "reward": 2500,
     "uid": "VOYXJ"
   },

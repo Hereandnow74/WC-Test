@@ -6224,7 +6224,6 @@
     "w": "Disney",
     "b": [
       "M",
-      "sc",
       "sl",
       "sa",
       "pr",
@@ -21573,7 +21572,6 @@
       "hz",
       "cl",
       "sc",
-      "dc",
       "sd",
       "sr",
       "sa",
@@ -21910,7 +21908,8 @@
     "w": "Bleach",
     "b": [
       "F",
-      "C"
+      "C",
+      "sn"
     ],
     "d": "Shinigami"
   },
@@ -25589,7 +25588,9 @@
     "w": "Cowboy Bebop",
     "b": [
       "F",
-      "C"
+      "C",
+      "sl",
+      "cm"
     ],
     "in": "https://pictures.hentai-foundry.com/b/BBC-Chan/622742/BBC-Chan-622742-Faye_Valentine.jpg"
   },
@@ -27134,7 +27135,8 @@
     "w": "Danmachi",
     "b": [
       "F",
-      "C"
+      "C",
+      "cm"
     ],
     "d": "Hestia Familia"
   },
@@ -27942,7 +27944,8 @@
     "s": "https://www.deviantart.com/fennyris/art/Sam-Manson-Danny-Phantom-698428933",
     "w": "Danny Phantom",
     "b": [
-      "F"
+      "F",
+      "sd"
     ]
   },
   {
@@ -27990,7 +27993,8 @@
     "s": "https://www.deviantart.com/gzone-art/art/Paulina-in-standard-clothing-661520609",
     "w": "Danny Phantom",
     "b": [
-      "F"
+      "F",
+      "sd"
     ]
   },
   {
@@ -28017,7 +28021,8 @@
     "s": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e1660c09-c1fc-44f8-b153-95fa141e833b/dby0tkt-9b6bfbc0-6006-4aba-89f9-732481c78180.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2UxNjYwYzA5LWMxZmMtNDRmOC1iMTUzLTk1ZmExNDFlODMzYlwvZGJ5MHRrdC05YjZiZmJjMC02MDA2LTRhYmEtODlmOS03MzI0ODFjNzgxODAucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.H79dZgCfGVN4ooc9hQMmWFTc3zUwy9hH58_J8NBI2x4",
     "w": "Danny Phantom",
     "b": [
-      "F"
+      "F",
+      "sd"
     ]
   },
   {
@@ -29118,8 +29123,8 @@
     "u": 5160,
     "n": "Jinx",
     "t": 4,
-    "i": "dc_drawing_jinx_6.png",
-    "s": "https://i.ya-webdesign.com/images/dc-drawing-jinx-6.png",
+    "i": "https://i.imgur.com/sRh2pUFl.jpg",
+    "s": "https://i.imgur.com/sRh2pUF.jpg",
     "w": "DC",
     "b": [
       "F",
@@ -34212,7 +34217,8 @@
     "s": "https://livedoor.sp.blogimg.jp/polygonz373100-10/imgs/7/b/7b121933.jpg",
     "w": "Digimon",
     "b": [
-      "F"
+      "F",
+      "fa"
     ],
     "in": "https://livedoor.blogimg.jp/fumidari/imgs/1/3/13d814dc.jpg",
     "d": "Data Squad"
@@ -34861,6 +34867,7 @@
     "b": [
       "F",
       "pc",
+      "ct",
       "rl"
     ]
   },
@@ -40053,6 +40060,7 @@
       "F",
       "C",
       "ps",
+      "dr",
       "ip",
       "vp",
       "su"
@@ -41940,7 +41948,9 @@
       "F",
       "C",
       "gd",
-      "el"
+      "el",
+      "rl",
+      "cm"
     ],
     "d": "Morrowind"
   },
@@ -43230,7 +43240,14 @@
     "w": "Exalted",
     "b": [
       "F",
-      "C"
+      "C",
+      "id",
+      "un",
+      "ev",
+      "sa",
+      "cm",
+      "im",
+      "nc"
     ],
     "d": "Exalted - Abyssals"
   },
@@ -43496,7 +43513,12 @@
     "w": "Exalted",
     "b": [
       "F",
-      "C"
+      "C",
+      "st",
+      "cl",
+      "sl",
+      "ev",
+      "vn"
     ],
     "d": "Exalted - Infernals"
   },
@@ -43522,7 +43544,9 @@
     "b": [
       "F",
       "C",
-      "ct"
+      "ct",
+      "sr",
+      "cc"
     ],
     "d": "Exalted - Lunars",
     "s": "https://images4.imagebam.com/71/94/9d/ME9YMWY_o.png",
@@ -43864,7 +43888,12 @@
     "s": "https://i.pinimg.com/originals/01/b5/e1/01b5e10910cf4278cf2caa8c04f1bb20.jpg",
     "w": "Fairy Tail",
     "b": [
-      "M"
+      "M",
+      "ps",
+      "ip",
+      "me",
+      "sr",
+      "cm"
     ]
   },
   {
@@ -44410,7 +44439,9 @@
       "C",
       "di",
       "dn",
-      "ct"
+      "me",
+      "ct",
+      "sr"
     ],
     "d": ""
   },
@@ -44451,7 +44482,8 @@
     "w": "Fairy Tail",
     "b": [
       "F",
-      "C"
+      "C",
+      "sr"
     ],
     "d": ""
   },
@@ -51241,8 +51273,8 @@
     "u": 10619,
     "n": "Frankie Foster",
     "t": 1,
-    "i": "4034783a7559594597167ff6e4ceb5f6.png",
-    "s": "https://i.pinimg.com/originals/40/34/78/4034783a7559594597167ff6e4ceb5f6.png",
+    "i": "https://i.imgur.com/4O5iUmkl.jpg",
+    "s": "https://i.imgur.com/4O5iUmk.jpg",
     "w": "Foster's Home for Imaginary Friends",
     "b": [
       "F"
@@ -52385,11 +52417,10 @@
     "w": "GATE: Thus the JSDF Fought There!",
     "b": [
       "F",
-      "sc",
+      "sl",
       "pc",
       "rl",
-      "sa",
-      "sl"
+      "sa"
     ]
   },
   {
@@ -62180,7 +62211,6 @@
       "mt",
       "sc",
       "mo",
-      "sl",
       "ev",
       "fa"
     ],
@@ -66565,10 +66595,9 @@
     "w": "History's Strongest Disciple Kenichi",
     "b": [
       "F",
-      "sc",
+      "sl",
       "sd",
-      "cm",
-      "sl"
+      "cm"
     ],
     "in": "https://i.ibb.co/chp0DJS/immagine.png"
   },
@@ -67471,6 +67500,7 @@
       "C",
       "P",
       "hr",
+      "hz",
       "cl",
       "th"
     ]
@@ -67540,7 +67570,10 @@
     "b": [
       "F",
       "C",
-      "P"
+      "P",
+      "th",
+      "tc",
+      "cm"
     ],
     "in": "https://cdn.donmai.us/sample/a1/72/__murata_himeko_honkai_and_1_more_drawn_by_gotointhepark__sample-a172a0a2650ac7161a23db7d86698173.jpg"
   },
@@ -67774,12 +67807,14 @@
     "u": 7281,
     "n": "Bella/Benares",
     "t": 7,
-    "i": "cai__sample_c181810ef4eef4def317119a7c77a645.jpg",
-    "s": "https://danbooru.donmai.us/posts/4030989",
+    "i": "[n]ANwPwPe.jpg",
+    "s": "https://cdn.donmai.us/sample/c1/81/__bella_honkai_and_1_more_drawn_by_wu_ganlan_cai__sample-c181810ef4eef4def317119a7c77a645.jpg",
     "w": "Honkai Impact 3rd",
     "b": [
       "F",
       "C",
+      "hz",
+      "cl",
       "dg"
     ]
   },
@@ -68341,14 +68376,13 @@
       "hr",
       "mt",
       "cl",
-      "sc",
+      "mo",
+      "sl",
       "tc",
       "cc",
       "ar",
       "sa",
-      "cm",
-      "mo",
-      "sl"
+      "cm"
     ],
     "d": "Hooligan Tribe"
   },
@@ -75746,7 +75780,8 @@
     "w": "KonoSuba",
     "b": [
       "F",
-      "C"
+      "C",
+      "cm"
     ]
   },
   {
@@ -75758,7 +75793,8 @@
     "w": "KonoSuba",
     "b": [
       "F",
-      "C"
+      "C",
+      "cm"
     ]
   },
   {
@@ -77016,8 +77052,8 @@
     "u": 1699,
     "n": "Ornn",
     "t": 7,
-    "i": "sample_73bfebc631312fc8679386769ab83d41.jpg",
-    "s": "https://chan.sankakucomplex.com/post/show/6773432",
+    "i": "[n]CxXMNog.jpg",
+    "s": "https://cdnb.artstation.com/p/assets/images/images/007/139/897/large/pedro-oliveira-ornn.jpg",
     "w": "League of Legends",
     "b": [
       "M",
@@ -77427,11 +77463,15 @@
     "u": 1734,
     "n": "Azir",
     "t": 6,
-    "i": "db9uufx_f8214454_ce44_4a85_af07_f56d7d7de4e7.jpg",
-    "s": "https://www.deviantart.com/torahimemax/art/Azir-681683613",
+    "i": "https://i.imgur.com/2GOPqP9l.jpg",
+    "s": "https://i.imgur.com/2GOPqP9.jpg",
     "w": "League of Legends",
     "b": [
-      "M"
+      "M",
+      "gd",
+      "rl",
+      "im",
+      "pm"
     ]
   },
   {
@@ -77629,8 +77669,8 @@
     "u": 1750,
     "n": "Aatrox",
     "t": 7,
-    "i": "cab18dbb0b04480c484c45ac2a9bf93b.jpg",
-    "s": "https://chan.sankakucomplex.com/post/show/4456949",
+    "i": "https://i.imgur.com/XDKxqyQl.png",
+    "s": "https://i.imgur.com/XDKxqyQ.png",
     "w": "League of Legends",
     "b": [
       "M",
@@ -77648,26 +77688,36 @@
     "u": 1751,
     "n": "Bard",
     "t": 7,
-    "i": "d8wzpn1_fecc25a4_0137_463b_b257_5e7cdf42cea3.jpg",
-    "s": "https://www.deviantart.com/torahimemax/art/League-Of-Legends-BARD-539143309",
+    "i": "[n]pAdzfyy.jpg",
+    "s": "https://i.pinimg.com/originals/14/44/c9/1444c96b28ff378edf9d4e2b3784eb5b.png",
     "w": "League of Legends",
     "b": [
-      "M"
+      "M",
+      "dn",
+      "fn",
+      "tn",
+      "hl",
+      "gd",
+      "im",
+      "ir"
     ]
   },
   {
     "u": 1752,
     "n": "Nasus",
     "t": 7,
-    "i": "sample_b3c32ff0bca8763b849cbe185637f8b9.jpg",
-    "s": "https://chan.sankakucomplex.com/post/show/2013301",
+    "i": "https://i.imgur.com/Nt7pUIel.jpg",
+    "s": "https://i.imgur.com/Nt7pUIe.jpg",
     "w": "League of Legends",
     "b": [
       "M",
+      "hr",
       "hz",
       "dr",
-      "de",
+      "tn",
+      "gd",
       "sa",
+      "cm",
       "im"
     ]
   },
@@ -77675,25 +77725,33 @@
     "u": 1753,
     "n": "Pantheon",
     "t": 7,
-    "i": "sample_563cdd0085a407cbe4902afd63188b85.jpg",
-    "s": "https://chan.sankakucomplex.com/post/show/5253188",
+    "i": "[n]LcUyoEZ.jpg",
+    "s": "https://64.media.tumblr.com/7ab0f0cc05b66a13cdf42ba2a964fe33/bdf17f836dd84773-4a/s1280x1920/a2d95cfd8cbe052b5a40e81210edb116ba13f663.jpg",
     "w": "League of Legends",
     "b": [
-      "M"
+      "M",
+      "gd",
+      "cf",
+      "sa",
+      "cm",
+      "im"
     ]
   },
   {
     "u": 1754,
     "n": "Xerath",
     "t": 8,
-    "i": "sample_97a406ee7ddbc4b36c1db53bb6b6549f.jpg",
-    "s": "https://chan.sankakucomplex.com/post/show/4523689",
+    "i": "[n]maeIXIi.jpg",
+    "s": "https://i.pinimg.com/originals/58/e7/c3/58e7c370b1a49b682cbb72f4a610072f.png",
     "w": "League of Legends",
     "b": [
       "M",
       "th",
+      "gd",
       "me",
-      "vn"
+      "vn",
+      "is",
+      "im"
     ]
   },
   {
@@ -97299,7 +97357,8 @@
     "s": "https://chan.sankakucomplex.com/post/show/5921090",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -97310,7 +97369,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/d/d4/0061_Care_A_Cropped.png/revision/latest?cb=20160624042000",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -97321,7 +97381,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/a/ad/Abyss07.JPG/revision/latest?cb=20161104200839",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -97332,7 +97393,8 @@
     "s": "https://chan.sankakucomplex.com/post/show/7257296",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -97343,7 +97405,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/6/65/0038_Affection_C.jpg/revision/latest?cb=20160607061732",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -97354,7 +97417,8 @@
     "s": "http://pm1.narvii.com/7482/72a9fc81e86d7f5311f954b2dbab606733652ea5r1-852-1065v2_uhq.jpg",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -97365,7 +97429,8 @@
     "s": "https://chan.sankakucomplex.com/post/show/5027138",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -97376,7 +97441,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/a/ae/0162_Affection_B.jpg/revision/latest?cb=20170927144251",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -97387,7 +97453,8 @@
     "s": "https://chan.sankakucomplex.com/post/show/5918609",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -97398,7 +97465,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/9/9d/0096_Care_B_Cropped.png/revision/latest?cb=20160714075324",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -97409,7 +97477,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/f/f0/0156_Care_A_Cropped.png/revision/latest?cb=20160907055835",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -97420,7 +97489,8 @@
     "s": "https://chan.sankakucomplex.com/post/show/5436181",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -97431,7 +97501,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/0/01/0020_Affection_A.jpg/revision/latest?cb=20160524014846",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -97443,8 +97514,7 @@
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
       "F",
-      "hr",
-      "dr"
+      "mg"
     ],
     "in": "https://peach.paheal.net/_images/7737943171053b58c8c4f8b7a7116561/3651318%20-%20Cathyl%20Monster_Musume%3A_Everyday_Life_With_Monster_Girls%20Tetisuka.jpg"
   },
@@ -97474,7 +97544,10 @@
     "s": "https://www.deviantart.com/chariot47/art/Centorea-s-Mom-738587852",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg",
+      "cm",
+      "MILF"
     ]
   },
   {
@@ -97485,7 +97558,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/1/1e/0168_Care_A_Cropped.png/revision/latest?cb=20170927145115",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -97496,7 +97570,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/b/b7/0039_Affection_A.jpg/revision/latest?cb=20160607061742",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -97507,7 +97582,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/3/31/0122_Care_A_Cropped.png/revision/latest?cb=20160906224402",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -97518,7 +97594,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/6/6a/0178_Care_A_Cropped.png/revision/latest?cb=20170927150900",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -97529,7 +97606,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/7/71/0062_Affection_A.jpg/revision/latest?cb=20160624042005",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -97540,7 +97618,8 @@
     "s": "https://chan.sankakucomplex.com/post/show/5700492",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -97566,7 +97645,8 @@
     "s": "https://chan.sankakucomplex.com/post/show/5656007",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -97577,7 +97657,10 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/9/9e/Elda1.png/revision/latest?cb=20151225104232",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "dr",
+      "mg",
+      "su"
     ]
   },
   {
@@ -97588,7 +97671,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/0/04/0019_Full_B.png/revision/latest?cb=20160524014531",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -97599,7 +97683,8 @@
     "s": "https://chan.sankakucomplex.com/post/show/5921044",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -97610,7 +97695,9 @@
     "s": "https://chan.sankakucomplex.com/post/show/5921296",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "el",
+      "mg"
     ]
   },
   {
@@ -97621,7 +97708,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/9/95/0128_Care_A_Cropped.png/revision/latest?cb=20160906230216",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -97632,7 +97720,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/9/9f/B8c5a7d6dfb227c418501af39885019c.jpg/revision/latest?cb=20151231045632",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -97643,7 +97732,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/b/b3/0078_Affection_C.jpg/revision/latest?cb=20160627031503",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -97654,7 +97744,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/a/af/0045_Full_A.png/revision/latest?cb=20160620043248",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -97665,7 +97756,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/9/95/0054_Full_B.png/revision/latest?cb=20160620062539",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -97676,7 +97768,9 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/6/6b/0017_Full_A_Cropped.png/revision/latest?cb=20160524014332",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "ad",
+      "mg"
     ]
   },
   {
@@ -97687,7 +97781,8 @@
     "s": "https://chan.sankakucomplex.com/post/show/5468656",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -97698,7 +97793,8 @@
     "s": "https://chan.sankakucomplex.com/post/show/5900776",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -97709,7 +97805,8 @@
     "s": "https://chan.sankakucomplex.com/post/show/5921120",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -97720,7 +97817,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/4/4a/0159_Care_A_Cropped.png/revision/latest?cb=20160907060845",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -97731,7 +97829,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/1/16/0074_Full_A_Cropped.png/revision/latest?cb=20160626031322",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -97742,7 +97841,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/3/3c/0023_Care_C_Cropped.png/revision/latest?cb=20160526014842",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -97753,7 +97853,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/5/55/0032_Full_A_Cropped.png/revision/latest?cb=20160606034022",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -97764,7 +97865,8 @@
     "s": "https://chan.sankakucomplex.com/post/show/5352070",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -97775,7 +97877,8 @@
     "s": "https://chan.sankakucomplex.com/post/show/5918548",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -97786,7 +97889,8 @@
     "s": "https://chan.sankakucomplex.com/post/show/5795140",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -97797,7 +97901,10 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/9/98/0050_Affection_A.jpg/revision/latest?cb=20160620050357",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "sr",
+      "mg",
+      "rg"
     ]
   },
   {
@@ -97808,7 +97915,9 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/e/e1/0177_Full_A.png/revision/latest?cb=20170927150725",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "un",
+      "mg"
     ]
   },
   {
@@ -97819,7 +97928,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/e/e8/0101_Care_C_Cropped.png/revision/latest?cb=20160526023004",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -97830,7 +97940,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/0/03/0009_Affection_A.jpg/revision/latest?cb=20160524011924",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -97841,7 +97952,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/f/f9/0149_Care_A_Cropped.png/revision/latest?cb=20160907053451",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -97852,7 +97964,8 @@
     "s": "https://cdn.donmai.us/original/83/d2/__kehp_monster_musume_no_iru_nichijou_and_1_more_drawn_by_kumehara_chiyota__83d278d72e0c057207bd76a3af084897.jpg",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -97863,7 +97976,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/4/4f/0046_Care_C_Cropped.png/revision/latest?cb=20160620043706",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -97877,7 +97991,8 @@
       "F",
       "hr",
       "dh",
-      "sr"
+      "sr",
+      "mg"
     ]
   },
   {
@@ -97888,7 +98003,8 @@
     "s": "https://chan.sankakucomplex.com/post/show/6796643",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -97899,7 +98015,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/9/9d/0154_Affection_A.jpg/revision/latest?cb=20160907055031",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -97910,7 +98027,8 @@
     "s": "https://chan.sankakucomplex.com/post/show/5918591",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -97921,7 +98039,9 @@
     "s": "https://chan.sankakucomplex.com/post/show/5269713",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "sh",
+      "ke"
     ]
   },
   {
@@ -97932,7 +98052,8 @@
     "s": "https://chan.sankakucomplex.com/post/show/5804497",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -97943,7 +98064,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/d/da/0005_Affection_A.jpg/revision/latest?cb=20160523111931",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -97954,7 +98076,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/8/88/0016_Affection_A.jpg/revision/latest?cb=20160524014014",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -97965,7 +98088,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/b/be/0041_Care_A_Cropped.png/revision/latest?cb=20160607063056",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -97976,7 +98100,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/6/65/0030_Affection_A.jpg/revision/latest?cb=20160526021147",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -98001,7 +98126,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/0/0f/0073_Full_A_Cropped.png/revision/latest?cb=20160625050725",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -98012,7 +98138,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/0/0c/0091_Affection_A.jpg/revision/latest?cb=20160714073435",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -98023,7 +98150,9 @@
     "s": "https://chan.sankakucomplex.com/post/show/7094609",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "dr",
+      "mg"
     ]
   },
   {
@@ -98034,7 +98163,10 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/3/39/0145_Care_A_Cropped.png/revision/latest?cb=20160907052624",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "dr",
+      "mg",
+      "su"
     ]
   },
   {
@@ -98045,7 +98177,10 @@
     "s": "https://chan.sankakucomplex.com/post/show/4509235",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "dr",
+      "mg",
+      "su"
     ]
   },
   {
@@ -98056,7 +98191,8 @@
     "s": "https://chan.sankakucomplex.com/post/show/5173514",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -98067,7 +98203,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/d/dc/0139_Care_A_Cropped.png/revision/latest?cb=20160907050646",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -98078,7 +98215,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/9/9a/0076_Care_A_Cropped.png/revision/latest?cb=20160626032754",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -98089,7 +98227,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/0/0a/0048_Care_A_Cropped.png/revision/latest?cb=20160620044952",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -98100,7 +98239,10 @@
     "s": "https://chan.sankakucomplex.com/post/show/4996378",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "cl",
+      "mg",
+      "cm"
     ]
   },
   {
@@ -98111,7 +98253,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/0/03/0011_Affection_A.jpg/revision/latest?cb=20160524012327",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -98122,7 +98265,8 @@
     "s": "https://chan.sankakucomplex.com/post/show/5876492",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -98133,7 +98277,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/3/39/0040_Care_A_Cropped.png/revision/latest?cb=20160607062725",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -98145,6 +98290,7 @@
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
       "F",
+      "sl",
       "mg"
     ]
   },
@@ -98171,7 +98317,8 @@
       "F",
       "hr",
       "dr",
-      "mi"
+      "mi",
+      "mg"
     ],
     "in": "https://static1.e621.net/data/sample/e1/ec/e1ec100de99de04c6ae8883549c478b8.jpg"
   },
@@ -98183,7 +98330,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/e/ee/0028_Full_A_Cropped.png/revision/latest?cb=20160526020147",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -98194,7 +98342,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/9/92/0004_Affection_A.jpg/revision/latest?cb=20160523111926",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -98205,7 +98354,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/d/d5/0072_Affection_A.jpg/revision/latest?cb=20160625045323",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -98216,7 +98366,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/e/ee/0174_Care_A_Cropped.png/revision/latest?cb=20170927150115",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -98227,7 +98378,9 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/1/16/0043_Care_A_Cropped.png/revision/latest?cb=20160607063447",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "un",
+      "mg"
     ]
   },
   {
@@ -98238,7 +98391,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/6/64/Pfyxmurd0b221.png/revision/latest?cb=20181204222047",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -98249,7 +98403,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/c/c8/0000_Full_B.png/revision/latest?cb=20160521222348",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -98260,7 +98415,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/b/b9/0166_Care_A_Cropped.png/revision/latest?cb=20170927144708",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -98271,7 +98427,9 @@
     "s": "https://chan.sankakucomplex.com/post/show/5918669",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg",
+      "ff"
     ]
   },
   {
@@ -98282,7 +98440,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/8/84/0103_Care_A_Cropped.png/revision/latest?cb=20160521223128",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -98293,7 +98452,9 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/6/63/0018_Affection_A.jpg/revision/latest?cb=20160524014322",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg",
+      "ir"
     ]
   },
   {
@@ -98316,7 +98477,9 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/e/e5/0036_Care_A_Cropped.png/revision/latest?cb=20160606035723",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg",
+      "ff"
     ]
   },
   {
@@ -98327,7 +98490,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/a/a8/0080_Full_A_Cropped.png/revision/latest?cb=20160627033354",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -98338,7 +98502,8 @@
     "s": "https://chan.sankakucomplex.com/post/show/6569656",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -98349,7 +98514,9 @@
     "s": "https://chan.sankakucomplex.com/post/show/5045152",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "rl",
+      "mg"
     ]
   },
   {
@@ -98360,7 +98527,9 @@
     "s": "https://chan.sankakucomplex.com/post/show/5921277",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "sr",
+      "mg"
     ]
   },
   {
@@ -98371,7 +98540,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/0/02/0012_Full_A_Cropped.png/revision/latest?cb=20160524013114",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -98402,7 +98572,9 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/9/9f/0042_Care_A_Cropped.png/revision/latest?cb=20160607063441",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg",
+      "ir"
     ]
   },
   {
@@ -98413,7 +98585,9 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/7/7e/0084_Care_A_Cropped.png/revision/latest?cb=20160714064705",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "dh",
+      "mg"
     ]
   },
   {
@@ -98424,7 +98598,8 @@
     "s": "https://chan.sankakucomplex.com/post/show/5984923",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "sd"
     ]
   },
   {
@@ -98435,7 +98610,8 @@
     "s": "https://chan.sankakucomplex.com/post/show/5921304",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -98446,7 +98622,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/d/d5/Riad_Full.png/revision/latest?cb=20151231112459",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -98457,7 +98634,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/2/29/0014_Full_A_Cropped.png/revision/latest?cb=20160524013752",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -98468,7 +98646,9 @@
     "s": "https://chan.sankakucomplex.com/post/show/5047701",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg",
+      "ir"
     ]
   },
   {
@@ -98479,7 +98659,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/f/f3/0077_Care_A_Cropped.png/revision/latest?cb=20160627031317",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -98490,7 +98671,8 @@
     "s": "https://chan.sankakucomplex.com/post/show/5911027",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -98501,7 +98683,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/8/83/Rudoru_Full.png/revision/latest?cb=20151231112515",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -98512,7 +98695,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/7/71/0051_Affection_A.jpg/revision/latest?cb=20160620051856",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -98523,7 +98707,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/c/c0/0015_Full_A_Cropped.png/revision/latest?cb=20160524013753",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -98534,7 +98719,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/b/b3/0007_Full_A_Cropped.png/revision/latest?cb=20160523113047",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -98545,7 +98731,8 @@
     "s": "https://chan.sankakucomplex.com/post/show/7639863",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -98556,7 +98743,10 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/c/c3/0071_Care_A_Cropped.png/revision/latest?cb=20160625044954",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "dr",
+      "mg",
+      "su"
     ]
   },
   {
@@ -98578,7 +98768,9 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/2/2c/0176_Full_A.png/revision/latest?cb=20170927150719",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg",
+      "ir"
     ]
   },
   {
@@ -98589,7 +98781,8 @@
     "s": "https://chan.sankakucomplex.com/post/show/5918672",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -98600,7 +98793,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/0/05/0153_Care_A_Cropped.png/revision/latest?cb=20160907054958",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -98611,7 +98805,8 @@
     "s": "https://chan.sankakucomplex.com/post/show/5921123",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -98622,7 +98817,8 @@
     "s": "https://chan.sankakucomplex.com/post/show/5921283",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -98633,7 +98829,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/3/36/0180_Care_A_Cropped.png/revision/latest?cb=20170927151100",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -98644,7 +98841,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/7/74/0137_Care_B_Cropped.png/revision/latest?cb=20160907043850",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -98655,7 +98853,9 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/d/d3/0083_Full_A_Cropped.png/revision/latest?cb=20160714064317",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg",
+      "ff"
     ]
   },
   {
@@ -98666,7 +98866,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/c/c2/0026_Care_A_Cropped.png/revision/latest?cb=20160526015602",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -98677,7 +98878,11 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/f/f5/0086_Care_A_Cropped.png/revision/latest?cb=20160714065708",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "ps",
+      "ip",
+      "dm",
+      "mg"
     ]
   },
   {
@@ -98688,7 +98893,9 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/d/d1/0010_Affection_A.jpg/revision/latest?cb=20160524012321",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "dm",
+      "mg"
     ]
   },
   {
@@ -98717,7 +98924,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/6/65/0152_Affection_C.jpg/revision/latest?cb=20160907054717",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -98728,7 +98936,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/8/8c/Syahu1.jpg/revision/latest?cb=20160901135059",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -98739,7 +98948,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/b/bb/0029_Affection_A.jpg/revision/latest?cb=20160526020131",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -98750,7 +98960,8 @@
     "s": "https://chan.sankakucomplex.com/post/show/5030442",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -98761,7 +98972,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/4/49/0094_Care_A_Cropped.png/revision/latest?cb=20160714074457",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -98772,7 +98984,9 @@
     "s": "https://chan.sankakucomplex.com/post/show/14225188",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg",
+      "os"
     ],
     "in": "https://lotus.paheal.net/_images/8b41c8aa793339edc3819baf8a876a2e/4419695%20-%20LightSource%20Monster_Musume%3A_Everyday_Life_With_Monster_Girls%20Tionishia.png"
   },
@@ -98784,7 +98998,9 @@
     "s": "https://chan.sankakucomplex.com/post/show/5900771",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "st",
+      "mg"
     ]
   },
   {
@@ -98795,7 +99011,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/c/ce/0008_Affection_A.jpg/revision/latest?cb=20160523112930",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -98806,7 +99023,8 @@
     "s": "https://chan.sankakucomplex.com/post/show/5876454",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -98817,7 +99035,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/9/9a/0142_Care_C_Cropped.png/revision/latest?cb=20160907051752",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -98828,7 +99047,10 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/d/d8/0175_Care_A_Cropped.png/revision/latest?cb=20170927150532",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "ct",
+      "sr",
+      "mg"
     ]
   },
   {
@@ -98839,7 +99061,8 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/5/5c/0027_Care_A_Cropped.png/revision/latest?cb=20160526015820",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "mg"
     ]
   },
   {
@@ -98850,7 +99073,10 @@
     "s": "https://vignette.wikia.nocookie.net/dailylifewithamonstergirl/images/1/1e/0047_Affection_C.jpg/revision/latest?cb=20160620043711",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "ml",
+      "sr",
+      "mg"
     ]
   },
   {
@@ -98861,7 +99087,10 @@
     "s": "https://chan.sankakucomplex.com/post/show/5026056",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "hr",
+      "mg",
+      "ir"
     ]
   },
   {
@@ -98872,7 +99101,10 @@
     "s": "https://chan.sankakucomplex.com/post/show/5464744",
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
-      "F"
+      "F",
+      "hr",
+      "mg",
+      "ir"
     ]
   },
   {
@@ -99255,7 +99487,6 @@
       "M",
       "cl",
       "sc",
-      "sl",
       "tc",
       "sp",
       "sa",
@@ -99304,8 +99535,6 @@
     "w": "My Hero Academia",
     "b": [
       "M",
-      "sc",
-      "sl",
       "sd",
       "sp",
       "sa",
@@ -99338,9 +99567,7 @@
     "b": [
       "M",
       "ps",
-      "sc",
       "py",
-      "sl",
       "sd",
       "sa",
       "cm"
@@ -99440,7 +99667,6 @@
     "b": [
       "M",
       "cl",
-      "sc",
       "sl",
       "ev",
       "vn",
@@ -99482,12 +99708,11 @@
       "M",
       "hz",
       "cl",
-      "sc",
+      "sl",
       "sd",
       "sp",
       "sa",
-      "cm",
-      "sl"
+      "cm"
     ],
     "d": "UA Other"
   },
@@ -99991,7 +100216,7 @@
   },
   {
     "u": 6570,
-    "n": "Usagiyama Rumi / \"Mirko\"",
+    "n": "Rumi \"Mirko\" Usagiyama",
     "t": 5,
     "i": "sample_78b7a32662cb8f6b90d43ea44c708cdc.jpg",
     "in": "https://cdn.donmai.us/sample/56/f5/__mirko_boku_no_hero_academia_drawn_by_castell__sample-56f5ac6414654403940d949d4528b71b.jpg",
@@ -100038,7 +100263,6 @@
     "b": [
       "F",
       "C",
-      "sc",
       "sl",
       "sd",
       "sp",
@@ -100057,12 +100281,11 @@
     "b": [
       "F",
       "C",
-      "sc",
+      "sl",
       "dh",
       "sd",
       "sp",
-      "cm",
-      "sl"
+      "cm"
     ],
     "d": "UA 1-A"
   },
@@ -100151,11 +100374,10 @@
       "F",
       "C",
       "cl",
-      "sc",
+      "sl",
       "sd",
       "sa",
-      "cm",
-      "sl"
+      "cm"
     ],
     "d": "UA 1-B",
     "in": "https://static11.hentai-img.com/upload/20201117/676/691761/10.jpg"
@@ -100302,11 +100524,10 @@
     "b": [
       "F",
       "C",
-      "sc",
+      "sl",
       "sd",
       "sp",
-      "cm",
-      "sl"
+      "cm"
     ],
     "d": "UA Other"
   },
@@ -100416,10 +100637,9 @@
     "b": [
       "F",
       "C",
-      "sc",
+      "sl",
       "vn",
-      "cm",
-      "sl"
+      "cm"
     ],
     "d": "Villains"
   },
@@ -101027,15 +101247,12 @@
   {
     "u": 12138,
     "n": "Cosy Glow",
-    "t": 7,
+    "t": 4,
     "i": "https://i.imgur.com/cF3eYVFl.jpg",
     "s": "https://i.imgur.com/cF3eYVF.jpg",
     "w": "My Little Pony",
     "b": [
       "F",
-      "ps",
-      "sc",
-      "ip",
       "sl",
       "ev",
       "vn"
@@ -102697,12 +102914,19 @@
     "w": "Naruto",
     "b": [
       "M",
+      "hr",
       "mt",
       "cl",
       "bj",
       "dr",
+      "sc",
       "mo",
-      "rs"
+      "rs",
+      "nj",
+      "sr",
+      "sa",
+      "cm",
+      "sh"
     ]
   },
   {
@@ -109125,10 +109349,10 @@
       "ih",
       "dn",
       "tn",
-      "lv",
       "me",
       "un",
       "rl",
+      "cc",
       "nc"
     ]
   },
@@ -109355,7 +109579,9 @@
     "w": "Overlord (LN)",
     "b": [
       "F",
-      "me"
+      "sc",
+      "me",
+      "cm"
     ]
   },
   {
@@ -112706,14 +112932,15 @@
     "u": 7945,
     "n": "Mina",
     "t": 5,
-    "i": "ine__sample_039c2b400110c4f07e345cc0c6aa4132.jpg",
-    "s": "https://danbooru.donmai.us/posts/3205584",
+    "i": "[n]jdlngMp.jpg",
+    "s": "https://cdn.donmai.us/sample/03/9c/__mina_pokemon_and_2_more_drawn_by_berryverrine__sample-039c2b400110c4f07e345cc0c6aa4132.jpg",
     "w": "Pokemon",
     "b": [
       "F",
       "C",
       "mt",
-      "mo"
+      "mo",
+      "ar"
     ],
     "in": "https://cdn.donmai.us/sample/bd/a8/__mina_pokemon_and_2_more_drawn_by_lamb_oic029__sample-bda86cb75ecd5998f2d51cfb2109f68b.jpg",
     "d": "7/Alola"
@@ -121552,8 +121779,8 @@
     "u": 1595,
     "n": "Merchant",
     "t": 2,
-    "i": "8_d0_bd_d1_8f_art_yellowroom_artist_5500569.jpeg",
-    "s": "http://img10.joyreactor.cc/pics/post/full/%D0%B0%D1%80%D1%82-%D0%B1%D0%B0%D1%80%D1%8B%D1%88%D0%BD%D1%8F-art-Yellowroom-artist-5500569.jpeg",
+    "i": "https://i.imgur.com/rgjJSFzl.jpg",
+    "s": "https://i.imgur.com/rgjJSFz.jpg",
     "w": "Resident Evil",
     "b": [
       "M"
@@ -121563,19 +121790,20 @@
     "u": 1596,
     "n": "Leon S Kennedy",
     "t": 3,
-    "i": "3d7867119cc92adaa61786bd051b3a30.jpg",
-    "s": "https://chan.sankakucomplex.com/post/show/4135539",
+    "i": "https://i.imgur.com/OY6MGW3l.jpg",
+    "s": "https://i.imgur.com/OY6MGW3.jpg",
     "w": "Resident Evil",
     "b": [
-      "M"
+      "M",
+      "cm"
     ]
   },
   {
     "u": 1597,
     "n": "Mr. X",
     "t": 5,
-    "i": "sident_evil_2_remake_resident_evil_2_5070724.png",
-    "s": "http://img10.joyreactor.cc/pics/post/full/Resident-Evil-%D0%98%D0%B3%D1%80%D1%8B-Resident-evil-2-Remake-Resident-evil-2-5070724.png",
+    "i": "https://i.imgur.com/XZYZxo3l.jpg",
+    "s": "https://i.imgur.com/XZYZxo3.jpg",
     "w": "Resident Evil",
     "b": [
       "M",
@@ -124249,6 +124477,8 @@
       "C",
       "P",
       "cl",
+      "ps",
+      "ip",
       "pc",
       "mm"
     ],
@@ -125072,7 +125302,6 @@
     "w": "Scooby Doo",
     "b": [
       "F",
-      "sc",
       "sl",
       "ar",
       "sa",
@@ -125180,10 +125409,9 @@
     "b": [
       "F",
       "ml",
-      "sc",
+      "sl",
       "ar",
-      "cm",
-      "sl"
+      "cm"
     ],
     "in": "https://lotus.paheal.net/_images/edbd34a43e72797625b86784c245292f/3143550%20-%20DRpizzaboi%20Envy_Adams%20Scott_Pilgrim.jpg"
   },
@@ -125785,8 +126013,8 @@
     "u": 11055,
     "n": "Shijime",
     "t": 4,
-    "i": "0004images",
-    "s": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS8VFiZJiddIKVMR3IUptLv8OPPQqAVmqmUW9_q1PYMZtN0GCLH",
+    "i": "https://i.imgur.com/ouN7snul.png",
+    "s": "https://i.imgur.com/ouN7snu.png",
     "w": "Sekirei",
     "b": [
       "F"
@@ -127555,8 +127783,8 @@
     "u": 9909,
     "n": "Mysterious Heroine X",
     "t": 7,
-    "i": "rin__sample_73c959e1681c0f6d357ac23122cfb250.jpg",
-    "s": "https://danbooru.donmai.us/posts/3479613",
+    "i": "[n]bsdQxzm.jpg",
+    "s": "https://cdn.donmai.us/sample/73/c9/__artoria_pendragon_mysterious_heroine_xx_and_mysterious_heroine_x_fate_and_1_more_drawn_by_garin__sample-73c959e1681c0f6d357ac23122cfb250.jpg",
     "w": "Nasuverse",
     "d": "Servants - Assassin",
     "b": [
@@ -127567,7 +127795,8 @@
       "sl",
       "cm",
       "gi"
-    ]
+    ],
+    "in": "https://cdn.donmai.us/sample/22/ca/__artoria_pendragon_and_mysterious_heroine_x_fate_and_1_more_drawn_by_nikuromuline__sample-22cad73f95d3200cb02901d64950151b.jpg"
   },
   {
     "u": 9910,
@@ -130024,37 +130253,59 @@
     "u": 9277,
     "n": "Rottytops",
     "t": 4,
-    "i": "sample_974c4748ca5388472524e4b8c1b523a0.jpg",
-    "s": "https://chan.sankakucomplex.com/post/show/18223978",
+    "i": "[n]nHZcNgD.jpg",
+    "s": "https://cdn.donmai.us/sample/97/4c/__rottytops_shantae_drawn_by_rtil__sample-974c4748ca5388472524e4b8c1b523a0.jpg",
     "w": "Shantae series",
     "b": [
       "F",
-      "C"
-    ]
+      "C",
+      "hr",
+      "ml",
+      "dr",
+      "cr",
+      "hl",
+      "un",
+      "mg",
+      "gi"
+    ],
+    "in": "https://cdn.donmai.us/sample/3c/f6/__rottytops_shantae_drawn_by_rtil__sample-3cf606843d40a8e0b7d335e71b0ffd1e.jpg"
   },
   {
     "u": 9278,
     "n": "Sky",
     "t": 4,
-    "i": "sample_a65b472cea69a9e0ee7a6850820c3ccf.jpg",
-    "s": "https://chan.sankakucomplex.com/post/show/7186497",
+    "i": "[n]DzlafhF.jpg",
+    "s": "https://cdn.donmai.us/original/a6/5b/__sky_shantae_drawn_by_takuyarawr__a65b472cea69a9e0ee7a6850820c3ccf.png",
     "w": "Shantae series",
     "b": [
       "F",
-      "C"
-    ]
+      "C",
+      "mt",
+      "mo",
+      "fa"
+    ],
+    "in": "https://lotus.paheal.net/_images/37f47012314b3c3a0fd9fa368f2c8adf/4572468%20-%20Lyoung0J%20Shantae_%28series%29%20Sky%20edit.jpg"
   },
   {
     "u": 9279,
     "n": "Risky Boots",
     "t": 5,
-    "i": "sample_eb6e88b07395a44582e45ca19a43af06.jpg",
-    "s": "https://chan.sankakucomplex.com/post/show/7146796",
+    "i": "[n]XVMwDFW.jpg",
+    "s": "https://cdnb.artstation.com/p/assets/images/images/009/751/287/large/alexander-souto-risky-boots-pirate-queen.jpg",
     "w": "Shantae series",
     "b": [
       "F",
-      "C"
-    ]
+      "C",
+      "mt",
+      "ml",
+      "mo",
+      "en",
+      "me",
+      "pi",
+      "cm",
+      "fa"
+    ],
+    "in": "https://tulip.paheal.net/_images/cbb719e45225122835793b555a3677c8/5404389%20-%20Risky_Boots%20Shantae_%28series%29%20jmg.png"
   },
   {
     "u": 9280,
@@ -133711,12 +133962,15 @@
     "u": 12370,
     "n": "Sonic",
     "t": 8,
-    "i": "[n]YNppSQb.jpg",
-    "s": "https://img3.gelbooru.com//samples/ed/fc/sample_edfc6b82b910fc152fc10eb1a98e380d.jpg",
+    "i": "https://imgur.com/1TVFRDyl.jpg",
+    "s": "https://imgur.com/1TVFRDy.jpg",
     "w": "Sonic",
     "b": [
       "M",
+      "hr",
+      "hz",
       "cl",
+      "pr",
       "cm"
     ]
   },
@@ -133742,7 +133996,15 @@
     "w": "Sonic",
     "b": [
       "M",
-      "cc"
+      "hz",
+      "cl",
+      "sl",
+      "mu",
+      "en",
+      "sn",
+      "cc",
+      "nd",
+      "sa"
     ],
     "in": "https://i.ibb.co/7R67wJR/Tails-NSFW.png"
   },
@@ -133768,6 +134030,8 @@
     "w": "Sonic",
     "b": [
       "M",
+      "hz",
+      "cl",
       "tm",
       "tn",
       "al",
@@ -133805,11 +134069,14 @@
     "u": 12377,
     "n": "Cream the Rabbit",
     "t": 7,
-    "i": "5c036ff2eb8d56eff834c92d992b88b2.jpg",
-    "s": "https://e621.net/post/show/31986",
+    "i": "https://imgur.com/pIx4ucGl.jpg",
+    "s": "https://imgur.com/pIx4ucG.jpg",
     "w": "Sonic",
     "b": [
-      "F"
+      "F",
+      "sl",
+      "cm",
+      "fa"
     ]
   },
   {
@@ -134049,6 +134316,7 @@
     "w": "Sonic",
     "b": [
       "M",
+      "P",
       "hz",
       "cl",
       "id",
@@ -134060,7 +134328,6 @@
       "sa",
       "cm",
       "ha",
-      "sh",
       "pm"
     ]
   },
@@ -135041,8 +135308,10 @@
     "b": [
       "F",
       "C",
-      "lv"
-    ]
+      "lv",
+      "cm"
+    ],
+    "d": "Dark Souls 1"
   },
   {
     "u": 8718,
@@ -144214,12 +144483,17 @@
     "u": 6167,
     "n": "Frenda Seivelun",
     "t": 4,
-    "i": "7dfd03b1470b568d454f480ab27eb826.png",
-    "s": "https://chan.sankakucomplex.com/post/show/3274438",
+    "i": "https://imgur.com/q4VrfVPl.jpg",
+    "s": "https://imgur.com/q4VrfVP.jpg",
     "w": "To Aru series",
     "b": [
       "F",
-      "C"
+      "C",
+      "st",
+      "en",
+      "cc",
+      "cm",
+      "sh"
     ],
     "d": "AC Dark Side"
   },
@@ -144261,7 +144535,12 @@
     "w": "To Aru series",
     "b": [
       "F",
-      "C"
+      "C",
+      "P",
+      "ps",
+      "py",
+      "cm",
+      "sh"
     ],
     "d": "AC Dark Side"
   },
@@ -158408,8 +158687,8 @@
     "u": 585,
     "n": "Johan Andersen",
     "t": 2,
-    "i": "sample_3599fdfb62cb587da57828898bc43e09.jpg",
-    "s": "https://chan.sankakucomplex.com/post/show/1690508",
+    "i": "[n]DDqEFuO.jpg",
+    "s": "https://img3.gelbooru.com//images/b5/79/b579660e759c1550ab7fbae3270fb97e.jpg",
     "w": "Yu-Gi-Oh!",
     "b": [
       "M"
@@ -158419,11 +158698,11 @@
     "u": 586,
     "n": "Leo",
     "t": 2,
-    "i": "55f6248aee1cefca14dc08a4836d582c.jpg",
-    "s": "https://chan.sankakucomplex.com/post/show/19849028",
+    "i": "[n]HYmXxbN.jpg",
+    "s": "https://img3.gelbooru.com//images/92/d7/92d7a343397262efbd6e06b08d63ef2d.png",
     "w": "Yu-Gi-Oh!",
     "b": [
-      "F"
+      "M"
     ]
   },
   {
@@ -158459,8 +158738,8 @@
     "u": 590,
     "n": "Joey Wheeler",
     "t": 3,
-    "i": "d2132a53ea74ada62ddb5326a9dc12c3.jpg",
-    "s": "https://chan.sankakucomplex.com/post/show/4156676",
+    "i": "[n]OBEDjeZ.jpg",
+    "s": "https://img3.gelbooru.com//images/2d/f4/2df4323e789e773a6f4c357fd6bca4c0.jpg",
     "w": "Yu-Gi-Oh!",
     "b": [
       "M"
@@ -158488,8 +158767,8 @@
     "u": 592,
     "n": "Kurosaki Shun",
     "t": 3,
-    "i": "sample_e9c62367625c72b30123deadbb9d8369.jpg",
-    "s": "https://chan.sankakucomplex.com/post/show/6864714",
+    "i": "[n]KjwzspT.jpg",
+    "s": "https://img3.gelbooru.com//images/8c/cd/8ccdc8400f1513f93b8addd807559a13.png",
     "w": "Yu-Gi-Oh!",
     "b": [
       "M"
@@ -158499,8 +158778,8 @@
     "u": 593,
     "n": "Yusaku Fujiki",
     "t": 3,
-    "i": "af50e50f20eb3ec102c9a5724efce611.png",
-    "s": "https://chan.sankakucomplex.com/post/show/7171291",
+    "i": "[n]VseUjmV.jpg",
+    "s": "https://img3.gelbooru.com//images/1a/29/1a29606e221c6f4222447afc5b675e2d.jpg",
     "w": "Yu-Gi-Oh!",
     "b": [
       "M"
@@ -158510,11 +158789,12 @@
     "u": 594,
     "n": "Yami Bakura",
     "t": 4,
-    "i": "9d8a464e4b3987b066e16342b1186b75.jpg",
-    "s": "https://chan.sankakucomplex.com/post/show/2423676",
+    "i": "[n]PrUzCAL.jpg",
+    "s": "https://img3.gelbooru.com//images/61/1b/611bd520ea5ad2766032a5174e5b8fb9.png",
     "w": "Yu-Gi-Oh!",
     "b": [
-      "M"
+      "M",
+      "vn"
     ]
   },
   {
@@ -158539,11 +158819,12 @@
     "u": 596,
     "n": "Yuri",
     "t": 4,
-    "i": "2a05be23bef8af1bbe724cf969040a5d.jpg",
-    "s": "https://chan.sankakucomplex.com/post/show/5269872",
+    "i": "[n]MMysbEz.jpg",
+    "s": "https://img3.gelbooru.com//images/af/0f/af0f1b233ec40574c1f41969eb7dd072.jpg",
     "w": "Yu-Gi-Oh!",
     "b": [
-      "F"
+      "M",
+      "vn"
     ]
   },
   {
@@ -158570,22 +158851,24 @@
     "u": 598,
     "n": "Aigami",
     "t": 5,
-    "i": "sample_41aaf6175201225b84af0d047b8f9661.jpg",
-    "s": "https://chan.sankakucomplex.com/post/show/5437126",
+    "i": "[n]zhzPIig.jpg",
+    "s": "https://img3.gelbooru.com//images/bf/dd/bfddcb3d1808a960b5b5afe20cc2873f.png",
     "w": "Yu-Gi-Oh!",
     "b": [
-      "M"
+      "M",
+      "vn"
     ]
   },
   {
     "u": 599,
     "n": "Dumon",
     "t": 5,
-    "i": "c73911872a84359088f931c278276bae.jpg",
-    "s": "https://chan.sankakucomplex.com/post/show/3387057",
+    "i": "[n]HQUtKsg.jpg",
+    "s": "https://img3.gelbooru.com//images/20/a4/20a49419fd89435d2252702419ab6871.jpeg",
     "w": "Yu-Gi-Oh!",
     "b": [
-      "M"
+      "M",
+      "tp"
     ]
   },
   {
@@ -158684,8 +158967,8 @@
     "u": 606,
     "n": "Jaden Yuki",
     "t": 5,
-    "i": "sample_1f5b54de0c156506a805373411fba50e.jpg",
-    "s": "https://chan.sankakucomplex.com/post/show/1701401",
+    "i": "[n]YGQSnpc.jpg",
+    "s": "https://img3.gelbooru.com//samples/0d/a6/sample_0da6021240847973892d4e126af5f590.jpg",
     "w": "Yu-Gi-Oh!",
     "b": [
       "M",

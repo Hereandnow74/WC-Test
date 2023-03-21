@@ -148,7 +148,8 @@ const charSearch = computed(() => {
   const options = {
     findAllMatches: true,
     threshold: 0.3,
-    keys: [{ name: 'n', weight: 2 }, 'w'],
+    useExtendedSearch: true,
+    keys: [{ name: 'n', weight: 2 }, 'w', 't'],
   }
 
   const fuse = new Fuse(allCharsComp.value, options)

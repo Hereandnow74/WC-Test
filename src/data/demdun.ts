@@ -49,7 +49,7 @@ homes.push({
   cost: 10,
   multiple: true,
   max: 2,
-  whitelist: ['Pocket Apartment'],
+  whitelist: [{ title: 'Pocket Apartment', count: 2 }],
   desc: `Your residence’s floor space is doubled again. It now measures 300 sq m, equivalent to a large house. This includes a master suite (one large bedroom, with one each attached large bathroom and walk-in closet), three other medium bedrooms with their own closets, two and a half other bathrooms, a large living area, full-size kitchen with attached eating area, closet spaces, and one each of very large, large, and medium rooms that you can decide how to use: dojo, garage, library, a shared workshop, extra bedrooms, separate dining room, etc. You may also repurpose unneeded bedrooms until they’re filled.
   <p>Your property now sits on a plot of land. The total area is one hectare (not necessarily an exact square), with the ground extending down 10 meters and the sky going up 20 meters.</p>
   <p>You may now make your Pocket Space any clearly delineated space within your Sweet Home, and not simply a physical vault.</p>
@@ -65,7 +65,7 @@ homes.push({
   cost: 10,
   multiple: true,
   max: 2,
-  whitelist: ['Sweet Home'],
+  whitelist: [{ title: 'Sweet Home', count: 2 }],
   desc: `Your living space is significantly larger. It now has 1,200 sq m of floor space, with every living, training, and workshop area you and your waifus might need. If you do not have Life’s a Beach, your property’s land area will also increase, to 20 hectares.
   <p>A control room deep in the mansion now allows you to customize the structure however you like. Specialized workshop equipment and exotic resources will only be available if you have someone who knows how to use them, whether that’s a purchased or captured retinue member, your Substitute or Possess target, or by some other means. For safety reasons, all personnel and important items will be ejected from areas undergoing rearrangement.</p>
   <p>A second purchase of this perk will double the interior and exterior measurements again: 2,400 sq m floor space inside, 40 hectares outside.</p>
@@ -78,7 +78,7 @@ homes.push({
   category: 'Home',
   image: 'https://i.ibb.co/2ndQhZY/Lifes-ABeach-New.jpg',
   cost: 10,
-  whitelist: ['Sweet Home'],
+  whitelist: [{ title: 'Sweet Home', count: 2 }],
   desc: `
 <p>Your Sweet Home’s lawn is significantly larger, now measuring 15.2 sq km across, with 24 vertical meters of ground and 48 vertical meters of sky. A control center deep in the apartment will allow you to customize the landscape however you like: the default is a tropical island paradise with a standard equatorial day/night cycle and perfect weather all the time. This is the same control system as what Grand Manor provides. If you have either rank of that perk, you can use the control room to add new wings and other features to the manor, within the 20 (40) hectares of manor lands and the vertical clearance offered by this perk and Sweet Home Expansion.</p>
 <p>However you set the landscape, the edge of your pocket dimension will be selectively-permeable, allowing biome-appropriate wildlife to wander in from worlds that you and your retinue have visited or call home, without any issues from invasive species, implanted transmitters, pollutants, unwanted predators, etc. For safety reasons, all personnel and important items will be ejected from areas undergoing rearrangement.</p>
@@ -92,7 +92,7 @@ homes.push({
   category: 'Home',
   image: 'https://i.ibb.co/frYhgvK/Warehouse-District.jpg',
   cost: 20,
-  whitelist: ['Grand Manor', 'Life’s A Beach'],
+  whitelist: [{ title: 'Grand Manor', count: 2 }, 'Life’s A Beach'],
   desc: 'The basic Grand Manor offers an automatically replenishing supply of resources for each workshop, but only a limited amount at a time. Each warehouse in this district is 20 m tall and has about 50,000 sq m of floor space, enough to hold… a lot of materials. You can have as many individual warehouses as you have workshops, though this is also capped by your dimension’s physical space. New resources will appear here, in entire pallets at a time. Your retinue members’ workshops will now pull their materials from this central stockpile instead of generating their own. You may also define empty warehouses as sections of your Pocket Space.',
 })
 
@@ -115,7 +115,7 @@ homes.push({
   image: 'https://i.ibb.co/YB9Tpcz/Pocket-Star.jpg',
   cost: 0,
   costT: 1,
-  whitelist: ['Sweet Home Expansion (25x)'],
+  whitelist: [{ title: 'Sweet Home Expansion', count: 25 }],
   desc: 'Your planet is no longer alone in its universe. This expands your personal realm’s radius to roughly 104.45 AU and places a yellow star at the center, with your planet orbiting around it. No additional planets or other features are included in this perk.',
 })
 

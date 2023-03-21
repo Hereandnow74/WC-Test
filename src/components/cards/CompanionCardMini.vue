@@ -41,7 +41,7 @@
           />
           <Variants
             v-if="!char.sold && char.method !== 'unbound'"
-            v-model="char.sex"
+            v-model="sex"
             theme="dark"
             label="Sex"
             :list="['F', 'M', 'O']"
@@ -109,7 +109,7 @@
             v-for="tag in tags"
             :key="tag.tag"
             :tag="tag"
-            :link="tag.tag === 'Perk' ? {path: '/talents/specific', hash: `#${waifusThatHasPerk[fullChar.u]}`} : ''"
+            :link="tag.tag === 'Perk' ? {path: '/talents/specific', hash: `#${waifusThatHasPerk[char.uid] || waifusThatHasPerk[char?.swap?.uid || 0] }`} : ''"
           />
         </div>
       </div>
@@ -178,7 +178,7 @@
 
 <script lang="ts" setup>
 import type { PropType } from '@vue/runtime-core'
-import { findIndex, isNumber } from 'lodash-es'
+import { findIndex, intersection, isNumber } from 'lodash-es'
 import TextArea from '../basic/TextArea.vue'
 import { CHAR_COSTS, CHAR_COSTS_TICKET, useAllChars, waifusThatHasPerk, waifuTags } from '~/data/constants'
 import { waifuPerksObject } from '~/data/waifu_perks'
@@ -217,6 +217,13 @@ const emit = defineEmits(['sell', 'undo', 'free'])
 
 const showNote = ref(false)
 
+const sex = ref(props.char.tags ? intersection(['F', 'M', 'O'], props.char.tags)[0] || 'F' : 'F')
+watch(sex, (val, oldVal) => {
+  const ind = props.char.tags.indexOf(oldVal)
+  if (ind !== -1)
+    props.char.tags[ind] = val
+})
+
 const { flags, settings, sellKoeff, companions } = useStore()
 const { allCharsObject } = useAllChars()
 
@@ -231,11 +238,15 @@ const image = computed(() => props.char.image || (props.char.perk && waifuPerksO
 watch(image, () => imageEl.value ? lazyLoadSingleImg(imageEl.value) : null, { flush: 'post' })
 
 const tags = computed(() => {
-  const t = []
-  if (props.char.swap)
-    t.push(...allCharsObject.value[props.char.swap.uid].b)
-  else
-    t.push(...(allCharsObject.value[props.char.originUID || props.char.uid]?.b || []))
+  let t = [] as string[]
+  if (props.char.tags) t = props.char.tags
+  if (props.char?.swap?.tags) t = props.char.swap.tags
+  // else {
+  //   if (props.char.swap)
+  //     t.push(...allCharsObject.value[props.char.swap.uid].b)
+  //   else
+  //     t.push(...(allCharsObject.value[props.char.originUID || props.char.uid]?.b || []))
+  // }
   return t.map(x => waifuTags[x] ? waifuTags[x] : { tag: x, color: 'bg-teal-600', desc: '' })
 })
 

@@ -1,6 +1,6 @@
 <template>
   <Modal label="Search Settings">
-    <div class="flex flex-col p-1 min-h-0 max-h-[88vh]">
+    <div class="flex flex-col p-1 min-h-0 max-h-[85vh] md:max-h-[88vh] overflow-y-auto scrollbar">
       <div class="flex gap-x-4 gap-y-1 flex-wrap">
         <div class="flex gap-1 flex-wrap">
           Limit Tiers
@@ -14,9 +14,9 @@
           :label="`Limit to ${currentWorld.worldName}`"
           class="border rounded px-1 border-gray-300 dark:border-gray-500"
         />
-        <Button size="Small" label="Import / Export local characters" @click="toggleImpExpChars" />
+        <Button size="Small" label="Import / Export" @click="toggleImpExpChars" />
       </div>
-      <div class="mt-1 flex gap-2">
+      <div class="mt-1 flex gap-2 flex-col md:flex-row">
         <Button label="Export local entries to Spreadsheet" size="small" class="px-2" bg-color="bg-green-900" @click="toSpreadsheet" />
         <Button label="Import entries from Spreadsheet" size="small" class="px-2" bg-color="bg-yellow-700" @click="showSpreadEXP = true" />
       </div>
@@ -82,7 +82,7 @@
 </template>
 
 <script lang="ts" setup>
-import { allCompanionsWorlds } from '~/data/constants'
+import { allCompanionsWorlds, useAllChars } from '~/data/constants'
 import { showImpExpChars, toggleImpExpChars, blackWhite, blackWhiteDisabled } from '~/logic'
 import { confirmDialog } from '~/logic/dialog'
 import { useSettings } from '~/logic/searchSettings'
@@ -92,6 +92,7 @@ import { useStore } from '~/store/store'
 const { currentWorld } = useChargenStore()
 const { minTier, maxTier, blockedWorlds, isLimited } = useSettings()
 const { localUserCharacters } = useStore()
+const { allCharsComp } = useAllChars()
 
 const worldSearch = ref('')
 const spreadURL = ref('')
@@ -102,6 +103,13 @@ const allWorldsWithoutBlocked = computed(() => allCompanionsWorlds.value.filter(
 function toSpreadsheet() {
   let result = `${'UID	WORLD	SUB WORLD	NAME	TIER	NICKNAME	IMAGE URL	NSFW IMAGE URL	TAGS'}\n`
   result += localUserCharacters.value.reduce((a, x) => a += `${`${x.uid}	${x.world}	${x.sub}	${x.name}	${x.tier}	${x.nickname}	${x.image || ''}	${x.image_nsfw || ''}	${x.tags}`}\n`, '')
+  navigator.clipboard.writeText(result)
+  confirmDialog('Successfully copied info to clipboard, now you just need to "paste" it to google spreadsheet', 'info')
+}
+
+function toHumanSpreadsheet() {
+  let result = `${'WORLD	SUB WORLD	NAME	TIER	IMAGE URL	OFFICIAL'}\n`
+  result += allCharsComp.value.filter(x => x.b.includes('F')).reduce((a, x) => a += `${`${x.w}	${x.d}	${x.n}	${x.t}	${x.s || ''}	${x.b ? x.b.includes('C') : false}`}\n`, '')
   navigator.clipboard.writeText(result)
   confirmDialog('Successfully copied info to clipboard, now you just need to "paste" it to google spreadsheet', 'info')
 }

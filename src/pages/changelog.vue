@@ -6,6 +6,19 @@
       </h2>
       <div>
         <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          21 March 2023
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~120 new user submitted characters, new missions, new worlds</li>
+          <li>You can now change your password on user page.</li>
+          <li>New filter for Top 100 of most the liked characters.</li>
+          <li>Most of the Patrons now work, or partially work.</li>
+          <li>Almost all server work was made by Somdudewillson.</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
           17 March 2023
         </h3>
         <ul class="list-decimal list-inside">

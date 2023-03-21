@@ -35,6 +35,7 @@
               <CharacterInput
                 :model-value="chosenOrigin.character"
                 :error-message="costError"
+                :max-tier="10"
                 @updateTier="chosenOrigin.tier = $event"
                 @onChar="(char: DBCharacter) => {chosenOrigin.uid = char.u; chosenOrigin.character = item.title !== 'Walk-In' ? `You as ${char.n}` : char.n; chosenOrigin.tier = char.t}"
                 @update:modelValue="chosenOrigin.character = $event"
