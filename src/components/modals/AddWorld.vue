@@ -72,7 +72,7 @@ import { toFormValidator } from '@vee-validate/zod'
 
 import NumberInput from '../basic/NumberInput.vue'
 import { useStore } from '~/store/store'
-import { proposeWorld, toggleShowAddWorld } from '~/logic'
+import { proposeWorld, randomString, toggleShowAddWorld } from '~/logic'
 
 const props = defineProps({
   editMode: {
@@ -135,11 +135,12 @@ function removeCondition(index: number) {
 }
 
 const addWorld = handleSubmit((values) => {
+  const world = { uid: randomString(7), ...values }
   if (proposeGlobal.value)
-    proposeWorld({ ...values, date: new Date().toString() })
+    proposeWorld({ ...world, date: new Date().toString() })
 
-  if (localSave.value) localUserWorlds.value.push(values)
-  else userWorlds.value.push(values)
+  if (localSave.value) localUserWorlds.value.push(world)
+  else userWorlds.value.push(world)
   toggleShowAddWorld()
 })
 

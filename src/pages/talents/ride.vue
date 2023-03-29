@@ -1,5 +1,5 @@
 <template>
-  <div class="sm:p-2 text-sm sm:text-base flex flex-col items-center">
+  <div class="sm:p-2 text-sm sm:text-base flex flex-col items-center background">
     <Desc :desc="rideDesc" class="p-2 mb-2 max-w-4xl mx-auto bg-violet-200 dark:bg-violet-900" />
     <Button label="Create A Ride" class="mx-auto mb-2 block" bg-color="bg-blue-500" @click="toggleShowAddRide" />
     <div class="flex flex-wrap gap-2 mx-auto justify-center pb-8">

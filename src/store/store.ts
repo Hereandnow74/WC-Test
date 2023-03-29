@@ -50,19 +50,23 @@ const {
 
 const settings = useStorage('settings', {
   allChosenAuthors: [] as string[],
+  allDLCTypes: [] as string[],
   nsfw: false,
   perkImages: true,
   columns: 'auto' as number | 'auto',
   columnsCompanions: 0,
   hideWorldImg: false,
   allImg: false,
-  ableSell: true,
+  ableSell: false,
   hideDesc: false,
   textAlign: 'text-left',
   fontSize: 0,
   hideLegacy: true,
   rebates: false,
 })
+
+if (settings.value.allDLCTypes === undefined)
+  settings.value.allDLCTypes = []
 
 const csr = computed(() => findIndex(intensities.value, { title: 'Cash Still Rules' }) !== -1)
 
@@ -417,10 +421,11 @@ const tier11tickets = computed(() => {
   }, 0)
 
   const originPSTicket = startingOrigin.value.swap && startingOrigin.value.swap.tier >= 11 ? CHAR_COSTS_TICKET[startingOrigin.value.swap.tier] : 0
+  const originSWPTicket = startingOrigin.value.perk && startingOrigin.value.perk.tier >= 11 ? CHAR_COSTS_TICKET[startingOrigin.value.perk.tier] : 0
 
   return ticket - heritageCost - ridePerksCost - homePerksCost - talentsCost - defensesCost - miscPerksCost
     - waifuPerksCost - genericWaifuPerksCost - luresCost - companionsCost - bindingCost
-    - budgetMods.value.minus11 + budgetMods.value.plus11 + companionTicketProfit.value - budgetMods.value.sell11 + missionRewardTickets.value - originPSTicket - (startingOrigin.value.costT || 0)
+    - budgetMods.value.minus11 + budgetMods.value.plus11 + companionTicketProfit.value - budgetMods.value.sell11 + missionRewardTickets.value - originPSTicket - originSWPTicket - (startingOrigin.value.costT || 0)
 })
 
 const totalCost = computed(() => startingOrigin.value.cost + heritageCost.value + bindingCost.value
@@ -505,14 +510,10 @@ watch(startingWorld, () => {
   currentWorld.value = startingWorld.value
 })
 
-const favorites = useStorage<number[]>('favorites', [])
-
 const collapsedDescs = useStorage<string[]>('collapsedDescs', [])
 const collapsedDescsSet = computed(() => new Set<string>(collapsedDescs.value))
 
 export const appName = ref('')
-
-const favoritesObject = computed(() => favorites.value.reduce((a, f) => (a[f] = f, a), {} as Record<string, string>))
 
 watch(() => intensities.value.length, () => {
   if (!isCouple.value && coupleOrigin.value.tier > 1) {
@@ -591,7 +592,6 @@ export function useStore() {
     csr,
     loan,
     trHistory,
-    favorites,
     usedHeritageDiscount,
     maxHeritageDiscount,
     talentsDiscount,
@@ -611,7 +611,6 @@ export function useStore() {
     manualReturnKf,
     sellKoeff,
     returnKoeff,
-    favoritesObject,
     specificModsCost,
     missionRewardCredits,
     isCouple,

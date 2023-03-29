@@ -1,6 +1,6 @@
 <template>
   <div
-    class="py-1 w-full dark:text-gray-200 bg-warm-gray-300 dark:bg-warm-gray-700 rounded"
+    class="py-1 w-full dark:text-gray-200 bg-warm-gray-300 dark:bg-warm-gray-700 rounded border border-gray-500"
   >
     <div class="h-full flex flex-col" :class="[isUserChar ? 'bg-lime-50 dark:bg-warm-gray-800': 'bg-gray-300 dark:bg-gray-800']">
       <div ref="cardEl" class="relative flex-grow">
@@ -12,14 +12,14 @@
           :alt="charData.name"
         >
         <div v-else class="h-16"></div>
-        <div class="absolute top-7 right-0.5 cursor-pointer flex items-center gap-1 text-lg leading-none" @click="likeChar">
-          <span class="text-red-500 flex items-center gap-0.5">
+        <div ref="likeHover" class="absolute top-7 right-0.5 cursor-pointer flex items-center gap-1 text-lg leading-none" @click="likeChar">
+          <span class="text-red-500 flex items-center gap-0.5 text-shadow-border">
             <span v-if="charLikes" class="font-semibold">{{ charLikes }}</span>
             <ci:heart-fill
-              v-if="favoritesObject[charData.uid] !== undefined"
-              class="hover:(text-gray-300 bg-gray-600)"
+              v-if="(favoritesObject[charData.uid] !== undefined && !isLikeHovered) || (favoritesObject[charData.uid] === undefined && isLikeHovered)"
+              class="filter drop-shadow"
             />
-            <ci:heart-outline v-else class="hover:(text-pink-300 bg-pink-600)" />
+            <ci:heart-outline v-if="(!favoritesObject[charData.uid] && !isLikeHovered) || (favoritesObject[charData.uid] !== undefined && isLikeHovered)" class="filter drop-shadow" />
           </span>
         </div>
         <icon-park-outline:full-screen-one
@@ -223,7 +223,7 @@ import { Character, DBCharacter } from 'global'
 import { random } from 'lodash-es'
 import { CHAR_COSTS, defTags, PLACEHOLDER_NO_IMAGE, useAllChars, waifusThatHasPerk, waifuTags, nicknames, CHAR_COSTS_TICKET } from '~/data/constants'
 import { lazyLoadSingleImg, tagToggles, showDefenseTags, imageLink } from '~/logic'
-import { updateUserInfo, updateUserLikes } from '~/logic/auth/authLogic'
+import { updateUserLikes } from '~/logic/server/'
 import { captureCopyCompanion, captureCompanion, yoinkCompanion, slightlyCompanion, deleteLocalCharacter, buyAnyCompanion, undoBuying, isAlreadyBought } from '~/logic/waifuLogic'
 import { usePlayStore } from '~/store/play'
 import { useGlobalSettings } from '~/store/settings'
@@ -266,10 +266,10 @@ const props = defineProps({
 })
 
 const {
-  flags, captureKoeff, favorites,
-  settings, favoritesObject,
+  flags, captureKoeff,
+  settings,
 } = useStore()
-const { canPurchase } = useGlobalSettings()
+const { canPurchase, favoritesObject, favorites } = useGlobalSettings()
 const { likes } = usePlayStore()
 const { changes } = useAllChars()
 const { user } = useUser()
@@ -290,9 +290,12 @@ const showChange = ref(false)
 
 const cardEl = ref<HTMLImageElement| null>(null)
 const companionEl = ref<HTMLImageElement| null>(null)
+const likeHover = ref<HTMLImageElement| null>(null)
 const inFocus = useElementHover(cardEl)
 
 const copyCount = ref(0)
+
+const isLikeHovered = useElementHover(likeHover)
 
 const charData = computed(() => {
   const res = props.char.t

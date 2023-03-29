@@ -65,7 +65,7 @@
           <div class="flex gap-2">
             <Checkbox v-model="localSave" label="Local save" />
             <Checkbox v-model="serverSave" label="Propose to global" />
-            <Checkbox v-if="editMode" v-model="oldEntry" label="Keep old UID" title="Kee UID so if there is a Waifu Perk for them, it will still work" />
+            <Checkbox v-if="editMode" v-model="oldEntry" label="Keep old UID" title="Keep UID so if there is a Waifu Perk for them, it will still work" />
           </div>
           <Button
             :disabled="!!submitMessage || !!processing"
@@ -78,7 +78,7 @@
       </div>
       <CompanionCard
         v-if="name"
-        class="hidden xl:block absolute h-[530px] -top-18 w-[300px] left-[calc(100%+0.5rem)]"
+        class="hidden xl:block absolute h-[530px] -top-18 w-[320px] left-[calc(100%+0.5rem)]"
         :char="companion"
         :lazy="false"
       />
@@ -201,6 +201,7 @@ const addCharacter = handleSubmit((values) => {
   values.tags = values.tags.map((x: string) => waifuTagsByTag[x] ? waifuTagsByTag[x].short : x)
   values.uid = props.editMode && oldEntry.value ? props.character.uid || random(10000000, 99999999) : random(10000000, 99999999)
   if (serverSave.value) {
+    values.uid = props.character.uid || random(10000000, 99999999)
     processing.value = true
     userNickname.value = values.nickname
     const seed = window.localStorage.getItem('seed')

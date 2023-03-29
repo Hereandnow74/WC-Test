@@ -135,7 +135,7 @@ const heritagesDLC = computed(() => !settings.value.allChosenAuthors[0]
   ? DLCheritages.filter(perk => !settings.value.allChosenAuthors.includes(perk.dlc))
   : [])
 
-const heritagesDLC2 = computed(() => !settings.value.allChosenAuthors[0]
+const heritagesDLC2 = computed(() => !settings.value.allChosenAuthors[0] || settings.value.allDLCTypes[1]
   ? fullHeritagesDLC.filter(perk => !settings.value.allChosenAuthors.includes(perk.dlc))
   : [])
 

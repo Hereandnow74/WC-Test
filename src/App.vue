@@ -33,7 +33,7 @@
 
 <script lang="ts" setup>
 import { VERSION } from './data/constants'
-import { refreshTokens } from './logic/auth/authLogic'
+import { refreshTokens } from './logic/server'
 import {
   showSaveLoad, showShare, showSideMenu, showAddPerk, toggleShowAddPerk,
   toggleShowSettings, showSettings,

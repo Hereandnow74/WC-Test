@@ -1,5 +1,3 @@
-import { SavedChar } from '~/store/chargen'
-
 const showInfo = ref(false)
 const showConfirm = ref(false)
 const showCustom = ref(false)

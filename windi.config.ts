@@ -11,6 +11,9 @@ export default defineConfig({
         '4xl': '2000px',
         '5xl': '2300px',
       },
+      textShadow: {
+        border: '0px 0px 1px rgb(0 0 0 / 60%)',
+      },
     },
   },
   plugins: [

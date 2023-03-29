@@ -25,6 +25,7 @@ interface Character {
 }
 
 interface DBWorld {
+  uid: string
   worldName: string
   rating: number
   additional?: string
@@ -131,6 +132,22 @@ export interface Perk {
   type?: string
 }
 
+interface SearchRequest {
+  tier?: {
+    minTier: number
+    maxTier: number
+  }
+  tags?: {
+    tag: string
+    include: boolean
+  }[]
+  hasNsfw?: boolean
+  newerThan?: Date
+  sortBy?: string // Example: likes:desc or likes:asc
+  limit?: number
+  page?: number
+}
+
 declare global {
 }
 export {
@@ -144,4 +161,5 @@ export {
   Perk,
   Freebie,
   Heritage,
+  SearchRequest,
 }

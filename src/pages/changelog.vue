@@ -6,6 +6,18 @@
       </h2>
       <div>
         <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          26 March 2023
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~120 new user submitted characters, new missions, new worlds</li>
+          <li>Favorites filter for worlds.</li>
+          <li>Basic Infinite scroll for Specific Waifu Perks.</li>
+          <li>A setting to still show SWP or Heritages regardless of other DLC perk filters.</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
           21 March 2023
         </h3>
         <ul class="list-decimal list-inside">

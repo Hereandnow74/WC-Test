@@ -227,7 +227,7 @@ function sellCompanion(uid: number) {
 async function freeCompanion(uid: number) {
   const res = await confirmDialog(`
   <div>When you release a retinue member you will lose gained credits for the capture, or not get your credits back if you bough them. You will not be able to capture them again, so think twice before doing it.</div>
-  <div class="dark:text-amber-400 text-amber-600 text-sm">This is not an official catalog function.</div>
+  <div class="dark:text-amber-400 text-amber-600 text-xl">This is not an official catalog function. Use only if you aware of consequences.</div>
   `)
   if (!res) return
   const cmp = companions.value[findIndex(companions.value, { uid })]

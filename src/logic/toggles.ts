@@ -23,6 +23,8 @@ export const currentFic = ref({})
 
 export const userCharactersShown = ref(false)
 
+export const showFilters = ref(false)
+
 export const showSaveLoad = ref(false)
 export const showShare = ref(false)
 export const isBuildImage = ref(false)

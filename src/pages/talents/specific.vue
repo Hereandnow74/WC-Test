@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col gap-2 pb-8 sm:p-2">
+  <div ref="SWPContainer" class="flex flex-col gap-2 pb-8 sm:p-2">
     <Desc :desc="genericDesc" class="p-2 mb-4 max-w-4xl mx-auto bg-violet-200 dark:bg-violet-900" />
     <div class="flex gap-2 mx-auto">
       <Button size="Small" bg-color="bg-orange-500" label="Propose Waifu Perk" @click="showAddWaifuPerk = true" />
@@ -7,19 +7,19 @@
     </div>
     <div
       ref="specificList"
-      class="grid 4xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-2 pb-8 justify-center"
+      class="h-screen grid 4xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-2 pb-8 justify-center overflow-y-auto min-h-0 scrollbar"
       :class="{'!grid-cols-1': buildLayout}"
     >
       <SpecificPerkCard
-        v-for="waifu in filterAvailable ? specificPerksFiltered : specificPerksWithLocal"
+        v-for="waifu in filterAvailable ? specificPerksFiltered : infiniteSWPs"
         :key="waifu.uid"
         :waifu-perk="waifu"
         @changeModalImage="(img: string) => modalImage = img"
       />
     </div>
     <div v-if="showModal && modalImage" class="fixed inset-0 bg-black bg-opacity-10 flex place-content-center z-50" @click="(showModal = false, modalImage = '')">
-      <div class="overflow-auto max-h-screen max-w-screen flex place-content-center">
-        <img class="object-cover" :src="modalImage" alt="full image">
+      <div class="overflow-auto max-h-screen max-w-screen flex place-content-center items-center">
+        <img class="object-contain h-max w-max" :src="modalImage" alt="full image">
       </div>
     </div>
     <div class="h-8"></div>
@@ -39,11 +39,12 @@ const { settings, companionsUIDs, companionsByUID, startingOrigin } = useStore()
 
 const showModal = ref(false)
 const specificList = ref<HTMLElement|null>(null)
+const SWPContainer = ref<HTMLElement|null>(null)
 const modalImage = ref('')
 
 const filterAvailable = ref(false)
 
-const specificPerksWithDLC = computed(() => !settings.value.allChosenAuthors[0]
+const specificPerksWithDLC = computed(() => !settings.value.allChosenAuthors[0] || settings.value.allDLCTypes[0]
   ? waifu_perks
     .concat(DLCwaifu_perks
       .filter(perk => perk.dlc && !settings.value.allChosenAuthors.includes(perk.dlc)))
@@ -63,4 +64,16 @@ const specificPerksFiltered = computed(() => specificPerksWithLocal.value.filter
 onMounted(() => useTooltips())
 
 watch(modalImage, () => showModal.value = true)
+
+const startingSWPCount = 10
+const infiniteSWPs = ref(specificPerksWithLocal.value.slice(0, startingSWPCount))
+watch(specificPerksWithLocal, () => infiniteSWPs.value = specificPerksWithLocal.value.slice(0, startingSWPCount))
+
+useInfiniteScroll(
+  specificList,
+  () => {
+    infiniteSWPs.value.push(...specificPerksWithLocal.value.slice(infiniteSWPs.value.length, infiniteSWPs.value.length + startingSWPCount))
+  },
+  { distance: 10 },
+)
 </script>

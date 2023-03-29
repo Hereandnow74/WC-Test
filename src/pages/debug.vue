@@ -96,7 +96,6 @@ const {
   csr,
   loan,
   trHistory,
-  favorites,
   totalActive,
   usedHeritageDiscount,
   talentsDiscount,

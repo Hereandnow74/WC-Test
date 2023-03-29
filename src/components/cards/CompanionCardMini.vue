@@ -20,7 +20,7 @@
           <span v-if="char.sold" class="text-red-500 ml-1">SOLD</span>
           <span class="text-gray-500 ml-auto whitespace-nowrap"> Tier: <TierDisplay :tier="char.perk?.tier || char.swap?.tier || char.tier" /></span>
           <span
-            v-if="char.tier !== char.priceTier && char.priceTier"
+            v-if="char.tier !== char.priceTier && char.priceTier && (!char.perk?.tier && !char.swap?.tier)"
             class="text-gray-500 ml-2 whitespace-nowrap"
           > Original: <TierDisplay :tier="char.priceTier" /></span>
         </div>

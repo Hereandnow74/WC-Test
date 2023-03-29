@@ -638,18 +638,6 @@ DLCotherControls.push({
 })
 
 DLCotherControls.push({
-  uid: 'mESrr',
-  dlc: 'gunmetalblue',
-  title: 'To The Victor Goes The Spoils',
-  category: 'Lure',
-  image: 'https://i.ibb.co/N2MDZxg/To-The-Victor-Goes-The-Spoils.jpg',
-  cost: 100,
-  desc: `Any capture target killed by you or your retinue is automatically captured. You may choose to sell them to the company at standard rate or return them to life with Warranty Plan.
-  `,
-  whitelist: ['Zenryoku Zenkai', 'Warranty Plan'],
-})
-
-DLCotherControls.push({
   uid: 'gqjwm',
   dlc: 'Trismegistus',
   title: 'Social Club',

@@ -46,7 +46,7 @@
 import * as zod from 'zod'
 import { useForm, useField } from 'vee-validate'
 import { toFormValidator } from '@vee-validate/zod'
-import { loginToServer } from '~/logic/auth/authLogic'
+import { loginToServer } from '~/logic/server/'
 import { useUser } from '~/store/user'
 
 const { user } = useUser()

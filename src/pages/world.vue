@@ -53,17 +53,28 @@
         <NumberInput v-model="maxDR" :min="minDR" :max="10" />
       </div>
       <div class="flex gap-1 px-0.5 items-center border rounded border-gray-600 dark:border-gray-300 whitespace-nowrap text-sm">
-        <div class="flex gap-1 px-1 rounded items-center cursor-pointer hover:(bg-green-500 bg-opacity-60)" :class="filterUserWorlds === 'canon' ? 'bg-green-500 bg-opacity-60' : ''">
+        <div class="flex gap-1 px-1 rounded items-center cursor-pointer hover:(bg-green-500 bg-opacity-60)" :class="filterUserWorlds === 5 ? 'bg-green-500 bg-opacity-60' : ''" @click="filterUserWorlds = filterUserWorlds ? 0 : 5">
           <div class="border border-gray-700 bg-yellow-300 w-4 h-4"></div>
-          <div title="World or Condition from official WC spreadsheet" @click="filterUserWorlds = filterUserWorlds ? '': 'canon'">
+          <div title="World or Condition from official WC spreadsheet">
             - Official DR
           </div>
         </div>
         <div class="h-4 w-[1px] bg-gray-400"></div>
-        <div class="flex gap-1 px-1 rounded items-center cursor-pointer hover:(bg-green-500 bg-opacity-60)" :class="filterUserWorlds === 'user' ? 'bg-green-500 bg-opacity-60' : ''">
+        <div class="flex gap-1 px-1 rounded items-center cursor-pointer hover:(bg-green-500 bg-opacity-60)" :class="filterUserWorlds === 'user' ? 'bg-green-500 bg-opacity-60' : ''" @click="filterUserWorlds = filterUserWorlds ? '': 'user'">
           <div class="border border-gray-700 bg-gray-300 w-4 h-4"></div>
-          <div title="World or Condition submitted by user" @click="filterUserWorlds = filterUserWorlds ? '': 'user'">
+          <div title="World or Condition submitted by user">
             - User DR
+          </div>
+        </div>
+        <div class="h-4 w-[1px] bg-gray-400"></div>
+        <div class="flex gap-1 px-1 rounded items-center cursor-pointer hover:(bg-green-500 bg-opacity-60)" :class="filterFav ? 'bg-green-500 bg-opacity-60' : ''" @click="filterFav = !filterFav">
+          <div class="text-red-500 flex items-center">
+            <ci:heart-fill
+              class="filter drop-shadow"
+            />
+          </div>
+          <div title="World or Condition submitted by user">
+            - Fav
           </div>
         </div>
       </div>
@@ -76,10 +87,9 @@
     >
       <WorldCard
         v-for="world in infiniteWorlds"
-        :key="world.key"
+        :key="world.uid"
         :world="world"
         :targets="allWorldsTargets[world.worldName]"
-        :type="world.type"
         :class="{'row-span-2 min-h-72': world.image && !settings.hideWorldImg, 'sm:col-span-2': world.additional, 'sm:row-span-4': world.image && world.additional && !settings.hideWorldImg}"
         class="w-full"
         :min="minDR"
@@ -100,16 +110,18 @@
 <script lang="ts" setup>
 import Fuse from 'fuse.js'
 import { isArray, some } from 'lodash-es'
+import { DBWorld } from 'global'
 import { useStore } from '~/store/store'
 import { toggleShowAddWorld, showAddWorld, threeToggle } from '~/logic'
 import { useWorlds } from '~/data/constants'
-import { World } from '~/store/chargen'
+import { useGlobalSettings } from '~/store/settings'
 
 const AddWorld = computed(() => defineAsyncComponent(() => import('../components/modals/AddWorld.vue')))
 const WorldInfoModal = computed(() => defineAsyncComponent(() => import('../components/modals/WorldInfoModal.vue')))
 
 const search = ref('')
 const { worlds: worldsReac, subWorlds: worldsSubReac, allWorldTargets } = useWorlds()
+const { favoriteWorldsObject } = useGlobalSettings()
 const worldToEdit = ref({})
 const editMode = ref(false)
 const showWorldInfo = ref(false)
@@ -120,7 +132,8 @@ const sortRating = ref(1)
 const sortTargets = ref(0)
 const sortAdded = ref(false)
 
-const filterUserWorlds = ref('')
+const filterUserWorlds = ref(0)
+const filterFav = ref(false)
 
 const maxDR = ref(10)
 const minDR = ref(1)
@@ -138,7 +151,7 @@ const worldWrapper = ref<HTMLElement>(null)
 const allUserWorlds = computed(() => userWorlds.value.concat(localUserWorlds.value))
 
 const allWorlds = computed(() => {
-  return [...allUserWorlds.value.map(x => (x.type = 'local', x.key = x.worldName + x.type, x)), ...worldsReac.value.map(x => (x.type = 'canon', x.key = x.worldName + x.type, x)), ...worldsSubReac.value.map(x => (x.type = 'user', x.key = x.worldName + x.type, x))]
+  return [...allUserWorlds.value, ...worldsReac.value, ...worldsSubReac.value]
 })
 
 const allWorldsTargets = computed(() => {
@@ -164,14 +177,16 @@ const worldsFiltered = computed(() => {
   if (search.value) {
     return fuse.search(search.value).map(x => x.item)
       .filter(x => (x.rating >= minDR.value && x.rating <= maxDR.value) || checkConditions(x.condition))
-      .filter(x => filterUserWorlds.value ? x.type === filterUserWorlds.value : true)
+      .filter(x => filterUserWorlds.value ? x.uid.length === filterUserWorlds.value : true)
+      .filter(x => filterFav.value ? favoriteWorldsObject.value[x.uid] : true)
   }
   else {
     return sortAdded.value
       ? [...allWorlds.value].reverse()
       : [...allWorlds.value].sort(sortingFunc)
         .filter(x => (x.rating >= minDR.value && x.rating <= maxDR.value) || checkConditions(x.condition))
-        .filter(x => filterUserWorlds.value ? x.type === filterUserWorlds.value : true)
+        .filter(x => filterUserWorlds.value ? x.uid.length === filterUserWorlds.value : true)
+        .filter(x => filterFav.value ? favoriteWorldsObject.value[x.uid] : true)
   }
 })
 
@@ -197,18 +212,18 @@ useInfiniteScroll(
 //     return [...worldsSubReac.value].sort(sortingFunc)
 // })
 
-function editWorld(world: World) {
+function editWorld(world: DBWorld) {
   worldToEdit.value = world
   editMode.value = true
   toggleShowAddWorld()
 }
 
-function worldInfo(world: World) {
+function worldInfo(world: DBWorld) {
   worldToEdit.value = world
   showWorldInfo.value = true
 }
 
-function calcTargets(world: World) {
+function calcTargets(world: DBWorld) {
   let count = 0
   count += allWorldTargets.value[world.worldName] || 0
   if (isArray(world.condition))

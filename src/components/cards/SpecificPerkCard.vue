@@ -22,11 +22,11 @@
       :data-src="waifuPerk.image_2"
       :alt="waifuPerk.title"
     />
-    <!-- <icon-park-outline:full-screen-one
+    <icon-park-outline:full-screen-one
       v-if="waifuPerk.image !==''"
       class="absolute top-3 right-3 text-gray-200 hover:text-blue-400 cursor-pointer mix-blend-difference"
       @click.stop="() => emit('changeModalImage', waifuPerk.image)"
-    /> -->
+    />
     <h3 class="flex gap-1 flex-wrap text-lg font-bold relative">
       {{ waifuPerk.title }}
       <Select

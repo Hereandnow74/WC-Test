@@ -14,13 +14,23 @@
         :alt="world.worldName"
         :src="PLACEHOLDER_NO_IMAGE"
       >
+      <div class="absolute top-1 right-0.5 cursor-pointer flex items-center gap-1 text-lg leading-none" @click.stop="likeWorld">
+        <span class="text-red-500 hover:text-red-400 flex items-center gap-0.5 text-shadow-border">
+          <span v-if="worldLikes" class="font-semibold">{{ worldLikes }}</span>
+          <ci:heart-fill
+            v-if="favoriteWorldsObject[world.uid]"
+            class="filter drop-shadow"
+          />
+          <ci:heart-outline v-else class="filter drop-shadow" />
+        </span>
+      </div>
     </div>
     <h3 class="text-xl text-center bg-black bg-opacity-20 flex items-center px-2">
-      <span class="font-semibold cursor-help" :title="types[type].title || ''" :class="types[type].color || 'text-gray-100'">{{ world.worldName }}</span>
+      <span class="font-semibold cursor-help" :title="options.title" :class="options.color || 'text-gray-100'">{{ world.worldName }}</span>
       <span class="ml-auto inline-flex gap-0.5">
         <ic:outline-info v-if="targets" class="hover:text-green-400" @click.stop="$emit('showWorldInfo', world)" />
         <bx:bxs-edit class="hover:text-yellow-600" @click.stop="$emit('editWorld', world)" />
-        <fluent:delete-20-filled v-if="type === 'local'" class="hover:text-red-500" @click.stop="deleteWorld" />
+        <fluent:delete-20-filled v-if="!world.uid || world.uid.length === 7" class="hover:text-red-500" @click.stop="deleteWorld" />
       </span>
     </h3>
     <div class="flex gap-4 justify-between text-gray-200 px-2">
@@ -49,17 +59,18 @@
 </template>
 
 <script lang='ts' setup>
+import { DBWorld } from 'global'
 import { findIndex, isArray } from 'lodash-es'
 import type { PropType } from 'vue'
 import { WORLD_COLORS, WORLD_RATINGS, PLACEHOLDER_NO_IMAGE } from '~/data/constants'
 import { lazyLoadSingleImg } from '~/logic'
 import { confirmDialog } from '~/logic/dialog'
-import { World } from '~/store/chargen'
+import { useGlobalSettings } from '~/store/settings'
 import { useStore } from '~/store/store'
 
 const props = defineProps({
   world: {
-    type: Object as PropType<World>,
+    type: Object as PropType<DBWorld>,
     default: () => {},
   },
   targets: {
@@ -99,9 +110,21 @@ const types = {
   },
 }
 
+const options = computed(() => {
+  if (props.world.uid && props.world.uid.length === 5)
+    return { title: types.canon.title, color: types.canon.color }
+  if (props.world.uid && props.world.uid.length === 6)
+    return { title: types.user.title, color: types.user.color }
+  if (props.world.uid && props.world.uid.length === 7)
+    return { title: types.local.title, color: types.local.color }
+  return { title: '', color: '' }
+})
+
 defineEmits(['editWorld', 'showWorldInfo'])
 
 const { baseBudget, startingWorld, localUserWorlds, flags, settings } = useStore()
+
+const { favoriteWorlds, favoriteWorldsObject } = useGlobalSettings()
 
 const pickAbleAfter = computed(() => props.pickAble && !flags.value.chargen ? false : props.pickAble)
 
@@ -135,7 +158,7 @@ const worldImg = ref<HTMLImageElement | null>(null)
 
 const rating = computed(() => condition.rating || props.world.rating)
 
-function pickWorld(world: World) {
+function pickWorld(world: DBWorld) {
   if (startingWorld.value.worldName === world.worldName
   && (startingWorld.value.condition === condition.name
   || (condition.name === 'No condition' && !startingWorld.value.condition))) {
@@ -175,6 +198,28 @@ function conditionList(list: any[]) {
   list = list.map(x => ({ value: x.name, label: `${x.name} (${x.rating})`, style: x.a === 'c' ? 'text-yellow-300' : '' }))
   list.unshift({ value: 'No condition', label: 'No condition' })
   return list
+}
+
+function likeWorld() {
+  if (favoriteWorldsObject.value[props.world.uid] !== undefined)
+    favoriteWorlds.value.splice(favoriteWorlds.value.indexOf(props.world.uid), 1)
+    // if (likes.value[props.world.uid] && user.value.id) {
+    //   likes.value[props.world.uid] -= 1
+    //   updateUserLikes(false, { characterUid: props.world.uid, liked: false })
+    // }
+
+  else
+    favoriteWorlds.value.push(props.world.uid)
+    // if (user.value.id) {
+    //   if (likes.value[props.world.uid] !== undefined) {
+    //     likes.value[props.world.uid] += 1
+    //     updateUserLikes(false, { characterUid: props.world.uid, liked: true })
+    //   }
+    //   else {
+    //     likes.value[props.world.uid] = 1
+    //     updateUserLikes(false, { characterUid: props.world.uid, liked: true })
+    //   }
+    // }
 }
 
 onMounted(() => { if (worldImg.value) lazyLoadSingleImg(worldImg.value) })

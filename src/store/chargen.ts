@@ -1,4 +1,4 @@
-import { Character, Perk } from 'global'
+import { Character, DBWorld, Perk } from 'global'
 
 interface Condition {
   rating: number
@@ -165,8 +165,8 @@ const allForSave = {
   homePerks,
 }
 
-const userWorlds = ref([] as World[])
-const localUserWorlds = useStorage<World[]>('localUserWorlds', [])
+const userWorlds = ref([] as DBWorld[])
+const localUserWorlds = useStorage<DBWorld[]>('localUserWorlds', [])
 
 const userCharacters = ref([] as Character[])
 const localUserCharacters = useStorage<Character[]>('localUserCharacters', [])

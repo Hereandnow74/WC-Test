@@ -90,7 +90,7 @@
             <Toggle v-model="settings.hideLegacy" />
           </div>
           <div class="flex justify-between gap-4 border-b border-gray-500 border-dotted">
-            <div>Turn on the ability to <b>free</b> retinue members</div>
+            <div>Turn on the ability to <b>free</b> retinue members (<b>Not Official</b>)</div>
             <Toggle v-model="settings.ableSell" />
           </div>
           <div class="flex justify-between gap-4 border-b border-gray-500 border-dotted">
@@ -117,6 +117,23 @@
             class="border border-gray-700 dark:border-gray-400 rounded p-0.5"
             :class="[nicknames.includes(name) ? 'text-red-600 dark:text-red-400 font-semibold' : '']"
             :title="nicknames.includes(name) ? 'Patron' : ''"
+          />
+        </div>
+        <h3 class="text-lg text-lime-700 dark:text-lime-400 font-semibold">
+          Show these DLC perks regardless of above settings
+        </h3>
+        <div class="flex gap-2 flex-wrap">
+          <Toggle
+            v-model="settings.allDLCTypes[0]"
+            value="swp"
+            label="Specific Waifu Perks"
+            class="border border-amber-500 rounded p-0.5"
+          />
+          <Toggle
+            v-model="settings.allDLCTypes[1]"
+            value="heritage"
+            label="Heritages"
+            class="border border-amber-500 rounded p-0.5"
           />
         </div>
       </div>

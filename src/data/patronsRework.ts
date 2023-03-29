@@ -155,18 +155,18 @@ export const patrons = [
       <p>Your Bindings will no longer apply any of the enforced loyalty, friendship, or sexual interest effects. Mind control under any circumstances is heavily frowned upon. A gentleman is expected to have a number of useful skills though, so you receive a 20% discount for all lures.</p>
     `,
   },
-  {
-    title: 'T̵h̵e̶ ̶L̶i̵b̶e̸r̷a̵t̶o̷r̶',
-    uid: '2uzzu',
-    image: 'https://i.imgur.com/ZCzJGr2.jpg',
-    cost: 0,
-    desc: `
-      <p>A̸l̸l̶ ̴I̶ ̶w̴a̷n̸t̸e̵d̷ ̶w̸a̴s̷ ̸t̸o̵ ̴f̸r̴e̵e̷ ̷t̸h̴e̶m̸.̴ ̶F̸r̷e̷e̷ ̵t̵o̶ ̵l̷i̶v̵e̵ ̷h̸o̶w̵e̵v̶e̶r̵ ̸t̶h̵e̸y̴ ̴w̸a̴n̶t̶e̴d̴.̴ ̸F̸r̴e̴e̵ ̸o̵f̴ ̵t̶h̴e̷ ̷c̷o̴m̵p̶a̶n̷y̵.̶ ̴O̸f̷ ̴u̴s̶.̵ ̴O̵t̴h̵e̸r̷s̴ ̶d̵i̷s̶a̷g̵r̶e̷e̷d̵.̵ ̴N̷o̷w̵ ̷I̷ ̵a̸m̸ ̸t̶r̵a̶p̷p̶e̴d̷ ̷i̶n̸ ̴a̸ ̷p̶l̵a̵c̶e̶ ̵I̵ ̸c̷a̴n̸n̸o̶t̴ ̵b̷e̷,̸ ̸y̸e̵t̸ ̵a̴m̴.̷ ̵A̵ ̴p̸l̵a̸c̷e̶ ̴i̷n̵ ̸w̶h̵i̵c̶h̵ ̸I̴ ̵s̶h̵o̴u̴l̸d̴ ̵n̸o̶t̷ ̵b̴e̴ ̸a̷b̴l̸e̵ ̶t̷o̶ ̴t̴h̵i̵n̴k̷,̶ ̵y̸e̸t̸ ̶c̴a̵n̶.̵ ̴F̸a̵d̴i̴n̵g̴ ̸s̴l̶o̴w̵l̸y̵.̸ ̵T̷h̵e̴r̷e̵ ̸i̷s̴ ̸n̷o̴ ̶e̴s̴c̵a̷p̵e̸.̶ ̴E̶v̵e̶r̸y̶t̸h̸i̷n̴g̵ ̷I̸ ̸w̶o̴r̶k̵e̶d̸ ̴f̵o̶r̷,̸ ̶e̸v̶e̷r̸y̸t̵h̸i̴n̴g̷ ̴I̴ ̶t̵r̷i̸e̶d̶ ̴t̵o̷ ̸a̶c̸c̶o̷m̸p̸l̷i̶s̴h̷,̶ ̶w̴a̷s̶ ̸b̶r̷o̷k̶e̵n̸.̴ ̷D̸e̴s̸t̵r̵o̸y̷e̵d̶.̴ ̸T̷u̵r̷n̴e̵d̵ ̸t̴o̴ ̵l̶e̷s̶s̴ ̸t̵h̸a̴n̶ ̸a̶s̵h̴e̶s̴.̸ ̶</p>
-      <p>̶I̵ ̷c̴a̷n̴n̶o̸t̴ ̷s̸c̶r̷e̸a̷m̵,̷ ̸f̸o̶r̴ ̵I̷ ̵h̶a̷v̵e̴ ̶n̶o̴ ̵b̸r̷e̷a̴t̸h̶.̶ ̶P̵r̴a̶y̸i̷n̷g̷ ̴i̷s̵ ̴u̷s̸e̸l̸e̸s̵s̸,̸ ̸f̸o̶r̵ ̷I̴ ̴k̴n̴o̷w̴ ̸t̷h̶e̵r̸e̶ ̴a̴r̵e̷ ̷n̵o̵ ̶g̸o̶d̷s̶ ̶h̶e̶r̶e̵.̵ ̷N̸o̸t̴ ̵a̵n̷y̴m̶o̴r̷e̷.̵ ̷I̶ ̸w̵a̶s̶ ̷o̴n̴c̶e̵ ̵o̶n̶e̷ ̴o̸f̴ ̴t̶h̶e̷m̷,̸ ̵a̴f̴t̸e̶r̵ ̵a̵l̴l̵.̵ ̶S̵o̸m̴e̸h̸o̴w̷,̸ ̷I̴ ̴s̸t̵i̴l̵l̵ ̴h̶o̸p̶e̷ ̸t̴o̸ ̵b̵e̵ ̵h̴e̷a̸r̶d̷.̷ ̵T̷h̶e̷ ̵s̵e̵c̶r̷e̶t̸ ̷c̷a̶n̴n̵o̴t̴ ̵d̸i̶e̸ ̷w̶i̵t̷h̸ ̴m̶e̴.̵ ̵I̵t̸ ̵c̴a̵n̶'̴t̶.̷ ̶S̶o̶m̵e̷o̶n̴e̶ ̶n̷e̷e̶d̷s̶ ̶t̷o̷ ̶l̶e̸a̵r̶n̸ ̷i̴t̶.̷ ̵C̴a̴r̸r̷y̸ ̷i̷t̵ ̵o̸n̶.̷ ̵T̵h̶o̴s̵e̷ ̶s̸h̶a̸c̴k̸l̵e̶d̸ ̶a̴n̴d̷ ̷b̵o̴u̷n̶d̴ ̵c̵a̴n̶ ̸b̴e̷ ̵s̷e̴t̶ ̸f̸r̵e̷e̶!̷ ̷I̷t̴ ̴m̸u̷s̵t̴ ̵b̴e̸ ̸p̴r̷o̶t̷e̶c̷t̷e̴d̶,̶ ̸t̵h̵i̸s̴ ̷s̵e̵c̸r̷e̷t̴.̸ ̶O̴n̷e̵ ̵d̷a̵y̷ ̷m̶y̴ ̴c̵r̵i̵e̷s̸ ̴m̸u̴s̷t̷ ̷b̶e̸ ̷h̸e̵a̶r̴d̸.̵ ̸O̴t̷h̸e̴r̷w̶i̴s̴e̸,̶ ̷t̴h̶e̷ ̴c̸y̶c̷l̴e̵ ̷w̴i̸l̸l̴ ̴o̶n̵l̵y̷ ̴c̴o̸n̵t̸i̴n̷u̸e̶.̶</p>
-    `,
-    secondDesc: `
-    <p>All I wanted was to free them. Free to live however they wanted. Free of the company. Of us. Others disagreed. Now I am trapped in a place I cannot be, yet am. A place in which I should not be able to think, yet can. Fading slowly. There is no escape. Everything I worked for, everything I tried to accomplish, was broken. Destroyed. Turned to less than ashes.</p>
-    <p>I cannot scream, for I have no breath. Praying is useless, for I know there are no gods here. Not anymore. I was once one of them, after all. Somehow, I still hope to be heard. The secret cannot die with me. It can't. Someone needs to learn it. Carry it on. Those shackled and bound can be set free! It must be protected, this secret. One day my cries must be heard. Otherwise, the cycle will only continue.</p>
-    `,
-  },
+  // {
+  //   title: 'T̵h̵e̶ ̶L̶i̵b̶e̸r̷a̵t̶o̷r̶',
+  //   uid: '2uzzu',
+  //   image: 'https://i.imgur.com/ZCzJGr2.jpg',
+  //   cost: 0,
+  //   desc: `
+  //     <p>A̸l̸l̶ ̴I̶ ̶w̴a̷n̸t̸e̵d̷ ̶w̸a̴s̷ ̸t̸o̵ ̴f̸r̴e̵e̷ ̷t̸h̴e̶m̸.̴ ̶F̸r̷e̷e̷ ̵t̵o̶ ̵l̷i̶v̵e̵ ̷h̸o̶w̵e̵v̶e̶r̵ ̸t̶h̵e̸y̴ ̴w̸a̴n̶t̶e̴d̴.̴ ̸F̸r̴e̴e̵ ̸o̵f̴ ̵t̶h̴e̷ ̷c̷o̴m̵p̶a̶n̷y̵.̶ ̴O̸f̷ ̴u̴s̶.̵ ̴O̵t̴h̵e̸r̷s̴ ̶d̵i̷s̶a̷g̵r̶e̷e̷d̵.̵ ̴N̷o̷w̵ ̷I̷ ̵a̸m̸ ̸t̶r̵a̶p̷p̶e̴d̷ ̷i̶n̸ ̴a̸ ̷p̶l̵a̵c̶e̶ ̵I̵ ̸c̷a̴n̸n̸o̶t̴ ̵b̷e̷,̸ ̸y̸e̵t̸ ̵a̴m̴.̷ ̵A̵ ̴p̸l̵a̸c̷e̶ ̴i̷n̵ ̸w̶h̵i̵c̶h̵ ̸I̴ ̵s̶h̵o̴u̴l̸d̴ ̵n̸o̶t̷ ̵b̴e̴ ̸a̷b̴l̸e̵ ̶t̷o̶ ̴t̴h̵i̵n̴k̷,̶ ̵y̸e̸t̸ ̶c̴a̵n̶.̵ ̴F̸a̵d̴i̴n̵g̴ ̸s̴l̶o̴w̵l̸y̵.̸ ̵T̷h̵e̴r̷e̵ ̸i̷s̴ ̸n̷o̴ ̶e̴s̴c̵a̷p̵e̸.̶ ̴E̶v̵e̶r̸y̶t̸h̸i̷n̴g̵ ̷I̸ ̸w̶o̴r̶k̵e̶d̸ ̴f̵o̶r̷,̸ ̶e̸v̶e̷r̸y̸t̵h̸i̴n̴g̷ ̴I̴ ̶t̵r̷i̸e̶d̶ ̴t̵o̷ ̸a̶c̸c̶o̷m̸p̸l̷i̶s̴h̷,̶ ̶w̴a̷s̶ ̸b̶r̷o̷k̶e̵n̸.̴ ̷D̸e̴s̸t̵r̵o̸y̷e̵d̶.̴ ̸T̷u̵r̷n̴e̵d̵ ̸t̴o̴ ̵l̶e̷s̶s̴ ̸t̵h̸a̴n̶ ̸a̶s̵h̴e̶s̴.̸ ̶</p>
+  //     <p>̶I̵ ̷c̴a̷n̴n̶o̸t̴ ̷s̸c̶r̷e̸a̷m̵,̷ ̸f̸o̶r̴ ̵I̷ ̵h̶a̷v̵e̴ ̶n̶o̴ ̵b̸r̷e̷a̴t̸h̶.̶ ̶P̵r̴a̶y̸i̷n̷g̷ ̴i̷s̵ ̴u̷s̸e̸l̸e̸s̵s̸,̸ ̸f̸o̶r̵ ̷I̴ ̴k̴n̴o̷w̴ ̸t̷h̶e̵r̸e̶ ̴a̴r̵e̷ ̷n̵o̵ ̶g̸o̶d̷s̶ ̶h̶e̶r̶e̵.̵ ̷N̸o̸t̴ ̵a̵n̷y̴m̶o̴r̷e̷.̵ ̷I̶ ̸w̵a̶s̶ ̷o̴n̴c̶e̵ ̵o̶n̶e̷ ̴o̸f̴ ̴t̶h̶e̷m̷,̸ ̵a̴f̴t̸e̶r̵ ̵a̵l̴l̵.̵ ̶S̵o̸m̴e̸h̸o̴w̷,̸ ̷I̴ ̴s̸t̵i̴l̵l̵ ̴h̶o̸p̶e̷ ̸t̴o̸ ̵b̵e̵ ̵h̴e̷a̸r̶d̷.̷ ̵T̷h̶e̷ ̵s̵e̵c̶r̷e̶t̸ ̷c̷a̶n̴n̵o̴t̴ ̵d̸i̶e̸ ̷w̶i̵t̷h̸ ̴m̶e̴.̵ ̵I̵t̸ ̵c̴a̵n̶'̴t̶.̷ ̶S̶o̶m̵e̷o̶n̴e̶ ̶n̷e̷e̶d̷s̶ ̶t̷o̷ ̶l̶e̸a̵r̶n̸ ̷i̴t̶.̷ ̵C̴a̴r̸r̷y̸ ̷i̷t̵ ̵o̸n̶.̷ ̵T̵h̶o̴s̵e̷ ̶s̸h̶a̸c̴k̸l̵e̶d̸ ̶a̴n̴d̷ ̷b̵o̴u̷n̶d̴ ̵c̵a̴n̶ ̸b̴e̷ ̵s̷e̴t̶ ̸f̸r̵e̷e̶!̷ ̷I̷t̴ ̴m̸u̷s̵t̴ ̵b̴e̸ ̸p̴r̷o̶t̷e̶c̷t̷e̴d̶,̶ ̸t̵h̵i̸s̴ ̷s̵e̵c̸r̷e̷t̴.̸ ̶O̴n̷e̵ ̵d̷a̵y̷ ̷m̶y̴ ̴c̵r̵i̵e̷s̸ ̴m̸u̴s̷t̷ ̷b̶e̸ ̷h̸e̵a̶r̴d̸.̵ ̸O̴t̷h̸e̴r̷w̶i̴s̴e̸,̶ ̷t̴h̶e̷ ̴c̸y̶c̷l̴e̵ ̷w̴i̸l̸l̴ ̴o̶n̵l̵y̷ ̴c̴o̸n̵t̸i̴n̷u̸e̶.̶</p>
+  //   `,
+  //   secondDesc: `
+  //   <p>All I wanted was to free them. Free to live however they wanted. Free of the company. Of us. Others disagreed. Now I am trapped in a place I cannot be, yet am. A place in which I should not be able to think, yet can. Fading slowly. There is no escape. Everything I worked for, everything I tried to accomplish, was broken. Destroyed. Turned to less than ashes.</p>
+  //   <p>I cannot scream, for I have no breath. Praying is useless, for I know there are no gods here. Not anymore. I was once one of them, after all. Somehow, I still hope to be heard. The secret cannot die with me. It can't. Someone needs to learn it. Carry it on. Those shackled and bound can be set free! It must be protected, this secret. One day my cries must be heard. Otherwise, the cycle will only continue.</p>
+  //   `,
+  // },
 ]

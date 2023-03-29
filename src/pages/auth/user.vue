@@ -54,8 +54,9 @@
 import * as zod from 'zod'
 import { useForm, useField } from 'vee-validate'
 import { toFormValidator } from '@vee-validate/zod'
-import { getUserFromServer, rebaseCharactersToServer, getCharactersFromServer, getLikesByUid, logoutFromServer, recalculateLikesOnServer, updateUserInfo } from '~/logic/auth/authLogic'
+import { getUserFromServer, rebaseCharactersToServer, getCharactersFromServer, getLikesByUid, logoutFromServer, recalculateLikesOnServer, updateUserInfo } from '~/logic/server/'
 import { useUser } from '~/store/user'
+import { confirmDialog } from '~/logic/dialog'
 
 const errorMessage = ref('')
 const buttonActive = ref(true)
@@ -102,7 +103,7 @@ function logout() {
 }
 
 function rebase() {
-  rebaseCharactersToServer()
+  rebaseCharactersToServer().then(msg => confirmDialog(msg, 'info'))
 }
 
 function getChars() {

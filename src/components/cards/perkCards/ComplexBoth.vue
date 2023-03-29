@@ -22,7 +22,7 @@
                 class="rounded object-cover object-top w-full"
                 @load="setHeight"
               >
-              <div v-if="powers[startingOrigin.uid || 0]?.length" class="text-center" title="Total count and cost of Templates for a character">
+              <div v-if="powers[startingOrigin.uid || 0]?.length && perk.title === 'Template Stacking I'" class="text-center" title="Total count and cost of Templates for a character">
                 [<span class="text-orange-800 dark:text-orange-400">{{ powers[startingOrigin.uid || 0].length }}</span>]
                 [<span class="text-green-800 dark:text-green-400">
                   {{ 20 * ((Math.pow(2, powers[startingOrigin.uid || 0].length) - 1) / (2 - 1)) }}
@@ -77,7 +77,7 @@
                 class="rounded object-cover w-full object-top"
                 @load="setHeight"
               >
-              <div v-if="powers[companion.uid]?.length" class="text-center" title="Total count and cost of Templates for a character">
+              <div v-if="powers[companion.uid]?.length && perk.title === 'Template Stacking I'" class="text-center" title="Total count and cost of Templates for a character">
                 [<span class="text-orange-800 dark:text-orange-400">
                   {{ powers[companion.uid].length }}
                 </span>]

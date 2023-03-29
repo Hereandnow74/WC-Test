@@ -96,7 +96,7 @@
         </div>
       </div>
       <div v-if="mission.objectives.length > 8 && !allObjectives" class="rounded w-1/2 h-8 hover:underline color-white cursor-pointer leading-8 flex items-center text-blue-800 dark:text-blue-300" @click="allObjectives = true">
-        Show rest {{ mission.objectives.length - 8 }} objectives
+        Show remaining {{ mission.objectives.length - 8 }} objectives
         <ic:baseline-keyboard-double-arrow-down class="w-8" />
       </div>
       <template v-if="allObjectives">

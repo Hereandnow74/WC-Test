@@ -50,12 +50,12 @@
 import * as zod from 'zod'
 import { useForm, useField } from 'vee-validate'
 import { toFormValidator } from '@vee-validate/zod'
-import { postRegisterInfoToEndpoint } from '~/logic/auth/authLogic'
+import { postRegisterInfoToEndpoint } from '~/logic/server/'
 import { useUser } from '~/store/user'
-import { useStore } from '~/store/store'
+import { useGlobalSettings } from '~/store/settings'
 
 const { user } = useUser()
-const { favorites } = useStore()
+const { favorites } = useGlobalSettings()
 
 const successMessage = ref('')
 const errorMessage = ref('')

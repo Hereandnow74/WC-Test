@@ -17,7 +17,7 @@
 </template>
 
 <script lang='ts' setup>
-import { verifyEmail } from '~/logic/auth/authLogic'
+import { verifyEmail } from '~/logic/server/'
 import { useUser } from '~/store/user'
 
 const { user } = useUser()
