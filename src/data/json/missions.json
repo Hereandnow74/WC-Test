@@ -1,6 +1,507 @@
 [
   
   {
+    "reward": 250,
+    "image": "",
+    "author": "TheTinyGrayDog",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Lost Innocence",
+    "loca": "Worm",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "Gain all ranks of Polymorph Defense",
+        "type": "Other",
+        "value": "Help her overcome her truama and convince her to use her powers for good"
+      },
+      {
+        "reward": "Gain 1 Heritage option you have available to you for free",
+        "type": "Other",
+        "value": "Help her Defeat Jack Slash and end his hold on her once and for all."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Rescue Bonesaw and Reform her."
+      }
+    ],
+    "budget": 0,
+    "desc": "Bonesaw is one of the many horrors inflicted upon this world by the Slaughter House Nine. \nBut she wasn't always like this.\nShe was once Riley Grace Davis. A kind six year old girl that did everything she could to try and save her family from the worst villains on the planet. \nShe failed and was broken for it. \nNow after six years of through brainwashing by the hands of Jack Slash, she became the living nightmare she is now. \nYour mission is to save her from the Nine and help reform her back to the kind young girl she once was. \nIt is recommended that you have adequate defense against biological attacks and Doctorial knowledge if you are to take up this task. Bonesaw made sure to leave many nasty surprises to any that get the jump on her.\nGood luck, Agents. ",
+    "uid": "kgZef"
+  },
+  {
+    "reward": "Pyrrha Nikos with Template Stacking 1 & 2 of both Nike(Tier 8) & Achilles(Tier 7)",
+    "image": "",
+    "author": "the 44'th ChoirBoy",
+    "rewardType": "Companions",
+    "source": "",
+    "title": "Not Invincible, but Inevitable",
+    "loca": "RWBY",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": 75,
+        "type": "Credits",
+        "value": "Help restore Beacon Academy and Vale to their status pre-attack."
+      },
+      {
+        "reward": "Gain Warehouse & Armory for your Home or 30 Credits",
+        "type": "Perks",
+        "value": "Have a Relic under your personal Control"
+      },
+      {
+        "reward": "Free Talent Sharing(Education)",
+        "type": "Perks",
+        "value": "Help Jaune move on and become the Hero Pyrrha saw he could be"
+      },
+      {
+        "reward": "Cinder Fall(Tier 5), Bound and Loyal",
+        "type": "Companions",
+        "value": "Gather more than 1 Maiden's power for yourself and master it's power"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Don't Let anyone know of your existence until one of the following objectives is completed. You can been seen, but leave no evidence behind that would confirm you were more than a mirage or ghost"
+      },
+      {
+        "value": "Defeat Cinder Fall and regain the Fall Maiden's Power"
+      },
+      {
+        "value": "Save Jaune Arc from mortal danger."
+      },
+      {
+        "value": "Cement Pyrrha's legacy not just as a Huntress or Champion, but as a bonified Legend"
+      },
+      {
+        "value": "Never let the Company's involvement be know: To the world, Niko's has risen from the dead by the Grace of the Brothers itself(Beings with Omniscient are except)"
+      }
+    ],
+    "budget": 270,
+    "desc": "Pyrrha Nikos believed in Destiny. That belief pushed her towards her sacrifice.\nWe here the Company have long given Destiny multiple middle fingers, and this won't be any different.\nYou will be inserted into the world exactly 30 days (720 hours) after Nikos's death as a Walk-in for her. Your mission being to not just wrap up the girl's regrets, defeat her killer and protect her friends, but to do so in a way in which it seems any opposition placed against you was destined to lose to you.",
+    "uid": "oQYkZ"
+  },
+  {
+    "reward": 3,
+    "image": "",
+    "author": "CyrusFallen",
+    "rewardType": "IMG Tickets",
+    "source": "",
+    "title": "Territory Defense",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": 250,
+        "type": "Credits",
+        "value": "Conquer the entire world on the other side of the portal(Repeatable)."
+      },
+      {
+        "reward": "A T8 or lower Companion of your choice.",
+        "type": "Companions",
+        "value": "Unite your world through diplomacy or conquest."
+      },
+      {
+        "reward": 1000,
+        "type": "Credits",
+        "value": "Ensure no nation of your world falls to the incursions."
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Remain in power through popular demand(Repeatable)."
+      },
+      {
+        "reward": 500,
+        "type": "Credits",
+        "value": "Don't personally get involved in the fighting(your retinue and summons are fair game and you can act as a general, but not fight anyone directly)."
+      },
+      {
+        "reward": 2,
+        "type": "IMG Tickets",
+        "value": "Complete the mission as the undisputed popular ruler of an interdimensional empire, with concubines from each world bearing you at least one child each."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Pick a world, it can't be more advanced than modern and it can't have magic be commonplace in the battlefield."
+      },
+      {
+        "value": "Having a few hundred Harry Potter wizards in your army is fine, having it be composed mostly by the inherently magical DxD Devils is not."
+      },
+      {
+        "value": "You will arrive 10 years before the incursions start, and must take over your nation of choice in any way you see fit."
+      },
+      {
+        "value": "After the 10 years are over your world will be invaded by a fantasy world, at least one portal is guaranteed to open in your nation."
+      },
+      {
+        "value": "You must fend off the invasion and kill/capture at least 95% of the forces on your side of the portal."
+      },
+      {
+        "value": "You must then cross the portal and defeat the force responsible for the invasion, causing enough damage to make further incursions impossible."
+      },
+      {
+        "value": "You are allowed to incorporate anything you find on their side into your nation."
+      },
+      {
+        "value": "Every 10 years portals leading to a new world will open and you must repeat the cycle."
+      },
+      {
+        "value": "The invaders will get more powerful with each wave, expect to fight a large medieval army with a few mages and maybe a dragon on the first wave, by the last one every soldier will be the equivalent of a level 20 DnD player."
+      },
+      {
+        "value": "The mission ends once 200 years have passed, or if your nation is destroyed(You don't get the mission reward but you can keep any optional objective rewards)"
+      }
+    ],
+    "budget": 250,
+    "desc": "One of our clients sees a lot of potential in the concept of Gate, both in seeing mundane militaries clash with fantasy ones and in one nation fending off incursions from other worlds only to launch their own.\nThey have paid a lot to see one of our contractors take charge and see how far their nation can go. That's where you come in.",
+    "uid": "HTVeA"
+  },
+  {
+    "reward": "70 credits. A tier 5-7 item OR 2 perks (neither being or related to a companion or familiar) from the catalog of their choosing.",
+    "image": "",
+    "author": "Xiod Tensei",
+    "rewardType": "Other",
+    "source": "",
+    "title": "The Wayfinder",
+    "loca": "Kingdom Hearts",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "10 Credits. Door to Darkness keychain (cosmetic, has no combat value)",
+        "type": "Other",
+        "value": "(Both Paths, Optional) Find the Kingdom Key D before King Mickey does. Time Limit: After Destiny Islands falls to the Darkness ---> Just before Ansem, Seeker of Darkness is defeated, and the Door to Darkness opens."
+      },
+      {
+        "reward": "20 Credits. Take 1 free copy of Stress Defense or Environmental Defense. If unable to do so, take an extra 20 credits instead.",
+        "type": "Other",
+        "value": "(Lorekeeper Path, Mandatory) Defend King Mickey and Riku until they can close the Door to Darkness with Sora, Donald and Goofy. Your direct assistance will be necessary to close the Door to Darkness if you acquired the Kingdom Key D before King Mickey did."
+      },
+      {
+        "reward": "5 credits. Kingdom Key D Replica (Decoration, has no combat value)",
+        "type": "Other",
+        "value": "(Both paths, Optional, REQUIREMENT: acquired the K.K.D. before King Mickey) Give King Mickey the Kingdom Key D after the Door to Darkness is closed. The King needs his Blade, after all."
+      },
+      {
+        "reward": "30 credits. \"How to Speak in Riddles\" Book, Organization XIII Cloak (Gives Protection Against the Darkness/Dark-Based Attacks)",
+        "type": "Other",
+        "value": "(Renegade path, Optional) Defeat Ansem, The Seeker of Darkness before Sora can. This requires you to open the Door to Darkness yourself to escape the Realm of Darkness, use the Darkness to create a Dark Corridor, or some other method to go to the EotW."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Have a Keyblade in your possession (either your own personal Keyblade or (through some manner of circumstance) a Kingdom Key) REQUIREMENTS:  Added Potential for Keyblades for the Contractor (5 credits)"
+      },
+      {
+        "value": "The Mission is completed when Aqua (along with you and any members of your retinue that came along with you) have escaped from the Realm of Darkness and/or the End of the World. No sooner, no later."
+      },
+      {
+        "value": "Be of any origin (besides possessing Aqua, King Mickey, or Sora in this world, and substituting as Aqua, King Mickey, or Sora in this world), and begin in the events between Birth By Sleep and Kingdom Hearts 1, no matter how close or far you are to canon."
+      }
+    ],
+    "budget": 300,
+    "desc": "Three paths were laid before you when you entered this world, and you have chosen the path of the average BBS enjoyer. In a time after the events of Birth By Sleep but before the destruction of Destiny islands in Kingdom Hearts 1, you resolve yourself to rescue the Majestic Mistress of Magnificent Magic, Aqua, who is trapped in the Realm of Darkness.<br>Besides getting in and out of the RoD, this should be an easy trip... Right?<br>... Okay, maybe not. Find yourself a Keyblade of some sort first, then we can think of venturing into the Heartless' front door.<br><br>Primary Objective: Save Aqua from the Realm of Darkness, by any means necessary.<br>Secondary objective: Find a method to defend yourself from the Heartless, if you do not have one already.<br><br>Two Paths lie before you once more:<br><br>Lorekeeper of the Realm of Light: Save Aqua and attempt to keep canon as close as possible to what normally transpires on 'your end' (Ansem defeated, King Mickey gets K.K.D., Door to Darkness closed, etc.). After KH1 'ends', the path won't care less about what you do to canon.<br><br>Renegade of the Realm of Darkness: Not a single care in the world about the stability of canon in your head, just 'Save Aqua'. If something big happens, I'm sure you can improvise, right? You just need Aqua to be safe and free from the Darkness, regardless of what transpires in the RoD or the End of the World. After KH1 'ends', the path won't care less about what you do to canon.",
+    "uid": "PKfxB"
+  },
+  {
+    "reward": "You will gain Uzumaki Naruko[T7].",
+    "image": "",
+    "author": "Zaralann",
+    "rewardType": "Companions",
+    "source": "",
+    "title": "Cutting Off the Hand of God...",
+    "loca": "Naruto",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Uzumaki Naruto does not lean 'Kage Bunshin no Jutsu'."
+      },
+      {
+        "reward": 20,
+        "type": "Credits",
+        "value": "Capture Haruno Sakura."
+      },
+      {
+        "reward": 30,
+        "type": "Credits",
+        "value": "Capture Temari."
+      },
+      {
+        "reward": 20,
+        "type": "Credits",
+        "value": "Capture Tenten."
+      },
+      {
+        "reward": 20,
+        "type": "Credits",
+        "value": "Capture Yamanaka Ino."
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Capture Hyūga Hinata."
+      },
+      {
+        "reward": 20,
+        "type": "Credits",
+        "value": "Capture Tsuchi Kin."
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Haruno Sakura reaches the Finals of Chūnin Exam."
+      },
+      {
+        "reward": 10,
+        "type": "Credits",
+        "value": "Temari reaches the Finals of Chūnin Exam."
+      },
+      {
+        "reward": 30,
+        "type": "Credits",
+        "value": "Tenten reaches the Finals of Chūnin Exam."
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Hyūga Hinata reaches the Finals of Chūnin Exam."
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Yamanaka Ino reaches the Finals of Chūnin Exam."
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Haruno Sakura is Promoted to Chūnin as a result of the Chūnin Exam."
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Tenten is Promoted to Chūnin as a result of the Chūnin Exam."
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Hyūga Hinata is Promoted to Chūnin as a result of the Chūnin Exam."
+      },
+      {
+        "reward": 200,
+        "type": "Credits",
+        "value": "Yamanaka Ino is Promoted to Chūnin as a result of the Chūnin Exam."
+      },
+      {
+        "reward": 200,
+        "type": "Credits",
+        "value": "Haruno Sakura is promoted to Jōnin before the start of 'Naruto: Shippūden'."
+      },
+      {
+        "reward": 200,
+        "type": "Credits",
+        "value": "Tenten is promoted to Jōnin before the start of 'Naruto: Shippūden'."
+      },
+      {
+        "reward": 200,
+        "type": "Credits",
+        "value": "Hyūga Hinata is promoted to Jōnin before the start of 'Naruto: Shippūden'."
+      },
+      {
+        "reward": 200,
+        "type": "Credits",
+        "value": "Yamanaka Ino is promoted to Jōnin before the start of 'Naruto: Shippūden'."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You will enter 'Naruto'[DR6] a day before Episode 1 of the Anime."
+      },
+      {
+        "value": "All Fillers/Movies/OVA will be present."
+      },
+      {
+        "value": "Each encounter/fight/challenge Uzumaki Naurto faces he must lose."
+      },
+      {
+        "value": "You must ensure that nobody discovers your interference with Uzumaki Naruto, your Waifu excluded."
+      },
+      {
+        "value": "You can enable others to finish the fight/challenge/encounter in place of Uzumaki Naruto, invalidating him but only after he loses with no chance of recovery."
+      },
+      {
+        "value": "Uzumaki Naruto still becomes a Genin and joines Team 7, the circomstances can change but this Event is locked in place."
+      },
+      {
+        "value": "You cannot prematurely defeat the foes that Uzumaki Naruto faces, neither you can prevent him from facing all the Events of Canon/Fillers/Movies/OVA."
+      },
+      {
+        "value": "The Mission Ends with the defeat of Ōtsutsuki Kaguya, which would result in her instant Capture."
+      },
+      {
+        "value": "Uzumaki Naruto cannot die until the End of the Mission."
+      }
+    ],
+    "budget": 0,
+    "desc": "Uzumaki Naruto known no defeat, each time he fights the 'Hand of God' delivers him victoy or tools for it, the 'Plot Armor' that encompases him makes his opponents lose competence and lose against him or empower him to the point that victory becomes possible even with how incompetent he is. Let's prevent such an atrocity from happening.",
+    "uid": "xYVVe"
+  },
+  {
+    "reward": "I AM Atomic is for you to use.",
+    "image": "",
+    "author": "Heroic Villain",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Shadow Slayer",
+    "loca": "The Eminence in Shadow",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [],
+    "conditions": [
+      {
+        "value": "Must fight Cid in a 1v1, after Shadow Garden is formed."
+      },
+      {
+        "value": "Must expose Shadow Gardens members ( at least 3 identities)"
+      }
+    ],
+    "budget": 100,
+    "desc": "The Eminence and his Garden have been chosen, targeted for either death or at least Humiliation of the Traumatizing style.<br><br>The Client is sicken by Cid's use of I AM ATOMIC in civilian area and to be honest a bit jealous of the Harem.",
+    "uid": "SfLDM"
+  },
+  {
+    "reward": 100,
+    "image": "",
+    "author": "ClayUndead",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "With a Velvet Glove",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": 250,
+        "type": "Credits",
+        "value": "Rule for a Decade"
+      },
+      {
+        "reward": 500,
+        "type": "Credits",
+        "value": "Rule for a Century"
+      },
+      {
+        "reward": 1000,
+        "type": "Credits",
+        "value": "Rule for a Millennia"
+      },
+      {
+        "reward": 2,
+        "type": "IMG Tickets",
+        "value": "Don't leave your controlled territory for the entirety of the Millennia"
+      },
+      {
+        "reward": 1,
+        "type": "IMG Tickets",
+        "value": "Become the sole ruler in the setting"
+      },
+      {
+        "reward": "The full capture price of the bride OR 50 Credits",
+        "type": "Other",
+        "value": "Marry a Princess(or princess-like figure) and make her happy with the marriage."
+      },
+      {
+        "reward": "Covert Talent OR 10 Credits",
+        "type": "Other",
+        "value": "Start a rumor of a Prophecy of your rise and victory"
+      },
+      {
+        "reward": "Corruption Defense OR 50 Credits",
+        "type": "Other",
+        "value": "Defeat a Band of Rogues/Antagonists causing strife."
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Take over another Country/Planet/System/Etc. in a just war or negotiation (Repeatable)"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Donate or spend gold on a charity totaling to 1000 Cubic Feet worth of gold."
+      },
+      {
+        "reward": "×10 Added Potential for your retinue and anyone who believes you to be their king in their heart.",
+        "type": "Other",
+        "value": "Create a lasting impact on your nation that will last until its end. (Such as an advance in technology or culture)"
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Ally or Help an already established Emperor/Good King/Good Arch-Mage"
+      },
+      {
+        "reward": 25,
+        "type": "Credits",
+        "value": "Train a local to be your Master of Arms and General"
+      },
+      {
+        "reward": 25,
+        "type": "Credits",
+        "value": "persuade a major figure into being your Servant/Lover/Soldier without Capturing them.(Repeatable)"
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Redeem a Devil(or Devil expy) into Servant/Lover/Soldier without Capturing them (Repeatable)"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Save 1,000,000 people with by your own actions."
+      },
+      {
+        "reward": 10,
+        "type": "Credits",
+        "value": "Create a private Circle of Knights/Order to carry out your will.(think the Round Table)"
+      },
+      {
+        "reward": 10,
+        "type": "Credits",
+        "value": "Create an Heir to your kingdom"
+      },
+      {
+        "reward": "a T8 TS of any Divine Figure",
+        "type": "Other",
+        "value": "Start a religion with you as the Arch-Deity, where 90% of the worshipers truly believe you're a god."
+      },
+      {
+        "reward": 2,
+        "type": "IMG Tickets",
+        "value": "Become the Head of the most worshiped pantheon in your world."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Be voted the ruler or take over a medium-sized country/planet/System/Etc. compared to the entire setting."
+      },
+      {
+        "value": "Rule as a Good King/Emperor/etc. for a year."
+      }
+    ],
+    "budget": 0,
+    "desc": "You know what I could see more of? Emperor! Good Lords! Arch-Mages of good persuasions! That's where you come in. I'm willing to pay you company credits for entertaining me as a Good Ruler. Just drop into a setting and take it(or at least a medium-sized country) over within a year's time. I'll even add in bonus rewards for doing a good job.",
+    "uid": "FYIbi"
+  },
+  {
     "reward": "Can Establish a Rainbow Bridge large enough for an army of tens of thousands to march through in any realm you have permission to enter.",
     "image": "",
     "author": "the 44'th ChoirBoy",
@@ -107,7 +608,7 @@
     "desc": "The Company has found a variant of the LOZ:BOTW world that has a number of interesting properties. <br><br>First there is an active time loop occuring in which three days after Link defeats the Calamity he reawakens in the shrine of resurrection with his memories intact. Next, and more important to you, it has been determined that the mechanism behind the various binding methods is being interfered with due to the presence of Malice. The corruption has tripped alarms for potentially subverting the connection between a Contractor and their Waifus and Husbandos. <br><br>This is where you come in Contractor, we need more data to prevent further interference with the various bindings but have no way to gain said data without destructive scanning which would likely destroy this world. Instead of that we could throw you in, have you resolve the loop and Ganon, and then simply use the data we gather from you for the same effect. <br><br>Simply stay in this world until 1 week after the end of the timeloop for us to finish our scans and then you can move on.",
     "uid": "qugoK"
   },
-    {
+  {
     "reward": 100,
     "image": "https://cdn.akamai.steamstatic.com/steam/apps/948361/capsule_616x353.jpg",
     "author": "irugaa0",
@@ -219,7 +720,7 @@
     "desc": "Due to highly unfortunate events, one of our esteemed patrons the Merchant ended up losing several of his protégés and is severely lacking manpower, so he contracted us to help him.  You have to travel between five worlds and guarantee contracts in his name. Warning: you can’t go against a signed contract and must follow it to the LETTER.",
     "uid": "nTmJU"
   },
-    {
+  {
     "reward": 500,
     "image": "",
     "author": "CyrusFallen",
@@ -418,7 +919,6 @@
     "desc": "Greeting Contractor. A very interesting Human once claimed the only things that are truly infinite are the Universe and Human Stupidity, but he was less sure of the universe of the two. He was right actually, though not for any reasons he likely had. But there is something I believe to be equally as infinite, if far more rare. <br>Willpower.<br><br>I like to think that with enough grit, determination, and willingness to get back up, any challenge can be overcome. So why not test it then within the realm of Lordran(And Boletaria for good measure).<br>You will be Dropped-in to the setting at the original starting areas and with the goal of making your way to the end. You will be gifted with a free Everlasting Talent and Stress Defense(x2)(After all, we can't have you going hollow on us) and nothing else. Well, not nothing, you'll have a wooden club. Any purchases from the Company are still valid, but you will have no access to any baring Pocket space while actively on the duration of this mission. If any purchases have made you some form of beyond human existence, the body you will do this mission with will be a clone of who you once were, with your mind forced to operate it as it's soul vehicle until done.<br><br>You are free to gather, use and store any gear you pick up on the journey, as well as have full access to the leveling/strengthening systems of the respective worlds, which can further allow use of the casting systems of each world. Upon the completion of the cycle however, all gear and progress is lost when beginning the next.(Any gear gathered will immediately transfer to your pocket space upon you finishing that cycle, it will just be unavailable until the mission is over.)<br><br>And just as a reminder of what you're fighting for, upon each cycles completion, you are allowed a full 48 hours in either your own purchased home, or within replica of your original world if you did not purchase a home, with access to all your Companions & other purchases. Use this time to rest, prepare, inform those who follow your of your trials(Regardless of the amount of time your take in each cycle, only a week will pass by in the realm they are in) and enjoy yourself. At the end of the 48 hours though, you will return to your mission in the next subsequent cycle. ",
     "uid": "urShP"
   },
-   
   {
     "reward": 200,
     "image": "",
@@ -426,6 +926,7 @@
     "rewardType": "Credits",
     "source": "",
     "title": "The Long Night",
+    "uid": "WPmTp",
     "loca": "A Song of Ice and Fire",
     "lewd": false,
     "scope": "Grand",
@@ -533,8 +1034,7 @@
       }
     ],
     "budget": 100,
-    "desc": "Millennia ago, an Elder God of Death and Ice, The Great Other invaded Planetos, sending it into a winter that lasted an entire generation. While this itself could be world ending, It also sent forth its children, the White Walkers, fey like creatures made of Ice and Darkness with the power to raise the dead as zombie thralls. Wights. It was only through a man(we shall call him Azor Again) who struck a deal with Us, the Company that he defeated the White Walkers and sealed them to the lands of Always Winter. It was Us that helped Bran the Builder build and enchant the Wall. It was Us that drained the Great Other of most of Its strength at great cost of our own. Now the Great Other is rising again, stronger than before with humanity almost magicless and unprepared. And that would be that, a planet smothered in Night and Terror. Until a clerk digging through files found a second contract from Azor Ahai. He added a clause to our deal that we are obligated to obey. It seems that Azor Ahai wrote that should the Great Other not be defeated and that the White Walker are to return, We The Company would return as well to snuff out this cold. Should you choose to accept this mission there is no backing out. It's either Victory or Death.",
-    "uid": "WPmTp"
+    "desc": "Millennia ago, an Elder God of Death and Ice, The Great Other invaded Planetos, sending it into a winter that lasted an entire generation. While this itself could be world ending, It also sent forth its children, the White Walkers, fey like creatures made of Ice and Darkness with the power to raise the dead as zombie thralls. Wights. It was only through a man(we shall call him Azor Ahai) who struck a deal with Us, the Company that he defeated the White Walkers and sealed them to the lands of Always Winter. It was Us that helped Bran the Builder build and enchant the Wall. It was Us that drained the Great Other of most of Its strength at great cost of our own. Now the Great Other is rising again, stronger than before with humanity almost magicless and unprepared. And that would be that, a planet smothered in Night and Terror. Until a clerk digging through files found a second contract from Azor Ahai. He added a clause to our deal that we are obligated to obey. It seems that Azor Ahai wrote that should the Great Other not be defeated and that the White Walker are to return, We The Company would return as well to snuff out this cold. Should you choose to accept this mission there is no backing out. It's either Victory or Death."
   },
   {
     "reward": 100,
@@ -623,7 +1123,7 @@
   },
   {
     "reward": 500,
-    "image": "",
+    "image": "https://i.imgur.com/o6lNH5o.jpg",
     "author": "ForPlot",
     "rewardType": "Credits",
     "source": "",
@@ -680,7 +1180,7 @@
   },
   {
     "reward": 3,
-    "image": "",
+    "image": "https://i.imgur.com/7vd8IbK.jpg",
     "author": "Ataraxia",
     "rewardType": "Credits",
     "source": "",
@@ -724,7 +1224,7 @@
   },
   {
     "reward": 500,
-    "image": "",
+    "image": "https://i.imgur.com/IY2GVMS.jpg",
     "author": "ClayUndead",
     "rewardType": "Credits",
     "source": "",
@@ -833,7 +1333,7 @@
   },
   {
     "reward": "Template 1 & 2 of spider-man + 20 credits",
-    "image": "",
+    "image": "https://i.imgur.com/mIs1N56.jpg",
     "author": "irugaa0",
     "rewardType": "Other",
     "source": "",
@@ -934,7 +1434,7 @@
     "budget": 350,
     "loca": "Generic",
     "rewardType": "Credits",
-    "image": "",
+    "image": "https://i.imgur.com/zImVIEX.jpg",
     "uid": "gWLqV"
   },
   {
@@ -1019,7 +1519,7 @@
     "source": "",
     "reward": "Free Template Stacking 1 of Winter Maiden, and 1 Free Template Stack of the Fall Maiden. Or you can get 20 credits for each template stack you refuse.",
     "author": "Rhivan",
-    "image": "",
+    "image": "https://i.imgur.com/31DPcoB.jpg",
     "rewardType": "Other",
     "loca": "RWBY",
     "scope": "Standard",
@@ -13597,17 +14097,16 @@
     "rewardType": "Other"
   },
   {
-    "scope": "Grand",
-    "conditions": [
-      {
-        "value": "Become a Renowmed VILLAIN."
-      }
-    ],
-    "desc": "In this world of heroes and villains, make your path as a VILLAIN.",
-    "rewardType": "Credits",
-    "budget": 0,
-    "author": "irugaa0",
+    "reward": "10",
     "image": "https://wallpaperaccess.com/full/2057848.jpg",
+    "author": "irugaa0",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "My Hero Academia - VILLAIN Path.",
+    "uid": "HaKBp",
+    "loca": "My Hero Academia",
+    "lewd": false,
+    "scope": "Grand",
     "objectives": [
       {
         "reward": "Educational Talent",
@@ -13615,9 +14114,9 @@
         "value": "Kill/Capture a teacher of a hero school."
       },
       {
+        "reward": "10",
         "type": "Credits",
-        "value": "As a Villain kill a hero in the national Hero Billboard Chart .",
-        "reward": "10"
+        "value": "As a Villain kill a hero in the national Hero Billboard Chart ."
       },
       {
         "reward": "10",
@@ -13626,18 +14125,18 @@
       },
       {
         "reward": "20",
-        "value": "As a Villain Kill/Capture a hero in the top 50 of a country.",
-        "type": "Credits"
+        "type": "Credits",
+        "value": "As a Villain Kill/Capture a hero in the top 50 of a country."
       },
       {
         "reward": "Any template of your choice",
-        "value": "As a Villain Kill/Capture a hero in the top 20 of a country.",
-        "type": "Perks"
+        "type": "Perks",
+        "value": "As a Villain Kill/Capture a hero in the top 20 of a country."
       },
       {
-        "value": "As a Villain Kill/Capture a hero in the top 10 of a country.",
         "reward": "Any perk, talent or defense of your choice.",
-        "type": "Perks"
+        "type": "Perks",
+        "value": "As a Villain Kill/Capture a hero in the top 10 of a country."
       },
       {
         "reward": "any tier 6 or lower of the current world.",
@@ -13645,36 +14144,38 @@
         "value": "As a Villain Kill/Capture the number 1 hero of a country."
       },
       {
+        "reward": "20",
         "type": "Credits",
-        "value": "Become a Yakuza member.",
-        "reward": "20"
+        "value": "Become a Yakuza member."
       },
       {
-        "value": "Become a Yakuza Leader.",
+        "reward": "50",
         "type": "Credits",
-        "reward": "50"
+        "value": "Become a Yakuza Leader."
       },
       {
-        "type": "Credits",
         "reward": "30",
+        "type": "Credits",
         "value": "Assemble a Yakuza group."
       },
       {
-        "value": "Kill/Capture Izuko Midoriya.",
+        "reward": "100",
         "type": "Credits",
-        "reward": "100"
+        "value": "Kill/Capture Izuko Midoriya."
       },
       {
         "reward": "100",
-        "value": "Kill/Capture Allmight.",
-        "type": "Credits"
+        "type": "Credits",
+        "value": "Kill/Capture Allmight."
       }
     ],
-    "source": "",
-    "reward": "10",
-    "loca": "My Hero Academia",
-    "title": "My Hero Academia - VILLAIN Path.",
-    "uid": "HaKBp"
+    "conditions": [
+      {
+        "value": "Become a Renowned VILLAIN."
+      }
+    ],
+    "budget": 0,
+    "desc": "In this world of heroes and villains, make your path as a VILLAIN."
   },
   {
     "budget": 0,

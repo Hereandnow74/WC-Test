@@ -14,7 +14,7 @@
         <div v-else class="h-16"></div>
         <div ref="likeHover" class="absolute top-7 right-0.5 cursor-pointer flex items-center gap-1 text-lg leading-none" @click="likeChar">
           <span class="text-red-500 flex items-center gap-0.5 text-shadow-border">
-            <span v-if="charLikes" class="font-semibold">{{ charLikes }}</span>
+            <span v-if="charLikes || charData.likes" class="font-semibold">{{ charLikes || charData.likes }}</span>
             <ci:heart-fill
               v-if="(favoritesObject[charData.uid] !== undefined && !isLikeHovered) || (favoritesObject[charData.uid] === undefined && isLikeHovered)"
               class="filter drop-shadow"

@@ -6,7 +6,7 @@
         <Input
           v-model="search"
           placeholder="World name"
-          class="w-full"
+          class="w-full min-w-[160px]"
         />
         <clarity:eraser-solid class="icon-btn w-8" @click="search = ''" />
       </div>
@@ -60,7 +60,7 @@
           </div>
         </div>
         <div class="h-4 w-[1px] bg-gray-400"></div>
-        <div class="flex gap-1 px-1 rounded items-center cursor-pointer hover:(bg-green-500 bg-opacity-60)" :class="filterUserWorlds === 'user' ? 'bg-green-500 bg-opacity-60' : ''" @click="filterUserWorlds = filterUserWorlds ? '': 'user'">
+        <div class="flex gap-1 px-1 rounded items-center cursor-pointer hover:(bg-green-500 bg-opacity-60)" :class="filterUserWorlds === 6 ? 'bg-green-500 bg-opacity-60' : ''" @click="filterUserWorlds = filterUserWorlds ? 0: 6">
           <div class="border border-gray-700 bg-gray-300 w-4 h-4"></div>
           <div title="World or Condition submitted by user">
             - User DR

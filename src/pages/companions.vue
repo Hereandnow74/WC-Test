@@ -416,7 +416,7 @@ const secondFilter = computed(() => {
     allFilters.push(tagsI)
   if (tagsExclude.value.length)
     allFilters.push(tagsE)
-  if (minTier.value !== 1 || maxTier.value !== 11)
+  if (minTier.value !== 1 || maxTier.value !== 13)
     allFilters.push(tier)
   if (blockedSet.value.size && !blackWhiteDisabled.value)
     allFilters.push(blocked)
@@ -462,7 +462,7 @@ watch(slicedChars, async() => {
     throttledLikes()
 })
 
-watch(sortedResults, () => {
+watch([sortedResults, top100], () => {
   if (companionsList.value)
     companionsList.value.scrollTop = 0
   position.value = 0

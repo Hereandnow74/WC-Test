@@ -49,7 +49,7 @@
             <div
               class="flex items-center bg-gray-200 dark:bg-gray-700 px-1 rounded cursor-pointer"
               :class="sortRating !== 0 ? 'border border-green-500' : ''"
-              title="Sort by Rating"
+              title="Sort by Tier"
               @click="toggleRating()"
             >
               <fa-solid:sort-numeric-down v-if="sortRating === 1" class="inline-block rounded" />
@@ -63,6 +63,15 @@
             >
               <fa-solid:sort-alpha-down v-if="sortWorld === 1" class="inline-block rounded" />
               <fa-solid:sort-alpha-up v-else class="inline-block rounded" />
+            </div>
+            <div
+              class="flex items-center bg-gray-200 dark:bg-gray-700 px-1 rounded cursor-pointer"
+              :class="sortLikes !== 0 ? 'border border-green-500' : ''"
+              title="Sort by World name"
+              @click="toggleLikes()"
+            >
+              <mdi:heart-plus v-if="sortLikes === 1" class="inline-block rounded" />
+              <mdi:heart-minus v-else class="inline-block rounded" />
             </div>
             <div
               class="flex items-center bg-gray-200 dark:bg-gray-700 px-0.5 rounded cursor-pointer"
@@ -109,82 +118,43 @@
           </div>
           <div class="flex rounded bg-gray-600 cursor-pointer">
             <div
-              :class="nsfw==='' ? 'bg-gray-700':''"
+              :class="!nsfw ? 'bg-gray-700':''"
               class="hover:bg-gray-700 text-green-300 px-2 rounded-l"
-              @click="(nsfw='', favorite=0)"
+              @click="nsfw = false"
             >
               all
             </div>
             <div
-              :class="nsfw==='!cvxz' ? 'bg-gray-700':''"
+              :class="nsfw ? 'bg-gray-700':''"
               class="border-l px-2 hover:bg-gray-700 text-gray-200"
               title="Have NSFW Image"
-              @click="nsfw === ''? nsfw='!cvxz' : nsfw=''"
+              @click="nsfw = !nsfw"
             >
               nsfw
             </div>
-            <div
-              :class="{'bg-red-600': favorite === -1, 'bg-green-600': favorite === 1}"
-              class="border-l px-2 hover:bg-gray-700 text-gray-200"
-              title="Favorites"
-              @click="favorite = threeToggle(favorite)"
-            >
-              fav
-            </div>
-            <div
-              :class="{'bg-red-600': local === -1, 'bg-green-600': local === 1}"
-              class="border-l px-2 hover:bg-gray-700 text-gray-200"
-              title="Local"
-              @click="local = threeToggle(local)"
-            >
-              loc
-            </div>
-            <div
-              :class="{'bg-red-600': retinue === -1, 'bg-green-600': retinue === 1}"
-              class="border-l px-2 hover:bg-gray-700 text-gray-200 rounded-r"
-              title="Retinue"
-              @click="retinue = threeToggle(retinue)"
-            >
-              ret
-            </div>
-            <div
-              :class="{'bg-green-600': newChanges}"
-              class="border-l px-2 hover:bg-gray-700 text-gray-200 rounded-r"
-              title="New Changes"
-              @click="newChanges = !newChanges"
-            >
-              new
-            </div>
           </div>
         </div>
-        <div
-          class="px-2 hover:bg-gray-700 text-gray-200 rounded bg-gray-600 cursor-pointer"
-          title="Tags filtering"
-          @click="top100 = !top100"
-        >
-          Top 100
-        </div>
         <bi:gear-fill class="icon-btn" @click="toggleSearchSetting" />
-        <div class="hidden md:block">
+        <!-- <div class="hidden md:block">
           {{ sortedResults.length }} results
-        </div>
+        </div> -->
         <Button class="ml-auto md:ml-0" label="Add Character" size="Small" @click="() => (editMode = false, toggleShowAddCharacter())" />
       </div>
       <div v-else class="">
         Loading... <span class="inline-block text-xl"><eos-icons:bubble-loading /></span>
       </div>
       <div class="flex gap-4 justify-center pt-1 text-sm">
-        <div v-if="tagsInclude.length" class="flex gap-1">
+        <div v-if="tags.length" class="flex gap-1">
           Include:
           <Tag
-            v-for="tag in tagsInclude"
-            :key="tag"
+            v-for="tag in tags"
+            :key="tag.tag"
             class="hover:bg-red-500"
-            :tag="waifuTags[tag] || tag"
-            @click="tagToggles[tag] = 0"
+            :tag="waifuTags[tag.tag] || tag.tag"
+            @click="tagToggles[tag.tag] = 0"
           />
         </div>
-        <div v-if="tagsExclude.length" class="flex gap-1">
+        <!-- <div v-if="tagsExclude.length" class="flex gap-1">
           Exclude:
           <Tag
             v-for="tag in tagsExclude"
@@ -193,20 +163,20 @@
             :tag="waifuTags[tag] || tag"
             @click="tagToggles[tag] = 0"
           />
-        </div>
-        <Button v-if="tagsInclude.length || tagsExclude.length" size="Small" label="Clear All" bg-color="bg-blue-500" @click="tagToggles = {}" />
+        </div> -->
+        <Button v-if="tags.length" size="Small" label="Clear All" bg-color="bg-blue-500" @click="tagToggles = {}" />
       </div>
     </div>
     <div ref="companionsList" class="overflow-y-auto w-full relative scrollbar overflow-x-hidden">
       <div
         ref="waifuList"
         class="relative grid gap-1 pb-8"
-        :style="{top: `${topPosition}px`, 'grid-template-columns': `repeat(${cardRowCount}, 1fr)`}"
+        :style="{'grid-template-columns': `repeat(${cardRowCount}, 1fr)`}"
         :class="cardWidth !== 284 ? '' : 'w-max mx-auto'"
       >
         <CompanionCard
           v-for="char in filteredCharacters"
-          :key="char.type === 'local' ? `l${char.u}` : char.u"
+          :key="char.uid"
           :char="char"
           :with-image="!settings.allImg"
           :is-user-char="char.type === 'local'"
@@ -217,7 +187,7 @@
           @edit-companion="editCompanion"
           @reportCompanion="reportCompanion"
         />
-        <div v-if="!slicedChars.length" class="text-center flex-grow">
+        <div v-if="!filteredCharacters.length" class="text-center flex-grow">
           <p>
             No characters found.
           </p>
@@ -237,8 +207,7 @@
 </template>
 
 <script lang="ts" setup>
-import { every, intersection, some, shuffle, throttle } from 'lodash-es'
-import { DBCharacter } from 'global'
+import { DBCharacter, SearchRequest } from 'global'
 import { useStore } from '~/store/store'
 
 import { toggleShowAddCharacter, showAddCharacter, toggleShowFilterTags, showFilterTags, tagToggles, threeToggle, toggleShowReport, showReport, showSearchSettings, toggleSearchSetting, blackWhite, blackWhiteDisabled, andOr, showFilters } from '~/logic'
@@ -255,20 +224,18 @@ const { favorites } = useGlobalSettings()
 
 const search = ref('')
 const position = ref(0)
+const page = ref(1)
 
 const top100 = ref(false)
 
 const gender = ref('')
-const nsfw = ref('')
-const favorite = ref(0)
-const local = ref(0)
-const retinue = ref(0)
-const newChanges = ref(false)
+const nsfw = ref(false)
 
 const sortAlpha = ref(0)
 const sortRating = ref(0)
 const sortWorld = ref(0)
 const shuffleOn = ref(false)
+const sortLikes = ref(0)
 
 // const characters = ref({})
 const loading = ref(true)
@@ -328,153 +295,72 @@ onMounted(async() => {
 })
 
 type tagKeys = keyof typeof waifuTags
-const tagsInclude = computed(() => Object.keys(tagToggles.value).filter(key => tagToggles.value[key] === 1) as tagKeys[])
-const tagsExclude = computed(() => Object.keys(tagToggles.value).filter(key => tagToggles.value[key] === -1) as tagKeys[])
+const tags = computed(() => Object.keys(tagToggles.value).filter(key => tagToggles.value[key] !== 0).map(key => ({ tag: key, include: tagToggles.value[key] === 1 })) as any[])
+// const tagsExclude = computed(() => Object.keys(tagToggles.value).filter(key => tagToggles.value[key] === -1) as tagKeys[])
 
 const blockedSet = computed(() => new Set(blockedWorlds.value))
 
-// watch([secondFilter, charArr], () => {
-//   fuse.setCollection(secondFilter.value)
-//   fuseNoSort.setCollection(secondFilter.value)
-// })
-
-interface SearchRequest {
-  tier?: {
-    minTier: number
-    maxTier: number
-  }
-  tags?: {
-    tag: string
-    include: boolean
-  }[]
-  hasNsfw?: boolean
-  newerThan?: Date
-  sortBy?: string // Example: likes:desc or likes:asc
-  limit?: number
-  page?: number
-}
+// interface SearchRequest {
+//   tier?: {
+//     minTier: number
+//     maxTier: number
+//   }
+//   tags?: {
+//     tag: string
+//     include: boolean
+//   }[]
+//   hasNsfw?: boolean
+//   newerThan?: Date
+//   sortBy?: string // Example: likes:desc or likes:asc
+//   limit?: number
+//   page?: number
+// }
 const filteredCharacters = ref<DBCharacter[]>([])
-watchEffect(() => {
-  console.log('filteredCharacters')
-  const options = {}
+const options = computed(() => {
+  const opt = {} as SearchRequest
 
   if (search.value)
-    options.name = search.value
+    opt.name = search.value
+  if (worldName.value)
+    opt.world = worldName.value
+  if (tags.value.length)
+    opt.tags = tags.value
+  if (minTier.value || maxTier.value)
+    opt.tier = { minTier: minTier.value, maxTier: maxTier.value }
 
-  options.sortBy = '_id:desc'
+  opt.sortBy = '_id:desc'
+  if (sortAlpha.value !== 0)
+    opt.sortBy = `name:${sortAlpha.value === -1 ? 'desc' : 'asc'}`
+  if (sortRating.value !== 0)
+    opt.sortBy = `tier:${sortRating.value === -1 ? 'desc' : 'asc'}`
+  if (sortWorld.value !== 0)
+    opt.sortBy = `world:${sortWorld.value === -1 ? 'desc' : 'asc'}`
+  if (sortLikes.value !== 0)
+    opt.sortBy = `likes:${sortLikes.value === 1 ? 'desc' : 'asc'}`
+  if (nsfw.value)
+    opt.hasNsfw = true
 
-  searchForCharacters(options).then((characters) => { console.log(characters); filteredCharacters.value = characters.results })
+  return opt
 })
 
-const secondFilter = computed(() => {
-  console.log('secondFilter')
-  const tagsI = (x: DBCharacter) => andOr.value ? intersection(x.b, tagsInclude.value).length >= 1 : intersection(x.b, tagsInclude.value).length === tagsInclude.value.length
-  const tagsE = (x: DBCharacter) => !some(x.b, x => tagsExclude.value.includes(x))
-  const tier = (x: DBCharacter) => x.t >= minTier.value && x.t <= maxTier.value
-  const blocked = (x: DBCharacter) => blackWhite.value ? blockedSet.value.has(x.w) : !blockedSet.value.has(x.w)
-  const localF = (x: DBCharacter) => local.value === 1 ? x.type === 'local' : x.type !== 'local'
+searchForCharacters({ page: 1, limit: 25, ...options.value }).then((characters) => {
+  filteredCharacters.value = characters.results
+})
 
-  const allFilters = [] as ((arg0: DBCharacter) => boolean)[]
+watch(options, () => searchForCharacters({ page: 1, limit: 25, ...options.value }).then((characters) => {
+  filteredCharacters.value = characters.results
+}))
 
-  if (tagsInclude.value.length)
-    allFilters.push(tagsI)
-  if (tagsExclude.value.length)
-    allFilters.push(tagsE)
-  if (minTier.value !== 1 || maxTier.value !== 11)
-    allFilters.push(tier)
-  if (blockedSet.value.size && !blackWhiteDisabled.value)
-    allFilters.push(blocked)
-  if (local.value !== 0)
-    allFilters.push(localF)
-
-  return allFilters.length
-    ? filteredCharacters.value.filter((x) => {
-      return every(allFilters, val => val(x))
+useInfiniteScroll(
+  companionsList,
+  () => {
+    page.value += 1
+    searchForCharacters({ page: page.value, limit: limit.value, ...options.value }).then((characters) => {
+      filteredCharacters.value.push(...characters.results)
     })
-    : filteredCharacters.value
-})
-
-const sortingFunc = (a: any, b: any) =>
-  (sortRating.value !== 0 ? (a.t - b.t) * sortRating.value : 0)
-  || (sortWorld.value !== 0 ? `${a.w}${a.d}`.localeCompare(`${b.w}${b.d}`) * sortWorld.value : 0)
-  || (sortAlpha.value !== 0 ? a.n.localeCompare(b.n) * sortAlpha.value : 0)
-
-const sortedResults = computed(() => {
-  console.log('sortedResults')
-  if (shuffleOn.value)
-    return shuffle(secondFilter.value).map(x => x)
-  if (sortRating.value || sortAlpha.value || sortWorld.value)
-    return [...secondFilter.value].sort(sortingFunc).map(x => x)
-  return secondFilter.value.map(x => x)
-})
-
-const top100chars = ref<DBCharacter[]>([])
-watch(top100, () => top100.value ? searchForCharacters({ sortBy: 'likes:desc', limit: 100 }).then(x => top100chars.value = x.results.map(char => ({ u: char.uid, n: char.name, w: char.world, t: char.tier, b: char.tags, i: char.sfwImage, s: char.sfwImageSource, d: char.subWorld, in: char.nsfwImage }))) : null)
-
-const slicedChars = computed(() => {
-  return top100.value ? top100chars.value : sortedResults.value.slice(position.value, position.value + limit.value)
-})
-
-async function getLikes() {
-  likes.value = await getLikesByUid(slicedChars.value.map(x => x.u))
-}
-
-const throttledLikes = throttle(getLikes, 200)
-
-watch(slicedChars, async() => {
-  if (slicedChars.value.length)
-    throttledLikes()
-})
-
-watch(sortedResults, () => {
-  if (companionsList.value)
-    companionsList.value.scrollTop = 0
-  position.value = 0
-})
-
-const firstCard = ref<Element|null>(null)
-const lastCard = ref<Element|null>(null)
-
-const opt = {
-  root: null,
-  rootMargin: '0px',
-  threshold: 0.1,
-}
-const observer = new IntersectionObserver(visibilityChanged, opt)
-
-watch(slicedChars, () => {
-  if (sortedResults.value.length <= limit.value || slicedChars.value.length === 100) return
-  observer.disconnect()
-  if (firstCard.value && lastCard.value) {
-    firstCard.value.id = ''
-    lastCard.value.id = ''
-  }
-  if (waifuList.value && waifuList.value.children.length > 1) {
-    firstCard.value = waifuList.value.children[0]
-    lastCard.value = waifuList.value.children[waifuList.value.children.length - 1]
-    firstCard.value.id = 'first'
-    lastCard.value.id = 'last'
-    observer.observe(firstCard.value)
-    observer.observe(lastCard.value)
-  }
-}, { flush: 'post' })
-
-function visibilityChanged(entries: IntersectionObserverEntry[]) {
-  // Both card are visible
-  if (entries.length >= 2 && entries[0].isIntersecting && entries[1].isIntersecting)
-    return
-
-  const entry = entries[0]
-  if (entry.target.id === 'last' && entry.isIntersecting && position.value + limit.value <= secondFilter.value.length) {
-    position.value += cardRowCount.value
-    return
-  }
-
-  if (entry.target.id === 'first' && entry.isIntersecting && position.value >= cardRowCount.value)
-    position.value -= cardRowCount.value
-}
-
-const topPosition = computed(() => position.value / cardRowCount.value * ((firstCard.value?.clientHeight || 0) || 500))
+  },
+  { distance: limit.value },
+)
 
 function editCompanion(char: any) {
   characterToEdit.value = char
@@ -499,7 +385,14 @@ function toggleWorld() {
   sortWorld.value = threeToggle(sortWorld.value)
 }
 
+function toggleLikes() {
+  sortLikes.value = threeToggle(sortLikes.value)
+}
+
 function clearAndReset() {
+  searchForCharacters({ page: 1, limit: limit.value, ...options.value }).then((characters) => {
+    filteredCharacters.value = characters.results
+  })
   search.value = ''
   position.value = 0
   minTier.value = 1
@@ -509,6 +402,9 @@ function clearAndReset() {
 }
 
 function clearAndResetWorld() {
+  searchForCharacters({ page: 1, limit: limit.value, ...options.value }).then((characters) => {
+    filteredCharacters.value = characters.results
+  })
   worldName.value = ''
   position.value = 0
   minTier.value = 1

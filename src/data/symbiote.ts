@@ -2,7 +2,7 @@ import { PerkFull } from 'global'
 
 export const alternativeTheming = `
 <h3 class="text-lg font-semibold text-center">Alternative Symbiote Theming</h3>
-<p>Xenomorphs aren’t for everyone, and that’s okay. If your chosen queen is canonically associated with metaphysical corruption or purification, or are canonically known for polymorphing others or spawning or controlling large numbers of mooks, all stages of the symbiote life cycle will follow their aesthetic and theming instead in all parts of the symbiote ecosystem. The functionality of each part will remain the same. Such queens include (but are not limited to) Salem, Madokami, most versions of Circe, and the subjects of certain waifu perks. This is a canonicity factor and is thus affected by Power Swap.</p>
+<p>Xenomorphs aren’t for everyone, and that’s okay. A variety of alternative themes exist, all tied to your queen’s thematics. If your chosen queen is at least Tier 6 at step 3, and strongly associated with any of the basic 12 Shroud elements (see that binding for details) at step 1a, all stages of the symbiote life cycle will follow their aesthetic and theming instead in all parts of the symbiote ecosystem. The functionality of each part will remain the same. This is a canonicity factor and thus affected by Power Swap.</p>
 `
 
 export const symbioteQueen = `

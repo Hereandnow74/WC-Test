@@ -57,7 +57,7 @@
         <Button v-if="Object.values(missionRewards).length" size="Small" label="Delete all rewards" bg-color="bg-red-600" @click="missionRewards = {}" />
       </div>
     </div>
-    <Note v-if="page === 1" type="warning" title="Work in progress">
+    <Note v-if="page === 1 && isTopVisible" type="warning" title="Work in progress">
       This section is in WIP stage, you can suggest simple missions/conditions/objectives for random mission generation on Discord
     </Note>
     <div ref="missionWrapper" class="w-full grid 2xl:grid-cols-[auto,auto,auto] lg:grid-cols-[auto,auto] gap-4 pb-8 justify-center overflow-y-auto scrollbar">

@@ -4076,6 +4076,26 @@ export const DLCwaifu_perks: WaifuPerk[] = [
     desc: 'Zenos, gorged upon the strength of his foes, once more takes the form of the Dragon, the primal Shinryu, a being capable of bringing about a Calamity all by itself. With the Garlean Prince\'s cold cunning at the helm, it is even more dangerous than ever before. The power that held the End of Days at bay is once more within his grasp.\nOnce this perk has been purchased, Zenos Yae Galvus may at will assume the form of the Primal Shinryu, complete with all its powers and abilities. While in the form of the dragon, Zenos may be counted as having the following perks:\nDragon Scale, as a dragon transformation, and Dragon Break, through Shinryu\'s ability to fly across time and space.\nZenos will always have this perk if captured during the finales of Stormblood or Endwalker.',
     whitelist: [],
   },
+  {
+    uid: 'GT1CP',
+    dlc: 'Redikai',
+    dlcLink: '',
+    title: 'Hard Mode: Toriel',
+    from: 'Undertale',
+    waifu: [
+      'Toriel',
+    ],
+    waifuUID: [
+      12408,
+    ],
+    tier: 5,
+    image: 'https://img-9gag-fun.9cache.com/photo/aGevE05_700bwp.webp',
+    cost: 10,
+    discount: 0,
+    costT: 0,
+    desc: 'Monsters are weak, not because they are lesser, but because they refuse to hurt and as such cannot. Taking this perk lowers that innate inhibition, allowing Toriel to fight with all her power as a Boss Monster. Hard Mode Toriel is slightly more prone to violence than other monsters though still much less than the average human.',
+    whitelist: [],
+  },
 ]
 
 export const waifuPerksObject = [...DLCwaifu_perks, ...waifu_perks, ...(localPerks.value['Specific waifu perk'] || [])].reduce((a, x) => { a[x.uid] = x; return a }, {} as Record<string, WaifuPerk>)
