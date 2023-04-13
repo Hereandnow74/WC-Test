@@ -1447,7 +1447,7 @@ export const waifu_perks: WaifuPerk[] = [
     image: 'https://cdn.donmai.us/sample/4a/fd/__yae_sakura_and_yae_sakura_honkai_and_1_more_drawn_by_rabbit_tukenitian__sample-4afdaaee21c64c27f8af309d6a32e5d4.jpg',
     tier: 7,
     cost: 50,
-    desc: 'Yae Sakura has purified the Black Box of Corruption and forged that core into the Divine Key it always was meant to be. Now able to wield the curse that has haunted her, either both she and her familiar Higokumaru can now unleash the deadly force that is the 12th Herrscher of the Previous Era.',
+    desc: 'Yae Sakura has purified the Black Box of Corruption and forged that core into the Divine Key it always was meant to be. Now able to wield the curse that once haunted her, she and her familiar Higokumaru can now unleash the deadly force that is the 12th Herrscher of the Previous Era.',
   },
   {
     uid: '1xKBt',
@@ -4074,26 +4074,6 @@ export const DLCwaifu_perks: WaifuPerk[] = [
     discount: 0,
     costT: 0,
     desc: 'Zenos, gorged upon the strength of his foes, once more takes the form of the Dragon, the primal Shinryu, a being capable of bringing about a Calamity all by itself. With the Garlean Prince\'s cold cunning at the helm, it is even more dangerous than ever before. The power that held the End of Days at bay is once more within his grasp.\nOnce this perk has been purchased, Zenos Yae Galvus may at will assume the form of the Primal Shinryu, complete with all its powers and abilities. While in the form of the dragon, Zenos may be counted as having the following perks:\nDragon Scale, as a dragon transformation, and Dragon Break, through Shinryu\'s ability to fly across time and space.\nZenos will always have this perk if captured during the finales of Stormblood or Endwalker.',
-    whitelist: [],
-  },
-  {
-    uid: 'GT1CP',
-    dlc: 'Redikai',
-    dlcLink: '',
-    title: 'Hard Mode: Toriel',
-    from: 'Undertale',
-    waifu: [
-      'Toriel',
-    ],
-    waifuUID: [
-      12408,
-    ],
-    tier: 5,
-    image: 'https://img-9gag-fun.9cache.com/photo/aGevE05_700bwp.webp',
-    cost: 10,
-    discount: 0,
-    costT: 0,
-    desc: 'Monsters are weak, not because they are lesser, but because they refuse to hurt and as such cannot. Taking this perk lowers that innate inhibition, allowing Toriel to fight with all her power as a Boss Monster. Hard Mode Toriel is slightly more prone to violence than other monsters though still much less than the average human.',
     whitelist: [],
   },
 ]

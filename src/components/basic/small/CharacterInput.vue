@@ -66,20 +66,23 @@ const searchResult = ref([] as any[])
 
 const { charSearch } = useCharSearch()
 
-const tierQuery = computed(() => (new Array(props.maxTier - props.minTier)).fill(0).map((n, i) => props.minTier + i + 1).join('|'))
+const tierQuery = computed(() => (new Array(props.maxTier - props.minTier)).fill(0).map((n, i) => props.minTier + i + 1).join('|='))
 
 watch(value, () => {
   if (charSearch.value && value.value.length <= 10) {
     const options = {
-      $or: [
-        { $and: [{ n: value.value }] },
-        { $and: [{ w: value.value }] },
+      $and: [
+        {
+          $or: [
+            { n: value.value },
+            { w: value.value },
+          ],
+        },
       ],
     }
-    if (tierQuery.value) {
-      options.$or[0].$and.push({ t: tierQuery.value })
-      options.$or[1].$and.push({ t: tierQuery.value })
-    }
+    if (tierQuery.value)
+      options.$and.push({ t: `=${tierQuery.value}` })
+
     searchResult.value = charSearch.value.search(options, { limit: 10 })
   }
 })

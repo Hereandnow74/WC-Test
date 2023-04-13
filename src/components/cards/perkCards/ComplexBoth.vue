@@ -49,6 +49,7 @@
                   placeholder="Character / Race / Power name"
                   class="flex-grow"
                   error-message=""
+                  :max="10"
                   @onChar="(char: DBCharacter) => (power.flavor = `${char.n} (${char.w})`, power.target = startingOrigin.character || 'You', power.uid = startingOrigin.uid || 0)"
                   @update:modelValue="(val) => (power.flavor = val, power.target = startingOrigin.character || 'You', power.uid = startingOrigin.uid || 0)"
                 />
@@ -58,6 +59,7 @@
                   placeholder="Power name"
                   class="flex-grow"
                   error-message=""
+                  :max="10"
                   @update:modelValue="(val) => (power.flavor = val, power.target = startingOrigin.character || 'You', power.uid = startingOrigin.uid || 0)"
                 />
                 <Button icon="fluent:delete-20-filled" bg-color="bg-red-500" label="" class="self-center" @click="() => powers[startingOrigin.uid || 0].splice(i, 1)" />

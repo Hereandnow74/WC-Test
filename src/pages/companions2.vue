@@ -326,7 +326,7 @@ const options = computed(() => {
   if (tags.value.length)
     opt.tags = tags.value
   if (minTier.value || maxTier.value)
-    opt.tier = { minTier: minTier.value, maxTier: maxTier.value }
+    opt.tier = { min: minTier.value, max: maxTier.value }
 
   opt.sortBy = '_id:desc'
   if (sortAlpha.value !== 0)

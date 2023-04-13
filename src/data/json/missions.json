@@ -1,6 +1,335 @@
 [
   
   {
+    "reward": "Your Pocket Dimension becomes your Divine Realm.",
+    "image": "https://conceptartworld.com/wp-content/uploads/2013/03/God_of_War-Ascension_24b.jpg",
+    "author": "Zaralann",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Give me the God of War!",
+    "loca": "God of War",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "'Prison of the Damned' is added as a part of your Pocket Dimension, Aegeon is part of the Location so cannot be Captured.",
+        "type": "Other",
+        "value": "Megaera/Aegeon is Defeated."
+      },
+      {
+        "reward": "'Delphi' Mountain Range is added to your Pocket Dimension.",
+        "type": "Other",
+        "value": "Castor & Pollux are Defeated."
+      },
+      {
+        "reward": "'Delos'(Statue of Apollo Destroyed) is added to your Pocket Dimension.",
+        "type": "Other",
+        "value": "(Past)Tisiphone/Daimon & Megaera are Defeated."
+      },
+      {
+        "reward": "Statue of Apollo on 'Delos' in your Pocket Dimension is fully restored.",
+        "type": "Other",
+        "value": "Trials of Archimedes are passed."
+      },
+      {
+        "reward": "'The Fury Citadel' is added to your Pocket Dimension.",
+        "type": "Other",
+        "value": "Alecto & Tisiphone/Daimon are Defeated."
+      },
+      {
+        "reward": "Beginning of 'God of War: Chains of Olympus'.",
+        "type": "Other",
+        "value": "'God of War: Ascension' Completed."
+      },
+      {
+        "reward": "'Attica' is added to your Pocket Dimension.",
+        "type": "Other",
+        "value": "Persian King & Basilisk are Defeated."
+      },
+      {
+        "reward": "'Temple of Helios'(Can take the Form of 'Sun Chariot') and 'Caves of Olympus' are added to your Pocket Dimension.",
+        "type": "Other",
+        "value": "The three Fire Steeds are awakened."
+      },
+      {
+        "reward": "'Charon's Ferry' is gained as a Vehicle.",
+        "type": "Other",
+        "value": "Charon is Defeated."
+      },
+      {
+        "reward": "'Pillar of the World', 'Temple of Persephone' and 'Elysium Fields' are added to your Pocket Dimension.",
+        "type": "Other",
+        "value": "Atlas and Persephone are Defeated."
+      },
+      {
+        "reward": "Beginning of 'God of War'.",
+        "type": "Other",
+        "value": "'God of War: Chains of Olympus' Completed."
+      },
+      {
+        "reward": "'Aegean Sea' is added to your Pocket Dimension.",
+        "type": "Other",
+        "value": "Hydra is Defeated."
+      },
+      {
+        "reward": "'Athens'(Destroyed) is added to your Pocket Dimension.",
+        "type": "Other",
+        "value": "Medusa is Defeated and Oracle of Athens is Saved."
+      },
+      {
+        "reward": "'Pandora's Temple'(Cronos not included) is added to your Pocket Dimension.",
+        "type": "Other",
+        "value": "Pandora's Guardian is Defeated and Pandora's Box is Acquired."
+      },
+      {
+        "reward": "'Athens' in your Pocket Dimension are fully restored.",
+        "type": "Other",
+        "value": "Ares is Defeated."
+      },
+      {
+        "reward": "Beginning of 'God of War: Betrayal'.",
+        "type": "Other",
+        "value": "'God of War' Completed."
+      },
+      {
+        "reward": "'Unnamed Greek City' is added to your Pocket Dimension.",
+        "type": "Other",
+        "value": "Argos and Ceryx are Defeated."
+      },
+      {
+        "reward": "Beginning of 'God of War: Ghost of Sparta'.",
+        "type": "Other",
+        "value": "'God of War: Betrayal' Completed."
+      },
+      {
+        "reward": "'Atlantis' is added to your Pocket Dimension.",
+        "type": "Other",
+        "value": "Callisto and Scylla are Defeated."
+      },
+      {
+        "reward": "'Mounts of Aroania' are added to your Pocket Dimension.",
+        "type": "Other",
+        "value": "Erinys is Defeated."
+      },
+      {
+        "reward": "'Sparta' is added to your Pocket Dimension.",
+        "type": "Other",
+        "value": "Piraeus Lion is Defeated."
+      },
+      {
+        "reward": "'Temple of Thanatos' is added to your Pocket Dimension.",
+        "type": "Other",
+        "value": "Deimos and Thanatos are Defeated."
+      },
+      {
+        "reward": "Beginning of 'God of War II'",
+        "type": "Other",
+        "value": "'God of War: Ghost of Sparta' Completed."
+      },
+      {
+        "reward": "'Rhodes' is added to your Pocket Dimension.",
+        "type": "Other",
+        "value": "Colossus of Rhodes is Defeated."
+      },
+      {
+        "reward": "'Lair of Typhon' is added to your Pocket Dimension.",
+        "type": "Other",
+        "value": "Pegasus is Freed."
+      },
+      {
+        "reward": "'Temple of Lahkesis' is added to your Pocket Dimension.",
+        "type": "Other",
+        "value": "Dark Rider is Defeated."
+      },
+      {
+        "reward": "'Steeds of Time' is added to your Pocket Dimension.",
+        "type": "Other",
+        "value": "Theseus is Defeated."
+      },
+      {
+        "reward": "'Bog of the Forgotten' is added to your Pocket Dimension.",
+        "type": "Other",
+        "value": "Alrik, Mole Cerberus and Euryale are Defeated."
+      },
+      {
+        "reward": "'Courtyard of Atropos' and 'Hall of Atropos' are added to your Pocket Dimension.",
+        "type": "Other",
+        "value": "Perseus is Defeated."
+      },
+      {
+        "reward": "'Palace of the Fates' is added to your Pocket Dimension.",
+        "type": "Other",
+        "value": "Phoenix us Awoken and the Last Spartan and Kraken are Defeated."
+      },
+      {
+        "reward": "'Island of Creation' is added to you Pocket Dimension uniting the previously granted parts and adding the missing ones.",
+        "type": "Other",
+        "value": "Lahkesis, Atropos and Clotho are Defeated."
+      },
+      {
+        "reward": "'Summit of Sacrifice' is added to your Pocket Dimension.",
+        "type": "Other",
+        "value": "Zeus is Defeated."
+      },
+      {
+        "reward": "Beginning of 'God of War III'.",
+        "type": "Other",
+        "value": "'God of War II' Completed."
+      },
+      {
+        "reward": "Hippocampi now populate the waters of your Pocket Dimension.",
+        "type": "Other",
+        "value": "Hippocampi is Defeated."
+      },
+      {
+        "reward": "All Greek Oceans are added to your Pocket Dimension.",
+        "type": "Other",
+        "value": "Poseidon is Defeated."
+      },
+      {
+        "reward": "'Underworld' is added to your Pocket Dimension.",
+        "type": "Other",
+        "value": "Hades is Defeated."
+      },
+      {
+        "reward": "'Olympia' is added to your Pocket Dimension.",
+        "type": "Other",
+        "value": "Helios is Defeated."
+      },
+      {
+        "reward": "'Plague of Olympus' fills your Pocket Diemsnion and attacks Hostile Unites within, bypassing any resistances and immunities.",
+        "type": "Other",
+        "value": "Hermes is Defeated."
+      },
+      {
+        "reward": "'The Forum' is added to your Pocket Dimension.",
+        "type": "Other",
+        "value": "Hercules is Defeated."
+      },
+      {
+        "reward": "'Tartarus' is added to your Pocket Dimension.",
+        "type": "Other",
+        "value": "Cronos is Defeated."
+      },
+      {
+        "reward": "'The Forge' and 'Hyperion Gates' are added to your Pocket Dimension.",
+        "type": "Other",
+        "value": "Hephaestus is Defeated."
+      },
+      {
+        "reward": "'Labyrinth' is added to your Pocket Dimension.",
+        "type": "Other",
+        "value": "Skorpius is Defeated."
+      },
+      {
+        "reward": "'Chain of Balance' and ' The Three Judges' are added to your Pocket Dimension.",
+        "type": "Other",
+        "value": "Hades Cerberus Breeder is Defeated."
+      },
+      {
+        "reward": "'Mount Olympus' is added to your Pocket Dimension, previously earned parts seamlessly integrated.",
+        "type": "Other",
+        "value": "Zeus and Gaia are Defeated."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You will enter 'God of War'[DR8] and will take Kratos's place, all logical/continuation issues would be adjusted."
+      },
+      {
+        "value": "You must purchase [Added Potential](5C) for this World."
+      },
+      {
+        "value": "You must purchase [Pocket Space](5C), [Pocket Apartment(II)](20C), [Sweet Home(II)](20C), [Grand Manor(II)](20C) and [Life’s A Beach](10C)"
+      },
+      {
+        "value": "You will arrive into 'God of War: Ascension' at the start of the Game."
+      },
+      {
+        "value": "To not exceed the time of the Mission the Events would follow the sequences presented within the Game, for the durations of the Mission the 'Timeskips' within the Game would be provided by the Company."
+      },
+      {
+        "value": "Time is Fluid within the World for the duration of the Mission, stepping out of it either for your Pocket Dimension or another World would put the Events on 'Pause' so using such methods to avoid Events or obstacles would not work."
+      },
+      {
+        "value": "Time is Fluid within other Worlds for the duration of the Mission, putting the Events on 'Pause' while you're within this World during the Mission, it does not affect the Pocket Dimension."
+      },
+      {
+        "value": "A limited mount of 'Game Logic' is provided by the Company, certain Mechanics within the World would function in similar way as they did in the Game."
+      },
+      {
+        "value": "Progress of unlocking of the new World would be frozen for the duration of the Mission, finishing it would instantly unlock the nexy World if Travel Perks are pruchased."
+      },
+      {
+        "value": "Binding/Selling a Boss/Mini-Boss counts as Defeating them, same for 'Mini-Games' against others."
+      },
+      {
+        "value": "All 'Orbs' are given to you no matter if you or your Waifu collected them."
+      }
+    ],
+    "budget": 80,
+    "desc": "You want a Battle? You want a Challenge? You want to forge your own Legend? Nothing can stay in the way of one who walks the path of a Legend, the path of a God. Kratos walked this path, now his footsteps are yours to follow O' Contractor! We offer you a Mission to success on the Path Kratos walked and we will give you only one chance! Follow it, overcome everything that Kratos did in his journey as a Warrior and later as a God of War and even beyond!\nAddendium(Chronological Order of Games):\n1. God of War: Ascension\n2. God of War: Chains of Olympus\n3. God of War\n4. God of War: Betrayal\n5. God of War: Ghost of Sparta\n6. God of War II\n7. God of War III",
+    "uid": "NkmUp"
+  },
+  {
+    "reward": "Free Template Stacking depending on what Clan you are from (Madara Uchiha, Hashirama Senju, or Mito Uzumaki)",
+    "image": "",
+    "author": "GodsShadow",
+    "rewardType": "Perks",
+    "source": "",
+    "title": "Clan Restoration Act(C.R.A)",
+    "loca": "Naruto",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "Free Template Stacking of your Bloodline Limit for a non-clan Waifu.",
+        "type": "Perks",
+        "value": "Keep it in the Clan - Find another full-blooded Clan Member to restart the bloodline, and make them your wife!"
+      },
+      {
+        "reward": "T6 Ninja Ticket",
+        "type": "Companions",
+        "value": "Let's start with a dozen - Have at least 12 pregnant wives or babies."
+      },
+      {
+        "reward": "The capture price is doubled (Only once per Clan)",
+        "type": "Other",
+        "value": "One Clan to rule them all - Capture the first daughter of another Clan and take her as a wife."
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Become Hokage! Or have a Clan member become Hokage if you don't want the job!"
+      },
+      {
+        "reward": "Instant Capture of a Tailed Beast of your Choosing",
+        "type": "Companions",
+        "value": "Strongest Clan - Have your Clan publicly recognized as the strongest Clan in Konoha."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "The C.R.A. demands, by Konoha Law, you have a minimum of three wives (from Konoha) that can take your Clan's name and bear your children."
+      },
+      {
+        "value": "The Hokage will support any of your romantic pursuits, and allow you to marry as many as you like (So long as you are making babies)"
+      },
+      {
+        "value": "The Hokage will provide a pension (Three months Catalog Salary) per spouse you take."
+      },
+      {
+        "value": "Due to your Status of Heir, you are forbidden from leaving the village without a guard, and cannot go on missions. You can still be a ninja, but you're on reserve until the Clan is strong again."
+      },
+      {
+        "value": "You must either Substitute as Naruto/Sasuke or take the Extra Origin and you will be recognized as the official heir."
+      }
+    ],
+    "budget": 0,
+    "desc": "You've heard of it, haven't you Contractor? The C.R.A... The Village Hidden in the Leaves has fallen in dire straights over the last few wars... and now the Uchiha Massacre! Their two founding Clans are down to single digits, and the Uzumaki, one of their greatest allies are gone! It's time to activate the Clan Restoration Act! Drop in as recognized heir to the Senju, Uchiha, or Uzumaki and start making babies! ",
+    "uid": "ljyaw"
+  },
+  {
     "reward": 250,
     "image": "",
     "author": "TheTinyGrayDog",

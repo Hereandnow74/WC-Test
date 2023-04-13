@@ -6,6 +6,25 @@
       </h2>
       <div>
         <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          09 April 2023
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~160 new user submitted characters, new missions</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          06 April 2023
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~140 new user submitted characters, new worlds</li>
+          <li>Email confirmation for registration should work now.</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
           02 April 2023
         </h3>
         <ul class="list-decimal list-inside">

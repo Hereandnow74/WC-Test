@@ -42,6 +42,7 @@
       <template v-if="user.id">
         <Button label="Logout" @click="logout" />
         <Button v-if="user.role === 'admin'" label="Rebase" @click="rebase" />
+        <Button v-if="!user.isEmailVerified && !isEmailSent" label="Send Verification Email" @click="sendEmail" />
         <Button v-if="user.role === 'admin'" label="Get Likes" @click="getLikes" />
         <Button v-if="user.role === 'admin'" label="Get Chars" @click="getChars" />
         <Button v-if="user.role === 'admin'" label="Recalculate Likes" @click="recalculateLikes" />
@@ -54,7 +55,7 @@
 import * as zod from 'zod'
 import { useForm, useField } from 'vee-validate'
 import { toFormValidator } from '@vee-validate/zod'
-import { getUserFromServer, rebaseCharactersToServer, getCharactersFromServer, getLikesByUid, logoutFromServer, recalculateLikesOnServer, updateUserInfo } from '~/logic/server/'
+import { getUserFromServer, rebaseCharactersToServer, getCharactersFromServer, logoutFromServer, recalculateLikesOnServer, updateUserInfo, sendVerificationEmail } from '~/logic/server/'
 import { useUser } from '~/store/user'
 import { confirmDialog } from '~/logic/dialog'
 
@@ -116,5 +117,11 @@ function getLikes() {
 
 function recalculateLikes() {
   recalculateLikesOnServer()
+}
+
+const isEmailSent = useStorage('ices', false)
+function sendEmail() {
+  isEmailSent.value = true
+  sendVerificationEmail().then(msg => confirmDialog(msg, 'info'))
 }
 </script>

@@ -136,8 +136,8 @@ interface SearchRequest {
   name: string
   world: string
   tier?: {
-    minTier: number
-    maxTier: number
+    min: number
+    max: number
   }
   tags?: {
     tag: string
