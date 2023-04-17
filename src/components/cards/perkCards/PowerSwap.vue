@@ -104,7 +104,7 @@ import { lazyLoadImg, imageLink } from '~/logic'
 import { SavedChar } from '~/store/chargen'
 import { useStore } from '~/store/store'
 
-const { companionsComp, settings, startingOrigin } = useStore()
+const { companionsComp, settings, startingOrigin, heritageOptions } = useStore()
 
 const props = defineProps({
   perk: {
@@ -124,13 +124,6 @@ const props = defineProps({
     default: () => [],
   },
 })
-
-const heritageOptions = [
-  { label: 'None', value: '' },
-  { label: 'Dragon', value: 'dr' },
-  { label: 'Transhuman', value: 'th' },
-  { label: 'Outsider', value: 'ou' },
-]
 
 const showBuyPerk = ref(false)
 const charList = ref<HTMLElement | null>(null)

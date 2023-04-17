@@ -65,6 +65,16 @@ const settings = useStorage('settings', {
   rebates: false,
 })
 
+const heritageOptions = computed(() => [
+  { label: 'None', value: '' },
+  { label: 'Dragon', value: 'dr' },
+  { label: 'Transhuman', value: 'th' },
+  { label: 'Outsider', value: 'ou' },
+  { label: 'Psychopomp', value: 'pp' },
+  { label: 'Wendigo', value: 'we' },
+  { label: 'Mastermind', value: 'mm' },
+])
+
 if (settings.value.allDLCTypes === undefined)
   settings.value.allDLCTypes = []
 
@@ -176,6 +186,9 @@ const types = {
   dr: 'Dragon',
   th: 'Transhuman',
   ou: 'Outsider',
+  pp: 'Psychopomp',
+  we: 'Wendigo',
+  mm: 'Mastermind',
 }
 // const powerSwapDiscount = computed(() => {
 //   const ps = startingOrigin.value.swap?.tier
@@ -320,7 +333,7 @@ const fullStartingBudget = computed(() => {
     .reduce((a, x) => x.intensity < 10 ? a += x.intensity : (intensityFlat += x.intensity, a), 0)
 
   let bd = baseBudget.value
-  if (flags.value.danger11Start) bd = 0
+  if (flags.value.danger11Start) bd = 2045
 
   return csr.value ? Math.round((bd + intensityFlat) * (intenMultiplier)) : Math.round((bd + intensityFlat) * (1 + intenMultiplier))
 })
@@ -398,8 +411,8 @@ function costCalcTX(a: number, x: Perk) {
 }
 
 const tier11tickets = computed(() => {
-  let ticket = 0
-  if (flags.value.danger11Start) ticket += 5
+  // let ticket = 0
+  // if (flags.value.danger11Start) ticket += 5
 
   const bindingCost = binding.value.reduce(costCalcTX, 0)
   const heritageCost = heritage.value.reduce(costCalcTX, 0)
@@ -412,7 +425,8 @@ const tier11tickets = computed(() => {
   const waifuPerksCost = waifuPerks.value.reduce(costCalcTX, 0)
   const genericWaifuPerksCost = genericWaifuPerks.value.reduce(costCalcTX, 0)
   const luresCost = luresBought.value.reduce(costCalcTX, 0)
-  const companionsCost = companions.value.reduce((a, x) => {
+  const companionsCost = companions.value.reduce((a, x, i) => {
+    if (flags.value.danger11Start && i === 0 && x.tier >= 11 && x.tier <= 12) return 0
     if (x.perk && x.perk.tier >= 11)
       a += CHAR_COSTS_TICKET[x.perk.tier]
     if (x.swap)
@@ -423,7 +437,7 @@ const tier11tickets = computed(() => {
   const originPSTicket = startingOrigin.value.swap && startingOrigin.value.swap.tier >= 11 ? CHAR_COSTS_TICKET[startingOrigin.value.swap.tier] : 0
   const originSWPTicket = startingOrigin.value.perk && startingOrigin.value.perk.tier >= 11 ? CHAR_COSTS_TICKET[startingOrigin.value.perk.tier] : 0
 
-  return ticket - heritageCost - ridePerksCost - homePerksCost - talentsCost - defensesCost - miscPerksCost
+  return -heritageCost - ridePerksCost - homePerksCost - talentsCost - defensesCost - miscPerksCost
     - waifuPerksCost - genericWaifuPerksCost - luresCost - companionsCost - bindingCost
     - budgetMods.value.minus11 + budgetMods.value.plus11 + companionTicketProfit.value - budgetMods.value.sell11 + missionRewardTickets.value - originPSTicket - originSWPTicket - (startingOrigin.value.costT || 0)
 })
@@ -618,5 +632,6 @@ export function useStore() {
     defenseRetinueDiscountAuto,
     defenseRetinueDiscountAutoCredits,
     originCost,
+    heritageOptions,
   }
 }

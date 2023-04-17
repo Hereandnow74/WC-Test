@@ -5257,32 +5257,49 @@
     "s": "https://awoiaf.westeros.org/images/a/a0/Cristi_Balanescu_Jon_SnowGhost.png",
     "w": "A Song of Ice and Fire",
     "b": [
-      "M"
+      "M",
+      "hr",
+      "mt",
+      "cl",
+      "bj",
+      "di",
+      "mo",
+      "bk",
+      "dn",
+      "sa",
+      "cm",
+      "fa"
     ]
   },
   {
     "u": 3555,
     "n": "Arianne Martell",
     "t": 1,
-    "i": "d71qm1b_ca8b1069_4280_418e_a7e6_e45f1bffc965.jpg",
-    "s": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4ff579c9-1b38-4b9c-bf68-11f0d9c03238/d71qm1b-ca8b1069-4280-418e-a7e6-e45f1bffc965.jpg/v1/fill/w_400,h_600,q_75,strp/arianne_martell_ii__a_song_of_ice_and_fire__by_nickkalinin_d71qm1b-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjAwIiwicGF0aCI6IlwvZlwvNGZmNTc5YzktMWIzOC00YjljLWJmNjgtMTFmMGQ5YzAzMjM4XC9kNzFxbTFiLWNhOGIxMDY5LTQyODAtNDE4ZS1hN2U2LWU0NWYxYmZmYzk2NS5qcGciLCJ3aWR0aCI6Ijw9NDAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.-CI14ZA1YAs6BnPohPFtkwJ-l4FLQaqrM4J3Eb2UM04",
+    "i": "https://i.imgur.com/5SiD7Pcl.jpg",
+    "s": "https://i.imgur.com/5SiD7Pc.jpg",
     "w": "A Song of Ice and Fire",
     "b": [
       "F",
       "C",
-      "pc"
+      "hr",
+      "sl",
+      "pc",
+      "sa"
     ]
   },
   {
     "u": 3556,
     "n": "Catelyn Stark",
     "t": 2,
-    "i": "4731027_catelyn.jpg",
-    "s": "https://comicvine1.cbsistatic.com/uploads/scale_medium/11112/111121983/4731027-catelyn.jpg",
+    "i": "https://i.imgur.com/Er8XnXOl.jpg",
+    "s": "https://i.imgur.com/Er8XnXO.jpg",
     "w": "A Song of Ice and Fire",
     "b": [
       "F",
-      "C"
+      "C",
+      "cl",
+      "sl",
+      "sa"
     ]
   },
   {
@@ -5295,7 +5312,9 @@
     "b": [
       "F",
       "C",
-      "ev"
+      "ev",
+      "rl",
+      "sa"
     ],
     "in": "https://pictures.hentai-foundry.com/p/purr-hiss/584311/purr-hiss-584311-Cersei.jpg"
   },
@@ -5303,12 +5322,15 @@
     "u": 3558,
     "n": "Margaery Tyrell",
     "t": 2,
-    "i": "d8yrbi2_f1abca63_bf97_4201_9d0e_d1da5e657e21.jpg",
-    "s": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/09d8c379-3e43-4e63-9d66-4ae4c16a42fb/d8yrbi2-f1abca63-bf97-4201-9d0e-d1da5e657e21.jpg/v1/fill/w_800,h_1132,q_75,strp/margaery_tyrell_by_dopaprime_d8yrbi2-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTEzMiIsInBhdGgiOiJcL2ZcLzA5ZDhjMzc5LTNlNDMtNGU2My05ZDY2LTRhZTRjMTZhNDJmYlwvZDh5cmJpMi1mMWFiY2E2My1iZjk3LTQyMDEtOWQwZS1kMWRhNWU2NTdlMjEuanBnIiwid2lkdGgiOiI8PTgwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.9ddTdnSeh7LnsFynIRbqg2XO3JSGYzw31yiDRLrRhEs",
+    "i": "https://i.imgur.com/Yuv512dl.jpg",
+    "s": "https://i.imgur.com/Yuv512d.jpg",
     "w": "A Song of Ice and Fire",
     "b": [
       "F",
       "C",
+      "sc",
+      "sl",
+      "rl",
       "ar",
       "sa"
     ],
@@ -5318,12 +5340,14 @@
     "u": 3559,
     "n": "Myrcella Baratheon",
     "t": 1,
-    "i": "d7gjqd4_d89da8cf_adea_4034_95a2_0a6a17906848.jpg",
-    "s": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1b566b1c-40e8-4050-9b99-a83a304eb431/d7gjqd4-d89da8cf-adea-4034-95a2-0a6a17906848.jpg/v1/fill/w_1600,h_1067,q_75,strp/myrcella_baratheon_by_nozomi_art_d7gjqd4-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTA2NyIsInBhdGgiOiJcL2ZcLzFiNTY2YjFjLTQwZTgtNDA1MC05Yjk5LWE4M2EzMDRlYjQzMVwvZDdnanFkNC1kODlkYThjZi1hZGVhLTQwMzQtOTVhMi0wYTZhMTc5MDY4NDguanBnIiwid2lkdGgiOiI8PTE2MDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.RsTyEIpryB4-ndw0zZx-QtZ1OjZHecHbHtdV_qzUkas",
+    "i": "https://i.imgur.com/CtSW21vl.jpg",
+    "s": "https://i.imgur.com/CtSW21v.jpg",
     "w": "A Song of Ice and Fire",
     "b": [
       "F",
       "C",
+      "cl",
+      "sl",
       "pc"
     ]
   },
@@ -5331,12 +5355,16 @@
     "u": 3560,
     "n": "Missandei",
     "t": 2,
-    "i": "dacuhvn_daf513ea_c946_4cfb_b618_166b88412d1f.jpg",
-    "s": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5cd9886f-b12c-43ce-88a5-06d42214d456/dacuhvn-daf513ea-c946-4cfb-b618-166b88412d1f.jpg/v1/fill/w_900,h_1392,q_75,strp/missandei_got_by_elias_chatzoudis_dacuhvn-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzVjZDk4ODZmLWIxMmMtNDNjZS04OGE1LTA2ZDQyMjE0ZDQ1NlwvZGFjdWh2bi1kYWY1MTNlYS1jOTQ2LTRjZmItYjYxOC0xNjZiODg0MTJkMWYuanBnIiwiaGVpZ2h0IjoiPD0xMzkyIiwid2lkdGgiOiI8PTkwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS53YXRlcm1hcmsiXSwid21rIjp7InBhdGgiOiJcL3dtXC81Y2Q5ODg2Zi1iMTJjLTQzY2UtODhhNS0wNmQ0MjIxNGQ0NTZcL2VsaWFzLWNoYXR6b3VkaXMtNC5wbmciLCJvcGFjaXR5Ijo5NSwicHJvcG9ydGlvbnMiOjAuNDUsImdyYXZpdHkiOiJjZW50ZXIifX0.0jMcjyLTrVXtkTH9XjAAWTSpjPhpUnhyLdYQDymOx8o",
+    "i": "https://i.imgur.com/aQQutpDl.jpg",
+    "s": "https://i.imgur.com/aQQutpD.jpg",
     "w": "A Song of Ice and Fire",
     "b": [
       "F",
-      "C"
+      "C",
+      "hr",
+      "cl",
+      "sl",
+      "sa"
     ],
     "in": "https://lotus.paheal.net/_images/16833b3b0d5e9b53d2e4383f47017442/2266854%20-%20Andrew_Tarusov%20Game_of_Thrones%20Missandei.jpg"
   },
@@ -5350,7 +5378,12 @@
     "b": [
       "F",
       "C",
-      "pc"
+      "hr",
+      "cl",
+      "sl",
+      "ar",
+      "sa",
+      "fa"
     ],
     "in": "https://lotus.paheal.net/_images/d0f4da7a0bd79f6150b37785e8bacb21/2802617%20-%20Game_of_Thrones%20Sansa_Stark%20ViiPer.jpg"
   },
@@ -5358,15 +5391,17 @@
     "u": 3562,
     "n": "Asha Greyjoy",
     "t": 2,
-    "i": "d8p2isf_29237af5_9dd8_4d70_8d4b_6dbdacdcee6f.jpg",
-    "s": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/cbef6736-a724-483d-abbe-aff1557ad530/d8p2isf-29237af5-9dd8-4d70-8d4b-6dbdacdcee6f.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2NiZWY2NzM2LWE3MjQtNDgzZC1hYmJlLWFmZjE1NTdhZDUzMFwvZDhwMmlzZi0yOTIzN2FmNS05ZGQ4LTRkNzAtOGQ0Yi02ZGJkYWNkY2VlNmYuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.lEgSLQJxoh20o4O_f2IKOv7-0qLe3eLzt1LkJ0i7poc",
+    "i": "https://i.imgur.com/ZgqkHful.jpg",
+    "s": "https://i.imgur.com/ZgqkHfu.jpg",
     "w": "A Song of Ice and Fire",
     "b": [
       "F",
       "C",
       "cl",
+      "sl",
       "pi",
       "pc",
+      "sa",
       "cm"
     ]
   },
@@ -5374,13 +5409,14 @@
     "u": 3563,
     "n": "Ellaria Sand",
     "t": 2,
-    "i": "dco1n4t_9ea05193_a544_4eca_9eb5_c00e703e25da.jpg",
-    "s": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5c7d400d-a490-4188-a29b-23dad828f79b/dco1n4t-9ea05193-a544-4eca-9eb5-c00e703e25da.jpg/v1/fill/w_800,h_800,q_75,strp/ellaria_sand_in_kimono_of_dorne_by_yagihikaru_dco1n4t-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6IlwvZlwvNWM3ZDQwMGQtYTQ5MC00MTg4LWEyOWItMjNkYWQ4MjhmNzliXC9kY28xbjR0LTllYTA1MTkzLWE1NDQtNGVjYS05ZWI1LWMwMGU3MDNlMjVkYS5qcGciLCJ3aWR0aCI6Ijw9ODAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.NlZjW7FPMryWr2TzRCbFBOC4Y-DesrePNkAq5-Y_3zs",
+    "i": "https://i.imgur.com/2fS0TmFl.jpg",
+    "s": "https://i.imgur.com/2fS0TmF.jpg",
     "w": "A Song of Ice and Fire",
     "b": [
       "F",
       "C",
-      "hr"
+      "hr",
+      "sl"
     ],
     "in": "https://tulip.paheal.net/_images/92a122afaa15e2a1748727b2cf56a173/2288139%20-%20Ellaria_Sand%20Game_of_Thrones%20Suku.jpg"
   },
@@ -5395,6 +5431,7 @@
       "F",
       "C",
       "cl",
+      "sl",
       "cm"
     ],
     "in": "https://peach.paheal.net/_images/cc1a7fbb3482507890ae3551f7715d53/2266844%20-%20Andrew_Tarusov%20Brienne_of_Tarth%20Game_of_Thrones.jpg"
@@ -5403,13 +5440,17 @@
     "u": 3565,
     "n": "Ygritte",
     "t": 3,
-    "i": "da5u6we_ac081ca5_6b9e_4761_ba0f_a2a4fc56109e.jpg",
-    "s": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/76369282-5204-4944-af30-a662d1c95862/da5u6we-ac081ca5-6b9e-4761-ba0f-a2a4fc56109e.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzc2MzY5MjgyLTUyMDQtNDk0NC1hZjMwLWE2NjJkMWM5NTg2MlwvZGE1dTZ3ZS1hYzA4MWNhNS02YjllLTQ3NjEtYmEwZi1hMmE0ZmM1NjEwOWUuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.aOUzOqQm2Gxq5eXy1-1SvkYErmWE8wb8QwdNqAIw1bs",
+    "i": "https://i.imgur.com/2Rte91zl.jpg",
+    "s": "https://i.imgur.com/2Rte91z.jpg",
     "w": "A Song of Ice and Fire",
     "b": [
       "F",
       "C",
-      "hr"
+      "hr",
+      "cl",
+      "ar",
+      "cm",
+      "sh"
     ],
     "in": "https://lotus.paheal.net/_images/92540a296f93effeb17d80612e358389/2266860%20-%20Andrew_Tarusov%20Game_of_Thrones%20Ygritte.jpg"
   },
@@ -5423,11 +5464,17 @@
     "b": [
       "F",
       "C",
+      "hr",
+      "mt",
+      "cl",
+      "sc",
       "di",
-      "fm",
-      "pt",
+      "mo",
+      "sl",
       "dn",
-      "fn"
+      "wh",
+      "pt",
+      "sa"
     ],
     "in": "https://lotus.paheal.net/_images/098d41781c05610113f314ef2015ed8b/3713768%20-%20Game_of_Thrones%20Melisandre.jpg"
   },
@@ -5435,15 +5482,20 @@
     "u": 3568,
     "n": "Daenerys Targaryen",
     "t": 5,
-    "i": "dd1lzfr_86a53c1f_56aa_4b03_aeb8_c032dfb196a3.jpg",
-    "s": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7d9ae173-b642-4519-a326-920a01166219/dd1lzfr-86a53c1f-56aa-4b03-aeb8-c032dfb196a3.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzdkOWFlMTczLWI2NDItNDUxOS1hMzI2LTkyMGEwMTE2NjIxOVwvZGQxbHpmci04NmE1M2MxZi01NmFhLTRiMDMtYWViOC1jMDMyZGZiMTk2YTMuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.OtgOToKUawOZKBN1nV27N8-MX5tzyaXj1umN3Alwga8",
+    "i": "https://i.imgur.com/0uFs3bKl.jpg",
+    "s": "https://i.imgur.com/0uFs3bK.jpg",
     "w": "A Song of Ice and Fire",
     "b": [
       "F",
       "C",
       "mt",
+      "cl",
+      "sc",
       "mo",
+      "sl",
+      "pc",
       "rl",
+      "sa",
       "fa"
     ],
     "in": "https://pictures.hentai-foundry.com/e/EvaSolo/423405/EvaSolo-423405-Daenerys_Nude.jpg"
@@ -5452,13 +5504,16 @@
     "u": 9672,
     "n": "Val",
     "t": 2,
-    "i": "a_sight_so_lovely_by_reh_sa_ddybv9s_pre.jpg",
-    "s": "https://www.deviantart.com/reh-sa/art/A-sight-so-lovely-843720976",
+    "i": "https://i.imgur.com/eypo0szl.jpg",
+    "s": "https://i.imgur.com/eypo0sz.jpg",
     "w": "A Song of Ice and Fire",
     "b": [
       "F",
       "C",
-      "hr"
+      "hr",
+      "cl",
+      "dc",
+      "ar"
     ]
   },
   {
@@ -5471,29 +5526,37 @@
     "b": [
       "F",
       "C",
+      "cl",
+      "sl",
       "pc",
-      "rl"
+      "rl",
+      "sa"
     ]
   },
   {
     "u": 9674,
     "n": "Arya Stark",
     "t": 4,
-    "i": "https://i.imgur.com/89DjZffl.png",
-    "s": "https://i.imgur.com/89DjZff.png",
+    "i": "https://i.imgur.com/kPXNLQil.jpg",
+    "s": "https://i.imgur.com/kPXNLQi.jpg",
     "w": "A Song of Ice and Fire",
     "b": [
       "F",
       "C",
+      "st",
+      "hr",
+      "mt",
       "cl",
       "bj",
       "di",
+      "mo",
       "bk",
       "dn",
-      "pc",
       "sr",
+      "sa",
       "cm",
-      "sh"
+      "sh",
+      "fa"
     ],
     "in": "https://tulip.paheal.net/_images/7a261855f49a379edf23b17730da2cbd/3374180%20-%20Arya_Stark%20Game_of_Thrones.jpg"
   },
@@ -5501,43 +5564,63 @@
     "u": 9675,
     "n": "Rhaenyra Targaryen",
     "t": 5,
-    "i": "dchxq46_73a37221_ffed_44f0_9bb5_cb06eec7d25d.png",
-    "s": "https://www.deviantart.com/naomimakesart/art/The-Realm-s-Delight-755721078",
+    "i": "https://i.imgur.com/BOLyyvYl.jpg",
+    "s": "https://i.imgur.com/BOLyyvY.jpg",
     "w": "A Song of Ice and Fire",
     "b": [
       "F",
       "C",
+      "mt",
+      "cl",
+      "mo",
+      "sl",
       "pc",
-      "rl"
+      "rl",
+      "sa",
+      "cm",
+      "fa"
     ]
   },
   {
     "u": 9676,
     "n": "Rhaenys Targaryen",
     "t": 5,
-    "i": "rhaenys_targaryen_by_blatterbury_d4tyzzp_pre.jpg",
-    "s": "https://www.deviantart.com/blatterbury/art/Rhaenys-Targaryen-292206517",
+    "i": "https://i.imgur.com/eIZBiUul.jpg",
+    "s": "https://i.imgur.com/eIZBiUu.jpg",
     "w": "A Song of Ice and Fire",
     "b": [
       "F",
       "C",
-      "pc",
-      "rl"
+      "mt",
+      "cl",
+      "mo",
+      "sl",
+      "rl",
+      "ar",
+      "sa",
+      "cm",
+      "fa"
     ]
   },
   {
     "u": 9677,
     "n": "Visenya Targaryen",
     "t": 5,
-    "i": "da1r313_d007af2c_7ead_4bf6_8ab1_3d0cbf724e40.jpg",
-    "s": "https://www.deviantart.com/enife/art/Commission-Visenya-Targaryen-607605015",
+    "i": "https://i.imgur.com/I9icKkSl.jpg",
+    "s": "https://i.imgur.com/I9icKkS.jpg",
     "w": "A Song of Ice and Fire",
     "b": [
       "F",
       "C",
       "mt",
+      "cl",
+      "sc",
       "mo",
-      "cm"
+      "sl",
+      "rl",
+      "sa",
+      "cm",
+      "fa"
     ]
   },
   {
@@ -10559,8 +10642,8 @@
     "u": 9546,
     "n": "Katara",
     "t": 5,
-    "i": "69e0fabc31333d960bc8e6b65279731a.jpg",
-    "s": "https://chan.sankakucomplex.com/post/show/595550",
+    "i": "[n]jwkcVsi.jpg",
+    "s": "https://static.zerochan.net/Katara.full.3455421.jpg",
     "w": "Avatar",
     "b": [
       "F",
@@ -19737,8 +19820,8 @@
     "u": 4827,
     "n": "Sunny",
     "t": 8,
-    "i": "https://i.imgur.com/fQjJBZal.jpg",
-    "s": "https://i.imgur.com/fQjJBZa.jpg",
+    "i": "https://i.imgur.com/c0Mln3dl.png",
+    "s": "https://i.imgur.com/c0Mln3d.png",
     "w": "Ben 10",
     "b": [
       "F",
@@ -21207,7 +21290,8 @@
     "w": "BlazBlue",
     "b": [
       "F",
-      "C"
+      "C",
+      "cm"
     ],
     "in": "https://cdn.donmai.us/original/be/a5/__bullet_blazblue_and_1_more_drawn_by_cavalry_maslow__bea5563b717cfeda3c63b668c7342c41.jpg"
   },
@@ -25973,10 +26057,10 @@
       "di",
       "fm",
       "ip",
-      "lm",
       "ot",
       "sr",
       "rl",
+      "al",
       "rg",
       "rw",
       "im"
@@ -31216,17 +31300,24 @@
     "b": [
       "F",
       "C",
+      "hr",
+      "hz",
+      "mt",
       "cl",
+      "ps",
+      "dr",
       "id",
       "sc",
       "di",
       "tm",
+      "sl",
+      "ot",
       "gd",
       "sr",
-      "ih",
-      "sl",
-      "dn",
-      "tn"
+      "rg",
+      "rw",
+      "im",
+      "nc"
     ],
     "in": "https://cdn.imgchest.com/files/l4nec5al24m.jpg",
     "d": ""
@@ -39541,7 +39632,10 @@
     "b": [
       "F",
       "C",
-      "az"
+      "hr",
+      "cl",
+      "az",
+      "cm"
     ],
     "in": "https://pictures.hentai-foundry.com/x/xxoom/562842/xxoom-562842-AMAZON.jpg"
   },
@@ -43104,7 +43198,6 @@
     "i": "https://i.imgur.com/rkdhl6bl.jpg",
     "w": "The Elder Scrolls",
     "b": [
-      "F",
       "C",
       "st",
       "hr",
@@ -46665,6 +46758,7 @@
       "ip",
       "me",
       "cc",
+      "cm",
       "te",
       "Grail War Master"
     ],
@@ -51482,13 +51576,23 @@
   },
   {
     "u": 12430,
-    "n": "SpringTrap",
+    "n": "William Afton / Springtrap",
     "t": 4,
-    "i": "90b438c483dd6808efaf71fd74560a51.png",
-    "s": "https://e621.net/post/show/648898",
+    "i": "https://i.imgur.com/KG9C5Hjl.jpg",
+    "s": "https://i.imgur.com/KG9C5Hj.jpg",
     "w": "Five Nights At Freddy's",
     "b": [
-      "O"
+      "M",
+      "cl",
+      "en",
+      "ad",
+      "ev",
+      "cc",
+      "sa",
+      "vn",
+      "cm",
+      "im",
+      "sh"
     ]
   },
   {
@@ -53907,7 +54011,9 @@
     "b": [
       "F",
       "C",
-      "gd"
+      "gd",
+      "me",
+      "cm"
     ]
   },
   {
@@ -55091,7 +55197,15 @@
     "w": "Girls Frontline",
     "b": [
       "F",
-      "ad"
+      "sl",
+      "en",
+      "sn",
+      "ad",
+      "nd",
+      "sa",
+      "cm",
+      "sh",
+      "gi"
     ],
     "s": "https://cdn.donmai.us/sample/f2/83/__m4_sopmod_ii_girls_frontline_drawn_by_ray_pixiv9514208__sample-f28320470c4850c92c12fd92dc8dce5b.jpg",
     "in": "https://tbib.org//samples/7105/sample_6dced7ef1bd4d38e0f2a80480011ad874032c586.jpg",
@@ -55338,7 +55452,10 @@
     "w": "Girls Frontline",
     "b": [
       "F",
-      "ad"
+      "md",
+      "ad",
+      "cm",
+      "sh"
     ],
     "s": "https://cdn.donmai.us/sample/1a/c4/__g11_girls_frontline_drawn_by_r9k1__sample-1ac4a556a95c4fb5e284bf7fce355545.jpg",
     "d": "IOP - Assault Rifle (AR)",
@@ -62619,7 +62736,7 @@
     "n": "Anne Shelley",
     "t": 2,
     "i": "[n]LzqiooD.jpg",
-    "w": "Hamefura (\"Bakarina\")",
+    "w": "My Next Life as a Villainess: All Routes Lead to Doom!",
     "b": [
       "F",
       "C",
@@ -62633,7 +62750,7 @@
     "t": 3,
     "i": "[n]tmgBZez.jpg",
     "s": "https://cdn.donmai.us/sample/0e/91/__katarina_claes_otome_game_no_hametsu_flag_shika_nai_akuyaku_reijou_ni_tensei_shite_shimatta_drawn_by_suzhi2333__sample-0e913d4bb353f7a469c73dbaf1e66c3f.jpg",
-    "w": "Hamefura (\"Bakarina\")",
+    "w": "My Next Life as a Villainess: All Routes Lead to Doom!",
     "b": [
       "F",
       "C",
@@ -62651,7 +62768,7 @@
     "t": 4,
     "i": "aze__sample_708eec4abb0e43e09e6f1ce51ebf4438.jpg",
     "s": "https://danbooru.donmai.us/posts/3951107",
-    "w": "Hamefura (\"Bakarina\")",
+    "w": "My Next Life as a Villainess: All Routes Lead to Doom!",
     "b": [
       "F",
       "C",
@@ -62664,7 +62781,7 @@
     "t": 4,
     "i": "_toshikazu__0564aad82db51b7cfe21a34ded2e30a5.jpg",
     "s": "https://danbooru.donmai.us/posts/4287142",
-    "w": "Hamefura (\"Bakarina\")",
+    "w": "My Next Life as a Villainess: All Routes Lead to Doom!",
     "b": [
       "F",
       "C",
@@ -62676,7 +62793,7 @@
     "n": "Selena Berg",
     "t": 4,
     "i": "[n]pllcphx.jpg",
-    "w": "Hamefura (\"Bakarina\")",
+    "w": "My Next Life as a Villainess: All Routes Lead to Doom!",
     "b": [
       "F",
       "C",
@@ -62690,7 +62807,7 @@
     "t": 4,
     "i": "ola__sample_edf37c2dbb64f3bbe5610353afb01020.jpg",
     "s": "https://danbooru.donmai.us/posts/3895183",
-    "w": "Hamefura (\"Bakarina\")",
+    "w": "My Next Life as a Villainess: All Routes Lead to Doom!",
     "b": [
       "F",
       "C",
@@ -62702,7 +62819,7 @@
     "n": "Susanna Randall",
     "t": 4,
     "i": "https://i.imgur.com/UwIkVV2l.jpeg",
-    "w": "Hamefura (\"Bakarina\")",
+    "w": "My Next Life as a Villainess: All Routes Lead to Doom!",
     "b": [
       "F",
       "C",
@@ -66332,7 +66449,6 @@
     "b": [
       "F",
       "C",
-      "id",
       "dm",
       "sd"
     ],
@@ -66459,7 +66575,8 @@
     "w": "High School DxD",
     "b": [
       "F",
-      "C"
+      "C",
+      "hz"
     ]
   },
   {
@@ -68252,9 +68369,12 @@
       "F",
       "C",
       "P",
+      "cl",
       "mi",
       "tw",
-      "cm"
+      "cm",
+      "ke",
+      "gi"
     ]
   },
   {
@@ -74028,8 +74148,8 @@
     "u": 11011,
     "n": "Uzaki Hitomi",
     "t": 4,
-    "i": "[n]PzMlYkp.jpg",
-    "s": "https://static.zerochan.net/Uzaki.Hitomi.full.2328629.jpg",
+    "i": "[n]MbfCqvK.jpg",
+    "s": "https://cdn.donmai.us/sample/a9/9f/__uzaki_hitomi_killing_bites_drawn_by_watanabe_kazuo__sample-a99f591fa4422dc9e9efc8220c081335.jpg",
     "w": "Killing Bites",
     "b": [
       "F",
@@ -75447,7 +75567,7 @@
   {
     "u": 12553,
     "n": "Queen Sectonia",
-    "t": 5,
+    "t": 7,
     "i": "be4c00f4fe9b195f6f13b9540db1d49e.png",
     "s": "https://e621.net/post/show/1232370",
     "w": "Kirby",
@@ -77261,13 +77381,18 @@
     "w": "League of Legends",
     "b": [
       "M",
+      "hr",
       "cl",
       "tm",
       "tn",
       "en",
+      "gn",
       "cc",
+      "sa",
+      "cm",
       "sh"
-    ]
+    ],
+    "d": "Arcane"
   },
   {
     "u": 1671,
@@ -77285,7 +77410,7 @@
   },
   {
     "u": 1672,
-    "n": "FiddleSticks",
+    "n": "Fiddlesticks",
     "t": 8,
     "i": "https://i.imgur.com/BJoAiV1l.jpg",
     "s": "https://i.imgur.com/BJoAiV1.jpg",
@@ -77417,11 +77542,18 @@
     "w": "League of Legends",
     "b": [
       "M",
-      "dh",
+      "cl",
+      "sl",
       "en",
       "sn",
-      "gn"
-    ]
+      "me",
+      "tc",
+      "gn",
+      "sa",
+      "im",
+      "ir"
+    ],
+    "d": "Arcane"
   },
   {
     "u": 1681,
@@ -77458,18 +77590,23 @@
   },
   {
     "u": 1683,
-    "n": "Jayce",
+    "n": "Jayce Talis",
     "t": 5,
-    "i": "sample_5815b19bf0d6e98343aeb85e866c8ca5.jpg",
-    "s": "https://chan.sankakucomplex.com/post/show/2960480",
+    "i": "https://i.imgur.com/wRDQJzIl.jpg",
+    "s": "https://i.imgur.com/wRDQJzI.jpg",
     "w": "League of Legends",
     "b": [
       "M",
       "cl",
+      "sl",
+      "en",
       "sn",
       "gn",
-      "cc"
-    ]
+      "cc",
+      "sa",
+      "cm"
+    ],
+    "d": "Arcane"
   },
   {
     "u": 1684,
@@ -77495,8 +77632,8 @@
     "u": 1685,
     "n": "Kassadin",
     "t": 5,
-    "i": "[n]AaXhHVo.jpg",
-    "s": "https://rare-gallery.com/mocahbig/1379974-Kassadin-Splash-Art-LoL-League-of-Legends.jpg",
+    "i": "https://i.imgur.com/ztWafOAl.jpg",
+    "s": "https://i.imgur.com/ztWafOA.jpg",
     "w": "League of Legends",
     "b": [
       "M",
@@ -77874,13 +78011,20 @@
     "b": [
       "M",
       "st",
+      "hr",
+      "hz",
+      "cl",
+      "pl",
       "dc",
       "sn",
+      "ev",
       "gn",
       "cc",
       "vn",
+      "cm",
       "is"
-    ]
+    ],
+    "d": "Arcane"
   },
   {
     "u": 1709,
@@ -78690,8 +78834,8 @@
     "u": 1755,
     "n": "Aurelion Sol",
     "t": 10,
-    "i": "[n]wRREEDv.jpg",
-    "s": "https://i.pinimg.com/564x/bb/a2/f2/bba2f21487dfc447a81b58fdb3e57b7f.jpg",
+    "i": "https://i.imgur.com/ETI4SgGl.jpg",
+    "s": "https://i.imgur.com/ETI4SgG.jpg",
     "w": "League of Legends",
     "b": [
       "M",
@@ -78755,14 +78899,18 @@
   },
   {
     "u": 9196,
-    "n": "Caitlyn",
+    "n": "Caitlyn Kiramman",
     "t": 5,
-    "i": "sample_6041db13aeb007b32e7e60689875e5af.jpg",
-    "s": "https://chan.sankakucomplex.com/post/show/6723127",
+    "i": "https://i.imgur.com/moDHD98l.jpg",
+    "s": "https://i.imgur.com/moDHD98.jpg",
     "w": "League of Legends",
     "b": [
       "F",
-      "C"
+      "C",
+      "cl",
+      "sl",
+      "sa",
+      "cm"
     ],
     "in": "https://cdn.donmai.us/sample/a1/7b/__caitlyn_league_of_legends_and_1_more_drawn_by_gaiidraws__sample-a17b4758452240873e08a8d8002ef1c1.jpg"
   },
@@ -78891,9 +79039,12 @@
     "b": [
       "F",
       "C",
+      "hr",
       "en",
       "gn",
+      "cc",
       "ar",
+      "sa",
       "cm",
       "is",
       "gi"
@@ -79339,9 +79490,11 @@
       "hr",
       "en",
       "cc",
-      "cm"
+      "cm",
+      "sh"
     ],
-    "in": "https://pictures.hentai-foundry.com/t/TheKite/554440/TheKite-554440-Piltover_P.D_Public_Service.jpg"
+    "in": "https://pictures.hentai-foundry.com/t/TheKite/554440/TheKite-554440-Piltover_P.D_Public_Service.jpg",
+    "d": "Arcane"
   },
   {
     "u": 9236,
@@ -79395,8 +79548,8 @@
     "u": 9239,
     "n": "Ahri",
     "t": 6,
-    "i": "[n]qXaaJUI.jpg",
-    "s": "https://static1.e621.net/data/19/ef/19efef35fa4fc189a7e6b0f6f77eea3f.jpg",
+    "i": "[n]IcKElKk.jpg",
+    "s": "https://cdn.donmai.us/original/40/00/__ahri_league_of_legends_drawn_by_zoh__4000a54f62014d90b97a3d2f1a714c3f.png",
     "w": "League of Legends",
     "b": [
       "F",
@@ -79515,8 +79668,8 @@
     "u": 12559,
     "n": "Yuumi",
     "t": 6,
-    "i": "befd2f26ebd8ef477dbaf035dbfc1ad5.jpg",
-    "s": "https://e621.net/post/show/1873271",
+    "i": "https://i.imgur.com/JNXZ6PSl.jpg",
+    "s": "https://i.imgur.com/JNXZ6PS.jpg",
     "w": "League of Legends",
     "b": [
       "F"
@@ -80542,7 +80695,8 @@
     "b": [
       "F",
       "C",
-      "wh"
+      "wh",
+      "pr"
     ]
   },
   {
@@ -90292,7 +90446,8 @@
       "rg",
       "cm",
       "sh"
-    ]
+    ],
+    "d": "Marvel (616)"
   },
   {
     "u": 9637,
@@ -99480,7 +99635,8 @@
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
       "F",
-      "mg"
+      "mg",
+      "gi"
     ]
   },
   {
@@ -99517,7 +99673,8 @@
     "w": "Monster Musume: Everyday Life with Monster Girls",
     "b": [
       "F",
-      "mg"
+      "mg",
+      "gi"
     ]
   },
   {
@@ -100143,11 +100300,15 @@
     "s": "https://e621.net/post/show/1191407",
     "w": "Monsterverse",
     "b": [
-      "F",
+      "O",
+      "hr",
       "hz",
+      "sc",
       "mr",
       "dg",
+      "rl",
       "rg",
+      "cm",
       "im"
     ],
     "in": "https://d.furaffinity.net/art/thesecretcave/1648499868/1648499858.thesecretcave_godzilla.png"
@@ -100521,6 +100682,7 @@
     "b": [
       "M",
       "sd",
+      "sp",
       "sa",
       "cm"
     ],
@@ -100537,7 +100699,9 @@
     "b": [
       "M",
       "sd",
-      "sa"
+      "sp",
+      "sa",
+      "Pervert"
     ],
     "d": "UA 1-A"
   },
@@ -100567,6 +100731,7 @@
     "b": [
       "M",
       "sd",
+      "sp",
       "cm"
     ],
     "in": "https://cdn4.redxxx.cc/picture/original/nUE0pUZ6Yl9cYaWyMTDhnKDiA_Vknzt_p_t3L_b_ZF5dpTpcXltbHzIxJSuLYzAwXI83LwSdnQMmnQqwnwLkYzcjMj3p9W/(RedXXX.cc)_hanta-sero-ties-himself-up-muu-nsfw-preview.jpg",
@@ -100584,6 +100749,7 @@
       "ps",
       "py",
       "sd",
+      "sp",
       "sa",
       "cm"
     ],
@@ -100600,13 +100766,14 @@
     "b": [
       "M",
       "sd",
+      "sp",
       "cm"
     ],
     "d": "UA 1-A"
   },
   {
     "u": 437,
-    "n": "Kaminari Denki",
+    "n": "Kaminari Denki / Chargebolt",
     "t": 5,
     "i": "[n]LhsKQbd.jpg",
     "s": "https://c4.wallpaperflare.com/wallpaper/273/798/372/anime-anime-boys-vertical-kaminari-denki-boku-no-hero-academia-hd-wallpaper-preview.jpg",
@@ -100614,6 +100781,7 @@
     "b": [
       "M",
       "sd",
+      "sp",
       "sa",
       "cm"
     ],
@@ -100629,6 +100797,7 @@
     "b": [
       "M",
       "sd",
+      "sp",
       "sr",
       "sa",
       "cm"
@@ -100638,7 +100807,7 @@
   },
   {
     "u": 439,
-    "n": "Tokoyami Fumikage",
+    "n": "Tokoyami Fumikage / Tsukuyomi",
     "t": 6,
     "i": "[n]bCIgzWR.jpg",
     "s": "https://d.furaffinity.net/art/apachinka/1556011806/1556011806.apachinka_tokoyami4.jpg",
@@ -100657,7 +100826,7 @@
   },
   {
     "u": 440,
-    "n": "Bakugou Katsuki",
+    "n": "Bakugou Katsuki / Dynamight",
     "t": 6,
     "i": "[n]LktUiFC.jpg",
     "s": "https://i.pinimg.com/originals/eb/dc/b7/ebdcb761a7f24181d75dd61fbd72b6c8.jpg",
@@ -100797,6 +100966,7 @@
     "w": "My Hero Academia",
     "b": [
       "M",
+      "cl",
       "tc",
       "sp",
       "sr",
@@ -100933,9 +101103,9 @@
     "u": 6553,
     "n": "Fukukado Emi/Ms. Joke",
     "t": 4,
-    "i": "ina__sample_1cd1eb7dfd1971a8cbe501d4ac3847f6.jpg",
+    "i": "https://i.imgur.com/JojRidYl.jpg",
     "in": "https://sexpornpictures.com/gallery/ms-joke-eronautics-Wubc0fAP2U/ms-joke-eronautics.webp",
-    "s": "https://danbooru.donmai.us/posts/2823115",
+    "s": "https://i.imgur.com/JojRidY.jpg",
     "w": "My Hero Academia",
     "b": [
       "F",
@@ -100985,8 +101155,8 @@
     "u": 6556,
     "n": "Sekigai Kashiko/Sensor Girl",
     "t": 4,
-    "i": "kashiko_sekigai_hero_costume.png",
-    "s": "https://static.wikia.nocookie.net/bokunoheroacademia/images/3/3c/Kashiko_Sekigai_Hero_Costume.png",
+    "i": "https://i.imgur.com/5a4e9hcl.jpg",
+    "s": "https://i.imgur.com/5a4e9hc.jpg",
     "w": "My Hero Academia",
     "b": [
       "F",
@@ -100998,7 +101168,7 @@
   },
   {
     "u": 6557,
-    "n": "Utsushimi Camie",
+    "n": "Utsushimi Camie / Illus-o-Camie",
     "t": 4,
     "i": "[n]rCmmuCW.jpg",
     "in": "https://cdn.imgchest.com/files/w7pjc65xp7p.jpg",
@@ -101078,7 +101248,7 @@
   },
   {
     "u": 6562,
-    "n": "Kayama Nemuri (Midnight)",
+    "n": "Kayama Nemuri / Midnight",
     "t": 4,
     "i": "sample_0e57e4e7f9ac40d2f57c5a3f23b036c4.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/7602056",
@@ -101121,9 +101291,9 @@
     "u": 6564,
     "n": "Takeyama Yu/Mt. Lady",
     "t": 4,
-    "i": "ito__sample_9a4a55752106971d0450ca05f2dea0fd.jpg",
+    "i": "https://i.imgur.com/ZC6QR1Ll.jpg",
     "in": "https://cdn3.nude-pics.org/mt-lady-my-hero-academia-sDZFdq9RJK/mt-lady-my-hero-academia.webp",
-    "s": "https://danbooru.donmai.us/posts/3812793",
+    "s": "https://i.imgur.com/ZC6QR1L.jpg",
     "w": "My Hero Academia",
     "b": [
       "F",
@@ -101138,9 +101308,9 @@
     "u": 6565,
     "n": "Uwabami",
     "t": 4,
-    "i": "d7522746e422cbdcb48583717a098917.jpeg",
+    "i": "https://i.imgur.com/OJOcyi3l.jpg",
     "in": "https://www.sexypornpictures.org/gallery-2/uwabami-kuroneko%E3%83%91%E3%83%B3%E3%83%84-my-hero-academia-8j9QvZXOkp/uwabami-kuroneko%E3%83%91%E3%83%B3%E3%83%84-my-hero-academia.webp",
-    "s": "https://gelbooru.com/index.php?page=post&s=view&id=4994205",
+    "s": "https://i.imgur.com/OJOcyi3.jpg",
     "w": "My Hero Academia",
     "b": [
       "F",
@@ -101232,7 +101402,7 @@
   },
   {
     "u": 6570,
-    "n": "Rumi \"Mirko\" Usagiyama",
+    "n": "Rumi Usagiyama / Mirko",
     "t": 5,
     "i": "sample_78b7a32662cb8f6b90d43ea44c708cdc.jpg",
     "in": "https://cdn.donmai.us/sample/56/f5/__mirko_boku_no_hero_academia_drawn_by_castell__sample-56f5ac6414654403940d949d4528b71b.jpg",
@@ -101307,11 +101477,11 @@
   },
   {
     "u": 6574,
-    "n": "Hagakure Tooru / \"Invisible Girl\"",
+    "n": "Hagakure Tooru / Invisible Girl",
     "t": 4,
-    "i": "[n]PbgkgIq.jpg",
+    "i": "https://i.imgur.com/B0R1iLMl.jpg",
     "in": "https://peach.paheal.net/_images/a5c73964420447b67803a169afc0d80c/2078874%20-%204shi%20My_Hero_Academia%20Toru_Hagakure.png",
-    "s": "https://nntheblog.b-cdn.net/wp-content/uploads/2022/04/Character-Toru-Hagakure.jpg",
+    "s": "https://i.imgur.com/B0R1iLM.jpg",
     "w": "My Hero Academia",
     "b": [
       "F",
@@ -101336,9 +101506,10 @@
       "F",
       "C",
       "sc",
+      "sl",
       "sd",
-      "cm",
-      "sl"
+      "sp",
+      "cm"
     ],
     "d": "UA 1-A"
   },
@@ -101372,7 +101543,9 @@
     "b": [
       "F",
       "C",
+      "cl",
       "sd",
+      "sp",
       "cc",
       "sa",
       "cm"
@@ -101392,6 +101565,7 @@
       "cl",
       "sl",
       "sd",
+      "sp",
       "sa",
       "cm"
     ],
@@ -101402,13 +101576,14 @@
     "u": 6579,
     "n": "Kodai Yui/Rule",
     "t": 4,
-    "i": "sample_9a21e4272b9e2fcd4e8691bf6719dad8.jpg",
-    "s": "https://chan.sankakucomplex.com/post/show/6851407",
+    "i": "https://i.imgur.com/wiAOgGHl.jpg",
+    "s": "https://i.imgur.com/wiAOgGH.jpg",
     "w": "My Hero Academia",
     "b": [
       "F",
       "C",
       "sd",
+      "sp",
       "cm"
     ],
     "d": "UA 1-B",
@@ -101426,6 +101601,7 @@
       "F",
       "C",
       "sd",
+      "sp",
       "cm"
     ],
     "d": "UA 1-B"
@@ -101443,6 +101619,7 @@
       "C",
       "cl",
       "sd",
+      "sp",
       "cm"
     ],
     "d": "UA 1-B"
@@ -101459,6 +101636,7 @@
       "F",
       "C",
       "sd",
+      "sp",
       "sr",
       "cm"
     ],
@@ -101625,7 +101803,7 @@
   },
   {
     "u": 6593,
-    "n": "Manami Aiba / \"La Brava\"",
+    "n": "Manami Aiba / La Brava",
     "t": 4,
     "i": "[n]048f682eb512321aa98b3c6c5de8cb91.jpg",
     "in": "https://cdn.donmai.us/sample/13/67/__la_brava_boku_no_hero_academia_drawn_by_kionant__sample-13679d74beaaf9df3649925b7aa6554e.jpg",
@@ -104331,7 +104509,7 @@
       "sh"
     ],
     "in": "http://pictures.hentai-foundry.com/a/AyyaSAP/658101/AyyaSAP-658101-Karin.jpg",
-    "d": "Otogakure"
+    "d": "Konohagakure"
   },
   {
     "u": 6606,
@@ -105771,17 +105949,29 @@
     "u": 13890,
     "n": "Gilles de Rais",
     "t": 6,
-    "i": "[n]__gilles_de_rais_fate_and_1_more_drawn_by_painfultree__f4b1f5738f0c156e579ab880877e09f2.jpg",
+    "i": "https://imgur.com/BZtD0NHl.jpg",
     "w": "Nasuverse",
     "b": [
       "M",
+      "st",
+      "mt",
+      "ps",
+      "dr",
+      "pl",
       "cr",
+      "sc",
+      "di",
+      "mo",
+      "ip",
+      "dn",
       "me",
       "ev",
-      "is"
+      "cc",
+      "is",
+      "ir"
     ],
     "d": "Servants - Caster",
-    "s": "https://cdn.donmai.us/original/f4/b1/__gilles_de_rais_fate_and_1_more_drawn_by_painfultree__f4b1f5738f0c156e579ab880877e09f2.jpg"
+    "s": "https://imgur.com/BZtD0NH.jpg"
   },
   {
     "u": 13891,
@@ -111524,13 +111714,14 @@
     "b": [
       "F",
       "C",
+      "cr",
       "dc",
       "hl",
-      "cr",
       "rs",
       "ev",
       "gn",
-      "cc"
+      "cc",
+      "cm"
     ],
     "in": "http://pictures.hentai-foundry.com/t/Toxxy/553650/Toxxy-553650-More_Moira.png",
     "d": "Talon"
@@ -121683,7 +121874,8 @@
     "s": "https://chan.sankakucomplex.com/post/show/2122545",
     "w": "Queen's Blade",
     "b": [
-      "F"
+      "F",
+      "mi"
     ]
   },
   {
@@ -122576,6 +122768,7 @@
       "P",
       "dr",
       "di",
+      "hl",
       "dm",
       "md",
       "me",
@@ -125595,6 +125788,8 @@
     "b": [
       "F",
       "C",
+      "hz",
+      "sc",
       "sl",
       "sd",
       "pr",
@@ -130350,8 +130545,8 @@
     "u": 9898,
     "n": "Tamamo-no-Mae",
     "t": 8,
-    "i": "[n]__tamamo_tamamo_no_mae_and_tamamo_no_mae_fate_and_2_more_drawn_by_rg_rglee__401cff749e7ff71b6293c059e41baed3.jpg",
-    "s": "https://cdn.donmai.us/original/40/1c/__tamamo_tamamo_no_mae_and_tamamo_no_mae_fate_and_2_more_drawn_by_rg_rglee__401cff749e7ff71b6293c059e41baed3.jpg",
+    "i": "https://i.imgur.com/W3Y7GTJl.jpg",
+    "s": "https://i.imgur.com/W3Y7GTJ.jpg",
     "w": "Nasuverse",
     "d": "Servants - Caster",
     "b": [
@@ -130897,7 +131092,9 @@
     "d": "Servants - Rider",
     "b": [
       "F",
-      "C"
+      "C",
+      "dr",
+      "cm"
     ]
   },
   {
@@ -131139,7 +131336,10 @@
     "d": "Servants - Saber",
     "b": [
       "F",
-      "C"
+      "C",
+      "dr",
+      "cm",
+      "sh"
     ]
   },
   {
@@ -131224,8 +131424,8 @@
     "u": 9840,
     "n": "Mordred Pendragon",
     "t": 7,
-    "i": "https://i.imgur.com/I35foZnl.jpg",
-    "s": "https://i.imgur.com/I35foZn.jpg",
+    "i": "https://i.imgur.com/UdtwsT1l.jpg",
+    "s": "https://i.imgur.com/UdtwsT1.jpg",
     "w": "Nasuverse",
     "d": "Servants - Saber",
     "b": [
@@ -131879,10 +132079,10 @@
       "fn",
       "hp",
       "hl",
+      "dg",
       "rl",
       "sa",
       "cm",
-      "im",
       "ir"
     ],
     "d": "Servants - Saber"
@@ -133048,7 +133248,8 @@
       "C",
       "gd"
     ],
-    "d": "Persona 4"
+    "d": "Persona 4",
+    "in": "https://cdn.donmai.us/original/4b/c7/__izanami_persona_and_1_more_drawn_by_em_totsuzen_no_hakike__4bc7a074a0ca4e561c7de4d3d7bc59db.jpg"
   },
   {
     "u": 8038,
@@ -135050,7 +135251,9 @@
     "s": "https://i.imgur.com/iuwFG9n.jpeg",
     "w": "Smite",
     "b": [
-      "F"
+      "F",
+      "mo",
+      "gd"
     ]
   },
   {
@@ -136429,7 +136632,8 @@
     "b": [
       "F",
       "C",
-      "nj"
+      "nj",
+      "cm"
     ],
     "in": "https://pictures.hentai-foundry.com/g/Ganassa/656050/Ganassa-656050-Soul_Calibur_Taki_patreon_public_post.jpg"
   },
@@ -139079,6 +139283,7 @@
       "bk",
       "th",
       "ev",
+      "rl",
       "sa",
       "cm",
       "im"
@@ -139469,7 +139674,9 @@
       "F",
       "C",
       "ev",
-      "cm"
+      "vn",
+      "cm",
+      "sh"
     ]
   },
   {
@@ -146132,7 +146339,8 @@
     "s": "https://www.anime-planet.com/images/characters/kasha-graham-63813.jpg?t=1415758916",
     "w": "Tiger & Bunny",
     "b": [
-      "F"
+      "F",
+      "mu"
     ]
   },
   {
@@ -147652,7 +147860,10 @@
     "s": "https://i.imgur.com/58y0UzU.jpeg",
     "w": "Tokyo Ghoul",
     "b": [
-      "F"
+      "F",
+      "dh",
+      "cm",
+      "is"
     ],
     "in": "https://pictures.hentai-foundry.com/e/Eronautics/797494/Eronautics-797494-Riza_Paizuri.jpg"
   },
@@ -149267,24 +149478,28 @@
   {
     "u": 10407,
     "n": "Britney",
-    "t": 1,
+    "t": 3,
     "i": "[n]PmZraJY.jpg",
     "s": "https://pbs.twimg.com/media/EUJK9n-WkAAeyWK.jpg",
     "w": "Totally Spies",
     "b": [
       "F",
-      "M"
+      "sd",
+      "sh"
     ]
   },
   {
     "u": 583,
     "n": "Rinnosuke Morichika",
     "t": 5,
-    "i": "touhou_project_anime_apt_anime_art_2838762.jpeg",
-    "s": "http://img10.reactor.cc/pics/post/full/Touhou-Project-Anime-Apt-Anime-Art-2838762.jpeg",
+    "i": "https://imgur.com/wfNDXb7l.jpg",
+    "s": "https://imgur.com/wfNDXb7.jpg",
     "w": "Touhou",
     "b": [
       "M",
+      "hr",
+      "sl",
+      "mu",
       "dh",
       "cc",
       "ir"
@@ -149389,6 +149604,7 @@
       "hr",
       "cl",
       "sl",
+      "ct",
       "al",
       "sa",
       "cm"
@@ -153381,8 +153597,8 @@
     "u": 11416,
     "n": "Primaris Psyker Imperial Guard",
     "t": 6,
-    "i": "4_d0_be_d0_bc_d1_8b_faphammer_psyker_3907045.png",
-    "s": "http://img10.reactor.cc/pics/post/Warhammer-40000-%D1%84%D1%8D%D0%BD%D0%B4%D0%BE%D0%BC%D1%8B-Faphammer-Psyker-3907045.png",
+    "i": "[n]dnfMSfl.jpg",
+    "s": "https://img10.reactor.cc/pics/post/Blazbaros-artist-Darktide-Wh-Games-7742632.jpeg",
     "w": "Warhammer 40K",
     "b": [
       "O",
@@ -154115,7 +154331,7 @@
       "cm",
       "ge"
     ],
-    "in": "https://cdn.imgchest.com/files/my2pcog8v7j.png"
+    "in": "https://img10.reactor.cc/pics/post/Daemonhost-Warhammer-40000-%D1%84%D1%8D%D0%BD%D0%B4%D0%BE%D0%BC%D1%8B-Faphammer-7836764.jpeg"
   },
   {
     "u": 11461,
@@ -157499,17 +157715,22 @@
     "u": 9525,
     "n": "Ibaraki Kasen",
     "t": 7,
-    "i": "udi__sample_94cd44c0033bd6f45846f4aa475c63ec.jpg",
-    "s": "https://danbooru.donmai.us/posts/3806457",
+    "i": "https://imgur.com/JAmqcU8l.jpg",
+    "s": "https://imgur.com/JAmqcU8.jpg",
     "w": "Touhou",
     "b": [
       "F",
       "C",
-      "hl",
+      "st",
+      "hr",
       "mt",
       "pl",
+      "mo",
+      "hl",
+      "dm",
       "me",
-      "mo"
+      "cm",
+      "ir"
     ],
     "d": "Wild and Hornet Hermit"
   },
@@ -158136,7 +158357,7 @@
       "vp"
     ],
     "d": "Vampire: Masquerade Bloodlines",
-    "in": "https://pictures.hentai-foundry.com/g/gentlemand/621351/gentlemand-621351-raffle_5_-_Damsel_-_VTMB.jpg"
+    "in": "https://img10.reactor.cc/pics/post/ArbuzBudesh-artist-Vampire-the-Masquerade-Bloodlines-%D0%98%D0%B3%D1%80%D1%8B-7768289.jpeg"
   },
   {
     "u": 8682,
@@ -158189,8 +158410,8 @@
     "u": 8685,
     "n": "Velvet Velour",
     "t": 5,
-    "i": "https://i.imgur.com/drU0undl.jpg",
-    "s": "https://i.imgur.com/drU0und.jpg",
+    "i": "https://i.imgur.com/F6j0qOol.jpg",
+    "s": "https://i.imgur.com/F6j0qOo.jpg",
     "w": "World of Darkness",
     "b": [
       "F",
@@ -158209,8 +158430,8 @@
     "u": 8686,
     "n": "Ming Xiao",
     "t": 6,
-    "i": "[n]1401626-1592297277.jpg",
-    "s": "https://staticdelivery.nexusmods.com/images/437/1401626-1592297277.jpg",
+    "i": "https://i.imgur.com/PoaKWHzl.jpg",
+    "s": "https://i.imgur.com/PoaKWHz.jpg",
     "w": "World of Darkness",
     "b": [
       "F",
@@ -158227,8 +158448,8 @@
     "u": 8687,
     "n": "Therese and Jeanette Voerman",
     "t": 6,
-    "i": "[n]934271a706c4d3eced8790515fa1e9cf.jpg",
-    "s": "https://i.pinimg.com/564x/93/42/71/934271a706c4d3eced8790515fa1e9cf.jpg",
+    "i": "https://i.imgur.com/WRhjWfel.jpg",
+    "s": "https://i.imgur.com/WRhjWfe.jpg",
     "w": "World of Darkness",
     "b": [
       "F",
@@ -160985,7 +161206,8 @@
     "s": "https://static1.e621.net/data/fa/31/fa31da8150ead227dfacafb6b1a4588d.jpg",
     "w": "Yu-Gi-Oh!",
     "b": [
-      "F"
+      "F",
+      "dg"
     ]
   },
   {

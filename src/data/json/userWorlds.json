@@ -1065,12 +1065,6 @@
     "uid": "C6HNLe"
   },
   {
-    "worldName": "Toril/Forgotten Realms",
-    "rating": 7,
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992408457401618452/EQTo0UxVUAA0784.jpg",
-    "uid": "XYkkd2"
-  },
-  {
     "worldName": "Andromeda",
     "rating": 8,
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/992752204945567764/Andromedaseriescrew.webp",
@@ -5578,7 +5572,7 @@
   {
     "worldName": "Komi Can't Communicate",
     "rating": 1,
-    "image": "https://moviespotify.com/wp-content/uploads/2021/07/Komi-Cant-Communicate-Season-1-Release-date.jpg",
+    "image": "https://mobimg.b-cdn.net/v3/fetch/a4/a400ef6ebb9023e4cc62ce750f9f596e.jpeg",
     "uid": "JdvQkM"
   },
   {
@@ -5787,7 +5781,7 @@
   {
     "worldName": "Assassin's Creed",
     "rating": 4,
-    "image": "https://www.throneofgeeks.com/wp-content/uploads/2022/09/AC.webp",
+    "image": "https://i.pinimg.com/originals/6d/95/6e/6d956e32295e062318fae098c9c0195e.jpg",
     "condition": [
       {
         "name": "AC Origins",
@@ -6104,7 +6098,7 @@
     "uid": "PqlH8j"
   },
   {
-    "worldName": "Kissxsis",
+    "worldName": "KissxSis",
     "rating": 1,
     "image": "https://i.imgur.com/77YPbOY.png",
     "uid": "kawUxv"
@@ -6132,7 +6126,7 @@
     "uid": "pCytOk"
   },
   {
-    "worldName": "Eiyuu Senki - The World Conquest",
+    "worldName": "Eiyuu Senki: The World Conquest",
     "rating": 4,
     "image": "https://cdn.donmai.us/sample/17/67/__king_arthur_himiko_napoleon_bonaparte_tutankhamun_abe_no_seimei_and_7_more_eiyuu_senki_and_1_more_drawn_by_ygcn__sample-17672ff76097b51e21a846a6b0e128ad.jpg",
     "uid": "WaMufH"
@@ -6382,26 +6376,7 @@
     "image": "https://i.imgur.com/zSNJ7j2l.jpg",
     "uid": "KoRlDJ"
   },
-  {
-    "worldName": "Prince of Persia",
-    "rating": 4,
-    "image": "https://asset.vg247.com/Prince-of-Persia-Remake-Key-Art-1-09102020.jpg/BROK/resize/1920x1920%3E/format/jpg/quality/80/Prince-of-Persia-Remake-Key-Art-1-09102020.jpg",
-    "condition": [
-      {
-        "rating": 4,
-        "name": "Original Trilogy"
-      },
-      {
-        "rating": 5,
-        "name": "Reboot(2008)"
-      },
-      {
-        "name": "Sands of Time Trilogy",
-        "rating": 7
-      }
-    ],
-    "uid": "L4nqmI"
-  },
+  {"uid":"DHSWvw","worldName":"Prince of Persia","rating":4,"image":"https://asset.vg247.com/Prince-of-Persia-Remake-Key-Art-1-09102020.jpg/BROK/resize/1920x1920%3E/format/jpg/quality/80/Prince-of-Persia-Remake-Key-Art-1-09102020.jpg","condition":[{"rating":4,"name":"'1989' Trilogy"},{"rating":5,"name":"Reboot(2008)"},{"name":"'The Sands of Time' Trilogy","rating":7}]},
   {
     "worldName": "BloodRayne",
     "rating": 5,
@@ -6555,5 +6530,8 @@
   {"uid":"CQBAsd","worldName":"Atelier Series","rating":5,"image":"https://cdn.donmai.us/original/07/58/0758f8c856d68ccb9d715aa757e4677e.jpg"},
   {"uid":"olsjaN","worldName":"Dungeons & Dragons","rating":9,"image":"https://i.imgur.com/u6pxUgX.jpeg","condition":[{"name":"Dark Sun","rating":9},{"name":"Baldurs Gate","rating":7},{"name":"Exandria (Critical Role)","rating":7},{"name":"Mythic Odysseys of Theros","rating":7},{"name":"Eberron","rating":7},{"name":"Forgotten Realms","rating":8}]},
   {"uid":"qmeTPL","worldName":"Ready Player One ","rating":4,"image":"https://ichef.bbci.co.uk/images/ic/1200x675/p0dcd5pr.jpg"},
-  {"uid":"HJGctg","worldName":"Shantae","rating":5,"image":"https://media.vandal.net/m/22246/shantae-halfgenie-hero-20161220102532_11.jpg"}
+  {"uid":"HJGctg","worldName":"Shantae","rating":5,"image":"https://media.vandal.net/m/22246/shantae-halfgenie-hero-20161220102532_11.jpg"},
+  {"uid":"CArvMe","worldName":"Dragons Rioting","rating":5,"image":"https://i.ytimg.com/vi/4DU-JfDEB4k/maxresdefault.jpg"},
+  {"uid":"oQNRPT","worldName":"My Next Life as a Villainess: All Routes Lead to Doom!","rating":3,"image":"https://images.fanart.tv/fanart/my-next-life-as-a-villainess-all-routes-lead-to-doom-617683c88f4a5.jpg","additional":"","condition":[{"name":"On the Verge of Doom - Timeline","rating":4},{"name":"Fortune Lover - Timeline","rating":5}]},
+  {"uid":"fmiURf","worldName":"Tomo-chan is a Girl!","rating":1,"image":"https://i0.wp.com/ninjinanime.com/wp-content/uploads/2023/01/Tomo-chan-wa-Onnanoko-05.png"}
 ]

@@ -142,6 +142,21 @@ DLCgenericPerks.push({
   `,
 })
 
+DLCgenericPerks.push({
+  uid: 'soiFT',
+  dlc: 'Despin',
+  title: 'Immutable Self',
+  image: 'https://luke-15.org/wp-content/uploads/2013/02/closedminded.jpg',
+  cost: 10,
+  complex: 'target',
+  max: 10,
+  desc: 'Whether it’s from Substitute, Deep Weave, mind reading, consumption, or any other company-provided or third-party methods, ending up with multiple voices in your head is actually not uncommon for Contractors. The sanctity of your psyche is now guaranteed, and you will always remain yourself. No personality bleed will ever occur unless you intentionally incorporate it. If you have Stress Defense, you also get trauma reduction, such that even if you have perfect memory, you can absorb the most tortured of beings without a bother. Finally, you now keep your original mundane knowledge and skills through use of Power Swap. Once you’ve purchased this perk ten times, it will apply to every member of your retinue.',
+  category: 'Generic',
+  whitelist: [
+    'Mind Defense',
+  ],
+})
+
 // Misc DLC Perks
 
 export const DLCperks: DLCPerk[] = []

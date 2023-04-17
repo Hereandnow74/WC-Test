@@ -28,7 +28,7 @@
 
 <script lang="ts" setup>
 import { findIndex } from 'lodash-es'
-import { PLACEHOLDER_IMAGE } from '~/data/constants'
+import { PLACEHOLDER_IMAGE, WORLD_RATINGS } from '~/data/constants'
 import { useStore } from '~/store/store'
 
 import { chooseDefense, chooseTalent, defenseAvailable, intensityAvailable, lazyLoadSingleImg, talentAvailable } from '~/logic/'
@@ -49,7 +49,7 @@ const props = defineProps({
   },
 })
 
-const { flags, talentPerks, defensePerks, settings } = useStore()
+const { flags, talentPerks, defensePerks, settings, baseBudget, startingWorld } = useStore()
 const emit = defineEmits(['chooseIntensity'])
 
 const perkImg = ref<HTMLImageElement | null>(null)
@@ -65,7 +65,7 @@ function allDefenses(cost = false) {
   defenses.forEach((def) => {
     if (defenseAvailable(def)) {
       const ind = findIndex(defensePerks.value, { title: def.title })
-      if (ind === -1 || cost) chooseDefense(def, { title: def?.title, cost: cost ? def?.cost : 0 * 2, count: 2 })
+      if (ind === -1 || cost) chooseDefense(def, { title: def?.title, cost: cost ? def?.cost * 2 : 0, count: 2 })
     }
   })
 }

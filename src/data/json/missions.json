@@ -1,12 +1,314 @@
 [
   
   {
+    "reward": "Instant Unlocking of the next World.",
+    "image": "https://thegamepost.com/wp-content/uploads/2020/03/prince-of-persia-trilogy-remake-4.jpg",
+    "author": "Zaralann",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Run From Time, Escape Destiny, Each and Ever Grain...",
+    "loca": "Prince of Persia",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "Beginning of 'Prince of Persia: The Forgotten Sands'.",
+        "type": "Other",
+        "value": "'Prince of Persia: The Sands of Time' Completed."
+      },
+      {
+        "reward": "Beginning of 'Prince of Persia: Warrior Within'.",
+        "type": "Other",
+        "value": "'Prince of Persia: The Forgotten Sands' Completed."
+      },
+      {
+        "reward": "Beginning of 'Prince of Persia: The Two Thrones'.",
+        "type": "Other",
+        "value": "'Prince of Persia: Warrior Within' Completed."
+      },
+      {
+        "reward": "New World Unlocked.",
+        "type": "Other",
+        "value": "'Prince of Persia: The Two Thrones' Completed."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You will enter 'Prince of Persia'[DR7] and will take Prince's place, all logical/continuation issues would be adjusted."
+      },
+      {
+        "value": "You must purchase [Added Potential](5C) for this World."
+      },
+      {
+        "value": "You will arrive into 'Prince of Persia: The Sands of Time' at the start of the Game."
+      },
+      {
+        "value": "To not exceed the time of the Mission the Events would follow the sequences presented within the Game, for the durations of the Mission the 'Timeskips' within the Game would be provided by the Company."
+      },
+      {
+        "value": "Time is Fluid within the World for the duration of the Mission, stepping out of it either for your Pocket Dimension or another World would put the Events on 'Pause' so using such methods to avoid Events or obstacles would not work."
+      },
+      {
+        "value": "Time is Fluid within other Worlds for the duration of the Mission, putting the Events on 'Pause' while you're within this World during the Mission, it does not affect the Pocket Dimension."
+      },
+      {
+        "value": "A limited mount of 'Game Logic' is provided by the Company, certain Mechanics within the World would function in similar way as they did in the Game."
+      },
+      {
+        "value": "Progress of unlocking of the new World would be frozen for the duration of the Mission, finishing it would instantly unlock the nexy World if Travel Perks are pruchased."
+      },
+      {
+        "value": "Binding/Selling a Boss/Mini-Boss counts as Defeating them, same for 'Mini-Games' against others."
+      }
+    ],
+    "budget": 5,
+    "desc": "Time marches on, it's merciless and inevitable no matter how much many would desire for it not to be so. But some refused to accept such a fact, they refused to accept the mediocre role they were Destined to play as one who is carried down on the current of the flow of Time. Prince was one of them, one of the few who desired to change the things that his wrote into the Grand Tapestry of History and move against the flow of Time itself to do it! Do you have the same ambition, O' Contractor? Your Mission here is to walk down the path of Prince, the footsteps that you would need to trace were carved into History but worry not, the Company would put you on the right path.",
+    "uid": "zUssb"
+  },
+  {
+    "reward": 50,
+    "image": "https://media-rockstargames-com.akamaized.net/tina-uploads/posts/o34o4o4k3342a8/2dee9e88ff3440a3d651588a459323e40e7e7dba.jpg",
+    "author": "Zaralann",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "For Want of a Cure...",
+    "loca": "Red Dead Redemption",
+    "lewd": false,
+    "scope": "Quick",
+    "objectives": [
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Arthur Morgan would be unaware of you curing him, not the results but the process performed on him. No traces must be left behind for him to notice."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You will enter 'Red Dead Redemption'[DR3] one hour after the endings of the 'Money Lending & Other Sins III' Mission."
+      },
+      {
+        "value": "You cannot affect the Events of Canon or any possible Event that Arthur encounters before the end of the Mission."
+      },
+      {
+        "value": "Arthur is immune to Binding, Lures and Mind Control of all forms."
+      },
+      {
+        "value": "The Mission ends upon him being cured would change an outcome of events of a Mission."
+      }
+    ],
+    "budget": 0,
+    "desc": "Sometimes there are events that make things go worse, no matter how insignificant they are or how much they seem to not carry consequences. We want you to remove the consequences of such an event, we want you to cure Arthur Morgan of Tuberculosis and see how it would affect his ultimate fate.",
+    "uid": "iFjaP"
+  },
+  {
+    "reward": "All monster companions from the monster hunter series that appears in Monster Hunter World.",
+    "image": "https://i.pinimg.com/564x/de/2f/73/de2f739f0b31b7f2e2bdcf934865d62f.jpg",
+    "author": "Shadowfire626",
+    "rewardType": "Companions",
+    "source": "",
+    "title": "The Rising Sapphire Star",
+    "loca": "Monster Hunter",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": 250,
+        "type": "Credits",
+        "value": "Use Only Charge Blades (Yes I'm Biased)"
+      },
+      {
+        "reward": 1,
+        "type": "IMG Tickets",
+        "value": "Use only a single charge blade upgrade path."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Kill one of each monster in the New World. Solo."
+      }
+    ],
+    "budget": 0,
+    "desc": "There are hunters, and then there are HUNTERS. Those who stand atop the peak of the hunters guild and serve as paragons of might, the G Ranks. Your duty is simple in word but grand in scope: You will take the place of the Sapphire Star, the protagonist of Monster Hunter World, and you will complete their journey, with one catch: You will have no defenses, no heritages, and no help. You will only have the gear you make from those you slay, and two talents: Martial and Athletic. You will be unable to capture any waifus.\n\nShould you succeed and become the Research Commissions Sapphire Star, you will gain the ultimate reward: A waifu of every monster you slay.",
+    "uid": "brQmF"
+  },
+  {
+    "reward": 2,
+    "image": "",
+    "author": "Heisen",
+    "rewardType": "IMG Tickets",
+    "source": "meow",
+    "title": "Become the strongest",
+    "loca": "One Punch Man",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "Saitama",
+        "type": "Companions",
+        "value": "Defeat Saitama in your first bout"
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Be the number 1 hero 6 months after joining HA"
+      },
+      {
+        "reward": 200,
+        "type": "Credits",
+        "value": "Be the number 1 hero 3 months after joining HA"
+      },
+      {
+        "reward": "Blast",
+        "type": "Companions",
+        "value": "Be the number 1 hero after just joining HA"
+      },
+      {
+        "reward": 1,
+        "type": "IMG Tickets",
+        "value": "Be known as the Strongest Man in the World"
+      },
+      {
+        "reward": 500,
+        "type": "Credits",
+        "value": "Defeat God with Saitama and Blast"
+      },
+      {
+        "reward": "God",
+        "type": "Companions",
+        "value": "Defeat God without help"
+      },
+      {
+        "reward": 150,
+        "type": "Credits",
+        "value": "Have Saitama within the Top 3 Heroes"
+      },
+      {
+        "reward": 300,
+        "type": "Credits",
+        "value": "Save the world from unending Monsters"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Purge the HA from corruption"
+      },
+      {
+        "reward": "Amai mask",
+        "type": "Companions",
+        "value": "Take over the HA"
+      },
+      {
+        "reward": 1,
+        "type": "IMG Tickets",
+        "value": "Support humanity that they could stand on their own feet"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Become an S-Rank Hero after just joining the Heroes Association"
+      },
+      {
+        "value": "Convince Saitama to register in HA in his training"
+      },
+      {
+        "value": "Become the Number 1 hero before the canon"
+      },
+      {
+        "value": "Remain Human before canon arrives"
+      }
+    ],
+    "budget": 400,
+    "desc": "Tired of seeing our beloved bald hero not getting what he deserves? Want to help Saitama with his boredom by becoming his sparring partner? Want to help King get the life he always wanted? Then become the strongest and make the rules bend for you!",
+    "uid": "KfXnl"
+  },
+  {
+    "reward": 50,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Prince_of_Persia_1_-_Macintosh_-_Starting_screen.png",
+    "author": "Zaralann",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Do it like David Mechner!",
+    "loca": "Prince of Persia",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "5 Credits per 1 Minute.",
+        "type": "Other",
+        "value": "For every Minutes left on the Timer upon the completion of the Mission would yield additional Reward."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You will enter Prince of Persia[DR4], the 'Original Trilogy'-Timeline."
+      },
+      {
+        "value": "You will take place of the Prince, appearing in his exact spot upon entry."
+      },
+      {
+        "value": "The moment you enter the Timer of sixty minutes would start ticking, failing to save the Princess before the time runs out fails the Mission."
+      },
+      {
+        "value": "Any Temporal Abilities are locked away for the duration of the Mission."
+      },
+      {
+        "value": "You cannot leave the World for the duration of the Mission."
+      },
+      {
+        "value": "Your Waifu cannot enter the World for the duration of the Mission."
+      },
+      {
+        "value": "Any Abilities like Teleportation, Intagnability, Super Speed or Flight are disable for the duration of the Mission."
+      }
+    ],
+    "budget": 0,
+    "desc": "Wonderful talke as old as time, a Prince saving a Princess and performing many daring acts on his way! Let's see if you can do so by yourself and fulfill the actual tasks wit your own two hands!",
+    "uid": "MfUIG"
+  },
+  {
+    "reward": 1,
+    "image": "",
+    "author": "Snake_Pride",
+    "rewardType": "IMG Tickets",
+    "source": "",
+    "title": "Ungrateful descendants",
+    "loca": "Ungrateful descendants",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "Shroud of Power (Chaos)",
+        "type": "Perks",
+        "value": "Find and kill Arthur before he reaches the Seal and consumes Chaos. Make him pay for his audacity. As a reward, you will be given an analogue of the power that he so wanted to receive."
+      },
+      {
+        "reward": "Cath Palug",
+        "type": "Companions",
+        "value": "Kill The Lady of the Lake - treacherous priestess must pay for betraying her god. An incompetent hunter, unable to cope with her only job, is no longer needed by Chaos - perhaps you, agent, will find a worthy use for her."
+      },
+      {
+        "reward": "Template Stacking II (Demon King, Supreme Deity)",
+        "type": "Perks",
+        "value": "Capture the Demon King and the Supreme Deity. Treacherous creations must be judged by their creator. The source of their power will be given to you."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Unleash The Mother of Chaos"
+      }
+    ],
+    "budget": 300,
+    "desc": "The world of Britannia was created by the power of Chaos, but after a dastardly betrayal by its strongest creations, that world's creator was sealed away and forgotten, only to be consumed by a delusional mortal. In his confinement, Chaos saw the future and contacted the Company - we agreed to provide assistance in exchange for a couple of services in the future for us and some nice rewards for you, dear agent.",
+    "uid": "McoXs"
+  },
+  {
     "reward": "Your Pocket Dimension becomes your Divine Realm.",
     "image": "https://conceptartworld.com/wp-content/uploads/2013/03/God_of_War-Ascension_24b.jpg",
     "author": "Zaralann",
     "rewardType": "Other",
     "source": "",
     "title": "Give me the God of War!",
+    "uid": "NkmUp",
     "loca": "God of War",
     "lewd": false,
     "scope": "Grand",
@@ -240,9 +542,6 @@
         "value": "You must purchase [Added Potential](5C) for this World."
       },
       {
-        "value": "You must purchase [Pocket Space](5C), [Pocket Apartment(II)](20C), [Sweet Home(II)](20C), [Grand Manor(II)](20C) and [Life’s A Beach](10C)"
-      },
-      {
         "value": "You will arrive into 'God of War: Ascension' at the start of the Game."
       },
       {
@@ -267,9 +566,8 @@
         "value": "All 'Orbs' are given to you no matter if you or your Waifu collected them."
       }
     ],
-    "budget": 80,
-    "desc": "You want a Battle? You want a Challenge? You want to forge your own Legend? Nothing can stay in the way of one who walks the path of a Legend, the path of a God. Kratos walked this path, now his footsteps are yours to follow O' Contractor! We offer you a Mission to success on the Path Kratos walked and we will give you only one chance! Follow it, overcome everything that Kratos did in his journey as a Warrior and later as a God of War and even beyond!\nAddendium(Chronological Order of Games):\n1. God of War: Ascension\n2. God of War: Chains of Olympus\n3. God of War\n4. God of War: Betrayal\n5. God of War: Ghost of Sparta\n6. God of War II\n7. God of War III",
-    "uid": "NkmUp"
+    "budget": 5,
+    "desc": "You want a Battle? You want a Challenge? You want to forge your own Legend? Nothing can stay in the way of one who walks the path of a Legend, the path of a God. Kratos walked this path, now his footsteps are yours to follow O' Contractor! We offer you a Mission to success on the Path Kratos walked and we will give you only one chance! Follow it, overcome everything that Kratos did in his journey as a Warrior and later as a God of War and even beyond!\nAddendium(Chronological Order of Games):\n1. God of War: Ascension\n2. God of War: Chains of Olympus\n3. God of War\n4. God of War: Betrayal\n5. God of War: Ghost of Sparta\n6. God of War II\n7. God of War III"
   },
   {
     "reward": "Free Template Stacking depending on what Clan you are from (Madara Uchiha, Hashirama Senju, or Mito Uzumaki)",

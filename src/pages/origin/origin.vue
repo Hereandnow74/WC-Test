@@ -84,13 +84,6 @@ import { confirmDialog } from '~/logic/dialog'
 import { useTooltips } from '~/logic/misc'
 import { useStore } from '~/store/store'
 
-const heritageOptions = [
-  { label: 'None', value: '' },
-  { label: 'Dragon', value: 'dr' },
-  { label: 'Transhuman', value: 'th' },
-  { label: 'Outsider', value: 'ou' },
-]
-
 const chosenOrigin = reactive({
   title: '',
   cost: 0,
@@ -101,7 +94,7 @@ const chosenOrigin = reactive({
 })
 const costError = ref('')
 
-const { allEffects, startingOrigin, fullStartingBudget, flags, settings, baseBudget, csr, patron } = useStore()
+const { allEffects, startingOrigin, fullStartingBudget, flags, settings, baseBudget, csr, heritageOptions } = useStore()
 
 onMounted(() => useTooltips())
 

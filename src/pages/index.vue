@@ -187,8 +187,8 @@ worldData.push([11, 'One', '2-5 IMG tickets'])
 
 const waifuTitles = ['Waifu Tier', 'Cost', 'Capture', 'Sale', 'Capture + Sale', 'Short']
 const waifuData = [
-  ['T1', '1', '1', '0', '1', ['★', 'text-blue-600']],
-  ['T2', '2', '2', '0', '2', ['★★', 'text-blue-600']],
+  ['T1', '1', '0', '0', '1', ['★', 'text-blue-600']],
+  ['T2', '2', '1', '0', '2', ['★★', 'text-blue-600']],
   ['T3', '5', '3', '1', '4', ['★★★', 'text-blue-600']],
   ['T4', '10', '6', '2', '8', ['★', 'text-red-600']],
   ['T5', '20', '12', '4', '16', ['★★', 'text-red-600']],
