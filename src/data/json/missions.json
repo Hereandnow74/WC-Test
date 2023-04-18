@@ -1,6 +1,535 @@
 [
   
   {
+    "reward": 2,
+    "image": "https://e1.pxfuel.com/desktop-wallpaper/619/206/desktop-wallpaper-pin-on-desu-1-2-shin-megami-tensei-devil-survivor-2.jpg",
+    "author": "Samsara",
+    "rewardType": "IMG Tickets",
+    "source": "",
+    "title": "War of Bel",
+    "loca": "Shin Megami Tensei",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": 30,
+        "type": "Credits",
+        "value": "Have Harusawa Yoshiro survive"
+      },
+      {
+        "reward": "Naoya",
+        "type": "Companions",
+        "value": "Have Naoya agree with you being the King of Bel instead of Protag (Talents and Lures disabled with Naoya)"
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Deal with the 8th Day (Overclocked)"
+      },
+      {
+        "reward": "Pocket Star",
+        "type": "Perks",
+        "value": "Defeat Lucifer"
+      },
+      {
+        "reward": "Anyone who lives will become Companions (Points Included)",
+        "type": "Companions",
+        "value": "Help the DS1 Cast Survive"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Fatality Defense is disabled for 7 days"
+      },
+      {
+        "value": "Kill every 'Bel'"
+      },
+      {
+        "value": "You are World Bound until you complete the mission"
+      },
+      {
+        "value": "Cannot Substitute or Possess Devil Survivor 1 Protagonist"
+      }
+    ],
+    "budget": 585,
+    "desc": "In the world of SMT:Devil Survivor Humanity was Judged by God and was given an Ordeal, if the Ordeal is not overcame in Seven Days then he will end the World. While that's happening Demons with the Name 'Bel' are at war with each other with all of them having one Goal: Reach Babel and become the King of Bel; The Overlord of the Demons. This is where you come in Contractor: You will join the war and become the King of Bel within those Seven days. Oh and survive the Ordeal...Good luck!",
+    "uid": "amdbv"
+  },
+  {
+    "reward": 3,
+    "image": "",
+    "author": "Ratcatcher",
+    "rewardType": "IMG Tickets",
+    "source": "",
+    "title": "Earth King's Harem",
+    "loca": "Sailor Moon",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "The tiers of the other Sailor Senshi are bumped by 2, and so the rewards",
+        "type": "Other",
+        "value": "Do it in the manga setting"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Until the mission is complete, you can only target the Sailor Senshi of the Solar System. Completion is achieved when you have Captured all the Sailor Senshi of the present day, including Pluto but excluding Chibiusa and the Asteroid Senshi."
+      },
+      {
+        "value": "Sailor Moon cannot be bound until everyone else has. The only method to bind her is to talk her into an orgy with everyone else."
+      },
+      {
+        "value": "You must seduce the Sailor Senshi the hard way, and they cannot be bound by any mean but by confession."
+      },
+      {
+        "value": "You can only start putting your moves on the Sailor Senshi when they fall for Sailor Moon (in addition to any other relationship they have). As a consequence, aside for Pluto they don't like you at best, and may well try and steal Moon from you."
+      },
+      {
+        "value": "Finally, try and not be discovered by Sailor Moon. She may join in or dump you, and if the latter happens then you'll have to conquer her love back."
+      }
+    ],
+    "budget": 365,
+    "desc": "Many Sailor Moon fans don't like Chiba Mamoru for various reasons, but he ended up becoming Sailor Moon's lover and eventual husband for a reason. With this mission, the reason will be you... And we'll need you to do one better, seduce all the Sailor Senshi. They're pretty much Moon's unofficial harem, as her husband they should be yours too.",
+    "uid": "lnUkN"
+  },
+  {
+    "reward": "Instantly Binding Ruby Rose[T5].",
+    "image": "https://jmiandro.files.wordpress.com/2017/01/9398c5a140faeec14a5307abe1b94323.jpg",
+    "author": "Zaralann",
+    "rewardType": "Companions",
+    "source": "",
+    "title": "Smaller, More Honest Soul...",
+    "loca": "RWBY",
+    "lewd": false,
+    "scope": "Quick",
+    "objectives": [
+      {
+        "reward": 20,
+        "type": "Credits",
+        "value": "Prevent Roman Torchwick from escaping from Glynda Goodwich."
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Prevent Cinder Fall from escaping from Glynda Goodwich."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You enter RWBY[DR6] one hour before 'Volume 1 Episode 1'."
+      },
+      {
+        "value": "For the duration of the Mission you cannot enter your Pocket Dimesnion or other Worlds."
+      },
+      {
+        "value": "No Waifu can enter the World with you."
+      },
+      {
+        "value": "Ruby Rose is immune to Lures, Binding and Mind Control of any kind for the duration of the Mission."
+      },
+      {
+        "value": "You must prevent Ruby Rose from stopping or even encountering the robbery performed by Roman Torchwick."
+      },
+      {
+        "value": "You must prevent her early entrance into Beacon."
+      },
+      {
+        "value": "The Mission Ends upon the start of the Beacon's Scolary Year if Ruby Rose isn't a student there."
+      }
+    ],
+    "budget": 0,
+    "desc": "Would just one more Honest Little Soul be enough? We, at the Comapany, do not believe it would nor we desire to see such a thing from occuring. So, O' Contractor, you have a Mission from us that prevents such a pointless sacrafice be made. Listen well...",
+    "uid": "PMNvL"
+  },
+  {
+    "reward": "You get Bowsette[T6].",
+    "image": "https://i.pinimg.com/474x/00/b9/bf/00b9bf18c342829d14eb2583221ec194.jpg",
+    "author": "Zaralann",
+    "rewardType": "Companions",
+    "source": "",
+    "title": "Ruler, Conqueror, King...",
+    "loca": "Mario Series",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "You get Boosette[T6].",
+        "type": "Companions",
+        "value": "Peach, out of love for you, kills Mario."
+      },
+      {
+        "reward": "You get Boo[T5].",
+        "type": "Companions",
+        "value": "Peach, out of love for you, kills Luigi."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You enter 'Mario Series'[DR3]."
+      },
+      {
+        "value": "You take the place of Bowser, you don't get his Abilities or Knowledge or Memories or Skills, just taking his place."
+      },
+      {
+        "value": "You must kidnap Princess Peach and seduce you to your side, a Love Confession Binding."
+      },
+      {
+        "value": "For the duration of the Mission Princess Peach is Immune to any Mind Control, Mind Altering Substances, Lures and Binding Methods other than the one above."
+      },
+      {
+        "value": "For the duration of the Mission you also cannot use Binding on Mario or Luigi."
+      },
+      {
+        "value": "Mission Ends when Princess Peach is Bound to you."
+      },
+      {
+        "value": "Mission is Failed of Mario and/or Luigi save Peach."
+      },
+      {
+        "value": "You cannot kill Mario and/or Luigi."
+      },
+      {
+        "value": "Any attempt at Banishing/Sealing/Locking Away Mario and/or Luigi would be eroded by their Plot Armor and would hold for miximum of seven days before they would find a way to return, the more exotic the method was the longer it would hold."
+      }
+    ],
+    "budget": 0,
+    "desc": "Well, what do we have here? A series of failures? A series of defeats? A wonderful and repeating series of humiliations? This isn't what we want to see! Who decided that Good shall Win and Evil shall Lose? Who decided what is Good and what is Evil? Certainly not us! So, O' Contractor, we grant you a Mission to fix it!",
+    "uid": "HqxGQ"
+  },
+  {
+    "reward": "Instant Unlocking of the next World.",
+    "image": "https://cdn.vox-cdn.com/thumbor/k4EiE2QFaDTNF21bdK-IImdNuPw=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/assets/2130565/zelda_skyward_sword.jpg",
+    "author": "Zaralann",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Hero of Forever Ever After...",
+    "loca": "Legend of Zelda",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "Beginning of 'The Legend of Zelda: Four Swords'.",
+        "type": "Other",
+        "value": "'The Legend of Zelda: Skyward Sword' Completed."
+      },
+      {
+        "reward": "Beginning of 'The Legend of Zelda: Ocarina of Time'.",
+        "type": "Other",
+        "value": "'The Legend of Zelda: Four Swords' Completed."
+      },
+      {
+        "reward": "Beginning of 'The Legend of Zelda: A Link to the Past'.",
+        "type": "Other",
+        "value": "'The Legend of Zelda: Ocarina of Time' Completed."
+      },
+      {
+        "reward": "Beginning of 'The Legend of Zelda: Link's Awakening'.",
+        "type": "Other",
+        "value": "'The Legend of Zelda: A Link to the Past' Completed."
+      },
+      {
+        "reward": "Beginning of 'The Legend of Zelda: Oracle of Seasons'.",
+        "type": "Other",
+        "value": "'The Legend of Zelda: Link's Awakening' Completed."
+      },
+      {
+        "reward": "Beginning of 'The Legend of Zelda: Oracle of Ages'.",
+        "type": "Other",
+        "value": "'The Legend of Zelda: Oracle of Seasons' Completed."
+      },
+      {
+        "reward": "Beginning of 'The Legend of Zelda: A Link Between Worlds'.",
+        "type": "Other",
+        "value": "'The Legend of Zelda: Oracle of Ages' Completed."
+      },
+      {
+        "reward": "Beginning of 'The Legend of Zelda: Tri Force Heroes'.",
+        "type": "Other",
+        "value": "'The Legend of Zelda: A Link Between Worlds' Completed."
+      },
+      {
+        "reward": "Beginning of 'Link: The Faces of Evil'.",
+        "type": "Other",
+        "value": "'The Legend of Zelda: Tri Force Heroes' Completed."
+      },
+      {
+        "reward": "Beginning of 'Zelda: The Wand of Gamelon'.",
+        "type": "Other",
+        "value": "'Link: The Faces of Evil' Completed."
+      },
+      {
+        "reward": "Beginning of 'Zelda's Adventure'.",
+        "type": "Other",
+        "value": "'Zelda: The Wand of Gamelon' Completed."
+      },
+      {
+        "reward": "Beginning of 'The Legend of Zelda'.",
+        "type": "Other",
+        "value": "'Zelda's Adventure' Completed."
+      },
+      {
+        "reward": "Beginning of 'Zelda II: The Adventure of Link'.",
+        "type": "Other",
+        "value": "'The Legend of Zelda' Completed."
+      },
+      {
+        "reward": "Beginning of 'The Legend of Zelda: Majora's Mask'.",
+        "type": "Other",
+        "value": "'Zelda II: The Adventure of Link' Completed."
+      },
+      {
+        "reward": "Beginning of 'The Legend of Zelda: Twilight Princess'.",
+        "type": "Other",
+        "value": "'The Legend of Zelda: Majora's Mask' Completed."
+      },
+      {
+        "reward": "Beginning of 'The Legend of Zelda: Four Swords Adventures'.",
+        "type": "Other",
+        "value": "'The Legend of Zelda: Twilight Princess' Completed."
+      },
+      {
+        "reward": "Beginning of 'The Legend of Zelda: The Wind Waker'.",
+        "type": "Other",
+        "value": "'The Legend of Zelda: Four Swords Adventures' Completed."
+      },
+      {
+        "reward": "Beginning of 'The Legend of Zelda: Phantom Hourglass'.",
+        "type": "Other",
+        "value": "'The Legend of Zelda: The Wind Waker' Completed."
+      },
+      {
+        "reward": "Beginning of 'The Legend of Zelda: Spirit Tracks'.",
+        "type": "Other",
+        "value": "'The Legend of Zelda: Phantom Hourglass' Completed."
+      },
+      {
+        "reward": "Beginning of 'The Legend of Zelda: Breath of the Wild'.",
+        "type": "Other",
+        "value": "'The Legend of Zelda: Spirit Tracks' Completed."
+      },
+      {
+        "reward": "Beginning of 'The Legend of Zelda: Tears of the Kingdom'.",
+        "type": "Other",
+        "value": "'The Legend of Zelda: Breath of the Wild' Completed."
+      },
+      {
+        "reward": "New World Unlocked.",
+        "type": "Other",
+        "value": "'The Legend of Zelda: Tears of the Kingdom' Completed."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You will enter 'Legend of Zelda'[DR5] and will take Link's place, all logical/continuation issues would be adjusted."
+      },
+      {
+        "value": "You must purchase [Added Potential](5C) for this World."
+      },
+      {
+        "value": "You will arrive into 'The Legend of Zelda: Skyward Sword' at the start of the Game."
+      },
+      {
+        "value": "To not exceed the time of the Mission the Events would follow the sequences presented within the Game, for the durations of the Mission the 'Timeskips' within the Game would be provided by the Company."
+      },
+      {
+        "value": "Time is Fluid within the World for the duration of the Mission, stepping out of it either for your Pocket Dimension or another World would put the Events on 'Pause' so using such methods to avoid Events or obstacles would not work."
+      },
+      {
+        "value": "Time is Fluid within other Worlds for the duration of the Mission, putting the Events on 'Pause' while you're within this World during the Mission, it does not affect the Pocket Dimension."
+      },
+      {
+        "value": "A limited mount of 'Game Logic' is provided by the Company, certain Mechanics within the World would function in similar way as they did in the Game."
+      },
+      {
+        "value": "Progress of unlocking of the new World would be frozen for the duration of the Mission, finishing it would instantly unlock the nexy World if Travel Perks are pruchased."
+      },
+      {
+        "value": "Binding/Selling a Boss/Mini-Boss counts as Defeating them, same for 'Mini-Games' against others."
+      }
+    ],
+    "budget": 5,
+    "desc": "A Hero is the one that walk down the Path of Legends... But how many times one can walk down the exact same Path? Link walked down such a Path so many times, every Path led him to one and the same Ending as a Hero. And he didn't break, he didn't give up, he Endured and Succeeded... Can you, O' Contractor? This Mission sends you to face the same path as did Link, you're the one who will be the Hero, the one who would be the one to face all Challenges. Can you be the Hero?",
+    "uid": "cwEBf"
+  },
+  {
+    "reward": 50,
+    "image": "https://forums.starwarsnwn.com/uploads/default/original/1X/758e4133cefa37517627a3746ecc1ac53a6debe8.jpeg",
+    "author": "N_Hermit",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Studying the Blade",
+    "loca": "Star Wars",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Master 2 lightsaber forms"
+      },
+      {
+        "reward": 250,
+        "type": "Credits",
+        "value": "Master 4 lightsaber forms"
+      },
+      {
+        "reward": 500,
+        "type": "Credits",
+        "value": "Blademaster - Master all 7 lightsaber forms"
+      },
+      {
+        "reward": 10,
+        "type": "Credits",
+        "value": "Complete at least 1 of Faalo's Cadences"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Complete all 5 of Faalo's Cadences"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Martial Talent is allowed, but you cannot rely solely on a Template to achieve mastery."
+      },
+      {
+        "value": "If you're a Jedi, you may learn Vaapad instead of Juyo and have it count."
+      }
+    ],
+    "budget": 140,
+    "desc": "The Lightsaber - arguably one of the coolest weapons ever created. It's something many people have dreamed of wielding. \nWell, since you've chosen to become a Force Wielder it would be a complete shame if you didn't learn how to use this weapon. What sort of Jedi or Sith doesn't know how to use their Lightsaber???? \n\nObjective: Completely master 1 traditional Lightsaber form. Being proficient in it is not enough. You MUST achieve complete mastery of this form and be recognized as a master by your teacher(s). \n\nThe 7 forms are:\nForm I: Shii-Cho (The base form, Famous Users: Meetra Surik)\nForm II: Makashi (Famous users: Count Dooku)\nForm III: Soresu (Famous users: Obi-Wan Kenobi)\nForm IV: Ataru (Famous users: Yoda, Qui-Gon Jinn)\nForm V: Shien/Djem So (Famous users: Anakin Skywalker)\nForm VI: Niman (Famous users: Exar Kun)\nForm VII: Juyo/Vaapad (Famous users: Darth Sidious/ Mace Windu)",
+    "uid": "Qrxtb"
+  },
+  {
+    "reward": 200,
+    "image": "https://media.discordapp.net/attachments/1011786031588192336/1096313834756636672/maxresdefault.jpg",
+    "author": "cthulhu",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Because You AreThe Honkai",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "Any local captures you have made or will make can be Power Swapped to a Honkai Impact character of one tier higher for free",
+        "type": "Other",
+        "value": "Wipe out all life on a continent"
+      },
+      {
+        "reward": "Free Power Swap or Template Stacking II for you and all waifus for a Herrscher of your choice",
+        "type": "Other",
+        "value": "Erase human civilization and all life on Earth"
+      },
+      {
+        "reward": "Instant capture of up to 13 individuals of a tier equal to or less than the lowest tier amongst your waifus",
+        "type": "Companions",
+        "value": "Erase human history, but leave them a chance to restart and try again"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You may only use powers, abilities and technology native to Honkai Impact 3rd"
+      },
+      {
+        "value": "Between captures and purchases, you are limited to thirteen waifus"
+      },
+      {
+        "value": "Additional objectives 2 and 3 are mutually exclusive,  you cannot complete both and this is intentional"
+      }
+    ],
+    "budget": 400,
+    "desc": "War, cheating, jealousy, greed...  these sins, and many others like them, should sound familiar to you.  They are what humanity does to themselves and to others on a near constant basis.  Because of this, a conclusion has been reached - humanity does not deserve to exist.  Whatever world you are in, you now stand in judgement upon them, as both their destruction and their redemption.  If mankind can unify in the face of an overwhelming threat, if old grudges can be put aside or even forgiven, if they can work together just once in their miserable lives to forge a path into the future then maybe, just maybe, they deserve to exist.  And if not, well.  Destroy them.",
+    "uid": "pyvdV"
+  },
+  {
+    "reward": 125,
+    "image": "",
+    "author": "M0ku",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "The Girl Who Fell From The Sky!",
+    "loca": "To Love-Ru",
+    "lewd": true,
+    "scope": "Quick",
+    "objectives": [
+      {
+        "reward": 25,
+        "type": "Credits",
+        "value": "Defeat Zastin (T6) in combat, through any means necessary and/or available."
+      },
+      {
+        "reward": 10,
+        "type": "Credits",
+        "value": "Defeat Maul (T5) in combat, through any means necessary and/or available."
+      },
+      {
+        "reward": 10,
+        "type": "Credits",
+        "value": "Defeat Smutts (T5)  in combat, through any means necessary and/or available."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "When you enter ‘To LOVE-Ru (DR:1)’ you will appear in front of the Yūki Family’s House several minutes before Lala Satalin Deviluke is set to appear in the bathroom."
+      },
+      {
+        "value": "You must prevent the ‘fated’ bathtub meeting between Lala Satalin Deviluke and Yūki Rito."
+      },
+      {
+        "value": "You must initiate Lala Satalin Deviluke’s binding process in less than 24 hours of your arrival."
+      },
+      {
+        "value": "You must ensure that Lala Satalin Deviluke will stay on Earth for the foreseeable future."
+      },
+      {
+        "value": "You must stop Zastin, Maul and/or Smutts from taking Lala Satalin Deviluke back to Planet Deviluke through whatever means available."
+      }
+    ],
+    "budget": 4,
+    "desc": "Lala Satalin Deviluke is sick and tired of meeting countless men vying for her hand in marriage at the behest of her father, Gid Lucione Deviluke, so she escapes from Deviluke, her home planet, and flees to Earth, where she intends to hide indefinitely. Unfortunately for Lala, her escape wasn’t unnoticed and she is pursued by Zastin and his men, Maul and Smutts. Now, this would result in Lala ‘coincidentally’ meeting Yūki Rito and, shortly after managing to get rid of Maul and Smutts, falling in love with him. This is, of course, unacceptable. Through whatever means deemed necessary, prevent Lala Satalin Deviluke from meeting Yūki Rito, make her a member of your retinue and stop her from being brought to Deviluke by her pursuers.",
+    "uid": "EqeEk"
+  },
+  {
+    "reward": 685,
+    "image": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/observable-universe-logarithmic-illustration-2018-pablo-carlos-budassi.jpg",
+    "author": "M0ku",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "King of the Universe!",
+    "loca": "To Love-Ru",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Defeat Gid Lucione Deviluke in single combat."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You will enter ‘To LOVE-Ru (DR:1)’ the same day Lala Satalin Deviluke meets Yūki Rito."
+      },
+      {
+        "value": "You must get Gid Lucione Deviluke to accept you as his daughter’s fiancée and declare you as his heir in 3 Years or less."
+      },
+      {
+        "value": "You must capture all canon love interests of Yūki Rito."
+      },
+      {
+        "value": "You must usurp Yūki Rito’s role as To LOVE-Ru’s Main Character."
+      },
+      {
+        "value": "You must not allow ‘canon’ to take its natural course. The more you can change events, preferably to your benefit, the better."
+      }
+    ],
+    "budget": 4,
+    "desc": "Gid Lucione Deviluke is the current King of the Universe, but in name only. The one actually making sure that the Universe stays running smoothly is his wife, Sephie Michaela Deviluke. Gid wishes to officially step down from his throne so he can go around chasing after other females and doing perverted things to them. In order for him to do that, he requires a male heir, but as luck would have it, he and his wife have only managed to produce three daughters. Gid wants to find a husband for his oldest daughter, Lala Satalin Deviluke. Through whatever means deemed necessary, you must prove to Gid that you are the man he’s been looking for.",
+    "uid": "PKIpu"
+  },
+  {
     "reward": "Instant Unlocking of the next World.",
     "image": "https://thegamepost.com/wp-content/uploads/2020/03/prince-of-persia-trilogy-remake-4.jpg",
     "author": "Zaralann",
@@ -101,35 +630,60 @@
     "uid": "iFjaP"
   },
   {
-    "reward": "All monster companions from the monster hunter series that appears in Monster Hunter World.",
+    "reward": "Worldly Menagerie: All monster companions from the monster hunter series that appear in Monster Hunter World as familiars.",
     "image": "https://i.pinimg.com/564x/de/2f/73/de2f739f0b31b7f2e2bdcf934865d62f.jpg",
     "author": "Shadowfire626",
     "rewardType": "Companions",
     "source": "",
-    "title": "The Rising Sapphire Star",
+    "title": "Ascension Of The Sapphire Star",
+    "uid": "brQmF",
     "loca": "Monster Hunter",
     "lewd": false,
     "scope": "Grand",
     "objectives": [
       {
-        "reward": 250,
+        "reward": 500,
         "type": "Credits",
-        "value": "Use Only Charge Blades (Yes I'm Biased)"
+        "value": "Lone Wolf: Do not take Memorabilia and kill every monster solo. Incompatible with ‘Ardent Ohana’"
+      },
+      {
+        "reward": "All Memorabilia companions may change their species one more time or gain the ability to swap between Palico & Palamute at will.",
+        "type": "Other",
+        "value": "Ardent Ohana: Take the Memorabilia perk and have at least one of your companions assist you in killing every monster. This does not need to be the same one(s) every time, but you must always have at least one helping you. Incompatible with ‘Lone Wolf’"
+      },
+      {
+        "reward": 200,
+        "type": "Credits",
+        "value": "Charge Blade Supremacy: Use a Charge Blade to kill every monster."
+      },
+      {
+        "reward": "Your weapon will be linked too and stored in your soul, allowing it too be accessed at all times.",
+        "type": "Other",
+        "value": "This Is My Weapon: Limit your self to a single branch of a weapon tree. Ex: Pure Ore Charge Blade, Ore Charge Blade into Nergi, Pure Bone Charge Blade, etc. Incompatible with ‘I Got Just The Thing’"
+      },
+      {
+        "reward": "When facing off against an enemy, you will instinctively know which weapon in your armory will be most effective against them.",
+        "type": "Other",
+        "value": "I Got Just The Thing: Use one weapon from every branch in a weapon tree. Ex: One charge blade of every branch, one longsword of every branch, etc. Incompatible with ‘This Is My Weapon’"
+      },
+      {
+        "reward": 400,
+        "type": "Credits",
+        "value": "Eater Of Elders: Once possible, only use Nergigante branch weapons against elder dragons."
       },
       {
         "reward": 1,
         "type": "IMG Tickets",
-        "value": "Use only a single charge blade upgrade path."
+        "value": "Black Dragon Vs Red Dragon: Use a Safi’Jiva weapon and Safi’Jiva Armor too slay Fatalis. Completion of this Objective will be considered an exception, allowing you to still complete and claim the objectives ‘Eater of Elders’ and ‘This Is My Weapon.’"
       }
     ],
     "conditions": [
       {
-        "value": "Kill one of each monster in the New World. Solo."
+        "value": "Kill one of each monster in the New World solo or with a memorabilia companion."
       }
     ],
-    "budget": 0,
-    "desc": "There are hunters, and then there are HUNTERS. Those who stand atop the peak of the hunters guild and serve as paragons of might, the G Ranks. Your duty is simple in word but grand in scope: You will take the place of the Sapphire Star, the protagonist of Monster Hunter World, and you will complete their journey, with one catch: You will have no defenses, no heritages, and no help. You will only have the gear you make from those you slay, and two talents: Martial and Athletic. You will be unable to capture any waifus.\n\nShould you succeed and become the Research Commissions Sapphire Star, you will gain the ultimate reward: A waifu of every monster you slay.",
-    "uid": "brQmF"
+    "budget": 30,
+    "desc": "There are hunters, there are Hunters, and then there are HUNTERS. Those who stand atop the peak of the hunters guild and serve as paragons of might, the G Ranks. Your duty is simple in word but grand in scope: You will substitute into the place of the Sapphire Star, the protagonist of Monster Hunter World, and complete their journey with one catch: You will have no defenses, no heritages, and no waifu help. You will only have the gear you make from those you slay, and two talents: Martial and Athletic. \n\nYou will be unable to capture any targets during this challenge but you may still pre-mark non-monster targets them for capture after the challenge is complete using the company stamp, the only binding you will be allowed until this mission is complete. After this mission is a complete, all pre-marked targets will have their stamps ramp up over the course of three days as per usual, but rather than do so all at once, they will do so one at a time in the order they were stamped, resulting in one capture every three days. This will only apply to pre-stamped targets and not targets stamped post mission completion. If you buy any other bindings before all of the ramp up periods are complete, the incomplete stamps will disappear and you will need to use your new binding instead.\n\nOptionally, you may also purchase a tier three, 15 credit, version of Memorabilia to have as many, or as few, of your beloved pets, living or dead, follow you into the New World as either a Felyne (Palico) or Canyne (Palamute) and serve as your official Palico(s)/Palamute(s) for this journey. While their is no upper limit to this, please keep it to a reasonable number.\n\nShould you succeed and become the Research Commissions Sapphire Star, you will gain the ultimate reward this world can offer: A familiar of every monster you slay."
   },
   {
     "reward": 2,
@@ -272,7 +826,8 @@
     "rewardType": "IMG Tickets",
     "source": "",
     "title": "Ungrateful descendants",
-    "loca": "Ungrateful descendants",
+    "uid": "McoXs",
+    "loca": "Nanatsu No Taizai/Seven Deadly Sins",
     "lewd": false,
     "scope": "Grand",
     "objectives": [
@@ -297,12 +852,11 @@
         "value": "Unleash The Mother of Chaos"
       }
     ],
-    "budget": 300,
-    "desc": "The world of Britannia was created by the power of Chaos, but after a dastardly betrayal by its strongest creations, that world's creator was sealed away and forgotten, only to be consumed by a delusional mortal. In his confinement, Chaos saw the future and contacted the Company - we agreed to provide assistance in exchange for a couple of services in the future for us and some nice rewards for you, dear agent.",
-    "uid": "McoXs"
+    "budget": 400,
+    "desc": "The world of Britannia was created by the power of Chaos, but after a dastardly betrayal by its strongest creations, that world's creator was sealed away and forgotten, only to be consumed by a delusional mortal. In his confinement, Chaos saw the future and contacted the Company - we agreed to provide assistance in exchange for a couple of services in the future for us and some nice rewards for you, dear agent."
   },
   {
-    "reward": "Your Pocket Dimension becomes your Divine Realm.",
+    "reward": "Next World is Unlocked.",
     "image": "https://conceptartworld.com/wp-content/uploads/2013/03/God_of_War-Ascension_24b.jpg",
     "author": "Zaralann",
     "rewardType": "Other",
@@ -314,54 +868,9 @@
     "scope": "Grand",
     "objectives": [
       {
-        "reward": "'Prison of the Damned' is added as a part of your Pocket Dimension, Aegeon is part of the Location so cannot be Captured.",
-        "type": "Other",
-        "value": "Megaera/Aegeon is Defeated."
-      },
-      {
-        "reward": "'Delphi' Mountain Range is added to your Pocket Dimension.",
-        "type": "Other",
-        "value": "Castor & Pollux are Defeated."
-      },
-      {
-        "reward": "'Delos'(Statue of Apollo Destroyed) is added to your Pocket Dimension.",
-        "type": "Other",
-        "value": "(Past)Tisiphone/Daimon & Megaera are Defeated."
-      },
-      {
-        "reward": "Statue of Apollo on 'Delos' in your Pocket Dimension is fully restored.",
-        "type": "Other",
-        "value": "Trials of Archimedes are passed."
-      },
-      {
-        "reward": "'The Fury Citadel' is added to your Pocket Dimension.",
-        "type": "Other",
-        "value": "Alecto & Tisiphone/Daimon are Defeated."
-      },
-      {
         "reward": "Beginning of 'God of War: Chains of Olympus'.",
         "type": "Other",
         "value": "'God of War: Ascension' Completed."
-      },
-      {
-        "reward": "'Attica' is added to your Pocket Dimension.",
-        "type": "Other",
-        "value": "Persian King & Basilisk are Defeated."
-      },
-      {
-        "reward": "'Temple of Helios'(Can take the Form of 'Sun Chariot') and 'Caves of Olympus' are added to your Pocket Dimension.",
-        "type": "Other",
-        "value": "The three Fire Steeds are awakened."
-      },
-      {
-        "reward": "'Charon's Ferry' is gained as a Vehicle.",
-        "type": "Other",
-        "value": "Charon is Defeated."
-      },
-      {
-        "reward": "'Pillar of the World', 'Temple of Persephone' and 'Elysium Fields' are added to your Pocket Dimension.",
-        "type": "Other",
-        "value": "Atlas and Persephone are Defeated."
       },
       {
         "reward": "Beginning of 'God of War'.",
@@ -369,34 +878,9 @@
         "value": "'God of War: Chains of Olympus' Completed."
       },
       {
-        "reward": "'Aegean Sea' is added to your Pocket Dimension.",
-        "type": "Other",
-        "value": "Hydra is Defeated."
-      },
-      {
-        "reward": "'Athens'(Destroyed) is added to your Pocket Dimension.",
-        "type": "Other",
-        "value": "Medusa is Defeated and Oracle of Athens is Saved."
-      },
-      {
-        "reward": "'Pandora's Temple'(Cronos not included) is added to your Pocket Dimension.",
-        "type": "Other",
-        "value": "Pandora's Guardian is Defeated and Pandora's Box is Acquired."
-      },
-      {
-        "reward": "'Athens' in your Pocket Dimension are fully restored.",
-        "type": "Other",
-        "value": "Ares is Defeated."
-      },
-      {
         "reward": "Beginning of 'God of War: Betrayal'.",
         "type": "Other",
         "value": "'God of War' Completed."
-      },
-      {
-        "reward": "'Unnamed Greek City' is added to your Pocket Dimension.",
-        "type": "Other",
-        "value": "Argos and Ceryx are Defeated."
       },
       {
         "reward": "Beginning of 'God of War: Ghost of Sparta'.",
@@ -404,74 +888,9 @@
         "value": "'God of War: Betrayal' Completed."
       },
       {
-        "reward": "'Atlantis' is added to your Pocket Dimension.",
-        "type": "Other",
-        "value": "Callisto and Scylla are Defeated."
-      },
-      {
-        "reward": "'Mounts of Aroania' are added to your Pocket Dimension.",
-        "type": "Other",
-        "value": "Erinys is Defeated."
-      },
-      {
-        "reward": "'Sparta' is added to your Pocket Dimension.",
-        "type": "Other",
-        "value": "Piraeus Lion is Defeated."
-      },
-      {
-        "reward": "'Temple of Thanatos' is added to your Pocket Dimension.",
-        "type": "Other",
-        "value": "Deimos and Thanatos are Defeated."
-      },
-      {
         "reward": "Beginning of 'God of War II'",
         "type": "Other",
         "value": "'God of War: Ghost of Sparta' Completed."
-      },
-      {
-        "reward": "'Rhodes' is added to your Pocket Dimension.",
-        "type": "Other",
-        "value": "Colossus of Rhodes is Defeated."
-      },
-      {
-        "reward": "'Lair of Typhon' is added to your Pocket Dimension.",
-        "type": "Other",
-        "value": "Pegasus is Freed."
-      },
-      {
-        "reward": "'Temple of Lahkesis' is added to your Pocket Dimension.",
-        "type": "Other",
-        "value": "Dark Rider is Defeated."
-      },
-      {
-        "reward": "'Steeds of Time' is added to your Pocket Dimension.",
-        "type": "Other",
-        "value": "Theseus is Defeated."
-      },
-      {
-        "reward": "'Bog of the Forgotten' is added to your Pocket Dimension.",
-        "type": "Other",
-        "value": "Alrik, Mole Cerberus and Euryale are Defeated."
-      },
-      {
-        "reward": "'Courtyard of Atropos' and 'Hall of Atropos' are added to your Pocket Dimension.",
-        "type": "Other",
-        "value": "Perseus is Defeated."
-      },
-      {
-        "reward": "'Palace of the Fates' is added to your Pocket Dimension.",
-        "type": "Other",
-        "value": "Phoenix us Awoken and the Last Spartan and Kraken are Defeated."
-      },
-      {
-        "reward": "'Island of Creation' is added to you Pocket Dimension uniting the previously granted parts and adding the missing ones.",
-        "type": "Other",
-        "value": "Lahkesis, Atropos and Clotho are Defeated."
-      },
-      {
-        "reward": "'Summit of Sacrifice' is added to your Pocket Dimension.",
-        "type": "Other",
-        "value": "Zeus is Defeated."
       },
       {
         "reward": "Beginning of 'God of War III'.",
@@ -479,59 +898,19 @@
         "value": "'God of War II' Completed."
       },
       {
-        "reward": "Hippocampi now populate the waters of your Pocket Dimension.",
+        "reward": "Beginning of 'God of War(2018)'.",
         "type": "Other",
-        "value": "Hippocampi is Defeated."
+        "value": "'God of War III' Completed."
       },
       {
-        "reward": "All Greek Oceans are added to your Pocket Dimension.",
+        "reward": "Beginning of 'God of War Ragnarök'.",
         "type": "Other",
-        "value": "Poseidon is Defeated."
+        "value": "'God of War(2018)' Completed."
       },
       {
-        "reward": "'Underworld' is added to your Pocket Dimension.",
+        "reward": "Mission is Complete.",
         "type": "Other",
-        "value": "Hades is Defeated."
-      },
-      {
-        "reward": "'Olympia' is added to your Pocket Dimension.",
-        "type": "Other",
-        "value": "Helios is Defeated."
-      },
-      {
-        "reward": "'Plague of Olympus' fills your Pocket Diemsnion and attacks Hostile Unites within, bypassing any resistances and immunities.",
-        "type": "Other",
-        "value": "Hermes is Defeated."
-      },
-      {
-        "reward": "'The Forum' is added to your Pocket Dimension.",
-        "type": "Other",
-        "value": "Hercules is Defeated."
-      },
-      {
-        "reward": "'Tartarus' is added to your Pocket Dimension.",
-        "type": "Other",
-        "value": "Cronos is Defeated."
-      },
-      {
-        "reward": "'The Forge' and 'Hyperion Gates' are added to your Pocket Dimension.",
-        "type": "Other",
-        "value": "Hephaestus is Defeated."
-      },
-      {
-        "reward": "'Labyrinth' is added to your Pocket Dimension.",
-        "type": "Other",
-        "value": "Skorpius is Defeated."
-      },
-      {
-        "reward": "'Chain of Balance' and ' The Three Judges' are added to your Pocket Dimension.",
-        "type": "Other",
-        "value": "Hades Cerberus Breeder is Defeated."
-      },
-      {
-        "reward": "'Mount Olympus' is added to your Pocket Dimension, previously earned parts seamlessly integrated.",
-        "type": "Other",
-        "value": "Zeus and Gaia are Defeated."
+        "value": "'God of War Ragnarök' Completed."
       }
     ],
     "conditions": [
@@ -561,13 +940,10 @@
       },
       {
         "value": "Binding/Selling a Boss/Mini-Boss counts as Defeating them, same for 'Mini-Games' against others."
-      },
-      {
-        "value": "All 'Orbs' are given to you no matter if you or your Waifu collected them."
       }
     ],
     "budget": 5,
-    "desc": "You want a Battle? You want a Challenge? You want to forge your own Legend? Nothing can stay in the way of one who walks the path of a Legend, the path of a God. Kratos walked this path, now his footsteps are yours to follow O' Contractor! We offer you a Mission to success on the Path Kratos walked and we will give you only one chance! Follow it, overcome everything that Kratos did in his journey as a Warrior and later as a God of War and even beyond!\nAddendium(Chronological Order of Games):\n1. God of War: Ascension\n2. God of War: Chains of Olympus\n3. God of War\n4. God of War: Betrayal\n5. God of War: Ghost of Sparta\n6. God of War II\n7. God of War III"
+    "desc": "You want a Battle? You want a Challenge? You want to forge your own Legend? Nothing can stay in the way of one who walks the path of a Legend, the path of a God. Kratos walked this path, now his footsteps are yours to follow O' Contractor! We offer you a Mission to success on the Path Kratos walked and we will give you only one chance! Follow it, overcome everything that Kratos did in his journey as a Warrior and later as a God of War and even beyond!\nAddendium(Chronological Order of Games):\n1. God of War: Ascension\n2. God of War: Chains of Olympus\n3. God of War\n4. God of War: Betrayal\n5. God of War: Ghost of Sparta\n6. God of War II\n7. God of War III\n8. God of War(2018)\n9. God of War Ragnarök"
   },
   {
     "reward": "Free Template Stacking depending on what Clan you are from (Madara Uchiha, Hashirama Senju, or Mito Uzumaki)",
@@ -2674,26 +3050,36 @@
     "scope": "Standard"
   },
   {
+    "reward": 2500,
+    "image": "https://i.imgur.com/vYDQarL.jpg",
+    "author": "Zaralann",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Brightest of her Generation",
+    "uid": "VOYXJ",
+    "loca": "Harry Potter",
+    "lewd": false,
+    "scope": "Grand",
     "objectives": [
       {
-        "value": "Hermione Jane Granger never encounters Harry James Potter and Ronald Billius Weasely on the train or befriends them before Sorting.",
         "reward": 100,
-        "type": "Credits"
+        "type": "Credits",
+        "value": "Hermione Jane Granger never encounters Harry James Potter and Ronald Billius Weasely on the train or befriends them before Sorting."
       },
       {
-        "type": "Credits",
         "reward": 100,
+        "type": "Credits",
         "value": "Hermione Jane Granger is Sorted into Raveclaw."
       },
       {
         "reward": 200,
-        "value": "Hermione Jane Granger joins Triwizard Tournament during her Fourth Year as a Legitimate Hogwarts Champion.",
-        "type": "Credits"
+        "type": "Credits",
+        "value": "Hermione Jane Granger joins Triwizard Tournament during her Fourth Year as a Legitimate Hogwarts Champion."
       },
       {
         "reward": 300,
-        "value": "Hermione Jane Granger takes First Place in very Event of the Triwizard Tournament.",
-        "type": "Credits"
+        "type": "Credits",
+        "value": "Hermione Jane Granger takes First Place in every Event of the Triwizard Tournament."
       },
       {
         "reward": 500,
@@ -2702,17 +3088,17 @@
       },
       {
         "reward": "You gain [Destiny Defense(II)] for Free.",
-        "value": "Hermione Jane Granger kills Tom Marvolo Riddle Jr.",
-        "type": "Perks"
+        "type": "Perks",
+        "value": "Hermione Jane Granger kills Tom Marvolo Riddle Jr."
       },
       {
+        "reward": "You gain [Mind Defense(II)] for Free.",
         "type": "Perks",
-        "value": "Hermione Jane Granger kills Albus Percival Wulfric Brian Dumbledore.",
-        "reward": "You gain [Mind Defense(II)] for Free."
+        "value": "Hermione Jane Granger kills Albus Percival Wulfric Brian Dumbledore."
       },
       {
-        "type": "Perks",
         "reward": "You gain [Fatality Defense(II)] for Free.",
+        "type": "Perks",
         "value": "Hermione Jane Granger kills Severus Snape."
       }
     ],
@@ -2739,18 +3125,8 @@
         "value": "Hermione Jane Granger must maintain First Place in Ranking of every Course she takes without cheating of any kind."
       }
     ],
-    "rewardType": "Credits",
-    "source": "",
-    "title": "Brightest of her Generation",
     "budget": 5,
-    "desc": "Hermione Jane Granger is said to be the Brightest Witch of her Generation, we must ensure that it's the Truth now. Wouldn't it be wonderful for her to be the one who actually received the recognition she deserved?",
-    "lewd": false,
-    "author": "Zaralann",
-    "loca": "Harry Potter",
-    "scope": "Grand",
-    "image": "https://i.imgur.com/vYDQarL.jpg",
-    "reward": 2500,
-    "uid": "VOYXJ"
+    "desc": "Hermione Jane Granger is said to be the Brightest Witch of her Generation, we must ensure that it's the Truth now. Wouldn't it be wonderful for her to be the one who actually received the recognition she deserved?"
   },
   {
     "scope": "Quick",

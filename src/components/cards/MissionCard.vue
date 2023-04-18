@@ -20,7 +20,7 @@
         <ci:heart-outline v-else />
       </span>
     </div>
-    <div class="max-h-sm overflow-hidden relative flex">
+    <div class="max-h-sm overflow-hidden relative flex justify-center">
       <img
         v-if="mission.image && settings.perkImages"
         ref="imageEl"

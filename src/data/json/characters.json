@@ -5253,8 +5253,8 @@
     "u": 1842,
     "n": "Jon Snow",
     "t": 3,
-    "i": "[n]vBCwJmd.jpg",
-    "s": "https://awoiaf.westeros.org/images/a/a0/Cristi_Balanescu_Jon_SnowGhost.png",
+    "i": "https://i.imgur.com/15EeRdkl.jpg",
+    "s": "https://i.imgur.com/15EeRdk.jpg",
     "w": "A Song of Ice and Fire",
     "b": [
       "M",
@@ -5312,6 +5312,7 @@
     "b": [
       "F",
       "C",
+      "ml",
       "ev",
       "rl",
       "sa"
@@ -22944,12 +22945,17 @@
     "u": 12354,
     "n": "Shirou Ogami",
     "t": 5,
-    "i": "5d1c16995348f2bb2d38e13e002f951b.jpg",
-    "s": "https://e621.net/posts/2359723",
+    "i": "[n]sWKXsln.jpg",
+    "s": "https://static1.e621.net/data/74/d8/74d84b6afab5f669f546bd0752dd8471.jpg",
     "w": "BNA:Brand New Animal",
     "b": [
-      "F"
-    ]
+      "M",
+      "dh",
+      "sr",
+      "rg",
+      "im"
+    ],
+    "in": "https://static1.e621.net/data/93/f6/93f6f0059b7c26a346c79a8476ffc826.jpg"
   },
   {
     "u": 12355,
@@ -25692,7 +25698,8 @@
       "dr",
       "vp",
       "pr",
-      "cm"
+      "cm",
+      "cs"
     ]
   },
   {
@@ -31809,7 +31816,8 @@
     "s": "https://e621.net/post/show/1985539",
     "w": "Deltarune",
     "b": [
-      "F"
+      "F",
+      "cm"
     ],
     "in": "https://static1.e621.net/data/ef/30/ef308beec1b8c69bc6bc28448ca4269b.jpg"
   },
@@ -40415,7 +40423,10 @@
     "s": "https://e621.net/post/show/1368060",
     "w": "Dreamkeepers",
     "b": [
-      "F"
+      "F",
+      "dr",
+      "hl",
+      "cm"
     ]
   },
   {
@@ -43198,6 +43209,7 @@
     "i": "https://i.imgur.com/rkdhl6bl.jpg",
     "w": "The Elder Scrolls",
     "b": [
+      "F",
       "C",
       "st",
       "hr",
@@ -44646,7 +44658,8 @@
       "me",
       "mi",
       "cm",
-      "ke"
+      "ke",
+      "gi"
     ],
     "d": "Alveraz Empire"
   },
@@ -44675,13 +44688,14 @@
     "b": [
       "F",
       "C",
-      "st",
       "hr",
       "ps",
       "bj",
       "dr",
       "pl",
       "cr",
+      "sc",
+      "di",
       "dg",
       "me",
       "sr",
@@ -51526,25 +51540,28 @@
     "u": 12426,
     "n": "Bonnie",
     "t": 4,
-    "i": "6b8e9011ef8b4f5f299c21dada493592.jpg",
-    "s": "https://e621.net/post/show/535462",
+    "i": "[n]ATzWZSc.jpg",
+    "s": "https://static1.e621.net/data/f1/3b/f13bef54ff62ecb348f2278204c8ba39.jpg",
     "w": "Five Nights At Freddy's",
     "b": [
-      "F"
+      "M",
+      "ai",
+      "im"
     ]
   },
   {
     "u": 12427,
     "n": "Mangle",
     "t": 4,
-    "i": "c061e3318df5db25979c3063e3e70a07.jpg",
-    "s": "https://e621.net/post/show/733461",
+    "i": "[n]hWYGnnA.jpg",
+    "s": "https://i.pinimg.com/originals/0f/e6/64/0fe664634c902590923fbd8f6c46457a.png",
     "w": "Five Nights At Freddy's",
     "b": [
       "O",
       "ai",
       "im"
-    ]
+    ],
+    "in": "https://static1.e621.net/data/57/2a/572aada135543b6340d334e8f67ef155.jpg"
   },
   {
     "u": 12428,
@@ -51565,13 +51582,14 @@
     "u": 12429,
     "n": "Toy Bonnie",
     "t": 4,
-    "i": "eb42761ab688311028332a2b2c1a8214.jpg",
-    "s": "https://e621.net/post/show/573114",
+    "i": "[n]NgrMERk.jpg",
+    "s": "https://static1.e621.net/data/68/76/68766fe0146948be223e2242b3f4729b.png",
     "w": "Five Nights At Freddy's",
     "b": [
-      "F",
+      "M",
       "ai",
-      "ad"
+      "ad",
+      "im"
     ]
   },
   {
@@ -51584,6 +51602,7 @@
     "b": [
       "M",
       "cl",
+      "id",
       "en",
       "ad",
       "ev",
@@ -51629,12 +51648,16 @@
     "u": 12433,
     "n": "Funtime Foxy",
     "t": 4,
-    "i": "57ad8901c368e4f084fa370a8df049da.jpg",
-    "s": "https://e621.net/post/show/557964",
+    "i": "[n]GbRsBTf.jpg",
+    "s": "https://static1.e621.net/data/60/b8/60b8d255205f232a858027c042d2738f.png",
     "w": "Five Nights At Freddy's",
     "b": [
-      "F"
-    ]
+      "F",
+      "ai",
+      "ad",
+      "im"
+    ],
+    "in": "https://static1.e621.net/data/81/58/81586b7f1349841b3ff782473f14ba13.jpg"
   },
   {
     "u": 12434,
@@ -51662,7 +51685,9 @@
     "w": "Five Nights At Freddy's",
     "b": [
       "F",
-      "ai"
+      "ai",
+      "ha",
+      "im"
     ]
   },
   {
@@ -51679,7 +51704,7 @@
   {
     "u": 10921,
     "n": "Megumi Tadokoro",
-    "t": 1,
+    "t": 3,
     "i": "6814f8dd434e52cfb7e692c4cb110f07.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/16918082",
     "w": "Food Wars!: Shokugeki no Soma",
@@ -51731,7 +51756,7 @@
   {
     "u": 10924,
     "n": "Rindo Kobayashi",
-    "t": 1,
+    "t": 3,
     "i": "sample_2a2755cc5176611b039d2308c0043d79.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/6459051",
     "w": "Food Wars!: Shokugeki no Soma",
@@ -51745,7 +51770,7 @@
   {
     "u": 10925,
     "n": "Mito Ikumi",
-    "t": 1,
+    "t": 2,
     "i": "sample_9b05e098819a609acaf148f26327bee9.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/6653784",
     "w": "Food Wars!: Shokugeki no Soma",
@@ -51758,7 +51783,7 @@
   {
     "u": 10926,
     "n": "Sakaki Ryoko",
-    "t": 1,
+    "t": 2,
     "i": "3ds_ry_c5_8dko_sakaki_chef_uniform.png",
     "s": "https://vignette.wikia.nocookie.net/shokugekinosoma/images/d/d2/3DS_Ry%C5%8Dko_Sakaki_Chef_Uniform.png/revision/latest?cb=20151221133326",
     "w": "Food Wars!: Shokugeki no Soma",
@@ -51771,7 +51796,7 @@
   {
     "u": 10927,
     "n": "Arato Hisako",
-    "t": 1,
+    "t": 2,
     "i": "sample_4a0e477fa6fb452b849bab474bf13787.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/17665987",
     "w": "Food Wars!: Shokugeki no Soma",
@@ -51784,7 +51809,7 @@
   {
     "u": 10928,
     "n": "Yoshino Yuki",
-    "t": 1,
+    "t": 2,
     "i": "3ds_y_c5_abki_yoshino_chef_uniform.png",
     "s": "https://vignette.wikia.nocookie.net/shokugekinosoma/images/e/e0/3DS_Y%C5%ABki_Yoshino_Chef_Uniform.png/revision/latest?cb=20151221133329",
     "w": "Food Wars!: Shokugeki no Soma",
@@ -51821,7 +51846,7 @@
   {
     "u": 10931,
     "n": "Akanegakubo Momo",
-    "t": 1,
+    "t": 3,
     "i": "sample_38c1f8f5e877a66fe818290334f4c136.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/18257982",
     "w": "Food Wars!: Shokugeki no Soma",
@@ -51834,7 +51859,7 @@
   {
     "u": 10932,
     "n": "Sadatsuka Nao",
-    "t": 1,
+    "t": 2,
     "i": "nao_white__28anime_29.png",
     "s": "https://vignette.wikia.nocookie.net/shokugekinosoma/images/1/16/Nao_white_%28anime%29.png/revision/latest?cb=20150829012739",
     "w": "Food Wars!: Shokugeki no Soma",
@@ -51847,7 +51872,7 @@
   {
     "u": 10933,
     "n": "Hojo Miyoko",
-    "t": 1,
+    "t": 2,
     "i": "sample_f7296d929b9e7f8f3c47b11263d4b743.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/4815211",
     "w": "Food Wars!: Shokugeki no Soma",
@@ -58935,12 +58960,17 @@
     "u": 587,
     "n": "Luna",
     "t": 5,
-    "i": "npc_zoom_3030180000_01.png",
-    "s": "https://gbf.wiki/images/0/0d/Npc_zoom_3030180000_01.png",
+    "i": "[n]Ywnnael.jpg",
+    "s": "https://cdn.donmai.us/sample/8d/b0/__luna_shadowverse_drawn_by_snm_sunimi__sample-8db0b1876e23f1d849c7bd91954ca448.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "lv",
+      "cm",
+      "fa",
+      "nc"
+    ],
+    "d": "Shadowverse"
   },
   {
     "u": 3547,
@@ -58950,117 +58980,164 @@
     "s": "https://danbooru.donmai.us/posts/4404073?q=sen_no_kiseki",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "hl",
+      "lv",
+      "cf",
+      "cm"
     ]
   },
   {
     "u": 4339,
     "n": "Anna",
     "t": 5,
-    "i": "npc_zoom_3030095000_01.png",
-    "s": "https://gbf.wiki/images/3/35/Npc_zoom_3030095000_01.png",
+    "i": "[n]HiqQXMs.jpg",
+    "s": "https://cdn.donmai.us/sample/c1/58/__anna_granblue_fantasy_drawn_by_minaba_hideo__sample-c1580b15993ca937e44e19792bef7b22.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "lv",
+      "wh",
+      "me",
+      "cm",
+      "fa"
     ]
   },
   {
     "u": 4459,
     "n": "Anastasia",
     "t": 5,
-    "i": "npc_zoom_3030160000_02.png",
-    "s": "https://gbf.wiki/images/3/31/Npc_zoom_3030160000_02.png",
+    "i": "[n]tonRMZf.jpg",
+    "s": "https://cdn.donmai.us/sample/a5/ff/__anastasia_idolmaster_and_2_more_drawn_by_minaba_hideo__sample-a5ffc3de397bf59a7815239760e2fbdc.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "lv",
+      "me",
+      "cm"
+    ],
+    "d": "Idolmaster"
   },
   {
     "u": 4638,
     "n": "Mina",
     "t": 5,
-    "i": "npc_zoom_3030176000_01.png",
-    "s": "https://gbf.wiki/images/b/b8/Npc_zoom_3030176000_01.png",
+    "i": "[n]VCKXsLP.jpg",
+    "s": "https://cdn.donmai.us/sample/5e/42/__mina_granblue_fantasy_and_1_more_drawn_by_minaba_hideo__sample-5e42affe20280859b164818dac9cc75c.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "lv",
+      "me",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/original/a0/f0/__mina_granblue_fantasy_and_1_more_drawn_by_sasakura__a0f0ab61e7c4b08ef26a2a71e235b29f.png",
+    "d": "Shingeki no Bahamut"
   },
   {
     "u": 4752,
     "n": "Erin",
     "t": 5,
-    "i": "npc_zoom_3030164000_01.png",
-    "s": "https://gbf.wiki/images/4/4c/Npc_zoom_3030164000_01.png",
+    "i": "[n]tvlqBoZ.jpg",
+    "s": "https://cdn.donmai.us/sample/a3/04/__erin_granblue_fantasy_drawn_by_minaba_hideo__sample-a30408a514a82af30d95d565b93c2534.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "hl",
+      "lv",
+      "dh",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/original/d3/69/__erin_granblue_fantasy_drawn_by_kanekiyo_miwa__d36903645e3430b01935fb734d751498.png"
   },
   {
     "u": 5835,
     "n": "Sophia",
     "t": 6,
-    "i": "npc_zoom_3040024000_01.png",
-    "s": "https://gbf.wiki/images/5/5f/Npc_zoom_3040024000_01.png",
+    "i": "[n]WDSCldu.jpg",
+    "s": "https://cdn.donmai.us/original/11/50/__sophia_granblue_fantasy_drawn_by_yaman__1150a04c9520bf342afb83bcb556fb5d.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "hl",
+      "lv",
+      "pt",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/sample/47/24/__sophia_granblue_fantasy_drawn_by_cle_masahiro__sample-47240457a1df579b5751cd843c8cf5a2.jpg"
   },
   {
     "u": 6218,
     "n": "Jessica",
     "t": 6,
-    "i": "npc_zoom_3030159000_01.png",
-    "s": "https://gbf.wiki/images/4/4e/Npc_zoom_3030159000_01.png",
+    "i": "[n]niITVik.jpg",
+    "s": "https://cdn.donmai.us/sample/3e/30/__jessica_granblue_fantasy_drawn_by_minaba_hideo__sample-3e30021974ebe776ac41d1a3ae1cc9ff.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "lv",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/original/b6/c4/__jessica_granblue_fantasy_drawn_by_naha78__b6c4d3f2867046d4a59503f007ffedd1.jpg"
   },
   {
     "u": 6723,
     "n": "Lily",
     "t": 6,
-    "i": "npc_zoom_3040007000_03.png",
-    "s": "https://gbf.wiki/images/9/9a/Npc_zoom_3040007000_03.png",
+    "i": "[n]fSDDete.jpg",
+    "s": "https://cdn.donmai.us/original/e6/46/__lily_granblue_fantasy_drawn_by_sakura_ani__e646dfe11c5a83288f4a2664a5564cc3.png",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "hl",
+      "lv",
+      "dh",
+      "me",
+      "pc",
+      "cm"
     ]
   },
   {
     "u": 7354,
     "n": "Dorothy",
     "t": 5,
-    "i": "npc_zoom_3030058000_01.png",
-    "s": "https://gbf.wiki/images/d/df/Npc_zoom_3030058000_01.png",
+    "i": "[n]vtMyGmS.jpg",
+    "s": "https://cdn.donmai.us/sample/f4/36/__dorothy_granblue_fantasy_drawn_by_minaba_hideo__sample-f43616a8cf4ecf596f92453527d2b12c.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "lv",
+      "md",
+      "cm"
     ]
   },
   {
     "u": 13472,
     "n": "Abby",
     "t": 5,
-    "i": "npc_zoom_3030011000_01.png",
-    "s": "https://gbf.wiki/images/5/50/Npc_zoom_3030011000_01.png",
+    "i": "[n]BCeXJDa.jpg",
+    "s": "https://cdn.donmai.us/sample/05/35/__abby_granblue_fantasy_and_1_more_drawn_by_minaba_hideo__sample-05353c18d6aa7f6f12b40508ffbaa2e6.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "lv",
+      "cm",
+      "fa"
+    ],
+    "d": "Shingeki no Bahamut"
   },
   {
     "u": 13473,
     "n": "Agielba",
     "t": 6,
-    "i": "ame_dagako__82bcb9cd96a513c4bdd290959ccb92a6.png",
-    "s": "https://cdn.donmai.us/original/82/bc/__ardora_and_agielba_granblue_fantasy_drawn_by_norasame_dagako__82bcb9cd96a513c4bdd290959ccb92a6.png",
+    "i": "[n]MxTjRsA.jpg",
+    "s": "https://cdn.donmai.us/sample/13/25/__agielba_granblue_fantasy_drawn_by_minaba_hideo__sample-1325b8d01937d20f244602a37f39d586.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "M",
+      "lv",
+      "dh",
+      "cm"
     ]
   },
   {
@@ -59079,12 +59156,17 @@
     "u": 13475,
     "n": "Airi Totoki",
     "t": 5,
-    "i": "airitotoki_a.png",
-    "s": "https://gbf.wiki/images/c/cf/AiriTotoki_A.png",
+    "i": "[n]XBJOsdM.jpg",
+    "s": "https://cdn.donmai.us/original/0c/6b/__totoki_airi_idolmaster_and_2_more_drawn_by_minaba_hideo__0c6b5a04f0efe64fa50d926d6259a54e.png",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "lv",
+      "ar",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/original/e4/e7/__totoki_airi_idolmaster_and_2_more_drawn_by_urokoda__e4e73b64fe8e39d6f4713b9e2a88a427.png",
+    "d": "Idolmaster"
   },
   {
     "u": 13478,
@@ -59102,34 +59184,52 @@
     "u": 13479,
     "n": "Alexiel",
     "t": 6,
-    "i": "npc_zoom_3040158000_01.png",
-    "s": "https://gbf.wiki/images/9/92/Npc_zoom_3040158000_01.png",
+    "i": "[n]TcJrAlT.jpg",
+    "s": "https://cdn.donmai.us/sample/95/a7/__godsworn_alexiel_granblue_fantasy_drawn_by_hinahino__sample-95a7d0693560e8d0312c5be276dc4bd0.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "hz",
+      "cl",
+      "lv",
+      "de",
+      "cm",
+      "im"
+    ],
+    "in": "https://cdn.donmai.us/sample/07/13/__godsworn_alexiel_granblue_fantasy_drawn_by_cream_cod__sample-0713c32783264b6c7291a0208b9a4e4e.jpg"
   },
   {
     "u": 13481,
     "n": "Aliza",
     "t": 6,
-    "i": "npc_zoom_3040083000_01.png",
-    "s": "https://gbf.wiki/images/b/b3/Npc_zoom_3040083000_01.png",
+    "i": "[n]Jkvsohj.jpg",
+    "s": "https://cdn.donmai.us/sample/e7/8f/__aliza_granblue_fantasy_drawn_by_shibano_kaito__sample-e78f3b495db79ffd109167f660198b4c.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "lv",
+      "dh",
+      "pc",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/sample/ea/e4/__aliza_granblue_fantasy_drawn_by_fuya_tempupupu__sample-eae436eb5f8fa4d4d7189c118cfb66dd.jpg"
   },
   {
     "u": 13482,
     "n": "Almeida",
     "t": 5,
-    "i": "npc_zoom_3030139000_01.png",
-    "s": "https://gbf.wiki/images/8/86/Npc_zoom_3030139000_01.png",
+    "i": "[n]GEVkcLs.jpg",
+    "s": "https://cdn.donmai.us/sample/20/ed/__almeida_granblue_fantasy_drawn_by_minaba_hideo__sample-20ed3a8648c40f36b61ebcb039c98d7c.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "hr",
+      "lv",
+      "dh",
+      "cc",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/original/52/f2/__almeida_granblue_fantasy_drawn_by_tenken_gotannda__52f2827f9ef6797a6a96e20a571c992c.jpg"
   },
   {
     "u": 13484,
@@ -59139,184 +59239,265 @@
     "s": "https://chan.sankakucomplex.com/post/show/7538822",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "lv",
+      "dm",
+      "an",
+      "sr",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/original/ee/de/__amira_granblue_fantasy_drawn_by_tenken_gotannda__eedeaefafe8fe80cc4b00ca755d6ba79.jpg",
+    "d": "Shingeki no Bahamut"
   },
   {
     "u": 13485,
     "n": "Andira",
     "t": 6,
-    "i": "npc_zoom_3040071000_01.png",
-    "s": "https://gbf.wiki/images/7/7a/Npc_zoom_3040071000_01.png",
+    "i": "[n]Ckdnqrm.jpg",
+    "s": "https://cdn.donmai.us/sample/62/65/__andira_granblue_fantasy_drawn_by_minaba_hideo__sample-62651e114f686ae0b28339205b63003c.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "lv",
+      "dh",
+      "cm"
     ]
   },
   {
     "u": 13486,
     "n": "Ange",
     "t": 5,
-    "i": "npc_zoom_3030012000_01.png",
-    "s": "https://gbf.wiki/images/4/45/Npc_zoom_3030012000_01.png",
+    "i": "[n]IvHArxU.jpg",
+    "s": "https://cdn.donmai.us/sample/d1/4a/__ange_granblue_fantasy_drawn_by_minaba_hideo__sample-d14a6be8c7045bd53445027b77665b84.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "lv",
+      "cm"
     ]
   },
   {
     "u": 13487,
     "n": "Anila",
     "t": 6,
-    "i": "npc_zoom_3040027000_01.png",
-    "s": "https://gbf.wiki/images/a/a5/Npc_zoom_3040027000_01.png",
+    "i": "[n]lzojFrj.jpg",
+    "s": "https://cdn.donmai.us/sample/c8/06/__anila_granblue_fantasy_drawn_by_minaba_hideo__sample-c80643999931108e6988f9bfcc2e2ab1.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "lv",
+      "dh",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/sample/d5/67/__anila_granblue_fantasy_drawn_by_aldehyde__sample-d56785114f514b7bd72506bc28c8d365.jpg"
   },
   {
     "u": 13488,
     "n": "Anne",
     "t": 6,
-    "i": "npc_zoom_3040132000_01.png",
-    "s": "https://gbf.wiki/images/b/bf/Npc_zoom_3040132000_01.png",
+    "i": "[n]JFBOhjX.jpg",
+    "s": "https://cdn.donmai.us/sample/63/03/__anne_granblue_fantasy_and_1_more_drawn_by_minaba_hideo__sample-630383662f63a1062b7927ef5022a56d.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "lv",
+      "me",
+      "pc",
+      "cm",
+      "Summoner"
+    ],
+    "in": "https://cdn.donmai.us/sample/fb/95/__anne_granblue_fantasy_and_1_more_drawn_by_efuri_riarea00__sample-fb950462da13bf394cd698847cbd3546.jpg",
+    "d": "Shingeki no Bahamut"
   },
   {
     "u": 13490,
     "n": "Anthuria",
     "t": 6,
-    "i": "npc_zoom_3040103000_01.png",
-    "s": "https://gbf.wiki/images/1/19/Npc_zoom_3040103000_01.png",
+    "i": "[n]VAqOiEU.jpg",
+    "s": "https://cdn.donmai.us/original/af/6f/__anthuria_granblue_fantasy_drawn_by_villyane__af6fbaa5a4576ffc64fad740762111b1.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "lv",
+      "dh",
+      "ar",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/sample/49/fc/__anthuria_granblue_fantasy_drawn_by_shinjitsu_true_ride__sample-49fcaafa34768025944bebcf2bf4cd9c.jpg"
   },
   {
     "u": 13491,
     "n": "Anzu Futaba",
     "t": 5,
-    "i": "anzufutaba_a.png",
-    "s": "https://gbf.wiki/images/3/3c/AnzuFutaba_A.png",
+    "i": "[n]NtgnfuH.jpg",
+    "s": "https://cdn.donmai.us/sample/7b/d6/__futaba_anzu_idolmaster_and_2_more_drawn_by_hamidashi_kun__sample-7bd6a14689a76a4b951e5c1d183261fb.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "lv",
+      "ar",
+      "cm"
+    ],
+    "d": "Idolmaster"
   },
   {
     "u": 13493,
     "n": "Aqours First-Years",
     "t": 6,
-    "i": "npc_zoom_3040184000_01.png",
-    "s": "https://gbf.wiki/images/a/a4/Npc_zoom_3040184000_01.png",
+    "i": "[n]LHvrptP.jpg",
+    "s": "https://cdn.donmai.us/original/d2/79/d2799dea545698fb03f70e41bdd0e0e1.png",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "hl",
+      "lv",
+      "mi",
+      "ar",
+      "cm"
+    ],
+    "d": "Love Live! Sunshine!!"
   },
   {
     "u": 13494,
     "n": "Aqours Second-Years",
     "t": 6,
-    "i": "npc_zoom_3040183000_01.png",
-    "s": "https://gbf.wiki/images/7/76/Npc_zoom_3040183000_01.png",
+    "i": "[n]NWbwhWy.jpg",
+    "s": "https://cdn.donmai.us/original/2a/51/2a5147e39087501c414d18d31312db48.png",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "lv",
+      "mi",
+      "ar",
+      "cm"
+    ],
+    "d": "Love Live! Sunshine!!"
   },
   {
     "u": 13495,
     "n": "Aqours Third-Years",
     "t": 6,
-    "i": "npc_zoom_3040185000_01.png",
-    "s": "https://gbf.wiki/images/3/37/Npc_zoom_3040185000_01.png",
+    "i": "[n]aoeiKjL.jpg",
+    "s": "https://cdn.donmai.us/original/da/36/da36fea8c39955867b7c748762abd21c.png",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "lv",
+      "mi",
+      "ar",
+      "cm"
+    ],
+    "d": "Love Live! Sunshine!!"
   },
   {
     "u": 13496,
     "n": "Arisa",
     "t": 5,
-    "i": "npc_zoom_3030179000_02.png",
-    "s": "https://gbf.wiki/images/d/dc/Npc_zoom_3030179000_02.png",
+    "i": "[n]NZbCEbk.jpg",
+    "s": "https://cdn.donmai.us/sample/d3/ea/__arisa_granblue_fantasy_and_1_more_drawn_by_minaba_hideo__sample-d3ead015f0086d3afa0aac3081b54726.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "hr",
+      "lv",
+      "el",
+      "cm"
+    ],
+    "d": "Shadowverse"
   },
   {
     "u": 13497,
     "n": "Arriet",
     "t": 6,
-    "i": "npc_zoom_3040058000_01.png",
-    "s": "https://gbf.wiki/images/e/eb/Npc_zoom_3040058000_01.png",
+    "i": "[n]wWhfmJk.jpg",
+    "s": "https://cdn.donmai.us/sample/09/8c/__arriet_granblue_fantasy_and_1_more_drawn_by_minaba_hideo__sample-098ccd65c2be87d3ce5e6f1ae2291285.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "lv",
+      "ar",
+      "cm"
+    ],
+    "d": "Shingeki no Bahamut"
   },
   {
     "u": 13500,
     "n": "Arulumaya",
     "t": 6,
-    "i": "npc_zoom_3040019000_01.png",
-    "s": "https://gbf.wiki/images/b/bb/Npc_zoom_3040019000_01.png",
+    "i": "[n]ARCyDER.jpg",
+    "s": "https://cdn.donmai.us/sample/6d/fa/__arulumaya_granblue_fantasy_drawn_by_shirabi__sample-6dfadc1a3cd8cc17147366e40802fdaa.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "di",
+      "dn",
+      "lv",
+      "dh",
+      "me",
+      "cm"
     ]
   },
   {
     "u": 13501,
     "n": "Arusha",
     "t": 5,
-    "i": "npc_zoom_3030036000_01.png",
-    "s": "https://gbf.wiki/images/b/b9/Npc_zoom_3030036000_01.png",
+    "i": "[n]IVAxltb.jpg",
+    "s": "https://cdn.donmai.us/sample/43/35/__arusha_granblue_fantasy_drawn_by_minaba_hideo__sample-43355340a2d02fb5d71bcc6d0c626d33.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "lv",
+      "dh",
+      "me",
+      "cm"
     ]
   },
   {
     "u": 13502,
     "n": "Aster",
     "t": 5,
-    "i": "npc_zoom_3030268000_02.png",
-    "s": "https://gbf.wiki/images/4/4c/Npc_zoom_3030268000_02.png",
+    "i": "[n]SZajmgd.jpg",
+    "s": "https://cdn.donmai.us/original/2b/63/2b63dc47003018a0ccab206e3c9d2422.png",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "lv",
+      "dh",
+      "cm"
     ]
   },
   {
     "u": 13503,
     "n": "Athena",
     "t": 8,
-    "i": "npc_zoom_3040202000_01.png",
-    "s": "https://gbf.wiki/images/3/32/Npc_zoom_3040202000_01.png",
+    "i": "[n]ONMylNo.jpg",
+    "s": "https://cdn.donmai.us/sample/55/5c/__athena_granblue_fantasy_drawn_by_minaba_hideo__sample-555ccac9939c8b1fb798f866f9a9eccb.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "lv",
+      "gd",
+      "cm",
+      "im",
+      "fa"
+    ],
+    "in": "https://cdn.donmai.us/original/35/6a/__athena_granblue_fantasy_drawn_by_nt00__356acaf31ad23e3eb45dd394f1edd513.jpg"
   },
   {
     "u": 13504,
     "n": "Augusta",
     "t": 5,
-    "i": "npc_zoom_3030143000_01.png",
-    "s": "https://gbf.wiki/images/a/ae/Npc_zoom_3030143000_01.png",
+    "i": "[n]tMIkdFk.jpg",
+    "s": "https://cdn.donmai.us/original/27/57/__augusta_granblue_fantasy_drawn_by_himuro_shunsuke__275766c294e5881f127a2065de6e7775.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "lv",
+      "dh",
+      "ar",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/sample/3a/e6/__augusta_granblue_fantasy_drawn_by_mathiamo13__sample-3ae69c1877e8215bf45962c0116c32bf.jpg"
   },
   {
     "u": 13508,
@@ -59326,136 +59507,184 @@
     "s": "https://i.redd.it/n4totlkqd8y81.png",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "lv",
+      "dh",
+      "cb",
+      "cm"
     ]
   },
   {
     "u": 13511,
     "n": "Beatrix",
     "t": 6,
-    "i": "npc_zoom_3040070000_01.png",
-    "s": "https://gbf.wiki/images/8/8c/Npc_zoom_3040070000_01.png",
+    "i": "[n]rDBKZaK.jpg",
+    "s": "https://cdn.donmai.us/sample/f3/c5/__beatrix_granblue_fantasy_drawn_by_minaba_hideo__sample-f3c540fcd2690f6eb2633d323b11e527.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "lv",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/sample/c1/cc/__beatrix_granblue_fantasy_drawn_by_akitsuki_karasu__sample-c1cc90f7c655e96fd5a331ed45036009.jpg"
   },
   {
     "u": 13512,
     "n": "Black Knight",
     "t": 6,
-    "i": "9428439a43c06ffaa34b65a81aa594bc.png",
-    "s": "https://chan.sankakucomplex.com/post/show/5694287",
+    "i": "[n]uuqfFtD.jpg",
+    "s": "https://cdn.donmai.us/sample/a7/f3/__black_knight_granblue_fantasy_drawn_by_suzumushi__sample-a7f3f94085a2a76c656e94c36c66177d.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "lv",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/sample/76/cd/__black_knight_granblue_fantasy_drawn_by_cafekun__sample-76cd7b198d54a4a3c4ea423860666227.jpg"
   },
   {
     "u": 13513,
     "n": "Bridgette",
     "t": 4,
-    "i": "npc_zoom_3020048000_01.png",
-    "s": "https://gbf.wiki/images/6/62/Npc_zoom_3020048000_01.png",
+    "i": "[n]YShVNIN.jpg",
+    "s": "https://cdn.donmai.us/sample/9b/74/__bridgette_granblue_fantasy_drawn_by_minaba_hideo__sample-9b74415ce1d460ab1a4973c20079c8f9.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "lv",
+      "dh",
+      "cm"
     ]
   },
   {
     "u": 13514,
     "n": "Cagliostro",
     "t": 6,
-    "i": "npc_zoom_3040009000_01.png",
-    "s": "https://gbf.wiki/images/f/ff/Npc_zoom_3040009000_01.png",
+    "i": "[n]MopZsKJ.jpg",
+    "s": "https://cdn.donmai.us/original/f9/01/__cagliostro_and_ouroboros_granblue_fantasy_drawn_by_fang_xue_jun__f901710df5f8d400db88b6052449e54f.jpg",
     "w": "Granblue Fantasy",
     "b": [
       "F",
       "st",
+      "mt",
       "bj",
       "sc",
       "di",
       "hl",
+      "lv",
+      "sn",
       "me",
-      "gn"
-    ]
+      "gn",
+      "cc",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/sample/a2/6b/__cagliostro_granblue_fantasy_drawn_by_10shock__sample-a26b7e7684e7c2e545c70672d069b8e1.jpg"
   },
   {
     "u": 13515,
     "n": "Cailana",
     "t": 5,
-    "i": "npc_zoom_3030251000_01.png",
-    "s": "https://gbf.wiki/images/a/a4/Npc_zoom_3030251000_01.png",
+    "i": "[n]kmKhUTB.jpg",
+    "s": "https://cdn.donmai.us/sample/85/5a/__cailana_granblue_fantasy_drawn_by_minaba_hideo__sample-855a23ed80d3618e62cf8c9333d57f21.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "lv",
+      "dh",
+      "cm"
     ]
   },
   {
     "u": 13518,
     "n": "Camieux",
     "t": 5,
-    "i": "npc_zoom_3020047000_02.png",
-    "s": "https://gbf.wiki/images/c/ca/Npc_zoom_3020047000_02.png",
+    "i": "[n]XExsdSL.jpg",
+    "s": "https://cdn.donmai.us/sample/19/2f/__camieux_granblue_fantasy_drawn_by_minaba_hideo__sample-192f81447c83d26c2dbb2c3c5ff869f7.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "lv",
+      "dh",
+      "cc",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/sample/c4/71/__camieux_granblue_fantasy_and_1_more_drawn_by_fuyuzora__sample-c4719952db22e4a4fbc81d6d5e928c0e.jpg"
   },
   {
     "u": 13519,
     "n": "Carmelina",
     "t": 6,
-    "i": "npc_zoom_3040042000_01.png",
-    "s": "https://gbf.wiki/images/1/1d/Npc_zoom_3040042000_01.png",
+    "i": "[n]qUjraRz.jpg",
+    "s": "https://cdn.donmai.us/sample/35/bf/__carmelina_granblue_fantasy_drawn_by_minaba_hideo__sample-35bf07809afd1041be17f803ac4e0d67.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "lv",
+      "dh",
+      "ar",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/sample/d9/2b/__carmelina_granblue_fantasy_drawn_by_oohira_sunset__sample-d92b3e0fd900d0e7546779f93a846a3c.jpg"
   },
   {
     "u": 13520,
     "n": "Carren",
     "t": 5,
-    "i": "npc_zoom_3030046000_01.png",
-    "s": "https://gbf.wiki/images/c/cb/Npc_zoom_3030046000_01.png",
+    "i": "[n]staYLiU.jpg",
+    "s": "https://cdn.donmai.us/sample/df/3f/__carren_granblue_fantasy_drawn_by_minaba_hideo__sample-df3f12d7f2a2baab04ee9b563c06a184.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "lv",
+      "cm"
     ]
   },
   {
     "u": 13522,
     "n": "Catherine",
     "t": 6,
-    "i": "npc_zoom_3040074000_01.png",
-    "s": "https://gbf.wiki/images/f/f4/Npc_zoom_3040074000_01.png",
+    "i": "[n]pcfjiSj.jpg",
+    "s": "https://cdn.donmai.us/sample/12/f8/__catherine_granblue_fantasy_drawn_by_minaba_hideo__sample-12f817a0741a60414bb84df5b1b3be37.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "lv",
+      "dh",
+      "cm",
+      "sh"
+    ],
+    "in": "https://cdn.donmai.us/sample/da/29/__catherine_granblue_fantasy_drawn_by_tachibana_yuu__sample-da29146a53cdd650d8df8bd2a5d84b68.jpg"
   },
   {
     "u": 13523,
     "n": "Cecile",
     "t": 5,
-    "i": "npc_zoom_3030146000_01.png",
-    "s": "https://gbf.wiki/images/0/0e/Npc_zoom_3030146000_01.png",
+    "i": "[n]vurYimi.jpg",
+    "s": "https://cdn.donmai.us/sample/19/41/__cecile_granblue_fantasy_drawn_by_minaba_hideo__sample-1941cf8af172f6bf7bf979aac33163bb.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "lv",
+      "dh",
+      "ar",
+      "cm"
     ]
   },
   {
     "u": 13524,
     "n": "Cerberus",
     "t": 6,
-    "i": "npc_zoom_3040016000_01.png",
-    "s": "https://gbf.wiki/images/9/9e/Npc_zoom_3040016000_01.png",
+    "i": "[n]unpIOdo.jpg",
+    "s": "https://cdn.donmai.us/original/e4/91/__cerberus_granblue_fantasy_and_1_more_drawn_by_fukai_ryosuke__e4917916b083073f54f0d1d2a16d28fd.png",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "lv",
+      "dm",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/original/61/49/__cerberus_granblue_fantasy_and_1_more_drawn_by_akishima_kei__614958491039ca86eb3bdb9d1ebc374e.jpg",
+    "d": "Shingeki no Bahamut"
   },
   {
     "u": 13525,
@@ -59473,68 +59702,85 @@
     "u": 13527,
     "n": "Charlotta",
     "t": 6,
-    "i": "npc_zoom_3040010000_81.png",
-    "s": "https://gbf.wiki/images/9/91/Npc_zoom_3040010000_81.png",
+    "i": "[n]lqINBAZ.jpg",
+    "s": "https://cdn.donmai.us/sample/72/34/__charlotta_granblue_fantasy_and_1_more_drawn_by_minaba_hideo__sample-723471782de9fb7594a5514cf1210a4b.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "lv",
+      "dh",
+      "cm"
     ]
   },
   {
     "u": 13528,
     "n": "Chat Noir",
     "t": 6,
-    "i": "61c857de0a796aa8187f8fc8caadda1b.png",
-    "s": "https://cs.sankakucomplex.com/data/61/c8/61c857de0a796aa8187f8fc8caadda1b.png?e=1593158754&m=fTYAsYIzGa02cRv6ENGvGQ",
+    "i": "[n]VhKbkHx.jpg",
+    "s": "https://cdn.donmai.us/sample/67/d3/__chat_noir_granblue_fantasy_drawn_by_minaba_hideo__sample-67d302714c7f87a88d844951f21500dd.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "M",
+      "cm",
+      "sh"
     ]
   },
   {
     "u": 13529,
     "n": "Chloe",
     "t": 5,
-    "i": "npc_zoom_3020059000_01.png",
-    "s": "https://gbf.wiki/images/c/c2/Npc_zoom_3020059000_01.png",
+    "i": "[n]SDWYnjf.jpg",
+    "s": "https://cdn.donmai.us/sample/51/2b/__chloe_granblue_fantasy_drawn_by_minaba_hideo__sample-512bc133470c86e5538aee1c9ed5404f.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "dh",
+      "cm"
     ]
   },
   {
     "u": 13530,
     "n": "Christina",
     "t": 6,
-    "i": "npc_zoom_3040018000_01.png",
-    "s": "https://gbf.wiki/images/9/95/Npc_zoom_3040018000_01.png",
+    "i": "[n]TXoeqSV.jpg",
+    "s": "https://cdn.donmai.us/original/bf/ef/__christina_granblue_fantasy_drawn_by_minaba_hideo__bfefdf2ad94a5c040633067224692e2b.png",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "ml",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/sample/dc/d2/__christina_granblue_fantasy_drawn_by_freedom_nakai__sample-dcd2be539615e6f380d8122cb7f5ddc8.jpg"
   },
   {
     "u": 13531,
     "n": "Clarisse",
     "t": 6,
-    "i": "npc_zoom_3040046000_01.png",
-    "s": "https://gbf.wiki/images/9/9a/Npc_zoom_3040046000_01.png",
+    "i": "[n]IkccTKg.jpg",
+    "s": "https://cdn.donmai.us/sample/a8/ce/__clarisse_granblue_fantasy_and_1_more__sample-a8ce5ce3a9a104abfa91316f1b985f43.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "st",
+      "gn",
+      "cc",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/sample/de/93/__clarisse_granblue_fantasy_drawn_by_oniilus__sample-de93af1110d63615496b06d65d30f7f8.jpg"
   },
   {
     "u": 13532,
     "n": "Claudia",
     "t": 5,
-    "i": "npc_zoom_3030057000_01.png",
-    "s": "https://gbf.wiki/images/b/b8/Npc_zoom_3030057000_01.png",
+    "i": "[n]afWJWUw.jpg",
+    "s": "https://cdn.donmai.us/sample/33/0c/__claudia_granblue_fantasy_drawn_by_minaba_hideo__sample-330cf7a4eb131496a5475082ada75678.jpg",
     "w": "Granblue Fantasy",
     "b": [
       "F",
-      "md"
-    ]
+      "md",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/sample/c8/c5/__claudia_granblue_fantasy_drawn_by_crystal_shoujo__sample-c8c58ecc7fe96025b78e7fd730f9c713.jpg"
   },
   {
     "u": 13533,
@@ -59544,85 +59790,109 @@
     "s": "https://chan.sankakucomplex.com/post/show/5725870",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "O",
+      "hz",
+      "cm",
+      "im",
+      "Primal Beast"
+    ],
+    "in": "https://cdn.donmai.us/sample/86/ac/__colo_mag_chan_and_colossus_original_and_1_more_drawn_by_bai_linqin__sample-86ac5542811591cd003286ae0ffacc9b.jpg"
   },
   {
     "u": 13534,
     "n": "Cordelia",
     "t": 4,
-    "i": "[n]TerQWmc.jpg",
+    "i": "[n]xBtvmxp.jpg",
     "w": "Granblue Fantasy",
     "b": [
       "F",
       "cm"
     ],
-    "s": "https://i.pinimg.com/originals/71/fc/1c/71fc1c3173aca89619f3cccc1712aaab.jpg"
+    "s": "https://cdn.donmai.us/sample/66/bd/__cordelia_granblue_fantasy_drawn_by_minaba_hideo__sample-66bd500b98c0c36aea3ad59342eaa56e.jpg"
   },
   {
     "u": 13535,
     "n": "Cucouroux",
     "t": 6,
-    "i": "npc_zoom_3040159000_01.png",
-    "s": "https://gbf.wiki/images/9/9d/Npc_zoom_3040159000_01.png",
+    "i": "[n]phQMUYk.jpg",
+    "s": "https://cdn.donmai.us/sample/98/00/__cucouroux_granblue_fantasy_drawn_by_minaba_hideo__sample-9800cf0cb9ab30f1fff437246ffe481b.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "cc",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/sample/9b/4e/__cucouroux_granblue_fantasy_drawn_by_stir255__sample-9b4e8279eedd45c87ea22b5118d452d5.jpg"
   },
   {
     "u": 13536,
     "n": "Daetta",
     "t": 5,
-    "i": "npc_zoom_3020024000_01.png",
-    "s": "https://gbf.wiki/images/a/a5/Npc_zoom_3020024000_01.png",
+    "i": "[n]FUqzQvk.jpg",
+    "s": "https://cdn.donmai.us/original/22/10/22106806479d4e12b27f0c49adc17814.png",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "dh",
+      "cm"
     ]
   },
   {
     "u": 13538,
     "n": "Danua",
     "t": 6,
-    "i": "npc_zoom_3040256000_01.png",
-    "s": "https://gbf.wiki/images/5/5f/Npc_zoom_3040256000_01.png",
+    "i": "[n]JdMsghg.jpg",
+    "s": "https://cdn.donmai.us/sample/cf/ba/__danua_hansel_and_gretel_granblue_fantasy_drawn_by_oopartz_yang__sample-cfba6fdad020cd18ce97f5707a04a8c6.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "dh",
+      "cm",
+      "fa",
+      "Puppeteer"
+    ],
+    "in": "https://cdn.donmai.us/sample/ea/7d/__danua_hansel_and_gretel_granblue_fantasy_drawn_by_oopartz_yang__sample-ea7d3862945ce1b5432350712ecdab8c.jpg"
   },
   {
     "u": 13539,
     "n": "De La Fille",
     "t": 6,
-    "i": "npc_zoom_3040004000_01.png",
-    "s": "https://gbf.wiki/images/1/11/Npc_zoom_3040004000_01.png",
+    "i": "[n]TbkVOzS.jpg",
+    "s": "https://cdn.donmai.us/sample/00/f0/__de_la_fille_granblue_fantasy_drawn_by_minaba_hideo__sample-00f04b6aa4a19756e07aad21d5793da0.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "ml",
+      "hl",
+      "cm"
     ]
   },
   {
     "u": 13541,
     "n": "Diantha",
     "t": 6,
-    "i": "summon_b_2030068000.png",
-    "s": "https://gbf.wiki/images/thumb/c/cc/Summon_b_2030068000.png/611px-Summon_b_2030068000.png",
+    "i": "[n]moYEOeR.jpg",
+    "s": "https://cdn.donmai.us/sample/2c/cb/__diantha_granblue_fantasy_drawn_by_minaba_hideo__sample-2ccb2cc674a33bceda5ed1a7c2682863.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "hl",
+      "ar",
+      "cm"
     ]
   },
   {
     "u": 13543,
     "n": "Drusilla",
     "t": 4,
-    "i": "npc_zoom_3020063000_01.png",
-    "s": "https://gbf.wiki/images/6/6a/Npc_zoom_3020063000_01.png",
+    "i": "[n]xyrXDhi.jpg",
+    "s": "https://cdn.donmai.us/sample/04/91/__drusilla_granblue_fantasy_drawn_by_minaba_hideo__sample-049106afd904007deb1696d1dda9f7e5.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "dh",
+      "cm",
+      "fa"
     ]
   },
   {
@@ -65863,7 +66133,12 @@
     "w": "High School DxD",
     "b": [
       "M",
-      "dm"
+      "mt",
+      "pl",
+      "cr",
+      "mo",
+      "dm",
+      "cm"
     ],
     "s": "https://i.imgur.com/yEdVE1F.jpg"
   },
@@ -65880,6 +66155,7 @@
       "dr",
       "sr",
       "rg",
+      "pr",
       "cm",
       "fa"
     ]
@@ -65892,18 +66168,19 @@
     "w": "High School DxD",
     "b": [
       "M",
+      "mt",
       "ml",
       "ps",
       "sc",
       "ip",
-      "sl",
       "an",
       "en",
       "sn",
       "me",
       "gn",
       "rl",
-      "sy"
+      "cm",
+      "pm"
     ],
     "s": "https://i.imgur.com/Qk7uNNI.jpg"
   },
@@ -65932,11 +66209,17 @@
     "b": [
       "M",
       "ml",
+      "dr",
+      "id",
+      "pl",
+      "cr",
       "dm",
       "dg",
+      "th",
       "sd",
       "pr",
-      "cm"
+      "cm",
+      "pm"
     ],
     "in": "https://cdn.statically.io/gh/klassekatze/waifucatimg/master/imagecache_thumb/sample_bd082944b267ede5fa9751a619f8b6d9.jpg"
   },
@@ -65948,6 +66231,9 @@
     "w": "High School DxD",
     "b": [
       "M",
+      "ps",
+      "pl",
+      "ip",
       "an",
       "rl"
     ],
@@ -65980,6 +66266,8 @@
       "ml",
       "ps",
       "id",
+      "pl",
+      "cr",
       "ip",
       "ih",
       "sl",
@@ -66002,6 +66290,7 @@
       "M",
       "cl",
       "dr",
+      "id",
       "dm",
       "dg",
       "me",
@@ -66435,6 +66724,9 @@
     "b": [
       "F",
       "C",
+      "mt",
+      "id",
+      "ih",
       "an",
       "cm"
     ]
@@ -66559,6 +66851,7 @@
     "b": [
       "F",
       "C",
+      "pl",
       "sl",
       "an",
       "cm",
@@ -66830,9 +67123,7 @@
       "F",
       "C",
       "ps",
-      "id",
       "ip",
-      "ih",
       "hl",
       "dm",
       "sd",
@@ -66888,6 +67179,8 @@
       "F",
       "C",
       "cl",
+      "pl",
+      "cr",
       "hl",
       "dm",
       "sd",
@@ -67027,12 +67320,17 @@
       "C",
       "dr",
       "id",
+      "pl",
+      "sc",
+      "di",
+      "dn",
       "hl",
       "rs",
+      "pc",
       "vp",
-      "rl",
       "rg",
-      "im"
+      "im",
+      "pm"
     ]
   },
   {
@@ -67067,6 +67365,9 @@
       "F",
       "C",
       "cl",
+      "ps",
+      "pl",
+      "ip",
       "an",
       "sy",
       "os"
@@ -67964,7 +68265,7 @@
   {
     "u": 5674,
     "n": "Gawr Gura",
-    "t": 4,
+    "t": 6,
     "i": "sou__sample_d6d78150fd1dbcaa8f8be9a7b3bd0eb8.jpg",
     "s": "https://danbooru.donmai.us/posts/4225199",
     "w": "Hololive (HoloMyth)",
@@ -72657,6 +72958,10 @@
     "b": [
       "F",
       "C",
+      "cl",
+      "py",
+      "pr",
+      "cm",
       "Stand User"
     ],
     "d": "Stone Ocean",
@@ -78879,7 +79184,8 @@
     "b": [
       "F",
       "C",
-      "me"
+      "me",
+      "fa"
     ],
     "in": "https://pictures.hentai-foundry.com/e/Eduuux/543980/Eduuux-543980-Annie_creampie.png"
   },
@@ -88949,7 +89255,7 @@
     "t": 5,
     "i": "a47b1b161e3e44dadbb28a9d2bb3dde6.jpg",
     "s": "https://e621.net/post/show/1014935",
-    "w": "Mario series",
+    "w": "Mario Series",
     "b": [
       "F"
     ]
@@ -88960,7 +89266,7 @@
     "t": 6,
     "i": "685d7f632e7156f5a07c3bd68f5ae6c2.jpg",
     "s": "https://e621.net/post/show/1566563",
-    "w": "Mario series",
+    "w": "Mario Series",
     "b": [
       "F"
     ],
@@ -88972,7 +89278,7 @@
     "t": 1,
     "i": "0573ec9f74dd73645d7cdf03b9800a35.jpg",
     "s": "https://e621.net/posts/1342876",
-    "w": "Mario series",
+    "w": "Mario Series",
     "b": [
       "F"
     ]
@@ -88983,7 +89289,7 @@
     "t": 5,
     "i": "044535456185987f82d0dde5358de611.jpg",
     "s": "https://e621.net/post/show/1801490",
-    "w": "Mario series",
+    "w": "Mario Series",
     "b": [
       "F"
     ]
@@ -88993,7 +89299,7 @@
     "n": "Goomba",
     "t": 2,
     "i": "https://i.imgur.com/lQfjUtkl.png",
-    "w": "Mario series",
+    "w": "Mario Series",
     "b": [
       "M",
       "mr",
@@ -89008,7 +89314,7 @@
     "t": 2,
     "i": "282bd24e4a2304a63ce6a8dbe833a92d.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/5777617",
-    "w": "Mario series",
+    "w": "Mario Series",
     "b": [
       "M",
       "ge"
@@ -89020,7 +89326,7 @@
     "t": 3,
     "i": "sample_eb2e36e7eb1c35adf4c4ebd4da60174e.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/7220301",
-    "w": "Mario series",
+    "w": "Mario Series",
     "b": [
       "M",
       "ge"
@@ -89032,7 +89338,7 @@
     "t": 3,
     "i": "sample_82525d2e71485af29ab5cf4d7984b7ce.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/7196925",
-    "w": "Mario series",
+    "w": "Mario Series",
     "b": [
       "M"
     ]
@@ -89043,7 +89349,7 @@
     "t": 3,
     "i": "sample_f997a98cd31a24771f7e824d405ecd5f.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/7196993",
-    "w": "Mario series",
+    "w": "Mario Series",
     "b": [
       "M",
       "mr",
@@ -89056,7 +89362,7 @@
     "t": 3,
     "i": "5aae2f1e016cad10ad5e257e999365a2.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/7190210",
-    "w": "Mario series",
+    "w": "Mario Series",
     "b": [
       "M"
     ]
@@ -89067,7 +89373,7 @@
     "t": 4,
     "i": "sample_2412cc967e9b92e97d9c95f1a6fde2fd.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/7399411",
-    "w": "Mario series",
+    "w": "Mario Series",
     "b": [
       "M",
       "ge"
@@ -89079,7 +89385,7 @@
     "t": 4,
     "i": "5547dd57fc385f980f64b86174ea7a0a.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/7334113",
-    "w": "Mario series",
+    "w": "Mario Series",
     "b": [
       "M"
     ]
@@ -89090,7 +89396,7 @@
     "t": 5,
     "i": "sample_bf3f46b156ec9293ce57e8f3a82040ad.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/7546701",
-    "w": "Mario series",
+    "w": "Mario Series",
     "b": [
       "M"
     ]
@@ -89101,7 +89407,7 @@
     "t": 5,
     "i": "[n]RinwNSW.jpg",
     "s": "https://cdn.donmai.us/original/b9/84/__luigi_mario_drawn_by_hiyashimeso__b98468c28dd39678f00cdf115e769d6b.jpg",
-    "w": "Mario series",
+    "w": "Mario Series",
     "b": [
       "M",
       "pr"
@@ -89113,7 +89419,7 @@
     "t": 5,
     "i": "[n]cKxqMxN.jpg",
     "s": "https://i.pinimg.com/736x/38/0d/ca/380dca991ba1e67b4da07f088c07905f--mario-room-super-mario-bros.jpg",
-    "w": "Mario series",
+    "w": "Mario Series",
     "b": [
       "M",
       "mt",
@@ -89127,7 +89433,7 @@
     "n": "Bowser",
     "t": 6,
     "i": "[n]Bowser-SFW.jpg",
-    "w": "Mario series",
+    "w": "Mario Series",
     "b": [
       "M",
       "id",
@@ -89145,7 +89451,7 @@
     "i": "d72eb6209c297030ed3b4ec5e31ff8aa.jpg",
     "in": "https://i.imgur.com/sLlBcn9.png",
     "s": "https://chan.sankakucomplex.com/post/show/18591252",
-    "w": "Mario series",
+    "w": "Mario Series",
     "b": [
       "F",
       "C"
@@ -89157,7 +89463,7 @@
     "t": 3,
     "i": "9b8a56ae184b5dda48d324ed48f3b0b4.png",
     "s": "https://chan.sankakucomplex.com/post/show/505214",
-    "w": "Mario series",
+    "w": "Mario Series",
     "b": [
       "F",
       "C"
@@ -89170,7 +89476,7 @@
     "i": "sample_7caefba83ae8395d025e2e9a96d69776.jpg",
     "in": "https://i.redd.it/gclqsy21v3n51.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/14796060",
-    "w": "Mario series",
+    "w": "Mario Series",
     "b": [
       "F",
       "C",
@@ -89183,7 +89489,7 @@
     "t": 4,
     "i": "sample_45959e1862a568279641b930fcb94009.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/3339622",
-    "w": "Mario series",
+    "w": "Mario Series",
     "b": [
       "F",
       "C"
@@ -89196,7 +89502,7 @@
     "i": "sample_417c4e099bdb1addb720261b491100cf.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/14730093",
     "in": "https://cdn.discordapp.com/attachments/925963623229177896/926899525392662528/a34562b93621f9e2e10bf001877481c1.jpeg",
-    "w": "Mario series",
+    "w": "Mario Series",
     "b": [
       "F",
       "C",
@@ -89213,7 +89519,7 @@
     "t": 6,
     "i": "sample_f7cda639dc1d199642190f59f895ca4f.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/7541303",
-    "w": "Mario series",
+    "w": "Mario Series",
     "b": [
       "F",
       "C",
@@ -89233,7 +89539,7 @@
     "i": "sample_14b468d9cd78badb14febe2129285fe1.jpg",
     "in": "https://peach.paheal.net/_images/618297a906bb2b80903067d95ff299f1/2387611%20-%20Princess_Rosalina%20Super_Mario_Bros.%20Super_Mario_Galaxy%20menoziriath.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/6995770",
-    "w": "Mario series",
+    "w": "Mario Series",
     "b": [
       "F",
       "C",
@@ -89247,7 +89553,7 @@
     "t": 5,
     "i": "[n]sample-f858ab4ea00dd0b2fa84024419de465e.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/7197038",
-    "w": "Mario series",
+    "w": "Mario Series",
     "b": [
       "M",
       "dg"
@@ -90334,14 +90640,22 @@
   },
   {
     "u": 5281,
-    "n": "Elza Bloodstone",
-    "t": 4,
-    "i": "[n]STL139946.jpg",
-    "s": "https://www.previewsworld.com/SiteImage/CatalogImage/STL139946?type=0",
+    "n": "Elsa Bloodstone",
+    "t": 5,
+    "i": "https://i.imgur.com/vQryDbZl.jpeg",
+    "s": "https://i.imgur.com/vQryDbZ.jpeg",
     "w": "Marvel",
     "b": [
-      "F"
-    ]
+      "F",
+      "ps",
+      "bj",
+      "dr",
+      "id",
+      "rg",
+      "cm",
+      "im"
+    ],
+    "d": "Marvel (616)"
   },
   {
     "u": 5282,
@@ -92427,13 +92741,16 @@
     "u": 6536,
     "n": "Shiranui Hansode",
     "t": 6,
-    "i": "emu__sample_448c32fba088a7ee02d4371cf2a63d85.jpg",
-    "s": "https://danbooru.donmai.us/posts/1142567",
+    "i": "[n]UjUpfgP.jpg",
+    "s": "https://cdn.donmai.us/sample/44/8c/__shiranui_hansode_medaka_box_drawn_by_pemu__sample-448c32fba088a7ee02d4371cf2a63d85.jpg",
     "w": "Medaka Box",
     "b": [
       "F",
       "C",
-      "sd"
+      "sd",
+      "nj",
+      "sr",
+      "pm"
     ]
   },
   {
@@ -93008,7 +93325,9 @@
     "w": "Metroid",
     "b": [
       "F",
-      "C"
+      "C",
+      "sr",
+      "cm"
     ]
   },
   {
@@ -100655,7 +100974,7 @@
   {
     "u": 430,
     "n": "Aizawa Shota/ Eraserhead",
-    "t": 4,
+    "t": 5,
     "i": "[n]2025601.jpg",
     "s": "https://wallpaperaccess.com/full/2025601.jpg",
     "w": "My Hero Academia",
@@ -100963,7 +101282,7 @@
     "t": 7,
     "i": "https://i.imgur.com/WtBCLldl.jpg",
     "s": "https://i.imgur.com/WtBCLld.jpg",
-    "w": "My Hero Academia",
+    "w": "All Might / Toshinori Yagi",
     "b": [
       "M",
       "cl",
@@ -105479,6 +105798,7 @@
       "cl",
       "dr",
       "sc",
+      "di",
       "fm",
       "sl",
       "fn",
@@ -105643,7 +105963,6 @@
       "id",
       "sc",
       "fm",
-      "ih",
       "sl",
       "fn",
       "lm",
@@ -106687,8 +107006,8 @@
     "u": 13953,
     "n": "Kirei Kotomine",
     "t": 5,
-    "i": "2d359b6f4c3253dcbfbbe5b5a0f7c6d9.jpg",
-    "s": "https://chan.sankakucomplex.com/post/show/5385296",
+    "i": "[n]DOJPqjc.jpg",
+    "s": "https://gamepress.gg/grandorder/sites/grandorder/files/2022-12/369_Grigori%20Rasputin_1.png",
     "w": "Nasuverse",
     "b": [
       "M",
@@ -112603,13 +112922,14 @@
   },
   {
     "u": 12586,
-    "n": "Parappa",
+    "n": "PaRappa",
     "t": 3,
-    "i": "218ea0d51b0efc3a45858e3e6eccfdb7.jpg",
-    "s": "https://e621.net/post/show/1856410",
+    "i": "https://i.imgur.com/3vSWVsAl.png",
+    "s": "https://i.imgur.com/3vSWVsA.png",
     "w": "PaRappa the Rapper",
     "b": [
-      "F"
+      "M",
+      "ar"
     ]
   },
   {
@@ -114555,7 +114875,9 @@
     "w": "Pokemon",
     "b": [
       "F",
-      "C"
+      "C",
+      "mt",
+      "mo"
     ],
     "d": "7/Alola"
   },
@@ -115385,13 +115707,13 @@
     "u": 5530,
     "n": "Hunter J",
     "t": 5,
-    "i": "[n]ccc1aa98d7b052fa39065d5500d02c558eba2bab403e17be427dc74e156acadd_thumb.png",
+    "i": "https://imgur.com/S6gzpC7l.png",
     "w": "Pokemon",
     "b": [
       "F",
       "C"
     ],
-    "s": "https://thicc.mywaifulist.moe/waifus/29631/ccc1aa98d7b052fa39065d5500d02c558eba2bab403e17be427dc74e156acadd_thumb.png",
+    "s": "https://imgur.com/S6gzpC7.png",
     "d": "Anime Only"
   },
   {
@@ -115414,7 +115736,7 @@
     "n": "Bulbasaur",
     "t": 3,
     "i": "https://i.imgur.com/OtTsmIvl.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "O",
       "mr",
@@ -115429,7 +115751,7 @@
     "n": "Ivysaur",
     "t": 4,
     "i": "[n]pokemonimage49.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "O",
       "mr",
@@ -115443,7 +115765,7 @@
     "n": "Venusaur",
     "t": 6,
     "i": "https://i.imgur.com/s3OiDmel.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "O",
       "mr",
@@ -115457,7 +115779,7 @@
     "n": "Charmander",
     "t": 3,
     "i": "[n]pokemonimage84.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "mr"
     ]
@@ -115467,7 +115789,7 @@
     "n": "Charmeleon",
     "t": 4,
     "i": "[n]charmown.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "mr",
       "cm"
@@ -115480,7 +115802,7 @@
     "n": "Charizard",
     "t": 6,
     "i": "https://i.imgur.com/OzqAjQHl.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "F",
       "mr",
@@ -115495,7 +115817,7 @@
     "n": "Squirtle",
     "t": 3,
     "i": "[n]pokemonimage121.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "O",
       "mr",
@@ -115508,7 +115830,7 @@
     "n": "Wartortle",
     "t": 4,
     "i": "https://i.imgur.com/81W4obGl.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "O",
       "mr",
@@ -115522,7 +115844,7 @@
     "n": "Blastoise",
     "t": 6,
     "i": "https://i.imgur.com/q8KzKWLl.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "O",
       "mr",
@@ -115536,7 +115858,7 @@
     "n": "Caterpie",
     "t": 2,
     "i": "https://i.imgur.com/LvN8yXtl.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "O",
       "mr",
@@ -115550,7 +115872,7 @@
     "n": "Metapod",
     "t": 2,
     "i": "https://i.imgur.com/9xArBCul.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "O",
       "mr",
@@ -115564,17 +115886,20 @@
     "n": "Butterfree",
     "t": 4,
     "i": "[n]pokemonimage79.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
-    ]
+      "O",
+      "mr",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12674,
     "n": "Weedle",
     "t": 2,
     "i": "https://i.imgur.com/Tc7o61yl.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "O",
       "mr",
@@ -115588,7 +115913,7 @@
     "n": "Kakuna",
     "t": 2,
     "i": "https://i.imgur.com/Bn8DnF1l.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "O",
       "mr",
@@ -115602,19 +115927,21 @@
     "n": "Beedrill",
     "t": 4,
     "i": "https://i.imgur.com/oUo9kMUl.jpg?1",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "F",
-      "mr"
+      "O",
+      "mr",
+      "ge"
     ],
-    "s": "https://i.imgur.com/oUo9kMU.jpg?1"
+    "s": "https://i.imgur.com/oUo9kMU.jpg?1",
+    "d": "1/Kanto"
   },
   {
     "u": 12677,
     "n": "Pidgey",
     "t": 3,
     "i": "https://i.imgur.com/KgdJIXwl.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "O",
       "mr",
@@ -115628,29 +115955,34 @@
     "n": "Pidgeotto",
     "t": 4,
     "i": "[n]pokemonimage99.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
-    ]
+      "O",
+      "mr",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12679,
     "n": "Pidgeot",
     "t": 6,
     "i": "https://i.imgur.com/tiXfPPdl.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "F",
-      "mr"
+      "O",
+      "mr",
+      "ge"
     ],
-    "s": "https://i.imgur.com/tiXfPPd.jpg"
+    "s": "https://i.imgur.com/tiXfPPd.jpg",
+    "d": "1/Kanto"
   },
   {
     "u": 12680,
     "n": "Rattata",
     "t": 3,
     "i": "https://i.imgur.com/4Q1iaBnl.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "F",
       "mr",
@@ -115664,17 +115996,20 @@
     "n": "Raticate",
     "t": 4,
     "i": "[n]pokemonimage16.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
-    ]
+      "O",
+      "mr",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12682,
     "n": "Spearow",
     "t": 3,
     "i": "https://i.imgur.com/EvoPAkRl.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "O",
       "mr",
@@ -115688,17 +116023,20 @@
     "n": "Fearow",
     "t": 4,
     "i": "[n]pokemonimage125.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
-    ]
+      "O",
+      "mr",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12684,
     "n": "Ekans",
     "t": 4,
     "i": "https://i.imgur.com/oKwmR2El.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "O",
       "mr",
@@ -115712,19 +116050,21 @@
     "n": "Arbok",
     "t": 5,
     "i": "https://i.imgur.com/kDozM9gl.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "F",
-      "mr"
+      "O",
+      "mr",
+      "ge"
     ],
-    "s": "https://i.imgur.com/kDozM9g.jpg"
+    "s": "https://i.imgur.com/kDozM9g.jpg",
+    "d": "1/Kanto"
   },
   {
     "u": 12686,
     "n": "Pikachu",
     "t": 4,
     "i": "[n]XgCBSQb.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "O",
       "mr",
@@ -115738,18 +116078,20 @@
     "n": "Raichu",
     "t": 5,
     "i": "[n]pokemonimage9.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
+      "O",
       "mr",
       "ge"
-    ]
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12688,
     "n": "Sandshrew",
     "t": 4,
     "i": "[n]pokemonimage113.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "O",
       "mr",
@@ -115762,17 +116104,20 @@
     "n": "Sandslash",
     "t": 5,
     "i": "[n]pokemonimage63.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
-    ]
+      "O",
+      "mr",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12690,
     "n": "Nidoran♀",
     "t": 3,
     "i": "https://i.imgur.com/X1Bi1Qzl.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "F",
       "mr",
@@ -115786,7 +116131,7 @@
     "n": "Nidorina",
     "t": 4,
     "i": "[n]pokemonimage104.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "F",
       "mr",
@@ -115799,17 +116144,20 @@
     "n": "Nidoqueen",
     "t": 5,
     "i": "[n]pokemonimage35.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
-    ]
+      "F",
+      "mr",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12693,
     "n": "Nidoran",
     "t": 3,
     "i": "https://i.imgur.com/2w1igxnl.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "M",
       "mr",
@@ -115823,7 +116171,7 @@
     "n": "Nidorino",
     "t": 4,
     "i": "[n]pokemonimage27.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "M",
       "mr",
@@ -115836,17 +116184,20 @@
     "n": "Nidoking",
     "t": 5,
     "i": "[n]pokemonimage50.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
-    ]
+      "M",
+      "mr",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12696,
     "n": "Clefairy",
     "t": 4,
     "i": "https://i.imgur.com/zMtt7Nxl.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "O",
       "mr",
@@ -115860,17 +116211,20 @@
     "n": "Clefable",
     "t": 5,
     "i": "[n]pokemonimage110.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
-    ]
+      "O",
+      "mr",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12698,
     "n": "Vulpix",
     "t": 4,
     "i": "[n]pokemonimage96.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "O",
       "mr",
@@ -115883,9 +116237,10 @@
     "n": "Ninetales",
     "t": 5,
     "i": "https://i.imgur.com/vmJUO1I.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "F",
+      "O",
       "ps",
       "fm",
       "ip",
@@ -115894,14 +116249,15 @@
       "sr",
       "ge"
     ],
-    "s": "https://i.imgur.com/vmJUO1I.jpg"
+    "s": "https://i.imgur.com/vmJUO1I.jpg",
+    "d": "1/Kanto"
   },
   {
     "u": 12700,
     "n": "Jigglypuff",
     "t": 4,
     "i": "https://i.imgur.com/kuuTxLtl.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "O",
       "mr",
@@ -115915,17 +116271,20 @@
     "n": "Wigglytuff",
     "t": 5,
     "i": "[n]pokemonimage3.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
-    ]
+      "O",
+      "mr",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12702,
     "n": "Zubat",
     "t": 3,
     "i": "https://i.imgur.com/TcDC5e5l.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "O",
       "mr",
@@ -115939,19 +116298,21 @@
     "n": "Golbat",
     "t": 4,
     "i": "[n]EFbdGwZ.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
+      "O",
       "mr",
       "ge"
     ],
-    "s": "https://img3.gelbooru.com//images/e6/f2/e6f25c80b729d278bbd0e6ee847ac029.jpeg"
+    "s": "https://img3.gelbooru.com//images/e6/f2/e6f25c80b729d278bbd0e6ee847ac029.jpeg",
+    "d": "1/Kanto"
   },
   {
     "u": 12704,
     "n": "Oddish",
     "t": 3,
     "i": "[n]pokemonimage82.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "O",
       "mr",
@@ -115964,29 +116325,34 @@
     "n": "Gloom",
     "t": 4,
     "i": "[n]pokemonimage123.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
-    ]
+      "O",
+      "mr",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12706,
     "n": "Vileplume",
     "t": 5,
     "i": "https://i.imgur.com/dMTVWW8.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "F",
-      "mr"
+      "O",
+      "mr",
+      "ge"
     ],
-    "s": "https://i.imgur.com/dMTVWW8.jpg"
+    "s": "https://i.imgur.com/dMTVWW8.jpg",
+    "d": "1/Kanto"
   },
   {
     "u": 12707,
     "n": "Paras",
     "t": 4,
     "i": "https://i.imgur.com/MYDv3P7l.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "O",
       "mr",
@@ -116000,7 +116366,7 @@
     "n": "Parasect",
     "t": 5,
     "i": "[n]BuYcwKt.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "O",
       "mr",
@@ -116008,34 +116374,41 @@
       "ev",
       "ge"
     ],
-    "s": "https://wallpapercave.com/dwp1x/wp2415148.jpg"
+    "s": "https://wallpapercave.com/dwp1x/wp2415148.jpg",
+    "d": "1/Kanto"
   },
   {
     "u": 12709,
     "n": "Venonat",
     "t": 4,
     "i": "[n]pokemonimage98.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
-    ]
+      "O",
+      "mr",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12710,
     "n": "Venomoth",
     "t": 5,
     "i": "[n]pokemonimage20.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
-    ]
+      "O",
+      "mr",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12711,
     "n": "Diglett",
     "t": 3,
     "i": "[n]pokemonimage56.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "O",
       "mr",
@@ -116048,7 +116421,7 @@
     "n": "Dugtrio",
     "t": 4,
     "i": "[n]pokemonimage39.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "O",
       "mr",
@@ -116061,7 +116434,7 @@
     "n": "Meowth",
     "t": 3,
     "i": "https://i.imgur.com/5aD1wSjl.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "O",
       "mr",
@@ -116075,37 +116448,46 @@
     "n": "Persian",
     "t": 4,
     "i": "[n]pokemonimage64.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
-    ]
+      "O",
+      "mr",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12715,
     "n": "Psyduck",
     "t": 4,
     "i": "[n]pokemonimage122.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
-    ]
+      "O",
+      "mr",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12716,
     "n": "Golduck",
     "t": 5,
     "i": "[n]pokemonimage32.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
-    ]
+      "O",
+      "mr",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12717,
     "n": "Mankey",
     "t": 4,
     "i": "https://i.imgur.com/MtsaBhdl.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "O",
       "mr",
@@ -116119,17 +116501,20 @@
     "n": "Primeape",
     "t": 5,
     "i": "[n]pokemonimage109.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
-    ]
+      "O",
+      "mr",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12719,
     "n": "Growlithe",
     "t": 4,
     "i": "[n]PDLeQDw.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "O",
       "sl",
@@ -116144,54 +116529,63 @@
     "n": "Arcanine",
     "t": 5,
     "i": "https://i.imgur.com/ddn5padl.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "F",
-      "mr"
+      "O",
+      "mr",
+      "ge"
     ],
-    "s": "https://i.imgur.com/ddn5pad.jpg"
+    "s": "https://i.imgur.com/ddn5pad.jpg",
+    "d": "1/Kanto"
   },
   {
     "u": 12721,
     "n": "Poliwag",
     "t": 3,
     "i": "[n]pokemonimage24.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
-    ]
+      "O",
+      "mr",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12722,
     "n": "Poliwhirl",
     "t": 4,
     "i": "[n]zLomyGH.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
+      "O",
+      "mr",
+      "ge"
     ],
-    "s": "https://wallpapercave.com/dwp1x/wp2421960.jpg"
+    "s": "https://wallpapercave.com/dwp1x/wp2421960.jpg",
+    "d": "1/Kanto"
   },
   {
     "u": 12723,
     "n": "Poliwrath",
     "t": 5,
     "i": "[n]uoCCaWx.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "O",
       "mr",
       "cm",
       "ge"
     ],
-    "s": "https://wallpapercave.com/dwp1x/wp2421974.jpg"
+    "s": "https://wallpapercave.com/dwp1x/wp2421974.jpg",
+    "d": "1/Kanto"
   },
   {
     "u": 12724,
     "n": "Abra",
     "t": 4,
     "i": "[n]YXLIoZv.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "O",
       "ps",
@@ -116210,34 +116604,38 @@
     "n": "Kadabra",
     "t": 5,
     "i": "https://i.imgur.com/0CLu67Al.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "F",
+      "O",
       "py",
-      "mr"
+      "mr",
+      "ge"
     ],
-    "s": "https://i.imgur.com/0CLu67A.png"
+    "s": "https://i.imgur.com/0CLu67A.png",
+    "d": "1/Kanto"
   },
   {
     "u": 12726,
     "n": "Alakazam",
     "t": 6,
     "i": "https://i.imgur.com/ZtenpUVl.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
+      "O",
       "py",
       "mr",
       "gn",
       "ge"
     ],
-    "s": "https://i.imgur.com/ZtenpUV.png"
+    "s": "https://i.imgur.com/ZtenpUV.png",
+    "d": "1/Kanto"
   },
   {
     "u": 12727,
     "n": "Machop",
     "t": 4,
     "i": "[n]flWkiZN.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "O",
       "mr",
@@ -116252,32 +116650,36 @@
     "n": "Machoke",
     "t": 5,
     "i": "[n]pokemonimage57.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
+      "O",
       "mr",
       "cm",
       "ge"
-    ]
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12729,
     "n": "Machamp",
     "t": 6,
     "i": "https://i.imgur.com/qZjdrspl.jpg?1",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
+      "O",
       "mr",
       "cm",
       "ge"
     ],
-    "s": "https://i.imgur.com/qZjdrsp.jpg?1"
+    "s": "https://i.imgur.com/qZjdrsp.jpg?1",
+    "d": "1/Kanto"
   },
   {
     "u": 12730,
     "n": "Bellsprout",
     "t": 3,
     "i": "https://i.imgur.com/VJ5TvhWl.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "O",
       "mr",
@@ -116291,47 +116693,59 @@
     "n": "Weepinbell",
     "t": 4,
     "i": "[n]pokemonimage93.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
-    ]
+      "O",
+      "mr",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12732,
     "n": "Victreebel",
     "t": 5,
     "i": "[n]pokemonimage83.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
-    ]
+      "O",
+      "mr",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12733,
     "n": "Tentacool",
     "t": 4,
     "i": "[n]pokemonimage21.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
-    ]
+      "O",
+      "mr",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12734,
     "n": "Tentacruel",
     "t": 5,
     "i": "[n]pokemonimage18.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
-    ]
+      "O",
+      "mr",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12735,
     "n": "Geodude",
     "t": 3,
     "i": "https://i.imgur.com/MGudxpjl.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "O",
       "mr",
@@ -116345,94 +116759,115 @@
     "n": "Graveler",
     "t": 4,
     "i": "[n]pokemonimage31.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
-    ]
+      "O",
+      "mr",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12737,
     "n": "Golem",
     "t": 6,
     "i": "[n]pokemonimage53.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
-    ]
+      "O",
+      "mr",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12738,
     "n": "Ponyta",
     "t": 4,
     "i": "[n]pokemonimage87.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
-    ]
+      "O",
+      "mr",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12739,
     "n": "Rapidash",
     "t": 5,
     "i": "[n]pokemonimage42.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
-    ]
+      "O",
+      "mr",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12740,
     "n": "Slowpoke",
     "t": 4,
     "i": "[n]pokemonimage102.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
-    ]
+      "O",
+      "mr",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12741,
     "n": "Slowbro",
     "t": 5,
     "i": "[n]SFntSyg.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
+      "O",
       "py",
       "mr",
       "ge"
     ],
-    "s": "https://e0.pxfuel.com/wallpapers/940/962/desktop-wallpaper-slowbro.jpg"
+    "s": "https://e0.pxfuel.com/wallpapers/940/962/desktop-wallpaper-slowbro.jpg",
+    "d": "1/Kanto"
   },
   {
     "u": 12742,
     "n": "Magnemite",
     "t": 4,
     "i": "[n]fHnTjCC.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
+      "O",
       "mr",
       "ge"
     ],
-    "s": "https://img3.gelbooru.com//samples/6f/e2/sample_6fe274947880bdd4d42779f2b4bf9d44.jpg"
+    "s": "https://img3.gelbooru.com//samples/6f/e2/sample_6fe274947880bdd4d42779f2b4bf9d44.jpg",
+    "d": "1/Kanto"
   },
   {
     "u": 12743,
     "n": "Magneton",
     "t": 5,
     "i": "[n]QaRPZuX.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
+      "O",
       "mr",
       "ge"
     ],
-    "s": "https://img3.gelbooru.com//images/f1/00/f100c2bfe5335ed3b3596d14dc4b3c22.jpg"
+    "s": "https://img3.gelbooru.com//images/f1/00/f100c2bfe5335ed3b3596d14dc4b3c22.jpg",
+    "d": "1/Kanto"
   },
   {
     "u": 12744,
     "n": "Farfetch'd",
     "t": 4,
     "i": "[n]pokemonimage41.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "O",
       "mr",
@@ -116445,87 +116880,111 @@
     "n": "Doduo",
     "t": 4,
     "i": "[n]pokemonimage12.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
-    ]
+      "O",
+      "mr",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12746,
     "n": "Dodrio",
     "t": 5,
     "i": "[n]pokemonimage72.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
-    ]
+      "O",
+      "mr",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12747,
     "n": "Seel",
     "t": 4,
     "i": "[n]pokemonimage130.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
-    ]
+      "O",
+      "mr",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12748,
     "n": "Dewgong",
     "t": 5,
     "i": "[n]pokemonimage43.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
-    ]
+      "O",
+      "mr",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12749,
     "n": "Grimer",
     "t": 4,
     "i": "[n]pokemonimage70.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
-    ]
+      "O",
+      "mr",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12750,
     "n": "Muk",
     "t": 5,
     "i": "[n]pokemonimage66.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
-    ]
+      "O",
+      "mr",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12751,
     "n": "Shellder",
     "t": 4,
     "i": "[n]pokemonimage8.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
-    ]
+      "O",
+      "mr",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12752,
     "n": "Cloyster",
     "t": 5,
     "i": "[n]pokemonimage69.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
-    ]
+      "O",
+      "mr",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12753,
     "n": "Gastly",
     "t": 4,
     "i": "[n]pokemonimage111.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "O",
       "ps",
@@ -116542,8 +117001,8 @@
     "u": 12754,
     "n": "Haunter",
     "t": 5,
-    "i": "[n]pokemonimage22.png",
-    "w": "Pokemon Expansion",
+    "i": "https://imgur.com/y0kwLjDl.png",
+    "w": "Pokemon",
     "b": [
       "O",
       "ps",
@@ -116553,14 +117012,15 @@
       "ir",
       "ge"
     ],
-    "d": "1/Kanto"
+    "d": "1/Kanto",
+    "s": "https://imgur.com/y0kwLjD.png"
   },
   {
     "u": 12755,
     "n": "Gengar",
     "t": 6,
     "i": "[n]pokemonimage89.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "ps",
       "dr",
@@ -116575,7 +117035,7 @@
     "n": "Onix",
     "t": 5,
     "i": "[n]pokemonimage103.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "O",
       "mr",
@@ -116588,7 +117048,7 @@
     "n": "Drowzee",
     "t": 4,
     "i": "[n]pokemonimage60.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "O",
       "mr",
@@ -116600,40 +117060,50 @@
     "u": 12758,
     "n": "Hypno",
     "t": 5,
-    "i": "[n]pokemonimage74.jpg",
-    "w": "Pokemon Expansion",
+    "i": "https://i.imgur.com/Ii2LKA1l.png",
+    "w": "Pokemon",
     "b": [
+      "O",
       "py",
       "ip",
-      "mr"
-    ]
+      "mr",
+      "ge"
+    ],
+    "s": "https://i.imgur.com/Ii2LKA1.png",
+    "d": "1/Kanto"
   },
   {
     "u": 12759,
     "n": "Krabby",
     "t": 4,
     "i": "[n]pokemonimage94.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
-    ]
+      "O",
+      "mr",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12760,
     "n": "Kingler",
     "t": 5,
     "i": "[n]pokemonimage7.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
-    ]
+      "O",
+      "mr",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12761,
     "n": "Voltorb",
     "t": 4,
     "i": "[n]pokemonimage55.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "O",
       "mr",
@@ -116646,7 +117116,7 @@
     "n": "Electrode",
     "t": 5,
     "i": "[n]pokemonimage19.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "mr"
     ]
@@ -116656,27 +117126,33 @@
     "n": "Exeggcute",
     "t": 4,
     "i": "[n]pokemonimage81.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
-    ]
+      "O",
+      "mr",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12764,
     "n": "Exeggutor",
     "t": 5,
     "i": "[n]pokemonimage34.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
-    ]
+      "O",
+      "mr",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12765,
     "n": "Cubone",
     "t": 4,
     "i": "[n]pokemonimage2.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "O",
       "mr",
@@ -116689,91 +117165,115 @@
     "n": "Marowak",
     "t": 5,
     "i": "[n]pokemonimage67.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
-    ]
+      "O",
+      "mr",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12767,
     "n": "Hitmonlee",
     "t": 5,
     "i": "[n]pokemonimage77.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
-    ]
+      "M",
+      "mr",
+      "cm",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12768,
     "n": "Hitmonchan",
     "t": 5,
     "i": "[n]pokemonimage44.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
-    ]
+      "M",
+      "mr",
+      "cm",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12769,
     "n": "Lickitung",
     "t": 4,
     "i": "[n]pokemonimage14.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
-    ]
+      "O",
+      "mr",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12770,
     "n": "Koffing",
     "t": 4,
     "i": "[n]pokemonimage133.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
-    ]
+      "O",
+      "mr",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12771,
     "n": "Weezing",
     "t": 5,
     "i": "[n]pokemonimage37.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
-    ]
+      "O",
+      "mr",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12772,
     "n": "Rhyhorn",
     "t": 5,
     "i": "[n]pokemonimage71.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
-    ]
+      "O",
+      "mr",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12773,
     "n": "Rhydon",
     "t": 6,
     "i": "[n]gRyTGOt.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "O",
       "hz",
       "mr",
       "ge"
     ],
-    "s": "https://wallpapercave.com/wp/wp2455103.jpg"
+    "s": "https://wallpapercave.com/wp/wp2455103.jpg",
+    "d": "1/Kanto"
   },
   {
     "u": 12774,
     "n": "Chansey",
     "t": 5,
     "i": "[n]jkuMgEE.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "F",
       "hl",
@@ -116781,94 +117281,119 @@
       "os",
       "ge"
     ],
-    "s": "https://cdn.donmai.us/sample/45/1d/__chansey_pokemon_drawn_by_naoki_eguchi__sample-451d9400014f174749f6b8aba2d1e2c4.jpg"
+    "s": "https://cdn.donmai.us/sample/45/1d/__chansey_pokemon_drawn_by_naoki_eguchi__sample-451d9400014f174749f6b8aba2d1e2c4.jpg",
+    "d": "1/Kanto"
   },
   {
     "u": 12775,
     "n": "Tangela",
     "t": 4,
     "i": "[n]pokemonimage54.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
-    ]
+      "O",
+      "mr",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12776,
     "n": "Kangaskhan",
     "t": 5,
     "i": "[n]pokemonimage62.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
-    ]
+      "F",
+      "mr",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12777,
     "n": "Horsea",
     "t": 4,
     "i": "[n]pokemonimage132.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
-    ]
+      "O",
+      "mr",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12778,
     "n": "Seadra",
     "t": 5,
     "i": "[n]pokemonimage135.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
-    ]
+      "O",
+      "mr",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12779,
     "n": "Goldeen",
     "t": 4,
     "i": "[n]pokemonimage58.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
-    ]
+      "O",
+      "mr",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12780,
     "n": "Seaking",
     "t": 5,
     "i": "[n]pokemonimage10.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
-    ]
+      "O",
+      "mr",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12781,
     "n": "Staryu",
     "t": 4,
     "i": "[n]pokemonimage46.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
-    ]
+      "O",
+      "mr",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12782,
     "n": "Starmie",
     "t": 5,
     "i": "[n]pokemonimage129.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
-    ]
+      "O",
+      "mr",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12783,
     "n": "Mr. Mime",
     "t": 5,
     "i": "[n]pokemonimage80.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "O",
       "mr",
@@ -116881,69 +117406,86 @@
     "n": "Scyther",
     "t": 5,
     "i": "[n]pokemonimage51.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
-    ]
+      "O",
+      "mr",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12785,
     "n": "Jynx",
     "t": 5,
     "i": "https://i.imgur.com/ia22Uqfl.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
+      "F",
+      "mr",
+      "ge"
     ],
-    "s": "https://i.imgur.com/ia22Uqf.jpg"
+    "s": "https://i.imgur.com/ia22Uqf.jpg",
+    "d": "1/Kanto"
   },
   {
     "u": 12786,
     "n": "Electabuzz",
     "t": 4,
     "i": "[n]pokemonimage91.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
-    ]
+      "O",
+      "mr",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12787,
     "n": "Magmar",
     "t": 4,
     "i": "[n]pokemonimage23.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
+      "O",
       "mr",
       "ge"
-    ]
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12788,
     "n": "Pinsir",
     "t": 5,
     "i": "[n]pokemonimage115.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
-    ]
+      "O",
+      "mr",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12789,
     "n": "Tauros",
     "t": 4,
     "i": "[n]pokemonimage134.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
-    ]
+      "M",
+      "mr",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12790,
     "n": "Magikarp",
     "t": 2,
     "i": "https://i.imgur.com/pHnMkRUl.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "O",
       "mr",
@@ -116957,54 +117499,64 @@
     "n": "Gyarados",
     "t": 6,
     "i": "[n]pokemonimage30.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
-    ]
+      "O",
+      "mr",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12792,
     "n": "Lapras",
     "t": 5,
     "i": "[n]pokemonimage78.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
+      "O",
       "hr",
       "sl",
       "mr",
       "ge"
-    ]
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12793,
     "n": "Ditto",
     "t": 5,
     "i": "https://i.imgur.com/t9NGQJWl.jpg?1",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "F",
-      "mr"
+      "O",
+      "mr",
+      "sr",
+      "ge"
     ],
-    "s": "https://i.imgur.com/t9NGQJW.jpg?1"
+    "s": "https://i.imgur.com/t9NGQJW.jpg?1",
+    "d": "1/Kanto"
   },
   {
     "u": 12794,
     "n": "Eevee",
     "t": 4,
     "i": "[n]pokemonimage131.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
+      "O",
       "mr",
       "sr",
       "ge"
-    ]
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12795,
     "n": "Vaporeon",
     "t": 5,
     "i": "[n]pokemonimage5.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "mr"
     ]
@@ -117014,7 +117566,7 @@
     "n": "Jolteon",
     "t": 5,
     "i": "[n]pokemonimage107.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "mr"
     ]
@@ -117024,7 +117576,7 @@
     "n": "Flareon",
     "t": 5,
     "i": "[n]pokemonimage97.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "mr"
     ]
@@ -117034,124 +117586,152 @@
     "n": "Porygon",
     "t": 5,
     "i": "https://i.imgur.com/ZK6QBbhl.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
+      "O",
       "sc",
       "mr",
       "ai",
       "ha",
       "ge"
     ],
-    "s": "https://i.imgur.com/ZK6QBbh.jpg"
+    "s": "https://i.imgur.com/ZK6QBbh.jpg",
+    "d": "1/Kanto"
   },
   {
     "u": 12799,
     "n": "Omanyte",
     "t": 4,
     "i": "[n]pokemonimage38.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
-    ]
+      "O",
+      "mr",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12800,
     "n": "Omastar",
     "t": 5,
     "i": "[n]pokemonimage106.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
-    ]
+      "O",
+      "mr",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12801,
     "n": "Kabuto",
     "t": 4,
     "i": "[n]pokemonimage65.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
-    ]
+      "O",
+      "mr",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12802,
     "n": "Kabutops",
     "t": 5,
     "i": "[n]pokemonimage90.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
-    ]
+      "O",
+      "mr",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12803,
     "n": "Aerodactyl",
     "t": 6,
     "i": "[n]pokemonimage29.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
-    ]
+      "O",
+      "mr",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12804,
     "n": "Snorlax",
     "t": 6,
     "i": "[n]pokemonimage61.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
+      "O",
       "mr",
       "ge"
-    ]
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12805,
     "n": "Articuno",
     "t": 6,
     "i": "[n]pokemonimage92.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
+      "O",
       "mr"
-    ]
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12806,
     "n": "Zapdos",
     "t": 6,
     "i": "[n]pokemonimage100.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
+      "O",
       "mr"
-    ]
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12807,
     "n": "Moltres",
     "t": 6,
     "i": "[n]pokemonimage15.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
+      "O",
       "mr"
-    ]
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12808,
     "n": "Dratini",
     "t": 5,
     "i": "[n]pokemonimage52.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
+      "O",
       "mr",
-      "dg"
-    ]
+      "dg",
+      "ge"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12809,
     "n": "Dragonair",
     "t": 5,
     "i": "[n]pokemonimage26.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "mr",
       "dg"
@@ -117162,7 +117742,7 @@
     "n": "Dragonite",
     "t": 6,
     "i": "https://i.imgur.com/CLoNQoWl.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "F",
       "mr",
@@ -117175,9 +117755,9 @@
     "n": "Mewtwo",
     "t": 9,
     "i": "https://i.imgur.com/8Odkl2Cl.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "F",
+      "O",
       "cl",
       "ps",
       "sc",
@@ -117190,35 +117770,43 @@
       "cm",
       "ke"
     ],
-    "s": "https://i.imgur.com/8Odkl2C.jpg"
+    "s": "https://i.imgur.com/8Odkl2C.jpg",
+    "d": "1/Kanto"
   },
   {
     "u": 12812,
     "n": "Mew",
     "t": 8,
     "i": "[n]jEZBTEi.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "s": "https://wallpapercave.com/wp/wp10244781.jpg",
     "b": [
       "O",
+      "st",
       "hz",
+      "mt",
       "ps",
       "ur",
       "sc",
       "di",
       "py",
       "ip",
+      "dn",
       "hl",
       "mr",
-      "sh"
-    ]
+      "sr",
+      "cm",
+      "sh",
+      "pm"
+    ],
+    "d": "1/Kanto"
   },
   {
     "u": 12818,
     "n": "Typhlosion",
     "t": 6,
     "i": "https://i.imgur.com/4HcFe3Nl.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "mr"
     ],
@@ -117229,7 +117817,7 @@
     "n": "Feraligatr",
     "t": 6,
     "i": "https://i.imgur.com/ZZqjATEl.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "mr"
     ],
@@ -117240,7 +117828,7 @@
     "n": "Pichu",
     "t": 3,
     "i": "[n]__pichu_pokemon_drawn_by_nullma__sample-86f09e99ea2de09ab02a578bd56921ac.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "mr"
     ],
@@ -117251,7 +117839,7 @@
     "n": "Cleffa",
     "t": 3,
     "i": "[n]__cleffa_pokemon_drawn_by_ayu_mog__f66529cb3a3be5b16707a004bb96df16.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "mr"
     ],
@@ -117262,7 +117850,7 @@
     "n": "Igglybuff",
     "t": 3,
     "i": "[n]7c650dde15f3d32fe4a65d2737b9a39a.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "mr"
     ],
@@ -117273,7 +117861,7 @@
     "n": "Togepi",
     "t": 4,
     "i": "[n]__togepi_pokemon_and_2_more__5b941cccebce7499baeeb6b6e1bb0c63.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "mr"
     ],
@@ -117284,7 +117872,7 @@
     "n": "Mareep",
     "t": 4,
     "i": "[n]__mareep_pokemon_drawn_by_kenko__1a83cd2dfe1f8f7b7cbd9266ca9e70df.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "mr"
     ],
@@ -117295,7 +117883,7 @@
     "n": "Bellossom",
     "t": 4,
     "i": "https://i.imgur.com/EfgStbD.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "F",
       "mr"
@@ -117307,9 +117895,11 @@
     "n": "Azumarill",
     "t": 5,
     "i": "https://i.imgur.com/my3c9ZWl.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
-      "mr"
+      "mr",
+      "cm",
+      "ge"
     ],
     "s": "https://i.imgur.com/my3c9ZW.png"
   },
@@ -117318,7 +117908,7 @@
     "n": "Politoed",
     "t": 5,
     "i": "[n]htbSERJ.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "mr"
     ],
@@ -117329,7 +117919,7 @@
     "n": "Espeon",
     "t": 5,
     "i": "https://i.imgur.com/eY2Ef3ql.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "hr",
       "ps",
@@ -117347,7 +117937,7 @@
     "n": "Misdreavus",
     "t": 5,
     "i": "https://i.imgur.com/Rx59bcAl.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "F",
       "mr",
@@ -117360,7 +117950,7 @@
     "n": "Unown",
     "t": 4,
     "i": "https://i.imgur.com/KcW6e4xl.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "ps",
       "py",
@@ -117374,7 +117964,7 @@
     "n": "Larvitar",
     "t": 4,
     "i": "https://i.imgur.com/5GFkkASl.jpeg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "mr"
     ],
@@ -117385,7 +117975,7 @@
     "n": "Lugia",
     "t": 8,
     "i": "https://i.imgur.com/Jdvg3Fll.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "hr",
       "hz",
@@ -117401,7 +117991,7 @@
     "n": "Ho-oh",
     "t": 8,
     "i": "https://i.imgur.com/ti6KSQql.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "O",
       "hr",
@@ -117418,7 +118008,7 @@
     "n": "Celebi",
     "t": 8,
     "i": "[n]aNviQnb.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "O",
       "ps",
@@ -117434,7 +118024,7 @@
     "n": "Treecko",
     "t": 4,
     "i": "[n]mWmkTHL.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "mr"
     ],
@@ -117445,7 +118035,7 @@
     "n": "Torchic",
     "t": 4,
     "i": "[n]DoYrYel.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "mr"
     ],
@@ -117456,7 +118046,7 @@
     "n": "Blaziken",
     "t": 6,
     "i": "https://i.imgur.com/5dwYbZVl.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "F",
       "mr"
@@ -117468,7 +118058,7 @@
     "n": "Mudkip",
     "t": 4,
     "i": "[n]IFmydVQ.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "mr"
     ],
@@ -117479,7 +118069,7 @@
     "n": "Ralts",
     "t": 4,
     "i": "[n]TDIinnM.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "s": "https://jacksjumpchainjournal.files.wordpress.com/2018/06/2.png",
     "b": [
       "mt",
@@ -117497,7 +118087,7 @@
     "t": 6,
     "i": "[n]GjXhaGf.jpg",
     "in": "https://i.imgur.com/yDiYJRe.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "mt",
       "ps",
@@ -117516,7 +118106,7 @@
     "n": "Shedinja",
     "t": 6,
     "i": "https://i.imgur.com/Igk5KLql.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "mr",
       "ir"
@@ -117528,7 +118118,7 @@
     "n": "Altaria",
     "t": 6,
     "i": "https://i.imgur.com/Tp7sZsol.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "mr",
       "dg",
@@ -117541,7 +118131,7 @@
     "n": "Beldum",
     "t": 3,
     "i": "[n]516px-Sugimori_374s.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "st",
       "hr",
@@ -117562,7 +118152,7 @@
     "n": "Metagross",
     "t": 6,
     "i": "[n]ETCbyMA.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "ps",
       "py",
@@ -117575,7 +118165,7 @@
     "n": "Regirock",
     "t": 7,
     "i": "https://i.imgur.com/ha0fAMJl.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "mr"
     ],
@@ -117586,7 +118176,7 @@
     "n": "Regice",
     "t": 7,
     "i": "https://i.imgur.com/3d05Uinl.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "mr"
     ],
@@ -117597,7 +118187,7 @@
     "n": "Registeel",
     "t": 7,
     "i": "https://i.imgur.com/DOo6WkKl.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "mr"
     ],
@@ -117608,7 +118198,7 @@
     "n": "Latias",
     "t": 7,
     "i": "https://i.imgur.com/mmDgX6fl.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "F",
       "ps",
@@ -117627,7 +118217,7 @@
     "n": "Latios",
     "t": 7,
     "i": "https://i.imgur.com/6apQIIql.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "ps",
       "py",
@@ -117640,7 +118230,7 @@
     "n": "Kyogre",
     "t": 8,
     "i": "[n]Kyogre.600.2310314.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "O",
       "hr",
@@ -117655,7 +118245,7 @@
     "n": "Rayquaza",
     "t": 8,
     "i": "https://i.imgur.com/DIIpo5Cl.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "mr",
       "dg"
@@ -117667,7 +118257,7 @@
     "n": "Lopunny",
     "t": 5,
     "i": "https://i.imgur.com/7pOwx8Al.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "F",
       "mr",
@@ -117681,7 +118271,7 @@
     "n": "Mismagius",
     "t": 6,
     "i": "https://i.imgur.com/tlCvCizl.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "F",
       "mr",
@@ -117694,7 +118284,7 @@
     "n": "Riolu",
     "t": 5,
     "i": "[n]sample-19a19e9c15926f9ae6c9d42011b59227.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "dr",
       "sc",
@@ -117709,7 +118299,7 @@
     "n": "Lucario",
     "t": 6,
     "i": "[n]tumblr_0471d44ab5896a8498673d5db28f17eb_bf4d11e3_540.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "O",
       "cl",
@@ -117732,7 +118322,7 @@
     "n": "Gallade",
     "t": 6,
     "i": "https://i.imgur.com/IIWAR58l.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "M",
       "ps",
@@ -117747,7 +118337,7 @@
     "n": "Uxie",
     "t": 9,
     "i": "https://i.imgur.com/OvHJ1aIl.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "O",
       "cl",
@@ -117767,7 +118357,7 @@
     "n": "Mesprit",
     "t": 9,
     "i": "https://i.imgur.com/GOA7SHpl.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "O",
       "cl",
@@ -117787,7 +118377,7 @@
     "n": "Azelf",
     "t": 9,
     "i": "https://i.imgur.com/Xfp6jSxl.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "cl",
       "ps",
@@ -117805,7 +118395,7 @@
     "n": "Dialga",
     "t": 10,
     "i": "[n]pySMwLt.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "hz",
       "id",
@@ -117827,7 +118417,7 @@
     "n": "Palkia",
     "t": 10,
     "i": "[n]FAVnzuT.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "id",
       "ur",
@@ -117846,7 +118436,7 @@
     "n": "Regigigas",
     "t": 8,
     "i": "https://i.imgur.com/dJ6wytel.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "O",
       "hr",
@@ -117862,7 +118452,7 @@
     "n": "Giratina",
     "t": 10,
     "i": "[n]HjwtkxX.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "hz",
       "id",
@@ -117886,7 +118476,7 @@
     "n": "Darkrai",
     "t": 9,
     "i": "[n]xEctyLj.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "O",
       "hz",
@@ -117906,7 +118496,7 @@
     "n": "Arceus",
     "t": 12,
     "i": "https://i.imgur.com/eJZoRzWl.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "O",
       "st",
@@ -117940,7 +118530,7 @@
     "n": "Purrloin",
     "t": 4,
     "i": "https://i.imgur.com/3qua3jrl.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "mr"
     ],
@@ -117951,7 +118541,7 @@
     "n": "Blitzle",
     "t": 4,
     "i": "https://i.imgur.com/su5jrrgl.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "mr"
     ],
@@ -117962,7 +118552,7 @@
     "n": "Lilligant",
     "t": 5,
     "i": "https://i.imgur.com/HyYMsRll.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "mr"
     ],
@@ -117973,7 +118563,7 @@
     "n": "Zorua",
     "t": 4,
     "i": "https://i.imgur.com/MWCi09Jl.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "F",
       "mr"
@@ -117986,7 +118576,7 @@
     "n": "Zoroark",
     "t": 5,
     "i": "[n]NAZIPKy.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "O",
       "mr",
@@ -118002,7 +118592,7 @@
     "n": "Minccino",
     "t": 4,
     "i": "https://i.imgur.com/EAz5oXzl.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "mr"
     ],
@@ -118013,7 +118603,7 @@
     "n": "Gothitelle",
     "t": 5,
     "i": "[n]FuNUayq.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "F",
       "ps",
@@ -118028,7 +118618,7 @@
     "n": "Ferroseed",
     "t": 4,
     "i": "[n]RQjLEPg.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "mr"
     ],
@@ -118039,7 +118629,7 @@
     "n": "Meloetta",
     "t": 8,
     "i": "https://i.imgur.com/H2WGtNEl.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "F",
       "ps",
@@ -118060,7 +118650,7 @@
     "n": "Chesnaught",
     "t": 6,
     "i": "[n]FHaLjnY.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "mr"
     ],
@@ -118071,7 +118661,7 @@
     "n": "Dragalge",
     "t": 6,
     "i": "https://i.imgur.com/YXBSDUDl.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "mr",
       "dg"
@@ -118083,7 +118673,7 @@
     "n": "Yveltal",
     "t": 8,
     "i": "[n]VNEJgoB.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "O",
       "hr",
@@ -118101,7 +118691,7 @@
     "n": "Zygarde",
     "t": 9,
     "i": "[n]__flygon_zygarde_noivern_sigilyph_and_zygarde_pokemon_drawn_by_asteroid_ill__4f9ee7b1865dc7e64a21b630dda19cdb.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "O",
       "hr",
@@ -118119,7 +118709,7 @@
     "n": "Hoopa (U)",
     "t": 10,
     "i": "https://i.imgur.com/89r9kREl.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "F",
       "hz",
@@ -118136,7 +118726,7 @@
     "n": "Rowlet",
     "t": 4,
     "i": "[n]HqAODZa.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "mt",
       "mr"
@@ -118148,7 +118738,7 @@
     "n": "Litten",
     "t": 4,
     "i": "[n]sbFuoeK.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "mt",
       "mr"
@@ -118160,7 +118750,7 @@
     "n": "Popplio",
     "t": 4,
     "i": "https://i.imgur.com/3dn6IkWl.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "O",
       "mt",
@@ -118174,10 +118764,11 @@
     "n": "Brionne",
     "t": 5,
     "i": "https://i.imgur.com/mIh0Bo8l.jpeg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "F",
-      "mr"
+      "mr",
+      "ge"
     ],
     "s": "https://i.imgur.com/mIh0Bo8.jpeg",
     "in": "https://i.imgur.com/v7Ee6R5.jpg"
@@ -118187,7 +118778,7 @@
     "n": "Primarina",
     "t": 6,
     "i": "https://i.imgur.com/Ce0SBTRl.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "F",
       "mr"
@@ -118200,7 +118791,7 @@
     "n": "Cutiefly",
     "t": 3,
     "i": "https://i.imgur.com/AlMC0cMl.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "mr"
     ],
@@ -118211,7 +118802,7 @@
     "n": "Salazzle",
     "t": 6,
     "i": "https://i.imgur.com/obOkD22l.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "F",
       "mr"
@@ -118224,7 +118815,7 @@
     "n": "Comfey",
     "t": 6,
     "i": "https://i.imgur.com/KLkvSaGl.png",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "mr"
     ],
@@ -118235,7 +118826,7 @@
     "n": "Cosmog",
     "t": 5,
     "i": "[n]CSpIGdz.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "py",
       "mr"
@@ -118247,7 +118838,7 @@
     "n": "Cosmoem",
     "t": 6,
     "i": "[n]GOlvxPZ.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "py",
       "mr"
@@ -118259,7 +118850,7 @@
     "n": "Pheromosa",
     "t": 8,
     "i": "[n]iyGJmOn.jpg",
-    "w": "Pokemon Expansion",
+    "w": "Pokemon",
     "b": [
       "F",
       "mr"
@@ -118414,6 +119005,8 @@
     "w": "Star Wars",
     "b": [
       "F",
+      "cl",
+      "sl",
       "en",
       "gn",
       "cm"
@@ -118430,6 +119023,7 @@
     "w": "Star Wars",
     "b": [
       "F",
+      "cl",
       "al",
       "sa",
       "cm"
@@ -118559,7 +119153,8 @@
       "py",
       "ip",
       "ev",
-      "al"
+      "al",
+      "cm"
     ],
     "in": "https://cdn.imgchest.com/files/l4nec52on4m.jpeg"
   },
@@ -124212,7 +124807,6 @@
       "id",
       "sc",
       "tm",
-      "ih",
       "sl",
       "hp",
       "dc",
@@ -130952,7 +131546,6 @@
       "st",
       "cl",
       "dr",
-      "id",
       "ur",
       "sc",
       "di",
@@ -132022,7 +132615,17 @@
     "s": "https://danbooru.donmai.us/posts/4384369?q=gao_changgong_%28fate%29",
     "w": "Nasuverse",
     "b": [
-      "M"
+      "M",
+      "hz",
+      "cl",
+      "ps",
+      "ur",
+      "sc",
+      "ip",
+      "sl",
+      "gn",
+      "sa",
+      "cm"
     ],
     "d": "Servants - Saber"
   },
@@ -135995,7 +136598,7 @@
   },
   {
     "u": 12370,
-    "n": "Sonic",
+    "n": "Sonic the Hedgehog",
     "t": 8,
     "i": "https://imgur.com/1TVFRDyl.jpg",
     "s": "https://imgur.com/1TVFRDy.jpg",
@@ -136005,6 +136608,8 @@
       "hr",
       "hz",
       "cl",
+      "sl",
+      "rg",
       "pr",
       "cm"
     ]
@@ -136018,7 +136623,14 @@
     "w": "Sonic",
     "b": [
       "F",
+      "hz",
+      "cl",
       "ml",
+      "sc",
+      "sl",
+      "sa",
+      "cm",
+      "ha",
       "sh"
     ]
   },
@@ -136037,9 +136649,11 @@
       "mu",
       "en",
       "sn",
+      "gn",
       "cc",
       "nd",
-      "sa"
+      "sa",
+      "ha"
     ],
     "in": "https://i.ibb.co/7R67wJR/Tails-NSFW.png"
   },
@@ -136052,6 +136666,12 @@
     "w": "Sonic",
     "b": [
       "F",
+      "hz",
+      "cl",
+      "ml",
+      "sc",
+      "di",
+      "dn",
       "cm",
       "ye"
     ]
@@ -136181,41 +136801,63 @@
     "s": "https://e621.net/post/show/774122",
     "w": "Sonic",
     "b": [
-      "F"
+      "F",
+      "hr",
+      "cl",
+      "en",
+      "sn",
+      "cc",
+      "cm",
+      "sh"
     ]
   },
   {
     "u": 12383,
-    "n": "Sticks",
+    "n": "Sticks the Badger",
     "t": 5,
-    "i": "55123068ebd8d83a8a701e1e99394794.jpg",
-    "s": "https://e621.net/posts/1148608",
+    "i": "[n]TuDDJgW.jpg",
+    "s": "https://64.media.tumblr.com/79d309e0f03f4f9bc6e1a13353a19759/bc7196ae4c306c68-35/s1280x1920/3006bb5eeda56fc85eb46b38d7cccf79c740320e.jpg",
     "w": "Sonic",
     "b": [
       "F",
+      "hr",
+      "sc",
+      "cc",
+      "cm",
       "is"
     ]
   },
   {
     "u": 12384,
-    "n": "Tikal the Echinda",
+    "n": "Tikal the Echidna",
     "t": 7,
     "i": "ff7a42f8b94ad7d39f185b0fb8139e82.jpg",
     "s": "https://e621.net/post/show/1794291",
     "w": "Sonic",
     "b": [
-      "F"
+      "F",
+      "hr",
+      "mt",
+      "sc",
+      "di",
+      "mo",
+      "sl",
+      "dn",
+      "pt",
+      "cm",
+      "ir"
     ]
   },
   {
     "u": 12385,
-    "n": "Nicole the Lynx",
+    "n": "Nicole the Holo-Lynx",
     "t": 6,
-    "i": "fa113840dd923d69be521bc8b718ff65.jpg",
-    "s": "https://e621.net/post/show/815749",
+    "i": "https://imgur.com/N6ToPZol.jpg",
+    "s": "https://imgur.com/N6ToPZo.jpg",
     "w": "Sonic",
     "b": [
       "F",
+      "hz",
       "ml",
       "sc",
       "ai",
@@ -136264,7 +136906,10 @@
     "s": "https://e621.net/post/show/718274",
     "w": "Sonic",
     "b": [
-      "M"
+      "M",
+      "ml",
+      "cm",
+      "sh"
     ]
   },
   {
@@ -136282,22 +136927,36 @@
     "u": 12391,
     "n": "Big the Cat",
     "t": 6,
-    "i": "caa37aca0cede7345de2e2dd55ccc3e6.jpg",
-    "s": "https://e621.net/post/show/1463733",
+    "i": "https://imgur.com/BrjcTqSl.jpg",
+    "s": "https://imgur.com/BrjcTqS.jpg",
     "w": "Sonic",
     "b": [
-      "M"
+      "M",
+      "hr",
+      "hz",
+      "cl",
+      "sc",
+      "cm",
+      "fa"
     ]
   },
   {
     "u": 12392,
     "n": "Scourge the Hedgehog",
     "t": 8,
-    "i": "d9a2ae54c10d58d4ec1b85adf3fdb78e.jpg",
-    "s": "https://e621.net/post/show/682869",
+    "i": "https://imgur.com/EALAJe6l.jpg",
+    "s": "https://imgur.com/EALAJe6.jpg",
     "w": "Sonic",
     "b": [
-      "M"
+      "M",
+      "hr",
+      "hz",
+      "cl",
+      "cr",
+      "th",
+      "ev",
+      "vn",
+      "cm"
     ]
   },
   {
@@ -136309,8 +136968,20 @@
     "w": "Sonic",
     "b": [
       "F",
-      "vn"
-    ]
+      "hr",
+      "hz",
+      "cl",
+      "ml",
+      "bk",
+      "dm",
+      "ev",
+      "al",
+      "ar",
+      "vn",
+      "cm",
+      "ha"
+    ],
+    "d": "Deadly Six"
   },
   {
     "u": 12394,
@@ -136326,13 +136997,16 @@
   },
   {
     "u": 12395,
-    "n": "Vector",
+    "n": "Vector the Crocodile",
     "t": 5,
-    "i": "2b0d14d455c2ca45b0cfe9ccea8f5749.png",
-    "s": "https://e621.net/post/show/609552",
+    "i": "https://imgur.com/Lijbhjbl.jpg",
+    "s": "https://imgur.com/Lijbhjb.jpg",
     "w": "Sonic",
     "b": [
-      "M"
+      "M",
+      "sl",
+      "ar",
+      "cm"
     ]
   },
   {
@@ -136374,11 +137048,17 @@
     "u": 12398,
     "n": "Espio the Charmeleon",
     "t": 5,
-    "i": "7c6b35864c20fa2ce54faf40b02c3456.jpg",
-    "s": "https://e621.net/post/show/1468602",
+    "i": "https://imgur.com/8txV62yl.jpg",
+    "s": "https://imgur.com/8txV62y.jpg",
     "w": "Sonic",
     "b": [
-      "M"
+      "M",
+      "cl",
+      "sc",
+      "nj",
+      "cm",
+      "ha",
+      "sh"
     ]
   },
   {
@@ -136390,18 +137070,20 @@
     "w": "Sonic",
     "b": [
       "F",
-      "mr"
+      "sa",
+      "cm"
     ]
   },
   {
     "u": 12400,
-    "n": "Infinite",
+    "n": "Infinite the Jackal",
     "t": 8,
     "i": "[n]SLyYPds.jpg",
     "s": "https://i.pinimg.com/564x/a4/86/f5/a486f5045fd934644869ce4e344acc58.jpg",
     "w": "Sonic",
     "b": [
       "M",
+      "hr",
       "hz",
       "ml",
       "ps",
@@ -136413,6 +137095,7 @@
       "th",
       "cb",
       "ev",
+      "vn",
       "cm",
       "rw",
       "sh"
@@ -136438,6 +137121,7 @@
     "w": "Sonic",
     "b": [
       "F",
+      "sl",
       "cm",
       "gi"
     ]
@@ -136446,8 +137130,8 @@
     "u": 12403,
     "n": "Whisper the Wolf",
     "t": 5,
-    "i": "6430ce8cfe77729776cc629bd6da7de8.jpg",
-    "s": "https://e621.net/posts/2325854",
+    "i": "https://imgur.com/9DxaihQl.jpg",
+    "s": "https://imgur.com/9DxaihQ.jpg",
     "w": "Sonic",
     "b": [
       "F",
@@ -136493,11 +137177,12 @@
     "u": 12407,
     "n": "Clove the Pronghorn",
     "t": 3,
-    "i": "91660618ae4ee0484e9acf27d091b447.png",
-    "s": "https://e621.net/posts/2371405",
+    "i": "https://imgur.com/Fz5jnuAl.jpg",
+    "s": "https://imgur.com/Fz5jnuA.jpg",
     "w": "Sonic",
     "b": [
-      "F"
+      "F",
+      "cm"
     ]
   },
   {
@@ -138939,7 +139624,8 @@
       "F",
       "al",
       "im"
-    ]
+    ],
+    "in": "https://lotus.paheal.net/_images/4e885c5894c44765cab9f84ff8f30dfc/5079942%20-%20CubedCoconut%20Ruby%20Steven_Universe.png"
   },
   {
     "u": 10604,
@@ -138954,7 +139640,8 @@
       "dn",
       "al",
       "im"
-    ]
+    ],
+    "in": "https://lotus.paheal.net/_images/6ff2ca1a60b2168172c822584ebc14cd/5548100%20-%20Sapphire%20Steven_Universe%20box_chan.jpg"
   },
   {
     "u": 10605,
@@ -138989,15 +139676,16 @@
     "u": 10607,
     "n": "Jasper",
     "t": 5,
-    "i": "9d874c__steven_universe_jasper_pink_diamonds.jpg",
-    "s": "https://i.pinimg.com/236x/da/49/be/da49bee7182a2460703ae1de5b9d874c--steven-universe-jasper-pink-diamonds.jpg",
+    "i": "[n]BafeClz.jpg",
+    "s": "https://i.redd.it/4dram567pxu61.jpg",
     "w": "Steven Universe",
     "b": [
       "F",
       "al",
       "cm",
       "im"
-    ]
+    ],
+    "in": "https://tulip.paheal.net/_images/1093af5469fd84ccfdf89b19f7c68255/5468378%20-%20Jasper%20Steven_Universe%20muffynbunarts.png"
   },
   {
     "u": 10608,
@@ -139010,7 +139698,8 @@
       "F",
       "al",
       "im"
-    ]
+    ],
+    "in": "https://i.redd.it/dmbhoh9qfdl71.jpg"
   },
   {
     "u": 10609,
@@ -139040,7 +139729,8 @@
       "im",
       "sr",
       "al"
-    ]
+    ],
+    "in": "https://lotus.paheal.net/_images/d8f0dd995a115c55a4513a9720b7f9ab/5126947%20-%20Blue_Diamond%20Steven_Universe.png"
   },
   {
     "u": 10611,
@@ -139054,7 +139744,8 @@
       "im",
       "sr",
       "al"
-    ]
+    ],
+    "in": "https://lotus.paheal.net/_images/08cc1b9d84de372c3eff9285ab924ad8/2202086%20-%20Steven_Universe%20Yellow_Diamond%20kahix.jpg"
   },
   {
     "u": 10612,
@@ -139068,7 +139759,8 @@
       "im",
       "sr",
       "al"
-    ]
+    ],
+    "in": "https://i.redd.it/c9woiw8okjq81.jpg"
   },
   {
     "u": 10613,
@@ -139083,7 +139775,8 @@
       "im",
       "sr",
       "al"
-    ]
+    ],
+    "in": "https://i.redd.it/qvajzpxaisj71.jpg"
   },
   {
     "u": 10614,
@@ -139096,7 +139789,8 @@
       "F",
       "al",
       "im"
-    ]
+    ],
+    "in": "https://i.redd.it/h9qq9l3in6f51.jpg"
   },
   {
     "u": 10615,
@@ -139109,7 +139803,8 @@
       "F",
       "al",
       "im"
-    ]
+    ],
+    "in": "https://lotus.paheal.net/_images/451eb455110e1b1fc90c94e6913ae088/3685308%20-%20Haunderjaw%20Steven_Universe%20Yellow_Pearl.jpg"
   },
   {
     "u": 10616,
@@ -139120,8 +139815,10 @@
     "w": "Steven Universe",
     "b": [
       "F",
-      "al"
-    ]
+      "al",
+      "im"
+    ],
+    "in": "https://lotus.paheal.net/_images/3dec233cbba9c12aefeabab8bc360d47/2210915%20-%20Holly_Blue_Agate%20Steven_Universe%20kahix.jpg"
   },
   {
     "u": 10617,
@@ -139151,7 +139848,8 @@
       "cm",
       "im",
       "gi"
-    ]
+    ],
+    "in": "https://lotus.paheal.net/_images/dd5389be7be4675ddfd1b30266267ac6/4453316%20-%20Axel_Hell%20Spinel%20Steven_Universe.png"
   },
   {
     "u": 10659,
@@ -143115,7 +143813,10 @@
     "w": "Terminator",
     "b": [
       "M",
-      "ad"
+      "ai",
+      "ad",
+      "cm",
+      "im"
     ]
   },
   {
@@ -143191,8 +143892,13 @@
     "w": "The Addams Family",
     "b": [
       "F",
+      "st",
+      "cl",
+      "cr",
+      "sc",
       "di",
-      "dn"
+      "dn",
+      "wh"
     ],
     "in": "https://img2.rule34.us/images/2b/43/2b43091c8808ff36baaa284539daaf3d.jpeg"
   },
@@ -143613,7 +144319,11 @@
     "s": "https://static.wikia.nocookie.net/marveldatabase/images/6/69/Sage_%28Earth-TRN674%29_from_The_Gifted_%28TV_series%29_Season_2_7.jpg/revision/latest?cb=20181120085434",
     "w": "The Gifted",
     "b": [
-      "F"
+      "F",
+      "py",
+      "mu",
+      "gn",
+      "sa"
     ]
   },
   {
@@ -145024,12 +145734,14 @@
       "F",
       "C",
       "st",
+      "cl",
       "ps",
       "py",
       "ip",
       "hl",
       "cm",
-      "sh"
+      "sh",
+      "ke"
     ],
     "in": "https://cdn.imgchest.com/files/345xcedbp7w.jpeg"
   },
@@ -145176,7 +145888,8 @@
     "s": "https://static.wikia.nocookie.net/the-order-netflix/images/8/86/TO-S1-Promotional-Portrait-Lilith-Bathory.jpg/revision/latest?cb=20190313004610",
     "w": "The Order",
     "b": [
-      "F"
+      "F",
+      "sr"
     ]
   },
   {
@@ -149313,7 +150026,8 @@
     "s": "https://pictures.hentai-foundry.com/0/7th-Heaven/746470/7th-Heaven-746470-Commi_-_Courtney.jpg",
     "w": "Total Drama Island",
     "b": [
-      "F"
+      "F",
+      "ml"
     ],
     "in": "https://pictures.hentai-foundry.com/p/Phillip-the-2/902544/Phillip-the-2-902544-Courtney.png"
   },
@@ -149361,6 +150075,7 @@
     "w": "Total Drama Island",
     "b": [
       "F",
+      "cl",
       "ar"
     ],
     "in": "https://cdn.donmai.us/sample/40/e6/__gwen_total_drama_drawn_by_blanclauz__sample-40e61554253e3c586fc7eb89b8fa6d7b.jpg"
@@ -149396,7 +150111,8 @@
     "s": "https://pictures.hentai-foundry.com/0/7th-Heaven/744290/7th-Heaven-744290-Commi_-_Lindsay.jpg",
     "w": "Total Drama Island",
     "b": [
-      "F"
+      "F",
+      "ml"
     ],
     "in": "https://pictures.hentai-foundry.com/s/Shadowboxer/933436/Shadowboxer-933436-Lindsay.png"
   },
@@ -159900,7 +160616,8 @@
     "s": "https://vignette.wikia.nocookie.net/parahumans/images/5/55/Moord_nag_by_drawings_of_a_madman.jpeg/revision/latest/scale-to-width-down/310?cb=20180521044727",
     "w": "Worm",
     "b": [
-      "F"
+      "F",
+      "cm"
     ]
   },
   {

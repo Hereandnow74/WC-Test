@@ -50,6 +50,7 @@ export const nicknames = [
   'Kirron 999',
   'Gregory B.',
   'ProtagNeptune',
+  'Eerie Sharp',
   'Exactingspoon',
   'DragonBoy.EXE',
 ]

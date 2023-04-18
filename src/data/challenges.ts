@@ -454,7 +454,7 @@ export const skyblockRules = `
 
 <p>For Catalog purposes, the Skyblock counts as a base Demiplane, but NOT as a Pocket Apartment/Sweet Home/Grand Manor.</p>
 
-<p>On every seventh day, from 00:00 to 23:59, a 2-meter tall 1-meter wide portal will open in the center of the topmost layer of the Skyblock. This portal is large enough to accommodate the passage of a human-sized being. It comes with all Company standard protections and Neutral, hostile, and uninvited eyes will not notice a portal’s presence, activation, or use, and cannot pass through.</p>
+<p>However, unlike normal Demiplanes, you and your retinue cannot make portals nor teleport yourself into or out of the Skyblock at will. All travel to and from your Skyblock is restricted to a weekly portal that will open up on every seventh day from 00:00 to 23:59. This portal is large enough to accommodate the passage of a human-sized being and will open in the center of the topmost layer of the Skyblock. It comes with all Company standard protections and Neutral, hostile, and uninvited eyes will not notice a portal’s presence, activation, or use, and cannot pass through.</p>
 
 <p>The portal will lead to a random world. The maximum DR of the world is equal to the number of months since you have started plus three. For example, in your first month, the maximum DR of the world is 3, in the second month it will be 4, etc etc. This, of course, caps out at DR 10.</p>
 
@@ -476,6 +476,8 @@ export const skyblockRulesAdditional = `
   <li>Art of Domains will still function correctly but claimed areas cannot be linked to the Skyblock in a way that allows for any kind of communication or travel.</li>
   <li>Apportation will not allow teleportation between your Skyblock and a world unless there is a portal open connecting to that world, or a world within the local multiverse of the world the portal is opened to.</li>
   <li>Laws of the Jungle no longer requires Life’s a Beach as a prerequisite</li>
+  <li>If you die not on your Skyblock while the portal is open, your body(and soul) will be automatically pulled back to the Skyblock when the portal is closed, including any gear you have equipped on you. Normal R.I.P. rules still apply otherwise.</li>
+  <li>Red Eye Orb cannot be purchased.</li>
 </ul>
 `
 
@@ -490,7 +492,7 @@ export const skyblockPerks = [
     whitelist: ['Skyblock'],
     multiple: true,
     cost: 10,
-    desc: `You can purchase an additional block of dirt and stone and place it anywhere you want by using the Catalog app on your Company Smart Device. It does not have to be touching any existing block. This block follows the same rules as the starting block. This perk can be purchased as many times as you wish.
+    desc: `You can purchase an additional block of dirt and stone and place it anywhere you want by using the Catalog app on your Company Smart Device. It does not have to be touching any existing block. This block follows the same rules as the starting block, but it lacks a Survival Kit, and the tree present on it is a 1-month old sapling of a tree rather than a fully grown tree. This sapling is functionally identical to a planted version of the tree provided on the starting block in that it will be fully grown at six-months and grow up to five fruit that will feed an adult for a day. This perk can be purchased as many times as you wish.
     `,
   },
   {
@@ -534,24 +536,12 @@ export const skyblockPerks = [
     uid: 'ZpyEq',
     dlc: 'shifty-sword',
     dlclink: 'https://docs.google.com/document/d/1Dasg0Yq3tgZ9mA6zL3G7_1VdBcq4pW_4qpwGImtXzRc/edit#',
-    title: 'Pocket Inventory',
+    title: 'Storage Area',
     image: '',
     whitelist: ['Pocket Space'],
-    cost: 5,
+    cost: 10,
     desc: `
-    Items in your Pocket Space can be accessed by thought instead of through an app.
-    `,
-  },
-  {
-    uid: 'ZpyEq',
-    dlc: 'shifty-sword',
-    dlclink: 'https://docs.google.com/document/d/1Dasg0Yq3tgZ9mA6zL3G7_1VdBcq4pW_4qpwGImtXzRc/edit#',
-    title: 'Shared Inventory',
-    image: '',
-    whitelist: ['Pocket Inventory'],
-    cost: 15,
-    desc: `
-    All members of your Retinue can now access your Pocket Inventory.
+    Similar to Sweet Home, you can now designate an area of your choosing on your Skyblock to act as your Pocket Space area. This space must be a clearly delineated area intended for storage purposes only.
     `,
   },
   {
@@ -561,11 +551,26 @@ export const skyblockPerks = [
     title: 'Visitation Pass',
     image: '',
     whitelist: ['Skyblock'],
-    cost: 10,
+    cost: 50,
     multiple: true,
     desc: `
     Each time you purchase this perk, you can choose to have the next portal location be a world you’ve already visited. You choose the world when this perk is purchased. This perk can only be purchased if it has not already been purchased for the next portal.
     <p>The cost of this perk is dependent on the Danger Rating of the world and is equal to the rating times 10. For example, a DR1 world would cost 10 Credits and a DR5 world would cost 50 Credits.</p>
+    `,
+  },
+  {
+    uid: 'ZpyEq',
+    dlc: 'shifty-sword',
+    dlclink: 'https://docs.google.com/document/d/1Dasg0Yq3tgZ9mA6zL3G7_1VdBcq4pW_4qpwGImtXzRc/edit#',
+    title: 'Climate Control',
+    image: '',
+    whitelist: ['Skyblock'],
+    cost: 50,
+    multiple: true,
+    desc: `
+    Purchasing this perk will install an app onto your Company Smart Device that allows you to control the weather and climate of your Skyblock. The controls are intuitive and robust and changes can range from small precise changes affecting an area roughly the same size as your starting block to broad changes that affect the entire Demiplane.
+    <p>Weather patterns can be automated, randomized, or set on strict schedules of your choosing. Changes to an area’s base climate take time to come into effect, ranging from just a few hours and up to a week, depending on how much of a difference there is between the previous climate and the new one.</p>
+    <p>Weather and climate changes are limited to levels that naturally occur in real life. You cannot control specifics of the designated weather(i.e., you can designate a hurricane to occur in an area and how strong it is, but you cannot specify which way the winds will blow). The weather and climates cannot be magical in nature unless Laws of Magic has been purchased.</p>
     `,
   },
   {

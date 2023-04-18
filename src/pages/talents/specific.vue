@@ -52,8 +52,12 @@ const specificPerksWithDLC = computed(() => !settings.value.allChosenAuthors[0] 
 
 const specificPerksWithLocal = computed(() => specificPerksWithDLC.value.concat(localPerks.value['Specific waifu perk'] || []))
 
+const hash = window.location.hash
+if (hash) filterAvailable.value = true
 const specificPerksFiltered = computed(() => specificPerksWithLocal.value.filter((perk) => {
   let res = false
+  if (hash)
+    return perk.title === decodeURIComponent(hash.slice(1))
   if (companionsByUID.value[perk.uid])
     return true
   if (isArray(perk.waifuUID))
