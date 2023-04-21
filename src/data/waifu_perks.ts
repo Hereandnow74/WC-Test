@@ -4198,6 +4198,26 @@ export const DLCwaifu_perks: WaifuPerk[] = [
     desc: '"For I am The Good Witch Luz! Child of the Human Realm, student of the Demon Realm, And Warrior of peace! ...NOW EAT THIS SUCKAA!!"\n\nLuz Noceda has gained the mystical might of a full grown Titan.  No longer limited to drawing runes to cast magic, she can now freely cast much like a natural witch.  She also gains access to an alternate Titan-esq. form, and qualifies for a unique Symbiote Theme (Titan).',
     whitelist: [],
   },
+  {
+    uid: 'zSVX4',
+    dlc: 'Cter',
+    dlcLink: '',
+    title: 'Project STIGMA',
+    from: 'Honkai Impact 3rd',
+    waifu: [
+      'Kevin Kaslana',
+    ],
+    waifuUID: [
+      9072410,
+    ],
+    tier: 9,
+    image: 'https://s1.zerochan.net/Kevin.Kaslana.600.3875446.jpg',
+    cost: 300,
+    discount: 0,
+    costT: 0,
+    desc: 'The Previous Era was not able to overcome the Honkai, as such they pinned their hopes to the future, entrusting Kevin with Project STIGMA, even if he himself saw it as the worst solution.  In preparation for the plan\'s completion, Kevin underwent the Chimera surgery, granting him 100+ different types of Honkai Beast DNA\'s including but not limited to Garuda, Vishnu and Brahma. Kevin also gained the Authority of Finality with the help of Prometheus.\n\nWith this perk, the Authority will no longer be killing Kevin every second, granting him minor Time Manipulation abilities, as well as boost him to T9.',
+    whitelist: [],
+  },
 ]
 
 export const waifuPerksObject = [...DLCwaifu_perks, ...waifu_perks, ...(localPerks.value['Specific waifu perk'] || [])].reduce((a, x) => { a[x.uid] = x; return a }, {} as Record<string, WaifuPerk>)

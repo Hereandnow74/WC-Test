@@ -5,9 +5,9 @@
     </template>
     <template #underDesc>
       <Modal v-if="showBuyPerk" label="Power Swap" @click="showBuyPerk = false">
-        <div id="powerSwap" ref="charList" class="min-h-0 overflow-y-auto max-h-[75vh] scrollbar p-1">
+        <div id="powerSwap" class="min-h-0 overflow-y-auto max-h-[75vh] scrollbar p-1">
           <Toggle v-model="customPS" label="Custom?" class="mx-1" />
-          <div class="grid md:grid-cols-2 gap-2">
+          <div ref="charList" class="grid md:grid-cols-2 gap-2">
             <div class="flex gap-2 w-full rounded bg-gray-300 dark:bg-gray-800 p-1">
               <img
                 :data-src="startingOrigin.image || '/img/Contractor.jpg'"

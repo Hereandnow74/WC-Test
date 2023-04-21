@@ -1005,29 +1005,30 @@ export const otherControls: PerkFull[] = [
     cost: 5,
     category: 'Other Control',
     special: 'At least one Nasuverse Servant',
-    table: [
-      ['Master', ' Canon Servant'],
-      ['Rin', 'Artoria (Saber)'],
-      ['Sakura', 'Medusa'],
-      ['Dark Sakura', 'Artoria (Salter)'],
-      ['Irisviel', 'Artoria (Saber)'],
-      ['Reika', 'Jackie'],
-      ['Kohaku', ' Okita'],
-      ['Ritsuka', 'Mash'],
-      ['Hakuno', 'Nero (Saber)'],
-      ['Hakuno', 'Tamamo (Caster)'],
-      ['Hakuno', 'Altera'],
-    ],
+    // table: [
+    //   ['Master', ' Canon Servant'],
+    //   ['Rin', 'Artoria (Saber)'],
+    //   ['Sakura', 'Medusa'],
+    //   ['Dark Sakura', 'Artoria (Salter)'],
+    //   ['Irisviel', 'Artoria (Saber)'],
+    //   ['Reika', 'Jackie'],
+    //   ['Kohaku', ' Okita'],
+    //   ['Ritsuka', 'Mash'],
+    //   ['Hakuno', 'Nero (Saber)'],
+    //   ['Hakuno', 'Tamamo (Caster)'],
+    //   ['Hakuno', 'Altera'],
+    // ],
     multiple: true,
     desc: `
-<p>These sets of three Command Seals each will appear somewhere on your body, forming an abstract design unique to you. Each Command Seal allows you to give one unbreakable order to a Servant under your control, along with a power boost for the duration of the order. The more specific the order and the shorter its duration, the stronger the boost and according compulsion, and vice versa. General orders with indefinite durations can, eventually, be ignored, but a specific command with an instant duration will offer the Servant no chance to resist. One spent Command Seal will regenerate every 24 hours. You may have as many sets of seals as you have purchased or captured Servants, counting only the characters denoted as Servants in this CYOA. The first set of seals is free.</p>
-<p>If you purchase or capture an eligible Master from a published Fate/ work, and have at least one Servant per Master, you can delegate a single Servant to each. Canon Master-Servant pairs take priority. Delegate Masters' Command Seals are free and regenerate independently at the same rate as yours, but still count against your total and cannot be directly used by you. If you ever find yourself in an actual Holy Grail War, and all of your Command Seals are delegated, you will still have an inert set of Seals that may be used to summon, or contract with, a Servant locally. A locally summoned or contracted Servant will not be bound unless you apply a Binding-type control.</p>
-<p>Each Ruler-class Servant you summon may carry six additional sets of Seals on their body. These extra Seals must be paid for, regenerate independently from any others, and may be used by yourself or any delegate Master.</p>`,
+  <p>These sets of three Command Seals each will appear somewhere on your body, forming an abstract design unique to you. Each Command Seal allows you to give one unbreakable order to a Servant under your control, along with a power boost for the duration of the order. The more specific the order and the shorter its duration, the stronger the boost and according compulsion, and vice versa. General orders with indefinite durations can, eventually, be ignored, but a specific command with an instant duration will offer the Servant no chance to resist</p>
+  <p>One spent Command Seal will regenerate every 24 hours. You may have as many sets of seals as you have purchased or captured Servants, counting only the characters denoted as Servants in this CYOA. The first set of seals is free.</p>
+  <p>If you purchase or capture an eligible Master from a published Fate/ work, and have at least one Servant per Master, you can delegate a single Servant to each. Canon Master-Servant pairs take priority. Delegate Masters' Command Seals are free and regenerate independently at the same rate as yours, but still count against your total and cannot be directly used by you. If you ever find yourself in an actual Holy Grail War, and all of your Command Seals are delegated, you will still have an inert set of Seals that may be used to summon, or contract with, a Servant locally. A locally summoned or contracted Servant will not be bound unless you apply a Binding-type control.</p>
+  <p>Each Ruler-class Servant you summon may carry six additional sets of Seals on their body. These extra Seals must be paid for, regenerate independently from any others, and may be used by yourself or any delegate Master.</p>`,
   },
   {
     uid: 'bcooZ',
     title: 'Command Seals: General Seals',
-    image: 'https://cdn.discordapp.com/attachments/925963686433132644/1008153693293649920/Fate.Grand.Order.full.2329465.jpg',
+    image: 'https://i.imgur.com/uTsAD1m.jpg',
     cost: 10,
     category: 'Other Control',
     special: 'Retroactively removes the previous control’s Nasuverse Servant requirement.',
@@ -1038,7 +1039,7 @@ export const otherControls: PerkFull[] = [
     uid: 'VTfqo',
     title: 'Divine Marking',
     category: 'Other Control',
-    image: 'https://cdn.discordapp.com/attachments/925963686433132644/1014955774457434174/tumblr_nmz3zlVLtz1u1uof4o1_1280.png',
+    image: 'https://i.imgur.com/vAfr6wj.jpg',
     cost: 20,
     special: 'At least one deity from the Danmachi setting',
     desc: 'A deity in your service who grants or updates a Falna, including non-Danmachi deities who’ve learned how to do so, are considered to be applying a Stamp to the Falna’s holder, even if you lack that binding. The Falna itself will seem no different than normal. This Falna-Stamp requires the normal three-day period to fully bind the recipient.',

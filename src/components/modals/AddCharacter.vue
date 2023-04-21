@@ -3,6 +3,7 @@
     <div class="max-h-[90vh] flex relative max-w-screen-sm min-h-0">
       <img ref="testImage" class="absolute h-[1px] w-[1px]" :src="image" alt="" @load="imageLoaded">
       <div class="flex flex-col p-2 gap-2 min-h-0 overflow-y-auto scrollbar">
+        {{ props.character.uid }}
         <Note type="warning" title="Rules">
           Before adding characters to global - read <b>rules</b> first! If you think your character have <b>only a small chance</b> of passing, just keep it local.
           <Button label="Rules" size="Small" bg-color="bg-red-500" @click="showRules = true" />

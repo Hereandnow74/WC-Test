@@ -1,6 +1,443 @@
 [
   
   {
+    "reward": "A personal demiplane separate from your own pocket space that is a fully functioning recreation of the games with the use of the company app. This includes semi-procedural maps, Campfire, Crows, Hooks, Pallets, Generators, Chests, Lockers, and Exit Gates.",
+    "image": "https://i.redd.it/33ak9du0jon71.jpg",
+    "author": "BucketRat907",
+    "rewardType": "Other",
+    "source": "",
+    "title": "The Great Escape",
+    "loca": "Dead by Daylight",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "Blight Serum",
+        "type": "Other",
+        "value": "Hook Talbot Grimes"
+      },
+      {
+        "reward": "Communication Talent",
+        "type": "Perks",
+        "value": "Convince Two Killer to aid you escape"
+      },
+      {
+        "reward": 2,
+        "type": "IMG Tickets",
+        "value": "Escape with Everyone (Survivor, Killers, The Observer, Benedict Baker)"
+      },
+      {
+        "reward": "Adiris (Plague)",
+        "type": "Companions",
+        "value": "Cure Adiris (The Plague) of her sickness"
+      },
+      {
+        "reward": "The Auris",
+        "type": "Other",
+        "value": "Find The Observer"
+      },
+      {
+        "reward": "Rin Yamaoka (Spirit)",
+        "type": "Companions",
+        "value": "Convince Rin Yamaoka to Defeat Kazan Yamaoka in single combat."
+      },
+      {
+        "reward": "The Afterpiece Tonic",
+        "type": "Other",
+        "value": "Cut off one of Jeffrey Hawk (The Clown) fingers"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Must complete nine rounds of The Entity's Trails"
+      },
+      {
+        "value": "You will be reduced to Tier 6 while in The Entity's Realm"
+      },
+      {
+        "value": "No Companion above Tier 5 can be used."
+      },
+      {
+        "value": "All Survivor/Killers that wish to escape must use the special company provided exit gate."
+      },
+      {
+        "value": "At least 18 survivors must be alive and escape to be considered a successful mission."
+      },
+      {
+        "value": "All Perks/Abilities that allow world jumping with the exception of I Want Out are disabled."
+      },
+      {
+        "value": "All Perks/Abilities that allow concealing oneself are greatly reduced while in The Entity's Realm"
+      },
+      {
+        "value": "All Perks/Abilities that allow Spatial Manipulation oneself are disabled."
+      },
+      {
+        "value": "All Perks/Abilities that allow Healing/Regeneration/Pain Nullification are greatly reduced."
+      },
+      {
+        "value": "With the exception of Pocket Space, Pocket Apartment, Sweet Home, Grand Manor, Stay in touch, and Armory all D&D Perks are disabled."
+      }
+    ],
+    "budget": 0,
+    "desc": "Hey Contractor!!!! Tired of seeing Survivor (and maybe some Killers) being tormented by a Lovecraftian Sadist? Want to help them escape? Want to help them get the lives they always wanted? When you first enter the entity's realm, Everyone (including the entity) will be unaware of your true nature and abilities. They will assume you to be a new survivor. Gather the survivor, repair those generators, and complete nine rounds of The Entity's Trails. After that locate the special exit gate provided by the company before the entity realizes your attempt to escape.",
+    "uid": "wltAv"
+  },
+  {
+    "reward": "Instant Unlocking of the next World.",
+    "image": "https://i.pinimg.com/originals/9e/c7/a0/9ec7a0c1164f21a4f5d01ae6a1ae92cc.jpg",
+    "author": "Zaralann",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Evil Always Finds a Way...",
+    "loca": "Overlord (Western)",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "Beginning of 'Overlord' as the Third Overlord.",
+        "type": "Other",
+        "value": "'Overlord: Dark Legend' Completed."
+      },
+      {
+        "reward": "Beginning of 'Overlord II' as the Fourth Overlord.",
+        "type": "Other",
+        "value": "'Overlord' Completed."
+      },
+      {
+        "reward": "New World Unlocked.",
+        "type": "Other",
+        "value": "'Overlord II' Completed."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You will enter 'Overlord'[DR5] and will take First Overlord's place, all logical/continuation issues would be adjusted."
+      },
+      {
+        "value": "You must purchase [Added Potential](5C) for this World."
+      },
+      {
+        "value": "You will arrive into 'Overlord: Dark Legend' at the start of the Game."
+      },
+      {
+        "value": "To not exceed the time of the Mission the Events would follow the sequences presented within the Game, for the durations of the Mission the 'Timeskips' within the Game would be provided by the Company."
+      },
+      {
+        "value": "Time is Fluid within the World for the duration of the Mission, stepping out of it either for your Pocket Dimension or another World would put the Events on 'Pause' so using such methods to avoid Events or obstacles would not work."
+      },
+      {
+        "value": "Time is Fluid within other Worlds for the duration of the Mission, putting the Events on 'Pause' while you're within this World during the Mission, it does not affect the Pocket Dimension."
+      },
+      {
+        "value": "A limited mount of 'Game Logic' is provided by the Company, certain Mechanics within the World would function in similar way as they did in the Game."
+      },
+      {
+        "value": "Progress of unlocking of the new World would be frozen for the duration of the Mission, finishing it would instantly unlock the nexy World if Travel Perks are pruchased."
+      },
+      {
+        "value": "Binding/Selling a Boss/Mini-Boss counts as Defeating them, same for 'Mini-Games' against others."
+      }
+    ],
+    "budget": 5,
+    "desc": "Evil... It never vanishes, it retreats and Grows and Evolves and then Returns stronger than ever. Being such Evil cannot be something that one can be without time and effort. Can you be such an Evil? Can you become the Evil that vannot be Vanquished? O' Contractor, the Evil of the Overlord is yours now... Do as you will, your Mission is to simply Succeed.",
+    "uid": "xcPPb"
+  },
+  {
+    "reward": "Instant Unlocking of the next World.",
+    "image": "https://sm.ign.com/ign_nordic/news/f/fable-4-po/fable-4-possible-concept-art-appears-online_3wrq.jpg",
+    "author": "Zaralann",
+    "rewardType": "Other",
+    "source": "",
+    "title": "A Fable of Your Own...",
+    "loca": "Fable",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "Beginning of 'Fable II' as Hero of Bower Lake.",
+        "type": "Other",
+        "value": "'Fable' Completed."
+      },
+      {
+        "reward": "Beginning of 'Fable III' as Hero of Brightwall.",
+        "type": "Other",
+        "value": "'Fable II' Completed."
+      },
+      {
+        "reward": "New World Unlocked.",
+        "type": "Other",
+        "value": "'Fable III' Completed."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You will enter 'Fable'[DR5] and will take Hero's place, all logical/continuation issues would be adjusted."
+      },
+      {
+        "value": "You must purchase [Added Potential](5C) for this World."
+      },
+      {
+        "value": "You will arrive into 'Fable' at the start of the Game."
+      },
+      {
+        "value": "To not exceed the time of the Mission the Events would follow the sequences presented within the Game, for the durations of the Mission the 'Timeskips' within the Game would be provided by the Company."
+      },
+      {
+        "value": "Time is Fluid within the World for the duration of the Mission, stepping out of it either for your Pocket Dimension or another World would put the Events on 'Pause' so using such methods to avoid Events or obstacles would not work."
+      },
+      {
+        "value": "Time is Fluid within other Worlds for the duration of the Mission, putting the Events on 'Pause' while you're within this World during the Mission, it does not affect the Pocket Dimension."
+      },
+      {
+        "value": "A limited mount of 'Game Logic' is provided by the Company, certain Mechanics within the World would function in similar way as they did in the Game."
+      },
+      {
+        "value": "Progress of unlocking of the new World would be frozen for the duration of the Mission, finishing it would instantly unlock the nexy World if Travel Perks are pruchased."
+      },
+      {
+        "value": "Binding/Selling a Boss/Mini-Boss counts as Defeating them, same for 'Mini-Games' against others."
+      }
+    ],
+    "budget": 5,
+    "desc": "Heroes aren't born, they're Forged... Would you see yourself laying on the Anvil of the World? Do you think you can Survive as a Hero? Let's see how much of it would be allowed to pass, a Fable of your own is what takes Time to Write, so we at the Company would provide you with a Tepestry for your Path, O' Contractor.",
+    "uid": "WtNwq"
+  },
+  {
+    "reward": 50,
+    "image": "https://i.redd.it/e99ozouhqe971.jpg",
+    "author": "Zaralann",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "No Rats on this Ship...",
+    "loca": "Red Dead Redemption",
+    "lewd": false,
+    "scope": "Quick",
+    "objectives": [
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Escape without reciving any wounds, no matter how minor."
+      },
+      {
+        "reward": 300,
+        "type": "Credits",
+        "value": "Escape within an hour and thirty minutes after killing Micah Bell III"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You will enter 'Red Dead Redemption 2'[DR3] on the next day after the Van der Linde gang made camp on Horseshoe Overlook."
+      },
+      {
+        "value": "Your have to kill Micah Bell III within an hour after entering the World."
+      },
+      {
+        "value": "You cannot use your Pocket Dimension for the duration of the Mission."
+      },
+      {
+        "value": "Your Waifu cannot enter the World for the duration of the Mission."
+      },
+      {
+        "value": "Your Heritage, Superhuman Abilities and Similar Abilities do not function for the duration of the Mission."
+      },
+      {
+        "value": "You Talents still work but they won't allow you to advance past Peak Human Level."
+      },
+      {
+        "value": "You must kill Micah Bell III publically, in the direct view of Arthur Morgan and Dutch van der Linde."
+      },
+      {
+        "value": "You must kill Micah Bell III from a distance no more than five meters."
+      },
+      {
+        "value": "Mission Ends after you escape any pursuit that would happen as a result of you killing Micah Bell III, you also must escape from view and not be located/seen/heard for an hour for it to count."
+      },
+      {
+        "value": "You cannot kill or permanently cripple any other member of the Van der Linde gang."
+      }
+    ],
+    "budget": 0,
+    "desc": "Someone has to do the dirty job, someone has to do the right choice. Maybe it would be you, O' Contractor? The Mission is simple, the choice is yours to accept it but know that this is the right thing to do.",
+    "uid": "GrYYG"
+  },
+  {
+    "reward": 2,
+    "image": "https://honeysanime.com/wp-content/uploads/2016/07/gate-jieitai-kanochi-nite-wallpaper-4-20160727082750-636x500.jpg",
+    "author": "Zaralann",
+    "rewardType": "IMG Tickets",
+    "source": "",
+    "title": "War, War Never Changes...",
+    "loca": "GATE: Thus the JSDF Fought There!",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "Rory Mercury is instantly Captured.",
+        "type": "Companions",
+        "value": "Organize Itami Yōji's death in conflict."
+      },
+      {
+        "reward": "Tuka Luna Marceau is instantly Captured.",
+        "type": "Companions",
+        "value": "Prevent Flame Dragon's Attack on Kowan."
+      },
+      {
+        "reward": "Lelei La Lalena is instantly Captured.",
+        "type": "Companions",
+        "value": "Flane Dragon dies in conflict with JSDF."
+      },
+      {
+        "reward": "Kuribayashi Shino is instantly Captured.",
+        "type": "Companions",
+        "value": "Conflict between Empire and JSDF lasts for one month."
+      },
+      {
+        "reward": "Kurokawa Mari is instantly Captured.",
+        "type": "Companions",
+        "value": "Conflict between Empire and JSDF lasts for two months."
+      },
+      {
+        "reward": "Sherry Tyueli is instantly Captured.",
+        "type": "Companions",
+        "value": "Conflict between Empire and JSDF lasts for three months."
+      },
+      {
+        "reward": "Piña Co Lada is instantly Captured.",
+        "type": "Companions",
+        "value": "Piña Co Lada is captured and taken prisoner by JSDF."
+      },
+      {
+        "reward": "All female members of Rose-Order of Knights are instantly Captured.",
+        "type": "Companions",
+        "value": "Fake Piña Co Lada's death with the blame falling on JSDF."
+      },
+      {
+        "reward": "Tyūle is instantly Captured.",
+        "type": "Companions",
+        "value": "Ensure the death of Molt Sol Augustus with JSDF being the ones who end his life. Zorzal El Caesar must take the Throne."
+      },
+      {
+        "reward": "All Named Warrior Banies are instantly Captured.",
+        "type": "Companions",
+        "value": "Ensure the return of Warrior Bannies and them joining JSDF's side of conflict."
+      },
+      {
+        "reward": "Yao Hā Dushi is instantly Captured.",
+        "type": "Companions",
+        "value": "Ensure that Yao Hā Dushi joining JSDF's side of conflict."
+      },
+      {
+        "reward": "100 Credits for each additional Month of War after the third one.",
+        "type": "Other",
+        "value": "Ensure that the War between JSDF and Empire lasts for as long as possible."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You will enter 'GATE: Thus the JSDF Fought There!'[DR5] on Falmart a month before the initial opening of the Gate."
+      },
+      {
+        "value": "You must keep the conflict between JSDF and Empire going, directing Empire's troops to attack the Alnus Hill constantly and preventing any peace from being reached."
+      },
+      {
+        "value": "The Mission will end either after ten years of conflict or after the Empire would exhaust all possible resources it has and simply would not have any way to continue fighting."
+      },
+      {
+        "value": "Losing the 'Will to Fight' is not a reason, only actual physical lack of a way to continue the battle."
+      },
+      {
+        "value": "For the duration of the Mission any Mind Control Abilities and Lures that you have no longer function."
+      },
+      {
+        "value": "You cannot Bound anyone with the exception of those listed in Objective."
+      },
+      {
+        "value": "You cannot personally destroy Empire, the conflict must only be with JSDF but sabotage to keep the conflict going is allowed."
+      }
+    ],
+    "budget": 0,
+    "desc": "Peace? Coexistence? Who would want to coexist with barbarians that rape, pillage and plunder and have the arrogance to call themselves superior for it? No, this isn't something that can be tolerated! O' Contractor, a Mission for you to perform a cleansing of the land of Falmart!",
+    "uid": "CGUtw"
+  },
+  {
+    "reward": 5,
+    "image": "",
+    "author": "CyrusFallen",
+    "rewardType": "IMG Tickets",
+    "source": "",
+    "title": "Contractor Battle Royale",
+    "loca": "Overlord (LN)",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Be in the top 100!"
+      },
+      {
+        "reward": 500,
+        "type": "Credits",
+        "value": "Be in the top 50!"
+      },
+      {
+        "reward": 1000,
+        "type": "Credits",
+        "value": "Be in the top 10!"
+      },
+      {
+        "reward": "Up to 3 non-TY perks of your choice.",
+        "type": "Perks",
+        "value": "Be in the top 5"
+      },
+      {
+        "reward": "Any non-TY Companion and/or companion perk.",
+        "type": "Companions",
+        "value": "Be in the top 3!"
+      },
+      {
+        "reward": "Unrestricted ESL, with the ability to go to any world of your choosing regardless of progress on the current one.",
+        "type": "Other",
+        "value": "Be in the top 2!"
+      },
+      {
+        "reward": "Any TY Companion, companion perk, or PS to a TY, of your choice.",
+        "type": "Companions",
+        "value": "Win the Battle Royale with a full living retinue of 10 members of at least T8!"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Win the Battle Royale!"
+      },
+      {
+        "value": "Destroying the planet, even accidentally, is impossible until there are at most 10 contractors left."
+      },
+      {
+        "value": "You must take a retinue of at least 4 members. Yes, you count as one."
+      },
+      {
+        "value": "Take an extra 500 credits to spend on members of your retinue. Keep in mind that unless you win you won't keep the purchases with these credits."
+      },
+      {
+        "value": "Death only counts if they remain dead over a week, after which they disappear from the battle."
+      },
+      {
+        "value": "Capturing an enemy will sell them automatically, bypassing the ressurection window."
+      },
+      {
+        "value": "Your total retinue cannot go over 10 members, minions don't count for this limit but can't be stronger than the weakest member of your retinue."
+      },
+      {
+        "value": "Your pocket appartment will materialize into the world and can be destroyed."
+      }
+    ],
+    "budget": 1000,
+    "desc": "Welcome Contractor, to our brand new Battle Royale! You'll compete with other contractors to be the last one standing in this epic \"survival of the fittest\" competition!\nShow us what you've got!",
+    "uid": "JYUhp"
+  },
+  {
     "reward": 2,
     "image": "https://e1.pxfuel.com/desktop-wallpaper/619/206/desktop-wallpaper-pin-on-desu-1-2-shin-megami-tensei-devil-survivor-2.jpg",
     "author": "Samsara",
@@ -408,6 +845,7 @@
     "rewardType": "Credits",
     "source": "",
     "title": "Because You AreThe Honkai",
+    "uid": "pyvdV",
     "loca": "Generic",
     "lewd": false,
     "scope": "Standard",
@@ -426,22 +864,37 @@
         "reward": "Instant capture of up to 13 individuals of a tier equal to or less than the lowest tier amongst your waifus",
         "type": "Companions",
         "value": "Erase human history, but leave them a chance to restart and try again"
+      },
+      {
+        "reward": "Soul Talent, Blessed Talent, and Talent Sharing for both",
+        "type": "Perks",
+        "value": "Use entirely local captures to create your 12 Herrschers and only allow each one of them to fight once"
+      },
+      {
+        "reward": "Free Power Swap of one companion to an equal tier as the Herrscher of Ego",
+        "type": "Other",
+        "value": "Create or allow the creation of a Herrscher of Ego to balance the scales and offer humanity a fighting chance"
       }
     ],
     "conditions": [
       {
-        "value": "You may only use powers, abilities and technology native to Honkai Impact 3rd"
+        "value": "You may only use powers, abilities and technology native to the Honkai Impact games"
       },
       {
-        "value": "Between captures and purchases, you are limited to thirteen waifus"
+        "value": "Between captures and purchases, you are limited to thirteen waifus/husbandos"
       },
       {
         "value": "Additional objectives 2 and 3 are mutually exclusive,  you cannot complete both and this is intentional"
+      },
+      {
+        "value": "If you attempt additional objective #4, potential Herrschers will be immune to bindings and lures until they actively become Herrschers"
+      },
+      {
+        "value": "If you attempt additional objective #5, they count against your retinue effectively limiting you to twelve waifus/husbandos"
       }
     ],
     "budget": 400,
-    "desc": "War, cheating, jealousy, greed...  these sins, and many others like them, should sound familiar to you.  They are what humanity does to themselves and to others on a near constant basis.  Because of this, a conclusion has been reached - humanity does not deserve to exist.  Whatever world you are in, you now stand in judgement upon them, as both their destruction and their redemption.  If mankind can unify in the face of an overwhelming threat, if old grudges can be put aside or even forgiven, if they can work together just once in their miserable lives to forge a path into the future then maybe, just maybe, they deserve to exist.  And if not, well.  Destroy them.",
-    "uid": "pyvdV"
+    "desc": "War, cheating, jealousy, greed...  these sins, and many others like them, should sound familiar to you.  They are what humanity does to themselves and to others on a near constant basis.  Because of this, a conclusion has been reached - humanity does not deserve to exist.  Whatever world you are in, you now stand in judgement upon them, as both their destruction and their redemption.  If mankind can unify in the face of an overwhelming threat, if old grudges can be put aside or even forgiven, if they can work together just once in their miserable lives to forge a path into the future then maybe, just maybe, they deserve to exist.  And if not, well.  Destroy them."
   },
   {
     "reward": 125,
@@ -1214,11 +1667,12 @@
   },
   {
     "reward": "You will gain Uzumaki Naruko[T7].",
-    "image": "",
+    "image": "https://dailyanimeart.files.wordpress.com/2013/10/fallen-friend-by-mariaklepikova1.jpg",
     "author": "Zaralann",
     "rewardType": "Companions",
     "source": "",
     "title": "Cutting Off the Hand of God...",
+    "uid": "xYVVe",
     "loca": "Naruto",
     "lewd": false,
     "scope": "Grand",
@@ -1354,8 +1808,7 @@
       }
     ],
     "budget": 0,
-    "desc": "Uzumaki Naruto known no defeat, each time he fights the 'Hand of God' delivers him victoy or tools for it, the 'Plot Armor' that encompases him makes his opponents lose competence and lose against him or empower him to the point that victory becomes possible even with how incompetent he is. Let's prevent such an atrocity from happening.",
-    "uid": "xYVVe"
+    "desc": "Uzumaki Naruto known no defeat, each time he fights the 'Hand of God' delivers him victoy or tools for it, the 'Plot Armor' that encompases him makes his opponents lose competence and lose against him or empower him to the point that victory becomes possible even with how incompetent he is. Let's prevent such an atrocity from happening."
   },
   {
     "reward": "I AM Atomic is for you to use.",
@@ -14046,40 +14499,6 @@
     "title": "Magical Girl Conqueror",
     "reward": "The captured Magical Girl's purchase price",
     "uid": "tZRYu"
-  },
-  {
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1018575772358803466/macbeth-about-to-murder-king-duncan-in-ken-welsh.jpg",
-    "conditions": [
-      {
-        "value": "Kill a king."
-      },
-      {
-        "value": "Can’t use no help from retinue"
-      },
-      {
-        "value": "Your max tier is set at 5. "
-      },
-      {
-        "value": "Collect the king’s head"
-      }
-    ],
-    "rewardType": "Credits",
-    "loca": "Generic",
-    "source": "",
-    "desc": "One of our clients is fissured in kin-slaying after repeatedly listening to the song, kill the king from the band Megadeth. So you are hired to do it.",
-    "author": "irugaa0",
-    "objectives": [
-      {
-        "value": "Play Megadeth’s kill the king song while you kill the king.",
-        "reward": "a Tier 4 or lower companion.",
-        "type": "Companions"
-      }
-    ],
-    "title": "Kill The King",
-    "budget": 0,
-    "reward": "25",
-    "scope": "Quick",
-    "uid": "yjKFF"
   },
   {
     "loca": "Pokemon",

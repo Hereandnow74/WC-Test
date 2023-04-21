@@ -45,6 +45,7 @@
         <Button v-if="!user.isEmailVerified && !isEmailSent" label="Send Verification Email" @click="sendEmail" />
         <Button v-if="user.role === 'admin'" label="Get Likes" @click="getLikes" />
         <Button v-if="user.role === 'admin'" label="Get Chars" @click="getChars" />
+        <!-- <Button v-if="user.role === 'admin'" label="Rebase builds" @click="rebaseBuilds" /> -->
         <Button v-if="user.role === 'admin'" label="Recalculate Likes" @click="recalculateLikes" />
       </template>
     </div>
@@ -55,9 +56,10 @@
 import * as zod from 'zod'
 import { useForm, useField } from 'vee-validate'
 import { toFormValidator } from '@vee-validate/zod'
-import { getUserFromServer, rebaseCharactersToServer, getCharactersFromServer, logoutFromServer, recalculateLikesOnServer, updateUserInfo, sendVerificationEmail } from '~/logic/server/'
+import { getUserFromServer, rebaseCharactersToServer, getCharactersFromServer, logoutFromServer, recalculateLikesOnServer, updateUserInfo, sendVerificationEmail, createBuildInDB } from '~/logic/server/'
 import { useUser } from '~/store/user'
 import { confirmDialog } from '~/logic/dialog'
+import { getAllBuilds } from '~/logic'
 
 const errorMessage = ref('')
 const buttonActive = ref(true)
@@ -124,4 +126,51 @@ function sendEmail() {
   isEmailSent.value = true
   sendVerificationEmail().then(msg => confirmDialog(msg, 'info'))
 }
+
+// const buildTags = computed(() => {
+//   const tags = []
+//   if (props.build.binding.length) tags.push(props.build.binding[0].type || props.build.binding[0].title)
+//   if (props.build.heritage.length) tags.push(props.build.heritage[0].tree || props.build.heritage[0].title)
+//   if (props.build.startingOrigin.title) tags.push(`${props.build.startingOrigin.character} ${props.build.startingOrigin.title}`)
+//   if (props.build.allEffects.includes('With A Little Help From My Friends(Cooperative)')) tags.push('Cooperative')
+//   if (props.build.allEffects.includes('Couple’s Account (Cooperative)')) tags.push('Couples')
+//   if (props.build.allEffects.includes('Cash Still Rules')) tags.push('Cash Still Rules')
+//   if (props.build.allEffects.includes('Wage Slave')) tags.push('Wage Slave')
+//   if (props.build.allEffects.includes('Black-mark')) tags.push('Black-mark')
+//   if (props.build.loan.owed > 0) tags.push('Under Loan')
+//   if (props.build.companions.some(x => x.image)) tags.push('Custom Images')
+//   if (props.build.companions.some(x => x.note)) tags.push('Retinue Notes')
+//   if (props.build.activeChallenges.length > 0) tags.push(props.build.activeChallenges[0].title)
+//   if (props.build.allEffects.some((x: string) => ALL_DLC_PERK_TITLES.value[x])) tags.push('Use DLC')
+//   return tags
+// })
+// function rebaseBuilds() {
+//   getAllBuilds((data) => {
+//     data.forEach((build) => {
+//       const finalBuild = {
+//         title: build.title,
+//         name: build.nickname,
+//         build,
+//         author: user.value.id,
+//         desc: build.desc.replaceAll('\\n', '<br>'),
+//         published: true,
+//         bindingName: (build.binding.length) ? build.binding[0].type || build.binding[0].title : 'None',
+//         originName: (build.startingOrigin.title) ? build.startingOrigin.title : 'None',
+//         characterName: (build.startingOrigin.character) ? build.startingOrigin.character : 'None',
+//         intensity: build.intensities.map(x => x.title),
+//         loan: !!build.loan.owed,
+//         creditBalance: 0,
+//         creditsSpent: 0,
+//         customImages: false,
+//         dlc: false,
+//         retinue: build.companions.map(char => ({ name: char.name, tier: char.tier, tags: char.tags || [], state: char.role || 'Companion' })),
+//         retinueNotes: false,
+//         challenges: build.activeChallenges.map(x => x.title),
+//         tags: [],
+//         likes: 0,
+//       }
+//       createBuildInDB(finalBuild).then(msg => confirmDialog(msg, 'info'))
+//     })
+//   })
+// }
 </script>

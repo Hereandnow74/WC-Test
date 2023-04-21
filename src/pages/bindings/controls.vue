@@ -7,7 +7,7 @@
     >
       <PerkCard
         v-for="other in withoutSpaceTruck"
-        :key="other.title"
+        :key="other.uid"
         :perk="other"
         :bg="lureAvailable(other) ? 'pink-100 dark:pink-900 hover:(pink-200 dark:rose-800)'
           : 'gray-200 dark:gray-600'"
@@ -27,7 +27,7 @@
       >
         <PerkCard
           v-for="other in otherDLC"
-          :key="other.title"
+          :key="other.uid"
           :perk="other"
           :bg="lureAvailable(other) ? 'pink-100 dark:pink-900 hover:(pink-200 dark:rose-800)'
             : 'gray-200 dark:gray-600'"

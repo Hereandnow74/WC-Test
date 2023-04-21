@@ -17,8 +17,6 @@ import { homes, demiplane, dungeon } from './demdun'
 import { DLCRides, rides } from './rides'
 import { DLCgenericPerks, DLChomes, DLCperks, DLCtalents, DLCheritages, DLClureExpansions, DLCbindings, DLClures, DLCotherControls, DLCridePerks, DLCintensity } from './DLCs'
 
-const { userWorlds, localUserWorlds, localUserCharacters } = useStore()
-
 export const VERSION = '0.8'
 
 export const nicknames = [
@@ -462,6 +460,7 @@ export const getAllChars = async() => {
 }
 
 const allCharsComp = computed(() => {
+  const { localUserCharacters } = useStore()
   return [].concat(localUserCharacters.value.map(x => ({ u: x.uid, n: x.name, w: x.world, t: x.tier, d: x.sub, b: x.tags, i: x.image, in: x.image_nsfw, type: 'local' })), allChars.value) as DBCharacter[]
 })
 
@@ -528,6 +527,7 @@ getWorlds()
 export const allCompanionsWorlds = computed(() => Array.from(new Set(allChars.value.map(x => x.w))))
 
 export const allWorlds = computed(() => {
+  const { userWorlds, localUserWorlds } = useStore()
   return Array.prototype.concat(userWorlds.value, localUserWorlds.value, worlds.value.map((x) => { x.type = 'canon'; return x }), subWorlds.value)
 })
 

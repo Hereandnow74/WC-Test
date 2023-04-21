@@ -173,6 +173,14 @@ export function getBuild(id: string, callback: any) {
     else callback()
   })
 }
+export function getAllBuilds(callback: any) {
+  const docRef = collection(db, 'shared')
+  getDocs(docRef).then((docSnap) => {
+    const res = []
+    docSnap.forEach(doc => res.push(doc.data()))
+    callback(res)
+  })
+}
 
 export function getBuilds(callback: any) {
   const docRef = doc(db, 'buildsList', 'currentList')

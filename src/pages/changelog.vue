@@ -6,6 +6,16 @@
       </h2>
       <div>
         <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          20 April 2023
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~80 new user submitted characters, new missions, new worlds, new DLC SWP</li>
+          <li>A beta test of the new page for globally shared builds <a class="text-blue-500" href="https://waifu-catalog.neocities.org/globalBuilds">https://waifu-catalog.neocities.org/globalBuilds</a></li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
           17 April 2023
         </h3>
         <ul class="list-decimal list-inside">

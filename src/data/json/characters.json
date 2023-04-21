@@ -19984,8 +19984,10 @@
     "b": [
       "F",
       "hz",
+      "cl",
       "en",
       "sn",
+      "gn",
       "al"
     ],
     "in": "https://tulip.paheal.net/_images/22f77e5162ca0248cc71ae54839efd86/4125784%20-%20Ben_10%20Myaxx%20PlanZ34.png"
@@ -21371,8 +21373,11 @@
     "b": [
       "F",
       "C",
-      "dc"
-    ]
+      "st",
+      "dc",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/original/4c/fa/__litchi_faye_ling_and_lao_jiu_blazblue_drawn_by_akaten__4cfa8b96afce3cb5bbf8fd6778afb3a1.jpg"
   },
   {
     "u": 9016,
@@ -22953,6 +22958,7 @@
       "dh",
       "sr",
       "rg",
+      "cm",
       "im"
     ],
     "in": "https://static1.e621.net/data/93/f6/93f6f0059b7c26a346c79a8476ffc826.jpg"
@@ -28790,14 +28796,20 @@
     "u": 9030,
     "n": "Felicia",
     "t": 4,
-    "i": "3c9699d3612d87085d582f61dfb757b1.jpg",
-    "s": "https://chan.sankakucomplex.com/post/show/11201006",
+    "i": "[n]GRMyyTk.jpg",
+    "s": "https://cdn.donmai.us/sample/84/0e/__felicia_vampire_drawn_by_tomo_eokaiteru__sample-840e49782ddceb4e943099c831013fe6.jpg",
     "w": "Darkstalkers",
     "b": [
       "F",
       "C",
-      "ct"
-    ]
+      "sl",
+      "ct",
+      "ar",
+      "cm",
+      "os",
+      "gi"
+    ],
+    "in": "https://cdn.donmai.us/sample/84/33/__felicia_vampire_drawn_by_jmg__sample-843367c9d36243222a0a7d9f2ba8d604.jpg"
   },
   {
     "u": 9031,
@@ -38737,8 +38749,10 @@
       "F",
       "C",
       "mt",
+      "cl",
       "ps",
       "bj",
+      "id",
       "pl",
       "di",
       "mo",
@@ -51532,7 +51546,9 @@
     "b": [
       "M",
       "ai",
-      "ad"
+      "ad",
+      "im",
+      "ir"
     ],
     "in": "https://i.ibb.co/hLyxLRP/Foxy-the-Pirate-NSFW.png"
   },
@@ -51546,7 +51562,9 @@
     "b": [
       "M",
       "ai",
-      "im"
+      "ad",
+      "im",
+      "ir"
     ]
   },
   {
@@ -58965,7 +58983,6 @@
     "w": "Granblue Fantasy",
     "b": [
       "F",
-      "lv",
       "cm",
       "fa",
       "nc"
@@ -58996,7 +59013,6 @@
     "w": "Granblue Fantasy",
     "b": [
       "F",
-      "lv",
       "wh",
       "me",
       "cm",
@@ -59012,7 +59028,6 @@
     "w": "Granblue Fantasy",
     "b": [
       "F",
-      "lv",
       "me",
       "cm"
     ],
@@ -59027,7 +59042,6 @@
     "w": "Granblue Fantasy",
     "b": [
       "F",
-      "lv",
       "me",
       "cm"
     ],
@@ -59044,7 +59058,6 @@
     "b": [
       "F",
       "hl",
-      "lv",
       "dh",
       "cm"
     ],
@@ -59053,14 +59066,13 @@
   {
     "u": 5835,
     "n": "Sophia",
-    "t": 6,
+    "t": 5,
     "i": "[n]WDSCldu.jpg",
     "s": "https://cdn.donmai.us/original/11/50/__sophia_granblue_fantasy_drawn_by_yaman__1150a04c9520bf342afb83bcb556fb5d.jpg",
     "w": "Granblue Fantasy",
     "b": [
       "F",
       "hl",
-      "lv",
       "pt",
       "cm"
     ],
@@ -59075,7 +59087,6 @@
     "w": "Granblue Fantasy",
     "b": [
       "F",
-      "lv",
       "cm"
     ],
     "in": "https://cdn.donmai.us/original/b6/c4/__jessica_granblue_fantasy_drawn_by_naha78__b6c4d3f2867046d4a59503f007ffedd1.jpg"
@@ -59090,7 +59101,6 @@
     "b": [
       "F",
       "hl",
-      "lv",
       "dh",
       "me",
       "pc",
@@ -59106,7 +59116,6 @@
     "w": "Granblue Fantasy",
     "b": [
       "F",
-      "lv",
       "md",
       "cm"
     ]
@@ -59120,7 +59129,6 @@
     "w": "Granblue Fantasy",
     "b": [
       "F",
-      "lv",
       "cm",
       "fa"
     ],
@@ -59135,7 +59143,6 @@
     "w": "Granblue Fantasy",
     "b": [
       "M",
-      "lv",
       "dh",
       "cm"
     ]
@@ -59161,7 +59168,6 @@
     "w": "Granblue Fantasy",
     "b": [
       "F",
-      "lv",
       "ar",
       "cm"
     ],
@@ -59191,10 +59197,10 @@
       "F",
       "hz",
       "cl",
-      "lv",
       "de",
       "cm",
-      "im"
+      "im",
+      "Primal"
     ],
     "in": "https://cdn.donmai.us/sample/07/13/__godsworn_alexiel_granblue_fantasy_drawn_by_cream_cod__sample-0713c32783264b6c7291a0208b9a4e4e.jpg"
   },
@@ -59207,7 +59213,6 @@
     "w": "Granblue Fantasy",
     "b": [
       "F",
-      "lv",
       "dh",
       "pc",
       "cm"
@@ -59224,7 +59229,6 @@
     "b": [
       "F",
       "hr",
-      "lv",
       "dh",
       "cc",
       "cm"
@@ -59235,12 +59239,11 @@
     "u": 13484,
     "n": "Amira",
     "t": 7,
-    "i": "sample_c6c95cfd156869c040c566d30a5c07d2.jpg",
-    "s": "https://chan.sankakucomplex.com/post/show/7538822",
+    "i": "[n]qlMRXtS.jpg",
+    "s": "https://cdn.donmai.us/original/c6/c9/__amira_granblue_fantasy_and_2_more_drawn_by_yuzuki_karu__c6c95cfd156869c040c566d30a5c07d2.png",
     "w": "Granblue Fantasy",
     "b": [
       "F",
-      "lv",
       "dm",
       "an",
       "sr",
@@ -59258,7 +59261,6 @@
     "w": "Granblue Fantasy",
     "b": [
       "F",
-      "lv",
       "dh",
       "cm"
     ]
@@ -59272,7 +59274,6 @@
     "w": "Granblue Fantasy",
     "b": [
       "F",
-      "lv",
       "cm"
     ]
   },
@@ -59285,7 +59286,6 @@
     "w": "Granblue Fantasy",
     "b": [
       "F",
-      "lv",
       "dh",
       "cm"
     ],
@@ -59300,7 +59300,6 @@
     "w": "Granblue Fantasy",
     "b": [
       "F",
-      "lv",
       "me",
       "pc",
       "cm",
@@ -59318,7 +59317,6 @@
     "w": "Granblue Fantasy",
     "b": [
       "F",
-      "lv",
       "dh",
       "ar",
       "cm"
@@ -59334,7 +59332,6 @@
     "w": "Granblue Fantasy",
     "b": [
       "F",
-      "lv",
       "ar",
       "cm"
     ],
@@ -59350,7 +59347,6 @@
     "b": [
       "F",
       "hl",
-      "lv",
       "mi",
       "ar",
       "cm"
@@ -59366,7 +59362,6 @@
     "w": "Granblue Fantasy",
     "b": [
       "F",
-      "lv",
       "mi",
       "ar",
       "cm"
@@ -59382,7 +59377,6 @@
     "w": "Granblue Fantasy",
     "b": [
       "F",
-      "lv",
       "mi",
       "ar",
       "cm"
@@ -59399,7 +59393,6 @@
     "b": [
       "F",
       "hr",
-      "lv",
       "el",
       "cm"
     ],
@@ -59414,7 +59407,6 @@
     "w": "Granblue Fantasy",
     "b": [
       "F",
-      "lv",
       "ar",
       "cm"
     ],
@@ -59431,7 +59423,6 @@
       "F",
       "di",
       "dn",
-      "lv",
       "dh",
       "me",
       "cm"
@@ -59446,7 +59437,6 @@
     "w": "Granblue Fantasy",
     "b": [
       "F",
-      "lv",
       "dh",
       "me",
       "cm"
@@ -59461,7 +59451,6 @@
     "w": "Granblue Fantasy",
     "b": [
       "F",
-      "lv",
       "dh",
       "cm"
     ]
@@ -59475,11 +59464,11 @@
     "w": "Granblue Fantasy",
     "b": [
       "F",
-      "lv",
       "gd",
       "cm",
       "im",
-      "fa"
+      "fa",
+      "Primal"
     ],
     "in": "https://cdn.donmai.us/original/35/6a/__athena_granblue_fantasy_drawn_by_nt00__356acaf31ad23e3eb45dd394f1edd513.jpg"
   },
@@ -59492,7 +59481,6 @@
     "w": "Granblue Fantasy",
     "b": [
       "F",
-      "lv",
       "dh",
       "ar",
       "cm"
@@ -59508,7 +59496,6 @@
     "w": "Granblue Fantasy",
     "b": [
       "F",
-      "lv",
       "dh",
       "cb",
       "cm"
@@ -59523,7 +59510,6 @@
     "w": "Granblue Fantasy",
     "b": [
       "F",
-      "lv",
       "cm"
     ],
     "in": "https://cdn.donmai.us/sample/c1/cc/__beatrix_granblue_fantasy_drawn_by_akitsuki_karasu__sample-c1cc90f7c655e96fd5a331ed45036009.jpg"
@@ -59537,7 +59523,6 @@
     "w": "Granblue Fantasy",
     "b": [
       "F",
-      "lv",
       "cm"
     ],
     "in": "https://cdn.donmai.us/sample/76/cd/__black_knight_granblue_fantasy_drawn_by_cafekun__sample-76cd7b198d54a4a3c4ea423860666227.jpg"
@@ -59551,7 +59536,6 @@
     "w": "Granblue Fantasy",
     "b": [
       "F",
-      "lv",
       "dh",
       "cm"
     ]
@@ -59571,7 +59555,6 @@
       "sc",
       "di",
       "hl",
-      "lv",
       "sn",
       "me",
       "gn",
@@ -59589,7 +59572,6 @@
     "w": "Granblue Fantasy",
     "b": [
       "F",
-      "lv",
       "dh",
       "cm"
     ]
@@ -59603,7 +59585,6 @@
     "w": "Granblue Fantasy",
     "b": [
       "F",
-      "lv",
       "dh",
       "cc",
       "cm"
@@ -59619,7 +59600,6 @@
     "w": "Granblue Fantasy",
     "b": [
       "F",
-      "lv",
       "dh",
       "ar",
       "cm"
@@ -59635,7 +59615,6 @@
     "w": "Granblue Fantasy",
     "b": [
       "F",
-      "lv",
       "cm"
     ]
   },
@@ -59648,7 +59627,6 @@
     "w": "Granblue Fantasy",
     "b": [
       "F",
-      "lv",
       "dh",
       "cm",
       "sh"
@@ -59664,7 +59642,6 @@
     "w": "Granblue Fantasy",
     "b": [
       "F",
-      "lv",
       "dh",
       "ar",
       "cm"
@@ -59681,7 +59658,8 @@
       "F",
       "lv",
       "dm",
-      "cm"
+      "cm",
+      "Primal"
     ],
     "in": "https://cdn.donmai.us/original/61/49/__cerberus_granblue_fantasy_and_1_more_drawn_by_akishima_kei__614958491039ca86eb3bdb9d1ebc374e.jpg",
     "d": "Shingeki no Bahamut"
@@ -59707,7 +59685,6 @@
     "w": "Granblue Fantasy",
     "b": [
       "F",
-      "lv",
       "dh",
       "cm"
     ]
@@ -59786,15 +59763,15 @@
     "u": 13533,
     "n": "Colossus",
     "t": 6,
-    "i": "sample_ae4e6337bd1c7e8d06d4dc3eb23a030c.jpg",
-    "s": "https://chan.sankakucomplex.com/post/show/5725870",
+    "i": "[n]GUAjSPK.jpg",
+    "s": "https://cdn.donmai.us/sample/80/ce/__colossus_granblue_fantasy_drawn_by_aki7__sample-80ceecdab33745ed51e9d589916091e5.jpg",
     "w": "Granblue Fantasy",
     "b": [
       "O",
       "hz",
       "cm",
       "im",
-      "Primal Beast"
+      "Primal"
     ],
     "in": "https://cdn.donmai.us/sample/86/ac/__colo_mag_chan_and_colossus_original_and_1_more_drawn_by_bai_linqin__sample-86ac5542811591cd003286ae0ffacc9b.jpg"
   },
@@ -59899,33 +59876,45 @@
     "u": 13545,
     "n": "Ejaeli",
     "t": 5,
-    "i": "npc_zoom_3030061000_01.png",
-    "s": "https://gbf.wiki/images/c/c2/Npc_zoom_3030061000_01.png",
+    "i": "[n]bsCvjEc.jpg",
+    "s": "https://cdn.donmai.us/original/1b/a1/1ba1fd0105f4c071b89eafc696a3a7b5.png",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "ar",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/original/a1/c9/__ejaeli_granblue_fantasy_drawn_by_cyoppu__a1c93aa880002305e0569dba8839faba.jpg"
   },
   {
     "u": 13546,
     "n": "Elize Lutus",
     "t": 5,
-    "i": "elizelutus_a.png",
-    "s": "https://gbf.wiki/images/8/88/ElizeLutus_A.png",
+    "i": "[n]fByuIkc.jpg",
+    "s": "https://cdn.donmai.us/original/d6/c3/d6c3f201330f46e0b7ce3a98d802c3d5.png",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "me",
+      "cm",
+      "Summoner",
+      "fa"
+    ],
+    "d": "Tales of Xillia"
   },
   {
     "u": 13547,
     "n": "Elmelaura",
     "t": 4,
-    "i": "npc_zoom_3020025000_01.png",
-    "s": "https://gbf.wiki/images/9/9e/Npc_zoom_3020025000_01.png",
+    "i": "[n]DVSqexE.jpg",
+    "s": "https://cdn.donmai.us/sample/dc/23/__elmelaura_granblue_fantasy_drawn_by_minaba_hideo__sample-dc23075c240f4f9fbeaa6f8107c4dd72.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "hr",
+      "dh",
+      "cf",
+      "cm"
     ]
   },
   {
@@ -59956,266 +59945,354 @@
     "u": 13555,
     "n": "Farrah",
     "t": 5,
-    "i": "npc_zoom_3030037000_01.png",
-    "s": "https://gbf.wiki/images/8/8f/Npc_zoom_3030037000_01.png",
+    "i": "[n]VQJoeak.jpg",
+    "s": "https://cdn.donmai.us/sample/bb/35/__farrah_granblue_fantasy_drawn_by_minaba_hideo__sample-bb35321633555c2d5e4e855e0edadaab.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/original/7c/1c/__farrah_granblue_fantasy_drawn_by_ajishio__7c1cf7132a498ea6bfd62ce5006262b6.png"
   },
   {
     "u": 13557,
     "n": "Feena",
     "t": 6,
-    "i": "npc_zoom_3040061000_01.png",
-    "s": "https://gbf.wiki/images/d/d6/Npc_zoom_3040061000_01.png",
+    "i": "[n]YJIbqpA.jpg",
+    "s": "https://cdn.donmai.us/sample/c2/53/__feena_granblue_fantasy_and_1_more_drawn_by_minaba_hideo__sample-c253a01cc741aa619594b621464c5e5d.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "cm"
+    ],
+    "d": "Shingeki no Bahamut"
   },
   {
     "u": 13559,
     "n": "Ferry",
     "t": 6,
-    "i": "npc_zoom_3040073000_01.png",
-    "s": "https://gbf.wiki/images/f/f0/Npc_zoom_3040073000_01.png",
+    "i": "[n]CdsoyCY.jpg",
+    "s": "https://cdn.donmai.us/sample/53/d0/__ferry_nicola_geegee_beppo_and_momo_granblue_fantasy_drawn_by_b_c_n_y__sample-53d0c78d629721aa72b3b6e48955c58f.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "mt",
+      "mo",
+      "dh",
+      "cm",
+      "fa"
+    ],
+    "in": "https://cdn.donmai.us/original/ca/3b/__ferry_granblue_fantasy_drawn_by_ibuki_notsu__ca3b5aa0c2c5f36c348ab2908e90ae13.jpg"
   },
   {
     "u": 13560,
     "n": "Fif",
     "t": 6,
-    "i": "npc_zoom_3040034000_82.png",
-    "s": "https://gbf.wiki/images/6/65/Npc_zoom_3040034000_82.png",
+    "i": "[n]hZFDmot.jpg",
+    "s": "https://cdn.donmai.us/sample/15/21/__fif_granblue_fantasy__sample-152106654915484328c8a6dfde6681df.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "hl",
+      "dh",
+      "me",
+      "cm"
     ]
   },
   {
     "u": 13562,
     "n": "Forte",
     "t": 6,
-    "i": "npc_zoom_3040086000_01.png",
-    "s": "https://gbf.wiki/images/9/9a/Npc_zoom_3040086000_01.png",
+    "i": "[n]fPtqPgw.jpg",
+    "s": "https://cdn.donmai.us/sample/0c/aa/__forte_granblue_fantasy_and_1_more_drawn_by_saya_kuroha__sample-0caa7c6bf2f5577d34864bba258e9a08.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "mt",
+      "mo",
+      "dh",
+      "cm",
+      "fa"
+    ],
+    "in": "https://cdn.donmai.us/sample/f4/d9/__forte_granblue_fantasy_and_1_more_drawn_by_snm_sunimi__sample-f4d9fe5b8b17140ed9e492f5fd87ee49.jpg",
+    "d": "Shingeki no Bahamut"
   },
   {
     "u": 13563,
     "n": "Fraux",
     "t": 6,
-    "i": "npc_zoom_3040161000_01.png",
-    "s": "https://gbf.wiki/images/6/6a/Npc_zoom_3040161000_01.png",
+    "i": "[n]PewnQsL.jpg",
+    "s": "https://cdn.donmai.us/sample/6e/79/__fraux_granblue_fantasy__sample-6e79f0190419cd5b8bfcc27a298174a9.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "dh",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/sample/a3/0c/__fraux_granblue_fantasy_drawn_by_aldehyde__sample-a30ca1a2c69b65f95008bd3b28fcbbc6.jpg"
   },
   {
     "u": 13564,
-    "n": "Freezie",
+    "n": "Freezie / Freesia Von Bismarck",
     "t": 6,
-    "i": "npc_zoom_3990153000_01.png",
-    "s": "https://gbf.wiki/images/9/9b/Npc_zoom_3990153000_01.png",
+    "i": "[n]UBkjcRZ.jpg",
+    "s": "https://cdn.donmai.us/sample/95/74/__freesia_granblue_fantasy_drawn_by_minaba_hideo__sample-957427fcb8206ba28969b776296e527f.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "dh",
+      "sa",
+      "cm",
+      "Bureaucrat"
+    ],
+    "in": "https://cdn.donmai.us/sample/3c/64/__freesia_granblue_fantasy_drawn_by_kinhasu__sample-3c643676ac55e1d205a707a18fe49620.jpg"
   },
   {
     "u": 13565,
     "n": "Friday",
     "t": 5,
-    "i": "npc_zoom_3030271000_01.png",
-    "s": "https://gbf.wiki/images/9/93/Npc_zoom_3030271000_01.png",
+    "i": "[n]iyJKbhp.jpg",
+    "s": "https://cdn.donmai.us/sample/c8/ad/__friday_granblue_fantasy_drawn_by_minaba_hideo__sample-c8ad92ec59920fa4324999be0abd7de5.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "cm",
+      "fa"
+    ],
+    "in": "https://cdn.donmai.us/sample/4c/fa/__friday_granblue_fantasy_drawn_by_zasshu_nigou__sample-4cfac33351ed659c1f18f2dea309e64c.jpg"
   },
   {
     "u": 13568,
     "n": "Gayne",
     "t": 5,
-    "i": "npc_zoom_3030009000_01.png",
-    "s": "https://gbf.wiki/images/3/3d/Npc_zoom_3030009000_01.png",
+    "i": "[n]gSPxsUd.jpg",
+    "s": "https://cdn.donmai.us/sample/48/0d/__gayne_granblue_fantasy_drawn_by_minaba_hideo__sample-480de39da6dbb4ccde89f8ffac4aba22.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "ar",
+      "cm"
     ]
   },
   {
     "u": 13570,
     "n": "Ghandagoza",
     "t": 6,
-    "i": "sample_9b7c08f9f4fad26258e1c03be30e13a5.jpg",
-    "s": "https://chan.sankakucomplex.com/post/show/7201870",
+    "i": "[n]VNYwhSF.jpg",
+    "s": "https://cdn.donmai.us/sample/b6/e2/__ghandagoza_granblue_fantasy_drawn_by_minaba_hideo__sample-b6e22a06d60149de5e9d4bdf237f518d.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "M",
+      "dh",
+      "cm"
     ]
   },
   {
     "u": 13571,
     "n": "Goblin Mage",
     "t": 5,
-    "i": "npc_zoom_3030100000_01.png",
-    "s": "https://gbf.wiki/images/7/7e/Npc_zoom_3030100000_01.png",
+    "i": "[n]myFmhUM.jpg",
+    "s": "https://cdn.donmai.us/sample/30/66/__minigob_granblue_fantasy_and_1_more_drawn_by_minaba_hideo__sample-306675ee95a0c53e22f511efcc682914.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "dh",
+      "me",
+      "cm"
+    ],
+    "d": "Shadowverse"
   },
   {
     "u": 13572,
     "n": "Grea",
     "t": 6,
-    "i": "npc_zoom_3040130000_01.png",
-    "s": "https://gbf.wiki/images/2/22/Npc_zoom_3040130000_01.png",
+    "i": "[n]pUDcgGx.jpg",
+    "s": "https://cdn.donmai.us/sample/3d/67/__grea_granblue_fantasy_and_1_more_drawn_by_minaba_hideo__sample-3d67592037afd08cf02451470e3d28cd.jpg",
     "w": "Granblue Fantasy",
     "b": [
       "F",
-      "dg"
-    ]
+      "dg",
+      "ar",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/sample/51/5a/__grea_granblue_fantasy_and_1_more_drawn_by_kanachirou__sample-515a30d711d23a49767004be6e8f854e.jpg",
+    "d": "Shingeki no Bahamut"
   },
   {
     "u": 13574,
     "n": "Haaselia",
     "t": 6,
-    "i": "npc_zoom_3040168000_01.png",
-    "s": "https://gbf.wiki/images/c/ce/Npc_zoom_3040168000_01.png",
+    "i": "[n]BonGeNb.jpg",
+    "s": "https://cdn.donmai.us/original/db/b1/__haaselia_granblue_fantasy_drawn_by_soriya__dbb1714293b4c1279a6b209df9659a1b.png",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "dh",
+      "pt",
+      "cm"
     ]
   },
   {
     "u": 13575,
     "n": "Hallessena",
     "t": 6,
-    "i": "npc_zoom_3040079000_01.png",
-    "s": "https://gbf.wiki/images/6/6d/Npc_zoom_3040079000_01.png",
+    "i": "[n]OnXEYFc.jpg",
+    "s": "https://cdn.donmai.us/sample/2c/e6/__hallessena_granblue_fantasy_drawn_by_etna_brs_etna__sample-2ce6d69b8e7a6edca73f88dfa0b34690.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "dh",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/sample/87/96/__hallessena_granblue_fantasy_drawn_by_raiou__sample-8796e09f0f36f79f5ff5b551d7698fbd.jpg"
   },
   {
     "u": 13576,
     "n": "Halluel and Malluel",
     "t": 6,
-    "i": "summon_b_2040275000.png",
-    "s": "https://gbf.wiki/images/f/f1/Summon_b_2040275000.png",
+    "i": "[n]aQTNvIc.jpg",
+    "s": "https://cdn.donmai.us/original/ac/18/ac18252120e2fd0983a0e38ebb2f8433.png",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "an",
+      "mi",
+      "tw",
+      "cm",
+      "im",
+      "Primal"
+    ],
+    "in": "https://cdn.donmai.us/sample/20/b8/__halluel_and_malluel_granblue_fantasy_drawn_by_deras__sample-20b8b9b67bdfe9b5b92e70fa59e9837d.jpg"
   },
   {
     "u": 13577,
     "n": "Haohmaru",
     "t": 5,
-    "i": "sample_d28e554e310caf2df58485a3e4057c2d.jpg",
-    "s": "https://chan.sankakucomplex.com/post/show/3644017",
+    "i": "[n]pPMCnqb.jpg",
+    "s": "https://cdn.donmai.us/original/18/92/__haoumaru_samurai_spirits_drawn_by_mystic9904__18923aed029d9e31c3daf5fff3e2fae6.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "M",
+      "cl",
+      "pr",
+      "cm"
+    ],
+    "d": "Samurai Shodown / Samurai Spirits"
   },
   {
     "u": 13579,
     "n": "Helel ben Shalem",
     "t": 6,
-    "i": "npc_zoom_3040251000_01.png",
-    "s": "https://gbf.wiki/images/c/cf/Npc_zoom_3040251000_01.png",
+    "i": "[n]Slbddep.jpg",
+    "s": "https://cdn.donmai.us/sample/11/cf/__helel_ben_shalem_granblue_fantasy_drawn_by_sachi_160332__sample-11cfea350d75e51417b0ac6677c53547.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "de",
+      "cm",
+      "im"
+    ],
+    "in": "https://cdn.donmai.us/sample/70/e9/__helel_ben_shalem_granblue_fantasy_drawn_by_marugoshi_54burger__sample-70e93edf9750788b2f813ff2133a41e4.jpg"
   },
   {
     "u": 13580,
     "n": "Heles",
     "t": 6,
-    "i": "npc_zoom_3040060000_01.png",
-    "s": "https://gbf.wiki/images/e/e1/Npc_zoom_3040060000_01.png",
+    "i": "[n]rarMcuP.jpg",
+    "s": "https://cdn.donmai.us/original/ad/ef/__heles_granblue_fantasy_drawn_by_maekawa_yuichi__adef94befff8297925e166f88ff1d1e5.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "dh",
+      "pc",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/sample/11/df/__heles_granblue_fantasy_drawn_by_tony_guisado__sample-11df5d05ed1ceea9700d209c7829d38f.jpg"
   },
   {
     "u": 13582,
     "n": "Herja",
     "t": 6,
-    "i": "npc_zoom_3040271000_01.png",
-    "s": "https://gbf.wiki/images/6/6b/Npc_zoom_3040271000_01.png",
+    "i": "[n]LhBpNoh.jpg",
+    "s": "https://cdn.donmai.us/original/71/4e/714ede89999c94de7601e0f91b3dd1cd.png",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/original/e5/bb/__herja_granblue_fantasy_drawn_by_mafuyu_kanden_shoujyo__e5bb7442548df5a9a567a7e31a3752b4.jpg"
   },
   {
     "u": 13583,
     "n": "Illnott",
     "t": 6,
-    "i": "npc_zoom_3040277000_01.png",
-    "s": "https://gbf.wiki/images/8/85/Npc_zoom_3040277000_01.png",
+    "i": "[n]vzHVbBe.jpg",
+    "s": "https://cdn.donmai.us/original/9c/8b/__illnott_granblue_fantasy_drawn_by_ya99ru__9c8be14ad6e67501bf7191ae8b00c3a0.png",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/sample/b4/89/__illnott_granblue_fantasy_drawn_by_neko_no_suke_nekoneco118__sample-b489b69f3d5cae2d5b22f1ae4882ede0.jpg"
   },
   {
     "u": 13584,
     "n": "Ilsa",
     "t": 6,
-    "i": "npc_zoom_3040258000_01.png",
-    "s": "https://gbf.wiki/images/4/4e/Npc_zoom_3040258000_01.png",
+    "i": "[n]DoCBQFE.jpg",
+    "s": "https://cdn.donmai.us/sample/f8/e0/__ilsa_granblue_fantasy_drawn_by_caiman_pool__sample-f8e08b31b001db3e657c6afb7260276a.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "dh",
+      "tc",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/sample/d1/97/__ilsa_granblue_fantasy_drawn_by_miga_migao__sample-d19766bbac907e892c24e2c5a45a5f50.jpg"
   },
   {
     "u": 13586,
     "n": "Izmir",
     "t": 6,
-    "i": "npc_zoom_3040100000_01.png",
-    "s": "https://gbf.wiki/images/2/2c/Npc_zoom_3040100000_01.png",
+    "i": "[n]bMUAQIa.jpg",
+    "s": "https://cdn.donmai.us/sample/eb/21/__izmir_granblue_fantasy_drawn_by_minaba_hideo__sample-eb21669ef1784f1ac2d57e6c6ab344cd.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "hz",
+      "dh",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/sample/cc/2a/__izmir_granblue_fantasy_drawn_by_ouma_tokiichi__sample-cc2ae3056920681c4526a01ed625ef32.jpg"
   },
   {
     "u": 13590,
     "n": "Jasmine",
     "t": 5,
-    "i": "npc_zoom_3030102000_01.png",
-    "s": "https://gbf.wiki/images/4/44/Npc_zoom_3030102000_01.png",
+    "i": "[n]WObFjTF.jpg",
+    "s": "https://cdn.donmai.us/sample/85/6b/__jasmine_granblue_fantasy_drawn_by_minaba_hideo__sample-856bd47b53d14553b7dd85a6ace7f595.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "hr",
+      "mt",
+      "mo",
+      "hl",
+      "cm"
     ]
   },
   {
     "u": 13591,
     "n": "Jeanne d'Arc",
     "t": 6,
-    "i": "npc_zoom_3040245000_01.png",
-    "s": "https://gbf.wiki/images/b/ba/Npc_zoom_3040245000_01.png",
+    "i": "[n]bjCJWwG.jpg",
+    "s": "https://cdn.donmai.us/sample/a1/e7/__jeanne_d_arc_granblue_fantasy_drawn_by_watao__sample-a1e711ef0f2f58f7e4524c44585a0e97.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/sample/a9/23/__jeanne_d_arc_granblue_fantasy_drawn_by_kemigawa_mondo__sample-a9230df29518174d1060abc450f71f4a.jpg"
   },
   {
     "u": 13592,
@@ -60233,121 +60310,160 @@
     "u": 13595,
     "n": "Juliet",
     "t": 6,
-    "i": "npc_zoom_3040096000_01.png",
-    "s": "https://gbf.wiki/images/d/d2/Npc_zoom_3040096000_01.png",
+    "i": "[n]DvyDJFU.jpg",
+    "s": "https://cdn.donmai.us/sample/3c/39/__juliet_granblue_fantasy_drawn_by_minaba_hideo__sample-3c397a85b43a4f88ff18bc158b0a31d4.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "pc",
+      "cm"
     ]
   },
   {
     "u": 13597,
     "n": "Kaede Takagaki",
     "t": 6,
-    "i": "npc_zoom_3040276000_01.png",
-    "s": "https://gbf.wiki/images/7/7c/Npc_zoom_3040276000_01.png",
+    "i": "[n]AaiAlUy.jpg",
+    "s": "https://cdn.donmai.us/original/8f/6f/8f6f08642f4afd07f49b754db498fa19.png",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "ar",
+      "cm"
+    ],
+    "d": "Idolmaster"
   },
   {
     "u": 13598,
     "n": "Kanako Mimura",
     "t": 5,
-    "i": "kanakomimura_a.png",
-    "s": "https://gbf.wiki/images/6/6f/KanakoMimura_A.png",
+    "i": "[n]rzJvGZQ.jpg",
+    "s": "https://cdn.donmai.us/sample/e9/b2/__mimura_kanako_idolmaster_and_2_more_drawn_by_minaba_hideo__sample-e9b27577c3ed9708ecf0ac419503e594.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "hl",
+      "ar",
+      "cm"
+    ],
+    "d": "Idolmaster"
   },
   {
     "u": 13600,
     "n": "Karteira",
     "t": 5,
-    "i": "npc_zoom_3030222000_01.png",
-    "s": "https://gbf.wiki/images/e/ee/Npc_zoom_3030222000_01.png",
+    "i": "[n]KdaMLBb.jpg",
+    "s": "https://cdn.donmai.us/sample/ed/cf/__karteira_granblue_fantasy_drawn_by_suzaku_zaku6584__sample-edcf001555c7a283f2929768536d6a86.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "sl",
+      "dh",
+      "cm",
+      "Merchant"
     ]
   },
   {
     "u": 13601,
     "n": "Karva",
     "t": 5,
-    "i": "npc_zoom_3030230000_01.png",
-    "s": "https://gbf.wiki/images/e/e7/Npc_zoom_3030230000_01.png",
+    "i": "[n]BMOjvHJ.jpg",
+    "s": "https://cdn.donmai.us/sample/f7/ea/__karva_granblue_fantasy_drawn_by_minaba_hideo__sample-f7ea34cb424e182e2e089b388ef30534.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "cl",
+      "dh",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/original/cc/24/__karva_granblue_fantasy_drawn_by_kichihachi__cc2471403825a67314f3b06ea980c748.png"
   },
   {
     "u": 13603,
     "n": "Katalina",
     "t": 6,
-    "i": "npc_zoom_3040054000_01.png",
-    "s": "https://gbf.wiki/images/d/de/Npc_zoom_3040054000_01.png",
+    "i": "[n]eizliuK.jpg",
+    "s": "https://cdn.donmai.us/original/f2/ef/__katalina_granblue_fantasy_drawn_by_irua__f2efcb460d9d13402426d8799dbc89f1.png",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "cl",
+      "cm",
+      "os"
+    ],
+    "in": "https://cdn.donmai.us/sample/11/bc/__katalina_granblue_fantasy_drawn_by_twrlare__sample-11bc98dffc4a118cee571a61e79f6066.jpg"
   },
   {
     "u": 13607,
     "n": "Kolulu",
     "t": 6,
-    "i": "npc_zoom_3040222000_01.png",
-    "s": "https://gbf.wiki/images/4/4f/Npc_zoom_3040222000_01.png",
+    "i": "[n]EjVVRda.jpg",
+    "s": "https://cdn.donmai.us/sample/12/66/__kolulu_granblue_fantasy_drawn_by_minaba_hideo__sample-12664c03549f48290d63aef020e10b92.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "hr",
+      "cl",
+      "cm"
     ]
   },
   {
     "u": 13608,
     "n": "Korwa",
     "t": 6,
-    "i": "npc_zoom_3040081000_01.png",
-    "s": "https://gbf.wiki/images/4/4a/Npc_zoom_3040081000_01.png",
+    "i": "[n]PIrBSTY.jpg",
+    "s": "https://cdn.donmai.us/original/e7/5b/__korwa_granblue_fantasy_drawn_by_77gl__e75bf39161e9e1ad6dbffd8651a651cf.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "dh",
+      "cc",
+      "ar",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/sample/a7/8d/__korwa_granblue_fantasy_drawn_by_mathiamo13__sample-a78d63aa3a34d6fed8b85d2276563a34.jpg"
   },
   {
     "u": 13610,
     "n": "Koume Shirasaka",
     "t": 5,
-    "i": "koumeshirasaka_a.png",
-    "s": "https://gbf.wiki/images/f/f6/KoumeShirasaka_A.png",
+    "i": "[n]lYlsPNh.jpg",
+    "s": "https://cdn.donmai.us/sample/85/e4/__shirasaka_koume_idolmaster_and_2_more_drawn_by_yuuhi_ages__sample-85e42eebb423320264f10babbc72291a.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "ar",
+      "cm"
+    ],
+    "d": "Idolmaster"
   },
   {
     "u": 13612,
     "n": "Kumbhira",
     "t": 6,
-    "i": "npc_zoom_3040197000_01.png",
-    "s": "https://gbf.wiki/images/f/f3/Npc_zoom_3040197000_01.png",
+    "i": "[n]ErTMIek.jpg",
+    "s": "https://cdn.donmai.us/sample/5f/33/__kumbhira_granblue_fantasy_drawn_by_minaba_hideo__sample-5f333f8274b34641138c6ba74f1fdb8c.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "dh",
+      "cm",
+      "fa"
+    ],
+    "in": "https://cdn.donmai.us/sample/3e/cc/__kumbhira_granblue_fantasy_drawn_by_kanachirou__sample-3ecc59a5802e0e8ba403a031668535ab.jpg"
   },
   {
     "u": 13613,
     "n": "La Coiffe",
     "t": 5,
-    "i": "npc_zoom_3020058000_01.png",
-    "s": "https://gbf.wiki/images/1/1a/Npc_zoom_3020058000_01.png",
+    "i": "[n]NhXYqtq.jpg",
+    "s": "https://cdn.donmai.us/sample/5b/49/__la_coiffe_granblue_fantasy_drawn_by_minaba_hideo__sample-5b4900ef1522798c3323f9a4baa27551.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "hr",
+      "dh",
+      "cm"
     ]
   },
   {
@@ -60357,7 +60473,8 @@
     "i": "[n]YoyULeV.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F",
+      "O",
+      "dh",
       "cm"
     ],
     "s": "https://cdn.donmai.us/original/e4/fe/__ladiva_granblue_fantasy_drawn_by_magna13__e4fe33c41f6e1c9fc0c8b57e82623e22.png"
@@ -60366,99 +60483,126 @@
     "u": 13615,
     "n": "Lady Grey",
     "t": 6,
-    "i": "npc_zoom_3040005000_01.png",
-    "s": "https://gbf.wiki/images/3/38/Npc_zoom_3040005000_01.png",
+    "i": "[n]ltDANgx.jpg",
+    "s": "https://cdn.donmai.us/sample/a5/e5/__lady_grey_granblue_fantasy_drawn_by_minaba_hideo__sample-a5e570ff93ba699355b84194a29f0dfa.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "cm",
+      "nc"
+    ],
+    "in": "https://cdn.donmai.us/sample/78/6f/__lady_grey_granblue_fantasy_drawn_by_kishizuka_kenji__sample-786f56f8e77795da261efb7f580267aa.jpg"
   },
   {
     "u": 13616,
     "n": "Laguna",
     "t": 5,
-    "i": "npc_zoom_3030133000_01.png",
-    "s": "https://gbf.wiki/images/6/63/Npc_zoom_3030133000_01.png",
+    "i": "[n]XvmZuJr.jpg",
+    "s": "https://cdn.donmai.us/sample/21/ee/__laguna_granblue_fantasy_drawn_by_minaba_hideo__sample-21eebe29f436e880e67a16902c76ac44.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "dh",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/original/4b/4e/__laguna_granblue_fantasy_drawn_by_tenken_gotannda__4b4ec46bd5f1e5d6876abd365d926514.jpg"
   },
   {
     "u": 13617,
     "n": "Lamretta",
     "t": 5,
-    "i": "npc_zoom_3030013000_02.png",
-    "s": "https://gbf.wiki/images/6/6f/Npc_zoom_3030013000_02.png",
+    "i": "[n]JaiDHqP.jpg",
+    "s": "https://cdn.donmai.us/original/da/1f/da1f3459e3c68e2b537b6e14644b96df.png",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "ml",
+      "dh",
+      "pt",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/sample/0d/21/__lamretta_granblue_fantasy_drawn_by_amasora_taichi__sample-0d21e9810737ecdfd4bce8ede46cbab8.jpg"
   },
   {
     "u": 13618,
     "n": "Lecia",
     "t": 6,
-    "i": "npc_zoom_3040101000_01.png",
-    "s": "https://gbf.wiki/images/2/20/Npc_zoom_3040101000_01.png",
+    "i": "[n]dmnrFyg.jpg",
+    "s": "https://cdn.donmai.us/sample/cd/ef/__lecia_granblue_fantasy_drawn_by_hinahino__sample-cdef151093edd520f18b6b0cb4e7a89e.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/original/68/ee/__lecia_granblue_fantasy_drawn_by_gentsuki__68eeece89b420d44acbe0f5b9f6e5171.jpg"
   },
   {
     "u": 13619,
     "n": "Lennah",
     "t": 6,
-    "i": "npc_zoom_3040021000_01.png",
-    "s": "https://gbf.wiki/images/d/d9/Npc_zoom_3040021000_01.png",
+    "i": "[n]EsIYtDm.jpg",
+    "s": "https://cdn.donmai.us/sample/a4/5a/__lennah_granblue_fantasy_drawn_by_minaba_hideo__sample-a45a752cdb9d0f86ea32989c5fedddd4.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "hl",
+      "me",
+      "cm"
     ]
   },
   {
     "u": 13620,
     "n": "Leona",
     "t": 5,
-    "i": "npc_zoom_3030241000_01.png",
-    "s": "https://gbf.wiki/images/6/69/Npc_zoom_3030241000_01.png",
+    "i": "[n]KPkpBHl.jpg",
+    "s": "https://cdn.donmai.us/sample/e3/18/__leona_granblue_fantasy_drawn_by_minaba_hideo__sample-e3180603d30b64edcd77528395925790.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/original/89/74/__leona_granblue_fantasy_drawn_by_cai_geng__897494ab6307b44bb37aaa3df73c7bf2.png"
   },
   {
     "u": 13621,
     "n": "Leonora",
     "t": 4,
-    "i": "npc_zoom_3020026000_01.png",
-    "s": "https://gbf.wiki/images/3/38/Npc_zoom_3020026000_01.png",
+    "i": "[n]QcdTuMC.jpg",
+    "s": "https://cdn.donmai.us/original/6d/23/6d239d29a55dfe72d9cfaa2d4b6da1f7.png",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "dh",
+      "cm",
+      "fa"
     ]
   },
   {
     "u": 13622,
     "n": "Levin Sisters",
     "t": 6,
-    "i": "npc_zoom_3040193000_01.png",
-    "s": "https://gbf.wiki/images/8/81/Npc_zoom_3040193000_01.png",
+    "i": "[n]muiZtPz.jpg",
+    "s": "https://cdn.donmai.us/sample/d7/a6/__mona_mina_and_mena_granblue_fantasy_and_1_more_drawn_by_minaba_hideo__sample-d7a6a67990f1428530abc79227246072.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "mi",
+      "cm"
+    ],
+    "d": "Shingeki no Bahamut"
   },
   {
     "u": 13623,
     "n": "Lilele",
     "t": 6,
-    "i": "npc_zoom_3040066000_01.png",
-    "s": "https://gbf.wiki/images/3/3b/Npc_zoom_3040066000_01.png",
+    "i": "[n]qWhuDbl.jpg",
+    "s": "https://cdn.donmai.us/sample/bb/03/__lilele_granblue_fantasy_drawn_by_minaba_hideo__sample-bb03291896cab697fe86a3c87a20309e.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "dh",
+      "ar",
+      "cm"
     ]
   },
   {
@@ -60477,352 +60621,459 @@
     "u": 13628,
     "n": "Ludmila",
     "t": 5,
-    "i": "npc_zoom_3030185000_01.png",
-    "s": "https://gbf.wiki/images/a/a0/Npc_zoom_3030185000_01.png",
+    "i": "[n]QBWwnId.jpg",
+    "s": "https://cdn.donmai.us/sample/51/0b/__ludmila_granblue_fantasy_drawn_by_minaba_hideo__sample-510b728bd5352ec64194d7a8650e3a1d.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "ml",
+      "dh",
+      "cm"
     ]
   },
   {
     "u": 13629,
     "n": "Lunalu",
     "t": 6,
-    "i": "npc_zoom_3040172000_01.png",
-    "s": "https://gbf.wiki/images/4/49/Npc_zoom_3040172000_01.png",
+    "i": "[n]frDiAHQ.jpg",
+    "s": "https://cdn.donmai.us/sample/6d/58/__lunalu_granblue_fantasy__sample-6d582306b90275ee8821005fe70059a0.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "dh",
+      "ar",
+      "cm",
+      "ci"
     ]
   },
   {
     "u": 13630,
     "n": "Lyria",
     "t": 5,
-    "i": "npc_zoom_3030182000_01.png",
-    "s": "https://gbf.wiki/images/d/d5/Npc_zoom_3030182000_01.png",
+    "i": "[n]WEoiXkh.jpg",
+    "s": "https://cdn.donmai.us/sample/42/d5/__lyria_and_vyrn_granblue_fantasy_drawn_by_huanghyy__sample-42d5d5fa42bc10e8821383dcfe5a4bac.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "mt",
+      "mo",
+      "hl",
+      "ar",
+      "fa"
+    ],
+    "in": "https://cdn.donmai.us/original/f2/6d/__lyria_granblue_fantasy_drawn_by_unosuke__f26ded530e1ecf2a1522bb410be9cd7d.jpg"
   },
   {
     "u": 13631,
     "n": "Macula Marius",
     "t": 6,
-    "i": "npc_zoom_3040213000_01.png",
-    "s": "https://gbf.wiki/images/4/44/Npc_zoom_3040213000_01.png",
+    "i": "[n]dmeMRgZ.jpg",
+    "s": "https://cdn.donmai.us/sample/cb/90/__macula_marius_granblue_fantasy_drawn_by_genyaky__sample-cb9058cd964667f80412c44852f3d60c.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "hr",
+      "hz",
+      "cm",
+      "im",
+      "Primal"
+    ],
+    "in": "https://cdn.donmai.us/sample/9c/c1/__macula_marius_granblue_fantasy_drawn_by_miga_migao__sample-9cc123716b232bb3d394f2c8e63392a1.jpg"
   },
   {
     "u": 13632,
     "n": "Magisa",
     "t": 6,
-    "i": "npc_zoom_3040011000_01.png",
-    "s": "https://gbf.wiki/images/3/3e/Npc_zoom_3040011000_01.png",
+    "i": "[n]tCWdFse.jpg",
+    "s": "https://cdn.donmai.us/sample/38/bf/__magisa_and_morax_granblue_fantasy_and_1_more_drawn_by_tsunekun__sample-38bf86b8f50625aeb7cccdd63c177f93.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "mt",
+      "wh",
+      "me",
+      "cm",
+      "fa"
+    ],
+    "in": "https://cdn.donmai.us/sample/80/d5/__magisa_granblue_fantasy_drawn_by_ytoy__sample-80d527d3bbe67479d93ac4e59d2f723a.jpg"
   },
   {
     "u": 13633,
     "n": "Mahira",
     "t": 6,
-    "i": "npc_zoom_3040107000_01.png",
-    "s": "https://gbf.wiki/images/3/35/Npc_zoom_3040107000_01.png",
+    "i": "[n]wJdaDRm.jpg",
+    "s": "https://cdn.donmai.us/original/e0/f0/__mahira_granblue_fantasy_drawn_by_villyane__e0f058b43ecedac3caa3ef9e33f75284.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "dh",
+      "en",
+      "gn",
+      "ar",
+      "cm",
+      "fa"
     ]
   },
   {
     "u": 13634,
     "n": "Maria Theresa",
     "t": 6,
-    "i": "npc_zoom_3040160000_01.png",
-    "s": "https://gbf.wiki/images/7/7a/Npc_zoom_3040160000_01.png",
+    "i": "[n]sTixFYb.jpg",
+    "s": "https://cdn.donmai.us/sample/45/75/__maria_theresa_granblue_fantasy_drawn_by_minaba_hideo__sample-457524a342558032e11629292db42269.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "dh",
+      "me",
+      "rl",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/sample/b1/fa/__maria_theresa_granblue_fantasy_drawn_by_harigane_shinshi__sample-b1fa2307418a145665bcde190ad21259.jpg"
   },
   {
     "u": 13635,
     "n": "Mariah",
     "t": 5,
-    "i": "npc_zoom_3030045000_01.png",
-    "s": "https://gbf.wiki/images/f/f7/Npc_zoom_3030045000_01.png",
+    "i": "[n]lCAvveB.jpg",
+    "s": "https://cdn.donmai.us/sample/ff/b1/__mariah_granblue_fantasy_drawn_by_minaba_hideo__sample-ffb11d3f60d70d320a655dd84b30a950.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "cm"
     ]
   },
   {
     "u": 13637,
     "n": "Mary",
     "t": 6,
-    "i": "npc_zoom_3030068000_01.png",
-    "s": "https://gbf.wiki/images/d/d3/Npc_zoom_3030068000_01.png",
+    "i": "[n]sAMCWjm.jpg",
+    "s": "https://cdn.donmai.us/sample/77/ad/__mary_granblue_fantasy_drawn_by_minaba_hideo__sample-77add25ad2bb2902d2ee312a13ccbac2.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "hr",
+      "ml",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/sample/13/0b/__mary_granblue_fantasy_drawn_by_tokihama_jirou__sample-130bfab7b75f5a60b5f31f2c1e947810.jpg"
   },
   {
     "u": 13638,
     "n": "Melissabelle",
     "t": 6,
-    "i": "npc_zoom_3040102000_01.png",
-    "s": "https://gbf.wiki/images/b/bb/Npc_zoom_3040102000_01.png",
+    "i": "[n]YiIfNsj.jpg",
+    "s": "https://cdn.donmai.us/sample/04/05/__melissabelle_granblue_fantasy_drawn_by_minaba_hideo__sample-0405964931bb120683a3f21fb54d8cef.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "dh",
+      "pc",
+      "cm"
     ]
   },
   {
     "u": 13639,
     "n": "Melleau",
     "t": 6,
-    "i": "npc_zoom_3040022000_01.png",
-    "s": "https://gbf.wiki/images/0/0b/Npc_zoom_3040022000_01.png",
+    "i": "[n]lPAWIlv.jpg",
+    "s": "https://cdn.donmai.us/sample/17/c6/__melleau_and_sachy_granblue_fantasy_drawn_by_minaba_hideo__sample-17c68af591fd600ed16c2919502908c6.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "hr",
+      "dh",
+      "cm",
+      "fa"
+    ],
+    "in": "https://cdn.donmai.us/sample/c5/ea/__melleau_granblue_fantasy_drawn_by_akira_coffee_curry__sample-c5ead3debf0bf37eca18b23964c1656b.jpg"
   },
   {
     "u": 13641,
     "n": "Metera",
     "t": 6,
-    "i": "npc_zoom_3040012000_01.png",
-    "s": "https://gbf.wiki/images/3/38/Npc_zoom_3040012000_01.png",
+    "i": "[n]VXZojbd.jpg",
+    "s": "https://cdn.donmai.us/sample/5c/84/__metera_granblue_fantasy_and_1_more_drawn_by_lee_hyeseung__sample-5c84dd27d24022d0de4431c3ebc63bc7.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "dh",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/sample/2a/58/__metera_granblue_fantasy_drawn_by_hakaba_dairiseki__sample-2a581347b15fc297de0ed7e15024404d.jpg"
   },
   {
     "u": 13642,
     "n": "Mika Jougasaki",
     "t": 5,
-    "i": "mikajougasaki_a.png",
-    "s": "https://gbf.wiki/images/6/6d/MikaJougasaki_A.png",
+    "i": "[n]ftQKngu.jpg",
+    "s": "https://cdn.donmai.us/sample/c9/c5/__jougasaki_mika_idolmaster_and_2_more_drawn_by_minaba_hideo__sample-c9c52f1598a49b2940e9a0bccca0e5de.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "ar",
+      "cm"
+    ],
+    "d": "Idolmaster"
   },
   {
     "u": 13643,
     "n": "Mikazuki Munechika",
     "t": 6,
-    "i": "sample_9e691bf375feee51955db3625292bcba.jpg",
-    "s": "https://chan.sankakucomplex.com/post/show/6924938",
+    "i": "[n]digeqyD.jpg",
+    "s": "https://cdn.donmai.us/sample/6b/f5/__mikazuki_munechika_granblue_fantasy_and_2_more_drawn_by_minaba_hideo__sample-6bf5c70b9565b0dbf1abe5e3ae9f1189.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "M",
+      "cm"
+    ],
+    "d": "Katsugeki / Touken Ranbu"
   },
   {
     "u": 13644,
     "n": "Miku Maekawa",
     "t": 5,
-    "i": "mikumaekawa_a.png",
-    "s": "https://gbf.wiki/images/8/82/MikuMaekawa_A.png",
+    "i": "[n]XQICbwN.jpg",
+    "s": "https://cdn.donmai.us/original/12/de/__maekawa_miku_idolmaster_and_3_more__12de4c78e87567a002e4c6cad4fb5ec8.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "ar",
+      "cm"
+    ],
+    "d": "Idolmaster"
   },
   {
     "u": 13645,
     "n": "Milla Maxwell",
     "t": 5,
-    "i": "millamaxwell_a.png",
-    "s": "https://gbf.wiki/images/e/e3/MillaMaxwell_A.png",
+    "i": "[n]bchtXrh.jpg",
+    "s": "https://cdn.donmai.us/sample/e5/1a/__milla_maxwell_granblue_fantasy_and_2_more_drawn_by_minaba_hideo__sample-e51ad4bb828f5c8c54f7629199b91361.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "hz",
+      "mt",
+      "pr",
+      "cm",
+      "ir"
+    ],
+    "d": "Tales of Xillia"
   },
   {
     "u": 13646,
     "n": "Milleore",
     "t": 5,
-    "i": "npc_zoom_3030064000_01.png",
-    "s": "https://gbf.wiki/images/b/bb/Npc_zoom_3030064000_01.png",
+    "i": "[n]hnmtVcj.jpg",
+    "s": "https://cdn.donmai.us/original/51/44/514425020acaf13d265a3990a45b314a.png",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "dh",
+      "cm"
     ]
   },
   {
     "u": 13647,
     "n": "Mimlemel",
     "t": 5,
-    "i": "npc_zoom_3030043000_01.png",
-    "s": "https://gbf.wiki/images/9/9b/Npc_zoom_3030043000_01.png",
+    "i": "[n]JxueLjm.jpg",
+    "s": "https://cdn.donmai.us/original/16/18/16189840f3b4ab7f37e726e12d29beac.png",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "hr",
+      "dh",
+      "ar",
+      "cm"
     ]
   },
   {
     "u": 13648,
     "n": "Minami Nitta",
     "t": 5,
-    "i": "npc_zoom_3030193000_01.png",
-    "s": "https://gbf.wiki/images/e/e6/Npc_zoom_3030193000_01.png",
+    "i": "[n]ecVyyGT.jpg",
+    "s": "https://cdn.donmai.us/sample/54/25/__nitta_minami_idolmaster_and_2_more_drawn_by_minaba_hideo__sample-542574de75662eae4e2bf68a451fe731.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "ar",
+      "cm"
+    ],
+    "d": "Idolmaster"
   },
   {
     "u": 13649,
     "n": "Mio Honda",
     "t": 5,
-    "i": "miohonda_a.png",
-    "s": "https://gbf.wiki/images/c/cc/MioHonda_A.png",
+    "i": "[n]OyZSHtv.jpg",
+    "s": "https://cdn.donmai.us/sample/74/be/__honda_mio_idolmaster_and_2_more_drawn_by_minaba_hideo__sample-74bec7b4fb8d9c95e221b282d2728d28.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "ar",
+      "cm"
+    ],
+    "d": "Idolmaster"
   },
   {
     "u": 13650,
     "n": "Miria Akagi",
     "t": 5,
-    "i": "npc_zoom_3030161000_01.png",
-    "s": "https://gbf.wiki/images/a/a3/Npc_zoom_3030161000_01.png",
+    "i": "[n]mQCzCJu.jpg",
+    "s": "https://cdn.donmai.us/sample/8a/f1/__akagi_miria_idolmaster_and_2_more_drawn_by_minaba_hideo__sample-8af1e2b8d4e542d34fcdd160270af25b.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "ar",
+      "cm"
+    ],
+    "d": "Idolmaster"
   },
   {
     "u": 13651,
     "n": "Mirin",
     "t": 5,
-    "i": "npc_zoom_3030224000_01.png",
-    "s": "https://gbf.wiki/images/b/b7/Npc_zoom_3030224000_01.png",
+    "i": "[n]rBoCLDJ.jpg",
+    "s": "https://cdn.donmai.us/sample/3a/96/__mirin_granblue_fantasy_drawn_by_minaba_hideo__sample-3a960e2ba87dcbd9e84658eb75e75a3f.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/original/ee/70/__mirin_granblue_fantasy_drawn_by_rumiya9i__ee708bdfdc59b2f7206677dd00c15d10.png"
   },
   {
     "u": 13652,
     "n": "Mishra",
     "t": 5,
-    "i": "npc_zoom_3030002000_01.png",
-    "s": "https://gbf.wiki/images/b/bb/Npc_zoom_3030002000_01.png",
+    "i": "[n]FSApipL.jpg",
+    "s": "https://cdn.donmai.us/sample/7d/09/__mishra_granblue_fantasy_drawn_by_minaba_hideo__sample-7d09484b4dbb79a8d05eb807eda547f1.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "dh",
+      "me",
+      "cm"
     ]
   },
   {
     "u": 13653,
     "n": "Mizuki Kawashima",
     "t": 5,
-    "i": "mizukikawashima_a.png",
-    "s": "https://gbf.wiki/images/6/6e/MizukiKawashima_A.png",
+    "i": "[n]aPYnwIL.jpg",
+    "s": "https://cdn.donmai.us/sample/d6/63/__kawashima_mizuki_idolmaster_and_2_more_drawn_by_minaba_hideo__sample-d663cdfd5259e094b17797f115bcfa96.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "ar",
+      "cm"
+    ],
+    "d": "Idolmaster"
   },
   {
     "u": 13654,
-    "n": "Monika",
+    "n": "Monika Weisswind",
     "t": 6,
-    "i": "npc_zoom_3040238000_01.png",
-    "s": "https://gbf.wiki/images/0/04/Npc_zoom_3040238000_01.png",
+    "i": "[n]yBmnQfx.jpg",
+    "s": "https://cdn.donmai.us/sample/93/5d/__monika_weisswind_granblue_fantasy_drawn_by_jin_rou__sample-935d3e698f6dd24b2bfb259ed095768d.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/sample/17/62/__monika_weisswind_granblue_fantasy_drawn_by_ulrich_tagaragakuin__sample-1762adec593c4419b0533b6fe25a7240.jpg"
   },
   {
     "u": 13655,
     "n": "Morphe and Phoebe",
     "t": 5,
-    "i": "npc_zoom_3030135000_01.png",
-    "s": "https://gbf.wiki/images/c/c8/Npc_zoom_3030135000_01.png",
+    "i": "[n]KGnPRHC.jpg",
+    "s": "https://cdn.donmai.us/original/07/40/__phoebe_and_morphe_granblue_fantasy_drawn_by_hayama_eishi__0740838a043d51545b2c8c9741c8a45b.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "M",
+      "mi",
+      "tw",
+      "ar",
+      "cm"
     ]
   },
   {
     "u": 13656,
     "n": "Morrigna",
     "t": 6,
-    "i": "npc_zoom_3040218000_01.png",
-    "s": "https://gbf.wiki/images/4/45/Npc_zoom_3040218000_01.png",
+    "i": "[n]BjFQdXV.jpg",
+    "s": "https://cdn.donmai.us/original/e5/80/__morrigna_granblue_fantasy_drawn_by_minaba_hideo__e580d3202c6f0b5b87c9dbdd5dcaf598.png",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "hz",
+      "gd",
+      "mi",
+      "cm",
+      "im",
+      "Primal"
+    ],
+    "in": "https://cdn.donmai.us/sample/e0/b7/__morrigna_granblue_fantasy_drawn_by_kanopan__sample-e0b7b91b11e89e24db4de3ef02cf0aea.jpg"
   },
   {
     "u": 13658,
     "n": "Nakoruru",
     "t": 5,
-    "i": "npc_zoom_3030174000_02.png",
-    "s": "https://gbf.wiki/images/7/7f/Npc_zoom_3030174000_02.png",
+    "i": "[n]CMuVXwb.jpg",
+    "s": "https://cdn.donmai.us/sample/81/34/__nakoruru_and_mamahaha_granblue_fantasy_and_1_more_drawn_by_minaba_hideo__sample-8134e6dd513436b68a58477856beb500.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "hr",
+      "cm",
+      "fa"
+    ],
+    "d": "Samurai Shodown / Samurai Spirits"
   },
   {
     "u": 13660,
     "n": "Narmaya",
     "t": 6,
-    "i": "npc_zoom_3040063000_01.png",
-    "s": "https://gbf.wiki/images/f/fc/Npc_zoom_3040063000_01.png",
+    "i": "[n]sqZPwBp.jpg",
+    "s": "https://cdn.donmai.us/sample/3c/9b/__narmaya_granblue_fantasy_drawn_by_yude__sample-3c9b58e6b4d1853b8d65077abbeeccea.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "cl",
+      "dh",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/sample/a9/70/__narmaya_granblue_fantasy_drawn_by_houtengeki__sample-a970e4e3d29f4b1e9d77da68d9939079.jpg"
   },
   {
     "u": 13661,
     "n": "Nemone",
     "t": 6,
-    "i": "npc_zoom_3040085000_01.png",
-    "s": "https://gbf.wiki/images/8/88/Npc_zoom_3040085000_01.png",
+    "i": "[n]JMkMKtD.jpg",
+    "s": "https://cdn.donmai.us/sample/08/0f/__nemone_granblue_fantasy_drawn_by_minaba_hideo__sample-080f98d79fd0e9e5a5c15c16b4fee4ff.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
-  },
-  {
-    "u": 13662,
-    "n": "Nene",
-    "t": 4,
-    "i": "89516bfef8e1e8ef6cddc866dbfae5e9.jpg",
-    "s": "https://chan.sankakucomplex.com/post/show/5288996",
-    "w": "Granblue Fantasy",
-    "b": [
-      "F"
-    ]
+      "F",
+      "dh",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/sample/a0/02/__nemone_granblue_fantasy_drawn_by_braco__sample-a002ff43faec546ddd36be97829fd75b.jpg"
   },
   {
     "u": 13663,
     "n": "Nezahualpilli",
     "t": 6,
-    "i": "1edab02102d4e1eb2035eac4428b3e2c.jpg",
-    "s": "https://chan.sankakucomplex.com/post/show/4913491",
+    "i": "[n]JzNWLac.jpg",
+    "s": "https://cdn.donmai.us/original/61/4e/614eac7b4f6cf7103af5e8c477d1b6aa.png",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "M",
+      "hr",
+      "mt",
+      "rl",
+      "cm"
     ]
   },
   {
@@ -60841,355 +61092,484 @@
     "u": 13665,
     "n": "Nier",
     "t": 6,
-    "i": "npc_zoom_3040169000_01.png",
-    "s": "https://gbf.wiki/images/6/66/Npc_zoom_3040169000_01.png",
+    "i": "[n]HtIQBwb.jpg",
+    "s": "https://cdn.donmai.us/original/41/9f/__nier_granblue_fantasy_drawn_by_hinahino__419ffe5b44cc6baee6bc8b52085fcf9a.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "id",
+      "dh",
+      "cm",
+      "fa"
+    ],
+    "in": "https://cdn.donmai.us/original/38/eb/__nier_granblue_fantasy_drawn_by_tenken_gotannda__38ebd5dc34c683065d21e33867644a77.png"
   },
   {
     "u": 13666,
     "n": "Nina Drango",
     "t": 6,
-    "i": "npc_zoom_3040133000_01.png",
-    "s": "https://gbf.wiki/images/9/95/Npc_zoom_3040133000_01.png",
+    "i": "[n]xaddAaC.jpg",
+    "s": "https://cdn.donmai.us/sample/c6/79/__nina_dragnot_granblue_fantasy_and_2_more_drawn_by_minaba_hideo__sample-c6796e0263e4e4e376d46ec2a42ba661.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "dg",
+      "dh",
+      "sr",
+      "pr",
+      "cm"
+    ],
+    "d": "Shingeki no Bahamut"
   },
   {
     "u": 13667,
     "n": "Niyon",
     "t": 6,
-    "i": "npc_zoom_3040038000_81.png",
-    "s": "https://gbf.wiki/images/f/f2/Npc_zoom_3040038000_81.png",
+    "i": "[n]PTjnWeS.jpg",
+    "s": "https://cdn.donmai.us/sample/55/26/__niyon_granblue_fantasy_drawn_by_iwanya__sample-55268fc524eec320cf800854c9d934ab.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "ps",
+      "ip",
+      "dh",
+      "ar",
+      "cm"
     ]
   },
   {
     "u": 13670,
     "n": "Novei",
     "t": 5,
-    "i": "npc_zoom_3030142000_01.png",
-    "s": "https://gbf.wiki/images/a/a0/Npc_zoom_3030142000_01.png",
+    "i": "[n]MuiFevF.jpg",
+    "s": "https://cdn.donmai.us/sample/1d/96/__novei_granblue_fantasy_drawn_by_minaba_hideo__sample-1d964d4da78eb7d7f4398e5e38059ee7.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "ar",
+      "cm"
     ]
   },
   {
     "u": 13671,
     "n": "Olivia",
     "t": 6,
-    "i": "npc_zoom_3040145000_01.png",
-    "s": "https://gbf.wiki/images/b/bb/Npc_zoom_3040145000_01.png",
+    "i": "[n]XbReMRn.jpg",
+    "s": "https://cdn.donmai.us/sample/14/b3/__dark_angel_olivia_shingeki_no_bahamut_drawn_by_tachikawa_mushimaro__sample-14b3fc46f4d45137af270feecb44b894.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "an",
+      "cm",
+      "im",
+      "Primal"
+    ],
+    "in": "https://cdn.donmai.us/sample/9c/31/__dark_angel_olivia_granblue_fantasy_drawn_by_cait_aron__sample-9c31e61006f86ea05bf01c83ad1dc61b.jpg"
   },
   {
     "u": 13672,
     "n": "Orchid",
     "t": 6,
-    "i": "npc_zoom_3040111000_01.png",
-    "s": "https://gbf.wiki/images/c/cb/Npc_zoom_3040111000_01.png",
+    "i": "[n]ybxGzIz.jpg",
+    "s": "https://cdn.donmai.us/sample/21/62/__orchis_and_lloyd_granblue_fantasy_drawn_by_wasabi60__sample-2162b44e1f9269389fed28c31933f70b.jpg",
     "w": "Granblue Fantasy",
     "b": [
       "F",
+      "ad",
       "cc",
-      "ke"
+      "cm",
+      "ke",
+      "Puppeteer",
+      "Puppet",
+      "fa"
     ]
   },
   {
     "u": 13674,
     "n": "Pamela",
     "t": 5,
-    "i": "npc_zoom_3030145000_01.png",
-    "s": "https://gbf.wiki/images/3/35/Npc_zoom_3030145000_01.png",
+    "i": "[n]inRqxYn.jpg",
+    "s": "https://cdn.donmai.us/sample/84/16/__pamela_granblue_fantasy_drawn_by_minaba_hideo__sample-841668c1d94dc45e21c3523ea9e499a2.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "ar",
+      "cm"
     ]
   },
   {
     "u": 13678,
     "n": "Pengy",
     "t": 6,
-    "i": "npc_zoom_3040282000_81.png",
-    "s": "https://gbf.wiki/images/f/fe/Npc_zoom_3040282000_81.png",
+    "i": "[n]GppFUkg.jpg",
+    "s": "https://cdn.donmai.us/original/83/e9/__pengy_granblue_fantasy_drawn_by_u_jie__83e937ca1a3758679a359300d0d1dfab.png",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "en",
+      "cc",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/sample/67/b6/__pengy_granblue_fantasy_drawn_by_ganari_ryuu__sample-67b6e2684ada12928fd97bc47fc530dd.jpg"
   },
   {
     "u": 13679,
     "n": "Percival",
     "t": 6,
-    "i": "sample_c8e3d39070b952b213f459d9bfe6fb42.jpg",
-    "s": "https://chan.sankakucomplex.com/post/show/5270905",
+    "i": "[n]CeqmRql.jpg",
+    "s": "https://cdn.donmai.us/original/fc/3b/__percival_granblue_fantasy_drawn_by_zinnkousai3850__fc3bd452da4b21bb8b63ef1a43c7821b.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "M",
+      "hz",
+      "cm"
     ]
   },
   {
     "u": 13680,
     "n": "Petra",
     "t": 6,
-    "i": "npc_zoom_3020011000_01.png",
-    "s": "https://gbf.wiki/images/e/e6/Npc_zoom_3020011000_01.png",
+    "i": "[n]sqruHOA.jpg",
+    "s": "https://cdn.donmai.us/sample/2d/ce/__petra_granblue_fantasy_drawn_by_taniwasu__sample-2dceb4283246dea6e4b651d3c1d0adab.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "hr",
+      "hz",
+      "hl",
+      "cm",
+      "Shaman"
+    ],
+    "in": "https://cdn.donmai.us/original/f1/a9/__petra_granblue_fantasy_drawn_by_suzuame_yatsumi__f1a993b8ca264be45e882f7db201d2fd.png"
   },
   {
     "u": 13681,
     "n": "Philosophia",
     "t": 5,
-    "i": "npc_zoom_3030270000_01.png",
-    "s": "https://gbf.wiki/images/f/f2/Npc_zoom_3030270000_01.png",
+    "i": "[n]dpqauvn.jpg",
+    "s": "https://cdn.donmai.us/original/0e/63/0e6325cc2f5a97f51023466d0de261e2.png",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "hl",
+      "dh",
+      "sn",
+      "me",
+      "cm"
     ]
   },
   {
     "u": 13682,
     "n": "Pholia",
     "t": 6,
-    "i": "npc_zoom_3040181000_01.png",
-    "s": "https://gbf.wiki/images/6/60/Npc_zoom_3040181000_01.png",
+    "i": "[n]ipjjoFE.jpg",
+    "s": "https://cdn.donmai.us/sample/3b/4c/__pholia_and_hakutaku_granblue_fantasy_drawn_by_minaba_hideo__sample-3b4c96472b2f84d9df0b0dbdf29c25bb.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "dh",
+      "cm",
+      "fa"
     ]
   },
   {
     "u": 13683,
     "n": "Predator",
     "t": 6,
-    "i": "npc_zoom_3040278000_01.png",
-    "s": "https://gbf.wiki/images/4/40/Npc_zoom_3040278000_01.png",
+    "i": "[n]XWomibi.jpg",
+    "s": "https://cdn.donmai.us/sample/0c/94/__predator_granblue_fantasy__sample-0c94f138e51033960133877cd7bef555.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "cl",
+      "cm",
+      "sh",
+      "ke",
+      "Assassin"
     ]
   },
   {
     "u": 13686,
     "n": "Ranko Kanzaki",
     "t": 6,
-    "i": "npc_zoom_3030162000_01.png",
-    "s": "https://gbf.wiki/images/e/ea/Npc_zoom_3030162000_01.png",
+    "i": "[n]ghjNWNy.jpg",
+    "s": "https://cdn.donmai.us/sample/c6/cb/__kanzaki_ranko_idolmaster_and_2_more_drawn_by_minaba_hideo__sample-c6cb7968d247e53584dd1e478ebf3cec.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "ar",
+      "cm"
+    ],
+    "d": "Idolmaster"
   },
   {
     "u": 13687,
     "n": "Razia",
     "t": 6,
-    "i": "npc_zoom_3040109000_01.png",
-    "s": "https://gbf.wiki/images/4/4f/Npc_zoom_3040109000_01.png",
+    "i": "[n]HMpZVuG.jpg",
+    "s": "https://cdn.donmai.us/sample/f7/e8/__razia_granblue_fantasy_drawn_by_mikurou_nayuta__sample-f7e831edde0576d005c36af8081363f8.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "dh",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/sample/58/ab/__razia_granblue_fantasy_drawn_by_kawacchi_hirohiro__sample-58abc53d7c87c2a9fc026bf4925e7e12.jpg"
   },
   {
     "u": 13689,
     "n": "Rei",
     "t": 6,
-    "i": "npc_zoom_3040265000_01.png",
-    "s": "https://gbf.wiki/images/e/eb/Npc_zoom_3040265000_01.png",
+    "i": "[n]AOMfBQw.jpg",
+    "s": "https://cdn.donmai.us/sample/98/e9/__rei_granblue_fantasy_drawn_by_minaba_hideo__sample-98e9efae6d6c702a4e8b42b05ebc24c3.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "sc",
+      "dh",
+      "cm"
     ]
   },
   {
     "u": 13692,
     "n": "Rika Jougasaki",
     "t": 5,
-    "i": "rikajougasaki_a.png",
-    "s": "https://gbf.wiki/images/6/6e/RikaJougasaki_A.png",
+    "i": "[n]mQVbRkb.jpg",
+    "s": "https://cdn.donmai.us/sample/0c/09/__jougasaki_mika_and_jougasaki_rika_idolmaster_and_2_more_drawn_by_minaba_hideo__sample-0c0905dfa4d21abfad3f287138cc2ac1.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "ar",
+      "cm"
+    ],
+    "d": "Idolmaster"
   },
   {
     "u": 13693,
     "n": "Rin Shibuya",
     "t": 5,
-    "i": "rinshibuya_a.png",
-    "s": "https://gbf.wiki/images/2/27/RinShibuya_A.png",
+    "i": "[n]gEfgcFT.jpg",
+    "s": "https://cdn.donmai.us/original/e6/e7/__shibuya_rin_idolmaster_and_2_more_drawn_by_minaba_hideo__e6e7417727f03b3909426761b3e5f9dd.png",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "ar",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/sample/43/12/__shibuya_rin_idolmaster_and_2_more_drawn_by_mk_mod0__sample-43121e50a0dc618ef1ebcf0e0a937e83.jpg",
+    "d": "Idolmaster"
   },
   {
     "u": 13694,
     "n": "Rita",
     "t": 5,
-    "i": "npc_zoom_3030054000_01.png",
-    "s": "https://gbf.wiki/images/6/61/Npc_zoom_3030054000_01.png",
+    "i": "[n]eIWnnVD.jpg",
+    "s": "https://cdn.donmai.us/sample/17/2f/__rita_granblue_fantasy_and_1_more_drawn_by_minaba_hideo__sample-172f86936c0dd1b3b1fa044e0f038d15.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "st",
+      "dc",
+      "un",
+      "cm",
+      "nc"
+    ],
+    "d": "Shingeki no Bahamut"
   },
   {
     "u": 13695,
     "n": "Robertina",
     "t": 5,
-    "i": "npc_zoom_3030144000_81.png",
-    "s": "https://gbf.wiki/images/1/19/Npc_zoom_3030144000_81.png",
+    "i": "[n]acaLBcE.jpg",
+    "s": "https://cdn.donmai.us/sample/14/d9/__robertina_granblue_fantasy_drawn_by_minaba_hideo__sample-14d9b54da6c8e6c1650371df569f55cf.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "dh",
+      "ar",
+      "cm"
     ]
   },
   {
     "u": 13696,
     "n": "Robomi",
     "t": 6,
-    "i": "npc_zoom_3040155000_01.png",
-    "s": "https://gbf.wiki/images/9/94/Npc_zoom_3040155000_01.png",
+    "i": "[n]UIHAmOX.jpg",
+    "s": "https://cdn.donmai.us/sample/3e/5f/__robomi_granblue_fantasy_drawn_by_minaba_hideo__sample-3e5f973d33d9fbb67a14eb64bd18be7c.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "cl",
+      "ad",
+      "cm"
     ]
   },
   {
     "u": 13698,
     "n": "Rosamia",
     "t": 6,
-    "i": "npc_zoom_3040087000_01.png",
-    "s": "https://gbf.wiki/images/f/f6/Npc_zoom_3040087000_01.png",
+    "i": "[n]kbdDPGH.jpg",
+    "s": "https://cdn.donmai.us/sample/c0/35/__rosamia_granblue_fantasy_drawn_by_otabe_sakura__sample-c0359247100710216cc89bfd0d4a40e8.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "me",
+      "cm",
+      "Hexer"
+    ],
+    "in": "https://cdn.donmai.us/sample/fb/7b/__rosamia_granblue_fantasy_drawn_by_sassakntm__sample-fb7b546f8eb3d500e24828788d8ba5cc.jpg"
   },
   {
     "u": 13699,
-    "n": "Rosetta",
+    "n": "Rosetta (Rose Queen)",
     "t": 6,
-    "i": "npc_zoom_3030010000_01.png",
-    "s": "https://gbf.wiki/images/7/7e/Npc_zoom_3030010000_01.png",
+    "i": "[n]swXxvFi.jpg",
+    "s": "https://cdn.donmai.us/sample/81/7e/__rosetta_granblue_fantasy_drawn_by_kakage__sample-817e998ea8ea3ba140612bc52ee5bd6f.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "hr",
+      "hz",
+      "de",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/sample/f8/bf/__rosetta_granblue_fantasy_drawn_by_eliskalti__sample-f8bf275c09894b75c74df95fb6620cf4.jpg"
   },
   {
     "u": 13701,
     "n": "Sachiko Koshimizu",
     "t": 6,
-    "i": "sachikokoshimizu_a.png",
-    "s": "https://gbf.wiki/images/a/a2/SachikoKoshimizu_A.png",
+    "i": "[n]mfDQkCO.jpg",
+    "s": "https://cdn.donmai.us/original/c7/20/__koshimizu_sachiko_idolmaster_and_2_more_drawn_by_minaba_hideo__c72028bd0d961877df383dd1d6eac6ed.png",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "ar",
+      "cm"
+    ],
+    "d": "Idolmaster"
   },
   {
     "u": 13702,
     "n": "Sahli Lao",
     "t": 5,
-    "i": "npc_zoom_3030076000_81.png",
-    "s": "https://gbf.wiki/images/2/2b/Npc_zoom_3030076000_81.png",
+    "i": "[n]XxDENOp.jpg",
+    "s": "https://cdn.donmai.us/original/9b/00/9b00b2de6cad89f9ae5a50379c864d2e.png",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "dh",
+      "cm"
     ]
   },
   {
     "u": 13704,
     "n": "Sandalphon",
     "t": 6,
-    "i": "7e273ca772f2990ac6dd434d696b7302.jpg",
-    "s": "https://chan.sankakucomplex.com/post/show/7089772",
+    "i": "[n]QCCRvYv.jpg",
+    "s": "https://cdn.donmai.us/sample/59/ca/__sandalphon_granblue_fantasy_drawn_by_osamu_jagabata__sample-59caeb281e155f4604bc3e35979d31ef.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "M",
+      "an",
+      "cm",
+      "im",
+      "Primal"
+    ],
+    "in": "https://cdn.donmai.us/original/97/bb/__sandalphon_granblue_fantasy_drawn_by_doushite__97bb2980fce1d57d5adf2e1429a3a659.jpg"
   },
   {
     "u": 13705,
     "n": "Sara",
     "t": 6,
-    "i": "npc_zoom_3040041000_01.png",
-    "s": "https://gbf.wiki/images/6/61/Npc_zoom_3040041000_01.png",
+    "i": "[n]PPNbIFl.jpg",
+    "s": "https://cdn.donmai.us/original/67/50/__sara_and_graphos_granblue_fantasy_drawn_by_kotoribako__6750e9ee3546bd9b9cb0eca1e341d993.png",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "hr",
+      "hz",
+      "de",
+      "pt",
+      "cm"
     ]
   },
   {
     "u": 13707,
     "n": "Sarya",
     "t": 5,
-    "i": "npc_zoom_3030209000_01.png",
-    "s": "https://gbf.wiki/images/0/0d/Npc_zoom_3030209000_01.png",
+    "i": "[n]AlgVFKT.jpg",
+    "s": "https://cdn.donmai.us/sample/1f/52/__sarya_granblue_fantasy_drawn_by_minaba_hideo__sample-1f52bed609e3f17c8c7d04f9ea05b099.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "sc",
+      "dh",
+      "cm",
+      "Detective"
+    ],
+    "in": "https://cdn.donmai.us/sample/91/7b/__sarya_granblue_fantasy_drawn_by_houtengeki__sample-917bd6dd55394b8eaaef8f87f0d81f1b.jpg"
   },
   {
     "u": 13708,
     "n": "Satyr",
     "t": 6,
-    "i": "npc_zoom_3040280000_01.png",
-    "s": "https://gbf.wiki/images/9/98/Npc_zoom_3040280000_01.png",
+    "i": "[n]LhBOkMR.jpg",
+    "s": "https://cdn.donmai.us/sample/dd/fc/__satyr_granblue_fantasy_drawn_by_shimatani_azu__sample-ddfc7fddc055e7d7acf9be205ab9016b.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "sl",
+      "cm",
+      "im",
+      "Primal"
+    ],
+    "in": "https://cdn.donmai.us/sample/d1/cd/__satyr_granblue_fantasy_drawn_by_hyouta_yoneya__sample-d1cd456e68b03a5c6d73f32b75661778.jpg"
   },
   {
     "u": 13709,
-    "n": "Scathacha",
+    "n": "Scathacha (Deirdre)",
     "t": 6,
-    "i": "npc_zoom_3040122000_01.png",
-    "s": "https://gbf.wiki/images/f/fb/Npc_zoom_3040122000_01.png",
+    "i": "[n]lPhkkpm.jpg",
+    "s": "https://cdn.donmai.us/sample/25/57/__scathacha_granblue_fantasy_drawn_by_minaba_hideo__sample-255705e5d8abae1becfee5f475e3bf3d.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "hz",
+      "dg",
+      "dh",
+      "cm"
     ]
   },
   {
     "u": 13710,
     "n": "Selfira",
     "t": 6,
-    "i": "npc_zoom_3040175000_01.png",
-    "s": "https://gbf.wiki/images/7/7b/Npc_zoom_3040175000_01.png",
+    "i": "[n]FVnnPUd.jpg",
+    "s": "https://cdn.donmai.us/sample/e9/5e/__selfira_granblue_fantasy_drawn_by_minaba_hideo__sample-e95e93ad982a97b877348eec64c38e50.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "dh",
+      "ar",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/sample/e3/b7/__selfira_granblue_fantasy_drawn_by_amasora_taichi__sample-e3b7f89c6a63d6b818c4cdde379d659a.jpg"
   },
   {
     "u": 13711,
     "n": "Sen",
     "t": 6,
-    "i": "npc_zoom_3030127000_01.png",
-    "s": "https://gbf.wiki/images/c/ce/Npc_zoom_3030127000_01.png",
+    "i": "[n]AWeQgTC.jpg",
+    "s": "https://cdn.donmai.us/sample/84/90/__sen_granblue_fantasy_drawn_by_minaba_hideo__sample-84900d4805c97b8b9773e8f317d25124.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "dh",
+      "ct",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/original/11/2b/__sen_granblue_fantasy_drawn_by_chausu__112b0c8bd218272e650a68b2a81ee6b2.jpg"
   },
   {
     "u": 13715,
@@ -61219,286 +61599,374 @@
     "u": 13718,
     "n": "Shiki Ichinose",
     "t": 5,
-    "i": "npc_zoom_3030194000_01.png",
-    "s": "https://gbf.wiki/images/7/74/Npc_zoom_3030194000_01.png",
+    "i": "[n]VHHyXwp.jpg",
+    "s": "https://cdn.donmai.us/original/c4/88/c488a0d73bfb7bea3239b2d735886bc8.png",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "ar",
+      "cm"
+    ],
+    "d": "Idolmaster"
   },
   {
     "u": 13719,
     "n": "Shitori",
     "t": 6,
-    "i": "npc_zoom_3040244000_01.png",
-    "s": "https://gbf.wiki/images/9/99/Npc_zoom_3040244000_01.png",
+    "i": "[n]VgSiKZL.jpg",
+    "s": "https://cdn.donmai.us/sample/a0/67/__shitori_granblue_fantasy_drawn_by_minaba_hideo__sample-a067c94eaab970bed37be8ec24cb1be1.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "cm"
     ]
   },
   {
     "u": 13720,
     "n": "Shiva",
     "t": 6,
-    "i": "sample_45b4e938a0406f86c3b3b1025d7d34a1.jpg",
-    "s": "https://chan.sankakucomplex.com/post/show/7833094",
+    "i": "[n]kCgvNoT.jpg",
+    "s": "https://cdn.donmai.us/sample/92/67/__shiva_and_shiva_granblue_fantasy__sample-9267cc3a1180f0be012c6913e6bfb458.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "M",
+      "gd",
+      "cm",
+      "im",
+      "Primal"
+    ],
+    "in": "https://cdn.donmai.us/sample/45/b4/__shiva_granblue_fantasy_drawn_by_zunta__sample-45b4e938a0406f86c3b3b1025d7d34a1.jpg"
   },
   {
     "u": 13721,
     "n": "Shura",
     "t": 6,
-    "i": "npc_zoom_3040273000_01.png",
-    "s": "https://gbf.wiki/images/3/34/Npc_zoom_3040273000_01.png",
+    "i": "[n]DpEXbjF.jpg",
+    "s": "https://cdn.donmai.us/sample/9c/cd/__shura_granblue_fantasy_drawn_by_kankitsurui_house_of_citrus__sample-9ccd5fc6525194c7085188065140aed7.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "cl",
+      "sa",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/sample/e2/3e/__shura_granblue_fantasy_drawn_by_toritora__sample-e23e5d94a8124e79796f249204967290.jpg"
   },
   {
     "u": 13722,
     "n": "Sig",
     "t": 5,
-    "i": "npc_zoom_3030106000_01.png",
-    "s": "https://gbf.wiki/images/8/89/Npc_zoom_3030106000_01.png",
+    "i": "[n]DDCTIus.jpg",
+    "s": "https://cdn.donmai.us/sample/12/0a/__sig_granblue_fantasy_drawn_by_minaba_hideo__sample-120a847fdb52ad65edf67678d2543ba1.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "hr",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/original/66/6b/__sig_and_ghandagoza_granblue_fantasy_drawn_by_mimonel__666b04574401f36fa51b3b056b17de57.png"
   },
   {
     "u": 13723,
     "n": "Silva",
     "t": 6,
-    "i": "npc_zoom_3040049000_01.png",
-    "s": "https://gbf.wiki/images/b/bb/Npc_zoom_3040049000_01.png",
+    "i": "[n]EiwZgCj.jpg",
+    "s": "https://cdn.donmai.us/sample/ce/c9/__silva_granblue_fantasy_drawn_by_minaba_hideo__sample-cec9b09c929c26db1b2d408abd7b74aa.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "cm",
+      "Sniper"
+    ],
+    "in": "https://cdn.donmai.us/sample/ec/52/__silva_granblue_fantasy_drawn_by_rai_newtype_xm_x1__sample-ec5280698124dd5f85a393ce55032656.jpg"
   },
   {
     "u": 13725,
     "n": "Societte",
     "t": 6,
-    "i": "npc_zoom_3040044000_01.png",
-    "s": "https://gbf.wiki/images/e/e1/Npc_zoom_3040044000_01.png",
+    "i": "[n]YpLxyiX.jpg",
+    "s": "https://cdn.donmai.us/original/6e/57/__societte_granblue_fantasy_drawn_by_77gl__6e578aad2be8798eb2f4786f2d9a1ec6.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "dh",
+      "ar",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/sample/b6/fd/__societte_granblue_fantasy_drawn_by_uchida_shou__sample-b6fdcc00ac379b44bce26531ddb8261c.jpg"
   },
   {
     "u": 13726,
     "n": "Sophie",
     "t": 5,
-    "i": "npc_zoom_3030082000_01.png",
-    "s": "https://gbf.wiki/images/b/be/Npc_zoom_3030082000_01.png",
+    "i": "[n]CJlDFqj.jpg",
+    "s": "https://cdn.donmai.us/original/d6/df/d6dfd4e45ff385319c380521ee9f3fd8.png",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "dh",
+      "ad",
+      "cm"
+    ],
+    "d": "Tales of Graces"
   },
   {
     "u": 13731,
     "n": "Sturm",
     "t": 6,
-    "i": "npc_zoom_3990000000_01.png",
-    "s": "https://gbf.wiki/images/b/b4/Npc_zoom_3990000000_01.png",
+    "i": "[n]PCsBeVO.jpg",
+    "s": "https://cdn.donmai.us/sample/61/9d/__sturm_granblue_fantasy_drawn_by_minaba_hideo__sample-619dd7d080d889886ab680ee6224ffea.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "cl",
+      "dh",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/sample/f9/c0/__sturm_granblue_fantasy_drawn_by_houtengeki__sample-f9c0237d6dd9e4aa8544efcdd795d3bc.jpg"
   },
   {
     "u": 13732,
     "n": "Suframare",
     "t": 5,
-    "i": "npc_zoom_3020029000_81.png",
-    "s": "https://gbf.wiki/images/f/f4/Npc_zoom_3020029000_81.png",
+    "i": "[n]jVuZLDy.jpg",
+    "s": "https://cdn.donmai.us/sample/83/85/__suframare_granblue_fantasy_drawn_by_minaba_hideo__sample-83852f71535097e4c89ad4f071527d08.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "hz",
+      "hl",
+      "dh",
+      "me",
+      "tc",
+      "cm"
     ]
   },
   {
     "u": 13733,
     "n": "Sutera",
     "t": 5,
-    "i": "npc_zoom_3030018000_01.png",
-    "s": "https://gbf.wiki/images/e/e4/Npc_zoom_3030018000_01.png",
+    "i": "[n]hucTVIj.jpg",
+    "s": "https://cdn.donmai.us/sample/bb/62/__sutera_granblue_fantasy_drawn_by_minaba_hideo__sample-bb626ec22a99d7030b8856de672d43d2.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "hr",
+      "dh",
+      "cm"
     ]
   },
   {
     "u": 13735,
     "n": "Tabina",
     "t": 6,
-    "i": "npc_zoom_3040234000_01.png",
-    "s": "https://gbf.wiki/images/6/64/Npc_zoom_3040234000_01.png",
+    "i": "[n]fHzuSrg.jpg",
+    "s": "https://cdn.donmai.us/original/16/86/1686690cbd0ac9e19c5d24cbf62d2f64.png",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "sl",
+      "cm"
     ]
   },
   {
     "u": 13736,
     "n": "Tanya",
     "t": 6,
-    "i": "npc_zoom_3040203000_01.png",
-    "s": "https://gbf.wiki/images/1/1d/Npc_zoom_3040203000_01.png",
+    "i": "[n]TcmKkAp.jpg",
+    "s": "https://cdn.donmai.us/sample/d9/ea/__tanya_granblue_fantasy_drawn_by_okada_manabi__sample-d9ea81fec2945cf17855eed5e82bb199.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "cm",
+      "sh"
+    ],
+    "in": "https://cdn.donmai.us/original/f5/d3/__tanya_granblue_fantasy_drawn_by_atoshi__f5d3934c107d90b6ae886575e9f77a2b.png"
   },
   {
     "u": 13737,
     "n": "Tear Grants",
     "t": 5,
-    "i": "teargrants_a.png",
-    "s": "https://gbf.wiki/images/8/8f/TearGrants_A.png",
+    "i": "[n]ThzwfCy.jpg",
+    "s": "https://cdn.donmai.us/sample/ed/47/__tear_grants_granblue_fantasy_and_2_more_drawn_by_minaba_hideo__sample-ed472cf3559cfb1aaf14143a9dda70f1.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "me",
+      "cm"
+    ],
+    "d": "Tales of the Abyss"
   },
   {
     "u": 13738,
     "n": "Teena",
     "t": 6,
-    "i": "npc_zoom_3030034000_02.png",
-    "s": "https://gbf.wiki/images/6/6a/Npc_zoom_3030034000_02.png",
+    "i": "[n]RnaxVzh.jpg",
+    "s": "https://cdn.donmai.us/sample/aa/25/__teena_granblue_fantasy_and_1_more_drawn_by_minaba_hideo__sample-aa25837c1c62acec2b62aa8df68d8c58.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "hl",
+      "me",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/original/b3/0d/__teena_granblue_fantasy_drawn_by_futoshi__b30d9b09932209c4bc742f255dd77b1a.jpg"
   },
   {
     "u": 13739,
     "n": "Teru Tendo",
     "t": 5,
-    "i": "sample_f2d9abf4c9a520ca65b04484aadd3bc0.jpg",
-    "s": "https://chan.sankakucomplex.com/post/show/6329409",
+    "i": "[n]varxBEX.jpg",
+    "s": "https://cdn.donmai.us/original/52/37/__tendo_teru_idolmaster_and_2_more_drawn_by_minaba_hideo__5237fffbd116ab2634f993d01cc1770c.png",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "M",
+      "ar",
+      "cm"
+    ],
+    "d": "Idolmaster"
   },
   {
     "u": 13740,
     "n": "Thelonim",
     "t": 4,
-    "i": "npc_zoom_3020056000_01.png",
-    "s": "https://gbf.wiki/images/5/5d/Npc_zoom_3020056000_01.png",
+    "i": "[n]aScOOsL.jpg",
+    "s": "https://cdn.donmai.us/sample/55/df/__thelonim_granblue_fantasy_drawn_by_minaba_hideo__sample-55dffdfce17fb7abaa08ee84bc20f46c.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "M",
+      "dh",
+      "cm"
     ]
   },
   {
     "u": 13741,
     "n": "Therese",
     "t": 6,
-    "i": "npc_zoom_3040149000_01.png",
-    "s": "https://gbf.wiki/images/9/99/Npc_zoom_3040149000_01.png",
+    "i": "[n]RPDzCTi.jpg",
+    "s": "https://cdn.donmai.us/sample/a5/c1/__therese_granblue_fantasy_drawn_by_horosuke__sample-a5c103a709a04ee911051d2d6bdad80c.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/sample/d0/b1/__therese_granblue_fantasy_drawn_by_cai_geng__sample-d0b16961363cab26bb24fa52eb8877c4.jpg"
   },
   {
     "u": 13742,
     "n": "Threo",
     "t": 6,
-    "i": "npc_zoom_3040032000_01.png",
-    "s": "https://gbf.wiki/images/0/0c/Npc_zoom_3040032000_01.png",
+    "i": "[n]uBpBZav.jpg",
+    "s": "https://cdn.donmai.us/sample/f1/bb/__threo_granblue_fantasy_drawn_by_kaerunoko__sample-f1bbc2dc96cc0c160173042abd1e7543.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "cl",
+      "dh",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/original/67/1b/__threo_granblue_fantasy_drawn_by_tenken_gotannda__671b5d6d239294a5412ae7b5929be086.jpg"
   },
   {
     "u": 13743,
     "n": "Tien",
     "t": 6,
-    "i": "npc_zoom_3040039000_81.png",
-    "s": "https://gbf.wiki/images/9/95/Npc_zoom_3040039000_81.png",
+    "i": "[n]imxekdX.jpg",
+    "s": "https://cdn.donmai.us/sample/9b/16/__tien_granblue_fantasy_drawn_by_hinahino__sample-9b16e2e5227de64e8c022c35fb607391.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "cl",
+      "dh",
+      "tw",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/sample/5b/e7/__tien_and_tien_granblue_fantasy_drawn_by_akira_coffee_curry__sample-5be708d870cdbe3688d08b3aed55f96b.jpg"
   },
   {
     "u": 13746,
     "n": "Tweyen",
     "t": 6,
-    "i": "npc_zoom_3040031000_01.png",
-    "s": "https://gbf.wiki/images/6/6f/Npc_zoom_3040031000_01.png",
+    "i": "[n]XDjlBgq.jpg",
+    "s": "https://cdn.donmai.us/sample/20/ff/__tweyen_granblue_fantasy_drawn_by_hizuki_miya__sample-20ffd89d7dee1592435c3e27d15946f0.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "cl",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/original/af/28/__tweyen_granblue_fantasy_drawn_by_hikaru_galaxy__af28e103ce29ac18d3374bdcf2ba6f8f.png"
   },
   {
     "u": 13749,
     "n": "Uzuki Shimamura",
     "t": 5,
-    "i": "uzukishimamura_a.png",
-    "s": "https://gbf.wiki/images/1/11/UzukiShimamura_A.png",
+    "i": "[n]zAEkrQt.jpg",
+    "s": "https://cdn.donmai.us/sample/54/58/__shimamura_uzuki_idolmaster_and_2_more_drawn_by_minaba_hideo__sample-5458eac9322935f6f12408b935e67158.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "ar",
+      "cm"
+    ],
+    "d": "Idolmaster"
   },
   {
     "u": 13750,
     "n": "Vajra",
     "t": 6,
-    "i": "npc_zoom_3040147000_01.png",
-    "s": "https://gbf.wiki/images/d/df/Npc_zoom_3040147000_01.png",
+    "i": "[n]AGCsmjG.jpg",
+    "s": "https://cdn.donmai.us/sample/52/09/__vajra_and_garjana_granblue_fantasy_drawn_by_kayase__sample-52098e7e2a2eef5f8771e7c2b2909011.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "hr",
+      "mt",
+      "dh",
+      "cm",
+      "fa"
     ]
   },
   {
     "u": 13751,
     "n": "Vane",
     "t": 6,
-    "i": "8a5ee74fe3df4283786c7ad29a538dfa.jpg",
-    "s": "https://chan.sankakucomplex.com/post/show/19156554",
+    "i": "[n]HKwGpog.jpg",
+    "s": "https://cdn.donmai.us/sample/57/44/__vane_granblue_fantasy_drawn_by_onekobox__sample-5744486ca7966055a0b01582bc0b0359.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "M",
+      "cm"
     ]
   },
   {
     "u": 13752,
-    "n": "Vania",
+    "n": "Vania / Vampy",
     "t": 6,
-    "i": "npc_zoom_3040057000_01.png",
-    "s": "https://gbf.wiki/images/6/61/Npc_zoom_3040057000_01.png",
+    "i": "[n]XfsZJAy.jpg",
+    "s": "https://cdn.donmai.us/sample/aa/0d/__vampy_granblue_fantasy_and_1_more_drawn_by_ikeuchi_tanuma__sample-aa0dbc9c5a66b1bbc53be989d441cb7d.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "dr",
+      "pc",
+      "vp",
+      "cm",
+      "im"
+    ],
+    "d": "Shingeki no Bahamut"
   },
   {
     "u": 13754,
     "n": "Vaseraga",
     "t": 6,
-    "i": "sample_4633474d6a5aac5aa5e53c4e6b0565c0.jpg",
-    "s": "https://chan.sankakucomplex.com/post/show/4851173",
+    "i": "[n]cCXtXNk.jpg",
+    "s": "https://cdn.donmai.us/sample/73/6f/__vaseraga_granblue_fantasy_drawn_by_musou_luf__sample-736f651e034c6f698ead66c5e024f118.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "M",
+      "dh",
+      "cm"
     ]
   },
   {
@@ -61515,35 +61983,43 @@
   },
   {
     "u": 13758,
-    "n": "Vikala",
+    "n": "Vikala (Yin Side & Yang Side)",
     "t": 6,
-    "i": "npc_zoom_3040252000_01.png",
-    "s": "https://gbf.wiki/images/3/3b/Npc_zoom_3040252000_01.png",
+    "i": "[n]rEoprsK.jpg",
+    "s": "https://cdn.donmai.us/original/ea/3e/__vikala_granblue_fantasy_drawn_by_feb_itk__ea3e633cc00911a23a9ad9f49cbaae26.png",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "mi",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/sample/92/64/__vikala_and_vikala_granblue_fantasy_drawn_by_miazi__sample-926475b2e1100019a1c4ff21de32b14c.jpg"
   },
   {
     "u": 13759,
     "n": "Vira",
     "t": 6,
-    "i": "npc_zoom_3040141000_01.png",
-    "s": "https://gbf.wiki/images/a/a1/Npc_zoom_3040141000_01.png",
+    "i": "[n]lVtFKXB.jpg",
+    "s": "https://cdn.donmai.us/original/1b/18/__vira_granblue_fantasy_and_1_more__1b1804ffc27be5ade67ac23dc059a804.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "cm",
+      "ye"
+    ],
+    "in": "https://cdn.donmai.us/original/d9/a4/__vira_granblue_fantasy_drawn_by_takeda_aranobu__d9a4adc8575ff473b626d4f8789dcaa8.jpg"
   },
   {
     "u": 13760,
     "n": "Volenna",
     "t": 5,
-    "i": "npc_zoom_3020007000_01.png",
-    "s": "https://gbf.wiki/images/9/95/Npc_zoom_3020007000_01.png",
+    "i": "[n]qZFiwKT.jpg",
+    "s": "https://cdn.donmai.us/sample/cb/6b/__volenna_granblue_fantasy_drawn_by_minaba_hideo__sample-cb6b0580251eae87c18212b9cea85da0.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "cl",
+      "cm"
     ]
   },
   {
@@ -61562,34 +62038,43 @@
     "u": 13763,
     "n": "Wulf and Renie",
     "t": 6,
-    "i": "npc_zoom_3040174000_01.png",
-    "s": "https://gbf.wiki/images/9/99/Npc_zoom_3040174000_01.png",
+    "i": "[n]bfjuAcW.jpg",
+    "s": "https://cdn.donmai.us/original/df/06/df063122dd181703430dc1cf2cc28d3f.png",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "M",
+      "mi",
+      "cm",
+      "Werewolf"
     ]
   },
   {
     "u": 13764,
     "n": "Yaia",
     "t": 5,
-    "i": "npc_zoom_3030111000_01.png",
-    "s": "https://gbf.wiki/images/2/27/Npc_zoom_3030111000_01.png",
+    "i": "[n]JtYTSRw.jpg",
+    "s": "https://cdn.donmai.us/original/d0/de/__yaia_granblue_fantasy_drawn_by_u_jie__d0de56e8451d5f0c484b31bb5fe0d7ee.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "dh",
+      "cf",
+      "cm"
     ]
   },
   {
     "u": 13765,
     "n": "Yamanbagiri Kunihiro",
     "t": 5,
-    "i": "e4c2088c9e8a973ff5be33ca8ea2d588.jpg",
-    "s": "https://chan.sankakucomplex.com/post/show/5834140",
+    "i": "[n]bMfJRWQ.jpg",
+    "s": "https://cdn.donmai.us/sample/de/68/__yamanbagiri_kunihiro_granblue_fantasy_and_2_more_drawn_by_minaba_hideo__sample-de687fb4cfd137111c0e86bc101372fa.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "M",
+      "cm"
+    ],
+    "d": "Touken Ranbu"
   },
   {
     "u": 13766,
@@ -61606,45 +62091,56 @@
     "u": 13769,
     "n": "You",
     "t": 5,
-    "i": "npc_zoom_3030277000_01.png",
-    "s": "https://gbf.wiki/images/2/21/Npc_zoom_3030277000_01.png",
+    "i": "[n]KMWrMmW.jpg",
+    "s": "https://cdn.donmai.us/sample/65/d5/__you_granblue_fantasy_drawn_by_minaba_hideo__sample-65d52b50833618c3ca2ba5d66f1ede1c.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "dh",
+      "cm"
     ]
   },
   {
     "u": 13770,
     "n": "Yuel",
     "t": 6,
-    "i": "npc_zoom_3040006000_01.png",
-    "s": "https://gbf.wiki/images/8/8f/Npc_zoom_3040006000_01.png",
+    "i": "[n]yydcOrG.jpg",
+    "s": "https://cdn.donmai.us/original/74/e9/__yuel_granblue_fantasy_drawn_by_ryouku__74e9df913e3b6ae15b690640c39b90f2.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "dh",
+      "ar",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/sample/e3/f4/__yuel_granblue_fantasy_drawn_by_kanachirou__sample-e3f436acba600d52b00915a6c72f0bb8.jpg"
   },
   {
     "u": 13771,
     "n": "Yuisis",
     "t": 6,
-    "i": "npc_zoom_3040105000_01.png",
-    "s": "https://gbf.wiki/images/d/d3/Npc_zoom_3040105000_01.png",
+    "i": "[n]mWYgRfS.jpg",
+    "s": "https://cdn.donmai.us/original/ee/0f/__yuisis_granblue_fantasy_drawn_by_ibuki_notsu__ee0f6a27111e2519814f480d57d155b8.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "dh",
+      "cm"
+    ],
+    "in": "https://cdn.donmai.us/sample/fc/37/__yuisis_granblue_fantasy_drawn_by_uchida_shou__sample-fc375337178902fc00d98112e315ab4d.jpg"
   },
   {
     "u": 13772,
     "n": "Yuri Lowell",
     "t": 5,
-    "i": "691b19c0f24f9c46cc5df9d73d6bed4a.jpg",
-    "s": "https://chan.sankakucomplex.com/post/show/4598936",
+    "i": "[n]aESXmet.jpg",
+    "s": "https://cdn.donmai.us/original/4f/37/4f37509918c86ca757cc8d24ba0cc89d.png",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "M",
+      "cm"
+    ],
+    "d": "Tales of Vesperia"
   },
   {
     "u": 13773,
@@ -61661,11 +62157,14 @@
     "u": 13774,
     "n": "Zahlhamelina",
     "t": 6,
-    "i": "npc_zoom_3040075000_01.png",
-    "s": "https://gbf.wiki/images/0/0f/Npc_zoom_3040075000_01.png",
+    "i": "[n]IGzjbkm.jpg",
+    "s": "https://cdn.donmai.us/sample/9b/bf/__zahlhamelina_granblue_fantasy_drawn_by_minaba_hideo__sample-9bbf14e74fc94cffbe1c14ce1633bdea.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "dh",
+      "pt",
+      "cm"
     ]
   },
   {
@@ -61685,55 +62184,75 @@
     "u": 13777,
     "n": "Zeta",
     "t": 6,
-    "i": "[n]Zeta.png",
+    "i": "[n]pJoCeIP.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "cl",
+      "cm"
     ],
-    "s": "https://static.wikia.nocookie.net/granblue-fantasy-versus/images/d/d9/Zeta.png"
+    "s": "https://cdn.donmai.us/sample/c0/d8/__zeta_granblue_fantasy_drawn_by_futami_mg42fw190d__sample-c0d830c56835cfc6a107c6d79bb8aa20.jpg",
+    "in": "https://cdn.donmai.us/original/49/e8/__zeta_and_zeta_granblue_fantasy_drawn_by_kamimiya__49e8bcae077aeab32598c32c1871732a.jpg"
   },
   {
     "u": 13778,
-    "n": "Zooey",
+    "n": "Zooey (Grand Order)",
     "t": 6,
-    "i": "npc_zoom_3040150000_01.png",
-    "s": "https://gbf.wiki/images/9/9d/Npc_zoom_3040150000_01.png",
+    "i": "[n]fprwaHo.jpg",
+    "s": "https://cdn.donmai.us/sample/fe/16/__zooey_granblue_fantasy_drawn_by_occa_key__sample-fe1671463d166760e4d94c641e6e5306.jpg",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "mt",
+      "mo",
+      "cm",
+      "im",
+      "Primal"
+    ],
+    "in": "https://cdn.donmai.us/sample/e6/c8/__zooey_granblue_fantasy_drawn_by_kanachirou__sample-e6c8257a4a892aa5e46263587e981b65.jpg"
   },
   {
     "u": 13779,
     "n": "Μ's First-Years",
     "t": 6,
-    "i": "npc_zoom_3040229000_01.png",
-    "s": "https://gbf.wiki/images/0/06/Npc_zoom_3040229000_01.png",
+    "i": "[n]tIgUknH.jpg",
+    "s": "https://cdn.donmai.us/original/33/c4/33c46af63f115f0d3d48b1794529f169.png",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "mi",
+      "ar",
+      "cm"
+    ],
+    "d": "Love Live!"
   },
   {
     "u": 13780,
     "n": "Μ's Second-Years",
     "t": 6,
-    "i": "npc_zoom_3040230000_01.png",
-    "s": "https://gbf.wiki/images/d/d7/Npc_zoom_3040230000_01.png",
+    "i": "[n]OroFjfB.jpg",
+    "s": "https://cdn.donmai.us/original/c3/6b/c36b9d576fc169fcdbba51e33db0022a.png",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
-    ]
+      "F",
+      "mi",
+      "ar",
+      "cm"
+    ],
+    "d": "Love Live!"
   },
   {
     "u": 13781,
     "n": "Μ's Third-Years",
     "t": 6,
-    "i": "npc_zoom_3040231000_01.png",
-    "s": "https://gbf.wiki/images/0/0d/Npc_zoom_3040231000_01.png",
+    "i": "[n]GWNihYY.jpg",
+    "s": "https://cdn.donmai.us/original/ba/54/ba5405562bc5236ed4622a3f8f3ee753.png",
     "w": "Granblue Fantasy",
     "b": [
-      "F"
+      "F",
+      "mi",
+      "ar",
+      "cm"
     ]
   },
   {
@@ -66052,7 +66571,9 @@
     "w": "High School DxD",
     "b": [
       "M",
+      "dh",
       "sr",
+      "cm",
       "ir"
     ],
     "s": "https://i.imgur.com/b61jENW.jpg"
@@ -66134,8 +66655,6 @@
     "b": [
       "M",
       "mt",
-      "pl",
-      "cr",
       "mo",
       "dm",
       "cm"
@@ -66158,7 +66677,8 @@
       "pr",
       "cm",
       "fa"
-    ]
+    ],
+    "d": "Slash/Dog"
   },
   {
     "u": 362,
@@ -66211,8 +66731,6 @@
       "ml",
       "dr",
       "id",
-      "pl",
-      "cr",
       "dm",
       "dg",
       "th",
@@ -66231,9 +66749,6 @@
     "w": "High School DxD",
     "b": [
       "M",
-      "ps",
-      "pl",
-      "ip",
       "an",
       "rl"
     ],
@@ -66265,11 +66780,7 @@
       "cl",
       "ml",
       "ps",
-      "id",
-      "pl",
-      "cr",
       "ip",
-      "ih",
       "sl",
       "dm",
       "sr",
@@ -66290,7 +66801,6 @@
       "M",
       "cl",
       "dr",
-      "id",
       "dm",
       "dg",
       "me",
@@ -66724,9 +67234,6 @@
     "b": [
       "F",
       "C",
-      "mt",
-      "id",
-      "ih",
       "an",
       "cm"
     ]
@@ -66851,7 +67358,6 @@
     "b": [
       "F",
       "C",
-      "pl",
       "sl",
       "an",
       "cm",
@@ -67179,8 +67685,6 @@
       "F",
       "C",
       "cl",
-      "pl",
-      "cr",
       "hl",
       "dm",
       "sd",
@@ -67320,9 +67824,6 @@
       "C",
       "dr",
       "id",
-      "pl",
-      "sc",
-      "di",
       "dn",
       "hl",
       "rs",
@@ -67342,6 +67843,7 @@
     "w": "High School DxD",
     "b": [
       "F",
+      "C",
       "hr",
       "mt",
       "cl",
@@ -67365,9 +67867,6 @@
       "F",
       "C",
       "cl",
-      "ps",
-      "pl",
-      "ip",
       "an",
       "sy",
       "os"
@@ -68266,12 +68765,13 @@
     "u": 5674,
     "n": "Gawr Gura",
     "t": 6,
-    "i": "sou__sample_d6d78150fd1dbcaa8f8be9a7b3bd0eb8.jpg",
-    "s": "https://danbooru.donmai.us/posts/4225199",
+    "i": "https://imgur.com/SuBnuDIl.jpg",
+    "s": "https://imgur.com/SuBnuDI.jpg",
     "w": "Hololive (HoloMyth)",
     "b": [
       "F",
       "C",
+      "hr",
       "dh",
       "vt"
     ],
@@ -68562,8 +69062,8 @@
     "u": 7265,
     "n": "Theresa Apocalypse",
     "t": 6,
-    "i": "ell__sample_5800828692073687d1f5b766e2e9f9c3.jpg",
-    "s": "https://danbooru.donmai.us/posts/3166947",
+    "i": "https://i.imgur.com/Krt9oeOl.jpg",
+    "s": "https://i.imgur.com/Krt9oeO.jpg",
     "w": "Honkai Impact 3rd",
     "b": [
       "F",
@@ -68615,13 +69115,18 @@
     "u": 7269,
     "n": "Rita Rossweisse",
     "t": 6,
-    "i": "786__sample_89d675d2bccdbaf90671f00fac5485f9.jpg",
-    "s": "https://danbooru.donmai.us/posts/3409937",
+    "i": "https://i.imgur.com/F0dmKlhl.jpg",
+    "s": "https://i.imgur.com/F0dmKlh.jpg",
     "w": "Honkai Impact 3rd",
     "b": [
       "F",
       "C",
-      "P"
+      "P",
+      "cl",
+      "sl",
+      "md",
+      "sa",
+      "cm"
     ]
   },
   {
@@ -68682,14 +69187,17 @@
     "u": 7273,
     "n": "Lizelle Einstein and Frederika Tesla",
     "t": 4,
-    "i": "ate__sample_507c30a65926268e7356bcab96d99f98.jpg",
-    "s": "https://danbooru.donmai.us/posts/3303016",
+    "i": "https://i.imgur.com/NhXOmQ1l.jpg",
+    "s": "https://i.imgur.com/NhXOmQ1.jpg",
     "w": "Honkai Impact 3rd",
     "b": [
       "F",
       "C",
       "P",
+      "cl",
+      "en",
       "sn",
+      "gn",
       "mi"
     ]
   },
@@ -68740,12 +69248,16 @@
     "u": 7277,
     "n": "Cocolia",
     "t": 4,
-    "i": "[n]Stigmata_-_Cocolia.png",
-    "s": "https://static.wikia.nocookie.net/hoducks/images/b/ba/Stigmata_-_Cocolia_%28T%29.png",
+    "i": "https://i.imgur.com/PAzjlLkl.png",
+    "s": "https://i.imgur.com/PAzjlLk.png",
     "w": "Honkai Impact 3rd",
     "b": [
       "F",
-      "C"
+      "C",
+      "cl",
+      "sl",
+      "sa",
+      "cm"
     ]
   },
   {
@@ -68764,14 +69276,18 @@
     "u": 7279,
     "n": "Ana Schariac",
     "t": 6,
-    "i": "[n]EVazNpd.jpg",
-    "s": "https://cdn.donmai.us/original/f0/6a/__ana_schariac_honkai_and_1_more_drawn_by_krit_parnsanay__f06a7a573fb532686f9077a87d29ab93.jpg",
+    "i": "https://i.imgur.com/sNZu2cbl.jpg",
+    "s": "https://i.imgur.com/sNZu2cb.jpg",
     "w": "Honkai Impact 3rd",
     "b": [
       "F",
       "C",
       "P",
-      "th"
+      "cl",
+      "sl",
+      "th",
+      "sa",
+      "cm"
     ]
   },
   {
@@ -75369,13 +75885,20 @@
     "u": 9067,
     "n": "Nakoruru",
     "t": 5,
-    "i": "sample_c3517ce3db96050a36b92050ec2d2cf1.jpg",
-    "s": "https://chan.sankakucomplex.com/post/show/18361925",
+    "i": "[n]hnRgcPP.jpg",
+    "s": "https://cdn.donmai.us/sample/94/80/__nakoruru_samurai_spirits_drawn_by_hagure_keg__sample-9480da43c46a38e26a0b7a3e73a85a00.jpg",
     "w": "King of Fighters (Samurai Shodown)",
     "b": [
       "F",
-      "C"
-    ]
+      "C",
+      "hr",
+      "hp",
+      "hl",
+      "pt",
+      "cm",
+      "fa"
+    ],
+    "in": "https://cdn.donmai.us/sample/ce/b0/__nakoruru_samurai_spirits_drawn_by_nape_yama__sample-ceb0fcd122770486fac0f6b69c979f81.jpg"
   },
   {
     "u": 9068,
@@ -80878,12 +81401,13 @@
     "u": 10367,
     "n": "Brooke Scott",
     "t": 1,
-    "i": "vczqf2arhhv21.jpg",
-    "s": "https://i.redd.it/vczqf2arhhv21.jpg",
+    "i": "https://i.imgur.com/3k8CkMgl.png",
+    "s": "https://i.imgur.com/3k8CkMg.png",
     "w": "Life is Strange",
     "b": [
       "F"
-    ]
+    ],
+    "in": "https://tulip.paheal.net/_images/c6aacf2a4454f320f830f7c5a7c7195b/2679121%20-%20Brooke_Scott%20Life_is_Strange%20ssppp.png"
   },
   {
     "u": 10368,
@@ -87380,18 +87904,6 @@
     "d": "New Phyrexia"
   },
   {
-    "u": 4581,
-    "n": "Atarka, World Render",
-    "t": 8,
-    "i": "[n]tumblr_njklavzbqe1thxsmlo1_1280.jpg",
-    "w": "Magic: the Gathering",
-    "b": [
-      "F",
-      "dg"
-    ],
-    "s": "https://64.media.tumblr.com/05e7011764b0e576da5c620113b79fe8/tumblr_njklavzbqe1thxsmlo1_1280.jpg"
-  },
-  {
     "u": 4582,
     "n": "Obeka, Brute Chronologist",
     "t": 8,
@@ -89257,8 +89769,12 @@
     "s": "https://e621.net/post/show/1014935",
     "w": "Mario Series",
     "b": [
-      "F"
-    ]
+      "F",
+      "me",
+      "cm",
+      "sh"
+    ],
+    "in": "https://static1.e621.net/data/81/2e/812eda527a35727e3854fe344e457331.png"
   },
   {
     "u": 12420,
@@ -89275,13 +89791,15 @@
   {
     "u": 12421,
     "n": "Hariet",
-    "t": 1,
-    "i": "0573ec9f74dd73645d7cdf03b9800a35.jpg",
-    "s": "https://e621.net/posts/1342876",
+    "t": 3,
+    "i": "[n]xaNdlGi.jpg",
+    "s": "https://static1.e621.net/data/05/92/0592755e5a233f1fb4d89d3ffba3b2c8.png",
     "w": "Mario Series",
     "b": [
-      "F"
-    ]
+      "F",
+      "cm"
+    ],
+    "in": "https://static1.e621.net/data/7c/4b/7c4b01b6685731955fd8eb664b4d734a.jpg"
   },
   {
     "u": 12422,
@@ -89336,11 +89854,12 @@
     "u": 1759,
     "n": "Geno",
     "t": 3,
-    "i": "sample_82525d2e71485af29ab5cf4d7984b7ce.jpg",
-    "s": "https://chan.sankakucomplex.com/post/show/7196925",
+    "i": "[n]MiUFCOX.jpg",
+    "s": "https://i.redd.it/y36ip4k8yag81.png",
     "w": "Mario Series",
     "b": [
-      "M"
+      "M",
+      "cm"
     ]
   },
   {
@@ -89375,7 +89894,8 @@
     "s": "https://chan.sankakucomplex.com/post/show/7399411",
     "w": "Mario Series",
     "b": [
-      "M",
+      "O",
+      "cm",
       "ge"
     ]
   },
@@ -89383,11 +89903,16 @@
     "u": 1763,
     "n": "Kamek",
     "t": 4,
-    "i": "5547dd57fc385f980f64b86174ea7a0a.jpg",
-    "s": "https://chan.sankakucomplex.com/post/show/7334113",
+    "i": "https://i.imgur.com/WMJgP1nl.png",
+    "s": "https://i.imgur.com/WMJgP1n.png",
     "w": "Mario Series",
     "b": [
-      "M"
+      "M",
+      "pl",
+      "ip",
+      "dn",
+      "en",
+      "me"
     ]
   },
   {
@@ -89398,7 +89923,13 @@
     "s": "https://chan.sankakucomplex.com/post/show/7546701",
     "w": "Mario Series",
     "b": [
-      "M"
+      "O",
+      "bj",
+      "bk",
+      "cm",
+      "im",
+      "ir",
+      "ge"
     ]
   },
   {
@@ -89466,7 +89997,8 @@
     "w": "Mario Series",
     "b": [
       "F",
-      "C"
+      "C",
+      "sh"
     ]
   },
   {
@@ -101278,11 +101810,11 @@
   },
   {
     "u": 447,
-    "n": "All Might",
+    "n": "All Might / Toshinori Yagi",
     "t": 7,
     "i": "https://i.imgur.com/WtBCLldl.jpg",
     "s": "https://i.imgur.com/WtBCLld.jpg",
-    "w": "All Might / Toshinori Yagi",
+    "w": "My Hero Academia",
     "b": [
       "M",
       "cl",
@@ -101291,7 +101823,8 @@
       "sr",
       "sa",
       "cm"
-    ]
+    ],
+    "d": "Pro Heroes"
   },
   {
     "u": 448,
@@ -101903,7 +102436,8 @@
       "C",
       "sd",
       "sp",
-      "cm"
+      "cm",
+      "ke"
     ],
     "d": "UA 1-B",
     "in": "https://cdn6.redxxx.cc/picture/original/nUE0pUZ6Yl9cYaWyMTDhnKDiBGHkZGu6LKAlMGH1ZF5dpTpcXltbHzIxJSuLYzAwXI85AGRkBUcup3WyAGHkYzcjMj3p9W/(RedXXX.cc)_kodai-yui-my-hero-academia-shpo-preview.jpg"
@@ -104994,7 +105528,7 @@
       "sh"
     ],
     "in": "https://holly.paheal.net/_images/5b84ce90f386c32cdb86aa2801ff3f92/2488822%20-%20Karui%20Naruto.jpg",
-    "d": "Otogakure"
+    "d": "Kumogakure"
   },
   {
     "u": 6614,
@@ -105038,7 +105572,7 @@
       "sh"
     ],
     "in": "https://lotus.paheal.net/_images/ba34b1bb8cf0a7e5c9a60eaaadf77202/3319745%20-%20Boruto%3A_Naruto_Next_Generations%20Kurotsuchi%20Naruto%20PQP%20edit.jpg",
-    "d": "Otogakure"
+    "d": "Iwagakure"
   },
   {
     "u": 6616,
@@ -105963,6 +106497,7 @@
       "id",
       "sc",
       "fm",
+      "ih",
       "sl",
       "fn",
       "lm",
@@ -110499,7 +111034,7 @@
       "cm",
       "tn"
     ],
-    "d": "B-Class Hero"
+    "d": "A-Class Hero"
   },
   {
     "u": 541,
@@ -111999,6 +112534,7 @@
       "F",
       "C",
       "en",
+      "nd",
       "cm"
     ],
     "in": "https://cdn.donmai.us/sample/0b/3c/__d_va_overwatch_and_1_more_drawn_by_logan_cure__sample-0b3cbb3900b5657f6d6d3e58b34f47c1.jpg",
@@ -117806,77 +118342,98 @@
     "n": "Typhlosion",
     "t": 6,
     "i": "https://i.imgur.com/4HcFe3Nl.png",
-    "w": "Pokemon",
+    "w": "Pokemon Expansion",
     "b": [
-      "mr"
+      "O",
+      "mr",
+      "ge"
     ],
-    "s": "https://i.imgur.com/4HcFe3N.png"
+    "s": "https://i.imgur.com/4HcFe3N.png",
+    "d": "2/Johto"
   },
   {
     "u": 12821,
     "n": "Feraligatr",
     "t": 6,
     "i": "https://i.imgur.com/ZZqjATEl.png",
-    "w": "Pokemon",
+    "w": "Pokemon Expansion",
     "b": [
-      "mr"
+      "O",
+      "mr",
+      "ge"
     ],
-    "s": "https://i.imgur.com/ZZqjATE.png"
+    "s": "https://i.imgur.com/ZZqjATE.png",
+    "d": "2/Johto"
   },
   {
     "u": 12833,
     "n": "Pichu",
     "t": 3,
     "i": "[n]__pichu_pokemon_drawn_by_nullma__sample-86f09e99ea2de09ab02a578bd56921ac.jpg",
-    "w": "Pokemon",
+    "w": "Pokemon Expansion",
     "b": [
-      "mr"
+      "O",
+      "mr",
+      "ge"
     ],
-    "s": "https://cdn.donmai.us/sample/86/f0/__pichu_pokemon_drawn_by_nullma__sample-86f09e99ea2de09ab02a578bd56921ac.jpg"
+    "s": "https://cdn.donmai.us/sample/86/f0/__pichu_pokemon_drawn_by_nullma__sample-86f09e99ea2de09ab02a578bd56921ac.jpg",
+    "d": "2/Johto"
   },
   {
     "u": 12834,
     "n": "Cleffa",
     "t": 3,
     "i": "[n]__cleffa_pokemon_drawn_by_ayu_mog__f66529cb3a3be5b16707a004bb96df16.jpg",
-    "w": "Pokemon",
+    "w": "Pokemon Expansion",
     "b": [
-      "mr"
+      "O",
+      "mr",
+      "ge"
     ],
-    "s": "https://cdn.donmai.us/original/f6/65/__cleffa_pokemon_drawn_by_ayu_mog__f66529cb3a3be5b16707a004bb96df16.jpg"
+    "s": "https://cdn.donmai.us/original/f6/65/__cleffa_pokemon_drawn_by_ayu_mog__f66529cb3a3be5b16707a004bb96df16.jpg",
+    "d": "2/Johto"
   },
   {
     "u": 12835,
     "n": "Igglybuff",
     "t": 3,
     "i": "[n]7c650dde15f3d32fe4a65d2737b9a39a.png",
-    "w": "Pokemon",
+    "w": "Pokemon Expansion",
     "b": [
-      "mr"
+      "O",
+      "mr",
+      "ge"
     ],
-    "s": "https://i.pinimg.com/originals/7c/65/0d/7c650dde15f3d32fe4a65d2737b9a39a.png"
+    "s": "https://i.pinimg.com/originals/7c/65/0d/7c650dde15f3d32fe4a65d2737b9a39a.png",
+    "d": "2/Johto"
   },
   {
     "u": 12836,
     "n": "Togepi",
     "t": 4,
     "i": "[n]__togepi_pokemon_and_2_more__5b941cccebce7499baeeb6b6e1bb0c63.png",
-    "w": "Pokemon",
+    "w": "Pokemon Expansion",
     "b": [
-      "mr"
+      "O",
+      "mr",
+      "ge"
     ],
-    "s": "https://cdn.donmai.us/original/5b/94/__togepi_pokemon_and_2_more__5b941cccebce7499baeeb6b6e1bb0c63.png"
+    "s": "https://cdn.donmai.us/original/5b/94/__togepi_pokemon_and_2_more__5b941cccebce7499baeeb6b6e1bb0c63.png",
+    "d": "2/Johto"
   },
   {
     "u": 12840,
     "n": "Mareep",
     "t": 4,
     "i": "[n]__mareep_pokemon_drawn_by_kenko__1a83cd2dfe1f8f7b7cbd9266ca9e70df.png",
-    "w": "Pokemon",
+    "w": "Pokemon Expansion",
     "b": [
-      "mr"
+      "O",
+      "mr",
+      "ge"
     ],
-    "s": "https://cdn.donmai.us/original/1a/83/__mareep_pokemon_drawn_by_kenko__1a83cd2dfe1f8f7b7cbd9266ca9e70df.png"
+    "s": "https://cdn.donmai.us/original/1a/83/__mareep_pokemon_drawn_by_kenko__1a83cd2dfe1f8f7b7cbd9266ca9e70df.png",
+    "d": "2/Johto"
   },
   {
     "u": 12843,
@@ -123227,10 +123784,12 @@
       "dr",
       "id",
       "fm",
+      "sl",
       "fn",
       "rs",
       "tc",
-      "cm"
+      "cm",
+      "pm"
     ]
   },
   {
@@ -131546,6 +132105,7 @@
       "st",
       "cl",
       "dr",
+      "id",
       "ur",
       "sc",
       "di",
@@ -132142,6 +132702,7 @@
     "w": "Nasuverse",
     "b": [
       "F",
+      "C",
       "P",
       "mt",
       "cl",
@@ -136902,8 +137463,8 @@
     "u": 12389,
     "n": "Jet the Hawk",
     "t": 6,
-    "i": "58116145ee5704efe4c95b8f0d130bed.jpg",
-    "s": "https://e621.net/post/show/718274",
+    "i": "https://imgur.com/rylITHxl.jpg",
+    "s": "https://imgur.com/rylITHx.jpg",
     "w": "Sonic",
     "b": [
       "M",
@@ -137144,11 +137705,15 @@
     "u": 12404,
     "n": "Lien Da",
     "t": 5,
-    "i": "e7ce60a52b19a772889cf6988130a9dc.jpg",
-    "s": "https://e621.net/posts/908728",
+    "i": "https://imgur.com/w2vjhf8l.jpg",
+    "s": "https://imgur.com/w2vjhf8.jpg",
     "w": "Sonic",
     "b": [
-      "F"
+      "F",
+      "hr",
+      "cb",
+      "sa",
+      "cm"
     ]
   },
   {
@@ -138492,7 +139057,13 @@
     "b": [
       "F",
       "dh",
-      "sr"
+      "en",
+      "sr",
+      "gn",
+      "nd",
+      "ar",
+      "cm",
+      "ha"
     ],
     "in": "https://lotus.paheal.net/_images/7b2731adfba92c9920587334d370b513/4361451%20-%20Marina_Ida%20Octoling%20Off_the_Hook%20Rizdraws%20Splatoon%20Splatoon_2.jpg"
   },
@@ -138506,8 +139077,11 @@
     "w": "Splatoon",
     "b": [
       "F",
+      "mu",
       "dh",
-      "sr"
+      "sr",
+      "ar",
+      "cm"
     ]
   },
   {
@@ -138521,7 +139095,9 @@
     "b": [
       "F",
       "dh",
-      "sr"
+      "sr",
+      "ar",
+      "cm"
     ]
   },
   {
@@ -138534,7 +139110,9 @@
     "b": [
       "F",
       "dh",
-      "sr"
+      "sr",
+      "ar",
+      "cm"
     ],
     "in": "https://tulip.paheal.net/_images/8101162fb30c2124a095326e07b1b667/4571063%20-%20Callie%20Inkling%20Rizdraws%20Splatoon%20Squid_Sisters.jpg"
   },
@@ -138972,7 +139550,7 @@
     "u": 5327,
     "n": "Chantique",
     "t": 4,
-    "i": "[n]Chantique_full.jpg",
+    "i": "https://i.imgur.com/6GSAl5Il.jpg",
     "w": "Star Wars",
     "d": "Old Republic",
     "b": [
@@ -138984,7 +139562,7 @@
       "al",
       "cm"
     ],
-    "s": "https://static.wikia.nocookie.net/starwars/images/8/84/Chantique_full.jpg"
+    "s": "https://i.imgur.com/6GSAl5I.jpg"
   },
   {
     "u": 5304,
@@ -141173,7 +141751,7 @@
   {
     "u": 4484,
     "n": "Dr. Lillian Margaliss",
-    "t": 2,
+    "t": 4,
     "i": "https://i.imgur.com/3iAu7QAl.jpg",
     "w": "Subverse",
     "b": [
@@ -145372,8 +145950,10 @@
     "b": [
       "F",
       "C",
+      "cl",
       "ps",
       "py",
+      "ct",
       "al",
       "cm"
     ],
@@ -150005,7 +150585,8 @@
     "b": [
       "F"
     ],
-    "in": "https://pictures.hentai-foundry.com/w/WildBattery/975704/WildBattery-975704-Commission_-_Bridgette.jpg"
+    "in": "https://pictures.hentai-foundry.com/w/WildBattery/975704/WildBattery-975704-Commission_-_Bridgette.jpg",
+    "d": "TDI (2007)"
   },
   {
     "u": 10389,
@@ -150029,7 +150610,8 @@
       "F",
       "ml"
     ],
-    "in": "https://pictures.hentai-foundry.com/p/Phillip-the-2/902544/Phillip-the-2-902544-Courtney.png"
+    "in": "https://pictures.hentai-foundry.com/p/Phillip-the-2/902544/Phillip-the-2-902544-Courtney.png",
+    "d": "TDI (2007)"
   },
   {
     "u": 10391,
@@ -150078,7 +150660,8 @@
       "cl",
       "ar"
     ],
-    "in": "https://cdn.donmai.us/sample/40/e6/__gwen_total_drama_drawn_by_blanclauz__sample-40e61554253e3c586fc7eb89b8fa6d7b.jpg"
+    "in": "https://cdn.donmai.us/sample/40/e6/__gwen_total_drama_drawn_by_blanclauz__sample-40e61554253e3c586fc7eb89b8fa6d7b.jpg",
+    "d": "TDI (2007)"
   },
   {
     "u": 10396,
@@ -150090,7 +150673,8 @@
     "b": [
       "F",
       "is"
-    ]
+    ],
+    "d": "TDI (2007)"
   },
   {
     "u": 10397,
@@ -150100,8 +150684,10 @@
     "s": "https://i.imgur.com/jdapUDy.jpg",
     "w": "Total Drama Island",
     "b": [
-      "F"
-    ]
+      "F",
+      "mi"
+    ],
+    "d": "TDI (2007)"
   },
   {
     "u": 10398,
@@ -158437,6 +159023,7 @@
     "b": [
       "F",
       "C",
+      "P",
       "st",
       "hr",
       "mt",
@@ -160225,8 +160812,6 @@
       "F",
       "cl",
       "ml",
-      "ps",
-      "ip",
       "sl",
       "sa"
     ]
@@ -161244,8 +161829,8 @@
     "u": 11009,
     "n": "Mary Sioux",
     "t": 5,
-    "i": "sample_2652ca33d9238439405c93452087ea9b.jpg",
-    "s": "https://chan.sankakucomplex.com/post/show/13503199",
+    "i": "https://i.imgur.com/6qC1qINl.jpg",
+    "s": "https://i.imgur.com/6qC1qIN.jpg",
     "w": "Youjo Senki",
     "b": [
       "F",

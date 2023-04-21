@@ -17,7 +17,6 @@
           <a href="http://paheal.net" target="_blank" rel="noopener noreferrer">Paheal</a>
           <a href="https://www.furaffinity.net/" target="_blank" rel="noopener noreferrer">Furaffinity</a>
           <a href="https://www.reddit.com/" target="_blank" rel="noopener noreferrer">Reddit</a>
-          <a href="https://imgur.com" target="_blank" rel="noopener noreferrer">Imgur</a>
         </div>
       </Note>
       <Note type="warning" title="R63 images">

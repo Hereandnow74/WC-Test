@@ -24,6 +24,7 @@
         >
           {{ item.flavor || item }}
           <fa-solid:check v-if="findIndex(boughtList, (item.flavor ? { flavor: item.flavor } : { target: item })) !== -1" class="text-green-500" />
+          <fa-solid:check v-else-if="boughtList.includes(item)" class="text-green-500" />
         </div>
       </div>
     </div>

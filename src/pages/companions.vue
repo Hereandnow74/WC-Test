@@ -168,7 +168,7 @@
         <div class="hidden md:block">
           {{ sortedResults.length }} results
         </div>
-        <Button class="ml-auto md:ml-0" label="Add Character" size="Small" @click="() => (editMode = false, toggleShowAddCharacter())" />
+        <Button class="ml-auto md:ml-0" label="Add Character" size="Small" @click="addNewChar" />
       </div>
       <div v-else class="">
         Loading... <span class="inline-block text-xl"><eos-icons:bubble-loading /></span>
@@ -551,6 +551,12 @@ function clearAndResetWorld() {
   maxTier.value = 13
   if (companionsList.value)
     companionsList.value.scrollTop = 0
+}
+
+function addNewChar() {
+  editMode.value = false
+  characterToEdit.value = {}
+  toggleShowAddCharacter()
 }
 
 </script>

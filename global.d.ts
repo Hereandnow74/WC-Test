@@ -150,6 +150,43 @@ interface SearchRequest {
   page?: number
 }
 
+interface ServerBuild {
+  id: string
+  title: string
+  name: string
+  author: string
+  desc: string
+  published: boolean
+  build: object
+  bindingName: string
+  originName: string
+  characterName: string
+  intensity: string[]
+  loan: number
+  creditBalance: number
+  creditsSpent: number
+  customImages: boolean
+  dlc: boolean
+  retinue: {
+    name: string
+    tier: number
+    tags: string[]
+    state: string
+  }[]
+  retinueNotes: boolean
+  challenges: string[]
+  tags: string[]
+  likes?: number
+  createdAt: string
+  updatedAt: string
+}
+
+interface SearchBuild extends Partial<ServerBuild> {
+  sortBy?: string // Example: likes:desc or likes:asc
+  limit?: number
+  page?: number
+}
+
 declare global {
 }
 export {
@@ -164,4 +201,6 @@ export {
   Freebie,
   Heritage,
   SearchRequest,
+  ServerBuild,
+  SearchBuild,
 }

@@ -7,8 +7,7 @@
     <img
       v-if="perk.image && settings.perkImages"
       ref="perkImg"
-      class="rounded object-cover object-contain w-full object-center"
-      :style="{'height': `${(perkImg?.clientWidth || 576) * 288/576}px`}"
+      class="rounded object-cover object-contain w-full object-center h-[288px]"
       :src="PLACEHOLDER_IMAGE"
       :data-src="perk.image"
       :alt="perk.title"

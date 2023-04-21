@@ -1,7 +1,8 @@
-import { SearchRequest } from 'global'
+import { SearchBuild, SearchRequest, ServerBuild } from 'global'
 import { _loginToServer, _logoutFromServer, _postRegisterInfoToEndpoint, _refreshTokens, _sendVerificationEmail, _verifyEmail } from './authLogic'
 import { _searchForCharacters, _recalculateLikesOnServer, _getLikesByUid, _getCharactersFromServer, _rebaseCharactersToServer } from './charactersLogic'
 import { _updateUserLikes, _updateUserInfo, _getUserFromServer } from './userLogic'
+import { _createBuildInDB, _searchForBuilds } from './buildsLogic'
 
 // const SERVER_URL = 'http://localhost:3000'
 const SERVER_URL = 'https://interactive-apps.net'
@@ -26,3 +27,7 @@ export const recalculateLikesOnServer = () => _recalculateLikesOnServer(SERVER_U
 export const getLikesByUid = (uidArr: number[]) => _getLikesByUid(SERVER_URL, API_VERSION, uidArr)
 export const getCharactersFromServer = () => _getCharactersFromServer(SERVER_URL, API_VERSION)
 export const rebaseCharactersToServer = () => _rebaseCharactersToServer(SERVER_URL, API_VERSION)
+
+// Builds
+export const createBuildInDB = (build: ServerBuild) => _createBuildInDB(SERVER_URL, API_VERSION, build)
+export const searchForBuilds = (request: SearchBuild) => _searchForBuilds(SERVER_URL, API_VERSION, request)
