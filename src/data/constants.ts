@@ -135,6 +135,7 @@ export const rulesList = [
   { title: 'arrangedSpecial', title2: 'Special Arranged Match Rules' },
   { title: 'NasuDLC', title2: 'Nasuverse DLC rules' },
   { title: 'specific', title2: 'Setting Specific Rules' },
+
 ]
 
 export const waifusThatHasPerk = [...waifu_perks, ...DLCwaifu_perks]
@@ -263,7 +264,7 @@ export const waifuTags = {
   os: { tag: 'Onee-san', category: 'Personality', short: 'os', effect: '', desc: 'Personality type that always takes care of others.', color: 'bg-teal-500 text-black' },
   ci: { tag: 'Chuuni', category: 'Personality', short: 'ci', effect: '', desc: 'Early teens who have grandiose delusions and desperately want to stand out, convincing themselves they have hidden knowledge or secret powers.', color: 'bg-teal-500 text-black' },
   gi: { tag: 'Genki', category: 'Personality', short: 'gi', effect: '', desc: 'A lively, energetic and almost uncontrollable personality.', color: 'bg-teal-500 text-black' },
-  ge: { tag: 'Generic', category: 'Utility', short: 'ge', effect: '', desc: 'For generic entries like pokemons, MGE monster girls, etc.', color: 'bg-[#d3d3d3] text-black' },
+  ge: { tag: 'Generic', category: 'Utility', short: 'ge', effect: '', desc: 'For generic entries like pokemons, MGE monster girls, etc. Should have the same gender tag as on image.', color: 'bg-[#d3d3d3] text-black' },
   nc: { tag: 'Necromancer', category: 'Occupation', short: 'nc', effect: '', desc: 'Able to reanimate but not technically resurrect the dead.', style: { background: 'linear-gradient(90deg, rgba(10,23,13,1) 0%, rgba(48,109,63,1) 50%, rgba(10,23,13,1) 100%)', color: '#fff' } },
   cs: { tag: 'Custom', category: 'Utility', short: 'cs', effect: '', desc: 'Looks and gender can be customized at purchase. (Usually RPG protagonists)', color: 'bg-[#7656de] text-white' },
   sg: { tag: 'Ship-girl', category: 'Race', short: 'sg', effect: '', desc: 'Female Waifu featuring design elements of a ride/anthropomorphization of a ride.', style: { background: 'linear-gradient(0deg, rgba(125,103,233,1) 0%, rgba(41,248,236,1) 100%)', color: '#000' } },

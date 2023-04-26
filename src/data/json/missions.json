@@ -1,6 +1,309 @@
 [
   
   {
+    "reward": 500,
+    "image": "https://i.kym-cdn.com/photos/images/original/000/959/021/297.jpg",
+    "author": "Anonmoose",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Better Evil Pieces",
+    "loca": "High School DxD",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": 250,
+        "type": "Credits",
+        "value": "None of your servants are people from canon."
+      },
+      {
+        "reward": 500,
+        "type": "Credits",
+        "value": "All of your servants were Humans."
+      },
+      {
+        "reward": 1,
+        "type": "IMG Tickets",
+        "value": "All of your servants were quite weak, or mentally ill in some way before being given a class card"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "From Birth/drop in you will need to build your own Peerage"
+      },
+      {
+        "value": "Any power has to follow in World Rules or not be usable."
+      },
+      {
+        "value": "No Foreign Waifus/Husbandos are allowed in this world."
+      },
+      {
+        "value": "Mission is completed when you become number one in the rating games"
+      },
+      {
+        "value": "Given the 7 standard classes, you are Automatically given Ruler for yourself"
+      },
+      {
+        "value": "No above tier 7 people can be given a class card by you. If so, they will be downgraded to tier 7 until this mission is complete"
+      },
+      {
+        "value": "May only bind people that you have surpassed in the rating game leaderboards or your own servants"
+      },
+      {
+        "value": "You must be tier 8 or below, if you are above you will be limited to tier 8"
+      },
+      {
+        "value": "Servants must be humanoid for the rating games battles, a example that would not be okay would be a dragon to have a saber class card and not use a sword!"
+      }
+    ],
+    "budget": 100,
+    "desc": "One of our clients has determined that chess for devil games and reincarnation is pretty stupid! So they have seen fit to grab the 7 default class cards from the nasuverse/fate (Saber, Archer, Lancer, Rider, Caster, Berserker, Assassin) and want to see them in action in DxD. They have made a bet with Ajuka and want to see if they stand up against the evil pieces currently in use. Prove Ajuka wrong by taking first place in the rating games ranking with the cards!",
+    "uid": "mcZNk"
+  },
+  {
+    "reward": "Instant Unlocking of the next World.",
+    "image": "https://geekireland.com/wp-content/uploads/2021/12/AC_Key-Art_feat-Assassins-Creed-Symphonic-Adventure_Poster_20212012_6PM_CET.jpg",
+    "author": "Zaralann",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Nothing is true... Everything is permitted...",
+    "loca": "Assassin's Creed",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "Beginning of 'Assassin's Creed: Origins'.",
+        "type": "Other",
+        "value": "'Assassin's Creed: Odyssey' Completed."
+      },
+      {
+        "reward": "Beginning of 'Assassin's Creed: Valhalla'.",
+        "type": "Other",
+        "value": "'Assassin's Creed: Origins' Completed."
+      },
+      {
+        "reward": "Beginning of 'Assassin's Creed'.",
+        "type": "Other",
+        "value": "'Assassin's Creed: Valhalla' Completed."
+      },
+      {
+        "reward": "Beginning of 'Assassin's Creed II'.",
+        "type": "Other",
+        "value": "'Assassin's Creed' Completed."
+      },
+      {
+        "reward": "Beginning of 'Assassin's Creed: Brotherhood'.",
+        "type": "Other",
+        "value": "'Assassin's Creed II' Completed."
+      },
+      {
+        "reward": "Beginning of 'Assassin's Creed: Revelations'.",
+        "type": "Other",
+        "value": "'Assassin's Creed: Brotherhood' Completed."
+      },
+      {
+        "reward": "Beginning of 'Assassin's Creed IV: Black Flag'.",
+        "type": "Other",
+        "value": "'Assassin's Creed: Revelations' Completed."
+      },
+      {
+        "reward": "Beginning of 'Assassin's Creed: Rogue'.",
+        "type": "Other",
+        "value": "'Assassin's Creed IV: Black Flag' Completed."
+      },
+      {
+        "reward": "Beginning of 'Assassin's Creed III'.",
+        "type": "Other",
+        "value": "'Assassin's Creed: Rogue' Completed."
+      },
+      {
+        "reward": "Beginning of 'Assassin's Creed III: Liberation'.",
+        "type": "Other",
+        "value": "'Assassin's Creed III' Completed."
+      },
+      {
+        "reward": "Beginning of 'Assassin's Creed: Unity'.",
+        "type": "Other",
+        "value": "'Assassin's Creed III: Liberation' Completed."
+      },
+      {
+        "reward": "Beginning of 'Assassin's Creed: Syndicate'",
+        "type": "Other",
+        "value": "'Assassin's Creed: Unity' Completed."
+      },
+      {
+        "reward": "New World Unlocked.",
+        "type": "Other",
+        "value": "'Assassin's Creed: Syndicate' Completed."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You will enter 'Assassin's Creed'[DR5] and will take Protagonist's place, all logical/continuation issues would be adjusted."
+      },
+      {
+        "value": "You must purchase [Added Potential](5C) for this World."
+      },
+      {
+        "value": "You will arrive into 'Assassin's Creed: Odyssey' at the start of the Game."
+      },
+      {
+        "value": "To not exceed the time of the Mission the Events would follow the sequences presented within the Game, for the durations of the Mission the 'Timeskips' within the Game would be provided by the Company."
+      },
+      {
+        "value": "Time is Fluid within the World for the duration of the Mission, stepping out of it either for your Pocket Dimension or another World would put the Events on 'Pause' so using such methods to avoid Events or obstacles would not work."
+      },
+      {
+        "value": "Time is Fluid within other Worlds for the duration of the Mission, putting the Events on 'Pause' while you're within this World during the Mission, it does not affect the Pocket Dimension."
+      },
+      {
+        "value": "A limited mount of 'Game Logic' is provided by the Company, certain Mechanics within the World would function in similar way as they did in the Game."
+      },
+      {
+        "value": "Progress of unlocking of the new World would be frozen for the duration of the Mission, finishing it would instantly unlock the nexy World if Travel Perks are pruchased."
+      },
+      {
+        "value": "Binding/Selling a Boss/Mini-Boss counts as Defeating them, same for 'Mini-Games' against others."
+      },
+      {
+        "value": "You will only take places of Protagonists of the 'Past', not 'Modern'."
+      }
+    ],
+    "budget": 5,
+    "desc": "To Rromote Peace one has to Commit Murder... To Open the Minds of men one has to Obey to Rules... To Reveal the Danger of Blind Faith one has to Practice It themselves... Contraditions and the irony of one's life as an Assassin... Would you, O' Contractor, know of such a Path? Would you dare to walk it? We, at the Company, need someone to discover the History and the Path of those contradictory truths lost to Time and Lies, this is your Mission.",
+    "uid": "kTgDh"
+  },
+  {
+    "reward": "Instant Unlocking of the next World.",
+    "image": "https://www.candb.com/site/candb/images/artwork/realm-of-the-dragonborn_skyrim_bethesda.jpg",
+    "author": "Zaralann",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Born with the Draon's Heart...",
+    "loca": "The Elder Scrolls",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "New World Unlocked.",
+        "type": "Other",
+        "value": "'The Elder Scrolls V: Skyrim' including 'Dawnguard', 'Hearthfire' and 'Dragonborn' Comleted."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You will enter 'The Elder Skrolls'[DR8] and will take Dragonborn's place, all logical/continuation issues would be adjusted."
+      },
+      {
+        "value": "You must purchase [Added Potential](5C) for this World."
+      },
+      {
+        "value": "You will arrive into 'The Elder Scrolls V: Skyrim' at the start of the Game."
+      },
+      {
+        "value": "To not exceed the time of the Mission the Events would follow the sequences presented within the Game, for the durations of the Mission the 'Timeskips' within the Game would be provided by the Company."
+      },
+      {
+        "value": "Time is Fluid within the World for the duration of the Mission, stepping out of it either for your Pocket Dimension or another World would put the Events on 'Pause' so using such methods to avoid Events or obstacles would not work."
+      },
+      {
+        "value": "Time is Fluid within other Worlds for the duration of the Mission, putting the Events on 'Pause' while you're within this World during the Mission, it does not affect the Pocket Dimension."
+      },
+      {
+        "value": "A limited mount of 'Game Logic' is provided by the Company, certain Mechanics within the World would function in similar way as they did in the Game."
+      },
+      {
+        "value": "Progress of unlocking of the new World would be frozen for the duration of the Mission, finishing it would instantly unlock the nexy World if Travel Perks are pruchased."
+      },
+      {
+        "value": "Binding/Selling a Boss/Mini-Boss counts as Defeating them, same for 'Mini-Games' against others."
+      }
+    ],
+    "budget": 5,
+    "desc": "O' Contractor, Rejoyce! You have been Chosen, Blessed and now you're more than you ever were before! What does it make you? What does it mean? Your Mission is to be the one who resolves the Events of Skyrim, a task so tall that many perished on their way to such a goal! But we, at the Company, have confidence in you that you can overcome such Legendary Journey...",
+    "uid": "wABAs"
+  },
+  {
+    "reward": "Instant Unlocking of the next World.",
+    "image": "https://static1.srcdn.com/wordpress/wp-content/uploads/2022/11/FromSoftwares-seven-soulsborne-games.jpg",
+    "author": "Zaralann",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Gods, Kings, Men, Souls...",
+    "loca": "Soulsborne",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "Beginning of 'Dark Souls' as Chosen Undead.",
+        "type": "Other",
+        "value": "'Demon's Souls' Completed."
+      },
+      {
+        "reward": "Beginning of 'Dark Souls II' as Bearer of the Curse.",
+        "type": "Other",
+        "value": "'Dark Souls' Completed."
+      },
+      {
+        "reward": "Beginning of 'Dark Souls III' as Ashen One.",
+        "type": "Other",
+        "value": "'Dark Souls II' Completed."
+      },
+      {
+        "reward": "Beginning of 'Bloodborne' as The Hunter.",
+        "type": "Other",
+        "value": "'Dark Souls III' Completed."
+      },
+      {
+        "reward": "Beginning of 'Sekiro: Shadows Die Twice' as Sekiro.",
+        "type": "Other",
+        "value": "'Bloodborne' Completed."
+      },
+      {
+        "reward": "Beginning of 'Elden Ring' as The Tarnished.",
+        "type": "Other",
+        "value": "'Sekiro: Shadows Die Twice' Completed."
+      },
+      {
+        "reward": "New World Unlocked.",
+        "type": "Other",
+        "value": "'Elden Ring' Completed."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You will enter 'Demon's Souls'[DR9] and will take Protagonist's place, all logical/continuation issues would be adjusted."
+      },
+      {
+        "value": "You must purchase [Added Potential](5C) for each New World, 'Demons's Souls', 'Dark Souls', 'Bloodbourne', 'Sekiro: Shadows Die Twice' and 'Elden Ring'."
+      },
+      {
+        "value": "You will arrive into 'Demon's Souls' at the start of the Game."
+      },
+      {
+        "value": "To not exceed the time of the Mission the Events would follow the sequences presented within the Game, for the durations of the Mission the 'Timeskips' within the Game would be provided by the Company."
+      },
+      {
+        "value": "Time is Fluid within the World for the duration of the Mission, stepping out of it either for your Pocket Dimension or another World would put the Events on 'Pause' so using such methods to avoid Events or obstacles would not work."
+      },
+      {
+        "value": "Time is Fluid within other Worlds for the duration of the Mission, putting the Events on 'Pause' while you're within this World during the Mission, it does not affect the Pocket Dimension."
+      },
+      {
+        "value": "A limited mount of 'Game Logic' is provided by the Company, certain Mechanics within the World would function in similar way as they did in the Game."
+      },
+      {
+        "value": "Progress of unlocking of the new World would be frozen for the duration of the Mission, finishing it would instantly unlock the nexy World if Travel Perks are pruchased."
+      },
+      {
+        "value": "Binding/Selling a Boss/Mini-Boss counts as Defeating them, same for 'Mini-Games' against others."
+      }
+    ],
+    "budget": 25,
+    "desc": "A path painted red with blood... A road rotten and slowly falling apart... Skies filled with flames... For how long one can stand on the sideline and do nothing? We, the Company, assign you with the task to take over the role of the one who would rbing Salvation and Ruination to these lands, O' Contractor!",
+    "uid": "pBLHS"
+  },
+  {
     "reward": "A personal demiplane separate from your own pocket space that is a fully functioning recreation of the games with the use of the company app. This includes semi-procedural maps, Campfire, Crows, Hooks, Pallets, Generators, Chests, Lockers, and Exit Gates.",
     "image": "https://i.redd.it/33ak9du0jon71.jpg",
     "author": "BucketRat907",
@@ -90,17 +393,18 @@
     "rewardType": "Other",
     "source": "",
     "title": "Evil Always Finds a Way...",
+    "uid": "xcPPb",
     "loca": "Overlord (Western)",
     "lewd": false,
     "scope": "Grand",
     "objectives": [
       {
-        "reward": "Beginning of 'Overlord' as the Third Overlord.",
+        "reward": "Beginning of 'Overlord'.",
         "type": "Other",
         "value": "'Overlord: Dark Legend' Completed."
       },
       {
-        "reward": "Beginning of 'Overlord II' as the Fourth Overlord.",
+        "reward": "Beginning of 'Overlord II'.",
         "type": "Other",
         "value": "'Overlord' Completed."
       },
@@ -112,7 +416,7 @@
     ],
     "conditions": [
       {
-        "value": "You will enter 'Overlord'[DR5] and will take First Overlord's place, all logical/continuation issues would be adjusted."
+        "value": "You will enter 'Overlord'[DR5] and will take Protagonist's place, all logical/continuation issues would be adjusted."
       },
       {
         "value": "You must purchase [Added Potential](5C) for this World."
@@ -140,8 +444,7 @@
       }
     ],
     "budget": 5,
-    "desc": "Evil... It never vanishes, it retreats and Grows and Evolves and then Returns stronger than ever. Being such Evil cannot be something that one can be without time and effort. Can you be such an Evil? Can you become the Evil that vannot be Vanquished? O' Contractor, the Evil of the Overlord is yours now... Do as you will, your Mission is to simply Succeed.",
-    "uid": "xcPPb"
+    "desc": "Evil... It never vanishes, it retreats and Grows and Evolves and then Returns stronger than ever. Being such Evil cannot be something that one can be without time and effort. Can you be such an Evil? Can you become the Evil that vannot be Vanquished? O' Contractor, the Evil of the Overlord is yours now... Do as you will, your Mission is to simply Succeed."
   },
   {
     "reward": "Instant Unlocking of the next World.",
@@ -150,17 +453,18 @@
     "rewardType": "Other",
     "source": "",
     "title": "A Fable of Your Own...",
+    "uid": "WtNwq",
     "loca": "Fable",
     "lewd": false,
     "scope": "Grand",
     "objectives": [
       {
-        "reward": "Beginning of 'Fable II' as Hero of Bower Lake.",
+        "reward": "Beginning of 'Fable II'.",
         "type": "Other",
         "value": "'Fable' Completed."
       },
       {
-        "reward": "Beginning of 'Fable III' as Hero of Brightwall.",
+        "reward": "Beginning of 'Fable III'.",
         "type": "Other",
         "value": "'Fable II' Completed."
       },
@@ -172,7 +476,7 @@
     ],
     "conditions": [
       {
-        "value": "You will enter 'Fable'[DR5] and will take Hero's place, all logical/continuation issues would be adjusted."
+        "value": "You will enter 'Fable'[DR5] and will take Protagonist's place, all logical/continuation issues would be adjusted."
       },
       {
         "value": "You must purchase [Added Potential](5C) for this World."
@@ -200,8 +504,7 @@
       }
     ],
     "budget": 5,
-    "desc": "Heroes aren't born, they're Forged... Would you see yourself laying on the Anvil of the World? Do you think you can Survive as a Hero? Let's see how much of it would be allowed to pass, a Fable of your own is what takes Time to Write, so we at the Company would provide you with a Tepestry for your Path, O' Contractor.",
-    "uid": "WtNwq"
+    "desc": "Heroes aren't born, they're Forged... Would you see yourself laying on the Anvil of the World? Do you think you can Survive as a Hero? Let's see how much of it would be allowed to pass, a Fable of your own is what takes Time to Write, so we at the Company would provide you with a Tepestry for your Path, O' Contractor."
   },
   {
     "reward": 50,
@@ -796,6 +1099,7 @@
     "rewardType": "Credits",
     "source": "",
     "title": "Studying the Blade",
+    "uid": "Qrxtb",
     "loca": "Star Wars",
     "lewd": false,
     "scope": "Standard",
@@ -835,8 +1139,7 @@
       }
     ],
     "budget": 140,
-    "desc": "The Lightsaber - arguably one of the coolest weapons ever created. It's something many people have dreamed of wielding. \nWell, since you've chosen to become a Force Wielder it would be a complete shame if you didn't learn how to use this weapon. What sort of Jedi or Sith doesn't know how to use their Lightsaber???? \n\nObjective: Completely master 1 traditional Lightsaber form. Being proficient in it is not enough. You MUST achieve complete mastery of this form and be recognized as a master by your teacher(s). \n\nThe 7 forms are:\nForm I: Shii-Cho (The base form, Famous Users: Meetra Surik)\nForm II: Makashi (Famous users: Count Dooku)\nForm III: Soresu (Famous users: Obi-Wan Kenobi)\nForm IV: Ataru (Famous users: Yoda, Qui-Gon Jinn)\nForm V: Shien/Djem So (Famous users: Anakin Skywalker)\nForm VI: Niman (Famous users: Exar Kun)\nForm VII: Juyo/Vaapad (Famous users: Darth Sidious/ Mace Windu)",
-    "uid": "Qrxtb"
+    "desc": "The Lightsaber - arguably one of the coolest weapons ever created. It's something many people have dreamed of wielding.  \n\nWell, since you've chosen to become a Force Wielder it would be a complete shame if you didn't learn how to use this weapon. What sort of Jedi or Sith doesn't know how to use their Lightsaber????  \n  \nObjective: Completely master 1 traditional Lightsaber form. Being proficient in it is not enough. You MUST achieve complete mastery of this form and be recognized as a master by your teacher(s).  \n  \nThe 7 forms are:\nForm I: Shii-Cho (The base form, Famous Users: Meetra Surik)\nForm II: Makashi (Famous users: Count Dooku)\nForm III: Soresu (Famous users: Obi-Wan Kenobi)\nForm IV: Ataru (Famous users: Yoda, Qui-Gon Jinn)\nForm V: Shien/Djem So (Famous users: Anakin Skywalker)\nForm VI: Niman (Famous users: Exar Kun)\nForm VII: Juyo/Vaapad (Famous users: Darth Sidious/ Mace Windu)"
   },
   {
     "reward": 200,
@@ -1494,6 +1797,7 @@
     "rewardType": "Companions",
     "source": "",
     "title": "Not Invincible, but Inevitable",
+    "uid": "oQYkZ",
     "loca": "RWBY",
     "lewd": false,
     "scope": "Standard",
@@ -1530,15 +1834,14 @@
         "value": "Save Jaune Arc from mortal danger."
       },
       {
-        "value": "Cement Pyrrha's legacy not just as a Huntress or Champion, but as a bonified Legend"
+        "value": "Cement Pyrrha's legacy not just as a Huntress or Champion, but as a bona fide Legend"
       },
       {
         "value": "Never let the Company's involvement be know: To the world, Niko's has risen from the dead by the Grace of the Brothers itself(Beings with Omniscient are except)"
       }
     ],
     "budget": 270,
-    "desc": "Pyrrha Nikos believed in Destiny. That belief pushed her towards her sacrifice.\nWe here the Company have long given Destiny multiple middle fingers, and this won't be any different.\nYou will be inserted into the world exactly 30 days (720 hours) after Nikos's death as a Walk-in for her. Your mission being to not just wrap up the girl's regrets, defeat her killer and protect her friends, but to do so in a way in which it seems any opposition placed against you was destined to lose to you.",
-    "uid": "oQYkZ"
+    "desc": "Pyrrha Nikos believed in Destiny. That belief pushed her towards her sacrifice.\nWe here the Company have long given Destiny multiple middle fingers, and this won't be any different.\nYou will be inserted into the world exactly 30 days (720 hours) after Nikos's death as a Walk-in for her. Your mission being to not just wrap up the girl's regrets, defeat her killer and protect her friends, but to do so in a way in which it seems any opposition placed against you was destined to lose to you."
   },
   {
     "reward": 3,
@@ -2228,27 +2531,28 @@
   },
   {
     "reward": "Heaven and the Grigori will unite under your rule as the new God King of Heaven and Avalon, with all Angels becoming Familiars, letting you raise the Fallen back to White Winged Angels. Heaven itself becomes part of your Dimensional Plane.",
-    "image": "",
+    "image": "https://cdn.donmai.us/original/74/1c/741c10a7accc4b3bef4376cbd192a540.png",
     "author": "Grafian",
     "rewardType": "Other",
     "source": "",
     "title": "The King Who Was Promised",
+    "uid": "XvFAa",
     "loca": "High School DxD",
     "lewd": false,
     "scope": "Grand",
     "objectives": [
       {
-        "reward": "Template Stack of Artoria Lily(Nasuverse). Caliburn merges with the Noble Phantasm Caliburn.",
+        "reward": "Template Stack of Artoria Lily (Nasuverse). Caliburn merges with the Noble Phantasm Caliburn.",
         "type": "Perks",
         "value": "Gain ownership of the local version of Caliburn."
       },
       {
-        "reward": "Template Stack of Saber Artoria(Nasuverse). Excalibur is 'reforged' by merging with the Excalibur Noble Phantasm.",
+        "reward": "Template Stack of Saber Artoria (Nasuverse). Excalibur is 'reforged' by merging with the Excalibur Noble Phantasm.",
         "type": "Perks",
         "value": "Gather all Excalibur Shards as the rightful successor to King Arthur."
       },
       {
-        "reward": "Template Stack of Lancer Artoria(Nasuverse). True Longinus merges with the Rhongomyniad Noble Phantasm.",
+        "reward": "Template Stack of Lancer Artoria (Nasuverse). True Longinus merges with the Rhongomyniad Noble Phantasm.",
         "type": "Perks",
         "value": "Kill Cao Cao in single combat and take the True Longinus from him."
       },
@@ -2263,17 +2567,17 @@
         "value": "Either Kill or Capture the White Dragon Emperor/Empress Vali Lucifer."
       },
       {
-        "reward": "Template Stack of Caster Fairy Morgan(Nasuverse) for Le Fay.",
+        "reward": "Template Stack of Caster Fairy Morgan (Nasuverse) for Le Fay.",
         "type": "Perks",
-        "value": "The original Morgan Le Fay set in the motion the Fall of Camelot. Prevent this happening to you and Capture your sister, Le Fay Pendragon, as your Waifu(not just a Familiar)."
+        "value": "The original Morgan Le Fay set in the motion the Fall of Camelot. Prevent this happening to you and Capture your sister, Le Fay Pendragon, as your Waifu (not just a Familiar)."
       },
       {
-        "reward": "Mash Kyrielight(Nasuverse) as Demi-Servant Galahad.",
+        "reward": "Mash Kyrielight (Nasuverse) as Demi-Servant Galahad.",
         "type": "Companions",
         "value": "Recruit twelve members for your Knights of the Round Table, the thirteenth spot will be filled by the best Kouhai, Mash Kyrielight as the Demi-Servant Galahad, fully Bound as your Waifu."
       },
       {
-        "reward": "Choose 1: Elemental Shroud(Light), OR Elemental Shroud(Void).",
+        "reward": "Choose 1: Elemental Shroud (Light), OR Elemental Shroud (Void).",
         "type": "Perks",
         "value": "Kill Kokabiel, the Fallen Angel of the Stars, during his attack on Kuoh."
       },
@@ -2285,7 +2589,7 @@
       {
         "reward": "The Heavenly Hosts will, begrudgingly, recognise you as Gabriel's husband(largely due to Bindings not letting her Fall).",
         "type": "Other",
-        "value": "Gain the earnest love of the Seraph Gabriel(and thus Capture her), the most beautiful woman in Heaven and give her the power to restore the Heaven System, with your help as the holder of the True Longinus(Rhongomyniad)."
+        "value": "Gain the earnest love of the Seraph Gabriel (and thus Capture her), the most beautiful woman in Heaven and give her the power to restore the Heaven System, with your help as the holder of the True Longinus (Rhongomyniad)."
       }
     ],
     "conditions": [
@@ -2315,8 +2619,7 @@
       }
     ],
     "budget": 0,
-    "desc": "High School DxD's Arthur Pendragon is overall a rather pathetic character, an insult to the name of King Arthur! The Client of this Mission wants to see a more satisfying version, which is where you come in, Contractor!<br><br>Reincarnate(Insert) as Arthur Pendragon(High School DxD) and do the name of your new ancestor proud! ",
-    "uid": "XvFAa"
+    "desc": "High School DxD's Arthur Pendragon is overall a rather pathetic character, an insult to the name of King Arthur! The Client of this Mission wants to see a more satisfying version, which is where you come in, Contractor!<br><br>Reincarnate(Insert) as Arthur Pendragon(High School DxD) and do the name of your new ancestor proud! "
   },
   {
     "reward": 400,
@@ -14644,30 +14947,35 @@
     "uid": "XXFtz"
   },
   {
-    "rewardType": "Credits",
     "reward": "50",
-    "source": "",
-    "budget": 0,
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/1018578938370465925/Screenshot_2.jpg",
+    "author": "irugaa0",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "An Influent Voice.",
+    "uid": "yffVB",
+    "loca": "The Elder Scrolls",
+    "lewd": false,
+    "scope": "Standard",
     "objectives": [
       {
+        "reward": "One character with the Tag ruler up to Tier-3",
         "type": "Companions",
-        "value": "Become a Thane of a hold",
-        "reward": "One character with the Tag ruler up to Tier-3"
+        "value": "Become a Thane of a hold"
       },
       {
+        "reward": "One perk of your choice",
         "type": "Perks",
-        "value": "Become a Thane in all holds",
-        "reward": "One perk of your choice"
+        "value": "Become a Thane in all holds"
       },
       {
-        "value": "Become a Jarl of a hold",
+        "reward": "One Template stacking of a character with the Tag ruler up to Tier-4",
         "type": "Perks",
-        "reward": "One Template stacking of a character with the Tag ruler up to Tier-4"
+        "value": "Become a Jarl of a hold"
       },
       {
-        "type": "Perks",
         "reward": "One Template stacking of a character with the Tag Mage up to Tier-5",
+        "type": "Perks",
         "value": "Become the Arch-Mage of the College"
       },
       {
@@ -14676,20 +14984,16 @@
         "value": "Become the leader of The Companions"
       },
       {
-        "value": "Become the High King of Skyrim",
         "reward": "One Template stacking of a character with the Tag ruler up to Tier-7 that is not a deity.",
-        "type": "Perks"
+        "type": "Perks",
+        "value": "Become the High King of Skyrim"
       },
       {
-        "value": "Become the Emperor",
+        "reward": "Template stacking 1 & 2 of either the last dragonborn or miraak ",
         "type": "Perks",
-        "reward": "Template stacking 1 & 2 of either the last dragonborn or miraak "
+        "value": "Become the Emperor"
       }
     ],
-    "desc": "The company issued a new mission, go to the world of Skyrim, and establish a base of power and influence for yourself.",
-    "title": "An Influent Voice.",
-    "scope": "Standard",
-    "loca": "The Elder Scrolls V: Skyrim",
     "conditions": [
       {
         "value": ": All talents but Soul and Martial talents are unavailable for the duration of this mission."
@@ -14707,8 +15011,8 @@
         "value": "You must become influent enough to be Known in at least three holds."
       }
     ],
-    "author": "irugaa0",
-    "uid": "yffVB"
+    "budget": 0,
+    "desc": "The company issued a new mission, go to the world of Skyrim, and establish a base of power and influence for yourself."
   },
   {
     "uid": "suiFg",
@@ -16596,33 +16900,33 @@
     "loca": "Pokemon"
   },
   {
+    "reward": "500 Credits",
+    "image": "https://images.hdqwalls.com/wallpapers/skyrim-wallpaper-4k-bu.jpg",
+    "author": "CyrusFallen",
+    "rewardType": "Credits",
     "source": "",
+    "title": "Treasure Hunter",
+    "uid": "KxtZu",
+    "loca": "The Elder Scrolls",
+    "lewd": false,
+    "scope": "Grand",
     "objectives": [
       {
         "reward": "TS1 (Alduin) for you, 1 level of Dragon Herritage for the Dragonborn",
-        "value": "Assist the Dragonborn in defeating Alduin and recieve an honest confession from them(You can't capture them or use overt mind control but subtle lures are fine)",
-        "type": "Perks"
-      },
-      {
         "type": "Perks",
-        "value": "Assist Serana in stopping the Tyranny of the Sun and recieve an honest confession from them(You can't capture them or use overt mind control but subtle lures are fine)",
-        "reward": "TS1 (Harkon) for you, a free capture of Valerica"
+        "value": "Assist the Dragonborn in defeating Alduin and recieve an honest confession from them(You can't capture them or use overt mind control but subtle lures are fine)"
       },
       {
+        "reward": "TS1 (Harkon) for you, a free capture of Valerica",
+        "type": "Perks",
+        "value": "Assist Serana in stopping the Tyranny of the Sun and recieve an honest confession from them(You can't capture them or use overt mind control but subtle lures are fine)"
+      },
+      {
+        "reward": "50 Credits",
         "type": "Credits",
-        "value": "Acquire Auriel's Bow",
-        "reward": "50 Credits"
+        "value": "Acquire Auriel's Bow"
       }
     ],
-    "scope": "Grand",
-    "uid": "KxtZu",
-    "desc": "Ha, Skyrim! The quintessential fantasy experience! Elves, Dragons, Magic, Booty!<br>This time, you're being sent there with a simple task, one familiar to many a Skyrim player. Hoard!<br>You'll be dropped just outside Riverwood, a month before the destruction of Helgen, and you have to acquire as many \"artifacts\" as you can.",
-    "rewardType": "Credits",
-    "image": "https://images.hdqwalls.com/wallpapers/skyrim-wallpaper-4k-bu.jpg",
-    "loca": "The Elder Scrolls(Events of Skyrim)",
-    "title": "Treasure Hunter",
-    "budget": 690,
-    "reward": "500 Credits",
     "conditions": [
       {
         "value": "Acquire the Elder Scroll (Dragon)"
@@ -16634,7 +16938,8 @@
         "value": "Acquire the Elder Scroll (Sun)"
       }
     ],
-    "author": "CyrusFallen"
+    "budget": 690,
+    "desc": "Ha, Skyrim! The quintessential fantasy experience! Elves, Dragons, Magic, Booty!<br>This time, you're being sent there with a simple task, one familiar to many a Skyrim player. Hoard!<br>You'll be dropped just outside Riverwood, a month before the destruction of Helgen, and you have to acquire as many \"artifacts\" as you can."
   },
   {
     "rewardType": "Credits",
@@ -22250,27 +22555,6 @@
     "source": "",
     "title": "Destruction of the Uzumaki",
     "uid": "9Z5Hc"
-  },
-  {
-    "author": "Cypmaster",
-    "budget": 50,
-    "conditions": [
-      {
-        "value": "The Dragons must be bound as familiars before immediately being sold to the company"
-      },
-      {
-        "value": "The sold Dragons sold must be alive and with their body, minds, and souls mostly intact. Injured is permitted, missing limbs or materials are not."
-      }
-    ],
-    "desc": "The Company needs new Dragon Heritage materials. Capture and Sell the dragons that you find roaming in the lands of Skyrim",
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990976781030916146/the-elder-scrolls-v-skyrim-dragon-wallpaper-preview.jpg",
-    "loca": "The Elder Scrolls V: Skyrim",
-    "objectives": [],
-    "reward": "All Dragons sold to the company, even those that are much lesser known, grant 50 Credits",
-    "scope": "Quick",
-    "source": "",
-    "title": "Sell: Dragons",
-    "uid": "HZb0e"
   },
   {
     "author": "irugaa0",

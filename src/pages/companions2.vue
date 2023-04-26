@@ -8,7 +8,7 @@
       >
         <div class="flex items-center w-full md:w-auto">
           <Input
-            v-model="search"
+            v-model.lazy="search"
             placeholder="Character name"
             class="flex-grow md:flex-grow-0"
           />
@@ -16,7 +16,7 @@
         </div>
         <div class="flex items-center w-full md:w-auto">
           <AnythingInput
-            v-model="worldName"
+            v-model.lazy="worldName"
             placeholder="World name"
             class="flex-grow md:flex-grow-0"
             :list="[startingWorld.worldName, ...jumpChain.map(x => x.worldName)]"

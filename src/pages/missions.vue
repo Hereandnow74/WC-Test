@@ -77,7 +77,7 @@ import { Mission } from 'global'
 import { find, groupBy, sample } from 'lodash-es'
 import { onBeforeRouteUpdate } from 'vue-router'
 
-import { toggleShowAddMission, showAddMission } from '~/logic'
+import { toggleShowAddMission, showAddMission, useTooltips } from '~/logic'
 import { MissionGenerator } from '~/logic/missionsGen'
 import { useChargenStore } from '~/store/chargen'
 import { usePlayStore } from '~/store/play'
@@ -236,5 +236,4 @@ const displayedMissions = computed(() => {
   }
   return infiniteMissions.value
 })
-
 </script>

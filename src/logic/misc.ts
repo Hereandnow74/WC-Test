@@ -1,5 +1,5 @@
 import Fuse from 'fuse.js'
-import { random, groupBy, sampleSize, findIndex, sample, isNumber, xor } from 'lodash-es'
+import { random, groupBy, sampleSize, findIndex, sample, isNumber, xor, compact } from 'lodash-es'
 import tippy from 'tippy.js'
 import { DBWorld } from 'global'
 import { allWorldsNoCondition, ALL_DLC_PERK_TITLES, CHAR_COSTS, getAllChars, shownValue, useAllChars } from '../data/constants'
@@ -9,6 +9,8 @@ import { clearAll, isBuildImage } from '../logic'
 import { confirmDialog } from '../logic/dialog'
 import { useChallenges } from '../store/challenges'
 import { usePlayStore } from '../store/play'
+
+import { TOOLTIPS, LINKS, LINKS_REG, QUERIES } from '~/data/constants'
 
 const { allCharsComp, allCharsObject } = useAllChars()
 
@@ -344,4 +346,16 @@ export function buildImage() {
 export function randomString(n = 5): string {
   const chars = 'QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm1234567890'
   return new Array(n).fill(0).reduce(a => a += sample(chars), '')
+}
+
+export function populateDesc(desc: string) {
+  return desc.replace(LINKS_REG,
+    (full, ...all) => {
+      all = compact(all)
+      if (LINKS.value[all[0]] !== undefined) { return `<router-link @click.stop class="dark:text-blue-300 text-blue-600 hover:underline" :to="{ path: '/${LINKS.value[all[0]]}', hash: '#${all[0]}'${QUERIES.value[all[0]] ? `, query: {q: '${QUERIES.value[all[0]]}'}` : ''}}">${full}</router-link>` }
+      else {
+        return `<span data-tippy-content="${TOOLTIPS[all[0] as keyof typeof TOOLTIPS]}"
+        class="text-green-600 dark:text-green-300">${full}</span>`
+      }
+    })
 }

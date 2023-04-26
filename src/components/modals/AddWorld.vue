@@ -20,7 +20,7 @@
         <span v-if="errors.additional" class="text-xs">{{ errors.additional }}</span>
         <TextArea
           v-model.trim="additional"
-          placeholder="Some specific change in the world so it would fit the Company theme more."
+          placeholder="See official Setting Specific Rules for examples. Adding a lot of AU stuff here will increase the chance of it not being accepted."
         />
       </Foldable>
       <Foldable title="Conditions" :is-open="isOpen" class="flex flex-col min-h-0">
@@ -29,33 +29,38 @@
             <fluent:add-12-filled />
           </div>
         </template>
-        <div class="overflow-y-auto flex flex-col gap-2">
-          <div v-for="condition, i in condition" :key="i" class="flex gap-2">
-            <Input
-              v-model.trim="condition.name"
-              :placeholder="'Condition #' + i"
-              :error-message="errors[`condition[${i}].name`]"
-            />
-            <NumberInput
-              v-model.number="condition.rating"
-              label="Rating"
-              :min="1"
-              :max="10"
-              :error-message="errors[`condition[${i}].rating`]"
-            />
-            <div
-              class="cursor-pointer inline-block leading-none pt-0.5"
-              text="gray-500 dark:gray-300 hover:red-500 xl"
-              @click="removeCondition(i)"
-            >
-              <fluent:delete-20-filled />
+        <div class="overflow-y-auto flex flex-col gap-3">
+          <div v-for="cnd, i in condition" :key="i">
+            <div class="flex gap-2">
+              <Input
+                v-model.trim="cnd.name"
+                :placeholder="'Condition #' + i"
+                :error-message="errors[`condition[${i}].name`]"
+                class="flex-grow"
+              />
+              <NumberInput
+                v-model.number="cnd.rating"
+                label="Rating"
+                :min="1"
+                :max="10"
+                :error-message="errors[`condition[${i}].rating`]"
+              />
+              <div
+                class="cursor-pointer inline-block leading-none pt-0.5"
+                text="gray-500 dark:gray-300 hover:red-500 xl"
+                @click="removeCondition(i)"
+              >
+                <fluent:delete-20-filled />
+              </div>
             </div>
+            <Toggle v-model="cnd.official" title="From Unstable spreadsheet" :class="{'dark:text-yellow-300': cnd.official}" label="Is official condition" />
           </div>
           <div v-if="condition.length === 0" class="text-center">
             empty
           </div>
         </div>
       </Foldable>
+      <Input v-if="proposeGlobal" v-model.trim="nickname" placeholder="Your nickname" :error-message="errors.nickname" name="login" />
       <div class="flex gap-2">
         <Checkbox v-model="localSave" label="Local save" />
         <Checkbox v-model="proposeGlobal" label="Propose to global" />
@@ -73,6 +78,7 @@ import { toFormValidator } from '@vee-validate/zod'
 import NumberInput from '../basic/NumberInput.vue'
 import { useStore } from '~/store/store'
 import { proposeWorld, randomString, toggleShowAddWorld } from '~/logic'
+import { useSaves } from '~/store/saves'
 
 const props = defineProps({
   editMode: {
@@ -92,16 +98,18 @@ const isOpen = ref(false)
 const localSave = ref(true)
 const proposeGlobal = ref(false)
 const { userWorlds, localUserWorlds } = useStore()
+const { userNickname } = useSaves()
 
 const schema = toFormValidator(
   zod.object({
     worldName: zod.string().nonempty('World name is required'),
     rating: zod.number().min(1, { message: 'Minimum World rating is 1' }).max(10, { message: 'Maximum World level is 10' }),
-    image: zod.string().url({ message: 'Must be a valid URL' }).min(1, { message: 'Image is required' }).max(256, { message: 'Maximum length is 256 chars' }).optional().or(zod.literal('')),
+    image: zod.string().url({ message: 'Must be a valid URL' }).min(1, { message: 'Image is required' }).max(256, { message: 'Maximum length is 256 chars' }),
     additional: zod.string(),
     condition: zod.object({
       name: zod.string().nonempty('Condition is required'),
       rating: zod.number().min(1, { message: 'Minimum World rating is 1' }).max(10, { message: 'Maximum World level is 10' }),
+      official: zod.boolean().optional(),
     }).array(),
   }),
 )
@@ -113,14 +121,18 @@ const { errors, handleSubmit } = useForm({
     worldName: props.world.worldName || '',
     additional: props.world.additional || '',
     image: props.world.image || '',
+    nickname: userNickname.value ? userNickname.value : '',
   },
 })
+
+console.log(props.world.condition)
 
 const { value: worldName } = useField<string>('worldName')
 const { value: rating } = useField<number>('rating')
 const { value: additional } = useField<string>('additional')
 const { value: image } = useField<string>('image')
 const { value: condition } = useField<any[]>('condition')
+const { value: nickname } = useField<string>('nickname')
 
 function addCondition() {
   isOpen.value = true
@@ -135,10 +147,16 @@ function removeCondition(index: number) {
 }
 
 const addWorld = handleSubmit((values) => {
-  const world = { uid: randomString(7), ...values }
+  const world = { ...values }
+  if (!props.editMode)
+    world.uid = randomString(6)
+  else
+    world.uid = props.world.uid
+
   if (proposeGlobal.value)
     proposeWorld({ ...world, date: new Date().toString() })
 
+  world.uid = randomString(7)
   if (localSave.value) localUserWorlds.value.push(world)
   else userWorlds.value.push(world)
   toggleShowAddWorld()

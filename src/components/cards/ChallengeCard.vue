@@ -7,7 +7,7 @@
       v-if="challenge.image && settings.perkImages"
       ref="perkImg"
       class="rounded object-cover object-contain w-full object-center"
-      :style="{'height': `${(perkImg?.clientWidth || 576) * 288/576}px`}"
+      :style="{'aspect-ratio': `2/1`}"
       :src="PLACEHOLDER_IMAGE"
       :data-src="challenge.image"
       :alt="challenge.title"

@@ -6,6 +6,17 @@
       </h2>
       <div>
         <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          24 April 2023
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~45 new user submitted characters, new missions, new worlds, new DLC SWP</li>
+          <li>Processed all world submissions.</li>
+          <li>Slightly modified "Add World" form, now it require nickname and image and you can specify if condition is Official one.</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
           20 April 2023
         </h3>
         <ul class="list-decimal list-inside">

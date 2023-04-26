@@ -566,7 +566,6 @@ export const skyblockPerks = [
     image: '',
     whitelist: ['Skyblock'],
     cost: 50,
-    multiple: true,
     desc: `
     Purchasing this perk will install an app onto your Company Smart Device that allows you to control the weather and climate of your Skyblock. The controls are intuitive and robust and changes can range from small precise changes affecting an area roughly the same size as your starting block to broad changes that affect the entire Demiplane.
     <p>Weather patterns can be automated, randomized, or set on strict schedules of your choosing. Changes to an area’s base climate take time to come into effect, ranging from just a few hours and up to a week, depending on how much of a difference there is between the previous climate and the new one.</p>

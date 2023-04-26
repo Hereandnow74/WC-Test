@@ -79,7 +79,7 @@
         </div>
       </div>
       <span class="hidden md:block whitespace-nowrap">Results: <span class="text-blue-500">{{ worldsFiltered.length }}</span></span>
-      <Button size="Small" label="Add World" class="whitespace-nowrap" @click="() => (editMode = false, toggleShowAddWorld())" />
+      <Button size="Small" label="Add World" class="whitespace-nowrap" @click="() => (worldToEdit = {}, editMode = false, toggleShowAddWorld())" />
     </div>
     <div
       ref="worldWrapper"

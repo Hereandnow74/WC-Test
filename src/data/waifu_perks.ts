@@ -4218,6 +4218,26 @@ export const DLCwaifu_perks: WaifuPerk[] = [
     desc: 'The Previous Era was not able to overcome the Honkai, as such they pinned their hopes to the future, entrusting Kevin with Project STIGMA, even if he himself saw it as the worst solution.  In preparation for the plan\'s completion, Kevin underwent the Chimera surgery, granting him 100+ different types of Honkai Beast DNA\'s including but not limited to Garuda, Vishnu and Brahma. Kevin also gained the Authority of Finality with the help of Prometheus.\n\nWith this perk, the Authority will no longer be killing Kevin every second, granting him minor Time Manipulation abilities, as well as boost him to T9.',
     whitelist: [],
   },
+  {
+    uid: '8WnKn',
+    dlc: '|DarkShadow|',
+    dlcLink: '',
+    title: 'Dominion Code',
+    from: 'Generator Rex',
+    waifu: [
+      'Rex Salazar',
+    ],
+    waifuUID: [
+      6944446,
+    ],
+    tier: 8,
+    image: 'https://i.imgur.com/ksFvIfhl.jpg',
+    cost: 100,
+    discount: 0,
+    costT: 0,
+    desc: 'During the last moments of the events of the End Game, Rex reunited the Five Meta-Nanites, each containing a part of a singular Code that governs the Universe divided in five parts: Gravity, Matter, Anti-Matter, Energy, Space-Time, Elements of nature, and Technology.Fusing with them, he gains access to their full powers, giving him control over the very fabric of the Universe.Rex will always have this perk if captured during the events of the End Game, Part 2.',
+    whitelist: [],
+  },
 ]
 
 export const waifuPerksObject = [...DLCwaifu_perks, ...waifu_perks, ...(localPerks.value['Specific waifu perk'] || [])].reduce((a, x) => { a[x.uid] = x; return a }, {} as Record<string, WaifuPerk>)

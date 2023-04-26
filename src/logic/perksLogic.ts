@@ -403,8 +403,8 @@ export function talentAvailable(tlt: PerkFull): boolean {
     if (intersection(tlt.whitelist, allEffects.value).length >= (tlt.needed || tlt.whitelist.length))
       return true
     if (tlt.title === 'Inexhaustible'
-          && findIndex(talentPerks.value, { title: tlt.whitelist[0] }) !== -1
-          && findIndex(defensePerks.value, x => x.title === 'Soul Defense' && x.count && x.count >= 2) !== -1)
+      && findIndex(talentPerks.value, { title: tlt.whitelist[0] }) !== -1
+      && findIndex(defensePerks.value, x => x.title === 'Soul Defense' && x.count && x.count >= 2) !== -1)
       return true
   }
 
@@ -488,9 +488,9 @@ export function specificAvailable(perk: WaifuPerk): boolean {
     else
       return a.uid === b
   }).length
-        || perk.waifuUID.includes(startingOrigin.value.uid)
-        || perk.waifuUID.includes(startingOrigin.value?.perk?.uid)
-        || perk.waifuUID.includes(startingOrigin.value?.swap?.uid))
+    || perk.waifuUID.includes(startingOrigin.value.uid)
+    || perk.waifuUID.includes(startingOrigin.value?.perk?.uid)
+    || perk.waifuUID.includes(startingOrigin.value?.swap?.uid))
     return true
   return false
 }
@@ -509,14 +509,18 @@ export function chooseWaifuPerk(fullPerk: WaifuPerk, perk: Perk) {
 }
 
 export function buyAnyPerk(perkName: string, count = 1, cost = 0) {
+  const { allEffects } = useStore()
   const fullPerk = ALL_PERK_TITLES.value[perkName]
   const saveStore = ALL_PERK_STORES[fullPerk.category as keyof typeof ALL_PERK_STORES]
   if (saveStore) {
     const ind = findIndex(saveStore, { title: perkName })
-    if (ind === -1)
-      saveStore.push({ title: perkName, count, cost })
-    else
+    if (ind === -1) {
+      allEffects.value.push(perkName)
+      saveStore.push({ uid: fullPerk.uid, title: perkName, count, cost, tree: fullPerk.tree })
+    }
+    else {
       saveStore[ind].count ? saveStore[ind].count += 1 : saveStore[ind].count = 2
+    }
   }
   else {
     console.log('Can\'t buy this perk yet')
@@ -524,15 +528,17 @@ export function buyAnyPerk(perkName: string, count = 1, cost = 0) {
 }
 
 export function removeAnyPerk(perkName: string, count = 1) {
+  const { allEffects } = useStore()
   const fullPerk = ALL_PERK_TITLES.value[perkName]
   const saveStore = ALL_PERK_STORES[fullPerk.category as keyof typeof ALL_PERK_STORES]
   if (saveStore) {
     const ind = findIndex(saveStore, { title: perkName })
     if (ind !== -1) {
-      if (saveStore[ind].count && saveStore[ind].count >= count + 1)
-        saveStore[ind].count -= count
-      else
+      if (saveStore[ind].count && saveStore[ind].count >= count + 1) { saveStore[ind].count -= count }
+      else {
+        allEffects.value.splice(allEffects.value.indexOf(perkName), 1)
         remove(saveStore, { title: perkName })
+      }
     }
   }
 }

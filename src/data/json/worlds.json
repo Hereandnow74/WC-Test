@@ -6,12 +6,12 @@
       {
         "name": "Earth",
         "rating": 1,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Space",
         "rating": 5,
-        "a": "c"
+        "official": true
       }
     ],
     "image": "https://wallpapertag.com/wallpaper/full/6/f/d/762006-widescreen-to-love-ru-wallpaper-momo-1920x1200.jpg",
@@ -25,12 +25,12 @@
       {
         "name": "Standard",
         "rating": 1,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Anime (canon storyline)",
         "rating": 3,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Pokemon Legends Arceus",
@@ -39,7 +39,7 @@
       {
         "name": "Adventures/Special (manga)",
         "rating": 6,
-        "a": "c"
+        "official": true
       }
     ],
     "image": "https://w0.peakpx.com/wallpaper/484/959/HD-wallpaper-pokemon-dawn-pokemon-elaine-pokemon-girl-gloria-pokemon-hilda-pokemon-kris-pokemon-leaf-pokemon-lyra-pokemon-may-pokemon-selene-pokemon-serena-pokemon.jpg",
@@ -52,12 +52,12 @@
       {
         "name": "Within The Culture",
         "rating": 1,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Outside The Culture",
         "rating": 9,
-        "a": "c"
+        "official": true
       }
     ],
     "image": "https://www.edwardterry.co.uk/wp-content/uploads/escession.jpg",
@@ -70,7 +70,7 @@
       {
         "name": "Federation during peacetime",
         "rating": 2,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Dominion War",
@@ -83,7 +83,7 @@
       {
         "name": "Online",
         "rating": 7,
-        "a": "c"
+        "official": true
       }
     ],
     "image": "https://stevetobak.com/wp-content/uploads/2017/08/Star-Trek-Original-.jpg",
@@ -96,22 +96,22 @@
       {
         "name": "Modern developed countries",
         "rating": 2,
-        "a": "c"
+        "official": true
       },
       {
         "name": "19th century and earlier (no crisis)",
         "rating": 3,
-        "a": "c"
+        "official": true
       },
       {
         "name": "19th century and earlier (crisis)",
         "rating": 4,
-        "a": "c"
+        "official": true
       },
       {
         "name": "World Wars (Occupied Europe/Asia)",
         "rating": 4,
-        "a": "c"
+        "official": true
       }
     ],
     "image": "https://www.thoughtco.com/thmb/Hu5zhjuz2ArkwRwLUeu2A8kFZU8=/3000x2000/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-501586199x1-56aa28ca3df78cf772acace9.jpg",
@@ -130,17 +130,17 @@
       {
         "name": "Canon ver., Mamono territory",
         "rating": 2,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Canon ver., Order territory",
         "rating": 4,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Dark and Serious ver.",
         "rating": 6,
-        "a": "c"
+        "official": true
       }
     ],
     "image": "https://img01.enty.jp/uploads/entertainer/wallpaper/1622/Enty_.jpg",
@@ -154,22 +154,22 @@
       {
         "name": "No active crisis (Vivid, Vivid Strike)",
         "rating": 2,
-        "a": "c"
+        "official": true
       },
       {
         "name": "TOS",
         "rating": 4,
-        "a": "c"
+        "official": true
       },
       {
         "name": "A's",
         "rating": 4,
-        "a": "c"
+        "official": true
       },
       {
         "name": "StrikerS",
         "rating": 4,
-        "a": "c"
+        "official": true
       }
     ],
     "image": "https://static2.aniimg.com/upload/20170506/138/r/t/u/rtuDEF.jpg",
@@ -240,27 +240,27 @@
       {
         "name": "SG1/SGA modern Earth",
         "rating": 3,
-        "a": "c"
+        "official": true
       },
       {
         "rating": 4,
         "name": "Goa'uld controlled World",
-        "a": "c"
+        "official": true
       },
       {
         "name": "Pegasus Galaxy, Wraith Asleep",
         "rating": 4,
-        "a": "c"
+        "official": true
       },
       {
         "rating": 6,
         "name": "Pegasus Galaxy, Wraith Awake",
-        "a": "c"
+        "official": true
       },
       {
         "rating": 7,
         "name": "Ori Aware",
-        "a": "c"
+        "official": true
       }
     ],
     "image": "https://avatars.mds.yandex.net/i?id=f1722c9e9d53f77fa6ce9169c15246e7_l-5288772-images-thumbs&ref=rim&n=13&w=1280&h=720",
@@ -275,12 +275,12 @@
       {
         "name": "Outside Shinto Teito",
         "rating": 2,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Shinto Teito",
         "rating": 3,
-        "a": "c"
+        "official": true
       }
     ],
     "uid": "mqlul"
@@ -293,12 +293,12 @@
       {
         "name": "Post-Pledges (canon era)",
         "rating": 3,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Pre-Pledges (Zero era)",
         "rating": 9,
-        "a": "c"
+        "official": true
       }
     ],
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/993184663289991298/6e4dd558-5c67-465f-be02-abc5226900bb.jpg",
@@ -312,7 +312,7 @@
       {
         "name": "Show continuity",
         "rating": 3,
-        "a": "c"
+        "official": true
       },
       {
         "name": "House of the dragons",
@@ -335,12 +335,12 @@
       {
         "rating": 3,
         "name": "Standard",
-        "a": "c"
+        "official": true
       },
       {
         "rating": 4,
         "name": "Ultra Despair Girls, V3",
-        "a": "c"
+        "official": true
       }
     ],
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/992055776053047316/the-danganronpa-series-explained.jpg",
@@ -398,7 +398,7 @@
       {
         "name": "Omnic crisis ",
         "rating": 5,
-        "a": "c"
+        "official": true
       }
     ],
     "uid": "QxVgx"
@@ -420,12 +420,12 @@
       {
         "name": "The Last Airbender",
         "rating": 4,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Legend of Korra",
         "rating": 4,
-        "a": "c"
+        "official": true
       }
     ],
     "uid": "IXtM6"
@@ -451,12 +451,12 @@
       {
         "name": "Standard",
         "rating": 4,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Windstone Crisis",
         "rating": 7,
-        "a": "c"
+        "official": true
       }
     ],
     "image": "https://images4.alphacoders.com/696/thumb-1920-696063.jpg",
@@ -469,12 +469,12 @@
       {
         "name": "pre-SC1, post-HotS",
         "rating": 4,
-        "a": "c"
+        "official": true
       },
       {
         "name": "During SC1, SC2",
         "rating": 6,
-        "a": "c"
+        "official": true
       }
     ],
     "image": "https://bnetproduct-a.akamaihd.net/3b/88ac7d7f76df6b86c5449f71bc212b7c-prod-mobile-bg.jpg",
@@ -489,72 +489,72 @@
       {
         "rating": 4,
         "name": "Star Wars (Disney)- Empire Era",
-        "a": "c"
+        "official": true
       },
       {
         "rating": 4,
         "name": "Star Wars (Disney)- Original Trilogy",
-        "a": "c"
+        "official": true
       },
       {
         "rating": 4,
         "name": "Star Wars (Legends)- Core and Colonies (No Galactic Conflict)",
-        "a": "c"
+        "official": true
       },
       {
         "rating": 5,
         "name": "Star Wars (Disney)- Prequels Trilogy (Disney)",
-        "a": "c"
+        "official": true
       },
       {
         "rating": 5,
         "name": "Star Wars (Legends)- Expansion Territory to Outer Rim (No Galactic Conflict)",
-        "a": "c"
+        "official": true
       },
       {
         "name": "Star Wars (Legends)- Core and Colonies (Galactic Conflict)",
         "rating": 5,
-        "a": "c"
+        "official": true
       },
       {
         "rating": 5,
         "name": "Star Wars (Legends)- Core and Colonies (Vong Galactic Conflict)",
-        "a": "c"
+        "official": true
       },
       {
         "rating": 6,
         "name": "Star Wars (Disney)- Sequel Trilogy",
-        "a": "c"
+        "official": true
       },
       {
         "name": "Star Wars (Legends)- Unknown Regions and Beyond the Outer Rim (No Galactic Conflict)",
         "rating": 6,
-        "a": "c"
+        "official": true
       },
       {
         "rating": 6,
         "name": "Star Wars (Legends)- Expansion Territory to Outer Rim (Galactic Conflict)",
-        "a": "c"
+        "official": true
       },
       {
         "name": "Star Wars (Legends)- Unknown Regions and Beyond the Outer Rim (Galactic Conflict)",
         "rating": 6,
-        "a": "c"
+        "official": true
       },
       {
         "rating": 6,
         "name": "Star Wars (Legends)- Expansion Territory to Outer Rim (Vong Galactic Conflict)",
-        "a": "c"
+        "official": true
       },
       {
         "name": "Star Wars (Legends)- Unknown Regions and Beyond the Outer Rim (Vong Galactic Conflict)",
         "rating": 8,
-        "a": "c"
+        "official": true
       },
       {
         "rating": 8,
         "name": "Star Wars (Legends)- Stranded in Deep Space",
-        "a": "c"
+        "official": true
       }
     ],
     "uid": "1mAux"
@@ -567,17 +567,17 @@
       {
         "name": "Start of canon",
         "rating": 4,
-        "a": "c"
+        "official": true
       },
       {
         "name": "post-Retirement",
         "rating": 5,
-        "a": "c"
+        "official": true
       },
       {
         "name": "pre-All Might",
         "rating": 6,
-        "a": "c"
+        "official": true
       }
     ],
     "image": "https://www.groundedreason.com/wp-content/uploads/2021/03/my_hero_academia-1024x576.png",
@@ -591,22 +591,22 @@
       {
         "name": "No active crisis",
         "rating": 4,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Shanxi incident",
         "rating": 5,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Rachni Wars",
         "rating": 6,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Reaper invasion",
         "rating": 9,
-        "a": "c"
+        "official": true
       }
     ],
     "image": "https://www.desktopbackground.org/download/1280x800/2015/06/11/962554_340-mass-effect-3-hd-wallpapers_1421x800_h.png",
@@ -620,12 +620,12 @@
       {
         "name": "TOS, Magia Record (in Kamihama)",
         "rating": 4,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Tart Magica",
         "rating": 5,
-        "a": "c"
+        "official": true
       }
     ],
     "image": "https://static2.aniimg.com/upload/20170614/779/Y/s/g/p=700/YsgGEF.jpg",
@@ -638,37 +638,32 @@
       {
         "name": "Zero",
         "rating": 4,
-        "a": "c"
-      },
-      {
-        "name": "Zero",
-        "rating": 4,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Plus",
         "rating": 5,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Original Series",
         "rating": 6,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Delta",
         "rating": 6,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Macross 7",
         "rating": 7,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Frontier",
         "rating": 7,
-        "a": "c"
+        "official": true
       }
     ],
     "additional": "Micronization: Zentraedi and Meltrandi characters are Microne (human)-sized by default. The presence of one will add a Micronization chamber to your Grand Manor, if you have one. Advanced Tempest Runes (Body) allows them, and any other member of our retinue who\u2019s used a Micronization chamber, to shift between Microne and Macrone forms on the fly. Body Tune-Up is enough to let Klan Klein maintain her adult figure while micronized. Additionally, all Zentraedi and Meltrandi combatants have a personal Pocket Space for their battlesuits. Battlesuits stored this way will automatically resize themselves to fit their wearer, regardless of whether the wearer is in Microne or Macrone form. Other: Mylene has her pet\u2026 tribble(?) Guvava as a familiar. We don\u2019t actually know what Guvava is, just that it\u2019s cute and fuzzy. Ranka has her squirrel-like pet Ai-kun as a familiar.",
@@ -682,17 +677,17 @@
       {
         "name": "AC 4",
         "rating": 3,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Standard",
         "rating": 4,
-        "a": "c"
+        "official": true
       },
       {
         "name": "AC 7",
         "rating": 5,
-        "a": "c"
+        "official": true
       }
     ],
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/992065296074539099/3293343_1200x675.png",
@@ -706,7 +701,7 @@
       {
         "name": "Books continuity",
         "rating": 4,
-        "a": "c"
+        "official": true
       }
     ],
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/992067899063808030/wallpapersden.com_a-song-of-ice-and-fire-got_3840x2160.jpg",
@@ -720,17 +715,17 @@
       {
         "name": "Akibahara",
         "rating": 4,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Yamato Server (not Akibahara)",
         "rating": 5,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Outside Yamato Server",
         "rating": 6,
-        "a": "c"
+        "official": true
       }
     ],
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/992067537472856176/log-horizon-featured.webp",
@@ -760,7 +755,7 @@
       {
         "name": "Link's Awakening",
         "rating": 4,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Four Swords",
@@ -769,7 +764,7 @@
       {
         "rating": 4,
         "name": "The Wind Walker",
-        "a": "c"
+        "official": true
       },
       {
         "name": "Four Swords Adventure",
@@ -786,7 +781,7 @@
       {
         "name": "Breath of the Wild",
         "rating": 5,
-        "a": "c"
+        "official": true
       },
       {
         "name": "The Legend of Zelda",
@@ -799,17 +794,17 @@
       {
         "name": "Ocarina of Time",
         "rating": 6,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Majora's Mask",
         "rating": 6,
-        "a": "c"
+        "official": true
       },
       {
         "rating": 6,
         "name": "Twilight Princess",
-        "a": "c"
+        "official": true
       }
     ],
     "image": "https://i.imgur.com/iXuJjfE.jpeg",
@@ -822,7 +817,7 @@
       {
         "name": "Canon era",
         "rating": 4,
-        "a": "c"
+        "official": true
       }
     ],
     "image": "https://i.pinimg.com/originals/a6/b7/ad/a6b7ad8a589cdb415458fadab5421e0a.png",
@@ -835,27 +830,27 @@
       {
         "name": "Mod: Red Flood",
         "rating": 4,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Mod: Red World",
         "rating": 4,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Mod: Thousand-Week Reich",
         "rating": 4,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Mod: The New Order",
         "rating": 5,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Mod: Equestria at War",
         "rating": 6,
-        "a": "c"
+        "official": true
       }
     ],
     "image": "https://cdn.vox-cdn.com/thumbor/37tWKRW_mYJ80shRfLgOYGlR4mY=/0x680:6000x3821/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/13759489/HOI4_ManTheGuns_Coverart.jpg",
@@ -892,12 +887,26 @@
     "uid": "lDvFy"
   },
   {
-    "rating": 4,
+    "uid": "HrsfUe",
+    "worldName": "Bioshock",
     "q": true,
-    "worldName": "Bioshock Infinite",
-    "additional": "Elizabeth\u2019s Tears are limited to the local multiverse surrounding wherever she happens to be at the time.",
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992070148150267995/69218453.jpg",
-    "uid": "N9yU7"
+    "rating": 4,
+    "image": "https://www.pcworld.com/wp-content/uploads/2023/04/bioshock-collection.jpg",
+    "additional": "Elizabeth’s Tears are limited to the local multiverse surrounding wherever she happens to be at the time.",
+    "condition": [
+      {
+        "name": "Bioshock",
+        "rating": 4
+      },
+      {
+        "name": "Bioshock 2",
+        "rating": 4
+      },
+      {
+        "name": "Bioshock Infinite",
+        "rating": 5
+      }
+    ]
   },
   {
     "rating": 4,
@@ -938,17 +947,17 @@
       {
         "name": "Third Age 3018 (War of the Ring)",
         "rating": 5,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Year of Trees 1497 (War of Jewels)",
         "rating": 8,
-        "a": "c"
+        "official": true
       },
       {
         "name": "First Age 500 (Gondolin)",
         "rating": 9,
-        "a": "c"
+        "official": true
       }
     ],
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/1008857253379571762/Lord-Of-The-Rings-Cartoon-Wallpapers-Free-Download.jpg",
@@ -962,12 +971,12 @@
       {
         "name": "Toussaint, peaceful regions",
         "rating": 5,
-        "a": "c"
+        "official": true
       },
       {
         "name": "prewar Northern Kingdoms, TW3",
         "rating": 6,
-        "a": "c"
+        "official": true
       }
     ],
     "uid": "m7q9o"
@@ -980,22 +989,22 @@
       {
         "name": "No active crisis",
         "rating": 5,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Events of Skyrim",
         "rating": 8,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Oblivion Crisis",
         "rating": 8,
-        "a": "c"
+        "official": true
       },
       {
         "name": "C0DA",
         "rating": 10,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Events of Morrowind ",
@@ -1019,7 +1028,7 @@
       {
         "name": "Four Seas",
         "rating": 5,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Four Blues",
@@ -1028,12 +1037,12 @@
       {
         "name": "Grand Line - Paradise",
         "rating": 6,
-        "a": "c"
+        "official": true
       },
       {
         "name": "New World",
         "rating": 7,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Gold Roger Era",
@@ -1064,7 +1073,7 @@
       {
         "name": "Start of canon",
         "rating": 5,
-        "a": "c"
+        "official": true
       }
     ],
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/992079536848117963/black-clover-anime-wiki.jpg",
@@ -1089,12 +1098,12 @@
       {
         "name": "Standard",
         "rating": 5,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Chernobog, Kazdel",
         "rating": 6,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Talos-II",
@@ -1119,7 +1128,7 @@
       {
         "name": "Taishou-era Japan",
         "rating": 5,
-        "a": "c"
+        "official": true
       }
     ],
     "uid": "na1wC"
@@ -1133,22 +1142,22 @@
       {
         "name": "Three Houses (pre-timeskip)",
         "rating": 4,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Awakening (present)",
         "rating": 5,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Three Houses (post-timeskip)",
         "rating": 5,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Fates (present)",
         "rating": 5,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Sacred Stones",
@@ -1165,7 +1174,7 @@
       {
         "name": "Awakening (Doomed Future)",
         "rating": 8,
-        "a": "c"
+        "official": true
       }
     ],
     "uid": "lMtJl"
@@ -1177,17 +1186,17 @@
       {
         "name": "pre-crystal",
         "rating": 5,
-        "a": "c"
+        "official": true
       },
       {
         "name": "during timeskip",
         "rating": 6,
-        "a": "c"
+        "official": true
       },
       {
         "name": "post-timeskip",
         "rating": 7,
-        "a": "c"
+        "official": true
       }
     ],
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/993187702625271828/746998.jpg",
@@ -1200,12 +1209,12 @@
       {
         "name": "The First",
         "rating": 6,
-        "a": "c"
+        "official": true
       },
       {
         "name": "The Source",
         "rating": 7,
-        "a": "c"
+        "official": true
       }
     ],
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/993189088888893520/aaed09359bcca1262f923b1c3519eab4.jpg",
@@ -1219,37 +1228,37 @@
     "condition": [
       {
         "name": "Canon Start (X777 to Tenrou Arc)",
-        "a": "c",
+        "official": true,
         "rating": 5
       },
       {
         "name": "Edolas World",
-        "a": "c",
+        "official": true,
         "rating": 5
       },
       {
         "name": "Post-Tenrou Arc to Second Timeskip",
-        "a": "c",
+        "official": true,
         "rating": 6
       },
       {
         "name": "Alvarez Arc",
-        "a": "c",
+        "official": true,
         "rating": 7
       },
       {
         "name": "Elentir World",
-        "a": "c",
+        "official": true,
         "rating": 7
       },
       {
         "name": "Hundred Years' Quest",
-        "a": "c",
+        "official": true,
         "rating": 8
       },
       {
         "name": "Dragon Civil War",
-        "a": "c",
+        "official": true,
         "rating": 8
       },
       {
@@ -1266,12 +1275,12 @@
       {
         "name": "Post Changes",
         "rating": 6,
-        "a": "c"
+        "official": true
       },
       {
         "rating": 7,
         "name": "WWII",
-        "a": "c"
+        "official": true
       }
     ],
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/992080712436039711/Wiki-background.jpg",
@@ -1285,12 +1294,12 @@
       {
         "rating": 5,
         "name": "Canon Orario",
-        "a": "c"
+        "official": true
       },
       {
         "rating": 7,
         "name": "Uncapped dungeon",
-        "a": "c"
+        "official": true
       }
     ],
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/992080838189649970/DanMachi.jpg",
@@ -1328,7 +1337,7 @@
       {
         "name": "2017 Show",
         "rating": 6,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Lords of Shadow",
@@ -1351,17 +1360,17 @@
       {
         "name": "No Crisis",
         "rating": 5,
-        "a": "c"
+        "official": true
       },
       {
         "rating": 6,
         "name": "Events of GS1",
-        "a": "c"
+        "official": true
       },
       {
         "name": "Events of GS2",
         "rating": 7,
-        "a": "c"
+        "official": true
       }
     ],
     "image": "https://images.nintendolife.com/e2b6d3fb1fd9a/1280x720.jpg",
@@ -1421,7 +1430,7 @@
       {
         "name": "Main story",
         "rating": 6,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Torna: The Golden Country",
@@ -1471,17 +1480,17 @@
       {
         "name": "SPAZ 1: Galactic Rim (pre-timeskip)",
         "rating": 6,
-        "a": "c"
+        "official": true
       },
       {
         "name": "SPAZ 1: Galactic Core (pre-timeskip)",
         "rating": 9,
-        "a": "c"
+        "official": true
       },
       {
         "name": "SPAZ 1: During- or post-timeskip",
         "rating": 9,
-        "a": "c"
+        "official": true
       }
     ],
     "image": "http://s01.riotpixels.net/data/e3/f1/e3f11076-6dc9-4417-8855-e444ee33fd69.jpg/screenshot.space-pirates-and-zombies.1920x1080.2011-08-15.69.jpg",
@@ -1494,7 +1503,7 @@
       {
         "name": "Start of canon",
         "rating": 6,
-        "a": "c"
+        "official": true
       }
     ],
     "image": "https://i.ytimg.com/vi/4_49VT0knok/maxresdefault.jpg",
@@ -1507,7 +1516,7 @@
       {
         "name": "Games verse",
         "rating": 6,
-        "a": "c"
+        "official": true
       }
     ],
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/992393071251705886/Resident.jpg",
@@ -1520,37 +1529,37 @@
     "additional": "Tohno Shiki has Len as a familiar. Aoko has White Len as a familiar. If you already have Len when you buy Shiki or White Len when you buy Aoko, you\u2019ll be refunded the appropriate familiars\u2019 full costs.<br><br>Body Tune-Up will cure Fiore\u2019s paralysis without requiring her to lose her Magic Circuits.<br><br>Rani VIII and the Extra version of Rin are both demi-Servants with Lu Bu and C\u00fa Chulainn, respectively, as they were in Last Encore. If you already have Saint Kiara, the T10 Devil Kiara purchase may instead apply as a waifu perk, giving her the abilities of either her Devil or hypothetical Saver versions (one or the other) with no changes to her personality.<br><br>All Olympian gods, including Aphrodite, Artemis, and Demeter, can change to their machine forms and have their divine nanomachines. For the purposes of Exit Stage Left and Rainbow Bridge, each of Singularities 1-7, the Pseudo-Singularities, the Servant Universe, and the Lostbelts count as separate worlds, so that completing each one unlocks a new world through our systems. This also includes some other major events, such as GUDAGUDA, SE.RA.PH, Ooku, and Imaginary Scramble. The primary Fate/Grand Order world will count as completed at the end of the Observer on Timeless Temple or (if the contractor arrives afterward) Cosmos in the Lostbelt arcs.    Pseudo-Servants and Other Alternates    The following pairs are mutually exclusive at chargen: Saint Kiara and Devil Kiara; Nero and Nero Alter; Medea and Medea Lily; Medusa and Gorgon. If you buy a Pseudo-Servant waifu perk at any time after you purchased or captured them, the Servant\u2019s memories and personality will seamlessly integrate into the host\u2019s, in much the same way as the Memoria perk or Extra and Substitute origins.    Not mutually exclusive: Kama and BB with any Sakura and each other; Ereshkigal and Space Ishtar with any Rin and each other; Sc\u00e1thach and Skadi; Carmilla and Elizabeth Bathory.",
     "condition": [
       {
-        "a": "c",
+        "official": true,
         "name": "Kara no Kyōkai",
         "rating": 6
       },
       {
-        "a": "c",
+        "official": true,
         "name": "Lord El-Melloi II's Case Files",
         "rating": 6
       },
       {
         "rating": 6,
-        "a": "c",
+        "official": true,
         "name": "Fate/Zero; Fate/Stay Night; Fate/Apocrypha"
       },
       {
-        "a": "c",
+        "official": true,
         "rating": 6,
         "name": "Fate/Kaleid Liner PRISMA☆ILLYA"
       },
       {
-        "a": "c",
+        "official": true,
         "rating": 7,
         "name": "Fate/Kaleid Liner PRISMA☆ILLYA(Miyu's World)"
       },
       {
         "rating": 7,
-        "a": "c",
+        "official": true,
         "name": "'Historical' settings"
       },
       {
-        "a": "c",
+        "official": true,
         "name": "Tsukihime/Kagetsu Tōya/Melty Blood",
         "rating": 7
       },
@@ -1559,12 +1568,12 @@
         "rating": 8
       },
       {
-        "a": "c",
+        "official": true,
         "name": "Notes",
         "rating": 8
       },
       {
-        "a": "c",
+        "official": true,
         "name": "Fate/Grand Order",
         "rating": 8
       },
@@ -1573,7 +1582,7 @@
         "rating": 8
       },
       {
-        "a": "c",
+        "official": true,
         "name": "Cosmos in the Lostbelt",
         "rating": 9
       }
@@ -1589,7 +1598,7 @@
       {
         "name": "Standard",
         "rating": 6,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Third Shinobi World War",
@@ -1598,7 +1607,7 @@
       {
         "name": "Kaguya or Otsutsuki active",
         "rating": 7,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Boruto: Naruto Next Generations",
@@ -1614,12 +1623,12 @@
       {
         "name": "No active crisis",
         "rating": 6,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Elder Dragons active",
         "rating": 7,
-        "a": "c"
+        "official": true
       }
     ],
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/992393519706673172/ss_3e430735c6f343a8c876859fe9d10da63c3111c0.1920x1080.jpg",
@@ -1640,12 +1649,12 @@
       {
         "name": "Earth",
         "rating": 6,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Hell",
         "rating": 8,
-        "a": "c"
+        "official": true
       }
     ],
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/992395333042712687/Chainsaw-Man-Manga-Is-Getting-a-Novel-With-Three-Unknown-Stories-1024x576.webp",
@@ -1658,12 +1667,12 @@
       {
         "name": "Pandora (no active Vault)",
         "rating": 6,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Pandora (active Vault)",
         "rating": 7,
-        "a": "c"
+        "official": true
       }
     ],
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/992394092833165322/71cggWMrPyL.jpg",
@@ -1677,7 +1686,7 @@
       {
         "name": "Standard",
         "rating": 6,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Human World",
@@ -1690,7 +1699,7 @@
       {
         "name": "Hueco Mundo",
         "rating": 8,
-        "a": "c"
+        "official": true
       },
       {
         "name": "1000 Years War",
@@ -1709,11 +1718,15 @@
     "rating": 6,
     "worldName": "League of Legends",
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/991004102836236338/Homepage_World_1.jpg",
-    "additional": "Anivia and Rek\u2019Sai can switch between humanoid and bestial forms.",
+    "additional": "Anivia and Rek'Sai can switch between humanoid and bestial forms.",
     "condition": [
       {
-        "name": "Arcane: League of Legends",
+        "name": "Arcane",
         "rating": 6
+      },
+      {
+        "name": "Ruination",
+        "rating": 8
       },
       {
         "name": "Void War",
@@ -1730,17 +1743,17 @@
       {
         "name": "Standard",
         "rating": 6,
-        "a": "c"
+        "official": true
       },
       {
         "name": "LNs 3-12",
         "rating": 7,
-        "a": "c"
+        "official": true
       },
       {
         "rating": 8,
         "name": "LNs 13-21",
-        "a": "c"
+        "official": true
       },
       {
         "name": "Great War",
@@ -1749,6 +1762,14 @@
       {
         "name": "Devil Civil War",
         "rating": 8
+      }, 
+      {
+        "name": "EX - Timeline",
+        "rating": 9
+      },
+      {
+        "name": "E×E - Timeline",
+        "rating": 10
       }
     ],
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/1016113656607559762/20523054.jpg",
@@ -1761,7 +1782,7 @@
       {
         "name": "First book",
         "rating": 6,
-        "a": "c"
+        "official": true
       }
     ],
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/994978426777776158/dune-sandworm.webp",
@@ -1866,12 +1887,12 @@
       {
         "name": "Illya\u2019s World (Start of Canon/2wei)",
         "rating": 6,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Miyu\u2019s World (3rei/Oath Under Snow)",
         "rating": 7,
-        "a": "c"
+        "official": true
       }
     ],
     "image": "https://wallpapercave.com/wp/wp1970972.jpg",
@@ -1910,12 +1931,12 @@
       {
         "name": "New",
         "rating": 8,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Old",
         "rating": 9,
-        "a": "c"
+        "official": true
       }
     ],
     "image": "https://cdna.artstation.com/p/assets/images/images/028/085/302/4k/nikola-matkovic-vampires-fall-origins-splash.jpg",
@@ -1932,7 +1953,7 @@
       {
         "name": "No active crisis",
         "rating": 7,
-        "a": "c"
+        "official": true
       },
       {
         "name": "During the Events of WoW 'The Burning Crusade'",
@@ -2017,7 +2038,7 @@
       {
         "name": "Sengoku Jidai",
         "rating": 7,
-        "a": "c"
+        "official": true
       }
     ],
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/992406281631572080/InuYasha-1-1024x576.webp",
@@ -2030,12 +2051,12 @@
       {
         "rating": 7,
         "name": "LNs 1-4",
-        "a": "c"
+        "official": true
       },
       {
         "rating": 9,
         "name": "LNs 5+",
-        "a": "c"
+        "official": true
       }
     ],
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/992405981126475826/that-time-i-got-reincarnated-as-a-slime.webp",
@@ -2054,12 +2075,12 @@
       {
         "name": "Gaeabrande",
         "rating": 7,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Ixphoria",
         "rating": 8,
-        "a": "c"
+        "official": true
       }
     ],
     "image": "https://image.tmdb.org/t/p/original/9P1M4rvya3mTSkIa6AsNTMygV1Y.jpg",
@@ -2072,32 +2093,36 @@
       {
         "name": "Post KH1",
         "rating": 7,
-        "a": "c"
+        "official": true
       },
       {
         "rating": 8,
         "name": "Post-BBS through KH1",
-        "a": "c"
+        "official": true
+      },
+      {
+        "rating": 8,
+        "name": "Birth By Sleep"
       },
       {
         "rating": 9,
         "name": "The Dark Realm",
-        "a": "c"
+        "official": true
       },
       {
         "rating": 10,
         "name": "Age of Fairy tales",
-        "a": "c"
+        "official": true
       },
       {
         "rating": 10,
         "name": "The Keyblade War",
-        "a": "c"
+        "official": true
       },
       {
         "rating": 10,
         "name": "Data Daybreak Town",
-        "a": "c"
+        "official": true
       }
     ],
     "additional": "Keyblade travel via the Lanes Between, and its counterpart in the Corridors of Darkness, both have unlimited multiversal range. Added Potential will guarantee the capacity to wield a Keyblade. While you have a Keyblade, you'll be able to interact with a World's Heart through its Keyhole, even outside the Kingdom Hearts Universe. These Keyholes will show up somewhere significant to the plot of that world. Use the same guidelines for a \"World\" as used for Exit Stage Left and Rainbow Bridge. If a Contractor is split into Heartless and Nobody, both versions of the Contractor get a copy of their Company Device. However, they must re- complete before they will be allowed to leave the Kingdom Hearts universe. This includes entering their Pocket Apartment, Dragon Cabin, or other personal Demiplanes. Purchased copies of Kairi come with a copy of Heart of Light. Once purchased or captured, Namin\u00e9's memory abilities will work on anyone, not just Sora or those connected to him.",
@@ -2111,22 +2136,22 @@
       {
         "name": "Elder Dragons asleep",
         "rating": 5,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Cantha pre-Jade Wind",
         "rating": 6,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Dragons awake",
         "rating": 7,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Several dragons awake",
         "rating": 8,
-        "a": "c"
+        "official": true
       }
     ],
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/992406942158954537/guild-wars-2-end-of-dragons-key-art.jpg",
@@ -2139,12 +2164,12 @@
       {
         "name": "Europa (peacetime)",
         "rating": 7,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Europa (wartime)",
         "rating": 8,
-        "a": "c"
+        "official": true
       }
     ],
     "image": "https://neverwasmag.com/wp-content/uploads/2019/03/Girl-Genius-scene.jpg",
@@ -2198,12 +2223,12 @@
       {
         "rating": 7,
         "name": "main series",
-        "a": "c"
+        "official": true
       },
       {
         "rating": 8,
         "name": "End, post-timeskip Rebuild",
-        "a": "c"
+        "official": true
       }
     ],
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/992407415301615636/Neon_Genesis_Evangelion__119__2614x1639-scaled.jpg",
@@ -2216,7 +2241,7 @@
       {
         "name": "Drakengard 3",
         "rating": 7,
-        "a": "c"
+        "official": true
       }
     ],
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/992407284200243300/d3p_artwork_1391603335.webp",
@@ -2284,12 +2309,12 @@
       {
         "name": "Anime",
         "rating": 8,
-        "a": "c"
+        "official": true
       },
       {
         "name": "XDU",
         "rating": 10,
-        "a": "c"
+        "official": true
       }
     ],
     "image": "https://www.thenerdmag.com/wp-content/uploads/2018/12/Symphogear_AXZ_Episode_3_20.png",
@@ -2308,12 +2333,12 @@
       {
         "name": "Cinematic Universe (no TVA)",
         "rating": 5,
-        "a": "c"
+        "official": true
       },
       {
         "name": "X-Men Evolution",
         "rating": 5,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Spectacular Earth-26496 (NYC)",
@@ -2322,17 +2347,17 @@
       {
         "name": "Animated Universe (90s cartoons)",
         "rating": 6,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Cinematic Universe (TVA present)",
         "rating": 6,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Big Hero Six (Earth-14123)",
         "rating": 7,
-        "a": "c"
+        "official": true
       },
       {
         "name": "2010s Marvel Animated Universe (Earth-12041)",
@@ -2341,7 +2366,7 @@
       {
         "name": "Mainline comics (Earth-616)",
         "rating": 8,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Ultimate Universe (Earth-1610)",
@@ -2367,27 +2392,27 @@
       {
         "name": "Pre-Second Eruption",
         "rating": 7,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Start of canon",
         "rating": 8,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Europe 1470 CE",
         "rating": 8,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Previous Era",
         "rating": 9,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Second Eruption",
         "rating": 9,
-        "a": "c"
+        "official": true
       }
     ],
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/992745692789481523/22_01_20_16a7a667f545c7cd368ce554c946bad7_960-1200x675-c-default.webp",
@@ -2407,7 +2432,7 @@
       {
         "name": "Permanent crisis",
         "rating": 8,
-        "a": "c"
+        "official": true
       }
     ],
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/993191616368103465/608737.jpg",
@@ -2420,7 +2445,7 @@
       {
         "name": "Permanent crisis",
         "rating": 8,
-        "a": "c"
+        "official": true
       }
     ],
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/994979355430240436/apps.27321.13731709347870779.c180b56b-3179-4d7e-83fd-6e902f537105.jpg",
@@ -2433,7 +2458,7 @@
       {
         "rating": 6,
         "name": "DCAU",
-        "a": "c"
+        "official": true
       },
       {
         "name": "Arrowverse",
@@ -2446,7 +2471,7 @@
       {
         "rating": 7,
         "name": "Young Justice",
-        "a": "c"
+        "official": true
       },
       {
         "name": "Teen Titans (Animated series)",
@@ -2463,12 +2488,12 @@
       {
         "rating": 8,
         "name": "Mainline comics",
-        "a": "c"
+        "official": true
       },
       {
         "rating": 9,
         "name": "Injustice",
-        "a": "c"
+        "official": true
       },
       {
         "name": "Earth III (Crime syndicate) ",
@@ -2481,7 +2506,7 @@
       {
         "rating": 10,
         "name": "Hell Dimension",
-        "a": "c"
+        "official": true
       },
       {
         "name": "Blackest Night",
@@ -2506,32 +2531,32 @@
       {
         "rating": 4,
         "name": "1000 CE",
-        "a": "c"
+        "official": true
       },
       {
         "rating": 5,
         "name": "600 CE",
-        "a": "c"
+        "official": true
       },
       {
         "rating": 6,
         "name": "65,000,000 BCE",
-        "a": "c"
+        "official": true
       },
       {
         "rating": 6,
         "name": "2300 CE",
-        "a": "c"
+        "official": true
       },
       {
         "rating": 7,
         "name": "Zeal (12,000 BCE)",
-        "a": "c"
+        "official": true
       },
       {
         "rating": 8,
         "name": "1999 CE",
-        "a": "c"
+        "official": true
       }
     ],
     "image": "https://pbs.twimg.com/media/EREj9KaWAAA0q1P.jpg",
@@ -2572,17 +2597,17 @@
       {
         "name": "No active crisis",
         "rating": 7,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Mousillon, Chaos Wastes, etc.",
         "rating": 8,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Standard",
         "rating": 9,
-        "a": "c"
+        "official": true
       },
       {
         "name": "The Sundering",
@@ -2600,7 +2625,7 @@
       {
         "name": "Demon's Souls, Dark Souls 1-3",
         "rating": 9,
-        "a": "c"
+        "official": true
       }
     ],
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/1018877596873789460/thumb-1920-528418.jpg",
@@ -2622,12 +2647,12 @@
       {
         "name": "New World (Nazarick Member)",
         "rating": 1,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Old World (Cyberpunk Dystopia)",
         "rating": 4,
-        "a": "c"
+        "official": true
       },
       {
         "name": "New World (No Players active)",
@@ -2640,12 +2665,12 @@
       {
         "name": "New World (Against Nazarick)",
         "rating": 8,
-        "a": "c"
+        "official": true
       },
       {
         "name": "New World (multiple active guilds)",
         "rating": 9,
-        "a": "c"
+        "official": true
       }
     ],
     "uid": "qHc2w"
@@ -2663,12 +2688,12 @@
       {
         "rating": 5,
         "name": "Classic Adventure",
-        "a": "c"
+        "official": true
       },
       {
         "rating": 9,
         "name": "Start of Saiyan Saga",
-        "a": "c"
+        "official": true
       },
       {
         "name": "Androids Awaken",
@@ -2677,17 +2702,17 @@
       {
         "rating": 10,
         "name": "Start of Android Saga",
-        "a": "c"
+        "official": true
       },
       {
         "rating": 10,
         "name": "GT",
-        "a": "c"
+        "official": true
       },
       {
         "rating": 10,
         "name": "Super",
-        "a": "c"
+        "official": true
       },
       {
         "rating": 10,
@@ -2742,17 +2767,17 @@
       {
         "name": "Persona 4",
         "rating": 3,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Persona 5",
         "rating": 4,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Persona 3",
         "rating": 5,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Devil Survivor",
@@ -2761,7 +2786,7 @@
       {
         "name": "Mainline series",
         "rating": 10,
-        "a": "c"
+        "official": true
       }
     ],
     "image": "https://ricedigital.co.uk/wp-content/uploads/2017/11/SMT-Demon-poll.jpg",
@@ -2780,62 +2805,62 @@
       {
         "name": "Alara (Bant)",
         "rating": 3,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Arcavios",
         "rating": 3,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Kylem",
         "rating": 3,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Segovia",
         "rating": 3,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Alara (Naya)",
         "rating": 4,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Eldraine",
         "rating": 4,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Kaladesh",
         "rating": 4,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Lowryn",
         "rating": 4,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Alara (Esper)",
         "rating": 5,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Fiora",
         "rating": 5,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Ixalan",
         "rating": 5,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Kamigawa",
         "rating": 5,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Dominaria",
@@ -2844,57 +2869,57 @@
       {
         "name": "Alara (Jund)",
         "rating": 6,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Ravnica",
         "rating": 6,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Shadowmoor",
         "rating": 6,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Theros",
         "rating": 6,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Alara (Grixis)",
         "rating": 7,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Ikoria",
         "rating": 7,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Innistrad",
         "rating": 7,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Tarkir",
         "rating": 7,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Amonkhet",
         "rating": 8,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Zendikar (default)",
         "rating": 8,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Zendikar (Eldrazi Awakening)",
         "rating": 9,
-        "a": "c"
+        "official": true
       },
       {
         "rating": 9,
@@ -2903,7 +2928,7 @@
       {
         "name": "Phyrexia",
         "rating": 10,
-        "a": "c"
+        "official": true
       }
     ],
     "image": "https://64.media.tumblr.com/34bc7a2da7cf1a0853b530cdb12d20f0/tumblr_pcpoii9tPn1wxwk8ro1_1280.jpg",
@@ -2944,17 +2969,17 @@
       {
         "rating": 6,
         "name": "La Pucelle, Phantom Brave",
-        "a": "c"
+        "official": true
       },
       {
         "rating": 7,
         "name": "Disgaea 1",
-        "a": "c"
+        "official": true
       },
       {
         "name": "Disgaea 2, Disgaea 3",
         "rating": 8,
-        "a": "c"
+        "official": true
       },
       {
         "rating": 8,
@@ -2963,12 +2988,12 @@
       {
         "name": "Disgaea 4, Makai Kingdom",
         "rating": 9,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Disgaea 5, Disgaea 6",
         "rating": 10,
-        "a": "c"
+        "official": true
       }
     ],
     "image": "https://www.thatvideogameblog.com/wp-content/uploads/2017/08/disgaea-5-complete-set-to-sell-over-100k-in-the-west.jpg",
@@ -2993,7 +3018,7 @@
       {
         "name": "Diablo 3",
         "rating": 10,
-        "a": "c"
+        "official": true
       }
     ],
     "image": "https://expertgamereviews.com/wp-content/uploads/2021/07/Diablo-2-Builds-Feature-1280x720.jpg",
@@ -3029,17 +3054,17 @@
       {
         "rating": 3,
         "name": "Voldemort's first death to Book 3",
-        "a": "c"
+        "official": true
       },
       {
         "name": "Book 4",
         "rating": 4,
-        "a": "c"
+        "official": true
       },
       {
         "name": "Books 5-7",
         "rating": 5,
-        "a": "c"
+        "official": true
       },
       {
         "rating": 5,
@@ -3085,7 +3110,7 @@
       {
         "rating": 6,
         "name": "No Primal Beasts active",
-        "a": "c"
+        "official": true
       }
     ],
     "uid": "TPec1"

@@ -16,7 +16,7 @@
       >
       <div class="absolute top-1 right-0.5 cursor-pointer flex items-center gap-1 text-lg leading-none" @click.stop="likeWorld">
         <span class="text-red-500 hover:text-red-400 flex items-center gap-0.5 text-shadow-border">
-          <span v-if="worldLikes" class="font-semibold">{{ worldLikes }}</span>
+          <!-- <span v-if="worldLikes" class="font-semibold">{{ worldLikes }}</span> -->
           <ci:heart-fill
             v-if="favoriteWorldsObject[world.uid]"
             class="filter drop-shadow"
@@ -195,7 +195,7 @@ function showInfo() {
 }
 
 function conditionList(list: any[]) {
-  list = list.map(x => ({ value: x.name, label: `${x.name} (${x.rating})`, style: x.a === 'c' ? 'text-yellow-300' : '' }))
+  list = list.map(x => ({ value: x.name, label: `${x.name} (${x.rating})`, style: x.official ? 'text-yellow-300' : '' }))
   list.unshift({ value: 'No condition', label: 'No condition' })
   return list
 }

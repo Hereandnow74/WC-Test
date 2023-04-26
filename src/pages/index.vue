@@ -183,12 +183,12 @@ import { useTooltips } from '~/logic/misc'
 
 const worldTitles = ['Danger Rating', 'Difficulty Title', 'Budget']
 const worldData = WORLD_RATINGS.slice(1, 11).map(x => [x.rating, x.title, x.budget])
-worldData.push([11, 'One', '2-5 IMG tickets'])
+worldData.push([11, 'One', '1 TX/TY companion'])
 
 const waifuTitles = ['Waifu Tier', 'Cost', 'Capture', 'Sale', 'Capture + Sale', 'Short']
 const waifuData = [
-  ['T1', '1', '0', '0', '1', ['★', 'text-blue-600']],
-  ['T2', '2', '1', '0', '2', ['★★', 'text-blue-600']],
+  ['T1', '1', '0', '0', '0', ['★', 'text-blue-600']],
+  ['T2', '2', '1', '0', '1', ['★★', 'text-blue-600']],
   ['T3', '5', '3', '1', '4', ['★★★', 'text-blue-600']],
   ['T4', '10', '6', '2', '8', ['★', 'text-red-600']],
   ['T5', '20', '12', '4', '16', ['★★', 'text-red-600']],
