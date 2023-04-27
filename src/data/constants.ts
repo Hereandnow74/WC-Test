@@ -528,8 +528,8 @@ getWorlds()
 export const allCompanionsWorlds = computed(() => Array.from(new Set(allChars.value.map(x => x.w))))
 
 export const allWorlds = computed(() => {
-  const { userWorlds, localUserWorlds } = useStore()
-  return Array.prototype.concat(userWorlds.value, localUserWorlds.value, worlds.value.map((x) => { x.type = 'canon'; return x }), subWorlds.value)
+  const { localUserWorlds } = useStore()
+  return Array.prototype.concat(localUserWorlds.value, worlds.value, subWorlds.value)
 })
 
 export const allWorldsNoCondition = computed(() => {
@@ -537,14 +537,14 @@ export const allWorldsNoCondition = computed(() => {
 
   const addConditions = (x: DBWorld) => {
     if (x.condition)
-      x.condition.forEach(c => worlds.push({ worldName: x.worldName, condition: c.name, rating: c.rating, type: x.type ? 'canon' : 'user' }))
+      x.condition.forEach((c, i) => worlds.push({ uid: x.uid.slice(0, -1) + i, worldName: x.worldName, condition: c.name, rating: c.rating }))
   }
 
   allWorlds.value.forEach((x) => {
     if (isArray(x.condition))
       addConditions(x)
 
-    worlds.push({ worldName: x.worldName, rating: x.rating, type: x.type ? 'canon' : 'user' })
+    worlds.push({ uid: x.uid, worldName: x.worldName, rating: x.rating })
   })
   return worlds
 })

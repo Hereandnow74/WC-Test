@@ -126,7 +126,7 @@ const worldToEdit = ref({})
 const editMode = ref(false)
 const showWorldInfo = ref(false)
 
-const { userWorlds, localUserWorlds, settings } = useStore()
+const { localUserWorlds, settings } = useStore()
 const sortAlpha = ref(0)
 const sortRating = ref(1)
 const sortTargets = ref(0)
@@ -148,7 +148,7 @@ const worldWrapper = ref<HTMLElement>(null)
 
 // const subFuse = new Fuse(worldsSubReac.value, options)
 
-const allUserWorlds = computed(() => userWorlds.value.concat(localUserWorlds.value))
+const allUserWorlds = computed(() => localUserWorlds.value)
 
 const allWorlds = computed(() => {
   return [...allUserWorlds.value, ...worldsReac.value, ...worldsSubReac.value]

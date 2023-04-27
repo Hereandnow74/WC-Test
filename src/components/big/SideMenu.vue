@@ -2,7 +2,7 @@
   <div
     ref="sidemenu"
     class="fixed bottom-0 top-0 left-0 text-lg bg-gray-200 dark:bg-gray-700 flex flex-col gap-2 items-start
-     pt-2 z-30 border-gray-400 overflow-x-hidden transition-width"
+     pt-2 z-30 border-gray-400 overflow-x-hidden transition-width overflow-y-auto scrollbar"
   >
     <button
       class="icon-btn mx-2 !outline-none hover:text-red-400 self-end"

@@ -97,6 +97,10 @@
             <div>Use manual defense <b>rebates</b> calculation</div>
             <Toggle v-model="settings.rebates" />
           </div>
+          <div class="flex justify-between gap-4 border-b border-gray-500 border-dotted">
+            <div>Hide <b>notification</b> messages by default</div>
+            <Toggle v-model="settings.notification" />
+          </div>
         </div>
         <h3 class="text-lg text-lime-700 dark:text-lime-400 font-semibold">
           Turn off DLC's by author

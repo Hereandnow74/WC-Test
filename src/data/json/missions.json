@@ -1,5 +1,162 @@
 [
-  
+  {
+    "reward": 2,
+    "image": "",
+    "author": "Heisen",
+    "rewardType": "IMG Tickets",
+    "source": "",
+    "title": "Become a Demon Lord",
+    "loca": "Reincarnated as a Slime",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": 200,
+        "type": "Credits",
+        "value": "Do it without Guy's help"
+      },
+      {
+        "reward": "Ramiris (Full power)",
+        "type": "Companions",
+        "value": "Do it without making Ramiris fall"
+      },
+      {
+        "reward": 150,
+        "type": "Credits",
+        "value": "Become your own player in the game between Guy and Rudra"
+      },
+      {
+        "reward": "Template of your True Dragon",
+        "type": "Perks",
+        "value": "Have your own True Dragon as a partner"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Destroy a nation and build your own atop of it"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Be given by the Voice of the World an ultimate skill and recognized as an Demon Lord"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Stop Milim from her rampage"
+      },
+      {
+        "value": "Be known as a Demon Lord after the fight"
+      },
+      {
+        "value": "Establish your own nation"
+      }
+    ],
+    "budget": 2000,
+    "desc": "Become the one to stop the rampaging Milim and be known as one of the first demon lords. Become your own player in Guy and Rudra's game. Establish your own nation and make it feared for its might.",
+    "uid": "bCgTQ"
+  },
+  {
+    "reward": "Blue Orb, Green Orb and a new hub frequentd by martial artists",
+    "image": "",
+    "author": "Lethaius",
+    "rewardType": "Other",
+    "source": "",
+    "title": "History's Strongest Contractor",
+    "loca": "History's Strongest Disciple Kenichi",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "Martial talent, Talent Sharing: Martial Talent",
+        "type": "Perks",
+        "value": "Survive for a month"
+      },
+      {
+        "reward": "Zenkai",
+        "type": "Perks",
+        "value": "Survive for half a year"
+      },
+      {
+        "reward": 5,
+        "type": "Credits",
+        "value": "Defeat your first opponent using only martial arts"
+      },
+      {
+        "reward": "Teaching Talent",
+        "type": "Perks",
+        "value": "Become a Master"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Convince a real Master to teach you and survive their training for a week."
+      }
+    ],
+    "budget": 0,
+    "desc": "To many of our contractors are dying ignoble deaths because they thought all they needed were some fancy powers, or a cool heritage, but no more!\n\nThis mission aims to teach those willing to take it the fundamentals of how to survive in a fight, and also encourage a bit of friendly rivalry.\n\nJoin either Yomi, Ryozanpaku, or some other group and start down the path of becoming a Martial Artist.",
+    "uid": "UDFLZ"
+  },
+  {
+    "reward": "Instant Unlocking of the next World.",
+    "image": "https://cdn.discordapp.com/attachments/340957834005184522/1100142458890899587/Would_You_Kindly.jpg",
+    "author": "Zaralann",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Would... You... Kindly...?",
+    "loca": "Bioshock",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "Beginning of 'Bioshock 2'.",
+        "type": "Other",
+        "value": "'Bioshock' Completed."
+      },
+      {
+        "reward": "Beginning of 'Bioshock Infinite'.",
+        "type": "Other",
+        "value": "'Bioshock 2' Completed."
+      },
+      {
+        "reward": "New World Unlocked.",
+        "type": "Other",
+        "value": "'Bioshock Infinite' Completed."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You will enter 'Bioshock'[DR4] and will take Protagonist's place, all logical/continuation issues would be adjusted."
+      },
+      {
+        "value": "You must purchase [Added Potential](5C) for this World."
+      },
+      {
+        "value": "You will arrive into 'Bioshock' at the start of the Game."
+      },
+      {
+        "value": "To not exceed the time of the Mission the Events would follow the sequences presented within the Game, for the durations of the Mission the 'Timeskips' within the Game would be provided by the Company."
+      },
+      {
+        "value": "Time is Fluid within the World for the duration of the Mission, stepping out of it either for your Pocket Dimension or another World would put the Events on 'Pause' so using such methods to avoid Events or obstacles would not work."
+      },
+      {
+        "value": "Time is Fluid within other Worlds for the duration of the Mission, putting the Events on 'Pause' while you're within this World during the Mission, it does not affect the Pocket Dimension."
+      },
+      {
+        "value": "A limited mount of 'Game Logic' is provided by the Company, certain Mechanics within the World would function in similar way as they did in the Game."
+      },
+      {
+        "value": "Progress of unlocking of the new World would be frozen for the duration of the Mission, finishing it would instantly unlock the nexy World if Travel Perks are pruchased."
+      },
+      {
+        "value": "Binding/Selling a Boss/Mini-Boss counts as Defeating them, same for 'Mini-Games' against others."
+      }
+    ],
+    "budget": 5,
+    "desc": "O' Contractor... Would You Kindly provide us with a service? Would You Kindly explore these Scenrios? Would You Kindly take the place of those who did it before? Would You Kindly solve the issues of these Scenarios? Would You Kindly take the place of those we took for processing? Would You Kindly do that, O' Contractor?",
+    "uid": "ImVOG"
+  },
   {
     "reward": 500,
     "image": "https://i.kym-cdn.com/photos/images/original/000/959/021/297.jpg",
@@ -179,7 +336,8 @@
     "author": "Zaralann",
     "rewardType": "Other",
     "source": "",
-    "title": "Born with the Draon's Heart...",
+    "title": "Born with the Dragon's Heart...",
+    "uid": "wABAs",
     "loca": "The Elder Scrolls",
     "lewd": false,
     "scope": "Grand",
@@ -220,8 +378,7 @@
       }
     ],
     "budget": 5,
-    "desc": "O' Contractor, Rejoyce! You have been Chosen, Blessed and now you're more than you ever were before! What does it make you? What does it mean? Your Mission is to be the one who resolves the Events of Skyrim, a task so tall that many perished on their way to such a goal! But we, at the Company, have confidence in you that you can overcome such Legendary Journey...",
-    "uid": "wABAs"
+    "desc": "O' Contractor, Rejoyce! You have been Chosen, Blessed and now you're more than you ever were before! What does it make you? What does it mean? Your Mission is to be the one who resolves the Events of Skyrim, a task so tall that many perished on their way to such a goal! But we, at the Company, have confidence in you that you can overcome such Legendary Journey..."
   },
   {
     "reward": "Instant Unlocking of the next World.",

@@ -2,7 +2,6 @@
   <div class="sm:p-2 pb-8">
     <div class="mb-4 max-w-4xl mx-auto">
       <Desc :desc="desc" class="p-2 bg-violet-200 dark:bg-violet-900" />
-      {{ heritageCounts }}
     </div>
     <div class="flex gap-x-4 gap-y-2 gap flex-wrap justify-center mb-4">
       <template

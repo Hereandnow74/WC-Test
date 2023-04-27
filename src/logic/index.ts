@@ -1,6 +1,7 @@
 import { GoogleAuthProvider, getAuth, signInWithPopup } from 'firebase/auth'
 import { initializeApp } from 'firebase/app'
 import { getFirestore, collection, addDoc, doc, getDoc, runTransaction, query, where, getDocs, orderBy, limit, startAt, endAt, startAfter, deleteDoc } from 'firebase/firestore/lite'
+import { useEvents } from './events'
 
 export * from './toggles'
 export * from './misc'
@@ -37,13 +38,14 @@ export const signIn = () => signInWithPopup(auth, provider)
     const email = error.email
     // The AuthCredential type that was used.
     const credential = GoogleAuthProvider.credentialFromError(error)
-    console.log(errorCode, errorMessage, email, credential)
+    console.error(errorCode, errorMessage, email, credential)
     // ...
   })
 
 export function proposeWorld(world: any) {
+  const { allEvents } = useEvents()
   try {
-    addDoc(collection(db, 'worlds'), world).then(docRef => console.log(`Successfully proposed world id: ${docRef.id}`))
+    addDoc(collection(db, 'worlds'), world).then(() => allEvents.emit({ id: Math.floor(Math.random() * 10000), time: Date.now(), message: 'Successfully sent world proposal.', type: 'success' }))
   }
   catch (e) {
     console.error('Error proposing a world: ', e)

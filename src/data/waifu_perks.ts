@@ -4238,6 +4238,26 @@ export const DLCwaifu_perks: WaifuPerk[] = [
     desc: 'During the last moments of the events of the End Game, Rex reunited the Five Meta-Nanites, each containing a part of a singular Code that governs the Universe divided in five parts: Gravity, Matter, Anti-Matter, Energy, Space-Time, Elements of nature, and Technology.Fusing with them, he gains access to their full powers, giving him control over the very fabric of the Universe.Rex will always have this perk if captured during the events of the End Game, Part 2.',
     whitelist: [],
   },
+  {
+    uid: 'LxnBH',
+    dlc: 'Randomas6413',
+    dlcLink: '',
+    title: 'In Wolf\'s Clothing',
+    from: 'Sonic',
+    waifu: [
+      'Sonic the Hedgehog',
+    ],
+    waifuUID: [
+      12370,
+    ],
+    tier: 0,
+    image: 'https://imgur.com/R51620Ql.jpg',
+    cost: 50,
+    discount: 0,
+    costT: 0,
+    desc: 'Throughout Sonic\'s many adventures he has experienced many things, among those things are the many different transformations he\'s been subjected to. One in particular was the forced "werehog" form during nighttime, gained through the exposure to the corruptive energy of Dark Gaia and lost after its true forms awakening. With this perk, Sonic will gain the ability to freely shift into this form, sacrificing his famous speed for incredible strength and endurance as well as stretchable arms while transformed. The perk does not alter Sonic\'s personal power in any other meaningful way, and his tier rating will therefore not change. Because of this forms corrupted nature, he can\'t transform into Super Sonic while in werehog form. This perk is always active if Sonic was captured during the events of Sonic Unleashed.',
+    whitelist: [],
+  },
 ]
 
 export const waifuPerksObject = [...DLCwaifu_perks, ...waifu_perks, ...(localPerks.value['Specific waifu perk'] || [])].reduce((a, x) => { a[x.uid] = x; return a }, {} as Record<string, WaifuPerk>)

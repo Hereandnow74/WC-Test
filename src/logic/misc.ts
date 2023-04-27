@@ -117,8 +117,9 @@ export function toReadableTime(seconds: number) {
   return res
 }
 
-export function imageLink(uid: number) {
-  const link = allCharsObject.value[uid]?.i
+export function imageLink(uid: number, link = '') {
+  if (!link)
+    link = allCharsObject.value[uid]?.i
   if (link) {
     if (link.startsWith('http') || link.startsWith('/')) { return link }
     else {

@@ -61,7 +61,6 @@ const {
   ridePerks, homePerks, talentPerks, defensePerks, miscPerks, genericWaifuPerks, companions, startingOrigin,
   waifuPerks, baseBudget, startingWorld, budgetMods, otherPerks, fee,
   baseBudgetAfter,
-  userWorlds,
   localUserWorlds,
   userCharacters,
   localUserCharacters,

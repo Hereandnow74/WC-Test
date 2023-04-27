@@ -342,7 +342,7 @@ const image = computed(() => {
   else {
     if (charData.value.image) {
       if (charData.value.image.startsWith('http')) return charData.value.image
-      return imageLink(charData.value.uid)
+      return imageLink(charData.value.uid, charData.value.image)
     }
     else {
       return PLACEHOLDER_NO_IMAGE

@@ -1484,20 +1484,12 @@
     "additional": "All kith may be bound, but only sapient non-Kith races. Bound companions whose abilities are ordinarily dependent on Eora's abundant environmental soul essence can utilize these abilities off-world. Bound animatic constructs, including gods, can be sustained by infusions of magical energy other than soul essence comparable to their ordinary requirements.",
     "condition": [
       {
-        "name": "Waidwen Victorious! (AU: Raedceras wins Saint's War)",
-        "rating": 5
-      },
-      {
         "rating": 6,
-        "name": "Hollowborn Crisis (PoE 1)"
+        "name": "Hollowborn Crisis"
       },
       {
-        "name": "The Titan Walks (PoE 2)",
+        "name": "The Titan Walks",
         "rating": 6
-      },
-      {
-        "name": "The Adra Dims (AU: Everything that could go wrong, has gone wrong)",
-        "rating": 7
       }
     ],
     "image": "https://avante.biz/wp-content/uploads/Pillars-of-Eternity-II-Deadfire-hd-wallpaper/Pillars-of-Eternity-II-Deadfire-hd-wallpaper81.jpg",
@@ -2830,7 +2822,7 @@
   },
   {
     "worldName": "Ane Naru Mono",
-    "rating": 10,
+    "rating": 3,
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/992759154030678016/chiyo-ane-naru-mono-brunette-smiling-purple-eyes-hd-wallpaper-preview.jpg",
     "uid": "gztpUw"
   },
@@ -6535,5 +6527,7 @@
   {"uid":"gGAugA","worldName":"Amphibia","rating":4,"image":"https://i.imgur.com/kuT8Z48.jpg"},
   {"uid":"xijaBx","worldName":"American McGee's Alice","rating":2,"image":"https://w0.peakpx.com/wallpaper/263/225/HD-wallpaper-alice-art-dress-game-fantasy-girl-water-drops-alice-madness-returns-rain-woma-pink-blue.jpg","additional":"Binding Alice would allow her to use all of her Abilities from Wonderland even in the Real World.","condition":[{"name":"Wonderland - Queen of Hearts Rule","rating":5},{"name":"Wonderland - Dollmaker Rule","rating":6}]},
   {"uid":"UlMhJX","worldName":"Breath of Fire","rating":7,"image":"https://cdn.donmai.us/sample/ad/17/__rinpoo_chuan_nina_nina_nina_lin_and_29_more_breath_of_fire_and_5_more_drawn_by_ji_609237__sample-ad174125c045e0ecdfb0273b6bc6cd4c.jpg","condition":[{"name":"Breath of Fire 1","rating":7},{"name":"Breath of Fire 2","rating":7},{"name":"Breath of Fire 3","rating":7},{"name":"Breath of Fire 4","rating":7},{"name":"Dragon Quarter","rating":7}]},
-  {"uid":"SxVebY","worldName":"The Sun Eater","rating":5,"image":"https://files.catbox.moe/vc1ou6.jpg","condition":[{"name":"After 'Kingdoms of Death'","rating":6}]}
+  {"uid":"SxVebY","worldName":"The Sun Eater","rating":5,"image":"https://files.catbox.moe/vc1ou6.jpg","condition":[{"name":"After 'Kingdoms of Death'","rating":6}]},
+  {"uid":"FlstkK","worldName":"Gakkou Gurashi! (School-Live!)","rating":2,"image":"https://cdn.donmai.us/original/bc/78/__ebisuzawa_kurumi_wakasa_yuuri_takeya_yuki_naoki_miki_and_wakasa_ruu_gakkou_gurashi_drawn_by_chiba_sadoru__bc789b01c0c5cafba811997f810911a7.jpg"},
+  {"uid":"SymORE","worldName":"Vinland Saga","rating":3,"image":"https://cdn.donmai.us/original/bf/e0/__thorfinn_canute_thorkell_thors_ylva_and_3_more_vinland_saga_drawn_by_botanicaxu__bfe024487aa6864e11067ac0f48ba437.jpg"}
 ]

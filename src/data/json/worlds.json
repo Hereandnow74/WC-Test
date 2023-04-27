@@ -480,109 +480,8 @@
     "image": "https://bnetproduct-a.akamaihd.net/3b/88ac7d7f76df6b86c5449f71bc212b7c-prod-mobile-bg.jpg",
     "uid": "QEweJ"
   },
-  {
-    "worldName": "Star Wars",
-    "rating": 4,
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992067055098535946/star_wars_poster.0.jpg",
-    "additional": "Unrestricted Clone Wars is setting modification where Palpatine's plan is fully discovered and with him taking over leadership CIS, CIS is allowed to go on without restrictions.",
-    "condition": [
-      {
-        "rating": 4,
-        "name": "Star Wars (Disney)- Empire Era",
-        "official": true
-      },
-      {
-        "rating": 4,
-        "name": "Star Wars (Disney)- Original Trilogy",
-        "official": true
-      },
-      {
-        "rating": 4,
-        "name": "Star Wars (Legends)- Core and Colonies (No Galactic Conflict)",
-        "official": true
-      },
-      {
-        "rating": 5,
-        "name": "Star Wars (Disney)- Prequels Trilogy (Disney)",
-        "official": true
-      },
-      {
-        "rating": 5,
-        "name": "Star Wars (Legends)- Expansion Territory to Outer Rim (No Galactic Conflict)",
-        "official": true
-      },
-      {
-        "name": "Star Wars (Legends)- Core and Colonies (Galactic Conflict)",
-        "rating": 5,
-        "official": true
-      },
-      {
-        "rating": 5,
-        "name": "Star Wars (Legends)- Core and Colonies (Vong Galactic Conflict)",
-        "official": true
-      },
-      {
-        "rating": 6,
-        "name": "Star Wars (Disney)- Sequel Trilogy",
-        "official": true
-      },
-      {
-        "name": "Star Wars (Legends)- Unknown Regions and Beyond the Outer Rim (No Galactic Conflict)",
-        "rating": 6,
-        "official": true
-      },
-      {
-        "rating": 6,
-        "name": "Star Wars (Legends)- Expansion Territory to Outer Rim (Galactic Conflict)",
-        "official": true
-      },
-      {
-        "name": "Star Wars (Legends)- Unknown Regions and Beyond the Outer Rim (Galactic Conflict)",
-        "rating": 6,
-        "official": true
-      },
-      {
-        "rating": 6,
-        "name": "Star Wars (Legends)- Expansion Territory to Outer Rim (Vong Galactic Conflict)",
-        "official": true
-      },
-      {
-        "name": "Star Wars (Legends)- Unknown Regions and Beyond the Outer Rim (Vong Galactic Conflict)",
-        "rating": 8,
-        "official": true
-      },
-      {
-        "rating": 8,
-        "name": "Star Wars (Legends)- Stranded in Deep Space",
-        "official": true
-      }
-    ],
-    "uid": "1mAux"
-  },
-  {
-    "rating": 4,
-    "worldName": "My Hero Academia",
-    "additional": "Eri has full control of her powers. Purchased versions of her are aged to adulthood. Toru can toggle her invisibility on and off at will, and it will include anything she\u2019s wearing within the effect. While she\u2019s invisible, the rest of your retinue will see a ghostly outline around her.",
-    "condition": [
-      {
-        "name": "Start of canon",
-        "rating": 4,
-        "official": true
-      },
-      {
-        "name": "post-Retirement",
-        "rating": 5,
-        "official": true
-      },
-      {
-        "name": "pre-All Might",
-        "rating": 6,
-        "official": true
-      }
-    ],
-    "image": "https://www.groundedreason.com/wp-content/uploads/2021/03/my_hero_academia-1024x576.png",
-    "uid": "EDt1K"
-  },
+  {"uid":"IghXQh","worldName":"Star Wars","rating":4,"image":"https://cdn.discordapp.com/attachments/925963686433132644/992067055098535946/star_wars_poster.0.jpg","additional":"Unrestricted Clone Wars is setting modification where Palpatine's plan is fully discovered and with him taking over leadership CIS, CIS is allowed to go on without restrictions.","condition":[{"rating":4,"name":"Disney- Empire Era","official":true},{"rating":4,"name":"Disney- Original Trilogy","official":true},{"rating":4,"name":"Legends- Core and Colonies (No Galactic Conflict)","official":true},{"rating":5,"name":"Disney- Prequels Trilogy","official":true},{"rating":5,"name":"Legends- Expansion Territory to Outer Rim (No Galactic Conflict)","official":true},{"name":"Legends- Core and Colonies (Galactic Conflict)","rating":5,"official":true},{"rating":5,"name":"Legends- Core and Colonies (Vong Galactic Conflict)","official":true},{"rating":6,"name":"Disney- Sequel Trilogy","official":true},{"name":"Legends- Unknown Regions and Beyond the Outer Rim (No Galactic Conflict)","rating":6,"official":true},{"rating":6,"name":"Legends- Expansion Territory to Outer Rim (Galactic Conflict)","official":true},{"name":"Legends- Unknown Regions and Beyond the Outer Rim (Galactic Conflict)","rating":6,"official":true},{"rating":6,"name":"Legends- Expansion Territory to Outer Rim (Vong Galactic Conflict)","official":true},{"name":"Legends- Unknown Regions and Beyond the Outer Rim (Vong Galactic Conflict)","rating":8,"official":true},{"rating":8,"name":"Legends- Stranded in Deep Space","official":true}]},
+  {"uid":"eatSXL","worldName":"My Hero Academia","rating":4,"image":"https://www.groundedreason.com/wp-content/uploads/2021/03/my_hero_academia-1024x576.png","additional":"Eri has full control of her powers. Purchased versions of her are aged to adulthood. Toru can toggle her invisibility on and off at will, and it will include anything she’s wearing within the effect. While she’s invisible, the rest of your retinue will see a ghostly outline around her.","condition":[{"name":"Start of Canon","rating":4,"official":true},{"name":"Post-Retirement","rating":5,"official":true},{"name":"Pre-All Might","rating":6,"official":true}]},
   {
     "rating": 4,
     "worldName": "Mass Effect",
@@ -1179,29 +1078,7 @@
     ],
     "uid": "lMtJl"
   },
-  {
-    "rating": 5,
-    "worldName": "Final Fantasy 15",
-    "condition": [
-      {
-        "name": "pre-crystal",
-        "rating": 5,
-        "official": true
-      },
-      {
-        "name": "during timeskip",
-        "rating": 6,
-        "official": true
-      },
-      {
-        "name": "post-timeskip",
-        "rating": 7,
-        "official": true
-      }
-    ],
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/993187702625271828/746998.jpg",
-    "uid": "p603e"
-  },
+  {"uid":"IjbNWG","worldName":"Final Fantasy 15","rating":5,"image":"https://cdn.discordapp.com/attachments/925963686433132644/993187702625271828/746998.jpg","condition":[{"name":"Pre-Crystal","rating":5,"official":true},{"name":"During Timeskip","rating":6,"official":true},{"name":"Post-Timeskip","rating":7,"official":true}]},
   {
     "rating": 5,
     "worldName": "Final Fantasy 14",
@@ -1286,25 +1163,7 @@
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/992080712436039711/Wiki-background.jpg",
     "uid": "MFuy0"
   },
-  {
-    "rating": 5,
-    "worldName": "Danmachi",
-    "additional": "Non-goddess waifus can have their Falnas updated through an app on the company smart device. If you visit this setting or have at least one deity from it, any deities in your retinue from other settings can learn how to grant and manipulate Falnas. If your starting build has Extra or Paper Trail and a foreign deity, that deity will already know how. All deities in your retinue who know how to manipulate Falnas can update any of your group\u2019s normally, as a shared pool. This also applies to you, if you have a Falna for any reason. You will qualify as a deity yourself if you have the Heritage perks Elder Dragon, Incandescent Ascendancy Machine, or Prophet of Paradox, or achieve godhood by any other means.",
-    "condition": [
-      {
-        "rating": 5,
-        "name": "Canon Orario",
-        "official": true
-      },
-      {
-        "rating": 7,
-        "name": "Uncapped dungeon",
-        "official": true
-      }
-    ],
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992080838189649970/DanMachi.jpg",
-    "uid": "AXIiB"
-  },
+  {"uid":"gFmTIQ","worldName":"Danmachi","rating":5,"image":"https://cdn.discordapp.com/attachments/925963686433132644/992080838189649970/DanMachi.jpg","additional":"Non-goddess waifus can have their Falnas updated through an app on the company smart device. If you visit this setting or have at least one deity from it, any deities in your retinue from other settings can learn how to grant and manipulate Falnas. If your starting build has Extra or Paper Trail and a foreign deity, that deity will already know how. All deities in your retinue who know how to manipulate Falnas can update any of your group’s normally, as a shared pool. This also applies to you, if you have a Falna for any reason. You will qualify as a deity yourself if you have the Heritage perks Elder Dragon, Incandescent Ascendancy Machine, or Prophet of Paradox, or achieve godhood by any other means.","condition":[{"rating":5,"name":"Canon Orario","official":true},{"name":"Argonaut Era","rating":7,"official":true},{"name":"Artemis Bad End (Uncapped Dungeon)","rating":7,"official":true}]},
   {
     "rating": 5,
     "q": true,
@@ -1599,10 +1458,6 @@
         "name": "Standard",
         "rating": 6,
         "official": true
-      },
-      {
-        "name": "Third Shinobi World War",
-        "rating": 6
       },
       {
         "name": "Kaguya or Otsutsuki active",
@@ -2326,64 +2181,7 @@
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/992745446617403402/the-rising-of-the-shield-hero-season-two-visual-e1652766015451.webp",
     "uid": "frhiB"
   },
-  {
-    "rating": 8,
-    "worldName": "Marvel",
-    "condition": [
-      {
-        "name": "Cinematic Universe (no TVA)",
-        "rating": 5,
-        "official": true
-      },
-      {
-        "name": "X-Men Evolution",
-        "rating": 5,
-        "official": true
-      },
-      {
-        "name": "Spectacular Earth-26496 (NYC)",
-        "rating": 5
-      },
-      {
-        "name": "Animated Universe (90s cartoons)",
-        "rating": 6,
-        "official": true
-      },
-      {
-        "name": "Cinematic Universe (TVA present)",
-        "rating": 6,
-        "official": true
-      },
-      {
-        "name": "Big Hero Six (Earth-14123)",
-        "rating": 7,
-        "official": true
-      },
-      {
-        "name": "2010s Marvel Animated Universe (Earth-12041)",
-        "rating": 7
-      },
-      {
-        "name": "Mainline comics (Earth-616)",
-        "rating": 8,
-        "official": true
-      },
-      {
-        "name": "Ultimate Universe (Earth-1610)",
-        "rating": 8
-      },
-      {
-        "name": "Old Man Logan(Earth-807128)",
-        "rating": 9
-      },
-      {
-        "name": "Secret Wars(2015)",
-        "rating": 10
-      }
-    ],
-    "image": "https://sc02.alicdn.com/kf/HTB15Y38doo09KJjSZFDq6z9npXau/200664728/HTB15Y38doo09KJjSZFDq6z9npXau.jpg",
-    "uid": "fczIH"
-  },
+  {"uid":"LBREsi","worldName":"Marvel","rating":8,"image":"https://sc02.alicdn.com/kf/HTB15Y38doo09KJjSZFDq6z9npXau/200664728/HTB15Y38doo09KJjSZFDq6z9npXau.jpg","condition":[{"name":"Cinematic Universe (no TVA)","rating":5,"official":true},{"name":"X-Men Evolution","rating":5,"official":true},{"name":"Spectacular Earth-26496 (NYC)","rating":5},{"name":"Animated Universe (90s Cartoons)","rating":6,"official":true},{"name":"Cinematic Universe (TVA present)","rating":6,"official":true},{"name":"Big Hero Six (Earth-14123)","rating":7,"official":true},{"name":"Animated Universe (2010s) (Earth-12041)","rating":7},{"name":"Mainline comics (Earth-616)","rating":8,"official":true},{"name":"Ultimate Universe (Earth-1610)","rating":8},{"name":"Old Man Logan (Earth-807128)","rating":9},{"name":"Secret Wars (2015)","rating":10}]},
   {
     "rating": 8,
     "worldName": "Honkai Impact 3rd",
@@ -2589,34 +2387,7 @@
     ],
     "uid": "pRdhb"
   },
-  {
-    "rating": 9,
-    "worldName": "Warhammer Fantasy",
-    "additional": "The Lady and Lileath would be identical twins if not for their different races; if you have both, they\u2019ll argue over which one is the older sister. Vampires no longer suffer from any of their weaknesses. Hellebron and Morathi are both young again. Khalida is alive and young again. Valkia is metaphysically separated from Khorne.",
-    "condition": [
-      {
-        "name": "No active crisis",
-        "rating": 7,
-        "official": true
-      },
-      {
-        "name": "Mousillon, Chaos Wastes, etc.",
-        "rating": 8,
-        "official": true
-      },
-      {
-        "name": "Standard",
-        "rating": 9,
-        "official": true
-      },
-      {
-        "name": "The Sundering",
-        "rating": 9
-      }
-    ],
-    "image": "https://i.imgur.com/rqmYEib.jpeg",
-    "uid": "7ww8M"
-  },
+  {"uid":"gJMmPj","worldName":"Warhammer Fantasy","rating":7,"image":"https://i.imgur.com/rqmYEib.jpeg","additional":"The Lady and Lileath would be identical twins if not for their different races; if you have both, they’ll argue over which one is the older sister. Vampires no longer suffer from any of their weaknesses. Hellebron and Morathi are both young again. Khalida is alive and young again. Valkia is metaphysically separated from Khorne.","condition":[{"name":"No major crisis","rating":7,"official":true},{"name":"Mousillon","rating":8,"official":true},{"name":"Chaos Wastes","rating":8,"official":true},{"name":"Under-Empire","rating":8,"official":true},{"name":"The Sundering (-4419 to -2723 IC)","rating":8,"official":true},{"name":"Cursed Nehekhara (-2500 to -1151 IC)","rating":8,"official":true},{"name":"Rise of Sigmar (-30 IC)","rating":8,"official":true},{"name":"Vampire Wars (2010 IC)","rating":8,"official":true},{"name":"Great War Against Chaos (2301 IC)","rating":8,"official":true},{"name":"Waaagh! Grom (2410 IC)","rating":8,"official":true},{"name":"Great Catastrophe (-5600 IC to -4420 IC)","rating":9,"official":true},{"name":"Storm of Chaos (2521 IC)","rating":9,"official":true}]},
   {
     "rating": 9,
     "worldName": "Soulsborne",

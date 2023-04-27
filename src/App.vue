@@ -10,6 +10,7 @@
       <component :is="Smartphone" v-if="buildLayout" class="w-[450px] bg-gray-800 pt-2 max-h-full min-h-0" />
     </div>
     <SideApps />
+    <Events />
     <component :is="Footer" v-if="!buildLayout" class="z-20" />
     <Search />
     <Intro v-if="showIntro" @click="showIntro = false" />

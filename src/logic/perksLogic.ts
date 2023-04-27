@@ -7,10 +7,12 @@ import { usePlayStore } from '../store/play'
 import { useChargenStore } from '../store/chargen'
 import { useStore } from '../store/store'
 import { ALL_PERK_STORES, ALL_PERK_TITLES } from '../data/constants'
+import { useEvents } from './events'
 
 // General functions
 export function deleteFreebies(freebies: object) {
   const { allEffects, allForSave } = useStore()
+  const { allEvents } = useEvents()
   if (!freebies) return
   for (const [key, perks] of Object.entries(freebies) as [keyof typeof allForSave, Freebie[]][]) {
     perks.forEach((n: Freebie) => {
@@ -24,6 +26,7 @@ export function deleteFreebies(freebies: object) {
         else {
           allForSave[key].value.splice(ind, 1)
           allEffects.value.splice(allEffects.value.indexOf(n.title), 1)
+          allEvents.emit({ id: Math.floor(Math.random() * 10000), time: Date.now(), message: `Lost freebie [<b>${n.title}(x${n.count})</b>]`, type: 'attention' })
         }
       }
     })
@@ -32,6 +35,7 @@ export function deleteFreebies(freebies: object) {
 
 export function addFreebies(freebies: object) {
   const { allEffects, allForSave } = useStore()
+  const { allEvents } = useEvents()
   if (!freebies) return
   for (const [key, perk] of Object.entries(freebies) as [keyof typeof allForSave, Freebie[]][]) {
     perk.forEach((freebie: Freebie) => {
@@ -39,6 +43,7 @@ export function addFreebies(freebies: object) {
       if (ind === -1) {
         allForSave[key].value.push(freebie)
         allEffects.value.push(freebie.title)
+        allEvents.emit({ id: Math.floor(Math.random() * 10000), time: Date.now(), message: `Got a freebie [<b>${freebie.title}(x${freebie.count})</b>]`, type: 'success' })
       }
       else {
         if (allForSave[key].value[ind].count)
@@ -615,6 +620,9 @@ export function clearAll() {
   specificMods.value = []
   patron.value = []
   missionRewards.value = {}
+
+  const { allEvents } = useEvents()
+  allEvents.emit({ id: Math.floor(Math.random() * 10000), time: Date.now(), message: 'All perks were removed. Added default binging - <b>Company Stamp</b>.', type: 'warn' })
 }
 
 export function writeBuildValues(build: any) {
@@ -660,6 +668,8 @@ export function writeBuildValues(build: any) {
   fee.value = build.fee || 0
   jumpChain.value = build.jumpChain || []
   missionRewards.value = build.missionRewards || {}
+  const { allEvents } = useEvents()
+  allEvents.emit({ id: Math.floor(Math.random() * 10000), time: Date.now(), message: 'Successfully loaded build', type: 'success' })
 }
 
 export const saveObject = computed(() => {

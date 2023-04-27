@@ -165,7 +165,6 @@ const allForSave = {
   homePerks,
 }
 
-const userWorlds = ref([] as DBWorld[])
 const localUserWorlds = useStorage<DBWorld[]>('localUserWorlds', [])
 
 const userCharacters = ref([] as Character[])
@@ -181,7 +180,6 @@ export function useChargenStore() {
     startingWorld,
     startingOrigin,
     coupleOrigin,
-    userWorlds,
     localUserWorlds,
     intensities,
     pvpPerks,

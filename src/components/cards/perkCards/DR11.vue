@@ -33,6 +33,7 @@ import { useStore } from '~/store/store'
 
 import { chooseDefense, chooseTalent, defenseAvailable, intensityAvailable, lazyLoadSingleImg, talentAvailable } from '~/logic/'
 import { defenses, talents } from '~/data/talents'
+import { useEvents } from '~/logic/events'
 
 const props = defineProps({
   perk: {
@@ -72,17 +73,20 @@ function allDefenses(cost = false) {
 
 function startDR11() {
   if (intensityAvailable(props.perk)) {
+    const { allEvents } = useEvents()
     if (flags.value.danger11Start) {
       flags.value.danger11Start = false
       allTalents(true)
       allDefenses(true)
       emit('chooseIntensity', props.perk)
+      allEvents.emit({ id: Math.floor(Math.random() * 10000), time: Date.now(), message: 'All talents and defenses added for free.', type: 'success' })
     }
     else {
       flags.value.danger11Start = true
       allTalents()
       allDefenses()
       emit('chooseIntensity', props.perk)
+      allEvents.emit({ id: Math.floor(Math.random() * 10000), time: Date.now(), message: 'All free talents and defenses removed.', type: 'attention' })
     }
     // flags.value.danger11Start = !flags.value.danger11Start
     // if (allEffects.value.includes(props.perk.title)) { allEffects.value.splice(allEffects.value.indexOf(props.perk.title), 1) }

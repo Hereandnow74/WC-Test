@@ -1,7 +1,8 @@
-import { findIndex, sample, random, countBy } from 'lodash-es'
+import { sample, random, countBy } from 'lodash-es'
 import { addFreebies, deleteFreebies } from '../logic'
 import { useStore } from '../store/store'
 import { WORLD_RATINGS, allWorldsNoCondition } from './constants'
+import { buyAnyCompanion, removeAnyCompanion } from '~/logic/waifuLogic'
 
 export const challengesDesc = `
 <p>Challenges should be picked after you pick the World but before you make any other purchases.
@@ -13,9 +14,8 @@ const { companions, baseBudget, startingWorld, defensePerks } = useStore()
 
 let defenseWatcher = null
 let exileWatcher = null
-
-const employee = { uid: 6666666, name: 'Employee #6.02214076e23', world: 'The Company', tier: 10, priceTier: 0, method: 'unbound' }
 let rouletteWatcher = null
+
 const cultFreebies = {
   defensePerks: [{ title: 'Stress Defense', cost: 0, count: 2 }],
   talentPerks: [{ title: 'Everlasting Talent', cost: 0, count: 1 }],
@@ -51,8 +51,8 @@ export const challenges = [
     <p>Company deemed this situation &#9632;&#9632;&#9632;&#9632;&#9632;&#9632;&#9632;&#9632; so you will be accompanied by Company employee who's equivalent to T10 companion in power and was tasked to help you get a handle on situation.</p>
     `,
     effect: {
-      set: () => companions.value.push(employee),
-      remove: () => companions.value.splice(findIndex(companions.value, { uid: 6666666 })),
+      set: () => buyAnyCompanion(6666666, 0, 'unbound'),
+      remove: () => removeAnyCompanion(6666666),
     },
   },
   {

@@ -43,6 +43,7 @@ const appsList = [
   { icon: 'noto-v1:wrapped-gift', name: 'Gacha', component: 'Gacha', color: '#5a933d' },
   { icon: 'fa-solid:dungeon', name: 'Dungeon', component: 'Dungeon', color: '#555555' },
   { icon: 'game-icons:alien-bug', name: 'Symbiote', component: 'Symbiote', color: 'rgb(112 17 212)' },
+  { icon: 'mdi:math-log', name: 'Event Log', component: 'ActionLog', color: '#306fa6' },
 ]
 
 const apps = computed(() => {
@@ -69,6 +70,7 @@ const appComponents = {
   Gacha: defineAsyncComponent(() => import('./apps/Gacha.vue')),
   Dungeon: defineAsyncComponent(() => import('./apps/Dungeon.vue')),
   Symbiote: defineAsyncComponent(() => import('./apps/Symbiote.vue')),
+  ActionLog: defineAsyncComponent(() => import('./apps/ActionLog.vue')),
 }
 
 const appComponent = computed(() => appComponents[appName.value as keyof typeof appComponents])

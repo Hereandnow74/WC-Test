@@ -17,7 +17,6 @@ const {
   startingWorld,
   startingOrigin,
   coupleOrigin,
-  userWorlds,
   localUserWorlds,
   intensities,
   pvpPerks,
@@ -63,6 +62,7 @@ const settings = useStorage('settings', {
   fontSize: 0,
   hideLegacy: true,
   rebates: false,
+  notification: false,
 })
 
 const heritageOptions = computed(() => [
@@ -552,7 +552,6 @@ export function useStore() {
     startingWorld,
     startingOrigin,
     coupleOrigin,
-    userWorlds,
     localUserWorlds,
     intensities,
     pvpPerks,

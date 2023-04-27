@@ -97,7 +97,7 @@ const imageErrorMessage = ref('')
 const isOpen = ref(false)
 const localSave = ref(true)
 const proposeGlobal = ref(false)
-const { userWorlds, localUserWorlds } = useStore()
+const { localUserWorlds } = useStore()
 const { userNickname } = useSaves()
 
 const schema = toFormValidator(
@@ -158,7 +158,6 @@ const addWorld = handleSubmit((values) => {
 
   world.uid = randomString(7)
   if (localSave.value) localUserWorlds.value.push(world)
-  else userWorlds.value.push(world)
   toggleShowAddWorld()
 })
 
