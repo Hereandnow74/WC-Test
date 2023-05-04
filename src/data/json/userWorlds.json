@@ -264,50 +264,7 @@
     ],
     "uid": "dRBKBb"
   },
-  {
-    "worldName": "Riordanverse",
-    "rating": 8,
-    "condition": [
-      {
-        "rating": 6,
-        "name": "Percy Jackson and the Olympians"
-      },
-      {
-        "name": "Ancient Roman Empire",
-        "rating": 6
-      },
-      {
-        "name": "The Trials of Apollo",
-        "rating": 6
-      },
-      {
-        "name": "The Heroes of Olympus",
-        "rating": 7
-      },
-      {
-        "name": "Ancient Greece",
-        "rating": 7
-      },
-      {
-        "name": "Birth of the Olympians",
-        "rating": 8
-      },
-      {
-        "name": "The First Titanomachy",
-        "rating": 8
-      },
-      {
-        "name": "The First Gigantomachy",
-        "rating": 8
-      },
-      {
-        "name": "Birth of the Primordials",
-        "rating": 10
-      }
-    ],
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992751586965205083/8bb304a6f8c617d03d55cd618a983329.jpg",
-    "uid": "BV4Mtv"
-  },
+  {"uid":"AAHujn","worldName":"Riordanverse","rating":6,"image":"https://cdn.discordapp.com/attachments/925963686433132644/992751586965205083/8bb304a6f8c617d03d55cd618a983329.jpg","condition":[{"rating":6,"name":"Ancient Roman Empire"},{"name":"Percy Jackson and the Olympians","rating":6},{"name":"The Trials of Apollo","rating":6},{"name":"Ancient Greece","rating":7},{"name":"The Heroes of Olympus","rating":7},{"name":"Birth of the Olympians","rating":8},{"name":"The First Titanomachy","rating":8},{"name":"The First Gigantomachy","rating":8},{"name":"Birth of the Primordials","rating":10}]},
   {
     "worldName": "Rune Factory",
     "rating": 4,
@@ -826,7 +783,7 @@
         "name": "Frontier"
       }
     ],
-    "image": "https://i.pinimg.com/736x/99/26/5e/99265ece8618637b2f4e5a9f57738f87--digimon--digimon-tamers.jpg",
+    "image": "https://i.imgur.com/N9KY86cl.jpg",
     "uid": "fJEOie"
   },
   {
@@ -1498,7 +1455,7 @@
   {
     "worldName": "Solo Leveling",
     "rating": 10,
-    "image": "https://d1ed0vta5mrb00.cloudfront.net/comics/187/thumbnails/cover_fa8c67b3-ba37-4b15-ad11-814280e945d8.jpg",
+    "image": "https://i.imgur.com/Yz8ng5Ol.jpg",
     "uid": "5hsu2Z"
   },
   {
@@ -5818,7 +5775,7 @@
   {
     "worldName": "Reincarnated as a Sword",
     "rating": 7,
-    "image": "https://m.ani4u.org/wp-content/uploads/2022/10/game4v-Reincarnated-as-a-Sword-anime-6-1632470742-31-1140x647-1.jpg",
+    "image": "https://i.imgur.com/IdSsaG3l.jpg",
     "uid": "pQswAV"
   },
   {
@@ -6081,7 +6038,7 @@
   {
     "worldName": "By the Grace of the Gods",
     "rating": 4,
-    "image": "https://www.gamersdecide.com/sites/default/files/styles/news_images/public/article-cute-art-style-anime-2a.jpg",
+    "image": "https://i.imgur.com/KTD1geAl.jpg",
     "uid": "PqlH8j"
   },
   {
@@ -6253,7 +6210,7 @@
   {
     "worldName": "Dragonar Academy",
     "rating": 4,
-    "image": "https://i.imgur.com/GwWIP76.png",
+    "image": "https://i.imgur.com/O0phJycl.jpg",
     "uid": "FEpM1l"
   },
   {
@@ -6505,7 +6462,7 @@
   {
     "worldName": "Haiyore! Nyaruko-san",
     "rating": 7,
-    "image": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/185654673919ccca2bda7653ebfa8b0c.jpe",
+    "image": "https://i.imgur.com/iEVg8qj.jpg",
     "uid": "yztQP8"
   },
   {"uid":"ZNkth7","worldName":"Angelarium","rating":4,"image":"https://i.imgur.com/ZjoBspu.jpg","condition":[{"name":"Physical Plane","rating":4},{"name":"The Tree of Life","rating":10}]},
@@ -6518,16 +6475,17 @@
   {"uid":"olsjaN","worldName":"Dungeons & Dragons","rating":9,"image":"https://i.imgur.com/u6pxUgX.jpeg","condition":[{"name":"Dark Sun","rating":9},{"name":"Baldurs Gate","rating":7},{"name":"Exandria (Critical Role)","rating":7},{"name":"Mythic Odysseys of Theros","rating":7},{"name":"Eberron","rating":7},{"name":"Forgotten Realms","rating":8}]},
   {"uid":"qmeTPL","worldName":"Ready Player One ","rating":4,"image":"https://ichef.bbci.co.uk/images/ic/1200x675/p0dcd5pr.jpg"},
   {"uid":"HJGctg","worldName":"Shantae","rating":5,"image":"https://media.vandal.net/m/22246/shantae-halfgenie-hero-20161220102532_11.jpg"},
-  {"uid":"CArvMe","worldName":"Dragons Rioting","rating":5,"image":"https://i.ytimg.com/vi/4DU-JfDEB4k/maxresdefault.jpg"},
+  {"uid":"CArvMe","worldName":"Dragons Rioting","rating":5,"image":"https://i.imgur.com/N0fTXtOl.jpg"},
   {"uid":"oQNRPT","worldName":"My Next Life as a Villainess: All Routes Lead to Doom!","rating":3,"image":"https://images.fanart.tv/fanart/my-next-life-as-a-villainess-all-routes-lead-to-doom-617683c88f4a5.jpg","additional":"","condition":[{"name":"On the Verge of Doom - Timeline","rating":4},{"name":"Fortune Lover - Timeline","rating":5}]},
   {"uid":"fmiURf","worldName":"Tomo-chan is a Girl!","rating":1,"image":"https://i.imgur.com/xRoOX1Bl.jpg"},
   {"uid":"QxAyqs","worldName":"Metro","rating":5,"image":"https://i.imgur.com/9jtfH6b.jpg","condition":[{"name":"Books Series","rating":5},{"name":"Game Series","rating":5}]},
   {"uid":"AGHofj","worldName":"Shadow Slave","rating":7,"image":"https://i.redd.it/52cusb8csb8a1.png","condition":[{"name":"Standard","rating":7},{"name":"Dream Realm","rating":8}]},
-  {"uid":"WADGAb","worldName":"Valhalla Saga","rating":10,"image":"https://cdn.scribblehub.com/siteimg/77717/3.png"},
+  {"uid":"WADGAb","worldName":"Valhalla Saga","rating":10,"image":"https://i.imgur.com/zkGIu6rl.jpg"},
   {"uid":"gGAugA","worldName":"Amphibia","rating":4,"image":"https://i.imgur.com/kuT8Z48.jpg"},
   {"uid":"xijaBx","worldName":"American McGee's Alice","rating":2,"image":"https://w0.peakpx.com/wallpaper/263/225/HD-wallpaper-alice-art-dress-game-fantasy-girl-water-drops-alice-madness-returns-rain-woma-pink-blue.jpg","additional":"Binding Alice would allow her to use all of her Abilities from Wonderland even in the Real World.","condition":[{"name":"Wonderland - Queen of Hearts Rule","rating":5},{"name":"Wonderland - Dollmaker Rule","rating":6}]},
   {"uid":"UlMhJX","worldName":"Breath of Fire","rating":7,"image":"https://cdn.donmai.us/sample/ad/17/__rinpoo_chuan_nina_nina_nina_lin_and_29_more_breath_of_fire_and_5_more_drawn_by_ji_609237__sample-ad174125c045e0ecdfb0273b6bc6cd4c.jpg","condition":[{"name":"Breath of Fire 1","rating":7},{"name":"Breath of Fire 2","rating":7},{"name":"Breath of Fire 3","rating":7},{"name":"Breath of Fire 4","rating":7},{"name":"Dragon Quarter","rating":7}]},
   {"uid":"SxVebY","worldName":"The Sun Eater","rating":5,"image":"https://files.catbox.moe/vc1ou6.jpg","condition":[{"name":"After 'Kingdoms of Death'","rating":6}]},
   {"uid":"FlstkK","worldName":"Gakkou Gurashi! (School-Live!)","rating":2,"image":"https://cdn.donmai.us/original/bc/78/__ebisuzawa_kurumi_wakasa_yuuri_takeya_yuki_naoki_miki_and_wakasa_ruu_gakkou_gurashi_drawn_by_chiba_sadoru__bc789b01c0c5cafba811997f810911a7.jpg"},
-  {"uid":"SymORE","worldName":"Vinland Saga","rating":3,"image":"https://cdn.donmai.us/original/bf/e0/__thorfinn_canute_thorkell_thors_ylva_and_3_more_vinland_saga_drawn_by_botanicaxu__bfe024487aa6864e11067ac0f48ba437.jpg"}
+  {"uid":"SymORE","worldName":"Vinland Saga","rating":3,"image":"https://cdn.donmai.us/original/bf/e0/__thorfinn_canute_thorkell_thors_ylva_and_3_more_vinland_saga_drawn_by_botanicaxu__bfe024487aa6864e11067ac0f48ba437.jpg"},
+  {"uid":"PdkRMq","worldName":"Honkai: Star Rail","rating":7,"image":"https://spaces.whynowgaming.com/uploads/2023/04/honkai.jpg"}
 ]

@@ -51,6 +51,7 @@ export const nicknames = [
   'Eerie Sharp',
   'Exactingspoon',
   'DragonBoy.EXE',
+  'Michael L.',
 ]
 
 export const WORLD_COLORS = ['bg-green-600', 'bg-teal-600', 'bg-cyan-600',

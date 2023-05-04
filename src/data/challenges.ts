@@ -551,8 +551,9 @@ export const skyblockPerks = [
     title: 'Visitation Pass',
     image: '',
     whitelist: ['Skyblock'],
-    cost: 50,
+    cost: 10,
     multiple: true,
+    max: 10,
     desc: `
     Each time you purchase this perk, you can choose to have the next portal location be a world you’ve already visited. You choose the world when this perk is purchased. This perk can only be purchased if it has not already been purchased for the next portal.
     <p>The cost of this perk is dependent on the Danger Rating of the world and is equal to the rating times 10. For example, a DR1 world would cost 10 Credits and a DR5 world would cost 50 Credits.</p>

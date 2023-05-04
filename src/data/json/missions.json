@@ -1,5 +1,292 @@
 [
   {
+    "reward": "1000 credits, all worlds you'll visit next work under Xianxia principles",
+    "image": "",
+    "author": "Ratcatcher",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Xianxia'd World",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "Next level of your chosen Heritage for free or 200 credits",
+        "type": "Other",
+        "value": "Reach the main villain's goal in their place"
+      },
+      {
+        "reward": "Capture of your target or 200 credits",
+        "type": "Other",
+        "value": "Seduce and/or cuck the main hero without using Bindings or overt mind control"
+      },
+      {
+        "reward": "New Binding method added",
+        "type": "Perks",
+        "value": "Become the student and chosen successor of the main hero's mentor without Binding them"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Chargen only."
+      },
+      {
+        "value": "You start as Extra or Substitute of the lowest possible Tier. No protagonist, member of the main cast, or important villain."
+      },
+      {
+        "value": "As a Cultuvator, you get Body Tune-Up, Athletic Talent, Martial Talent, and Soul Talent for free."
+      },
+      {
+        "value": "Magic, ki-enhanched martial arts, and psychic abilities all work under Xianxia principles."
+      },
+      {
+        "value": "The main villain knows about you, and for whatever reason they want you dead or captured."
+      },
+      {
+        "value": "You must either survive a full year or defeat the main villain."
+      }
+    ],
+    "budget": 0,
+    "desc": "Surprise, Contractor! By request of a customer, the world you're starting into has been given Xianxia characteristics. Oh, everything you were expecting is still there, it's just that behind the scenes there are Cultivators, Divine Tribulations, and the likes, and you are starting as a basic Independent Cultivator.",
+    "uid": "ZuglD"
+  },
+  {
+    "reward": 350,
+    "image": "https://i.imgur.com/mEXW7PS.png",
+    "author": "TDon123",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Felling of the Syndicate",
+    "loca": "DC",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": 150,
+        "type": "Credits",
+        "value": "Take over in the Crime Syndicate's place and rule as a benevolent overlord."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "The Crime Syndicate's leaders, Ultraman, Superwoman, Owlman, Power Ring, Johnny Quick, and J'edd J'arkus all must die."
+      },
+      {
+        "value": "The Made-Men must all either agree to serve you or Law Enforcement, and are otherwise need to be disposed of."
+      },
+      {
+        "value": "The Crime Syndicate's various resources such as bases, facilities, drugs, etc should all be destroyed."
+      },
+      {
+        "value": "The Governments of the world should no longer fear the Crime Syndicate."
+      }
+    ],
+    "budget": 0,
+    "desc": "You are to go to a variant of the DCAU in which the Justice League: Crisis on Two Earths movie is canon. It occurs between Justice League and Justice League Unlimited. You are tasked with systematically dismantling the Crime Syndicate before Lex Luthor invents dimension travel. ",
+    "uid": "RfogR"
+  },
+  {
+    "reward": 2,
+    "image": "https://i.pinimg.com/originals/36/3d/dd/363ddd06ecbe8cd3643ef1a7e6d8fca7.jpg",
+    "author": "Heisen",
+    "rewardType": "IMG Tickets",
+    "source": "",
+    "title": "Burn the witch!",
+    "loca": "Terraria",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": 200,
+        "type": "Credits",
+        "value": "Defeat all the bosses in combat before selling them"
+      },
+      {
+        "reward": 1,
+        "type": "IMG Tickets",
+        "value": "Make the Angler suffer"
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Craft all items that is craftable"
+      },
+      {
+        "reward": "Full template of all calamity boss",
+        "type": "Perks",
+        "value": "Try a no death run after beating all the bosses"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Beat all the bosses"
+      },
+      {
+        "value": "The difficulty is Revengeance, good luck."
+      },
+      {
+        "value": "Make proper housing for all the npcs"
+      },
+      {
+        "value": "Make the first Supreme Calamitas you summoned suffer before selling her to the company"
+      },
+      {
+        "value": "You are allowed to purchase 1 companion during chargen. T7."
+      },
+      {
+        "value": "You are not allowed to leave the world before finishing the main mission"
+      }
+    ],
+    "budget": 2000,
+    "desc": "Start in the world of Terraria as the Terrarian. In addition to the calamity mod, you also get Magic Storage, Ore Excavator, and Recipe Browser. Boss Checklist, Fargo's Mutant Mod,  AlchemistNPCLite, Calamity's Vanities, and Calamity Mod Music. This mod would help you with the hellish storage, recipe, and some much-needed music. Don't you worry about the rewards, after this mission you are guaranteed to become TX.",
+    "uid": "JmdxX"
+  },
+  {
+    "reward": 500,
+    "image": "https://cdn.donmai.us/original/9b/ea/9bea8afb93af29e2d959bb72532e6ace.jpg",
+    "author": "Zaralann",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Hail to the King!",
+    "loca": "Legend of Zelda",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "Impa[T5] is instantly Captured.",
+        "type": "Companions",
+        "value": "Princess Zelda is Captured via True Love Confession Method."
+      },
+      {
+        "reward": "Navi[T3] is instantly Captured.",
+        "type": "Companions",
+        "value": "Saria is Captured via True Love Confession Method."
+      },
+      {
+        "reward": "Mission Ends.",
+        "type": "Other",
+        "value": "Princess Zelda fight, defeats and kills Adult Link in one-on-one combat out of love for you."
+      },
+      {
+        "reward": "Mission Ends.",
+        "type": "Other",
+        "value": "Saria fight, defeats and kills Adult Link in one-on-one combat out of love for you."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You enter 'The Legend of Zelda: Ocarina of Time'[DR6] right as Link enters and gets Sealed in the Sacred Realm for the first time."
+      },
+      {
+        "value": "You take place of Ganondorf, you do not gain any of his Powers/Abilities/Knowledge/Skills, only his equipment and gear."
+      },
+      {
+        "value": "You must purchase [Added Potential](5C) for this World."
+      },
+      {
+        "value": "You cannot purcahse [Template Stacking] for yourself or your Waifu."
+      },
+      {
+        "value": "You or you Waifu cannot leave the World until the Mission is over."
+      },
+      {
+        "value": "You goal is to rebuild Hyrule into a prosperous and advanced Kingdom where you would be accepted and loved and nobody would desire your loss/demise."
+      },
+      {
+        "value": "You cannot use Mind Control/Mind Altering Effects and other such means to make the population love/accept/etc. you."
+      },
+      {
+        "value": "Princess Zelda is immune to Mind Control/Mind Altering Effects, Binding and Lures for the duration of the Mission."
+      },
+      {
+        "value": "After Eight Years or if a certain Objective is met, whatever comes sooner."
+      }
+    ],
+    "budget": 5,
+    "desc": "Arrogans is a path to failure... Wouldn't you agree, O' Contractor? This Mission is really simple, it is for you to not be arrogant, to be patient and to be prepared. Seven years are a long time to build up your armies, to sharpen your blade and to build a Kingdom worth of Ruling.",
+    "uid": "FBjmC"
+  },
+  {
+    "reward": "20 credits, Martial Talent, the option to turn this into a Grand scale mission.",
+    "image": "",
+    "author": "Lethaius",
+    "rewardType": "Other",
+    "source": "",
+    "title": "History's Strongest Grappler",
+    "loca": "Fusion of: History's Strongest Disciple Kenichi & Baki The Grappler",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "Talent Sharing (Martial), a set of training weights(enchanted to always be just heavy enough to be a strain).",
+        "type": "Other",
+        "value": "Survive a Month"
+      },
+      {
+        "reward": "20 credits, A Gi made by my personal Tailor (Enchanted, Self Cleaning + Repairing)",
+        "type": "Other",
+        "value": "Survive half a year"
+      },
+      {
+        "reward": "Added Potential: HSDK Ki, Template Stacking I of a chosen martial art",
+        "type": "Perks",
+        "value": "Reach the point where your chosen master recognizes you as a proper Expert of your martial art."
+      },
+      {
+        "reward": 10,
+        "type": "Credits",
+        "value": "Receive and invitation to the underground arena and win your first match."
+      },
+      {
+        "reward": "A personal lesson with (Insert: Author chosen martial artist contractor)",
+        "type": "Other",
+        "value": "Win a tournament with at least 10 participants that a majority of which are your martial peers"
+      },
+      {
+        "reward": "Body Tune-Up's potential raised to match the likes of Yujiro, Hayato, and Pickle, but you need to work to reach said potential.",
+        "type": "Other",
+        "value": "Place in the top 3 of a Masters tournament."
+      },
+      {
+        "reward": "??? (Hidden, Scathach T8 Nasuverse Servant, or other fitting t8 or less servant that trained heros.)",
+        "type": "Companions",
+        "value": "Win the tournament (Secret secondary of the above objective)"
+      },
+      {
+        "reward": "???",
+        "type": "Other",
+        "value": "Convince Hayato Furinji or Yujiro Hamna to teach you personally."
+      },
+      {
+        "reward": "??? (Hidden, Free Template of the respective fighters bloodline.)",
+        "type": "Perks",
+        "value": "Beat either Hayato or Yujiro in a fair fight. Can be done for each opponent."
+      },
+      {
+        "reward": "???",
+        "type": "Other",
+        "value": "Beat them both in a fight at the same time."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "All bindings and Lures, except for love confession, are disabled for the world so long as this mission is active."
+      },
+      {
+        "value": "Supernatural powers aren't forbidden, but the goal of this mission is to gain skill, not crush your opponents with overwhelming power. Going against the spirit of the mission is seen as a forfiet."
+      },
+      {
+        "value": "When taking this mission you're restricted to what Body Tune-Up would give for the average human, but with training you'll be able to rise above this level."
+      },
+      {
+        "value": "For Authors: Pick a martial artist contractor that would have issued this mission."
+      }
+    ],
+    "budget": 0,
+    "desc": "Do you know how many contractors died last quarter because they thought that all they needed was some fancy cheat skill, or a flashy spell? It's unsustainable! That's where you come in! You've been selected to take part in a new mission in hopes of increasing contractor survivability.\nThe mission is simple: Find a master and survive a week of their training.\n>WIP",
+    "uid": "Gyykr"
+  },
+  {
     "reward": 2,
     "image": "",
     "author": "Heisen",
@@ -104,35 +391,36 @@
     "rewardType": "Other",
     "source": "",
     "title": "Would... You... Kindly...?",
+    "uid": "ImVOG",
     "loca": "Bioshock",
     "lewd": false,
     "scope": "Standard",
     "objectives": [
+      {
+        "reward": "Beginning of 'Bioshock'.",
+        "type": "Other",
+        "value": "'Bioshock Infinite' Completed."
+      },
       {
         "reward": "Beginning of 'Bioshock 2'.",
         "type": "Other",
         "value": "'Bioshock' Completed."
       },
       {
-        "reward": "Beginning of 'Bioshock Infinite'.",
-        "type": "Other",
-        "value": "'Bioshock 2' Completed."
-      },
-      {
         "reward": "New World Unlocked.",
         "type": "Other",
-        "value": "'Bioshock Infinite' Completed."
+        "value": "'Bioshock 2' Completed."
       }
     ],
     "conditions": [
       {
-        "value": "You will enter 'Bioshock'[DR4] and will take Protagonist's place, all logical/continuation issues would be adjusted."
+        "value": "You will enter 'Bioshock'[DR5] and will take Protagonist's place, all logical/continuation issues would be adjusted."
       },
       {
         "value": "You must purchase [Added Potential](5C) for this World."
       },
       {
-        "value": "You will arrive into 'Bioshock' at the start of the Game."
+        "value": "You will arrive into 'Bioshock Infinite' at the start of the Game."
       },
       {
         "value": "To not exceed the time of the Mission the Events would follow the sequences presented within the Game, for the durations of the Mission the 'Timeskips' within the Game would be provided by the Company."
@@ -154,8 +442,7 @@
       }
     ],
     "budget": 5,
-    "desc": "O' Contractor... Would You Kindly provide us with a service? Would You Kindly explore these Scenrios? Would You Kindly take the place of those who did it before? Would You Kindly solve the issues of these Scenarios? Would You Kindly take the place of those we took for processing? Would You Kindly do that, O' Contractor?",
-    "uid": "ImVOG"
+    "desc": "O' Contractor... Would You Kindly provide us with a service? Would You Kindly explore these Scenrios? Would You Kindly take the place of those who did it before? Would You Kindly solve the issues of these Scenarios? Would You Kindly take the place of those we took for processing? Would You Kindly do that, O' Contractor?"
   },
   {
     "reward": 500,
@@ -1255,7 +1542,7 @@
     "author": "N_Hermit",
     "rewardType": "Credits",
     "source": "",
-    "title": "Studying the Blade",
+    "title": "Star Wars: Studying the Blade",
     "uid": "Qrxtb",
     "loca": "Star Wars",
     "lewd": false,
@@ -1296,7 +1583,7 @@
       }
     ],
     "budget": 140,
-    "desc": "The Lightsaber - arguably one of the coolest weapons ever created. It's something many people have dreamed of wielding.  \n\nWell, since you've chosen to become a Force Wielder it would be a complete shame if you didn't learn how to use this weapon. What sort of Jedi or Sith doesn't know how to use their Lightsaber????  \n  \nObjective: Completely master 1 traditional Lightsaber form. Being proficient in it is not enough. You MUST achieve complete mastery of this form and be recognized as a master by your teacher(s).  \n  \nThe 7 forms are:\nForm I: Shii-Cho (The base form, Famous Users: Meetra Surik)\nForm II: Makashi (Famous users: Count Dooku)\nForm III: Soresu (Famous users: Obi-Wan Kenobi)\nForm IV: Ataru (Famous users: Yoda, Qui-Gon Jinn)\nForm V: Shien/Djem So (Famous users: Anakin Skywalker)\nForm VI: Niman (Famous users: Exar Kun)\nForm VII: Juyo/Vaapad (Famous users: Darth Sidious/ Mace Windu)"
+    "desc": "The Lightsaber - arguably one of the coolest weapons ever created. It's something many people have dreamed of wielding.  \n  \nWell, since you've chosen to become a Force Wielder it would be a complete shame if you didn't learn how to use this weapon. What sort of Jedi or Sith doesn't know how to use their Lightsaber????  \n  \nObjective: Completely master 1 traditional Lightsaber form. Being proficient in it is not enough. You MUST achieve complete mastery of this form and be recognized as a master by your teacher(s).  \n  \nThe 7 forms are:  \nForm I: Shii-Cho (The base form, Famous Users: Meetra Surik)  \nForm II: Makashi (Famous users: Count Dooku)  \nForm III: Soresu (Famous users: Obi-Wan Kenobi)  \nForm IV: Ataru (Famous users: Yoda, Qui-Gon Jinn)  \nForm V: Shien/Djem So (Famous users: Anakin Skywalker)  \nForm VI: Niman (Famous users: Exar Kun)  \nForm VII: Juyo/Vaapad (Famous users: Darth Sidious/ Mace Windu)"
   },
   {
     "reward": 200,

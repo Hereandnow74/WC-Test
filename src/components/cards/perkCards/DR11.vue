@@ -12,17 +12,17 @@
       :data-src="perk.image"
       :alt="perk.title"
     />
-    <h3 class="text-xl text-center">
+    <h3 class="relative text-xl text-center">
       <span>{{ perk.title }}</span>
+      <fa-solid:check
+        v-if="flags.danger11Start"
+        class="absolute right-1 top-1 text-green-500"
+      />
     </h3>
     <Desc :desc="perk.desc" />
     <div v-if="perk.special" class="mx-2">
       Special: <span class="text-purple-500 dark:text-purple-300">{{ perk.special }}</span>
     </div>
-    <fa-solid:check
-      v-if="flags.danger11Start"
-      class="absolute right-0 top-0 m-2 text-green-500"
-    />
   </div>
 </template>
 
