@@ -81,14 +81,21 @@
           >Pandora12</a>)
         </h3>
         <h3 v-else class="sm:text-lg text-center mb-2">
-          Despin’s Tier Chart (by
-          <a
+          Despin and Alucard’s Tier Chart
+          (<a
             class="text-blue-500 hover:underline"
-            href="https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#"
+            href="https://docs.google.com/document/d/1kXgdEuvp30p0pSJYV4IboyhF0lH9rEgXAwc5F7EQ_uQ/edit"
             target="_blank"
             rel="noopener noreferrer"
-          >Despin</a>)
+          >link</a>)
         </h3>
+        <ul class="list-disc list-inside">
+          <li>Beings are tiered based on what they can do, regardless of how.</li>
+          <li>Tinkers/Power Granters/etc are tiered equal to their results.</li>
+          <li>Significant Limits can reduce tier, while ability ease can raise it. Example: frequency, time limit, prep, control, skill, materials, cost, or backlash</li>
+          <li>A TX-TZ retinue member automatically becomes an Omniversal Hopper.</li>
+        </ul>
+        <br>
         <Table
           :rows="despinData"
           class="text-sm md:text-base w-full flex-grow text-black"
@@ -203,42 +210,32 @@ const waifuData = [
 ]
 
 const despinData = [
-  ['T1', 'Commoner', 'Has no useful skill, power, or special trait.'],
-  ['T2', 'Proficient', `Has a useful skill, power, or special trait.
-    A trained fighter, political clout, high intelligence, etc.
-    Also includes those with untrained minor powers.
+  ['T1', 'Has no useful skill, power, or special trait.'],
+  ['T2', `Has a useful skill. Most mundane people fall in this tier.
+Housewife, teacher, chef, doctor, trained fighter, political proficiency, high intelligence, etc.
   `],
-  ['T3', 'Expert', `Pushes the upper limits of what a human is capable of.
-Leader in their field, including mundane combat, political control, genius, etc.
+  ['T3', `Pushes the upper limits of mundane skill, or has a minor power, untrained power, or special trait.
+Special forces, political expertise, genius, child with magical potential, long lived, etc.
   `],
-  ['T4', 'Adventurer', `Has at least one skill, power, or special trait beyond normal human ability.
-Abilities may be specific or limited in some way.
-Also includes someone with Immortality as a stand-alone power.`],
-  ['T5', 'Hero', `Has at least one well-trained, versatile, or useful superhuman ability.
-Street level superheroes and shonen characters typically start here, as do
-some with a trace of divinity.`],
-  ['T6', 'Paragon', `Has at least one skill, power, or special trait beyond normal superhuman ability.
-A Dimension Hopper or Resurrector with severe limitations typically starts here.
+  ['T4', `Has at least one extraordinary skill/power/special trait.
+Ageless Immortality or Charles Atlas Superpowers start here.`],
+  ['T5', `Has at least one well-trained/versatile/useful extraordinary ability.
+Superheroes and shonen characters often start here, as well as the most Limited Resurrectors.`],
+  ['T6', `From this tier on, increase in ability value and scale begin to have more weight. Has at least one skill/power/special trait of notable potency or (to use a Vs term) up to Multi-City Block level.
 `],
-  ['T7', 'Epic', `Has an ability that can affect a massive area, a useful esoteric effect, or
-can destroy a small celestial object.
-A God with limitations typically starts here, as does a Person of Mass Destruction.
+  ['T7', `Has a useful esoteric effect or is up to Country level in power.
+Time Travel and Local/Parallel Dimension Travel start here.
 `],
-  ['T8', 'Legendary', `Has an ability that can affect a significant landmass, a powerful esoteric effect,
-or can destroy a planet sized object.
-An unlimited Dimension Hopper or Resurrector also starts here.
+  ['T8', `Possesses a powerful esoteric effect or is up to Continent level. 
+Particularly potent or valuable abilities often start here, including Conceptual Immortality, an Omniversal Hopper, or an Unrestricted Resurrector.`],
+  ['T9', 'Abilities may be more abstract or conceptual, or up to Planet level. While many deities exist at lower tiers, this is generally the point where beings can start to be considered capital-G Gods.'],
+  ['T10', `Has an ability that can affect/influence/manipulate on a planetwide scale, or is capable of the genuinely impossible. Star level or higher, scaling infinitely upwards.
 `],
-  ['T9', 'Titan', `Has an ability that can affect a planet, a high-end esoteric effect, or can
-accurately be described as a Walking Calamity.
+  ['TX', `Not necessarily unkillable or unstoppable, but can somehow break or bypass power-scaling entirely. May act on a universal scale, but can only operate and/or exist within a single universe.
 `],
-  ['T10', 'God', `Has an ability that can casually affect a planet, create a world, or is capable
-of the genuinely impossible.
-Scales infinitely. Planetary to multiversal influence all fall in this tier.
+  ['TY', `Able to operate beyond the confines of one universe and may be able to affect multiple universes at once. A being that embodies a multiverse is also typically found here.
 `],
-  ['TX', 'Outsider', `Has broad reality altering capabilities or otherwise possesses an ability that
-breaks or bypasses power-scaling entirely, though is not necessarily unkillable
-or unstoppable.
-A TX retinue member automatically becomes an unlimited Dimension Hopper.
+  ['TZ', `Operates on an Outerversal or Boundless scale. Able to manipulate multiverses and beyond at their leisure. Traditionally holds near if not absolute power in their narrative, and is often comparable to the author, able to manipulate anything and everything.
 `],
 ]
 

@@ -62,7 +62,7 @@ export function deletePerk(perkList: Perk[], checkFunc: (arg: any) => boolean) {
   const toDel = []
   for (let i = 0; i < perkList.length; i++) {
     const origPerk = ALL_PERK_TITLES.value[perkList[i].title]
-    if (!checkFunc(origPerk)) {
+    if (!checkFunc(origPerk) && !origPerk.chargen) {
       toDel.push(perkList[i].title)
       if (!flags.value.chargen && perkList[i].cost > 0) fee.value += Math.round(perkList[i].cost * 0.2) || 0
       if (perkList[i].freebies) deleteFreebies(perkList[i].freebies)

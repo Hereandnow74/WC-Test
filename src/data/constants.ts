@@ -201,7 +201,7 @@ export const waifuTags = {
   dg: { tag: 'Dragon', category: 'Race', short: 'dg', effect: '', desc: '', style: { background: 'linear-gradient(0deg, rgba(255,201,0,1) 0%, rgba(233,83,28,1) 70%)', color: '#fff' } },
   th: { tag: 'Transhuman', category: 'Personality', short: 'th', effect: '', desc: 'Strives to surpass their current limitations and achieve transcendence.', style: { background: 'linear-gradient(0deg, rgba(167,0,255,1) 0%, rgba(28,0,245,1) 100%)', color: '#fff' } },
   ot: { tag: 'Outsider', category: 'Other', short: 'ot', effect: '', desc: '', style: { background: 'linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(83,0,214,1) 100%)', color: '#fff' } },
-  pp: { tag: 'Psychopomp', category: 'Other', short: 'pp', effect: '', desc: 'An Entity that collects souls of the dead and shepherds them to the afterlife.', color: 'bg-[#444] text-white' },
+  pp: { tag: 'Psychopomp', category: 'Other', short: 'pp', effect: '', desc: 'Any death-alligned entity that claims souls as a function of their role; Reapers, soul shepherds, judges of the dead.', color: 'bg-[#444] text-white' },
 
   gd: { tag: 'Deity', category: 'Race', short: 'gd', effect: '', desc: 'A God or Goddess.', color: 'bg-[#ffffff] text-black' },
   rs: { tag: 'Resurrection', category: 'Powers', short: 'rs', effect: '', desc: 'Capable of fully resurrecting others.', color: 'bg-[#ffffff] text-black' },

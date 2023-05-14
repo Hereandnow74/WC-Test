@@ -325,6 +325,12 @@ const options = computed(() => {
     opt.world = worldName.value
   if (tags.value.length)
     opt.tags = tags.value
+  if (gender.value) {
+    if (opt.tags)
+      opt.tags.push({ tag: gender.value, include: true })
+    else
+      opt.tags = [{ tag: gender.value, include: true }]
+  }
   if (minTier.value || maxTier.value)
     opt.tier = { min: minTier.value, max: maxTier.value }
 

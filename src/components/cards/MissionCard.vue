@@ -48,13 +48,15 @@
     <div v-if="mission.budget" data-tippy-content="The sum of the list prices for your retinue’s effective tiers after step 5, plus the combined list prices of your Catch-a-Ride vehicles. Imaginary Tiers are valued according to the exchange rate of their IMG value. If you only bring a limited force into a PvP match, only they will count towards this." class="text-center text-sm text-amber-800 dark:text-amber-300">
       ( The optimal <span class="text-green-700 dark:text-green-300 underline cursor-pointer">asset value</span> for this mission is in <span class="text-green-800 dark:text-green-300">{{ Math.floor(mission.budget * 0.8) }}</span> - <span class="text-green-800 dark:text-green-300">{{ Math.floor(mission.budget * 1.2) }}</span> credits range)
     </div>
-    <Desc :desc="mission.desc" />
+    <div class="whitespace-pre-wrap px-2">
+      {{ mission.desc }}
+    </div>
     <div v-if="mission.conditions.length" class="px-2 flex flex-col gap-1">
       <h4 class="text-amber-800 dark:text-amber-300">
         Conditions:
       </h4>
       <ul class="list-disc list-inside">
-        <li v-for="req in mission.conditions" :key="req.value" class="pl-4">
+        <li v-for="req in mission.conditions" :key="req.value" class="pl-4 py-0.5">
           {{ req.value }}
         </li>
       </ul>
