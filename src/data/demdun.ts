@@ -24,8 +24,11 @@ homes.push({
   max: 2,
   whitelist: ['Pocket Space'],
   desc: `
-<p>A 75 sq m extradimensional residence, for when you need a place to crash. It has all the basics: two medium bedrooms, one bathroom, a living area, kitchenette, and closet space. All characters with alternate outfits, shown in any official source, will find them stored in their room or closet. This includes phone, TV, internet, and other network access to any worlds visited after chargen. Be careful not to mix up separate networks; URLs may not lead to the same place from one world to the next.</p>
-<p>Access it by plopping a portal onto any reasonably flat surface. Only one portal may exist at a time and you may close it with a thought at any time, whether you’re in or out of the apartment; if you’re inside when the portal is closed, the new exit must be reasonably close to the previous entrance. Some independent multiverse travelers may enter your universe directly. This requires dedicated and deliberate effort and a beacon to follow.</p>
+<p>A 75 sq m extradimensional residence, for when you need a place to crash. It has all the basics: two medium bedrooms, one bathroom, a living area, kitchenette, and closet space. All characters with alternate outfits, shown in any official source, will find them stored in their room or closet. This includes phone, TV, internet, and other network access to any worlds visited after, but not before, chargen. Be careful not to mix up separate networks; URLs may not lead to the same place from one world to the next.</p>
+<p>You may access your apartment through portals. These are procedurally generated in each world, generally appearing near locations that are important or useful to you or your purchased and captured waifus. Portals must be on reasonably flat surfaces.</p>
+<p>Portals will activate automatically when approached by a valid user. At first, this will only be you. Your subjects can only enter or exit your apartment if they can travel within a local multiverse (bypassing the door entirely) or you hold the door open for them. Only one portal may open at a time and it will automatically close when not in use.</p>
+<p>Valid users can sense the nearest portal’s location even without a map, and more precisely the closer you are to it. This is no replacement for a true map. Neutral, hostile, and uninvited eyes will not notice a portal’s presence, activation, or use, and cannot pass through.
+Independent multiverse travelers who are not your subjects may also enter your universe directly, provided they spend dedicated and deliberate effort and have a beacon to follow.</p>
 <p>Your inventory becomes a sealed vault inside the apartment. You may open the vault while in your Pocket Space, but doing so subjects its contents to the passage of time. If you or a resisting or unwilling subject is inside the vault when it is sealed again, time will continue to pass.</p>
 <p>A second purchase of this perk will double the floor area to 150 sq m. Whether the additional space is a loft, basement, or just a larger main level is your choice.</p>
 `,
@@ -38,7 +41,7 @@ homes.push({
   image: 'https://i.ibb.co/vXfKMBb/All-Roads-Lead-To-Home.jpg',
   cost: 10,
   whitelist: ['Pocket Apartment'],
-  desc: 'Your purchased and captured retinue members may now create portals to your apartment. Multiple portals are now allowed. Portals will automatically close when not in use, but their locations will be saved into memory for you and your retinue to sense and re-open later.',
+  desc: 'Your purchased and captured retinue members are now valid users for your apartment’s portals, with all of the same benefits as you. You may now keep multiple portals open simultaneously, though the basic apartment only has so much room to fit them.',
 })
 
 homes.push({
@@ -46,7 +49,7 @@ homes.push({
   title: 'Sweet Home',
   category: 'Home',
   image: 'https://i.ibb.co/mRzHnHt/Sweet-Home-New.jpg',
-  cost: 10,
+  cost: 20,
   multiple: true,
   max: 2,
   whitelist: [{ title: 'Pocket Apartment', count: 2 }],
@@ -62,7 +65,7 @@ homes.push({
   title: 'Grand Manor',
   category: 'Home',
   image: 'https://i.ibb.co/9vZbxG4/Grand-Manor-New.jpg',
-  cost: 10,
+  cost: 30,
   multiple: true,
   max: 2,
   whitelist: [{ title: 'Sweet Home', count: 2 }],
@@ -91,7 +94,7 @@ homes.push({
   title: 'Warehouse District',
   category: 'Home',
   image: 'https://i.ibb.co/frYhgvK/Warehouse-District.jpg',
-  cost: 20,
+  cost: 100,
   whitelist: [{ title: 'Grand Manor', count: 2 }, 'Life’s A Beach'],
   desc: 'The basic Grand Manor offers an automatically replenishing supply of resources for each workshop, but only a limited amount at a time. Each warehouse in this district is 20 m tall and has about 50,000 sq m of floor space, enough to hold… a lot of materials. You can have as many individual warehouses as you have workshops, though this is also capped by your dimension’s physical space. New resources will appear here, in entire pallets at a time. Your retinue members’ workshops will now pull their materials from this central stockpile instead of generating their own. You may also define empty warehouses as sections of your Pocket Space.',
 })
@@ -117,6 +120,64 @@ homes.push({
   costT: 1,
   whitelist: [{ title: 'Sweet Home Expansion', count: 25 }],
   desc: 'Your planet is no longer alone in its universe. This expands your personal realm’s radius to roughly 104.45 AU and places a yellow star at the center, with your planet orbiting around it. No additional planets or other features are included in this perk.',
+})
+
+homes.push({
+  uid: 'hXd12',
+  title: 'Pocket Rocks',
+  category: 'Home',
+  image: '',
+  cost: 500,
+  whitelist: ['Pocket Star'],
+  desc: `
+  <p>Your planet is no longer alone in its system. This perk will add new rocky planets to your personal solar system. This will be a random number between 1 and 4, inclusive. These planets will obey geophysics and climatology; rocky planets outside of a circumstellar habitable zone will likely need significant terraforming for general use.</p>
+  <p>Each of these planets will have a random number of moons from 0 to 2, inclusive. One of these moons, if present, may instead be a ring system.</p>
+  <p>If you have Pocket Star II: Voyages, a significant fraction of generated stars will also have rocky planets. This will be a random value between 5% and 40% and may change with additional repurchases of that perk.</p>
+  `,
+})
+
+homes.push({
+  uid: 'hXd13',
+  title: 'Pocket Gas',
+  category: 'Home',
+  image: '',
+  cost: 1250,
+  whitelist: ['Pocket Star'],
+  desc: `
+  <p>This perk will add giant planets to your personal solar system. This includes traditional gas giants like Jupiter, ice giants like Neptune, and massive solid planets, typically Chthonian planets that were once gas or ice giants but lost their atmospheres. This will be a random number between 1 and 5, inclusive. These planets will obey geophysics and climatology; giant planets are of course uninhabitable in the traditional sense and will need significant investment for general use.</p>
+  <p>Each of these planets will have a random number of moons, from 10 to 200, inclusive, and will always have ring systems. Some of these moons will have a safe level of gravity for inhabitation, but may still require terraforming if located outside of a circumstellar habitable zone.</p>
+  <p>If you have Pocket Star II: Voyages, a significant fraction of generated stars will also have giant planets. This will be a random value between 20% and 80% and may change with additional repurchases of that perk.</p>
+  `,
+})
+
+homes.push({
+  uid: 'hXd15',
+  title: 'Pocket Space Dust',
+  category: 'Home',
+  image: '',
+  cost: 250,
+  whitelist: ['Pocket Star'],
+  desc: `
+  <p>This perk will add asteroids, meteoroids, comets, dwarf planets, Kuiper Belt objects, an Oort cloud, space dust, and other minor features to your personal solar system. These rocks add aesthetic character to a system and often have economic value to boot. Your core system will always gain 1 full asteroid belt and 1 Oort cloud. We don’t keep track of how many Kuiper Belt objects and other minor rocks are present in any individual system.</p>
+  <p>If you have Pocket Gas, the giant planets may have groups of Trojan and Hilda asteroids sharing their orbits. If so, the vast majority of such asteroids will be tied to a single giant planet.</p>
+  <p>If you have Pocket Star II: Voyages, every star will have at least some of these features. In particular, a random value between 10% and 60% of generated stars will have asteroid belts.</p>
+  `,
+})
+
+homes.push({
+  uid: 'hXd16',
+  title: 'Pocket Star II: Voyages',
+  category: 'Home',
+  image: '',
+  cost: 0,
+  costT: 1,
+  max: 35,
+  increment: true,
+  whitelist: ['Pocket Star'],
+  desc: `
+  <p>Your star is no longer alone in its universe. The first purchase of this perk expands your personal realm’s radius to 1 LY, but will not necessarily add any additional stars. With each repurchase of this perk, the radius will double, and the space will be populated by new stars, nebulae, clusters, black holes, galaxies, quasars, and other features. These are all procedurally generated and obey astrophysics; no two personal realms are the same. With only this perk and Pocket Rocks or Pocket Gas, complex life can develop in other planetary systems, but it will not be sapient and will not award credits on capture or sale.</p>
+  <p>This perk may be purchased up to 35 times. Each new repurchase will cost 1 more IMG than the last, up to a limit of 35. The final purchase will result in a personal realm with a radius of over 17 billion LY.</p>
+  `,
 })
 
 homes.push({
@@ -163,8 +224,8 @@ homes.push({
   cost: 30,
   whitelist: ['All Roads Lead to Home', 'We Will Meet Again', 'Sweet Home'],
   desc: `
-<p>A dedicated portal room allows pedestrian or vehicle access to your starting world and anywhere else you travel to. You and your retinue may no longer, and need no longer, create portals manually. Instead, portal sites are procedurally generated in each world, generally appearing near locations that are important or useful to you or your purchased and captured waifus. Portals will activate automatically when approached by a valid user: you, your waifus, and friendlies you invite, and deactivate automatically when not used. You and your retinue can sense the nearest portal’s location even without a map, and more precisely the closer you are to it. This is no replacement for a true map. Neutral, hostile, and uninvited eyes will not notice a portal’s presence, activation, or use, and cannot pass through.</p>
-<p>Your first portal will only lead to your starting world. After that, new worlds will slowly unlock according to the same rules as Exit Stage Left. You may also unlock new worlds by either traveling there yourself or capturing a waifu who’s been there personally. All purchased waifus, without the Yoink or Slightly Used perks, have only been to two worlds: the world you bought them in and the factory where they were made. Don’t bother trying to go there. It’s employees-only.</p>`,
+<p>A dedicated portal room allows pedestrian or vehicle access to your starting world and anywhere else you travel to. You may now freely create temporary portals back to your personal world. These portals are less stable than the generated ones and will disappear after a single round trip. Like the generated portals, these must be placed on a reasonably flat surface. They have all of the same protections described in Pocket Apartment. Only one of these temporary portals may exist at a time. If you place a second portal without using up the first (e.g. by exiting your personal world to a permanent portal), the first will disappear.</p>
+<p>New worlds after your first will slowly unlock according to the same rules as Exit Stage Left. You may also unlock new worlds by either traveling there yourself or capturing a waifu who’s been there personally. All purchased waifus, without the Yoink or Slightly Used perks, have only been to two worlds: the world you bought them in and the factory where they were made. Don’t bother trying to go there. It’s employees-only.</p>`,
 })
 
 export const demdunDesc = `
@@ -197,10 +258,8 @@ demiplane.push({
   cost: 15,
   whitelist: ['Sweet Home'],
   desc: `
-  By locking away your Sweet Home and transforming it into a proper Home Demiplane, you gain greater control and safety within it.
-  <p>You and your retinue no longer need to open a portal to return to your Demiplane, and may freely teleport yourself to and from any point in your Demiplane, though following the same rules for portals otherwise. You may still make portals, which are now protected by a perception filter. Neutral, hostile, and uninvited eyes will not notice a portal’s presence, activation, or use, and they cannot pass through. You may control this filter from the Company app. You may eject anyone in your Demiplane as if you had pushed them out through a portal to their home reality.</p>
-  <p>If you possess Rainbow Bridge or similar perks that limit your entry and exit points, you may still enter and exit either at those points or per the original Sweet Home rules.</p>
-  <p>While within your Domain, you and your retinue heal and recover faster, require less sustenance, and your abilities are more effective.</p>
+  By locking away your Sweet Home and transforming it into a proper Home Demiplane, you gain greater control and safety within it. You may now specifically invite third parties into your demiplane, even if they are otherwise neutral or hostile. Invited parties have the same privileges as any other valid user as described in Pocket Apartment. You may control this whitelist from the company app.
+  <p>While within your Domain, you and your retinue heal and recover faster, require less sustenance, and your abilities are more effective. You may also eject anyone in your Demiplane as if you had pushed them out through a portal to their home reality.</p>
   <p>Attacking you, your waifus, or your allies within your Demiplane is an Extreme Infraction, and the Consequence saps strength from the offender. Every 100% change reduces the offender’s effective tier by 1.</p>
   <p>Finally, the severity of all Infractions within your Demiplane are increased by one step, from Minor to Major, from Major to Severe and so on.</p>
   `,

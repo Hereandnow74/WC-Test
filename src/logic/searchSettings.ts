@@ -43,7 +43,20 @@ const imageSettings = useStorage('imageSettings', {
   showAvatarImage: true,
   width: 800,
   onlyImages: false,
+  retinue: {
+    companions: true,
+    familiars: true,
+    sold: true,
+  }
 })
+
+if (imageSettings.value.retinue === undefined) {
+  imageSettings.value.retinue = {
+    companions: true,
+    familiars: true,
+    sold: true,
+  }
+}
 
 // Misc settings
 const newPrice = ref(false)

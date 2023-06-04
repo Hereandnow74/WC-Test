@@ -18,7 +18,7 @@ heritages.push({
   tree: 'None',
   multiple: true,
   max: 12,
-  desc: 'You may now purchase the perks in a second Heritage tree. You must still spend the credits as normal. This perk may be purchased multiple times. Its price will increase by 1 ticket each time.',
+  desc: 'You may now purchase the perks in a second Heritage tree. You must still spend the credits as normal. This perk may be purchased multiple times. The price of this perk will increase by 1 IMG for each Heritage tree you’ve opened, by any means.',
 })
 
 heritages.push({
@@ -36,7 +36,7 @@ heritages.push({
     defensePerks: [{ title: 'Body Defense', cost: 0, count: 1 }, { title: 'Body Defense', cost: 0, count: 1 }, { title: 'Wild Defense', cost: 0, count: 1 }, { title: 'Wild Defense', cost: 0, count: 1 }],
   },
   desc: `
-<p>You have a dragon’s blood. You can transform into a bipedal dragonoid. This form is roughly 3 m tall, with a bestial head, clawed hands and feet, and separate wings, and maximizes your improved strength and protection at that size without sacrificing any finesse or maneuverability. Its color scheme and aesthetic reflects your elemental affinity, which you must also choose.</p>
+<p>You have a dragon’s blood. In addition to your basic humanoid form, you can transform into a bipedal dragonoid. (If you lack a humanoid form, one will be provided for you.) This form is roughly 3 m tall, with a bestial head, clawed hands and feet, and separate wings, and maximizes your improved strength and protection at that size without sacrificing any finesse or maneuverability. Its color scheme and aesthetic reflects your elemental affinity, which you must also choose.</p>
 <p>Take Body Tune-Up and Everlasting, Athletic, Martial, and Wild Talents, and two copies each of Body Defense and Wild Defense for free. This perk immediately raises a contractor’s effective tier at step 2 to 6.
 </p>
 <p>Available "elements" include the classical western set (Earth, Fire, Wind/Air, Water, Aether), the classical eastern set (Metal, Wood, Void), chemical elements (Carbon, Mercury, Plutonium…), and those found in modern fantasy (Light, Darkness, Ice, Lightning, Poison…). This element will affect your dragon armor’s design and loadout, including the breath weapon that all dragons have. If you have a Shroud that matches your dragon element, the two bonuses will stack. This affinity is fixed without additional purchases.</p> `,
@@ -448,9 +448,8 @@ heritages.push({
 <p>You are now able to transfer your consciousness to any collection of valid targets for your Transhuman Type, and your singular consciousness will be spread amongst them as a genus loci or hive mind equivalent. The amount of fine control you have over individual bodies that may make up you depends on your calculative power and the amount of focus given to a single form, as well as how many individual instances you are spread out across. Even in unwilling situations, you may non-destructively ride along provided you win the conflict of wills, and non-destructively assume direct control or access their memories in those situations.</p>
 <p>Your consciousness may propagate in the same method it could be previously transferred, though you may remove your consciousness from an individual body without any direct connections provided your consciousness is also anchored somewhere else. No matter your Transhuman Type, you may possess or entirely transfer your consciousness into your Demiplane or Dungeon, and your consciousness is spread across all Dungeon instances.</p>
 <p>Additionally, your Pocket Plane is now a Jouten, a world-body which is an extension of yourself and has the rest of your Pocket Plane and its structures either within it in a manner similar to Dragon Cabin, on top of it, outside it, or otherwise incorporated into it. The design and aesthetics of this form are up to you, though you will always be able to transfer your consciousness to this body, Favorites include a ‘world turtles’, a flying city, flying islands, miniature planetary constellations. or an elementally representative and mobile terrain feature as an Aethermorph.</p>
-<p>Similar to Dragon Cabin, you are able to manifest an avatar within your Jouten while your consciousness resides in your Jouten,  and are able to manifest a smaller version of your ‘true’ body within or on it as per Dragon Cabin. This projection is able to leave your Jouten, but only one instance of this projection may exist at a time.</p>
-<p>Your Jouten is able to enter realities directly, provided you have sufficient space to create an appropriately sized portal.</p>
-<p>If you were not already, your Jouten may be considered Tier 7.</p>
+<p>Similar to Dragon Cabin, you are able to manifest an avatar within your Jouten while your consciousness resides in your Jouten,  and are able to manifest a smaller version of your ‘true’ body within or on it as per Dragon Cabin. This projection is able to leave your Jouten, but only one instance of this projection may exist at a time. If you have Apportation, you and your retinue no longer need to open a portal to enter or exit your Demiplane. You may freely teleport yourself to and from any point in your Jouten.</p>
+<p>Your Jouten is able to enter realities directly, provided you have sufficient space to create an appropriately sized portal. If you were not already, your Jouten may be considered Tier 7.</p>
 `,
 })
 

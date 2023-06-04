@@ -152,6 +152,7 @@ export function chooseIntensity(rule: Intensity, coopIntensity = 0, coopCount = 
     if (intensityAvailable(rule)) {
       allEffects.value.push(rule.title)
       const perk = {
+        uid: rule.uid,
         title: rule.title,
       }
       if (rule.title === 'With A Little Help From My Friends(Cooperative)') {
@@ -174,6 +175,44 @@ export function intensityAvailable(rule: Intensity): boolean {
   if (intersection(rule.blacklist, allEffects.value).length) return false
   if (intersection(rule.whitelist, allEffects.value).length !== (rule.needed || rule.whitelist?.length || 0))
     return false
+  return true
+}
+
+// Difficulty
+export function chooseDifficulty(rule: Difficulty) {
+  const { allEffects, difficulties } = useStore()
+  const ind = findIndex(difficulties.value, { uid: rule.uid })
+  if (ind !== -1) {
+    const toDel = difficulties.value.splice(ind, 1)[0]
+    allEffects.value.splice(allEffects.value.indexOf(toDel.title), 1)
+    // deletePerk(difficulties.value, difficultyAvailable)
+  }
+  else {
+    if (difficultyAvailable(rule)) {
+      allEffects.value.push(rule.title)
+      const perk = {
+        uid: rule.uid,
+        title: rule.title,
+        type: rule.type,
+        intensity: rule.intensity,
+      }
+      difficulties.value.push(perk)
+    }
+  }
+}
+
+export function difficultyAvailable(rule: Difficulty): boolean {
+  const { difficulties, allEffects } = useStore()
+  // if (rule.compatibility && rule.compatibility.includes(existingPerk.title))
+  //   return true
+  if (rule.requires && !intersection(allEffects.value, rule.requires).length)
+    return false
+  for (const existingPerk of difficulties.value) {
+    if (rule.compatibility && rule.compatibility.includes(existingPerk.title))
+      continue
+    if (existingPerk.type === rule.type && existingPerk.uid !== rule.uid)
+      return false
+  }
   return true
 }
 
@@ -552,7 +591,7 @@ export function clearAll() {
   const {
     allEffects, intensities, luresBought, binding, flags, heritage,
     ridePerks, homePerks, talentPerks, defensePerks, miscPerks, genericWaifuPerks, companions, startingOrigin,
-    waifuPerks, baseBudget, startingWorld, budgetMods, otherPerks, fee, specificMods, patron, pvpPerks, coupleOrigin,
+    waifuPerks, baseBudget, startingWorld, budgetMods, otherPerks, fee, specificMods, patron, pvpPerks, coupleOrigin, difficulties,
   } = useStore()
 
   const { jumpChain, rdnWorld, loan, trHistory, missionRewards } = usePlayStore()
@@ -574,6 +613,7 @@ export function clearAll() {
     cost: 0,
   }
   intensities.value = []
+  difficulties.value = []
   pvpPerks.value = []
   binding.value = [
     { uid: 'XnYV4', title: 'Company Stamp', count: 1, cost: 0, type: 'Stamp' },
@@ -630,6 +670,7 @@ export function writeBuildValues(build: any) {
     allEffects, intensities, luresBought, binding, flags, heritage,
     ridePerks, homePerks, talentPerks, defensePerks, miscPerks, genericWaifuPerks, companions, startingOrigin,
     waifuPerks, baseBudget, startingWorld, budgetMods, otherPerks, fee, specificMods, patron, pvpPerks, coupleOrigin,
+    difficulties,
   } = useStore()
 
   const { jumpChain, loan, missionRewards } = usePlayStore()
@@ -645,6 +686,7 @@ export function writeBuildValues(build: any) {
     cost: 0,
   }
   intensities.value = build.intensities || []
+  difficulties.value = build.difficulties || []
   binding.value = build.binding || []
   otherPerks.value = build.otherPerks || []
   luresBought.value = build.luresBought || []
@@ -677,6 +719,7 @@ export const saveObject = computed(() => {
     allEffects, intensities, luresBought, binding, flags, heritage,
     ridePerks, homePerks, talentPerks, defensePerks, miscPerks, genericWaifuPerks, companions, startingOrigin,
     waifuPerks, baseBudget, startingWorld, budgetMods, otherPerks, fee, specificMods, patron, pvpPerks, coupleOrigin,
+    difficulties,
   } = useStore()
 
   const { jumpChain, loan, missionRewards } = usePlayStore()
@@ -688,6 +731,7 @@ export const saveObject = computed(() => {
     startingOrigin: startingOrigin.value,
     coupleOrigin: coupleOrigin.value,
     intensities: intensities.value,
+    difficulties: difficulties.value,
     binding: binding.value,
     luresBought: luresBought.value,
     otherPerks: otherPerks.value,

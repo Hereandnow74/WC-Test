@@ -17,6 +17,19 @@
       </div>
       <div>
         Defenses discount from your retinue: <span class="text-green-500 text-lg">{{ defenseRetinueDiscount }}</span>
+        <div v-if="defenseRetinueDiscountAuto">
+          <div v-for="defense, key in defenseRetinueDiscountAuto" :key="key" class="mb-1">
+            <div class="fond-semibold text-gray-400">
+              {{ key }}
+              <span>[<span class="text-green-400">-{{ defense.discount }}</span>]</span>
+            </div>
+            <div class="flex gap-x-2 whitespace-nowrap flex-wrap">
+              <div v-for="char in defense.charNames" :key="char" class="odd:text-orange-300 even:text-purple-300">
+                {{ char }}
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -27,7 +40,7 @@ import { useStore } from '~/store/store'
 
 const {
   maxHeritageDiscount, usedHeritageDiscount, talentsDiscount, defensesDiscount,
-  defenseRetinueDiscount,
+  defenseRetinueDiscount, defenseRetinueDiscountAuto,
 } = useStore()
 
 </script>

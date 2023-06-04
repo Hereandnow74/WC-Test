@@ -3,6 +3,9 @@
     <Note type="info" title="WIP" class="max-w-[800px] mx-auto my-2">
       <p>This page is in a WIP stage.</p>
     </Note>
+    <router-link to="/globalBuilds" class="text-red-800 dark:text-red-400 underline hover:text-red-600">
+      This page soon will be replaced by this one.
+    </router-link>
     <div class="overflow-y-auto scrollbar w-full">
       <div class="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-1">
         <div v-for="build in builds" :key="build[0]">

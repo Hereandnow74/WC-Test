@@ -1,9 +1,10 @@
 <template>
   <div class="w-full">
-    <div class="rounded max-w-screen-md lg:pl-2 p-2 flex flex-col gap-4 w-full">
-      <div v-if="user.id" class="flex flex-col gap-1">
-        <div class="font-semibold">
+    <div class="rounded lg:pl-2 p-2 flex flex-col gap-4 w-full">
+      <div v-if="user.id" class="flex flex-col gap-1 max-w-screen-md mx-auto">
+        <div class="font-semibold flex gap-4">
           Name: <span class="text-blue-800 dark:text-orange-300">{{ user.name }}</span>
+          <div title="Role determines your rights, note that to get a User role you need to confirm your email.">Role: <span class="text-green-800 dark:text-green-300">{{ user.role }}</span></div>
         </div>
         <div class="font-semibold">
           Email: <span class="text-blue-800 dark:text-orange-300">{{ user.email }}</span>
@@ -39,15 +40,25 @@
         Not Registered
       </div>
 
-      <template v-if="user.id">
-        <Button label="Logout" @click="logout" />
-        <Button v-if="user.role === 'admin'" label="Rebase" @click="rebase" />
-        <Button v-if="!user.isEmailVerified && !isEmailSent" label="Send Verification Email" @click="sendEmail" />
-        <Button v-if="user.role === 'admin'" label="Get Likes" @click="getLikes" />
-        <Button v-if="user.role === 'admin'" label="Get Chars" @click="getChars" />
-        <!-- <Button v-if="user.role === 'admin'" label="Rebase builds" @click="rebaseBuilds" /> -->
-        <Button v-if="user.role === 'admin'" label="Recalculate Likes" @click="recalculateLikes" />
-      </template>
+      <div v-if="user.id" class="max-w-screen-md mx-auto">
+        <h3 class="text-gray-600 dark:text-gray-400 text-lg">Actions:</h3>
+        <div class="flex gap-2 flex-wrap">
+          <Button bg-color="bg-red-600" label="Logout" @click="logout" />
+          <Button v-if="user.role === 'admin'" label="Rebase" @click="rebase" />
+          <Button v-if="!user.isEmailVerified && !isEmailSent" label="Send Verification Email" @click="sendEmail" />
+          <Button v-if="user.role === 'admin'" label="Get Likes" @click="getLikes" />
+          <Button v-if="user.role === 'admin'" label="Get Chars" @click="getChars" />
+          <!-- <Button v-if="user.role === 'admin'" label="Rebase builds" @click="rebaseBuilds" /> -->
+          <Button v-if="user.role === 'admin'" label="Recalculate Likes" @click="recalculateLikes" />
+        </div>
+      </div>
+
+      <div v-if="user.id && yourBuilds.length" class="w-full">
+        <h3 class="text-gray-600 dark:text-gray-400 text-lg">Your Builds:</h3>
+        <div class="grid grid-cols-1 4xl:grid-cols-6 5xl:grid-cols-7 xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-2 h-full min-h-0 overflow-y-auto scrollbar">
+          <BuildCard2 v-for="build in yourBuilds" :key="build.id" class="max-w-[440px]" :build="build" />
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -56,10 +67,10 @@
 import * as zod from 'zod'
 import { useForm, useField } from 'vee-validate'
 import { toFormValidator } from '@vee-validate/zod'
-import { getUserFromServer, rebaseCharactersToServer, getCharactersFromServer, logoutFromServer, recalculateLikesOnServer, updateUserInfo, sendVerificationEmail, createBuildInDB } from '~/logic/server/'
+import { getUserFromServer, rebaseCharactersToServer, getCharactersFromServer, logoutFromServer, recalculateLikesOnServer, updateUserInfo, sendVerificationEmail, createBuildInDB, getAllYourBuilds } from '~/logic/server/'
 import { useUser } from '~/store/user'
 import { confirmDialog } from '~/logic/dialog'
-import { getAllBuilds } from '~/logic'
+import { ServerBuild } from 'global'
 
 const errorMessage = ref('')
 const buttonActive = ref(true)
@@ -89,6 +100,9 @@ const { errors, handleSubmit } = useForm({
 
 const { value: password } = useField<string>('password')
 const { value: password2 } = useField<string>('password2')
+
+const yourBuilds = ref<ServerBuild[]>([])
+// getAllYourBuilds().then(res => yourBuilds.value = res)
 
 const changePassword = handleSubmit((values) => {
   const whatSendToServer = {

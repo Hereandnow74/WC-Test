@@ -6,10 +6,10 @@
       <div v-if="isAuthenticated" class="absolute top-1 right-1 cursor-pointer hover:text-red-500" @click="deleteBuild">
         <fluent:delete-20-filled />
       </div>
+      <ic:outline-save-alt class="absolute cursor-pointer top-7 right-1 text-green-500 hover:text-orange-500 text-lg" @click="loadBuild" />
     </h3>
     <div class="text-xs text-gray-600 dark:text-gray-400 leading-none flex justify-between">
       {{ new Date(build.date).toLocaleString() }}
-      <ic:outline-save-alt class="cursor-pointer hover:text-orange-500" @click="loadBuild" />
     </div>
     <p class="bg-gray-300 dark:bg-gray-800 mt-1 flex-grow">
       {{ build.desc || "No Description" }}

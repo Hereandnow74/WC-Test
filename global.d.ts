@@ -151,7 +151,7 @@ interface SearchRequest {
 }
 
 interface ServerBuild {
-  id: string
+  id?: string
   title: string
   name: string
   author: string
@@ -162,7 +162,7 @@ interface ServerBuild {
   originName: string
   characterName: string
   intensity: string[]
-  loan: number
+  loan: boolean
   creditBalance: number
   creditsSpent: number
   customImages: boolean
@@ -177,8 +177,8 @@ interface ServerBuild {
   challenges: string[]
   tags: string[]
   likes?: number
-  createdAt: string
-  updatedAt: string
+  createdAt?: string
+  updatedAt?: string
 }
 
 interface SearchBuild extends Partial<ServerBuild> {

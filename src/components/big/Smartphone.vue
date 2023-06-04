@@ -23,13 +23,17 @@
           @click="changeLayout"
         />
       </div>
+      <span class="flex gap-1 items-center cursor-help" title="Intensity">
+        <mdi:contract-sign class="text-red-600" />
+        <span :class="difficultyRating < 0 ? 'blink' : ''">{{ difficultyRating }}</span>
+      </span>
       <span v-if="loan.owed" class="flex gap-1 items-center cursor-help" title="Current loan / maximum loan">
         <mdi:bank class="text-gray-400" />
         {{ loan.owed }} / {{ creditLimit }}
       </span>
       <span class="flex gap-1 items-center cursor-help" title="Your current credits">
         <ph:coins style="color: #ffdb58;" />
-        <span :class="budget >= 0 ? '' : 'text-red-500'">
+        <span :class="budget < 0 ? 'text-red-400' : ''">
           {{ budget }}
         </span>
       </span>
@@ -107,7 +111,7 @@ const smartMenu = ref(null)
 onClickOutside(smartMenu, () => showSmartMenu.value = false)
 
 const {
-  budget, tier11tickets, loan, creditLimit, settings, devotionPoints,
+  budget, tier11tickets, loan, creditLimit, settings, devotionPoints, difficultyRating,
 } = useStore()
 
 function changeLayout() {

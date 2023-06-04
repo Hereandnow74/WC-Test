@@ -6,6 +6,57 @@
       </h2>
       <div>
         <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          01 June 2023
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~65 new user submitted characters, new missions, new worlds</li>
+          <li>Intensity (Difficulty) rework. Math is functional, but rules are not enforced. Expect bugs.</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          28 May 2023
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~100 new user submitted characters, new missions, new worlds</li>
+          <li>Some new Stable wording and pricing changes</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          22 May 2023
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~80 new user submitted characters, new missions, new worlds</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          18 May 2023
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~70 new user submitted characters, new missions, new worlds</li>
+          <li>Now you can reset your password if you forgot it.</li>
+          <li>Now you can overwrite your saved builds.</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          14 May 2023
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~100 new user submitted characters, new missions, new worlds</li>
+          <li>Settings for filtering retinue members for Build Image</li>
+          <li>Now you can directly set the position of retinue member in Edit-Mode</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
           11 May 2023
         </h3>
         <ul class="list-decimal list-inside">

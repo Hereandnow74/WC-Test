@@ -491,7 +491,7 @@ DLChomes.push({
   uid: 'pftNh',
   dlc: 'ProtagNeptune',
   category: 'Home',
-  title: 'The House on The Homeworld',
+  title: 'Homeworld in the Sea of Time',
   image: 'https://i.imgur.com/TJHUNSFl.png',
   cost: 600,
   desc: 'Your homeworld, the Planet Earth with the Moon, will be brought into your dimension immediately after purchase. We hope you won\'t mind the probable unrest of the human population on your homeworld when they inevitably realize that the stars in the sky have changed, with an unknown planet or ringworld of your personal realm.',

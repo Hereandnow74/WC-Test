@@ -29,7 +29,10 @@
           * - required
         </div>
         <div class="flex gap-2 mx-auto">
-          <router-link class="icon-text-btn mx-2" title="Register" to="/auth/register">
+          <router-link class="icon-text-btn mx-2" title="Forgot Password?" to="/auth/forgot">
+            Forgot Password?
+          </router-link>
+          <router-link class="icon-text-btn mx-4 font-semibold text-lg" title="Register" to="/auth/register">
             Register
           </router-link>
           <Button class="px-4" label="Login" bg-color="bg-gray-700 hover:bg-gray-600" @click="login" />

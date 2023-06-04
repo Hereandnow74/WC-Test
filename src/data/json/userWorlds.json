@@ -818,7 +818,7 @@
     "worldName": "Psyren",
     "rating": 6,
     "additional": "Walk in/Drop-in do not gain a power from psyren's atmosphere, Extras do but it is completely random strength.",
-    "image": "https://pm1.narvii.com/6192/dba1f4a86ca06c8df971a3122f17342cad15a18e_hq.jpg",
+    "image": "https://i.imgur.com/tiqT2k6l.jpg",
     "uid": "vBucLx"
   },
   {
@@ -1816,7 +1816,7 @@
     "uid": "KUvbIi"
   },
   {
-    "worldName": "Muv Luv",
+    "worldName": "Muv-Luv",
     "rating": 7,
     "condition": [
       {
@@ -1825,7 +1825,7 @@
       },
       {
         "rating": 7,
-        "name": "Alternate"
+        "name": "Alternative"
       },
       {
         "rating": 9,
@@ -2856,7 +2856,7 @@
   {
     "worldName": "Salem",
     "rating": 4,
-    "image": "https://img.sharetv.com/shows/standard/salem.jpg",
+    "image": "https://i.imgur.com/QMk8Iazl.jpg",
     "uid": "ma8XI3"
   },
   {
@@ -5453,18 +5453,7 @@
     "image": "https://getwallpapers.com/wallpaper/full/7/5/c/401642.jpg",
     "uid": "92u7Yc"
   },
-  {
-    "worldName": "Lobotomy Corporation",
-    "condition": [
-      {
-        "name": "Library of Ruina",
-        "rating": 8
-      }
-    ],
-    "rating": 8,
-    "image": "https://cdn.donmai.us/original/3f/16/__angela_tiphereth_a_netzach_malkuth_gebura_and_7_more_project_moon_and_1_more_drawn_by_kankan33333__3f16951867c823cc5f20f2b733c7b788.jpg",
-    "uid": "4fxFn4"
-  },
+  {"uid":"qVeeNy","worldName":"Lobotomy Corporation","rating":8,"image":"https://cdn.donmai.us/original/3f/16/__angela_tiphereth_a_netzach_malkuth_gebura_and_7_more_project_moon_and_1_more_drawn_by_kankan33333__3f16951867c823cc5f20f2b733c7b788.jpg","condition":[{"name":"Library of Ruina","rating":8},{"name":"Limbus Company","rating":8}]},
   {
     "worldName": "A-Channel",
     "rating": 1,
@@ -5810,30 +5799,6 @@
     "rating": 1,
     "image": "https://deadline.com/wp-content/uploads/2022/03/The-Loud-House.jpg?w=681&h=383&crop=1",
     "uid": "JYpkJd"
-  },
-  {
-    "worldName": "The Reckoners",
-    "image": "https://gugimages.s3.us-east-2.amazonaws.com/wp-content/uploads/2019/02/22013928/Feature-photo.jpg",
-    "rating": 6,
-    "condition": [
-      {
-        "name": "Before Calamity Arrives",
-        "rating": 2
-      },
-      {
-        "rating": 5,
-        "name": "Rise of the Epics"
-      },
-      {
-        "name": "After Calamity Leaves",
-        "rating": 5
-      },
-      {
-        "rating": 6,
-        "name": "The Age of the Epics"
-      }
-    ],
-    "uid": "Eb6sRC"
   },
   {
     "worldName": "Family Guy",
@@ -6250,7 +6215,7 @@
   {
     "worldName": "Atomic Heart",
     "rating": 5,
-    "image": "https://www.charlieintel.com/wp-content/uploads/2023/01/Does-Atomic-Heart-have-multiplayer-or-co-op-1000x600.jpg",
+    "image": "https://i.imgur.com/Dhg82jsl.jpg",
     "uid": "hDeoGV"
   },
   {
@@ -6477,7 +6442,7 @@
   {"uid":"HJGctg","worldName":"Shantae","rating":5,"image":"https://media.vandal.net/m/22246/shantae-halfgenie-hero-20161220102532_11.jpg"},
   {"uid":"CArvMe","worldName":"Dragons Rioting","rating":5,"image":"https://i.imgur.com/N0fTXtOl.jpg"},
   {"uid":"oQNRPT","worldName":"My Next Life as a Villainess: All Routes Lead to Doom!","rating":3,"image":"https://images.fanart.tv/fanart/my-next-life-as-a-villainess-all-routes-lead-to-doom-617683c88f4a5.jpg","additional":"","condition":[{"name":"On the Verge of Doom - Timeline","rating":4},{"name":"Fortune Lover - Timeline","rating":5}]},
-  {"uid":"fmiURf","worldName":"Tomo-chan is a Girl!","rating":1,"image":"https://i.imgur.com/xRoOX1Bl.jpg"},
+  {"uid":"fmiURf","worldName":"Tomo-chan wa Onnanoko!","rating":1,"image":"https://i.imgur.com/xRoOX1Bl.jpg"},
   {"uid":"QxAyqs","worldName":"Metro","rating":5,"image":"https://i.imgur.com/9jtfH6b.jpg","condition":[{"name":"Books Series","rating":5},{"name":"Game Series","rating":5}]},
   {"uid":"AGHofj","worldName":"Shadow Slave","rating":7,"image":"https://i.redd.it/52cusb8csb8a1.png","condition":[{"name":"Standard","rating":7},{"name":"Dream Realm","rating":8}]},
   {"uid":"WADGAb","worldName":"Valhalla Saga","rating":10,"image":"https://i.imgur.com/zkGIu6rl.jpg"},
@@ -6490,5 +6455,15 @@
   {"uid":"PdkRMq","worldName":"Honkai: Star Rail","rating":7,"image":"https://spaces.whynowgaming.com/uploads/2023/04/honkai.jpg"},
   {"uid":"WeFmjQ","worldName":"Wizard of Legend","rating":4,"image":"https://wizardoflegend.com/press/wizard_of_legend/images/Wizard_of_Legend_Wallpaper_No_Logo.png"},
   {"uid":"fdttVk","worldName":"Hotline Miami","rating":6,"image":"https://cdn.discordapp.com/attachments/701634785570979912/1104224911209271376/image.png"},
-  {"uid":"hVklBh","worldName":"Oshi no Ko","rating":1,"image":"https://www.hindustantimes.com/ht-img/img/2023/04/12/1600x900/Oshi_No_KO_1681292283386_1681292295092_1681292295092.jpg"}
+  {"uid":"hVklBh","worldName":"Oshi no Ko","rating":1,"image":"https://www.hindustantimes.com/ht-img/img/2023/04/12/1600x900/Oshi_No_KO_1681292283386_1681292295092_1681292295092.jpg"},
+  {"uid":"qirJWI","worldName":"Age of Sigmar","rating":8,"image":"https://2.bp.blogspot.com/-JZp8EdsDfqc/VtVEKz0AZFI/AAAAAAAAAUo/woOxJa2GKtQ/s1600/qXKoK1tjM6k.jpg","additional":"You may undo the side effects of reforging upon capturing Stormcast.","condition":[{"name":"Age of Chaos","rating":10},{"name":"Travels of Sigmar","rating":9},{"name":"Golden Centuries","rating":5},{"name":"The Necroquake","rating":9},{"name":"No Crisis","rating":8}]},
+  {"uid":"mbZlAQ","worldName":"Avatar (James Cameron)","rating":5,"image":"https://i.imgur.com/TgbrTGj.jpg","condition":[{"name":"Earth (Pre-Pollution Crisis)","rating":2},{"name":"Earth (Pollution Crisis)","rating":4},{"name":"Pandora","rating":5}]},
+  {"uid":"shTApv","worldName":"Isekai Nonbiri Nouka","rating":5,"image":"https://cdn.donmai.us/original/18/30/__tia_rurushi_ru_ria_machio_hiraku_lastismoon_and_3_more_isekai_nonbiri_nouka_drawn_by_saitou_yoshiko__18305cf084a91b670adc0ebfe7506f64.jpg","condition":[{"name":"Canon","rating":5}]},
+  {"uid":"cZwlpb","worldName":"Shigatsu wa Kimi no Uso","rating":1,"image":"https://i.imgur.com/9ABXFz7l.jpg","condition":[{"name":"Canon","rating":1}]},
+  {"uid":"xyLmwu","worldName":"Skulduggery Pleasant","rating":5,"image":"https://wallpapercave.com/wp/wp4264927.jpg","condition":[{"name":"Mevolent's Dimension","rating":6},{"name":"Faceless Ones' Universe","rating":7}]},
+  {"uid":"uaiCNo","worldName":"The Reckoners","rating":6,"image":"https://gugimages.s3.us-east-2.amazonaws.com/wp-content/uploads/2019/02/22013928/Feature-photo.jpg","condition":[{"name":"Before Calamity Arrives","rating":2},{"rating":5,"name":"Rise of the Epics"},{"name":"The Age of the Epics","rating":6},{"rating":5,"name":"After Calamity Leaves"}]},
+  {"uid":"wNYxQL","worldName":"Drugstore in Another World","rating":3,"image":"https://i.pinimg.com/originals/a6/63/19/a66319daf223329a4e1a99008682c7d5.png"},
+  {"uid":"oIEyFE","worldName":"Portal","rating":5,"image":"https://c4.wallpaperflare.com/wallpaper/1005/862/426/video-games-portal-game-digital-art-valve-corporation-wallpaper-preview.jpg"},
+  {"uid":"uxGdBE","worldName":"The Adventures of Tintin","rating":2,"image":"https://i.imgur.com/XhKfrEn.jpg"},
+  {"uid":"rgaQlX","worldName":"Need For Speed","rating":2,"image":"https://hips.hearstapps.com/hmg-prod/images/nfs-heat-lead-1573615981.jpg"}
 ]

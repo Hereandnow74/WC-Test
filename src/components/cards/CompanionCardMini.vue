@@ -9,10 +9,13 @@
         ref="imageEl"
         :data-src="image"
         :alt="char.name"
-        class="rounded object-cover max-h-[140px] max-w-[90px] object-top"
+        class="rounded object-cover max-h-[140px] max-w-[90px] object-top border border-gray-600"
       >
       <div class="flex flex-col w-full">
         <div class="flex">
+          <div v-if="index !== -1" class="font-semibold mr-1">
+            {{ index }}.
+          </div>
           <Input v-if="editMode" v-model="char.name" placeholder="Character name" />
           <router-link v-else :to="`/companions/?name=${char.name}`" class="hover:underline">
             {{ char.name }}<span class="text-gray-500 text-sm"> ({{ methods[char.method] }})</span>
@@ -151,7 +154,7 @@
       <div
         v-if="['capture'].includes(char.method) && !char.sold"
         class="cursor-pointer hover:(bg-gray-600 text-amber-400) rounded-xl p-1"
-        :title="`Sell for ${char.tier >= 11 ? Math.floor(CHAR_COSTS_TICKET[char.tier] * sellKoeff)+' IMG' : Math.floor(CHAR_COSTS[char.tier] * sellKoeff) + 'c'}`"
+        :title="`Sell for ${charCost}`"
         @click="sellCompanion(char.uid)"
       >
         <healthicons:money-bag />
@@ -172,15 +175,18 @@
           <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"><path fill="currentColor" fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" /></svg>
         </div>
       </div>
+      <div v-if="editMode">
+        <Select :options="companions.map((_, i) => i + 1)" :model-value="index" @update:modelValue="changeIndex" />
+      </div>
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
 import type { PropType } from '@vue/runtime-core'
-import { findIndex, intersection, isNumber } from 'lodash-es'
+import { findIndex, intersection } from 'lodash-es'
 import TextArea from '../basic/TextArea.vue'
-import { CHAR_COSTS, CHAR_COSTS_TICKET, useAllChars, waifusThatHasPerk, waifuTags } from '~/data/constants'
+import { CHAR_COSTS, CHAR_COSTS_TICKET, waifusThatHasPerk, waifuTags } from '~/data/constants'
 import { waifuPerksObject } from '~/data/waifu_perks'
 import { imageLink, lazyLoadSingleImg } from '~/logic'
 import { SavedChar } from '~/store/chargen'
@@ -198,6 +204,10 @@ const props = defineProps({
   perks: {
     type: Object,
     default: () => ({}),
+  },
+  index: {
+    type: Number,
+    default: -1,
   },
 })
 
@@ -224,15 +234,7 @@ watch(sex, (val, oldVal) => {
     props.char.tags[ind] = val
 })
 
-const { flags, settings, sellKoeff, companions } = useStore()
-const { allCharsObject } = useAllChars()
-
-const fullChar = computed(() => {
-  if (isNumber(props.char.uid))
-    return allCharsObject.value[props.char.originUID || props.char.uid] || { i: '', b: [] }
-  else
-    return { i: waifuPerksObject[props.char.uid].image, b: [] }
-})
+const { flags, settings, companions, difficultyAdjustedSell, difficultyAdjustedSellT } = useStore()
 
 const image = computed(() => props.char.image || (props.char.perk && waifuPerksObject[props.char.perk.uid] && waifuPerksObject[props.char.perk.uid].image ? waifuPerksObject[props.char.perk.uid].image || '' : imageLink(props.char.originUID || props.char.uid)))
 watch(image, () => imageEl.value ? lazyLoadSingleImg(imageEl.value) : null, { flush: 'post' })
@@ -260,6 +262,8 @@ const specificList = computed(() => {
   return props.perks.specific || []
 })
 
+const charCost = computed(() => difficultyAdjustedSellT.value[props.char.tier] > 0 && props.char.tier > 10 ? ` ${difficultyAdjustedSell.value[props.char.tier]}c ${difficultyAdjustedSellT.value[props.char.tier]}t` : ` ${difficultyAdjustedSell.value[props.char.tier]}c`)
+
 function sellCompanion(uid: number) {
   emit('sell', uid)
 }
@@ -274,6 +278,14 @@ function moveRetinue(n: number) {
   if ((startIndex + n) >= 0 && (startIndex + n) < companions.value.length) {
     companions.value[startIndex] = companions.value[startIndex + n]
     companions.value[startIndex + n] = saveChar
+  }
+}
+
+function changeIndex(i: number) {
+  if (props.index !== -1) {
+    const companion = companions.value.splice(props.index - 1, 1)
+    if (companion.length)
+      companions.value.splice(i - 1, 0, companion[0])
   }
 }
 

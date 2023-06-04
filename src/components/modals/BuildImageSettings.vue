@@ -2,6 +2,14 @@
   <Modal label="Search settings">
     <div class="flex flex-col gap-1 p-1 min-h-0 max-h-[88vh]">
       <div class="flex gap-2 justify-between border-b border-gray-700 dark:border-gray-400">
+        <div class="font-semibold">Include: </div>
+        <div class="flex gap-2 flex-wrap text-green-800 dark:text-green-300">
+          <Toggle label="Companions" v-model="imageSettings.retinue.companions" />
+          <Toggle label="Familiars" v-model="imageSettings.retinue.familiars" />
+          <Toggle label="Sold" v-model="imageSettings.retinue.sold" />
+        </div>
+      </div>
+      <div class="flex gap-2 justify-between border-b border-gray-700 dark:border-gray-400">
         <div>Display avatar</div>
         <Toggle v-model="imageSettings.showAvatarImage" />
       </div>

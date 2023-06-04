@@ -17,7 +17,7 @@
       >
         <template v-if="homePerk.title === 'Sweet Home Expansion'" #title="titleProps">
           [<span class="text-violet-700 dark:text-violet-400">
-            {{ (15.2 * Math.pow(2, titleProps.count || 0)).toLocaleString() }}<sup>2</sup> km
+            {{ (15.2 * Math.pow(2, titleProps.count || 0)).toLocaleString() }} km<sup>2</sup>
           </span>]
         </template>
       </PerkCard>

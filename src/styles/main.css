@@ -146,6 +146,23 @@ select:invalid { color: rgb(134, 133, 133); }
   }
 }
 
+/* Blinking animation */
+.blink{
+  animation: blink 0.9s infinite;
+}
+
+@keyframes blink{
+  0% {
+    color: #ff0000;
+  }
+  50% {
+    color: white;
+  }
+  100% {
+    color: red;
+  }
+}
+
 .slide-leave-active,
 .slide-enter-active {
   @apply transition-transform;
@@ -157,12 +174,6 @@ select:invalid { color: rgb(134, 133, 133); }
 }
 .slide-leave-to {
   transform: translateX(100%);
-}
-
-/* Card style */
-.column-block {
-  break-inside: avoid-column;
-  page-break-inside: avoid;
 }
 
 /* Side menu animation style */

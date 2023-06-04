@@ -237,11 +237,12 @@ intensityPvP.push({
 
 export const invasion = `<h3 class="text-lg font-semibold">Shores in Flames: Invasion PvP</h3>
 <p>
-  Invasions are the only form of regulated PvP that occur in the “wild,” outside of dedicated arena realms. Any contractor who owns a Red Eye Orb may participate, as either the invader or the defender, or a White Eye Orb, as an ally of the defender.</p>
+Invasions are the only form of PvP that occur in the “wild,” outside of dedicated arena realms. Any contractor who owns a Red Eye Orb may participate, as either the invader or the defender, or a White Eye Orb, as an ally of the defender.</p>
   <p>In an invasion, any member of the invading force or non-local forces allied to the defender will appear as a translucent phantasm. Invaders have a dark red tint, while allies glow white or gold. Red Phantasms cannot harm any local forces that are not part of the defender’s retinue, even the defender’s local allies; White and Gold Phantasms can only harm Red Phantasms. All harm done to phantasms is temporary: a “slain” phantasm will dissolve into motes of the same color, be sent back to their contractor’s home world, and return to active duty after a solid week (168 hours) of recuperation. All Phantasms that remain in a battle zone at the end of an invasion, regardless of the outcome, will automatically return home.</p>
 
   <h3 class="text-lg mt-4 font-semibold">Invasion Victory Conditions and Prizes</h3>
-  <p>As an invader: You win by regicide (killing the enemy contractor) even if the target doesn’t remain dead long enough for their retinue to dissolve. A self-resurrector’s temporary death still counts. As a defender or ally: You win if the invading force retreats or is annihilated. Mutual kills default to the defender.</p>
+  <p>As an invader: You win by regicide (killing the enemy contractor) even if the target doesn’t remain dead long enough for their retinue to dissolve. A self- resurrector’s temporary death still counts.
+  As a defender or ally: You win if the invading force retreats or is annihilated. Mutual kills default to the defender.</p>
   <p>The winner of an invasion attempt will always earn 25% of the sum of all Phantasmal forces’ PvP asset value and the defender’s PvP credit value, rounded up to the nearest whole number. If the defending side wins, this will be split evenly between the defender and each ally - each additional ally called reduces every defender’s share of the pool.</p>
   <p>There are no financial penalties for losing an invasion. Phantasms are immune to capture, but may still be detained and their Defenses disabled. Captured members of the defender’s retinue will not become phantasms and may be recaptured by the defender’s forces, or on the defender’s behalf by their phantasm allies. However, if an invader captures any of the defender’s forces and goes on to win the overall battle, they may keep those captures permanently. Otherwise, the captures will be returned to their owner.</p>
 
@@ -297,6 +298,6 @@ invasionPvP.push({
   category: 'Invasion',
   pvp: true,
   desc: `More similar to the red soapstone or dragon eyes from the many parallels of an ashen world than the original blue eye orb, ownership of this item allows you to specifically invite another contractor to a duel between your two teams, skipping the normal matchmaking process. This otherwise follows the regular Arranged PvP procedures.
-  <p>You can only challenge contractors that you’ve met in person. This may happen by any means, including Green Eye Orb use, regular Arranged PvP, Invasions, or unregulated encounters.
+  <p>You can only challenge contractors that you’ve met in person. This may happen by any means, including Green Eye Orb use, regular Arranged PvP, or Invasions.
   </p>`,
 })

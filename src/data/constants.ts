@@ -16,6 +16,7 @@ import { patrons } from './patronsRework'
 import { homes, demiplane, dungeon } from './demdun'
 import { DLCRides, rides } from './rides'
 import { DLCgenericPerks, DLChomes, DLCperks, DLCtalents, DLCheritages, DLClureExpansions, DLCbindings, DLClures, DLCotherControls, DLCridePerks, DLCintensity } from './DLCs'
+import { difficultyOptions } from './difficulty'
 
 export const VERSION = '0.8'
 
@@ -48,6 +49,7 @@ export const nicknames = [
   'Kirron 999',
   'Gregory B.',
   'ProtagNeptune',
+  'Chris R.',
   'Eerie Sharp',
   'Exactingspoon',
   'DragonBoy.EXE',
@@ -79,6 +81,7 @@ export const WORLD_RATINGS = [
 
 export const CHAR_COSTS = [0, 1, 2, 5, 10, 20, 50, 100, 200, 500, 1000, 0, 0, 0]
 export const CHAR_COSTS_FULL = [0, 1, 2, 5, 10, 20, 50, 100, 200, 500, 1000, 2000, 5000, 10000]
+export const CHAR_COSTS_IMG = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2000, 5000, 10000]
 export const CHAR_COSTS_TICKET = { 11: 2, 12: 5, 13: 10 } as Record<number, number>
 export const shownValue = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 'X', 'Y', 'Z']
 
@@ -117,9 +120,10 @@ export const TOOLTIPS = {
 
 export const rulesList = [
   { title: 'starting', title2: 'Creating Your Build' },
-  { title: 'captures', title2: 'Extending Your Build: Captures' },
+  { title: 'device', title2: 'Your Contractor Smart Device' },
+  { title: 'purchases', title2: 'Purchases' },
   { title: 'familiar', title2: 'Familiars' },
-  { title: 'purchases', title2: 'Extending Your Build: Purchases' },
+  { title: 'captures', title2: 'Captures' },
   { title: 'sales', title2: 'Extending Your Build: Sales' },
   { title: 'waifu11', title2: 'These Waifus Go Up to 11' },
   { title: 'danger11', title2: 'Danger Rating 11 Build Rules' },
@@ -229,19 +233,19 @@ export const waifuTags = {
   vp: { tag: 'Vampire', category: 'Race', short: 'vp', effect: '', desc: '', style: { background: 'linear-gradient(0deg, rgba(196,2,2,1) 0%, rgba(99,5,5,1) 70%)', color: '#fff' } },
   pt: { tag: 'Clergy', category: 'Occupation', short: 'pt', effect: '', desc: '', color: 'bg-[#ffffff] text-black' },
   nj: { tag: 'Ninja', category: 'Occupation', short: 'nj', effect: '', desc: '', style: { background: 'linear-gradient(0deg, rgba(70,77,81,1) 0%, rgba(154,177,190,1) 70%)', color: '#fff' } },
-  sr: { tag: 'Shifter', category: 'Powers', short: 'sr', effect: '', desc: 'Able to take more than one form.', color: 'bg-teal-500 text-black' },
+  sr: { tag: 'Shifter', category: 'Powers', short: 'sr', effect: '', desc: 'Able to take more than one form.', color: 'bg-[#8fbc8f] text-black' },
   ev: { tag: 'Evil', category: 'Personality', short: 'ev', effect: '', desc: '', style: { background: 'linear-gradient(0deg, rgba(255,0,0,1) 42%, rgba(134,60,60,1) 100%)', color: '#000' } },
   gn: { tag: 'Genius', category: 'Personality', short: 'gn', effect: '', desc: '', style: { background: 'linear-gradient(0deg, rgba(128,0,255,1) 0%, rgba(0,150,255,1) 100%)', color: '#fff' } },
   rl: { tag: 'Ruler', category: 'Occupation', short: 'rl', effect: '', desc: 'Rules over a country or region, need to have significant political power.', color: 'bg-[#FFD700] text-black' },
   tp: { tag: 'Trap', category: 'Personality', short: 'tp', effect: '', desc: 'Oh, she is cute, but its a boy!', style: { background: 'linear-gradient(0deg, rgba(227,125,255,1) 0%, rgba(132,194,255,1) 100%)', color: '#000' } },
   mi: { tag: 'Multiple', category: 'Utility', short: 'mi', effect: '', desc: 'Package deal.', color: 'bg-teal-[#0ac781] text-black' },
-  tw: { tag: 'Twins', category: 'Other', short: 'tw', effect: '', desc: 'Twins / Triplets / Quadruplets / etc.', color: 'bg-teal-500 text-black' },
+  tw: { tag: 'Twins', category: 'Other', short: 'tw', effect: '', desc: 'Twins / Triplets / Quadruplets / etc.', color: 'bg-[#48d1cc] text-black' },
   cc: { tag: 'Crafter', category: 'Occupation', short: 'cc', effect: '', desc: 'Any producing profession - blacksmith/alchemist/artificer/tailor/etc.', style: { background: 'linear-gradient(0deg, rgb(160 97 33) 0%, rgba(225,141,55,1) 70%)', color: '#000' } },
   mm: { tag: 'Magical Girl', category: 'Occupation', short: 'mm', effect: '', desc: '', style: { background: 'linear-gradient(0deg, rgba(244,84,84,1) 0%, rgba(255,89,229,1) 70%)', color: '#fff' } },
   al: { tag: 'Alien', category: 'Race', short: 'al', effect: '', desc: 'From a planet or dimension other than the setting\'s primary planet or dimension.', style: { background: 'linear-gradient(90deg, rgba(12,94,243,1) 0%, rgba(5,227,31,1) 100%)', color: '#fff' } },
   mg: { tag: 'Monster-girl', category: 'Race', short: 'mg', effect: '', desc: 'A Female who is partially a humanoid Monster, often portrayed as having perverse intentions rather than lethal with their prey.', style: { background: 'linear-gradient(0deg, rgba(255,62,169,1) 0%, rgba(74,129,255,1) 100%)', color: '#fff' } },
   nd: { tag: 'Nerd', category: 'Personality', short: 'nd', effect: '', desc: 'Extremely enthusiastic and knowledgeable about a particular subject, especially one of specialist or niche interest.', style: { background: 'linear-gradient(0deg, rgba(129,125,255,1) 0%, rgba(132,194,255,1) 100%)', color: '#fff' } },
-  ar: { tag: 'Artist', category: 'Occupation', short: 'ar', effect: '', desc: 'Has artistic talent(s).', color: 'bg-teal-500 text-black' },
+  ar: { tag: 'Artist', category: 'Occupation', short: 'ar', effect: '', desc: 'Has artistic talent(s).', style: { 'background-image': 'url("https://i.imgur.com/bpLmuYhm.jpg")', 'background-size': 'cover', 'color': '#000' } },
   sa: { tag: 'Strategist', category: 'Occupation', short: 'sa', effect: '', desc: 'Experienced in laying plans and developing strategies or tactics.', style: { background: 'linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(0,163,255,1) 80%)', color: '#fff' } },
   fw: { tag: 'Fanwork', category: 'Utility', short: 'fw', effect: '', desc: 'An established fan creation.', style: { background: 'linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(219,255,0,1) 80%)', color: '#000' } },
   vn: { tag: 'Villain', category: 'Occupation', short: 'vn', effect: '', desc: '', style: { background: 'linear-gradient(0deg, rgba(202,4,51,1) 0%, rgba(109,3,85,1) 100%)', color: '#fff' } },
@@ -259,19 +263,19 @@ export const waifuTags = {
   sh: { tag: 'Stealth', category: 'Powers', short: 'sh', effect: '', desc: 'Experienced in sneaking around or committing hidden actions.', style: { background: 'linear-gradient(90deg, rgba(26,24,59,1) 0%, rgba(108,98,139,1) 50%, rgba(26,24,59,1) 100%)', color: '#fff' } },
   pm: { tag: 'Power Manipulation', category: 'Powers', short: 'pm', effect: '', desc: 'Known to control, alter, or manipulate powers and abilities in any way or form.', style: { background: 'linear-gradient(0deg, rgba(74,0,143,1) 0%, rgba(157,86,222,1) 52%, rgba(74,0,143,1) 100%)', color: '#fff' } },
 
-  te: { tag: 'Tsundere', category: 'Personality', short: 'te', effect: '', desc: 'A cute, friendly fluffball underneath all those cold glares and angry shouting.', color: 'bg-teal-500 text-black' },
-  ke: { tag: 'Kuudere', category: 'Personality', short: 'ke', effect: '', desc: 'Presents a cold appearance and personality to all but those they love most.', color: 'bg-teal-500 text-black' },
+  te: { tag: 'Tsundere', category: 'Personality', short: 'te', effect: '', desc: 'A cute, friendly fluffball underneath all those cold glares and angry shouting.', style: { background: 'linear-gradient(90deg, rgba(255,84,85,1) 0%, rgba(255,71,140,1) 50%, rgba(255,84,85,1) 100%)', color: '#fff' } },
+  ke: { tag: 'Kuudere', category: 'Personality', short: 'ke', effect: '', desc: 'Presents a cold appearance and personality to all but those they love most.', style: { background: 'linear-gradient(90deg, rgba(134,235,255,1) 0%, rgba(191,244,255,1) 50%, rgba(134,235,255,1) 100%)', color: '#000' } },
   ye: { tag: 'Yandere', category: 'Personality', short: 'ye', effect: '', desc: 'Obsessive and possessive when it comes to crushes. Careful or they might get violent.', style: { background: 'linear-gradient(0deg, rgba(191,113,255,1) 0%, rgba(255,45,45,1) 100%)', color: '#000' } },
-  os: { tag: 'Onee-san', category: 'Personality', short: 'os', effect: '', desc: 'Personality type that always takes care of others.', color: 'bg-teal-500 text-black' },
+  os: { tag: 'Onee-san', category: 'Personality', short: 'os', effect: '', desc: 'Personality type that always takes care of others.', style: { background: 'linear-gradient(90deg, rgba(255,170,202,1) 0%, rgba(254,190,214,1) 50%, rgba(255,170,202,1) 100%)', color: '#000' } },
   ci: { tag: 'Chuuni', category: 'Personality', short: 'ci', effect: '', desc: 'Early teens who have grandiose delusions and desperately want to stand out, convincing themselves they have hidden knowledge or secret powers.', color: 'bg-teal-500 text-black' },
-  gi: { tag: 'Genki', category: 'Personality', short: 'gi', effect: '', desc: 'A lively, energetic and almost uncontrollable personality.', color: 'bg-teal-500 text-black' },
+  gi: { tag: 'Genki', category: 'Personality', short: 'gi', effect: '', desc: 'A lively, energetic and almost uncontrollable personality.', style: { background: 'linear-gradient(90deg, rgba(254,168,88,1) 0%, rgba(255,250,29,1) 50%, rgba(254,168,88,1) 100%)', color: '#000' } },
   ge: { tag: 'Generic', category: 'Utility', short: 'ge', effect: '', desc: 'For generic entries like pokemons, MGE monster girls, etc. Should have the same gender tag as on image.', color: 'bg-[#d3d3d3] text-black' },
   nc: { tag: 'Necromancer', category: 'Occupation', short: 'nc', effect: '', desc: 'Able to reanimate but not technically resurrect the dead.', style: { background: 'linear-gradient(90deg, rgba(10,23,13,1) 0%, rgba(48,109,63,1) 50%, rgba(10,23,13,1) 100%)', color: '#fff' } },
   cs: { tag: 'Custom', category: 'Utility', short: 'cs', effect: '', desc: 'Looks and gender can be customized at purchase. (Usually RPG protagonists)', color: 'bg-[#7656de] text-white' },
   sg: { tag: 'Ship-girl', category: 'Race', short: 'sg', effect: '', desc: 'Female Waifu featuring design elements of a ride/anthropomorphization of a ride.', style: { background: 'linear-gradient(0deg, rgba(125,103,233,1) 0%, rgba(41,248,236,1) 100%)', color: '#000' } },
-  fa: { tag: 'Familiars', category: 'Utility', short: 'fa', effect: '', desc: 'Their familiar(s) are included with a purchase, and are factored into their tier.', color: 'bg-teal-500 text-black' },
-  ff: { tag: 'Fairy', category: 'Race', short: 'ff', effect: '', desc: '', color: 'bg-teal-500 text-black' },
-  vt: { tag: 'VTuber', category: 'Occupation', short: 'vt', effect: '', desc: 'An avatar not related to the real-world actor in any way.', color: 'bg-teal-500 text-black' },
+  fa: { tag: 'Familiars', category: 'Utility', short: 'fa', effect: '', desc: 'Their familiar(s) are included with a purchase, and are factored into their tier.', color: 'bg-[#f0e68c] text-black' },
+  ff: { tag: 'Fairy', category: 'Race', short: 'ff', effect: '', desc: '', style: { 'background-image': 'url("https://i.imgur.com/S8QdbONm.jpg")', 'background-size': 'cover', 'color': '#000' } },
+  vt: { tag: 'VTuber', category: 'Occupation', short: 'vt', effect: '', desc: 'An avatar not related to the real-world actor in any way.', style: { background: 'linear-gradient(90deg, rgba(184,161,255,1) 0%, rgba(250,178,205,1) 50%, rgba(184,161,255,1) 100%)', color: '#000' } },
 } as const
 
 export const tagCategories = uniqWith(Object.values(waifuTags), (tagA, tagB) => tagA.category === tagB.category).map(tag => tag.category)
@@ -329,6 +333,7 @@ export const ALL_PERK_STORES = {
 export const LINKS = computed(() => {
   const links = {} as Record<string, string>
   const allCats = {
+    'intensity/difficulty': difficultyOptions,
     'intensity/intensity': [...intensity, ...DLCintensity],
     'intensity/pvp': intensityPvP,
     'intensity/orbs': invasionPvP,

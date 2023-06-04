@@ -48,7 +48,7 @@ import type { PropType } from 'vue'
 import { ALL_DLC_PERK_TITLES, LINKS, QUERIES } from '~/data/constants'
 import { useStore } from '~/store/store'
 
-const { baseBudget } = useStore()
+const { baseBudget, legacyMode } = useStore()
 
 const props = defineProps({
   list: {
@@ -82,7 +82,6 @@ const props = defineProps({
 })
 
 const costOrIntensity = (el: any) => {
-  console.log(el)
   if (el.cost || el.cost === 0) {
     if (el.cost === 0 && !el.costT)
       return 'free'
@@ -90,7 +89,7 @@ const costOrIntensity = (el: any) => {
       return el.costT ? `${el.costT} IMG` : el.cost * (-1)
   }
   if (el.intensity) {
-    if (el.intensity <= 10)
+    if (el.intensity <= 10 && legacyMode.value)
       return el.intensity * baseBudget.value
     else
       return el.intensity

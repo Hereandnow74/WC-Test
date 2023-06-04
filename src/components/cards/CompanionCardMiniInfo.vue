@@ -59,7 +59,7 @@ const props = defineProps({
   },
 })
 
-const { captureKoeff } = useStore()
+const { difficultyAdjustedCapture, difficultyAdjustedCaptureT } = useStore()
 
 const methods = {
   buy: 'Bought',
@@ -72,22 +72,22 @@ const methods = {
 }
 
 const charCost = computed(() => {
-  let cost = 0
+  let cost = ''
+  const tier = props.char.priceTier
   switch (props.char.method) {
     case 'buy':
-      cost = CHAR_COSTS[props.char.priceTier] || CHAR_COSTS_TICKET[props.char.priceTier]
+      cost = tier >= 11 ? `${CHAR_COSTS_TICKET[props.char.priceTier]} IMG` : `${CHAR_COSTS[props.char.priceTier]}`
       break
     case 'capture':
-      cost = Math.floor((CHAR_COSTS[props.char.priceTier] || CHAR_COSTS_TICKET[props.char.priceTier] || 0) * captureKoeff.value) * (-1)
+      cost = tier >= 11 ? `+${CHAR_COSTS[props.char.priceTier] ? `${CHAR_COSTS[props.char.priceTier]}c` : ''} ${CHAR_COSTS_TICKET[props.char.priceTier]} IMG` : `+${CHAR_COSTS[props.char.priceTier]}`
       break
     case 'used':
-      cost = CHAR_COSTS[props.char.priceTier] || CHAR_COSTS_TICKET[props.char.priceTier]
+      cost = tier >= 11 ? `${CHAR_COSTS_TICKET[props.char.priceTier]} IMG` : `${CHAR_COSTS[props.char.priceTier]}`
       break
     case 'yoink':
-      cost = (CHAR_COSTS[props.char.priceTier] || CHAR_COSTS_TICKET[props.char.priceTier]) * 1.2
+      cost = `${CHAR_COSTS[props.char.priceTier] * 1.2}`
       break
   }
-  const res = props.char.priceTier >= 11 ? `${cost * -1} IMG` : cost * (-1)
-  return cost < 0 ? `+${res}` : res
+  return cost
 })
 </script>

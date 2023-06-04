@@ -62,11 +62,12 @@
       >
         <component
           :is="char.spouse ? CoupleCardMini : CompanionCardMini"
-          v-for="char in companionsDataChunks[currentPage]"
+          v-for="char, i in companionsDataChunks[currentPage]"
           :key="char.uid"
           :char="char"
           :perks="companionsPerksList[char.uid] || {}"
           :edit-mode="isRetinueEdit"
+          :index="(currentPage) * 50 + i + 1"
           class="packItem"
           @sell="sellCompanion"
           @undo="undoBuying"

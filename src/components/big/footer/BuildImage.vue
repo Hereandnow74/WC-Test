@@ -23,7 +23,7 @@
             <div class="flex gap-2">
               <span :style="{'color': imageSettings.categoryColor}">Rating:</span>
               <span>{{ startingWorld.rating || 'Unknown' }}</span>
-              <span>({{ baseBudget }})</span>
+              <span>({{ difficultyAdjustedBudgets[startingWorld.rating] }})</span>
             </div>
           </div>
         </div>
@@ -38,6 +38,19 @@
             Challenges
           </h3>
           <Enum :number-color="imageSettings.numberColor" color="" :style="{'color': imageSettings.perkColor}" :list="activeChallenges" path="/challenges" />
+        </div>
+        <div v-if="difficulties.length">
+          <h3 class="text-lg" :style="{'color': imageSettings.categoryColor}">
+            Difficulty
+          </h3>
+          <Enum
+            :number-color="imageSettings.numberColor"
+            color=""
+            :style="{'color': imageSettings.perkColor}"
+            :list="difficulties"
+            empty-message="Default Intensity"
+            :price-mode="true"
+          />
         </div>
         <div v-if="intensities.length">
           <h3 class="text-lg" :style="{'color': imageSettings.categoryColor}">
@@ -230,7 +243,7 @@
     </template>
     <div class="flex flex-wrap gap-1 justify-between">
       <CompanionCardMiniInfo
-        v-for="cmp in companions"
+        v-for="cmp in filteredRetinue"
         :key="cmp.uid"
         :char="cmp"
         :show-image="imageSettings.showCompanionsImage"
@@ -239,6 +252,7 @@
       />
     </div>
     <div v-if="!imageSettings.onlyImages" class="flex gap-2 pb-1" :style="{'color': imageSettings.perkColor}">
+      <span v-if="!legacyMode">Intensity: <span class="font-semibold" :style="{'color': imageSettings.numberColor}">{{ difficultyRating }} </span></span>
       <span>Total cost: <span class="font-semibold" :style="{'color': imageSettings.numberColor}">{{ totalCost }} </span></span>
       <span v-if="loan.gained">Loan: <span class="font-semibold" :style="{'color': imageSettings.numberColor}">{{ loan.gained }}</span></span>
       <span>Total discount: <span class="font-semibold" :style="{'color': imageSettings.numberColor}">
@@ -265,7 +279,7 @@ const {
   startingWorld, startingOrigin, intensities, binding, homePerks, defensePerks,
   companions, heritage, talentPerks, waifuPerks, ridePerks, miscPerks, luresBought, genericWaifuPerks,
   otherPerks, patron, pvpPerks, yourTier, baseBudget, budget, totalCost,
-  totalDiscount, specificMods, loan,
+  totalDiscount, specificMods, loan, difficulties, legacyMode, difficultyRating, difficultyAdjustedBudgets,
 } = useStore()
 
 const { activeChallenges } = useChallenges()
@@ -273,15 +287,6 @@ const { activeChallenges } = useChallenges()
 const { allCharsObject } = useAllChars()
 
 const { imageSettings } = useSettings()
-
-const worldText = computed(() => {
-  if (startingOrigin.value.uid) {
-    const char = allCharsObject.value[startingOrigin.value.uid]
-    if (char)
-      return `from <i>${char.w}</i>`
-  }
-  return ''
-})
 
 const archetype = {
   dr: 'Dragon',
@@ -309,6 +314,13 @@ const companionImages = computed(() => {
       res[char.uid] = char.perk && waifuPerksObject[char.perk.uid] ? waifuPerksObject[char.perk.uid].image || '' : (char.image || imageLink(charInfo.u))
   })
   return res
+})
+
+const filteredRetinue = computed(() => {
+  return companions.value
+    .filter(cmp => !imageSettings.value.retinue.companions ? cmp.sold || (cmp.role && cmp.role !== 'Companion') : true)
+    .filter(cmp => !imageSettings.value.retinue.familiars ? cmp.role !== 'Familiar' : true)
+    .filter(cmp => !imageSettings.value.retinue.sold ? !cmp.sold : true)
 })
 
 function createImage() {

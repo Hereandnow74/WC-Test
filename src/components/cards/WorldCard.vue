@@ -42,7 +42,7 @@
         Targets: <span class="text-lime-300 font-medium">{{ targets }}</span>
       </router-link>
       <div>
-        Budget: <span class="text-green-200 font-medium">{{ WORLD_RATINGS[rating]?.budget || 'None' }}</span>
+        Budget: <span class="text-green-200 font-medium">{{ difficultyAdjustedBudgets[rating] || 'None' }}</span>
       </div>
     </div>
     <div v-if="world.condition && isArray(world.condition)" class="mx-2 flex gap-2">
@@ -122,7 +122,7 @@ const options = computed(() => {
 
 defineEmits(['editWorld', 'showWorldInfo'])
 
-const { baseBudget, startingWorld, localUserWorlds, flags, settings } = useStore()
+const { baseBudget, startingWorld, localUserWorlds, flags, settings, difficultyAdjustedBudgets } = useStore()
 
 const { favoriteWorlds, favoriteWorldsObject } = useGlobalSettings()
 

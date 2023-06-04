@@ -1,7 +1,7 @@
 
 <template>
   <div class="flex w-full">
-    <div class="lg:pl-0 flex flex-col gap-4 mb-8 mx-auto" :class="[currentWidth]">
+    <div class="lg:pl-0 flex flex-col gap-4 mb-8 mx-auto w-full" :class="[currentWidth]">
       <div class="hidden max-w-screen-lg max-w-screen-xl max-w-screen-sm max-w-screen-md"></div>
       <h1 id="rules" class="text-xl md:text-2xl font-bold text-center">
         Waifu Catalog <span class="text-gray-600 dark:text-gray-400">(by SwiftRosenthal)</span> Interactive v{{ VERSION }} <span class="text-gray-600 dark:text-gray-400">(by Om1cr0n)</span>
@@ -40,20 +40,23 @@
       <div class="flex w-full -my-3 items-center justify-end">
         <fluent:auto-fit-width-24-filled class="h-8 w-8 bg-gray-300 dark:bg-gray-800 rounded cursor-pointer hover:scale-105 transform" @click="changeWidth" />
       </div>
-      <div>
+      <div class="bg-warm-gray-200 dark:bg-gray-800 w-full">
         <Desc
           :desc="glossary"
           class="bg-amber-200 text-gray-800 text-sm md:text-base max-w-[370px] float-right mt-8 mx-2 !p-1 border-3 border-gray-900 indent-xs"
         />
-        <Desc id="starting" class="bg-warm-gray-200 dark:bg-gray-800" :desc="startingDesc" />
+        <Desc id="starting" :desc="startingDesc" />
+        <div class="overflow-x-auto max-w-min mx-auto mb-2">
+          <Table :headers="intensityTableTitles" :rows="intensityTable" class="text-sm md:text-base mb-2 overflow-x-auto min-w-0" />
+        </div>
       </div>
-      <div class="lg:flex bg-amber-100 dark:bg-gray-800 p-1 md:p-4 gap-4 w-full mx-auto">
+      <!-- <div class="lg:flex bg-amber-100 dark:bg-gray-800 p-1 md:p-4 gap-4 w-full mx-auto">
         <Table :headers="worldTitles" :rows="worldData" class="text-sm md:text-base" />
         <Table :headers="waifuTitles" :rows="waifuData" class="text-sm md:text-base w-min flex-grow" />
-      </div>
+      </div> -->
       <div id="pandora" class="bg-amber-100 dark:bg-gray-800 p-1 md:p-4 w-full mx-auto">
         <div class="text-lg text-center mb-2 text-teal-600 dark:text-teal-300">
-          This Tier list is approximation, official tier list do not exist yet.
+          This Tier list is an approximation, official tier list does not exist yet.
         </div>
         <!-- <div class="flex w-full pb-2">
           <div
@@ -101,15 +104,17 @@
           class="text-sm md:text-base w-full flex-grow text-black"
         />
       </div>
+      <Desc id="device" :desc="yourDevice" class="bg-warm-gray-200 dark:bg-gray-800" />
+      <Desc id="purchases" :desc="purchases" class="bg-warm-gray-200 dark:bg-gray-800" />
+      <Desc id="familiar" :desc="familiars" class="bg-warm-gray-200 dark:bg-gray-800" />
       <div>
         <Desc
           :desc="effectiveTiers"
           class="bg-amber-200 text-gray-800 sm:w-1/2 sm:float-right mt-8 mx-2 border-3 border-gray-900"
         />
         <Desc id="captures" :desc="captures" class="bg-warm-gray-200 dark:bg-gray-800" />
+        <Desc id="captures" :desc="captureExtra" class="bg-warm-gray-200 dark:bg-gray-800" />
       </div>
-      <Desc id="familiar" :desc="familiars" class="bg-warm-gray-200 dark:bg-gray-800" />
-      <Desc id="purchases" :desc="purchases" class="bg-warm-gray-200 dark:bg-gray-800" />
       <Desc id="sales" :desc="sales" class="bg-warm-gray-200 dark:bg-gray-800" />
       <Desc id="waifu11" :desc="waifu11" class="bg-warm-gray-200 dark:bg-gray-800" />
       <Desc id="danger11" :desc="danger11" class="bg-warm-gray-200 dark:bg-gray-800" />
@@ -183,7 +188,7 @@ import { WORLD_RATINGS, rulesList, useWorlds, VERSION } from '~/data/constants'
 import {
   startingDesc, pvpRules, effectiveTiers, captures, familiars, purchases, sales, waifu11,
   danger11, services, salary, helpDesk, loans, missions, refund, arranged, arrangedConditions,
-  arrangedSpecial, arrangedTeam, assetValue, rip, offspring, nasuDLC, glossary,
+  arrangedSpecial, arrangedTeam, assetValue, rip, offspring, nasuDLC, glossary, intensityTableTitles, intensityTable, yourDevice, captureExtra,
 } from '~/data/rules'
 
 import { useTooltips } from '~/logic/misc'

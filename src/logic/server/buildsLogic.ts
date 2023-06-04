@@ -1,4 +1,4 @@
-import { DBCharacter, SearchBuild, SearchRequest, ServerBuild } from 'global'
+import { SearchBuild, ServerBuild } from 'global'
 
 import { useUser } from '~/store/user'
 
@@ -39,6 +39,26 @@ export async function _searchForBuilds(SERVER_URL: string, API_VERSION: string, 
   }
   else {
     const payload = await response.json()
+    return payload
+  }
+}
+
+export async function _getAllYourBuilds(SERVER_URL: string, API_VERSION: string): Promise<ServerBuild[]> {
+  const apiUrl = `${SERVER_URL}/${API_VERSION}/builds`
+  const response = await fetch(apiUrl, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${tokens.value.access.token}`,
+    },
+  })
+
+  if (!response.ok) {
+    return []
+  }
+  else {
+    const payload = await response.json()
+    console.log(payload);
     return payload
   }
 }

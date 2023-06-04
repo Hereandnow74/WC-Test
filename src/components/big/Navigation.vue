@@ -55,7 +55,7 @@ onMounted(() => {
   if (arr.length > 2)
     name = arr[arr.length - 1 - props.level]
   else
-    name = arr[arr.length - 1]
+    name = props.items[0]
   const ind = props.items.indexOf(name)
   if (ind !== -1) {
     if (navBar.value) scrollInto(ind)

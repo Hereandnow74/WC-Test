@@ -1,11 +1,12 @@
-import { findIndex, find, remove, intersection } from 'lodash-es'
+import { findIndex, find, remove, intersection, clamp } from 'lodash-es'
 import { Perk } from 'global'
-import { CHAR_COSTS, CHAR_COSTS_FULL, CHAR_COSTS_TICKET, useAllChars, WORLD_RATINGS } from '../data/constants'
+import { CHAR_COSTS, CHAR_COSTS_FULL, CHAR_COSTS_IMG, CHAR_COSTS_TICKET, useAllChars, WORLD_RATINGS } from '../data/constants'
 import { defenseObject, talentsObject } from '../data/talents'
 import { useChallenges } from './challenges'
 import { usePlayStore } from './play'
 import { SavedChar, useChargenStore } from './chargen'
 import { useGlobalSettings } from './settings'
+import { difficultyOptions } from '~/data/difficulty'
 
 const { loan, jumpChain, trHistory, missionRewards } = usePlayStore()
 
@@ -19,6 +20,7 @@ const {
   coupleOrigin,
   localUserWorlds,
   intensities,
+  difficulties,
   pvpPerks,
   binding,
   luresBought,
@@ -78,7 +80,7 @@ const heritageOptions = computed(() => [
 if (settings.value.allDLCTypes === undefined)
   settings.value.allDLCTypes = []
 
-const csr = computed(() => findIndex(intensities.value, { title: 'Cash Still Rules' }) !== -1)
+const csr = computed(() => findIndex(intensities.value, { title: 'Cash Still Rules' }) !== -1 || findIndex(difficulties.value, { title: 'Cash Still Rules' }) !== -1)
 
 const baseBudgetAfter = computed(
   () => baseBudget.value + intensities.value.reduce((a, x) => x.intensity > 1 ? a + x.intensity : a, 0),
@@ -102,6 +104,7 @@ const waifuPerksCost = computed(() => waifuPerks.value.reduce((a, x) => a += x.c
 const genericWaifuPerksCost = computed(() => genericWaifuPerks.value.reduce(costCalc, 0))
 const luresCost = computed(() => luresBought.value.reduce(costCalc, 0) * luresDiscount.value)
 const otherCost = computed(() => otherPerks.value.reduce(costCalc, 0))
+// const difficultyCost = computed(() => difficulties.value.reduce(costCalc, 0))
 
 const specificModsCost = computed(() => specificMods.value.reduce((a, x) => a += x.mod, 0))
 
@@ -131,24 +134,69 @@ const manualKf = useStorage('manualKf', 0)
 const manualSellKf = useStorage('manualSellKf', 0)
 const manualReturnKf = useStorage('manualReturnKf', 0)
 
+const legacyMode = computed(() => findIndex(difficulties.value, { title: 'Legacy Difficulty' }) !== -1)
+
 const captureKoeff = computed(() => {
-  let kf = 0.6
-  if (findIndex(intensities.value, { title: 'Cash Still Rules' }) !== -1) kf = 0.8
-  if (findIndex(activeChallenges.value, { title: 'Waifu Manager' }) !== -1) kf = 0.8
-  if (findIndex(activeChallenges.value, { title: 'Small Team' }) !== -1) kf = 0.7
-  if (findIndex(intensities.value, { title: 'Wage Slave' }) !== -1) kf = 0
+  let kf = 0.25
+  if (legacyMode.value) {
+    kf = 0.6
+    if (findIndex(intensities.value, { title: 'Cash Still Rules' }) !== -1) kf = 0.8
+    if (findIndex(activeChallenges.value, { title: 'Waifu Manager' }) !== -1) kf = 0.8
+    if (findIndex(activeChallenges.value, { title: 'Small Team' }) !== -1) kf = 0.7
+    if (findIndex(intensities.value, { title: 'Wage Slave' }) !== -1) kf = 0
+  }
+  else {
+    const dPerk = find(difficultyOptions, { uid: find(difficulties.value, { type: 'payment' })?.uid })
+    kf = dPerk && dPerk.capture !== undefined ? dPerk.capture : 0.25
+  }
+  if (findIndex(difficulties.value, { title: 'Wage Slave' }) !== -1) kf = 0
   return manualKf.value || kf
 })
 
-const sellKoeff = computed(() => manualSellKf.value || 0.2)
+const sellKoeff = computed(() => {
+  const dPerk = find(difficultyOptions, { uid: find(difficulties.value, { type: 'payment' })?.uid })
+  let kf = dPerk && dPerk.sell !== undefined ? dPerk.sell : 0.75
+  if (legacyMode.value) {
+    kf = 0.2
+    if (findIndex(intensities.value, { title: 'Wage Slave' }) !== -1) kf = 0
+  }
+  if (findIndex(difficulties.value, { title: 'Wage Slave' }) !== -1) kf = 0
+  return manualSellKf.value || kf
+})
+
 const returnKoeff = computed(() => manualReturnKf.value || 0.8)
+
+// Difficulty Math
+const difficultyRating = computed(() => {
+  return legacyMode.value ? 6.25 : 1 + difficulties.value.reduce((a, perk) => a += perk.intensity, 0)
+})
+
+const difficultyAdjustedBudgets = computed(() => WORLD_RATINGS.map(world => Math.round(Math.round(world.budget * ((1 + 1.5) / (clamp(legacyMode.value ? 1 : difficultyRating.value, 0, 10) + 1.5)) / 5) * 5)))
+
+const difficultyAdjustedCapture = computed(() => {
+  return CHAR_COSTS_FULL.map((cost, i) => Math.floor(cost * clamp(difficultyRating.value, 0, 10) * captureKoeff.value * 0.16) % (i >= 11 ? 1000 : 10000))
+})
+const difficultyAdjustedSell = computed(() => {
+  return CHAR_COSTS_FULL.map((cost, i) => Math.floor(cost * clamp(difficultyRating.value, 0, 10) * sellKoeff.value * 0.16) % (i >= 11 ? 1000 : 10000))
+})
+
+// const difficultyAdjustedCaptureExtra = computed(() => {
+//   return CHAR_COSTS_FULL.map(cost => Math.min(Math.floor(cost * clamp(difficultyRating.value, 0, 10) * captureKoeff.value * 0.16), Math.floor(cost * 0.05)))
+// })
+
+const difficultyAdjustedCaptureT = computed(() => {
+  return CHAR_COSTS_IMG.map(cost => Math.floor(cost * clamp(difficultyRating.value, 0, 10) * captureKoeff.value * 0.16 / 1000))
+})
+const difficultyAdjustedSellT = computed(() => {
+  return CHAR_COSTS_IMG.map(cost => Math.floor(cost * clamp(difficultyRating.value, 0, 10) * sellKoeff.value * 0.16 / 1000) + (difficultyRating.value > 0 ? 1 : 0))
+})
 
 const companionProfit = computed(() => {
   return captureKoeff.value > 0
     ? companions.value.reduce((a, x) => {
-      if (x.method === 'capture' && x.priceTier <= 10) {
+      if (x.method === 'capture') {
         if (x.price === undefined) {
-          const captureCost = Math.floor(CHAR_COSTS[x.priceTier] * captureKoeff.value)
+          const captureCost = legacyMode.value ? Math.floor((CHAR_COSTS[x.priceTier] || 0) * captureKoeff.value) : difficultyAdjustedCapture.value[x.priceTier]
           a += captureCost
         }
         else { a += x.price || 0 }
@@ -161,17 +209,23 @@ const companionProfit = computed(() => {
 
 // Note: Return waifus when u Have a Wage Slave rules are unclear
 const companionProfitSold = computed(() => {
-  return captureKoeff.value > 0
+  return sellKoeff.value > 0
     ? companions.value.reduce((a, x) => {
-      if (x.sold && x.tier <= 11 && ['capture'].includes(x.method)) {
+      if (legacyMode.value && x.sold && x.tier <= 11 && ['capture'].includes(x.method)) {
         if (x.soldPrice === undefined) {
-          if (x.tier === 11)
-            return a += Math.floor(CHAR_COSTS_FULL[x.tier] * sellKoeff.value)
-          else
-            return a += Math.floor(CHAR_COSTS[x.tier] * sellKoeff.value)
+          if (legacyMode.value) {
+            if (x.tier === 11)
+              return a += Math.floor(CHAR_COSTS_FULL[x.tier] * sellKoeff.value)
+            else
+              return a += Math.floor(CHAR_COSTS[x.tier] * sellKoeff.value)
+          }
         }
         else { return a += x.soldPrice }
       }
+
+      if (x.sold && !legacyMode.value && x.method === 'capture')
+        return a += difficultyAdjustedSell.value[x.tier]
+
       if (x.sold && x.priceTier <= 10 && ['buy', 'used', 'yoink'].includes(x.method))
         return a += Math.floor(CHAR_COSTS[x.priceTier] * returnKoeff.value)
       return a
@@ -254,7 +308,7 @@ const defenseRetinueDiscountAuto = computed(() => {
     tm: 'Paradox Defense',
   } as Record<string, string>
 
-  const allDefsDiscounts = defensePerks.value.reduce((a, x) => (a[x.title] = { discount: 0, count: x.count >= 2 ? 2 : 1 }, a), {} as Record<string, {discount: number; count: number}>)
+  const allDefsDiscounts = defensePerks.value.reduce((a, x) => (a[x.title] = { discount: 0, count: x.count >= 2 ? 2 : 1, charNames: [] }, a), {} as Record<string, {discount: number; count: number; charNames: string[]}>)
 
   const sortedCompanions = (() => {
     const cmp = [] as {uid: number; cost: number}[]
@@ -275,13 +329,16 @@ const defenseRetinueDiscountAuto = computed(() => {
         if (defName && allDefsDiscounts[defName] !== undefined) {
           const dis = Math.min(availableDisc, defenseObject[defName].cost * 0.4)
           const totalPossible = defenseObject[defName].cost * allDefsDiscounts[defName].count
-          allDefsDiscounts[defName].discount += Math.min(dis, totalPossible - allDefsDiscounts[defName].discount)
-          availableDisc -= Math.min(dis, totalPossible - allDefsDiscounts[defName].discount)
+          const finalCharDisc = Math.min(dis, totalPossible - allDefsDiscounts[defName].discount)
+          if (finalCharDisc > 0) {
+            allDefsDiscounts[defName].discount += finalCharDisc
+            allDefsDiscounts[defName].charNames.push(`${allCharsObject.value[cmp.uid].n} [${finalCharDisc}]`)
+            availableDisc -= finalCharDisc
+          }
         }
       })
     }
   })
-
   return allDefsDiscounts
 })
 
@@ -328,14 +385,17 @@ const defenseRetinueDiscount = computed(() => {
 const totalDiscount = computed(() => usedHeritageDiscount.value + talentsDiscount.value + defensesDiscount.value + defenseRetinueDiscount.value)
 
 const fullStartingBudget = computed(() => {
-  let intensityFlat = 0
-  const intenMultiplier = intensities.value
-    .reduce((a, x) => x.intensity < 10 ? a += x.intensity : (intensityFlat += x.intensity, a), 0)
+  if (legacyMode.value) {
+    let intensityFlat = 0
+    const intenMultiplier = intensities.value
+      .reduce((a, x) => x.intensity < 10 ? a += x.intensity : (intensityFlat += x.intensity, a), 0)
 
-  let bd = baseBudget.value
-  if (flags.value.danger11Start) bd = 2045
+    let bd = baseBudget.value
+    if (flags.value.danger11Start) bd = 2045
 
-  return csr.value ? Math.round((bd + intensityFlat) * (intenMultiplier)) : Math.round((bd + intensityFlat) * (1 + intenMultiplier))
+    return csr.value ? Math.round((bd + intensityFlat) * (intenMultiplier)) : Math.round((bd + intensityFlat) * (1 + intenMultiplier))
+  }
+  return csr.value ? 0 : difficultyAdjustedBudgets.value[startingWorld.value.rating] || 0
 })
 
 // const creditLimit = computed(() =>
@@ -399,9 +459,15 @@ watch(csr, () => {
 
 const companionTicketProfit = computed(() => {
   return companions.value.reduce((a, x) => {
-    if (x.method === 'capture' && x.priceTier >= 11) a += Math.floor(CHAR_COSTS_TICKET[x.priceTier] * captureKoeff.value)
-    if (x.method === 'capture' && x.sold && x.tier >= 11) a += Math.floor(CHAR_COSTS_TICKET[x.tier] * sellKoeff.value)
-    if (x.method !== 'capture' && x.sold && x.priceTier >= 11) a += Math.floor(CHAR_COSTS_TICKET[x.priceTier] * returnKoeff.value)
+    if (legacyMode.value) {
+      if (x.method === 'capture' && x.priceTier >= 11) a += Math.floor(CHAR_COSTS_TICKET[x.priceTier] * captureKoeff.value)
+      if (x.method === 'capture' && x.sold && x.tier >= 11) a += Math.floor(CHAR_COSTS_TICKET[x.tier] * sellKoeff.value)
+      if (x.method !== 'capture' && x.sold && x.priceTier >= 11) a += Math.floor(CHAR_COSTS_TICKET[x.priceTier] * returnKoeff.value)
+    }
+    else {
+      if (x.method === 'capture' && x.priceTier >= 11) a += difficultyAdjustedCaptureT.value[x.priceTier]
+      if (x.method === 'capture' && x.sold && x.tier >= 11) a += difficultyAdjustedSellT.value[x.tier]
+    }
     return a
   }, 0)
 })
@@ -554,6 +620,7 @@ export function useStore() {
     coupleOrigin,
     localUserWorlds,
     intensities,
+    difficulties,
     pvpPerks,
     binding,
     luresBought,
@@ -632,5 +699,12 @@ export function useStore() {
     defenseRetinueDiscountAutoCredits,
     originCost,
     heritageOptions,
+    difficultyRating,
+    legacyMode,
+    difficultyAdjustedCapture,
+    difficultyAdjustedCaptureT,
+    difficultyAdjustedSell,
+    difficultyAdjustedSellT,
+    difficultyAdjustedBudgets,
   }
 }

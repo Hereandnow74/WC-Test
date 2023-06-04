@@ -9,7 +9,7 @@
         <div
           v-for="save in sortedSaveList"
           :key="save.worldName"
-          class="bg-gray-300 dark:bg-gray-700 rounded-xl p-2 flex gap-1 mx-2 shadow-lg "
+          class="bg-gray-300 dark:bg-gray-700 rounded-xl px-2 py-1 flex gap-1 mx-2 shadow-lg "
           border="1 gray-700 dark:gray-300"
         >
           <div class="grid grid-cols-2 flex-grow">
@@ -29,8 +29,15 @@
             </div>
           </div>
           <div class="flex flex-col gap-1 justify-between rounded-xl bg-gray-200 dark:bg-gray-800 py-2 px-1">
-            <clarity:floppy-outline-alerted class="hover:text-green-500 cursor-pointer" @click="loadBuild(save.uid)" />
-            <fluent:delete-20-filled class="hover:text-red-500 cursor-pointer" @click="deleteSave(save.uid)" />
+            <div title="Load">
+              <clarity:floppy-outline-alerted class="hover:text-green-500 cursor-pointer" @click="loadBuild(save.uid)" />
+            </div>
+            <div title="Overwrite">
+              <mdi:content-save-cog class="hover:text-green-500 cursor-pointer" @click="rewrite(save.uid, save.name)" />
+            </div>
+            <div title="Delete">
+              <fluent:delete-20-filled class="hover:text-red-500 cursor-pointer" @click="deleteSave(save.uid)" />
+            </div>
           </div>
         </div>
       </div>
@@ -74,7 +81,7 @@
 
 <script lang='ts' setup>
 import { useTimeAgo } from '@vueuse/core'
-import { random, remove } from 'lodash-es'
+import { findIndex, random, remove } from 'lodash-es'
 
 import Prism from 'prismjs'
 import Input from '../basic/Input.vue'
@@ -83,6 +90,7 @@ import { useStore } from '~/store/store'
 import { saveObject, writeBuildValues } from '~/logic'
 
 import 'prismjs/components/prism-json'
+import { confirmDialog } from '~/logic/dialog'
 
 const { savesList } = useSaves()
 
@@ -113,6 +121,22 @@ function saveBuild() {
     date: new Date().toString(),
   })
   saves.value[uid] = saveObject.value
+}
+
+async function rewrite(uid: number, name: string) {
+  if (!(await confirmDialog('This action will overwrite this save. Proceed?'))) return
+  const ind = findIndex(savesList.value, { uid })
+  if (ind !== -1) {
+    savesList.value[ind] = {
+      uid,
+      name,
+      worldName: startingWorld.value.worldName,
+      rating: startingWorld.value.rating,
+      totalCost: totalCost.value,
+      date: new Date().toString(),
+    }
+    saves.value[uid] = saveObject.value
+  }
 }
 
 function loadBuild(uid: number) {

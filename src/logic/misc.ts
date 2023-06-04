@@ -170,7 +170,7 @@ const {
   startingWorld, startingOrigin, intensities, binding, homePerks, defensePerks,
   companions, heritage, talentPerks, waifuPerks, ridePerks, miscPerks, luresBought, genericWaifuPerks,
   companionsCost, baseBudget, companionProfit, companionProfitSold, otherPerks, loan, csr,
-  usedHeritageDiscount, talentsDiscount, defensesDiscount, defenseRetinueDiscount, patron, specificMods, specificModsCost, missionRewardCredits, pvpPerks, baseBudgetAfter,
+  usedHeritageDiscount, talentsDiscount, defensesDiscount, defenseRetinueDiscount, patron, specificMods, specificModsCost, missionRewardCredits, pvpPerks, baseBudgetAfter, difficulties, difficultyRating, difficultyAdjustedBudgets,
 } = useStore()
 
 const { activeChallenges } = useChallenges()
@@ -234,7 +234,7 @@ export function numberToSigned(n: number): string {
 }
 
 export function copyText() {
-  const fullCost = { c: baseBudget.value }
+  const fullCost = { c: difficultyAdjustedBudgets.value[startingWorld.value.rating] || 0 }
   if (csr.value) fullCost.c = 0
 
   let full = `Starting World: ${startingWorld.value.worldName}${startingWorld.value.condition ? ` [${startingWorld.value.condition}]` : ''}\nStarting budget ${fullCost.c}\n\n`
@@ -245,6 +245,12 @@ export function copyText() {
   full += patron.value.length ? `${buildString('Patron', patron.value, fullCost)}\n` : ''
 
   full += activeChallenges.value.length ? `${buildString('Challenges', activeChallenges.value, fullCost)}\n` : ''
+
+  full += difficulties.value.length
+    ? `Difficulty [${difficultyRating.value}] \n${difficulties.value.reduce((a, x) =>
+      a += `${x.title} ${x.intensity}\n`
+    , '')}`
+    : ''
 
   full += intensities.value.length
     ? `Intensity \n${intensities.value.reduce((a, x) =>

@@ -15,11 +15,13 @@
     <Search />
     <Intro v-if="showIntro" @click="showIntro = false" />
 
+    <div class="overflow-hidden">
+      <ConfirmDialog class="z-90" />
+      <InfoDialog class="z-90" />
+      <CustomDialog class="z-90" />
+    </div>
     <div v-auto-animate class="overflow-hidden">
-      <ConfirmDialog class="z-20" />
-      <InfoDialog class="z-20" />
-      <CustomDialog class="z-20" />
-      <BuyCompanionDialog class="z-20" />
+      <BuyCompanionDialog class="z-90" />
       <component :is="SaveLoad" v-if="showSaveLoad" class="z-20" @click="showSaveLoad = !showSaveLoad" />
       <component :is="BuildImageSettings" v-if="showBuildImageSettings" class="z-20" @click="showBuildImageSettings = !showBuildImageSettings" />
       <component :is="Share" v-if="showShare" class="z-20" @click="showShare = !showShare" />

@@ -141,3 +141,45 @@ export async function _logoutFromServer(SERVER_URL: string, API_VERSION: string,
   }
   return 'No Token'
 }
+
+export async function _resetPassword(SERVER_URL: string, API_VERSION: string, password: string, token: string): Promise<string> {
+  if (token) {
+    const apiURL = new URL(`${SERVER_URL}/${API_VERSION}/auth/reset-password`)
+    apiURL.searchParams.set('token', token)
+    const response = await fetch(apiURL, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ password }),
+    })
+
+    if (!response.ok) {
+      const errorText = await response.text()
+      return JSON.parse(errorText).message
+    }
+    else {
+      return 'Password was reset successfully'
+    }
+  }
+  return 'No Token'
+}
+
+export async function _sendResetToken(SERVER_URL: string, API_VERSION: string, email: string): Promise<string> {
+  const apiUrl = `${SERVER_URL}/${API_VERSION}/auth/forgot-password`
+  const response = await fetch(apiUrl, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ email: email }),
+  })
+
+  if (!response.ok) {
+    const errorText = await response.text()
+    return JSON.parse(errorText).message
+  }
+  else {
+    return 'Reset password token was send to your email'
+  }
+}

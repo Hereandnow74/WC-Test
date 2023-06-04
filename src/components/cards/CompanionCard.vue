@@ -223,6 +223,7 @@ import { Character, DBCharacter } from 'global'
 import { random } from 'lodash-es'
 import { CHAR_COSTS, defTags, PLACEHOLDER_NO_IMAGE, useAllChars, waifusThatHasPerk, waifuTags, nicknames, CHAR_COSTS_TICKET } from '~/data/constants'
 import { lazyLoadSingleImg, tagToggles, showDefenseTags, imageLink } from '~/logic'
+import { confirmDialog } from '~/logic/dialog'
 import { updateUserLikes } from '~/logic/server/'
 import { captureCopyCompanion, captureCompanion, yoinkCompanion, slightlyCompanion, deleteLocalCharacter, buyAnyCompanion, undoBuying, isAlreadyBought } from '~/logic/waifuLogic'
 import { usePlayStore } from '~/store/play'
@@ -266,8 +267,8 @@ const props = defineProps({
 })
 
 const {
-  flags, captureKoeff,
-  settings,
+  flags,
+  settings, difficultyAdjustedCapture, difficultyAdjustedCaptureT,
 } = useStore()
 const { canPurchase, favoritesObject, favorites } = useGlobalSettings()
 const { likes } = usePlayStore()
@@ -316,7 +317,7 @@ const charData = computed(() => {
   return res as Character
 })
 
-const charCost = computed(() => charData.value.tier >= 11 ? ` ${Math.floor(CHAR_COSTS_TICKET[charData.value.tier] * captureKoeff.value)}t` : ` ${Math.floor(CHAR_COSTS[charData.value.tier] * captureKoeff.value)}c`)
+const charCost = computed(() => difficultyAdjustedCaptureT.value[charData.value.tier] > 0 ? ` ${difficultyAdjustedCapture.value[charData.value.tier]}c ${difficultyAdjustedCaptureT.value[charData.value.tier]}t` : ` ${difficultyAdjustedCapture.value[charData.value.tier]}c`)
 
 const tags = computed(() => {
   return charData.value.tags.map(x => waifuTags[x] ? waifuTags[x] : { tag: x, color: 'bg-teal-600', desc: '' })
@@ -372,6 +373,10 @@ function likeChar() {
   else {
     favorites.value.push(charData.value.uid)
     if (user.value.id) {
+      if (user.value.role === 'guest') {
+        confirmDialog('You need to confirm your email to make your likes count, otherwise they will behave just like your favorite list.', 'info')
+        return
+      }
       if (likes.value[charData.value.uid] !== undefined) {
         likes.value[charData.value.uid] += 1
         updateUserLikes(false, { characterUid: charData.value.uid, liked: true })

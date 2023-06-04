@@ -21,7 +21,7 @@ const props = defineProps({
   },
 })
 const { allChars } = useAllChars()
-const { captureKoeff, sellKoeff } = useStore()
+const { difficultyAdjustedCapture, difficultyAdjustedSell } = useStore()
 
 // const allWorldTargets = computed(() => assign(countBy(allChars.value.map(x => x.w)), countBy(allChars.value.map(x => x.d))))
 
@@ -53,11 +53,11 @@ const worldCharsCountByTier = computed(() => {
 })
 
 const totalCapture = computed(() => {
-  return worldCharsCountByTier.value.reduce((a, n, i) => a += Math.floor(CHAR_COSTS[i] * captureKoeff.value) * n, 0)
+  return worldCharsCountByTier.value.reduce((a, n, i) => a += difficultyAdjustedCapture.value[i] * n, 0)
 })
 
 const totalSell = computed(() => {
-  return worldCharsCountByTier.value.reduce((a, n, i) => a += Math.floor(CHAR_COSTS[i] * sellKoeff.value) * n, 0)
+  return worldCharsCountByTier.value.reduce((a, n, i) => a += difficultyAdjustedSell.value[i] * n, 0)
 })
 
 const totalCharCountByTierUnderCondition = computed(() => {
@@ -70,11 +70,11 @@ const totalCharCountByTierUnderCondition = computed(() => {
 })
 
 const totalCaptureByCondition = computed(() => {
-  return Object.keys(totalCharCountByTierUnderCondition.value).reduce((a, x) => (a[x] = totalCharCountByTierUnderCondition.value[x].reduce((g, n, i) => g += Math.floor(CHAR_COSTS[i] * captureKoeff.value) * n, 0), a), {})
+  return Object.keys(totalCharCountByTierUnderCondition.value).reduce((a, x) => (a[x] = totalCharCountByTierUnderCondition.value[x].reduce((g, n, i) => g += difficultyAdjustedCapture.value[i] * n, 0), a), {})
 })
 
 const totalSellByCondition = computed(() => {
-  return Object.keys(totalCharCountByTierUnderCondition.value).reduce((a, x) => (a[x] = totalCharCountByTierUnderCondition.value[x].reduce((g, n, i) => g += Math.floor(CHAR_COSTS[i] * sellKoeff.value) * n, 0), a), {})
+  return Object.keys(totalCharCountByTierUnderCondition.value).reduce((a, x) => (a[x] = totalCharCountByTierUnderCondition.value[x].reduce((g, n, i) => g += difficultyAdjustedSell.value[i] * n, 0), a), {})
 })
 
 const worldData = computed(() => {

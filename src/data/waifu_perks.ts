@@ -4258,6 +4258,26 @@ export const DLCwaifu_perks: WaifuPerk[] = [
     desc: 'Throughout Sonic\'s many adventures he has experienced many things, among those things are the many different transformations he\'s been subjected to. One in particular was the forced "werehog" form during nighttime, gained through the exposure to the corruptive energy of Dark Gaia and lost after its true forms awakening. With this perk, Sonic will gain the ability to freely shift into this form, sacrificing his famous speed for incredible strength and endurance as well as stretchable arms while transformed. The perk does not alter Sonic\'s personal power in any other meaningful way, and his tier rating will therefore not change. Because of this forms corrupted nature, he can\'t transform into Super Sonic while in werehog form. This perk is always active if Sonic was captured during the events of Sonic Unleashed.',
     whitelist: [],
   },
+  {
+    uid: 'F1riY',
+    dlc: '| DarkShadow |',
+    dlcLink: '',
+    title: 'Heart of the Master',
+    from: 'Power Rangers',
+    waifu: [
+      'Tommy Oliver(Lord Drakkon)',
+    ],
+    waifuUID: [
+      9261239,
+    ],
+    tier: 12,
+    image: 'https://i.imgur.com/78oS4U6l.jpeg',
+    cost: 0,
+    discount: 200,
+    costT: 5,
+    desc: 'The power of the Heart of the Master is now in the possessions of Lord Drakkon formerly Tommy Oliver. After grafting the Heart in his body, he gains the power to alter reality across countless universes in space and times all according to his will.\nHe also received superhero-like superhuman abilities such as red energy blasts, super strength, electro energy generation, superhuman resistance to damage (but not invulnerability), flight and super speed. \nDrakkon will always have this perk if captured during the events of Mighty Morphin Power Rangers: Shattered Grid Finale.',
+    whitelist: [],
+  },
 ]
 
 export const waifuPerksObject = [...DLCwaifu_perks, ...waifu_perks, ...(localPerks.value['Specific waifu perk'] || [])].reduce((a, x) => { a[x.uid] = x; return a }, {} as Record<string, WaifuPerk>)

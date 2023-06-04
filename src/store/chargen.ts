@@ -74,10 +74,18 @@ const coupleOrigin = storeType<Origin>('coupleOrigin', {
 })
 
 const intensities = storeType('intensities', [] as {
+  uid: string
   title: string
   intensity: number
   count?: number
   cost?: number
+}[])
+
+const difficulties = storeType('difficulties', [] as {
+  uid: string
+  title: string
+  type: string
+  intensity: number
 }[])
 
 const pvpPerks = storeType<Perk[]>('pvpPerks', [])
@@ -124,6 +132,7 @@ export interface SavedChar {
   swap?: Swap
   perk?: SWP
   image?: string
+  note?: string
 }
 
 const companions = storeType('companions', [] as SavedChar[])
@@ -182,6 +191,7 @@ export function useChargenStore() {
     coupleOrigin,
     localUserWorlds,
     intensities,
+    difficulties,
     pvpPerks,
     binding,
     luresBought,

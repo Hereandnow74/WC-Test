@@ -21,7 +21,7 @@
         <div class="flex gap-2">
           <span class="text-gray-300">Rating:</span>
           <span class="text-teal-300 font-semibold">{{ startingWorld.rating || 'Unknown' }}
-            <span class="text-blue-300 font-semibold">({{ WORLD_RATINGS[startingWorld.rating]?.budget || 0 }})</span>
+            <span class="text-blue-300 font-semibold">({{ difficultyAdjustedBudgets[startingWorld.rating] || 0 }})</span>
           </span>
         </div>
       </div>
@@ -38,7 +38,19 @@
       </h3>
       <Enum color="text-blue-400 hover:text-blue-300" :list="activeChallenges" path="/challenges" />
     </div>
-    <div id="Intensity">
+    <div id="Difficulty">
+      <h3 class="text-lg text-gray-400">
+        Difficulty
+      </h3>
+      <Enum
+        color="text-blue-400 hover:text-blue-300"
+        :list="difficulties"
+        :edit-mode="editMode"
+        :price-mode="priceMode"
+        empty-message="Default Intensity"
+      />
+    </div>
+    <div v-if="intensities.length" id="Intensity">
       <h3 class="text-lg text-gray-400">
         Intensity
       </h3>
@@ -227,6 +239,14 @@
       </ul>
     </div>
     <div class="flex gap-2 py-2 justify-between">
+      <!-- <Button
+        v-if="user.id"
+        label="Save to Account / Publish Build"
+        size="Small"
+        bg-color="bg-teal-600"
+        class="self-start"
+        @click="publishBuildOnServer"
+      /> -->
       <Button
         label="Publish Build"
         size="Small"
@@ -252,6 +272,7 @@
       />
     </div>
     <PublishBuild v-if="showPublish" @click="showPublish = false" />
+    <PublishBuildOnServer v-if="showPublishOnServer" @click="showPublishOnServer = false" />
   </div>
 </template>
 
@@ -260,19 +281,22 @@ import { useStore } from '~/store/store'
 
 import { useChallenges } from '~/store/challenges'
 import { confirmDialog } from '~/logic/dialog'
-import { shownValue, WORLD_RATINGS } from '~/data/constants'
+import { shownValue } from '~/data/constants'
+import { useUser } from '~/store/user'
 
 const {
   startingWorld, startingOrigin, intensities, binding, homePerks, defensePerks,
   heritage, talentPerks, waifuPerks, ridePerks, miscPerks, luresBought, genericWaifuPerks,
-  otherPerks, yourTier, flags, pvpPerks, patron,
+  otherPerks, yourTier, flags, pvpPerks, patron, difficulties, difficultyAdjustedBudgets,
 } = useStore()
 
 const { activeChallenges } = useChallenges()
+const { user } = useUser()
 
 const editMode = ref(false)
 const priceMode = ref(false)
 const showPublish = ref(false)
+const showPublishOnServer = ref(false)
 
 const archetype = {
   dr: 'Dragon',
@@ -300,6 +324,9 @@ async function finishBuild() {
 
 async function publishBuild() {
   showPublish.value = true
+}
+async function publishBuildOnServer() {
+  showPublishOnServer.value = true
 }
 
 async function returnToChargen() {

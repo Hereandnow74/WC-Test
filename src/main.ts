@@ -22,7 +22,7 @@ const router = createRouter({
   routes,
   scrollBehavior(to, from, savedPosition) {
     if (to.hash) {
-      const element = document.querySelector(to.hash.replaceAll(' ', '\\ '))
+      const element = document.querySelector(to.hash.replaceAll(' ', '\\ ').replaceAll(':', '\\:'))
       nextTick(() => element?.scrollIntoView({ behavior: 'smooth' }))
       // element?.scrollIntoView({ behavior: 'smooth' })
       return

@@ -29,7 +29,7 @@
       Copy Text of Build
     </div>
     <div class="cursor-pointer flex gap-2 border-gray-600">
-      <div class="flex gap-2 items-center hover:text-amber-500" title="Copy Text of Build" @click="buildImage">
+      <div class="flex gap-2 items-center hover:text-amber-500" title="Copy Image of Build" @click="buildImage">
         <uil:image-upload />
         Copy Image of Build
       </div>
