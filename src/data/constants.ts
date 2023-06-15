@@ -79,6 +79,8 @@ export const WORLD_RATINGS = [
   { rating: 11, title: 'One', budget: 0 },
 ]
 
+export const WORLD_RATINGS_DF = [0, 33, 55, 85, 140, 225, 365, 590, 955, 1545, 2500]
+
 export const CHAR_COSTS = [0, 1, 2, 5, 10, 20, 50, 100, 200, 500, 1000, 0, 0, 0]
 export const CHAR_COSTS_FULL = [0, 1, 2, 5, 10, 20, 50, 100, 200, 500, 1000, 2000, 5000, 10000]
 export const CHAR_COSTS_IMG = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2000, 5000, 10000]

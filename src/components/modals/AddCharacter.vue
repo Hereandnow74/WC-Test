@@ -65,7 +65,7 @@
           <div class="flex gap-2">
             <Checkbox v-model="localSave" label="Local save" />
             <Checkbox v-model="serverSave" label="Propose to global" />
-            <Checkbox v-if="editMode" v-model="oldEntry" label="Keep old UID" title="Keep UID so if there is a Waifu Perk for them, it will still work" />
+            <Checkbox v-if="editMode" v-model="oldEntry" :label="`Keep old UID[${character.uid}]`" title="Keep UID so if there is a Waifu Perk for them, it will still work" />
           </div>
           <Button
             :disabled="!!submitMessage || !!processing"

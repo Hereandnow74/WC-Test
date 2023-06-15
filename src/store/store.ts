@@ -1,6 +1,6 @@
 import { findIndex, find, remove, intersection, clamp } from 'lodash-es'
 import { Perk } from 'global'
-import { CHAR_COSTS, CHAR_COSTS_FULL, CHAR_COSTS_IMG, CHAR_COSTS_TICKET, useAllChars, WORLD_RATINGS } from '../data/constants'
+import { CHAR_COSTS, CHAR_COSTS_FULL, CHAR_COSTS_IMG, CHAR_COSTS_TICKET, useAllChars, WORLD_RATINGS, WORLD_RATINGS_DF } from '../data/constants'
 import { defenseObject, talentsObject } from '../data/talents'
 import { useChallenges } from './challenges'
 import { usePlayStore } from './play'
@@ -104,7 +104,7 @@ const waifuPerksCost = computed(() => waifuPerks.value.reduce((a, x) => a += x.c
 const genericWaifuPerksCost = computed(() => genericWaifuPerks.value.reduce(costCalc, 0))
 const luresCost = computed(() => luresBought.value.reduce(costCalc, 0) * luresDiscount.value)
 const otherCost = computed(() => otherPerks.value.reduce(costCalc, 0))
-// const difficultyCost = computed(() => difficulties.value.reduce(costCalc, 0))
+const difficultyCost = computed(() => difficulties.value.reduce(costCalc, 0))
 
 const specificModsCost = computed(() => specificMods.value.reduce((a, x) => a += x.mod, 0))
 
@@ -168,10 +168,10 @@ const returnKoeff = computed(() => manualReturnKf.value || 0.8)
 
 // Difficulty Math
 const difficultyRating = computed(() => {
-  return legacyMode.value ? 6.25 : 1 + difficulties.value.reduce((a, perk) => a += perk.intensity, 0)
+  return legacyMode.value ? 6.25 : 1 + difficulties.value.reduce((a, perk) => a += (perk.intensity || 0), 0)
 })
 
-const difficultyAdjustedBudgets = computed(() => WORLD_RATINGS.map(world => Math.round(Math.round(world.budget * ((1 + 1.5) / (clamp(legacyMode.value ? 1 : difficultyRating.value, 0, 10) + 1.5)) / 5) * 5)))
+const difficultyAdjustedBudgets = computed(() => WORLD_RATINGS_DF.map(world => Math.round(Math.round(world * ((1 + 1.5) / (clamp(legacyMode.value ? 1 : difficultyRating.value, 0, 10) + 1.5)) / 5) * 5)))
 
 const difficultyAdjustedCapture = computed(() => {
   return CHAR_COSTS_FULL.map((cost, i) => Math.floor(cost * clamp(difficultyRating.value, 0, 10) * captureKoeff.value * 0.16) % (i >= 11 ? 1000 : 10000))
@@ -436,7 +436,7 @@ const budget = computed(() => {
       - genericWaifuPerksCost.value - companionsCost.value - otherCost.value - fee.value
       - budgetMods.value.minus + budgetMods.value.plus + companionProfit.value + companionProfitSold.value
       + usedHeritageDiscount.value + talentsDiscount.value + defensesDiscount.value + specificModsCost.value
-      + budgetMods.value.sell11 * 1000 + missionRewardCredits.value + defenseRetinueDiscount.value - challengesCost.value - originCost.value
+      + budgetMods.value.sell11 * 1000 + missionRewardCredits.value + defenseRetinueDiscount.value - challengesCost.value - originCost.value - difficultyCost.value
 
   // CSR implementation 3.0
   if (flags.value.chargen && csr.value) {

@@ -86,6 +86,7 @@ const difficulties = storeType('difficulties', [] as {
   title: string
   type: string
   intensity: number
+  cost?: number
 }[])
 
 const pvpPerks = storeType<Perk[]>('pvpPerks', [])

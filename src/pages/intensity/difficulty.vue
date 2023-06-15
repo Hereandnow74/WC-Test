@@ -74,35 +74,49 @@
       class="mt-4 column-gap"
       :class="settings.columns !== 'auto' ? `column-count-${settings.columns}` : 'md:column-count-2 xl:column-count-3 4xl:column-count-4 5xl:column-count-5'"
     >
-      <div v-for="rule in difficultyOptions. slice(0, -1)" :key="rule.uid" class="column-block">
+      <div v-for="rule in difficultyOptions" :key="rule.uid" class="column-block">
         <div class="text-lg text-center font-semibold leading-loose">
           {{ displayTitle(rule) }}
         </div>
+        <div v-if="rule.type === 'random1'" class="dark:bg-gray-800 bg-blue-gray-300 rounded p-2 mb-2">
+          All randomizer options are mutually compatible. Randomizers that do not affect intensity have a 1% chance of applying to any new world visited (after a contractor’s starting world) even if they are not chosen. This applies separately for each randomizer.
+        </div>
+
         <DifficultyCard
           :id="rule.title"
           :perk="rule"
           :is-active="difficulties.findIndex((x) => x.uid === rule.uid) !== -1"
         />
       </div>
-      <!-- <div class="text-lg text-center font-semibold leading-loose">
+      <div class="text-lg text-center font-semibold leading-loose">
         Utility
       </div>
       <PerkCard
-        :perk="difficultyOptions. slice(-1)[0]"
-        :is-active="difficulties.findIndex((x) => x.uid === difficultyOptions. slice(-1)[0].uid) !== -1"
-        :bg="difficultyAvailable(difficultyOptions. slice(-1)[0]) ? 'blue-100 dark:gray-700 hover:blue-200 dark:hover:gray-800' : 'gray-200 dark:gray-500'"
-        @pickPerk="chooseDifficulty(difficultyOptions. slice(-1)[0])"
-      /> -->
+        :perk="buybackIntensity"
+        :is-active="difficulties.findIndex((x) => x.uid === buybackIntensity.uid) !== -1"
+        :bg="difficultyAvailable(buybackIntensity) ? 'blue-100 dark:gray-700 hover:blue-200 dark:hover:gray-800' : 'gray-200 dark:gray-500'"
+        @pickPerk="(perk, obj) => pickSimplePerk(buybackIntensity, obj, difficultyAvailable, difficulties)"
+      />
+      <DifficultyCard
+        :perk="customIntensity"
+        :is-active="difficulties.findIndex((x) => x.uid === customIntensity.uid) !== -1"
+        :bg="difficultyAvailable(customIntensity) ? 'blue-100 dark:gray-700 hover:blue-200 dark:hover:gray-800' : 'gray-200 dark:gray-500'"
+        @pickPerk="chooseDifficulty(customIntensity)"
+      >
+        <template #intensity>
+          <NumberInput v-model="customIntensity.intensity" :min="-100" @click.stop />
+        </template>
+      </DifficultyCard>
     </div>
   </div>
 </template>
 
 <script lang='ts' setup>
 import { clamp } from 'lodash-es'
-import { CHAR_COSTS, CHAR_COSTS_FULL, WORLD_RATINGS } from '~/data/constants'
+import { CHAR_COSTS, CHAR_COSTS_FULL, WORLD_RATINGS_DF } from '~/data/constants'
 import { difficultyOptions, difficultyRules } from '~/data/difficulty'
 import { useTooltips } from '~/logic/misc'
-import { difficultyAvailable, chooseDifficulty } from '~/logic/perksLogic'
+import { difficultyAvailable, chooseDifficulty, pickSimplePerk } from '~/logic/perksLogic'
 import { useStore } from '~/store/store'
 
 const { settings, difficultyRating, captureKoeff, sellKoeff, difficulties } = useStore()
@@ -123,8 +137,34 @@ const typeTitles = {
   other: 'Misc',
 }
 
+const customIntensity = reactive({
+  uid: '9Vaf1',
+  title: 'Custom Intensity',
+  image: 'https://i.imgur.com/5BE6VJUl.jpg',
+  intensity: 1,
+  desc: `An Utility perk to adjust intensity in case you use some DLC or Homebrew options.
+  `,
+  category: 'difficulty',
+  type: 'utility',
+})
+
+const buybackIntensity = {
+  uid: 'Wkf12',
+  title: 'Buyback',
+  image: 'https://i.imgur.com/jzSX3Dpl.jpg',
+  desc: 'Once you’ve been an active contractor for six months (180 days), you will earn the ability to pay off all difficulty settings that add intensity, to a minimum of +0 in each category. This will remove the difficulty effect, without lowering the values of your captures and sales. The fee for this is 500 credits per point of intensity, plus an additional 500 credits per point you’ve previously paid off: 500, 1,000, 1,500, 2,000, etc. If you pay off multiple intensity points at once, each point will be counted separately.',
+  category: 'difficulty',
+  type: 'utility2',
+  intensity: 0,
+  cost: 500,
+  increment: true,
+  multiple: true,
+  max: 100,
+  min: 1,
+}
+
 const worldDifficultyRow = computed(() => {
-  const budgetRow = WORLD_RATINGS.slice(1, -1).map(w => Math.round(Math.round(w.budget * ((1 + 1.5) / (clamp(difficultyRating.value, 0, 10) + 1.5)) / 5) * 5))
+  const budgetRow = WORLD_RATINGS_DF.slice(1).map(w => Math.round(Math.round(w * (2.5 / (clamp(difficultyRating.value, 0, 10) + 1.5)) / 5) * 5))
   return ['Budget', ...budgetRow]
 })
 

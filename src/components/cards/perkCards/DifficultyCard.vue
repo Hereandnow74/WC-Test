@@ -27,6 +27,7 @@
     <div class="px-2 flex gap-2">
       <b>Intensity</b>:
       <span text="green-600 dark:green-300">{{ perk.intensity > 0 ? '+' : '' }}{{ perk.intensity }}</span>
+      <slot name="intensity" />
     </div>
     <Desc :desc="perk.desc" />
     <div v-if="perk.special" class="mx-2">
@@ -45,6 +46,7 @@
 
 <script lang="ts" setup>
 import { PLACEHOLDER_IMAGE } from '~/data/constants'
+import { lazyLoadSingleImg } from '~/logic/misc'
 import { difficultyAvailable, chooseDifficulty } from '~/logic/perksLogic'
 import { useStore } from '~/store/store'
 
@@ -65,10 +67,10 @@ defineProps({
   },
 })
 
-// const perkImg = ref<HTMLImageElement | null>(null)
+const perkImg = ref<HTMLImageElement | null>(null)
 
 const { settings } = useStore()
 
-// onMounted(() => { if (perkImg.value) lazyLoadSingleImg(perkImg.value) })
-// watch(settings.value, () => { if (perkImg.value) lazyLoadSingleImg(perkImg.value) }, { flush: 'post' })
+onMounted(() => { if (perkImg.value) lazyLoadSingleImg(perkImg.value) })
+watch(settings.value, () => { if (perkImg.value) lazyLoadSingleImg(perkImg.value) }, { flush: 'post' })
 </script>

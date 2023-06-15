@@ -15,14 +15,9 @@
     <Search />
     <Intro v-if="showIntro" @click="showIntro = false" />
 
-    <div class="overflow-hidden">
-      <ConfirmDialog class="z-90" />
-      <InfoDialog class="z-90" />
-      <CustomDialog class="z-90" />
-    </div>
     <div v-auto-animate class="overflow-hidden">
-      <BuyCompanionDialog class="z-90" />
-      <component :is="SaveLoad" v-if="showSaveLoad" class="z-20" @click="showSaveLoad = !showSaveLoad" />
+      <BuyCompanionDialog class="z-50" />
+      <component :is="SaveLoad" v-if="showSaveLoad" @click="showSaveLoad = !showSaveLoad" />
       <component :is="BuildImageSettings" v-if="showBuildImageSettings" class="z-20" @click="showBuildImageSettings = !showBuildImageSettings" />
       <component :is="Share" v-if="showShare" class="z-20" @click="showShare = !showShare" />
       <component :is="addPerkComponent" v-if="showAddPerk" @click="toggleShowAddPerk()" />
@@ -30,6 +25,11 @@
       <component :is="settingsComponent" v-if="showSettings" @click="toggleShowSettings()" />
       <component :is="addFicComponent" v-if="showAddFic" :fic="currentFic" @click="toggleAddFic()" />
       <BuildImage v-if="isBuildImage" />
+    </div>
+    <div class="overflow-hidden">
+      <ConfirmDialog class="z-50" />
+      <InfoDialog class="z-50" />
+      <CustomDialog class="z-50" />
     </div>
   </main>
 </template>

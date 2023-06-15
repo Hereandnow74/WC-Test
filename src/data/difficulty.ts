@@ -15,6 +15,7 @@ export const difficultyOptions = [
   {
     uid: '9VaF7',
     title: 'Legacy Difficulty',
+    image: 'https://i.imgur.com/uTx4YCOl.jpg',
     intensity: 0,
     desc: `Your capture/sale values are set to 60%/20% of the listed price and you get a standard budget, the same as on Intensity 1. <b>Ignore</b> the values displayed by the table above and the rest of this section.
     `,
@@ -26,6 +27,7 @@ export const difficultyOptions = [
   {
     uid: '9VaF9',
     title: 'Me and My Girlfriend(s) (PvE)',
+    image: 'https://i.imgur.com/bo1EUtEl.jpg',
     intensity: 0,
     desc: `You are a solo contractor. You may still encounter other contractors, if you choose to engage with the Eye Orbs, but the multiverse is big, really big. You just won't believe how vastly, hugely, mind- bogglingly big it is. I mean, you may think it's a long way down the road to the chemist, but that's just peanuts to the multiverse.
     `,
@@ -35,6 +37,7 @@ export const difficultyOptions = [
   {
     uid: 'NUVvc',
     title: 'Couple’s Account (Cooperative)',
+    image: '',
     intensity: -1,
     desc: `
     <p>Your spouse or significant other is a contractor like you, but the two of you are tied much more closely than the friends option below. The two of you share full access to a joint account tied to both of your smart devices. A member of your retinue may be a companion to one of you and merely a familiar to the other.
@@ -50,6 +53,7 @@ export const difficultyOptions = [
   {
     uid: 'PaZcD',
     title: 'With A Little Help From My Friends (Cooperative)',
+    image: '',
     intensity: -1,
     desc: 'You aren’t the only player in your game. Another contractor walks alongside you, visiting the same worlds in the same order. Your progress meters for Exit Stage Left and Rainbow Bridge are synchronized and charged by both of your activities. No matter how many teammates you have, the budget adjustment remains the same. Remember, “friendly fire isn’t,” so try not to antagonize your teammates too much.',
     category: 'difficulty',
@@ -59,6 +63,7 @@ export const difficultyOptions = [
   {
     uid: '4IQmP',
     title: '100%/0%',
+    image: 'https://i.imgur.com/8aVxoNql.jpg',
     intensity: -5,
     desc: 'All payment for individuals comes from captures, not sales. As an example, a Tier 8 individual captured on intensity 5 will now earn you 160 credits up-front instead of 40, while an immediate sale will earn you 0 additional credits instead of the standard 120.',
     category: 'difficulty',
@@ -69,6 +74,7 @@ export const difficultyOptions = [
   {
     uid: 'HKgAq',
     title: '75%/25%',
+    image: '',
     intensity: -3,
     desc: 'The standard compensation for your captures and sales is flipped. As an example, a Tier 8 individual captured on intensity 5 will now earn you 120 credits up-front instead of 40, while an immediate sale will only earn you an additional 40 credits instead of the standard 120.',
     category: 'difficulty',
@@ -79,6 +85,7 @@ export const difficultyOptions = [
   {
     uid: 'EPTek',
     title: '50%/50%',
+    image: 'https://i.imgur.com/DsKZ3ddl.jpg',
     intensity: -1,
     desc: 'Captures are more valuable relative to sales. Half of the total value of a listed individual’s total capture+sale value now comes from capturing them. As an example, a Tier 8 individual captured on intensity 5 will now earn you 80 credits up-front instead of 40, while an immediate sale will only earn you an additional 80 credits instead of the standard 120.',
     category: 'difficulty',
@@ -89,6 +96,7 @@ export const difficultyOptions = [
   {
     uid: '1zx3K',
     title: '25%/75%',
+    image: '',
     intensity: 0,
     desc: 'The standard compensation for your captures and sales applies. As a reminder, a Tier 8 individual captured on intensity 5 will earn you 40 credits up-front, while an immediate sale will earn you an additional 120 credits.',
     category: 'difficulty',
@@ -99,6 +107,7 @@ export const difficultyOptions = [
   {
     uid: 'hXEyv',
     title: '0%/100%',
+    image: '',
     intensity: 1,
     desc: 'All payment for individuals comes from sales, not captures. As an example, a Tier 8 individual captured on intensity 5 will earn you 0 credits up-front instead of 40, while an immediate sale will earn you an additional 160 credits instead of the standard 120.',
     category: 'difficulty',
@@ -109,6 +118,7 @@ export const difficultyOptions = [
   {
     uid: '53v9f',
     title: 'Standard',
+    image: 'https://i.imgur.com/qSdqSn2l.jpg',
     intensity: 0,
     desc: 'Follow the written General Binding Rules.',
     category: 'difficulty',
@@ -117,6 +127,7 @@ export const difficultyOptions = [
   {
     uid: 'C6qqj',
     title: 'Only Familiars',
+    image: 'https://i.imgur.com/ecYd4kyl.jpg',
     intensity: 1,
     desc: 'All of your subjects will be Familiars. If you want a subject to become your waifu or husbando, you must use other means instead. For the purpose of R.I.P., you may choose one sapient subject to manage your account as Executor after your death. Your chosen Executor will keep that title until their own death or departure from your retinue. You may also manually choose a new Executor, if at least 1 week (168 hours) has passed since your last choice.',
     category: 'difficulty',
@@ -125,6 +136,7 @@ export const difficultyOptions = [
   {
     uid: 'pLn3I',
     title: 'No Loyalty',
+    image: 'https://i.imgur.com/WDwCahXl.jpg',
     intensity: 2,
     desc: 'In addition to the effects of Only Familiars, none of the mental effects described in General Binding Rules will apply to your subjects. You may still use other means to win or compel your subjects’ trust, obedience, and willingness to participate in the captures of their friends and loved ones.',
     category: 'difficulty',
@@ -133,6 +145,7 @@ export const difficultyOptions = [
   {
     uid: 'fFdOe',
     title: 'No Bindings',
+    image: 'https://i.imgur.com/hSaqH0Dl.jpg',
     intensity: 3,
     desc: 'In addition to the effects of No Loyalty, you will be unable to purchase Bindings. Lures, Other Controls, Heritage-based capture methods, and third-party mind control are all still viable.',
     category: 'difficulty',
@@ -141,6 +154,7 @@ export const difficultyOptions = [
   {
     uid: '9FQbs',
     title: 'Standard',
+    image: 'https://i.imgur.com/gRQnOrcl.jpg',
     intensity: 0,
     desc: 'Follow the written rules for Template Stacking.',
     category: 'difficulty',
@@ -149,6 +163,7 @@ export const difficultyOptions = [
   {
     uid: 'Ye483',
     title: 'One Each',
+    image: 'https://i.imgur.com/Kr0D886l.jpg',
     intensity: 1,
     desc: 'Each individual in your retinue may have no more than one purchased copy of Template Stacking I. This will not conflict with mission rewards.',
     category: 'difficulty',
@@ -157,6 +172,7 @@ export const difficultyOptions = [
   {
     uid: 'T7Ty3',
     title: 'None',
+    image: 'https://i.imgur.com/nrra2lhl.jpg',
     intensity: 2,
     desc: 'Template Stacking may not be purchased. Templates are still available as rewards for missions.',
     category: 'difficulty',
@@ -165,6 +181,7 @@ export const difficultyOptions = [
   {
     uid: '1EsDS',
     title: 'Immunity',
+    image: '',
     intensity: 0,
     desc: 'Defense perks work as advertised. They may be purchased twice, giving you full immunity to what each Defense covers.',
     category: 'difficulty',
@@ -173,6 +190,7 @@ export const difficultyOptions = [
   {
     uid: 'CkTZt',
     title: 'Resistance',
+    image: '',
     intensity: 1,
     desc: 'Only the resistance level of each Defense perk will function. The immunity level may still be purchased, or obtained for free from Binding or Heritage perks, for use as prerequisites. Any immunity-level Defenses on your account will activate automatically if this modifier is removed.',
     category: 'difficulty',
@@ -181,6 +199,7 @@ export const difficultyOptions = [
   {
     uid: 'nP6mc',
     title: 'None',
+    image: 'https://i.imgur.com/iZ4isdul.jpg',
     intensity: 2,
     desc: 'All Defense perks will not function. Defense perks may still be purchased, or obtained for free from Binding or Heritage perks, for use as prerequisites. Any resistance-level Defenses on your account will activate automatically if this modifier is removed.',
     category: 'difficulty',
@@ -189,6 +208,7 @@ export const difficultyOptions = [
   {
     uid: '6NPME',
     title: 'Automatic Connection',
+    image: '',
     intensity: -2,
     desc: 'For any world with a globalized diegetic leveling system, such as Disgaea or I’m a Spider, So What, your retinue will connect to that system if there are any members who are from that world or have visited it in person.',
     category: 'difficulty',
@@ -197,6 +217,7 @@ export const difficultyOptions = [
   {
     uid: 'iA3mN',
     title: 'Potential Connection',
+    image: '',
     intensity: 0,
     desc: 'Your retinue may not connect to a globalized diegetic leveling system merely by having someone from that world. Individuals from that world will still be able to level as normal, but retinue members who are not must either visit the setting or have Added Potential, Power Swap, or Template Stacking.',
     category: 'difficulty',
@@ -205,6 +226,7 @@ export const difficultyOptions = [
   {
     uid: 'hbuNf',
     title: 'Manual Connection',
+    image: '',
     intensity: 1,
     desc: 'Globalized diegetic leveling systems may not be purchased via Added Potential and will not be earned simply by visiting such a world. Power Swap and Template Stacking will still work, or you can find a system admin (or other applicable method) and have your retinue added manually.',
     category: 'difficulty',
@@ -213,6 +235,7 @@ export const difficultyOptions = [
   {
     uid: 'ufRzg',
     title: 'Open Exploration',
+    image: 'https://i.imgur.com/eBqIibYl.jpg',
     intensity: -2,
     desc: 'Your retinue’s ability to travel between universes is only restricted by their own abilities. If you have a universal traveler, they may scout the multiverse freely, without needing to spend any notable time in each new world beyond their ability’s recharge or cooldown times (if applicable).',
     category: 'difficulty',
@@ -221,6 +244,7 @@ export const difficultyOptions = [
   {
     uid: '7jU4l',
     title: 'Delayed',
+    image: 'https://i.imgur.com/hB82uU1l.png',
     intensity: 0,
     desc: 'While in your starting world, you cannot unlock a new world without doing at least one of the following: filling an Exit Stage Left progress bar (regardless of whether or not you have that perk), accepting a Standard or Grand mission in a new world, or opening a portal from your Dungeon to a capture’s homeworld.',
     category: 'difficulty',
@@ -229,6 +253,7 @@ export const difficultyOptions = [
   {
     uid: 'R2O2P',
     title: 'Limited',
+    image: 'https://i.imgur.com/RVZwl89l.jpg',
     intensity: 1,
     desc: 'The restriction from Delayed now applies to every world visited, not just your starting world.',
     category: 'difficulty',
@@ -237,6 +262,7 @@ export const difficultyOptions = [
   {
     uid: 'ta3Ag',
     title: 'Brick and Mortar',
+    image: 'https://i.imgur.com/D3SDUv4l.jpg',
     intensity: -2,
     desc: 'Instead of counting the number of amazons that you have as subjects, the time reduction on respawns relies on your total count of all subjects.',
     category: 'difficulty',
@@ -245,6 +271,7 @@ export const difficultyOptions = [
   {
     uid: 'u9Mwo',
     title: 'Standard',
+    image: 'https://i.imgur.com/i194Hhnl.jpg',
     intensity: 0,
     desc: 'Warranty Plan functions normally.',
     category: 'difficulty',
@@ -253,6 +280,7 @@ export const difficultyOptions = [
   {
     uid: 'OC4rk',
     title: 'À la carte',
+    image: '',
     intensity: +1,
     desc: 'Warranty Plan must be purchased for each individual in your retinue. As compensation, the price for each warranty is only 40 credits. Express Delivery still applies to all copies of Warranty Plan.',
     category: 'difficulty',
@@ -261,6 +289,7 @@ export const difficultyOptions = [
   {
     uid: 'dsOHr',
     title: 'Expiry',
+    image: '',
     intensity: +2,
     desc: 'In addition to the effects of A La Carte, each copy of the perk will only work once and will need to be purchased again afterward. As compensation, the price of each warranty is only 20 credits. Express Delivery still applies to all copies of Warranty Plan.',
     category: 'difficulty',
@@ -269,6 +298,7 @@ export const difficultyOptions = [
   {
     uid: 'TqiXn',
     title: 'Disabled',
+    image: 'https://i.imgur.com/6oahhXtl.jpg',
     intensity: +3,
     desc: 'Warranty Plan and Express Delivery are unavailable.',
     category: 'difficulty',
@@ -277,6 +307,7 @@ export const difficultyOptions = [
   {
     uid: 'XYh4I',
     title: 'Standard',
+    image: '',
     intensity: 0,
     desc: 'R.I.P. rules function normally.',
     category: 'difficulty',
@@ -285,6 +316,7 @@ export const difficultyOptions = [
   {
     uid: 'z4MbC',
     title: 'Hustle',
+    image: '',
     intensity: 1,
     desc: 'The time limit for R.I.P. is reduced to 1 day (24 hours).',
     category: 'difficulty',
@@ -293,6 +325,7 @@ export const difficultyOptions = [
   {
     uid: 'SxBf8',
     title: 'Peril',
+    image: 'https://i.imgur.com/TMmMwy6l.jpg',
     intensity: 2,
     desc: 'The time limit for R.I.P. is reduced to 1 hour.',
     category: 'difficulty',
@@ -301,6 +334,7 @@ export const difficultyOptions = [
   {
     uid: 'Ix9G9',
     title: 'Hardcore',
+    image: '',
     intensity: 3,
     desc: 'Your account is removed from R.I.P. eligibility. Should you ever die, even temporarily, you will permanently lose your contractor status and all company perks and functions. If you also have Only Familiars or higher, an Executor will have no purpose and you may not choose one.',
     category: 'difficulty',
@@ -309,6 +343,7 @@ export const difficultyOptions = [
   {
     uid: 'fraqs',
     title: 'Alignment',
+    image: 'https://i.imgur.com/mY2Hu9dl.jpg',
     intensity: 0,
     desc: 'In each world visited, the people’s personal morality and factional membership is randomized on an individual level. Individuals in the same factions will tend to have similar morality, but their lineups and goals are likely to be wildly different from what you remember. Purchases are not affected.',
     category: 'difficulty',
@@ -317,6 +352,7 @@ export const difficultyOptions = [
   {
     uid: '7429Y',
     title: 'Power Swap',
+    image: 'https://i.imgur.com/b98eKLFl.jpg',
     intensity: 0,
     desc: 'In each world visited, the people’s skills and abilities are randomized on an individual level. This is effectively a global Power Swap on every individual, with no respect for setting boundaries. These swaps obey the star color system, so someone who is normally Tier 4 may be swapped to a Tier 6 power, but not a Tier 3. Purchases are not affected.',
     category: 'difficulty',
@@ -325,6 +361,7 @@ export const difficultyOptions = [
   {
     uid: 'Wo37i',
     title: 'Homeworld',
+    image: 'https://i.imgur.com/unl0WlXl.jpg',
     intensity: 0,
     desc: 'The local populations of each world you visit are shuffled. They are all fully native to their new worlds, not isekai transplants. This shuffle obeys the star color system, so a local Tier 4 may be swapped with a Tier 6, but not a Tier 3. Purchases are not affected.',
     category: 'difficulty',
@@ -333,6 +370,7 @@ export const difficultyOptions = [
   {
     uid: 'AayE0',
     title: 'Dialogue',
+    image: 'https://i.imgur.com/cDBxKoql.jpg',
     intensity: 1,
     desc: 'A wordfilter hampers your retinue’s ability to understand local languages. If the local language is one that you speak, you might understand the words just fine, but the overall meaning will be nonsense. This applies to both speech and the written word, and cannot be bypassed by Communication Talent or other means. Capturing a local will bring them to your side of the filter, while filling an Exit Stage Left progress bar will remove the filter for that specific world and (should you use Meta Shift or Blank Slate afterward) all direct parallels.',
     category: 'difficulty',
@@ -341,6 +379,7 @@ export const difficultyOptions = [
   {
     uid: 'dsM0L',
     title: 'Item',
+    image: '',
     intensity: 0,
     desc: 'The local artifacts, treasures, and rarities of each world you visit are shuffled. This can include combat equipment, though mass-deployed gear will be shuffled as whole groups, not individually. Plot-relevant items will always remain in their home worlds, though they could be anywhere within those worlds. This shuffle obeys the star color system, so equipment that makes its user a Tier 4 may be swapped with a Tier 6, but not a Tier 3. Purchases are not affected.',
     category: 'difficulty',
@@ -349,7 +388,8 @@ export const difficultyOptions = [
   {
     uid: 'LQJca',
     title: 'Entrances',
-    intensity: 0,
+    image: 'https://i.imgur.com/nkOukvel.jpg',
+    intensity: 1,
     desc: `Divide a world into discrete zones: outdoors within a planet’s atmosphere, the interior of a cave system, a single-family house, individual suites within a high-rise, etc. The doorways and entrances between each of those zones are now shuffled for your retinue only, bypassing Paradox Defense. Instead of the outdoor side of Passage A leading to the indoor side of Passage A, it might instead lead to the indoor side of Passage B or outdoor side of Passage C. These entrances are coupled: if you retrace your steps, you will then return to the outdoor side of Passage A. The set of entrances that are actually just the edges of a planet’s atmosphere will always be shuffled separately from the general pool.
     <p>This randomization is fixed upon any of your retinue members’ first visit to a new world; filling an Exit Stage Left progress bar will remove the randomization for that specific world and (should you use Meta Shift or Blank Slate) all direct parallels. Your own portals into a world, from Pocket Apartment, We Will Meet Again, and their upgrades, will not be affected. Note that sufficient environmental destruction can erase the boundary between two zones, forcefully integrating the smaller zone (usually indoors) into the larger (usually outdoors). The Mapper and related perks will account for the effects of this randomizer.</p>
     `,
@@ -359,6 +399,7 @@ export const difficultyOptions = [
   {
     uid: 'Cu2Ef',
     title: 'Decoupled Entrances',
+    image: 'https://i.imgur.com/ECsgZ2al.jpg',
     intensity: 2,
     desc: 'Entrances are not merely randomized, but decoupled. If you enter Passage A from the outside, you might emerge on the inside of Passage B, but retracing your steps instead takes you to the inside of Passage D, not back to the outside of Passage A. The Mapper and related perks will account for this effect and are highly advised.',
     requires: ['Entrances'],
@@ -368,6 +409,7 @@ export const difficultyOptions = [
   {
     uid: 'nPTkN',
     title: 'Intact Weaknesses',
+    image: 'https://i.imgur.com/bLrv5X8l.jpg',
     intensity: 1,
     desc: 'Crippling Categorical Weaknesses, as described in the Purchases section of Basic Rules, are left as-is for your entire retinue. You may still find your own methods to mitigate these.',
     category: 'difficulty',
@@ -376,6 +418,7 @@ export const difficultyOptions = [
   {
     uid: 'HTCEx',
     title: 'Heritages Banned',
+    image: 'https://i.imgur.com/ULiZG6Dl.jpg',
     intensity: 1,
     desc: 'Heritages are not available for purchase.',
     category: 'difficulty',
@@ -384,6 +427,7 @@ export const difficultyOptions = [
   {
     uid: 'l4UvD',
     title: 'Defense Rebates Disabled',
+    image: '',
     intensity: 1,
     desc: 'All defense rebates are disabled.',
     category: 'difficulty',
@@ -392,6 +436,7 @@ export const difficultyOptions = [
   {
     uid: 'yzbxO',
     title: 'Power Swap Banned',
+    image: '',
     intensity: 1,
     desc: 'Power Swap is not available for purchase.',
     category: 'difficulty',
@@ -400,6 +445,7 @@ export const difficultyOptions = [
   {
     uid: 'aYUr8',
     title: 'Cash Still Rules',
+    image: 'https://i.imgur.com/YbsdhB9l.jpg',
     intensity: 1,
     desc: `
     <p>Your signing bonus… isn’t. Whatever you spend from it will instead be a loan, subject to the rules in Loans and Credit Debt. Your starting world will not necessarily have enough available credits to pay back your loan or even the interest, but Missions and Invasion PvP can help cover that. Your baseline interest rate will also increase to 20%.</p>
@@ -413,6 +459,7 @@ export const difficultyOptions = [
   {
     uid: 'anb7s',
     title: 'Wage Slave',
+    image: 'https://i.imgur.com/3Kew70Yl.jpg',
     intensity: 0,
     desc: 'We aren\'t a charity, Contractor. We\'ve decided you need to put in some more effort to earn your keep. While your starting budget is not negatively impacted, from here on out, you can only gain credits for completing missions, winning arranged PvP matches, or by completing other similar activities on behalf of the company. All credit and ticket income from captures and sales will instead be converted into cold, hard cash, at a rate of 1 credit to 500 USD, in addition to the standard monetary bonus. Captures will still provide their rebates to Defense costs, as appropriate. We do not advise taking Cash Still Rules with this, as that mode provides no benefits with this mode active. However, if you wish to start heavily indebted to us, without any easy ways of paying us back… we won’t stop you.',
     category: 'difficulty',
@@ -421,6 +468,7 @@ export const difficultyOptions = [
   {
     uid: 'onbYN',
     title: 'Calming Up',
+    image: 'https://i.imgur.com/aY2CLo0l.jpg',
     intensity: 2,
     desc: 'Things will not calm down, contractor. The Danger Rating of every world you visit will always be equal to the highest Danger Rating of any world your retinue has visited (while they were in your retinue). This even applies to worlds you’ve already been to since your contract began, but not different eras of the same world, and may manifest as a new plot development, incursion from one of your other worlds, or reveal of a new element that was “always” there. People from each adjusted world will maintain their former roles in the new circumstances, with appropriate increases to their tier ratings and list prices - and, in turn, the corresponding effects on capture and other values - as necessary. Waifu perks may still be applied to captures or Yoinks from these worlds, with no change to their list prices. Tier changes from waifu perks may or may not apply in these cases.',
     category: 'difficulty',
@@ -429,20 +477,10 @@ export const difficultyOptions = [
   {
     uid: 'Wkf2L',
     title: 'Interest Enforced',
+    image: 'https://i.imgur.com/WqPeEu2l.jpg',
     intensity: 1,
     desc: 'Interest will be charged on your loan balance every month without fail, regardless of how much you pay toward the principal in that month.',
     category: 'difficulty',
     type: 'other8',
-  },
-
-  {
-    uid: 'Wkf22',
-    title: 'Buyback',
-    desc: 'Once you’ve been an active contractor for six months (180 days), you will earn the ability to pay off all difficulty settings that add intensity, to a minimum of +0 in each category. This will remove the difficulty effect, without lowering the values of your captures and sales. The fee for this is 500 credits per point of intensity, plus an additional 500 credits per point you’ve previously paid off: 500, 1,000, 1,500, 2,000, etc. If you pay off multiple intensity points at once, each point will be counted separately.',
-    category: 'difficulty',
-    type: 'utility',
-    cost: 500,
-    increment: 1,
-    multiple: 100,
   },
 ]

@@ -41,7 +41,7 @@
         </div>
         <div v-if="difficulties.length">
           <h3 class="text-lg" :style="{'color': imageSettings.categoryColor}">
-            Difficulty
+            Difficulty [<span :style="{'color': imageSettings.numberColor}">{{ difficultyRating }}</span>]
           </h3>
           <Enum
             :number-color="imageSettings.numberColor"

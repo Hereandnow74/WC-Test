@@ -1594,6 +1594,24 @@ export const waifu_perks: WaifuPerk[] = [
     desc: 'Rin is instead the Archer-class Pseudo-Servant Ishtar, the Mesopotamian goddess of love and war, with additional access to Summer Ishtar\'s outfits, skills, and Noble Phantasms. If you purchase or capture Rin first and apply this perk later, Rin will gain Ishtar\'s memories and emotional connections; their two personalities are so alike that Ishtar can\'t even tell that Rm\'s better traits aren\u2019t her own. if you purchase Rin and this perk simultaneously, you will only get Ishtar. If you capture Ishtar or Ereshkigal within the Babylonia Singularity while they share a body, the one who isn\'t in control at the time will be ejected and rendered vulnerable to an immediate Binding. This perk may not be applied to the same Rin as Swapped Vessel, Nameless Red Devil, or Kaleidostick Magical Ruby. If you already have any of those perks and want Ishtar, you may still purchase this, pre-applied to a new Rin, for 100 credits.',
   },
   {
+    uid: 'mCUGw',
+    title: 'Blessing of Kur',
+    from: 'Nasuverse',
+    waifu: [
+      'Tohsaka Rin',
+    ],
+    waifuUID: [
+      9777,
+    ],
+    tier: 7,
+    image: 'https://cdn.statically.io/gh/klassekatze/waifucatimg/master/imagecache_thumb/cilympszbv011.jpg',
+    cost: 80,
+    discount: 0,
+    costT: 0,
+    desc: 'Rin is instead the Lancer-class Pseudo-Servant Ereshkigal, the Mesopotamian goddess of the underworld. If you purchase or capture Rin first and apply this perk later, Ereshkigal will keep her host’s memories and a blend of both host and Servant’s personalities, as if she had taken Substitute into her host’s life; if you purchase the host and this perk simultaneously, you will only get Ereshkigal. If you capture Ishtar or Ereshkigal within the Babylonia Singularity while they share a body, the one who isn’t in control at the time will be ejected and rendered vulnerable to an immediate Binding. This perk may not be applied to the same Rin as Swapped Vessel, Nameless Red Devil, Mistress of Heaven, or Kaleidostick Magical Ruby. If you already have any of those perks and want Ereshkigal, you may still purchase this, pre-applied to a new Rin, for 100 credits.',
+    whitelist: [],
+  },
+  {
     uid: 'sTWUS',
     title: 'Bull of Heaven',
     waifu: [
@@ -4276,6 +4294,46 @@ export const DLCwaifu_perks: WaifuPerk[] = [
     discount: 200,
     costT: 5,
     desc: 'The power of the Heart of the Master is now in the possessions of Lord Drakkon formerly Tommy Oliver. After grafting the Heart in his body, he gains the power to alter reality across countless universes in space and times all according to his will.\nHe also received superhero-like superhuman abilities such as red energy blasts, super strength, electro energy generation, superhuman resistance to damage (but not invulnerability), flight and super speed. \nDrakkon will always have this perk if captured during the events of Mighty Morphin Power Rangers: Shattered Grid Finale.',
+    whitelist: [],
+  },
+  {
+    uid: 'T9tgG',
+    dlc: 'GuileGale',
+    dlcLink: '',
+    title: 'God Save The Queen',
+    from: '(Square) Final Fantasy',
+    waifu: [
+      'Misija Votyasch',
+    ],
+    waifuUID: [
+      90067256,
+    ],
+    tier: 6,
+    image: 'https://i.imgur.com/BSC0opyl.jpg',
+    cost: 50,
+    discount: 0,
+    costT: 0,
+    desc: 'Through the grace of Gunnhildr\'s blade, Save The Queen, Misija is endowed with the ability to summon a specter of her ancestor, the queen Gunnhildr herself in the form of an eikon, or shroud herself in its power not unlike that of an auracite primal. She no longer needs the memory crystal to enable this, and maintains her use of the Echo to control the transformation and glimpse into the future. She gains the ability to temper the minds of her foes, as well as all the strength the queen herself possessed at the height of her power. If Misija is captured after the events of Castrum Lacus Litore or Delubrum Reginae, she will always have this perk.',
+    whitelist: [],
+  },
+  {
+    uid: 'RzDNc',
+    dlc: 'Randomas6413',
+    dlcLink: '',
+    title: 'Doom Disguise',
+    from: 'Bakugan',
+    waifu: [
+      'Alice Gehabich',
+    ],
+    waifuUID: [
+      4085079,
+    ],
+    tier: 7,
+    image: 'https://imgur.com/ZputUInl.jpg',
+    cost: 50,
+    discount: 0,
+    costT: 0,
+    desc: 'Normally, Alice Gehabich never realizes her full potential as a Battle Brawler, as her non-violent outlook encourages passivity. This perk fixes that by once more turning the girl into her villainous alter ego Masquerade, giving Alice access to her alternate personality\'s complete arsenal including the villains Bakugan, card set, teleportation tech and battle experience, turning her into one of the greatest players on Earth. Both personalities will exist at the same time and may split off into their own bodies and reconnect at will, while also freely communicating with each other. This perk will always be active if Alice was captured after her exposure to the Silent Cores negative energy and before Masquerades disappearance. Purchased copies of Alice Gehabich without this perk will instead be the T6 version after the villain left her mind.',
     whitelist: [],
   },
 ]

@@ -1068,7 +1068,7 @@ genericPerks.push({
   requires: 'Any Warhammer Fantasy deity',
   complex: 'target',
   image: 'https://i.ibb.co/wJPQ4wt/Galactic-Presence.jpg',
-  cost: 50,
+  cost: 500,
   desc: 'Malleus and the year 40,000 are both Warhammer, but operate on vastly different scales. This perk pulls one of the Fantasy goddesses up to the same level as her galactic counterpart. It must be purchased separately for each one you have.',
 })
 

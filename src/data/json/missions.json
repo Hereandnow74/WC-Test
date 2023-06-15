@@ -1,5 +1,351 @@
 [
   {
+    "reward": "Any Template Stacking I of a Fallen Angel or 20 Credits",
+    "image": "https://i.pinimg.com/originals/ec/d5/cf/ecd5cf8a3bc4c84a67ae987e93c8ac0f.jpg",
+    "author": "TheTinyGrayDog",
+    "rewardType": "Perks",
+    "source": "",
+    "title": "Change of Heart",
+    "loca": "High School DxD",
+    "lewd": false,
+    "scope": "Quick",
+    "objectives": [],
+    "conditions": [
+      {
+        "value": "You cannot bind Issei or Raynere. I want to see where their relationship goes!"
+      },
+      {
+        "value": "Do not use any overt mind control on Raynere. Little things like sudden spikes of adoration or a flutter of her heart is okay."
+      }
+    ],
+    "budget": 0,
+    "desc": "So, a curious thought came to me. In the very first episode, Issei and Yuuma had a cute date with one another. Normal this ends in tragedy with Yuuma revealing herself as the Fallen Angel Raynere and killing Issei at sunset. \nBut what if that wasn't what happened? \nWhat if, by some chance, Yuuma fell in love during her date. How would the story change? Would Raynere try and keep up the Charade to stay close to Issei? Would she reveal herself to him?\nYour mission is to find out! Change Raynere's heart and see how it affects the world of DxD!",
+    "uid": "zpXfs"
+  },
+  {
+    "reward": "First Augmentation (Aethermorph)",
+    "image": "",
+    "author": "AnonymousBrainwash",
+    "rewardType": "Perks",
+    "source": "",
+    "title": "Aethermorph First Augmentation: Owl House",
+    "loca": "The Owl House",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "Philosopher's Transmortaility Engine",
+        "type": "Perks",
+        "value": "Perform your transformation on someone else, good science is repeatable after all, and it will save us effort on our end"
+      },
+      {
+        "reward": "Networked Glamour Manipulation",
+        "type": "Perks",
+        "value": "Go even further beyond with your transformation and use a Titan sample in place of, or in addition to the Witch sample. We need more data about how they interact with the In Between"
+      }
+    ],
+    "conditions": [],
+    "budget": 90,
+    "desc": "The Company needs some varying magical samples for the production of some Aethermorph upgrades. And we need those samples to be used so...\n\nWe're going to need you to take a sample from a Witch and transform yourself with it, introducing a bile sack.  \n\nMission is considered complete upon confirmation of a successful transformation without terrible side effects.",
+    "uid": "LoVJp"
+  },
+  {
+    "reward": 200,
+    "image": "https://i.ytimg.com/vi/EpFuG_RejF4/maxresdefault.jpg",
+    "author": "Xiod Tensei",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Twilight of the Gods (Fodlan Edition)",
+    "loca": "Fire Emblem",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "10 credits for each month you would've stayed in Shambhala.",
+        "type": "Credits",
+        "value": "Persuade the Agarthans to release you earlier than they intended to. It will be hard to convince them. To deviate now would be a sizable risk. If you fail to convince them, you will likely face all 3 kingdoms at once, or as a unified Fodlan under Byleth."
+      },
+      {
+        "reward": "10 credits for every 3 members captured (order of capturing does not matter, maximum of 80 credits).",
+        "type": "Companions",
+        "value": "While the House Leaders are immune to the bindings, their friends are not. Capture the various members of the Golden Deer, Blue Lions, and Black Eagles. It is required for you to capture at least 3 of them to complete this objective. Selling is optional."
+      },
+      {
+        "reward": "Edelgard von Hresvelg (T5), Claude von Riegan (T5), Dimitri Alexandre Blaiddyd (T5).",
+        "type": "Companions",
+        "value": "Conquer the 3 warring countries of Fodlan. This requires you to have been acknowledged by the countries as a threat, to eventually storm their capitals, and either defeat their respective ruler in combat, or make them submit to you in some other way."
+      },
+      {
+        "reward": 25,
+        "type": "Credits",
+        "value": "Win the fated rematch Nemesis spoke of so highly: a 1 vs 1 duel to the death between him and Rhea/Seiros. It doesn't matter if it happens before or after you conquer Fodlan. So long as it ends up happening, and you are the victor."
+      },
+      {
+        "reward": "25",
+        "type": "Credits",
+        "value": "It is time. Show this \"Demigod\" how they truly fare against the King. Defeat Byleth Eisner in a 1 vs 1 duel. You may choose to spare them if you can convince Byleth to join you. Otherwise, Byleth must die in order for this objective to be completed."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You will enter the world of Fire Emblem Three Houses (Post Timeskip) as Nemesis (T6) and take his place."
+      },
+      {
+        "value": "You will enter the world 3 months before Byleth awakens from his slumber (25th of the Ethereal Moon). You will start your journey in Shambhala."
+      },
+      {
+        "value": "Time is 'fluid' in this world, so if you have a pocket dimension, entering it will put the world on 'pause', so using your pocket dimension to avoid certain events or obstacles is impossible."
+      },
+      {
+        "value": "All 3 House Leaders (Edelgard, Claude, and Dimitri) are immune to all Bindings or mind control for the duration of the mission. They are, however, affected by Zenryoku Zenkai. Other lures will not work on the House Leaders."
+      },
+      {
+        "value": "Byleth is immune to all Bindings and mind control. Byleth is immune to all lures. Sothis is also given these immunities."
+      },
+      {
+        "value": "The Agarthans have awoken you and the 10 Elites because they believe you essential to their plans. They plan to release you into the world in about 6-8 months (3-5 months after Byleth reawakens, but they do not know that, of course)."
+      },
+      {
+        "value": "All of the following objectives must be completed (on some level), except for the 1st objective, which is optional. If that objective does fail, it will be much harder for the contractor to complete this mission, and potential rewards are cut down."
+      }
+    ],
+    "budget": 400,
+    "desc": "Bah! What a letdown. The guy who literally killed God in his world rose up from the dead and went to war again, and for what? To get utterly destroyed almost immediately by some snarky kid (with some nice facial hair), and an Anime Swordsman using his old weapon? That's not doing Nemesis enough justice! He could've been so much better!\n... So how about I have you prove just that?",
+    "uid": "qSTad"
+  },
+  {
+    "reward": 10,
+    "image": "",
+    "author": "Irugaa0",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Guiding da Newbies",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Quick",
+    "objectives": [
+      {
+        "reward": "10 credits per ability/skill/spell per newbie",
+        "type": "Companions",
+        "value": "Teach 1 usefull ability/skill/spell to a newbie"
+      },
+      {
+        "reward": "T- 4 Companion",
+        "type": "Companions",
+        "value": "Teach something to a newbie that will help raise his/her tier"
+      },
+      {
+        "reward": "A Companion ticket of the same rank as the newbie. limited to tier 6",
+        "type": "Companions",
+        "value": "Help a newbie contractor raise his/her tier during an Mission."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Teach/Give at least of useful information/ability/skill/spell to a newbie."
+      },
+      {
+        "value": "This mission only occurs during group mission."
+      },
+      {
+        "value": "All newbie are of tier-5 or less."
+      },
+      {
+        "value": "This mission can be taken several times during teams mission."
+      }
+    ],
+    "budget": 0,
+    "desc": "Every day the Company hires and lost billions of Contractors, some because of their weakness, some because of their hubris and etc. It happens that normally it's cheaper to just replace them, but some of them do have some potential. So we want someone to guide them.",
+    "uid": "CHIkW"
+  },
+  {
+    "reward": "The intuitive ability to know how to purge something and leave everyone better of without it.",
+    "image": "https://i.imgur.com/qn4AElm.jpg",
+    "author": "SunshineDreamer",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Burn Baby Burn",
+    "loca": "Cyberpunk 2077",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "The ability to instinctively sense when its time to take a breather and fall back, lest you go too far and get burnt.",
+        "type": "Other",
+        "value": "Every journey has its baby steps. Prevent the deaths of David Martinez's Edgerunner Crew."
+      },
+      {
+        "reward": "50 credits and the ability to know when an \"upgrade\" or \"enhancement\" is worth the trouble or effort.",
+        "type": "Other",
+        "value": "Tear Adam Smasher limb from limb. Kill that fucker, and make it really hurt."
+      },
+      {
+        "reward": "Any A.I. you possess can now manifest in a manner similar to Johnny's engram, as a virtual companion. No cyberware chip needed.",
+        "type": "Other",
+        "value": "Find a way to save V from dying due to her brain turning to mush, or her own body from rejecting her. V must stay in her original body without Johhny ever permanentely taking over."
+      },
+      {
+        "reward": "30 credits, autographed copies of his best tracks and the ability to pull a cigarette and lighter out of nowhere.",
+        "type": "Other",
+        "value": "Create Johnny Silverhand a new body to inhabit and have him do a return concert."
+      },
+      {
+        "reward": "The ability to always know how to make a business number one in any business environment.",
+        "type": "Other",
+        "value": "Arasaka was not the only corporation ruining the lives of others. Either burn all the others down too, or remake those that you believe deserve a chance at redemption."
+      },
+      {
+        "reward": "120 credits and the ability to instictively know what needs to be done to greatly help someone else reach their dream.",
+        "type": "Other",
+        "value": "Make Night City into the real utopia and bastion of humanity its founder Richard Night desired it to be."
+      },
+      {
+        "reward": "A database containing extensive data about all of the various tech ever created in this world.",
+        "type": "Other",
+        "value": "Fix the Net, either exterminating or overhauling the rogue AI beyond the Blackwall, restoring it to it's former glory."
+      },
+      {
+        "reward": "The ability to passively and gradually cleanse, fix and restore everything in a 200 meter area around you.",
+        "type": "Other",
+        "value": "Heal the Earth of of Cyberpunk 2077, removing all the sewage, pollution and radiation that made the world into the shithole it has become. Restore the areas that were turned unlivable over the course of the last centuries, and let nature bloom once more."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "The Arasaka Corporation as it is known must no longer exist."
+      },
+      {
+        "value": "If you choose to burn Arasaka to the ground, you must do so completely. Ensure it can never rise as a phoenix from the ashes."
+      },
+      {
+        "value": "If you choose to turn Arasaka into something better, it's new version must be widely accepted by the whole world as a truly \"good\" corporation that operates for the salvation of humanity."
+      },
+      {
+        "value": "Whatever way you choose to get rid of Arasaka, its disapearance or transformation must overall turn out to be a net positive for society."
+      },
+      {
+        "value": "Saburo Arasaka must be flatlined, and his engram should it exist, be completely destroyed."
+      }
+    ],
+    "budget": 0,
+    "desc": "Ah, nothing like the smell of sewage, gunpowder, and toxic fumes in the morning. Only on the neon streets of Night City will you find the greatest cocktail of drugs, sex, and violence to immerse yourself in. Take care, however, for this is no high-tech paradise, but a chrome hell where dreams come to die. This city, this world is rotten to the core, choked both by the mighty corporations who look from above and the criminals who roam below. It is time to purge this cancer, time to fix this den of maggots that have been festering for decades. \n\nYour primary mission is simple, to kill the top dog, and cut out the biggest tumor. For the good of the many, the Arisaka Corporation must go. Whether it is burned to the ground or becomes something completely unrecognizable from before makes no difference so long as its blood-soaked hands stop choking what little good remains in this world. ",
+    "uid": "iMVwa"
+  },
+  {
+    "reward": "Instant Capture of Bulla Briefs with double the reward",
+    "image": "https://cdn.donmai.us/original/ce/c0/__vegeta_and_bra_dragon_ball_and_1_more_drawn_by_morinokinoko_db__cec0d166e24f6cfdc74801a64b3ba3e2.jpg",
+    "author": "Ratcatcher",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Worthy of his daughter",
+    "loca": "Dragonball",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "Reward adjusted to triple scaled to her new tier.",
+        "type": "Other",
+        "value": "Convince Bulla to resume training for combat, and improve to the point she raises her tier."
+      },
+      {
+        "reward": "Instant Capture of all three of them. Bulla's reward conditions apply to all of them.",
+        "type": "Other",
+        "value": "Before Capture talk Bulla, Son Pan, and Marron to have a threesome with you, and make it so good they all declare their love for you."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "For the duration of the mission, Bulla Briefs is immune to direct capture and mind control."
+      },
+      {
+        "value": "Charm Bulla to the point she's willing to present you to her parents."
+      },
+      {
+        "value": "Make a good impression on both her parents. They're immune to Capture and any mean of mind control you have for the duration of the mission."
+      },
+      {
+        "value": "Spar with Vegeta and make a good impression. You don't need to defeat him, just prove yourself a good enough fighter he'd trust Bulla's safety to you outside outright alien invasions and the likes."
+      },
+      {
+        "value": "With their approval, get Bulla to declare her love for you."
+      },
+      {
+        "value": "Remember, if at any point Vegeta even thinks you are trying to swindle his daughter he'll KILL YOU, then find the Dragon Balls to resurrect you and kill you again."
+      }
+    ],
+    "budget": 2000,
+    "desc": "We know how overprotective Vegeta is when it comes to his daughter... So what kind of person could get his permission to date her? Well, you. Good luck.",
+    "uid": "ARRKE"
+  },
+  {
+    "reward": 100,
+    "image": "https://64.media.tumblr.com/0099ec4e1eca79f769b607f3ca4167f6/b39cd567d3eb8e7a-ef/s640x960/6eff2dc4d7bc91cc14a2aebe1d72a87b09a955db.jpg",
+    "author": "Irugaa0",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "The Greatest Practical Joke?",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "5 credits per country or  potency",
+        "type": "Other",
+        "value": "Make sure that at least all potencies/countries know your \"plan\"."
+      },
+      {
+        "reward": 15,
+        "type": "Credits",
+        "value": "Spread Chaos and Destruction in 1 Country."
+      },
+      {
+        "reward": 30,
+        "type": "Credits",
+        "value": "Spread Chaos and Destruction in 3 Country."
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Spread Chaos and Destruction in 10% of the world"
+      },
+      {
+        "reward": 80,
+        "type": "Credits",
+        "value": "Spread Chaos and Destruction in 30% of the world"
+      },
+      {
+        "reward": "An copy of world add to your space pocket or a item containing it",
+        "type": "Other",
+        "value": "Spread Chaos and Destruction in 50% of the world"
+      },
+      {
+        "reward": "All creatures and natural Resources on the world you in will appear on your copy world and will be replinished every few years",
+        "type": "Other",
+        "value": "Spread Chaos and Destruction in 100% of the world"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Form, or choose a faction in your world and spread the information \"your intentions\""
+      },
+      {
+        "value": "Make sure that at least all major potencies know your \"plan\""
+      },
+      {
+        "value": "Once the information in spread enough start a hunt across the world, its the world against you."
+      },
+      {
+        "value": "You Can request up to 6 tier-6 creatures to aid in you play."
+      },
+      {
+        "value": "You can can only affect the planet you are on"
+      }
+    ],
+    "budget": 300,
+    "desc": "Unlike people's thought the Harlequin was one of the most influential voices in a king's court, through his jokes he advises the king on the affairs of the kingdom, telling what is murmured in the places a king should not go. The kings of the Harlequin, want's someone to act in that way with the end goal of saving an entire world.\nYou are hired to save a world of itself, either because of famine or war, is your duty to trick the entire world to save it. the script is up to you, as long as you fool the world in your play. How you do it, is up to you, killing half the population, sending them back to the dark age, etc. The greater the Chaos and destruction it causes the better",
+    "uid": "QFsNt"
+  },
+  {
     "reward": 1,
     "image": "https://3.bp.blogspot.com/_RccTLu6UaMc/TJIsxQlBYtI/AAAAAAAACCk/mF_NIIFV0b4/s1600/death+star+contractors.jpg",
     "author": "SittingBear",
@@ -255,91 +601,6 @@
     "budget": 0,
     "desc": " [Pre-Pledge Era: Rating 9]\n\n The Old Deus all fight and wage war to be proclaimed the One True God, having already nearly destroyed the world in the process. Imanity, the world's version of Humanity, only survived by Riku's and Schwi's determination and ingeniuty, with both eventually giving their lives to stop the war, ending the whole thing in a draw as Riku's last dying moments gave birth to Tet, the God of Play, to take the Suniastar.\n\n Contractor, take up the mantle of Schwi and Riku, and show these pathetic insects that call themselves Gods how it's done!\n\n Take the Suniaster and become the One True God!",
     "uid": "JKNoQ"
-  },
-  {
-    "reward": "Pocket Apartment or 10 credits",
-    "image": "https://i.redd.it/mf1zq5ofysfz.jpg",
-    "author": "TheTinyGrayDog",
-    "rewardType": "Perks",
-    "source": "",
-    "title": "A Home for the Weary Heart",
-    "loca": "Kingdom Hearts (Post-BBS through KH1)",
-    "lewd": false,
-    "scope": "Grand",
-    "objectives": [
-      {
-        "reward": "Pocket Apartment or 10 credits",
-        "type": "Perks",
-        "value": "Save 500 people"
-      },
-      {
-        "reward": "Sweet Home or 10 credits",
-        "type": "Perks",
-        "value": "Save 1000 People"
-      },
-      {
-        "reward": "Sweet Homeor 10 credits",
-        "type": "Perks",
-        "value": "Save 5000 people"
-      },
-      {
-        "reward": "Grand Manor or 10 credits",
-        "type": "Perks",
-        "value": "Save 10,000 people"
-      },
-      {
-        "reward": "Grand Manor or 10 credit",
-        "type": "Perks",
-        "value": "Save 50,000 people"
-      },
-      {
-        "reward": "Rainbow Bridge or 30 credits",
-        "type": "Perks",
-        "value": "Protect a World's Keyhole from the Heartless"
-      },
-      {
-        "reward": "Warehouse District or 20 credits",
-        "type": "Perks",
-        "value": "Save 100 weapons, books or such items that would be forever lost otherwise"
-      },
-      {
-        "reward": "Life's a Beach and Laws of the Jungle or 35 credits",
-        "type": "Perks",
-        "value": "Save 100,000 people"
-      },
-      {
-        "reward": "Sweet Home Expansion x4 or 200 Credits",
-        "type": "Perks",
-        "value": "Save 500,000 People"
-      },
-      {
-        "reward": "Sweet Home Expansion x4 or 200 credits",
-        "type": "Perks",
-        "value": "Save 1,000,000 People."
-      },
-      {
-        "reward": "Traverse Town enters your pocket dimension under your rule + Rejection of Fate Keyblade and a Transhuman Heritage option.",
-        "type": "Other",
-        "value": "Do not bind anyone that you save. (may only complete after all other objectives. Binding someone afterwords revokes this objectives rewards.)"
-      }
-    ],
-    "conditions": [
-      {
-        "value": "The alternative binding does not Yield any credits nor alter their minds. You will have to bind them normally for that."
-      },
-      {
-        "value": "Save 100 people."
-      },
-      {
-        "value": "This alternative binding works even after you leave KH universe, after all there are other world ending events out there."
-      },
-      {
-        "value": "As you will be traveling to other worlds, you may take one other mission alongside this one as long it is not Grand in scale."
-      }
-    ],
-    "budget": 0,
-    "desc": "~Greetings Agent. \nYes, I know who you are, and who you work for. No worries, despite the …Company you keep, I will not hold it against you. \nIn fact, I have an opportunity for you. Whether you accept it for redemption or to do good despite the evil your bosses represent, I care not. \nWhether it was your choice or not, you have found yourself in the world of Kingdom Hearts amid its darkest time. Many worlds were lost, with many more hearts with them.\nI have modified your bindings to have a second option. Normally only those with strong Hearts can survive the destruction of their world but those with this Binding will have their Hearts reinforced against their home's destruction, allowing them to be relocated to Traverse Town instead. \nDespite my… disagreements with the company, desperate times make for strange bedfellows. Do this for me and I will reward you with what I can.\nWith Gratitude,\n~The Traveler.",
-    "uid": "nPLQt"
   },
   {
     "reward": "300 Credits, gain the hamlet or the estate as an optional pocket space and one Shambler pet.",
@@ -1199,12 +1460,13 @@
     "rewardType": "Companions",
     "source": "",
     "title": "Make the Satan's great again!",
+    "uid": "xkXzf",
     "loca": "High School DxD",
     "lewd": false,
     "scope": "Grand",
     "objectives": [
       {
-        "reward": "Arrow of Destruction",
+        "reward": "Template to the original Lucifer and Sirzechs",
         "type": "Perks",
         "value": "Gain the title of Lucifer"
       },
@@ -1257,15 +1519,11 @@
         "value": "You are not allowed to bind Ophis or Great Red until you become a Satan"
       },
       {
-        "value": "You are to use the Bow most combat and H2H when the enemy gets too close"
-      },
-      {
         "value": "You are only allowed 5 out of this world companion during this mission"
       }
     ],
     "budget": 1000,
-    "desc": "You start as the scion of the Leraje Clan 500 years ago during the Devil Civil War. Your goal is to become a Satan and bring glory to its title.",
-    "uid": "xkXzf"
+    "desc": "You start as the scion of the Leraje Clan 500 years ago during the Devil Civil War. Your goal is to become a Satan and bring glory to its title."
   },
   {
     "reward": "Merida is Captured for her full price and a copy of Castle DunBroch is added to your Pocket Dimension.",
@@ -4910,7 +5168,7 @@
         "value": "Advance the setting on average to a Type-1.5 civilization on the Kardashev Scale"
       },
       {
-        "reward": 1,
+        "reward": 2,
         "type": "IMG Tickets",
         "value": "Advance the setting on average to a Type-2 civilization on the Kardashev Scale"
       },
@@ -4930,7 +5188,7 @@
         "value": "Advance the average biology of the civilization to Primarch level physicality."
       },
       {
-        "reward": 1,
+        "reward": 2,
         "type": "IMG Tickets",
         "value": "Advance the average biology of the civilization to Superman level of physicality."
       },
@@ -4950,7 +5208,7 @@
         "value": "Advance the average magic of the civilization to a level twenty wizard's level of ability."
       },
       {
-        "reward": 1,
+        "reward": 2,
         "type": "IMG Tickets",
         "value": "Advance the average magic of the civilization to a Divine's level of ability."
       }
@@ -11519,67 +11777,76 @@
     "uid": "BrQim"
   },
   {
-    "image": "https://cdn.2kgames.com/borderlands/news/Article+Embeds/Sanctuary+III/sanc-marcus-full.jpg",
     "reward": "1 Credits",
-    "budget": 500,
+    "image": "https://cdn.2kgames.com/borderlands/news/Article+Embeds/Sanctuary+III/sanc-marcus-full.jpg",
+    "author": "ClayUndead",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Bombs, Bullets, and Badasses",
+    "uid": "ViaQA",
     "loca": "Borderlands",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": 2,
+        "type": "Credits",
+        "value": "sell to me 250 \"Green/Uncommon\" Guns/Shields/Grenades/Artifacts/Relics(Repeatable)"
+      },
+      {
+        "reward": 5,
+        "type": "Credits",
+        "value": "sell to me 100 \"Blue/Rare\" Guns/Shields/Grenades/Artifacts/Relics(Repeatable)"
+      },
+      {
+        "reward": 10,
+        "type": "Credits",
+        "value": "sell to me 50 \"Purple/Epic\" Guns/Shields/Grenades/Artifacts/Relics (Repeatable)"
+      },
+      {
+        "reward": 20,
+        "type": "Credits",
+        "value": "sell to me 10 \"Orange/Legendary\" Guns/Shields/Grenades/Artifacts/Relics(Repeatable)"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "sell to me 10 \"Magenta/E-Tech\" Guns/Shields/Grenades/Artifacts/Relics(Repeatable)"
+      },
+      {
+        "reward": 75,
+        "type": "Credits",
+        "value": "sell to me 10 \"Pink/Seraph\" Guns/Shields/Grenades/Artifacts/Relics(Repeatable)"
+      },
+      {
+        "reward": 150,
+        "type": "Credits",
+        "value": "sell to me 10 \"Cyan/Pearlescent\" Guns/Shields/Grenades/Artifacts/Relics(Repeatable)"
+      },
+      {
+        "reward": 200,
+        "type": "Credits",
+        "value": "sell to me 10 \"Rainbow/Effervescent\" Guns/Shields/Grenades/Artifacts/Relics(Repeatable)"
+      },
+      {
+        "reward": "Reward: an equivalent to 10 Mil USD as of September 18, 2012",
+        "type": "Other",
+        "value": "Kick Marcus in the balls"
+      }
+    ],
     "conditions": [
       {
         "value": "You will be given an App for your company device to scan a weapon for it's rarity."
       },
       {
         "value": "Must obtain the weapon yourself, No Waifu Pyramid schemes"
+      },
+      {
+        "value": "Tediore Guns only count once per schematic, not per gun."
       }
     ],
-    "source": "",
-    "title": "Bombs, Bullets, and Badasses",
-    "desc": "Hello Contractor! I'm Clay, a purveyor of goods for the Company. Today, I contacted you for a simple goal. Munitions. Someone has to supply the weapons and gear for the limitless soldiers and low-rank contractors. That's why I'm willing to pay for supplies from a universe called Borderlands. Normally, I would go there myself to aquire the goods, but an asshole named Marcus managed to strike a deal with one of my higher ups that prevents me from entering that multiverse.\n\nThat's why I'm asking you for you to sell to me 100 \"White/Common\" Guns/Shields/Grenades/Artifacts/Relics(This is Repeatable)",
-    "scope": "Standard",
-    "objectives": [
-      {
-        "reward": "5 Credits",
-        "value": "sell to me 50 \"Green/Uncommon\" Guns/Shields/Grenades/Artifacts/Relics(Repeatable)",
-        "type": "Credits"
-      },
-      {
-        "reward": "10",
-        "value": "sell to me 25 \"Blue/Rare\" Guns/Shields/Grenades/Artifacts/Relics(Repeatable)",
-        "type": "Credits"
-      },
-      {
-        "value": "sell to me 10 \"Purple/Epic\" Guns/Shields/Grenades/Artifacts/Relics (Repeatable)",
-        "reward": "25 Credits",
-        "type": "Credits"
-      },
-      {
-        "type": "Credits",
-        "reward": "50 Credits",
-        "value": "sell to me 5 \"Orange/Legendary\" Guns/Shields/Grenades/Artifacts/Relics(Repeatable x100)"
-      },
-      {
-        "value": "sell to me 1 \"Magenta/E-Tech\" Guns/Shields/Grenades/Artifacts/Relics(Repeatable x50)",
-        "type": "Credits",
-        "reward": "75 Credits"
-      },
-      {
-        "type": "Credits",
-        "value": "sell to me 1 \"Pink/Seraph\" Guns/Shields/Grenades/Artifacts/Relics(Repeatable x25)",
-        "reward": "150 Credits"
-      },
-      {
-        "value": "sell to me 1 \"Cyan/Pearlescent\" Guns/Shields/Grenades/Artifacts/Relics(Repeatable x10)",
-        "reward": "300 Credits",
-        "type": "Credits"
-      },
-      {
-        "value": "sell to me 1 \"Rainbow/Effervescent\" Guns/Shields/Grenades/Artifacts/Relics",
-        "type": "Credits",
-        "reward": "500 Credits"
-      }
-    ],
-    "rewardType": "Credits",
-    "author": "ClayUndead",
-    "uid": "ViaQA"
+    "budget": 500,
+    "desc": "Hello Contractor! I'm Clay, a purveyor of goods for the Company. Today, I contacted you for a simple goal. Munitions. Someone has to supply the weapons and gear for the limitless soldiers and low-rank contractors. That's why I'm willing to pay for supplies from a universe called Borderlands. Normally, I would go there myself to aquire the goods, but an asshole named Marcus managed to strike a deal with one of my higher ups that prevents me from entering that multiverse.\n\nThat's why I'm asking you for you to sell to me 500 \"White/Common\" Guns/Shields/Grenades/Artifacts/Relics for 1 Credit(This is Repeatable)"
   },
   {
     "desc": "Contractors come in all shapes, sizes and adequacy. We don't pay too much attention to them unless we have to. This Mission may change that. Drop Into Fallout (any game) and take over the local Wasteland. It doesn't matter if you become the Minute Men of Vegas, the Mr House of DC or the Enclave of Boston. All that matters is you surviving, coming out on top and being bereft of every Perk, Skill, Ability, Ride and Retinue from the Company.",
