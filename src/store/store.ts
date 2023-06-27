@@ -168,6 +168,8 @@ const returnKoeff = computed(() => manualReturnKf.value || 0.8)
 
 // Difficulty Math
 const difficultyRating = computed(() => {
+  if (flags.value.danger11Start)
+    return 10
   return legacyMode.value ? 6.25 : 1 + difficulties.value.reduce((a, perk) => a += (perk.intensity || 0), 0)
 })
 
@@ -285,7 +287,11 @@ const defensesDiscount = computed(() => {
   return cost
 })
 
+const isDefenseDiscountsDisabled = computed(() => findIndex(difficulties.value, { uid: 'l4UvD' }) !== -1)
+
 const defenseRetinueDiscountAuto = computed(() => {
+  if (isDefenseDiscountsDisabled.value)
+    return {}
   const { allCharsObject } = useAllChars()
 
   const allDefTags = {
@@ -395,7 +401,7 @@ const fullStartingBudget = computed(() => {
 
     return csr.value ? Math.round((bd + intensityFlat) * (intenMultiplier)) : Math.round((bd + intensityFlat) * (1 + intenMultiplier))
   }
-  return csr.value ? 0 : difficultyAdjustedBudgets.value[startingWorld.value.rating] || 0
+  return csr.value ? 0 : (flags.value.danger11Start ? 2045 : difficultyAdjustedBudgets.value[startingWorld.value.rating]) || 0
 })
 
 // const creditLimit = computed(() =>
@@ -514,7 +520,7 @@ const totalCost = computed(() => startingOrigin.value.cost + heritageCost.value 
 
 const companionsComp = computed(() => companionsWithoutSold.value.filter(cmp => ['Companion', 'Familiar'].includes(cmp.role) || !cmp.role))
 
-const isCouple = computed(() => findIndex(intensities.value, { title: 'Couple’s Account (Cooperative)' }) !== -1)
+const isCouple = computed(() => findIndex(intensities.value, { title: 'Couple’s Account (Cooperative)' }) !== -1 || findIndex(difficulties.value, { title: 'Couple’s Account (Cooperative)' }) !== -1)
 
 watch(isCouple, () => {
   if (isCouple.value) {

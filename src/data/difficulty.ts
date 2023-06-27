@@ -37,7 +37,7 @@ export const difficultyOptions = [
   {
     uid: 'NUVvc',
     title: 'Couple’s Account (Cooperative)',
-    image: '',
+    image: 'https://i.imgur.com/fP1EdmJl.png',
     intensity: -1,
     desc: `
     <p>Your spouse or significant other is a contractor like you, but the two of you are tied much more closely than the friends option below. The two of you share full access to a joint account tied to both of your smart devices. A member of your retinue may be a companion to one of you and merely a familiar to the other.
@@ -53,7 +53,7 @@ export const difficultyOptions = [
   {
     uid: 'PaZcD',
     title: 'With A Little Help From My Friends (Cooperative)',
-    image: '',
+    image: 'https://i.imgur.com/yj5xOxVl.jpg',
     intensity: -1,
     desc: 'You aren’t the only player in your game. Another contractor walks alongside you, visiting the same worlds in the same order. Your progress meters for Exit Stage Left and Rainbow Bridge are synchronized and charged by both of your activities. No matter how many teammates you have, the budget adjustment remains the same. Remember, “friendly fire isn’t,” so try not to antagonize your teammates too much.',
     category: 'difficulty',
@@ -74,7 +74,7 @@ export const difficultyOptions = [
   {
     uid: 'HKgAq',
     title: '75%/25%',
-    image: '',
+    image: 'https://i.imgur.com/M8XO8kAl.jpg',
     intensity: -3,
     desc: 'The standard compensation for your captures and sales is flipped. As an example, a Tier 8 individual captured on intensity 5 will now earn you 120 credits up-front instead of 40, while an immediate sale will only earn you an additional 40 credits instead of the standard 120.',
     category: 'difficulty',
@@ -96,7 +96,7 @@ export const difficultyOptions = [
   {
     uid: '1zx3K',
     title: '25%/75%',
-    image: '',
+    image: 'https://i.imgur.com/VWxigrhl.jpg',
     intensity: 0,
     desc: 'The standard compensation for your captures and sales applies. As a reminder, a Tier 8 individual captured on intensity 5 will earn you 40 credits up-front, while an immediate sale will earn you an additional 120 credits.',
     category: 'difficulty',
@@ -107,7 +107,7 @@ export const difficultyOptions = [
   {
     uid: 'hXEyv',
     title: '0%/100%',
-    image: '',
+    image: 'https://i.imgur.com/mU4Ry7ll.jpg',
     intensity: 1,
     desc: 'All payment for individuals comes from sales, not captures. As an example, a Tier 8 individual captured on intensity 5 will earn you 0 credits up-front instead of 40, while an immediate sale will earn you an additional 160 credits instead of the standard 120.',
     category: 'difficulty',
@@ -181,7 +181,7 @@ export const difficultyOptions = [
   {
     uid: '1EsDS',
     title: 'Immunity',
-    image: '',
+    image: 'https://i.imgur.com/GEe3CpLl.jpg',
     intensity: 0,
     desc: 'Defense perks work as advertised. They may be purchased twice, giving you full immunity to what each Defense covers.',
     category: 'difficulty',
@@ -190,7 +190,7 @@ export const difficultyOptions = [
   {
     uid: 'CkTZt',
     title: 'Resistance',
-    image: '',
+    image: 'https://i.imgur.com/RbNVKjkl.jpg',
     intensity: 1,
     desc: 'Only the resistance level of each Defense perk will function. The immunity level may still be purchased, or obtained for free from Binding or Heritage perks, for use as prerequisites. Any immunity-level Defenses on your account will activate automatically if this modifier is removed.',
     category: 'difficulty',
@@ -208,7 +208,7 @@ export const difficultyOptions = [
   {
     uid: '6NPME',
     title: 'Automatic Connection',
-    image: '',
+    image: 'https://i.imgur.com/Ri6JeSVl.jpg',
     intensity: -2,
     desc: 'For any world with a globalized diegetic leveling system, such as Disgaea or I’m a Spider, So What, your retinue will connect to that system if there are any members who are from that world or have visited it in person.',
     category: 'difficulty',
@@ -217,7 +217,7 @@ export const difficultyOptions = [
   {
     uid: 'iA3mN',
     title: 'Potential Connection',
-    image: '',
+    image: 'https://i.imgur.com/W12YF0tl.jpg',
     intensity: 0,
     desc: 'Your retinue may not connect to a globalized diegetic leveling system merely by having someone from that world. Individuals from that world will still be able to level as normal, but retinue members who are not must either visit the setting or have Added Potential, Power Swap, or Template Stacking.',
     category: 'difficulty',
@@ -226,7 +226,7 @@ export const difficultyOptions = [
   {
     uid: 'hbuNf',
     title: 'Manual Connection',
-    image: '',
+    image: 'https://i.imgur.com/vQUflIwl.jpg',
     intensity: 1,
     desc: 'Globalized diegetic leveling systems may not be purchased via Added Potential and will not be earned simply by visiting such a world. Power Swap and Template Stacking will still work, or you can find a system admin (or other applicable method) and have your retinue added manually.',
     category: 'difficulty',
@@ -307,7 +307,7 @@ export const difficultyOptions = [
   {
     uid: 'XYh4I',
     title: 'Standard',
-    image: '',
+    image: 'https://i.imgur.com/4CvQobTl.jpg',
     intensity: 0,
     desc: 'R.I.P. rules function normally.',
     category: 'difficulty',
@@ -334,7 +334,7 @@ export const difficultyOptions = [
   {
     uid: 'Ix9G9',
     title: 'Hardcore',
-    image: '',
+    image: 'https://i.imgur.com/uYl1YEwl.jpg',
     intensity: 3,
     desc: 'Your account is removed from R.I.P. eligibility. Should you ever die, even temporarily, you will permanently lose your contractor status and all company perks and functions. If you also have Only Familiars or higher, an Executor will have no purpose and you may not choose one.',
     category: 'difficulty',
@@ -427,7 +427,7 @@ export const difficultyOptions = [
   {
     uid: 'l4UvD',
     title: 'Defense Rebates Disabled',
-    image: '',
+    image: 'https://i.imgur.com/Zlk9ZuEl.jpg',
     intensity: 1,
     desc: 'All defense rebates are disabled.',
     category: 'difficulty',
@@ -436,7 +436,7 @@ export const difficultyOptions = [
   {
     uid: 'yzbxO',
     title: 'Power Swap Banned',
-    image: '',
+    image: 'https://i.imgur.com/UQE2sYLl.jpg',
     intensity: 1,
     desc: 'Power Swap is not available for purchase.',
     category: 'difficulty',

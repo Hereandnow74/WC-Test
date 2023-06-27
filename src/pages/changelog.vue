@@ -6,6 +6,46 @@
       </h2>
       <div>
         <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          27 June 2023
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~145 new user submitted characters, new worlds</li>
+          <li>Now you can select the same category difficulties without unselecting chosen one</li>
+          <li>Saving your favorites/likes on your account now should work correctly</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          22 June 2023
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~145 new user submitted characters, new worlds</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          19 June 2023
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~54 new user submitted characters, new missions, new worlds</li>
+          <li>Added DRX in Misc section of Difficulties</li>
+          <li>Disable Defense Rebates now work</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          15 June 2023
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~60 new user submitted characters, new missions, new worlds</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
           11 June 2023
         </h3>
         <ul class="list-decimal list-inside">

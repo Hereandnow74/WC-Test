@@ -79,14 +79,14 @@ function startDR11() {
       allTalents(true)
       allDefenses(true)
       emit('chooseIntensity', props.perk)
-      allEvents.emit({ id: Math.floor(Math.random() * 10000), time: Date.now(), message: 'All talents and defenses added for free.', type: 'success' })
+      allEvents.emit({ id: Math.floor(Math.random() * 10000), time: Date.now(), message: 'All free talents and defenses removed.', type: 'attention' })
     }
     else {
       flags.value.danger11Start = true
       allTalents()
       allDefenses()
       emit('chooseIntensity', props.perk)
-      allEvents.emit({ id: Math.floor(Math.random() * 10000), time: Date.now(), message: 'All free talents and defenses removed.', type: 'attention' })
+      allEvents.emit({ id: Math.floor(Math.random() * 10000), time: Date.now(), message: 'All talents and defenses added for free.', type: 'success' })
     }
     // flags.value.danger11Start = !flags.value.danger11Start
     // if (allEffects.value.includes(props.perk.title)) { allEffects.value.splice(allEffects.value.indexOf(props.perk.title), 1) }

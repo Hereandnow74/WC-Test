@@ -270,7 +270,7 @@ const {
   flags, settings, difficultyAdjustedCapture, difficultyAdjustedCaptureT, legacyMode,
 } = useStore()
 const { canPurchase, favoritesObject, favorites } = useGlobalSettings()
-const { likes } = usePlayStore()
+const { likes, likesMessageSeen } = usePlayStore()
 const { changes } = useAllChars()
 const { user } = useUser()
 
@@ -363,27 +363,30 @@ watch(image, () => companionEl.value ? companionEl.value.src = image.value : nul
 
 function likeChar() {
   if (favoritesObject.value[charData.value.uid] !== undefined) {
-    favorites.value.splice(favorites.value.indexOf(charData.value.uid), 1)
     if (likes.value[charData.value.uid] && user.value.id) {
       likes.value[charData.value.uid] -= 1
       updateUserLikes(false, { characterUid: charData.value.uid, liked: false })
     }
+    else {
+      favorites.value.splice(favorites.value.indexOf(charData.value.uid), 1)
+    }
   }
   else {
-    favorites.value.push(charData.value.uid)
     if (user.value.id) {
-      if (user.value.role === 'guest') {
+      if (user.value.role === 'guest' && likesMessageSeen.value === false) {
         confirmDialog('You need to confirm your email to make your likes count, otherwise they will behave just like your favorite list.', 'info')
+        likesMessageSeen.value = true
         return
       }
-      if (likes.value[charData.value.uid] !== undefined) {
+      if (likes.value[charData.value.uid] !== undefined)
         likes.value[charData.value.uid] += 1
-        updateUserLikes(false, { characterUid: charData.value.uid, liked: true })
-      }
-      else {
+      else
         likes.value[charData.value.uid] = 1
-        updateUserLikes(false, { characterUid: charData.value.uid, liked: true })
-      }
+
+      updateUserLikes(false, { characterUid: charData.value.uid, liked: true })
+    }
+    else {
+      favorites.value.push(charData.value.uid)
     }
   }
 }

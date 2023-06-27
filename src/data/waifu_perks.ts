@@ -653,7 +653,7 @@ export const waifu_perks: WaifuPerk[] = [
     uid: 'k09rB',
     title: 'Shepherd of the Stars',
     waifu: [
-      'Warrior of Ligh',
+      'Warrior of Light',
     ],
     from: 'Final Fantasy XIV',
     waifuUID: [

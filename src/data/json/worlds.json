@@ -396,9 +396,8 @@
     "additional": "D.Va has her personal mech. Ashe has B.O.B. as a familiar. Mei has Snowball as a familiar.",
     "condition": [
       {
-        "name": "Omnic crisis ",
-        "rating": 5,
-        "official": true
+        "name": "Omnic crisis",
+        "rating": 5
       }
     ],
     "uid": "QxVgx"
@@ -1476,7 +1475,7 @@
   {
     "rating": 6,
     "worldName": "High School DxD",
-    "additional": "Purchased and captured Angels, including Fallen, may Fall and Rise at your discretion. High-class Devils do not have their own Evil Pieces, nor do Angels have their Brave Saint cards. If you purchase Ophis, or capture her before her spawn Lilith exists, you will get Lilith for free. Lilith will not be worth capture credits if you acquire her in this way.",
+    "additional": "Purchased and captured Angels, including Fallen, may Fall and Rise at your discretion. Purchased high-class Devils do not come with their own Evil Pieces, nor do purchased Angels come with their Brave Saint cards. Canonically, Reincarnated Devil and Brave Saint statuses do not overwrite the individual’s original race. Kuroka never stopped being a nekoshou despite also being a Devil. Thus, neither Devil nor Angel races (including Fallen status) will count toward the usual racial hybrid penalty from Advanced Tempest Runes (Hybrid) and other sources. They will not overwrite the original race if purchased with Template Stacking, nor will either be overwritten by a different racial Template. Devil and Angel races are still mutually exclusive with each other, outside of rare exceptions. If you purchase Ophis, or capture her before her spawn Lilith exists, you will get Lilith for free. Lilith will not be worth capture credits if you acquire her in this way.",
     "condition": [
       {
         "name": "Standard",
@@ -1853,7 +1852,7 @@
     "condition": [
       {
         "rating": 7,
-        "name": "main series",
+        "name": "Main series",
         "official": true
       },
       {
@@ -2040,6 +2039,10 @@
       },
       {
         "name": "DCAU (BEYOND)",
+        "rating": 6
+      },
+      {
+        "name": "Something Unlimited",
         "rating": 6
       },
       {

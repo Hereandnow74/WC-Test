@@ -1,5 +1,611 @@
 [
   {
+    "reward": 1,
+    "image": "",
+    "author": "Irugaa0",
+    "rewardType": "IMG Tickets",
+    "source": "",
+    "title": "Right Side of Heaven or Right Side of Hell",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": 10,
+        "type": "Credits",
+        "value": "Kill a contractor ONE Tier Below you."
+      },
+      {
+        "reward": "Amount of credits according with your tier.",
+        "type": "Other",
+        "value": "Kill a contractor of the same Tier as you."
+      },
+      {
+        "reward": "Amount of credits according with the tier, plus a bonus of 50%.",
+        "type": "Other",
+        "value": "Kill a contractor a Tier higher than you."
+      },
+      {
+        "reward": "a credit reward according with their Tier.",
+        "type": "Other",
+        "value": "Save a contractor of your team."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "The battle will last until all the forces of one side is completely annihilated."
+      },
+      {
+        "value": "The contractor with Patrons is automatically assigned to their side."
+      },
+      {
+        "value": "Patron-less contractors are considered a neutral party and can choose either side at their will."
+      },
+      {
+        "value": "Once a side is chosen you CANNOT change or betray it."
+      }
+    ],
+    "budget": 0,
+    "desc": "For Us the company the lose of contractors in a daily occurrence.  The real problem is the lost of clients, and were in a hell of a situation. Two groups of clients decided to wage an extinction war against the other side, but since their powers could destroy multiple setting as consequences a third neutral party reached to an agreement between the two Groups.\nOne Side will command the Heavenly Forces and the other the Hellish forces plus their respective contractors, in an abandoned world. \n",
+    "uid": "JvBxI"
+  },
+  {
+    "reward": 200,
+    "image": "",
+    "author": "Irugaa0",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Doing Whats Necessary.",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Purge the timeline."
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Purge the Dimension preserving the multiverse."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Only Tier-6 contractors and companions are allowed in this mission."
+      },
+      {
+        "value": "The anomaly planet or planets are completely filled with Tier-4, Tier-5 and Tier-6."
+      },
+      {
+        "value": "Destroy the anomaly."
+      }
+    ],
+    "budget": 0,
+    "desc": "Just like weeds need to be removed from a garden, sometimes and world must be removed to guarantee the well-being of others' worlds. One or more planets from a different setting are “invading” another dimension and it can cause infinite problems for the Company and the contractors. We need someone to go there and purge the anomalies.",
+    "uid": "WbWAg"
+  },
+  {
+    "reward": 100,
+    "image": "",
+    "author": "Alcaeus",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Blood of Khan",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": 200,
+        "type": "Credits",
+        "value": "20% of the World’s population are your descendants."
+      },
+      {
+        "reward": 300,
+        "type": "Credits",
+        "value": "30% of the World’s population are your descendants."
+      },
+      {
+        "reward": 400,
+        "type": "Credits",
+        "value": "40% of the World’s population are your descendants."
+      },
+      {
+        "reward": "500",
+        "type": "Credits",
+        "value": "50% of the World’s population are your descendants."
+      },
+      {
+        "reward": "600",
+        "type": "Credits",
+        "value": "60% of the World’s population are your descendants."
+      },
+      {
+        "reward": "700",
+        "type": "Credits",
+        "value": "70% of the World’s population are your descendants."
+      },
+      {
+        "reward": "800",
+        "type": "Credits",
+        "value": "80% of the World’s population are your descendants."
+      },
+      {
+        "reward": "900",
+        "type": "Credits",
+        "value": "90% of the World’s population are your descendants."
+      },
+      {
+        "reward": "1000",
+        "type": "Credits",
+        "value": "100% of the World’s population are your descendants."
+      },
+      {
+        "reward": 1,
+        "type": "IMG Tickets",
+        "value": "Compote this mission in less than 100 years."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "10% of the World’s population are your descendants."
+      }
+    ],
+    "budget": 0,
+    "desc": "Genghis Khan is said to be the ancestor of over 16% of people in Asia. The truth is likely even higher than that. Now it’s your turn to follow in his footsteps! Emulate the grandeur of Genghis Khan's legacy by establishing an extensive lineage that can be found across the globe! Spread your seed far and wide until most of the world's population can proudly (or shamefully) claim to be a descendant of your illustrious bloodline!",
+    "uid": "QCiSE"
+  },
+  {
+    "reward": 80,
+    "image": "",
+    "author": "LuxVonDeux",
+    "rewardType": "Credits",
+    "source": "https://i.pinimg.com/564x/85/96/5c/85965ca444a7ef4e3b3839478ddcd401.jpg",
+    "title": "107 Stars of Destiny... Wait! That's not right!",
+    "loca": "Suikoden",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": 5,
+        "type": "Credits",
+        "value": "Recruit 10 Stars of Destiny for the Child of the Star without their help"
+      },
+      {
+        "reward": 10,
+        "type": "Credits",
+        "value": "Recruit 20 Stars of Destiny for the Child of the Star without their help"
+      },
+      {
+        "reward": 15,
+        "type": "Credits",
+        "value": "Recruit 30 Stars of Destiny for the Child of the Star without their help"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Make sure the Child of the Star to get the 'Good Ending' by ensuring all the 108 stars did not die in battle."
+      }
+    ],
+    "budget": 50,
+    "desc": "Something happened, Contractor. One of the Managers of the company messed up, and because of this, one of the 108 Stars of Destiny died before they can even join the Stars of Destiny formation.\n\nWe need you to become the lost Star of Destiny and help the Child of the Star to fulfill their destiny.",
+    "uid": "OIgen"
+  },
+  {
+    "reward": "Template Stacking I of a Regular Sacred Gear",
+    "image": "https://pm1.aminoapps.com/6618/66f175eac603a84ad8e05953ce1a52d3850ad004_hq.jpg",
+    "author": "ChaosRonin",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Pervert Protection Time!",
+    "loca": "High School DxD",
+    "lewd": false,
+    "scope": "Quick",
+    "objectives": [
+      {
+        "reward": "Template Stacking I Racial Fallen Angel",
+        "type": "Other",
+        "value": "Kill or Capture Raynare"
+      },
+      {
+        "reward": "Template Stacking I Boosted Gear",
+        "type": "Other",
+        "value": "Kill or Capture Ranare, Kalawarner, Dohnaseek and Mittelt"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Issei is immune to all capture methods while this mission is ongoing."
+      },
+      {
+        "value": "You have 24 hours from insertion till the end of the date."
+      }
+    ],
+    "budget": 0,
+    "desc": "Prevent Raynare from killing Issei Hyodou at the end of their date.\n",
+    "uid": "eYhgl"
+  },
+  {
+    "reward": "Mami + any magical girl that has fallen for her tits are instantly captured. You get +50% of their capture value as a bonus. In addition, Mami gains a conceptual Element of breasts, working like Aethermorph or Dragon Elements.",
+    "image": "https://i.imgur.com/Rp3HTkc.png",
+    "author": "Heaven Canceler",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Mami’s Magical Mammaries",
+    "loca": "Madoka Magica",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "1 Copy of Paradox Defense and a TS I of a Time Manipulator of your choice.",
+        "type": "Perks",
+        "value": "Give Mami’s breasts the power to interfere with time related powers, able to protect Mami from time-stop, continue existing even if a new loop starts and overwhelm Oriko’s prophetic abilities."
+      },
+      {
+        "reward": "Body Tune-Up and 5 Copies of Added Potential for a Qwaser from Seikon no Qwaser, to be put into the members of the Holy Quintet.",
+        "type": "Perks",
+        "value": "Give Mami the ability to produce some manner of enhanced breast milk that is useful in combat. Whether it be by empowering drinkers, affecting targets showered with it with super breast growth, bimbofication, or freezing them in place or the like."
+      },
+      {
+        "reward": "1 Free Copy of the “Uwasa of Kamihamas Holy Maiden” is automatically applied to Mami.",
+        "type": "Perks",
+        "value": "In at least one timeline, Walpurgisnacht must be defeated by Mami alone. At least the final strike must be done using her breasts."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Mami isn’t affected by defenses for the duration of the mission. Talent Sharing still works as normal."
+      },
+      {
+        "value": "Mami must defeat at least one witch of T5 or higher solely using her breasts."
+      },
+      {
+        "value": "Mami’s Cleavage must be able to contain at least 0,1 square meters of material and 100 kilograms of weight without inconveniencing her."
+      },
+      {
+        "value": "Mami’s breasts must be able to subjugate all other members of the Holy Quintet at the same time, both sexually and in combat."
+      }
+    ],
+    "budget": 160,
+    "desc": "There is a hard working veteran magical girl in Mitakihara known for many things. Her excellent combat skills, her cooking which is certainly top notch, not to mention that charisma fitting of a respectable senpai. But really what we are her for are her massive mammaries. Seriously, these things are way too big for a middle schooler! They are practically magic. Or at least they will be, which is where you come into the picture. We want you to make these puppies into a fantastical pair of boobs that would make a succubus green with envy and a love goddess feel inadequate. The methods don't have to be magical or anything, but we want some high end results here. Use nanobots or pheromones. Enchant them with mystic runes or awaken a psychic energy field born from the collective will of humanity inside them. Stuff them full of liquid divinity or whatever. We don’t care about the means, anything goes here.",
+    "uid": "pAawA"
+  },
+  {
+    "reward": 20,
+    "image": "",
+    "author": "Mash",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Mineta's Girlfriend",
+    "loca": "My Hero Academia",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": 20,
+        "type": "Credits",
+        "value": "Make sure Mineta doesn't attempt to perv on anyone else while in a relationship"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You can't use any lures or bindings to make someone date him."
+      },
+      {
+        "value": "No mind control."
+      },
+      {
+        "value": "The girl must want to date him."
+      }
+    ],
+    "budget": 80,
+    "desc": "Mineta Minoru seems to be hated by the vast majority of contractors that enter his world. One contractor, however, has taken pity on him and hopes to give him a chance at happiness. Help Mineta get a girlfriend.",
+    "uid": "finsk"
+  },
+  {
+    "reward": "10 tons of German Gold(will have Nazi imagery imprinted on it)",
+    "image": "",
+    "author": "ClayUndead",
+    "rewardType": "Other",
+    "source": "",
+    "title": "The American Dream",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Quick",
+    "objectives": [
+      {
+        "reward": "A suit Praetor Power Armor",
+        "type": "Other",
+        "value": "Kill a Cyborg Hitler"
+      },
+      {
+        "reward": "A Staff made of Hitler's spine and Skull, that when the Skull is tapped onto a dead body, it's raised as a Death Knight.",
+        "type": "Other",
+        "value": "Kill a Zombie Hitler"
+      },
+      {
+        "reward": "a Luger that shoots depleted-Uranium rounds with the force of a Anti-material rifle. You'll receive 50 rounds each month",
+        "type": "Other",
+        "value": "Shoot Hitler in the balls(while he's still alive)"
+      },
+      {
+        "reward": "A Vibranium Shield of your design.",
+        "type": "Other",
+        "value": "Punch Hitler in the face while dressed as Captain America"
+      },
+      {
+        "reward": "5 credits and a good therapist's number, you monster.",
+        "type": "Other",
+        "value": "Smother baby Hitler in the crib"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "It can be any version of Hitler, from any franchise or real life, just as long as you kill him."
+      }
+    ],
+    "budget": 0,
+    "desc": "There's no need for formalities, so I'll give it to you straight. We want you to kill Hitler. Have fun.",
+    "uid": "NlFoS"
+  },
+  {
+    "reward": "Exit Stage Left and all upgrades, 3 TX tickets",
+    "image": "https://i.imgur.com/dWOWukK.jpg",
+    "author": "HorrorPrometheus",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Here Be Dragons",
+    "loca": "DC",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "Hippolyta, Artemis, Persephone, Phillipus & Nubia",
+        "type": "Companions",
+        "value": "Gain the loyalty of Themyscira and become King of the Amazons without Mind Control."
+      },
+      {
+        "reward": "Your own underwater city in your Demiplane under your Island.",
+        "type": "Other",
+        "value": "Gain the loyalty of Atlantis and become King of the Atlanteans without Mind Control"
+      },
+      {
+        "reward": "Your own Tower of Fate in your Demiplane",
+        "type": "Other",
+        "value": "Normalize the use of magic in everyday society."
+      },
+      {
+        "reward": 10,
+        "type": "Credits",
+        "value": "Break Aresia and turn her into a your pet."
+      },
+      {
+        "reward": 200,
+        "type": "Credits",
+        "value": "Have most of world willing give you control and rule as their Emperor without Mind Control"
+      },
+      {
+        "reward": 200,
+        "type": "Credits",
+        "value": "Convert at 100% of the female population."
+      },
+      {
+        "reward": "Grail & Myrina",
+        "type": "Companions",
+        "value": "Fuck Grail Infront of Darkside on his throne on Apokoliops"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Must have Dragon Heart, Dragon Scale, & Dragon Thrall."
+      },
+      {
+        "value": "You will enter the world two years after the purge."
+      },
+      {
+        "value": "No Leaving the world until the mission is complete."
+      },
+      {
+        "value": "Kill at least 3 major threats (Darkseid, Nekron, Trigon, ETC.) and their army with your army."
+      }
+    ],
+    "budget": 0,
+    "desc": "Justice League have failed to stop Aresia, the rogue misandrist Amazon for semi-succeeding in purging every male from the planet using a virus made with a combination of magic and science. Only 5% of males survived the purge, As such they are considered the most valuable and sought after resource in the world, although a powerful side-effect affecting their DNA caused low fertility rates and kept them from being cloned. Total societal breakdown and governmental collapses have occurred. With the fall of the civilized world, many women around the world have risen to the occasion becoming Peacekeepers, Heroes, and Just Rulers. While a lot more often than not has fallen to becoming Bandits, Warlords, and Dictators.\n\nThe women of the dc universe both major and minor have formed new factions, kingdoms and groups. A new Justice League has formed led out of the Hall of Justice by Wonder Women dedicated to peacekeeping and protecting civilians within their territory rather than fighting crime. Meanwhile out of the Titans Tower a group of former justice members has formed the Justice Lords led by Powergirl trying to maintain order in Jump City although with a more authoritarian touch. \n\nWhile many female villains have done the same, becoming powerful Warlords throughout the world. Lena Luthor has reformed the Legion of Doom to take advantage of the situation. Blüdhaven has completely fallen to hostile and deadly Plant Life. Gotham City has become the largest lawless haven in the world for slavers, gangs, murders, thieves, prostitutes, assassins, mercenaries, warlords, constantly vying for control of the city. Talia al Ghul and Lady Shiva have taken control of the League of Shadows, and have taken over parts of Western Asia. \n\nThe Supernatural side of the world has also been affected, now no longer hiding themselves from the world. Themyscira is under threat by literally everyone including the Olympians. Mera is left to rule Atlantis by herself and preparing to wage war, individuals such as Maxima, Trigon, Highfather, Mongul, Sinestro, Brainiac, Darkseid and Others have taken notice of earth's weakened state and are preparing to take advantage. And of course, there's what Amanda Waller is up to. \n\nTo say things, look bleak in an understatement, this is where you come in Contractor. Your goals are simple: Convert at least 50% of the female population to Tier 7 dragons and stabilize the male population for future generations. Forge a Dragon Army capable of repelling Justice League level threats and maintain order on earth for at least 15 years.",
+    "uid": "EGHzV"
+  },
+  {
+    "reward": "Capture Price of each fighter you defeat or Clone of Fighter (Limit One Per Fighter). 200 additional Credits upon Completion",
+    "image": "",
+    "author": "Tactition101",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Smash Gauntlet",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Quick",
+    "objectives": [
+      {
+        "reward": 500,
+        "type": "Credits",
+        "value": "Take no breaks and still complete the Gauntlet"
+      },
+      {
+        "reward": "One newfree Element or 25 Credits",
+        "type": "Other",
+        "value": "(For Shroud of Power Users) Use only one Element during the entire gauntlet."
+      },
+      {
+        "reward": 300,
+        "type": "Credits",
+        "value": "Can't Touch This! Do not be hit even once during the entire gauntlet. (Phasing abilities don't count.)"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Do it by yourself/only one retinue member"
+      }
+    ],
+    "budget": 0,
+    "desc": "84 Fighters, 84 Fights, can you win them all? You (or a Retinue Member) will be transported to Battlefield and must take on the whole roster of Super Smash Bros Ultimate one on one in consecutive fights. You get two (2) ten minute breaks between fights, better pick when you use them well. This mission is repeatable, but every time you repeat it the larger the group of fighters going against you, second time is two v one, third is three v one, you get the idea, until the penultimate of half the roster against you in two fights and ultimate fight of ALL the Smashers trying to turn you into a smear on the ground at once. Once you defeat all 84 fighters at once you can set how many you fight at a time in consecutive runs. Good Luck.",
+    "uid": "UEmSR"
+  },
+  {
+    "reward": 2,
+    "image": "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2020/05/PSO2-Class-featured.jpg",
+    "author": "DHG KiLLionAire",
+    "rewardType": "IMG Tickets",
+    "source": "",
+    "title": "A universe saved",
+    "loca": "Phantasy Star Online",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": 10,
+        "type": "Credits",
+        "value": "Capture any member of the main cast"
+      },
+      {
+        "reward": 20,
+        "type": "Credits",
+        "value": "Capture any Dark Falz"
+      },
+      {
+        "reward": "Presentation!",
+        "type": "Perks",
+        "value": "Call Luther Dark Falz Loser to his face, before he calls you a \"piece of ARKS trash!\""
+      },
+      {
+        "reward": "Companion Quna T7 automatic capture",
+        "type": "Companions",
+        "value": "Help Quna come to grips with her past and put Haddred to rest"
+      },
+      {
+        "reward": 10,
+        "type": "Credits",
+        "value": "reunite Afin with his(or if r63'd, her) sister, Dark Falz Apprentice."
+      },
+      {
+        "reward": "Companion Phaleg Ives automatic capture",
+        "type": "Companions",
+        "value": "Defeat Phaleg in a spar. (chances are slim....)"
+      },
+      {
+        "reward": "Companion Shiva T10 automatic capture",
+        "type": "Companions",
+        "value": "Defeat Shiva"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "no leaving the world until the events of the game are over, for good or ill. Matoi must survive. No heritage perks allowed during this mission. No companions may be purchased before or during this mission. no rides above gunship size allowed."
+      }
+    ],
+    "budget": 0,
+    "desc": "Enter the world of the game phantasy star online 2, and involve yourself with the main plot. become indispensable to the people of ARKS and help guide them through all of the main crises of the game.",
+    "uid": "DGcMI"
+  },
+  {
+    "reward": "Claire Bennet Template stacking or 20 credits (Your Choice)",
+    "image": "",
+    "author": "Lord_Indoril_Nerevar",
+    "rewardType": "Perks",
+    "source": "",
+    "title": "Save the Cheerleader",
+    "loca": "Heroes",
+    "lewd": false,
+    "scope": "Quick",
+    "objectives": [
+      {
+        "reward": "Template Stacking I of Sylar or 20 credits",
+        "type": "Other",
+        "value": "Kill Sylar before he has a chance of studying Claire's brain and replicate her power."
+      },
+      {
+        "reward": "1 Purchase of Information Defense or 50 credits",
+        "type": "Perks",
+        "value": "Kill Sylar after he has been able to successfully replicate Claire's power."
+      },
+      {
+        "reward": "Immediate Capture of Claire Bennet (Tier 4)",
+        "type": "Companions",
+        "value": "Save Claire before Sylar can study her brain."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You cannot bind either Claire or Sylar for the duration of this mission"
+      }
+    ],
+    "budget": 300,
+    "desc": "The world of Heroes has always revolved around the phrase 'Save the Cheerleader, save the world'. And yet, the actual heroes of this series tend to fail on this simple premise with distressing regularity.\n\nA client of hours has decided he wishes to rectify situation. So, your mission on this world will be to save Claire Bennet from the evil clutches of Sylar, a deranged serial killer who cannot help but murder and remove the brains of other Superhumans in order to study and replicate their powers.\n\nSuceed in bringing Claire to a secure place and keep her safe for 24 hours and the reward will be yours. ",
+    "uid": "XoemD"
+  },
+  {
+    "reward": "Every member captured this way is raised one tier.",
+    "image": "https://64.media.tumblr.com/432737807978e94a0cb7fd9735750418/tumblr_nms2dnzAYd1tzkvlvo1_400.gif",
+    "author": "Ratcatcher",
+    "rewardType": "Other",
+    "source": "",
+    "title": "A proper harem",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [],
+    "conditions": [
+      {
+        "value": "No overt mind control, blackmail, or violence allowed. Capture is allowed only by Confession or by the new member willingly and knowingly entering your retinue."
+      },
+      {
+        "value": "The new waifu must have some kind of skillset above what common people do that isn't linked to her beauty."
+      }
+    ],
+    "budget": 1,
+    "desc": "Contrary to what many contractors believe, a woman in a proper harem was not just a sex slave - she was a beautiful, intelligent and well-educated woman who had a proper and paid job in addition to having sex with the harem master, or even IN PLACE of having sex with the master, as you had to be already up in the ladder to have such a honor. And most of the time they were in it willingly.\nWe thus ask you to make a proper harem, whose members have proper skillsets in addition to their looks and actually use them in your service, and entered your retinue of their own will.",
+    "uid": "itCEM"
+  },
+  {
+    "reward": 5,
+    "image": "",
+    "author": "Joyeuse",
+    "rewardType": "IMG Tickets",
+    "source": "",
+    "title": "To be a hero in dark times",
+    "loca": "Worm",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "Template Stack of any non tier IMG hero from a superhero world.",
+        "type": "Perks",
+        "value": "Your worst day in life: Arrive at Worm"
+      },
+      {
+        "reward": "The full credit cost of the villains",
+        "type": "Other",
+        "value": "Heroic Works: Subdue villains and give them to the authorities."
+      },
+      {
+        "reward": "The full credit cost of the Endbringer",
+        "type": "Other",
+        "value": "Greatest Hero: Kill an Endbringer (Repeatable)"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Kill Scion and stop the shards from attempting to take his position and start a new cycle."
+      },
+      {
+        "value": "You can not use any binding methods, including contracts where the signee is not aware of, to capture unwilling individuals, the contract if the signer is fully aware, having someone swear a sincere oath in your service, and love confessions work."
+      }
+    ],
+    "budget": 0,
+    "desc": "Worm is, a hellhole, most if not all of us can agree with this, and that is why, one of our clients decided to request this.\n\nYour mission will be to become a hero in Worm and make the world a better place. This of course won't be easy, you have to start at intensity 10, the exact settings are up to you, other than template stacking and Power Swap, which won't be available during this mission, as heroes don't suddenly develop new powers, you must also act as a hero, this means that you must be honorable and all but the capture by love or having someone swear an oath on your service capture methods are not possible to use, you can however still get and use the bindings for their secondary features, like the shroud for combat, just not capture anyone.\n\nOf course, as a hero who intends to make the world a better place, fully getting rid of unrepeatable villains is important, and no we are not asking you to kill them, any villain you subdue and give to the authorities can be choosen to be captured and sold, they will be silently taken by our company from the authorities hands on the next day and you will receive their full value in credits.\n\nYou will also receive the full value of the Endbringer for killing them so long you are either the one dealing the decisive blow, were pivotal to the battle, or caused the Endbringer's demise through a carefully planned plot designed by you using other heroes also counts.\n\nTo end this mission, you must kill scion as well as stop the shards from attempting to take it's position and start a new cycle.",
+    "uid": "bpHaF"
+  },
+  {
     "reward": "Any Template Stacking I of a Fallen Angel or 20 Credits",
     "image": "https://i.pinimg.com/originals/ec/d5/cf/ecd5cf8a3bc4c84a67ae987e93c8ac0f.jpg",
     "author": "TheTinyGrayDog",
@@ -165,6 +771,7 @@
     "rewardType": "Other",
     "source": "",
     "title": "Burn Baby Burn",
+    "uid": "iMVwa",
     "loca": "Cyberpunk 2077",
     "lewd": false,
     "scope": "Grand",
@@ -228,8 +835,7 @@
       }
     ],
     "budget": 0,
-    "desc": "Ah, nothing like the smell of sewage, gunpowder, and toxic fumes in the morning. Only on the neon streets of Night City will you find the greatest cocktail of drugs, sex, and violence to immerse yourself in. Take care, however, for this is no high-tech paradise, but a chrome hell where dreams come to die. This city, this world is rotten to the core, choked both by the mighty corporations who look from above and the criminals who roam below. It is time to purge this cancer, time to fix this den of maggots that have been festering for decades. \n\nYour primary mission is simple, to kill the top dog, and cut out the biggest tumor. For the good of the many, the Arisaka Corporation must go. Whether it is burned to the ground or becomes something completely unrecognizable from before makes no difference so long as its blood-soaked hands stop choking what little good remains in this world. ",
-    "uid": "iMVwa"
+    "desc": "Ah, nothing like the smell of sewage, gunpowder, and toxic fumes in the morning. Only on the neon streets of Night City will you find the greatest cocktail of drugs, sex, and violence to immerse yourself in. Take care, however, for this is no high-tech paradise, but a chrome hell where dreams come to die. This city, this world is rotten to the core, choked both by the mighty corporations who look from above and the criminals who roam below. It is time to purge this cancer, time to fix this den of maggots that have been festering for decades. \n\nYour primary mission is simple, to kill the top dog, and cut out the biggest tumor. For the good of the many, the Arasaka Corporation must go. Whether it is burned to the ground or becomes something completely unrecognizable from before makes no difference so long as its blood-soaked hands stop choking what little good remains in this world. "
   },
   {
     "reward": "Instant Capture of Bulla Briefs with double the reward",
@@ -10967,115 +11573,118 @@
     "uid": "qHDCY"
   },
   {
-    "uid": "HDZZh",
-    "desc": "You know what I could see more of? Overlords! Evil Kings! Arch-Mages of evil persuasions! That's where you come in. I'm willing to pay you company credits for entertaining me as an Evil Ruler. Just drop into a setting and take it(or at least a medium-sized country) over within a years time. I'll even add in bonus rewards for doing a good job.",
+    "reward": 100,
+    "image": "https://i.imgur.com/MV6YjCt.jpg",
+    "author": "ClayUndead",
+    "rewardType": "Credits",
     "source": "",
     "title": "With an Iron Fist",
+    "uid": "HDZZh",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Grand",
     "objectives": [
       {
-        "type": "Credits",
-        "value": "Rule for a Decade",
-        "reward": 250
+        "reward": "All Spies and Assassins in your territory will glow red in the sight of anyone working for you.",
+        "type": "Other",
+        "value": "Rule for a Decade"
       },
       {
-        "type": "Credits",
-        "reward": 500,
+        "reward": "All construction, from the smallest nail to the largest Dreadnought, within your territory is sped up 1000%.",
+        "type": "Other",
         "value": "Rule for a Century"
       },
       {
-        "value": "Rule for a Millennia",
-        "reward": 1000,
-        "type": "Credits"
-      },
-      {
-        "reward": 2,
-        "value": "Don't leave your controlled territory for the entirety of the Millennia",
-        "type": "IMG Tickets"
-      },
-      {
-        "value": "Kidnap a Princess(or princess-like figure) and hold her captive for a year.",
-        "reward": "The full capture price of the captive OR 50 Credits",
-        "type": "Credits"
-      },
-      {
-        "type": "Perks",
-        "value": "Start a rumor of a Prophecy of your downfall.",
-        "reward": "Covert Talent OR 10 Credits"
-      },
-      {
-        "type": "Perks",
-        "reward": "Destiny Defense OR 50 Credits",
-        "value": "Defeat a Party of Heroes/Main Characters sent to end you."
-      },
-      {
-        "type": "Credits",
-        "value": "Conquer another Country/Planet/System/Etc. (Repeatable)",
-        "reward": "50 Credits per Conquest"
-      },
-      {
-        "value": "Become the sole ruler in the setting",
-        "reward": 2,
-        "type": "IMG Tickets"
-      },
-      {
-        "reward": "Dragon Heart & Dragon Scale OR 150 Credits",
-        "value": "Collect a hoard of Gold, Treasures and Artifacts. Enough to fill 1000 cubic meters.",
-        "type": "Perks"
-      },
-      {
-        "value": "Create a Phylactery via local methods.",
-        "type": "Credits",
-        "reward": "25 Credits"
-      },
-      {
-        "value": "Defeat or Enslave an already established Overlord/Evil King/Evil Arch-Mage",
-        "type": "Credits",
-        "reward": "100 Credits"
-      },
-      {
+        "reward": "Treat all territory under your rule as though it were a Demiplane or Dungeon.",
         "type": "Other",
-        "value": "Start a religion with you as the Arch-Deity, where 90% of the worshipers truly believe you're a god.",
-        "reward": "a T8 TS of any Divine Figure"
+        "value": "Rule for a Millennia"
       },
       {
-        "value": "Capture and Train a local to be your Evil Misstress",
-        "reward": 50,
-        "type": "Credits"
-      },
-      {
-        "value": "Corrupt a major figure into a Servant/Lover/Soldier with out Capturing them.(Repeatable)",
-        "reward": 25,
-        "type": "Credits"
-      },
-      {
-        "value": "Corrupt a God(or God expy) into Servant/Lover/Soldier without Capturing them (Repeatable)",
-        "reward": 100,
-        "type": "Credits"
-      },
-      {
-        "value": "Kill 1,000,000 people by your own hand",
-        "reward": 50,
-        "type": "Credits"
-      },
-      {
-        "reward": 10,
-        "type": "Credits",
-        "value": "Create a privet military force/Hit Squad to carry out your will.(think the Ginyu Force from DBZ or the Jaegers from AgK)"
-      },
-      {
-        "value": "Create an Heir to your kingdom",
-        "reward": 10,
-        "type": "Credits"
-      },
-      {
+        "reward": 2,
         "type": "IMG Tickets",
-        "reward": 5,
-        "value": "Become the Head of the the most worshiped pantheon."
+        "value": "Don't leave your controlled territory for the entirety of the Millennia"
+      },
+      {
+        "reward": 2,
+        "type": "IMG Tickets",
+        "value": "Become the sole ruler in the setting"
+      },
+      {
+        "reward": "Their full Purchase price or 50 Credits(whichever is higher)",
+        "type": "Other",
+        "value": "Kidnap a Princess(or princess-like figure) and hold her captive for a year."
+      },
+      {
+        "reward": "Destiny Immunity OR 80 Credits",
+        "type": "Perks",
+        "value": "Start a rumor of a Prophecy of your downfall that your opposition truly believes."
+      },
+      {
+        "reward": "Each member of the Party will be made into Magical Weapons(à la Devil May Cry) that scale to your power.",
+        "type": "Other",
+        "value": "Defeat a Party of Heroes/Main Characters sent to end you. (Repeatable)"
+      },
+      {
+        "reward": "100 Credits per Conquest",
+        "type": "Other",
+        "value": "Conquer another Country/Planet/System/Etc. (Repeatable)"
+      },
+      {
+        "reward": "Once something becomes a part of your hoard, you develop a sixth sense to always know where it is. OR 150 Credits",
+        "type": "Perks",
+        "value": "Collect a hoard of Gold, Treasures and Artifacts. Enough to fill 1000 cubic meters."
+      },
+      {
+        "reward": "Your Phylactery becomes immune to damage from beings lower in Tier than you.",
+        "type": "Other",
+        "value": "Create a Phylactery via local methods."
+      },
+      {
+        "reward": "Their full Purchase price or 100 Credits(whichever is higher)",
+        "type": "Other",
+        "value": "Defeat or Enslave an already established Overlord/Evil King/Evil Arch-Mage"
+      },
+      {
+        "reward": 500,
+        "type": "Credits",
+        "value": "Start a religion with you as the Arch-Deity, where 90% of the worshipers truly believe you're a god."
+      },
+      {
+        "reward": 2,
+        "type": "IMG Tickets",
+        "value": "Capture and Train a local to be Become the Head God of the most worshiped pantheon in setting Evil Misstress"
+      },
+      {
+        "reward": "A T8 Template Stack of any evil-aligned person for them. This is specifically for the Mistress.",
+        "type": "Other",
+        "value": "Capture and train a local to be your Evil Mistress without binding them."
+      },
+      {
+        "reward": "Their full Purchase price or 100 Credits(whichever is higher)",
+        "type": "Other",
+        "value": "Corrupt a major Good-aligned figure into a Servant/Lover/Soldier without capturing them.(Repeatable)"
+      },
+      {
+        "reward": "Their full Purchase price or 200 Credits(whichever is higher)",
+        "type": "Other",
+        "value": "Corrupt a God(or God expy) into Servant/Lover/Soldier without Capturing them (Repeatable)"
+      },
+      {
+        "reward": "A Throne of Skulls, that when sat in, gives you the knowledge on who and how to kill for the greatest benefit to your kingdom.",
+        "type": "Other",
+        "value": "Kill 1,000,000 people by your own hand"
+      },
+      {
+        "reward": "A single Template Stack to be applied to every member of the military force. It is applied when they join said force.",
+        "type": "Other",
+        "value": "Create a private military force/Hit Squad to carry out your will.(think the Ginyu Force from DBZ or the Adeptus Custodes from WH40K) This force can not be above 0.00001% of your total martial forces."
+      },
+      {
+        "reward": "Any form of punishment/discipline you give your offspring will only aid their development",
+        "type": "Other",
+        "value": "Create a Heir to your kingdom(by natural means or otherwise)"
       }
     ],
-    "image": "https://i.imgur.com/MV6YjCt.jpg",
-    "budget": 1,
-    "reward": 100,
     "conditions": [
       {
         "value": "Conquer a medium-sized country/planet/System/Etc. compared to the entire setting."
@@ -11084,11 +11693,8 @@
         "value": "Rule as an Evil King/Overlord/etc. for a year."
       }
     ],
-    "scope": "Grand",
-    "author": "ClayUndead",
-    "lewd": false,
-    "rewardType": "Credits",
-    "loca": "Generic"
+    "budget": 1,
+    "desc": "You know what I could see more of? Overlords! Evil Kings! Arch-Mages of evil persuasions! That's where you come in. I'm willing to pay you company credits for entertaining me as an Evil Ruler. Just drop into a setting and take it(or at least a medium-sized country) over within a years time. I'll even add in bonus rewards for doing a good job."
   },
   {
     "author": "NeroAlmia",

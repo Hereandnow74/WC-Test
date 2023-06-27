@@ -91,6 +91,12 @@
       <div class="text-lg text-center font-semibold leading-loose">
         Utility
       </div>
+      <DR11
+        :id="drx.title"
+        :perk="drx"
+        :is-active="allEffects.includes(drx.title)"
+        @chooseIntensity="chooseDifficulty"
+      />
       <PerkCard
         :perk="buybackIntensity"
         :is-active="difficulties.findIndex((x) => x.uid === buybackIntensity.uid) !== -1"
@@ -116,10 +122,10 @@ import { clamp } from 'lodash-es'
 import { CHAR_COSTS, CHAR_COSTS_FULL, WORLD_RATINGS_DF } from '~/data/constants'
 import { difficultyOptions, difficultyRules } from '~/data/difficulty'
 import { useTooltips } from '~/logic/misc'
-import { difficultyAvailable, chooseDifficulty, pickSimplePerk } from '~/logic/perksLogic'
+import { difficultyAvailable, chooseDifficulty, pickSimplePerk, chooseIntensity } from '~/logic/perksLogic'
 import { useStore } from '~/store/store'
 
-const { settings, difficultyRating, captureKoeff, sellKoeff, difficulties } = useStore()
+const { settings, difficultyRating, captureKoeff, sellKoeff, difficulties, allEffects } = useStore()
 
 let savedType = ''
 const typeTitles = {
@@ -161,6 +167,19 @@ const buybackIntensity = {
   multiple: true,
   max: 100,
   min: 1,
+}
+
+const drx = {
+  uid: 'jUgfe',
+  title: 'DRX start',
+  image: 'https://i.ibb.co/XVm9GqG/DRX-Start2.jpg',
+  intensity: 10,
+  special: 'Chargen only',
+  chargen: true,
+  blacklist: ['Cash Still Rules', 'Wage Slave', 'Couple’s Account (Cooperative)'],
+  desc: `Danger Rating 11 build's have special <a @click.stop href="/#danger11" class="text-cyan-500 hover:text-cyan-600 underline">rules</a>
+  <p>This perk does not modify starting world in any way all the danger comes from mandatory TX or TY companion of your choice, while Company guarantee that they will not kill you outright, how obedient they are completely depends on chosen companion and your perks.</p>
+  `,
 }
 
 const worldDifficultyRow = computed(() => {

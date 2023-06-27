@@ -179,7 +179,7 @@ function jumpToManual() {
 }
 
 async function reroll() {
-  if (await confirmDialog('You can\'t reroll by the catalog rules, this function was created for your convinience in the case when you don\'t know any of the suggested worlds.'))
+  if (await confirmDialog('You can\'t reroll by the catalog rules, this function was created for your convenience in the case when you don\'t know any of the suggested worlds.'))
     rdnWorld.value = randomWorld(currentWorld.value.rating, minus.value, plus.value, numberOfChoices.value, jumpChain.value)
 }
 </script>

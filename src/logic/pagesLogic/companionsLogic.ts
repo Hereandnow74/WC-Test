@@ -21,6 +21,7 @@ const options2 = {
 
 const fuse = computed(() => new Fuse(allChars.value, options))
 const fuseNoSort = computed(() => new Fuse(allChars.value, options2))
+// console.log(allChars.value.sort((a, b) => b.n.length - a.n.length).slice(0, 100).map(x => x.n))
 
 export function useCompanionsLogic() {
   return {

@@ -30,6 +30,7 @@
               <List :list-key="'flavor'" :list="el.complex" color="text-violet-400" start="{" end="}" />
             </template>
           </span>
+          <span v-if="el?.category" class="text-yellow-500">({{ displayTitle(el) }})</span>
         </router-link>
         <span v-if="priceMode && costOrIntensity(el)">[<span :style="[numberColor ? {color: numberColor} : '']" class="text-gray-300">{{ costOrIntensity(el) > 0 ? '+' : '' }}{{ costOrIntensity(el) }}</span>]</span>
         <fluent:delete-20-filled v-if="editMode" class="text-red-400 hover:text-red-500 cursor-pointer inline-block ml-1" @click.stop="deletePerk(el)" />
@@ -80,6 +81,25 @@ const props = defineProps({
     default: false,
   },
 })
+
+const typeTitles = {
+  legacy: 'Legacy',
+  team: 'Team',
+  payment: 'Payment',
+  binding: 'Bindings',
+  template: 'Template',
+  defenses: 'Defenses',
+  leveling: 'Leveling',
+  worlds: 'Worlds',
+  warranty: 'Warranty',
+  death: 'Death',
+  random: 'Random',
+  other: 'Misc',
+}
+
+function displayTitle(rule) {
+  return typeTitles[rule.type] || typeTitles[rule.type.slice(0, -1)]
+}
 
 const costOrIntensity = (el: any) => {
   if (el.cost || el.cost === 0) {

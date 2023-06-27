@@ -68,7 +68,6 @@ export async function _postRegisterInfoToEndpoint(SERVER_URL: string, API_VERSIO
 
 export async function _loginToServer(SERVER_URL: string, API_VERSION: string, registerInfo: any): Promise<string> {
   const apiUrl = `${SERVER_URL}/${API_VERSION}/auth/login`
-  const { favorites } = useGlobalSettings()
   const response = await fetch(apiUrl, {
     method: 'POST',
     headers: {
@@ -78,6 +77,8 @@ export async function _loginToServer(SERVER_URL: string, API_VERSION: string, re
   })
 
   if (!response.ok) {
+    if (response.status === 429)
+      return 'Too many requests'
     const errorText = await response.text()
     // console.log(`Failed to login: ${errorText}`)
     return JSON.parse(errorText).message
@@ -87,8 +88,6 @@ export async function _loginToServer(SERVER_URL: string, API_VERSION: string, re
     const jsonPayload = JSON.parse(payload)
     tokens.value = jsonPayload.tokens
     user.value = jsonPayload.user
-    if (!favorites.value || favorites.value.length === 0)
-      favorites.value = user.value.likedCharacters
     return 'Success'
   }
   // return 'Success'
@@ -108,7 +107,12 @@ export async function _refreshTokens(SERVER_URL: string, API_VERSION: string): P
 
     if (!response.ok) {
       const errorText = await response.text()
-      return JSON.parse(errorText).message
+      try {
+        return JSON.parse(errorText).message
+      }
+      catch {
+        return errorText
+      }
     }
     else {
       const payload = await response.text()
@@ -172,7 +176,7 @@ export async function _sendResetToken(SERVER_URL: string, API_VERSION: string, e
     headers: {
       'Content-Type': 'application/json',
     },
-    body: JSON.stringify({ email: email }),
+    body: JSON.stringify({ email }),
   })
 
   if (!response.ok) {

@@ -188,11 +188,17 @@ export function chooseDifficulty(rule: Difficulty) {
     // deletePerk(difficulties.value, difficultyAvailable)
   }
   else {
+    const ind = findIndex(difficulties.value, { type: rule.type })
+    if (ind !== -1) {
+      const toDel = difficulties.value.splice(ind, 1)[0]
+      allEffects.value.splice(allEffects.value.indexOf(toDel.title), 1)
+    }
     if (difficultyAvailable(rule)) {
       allEffects.value.push(rule.title)
       const perk = {
         uid: rule.uid,
         title: rule.title,
+        category: rule.category,
         type: rule.type,
         intensity: rule.intensity,
       }

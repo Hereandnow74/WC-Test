@@ -49,7 +49,7 @@
                   placeholder="Character / Race / Power name"
                   class="flex-grow"
                   error-message=""
-                  :max="10"
+                  :max-tier="10"
                   @onChar="(char: DBCharacter) => (power.flavor = `${char.n} (${char.w})`, power.target = startingOrigin.character || 'You', power.uid = startingOrigin.uid || 0)"
                   @update:modelValue="(val) => (power.flavor = val, power.target = startingOrigin.character || 'You', power.uid = startingOrigin.uid || 0)"
                 />

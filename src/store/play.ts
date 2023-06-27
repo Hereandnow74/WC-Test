@@ -63,6 +63,7 @@ interface MissionsReward {
 const missionRewards = useStorage<MissionsReward>('missionRewards', {})
 
 const likes = ref<Record<number, number>>({})
+const likesMessageSeen = ref(false)
 
 export function usePlayStore() {
   return {
@@ -82,5 +83,6 @@ export function usePlayStore() {
     gachaSettings,
     missionRewards,
     likes,
+    likesMessageSeen,
   }
 }

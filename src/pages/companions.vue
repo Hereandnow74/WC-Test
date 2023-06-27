@@ -248,11 +248,15 @@ import { useSettings } from '~/logic/searchSettings'
 import { useCompanionsLogic } from '~/logic/pagesLogic/companionsLogic'
 import { getLikesByUid, searchForCharacters } from '~/logic/server/'
 import { useGlobalSettings } from '~/store/settings'
+import { useUser } from '~/store/user'
 
 const { startingWorld, settings, companionsUIDs } = useStore()
 const { jumpChain, likes } = usePlayStore()
 const { minTier, maxTier, worldName, blockedWorlds } = useSettings()
 const { favorites } = useGlobalSettings()
+const { user } = useUser()
+
+const filteredFavorites = computed(() => user.value.likedCharacters && user.value.likedCharacters.length ? user.value.likedCharacters : favorites.value)
 
 const search = ref('')
 const position = ref(0)
@@ -391,8 +395,8 @@ const filteredCharacters = computed(() => {
   if (gender.value) sopt.$and.push({ b: `=${gender.value}` })
 
   if (nsfw.value) sopt.$and.push({ in: nsfw.value })
-  if (favorite.value === 1) sopt.$and.push({ u: `=${favorites.value.join('|=')}` })
-  if (favorite.value === -1) sopt.$and.push({ u: `!^${favorites.value.join(' !^')}` })
+  if (favorite.value === 1) sopt.$and.push({ u: `=${filteredFavorites.value.join('|=')}` })
+  if (favorite.value === -1) sopt.$and.push({ u: `!^${filteredFavorites.value.join(' !^')}` })
   // console.log(changes.value)
   if (newChanges.value) sopt.$and.push({ u: `=${Object.keys(changes.value).join('|=')}` })
   if (retinue.value === 1) sopt.$and.push({ u: `=${Object.keys(companionsUIDs.value).join('|=')}` })

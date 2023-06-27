@@ -47,8 +47,8 @@ const appsList = [
 ]
 
 const apps = computed(() => {
-  const pocket = { icon: 'bi:box-seam', name: 'Pocket Space', component: 'PocketSpace', color: '#0d6efd' }
-  return homePerks.value.length ? [...appsList, pocket] : appsList
+  // const pocket = { icon: 'bi:box-seam', name: 'Pocket Space', component: 'PocketSpace', color: '#0d6efd' }
+  return appsList
 })
 
 const appComponents = {
@@ -65,7 +65,7 @@ const appComponents = {
   Notes: defineAsyncComponent(() => import('./apps/Notes.vue')),
   RitualCircle: defineAsyncComponent(() => import('./apps/RitualCircleApp.vue')),
   BulkCapture: defineAsyncComponent(() => import('./apps/BulkCapture.vue')),
-  PocketSpace: defineAsyncComponent(() => import('./apps/PocketSpace.vue')),
+  // PocketSpace: defineAsyncComponent(() => import('./apps/PocketSpace.vue')),
   Discounts: defineAsyncComponent(() => import('./apps/Discounts.vue')),
   Gacha: defineAsyncComponent(() => import('./apps/Gacha.vue')),
   Dungeon: defineAsyncComponent(() => import('./apps/Dungeon.vue')),
