@@ -9,7 +9,8 @@
     <div class="flex gap-2 self-center">
       <Button label="Random World" size="Small" @click="getRandomWorld" />
       <div class="flex gap-1">
-        Limit to DR <NumberInput v-model="DRLimit" :min="0" :max="10" />
+        Limit DR from <NumberInput v-model="minDR" :min="0" :max="10" />
+        to <NumberInput v-model="maxDR" :min="0" :max="10" />
       </div>
     </div>
   </div>
@@ -20,12 +21,15 @@ import { allWorldsNoCondition } from '~/data/constants'
 import { randomWorld } from '~/logic'
 
 const world = ref<any>({})
-const DRLimit = ref(0)
+const minDR = ref(0)
+const maxDR = ref(10)
 
 function getRandomWorld() {
-  const limitTo = DRLimit.value > 0 ? DRLimit.value : 0
-  const mp = limitTo === 0 ? 11 : 0
-  world.value = randomWorld(limitTo, mp, mp)[0]
+  const rolledWorld = randomWorld(minDR.value, 0, maxDR.value - minDR.value)[0]
+  if (rolledWorld)
+    world.value = rolledWorld
+  else
+    world.value = { worldName: 'Nothing Found', rating: 0 }
 }
 
 getRandomWorld()

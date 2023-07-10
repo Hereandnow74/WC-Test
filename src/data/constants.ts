@@ -336,8 +336,8 @@ export const ALL_PERK_STORES = {
 export const LINKS = computed(() => {
   const links = {} as Record<string, string>
   const allCats = {
-    'intensity/difficulty': difficultyOptions,
     'intensity/intensity': [...intensity, ...DLCintensity],
+    'intensity/difficulty': difficultyOptions,
     'intensity/pvp': intensityPvP,
     'intensity/orbs': invasionPvP,
     'intensity/tournament': tournamentPerks,

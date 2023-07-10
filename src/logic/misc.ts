@@ -2,7 +2,7 @@ import Fuse from 'fuse.js'
 import { random, groupBy, sampleSize, findIndex, sample, isNumber, xor, compact } from 'lodash-es'
 import tippy from 'tippy.js'
 import { DBWorld } from 'global'
-import { allWorldsNoCondition, ALL_DLC_PERK_TITLES, CHAR_COSTS, getAllChars, shownValue, useAllChars } from '../data/constants'
+import { allWorldsNoCondition, ALL_DLC_PERK_TITLES, CHAR_COSTS, getAllChars, shownValue, useAllChars, CHAR_COSTS_FULL } from '../data/constants'
 
 import { useStore } from '../store/store'
 import { clearAll, isBuildImage } from '../logic'
@@ -62,13 +62,12 @@ export function lazyLoadSingleImg(img: HTMLImageElement) {
   }
 }
 
-export async function randomChar(withImg: boolean, maxCost = 0, minCost = 0, gender: 'F' | 'M' | 'O' | null = null) {
+export async function randomChar(maxCost = 0, minCost = 0, gender: 'F' | 'M' | 'O' | null = null) {
   const chars = allCharsComp.value.filter((x) => {
     let res = true
     if (gender) res = x.b && x.b.includes(gender) ? res : false
-    if (withImg) res = x.i && x.i.length ? res : false
-    if (maxCost) res = (CHAR_COSTS[x.t]) <= maxCost ? res : false
-    if (minCost) res = (CHAR_COSTS[x.t]) >= minCost ? res : false
+    if (maxCost) res = (CHAR_COSTS_FULL[x.t]) <= maxCost ? res : false
+    if (minCost) res = (CHAR_COSTS_FULL[x.t]) >= minCost ? res : false
 
     return res
   })

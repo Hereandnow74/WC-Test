@@ -74,7 +74,7 @@ export const difficultyOptions = [
   {
     uid: 'HKgAq',
     title: '75%/25%',
-    image: 'https://i.imgur.com/M8XO8kAl.jpg',
+    image: 'https://i.imgur.com/VWxigrhl.jpg',
     intensity: -3,
     desc: 'The standard compensation for your captures and sales is flipped. As an example, a Tier 8 individual captured on intensity 5 will now earn you 120 credits up-front instead of 40, while an immediate sale will only earn you an additional 40 credits instead of the standard 120.',
     category: 'difficulty',
@@ -96,7 +96,7 @@ export const difficultyOptions = [
   {
     uid: '1zx3K',
     title: '25%/75%',
-    image: 'https://i.imgur.com/VWxigrhl.jpg',
+    image: 'https://i.imgur.com/M8XO8kAl.jpg',
     intensity: 0,
     desc: 'The standard compensation for your captures and sales applies. As a reminder, a Tier 8 individual captured on intensity 5 will earn you 40 credits up-front, while an immediate sale will earn you an additional 120 credits.',
     category: 'difficulty',

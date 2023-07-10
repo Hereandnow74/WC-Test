@@ -86,8 +86,8 @@ const baseBudgetAfter = computed(
   () => baseBudget.value + intensities.value.reduce((a, x) => x.intensity > 1 ? a + x.intensity : a, 0),
 )
 
-function costCalc(a: number, x: Perk) {
-  return a += x.cost || 0
+function costCalc(a: number, x: any) {
+  return a += x && x.cost ? x.cost : 0
 }
 
 const pvpPerksCost = computed(() => pvpPerks.value.reduce(costCalc, 0))
@@ -410,7 +410,13 @@ const fullStartingBudget = computed(() => {
 //     jumpChain.value.reduce((a, x) => Math.max(a, WORLD_RATINGS[x.rating - 1].budget), 0),
 //   ))
 
-const creditLimit = computed(() => 500 + jumpChain.value.length * 100)
+const creditLimit = computed(() => {
+  const loanLimits = [500, 500, 400, 300, 200, 200, 100]
+  if (legacyMode.value)
+    return 500 + jumpChain.value.length * 100
+  else
+    return (loanLimits[difficultyRating.value] || 100) + jumpChain.value.length * 100
+})
 
 const missionRewardCredits = computed(() => Object.values(missionRewards.value).reduce((sum, miss) => sum += miss.rewards.reduce((missSum, rw) => rw.type === 'Credits' ? missSum += parseInt(`${rw.value}`) || 0 : missSum, 0), 0))
 
@@ -435,21 +441,37 @@ const originCost = computed(() => {
   return bd
 })
 
+const totalCost = computed(() => startingOrigin.value.cost + pvpPerksCost.value
++ bindingCost.value + heritageCost.value + luresCost.value + ridePerksCost.value + homePerksCost.value
++ talentsCost.value + defensesCost.value + miscPerksCost.value + waifuPerksCost.value
++ genericWaifuPerksCost.value + companionsCost.value + otherCost.value + fee.value
++ budgetMods.value.minus + challengesCost.value + originCost.value + difficultyCost.value)
+
+const totalGain = computed(() => budgetMods.value.plus + companionProfit.value + companionProfitSold.value
++ usedHeritageDiscount.value + talentsDiscount.value + defensesDiscount.value + specificModsCost.value
++ budgetMods.value.sell11 * 1000 + missionRewardCredits.value + defenseRetinueDiscount.value)
+
 const budget = computed(() => {
-  const bd = fullStartingBudget.value - startingOrigin.value.cost - pvpPerksCost.value
-      - bindingCost.value - heritageCost.value - luresCost.value - ridePerksCost.value - homePerksCost.value
-      - talentsCost.value - defensesCost.value - miscPerksCost.value - waifuPerksCost.value
-      - genericWaifuPerksCost.value - companionsCost.value - otherCost.value - fee.value
-      - budgetMods.value.minus + budgetMods.value.plus + companionProfit.value + companionProfitSold.value
-      + usedHeritageDiscount.value + talentsDiscount.value + defensesDiscount.value + specificModsCost.value
-      + budgetMods.value.sell11 * 1000 + missionRewardCredits.value + defenseRetinueDiscount.value - challengesCost.value - originCost.value - difficultyCost.value
+  const bd = fullStartingBudget.value - totalCost.value + totalGain.value
 
   // CSR implementation 3.0
-  if (flags.value.chargen && csr.value) {
-    if (bd + loan.value.gained < 0) {
-      const budget = Math.max(WORLD_RATINGS[startingWorld.value.rating].budget, 500)
-      loan.value.gained = Math.min(Math.abs(bd), budget)
-      loan.value.owed = loan.value.gained
+  if (legacyMode.value) {
+    if (flags.value.chargen && csr.value) {
+      if (bd + loan.value.gained < 0) {
+        const budget = Math.max(WORLD_RATINGS[startingWorld.value.rating].budget, 500)
+        loan.value.gained = Math.min(Math.abs(bd), budget)
+        loan.value.owed = loan.value.gained
+      }
+    }
+  }
+  else {
+    if (flags.value.chargen && csr.value) {
+      const loanLimits = [500, 500, 400, 300, 200, 200, 100]
+      if (bd + loan.value.gained < 0) {
+        const budget = loanLimits[difficultyRating.value] || 100
+        loan.value.gained = Math.min(Math.abs(bd), budget)
+        loan.value.owed = loan.value.gained
+      }
     }
   }
 
@@ -513,10 +535,6 @@ const tier11tickets = computed(() => {
     - waifuPerksCost - genericWaifuPerksCost - luresCost - companionsCost - bindingCost
     - budgetMods.value.minus11 + budgetMods.value.plus11 + companionTicketProfit.value - budgetMods.value.sell11 + missionRewardTickets.value - originPSTicket - originSWPTicket - (startingOrigin.value.costT || 0)
 })
-
-const totalCost = computed(() => startingOrigin.value.cost + heritageCost.value + bindingCost.value
-+ ridePerksCost.value + homePerksCost.value + talentsCost.value + defensesCost.value + miscPerksCost.value
-+ waifuPerksCost.value + genericWaifuPerksCost.value + luresCost.value + companionsCost.value + otherCost.value + pvpPerksCost.value + originCost.value)
 
 const companionsComp = computed(() => companionsWithoutSold.value.filter(cmp => ['Companion', 'Familiar'].includes(cmp.role) || !cmp.role))
 

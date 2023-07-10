@@ -45,7 +45,7 @@
                 placeholder="Tier"
               />
             </div>
-            <div v-if="chosenOrigin.title === item.title && ['Possess', 'Substitute', 'Walk-In'].includes(item.title)">
+            <div v-if="chosenOrigin.title === item.title && ['Possess', 'Substitute'].includes(item.title)">
               <Select v-model="chosenOrigin.hr" :options="heritageOptions" placeholder="Archetype" />
             </div>
             <div v-if="chosenOrigin.title === item.title">

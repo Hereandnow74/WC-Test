@@ -1,4 +1,657 @@
 [
+  
+  {
+    "reward": 300,
+    "image": "https://animevania.com/wp-content/uploads/2022/09/cropped-1920-1080-1248757.jpg",
+    "author": "Asdas Sad",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "It Was Me, Kurama!",
+    "loca": "Naruto",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Capture Hyuga Hinata"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Capture Hyuuga Hanabi"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Capture Mabui"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Capture Mitarashi Anko"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Capture Samui"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Capture Temari"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Capture Tayuya"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Capture Tenten"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Capture Haruno Sakura"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Capture Nii Yugito"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Capture Konan"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Capture Terumi Mei"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Capture Tsunade Senju"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Capture Uzumaki Kushina"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Capture Uzumaki Mito"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Capture Uchiha Mikoto"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Capture Uchiha Izumi"
+      },
+      {
+        "reward": "Sticky Fingers and all its upgrades or 50 credits",
+        "type": "Perks",
+        "value": "Impregnate Uzumaki Kushina or Uzumaki Mito"
+      },
+      {
+        "reward": "Sticky Fingers and all its upgrades or 50 credits",
+        "type": "Perks",
+        "value": "Restart the Uchiha Bloodline by impregnatin atleast one Uchiha Female"
+      },
+      {
+        "reward": "TS1 & TS2 Uchiha Sasuke",
+        "type": "Perks",
+        "value": "Kill Uchiha Sasuke"
+      },
+      {
+        "reward": "TS1 & TS2 Uchiha Itachi",
+        "type": "Perks",
+        "value": "Kill Uchiha Itachi"
+      },
+      {
+        "reward": "TS1 & TS2 Uchiha Obito",
+        "type": "Perks",
+        "value": "Kill Uchiha Obito"
+      },
+      {
+        "reward": "TS1 & TS2 Uchiha Madara",
+        "type": "Perks",
+        "value": "Kill Uchiha Madara"
+      },
+      {
+        "reward": "TS1 & TS2 Kaguya Otsutsuki",
+        "type": "Perks",
+        "value": "End the Uchiha Bloodline (Sasuke, Itachi, Madara and Obito)"
+      },
+      {
+        "reward": 500,
+        "type": "Credits",
+        "value": "Kill or Capture Otsutsuki Kaguya"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Don't be discovered as the Kyubi"
+      },
+      {
+        "value": "Continue your own bloodline with at least two sons or daughters"
+      },
+      {
+        "value": "You can't purchase any companions from Naruto"
+      },
+      {
+        "value": "You must be a Substitute as Naruto Uzumaki"
+      },
+      {
+        "value": "All Fillers/Movies/OVA will be present."
+      },
+      {
+        "value": "Cannot purchase any companions from Naruto"
+      }
+    ],
+    "budget": 200,
+    "desc": "You know, from the very beginning, Kurama refused to work with Naruto no matter what, stating that under no circumstances would he help him. But that was later contradicted when while Naruto was training with Jiraiya on his summoning jutsu and was kicked out of a cliff by his teacher, Kurama, instead of letting him go splat against the bottom of the ravine, letting Naruto die to free himself, instead led him some of his chakra to summon Gamabunta.\n\nWell contractor, that ain't happening here. You will take the place of Kurama while Naruto is falling into the ravine, disrupting your own chakra as you take control, resulting in Naruto dying  when he colides with the bottom of the ravine. As Naruto dies, you will take full control of his body while cracking the seal that holds all your power, unfortunately this will cause that you only had control over one of your tails at the start, causing you to go in a berserker like state when you try to use more tails without enough training.",
+    "uid": "GbwKJ"
+  },
+  {
+    "reward": 1,
+    "image": "",
+    "author": "newbijin77",
+    "rewardType": "IMG Tickets",
+    "source": "",
+    "title": "Defeat Ambition",
+    "loca": "The Elder Scrolls",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": 500,
+        "type": "Credits",
+        "value": "Complete Main Quest"
+      },
+      {
+        "reward": 300,
+        "type": "Credits",
+        "value": "Complete Shivering Isles"
+      },
+      {
+        "reward": 400,
+        "type": "Credits",
+        "value": "Complete Knights of the nine"
+      },
+      {
+        "reward": "any tier 6 or below mage",
+        "type": "Companions",
+        "value": "Become Arch Mage"
+      },
+      {
+        "reward": "any tier 4 or below thief",
+        "type": "Companions",
+        "value": "Become the gray fox"
+      },
+      {
+        "reward": "any tier 5 or below warrior",
+        "type": "Companions",
+        "value": "Become head of the fighter's guild"
+      },
+      {
+        "reward": "any tier 8 yandere",
+        "type": "Companions",
+        "value": "gain the ognum infinium"
+      },
+      {
+        "reward": "any tier 6 or below 'performer' companion",
+        "type": "Companions",
+        "value": "become arena champion"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "no heritage perks allowed, you go in as base human."
+      },
+      {
+        "value": "no companions from outside the world, local captures only, and you'll need to capture them not buy them."
+      },
+      {
+        "value": "take Soul Talent, Martial Talent and Covert Talent for free"
+      },
+      {
+        "value": "no defense perks, you can only use local defense modifiers"
+      },
+      {
+        "value": "you can try to become king of the empire if you wish."
+      }
+    ],
+    "budget": 0,
+    "desc": "Go to Tamriel during the Oblivion Crisis, and wreck Mehrunes Dagon's plans",
+    "uid": "kQBUV"
+  },
+  {
+    "reward": 3,
+    "image": "",
+    "author": "Keeward",
+    "rewardType": "IMG Tickets",
+    "source": "",
+    "title": "Cleaning Up the Company's Messes - Archangel of Benevolence",
+    "loca": "Kingdom Hearts",
+    "lewd": true,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "Blessed Talent, 30 Credits if you already have it.",
+        "type": "Perks",
+        "value": "Find a way to leave the Realm of Darkness prior to the events of KH1."
+      },
+      {
+        "reward": "Corruption Defense x1 (must not already have any levels of Corruption Defense), or 50 Credits",
+        "type": "Perks",
+        "value": "Leave the Realm of Darkness without falling to Darkness. *"
+      },
+      {
+        "reward": "Set Corruption Defense to 2. If you already have it at 2, take 100 Credits instead.",
+        "type": "Perks",
+        "value": "Master the use of Darkness without falling to it. *"
+      },
+      {
+        "reward": 25,
+        "type": "Credits",
+        "value": "Capture 1 of the Mission's Targets."
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Capture 5 of the Mission's Targets."
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Capture 10 of the Mission's Targets."
+      },
+      {
+        "reward": "Take Inculcation Talent, or 200 Credits if you already have it.",
+        "type": "Perks",
+        "value": "Capture all of the Mission's Targets."
+      },
+      {
+        "reward": "Stress Defense, or 10 Credits if it's already maxed.",
+        "type": "Perks",
+        "value": "Become a Mentor in Keyblade Wielding to either Sora, Riku, or Kairi."
+      },
+      {
+        "reward": "Educational Talent, or 10 Credits if you already have it.",
+        "type": "Perks",
+        "value": "Become a Mentor in Keyblade Wielding to Sora, Riku, and Kairi."
+      },
+      {
+        "reward": "Don't Stand So Close to Me, or 50 Credits if you already have it.",
+        "type": "Perks",
+        "value": "Train either Sora, Riku, or Kairi up to Keyblade Mastery."
+      },
+      {
+        "reward": "Dark Aqua T9 (Either Female or Futa).",
+        "type": "Companions",
+        "value": "Complete the Mission without Capturing half (rounded up) of the Targets."
+      },
+      {
+        "reward": "x1 T10 or below Companion of your choice.",
+        "type": "Companions",
+        "value": "Complete the Mission without Capturing any of the Targets."
+      },
+      {
+        "reward": "Heart of Light for you as Aqua. You cannot gain the rewards for the * Objectives if you have not already completed them.",
+        "type": "Perks",
+        "value": "Capture Kairi by Love Confession"
+      },
+      {
+        "reward": "Blade of Endings for you as Aqua, or for a Keyblade Wielding Companion of your choice if you already have it for you as Aqua.",
+        "type": "Perks",
+        "value": "Defeat Xehanort, and stop his plans completely"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Start in a variant Kingdom Hearts where every other reality exists as a World within the KH multiverse, adjusted as and when appropriate to match the rules of the KH setting."
+      },
+      {
+        "value": "When choosing Kingdom Hearts in the \"World\" section, select \"The Dark Realm\" as the condition, you will start prior to KH1."
+      },
+      {
+        "value": "For Origin, you must select either Walk-In or Substitute as Aqua. She can be either Female or a Futanari, your choice."
+      },
+      {
+        "value": "You must choose the Archangel of Benevolence as your Patron in Chargen."
+      },
+      {
+        "value": "There will be at least 20 (you may choose to have more) abandoned and abused T8-10 former non-Evil Companions scattered this reality. You must either Capture or non-lethally neutralise all of them."
+      },
+      {
+        "value": "You cannot Kill any of the above Targets for this Mission unless you have no choice. You will automatically Fail this mission if you don't follow this rule."
+      },
+      {
+        "value": "Failure incurred by breaking the above condition will result in permanent loss of both your Keyblade and your ability to wield such weapons."
+      },
+      {
+        "value": "You cannot leave the Kingdom Hearts cosmology until after you have completed this mission."
+      },
+      {
+        "value": "Select one T7 Companion for free in Chargen."
+      },
+      {
+        "value": "Pick a Heritage, then take the first base perk for that Heritage for free."
+      },
+      {
+        "value": "Intensity must be at least 7."
+      }
+    ],
+    "budget": 0,
+    "desc": "Must be Chosen before finishing Chargen.\n\nOver the course of its long and varied history, the Company's various Contractors have lost more than a few Companions for various reasons. Sometimes it's nobody's fault, sometimes it's everyone's fault, but regardless of why it occurred, the fact remains it did so. \nNormally, the Company could care less what happens to surviving lost Companions, but every now and then, a collection of such individuals forms and decides, for whatever reasons, to begin a policy of total intolerance for attempted Company operations in whichever reality they've settled in.\nBeing fair, even this wouldn't normally be cause for alarm, but sometimes, as is the case now, these groups settle in particularly abundant variant realities, filled with an incredible number of highly desirable Waifus and/or Husbandos. As such, the Company needs them to stop being a problem, which is where the Patrons come in.\nThese Lost Companion Collectives, for reasons yet unknown, almost always consist near-exclusively of Companions that are of interest to one or more of the Patrons, so they gladly sponsor these Clean-Up Missions and Contractors for their own benefit.\nThis time the problem has come to a Variant Kingdom Hearts, one where just about every reality you can imagine exists within, either as a World that can be visited, or through variant versions of their populace spread throughout.\nThe Collective that has settled in this reality consists primarily of abused former Companions, tending to be either physically, emotionally, or psychologically scarred (or some combination thereof) former heroes or neutrals, and who are all T8-10 in power. As best as can be determined, there are 20 members of this group, but there may be more, if you can find them, and they are scattered throughout the Worlds. Naturally, their status has caught the eye of the Archangel of Benevolence.\nYour Mission, should you accept it, is to neutralise all these rogue former Companions, either by Capturing them, or by otherwise binding them to some form of unbreakable agreement to cease further interference with Company matters. The Angel will not tolerate Killing any of these rogues unless you have no other choice at the time, so unnecessary killings will result in failure.\n\nOh, and the Angel's decided that a perfect fit for this mission already exists in the World, so you'll have to either already be her, or to become her. Have Fun!",
+    "uid": "fJsIN"
+  },
+  {
+    "reward": 5000,
+    "image": "",
+    "author": "Arya13579",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Conquer the Galaxy",
+    "loca": "Star Wars",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "Jedi Holocron of Choice",
+        "type": "Other",
+        "value": "Capture at least seven Light Side Force Users of Tier Five or Higher"
+      },
+      {
+        "reward": "Sith Holocron of Choice",
+        "type": "Other",
+        "value": "Capture at least seven Dark Side Force Users of Tier Five or Higher"
+      },
+      {
+        "reward": 1000,
+        "type": "Credits",
+        "value": "Get the Republic Senate to Surrender"
+      },
+      {
+        "reward": 1000,
+        "type": "Credits",
+        "value": "Get the Confederacy Congress to Surrender"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Can't Purchase Rides for the Duration of the Mission"
+      },
+      {
+        "value": "Can't purchase Companions above tier 6 for the Duration of the Mission"
+      },
+      {
+        "value": "May choose an Earth from any science fiction based Universe to Start on. This world will be located in the Outer Regions."
+      }
+    ],
+    "budget": 0,
+    "desc": "The Republic is a corrupt mess and the Confederacy is hardly better. Forge your own Faction and conquer the galaxy yourself!\n\n(Ratcatcher has a similar mission, but I like mine better, no offense intended. I originally created this mission for my own use but I figured there's no real reason not to post it publicly.)",
+    "uid": "JcIla"
+  },
+  {
+    "reward": "Template Stacking 1 & 2 Viltrumite + 100 Credits",
+    "image": "https://www.superherohype.com/wp-content/uploads/sites/4/2021/03/invincible1.jpg",
+    "author": "the 44'th ChoirBoy",
+    "rewardType": "Other",
+    "source": "https://www.superherohype.com/wp-content/uploads/sites/4/2021/03/invincible1.jpg",
+    "title": "Prove the name right",
+    "loca": "Invincible",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "Template Stacking 1 & 2 of the Curse of Achillies(Riordanverse)",
+        "type": "Perks",
+        "value": "Do not allow Mark to ever leave a fight with more than basic scuffs and scratches."
+      },
+      {
+        "reward": "100 Credits and the Covert Talent(If have already 10 credits)",
+        "type": "Perks",
+        "value": "Never outright participate in any of Mark's fights. Couching, giving advice, causing minor distractions, sabotaging the other side beforehand are all within the book however."
+      },
+      {
+        "reward": "50",
+        "type": "Credits",
+        "value": "Make it possible that somehow Mark is able to keep up a social life without having to choose between it and duty"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "The fights have to at least seem by the vast majority, to be solely due to Mark's own abilities and skill. You and others are allowed to assist in his fights, but never to a degree it seems he is not the main player."
+      },
+      {
+        "value": "Related to above: If someone were to come an distrupt the fight that you and your retinue have no connection, plans around, or expected to be there, then and only then are they allowed to outshine Mark"
+      },
+      {
+        "value": "This Mission will last up and until Mark defeat a full grown Viltrumite warrior 'on his own' without too much hassle or struggle."
+      }
+    ],
+    "budget": 200,
+    "desc": "Mark Grayson... ah poor Mark. The Kid certainly had balls taking a name like \"Invincible\". Certainly doesn't help every fight he gets in he earns at least a scuff or two, not going in when he gets beaten into unconsciousness, maimed and nearly killed. While it is quite funny seeing the boy get humbled, after so many times it's like kicking a puppy. A stupid, stubborn, likely brain damaged one, but a puppy nonetheless.\nHow about this time around, he make sure he keeps that title clean.\nBasic setup, make sure Mark Grayson, aka the hero Invincible, never suffers a loss during a fight. Every fight he steps out of he has to be the agreed upon physical winner. If the bad guy was simply delaying him, the whole fight was a mistake, or whatever, that is not your job to deal with, simply make sure that the other guy is on the ground and Mark isn't. After all, he's a superhero, they all need a little tragedy in their lives, keeps things fresh and their minds stretchy. ",
+    "uid": "uefbk"
+  },
+  {
+    "reward": 1,
+    "image": "https://i.redd.it/y4zrd4jq4pja1.jpg",
+    "author": "Alcaeus",
+    "rewardType": "IMG Tickets",
+    "source": "",
+    "title": "The Chess Peerage",
+    "loca": "High School DxD",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": 10,
+        "type": "Credits",
+        "value": "Capture a Pawn"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Capture a Rook"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Capture a Bishop"
+      },
+      {
+        "reward": "75",
+        "type": "Credits",
+        "value": "Capture a Knight"
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Capture a Queen"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Universal Calibration must be part of your Build"
+      },
+      {
+        "value": "Extra (10) as a Pureblood Devil (Need not be one of the 72 Pillars)"
+      },
+      {
+        "value": "Must not be an Heir of the House"
+      }
+    ],
+    "budget": 300,
+    "desc": "Everyone knows about Diodora and his Nun Fetish. Everyone knows about Riser and his Harem of Types (though it is clear he didn't touch his sister). Now one of our people has proposed a Challenge.\n\nCreate a Peerage exclusively of waifus or husbandos that fit their role. \n\nQueen = Queen/Ruler\nKnights = Knights/Knightly\nBishops = Bishops/Clergy\nRooks = Riders/Nobles\nPawns = Laborers/Servants\n\nTo help you, many other Lands will be added as Realms as if they had always been connected to DxD, so expect overlap. There is some leeway for Rooks and Pawns as they do not translate perfectly to real people.",
+    "uid": "mPdHX"
+  },
+  {
+    "reward": "You automatically get the Dragon Heritage with Dragon Blood and Dragon Scale for free.",
+    "image": "",
+    "author": "Lord_Indoril_Nerevar",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Dragon Slayer",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [],
+    "conditions": [
+      {
+        "value": "You have to deliver the deathblow yourself, waifus and other allies can help but it is you who must kill the Dragon."
+      },
+      {
+        "value": "After Killing the Dragon you must bathe in its blood and eat its heart whole, pussyfooting or throwing up are not allowed."
+      }
+    ],
+    "budget": 0,
+    "desc": "Kill a Dragon with your own two hands, any dragon from any setting will do: Ancologia from Fairy Tail, Smaug from Middle-Earth, Alduin from Elder Scrolls, Deadwing from Warcraft, Ladon from Percy Jackson; as long as the creature or individual you kill has a draconic trait it will be eligible for completing the mission",
+    "uid": "rCUSa"
+  },
+  {
+    "reward": 50,
+    "image": "",
+    "author": "Akai Lukman",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Save the Spirit Hall",
+    "loca": "Douluo Dalu",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Cleanse or replace the Spirit Hall from any corrupt bishop, priest, or any member who have authority over a town, city, region, or a Kingdom"
+      },
+      {
+        "reward": 200,
+        "type": "Credits",
+        "value": "Convice the world protagonist, Tang San, to join Spirit Hall"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Prevent Bibi Dong from becoming Spirit Hall Pope"
+      },
+      {
+        "value": "You must save the Spirit Hall alone, no Companion can accompany you when you do thi smission"
+      }
+    ],
+    "budget": 240,
+    "desc": "The Spirit Hall have many downside, but their sins are blinded with the hope and bright future that they can bring to the weak and innocent people, the only reason why they become the villain of the story is due to their leader who deliberately and actively destroying and corrupting the Spirit Hall from the inside.\n\nYour mission is simple, save the Spirit Hall, stop Bibi Dong from destroying the Spirit Hall from the inside.",
+    "uid": "Cyays"
+  },
+  {
+    "reward": "Template Stacking 1 & 2 Viltrumite + 100 Credits",
+    "image": "https://www.superherohype.com/wp-content/uploads/sites/4/2021/03/invincible1.jpg",
+    "author": "the 44'th ChoirBoy",
+    "rewardType": "Other",
+    "source": "https://www.superherohype.com/wp-content/uploads/sites/4/2021/03/invincible1.jpg",
+    "title": "Prove the name right",
+    "loca": "Invincible",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "Template Stacking 1 & 2 of the Curse of Achillies(Riordanverse)",
+        "type": "Perks",
+        "value": "Do not allow Mark to ever leave a fight with more than basic scuffs and scratches."
+      },
+      {
+        "reward": "100 Credits and the Covert Talent(If have already 10 credits)",
+        "type": "Perks",
+        "value": "Never outright participate in any of Mark's fights. Couching, giving advice, causing minor distractions, sabotaging the other side beforehand are all within the book however."
+      },
+      {
+        "reward": "50",
+        "type": "Credits",
+        "value": "Make it possible that somehow Mark is able to keep up a social life without having to choose between it and duty"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "The fights have to at least seem by the vast majority, to be solely due to Mark's own abilities and skill. You and others are allowed to assist in his fights, but never to a degree it seems he is not the main player."
+      },
+      {
+        "value": "Related to above: If someone were to come an distrupt the fight that you and your retinue have no connection, plans around, or expected to be there, then and only then are they allowed to outshine Mark"
+      },
+      {
+        "value": "This Mission will last up and until Mark defeat a full grown Viltrumite warrior 'on his own' without too much hassle or struggle."
+      }
+    ],
+    "budget": 200,
+    "desc": "Mark Grayson... ah poor Mark. The Kid certainly had balls taking a name like \"Invincible\". Certainly doesn't help every fight he gets in he earns at least a scuff or two, not going in when he gets beaten into unconsciousness, maimed and nearly killed. While it is quite funny seeing the boy get humbled, after so many times it's like kicking a puppy. A stupid, stubborn, likely brain damaged one, but a puppy nonetheless.\nHow about this time around, he make sure he keeps that title clean.\nBasic setup, make sure Mark Grayson, aka the hero Invincible, never suffers a loss during a fight. Every fight he steps out of he has to be the agreed upon physical winner. If the bad guy was simply delaying him, the whole fight was a mistake, or whatever, that is not your job to deal with, simply make sure that the other guy is on the ground and Mark isn't. After all, he's a superhero, they all need a little tragedy in their lives, keeps things fresh and their minds stretchy. ",
+    "uid": "FCOLH"
+  },
+  {
+    "reward": "You automatically get the Dragon Heritage with Dragon Heart and Dragon Scale for free.",
+    "image": "",
+    "author": "Lord_Indoril_Nerevar",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Dragon Slayer",
+    "uid": "DvYsc",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [],
+    "conditions": [
+      {
+        "value": "You have to deliver the deathblow yourself, waifus and other allies can help but it is you who must kill the Dragon."
+      },
+      {
+        "value": "After Killing the Dragon you must bathe in its blood and eat its heart whole, pussyfooting or throwing up are not allowed."
+      }
+    ],
+    "budget": 0,
+    "desc": "Kill a Dragon with your own two hands, any dragon from any setting will do: Ancologia from Fairy Tail, Smaug from Middle-Earth, Alduin from Elder Scrolls, Deadwing from Warcraft, Ladon from Percy Jackson; as long as the creature or individual you kill has a draconic trait it will be eligible for completing the mission"
+  },
+  {
+    "reward": 50,
+    "image": "",
+    "author": "Akai Lukman",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Save the Spirit Hall",
+    "uid": "gHCvG",
+    "loca": "Douluo Dalu",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Cleanse or replace the Spirit Hall from any corrupt bishop, priest, or any member who have authority over a town, city, region, or a Kingdom"
+      },
+      {
+        "reward": 200,
+        "type": "Credits",
+        "value": "Convice the world protagonist, Tang San, to join Spirit Hall"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Prevent Bibi Dong from becoming Spirit Hall Pope"
+      },
+      {
+        "value": "You must save the Spirit Hall alone, no Companion can accompany you when you do this mission"
+      }
+    ],
+    "budget": 240,
+    "desc": "The Spirit Hall have many downside, but their sins are blinded with the hope and bright future that they can bring to the weak and innocent people, the only reason why they become the villain of the story is due to their leader who is deliberately and actively destroying and corrupting the Spirit Hall from the inside.\n\nYour mission is simple, save the Spirit Hall, stop Bibi Dong from destroying the Spirit Hall from the inside."
+  },
   {
     "reward": 1,
     "image": "",
@@ -6,6 +659,7 @@
     "rewardType": "IMG Tickets",
     "source": "",
     "title": "Right Side of Heaven or Right Side of Hell",
+    "uid": "JvBxI",
     "loca": "Generic",
     "lewd": false,
     "scope": "Grand",
@@ -46,8 +700,7 @@
       }
     ],
     "budget": 0,
-    "desc": "For Us the company the lose of contractors in a daily occurrence.  The real problem is the lost of clients, and were in a hell of a situation. Two groups of clients decided to wage an extinction war against the other side, but since their powers could destroy multiple setting as consequences a third neutral party reached to an agreement between the two Groups.\nOne Side will command the Heavenly Forces and the other the Hellish forces plus their respective contractors, in an abandoned world. \n",
-    "uid": "JvBxI"
+    "desc": "For Us, the company the loss of contractors is a daily occurrence.  The real problem is the loss of clients, and we're in a hell of a situation. Two groups of clients decided to wage an extinction war against the other side, but since their powers could destroy multiple settings as a consequence a third neutral party reached to an agreement between the two Groups.\nOne Side will command the Heavenly Forces and the other the Hellish forces plus their respective contractors, in an abandoned world. \n"
   },
   {
     "reward": 200,
@@ -56,6 +709,7 @@
     "rewardType": "Credits",
     "source": "",
     "title": "Doing Whats Necessary.",
+    "uid": "WbWAg",
     "loca": "Generic",
     "lewd": false,
     "scope": "Grand",
@@ -83,8 +737,7 @@
       }
     ],
     "budget": 0,
-    "desc": "Just like weeds need to be removed from a garden, sometimes and world must be removed to guarantee the well-being of others' worlds. One or more planets from a different setting are “invading” another dimension and it can cause infinite problems for the Company and the contractors. We need someone to go there and purge the anomalies.",
-    "uid": "WbWAg"
+    "desc": "Just like weeds need to be removed from a garden, sometimes a world must be removed to guarantee the well-being of others' worlds. One or more planets from a different setting are “invading” another dimension and it can cause infinite problems for the Company and the contractors. We need someone to go there and purge the anomalies."
   },
   {
     "reward": 100,
@@ -1189,26 +1842,6 @@
     "uid": "jvSJU"
   },
   {
-    "reward": 2,
-    "image": "",
-    "author": "Xavier843766",
-    "rewardType": "IMG Tickets",
-    "source": "",
-    "title": "The One True God",
-    "loca": "No Game No Life",
-    "lewd": false,
-    "scope": "Grand",
-    "objectives": [],
-    "conditions": [
-      {
-        "value": "Imanity must survive"
-      }
-    ],
-    "budget": 0,
-    "desc": " [Pre-Pledge Era: Rating 9]\n\n The Old Deus all fight and wage war to be proclaimed the One True God, having already nearly destroyed the world in the process. Imanity, the world's version of Humanity, only survived by Riku's and Schwi's determination and ingeniuty, with both eventually giving their lives to stop the war, ending the whole thing in a draw as Riku's last dying moments gave birth to Tet, the God of Play, to take the Suniastar.\n\n Contractor, take up the mantle of Schwi and Riku, and show these pathetic insects that call themselves Gods how it's done!\n\n Take the Suniaster and become the One True God!",
-    "uid": "JKNoQ"
-  },
-  {
     "reward": "300 Credits, gain the hamlet or the estate as an optional pocket space and one Shambler pet.",
     "image": "https://i.redd.it/yfjp9x38j1161.png",
     "author": "Arkham",
@@ -1586,6 +2219,7 @@
     "rewardType": "Other",
     "source": "",
     "title": "For Want of a Straw Hat...",
+    "uid": "EZgMF",
     "loca": "One Piece",
     "lewd": false,
     "scope": "Grand",
@@ -1616,9 +2250,6 @@
         "value": "You will enter 'One Piece'[DR5] and will take Monkey D, Luffy's place, all logical/continuation issues would be adjusted."
       },
       {
-        "value": "You must purchase [Added Potential](5C) for this World."
-      },
-      {
         "value": "All Fillers/Movies/OVA will be present."
       },
       {
@@ -1638,8 +2269,7 @@
       }
     ],
     "budget": 5,
-    "desc": "Any Story deserves someone who leads it, any journey deserves someone to walk down its path, any World deserves someone who will turn the page of an Era... But this World no longer has someone like that, so the Company desiced that it can be you, O' Contractor.",
-    "uid": "EZgMF"
+    "desc": "Any Story deserves someone who leads it, any journey deserves someone to walk down its path, any World deserves someone who will turn the page of an Era... But this World no longer has someone like that, so the Company desiced that it can be you, O' Contractor."
   },
   {
     "reward": 50,
@@ -2738,9 +3368,6 @@
         "value": "You will enter 'Bioshock'[DR5] and will take Protagonist's place, all logical/continuation issues would be adjusted."
       },
       {
-        "value": "You must purchase [Added Potential](5C) for this World."
-      },
-      {
         "value": "You will arrive into 'Bioshock Infinite' at the start of the Game."
       },
       {
@@ -2961,9 +3588,6 @@
         "value": "You will enter 'The Elder Skrolls'[DR8] and will take Dragonborn's place, all logical/continuation issues would be adjusted."
       },
       {
-        "value": "You must purchase [Added Potential](5C) for this World."
-      },
-      {
         "value": "You will arrive into 'The Elder Scrolls V: Skyrim' at the start of the Game."
       },
       {
@@ -3039,9 +3663,6 @@
     "conditions": [
       {
         "value": "You will enter 'Demon's Souls'[DR9] and will take Protagonist's place, all logical/continuation issues would be adjusted."
-      },
-      {
-        "value": "You must purchase [Added Potential](5C) for each New World, 'Demons's Souls', 'Dark Souls', 'Bloodbourne', 'Sekiro: Shadows Die Twice' and 'Elden Ring'."
       },
       {
         "value": "You will arrive into 'Demon's Souls' at the start of the Game."
@@ -4057,6 +4678,7 @@
     "rewardType": "Other",
     "source": "",
     "title": "Run From Time, Escape Destiny, Each and Ever Grain...",
+    "uid": "zUssb",
     "loca": "Prince of Persia",
     "lewd": false,
     "scope": "Grand",
@@ -4087,9 +4709,6 @@
         "value": "You will enter 'Prince of Persia'[DR7] and will take Prince's place, all logical/continuation issues would be adjusted."
       },
       {
-        "value": "You must purchase [Added Potential](5C) for this World."
-      },
-      {
         "value": "You will arrive into 'Prince of Persia: The Sands of Time' at the start of the Game."
       },
       {
@@ -4112,8 +4731,7 @@
       }
     ],
     "budget": 5,
-    "desc": "Time marches on, it's merciless and inevitable no matter how much many would desire for it not to be so. But some refused to accept such a fact, they refused to accept the mediocre role they were Destined to play as one who is carried down on the current of the flow of Time. Prince was one of them, one of the few who desired to change the things that his wrote into the Grand Tapestry of History and move against the flow of Time itself to do it! Do you have the same ambition, O' Contractor? Your Mission here is to walk down the path of Prince, the footsteps that you would need to trace were carved into History but worry not, the Company would put you on the right path.",
-    "uid": "zUssb"
+    "desc": "Time marches on, it's merciless and inevitable no matter how much many would desire for it not to be so. But some refused to accept such a fact, they refused to accept the mediocre role they were Destined to play as one who is carried down on the current of the flow of Time. Prince was one of them, one of the few who desired to change the things that his wrote into the Grand Tapestry of History and move against the flow of Time itself to do it! Do you have the same ambition, O' Contractor? Your Mission here is to walk down the path of Prince, the footsteps that you would need to trace were carved into History but worry not, the Company would put you on the right path."
   },
   {
     "reward": 50,
@@ -6901,11 +7519,78 @@
     "budget": 0
   },
   {
-    "source": "",
-    "uid": "lOgrr",
-    "lewd": false,
-    "author": "Zaralann",
+    "reward": 3500,
     "image": "https://i0.wp.com/anitrendz.net/news/wp-content/uploads/2022/02/shield-hero-season-2-new-visual-scaled-e1644450107151.jpg",
+    "author": "Zaralann",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Heroes? There is no such thing...",
+    "uid": "lOgrr",
+    "loca": "Rising of the Shield Hero",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Capture Raphtalia."
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Capture Filo"
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Sell Malty S Melromarc."
+      },
+      {
+        "reward": 150,
+        "type": "Credits",
+        "value": "Sell Lüge Lansarz Faubrey."
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Capture Rishia Ivyred."
+      },
+      {
+        "reward": 150,
+        "type": "Credits",
+        "value": "Capture Eclair Seaetto."
+      },
+      {
+        "reward": 500,
+        "type": "Credits",
+        "value": "Capture Rifana."
+      },
+      {
+        "reward": 200,
+        "type": "Credits",
+        "value": "Capture Fitoria."
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Sell Idol Rabier."
+      },
+      {
+        "reward": 200,
+        "type": "Credits",
+        "value": "Sell Biscas T. Balmus."
+      },
+      {
+        "reward": 2500,
+        "type": "Credits",
+        "value": "Capture Medea Pideth Machina."
+      },
+      {
+        "reward": 500,
+        "type": "Credits",
+        "value": "Impregnate Raphtalia, Rifana and Rishia with minimum of five children each."
+      }
+    ],
     "conditions": [
       {
         "value": "You or your Waifu cannot leave the World for the duration of the Mission."
@@ -6917,9 +7602,6 @@
         "value": "You cannot purchase [Template Stacking I/II] to acquire a Legendary Weapon or Vassal Weapon."
       },
       {
-        "value": "You must purchase [Added Potential] for this World for yourself and all your Waifu."
-      },
-      {
         "value": "You're obligated to save Raphtalia's World, any other World being destroyed would not affect the Mission."
       },
       {
@@ -6927,74 +7609,7 @@
       }
     ],
     "budget": 5,
-    "rewardType": "Credits",
-    "scope": "Grand",
-    "title": "Heroes? There is no such thing...",
-    "desc": "Heroes? Why would anyone need them? The actual purpose of them was already lost, everything went wrong and now you're contracted to salvage the incredible mess that was left behind. You will enter 'The Rising of the Shield Hero'[DR8] exactly twelve hours before the there will be an attempt to call upon the Four Cardinal Heroes. The attempt will fail, nobody would be summoned and no Legendary Weapons would be brought to bear to save the World. But you would be present, you would be the one to actually do the deed and save this World, any means necessary...",
-    "objectives": [
-      {
-        "reward": 50,
-        "value": "Capture Raphtalia.",
-        "type": "Credits"
-      },
-      {
-        "value": "Capture Filo",
-        "type": "Credits",
-        "reward": 50
-      },
-      {
-        "reward": 100,
-        "type": "Credits",
-        "value": "Sell Malty S Melromarc."
-      },
-      {
-        "type": "Credits",
-        "reward": 150,
-        "value": "Sell Lüge Lansarz Faubrey."
-      },
-      {
-        "type": "Credits",
-        "value": "Capture Rishia Ivyred.",
-        "reward": 100
-      },
-      {
-        "type": "Credits",
-        "value": "Capture Eclair Seaetto.",
-        "reward": 150
-      },
-      {
-        "reward": 500,
-        "type": "Credits",
-        "value": "Capture Rifana."
-      },
-      {
-        "value": "Capture Fitoria.",
-        "reward": 200,
-        "type": "Credits"
-      },
-      {
-        "type": "Credits",
-        "reward": 50,
-        "value": "Sell Idol Rabier."
-      },
-      {
-        "value": "Sell Biscas T. Balmus.",
-        "reward": 200,
-        "type": "Credits"
-      },
-      {
-        "value": "Capture Medea Pideth Machina.",
-        "type": "Credits",
-        "reward": 2500
-      },
-      {
-        "value": "Impregnate Raphtalia, Rifana and Rishia with minimum of five children each.",
-        "reward": 500,
-        "type": "Credits"
-      }
-    ],
-    "reward": 3500,
-    "loca": "Rising of the Shield Hero"
+    "desc": "Heroes? Why would anyone need them? The actual purpose of them was already lost, everything went wrong and now you're contracted to salvage the incredible mess that was left behind. You will enter 'The Rising of the Shield Hero'[DR8] exactly twelve hours before the there will be an attempt to call upon the Four Cardinal Heroes. The attempt will fail, nobody would be summoned and no Legendary Weapons would be brought to bear to save the World. But you would be present, you would be the one to actually do the deed and save this World, any means necessary..."
   },
   {
     "image": "https://i.imgur.com/XP6zPNg.jpg",
@@ -11107,16 +11722,38 @@
     "uid": "bYlik"
   },
   {
-    "scope": "Grand",
-    "loca": "Elden Ring",
-    "uid": "Xqoeh",
-    "source": "",
     "reward": "All Home perks up to Life's a beach, with a template of Leyndell, plus Demiplane perk",
-    "budget": 1000,
-    "desc": "The Lands Between, once a beautiful and prosperous place, has been royally screwed over by the Greater Will and all his fellow Outer Gods. This has resulted in the absence of death, and more than half the races in this world being considered \"cursed\". Some Higher-ups in the Entertainment department want to see you fix this mess. You must complete the Elden Ring by returning the Rune of Death (not that cheap cursemark copy) and find a way to kick all the various Outer Gods off the planet. The Tarnished is supposed to save the world, after all.\n\nObjective: Find Malekith and obtain the Rune of Death and integrate it into the Elden Ring",
-    "rewardType": "Perks",
     "image": "https://i.imgur.com/JJSAKUm.jpg",
+    "author": "Lord Aether",
+    "rewardType": "Perks",
+    "source": "",
+    "title": "Unfuck the World",
+    "uid": "Xqoeh",
+    "loca": "Elden Ring",
     "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "500 credits",
+        "type": "Credits",
+        "value": "Restore Miquella to the Haligtree."
+      },
+      {
+        "reward": "150 credits per rune",
+        "type": "Credits",
+        "value": "Gather all Mending Runes"
+      },
+      {
+        "reward": "250 credits per rune",
+        "type": "Credits",
+        "value": "Gather and activate all Great Runes"
+      },
+      {
+        "reward": "2 IMG tickets",
+        "type": "IMG Tickets",
+        "value": "Upgrade Miquellal's Needle to full power and integrate it into the Elden Ring, thus warding the Lands Between against Outer God influences."
+      }
+    ],
     "conditions": [
       {
         "value": "Chargen only"
@@ -11134,30 +11771,8 @@
         "value": "Home perks are disabled for the duration of this mission."
       }
     ],
-    "objectives": [
-      {
-        "type": "Credits",
-        "value": "Restore Miqaella to the Haligtree.",
-        "reward": "500 credits"
-      },
-      {
-        "type": "Credits",
-        "reward": "150 credits per rune",
-        "value": "Gather all Mending Runes"
-      },
-      {
-        "value": "Gather and activate all Great Runes",
-        "type": "Credits",
-        "reward": "250 credits per rune"
-      },
-      {
-        "type": "IMG Tickets",
-        "reward": "2 IMG tickets",
-        "value": "Upgrade Miqaellal's Needle to full power and integrate it into the Elden Ring"
-      }
-    ],
-    "author": "Lord Aether",
-    "title": "Unfuck the World"
+    "budget": 1000,
+    "desc": "The Lands Between, once a beautiful and prosperous place, has been royally screwed over by the Greater Will and all his fellow Outer Gods. This has resulted in the absence of death, and more than half the races in this world being considered \"cursed\". Some Higher-ups in the Entertainment department want to see you fix this mess. You must complete the Elden Ring by returning the Rune of Death (not that cheap cursemark copy) and find a way to kick all the various Outer Gods off the planet. The Tarnished is supposed to save the world, after all.\n\nObjective: Find Malekith and obtain the Rune of Death and integrate it into the Elden Ring"
   },
   {
     "objectives": [

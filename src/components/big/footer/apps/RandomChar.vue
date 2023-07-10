@@ -1,10 +1,11 @@
 <template>
   <div class="p-2 flex flex-col items-center h-full">
     <CompanionCard v-if="char.n" :char="char" :lazy="false" class="flex-grow max-w-[400px]" />
-    <div class="flex gap-2 self-center">
-      <Button label="Random character" size="Small" bg-color="bg-orange-400" @click="getRandomChar" />
-      <Checkbox v-model="withImg" label="Only with img" />
-      <NumberInput v-model="tier" :min="0" :max="11" />
+    <div class="flex gap-2 self-center mt-2">
+      <Button label="Roll" size="Small" bg-color="bg-orange-500" class="px-2" @click="getRandomChar" />
+      <Checkbox v-model="onlyFemale" label="Only female" />
+      <NumberInput v-model="minTier" label="From" :min="0" :max="13" />
+      <NumberInput v-model="maxTier" label="to" :min="0" :max="13" />
     </div>
   </div>
 </template>
@@ -12,15 +13,17 @@
 <script lang="ts" setup>
 import { randomChar } from '~/logic'
 import NumberInput from '~/components/basic/NumberInput.vue'
-import { CHAR_COSTS } from '~/data/constants'
+import { CHAR_COSTS_FULL } from '~/data/constants'
 
 const char = ref<any>({})
-const tier = ref(0)
-const withImg = ref(true)
+const minTier = ref(0)
+const maxTier = ref(13)
+const onlyFemale = ref(true)
 
 function getRandomChar() {
-  const val = CHAR_COSTS[tier.value] || 0
-  randomChar(withImg.value, val, val).then(x => char.value = x)
+  const minCost = CHAR_COSTS_FULL[minTier.value] || 0
+  const maxCost = CHAR_COSTS_FULL[maxTier.value] || 10000
+  randomChar(maxCost, minCost, onlyFemale.value ? 'F' : null).then(x => char.value = x)
 }
 
 getRandomChar()

@@ -36,7 +36,8 @@
 
 <script lang="ts" setup>
 import { VERSION } from './data/constants'
-import { refreshTokens } from './logic/server'
+import { getUserFromServer } from './logic/server'
+import { useUser } from './store/user'
 import {
   showSaveLoad, showShare, showSideMenu, showAddPerk, toggleShowAddPerk,
   toggleShowSettings, showSettings,
@@ -54,7 +55,10 @@ const SaveLoad = computed(() => defineAsyncComponent(() => import('./components/
 const BuildImageSettings = computed(() => defineAsyncComponent(() => import('./components/modals/BuildImageSettings.vue')))
 const Share = computed(() => defineAsyncComponent(() => import('./components/modals/Share.vue')))
 
-refreshTokens()
+// refreshTokens()
+const { user } = useUser()
+if (user.value.id)
+  getUserFromServer(user.value.id)
 
 const intro = window.localStorage.getItem('intro')
 if (!intro) {

@@ -1,6 +1,8 @@
 import { _refreshTokens } from './authLogic'
 
+import { _getLikesByUid } from './charactersLogic'
 import { useUser } from '~/store/user'
+import { usePlayStore } from '~/store/play'
 
 const { user, tokens } = useUser()
 
@@ -27,6 +29,7 @@ export async function _updateUserLikes(SERVER_URL: string, API_VERSION: string, 
       const jsonPayload = JSON.parse(payload)
       if (jsonPayload.length)
         user.value.likedCharacters = jsonPayload
+
       return 'Successfully updated your likes.'
     }
   }
@@ -62,7 +65,7 @@ export async function _updateUserInfo(SERVER_URL: string, API_VERSION: string, t
   return 'Don\'t have access, you need to login.'
 }
 
-export async function _getUserFromServer(SERVER_URL: string, API_VERSION: string, id: string): Promise<void> {
+export async function _getUserFromServer(SERVER_URL: string, API_VERSION: string, id: string, tried = false): Promise<void> {
   try {
     const apiURL = new URL(`${SERVER_URL}/${API_VERSION}/users/${id}`)
     // apiURL.searchParams.set('userId', id)
@@ -73,10 +76,18 @@ export async function _getUserFromServer(SERVER_URL: string, API_VERSION: string
         'Authorization': `Bearer ${tokens.value.access.token}`,
       },
     })
-    const payload = await response.text()
-    const jsonPayload = JSON.parse(payload)
-    if (jsonPayload.id)
-      user.value = jsonPayload
+    if (!response.ok) {
+      const errorText = await response.text()
+      if (!tried)
+        _refreshTokens(SERVER_URL, API_VERSION).then(() => _getUserFromServer(SERVER_URL, API_VERSION, id, true))
+      return JSON.parse(errorText).message
+    }
+    else {
+      const payload = await response.text()
+      const jsonPayload = JSON.parse(payload)
+      if (jsonPayload.id)
+        user.value = jsonPayload
+    }
   }
   catch (error) {
     console.error(error)

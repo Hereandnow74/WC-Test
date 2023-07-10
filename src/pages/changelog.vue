@@ -6,12 +6,32 @@
       </h2>
       <div>
         <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          07 July 2023
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~85 new user submitted characters, new worlds, new missions</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          02 July 2023
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~60 new user submitted characters, new worlds, new missions</li>
+          <li>Changed the code for Loans to reflect the Cash Still Rules changes</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
           27 June 2023
         </h3>
         <ul class="list-decimal list-inside">
-          <li>~145 new user submitted characters, new worlds</li>
-          <li>Now you can select the same category difficulties without unselecting chosen one</li>
-          <li>Saving your favorites/likes on your account now should work correctly</li>
+          <li>~115 new user submitted characters, new worlds, new missions</li>
+          <li>Now you can select the same category difficulties without unselecting already chosen</li>
+          <li>Saving your favorites/likes on your account now should work correctly (probably)</li>
+          <li>Slightly improved Random Char/Random World app</li>
           <li>Bugfixes & small changes</li>
         </ul>
       </div>

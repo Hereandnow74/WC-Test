@@ -12,7 +12,7 @@
           :alt="charData.name"
         >
         <div v-else class="h-16"></div>
-        <div ref="likeHover" class="absolute top-7 right-0.5 cursor-pointer flex items-center gap-1 text-lg leading-none" @click="likeChar">
+        <div ref="likeHover" class="absolute top-7 right-0.5 cursor-pointer flex items-center gap-1 text-lg leading-none" @click="throttledLike">
           <span class="text-red-500 flex items-center gap-0.5 text-shadow-border">
             <span v-if="charLikes || charData.likes" class="font-semibold">{{ charLikes || charData.likes }}</span>
             <ci:heart-fill
@@ -220,11 +220,11 @@
 <script lang='ts' setup>
 import type { PropType } from '@vue/runtime-core'
 import { Character, DBCharacter } from 'global'
-import { random } from 'lodash-es'
+import { random, throttle } from 'lodash-es'
 import { CHAR_COSTS, defTags, PLACEHOLDER_NO_IMAGE, useAllChars, waifusThatHasPerk, waifuTags, nicknames, CHAR_COSTS_TICKET } from '~/data/constants'
 import { lazyLoadSingleImg, tagToggles, showDefenseTags, imageLink } from '~/logic'
 import { confirmDialog } from '~/logic/dialog'
-import { updateUserLikes } from '~/logic/server/'
+import { getLikesByUid, updateUserLikes } from '~/logic/server/'
 import { captureCopyCompanion, captureCompanion, yoinkCompanion, slightlyCompanion, deleteLocalCharacter, buyAnyCompanion, undoBuying, isAlreadyBought } from '~/logic/waifuLogic'
 import { usePlayStore } from '~/store/play'
 import { useGlobalSettings } from '~/store/settings'
@@ -363,11 +363,12 @@ watch(image, () => companionEl.value ? companionEl.value.src = image.value : nul
 
 function likeChar() {
   if (favoritesObject.value[charData.value.uid] !== undefined) {
-    if (likes.value[charData.value.uid] && user.value.id) {
-      likes.value[charData.value.uid] -= 1
-      updateUserLikes(false, { characterUid: charData.value.uid, liked: false })
+    if (user.value.id) {
+      // likes.value[charData.value.uid] -= 1
+      updateUserLikes(false, { characterUid: charData.value.uid, liked: false }).then(() => getLikesByUid([charData.value.uid]).then(result => likes.value[charData.value.uid] = result[charData.value.uid]))
     }
     else {
+      // likes.value[charData.value.uid] -= 1
       favorites.value.splice(favorites.value.indexOf(charData.value.uid), 1)
     }
   }
@@ -376,18 +377,24 @@ function likeChar() {
       if (user.value.role === 'guest' && likesMessageSeen.value === false) {
         confirmDialog('You need to confirm your email to make your likes count, otherwise they will behave just like your favorite list.', 'info')
         likesMessageSeen.value = true
+        if (favoritesObject.value[charData.value.uid] !== undefined)
+          favorites.value.splice(favorites.value.indexOf(charData.value.uid), 1)
+        else
+          favorites.value.push(charData.value.uid)
         return
       }
-      if (likes.value[charData.value.uid] !== undefined)
-        likes.value[charData.value.uid] += 1
-      else
-        likes.value[charData.value.uid] = 1
+      // if (likes.value[charData.value.uid] !== undefined)
+      //   likes.value[charData.value.uid] += 1
+      // else
+      //   likes.value[charData.value.uid] = 1
 
-      updateUserLikes(false, { characterUid: charData.value.uid, liked: true })
+      updateUserLikes(false, { characterUid: charData.value.uid, liked: true }).then(() => getLikesByUid([charData.value.uid]).then(result => likes.value[charData.value.uid] = result[charData.value.uid]))
     }
     else {
       favorites.value.push(charData.value.uid)
     }
   }
 }
+
+const throttledLike = throttle(likeChar, 1000)
 </script>

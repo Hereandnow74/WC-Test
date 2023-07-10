@@ -23,7 +23,7 @@
         <Button label="Return all" bg-color="bg-amber-500" size="Small" @click="payAll" />
       </div>
       <div class="flex gap-1">
-        <div>Will pay after 30 day time <span class="text-blue-400">{{ Math.ceil(loan.owed * 0.14) }}</span>(14%)</div>
+        <div>Will pay after 30 days <span class="text-blue-400">{{ Math.ceil(loan.owed * loanPercentage) }}c </span>({{ loanPercentage * 100 }}%)</div>
         <Button label="Pay for 30 days" size="Small" bg-color="bg-red-500" @click="payMonthDue" />
       </div>
       <div v-if="trHistory.length">
@@ -51,7 +51,7 @@ import { usePlayStore } from '~/store/play'
 import { useStore } from '~/store/store'
 
 const { trHistory, loan } = usePlayStore()
-const { flags, fee, csr, creditLimit, underLoan, budget } = useStore()
+const { flags, fee, csr, creditLimit, underLoan, budget, legacyMode } = useStore()
 
 const loanAmount = ref(5)
 const payAmount = ref(0)
@@ -83,8 +83,10 @@ function payAll() {
   payLoan()
 }
 
+const loanPercentage = computed(() => csr.value && !legacyMode.value ? 0.2 : 0.14)
+
 function payMonthDue() {
-  const due = Math.ceil(loan.value.owed * 0.14)
+  const due = Math.ceil(loan.value.owed * loanPercentage.value)
   if (due > budget.value) {
     const tookLoan = Math.min(creditLimit.value - loan.value.owed, due - budget.value)
     loan.value.owed += tookLoan

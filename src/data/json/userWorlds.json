@@ -531,12 +531,6 @@
     "uid": "wDfuKv"
   },
   {
-    "worldName": "Mushroom Kingdom",
-    "rating": 3,
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/993183664248717363/fxa93I.jpg",
-    "uid": "qHyXGe"
-  },
-  {
     "worldName": "SCP",
     "rating": 10,
     "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/d12385e2-2c8e-4883-92a2-7e3296893926/dccoiz2-fe537136-ccfd-4fe6-bd34-6894bde8de89.jpg/v1/fill/w_1192,h_670,q_70,strp/secure__contain__protect___gif__by_mrbeastie87_dccoiz2-pre.jpg",
@@ -5009,7 +5003,7 @@
   {
     "worldName": "Pirates of the Caribbean",
     "rating": 3,
-    "image": "https://www.teahub.io/photos/full/51-515117_pirates-of-the-caribbean-background.jpg",
+    "image": "https://i.imgur.com/0X2VHLEl.jpg",
     "condition": [
       {
         "rating": 3,
@@ -6475,5 +6469,8 @@
   {"uid":"HmlaJu","worldName":"Futurama","rating":5,"image":"https://theinfosphere.org/images/9/92/Promo_2ACV16_%282%29.png"},
   {"uid":"MedXrw","worldName":"07th Expansion","rating":4,"image":"https://cdn.donmai.us/original/b1/d9/__furude_rika_ryuuguu_rena_beatrice_houjou_satoko_ushiromiya_battler_and_9_more_higurashi_no_naku_koro_ni_and_1_more_drawn_by_kl__b1d94512156fa6add2725f8f34b5d5f7.jpg","condition":[{"name":"Higurashi When They Cry","rating":4},{"name":"Umineko no Naku Koro Ni","rating":10}]},
   {"uid":"Dkenxc","worldName":"Ayashimon","rating":3,"image":"https://i.imgur.com/ikZLC6M.png"},
-  {"uid":"aETSuA","worldName":"Lupin III","rating":2,"image":"https://cloudfront.first4figures.com/media/resized/l-890-369/blog/1/175_Lupin_III_TT_Cover.png"}
+  {"uid":"aETSuA","worldName":"Lupin III","rating":2,"image":"https://cloudfront.first4figures.com/media/resized/l-890-369/blog/1/175_Lupin_III_TT_Cover.png"},
+  {"uid":"RICGdH","worldName":"Hitchhiker's Guide to the Galaxy","rating":5,"image":"https://www.tvguide.com/a/img/hub/2019/07/24/47fed30d-57ca-4b70-827a-a25b091a7552/190724-hitchhikers-guide-to-the-galaxy-news.jpg"},
+  {"uid":"dfYVhB","worldName":"Instant Death","rating":8,"image":"https://i.imgur.com/h4unmFJ.jpg"},
+  {"uid":"RYkaWQ","worldName":"Fortnite","rating":10,"image":"https://i.imgur.com/VQiIoVj.jpg"}
 ]

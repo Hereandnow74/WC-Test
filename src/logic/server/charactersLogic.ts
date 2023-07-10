@@ -51,7 +51,7 @@ export async function _recalculateLikesOnServer(SERVER_URL: string, API_VERSION:
   return 'No Token'
 }
 
-export async function _getLikesByUid(SERVER_URL: string, API_VERSION: string, uidArr: number[]): Promise<{}> {
+export async function _getLikesByUid(SERVER_URL: string, API_VERSION: string, uidArr: number[]): Promise<Record<number, number>> {
   const uniqUids = Array.from(new Set(uidArr))
   const apiUrl = `${SERVER_URL}/${API_VERSION}/characters/likes`
   const response = await fetch(apiUrl, {
