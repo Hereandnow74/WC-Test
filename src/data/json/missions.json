@@ -1,5 +1,643 @@
 [
-  
+  {
+    "reward": "2",
+    "image": "https://e0.pxfuel.com/wallpapers/133/866/desktop-wallpaper-arthur-pendragon.jpg",
+    "author": "KKhaios342",
+    "rewardType": "IMG Tickets",
+    "source": "",
+    "title": "Be the hero that the world needs",
+    "loca": "Reincarnated as a Slime",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": 300,
+        "type": "Credits",
+        "value": "Become the First Hero to ever exist"
+      },
+      {
+        "reward": "T8 ruler companion ticket or 150 credits",
+        "type": "Other",
+        "value": "Found your own Nation"
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Become the first human to evolve into a Saint"
+      },
+      {
+        "reward": 150,
+        "type": "Credits",
+        "value": "Evolve into a Demi-God"
+      },
+      {
+        "reward": 200,
+        "type": "Credits",
+        "value": "Save a nation from Guy's Attacks"
+      },
+      {
+        "reward": "Instant capture of Milim",
+        "type": "Other",
+        "value": "If you entered the world 2000 years ago, be the one to stop Milim's Rampage"
+      },
+      {
+        "reward": 1,
+        "type": "IMG Tickets",
+        "value": "Surpass Veldanava's powers by the end of the mission"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Stay as a human. (Elves, dragonoid, dwarves, half-falf)"
+      },
+      {
+        "value": "You will start as T7. If you're already beyond that then you will be reduced to T7 until you are recognized as hero"
+      },
+      {
+        "value": "Beat at least 1 Demon Lord/True Dragon from Canon"
+      },
+      {
+        "value": "You can only bring 2 companions that aren't native to this world"
+      },
+      {
+        "value": "Add potential to connect to the Voice of the World"
+      }
+    ],
+    "budget": 0,
+    "desc": "Heroes in this world are many but real heroes? Surprisingly few would go out of their way to save someone like a real hero should. Now, the company is not really for the heroic person. But one patron of ours has become bored of the villainous contractors or morally grey ones. So he has proposed a mission for the few who are willing to act as heroes,\n\nThis mission will be considered done if you become a hero for at least 500 Years.",
+    "uid": "slkQh"
+  },
+  {
+    "reward": 2000,
+    "image": "https://i.pinimg.com/564x/50/35/fb/5035fbe9790fe85db5c38cc62e058c9c.jpg",
+    "author": "Klaus20",
+    "rewardType": "Credits",
+    "source": "https://i.pinimg.com/564x/50/35/fb/5035fbe9790fe85db5c38cc62e058c9c.jpg",
+    "title": "The True Gremory!",
+    "loca": "High School DxD",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "Sticky Finger 1,2,3 or 30 Credits",
+        "type": "Other",
+        "value": "Seduce Sona Sitri via Love Confession!"
+      },
+      {
+        "reward": "Signed and Sealed Perk and double her Credit worth.",
+        "type": "Other",
+        "value": "Seduce Serafall Leviathan via Love Confession!"
+      },
+      {
+        "reward": "Instant Capture of Rias Gremory and double her Credit worth when captured",
+        "type": "Other",
+        "value": "Prevent Rias marriage to Raiser!"
+      },
+      {
+        "reward": "70 Credits per Gear",
+        "type": "Credits",
+        "value": "Acquire a Longinus Sacred Gear! Repeatable."
+      },
+      {
+        "reward": "Stress Defence x2",
+        "type": "Perks",
+        "value": "Defeat Kokabiel 1vs1!"
+      },
+      {
+        "reward": "Mind Defence x2",
+        "type": "Perks",
+        "value": "Defeat the Hero Faction"
+      },
+      {
+        "reward": "Corruption Defence x2",
+        "type": "Perks",
+        "value": "Defeat the Old Satan Faction once and for all."
+      },
+      {
+        "reward": "Stud Service and Zenryoku Zenkai Lures",
+        "type": "Other",
+        "value": "Become the strongest Devil Youth!"
+      },
+      {
+        "reward": "Addiction Defence x2 and 50 Credits",
+        "type": "Other",
+        "value": "Have a Harem of at least 10 Members."
+      },
+      {
+        "reward": "Trajectory.Agreement Perk and Soul Defence x2",
+        "type": "Other",
+        "value": "Defeat Rizevim Livan Lucifer."
+      },
+      {
+        "reward": "250 Credits or a Tier 8 Companion Ticket",
+        "type": "Other",
+        "value": "Defeat Sirzechs Lucifer."
+      },
+      {
+        "reward": "250 Credits and Corruption Defence x2",
+        "type": "Other",
+        "value": "Become a Satan!"
+      },
+      {
+        "reward": "1 IMG ticket and the ExE continuity Adversaries Get erased from existence!",
+        "type": "Other",
+        "value": "Defeat Trihexa once and for all."
+      },
+      {
+        "reward": "1 IMG Ticket plus Dragon Heart and Dragon Scale.",
+        "type": "Other",
+        "value": "Capture Ophis!"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You must buy Universal Callibration and choose for Millicas to have at most 1 year age difference with Rias (whether he is older the same age or he remains younger is to your discretion)."
+      },
+      {
+        "value": "You must not have any of Sona's, Rias' or Issei's Peerage canon members in your peerage. (It doesn't stop you from capturing them, just not using your Evil Pieces or them or trading them into your peerage.)"
+      },
+      {
+        "value": "You must not take any Devil Heiresses in your Peerage."
+      },
+      {
+        "value": "Out of World Character are limited to non-Deities and Tier 7  maximum. The Tier restriction is ignored only for your Queen Piece but not the Deity one."
+      },
+      {
+        "value": "Evil Pieces Restrictions for Out of World Characters:  T8= Queen Piece Only T7= Either 6 Pawns or 2 Bishops or 2 Rooks or 2 Knights  T6= 4P or 1R or 2B or 2K T5= 3P or 1R or 1B or 1K T4-1 = 1P or any other Piece"
+      },
+      {
+        "value": "You can have Maximum 2 Mutation Pieces and they can either be Pawns or Queen (that doesn't allow you to recruit and Queen higher than T8)."
+      },
+      {
+        "value": "Mutation Pawns have double their reincarnation power only."
+      },
+      {
+        "value": "Once you recruit a peerage member you cannot trade them away."
+      },
+      {
+        "value": "You can't recruit Valerie Tepes [T8] (because lets be honest thiss trope has become overused). Capturing her will instantly make her get sold to the Company."
+      },
+      {
+        "value": "Each Member of your Retinue (including yourself) can only have 1 Template maximum."
+      },
+      {
+        "value": "Until the end of this Mission you can not have any Defences aside from: 1.Wild, 2.Environmental, 3.Destiny, 4. Information, 5. Body"
+      }
+    ],
+    "budget": 365,
+    "desc": "Aren't you tired watching the same protagonists doing the same stuff over and over again. Well never fear because I have an alterantive.\nYou will Subsitute[T5] as Millicas Gremory the nephew of Rias Gremory and you will be the one that through sheer force of will, determination, strength and charisma will be able to wrestle the title of Heir of Gremory for yourself, become the True Harem King and crush all your enemies underfoot while bringing glory to the name of Gremory. \n\n\n",
+    "uid": "FiDdD"
+  },
+  {
+    "reward": "75 credits and the instant capture of Rias Gremory.",
+    "image": "https://i.imgur.com/cajNqgo.png",
+    "author": "Randomas6413",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Rise like a Phenex",
+    "loca": "High School DxD",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "An additional 50 credits and the complete approval and backing of her siscon brother Sirzechs Lucifer.",
+        "type": "Other",
+        "value": "Have Rias Gremory fall in love with you and willingly become your bride before the wedding without her resorting to challenging you to a Rating Game."
+      },
+      {
+        "reward": "Instant capture of Koneko Toujou (Shirone), a \"one-size-fits-all\" copy of the Dangerous Beast costume and her sisters interest.",
+        "type": "Other",
+        "value": "Befriend Koneko Toujou, help her come to terms with her Nekoshou abilities and have her consider pastries made by you as the best in the world."
+      },
+      {
+        "reward": "Instant capture of Akeno Himejima, a \"Wooden Bat of Horny Removal\" and the full gratitude and support of her father, Baraqiel.",
+        "type": "Other",
+        "value": "Seduce Akeno Himejima, get her to accept her Fallen Angel background and have her willingly participate in a threesome with you and Rias Gremory on your wedding night."
+      },
+      {
+        "reward": "Instant capture of Yuuto Kaiba and a Class Card of Saber Sigurd.",
+        "type": "Other",
+        "value": "Have Yuuto Kaiba (or his female alternate) willingly pledge himself to you as a knight in your service before the wedding."
+      },
+      {
+        "reward": "Instant capture of Gasper Vladi and Template Stacking I of Alucard (Hellsing) for a companion of your choice only.",
+        "type": "Other",
+        "value": "Befriend Gasper Vladi (or his girl counterpart) and help him come out of his shell and master his Sacred Gear, Forbidden Balor View."
+      },
+      {
+        "reward": "Instant capture of Issei Hyoudou and a limitless porn/hentai magazine styled after the franchise and preferences of your choice.",
+        "type": "Other",
+        "value": "Get Issei Hyoudous (or his feminine doppelgängers) approval as Rias's husband and have her cheer you on during your wedding by his own will instead of sabotaging it."
+      },
+      {
+        "reward": "Instant capture of Asia Argento and a copy of Index Librorum Prohibitorums Walking Church nun's habit fit for her sizes.",
+        "type": "Other",
+        "value": "Befriend Asia Argento before she gets excommunicated from the Church and have her willingly vouch for your kindness without your input, she must not find out about your Devil heritage before she ends up in Rias's Peerage."
+      },
+      {
+        "reward": "Instant capture of Ravel Phenex, her place in your Peerage and one Evil Piece of your choice becomes Mutated.",
+        "type": "Other",
+        "value": "Convince your new Phenex family members that Ravel Phenex joining your Peerage is a good thing. (This objectives rewards are gained at the moment of its completion)"
+      },
+      {
+        "reward": "The amount of attendees at your wedding has doubled, with members of both factions wanting to be a part of it.",
+        "type": "Other",
+        "value": "Have your name be respected throughout the Underworld, in both the Old and New Satan Factions. (This objectives rewards are gained at the moment of its completion)"
+      },
+      {
+        "reward": "Azazel will attend your wedding to talk and establish connections with you.",
+        "type": "Other",
+        "value": "Impress the leader of the Grigori Faction with your ingenuity and love of science, if you have any, without ever having met him. (This objectives rewards are gained at the moment of its completion)"
+      },
+      {
+        "reward": "Vali Lucifer (or his genderbent form) will attend your wedding to test your might.",
+        "type": "Other",
+        "value": "Reach the strength of at least an Ultimate Class Devil before the wedding. (This objectives rewards are gained at the moment of its completion)"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You will Substitute as Riser Phenex sometime between Risers 13th birthday and the start of canon by your own choice. This mission can only be taken at Chargen."
+      },
+      {
+        "value": "The Substitute Origin has to be bought with your starting credits, in the event that your chosen Intensity adjusted credit score prevents this you will instead Substitute into Riser Phenex at a point in the timeline where he was of a lower tier."
+      },
+      {
+        "value": "Rias and her Peerage members are immune to any and all capture methods, Lures and mind control until after the missions conclusion. You may also not incorporate any of her canon Peerage members into your own Peerage until previously said deadline."
+      },
+      {
+        "value": "Yubelluna must always be a part of your Peerage, however her position and the rest of your Evil Pieces can be customized by yourself should you enter at an earlier point in the timeline."
+      },
+      {
+        "value": "The mission will be considered successful the day after Rias Gremorys successful wedding to you."
+      },
+      {
+        "value": "If the engagement is broken off during this mission in any way it'll be considered failed and none of the rewards (including those from Additional Objectives) may be gained."
+      },
+      {
+        "value": "Rewards from Additional Objectives may only be gained after the conclusion of the Main Objective unless stated otherwise."
+      },
+      {
+        "value": "Rias Gremorys canon Peerage members (this includes Issei) may not die while the mission is ongoing, failing this results in a failed mission."
+      },
+      {
+        "value": "Meta Shift, Pocket Apartment (upgrades included), Power Swap and Exit Stage Lefts world travel will be unavailable until the missions end. The progression bar for Exit Stage Left may still be filled by your exploits in the world."
+      }
+    ],
+    "budget": 80,
+    "desc": "As the Multiverse Theory goes, for every event the opposite is what happened in a different world. This must also be true for the marriage between Rias Gremory and Riser Phenex, where the wedding between Rias and Riser happened without issue as it was meant to be.\n\nUnfortunately, for some of our VIP clients, these timelines are far and few in between as most Contractors either side with Rias or just stop their marriage out of spite for Riser.\n\nThis is where you come in, Contractor. Your job, should you choose to accept it, will be to put yourself in the shoes of Riser Phenex at the start of, or before, the canon of High School DxD and make sure this marry Rias Gremory while also making sure the name of said Phenex family member will not be disgraced as it was in canon.",
+    "uid": "bFjck"
+  },
+  {
+    "reward": "1/4 the purchase price of the current tier for each character personally trained that survives in significantly better condition than they were originally supposed to.",
+    "image": "",
+    "author": "Skelethin",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Make a man out of you!",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Quick",
+    "objectives": [
+      {
+        "reward": "The character's current tier in credits - T1 = 1 credit, T10 = 10 credits.",
+        "type": "Other",
+        "value": "Villains are Characters too: \nYour chosen character(s) are the nominal villains of the event/fight."
+      },
+      {
+        "reward": "The character's current tier in credits - T1 = 1 credit, T10 = 10 credits.",
+        "type": "Other",
+        "value": "Teamwork makes the dream work\nCharacter(s) survives due more to smartly working with teammates than due to personal skill, compared to original events."
+      },
+      {
+        "reward": "Triple the tier rating of the most powerful opponent in the fight that ‘would have been’ in credits.",
+        "type": "Other",
+        "value": "Character(s) completes the fight/event that would have caused their injury/death through diplomacy rather than violence."
+      },
+      {
+        "reward": "1/4 the purchase price of the current tier for each character that qualifies.",
+        "type": "Other",
+        "value": "The event/fight goes significantly better for the character(s) than it was supposed to. They don’t need to win, they do need to not lose(as badly)."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "The chosen character(s) are supposed to be critically injured, and/or killed during the next major plot event or fight."
+      },
+      {
+        "value": "You(or your Retinue) must personally train the character(s)."
+      },
+      {
+        "value": "No Templates, Power Swaps, or Specific Waifu Perks(getting one naturally is fine) on the character(s) for the duration of this mission. This includes via Dungeon/Demi-Plane laws. That would be the Company doing it, not you."
+      },
+      {
+        "value": "The character(s) must end the major plot event and/or fight in significantly better condition than fate(the story) originally dictated for them."
+      },
+      {
+        "value": "You(and your Retinue) must not personally be a significant reason why they survive. Minor support is fine, but they must do it themselves."
+      },
+      {
+        "value": "The character(s) must be involved in the event/fight, and not avoid or run away before it begins."
+      }
+    ],
+    "budget": 0,
+    "desc": "Far too many interesting characters have their time cut short. Every story has its next big event, or major fight that leaves these characters brutally maimed, in critical condition, or even killed.\n\nNo more. Not this time. And it's up to you to fix it.\n\nGive character(s) the training they deserve to do their job. Pound into them enough skill that they aren't completely at the mercy of fate.\n\n(Repeatable Mission)",
+    "uid": "pNCJX"
+  },
+  {
+    "reward": "250 credits + Instant Unlocking of the next World.",
+    "image": "https://i.ytimg.com/vi/dj1AjKndeQ4/maxresdefault.jpg",
+    "author": "Asdas Sad",
+    "rewardType": "Other",
+    "source": "",
+    "title": "To Make God Usopp Proud",
+    "loca": "One Piece",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "60 credits + Template Staking I Armament Haki",
+        "type": "Other",
+        "value": "Love Capture Nico Robin"
+      },
+      {
+        "reward": "60 credits + Template Staking I Observation Haki",
+        "type": "Other",
+        "value": "Love Capture Nami"
+      },
+      {
+        "reward": "120 Credits + Oni Bloodline",
+        "type": "Other",
+        "value": "Love Capture Yamato"
+      },
+      {
+        "reward": "Template Staking I & 2 Misaka Mikoto",
+        "type": "Other",
+        "value": "Kill The False God Enel"
+      },
+      {
+        "reward": "A magical Going Merry with regeneration, autopilot and self propulsion",
+        "type": "Other",
+        "value": "Save Kaya"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Take a long ranged Template Staking"
+      },
+      {
+        "value": "All Movies present Canon"
+      },
+      {
+        "value": "You must follow Luffy's Journey, recruitment of the Crewmembers is optional."
+      },
+      {
+        "value": "A slight Correction Force would be provided by the Company, akin to a weak Plot Armor that would allow you to follow the Canon Events, it does not ensure Victory or Survival, just that you will reach the 'Start' of the next Adventure/Arc."
+      },
+      {
+        "value": "You wont have access to your Sweet Home, Demiplace & Dungeon during the duration of the quest"
+      },
+      {
+        "value": "You can choose to apear on Alvida's boat as a stowaway, near any of the locations of the future Straw Hats, or even in syrup village"
+      }
+    ],
+    "budget": 0,
+    "desc": "We were contacted by God Usopp from another reality searching for someone to take the place of the sniper of the Straw Hats.\n\nYour mission, if you decide to take it, is to take the place of Usopp from this reality, as in this reality he was a stillborn, and reach the pinacle of waht a sniper can achive in this world.\n\nFor this you will need to take a Template Staking I of a long ranged fighter, as this will be your primary mode of combat.",
+    "uid": "kBghF"
+  },
+  {
+    "reward": 100,
+    "image": "",
+    "author": "Glen",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Cutiemark Crusaders, Catalog captures/contractors, YAY!",
+    "loca": "My Little Pony",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "a T5 Template stacking for Sweetie belle related to the new cutiemark.",
+        "type": "Perks",
+        "value": "Make sure Sweetie belle gets a significant different cutie mark, something outside of her well established skills"
+      },
+      {
+        "reward": "a T5 Template stacking for Applebloom related to the new cutiemark",
+        "type": "Perks",
+        "value": "Make sure Applebloom gets a significant different cutie mark, something outside of her well established skills"
+      },
+      {
+        "reward": "a T5 Template stacking for Scootaloo related to the new cutiemark",
+        "type": "Perks",
+        "value": "Make sure Scootaloo gets a significant different cutie mark, something outside of her well established skills"
+      },
+      {
+        "reward": "A perk for all of them, giving them a boost when working together, enough to upgraded a T4 to a T5",
+        "type": "Perks",
+        "value": "All three get significantly different cutiemarks, while maintaining a close bond"
+      }
+    ],
+    "conditions": [],
+    "budget": 0,
+    "desc": "The Cutie mark crusaders have canon cutie marks, but depending on when in the timeline you find them, they may not have them yet. You could capture them and let the catalog work its magic to get them their cutie marks... but you could also take their destiny into your own hands.\n\nMake sure the cutiemark crusaders get different cutie marks then they did in canon.",
+    "uid": "cfNaA"
+  },
+  {
+    "reward": 20,
+    "image": "",
+    "author": "Irugaa0",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Roleplay",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "any template based on the chosen roles.",
+        "type": "Other",
+        "value": "Take 2 more roles and have a Passing Score of 70 or more."
+      },
+      {
+        "reward": 10,
+        "type": "Credits",
+        "value": "Have a Passing Score of 70 or more."
+      },
+      {
+        "reward": 20,
+        "type": "Credits",
+        "value": "Have a Passing Score of 80 or more."
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Have a Passing Score of 90 or more."
+      },
+      {
+        "reward": 70,
+        "type": "Credits",
+        "value": "Have a Perfect Passing Score of 100."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Have a Passing Score of 60 or more."
+      },
+      {
+        "value": "Chose at least 1 Role in up to 10 days in that world or before."
+      },
+      {
+        "value": "Additional rewards will be delivered based on your perfom."
+      }
+    ],
+    "budget": 0,
+    "desc": "Priest, Clergy, Assassin, Thief, Phantom-Thief, Charlatan, Scholar, Teacher, Mysterious Wizard, Druid, Hermit, Soldier/Mercenary, General, Madman/Fool, Prophet, Bard, Artisan, Merchant, Sailor/Pirate, Bounty Hunter, Noble, Charming Prince, King and Tyrant.\nAll these are examples of roles one can take, either as a lifestyle or as a form of entertainment. We want to see how our contractors, perform in these roles. The more you act upon these roles the better the final reward will be.\nA Clergy/Priest must preach, a thief must steal, a phantom thief must make a spectacle of his stealing, charlatans must trick people and etc.\nMore than one role can be played at a time, as long they complement each other or don’t contradict the other, a merchant can’t be a bounty hunter and ignore its store, nor a pirate can’t be druiding around and don’t be sailing at the sea, neither a king can hermit around the nature and leave its kingdom.\nThe Score is decided by our own staff at the end of every mission or year/years based on the tier of the world you’re in.\nYou can take this mission every time you go to a new world.\n",
+    "uid": "sxXbp"
+  },
+  {
+    "reward": "'Fox of Six Paths' specific perk and 500 credits",
+    "image": "https://cdn.donmai.us/original/13/54/__gojou_satoru_jujutsu_kaisen_drawn_by_asaga_iori__1354f6808ead47d0eebe97b570819eb6.png",
+    "author": "Asdas Sad",
+    "rewardType": "Other",
+    "source": "",
+    "title": "I Alone Am The Honored One",
+    "uid": "YeNCh",
+    "loca": "Naruto",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "Sticky Fingers or 30 creadits",
+        "type": "Perks",
+        "value": "Restart the Uzumaki bloodline"
+      },
+      {
+        "reward": "Paradox Defense tier 1 & 2 or 100 credits",
+        "type": "Perks",
+        "value": "Romance and Capture Uzumaki Kushina"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Romance and Capture Haruno Sakura"
+      },
+      {
+        "reward": "Information Defense tier 1 & 2 or 100 credits",
+        "type": "Perks",
+        "value": "Destroy Akatsuki"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Romance and/or Capture Konan"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Romance and Capture Temari"
+      },
+      {
+        "reward": "Mind Defense Tier 1 & 2",
+        "type": "Perks",
+        "value": "Kill Uchiha Obito"
+      },
+      {
+        "reward": "Inexhaustible or 140 credits",
+        "type": "Perks",
+        "value": "Kill Uchiha Madara"
+      },
+      {
+        "reward": "Destiny Defense of 100 credits",
+        "type": "Perks",
+        "value": "Kill Uchiha Sasuke after he desert the village"
+      },
+      {
+        "reward": 120,
+        "type": "Credits",
+        "value": "Capture and Impregnate Tsunade Senju"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Sustitute as Uzumaki Naruto"
+      },
+      {
+        "value": "Template Stacking I & II of an out of context character"
+      },
+      {
+        "value": "You must take 'An Empty Seal'"
+      },
+      {
+        "value": "All the first part of Naruto Fillers/Movies will be present. OVAs are optional"
+      },
+      {
+        "value": "All Naruto Shippuden Movies will be present."
+      },
+      {
+        "value": "Can't purchase any companions from Naruto"
+      },
+      {
+        "value": "Can't bring any outside companions"
+      },
+      {
+        "value": "You must start as a tier 4 or tier 5"
+      }
+    ],
+    "budget": 350,
+    "desc": "A contractor discovered a few worlds were Naruto died when Orochimaru used the five elements seal on him and a contractor to show the world that Naruto is more than loud mouth moron.\n\nYour mision, if you accept it, is to Sustitute into Uzumaki Naruto with at least one Template Stacking tier II of an out of context character and  beat all of the Naruto Series plot."
+  },
+  {
+    "reward": "Tohru as a Companion",
+    "image": "https://i0.wp.com/reasonstoanime.com/wp-content/uploads/2018/08/tohru.jpg",
+    "author": "Chimera",
+    "rewardType": "Companions",
+    "source": "",
+    "title": "God Needs work on his aim, also OUCH!",
+    "loca": "Miss Kobayashi's Dragon Maid",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "Kobayashi Tier goes up a rank, and becomes your companion",
+        "type": "Companions",
+        "value": "Let the story progress as intended. Either you and/or Tohru somehow become Kobayashi butler/maid."
+      },
+      {
+        "reward": "Dragon Thrall OR Dragon Scale Perk.",
+        "type": "Perks",
+        "value": "It's just a scratch, Endure Gods attack without letting it become a lethal wound."
+      },
+      {
+        "reward": "Dragon Aura OR Dragon Scale Perk.",
+        "type": "Perks",
+        "value": "Dante would be proud. Manage to Survive Gods attack by tanking it through your heart"
+      },
+      {
+        "reward": 2,
+        "type": "IMG Tickets",
+        "value": "Parting Gift, Wound heavily that god before Tohru teleports you away"
+      },
+      {
+        "reward": "Free coupon for a \"Deity\" companion. Limited to T10 and under.",
+        "type": "Companions",
+        "value": "Kill that MTF. Manage to kill god before teleporting away. After you get stabbed obviously."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Tohru cannot be dominated or gained as a companion, friends/lover status is accepted"
+      },
+      {
+        "value": "Have the heart of a dragon. Or be a dragon basically."
+      },
+      {
+        "value": "You cannot be seen, killing a dragon under any circumstance other than a honor duel. Also killing anyone related to Tohru is an auto-fail of this mission"
+      }
+    ],
+    "budget": 0,
+    "desc": "The Alternate world is a dangerous place. But if you want this to work, then you should save the pretty dragon girl yourself, while also getting stabbed.....but if you survive God's wrath the rewards can be plentiful.\n\nSave Tohru from God's wrath and take a hit for her.",
+    "uid": "IDZEK"
+  },
   {
     "reward": 300,
     "image": "https://animevania.com/wp-content/uploads/2022/09/cropped-1920-1080-1248757.jpg",
@@ -552,48 +1190,6 @@
     "budget": 240,
     "desc": "The Spirit Hall have many downside, but their sins are blinded with the hope and bright future that they can bring to the weak and innocent people, the only reason why they become the villain of the story is due to their leader who deliberately and actively destroying and corrupting the Spirit Hall from the inside.\n\nYour mission is simple, save the Spirit Hall, stop Bibi Dong from destroying the Spirit Hall from the inside.",
     "uid": "Cyays"
-  },
-  {
-    "reward": "Template Stacking 1 & 2 Viltrumite + 100 Credits",
-    "image": "https://www.superherohype.com/wp-content/uploads/sites/4/2021/03/invincible1.jpg",
-    "author": "the 44'th ChoirBoy",
-    "rewardType": "Other",
-    "source": "https://www.superherohype.com/wp-content/uploads/sites/4/2021/03/invincible1.jpg",
-    "title": "Prove the name right",
-    "loca": "Invincible",
-    "lewd": false,
-    "scope": "Standard",
-    "objectives": [
-      {
-        "reward": "Template Stacking 1 & 2 of the Curse of Achillies(Riordanverse)",
-        "type": "Perks",
-        "value": "Do not allow Mark to ever leave a fight with more than basic scuffs and scratches."
-      },
-      {
-        "reward": "100 Credits and the Covert Talent(If have already 10 credits)",
-        "type": "Perks",
-        "value": "Never outright participate in any of Mark's fights. Couching, giving advice, causing minor distractions, sabotaging the other side beforehand are all within the book however."
-      },
-      {
-        "reward": "50",
-        "type": "Credits",
-        "value": "Make it possible that somehow Mark is able to keep up a social life without having to choose between it and duty"
-      }
-    ],
-    "conditions": [
-      {
-        "value": "The fights have to at least seem by the vast majority, to be solely due to Mark's own abilities and skill. You and others are allowed to assist in his fights, but never to a degree it seems he is not the main player."
-      },
-      {
-        "value": "Related to above: If someone were to come an distrupt the fight that you and your retinue have no connection, plans around, or expected to be there, then and only then are they allowed to outshine Mark"
-      },
-      {
-        "value": "This Mission will last up and until Mark defeat a full grown Viltrumite warrior 'on his own' without too much hassle or struggle."
-      }
-    ],
-    "budget": 200,
-    "desc": "Mark Grayson... ah poor Mark. The Kid certainly had balls taking a name like \"Invincible\". Certainly doesn't help every fight he gets in he earns at least a scuff or two, not going in when he gets beaten into unconsciousness, maimed and nearly killed. While it is quite funny seeing the boy get humbled, after so many times it's like kicking a puppy. A stupid, stubborn, likely brain damaged one, but a puppy nonetheless.\nHow about this time around, he make sure he keeps that title clean.\nBasic setup, make sure Mark Grayson, aka the hero Invincible, never suffers a loss during a fight. Every fight he steps out of he has to be the agreed upon physical winner. If the bad guy was simply delaying him, the whole fight was a mistake, or whatever, that is not your job to deal with, simply make sure that the other guy is on the ground and Mark isn't. After all, he's a superhero, they all need a little tragedy in their lives, keeps things fresh and their minds stretchy. ",
-    "uid": "FCOLH"
   },
   {
     "reward": "You automatically get the Dragon Heritage with Dragon Heart and Dragon Scale for free.",
@@ -2266,6 +2862,9 @@
       },
       {
         "value": "You must follow Luffy's Journey, recruitment of the Crewmembers is optional."
+      },
+      {
+        "value": "Upon Selling a Target that possessed a Devil Fruit, said Devil Fruit is left behind for you to claim."
       }
     ],
     "budget": 5,
@@ -3585,7 +4184,7 @@
     ],
     "conditions": [
       {
-        "value": "You will enter 'The Elder Skrolls'[DR8] and will take Dragonborn's place, all logical/continuation issues would be adjusted."
+        "value": "You will enter 'The Elder Scrolls'[DR8] and will take Dragonborn's place, all logical/continuation issues would be adjusted."
       },
       {
         "value": "You will arrive into 'The Elder Scrolls V: Skyrim' at the start of the Game."
@@ -5990,9 +6589,6 @@
       },
       {
         "value": "Have your Avalon Faction be recognised as a power on par with the three Biblical Factions combined."
-      },
-      {
-        "value": "Gain a confession of True Love from the Seraph Gabriel and marry her."
       },
       {
         "value": "Ascend to Godhood."
@@ -19878,15 +20474,16 @@
     "author": "Ratcatcher"
   },
   {
+    "reward": "500 credits",
+    "image": "https://i.redd.it/qzceiri6pqs51.png",
+    "author": "Ratcatcher",
+    "rewardType": "Credits",
     "source": "",
     "title": "Kengan president",
-    "desc": "You may have heard about the Kengan Association and how it controls the Japanese economy in its world... And the Kengan Annihilation Tournament with Chairmanship in place is coming. Why don't you win it?",
-    "author": "Ratcatcher",
-    "scope": "Quick",
-    "rewardType": "Credits",
-    "reward": "500 credits",
+    "uid": "HokGE",
     "loca": "Kengan Ashura",
-    "budget": 100,
+    "lewd": false,
+    "scope": "Grand",
     "objectives": [
       {
         "reward": "TS 1 as Tokita Niko",
@@ -19894,23 +20491,23 @@
         "value": "You or your fighter defeat Tokita Ohma"
       },
       {
-        "type": "Companions",
         "reward": "Instant capture of the CEO",
+        "type": "Companions",
         "value": "You or your fighter crush a fighter whose CEO is a woman"
       },
       {
+        "reward": "You are betrothed to Kure Karura",
         "type": "Other",
-        "value": "Personally defeat Kure Rayan or otherwise prove yourself as strong as him",
-        "reward": "You are betrothed to Kure Karura"
+        "value": "Personally defeat Kure Rayan or otherwise prove yourself as strong as him"
       },
       {
+        "reward": "TS 1 as Kuroki Gensai",
         "type": "Perks",
-        "value": "Personally defeat Kuroki Gensai",
-        "reward": "TS 1 as Kuroki Gensai"
+        "value": "Personally defeat Kuroki Gensai"
       },
       {
-        "type": "Credits",
         "reward": "1000 credits",
+        "type": "Credits",
         "value": "Win while your fighter is Sakura Hibiki"
       }
     ],
@@ -19937,8 +20534,8 @@
         "value": "Win the tournament and decide who the next chairman is. You can even appoint yourself."
       }
     ],
-    "image": "https://i.redd.it/qzceiri6pqs51.png",
-    "uid": "HokGE"
+    "budget": 100,
+    "desc": "You may have heard about the Kengan Association and how it controls the Japanese economy in its world... And the Kengan Annihilation Tournament with Chairmanship in place is coming. Why don't you win it?"
   },
   {
     "source": "",

@@ -355,7 +355,7 @@
     "uid": "EYWVx"
   },
   {
-    "rating": 3,
+    "rating": 2,
     "q": true,
     "worldName": "Bofuri",
     "additional": "All characters benefit from their New World Online statistics (taking the higher value of the in-game number vs. the equivalent of their real-world abilities), skills, equipment, and pets. They no longer have explicit game mechanics, such as leveling or chat, but can still quick-change both old and new equipment as desired.",
@@ -872,28 +872,7 @@
     "image": "https://picfiles.alphacoders.com/136/thumb-1920-136964.jpg",
     "uid": "EcOJ7"
   },
-  {
-    "rating": 5,
-    "worldName": "Arknights",
-    "condition": [
-      {
-        "name": "Standard",
-        "rating": 5,
-        "official": true
-      },
-      {
-        "name": "Chernobog, Kazdel",
-        "rating": 6,
-        "official": true
-      },
-      {
-        "name": "Talos-II",
-        "rating": 7
-      }
-    ],
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992079977493319730/Arknights_Official.png",
-    "uid": "XzaaJ"
-  },
+  {"uid":"RpuaR","worldName":"Arknights","rating":5,"image":"https://cdn.discordapp.com/attachments/925963686433132644/992079977493319730/Arknights_Official.png","condition":[{"name":"Standard","rating":5,"official":true},{"name":"Kazdel Civil War","rating":6,"official":true},{"name":"Talos-II","rating":7},{"name":"County Hillock (Stormwatch)","rating":6,"official":true},{"name":"Occupied Londinium","rating":6,"official":true},{"name":"Chernobog-Lungmen Crisis","rating":7,"official":true},{"name":"Kawalierki (24th Kazimierz Major)","rating":7,"official":true},{"name":"Painted World (Who Is Real)","rating":7,"official":true},{"name":"Aegir","rating":8,"official":true},{"name":"Northern Tundra","rating":8,"official":true},{"name":"The Silence of Iberia","rating":8,"official":true},{"name":"The Witch-King's Terror","rating":9,"official":true}]},
   {
     "rating": 5,
     "worldName": "KonoSuba",

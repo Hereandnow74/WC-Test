@@ -299,18 +299,7 @@
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/992055973369884712/91dCSxXnEmL._RI_.jpg",
     "uid": "HK1X6D"
   },
-  {
-    "worldName": "Cyberpunk 2077",
-    "rating": 7,
-    "image": "https://i.imgur.com/2BDGlCOl.jpeg",
-    "condition": [
-      {
-        "name": "Edge Runners 2076",
-        "rating": 7
-      }
-    ],
-    "uid": "Mcq3f6"
-  },
+  {"uid":"lDwmqG","worldName":"Cyberpunk 2077","rating":7,"image":"https://i.imgur.com/2BDGlCOl.jpeg","condition":[{"name":"The Early Years (1859-1980s)","rating":4},{"name":"The World Crash (1990s)","rating":6},{"name":"The Corporate Wars (2000-2020s)","rating":7},{"name":"The Rebuilding Years (2030-2060s)","rating":7},{"name":"Edgerunners (2076)","rating":7}]},
   {
     "worldName": "Darksiders",
     "rating": 8,
@@ -2312,13 +2301,7 @@
   },
   {
     "worldName": "Reincarnation of the Strongest Sword God",
-    "rating": 1,
-    "condition": [
-      {
-        "name": "When Shi Feng reincarnates the 2nd time",
-        "rating": 3
-      }
-    ],
+    "rating": 9,
     "image": "https://cdn.discordapp.com/attachments/925963686433132644/992053571187118181/Reincarnation-Of-The-Strongest-Sword-God.png",
     "uid": "h1ZaV4"
   },
@@ -6472,5 +6455,13 @@
   {"uid":"aETSuA","worldName":"Lupin III","rating":2,"image":"https://cloudfront.first4figures.com/media/resized/l-890-369/blog/1/175_Lupin_III_TT_Cover.png"},
   {"uid":"RICGdH","worldName":"Hitchhiker's Guide to the Galaxy","rating":5,"image":"https://www.tvguide.com/a/img/hub/2019/07/24/47fed30d-57ca-4b70-827a-a25b091a7552/190724-hitchhikers-guide-to-the-galaxy-news.jpg"},
   {"uid":"dfYVhB","worldName":"Instant Death","rating":8,"image":"https://i.imgur.com/h4unmFJ.jpg"},
-  {"uid":"RYkaWQ","worldName":"Fortnite","rating":10,"image":"https://i.imgur.com/VQiIoVj.jpg"}
+  {"uid":"RYkaWQ","worldName":"Fortnite","rating":10,"image":"https://i.imgur.com/VQiIoVj.jpg"},
+  {"uid":"PJOJqi","worldName":"Battle Girls – Time Paradox","rating":5,"image":"https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/148ed4a97d7982e3663c1188a77113c7.jpe"},
+  {"uid":"QQkZOa","worldName":"Onimai: Now I'm Your Sister!","rating":2,"image":"https://i.imgur.com/sFSe53V.jpg"},
+  {"uid":"ldWejW","worldName":"C³ - CubexCursedxCurious","rating":3,"image":"https://c4.wallpaperflare.com/wallpaper/94/51/700/cubexcursedxcurious-anime-girls-kubrick-fear-anime-wallpaper-thumb.jpg"},
+  {"uid":"xzHRuC","worldName":"Detective Conan","rating":3,"image":"https://wallpapers.com/images/featured/detective-conan-pictures-da0oeouxfufv9tan.jpg"},
+  {"uid":"cejRZK","worldName":"Inazuma Eleven","rating":2,"image":"https://wallpapercave.com/dwp2x/wp5621516.jpg"},
+  {"uid":"VUkfLC","worldName":"Kaze no Stigma","rating":5,"image":"https://cdn.donmai.us/sample/27/b6/__kannagi_ayano_and_yagami_kazuma_kaze_no_stigma__sample-27b6ad6ea267f06565aebd5363c42598.jpg"},
+  {"uid":"aNCMPu","worldName":"Sekiro: Shadows Die Twice","rating":6,"image":"https://hardwaresfera.com/wp-content/uploads/2019/08/Sekiro-Shadows-Die-Twice.jpg"},
+  {"uid":"EvQRsG","worldName":"Soukoku no Arterial","rating":6,"image":"https://sun9-23.userapi.com/impf/c636621/v636621023/5011/LZyhznal5Ak.jpg?size=1024x576&quality=96&sign=e824abb397574ab18e69148d22e8725c&type=album"}
 ]

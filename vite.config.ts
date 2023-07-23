@@ -49,7 +49,7 @@ export default defineConfig({
         ],
       },
       workbox: {
-        maximumFileSizeToCacheInBytes: 5000000,
+        maximumFileSizeToCacheInBytes: 10000000,
       },
     }),
     // https://github.com/hannoeru/vite-plugin-pages
