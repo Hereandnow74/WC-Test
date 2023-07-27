@@ -12,7 +12,7 @@ DLCgenericPerks.push({
   special: 'Must be repurchased for each use.',
   complex: 'target',
   cost: 10,
-  desc: `Perhaps the moment will come when you need to justify the event of their appearance in front of you for a new companion. Or maybe your appearance in the new world should be memorable, or maybe you want make an appearance like an epic hero in front of local residents or characters? But don't worry! For a very symbolic fee, our company undertakes to play a grandiose theatrical performance, which will surely convince your new companion or locals that you or them being here is an act of fate!
+  desc: `Perhaps the moment will come when you need to justify the event of their appearance in front of you for a new companion. Or maybe your appearance in the new world should be memorable, or maybe you want make an appearance like an epic hero in front of local residents or charactersD But don't worry! For a very symbolic fee, our company undertakes to play a grandiose theatrical performance, which will surely convince your new companion or locals that you or them being here is an act of fate!
   <p>It could be anything. Cataclysm, random portal, magical summoning by an evil (or not) sorcerer and their "salvation by your intervention". Or maybe they "died" and appeared before their "god"? Anything! Let your imagination run wild and we'll be happy to make it happen!</p>
   <p>The company is not responsible for all possible consequences of these events. Our persuasion methods may not work for T8+ companions and characters. </p>
   `,
@@ -368,18 +368,14 @@ DLCperks.push({
 
 DLCperks.push({
   uid: 'KGkrd',
-  dlc: 'Ruaron',
-  title: 'Knowledge Base Upload',
+  dlc: 'Community',
+  title: 'Refresh Your Brain',
   category: 'Misc Perk',
-  image: 'https://cdn.discordapp.com/attachments/925963686433132644/995755374349144134/dragon-s-crown-fantasy-art-person-reading-wallpaper-preview.jpg',
-  cost: 5,
-  costVariants: [5, 10, 20],
-  special: '1st stage: 5 credits; 2nd stage: 10 credits; 3rd stage: 20 credits.',
-  desc: `So you ended up in your favorite world, but it turns out that your mortal memory isn't perfect, you even can't tell what questions Snape asked Potter in the first lesson or where the Dragon Balls are. But worry not, using the most advanced methods of copying memory, we have collected for you, a mental base on the desired worlds. This includes the official source (so-called 'canon') and wikipedia pages.
-
-  <p>Is this not enough for you? Then buy it again and you will get knowledge of the most popular fanfics and even author's personal notes. Buying a third time will make your knowledge base updated every time you visit a new world.</p>
-  
-  <p>Extra data that will be downloaded into your memory will be just pure knowledge, with no emotional strings attached, and you can distinguish between your original memories and those we are adding.</p>
+  image: 'https://i.imgur.com/iUz4Fd8l.jpg',
+  cost: 20,
+  multiple: true,
+  max: 10,
+  desc: `If you happen to have ended up in a world that is unfamiliar to you, or one whose timeline you have forgotten there is no reason to worry. With the purchase of this perk, you will receive an upload of data to your company smartphone containing a brief overview of the key events and their participants that have or will occur in this world. This data does not contain precise details and is more of a basic summary rather than a precise manual. After ten purchases of this perk, data will be automatically uploaded every time you visit a new world.
   `,
 })
 
@@ -606,8 +602,11 @@ DLCotherControls.push({
   title: 'Nine Tenths Law',
   category: 'Lure',
   image: 'https://i.ibb.co/xDXVkB2/Nine-Tenths-Law.jpg',
-  cost: 5,
-  desc: 'Any individual who you manage to keep imprisoned for three days straight becomes yours. Any means of imprisonment, from holding them trapped in a magic circle to keeping them handcuffed next to you, is valid and you may use multiple means or shift between them as needed. However the victim must be aware of their confinement and any time spent unnaturally insensate (unconscious, drugged asleep, frozen in time, etc) does not count towards the total period of confinement.',
+  cost: 10,
+  costVariants: [10, 30, 90],
+  desc: `Any individual who you manage to keep imprisoned for three days straight becomes yours. Any means of imprisonment, from holding them trapped in a magic circle to keeping them handcuffed next to you is valid, and you may use multiple means or shift between them as needed. The victim however must be aware of their confinement and any time spent unnaturally insensate (unconscious, drugged asleep, frozen in time, etc) does not count towards the total period of confinement. You must interact with each victim at least once over the course of their confinement in order for the capture to be successful. 
+  <p>With the first purchase of this perk, its effects can only be applied to one individual at a time. This perk can be purchased up to two more times, with each purchase increasing the number of individuals it can be applied to by a factor of 10. The price of this perk triples with each purchase.</p>
+  `,
 })
 
 DLCotherControls.push({
@@ -1008,6 +1007,20 @@ DLCintensity.push({
   intensity: 0.8,
   special: 'Chargen only. May not be taken on DR11.',
   chargen: true,
-  blacklist: ['Wage Slave', 'Fight For Your Right', 'One In Ten', 'Power Trip'],
+  blacklist: ['Wage Slave', 'Fight For Your Right', 'One In Ten', 'Power Trip', 'Last Customer'],
   desc: 'You\'re blacklisted from using any of Company services after chargen, no new perks, no buying companions or rides - nothing. If you become qualified for new discounts after chargen by capturing new companions freed credits would stay dead on your account with no ability to spend them. Missions that give perks or tickets as a reward are still available, but you would not be able to receive those rewards. Help-desk is not available for you either instead you get limited ability to interpret vague rules in your favor.',
+})
+
+DLCintensity.push({
+  uid: 'otaEf',
+  dlc: 'D',
+  title: 'Last Customer',
+  image: 'https://i.imgur.com/2AzNR2sl.png',
+  intensity: 1,
+  special: 'Chargen only. May not be taken on DR11.',
+  chargen: true,
+  blacklist: ['Wage Slave', 'Fight For Your Right', 'One In Ten', 'Power Trip', 'Black-mark'],
+  desc: `Contractors were too greedy and captured too many waifus they should've left alone, now after the long war with the coalition of jumpers, SI's and Mary Sue's, that happened in an instant, Company is the shadow of its former self, losing a lot of their absolute authorities. While it gives you a higher signing bonus, most of continuous services provided by the Company would no longer work.
+  <p>You will lose access to almost all apps, denying you the ability to buy companions, take a loan or purchase any new perks or rides. Defenses will no longer provide immunity even if you buy a second copy, RIP rules will not activate when you die and Warranty Plan will no longer revive your companions. Also all binding methods will stop providing their main function - capture, but any secondary powers they give will continue to function.</p>  
+  `,
 })

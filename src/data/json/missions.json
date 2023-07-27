@@ -1,5 +1,74 @@
 [
   {
+    "reward": "One Philosopher's Stone. 1 TS of a Catgirl of your choice.",
+    "image": "https://i.imgur.com/Mp7UeYB.png",
+    "author": "Heaven Canceler",
+    "rewardType": "Perks",
+    "source": "",
+    "title": "Alchemical Nekomommy",
+    "loca": "Fullmetal Alchemist",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "1 TS of a Dog-Girl of your choice.",
+        "type": "Perks",
+        "value": "Give Nina the Kemonomimi transformation treatment too! We know you want to."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Shou Tucker must create at least 1 functional human animal hybrid with full sapience and no health problems within the time limit originally given to him."
+      },
+      {
+        "value": "In addition, his wife must become a catgirl, preferably with a functional heat cycle."
+      }
+    ],
+    "budget": 120,
+    "desc": "Shou Tucker was an Alchemist with a desire to achieve prestige and success and for this purpose he was trying to create an intelligent Chimera. Unfortunately, his chosen goal was out of reach, until he turned towards human experimentation and fused his wife and later daughter with animals. Leaving them as half-mindless tortured abominations that died soon thereafter. We want you to avoid this terrible fate and find a way to let him instead create true hybrids… of the sexy kind. Yes, we want you to find a way for Shou Tucker to introduce the glory of Kemonomimi into the world of Fullmetal Alchemist! For the purpose of this mission you will either have to play advisor for him, or hijack his body if you prefer to do the work yourself and think he doesn’t deserve a loving wife and daughter.",
+    "uid": "VxgtY"
+  },
+  {
+    "reward": "1 free T5 TS for each of the 5 original Abydos students of their “Terror” form, theoretical or existent.",
+    "image": "https://i.imgur.com/jqKinC9.png",
+    "author": "Heaven Canceler",
+    "rewardType": "Perks",
+    "source": "",
+    "title": "Abydos Reclamation Project",
+    "loca": "Blue Archive",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "Hoshino’s sempai Yume is resurrected and bound to you. Also 2 Copies of Wild Defense.",
+        "type": "Companions",
+        "value": "Within 1 year, hold a Desert Festival in a recreated Oasis with a visitor count of at least 1.000 tourists from outside Abydos."
+      },
+      {
+        "reward": "1 free TS of a character that canonically robbed a bank.",
+        "type": "Perks",
+        "value": "Successfully rob at least 1 bank with the original gang and Ajitani Hifumi and make off with at least 100 million yen."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Capture all 5 remaining students within Abydos."
+      },
+      {
+        "value": "Reverse the Desertification of Abydos to the point where the area that was turned into a desert shrinks by at least 20% ."
+      },
+      {
+        "value": "Get back ownership of at least 50% of Abydos District from Kaiser Corporation and Eliminate the entire debt Abydos owes them."
+      },
+      {
+        "value": "Bring up the student body of Abydos to at least 200 individual students."
+      }
+    ],
+    "budget": 100,
+    "desc": "Abydos was once upon a time one of the most powerful school districts within Kivotos. With a rich culture, prestigious history, successful businesses and a capable student body. They were comparable to the oldest and most successful schools within the city, equal to Trinity and Gehenna. But unfortunately the school has fallen on hard times. What started as a single devastating sandstorm soon became a trend of ongoing seemingly unstoppable desertification. After years of struggle where Abydos was forced to take on more and more debt to pay for disaster relief all across the district, even having to sell the majority of the land to a private loan company… well they are really not doing well. The school is on the verge of closing, with only a handful of students remaining and much of it falling apart as few businesses remain in the city. Your job is to fix this and bring Abydos back onto the tracks towards its glory days.",
+    "uid": "onlVq"
+  },
+  {
     "reward": "2",
     "image": "https://e0.pxfuel.com/wallpapers/133/866/desktop-wallpaper-arthur-pendragon.jpg",
     "author": "KKhaios342",
@@ -74,6 +143,7 @@
     "rewardType": "Credits",
     "source": "https://i.pinimg.com/564x/50/35/fb/5035fbe9790fe85db5c38cc62e058c9c.jpg",
     "title": "The True Gremory!",
+    "uid": "FiDdD",
     "loca": "High School DxD",
     "lewd": false,
     "scope": "Grand",
@@ -134,7 +204,7 @@
         "value": "Defeat Sirzechs Lucifer."
       },
       {
-        "reward": "250 Credits and Corruption Defence x2",
+        "reward": "250 Credits and Polymorph Defence x2",
         "type": "Other",
         "value": "Become a Satan!"
       },
@@ -185,8 +255,7 @@
       }
     ],
     "budget": 365,
-    "desc": "Aren't you tired watching the same protagonists doing the same stuff over and over again. Well never fear because I have an alterantive.\nYou will Subsitute[T5] as Millicas Gremory the nephew of Rias Gremory and you will be the one that through sheer force of will, determination, strength and charisma will be able to wrestle the title of Heir of Gremory for yourself, become the True Harem King and crush all your enemies underfoot while bringing glory to the name of Gremory. \n\n\n",
-    "uid": "FiDdD"
+    "desc": "Aren't you tired watching the same protagonists doing the same stuff over and over again. Well never fear because I have an alterantive.\nYou will Subsitute[T5] as Millicas Gremory the nephew of Rias Gremory and you will be the one that through sheer force of will, determination, strength and charisma will be able to wrestle the title of Heir of Gremory for yourself, become the True Harem King and crush all your enemies underfoot while bringing glory to the name of Gremory. \n\n\n"
   },
   {
     "reward": "75 credits and the instant capture of Rias Gremory.",
@@ -1141,6 +1210,7 @@
     "rewardType": "Other",
     "source": "",
     "title": "Dragon Slayer",
+    "uid": "rCUSa",
     "loca": "Generic",
     "lewd": false,
     "scope": "Standard",
@@ -1154,8 +1224,7 @@
       }
     ],
     "budget": 0,
-    "desc": "Kill a Dragon with your own two hands, any dragon from any setting will do: Ancologia from Fairy Tail, Smaug from Middle-Earth, Alduin from Elder Scrolls, Deadwing from Warcraft, Ladon from Percy Jackson; as long as the creature or individual you kill has a draconic trait it will be eligible for completing the mission",
-    "uid": "rCUSa"
+    "desc": "Kill a Dragon with your own two hands, any dragon from any setting will do: Ancologia from Fairy Tail, Smaug from Middle-Earth, Alduin from Elder Scrolls, Deathwing from Warcraft, Ladon from Percy Jackson; as long as the creature or individual you kill has a draconic trait it will be eligible for completing the mission"
   },
   {
     "reward": 50,
@@ -9294,10 +9363,153 @@
     "uid": "bxuty"
   },
   {
-    "lewd": false,
-    "budget": 5,
-    "loca": "Avatar",
+    "reward": "Korra[Tier 6] for Free.",
     "image": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/yvnsafyxu5ha4j8ml7hf.png",
+    "author": "Zaralann",
+    "rewardType": "Companions",
+    "source": "",
+    "title": "Duty and Obligation...",
+    "uid": "wWfPr",
+    "loca": "Avatar",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "You gain [Soul Talent] for Free.",
+        "type": "Perks",
+        "value": "Capture Katara."
+      },
+      {
+        "reward": "You gain [Covert Talent] for Free.",
+        "type": "Perks",
+        "value": "Prevent Zuko and Iroh from finding out about Aang's existence."
+      },
+      {
+        "reward": "You gain [Martial Talent] for Free.",
+        "type": "Perks",
+        "value": "Capture Suki."
+      },
+      {
+        "reward": "You gain [Alluring Whisper] for Free.",
+        "type": "Perks",
+        "value": "Free the Earthbenders from the Prison Rig."
+      },
+      {
+        "reward": "You gain [Blessed Talent] for Free.",
+        "type": "Perks",
+        "value": "Stop Hei Bai, Selling is acceptable."
+      },
+      {
+        "reward": "You gain [Communication Talent] for Free.",
+        "type": "Perks",
+        "value": "Acquire the Waterbending Scroll without conflict and give it to Katara."
+      },
+      {
+        "reward": "You gain [Body Tune-Up] and [Athletic Talent] for Free.",
+        "type": "Perks",
+        "value": "Stop Jet and his plans, Selling is acceptable."
+      },
+      {
+        "reward": "You gain [Alluring Whisper: Siren’s Song] for Free.",
+        "type": "Perks",
+        "value": "Ensure peace between Gan Jin and Zhang Tribes before finishing crossing the Great Divide."
+      },
+      {
+        "reward": "You gain [Arlo] for Free.",
+        "type": "Perks",
+        "value": "Capture Meng."
+      },
+      {
+        "reward": "You gain [Trace Defense(II)] for Free.",
+        "type": "Perks",
+        "value": "Capture June."
+      },
+      {
+        "reward": "You gain [Science Talent] and [Engineering Talent] for Free.",
+        "type": "Perks",
+        "value": "Expose Mechanist's betrayal, stop the Fire Nation's attack on the Northern Air Temple and prevent them from acquiring the hot air balloon technology."
+      },
+      {
+        "reward": "You gain [Land Talent] for Free.",
+        "type": "Perks",
+        "value": "Capture Yue."
+      },
+      {
+        "reward": "You gain [Environmental Defense] for Free.",
+        "type": "Perks",
+        "value": "Defend the Northern Water Tribe from the attack of the Fire Nation."
+      },
+      {
+        "reward": "You gain [Stress Defense(II)] for Free.",
+        "type": "Perks",
+        "value": "Dispose of Zhao, Selling is acceptable."
+      },
+      {
+        "reward": "You gain [Body Defense(II)] for Free.",
+        "type": "Perks",
+        "value": "Liberate Omashu."
+      },
+      {
+        "reward": "You gain [Zenryoku Zenkai], [Tsundere Service] and [Don’t Stand So Close to Me] for Free.",
+        "type": "Perks",
+        "value": "Capture Azula, Ty Lee and Mai."
+      },
+      {
+        "reward": "You gain Holo[Tier 5] for Free.",
+        "type": "Companions",
+        "value": "Defend the Chin Village from Rough Rhinos."
+      },
+      {
+        "reward": "You gain Maki Oze[Tier 5] for Free.",
+        "type": "Companions",
+        "value": "Capture Toph Bei Fong."
+      },
+      {
+        "reward": "You gain Crossbreed Priscilla[Tier 6] for Free.",
+        "type": "Companions",
+        "value": "Take every book, text and scroll from Wan Shi Tong's Library without being caught by Wan Shi Tong."
+      },
+      {
+        "reward": "You gain [Creature Defense(II)] for Free.",
+        "type": "Perks",
+        "value": "Cross the Serpent's Pass, help refuges and kill the serpent guading it."
+      },
+      {
+        "reward": "You gain Morgiana[Tier 5] for Free.",
+        "type": "Companions",
+        "value": "Stop/Destroy the Drill."
+      },
+      {
+        "reward": "You gain [Love Spot] for Free.",
+        "type": "Perks",
+        "value": "Expose Long Feng and ensure that Ba Sing Se does not fall."
+      },
+      {
+        "reward": "You gain [Faerie Feast] for Free.",
+        "type": "Perks",
+        "value": "Capture Jin."
+      },
+      {
+        "reward": "You gain [Potpourri] for Free.",
+        "type": "Perks",
+        "value": "Clear the lake around Jang Hui and stop the factories."
+      },
+      {
+        "reward": "You gain Kamado Nezuko[Tier 5] for Free.",
+        "type": "Companions",
+        "value": "Dispose of Hama, Selling is acceptable."
+      },
+      {
+        "reward": "You gain [Template Stacking(I)] for Avatar.",
+        "type": "Perks",
+        "value": "Ensure Victory on the Day of the Black Sun."
+      },
+      {
+        "reward": "You gain [Template Stacking(II)] for Avatar.",
+        "type": "Perks",
+        "value": "Kill/Sell Fire Lord Ozai in one-on-one battle with no outside help."
+      }
+    ],
     "conditions": [
       {
         "value": "You must Purchase [Added Potential] to become a Bender of any Element."
@@ -9318,7 +9530,7 @@
         "value": "You cannot leave the World until the Mission is complete."
       },
       {
-        "value": "You cannot bring any Waifu with you, no time will pass for them while you accomplish the Mission. The only Waifu allowed are the ones Capture here or that came as Rewards from Objectives."
+        "value": "You cannot bring any Waifu with you, no time will pass for them while you accomplish the Mission. The only Waifu allowed are the ones Captured here or that came as Rewards from Objectives."
       },
       {
         "value": "You cannot purchase any Waifu for the duration of this Mission."
@@ -9330,151 +9542,8 @@
         "value": "For the duration of this Mission Aang is immune to every method of Binding and Lures."
       }
     ],
-    "objectives": [
-      {
-        "value": "Capture Katara.",
-        "type": "Perks",
-        "reward": "You gain [Soul Talent] for Free."
-      },
-      {
-        "value": "Prevent Zuko and Iroh from finding out about Aang's existence.",
-        "type": "Perks",
-        "reward": "You gain [Covert Talent] for Free."
-      },
-      {
-        "value": "Capture Suki.",
-        "type": "Perks",
-        "reward": "You gain [Martial Talent] for Free."
-      },
-      {
-        "value": "Free the Earthbenders from the Prison Rig.",
-        "type": "Perks",
-        "reward": "You gain [Alluring Whisper] for Free."
-      },
-      {
-        "type": "Perks",
-        "value": "Stop Hei Bai, Selling is acceptable.",
-        "reward": "You gain [Blessed Talent] for Free."
-      },
-      {
-        "value": "Acquire the Waterbending Scroll without conflict and give it to Katara.",
-        "reward": "You gain [Communication Talent] for Free.",
-        "type": "Perks"
-      },
-      {
-        "value": "Stop Jet and his plans, Selling is acceptable.",
-        "reward": "You gain [Body Tune-Up] and [Athletic Talent] for Free.",
-        "type": "Perks"
-      },
-      {
-        "value": "Ensure peace between Gan Jin and Zhang Tribes before finishing crossing the Great Divide.",
-        "reward": "You gain [Alluring Whisper: Siren’s Song] for Free.",
-        "type": "Perks"
-      },
-      {
-        "reward": "You gain [Arlo] for Free.",
-        "type": "Perks",
-        "value": "Capture Meng."
-      },
-      {
-        "value": "Capture June.",
-        "type": "Perks",
-        "reward": "You gain [Trace Defense(II)] for Free."
-      },
-      {
-        "reward": "You gain [Science Talent] and [Engineering Talent] for Free.",
-        "value": "Expose Mechanist's betrayal, stop the Fire Nation's attack on the Northern Air Temple and prevent them from acquiring the hot air balloon technology.",
-        "type": "Perks"
-      },
-      {
-        "value": "Capture Yue.",
-        "reward": "You gain [Land Talent] for Free.",
-        "type": "Perks"
-      },
-      {
-        "value": "Defend the Northern Water Tribe from the attack of the Fire Nation.",
-        "reward": "You gain [Environmental Defense] for Free.",
-        "type": "Perks"
-      },
-      {
-        "value": "Dispose of Zhao, Selling is acceptable.",
-        "type": "Perks",
-        "reward": "You gain [Stress Defense(II)] for Free."
-      },
-      {
-        "value": "Liberate Omashu.",
-        "type": "Perks",
-        "reward": "You gain [Body Defense(II)] for Free."
-      },
-      {
-        "value": "Capture Azula, Ty Lee and Mai.",
-        "reward": "You gain [Zenryoku Zenkai], [Tsundere Service] and [Don’t Stand So Close to Me] for Free.",
-        "type": "Perks"
-      },
-      {
-        "type": "Companions",
-        "value": "Defend the Chin Village from Rough Rhinos.",
-        "reward": "You gain Holo[Tier 5] for Free."
-      },
-      {
-        "value": "Capture Toph Bei Fong.",
-        "reward": "You gain Maki Oze[Tier 5] for Free.",
-        "type": "Companions"
-      },
-      {
-        "reward": "You gain Crossbreed Priscilla[Tier 6] for Free.",
-        "value": "Take every book, text and scroll from Wan Shi Tong's Library without being caught by Wan Shi Tong.",
-        "type": "Companions"
-      },
-      {
-        "reward": "You gain [Creature Defense(II)] for Free.",
-        "type": "Perks",
-        "value": "Cross the Serpent's Pass, help refuges and kill the serpent guading it."
-      },
-      {
-        "value": "Stop/Destroy the Drill.",
-        "reward": "You gain Morgiana[Tier 5] for Free.",
-        "type": "Companions"
-      },
-      {
-        "type": "Perks",
-        "reward": "You gain [Love Spot] for Free.",
-        "value": "Expose Long Feng and ensure that Ba Sing Se does not fall."
-      },
-      {
-        "value": "Capture Jin.",
-        "type": "Perks",
-        "reward": "You gain [Faerie Feast] for Free."
-      },
-      {
-        "reward": "You gain [Potpourri] for Free.",
-        "type": "Perks",
-        "value": "Clear the lake arounJang Hui and stop the factories."
-      },
-      {
-        "value": "Dispose of Hama, Selling is acceptable.",
-        "type": "Companions",
-        "reward": "You gain Kamado Nezuko[Tier 5] for Free."
-      },
-      {
-        "value": "Ensure Victory on the Day of the Black Sun.",
-        "type": "Perks",
-        "reward": "You gain [Template Stacking(I)] for Avatar."
-      },
-      {
-        "value": "Kill/Sell Fire Lord Ozai in one-on-one battle with no outside help.",
-        "type": "Perks",
-        "reward": "You gain [Template Stacking(II)] for Avatar."
-      }
-    ],
-    "rewardType": "Companions",
-    "source": "",
-    "scope": "Grand",
-    "reward": "Korra[Tier 6] for Free.",
-    "title": "Duty and Obligation...",
-    "author": "Zaralann",
-    "desc": "Welcome on the path of preventing a fallacy from being comitted, from a misunderstanding becoming the norm. You all know about the 'Avatar' and how he or she has a duty to uphold the balance between the Humans and Spirits? But since when did it involve being a vigilante or stopping fights between Humans? Something went wrong and now you must make it right!",
-    "uid": "wWfPr"
+    "budget": 5,
+    "desc": "Welcome on the path of preventing a fallacy from being comitted, from a misunderstanding becoming the norm. You all know about the 'Avatar' and how he or she has a duty to uphold the balance between the Humans and Spirits? But since when did it involve being a vigilante or stopping fights between Humans? Something went wrong and now you must make it right!"
   },
   {
     "budget": 1500,

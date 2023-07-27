@@ -6,6 +6,15 @@
       </h2>
       <div>
         <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          23 July 2023
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~160 new user submitted characters, new worlds, new missions</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
           16 July 2023
         </h3>
         <ul class="list-decimal list-inside">

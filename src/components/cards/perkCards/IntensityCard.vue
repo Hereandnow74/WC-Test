@@ -36,7 +36,7 @@
     <div v-if="perk.intensity" class="px-2 flex gap-2">
       Bonus:
       <span
-        v-if="perk.intensity < 1"
+        v-if="perk.intensity < 10"
         text="green-600 dark:green-300"
       >{{ Math.round(baseBudgetAfter * perk.intensity) }}
         ({{ Math.round(perk.intensity * 100) }}%)

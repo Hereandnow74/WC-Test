@@ -3205,10 +3205,15 @@
     "b": [
       "F",
       "C",
+      "sc",
       "hp",
+      "th",
       "ai",
+      "sr",
       "al",
-      "cm"
+      "cm",
+      "rw",
+      "ha"
     ],
     "d": "Final Fantasy 14"
   },
@@ -19894,6 +19899,7 @@
     "b": [
       "F",
       "hr",
+      "ps",
       "dr",
       "sc",
       "py",
@@ -20171,7 +20177,7 @@
   {
     "u": 4808,
     "n": "Gwen Tennyson",
-    "t": 8,
+    "t": 7,
     "i": "https://i.imgur.com/s66n1Qgl.jpg",
     "s": "https://i.imgur.com/s66n1Qg.jpg",
     "w": "Ben 10",
@@ -20180,6 +20186,8 @@
       "P",
       "hz",
       "ps",
+      "dr",
+      "sc",
       "di",
       "py",
       "dn",
@@ -20224,7 +20232,7 @@
   {
     "u": 4812,
     "n": "Elena Validus",
-    "t": 5,
+    "t": 6,
     "i": "https://i.imgur.com/CfjsGSsl.jpg",
     "s": "https://i.imgur.com/CfjsGSs.jpg",
     "w": "Ben 10",
@@ -20232,6 +20240,7 @@
       "F",
       "hz",
       "en",
+      "sn",
       "ai",
       "cb",
       "sr",
@@ -20449,6 +20458,7 @@
     "w": "Ben 10",
     "b": [
       "F",
+      "mt",
       "mo"
     ]
   },
@@ -22952,6 +22962,8 @@
       "F",
       "C",
       "hz",
+      "dr",
+      "id",
       "ev",
       "vn",
       "cm"
@@ -24101,7 +24113,7 @@
   },
   {
     "u": 5060,
-    "n": "Buffy Summers",
+    "n": "Buffy Anne Summers",
     "t": 4,
     "i": "259d91830877d37984a82ad3b17220cc.jpg",
     "s": "https://i.pinimg.com/564x/25/9d/91/259d91830877d37984a82ad3b17220cc.jpg",
@@ -24113,6 +24125,8 @@
       "di",
       "sl",
       "dn",
+      "sa",
+      "pr",
       "cm",
       "sh"
     ]
@@ -25352,7 +25366,7 @@
   },
   {
     "u": 623,
-    "n": "Vlad \"Dracula\" Ţepeş",
+    "n": "Vlad \"Dracula\" Tepes",
     "t": 6,
     "i": "[n]priscila-grant-dracula.jpg",
     "s": "https://cdnb.artstation.com/p/assets/images/images/025/084/233/large/priscila-grant-dracula.jpg",
@@ -26427,6 +26441,7 @@
       "C",
       "cl",
       "ps",
+      "id",
       "sc",
       "py",
       "sl",
@@ -29611,6 +29626,7 @@
     "b": [
       "M",
       "cl",
+      "ps",
       "dr",
       "sc",
       "py",
@@ -30006,6 +30022,7 @@
       "C",
       "P",
       "hz",
+      "me",
       "cm"
     ],
     "in": "https://i.imgur.com/6AYBh1r.png"
@@ -30312,7 +30329,7 @@
   {
     "u": 5153,
     "n": "Giganta/Doris Zuel",
-    "t": 9,
+    "t": 7,
     "i": "giganta_0005.jpg",
     "s": "https://vignette.wikia.nocookie.net/marvel_dc/images/0/06/Giganta_0005.jpg/revision/latest?cb=20120512215513",
     "w": "DC",
@@ -30356,13 +30373,16 @@
     "w": "DC",
     "b": [
       "F",
+      "hz",
       "ps",
       "dr",
       "sc",
       "di",
+      "wh",
       "me",
       "sp",
-      "cm"
+      "cm",
+      "pm"
     ]
   },
   {
@@ -31404,7 +31424,7 @@
   {
     "u": 5216,
     "n": "Supergirl/Linda Danvers",
-    "t": 9,
+    "t": 8,
     "i": "[n]zksszSn.jpg",
     "in": "https://cdn.imgchest.com/files/myd5cbxjd4b.jpg",
     "s": "https://cdn.imgchest.com/files/3yrgc6w3x4z.png",
@@ -31424,7 +31444,7 @@
   {
     "u": 5217,
     "n": "Supergirl/Matrix",
-    "t": 9,
+    "t": 8,
     "i": "pergirl_20and_20team_20luthor_20pin_20up_204.jpg",
     "s": "https://maidofmight.net/images/Supergirl%20and%20Team%20Luthor%20Pin%20Up%204.jpg",
     "w": "DC",
@@ -31558,9 +31578,9 @@
     "u": 5224,
     "n": "Superwoman/Lois Lane",
     "t": 8,
-    "i": "[n]dKNPaoN.jpg",
+    "i": "https://i.imgur.com/rIOkiSPl.jpg",
     "in": "https://tulip.paheal.net/_images/e259277de37c5eb8d5451607c39f306b/2935902%20-%20DC%20DCAU%20Lois_Lane%20Mavruda%20Superman%20Superman%3A_The_Animated_Series%20Superman_%28series%29.jpg",
-    "s": "https://cdn.imgchest.com/files/w7w6cqj5pye.jpg",
+    "s": "https://i.imgur.com/rIOkiSP.jpg",
     "w": "DC",
     "b": [
       "F",
@@ -32653,6 +32673,9 @@
       "C",
       "hz",
       "cl",
+      "ur",
+      "sl",
+      "sp",
       "az",
       "cm",
       "im",
@@ -43267,7 +43290,8 @@
     "i": "https://i.imgur.com/9H2k377l.jpg",
     "w": "The Elder Scrolls",
     "b": [
-      "M"
+      "M",
+      "cm"
     ],
     "d": "Skyrim",
     "s": "https://i.imgur.com/9H2k377.jpg"
@@ -45880,7 +45904,13 @@
     "w": "Exalted",
     "b": [
       "F",
-      "C"
+      "C",
+      "st",
+      "hz",
+      "cr",
+      "sl",
+      "ev",
+      "vn"
     ],
     "d": "Exalted - Infernals"
   },
@@ -45956,7 +45986,13 @@
     "w": "Exalted",
     "b": [
       "F",
-      "C"
+      "C",
+      "ps",
+      "fm",
+      "ip",
+      "fn",
+      "me",
+      "sh"
     ],
     "d": "Exalted - Sidereals"
   },
@@ -45969,7 +46005,16 @@
     "w": "Exalted",
     "b": [
       "F",
-      "C"
+      "C",
+      "ps",
+      "sc",
+      "di",
+      "fm",
+      "ip",
+      "dn",
+      "fn",
+      "cm",
+      "sh"
     ],
     "d": "Exalted - Sidereals"
   },
@@ -45982,7 +46027,18 @@
     "w": "Exalted",
     "b": [
       "F",
-      "C"
+      "C",
+      "cl",
+      "ps",
+      "sc",
+      "di",
+      "ip",
+      "sl",
+      "dn",
+      "fn",
+      "tc",
+      "cm",
+      "sh"
     ],
     "d": "Exalted - Sidereals"
   },
@@ -46062,7 +46118,16 @@
     "w": "Exalted",
     "b": [
       "F",
-      "C"
+      "C",
+      "hz",
+      "sl",
+      "me",
+      "tc",
+      "pt",
+      "gn",
+      "rl",
+      "sa",
+      "rw"
     ],
     "d": "Exalted - Solars (First Age)"
   },
@@ -46194,7 +46259,17 @@
     "w": "Exalted",
     "b": [
       "F",
-      "C"
+      "C",
+      "hz",
+      "cl",
+      "ps",
+      "ip",
+      "me",
+      "pc",
+      "gn",
+      "sa",
+      "cm",
+      "im"
     ],
     "d": "Exalted - Terrestrials"
   },
@@ -48869,7 +48944,8 @@
       "me",
       "gn",
       "cc",
-      "ha"
+      "ha",
+      "ke"
     ]
   },
   {
@@ -48882,10 +48958,14 @@
     "b": [
       "F",
       "C",
+      "sc",
       "fm",
+      "sl",
       "fn",
       "me",
-      "cm"
+      "cm",
+      "ha",
+      "te"
     ],
     "d": "Fate/ (Moon Cell)"
   },
@@ -49611,7 +49691,8 @@
       "ih",
       "de",
       "sa",
-      "sh"
+      "sh",
+      "pp"
     ],
     "d": "Fate/Requiem"
   },
@@ -52012,6 +52093,8 @@
     "b": [
       "F",
       "C",
+      "hr",
+      "hz",
       "mt",
       "sc",
       "mo",
@@ -55318,6 +55401,7 @@
     "w": "Generator Rex",
     "b": [
       "F",
+      "mt",
       "mo",
       "mu"
     ]
@@ -63211,6 +63295,7 @@
       "id",
       "dh",
       "cm",
+      "ye",
       "fa"
     ],
     "in": "https://cdn.donmai.us/original/38/eb/__nier_granblue_fantasy_drawn_by_tenken_gotannda__38ebd5dc34c683065d21e33867644a77.png"
@@ -68096,8 +68181,8 @@
     "u": 6426,
     "n": "Integra van Hellsing",
     "t": 3,
-    "i": "718118a992c3f1ef9fb6697236f95587.jpg",
-    "s": "https://i.pinimg.com/originals/71/81/18/718118a992c3f1ef9fb6697236f95587.jpg",
+    "i": "https://i.imgur.com/820Qs0tl.jpg",
+    "s": "https://i.imgur.com/820Qs0t.jpg",
     "w": "Hellsing",
     "b": [
       "F",
@@ -68578,7 +68663,6 @@
     "b": [
       "M",
       "dr",
-      "id",
       "dm",
       "dg",
       "sd",
@@ -68779,10 +68863,7 @@
     "b": [
       "M",
       "cl",
-      "id",
       "sc",
-      "di",
-      "ih",
       "th",
       "sa",
       "vn",
@@ -68801,10 +68882,8 @@
       "M",
       "ml",
       "dr",
-      "id",
       "dm",
       "dg",
-      "th",
       "mu",
       "sd",
       "pr",
@@ -69600,13 +69679,11 @@
     "b": [
       "F",
       "C",
-      "st",
       "hr",
       "mt",
       "cl",
       "ml",
       "ps",
-      "cr",
       "mo",
       "dm",
       "dg",
@@ -69843,10 +69920,9 @@
     "b": [
       "F",
       "C",
-      "ps",
-      "id",
-      "ip",
-      "dm"
+      "sl",
+      "dm",
+      "cm"
     ],
     "in": "https://tulip.paheal.net/_images/04a6c18d40c0d44f3b2d6a2e156722b9/1948712%20-%20High_School_DxD%20Venelana_Gremory.jpg"
   },
@@ -69967,8 +70043,10 @@
       "C",
       "st",
       "hr",
+      "hz",
       "mt",
       "cl",
+      "ps",
       "sc",
       "di",
       "dh",
@@ -72195,9 +72273,16 @@
     "w": "How to Train Your Dragon",
     "b": [
       "F",
+      "hr",
       "mt",
+      "cl",
+      "mo",
+      "sl",
+      "tw",
+      "ar",
+      "sa",
       "cm",
-      "mo"
+      "sh"
     ],
     "in": "http://lotus.paheal.net/_images/986e4ca09b807b6d057135f011e047b0/1982015%20-%20How_to_Train_Your_Dragon%20Ruffnut%20chromosomefarm.jpg",
     "d": "Hooligan Tribe"
@@ -74200,7 +74285,8 @@
       "cm",
       "sh",
       "Submarine",
-      "sg"
+      "sg",
+      "fa"
     ],
     "d": "IJN"
   },
@@ -79476,7 +79562,8 @@
       "cm",
       "pm"
     ],
-    "d": "Kingdom Hearts"
+    "d": "Kingdom Hearts",
+    "in": "https://pictures.hentai-foundry.com/m/Mircoelisa/619379/Mircoelisa-619379-Kairi.jpg"
   },
   {
     "u": 7571,
@@ -80439,8 +80526,12 @@
     "b": [
       "M",
       "dr",
+      "dn",
+      "hl",
+      "lv",
       "me",
       "cc",
+      "nd",
       "pr",
       "cm",
       "sh"
@@ -80787,7 +80878,7 @@
   },
   {
     "u": 10970,
-    "n": "Yukina",
+    "n": "Kajika",
     "t": 2,
     "i": "7f0661252515d19a1b3e2ad31e16cc9e.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/5296927",
@@ -80809,7 +80900,7 @@
   },
   {
     "u": 10972,
-    "n": "Kajika",
+    "n": "Yukina",
     "t": 2,
     "i": "sample_08a1ede17dbc998837413d9e0a4aff82.jpg",
     "s": "https://chan.sankakucomplex.com/post/show/5846481",
@@ -86169,7 +86260,7 @@
     "t": 1,
     "i": "c9ad9ad08f8aeb9da20133fce2ff0bff.jpg",
     "s": "https://e621.net/post/show/1835098",
-    "w": "Looney Tunes",
+    "w": "Loony Tunes",
     "b": [
       "F"
     ]
@@ -87431,6 +87522,7 @@
       "rl",
       "mm",
       "sa",
+      "im",
       "fa"
     ],
     "d": "Original"
@@ -93140,17 +93232,6 @@
     "in": "https://static1.e621.net/data/7c/4b/7c4b01b6685731955fd8eb664b4d734a.jpg"
   },
   {
-    "u": 12422,
-    "n": "Princess koopa",
-    "t": 5,
-    "i": "044535456185987f82d0dde5358de611.jpg",
-    "s": "https://e621.net/post/show/1801490",
-    "w": "Mario Series",
-    "b": [
-      "F"
-    ]
-  },
-  {
     "u": 1756,
     "n": "Goomba",
     "t": 2,
@@ -94970,7 +95051,8 @@
       "wh",
       "rw"
     ],
-    "in": "http://pictures.hentai-foundry.com/p/personalami/876026/personalami-876026-Scarlet_witch.jpg"
+    "in": "http://pictures.hentai-foundry.com/p/personalami/876026/personalami-876026-Scarlet_witch.jpg",
+    "d": "Marvel (616)"
   },
   {
     "u": 9647,
@@ -95001,14 +95083,23 @@
     "b": [
       "F",
       "C",
+      "hr",
+      "hz",
+      "ps",
       "dr",
       "id",
-      "ih",
+      "pl",
+      "sc",
+      "di",
+      "tm",
       "gd",
       "wh",
-      "cm",
-      "is",
-      "nc"
+      "sr",
+      "rl",
+      "al",
+      "rw",
+      "im",
+      "pm"
     ],
     "in": "http://pictures.hentai-foundry.com/d/DevilHS/621936/DevilHS-621936-Hela.jpg",
     "d": "Marvel (616)"
@@ -95070,7 +95161,8 @@
       "gn",
       "rg",
       "cm"
-    ]
+    ],
+    "d": "Marvel (616)"
   },
   {
     "u": 9652,
@@ -95223,7 +95315,8 @@
       "cm",
       "im"
     ],
-    "in": "https://cdn.imgchest.com/files/pyvdc6v9dyk.jpeg"
+    "in": "https://cdn.imgchest.com/files/pyvdc6v9dyk.jpeg",
+    "d": "Marvel (616)"
   },
   {
     "u": 9660,
@@ -96045,8 +96138,8 @@
     "u": 8421,
     "n": "Rachni Queen",
     "t": 6,
-    "i": "d4vsbif_06a581e3_900c_42ef_8c8f_ff874a1599ff.jpg",
-    "s": "https://www.deviantart.com/hallucinogenmushroom/art/The-Rachni-Queen-295254087",
+    "i": "https://i.imgur.com/22srHAJl.jpg",
+    "s": "https://i.imgur.com/22srHAJ.jpg",
     "w": "Mass Effect",
     "b": [
       "F",
@@ -96057,7 +96150,8 @@
       "sc",
       "py",
       "rl",
-      "al"
+      "al",
+      "sy"
     ]
   },
   {
@@ -96935,7 +97029,7 @@
   {
     "u": 2855,
     "n": "Ciel",
-    "t": 4,
+    "t": 7,
     "i": "[n]ZTtVfct.jpg",
     "s": "https://cdn.donmai.us/original/ed/a1/__ciel_mega_man_and_1_more_drawn_by_semikichi__eda149adc84b03690d76d5f40e1ab25d.jpg",
     "w": "Mega Man",
@@ -101403,8 +101497,8 @@
     "u": 11859,
     "n": "Fairy Queen / \"Titania\"",
     "t": 7,
-    "i": "c6d47c15f2593c3e14a40f443134e5e2.jpg",
-    "s": "https://chan.sankakucomplex.com/post/show/6744162",
+    "i": "[n]gjBVTHo.jpg",
+    "s": "https://static.miraheze.org/monstergirlencyclopediawiki/e/ec/Titania_0.jpg",
     "w": "Monster Girl Encyclopedia",
     "b": [
       "F",
@@ -105244,7 +105338,6 @@
     "w": "My Hero Academia",
     "b": [
       "M",
-      "st",
       "cl",
       "sd",
       "sp",
@@ -105418,7 +105511,7 @@
     "b": [
       "F",
       "C",
-      "st",
+      "sl",
       "MILF"
     ],
     "d": "Civilians",
@@ -105604,9 +105697,7 @@
     "b": [
       "F",
       "C",
-      "st",
       "cl",
-      "ps",
       "sd",
       "sp",
       "cm"
@@ -109997,7 +110088,8 @@
       "fn",
       "lm",
       "ev",
-      "is"
+      "is",
+      "ir"
     ],
     "d": "Servants - Berserker"
   },
@@ -110014,12 +110106,13 @@
       "dr",
       "sc",
       "fm",
+      "sl",
+      "fn",
       "lm",
       "en",
       "sn",
       "gn",
-      "sl",
-      "fn"
+      "ir"
     ],
     "d": "Servants - Caster"
   },
@@ -110103,6 +110196,7 @@
       "ip",
       "lm",
       "rg",
+      "ir",
       "sh"
     ],
     "d": "Servants - Avenger"
@@ -110161,6 +110255,7 @@
       "fn",
       "lm",
       "tn",
+      "ir",
       "sh"
     ],
     "d": "Servants - Assassin"
@@ -110177,10 +110272,11 @@
       "dr",
       "sc",
       "fm",
+      "sl",
+      "fn",
       "lm",
       "rl",
-      "sl",
-      "fn"
+      "ir"
     ],
     "d": "Servants - Berserker",
     "s": "https://cdn.donmai.us/original/8f/1b/__eric_bloodaxe_fate_and_1_more_drawn_by_akagishi_k__8f1b135ac29c9ec650b34b222a77c904.jpg"
@@ -110197,9 +110293,10 @@
       "dr",
       "sc",
       "fm",
-      "lm",
       "sl",
-      "fn"
+      "fn",
+      "lm",
+      "ir"
     ],
     "d": "Servants - Saber",
     "s": "https://static.zerochan.net/Saber.%28Fergus.mac.Róich%29.full.2730135.png"
@@ -110575,6 +110672,7 @@
     "w": "Nasuverse",
     "b": [
       "M",
+      "P",
       "cl",
       "dr",
       "id",
@@ -111228,6 +111326,7 @@
     "b": [
       "M",
       "ps",
+      "di",
       "ip",
       "me",
       "tc",
@@ -113470,6 +113569,7 @@
     "b": [
       "M",
       "hr",
+      "hz",
       "mt",
       "cl",
       "sc",
@@ -113879,7 +113979,6 @@
     "w": "One Piece",
     "b": [
       "M",
-      "st",
       "hr",
       "hz",
       "cl",
@@ -113908,6 +114007,7 @@
       "M",
       "hr",
       "hz",
+      "cl",
       "sc",
       "mu",
       "pi",
@@ -114122,6 +114222,7 @@
     "b": [
       "F",
       "C",
+      "cl",
       "ps",
       "ip",
       "ar",
@@ -114179,6 +114280,8 @@
     "b": [
       "F",
       "C",
+      "hz",
+      "cl",
       "di",
       "dn",
       "dh",
@@ -117725,6 +117828,7 @@
     "w": "Shin Megami Tensei",
     "b": [
       "M",
+      "mt",
       "cl",
       "mo",
       "py",
@@ -118587,17 +118691,24 @@
     "u": 7905,
     "n": "Cynthia",
     "t": 7,
-    "i": "sample_a43c9f32fda058bc2bdce18e8cba84e2.jpg",
-    "s": "https://chan.sankakucomplex.com/post/show/16940653",
+    "i": "[n]wZyOfTu.jpg",
+    "s": "https://cdn.donmai.us/sample/81/61/__cynthia_pokemon_and_2_more_drawn_by_oyasu_kinakoyamamori__sample-81618966d6b9ed54d7f0a3453a8d7864.jpg",
     "w": "Pokemon",
     "d": "4/Sinnoh",
     "b": [
       "F",
       "C",
+      "st",
+      "hr",
+      "hz",
       "mt",
-      "mo"
+      "cl",
+      "mo",
+      "sl",
+      "nd",
+      "sa"
     ],
-    "in": "https://pictures.hentai-foundry.com/a/Afrobull/585264/Afrobull-585264-Cynthia.png"
+    "in": "https://pictures.hentai-foundry.com/t/TheKite/1037185/TheKite-1037185-Weekly_Regal_Swimsuit_Cynthia_V1.png"
   },
   {
     "u": 7906,
@@ -119922,6 +120033,7 @@
     "b": [
       "F",
       "C",
+      "mt",
       "mo",
       "mi",
       "vn"
@@ -119938,6 +120050,7 @@
     "b": [
       "F",
       "C",
+      "mt",
       "mo"
     ],
     "s": "https://pbs.twimg.com/media/DziSjnDVYAAy8PW.jpg",
@@ -119952,6 +120065,7 @@
     "b": [
       "F",
       "C",
+      "mt",
       "mo",
       "vn"
     ],
@@ -123300,8 +123414,11 @@
     "i": "[n]CSpIGdz.jpg",
     "w": "Pokemon",
     "b": [
+      "O",
+      "ps",
       "py",
-      "mr"
+      "mr",
+      "ge"
     ],
     "s": "https://i.pinimg.com/originals/f6/20/6c/f6206c62a1ee38e5ecf88ca166e51c8e.jpg"
   },
@@ -123312,8 +123429,11 @@
     "i": "[n]GOlvxPZ.jpg",
     "w": "Pokemon",
     "b": [
+      "O",
+      "ps",
       "py",
-      "mr"
+      "mr",
+      "ge"
     ],
     "s": "https://s1.zerochan.net/Cosmoem.600.2846641.jpg"
   },
@@ -129680,15 +129800,10 @@
       "ps",
       "id",
       "pl",
-      "ur",
-      "sc",
       "tm",
-      "sl",
       "hp",
-      "dc",
       "en",
       "sn",
-      "tc",
       "gn",
       "sa"
     ]
@@ -135038,7 +135153,7 @@
     "i": "d_buhc_uiaacjbo.jpg",
     "s": "https://pbs.twimg.com/media/D_Buhc_UIAACjbO.jpg",
     "w": "Nasuverse",
-    "d": "Servants - Archer",
+    "d": "Servants - Avenger",
     "b": [
       "F",
       "C",
@@ -137991,7 +138106,7 @@
     "t": 4,
     "i": "[n]nHZcNgD.jpg",
     "s": "https://cdn.donmai.us/sample/97/4c/__rottytops_shantae_drawn_by_rtil__sample-974c4748ca5388472524e4b8c1b523a0.jpg",
-    "w": "Shantae series",
+    "w": "Shantae",
     "b": [
       "F",
       "C",
@@ -138012,7 +138127,7 @@
     "t": 4,
     "i": "[n]DzlafhF.jpg",
     "s": "https://cdn.donmai.us/original/a6/5b/__sky_shantae_drawn_by_takuyarawr__a65b472cea69a9e0ee7a6850820c3ccf.png",
-    "w": "Shantae series",
+    "w": "Shantae",
     "b": [
       "F",
       "C",
@@ -138028,7 +138143,7 @@
     "t": 5,
     "i": "[n]XVMwDFW.jpg",
     "s": "https://cdnb.artstation.com/p/assets/images/images/009/751/287/large/alexander-souto-risky-boots-pirate-queen.jpg",
-    "w": "Shantae series",
+    "w": "Shantae",
     "b": [
       "F",
       "C",
@@ -138049,7 +138164,7 @@
     "t": 7,
     "i": "[n]YBvtfTF.jpg",
     "s": "https://cdn.donmai.us/sample/7f/78/__shantae_shantae_drawn_by_moisture_chichi__sample-7f78f212e76b190180c67ffac9253ec2.jpg",
-    "w": "Shantae series",
+    "w": "Shantae",
     "b": [
       "F",
       "C",
@@ -141422,6 +141537,7 @@
     "w": "Smite",
     "b": [
       "F",
+      "fm",
       "fn",
       "gd"
     ],
@@ -144655,6 +144771,7 @@
     "w": "Starcraft",
     "b": [
       "F",
+      "ps",
       "py",
       "mr",
       "ev",
@@ -145473,7 +145590,7 @@
   },
   {
     "u": 4913,
-    "n": "Karin",
+    "n": "Karin Kanzuki",
     "t": 3,
     "i": "by_hankuri__172990122ee88e516b6ab0ad2962058d.jpg",
     "s": "https://danbooru.donmai.us/data/__kanzuki_karin_street_fighter_and_2_more_drawn_by_hankuri__172990122ee88e516b6ab0ad2962058d.jpg",
@@ -145627,7 +145744,7 @@
   },
   {
     "u": 9158,
-    "n": "Sakura",
+    "n": "Sakura Kasugano",
     "t": 3,
     "i": "tch__sample_e5ac980f20131cd3c6a6995f41150e2d.jpg",
     "s": "https://danbooru.donmai.us/data/sample/__kasugano_sakura_street_fighter_and_1_more_drawn_by_x_chitch__sample-e5ac980f20131cd3c6a6995f41150e2d.jpg",
@@ -152880,6 +152997,7 @@
     "b": [
       "F",
       "C",
+      "cl",
       "ps",
       "sc",
       "py",
@@ -155498,6 +155616,7 @@
     "b": [
       "F",
       "mt",
+      "ps",
       "mo",
       "py"
     ],
@@ -155696,8 +155815,10 @@
     "b": [
       "F",
       "C",
+      "hz",
       "mt",
       "cl",
+      "ml",
       "ps",
       "id",
       "sc",
@@ -155804,6 +155925,7 @@
       "dr",
       "id",
       "bk",
+      "th",
       "me",
       "vp",
       "gn",
@@ -155824,6 +155946,7 @@
       "dr",
       "di",
       "dn",
+      "th",
       "me",
       "un",
       "vp",
@@ -159408,6 +159531,7 @@
       "ml",
       "dr",
       "pl",
+      "di",
       "tm",
       "sl",
       "dn",
@@ -163292,6 +163416,7 @@
     "b": [
       "F",
       "C",
+      "di",
       "dn",
       "el"
     ],
@@ -163307,6 +163432,7 @@
     "b": [
       "F",
       "C",
+      "ps",
       "ip",
       "hl",
       "gd",
@@ -163401,24 +163527,26 @@
     "u": 8868,
     "n": "Hellebron",
     "t": 7,
-    "i": "[n]fEcALKw.jpg",
+    "i": "https://i.imgur.com/U9I0ySUl.jpg",
     "w": "Warhammer Fantasy",
     "b": [
       "F",
       "C",
       "st",
       "hr",
+      "hz",
+      "cl",
       "ml",
       "ur",
       "cr",
-      "de",
       "el",
       "pt",
       "ev",
+      "rl",
       "cm"
     ],
     "d": "Naggaroth (Dark Elves)",
-    "s": "https://i.ytimg.com/vi/uGvk0hdz2oE/maxresdefault.jpg"
+    "s": "https://i.imgur.com/U9I0ySU.jpg"
   },
   {
     "u": 8869,
@@ -165314,7 +165442,7 @@
   },
   {
     "u": 4651,
-    "n": "Taylor Hebert/Skitter/Weaver",
+    "n": "Taylor Anne Hebert/Skitter/Weaver",
     "t": 5,
     "i": "dc2cm4o_7288bc2e_bb6e_4aca_99c2_6f7dc42de533.png",
     "s": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6b232c6b-913f-4340-8f47-1f0f87e50c62/dc2cm4o-7288bc2e-bb6e-4aca-99c2-6f7dc42de533.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzZiMjMyYzZiLTkxM2YtNDM0MC04ZjQ3LTFmMGY4N2U1MGM2MlwvZGMyY200by03Mjg4YmMyZS1iYjZlLTRhY2EtOTljMi02ZjdkYzQyZGU1MzMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.gnL3ZqgvxFXwpPJtr-HSFpoceFOL90WPRXsWu1EolX8",
@@ -165325,6 +165453,7 @@
       "st",
       "mt",
       "cl",
+      "ps",
       "di",
       "mo",
       "dn",
@@ -165487,6 +165616,7 @@
     "b": [
       "F",
       "st",
+      "cl",
       "ps",
       "pl",
       "sc",
@@ -165537,6 +165667,8 @@
     "w": "Worm",
     "b": [
       "F",
+      "hz",
+      "cl",
       "sl",
       "sp",
       "sr",
@@ -167236,7 +167368,11 @@
     "s": "https://img3.gelbooru.com//images/b5/79/b579660e759c1550ab7fbae3270fb97e.jpg",
     "w": "Yu-Gi-Oh!",
     "b": [
-      "M"
+      "M",
+      "ps",
+      "cr",
+      "py",
+      "Duelist"
     ]
   },
   {
@@ -167327,7 +167463,10 @@
     "s": "https://img3.gelbooru.com//images/1a/29/1a29606e221c6f4222447afc5b675e2d.jpg",
     "w": "Yu-Gi-Oh!",
     "b": [
-      "M"
+      "M",
+      "sc",
+      "ha",
+      "Duelist"
     ]
   },
   {
@@ -167339,10 +167478,15 @@
     "w": "Yu-Gi-Oh!",
     "b": [
       "M",
+      "ps",
+      "dr",
       "cr",
       "sc",
+      "ip",
+      "bk",
       "me",
-      "vn"
+      "vn",
+      "Duelist"
     ]
   },
   {
@@ -167404,7 +167548,12 @@
     "w": "Yu-Gi-Oh!",
     "b": [
       "M",
-      "vn"
+      "ps",
+      "dr",
+      "cr",
+      "ip",
+      "vn",
+      "Duelist"
     ]
   },
   {
@@ -168038,8 +168187,12 @@
     "b": [
       "F",
       "C",
+      "tm",
+      "tn",
+      "me",
       "pc",
-      "el"
+      "el",
+      "sr"
     ]
   },
   {
