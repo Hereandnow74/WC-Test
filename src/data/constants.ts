@@ -42,6 +42,8 @@ export const nicknames = [
   'Kevin S.',
   'Joe T.',
   'Kaleb',
+  'Halfrican',
+  'John C. F.',
   'KatzSmile',
   'Cynicalto',
   'Beatrix',
@@ -165,6 +167,8 @@ export const waifuTags = {
   F: { tag: 'Female', category: 'Gender', short: 'F', effect: '', desc: '', color: 'bg-pink-500 text-white' },
   M: { tag: 'Male', category: 'Gender', short: 'M', effect: '', desc: '', color: 'bg-blue-500 text-white' },
   O: { tag: 'Other', category: 'Gender', short: 'O', effect: '', desc: 'Genderless or someone whose gender cannot be identified.', color: 'bg-fuchsia-700' },
+  Ft: { tag: 'Futanari', category: 'Gender', short: 'Ft', effect: '', desc: '', style: { background: 'linear-gradient(90deg, rgba(254,100,255,1) 0%, rgba(255,77,179,1) 50%, rgba(254,100,255,1) 100%)', color: '#000' } },
+
   C: { tag: 'Official WC', category: 'Utility', short: 'C', effect: '', desc: 'From official/canon spreadsheet.', color: 'bg-yellow-400 text-black' },
   P: { tag: 'Perk', category: 'Utility', short: 'P', effect: '', desc: 'Has a specific waifu perk.', color: 'bg-amber-200 text-black' },
 
@@ -241,6 +245,7 @@ export const waifuTags = {
   gn: { tag: 'Genius', category: 'Personality', short: 'gn', effect: '', desc: '', style: { background: 'linear-gradient(0deg, rgba(128,0,255,1) 0%, rgba(0,150,255,1) 100%)', color: '#fff' } },
   rl: { tag: 'Ruler', category: 'Occupation', short: 'rl', effect: '', desc: 'Rules over a country or region, need to have significant political power.', color: 'bg-[#FFD700] text-black' },
   tp: { tag: 'Trap', category: 'Personality', short: 'tp', effect: '', desc: 'Oh, she is cute, but its a boy!', style: { background: 'linear-gradient(0deg, rgba(227,125,255,1) 0%, rgba(132,194,255,1) 100%)', color: '#000' } },
+  mf: { tag: 'MILF', category: 'Other', short: 'mf', effect: '', desc: 'Mother I\'d Like to Fuck.', style: { background: 'linear-gradient(90deg, rgba(248,148,6,1) 0%, rgba(255,191,100,1) 50%, rgba(248,148,6,1) 100%)', color: '#000' } },
   mi: { tag: 'Multiple', category: 'Utility', short: 'mi', effect: '', desc: 'Package deal.', color: 'bg-teal-[#0ac781] text-black' },
   tw: { tag: 'Twins', category: 'Other', short: 'tw', effect: '', desc: 'Twins / Triplets / Quadruplets / etc.', color: 'bg-[#48d1cc] text-black' },
   cc: { tag: 'Crafter', category: 'Occupation', short: 'cc', effect: '', desc: 'Any producing profession - blacksmith/alchemist/artificer/tailor/etc.', style: { background: 'linear-gradient(0deg, rgb(160 97 33) 0%, rgba(225,141,55,1) 70%)', color: '#000' } },
@@ -249,7 +254,8 @@ export const waifuTags = {
   mg: { tag: 'Monster-girl', category: 'Race', short: 'mg', effect: '', desc: 'A Female who is partially a humanoid Monster, often portrayed as having perverse intentions rather than lethal with their prey.', style: { background: 'linear-gradient(0deg, rgba(255,62,169,1) 0%, rgba(74,129,255,1) 100%)', color: '#fff' } },
   nd: { tag: 'Nerd', category: 'Personality', short: 'nd', effect: '', desc: 'Extremely enthusiastic and knowledgeable about a particular subject, especially one of specialist or niche interest.', style: { background: 'linear-gradient(0deg, rgba(129,125,255,1) 0%, rgba(132,194,255,1) 100%)', color: '#fff' } },
   ar: { tag: 'Artist', category: 'Occupation', short: 'ar', effect: '', desc: 'Has artistic talent(s).', style: { 'background-image': 'url("https://i.imgur.com/bpLmuYhm.jpg")', 'background-size': 'cover', 'color': '#000' } },
-  sa: { tag: 'Strategist', category: 'Occupation', short: 'sa', effect: '', desc: 'Experienced in laying plans and developing strategies or tactics.', style: { background: 'linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(0,163,255,1) 80%)', color: '#fff' } },
+  sa: { tag: 'Strategist', category: 'Occupation', short: 'sa', effect: '', desc: 'A focused, analytical mind, devising well-planned tactics, optimizing resources, and leading teams to achieve success in various domains with a competitive edge.', style: { background: 'linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(0,163,255,1) 80%)', color: '#fff' } },
+  sm: { tag: 'Schemer', category: 'Occupation', short: 'sm', effect: '', desc: 'A crafty and cunning individual adept at devising manipulative and secretive plans to advance personal interests, often at the expense of others.', style: { background: 'linear-gradient(0deg, rgba(180,120,255,1) 22%, rgba(140,45,253,1) 100%)', color: '#fff' } },
   fw: { tag: 'Fanwork', category: 'Utility', short: 'fw', effect: '', desc: 'An established fan creation.', style: { background: 'linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(219,255,0,1) 80%)', color: '#000' } },
   vn: { tag: 'Villain', category: 'Occupation', short: 'vn', effect: '', desc: '', style: { background: 'linear-gradient(0deg, rgba(202,4,51,1) 0%, rgba(109,3,85,1) 100%)', color: '#fff' } },
   sy: { tag: 'Symbiote Theme', category: 'Utility', short: 'sy', effect: '', desc: 'Will qualify you to recieve a specific symbiote theme.', style: { background: 'linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(129,129,129,1) 50%, rgba(0,0,0,1) 100%)', color: '#fff' } },
@@ -370,37 +376,6 @@ export const LINKS = computed(() => {
   // links.familiars = ''
   return links
 })
-
-// export const names = computed(() => {
-//   const links = {} as Record<string, string>
-//   const allCats = {
-//     'Intensity': intensity,
-//     'Origin': origin,
-//     'Binding': bindings,
-//     'DLC Binding': DLCbindings,
-//     'Lure': [...lures, ...lureExpansions],
-//     'DLC Lure': [...DLClures, ...DLClureExpansions],
-//     'Other Control': otherControls,
-//     'DLC Other Control': DLCotherControls,
-//     'Heritage': heritages,
-//     'Ride': [...rides, ...ridePerksFull],
-//     'DLC Ride Perk': DLCridePerks,
-//     'Home': [...homes, ...demiplane, ...dungeon],
-//     'DLC Home': DLChomes,
-//     'Defense': defenses,
-//     'Talent': talents,
-//     'DLC Talent': DLCtalents,
-//     'Misc Perk': perks,
-//     'DLC Misc Perk': DLCperks,
-//     'Waifu Perk': [...genericPerks, ...waifu_perks],
-//     'DLC Generic Waifu Perk': DLCgenericPerks,
-//   }
-//   for (const category of Object.entries(allCats)) {
-//     for (const entry of category[1])
-//       links[entry.title] = category[0]
-//   }
-//   return links
-// })
 
 // navigator.clipboard.writeText(JSON.stringify(names.value, null, 2))
 

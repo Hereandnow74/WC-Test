@@ -6,6 +6,37 @@
       </h2>
       <div>
         <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          04 August 2023
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~150 new user submitted characters, new worlds, new missions</li>
+          <li>Some Rules page UI changes</li>
+          <li>New tags, changed definition for Strategist tag</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          30 July 2023
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~250 new user submitted characters, new worlds, new mission, new DLC SWP's</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          27 July 2023
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~140 new user submitted characters, new worlds, new missions</li>
+          <li>A new way to add custom intensity for your build</li>
+          <li>1 new DLC perk for Legacy intensity</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
           23 July 2023
         </h3>
         <ul class="list-decimal list-inside">

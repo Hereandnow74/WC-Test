@@ -30,7 +30,7 @@
               <List :list-key="'flavor'" :list="el.complex" color="text-violet-400" start="{" end="}" />
             </template>
           </span>
-          <span v-if="el?.category" class="text-yellow-500">({{ displayTitle(el) }})</span>
+          <span v-if="el?.category && displayTitle(el)" class="text-yellow-500">({{ displayTitle(el) }})</span>
         </router-link>
         <span v-if="priceMode && costOrIntensity(el)">[<span :style="[numberColor ? {color: numberColor} : '']" class="text-gray-300">{{ costOrIntensity(el) > 0 ? '+' : '' }}{{ costOrIntensity(el) }}</span>]</span>
         <fluent:delete-20-filled v-if="editMode" class="text-red-400 hover:text-red-500 cursor-pointer inline-block ml-1" @click.stop="deletePerk(el)" />

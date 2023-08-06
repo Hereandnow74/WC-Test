@@ -1,5 +1,743 @@
 [
   {
+    "reward": "Mobile facility the size of Rhodes Island or 150 credits",
+    "image": "https://i.redd.it/8ryoxbrzvi051.jpg",
+    "author": "Par Tzu",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Reunion Revived",
+    "loca": "Arknights",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Find a cure for oripathy that works outside your retinue."
+      },
+      {
+        "reward": "Transhuman Biomorph First augmentation or its equivalent in credits.",
+        "type": "Perks",
+        "value": "Pacify Seaborn"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Talulah must survive as a Leader of Reunion until 1098"
+      },
+      {
+        "value": "Rhodes Island must recognize Reunion as force of good and establish partnership before 1098"
+      },
+      {
+        "value": "Reunion commanders must be alive in 1098. This includes Patriot, FrostNova, Crownslayer, Nine, Skullshatterer, Faust and Mephisto."
+      }
+    ],
+    "budget": 400,
+    "desc": "Reunion was started by draco Talulah as a pretty heroic movement to help Infected in Tundra of Ursus, something even various members of Rhodes island, the main character group, admired.\nThen its leader Talulah snapped and the implanted personality/ghost/mind of her kidnapper/mentor/step-father Duke Kashchey of Ursus took control of her body and turned Reunion into a proper self destructive terrorist organization that caused most of its commanders to die.\nA client does not like that fate.\nOverturn it. Make Reunion good again. ",
+    "uid": "JhIJv"
+  },
+  {
+    "reward": "Capture of Mayura",
+    "image": "",
+    "author": "AnonymousBrainwash",
+    "rewardType": "Companions",
+    "source": "",
+    "title": "Villain Support: Mayura",
+    "loca": "Miraculous: Tales of Ladybug and Cat Noir",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "Capture of Dusuu Kwami of Emotion",
+        "type": "Companions",
+        "value": "Repair Peacock Miraculous"
+      },
+      {
+        "reward": "Capture of Nooroo Kwami of Transmission",
+        "type": "Companions",
+        "value": "Recover Ladybug and Black Cat Miraculous"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Miraculous can NOT be teleported by Company means unless they are in your possesion"
+      },
+      {
+        "value": "Miraculous holders are immune to being Captured while transformed"
+      }
+    ],
+    "budget": 150,
+    "desc": "The Company also sells services, and this case is rather interesting.\n\nLong ago, an ancient wizard asked to crib our notes pertaining Goetic Negotiations, the Art of Sympathies and Magic Focus.\n\nWith those notes, he made contact with some spirits born of concepts that are a part of his universe. \n\nWith those spirits and the knowledge he had, he created jewelry that allowed for those spirts to interact with mortals without getting things killed. \n\nIt was considered a miracle, so the wizard dubbed this jewelry Miraculous.\n\nHe also recorded some contact information about us in a grimoire, to basically act as an absolute last-resort magic support.\n\nIt's been a few thousand years and someone has finally called us.\n\nSome super villainess named Mayura.\n\nShe's got some issues she needs help, and she said that she would be willing to pay ANY price to see her goals accomplished so...\n\nLet's go over everything shall we?\n\nFirstly, she's kind of dying. Appears to be the result of poor energy regulation of the Miraculous she was using, the Peacock of Emotion. Should be pretty simple to handle, just drain whatever excess is in her system and give her a little boost to help her recover\n\nThis leads us directly to the second issue, the Peacock is broken. Should be simple to handle again. Just directly reestablish the link between the spirit and the jewelry\n\n But her main goal is the acquisition of the Black Cat and Ladybug Miraculous in order to make a wish. \n\nThis is a lot to ask for normally, but she's made it worth our while.\n\nShe's not only giving the Company herself (through you as a Contractor) she's also giving up the Peacock and Butterfly Miraculous, spirits bound to them included.\n\nWith the data from them, we'll be able to develop plenty of Aethermorphs and Outsiders.\n\nNow, some warnings before you go in.\n\nWe've noticed some...instability in the time stream, Paradox Defense is recommended.\n\nAlso, because of how the Wizard created the Miraculous, Company based teleportation won't work on them unless you hold them on your person and have activated them. \n\nThey also effectively insulate their holders from being Captured by a Company Binding.\n\nAnd one last thing to keep in mind is that Miraculous holders are considered metaphysically distinct from their transformed counterparts. This can affect any sort of filtering or tracking effects  ",
+    "uid": "lhOME"
+  },
+  {
+    "reward": "50% off of a single, non-ticket Green Orb purchase.",
+    "image": "",
+    "author": "ClayUndead",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Fuck Fate",
+    "loca": "Metamorphosis",
+    "lewd": false,
+    "scope": "Quick",
+    "objectives": [
+      {
+        "reward": "One Small or smaller, non-sapient creature from the D&D Monster Manual that is pre-bound to you.",
+        "type": "Other",
+        "value": "Get Saki a pet, preferably a puppy."
+      },
+      {
+        "reward": "The ability to create a delicious and nutritious wedding cake once per day.",
+        "type": "Other",
+        "value": "Make sure Saki has a wonderful wedding eventually."
+      },
+      {
+        "reward": "The ability to cut pregnancy times of your retinue in half. Does not work with Alterzelu Symbiote.",
+        "type": "Other",
+        "value": "Make sure Saki has a pleasant pregnancy if she wants children."
+      },
+      {
+        "reward": "10% off of a single, non ticket Green Orb purchase.",
+        "type": "Other",
+        "value": "If you don't capture her, ensure that Saki lives to be at least 50."
+      },
+      {
+        "reward": "The ability to create up to 10lbs of any normal drug once per day.",
+        "type": "Other",
+        "value": "Remove the hindrance to Saki's happiness, Hayato. Forcefully Overdose Hayato."
+      },
+      {
+        "reward": "A Sickle that causes 1000% more pain to whoever it cuts.",
+        "type": "Other",
+        "value": "Remove the hindrance to Saki's happiness, Mr. Yoshida. Castrate Mr. Yoshida."
+      },
+      {
+        "reward": "A Tattoo Gun capable of making moving tattoos.",
+        "type": "Other",
+        "value": "Remove the hindrance to Saki's happiness, Kumagi. Tattoo '子殴' into Kumagi's forehead."
+      },
+      {
+        "reward": "A Knife that inflicts Heroin withdrawals in those it cuts.",
+        "type": "Other",
+        "value": "Remove the hindrance to Saki's happiness, Obata. Burn down Obata's heroin bar with him in it."
+      },
+      {
+        "reward": "One Cubic Foot of Gold",
+        "type": "Other",
+        "value": "Remove the hindrance to Saki's happiness, her classmates. (Requires Fertility Calibration x8) Rape and Impregnate those bitches that kill Saki's baby with 256 kids."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Saki must be happy with her life."
+      },
+      {
+        "value": "Seriously, she deserves happiness."
+      },
+      {
+        "value": "All targets of the Optional Objectives will be tracked on your phone for the duration of the mission."
+      }
+    ],
+    "budget": 0,
+    "desc": "You know what this is. This is a call to anyone that can call themselves a decent person. I want you to make sure Saki Yoshida has a happy life, even if you have to capture her yourself. You will be dropped in a week before the karaoke incident. Get to work.",
+    "uid": "nEBLd"
+  },
+  {
+    "reward": "70% discount to all Omega Mart stores, a safe Omega Mart Lemon as a familiar, 500 Credits, and many thanks to adding human elements to the \"Source\"",
+    "image": "https://assets.website-files.com/5e165efe815ce5395714643b/5f6a50b5612885ddbf752e8f_Omega%20Mart.jpg",
+    "author": "Magnus1337",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Franchising Omega Mart",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": 20,
+        "type": "Credits",
+        "value": "Have a person native to the world spread the word. Everyone must've heard of it at least once. Completion of this objective happens if you it is heard the 70% of the world"
+      },
+      {
+        "reward": 20,
+        "type": "Credits",
+        "value": "Have a person native to the world buy a product. No, not the Omega Mart Lemons. Those are banned."
+      },
+      {
+        "reward": 20,
+        "type": "Credits",
+        "value": "Make an advertising commercial for it. The commercial MUST NOT drive people to madness."
+      },
+      {
+        "reward": 20,
+        "type": "Credits",
+        "value": "If the customers are unruly, they are to be used as an element to the Source. Capture them then ensure their disappearance. People must never trace their disappearance to your own fault."
+      },
+      {
+        "reward": 2,
+        "type": "IMG Tickets",
+        "value": "Get a person to drink the weird static milkshake... and survive its effects."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You must have the Great Old One or the Merchant Patron."
+      },
+      {
+        "value": "You must have an Outsider Heritage."
+      },
+      {
+        "value": "You are the Manager of this Omega Mart Franchise branch. You must work there as if you are a manager. Expect headaches if you don't have Stress Defense."
+      },
+      {
+        "value": "The Setting must not be at medieval or older ages."
+      },
+      {
+        "value": "Completion happens if you do all of the additional objectives within a year."
+      }
+    ],
+    "budget": 100,
+    "desc": "Oh my, it appears that the Merchant has made a deal with the Great Old One of Mercantilism, Mr. Omega, to franchise the Omega Mart store. You have been chosen to represent them in their invested interests. You must act as a manager of this Omega Mart branch and make sure it will run smoothly in the world you have chosen.",
+    "uid": "IDbdx"
+  },
+  {
+    "reward": "400 credits plus any skill obtained during the mission.",
+    "image": "",
+    "author": "Irugaa0",
+    "rewardType": "Other",
+    "source": "",
+    "title": "All You Need is Kill",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "1 Template stacking of tier 6 or lower.",
+        "type": "Other",
+        "value": "Kill 100 B-Rank monsters."
+      },
+      {
+        "reward": "1 Template stacking of tier 8 or lower.",
+        "type": "Other",
+        "value": "Kill 100 A-Rank monsters."
+      },
+      {
+        "reward": "1 Template stacking of tier 10 or lower.",
+        "type": "Other",
+        "value": "Kill 100 S-Rank monsters."
+      },
+      {
+        "reward": "50 credits",
+        "type": "Credits",
+        "value": "Remain in the world for more than 10 years."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "PVP is completely banned, if you attack another contractor or their retinue, you will be immediately erased."
+      },
+      {
+        "value": "You must stay for at least 5 years and somewhat help rebuilt or prevent the fall of modern civilization."
+      },
+      {
+        "value": "Your minimum tier is 5 and maximum is 6 to the START of this mission."
+      },
+      {
+        "value": "If your tier is higher/lower you will get permanently powered to minimum tier or temporally weaken to the max tier cap."
+      },
+      {
+        "value": "You can have a maximum of 8 companions to accompany you."
+      },
+      {
+        "value": "Generic powers that can be given or taught to others like sorcery/aura/Nen are appreciated but not required."
+      }
+    ],
+    "budget": 0,
+    "desc": "One of our client’s worlds is going through a process where monsters are appearing worldwide and killing humans, at the same time humans that kill monsters gather points to buy skills to fight them. The problem is that something occurred and monsters that are simply too strong are appearing everywhere and getting more powerful as time passes, and even after world has been reset 5 times and in all scenarios the humankind lost its drive and hope in the first year or less. \nWe need someone to go there and kill most of the powerful foes leaving the weaker ones to other people to follow your lead and start to kill monsters and gain their own skills. \nAnd given the severity of the world are willing to pay high for this mission.\nThis is a group mission, even if you lack the required perks.\n",
+    "uid": "Dynuz"
+  },
+  {
+    "reward": "Missions to produce Rides in exchange for Credits",
+    "image": "https://cdn.discordapp.com/attachments/516806498270183439/1135457682854264892/SSD-Assault-Prototype.webp",
+    "author": "RT",
+    "rewardType": "Other",
+    "source": "",
+    "title": "More Rides Needed",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "Blueprints for a selection of popular Rides that you can build.",
+        "type": "Other",
+        "value": "Survive 80 years and build an Organisation capable of building Rides"
+      },
+      {
+        "reward": "The Company with begin Investigating your case of Forgetful Hopper",
+        "type": "Other",
+        "value": "Supply the Company with 1000 Custom Rides"
+      },
+      {
+        "reward": "The Company will cure your case of Forgetful Hopper",
+        "type": "Other",
+        "value": "Supply the Company with 50000 Custom Rides"
+      },
+      {
+        "reward": 1,
+        "type": "IMG Tickets",
+        "value": "Supply the Company with 1 million Rides"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Must take Challenge Power Trip"
+      },
+      {
+        "value": "Must take Challenge Forgetful Hopper"
+      },
+      {
+        "value": "Additional Challenges or restrictions that encourage staying in your Original World may be taken"
+      },
+      {
+        "value": "No Companion over Tier 5 may be taken"
+      },
+      {
+        "value": "Companions with skills or powers that will help with constructing Rides is strongly encouraged"
+      },
+      {
+        "value": "You are granted 100 years of grace, after which you must be ready to accept both orders for popular and custom Rides"
+      },
+      {
+        "value": "Chargen only."
+      }
+    ],
+    "budget": 0,
+    "desc": "There have been too many requests for custom Rides recently, as such The Company has decided to spin up a new set of shipyards to handle some of the demand. \n\nYou have been chosen to test a new initiative, you have been supplied with a restricted Contract for up to Tier 5 Companions, with restrictions that very much incentivise staying in one location.\nUse the 100 years of grace to build an organisation of some description capable of creating Rides to be supplied to the Company.\n\nYou will be given missions from the Company for the Rides they require as well having Clients that want Custom Rides referred to you. You will be required to maintain a high quality of customer satisfaction. ",
+    "uid": "rnkaH"
+  },
+  {
+    "reward": "One Devil Fruit of your chaise without its water weakness",
+    "image": "https://cdn.oneesports.gg/cdn-data/2022/04/OnePieceFilmred_AnimeMoviePosterFemaleCharacter-1536x864.webp",
+    "author": "Asdas Sad",
+    "rewardType": "Other",
+    "source": "",
+    "title": "A Song To The Ages",
+    "loca": "One Piece",
+    "lewd": false,
+    "scope": "Quick",
+    "objectives": [
+      {
+        "reward": "Uta will be capable of using her Sing-Sing fruit in the real World",
+        "type": "Other",
+        "value": "Convince Uta to go with you on a new adventure"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You cannot kill any of the Straw Hats or Shanks crew"
+      },
+      {
+        "value": "You must protect Uta and heal her of the secondary effects of the wake mushroom"
+      }
+    ],
+    "budget": 0,
+    "desc": "Hi Contractor, I recently watched Film Red and loved it, but its ending saddens me as Uta never got the chance to travel the world singing along the way.\n\nSo I present this mission to you. \n\nYour main objective is to save Uta from her dead or resurrect her if she dies anyways. \n\nYour secondary is to convince her to travel with the Straw Hats or to go alongside you in your travels.\n\nI recommend you to Template Stack I of some kind of healer, Mercy in particular. ",
+    "uid": "giDqp"
+  },
+  {
+    "reward": 2,
+    "image": "",
+    "author": "Jaclea",
+    "rewardType": "IMG Tickets",
+    "source": "",
+    "title": "Pesky Dragons",
+    "loca": "Warcraft",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "Dragon heart (this will be given to you when you leave this Azeroth)",
+        "type": "Perks",
+        "value": "Do not be a dragon"
+      },
+      {
+        "reward": "Covert Talent",
+        "type": "Perks",
+        "value": "Do not start higher than tier 5"
+      },
+      {
+        "reward": "Instant Capture of Varian Wrynn",
+        "type": "Companions",
+        "value": "Win the 1st War for Humanity (Exclusive with win the 2nd war)"
+      },
+      {
+        "reward": "Instant Capture of Grom Hellscream",
+        "type": "Companions",
+        "value": "Win 2nd War for the Horde (Exclusive with win the 1st war)"
+      },
+      {
+        "reward": "2 of wild defense or a refund",
+        "type": "Perks",
+        "value": "Stop the plague in Lorderon"
+      },
+      {
+        "reward": "1 of soul defense and 1 of corruption defense",
+        "type": "Perks",
+        "value": "Stop Arthas from going to Northrend without killing him"
+      },
+      {
+        "reward": "Ner'zhul's influence will be purged from the blade",
+        "type": "Other",
+        "value": "Claim Frostmorne"
+      },
+      {
+        "reward": "Deathknight Deathlord (PC) with lich king armor",
+        "type": "Companions",
+        "value": "Destroy the armor of the lich king"
+      },
+      {
+        "reward": "Chromatus",
+        "type": "Companions",
+        "value": "Arrange Deathwing's death before the Cataclysm"
+      },
+      {
+        "reward": "1 of Mind, Possession, Soul or Corruption defense for each kill",
+        "type": "Perks",
+        "value": "Kill an old god"
+      },
+      {
+        "reward": "A mini twisting nether is added to your demiplane allowing any of your demon Companions to resurrect there after some time.",
+        "type": "Perks",
+        "value": "Kill Sargeras before he stabs the world"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Try to avoid actively hunting the Bronze. We need proof for the Bronze in other timelines."
+      },
+      {
+        "value": "You may not be higher then tier 7 nor will you be able to grow beyond that point. Obviously someone strong enough could simply force things to be the way they want."
+      },
+      {
+        "value": "You may not purchase any companions. It must be shown that Azeroth's people can do this mostly on their own."
+      },
+      {
+        "value": "You must be a drop in, walk-in or extra"
+      }
+    ],
+    "budget": 0,
+    "desc": "The Company has been having some trouble with the Bronze Dragons on Azeroth. They keep interfering in annoying ways like killing contractors who just arrived for being a threat to their 'golden timeline' or somehow getting their sand into hard to remove places. It would be easy enough to just kill them or show our power by helping one of the evil factions win, but it would be far more effective to show them just how little their 'golden timeline' really matters. Oh and we will be masking your presence so that you are only observable when they are in the present. It would be a pain to do this for everyone so don't expect this kind of service in the future.",
+    "uid": "FYLBH"
+  },
+  {
+    "reward": "Instant Capture of Shego",
+    "image": "",
+    "author": "Knotbeard",
+    "rewardType": "Companions",
+    "source": "",
+    "title": "Possible Domestic",
+    "loca": "Kim Possible",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "Fertility Calibration II",
+        "type": "Perks",
+        "value": "Capture and Tame Kim's Mom, Ann Possible as well."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Capture Kimberly Possible"
+      },
+      {
+        "value": "Turn her into a meek and submissive houseslave"
+      }
+    ],
+    "budget": 0,
+    "desc": "The client believes that the only thing standing between him and world domination is one teenage crime fighter. He's even willing to give up his sidekick as payment. After all with Kim Possible out of the way, he doesn't think he'll need her anymore.\nBut just capturing her isn't enough, he wants you to make sure she never does anything as bold as fighting crime again, so you'll have to break her and tame her into a timid, servile little houseslut whose greatest ambition is to take care of her master's home and needs while barefoot and pregnant.",
+    "uid": "UCVRy"
+  },
+  {
+    "reward": 5,
+    "image": "",
+    "author": "ClayUndead",
+    "rewardType": "IMG Tickets",
+    "source": "",
+    "title": "Sid Meier's Dream!",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "One Scientific Database from ClayUndead's Database Green Orb Market.",
+        "type": "Other",
+        "value": "(SCIENCE!) Develop Interplanetary flight and colonize another planet."
+      },
+      {
+        "reward": "Five Divine Tree seeds from Naruto.",
+        "type": "Other",
+        "value": "(RELIGION!) Develop a new Religion that is truly believed and worshiped by 51% of the world."
+      },
+      {
+        "reward": "1000 suits of Custom-made Gen2 Mjolnir Power Armor from Halo.",
+        "type": "Other",
+        "value": "(MILITARY!) Create a Military Force that is on average, 3 Tiers higher than your citizenry."
+      },
+      {
+        "reward": "one choice of Added Potential the be applied to your entire faction.",
+        "type": "Other",
+        "value": "(CULTURE!) Have 95% of the citizenry in your faction be happy with your rule."
+      },
+      {
+        "reward": "Crops and Livestock develop at a 500% faster rate within territory you control.",
+        "type": "Other",
+        "value": "(TIME!) Have your faction last a decade."
+      },
+      {
+        "reward": "Halve travel time of all Military units.",
+        "type": "Other",
+        "value": "(WAR!) Conquer another faction that equals or surpasses yours in power."
+      },
+      {
+        "reward": "one ton of any one mythical metal.",
+        "type": "Other",
+        "value": "(ECONOMY!) Have your faction enter the top 5 richest factions."
+      },
+      {
+        "reward": "A recharging scroll of the D&D spell Wish. It recharges over the course of a week.",
+        "type": "Other",
+        "value": "(POWER!) Raise a single being up 5 Tiers after you enter the setting. (No PowerSwap doesn't count)"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You and your Opponent(s) will share a Sweet Home"
+      },
+      {
+        "value": "You will be unable to stay in your Sweet Home for more than 72 Hours each month."
+      },
+      {
+        "value": "You have a single Week you can spend out of setting for each year."
+      },
+      {
+        "value": "You must not actively go out of your way to harm your Opponent(s). (hiring assassins or fighting them directly)"
+      },
+      {
+        "value": "Should a Contractor die, they will be transported to the shared Sweet Home and must not re-enter the world until either the main goal is completed or only one Contractor is left 'alive'."
+      },
+      {
+        "value": "Yes, they can go to other worlds, but their 'Death' locks them out of further rewards for this mission."
+      }
+    ],
+    "budget": 0,
+    "desc": "Greetings newbies! I'm Clay the Undead and I'm here to ask you a little question. Do you like Civ building? You see, a Sid Meier Walk-In has been a little disappointed about how many of you haven't gone full nation builder. He hired me to fix that. So, I decided to make it a competition.\n\nUpon taking this mission, You and your Opponent(s) will be inserted into a world in a position of power of non-allied factions. You could be a lord or president of one faction while your friend will be installed into another. The goal of the mission? The first one to complete five sub-goals will win a fabulous prize of 5 IMG Tickets along with the rewards of the sub-goals themselves.",
+    "uid": "NUGei"
+  },
+  {
+    "reward": "The entirety of the Cave of Wonders and it's treasures added to your Demiplane.",
+    "image": "",
+    "author": "ClayUndead",
+    "rewardType": "Other",
+    "source": "",
+    "title": "A Friend Like Me!",
+    "loca": "Disney(Aladdin)",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "A log of Palistrom Wood(Owl House) and an appointment with a professional wood carver.",
+        "type": "Other",
+        "value": "extend Abu's life span."
+      },
+      {
+        "reward": "a Firebolt(Harry Potter)",
+        "type": "Other",
+        "value": "Get Carpet a full body wash, it's dusty in the CoW"
+      },
+      {
+        "reward": "20% off of your next Green Orb purchase. I'll pay the 20%. No it can't be a Ticket level purchase.",
+        "type": "Other",
+        "value": "Kick Jafar in the balls and shut Iago up"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Aladdin and Jasmine must end up together."
+      },
+      {
+        "value": "They must be content with their lives"
+      }
+    ],
+    "budget": 0,
+    "desc": "Sooo…. I might have made an oopsie. I bound and sold Genie a couple Millennia ago and left the lamp in the Cave of Wonders. Now Aladdin's trapped in there and my Tomboy Genderbent Aladdin is mad at me. Unfortunately, I don't have a spare IMG Ticket right now(gambling is a vice), so I'm gonna sub-contract it out to you! Your job is to get Aladdin and Jasmine together and happy. This can be done any way you want, but just remember, you're starting in a magic cave stuck under a couple tons of sand.",
+    "uid": "PKpKd"
+  },
+  {
+    "reward": "Throat Spray from Pokemon. It magically boosts all Vocal magic.",
+    "image": "",
+    "author": "ClayUndead",
+    "rewardType": "Other",
+    "source": "",
+    "title": "I'm Not Letting It Go!",
+    "loca": "Disney(Frozen)",
+    "lewd": false,
+    "scope": "Quick",
+    "objectives": [
+      {
+        "reward": "a Snowball that never melts or deforms and can be duplicated by the hundreds at will.",
+        "type": "Other",
+        "value": "Melt Olaf"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You can't be noticed by Else before the throat punch."
+      },
+      {
+        "value": "Hit her hard enough that she can't sing."
+      }
+    ],
+    "budget": 0,
+    "desc": "Hello, Contractor, I'm Clay, a relatively high ranking Contractor myself. I also have hundreds of kids. It comes with being a Contractor for any length of time. If there is one thing I dislike about children, it's the fact that they infect you with annoying earworms. I'm talking, of course, about 'Let It Go'. I want you to go to Frozen, sneak up on Elsa during her song, and throat punch her. Not kill her, I would never hear the end of it from my Anna, but some light assault should be okay.",
+    "uid": "YQxqT"
+  },
+  {
+    "reward": "A copy of the village Encanto and Casita added to your Demiplane.",
+    "image": "",
+    "author": "ClayUndead",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Be Enchanting!",
+    "loca": "Disney(Encanto)",
+    "lewd": false,
+    "scope": "Quick",
+    "objectives": [
+      {
+        "reward": "Instant capture of Isabella and an gestating Green(DC) added to your Demiplane.",
+        "type": "Other",
+        "value": "Get Alma Madrigal to betroth Isabella to you."
+      },
+      {
+        "reward": "Instant Capture of Mirable and the ability to guarantee any ability you have will be passed onto your descendants.",
+        "type": "Other",
+        "value": "Convince Mirable to snuff out the candle(don't worry, binding a Madrigal will restore their power)"
+      },
+      {
+        "reward": "Instant Capture of Luisa and the ability to magically enforce any bet that you make.",
+        "type": "Other",
+        "value": "It's not shown in the Movie, but Luisa has a casino in her room and a gambling vice. Win a series of bets that culminate in Luisa betting her virginity."
+      },
+      {
+        "reward": "Instant Capture of Julieta and her healing cooking is spread to everyone in your retinue.",
+        "type": "Other",
+        "value": "Get Julieta addicted to your cooking."
+      },
+      {
+        "reward": "Instant Capture of Dolores and an Orb of Silence(Ophis approved)",
+        "type": "Other",
+        "value": "Make Dolores scream your name where anyone can hear you two."
+      },
+      {
+        "reward": "Instant Capture of Pepa and a Mjolnir.",
+        "type": "Other",
+        "value": "Give Pepa a massage so good she cums multiple times without being stopped for the weather."
+      },
+      {
+        "reward": "Instant Capture of Alma and your own Miracle Candle for your Demiplane.",
+        "type": "Other",
+        "value": "Honestly, I hate her, so just capture Alma."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Pop into the town of Encanto and capture the beauties of that rich Colombian land."
+      },
+      {
+        "value": "I'll give extra rewards if you capture them my way."
+      }
+    ],
+    "budget": 0,
+    "desc": "One of my many kids was watching Encanto the other day. I noticed something. I don't have enough South American women in my harem. If I don't, you probably don't and that's a damn shame for the both of us. So here's my proposal. Bind the female Madrigals and I get first dibs on the clones of them. You can bind the dudes(or gender bend them) but I'm only asking for the original female cast.",
+    "uid": "BkOSD"
+  },
+  {
+    "reward": 10,
+    "image": "",
+    "author": "GhostfireXXV",
+    "rewardType": "IMG Tickets",
+    "source": "",
+    "title": "Subjugation of the Great Ones",
+    "loca": "Cthulhu Tech",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "50% of their Buy worth",
+        "type": "Other",
+        "value": "Binding a Great Old Ones or an Outer Gods (multiple)"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You can only choose or use the Heritage of Transhumanism. The specific type(s) is up to you."
+      },
+      {
+        "value": "You can't bring any Human or non-human, of this world, inside your pocket space unless it is binded to you"
+      },
+      {
+        "value": "You can't rule from the shadow. you must become the beacon of hope for all Humanity"
+      },
+      {
+        "value": "For the duration of this mission you can't leave the setting"
+      },
+      {
+        "value": "Even if you have Universal calibration or any other way to modify the reality of the world. Cthulhu and co. will still be evil and with the desire to kill Humanity.It is your job to show to them who is the top dog in the Universe now."
+      }
+    ],
+    "budget": 2000,
+    "desc": "For eons the Great Old Ones and the Outer Gods have done however they pleased with Humanity. Using them as even less than mere pawns in worthless power struggles without winners only losers. \nThis wil change. NOW.\nYour mission, if you decide to take it, is to enter in the world of Cthulhu Tech when the D-engine, built upon esoteric knowledge, was completed and guide Humanity through the Hell is going to come to you, and in doing so kill or bind any and all the Great Old Ones and the Outer Gods so as to finally free Mankind from their dominion\nI seriously hope you are prepared well enough.",
+    "uid": "MQSRU"
+  },
+  {
+    "reward": 10,
+    "image": "",
+    "author": "GhostfireXXV",
+    "rewardType": "IMG Tickets",
+    "source": "",
+    "title": "Subjugation of the Great Ones",
+    "loca": "Cthulhu Tech",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "50% of their Buy worth",
+        "type": "Other",
+        "value": "Binding a Great Old Ones or an Outer Gods (multiple)"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You can only choose or use the Heritage of Transhumanism. The specific type(s) is up to you."
+      },
+      {
+        "value": "You can't bringany Human or non-human, of this world, inside your pocket space unless it is binded to you"
+      },
+      {
+        "value": "You can't rule from the shadow. you must become the beacon of hope for all Humanity"
+      },
+      {
+        "value": "For the duration of this mission you can't leave the setting"
+      },
+      {
+        "value": "Even if you have Universal calibration or any other way to modify the reality of the world. Cthulhu and co. will still be evil and with the desire to kill Humanity.It is your job to show to them who is the top dog in the Universe now."
+      }
+    ],
+    "budget": 2000,
+    "desc": "For eons the Great Old Ones and the Outer Gods have done however they pleased with Humanity. Using them as even less than mere pawns in worthless power struggles without winners only losers. \nThis wil change. NOW.\nYour mission, if you decide to take it, is to enter in the world of Cthulhu Tech when the D-engine, built upon esoteric knowledge, was completed and guide Humanity through the Hell is going to come to you, and in doing so kill or bind any and all the Great Old Ones and the Outer Gods so as to finally free Mankind from their dominion\nI seriously hope you are prepared well enough.",
+    "uid": "yHpCS"
+  },
+  {
     "reward": "One Philosopher's Stone. 1 TS of a Catgirl of your choice.",
     "image": "https://i.imgur.com/Mp7UeYB.png",
     "author": "Heaven Canceler",
@@ -264,6 +1002,7 @@
     "rewardType": "Other",
     "source": "",
     "title": "Rise like a Phenex",
+    "uid": "bFjck",
     "loca": "High School DxD",
     "lewd": false,
     "scope": "Grand",
@@ -296,7 +1035,7 @@
       {
         "reward": "Instant capture of Issei Hyoudou and a limitless porn/hentai magazine styled after the franchise and preferences of your choice.",
         "type": "Other",
-        "value": "Get Issei Hyoudous (or his feminine doppelgängers) approval as Rias's husband and have her cheer you on during your wedding by his own will instead of sabotaging it."
+        "value": "Get Issei Hyoudou's (or his feminine doppelgängers) approval as Rias's husband and have her cheer you on during your wedding by his own will instead of sabotaging it."
       },
       {
         "reward": "Instant capture of Asia Argento and a copy of Index Librorum Prohibitorums Walking Church nun's habit fit for her sizes.",
@@ -326,7 +1065,7 @@
     ],
     "conditions": [
       {
-        "value": "You will Substitute as Riser Phenex sometime between Risers 13th birthday and the start of canon by your own choice. This mission can only be taken at Chargen."
+        "value": "You will Substitute as Riser Phenex sometime between Riser's 13th birthday and the start of canon by your own choice. This mission can only be taken at Chargen."
       },
       {
         "value": "The Substitute Origin has to be bought with your starting credits, in the event that your chosen Intensity adjusted credit score prevents this you will instead Substitute into Riser Phenex at a point in the timeline where he was of a lower tier."
@@ -347,15 +1086,14 @@
         "value": "Rewards from Additional Objectives may only be gained after the conclusion of the Main Objective unless stated otherwise."
       },
       {
-        "value": "Rias Gremorys canon Peerage members (this includes Issei) may not die while the mission is ongoing, failing this results in a failed mission."
+        "value": "Rias Gremory's canon Peerage members (this includes Issei) may not die while the mission is ongoing, failing this results in a failed mission."
       },
       {
         "value": "Meta Shift, Pocket Apartment (upgrades included), Power Swap and Exit Stage Lefts world travel will be unavailable until the missions end. The progression bar for Exit Stage Left may still be filled by your exploits in the world."
       }
     ],
     "budget": 80,
-    "desc": "As the Multiverse Theory goes, for every event the opposite is what happened in a different world. This must also be true for the marriage between Rias Gremory and Riser Phenex, where the wedding between Rias and Riser happened without issue as it was meant to be.\n\nUnfortunately, for some of our VIP clients, these timelines are far and few in between as most Contractors either side with Rias or just stop their marriage out of spite for Riser.\n\nThis is where you come in, Contractor. Your job, should you choose to accept it, will be to put yourself in the shoes of Riser Phenex at the start of, or before, the canon of High School DxD and make sure this marry Rias Gremory while also making sure the name of said Phenex family member will not be disgraced as it was in canon.",
-    "uid": "bFjck"
+    "desc": "As the Multiverse Theory goes, for every event the opposite is what happened in a different world. This must also be true for the marriage between Rias Gremory and Riser Phenex, where the wedding between Rias and Riser happened without issue as it was meant to be.\n\nUnfortunately, for some of our VIP clients, these timelines are far and few in between as most Contractors either side with Rias or just stop their marriage out of spite for Riser.\n\nThis is where you come in, Contractor. Your job, should you choose to accept it, will be to put yourself in the shoes of Riser Phenex at the start of, or before, the canon of High School DxD and make sure this marry Rias Gremory while also making sure the name of said Phenex family member will not be disgraced as it was in canon."
   },
   {
     "reward": "1/4 the purchase price of the current tier for each character personally trained that survives in significantly better condition than they were originally supposed to.",
@@ -363,10 +1101,11 @@
     "author": "Skelethin",
     "rewardType": "Other",
     "source": "",
-    "title": "Make a man out of you!",
+    "title": "No more being \"Yamcha'd\"!",
+    "uid": "pNCJX",
     "loca": "Generic",
     "lewd": false,
-    "scope": "Quick",
+    "scope": "Standard",
     "objectives": [
       {
         "reward": "The character's current tier in credits - T1 = 1 credit, T10 = 10 credits.",
@@ -407,11 +1146,13 @@
       },
       {
         "value": "The character(s) must be involved in the event/fight, and not avoid or run away before it begins."
+      },
+      {
+        "value": "Sharing specific meta-knowledge of the event/fight being trained for is forbidden. Previously shared meta-knowledge makes that character ineligible for this mission. General strategies, or anything that is learned explicitly in character is allowed."
       }
     ],
     "budget": 0,
-    "desc": "Far too many interesting characters have their time cut short. Every story has its next big event, or major fight that leaves these characters brutally maimed, in critical condition, or even killed.\n\nNo more. Not this time. And it's up to you to fix it.\n\nGive character(s) the training they deserve to do their job. Pound into them enough skill that they aren't completely at the mercy of fate.\n\n(Repeatable Mission)",
-    "uid": "pNCJX"
+    "desc": "Far too many interesting characters have their time cut short. Every story has its next big event, or major fight that leaves these characters brutally maimed, in critical condition, or even killed.\n\nNo more. Not this time. And it's up to you to fix it.\n\nGive character(s) the training they deserve to do their job. Pound into them enough skill that they aren't completely at the mercy of fate.\n\n(Repeatable Mission)"
   },
   {
     "reward": "250 credits + Instant Unlocking of the next World.",
@@ -948,6 +1689,7 @@
     "rewardType": "IMG Tickets",
     "source": "",
     "title": "Cleaning Up the Company's Messes - Archangel of Benevolence",
+    "uid": "fJsIN",
     "loca": "Kingdom Hearts",
     "lewd": true,
     "scope": "Grand",
@@ -1056,11 +1798,19 @@
       },
       {
         "value": "Intensity must be at least 7."
+      },
+      {
+        "value": "Exit Stage Left cannot be used to travel between Worlds in KH. It instead tracks how close you are to completing the main Mission Objective."
+      },
+      {
+        "value": "The Ex-Companions have special icons on the Target Tracker. However, you need the Bounty Tracker to see any details on them, like you would for regular targets."
+      },
+      {
+        "value": "All Perks that would allow for travel between Worlds in KH can only do so to Worlds you have visited since becoming a Contractor. Worlds you/Aqua visited before then do not count. Companion abilities and TS/PS can still be used for World travel."
       }
     ],
     "budget": 0,
-    "desc": "Must be Chosen before finishing Chargen.\n\nOver the course of its long and varied history, the Company's various Contractors have lost more than a few Companions for various reasons. Sometimes it's nobody's fault, sometimes it's everyone's fault, but regardless of why it occurred, the fact remains it did so. \nNormally, the Company could care less what happens to surviving lost Companions, but every now and then, a collection of such individuals forms and decides, for whatever reasons, to begin a policy of total intolerance for attempted Company operations in whichever reality they've settled in.\nBeing fair, even this wouldn't normally be cause for alarm, but sometimes, as is the case now, these groups settle in particularly abundant variant realities, filled with an incredible number of highly desirable Waifus and/or Husbandos. As such, the Company needs them to stop being a problem, which is where the Patrons come in.\nThese Lost Companion Collectives, for reasons yet unknown, almost always consist near-exclusively of Companions that are of interest to one or more of the Patrons, so they gladly sponsor these Clean-Up Missions and Contractors for their own benefit.\nThis time the problem has come to a Variant Kingdom Hearts, one where just about every reality you can imagine exists within, either as a World that can be visited, or through variant versions of their populace spread throughout.\nThe Collective that has settled in this reality consists primarily of abused former Companions, tending to be either physically, emotionally, or psychologically scarred (or some combination thereof) former heroes or neutrals, and who are all T8-10 in power. As best as can be determined, there are 20 members of this group, but there may be more, if you can find them, and they are scattered throughout the Worlds. Naturally, their status has caught the eye of the Archangel of Benevolence.\nYour Mission, should you accept it, is to neutralise all these rogue former Companions, either by Capturing them, or by otherwise binding them to some form of unbreakable agreement to cease further interference with Company matters. The Angel will not tolerate Killing any of these rogues unless you have no other choice at the time, so unnecessary killings will result in failure.\n\nOh, and the Angel's decided that a perfect fit for this mission already exists in the World, so you'll have to either already be her, or to become her. Have Fun!",
-    "uid": "fJsIN"
+    "desc": "Must be Chosen before finishing Chargen.\n\nOver the course of its long and varied history, the Company's various Contractors have lost more than a few Companions for various reasons. Sometimes it's nobody's fault, sometimes it's everyone's fault, but regardless of why it occurred, the fact remains it did so. \nNormally, the Company could care less what happens to surviving lost Companions, but every now and then, a collection of such individuals forms and decides, for whatever reasons, to begin a policy of total intolerance for attempted Company operations in whichever reality they've settled in.\nBeing fair, even this wouldn't normally be cause for alarm, but sometimes, as is the case now, these groups settle in particularly abundant variant realities, filled with an incredible number of highly desirable Waifus and/or Husbandos. As such, the Company needs them to stop being a problem, which is where the Patrons come in.\nThese Lost Companion Collectives, for reasons yet unknown, almost always consist near-exclusively of Companions that are of interest to one or more of the Patrons, so they gladly sponsor these Clean-Up Missions and Contractors for their own benefit.\nThis time the problem has come to a Variant Kingdom Hearts, one where just about every reality you can imagine exists within, either as a World that can be visited, or through variant versions of their populace spread throughout.\nThe Collective that has settled in this reality consists primarily of abused former Companions, tending to be either physically, emotionally, or psychologically scarred (or some combination thereof) former heroes or neutrals, and who are all T8-10 in power. As best as can be determined, there are 20 members of this group, but there may be more, if you can find them, and they are scattered throughout the Worlds. Naturally, their status has caught the eye of the Archangel of Benevolence.\nYour Mission, should you accept it, is to neutralise all these rogue former Companions, either by Capturing them, or by otherwise binding them to some form of unbreakable agreement to cease further interference with Company matters. The Angel will not tolerate Killing any of these rogues unless you have no other choice at the time, so unnecessary killings will result in failure.\n\nOh, and the Angel's decided that a perfect fit for this mission already exists in the World, so you'll have to either already be her, or to become her. Have Fun!"
   },
   {
     "reward": 5000,
@@ -1623,12 +2373,13 @@
     "uid": "finsk"
   },
   {
-    "reward": "10 tons of German Gold(will have Nazi imagery imprinted on it)",
+    "reward": "10 tons of German Gold (will have Nazi imagery imprinted on it)",
     "image": "",
     "author": "ClayUndead",
     "rewardType": "Other",
     "source": "",
     "title": "The American Dream",
+    "uid": "NlFoS",
     "loca": "Generic",
     "lewd": false,
     "scope": "Quick",
@@ -1665,8 +2416,7 @@
       }
     ],
     "budget": 0,
-    "desc": "There's no need for formalities, so I'll give it to you straight. We want you to kill Hitler. Have fun.",
-    "uid": "NlFoS"
+    "desc": "There's no need for formalities, so I'll give it to you straight. We want you to kill Hitler. Have fun."
   },
   {
     "reward": "Exit Stage Left and all upgrades, 3 TX tickets",
@@ -1740,6 +2490,7 @@
     "rewardType": "Other",
     "source": "",
     "title": "Smash Gauntlet",
+    "uid": "UEmSR",
     "loca": "Generic",
     "lewd": false,
     "scope": "Quick",
@@ -1750,7 +2501,7 @@
         "value": "Take no breaks and still complete the Gauntlet"
       },
       {
-        "reward": "One newfree Element or 25 Credits",
+        "reward": "One new free Element or 25 Credits",
         "type": "Other",
         "value": "(For Shroud of Power Users) Use only one Element during the entire gauntlet."
       },
@@ -1762,12 +2513,11 @@
     ],
     "conditions": [
       {
-        "value": "Do it by yourself/only one retinue member"
+        "value": "Do it by yourself/only relying on one retinue member"
       }
     ],
     "budget": 0,
-    "desc": "84 Fighters, 84 Fights, can you win them all? You (or a Retinue Member) will be transported to Battlefield and must take on the whole roster of Super Smash Bros Ultimate one on one in consecutive fights. You get two (2) ten minute breaks between fights, better pick when you use them well. This mission is repeatable, but every time you repeat it the larger the group of fighters going against you, second time is two v one, third is three v one, you get the idea, until the penultimate of half the roster against you in two fights and ultimate fight of ALL the Smashers trying to turn you into a smear on the ground at once. Once you defeat all 84 fighters at once you can set how many you fight at a time in consecutive runs. Good Luck.",
-    "uid": "UEmSR"
+    "desc": "84 Fighters, 84 Fights, can you win them all? You (or a Retinue Member) will be transported to Battlefield and must take on the whole roster of Super Smash Bros Ultimate one on one in consecutive fights. You get two (2) ten minute breaks between fights, better pick when you use them well. This mission is repeatable, but every time you repeat it the larger the group of fighters going against you, second time is two v one, third is three v one, you get the idea, until the penultimate of half the roster against you in two fights and ultimate fight of ALL the Smashers trying to turn you into a smear on the ground at once. Once you defeat all 84 fighters at once you can set how many you fight at a time in consecutive runs. Good Luck."
   },
   {
     "reward": 2,
@@ -2572,6 +3322,7 @@
     "rewardType": "IMG Tickets",
     "source": "",
     "title": "Dethroning the kiddy destroyer god",
+    "uid": "fMxFO",
     "loca": "Dragonball",
     "lewd": false,
     "scope": "Grand",
@@ -2603,8 +3354,7 @@
       }
     ],
     "budget": 0,
-    "desc": "Are you tired of Zeno and his seemingly childish appearance? yes? Then good! The company is also tired of contractors easily binding Zeno with the stamp. To the point that the company is considering just removing Zeno from all realities. ",
-    "uid": "fMxFO"
+    "desc": "Are you tired of Zeno and his seemingly childish appearance? Yes? Then good! The Company is also tired of contractors easily binding Zeno with the stamp. To the point that the company is considering just removing Zeno from all realities. "
   },
   {
     "reward": 2,
@@ -5750,7 +6500,7 @@
       }
     ],
     "budget": 5,
-    "desc": "You want a Battle? You want a Challenge? You want to forge your own Legend? Nothing can stay in the way of one who walks the path of a Legend, the path of a God. Kratos walked this path, now his footsteps are yours to follow O' Contractor! We offer you a Mission to success on the Path Kratos walked and we will give you only one chance! Follow it, overcome everything that Kratos did in his journey as a Warrior and later as a God of War and even beyond!\nAddendium(Chronological Order of Games):\n1. God of War: Ascension\n2. God of War: Chains of Olympus\n3. God of War\n4. God of War: Betrayal\n5. God of War: Ghost of Sparta\n6. God of War II\n7. God of War III\n8. God of War(2018)\n9. God of War Ragnarök"
+    "desc": "You want a Battle? You want a Challenge? You want to forge your own Legend? Nothing can stay in the way of one who walks the path of a Legend, the path of a God. Kratos walked this path, now his footsteps are yours to follow O' Contractor! We offer you a Mission to success on the Path Kratos walked and we will give you only one chance! Follow it, overcome everything that Kratos did in his journey as a Warrior and later as a God of War and even beyond!\nAddendium (Chronological Order of Games):\n1. God of War: Ascension\n2. God of War: Chains of Olympus\n3. God of War\n4. God of War: Betrayal\n5. God of War: Ghost of Sparta\n6. God of War II\n7. God of War III\n8. God of War(2018)\n9. God of War Ragnarök"
   },
   {
     "reward": "Free Template Stacking depending on what Clan you are from (Madara Uchiha, Hashirama Senju, or Mito Uzumaki)",
@@ -5892,7 +6642,7 @@
       }
     ],
     "budget": 270,
-    "desc": "Pyrrha Nikos believed in Destiny. That belief pushed her towards her sacrifice.\nWe here the Company have long given Destiny multiple middle fingers, and this won't be any different.\nYou will be inserted into the world exactly 30 days (720 hours) after Nikos's death as a Walk-in for her. Your mission being to not just wrap up the girl's regrets, defeat her killer and protect her friends, but to do so in a way in which it seems any opposition placed against you was destined to lose to you."
+    "desc": "Pyrrha Nikos believed in Destiny. That belief pushed her towards her sacrifice.\nWe here the Company have long given Destiny multiple middle fingers, and this won't be any different.\nYou will be inserted into the world exactly 30 days (720 hours) after Nikos's death In a copy of her body. Your mission being to not just wrap up the girl's regrets, defeat her killer and protect her friends, but to do so in a way in which it seems any opposition placed against you was destined to lose to you. At the end of the mission, you return to your original body."
   },
   {
     "reward": 3,
@@ -6894,6 +7644,7 @@
     "rewardType": "Credits",
     "source": "",
     "title": "He Cannot Be Back...",
+    "uid": "HeEuZ",
     "loca": "Harry Potter",
     "lewd": false,
     "scope": "Grand",
@@ -6912,7 +7663,7 @@
         "value": "You must ensure that nothing interfers with Tom Marvolo Riddle Jr.'s Revival."
       },
       {
-        "value": "You must prevent his Revival becoming an Official Public Fact like it happened during the Fifth Book."
+        "value": "You must prevent his revival becoming an Official Public Fact like it happened during the Fifth Book."
       },
       {
         "value": "Tom Marvolo Riddle Jr. is immune to any Lures or Binding for the duration of this Mission."
@@ -6921,12 +7672,11 @@
         "value": "You must ensure that Harry James Potter defeats Tom Marvolo Roddle Jr. before the end of his Seventh Year of Hogwarts' education."
       },
       {
-        "value": "The Mission ends when Tom Marvolo Riddle Jr. is vanquished forever."
+        "value": "The mission ends when Tom Marvolo Riddle Jr. is vanquished forever."
       }
     ],
     "budget": 0,
-    "desc": "Evil must never Triumph but sometimes it mustn't be know either, to lead the side of Good isn't always the same as be seen as such. Please, show us that fighting the battles behind the closed curtain just as important as doing so openly.",
-    "uid": "HeEuZ"
+    "desc": "Evil must never triumph but sometimes it mustn't be know either, to lead the side of Good isn't always the same as be seen as such. Please, show us that fighting battles behind the closed curtain is just as important as doing so openly."
   },
   {
     "reward": 500,
@@ -7120,7 +7870,7 @@
       }
     ],
     "budget": 1,
-    "desc": "Welcome, welcome Contractor. My name is Clay the Undead and I bring you grim tidings (or happy, depending on your standing). You see, you have been selected to become an Endbringer, a creature of destruction and carnage made to oppose a civilization. But, don't let the name fool you! Endbringers don't actually end them. No, Endbringers are there to force a civilization to adapt and overcome, to evolve and think! Your job is to sow chaos and force a civilization to overcome you. Fortunately, while this mission isn't a choice, I was able to secure you an extra 200 Credits for your initial build to help facilitate your destruction."
+    "desc": "Welcome, welcome Contractor. My name is Clay the Undead and I bring you grim tidings (or happy, depending on your standing). You see, you have been selected to become an Endbringer, a creature of destruction and carnage made to oppose a civilization. But, don't let the name fool you! Endbringers don't actually end them. No, Endbringers are there to force a civilization to adapt and overcome, to evolve and think! Your job is to sow chaos and force a civilization to overcome you. Fortunately, while this mission isn't a choice, I was able to secure you an extra 200 Credits for you to either Posses or PowerSwap to help facilitate your destruction."
   },
   {
     "reward": "Taylor",
@@ -11296,24 +12046,20 @@
   },
   {
     "reward": "100",
-    "budget": 225,
-    "conditions": [
-      {
-        "value": "None of the Hashira's can die"
-      },
-      {
-        "value": "You can't kill the upper moons for them though you can provide assistance"
-      },
-      {
-        "value": "You must persoanlly teach them their new powers/abilities/skills"
-      }
-    ],
+    "image": "https://wallpaperaccess.com/full/2269432.jpg",
+    "author": "Lazer",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "A Helping Hand",
+    "uid": "LCaTU",
+    "loca": "Kimetsu no Yaiba/Demon Slayer",
+    "lewd": false,
     "scope": "Grand",
     "objectives": [
       {
-        "value": "Have Rengoku win against Akaza in a one on one battle",
+        "reward": "You gain mastery of flame breathing",
         "type": "Other",
-        "reward": "You gain mastery of flame breathing"
+        "value": "Have Rengoku win against Akaza in a one on one battle"
       },
       {
         "reward": "You gain full mastery of insect breathing",
@@ -11321,14 +12067,14 @@
         "value": "Have Shinobu win against Douma in a one on one battle"
       },
       {
-        "value": "Have Muichiro win against Kokushibo in a one on one battle",
+        "reward": "You gain full mastery of mist and moon breathing",
         "type": "Other",
-        "reward": "You gain full mastery of mist and moon breathing"
+        "value": "Have Muichiro win against Kokushibo in a one on one battle"
       },
       {
-        "value": "Prevent the massacre of the lower rank slayers (at least 70% must survive)",
+        "reward": "50",
         "type": "Credits",
-        "reward": "50"
+        "value": "Prevent the massacre of the lower rank slayers (at least 70% must survive)"
       },
       {
         "reward": "You gain full mastery of sun breathing",
@@ -11336,14 +12082,19 @@
         "value": "Have the slayers kill Muzan without relying on the sun"
       }
     ],
-    "rewardType": "Credits",
-    "source": "",
-    "image": "https://wallpaperaccess.com/full/2269432.jpg",
-    "loca": "Kimetsu no Yaiba/Demon Slayer",
-    "desc": "The Demon Slayers have stuck their necks out for hundreds of years trying to protect people who for the most part are unaware of the massive graveyards being filled for their sakes. It's about time the Slayers catch a break, and that break is you. Teach the slayers enough powers/abilities/skills so none of the Hashira's die in their encounters against the upper moons.",
-    "author": "Lazer",
-    "title": "A Helping Hand",
-    "uid": "LCaTU"
+    "conditions": [
+      {
+        "value": "None of the Hashira can die"
+      },
+      {
+        "value": "You can't kill the Upper Moons for them though you can provide assistance"
+      },
+      {
+        "value": "You must persoanlly teach them their new powers/abilities/skills"
+      }
+    ],
+    "budget": 225,
+    "desc": "The Demon Slayers have stuck their necks out for hundreds of years trying to protect people who for the most part are unaware of the massive graveyards being filled for their sakes. It's about time the Slayers catch a break, and that break is you. Teach the slayers enough powers/abilities/skills so none of the Hashira die in their encounters against the Upper Moons."
   },
   {
     "author": "CyrusFallen",
@@ -11676,58 +12427,58 @@
     "uid": "wYsxY"
   },
   {
+    "reward": "Any Tier 7 or lower companion of your choice.",
+    "image": "https://i.imgur.com/ah0VWFG.jpg",
+    "author": "irugaa0",
+    "rewardType": "Companions",
+    "source": "",
+    "title": "Plus Ultra Alter",
+    "uid": "mGCRv",
+    "loca": "My Hero Academia",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "20",
+        "type": "Credits",
+        "value": "Wait to meet Izuku right after the 1st encounter with All Might."
+      },
+      {
+        "reward": "50",
+        "type": "Credits",
+        "value": "Izuku can defeat Nomu at USJ"
+      },
+      {
+        "reward": "25",
+        "type": "Credits",
+        "value": "Izuku passes the U.A Entrance Exam in 1st place"
+      },
+      {
+        "reward": "40",
+        "type": "Credits",
+        "value": "Izuku gets first place in the Sports Festival."
+      },
+      {
+        "reward": "One Tier 6 Companion of choice",
+        "type": "Companions",
+        "value": "2x stronger Than Canon counterpart."
+      },
+      {
+        "reward": "One Tier 7 Companion of choice",
+        "type": "Companions",
+        "value": "3x stronger Than Canon counterpart."
+      }
+    ],
     "conditions": [
       {
-        "value": "Izuku must either refuse or not be offered OFA"
+        "value": "Izuku must either refuse or not be offered OFA."
       },
       {
         "value": "Can’t capture Izuku until the end of mission."
       }
     ],
-    "reward": "Any Tier 7 or lower companion of your choice.",
-    "lewd": false,
-    "scope": "Standard",
-    "uid": "mGCRv",
-    "author": "irugaa0",
-    "rewardType": "Companions",
-    "desc": " One of our clients recently bought a set of My Hero Academia worlds and posted a mission to the company. You must go to one of these worlds and change the events regarding the protagonist to give him a completely new set of superhuman abilities by any means at your disposal.",
-    "loca": "My Hero Academia",
     "budget": 365,
-    "title": "Plus Ultra Alter",
-    "objectives": [
-      {
-        "value": "Wait to meet Izuku right after the 1st encounter with All Might.",
-        "type": "Credits",
-        "reward": "20"
-      },
-      {
-        "type": "Credits",
-        "reward": "50",
-        "value": "Izuku can defeat Nomu at USJ"
-      },
-      {
-        "reward": "25",
-        "value": "Izuku passes the U.A Entrance Exam in 1st place",
-        "type": "Credits"
-      },
-      {
-        "reward": "40",
-        "value": "Izuku gets first place in the Sports Festival.",
-        "type": "Credits"
-      },
-      {
-        "value": "2x stronger Than Canon counterpart.",
-        "reward": "One Tier 6 Companion of choice",
-        "type": "Companions"
-      },
-      {
-        "type": "Companions",
-        "value": "3x stronger Than Canon counterpart.",
-        "reward": "One Tier 7 Companion of choice"
-      }
-    ],
-    "image": "https://i.imgur.com/ah0VWFG.jpg",
-    "source": ""
+    "desc": " One of our clients recently bought a set of My Hero Academia worlds and posted a mission to the company. You must go to one of these worlds and change the events regarding the protagonist to give him a completely new set of superhuman abilities by any means at your disposal."
   },
   {
     "title": "Hunter’s Paradise",
@@ -12910,7 +13661,7 @@
         "value": "Conquer another Country/Planet/System/Etc. (Repeatable)"
       },
       {
-        "reward": "Once something becomes a part of your hoard, you develop a sixth sense to always know where it is. OR 150 Credits",
+        "reward": "Once something becomes a part of your hoard, you develop a sixth sense to always know where it is.",
         "type": "Perks",
         "value": "Collect a hoard of Gold, Treasures and Artifacts. Enough to fill 1000 cubic meters."
       },
@@ -12922,7 +13673,7 @@
       {
         "reward": "Their full Purchase price or 100 Credits(whichever is higher)",
         "type": "Other",
-        "value": "Defeat or Enslave an already established Overlord/Evil King/Evil Arch-Mage"
+        "value": "Defeat or Enslave an already established already established Overlord/Evil King/Evil Arch-Mage without binding them."
       },
       {
         "reward": 500,
@@ -12937,7 +13688,7 @@
       {
         "reward": "A T8 Template Stack of any evil-aligned person for them. This is specifically for the Mistress.",
         "type": "Other",
-        "value": "Capture and train a local to be your Evil Mistress without binding them."
+        "value": "Train a local to be your Evil Mistress without binding them."
       },
       {
         "reward": "Their full Purchase price or 100 Credits(whichever is higher)",
@@ -13197,22 +13948,23 @@
     "budget": 1545
   },
   {
-    "title": "Sensational Foursome",
-    "rewardType": "Credits",
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1056349929678839980/b7f85cc11a7bc27c9fdb985a1e7a682b.jpg",
     "reward": "25",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/1056349929678839980/b7f85cc11a7bc27c9fdb985a1e7a682b.jpg",
+    "author": "Ratcatcher",
+    "rewardType": "Credits",
     "source": "",
+    "title": "Sensational Foursome",
+    "uid": "xsKDw",
+    "loca": "Pokemon",
+    "lewd": false,
     "scope": "Quick",
-    "budget": 0,
     "objectives": [
       {
-        "value": "If you're substituting as Ash, have Misty declare she loves you during the sex",
+        "reward": "Misty captured with twice the reward",
         "type": "Other",
-        "reward": "Misty captured with twice the reward"
+        "value": "If you're substituting as Ash, have Misty declare she loves you during the sex"
       }
     ],
-    "author": "Ratcatcher",
-    "loca": "Pokemon",
     "conditions": [
       {
         "value": "This must happen before Misty and her sisters start getting along."
@@ -13221,8 +13973,8 @@
         "value": "None of the four can be Captured. They must also not be coerced or mind controlled into the foursome. Lures are OK."
       }
     ],
-    "desc": "You know how Misty doesn't get along with her sisters, right? Talk them all into a foursome",
-    "uid": "xsKDw"
+    "budget": 0,
+    "desc": "You know how Misty doesn't get along with her sisters, right? Talk them all into a foursome."
   },
   {
     "rewardType": "Other",
@@ -13735,37 +14487,38 @@
     "desc": "Hello Contractor! I'm Clay, a purveyor of goods for the Company. Today, I contacted you for a simple goal. Munitions. Someone has to supply the weapons and gear for the limitless soldiers and low-rank contractors. That's why I'm willing to pay for supplies from a universe called Borderlands. Normally, I would go there myself to aquire the goods, but an asshole named Marcus managed to strike a deal with one of my higher ups that prevents me from entering that multiverse.\n\nThat's why I'm asking you for you to sell to me 500 \"White/Common\" Guns/Shields/Grenades/Artifacts/Relics for 1 Credit(This is Repeatable)"
   },
   {
-    "desc": "Contractors come in all shapes, sizes and adequacy. We don't pay too much attention to them unless we have to. This Mission may change that. Drop Into Fallout (any game) and take over the local Wasteland. It doesn't matter if you become the Minute Men of Vegas, the Mr House of DC or the Enclave of Boston. All that matters is you surviving, coming out on top and being bereft of every Perk, Skill, Ability, Ride and Retinue from the Company.",
-    "source": "",
-    "scope": "Standard",
-    "rewardType": "Other",
-    "title": "Prove Yourself",
+    "reward": "Company Promotion to Elite Contractor, coming with a monthly salary of $500,000",
     "image": "https://i.imgur.com/hKzv4Iu.jpg",
     "author": "FinSexual92",
-    "reward": "Company Promotion to Elite Contractor, coming with a monthly salary of $500,000",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Prove Yourself",
+    "uid": "Wsuxa",
+    "loca": "Fallout",
+    "lewd": false,
+    "scope": "Standard",
     "objectives": [
       {
-        "value": "Follow a Path of Good Karma",
+        "reward": "A T7 Companion Ticket for someone on the Side of Good",
         "type": "Companions",
-        "reward": "A T7 Companion Ticket for someone on the Side of Good"
+        "value": "Follow a Path of Good Karma"
       },
       {
-        "value": "Follow a Path of Bad Karma",
+        "reward": "A T7 Companion Ticket for someone on the Dark side",
         "type": "Companions",
-        "reward": "A T7 Companion Ticket for someone on the Dark side"
+        "value": "Follow a Path of Bad Karma"
       },
       {
-        "value": "Fold a Faction into your Forces",
+        "reward": "Their Tech and Forces are available to you even after this Mission",
         "type": "Other",
-        "reward": "Their Tech and Forces are available to you even after this Mission"
+        "value": "Fold a Faction into your Forces"
       },
       {
+        "reward": "Their Tech or their Forces available to you once you leave the World",
         "type": "Other",
-        "value": "Utterly destroy a Faction opposing you",
-        "reward": "Their Tech or their Forces available to you once you leave the World"
+        "value": "Utterly destroy a Faction opposing you"
       }
     ],
-    "loca": "Fallout",
     "conditions": [
       {
         "value": "You retain nothing from the Company, only your natural abilities from before we signed you on"
@@ -13781,7 +14534,7 @@
       }
     ],
     "budget": 0,
-    "uid": "Wsuxa"
+    "desc": "Contractors come in all shapes, sizes and adequacy. We don't pay too much attention to them unless we have to. This Mission may change that. Drop Into Fallout (any game) and take over the local Wasteland. It doesn't matter if you become the Minute Men of Vegas, the Mr. House of DC or the Enclave of Boston. All that matters is you surviving, coming out on top and being bereft of every Perk, Skill, Ability, Ride and Retinue from the Company."
   },
   {
     "image": "https://i.imgur.com/gh0LGDy.jpg",
@@ -20776,28 +21529,28 @@
     ]
   },
   {
-    "rewardType": "Credits",
-    "budget": 365,
     "reward": "1000",
-    "author": "Masterofbiomes",
     "image": "https://i.imgur.com/1OoqqAE.jpg",
+    "author": "Masterofbiomes",
+    "rewardType": "Credits",
     "source": "",
     "title": "Win The Holy Grail",
+    "uid": "UqWXJ",
     "loca": "Nasuverse",
+    "lewd": false,
+    "scope": "Grand",
     "objectives": [
       {
-        "value": "Kill none of the masters",
         "reward": "200",
-        "type": "Credits"
+        "type": "Credits",
+        "value": "Kill none of the masters"
       },
       {
+        "reward": "100",
         "type": "Credits",
-        "value": "Kill all of the masters",
-        "reward": "100"
+        "value": "Kill all of the masters"
       }
     ],
-    "uid": "UqWXJ",
-    "scope": "Grand",
     "conditions": [
       {
         "value": "May only be taken on Chargen"
@@ -20815,7 +21568,8 @@
         "value": "Must win the Holy Grail War"
       }
     ],
-    "desc": "Enter a holy grail war, and win!"
+    "budget": 365,
+    "desc": "Enter a Holy Grail War, and win!"
   },
   {
     "author": "Trismegistus",
@@ -20839,30 +21593,31 @@
     "uid": "DodfR"
   },
   {
+    "reward": "50",
+    "image": "https://i.imgur.com/7oc2zuo.jpeg",
+    "author": "Trismegistus",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Making Your Way Up In The World",
+    "uid": "yFcha",
     "loca": "League of Legends",
-    "desc": "Become a member of the Piltover Council. Alternatively, be crowned king or otherwise completely rule the city.",
+    "lewd": false,
+    "scope": "Standard",
     "objectives": [
       {
-        "type": "Credits",
         "reward": "40",
+        "type": "Credits",
         "value": "Become a member of the council without using any mind control on the other council members."
       },
       {
+        "reward": "40",
         "type": "Credits",
-        "value": "Gain an honest approval rating of over 66%",
-        "reward": "40"
+        "value": "Gain an honest approval rating of over 66%"
       }
     ],
-    "rewardType": "Credits",
-    "scope": "Standard",
-    "budget": 140,
-    "title": "Making Your Way Up In The World",
-    "source": "",
-    "image": "https://i.imgur.com/7oc2zuo.jpeg",
-    "author": "Trismegistus",
-    "reward": "50",
     "conditions": [],
-    "uid": "yFcha"
+    "budget": 140,
+    "desc": "Become a member of the Piltover Council. Alternatively, be crowned king or otherwise completely rule over the city."
   },
   {
     "reward": "100",
@@ -23128,13 +23883,20 @@
   },
   {
     "reward": "50 credits and any 3 villains from the world as retinue members.",
-    "title": "All For Me",
+    "image": "https://cdn.discordapp.com/attachments/894482961578221578/989847221115686922/All_for_one.jpg",
+    "author": "DepressedAlucard",
     "rewardType": "Other",
+    "source": "",
+    "title": "All For Me",
+    "uid": "qT1DI",
+    "loca": "My Hero Academia",
+    "lewd": false,
+    "scope": "Standard",
     "objectives": [
       {
         "reward": "25 Credits",
-        "value": "Completely take over All For One's criminal empire as well.",
-        "type": "Credits"
+        "type": "Credits",
+        "value": "Completely take over All For One's criminal empire as well."
       },
       {
         "reward": "50 Credits",
@@ -23143,23 +23905,17 @@
       },
       {
         "reward": "100 Credits",
-        "value": "Successfully manage to steal One for All using All For One. ",
-        "type": "Credits"
+        "type": "Credits",
+        "value": "Successfully manage to steal One for All using All For One. "
       }
     ],
-    "source": "",
-    "author": "DepressedAlucard",
-    "loca": "My Hero Academia",
-    "scope": "Standard",
-    "desc": "All For One is a quirk that has caused untold strife for over a century. With this ability, its current user, one who even took its name as his own, has stolen hundreds of quirks in his lifetime and used them all for his own nefarious deeds. The quirk does not belong in such hands. Instead, it should rest in yours. Your mission is therefore simple: Become the holder of the All for one quirk.",
     "conditions": [
       {
         "value": "No lures, bindings or 3rd party mind control on the person who passes All for one to you."
       }
     ],
-    "image": "https://cdn.discordapp.com/attachments/894482961578221578/989847221115686922/All_for_one.jpg",
-    "uid": "qT1DI",
-    "budget": 140
+    "budget": 140,
+    "desc": "All For One is a quirk that has caused untold strife for over a century. With this ability, its current user, one who even took its name as his own, has stolen hundreds of quirks in his lifetime and used them all for his own nefarious deeds. The quirk does not belong in such hands. Instead, it should rest in yours. Your mission is therefore simple: Become the holder of the All for One quirk."
   },
   {
     "reward": "20 points for every person you get laid",
@@ -23463,27 +24219,30 @@
     "uid": "iEjek"
   },
   {
+    "reward": "50 credits and a free purchase or upgrade to exit stage left",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990967800422101072/f97a8346865d2bdc3de94d64913823e1.jpg",
     "author": "jollymerr",
-    "budget": 85,
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Over-harem",
+    "uid": "zkZWQ",
+    "loca": "Overwatch",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": " 5 points",
+        "type": "Companions",
+        "value": "additional capture of tier 4 characters or above"
+      }
+    ],
     "conditions": [
       {
         "value": "just don't cause an apocalypse or something along that line... (why do I even have to put his here? we need to hire more stable people) "
       }
     ],
-    "desc": "Funnily enough despite the ridiculous amount of pornography of notable quality created around this reality, it's not one of our more popular destinations, so this mission is to mostly here to increase foot traffic in variations of this world, in an effort to get more bang for our booty, the objective is as such: capture 5 of the main female members of overwatch organization \n\n...that's it. go, get lost",
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/990967800422101072/f97a8346865d2bdc3de94d64913823e1.jpg",
-    "loca": "Overwatch",
-    "objectives": [
-      {
-        "reward": " 5 points",
-        "value": "additional capture of teir 4 characters or above"
-      }
-    ],
-    "reward": "50 credits and a free purchase or upgrade to exit stage left",
-    "scope": "Standard",
-    "source": "",
-    "title": "Over-harem",
-    "uid": "zkZWQ"
+    "budget": 85,
+    "desc": "Funnily enough despite the ridiculous amount of pornography of notable quality created around this reality, it's not one of our more popular destinations, so this mission is to mostly here to increase foot traffic in variations of this world, in an effort to get more bang for our booty, the objective is as such: capture 5 of the main female members of overwatch organization....\n\n...that's it. go, get lost."
   },
   {
     "author": "jollymerr",
@@ -24257,11 +25016,23 @@
     "desc": "It is better to Rule in Hell, then Serve in Heaven.\nThis is your mission statement.\nYou must acquire control of Hell, or a suitable hell dimension. The prior overlord of said Hell may not be captured or sold. Over 80% of the chosen plane MUST recognize you as ruler."
   },
   {
-    "loca": "Dark Souls",
-    "author": "Heaven Canceler",
     "reward": "Anime version Sailor Moon, Yuki Yuna and Kinomoto Sakura or 700 Credits",
-    "budget": 750,
+    "image": "https://i.imgur.com/xJxnCwW.png",
+    "author": "Heaven Canceler",
     "rewardType": "Companions",
+    "source": "",
+    "title": "In the Name Of The Moon!",
+    "uid": "XJGcs",
+    "loca": "Dark Souls",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "1 TS I and TS II for any magical girl mascot of your choice.",
+        "type": "Perks",
+        "value": "Force a Boss monster to become your magical mascot."
+      }
+    ],
     "conditions": [
       {
         "value": "All bought retinue members must be part of your magical girl team. They must dress the part and act like magical girls at least when “on the job”."
@@ -24273,19 +25044,8 @@
         "value": "Somehow Rekindle the First Flame without anyone getting sacrificed to it."
       }
     ],
-    "image": "https://i.imgur.com/xJxnCwW.png",
-    "scope": "Standard",
-    "desc": "Ah the world of Dark Souls. The ever repeating cycle of slow death and rebirth as another sacrifices himself for the good of all. Filled to the brim with tragedy, harsh and grim fantasy and horrifying monsters that can break all but the greatest of warriors. The curse of undeath gnawing at the minds and souls of people as they struggle to go on, truly the epitome of a tragic fantasy story. So why not throw in some girls in frilly dresses who make speeches about the power of love and justice? For this mission you must crash the normal thematics of the setting by creating a team of magical girls and lead them on the path to victory. To achieve victory, you must go through the canon plot of one of the Dark Souls storylines, defeating the enemies in a suitably magical girl-like fashion. Saving innocents, purifying the corrupted and making speeches about love and justice.",
-    "uid": "XJGcs",
-    "title": "In the Name Of The Moon!",
-    "source": "",
-    "objectives": [
-      {
-        "type": "Perks",
-        "reward": "1 TS I and TS II for any magical girl mascot of your choice.",
-        "value": "Force a Boss monster to become your magical mascot."
-      }
-    ]
+    "budget": 750,
+    "desc": "Ah the world of Dark Souls. The ever repeating cycle of slow death and rebirth as another sacrifices himself for the good of all. Filled to the brim with tragedy, harsh and grim fantasy and horrifying monsters that can break all but the greatest of warriors. The curse of undeath gnawing at the minds and souls of people as they struggle to go on, truly the epitome of a tragic fantasy story. So why not throw in some girls in frilly dresses who make speeches about the power of love and justice? For this mission you must crash the normal thematics of the setting by creating a team of magical girls and lead them on the path to victory. To achieve victory, you must go through the canon plot of one of the Dark Souls storylines, defeating the enemies in a suitably magical girl-like fashion. Saving innocents, purifying the Corrupted, and making speeches about love and justice."
   },
   {
     "author": "Ratcatcher",
@@ -28484,6 +29244,23 @@
     "uid": "UJXfS"
   },
   {
+    "reward": "Exit Stage Left and all upgrades, 1 TX tickets and 2000 credits",
+    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992870133829738496/Apokolips.webp",
+    "author": "Templar9999",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Destroy Apokolips",
+    "uid": "srnyW",
+    "loca": "DC",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "2 TX Tickets",
+        "type": "TX Tickets",
+        "value": "Destroy (NOT capture) Darkseid "
+      }
+    ],
     "conditions": [
       {
         "value": "Destroy Apokoliops"
@@ -28495,24 +29272,8 @@
         "value": "Starting Bonus: Double Chargen Credits"
       }
     ],
-    "source": "",
-    "objectives": [
-      {
-        "type": "TX Tickets",
-        "reward": "2 TX Tickets",
-        "value": "Destroy (NOT capture) Darkseid "
-      }
-    ],
-    "desc": "Darkseid is perhaps amongst the greatest, if not the greatest threat the DC multiverse faces as a whole. With his deadly Omega Beams and enormous power, the god of tyranny is not one to be messed with. Such evil must be removed and eradicated from this world. Your mission is therefore to destroy the true multiversal Darkseid and his home base Apokolips within the 4th world. \n\nUnfortunately, your arrival and intentions have been picked up by said god upon your arrival in DC. Darkseid will expect a threat, but will not know about you directly. He will be looking for said threat everywhere. It is recommended to come adequately prepared. ",
-    "uid": "srnyW",
-    "scope": "Grand",
-    "image": "https://cdn.discordapp.com/attachments/925963686433132644/992870133829738496/Apokolips.webp",
-    "loca": "DC",
     "budget": 300,
-    "rewardType": "Other",
-    "author": "Templar9999",
-    "title": "Destroy Apokolips",
-    "reward": "Exit Stage Left and all upgrades, 1 TX tickets and 2000 credits"
+    "desc": "Darkseid is perhaps amongst the greatest, if not the greatest threat the DC multiverse faces as a whole. With his deadly Omega Beams and enormous power, the god of tyranny is not one to be messed with. Such evil must be removed and eradicated from this world. Your mission is therefore to destroy the true multiversal Darkseid and his home base Apokolips within the 4th world. \n\nUnfortunately, your arrival and intentions have been picked up by said god upon your arrival in DC. Darkseid will expect a threat, but will not know about you directly. He will be looking for said threat everywhere. It is recommended to come adequately prepared. "
   },
   {
     "title": "Capture all Waifus: Disgaea Edition",

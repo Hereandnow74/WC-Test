@@ -1020,7 +1020,7 @@ DLCintensity.push({
   special: 'Chargen only. May not be taken on DR11.',
   chargen: true,
   blacklist: ['Wage Slave', 'Fight For Your Right', 'One In Ten', 'Power Trip', 'Black-mark'],
-  desc: `Contractors were too greedy and captured too many waifus they should've left alone, now after the long war with the coalition of jumpers, SI's and Mary Sue's, that happened in an instant, Company is the shadow of its former self, losing a lot of their absolute authorities. While it gives you a higher signing bonus, most of continuous services provided by the Company would no longer work.
+  desc: `Contractors were too greedy and captured too many waifus they should've left alone, now after the long war with the coalition of jumpers, SI's and Mary Sue's, that happened in an instant, the Company is the shadow of its former self, losing a lot of their absolute authorities. While it gives you a higher signing bonus, most of the continuous services provided by the Company will no longer work.
   <p>You will lose access to almost all apps, denying you the ability to buy companions, take a loan or purchase any new perks or rides. Defenses will no longer provide immunity even if you buy a second copy, RIP rules will not activate when you die and Warranty Plan will no longer revive your companions. Also all binding methods will stop providing their main function - capture, but any secondary powers they give will continue to function.</p>  
   `,
 })

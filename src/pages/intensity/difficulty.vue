@@ -114,14 +114,41 @@
         </template>
       </DifficultyCard>
     </div>
+    <div v-if="!settings.allChosenAuthors[0]">
+      <div class="text-2xl text-center my-4">
+        DLC Intensities
+      </div>
+      <Note type="warning" title="Warning" class="max-w-[600px] mx-auto">
+        Some of the DLC intensities are considered to be cheats. Use at your own risk.
+      </Note>
+      <div class="text-lg max-w-[800px] mx-auto flex flex-col gap-1 mt-2">
+        <a class="hover:underline text-blue-800 dark:text-blue-400" href="https://docs.google.com/document/d/1lKz-xLdUFiCkG7SPcByqSACnDxRp0cl7mwNHREY4mvU/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Despin Intensity List</a>
+        <a class="hover:underline text-blue-800 dark:text-blue-400" href="https://docs.google.com/document/d/1gzg7-xn6pP5TOhQERiChPVtJ4sw02xusIycQvFj7QvE/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Rhivan Intensity List</a>
+      </div>
+      <div class="bg-gray-300 dark:bg-true-gray-800 rounded max-w-[800px] text-center mx-auto p-2 my-2">
+        You can add DLC intensities from the lists above manually by using the form below, just input their title and Intensity modifier, then click add.
+      </div>
+      <div class="flex gap-2 mx-auto w-max mb-8">
+        <Input v-model="customDLCintensity.title" placeholder="Title of Intensity Perk" />
+        <Input v-model.number="customDLCintensity.intensity" class="w-28" label="Intensity" />
+        <Button size="small" label="Add" class="px-4" bg-color="bg-purple-700" @click="addDLCIntensity" />
+      </div>
+      <div class="max-w-[800px] flex gap-2 flex-wrap mx-auto mb-8">
+        <div v-for="perk in difficulties.filter(perk => perk.type && perk.type.startsWith('dlc'))" :key="perk.uid" class="rounded flex gap-2 px-2 py-1" bg="blue-100 dark:gray-700 hover:blue-200 dark:hover:gray-800">
+          <div><b>Title:</b> {{ perk.title }}</div>
+          <div><b>Intensity:</b> {{ perk.intensity }}</div>
+          <Button size="small" label="Delete" class="px-4" bg-color="bg-red-700" @click="difficulties.splice(findIndex(difficulties, {uid: perk.uid}), 1)" />
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script lang='ts' setup>
-import { clamp } from 'lodash-es'
+import { clamp, findIndex } from 'lodash-es'
 import { CHAR_COSTS, CHAR_COSTS_FULL, WORLD_RATINGS_DF } from '~/data/constants'
 import { difficultyOptions, difficultyRules } from '~/data/difficulty'
-import { useTooltips } from '~/logic/misc'
+import { randomString, useTooltips } from '~/logic/misc'
 import { difficultyAvailable, chooseDifficulty, pickSimplePerk, chooseIntensity } from '~/logic/perksLogic'
 import { useStore } from '~/store/store'
 
@@ -153,6 +180,22 @@ const customIntensity = reactive({
   category: 'difficulty',
   type: 'utility',
 })
+
+const customDLCintensity = reactive({
+  uid: '',
+  title: '',
+  image: '',
+  intensity: 1,
+  desc: '',
+  category: 'difficulty',
+  type: 'dlc',
+})
+
+function addDLCIntensity() {
+  customDLCintensity.uid = randomString(5)
+  customDLCintensity.type = `dlc${randomString(5)}`
+  chooseDifficulty(customDLCintensity)
+}
 
 const buybackIntensity = {
   uid: 'Wkf12',

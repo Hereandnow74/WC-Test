@@ -19,7 +19,7 @@ let rouletteWatcher = null
 const cultFreebies = {
   defensePerks: [{ title: 'Stress Defense', cost: 0, count: 2 }],
   talentPerks: [{ title: 'Everlasting Talent', cost: 0, count: 1 }],
-  homePerks: [{ title: 'Pocket Space', cost: 0, count: 1 }, { title: 'Pocket Apartment', cost: 0, count: 1 }],
+  homePerks: [{ title: 'Pocket Space', cost: 0, count: 1 }, { title: 'Pocket Apartment', cost: 0, count: 2 }],
 }
 
 export const challenges = [
@@ -97,7 +97,7 @@ export const challenges = [
     desc: `
     <p>One of the Top Managers of The Company recently gained a fascination for the cultivation and managed to convince R&D department to create experimental program 'Super Contractors&#8482;' by locking them in a Time Bubble for 100,000 years before they will go to their first World.</p>
     <p>Overseer of the program can issue a missions for contractor to complete, but rewards will be restricted to improving contractor realm/home only.</p>
-    <p>You can't have companions, leave or invite anyone inside for the duration of this challenge, but other parts of the Catalog will remain accessible to you. Receive Pocket Space, Pocket Apartment, Everlasting Talent, Stress Defense x2 for free.</p>
+    <p>You can't have companions, leave or invite anyone inside for the duration of this challenge, but other parts of the Catalog will remain accessible to you. Receive Pocket Space, Pocket Apartment x2, Everlasting Talent, Stress Defense x2 for free.</p>
 
     `,
     effect: {

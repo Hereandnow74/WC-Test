@@ -1,17 +1,20 @@
-export const startingDesc = `<h3 class="font-bold text-xl">Basic Rules</h3>
-<h4 class="font-bold text-lg">Intensity</h4>
+export const startingDesc = `<h3 class="font-bold text-2xl">
+Basic Rules
+</h3>
+<h4 class="font-bold text-xl pt-4 pb-2">Intensity</h4>
 <p>Your Intensity is the first step to creating a build. Intensity is a single number that reflects your desired tone, from a cozy retirement at Intensity 0 to a grueling struggle against insurmountable odds at Intensity 10. At lower intensities, your starting budget will be higher, but your ongoing gains from captures and sales will be much lower, to a minimum of zero at Intensity 0.</p>
-<p>To find your Intensity value, go to Negotiations and make your choices from among those options.</p>
+<p>To find your Intensity value, go to <a class="text-green-800 dark:text-green-400 hover:underline" href="https://waifu-catalog.neocities.org/intensity/difficulty">Negotiations</a> and make your choices from among those options.</p>
+`
 
-<h4 class="font-bold text-lg">Your Starting World</h4>
+export const startingWorld = `<h4 class="font-bold text-xl pt-4 pb-2">Your Starting World</h4>
 <p>The second step to creating a build is determining your starting world. Every world has a Danger Rating (DR), measured on a scale from 1 to 10. These reflect our estimates of how dangerous the world is, taking into account the power of the typical combatants, the average danger level to ordinary people living in that world, and especially the actual cost of which of our perks might be the basic necessities to survive in that world. Entering a world during a major crisis or active apocalypse may raise a world’s rating by one or even two ranks, and some specific locations within a world may have their own DRs.</p>
 <p>DR1 worlds are typically paradises, where even the local inhabitants are at little risk of trouble. DR2 is equivalent to the developed countries on an Information Age Earth. Danger and hardship still exist, but at the relatively low levels that most of our contractors are familiar with. DR10 reflects the worst hellworlds, where life is brutal and short. Specific worlds and their ratings are listed <a href="/world" class="text-green-600 dark:text-green-500 underline">here</a>.</p>
-<p>If your world is not on the list, compare it to the ones that are and use your best judgment. A world’s danger rating can be affected by AU elements, but any characters’ metaknowledge should not cover these changes.</p>
+<p>If your world is not on the list, compare it to the ones that are and use your best judgment. A world’s danger rating can be affected by AU elements, but any characters’ metaknowledge should not cover these changes.</p>`
 
-<h4 class="font-bold text-lg">Your Starting Budget</h4>
+export const startingBudget = `
+<h4 class="font-bold text-xl pt-4 pb-2">Your Starting Budget</h4>
 <p>Now that you know your Intensity and the DR of your starting world, you can match the two on the chart below to find your starting budget. This budget is only granted once. Traveling to a new world, region, or time period will not grant you additional credits, not even the difference between the lower DR and the higher. The following chart shows the budget for each DR at each of the major Intensity intervals.</p>
-<p>Now that you know your budget, pick your Origin, one Binding-type control, and as many of the Lures, Other Controls, Perks, Companions, and Familiars as you desire or can afford.</p>
-`
+<p>Now that you know your budget, pick your Origin, one Binding-type control, and as many of the Lures, Other Controls, Perks, Companions, and Familiars as you desire or can afford.</p>`
 
 export const intensityTableTitles = ['Intensity', 'DR 1', 'DR 2', 'DR 3', 'DR 4', 'DR 5', 'DR 6', 'DR 7', 'DR 8', 'DR 9', 'DR 10']
 export const intensityTable = [
@@ -45,14 +48,14 @@ export const glossary = `
 <div><b>Retinue</b>: The group of you and all subjects.</div>
 `
 
-export const captures = `<h3 class="font-bold text-lg">Captures</h3>
+export const captures = `<h3 class="font-bold text-xl pt-4 pb-2">Captures</h3>
 <p>Additional companions may be acquired by “capturing” them in their homeworlds. This is typically achieved by using a Binding or certain Other Controls, or when a target gives you a sincere love confession - usually romantic, but false positives occasionally happen and trigger a capture that isn’t entirely merited. This love may be assisted by any means, including the use of Lure-type controls or third-party mind control.</p>
 <p>Confessions must either be delivered in-person or by a two-way live feed of any sort. The target does not need to be aware that you received their confession at the time it was given, but a target with full awareness of their surroundings should be reasonably expected to know that you could. The exact wording of any confession varies greatly with the target’s personality and cultural context.</p>
 <p>When you capture a Tier 1-10 target, we’ll pay you a certain fraction of their purchase price of their effective tier at step 1a, rising with your Intensity and then rounded down to the next full credit. If, due to your retinue’s actions, their effective tier at step 4 is less than step 1a, we’ll use that value instead. Capture credits are not granted for local versions of targets that you’ve purchased or alternate versions that you’ve already captured once, unless they’re a unique entry in the lists proper or as a waifu perk. If a target is only listed as part of a group entry, you will only get the credits after capturing every member of the group.</p>
 <p>If you capture a character “early,” before they’ve achieved the potential reflected in the version available for purchase, you will still receive their full capture value. As compensation for the subject’s relative weakness, we at the company will download the missing abilities and a framework for the missing skills into your capture target at no charge. This framework will also guide the capture to any missing equipment or familiars, but you must hunt those down, and provide the subject with the training needed to master their new power, on your own time.</p>
 `
 
-export const captureExtra = `<h3 class="font-bold text-lg">Capturing Eхtras</h3>
+export const captureExtra = `<h3 class="font-bold text-xl pt-4 pb-2">Capturing Eхtras</h3>
 <p>Subjects not named on any list may also be captured for credits, provided they have at least three of the following in their original canon: name, personality or backstory, abilities or skills or powers, and appearance or design. As an author, you must be able to assert that the character definitely existed in canon, even as an extra in a crowd scene, and then rate their tiers yourself. Individuals who fail this test are worth 5% of the purchase price for their tier at step 1a. On low intensities, when the regular capture value is less than 5% of purchase price, they will be worth that instead.</p>
 <p>Because captured extras lack a standard model for comparison, unlike listed entries, any additions that would normally be accounted for in steps 3 or 4 will instead be included in the newly-created standard model and calculated accordingly. If an extra is the first example of a generic entry that you’ve captured, they will still count for the full price of that entry, if it’s higher than the above.</p>
 `
@@ -70,18 +73,18 @@ export const effectiveTiers = `<h3 class="font-bold">Effective Tiers</h3>
   </ul>
   <p>Many individuals' powers rely on henshin devices or other special equipment that they can be easily separated from and reduced to, usually, only T1-T3. These items are accounted for in their listed tiers, but not included in their effective tier calculations until step 4.</p>`
 
-export const familiars = `<h3 class="font-bold text-lg">Familiars</h3>
+export const familiars = `<h3 class="font-bold text-xl pt-4 pb-2">Familiars</h3>
 <p>Broadly speaking, a familiar is any individual in your retinue that isn’t a member of your harem proper. This can include beloved pets, support staff, adopted children, people important to your harem that you aren’t interested in maintaining an emotional and sexual relationship with, or more traditional magical beasts such as Pokémon or magical girl mascots. Many purchasable companions are packaged with their familiars and specified as such in the setting-specific rules; this is by no means a comprehensive list. Some familiars named in the setting-specific rules are also present in the catalog listing as companions. If you capture a familiar’s master first, you’ll get the familiar too and receive the full value for both. Much like with humanoid captures, only the first copy of any type of generic magical or other beast is worth capture or sale credits.</p>
 <p>Familiars can be captured using local familiar bonding methods, such as rituals or Pokéballs, or Binding or Other controls like anyone else, and are not subject to the romantic or sexual interest that your Bindings instill in your companions. If a humanoid familiar is bound to you by local methods, they will count as captured for all purposes. No special methods are needed to distinguish a companion binding from a familiar binding; intent is enough. Companion and Familiar statuses are not permanent and may be changed in the app at any time. This change will always be intentional.</p>
 `
 
-export const device = `<h3 class="font-bold text-lg">Your Contractor Smart Device</h3>
+export const device = `<h3 class="font-bold text-xl pt-4 pb-2">Your Contractor Smart Device</h3>
 <p>No matter your choices, you will receive one and only one complimentary smart device of your choice, preloaded with the company’s shopping app so you can manage your purchases and trade-ins on the go. The exact nature of your device is fixed. You may, however, trade in your current device and request a replacement at any time. Your current device will disappear immediately, and the new one will arrive after seven days (168 hours).</p>
 <p>Your company smart device cannot be hacked. If it is ever broken, it will repair itself completely the next time it isn’t observed.  If it is ever more than 10m away from you or any of your companions for more than 15 minutes, it will teleport into your pocket. If the local space is too warped for that distance to be accurate, you may also recall it manually. The same principle applies in digital worlds, even if you have a physical body “outside” in meatspace. If one of your companions is using this device for any purpose and you ask for it back, she'll hand it over immediately without question.</p>
 <p>Your smart device will automatically disintegrate upon your account’s closure. If you have zero subjects, this will happen immediately upon your death. Otherwise, we will wait until your R.I.P. timer runs out.</p>
 `
 
-export const purchases = `<h3 class="font-bold text-lg">Extending Your Build: Purchases</h3>
+export const purchases = `<h3 class="font-bold text-xl pt-4 pb-2">Extending Your Build: Purchases</h3>
 <p>The company’s Companions and Familiars are all clones manufactured on demand, except where noted. They come packaged with their iconic outfits, personal equipment, and familiars or treasured pets, when appropriate. The largest equipment normally allowed are motorcycles, but there are some rare exceptions. For your own ease of accounting, you may only purchase one copy of any distinct entry at a time.</p>
 <p>Most companions are sorted into ten tiers, each of which has a different cost</p>
 <p>All purchase prices are rounded up. Some Controls and Heritage perks include free copies of lesser perks, primarily Basic Talents and Defenses. These can ignore the normal prerequisites. If you’ve already purchased a perk before getting a free copy, you may take a discount on the new purchase equal to the free perk’s value. The total of all discounts applied to a single perk, unless it’s a Talent or Defense, is capped at -80% of the list price.</p>
@@ -90,18 +93,18 @@ export const purchases = `<h3 class="font-bold text-lg">Extending Your Build: Pu
 <p>All of these processes have already been applied to all purchased retinue members, regardless of whether or not they’re bound. The last will also apply to you, if you accept such a power.</p>
 `
 
-export const sales = `<h3 class="font-bold text-lg">Extending Your Build: Sales</h3>
+export const sales = `<h3 class="font-bold text-xl pt-4 pb-2">Extending Your Build: Sales</h3>
 <p>If you only wanted a capture for their credit value, you may ship them to us at the company. We’ll pay you a certain fraction of the purchase price of their effective tier at step 4, rising with your Intensity and then rounded down to the next full credit. This applies regardless of whether step 1a or step 4 has the higher value. Humanoid familiars gained for free from an Origin choice will not count for capture credits, but may still be sold at the normal rate. As with captures, payouts for sales are not granted for local versions of targets that you’ve purchased or alternate versions that you’ve already sold once, unless they’re a unique entry in the lists proper or as a waifu perk. Extras have no additional sale value.</p>
 <p>Selling a subject only takes a single button press in the company app on your smart device. We’ll reprocess the captures and send them where they need to go. Otherwise, captures are yours to keep.</p>
 `
 
-export const waifu11 = `<h3 class="font-bold text-lg">Imaginary Tiers</h3>
+export const waifu11 = `<h3 class="font-bold text-xl pt-4 pb-2">Imaginary Tiers</h3>
 <p>Three more tiers exist beyond the normal ten: tier χ/X, Ψ/Y, and Ω/Z. These companions instead cost varying amounts of Imaginary Tickets (IMG), only available for starting builds on Danger Rating X. Both the Greek and Latin names for these Imaginary Tiers are acceptable. Imaginary Tier companions that are listed as Perks or Waifu Perks have further details in the appropriate sections. All Imaginary Tier companions are freely capable of multiversal travel, even if they showed no such abilities or explicitly could not in their original canons.</p>
 <p>If, after your starting build, you ever find yourself with spare IMG and nothing or nobody you want to buy with it, you may exchange the tickets for 1000 credits each. This cannot be undone. </p>
 <p>Captured Imaginary Tier companions may be shipped back to the company like any other. These follow similar capture and sale rates as regular companions, including the effects of Wage Slave, but are measured in both IMG and credits and convert every 1000c to 1 IMG. All sale values above intensity 0.0 are also worth 1 additional IMG.</p>
 `
 
-export const danger11 = `<h3 class="font-bold text-lg">Danger Rating X Build Rules</h3>
+export const danger11 = `<h3 class="font-bold text-xl pt-4 pb-2">Danger Rating X Build Rules</h3>
 <p>When creating a Danger Rating 11 build, ignore the basic build creation rules found above. You will instead start with the following:</p>
 <ul class="list-disc list-inside">
   <li>One companion of Tier χ/X or Ψ/Y. Power Swapping a different companion to one of these tiers is allowed, as are Heavenbuilt Proto and Piece of Silver. This companion may not be sold.</li>
@@ -119,14 +122,14 @@ export const danger11 = `<h3 class="font-bold text-lg">Danger Rating X Build Rul
 `
 
 export const creditValue = `
-<h3 class="font-bold text-lg">PvP Credit Value</h3>
+<h3 class="font-bold text-xl pt-4 pb-2">PvP Credit Value</h3>
 <p>This is the sum of the list prices for you and your retinue’s effective tiers after step 5, plus the combined list prices of your Controls, Catch-a-Ride vehicles, Talents & Defenses, and Demiplanes & Dungeons perks. Tier Xs are valued at their tickets' exchange rate of 2000 credits.</p>
 `
 export const pvpRules = `
   <h2 class="font-bold text-xl underline py-2">Other Contractors</h2>
   <p>The company is a multiversal organization. You are hardly their only contractor, though the multiverse is certainly expansive enough that you can live many lifetimes and never once meet one of your peers. The company offers a variety of means for non-allied contractors to interact, beyond random chance encounters in the vast multiverse. Some of these interactions will even be friendly, but others… less so.</p>
 
-  <h3 class="font-bold text-lg mt-2">PvP Glossary</h3>
+  <h3 class="font-bold text-xl pt-4 pb-2 mt-2">PvP Glossary</h3>
   <ul>
     <li class="list-inside list-disc">
     <b>Home Territory / Turf</b>: This includes all company provided spaces (Pocket Apartment and upgrades, Dragon Cabin, space claimed by Creep, etc., plus any locations in a local world that you or your retinue have possessed for at least 24 hours.
@@ -139,29 +142,29 @@ export const pvpRules = `
     </li>
   </ul>
 
-  <h3 class="font-bold text-lg mt-2">General PvP Rules</h3>
+  <h3 class="font-bold text-xl pt-4 pb-2 mt-2">General PvP Rules</h3>
   <p>Not all of these rulesets apply to every form of PvP, but each applies to more than one, and will be referred back to as necessary. All debuffs in these rules are in place for any interactions between you (and your retinue) and your opponent (and their subjects). These debuffs do not apply to interactions between yourself and natives of your current universe.
   </p>
 
-  <h3 class="font-bold text-lg mt-2">Home Territory Integration</h3>
+  <h3 class="font-bold text-xl pt-4 pb-2 mt-2">Home Territory Integration</h3>
   <i>Enabled for: Invasions (Defending Side), Gauntlet</i>
   <p>If you have a Pocket Apartment or higher, the location is integrated into the local environment for as long as you’re connected to that world. The locals will not notice its appearance or disappearance. Conjunction, Apportation, and Warranty Plan’s killswitch are all disabled while on your opponent’s home turf.</p>
 
-  <h3 class="font-bold text-lg mt-2">Defense Perk Restrictions</h3>
+  <h3 class="font-bold text-xl pt-4 pb-2 mt-2">Defense Perk Restrictions</h3>
   <i>Enabled for: Invasions (all), Arranged, Gauntlet</i>
   <p>The often-necessary Defense perks made available to Contractors for PvE activity are also strong enough to cause excessive frustration in PvP. To answer this concern, the immunity levels of all Defenses are disabled.</p>
   
-  <h3 class="font-bold text-lg mt-2">D-Travel Restrictions</h3>
+  <h3 class="font-bold text-xl pt-4 pb-2 mt-2">D-Travel Restrictions</h3>
   <i>Enabled for: Invasions (all), Arranged, Gauntlet (certain conditions)</i>
   <p>To ensure that a match actually occurs, participants may not leave until the end, whether the intended destination is a parallel of the same world or part of a different multiverse cluster entirely.</p>
   
-  <h3 class="font-bold text-lg mt-2">NTR is a Trash Fetish (PvP Capturing)</h3>
+  <h3 class="font-bold text-xl pt-4 pb-2 mt-2">NTR is a Trash Fetish (PvP Capturing)</h3>
   <i>Enabled for: Invasions (non-Phantasms), Gauntlet, Unregulated</i>
   <p>
   If a member of a retinue is captured by an enemy and held in their territory (whether that territory is purchased from the company or acquired locally) for a period of 24 hours, the hostage loses the benefits of Creature, Stress, Mind, Addiction, Wyldscape, and Corruption Defenses until rescued. The timer begins only when the hostage is both defeated and restrained, and it will reset if they are touched by their master or leave enemy territory unrestrained. The timer will pause if they leave while still restrained by the enemy.  </p>
   <p>Once the timer has run its course, the kidnapper is free to use any bindings, lures, or third-party mind control methods they have, as if the hostage were free. Targets stolen from another contractor are worth 0 capture credits, but may be sold at the usual rate, adjusting for their effective tier after step 4. Recapturing one of your own companions does not grant any credits.</p>
 
-  <h3 class="font-bold text-lg mt-4">Gauntlet(Continuous PvP)</h3>
+  <h3 class="font-bold text-xl pt-4 pb-2 mt-4">Gauntlet(Continuous PvP)</h3>
   Starting one week into your journey, another contractor will appear in your current world, with their own
   agenda and retinue of waifus and / or husbandos. All opposing contractors will have legal builds. Their budgets
   are equal to your PvP credit value, at chargen or the end of the previous round, plus 1 % of that sum per
@@ -181,7 +184,7 @@ export const pvpRules = `
   budgets will continue to increase. The rest period between challengers will decrease by 24 hours for every seven wins
   you accumulate, to a minimum of one hour.</p>
   
-  <h3 class="font-bold text-lg">Special Gauntlet Rules</h3>
+  <h3 class="font-bold text-xl pt-4 pb-2">Special Gauntlet Rules</h3>
   <p>Yoink and Substitute are not available in Gauntlet PvP. Unlike in other modes, a new Gauntlet participant’s starting
   world is hidden from them. The client still chooses their starting world’s danger rating, but the master of their
   story chooses which world within that danger rating the client begins in.</p>
@@ -192,11 +195,11 @@ export const pvpRules = `
   opponents otherwise function identically to your other retinue members. They keep their heritages, but their binding
   methods are replaced by yours.</p>
 
-  <h3 class="font-bold text-lg mt-4">Gauntlet Teams</h3>
+  <h3 class="font-bold text-xl pt-4 pb-2 mt-4">Gauntlet Teams</h3>
   <p>Co-op play and the Gauntlet are not mutually exclusive. If you do not enter an Arena, the budget values of new opponents will be calculated based on the sum of your team’s PvP credit values, not just yours individually. If you are in an Arena, your opponents will have teams of their own, of equal size to yours. New teams will only enter the fray after a previous team is completely defeated. If the number of remaining opponents in a challenge is less than the size of a team, they will act as individuals according to the non-Arena rule above.</p>
   <p>The number of active participants in an Arena must be a multiple of your team’s size: a team of two may enter any Arena; a team of three may enter Arena II or Arena V; a team of four may enter Arena III or Arena V; a team of five may only enter Arena IV; and a team of six may only enter Arena V.</p>
 
-  <h3 class="font-bold text-lg mt-2">Life After Defeat</h3>
+  <h3 class="font-bold text-xl pt-4 pb-2 mt-2">Life After Defeat</h3>
   <p>You lost. Your opponent stole most or all of your waifus, killed you, and then revived you into their harem so they could rub it in your face for all eternity... but they were defeated in turn and now you’re free. You still have all of your abilities from your Origin, Heritage perks, Template Stacking applied to yourself, and buffs from cross-training (including the results of Talents), equipment (that you still have after your captivity), and any shareable heritage perks that your captor applied to you. We’ll give you another free Stamp, then wipe all of your other previous transactions, resetting your account’s balance to zero. You must repurchase your old control methods, Talents, Defenses, Catch-a-Ride, and other perks at their normal prices.
   </p>
   <p>You may (re-)capture any other freed members of your captor’s former retinue for their regular value (according to their effective tier after step 4). Any former members of your retinue that were stolen from your captor are probably lost, but they may still be out there… somewhere. They will also be treated as normal captures (according to their effective tier after step 4). Any new retinue members that you steal from other contractors besides your captor, whether they’re defeated or not, outside of regulated PvP will be valued at their steal prices (according to their effective tier after step 4). The PvP capture rules above otherwise apply to unregulated PvP. If you had Warranty Plan before your defeat, you may purchase Slightly Used backups of lost retinue members at the price of their final effective tier after step 4.
@@ -204,31 +207,31 @@ export const pvpRules = `
   <p>Good luck.</p>
   `
 
-export const services = `<h3 class="font-bold text-lg">Clientele</h3>
+export const services = `<h3 class="font-bold text-xl pt-4 pb-2">Clientele</h3>
 <p>We the company do actually have regular clients. Clients use their own local currency or property to buy clones made from the companions and familiars that Contractors pick up in their operations. These products are stamped with company tattoos keyed to their new owners. A Contractor encountering a Client and their purchase during the course of their operations is rare, but not unheard-of.</p>
 `
 
-export const salary = `<h3 class="font-bold text-lg">Contractor Salary</h3>
+export const salary = `<h3 class="font-bold text-xl pt-4 pb-2">Contractor Salary</h3>
 <p>As one of our contractors, you are entitled to a monthly salary of 10,000 USD or the equivalent in your homeland’s currency. This will be deposited directly into your smart device’s account, so you can convert it to the local money systems of the worlds you visit. On-the-spot fabrication of physical currency or coinage is included at no extra cost.</p>
 <p>Bonus pay is also available for each month. This is valued at the sum of the list prices of all captures you’ve made for that month, including earned waifu perks. Imaginary Tier characters are valued according to the exchange rate of their IMG value. For this purpose only, 1 credit is equal to 100 USD.</p>
 `
 
-export const helpDesk = `<h3 class="font-bold text-lg">Help Desk Hotline</h3>
+export const helpDesk = `<h3 class="font-bold text-xl pt-4 pb-2">Help Desk Hotline</h3>
 <p>If you, a contractor, have questions about any company function, perk, a retinue member’s capabilities, or even is just in a bind locally and doesn’t know what to do next, you need only call the Help Desk and ask. Trained operators are standing by at all times to hear you out. A dedicated app on your smart device allows you to access this free service with just a single tap. Just give a detailed description of your current situation and how it relates to your question, and the operator will answer and (if you’re in a bind) offer some possible solutions. A direct scan of your last seven days of activity will be made - ignoring your <b>Information</b> and <b>Trace Defenses</b> - for our records and to help our operators understand the full context, but don’t worry. Your information is strictly confidential. Not even our operators will remember your situation between the end of one call and the start of the next.</p>
 `
 
 export const loans = `
-<h3 class="font-bold text-lg">Loans</h3>
+<h3 class="font-bold text-xl pt-4 pb-2">Loans</h3>
 <p>You may take loans from the company at any time after chargen. In some situations, you may even find yourself forced to do so. All loans are treated as a single value, your loan balance. This is a separate value from your credit balance.
 A starting build on Intensities 0-1 has a loan limit of 500 credits. Intensity 2 reduces that limit to 400 credits; Intensity 3 reduces it to 300; and Intensities 4-5, 200. On intensities 6 and higher, your starting loan limit is 100 credits. For each new world your retinue visits, your loan limit will increase by 100 credits, to a maximum of 5,000.</p>
 <p>Interest on your loans is charged every 30 days, from your POV as the contractor, at a fixed rate of 12.5%. You will always have 7 days’ notice before the end of a loan interval. Only the current balance when interest is charged matters, not the peak balance for the month in question. If the interest due at the end of a month is less than half of the total payment you’ve made toward your principal in that month, you will instead not be charged interest for that month.</p>
 <p>Interest payments are automatically paid from your credit balance. If you lack sufficient credits, the interest will be added to your loan. If you hit your loan limit or are overcapped, the excess interest will be converted into debt.</p>
 
-<h3 class="font-bold text-lg">Debt</h3>
+<h3 class="font-bold text-xl pt-4 pb-2">Debt</h3>
 <p>While your credit balance is below zero, you are in debt. While in debt, you may not make any additional purchases. You may not enter Arranged PvP. Any or all of your Controls and Perks may be disabled, up to and including the basic loyalty effects common to all Bindings. You may be assigned mandatory missions and face additional penalties for failure. All such penalties will only last until your credit balance is no longer below zero.</p>
 `
 
-export const missions = `<h3 class="font-bold text-lg">Missions</h3>
+export const missions = `<h3 class="font-bold text-xl pt-4 pb-2">Missions</h3>
 <p>Contractors who wish to take a more active role in company operations may accept special missions that serve its interests. These are strictly optional and may be found in an app on the smart device.</p>
 <p>Up to nine missions will be available at any time, outside of an active Invasion. A contractor may accept up to three missions at a time. Missions not accepted will not remain indefinitely. If you have at least one empty mission slot, you may reset the list of available missions up to three times per day. Options you turned down when you accepted your third mission will not necessarily still be there when you see the list again.</p>
 <p>All missions have a <b>scope</b>, a <b>location</b>, an <b>objective</b>, a <b>reward</b>, and at least one <b>condition</b>. Many missions will have additional objectives nested within them that can variously point toward the overall mission’s next steps or add additional complications with bonus rewards. The mission app’s GUI does not distinguish between a helpful nested objective and a bonus one. Missions can range from somewhat challenging to very, but all missions offered to a contractor can be completed by that contractor and/or their retinue. Some additional purchases may be required or recommended for a given mission, but not anything beyond the contractor’s budget at the time the mission is offered, plus the estimated value of all required nested objectives. Failing a mission means you lose out on the reward, in addition to any casualties your retinue took in the process.</p>
@@ -266,7 +269,7 @@ export const missions = `<h3 class="font-bold text-lg">Missions</h3>
 <p>Second is the choice between a raw credit value and a specific item in the catalog, whether a companion, perk, or what-have-you. The item prize is typically valued around 20-30% higher than the credits, and always in the +15% to +50% range. This second reward is highly variable, dependent on not just the difficulty of the mission (as modified by conditions) but a contractor’s speed and technique. A mission’s scope is highly correlated to its difficulty, while some objectives are naturally harder, and thus more rewarding, than others.</p>
 `
 
-export const refund = `<h3 class="font-bold text-lg">Refund and Return Policy</h3>
+export const refund = `<h3 class="font-bold text-xl pt-4 pb-2">Refund and Return Policy</h3>
 <p>Origins, Heritages, and subjects that were purchased at chargen in DRX are all non-refundable.</p>
 <p>All items in the Bindings, Lures and Other Controls, Demiplanes & Dungeons, Talents and Defenses, Catch-a- Ride Perks, Other Perks, and Waifu Perks sections may be refunded at any time, for 80% of the full price you paid. If you return a Control or Perk that gives other items for free, but wish to keep the bundled items, their list prices will be deducted from the standard refund value.</p>
 <p>If you return a purchased subject or Ride within two weeks (336 hours) of purchase, you will be refunded the full price you paid, including any waifu perks or Ride add-ons applied to the returnee. Meta-Talents applied to the returnee will only be refunded up to 80%.</p>
@@ -286,10 +289,10 @@ export const arranged = `<p>Smaller-scale PvP matchmaking is available for contr
 `
 
 export const assetValue = `
-<h3 class="font-bold text-lg">PvP Asset Value</h3>
+<h3 class="font-bold text-xl pt-4 pb-2">PvP Asset Value</h3>
 This is the sum of the list prices for you and your retinue’s effective tiers after step 5, plus the combined list prices of your Catch-a-Ride vehicles.
 `
-export const arrangedConditions = `<h3 class="font-bold text-lg">Arranged Match Wagers, Victory Conditions, and Risk</h3>
+export const arrangedConditions = `<h3 class="font-bold text-xl pt-4 pb-2">Arranged Match Wagers, Victory Conditions, and Risk</h3>
 <p>Each participant in an arranged match wagers a percent of their PvP credit value upon entering a match. Casual opponents will wager 5%, Average opponents 10%, and Hardcore opponents 15%, all arounded to the nearest multiple of 5. Player contractors are assumed to be Average and thus wager 10%. This is taken out of their accounts when the match starts.</p>
 <p>The default victory method in arranged matches is regicide: defeat (capture or kill) all opposing contractors. Their retinues are only a concern as far as they can protect their contractor and will be ejected from the arena. Other styles are also available, including but not limited to:</p>
 <ul class="list-disc list-inside">
@@ -305,21 +308,21 @@ export const arrangedConditions = `<h3 class="font-bold text-lg">Arranged Match 
 <p>Defeated participants in an arranged match are merely ejected from the arena, losing only the credits they wagered. All harm or enslavement done to a contractor or their retinue is reversed upon ejection, to up and including death. </p>
 `
 
-export const arrangedTeam = `<h3 class="font-bold text-lg">Arranged Team Matches and Prizes</h3>
+export const arrangedTeam = `<h3 class="font-bold text-xl pt-4 pb-2">Arranged Team Matches and Prizes</h3>
 <p>Team play is compatible with arranged PvP as well. A team only loses when all of its members are defeated. Unlike in continuous PvP, arranged teams do not necessarily have equal strength or skill.</p>
 <p>The total of all of a match’s wagers, plus 50% rounded down, is awarded to the winning contractor. A winning team splits the pot evenly, regardless of how many of them remained active to the end. The match’s winner(s) may keep a clone of any one member of their opponents’ retinues that the winner or winner’s retinue defeated during the match - no more than one to each winner. Retinue members that are sold as pairs or trios count as one for this purpose, and only one member of the set needs to be defeated in such cases.</p>
 <p>Alternatively, a winner may decline all cloned retinue members for a match in favor of the Heritage of an opponent that they or their retinue defeated personally. This grants the winner the root Heritage perk only, bypassing Ancestral Diversity.</p>
 `
-export const arrangedSpecial = `<h3 class="font-bold text-lg">Special Arranged Match Rules</h3>
+export const arrangedSpecial = `<h3 class="font-bold text-xl pt-4 pb-2">Special Arranged Match Rules</h3>
 <p>All special capture rules for Gauntlet and unregulated PvP (NTR Is a Trash Fetish) remain true for arranged matches, with one exception: selling an opponent’s retinue member that you captured will merely eject them from the match, with no budgetary effect. All purchases from the company’s store app are blocked during arranged matches. Conjunction and Apportation are disabled while on your opponent’s home turf. Body, Wild, and Soul Defense are disabled for the duration of the match, as is Warranty Plan.</p>
 `
 
-export const rip = `<h3 class="font-bold text-lg">R.I.P.</h3>
+export const rip = `<h3 class="font-bold text-xl pt-4 pb-2">R.I.P.</h3>
 <p>In the event that something so unfortunate happens as your death, your retinue will have three days (72 hours) to revive you before they gain their freedom. During this period, the functions on your smart device that are normally limited to just you are now available to every retinue member who isn’t a familiar. This includes loans. A special list will also appear in the shopping app that features every waifu capable of resurrection. This ruleset will not trigger if you have an automatic resurrection system in place for yourself, even if that process takes longer than 72 hours.</p>
 <p>Freed retinue members will retain any waifu perks applied to them, shared Heritage perks, the results of cross-training beyond their canon abilities... everything up to step 4 on the effective tier calculations. Any retinue member or purchased or registered Catch-a-Ride vehicle that is still inside your former Demiplane or Dungeon will be ejected into the last world they, personally, visited, as the pocket dimension ceases to exist.</p>
 `
 
-export const offspring = `<h3 class="font-bold text-lg">Offspring</h3>
+export const offspring = `<h3 class="font-bold text-xl pt-4 pb-2">Offspring</h3>
 <p>All of your descendants are members of your retinue from birth and benefit from all of your perks that apply to all retinue members. If you have any Binding, they will all have a simpler version of the stamp’s tattoo, a demi-tattoo, ensuring good behavior (according to your and their other parent’s standards) and loyalty to your family, without the other mental effects. Children of your Extra or Substitute target that you capture are counted as descendants, even if they were already born when you took over. Capture credits are not awarded, however, for any descendant of yours, who was born or even conceived after your entrance, or anyone born into your retinue.</p>
 <p>If you have <b>No Bindings</b>: Your descendants will not have any bindings, not even the demi-tattoo. You and their mother(s) will have to raise them the hard way.</p>
 <p>If you’ve used <b>Advanced Tempest Runes (Hybridization)</b>: Hybrids created with this perk will breed true.</p>
@@ -331,10 +334,10 @@ export const offspring = `<h3 class="font-bold text-lg">Offspring</h3>
 <p>If you are a <b>Transhuman</b>: We at the company never quite figured out how reproduction works for you. Your biological creations, any AIs you construct, or soul hierarchy are sort of like children.</p>
 `
 export const nasuDLC = `
-<h3 class="font-bold text-lg">Pseudo-Servants and Other Alternates</h3>
+<h3 class="font-bold text-xl pt-4 pb-2">Pseudo-Servants and Other Alternates</h3>
 <p>The following pairs are mutually exclusive at chargen: Saint Kiara and Devil Kiara; Nero and Nero Alter; Medea and Medea Lily; Medusa and Gorgon. If you buy a Pseudo-Servant waifu perk at any time after you purchased or captured them, the Servant’s memories and personality will seamlessly integrate into the host’s, in much the same way as the Memoria perk or Extra and Substitute origins.</p>
 <p>Not mutually exclusive: Kama and BB with any Sakura and each other; Ereshkigal and Space Ishtar with any Rin and each other; Scáthach and Skadi; Carmilla and Elizabeth Bathory.</p>
-<h3 class="font-bold text-lg">Command Seals</h3>
+<h3 class="font-bold text-xl pt-4 pb-2">Command Seals</h3>
 <p>The following female characters count as valid Masters:
 <ul class="list-inside list-disc">
   <li>Fifth Grail War: Tohsaka Rin, Matou Rin, Dark Rin, Matou Sakura, Tohsaka Sakura, Dark Sakura, Beast Rin, Beast Sakura, mainline Illya, Luvia Edelfelt, Bazette, Caren, Kaleido Ruby, Kaleido Sapphire.</li>
@@ -350,12 +353,12 @@ export const nasuDLC = `
   <li>Requiem: Erice.</li>
 </ul> 
 Pseudo-Servants and Demi-Servants are Servants, not Masters.</p>
-<h3 class="font-bold text-lg">Alternate Classes and Outfits</h3>
+<h3 class="font-bold text-xl pt-4 pb-2">Alternate Classes and Outfits</h3>
 <p>All Servants with Summer, Santa, or Halloween forms can use the associated skills and NPs at will. The same applies to Atalanta’s, Boudica’s, Da Vinci’s, Nero’s, Nobunaga’s, and Mysterious Heroine X Alter’s alternate classes. Alter Servants and Lily Servants are treated as separate individuals from their standard adult selves, with the exception of Medusa Lancer Alter (to Medusa Rider). The same applies to Elizabeth Báthory and Carmilla, Medusa Rider and Gorgon, and the two adult Artoria Sabers from the two Lancers. When copying a Servant’s power through Template Stacking, all qualifying alternate classes are included in the same template.</p>
-<h3 class="font-bold text-lg">Alter Egos</h3>
+<h3 class="font-bold text-xl pt-4 pb-2">Alter Egos</h3>
 <p>Purchasing Amaterasu gives you all of the Tamamo Nine as well: Caster Tamamo, Tamamo Cat, and seven others that have not yet appeared in canon. Tamamovich Koyanskya is not a true member. If you have already bought at least one of the Tamamo Nine at the time of purchasing Amaterasu, all credits that you paid for those nine will be refunded. If you instead capture Amaterasu, you will get any applicable refunds for purchased members of the Tamamo Nine and may purchase any missing ones for free. This is not automatic, in case you wish to capture the full set instead. Purchased or captured versions of any Tamamo will remain themselves as they grow more tails, not becoming Amaterasu even if they have a full set of nine.</p>
 <p>BB has lost her connection to Nyarlathotep. BB may instead spawn new copies of her Alter Egos if you do not already have them; any that she spawns will not count for capture or sale credits.</p>
-<h3 class="font-bold text-lg">Servants</h3>
+<h3 class="font-bold text-xl pt-4 pb-2">Servants</h3>
 <p>Captured Servants are no longer connected to the Throne of Heroes and will not affect their greater Heroic Spirits. All Servants exist in a quantum state where they are both fully incarnated and able to enter Spirit Form. Servants benefit from their homeland bonus in any version of their homeland, whether the past, their own time, the present, or the future. This does not include unrelated counterpart cultures and replaces the general background magical field rule. The body-modification suite is capable of changing Servants who have Golden Rule (Body), Divine Core of the Goddess, and other such skills.</p>
 <p><b>Saber</b>: Empyreal Eye overuse may cause Musashi to travel between worlds and eras on her own; if that happens and you have Rainbow Bridge, the portal room will connect to her new location as if it were intentional. She can learn to control this ability with practice. Artoria Saber (not Alter) has the souped-up Yamaha V-Max originally given to her in the Fourth Grail War. Artoria Saber (Alter) has Cavall the 2nd as a familiar. Nero Claudius may access her Saber Venus form if you also have Altera. Okita’s summer cyborgization cured her tuberculosis in canon; it remains cured here even if she only uses her Saber abilities.</p>
 <p><b>Archer</b>: The true love condition for Tomoe Gozen’s NP is transferred to you. Artemis has the mascot version of Orion as a familiar. Ishtar has Gugalanna Lily as a familiar.</p>
