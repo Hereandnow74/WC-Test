@@ -6,7 +6,7 @@
         <div class="lg:w-1/4 lg:pb-8 relative">
           <div class="flex flex-col px-2 lg:fixed lg:max-w-[290px] overflow-y-auto scrollbar min-h-0 lg:max-h-[calc(100vh-30px)]">
             <h3 class="text-xl font-semibold">
-              Table of Content
+              Table of Contents
             </h3>
             <router-link
               to="/help"

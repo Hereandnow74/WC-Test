@@ -23,18 +23,29 @@
     "additional": "Purchased (not captured) trainers will have up to six of their most iconic and strongest mons from their canon appearances, bound to them as their trainer is to you. These and other mons that Pokemon trainers in your retinue (including yourself) acquire by any means are spirit familiars that cannot be killed, only knocked out. Pokemon familiars lose this protection if they\u2019re released or traded away. Pokemon will always be familiars, not waifus or husbandos, unless you enter a deviant AU where they\u2019re anthropomorphic enough to make pokephilia relatively mainstream.",
     "condition": [
       {
-        "name": "Standard",
+        "name": "Games (not following canon)",
         "rating": 1,
         "official": true
       },
       {
-        "name": "Anime (canon storyline)",
-        "rating": 3,
+        "name": "Anime (not following canon)",
+        "rating": 2,
         "official": true
       },
       {
-        "name": "Pokemon Legends Arceus",
-        "rating": 5
+        "name": "Anime (canon storyline)",
+        "rating": 4,
+        "official": true
+      },
+      {
+        "name": "Games (canon storyline)",
+        "rating": 4,
+        "official": true
+      },
+      {
+        "name": "Legends Arceus",
+        "rating": 5,
+        "official": true
       },
       {
         "name": "Adventures/Special (manga)",

@@ -3855,26 +3855,6 @@ export const DLCwaifu_perks: WaifuPerk[] = [
     whitelist: [],
   },
   {
-    uid: 'ppKFP',
-    dlc: 'Zaralann',
-    dlcLink: '',
-    title: '99.99%',
-    from: 'DC (Gotham)',
-    waifu: [
-      'Joker',
-    ],
-    waifuUID: [
-      1816,
-    ],
-    tier: 12,
-    image: 'https://cdnb.artstation.com/p/assets/images/images/046/627/583/large/caio-cruz-imperador-coringa-caio-henrique.jpg',
-    cost: 0,
-    discount: 10,
-    costT: 5,
-    desc: 'Joker is now Emperor Joker, after stealing 99.99% of Mister Mxyzptlk\'s Power and now carries near-omnipotence and near-omnicience. Purchasing this Perk for existing Joker or with a new one removes his weakness towards his connection with Batman, there won\'t be an easy way to beat him now.',
-    whitelist: [],
-  },
-  {
     uid: 'E9tmA',
     dlc: 'Akado',
     dlcLink: '',
@@ -4538,7 +4518,7 @@ export const DLCwaifu_perks: WaifuPerk[] = [
   },
   {
     uid: 'vJ06z',
-    dlc: 'Zarlann',
+    dlc: 'Zaralann',
     dlcLink: '',
     title: '99.99% ',
     from: 'DC',

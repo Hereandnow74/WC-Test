@@ -171,6 +171,7 @@ homes.push({
   image: '',
   cost: 0,
   costT: 1,
+  multiple: true,
   max: 35,
   increment: true,
   whitelist: ['Pocket Star'],

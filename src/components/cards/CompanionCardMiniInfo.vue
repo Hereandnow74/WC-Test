@@ -14,7 +14,7 @@
         <div class="flex flex-wrap gap-x-1 items-center">
           {{ char.name }}
           <span class="text-green-500 text-sm"> [T<TierDisplay :tier="char.perk?.tier || char.swap?.tier || char.tier" />]
-            <span class="text-purple-400">[{{ charCost }}]</span>
+            <span v-if="charCost !== ''" class="text-purple-400">[{{ charCost }}]</span>
           </span>
           <span class="text-gray-400 text-sm"> ({{ methods[char.method] }})</span>
           <span v-if="char.sold" class="text-red-500 ml-1">SOLD</span>
@@ -79,7 +79,7 @@ const charCost = computed(() => {
       cost = tier >= 11 ? `${CHAR_COSTS_TICKET[props.char.priceTier]} IMG` : `${CHAR_COSTS[props.char.priceTier]}`
       break
     case 'capture':
-      cost = tier >= 11 ? `+${CHAR_COSTS[props.char.priceTier] ? `${CHAR_COSTS[props.char.priceTier]}c` : ''} ${CHAR_COSTS_TICKET[props.char.priceTier]} IMG` : `+${CHAR_COSTS[props.char.priceTier]}`
+      cost = difficultyAdjustedCaptureT.value[props.char.priceTier] > 0 ? `+${difficultyAdjustedCapture.value[props.char.priceTier]}c ${difficultyAdjustedCaptureT.value[props.char.priceTier]}t` : `+${difficultyAdjustedCapture.value[props.char.priceTier]}c`
       break
     case 'used':
       cost = tier >= 11 ? `${CHAR_COSTS_TICKET[props.char.priceTier]} IMG` : `${CHAR_COSTS[props.char.priceTier]}`
