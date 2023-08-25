@@ -646,7 +646,7 @@ If you Possessed or Substituted a waifu or are otherwise female, you may act as 
     uid: 'UFwYc',
     title: 'Full-Dive Set',
     type: 'Hypnosis App',
-    image: 'https://cdn.discordapp.com/attachments/925963686433132644/992737402521137183/Screenshot_1.jpg',
+    image: 'https://cdn.discordapp.com/attachments/925963623229177896/1140188895489818655/PSX_20230813_131315.jpg',
     category: 'Binding',
     cost: 25,
     whitelist: ['VR Helmet'],

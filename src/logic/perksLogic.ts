@@ -562,11 +562,13 @@ export function buyAnyPerk(perkName: string, count = 1, cost = 0) {
   const { allEffects } = useStore()
   const fullPerk = ALL_PERK_TITLES.value[perkName]
   const saveStore = ALL_PERK_STORES[fullPerk.category as keyof typeof ALL_PERK_STORES]
+  const { allEvents } = useEvents()
   if (saveStore) {
     const ind = findIndex(saveStore, { title: perkName })
     if (ind === -1) {
       allEffects.value.push(perkName)
       saveStore.push({ uid: fullPerk.uid, title: perkName, count, cost, tree: fullPerk.tree })
+      allEvents.emit({ id: Math.floor(Math.random() * 10000), time: Date.now(), message: `Bought <b>${perkName}</b> for ${cost}c`, type: 'info' })
     }
     else {
       saveStore[ind].count ? saveStore[ind].count += 1 : saveStore[ind].count = 2
@@ -581,6 +583,7 @@ export function removeAnyPerk(perkName: string, count = 1) {
   const { allEffects } = useStore()
   const fullPerk = ALL_PERK_TITLES.value[perkName]
   const saveStore = ALL_PERK_STORES[fullPerk.category as keyof typeof ALL_PERK_STORES]
+  const { allEvents } = useEvents()
   if (saveStore) {
     const ind = findIndex(saveStore, { title: perkName })
     if (ind !== -1) {
@@ -588,6 +591,7 @@ export function removeAnyPerk(perkName: string, count = 1) {
       else {
         allEffects.value.splice(allEffects.value.indexOf(perkName), 1)
         remove(saveStore, { title: perkName })
+        allEvents.emit({ id: Math.floor(Math.random() * 10000), time: Date.now(), message: `<b>${perkName}</b> got removed`, type: 'warn' })
       }
     }
   }

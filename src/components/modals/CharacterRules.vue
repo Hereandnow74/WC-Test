@@ -34,13 +34,14 @@
         <li>Lolicon in NSFW images.</li>
         <li>Characters that use not <b>their own image.</b></li>
         <li>Characters with a <b>photo</b> where an <b>art</b> option is available. Photos of real people that did not reached 18 years old.</li>
-        <li>Bad quality/low resolution images. While what is an 'bad image' is subjective, aim for at least a clear shot of the character, that does fit the companions card.</li>
+        <li>Bad quality/low resolution images. While what is an 'bad image' is subjective, aim for at least a clear shot of the character that fits the companion's card, lacks any other distractions in the shot, and has a high enough resolution.</li>
         <li>Original Characters that didn't appeared anywhere or don't have <b>original art</b> (if you can't find them in google they don't exist). Using AI art to bypass this rule will not work.</li>
         <li>Alternative versions of same characters. If the tier and personality is close to original - its a duplicate.</li>
         <li>Tier 1-2 characters with no tags, mediocre image or from relatively <b>unpopular</b> works.</li>
         <li>NSFW images that not NSFW in nature. NSFW means nudity in this case, not porn, porn is not accepted.</li>
         <li>VTubers. They are too close to real people.</li>
         <li>Monsters or Generic beings without good image and some unique tags, or from unpopular worlds.</li>
+        <li>Non-standard symbols used in naming, such as è, õ, ü, etc.  </li>
       </ul>
     </div>
   </Modal>

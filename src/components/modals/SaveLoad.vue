@@ -22,10 +22,13 @@
               World: <span class="text-orange-600 dark:text-orange-400">{{ save.worldName }}</span>
             </div>
             <div class="text-gray-600 dark:text-gray-400">
-              Rating: <span class="text-green-600 dark:text-green-400">{{ save.rating }}</span>
+              Danger Rating: <span class="text-green-600 dark:text-green-400">{{ save.rating }}</span>
             </div>
-            <div class="text-gray-600 dark:text-gray-400 col-span-2">
+            <div class="text-gray-600 dark:text-gray-400">
               Total cost of build: <span class="text-green-600 dark:text-green-400">{{ save.totalCost }}</span>
+            </div>
+            <div v-if="save.intensity !== undefined" class="text-gray-600 dark:text-gray-400">
+              Intensity: <span class="text-green-600 dark:text-green-400">{{ save.intensity }}</span>
             </div>
           </div>
           <div class="flex flex-col gap-1 justify-between rounded-xl bg-gray-200 dark:bg-gray-800 py-2 px-1">
@@ -94,7 +97,7 @@ import { confirmDialog } from '~/logic/dialog'
 
 const { savesList } = useSaves()
 
-const { startingWorld, totalCost } = useStore()
+const { startingWorld, totalCost, difficultyRating } = useStore()
 
 const name = ref('')
 const saveButton = ref<HTMLLinkElement | null>(null)
@@ -118,6 +121,7 @@ function saveBuild() {
     worldName: startingWorld.value.worldName,
     rating: startingWorld.value.rating,
     totalCost: totalCost.value,
+    intensity: difficultyRating.value,
     date: new Date().toString(),
   })
   saves.value[uid] = saveObject.value
@@ -133,6 +137,7 @@ async function rewrite(uid: number, name: string) {
       worldName: startingWorld.value.worldName,
       rating: startingWorld.value.rating,
       totalCost: totalCost.value,
+      intensity: difficultyRating.value,
       date: new Date().toString(),
     }
     saves.value[uid] = saveObject.value

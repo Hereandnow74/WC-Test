@@ -224,7 +224,8 @@ const { value: image } = useField<string>('image')
 const { value: lewd } = useField<boolean>('lewd')
 
 const addPerk = handleSubmit((values) => {
-  const proposal = { ...values, date: new Date().toString() }
+  const seed = window.localStorage.getItem('seed')
+  const proposal = { ...values, date: new Date().toString(), seed }
   if (props.mission?.uid)
     proposal.uid = props.mission.uid
   if (!temporary.value)

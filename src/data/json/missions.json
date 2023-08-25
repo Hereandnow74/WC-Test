@@ -1,5 +1,1103 @@
 [
+  {
+    "reward": "Warranty Plan",
+    "image": "",
+    "author": "Critian Caceorte",
+    "rewardType": "Perks",
+    "source": "",
+    "title": "Attack of Our Clones",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "Halve all Warranty Plan cooldowns (90 days -> 45 days, etc.)",
+        "type": "Other",
+        "value": "Return the tank to us intact, with minimal damage sustained to its structure."
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "More than one tank was lost, unfortunately. (Repeatable up to 3 times)"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Bindings have no effect on clones due to the use of proprietary tech, only the original counts as a capture."
+      },
+      {
+        "value": "Only one clone can be produced at a time, once every three days."
+      }
+    ],
+    "budget": 0,
+    "desc": "Well, this is... awkward. Apologies Contractor, but we've messed up. One of our cloning tanks, which are used to create the Companions and back-ups for our other Contractors, has been lost and repurposed by an enemy faction in the world you are visiting. Thanks to this, they have begun cloning their most powerful members. We need you to locate this cloning tank, and either destroy it or return it to us in one piece.",
+    "uid": "yCWFm"
+  },
+  {
+    "reward": "15 credits and a weapon type of your choice made of valyrian steel and dragonglass.",
+    "image": "https://i.imgur.com/6XD8iXT.jpg",
+    "author": "Randomas6413",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Long Live the King",
+    "loca": "A Song of Ice and Fire/Game of Thrones",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "Communication Talent and Covert Talent, or 20 credits",
+        "type": "Perks",
+        "value": "Convince the entire peasant population of the Crownlands and the North to believe his death was divine intervention from the gods, both the New and the Old."
+      },
+      {
+        "reward": "A stone dragon egg that hatches by itself after a month.",
+        "type": "Companions",
+        "value": "Make Viserys Targaryan the scapegoat for his death with at least 2 Great Houses believing it wholeheartedly."
+      },
+      {
+        "reward": "Cersei Lannister captured, Fertility Calibration I and II and a \"I fucked the kings mom and all I got was this shirt\" T-shirt.",
+        "type": "Other",
+        "value": "Have sex with a willing Cersei Lannister the day after you kill Joffrey Baratheon, and impregnate her with a better son or a few."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Joffrey must not suspect your deceit at any moment, nor should he be allowed to find out about your deceit until his final moments."
+      },
+      {
+        "value": "Make sure the last feelings he has before his demise are those of fear and despair."
+      },
+      {
+        "value": "You must not leave any evidence of your involvement in the aftermath of his death."
+      },
+      {
+        "value": "Have a believable scapegoat take the blame in your stead."
+      },
+      {
+        "value": "Joffrey Baratheon cannot be captured within the duration of this mission."
+      }
+    ],
+    "budget": 0,
+    "desc": "Joffrey Baratheon, little shit that he is, is widely seen as an annoyance even outside of his own universe. You, Contractor, shall rectify this by killing him in the exact same manner as the other time the following words were spoken; \"Long live the king\".\n\nBefriend Joffrey Baratheon and become his closest confidant, before   pushing him off from a lethal height after you speak those dreadful words to him.",
+    "uid": "FqnAC"
+  },
+  {
+    "reward": "2 IMG Tickets and the Technology to producethe Gene-Seed and the Adeptus Astartes without rejection",
+    "image": "",
+    "author": "JojoFan95",
+    "rewardType": "Other",
+    "source": "",
+    "title": "They all Liars",
+    "loca": "Warhammer 40K",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "His Legion is also freed from them",
+        "type": "Other",
+        "value": "Extract the Butcher's Nails without killing Angron"
+      },
+      {
+        "reward": "Forgebreaker. He is also healed from Slaanesh's corruption",
+        "type": "Other",
+        "value": "Create an sword so beautiful that Fulgrim throws away the one with the Daemon of Slaanesh inside"
+      },
+      {
+        "reward": "Prospero is added to your Pocket Dimension in perfect state",
+        "type": "Other",
+        "value": "Trick Tzeentch and recover Magnus's eye"
+      },
+      {
+        "reward": "Isha, the Aldeari goddess of Nature",
+        "type": "Companions",
+        "value": "Heal Mortarion and his legion from Nurgle's incurable illness and prevent him from making a pact with the Chaos God"
+      },
+      {
+        "reward": "Monarchia is restored and added to your Pocket Dimension",
+        "type": "Other",
+        "value": "Make Lorgar worship you or a member of your retinue as a true god, to the point of killing his father and Erebus to show his loyalty"
+      },
+      {
+        "reward": "The mental-drawbacks from his Superhuman Perception are removed",
+        "type": "Other",
+        "value": "Appreciate Perturabo as a good artist and get him vacations far from the war"
+      },
+      {
+        "reward": "The Nostramo is purged of criminals and added to your Pocket Dimension",
+        "type": "Other",
+        "value": "Convince Konrad that he still has a chance to change his premonitions and convince him to be less... \"brutal\""
+      },
+      {
+        "reward": "He is no longer bald and 500 credits",
+        "type": "Other",
+        "value": "Explain to Horus the deceit of the Chaos Gods, and make him trick them to get their power"
+      },
+      {
+        "reward": "Sarrisanata. The Alpha Legion's war cry is now I AM NOT ALPHARIUS.",
+        "type": "Other",
+        "value": "Brainwash Alpharius until he is no longer able to percieve himself as Alpharius, then make Omegon think himself as Alpharius (be careful because you could do it backwards without realizing it)"
+      },
+      {
+        "reward": "Any Catch a Ride vehicle can be turned into a motorcycle without loosing functionality",
+        "type": "Other",
+        "value": "Make Jaghatai Khan consider you a worthy ruler"
+      },
+      {
+        "reward": "They can now turn into complete Werewolves at will",
+        "type": "Other",
+        "value": "Win Leman Russ in a Mead drinking competition. Addiction Defense is disabled during this objetive"
+      },
+      {
+        "reward": "You can now give functional Angel Wings to any Vampire in your retinue at your discretion",
+        "type": "Other",
+        "value": "Cure Sanguinius's and his legion from the \"Blood-rage\""
+      },
+      {
+        "reward": "Ultramar is added to your Pocket Dimension",
+        "type": "Other",
+        "value": "Convince Guilliman that Ultramar would be better off without the Imperium. No mind control allowed."
+      },
+      {
+        "reward": "Fireblade and a copy of the Gloves for yourself",
+        "type": "Other",
+        "value": "Restore Ferrus Manus's arms and make functional gloves for him with the Necrodermis of his arms"
+      },
+      {
+        "reward": "His complete loyalty. The Phalanx as a Catch a Ride vehicle.The Imperial Palace of Terra is added to your Pocket Dimension",
+        "type": "Other",
+        "value": "Literally do the impossible and convince Rogal Dorn to betray the emperor without any form of coerction or Mind Control"
+      },
+      {
+        "reward": "The Rock is added to your Pocket Space",
+        "type": "Other",
+        "value": "Avoid Caliban's destruction in Lion El'Jonson and Luther's fight"
+      },
+      {
+        "reward": "He gains the ability to switch between his normal form and his Daemon-Crow version that he would become in the future",
+        "type": "Other",
+        "value": "Fix Corvus Corax's Gene-Seed"
+      },
+      {
+        "reward": "Respect from the Salamanders",
+        "type": "Other",
+        "value": "Give a hug to Vulkan, he deserves it"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You will enter in the Warhammer 40k setting after the Destruction of Monarchia"
+      },
+      {
+        "value": "You must capture or take away the 19 alive Primarchs from the Emperor and the Chaos's control forever. The method doesn't care, but they must be alive"
+      }
+    ],
+    "budget": 0,
+    "desc": "\"History is Written by the Victors\", that's a complete Bullshit.\nForget everything you know from the 40k Universe, neither the emperor nor the Chaos Gods created the mighty primarchs, they where an order made from the Company.\nSince they have no credits, they cannot pay the debt, so is now your job to recover what's ours.",
+    "uid": "eudGT"
+  },
   
+  {
+    "reward": "50 credits, Communication Talent, a T6 or lower [Clergy] Waifu",
+    "image": "https://furrycdn.org/img/2022/9/18/191082/medium.jpg",
+    "author": "UnknownEldritch",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Dismantled Cult",
+    "loca": "The Cult of the Lamb",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "50 credits, TSI and TSII of a T8 or lower [Outsider] or [Clergy] character",
+        "type": "Other",
+        "value": "Kill the Lamb (T8)"
+      },
+      {
+        "reward": "Lures you possess are 2x as effective on waifus and husbandos with the [Clergy] or the [Outsider] tag",
+        "type": "Other",
+        "value": "Capture the Lamb (T8)"
+      },
+      {
+        "reward": "Blessed Talent and your choice between a T6 or lower [Outsider] or [Deity] waifu, or 50 credits",
+        "type": "Other",
+        "value": "Publically humiliate and degrade the cult's 'God', Narinder (T8), in front of the Cult"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You and any retinue you bring with you must be T9 or below"
+      },
+      {
+        "value": "Outright Mind Control is forbidden"
+      },
+      {
+        "value": "You must make sure that the Cult completely ceases to exist, with no chance of reforming"
+      }
+    ],
+    "budget": 0,
+    "desc": "One of our clients seems to be holding a pretty strong grudge against a certain Lamb. They reached out to us and requested the total dismantling of the Lamb’s Cult, by any means necessary. Take care of things, and you’ll be rewarded.",
+    "uid": "CVyCQ"
+  },
+  {
+    "reward": "100 Credits, Faerie Feast and all upgrades",
+    "image": "https://i.pinimg.com/1200x/e8/a7/05/e8a705b26d986ca2f369b62707b91e52.jpg",
+    "author": "UnknownEldritch",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Pancake Buffet",
+    "loca": "Helltaker",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "The target is captured at the end of the mission",
+        "type": "Companions",
+        "value": "Have intercourse with one of the targets present (repeatable)"
+      },
+      {
+        "reward": "All targets involved are captured at the end of the mission, Communication Talent",
+        "type": "Companions",
+        "value": "Have intercourse with two or more of those present at the same time"
+      },
+      {
+        "reward": "Cerberus is captured at the end of the mission for 3x credits",
+        "type": "Companions",
+        "value": "Get all three of Cerberus's bodies to wear nothing but a collar during intercourse"
+      },
+      {
+        "reward": "Instant capture of Beelzebub, the Great Fly (T7), your Faerie Feast perk is 2x as effective on Demons, Devils, and Fallen Angels",
+        "type": "Other",
+        "value": "Ensure that all targets present at the buffet will be captured at the end of the mission"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You are unable to capture or bind any waifus for the duration of the mission."
+      },
+      {
+        "value": "3rd-party Mind Control is forbidden"
+      },
+      {
+        "value": "If you personally make any of those present particularly unhappy (or more unhappy) for an extended period of time, you automatically fail this mission."
+      }
+    ],
+    "budget": 0,
+    "desc": "A client of ours who is obsessed with the idea of demon girls wearing suits asked us to reward a certain well-known group of fiends. Going through the source, it’s clear that they all seem to have an odd fixation on pancakes, so your job is to provide them with a week-long pancake buffet of the highest quality for every meal. While it might not be a mission of our usual requirements, we'll gladly reward any of your more... interesting endeavors, so long as you don’t go against the primary goal or upset any of them. ",
+    "uid": "KKoXv"
+  },
+  {
+    "reward": 45,
+    "image": "https://pm1.aminoapps.com/6765/f0e5808740f9d56bc29c001c99bb829aa9f11702v2_00.jpg",
+    "author": "UnknownEldritch",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Roman Wargames",
+    "loca": "Riordanverse",
+    "lewd": false,
+    "scope": "Quick",
+    "objectives": [
+      {
+        "reward": "Martial Talent (or refund) and a set of masterwork Imperial Gold armor and a masterwork Imperial Gold weapon of your choice.",
+        "type": "Perks",
+        "value": "Be Crowned MVP at the end of the War Game"
+      },
+      {
+        "reward": "+5 credits per kill, Covert Talent",
+        "type": "Other",
+        "value": "Kill one or more of your opponents without being noticed"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Your retinue cannot accompany you on this mission"
+      },
+      {
+        "value": "You will be restricted to T7 or lower during this mission"
+      },
+      {
+        "value": "You cannot use technology that is more advanced than that of the setting"
+      }
+    ],
+    "budget": 0,
+    "desc": "If a child of Poseidon could handle it, one of our contractors would surely do even better, right? Your mission is to join up at Camp Jupiter and help your Cohort claim victory in the upcoming wargame. Don’t worry about the timeline, you’ll arrive conveniently after the disappearance of Percy and Jason, but before they reappear. We’ll pull some strings to make sure that you appear as a demigod to all forms of detection, and you’ll be dropped within a 10 minute walk of Camp Jupiter, but everything else is up to you.",
+    "uid": "SfyTG"
+  },
+  {
+    "reward": "My respect, and the Arlong Park will become a separate Pocket Space",
+    "image": "https://cdnb.artstation.com/p/assets/images/images/046/884/953/4k/lotuscracker-small-arlongpark.jpg",
+    "author": "Magnus the 1337th",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Make Arlong Park GREAT AGAIN!",
+    "loca": "One Piece",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "TS1 of Mr. Monopoly/Monopoly Man/whatever name that Monopoly guy has",
+        "type": "Perks",
+        "value": "Insert into Arlong and drive everyone nuts on how unhinge you've become in the amusement park businesses."
+      },
+      {
+        "reward": "TS1&2 of Phineas and TS1&2 of Ferb.",
+        "type": "Perks",
+        "value": "Drive Nami to nuts by your shenanigans."
+      },
+      {
+        "reward": "Instant Capture of Luffy and his current crew.",
+        "type": "Other",
+        "value": "Make Luffy the mascot until he leaves for his adventures towards the Grandline."
+      },
+      {
+        "reward": "Instant Capture of Nami... much to her chagrin.",
+        "type": "Companions",
+        "value": "When you are going to let Nami go, you have to create the biggest farewell party for her."
+      },
+      {
+        "reward": "Nami will be driven to nuts instantly, and TS1 of Candace for Nami.",
+        "type": "Other",
+        "value": "Get Bellemere as a Waifu when doing this mission as Arlong."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You must be a Fishman or a Mermaid."
+      },
+      {
+        "value": "Arlong Park must have attractions such as rides with details of Fishmen supremacy and a rollercoaster that loops more than three times."
+      },
+      {
+        "value": "We will send a Health and Ride Inspector once a month. You must never mistake them for their local counterpart, Dracule Mihawk."
+      },
+      {
+        "value": "Completion happens when the humans realize that the Arlong Park is better than any other Amusement Parks out there."
+      }
+    ],
+    "budget": 1000,
+    "desc": "Your job, should you accept it, is to make Arlong Park an actual amusement park. It has to be complete with attractions and the like. Also, the managerial staff must be Fishmen or Mermaids only. Be warned that there are pirates out there that have the same theme as amusement parks. One of them is the Buggy Pirates.",
+    "uid": "OPXlX"
+  },
+  {
+    "reward": "50 credits and a Copy of Ace (Ann) D Portgas/Roger",
+    "image": "",
+    "author": "Tactition101",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Take Out Blackbeard",
+    "loca": "One Piece",
+    "lewd": false,
+    "scope": "Quick",
+    "objectives": [
+      {
+        "reward": 20,
+        "type": "Credits",
+        "value": "Do it yourself with only Ace helping"
+      },
+      {
+        "reward": 10,
+        "type": "Credits",
+        "value": "Chase away the darkness: Use an attack that uses light to finish the fight."
+      },
+      {
+        "reward": 5,
+        "type": "Credits",
+        "value": "No damage to Banaro Island’s Town"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Limit of you and four members of your Retinue helping Ace"
+      }
+    ],
+    "budget": 0,
+    "desc": "Ace’s defeat at Banaro Island set in motion a chain of events that changed the world, and not for the better. Well not this World. Your mission is simple, make sure that Ace leaves that island a free man and Blackbeard and his group don’t leave at all. Kill ‘em or Sell ‘em, either way, Blackbeard’s time in that World must end.",
+    "uid": "xrDlQ"
+  },
+  {
+    "reward": "Demiplane, Persistent Corruption, Laws of Man, Laws of Magic, Laws of Cognition and Tax Laws. Telskyura becomes part of your Demiplane if it isn’t already and all citizens are automatically bound to you.",
+    "image": "https://i.imgur.com/0hijGdX.png",
+    "author": "Heaven Canceler",
+    "rewardType": "Perks",
+    "source": "",
+    "title": "Breaking The Destroyer",
+    "loca": "Danmachi",
+    "lewd": true,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "Custom Sticky Fingers Upgrades “Profane Acupressure” and “Heretical Acupuncture” are fully unlocked for use on anyone.",
+        "type": "Other",
+        "value": "Reach at least Lure effectivity 300% and spend 300 minutes consecutively fucking Kali into a puddle of lust."
+      },
+      {
+        "reward": "Zenryoku Zenkai + 40 Credits",
+        "type": "Perks",
+        "value": "Defeat the Kali Familia’s two Captains Bache & Argana and make them submit to you as a show of your power."
+      },
+      {
+        "reward": "Revive Seldas, friend of Tione from her childhood. She becomes a T6 and gets one free TS II of an Amazon of your choice.",
+        "type": "Companions",
+        "value": "Search out the two former members of the Kali familia Tione and Tiona and make them submit to you."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Kali is immune to capture unless she has sworn her allegiance to you as your personal sex toy and her body has been ruined for normal sex."
+      },
+      {
+        "value": "At the start, Lures only work at 5% effectiveness on Kali. It can be increased by defeating her familia members up to 500%, but only once per individual."
+      },
+      {
+        "value": "Lure effectiveness on Kali grows by 1% for defeating a Level 1 member of her familia physically or sexually, 3% for a Level 2, 7% for a Level 3, 15% for a Level 4, 30% for a Level 5 and 70% for a Level 6."
+      }
+    ],
+    "budget": 230,
+    "desc": "The nation of Telskyura is ruled by the Goddess Kali, an absolute figure that commands vast respect among the population of Amazonesses. It is a country where only power and martial skill matter with women reigning supreme over all males. Unfortunately they are also wasting potential waifus with a culture of battles to the death for the sake of growing in power. Which is fine but they aren’t even at war, they are just doing it for the sake of it! Now we want you to take a gander at overturning the status quo of things and showing the oh so mighty goddess her place beneath your heel. Just go all out and turn her into a proper onahole, you know what we mean. Crush the Goddess and her familia and show them who is really the boss. Now, to make things a bit more interesting there will be a small handicap, but I am sure it will be a fun little challenge.\n\nIn addition, we have a pair of new Perks we are experimenting with. They will unlock for use on Kali once you have had sex with her at least once. But you will need a bit more work to get them fully usable. They are called “Profane Acupressure” and “Heretical Acupuncture”. The first lets you increase someone’s physical sensitivity to pleasure up to 300 times for 24 hours using pressure points. The second lets you permanently increase their sensitivity up to 3000 times using acupuncture needles.",
+    "uid": "rkwak"
+  },
+  {
+    "reward": 250,
+    "image": "https://i.ytimg.com/vi/hBqJa8y-9a4/maxresdefault.jpg",
+    "author": "Connor(fake name)",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Pokemon Journey('s)",
+    "loca": "Pokemon",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": 1,
+        "type": "IMG Tickets",
+        "value": "Go through Ash's story, substitute as him, and reach the end of alola. Due to length of the mission time will stop for this world when somewhere else and for other worlds when here."
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Go through another games story.(Repeatable up to 3 times)"
+      },
+      {
+        "reward": "One IMG ticket and Transhuman(Biomorph)(Due to 'learning' from pokemon) if you don't have a heritage",
+        "type": "Other",
+        "value": "Go through every game's story and Ash's.(Every game being every generation/region story)"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Chargen Only"
+      },
+      {
+        "value": "Optional: Pokemon are eligible waifus."
+      }
+    ],
+    "budget": 0,
+    "desc": "Ever wanted to actually be the Protagonist in the Pokemon games or anime? Well now you can. Successfully go through any Pokemon story and claim your reward.",
+    "uid": "osrZd"
+  },
+  {
+    "reward": "D will suffer eternally. 10 IMG Tickets. Your alignment or karma is reset to zero for this act of great balance.",
+    "image": "",
+    "author": "Ballsdeep69",
+    "rewardType": "Other",
+    "source": "",
+    "title": "D's Eternal Reward, Suffering Forevermore",
+    "loca": "So I'm a Spider, So What?",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "A smug yet benevolent version of D will become your companion. She will mock D for not doing her job.",
+        "type": "Companions",
+        "value": "Make sure D will not play a game for a single day by cutting her electricity."
+      },
+      {
+        "reward": "TS1 of Juuzou Shishimi.",
+        "type": "Perks",
+        "value": "Cut off the connection of D to the world where she reincarnated people."
+      },
+      {
+        "reward": "You will gain demonic version of Sariel as a companion, and she will bitchslap D before leaving to your pocket space to be lazy.",
+        "type": "Companions",
+        "value": "Sariel must be freed without destroying the otherworld."
+      },
+      {
+        "reward": "Shin Godzilla appears and becomes your familiar. They will then ensure the radiation won't kill D but would hurt her badly.",
+        "type": "Companions",
+        "value": "Detonate a nuclear bomb in Japan. Make sure D survives this matter."
+      },
+      {
+        "reward": 1,
+        "type": "IMG Tickets",
+        "value": "Torture Potimas while recording it before showing it to both Earth and the otherworld."
+      },
+      {
+        "reward": "100 Credits and everyone on the otherworld will hate her and her disguised self.",
+        "type": "Other",
+        "value": "Reveal the crimes of Potimas and D to the otherworld."
+      },
+      {
+        "reward": "All of them will become your companions and gain TS1 of Omega Power from Omega Labyrinth.",
+        "type": "Companions",
+        "value": "D's female classmates that got reincarnated must ascend to godhood with bigger boobs than D. Make them gloat about it on her."
+      },
+      {
+        "reward": "You're a monster. Ignore the karmic and alignment reset and take all of the rewards from this mission and go, you evil rascal.",
+        "type": "Other",
+        "value": "Instead of doing the conditions or the mission, ensure a Saki treatment happens to D without you doing anything open."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "D must not see you and but know that you exist to punish her for her crimes."
+      },
+      {
+        "value": "D must not be captured or sexually harassed. You must block her from masturbation or doing anything sexually."
+      },
+      {
+        "value": "D should cry... maybe."
+      },
+      {
+        "value": "You must force Meido to punish D for not doing her paperwork."
+      },
+      {
+        "value": "D will retaliate against you should she be pushed into a brink. Be warned."
+      },
+      {
+        "value": "Completion happens when her personality becomes that of a traumatized introvert, depressed, and horribly afraid of everything that moves."
+      },
+      {
+        "value": "Only Contractors with Negative Karma or have the alignment of Evil can do this mission."
+      }
+    ],
+    "budget": 1000,
+    "desc": "You must be aware of a story, about a spider who will become a goddess, a bunch of idiots who reincarnated because of some hero and demon king attacking the evil god, and an evil god responsible for imprisoning a benevolent angel in the core of the world... Well. That is until now. You see, the Pantheons are pissed, some of our Clients are pissed, one of our locally placed Admins is also pissed, and a sadistic Client wants to see her suffer. All of them have sneakily chained her to that planet. Not even Meido will stop you from this matter. You must do everything to make her suffer. Subtly force her to waste the MA Energy of the world, thus causing global climate change. Better yet, nuke the place, and cause world wars. Do everything to ensure that she will know no peace in the world. Basically, be like Thanos on what he did to that some dude's birthday except it's every day instead of a year.",
+    "uid": "qzKxZ"
+  },
+  {
+    "reward": "The world now exists as part of your Pocket Space, and the Blessings/Curses will exist as a sapient shroud.",
+    "image": "",
+    "author": "Magnus the 1337th",
+    "rewardType": "Other",
+    "source": "",
+    "title": "The Blessed Tower of Love",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "The \"Blessings\" are turned into actual Blessings.",
+        "type": "Other",
+        "value": "Speedrun the whole thing."
+      },
+      {
+        "reward": 6,
+        "type": "IMG Tickets",
+        "value": "Complete this mission without companions."
+      },
+      {
+        "reward": "Ignore the conditions above except the last one and instantly complete the additional objectives above.",
+        "type": "Other",
+        "value": "Before going to this world, take all Defenses and Talents first."
+      },
+      {
+        "reward": "TS1 of Sherlock Holmes from Nasuverse.",
+        "type": "Perks",
+        "value": "Learn the truth about the Tower's actual purpose."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "The world has to be a Cultivation-based world."
+      },
+      {
+        "value": "You may chose to go alone but the challenge would be somewhat difficult."
+      },
+      {
+        "value": "The world is dying, you need to do it fast."
+      },
+      {
+        "value": "Completion happens should you gain all the Blessings/Curses and kill the one responsible for the tower."
+      }
+    ],
+    "budget": 1000,
+    "desc": "A tower has appeared in a cultivation world that is slowly crumbling down. Old legends spoke of a Messiah that will go there and take the nine blessings. But that Messiah died due to a fluke of nature or a failed tribulation. The Gods realized this and asked us to get a new Messiah. That's where you come in. Take the Blessings and kill the one who placed the tower there.",
+    "uid": "XKcdC"
+  },
+  {
+    "reward": "Art of Summoning",
+    "image": "",
+    "author": "AnonymousBrainwash",
+    "rewardType": "Perks",
+    "source": "",
+    "title": "Villain Support: Odalia Blight",
+    "loca": "The Owl House",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "Covert Talent",
+        "type": "Perks",
+        "value": "Grant a fake coven sigil so that no suspicions are raised"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "No Capturing"
+      }
+    ],
+    "budget": 0,
+    "desc": "The Company also acts as an Isekai fantasy guild and we've got a Mission for you.\n\nOdalia Blight is a rather...shrewd businesswoman (like looking at a mini-us just less competent) and she's decided to hedge her bets by recruiting a backup plan after the...hamfisted negotiations of the Empire\n\nUsing her Oracle Magic, she summoned up a Company Representative who while not being able help directly, was able to get her to someone who could.\n\nThat's you.\n\nThe Mission is simple, you'll be removing the Coven Sigils of Alador and Odalia Blight.\n\n",
+    "uid": "syzcY"
+  },
+  {
+    "reward": "Every participants worth in Intensity aligned capture credits as well as their captures, and 50 credits extra.",
+    "image": "https://cdn.donmai.us/sample/86/56/__ranni_the_witch_malenia_blade_of_miquella_miquella_queen_marika_the_eternal_starscourge_radahn_and_9_more_elden_ring_drawn_by_ekrea_jan__sample-8656395a47fee2f236cd88e8e6077f92.jpg",
+    "author": "Randomas6413",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Elden Beach Episode",
+    "loca": "Elden Ring",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "Missions credit reward is raised by 75 credits, and the respect of Godfrey, Radahn and Morgott.",
+        "type": "Other",
+        "value": "Ensure Godfrey, the First Elden Lord, joins the beach party by besting him in open combat. (the latter reward for this objective is given at the moment of its completion)"
+      },
+      {
+        "reward": "Missions credit reward is raised by 100 credits, a Red Wolf of Radagon familiar and a bonsai tree styled after the Erdtree.",
+        "type": "Other",
+        "value": "Get Marika and Radagon to participate at the beach party as separate entities."
+      },
+      {
+        "reward": "Missions credit reward is raised by 200 credits, and a Mending Rune of a God of your choice (can be from your retinue) is made.",
+        "type": "Other",
+        "value": "Have the Fell God, the Formless Mother, the Frenzied Flame or other confirmed gods participate in the beach episode, somehow. (For this purpose empyreans like Malenia, inheritors like the Tarnished and followers of a god does not count towards this goal.)"
+      },
+      {
+        "reward": "Missions credit reward is raised by 75 credits and the credit requirement for the next Dragon Heritage perk is reduced by 25%.",
+        "type": "Other",
+        "value": "Make contact Dragonlord Placidusax and have him and at least one of his children/dragon followers come to the beach party. (any four-legged dragon besides Placidusax counts towards this goal)"
+      },
+      {
+        "reward": "Missions credit reward is raised by 50, and the complete and utter devotion of Those Who Live In Death.",
+        "type": "Other",
+        "value": "Somehow bring back Godwyn the Golden and Lichdragon Fortissax from death and have them be a part of the beach party."
+      },
+      {
+        "reward": "TS 1 and 2 of a Soulsborne protagonist of your choice and an indestructible \"Git Gud\" t-shirt fit for you.",
+        "type": "Other",
+        "value": "Let The Tarnished come along and join you at the beach."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You will host a beach party in Elden Ring. This beach party can either be held on one of the beaches in Limgrave or in your Demiplane if it has one."
+      },
+      {
+        "value": "This mission ends the day after the beach party is held, which is also when you receive the rewards for said mission."
+      },
+      {
+        "value": "For the duration of this mission demigods, godlike entities and their equals cannot be captured through bindings or confessions, this condition does not extend to other inhabitants of the Lands Between."
+      },
+      {
+        "value": "Participants of the beach episode will have to be either bribed or willingly go, both personal and third party mind control for this purpose ends in an automatic failure of the mission."
+      },
+      {
+        "value": "This is a beach episode, therefore each and every participant will have to willingly abstain from attacking each other, regardless of loyalties and faction feuds. Sparring, playful brawling and other acts of non-lethal combat however is allowed."
+      },
+      {
+        "value": "Rewards from Additional objectives is given at the same time as the main reward."
+      },
+      {
+        "value": "For this missions completion, a total of 4 Shard Bearers will have to participate in this beach party."
+      },
+      {
+        "value": "The time of the beach party can be decided whenever, however once decided the time for it is set in place and a countdown will begin."
+      },
+      {
+        "value": "This mission cannot be taken, or will automatically fail, if less than 4 Shard Bearers are alive."
+      }
+    ],
+    "budget": 0,
+    "desc": "The \"beach episode\", usually only reserved for the slice-of-life genre of anime but sometimes include the strangest exceptions. It's a time during summer when all the protagonists, side characters and sometimes even the antagonistic villains partake in activities such as sunbathing, swimming in the sea, building sand castles or play beach volleyball, with the latter usually having teams that oppose each other character-wise.\n\nYou undoubtedly already know all of this, Contractor, so we'll just give you this mission already to not waste time: your mission, should you choose to accept it, will be to host a beach party in the world of Elden Ring and have at least 4 shard bearers partake in it. Whichever way you accomplish this feat does not matter, as long as you give us the Elden Ring Beach Episode we've always wanted!",
+    "uid": "SMKrh"
+  },
+  {
+    "reward": "The First Flame gains the Abyssal Trait.",
+    "image": "https://cdna.artstation.com/p/assets/images/images/007/397/200/large/niklavs-romeiko-kiln-of-the-first-flame.jpg",
+    "author": "Magnus1337",
+    "rewardType": "Other",
+    "source": "",
+    "title": "The First Flame Hungers (Part 2)",
+    "loca": "Douluo Dalu",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "TS1 of Immoth (AD&D).",
+        "type": "Perks",
+        "value": "Should you meet Huo Yuhao, help him with his revenge and ensure he has his revenge one way or the other."
+      },
+      {
+        "reward": "My respect and TS1 of the Immaculate Pimp Hand Technique.",
+        "type": "Other",
+        "value": "Bitchslap the Fire God for being a double-faced prick. Ensure that he is knocked unconscious by the slap."
+      },
+      {
+        "reward": "The Rakshasa God as companion.",
+        "type": "Companions",
+        "value": "Revive the Rakshasa God."
+      },
+      {
+        "reward": "Both of them will either become your Companions or become your Spirit Essences..",
+        "type": "Other",
+        "value": "Free the Golden and Silver Dragon Kings."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "The First Flame's heat will become unbearable for everyone but you."
+      },
+      {
+        "value": "Achieve success before the heat reaches a critical state."
+      },
+      {
+        "value": "Failure to achieve Balance will cause you and the world to explode."
+      },
+      {
+        "value": "Completion happens should you find Balance but you can still do the additional objectives."
+      }
+    ],
+    "budget": 1000,
+    "desc": "So, you have completed my colleague's mission? Very well. I shall tell you the next part. The First Flame's heat has become quite, immense. You need to cool it somewhat to reach balance. I suggest getting to the Far North of the Douluo World and finding the strongest Ice Spirit to stoke the balance of your Flame.",
+    "uid": "ZxvuB"
+  },
+  {
+    "reward": "The insertion or TS cost is refunded. 2 IMG Tickets.",
+    "image": "https://cdna.artstation.com/p/assets/images/images/029/397/780/large/anton-savinov-goldenbat-001-2160.jpg",
+    "author": "Magnus1337",
+    "rewardType": "Other",
+    "source": "",
+    "title": "The OP Indestructible Hero of Justice!",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "A copy of Golden Bat media in a flashdrive, including the ones that are considered Lost Media.",
+        "type": "Other",
+        "value": "Accept this mission."
+      },
+      {
+        "reward": "TS1 of the Nameless from The Magicians.",
+        "type": "Perks",
+        "value": "Use magic to turn your foes into harmless critters permanently."
+      },
+      {
+        "reward": "TS1 of Cid Kagenou (Shadow).",
+        "type": "Perks",
+        "value": "Defeat a powerful foe with only martial arts skill and your silver cane."
+      },
+      {
+        "reward": "Added Potential of Saitama Training Method.",
+        "type": "Perks",
+        "value": "Beat a foe so powerful even the native heroes can't beat them at low power."
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Save an entire civilization from destruction."
+      },
+      {
+        "reward": "TS1 of Hope from God of War",
+        "type": "Perks",
+        "value": "Ensure that the concept of hope will never die even after you left the world."
+      },
+      {
+        "reward": "TS1 and TS2 of DETERMINATION from Undertale.",
+        "type": "Perks",
+        "value": "You must tank or disperse a single world-ending blast with your body."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You must insert as The Golden Bat or have them as a TS."
+      },
+      {
+        "value": "Should you chose to have The Golden Bat as a TS, you must look like a golden skeleton with a badass cape and silver cane on your alter ego when going out as him."
+      },
+      {
+        "value": "You, or your alter ego if you TS, must not say anything and just laugh like a madman once in a while."
+      },
+      {
+        "value": "Everyone must know that whenever you appear, hope springs eternal even in the darkest hour."
+      },
+      {
+        "value": "Completion happens should you complete the additional objectives along with giving the world a brighter tomorrow."
+      }
+    ],
+    "budget": 1000,
+    "desc": "Everyone dreams of becoming a hero out there. Shining, gleaming in armor drenched in the light of justice! Fighting evil wherever it may be until the dawn rises up in the sky! However, there's already one invincible hero that matches that description. Your job is the continuation of their legacy and ensure that their mad laughter is heard once more. No, I don't mean Superman or Allmight. I mean The Golden Bat... Fantoma? Phantasmagoria? Diavolo? You... you don't know him, huh? Well, I'm giving you a bunch of reading materials then.",
+    "uid": "Cytsx"
+  },
+  {
+    "reward": "Instant capture of Kobayashi (T2), 10 credits, all lures are 2x effective on Dragons",
+    "image": "https://static.zerochan.net/Kobayashi.%28Kobayashi-san.Chi.no.Maid.Dragon%29.full.3637161.jpg",
+    "author": "UnknownEldritch",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Seduction of the Dragon Master",
+    "loca": "Miss Kobayashi's Dragon Maid",
+    "lewd": false,
+    "scope": "Quick",
+    "objectives": [
+      {
+        "reward": "TSI of any Dragon of T5 or lower for you or a retinue member",
+        "type": "Perks",
+        "value": "Get Kobayashi to agree to marry you before the end of the week"
+      },
+      {
+        "reward": "Increase Kobayashi's tier by 1, a bag of dragon-nip",
+        "type": "Other",
+        "value": "Impregnate Kobayashi before the end of the week"
+      },
+      {
+        "reward": "Voucher for a T5 or lower Maid waifu",
+        "type": "Companions",
+        "value": "Get Kobayashi to cosplay as a maid during intercourse"
+      },
+      {
+        "reward": "Instant-capture of Tohru (T8) when she arrives",
+        "type": "Other",
+        "value": "Complete all other objectives"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "No overt mind-control"
+      },
+      {
+        "value": "No capturing outside of confessions"
+      }
+    ],
+    "budget": 0,
+    "desc": "One of our clients feels that the titular petite redhead Miss Kobayashi is going a bit underappreciated, and would like for you to change that. You will be inserted 1 week prior to the start of canon, and your mission is to flirt with her, take her on a date, and sleep together at least once. Make sure that the tired red-head feels appreciated.",
+    "uid": "iLstl"
+  },
+  {
+    "reward": "Zoe Nightshade (T6) and Bianca Di Angelo (T5), TSI of a T8 or lower Monster",
+    "image": "https://www.readriordan.com/wp-content/uploads/2022/11/Hunters-of-Artemis-banner.jpg",
+    "author": "UnknownEldritch",
+    "rewardType": "Companions",
+    "source": "",
+    "title": "Hunters Become the Hunted",
+    "loca": "Riordanverse",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "Your choice between Metal Bat (T6), or a waifu powerswapped with him.",
+        "type": "Companions",
+        "value": "Use brute force to defeat the Hunters, completely overpowering them."
+      },
+      {
+        "reward": "Your choice between Soi-fon (T6), or a waifu powerswapped with her.",
+        "type": "Companions",
+        "value": "Use stealth to track and ambush the Hunters, picking them off one by one."
+      },
+      {
+        "reward": "Your choice between a T6 or lower Poison-type pokemon, or a waifu powerswapped with one.",
+        "type": "Companions",
+        "value": "Poison a large group of Hunters without them realizing until it's too late"
+      },
+      {
+        "reward": "Instant capture of Thalia (T6) for double the credits",
+        "type": "Companions",
+        "value": "Defeat and break the spirit of the Lieutenant of the Hunt, Thalia Grace."
+      },
+      {
+        "reward": "Instant Capture of the Riordanverse Artemis (T8)",
+        "type": "Companions",
+        "value": "At the start of your mission,you can choose to allow Artemis to empower her Hunters to give them a better chance of victory. This increases their effective tier by 1 during the mission. Defeat and conquer her hunters regardless of the blessing."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You must have some means of taking on the form of a monster. If you have Power Swapped or Template Stacked a Monster of some kind, you will be given the ability to take on the form of said monster until the end of this mission."
+      },
+      {
+        "value": "You cannot bring any members of your Retinue with you for this mission"
+      },
+      {
+        "value": "You will be limited to T8 or below for the duration of this mission"
+      }
+    ],
+    "budget": 0,
+    "desc": "Those arrogant hunters seem to have gotten on the bad side of one of our clients, and they’ve requested that you correct their behavior. Your task is to take on the appearance of a monster and hunt down the Hunters of Artemis. Whether you kill or capture them, it matters not, just make sure that each and every one of them are punished. And don't worry, the Olympians won’t be able to interfere, we’ll handle that.",
+    "uid": "woHgp"
+  },
+  {
+    "reward": "A T7 waifu with the Dragon tag and an Ender Dragon Egg",
+    "image": "https://cdn.vox-cdn.com/thumbor/TxRBU8RSqw8hyR1nVF2LBkAdXmg=/1400x788/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/22189018/bd0ea75cd9da517467cc637efb30950f_videocover.jpg",
+    "author": "UnknownEldritch",
+    "rewardType": "Companions",
+    "source": "",
+    "title": "Speedrunner Fever",
+    "loca": "Minecraft",
+    "lewd": false,
+    "scope": "Quick",
+    "objectives": [
+      {
+        "reward": "15 Credits, a packet of Wither Rose seeds",
+        "type": "Other",
+        "value": "Capture or Kill: Zombie, Skeleton, and Wither Skeleton"
+      },
+      {
+        "reward": "15 credits, Template Stacking I of a T5 or lower Monster waifu",
+        "type": "Other",
+        "value": "Capture or Kill: Slime, Creeper, and Enderman"
+      },
+      {
+        "reward": "15 credits, Voucher for a T4 Android waifu",
+        "type": "Other",
+        "value": "Capture or Kill: Snow Golem and Iron Golem"
+      },
+      {
+        "reward": "15 credits, High-Quality Diving Gear",
+        "type": "Other",
+        "value": "Capture or Kill: Drowned and Guardian"
+      },
+      {
+        "reward": "20 credits, 3 Netherite Ingots",
+        "type": "Other",
+        "value": "Capture or Kill: Piglin, Zombie Piglin, Magma Cube, and Blaze"
+      },
+      {
+        "reward": "Zenryoku Zenkai perk, Alex (T6) instantly captured for full price",
+        "type": "Other",
+        "value": "Capture or Kill: Villager, Witch, Pillager, Vindicator, Illusioner, and Evoker"
+      },
+      {
+        "reward": "50 credits, your choice between a T7 waifu voucher, or increasing the voucher for the main reward to T8",
+        "type": "Other",
+        "value": "Capture or Kill: Wither, Elder Guardian, Warden"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You must complete the main objective within 24 hours of starting. If you don’t, you lose any bonus rewards you may have accumulated."
+      },
+      {
+        "value": "You may bring up to 3 retinue members, and you as well as any retinue that accompany you must be of T6 or lower."
+      }
+    ],
+    "budget": 0,
+    "desc": "One of our clients seemed rather... heated, in their opinion about a certain entertainer's 'Minecraft Speedrun', and has put forward incentive for you to do a speedrun of your own. You have 24 hours to kill or capture the Ender Dragon, as well as any other side-objectives that catch your eye.",
+    "uid": "mqhCi"
+  },
+  {
+    "reward": "TS1 and 2 of Void God and Chiron (Nasuverse).",
+    "image": "https://i.redd.it/gaqtck61wkx61.jpg",
+    "author": "Magnus1337",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Almighty Zote, The Heroic Extraordinaire!",
+    "loca": "Hollow Knight",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "Zote gains TS1 of GaoGaiGar's G-Stone.",
+        "type": "Other",
+        "value": "Zote beats Grim the Nightmare King."
+      },
+      {
+        "reward": "Zote will thank you for realizing his dreams. This version of Zote becomes your Companion.",
+        "type": "Other",
+        "value": "Zote actually becomes a hero."
+      },
+      {
+        "reward": "You ignore the conditions and goals above and get the rewards, additional rewards, and T2 IMG tickets.",
+        "type": "Other",
+        "value": "You and Zote complete the Godseeker Trials."
+      },
+      {
+        "reward": 4,
+        "type": "IMG Tickets",
+        "value": "Speedrun the above additional objective before one week passes."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You must insert as The Knight."
+      },
+      {
+        "value": "You must train Zote through subtle means. Fight him but sneakily teach him new skills is subtle."
+      },
+      {
+        "value": "You must ensure Zote does one good deed per day."
+      },
+      {
+        "value": "Zote must defeat the Radiance-empowered Hollow Knight on his own then help you beat its main body in the Dreamscape."
+      },
+      {
+        "value": "Completion happens when you and Zote beat the Radiance."
+      }
+    ],
+    "budget": 1000,
+    "desc": "One of our clients is a fan of Zote. They are quite displeased because, in every reality out there, Zote is not what they imagined... Ensure that Zote is truly the hero he kept bragging about.",
+    "uid": "RvAQm"
+  },
+  {
+    "reward": "Your Possession cost is refunded, and Template Stacking 1 and 2 of Kilgrave.",
+    "image": "https://i.redd.it/lifp35vet2r41.jpg",
+    "author": "Magnus1337",
+    "rewardType": "Other",
+    "source": "",
+    "title": "The ACTUAL Man behind the Slaughter",
+    "loca": "Marvel - Cinematic Universe (no TVA)",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "Template Stacking 1 of any Stealth-based power.",
+        "type": "Perks",
+        "value": "The Purple Man, Kilgrave, must know of your existence at the last second and scream \"Fuck you, Afton!\" at the top of his lungs."
+      },
+      {
+        "reward": "You will gain an altform as Funtime Freddy, and a single perk of Transhuman Heritage for free but not exceeding 500 credits",
+        "type": "Other",
+        "value": "Jessica Jones must point at Kilgrave and shout \"He is real! The Man behind the Slaughter is Real!\""
+      },
+      {
+        "reward": 1,
+        "type": "IMG Tickets",
+        "value": "Take this as your first mission."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You must Possess Michael Afton."
+      },
+      {
+        "value": "You must cause a single \"slaughter\" in the world while posing as Kilgrave."
+      },
+      {
+        "value": "The slaughter doesn't have to involve real, actual people. Use illusions or something. The only thing you need are witnesses of the event."
+      },
+      {
+        "value": "You must do anything, including subtle gaslighting and mind control for this to happen."
+      },
+      {
+        "value": "Completion happens when Kilgrave's name as the purple man is replaced with \"The Man Behind the Slaughter\"."
+      }
+    ],
+    "budget": 250,
+    "desc": "Your job, should you accept it, is to insert into the MCU as Michael Afton. Then you must prank everyone by making it seem that the Purple Man, Kilgrave, is the one responsible for a mass killing somewhere. Wherever he appears, a person must shout \"It's the man behind the slaughter!\" in his presence.",
+    "uid": "sYXVg"
+  },
   {
     "reward": "Technology for building the Hound and the \"Octopus\" tank in the version of the story you intervened",
     "image": "https://image.tmdb.org/t/p/original/eEyCiluDMwk61LsH9aZvnsNvYDj.jpg",
@@ -133,6 +1231,7 @@
     "rewardType": "Other",
     "source": "",
     "title": "The First Flame Hungers (Part 1)",
+    "uid": "pFuLF",
     "loca": "Battle Through the Heavens",
     "lewd": false,
     "scope": "Grand",
@@ -163,15 +1262,14 @@
         "value": "Must have the First Flame from Dark Souls as Template Stacking."
       },
       {
-        "value": "You must insert into the Soul of Cinder or have them as a Template. Stacking."
+        "value": "You must insert into the Soul of Cinder or have them as a Template Stacking."
       },
       {
         "value": "Completion happens should you manage to assimilate all the Heavenly Flames."
       }
     ],
     "budget": 1000,
-    "desc": "These so-called Heavenly Flames are mere ants compared to the Mount Tai that is the First Flame. Find all of these Heavenly Flames and take them for yourself. You will automatically absorb them in contact without negative consequences.",
-    "uid": "pFuLF"
+    "desc": "These so-called Heavenly Flames are mere ants compared to the Mount Tai that is the First Flame. Find all of these Heavenly Flames and take them for yourself. You will automatically absorb them in contact without negative consequences."
   },
   {
     "reward": "Template Stacking 1 of Niijima Makoto, with both versions of her persona unlocked.",
@@ -2829,6 +3927,7 @@
     "rewardType": "Other",
     "source": "",
     "title": "Mami’s Magical Mammaries",
+    "uid": "pAawA",
     "loca": "Madoka Magica",
     "lewd": false,
     "scope": "Standard",
@@ -2857,15 +3956,14 @@
         "value": "Mami must defeat at least one witch of T5 or higher solely using her breasts."
       },
       {
-        "value": "Mami’s Cleavage must be able to contain at least 0,1 square meters of material and 100 kilograms of weight without inconveniencing her."
+        "value": "Mami’s Cleavage must be able to contain at least 0,1 cubic meters of material and 100 kilograms of weight without inconveniencing her."
       },
       {
         "value": "Mami’s breasts must be able to subjugate all other members of the Holy Quintet at the same time, both sexually and in combat."
       }
     ],
     "budget": 160,
-    "desc": "There is a hard working veteran magical girl in Mitakihara known for many things. Her excellent combat skills, her cooking which is certainly top notch, not to mention that charisma fitting of a respectable senpai. But really what we are her for are her massive mammaries. Seriously, these things are way too big for a middle schooler! They are practically magic. Or at least they will be, which is where you come into the picture. We want you to make these puppies into a fantastical pair of boobs that would make a succubus green with envy and a love goddess feel inadequate. The methods don't have to be magical or anything, but we want some high end results here. Use nanobots or pheromones. Enchant them with mystic runes or awaken a psychic energy field born from the collective will of humanity inside them. Stuff them full of liquid divinity or whatever. We don’t care about the means, anything goes here.",
-    "uid": "pAawA"
+    "desc": "There is a hard working veteran magical girl in Mitakihara known for many things. Her excellent combat skills, her cooking which is certainly top notch, not to mention that charisma fitting of a respectable senpai. But really what we are her for are her massive mammaries. Seriously, these things are way too big for a middle schooler! They are practically magic. Or at least they will be, which is where you come into the picture. We want you to make these puppies into a fantastical pair of boobs that would make a succubus green with envy and a love goddess feel inadequate. The methods don't have to be magical or anything, but we want some high end results here. Use nanobots or pheromones. Enchant them with mystic runes or awaken a psychic energy field born from the collective will of humanity inside them. Stuff them full of liquid divinity or whatever. We don’t care about the means, anything goes here."
   },
   {
     "reward": 20,
@@ -7813,54 +8911,78 @@
     "uid": "nTmJU"
   },
   {
-    "reward": 500,
+    "reward": 100,
     "image": "",
     "author": "CyrusFallen",
     "rewardType": "Credits",
     "source": "",
-    "title": "Story Mode",
+    "title": "Story Mode [Revision]",
+    "uid": "DhwgC",
     "loca": "Generic",
     "lewd": false,
     "scope": "Grand",
     "objectives": [
       {
-        "reward": 50,
-        "type": "Credits",
+        "reward": "5 x DR Credits",
+        "type": "Other",
         "value": "Join the main cast."
       },
       {
-        "reward": "Alluring Whisper: Siren's Song",
-        "type": "Perks",
+        "reward": "Alluring Whisper or 10 Credits",
+        "type": "Other",
         "value": "Romance a female main character(genderbent males count)."
       },
       {
-        "reward": "Sexual Calibration 1 and 2",
-        "type": "Perks",
+        "reward": "Sexual Calibration, Fertility Calibration I & Fertility Calibration II (x1) or 5 Credits",
+        "type": "Other",
         "value": "Create a Harem(only in worlds where harems aren't common)"
       },
       {
-        "reward": 2,
-        "type": "IMG Tickets",
+        "reward": "40% World's DR Budget (unmodified by intensity).",
+        "type": "Other",
         "value": "Perfect Run: Ensure every main character solves any issues they might have, achieves their goals, and go on to have a happy ending."
+      },
+      {
+        "reward": "Template Stack I of Target + 50% Target's catalog cost.",
+        "type": "Other",
+        "value": "Surpass the world's protagonist at their peak under your own power, without assistance of Templates, Power Swap, or Heritage. Become the True Protagonist of the story. (Lead character or Highest tier main cast member, whoever fits best)"
+      },
+      {
+        "reward": 1,
+        "type": "IMG Tickets",
+        "value": "Popularity of this story rivals most popular 'Canon' timeline (10% margin of error)."
+      },
+      {
+        "reward": "5 IMG Tickets. This World variant becomes privately owned by you.",
+        "type": "Other",
+        "value": "Popularity transcends popularity of all 'Canon' worlds on record. Your story here is now a new variant World available for the Company due to the Narrative Cosmic Resonance created."
       }
     ],
     "conditions": [
       {
-        "value": "You must pick Substitute or Extra as your origin."
+        "value": "You must pick Substitute or Extra as your origin. If this isn't your Starting World, you may elect to either temporarily Substitute or become an Extra for duration of this mission. (Cost reduced by your tier's credit value, minimum of 0)"
       },
       {
-        "value": "You can't stand out! You are limited to abilities either local or close enough that they could pass off as local."
+        "value": "You can't stand out! You are limited to abilities either local or close enough that they could pass off as local. Company can provide limiters and seals to your specifications, as long as your remaining powers fit the theme or context of the world."
       },
       {
-        "value": "You can't bind anyone! Any other function of your bindings work, including selling your captures, but the binding effects won't apply."
+        "value": "Bindings/Lures work at half effectiveness and bound targets will automatically be familiars. Capture by Confession overrides this restriction."
+      },
+      {
+        "value": "Binding/Lure works normally against characters 2 tiers or lower than you."
+      },
+      {
+        "value": "Companions purchased before or during this mission are subject to all of the above conditions except the first (which is optional, but limited to Extras)."
+      },
+      {
+        "value": "Conditions will be lifted at conclusion of mission and temporary assets supplied for the mission retrieved by The Company. Any credits spent on temp origin refunded."
       },
       {
         "value": "You must complete the main storyline or remain in the world for at least 10 years, whichever happens first."
       }
     ],
     "budget": 50,
-    "desc": "Congratulations Contractor! You have been chosen to take part in the new project of the entertainment division!\nYou'll be tasked with going into a world and completing its main storyline as a local, with your bindings and OOC abilities disabled.",
-    "uid": "DhwgC"
+    "desc": "[Modified from CyrusFallen's version being incompatible with various WC features.]\nCongratulations Contractor! You have been chosen to take part in the new project of the entertainment division!\nYou'll be tasked with going into a world and completing its main storyline as a local, with your bindings and OOC abilities limited. Try your best to be entertaining for all our dear viewers, won't you?\n(Recommended for worlds with DR >= 4)"
   },
   {
     "reward": "Heaven and the Grigori will unite under your rule as the new God King of Heaven and Avalon, with all Angels becoming Familiars, letting you raise the Fallen back to White Winged Angels. Heaven itself becomes part of your Dimensional Plane.",

@@ -129,7 +129,7 @@ talents.push({
   uid: 'UPYkI',
   title: 'Communication Talent',
   category: 'Talent',
-  image: 'https://i.ibb.co/mzjhSnN/Communication-Talent.jpg',
+  image: 'https://i.imgur.com/ZE9EoQLl.jpg',
   cost: 10,
   desc: `
 <p>You understand. You can read a room, spot deceit or employ your own, know when to speak and when to hold your tongue, and find the right words to say for good or ill. You will neither be That Guy whom women warn their friends about, nor the otaku nerd whose obsessions drive others away. This does not lend any additional power to your words - that’s what Siren’s Song is for - nor will it make you enjoy social interactions for their own sake. It only guarantees knowledge and competence.</p>

@@ -60,6 +60,7 @@ function choosePatron(pt: typeof patrons[0], saveInfo: {uid: string; title: stri
   else {
     if (patronEffects[pt.title])
       patronEffects[pt.title].add()
+
     patron.value.push(saveInfo)
   }
 }

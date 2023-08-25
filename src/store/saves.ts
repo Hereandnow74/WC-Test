@@ -3,6 +3,7 @@ interface SaveListItem {
   name: string
   worldName: string
   rating: number
+  intensity: number
   totalCost: number
   date: string
 }
