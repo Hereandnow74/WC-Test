@@ -57,6 +57,7 @@ export const nicknames = [
   'Exactingspoon',
   'DragonBoy.EXE',
   'Michael L.',
+  'xydra22',
 ]
 
 export const WORLD_COLORS = ['bg-green-600', 'bg-teal-600', 'bg-cyan-600',
@@ -258,7 +259,7 @@ export const waifuTags = {
   sm: { tag: 'Schemer', category: 'Occupation', short: 'sm', effect: '', desc: 'A crafty and cunning individual adept at devising manipulative and secretive plans to advance personal interests, often at the expense of others.', style: { background: 'linear-gradient(0deg, rgba(180,120,255,1) 22%, rgba(140,45,253,1) 100%)', color: '#fff' } },
   fw: { tag: 'Fanwork', category: 'Utility', short: 'fw', effect: '', desc: 'An established fan creation.', style: { background: 'linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(219,255,0,1) 80%)', color: '#000' } },
   vn: { tag: 'Villain', category: 'Occupation', short: 'vn', effect: '', desc: '', style: { background: 'linear-gradient(0deg, rgba(202,4,51,1) 0%, rgba(109,3,85,1) 100%)', color: '#fff' } },
-  sy: { tag: 'Symbiote Theme', category: 'Utility', short: 'sy', effect: '', desc: 'Will qualify you to recieve a specific symbiote theme.', style: { background: 'linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(129,129,129,1) 50%, rgba(0,0,0,1) 100%)', color: '#fff' } },
+  // sy: { tag: 'Symbiote Theme', category: 'Utility', short: 'sy', effect: '', desc: 'Associated with metaphysical corruption or purification, or are canonically known for polymorphing others or spawning or controlling large numbers of mooks.', style: { background: 'linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(129,129,129,1) 50%, rgba(0,0,0,1) 100%)', color: '#fff' } },
   rg: { tag: 'Regenerator', category: 'Powers', short: 'rg', effect: '', desc: 'Able to subconsciously heal themselves from wounds and injuries.', style: { background: 'linear-gradient(0deg, rgba(149,4,48,1) 0%, rgba(255,0,77,1) 100%)', color: '#000' } },
   pr: { tag: 'Protagonist', category: 'Other', short: 'pr', effect: '', desc: 'The leading character(s) in a world.', style: { background: 'linear-gradient(0deg, rgba(245,70,0,1) 0%, rgba(243,233,0,1) 70%)', color: '#000' } },
   su: { tag: 'Succubus', category: 'Race', short: 'su', effect: '', desc: 'Include Incubus as well.', style: { background: 'linear-gradient(0deg, rgba(51,0,95,1) 0%, rgba(214,0,137,1) 70%)', color: '#fff' } },
@@ -316,7 +317,7 @@ export const ALL_DLC_PERK_TITLES = computed(() => {
 
 export const ALL_PERK_TITLES = computed(() => {
   const result = {} as Record<string, PerkFull>
-  const all = [intensity, bindings, lures, lureExpansions, otherControls, heritages, homes, demiplane, dungeon, defenses, talents, perks, genericPerks, waifu_perks, DLCperks, DLChomes, DLCgenericPerks, DLCheritages, DLCtalents, DLClureExpansions, DLCbindings, DLClures, DLCotherControls, DLCridePerks, fullHeritagesDLC, invasionPvP]
+  const all = [origin, intensity, bindings, lures, lureExpansions, otherControls, heritages, homes, demiplane, dungeon, defenses, talents, perks, genericPerks, waifu_perks, DLCperks, DLChomes, DLCgenericPerks, DLCheritages, DLCtalents, DLClureExpansions, DLCbindings, DLClures, DLCotherControls, DLCridePerks, fullHeritagesDLC, invasionPvP]
   all.forEach(p => addTitles<typeof p[0]>(result, p))
   return result
 })

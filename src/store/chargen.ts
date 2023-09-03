@@ -63,6 +63,7 @@ const currentWorld = useStorage('currentWorld', startingWorld.value)
 const startingOrigin = storeType<Origin>('startingOrigin', {
   title: '',
   cost: 0,
+  tier: 1,
 })
 
 const coupleOrigin = storeType<Origin>('coupleOrigin', {

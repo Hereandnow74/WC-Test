@@ -3,6 +3,7 @@ export const desc = 'Pick one and only one of these five options at the start of
 export interface Origin {
   uid: string
   title: string
+  category: 'Origin'
   cost: number
   image: string
   desc: string
@@ -19,6 +20,7 @@ export const origin: Origin[] = []
 
 origin.push({
   uid: 'svmGV',
+  category: 'Origin',
   title: 'Drop-In',
   cost: 0,
   image: '/img/origin/dropin2.jpg',
@@ -28,6 +30,7 @@ origin.push({
 
 origin.push({
   uid: 'SRTuJ',
+  category: 'Origin',
   title: 'Walk-In',
   cost: 0,
   image: '/img/origin/walkin2.jpg',
@@ -38,6 +41,7 @@ origin.push({
 
 origin.push({
   uid: 'cQE7u',
+  category: 'Origin',
   title: 'Extra',
   cost: 1,
   image: '/img/origin/extra2.jpg',
@@ -51,6 +55,7 @@ origin.push({
 
 origin.push({
   uid: 'cWbuu',
+  category: 'Origin',
   title: 'Substitute',
   cost: 0,
   blacklist: ['Gauntlet PvP'],
@@ -65,6 +70,7 @@ origin.push({
 
 origin.push({
   uid: 'h0ltc',
+  category: 'Origin',
   title: 'Possess',
   cost: 0,
   image: '/img/origin/possess2.jpg',

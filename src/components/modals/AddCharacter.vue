@@ -201,6 +201,10 @@ const addCharacter = handleSubmit((values) => {
   values.tags = values.tags.map((x: string) => waifuTagsByTag[x] ? waifuTagsByTag[x].short : x)
   values.uid = props.editMode && oldEntry.value ? props.character.uid || random(10000000, 99999999) : random(10000000, 99999999)
   if (serverSave.value) {
+    if (props.editMode && props.character.tier !== values.tier) {
+      tierError.value = 'To change character tier you need to use Error Report function.'
+      return
+    }
     values.uid = props.character.uid || random(10000000, 99999999)
     processing.value = true
     userNickname.value = values.nickname

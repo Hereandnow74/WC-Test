@@ -438,6 +438,18 @@ export const challenges = [
       },
     },
   },
+  {
+    uid: 'ZpyEq',
+    dlc: 'D',
+    title: 'Angry Kaiju from Outer Dimension',
+    image: 'https://i.imgur.com/KhRJStQ.png',
+    cost: 0,
+    desc: `
+    There is something wrong with you; for some reason, every time you travel to a new world, regardless of the method used, it will thin the dimensional walls of that place. This thinning will attract the attention of the Kaiju's living in interdimensional space. They will send an attack group scaled to your retinue tiers and they will be especially focused on eliminating you. If you have Trace and Information Defenses, their inconsistent ability to track you will lead them to adopt scorched earth tactics.
+
+    <p>Receive the ability to freely travel the Omniverse, albeit with a cooldown of one week, and after successfully fending off attacks five times, you will be given the coordinates to the location of the Kaiju Queen. If you manage to capture her and keep her in your retinue, you will no longer weaken dimensional walls when you hop worlds.</p>
+    `,
+  },
 ]
 
 export const skyblockRules = `

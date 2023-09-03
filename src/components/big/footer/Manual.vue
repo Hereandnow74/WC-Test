@@ -24,6 +24,7 @@
       <span>Fee <span class="text-sm text-gray-400">(forever lost credits from selling perks and loan repayment)</span></span>
       <Input v-model.number="fee" class="w-24" />
     </div>
+    <!-- <Button label="Buy any perk" bg-color="bg-true-gray-800" @click="showBuyAnyPerk = true" /> -->
     <div class="flex flex-col gap-2 text-gray-800 border rounded p-2">
       <h3 class="text-gray-200 flex items-center gap-2 cursor-pointer" @click="specificMods.push({desc: '', mod: 0})">
         Specific credit modifiers <akar-icons:plus class="text-green-500 hover:text-green-300" />
@@ -36,11 +37,14 @@
         </div>
       </div>
     </div>
+    <BuyAnyPerk v-if="showBuyAnyPerk" @click="showBuyAnyPerk = false" />
   </div>
 </template>
 
 <script lang="ts" setup>
 import { useStore } from '~/store/store'
+
+const showBuyAnyPerk = ref(false)
 
 const { budgetMods, specificMods, fee } = useStore()
 

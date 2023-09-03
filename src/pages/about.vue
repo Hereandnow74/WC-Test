@@ -17,7 +17,7 @@
           target="_blank"
           rel="noopener noreferrer"
           class="text-blue-500 underline"
-        >Discord</a> nickname <span class="font-bold">om1cr0n#2971</span>
+        >Discord</a> nickname <span class="font-bold">om1cr0n42</span>
       </div>
       <div>
         If you like the job I done so far and want to support my work on this project and any and all similar
@@ -51,12 +51,12 @@
         <h4 class="text-2xl flex items-center justify-center">
           Supporters <ci:heart-fill class="text-red-500" />
         </h4>
-        <div class="flex flex-wrap gap-2 justify-center text-semibold">
-          <span class="bg-gray-200 dark:bg-gray-700  px-1 rounded flex items-center gap-1">{{ nicknames[0] }}<pepicons:crown class="text-amber-400" /></span>
-          <span class="bg-gray-200 dark:bg-gray-700  px-1 rounded flex items-center gap-1">{{ nicknames[1] }}<pepicons:crown class="text-gray-400" /></span>
-          <span class="bg-gray-200 dark:bg-gray-700  px-1 rounded flex items-center gap-1">{{ nicknames[2] }}<pepicons:crown class="text-red-400" /></span>
+        <div class="flex flex-wrap gap-1 justify-center text-semibold mt-2">
+          <span class="bg-gray-200 dark:bg-gray-800  px-2 rounded flex items-center gap-1">{{ nicknames[0] }}<pepicons:crown class="text-amber-400" /></span>
+          <span class="bg-gray-200 dark:bg-gray-800  px-2 rounded flex items-center gap-1">{{ nicknames[1] }}<pepicons:crown class="text-gray-400" /></span>
+          <span class="bg-gray-200 dark:bg-gray-800  px-2 rounded flex items-center gap-1">{{ nicknames[2] }}<pepicons:crown class="text-red-400" /></span>
 
-          <span v-for="nick in nicknames.slice(3)" :key="nick" class="bg-gray-200 dark:bg-gray-700  px-1 rounded">{{ nick }}</span>
+          <span v-for="nick in nicknames.slice(3)" :key="nick" class="bg-gray-200 dark:bg-gray-800  px-2 rounded">{{ nick }}</span>
         </div>
       </div>
     </div>
