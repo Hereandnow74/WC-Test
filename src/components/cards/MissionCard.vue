@@ -48,8 +48,7 @@
     <div v-if="mission.budget" data-tippy-content="The sum of the list prices for your retinue’s effective tiers after step 5, plus the combined list prices of your Catch-a-Ride vehicles. Imaginary Tiers are valued according to the exchange rate of their IMG value. If you only bring a limited force into a mission, only they will count towards this." class="text-center text-sm text-amber-800 dark:text-amber-300">
       ( The optimal <span class="text-green-700 dark:text-green-300 underline cursor-pointer">asset value</span> for this mission is in <span class="text-green-800 dark:text-green-300">{{ Math.floor(mission.budget * 0.8) }}</span> - <span class="text-green-800 dark:text-green-300">{{ Math.floor(mission.budget * 1.2) }}</span> credits range)
     </div>
-    <div class="whitespace-pre-wrap px-2">
-      {{ mission.desc }}
+    <div class="px-2" v-html="convertedBBCode.html">
     </div>
     <div v-if="mission.conditions.length" class="px-2 flex flex-col gap-1">
       <h4 class="text-amber-800 dark:text-amber-300">
@@ -143,6 +142,7 @@
 import { Mission } from 'global'
 import type { PropType } from 'vue'
 import { lazyLoadSingleImg, useTooltips } from '~/logic'
+import { XBBCODE } from '~/logic/bbtohtml'
 import { usePlayStore } from '~/store/play'
 import { useSaves } from '~/store/saves'
 import { useStore } from '~/store/store'
@@ -172,6 +172,14 @@ onMounted(() => { if (imageEl.value) lazyLoadSingleImg(imageEl.value) })
 function showEditCompanion() {
   showEditMission.value = true
 }
+
+const convertedBBCode = computed(() => {
+  return XBBCODE.process({
+    text: props.mission.desc,
+    convertLineBreaksToBbcode: true,
+    removeMisalignedTags: false,
+  })
+})
 
 onMounted(() => useTooltips())
 

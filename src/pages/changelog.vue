@@ -6,6 +6,53 @@
       </h2>
       <div>
         <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          25 September 2023
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~35 new user submitted characters, new missions, new worlds</li>
+          <li>Added support for BB Codes for Mission description. List of supported codes: b, center, color, font?, hr, i, pre, right, s, size, sub, sup, u. </li>
+          <li>Added rules for Missions, written by DepressedAlucard</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          21 September 2023
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~115 new user submitted characters, new missions, new worlds</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          17 September 2023
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~90 new user submitted characters, new missions, new worlds</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          09 September 2023
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~115 new user submitted characters, new missions, new worlds</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          04 September 2023
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~75 new user submitted characters, new missions, new world</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
           31 August 2023
         </h3>
         <ul class="list-decimal list-inside">

@@ -41,7 +41,7 @@
         </div>
         <div v-if="difficulties.length">
           <h3 class="text-lg" :style="{'color': imageSettings.categoryColor}">
-            Difficulty [<span :style="{'color': imageSettings.numberColor}">{{ difficultyRating }}</span>]
+            Intensity [<span :style="{'color': imageSettings.numberColor}">{{ difficultyRating }}</span>]
           </h3>
           <Enum
             :number-color="imageSettings.numberColor"
@@ -54,7 +54,7 @@
         </div>
         <div v-if="intensities.length">
           <h3 class="text-lg" :style="{'color': imageSettings.categoryColor}">
-            Intensity
+            Mode
           </h3>
           <Enum
             :number-color="imageSettings.numberColor"

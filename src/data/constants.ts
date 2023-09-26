@@ -61,7 +61,7 @@ export const nicknames = [
 ]
 
 export const WORLD_COLORS = ['bg-green-600', 'bg-teal-600', 'bg-cyan-600',
-  'bg-blue-500', 'bg-indigo-500', 'bg-purple-500', 'bg-amber-600',
+  'bg-blue-500', 'bg-indigo-500', 'bg-purple-500', 'bg-pink-600',
   'bg-orange-500', 'bg-red-500', 'bg-true-gray-700']
 
 export const PLACEHOLDER_IMAGE = 'data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22576%22%20height%3D%22288%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20576%20288%22%20preserveAspectRatio%3D%22none%22%3E%0A%20%20%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%20%20%3Cstyle%20type%3D%22text%2Fcss%22%3E%0A%20%20%20%20%20%20%20%20%20%20%23holder%20text%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20fill%3A%20%23ffffff%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20font-family%3A%20sans-serif%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20font-size%3A%2040px%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20font-weight%3A%20400%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%3C%2Fstyle%3E%0A%20%20%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%20%20%3Cg%20id%3D%22holder%22%3E%0A%20%20%20%20%20%20%20%20%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23cccccc%22%3E%3C%2Frect%3E%0A%20%20%20%20%20%20%20%20%3Cg%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ctext%20text-anchor%3D%22middle%22%20x%3D%2250%25%22%20y%3D%2250%25%22%20dy%3D%22.3em%22%3E576%20x%20288%3C%2Ftext%3E%0A%20%20%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%3C%2Fsvg%3E'
@@ -263,7 +263,7 @@ export const waifuTags = {
   rg: { tag: 'Regenerator', category: 'Powers', short: 'rg', effect: '', desc: 'Able to subconsciously heal themselves from wounds and injuries.', style: { background: 'linear-gradient(0deg, rgba(149,4,48,1) 0%, rgba(255,0,77,1) 100%)', color: '#000' } },
   pr: { tag: 'Protagonist', category: 'Other', short: 'pr', effect: '', desc: 'The leading character(s) in a world.', style: { background: 'linear-gradient(0deg, rgba(245,70,0,1) 0%, rgba(243,233,0,1) 70%)', color: '#000' } },
   su: { tag: 'Succubus', category: 'Race', short: 'su', effect: '', desc: 'Include Incubus as well.', style: { background: 'linear-gradient(0deg, rgba(51,0,95,1) 0%, rgba(214,0,137,1) 70%)', color: '#fff' } },
-  cm: { tag: 'Combatant', category: 'Other', short: 'cm', effect: '', desc: 'Has combat experience / a combat oriented powerset.', style: { background: 'linear-gradient(0deg, rgba(255,90,0,1) 0%, rgba(255,0,26,1) 70%)', color: '#fff' } },
+  cm: { tag: 'Combatant', category: 'Other', short: 'cm', effect: '', desc: 'Has a lot of first-hand combat experience or a combat oriented powerset.', style: { background: 'linear-gradient(0deg, rgba(255,90,0,1) 0%, rgba(255,0,26,1) 70%)', color: '#fff' } },
   is: { tag: 'Insane', category: 'Personality', short: 'is', effect: '', desc: '', style: { background: 'linear-gradient(90deg, rgba(165,5,199,1) 0%, rgba(243,104,245,1) 50%, rgba(165,5,199,1) 100%)', color: '#fff' } },
   rw: { tag: 'Reality Warper', category: 'Powers', short: 'rw', effect: '', desc: 'Able to manipulate, change or alter reality in any way, shape, or form.', style: { background: 'linear-gradient(90deg, rgba(132,4,185,1) 0%, rgba(255,15,153,1) 50%, rgba(132,4,185,1) 100%)', color: '#fff' } },
   ha: { tag: 'Hacker', category: 'Occupation', short: 'ha', effect: '', desc: 'Specializes in reverse engineering, finding loopholes, and exploiting programs and digital systems in general.', style: { background: 'linear-gradient(0deg, rgba(71,107,77,1) 0%, rgba(0,255,29,1) 70%)', color: '#000' } },

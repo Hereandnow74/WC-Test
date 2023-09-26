@@ -21,7 +21,7 @@
         <Button
           :class="page === 2 ? 'bg-blue-800': ''"
           class="bg-purple-700 text-gray-100 rounded cursor-pointer hover:bg-purple-800 px-2"
-          label="3 random missions"
+          label="9 random missions"
           size="Small"
           icon="bi:patch-question-fill"
           @click="page = 2"
@@ -74,7 +74,7 @@
 <script lang="ts" setup>
 import Fuse from 'fuse.js'
 import { Mission } from 'global'
-import { find, groupBy, sample } from 'lodash-es'
+import { find, groupBy, random, sample } from 'lodash-es'
 import { onBeforeRouteUpdate } from 'vue-router'
 
 import { toggleShowAddMission, showAddMission, useTooltips } from '~/logic'
@@ -209,7 +209,13 @@ onBeforeRouteUpdate((to, from, next) => {
   setTimeout(next, 1)
 })
 
-const threeMission = computed(() => [sample(missions.value), sample(missions.value), gen2.generateRandom(currentWorld.value.worldName).getObject()])
+const nineMissions = computed(() => {
+  const res = []
+  const generators = [() => sample(missions.value), () => gen2.generateRandom(currentWorld.value.worldName).getObject()]
+  for (let I = 0; I < 9; I++)
+    res.push(generators[random(0, 1)]())
+  return res
+})
 
 const startingMissionsCount = 10
 const infiniteMissions = ref(filteredMissions.value.slice(0, startingMissionsCount))
@@ -230,7 +236,7 @@ const displayedMissions = computed(() => {
     case 1:
       return generatedMissions.value
     case 2:
-      return threeMission.value
+      return nineMissions.value
     case 3:
       return singleMission.value
   }

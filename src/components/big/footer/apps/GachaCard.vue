@@ -66,6 +66,8 @@ const tierColor = [
   'box--gradient silver text-gray-700',
   'box--gradient gold text-gray-200',
   'box--gradient dark-gold text-gray-200',
+  'box--gradient dark-gold text-gray-200',
+  'box--gradient dark-gold text-gray-200',
 ]
 
 const stars = [

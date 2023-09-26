@@ -218,6 +218,18 @@ rides.push({
 // Environment: Sky
 
 rides.push({
+  uid: 't1jk4',
+  title: 'YorHa Flight Unit',
+  source: 'Nier: Automata',
+  category: 'Sky',
+  size: 'Small',
+  image: '',
+  cost: 20,
+  desc: 'Personal mini-mecha with exposed cockpit and minimal storage capacity. Ranged and melee weapon mounts available.',
+  requires: 'Any YorHa android',
+})
+
+rides.push({
   uid: 't1jk9',
   title: 'Fahrenheit',
   source: 'Final Fantasy X',

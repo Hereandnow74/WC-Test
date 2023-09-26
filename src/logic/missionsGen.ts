@@ -38,7 +38,7 @@ export class MissionGenerator {
     this.title = 'Capture Someone'
     if (target) {
       this.title = `Capture: <i>${target.n}</i>`
-      this.description = `Capture <b>${target.n}</b>(T${target.t}) from <b>${target.w}</b>, quick mission in and out, just a 20 minute adventure.`
+      this.description = `Capture [b]${target.n}[/b](T${target.t}) from [b]${target.w}[/b], mission in and out, just a 20 minute adventure.`
       this.conditions = [{ value: sample(conditions) as string }]
       this.loca = target.w
       this.reward = `1 ticket for a T${target.t} companion`
@@ -64,7 +64,7 @@ export class MissionGenerator {
     if (target) {
       this.scope = 'Quick'
       this.title = `Eliminate: <i>${target.n}</i>`
-      this.description = `Eliminate <b>${target.n}</b>(T${target.t}) from <b>${target.w}</b>, they definitely deserve it, or not, who cares!`
+      this.description = `Eliminate [b]${target.n}[/b](T${target.t}) from [b]${target.w}[/b], they definitely deserve it, or not, who cares!`
       this.conditions = [{ value: sample(conditions) as string }]
       this.loca = target.w
       this.reward = 'Half of the listed target cost'
@@ -87,7 +87,7 @@ export class MissionGenerator {
     if (world) {
       this.scope = 'Grand'
       this.title = `Conquer: <i>${world.worldName}</i>`
-      this.description = `Conquer <b>${world.worldName}(DR${world.rating})</b>, you need to became unquestionable ruler of this world. You need to stay on the throne for at least an year and have inheritor.`
+      this.description = `Conquer [b]${world.worldName}(DR${world.rating})[/b], you need to became unquestionable ruler of this world. You need to stay on the throne for at least an year and have inheritor.`
       this.conditions = [{ value: sample(conditions) as string }]
       this.loca = `${world.worldName}${world.condition ? ` - ${world.condition}` : ''}`
       this.reward = 'Double of the world budget'
@@ -109,7 +109,7 @@ export class MissionGenerator {
     if (world) {
       this.scope = 'Grand'
       this.title = `Became a god in <i>${world.worldName}</i>`
-      this.description = `Be considered a god in <b>${world.worldName}(DR${world.rating})</b>, you need to be worshipped by at least 51% (counted at the moment of arrival) of the non-retinue sentient population.`
+      this.description = `Be considered a god in [b]${world.worldName}(DR${world.rating})[/b], you need to be worshipped by at least 51% (counted at the moment of arrival) of the non-retinue sentient population.`
       this.conditions = [{ value: 'Can\'t use 3rd party mind-control.' }, { value: sample(conditions) as string }]
       this.loca = `${world.worldName}${world.condition ? ` - ${world.condition}` : ''}`
       this.reward = '2 IMG tickets'
@@ -134,7 +134,7 @@ export class MissionGenerator {
     if (target && target_2) {
       this.scope = 'Quick'
       this.title = `Ship: ${target.n} + ${target_2.n}`
-      this.description = `Ensure that <b>${target.n}</b>(T${target.t}) from <b>${target.w}</b> will enter into romantic relationship with <b>${target_2.n}</b>(T${target_2.t}) from <b>${target_2.w}</b>`
+      this.description = `Ensure that [b]${target.n}[/b](T${target.t}) from [b]${target.w}[/b] will enter into romantic relationship with [b]${target_2.n}[/b](T${target_2.t}) from [b]${target_2.w}[/b]`
       this.conditions = [{ value: sample(conditions) as string }]
       this.loca = target.w
       this.reward = 'Sum of the target costs in credits'
@@ -157,7 +157,7 @@ export class MissionGenerator {
     if (target) {
       this.scope = 'Quick'
       this.title = `Impregnate: <i>${target.n}</i>`
-      this.description = `Impregnate <b>${target.n}</b>(T${target.t}) from <b>${target.w}</b>, target need to be aware and willing but not bound.`
+      this.description = `Impregnate [b]${target.n}[/b](T${target.t}) from [b]${target.w}[/b], target need to be aware and willing but not bound.`
       this.conditions = [{ value: sample(conditions) as string }]
       this.loca = target.w
       this.reward = 'Half of the listed target cost, optional speed up of pregnancy to a minimum of 72 hours'
@@ -181,7 +181,7 @@ export class MissionGenerator {
     if (target) {
       this.scope = 'Standard'
       this.title = `Heroics with <i>${target.n}</i>`
-      this.description = `Become a hero and pair up with <b>${target.n}</b>(T${target.t}) from <b>${target.w}</b>, target cannot be bound until mission is complete.`
+      this.description = `Become a hero and pair up with [b]${target.n}[/b](T${target.t}) from [b]${target.w}[/b], target cannot be bound until mission is complete.`
       this.conditions = [{ value: sample(conditions) as string }]
       this.loca = target.w
       this.reward = '1 free Power Swap of the same tier as target'
@@ -204,7 +204,7 @@ export class MissionGenerator {
     if (target) {
       this.scope = 'Standard'
       this.title = `Replace <i>${target.n}</i>`
-      this.description = `Become <b>${target.n}</b>(T${target.t}) from <b>${target.w}</b> and stealthy replace them, no one should have any doubts that you are them.`
+      this.description = `Become [b]${target.n}[/b](T${target.t}) from [b]${target.w}[/b] and stealthy replace them, no one should have any doubts that you are them.`
       this.conditions = [{ value: 'Can\'t capture or use mind-control on target family, friends and acquaintances' }, { value: sample(conditions) as string }]
       this.loca = target.w
       this.reward = '1 free Power Swap of the maximum tier of the fooled person (T10 is max)'
@@ -225,7 +225,7 @@ export class MissionGenerator {
     if (world) {
       this.scope = 'Standard'
       this.title = `Be creative in <i>${world.worldName}</i>`
-      this.description = `Create a new lifeform in <b>${world.worldName}(DR${world.rating})</b>. The said lifeform need to be at least comparable to a human in size, capable of reproduction and strong enough to survive in ${world.worldName}`
+      this.description = `Create a new lifeform in [b]${world.worldName}(DR${world.rating})[/b]. The said lifeform need to be at least comparable to a human in size, capable of reproduction and strong enough to survive in ${world.worldName}`
       this.conditions = [{ value: sample(conditions) as string }]
       this.loca = `${world.worldName}${world.condition ? ` - ${world.condition}` : ''}`
       this.reward = `Hidden realm in ${world.worldName}, that have a entire ecosystem that your creation will fit in`

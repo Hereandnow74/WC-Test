@@ -11,7 +11,7 @@
       :class="settings.columns !== 'auto' ? `column-count-${settings.columns}` : 'md:column-count-2 xl:column-count-3 4xl:column-count-4 5xl:column-count-5'"
     >
       <div
-
+        v-if="legacyMode"
         id="No Bindings"
         class="mb-2 p-2 bg-light-400 dark:bg-rose-900 column-block max-w-[600px] hover:(yellow-100 dark:bg-rose-800) cursor-pointer"
         @click="sellAllBindings"
@@ -98,7 +98,7 @@ import { useStore } from '~/store/store'
 import { confirmDialog } from '~/logic/dialog'
 import { symbioteQueen, symbioteUnits, alternativeTheming, symbioteBinding, symBuildings, synUnits, expansions, symbioteStructures, creep } from '~/data/symbiote'
 
-const { binding, flags, settings } = useStore()
+const { binding, flags, settings, legacyMode } = useStore()
 
 onMounted(() => useTooltips())
 

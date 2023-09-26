@@ -1,17 +1,21 @@
 <template>
   <Modal :label="mission ? 'Edit a Mission' : 'Propose a Mission'" class="!z-30">
-    <div class="max-h-[90vh] p-2 flex flex-col gap-2 min-h-0 w-full overflow-y-auto scrollbar">
+    <div class="max-h-[90vh] p-2 flex flex-col flex-grow gap-2 min-h-0 w-full overflow-y-auto scrollbar">
+      <Note type="warning" title="Rules">
+        Before adding mission to global - read <b>rules</b> first!
+        <Button label="Rules" size="Small" bg-color="bg-red-500" @click="showRules = true" />
+      </Note>
       <div v-if="mission?.uid" class="text-sm font-semibold text-red-700 dark:text-red-400">
         This form is for fixing errors, do not use is to submit new missions.
       </div>
       <div class="flex gap-2">
-        <Input v-model.trim="title" class="flex-grow" placeholder="Mission title" :error-message="errors.title" />
+        <Input v-model.trim="title" class="flex-grow" placeholder="Mission title*" :error-message="errors.title" />
       </div>
       <div class="flex gap-2">
-        <Input v-model.trim="author" class="w-1/3" placeholder="Author" :error-message="errors.author" />
-        <Input v-model="source" class="flex-grow" placeholder="Source link" :error-message="errors.source" />
+        <Input v-model.trim="author" class="w-1/3" placeholder="Author*" :error-message="errors.author" />
+        <Input v-model="source" class="flex-grow" placeholder="Source link, if you took mission from somewhere" :error-message="errors.source" />
       </div>
-      <Input v-model.number="budget" class="" placeholder="Estimated required budget to qualify for this mission" :error-message="errors.budget" />
+      <Input v-model.number="budget" class="" placeholder="Estimated budget required to qualify for this mission, 0 for none" :error-message="errors.budget" />
       <div class="text-sm font-semibold text-orange-700 dark:text-orange-300">
         If world doesn't matter for your mission, type 'Generic' in world field
       </div>
@@ -20,21 +24,21 @@
           v-model.trim="loca"
           idd="worldSearch"
           :list="[...allWorldNames, 'Generic']"
-          placeholder="World Name"
+          placeholder="World Name*"
           class="flex-grow"
           :error-message="errors.loca"
         />
-        <AnythingInput v-model="scope" class="w-28" placeholder="Scope" :list="scopes" :error-message="errors.scope" />
+        <AnythingInput v-model="scope" class="w-28" placeholder="Scope*" :list="scopes" :error-message="errors.scope" />
       </div>
       <div class="min-h-max">
-        <TextArea v-model="desc" placeholder="Mission description" :rows="'4'" :error-message="errors.desc" />
+        <TextArea v-model="desc" placeholder="Mission description*" :rows="'4'" :error-message="errors.desc" />
       </div>
       <div class="flex gap-2">
-        <Select v-model="rewardType" placeholder="Reward Type" :options="['Credits', 'IMG Tickets', 'Perks', 'Companions', 'Other']" :error-message="errors.rewardType" />
+        <Select v-model="rewardType" placeholder="Reward Type*" :options="['Credits', 'IMG Tickets', 'Perks', 'Companions', 'Other']" :error-message="errors.rewardType" />
         <NumberInput
           v-if="['Credits', 'IMG Tickets'].includes(rewardType)"
           v-model="reward"
-          placeholder="Main reward"
+          placeholder="Main reward*"
           :error-message="errors.reward"
           :min="0"
           class="flex-grow"
@@ -42,14 +46,13 @@
         <Input
           v-else
           v-model.trim="reward"
-          placeholder="Main reward"
+          placeholder="Main reward*"
           :error-message="errors.reward"
           class="flex-grow"
         />
       </div>
-      <h3 class="flex gap-2 items-center cursor-pointer" @click="conditions.push({value: ''})">
-        Conditions
-        <span class="text-sm text-gray-500 dark:text-gray-300">(like - stealth/no kill/tier limit/do it yourself/XX perk disabled/etc.)</span>
+      <h3 class="flex justify-between text-lg items-center cursor-pointer" @click="conditions.push({value: ''})">
+        Conditions:
         <fluent:add-12-filled class="text-green-200 hover:text-green-500" />
       </h3>
       <div class="flex flex-col gap-2">
@@ -66,10 +69,12 @@
           />
           <fluent:delete-20-filled class="text-red-500 hover:text-red-400 cursor-pointer" @click="conditions.splice(i, 1)" />
         </div>
+        <Button label="Add Condition" size="Small" class="self-start" @click="conditions.push({value: ''})" />
       </div>
       <div class="flex flex-col gap-2">
-        <h3 class="flex gap-4 items-center cursor-pointer" @click="objectives.push({value: '', reward: ''})">
-          Additional objectives  <fluent:add-12-filled class="text-green-200 hover:text-green-500" />
+        <h3 class="flex justify-between text-lg items-center cursor-pointer" @click="objectives.push({value: '', reward: ''})">
+          Additional objectives:
+          <fluent:add-12-filled class="text-green-200 hover:text-green-500" />
         </h3>
         <div
           v-for="requirement, i in objectives"
@@ -109,8 +114,9 @@
           </div>
           <fluent:delete-20-filled class="text-red-500 hover:text-red-400 cursor-pointer" @click="objectives.splice(i, 1)" />
         </div>
+        <Button label="Add Objective" size="Small" class="self-start" @click="objectives.push({value: '', reward: ''})" />
       </div>
-      <div class="flex gap-2 items-center">
+      <div class="flex gap-2 items-center mt-2">
         <Input v-model="image" class="flex-grow" placeholder="Image link" :error-message="errors.image" />
         <Toggle v-model="lewd" title="It should not be gross, no lolicon, and use your common sense." class="cursor-help" label="Image is 18+" />
       </div>
@@ -126,12 +132,47 @@
           :label="mission ? 'Send Edited Mission': 'Send'"
           size="small"
           class="px-8"
-          bg-color="bg-green-700"
+          bg-color="bg-amber-600"
           @click="buttonActive ? addPerk() : errorMessage = 'Wait 30s before submitting again.'"
         />
         <Toggle v-model="temporary" class="cursor-help" label="Do not send to global" title="Mission will be added temporary to missions page, so you will be able to check it out." />
       </div>
     </div>
+    <Modal v-if="showRules" label="Rules for submitting a mission" @click="showRules = false">
+      <div class="max-h-[85vh] md:h-3/4 bg-gray-300 dark:bg-gray-800 overflow-y-auto min-h-0 flex flex-col gap-2 p-2 scrollbar">
+        <p>
+          Before even beginning to read the general conventions below, ensure that you have fully read and understood the <router-link class="text-blue-800 dark:text-blue-400 hover:underline" :to="{path: '/', hash: '#Missions'}">
+            dedicated section
+          </router-link> of the rules concerning missions in the catalog. After you have done so, refer to the list of conventions below that one must follow when submitting a new mission to the Interactive. If your mission does not follow these conventions or the rules concerning them, it is unlikely that it will be accepted.
+        </p>
+        <ul class="list-disc list-inside ml-8 ">
+          <li>Missions should in general have appropriate high-quality images. NSFW images should be appropriately marked as such, and the respective option selected to blur them upon submission. </li>
+          <li>Low-effort missions with bad spelling, grammar, or extremely short descriptions and a minimal number of objectives will not be accepted. </li>
+          <li>Missions should follow the rules and guidelines established by the rest of the catalog. While a certain degree of leeway is granted, outright breaking these rules is not acceptable. </li>
+          <li>A Mission needs to have balanced and suitable rewards with respect to the effort spent on its objectives and the investment needed to complete them.</li>
+          <li>All missions can only be selected post-chargen. Chargen-only missions are hence against the rules and will automatically be denied.</li>
+          <li>The wording of missions should not lock a contractor into one, such as in the case of missions with infinitely repeatable objectives or those that simply and without purpose force you to wait X years before their completion. Missions with infinitely repeatable objectives will not be accepted.</li>
+        </ul>
+        <p>An additional list of the most common do’s and don’ts for newly submitted missions is provided below.</p>
+        <ul class="list-disc list-inside ml-8 ">
+          <li>Do have a mission that provokes and inspires the development of interesting narratives, rather than provide rewards for the simple retelling of canon. Missions should generally not force contractors to follow the original plot or continuity of a work to the letter. </li>
+          <li>Do have a mission's rewards be unique and interesting boons. The best rewards aren't often perks, waifu, or credits but rewards that offer a unique advantage to a particular gameplay style. A credit alternative should always be present for unique rewards.</li>
+          <li>Do ensure that mission always present a challenge to contractor in some form or another, and avoid objectives that do not contribute to this challenge.</li>
+          <li>Don't have a mission excessively deny or forbid the use of bindings or other key components of the catalog.</li>
+        </ul>
+        <p>
+          If you believe you know exactly what you are doing, you can take these rules as suggestions. Don’t let them stop you from making a unique and interesting mission. Should you happen to have questions about the quality of your mission, the suitability of its rewards, or any other concerns, please refer to the  <a
+            class="text-blue-800 dark:text-blue-300 underline"
+            href="https://discord.gg/cZf4U5rmPV"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Discord"
+          >
+            Discord
+          </a> for advice. Even if you think your mission is good, it is better if you go have it reviewed there before submitting it.
+        </p>
+      </div>
+    </Modal>
   </Modal>
 </template>
 
@@ -163,6 +204,8 @@ const errorMessage = ref('')
 const buttonActive = ref(true)
 const temporary = ref(false)
 
+const showRules = ref(false)
+
 const { allWorldNames } = useWorlds()
 const { userNickname } = useSaves()
 
@@ -182,7 +225,7 @@ const schema = toFormValidator(
     }).array(),
     reward: zod.string().min(1, 'Reward should not be empty').max(256, 'Max 256 characters').or(zod.number().min(0, 'Min 0 credits').max(20000, 'Max 20000 credits')),
     rewardType: zod.string().min(1, 'Reward type is required'),
-    image: zod.string().regex(/[^ \!@\$\^&\(\)\+\=]+(\.png|\.jpeg|\.gif|\.jpg|\.webp)$/, { message: 'Must be a valid image URL in a jpeg/jpg/png/gif/webp format.' }).max(256, { message: 'Maximum length is 256 chars' }).optional().or(zod.literal('')),
+    image: zod.string().regex(/[^ \!@\$\^&\(\)\+\=]+(\.png|\.jpeg|\.gif|\.jpg|\.webp)$/, { message: 'Must be a valid image URL in a jpeg/jpg/png/gif/webp format.' }).max(256, { message: 'Maximum length is 256 chars' }),
     lewd: zod.boolean(),
     desc: zod.string().max(5000, 'Max length is 5000 chars').min(1, 'Description is required'),
   }),
@@ -194,7 +237,7 @@ const { errors, handleSubmit } = useForm({
     title: props.mission?.title || '',
     author: props.mission?.author ? props.mission.author : (userNickname.value ? userNickname.value : ''),
     source: props.mission?.source || '',
-    budget: props.mission?.budget || 0,
+    budget: props.mission?.budget || '',
     desc: props.mission?.desc || '',
     loca: props.mission?.loca || '',
     scope: props.mission?.scope || 'Standard',

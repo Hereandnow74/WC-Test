@@ -56,6 +56,8 @@ const chances = [
   0.00163,
   0.000757,
   0.00009,
+  0.00002,
+  0.00001,
 ]
 
 const isRolling = ref(false)

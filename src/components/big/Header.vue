@@ -7,7 +7,7 @@
       class="sm:hidden cursor-pointer hover:text-green-500 absolute left-1 top-0 z-30 "
       @click="() => showSideMenu = !showSideMenu"
     >
-      <ci:hamburger class="w-6 h-6" :class="{'shake delay-75': showIntro}" />
+      <ci:hamburger class="w-8 h-8" :class="{'shake delay-75': showIntro}" />
     </div>
   </nav>
 </template>
