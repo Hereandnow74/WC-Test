@@ -62,7 +62,7 @@ const props = defineProps({
 
 const options = {
   findAllMatches: true,
-  threshold: 0.1,
+  threshold: 0.2,
 }
 const fuse = new Fuse(props.list, options)
 const listEl = ref<HTMLElement|null>(null)
@@ -86,6 +86,7 @@ watch(searchResult, () => {
       trigger: 'manual',
       arrow: false,
       interactive: true,
+      placement: 'bottom-start',
     })[0]
     list.show()
   }

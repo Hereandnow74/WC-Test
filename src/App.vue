@@ -9,7 +9,7 @@
       <router-view class="min-h-0 w-full flex flex-col items-center overflow-y-auto overflow-x-hidden scrollbar" :class="showSideMenu ? 'sm:pl-10' : 'sm:pl-36'" />
       <component :is="Smartphone" v-if="buildLayout" class="w-[450px] bg-gray-800 pt-2 max-h-full min-h-0" />
     </div>
-    <SideApps />
+    <!-- <SideApps /> -->
     <Events />
     <component :is="Footer" v-if="!buildLayout" class="z-20" />
     <Search />

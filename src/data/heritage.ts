@@ -4,8 +4,9 @@ import { Heritage } from 'global'
 export const heritages: Heritage[] = []
 
 export const desc = `
-<p>The root choices in this section are mutually exclusive. You don’t have to pick one, but you may not pick more than one without the Ancestral Diversity perk. If you purchase a Heritage Root after chargen, you must first activate it in-character before it will take effect. If your Origin has a matching archetype to a Heritage, you may subtract the list price for their effective tier after step 1a from the Heritage’s price, carrying the remainder forward to later perks in the Heritage’s tree until you run out. Imaginary Tier characters are valued according to the exchange rate of their IMG value. This discount is also subject to the 80% cap. Like all company-supplied powers, the powers granted by these perks cannot be nullified, copied, or stolen.</p>
-<p>Heritages modify a contractor’s tier rating at step 2. Not all Heritage perks have a noticeable effect on a contractor’s tier, or would lift their tier to below what it already is. See the specific perks for details. If you spend IMG on any Heritage’s capstone perk, you will become a TX yourself.</p>
+<p>The root choices in this section are mutually exclusive. You don’t have to pick one, but you may not pick more than one without the Ancestral Diversity perk. If you purchase a Heritage Root after chargen, you must first activate it in-character before it will take effect. If your Origin has a matching archetype to a Heritage, you may subtract the list price for their effective tier after step 1a from the Heritage’s price, carrying the remainder forward to later perks in the Heritage’s tree until you run out. Drop-ins and Walk-ins who did not take Power Swap will not benefit from this discount, as they pay nothing to be themselves. Imaginary Tier characters are valued according to the exchange rate of their IMG value. This discount is also subject to the 80% cap. Like all company-supplied powers, the powers granted by these perks cannot be nullified, copied, or stolen.</p>
+<p>Heritages modify a contractor’s tier rating at step 1b. Not all Heritage perks have a noticeable effect on a contractor’s tier, or would lift their tier to below what it already is. See the specific perks for details. If you spend IMG on any Heritage’s capstone perk, you will become a TX yourself.
+</p>
 `
 
 heritages.push({
@@ -13,12 +14,12 @@ heritages.push({
   title: 'Ancestral Diversity',
   category: 'Heritage',
   image: 'https://i.ibb.co/Hqzvfds/Ancestral-Diversity.jpg',
-  cost: 0,
-  costT: 1,
+  cost: 1000,
   tree: 'None',
   multiple: true,
   max: 12,
-  desc: 'You may now purchase the perks in a second Heritage tree. You must still spend the credits as normal. This perk may be purchased multiple times. The price of this perk will increase by 1 IMG for each Heritage tree you’ve opened, by any means.',
+  desc: 'You may now purchase the perks in a second Heritage tree. You must still spend the credits as normal. This perk may be purchased multiple times, once for each Heritage capstone perk you own. Each new heritage after the first, whether opened by this perk or other means, will raise the price of repurchasing this perk by 1000 credits.',
+  whitelist: ['Ancestral Diversity Intensity'],
 })
 
 heritages.push({
@@ -37,7 +38,7 @@ heritages.push({
   },
   desc: `
 <p>You have a dragon’s blood. In addition to your basic humanoid form, you can transform into a bipedal dragonoid. (If you lack a humanoid form, one will be provided for you.) This form is roughly 3 m tall, with a bestial head, clawed hands and feet, and separate wings, and maximizes your improved strength and protection at that size without sacrificing any finesse or maneuverability. Its color scheme and aesthetic reflects your elemental affinity, which you must also choose.</p>
-<p>Take Body Tune-Up and Everlasting, Athletic, Martial, and Wild Talents, and two copies each of Body Defense and Wild Defense for free. This perk immediately raises a contractor’s effective tier at step 2 to 6.
+<p>Take Body Tune-Up and Everlasting, Athletic, Martial, and Wild Talents, and two copies each of Body Defense and Wild Defense for free. This perk immediately raises a contractor’s effective tier at step 1b to 6.
 </p>
 <p>Available "elements" include the classical western set (Earth, Fire, Wind/Air, Water, Aether), the classical eastern set (Metal, Wood, Void), chemical elements (Carbon, Mercury, Plutonium…), and those found in modern fantasy (Light, Darkness, Ice, Lightning, Poison…). This element will affect your dragon armor’s design and loadout, including the breath weapon that all dragons have. If you have a Shroud that matches your dragon element, the two bonuses will stack. This affinity is fixed without additional purchases.</p> `,
 })
@@ -59,7 +60,7 @@ heritages.push({
   whitelist: ['Dragon Heart'],
   desc: `
 <p>Dragonhood is fully a part of you. You now have a second alt-form, a full-sized quadruped that measures 10 m tall at the shoulder (around 25 m from the nose to the base of the tail). It offers even more physical power than the first form, with a massive buff to your chosen affinity and all the other supernatural abilities you've acquired and trained.</p>
-<p>Take Soul Talent and two copies of Environmental Defense for free. This perk immediately raises a contractor’s effective tier at step 2 to 7.</p>
+<p>Take Soul Talent and two copies of Environmental Defense for free. This perk immediately raises a contractor’s effective tier at step 1b to 7.</p>
 <p>If you flare your power, you’ll trigger a fear reflex in those nearby who can sense it. This will happen automatically whenever you defeat an opponent yourself, or manually for a short time. Some individuals may have… different… reactions to your unleashed aura.</p>
 <p>The sizes of your two dragon forms are not set in stone: the more ki, psi, or magic power you have, the larger you can make them. This has no upper limit, but still requires significant time investments, longer than any mortal lifespan. Your dragonoid form can become large enough to wrestle Tengen Toppa Gurren Lagann on an equal footing, and your dragon form can eventually swallow galaxies whole, but it’ll take you billions of years to get there. Before you think of using time magic to accelerate that process, first consider that more people would’ve done it if it was that easy.</p>
 <p>When you buy this perk, you get one chance to change your dragon element; use it or lose it. In addition to the mundane choices offered by Dragon Heart, conceptual elements are now available. Literally anything can be a conceptual element, provided you maintain a consistent theme, whether that’s Love, Time, Imagination, a season, Surprise, Heavy Metal, or even Infinity. The more esoteric and exploitable your chosen element, the more time you’ll need to develop and master its full potential. This time starts at tens of years for the basics and can stretch into the millions of years for the truly exotic ideas.</p> `,
@@ -78,7 +79,7 @@ heritages.push({
   },
   whitelist: ['Dragon Scale'],
   desc: `
-<p>You are a dragon. Dragons are power. Ladies love power. Thus, ladies - rather, anyone compatible with your orientation - love you. Your supernatural aura now tells ki- and magically-sensitive waifus that there's only one person they should be with to have the strongest offspring: you. Take two copies each of Stress Defense and Destiny Defense, and one copy of Mind Defense, for free. Targets of Tiers 1-3 are immune to your aura. For Tier 4 and above, your aura’s effects on uncaptured targets scale with sustained proximity (closer is better), your physical exertion (more is better), ventilation (less is better), and, most importantly, the waifu’s power as measured by her effective tier rating after step 4. Purchased and captured subjects are used to your aura and can ignore its passive effects without effort.</p>
+<p>You are a dragon. Dragons are power. Ladies love power. Thus, ladies - rather, anyone compatible with your orientation - love you. Your supernatural aura now tells ki- and magically-sensitive waifus that there's only one person they should be with to have the strongest offspring: you. Take two copies each of Stress Defense and Destiny Defense, and one copy of Mind Defense, for free. Targets of Tiers 1-3 are immune to your aura. For Tier 4 and above, your aura’s effects on uncaptured targets scale with sustained proximity (closer is better), your physical exertion (more is better), ventilation (less is better), and, most importantly, the waifu’s power as measured by her effective tier rating after step 3. Purchased and captured subjects are used to your aura and can ignore its passive effects without effort.</p>
 <p>Further conditional modifiers are available for your waifus’ effective tier rating for the purpose of this lure’s compulsion. This “Aura Tier” (for clarity) does not affect the targets’ actual abilities and does not obey the standard tier cap. Characters with serpentine and feline traits get one point added to their Aura Tier; full serpents in humanoid form, actual cat kemonomimi and hybrids, and characters with draconic traits get two points; full dragons (that are sapient) instead get three. Waifus who share a theme with your draconic element get one.  Flaring your aura adds +1 to the Aura Tier of all waifus in the local universe for the duration, overriding the basic fear response. Exposure to any of your other lures will add one Aura Tier each to the affected targets for the following week (168 hours); additional exposure to the same lure, including expansions for that lure, will only reset this timer.</p>
 <p>When a target is exposed to your aura for long enough, they will be overcome by lust for you and seek your location like a horny missile. Kidnapping attempts by powerful waifus that this lure turned into temporary yanderes are not unknown, but you should be able to handle it and turn the tables. You are a dragon, after all.</p>
 <p>Beings who are not compatible with your orientation can also sense your aura. If you have Zenryoku Zenkai, they will instead see you as a rival or threat, depending on your relative power. Beings who are sufficiently weaker than you will cower and flee. Beings of roughly equal power will feel themselves pulled in to attack you and your subjects, rationalizing your aura’s effect on their thoughts all the way. Beings who are sufficiently stronger than you will dismiss you, as long as you don’t provoke them or close the gap. This functions identically to the aura’s pull on waifus.</p>
@@ -186,7 +187,7 @@ heritages.push({
     defensePerks: [{ title: 'Fatality Defense', cost: 0, count: 2 }, { title: 'Corruption Defense', cost: 0, count: 1 }],
   },
   whitelist: ['Dragon Scale'],
-  desc: 'You may select a second dragon element. If you switched to a conceptual element with Dragon Scale, you may choose your old element or something new. Your training with one element will not usually carry over to the other, unless your level of understanding allows you to harmonize them as one. This perk also adds +1 effective tier to all waifus in your local universe for the purpose of Dragon Aura and immediately raises a contractor’s effective tier at step 2 to 8. Additionally, take two copies of Fatality Defense and one copy of Corruption Defense for free.',
+  desc: 'You may select a second dragon element. If you switched to a conceptual element with Dragon Scale, you may choose your old element or something new. Your training with one element will not usually carry over to the other, unless your level of understanding allows you to harmonize them as one. This perk also adds +1 effective tier to all waifus in your local universe for the purpose of Dragon Aura and immediately raises a contractor’s effective tier at step 1b to 8. Additionally, take two copies of Fatality Defense and one copy of Corruption Defense for free.',
 })
 
 heritages.push({
@@ -200,10 +201,262 @@ heritages.push({
   anything: 'Element',
   cost: 0,
   costT: 1,
-  whitelist: ['Double Dragon', 'Dragon Blood'],
+  whitelist: ['Double Dragon', 'Dragon Thrall', 'Dragon Aura'],
   desc: 'You may select a third dragon element. Your ability to master each of your elements is vastly accelerated: you can achieve the same results in only one- thousandth of the total time. All waifus in your local universe gain another effective tier for the purpose of Dragon Aura. ',
 })
 
+// Pirate
+
+heritages.push({
+  uid: 's4dWa',
+  title: 'Under Jolly Roger',
+  image: '',
+  tree: 'Pirate',
+  freebies: {
+    talentPerks: [{ title: 'Athletic Talent', cost: 0, count: 1 }, { title: 'Martial Talent', cost: 0, count: 1 }, { title: 'Performance Talent', cost: 0, count: 1 }, { title: 'Covert Talent', cost: 0, count: 1 }],
+  },
+  category: 'Heritage',
+  type: 'Root',
+  cost: 60,
+  additionalDesc: `<h3 class="text-lg font-semibold text-center">Beyond Swashbuckling</h3>
+  This heritage is not limited to the aesthetics of Golden Age piracy. Many other outlaw styles are viable, including seedy space gangster, Robin Hood’s Merry Men, Vikings, La Cosa Nostra, leather and spikes apocalypse cult, and free sex anarchist commune. “Booty” can include any valuable goods, including precious metals and jewelry, spices and narcotics, alien contraband, or sapient slaves.
+  `,
+  desc: `The Black Flag drapes from your shoulders and the thirst for plunder burns in your veins. You gain just a bit of the wild luck of such a rogue, which manifests most when you are at your most daring. The more flamboyant, dramatically, over the top, ridiculously, and/or generally dynamically you perform an action in the presence of non-retinue members, the better you perform the action.
+  <p>Take Athletic, Martial, Performance, and Covert Talents for free. This perk immediately raises a contractor’s effective tier at step 1b to 4.</p>
+  <p>A Pirate isn’t a Cap’n without their ship. (In the case of broader ‘seas’ like dunes of sand or the vacuum of space, any crewed vehicle will do.) Any purchased, captured, or claimed Catch-A-Ride that you have marked as Brigand, Pirate, or Outlaw vehicle is subject to Company Protections like your Company Smart Device, so long as it retains its markings and is not currently boarded by hostile forces. It may be summoned to you, within any environment it could normally operate in. Finally, appropriately marked Catch-A-Rides may be remote controlled by the Contractor.</p>
+  `,
+})
+heritages.push({
+  uid: 's4dWb',
+  title: 'Bling, Booty, and Chests',
+  image: '',
+  tree: 'Pirate',
+  category: 'Heritage',
+  type: 'Party',
+  cost: 60,
+  whitelist: ['Under Jolly Roger', 'Pocket Space'],
+  additionalDesc: `<h3 class="text-lg font-semibold text-center">Too Much of a Good Thing?</h3>
+  Even at extreme values, growth induced by this perk will never overly encumber your crew. It may serve as an “opponent” for the purposes of Martial, Athletic, or Covert Talents, while the decks and internals of your ships and other company spaces will automatically grow and shrink to accommodate your crew’s proportions. Corridors will always be wide enough for two crew members to walk side by side, while doors will always be just large enough for one crew member to pass through.
+  `,
+  desc: `
+  <p>Your crew thirsts for booty. You and your crew gain an instinctive ability to sense and track down booty and those who have it hidden away. Your smart device now has a Booty Tracker app. It will automatically inventory the value of all owned booty, by storage location and type. The grand total of all booty is also visible, as is, for each ship, the average share of booty aboard that ship per crew member. Crew members who are also subjects will also gain access to a shared booty space, separate from your personal pocket. Its entrances may be intuitively accessed from lower orifices and areas of sufficient cleavage. The booty space has no hard limit on its contents.</p>
+  <p>Instead, by designating Shares of plundered booty to each crew member, the total value of all goods currently stored in the booty space, or as cargo aboard your ships and in company-provided spaces, will be represented with increasingly grandiose changes along a set theme. This theme can take a number of forms depending on the Contractor or individual's preferences, but common ones include the manifestation of expensive jewelry, clothing becoming increasingly opulent, gilded piercings, intricate body art, and literal 'asset' expansion such as the breasts, thighs, and ass of women or the torso, muscles, and genitals of men.</p>
+  <p>The higher the value of total assets, the more intense these effects become. At the highest levels, after an extremely successful heist or trail of piracy, a crew member who is also your subject may become:
+  <ul class="list-inside list-disc">
+    <li>fully decked in expensive silks,</li>
+    <li>Drastically altered in skin and hair colors,</li>
+    <li>Tattooed from head-to-toe,</li>
+    <li>Stacked to put an ecchi-character to shame,</li>
+    <li>Or bedecked in enough gold to make King Midas drool with envy.</li>
+  </ul>
+  Through the Booty Tracker app, you may set caps on any or all of these developments. However, as the value of booty per crew member continues to rise beyond the caps, transformational pressure will continue to build.
+  </p>
+  <p>A cap’n who doesn’t allow the crew to spend their hard-earned loot will see additional booty, beyond the set caps, instead manifest as first discontent and then outright mutinous attitudes. Discontentment may also arise from failure as a pirate: having too little booty for your crew size and the length of your current expedition. Your designated officers will not mutiny, but the number of officers per ship is limited by ship class and size.</p>
+  <p>When your ship next enters port, if you have mutinous crew and do not formally end the expedition and then distribute the booty among your crew, some of your crew may desert. Crew who are in your retinue will not leave permanently, but instead live independently until their mood improves and they drift back to rejoin your crew.</p>
+  <p>As an alternative to keeping sufficient booty, ending an expedition, or weathering desertion, you may instead correct 💢💢💢 the mutineers’ behavior. This can occur by any means: mundane, sexual, with the use of third-party or company methods, etc. Corrected 💢💢💢 crew are more effective in their roles than mutinous and even satisfied crew, but this status will only last for two weeks (336 hours). If the base conditions for mutiny are not resolved in that time, the mutineers will relapse and require further correction 💢💢💢.</p>
+  `,
+})
+heritages.push({
+  uid: 's4dWc',
+  title: 'Pirate Armada',
+  image: '',
+  tree: 'Pirate',
+  freebies: {
+    talentPerks: [{ title: 'Engineering Talent', cost: 0, count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'All', cost: 0 }], count: 1 }],
+  },
+  category: 'Heritage',
+  type: 'Party',
+  cost: 60,
+  whitelist: ['Under Jolly Roger'],
+  desc: `
+  <p>You may now designate a crew member to be Cap’ns’ of any Catch-A-Ride that you have marked as Brigand, Pirate, or Outlaw vehicle. They now gain the abilities you have, regarding their ride per Under Jolly Roger, such as the designation of Shares for their crew, as well as the control and summoning of the vehicle. Your sub-Cap’ns will not mutiny, nor will their officers, and can establish their own caps and aesthetics for their crews.</p>
+  <p>Finally, take Engineering Talent for free, plus Talent Sharing for all basic Talents granted by this Heritage.</p>
+  `,
+})
+heritages.push({
+  uid: 's4dWd',
+  title: 'And a Bottle of Rum',
+  image: '',
+  tree: 'Pirate',
+  freebies: {
+    defensePerks: [{ title: 'Stress Defense', cost: 0, count: 2 }, { title: 'Addiction Defense', cost: 0, count: 2 }],
+  },
+  category: 'Heritage',
+  type: 'Party',
+  cost: 50,
+  whitelist: ['Under Jolly Roger'],
+  desc: `
+  <p>What’s a pirate without a little rum and spice? You can now operate at full capability while under the effects of any intoxicants. Even while crossfaded to oblivion and back, you can fight, fuck, and finangle just as well as you can while stone cold sober. Additionally, alcohol now meets every dietary and health need of your crew. This includes things such as sleep. If someone ingests the body fluids of a crew member, they may experience any or all of the same intoxicant effects as that crew member. Take two levels each of Stress and Addiction Defenses for free.</p>
+  <p>Alcohol, drugs, intoxicants, and other mind altering substances created or possessed by your crew now have healing properties and may act as an aphrodisiac. Additionally during the creation process you are able to store objects (such as ships, loot, mana, spells, energy etc) into them such be released after or during use.</p>
+  `,
+})
+heritages.push({
+  uid: 's4dWe',
+  title: 'Irresistible Booty',
+  image: '',
+  tree: 'Pirate',
+  freebies: {
+    defensePerks: [{ title: 'Trace Defense', cost: 0, count: 1 }],
+  },
+  category: 'Heritage',
+  type: 'Lure',
+  cost: 70,
+  whitelist: ['Bling, Booty, and Chests'],
+  desc: `
+  <p>Spending suits you. Shows of wealth, money, and casual spending using booty directly (or from money acquired from selling booty) make you more attractive to waifus that become aware of it. This effect increases with particularly ostentatious and over the top expenditures or objects, against targets that are motivated by money in some way, and to the direct recipient of booty exchanged for goods or services.</p>
+  <p>Any Booty that you or your Retinue do not freely and willingly spend or give away remains connected to you and wishes to return, imparting those wishes on those that hold it. The greater the concentration, the greater the connection. The thieves are compelled to seek you out again, and the more booty they acquire the stronger the compulsion. Additionally, take one copy of Trace Defense for free.</p>
+  <p>If you have Tortuga, any booty you store in a Safe Haven automatically generates phantom copies of that treasure in an appropriately hidden location. Gold and jewels might be hidden in a chest buried at a beach, particularly valuable drugs might be hidden under the floorboards of an out of the way space, a harem of concubines might create phantom “convents,” and so on. If this phantom treasure is discovered and taken, the taken material will become real - with the original booty disappearing from your Safe Haven - and act as ‘stolen’ treasure for the purposes of this perk.</p>
+  `,
+})
+heritages.push({
+  uid: 's4dWf',
+  title: 'Release the Kraken',
+  image: '',
+  tree: 'Pirate',
+  freebies: {
+    defensePerks: [{ title: 'Information Defense', cost: 0, count: 1 }, { title: 'Creature Defense', cost: 0, count: 1 }],
+  },
+  category: 'Heritage',
+  type: 'Self, Party, Lure',
+  cost: 100,
+  whitelist: ['Bling, Booty, and Chests', 'Pirate Armada'],
+  desc: `
+  <p>There’s always a bigger fish. You and your crew may, with some difficulty depending on the success of your hoarding, stuff any exaggerated proportions (no matter the source) into clothing that should by all rights be too small for it. The appearance of nearly bursting out is optional and will allow a Love Spot on that site to function even through the covering, albeit at a lesser level. Releasing these ‘assets’ significantly amplifies the effects of any Lures on all valid targets that witness it for the next hour.</p>
+  <p>Take one copy each of Information Defense and Creature Defense for free. This perk immediately raises a contractor’s effective tier at step 1b to 6.</p>
+  <p>Additionally, you may call upon and summon a kaiju-scale creature once every 24 hours. You do not have specific control of the appearance, type, or actions of the creature, though you may set rough guidelines. Additionally, if you defeat this monster or any other monster larger than your current Catch-A-Ride, you can integrate it into said Catch-A-Ride. A vehicle may only have one monster integrated into it at a time. This affects both the vehicle’s aesthetics and the aesthetics and morphology of its crew, as well as providing minor abilities based on the monster. A sandworm might allow a sailing ship to cross desert sands as naturally as the sea. Individuals that are crew of multiple infused ships may have multiple traits. Once per 24 hours, an integrated monster may be re-released into the world for 1 hour, much like summoning a random kaiju-scale creature. However, while released, the crew loses any abilities related to that monster.</p>
+  `,
+})
+heritages.push({
+  uid: 's4dWh',
+  title: 'Letter of Marque',
+  image: '',
+  tree: 'Pirate',
+  freebies: {
+    talentPerks: [{ title: 'Blessed Talent', cost: 0, count: 1 }],
+    defensePerks: [{ title: 'Mind Defense', cost: 0, count: 1 }, { title: 'Information Defense', cost: 0, count: 1 }],
+  },
+  category: 'Heritage',
+  type: 'Lure',
+  cost: 100,
+  whitelist: ['Pirate Armada', 'And a Bottle of Rum'],
+  desc: `
+  <p>You have a natural charm that draws in economic, religious, military, and political leaders as well as the upper echelons of society and their relatives. They will find themselves drawn to you, either for your power or uses in their plans. This effect is primarily based on interaction, and is stronger the more direct the interaction and the higher the status and power of the target. Take Blessed Talent and one copy each of Mind Defense and Information Defense for free.</p>
+  <p>You additionally gain the ability to form contracts with rulers, commonly known as Letters of Marque. These letters expect fealty to the ruler commonly as a mercenary, additionally they come with requirements. You will often be required to attack their enemies and to not attack the ruler’s faction. Once you obtain a letter of marque, those who work for, are part of, or merely identify as part of that ruler’s faction will find ways to justify not attacking or prosecuting you. They are more likely to leave you be, as long as you follow through with the requirements of the contract. The more loyal they are to the faction, the stronger the compulsion.</p>
+  `,
+})
+heritages.push({
+  uid: 's4dWg',
+  title: 'Tortuga',
+  image: '',
+  tree: 'Pirate',
+  freebies: {
+    talentPerks: [{ title: 'Administrative Talent', cost: 0, count: 1 }, { title: 'Land Talent', cost: 0, count: 1 }],
+  },
+  category: 'Heritage',
+  type: 'Self, Party',
+  cost: 50,
+  whitelist: ['And a Bottle of Rum', 'Meta Shift'],
+  desc: `
+  <p>You bring the lawlessness with you. Your crew's actions and expenditures inspire others across the worlds you are in towards depravity. The more successful your raids, the larger your fleets become, the more booty you acquire and spend, the more others seek to emulate your success, and pushing the world towards a form of lawlessness, depravity, or degeneracy of your choosing, even if it is antithetical to the world’s origin.</p>
+  <p>Take Administrative and Land Talents for free. This perk immediately raises a contractor’s effective tier at step 1b to 5.</p>
+  <p>Purses, blouses, and morals all loosen over time as you spend your (likely) ill-gotten gains in an area. While localized to establishments and areas you and your crew spend money, the effect does spread over time. If you spend all of your booty in a single tavern, by the end of the night the owner would let your crew run a train on his daughter, but if your crew had a night on the town, they might just overlook sexual harassment. This causes a gradual change to the area to make it more accommodating to pirates and outlaws, some common effects are to have chests instead of vaults, coins may go back into fashion, and local fashion trends may become closer to your particular outlaw style.</p>
+  <p>Once a polity has been sufficiently affected, such that a wanted criminal may walk around and operate openly without concern about being accosted by the law, it is considered a “Safe Haven”. You may also directly create a Safe Haven if you have political control over an area, though this reduces the effects of spending your money adjusting morals. </p>
+  <p>Once you have a Safe Haven, you may store excess booty within or near the Safe Haven. Booty stored in this fashion does not transform you or your crew via Bling, Booty, and Chests. Additionally, deserters who live in a Safe Haven will recover their mood and rejoin your active crew much faster.</p>
+  `,
+})
+heritages.push({
+  uid: 's4dWj',
+  title: '“The Day You Almost Caught-”',
+  image: '',
+  tree: 'Pirate',
+  freebies: {
+    talentPerks: [{ title: 'Soul Talent', cost: 0, count: 1 }],
+    defensePerks: [{ title: 'Paradox Defense', cost: 0, count: 1 }, { title: 'Destiny Defense', cost: 0, count: 2 }],
+  },
+  category: 'Heritage',
+  type: 'Party',
+  cost: 190,
+  whitelist: ['Release the Kraken', 'Letter of Marque'],
+  desc: `
+  <p>You never know when a pirate or outlaw will show up - or how they’ll get away. When you, your Catch-A-Ride, or an accompanying fleet are meaningfully obscured and unobserved, you are able to use that unobserved uncertainty to teleport. You or your pursuer have no idea where you are, so you could be - and are - anywhere else. Take one copy of Paradox Defense and two copies of Destiny Defense for free.</p>
+  <p>Practical use of this perk varies wildly by terrain. In a naval context, this can express itself as a whirlpool or fogbank. With airships, it might be entering a tornado or stormcloud. For a land raider, this might be a sandstorm or blizzard that reduces visibility to zero. These conditions need not be natural. A weather manipulator or large cache of smoke bombs will work just as well as an actual storm.</p>
+  <p>In a pinch, you can even employ the Roadrunner Escape Technique: using a painting of a road or passage as a real road or passage, while your pursuer slams into a wall, through the painting canvas and off the cliff it was hiding, etc. However, this technique can only be used once per week and the painting must be prepared in advance.</p>
+  <p>Regardless of means, your destination will be safe from further pursuit and the same kind of terrain as where you escaped from, but otherwise random. Safety from local problems at the destination is not guaranteed. If you have any Safe Havens, you may instead guarantee your arrival at one of those locations.</p>
+  <p>Using this perk while in any purchased or claimed Catch-A-Ride's that you have marked as Pirate, Outlaw, or Brigand vehicle, you may use this function to travel between worlds, even new ones. However, traveling to a new world is random in its selection.</p>
+  `,
+})
+heritages.push({
+  uid: 's4dWk',
+  title: 'The Dread Pirate Roberts',
+  image: '',
+  tree: 'Pirate',
+  freebies: {
+    talentPerks: [{ title: 'Communication Talent', cost: 0, count: 1 }],
+    defensePerks: [{ title: 'Fatality Defense', cost: 0, count: 1 }],
+  },
+  category: 'Heritage',
+  type: 'Self, Lure',
+  cost: 150,
+  whitelist: ['Letter of Marque', 'Tortuga'],
+  desc: `
+  <p>The ship always needs a Cap’n. Upon being slain, provided you have a crew member who has agreed to carry on your legacy or you were killed with active hostile intent, your legacy, spirit, memories, and self will be passed along. This will preferentially target your designated heir, but you can instead target your killer. If it’s your designated heir, you functionally Substitute into the individual. With a designated heir, this will happen over the course of 24 hours, whereas time to full possession for hostile actors varies, generally taking 168+ hours. If the target is killed prior to your full control, the effect does not activate again.</p>
+  <p>Take Communication Talent and one copy of Fatality Defense for free. This perk immediately raises a contractor’s effective tier at step 1b to 6.</p>
+  <p>Additionally, your deeds have a way of carving themselves into legend. Even when there would be no survivors, rumors and dark whispers will spread of your savage deeds, each more terrible than the last. Those who hear tales of your exploits may debase themselves in whatever way they believe will have you spare them, and may turn weak in the knees for reasons that have nothing to do with terror. The more immediate your presence and the threat looming over a target, the greater the effect.</p>
+  `,
+})
+heritages.push({
+  uid: 's4dWl',
+  title: 'Part of the Ship, Part of the Crew',
+  image: '',
+  tree: 'Pirate',
+  freebies: {
+    defensePerks: [{ title: 'Corruption Defense', cost: 0, count: 1 }],
+  },
+  category: 'Heritage',
+  type: 'Other Control',
+  cost: 70,
+  whitelist: ['Irresistible Booty', 'Tortuga'],
+  desc: `
+  <p>Everyone has their price: press-ganging, shanghaiing, and contracts are all just ways of finding it. If an individual is meaningfully overcome and taken onto your ship, they have the beginnings of a demi-tattoo appear on them and are temporarily considered part of that ship’s crew. Until the ship next enters port, the longer they spend contributing to the ship’s functioning, the more appealing they will find the idea of remaining aboard your ship and joining the crew on a permanent basis. This effect caps after roughly two weeks (200 working hours).</p>
+  <p>Once your ship arrives in port, you may offer your captive or guest the chance to stay. If the captive has a strong will, emotional connections outside the ship, or a rigid, law-abiding personality, they have a higher chance of refusing the offer. All effects of this perk on the captive will then shatter and you have to start again from the beginning.</p>
+  <p>If, instead, the captive has a weak will, thirst for adventure, feelings of being chained by duty and obligations if they return home, or are currently feeling the effects of active Lures, they are more likely to accept the offer and join your crew, at which point they are instantly captured. Alternatively, formal contracts to act as a member of the crew of one of your ships, even by people who were not previously your captives, will also result in instant captures.</p>
+  <p>All crew members who are assigned roles on a ship will feel a strong compulsion to play that role. This includes both standard roles such as quartermaster, shipwright, chef, gunner, or navigator, and entirely fictional ones such as service maid, ship bedwarmer, sea witch, or prow ornament.</p>
+  <p>Additionally, a crew member may be assigned to become the spirit of a Catch-A-Ride. This acts like Third-Party Riggings and I’m on a Boat for the designated crew member.</p>
+  <p>Finally, take one copy of Corruption Defense for free.</p>
+  `,
+})
+heritages.push({
+  uid: 's4dWi',
+  title: 'Hoist the Colors',
+  image: '',
+  tree: 'Pirate',
+  category: 'Heritage',
+  type: 'Self',
+  cost: 0,
+  costT: 1,
+  whitelist: ['“The Day You Almost Caught-”', 'The Dread Pirate Roberts', 'Part of the Ship, Part of the Crew'],
+  desc: `
+  <div class="text-center"><i>
+  The king and his men stole the queen from her bed<br>
+  And bound her in her bones<br>
+  The seas be ours and by the powers<br>
+  Where we will, we'll roam<br>
+  Yo-ho, all together<br>
+  Hoist the colors high<br>
+  Heave ho, thieves and beggars<br>
+  Never shall we die<br>
+  </i></div>
+  <br>
+  <p>You and your crews gain a variety of benefits. All of your crews and ships may now use the dynamism effect from Under Jolly Roger, and it now works better with strategic-scale actions involving your Armada. Thieves or others affected by your Irresistible Booty will gradually be corrupted into degeneracy and piracy, as if living in Tortuga.</p>
+  <p>Mutiny buildup from overcapping on Bling, Booty, and Chests is three times more efficient, allowing your crew to remain content for longer. If or when that fails, corrected crew members will retain that status for three times longer.</p>
+  <p>Your integrated monster from Release the Kraken gains a second, much smaller, body that can act as a shoulder mascot for the ship’s captain. The integrated monster now benefits from Bifurcation, allowing the crew and ship to retain the monster’s traits even while the monster is actively summoned. If slain, integrated monsters will respawn during the next full moon, even without Warranty Plan.</p>
+  <p>Your pirate reputation will have a greater effect on your interactions with the locals. Similar to Dragon Aura and Zenryoku Zenkai, outlaws of lesser reputation will flock to your crews and seek to join, those of equal reputation will see you as a rival to defeat, and the law - at least, those organizations that active Letters of Marque don’t protect you from - will work ever-harder to crush you under its boot.</p>
+  <p>All of your subordinate Cap’ns are now always considered viable transfer targets for The Dread Pirate Roberts. When slain, you may choose which one to incarnate into, or just leave it to chance. Captives under the influence of Part of the Ship, Part of the Crew will reach the cap on the perk’s effect more quickly when they hear and participate in sea shanties.</p>
+  <p>Finally, the act of raising your black flag itself can turn the tide in your favor. When hoisted above a population center, the populace will descend into chaos and debauchery, free from all laws - whether natural, mortal, or divine. In battle, hostile forces who witness the raised flag will instead find their effective tiers reduced by 2 for the next hour, to a minimum of 1. This applies at step 5 and will only work once on each individual hostile per encounter. Those of strong will can resist this effect, lowering the debuff to -1.</p>
+  `,
+})
+
+// Transhuman
 heritages.push({
   uid: 'twP3B',
   title: 'First Augmentation',
@@ -304,7 +557,7 @@ heritages.push({
 <p>It’s not simply about upgrading your own capacities, it’s also about upgrading the support structures you interact with and rely on.</p>
 <p>You are now able to empower individuals with the power of your Heritage, utilizing the power of your knowledge and infrastructure. Though the specific method varies by Transhuman Type, you are now able to increase the power of your companions and slowly raise their effective tier. In all cases, your own personal tier increases the speed at which this strength is gained, and you may set filters to decide which of the applicable targets are affected. While resisting the effects can slow or even halt its progression, an individual that has gained an effective Tier from this perk will have the core of the Stamp appear somewhere upon their body, but the Capture will only be finalized if they actively embrace the source of power.</p>
 <p>Abilities and strengths granted by this perk will always follow the general thematics, stylings, and rough trend of the Contractors. In all cases, you may set the broad strokes of and proportions of abilities, alterations, and mutations caused by your conceptual infection.</p>
-<p>In addition to the methods unique to each Transhuman Type to enhance the masses, included is an ability to develop a process that applies your own First Augmentation type to others, and even provide modifications that are compatible with the individuals. The difficulty and time required varies based on the resources, technician skill, and related infrastructure available for the Transhuman Type. Most Company provided facilities allow the process to be completed within an hour, but more common times in-situ are over the course of several days. The further removed the process gets from you, the more likely deviations and errors are to occur.</p>
+<p>In addition to the methods unique to each Transhuman Type to enhance the masses, included is an ability to develop a process that applies your own First Augmentation type to others, and even provide modifications that are compatible with the individuals. The difficulty and time required varies based on the resources, technician skill, and related infrastructure available for the Transhuman Type. Most Company provided facilities allow the process to be completed within an hour, but more common times in-situ are over the course of several days. The further removed the process gets from you, the more likely deviations and errors are to occur. Contractors who lack the Ancestral Diversity intensity modifier are not valid targets of this feature.</p>
 <p>Take a refund for any Talent Sharing for Talents provided by the appropriate Transhuman Type. Take one copy of Wyldscape Defense for free.</p>
 `,
 })
@@ -325,7 +578,7 @@ heritages.push({
   types: {
     Biomorph: '<p><b>Biomorph</b>: Guy-what? Your material is psionically fueled adaptive biomass, able to take on any living form such as bone, bark, chitin, cellulose, muscle, neural tissue, mycelium, or organs freely. This material may become psionic or biological structures, and more may be grown given sufficient nutrients, material, and energy. Additional traits may now be gained via consumption of a living thing with the desired traits or via sexual contact. Biomorphs are aligned with both Primal and Jungle Shrouds.</p>',
     Cybermorph: '<p><b>Cybermorph</b>: Transformers in disguise! Your material is hyper adaptive Smart Matter, which is able to become any inorganic material given appropriate blueprints and scans. Any matter may be converted into this smart matter given sufficient time and energy, but this process is very energy and mass intensive. Additional traits may now be acquired via contact and a several second process to reconfigure the body part to integrate the desired technology. Cybermorphs are aligned with Cyber Shrouds.</p>',
-    Aethermorph: '<p><b>Aethermorph</b>: Shaza-who? Your material is Patterned Elemental Weave, essentially concentrated and manifested amounts of your Element. You will slowly generate more material over time, but may absorb existing instances of your Element in order to accelerate the process. Your body is capable of becoming entirely your Element, which may mean increased durability, intangibility, or other varying effects depending on your Element, such as making an opponent Love you upon being struck with an Element of Forbidden Love. Mystical artifacts and similar may be integrated into your metaphysical form via training or surgery in order to grant you their powers and capabilities. If you possess Tantric Arts: Arts of Sympathy, you are able to use these to permanently copy a trait from a target, this requires (Effective Tier of the desired trait, 1 by default) Resonance. By default, Aethermorph’s are aligned with Burial Shrouds, but other Shrouds may align with specific Elements and also generate material.</p>',
+    Aethermorph: '<p><b>Aethermorph</b>: Shaza-who? Your material is Patterned Elemental Weave, essentially concentrated and manifested amounts of your Element. You will slowly generate more material over time, but may absorb existing instances of your Element in order to accelerate the process. Your body is capable of becoming entirely your Element, which may mean increased durability, intangibility, or other varying effects depending on your Element, such as making an opponent Love you upon being struck with an Element of Forbidden Love. Mystical artifacts and similar may be integrated into your metaphysical form via training or surgery in order to grant you their powers and capabilities. If you possess Tantric Arts: Arts of Sympathy, you are able to use these to permanently copy a trait from a target, this requires (Effective Tier of the desired trait, 1 by default) Resonance. By default, Aethermorphs are aligned with Burial Shrouds, but other Shrouds may align with specific Elements and also generate material.</p>',
   },
   desc: `
 <p>Based on our continued studies of inventory hotswapping, shoggoths, and other amorphous entities we bring you a new breakthrough! Your form is no longer constrained entirely by such petty things as shape, volume, or being contiguous. Your Pocket Space is now functionally infinite, and may store material, modifications, and alternate forms appropriate to your Transhuman type within and via our Company trademarked Transhuman Materials (TMTM) able to ensure compatibility between modifications and swaps.</p>
@@ -390,7 +643,7 @@ heritages.push({
     Biomorph: `<p><b>Biomorph</b>: You have become a psionic existence capable of transferring to any biological or purely psionic entity whom you are able to make a psionic, telepathic, or direct neural connection to. You are able to project your mind and the origin point of your senses to anywhere within the range of your last body, or within range of a psionic network. 
     <p>If you possess Alterzelu Symbiote, you are explicitly able to jump to any individual in the hive(s) as desired and use the form of a larva to Possess a target.</p></p>`,
     Cybermorph: `<p><b>Cybermorph</b>: You have become a digital existence capable of transferring to any entity or object capable of running DOOM or a human-scale consciousness, provided you are able to make a wireless, hardline, or direct neural connection to them. You are able to move through digital networks. 
-    <p>If you possess Hypnosis App you are able to transfer your consciousness to any individual you are able to get to Hypnotic Depth 40+, and may use a Full Dive Set to Possess a target. If you possess Tempest Jewelry, you may transfer your mind into individual pieces via contact, and from there into their wearer.</p></p>`,
+    <p>If you possess Hypnosis App you are able to transfer your consciousness to any individual you are able to get to Hypnotic Depth 40+, and may use the cables from Assuming Direct Control to Possess a target. If you possess Tempest Jewelry, you may transfer your mind into individual pieces via contact, and from there into their wearer.</p></p>`,
     Aethermorph: `<p><b>Aethermorph</b>: You have become a mystical existence capable of transferring to any singular object or entity, moving intangibly through conceptual space and links. This is accomplished either via direct proximity, or via connections between people and goetia, or goetia and other conceptually linked goetia, the closer or more significant this connection the easier and faster it is to find and follow. There is no limit on how far you are able to move from your last body, but similar forms of projection may allow others to perceive or interact with your form as if it was physical. In addition to individuals, these minds may be anchored to any distinct object or related collection of objects you own, and you may exert a pseudo-telekinetic control over it regardless of your Element. Objects you possess are capable of movement when they otherwise wouldn’t be, such as a statue moving like a person. Finally, this disembodied form may interact directly with goetia as if you were both physical, your projected form having the strength and ability most closely associated in your mind with ‘yourself’.
     <p>If you possess Tantric Arts: Arts of Sympathy, you are able to use it to transfer your mind to a target upon completion of the ritual. By using an additional 2 Resonance in the Art of Binding over what would be required for a target to Possess them entirely.</p></p>`,
   },
@@ -419,7 +672,7 @@ heritages.push({
       defensePerks: [{ title: 'Information Defense', cost: 0, count: 1 }, { title: 'Possession Defense', cost: 0, count: 1 }, { title: 'Stress Defense', cost: 0, count: 1 }],
     },
     Aethermorph: {
-      defensePerks: [{ title: 'Information Defense', cost: 0, count: 1 }, { title: 'Soul Defense', cost: 0, count: 1 }],
+      defensePerks: [{ title: 'Information Defense', cost: 0, count: 1 }, { title: 'Drain Defense', cost: 0, count: 1 }],
     },
   },
   whitelist: ['Essence Upload', 'Pocket Apartment'],
@@ -440,7 +693,7 @@ heritages.push({
     Aethermorph: `<p><b>Aethermorph</b>: Your soul’s mystical compatibility and morphology has adapted to allow you to possess even fundamental concepts related to your Element, or a conceptually linked place or group.
     <p>Expanding out heavily, you can apply your Element through anything you’ve possessed and sense any nearby or particularly strong instances of your Element, but miss specific frequent or common instances the same way a single star doesn’t stand out for its particular twinkle in the night sky.</p>
     <p>Any physical deaths of your retinue or individuals non-destructively hosting your consciousness may instead send their minds and souls to your Pocket Apartment as a spiritual projection. They may not leave your Pocket Apartment until a new body is provided for them, such as via Dungeon: Spawning Room or Tantric Arts: Arts of Summoning.</p>
-    <p>Finally, take one copy of Soul Defense and Information Defense for free.</p>
+    <p>Finally, take one copy of Drain Defense and Information Defense for free.</p>
     </p> `,
   },
   desc: `
@@ -659,7 +912,7 @@ heritages.push({
   whitelist: ['Lurking On The Threshold'],
   desc: `
 <p>An Outsider speaks, and its acolytes tremble without fail before the weight of its words - and yet the horror of a revelation lies not in the contents of its unveiling but in the reminder that the veil was ever able to exist at all. Resolving this paradox requires accepting the power of the Real.</p>
-<p>While lesser beings have to warp their devotees into new configurations just to arm and empower those fragile servants, you bring enlightenment alone to those who sit and learn, and enlightenment is all they need: take a free purchase of Talent Sharing for free for every Talent you possess yourself. Furthermore, those who learn under your tutelage don’t even need to be a member of your retinue in order to enjoy the benefits of your Talent Sharing, and you are always able to teach yourself and others any secret, forbidden, or heretical lore of the world(s) you’re currently inhabiting, regardless of whether you actually know the lore in question. This also extends to lore surrounding your Elements and Omens, if you have them. Additionally, take one copy each of Mind Defense and Information Defense for free.</p>
+<p>While lesser beings have to warp their devotees into new configurations just to arm and empower those fragile servants, you bring enlightenment alone to those who sit and learn, and enlightenment is all they need: take a free purchase of Talent Sharing for every Talent you possess yourself. Furthermore, those who learn under your tutelage don’t even need to be a member of your retinue in order to enjoy the benefits of your Talent Sharing, and you are always able to teach yourself and others any secret, forbidden, or heretical lore of the world(s) you’re currently inhabiting, regardless of whether you actually know the lore in question. This also extends to lore surrounding your Elements and Omens, if you have them. Additionally, take one copy each of Mind Defense and Information Defense for free.</p>
 <p>However, your every instruction serves as an infallible reminder of the mouth which gives it. The more other beings learn from you, and the more important your teachings are to them, the more compelling you become, until you loom in their minds like a source of all truths.</p> `,
 })
 
@@ -715,12 +968,12 @@ heritages.push({
   cost: 145,
   freebies: {
     talentPerks: [{ title: 'Psychic Talent', cost: 0, count: 1 }],
-    defensePerks: [{ title: 'Soul Defense', cost: 0, count: 1 }, { title: 'Paradox Defense', cost: 0, count: 1 }],
+    defensePerks: [{ title: 'Drain Defense', cost: 0, count: 1 }, { title: 'Paradox Defense', cost: 0, count: 1 }],
   },
   whitelist: ['Sanity - Shattering Instruction', 'I Wear No Mask'],
   desc: `
 <p>The Other is a projection; the Real, an abstraction. To speak of the Outsider’s absolute existence is to speak of the ineffable, to gesture at shadows - and yet it moves all the same.</p>
-<p>Take Psychic Talent and one copy each of Soul Defense and Paradox Defense for free. All time others spend in telepathic or spiritual contact with you now counts, at your discretion, as time spent training under your own direct instruction. Moreover, whenever you show your true form, anyone who makes primary sensory contact with you - that is, anyone who sees or hears you, for humans - also makes telepathic contact with you.</p>
+<p>Take Psychic Talent and one copy each of Drain Defense and Paradox Defense for free. All time others spend in telepathic or spiritual contact with you now counts, at your discretion, as time spent training under your own direct instruction. Moreover, whenever you show your true form, anyone who makes primary sensory contact with you - that is, anyone who sees or hears you, for humans - also makes telepathic contact with you.</p>
 <p>Finally, your total union with the unknowable reveals to you all secrets. You may retroactively spend unused time in order to learn anything you are capable of teaching yourself with Sanity - Shattering Instruction, and you are incapable of being deceived: you recognize all lies, including lies of omission, see through all forms of illusion and disguise, and all of your senses operate through infallible claircognizance.</p> `,
 })
 

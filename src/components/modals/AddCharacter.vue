@@ -1,6 +1,6 @@
 <template>
-  <Modal label="Add New Character">
-    <div class="max-h-[90vh] flex relative max-w-screen-sm min-h-0">
+  <Modal label="Add New Character" :max-width="640">
+    <div class="max-h-[90vh] flex relative min-h-0">
       <img ref="testImage" class="absolute h-[1px] w-[1px]" :src="image" alt="" @load="imageLoaded">
       <div class="flex flex-col p-2 gap-2 min-h-0 overflow-y-auto scrollbar">
         <Note type="warning" title="Rules">
@@ -40,6 +40,15 @@
           No pornographic images please, ideally image should have only submitted character without any extras.
         </div>
         <Input v-model="image_nsfw" placeholder="NSFW Image URL" :error-message="errors.image_nsfw" />
+        <InputWithSearch
+          v-if="itsSWP"
+          v-model.trim="SWP"
+          idd="SWPtitle"
+          :list="allSWPTitles"
+          placeholder="Specific Waifu Perk title"
+          class="flex-grow"
+          :error-message="errors.SWP"
+        />
         <div class="flex gap-2 items-center">
           <span>Sex: </span>
           <label class="text-pink-500 dark:text-pink-300">Female<input v-model="sex" type="radio" name="gender" value="F" class="ml-2"></label>
@@ -61,16 +70,17 @@
         <div v-if="submitMessage" class="font-semibold">
           {{ submitMessage }}
         </div>
-        <div class="flex justify-between flex-wrap">
+        <div class="flex justify-between flex-wrap gap-y-2">
           <div class="flex gap-2">
             <Checkbox v-model="localSave" label="Local save" />
             <Checkbox v-model="serverSave" label="Propose to global" />
+            <Checkbox v-model="itsSWP" label="SWP Entry" title="If you don't know what it is, don't click it" />
             <Checkbox v-if="editMode" v-model="oldEntry" :label="`Keep old UID[${character.uid}]`" title="Keep UID so if there is a Waifu Perk for them, it will still work" />
           </div>
           <Button
             :disabled="!!submitMessage || !!processing"
             label="Add character"
-            class="self-center"
+            class="ml-auto"
             bg-color="bg-lime-600"
             @click="!!submitMessage || !!processing? null : addCharacter()"
           />
@@ -91,11 +101,12 @@
 import * as zod from 'zod'
 import { useForm, useField } from 'vee-validate'
 import { toFormValidator } from '@vee-validate/zod'
-import { difference, random } from 'lodash-es'
+import { difference, find, random } from 'lodash-es'
 import { useStore } from '~/store/store'
 import { proposeCompanion, toggleShowAddCharacter, userCharactersShown } from '~/logic'
 import { useWorlds, waifuTagsByTag, defTags } from '~/data/constants'
 import { useSaves } from '~/store/saves'
+import { waifuPerksObject } from '~/data/waifu_perks'
 
 const props = defineProps({
   editMode: {
@@ -116,6 +127,7 @@ const { userNickname } = useSaves()
 const localSave = ref(true)
 const serverSave = ref(false)
 const oldEntry = ref(false)
+const itsSWP = ref(false)
 const sex = ref(props?.character?.tags?.[0] || 'F')
 
 const tierError = ref('')
@@ -127,6 +139,8 @@ const showRules = ref(false)
 
 const { userCharacters, localUserCharacters } = useStore()
 const { allWorldNames, allSubs } = useWorlds()
+
+const allSWPTitles = computed(() => Object.values(waifuPerksObject).map(swp => `${swp.title} [${swp.from}]`))
 
 const zodObject = zod.object({
   name: zod.string().min(1, 'Character name is required').max(64, { message: 'Maximum length is 64 chars' }),
@@ -140,8 +154,9 @@ const zodObject = zod.object({
 
 const zodGlobal = zodObject.extend({ nickname: zod.string().min(1, 'Nickname is required').max(32, 'Max length of nickname is 32 symbols') })
 
-const schema = computed(() => serverSave.value ? toFormValidator(zodGlobal) : toFormValidator(zodObject))
-console.log(props.character)
+const zodSWP = zodGlobal.extend({ SWP: zod.string().min(1, 'SWP title is required').max(64, { message: 'Maximum length is 64 chars' }) })
+
+const schema = computed(() => serverSave.value ? (itsSWP.value ? toFormValidator(zodSWP) : toFormValidator(zodGlobal)) : toFormValidator(zodObject))
 
 const { errors, handleSubmit } = useForm({
   validationSchema: schema,
@@ -154,6 +169,7 @@ const { errors, handleSubmit } = useForm({
     image_nsfw: props.editMode ? props.character.image_nsfw || '' : '',
     tags: props.editMode ? props.character.tags || [] : [],
     nickname: userNickname.value ? userNickname.value : '',
+    SWP: props.editMode ? props.character.SWP || '' : '',
   },
 })
 
@@ -165,6 +181,7 @@ const { value: image } = useField<string>('image')
 const { value: image_nsfw } = useField<string>('image_nsfw')
 const { value: tags } = useField<string[]>('tags')
 const { value: nickname } = useField<string>('nickname')
+const { value: SWP } = useField<string>('SWP')
 
 const companion = computed(() => {
   return {
@@ -198,14 +215,20 @@ const addCharacter = handleSubmit((values) => {
 
   if (!values.tags.includes(sex.value))
     values.tags.push(sex.value)
-  values.tags = values.tags.map((x: string) => waifuTagsByTag[x] ? waifuTagsByTag[x].short : x)
+
+  values.tags = values.tags.map((x: keyof typeof waifuTagsByTag) => waifuTagsByTag[x] ? waifuTagsByTag[x].short : x)
   values.uid = props.editMode && oldEntry.value ? props.character.uid || random(10000000, 99999999) : random(10000000, 99999999)
+
   if (serverSave.value) {
     if (props.editMode && props.character.tier !== values.tier) {
       tierError.value = 'To change character tier you need to use Error Report function.'
       return
     }
     values.uid = props.character.uid || random(10000000, 99999999)
+
+    if (values.SWP)
+      values.SWP = find(Object.values(waifuPerksObject), { title: values.SWP })?.uid
+
     processing.value = true
     userNickname.value = values.nickname
     const seed = window.localStorage.getItem('seed')

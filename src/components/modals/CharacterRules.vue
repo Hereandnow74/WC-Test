@@ -43,6 +43,37 @@
         <li>Monsters or Generic beings without good image and some unique tags, or from unpopular worlds.</li>
         <li>Non-standard symbols used in naming, such as è, õ, ü, etc.  </li>
       </ul>
+
+      <div class="flex flex-col gap-1 text-gray-800 dark:text-gray-300">
+        <h4 class="text-lg text-center">
+          <i>Important!</i>
+        </h4>
+        <p>
+          <i>
+            We appreciate your interest in submitting content to our platform, and we value the dedication and contributions of our community. While we have established guidelines and rules to govern the submission process, it is important to understand that adherence to these guidelines alone does not guarantee acceptance. The review and acceptance of submissions are subject to our discretion and evaluation process, which considers various factors, including but not limited to quality, relevance, audience fit, and overall alignment with our platform's objectives.
+          </i>
+        </p>
+        <p>
+          <i>
+            Our aim is to maintain a high standard of content that resonates with our audience and serves the best interests of our community. As such, submissions that technically comply with our rules may still not be accepted if they do not meet our quality and relevance criteria.
+          </i>
+        </p>
+        <p>
+          <i>
+            We encourage all contributors to submit their best attempt, and strive for excellence in their contributions.
+          </i>
+        </p>
+        <p>
+          <i>
+            Please understand that our review process is designed to maintain the overall quality and integrity of our platform, and our decisions are made in good faith to provide the best experience for our audience.
+          </i>
+        </p>
+        <p>
+          <i>
+            Thank you for your understanding, and we look forward to reviewing your submissions.
+          </i>
+        </p>
+      </div>
     </div>
   </Modal>
 </template>

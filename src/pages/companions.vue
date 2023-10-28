@@ -148,6 +148,14 @@
               ret
             </div>
             <div
+              :class="{'bg-red-600': swp === -1, 'bg-green-600': swp === 1}"
+              class="border-l px-2 hover:bg-gray-700 text-gray-200 rounded-r"
+              title="Specific Waifu Perks"
+              @click="swp = threeToggle(swp)"
+            >
+              swp
+            </div>
+            <div
               :class="{'bg-green-600': newChanges}"
               class="border-l px-2 hover:bg-gray-700 text-gray-200 rounded-r"
               title="New Changes"
@@ -204,7 +212,8 @@
         :style="{top: `${topPosition}px`, 'grid-template-columns': `repeat(${cardRowCount}, 1fr)`}"
         :class="cardWidth !== 284 ? '' : 'w-max mx-auto'"
       >
-        <CompanionCard
+        <component
+          :is="char.c && char.c==='swp' ? CompanionSWPCard : CompanionCard"
           v-for="char in slicedChars"
           :key="char.type === 'local' ? `l${char.u}` : char.u"
           :char="char"
@@ -240,6 +249,8 @@
 import { every, intersection, some, shuffle, throttle } from 'lodash-es'
 import { DBCharacter } from 'global'
 import { useStore } from '~/store/store'
+import CompanionCard from '~/components/cards/CompanionCard.vue'
+import CompanionSWPCard from '~/components/cards/CompanionSWPCard.vue'
 
 import { toggleShowAddCharacter, showAddCharacter, toggleShowFilterTags, showFilterTags, tagToggles, threeToggle, toggleShowReport, showReport, showSearchSettings, toggleSearchSetting, blackWhite, blackWhiteDisabled, andOr, showFilters } from '~/logic'
 import { waifuTags, useAllChars } from '~/data/constants'
@@ -269,6 +280,7 @@ const favorite = ref(0)
 const local = ref(0)
 const retinue = ref(0)
 const newChanges = ref(false)
+const swp = ref(-1)
 
 const sortAlpha = ref(0)
 const sortRating = ref(0)
@@ -397,6 +409,8 @@ const filteredCharacters = computed(() => {
   if (nsfw.value) sopt.$and.push({ in: nsfw.value })
   if (favorite.value === 1) sopt.$and.push({ u: `=${filteredFavorites.value.join('|=')}` })
   if (favorite.value === -1) sopt.$and.push({ u: `!^${filteredFavorites.value.join(' !^')}` })
+  if (swp.value === 1) sopt.$and.push({ c: '=swp' })
+  if (swp.value === -1) sopt.$and.push({ c: '=none' })
   // console.log(changes.value)
   if (newChanges.value) sopt.$and.push({ u: `=${Object.keys(changes.value).join('|=')}` })
   if (retinue.value === 1) sopt.$and.push({ u: `=${Object.keys(companionsUIDs.value).join('|=')}` })

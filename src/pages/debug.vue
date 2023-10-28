@@ -1,5 +1,10 @@
 <template>
   <div class="max-w-screen-md lg:pl-0 flex flex-col gap-4">
+    <!-- <div class="flex gap-2">
+      <Button label="Check Worlds" size="Small" @click="getAllDiscord" />
+      <Button label="Copy To" size="Small" @click="copyWorldsTo" />
+    </div> -->
+
     <h3>All effects</h3>
     <div>{{ allEffects }}</div>
     <h3>intensities</h3>
@@ -55,6 +60,8 @@
 
 <script lang='ts' setup>
 import { useStore } from '~/store/store'
+
+// import { getAllDiscord, copyWorldsTo } from '~/data/constants'
 
 const {
   allEffects, intensities, luresBought, binding, flags, heritage,

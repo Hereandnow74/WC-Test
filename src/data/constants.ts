@@ -6,7 +6,7 @@ import { bindings, lures, lureExpansions, otherControls } from '../data/binding'
 import { heritages } from '../data/heritage'
 import { ridePerksFull, defenses, talents, perks, genericPerks } from '../data/talents'
 import { DLCwaifu_perks, waifu_perks } from '../data/waifu_perks'
-import { symbioteBinding, symBuildings, synUnits } from '../data/symbiote'
+import { symbioteBinding, symBuildings, synUnits, phases } from '../data/symbiote'
 
 import { useStore } from '../store/store'
 import { useChargenStore } from '../store/chargen'
@@ -181,7 +181,7 @@ export const waifuTags = {
   ml: { tag: 'Addiction Defense', category: 'Defense', short: 'ml', effect: '', desc: 'Known for having a material vice.', style: { 'background-image': 'url("https://i.imgur.com/BR5FZgEm.png")', 'background-size': 'cover', 'color': '#fff', 'font-weight': '600', 'border': '1px solid #777' } },
   ps: { tag: 'Mind Defense', category: 'Defense', short: 'ps', effect: '', desc: 'Known as a psychic or mind-manipulator.', style: { 'background-image': 'url("/img/defenseBack.png")', 'background-size': 'cover', 'color': '#fff', 'font-weight': '600', 'border': '1px solid #777' } },
   bj: { tag: 'Possession Defense', category: 'Defense', short: 'bj', effect: '', desc: 'Known for bodyjacking others.', style: { 'background-image': 'url("https://i.imgur.com/30QzIimm.png")', 'background-size': 'cover', 'color': '#fff', 'font-weight': '600', 'border': '1px solid #777' } },
-  dr: { tag: 'Soul Defense', category: 'Defense', short: 'dr', effect: '', desc: 'Can drain or feed on life, mana, or souls.', style: { 'background-image': 'url("https://i.imgur.com/gjojdPam.png")', 'background-size': 'cover', 'color': '#fff', 'font-weight': '600', 'border': '1px solid #777' } },
+  dr: { tag: 'Drain Defense', category: 'Defense', short: 'dr', effect: '', desc: 'Can drain or feed on life, mana, or souls.', style: { 'background-image': 'url("https://i.imgur.com/gjojdPam.png")', 'background-size': 'cover', 'color': '#fff', 'font-weight': '600', 'border': '1px solid #777' } },
   id: { tag: 'Fatality Defense', category: 'Defense', short: 'id', effect: '', desc: 'Known for inflicting instant death or not dying even when killed.', style: { 'background-image': 'url("https://i.imgur.com/zn4Ll9Sm.png")', 'background-size': 'cover', 'color': '#fff', 'font-weight': '600', 'border': '1px solid #777' } },
   pl: { tag: 'Polymorph Defense', category: 'Defense', short: 'pl', effect: '', desc: 'Known for polymorphing others.', style: { 'background-image': 'url("https://i.imgur.com/krRzC16m.png")', 'background-size': 'cover', 'color': '#fff', 'font-weight': '600', 'border': '1px solid #777' } },
   ur: { tag: 'Wyldscape Defense', category: 'Defense', short: 'ur', effect: '', desc: 'Hails from a region where the local reality is unstable.', style: { 'background-image': 'url("https://i.imgur.com/y2yXAcEm.png")', 'background-size': 'cover', 'color': '#fff', 'font-weight': '600', 'border': '1px solid #777' } },
@@ -354,7 +354,7 @@ export const LINKS = computed(() => {
     'bindings/lures': [...lures, ...lureExpansions, ...DLClures, ...DLClureExpansions],
     'bindings/controls': [...otherControls.filter(perk => perk.type !== 'space'), ...DLCotherControls],
     'bindings/space': otherControls.filter(perk => perk.type === 'space'),
-    'bindings/symbiote': [...symbioteBinding, ...symBuildings, ...synUnits],
+    'bindings/symbiote': [...symbioteBinding, ...symBuildings, ...synUnits, ...phases],
     'heritage': [...heritages, ...DLCheritages, ...fullHeritagesDLC],
     'talents/ride': [...rides, ...ridePerksFull, ...DLCridePerks, ...DLCRides],
     'talents/home': [...homes, ...demiplane, ...dungeon, ...DLChomes],
@@ -372,7 +372,7 @@ export const LINKS = computed(() => {
   links.Offspring = ''
   links.Missions = ''
   links['Loans and Credit Debt'] = ''
-  links['Soul Defense (2x)'] = 'talents/defense'
+  links['Drain Defense (2x)'] = 'talents/defense'
   links.familiar = ''
   // links.familiars = ''
   return links
@@ -439,6 +439,7 @@ export const getAllChars = async() => {
     const userChars = (await getUserChars()).reverse()
     const spreadheetChars = (await getChars())
     allChars.value.push(...userChars, ...spreadheetChars)
+    allChars.value.map(char => char.c ? char : (char.c = 'none', char))
     running = false
   }
 
@@ -447,7 +448,7 @@ export const getAllChars = async() => {
 
 const allCharsComp = computed(() => {
   const { localUserCharacters } = useStore()
-  return [].concat(localUserCharacters.value.map(x => ({ u: x.uid, n: x.name, w: x.world, t: x.tier, d: x.sub, b: x.tags, i: x.image, in: x.image_nsfw, type: 'local' })), allChars.value) as DBCharacter[]
+  return [].concat(localUserCharacters.value.map(x => ({ u: x.uid, n: x.name, w: x.world, t: x.tier, d: x.sub, b: x.tags, i: x.image, in: x.image_nsfw, type: 'local', c: 'none' })), allChars.value) as DBCharacter[]
 })
 
 // Search for UID duplicates
@@ -510,12 +511,86 @@ export function useWorlds() {
 
 getWorlds()
 
+const missions = ref<Mission[]>([])
+async function getMissions() {
+  missions.value = (await import('~/data/json/missions.json')).default
+}
+
+getMissions()
+
 export const allCompanionsWorlds = computed(() => Array.from(new Set(allChars.value.map(x => x.w))))
 
 export const allWorlds = computed(() => {
   const { localUserWorlds } = useStore()
   return Array.prototype.concat(localUserWorlds.value, worlds.value, subWorlds.value)
 })
+
+// export async function getAllDiscord() {
+//   function wait(ms: number) {
+//     return new Promise(resolve => setTimeout(resolve, ms))
+//   }
+
+//   const token = 'L0GmBrnuM2pX5orFipKCv1I3Wfm2kVYpO5V8u6gCcd0ff81f'
+//   // const suit = subWorlds.value.filter(x => x => /.*discordapp.*/.(x.image))
+
+//   async function preloadImagesFromUrls(imageUrls: string[]): Promise<HTMLImageElement[]> {
+//     const imagePromises: Promise<HTMLImageElement>[] = imageUrls.map((url) => {
+//       return new Promise<HTMLImageElement>((resolve, reject) => {
+//         const img = new Image()
+//         img.src = url
+//         img.onload = () => resolve(img)
+//         img.onerror = () => reject(new Error(`Failed to load image from URL: ${url}`))
+//       })
+//     })
+
+//     return Promise.all(imagePromises)
+//   }
+
+//   console.log('Starting')
+//   for (const [i, world] of missions.value.entries()) {
+//     if (!(/.*discordapp.*/.test(world.image || ''))) continue
+//     const imagesToUpload = []
+//     const preloadedImages = await preloadImagesFromUrls([world.image])
+
+//     for (const preloadedImage of preloadedImages) {
+//       // Convert preloaded images to File objects for upload
+//       const blob = await fetch(preloadedImage.src).then(response => response.blob())
+//       const file = new File([blob], 'preloaded-image.png', { type: 'image/png' })
+//       imagesToUpload.push(file)
+//     }
+
+//     const formData = new FormData()
+//     for (const image of imagesToUpload) {
+//       formData.append('title', world.title)
+//       formData.append('images[]', image) // Use 'images[]' to indicate an array of images
+//     }
+
+//     console.log('Wait')
+//     await wait(1000)
+//     const response = await fetch('https://api.imgchest.com/v1/post', {
+//       method: 'POST',
+//       body: formData,
+//       headers: {
+//         Authorization: `Bearer ${token}`,
+//       },
+//     })
+
+//     if (response.ok) {
+//       const responseData = await response.json()
+//       console.log(responseData.data)
+//       missions.value[i].image = responseData.data.images[0].link
+//     }
+//   }
+
+//   navigator.clipboard.writeText(JSON.stringify(missions.value, null, 2))
+//   console.log('Finished')
+//   // console.log(suit)
+// }
+
+// export function copyWorldsTo() {
+//   navigator.clipboard.writeText(JSON.stringify(missions.value, null, 2))
+//   console.log('Copied')
+// }
 
 export const allWorldsNoCondition = computed(() => {
   const worlds: DBWorld[] = []
@@ -572,7 +647,7 @@ export const defTagsFull = [
   'Addiction Defense',
   'Mind Defense',
   'Possession Defense',
-  'Soul Defense',
+  'Drain Defense',
   'Fatality Defense',
   'Polymorph Defense',
   'Wyldscape Defense',

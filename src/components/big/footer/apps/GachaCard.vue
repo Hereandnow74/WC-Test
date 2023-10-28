@@ -1,5 +1,5 @@
 <template>
-  <div class="perspect-[1000px] flex-grow w-full">
+  <div class="perspect-[1000px] flex-grow w-full" @click="deleteOrAccept">
     <div
       v-if="char.n"
       class="h-full transform transition-transform duration-[0s] preserve-3d relative ease-in border border-gray-700"
@@ -20,18 +20,26 @@
         <ant-design:star-filled v-for="n in stars[char.t - 1]" :key="n" />
       </div>
       <div
-        class="absolute rounded w-full h-full box--gradient silver backface-hidden transform rotate-y-180 flex  flex-wrap justify-center items-center text-opacity-30  text-gray-200text-2xl"
+        class="absolute rounded w-full h-full box--gradient silver backface-hidden transform rotate-y-180 flex  flex-wrap justify-center items-center text-opacity-30  text-gray-200 text-2xl"
         :class="tierColor[char.t - 1]"
       >
         <ant-design:star-filled v-for="n in stars[char.t - 1]" :key="n" />
+      </div>
+      <div
+        class=" opacity-0 absolute rounded w-full h-full flex  flex-wrap justify-center items-center text-4xl"
+        :class="[deleteOrAcceptMode ? 'text-green-500 bg-gray-600' : 'text-red-500 bg-gray-600', tookAction ? 'opacity-80' : 'hover:opacity-60']"
+      >
+        <fa-solid:check v-if="deleteOrAcceptMode" />
+        <fluent:delete-20-filled v-else />
       </div>
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
+import { useStore } from '~/store/store'
 
-defineProps({
+const props = defineProps({
   char: {
     type: Object,
     default: () => ({}),
@@ -54,6 +62,10 @@ defineProps({
   },
 })
 
+const { companions } = useStore()
+
+const tookAction = ref(false)
+
 const tierColor = [
   'box--gradient blue text-gray-200',
   'box--gradient blue text-gray-200',
@@ -73,6 +85,17 @@ const tierColor = [
 const stars = [
   1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 7,
 ]
+
+const deleteOrAcceptMode = computed(() => props.char.u === 999999)
+
+function deleteOrAccept() {
+  if (tookAction.value) return
+  if (deleteOrAcceptMode.value)
+    companions.value.push({ uid: Math.floor(Math.random() * 1000000), name: props.char.n, world: props.char.w, tier: props.char.t, priceTier: 0, method: 'buy', tags: props.char.b })
+  else
+    companions.value.splice(companions.value.findIndex(c => c.uid === props.char.u), 1)
+  tookAction.value = true
+}
 
 </script>
 

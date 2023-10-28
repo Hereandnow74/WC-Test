@@ -37,7 +37,10 @@ ridePerksFull.push({
 // #endregion
 
 // #region talents
-export const talentsDesc = 'Like all company-supplied powers, the powers granted by these perks cannot be nullified, copied, or stolen. Some of these perks may be partly or entirely redundant, depending on your choice of Origin.'
+export const talentsDesc = `Like all company-supplied powers, the powers granted by these perks cannot be nullified, copied, or stolen. Some of these perks may be partly or entirely redundant, depending on your choice of Origin.
+<p>Aside from Body Tune-Up and Everlasting and Blessed Talents, all Basic Talents are experience and skill acquisition multipliers, not flat improvements, and scale to the strength and skill of your opponents, rivals, and trainers: the better they are than you, the faster you learn, until you’ve caught up to them.</p>
+<p>This rubberbanding effect also lifts any skill caps that may otherwise apply, first raising the cap to the skill level of the person you’re learning from - whether their role is intentional or not. With Talent Sharing, Co-op, PvP, or other situations where the person you’re learning from also has the same Basic Talent, the rubberbanding will benefit both of you at once, completely removing any skill cap for as long as the competition, spar, etc. continues.</p>
+`
 export const talents: PerkFull[] = []
 
 talents.push({
@@ -61,7 +64,7 @@ talents.push({
   image: 'https://cdn.discordapp.com/attachments/925963686433132644/1066349990265487461/3da894ddd385056564070cdd094d7990.png',
   cost: 10,
   desc: `You live. You have weak immortality and eternal youth. If you are older than the peak age for your species (25 years for humans), your body is reset to that point; otherwise you'll continue to physically mature to that point but not experience any aging afterwards. This will not interfere with deliberate age-manipulation effects from within your retinue, whether from the company’s transformation suite or third-parties. If your maturation process had been halted by any means, it will now continue until your peak age. The "Fog of Ages," including atrophy of unused skills, will never affect you.
-  <p>This perk will not make you unkillable or grant any form of auto-resurrection. It just means you won’t grow feeble and die of “natural causes,” so don’t try anything foolish. The benefits of this perk will apply to your purchased and captured waifus, but you can disable it for specific individuals if you wish.</p>
+  <p>This perk will not make you unkillable or grant any form of auto-resurrection. It just means you won’t grow feeble and die of “natural causes,” so don’t try anything foolish. The benefits of this perk will always apply to your purchased and captured subjects, but you can disable it for specific individuals if you wish.</p>
   `,
 })
 
@@ -71,7 +74,7 @@ talents.push({
   category: 'Talent',
   image: 'https://fictionhorizon.com/wp-content/uploads/2021/12/Captain-Tsubasa-2018-1024x576.jpg',
   cost: 5,
-  desc: `You can rapidly learn any non-supernatural athletic skills you encounter: acrobatics, physical sports, parkour, swimming, etc. Skills directly related to combat fall under Martial Talent instead, while supernatural extensions of skill are affected by Psychic, Soul, or other Talents. This is an experience and skill acquisition multiplier, not a flat improvement, and scales to the strength and skill of your opponents and trainers: the better they are than you, the faster you learn, until you’ve caught up to them.
+  desc: `You can rapidly learn any non-supernatural athletic skills you encounter: acrobatics, physical sports, parkour, swimming, etc. Skills directly related to combat fall under Martial Talent instead, while supernatural extensions of skill are affected by Psychic, Soul, or other Basic Talents.
   `,
 })
 
@@ -81,7 +84,7 @@ talents.push({
   category: 'Talent',
   image: 'https://i.ibb.co/0DZZj7L/Martial-Talent.jpg',
   cost: 10,
-  desc: 'You fight. You have prodigious martial talent and can rapidly learn any personal, non-supernatural combat skills you encounter, whether melee or ranged. Supernatural extensions of martial skill are instead affected by Psychic or Soul Talents. This is an experience and skill acquisition multiplier, not a flat improvement, and scales to the strength and skill of your opponents and trainers: the better they are than you, the faster you learn, until you’ve caught up to them. This applies to both command ability and personal skill.',
+  desc: 'You fight. You have prodigious martial talent and can rapidly learn any personal, non-supernatural combat skills you encounter, whether melee or ranged. Supernatural extensions of martial skill are instead affected by Psychic, Soul, Science, or Land Talents. This Talent applies to both command ability and personal skill. ',
 })
 
 talents.push({
@@ -102,7 +105,7 @@ talents.push({
   additionalDesc: `
   To unlock new types of scientific magic beyond “styles anyone can use” and whatever might be unlocked by your Extra, Substitute, or Possess origin, use Added Potential or various Heritage perks.
   `,
-  desc: `You know. You can keep up with scientific babble, operate any computer, smart device, or vehicle as if you grew up with it, and rapidly learn any scientific magic you encounter and are capable of using. This is an experience and skill acquisition multiplier, not a flat improvement, and scales to the strength and skill of your opponents and trainers: the better they are than you, the faster you learn, until you’ve caught up to them.
+  desc: `You know. You can keep up with scientific babble, operate any computer, smart device, or vehicle as if you grew up with it, and rapidly learn any scientific magic you encounter and are capable of using.
   <p>Many magical styles benefit from both Science and Soul Talents. In these cases, Science Talent helps you build skill and finesse, for improved spell complexity.</p>`,
 })
 
@@ -122,7 +125,7 @@ talents.push({
   category: 'Talent',
   image: 'https://i.ibb.co/G9WtDSk/Aesthetic-Talent.jpg',
   cost: 10,
-  desc: 'You design. You have a prodigious talent in the visual arts: painting, sculpture, photography, fashion and makeup, etc. This is an experience and skill acquisition multiplier, not a flat improvement, and scales to the skill of your trainers, cohorts, and competition: the better they are than you, the faster you learn, until you’ve caught up to them. The creation of things that have practical purposes is instead covered under Engineering Talent.',
+  desc: 'You design. You have a prodigious talent in the visual arts: painting, sculpture, photography, fashion and makeup, etc. The creation of things that have practical purposes is instead covered under Engineering Talent.',
 })
 
 talents.push({
@@ -133,7 +136,7 @@ talents.push({
   cost: 10,
   desc: `
 <p>You understand. You can read a room, spot deceit or employ your own, know when to speak and when to hold your tongue, and find the right words to say for good or ill. You will neither be That Guy whom women warn their friends about, nor the otaku nerd whose obsessions drive others away. This does not lend any additional power to your words - that’s what Siren’s Song is for - nor will it make you enjoy social interactions for their own sake. It only guarantees knowledge and competence.</p>
-<p>Additionally, you are immediately fluent in any spoken language you encounter and will speak it like any native in only a few days, with mastery of the written form taking a week on average; this part always applies to your retinue as well. Finally, you have a prodigious talent for writing, regardless of whether the subject is fiction or nonfiction. Depending on the skill of your trainer, cohorts, and rivals, you can elevate your own skill beyond ordinary human ability, following the same rules as the other Talents.</p>`,
+<p>Additionally, you are immediately fluent in any spoken language you encounter and will speak it like any native in only a few days, with mastery of the written form taking a week on average; this part always applies to your retinue as well. Finally, you have a prodigious talent for writing, regardless of whether the subject is fiction or nonfiction.</p>`,
 })
 
 talents.push({
@@ -142,7 +145,7 @@ talents.push({
   category: 'Talent',
   image: 'https://i.ibb.co/BszrmWS/Performance-Talent.jpg',
   cost: 10,
-  desc: 'You express. You have a prodigious talent in the kinesthetic arts: music, dance, acting, etc. This is an experience and skill acquisition multiplier, not a flat improvement, and scales to the skill of your trainers, cohorts, and competition: the better they are than you, the faster you learn, until you’ve caught up to them. Audiovisual and stage production are instead covered under Engineering Talent.',
+  desc: 'You express. You have a prodigious talent in the kinesthetic arts: music, dance, acting, etc. Audiovisual and stage production are instead covered under Engineering Talent.',
 })
 
 talents.push({
@@ -154,7 +157,7 @@ talents.push({
   additionalDesc: `
   To unlock new types of personal mystical arts beyond “styles anyone can use” and whatever might be unlocked by your Extra, Substitute, or Possess origin, use Added Potential or various Heritages.
   `,
-  desc: `You feel. You have prodigious talent for ki arts (aura, chi, Hamon, Phonic Gain, Spiral Power, etc.) and magic and will rapidly learn any such mystical arts you encounter and are capable of using. Unlike the buffs from Heritage or Shroud elements,  this is an experience and skill acquisition multiplier, not a flat improvement. This effect scales to the strength and skill of your opponents and trainers: the better they are than you, the faster you learn, until you’ve caught up to them. This does not apply to purely scientific forms of magic.
+  desc: `You feel. You have prodigious talent for ki arts (aura, chi, Hamon, Phonic Gain, Spiral Power, etc.) and magic, and will rapidly learn any such personal mystical arts you encounter and are capable of using.This does not apply to purely scientific forms of magic.
   <p>Many magical styles benefit from both Soul and Science Talents. In these cases, Soul Talent improves your improvisation ability and raw power.</p>`,
 })
 
@@ -177,9 +180,12 @@ talents.push({
   image: 'https://i.imgur.com/05GApMTl.jpg',
   cost: 30,
   whitelist: ['Wild Talent', 'Soul Talent'],
+  additionalDesc: `
+  To unlock new types of ambient mystical arts beyond “styles anyone can use” and whatever might be unlocked by your Extra, Substitute, or Possess origin, use Added Potential or various Heritages.
+  `,
   desc: `
 <p>You are one with the environment. You have additional prowess with magical styles that draw mystical power from one’s surroundings. This includes, but is not limited to, Warhammer’s Winds, a Planeswalker’s Lands, Geomancy, or anything powered by leylines or background magical fields. These arts and styles are more effective and easier to control.</p>
-<p>Your green thumb also extends to agriculture, mining, and other forms of resource gathering. This is an experience and skill acquisition multiplier, not a flat improvement, and scales to the strength and skill of your opponents and trainers: the better they are than you, the faster you learn, until you’ve caught up to them.</p>`,
+<p>Your green thumb also extends to agriculture, mining, and other forms of resource gathering.</p>`,
 })
 
 talents.push({
@@ -192,10 +198,10 @@ talents.push({
   To unlock new types of ambient mystical arts beyond “styles anyone can use” and whatever might be unlocked by your Extra, Substitute, or Possess origin, use Added Potential or various Heritages.
   `,
   desc: `
-<p>You think. You have prodigious psychic talent and can rapidly learn any psychic abilities you encounter: from the telepathy and telekinesis that are so common in otherwise-hard sci-fi to Academy City esper powers, Biotics, and even the extremes typical of western comic-book psychics. This applies to any supernatural ability with neither magical nor technological trappings, or is not otherwise covered by Science, Engineering, Soul, or Blessed Talents.</p>
-<p>This perk does not make you a perfect, unlimited power copier. If an ability requires a specific organic component, you must still acquire it by other means.</p>
+<p>You think. You have prodigious psychic talent and can rapidly learn any psychic techniques you encounter: from the telepathy and telekinesis that are so common in otherwise-hard sci-fi to the extremes typical of western comic-book psychics. This applies to any supernatural ability with neither magical nor technological trappings, or is not otherwise covered by Science, Engineering, Soul, Blessed, or Land Talents. If an ability requires a specific organic component, such as Element Zero nodes, you must still acquire it by other means.</p>
+<p>Unlike techniques, psychic powers such as To Aru Espers, Quirks, or the results of the X-Gene are distinct to the individual and cannot be copied directly. When this talent pings off of such a power, it instead helps you develop your own.</p>
 <p>Projections such as Stands or Personas are subject to this Talent, not Soul. If you were not already capable of manifesting one, you are now theoretically capable of doing so, provided you have a Stand Arrow, someone who can awaken your Persona, etc. You can only have one such projection; if you already have a Persona when you’re pierced with a Stand Arrow, the Arrow will upgrade the Persona, and vice versa. Wild Cards (typically, those who Substituted or Possessed a Persona protagonist) are subject to their usual limit instead.</p>
-<p>This is an experience and skill acquisition multiplier, not a flat improvement, and scales to the strength and skill of your opponents and trainers: the better they are than you, the faster you learn, until you’ve caught up to them.</p>`,
+`,
 })
 
 talents.push({
@@ -206,8 +212,17 @@ talents.push({
   cost: 10,
   desc: `
 <p>You lie, cheat, and steal. You have a prodigious talent for larceny, trespassing, theft, espionage, counterintelligence, and other forms of covert activity, whether it’s performed on a government’s dime or not. You can disappear into any crowd, no matter how sparse.</p>
-<p>This synergizes with many other Talents. For example, with Engineering Talent, you can learn to hack any device. With Communication or Performance Talents, you can grift the best con artists out of their money. With Aesthetic Talent, you can make perfect forgeries of any artist’s style. Body Tune-Up’s boost to athleticism also synergizes with this perk.</p>
-<p>This is an experience and skill acquisition multiplier, not a flat improvement, and scales to the strength and skill of your opponents, rivals, and trainers: the better they are than you, the faster you learn, until you’ve caught up to them.</p>`,
+<p>This synergizes with many other Talents. For example, with Engineering Talent, you can learn to hack any device. With Communication or Performance Talents, you can grift the best con artists out of their money. With Aesthetic Talent, you can make perfect forgeries of any artist’s style. Body Tune-Up’s boost to athleticism also synergizes with this perk.</p>`,
+})
+
+talents.push({
+  uid: 'oScLb',
+  title: 'Administrative Talent',
+  category: 'Talent',
+  image: '',
+  cost: 10,
+  desc: `
+<p>You work the red tape. You have a prodigious talent for organization, logistics, and bureaucracy, using the available levers to smooth activities you favor and throw up obstacles for those you don’t. This applies to any form of administration, whether commercial, industrial, political, religious, educational, military, or criminal, and synergizes with many other Basic Talents, including Martial, Communication, Performance, Blessed, and Covert.</p>`,
 })
 
 talents.push({
@@ -217,7 +232,7 @@ talents.push({
   image: 'https://i.ibb.co/C55Bgxn/Talent-Sharing.jpg',
   cost: 10,
   complex: 'flavor',
-  desc: 'The effects of one of your purchased Basic Talents now apply equally to every member of your retinue, as if you had shared them through a Binding or Heritage perk. This must be purchased separately for each valid Talent: Martial, Wild, Science, Engineering, Aesthetic, Communication, Performance, Soul, Blessed, Psychic, Covert, and Sticky Fingers (as “Tantric Talent”). Everlasting and Body are always shareable. This perk is obsoleted by Controls or Heritage perks that share Talents and may be refunded completely after such purchases.',
+  desc: 'The effects of one of your purchased Basic Talents now apply equally to every member of your retinue, as if you had shared them through a Binding or Heritage perk. This must be purchased separately for each valid Talent: Athletic, Martial, Wild, Science, Engineering, Aesthetic, Communication, Performance, Soul, Blessed, Land, Psychic, Covert, Administrative, and Sticky Fingers (as “Tantric Talent”). Body Tune-Up and Everlasting Talent are always shareable. This perk is obsoleted by Controls or Heritage perks that share Basic Talents and may be refunded completely after such purchases.',
 })
 
 talents.push({
@@ -226,7 +241,7 @@ talents.push({
   category: 'Talent',
   image: 'https://i.ibb.co/qCMqtY5/Inexhaustible.jpg',
   cost: 140,
-  whitelist: ['Everlasting Talent', 'Soul Defense (2x)'],
+  whitelist: ['Everlasting Talent', 'Drain Defense (2x)'],
   desc: 'You will never run out of inner mystical energies - vital, magical, psychic, or soul power - to fuel your abilities with. This perk does not help you use an ability that requires more energy than your reserve - that can be developed over time with training and Soul Talent - but any abilities below that threshold can be used freely. The benefits of this perk will automatically be shared with any of your subjects who are soul-bound to you, whether they’re connected by Conjunction, a familiar bond, or some other means. If you have Evolutionary Engine Array, the engines’ effective output and storage capacities will be doubled.',
 })
 
@@ -240,7 +255,7 @@ talents.push({
   anything: 'Power Name',
   special: 'Must be repurchased for each use.',
   desc: `
-<p>	The rules of other worlds often bar just anyone from learning or developing special powers. Travelers often find themselves unable to learn any local abilities, even with the help of Science or Soul Talent, simply because they weren’t born in that world. This perk bypasses that limitation for any single ability local to any world you’ve visited, or that any of your Companions or Familiars have, allowing the person it’s bought for, whether yourself or a subject, to develop it just like anyone else who would normally do so. “A single ability” can be quite broad, ranging from an X-mutation or Quirk unique to the individual, to Nasuverse Magecraft or Remnant-style Aura. These are all generic abilities, in the context of their home worlds. Tier Χ abilities are not eligible.</p>
+<p>The rules of other worlds often bar just anyone from learning or developing special powers. Travelers often find themselves unable to learn any local abilities, even with the help of Science or Soul Talent, simply because they weren’t born in that world. This perk bypasses that limitation for any single ability local to any world that you or any subject have visited, or that you or any subject has, allowing the person it’s bought for, whether yourself or a subject, to develop it just like anyone else who would normally do so. “A single ability” can be quite broad, ranging from an X-mutation or Quirk unique to the individual, to Nasuverse Magecraft or Halkegenian Four Elements Magic. These are all generic abilities, in the context of their home worlds. Imaginary Tier abilities are not eligible.</p>
 <p>Unlike Template Stacking I, this perk does not grant practical power immediately: all purchases start from level zero, as it were, and must be trained before they’ll become usable. Self-study can help in some circumstances, but is no substitute for a proper trainer, whether purchased or a local. Neither this perk, nor any perks that follow from it, will grant episodic memories or emotional connections of a life in the applied template’s source world.</p>
 <p>Abilities that are generic in their source but are expressed uniquely, such as Sacred Gears, Semblances, Academy City Esper powers, Quirks, or the results of the X-gene, will be unique to you as well. You may not use company means to acquire more than one of each type of ability at a time.</p>
 <p>If you purchase the same Potential for any ten individuals in your retinue, including through Power Swap or Template Stacking 1, the rest of your retinue will gain this perk for that specific template for free.</p>
@@ -257,8 +272,9 @@ talents.push({
   complex: 'target_f',
   anything: 'Power Name',
   desc: `
-<p>Sometimes you just want to copy a powerset, either a generic one or a specific character’s. This perk lets you do just that. Only Tier Χ abilities, abilities that originated in other CYOAs, and abilities found elsewhere in this catalog are not eligible. The exact capabilities at the time of purchase will be scaled to Tier 4. <b>This perk is not necessary for any abilities that your subjects might grant you via surgery, ritual, or other means.</b> Templates for characters who are only purchasable in sets must be bought separately. Characters who are represented as Specific Waifu Perks may be purchased as templates for individuals who are not eligible for the actual perks, whether natively or with Power Swap, and follow any mutual exclusivity rules stated in the perk descriptions.</p>
-<p>Templates can be trained up to, and beyond, the original version of the ability. You receive a skill framework for your purchase, identical in principle to the ones that “early” captures receive to ensure they learn their missing abilities. This applies to technological abilities as well. Iconic equipment is included with this perk, but may see its parameters and functionality locked until you’re capable of using it safely or have trained enough with the more basic features. After the skill framework runs out and you’ve achieved the typical heights of the template, you can continue to train it beyond that level with the appropriate Basic Talent, regardless of whether the original version is rated at Tier 4, 5, or 10.</p>
+<p>Sometimes you just want to copy a powerset, either a generic one or a specific character’s. This perk lets you do just that. Only Imaginary Tier abilities, abilities that originated in other CYOAs, and abilities found elsewhere in this catalog are not eligible. The exact capabilities at the time of purchase will be scaled to Tier 4. This perk is not necessary for any abilities that your subjects might grant you via surgery, ritual, or other means. Templates for characters who are only purchasable in sets must be bought separately. Templates for alternative versions of the same character must also be bought separately, unless otherwise specified. Characters who are represented as Specific Waifu Perks may be purchased as templates for individuals who are not eligible for the actual perks, whether natively or with Power Swap, and follow any mutual exclusivity rules stated in the perk descriptions.</p>
+<p>All templates come with a skill framework, identical in principle to the ones that “early” captures receive to ensure they learn their missing abilities. This applies to technological abilities as well. Iconic equipment is included with this perk, but may see its parameters and functionality locked until you’re capable of using it safely or have trained enough with the more basic features.</p>
+<p>After the skill framework runs out and you’ve achieved the typical heights of the template, the appropriate Basic Talent will let you continue to train beyond that point, as described in the opening of that section. Any familiars that would normally come with a template (i.e. are included with a purchase or Power Swap) must be purchased, captured or otherwise spawned separately.</p>
 <p>Racial templates (Kryptonian, Metallic Dragon, Newtype, Saiyan, etc.) have additional rules that distinguish them from other kinds. Unlike Advanced Tempest Runes (Body), a living, natural example of that template is not required for your selection with this perk. Racial templates are limited to one per individual and will overwrite the individual’s original race for all purposes. The creation of hybrids requires Advanced Tempest Runes (Hybrid) or a geneticist, biomanipulator, or polymorpher.</p>
 <p>Other powers that are only available to those who were born with them, such as hereditary magic systems, may be acquired through this perk at any time, just as with Added Potential.</p>
 <p>Abilities that are generic in their source but are expressed uniquely, such as Sacred Gears, Semblances, Academy City Esper powers, Quirks, or the results of the X-gene, can be unique to you or copied from a specific character. You may not use company means to acquire more than one of each type of ability at a time.</p>`,
@@ -307,7 +323,7 @@ talents.push({
     'Extra',
     'Template Stacking I'],
   needed: 1,
-  desc: 'You or your subject’s template is upgraded to a version of the template rated at Tier 5. This is a flat increase to power, skill, and gear functionality. As with Template Stacking I, the ability can then be trained higher with the appropriate Basic Talent, regardless of whether the original version is rated at Tier 4, 5, or 10.',
+  desc: 'You or your subject’s template is upgraded to a version of the template rated at Tier 5. This is a flat increase to starting power, skill, and gear functionality.',
 })
 
 talents.push({
@@ -363,8 +379,8 @@ export const authorNote = `
 `
 export const defenceDesc = `
 <p>Defense perks protect you and your retinue members, regardless of whether they were purchased or captured, from the relevant effects. All Defenses are purchased in two stages. The first stage, or copy, of a Defense offers resistance to the effects it covers, and the second expands that to total immunity. Both purchases are the same price. The total cost of both copies appears in parentheses. No lasting effect inflicted on you that is covered by an active defense will ever be permanent - everything will wear off over time, depending on circumstance or the effect’s strength.</p>
-<p>The descriptions for each Defense represent the starting points for each defense. At the resistance level, exposure to any specific effect allows you to gradually increase your resistance to it, making that effect weaker, less unreliable, and/or faster to wear off. Immunities are built separately for each specific type of effect, even if they both fall under the same defense - a single toxin or disease, a single method of divination or mind control, etc. At most, resistance to one effect may partially apply to closely related other ones, such as a family of toxins with similar properties, a closely related family of pathogens, or a narrow school of divination or type of mind control method. Building up immunities to every effect can take centuries, for each member of your retinue, and those immunities will not be permanent. The second purchase of a Defense bypasses all of this, giving you blanket immunity to everything it covers.</p>
-<p>Each Defense has an associated rebate, conditional on the traits of your Origin and retinue members, equal to the list price of the qualifying individual’s effective tier after step 1a and capped at 40% of the list price of each Defense stage. One individual can qualify you for multiple rebates, but no individual may be applied to the same rebate twice. The sum of all rebates from the same individual is capped to the list price of the individual’s effective tier after step 1a. Rebate calculations ignore all modifiers to a retinue member after step 1a in their effective tier calculation.</p>
+<p>The descriptions for each Defense represent the starting points for each defense. At the resistance level, exposure to any specific effect allows you to gradually increase your resistance to it, making that effect weaker, less unreliable, and/or faster to wear off. Immunities are built separately for each specific type of effect, even if they both fall under the same defense - a single poison or disease, a single method of divination or mind control, etc. At most, resistance to one effect may partially apply to closely related other ones, such as a family of poisons with similar properties, a closely related family of pathogens, or a narrow school of divination or type of mind control method. Building up immunities to every effect can take centuries, for each member of your retinue, and those immunities will not be permanent. The second purchase of a Defense bypasses all of this, giving you blanket immunity to everything it covers.</p>
+<p>Each Defense has an associated rebate, conditional on the traits of your Origin and retinue members, equal to the list price of the qualifying individual’s effective tier after step 1a and capped at 40% of the list price of each Defense stage. This is a canonicity factor and thus affected by Power Swap. Walk-in Origins are an exception, as they paid nothing to be themselves. One individual can qualify you for multiple rebates, but no individual may be applied to the same rebate twice. The sum of all rebates from the same individual is capped to the list price of the individual’s effective tier after step 1a. Rebate calculations ignore all modifiers to a retinue member after step 1a in their effective tier calculation.</p>
 <p>If you have multiple separate rebates for the same Defense, they’ll stack: three full rebates to the same Defense will make one stage of it free and then reduce the second stage (if applicable) by 20%, while a total of five full rebates will make both stages free. If that happens, any extraneous free copies of that Defense from your Controls or Heritage perks will instead discount those perks by the Defense’s full value, up to the standard cap on that kind of discount. If you sell or otherwise lose a retinue member whose presence granted you a rebate, you’ll lose the rebate as well.</p>`
 // #endregion
 
@@ -380,7 +396,7 @@ defenses.push({
   cost: 5,
   whitelist: ['Body Tune-Up'],
   desc: `
-<p>You have protection from all diseases, toxins, and targeted radiation. Lethal or crippling afflictions will leave you sick enough to most likely stay in bed, unless you really have to move - because you're attacked, for example. Anything short of that will leave you weakened and uncomfortable, but functional.</p>
+<p>You have protection from all diseases, poisons, and targeted radiation. Lethal or crippling afflictions will leave you sick enough to most likely stay in bed, unless you really have to move - because you're attacked, for example. Anything short of that will leave you weakened and uncomfortable, but functional.</p>
 <p>Additionally, you get an extra one-time full heal, identical to the one offered by Body Tune-Up, with each purchase of this Defense. These are counted separately for each member of your retinue, including yourself and anyone acquired after the purchase of this Defense. These may be kept for future use.</p>
 <p>This perk still does not protect against injury or provide any sort of healing factor; if you want one, you’ll have to find it yourself.</p>`,
 })
@@ -413,7 +429,7 @@ defenses.push({
   special: '<Individual> is known as a monster-tamer or otherwise being good with animals.',
   image: 'https://i.ibb.co/vxSvX6v/Creature-Defense.jpg',
   cost: 10,
-  desc: 'Non-sapient living things - beasts, flora, or fungi - will not attack you without provocation, i.e. coming too close to it, its family, its food, or its territory, or appearing too threatening, such by making sudden moves or loud noises. Wildlife will always attempt to obviously scare you off before attacking, including through speech (for creatures capable of it). Extremely hungry wildlife may still approach or stalk you to size you up, but will not ambush you, and you can scare them off with some effort.',
+  desc: 'Non-sapient living things - beasts, flora, or fungi - will not attack you without provocation, i.e. coming too close to it, its family, its food, or its territory, or appearing too threatening, such by making sudden moves or loud noises. Wildlife will always attempt to obviously scare you off before attacking. Extremely hungry wildlife may still approach or stalk you to size you up, but will not ambush you, and you can scare them off with some effort.',
 })
 
 defenses.push({
@@ -461,16 +477,12 @@ defenses.push({
 
 defenses.push({
   uid: 'l1Zz7',
-  title: 'Soul Defense',
+  title: 'Drain Defense',
   category: 'Defense',
   special: '<Individual> can drain or feed on life, mana, or souls.',
   image: 'https://i.imgur.com/XMwNgsN.png',
   cost: 25,
   desc: 'You are the master of your soul. You are protected from all vitality-, mana-, and soul-draining effects. At the resistance level, attempts to feed on you will have diminishing returns, leaving your attacker unable to drain you completely. Waifus who feed on souls or lifeforce can get all the nutrition they need from you or your other waifus without causing harm, even from side effects such as loss of fluids. This protects you and your retinue from third parties, but not vice versa. This perk does not reduce the energy use from your own efforts in any way - you want Inexhaustible for that.',
-  additionalDesc: `
-  <h3 class="font-semibold text-center">Death is Only a Transition</h3>
-  If the local world has a “playable” afterlife, that interacts regularly with the mortal and other planes, R.I.P. rules will not take effect until your soul body is destroyed. Additionally, treat your soul body as your regular body for the purposes of Soul and Fatality Defenses.
-  `,
 })
 
 defenses.push({
@@ -519,7 +531,7 @@ defenses.push({
   special: '<Individual> is known for forcibly bringing out others’ dark sides.',
   image: 'https://i.imgur.com/NzbaAPT.jpg',
   cost: 50,
-  whitelist: ['Soul Defense', 'Polymorph Defense', 'Wyldscape Defense'],
+  whitelist: ['Mind Defense', 'Polymorph Defense', 'Wyldscape Defense'],
   needed: 1,
   desc: 'Metaphysically corruptive effects, whether environmental or targeted in nature, are slower to affect you, with diminishing returns the farther the corruption would take you from your fundamental self. After they wear off, you may choose to retain effects that would normally be permanent (plus any attendant transformations, if you have those defenses) as a sort of superpowered evil side, or a separate alter ego to converse with. These remain fundamentally you, just a different version of you seen through a different lens. Other Defenses such as Body, Stress, Addiction, Mind, and Soul may prove extremely useful, depending on the specifics of such a scenario.',
 })
@@ -613,8 +625,8 @@ perks.push({
 <p>This perk allows you to do just that, via a special app in your company smart device. Any physical copy of merchandise or doujin material may be permanently sacrificed through this app, in an inherently destructive process. A material’s effectiveness scales with its artistic quality, with no requirement that it be purchased. Materials that anyone in your retinue created yourselves, even with Aesthetic or Communication Talents, work just fine. Materials sacrificed must have been created in other worlds, including your Demiplane or Dungeon. Multiple sacrifices may be applied to the same world, whether simultaneously or successively, but each sacrifice may only affect a single world. If you sacrifice material while anyone in your retinue is within the target world, the changes will proliferate over the course of the next week (168 hours). Otherwise, the changes will have already taken full effect the next time anyone in your retinue visits.</p>
 <p>Contractors and their subjects, including their Demiplanes, Dungeons, and registered Catch-a-Ride vehicles including Heavenbuilt Proto, may, by the contractor’s choice, be directly affected by these alterations. By default, they will be aware that any differences created are not the standard way of things, but must discover the exact nature of the changes themselves. Cheat-sheets detailing these alterations, beyond the general theme, are not available.</p>
 <p>Alternatively, every member of the contractor’s retinue who calls the altered world home may be affected, all of the contractor’s subjects, or the contractor as well. The contractor may also choose to only accept physical changes to their retinue, limit mental changes to common knowledge and episodic memories of any altered pasts, or accept all changes. As with Advanced Tempest Runes, any sufficiently-disabling effect on the contractor will have an automatic time limit of 48 hours so they don’t get stuck. If they return to that same transformation within 10 minutes, the time limit will be doubled each time until their streak ends. The contractor may set a shorter limit if they like.</p>
-<p>Potential reality alterations include, but are not limited to: hentaification of a wholesome setting and vice versa, common fashions, aesthetic eras, large-scale genre rewrites, and fusing the target setting with the specific one represented by the sacrificed material (if one exists). This perk, and any that follow from it, will not cleanly resolve any problem in a world without introducing an equal (or greater) number of new ones.</p>
-<p>A fusion setting will have the highest danger rating of all components, but will not add any actual characters from the material’s setting. Instead, the target setting’s locals will be matched to their closest equivalents and their roles and abilities changed to fit, while still remaining recognizable as themselves. This can affect their individual tier ratings.</p>`,
+<p>Potential reality alterations include, but are not limited to: hentaification of a wholesome setting and vice versa, common fashions, aesthetic eras, large-scale genre rewrites, and fusing the target setting with the specific one represented by the sacrificed material (if one exists). This perk, and any that follow from it, follow a karmic balance of sorts: it will not cleanly resolve any problem in a world without introducing at least the same number or degree of new ones.</p>
+<p>A fusion setting will have the highest danger rating of all components, but will not add any actual characters from the material’s setting. Instead, the target setting’s locals will be matched to their closest equivalents and their roles and abilities changed to fit, while still remaining recognizable as themselves; this can affect their individual tier ratings. The one exception to this is for worlds with many alternative continuities, where members of a common cast are present in some continuities but not others. This most frequently occurs in the western superhero genre, but is not limited to such. This perk can spawn in missing cast members with no penalty other than the karmic balance.</p>`,
 })
 
 perks.push({
@@ -849,7 +861,7 @@ genericPerks.push({
   cost: 1,
   whitelist: ['Directly in Companions'],
   special: 'Use directly in companions. Cost 20% more. Chargen only. Not available in Gauntlet PvP.',
-  desc: `Your purchased subject is actually a local capture from your starting world. They are teleported to your starting location and Bound (or not) the same as all the other subjects you purchased. You may purchase this perk once for each purchased subject who happens to be from your starting world. You may not apply this perk to dead targets, or any valued at more than 20% of your intensity- adjusted starting budget, unless otherwise specified.
+  desc: `Your purchased subject is actually a local capture from your starting world. They are teleported to your starting location and Bound (or not) the same as all the other subjects you purchased. You may purchase this perk once for each purchased subject who happens to be from your starting world. You may not apply this perk to dead targets, or any valued at more than 20% of your intensity- adjusted starting budget, after accounting for any waifu perks applied at chargen (including Power Swap).
   <p>If you are a Drop-in or Walk-in and start in a new world, individuals from your homeworld may be dragged along and inducted into your retinue using this perk. If you purchase this together with Extra or Substitute, the relevant subjects will all have been brought to your starting location by fate or coincidence, not teleportation.</p>
   `,
 })
@@ -864,7 +876,7 @@ genericPerks.push({
   whitelist: ['Directly in Companions'],
   desc: `
 <p>This waifu is an original version, captured by a previous contractor and resold to you. All direct effects of previous contractors' controls and perks are removed during reprocessing. This includes Defenses, Talents, and Binding benefits, but not any non-baseline abilities they trained in using their former contractor’s Talents, equipment they wield, or Heritage upgrades applied to them. When you select this perk for a purchase, you will see three options for which specific version of the subject you wish to buy.</p>
-<p>Author directions: roll 6 six-sided dice for each option, twice. (Just use an autoroller.) The sum of the first set of rolls determines the subject’s effective tier after step 4: higher rolls mean both higher tiers and higher prices. Compare to the names you recognize in the regular Catalog to determine what kinds of extra abilities or equipment a used purchase has compared to their baseline self. The sum of the second set of rolls determines the subject’s physical, mental, and/or spiritual state after their experiences with their previous owner: higher rolls mean both more trauma and steeper discounts. The full chart is in the Additional Rules section. A used purchase’s extra abilities and/or equipment will be listed in full for the contractor to see, but their current state will not be visible, beyond its effect on their price.</p>
+<p>Author directions: roll 6 six-sided dice for each option, twice. (Just use an autoroller.) The sum of the first set of rolls determines the subject’s effective tier after step 3: higher rolls mean both higher tiers and higher prices. Compare to the names you recognize in the regular Catalog to determine what kinds of extra abilities or equipment a used purchase has compared to their baseline self. The sum of the second set of rolls determines the subject’s physical, mental, and/or spiritual state after their experiences with their previous owner: higher rolls mean both more trauma and steeper discounts. The full chart is in the Additional Rules section. A used purchase’s extra abilities and/or equipment will be listed in full for the contractor to see, but their current state will not be visible, beyond its effect on their price.</p>
 <p>Unlike fresh clones, subjects bought used have been to their homeworlds personally. Most people have others who care about them, who will likely have strong reactions to the sudden return of a missing person…</p>`,
 })
 
@@ -916,7 +928,7 @@ genericPerks.push({
   desc: `
   <p><b>Cost</b>: Find the purchase price for the subject’s tier at step 1a and the purchase price of the tier of the power’s original owner, then take the difference. Swapping out a Tier 4’s power for a Tier 10’s thus costs 990 credits, while a Tier 5 for a Tier 5 costs 0 and a Tier 6 for a Tier 2 gives you a refund of 48 credits. Only Purchased subjects refund credits if reduced to a lower tier by this perk. Captured subjects grant capture credits, and do not have a refund value.</p>
   <br>
-  <p>This perk replaces your subject’s original powers and skills, including both their original gear and the results of additional training with the appropriate Basic Talent, with a copy of someone else’s. This changes their tier at step 1a and ignores all powers that are counted in steps 2+. The results of any additional training with the original power, through Basic Talents or otherwise, are saved to a backup, should you ever want to switch back. If you purchase this perk for yourself, it will replace your Origin’s powers, if applicable, or previous uses of this perk. Communication Talent will ensure that basic language skills are not lost, only added.</p>
+  <p>This perk replaces your subject’s original powers and skills, including both their original gear and the results of additional training with the appropriate Basic Talent, with a copy of someone else’s. This changes their tier at step 1a and ignores all powers that are counted in steps 0, 1b, or 2+. The results of any additional training with the original power, through Basic Talents or otherwise, are saved to a backup, should you ever want to switch back. If you purchase this perk for yourself, it will replace any powers gained from your Origin, if applicable, or previous uses of this perk. Knowledge is a power. Communication Talent will ensure that basic language skills are not lost, only added.</p>
   <p>Like Template Stacking, this perk does not accept abilities found elsewhere in this catalog or abilities that originated in other CYOAs. All other powers are still allowed, including both “no powers” and Imaginary Tier powers (assuming that you have enough IMG). It’s all the same skill download at our cloning facilities. Unlike Template Stacking, this is the full power, not nerfed down to Tier 4. Subjects whom this perk is purchased for will count as “canon” users of the new power, for all perks and rules that consider canonicity, instead of their original one.</p>
   <p>If you purchase this perk for yourself at chargen or a purchased subject when they’re purchased, the effects are immediate. If you purchase this perk at a later date, or for a captured subject, the person will lack an original power for one week (168 hours) before the new power manifests. This perk cannot be repurchased for that person during that time. If you have Warranty Plan, a subject that this perk is applied to will vanish immediately. Their respawn time, with the new power, will be seven days or your retinue’s standard Warranty Plan respawn, whichever is less.</p>
 `,
@@ -1047,7 +1059,7 @@ genericPerks.push({
   complex: 'target',
   cost: 40,
   image: 'https://i.ibb.co/rdn5hH5/Unison.jpg',
-  desc: 'The enhanced spiritual bond between your Trainer waifu and her mons allows her to blend with one of them, take on its physical traits, and operate as one being, raising her tier at step 6 to the higher of her own or the blended mon’s. Any of her mons are eligible for this, but only one at a time. She will also receive her seventh most iconic or strongest mon from her canon appearances, if she has one, so she can have a full party of six alongside the one she’s blended with.',
+  desc: 'The enhanced spiritual bond between your Trainer waifu and her mons allows her to blend with one of them, take on its physical traits, and operate as one being, raising her tier at step 5 to the higher of her own or the blended mon’s. Any of her mons are eligible for this, but only one at a time. She will also receive her seventh most iconic or strongest mon from her canon appearances, if she has one, so she can have a full party of six alongside the one she’s blended with.',
 })
 
 genericPerks.push({
@@ -1082,7 +1094,7 @@ genericPerks.push({
   image: 'https://i.ibb.co/1QhZdpg/Four-Seasons.jpg',
   cost: 20,
   desc: `Maidenhood is special on Remnant, but not particularly so. Anyone can become one under the right circumstances. By default, this perk may be purchased up to four times, once for each temperate season (Spring, Summer, Fall, Winter). Purchasing this once will elevate a character to T6, if she isn’t already. Repurchases for the same character are allowed, but only one for each season and will not affect a tier further.
-  <p>Additional sets of Maiden mantles become available with each member of your retinue, including yourself, whose effective tier after step five is at least T8: one for each T8, two for each T9, five for each T10, ten for each TX, twenty for each TY, and fifty for each TZ. If one of your waifus is already a Maiden when you capture her, that counts against your total, unless you take a refund for this perk. If this puts you over your cap for a particular mantle, you may not buy any more of that mantle until you’ve raised the cap further.</p>
+  <p>Additional sets of Maiden mantles become available with each member of your retinue, including yourself, whose effective tier after step 4a is at least T8: one for each T8, two for each T9, five for each T10, ten for each TX, twenty for each TY, and fifty for each TZ. If one of your waifus is already a Maiden when you capture her, that counts against your total, unless you take a refund for this perk. If this puts you over your cap for a particular mantle, you may not buy any more of that mantle until you’ve raised the cap further.</p>
   `,
 })
 

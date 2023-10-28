@@ -40,7 +40,7 @@ export const difficultyOptions = [
     image: 'https://i.imgur.com/fP1EdmJl.png',
     intensity: -1,
     desc: `
-    <p>Your spouse or significant other is a contractor like you, but the two of you are tied much more closely than the friends option below. The two of you share full access to a joint account tied to both of your smart devices. A member of your retinue may be a companion to one of you and merely a familiar to the other.
+    <p>Your spouse or significant other is a contractor like you, but the two of you are tied much more closely than the friends option below. Your partner must be someone from your homeworld that you know personally. The two of you share full access to a joint account tied to both of your smart devices. A member of your retinue may be a companion to one of you and merely a familiar to the other.
     </p>
     <p>You will only pay for the more expensive of your two Origins. The chosen binding method treats you as equal masters, ensuring that your love never fades. (If you have the Symbiote, one of you will usually, but not necessarily, be the queen.) Heritages are purchased separately, but the other of you can buy any Heritage that one of you has at half-price, after all discounts and ignoring the usual discount cap. This does not apply to the IMG costs of Heritage capstones.
     </p>
@@ -152,6 +152,33 @@ export const difficultyOptions = [
     type: 'binding',
   },
   {
+    uid: 'fFdOa',
+    title: 'Ancestral Diversity Intensity',
+    image: '',
+    intensity: -1,
+    desc: 'The perk Ancestral Diversity is available for purchase, allowing you access to additional Heritages beyond your first. You may also acquire additional Heritages through other means, such as PvP rewards or other contractors using their Heritage-spreading perks (Dragon Thrall, Philosopher’s Transmortality Engine, An Answer to Reason, etc.) on you.',
+    category: 'difficulty',
+    type: 'heritage',
+  },
+  {
+    uid: 'fFdOs',
+    title: 'Only One',
+    image: '',
+    intensity: 0,
+    desc: 'Once you have your first Heritage, you may not gain a second by any means. Heritages may not be refunded, so choose wisely.',
+    category: 'difficulty',
+    type: 'heritage',
+  },
+  {
+    uid: 'fFdOd',
+    title: 'Heritages Banned',
+    image: 'https://i.imgur.com/ULiZG6Dl.jpg',
+    intensity: 1,
+    desc: 'Heritages are not available for purchase.',
+    category: 'difficulty',
+    type: 'heritage',
+  },
+  {
     uid: '9FQbs',
     title: 'Standard',
     image: 'https://i.imgur.com/gRQnOrcl.jpg',
@@ -233,6 +260,33 @@ export const difficultyOptions = [
     type: 'leveling',
   },
   {
+    uid: 'hbuNo',
+    title: 'Standard',
+    image: '',
+    intensity: 0,
+    desc: 'Everything in the Demiplanes & Dungeons section is available as normal.',
+    category: 'difficulty',
+    type: 'home',
+  },
+  {
+    uid: 'hbuNa',
+    title: 'Nomad',
+    image: '',
+    intensity: 1,
+    desc: 'Pocket Apartment is not available for purchase. While this modifier is active, All Roads Lead to Home, Rainbow Bridge, and Demiplane and its upgrades (but not Dungeon) will all still be available for purchase, provided you have a company-provided space such as Dragon Cabin or enclosed Ride. Multicore Neural Leyline’s normal requirement of Pocket Apartment will similarly be waived, as the Jouten is itself a company-provided space.',
+    category: 'difficulty',
+    type: 'home',
+  },
+  {
+    uid: 'hbuNs',
+    title: 'Lawless',
+    image: '',
+    intensity: 2,
+    desc: 'In addition to the effects of Nomad, Demiplane and its upgrades are also unavailable. The Outer Shell rule (in the Defenses section) still applies.',
+    category: 'difficulty',
+    type: 'home',
+  },
+  {
     uid: 'ufRzg',
     title: 'Open Exploration',
     image: 'https://i.imgur.com/eBqIibYl.jpg',
@@ -291,7 +345,7 @@ export const difficultyOptions = [
     title: 'Expiry',
     image: '',
     intensity: +2,
-    desc: 'In addition to the effects of A La Carte, each copy of the perk will only work once and will need to be purchased again afterward. As compensation, the price of each warranty is only 20 credits. Express Delivery still applies to all copies of Warranty Plan.',
+    desc: 'In addition to the effects of À la carte, each copy of the perk will only work once and will need to be purchased again afterward. As compensation, the price of each warranty is only 20 credits. Express Delivery still applies to all copies of Warranty Plan.',
     category: 'difficulty',
     type: 'warranty',
   },
@@ -336,7 +390,7 @@ export const difficultyOptions = [
     title: 'Hardcore',
     image: 'https://i.imgur.com/uYl1YEwl.jpg',
     intensity: 3,
-    desc: 'Your account is removed from R.I.P. eligibility. Should you ever die, even temporarily, you will permanently lose your contractor status and all company perks and functions. If you also have Only Familiars or higher, an Executor will have no purpose and you may not choose one.',
+    desc: 'Your account is removed from R.I.P. eligibility. Should you ever die in a way that triggers R.I.P. rules, you will permanently lose your contractor status and all company perks and functions. If you also have Only Familiars or higher, an Executor will have no purpose and you may not choose one.',
     category: 'difficulty',
     type: 'death',
   },
@@ -414,15 +468,6 @@ export const difficultyOptions = [
     desc: 'Crippling Categorical Weaknesses, as described in the Purchases section of Basic Rules, are left as-is for your entire retinue. You may still find your own methods to mitigate these.',
     category: 'difficulty',
     type: 'other1',
-  },
-  {
-    uid: 'HTCEx',
-    title: 'Heritages Banned',
-    image: 'https://i.imgur.com/ULiZG6Dl.jpg',
-    intensity: 1,
-    desc: 'Heritages are not available for purchase.',
-    category: 'difficulty',
-    type: 'other2',
   },
   {
     uid: 'l4UvD',

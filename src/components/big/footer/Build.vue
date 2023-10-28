@@ -302,6 +302,7 @@ const archetype = {
   dr: 'Dragon',
   th: 'Transhuman',
   ou: 'Outsider',
+  pi: 'Pirate',
 }
 
 const originText = computed(() => {

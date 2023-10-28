@@ -85,7 +85,7 @@
               @updateUID="(uid: number) => char.uid = uid"
               @updateTier="(tier: number) => {char.tier = tier; char.price=CHAR_COSTS[tier]}"
             />
-            <Input v-if="['Extra', 'Substitute', 'Possess'].includes(char.origin)" v-model="char.price" class="w-28" placeholder="Cost" />
+            <Input v-if="['Extra', 'Substitute', 'Possess'].includes(char.origin)" v-model.number="char.price" class="w-28" placeholder="Cost" />
           </div>
         </div>
       </div>

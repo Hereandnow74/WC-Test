@@ -4,6 +4,17 @@
     <div class="flex gap-2 mx-auto">
       <Button size="Small" bg-color="bg-orange-500" label="Propose Waifu Perk" @click="showAddWaifuPerk = true" />
       <Toggle v-model="filterAvailable" label="Show only available ones" />
+      <div class="flex items-center gap-1">
+        Sort by:
+        <div
+          class="flex items-center bg-gray-200 dark:bg-gray-700 px-1 rounded cursor-pointer"
+          :class="sortAdded ? 'border border-red-500' : ''"
+          title="Show new SWP's first"
+          @click="sortAdded = !sortAdded"
+        >
+          <bi:calendar2-date class="inline-block rounded" />
+        </div>
+      </div>
     </div>
     <div
       ref="specificList"
@@ -14,6 +25,7 @@
         v-for="waifu in filterAvailable ? specificPerksFiltered : infiniteSWPs"
         :key="waifu.uid"
         :waifu-perk="waifu"
+        :class="filterAvailable && specificPerksFiltered.length === 1 ? 'self-start' : ''"
         @changeModalImage="(img: string) => modalImage = img"
       />
     </div>
@@ -42,6 +54,8 @@ const specificList = ref<HTMLElement|null>(null)
 const SWPContainer = ref<HTMLElement|null>(null)
 const modalImage = ref('')
 
+const sortAdded = ref(false)
+
 const filterAvailable = ref(false)
 
 const specificPerksWithDLC = computed(() => !settings.value.allChosenAuthors[0] || settings.value.allDLCTypes[0]
@@ -69,14 +83,16 @@ onMounted(() => useTooltips())
 
 watch(modalImage, () => showModal.value = true)
 
+const sortedSWPs = computed(() => sortAdded.value ? [...specificPerksWithLocal.value].reverse() : specificPerksWithLocal.value)
+
 const startingSWPCount = 10
-const infiniteSWPs = ref(specificPerksWithLocal.value.slice(0, startingSWPCount))
-watch(specificPerksWithLocal, () => infiniteSWPs.value = specificPerksWithLocal.value.slice(0, startingSWPCount))
+const infiniteSWPs = ref(sortedSWPs.value.slice(0, startingSWPCount))
+watch(sortedSWPs, () => infiniteSWPs.value = sortedSWPs.value.slice(0, startingSWPCount))
 
 useInfiniteScroll(
   specificList,
   () => {
-    infiniteSWPs.value.push(...specificPerksWithLocal.value.slice(infiniteSWPs.value.length, infiniteSWPs.value.length + startingSWPCount))
+    infiniteSWPs.value.push(...sortedSWPs.value.slice(infiniteSWPs.value.length, infiniteSWPs.value.length + startingSWPCount))
   },
   { distance: 10 },
 )

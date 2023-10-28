@@ -31,11 +31,11 @@ fullHeritagesDLC.push({
   image: 'https://i.imgur.com/z1kIfXzl.png',
   cost: 75,
   freebies: {
-    defensePerks: [{ title: 'Soul Defense', cost: 0, count: 1 }, { title: 'Stress Defense', cost: 0, count: 1 }],
+    defensePerks: [{ title: 'Drain Defense', cost: 0, count: 1 }, { title: 'Stress Defense', cost: 0, count: 1 }],
   },
   tree: 'Psychopomp',
   desc: `
-  What some might call immaterial, or others an illusion, you reign over. You may harness the souls of others for your own purposes, refusing to allow them to pass into their intended afterlife until you decide otherwise. Take one copy of Stress Defense and Soul Defense for free. Your chosen theme of psychopomp will influence how you take these souls, but you will always have the ability to do so. Souls can be used to amplify spells, be bound to objects, or devoured for their knowledge and skills. A soul used to power a spell will increase the spell’s potency by a measure proportional to the soul’s Tier. A soul bound to an item may empower that item with aspects it held in life, though every result is as different as the soul in question. 
+  What some might call immaterial, or others an illusion, you reign over. You may harness the souls of others for your own purposes, refusing to allow them to pass into their intended afterlife until you decide otherwise. Take one copy of Stress Defense and Drain Defense for free. Your chosen theme of psychopomp will influence how you take these souls, but you will always have the ability to do so. Souls can be used to amplify spells, be bound to objects, or devoured for their knowledge and skills. A soul used to power a spell will increase the spell’s potency by a measure proportional to the soul’s Tier. A soul bound to an item may empower that item with aspects it held in life, though every result is as different as the soul in question. 
     <p>Should the soul possess no other value, you may consume it. Consuming a soul does not inherently destroy it; by default, it purifies it, sending the soul to whatever afterlife it may fit into. However, some souls may be so tainted by their actions in life, or unlife, that they are not fit for reincarnation or rest. These souls, you may choose to devour completely, stripping them of both karma and knowledge. Souls devoured this way are permanently destroyed, removed from any cycle of death and rebirth. Souls devoured for knowledge offer up only the skills they used as well as the secrets they guarded  most fervently. Forgotten lore or information, no matter how important, remains clouded or is entirely forgotten by the dead.</p>
     <p>Bound souls can be kept within your own, shielding them from outside effects. This will not protect a retinue member’s physical body, and until you free their soul from your own, Warranty Plan will not activate. Souls held within your own can generate Devotion if you have a Dungeon. If you possess the Burial Shroud, any souls you absorb through its functions or the Deep Weave perk are filtered through this ability, giving you all the same benefits. If you were not already, this perk raises your effective tier to 5.</p>
     `,
@@ -65,7 +65,7 @@ fullHeritagesDLC.push({
   cost: 175,
   freebies: {
     talentPerks: [{ title: 'Martial Talent', cost: 0, count: 1 }],
-    defensePerks: [{ title: 'Soul Defense', cost: 0, count: 1 }, { title: 'Corruption Defense', cost: 0, count: 1 }],
+    defensePerks: [{ title: 'Drain Defense', cost: 0, count: 1 }, { title: 'Corruption Defense', cost: 0, count: 1 }],
   },
   tree: 'Psychopomp',
   desc: `Deаth flows around, and through you. Take Martial Talent, and one copy of Soul and Corruption Defense for free. You may now take on the form of the Harbinger at will, embodying the mythology you have selected. The Inner-Deаth coiled within your form has unleashed itself and can now be donned at a moment’s notice, be it a cloak and hood upon a face of bone, a jackal’s fangs and claws grasping a set of scales, or a pair of wings and a horn. All who gaze upon your form now know you to be Of Deаth, filling those without the fortitude to look the End in the face with fear befitting their stature. While in your Harbinger form, you may interact with a living being’s soul separate from their physical form, and freely enter into any unwarded realms or worlds meant to house spirits. So long as a realm is not itself metaphysically locked by some power or law, it may be entered. 
@@ -368,12 +368,12 @@ fullHeritagesDLC.push({
   cost: 125,
   freebies: {
     talentPerks: [{ title: 'Soul Talent', cost: 0, count: 1 }],
-    defensePerks: [{ title: 'Soul Defense', cost: 0, count: 1 }, { title: 'Environmental Defense', cost: 0, count: 1 }],
+    defensePerks: [{ title: 'Drain Defense', cost: 0, count: 1 }, { title: 'Environmental Defense', cost: 0, count: 1 }],
   },
   tree: 'Wendigo',
   desc: `Your appetite has grown to desire something more than simple flesh. Choose one element, either physical or conceptual. In addition to flesh, you are now able to devour and feast on this element to grow your Hunting Ground and Wendigo form. The greater the size of your Wendigo form, the greater the amount of your chosen element you can consume at once. If you were unable to do so already, you may now alter the aesthetic of the atmospheric effects within your Hunting Ground to match your selected element.
     <p>Retinue members within your stomach will benefit from your new eating habits and may now be gradually infused with the properties of your chosen element when it is consumed. Devouring a sufficient amount of an element will gradually make members immune to it and allow them to infuse it into their abilities and powers. Retinue members will eventually be able to fully morph their body into the respective element as well as consume it themselves to grow their power and strength. Such feats require prolonged exposure and infusion, which can take months to fully achieve. The infusion of an element is by default spread equally amongst all individuals within your stomach, though one can be prioritized over the other if you so choose. Waifu with an inherent affinity for an element will be infused at a much faster rate than others.</p>
-    <p>If you have purchased the Just Like Me perk, your Lesser Wendigos will also be able to consume your chosen element, albeit in smaller proportions than you. Consumption of an element by a Lesser Wendigo will contribute to the growth of a Hunting Ground. Take Soul Talent and one copy of Soul Defense and Environmental Defense for free.</p>
+    <p>If you have purchased the Just Like Me perk, your Lesser Wendigos will also be able to consume your chosen element, albeit in smaller proportions than you. Consumption of an element by a Lesser Wendigo will contribute to the growth of a Hunting Ground. Take Soul Talent and one copy of Drain Defense and Environmental Defense for free.</p>
     `,
   whitelist: ['The Great Hunger'],
 })
@@ -386,12 +386,12 @@ fullHeritagesDLC.push({
   image: 'https://i.imgur.com/KpFG2thl.png',
   cost: 120,
   freebies: {
-    defensePerks: [{ title: 'Soul Defense', cost: 0, count: 1 }, { title: 'Fatality Defense', cost: 0, count: 1 }],
+    defensePerks: [{ title: 'Drain Defense', cost: 0, count: 1 }, { title: 'Fatality Defense', cost: 0, count: 1 }],
   },
   tree: 'Wendigo',
   desc: `Wendigos are the embodiment of selfishness and care only for themselves. You are now able to grow in power by doing the unthinkable and consuming the flesh of your very own retinue members. By consuming their flesh you can acquire all the biological and racial powers and abilities they may have. The amount of power you receive depends on their status in your retinue and the quantity of their flesh you have consumed
     <p>Consuming a familiar in its entirety will provide you with a replica of all biological and racial abilities they may have. Consuming a companion in their entirety will provide you with all the biological and racial abilities they have at one tier higher than their current strength. IMG tier companions will only provide you with an exact copy of their powers. The greater the bond you had with your companion or familiar, the more natural these abilities will feel when first utilized and the easier it will be to integrate them with any you possessed beforehand.</p>
-    <p>If you have purchased the Overhauled Menu perk, you will no longer be limited to purely biological powers or traits and will be able to acquire the soul, psychic, or conceptual abilities and characteristics of your retinue members linked to your respective element. Take one copy of Soul Defense and  Fatality Defense for free.</p>
+    <p>If you have purchased the Overhauled Menu perk, you will no longer be limited to purely biological powers or traits and will be able to acquire the soul, psychic, or conceptual abilities and characteristics of your retinue members linked to your respective element. Take one copy of Drain Defense and  Fatality Defense for free.</p>
     `,
   whitelist: ['The Great Hunger'],
 })
@@ -519,7 +519,7 @@ fullHeritagesDLC.push({
   cost: 45,
   freebies: {
     talentPerks: [{ title: 'Science Talent', cost: 0, count: 1 }, { title: 'Aesthetic Talent', cost: 0, count: 1 }],
-    defensePerks: [{ title: 'Possession Defense', cost: 0, count: 1 }, { title: 'Wild Defense', cost: 0, count: 1 }],
+    defensePerks: [{ title: 'Wild Defense', cost: 0, count: 1 }],
   },
   tree: 'Mastermind',
   desc: `A motor pool is added to your Estate. A fleet of  low quality off brand experimental vehicles is acquired for you to use as your signature Sick Ride, though for insurance purposes only one vehicle is available for use at a time. They are all repaired, retrofitted and upgraded to the local modern standards, of course. If you already own or later acquire a small or personal vehicle we can make an assembly run of that vehicle instead. In either case, your Sick Ride qualifies and benefits from any Catch-a-Ride perks, ignoring any restrictions.
@@ -576,12 +576,12 @@ fullHeritagesDLC.push({
   image: 'https://i.imgur.com/5I9NUSKl.jpg',
   cost: 200,
   freebies: {
-    defensePerks: [{ title: 'Information Defense', cost: 0, count: 1 }, { title: 'Soul Defense', cost: 0, count: 1 }, { title: 'Mind Defense', cost: 0, count: 1 }, { title: 'Trace Defense', cost: 0, count: 1 }],
+    defensePerks: [{ title: 'Information Defense', cost: 0, count: 1 }, { title: 'Drain Defense', cost: 0, count: 1 }, { title: 'Mind Defense', cost: 0, count: 1 }, { title: 'Trace Defense', cost: 0, count: 1 }],
   },
   tree: 'Mastermind',
   desc: `Have a desire or need for more Minions? You now have a temporary capture method based on your binding technique. Simple, mass deployable, and persistent, anything that could be bound can instead become a Minion under your control. They become the most appropriate of the types you have purchased, and they aren't counted towards your normal limit. However, these methods are all temporary, and can be disabled or countered in various ways, the most obvious being described below. Tier 1 beings are easily captured, while anything with a stronger will becomes progressively more difficult to ensnare, some merely shaking the effect off while others being completely oblivious to it.
     <p>Like normal Bindings, anyone not of the age of maturity can't be affected, so be wary of meddling kids thwarting your plans.</p>
-    <p>To protect you from getting caught in your own control system, you gain a copy of Information Defense, Mind Defense, Soul Defense, and Trace Defense. Your Personality Package will gain some example methods and schema to implement these control systems.</p>
+    <p>To protect you from getting caught in your own control system, you gain a copy of Information Defense, Mind Defense, Drain Defense, and Trace Defense. Your Personality Package will gain some example methods and schema to implement these control systems.</p>
     <p><b>Stamp: </b>You may put your Stamp into a specially prepared printing press to create Stickers or temporary Tattoos. As long as your Stamp is in the machine, anyone who applies a Sticker or Tattoo to themselves becomes one of your Minions over the course of three days. The art objects don't wash off, but can easily be yanked off like a decent adhesive bandage. Removing your Stamp from the machine renders the rest of the production run useless, and new one must be started and distributed to recapture or get new Minions.</p>
     <p><b>Stamp, Empty Hand: </b>If you have given up your Stamp for the Empty Hand perk, your only recourse for expanding your Minion pool is through written Contracts and conscious acceptance of them. You may write a Contract that invites someone to work for you and they can accept via signature as long as they understand the terms, though believing the terms isn't necessary. If either party violates part of the Contract, and the other party becomes aware of it they may end the Contract immediately. You may create standard Contracts via a template or printing service, however your actual signature must also be used as part of the agreement.</p>
     <p><b>Tempest Jewelry: </b>You can have imitations of your Tempest Jewelry manufactured by locals and distributed as you see fit. Each artisan requires an inactive article to work from, taking up one of your stocks. Anyone who puts on a manufactured article won't ever consider taking it off, and becomes a Minion over the course of a week. Similar to the normal Tempest Jewelry, this will also increase their libido, self confidence, and feelings of personal attractiveness, though they will always drop below your proper companions in the hierarchy. Removing or damaging the article releases the pseudo-binding, and renders the article useless.</p>

@@ -24,9 +24,11 @@ export interface Swap {
 
 export interface SWP {
   uid: string
+  charUID: number
   title: string
   tier: number
   cost: number
+  costT?: number
   refund: number
 }
 

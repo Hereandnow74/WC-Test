@@ -246,12 +246,12 @@ export function copyText() {
   full += activeChallenges.value.length ? `${buildString('Challenges', activeChallenges.value, fullCost)}\n` : ''
 
   full += difficulties.value.length
-    ? `Difficulty [${difficultyRating.value}] \n${difficulties.value.reduce((a, x) => { if (x.cost) fullCost.c -= x.cost; return a += `${x.title} ${x.intensity || ((x.cost || 0) * -1) || 0}\n` }
+    ? `Intensity [${difficultyRating.value}] \n${difficulties.value.reduce((a, x) => { if (x.cost) fullCost.c -= x.cost; return a += `${x.title} ${x.intensity || ((x.cost || 0) * -1) || 0}\n` }
       , '')}`
     : ''
 
   full += intensities.value.length
-    ? `Intensity \n${intensities.value.reduce((a, x) =>
+    ? `Mode \n${intensities.value.reduce((a, x) =>
       a += `${x.title} +${x.intensity > 10 ? x.intensity : Math.round(baseBudgetAfter.value * x.intensity)} [${(fullCost.c += x.intensity > 10 ? x.intensity : Math.round(baseBudgetAfter.value * x.intensity), fullCost.c)}]\n\n`
     , '')}`
     : ''

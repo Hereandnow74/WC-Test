@@ -186,7 +186,7 @@
 import type { PropType } from '@vue/runtime-core'
 import { findIndex, intersection } from 'lodash-es'
 import TextArea from '../basic/TextArea.vue'
-import { CHAR_COSTS, CHAR_COSTS_TICKET, waifusThatHasPerk, waifuTags } from '~/data/constants'
+import { CHAR_COSTS, CHAR_COSTS_TICKET, waifusThatHasPerk, waifuTags, useAllChars } from '~/data/constants'
 import { waifuPerksObject } from '~/data/waifu_perks'
 import { imageLink, lazyLoadSingleImg } from '~/logic'
 import { SavedChar } from '~/store/chargen'
@@ -243,6 +243,10 @@ const tags = computed(() => {
   let t = [] as string[]
   if (props.char.tags) t = props.char.tags
   if (props.char?.swap?.tags) t = props.char.swap.tags
+  if (props.char.perk?.charUID) {
+    const { allCharsObject } = useAllChars()
+    t = [...allCharsObject.value[props.char.perk?.charUID].b]
+  }
   // else {
   //   if (props.char.swap)
   //     t.push(...allCharsObject.value[props.char.swap.uid].b)

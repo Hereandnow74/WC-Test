@@ -11,7 +11,7 @@
       <div class="flex gap-2 flex-wrap">
         <Input v-model="startingWorld" label="World" class="flex-grow" placeholder="Starting World" :error-message="errors.startingWorld" />
         <Input v-model="length" label="Legnth" class="w-34" placeholder="Length" :error-message="errors.length" />
-        <AnythingInput v-model="status" class="w-28" placeholder="Scope" :list="statuses" :error-message="errors.status" />
+        <AnythingInput v-model="status" class="w-28" placeholder="Status" :list="statuses" :error-message="errors.status" />
       </div>
       <div v-if="tags.length" class="flex gap-x-3 flex-wrap">
         Tags:

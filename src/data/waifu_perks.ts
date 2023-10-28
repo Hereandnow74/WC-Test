@@ -208,7 +208,7 @@ export const waifu_perks: WaifuPerk[] = [
     tier: 6,
     image: 'https://i.imgur.com/SVR08kal.png?1',
     cost: 45,
-    desc: 'Asuka is instead Shikinami Asuka from Rebuild. Compared to Souryuu Asuka, she has greater piloting experience, her ground combat ability and personal Lance of Longinus from the Honkai Impact 3rd collaboration, and a remnant of Bardiel in her eye that gives her a greater talent for AT Field manipulation. She can also activate the remnant to enter a berserker mode that temporarily raises her tier rating at step 6. If Asuka\'s tier before activating this Angel Blood is T9 or below, it will add one tier to her rating; if she\'s already T10, it will double her power but not raise her tier any further Without practice, Angel Blood can only be activated for five minutes at at a time and has a cooldown of one week (168 hours).',
+    desc: 'Asuka is instead Shikinami Asuka from Rebuild. Compared to Souryuu Asuka, she has greater piloting experience, her ground combat ability and personal Lance of Longinus from the Honkai Impact 3rd collaboration, and a remnant of Bardiel in her eye that gives her a greater talent for AT Field manipulation. She can also activate the remnant to enter a berserker mode that temporarily raises her tier rating at step 5. If Asuka\'s tier before activating this Angel Blood is T9 or below, it will add one tier to her rating; if she\'s already T10, it will double her power but not raise her tier any further Without practice, Angel Blood can only be activated for five minutes at at a time and has a cooldown of one week (168 hours).',
   },
   {
     uid: 'jhlDw',
@@ -815,7 +815,7 @@ export const waifu_perks: WaifuPerk[] = [
     tier: 7,
     image: 'https://i.imgur.com/BPOzyIY.jpg?1',
     cost: 50,
-    desc: 'The Metroid DNA from Fusion is active in Samus\u2019s system, turning her into a succuboid with incredible psychic potential. Lifeforce is a required part of her diet; physical contact is not recommended without Soul Defense. She\u2019ll gradually mutate into a human-Metroid hybrid, then follow the SR-388 Metroids\u2019 life-cycle into the queen stage\u2026 and beyond. Once she\u2019s become a Metroid queen, she can learn to project a humanoid form for regular interactions; this ability benefits from Bifurcation. She may also lay Metroid eggs at that stage and higher, but only voluntarily and not without extreme persuasion. Her Metroid offspring will also follow the SR-388 life-cycle and are limited to stages lower than her own. Metroid Samus qualifies for special Alterzelu Symbiote theming. If you already have Justin Bailey, you may still buy this perk, pre-applied to a new Samus, for 100 credits.',
+    desc: 'The Metroid DNA from Fusion is active in Samus\u2019s system, turning her into a succuboid with incredible psychic potential. Lifeforce is a required part of her diet; physical contact is not recommended without Drain Defense. She\u2019ll gradually mutate into a human-Metroid hybrid, then follow the SR-388 Metroids\u2019 life-cycle into the queen stage\u2026 and beyond. Once she\u2019s become a Metroid queen, she can learn to project a humanoid form for regular interactions; this ability benefits from Bifurcation. She may also lay Metroid eggs at that stage and higher, but only voluntarily and not without extreme persuasion. Her Metroid offspring will also follow the SR-388 life-cycle and are limited to stages lower than her own. Metroid Samus qualifies for special Alterzelu Symbiote theming. If you already have Justin Bailey, you may still buy this perk, pre-applied to a new Samus, for 100 credits.',
   },
   {
     uid: 'RNANv',
@@ -991,11 +991,24 @@ export const waifu_perks: WaifuPerk[] = [
     title: 'Herrscher of the Void',
     waifu: [
       'Void Drifter',
-      'Ich Liebe Dich',
     ],
     from: 'Honkai Impact',
     waifuUID: [
       'ojHDF',
+    ],
+    tier: 8,
+    image: '/img/waifu_perks/compressed/image128.png',
+    cost: 150,
+    desc: 'Kiana has mastered the powers of the Void and is no longer haunted by the Herrscher personality of Sirin, her past life. Purchased versions of Kiana will always have this perk, as will any captured after the events of Chapter 25',
+  },
+  {
+    uid: 'gC8zZ',
+    title: 'Herrscher of the Void (K423)',
+    waifu: [
+      'Ich Liebe Dich',
+    ],
+    from: 'Honkai Impact',
+    waifuUID: [
       'tiCHF',
     ],
     tier: 8,
@@ -1011,10 +1024,10 @@ export const waifu_perks: WaifuPerk[] = [
     ],
     from: 'Honkai Impact',
     waifuUID: [
-      'gC8zD',
+      'gC8zZ',
     ],
     perkUID: [
-      'gC8zD',
+      'gC8zZ',
     ],
     image: '/img/waifu_perks/compressed/image194.png',
     cost: 20,
@@ -3966,9 +3979,9 @@ export const DLCwaifu_perks: WaifuPerk[] = [
     waifuUID: [
       4917738,
     ],
-    tier: 10,
+    tier: 8,
     image: 'https://i.imgur.com/tMy1Rggl.jpg',
-    cost: 980,
+    cost: 180,
     discount: 0,
     costT: 0,
     desc: 'Founding leader of the Band of the Hawk, Griffith has chosen to cast away his humanity, sacrifice his fellow companions and ascend towards a new level of existence as a member of the Angels of Desire, the God Hand. Reborn from the deepest darkness of the Abyss, Griffith has become Femto, a being feared or respected by even the greatest of monsters of the Astral and Physical world. Able to twist reality and manipulate the flow of cause and effect to his advantage, few can hope to stand against the Chosen One of the Idea of Evil. Griffith will always have this perk if captured after transcending his humanity during the ritual of the Eclipse. ',

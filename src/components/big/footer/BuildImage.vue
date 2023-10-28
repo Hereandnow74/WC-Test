@@ -292,6 +292,7 @@ const archetype = {
   dr: 'Dragon',
   th: 'Transhuman',
   ou: 'Outsider',
+  pi: 'Pirate',
 }
 
 const originText = computed(() => {
@@ -337,7 +338,7 @@ function createImage() {
               confirmDialog('Image copied successfully.', 'info')
             }
             catch (error) {
-              confirmDialog('Your browser don\'t support <b>ClipboardItem</b>, you can google how to turn it on.', 'info')
+              confirmDialog('Your browser don\'t support <b>clipboardItem</b>, you can google how to turn it on. Solution for Firefox: go to <b>about:config</b> (write it where you write urls) -> search for <b>clipboardItem</b> -> set dom.events.asyncClipboard.clipboardItem to <b>true</b>', 'info')
             }
           }
         })

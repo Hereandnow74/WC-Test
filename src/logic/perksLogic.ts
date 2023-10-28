@@ -291,6 +291,8 @@ export function symbioteAvailable(bin: PerkFull): boolean {
     return true
   if (!bin.whitelist && findIndex(binding.value, { uid: 'grbul' }) !== -1)
     return true
+  if (!bin.whitelist && findIndex(binding.value, { title: 'Additional Binding' }) !== -1)
+    return true
   if (bin.whitelist && intersection(allEffects.value, bin.whitelist).length >= (bin.needed || bin.whitelist.length))
     return true
   return false
@@ -339,7 +341,12 @@ const heritageTrees = computed(() => {
 
 export function heritageAvailable(hr: Heritage): boolean {
   const { heritage } = useStore()
-  if ((heritageTrees.value.length === 0 || hr.title === 'Ancestral Diversity') && !hr.whitelist) { return true }
+  if (hr.title === 'Ancestral Diversity')
+    return simpleIsAvailable(hr)
+
+  if (heritageTrees.value.length === 0 && !hr.whitelist) {
+    return true
+  }
   else {
     if (heritageTrees.value.includes(hr.tree))
       return simpleIsAvailable(hr)
@@ -454,7 +461,7 @@ export function talentAvailable(tlt: PerkFull): boolean {
       return true
     if (tlt.title === 'Inexhaustible'
       && findIndex(talentPerks.value, { title: tlt.whitelist[0] }) !== -1
-      && findIndex(defensePerks.value, x => x.title === 'Soul Defense' && x.count && x.count >= 2) !== -1)
+      && findIndex(defensePerks.value, x => x.title === 'Drain Defense' && x.count && x.count >= 2) !== -1)
       return true
   }
 

@@ -70,6 +70,27 @@
       </table>
     </div>
 
+    <h3 class="text-2xl font-semibold text-center">
+      Quick Intensity Settings
+    </h3>
+    <div class="flex gap-8 flex-wrap mx-auto md:px-10">
+      <template v-for="diff, n in difficultySliders" :key="n">
+        <Range v-if="diff.list.length > 1" :list="diff.list" :titles="diff.titles" @input="(event)=> chooseQuick(event.target.value, diff)" />
+      </template>
+    </div>
+    <div class="flex gap-2 justify-center flex-wrap mx-auto md:px-10 my-6 font-semibold">
+      <template v-for="diff, n in difficultySliders" :key="n">
+        <Toggle
+          v-if="diff.list.length === 1"
+          :value="allEffects.includes(diff.titles[0])"
+          :label="`${diff.titles[0]} [${diff.list[0] > 0 ? '+'+diff.list[0] : diff.list[0]}]`"
+          @input="()=> chooseQuick(0, diff)"
+          @change="()=> chooseQuick(0, diff)"
+          @click="()=> chooseQuick(0, diff)"
+        />
+      </template>
+    </div>
+
     <div
       class="mt-4 column-gap"
       :class="settings.columns !== 'auto' ? `column-count-${settings.columns}` : 'md:column-count-2 xl:column-count-3 4xl:column-count-4 5xl:column-count-5'"
@@ -145,14 +166,24 @@
 </template>
 
 <script lang='ts' setup>
-import { clamp, findIndex } from 'lodash-es'
-import { CHAR_COSTS, CHAR_COSTS_FULL, WORLD_RATINGS_DF } from '~/data/constants'
+import { find, findIndex } from 'lodash-es'
 import { difficultyOptions, difficultyRules } from '~/data/difficulty'
 import { randomString, useTooltips } from '~/logic/misc'
-import { difficultyAvailable, chooseDifficulty, pickSimplePerk, chooseIntensity } from '~/logic/perksLogic'
+import { difficultyAvailable, chooseDifficulty, pickSimplePerk } from '~/logic/perksLogic'
 import { useStore } from '~/store/store'
+import { useDifficulty } from '~/store/difficulty'
 
-const { settings, difficultyRating, captureKoeff, sellKoeff, difficulties, allEffects } = useStore()
+const testRange = ref(0)
+
+const { settings, difficulties, allEffects } = useStore()
+const {
+  worldDifficultyRow,
+  captureRow,
+  captureExtraRow,
+  sellRow,
+  combinedIMGCapture,
+  combinedIMGSell,
+} = useDifficulty()
 
 let savedType = ''
 const typeTitles = {
@@ -160,6 +191,8 @@ const typeTitles = {
   team: 'Team',
   payment: 'Payment',
   binding: 'Bindings',
+  heritage: 'Heritages',
+  home: 'Personal World',
   template: 'Template',
   defenses: 'Defenses',
   leveling: 'Leveling',
@@ -225,42 +258,16 @@ const drx = {
   `,
 }
 
-const worldDifficultyRow = computed(() => {
-  const budgetRow = WORLD_RATINGS_DF.slice(1).map(w => Math.round(Math.round(w * (2.5 / (clamp(difficultyRating.value, 0, 10) + 1.5)) / 5) * 5))
-  return ['Budget', ...budgetRow]
-})
-
-const captureRow = computed(() => {
-  return ['Capture', ...CHAR_COSTS.slice(1, -3).map(cost => Math.floor(cost * clamp(difficultyRating.value, 0, 10) * captureKoeff.value * 0.16))]
-})
-const captureExtraRow = computed(() => {
-  return ['Capture Extra', ...CHAR_COSTS.slice(1, -3).map(cost => Math.min(Math.floor(cost * clamp(difficultyRating.value, 0, 10) * captureKoeff.value * 0.16), Math.floor(cost * 0.05)))]
-})
-
-const sellRow = computed(() => {
-  return ['Sell', ...CHAR_COSTS.slice(1, -3).map(cost => Math.floor(cost * clamp(difficultyRating.value, 0, 10) * sellKoeff.value * 0.16))]
-})
-
-const IMGcaptureRow = computed(() => {
-  return CHAR_COSTS_FULL.slice(11).map(cost => Math.floor(cost * clamp(difficultyRating.value, 0, 10) * captureKoeff.value * 0.16) % 1000)
-})
-
-const IMGsellRow = computed(() => {
-  return CHAR_COSTS_FULL.slice(11).map(cost => Math.floor(cost * clamp(difficultyRating.value, 0, 10) * sellKoeff.value * 0.16) % 1000)
-})
-
-const IMGcaptureRowT = computed(() => {
-  return CHAR_COSTS_FULL.slice(11).map(cost => Math.floor(cost * clamp(difficultyRating.value, 0, 10) * captureKoeff.value * 0.16 / 1000))
-})
-const IMGsellRowT = computed(() => {
-  return CHAR_COSTS_FULL.slice(11).map(cost => Math.floor(cost * clamp(difficultyRating.value, 0, 10) * sellKoeff.value * 0.16 / 1000) + (difficultyRating.value > 0 ? 1 : 0))
-})
-
-const combinedIMGCapture = computed(() => {
-  return ['Capture', ...IMGcaptureRow.value.map((x, i) => `${x}${IMGcaptureRowT.value[i] > 0 ? ` + ${IMGcaptureRowT.value[i]}` + ' IMG' : ''}`)]
-})
-const combinedIMGSell = computed(() => {
-  return ['Sell', ...IMGsellRow.value.map((x, i) => `${x}${IMGsellRowT.value[i] > 0 ? ` + ${IMGsellRowT.value[i]}` + ' IMG' : ''}`)]
+const difficultySliders = computed(() => {
+  return difficultyOptions.reduce((a, x) => {
+    if (a[x.type]) {
+      a[x.type].list.push(x.intensity)
+      a[x.type].titles.push(x.title)
+      a[x.type].uids.push(x.uid)
+    }
+    else { a[x.type] = { list: [x.intensity], titles: [x.title], uids: [x.uid] } }
+    return a
+  }, {} as Record<string, object>)
 })
 
 function displayTitle(rule) {
@@ -274,5 +281,12 @@ function displayTitle(rule) {
 onMounted(() => {
   useTooltips()
 })
+
+function chooseQuick(value, diff) {
+  console.log(diff)
+  const difficulty = find(difficultyOptions, { uid: diff.uids[value] })
+  if (difficulty)
+    chooseDifficulty(difficulty)
+}
 
 </script>

@@ -4,8 +4,11 @@
       <Desc :desc="alternativeTheming" class="bg-amber-200 text-gray-800 text-sm md:text-base w-3/5 float-right mt-8 mx-2 border-3 border-gray-900" />
       <Desc class="p-2 mb-4 max-w-4xl bg-warm-gray-200 dark:bg-warm-gray-800 mx-auto" :desc="symbioteQueen" />
     </div>
-    <Desc class="p-2 mx-auto mb-4 max-w-4xl bg-warm-gray-200 dark:bg-warm-gray-800" :desc="expansions" />
 
+    <Desc class="p-2 mx-auto mb-4 max-w-4xl bg-warm-gray-200 dark:bg-warm-gray-800" :desc="expansions" />
+    <div v-if="!legacyMode && !flags.noBindings" class="w-max mx-auto mb-2 flex gap-2">
+      You currently have [<strong>{{ binding[0].title }}</strong>] <Button size="Small" bg-color="bg-red-600" label="Delete" @click="sellAllBindings" />
+    </div>
     <div
       class="column-gap"
       :class="settings.columns !== 'auto' ? `column-count-${settings.columns}` : 'md:column-count-2 xl:column-count-3 4xl:column-count-4 5xl:column-count-5'"
@@ -50,14 +53,15 @@
         @pickPerk="(...args) => chooseBinding(...args, symbioteAvailable)"
       />
     </div>
-    <Desc class="p-2 mx-auto my-4 max-w-4xl bg-warm-gray-200 dark:bg-warm-gray-800" :desc="symbioteUnits" />
+
+    <Desc class="p-2 mx-auto my-4 max-w-4xl bg-warm-gray-200 dark:bg-warm-gray-800" :desc="phasesDesc" />
     <div
       class="column-gap"
       :class="settings.columns !== 'auto' ? `column-count-${settings.columns}` : 'md:column-count-2 xl:column-count-3 4xl:column-count-4 5xl:column-count-5'"
     >
-      <GenericPerkCard
-        v-for="bnd in synUnits"
-        :key="bnd.uid"
+      <PerkCard
+        v-for="bnd in phases"
+        :key="bnd.title"
         v-bind="{
           perk: bnd,
           class: symbioteAvailable(bnd) ? 'bg-light-500 dark:bg-rose-900 hover:(bg-yellow-100 dark:bg-rose-800)'
@@ -68,6 +72,7 @@
         @pickPerk="(...args) => chooseBinding(...args, symbioteAvailable)"
       />
     </div>
+
     <Desc class="p-2 mx-auto my-4 max-w-4xl bg-warm-gray-200 dark:bg-warm-gray-800" :desc="symbioteStructures" />
     <Desc class="p-2 mx-auto my-4 max-w-4xl bg-warm-gray-200 dark:bg-warm-gray-800" :desc="creep" />
     <div
@@ -87,6 +92,25 @@
         @pickPerk="(perk, saveData) => chooseBinding(perk, saveData, symbioteAvailable)"
       />
     </div>
+
+    <Desc class="p-2 mx-auto my-4 max-w-4xl bg-warm-gray-200 dark:bg-warm-gray-800" :desc="symbioteUnits" />
+    <div
+      class="column-gap"
+      :class="settings.columns !== 'auto' ? `column-count-${settings.columns}` : 'md:column-count-2 xl:column-count-3 4xl:column-count-4 5xl:column-count-5'"
+    >
+      <GenericPerkCard
+        v-for="bnd in synUnits"
+        :key="bnd.uid"
+        v-bind="{
+          perk: bnd,
+          class: symbioteAvailable(bnd) ? 'bg-light-500 dark:bg-rose-900 hover:(bg-yellow-100 dark:bg-rose-800)'
+            : 'bg-gray-200 dark:bg-gray-600',
+          isActive: !!allBindings[bnd.title],
+          savedPerk: allBindings[bnd.title],
+        }"
+        @pickPerk="(...args) => chooseBinding(...args, symbioteAvailable)"
+      />
+    </div>
     <div class="h-8"></div>
   </div>
 </template>
@@ -96,7 +120,7 @@ import { useTooltips } from '~/logic/misc'
 import { symbioteAvailable, chooseBinding, deletePerk } from '~/logic'
 import { useStore } from '~/store/store'
 import { confirmDialog } from '~/logic/dialog'
-import { symbioteQueen, symbioteUnits, alternativeTheming, symbioteBinding, symBuildings, synUnits, expansions, symbioteStructures, creep } from '~/data/symbiote'
+import { symbioteQueen, symbioteUnits, alternativeTheming, symbioteBinding, symBuildings, synUnits, expansions, symbioteStructures, creep, phasesDesc, phases } from '~/data/symbiote'
 
 const { binding, flags, settings, legacyMode } = useStore()
 

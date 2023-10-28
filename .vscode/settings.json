@@ -83,5 +83,6 @@
       }
     }
   ],
-  "liveServer.settings.multiRootWorkspaceName": "economy34-vitesse"
+  "liveServer.settings.multiRootWorkspaceName": "economy34-vitesse",
+  "vue.codeActions.enabled": false
 }

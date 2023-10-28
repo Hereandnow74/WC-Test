@@ -99,6 +99,7 @@ const { allEffects, startingOrigin, fullStartingBudget, flags, settings, baseBud
 onMounted(() => useTooltips())
 
 const maxSubTier = computed(() => {
+  if (flags.value.danger11Start) return 6
   const cost = fullStartingBudget.value * 0.2
   for (let i = 0; i < CHAR_COSTS.length; i++) {
     if (cost < CHAR_COSTS[i])

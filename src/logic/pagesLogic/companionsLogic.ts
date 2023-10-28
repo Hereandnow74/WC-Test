@@ -8,14 +8,14 @@ const options = {
   useExtendedSearch: true,
   threshold: 0.4,
   ignoreLocation: true,
-  keys: [{ name: 'n', weight: 1.1 }, 'w', 'b', 'i', 'd', 'in', 'u', 'k'],
+  keys: [{ name: 'n', weight: 1.1 }, 'w', 'b', 'i', 'd', 'in', 'u', 'k', 'c'],
 }
 
 const options2 = {
   useExtendedSearch: true,
   findAllMatches: true,
   threshold: 0.4,
-  keys: ['n', 'w', 'b', 'i', 'd', 'in', 'u', 'k'],
+  keys: ['n', 'w', 'b', 'i', 'd', 'in', 'u', 'k', 'c'],
   shouldSort: false,
 }
 

@@ -392,7 +392,7 @@ If you Possessed or Substituted a waifu or are otherwise female, you may act as 
       talentPerks: [{ title: 'Psychic Talent', cost: 0, count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Psychic Talent', cost: 0 }], count: 1 }],
     },
     whitelist: ['Alterzelu Symbiote Legacy'],
-    desc: 'This adds a number of upgrades to the symbiote’s functionality. You and all waifus benefit from Psychic Talent, as if you had purchased Basic Talent Sharing (Psychic). (Take Psychic Talent for free. If you already have Basic Talent Sharing (Psychic), take a full refund for it.) The lowest tier of targets that can fight off a symbiote larva will increase by 1 for each effective tier (after step 6) that the queen is above 7: Tier 6 targets can no longer fight off a Tier 8 queen’s larvae, while only Tier 10 and 11 targets can fight off larvae produced by a Tier X queen. On the target side, use their effective tier after step 6, but skip steps 4 and 5. Finally, symbiote larvae now emit a weak psychic field that reduces a target’s willingness to resist future attacks every time she fights one off. This reduction stacks indefinitely until she finally gives in.',
+    desc: 'This adds a number of upgrades to the symbiote’s functionality. You and all waifus benefit from Psychic Talent, as if you had purchased Basic Talent Sharing (Psychic). (Take Psychic Talent for free. If you already have Basic Talent Sharing (Psychic), take a full refund for it.) The lowest tier of targets that can fight off a symbiote larva will increase by 1 for each effective tier (after step 5) that the queen is above 7: Tier 6 targets can no longer fight off a Tier 8 queen’s larvae, while only Tier 10 and 11 targets can fight off larvae produced by a Tier X queen. On the target side, use their effective tier after step 5, but skip steps 4 and 5. Finally, symbiote larvae now emit a weak psychic field that reduces a target’s willingness to resist future attacks every time she fights one off. This reduction stacks indefinitely until she finally gives in.',
   },
   {
     uid: 'vGVqB',
@@ -432,7 +432,7 @@ If you Possessed or Substituted a waifu or are otherwise female, you may act as 
 <h4 class="font-semibold text-md">Shroud: Failure?</h4>
 <p>With only the basic Shroud, the bind can fail to take in subjects that have too much personal power, compared to your own, at the moment of attempted binding. This will ignore the subject’s consent and even purchase status.</p>
 <p>Consenting subjects whose bindings fail will still be captured and marked with a stamp tattoo, so you can make a later attempt with the Shroud. Non-consenting subjects will break free completely, denying you their capture credits until a successful attempt is made.</p>
-<p>Subjects who are already shroud-bound will remain so, even if they become strong enough that you would be unable to re-bind them. This includes the upgrades from capturing a character “early” and the expiration of any step 6 modifiers to effective tier.</p>
+<p>Subjects who are already shroud-bound will remain so, even if they become strong enough that you would be unable to re-bind them. This includes the upgrades from capturing a character “early” and the expiration of any step 5 modifiers to effective tier..</p>
 `,
     additionalDesc: `
 <h3 class="text-lg font-semibold text-center">Hen-SHIN!</h3>
@@ -550,7 +550,7 @@ If you Possessed or Substituted a waifu or are otherwise female, you may act as 
     <p>Your Shroud is no longer merely an extension of your will, but part of your being. You are able to transform portions of yourself into your element(s) and heal or recharge yourself by absorbing manifestations of said element that you didn't create. If you or any shroud-bound subject were not already capable of flight with your Shroud, you are now capable of such; the other benefits of this perk only apply to you.</p>
     <p>Once again, controlling an elemental manifestation that has a will of its own involves usurping said will with your own like any other sapient target. This process is based on the Possess Origin. Individuals absorbed in such a manner, such as a gynoid via the Cyber Shroud, or a normal human via the Primal Shroud, may be bound like anyone else, recreated and released from your service, or their form stolen. This process is instant if performed on a shroud-bound retinue member and has the same possibility of failure as standard Shroud capturing.</p>
     <p>The target’s skills, and any traits and abilities that match a Shroud or Heritage Element that you’ve purchased for yourself, will be copied to your true form. This also holds true for abilities that are generic in source but expressed uniquely, such as Sacred Gears, Noble Phantasms, Quirks, or X-gene mutations. Additionally, you will gain the target’s episodic memory, as if you had Substituted into them. All other traits and abilities, including any purchases of Template Stacking that you made for the target, will remain tied to the target’s form.</p>
-    <p>Manifestations whose forms were merely stolen but not bound are also not captured and you do not get a credit reward for doing so. You may still sell a stolen form to the company afterward, like any other target, for 20% of the list price for the target’s effective tier after step 4. This will remove the form from your library.</p>`,
+    <p>Manifestations whose forms were merely stolen but not bound are also not captured and you do not get a credit reward for doing so. You may still sell a stolen form to the company afterward, like any other target, for the intensity- adjusted sale price for the target’s effective tier after step 3. This will remove the form from your library.</p>`,
   },
   {
     uid: 'Hvfre',
@@ -615,15 +615,29 @@ If you Possessed or Substituted a waifu or are otherwise female, you may act as 
     `,
   },
   {
+    uid: 'QIx3a',
+    title: 'Someone Else’s Fetish',
+    type: 'Hypnosis App',
+    image: '',
+    category: 'Binding',
+    cost: 25,
+    whitelist: ['Subliminal Audio'],
+    desc: `<p>You may now create Hypnotic Media that temporarily alter the common sense of those who perceive them, changing what they believe to be "normal" under a given set of conditions. Multiple changes and conditions can be defined in a single piece of Hypnotic Media, but these cannot be altered after its creation, nor can they be individually targeted. Additionally, since Hypnotic Media only change what a person believes to be normal, it cannot compel them to take specific actions. </p>
+    <p>Hypnotic Media cannot entrance someone or increase their Hypnotic Depth, but it does treat their breakpoints as one level higher for purely passive behaviors. For example, you might create a piece of Hypnotic Media that causes people to believe it's normal for waitresses to work with their breasts exposed and that they should just ignore it if it doesn't turn them on. This would be able to alter the perception of patrons who have yet to cross any breakpoints, because it does not require them to do anything, but the waitresses would need to have crossed their first break point, if you want them to ignore the fact that their breasts are exposed.</p>
+    <p>By default, Hypnotic media may take the form of either video or audio content and may be mixed into or layered on top of normal media, but it must be played by a device running your Hypnosis App. Once no longer exposed to your Hypnotic Media, its effects will gradually fade based on the duration and frequency of exposure. This will not affect how they perceive their past behavior, unless they carefully examine their memories</p>
+    `,
+  },
+  {
     uid: 'cBbNo',
     title: 'Mind-Altering Concoctions',
     type: 'Hypnosis App',
-    image: 'https://cdn.discordapp.com/attachments/925963686433132644/993457719124181114/anime-nurse-outfit-syringe-anime-girls-hd-wallpaper-preview.jpg',
+    image: 'https://i.imgur.com/EpyAmNLl.jpg',
     category: 'Binding',
     cost: 25,
     whitelist: ['Hypnosis App'],
-    desc: `<p>This perk is a subscription to our mind-altering substances shop. In addition to the recipes for specific concoctions, you will be able to order up to 5 doses of varying substances at a time. These may be returned or more ordered once they are used, and come in several major categories: Aromatics, ingestibles, and injectables</p>
+    desc: `<p>This perk is a subscription to our mind-altering substances shop. In addition to the recipes for specific concoctions, you will be able to order up to 5 doses of varying substances at a time. These may be returned or more ordered once they are used, and come in several major categories: Aromatics, Topicals, Ingestibles, and Injectables.</p>
     <p><b>Aromatics</b> are aerosolized chemicals which will increase a target’s Hypnotic Depth by 1 for every hour exposed, and are available in a variety of delivery methods. Frequent favorites include incense sticks, candles, and censers and may come paired with a wide variety of common scents. These may include the inducement towards an emotional state, such as joy, bravery, confidence, desire, lust, or fear.</p>
+    <p><b>Topicals</b> are creams, poultices, slimes, soaps, or other viscous fluids or pastes which increase a target’s Hypnotic Depth with direct contact. At a minimum of 5% coverage, topicals will increase the target’s hypnotic depth by 1 every 2 hours, 1 per hour at 10% coverage, and increasing to 5 per hour at full coverage. If the target has reached a Breakpoint and the topical has full body coverage for an hour, the topical will break through by increasing the target’s Hypnotic Depth by 1. Topicals may alter cosmetic traits or have minor physiological effects, such as changing skin or hair color or texture, to alter the sensitivity of skin, cleaning, lubricating, minorly accelerating healing, protecting from UV rays, or similar.</p>
     <p><b>Ingestibles</b> come as a powder which may be consumed in a variety of methods, such as being mixed into a drink or cooked into a meal, or snorted directly. A single ‘dose’ is a line of powder and will increase a target’s Hypnotic Depth by 5. Ingestibles are able to induce specific emotional states as per aerosols, or may instead subtly and gradually alter an ingester’s physiology as per Advanced Tempest Runes (Body), such as increasing or reducing breast size or hair length up to a certain point. Partial doses have proportionally lesser effects.</p>
     <p><b>Injectables</b> are drugs which must be directly introduced to tissues or the bloodstream, most commonly via direct injection. A full dose of an injectable will increase a target’s Hypnotic Depth by 10 or, if at a Breakpoint, will break through it by increasing the target’s Hypnotic Depth by 1. In addition to being able to force an absolutely debilitating level of emotional inducement, or significant body alterations, injectables are able to apply a single Hypnotic Depth 31-40 level or lower command or forcibly entrance a target for 1 hour.</p>
     <p>While doses are calibrated for roughly human-sized targets, custom orders for larger or smaller targets may be ordered. Ordering an oversized dose is not recommended, as overdosing on Mind Altering Concoctions risks complete, permanent, irreparable mindbreak scenarios without Warranty Plan.</p>
@@ -638,20 +652,34 @@ If you Possessed or Substituted a waifu or are otherwise female, you may act as 
     category: 'Binding',
     cost: 20,
     whitelist: ['Hypnosis App'],
-    desc: `<p>You gain access to a set of three VR Helmets, which are protected by the usual Company Smart Device assurances. In addition to their other effects, these VR Helmets may be used to interact with virtual realities directly, to metaphorically ‘jack in’.</p>
-    <p>These helmets, when placed upon the head of a target, will expose them to extremely targeted and high fidelity hypnotic stimuli, significantly increasing the speed at which their Hypnotic Depth increases. Triple the amount of Hypnotic Depth earned per hour after all other factors. Additionally, the VR helmet may apply pre-programmed and selected commands and adjustments during its hypnosis.</p>
+    desc: `<p>You gain access to a set of three VR Helmets, which are protected by the usual Company Smart Device assurances. In addition to their other effects, these VR Helmets may be used to interact with digital systems and  virtual realities directly, either via augmented reality or by metaphorically ‘jacking in.’</p>
+    <p>The specific shape and form of the device is customizable, but is always at least the size of two large hair clips. When placed upon the head of a target, it will expose them to extremely targeted and high fidelity stimuli, significantly increasing the speed at which their Hypnotic Depth increases. This triples the amount of Hypnotic Depth earned per hour after all other factors. Additionally, the VR helmet may apply pre-programmed and selected commands and adjustments during its hypnosis.</p>
     `,
   },
   {
     uid: 'UFwYc',
-    title: 'Full-Dive Set',
+    title: 'EVE Chip',
     type: 'Hypnosis App',
     image: 'https://cdn.discordapp.com/attachments/925963623229177896/1140188895489818655/PSX_20230813_131315.jpg',
     category: 'Binding',
-    cost: 25,
+    cost: 15,
     whitelist: ['VR Helmet'],
-    desc: `<p>The blueprints for an enhanced form of the VR Helmet, the equipment includes an additional set of wires, chords, and applicators that may be applied to a wearer of the helmet, directly interfacing with their nervous system and applying hypnotic stimulation directly.</p>
-    <p>This equipment requires that the target is restrained or otherwise incapacitated. This direct interface allows for the modification of memories and implantation of commands regardless of current Hypnotic Depth. While under the effect of the Full Dive Set, Breakpoints may be bypassed.</p>
+    desc: `<p>Catch-and-release your targets with these control chips. EVE Chips can vary in size, up to that of a person’s head, but must be visible to the naked eye at minimum. You will receive one new chip each day, up to the limit of 5. This limit increases by one for each member of your retinue, including yourself, that have a chip implanted on or in them. The chip always possesses the same mark as the core of your stamp, and its circuitry are clear fractals of that design.</p>
+    <p>In order to operate, an EVE Chip must be pressed to, or otherwise implanted in, direct or extremely close contact with the central nervous system or equivalent of a target. This can include the forehead, base of the skull, spine, primary motherboard, or anchoring crystal for a spirit. </p>
+    <p>EVE Chips come in two forms, Familiar Chips and Companion Chips. Familiar Chips will cause discomfort and headaches in an individual when thinking or acting against the Contractor’s stated desires, or reward them with appropriate pleasure stimulation. Companion Chips perform similarly, nudging the individual to love and obey the contractor and to consider them in a sexual sense. Additional criteria may be added or removed from a chip when it is not implanted in an individual.</p>
+    <p>Every time an individual goes through with a compelled action, their Hypnotic Depth increases by 1. Due to their direct nature, the use of these chips bypasses Breakpoints. This effect is initially weak, though larger chips have stronger effects, and is similar to the effects at Hypnotic Depth 1-10. The intensity of the effect and range of things that may be rewarded/punished increases with the target’s Hypnotic Depth.</p>
+    `,
+  },
+  {
+    uid: 'UFwYa',
+    title: 'Assuming Direct Control',
+    type: 'Hypnosis App',
+    image: '',
+    category: 'Binding',
+    cost: 15,
+    whitelist: ['VR Helmet'],
+    desc: `<p>This modifies your Smart Device to include an extendable pair of cables. These cables must be put in direct or extreme close contact to the central nervous system or equivalent of a target in order to take effect. This can include the inner ear canal, upper end of the nose, any direct wire to the CPU, etc.</p>
+    <p>This direct (or nearly so) interface quintuples the speed at which your Smart Device applies Hypnotic Depth through all available sensory vectors simultaneously, and requires no actual sensory input. This also allows for the modification of memories and implantation of commands regardless of current Hypnotic Depth. Due to their direct nature, the use of these cables bypasses Breakpoints.</p>
     `,
   },
   {
@@ -975,7 +1003,7 @@ export const otherControls: PerkFull[] = [
 <p>In addition to its other effects, the Binding method you use now adds its subjects to an empathic and telepathic group mind centered on yourself. This group mind operates on two levels: the higher, active, level allows everyone connected to participate in the telepathic equivalent of a chatroom, regardless of distance or barriers, such that you could even communicate between different multiverses. Your retinue members may actively share and experience each others’ senses through this network. The deeper, passive, level gives your waifus a full awareness of your activity and needs, such that they may even respond to orders that you haven't consciously given yet.</p>
 <p>This is only a group mind, not a hive mind. You and all your waifus retain your full individuality within the network and have no risk of forgetting whose life is whose. Any morality shifts that your waifus may develop are simply the result of close mental proximity to, and enforced empathy for, people with vastly different backgrounds and life experiences than their own.</p>
 <p>If you have the Symbiote, higher-ranked hosts in the swarm’s hierarchy will have more privilege in this network than lower-ranked hosts. As the person at the top of the hierarchy, you can demand access to the sensory feeds of anyone in the network and receive it without question. If you have the Shroud, only subjects who are actually shroud- bound will benefit from this perk. Additionally, your ability to read the minds of your waifus and access their senses is not so intuitive - at least not with this perk alone.</p>
-<p>Additionally, retinue members bound through the method you used to unlock this expansion, whose powers rely on a background magic field and are operating outside of one will no longer be hampered when outside your presence. With this perk, they are always in your presence, no matter the distance.</p>`,
+<p>Additionally, retinue members bound through the method you used to unlock this expansion, whose powers rely on a background magical field and are operating outside of one, will no longer be hampered when outside your presence. With this perk, they are always in your presence, no matter the distance.</p>`,
   },
   {
     uid: 'Tic8F',
@@ -1030,7 +1058,7 @@ export const otherControls: PerkFull[] = [
     multiple: true,
     desc: `
   <p>These sets of three Command Seals each will appear somewhere on your body, forming an abstract design unique to you. Each Command Seal allows you to give one unbreakable order to a Servant under your control, along with a power boost for the duration of the order. The more specific the order and the shorter its duration, the stronger the boost and according compulsion, and vice versa. General orders with indefinite durations can, eventually, be ignored, but a specific command with an instant duration will offer the Servant no chance to resist</p>
-  <p>One spent Command Seal will regenerate every 24 hours. You may have as many sets of seals as you have purchased or captured Servants, counting only the characters denoted as Servants in this CYOA. The first set of seals is free.</p>
+  <p>One spent Command Seal will regenerate every 24 hours. You may have as many sets of seals as there are Servants in your retinue, counting only the characters denoted as Servants in this CYOA. The first set of seals is free.</p>
   <p>If you purchase or capture an eligible Master from a published Fate/ work, and have at least one Servant per Master, you can delegate a single Servant to each. Canon Master-Servant pairs take priority. Delegate Masters' Command Seals are free and regenerate independently at the same rate as yours, but still count against your total and cannot be directly used by you. If you ever find yourself in an actual Holy Grail War, and all of your Command Seals are delegated, you will still have an inert set of Seals that may be used to summon, or contract with, a Servant locally. A locally summoned or contracted Servant will not be bound unless you apply a Binding-type control.</p>
   <p>Each Ruler-class Servant you summon may carry six additional sets of Seals on their body. These extra Seals must be paid for, regenerate independently from any others, and may be used by yourself or any delegate Master.</p>`,
   },
@@ -1042,13 +1070,13 @@ export const otherControls: PerkFull[] = [
     category: 'Other Control',
     special: 'Retroactively removes the previous control’s Nasuverse Servant requirement.',
     whitelist: ['Command Seals'],
-    desc: 'Command Seals may now be used on any purchased or captured waifu, not just Servants. Additionally, all non-canon Servants of any tier and all non-Servants of tier 6 or higher within your retinue are now treated as canon Servants for all effects that target or count the number of Servants, including the Command Seals purchase limit and certain Noble Phantasms. This ignores all effective tier changes after step 4.',
+    desc: 'Command Seals may now be used on any purchased or captured waifu, not just Servants. Additionally, all non-canon Servants of any tier and all non-Servants of tier 6 or higher within your retinue are now treated as canon Servants for all effects that target or count the number of Servants, including the Command Seals purchase limit and certain Noble Phantasms. This ignores all effective tier changes after step 3.',
   },
   {
     uid: 'VTfqo',
     title: 'Divine Marking',
     category: 'Other Control',
-    image: 'https://i.imgur.com/vAfr6wj.jpg',
+    image: 'https://i.imgur.com/HhHYmZ0l.jpg',
     cost: 20,
     special: 'At least one deity from the Danmachi setting',
     desc: 'A deity in your service who grants or updates a Falna, including non-Danmachi deities who’ve learned how to do so, are considered to be applying a Stamp to the Falna’s holder, even if you lack that binding. The Falna itself will seem no different than normal. This Falna-Stamp requires the normal three-day period to fully bind the recipient.',
@@ -1078,7 +1106,7 @@ export const otherControls: PerkFull[] = [
     desc: `
 <p>The legendary Truck-kun is your vehicle. When you or one of your retinue members drives a land vehicle that’s been registered with us as yours, anyone you run over with it will be captured, as if by the Stamp, and sent to a random world that you do not already have access to. Your target must actually die from the impact, but not necessarily immediately, and must not already be part of your retinue. The capture will fail if the target evades your vehicle or survives the impact.</p>
 
-<p>The maximum number of active isekai victims you can manage simultaneously scales with the number and tier of deities in your retinue after step 5, as shown in the chart. Your total cap is the sum of the individual caps of each deity in your retinue.</p>
+<p>The maximum number of active isekai victims you can manage simultaneously scales with the number and tier of deities in your retinue after step 4, as shown in the chart. Your total cap is the sum of the individual caps of each deity in your retinue.</p>
 
 <p>Worlds your isekai targets are sent to will not become accessible to the rest of your retinue through Exit Stage Left or other company perks until the target completes a local storyline (charges Exit Stage Left to completion). This will count as you charging Exit Stage Left yourself. If the target dies before they can do so and you have Warranty Plan, they will respawn in your demiplane (if you have one) or otherwise near you, where they can be bound through your other means. If you have We Will Meet Again or Rainbow Bridge, they can then return to the world they were sent to, with any reinforcements or other support you choose to give them. Neither successful nor failed isekais are “active” and will not continue to count against your cap above.</p>`,
   },
@@ -1244,7 +1272,7 @@ export const symbioteRules = `
 <p>Additional eggs, and thus larvae, come from your queen. First, you must fertilize your queen in the traditional human fashion. If you have Fertility Calibration, you may choose between egg production, live humanoid births - see the Offspring section under Additional Rules - and contraception. Results will be random otherwise. In an all-yuri swarm, a symbiote host’s tail may act as a phallus substitute for this purpose, provided it isn’t the queen’s own tail. Either way, the queen will produce one egg, about the size of an ostrich’s, every two days, for the next four weeks. Symbiote eggs will hatch after two weeks of incubation, depending on ambient temperature: warmer is faster, up to a limit.</p>
 <h3 class="font-semibold text-xl py-4">Symbiote: Larvae and Capturing</h3>
 <p>By default, symbiote larvae are obligate carnivores and may require up to five days to feed and grow large enough to take hosts. Your first larvae, however, will hatch fully-grown. Larvae are comparable in size and intelligence to a small dog or wild cat, such as a beagle or lynx. Larvae are not truly sapient, living only to merge with a future host. However, they are somewhat intelligent and capable of using tactics and trickery to more effectively attack more dangerous targets.</p>
-<p>Larvae are perfectly concealed until they initiate a capture. They cannot be fought off by any target of effective tier (after step 6) 5 or below. When a larva strikes, it will latch onto the target’s back, aligning its spine with hers before penetrating her with its tail and engulfing her head with its own. It pumps a transformative fluid into her from both ends, merging their bodies together into a more idealized, sexual form. The normally-phallic tip of a larva’s tail can invert itself for use against male targets.</p>
+<p>Larvae are perfectly concealed until they initiate a capture. They cannot be fought off by any target of effective tier (after step 5) 5 or below. When a larva strikes, it will latch onto the target’s back, aligning its spine with hers before penetrating her with its tail and engulfing her head with its own. It pumps a transformative fluid into her from both ends, merging their bodies together into a more idealized, sexual form. The normally-phallic tip of a larva’s tail can invert itself for use against male targets.</p>
 <p>Against all targets, this initial transformation causes significant increases in muscle definition, particularly in the arms, abdominals, glutes, and legs. For female targets, it also causes severe non-muscular growth of the breasts, rear and thighs. Against male targets, it instead has a greater effect on muscles, including the pectorals, and adds to penis size and girth. Regardless of gender, the target sizes for any trait are roughly 100% on the scales defined in Advanced Tempest Runes (Body), with up to 20% error in any direction. If desired, symbiote masters may subject themselves to the same growth, according to their gender, as their swarm members. This must be manually triggered with the aid of a larva or swarm member. This growth may be re-triggered for any swarm member in the same way, at any time.</p>
 <p>This initial growth is not optional, but may recede after the fact at a rate of 3 percentage points every 5 hours. The full extent of this recession, if any, depends on practical concerns and your personal preference.The initial transformation will also induce a surge of lust that will only fade when satisfied by you or another symbiote host whose lust surge has previously been satisfied. Capture credits are rewarded once this lust has faded.</p>
 <p>As an alternative, even without any spare larvae, you and your queen may also convert a target in person by transmitting the same transformative fluid from her mouth or tail. This trades speed and immediate effect for subtlety; you or your queen can let your tail out without the rest of the armor, make out or have sex with the conversion target, and then leave before the real transformation begins.</p>`
@@ -1368,10 +1396,10 @@ export const shroudElements = [
     'Body Effects': 'Several hitodama orbit you. Can turn intangible at will, also become monochrome for the duration.',
     'Streamlined costume features': 'Veils and shrouds, bone jewelry or lingerie',
     'Heavy costume features': 'Bone plating, tattered shrouds, robes, and veils, original outfits but tattered and ragged',
-    'Freebies': 'Everlasting Talent. Body Defense (2x), Stress Defense, Soul Defense',
+    'Freebies': 'Everlasting Talent. Body Defense (2x), Stress Defense, Drain Defense',
     'freebies': {
       talentPerks: [{ title: 'Everlasting Talent', cost: 0, count: 1 }],
-      defensePerks: [{ title: 'Body Defense', cost: 0, count: 2 }, { title: 'Stress Defense', cost: 0, count: 1 }, { title: 'Soul Defense', cost: 0, count: 1 }],
+      defensePerks: [{ title: 'Body Defense', cost: 0, count: 2 }, { title: 'Stress Defense', cost: 0, count: 1 }, { title: 'Drain Defense', cost: 0, count: 1 }],
     },
   },
   {

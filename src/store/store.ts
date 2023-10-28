@@ -70,6 +70,7 @@ const settings = useStorage('settings', {
 const heritageOptions = computed(() => [
   { label: 'None', value: '' },
   { label: 'Dragon', value: 'dr' },
+  { label: 'Pirate', value: 'pi' },
   { label: 'Transhuman', value: 'th' },
   { label: 'Outsider', value: 'ou' },
   { label: 'Psychopomp', value: 'pp' },
@@ -240,6 +241,7 @@ const companionsWithoutSold = computed(() => companions.value.filter(c => !c.sol
 // Discounts
 const types = {
   dr: 'Dragon',
+  pi: 'Pirate',
   th: 'Transhuman',
   ou: 'Outsider',
   pp: 'Psychopomp',
@@ -303,7 +305,7 @@ const defenseRetinueDiscountAuto = computed(() => {
     ml: 'Addiction Defense',
     ps: 'Mind Defense',
     bj: 'Possession Defense',
-    dr: 'Soul Defense',
+    dr: 'Drain Defense',
     id: 'Fatality Defense',
     pl: 'Polymorph Defense',
     ur: 'Wyldscape Defense',
@@ -314,15 +316,24 @@ const defenseRetinueDiscountAuto = computed(() => {
     tm: 'Paradox Defense',
   } as Record<string, string>
 
-  const allDefsDiscounts = defensePerks.value.reduce((a, x) => (a[x.title] = { discount: 0, count: x.count >= 2 ? 2 : 1, charNames: [] }, a), {} as Record<string, {discount: number; count: number; charNames: string[]}>)
+  const allDefsDiscounts = defensePerks.value.reduce((a, x) => (a[x.title] = { discount: 0, count: x.count >= 2 ? 2 : 1, charNames: [] }, a), {} as Record<string, { discount: number; count: number; charNames: string[] }>)
 
   const sortedCompanions = (() => {
-    const cmp = [] as {uid: number; cost: number}[]
+    const cmp = [] as { uid: number; cost: number }[]
     if (startingOrigin.value.swap || startingOrigin.value.uid)
       cmp.push({ uid: startingOrigin.value.swap?.uid || startingOrigin.value.uid, cost: CHAR_COSTS_FULL[startingOrigin.value.swap?.tier || 0] || startingOrigin.value.cost })
 
-    companionsWithoutSold.value.forEach(companion => cmp.push(
-      { uid: companion.swap ? companion.swap.uid : companion.uid, cost: CHAR_COSTS_FULL[companion.swap?.tier || companion.priceTier] }))
+    companionsWithoutSold.value.forEach((companion) => {
+      if (companion.swap || companion.perk) {
+        if (companion.swap) {
+          cmp.push({ uid: companion.swap.uid, cost: CHAR_COSTS_FULL[companion.swap.tier] })
+          return
+        }
+        if (companion.perk && companion.perk.charUID)
+          cmp.push({ uid: companion.perk.charUID, cost: CHAR_COSTS_FULL[companion.perk.tier] })
+      }
+      else { cmp.push({ uid: companion.uid, cost: CHAR_COSTS_FULL[companion.priceTier] }) }
+    })
 
     return cmp.sort((a, b) => b.cost - a.cost || intersection(allCharsObject.value[a.uid]?.b, Object.keys(allDefTags)).length - intersection(allCharsObject.value[b.uid]?.b, Object.keys(allDefTags)).length)
   })()
@@ -397,11 +408,11 @@ const fullStartingBudget = computed(() => {
       .reduce((a, x) => x.intensity < 10 ? a += x.intensity : (intensityFlat += x.intensity, a), 0)
 
     let bd = baseBudget.value
-    if (flags.value.danger11Start) bd = 2045
+    if (flags.value.danger11Start) bd = 0
 
     return csr.value ? Math.round((bd + intensityFlat) * (intenMultiplier)) : Math.round((bd + intensityFlat) * (1 + intenMultiplier))
   }
-  return csr.value ? 0 : (flags.value.danger11Start ? 2045 : difficultyAdjustedBudgets.value[startingWorld.value.rating]) || 0
+  return csr.value ? 0 : (flags.value.danger11Start ? 0 : difficultyAdjustedBudgets.value[startingWorld.value.rating]) || 0
 })
 
 // const creditLimit = computed(() =>
@@ -442,14 +453,14 @@ const originCost = computed(() => {
 })
 
 const totalCost = computed(() => startingOrigin.value.cost + pvpPerksCost.value
-+ bindingCost.value + heritageCost.value + luresCost.value + ridePerksCost.value + homePerksCost.value
-+ talentsCost.value + defensesCost.value + miscPerksCost.value + waifuPerksCost.value
-+ genericWaifuPerksCost.value + companionsCost.value + otherCost.value + fee.value
-+ budgetMods.value.minus + challengesCost.value + originCost.value + difficultyCost.value)
+  + bindingCost.value + heritageCost.value + luresCost.value + ridePerksCost.value + homePerksCost.value
+  + talentsCost.value + defensesCost.value + miscPerksCost.value + waifuPerksCost.value
+  + genericWaifuPerksCost.value + companionsCost.value + otherCost.value + fee.value
+  + budgetMods.value.minus + challengesCost.value + originCost.value + difficultyCost.value)
 
 const totalGain = computed(() => budgetMods.value.plus + companionProfit.value + companionProfitSold.value
-+ usedHeritageDiscount.value + talentsDiscount.value + defensesDiscount.value + specificModsCost.value
-+ budgetMods.value.sell11 * 1000 + missionRewardCredits.value + defenseRetinueDiscount.value)
+  + usedHeritageDiscount.value + talentsDiscount.value + defensesDiscount.value + specificModsCost.value
+  + budgetMods.value.sell11 * 1000 + missionRewardCredits.value + defenseRetinueDiscount.value)
 
 const budget = computed(() => {
   const bd = fullStartingBudget.value - totalCost.value + totalGain.value
@@ -519,8 +530,12 @@ const tier11tickets = computed(() => {
   const waifuPerksCost = waifuPerks.value.reduce(costCalcTX, 0)
   const genericWaifuPerksCost = genericWaifuPerks.value.reduce(costCalcTX, 0)
   const luresCost = luresBought.value.reduce(costCalcTX, 0)
+  let first = true
   const companionsCost = companions.value.reduce((a, x, i) => {
-    if (flags.value.danger11Start && i === 0 && x.tier >= 11 && x.tier <= 12) return 0
+    if (flags.value.danger11Start && first && x.tier >= 11 && x.tier <= 12) {
+      first = false
+      return 0
+    }
     if (x.perk && x.perk.tier >= 11)
       a += CHAR_COSTS_TICKET[x.perk.tier]
     if (x.swap)

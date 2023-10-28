@@ -282,17 +282,32 @@ DLCperks.push({
 })
 
 DLCperks.push({
+  uid: 'bqgqa',
+  dlc: 'Deppressed Alucard',
+  category: 'Misc Perk',
+  title: 'Contractor Interest',
+  image: 'https://i.imgur.com/Ub6ToDgl.jpg',
+  cost: 50,
+  multiple: true,
+  max: 4,
+  increment: true,
+  desc: `The purchase of this perk grants you an allotment of two credits every three days, provided your current credit balance does not exceed 25 credits. Attempts to abuse this system, and bypass this balance limit will be prevented and may result in payouts being frozen for increasingly long durations of time, depending on the severity of the attempted abuse. Allotments will also only occur if you are fully awake and cognizant the majority of the time each day. 
+
+  <p>This perk can be purchased up to three more times,  with each purchase increasing the cap past which allotments are no longer paid out by 25. Each subsequent purchase of this perk costs an additional 50 credits. Allotments will cease to occur after a total amount of 2,500 credits have been issued.</p>`,
+})
+
+DLCperks.push({
   uid: 'bqgqk',
   dlc: 'Mortaegus’s Mod',
   category: 'Misc Perk',
   dlclink: 'https://forum.questionablequesting.com/threads/r34-economy-cyoa-thread.11289/page-568#post-3866836',
   title: 'Patron Income',
-  image: 'https://i.ibb.co/LPWzYnn/Patron-Income.jpg',
+  image: 'https://i.imgur.com/pzqiuh0l.jpg',
   cost: 1000,
-  multiple: true,
-  max: 99,
-  increment: true,
-  desc: 'You now receive an allotment of one point for every three days, which you may spend on anything that points can purchase from the waifu catalogue; this perk can be taken multiple times and its effects stack additively, but each additional purchase costs one thousand more than the previous purchase, so while the first only costs one-thousand points, the second will cost two-thousand points, the third will cost three-thousand points, the fourth will cost four-thousand points, and so on and so on; one instance can be purchased in exchange for a IMG ticket',
+  whitelist: ['Contractor Interest'],
+  special: 'Requires Contractor Interest x4',
+  desc: 'The purchase of this perk removes the cap on your budget after which allotments will cease to occur. The rate at which you earn credits stays constant at two credits every three days, provided you remain fully awake and cognizant the majority of the time each day.  If you have not yet been issued all 2500 credits from your purchases of the Contractor Interest perk, those allotments will  continue to occur on top of the allotments given out by this perk. Allotments gained through the purchase of this perk will cease to occur after a total amount of 7.5k credits has been issued.',
+
 })
 
 DLCperks.push({

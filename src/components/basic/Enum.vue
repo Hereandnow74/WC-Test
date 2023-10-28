@@ -87,6 +87,8 @@ const typeTitles = {
   team: 'Team',
   payment: 'Payment',
   binding: 'Bindings',
+  heritage: 'Heritages',
+  home: 'Personal World',
   template: 'Template',
   defenses: 'Defenses',
   leveling: 'Leveling',

@@ -6,6 +6,57 @@
       </h2>
       <div>
         <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          27 October 2023
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~85 new user submitted characters, new missions, new worlds</li>
+          <li>Quick Intensity Settings</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          21 October 2023
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~120 new user submitted characters, new missions</li>
+          <li>New Heritage and other minor Stable WC changes</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          14 October 2023
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~100 new user submitted characters, new missions</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          08 October 2023
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~110 new user submitted characters, new missions, new worlds</li>
+          <li>Some changes in Gacha app</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          01 October 2023
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~75 new user submitted characters, new missions, new worlds</li>
+          <li>Some changes in Gacha app</li>
+          <li>Some work commissioned by DepressedAlucard to make SWP's support defense rebates was done, although still WIP</li>
+          <li>A reverse order sorting for SWP was added</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
           25 September 2023
         </h3>
         <ul class="list-decimal list-inside">

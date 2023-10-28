@@ -27,6 +27,10 @@
     </Note>
     <Desc v-if="activeType === 'Tantric Arts'" class="p-2 mb-4 max-w-4xl bg-warm-gray-200 dark:bg-warm-gray-800 mx-auto" :desc="tantricDesc" />
 
+    <div v-if="!legacyMode && !flags.noBindings" class="w-max mx-auto mb-2 flex gap-2">
+      You currently have [<strong>{{ binding[0].title }}</strong>] <Button size="Small" bg-color="bg-red-600" label="Delete" @click="sellAllBindings" />
+    </div>
+
     <div
       class="column-gap"
       :class="settings.columns !== 'auto' ? `column-count-${settings.columns}` : 'md:column-count-2 xl:column-count-3 4xl:column-count-4 5xl:column-count-5'"

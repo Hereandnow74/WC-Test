@@ -88,7 +88,7 @@ interface Fic {
 
 const fics = ref([] as Fic[])
 
-const statusOptions = ['Active', 'Completed', 'Hiatus']
+const statusOptions = ['Active', 'Completed', 'Hiatus', 'Dropped']
 
 const author = ref('Any')
 const world = ref('Any')
