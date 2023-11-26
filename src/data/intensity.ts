@@ -256,7 +256,7 @@ export const invasionPvP: IntensityPvP[] = []
 invasionPvP.push({
   uid: 'G8xXT',
   title: 'White Eye Orb',
-  image: 'https://i.imgur.com/Aq3mmTg.jpg',
+  image: 'https://i.imgur.com/Z5VUmdFl.png',
   cost: 75,
   category: 'Invasion',
   pvp: true,
@@ -270,7 +270,7 @@ invasionPvP.push({
 invasionPvP.push({
   uid: 'nLyWF',
   title: 'Red Eye Orb',
-  image: 'https://cdn.discordapp.com/attachments/925963686433132644/993106116600934490/Screenshot_2.jpg',
+  image: 'https://i.imgur.com/mavIIuUl.jpg',
   cost: 100,
   category: 'Invasion',
   pvp: true,
@@ -282,7 +282,7 @@ invasionPvP.push({
 invasionPvP.push({
   uid: 'hrfse',
   title: 'Green Eye Orb',
-  image: 'https://cdn.discordapp.com/attachments/894482928808112208/1007575677597384735/gyrx5mvdvwsr51.jpg',
+  image: 'https://i.imgur.com/3l6m9ccl.jpg',
   cost: 10,
   category: 'Invasion',
   pvp: true,
@@ -293,7 +293,7 @@ invasionPvP.push({
 invasionPvP.push({
   uid: 'pdsFe',
   title: 'Blue Eye Orb',
-  image: 'https://i.imgur.com/djT31F8.jpg',
+  image: 'https://i.imgur.com/PcVWGBPl.png',
   cost: 15,
   category: 'Invasion',
   pvp: true,

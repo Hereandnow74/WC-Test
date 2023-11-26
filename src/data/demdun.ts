@@ -185,7 +185,7 @@ homes.push({
   uid: '3BOS6',
   title: 'Niven? Never Heard of Him',
   category: 'Home',
-  image: 'https://i.ibb.co/WKHYQXg/Niven-Never-Heard-Of-Him.jpg',
+  image: 'https://i.imgur.com/B2CnKKJl.jpg',
   cost: 1200,
   whitelist: ['Pocket Star'],
   desc: 'Your planet is now a full-size ringworld, a solid mass roughly 1.6 million km across and stretching across the entirety of its 940 million km orbital circumference. Including the inner shade ring, the contained atmosphere, and the regularly-placed stations on the outside of the ring - with their own reversed artificial gravity and access to the inner surface - it’s nearly 30 km thick. Even with significant immigration, a contractor’s ringworld may last millions of years before overpopulation ever becomes an issue.',
@@ -221,7 +221,7 @@ homes.push({
   uid: '0QDNJ',
   title: 'Rainbow Bridge',
   category: 'Home',
-  image: 'https://i.ibb.co/WWZv7P2/Rainbow-Bridge.jpg',
+  image: 'https://i.imgur.com/RKhSxyE.jpg',
   cost: 30,
   whitelist: ['All Roads Lead to Home', 'We Will Meet Again', 'Sweet Home'],
   desc: `
@@ -255,7 +255,7 @@ demiplane.push({
   uid: '9ZpfV',
   title: 'Demiplane',
   category: 'Home',
-  image: 'https://cdn.discordapp.com/attachments/925963686433132644/993458569896788018/f85a7cbc479c4c9668633adfa595007d.jpg',
+  image: 'https://i.imgur.com/zh6xOUal.jpg',
   cost: 15,
   whitelist: ['Sweet Home'],
   desc: `
@@ -312,7 +312,7 @@ demiplane.push({
   uid: '08TGD',
   title: 'Laws of the Jungle',
   category: 'Home',
-  image: 'https://cdn.discordapp.com/attachments/925963686433132644/993458881030275103/wp9445195.webp',
+  image: 'https://i.imgur.com/yE7fqJal.jpg',
   cost: 25,
   multiple: true,
   max: 2,
@@ -332,7 +332,7 @@ demiplane.push({
   uid: '7CBFi',
   title: 'Laws of Science',
   category: 'Home',
-  image: 'https://cdn.discordapp.com/attachments/925963686433132644/993460584739778580/kore-wa-zombie-desu-ka-07-mkv_snapshot_02-18_2011-02-23_01-35-29.jpg',
+  image: 'https://i.imgur.com/Sn5Ky1el.jpg',
   cost: 50,
   whitelist: ['Demiplane'],
   desc: `
@@ -360,7 +360,7 @@ demiplane.push({
   uid: 'NEQDt',
   title: 'Laws of Cognition',
   category: 'Home',
-  image: 'https://cdn.discordapp.com/attachments/925963686433132644/993461105311621140/Popular-Blind-Anime-Characters-2.jpg',
+  image: 'https://i.imgur.com/PowHjfGl.jpg',
   cost: 50,
   whitelist: ['Demiplane'],
   desc: `

@@ -283,7 +283,7 @@ DLCperks.push({
 
 DLCperks.push({
   uid: 'bqgqa',
-  dlc: 'Deppressed Alucard',
+  dlc: 'DeppressedAlucard',
   category: 'Misc Perk',
   title: 'Contractor Interest',
   image: 'https://i.imgur.com/Ub6ToDgl.jpg',
@@ -306,7 +306,7 @@ DLCperks.push({
   cost: 1000,
   whitelist: ['Contractor Interest'],
   special: 'Requires Contractor Interest x4',
-  desc: 'The purchase of this perk removes the cap on your budget after which allotments will cease to occur. The rate at which you earn credits stays constant at two credits every three days, provided you remain fully awake and cognizant the majority of the time each day.  If you have not yet been issued all 2500 credits from your purchases of the Contractor Interest perk, those allotments will  continue to occur on top of the allotments given out by this perk. Allotments gained through the purchase of this perk will cease to occur after a total amount of 7.5k credits has been issued.',
+  desc: 'The purchase of this perk removes the cap on your budget after which allotments will cease to occur. The rate at which you earn credits stays constant at two credits every three days, provided you remain fully awake and cognizant the majority of the time each day.  If you have not yet been issued all 2,500 credits from your purchases of the Contractor Interest perk, those allotments will  continue to occur on top of the allotments given out by this perk. Allotments gained through the purchase of this perk will cease to occur after a total amount of 7,500 credits has been issued.',
 
 })
 
@@ -335,9 +335,8 @@ DLCperks.push({
   cost: 5,
   multiple: true,
   max: 3,
-  desc: `You can take all the stuff you owned in your birth world, example includes - your notes / phone / computer / things of sentimental value, the amount of the stuff is limited to the things you can carry with you in a backpack. Your smartphone and computer will have a snapshot of your world internet, regardless their technical capability for it. If you have a Sweet Home or it's upgrades one of the room of your house will be filled with your possessions instead.
-  <p>With a second  purchase the company will bring along any pets you had even if they no longer alive, they will get the Everlasting Talent for free.</p>
-  <p>The third purchase gives you an ability to change your pet species, limited to one time for each. This has no affect for a pet strength at the start, but can be trained up, the same as Added Potential. Examples of available species include: dragonling; kelpie; hippogriff; yeti; etc.</p>
+  desc: `You can now keep some possessions you owned in your birth world, such as your music collection, phone, computer, or items of sentimental value. The amount of items you may have is limited to the things you can carry with you in a backpack. Your smartphone or computer will be able to seamlessly connect to any local network or even work completely wirelessly, regardless of their technical capability, though they will not have access to the internet of your homeworld. If you have a Sweet Home or one of its upgrades, one of the rooms of your house can be filled with your possessions instead.
+  <p>With a second purchase of this perk, the company will allow you to bring along any pets you have, even if they are no longer alive. These pets will benefit from Everlasting Talent for free. The third purchase of this perk gives you a one-time ability to change the species of any pet you decide to bring with you. Your pet's new species is not limited to the mundane, and can, for example, be that of a mythical beast or alien. This change however has initially no effect on your pet’s strength, with the change working similarly to a power purchased via Added Potential.</p>
   `,
 })
 
@@ -360,7 +359,7 @@ DLCperks.push({
   category: 'Misc Perk',
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'Amazon-free Warranty',
-  image: 'https://i.ibb.co/yn9FF3j/Amazon-Free-Warranty.jpg',
+  image: 'https://i.imgur.com/hI78OSHl.jpg',
   cost: 200,
   desc: `Amazon tracking can be incredibly inconvenient. Who knows when your delivery will actually arrive? Instead of masses of Amazons to reduce Warranty Plan’s timer, this perk directly shortens the respawn timer for your subjects to 5 minutes.
   `,
@@ -607,6 +606,52 @@ DLClures.push({
   `,
 })
 
+DLClures.push({
+  uid: 'nuDNd',
+  dlc: 'DepressedAlucard',
+  dlclink: 'https://docs.google.com/document/d/18LaGf5cy9hDA7ZAInhxVJoTocWfeLo0PI_msQsFu76Q/edit#heading=h.umau8t7mtcvg',
+  title: 'White Knight',
+  category: 'Lure',
+  image: 'https://i.imgur.com/TyFYGSHl.jpg',
+  cost: 30,
+  desc: `<p>Every maiden hopes to one day find a white knight that will be there to save them in a moment of danger or come to rescue them from the unfortunate circumstances they have found themselves in.  With this lure any waifu that you ‘save’ or ‘rescue’ will find themselves growing attached to you. The greater the ‘danger’ you have saved them from, the effort you put into their rescue, or your reputation as a hero in said world, the stronger your target will find themselves drawn to you, their savior. Even those who did not wish to be rescued from their circumstances may find themselves nevertheless susceptible to your charms.</p>
+  `,
+})
+DLClures.push({
+  uid: 'nuDNc',
+  dlc: 'DepressedAlucard',
+  dlclink: 'https://docs.google.com/document/d/18LaGf5cy9hDA7ZAInhxVJoTocWfeLo0PI_msQsFu76Q/edit#heading=h.umau8t7mtcvg',
+  title: 'Florence Nightingale',
+  category: 'Lure',
+  image: 'https://i.imgur.com/ONy5YTNl.jpg',
+  cost: 15,
+  desc: `<p>Targets that either heal or care for you in a therapeutic manner, as well as those you do the same for, will start to fall for you. They will begin thinking about your next session or possible visit, about your recovery or healing methods, and will slowly come to yearn for your attention. Slowly but surely you will invade their thoughts, as the healing or care process turns into one of a more romantic and sexual nature. This lure does not undermine the effectiveness of any healing or care you may receive from a target. The strength of this effect depends on the duration and intimacy of the healing or therapeutic care you either receive or provide, with those who are already greatly invested in your health being particularly susceptible. This perk is optimized for 1 on 1 healing or therapeutic care.</p>
+  `,
+})
+DLClures.push({
+  uid: 'nuDNb',
+  dlc: 'DepressedAlucard',
+  dlclink: 'https://docs.google.com/document/d/18LaGf5cy9hDA7ZAInhxVJoTocWfeLo0PI_msQsFu76Q/edit#heading=h.umau8t7mtcvg',
+  title: 'Broken Taboos',
+  category: 'Lure',
+  image: 'https://i.imgur.com/5pmYS4Ml.jpg',
+  cost: 20,
+  desc: `<p>It is no secret that forbidden love is always the strongest. There is a certain weight to these relationships, especially those considered as a love that was never meant to be. With this lure, the more taboo, unlawful, or frowned upon a relationship between you and your chosen target is, the greater the feelings of attraction they will feel towards you. The strength of this effect further increases the more dedicated your target is to following whatever boundaries they hold themselves to. While at first, they may believe that whatever you have going on is wrong, something that should not be done, these feelings will disappear the deeper they dive and the more they indulge in whatever perversion you have drawn them into.</p>
+  `,
+})
+DLClures.push({
+  uid: 'nuDNa',
+  dlc: 'DepressedAlucard',
+  dlclink: 'https://docs.google.com/document/d/18LaGf5cy9hDA7ZAInhxVJoTocWfeLo0PI_msQsFu76Q/edit#heading=h.umau8t7mtcvg',
+  title: 'Honest to the Bone',
+  category: 'Lure',
+  image: 'https://i.imgur.com/oMFDnrNl.jpg',
+  cost: 15,
+  desc: `If there's one thing many would say they desire to see in a relationship, it's honesty. The strongest relationships are those built on trust, and the ability of partners to confide in one another. With this lure, the more honest you are to a target, the better. The truth in your words and your sincerity will draw them in like a moth to the flame, and you will find feelings of attraction quickly beginning to blossom. The more meaningful a truth is to a target, the greater the effect of this lure. Common truths known to a target will have next to no influence on them, while honest world-shattering revelations will have them soon brimming with love.
+  <p>Should you, however, begin to purposefully lie, cheat, and deceive, this attraction is bound to disappear, as with each falsehood any waifu that has been or is currently influenced by this lure will be driven further and further away from you. </p>
+  `,
+})
+
 // Other Controls
 export const DLCotherControls: DLCPerk[] = []
 
@@ -630,7 +675,7 @@ DLCotherControls.push({
   dlclink: 'https://docs.google.com/document/d/1j9emHb4IWvOTnp13RASTAuINAFuKDMSSQyQ-7ta9sjA/edit#',
   title: 'Signed and Sealed',
   category: 'Lure',
-  image: 'https://i.ibb.co/bj4f3kZ/Signed-And-Sealed.jpg',
+  image: 'https://i.imgur.com/1vtr0xGl.jpg',
   cost: 10,
   desc: `There are more formal approaches to gaining a waifu than a love confession. Taking this perk grants you skill in writing contracts and allows you to include binding terms about her behavior and actions. Once the other party signs the contract freely and the relevant conditions have been met they will be forced to comply with the terms: be that anything from telling you a secret to becoming your slave. Company lawyers will assess the strictness and duration of contracts to determine if this will be considered a 'capture'.
   <p>If you have taken No Bindings then the contract is only compulsive if the potential waifu understands the clauses explaining what she is agreeing to do and under what circumstances. In this case she must have signed the contract without coercion, but it is not required that she believed the contract was actually valid and binding.</p>
@@ -643,7 +688,7 @@ DLCotherControls.push({
   dlclink: 'https://docs.google.com/document/d/1j9emHb4IWvOTnp13RASTAuINAFuKDMSSQyQ-7ta9sjA/edit#',
   title: 'Letter of the Law',
   category: 'Lure',
-  image: 'https://i.ibb.co/7pRQbCb/Letter-Of-The-Law.jpg',
+  image: 'https://i.imgur.com/GTI5ooql.jpg',
   cost: 10,
   desc: `The law is on your side. If a contract you draft using the Signed and Sealed perk is otherwise legal then the compulsive terms are seen as legal and her compliance expected if signed. If you have a binding other than No Bindings then your contracts can compel an individual when it is signed by a parent, spouse, or anyone who could enter a contract on their behalf.
   `,
@@ -806,6 +851,19 @@ DLCotherControls.push({
   whitelist: ['Demi-Servant'],
 })
 
+DLCotherControls.push({
+  uid: 'nuDNh',
+  dlc: 'DepressedAlucard',
+  dlclink: 'https://docs.google.com/document/d/18LaGf5cy9hDA7ZAInhxVJoTocWfeLo0PI_msQsFu76Q/edit#heading=h.umau8t7mtcvg',
+  title: 'Only Man in Town',
+  category: 'Other Controls',
+  image: 'https://i.imgur.com/44s6obDl.png',
+  cost: 40,
+  desc: `Few like to share that which they already consider theirs. Dealing with competition for a maiden's heart and attention can prove to be an annoyance for those who wish to claim her for themselves. With this perk, the more you are interested in someone, the less others will be. Desire a waifu hard enough and you will find the suitors pining for her heart beginning to search elsewhere, as marriage contracts inexplicably end up annulled and exes looking to rekindle relationships finally turning to greener pastures. 
+  <p>Should this want for a target morph into a full-on obsession, even the closest of friends and family will not question your interactions with a waifu, and will eventually be perfectly happy to part ways with them, should they decide to leave with you. At the truly die-hard levels of such an obsession, you will be able to have even the sturdiest of relationships slowly crack and break apart, with your target slowly drifting away and being forgotten by those closest to them.</p>
+  `,
+})
+
 // Lure Expansions
 export const DLClureExpansions: DLCPerk[] = []
 
@@ -842,18 +900,6 @@ DLClureExpansions.push({
   desc: `Sometimes a target is not interested in taking the bait. Maybe the waifu does not care for kids, or perhaps they are of a race incapable of having children. Where children do not work, a cute pet might. You are now able to make use of your beastly familiars as an alternative bait to draw in waifu. The effectiveness of this bait depends on the personality of the subject in question, where some waifu might be strongly drawn to a fluffy cat and others to a monstrous leviathan.
   `,
   whitelist: ['Arlo'],
-})
-
-DLClureExpansions.push({
-  uid: 'nuDNn',
-  dlc: 'DepressedAlucard',
-  title: 'Lovespot: Signature Clothing',
-  category: 'Lure',
-  image: 'https://i.imgur.com/bTro7eTl.jpg',
-  cost: 30,
-  desc: `Sometimes, a individual is remembered not by their voice, nor their face but one particular article of clothing or accessory that stood out amongst the others. It could be a ring that they wore everyday and never bothered to take off, or a bright red coat easily spotted from far away. You may now choose to make one such article or accessory act as a love spot that catches the eyes of the target, drawing their attention and luring them in. Only an article that has been worn for a minimal duration of a month may be chosen to act as a love spot. You may choose to switch what article of clothing or accessory is used to another at any moment provided it meets the established requirements. Only one article of clothing or accessory can be made into a love spot at a time.
-  `,
-  whitelist: ['Love Spot'],
 })
 
 // DLC Heritages

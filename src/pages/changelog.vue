@@ -6,6 +6,36 @@
       </h2>
       <div>
         <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          19 November 2023
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~60 new user submitted characters, new missions, new worlds</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          13 November 2023
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~120 new user submitted characters, new missions, new worlds</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          04 November 2023
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~65 new user submitted characters, new missions, new worlds</li>
+          <li>New perk images, provided by DepressedAlucard</li>
+          <li>4 new DLC lures and 1 new DLC Other Control perk</li>
+          <li>You can Claim rides now, though only claim or buy at the same time, not both.</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
           27 October 2023
         </h3>
         <ul class="list-decimal list-inside">

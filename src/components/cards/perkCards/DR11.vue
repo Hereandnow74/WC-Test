@@ -56,7 +56,7 @@ const emit = defineEmits(['chooseIntensity'])
 const perkImg = ref<HTMLImageElement | null>(null)
 
 function allTalents(cost = false) {
-  talents.slice(0, 15).forEach((tl) => {
+  talents.slice(0, 16).forEach((tl) => {
     if (talentAvailable(tl) && (findIndex(talentPerks.value, { title: tl.title }) === -1 || cost))
       chooseTalent(tl, { title: tl?.title, cost: cost ? tl?.cost : 0, count: 1 })
   })

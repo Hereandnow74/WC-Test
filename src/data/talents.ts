@@ -47,7 +47,7 @@ talents.push({
   uid: '1t7o3',
   title: 'Body Tune-Up',
   category: 'Talent',
-  image: 'https://i.ibb.co/fkqgJ8Z/Body-Talent.jpg',
+  image: 'https://i.imgur.com/X8P3N1ll.jpg',
   cost: 5,
   desc: `
 <p>You lift. Your body is now in perfect fitness and health, with significant muscle growth, within healthy human standards. If your natural height was less, you are now between 170 and 210 cm tall - or will be, if you aren’t yet fully grown. Your clothes are all resized and your muscle memory adjusted to fit. (You may opt out of this height boost.)</p>
@@ -82,7 +82,7 @@ talents.push({
   uid: '1ycSB',
   title: 'Martial Talent',
   category: 'Talent',
-  image: 'https://i.ibb.co/0DZZj7L/Martial-Talent.jpg',
+  image: 'https://i.imgur.com/URtTDfml.jpg',
   cost: 10,
   desc: 'You fight. You have prodigious martial talent and can rapidly learn any personal, non-supernatural combat skills you encounter, whether melee or ranged. Supernatural extensions of martial skill are instead affected by Psychic, Soul, Science, or Land Talents. This Talent applies to both command ability and personal skill. ',
 })
@@ -91,7 +91,7 @@ talents.push({
   uid: '5uqEL',
   title: 'Wild Talent',
   category: 'Talent',
-  image: 'https://i.ibb.co/3WFT8nP/Wild-Talent.jpg',
+  image: 'https://i.imgur.com/kFodAsxl.jpg',
   cost: 5,
   desc: 'You camp. You have a knack for living in the wilderness, with a natural feel for how to identify and make use of edible food, potable water, suitable shelter, animal tracks, etc. You know how to ride a mundane horse. In worlds that don’t use horses, you can quickly adapt your riding methods to whatever appropriate beasts are available.',
 })
@@ -113,7 +113,7 @@ talents.push({
   uid: 'g4t2B',
   title: 'Engineering Talent',
   category: 'Talent',
-  image: 'https://i.ibb.co/L1WTbLj/Engineering-Talent.jpg',
+  image: 'https://i.imgur.com/lnDfQaIl.jpg',
   cost: 30,
   whitelist: ['Science Talent'],
   desc: 'Most so-called “mad scientists” are actually mad engineers. You can apply your natural knowledge toward practical purposes, whether personal or large-scale, for peace or war. Different engineering fields require different knowledge bases - just because Science Talent has taught you how one principle works doesn’t mean you can achieve the same result using a principle you haven’t learned yet.',
@@ -143,7 +143,7 @@ talents.push({
   uid: 'qOpbF',
   title: 'Performance Talent',
   category: 'Talent',
-  image: 'https://i.ibb.co/BszrmWS/Performance-Talent.jpg',
+  image: 'https://i.imgur.com/WBtHYg9l.jpg',
   cost: 10,
   desc: 'You express. You have a prodigious talent in the kinesthetic arts: music, dance, acting, etc. Audiovisual and stage production are instead covered under Engineering Talent.',
 })
@@ -177,7 +177,7 @@ talents.push({
   uid: 'PGFje',
   title: 'Land Talent',
   category: 'Talent',
-  image: 'https://i.imgur.com/05GApMTl.jpg',
+  image: 'https://i.imgur.com/TgUMw3Sl.jpg',
   cost: 30,
   whitelist: ['Wild Talent', 'Soul Talent'],
   additionalDesc: `
@@ -192,7 +192,7 @@ talents.push({
   uid: 'OQ6SY',
   title: 'Psychic Talent',
   category: 'Talent',
-  image: 'https://i.ibb.co/cJnMd28/Psychic-Talent.jpg',
+  image: 'https://i.imgur.com/Fv6o73rl.jpg',
   cost: 20,
   additionalDesc: `
   To unlock new types of ambient mystical arts beyond “styles anyone can use” and whatever might be unlocked by your Extra, Substitute, or Possess origin, use Added Potential or various Heritages.
@@ -208,7 +208,7 @@ talents.push({
   uid: 'oScLP',
   title: 'Covert Talent',
   category: 'Talent',
-  image: 'https://i.ibb.co/54hQfY0/Covert-Talent.jpg',
+  image: 'https://i.imgur.com/T1iNQX9l.jpg',
   cost: 10,
   desc: `
 <p>You lie, cheat, and steal. You have a prodigious talent for larceny, trespassing, theft, espionage, counterintelligence, and other forms of covert activity, whether it’s performed on a government’s dime or not. You can disappear into any crowd, no matter how sparse.</p>
@@ -219,7 +219,7 @@ talents.push({
   uid: 'oScLb',
   title: 'Administrative Talent',
   category: 'Talent',
-  image: '',
+  image: 'https://i.imgur.com/us3Mjlwl.jpg',
   cost: 10,
   desc: `
 <p>You work the red tape. You have a prodigious talent for organization, logistics, and bureaucracy, using the available levers to smooth activities you favor and throw up obstacles for those you don’t. This applies to any form of administration, whether commercial, industrial, political, religious, educational, military, or criminal, and synergizes with many other Basic Talents, including Martial, Communication, Performance, Blessed, and Covert.</p>`,
@@ -249,7 +249,7 @@ talents.push({
   uid: 'Lg121',
   title: 'Added Potential',
   category: 'Talent',
-  image: 'https://i.ibb.co/3cXr8dW/Template-Stacking0-Added-Potential.jpg',
+  image: 'https://i.imgur.com/9JOv9lQl.jpg',
   cost: 5,
   complex: 'target_f',
   anything: 'Power Name',
@@ -315,7 +315,7 @@ talents.push({
   uid: '38YzF',
   title: 'Template Stacking II',
   category: 'Talent',
-  image: 'https://i.ibb.co/G9D4476/Template-Stacking-II.jpg',
+  image: 'https://i.imgur.com/9g24ZVHl.jpg',
   cost: 20,
   special: 'Must be repurchased for each use.',
   complex: 'target',
@@ -392,7 +392,7 @@ defenses.push({
   title: 'Body Defense',
   category: 'Defense',
   special: '<Individual> is known for working with diseases, chemical medicine, or poisons.',
-  image: 'https://i.ibb.co/kgWFFz9/Body-Defense.jpg',
+  image: 'https://i.imgur.com/aUwzOfwl.jpg',
   cost: 5,
   whitelist: ['Body Tune-Up'],
   desc: `
@@ -416,7 +416,7 @@ defenses.push({
   title: 'Environmental Defense',
   category: 'Defense',
   special: '<Individual> can ignore hazardous environments.',
-  image: 'https://i.ibb.co/wykYVms/Environmental-Defense.jpg',
+  image: 'https://i.imgur.com/6omxcijl.jpg',
   cost: 25,
   whitelist: ['Wild Defense'],
   desc: 'Wild Defense’s protections now apply to true extremes. allowing you to enter the oceanic abyss or hard vacuum, or even go sun-diving and live. This also protects against purposeless, degenerative, relatively mundane mutations. This perk does not protect against injuries.',
@@ -427,7 +427,7 @@ defenses.push({
   title: 'Creature Defense',
   category: 'Defense',
   special: '<Individual> is known as a monster-tamer or otherwise being good with animals.',
-  image: 'https://i.ibb.co/vxSvX6v/Creature-Defense.jpg',
+  image: 'https://i.imgur.com/nxP4RkYl.jpg',
   cost: 10,
   desc: 'Non-sapient living things - beasts, flora, or fungi - will not attack you without provocation, i.e. coming too close to it, its family, its food, or its territory, or appearing too threatening, such by making sudden moves or loud noises. Wildlife will always attempt to obviously scare you off before attacking. Extremely hungry wildlife may still approach or stalk you to size you up, but will not ambush you, and you can scare them off with some effort.',
 })
@@ -437,7 +437,7 @@ defenses.push({
   title: 'Stress Defense',
   category: 'Defense',
   special: '<Individual> is known for keeping a cool head or having great willpower.',
-  image: 'https://i.ibb.co/h2D0FDK/Stress-Defense.jpg',
+  image: 'https://i.imgur.com/BUPHYJml.jpg',
   cost: 5,
   desc: 'Get that dirt off your shoulder. You can act calmly under pressure and are protected from degenerative mental effects.',
 })
@@ -447,7 +447,7 @@ defenses.push({
   title: 'Addiction Defense',
   category: 'Defense',
   special: '<Individual> known for having a material vice.',
-  image: 'https://i.ibb.co/Tm9kg7P/Addiction-Defense.jpg',
+  image: 'https://i.imgur.com/NaYs4nnl.jpg',
   cost: 10,
   whitelist: ['Stress Defense'],
   desc: '“The key word in that sentence is functional!” You can indulge in the joys of life without risking any sort of physiological or psychological dependence. At the resistance level, you will still experience cravings and withdrawal, but in a relatively mild form that you can push through with a bit of effort. This Defense also protects you from the relevant effects of your own lures, notably Faerie Feast and the Tantric Talent form of Sticky Fingers.',
@@ -458,7 +458,7 @@ defenses.push({
   title: 'Mind Defense',
   category: 'Defense',
   special: '<Individual> is known as a psychic or mind-manipulator.',
-  image: 'https://i.imgur.com/dKgUldp.png',
+  image: 'https://i.imgur.com/nM4ZQmul.jpg',
   cost: 25,
   desc: 'You are protected from all mind control effects from outside of your retinue and unwanted attempts from within. Attempts to influence you will be weaker and you have an easier time noticing them and fighting them off. At least part of your mind will always remain beyond any control, leaving you free to fight your controller from within - creatively reinterpreting orders, temporarily suppressing or weakening their influence, leaving part or all of your body locked in indecisive spasms, or even throwing off their control entirely if what they\'re trying to make you do goes too far against your true self. Successful mind control within your retinue will require your consent, not the victim’s. Friendly psychics may still contact you or your retinue through telepathy.',
 })
@@ -468,7 +468,7 @@ defenses.push({
   title: 'Possession Defense',
   category: 'Defense',
   special: '<Individual> is known for bodyjacking others.',
-  image: 'https://i.ibb.co/VwrGtdg/Possession-Defense.jpg',
+  image: 'https://i.imgur.com/uYKZg6Hl.jpg',
   cost: 10,
   whitelist: ['Body Defense', 'Mind Defense'],
   needed: 1,
@@ -490,7 +490,7 @@ defenses.push({
   title: 'Fatality Defense',
   category: 'Defense',
   special: '<Individual> is known for inflicting instant death or not dying even when killed.',
-  image: 'https://i.ibb.co/GQ93VPz/Fatality-Defense.jpg',
+  image: 'https://i.imgur.com/8BcXFkrl.png',
   cost: 50,
   whitelist: ['Everlasting Talent'],
   desc: 'Conceptual instant death and other soul-destroying effects may hurt and weaken you, but never kill you. Alternatively, you will be able to cling to life as a disembodied shade until your retinue can produce a replacement body for you to inhabit, or you simply force yourself to resurrect after some time.',
@@ -501,7 +501,7 @@ defenses.push({
   title: 'Polymorph Defense',
   category: 'Defense',
   special: '<Individual> is known for polymorphing others.',
-  image: 'https://i.ibb.co/0ZXMSn3/Polymorph-Defense.jpg',
+  image: 'https://i.imgur.com/pfd5Qonl.jpg',
   cost: 50,
   whitelist: ['Body Defense', 'Wyldscape Defense', 'Corruption Defense'],
   needed: 1,
@@ -515,7 +515,7 @@ defenses.push({
   title: 'Wyldscape Defense',
   category: 'Defense',
   special: '<Individual> hails from a region where the local reality is unstable.',
-  image: 'https://i.ibb.co/Fnn0LGN/Wyldscape-Defense.jpg',
+  image: 'https://i.imgur.com/7J66Bitl.jpg',
   cost: 50,
   whitelist: ['Environmental Defense', 'Polymorph Defense', 'Corruption Defense'],
   needed: 1,
@@ -573,7 +573,7 @@ defenses.push({
   title: 'Paradox Defense',
   category: 'Defense',
   special: '<Individual> is known as a time-manipulator.',
-  image: 'https://i.ibb.co/ncTQVT7/Paradox-Defense.jpg',
+  image: 'https://i.imgur.com/Wklr4B8l.jpg',
   cost: 50,
   desc: `
 <p>You are the master of your timeline. Temporal slowdowns will have increasingly weaker effects on you the stronger they are - a weak slowing effect will be even weaker, but a stronger one and even a total time-stop will not leave you completely unable to react. You will retain memories of previous timelines, loops, or other resets, even if they are faded or incomplete, and any attempts to spy on or change your timeline will have the same problems mentioned under Information, Trace, and Destiny Defenses. Attempts to erase you entirely will merely leave you weakened, faded, or flickering into and out of existence randomly.</p>

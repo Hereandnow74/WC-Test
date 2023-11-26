@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full md:w-[25em]">
+  <div class="w-full transform scale-75 md:scale-100 md:w-[25em]">
     <div class="text-center text-lg uppercase tracking-wide font-mono font-semibold break-words">
       {{ titles[value] }}
     </div>
@@ -26,7 +26,9 @@
 </template>
 
 <script lang="ts" setup>
+import { find } from 'lodash-es'
 import { randomString } from '~/logic'
+import { useStore } from '~/store/store'
 
 const props = defineProps({
   modelValue: {
@@ -34,6 +36,10 @@ const props = defineProps({
     default: 0,
   },
   name: {
+    type: String,
+    default: 'default',
+  },
+  type: {
     type: String,
     default: 'default',
   },
@@ -51,7 +57,10 @@ const props = defineProps({
   },
 })
 
-const value = ref(props.list.findIndex((n, i) => n === 0))
+const { difficulties } = useStore()
+const title = find(difficulties.value, { type: props.type })
+
+const value = ref(title ? props.titles.findIndex(n => n === title.title) : props.list.findIndex((n, i) => n === 0))
 const emit = defineEmits(['update:modelValue'])
 
 </script>

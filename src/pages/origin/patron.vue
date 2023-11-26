@@ -2,7 +2,7 @@
   <div class="p-2">
     <template v-if="settings.allChosenAuthors[0] !=='all' && !settings.allChosenAuthors.includes('Mortaegus’s Mod')">
       <h3 class="text-2xl text-center flex flex-col">
-        <a class="hover:underline" href="https://docs.google.com/document/d/1ETbNQt4mcekIh1VWPEJ6K2vbVguAzZmgkGaxQjMuQ2s/edit#" target="_blank" rel="noopener noreferrer"><span class="font-semibold">Patron Overhaul V. 1.0</span></a>
+        <a class="hover:underline" href="https://docs.google.com/document/d/1ETbNQt4mcekIh1VWPEJ6K2vbVguAzZmgkGaxQjMuQ2s/edit#" target="_blank" rel="noopener noreferrer"><span class="font-semibold">Patron Overhaul DLC v.1.0</span></a>
         <span class="text-base">By Rhivan, DepressedAlucard, and Despin</span>
       </h3>
       <Note class="my-4 max-w-screen-md mx-auto" type="info" title="Info">

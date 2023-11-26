@@ -27,12 +27,12 @@ const props = defineProps({
     default: '',
   },
   value: {
-    type: Boolean,
+    type: Boolean || String,
     default: false,
   },
 })
 
-const vl = ref(props.modelValue)
+const vl = ref(props.modelValue || props.value === true ? true : props.modelValue)
 const text = ref(props.value)
 
 const emit = defineEmits(['update:modelValue'])

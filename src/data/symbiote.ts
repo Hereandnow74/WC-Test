@@ -74,7 +74,7 @@ export const phases: Phases[] = [
     cost: 30,
     category: 'Binding',
     type: 'Phase',
-    image: '',
+    image: 'https://i.imgur.com/OiWuYC5l.jpg',
     desc: `
     <p>The foundation for the entire Alterzelu ecosystem, this enables construction of your first Hatchery, as well as Nurseries, Groves, and Dens. Your first creep will develop in this phase, as you begin to build your economy and automate production.</p>
     `,
@@ -86,7 +86,7 @@ export const phases: Phases[] = [
     cost: 85,
     category: 'Binding',
     type: 'Phase',
-    image: '',
+    image: 'https://i.imgur.com/XhXE7IHl.jpg',
     freebies: {
       talentPerks: [{ title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Martial Talent', cost: 0 }], count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Wild Talent', cost: 0 }], count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Athletic Talent', cost: 0 }], count: 1 }],
       defensePerks: [{ title: 'Wild Defense', cost: 0, count: 1 }, { title: 'Creature Defense', cost: 0, count: 1 }],
@@ -102,7 +102,7 @@ export const phases: Phases[] = [
     cost: 115,
     category: 'Binding',
     type: 'Phase',
-    image: '',
+    image: 'https://i.imgur.com/PN4FWVXl.jpg',
     freebies: {
       talentPerks: [{ title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Psychic Talent', cost: 0 }], count: 1 }, { title: 'Psychic Talent', cost: 0, count: 1 }],
       defensePerks: [{ title: 'Environmental Defense', cost: 0, count: 1 }, { title: 'Creature Defense', cost: 0, count: 1 }],
@@ -119,7 +119,7 @@ export const phases: Phases[] = [
     cost: 145,
     category: 'Binding',
     type: 'Phase',
-    image: '',
+    image: 'https://i.imgur.com/euMoxeol.jpg',
     freebies: {
       defensePerks: [{ title: 'Environmental Defense', cost: 0, count: 1 }],
     },

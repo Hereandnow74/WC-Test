@@ -168,7 +168,7 @@ const complex = reactive({
   cost: props.perk.cost,
 })
 
-// There a bug somewhere in this aproach, need to clear all data before it can be used when buy/modify/sell/buy scenario
+// There a bug somewhere in this approach, need to clear all data before it can be used when buy/modify/sell/buy scenario
 const perkToSave = reactive({
   uid: props.perk.uid,
   title: props.perk.title,
@@ -189,7 +189,7 @@ const perkToSave = reactive({
   }),
   target: '',
   anything: '',
-  freebies: { ...props.perk.freebies } || undefined,
+  freebies: props.perk.freebies ? { ...props.perk.freebies } : undefined,
 })
 
 const displayedCost = computed(() => {

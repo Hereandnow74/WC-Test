@@ -121,10 +121,11 @@ export default defineConfig({
   build: {
     rollupOptions: {
       output: {
+        // args.getModuleInfo(id))?.ast?.end <= 2000
+        manualChunks: id => (id.includes('node_modules') ? 'vendor' : null),
         chunkFileNames: 'assets/[name].js',
         assetFileNames: 'assets/[name][extname]',
         entryFileNames: 'assets/[name].js',
-        manualChunks: id => id.includes('node_modules') ? 'vendor' : null,
       },
     },
   },

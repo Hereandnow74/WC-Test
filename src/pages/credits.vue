@@ -16,8 +16,9 @@
           Waifu Catalog Interactive - Credits
         </h3>
         Thanks to
-        <a class="text-blue-400" href="https://klassekatze.github.io/waifucatimg/" target="_blank" rel="noopener noreferrer">klassekatze</a> for compilation of DLC characters used in this catalog.
-        <div>Thanks to KatzSmile for providing images for perks and creating 'Pocket Space' app</div>
+        <a class="text-blue-400" href="https://klassekatze.github.io/waifucatimg/" target="_blank" rel="noopener noreferrer">klassekatze</a> for compilation of DLC characters used in this catalog (these that are without user nickname);
+        <div><b>KatzSmile</b> and <b>DepressedAlucard</b> for providing images for perks;</div>
+        <div><b>Somdudewillson</b> for writing most of the server code, for likes system on Interactive;</div>
         <h4 class="text-lg">
           Links to original:
         </h4>

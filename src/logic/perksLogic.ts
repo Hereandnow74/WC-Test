@@ -568,7 +568,7 @@ export function chooseWaifuPerk(fullPerk: WaifuPerk, perk: Perk) {
 export function buyAnyPerk(perkName: string, count = 1, cost = 0) {
   const { allEffects } = useStore()
   const fullPerk = ALL_PERK_TITLES.value[perkName]
-  const saveStore = ALL_PERK_STORES[fullPerk.category as keyof typeof ALL_PERK_STORES]
+  const saveStore = ALL_PERK_STORES.value[fullPerk.category as keyof typeof ALL_PERK_STORES]
   const { allEvents } = useEvents()
   if (saveStore) {
     const ind = findIndex(saveStore, { title: perkName })
@@ -589,7 +589,7 @@ export function buyAnyPerk(perkName: string, count = 1, cost = 0) {
 export function removeAnyPerk(perkName: string, count = 1) {
   const { allEffects } = useStore()
   const fullPerk = ALL_PERK_TITLES.value[perkName]
-  const saveStore = ALL_PERK_STORES[fullPerk.category as keyof typeof ALL_PERK_STORES]
+  const saveStore = ALL_PERK_STORES.value[fullPerk.category as keyof typeof ALL_PERK_STORES]
   const { allEvents } = useEvents()
   if (saveStore) {
     const ind = findIndex(saveStore, { title: perkName })

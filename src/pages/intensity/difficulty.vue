@@ -73,9 +73,16 @@
     <h3 class="text-2xl font-semibold text-center">
       Quick Intensity Settings
     </h3>
-    <div class="flex gap-8 flex-wrap mx-auto md:px-10">
+    <div class="flex gap-8 flex-wrap mx-auto md:px-10 justify-center">
       <template v-for="diff, n in difficultySliders" :key="n">
-        <Range v-if="diff.list.length > 1" :list="diff.list" :titles="diff.titles" @input="(event)=> chooseQuick(event.target.value, diff)" />
+        <Range
+          v-if="diff.list.length > 1"
+          :title="typeTitles[n]"
+          :list="diff.list"
+          :titles="diff.titles"
+          :type="n"
+          @input="(event)=> chooseQuick(event.target.value, diff)"
+        />
       </template>
     </div>
     <div class="flex gap-2 justify-center flex-wrap mx-auto md:px-10 my-6 font-semibold">
@@ -172,8 +179,6 @@ import { randomString, useTooltips } from '~/logic/misc'
 import { difficultyAvailable, chooseDifficulty, pickSimplePerk } from '~/logic/perksLogic'
 import { useStore } from '~/store/store'
 import { useDifficulty } from '~/store/difficulty'
-
-const testRange = ref(0)
 
 const { settings, difficulties, allEffects } = useStore()
 const {
@@ -283,7 +288,6 @@ onMounted(() => {
 })
 
 function chooseQuick(value, diff) {
-  console.log(diff)
   const difficulty = find(difficultyOptions, { uid: diff.uids[value] })
   if (difficulty)
     chooseDifficulty(difficulty)

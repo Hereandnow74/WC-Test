@@ -18,12 +18,20 @@
       </span>
       <div class="flex gap-1">
         <Button
-          v-if="active"
+          v-if="active && !selectedRide.claimed"
           class="text-base ml-2"
           label="buy"
           size="Small"
           bg-color="bg-blue-500"
           @click.stop="buyRide"
+        />
+        <Button
+          v-if="active"
+          class="text-base ml-2"
+          label="claim"
+          size="Small"
+          bg-color="bg-orange-500"
+          @click.stop="claimRide"
         />
         <Button
           v-if="active && bought"
@@ -131,6 +139,7 @@ const selectedRide = reactive({
   addonsCost: 0,
   addons: [] as string[],
   variant: '',
+  claimed: false,
 })
 
 const displayedCost = computed(() => selectedRide.cost + props.ride.cost + selectedRide.addonsCost)
@@ -160,13 +169,26 @@ function pickRideVariant(variant: any[]) {
 
 function buyRide() {
   selectedRide.count += 1
+  if (selectedRide.claimed)
+    selectedRide.claimed = false
   selectedRide.cost += props.ride.cost + selectedRide.addonsCost
+  pickRide()
+}
+
+function claimRide() {
+  selectedRide.count += 1
+  selectedRide.claimed = true
+  selectedRide.cost = 0
+  // selectedRide.cost += props.ride.cost + selectedRide.addonsCost
   pickRide()
 }
 
 function sellRide() {
   selectedRide.count -= 1
-  selectedRide.cost -= props.ride.cost + selectedRide.addonsCost
+  if (!selectedRide.claimed)
+    selectedRide.cost -= props.ride.cost + selectedRide.addonsCost
+  if (selectedRide.count === 0 && selectedRide.claimed)
+    selectedRide.claimed = false
   pickRide()
 }
 

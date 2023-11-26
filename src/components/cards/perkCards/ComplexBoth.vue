@@ -109,6 +109,7 @@
                   append-id="complexPerks"
                   placeholder="Character / Race / Power name"
                   class="flex-grow"
+                  :max-tier="10"
                   error-message=""
                   @onChar="(char: DBCharacter) => (power.flavor = `${char.n} (${char.w})`, power.target = companion.name, power.uid = companion.uid)"
                   @update:modelValue="(val) => (power.flavor = val, power.target = companion.name, power.uid = companion.uid)"

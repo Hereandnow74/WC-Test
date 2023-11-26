@@ -144,17 +144,17 @@ export const patrons = [
       <p>The Legion ensures that you are only able to purchase Slightly Used Waifu with a trauma of tier 2 or higher. In fact, when it comes to spinning the metaphorical wheel, they will  ensure that you receive no waifu with a lower trauma tier. To compensate, purchased Slightly Used waifu are guaranteed to be tier 4 or higher, and the chances for a purchased Slightly used Waifu to be of a greater tier are quadrupled.</p>
     `,
   },
-  {
-    title: 'Nice Guy',
-    uid: 'GaKrz',
-    image: 'https://i.imgur.com/yNK0959.jpg',
-    cost: 0,
-    desc: `
-      <i>The company can be a cruel and uncaring thing, but not everyone wants contractors to be the monsters they often become. Adventure? Sure! Slaver? No. Some wish to retain their humanity, and the Nice Guy is happy to give you a chance to follow their path.</i> 
-      <p><i>A relatively new addition to the 1̵̨́3̴̲̿̌͑,, the Nice Guy has his own ideas on how things work around here. Naive and hopeful, he remains sure that the company can be changed from the inside, and that a moral alternative can be found to its more… questionable practices. He seeks to find and nurture others like him, individuals willing to spread his vision of a better future</i></p>
-      <p>Your Bindings will no longer apply any of the enforced loyalty, friendship, or sexual interest effects. Mind control under any circumstances is heavily frowned upon. A gentleman is expected to have a number of useful skills though, so you receive a 20% discount for all lures.</p>
-    `,
-  },
+  // {
+  //   title: 'Nice Guy',
+  //   uid: 'GaKrz',
+  //   image: 'https://i.imgur.com/yNK0959.jpg',
+  //   cost: 0,
+  //   desc: `
+  //     <i>The company can be a cruel and uncaring thing, but not everyone wants contractors to be the monsters they often become. Adventure? Sure! Slaver? No. Some wish to retain their humanity, and the Nice Guy is happy to give you a chance to follow their path.</i>
+  //     <p><i>A relatively new addition to the 1̵̨́3̴̲̿̌͑,, the Nice Guy has his own ideas on how things work around here. Naive and hopeful, he remains sure that the company can be changed from the inside, and that a moral alternative can be found to its more… questionable practices. He seeks to find and nurture others like him, individuals willing to spread his vision of a better future</i></p>
+  //     <p>Your Bindings will no longer apply any of the enforced loyalty, friendship, or sexual interest effects. Mind control under any circumstances is heavily frowned upon. A gentleman is expected to have a number of useful skills though, so you receive a 20% discount for all lures.</p>
+  //   `,
+  // },
   // {
   //   title: 'T̵h̵e̶ ̶L̶i̵b̶e̸r̷a̵t̶o̷r̶',
   //   uid: '2uzzu',

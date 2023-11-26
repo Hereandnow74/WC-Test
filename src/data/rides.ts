@@ -266,6 +266,18 @@ rides.push({
 })
 
 rides.push({
+  uid: 'b6Vyj',
+  title: 'War Galley',
+  source: 'Warhammer Fantasy',
+  category: 'Sky',
+  size: 'Large',
+  image: '',
+  cost: 150,
+  desc: 'a floating fortress-city, warded by sorcery and capable of containing an entire army, as well as a port to be a mobile harbor.',
+  addons: [['Sorceress Cabin & Spire of Sorcery', 25], ['Monster Hold & Dragon Tower', 50], ['War Galley', 20]],
+})
+
+rides.push({
   uid: 'b6Vyb',
   title: 'Monolith',
   source: 'Warhammer 40k',

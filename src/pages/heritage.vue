@@ -49,6 +49,7 @@
           <Select
             v-if="hr.title === 'First Augmentation'"
             v-model="flags.transhumanType"
+            :disabled="!!allHeritages[hr.title]"
             :options="['Biomorph', 'Cybermorph', 'Aethermorph']"
             placeholder="Transhuman type"
             class="ml-1 text-base"

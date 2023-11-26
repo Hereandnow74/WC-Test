@@ -13,7 +13,7 @@ heritages.push({
   uid: 'JrxZe',
   title: 'Ancestral Diversity',
   category: 'Heritage',
-  image: 'https://i.ibb.co/Hqzvfds/Ancestral-Diversity.jpg',
+  image: 'https://i.imgur.com/ii8uEddl.jpg',
   cost: 1000,
   tree: 'None',
   multiple: true,
@@ -70,7 +70,7 @@ heritages.push({
   uid: '7Fc4I',
   title: 'Dragon Aura',
   category: 'Heritage',
-  image: 'https://i.ibb.co/BzH3djV/Dragon-Aura.jpg',
+  image: 'https://i.imgur.com/vz55pURl.jpg',
   tree: 'Dragon',
   type: 'Lure',
   cost: 200,
@@ -210,7 +210,7 @@ heritages.push({
 heritages.push({
   uid: 's4dWa',
   title: 'Under Jolly Roger',
-  image: '',
+  image: 'https://i.imgur.com/Ag5kt8Fl.jpg',
   tree: 'Pirate',
   freebies: {
     talentPerks: [{ title: 'Athletic Talent', cost: 0, count: 1 }, { title: 'Martial Talent', cost: 0, count: 1 }, { title: 'Performance Talent', cost: 0, count: 1 }, { title: 'Covert Talent', cost: 0, count: 1 }],
@@ -229,7 +229,7 @@ heritages.push({
 heritages.push({
   uid: 's4dWb',
   title: 'Bling, Booty, and Chests',
-  image: '',
+  image: 'https://i.imgur.com/aXCsFphl.jpg',
   tree: 'Pirate',
   category: 'Heritage',
   type: 'Party',
@@ -259,7 +259,7 @@ heritages.push({
 heritages.push({
   uid: 's4dWc',
   title: 'Pirate Armada',
-  image: '',
+  image: 'https://i.imgur.com/l8km4Wdl.jpg',
   tree: 'Pirate',
   freebies: {
     talentPerks: [{ title: 'Engineering Talent', cost: 0, count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'All', cost: 0 }], count: 1 }],
@@ -276,7 +276,7 @@ heritages.push({
 heritages.push({
   uid: 's4dWd',
   title: 'And a Bottle of Rum',
-  image: '',
+  image: 'https://i.imgur.com/S9s49dUl.jpg',
   tree: 'Pirate',
   freebies: {
     defensePerks: [{ title: 'Stress Defense', cost: 0, count: 2 }, { title: 'Addiction Defense', cost: 0, count: 2 }],
@@ -293,7 +293,7 @@ heritages.push({
 heritages.push({
   uid: 's4dWe',
   title: 'Irresistible Booty',
-  image: '',
+  image: 'https://i.imgur.com/lwQ8psul.jpg',
   tree: 'Pirate',
   freebies: {
     defensePerks: [{ title: 'Trace Defense', cost: 0, count: 1 }],
@@ -311,7 +311,7 @@ heritages.push({
 heritages.push({
   uid: 's4dWf',
   title: 'Release the Kraken',
-  image: '',
+  image: 'https://i.imgur.com/MeKlMHBl.jpg',
   tree: 'Pirate',
   freebies: {
     defensePerks: [{ title: 'Information Defense', cost: 0, count: 1 }, { title: 'Creature Defense', cost: 0, count: 1 }],
@@ -329,7 +329,7 @@ heritages.push({
 heritages.push({
   uid: 's4dWh',
   title: 'Letter of Marque',
-  image: '',
+  image: 'https://i.imgur.com/mLPC1zBl.jpg',
   tree: 'Pirate',
   freebies: {
     talentPerks: [{ title: 'Blessed Talent', cost: 0, count: 1 }],
@@ -347,7 +347,7 @@ heritages.push({
 heritages.push({
   uid: 's4dWg',
   title: 'Tortuga',
-  image: '',
+  image: 'https://i.imgur.com/4A7fjxkl.jpg',
   tree: 'Pirate',
   freebies: {
     talentPerks: [{ title: 'Administrative Talent', cost: 0, count: 1 }, { title: 'Land Talent', cost: 0, count: 1 }],
@@ -367,7 +367,7 @@ heritages.push({
 heritages.push({
   uid: 's4dWj',
   title: '“The Day You Almost Caught-”',
-  image: '',
+  image: 'https://i.imgur.com/TNyVQ7cl.jpg',
   tree: 'Pirate',
   freebies: {
     talentPerks: [{ title: 'Soul Talent', cost: 0, count: 1 }],
@@ -388,7 +388,7 @@ heritages.push({
 heritages.push({
   uid: 's4dWk',
   title: 'The Dread Pirate Roberts',
-  image: '',
+  image: 'https://i.imgur.com/RtJeFMXl.jpg',
   tree: 'Pirate',
   freebies: {
     talentPerks: [{ title: 'Communication Talent', cost: 0, count: 1 }],
@@ -407,7 +407,7 @@ heritages.push({
 heritages.push({
   uid: 's4dWl',
   title: 'Part of the Ship, Part of the Crew',
-  image: '',
+  image: 'https://i.imgur.com/hCam5m8l.jpg',
   tree: 'Pirate',
   freebies: {
     defensePerks: [{ title: 'Corruption Defense', cost: 0, count: 1 }],
@@ -428,7 +428,7 @@ heritages.push({
 heritages.push({
   uid: 's4dWi',
   title: 'Hoist the Colors',
-  image: '',
+  image: 'https://i.imgur.com/x4ekF7fl.jpg',
   tree: 'Pirate',
   category: 'Heritage',
   type: 'Self',

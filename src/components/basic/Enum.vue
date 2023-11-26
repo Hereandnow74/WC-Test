@@ -44,10 +44,11 @@
 </template>
 
 <script lang='ts' setup>
-import { isArray, groupBy, findIndex, remove } from 'lodash-es'
+import { isArray, groupBy } from 'lodash-es'
 import type { PropType } from 'vue'
 import { ALL_DLC_PERK_TITLES, LINKS, QUERIES } from '~/data/constants'
 import { useStore } from '~/store/store'
+import { removeAnyPerk } from '~/logic'
 
 const { baseBudget, legacyMode } = useStore()
 
@@ -120,8 +121,6 @@ const costOrIntensity = (el: any) => {
 }
 
 function deletePerk(el: any) {
-  const ind = findIndex(props.list, { title: el.title })
-  if (ind !== -1)
-    remove(props.list, { title: el.title })
+  removeAnyPerk(el.title)
 }
 </script>

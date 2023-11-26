@@ -154,7 +154,7 @@ export const difficultyOptions = [
   {
     uid: 'fFdOa',
     title: 'Ancestral Diversity Intensity',
-    image: '',
+    image: 'https://i.imgur.com/AmZdunal.jpg',
     intensity: -1,
     desc: 'The perk Ancestral Diversity is available for purchase, allowing you access to additional Heritages beyond your first. You may also acquire additional Heritages through other means, such as PvP rewards or other contractors using their Heritage-spreading perks (Dragon Thrall, Philosopher’s Transmortality Engine, An Answer to Reason, etc.) on you.',
     category: 'difficulty',
@@ -163,7 +163,7 @@ export const difficultyOptions = [
   {
     uid: 'fFdOs',
     title: 'Only One',
-    image: '',
+    image: 'https://i.imgur.com/BKANfQ2l.jpg',
     intensity: 0,
     desc: 'Once you have your first Heritage, you may not gain a second by any means. Heritages may not be refunded, so choose wisely.',
     category: 'difficulty',
@@ -262,7 +262,7 @@ export const difficultyOptions = [
   {
     uid: 'hbuNo',
     title: 'Standard',
-    image: '',
+    image: 'https://i.imgur.com/stemJHhl.jpg',
     intensity: 0,
     desc: 'Everything in the Demiplanes & Dungeons section is available as normal.',
     category: 'difficulty',
@@ -271,7 +271,7 @@ export const difficultyOptions = [
   {
     uid: 'hbuNa',
     title: 'Nomad',
-    image: '',
+    image: 'https://i.imgur.com/SSp777Hl.jpg',
     intensity: 1,
     desc: 'Pocket Apartment is not available for purchase. While this modifier is active, All Roads Lead to Home, Rainbow Bridge, and Demiplane and its upgrades (but not Dungeon) will all still be available for purchase, provided you have a company-provided space such as Dragon Cabin or enclosed Ride. Multicore Neural Leyline’s normal requirement of Pocket Apartment will similarly be waived, as the Jouten is itself a company-provided space.',
     category: 'difficulty',
@@ -280,7 +280,7 @@ export const difficultyOptions = [
   {
     uid: 'hbuNs',
     title: 'Lawless',
-    image: '',
+    image: 'https://i.imgur.com/7RAQLxLl.jpg',
     intensity: 2,
     desc: 'In addition to the effects of Nomad, Demiplane and its upgrades are also unavailable. The Outer Shell rule (in the Defenses section) still applies.',
     category: 'difficulty',

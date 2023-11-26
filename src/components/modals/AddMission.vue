@@ -273,6 +273,7 @@ const addPerk = handleSubmit((values) => {
     proposal.uid = props.mission.uid
   if (!temporary.value)
     proposeMission(proposal, () => successMessage.value = 'Mission was send successfully, await until I review and add it')
+  userNickname.value = values.author
   props.missions.unshift({ ...proposal, temprorary: true })
   buttonActive.value = false
   setTimeout(() => { buttonActive.value = true; successMessage.value = ''; errorMessage.value = '' }, 30 * 1000)

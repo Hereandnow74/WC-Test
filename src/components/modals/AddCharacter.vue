@@ -226,8 +226,11 @@ const addCharacter = handleSubmit((values) => {
     }
     values.uid = props.character.uid || random(10000000, 99999999)
 
-    if (values.SWP)
-      values.SWP = find(Object.values(waifuPerksObject), { title: values.SWP })?.uid
+    if (values.SWP) {
+      const swpName = values.SWP.slice(0, values.SWP.indexOf('[') - 1)
+      values.SWP = find(Object.values(waifuPerksObject), { title: swpName })?.uid
+    }
+    console.log(values)
 
     processing.value = true
     userNickname.value = values.nickname

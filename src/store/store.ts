@@ -408,11 +408,11 @@ const fullStartingBudget = computed(() => {
       .reduce((a, x) => x.intensity < 10 ? a += x.intensity : (intensityFlat += x.intensity, a), 0)
 
     let bd = baseBudget.value
-    if (flags.value.danger11Start) bd = 0
+    if (flags.value.danger11Start) bd = 2045
 
     return csr.value ? Math.round((bd + intensityFlat) * (intenMultiplier)) : Math.round((bd + intensityFlat) * (1 + intenMultiplier))
   }
-  return csr.value ? 0 : (flags.value.danger11Start ? 0 : difficultyAdjustedBudgets.value[startingWorld.value.rating]) || 0
+  return csr.value ? 0 : (flags.value.danger11Start ? 2045 : difficultyAdjustedBudgets.value[startingWorld.value.rating]) || 0
 })
 
 // const creditLimit = computed(() =>

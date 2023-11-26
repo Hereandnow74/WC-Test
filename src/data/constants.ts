@@ -324,21 +324,23 @@ export const ALL_PERK_TITLES = computed(() => {
 
 const { binding, luresBought, heritage, ridePerks, homePerks, talentPerks, defensePerks, otherPerks, miscPerks, waifuPerks, genericWaifuPerks, pvpPerks } = useChargenStore()
 
-export const ALL_PERK_STORES = {
-  'Binding': binding.value,
-  'Lure': luresBought.value,
-  'Heritage': heritage.value,
-  'RidePerk': ridePerks.value,
-  'Home': homePerks.value,
-  'Talent': talentPerks.value,
-  'Defense': defensePerks.value,
-  'Other': otherPerks.value,
-  'Misc': miscPerks.value,
-  'Waifu': waifuPerks.value,
-  'Generic': genericWaifuPerks.value,
-  'Invasion': pvpPerks.value,
-  'Other Control': otherPerks.value,
-}
+export const ALL_PERK_STORES = computed(() => {
+  return {
+    'Binding': binding.value,
+    'Lure': luresBought.value,
+    'Heritage': heritage.value,
+    'RidePerk': ridePerks.value,
+    'Home': homePerks.value,
+    'Talent': talentPerks.value,
+    'Defense': defensePerks.value,
+    'Other': otherPerks.value,
+    'Misc': miscPerks.value,
+    'Waifu': waifuPerks.value,
+    'Generic': genericWaifuPerks.value,
+    'Invasion': pvpPerks.value,
+    'Other Control': otherPerks.value,
+  }
+})
 
 export const LINKS = computed(() => {
   const links = {} as Record<string, string>
