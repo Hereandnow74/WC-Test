@@ -26,6 +26,28 @@ export async function _searchForCharacters(SERVER_URL: string, API_VERSION: stri
   }
 }
 
+export async function _getRandomCharacters(SERVER_URL: string, API_VERSION: string, request: SearchRequest): Promise<DBCharacter[]> {
+  const apiUrl = `${SERVER_URL}/${API_VERSION}/characters/random`
+  const response = await fetch(apiUrl, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(request),
+  })
+
+  if (!response.ok) {
+    // const errorText = await response.text()
+    // console.log(JSON.parse(errorText).message)
+    return []
+  }
+  else {
+    const payload = await response.text()
+    const jsonPayload = JSON.parse(payload)
+    return jsonPayload
+  }
+}
+
 export async function _recalculateLikesOnServer(SERVER_URL: string, API_VERSION: string): Promise<string> {
   if (tokens.value?.access?.token) {
     const apiUrl = `${SERVER_URL}/${API_VERSION}/characters/recalculateFields`

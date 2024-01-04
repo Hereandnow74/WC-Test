@@ -74,7 +74,7 @@ function payLoan() {
   if (payAmount.value > 0 && budget.value >= payAmount.value) {
     fee.value += payAmount.value
     loan.value.owed -= payAmount.value
-    trHistory.value.push(`Payed for the loan ${payAmount.value} credits.`)
+    trHistory.value.push(`Paid for the loan ${payAmount.value} credits.`)
   }
 }
 

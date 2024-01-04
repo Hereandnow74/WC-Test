@@ -2168,6 +2168,60 @@ export const waifu_perks: WaifuPerk[] = [
     cost: 300,
     desc: 'Miku is now the host to Shem-Ha Mephorash, the devil who betrayed her fellow Custodians, attempted to enslave humanity, and survived her defeat by embedding herself within human language. Shem-Ha may instead be purchased separately, in her own body, for 500 credits. Both versions of Shem-Ha qualify for special Alterzelu Symbiote theming. ',
   },
+  {
+    uid: 'cKoxn',
+    title: 'Reaping the Harvest',
+    from: 'Reincarnated as a Slime',
+    waifu: [
+      'Rimuru Tempest',
+    ],
+    waifuUID: [
+      9719,
+    ],
+    tier: 9,
+    image: 'https://cdn.donmai.us/original/cd/92/__rimuru_tempest_tensei_shitara_slime_datta_ken_drawn_by_mikoto_kei__cd92bf98347488529b1cf219c83cf718.png',
+    cost: 400,
+    discount: 0,
+    costT: 0,
+    desc: 'Rimuru has awakened a latent Demon Lord seed, becoming a true Demon Slime after absorbing thousands of human souls. With the Ultimate Skills of Raphael and Beelzebuth as just the initial prizes from this bloody rite, Rimuru\'s potential is nearly limitless. Rimuru will always have this perk if captured after becoming a Demon Lord. Contractors outside of the world of Reincarnated as a Slime may also provoke Rimuru\'s Demon Lord awakening and acquire this perk by providing the corresponding amount of soul energy, at least equal to that of 10,000 standard humans.',
+    whitelist: [],
+  },
+  {
+    uid: '8Ko9r',
+    title: 'Draconic Predation',
+    from: 'Reincarnated as a Slime',
+    waifu: [
+      'Reaping the Harvest',
+    ],
+    waifuUID: [
+      'cKoxn',
+    ],
+    tier: 10,
+    image: 'https://cdn.donmai.us/original/87/82/__rimuru_tempest_and_veldora_tensei_shitara_slime_datta_ken_drawn_by_karin_yutchinyutchin1__8782c4ed193af65ea88ade8befe0111d.jpg',
+    cost: 500,
+    discount: 0,
+    costT: 0,
+    desc: 'With his analysis of Veldora complete, Rimuru has surpassed the slime race\'s limitations and become a fixture of the world, a True Dragon. Boasting even more impressive magicule generation and composition, along with a host of other racial and developed abilities, Rimuru is now one of the strongest beings in the whole world. As an avatar of nature, there are few who would ever dare to oppose this walking catastrophe and creator of chaos.  Rimuru still retains all previous racial abilities as a slime. There is no victory to be found in opposing a spirit bearing the will of nature. Rimuru will always have this perk if captured after becoming a True Dragon.',
+    whitelist: [],
+  },
+  {
+    uid: 'zVMDr',
+    title: 'False Creator',
+    from: 'Reincarnated as a Slime',
+    waifu: [
+      'Draconic Predation',
+    ],
+    waifuUID: [
+      '8Ko9r',
+    ],
+    tier: 11,
+    image: 'https://cdn.donmai.us/original/f0/52/__rimuru_tempest_tensei_shitara_slime_datta_ken_drawn_by_yilocity__f0523ee2214377fe4c49c7ed6c299974.jpg',
+    cost: 0,
+    discount: 1000,
+    costT: 2,
+    desc: 'Over a period of countless years, Rimuru’s Imaginary Space has accumulated enough energy to bring back the world the slime once knew, countless times over. Perhaps it wouldn\'t be the same, but it would be a world nevertheless. With the power to replicate every person the slime was ever involved with, and create a copy of what once was, Rimuru truly holds the power of a god. What else does one call a being able to contain a whole physical universe in their stomach? Rimuru Tempest will always have this perk after the slime’s final ascension.',
+    whitelist: [],
+  },
 ]
 
 // DLC's perks

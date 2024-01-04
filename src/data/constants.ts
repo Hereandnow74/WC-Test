@@ -202,7 +202,7 @@ export const waifuTags = {
   lm: { tag: 'Luck Manipulation', category: 'Powers', short: 'lm', effect: '', desc: 'Known as a luck-manipulator.', color: 'bg-gradient-to-t to-yellow-900 via-yellow-400 from-yellow-900 text-black' },
   tn: { tag: 'Time Manipulation', category: 'Powers', short: 'tn', effect: '', desc: 'Known as a time-manipulator.', color: 'bg-gradient-to-t to-blue-900 via-blue-400 from-blue-900' },
 
-  hp: { tag: 'Hopper', category: 'Other', short: 'hp', effect: '', desc: 'Has a world hopping power.', color: 'bg-[#b600e9]' },
+  hp: { tag: 'Hopper', category: 'Other', short: 'hp', effect: '', desc: 'Possesses the ability to travel to other worlds/dimensions by any means, including enabling others to travel to other worlds/dimensions from the Hopper\'s current world/dimension.', color: 'bg-[#b600e9]' },
   dc: { tag: 'Doctor', category: 'Occupation', short: 'dc', effect: '', desc: 'Trained in medicine.', color: 'bg-[#dd1919]' },
   hl: { tag: 'Healer', category: 'Powers', short: 'hl', effect: '', desc: 'Has a supernatural healing ability that can be used on others.', color: 'bg-[#dd1919]' },
   lv: { tag: 'Leveling', category: 'Utility', short: 'lv', effect: '', desc: 'Can give others access to a leveling/class/job system.', style: { background: 'linear-gradient(0deg, rgba(182,159,2,1) 0%, rgba(255,222,0,1) 70%)', color: '#000' } },
@@ -499,7 +499,7 @@ async function getWorlds() {
 
 const allWorldNames = computed(() => uniq(allChars.value.map(x => x.w)))
 const allSubs = computed(() => uniq(allChars.value.filter(x => x.d).map(x => x.d)))
-const allWorldTargets = computed(() => assign(countBy(allChars.value.map(x => x.w)), countBy(allChars.value.map(x => x.d))))
+const allWorldTargets = computed(() => assign(countBy(allChars.value.map(x => x.d)), countBy(allChars.value.map(x => x.w))))
 
 export function useWorlds() {
   return {

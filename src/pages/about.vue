@@ -4,10 +4,15 @@
       <h3 class="text-2xl text-center">
         About Page
       </h3>
+      <h6>
+        <div class="text-shadow-md text-shadow font-semibold text-center  px-2">
+          ( Current online: <span class="text-blue-700 dark:text-blue-200">{{ currentOnline }}</span> )
+        </div>
+      </h6>
       <div>
         Time I spent on Interactive Waifu Catalog so far -
         <span class="text-amber-500">more than a 1000</span> hours in
-        <span class="text-amber-500">more than a year</span>.
+        <span class="text-amber-500">more than two years</span>.
       </div>
       <div>
         If you found some bugs, have any questions about Interactive, suggestions, collaborations or you want to hire me
@@ -66,6 +71,7 @@
 <script lang="ts" setup>
 import { countBy } from 'lodash-es'
 import { getUserChars, nicknames } from '~/data/constants'
+import { currentOnline } from '~/logic'
 
 const topUsers = ref<[string, number][]>([])
 

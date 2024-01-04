@@ -37,7 +37,7 @@
       </h3>
       <div v-if="page === 0" class="flex gap-2 justify-center flex-wrap">
         <Input v-model="search" placeholder="Search" class="flex-grow" />
-        <div>
+        <div class="max-w-60">
           <Select v-model="author" :options="authorOptions" label="Author" />
         </div>
         <div>
@@ -67,7 +67,7 @@
       </div>
     </div>
     <div class="h-8"></div>
-    <component :is="addMissionComponent" v-if="showAddMission" :missions="missions" @click="toggleShowAddMission()" />
+    <component :is="addMissionComponent" v-show="showAddMission" :missions="missions" @click="toggleShowAddMission()" />
   </div>
 </template>
 

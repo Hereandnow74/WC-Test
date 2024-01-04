@@ -64,6 +64,14 @@
               <fa-solid:sort-alpha-down v-if="sortWorld === 1" class="inline-block rounded" />
               <fa-solid:sort-alpha-up v-else class="inline-block rounded" />
             </div>
+            <!-- <div
+              class="flex items-center bg-gray-200 dark:bg-gray-700 px-0.5 rounded cursor-pointer"
+              :class="imgur ? 'border border-green-500' : ''"
+              title="Shuffle"
+              @click="imgur = !imgur"
+            >
+              <fad:shuffle class="inline-block rounded" />
+            </div> -->
             <div
               class="flex items-center bg-gray-200 dark:bg-gray-700 px-0.5 rounded cursor-pointer"
               :class="shuffleOn ? 'border border-green-500' : ''"
@@ -286,6 +294,7 @@ const sortAlpha = ref(0)
 const sortRating = ref(0)
 const sortWorld = ref(0)
 const shuffleOn = ref(false)
+const imgur = ref(false)
 
 // const characters = ref({})
 const loading = ref(true)
@@ -413,6 +422,7 @@ const filteredCharacters = computed(() => {
   if (swp.value === -1) sopt.$and.push({ c: '=none' })
   // console.log(changes.value)
   if (newChanges.value) sopt.$and.push({ u: `=${Object.keys(changes.value).join('|=')}` })
+  if (imgur.value) sopt.$and.push({ i: '^https://i.imgur.com/' })
   if (retinue.value === 1) sopt.$and.push({ u: `=${Object.keys(companionsUIDs.value).join('|=')}` })
   if (retinue.value === -1) sopt.$and.push({ u: `!^${Object.keys(companionsUIDs.value).join(' !^')}` })
   if (search.value.length === 0)

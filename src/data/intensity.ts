@@ -280,17 +280,6 @@ invasionPvP.push({
 })
 
 invasionPvP.push({
-  uid: 'hrfse',
-  title: 'Green Eye Orb',
-  image: 'https://i.imgur.com/3l6m9ccl.jpg',
-  cost: 10,
-  category: 'Invasion',
-  pvp: true,
-  desc: `This is your invitation to any one of the company’s exclusive clubs for contractors. You can bring up to three members of your retinue to eat, drink, game, make new friends and rivals, and do business with other contractors and retinues at these neutral grounds. Both indoor and outdoor environments and services are available.
-  <p>Conflict between contractors, including poaching each others’ retinues, is actively prevented in real time via <b>Demiplane Laws</b>. Note that the company does not enforce fairness in trades between contractors, so take care to watch your own back.</p>`,
-})
-
-invasionPvP.push({
   uid: 'pdsFe',
   title: 'Blue Eye Orb',
   image: 'https://i.imgur.com/PcVWGBPl.png',

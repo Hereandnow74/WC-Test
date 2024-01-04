@@ -98,10 +98,11 @@ const typeTitles = {
   death: 'Death',
   random: 'Random',
   other: 'Misc',
+  dlc: 'DLC',
 }
 
 function displayTitle(rule) {
-  return typeTitles[rule.type] || typeTitles[rule.type.slice(0, -1)]
+  return typeTitles[rule.type] || typeTitles[rule.type.slice(0, -1)] || typeTitles[rule.type.slice(0, 3)]
 }
 
 const costOrIntensity = (el: any) => {

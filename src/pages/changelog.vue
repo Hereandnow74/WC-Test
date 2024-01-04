@@ -6,6 +6,70 @@
       </h2>
       <div>
         <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          03 January 2024
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~85 new user submitted characters, new missions, new worlds</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          28 December 2023
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~130 new user submitted characters, new missions, new worlds</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          20 December 2023
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~90 new user submitted characters, new missions, new worlds</li>
+          <li>Random Character app now have a minimum likes setting</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          13 December 2023
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~95 new user submitted characters, new missions, new worlds</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          07 December 2023
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~50 new user submitted characters, new missions, new worlds</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          01 December 2023
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~65 new user submitted characters, new missions, new worlds</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          26 November 2023
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~70 new user submitted characters, new missions, new worlds</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
           19 November 2023
         </h3>
         <ul class="list-decimal list-inside">

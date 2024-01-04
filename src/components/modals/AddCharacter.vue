@@ -137,6 +137,9 @@ const submitMessage = ref('')
 
 const showRules = ref(false)
 
+const readRules = useStorage('readRules', '')
+watch(showRules, () => readRules.value = 'rules01')
+
 const { userCharacters, localUserCharacters } = useStore()
 const { allWorldNames, allSubs } = useWorlds()
 
@@ -203,6 +206,10 @@ const addCharacter = handleSubmit((values) => {
     return
   }
   if (serverSave.value) {
+    if (readRules.value !== 'rules01') {
+      tierError.value = 'Before submitting to global read rules at least once.'
+      return
+    }
     if (values.image.includes('wiki') && !tierConfirm.value) {
       tierError.value = 'Do you really want to add a plain image from wiki? If yes click "Add" again'
       tierConfirm.value = true

@@ -186,7 +186,7 @@ function pickWaifuPerk() {
       if (!char)
         char = startingOrigin.value
       if (char) {
-        const tier = char.priceTier || char.tier || 0
+        const tier = char.swap?.tier || char.priceTier || char.tier || 0
         if (char.perk) {
           if (char.perk.uid === props.waifuPerk.uid) { delete char.perk }
           else {

@@ -35,13 +35,14 @@
 </template>
 
 <script lang="ts" setup>
+import io from 'socket.io-client'
 import { VERSION } from './data/constants'
 import { getUserFromServer } from './logic/server'
 import { useUser } from './store/user'
 import {
   showSaveLoad, showShare, showSideMenu, showAddPerk, toggleShowAddPerk,
   toggleShowSettings, showSettings,
-  buildImage, copyText, clearBuild, isBuildImage, toggleAddFic, showAddFic, currentFic, toggleDark, randomString, showIntro, showBuildImageSettings, buildLayout, showAddWaifuPerk, toggleShowAddWaifuPerk,
+  buildImage, copyText, clearBuild, isBuildImage, toggleAddFic, showAddFic, currentFic, toggleDark, randomString, showIntro, showBuildImageSettings, buildLayout, showAddWaifuPerk, toggleShowAddWaifuPerk, currentOnline,
 } from '~/logic'
 
 const Smartphone = computed(() => defineAsyncComponent(() => import('./components/big/Smartphone.vue')))
@@ -112,6 +113,10 @@ onKeyStroke(['c', 's', 'd', 'n', 'b'], (e) => {
     }
   }
 })
+
+const socket = io('https://interactive-apps.net')
+socket.on('onlineUsers', online =>
+  currentOnline.value = online)
 
 // function someStats() {
 //   const uid = window.localStorage.getItem('userId')

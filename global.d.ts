@@ -133,8 +133,8 @@ export interface Perk {
 }
 
 interface SearchRequest {
-  name: string
-  world: string
+  name?: string
+  world?: string
   tier?: {
     min: number
     max: number

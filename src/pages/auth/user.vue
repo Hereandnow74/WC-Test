@@ -4,7 +4,9 @@
       <div v-if="user.id" class="flex flex-col gap-1 max-w-screen-md mx-auto">
         <div class="font-semibold flex gap-4">
           Name: <span class="text-blue-800 dark:text-orange-300">{{ user.name }}</span>
-          <div title="Role determines your rights, note that to get a User role you need to confirm your email.">Role: <span class="text-green-800 dark:text-green-300">{{ user.role }}</span></div>
+          <div title="Role determines your rights, note that to get a User role you need to confirm your email.">
+            Role: <span class="text-green-800 dark:text-green-300">{{ user.role }}</span>
+          </div>
         </div>
         <div class="font-semibold">
           Email: <span class="text-blue-800 dark:text-orange-300">{{ user.email }}</span>
@@ -23,12 +25,12 @@
             :error-message="errors.password"
           />
           <Input
-            v-model="password2"
+            v-model="confirm"
             type="password"
             autocomplete="new-password"
             class="flex-grow"
             placeholder="Confirm Password*"
-            :error-message="errors.password2"
+            :error-message="errors.confirm"
           />
           <Button :disabled="!buttonActive" label="Change password" bg-color="bg-orange-600" @click="changePassword" />
           <div class="text-red-700 dark:text-red-500">
@@ -41,7 +43,9 @@
       </div>
 
       <div v-if="user.id" class="max-w-screen-md mx-auto">
-        <h3 class="text-gray-600 dark:text-gray-400 text-lg">Actions:</h3>
+        <h3 class="text-gray-600 dark:text-gray-400 text-lg">
+          Actions:
+        </h3>
         <div class="flex gap-2 flex-wrap">
           <Button bg-color="bg-red-600" label="Logout" @click="logout" />
           <Button v-if="user.role === 'admin'" label="Rebase" @click="rebase" />
@@ -54,7 +58,9 @@
       </div>
 
       <div v-if="user.id && yourBuilds.length" class="w-full">
-        <h3 class="text-gray-600 dark:text-gray-400 text-lg">Your Builds:</h3>
+        <h3 class="text-gray-600 dark:text-gray-400 text-lg">
+          Your Builds:
+        </h3>
         <div class="grid grid-cols-1 4xl:grid-cols-6 5xl:grid-cols-7 xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-2 h-full min-h-0 overflow-y-auto scrollbar">
           <BuildCard2 v-for="build in yourBuilds" :key="build.id" class="max-w-[440px]" :build="build" />
         </div>
@@ -67,10 +73,10 @@
 import * as zod from 'zod'
 import { useForm, useField } from 'vee-validate'
 import { toFormValidator } from '@vee-validate/zod'
+import { ServerBuild } from 'global'
 import { getUserFromServer, rebaseCharactersToServer, getCharactersFromServer, logoutFromServer, recalculateLikesOnServer, updateUserInfo, sendVerificationEmail, createBuildInDB, getAllYourBuilds } from '~/logic/server/'
 import { useUser } from '~/store/user'
 import { confirmDialog } from '~/logic/dialog'
-import { ServerBuild } from 'global'
 
 const errorMessage = ref('')
 const buttonActive = ref(true)
@@ -83,28 +89,33 @@ if (user.value.id)
 const schema = toFormValidator(
   zod.object({
     password: zod.string().max(64, 'Max length 64 chars').min(8, 'Minimum password length is 8 symbols'),
-    password2: zod.string().max(64, 'Max length 64 chars').min(8, 'Minimum password length is 8 symbols'),
-  }).refine(data => data.password === data.password2, {
-    message: 'Passwords don\'t match',
-    path: ['password2'],
-  }),
+    confirm: zod.string().max(64, 'Max length 64 chars').min(8, 'Minimum password length is 8 symbols'),
+  })
+    .refine(data => data.password === data.confirm, {
+      message: 'Passwords don\'t match',
+      path: ['confirm'],
+    }),
 )
 
 const { errors, handleSubmit } = useForm({
   validationSchema: schema,
   initialValues: {
     password: '',
-    password2: '',
+    confirm: '',
   },
 })
 
 const { value: password } = useField<string>('password')
-const { value: password2 } = useField<string>('password2')
+const { value: confirm } = useField<string>('confirm')
 
 const yourBuilds = ref<ServerBuild[]>([])
 // getAllYourBuilds().then(res => yourBuilds.value = res)
 
 const changePassword = handleSubmit((values) => {
+  // if (values.password !== values.confirm) {
+  //   errorMessage.value = 'Passwords don\'t match'
+  //   return
+  // }
   const whatSendToServer = {
     password: values.password,
   }

@@ -61,7 +61,7 @@ fullHeritagesDLC.push({
   uid: 'JrxZa',
   title: 'Harbinger of Deаth',
   category: 'Heritage',
-  image: 'https://i.imgur.com/Wyyo4ogl.png',
+  image: 'https://i.imgur.com/8oOZyUol.png',
   cost: 175,
   freebies: {
     talentPerks: [{ title: 'Martial Talent', cost: 0, count: 1 }],

@@ -768,6 +768,7 @@ perks.push({
   image: 'https://i.ibb.co/TYv7sc9/Memoria.jpg',
   cost: 5,
   whitelist: ['Possess'],
+  special: 'Chargen only',
   chargen: true,
   desc: 'You… actually want the episodic memories and emotional connections of your Possess target? We can do that. The extra data will be downloaded into your Possess target alongside your own personality. As with Extra and Substitute, you can distinguish between your original memories and those of your Possess target without difficulty.',
 })
@@ -841,6 +842,16 @@ perks.push({
 <p>You are now on the priority list for warranty resurrections. The default respawn time for your subjects is now only 72 hours. Each amazon you purchase or capture will reduce the timer by 1 hour, to a soft limit of 48 hours. Additional amazons in your retinue after the first 24 will still decrease the timer, but are subject to Diminishing Returns.</p>
 `,
   whitelist: ['Warranty Plan'],
+})
+
+perks.push({
+  uid: 'hrfse',
+  title: 'Green Eye Orb',
+  image: 'https://i.imgur.com/3l6m9ccl.jpg',
+  cost: 10,
+  category: 'Invasion',
+  desc: `This is your invitation to any one of the company’s exclusive clubs for contractors. You can bring up to three members of your retinue to eat, drink, game, make new friends and rivals, and do business with other contractors and retinues at these neutral grounds. Both indoor and outdoor environments and services are available.
+  <p>Conflict between contractors, including poaching each others’ retinues, is actively prevented in real time via <b>Demiplane Laws</b>. Note that the company does not enforce fairness in trades between contractors, so take care to watch your own back.</p>`,
 })
 
 // Generic Waifu Perks

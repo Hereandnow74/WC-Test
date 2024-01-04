@@ -1,11 +1,13 @@
 import { GoogleAuthProvider, getAuth, signInWithPopup } from 'firebase/auth'
 import { initializeApp } from 'firebase/app'
-import { getFirestore, collection, addDoc, doc, getDoc, runTransaction, query, where, getDocs, orderBy, limit, startAt, endAt, startAfter, deleteDoc } from 'firebase/firestore/lite'
+import { getFirestore, collection, addDoc, doc, getDoc, runTransaction, query, getDocs, orderBy, limit, startAfter, deleteDoc } from 'firebase/firestore/lite'
 import { useEvents } from './events'
 
 export * from './toggles'
 export * from './misc'
 export * from './perksLogic'
+
+export const currentOnline = ref(0)
 
 const app = initializeApp({
   apiKey: 'AIzaSyDpZ7zOTs_IRFs1_OQLR9T45tGl2hOkt5Y',

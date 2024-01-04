@@ -1,6 +1,6 @@
 import { SearchBuild, SearchRequest, ServerBuild } from 'global'
 import { _loginToServer, _logoutFromServer, _postRegisterInfoToEndpoint, _refreshTokens, _resetPassword, _sendResetToken, _sendVerificationEmail, _verifyEmail } from './authLogic'
-import { _searchForCharacters, _recalculateLikesOnServer, _getLikesByUid, _getCharactersFromServer, _rebaseCharactersToServer } from './charactersLogic'
+import { _searchForCharacters, _recalculateLikesOnServer, _getLikesByUid, _getCharactersFromServer, _rebaseCharactersToServer, _getRandomCharacters } from './charactersLogic'
 import { _updateUserLikes, _updateUserInfo, _getUserFromServer } from './userLogic'
 import { _createBuildInDB, _getAllYourBuilds, _searchForBuilds } from './buildsLogic'
 
@@ -25,6 +25,7 @@ export const getUserFromServer = (token: string) => _getUserFromServer(SERVER_UR
 
 // Characters
 export const searchForCharacters = (request: SearchRequest) => _searchForCharacters(SERVER_URL, API_VERSION, request)
+export const getRandomCharacters = (request: SearchRequest) => _getRandomCharacters(SERVER_URL, API_VERSION, request)
 export const recalculateLikesOnServer = () => _recalculateLikesOnServer(SERVER_URL, API_VERSION)
 export const getLikesByUid = (uidArr: number[]) => _getLikesByUid(SERVER_URL, API_VERSION, uidArr)
 export const getCharactersFromServer = () => _getCharactersFromServer(SERVER_URL, API_VERSION)

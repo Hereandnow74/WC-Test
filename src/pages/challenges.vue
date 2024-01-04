@@ -3,6 +3,11 @@
     <h3 class="text-xl text-center mb-2">
       Challenges
     </h3>
+
+    <Note class="my-4 max-w-screen-md mx-auto" type="warning" title="Warning">
+      Challenges that give additional credits currently work only when you select "<b>Legacy Difficulty</b>" in Intensity section.
+    </Note>
+
     <Desc :desc="challengesDesc" class="mb-4 max-w-4xl mx-auto bg-l bg-violet-200 dark:bg-violet-900" />
     <div class="pb-8" :class="settings.columns !== 'auto' ? `column-count-${settings.columns}` : 'md:column-count-2 xl:column-count-3 4xl:column-count-4 5xl:column-count-5'">
       <ChallengeCard

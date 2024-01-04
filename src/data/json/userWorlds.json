@@ -110,7 +110,7 @@
         "rating": 3
       },
       {
-        "name": "Pre-Faro Plague",
+        "name": "During the Faro Plague",
         "rating": 8
       }
     ],
@@ -3355,12 +3355,7 @@
     ],
     "uid": "CjE8H6"
   },
-  {
-    "worldName": "K-On!",
-    "rating": 1,
-    "image": "https://funart.pro/uploads/posts/2019-12/1577218957_29-4.jpg",
-    "uid": "jMt8fw"
-  },
+  {"uid":"xIrWEc","worldName":"K-On!","rating":1,"image":"https://wallpapercave.com/wp/m5ls2zz.jpg"},
   {
     "worldName": "Kenja no Mago",
     "rating": 5,
@@ -6177,7 +6172,7 @@
     "uid": "wBfm5b"
   },
   {
-    "worldName": "Genjitsu Shugi Yūsha no Ōkoku Saikenki",
+    "worldName": "How a Realist Hero Rebuilt the Kingdom",
     "rating": 4,
     "image": "https://wallpapercave.com/wp/wp9954430.jpg",
     "additional": "You do not gain Magic of the land upon entry, it would require [Added Potential] as you did not come from the Ritual as a Hero.",
@@ -7246,7 +7241,7 @@
     "uid": "gLnjis",
     "worldName": "Oshiete! Galko-chan",
     "rating": 1,
-    "image": "https://i.imgur.com/cvPSLDBl.jpg"
+    "image": "https://i.imgur.com/vyQr1Nol.png"
   },
   {
     "uid": "nauwWz",
@@ -7303,7 +7298,13 @@
   {"uid":"EzKMpq","worldName":"Bocchi the Rock!","rating":1,"image":"https://static.animecorner.me/2022/11/bocchi-the-rock-anime-trailer-1024x576.jpg"},
   {"uid":"qMgcQY","worldName":"Idolmaster","rating":1,"image":"https://cdn.donmai.us/original/78/0b/__hoshii_miki_amami_haruka_shijou_takane_kisaragi_chihaya_kikuchi_makoto_and_8_more_idolmaster_and_2_more_drawn_by_chocho_homelessfox__780bc8e54715b0aed9ffa50737619422.jpg"},
   {"uid":"xGicRn","worldName":"Umamusume","rating":1,"image":"https://cdn.donmai.us/sample/23/35/__mejiro_mcqueen_daiwa_scarlet_gold_ship_tokai_teio_silence_suzuka_and_13_more_umamusume__sample-2335b52a074ba93540a37a7335743304.jpg"},
-  {"uid":"LtVfwB","worldName":"Idolmaster","rating":1,"image":"https://cdn.donmai.us/original/78/0b/__hoshii_miki_amami_haruka_shijou_takane_kisaragi_chihaya_kikuchi_makoto_and_8_more_idolmaster_and_2_more_drawn_by_chocho_homelessfox__780bc8e54715b0aed9ffa50737619422.jpg"},
   {"uid":"wyeEcK","worldName":"Vambrace: Cold Soul","rating":6,"image":"https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/en_US/games/switch/v/vambrace-cold-soul-switch/hero"},
-  {"uid":"OQCmLH","worldName":"Frieren: Beyond Journey's End","rating":5,"image":"https://a.storyblok.com/f/178900/800x567/730dda5714/0ad3b947fc2b6940e6a51f771f5314471669691552_main.png"}
+  {"uid":"OQCmLH","worldName":"Frieren: Beyond Journey's End","rating":5,"image":"https://a.storyblok.com/f/178900/800x567/730dda5714/0ad3b947fc2b6940e6a51f771f5314471669691552_main.png"},
+  {"uid":"qTnesf","worldName":"Risk of Rain","rating":6,"image":"https://cdn.imgchest.com/files/wye3cjx5n94.png","condition":[{"name":"Earth","rating":3,"official":false},{"name":"Petrichor V","rating":6}]},
+  {"uid":"gcTfAN","worldName":"ULTRAKILL","rating":8,"image":"https://www.prankster101.com/wp-content/uploads/2022/06/Ultrakill-banner.jpg","condition":[{"name":"Post-Humanity","rating":8}]},
+  {"uid":"YBIdLU","worldName":"Undead Unluck","rating":8,"image":"https://i.imgur.com/u4iPitt.jpg","condition":[{"name":"1st timeline","rating":9,"official":false}]},
+  {"uid":"SNVcCl","worldName":"Heroes","rating":7,"image":"https://i.imgur.com/wahh2X8.jpeg"},
+  {"uid":"JrNmgE","worldName":"The World God Only Knows","rating":4,"image":"https://miro.medium.com/v2/resize:fit:1258/0*nyRAmSnXVAxkFXF8.jpg"},
+  {"uid":"QPuzsT","worldName":"The Kingkiller Cronicle","rating":5,"image":"https://wallpapercave.com/wp/wp10645568.jpg"},
+  {"uid":"bfnbNp","worldName":"Reverse: 1999","rating":5,"image":"https://cdn.donmai.us/sample/71/e8/__vertin_sonetto_schneider_regulus_apple_and_3_more_reverse_1999_drawn_by_hashibi_noyasakihashibi__sample-71e818569576f9089570917f2b99e41f.jpg"}
 ]

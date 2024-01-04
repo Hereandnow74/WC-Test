@@ -34,7 +34,7 @@ heritages.push({
   cost: 80,
   freebies: {
     talentPerks: [{ title: 'Everlasting Talent', cost: 0, count: 1 }, { title: 'Body Tune-Up', cost: 0, count: 1 }, { title: 'Athletic Talent', cost: 0, count: 1 }, { title: 'Martial Talent', cost: 0, count: 1 }, { title: 'Wild Talent', cost: 0, count: 1 }],
-    defensePerks: [{ title: 'Body Defense', cost: 0, count: 1 }, { title: 'Body Defense', cost: 0, count: 1 }, { title: 'Wild Defense', cost: 0, count: 1 }, { title: 'Wild Defense', cost: 0, count: 1 }],
+    defensePerks: [{ title: 'Body Defense', cost: 0, count: 2 }, { title: 'Wild Defense', cost: 0, count: 2 }],
   },
   desc: `
 <p>You have a dragon’s blood. In addition to your basic humanoid form, you can transform into a bipedal dragonoid. (If you lack a humanoid form, one will be provided for you.) This form is roughly 3 m tall, with a bestial head, clawed hands and feet, and separate wings, and maximizes your improved strength and protection at that size without sacrificing any finesse or maneuverability. Its color scheme and aesthetic reflects your elemental affinity, which you must also choose.</p>

@@ -103,7 +103,7 @@
           :class="{'opacity-100': inFocus}"
         >
           <template v-if="!isAlreadyBought(charData.uid)">
-            <Button v-if="canPurchase" size="Small" bg-color="bg-red-500" label="buy" @click="buyAnyCompanion(char.u)" />
+            <Button v-if="canPurchase" size="Small" bg-color="bg-red-500" label="buy" @click="buyAnyCompanion(charData.uid)" />
             <Button
               v-if="(flags.chargen && canPurchase)"
               size="Small"
@@ -310,6 +310,7 @@ const charData = computed(() => {
       sourceImage: props.char.s,
       tags: props.char.b || [],
       nickname: props.char.k,
+      likes: props.char.likes,
     }
     : props.char
   if (!res.uid) res.uid = random(10000000, 99999999)

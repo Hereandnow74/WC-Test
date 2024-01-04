@@ -207,7 +207,8 @@ const sendReport = handleSubmit((values) => {
     setTimeout(() => reportError.value = '', 5000)
     return
   }
-  values.tags = values.tags.map(x => waifuTagsByTag[x] ? waifuTagsByTag[x].short : x)
+  if (values.tag)
+    values.tags = values.tags.map(x => waifuTagsByTag[x] ? waifuTagsByTag[x].short : x)
   if (!wrongTags.value)
     delete values.tags
   if (!wrongTier.value)

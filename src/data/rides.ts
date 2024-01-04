@@ -267,9 +267,9 @@ rides.push({
 
 rides.push({
   uid: 'b6Vyj',
-  title: 'War Galley',
+  title: 'Black Ark',
   source: 'Warhammer Fantasy',
-  category: 'Sky',
+  category: 'Sea',
   size: 'Large',
   image: '',
   cost: 150,
