@@ -434,7 +434,7 @@ export function chooseRide(ride: Ride, selectedRide: Ride) {
 export function homeAvailable(home: PerkFull): boolean {
   const { allEffects, flags, homePerks } = useStore()
   if (home.whitelist) {
-    if (home.title === 'Rainbow Bridge' && intersection(home.whitelist, allEffects.value).length >= (home.needed || home.whitelist.length))
+    if (['Rainbow Bridge', 'All Roads Lead to Home', 'Demiplane', 'Laws of the Jungle'].includes(home.title) && intersection(home.whitelist, allEffects.value).length >= (home.needed || home.whitelist.length))
       return true
     if (filter(home.whitelist, (perk) => {
       const query = perk.title ? { title: perk.title, count: perk.count } : { title: perk }

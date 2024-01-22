@@ -1,7 +1,7 @@
 <template>
   <div class="w-full transform scale-75 md:scale-100 md:w-[25em]">
-    <div class="text-center text-lg uppercase tracking-wide font-mono font-semibold break-words">
-      {{ titles[value] }}
+    <div class="flex gap-2 items-center text-center text-lg uppercase tracking-wide font-mono font-semibold break-words">
+      <span v-if="icon" class="iconify" :data-icon="icon" />{{ titles[value] }}
     </div>
     <div class="relative w-full">
       <input
@@ -54,6 +54,10 @@ const props = defineProps({
   list: {
     type: Array<number>,
     default: () => [1, 2, 3, 4, 5],
+  },
+  icon: {
+    type: String,
+    default: '',
   },
 })
 

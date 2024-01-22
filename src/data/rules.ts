@@ -95,6 +95,7 @@ export const purchases = `<h3 class="font-bold text-xl pt-4 pb-2">Extending Your
 <p>The company’s Companions and Familiars are all clones manufactured on demand, except where noted. They come packaged with their iconic outfits, personal equipment, and familiars or treasured pets, when appropriate. The largest equipment normally allowed are motorcycles, but there are some rare exceptions. For your own ease of accounting, you may only purchase one copy of any distinct entry at a time.</p>
 <p>Most companions are sorted into ten tiers, each of which has a different cost</p>
 <p>All purchase prices are rounded up. Some Controls and Heritage perks include free copies of lesser perks, primarily Basic Talents and Defenses. These can ignore the normal prerequisites. If you’ve already purchased a perk before getting a free copy, you may take a discount on the new purchase equal to the free perk’s value. The total of all discounts applied to a single perk, unless it’s a Talent or Defense, is capped at -80% of the list price.</p>
+<p>No powers found in this catalog will directly impact a Contractor’s own mind without an explicit warning otherwise (such as in Memoria). The company is not responsible for any power’s indirect effects on a Contractor’s decision-making.</p>
 <p>For any member of your retinue whose powers come from an external, (semi-)sapient source, their connection will be severed at the moment of capture and those powers replicated as innate abilities.
 If they have powers that rely on a background magical field, the connection to you will act as an adapter in worlds with a different field. In worlds or regions that lack any such field, their powers will still be usable, but at a reduced capacity when outside of your presence.</p>
 <p>All retinue members whose power comes with a crippling, categorical weakness, such as Kryptonians, vampires, or Devil Fruit users, will be no more affected by that weakness than an ordinary human.</p>
@@ -115,7 +116,7 @@ export const waifu11 = `<h3 class="font-bold text-xl pt-4 pb-2">Imaginary Tiers<
 export const danger11 = `<h3 class="font-bold text-xl pt-4 pb-2">Danger Rating X Build Rules</h3>
 <p>When creating a Danger Rating 11 build, ignore the basic build creation rules found above. You will instead start with the following:</p>
 <ul class="list-disc list-inside">
-  <li>One companion of Tier χ/X or Ψ/Y. Power Swapping a different companion to one of these tiers is allowed, as are Heavenbuilt Proto and Piece of Silver. This companion may not be sold.</li>
+  <li>One companion of Tier χ/X or Ψ/Y. Power Swapping a different companion to one of these tiers is allowed, as are Heavenbuilt Proto and Piece of Silver. You and your companion will have a Couple’s Account, following all of that option’s rules.</li>
   <li>Any Origin, free of charge. Substitute and Possess are limited to T6 and below.</li>
   <li>A single basic Binding-type control.</li>
   <li>As many official basic Lures as desired.</li>

@@ -78,6 +78,7 @@
         <Range
           v-if="diff.list.length > 1"
           :title="typeTitles[n]"
+          :icon="typeIcons[n]"
           :list="diff.list"
           :titles="diff.titles"
           :type="n"
@@ -206,6 +207,23 @@ const typeTitles = {
   death: 'Death',
   random: 'Random',
   other: 'Misc',
+}
+
+const typeIcons = {
+  legacy: 'ic:outline-details',
+  team: 'ic:outline-group',
+  payment: 'ic:outline-credit-card',
+  binding: 'game-icons:crossed-chains',
+  heritage: 'game-icons:dragon-head',
+  home: 'ic:outline-home',
+  template: 'ic:baseline-radio-button-unchecked',
+  defenses: 'ic:outline-security',
+  leveling: 'ic:outline-trending-up',
+  worlds: 'ic:outline-public',
+  warranty: 'ic:outline-shield',
+  death: 'game-icons:tombstone',
+  random: 'ic:outline-casino',
+  other: 'ic:outline-more-horiz',
 }
 
 const customIntensity = reactive({

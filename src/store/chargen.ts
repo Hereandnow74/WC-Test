@@ -176,6 +176,7 @@ const allForSave = {
   defensePerks,
   miscPerks,
   homePerks,
+  genericWaifuPerks,
 }
 
 const localUserWorlds = useStorage<DBWorld[]>('localUserWorlds', [])

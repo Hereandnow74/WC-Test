@@ -130,7 +130,7 @@
   },
   {
     "rating": 2,
-    "worldName": "Monster Musume",
+    "worldName": "Monster Musume: Everyday Life with Monster Girls",
     "image": "https://getwallpapers.com/wallpaper/full/b/2/9/1463352-large-anime-hd-wallpaper-2560x1440-1920x1080-macbook.jpg",
     "uid": "Ag6cv"
   },
@@ -676,7 +676,7 @@
         "official": true
       }
     ],
-    "additional": "Micronization: Zentraedi and Meltrandi characters are Microne (human)-sized by default. The presence of one will add a Micronization chamber to your Grand Manor, if you have one. Advanced Tempest Runes (Body) allows them, and any other member of our retinue who’s used a Micronization chamber, to shift between Microne and Macrone forms on the fly. Body Tune-Up is enough to let Klan Klein maintain her adult figure while micronized. Additionally, all Zentraedi and Meltrandi combatants have a personal Pocket Space for their battlesuits. Battlesuits stored this way will automatically resize themselves to fit their wearer, regardless of whether the wearer is in Microne or Macrone form. Other: Mylene has her pet… tribble(?) Guvava as a familiar. We don’t actually know what Guvava is, just that it’s cute and fuzzy. Ranka has her squirrel-like pet Ai-kun as a familiar.",
+    "additional": "Micronization: Zentraedi and Meltrandi characters are Microne (human)-sized by default. The presence of one will add a Micronization chamber to your Grand Manor, if you have one. Advanced Runes: Body allows them, and any other member of our retinue who’s used a Micronization chamber, to shift between Microne and Macrone forms on the fly. Body Tune-Up is enough to let Klan Klein maintain her adult figure while micronized. Additionally, all Zentraedi and Meltrandi combatants have a personal Pocket Space for their battlesuits. Battlesuits stored this way will automatically resize themselves to fit their wearer, regardless of whether the wearer is in Microne or Macrone form. Other: Mylene has her pet… tribble(?) Guvava as a familiar. We don’t actually know what Guvava is, just that it’s cute and fuzzy. Ranka has her squirrel-like pet Ai-kun as a familiar.",
     "image": "https://cdn.donmai.us/sample/68/26/__vf_1_and_vf_1a_macross_and_1_more_drawn_by_myonmyon_kai__sample-6826d3e3c39f68db7faa07f45e534549.jpg",
     "uid": "rFoWU"
   },
@@ -1747,7 +1747,7 @@
   {
     "rating": 6,
     "worldName": "High School DxD",
-    "additional": "Purchased and captured Angels, including Fallen, may Fall and Rise at your discretion. Purchased high-class Devils do not come with their own Evil Pieces, nor do purchased Angels come with their Brave Saint cards. Canonically, Reincarnated Devil and Brave Saint statuses do not overwrite the individual’s original race. Kuroka never stopped being a nekoshou despite also being a Devil. Thus, neither Devil nor Angel races (including Fallen status) will count toward the usual racial hybrid penalty from Advanced Tempest Runes (Hybrid) and other sources. They will not overwrite the original race if purchased with Template Stacking, nor will either be overwritten by a different racial Template. Devil and Angel races are still mutually exclusive with each other, outside of rare exceptions. If you purchase Ophis, or capture her before her spawn Lilith exists, you will get Lilith for free. Lilith will not be worth capture credits if you acquire her in this way.",
+    "additional": "Purchased and captured Angels, including Fallen, may Fall and Rise at your discretion. Purchased high-class Devils do not come with their own Evil Pieces, nor do purchased Angels come with their Brave Saint cards. Canonically, Reincarnated Devil and Brave Saint statuses do not overwrite the individual’s original race. Kuroka never stopped being a nekoshou despite also being a Devil. Thus, neither Devil nor Angel races (including Fallen status) will count toward the usual racial hybrid penalty from Advanced Runes: Hybrid and other sources. They will not overwrite the original race if purchased with Template Stacking, nor will either be overwritten by a different racial Template. Devil and Angel races are still mutually exclusive with each other, outside of rare exceptions. If you purchase Ophis, or capture her before her spawn Lilith exists, you will get Lilith for free. Lilith will not be worth capture credits if you acquire her in this way.",
     "condition": [
       {
         "name": "Standard",
@@ -1815,7 +1815,7 @@
     "rating": 6,
     "q": true,
     "worldName": "Re:Creators",
-    "additional": "Hikayu has her martial arts powerup. Meteora’s “Delusion” appearance is always available as a preset if you have at least Basic Tempest Runes, Art of Transformation, or Demiplane perks.",
+    "additional": "Hikayu has her martial arts powerup. Meteora’s “Delusion” appearance is always available as a preset if you have at least Basic Runes, Art of Transformation, or Demiplane perks.",
     "image": "https://cdn.imgchest.com/files/345xckgogm7.png",
     "uid": "conR6"
   },
@@ -3195,5 +3195,11 @@
       }
     ],
     "uid": "TPec1"
+  },
+  {
+    "worldName": "Oregairu",
+    "rating": 2,
+    "image": "https://cdn.imgchest.com/files/my2pc9x8kg7.png",
+    "uid": "AoA28"
   }
 ]

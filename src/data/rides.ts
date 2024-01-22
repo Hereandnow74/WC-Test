@@ -99,6 +99,32 @@ rides.push({
 })
 
 rides.push({
+  uid: 'ARcno',
+  title: 'Going Merry',
+  source: ' One Piece',
+  category: 'Sea',
+  size: 'Medium',
+  image: '',
+  cost: 20,
+  desc: 'A ship',
+  addons: [['Klabautermann Awakening', 5]],
+  capacity: '?? crew',
+})
+rides.push({
+  uid: 'ARcnq',
+  title: 'Thousand Sunny',
+  source: ' One Piece',
+  category: 'Sea',
+  size: 'Medium',
+  image: '',
+  cost: 50,
+  desc: 'Notable Features: Adam-wood hull, Training Room, Workshop, Library, Aquarium Bar, Soda-powered, Gao-Canon, Coup De Burst',
+  addons: [['Pop-Green Garden', 20], ['Full Smallcraft Contingent', 10], ['Emperor Penguin Mode', 10], ['Klabautermann Awakening', 5]],
+  variants: [['Pre-Timeskip', 0], ['Post-Timeskip', 0]],
+  capacity: '?? crew',
+})
+
+rides.push({
   uid: 'RC9WK',
   title: 'Tuatha de Danaan',
   source: 'Full Metal Panic',

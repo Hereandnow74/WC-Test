@@ -1,29 +1,31 @@
 <template>
   <Modal label="Take mission">
-    <div class="flex flex-col gap-2 p-2">
+    <div class="flex min-h-0 flex-col gap-2 p-2">
       <Input v-model="title" :disabled="!!missionSave" label="Mission name" />
       <Input v-model="location" :disabled="!!missionSave" label="Location" />
       <TextArea v-model="desc" :disabled="!!missionSave" placeholder="Your plans, actions, notes or other things that you want to save" rows="5" />
       <h3 class="flex gap-2 items-center text-lg cursor-pointer" @click="addReward">
         Rewards  <fluent:add-12-filled class="text-green-200 text-green-700 hover:text-green-500" />
       </h3>
-      <div v-for="_, i in rewards" :key="i" class="flex gap-2">
-        <Select v-model="types[i]" :disabled="!!missionSave" label="Type" placeholder="Reward Type" :options="['Credits', 'TX Tickets', 'Perk', 'Companion', 'Other']" />
-        <template v-if="types[i] === 'Perk'">
-          <div class="text-red-500 text-xs max-w-40">
-            Perk rewards can be buggy, advised to use only for simple perks for now.
+      <div class="flex flex-col gap-2 flex-grow min-h-0 overflow-y-auto scrollbar">
+        <div v-for="_, i in rewards" :key="i" class="flex gap-2">
+          <Select v-model="types[i]" :disabled="!!missionSave" label="Type" placeholder="Reward Type" :options="['Credits', 'TX Tickets', 'Perk', 'Companion', 'Other']" />
+          <template v-if="types[i] === 'Perk'">
+            <div class="text-red-500 text-xs max-w-40">
+              Perk rewards can be buggy, advised to use only for simple perks for now.
+            </div>
+            <InputWithSearch
+              v-model="rewards[i]"
+              :disabled="!!missionSave"
+              placeholder="Perk name"
+              :list="Object.keys(ALL_PERK_TITLES)"
+            />
+          </template>
+          <CharacterInput v-else-if="types[i] === 'Companion'" :idd="`char${i}`" @updateUID="(uid: number) => rewards[i] = uid" />
+          <Input v-else v-model="rewards[i]" :disabled="!!missionSave" label="Reward" placeholder="Text or number" />
+          <div icon="" size="small" class="hover:text-red-500 cursor-pointer flex items-center" @click="deleteReward(i)">
+            <fluent:delete-20-filled />
           </div>
-          <InputWithSearch
-            v-model="rewards[i]"
-            :disabled="!!missionSave"
-            placeholder="Perk name"
-            :list="Object.keys(ALL_PERK_TITLES)"
-          />
-        </template>
-        <CharacterInput v-else-if="types[i] === 'Companion'" :idd="`char${i}`" @updateUID="(uid: number) => rewards[i] = uid" />
-        <Input v-else v-model="rewards[i]" :disabled="!!missionSave" label="Reward" placeholder="Text or number" />
-        <div icon="" size="small" class="hover:text-red-500 cursor-pointer flex items-center" @click="deleteReward(i)">
-          <fluent:delete-20-filled />
         </div>
       </div>
       <Button v-if="missionSave" class="self-end" size="Small" label="Undo" @click="undoMissionRewards" />

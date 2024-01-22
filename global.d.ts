@@ -70,6 +70,7 @@ interface PerkFull {
     talentPerks?: Freebie[]
     defensePerks?: Freebie[]
     binding?: Freebie[]
+    genericWaifuPerks?: Freebie[]
   }
   complex?: string
   chargen?: boolean

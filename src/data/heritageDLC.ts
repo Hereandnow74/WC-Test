@@ -423,7 +423,7 @@ fullHeritagesDLC.push({
   cost: 20,
   freebies: {
     talentPerks: [{ title: 'Performance Talent', cost: 0, count: 1 }, { title: 'Body Tune-Up', cost: 0, count: 1 }],
-    // genericPerks: [{ title: 'Paper Trail', cost: 0, complex: [{ flavor: 'You' }], count: 1 }],
+    genericWaifuPerks: [{ title: 'Paper Trail', cost: 0, complex: [{ flavor: 'You' }], count: 1 }],
   },
   tree: 'Mastermind',
   desc: `Looking for more money? While the company can't really justify expanding your allowance, they can finagle you to become inheritor to an obscure Estate. This comes with a number of benefits, most notably being able to take your wealth with you to new worlds. This Estate may be a title of lesser or defunct nobility in some obscure and remote region, the fortune created by the mercantilism of an ancillary commodity, or other sufficient means appropriate to the local world.

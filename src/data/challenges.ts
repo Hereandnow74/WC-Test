@@ -26,7 +26,7 @@ export const challenges = [
   {
     uid: 'QbKw9',
     title: 'Two Dime',
-    image: 'https://cdn.discordapp.com/attachments/925963686433132644/993238534418858094/D4olW79XkAEhgj-.jpg',
+    image: 'https://cdn.statically.io/gh/Om1cr0n/cat_thumb/main/docs/thumbs/fQYnD.jpg',
     dlc: 'Om1cr0n',
     special: 'DR4 or higher',
     cost: 0,
@@ -42,7 +42,7 @@ export const challenges = [
   {
     uid: 'U8fCr',
     title: 'Freedom Anomaly',
-    image: 'https://cdn.discordapp.com/attachments/925963686433132644/993238326645629070/HD-wallpaper-break-pretty-sweet-angry-arturia-pendragon-arturia-nice-emotional-anime-beauty-anime-girl-weapon-sword-chain-lovely-excalibur-mad-blonde-sinister-saber-blond-shout-beautiful-break.jpg',
+    image: 'https://cdn.statically.io/gh/Om1cr0n/cat_thumb/main/docs/thumbs/7wgSf.jpg',
     dlc: 'Om1cr0n',
     cost: 0,
     desc: `
@@ -58,7 +58,7 @@ export const challenges = [
   {
     uid: 'tW5KX',
     title: 'Waifu Manager',
-    image: 'https://cdn.discordapp.com/attachments/925963686433132644/993232597574504488/download.jpg',
+    image: 'https://cdn.statically.io/gh/Om1cr0n/cat_thumb/main/docs/thumbs/PUTUh.jpg',
     dlc: 'Om1cr0n',
     special: 'DR7 or higher',
     cost: 0,
@@ -70,7 +70,7 @@ export const challenges = [
   {
     uid: 'K7Zhp',
     title: 'Strict Travel Mode',
-    image: 'https://cdn.discordapp.com/attachments/925963686433132644/993235796368834651/Screenshot_1.jpg',
+    image: 'https://cdn.statically.io/gh/Om1cr0n/cat_thumb/main/docs/thumbs/kmKOW.jpg',
     dlc: 'Om1cr0n',
     cost: 0,
     desc: `
@@ -80,7 +80,7 @@ export const challenges = [
   {
     uid: 'KcxSe',
     title: 'Wild GIRLFRIEND appeared!',
-    image: 'https://cdn.discordapp.com/attachments/925963686433132644/993235853142921236/Screenshot_2.jpg',
+    image: 'https://cdn.statically.io/gh/Om1cr0n/cat_thumb/main/docs/thumbs/Q3saB.jpg',
     dlc: 'Om1cr0n',
     cost: 0,
     desc: `
@@ -90,7 +90,7 @@ export const challenges = [
   {
     uid: 'Z4jXA',
     title: '100,000 years of cultivation',
-    image: 'https://cdn.discordapp.com/attachments/925963686433132644/993237709160189952/Screenshot_4.jpg',
+    image: 'https://cdn.statically.io/gh/Om1cr0n/cat_thumb/main/docs/thumbs/wDTsQ.jpg',
     dlc: 'Om1cr0n',
     cost: 0,
     special: 'Chargen only.',
@@ -107,7 +107,7 @@ export const challenges = [
   },
   {
     title: 'Russian roulette',
-    image: 'https://cdn.discordapp.com/attachments/925963686433132644/993232225531330570/Midari-Ikishima1.jpg',
+    image: 'https://cdn.statically.io/gh/Om1cr0n/cat_thumb/main/docs/thumbs/Cm4wD.jpg',
     dlc: 'Om1cr0n',
     cost: 0,
     desc: `
@@ -129,7 +129,7 @@ export const challenges = [
     uid: 'ZpyEZ',
     dlc: 'KatzSmile',
     title: 'Power Trip',
-    image: 'https://cdn.discordapp.com/attachments/925963686433132644/993233703893475520/05d2405d8ecfce5206766d28c6a0f630.jpg',
+    image: 'https://cdn.statically.io/gh/Om1cr0n/cat_thumb/main/docs/thumbs/uAku1.jpg',
     special: 'Chargen only. May not be taken on DR11.',
     cost: 0,
     bonus: 1,
@@ -151,7 +151,7 @@ export const challenges = [
     uid: 'qldtT',
     dlc: 'Kingcarlos',
     title: 'Good Luck Smiles on the Daring',
-    image: 'https://cdn.discordapp.com/attachments/925963686433132644/993233300678246420/12_Universes.webp',
+    image: 'https://cdn.statically.io/gh/Om1cr0n/cat_thumb/main/docs/thumbs/pW5vO.jpg',
     special: 'Chargen only. May not be taken on DR11.',
     cost: 0,
     bonus: 0.5,

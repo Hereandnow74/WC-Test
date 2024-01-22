@@ -282,28 +282,24 @@ import { useStore } from '~/store/store'
 import { useChallenges } from '~/store/challenges'
 import { confirmDialog } from '~/logic/dialog'
 import { shownValue } from '~/data/constants'
-import { useUser } from '~/store/user'
 
 const {
   startingWorld, startingOrigin, intensities, binding, homePerks, defensePerks,
   heritage, talentPerks, waifuPerks, ridePerks, miscPerks, luresBought, genericWaifuPerks,
-  otherPerks, yourTier, flags, pvpPerks, patron, difficulties, difficultyAdjustedBudgets,
+  otherPerks, yourTier, flags, pvpPerks, patron, difficulties, difficultyAdjustedBudgets, heritageOptions,
 } = useStore()
 
 const { activeChallenges } = useChallenges()
-const { user } = useUser()
 
 const editMode = ref(false)
 const priceMode = ref(false)
 const showPublish = ref(false)
 const showPublishOnServer = ref(false)
 
-const archetype = {
-  dr: 'Dragon',
-  th: 'Transhuman',
-  ou: 'Outsider',
-  pi: 'Pirate',
-}
+const archetype = heritageOptions.value.reduce((acc, cur) => {
+  acc[cur.value] = cur.label
+  return acc
+}, {} as Record<string, string>)
 
 const originText = computed(() => {
   const variants = {

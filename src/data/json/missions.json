@@ -1,5 +1,1566 @@
 [
-  
+    {
+    "reward": "The Capture Credit value of the being you recruit times 1.5(Rounded up). Does not multiply TC tickets. If they are successfully hired you will be given a direct line to them via your Company device, perfect for calling in favors or doing office gossip with",
+    "image": "https://media.discordapp.net/attachments/701634785570979912/1196314499481878579/fantasy_interview2.jpg",
+    "author": "the 44'th ChoirBoy",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Skimming the Talent Pool",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "First Augmentation",
+        "type": "Perks",
+        "value": "Recruit either A tier 7 Biokinetic, Cybernetic expert or Spiritual Manualist"
+      },
+      {
+        "reward": "60 credits to be only spent on Demi-plane perks(If not possible due to intensity 40 credits for anything)",
+        "type": "Other",
+        "value": "Recruit someone with the Capability of either crafting or manipulating a private plane of reality"
+      },
+      {
+        "reward": "50 credits to only be spent on rides & accessories(Catch-A-Ride Crew Training Program will be provide for free)",
+        "type": "Other",
+        "value": "Recruit someone with advanced Vehicle crafting skills"
+      },
+      {
+        "reward": "A ticket for 1 tier 5 or below companion, freshly isekia'd from a variant of the world this deity came from.",
+        "type": "Other",
+        "value": "Recruit an Isekai entity(A being who for whatever reason is tied with sending people to 'another world')"
+      },
+      {
+        "reward": "Mission over: A Full Template stacking I & II of any of these beings(Does not add price stacking to other templates)",
+        "type": "Other",
+        "value": "Have at least 7 of your recruited beings be accepted into the Fold"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Must have the Signed & Sealed Other Control method before taking this mission."
+      },
+      {
+        "value": "You do not have to go into graphic detail, but the prospective recruit must be aware as to our main product line in at least the general sense. Whether or not they find that morally agreeable is irrelevant to their desire for employment with us."
+      },
+      {
+        "value": "While you are free to tell a prospect of what COULD be earned working for us, be sure to be careful with any hard promises. Our Hiring Mangers are quite territorial about their power & scope."
+      }
+    ],
+    "budget": 0,
+    "desc": "As you might be already aware, [The Company] is staffed by several recognizable beings from across the multiverses, or at least variants of those beings. Each one has their own reasons for falling under our employment, ranging from power, success, a need to escape terrible decisions on their own world, the limitless possibilities of the multiverse, or even as simple as 'love'. As a Contractor, I'm sure you're quite aware of how this all works.\nBack to point though, due to the high attrition rate & expansions we often go through, we're more than often quite short staffed. Oh not for contractors no, but for are actual staff; The beings who do the paperwork, keep up the infrastructure, supply their talents in helping us create our Companions* and talents for our agents etc. \nWhat we need from you is to find beings from across the worlds you're thrust in to 'willingly' agree to work for [The Company]. To those you are recruiting you must explain to them what it is we do here, what role you feel they may best serve, and what they would be able to gain from falling in with us. As with any good business deal, outright lies are to be penalized but clever wording is to be commended. \n",
+    "uid": "nlfct"
+  },
+  {
+    "reward": 400,
+    "image": "",
+    "author": "Jeckjack",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Everything changed when the Air Nomads Attacked",
+    "loca": "Avatar",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "Gain \"Added Potential: Airbending\" and \"Martial Talent\" for free.",
+        "type": "Perks",
+        "value": "Capture an experienced airbender to act as your teacher in the ways of airbending."
+      },
+      {
+        "reward": "Temari (T5, Naruto) and Fubuki (T5, One Punch Man)",
+        "type": "Companions",
+        "value": "Introduce at least 100 Air Nomads back into the world, through whatever method you prefer."
+      },
+      {
+        "reward": "Skyla (T5, Pokemon) and Winona (T5, Pokemon)",
+        "type": "Companions",
+        "value": "Increase Sky Bison numbers until they are no longer endangered, through whatever method you prefer."
+      },
+      {
+        "reward": "Gain \"Administrative Talent\", \"Soul Talent\", \"Wild Talent\" and \"Land Talent\" for free.",
+        "type": "Perks",
+        "value": "Become the leader of the Air Nomads, either by capturing any Air Elders you've revived, or setting yourself up as the leader of a new group of Air Nomads from the beginning."
+      },
+      {
+        "reward": "Wendy Marvell (T6, Fairy Tail) and Nami (T6, One Piece)",
+        "type": "Companions",
+        "value": "Introduce at least 1,000 Air Nomads back into the world, through whatever method you prefer."
+      },
+      {
+        "reward": "Piper (T6, Storm Hawks) and Cyclonis (T7, Storm Hawks)",
+        "type": "Companions",
+        "value": "Reclaim the four Air Temples under your authority, either recruit or expel Ji the Mechanist's people from the Northern Air Temple."
+      },
+      {
+        "reward": "Ororo Munroe (T7, from X-Men), Tatsumaki (T8, One Punch Man)",
+        "type": "Companions",
+        "value": "Learn the advanced airbending techniques of Flight and Spiritual Projection."
+      },
+      {
+        "reward": "Gain \"Added Potential: Firebending\", \"Wild Defense\" and \"Environmental Defense\" for free.",
+        "type": "Perks",
+        "value": "Capture or kill the entire line of Sozin: Prince Zuko, Prince Iroh, Princess Azula, and of course, Fire Lord Ozai."
+      },
+      {
+        "reward": "Gain \"Added Potential: Waterbending\", \"Body Defense\" and \"Mind Defense\" for free.",
+        "type": "Perks",
+        "value": "Capture or kill the line of the Chiefs of the Northern and Southern Water Tribes: Sokka, Katara, Hakoda, Kanna, from the South, as well as Arnook and Yue from the North."
+      },
+      {
+        "reward": "Gain \"Added Potential: Earthbending\", \"Creature Defense\" and \"Trace Defense\" for free.",
+        "type": "Perks",
+        "value": "Capture or kill the rulers of the Earth Kingdom: Kuei and Long Feng from Ba Sing Se, and Bumi from Omashu."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You enter 'Avatar: The Last Airbender'[DR4] one year before Aang would have been freed from the iceberg."
+      },
+      {
+        "value": "You enter the world at one of the four Air Temples."
+      },
+      {
+        "value": "You must bring back the Air Nomad nation and culture into the present day, whether through cloning, holy magic, necromancy, time travel, becoming an airbender and just having lots of kids, or any other methods (You have the Catalog, you have options)."
+      },
+      {
+        "value": "You must help the Air Nomads end the 100-year war of the Fire Nation against the world."
+      },
+      {
+        "value": "You must establish Air Nomad rule noy only over the Fire Nation, but also the Water Tribes, and Earth Kingdom. In fact, the entire world of Avatar."
+      },
+      {
+        "value": "You must stop the Avatar from restoring balance to the world. No matter how many Avatars it takes, they'll keep trying, so you must end the cycle by either killing or binding the Avatar while they are in the Avatar State."
+      }
+    ],
+    "budget": 50,
+    "desc": "Here's a tricky one: Our client wants to see the Air Nomads conquer the world of Avatar.  Your mission, should you choose to accept it, is to not only restore the Air Nomads as a culture, people, and nation, despite the genocide committed against them 100 years ago leaving only one survivor, but then lead them in an effort to conquer the entire planet, until every nation in Avatar is under Air Nomad control, despite their pacifist ways. \n\nYou really have your work cut out for you.",
+    "uid": "uNoEF"
+  },
+  {
+    "reward": 200,
+    "image": "https://64.media.tumblr.com/c8350630d7e6350e2783340adf302c9d/tumblr_inline_pma72nZ1Ne1tfm2sb_400.png",
+    "author": "Jeckjack",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Everything changed when the Water Tribe Attacked",
+    "loca": "Avatar",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "Gain \"Added Potential: Waterbending\" and \"Martial Talent\" for free.",
+        "type": "Perks",
+        "value": "Capture an experienced waterbender to act as your teacher in the ways of waterbending."
+      },
+      {
+        "reward": "Nessa (T5, Pokemon) and Charlotte Praline (T5, One Piece)",
+        "type": "Companions",
+        "value": "Go ice-dodging (or rock dodging) and earn your place as an adult in the Water Tribe."
+      },
+      {
+        "reward": "Mermista (T5, She-Ra) and Calamity (T5, No Evil)",
+        "type": "Companions",
+        "value": "Defeat an entire squad of Fire Nation soldiers using nothing but your own waterbending."
+      },
+      {
+        "reward": "Gain \"Administrative Talent\", \"Soul Talent\", \"Wild Talent\" and \"Land Talent\" for free.",
+        "type": "Perks",
+        "value": "Become the power behind the throne of a Water Tribe by capturing either Arnook of the Northern Tribe, or Hakoda of the Southern Tribe."
+      },
+      {
+        "reward": "Mera (T6, DC) and Terumi Mei (T6, Naruto)",
+        "type": "Companions",
+        "value": "Tie the two Water Tribes together through the bond of family by capturing both Yue and Sokka, and have them publicly marry."
+      },
+      {
+        "reward": "Malachite (T6, Steven Universe), Feferi Peixes (T6, Homestuck)",
+        "type": "Companions",
+        "value": "Unite the water tribe of Foggy Swamp with their polar cousins under your rule, creating a united Water Tribe."
+      },
+      {
+        "reward": "Mizuno Ami (T7, Sailor Moon)",
+        "type": "Companions",
+        "value": "Learn bloodbending from Hama, becoming one of the strongest waterbenders in the world."
+      },
+      {
+        "reward": "Gain \"Added Potential: Firebending\", \"Wild Defense\" and \"Environmental Defense\" for free.",
+        "type": "Perks",
+        "value": "Capture or kill the entire line of Sozin: Prince Zuko, Prince Iroh, Princess Azula, and of course, Fire Lord Ozai."
+      },
+      {
+        "reward": "Gain \"Added Potential: Earthbending\", \"Body Defense\" and \"Mind Defense\" for free.",
+        "type": "Perks",
+        "value": "Capture or kill the rulers of the Earth Kingdom: Kuei and Long Feng from Ba Sing Se, and Bumi from Omashu."
+      },
+      {
+        "reward": "Gain \"Added Potential: Airbending\", \"Creature Defense\" and \"Trace Defense\" for free.",
+        "type": "Perks",
+        "value": "Capture or kill Aang, the last Airbender, and any of his descendants."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You enter 'Avatar: The Last Airbender'[DR4] one year before Aang would have been freed from the iceberg."
+      },
+      {
+        "value": "You enter the world nearby a random Water Tribe village."
+      },
+      {
+        "value": "You must reunify the Southern and Northern Water Tribes."
+      },
+      {
+        "value": "You must help the Water Tribes win the hundred year war against the Fire Nation."
+      },
+      {
+        "value": "You must establish Water Tribe rule over the Fire Nation."
+      },
+      {
+        "value": "You must establish Water Tribe rule over the Earth Kingdom."
+      },
+      {
+        "value": "You must establish Water Tribe rule over any independent nations like Foggy Swamp, Kyoshi Island, etc."
+      },
+      {
+        "value": "You must stop the Avatar from restoring balance to the world. No matter how many Avatars it takes, they'll keep trying, so you must end the cycle by either killing or binding the Avatar while they are in the Avatar State."
+      }
+    ],
+    "budget": 50,
+    "desc": "The mission our client has is fairly straightforward: Make the Water Tribes conquer the world. More than simply winning the war against the Fire Nation, the Water Tribes must rule them afterwards. Of course, then comes the challenge of doing what the Fire Nation couldn't, conquering the Earth Kingdom as well, until the entire planet is under Water Tribe rule. ",
+    "uid": "fFvJj"
+  },
+  {
+    "reward": 200,
+    "image": "https://67.media.tumblr.com/953a12b20175bed9b0c76aa82ac79c0d/tumblr_inline_nokargSM4c1spg4o9_540.jpg",
+    "author": "Jeckjack",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Everything changed when the Earth Kingdom Attacked",
+    "loca": "Avatar",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "Gain \"Added Potential: Earthbending\" and \"Martial Talent\" for free.",
+        "type": "Perks",
+        "value": "Capture an experienced earthbender to act as your teacher in the ways of Earthbending."
+      },
+      {
+        "reward": "Pixie-Bob/Ryuko Tsuchikawa (T5, MHA) and Olivia (T5, Pokemon) clones.",
+        "type": "Perks",
+        "value": "Free the Earth Kingdom prisoners from Haru's village from the prison barges."
+      },
+      {
+        "reward": "Kurotsuchi (T5, Naruto) and Shinohara Mari (T5, Taimanin) clones.",
+        "type": "Companions",
+        "value": "Defeat an entire squad of Fire Nation soldiers invading the Earth Kingdom using nothing but your own earthbending."
+      },
+      {
+        "reward": "Gain \"Administrative Talent\", \"Soul Talent\", \"Wild Talent\" and \"Land Talent\" for free.",
+        "type": "Companions",
+        "value": "Become the power behind the throne in Ba Sing Se by capturing Earth King Kuei and the head of the Dai Li, Long Feng."
+      },
+      {
+        "reward": "Julie Matsumoto (T6, Bakugan) and Mira Fermin (T6, Bakugan) clones.",
+        "type": "Companions",
+        "value": "Capture King Bumi, the monarch of Omashu, and add his city's forces to your own."
+      },
+      {
+        "reward": "Gaara (T6, Naruto) and Sir Crocodile (T6, One Piece) clones, Rule 63 verions if preferred.",
+        "type": "Companions",
+        "value": "Unite the sandbender and beetle-wearing tribes of the Si-Wong desert under the Earth Kingdom's banner."
+      },
+      {
+        "reward": "Tara Markov/Terra (T7, Teen Titans) clone.",
+        "type": "Companions",
+        "value": "Capture Toph, the greatest Earthbender in the World, and have her teach you metalbending."
+      },
+      {
+        "reward": "Gain \"Added Potential: Firebending\", \"Wild Defense\" and \"Environmental Defense\" for free.",
+        "type": "Perks",
+        "value": "Capture or kill the entire line of Sozin: Prince Zuko, Prince Iroh, Princess Azula, and of course, Fire Lord Ozai."
+      },
+      {
+        "reward": "Gain \"Added Potential: Waterbending\", \"Body Defense\" and \"Mind Defense\" for free.",
+        "type": "Perks",
+        "value": "Capture or kill the line of the Chiefs of the Northern and Southern Water Tribes: Sokka, Katara, Hakoda, Kanna, from the South, as well as Arnook and Yue from the North."
+      },
+      {
+        "reward": "Gain \"Added Potential: Airbending\", \"Creature Defense\" and \"Trace Defense\" for free.",
+        "type": "Perks",
+        "value": "Capture or kill Aang, the last Airbender, and any of his descendants."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You enter 'Avatar: The Last Airbender'[DR4] one year before Aang would have been freed from the iceberg."
+      },
+      {
+        "value": "You enter the world nearby a random Earth Kingdom village."
+      },
+      {
+        "value": "You must help the Earth Kingdom retake any Fire Nation colonies on Earth Kingdom land."
+      },
+      {
+        "value": "You must help the Earth Kingdom win the hundred-year war against the Fire Nation."
+      },
+      {
+        "value": "You must help establish Earth Kingdom rule over the Fire Nation."
+      },
+      {
+        "value": "You must help establish Earth Kingdom rule over the Northern and Southern Water Tribes."
+      },
+      {
+        "value": "You must help establish Earth Kingdom rule over any independent countries like Kyoshi Island, Foggy Swamp, etc."
+      },
+      {
+        "value": "You must stop the Avatar from restoring balance to the world. No matter how many Avatars it takes, they'll keep trying, so you must end the cycle by either killing or binding the Avatar while they are in the Avatar State."
+      }
+    ],
+    "budget": 50,
+    "desc": "The mission our client has for you is simple enough: Make the Earth Kingdom conquer the world. It's not enough to merely help the Earth Kingdom win the hundred-year-war against the Fire Nation, you need to have it turn things completely around, until the Fire Nation, Water Tribes, and any future Air Nomads are firmly under the control of the Earth Kingdom. The goal is nothing less than global domination!",
+    "uid": "mkhkh"
+  },
+  {
+    "reward": 2,
+    "image": "https://i.pinimg.com/564x/86/4e/d4/864ed4d811d46bb09793b94d247e7d87.jpg",
+    "author": "Yeveiras",
+    "rewardType": "IMG Tickets",
+    "source": "",
+    "title": "A Bleached Life",
+    "loca": "Bleach",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "Martial Talent effectiveness is tripled, your Reiatsu and Reiryoku growth speed is tripled.",
+        "type": "Other",
+        "value": "Be accepted as a student from Genryūsai Shigekuni Yamamoto."
+      },
+      {
+        "reward": "Soul Talent effectiveness is tripled, your Reiatsu and Reiryoku growth speed is tripled.",
+        "type": "Other",
+        "value": "Be accepted as a student from Unohana Retsu."
+      },
+      {
+        "reward": "You can now use Kidō without words and they will be as powerfull as if the full Incantation was used.",
+        "type": "Other",
+        "value": "Join the Kidō corps or the 5th division."
+      },
+      {
+        "reward": "Easy mastery for weapon styles.",
+        "type": "Other",
+        "value": "Join the 11th division."
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Defeat Zaraki Kenpachi in a fight/spar."
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Become a vice-captain (repeatable)."
+      },
+      {
+        "reward": "A copy of Gin's Reiryoku is added to your reserves, your Reiatsu's output and control is doubled.",
+        "type": "Other",
+        "value": "Defeat Ichimaru Gin."
+      },
+      {
+        "reward": "A copy of Tousen's Reiryoku is added to your reserves, your Reiatsu's output and control is doubled.",
+        "type": "Other",
+        "value": "Defeat Tousen Kaname."
+      },
+      {
+        "reward": "Gain a chosen racial ability from the defeated Espada, taking the same ability more times will multiply it's power.",
+        "type": "Other",
+        "value": "Defeat an Espada(repeatable)."
+      },
+      {
+        "reward": "Gain a chosen racial ability from the defeated Quincy, taking the same ability more times will multiply it's power.",
+        "type": "Other",
+        "value": "Defeat a Quincy(repeatable)"
+      },
+      {
+        "reward": 150,
+        "type": "Credits",
+        "value": "Become a captain of theGotei 13."
+      },
+      {
+        "reward": "Perfected Hōgyoku that becomes permanently bound to you, no one will be able to perceive it and it's effects may not harm you.",
+        "type": "Other",
+        "value": "Defeat Aizen Sosuke."
+      },
+      {
+        "reward": "Obtain Yhwach's \"Almighty\" at full power, and all his mastery over the ability.",
+        "type": "Other",
+        "value": "Defeat Yhwach."
+      },
+      {
+        "reward": 10,
+        "type": "Credits",
+        "value": "Create a new powerful Kidō (repeatable)."
+      },
+      {
+        "reward": 30,
+        "type": "Credits",
+        "value": "Unlock your Shikai."
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Unlock your Bankai."
+      },
+      {
+        "reward": "Your abilities power is multiplied by a factor equal to the fraction between Reiryoku reserve and ability cost.",
+        "type": "Other",
+        "value": "Have more Reiryoku than any other shinigami in the Gotei 13."
+      },
+      {
+        "reward": 150,
+        "type": "Credits",
+        "value": "Defeat Ichigo Kurosaki in a fight/spar."
+      },
+      {
+        "reward": "Instant capture of Retsu Unohana and a new ability \"Art Of Killing\" killing someone gives you 10% of their power.",
+        "type": "Other",
+        "value": "Defeat Retsu Unohana in a Fight."
+      },
+      {
+        "reward": "The ability \"Visionary\" it can be toggled on and of and you can't accidentally kill yourself with it.",
+        "type": "Other",
+        "value": "Kill Gremmy Thoumeaux."
+      },
+      {
+        "reward": 300,
+        "type": "Credits",
+        "value": "Make sure Genryūsai Shigekuni Yamamoto dosen't die during the first invasion of the TYBW."
+      },
+      {
+        "reward": "Unlocks your Shikai if you still don't have it, and you become immune to Hollows that are a lower tier than you.",
+        "type": "Other",
+        "value": "Avoid the death of Kaien Shiba."
+      },
+      {
+        "reward": "All of Kyoka Suigetsu abilities at their full power.",
+        "type": "Other",
+        "value": "Expose Aizen plans."
+      },
+      {
+        "reward": 200,
+        "type": "Credits",
+        "value": "Stop the Quincy from capturing Tier Harribel."
+      },
+      {
+        "reward": "Choose one ability from any Quincy except Yhwach, you receive it at it's full power it's cost is near zero and can grow stronger",
+        "type": "Other",
+        "value": "Kill an Elite Stenritter."
+      },
+      {
+        "reward": "One Lure of your choice and your Lure effects are doubled.",
+        "type": "Other",
+        "value": "Seduce and Capture the captain and vice-captain of a division."
+      },
+      {
+        "reward": "A copy of Yamamoto's Reiryoku is added to yours, your Reiatsu's power is tripled, you become immune to lower tiered Shinigamies.",
+        "type": "Other",
+        "value": "Defeat Genryūsai Shigekuni Yamamoto in a Fight/Spar."
+      },
+      {
+        "reward": "10 credits for defeated Quincy.",
+        "type": "Other",
+        "value": "During the first Quincy invasion of the TYBW defeat multiple Quincy's"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "After accepting this mission any ability you may have will be sealed and unavaible for use till mission completion (company purchases are excluded)."
+      },
+      {
+        "value": "Any companion you may have won't be able to follow you to this world till mission completion, but they may reside in your demiplane."
+      },
+      {
+        "value": "While this mission is active the only buyable Heritage perks will befrom the Psychopomp section, and only the Shinigami form may be choosen."
+      },
+      {
+        "value": "Buying companions not from the Bleach world will be impossible for the duration of the mission."
+      }
+    ],
+    "budget": 300,
+    "desc": "Hello there contractor, today we have quite a mission for you, see in recent times some of our most estimed clients have taken interest in the world of Bleach and it's many possibilities for entertainment, and together they have collected quite the investment to make this mission possible.\nYou see for this mission multiple scenarios have been put together, each one with it's advantages and it's own completition requirements, you shall choose one between this scenarios and complete the necessary conditions and as such complete the mission, regardless of the scenario you may take if you accept this mission at Chargen you will receive a bonus of 15 credits for intensity level. Now let's procede to the hearth of this mission the scenarios.\n\nThe scenarios (of wich you must choose one) are the following:\n\n-The Tsunayashiro heir: You will take the Origin Extra (10) as the son/daughter of the current head of the Tsunayashiro noble house, one of the 5 great noble houses of the shinigami world, you shall appear on the day Kisuke Urahara, Tessai Tsukabishi and Shihouin Yoruichi make their escape to the human world. \n\nYour provided advantages for this scenario are as follow:\n|Soul Talent|\n|Administrative Talent|\n|Body Defense x2|\n|Fools Gold|\n|Easy mastery and creation of Kidō|\n|100 credits|\n\nYour objectives to comlete this scenario and the mission are as follow: \n|Become the head of the Tsunayashiro house|\n|Become a Captain of the Gotei 13|\n|Obtain the Hogyoku|\n|Save your house from the assassination planned by Tokinada Tsunayashiro|\n|Defeat at least one Elite Sternritter/Schutzstaffel during the TYBW|\n|Become the most influent noble in Seiretei|\n\n-The new Kenpachi: You will take the Origin Extra (10) as a resident of a district of the Rukongai, you will appear during the period in wich Kuruyashiki is the Kenpachi 10 years before his death at Azashiro's hands.\n\nYour provided advantages for this scenario are as follow:\n|Martial Talent|\n|Body Tune-Up|\n|Drain Defense x1|\n|Stud Service|\n|Easy mastery for weapons|\n|150 credits|\n\nYour objectives to comlete this scenario and the mission are as follow: \n|Become the Kenpachi|\n|Defeat Unohana Retsu|\n|Be recognized as the strongest shinigami|\n|Be recognized as a war potential by Yhwach|\n|Kill Royd Lloyd during the first invasion of the TYBW|\n\nNew genius at the academy: You will take the Origin Extra (10) as a student just enrolled in the Shin'ō Academy the same year as Rukia and Renji.\n\nYour provided advantages for this scenario are as follow:\n|Blessed Talent|\n|Template Stacking I of your choice|\n|Stress Defense x2|\n|Love Spot|\n|Talents are Thrice as effective|\n|180 credits|\n\nYour objectives to comlete this scenario and the mission are as follow: \n|Be recognized as the greatest genius of the last century|\n|Graduate early from the academy|\n|Instead of remaining in one division after at least 2 year pass to another division 3 times|\n|Obtain at least 3rd seat in any division you are part of|\n|Defeat One of the Espada|\n|Defeat at least one Sternritter during the TYBW|\n\nOnly human, almost: You will take the Origin Extra (1) as a Fullbringer in Karakura town one year before the start of canon.\n\nYour provided advantages for this scenario are as follow:\n|Martial Talent|\n|Soul Talent|\n|Trace Defense x1|\n|Information Defense x1|\n|Alluring Whisper|\n|Your Fullbringer abilities will grow exponentialy as your Reiryoku grows|\n|200 credits|\n\nYour objectives to comlete this scenario and the mission are as follow: \n|Be as strong as a captain when canon starts|\n|Help Ichigo and company to rescue Rukia and fight a captain|\n|Defeat Ulquiorra Cifer yourself|\n|Kugo Ginjo plans|\n|Defeat Yhwach|\n|Defeat at least one Sternritter during the TYBW|\n\nIf you fail one of the objectives from a scenarion, you must complete 2 of the additional objectives to complete the mission.",
+    "uid": "dOhEh"
+  },
+
+  {
+    "reward": 50,
+    "image": "https://media.discordapp.net/attachments/1080237127603859537/1194659134918901872/latest.png",
+    "author": "Dionesia",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Hollow Hunt",
+    "loca": "Bleach",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": 2,
+        "type": "Credits",
+        "value": "Kill an Adjuchas (Applies individually for every unique Adjuchas killed)"
+      },
+      {
+        "reward": 10,
+        "type": "Credits",
+        "value": "Kill a Vasto Lorde (Applies individually for every unique Adjuchas killed)"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Kill at least one thousand Hollows. Vasto Lorde and regular Hollows are all counted as +1 regardless of size, power and how many souls they contained"
+      },
+      {
+        "value": "You will not be provided with a weapon to harm Hollows, so we recommend you bring your own method of harming Souls"
+      },
+      {
+        "value": "For safety reasons, we also recommend Trace and Information Defense on at least the first level; while it is unlikely that Soul Society will send people into Hueco Mundo after you for \"releasing\" this many souls, they might still be cross with you"
+      }
+    ],
+    "budget": 80,
+    "desc": "Do you know how many souls are in a Hollow? Thousands, tens of thousands in the bigger and older ones and there's a whole forest of Menos out there!\nSoul Reapers don't regularly clear out those Hollows though... Shall we do them a favor and change that?\n\nOn taking this Mission, you will be transported directly into Hueco Mundo, the exact time and place up to you as you agree with the Help Desk. \nNote: The Goal of this Mission is not to fight Espada, so we recommend that you start in the Menos Forest rather than Las Noches while Ichigo and the gang are there. The choice of time and place is for the sake of avoiding, or spiting, Aizen as well as the possibility that you'd rather start on the surface than in the forest directly\n\nAs long as you do not consciously and willingly choose to specifically destroy, Capture, absorb or apply a similar method, the Hollows and the resulting souls, all Hollows you defeat will be counted as purified and return to the cycle of souls as if slain by a Soul Reaper's blade. This applies to all Retinue members you bring with you (Or Captured after arrival)\n\n--------\n\nAs various sorts take these Missions, finding a catch-all Reward is difficult, so you have a choice depending on your \"type\":\n>The most fundamental reward is a completely blank and obedient Asauchi that you can use yourself or give to one of your Retinue members for them to bond with and use\n>If you are already a Shinigami, you will instead gain a one-time privilege to rip the mask off a Hollow and put it on yourself, turning you into a Visored with all of the natural abilities of the Hollow you robbed\n>If you are a Hollow yourself, you may choose to instead gain the Potential to become both a Vasto Lorde and an Arrancar if you did not already possess one or both. You may immedately become an Arrancar on completing this Mission\n>If you are already an Arrancar, you can still take the Asauchi and unlock both Shikai and Bankai in addition to your existing abilities\n>If you are a Quincy, you may choose a T8 or lower Angel Template Stack to act as your Schrift (or as a bonus to your existing Schrift if you already have one)\n>If you are Ichigo Kurosaki, or otherwise a hybrid of Hollow, Quincy and Soul Reaper, you gain the ability to transform your Shikai and Bankai to fit your aesthetics, as well as a Talent (an experience modifier) to combine your hybrid powers\n>If none of it's an interest to you, you may take Soul Talent as your reward",
+    "uid": "IqCUF"
+  },
+  {
+    "reward": 300,
+    "image": "https://i.kym-cdn.com/photos/images/original/000/218/196/tumblr_lwaroziDn21qzj1clo1_500.jpg",
+    "author": "Pleb",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Pika Pika You ever been kicked at the speed of light",
+    "loca": "Pokemon",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Kick jessie, James and meowth at the speed of light"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Get ash's other Pokémon to tier 6"
+      },
+      {
+        "value": "Win the kanto league"
+      },
+      {
+        "value": "make ash study Pokémon for at least 1 month"
+      },
+      {
+        "value": "Possess a Pikachu"
+      },
+      {
+        "value": "Power swap with kizaru (the cost is covered by the compan)"
+      }
+    ],
+    "budget": 140,
+    "desc": "K, this one is a little cursed not gonna lie but what you gotta do is possess a Pikachu but not just any Pikachu but ash's Pikachu in a bid to prove that he could have won his first league if he put in more effort training and had stronger Pokémon, so your job is to be his Pokémon and help him catch stronger Pokémon then canon and to do this we are providing a free power swap of our choice in exchange for taking on some physical characteristics of your swapping target, oh and that target is kizaru. Goodluck",
+    "uid": "xAUdb"
+  },
+  {
+    "reward": 500,
+    "image": "https://memestatic.fjcdn.com/large/pictures/7d/99/7d999b_6296703.jpg",
+    "author": "Pleb",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "No vanguard we play cards like real men",
+    "loca": "Cardfight!! Vanguard",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Become a millionaire through yu-gi-oh"
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Become a billionaire through yu gi oh"
+      },
+      {
+        "reward": "Aesthetic Talent",
+        "type": "Perks",
+        "value": "Re-create more then 1000 Yu-gi-oh cards"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Re-create more then 5000 Yu-gi-oh cards"
+      },
+      {
+        "reward": "Communication Talent, Administrative Talent",
+        "type": "Perks",
+        "value": "Re-create more then 10,000 Yu-gi-oh cards"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Re-create all Yu-gi-oh cards"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Make 1000 unique Yu gi oh cards of your own design"
+      },
+      {
+        "reward": "Science Talent",
+        "type": "Perks",
+        "value": "Re-create seto's VR dualling arena"
+      },
+      {
+        "reward": "Engineering Talent",
+        "type": "Perks",
+        "value": "Re-create seto's dual disk's"
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Increase yu-gi-Oh's player count higher then vanguard's"
+      },
+      {
+        "reward": 150,
+        "type": "Credits",
+        "value": "bankrupt Vanguard"
+      },
+      {
+        "reward": "Blue-Eyes White Dragon",
+        "type": "Companions",
+        "value": "Create your own Blue-Eyes White Dragon jet"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You must possess seto kaiba"
+      },
+      {
+        "value": "You can not mind control people in to liking yu-gi-oh"
+      },
+      {
+        "value": "You must take the mastermind heritage"
+      },
+      {
+        "value": "You will arrive 1 year before canon starts"
+      }
+    ],
+    "budget": 140,
+    "desc": "Lets face it, Vanguard is for pussy's and thus your job is to bring a real man's children's trading card game. Yu-gi-oh, and to do that you will have to re-invent it, popularize it, then hold tournaments of it to prove you are the best at it. And who would be better at bullying the world in to playing a children's card game with stupid amounts of money then the OG himself Seto -motherfuckin- kaiba. Oh and p.s. we are leaving you an encyclopaedia of all the yu gi oh cards as a guide, Goodluck. ",
+    "uid": "IzILD"
+  },
+  {
+    "reward": "Added Potential from any world you know of, ignoring the requirement that you've been there or have somebody in the retinue with the ability already. It will come with an instruction manual of some kind to get you started. Or instead, 5 credit.",
+    "image": "https://i.imgur.com/DtZ9SdT.png",
+    "author": "Lesbean",
+    "rewardType": "Perks",
+    "source": "",
+    "title": "Cultural Exchange",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [],
+    "conditions": [
+      {
+        "value": "You must spend at least 30 minutes taking part in the local custom"
+      },
+      {
+        "value": "You must make an effort to become invested in the local custom (cheering on one team in a sports event, moshing in a mosh pit, or putting in an effort in a local dance.) You can't be passive, in other words."
+      }
+    ],
+    "budget": 0,
+    "desc": "Part of traveling to new worlds is taking in the local cultures, getting new experiences and experiencing life from another point of view. With the Catalog, you're able to travel to many new worlds and accrue many new experiences.\n\nWe would simply like to incentivize you to take advantage of that.\n\nSo we challenge you to take part in a local custom of some kind. It could be a festival, a concert, or even a tournament of some kind. The only requirement is that it's connected to the local culture of where you are and that it's a new experience for you.",
+    "uid": "URbex"
+  },
+  {
+    "reward": 2,
+    "image": "https://i.pinimg.com/564x/a9/ae/73/a9ae7385023165b810e2420985bdfaa7.jpg",
+    "author": "Yeveiras",
+    "rewardType": "IMG Tickets",
+    "source": "",
+    "title": "Uchiha's Resurgence",
+    "loca": "Naruto",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": 20,
+        "type": "Credits",
+        "value": "Become the number one at the ninja academy"
+      },
+      {
+        "reward": "One copy of \"Trace Defense\" plus two additional Chakra affinities.",
+        "type": "Perks",
+        "value": "Graduate early from the academy."
+      },
+      {
+        "reward": "Your susanoo obtains one between the \"Yata mirror\" and \"Sword of Totsuka\".",
+        "type": "Other",
+        "value": "Be promoted to chunin at most at the same age of Itachi Uchiha."
+      },
+      {
+        "reward": "You are able to use Kotoamatsukami.",
+        "type": "Other",
+        "value": "Be promoted to Jonin at most at the same age as Shisui Uchiha"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Impress Hiruzen Sarutobi."
+      },
+      {
+        "reward": "One copy of \"Polymorph Defense\" and \"Corruption Defense\"",
+        "type": "Other",
+        "value": "Defeat Orochimaru in a fight."
+      },
+      {
+        "reward": "Perfect Sage Mode, added talent for Senjutsu and two additional chakra affinities.",
+        "type": "Other",
+        "value": "Sign a Summoning Contract."
+      },
+      {
+        "reward": "The use of Izanami and Izanagi dosen't cause blindness.",
+        "type": "Other",
+        "value": "Defeat Or Seal a tailed beast or Jinchūriki"
+      },
+      {
+        "reward": "Obtain all the abilities of the Tenseigan and are able to use them innately without the need for any Dojutsu.",
+        "type": "Other",
+        "value": "Hinata Hyuga is part of your Harem."
+      },
+      {
+        "reward": 150,
+        "type": "Credits",
+        "value": "Stop the release of the Ten-Tails."
+      },
+      {
+        "reward": "Template Stacking II of  \"Ten-Tails Madara\"",
+        "type": "Other",
+        "value": "Kill or Seal Madara Uchiha."
+      },
+      {
+        "reward": 200,
+        "type": "Credits",
+        "value": "Destroy Or Seal Zetsu."
+      },
+      {
+        "reward": "Your Sharingan and the Rinnegan merge, you can switch between the two at will, you also unlock the Rinne Sharingan.",
+        "type": "Other",
+        "value": "Steal The Rinnegan."
+      },
+      {
+        "reward": "Ability to absorb Chakra, and your Chakra reserves and output are enlarged by a quantity equal to the Chakra of Kaguya.",
+        "type": "Other",
+        "value": "Capture Kaguya Otsutsuki."
+      },
+      {
+        "reward": "Absorbing Chakra permanently enlarges your reserves and output by an equal amount.",
+        "type": "Other",
+        "value": "Become Hokage."
+      },
+      {
+        "reward": "The stolen Dojutsu is destroyed obtain all of it's abilities, abilities similar to those you already posses multiply their power",
+        "type": "Other",
+        "value": "Steal a Dojutsu (Repeatable)."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "To take this mission you must have the Uchiha powers/bloodline be it because of a template or other means."
+      },
+      {
+        "value": "For the duration of this mission no Heritage perks may be bought, those received by mission rewards can still be accepted."
+      },
+      {
+        "value": "Survive the Uchiha massacre."
+      },
+      {
+        "value": "All the responsibles of your clan massacre must be dead."
+      },
+      {
+        "value": "Restore the clan population to at least 100 members."
+      },
+      {
+        "value": "Have more Jonin shinobi than any other clan."
+      },
+      {
+        "value": "Your clan must be the most powerful of the village."
+      }
+    ],
+    "budget": 200,
+    "desc": "The Uchiha massacre, a terrible event in Konoha resulting from hate, foolishness and manipulation, the Uchiha clan once mighty and proud reduced to three living members, the descendants of Indra were exterminated by non other than Itachi, a genius of the clan that brought extinction to protect the village, but what if someone else survived Itachi's genocide other than Sasuke? what if that someone was you?\n\nContractor, by accepting this mission you shall appear in the Uchiha conpound moments before Itachi starts his slaughter of the clan, your firts objective of this mission will be of course to survive no matter how. And after that what you may ask, simple become strong stonger than any other shinobi in Konoha, make sure all the responsible of your clan massacre are dead, revive your clan take many wifes and make many childrens, and make sure your clan is the strongest in the entire village.\n\nTaking into accaunt all the possible dangers you may face, because of your status (cough... Danzo cough... Orochimaru), as a bonus for taking this mission you shall receive two \"Gifts\", but only after you have survived the massacre, after all we can't waste an investment. \n\nThe first \"Gift\" will be the awekening of your Eternal Mangekyo Sharingan, tough before you start celebreting, do remember that it is quite pricely to use when it comes to Chakra, so don't hope to be able to spam it's abilities from the get go, the perk \"Inexhaustible\" would resolve the problem tough.\nAs for it's abilities, upon first activation of the sharingan you will be able to choose two abilities from others Mangekyo sharingan or create two new custom ones with the help of the company, but this new abilities can't exceed by far the power of the original Mangekyo abilities.\nFor your second gift you shall choose two between the jutsu arts (Ninjutsu, Taijutsu, Fūinjutsu...) you will be able to learn this arts with extreme ease attaining complete mastery over any jutsu of the chosen arts withing a couple of days at most, and if and only if you have a poket space, you shall also receive scrols containing all jutsu of the chosen arts.\n\nTo help you in your adventure and enhance entertainment you provide, we have put together some optional condition you may choose to take. \n-Accepts this mission during Chargen phase. You will receive a bonus of 50 credits and will be guaranteed to have a total of 3 chakra affinities. \n-You may choose to have an age closer to Sasuke during the massacre, being at most one year older. You will receive 100 credits, but be warned, in that case your lures will only be able to create friendly reletionship, and generate affection in adults no more than a parent's love for it's child, to obtain the full effect of your lures and eventual bindings you must first reach the appropiate age.\n-Lose the ability to buy companions not of Naruto's world for the duration of this mission. Receive 50 credits.",
+    "uid": "ljCMJ"
+  },
+  {
+    "reward": 500,
+    "image": "https://api.win.gg/wp-content/uploads/2023/08/Yujiro-Hanma-Workout-1-1024x576-1.jpg",
+    "author": "Pleb",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Mission impossible - Baki edition",
+    "loca": "Baki the Grappler",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": 150,
+        "type": "Credits",
+        "value": "Have yujiro apologise to his son Baki for how he was raised and for killing his mother"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "yujiro is immune to all forms of binding, lures and mind control"
+      },
+      {
+        "value": "yujiro goes a full year without fighting"
+      },
+      {
+        "value": "yujiro becomes a true pacifist"
+      }
+    ],
+    "budget": 120,
+    "desc": "I really didn't think anyone was stupi... I mean brave enough to take on this mission but you have proven me wrong, ok so the mission I am giving you is to talk yujiro hanma in to becoming a true pacifist who only solves his problems with words and not his fist's and keeps calm even in the face of insults. Goodluck you will need it",
+    "uid": "NxatD"
+  },
+  {
+    "reward": "400 credits and a indestructible pair of black air force 1's",
+    "image": "https://i.redd.it/g778w3nhnm961.jpg",
+    "author": "Pleb",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Black air force activity part 1",
+    "loca": "Dragonball",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "Bulma Briefs",
+        "type": "Companions",
+        "value": "Record yourself fucking bulma and give it to vegeta"
+      },
+      {
+        "reward": "Performance Talent",
+        "type": "Perks",
+        "value": "Fuck bulma while wearing vegeta's shoes"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Beat vegeta unconscious"
+      },
+      {
+        "value": "steal his shoes"
+      },
+      {
+        "value": "Fuck bulma till she admits your better then vegeta"
+      }
+    ],
+    "budget": 800,
+    "desc": "K this one is simple but difficult, we are gonna send you to dragon ball during the 7 year time skip and you will a 1 month to beat the breaks off of vegeta, steal his shoe's and fuck bulma. Goodluck",
+    "uid": "eaLmA"
+  },
+  {
+    "reward": 5,
+    "image": "https://static.zerochan.net/SOUL.EATER.full.1414276.jpg",
+    "author": "cthulhu",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "The Hall Of Anal Devastation",
+    "loca": "Real Life/History",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "A set of materials to be fed into Blank Slate that will fine tune a single person in the effected series into your ideal waifu",
+        "type": "Other",
+        "value": "Change the ending of a series by giving the main character a different waifu"
+      },
+      {
+        "reward": "A set of materials to be fed into Blank Slate that will normalize harems in the effected series",
+        "type": "Other",
+        "value": "Change the ending of a series by making a harem protagonist choose monogamy, or vice versa."
+      },
+      {
+        "reward": "A set of materials to be fed into Blank Slate that will 'resurrect' a character of your choice in the effected series",
+        "type": "Other",
+        "value": "Change the ending of the series by making a character who should have died, live, or vice versa."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "The Mangaka, Artist, Author, Editor, etc all should not become aware of the existence of The Company."
+      },
+      {
+        "value": "The Mangaka, Artist, Author, Editor, etc all should not become aware of the existence of supernatural, paranormal, or other extraordinary powers."
+      },
+      {
+        "value": "Each additional objective is to be treated as a separate mission from a different individual with similar issues."
+      },
+      {
+        "value": "This mission is specifically designed to be repeatable.  Feel free to assign it to yourself multiple times after a brief waiting period."
+      }
+    ],
+    "budget": 0,
+    "desc": "No one is really sure whether the life imitates art, or art imitates life.  Either way, the truth is that for every book, manga, comic, television show, or even radio show that has ever existed, there is a world out there that that matches it.  More importantly, for every version of those things, both officially released or produced by fans, there is also a world out there that matches it.  This is one of the foundations of Meta Shift, after all.  With that said, none of that matter whatsoever.\n\nInstead, someone higher than you in the company hierarchy has been doing some research into various world - that is to say, has been reading manga and watching anime - and has been overcome by frothing rage at various facts, such as the fact that Naruto didn't marry Sakura and Ichigo didn't marry Rukia.  So.  Your mission, should you choose to accept it is to bribe, blackmail, threaten, or otherwise convince the author of a given manga to change the course of history - or, at least, the plot of their manga. ",
+    "uid": "urPbO"
+  },
+  {
+    "reward": "A servant of your own, with summoning restrictions removed.",
+    "image": "https://i.imgur.com/rfk9rSt.jpg",
+    "author": "cthulhu",
+    "rewardType": "Other",
+    "source": "",
+    "title": "The Holy Saber War",
+    "loca": "Nasuverse",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "Company clone of Master Artoria, with Shirou Muramasa as her Servant, or 150 credits",
+        "type": "Companions",
+        "value": "Have the seven Masters only summon Servants that are versions of Artoria"
+      },
+      {
+        "reward": "Company clone of Gray, with Reines Sima Yi as her Servant, or 100 credits",
+        "type": "Companions",
+        "value": "Have the seven Masters only summon Servants that are Saberfaces"
+      },
+      {
+        "reward": "Company clone of Saber class servant Arthur Pendragon, or 50 credits",
+        "type": "Companions",
+        "value": "Have the seven Masters only summon Servants of the Saber class"
+      },
+      {
+        "reward": "Automatic capture of the winner and their Servant",
+        "type": "Other",
+        "value": "Have your Grail War result in someone ACTUALLY making a wish on the Grail"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You and your retinue may not be masters in the Grail War"
+      },
+      {
+        "value": "All seven Masters must summon 'Sabers' as their Servant"
+      },
+      {
+        "value": "Minimal shenanigans - seven servants, not eight, and no extra classes"
+      }
+    ],
+    "budget": 0,
+    "desc": "Tell me, Contractor, have you ever participated in a Holy Grail War?  The damn things are fairly popular all things considered, you just shake the magic cup and a free waifu falls out.  What's not to love?  Well, in any event, I have something of a request for you.  I'd like for you to set up a Grail War of your own.  Not join one of the others, such as the one in Fuyuki or Tirfas, or even Snowfield.  I want you to make your own, from the ground up.  That'll probably mean making a fake one and or stealing one.\n\nRegardless of how you get your Grail, once you've got it, the goal is pretty simple.  Run a grail war.  You can invite Masters from other wars, hand the Servants out to randos, or just select the seven closest magus.  There are only two restrictions - one, you and yours can't be masters.  Secondly?  All of the Servants that get summoned need to be Sabers.  Now, do I mean a Grail War with seven Saber class Servants, with seven Saberfaces, or with seven different versions of Artoria?  To be honest, all of those would be acceptable to me.",
+    "uid": "OTwtb"
+  },
+  {
+    "reward": 30,
+    "image": "https://i.ebayimg.com/images/g/dCQAAOSwmBRe0Ctv/s-l1200.webp",
+    "author": "Pleb",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Loving reunion",
+    "loca": "DC",
+    "lewd": true,
+    "scope": "Quick",
+    "objectives": [
+      {
+        "reward": "Martial Talent and 30 credits",
+        "type": "Other",
+        "value": "Beat the joker with a crowbar for at least 8 hours"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Strap the joker to a board and electrocute him for 3 hours"
+      },
+      {
+        "reward": "Harley Quinn",
+        "type": "Companions",
+        "value": "Have sex with Harley Quinn in front of him and have her admit you are better then him"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Kill him in explosion"
+      },
+      {
+        "reward": 200,
+        "type": "Credits",
+        "value": "Have batman kill him without mind controlling or binding him in anyway"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You kill the Joker"
+      }
+    ],
+    "budget": 100,
+    "desc": "Ok so this mission is a quicky, basically one of our contractors is a version of Jason Todd from just after his death by joker and due to certain company circumstances he is unable to return to the DC universe so he is paying us to get revenge for him, and that is where you come in.\n\nSo for this mission to count as complete you will need to kill the joker easy and simple but to get some real points for this mission you will need to get creative and we are giving you 2 weeks to do it so Goodluck.  ",
+    "uid": "IrWJZ"
+  },
+  {
+    "reward": 400,
+    "image": "https://i1.sndcdn.com/artworks-ovXyXt2SeNK6JY1Z-cs2mfA-t500x500.jpg",
+    "author": "Pleb",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Corruption Breach",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": 150,
+        "type": "Credits",
+        "value": "destroy all 3 shadow orbs"
+      },
+      {
+        "reward": "Corruption Defence x 2",
+        "type": "Perks",
+        "value": "kill the Eater of worlds"
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Kill 10,000 corrupted enemies"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "The corruptions danger level will depend on your starting world and the eater of worlds will be one tier higher then your world rating"
+      },
+      {
+        "value": "Gain 300 points for taking this mission"
+      }
+    ],
+    "budget": 150,
+    "desc": "Ok, so we may have a small problem with your starting world, that problem being the corruption from terraria leaking in to your starting world thanks to a new hire clicking a few wrong buttons when setting up your world. But not to fret we are gonna give you an extra 300 credits in the beginning to help in your mission to destroy it, and to do so you will need to find the three shadow orbs scattered around your world and killing the Eater if worlds that will spawn from doing so.\n\nOh and a bit of advice, these orb's are likely to be epicentres for the corruption and will be heavily guarded so good luck and don't let the corruption spread to far, the further it spreads the stronger the enemies will become.\n\np.s. you have about 3 years before the world is completely corrupted and the monsters will get stronger for every orb you destroy till all three are gone.   ",
+    "uid": "vOfUX"
+  },
+  {
+    "reward": "Blessed Talent",
+    "image": "https://i.redd.it/qnqsq5c347j41.png",
+    "author": "Pleb",
+    "rewardType": "Perks",
+    "source": "",
+    "title": "Path of the warlock",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": 10,
+        "type": "Credits",
+        "value": "complete 1 patron request"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "complete 10 patron request"
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "complete 50 patron request"
+      },
+      {
+        "reward": 250,
+        "type": "Credits",
+        "value": "complete 100 patron request"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You must pick a tier x or higher patron"
+      },
+      {
+        "value": "You can not take missions after picking this"
+      },
+      {
+        "value": "You may only gain credits from completing requests off of your patron and not by capturing and selling waifu's to the company"
+      },
+      {
+        "value": "You must complete at least 1 request a month"
+      }
+    ],
+    "budget": 400,
+    "desc": "So we are branching out in our selection of patrons, and you will be our first guineapi... er I mean brave volunteer to help us at the company test this new field. Anyway, what you will be doing is starting your selection in DRX mode, but lucky for you the only rule you have to follow is to pick a tier x or higher companion who will become your patron, but where this differs from normal is the only way you will be able to gain credits from then on is to complete task's set to you by your Patrion but this does come with the additional bonus of gaining exclusive powers from your patron by pleasing them and completing harder requests. Also due to them serving as a patron they will not directly be able to enter your world unless it is their world of origin or you open a portal to said world of origin.   \n\nThe requests you receive will heavily relate to the patron you pick so choose carefully and goodluck.\n  ",
+    "uid": "zOuDs"
+  },
+  {
+    "reward": 20,
+    "image": "https://i.pinimg.com/736x/42/63/fa/4263fab2060287fe6047b75f2d98e128.jpg",
+    "author": "LuxVonDeux",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "I Come Here For Your Life's Extended Warranty",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": 20,
+        "type": "Credits",
+        "value": "Kill 2 Immortals that cheat on Death."
+      },
+      {
+        "reward": 40,
+        "type": "Credits",
+        "value": "Kill 4 Immortals that cheat on Death."
+      },
+      {
+        "reward": 60,
+        "type": "Credits",
+        "value": "Kill 6 Immortals that cheat on Death."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You must choose Death as your Patron."
+      },
+      {
+        "value": "Kill one immortal that cheat on Death."
+      }
+    ],
+    "budget": 50,
+    "desc": "Death is tired of mortals who dare to cheat on them. They want you, Death's Contractor, to make sure those who cheat Death disappear and let them meet Death. They will take care of the rest.",
+    "uid": "rIuSQ"
+  },
+  {
+    "reward": "500 upon taking this mission",
+    "image": "https://i.imgur.com/0OrGTkC.jpg",
+    "author": "Pleb",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Endbringer Invasion Imminent",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Kill Simurgh"
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Kill Behemoth"
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Kill Leviathan"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Endbringers summoned by this mission can not be bound or captured for the duration of this mission"
+      }
+    ],
+    "budget": 600,
+    "desc": "Looking for some cheap credits, want an extra challenge in your world or Mabey you just want to see people suffer. Well have I got a proposition for you, you see the problem we have is with all the contractors that go to worm is when they catch and sell there version of the Endbringers no one is willing to buy them, so the company has seen fit to repurpose them in to a mission for our entertainment, and by this I mean we are going to give you 500 additional credits in exchange for having to suffer from a random Endbringer attack somewhere in your world every 3 months till the original 3 Endbringers (Behemoth, Leviathan and the Simurgh) are killed. \n\nOh and p.s. we will pay you 100 credits for each one you kill",
+    "uid": "sWAHJ"
+  },
+  {
+    "reward": 80,
+    "image": "https://i.ytimg.com/vi/-Pb1XGJGGRw/sddefault.jpg",
+    "author": "Pleb",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Painting Gotham pink",
+    "loca": "DC",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "Batwoman/Katherine Rebecca Kane",
+        "type": "Companions",
+        "value": "Paint the Batsuit neon pink"
+      },
+      {
+        "reward": "Batgirl/Barbara Joan Gordon",
+        "type": "Companions",
+        "value": "Paint the Batcave neon pink"
+      },
+      {
+        "reward": "Harley Quinn/Harleen Frances Quinzel",
+        "type": "Companions",
+        "value": "Paint the Batmobile neon pink"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Paint Gotham neon pink"
+      }
+    ],
+    "budget": 120,
+    "desc": "Ok so the joker and other criminals have painted the streets of Gotham red with blood for years and i think it is time for a change, so your job is to paint the town pink Goodluck ",
+    "uid": "oEhOP"
+  },
+  {
+    "reward": 60,
+    "image": "https://i.pinimg.com/originals/3d/ba/64/3dba64c1ac1969bbb935508c48c29626.jpg",
+    "author": "Pleb",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Stealing the wheels off the Batmobile",
+    "loca": "DC",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Don't get caught by batman for the whole time your their"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You must return with the wheels intact"
+      }
+    ],
+    "budget": 120,
+    "desc": "Ok so your job is simple but by no means easy, we are gonna send you to Gotham for 3 days with a tacking device that is locked on the Batmobile and all you gotta do is steal all of it's wheels. Goodluck you will need it.",
+    "uid": "Xttnq"
+  },
+  {
+    "reward": "Company brand gamer system",
+    "image": "https://thegamer601.files.wordpress.com/2016/05/elli.jpg",
+    "author": "Pleb",
+    "rewardType": "Other",
+    "source": "",
+    "title": "The Gamer",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": 10,
+        "type": "Credits",
+        "value": "finish the tutorial"
+      },
+      {
+        "reward": 10,
+        "type": "Credits",
+        "value": "Reach level 10"
+      },
+      {
+        "reward": 20,
+        "type": "Credits",
+        "value": "Reach level 20"
+      },
+      {
+        "reward": 40,
+        "type": "Credits",
+        "value": "Reach level 40"
+      },
+      {
+        "reward": 60,
+        "type": "Credits",
+        "value": "Reach level 60"
+      },
+      {
+        "reward": 80,
+        "type": "Credits",
+        "value": "Reach level 80"
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Reach level 100"
+      },
+      {
+        "reward": "Mapper (perk) now highlights all dungeons in your current world",
+        "type": "Other",
+        "value": "Beat your first dungeon"
+      },
+      {
+        "reward": "80 credits",
+        "type": "Credits",
+        "value": "Beat 5 dungeon's"
+      },
+      {
+        "reward": "1 tier 7 or below waifu",
+        "type": "Companions",
+        "value": "Beat all dungeons in your current world"
+      },
+      {
+        "reward": 20,
+        "type": "Credits",
+        "value": "Complete your first quest"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Complete 10 quest's"
+      },
+      {
+        "reward": 150,
+        "type": "Credits",
+        "value": "Complete 100 quest's"
+      },
+      {
+        "reward": "30 credits per bug found and reported",
+        "type": "Other",
+        "value": "Find all system bugs"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Due to how the progression of the system works you will be reverted to tier 4"
+      },
+      {
+        "value": "any ability's a possession target may possess will be translated to skills and start at level 1"
+      },
+      {
+        "value": "You can not possess anyone above tier 7"
+      }
+    ],
+    "budget": 240,
+    "desc": "So, I'm sure many of you have heard of the gamer system or even the guild of gamers and due to the rising popularity of them the company has decided to branch out in to this new field, and your gonna be our test dummy. What that means is all of your company purchased ability's will now be translated in to skills that can be levelled up, keep in mind that due to the levelling system all skills will stark at level one and will only be 1 percent as effective as normal but the skills don't have a level cap so put in some elbow grease and you will outclass the original's in no time.\n\nNow on to the more complex features such as the dungeon generator that will randomly spawn themed dungeons all across your local multiverse for you to conquer, or our revamped gacha system that will grant you random waifu's at the cost of special tokens found in dungeon's or as quest rewards. Which brings me on to the final part of our gamer system the quest log, in which you will be granted missions of varying difficulty by a special AI we have created to run the gamer system. \n\nOh and p.s. as this is a new system their will be bugs so please report any you find for a credit reward.",
+    "uid": "BOOQt"
+  },
+  {
+    "reward": "1 IMG Ticket and the Perk [Singularity (Biomorph)] or [Ascended Human] depending on your build",
+    "image": "https://media.discordapp.net/attachments/1080237127603859537/1192401625663418429/500.png",
+    "author": "Dionesia",
+    "rewardType": "Other",
+    "source": "",
+    "title": "A Challange to the Name",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Quick",
+    "objectives": [
+      {
+        "reward": 1,
+        "type": "IMG Tickets",
+        "value": "Kill the \"lizard\" in one hit"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You must have the Transhuman Heritage and at least [Incandescent Ascendancy Machine] to accept this Mission"
+      },
+      {
+        "value": "You must kill The Hard-to-Kill Lizard (SCP-682) by any means available to you"
+      },
+      {
+        "value": "If you are incapable of killing SCP-682, then one of your Retinue members must do it"
+      },
+      {
+        "value": "This Mission is not considered complete if SCP-682 is \"alive\" in some way, including being sealed, thrown into a black hole, left in an completely empty universe (or the gap between universes) and so on"
+      },
+      {
+        "value": "You may admit defeat if you are incapable of permanently putting SCP-682 down in any way and we will take it back off your hands; you will suffer no downsides but you will be unable to accept this Mission again for 3 Months"
+      },
+      {
+        "value": "Successfully Capturing SCP-682 will automatically Sell it and a random TZ SCP will be spawned in its place with the expressed purpose of killing you with no chance for negotiation"
+      }
+    ],
+    "budget": 1500,
+    "desc": "Do you believe yourself superior, now that you have climbed the ladder of Transcension? Well, here's a challenge to keep you going, should you choose to take it.\n\nThe Hard-to-Kill Lizard (SCP-682) is touted as immortal, indestructible and so on. I want to put that to the test, through you. So... Kill it. You may erase it from existence if you are otherwise unable to put it down permanently, but where is the fun in that?\n\nDon't worry about the others; by taking this Mission, SCP-682 will \"spawn\" within n amount of meters of your current location, somewhere with sufficient space to prevent it from no-clipping or spawning on empty space unless you are in outer space with nothing sufficiently solid around you for 0.1AU\nWell, the actual details of it appearing can be arranged with you, the Contractor, but the point is that SCP-682 will come to you, rather than vice versa\n\nIf you are victorious, you will be granted the Capstone perk of Transhumanism, exclusively the Biomorph side to match your existing type. If you already have both Aethermorph and Cybermorph, then you will gain Biomorph via the DLC Perk [Ascended Human] instead to complete the \"set\"\nWe even threw in something extra! Good luck!",
+    "uid": "oLyMm"
+  },
+  {
+    "reward": "Artemis can now grant you and your Retinue members an augmented Falna",
+    "image": "https://media.discordapp.net/attachments/1080237127603859537/1192327423153410068/Screenshot_7.png",
+    "author": "Dionesia",
+    "rewardType": "Other",
+    "source": "",
+    "title": "She Needs a Hero",
+    "loca": "Danmachi",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "Artemis will now consider you her Orion",
+        "type": "Other",
+        "value": "Do it by killing Antares rather than just escaping with the Goddess"
+      },
+      {
+        "reward": "Blessed Talent",
+        "type": "Perks",
+        "value": "After saving Artemis, bring her back to Orario to rebuild the Artemis Familia"
+      },
+      {
+        "reward": "Dickless sexual encounters involving yourself and Artermis will not take away her status as a Virgin Goddess",
+        "type": "Other",
+        "value": "Do it as a girl/female"
+      },
+      {
+        "reward": "Any attempt to Charm (Ability, not seduction) you will instead Charm the caster into wanting a threesome with Artemis",
+        "type": "Other",
+        "value": "Do it as a boy/male"
+      },
+      {
+        "reward": "The Divine Bow Aegis Eclipse (Nasuverse), improved so that only you have no difficulty using it",
+        "type": "Other",
+        "value": "Land the killing blow on Antares yourself"
+      },
+      {
+        "reward": "The \"Arrow\" \"Orion\" is automatically generated for you to use and granted the same growth power as the Hestia Knife",
+        "type": "Other",
+        "value": "Kill Antares without the help of your Retinue"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Save Artemis"
+      }
+    ],
+    "budget": 50,
+    "desc": "It is natural for a Goddess to outlive her Familia but... Not like this. The entire Artemis Familia perished in the fight against a single, powerful, monster as their Goddess was left to watch and, eventually, sacrifice herself for the greater good. \nCall it pity, opportunism or whatever else you'd like, but the \"timely\" arrival of a helping hand is quite useful, no?\n\nShould you accept this Mission, you will be dropped just outside the lair of the great monster Antares at the tail end of its fight against the Artemis Familia. If you do not possess some form of time manipulation, it's impossible by design to save anyone but the Goddess herself.\nDon't let that stop you, though. Save Artemis and Artemis will gain the ability to grant you and your Retinue members an augmented Falna that might solve some of the problems your fellow Contractors find with the system.\n\nThe augmented Falna works on the simple principle that, once at least three stats have reached a value of 999 you may trigger a Level Up via your Smart Device. \n>If a Holder of this Falna is T5 or higher, Monsters originating from Floor 0-9 grant 1 Stat point (That you can apply freely between the five fundamental stats via Smart Device) per kill, which increases by 1 for every 10 Floors (10-19 = 2 Points, 40-49 = 5, etc.) until they reach Level 10, after which this bonus no longer applies. Monster Rex / Floor Bosses grant x5 Stats and Black variants grant x2 (This stacks, giving you 30 Stat points per Black Goliath kill)\n>Do keep in mind that most Adventurers have dubiously impressive feats in the greater scope, so being T6 or below already nearly places you on par with the likes of even Ottar himself.\n>If a Holder of this Falna is T8 or higher and is not already considered a Deity, they may also temporarily \"activate\" a Deity classification exclusive to the Dungeon that will trigger the spawning of Black Monster variants as the Dungeon tries even harder to kill them. Why would you want this? Well, combat practice of course! If regular monsters aren't a challenge, then maybe you can find more engagement in fighting the stronger variants?",
+    "uid": "EmpKK"
+  },
+  {
+    "reward": 500,
+    "image": "https://i.pinimg.com/736x/79/74/41/797441863f33544a639674a46e6b8ec2.jpg",
+    "author": "Pleb",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "DadMight-DXD",
+    "loca": "High School DxD",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "Educational Talent and 100 credits",
+        "type": "Other",
+        "value": "You must raise her to tier 6 before canon"
+      },
+      {
+        "reward": 150,
+        "type": "Credits",
+        "value": "You must raise her to tier 7 before canon"
+      },
+      {
+        "reward": 200,
+        "type": "Credits",
+        "value": "You must raise her to tier 8 before canon"
+      },
+      {
+        "reward": 250,
+        "type": "Credits",
+        "value": "You must raise her to tier 9 before canon"
+      },
+      {
+        "reward": 400,
+        "type": "Credits",
+        "value": "You must raise her to tier 10 before canon"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "raise her to be stronger, happier and smarter then her canon counterpart"
+      },
+      {
+        "value": "keep her safe"
+      },
+      {
+        "value": "You can not power swap Asia"
+      }
+    ],
+    "budget": 400,
+    "desc": "You will arrive 15 years before canon with a baby Asia Argento in your arms. in this mission you must raise her as your daughter and make her stronger, smarter and happier then her canon counterpart by the time canon arrives.\n ",
+    "uid": "GurXk"
+  },
+  {
+    "reward": "Splatoon's ink-based weaponry will slow down and seal the powers of people covered in ink, in relation to how much of their body is covered in ink. (i.e. 100% coverage would make a person immobile and powerless.) Alternatively, 40 credits.",
+    "image": "https://i.imgur.com/tnHGgc2.png",
+    "author": "EmiSkye",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Break 'Em Up",
+    "loca": "Splatoon",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "Performance Talent and Talent Sharing for it, or 15 credits.",
+        "type": "Perks",
+        "value": "Split up Marie and Callie"
+      },
+      {
+        "reward": "Alluring Whisper, or 15 credits.",
+        "type": "Perks",
+        "value": "Split up Peal and Marina"
+      },
+      {
+        "reward": "You and your (current+future) retinue become able to swim gracefully and breathe underwater. Alternatively, 25 credits.",
+        "type": "Other",
+        "value": "Split up Deep Cut (Shiver, Frye, and Big Man)"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Method of separation must be permanent, or at least likely to take over a year to undo."
+      },
+      {
+        "value": "For Deep Cut, all three members must be separated. (i.e., you can't take Big Man and leave Shiver and Frye together.)"
+      }
+    ],
+    "budget": 0,
+    "desc": "The world of Splatoon is known for its colorful inks, it's fresh and popping cultural scene, and for the paired announcers, often musical duos, who provide commentary and entertainment. The latter is what the focus of this mission will be on.\n\nBreak up those pairs or groups. They need to split up and be unassociated with each other by the end of the mission. This can be done through murder, by capturing a member of the group, or otherwise causing a schism between them. Note that capturing all members of a group will count as a failure, as you're keeping them together in capture, unless you immediately sell some of them.\n\nThe mission will be considered complete when any of the three \"Additional Objectives\" are completed, though it will remain open if you wish to attempt more than one.",
+    "uid": "qLkeY"
+  },
+  {
+    "reward": "5 Credits and Clone of Tiana",
+    "image": "https://i.pinimg.com/736x/e0/6b/1f/e06b1f96dfaab41eb609bb080c68c5c3.jpg",
+    "author": "Tactition101",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Turning Dr. Facilier to Dr. Frogier",
+    "loca": "Disney (Princess andthe Frog)",
+    "lewd": false,
+    "scope": "Quick",
+    "objectives": [
+      {
+        "reward": 5,
+        "type": "Credits",
+        "value": "Why don't you give the local Tiana a hand with her dream of opening a restaurant? Either give her enough funds to buy a building and everything else needed for startup or build a building for her to use yourself that has the proper equipment pre installed."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Dr. Facilier's change must be permanent. No princess kiss or other restorative means should work."
+      }
+    ],
+    "budget": 0,
+    "desc": "After watching The Princess and the Frog someone believes the Dr. Faciliers of the multiverse ALL deserve karma for trying to take over New Orleans, even the ones where Naveen doesn't show up to kick off the plot of the movie. So here's the deal Contractor, you are going to be inserted into one such New Orleans, where you will track down the not so good Doctor and turn him into a frog. Simple right? Just watch out for that animated shadow of his.",
+    "uid": "QCCfD"
+  },
+  {
+    "reward": "Half of characters sell value in credits",
+    "image": "https://i.pinimg.com/736x/66/d5/80/66d580a1fe5607f5148b2f31c23cd34e.jpg",
+    "author": "Pleb",
+    "rewardType": "Other",
+    "source": "",
+    "title": "The Johnny cage special",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Quick",
+    "objectives": [],
+    "conditions": [
+      {
+        "value": "It must be a direct hit to the nuts"
+      },
+      {
+        "value": "The hit must be painful to the character to count"
+      }
+    ],
+    "budget": 80,
+    "desc": "K, so this job is pretty simple all you gotta do is punch a main character in the nuts ( They need the protagonist tag to count) and you get half their sell value as a reward. This can be repeated as many times as you please but you only get paid once per main character you hit. ",
+    "uid": "OoGDj"
+  },
   {
     "reward": "1000 credits and the perk (Trajectory. Agreement.)",
     "image": "https://pm1.aminoapps.com/6245/8ffeed550040400681e7212c54c8b68a632cd807_00.jpg",
@@ -5038,12 +6599,13 @@
     "uid": "XOWvR"
   },
   {
-    "reward": "60 Credits or a Clone of (1) non-King memeber of Rias' Peerage",
+    "reward": "60 Credits or a Clone of (1) non-King member of Rias' Peerage",
     "image": "https://upload.wikimedia.org/wikipedia/commons/0/02/Drill_sergeant_screams.jpg",
     "author": "Tactition101",
     "rewardType": "Other",
     "source": "",
     "title": "Paranormal Boot Camp",
+    "uid": "ybpxW",
     "loca": "High School DxD",
     "lewd": false,
     "scope": "Quick",
@@ -5182,7 +6744,7 @@
         "value": "No giving Rias new members for her Peerage. She must work with who she has."
       },
       {
-        "value": "No providing 'super weapons' like Zords, Gundams, invincible armore, etc. Rias must be able to win through TRAINING rather than just being given unbeatable equipment. (Though nothing's stopping you from providing SOME gear for them to use from then on.)"
+        "value": "No providing 'super weapons' like Zords, Gundams, invincible armor, etc. Rias must be able to win through TRAINING rather than just being given unbeatable equipment. (Though nothing's stopping you from providing SOME gear for them to use from then on.)"
       },
       {
         "value": "No joining Rias in the Rating Game. Your only contribution is the training you provided."
@@ -5191,9 +6753,8 @@
         "value": "No indirect interference with the other Peerage. While the thought of Riser being stuck on a toilet for hours on the day of the match is a great one, Rias' Peerage has to be able to truthfully win the Rating Game Fair and Square."
       }
     ],
-    "budget": 0,
-    "desc": "Rias' Peerage will be taking on Riser's Peerage in ten days. Your Mission is simple, turn her and her people into a fighting force that can stomp that flaming chicken and his harem flat.",
-    "uid": "ybpxW"
+    "budget": 100,
+    "desc": "Rias' Peerage will be taking on Riser's Peerage in ten days. Your Mission is simple, turn her and her people into a fighting force that can stomp that flaming chicken and his harem flat."
   },
   {
     "reward": "300 Credits and Your Continued Living",
@@ -23663,7 +25224,7 @@
     "rewardType": "Other",
     "source": "",
     "title": "History's Strongest Grappler",
-    "loca": "Fusion of: History's Strongest Disciple Kenichi & Baki The Grappler",
+    "loca": "Fusion of: History's Strongest Disciple Kenichi & Baki the Grappler",
     "lewd": false,
     "scope": "Standard",
     "objectives": [

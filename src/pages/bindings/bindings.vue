@@ -27,7 +27,7 @@
     </Note>
     <Desc v-if="activeType === 'Tantric Arts'" class="p-2 mb-4 max-w-4xl bg-warm-gray-200 dark:bg-warm-gray-800 mx-auto" :desc="tantricDesc" />
 
-    <div v-if="!legacyMode && !flags.noBindings" class="w-max mx-auto mb-2 flex gap-2">
+    <div v-if="!legacyMode && !flags.noBindings && binding.length" class="w-max mx-auto mb-2 flex gap-2">
       You currently have [<strong>{{ binding[0].title }}</strong>] <Button size="Small" bg-color="bg-red-600" label="Delete" @click="sellAllBindings" />
     </div>
 
@@ -128,7 +128,6 @@ import PerkCard from '~/components/cards/PerkCard.vue'
 import GenericPerkCard from '~/components/cards/perkCards/GenericPerkCard.vue'
 import { useFullPerks } from '~/logic/localPerks'
 import { confirmDialog } from '~/logic/dialog'
-import { symbioteQueen, symbioteUnits, alternativeTheming } from '~/data/symbiote'
 
 const { binding, flags, settings, legacyMode } = useStore()
 const [showElements] = useToggle()
@@ -150,16 +149,7 @@ const bindingsDLC = computed(() => !settings.value.allChosenAuthors[0]
   : [])
 
 const bindingByType = computed(() => {
-  const res = {
-    // 'Stamp': [] as PerkFull[],
-    // 'Jewelry': [] as PerkFull[],
-    // 'Ritual': [] as PerkFull[],
-    // 'Symbiote': [] as PerkFull[],
-    // 'Shroud': [] as PerkFull[],
-    // 'Hypnosis App': [] as PerkFull[],
-    // 'Tantric Arts': [] as PerkFull[],
-    // 'Other': [] as PerkFull[],
-  } as Record<string, PerkFull[]>
+  const res = { } as Record<string, PerkFull[]>
 
   bindings.value
     .filter(perk => settings.value.hideLegacy ? !perk.legacy : true)

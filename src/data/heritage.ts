@@ -176,7 +176,7 @@ heritages.push({
 heritages.push({
   uid: 'VKWW1',
   title: 'Double Dragon',
-  image: 'https://cdn.discordapp.com/attachments/925963686433132644/1008154966369771571/Screenshot_4.jpg',
+  image: 'https://cdn.statically.io/gh/Om1cr0n/cat_thumb/main/docs/thumbs/ZpJjo.jpg',
   tree: 'Dragon',
   category: 'Heritage',
   type: 'Self',
@@ -319,11 +319,11 @@ heritages.push({
   category: 'Heritage',
   type: 'Self, Party, Lure',
   cost: 100,
-  whitelist: ['Bling, Booty, and Chests', 'Pirate Armada'],
+  whitelist: ['Bling, Booty, and Chests'],
   desc: `
   <p>There’s always a bigger fish. You and your crew may, with some difficulty depending on the success of your hoarding, stuff any exaggerated proportions (no matter the source) into clothing that should by all rights be too small for it. The appearance of nearly bursting out is optional and will allow a Love Spot on that site to function even through the covering, albeit at a lesser level. Releasing these ‘assets’ significantly amplifies the effects of any Lures on all valid targets that witness it for the next hour.</p>
   <p>Take one copy each of Information Defense and Creature Defense for free. This perk immediately raises a contractor’s effective tier at step 1b to 6.</p>
-  <p>Additionally, you may call upon and summon a kaiju-scale creature once every 24 hours. You do not have specific control of the appearance, type, or actions of the creature, though you may set rough guidelines. Additionally, if you defeat this monster or any other monster larger than your current Catch-A-Ride, you can integrate it into said Catch-A-Ride. A vehicle may only have one monster integrated into it at a time. This affects both the vehicle’s aesthetics and the aesthetics and morphology of its crew, as well as providing minor abilities based on the monster. A sandworm might allow a sailing ship to cross desert sands as naturally as the sea. Individuals that are crew of multiple infused ships may have multiple traits. Once per 24 hours, an integrated monster may be re-released into the world for 1 hour, much like summoning a random kaiju-scale creature. However, while released, the crew loses any abilities related to that monster.</p>
+  <p>Additionally, you may call upon and summon a kaiju-scale creature once every 24 hours. You do not have specific control of the appearance, type, or actions of the creature, though you may set rough guidelines. If you defeat this monster, or any other monster larger than your current Catch-A-Ride, you can integrate it into that vehicle. Only one monster may be integrated into any one vehicle at a time. This affects both the vehicle’s aesthetics and the aesthetics and morphology of its crew, as well as providing minor abilities based on the monster. A sandworm might allow a sailing ship to cross desert sands as naturally as the sea. Individuals that are crew of multiple infused ships may have multiple traits. Once per 24 hours, an integrated monster may be re-released into the world for 1 hour, much like summoning a random kaiju-scale creature. However, while released, the crew loses any abilities related to that monster.</p>
   `,
 })
 heritages.push({
@@ -338,7 +338,7 @@ heritages.push({
   category: 'Heritage',
   type: 'Lure',
   cost: 100,
-  whitelist: ['Pirate Armada', 'And a Bottle of Rum'],
+  whitelist: ['And a Bottle of Rum'],
   desc: `
   <p>You have a natural charm that draws in economic, religious, military, and political leaders as well as the upper echelons of society and their relatives. They will find themselves drawn to you, either for your power or uses in their plans. This effect is primarily based on interaction, and is stronger the more direct the interaction and the higher the status and power of the target. Take Blessed Talent and one copy each of Mind Defense and Information Defense for free.</p>
   <p>You additionally gain the ability to form contracts with rulers, commonly known as Letters of Marque. These letters expect fealty to the ruler commonly as a mercenary, additionally they come with requirements. You will often be required to attack their enemies and to not attack the ruler’s faction. Once you obtain a letter of marque, those who work for, are part of, or merely identify as part of that ruler’s faction will find ways to justify not attacking or prosecuting you. They are more likely to leave you be, as long as you follow through with the requirements of the contract. The more loyal they are to the faction, the stronger the compulsion.</p>
@@ -397,7 +397,7 @@ heritages.push({
   category: 'Heritage',
   type: 'Self, Lure',
   cost: 150,
-  whitelist: ['Letter of Marque', 'Tortuga'],
+  whitelist: ['Letter of Marque', 'Irresistible Booty'],
   desc: `
   <p>The ship always needs a Cap’n. Upon being slain, provided you have a crew member who has agreed to carry on your legacy or you were killed with active hostile intent, your legacy, spirit, memories, and self will be passed along. This will preferentially target your designated heir, but you can instead target your killer. If it’s your designated heir, you functionally Substitute into the individual. With a designated heir, this will happen over the course of 24 hours, whereas time to full possession for hostile actors varies, generally taking 168+ hours. If the target is killed prior to your full control, the effect does not activate again.</p>
   <p>Take Communication Talent and one copy of Fatality Defense for free. This perk immediately raises a contractor’s effective tier at step 1b to 6.</p>
@@ -417,12 +417,11 @@ heritages.push({
   cost: 70,
   whitelist: ['Irresistible Booty', 'Tortuga'],
   desc: `
-  <p>Everyone has their price: press-ganging, shanghaiing, and contracts are all just ways of finding it. If an individual is meaningfully overcome and taken onto your ship, they have the beginnings of a demi-tattoo appear on them and are temporarily considered part of that ship’s crew. Until the ship next enters port, the longer they spend contributing to the ship’s functioning, the more appealing they will find the idea of remaining aboard your ship and joining the crew on a permanent basis. This effect caps after roughly two weeks (200 working hours).</p>
+  <p>Everyone has their price: press-ganging, shanghaiing, and contracts are all just ways of finding it. Take one copy of Corruption Defense for free. If an individual is meaningfully overcome and taken onto your ship, they have the beginnings of a demi-tattoo appear on them and are temporarily considered part of that ship’s crew. Until the ship next enters port, the longer they spend contributing to the ship’s functioning, the more appealing they will find the idea of remaining aboard your ship and joining the crew on a permanent basis. This effect caps after roughly two weeks (200 working hours).</p>
   <p>Once your ship arrives in port, you may offer your captive or guest the chance to stay. If the captive has a strong will, emotional connections outside the ship, or a rigid, law-abiding personality, they have a higher chance of refusing the offer. All effects of this perk on the captive will then shatter and you have to start again from the beginning.</p>
   <p>If, instead, the captive has a weak will, thirst for adventure, feelings of being chained by duty and obligations if they return home, or are currently feeling the effects of active Lures, they are more likely to accept the offer and join your crew, at which point they are instantly captured. Alternatively, formal contracts to act as a member of the crew of one of your ships, even by people who were not previously your captives, will also result in instant captures.</p>
-  <p>All crew members who are assigned roles on a ship will feel a strong compulsion to play that role. This includes both standard roles such as quartermaster, shipwright, chef, gunner, or navigator, and entirely fictional ones such as service maid, ship bedwarmer, sea witch, or prow ornament.</p>
-  <p>Additionally, a crew member may be assigned to become the spirit of a Catch-A-Ride. This acts like Third-Party Riggings and I’m on a Boat for the designated crew member.</p>
-  <p>Finally, take one copy of Corruption Defense for free.</p>
+  <p>All crew members who are assigned roles on a ship will feel a strong compulsion to play that role. This includes both standard roles, such as quartermaster, shipwright, chef, gunner, or navigator, and entirely fictional ones such as service maid, ship bedwarmer, sea witch, or prow ornament.</p>
+  <p>Finally, a crew member may be assigned to become the spirit of a Catch-A-Ride. This acts like Third-Party Riggings and I’m on a Boat for the designated crew member.</p>
   `,
 })
 heritages.push({
@@ -711,7 +710,7 @@ heritages.push({
   title: 'Distributed Intellectual Devotions',
   category: 'Heritage',
   tree: 'Transhuman',
-  image: 'https://cdn.discordapp.com/attachments/925963686433132644/1017136465555226684/3dfd6c0d21b4a3780870eb57aacdb5c3.jpg',
+  image: 'https://cdn.statically.io/gh/Om1cr0n/cat_thumb/main/docs/thumbs/k0ztT.jpg',
   type: 'Self',
   cost: 60,
   freebies: {
@@ -819,7 +818,7 @@ heritages.push({
     Biomorph: `<p><b>Biomorph</b>: Will makes reality, and your will asserts even in the void. The weight of your existence burrows into the very substrate of the zeitgeist and the psionoscape.</p>
     <p>Any instance of your genetic code may act as an anchor for a mind. This includes any Symbiote ecology or entities or structures generated by Jungle or Primal Shrouds. Your psionic energy may be converted into adaptive biomass and vice versa.</p>
     <p>Any individuals that have been affected by your Philosopher's Transmortality Engine may directly draw upon your power to achieve feats outside of their own capabilities.</p>
-    <p>By gathering an amount of Devotion Points equivalent to the starting budget of a universe, you may reach a critical mass of psionic density, embedding yourself into the universe, anchoring your consciousness into local spacetime and capable of drawing power from it and propagating outwards at light speed.  You are capable of generating Dungeon structures anywhere within your psionic reach by devoting portions of your energy to such, functionally using parts of your tier value as Devotion Points</p>
+    <p>By gathering an amount of Devotion Points equivalent to the starting budget of a universe on Intensity 1, you may reach a critical mass of psionic density, embedding yourself into the universe, anchoring your consciousness into local spacetime and capable of drawing power from it and propagating outwards at light speed.  You are capable of generating Dungeon structures anywhere within your psionic reach by devoting portions of your energy to such, functionally using parts of your tier value as Devotion Points.</p>
     <p>If you possess an appropriate Shroud, any instance of your genetic code, from a spore, to even cells not completely broken down in a creature’s digestive tract count as contact with your Shroud.</p>
     `,
     Cybermorph: `<p><b>Cybermorph</b>: All of reality is information, and you are both author and reader. The distinction between reality and simulation has begun to blur through the sheer weight and density of simulations you are able to bring to bear.</p>

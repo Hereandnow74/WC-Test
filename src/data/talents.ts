@@ -61,7 +61,7 @@ talents.push({
   uid: 'nvlMp',
   title: 'Everlasting Talent',
   category: 'Talent',
-  image: 'https://cdn.discordapp.com/attachments/925963686433132644/1066349990265487461/3da894ddd385056564070cdd094d7990.png',
+  image: 'https://cdn.statically.io/gh/Om1cr0n/cat_thumb/main/docs/thumbs/yUENx.jpg',
   cost: 10,
   desc: `You live. You have weak immortality and eternal youth. If you are older than the peak age for your species (25 years for humans), your body is reset to that point; otherwise you'll continue to physically mature to that point but not experience any aging afterwards. This will not interfere with deliberate age-manipulation effects from within your retinue, whether from the company’s transformation suite or third-parties. If your maturation process had been halted by any means, it will now continue until your peak age. The "Fog of Ages," including atrophy of unused skills, will never affect you.
   <p>This perk will not make you unkillable or grant any form of auto-resurrection. It just means you won’t grow feeble and die of “natural causes,” so don’t try anything foolish. The benefits of this perk will always apply to your purchased and captured subjects, but you can disable it for specific individuals if you wish.</p>
@@ -272,10 +272,10 @@ talents.push({
   complex: 'target_f',
   anything: 'Power Name',
   desc: `
-<p>Sometimes you just want to copy a powerset, either a generic one or a specific character’s. This perk lets you do just that. Only Imaginary Tier abilities, abilities that originated in other CYOAs, and abilities found elsewhere in this catalog are not eligible. The exact capabilities at the time of purchase will be scaled to Tier 4. This perk is not necessary for any abilities that your subjects might grant you via surgery, ritual, or other means. Templates for characters who are only purchasable in sets must be bought separately. Templates for alternative versions of the same character must also be bought separately, unless otherwise specified. Characters who are represented as Specific Waifu Perks may be purchased as templates for individuals who are not eligible for the actual perks, whether natively or with Power Swap, and follow any mutual exclusivity rules stated in the perk descriptions.</p>
+<p>Sometimes you just want to copy a powerset, either a generic one or a specific character’s. This perk lets you do just that. Only Imaginary Tier abilities, abilities that originated in other CYOAs, and abilities found elsewhere in this catalog, including the loadouts of other contractors, are not eligible. The exact capabilities at the time of purchase will be scaled to Tier 4. This perk is not necessary for any abilities that your subjects might grant you via surgery, ritual, or other means. Templates for characters who are only purchasable in sets must be bought separately. Templates for alternative versions of the same character must also be bought separately, unless otherwise specified. Characters who are represented as Specific Waifu Perks may be purchased as templates for individuals who are not eligible for the actual perks, whether natively or with Power Swap, and follow any mutual exclusivity rules stated in the perk descriptions.</p>
 <p>All templates come with a skill framework, identical in principle to the ones that “early” captures receive to ensure they learn their missing abilities. This applies to technological abilities as well. Iconic equipment is included with this perk, but may see its parameters and functionality locked until you’re capable of using it safely or have trained enough with the more basic features.</p>
 <p>After the skill framework runs out and you’ve achieved the typical heights of the template, the appropriate Basic Talent will let you continue to train beyond that point, as described in the opening of that section. Any familiars that would normally come with a template (i.e. are included with a purchase or Power Swap) must be purchased, captured or otherwise spawned separately.</p>
-<p>Racial templates (Kryptonian, Metallic Dragon, Newtype, Saiyan, etc.) have additional rules that distinguish them from other kinds. Unlike Advanced Tempest Runes (Body), a living, natural example of that template is not required for your selection with this perk. Racial templates are limited to one per individual and will overwrite the individual’s original race for all purposes. The creation of hybrids requires Advanced Tempest Runes (Hybrid) or a geneticist, biomanipulator, or polymorpher.</p>
+<p>Racial templates (Kryptonian, Metallic Dragon, Newtype, Saiyan, etc.) have additional rules that distinguish them from other kinds. Unlike Advanced Runes: Body, a living, natural example of that template is not required for your selection with this perk. Racial templates are limited to one per individual and will overwrite the individual’s original race for all purposes. The creation of hybrids requires Expert Runes: Hybrid or a geneticist, biomanipulator, or polymorpher.</p>
 <p>Other powers that are only available to those who were born with them, such as hereditary magic systems, may be acquired through this perk at any time, just as with Added Potential.</p>
 <p>Abilities that are generic in their source but are expressed uniquely, such as Sacred Gears, Semblances, Academy City Esper powers, Quirks, or the results of the X-gene, can be unique to you or copied from a specific character. You may not use company means to acquire more than one of each type of ability at a time.</p>`,
 })
@@ -290,8 +290,8 @@ talents.push({
 //   anything: 'Race Name',
 //   special: 'Chargen only (self). Moment of purchase only (retinue). Must be repurchased for each use.',
 //   desc: `
-//   <p>Racial templates (Kryptonian, Metallic Dragon, Newtype, Saiyan, etc.) have additional rules that distinguish them from other kinds. Templates that align with Heritages will not be equivalent to their counterparts. Unlike Advanced Tempest Runes (Body), a living, natural example of that template is not required for your selection with this perk. This perk may not be applied to your captures, nor to purchase Tier X racial templates. Your starting version of any racial template will be limited to Tier 4; you can train it up to its natural state in the same ways as other Meta-Talents.</p>
-//   <p>Purchases of this perk are limited to one per individual and will overwrite the individual’s original race for all purposes. Advanced Tempest Runes (Hybrid) or a geneticist, biomanipulator, or polymorpher of your own are required for creating hybrids.</p>
+//   <p>Racial templates (Kryptonian, Metallic Dragon, Newtype, Saiyan, etc.) have additional rules that distinguish them from other kinds. Templates that align with Heritages will not be equivalent to their counterparts. Unlike Advanced Runes: Body, a living, natural example of that template is not required for your selection with this perk. This perk may not be applied to your captures, nor to purchase Tier X racial templates. Your starting version of any racial template will be limited to Tier 4; you can train it up to its natural state in the same ways as other Meta-Talents.</p>
+//   <p>Purchases of this perk are limited to one per individual and will overwrite the individual’s original race for all purposes. Advanced Runes: Hybrid or a geneticist, biomanipulator, or polymorpher of your own are required for creating hybrids.</p>
 // `,
 // })
 
@@ -397,7 +397,7 @@ defenses.push({
   whitelist: ['Body Tune-Up'],
   desc: `
 <p>You have protection from all diseases, poisons, and targeted radiation. Lethal or crippling afflictions will leave you sick enough to most likely stay in bed, unless you really have to move - because you're attacked, for example. Anything short of that will leave you weakened and uncomfortable, but functional.</p>
-<p>Additionally, you get an extra one-time full heal, identical to the one offered by Body Tune-Up, with each purchase of this Defense. These are counted separately for each member of your retinue, including yourself and anyone acquired after the purchase of this Defense. These may be kept for future use.</p>
+<p>Additionally, you get an extra one-time full heal, identical to the one offered by Body Tune-Up, with the first purchase of each level of this Defense. These are counted separately for each member of your retinue, including yourself and anyone acquired after the purchase of this Defense. These may be kept for future use.</p>
 <p>This perk still does not protect against injury or provide any sort of healing factor; if you want one, you’ll have to find it yourself.</p>`,
 })
 
@@ -533,7 +533,7 @@ defenses.push({
   cost: 50,
   whitelist: ['Mind Defense', 'Polymorph Defense', 'Wyldscape Defense'],
   needed: 1,
-  desc: 'Metaphysically corruptive effects, whether environmental or targeted in nature, are slower to affect you, with diminishing returns the farther the corruption would take you from your fundamental self. After they wear off, you may choose to retain effects that would normally be permanent (plus any attendant transformations, if you have those defenses) as a sort of superpowered evil side, or a separate alter ego to converse with. These remain fundamentally you, just a different version of you seen through a different lens. Other Defenses such as Body, Stress, Addiction, Mind, and Soul may prove extremely useful, depending on the specifics of such a scenario.',
+  desc: 'Metaphysically corruptive effects, whether environmental or targeted in nature, are slower to affect you, with diminishing returns the farther the corruption would take you from your fundamental self. After they wear off, you may choose to retain effects that would normally be permanent (plus any attendant transformations, if you have those defenses) as a sort of superpowered evil side, or a separate alter ego to converse with. These remain fundamentally you, just a different version of you seen through a different lens. Other Defenses such as Body, Stress, Addiction, Mind, and Drain may prove extremely useful, depending on the specifics of such a scenario.',
 })
 
 defenses.push({
@@ -738,7 +738,9 @@ perks.push({
   image: 'https://i.ibb.co/DD836zP/We-Will-Meet-Again.jpg',
   cost: 15,
   whitelist: ['Exit Stage Left'],
-  desc: 'You may freely return to previously-visited worlds using the Exit Stage Left app. All worlds you’ve visited since the start of your journey, including your Pocket Apartment if you have one, will be listed with their danger ratings. (Pocket Apartment does not have a danger rating.) You can sort the list alphabetically, by danger, or by your first or most recent visits. Your return portal will always be within 2 km of its last location, at the least dangerous point in that radius. If you have not purchased Pursued by a Bear, Exit Stage Left’s basic functionality will now display the next world’s danger rating. Time is assumed to pass at the same rate in every world you visit, including your Pocket Apartment, unless you explicitly use magical, technological, or other means of time travel or dilation.',
+  desc: `You may freely return to previously-visited worlds using the Exit Stage Left app. All worlds you’ve visited since the start of your journey, including your Pocket Apartment if you have one, will be listed with their danger ratings. (Pocket Apartment does not have a danger rating.) You can sort the list alphabetically, by danger, or by your first or most recent visits. Your return portal will always be within 2 km of its last location, at the least dangerous point in that radius. If you have not purchased Pursued by a Bear, Exit Stage Left’s basic functionality will now display the next world’s danger rating. Time is assumed to pass at the same rate in every world you visit, including your Pocket Apartment, unless you explicitly use magical, technological, or other means of time travel or dilation.
+  <p>This perk also enables travel to any world that any of your subjects have visited personally, even if you haven’t been there yourself. This often occurs when subjects have their own method of multiversal travel, or were stolen subjects in PvP or purchased Slightly Used. For inter-contractor safety, the latter two cases will not permit travel to the exact parallels that their previous owners captured, sent, or brought them to. Instead, they will unlock new instances of each world visited. After the previous owner sells a subject, we take a snapshot of the world as it is the next time that none of the previous retinue are present in that world, then copy that state to create a new instance for your use. Without Slightly Used or Yoink, all purchased subjects have only been to two worlds: the world you bought them in and the factory where they were made. Don’t bother trying to go there. It’s employees-only.</p>
+  `,
 })
 
 perks.push({
@@ -856,9 +858,8 @@ perks.push({
 
 // Generic Waifu Perks
 export const genericDesc = `
-<p>Upgrades, downgrades, and other premium options for your waifus are available in this and the next section. If your Origin choice is compatible with a Waifu Perk of any kind, you can buy it for yourself, even in a starting build. (If you have Substitute and apply a Waifu Perk to yourself, the perk-modified cost of your target cannot exceed 20% of your intensity-modified budget. This limitation only applies at chargen.) Unlike other purchased abilities, your waifus do not lose access to waifu perks if you die.</p>
-<p>If a Waifu Perk is listed with a tier rating, its price will be affected by the No Bindings discount, if you qualify for it. If you already qualify for Mirage Master’s regular discount, it cannot be discounted a second time. Waifu Perks that lack tier ratings are not affected by the No Bindings Discount.</p>
-<p>Generic waifu perks may be purchased more than once and applied to any waifu or husbando that qualifies. Specific waifu perks, however, may only be purchased once unless stated otherwise, even if multiple waifus qualify. If you give a waifu her associated perk using in-universe means, you’ll earn the difference in capture points between her old tier and her new tier. If the upgraded waifu is a Tier X, you instead earn a single Tier X ticket. All specific waifu perks are sorted by source medium.</p>`
+<p>Upgrades, downgrades, and other premium options for your waifus are available in this and the next section. If your Origin choice is compatible with a Waifu Perk of any kind, you can buy it for yourself, even in a starting build. (If you have Substitute and apply a Waifu Perk to yourself, the perk-modified cost of your target cannot exceed 20% of your intensity-adjusted budget. This limitation only applies at chargen.) Unlike other purchased abilities, your waifus do not lose access to waifu perks if you die.</p>
+<p>Generic waifu perks may be purchased more than once and applied to any waifu or husbando that qualifies. Specific waifu perks, however, may only be purchased once unless stated otherwise, even if multiple waifus qualify. If you give a subject their associated perk using in-universe means - “earning” the perk - you’ll earn the full capture value for the new tier, according to your intensity. This includes IMG as appropriate. All specific waifu perks are sorted by source medium.</p>`
 // #endregion
 
 // #region Generic Waifu Perks
@@ -872,7 +873,7 @@ genericPerks.push({
   cost: 1,
   whitelist: ['Directly in Companions'],
   special: 'Use directly in companions. Cost 20% more. Chargen only. Not available in Gauntlet PvP.',
-  desc: `Your purchased subject is actually a local capture from your starting world. They are teleported to your starting location and Bound (or not) the same as all the other subjects you purchased. You may purchase this perk once for each purchased subject who happens to be from your starting world. You may not apply this perk to dead targets, or any valued at more than 20% of your intensity- adjusted starting budget, after accounting for any waifu perks applied at chargen (including Power Swap).
+  desc: `Your purchased subject is actually a local capture from your starting world. They are teleported to your starting location and Bound (or not) the same as all the other subjects you purchased. You may purchase this perk once for each purchased subject who happens to be from your starting world. You may not apply this perk to dead targets, or any valued at more than 20% of your intensity- adjusted starting budget, after accounting for any waifu perks applied at chargen (excluding Power Swap). Note that weaponized use of this perk can potentially lower a world’s Danger Rating and, in turn, your starting budget.
   <p>If you are a Drop-in or Walk-in and start in a new world, individuals from your homeworld may be dragged along and inducted into your retinue using this perk. If you purchase this together with Extra or Substitute, the relevant subjects will all have been brought to your starting location by fate or coincidence, not teleportation.</p>
   `,
 })
@@ -1041,7 +1042,7 @@ genericPerks.push({
   category: 'Generic',
   requires: 'Any Keyblade wielder',
   complex: 'target',
-  image: 'https://cdn.discordapp.com/attachments/925963686433132644/1033791989826727956/d3jfqpd-7d7a16a8-8d1e-4e12-b2dc-9457daabb97e.jpg',
+  image: 'https://cdn.statically.io/gh/Om1cr0n/cat_thumb/main/docs/thumbs/zaP5b.jpg',
   cost: 1000,
   desc: `
   The Origin of Keyblades, the Ⲭ-Blade is the companion to the True Kingdom Hearts, and the only blade which can open its door. With this perk, your Keyblade wielding character (yourself included, if you have a Keyblade) can now summon the legendary blade itself. With it, you can call upon both its powers and the powers of Kingdom Hearts itself by summoning it. 
@@ -1080,7 +1081,7 @@ genericPerks.push({
   requires: 'Any Date A Live spirit',
   complex: 'target',
   cost: 40,
-  image: 'https://cdn.discordapp.com/attachments/925963686433132644/1033792517285609612/ddquv43-e31deade-e61e-46bc-ade1-d6f4d80a5594.png',
+  image: 'https://cdn.statically.io/gh/Om1cr0n/cat_thumb/main/docs/thumbs/L1ex5.jpg',
   desc: 'The Spirit can now enter her Inverse Form, greatly increasing her strength and changing her Angel into a Demon King. The Spirit will remain in full control of herself. This perk may be applied to any Spirit from Date A Live, including those who lack a canonical Inverse Form or aren’t listed in the catalog as Spirits. This perk is free if you capture the Spirit while she’s in her Inverse Form, or if she unlocks it herself by force.',
 })
 
@@ -1129,7 +1130,7 @@ genericPerks.push({
   category: 'Generic',
   requires: 'any Monster Girl Encyclopedia Greenworm',
   complex: 'target',
-  image: 'https://cdn.discordapp.com/attachments/925963686433132644/1033793382444707871/Screenshot_2.png',
+  image: 'https://cdn.statically.io/gh/Om1cr0n/cat_thumb/main/docs/thumbs/RTVzw.jpg',
   cost: 5,
   desc: `
 <p>The Greenworm’s youthful appearance comes from her nature as the larval forms of Papillon, a butterfly mamono. This perk skips the natural maturation process, immediately converting the target Greenworm into a Papillon. All Greenworms qualify for this perk, whether they’re naturally- born or converted from another race by natural means, Power Swap, or Template Stacking.</p>`,
@@ -1141,7 +1142,7 @@ genericPerks.push({
   category: 'Generic',
   requires: 'any Monster Girl Encyclopedia Lesser Succubus',
   complex: 'target',
-  image: 'https://cdn.discordapp.com/attachments/925963686433132644/1033793960184926218/yande.re_907602_sample_devil_horns_lilim_monster_girl_encyclopedia_monster_girl_encyclopedia_no_bra_pointy_ears_veralde_wings.jpg',
+  image: 'https://cdn.statically.io/gh/Om1cr0n/cat_thumb/main/docs/thumbs/sgYRw.re_907602_sample_devil_horns_lilim_monster_girl_encyclopedia_monster_girl_encyclopedia_no_bra_pointy_ears_veralde_wings.jpg',
   cost: 40,
   desc: `
 <p>Any Lesser Succubus will eventually mature into the full-blooded variant with enough time and sexual energy intake. This perk skips the natural maturation process, immediately converting the target into a full Succubus. All Lesser Succubi qualify for this perk, whether they’re naturally-born or converted from another race by natural means, Power Swap, or Template Stacking.</p>`,
@@ -1153,7 +1154,7 @@ genericPerks.push({
   category: 'Generic',
   requires: 'any Monster Girl Encyclopedia Mamono, except for Lilims and the Demon Lord',
   complex: 'target',
-  image: 'https://cdn.discordapp.com/attachments/925963686433132644/1033794994143764560/sss.png',
+  image: 'https://cdn.statically.io/gh/Om1cr0n/cat_thumb/main/docs/thumbs/LWSUk.jpg',
   cost: 200,
   desc: `
   The iconic Lilims are all Succubi, but the term simply applies to any daughter of the Demon Lord. In theory, any mamono, of any breed, could be elevated to the role. The Queen of Hearts is a Lilim Alice, for example.

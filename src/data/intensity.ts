@@ -47,8 +47,12 @@ intensity.push({
   special: 'Chargen only. May not be taken on DRX.',
   blacklist: ['DRX start'],
   chargen: true,
-  desc: `Your spouse or significant other is a contractor like you, but the two of you are tied much more closely than the friends option above. The two of you share full access to a joint account tied to both of your smart devices. A member of your retinue may be a companion to one of you and merely a familiar to the other.
-<p>You will only pay for the more expensive of your two Origins. The chosen binding method treats you as equal masters, ensuring that your love never fades. (If you have the Symbiote, one of you will usually, but not necessarily, be the queen.) Heritages are purchased separately, but the other of you can buy any Heritage that one of you has at half-price, after all discounts and ignoring the usual discount cap. This does not apply to Tier Χ Heritage capstones. The control aspects of Bindings, Lures, and any Heritage hierarchy mechanics will only affect your relationship if the two of you are into that. Template Stacking and relevant waifu perks are purchased individually. All other items need only be purchased once to benefit the both of you equally. Your shared retinue will not enter R.I.P. mode unless you both perish.</p>`,
+  desc: `Your spouse or significant other is a contractor like you, but the two of you are tied much more closely than the friends option below. Your partner must be someone from your homeworld that you know personally. The two of you share full access to a joint account tied to both of your smart devices. You and your partner cannot sell each other. A member of your retinue may be a companion to one of you and merely a familiar to the other.
+<p>You will only pay for the more expensive of your two Origins. The chosen binding method treats you as equal masters, ensuring that your love never fades. (If you have the Symbiote, one of you will usually, but not necessarily, be the queen.) Heritages are purchased separately, but the other of you can buy any Heritage that one of you has at half-price, after all discounts and ignoring the usual discount cap. This does not apply to the IMG costs of Heritage capstones.
+</p>
+<p>The control aspects of Bindings, Lures, and any Heritage hierarchy mechanics will only affect your relationship if the two of you are into that. Template Stacking and relevant waifu perks are purchased individually. All other items need only be purchased once to benefit the both of you equally. Your shared retinue will not enter R.I.P. mode unless you both perish.
+</p>
+`,
 })
 
 intensity.push({
@@ -109,7 +113,7 @@ export const intensityPvP: IntensityPvP[] = []
 intensityPvP.push({
   uid: 'xkHxF',
   title: 'One In Ten',
-  image: 'https://cdn.discordapp.com/attachments/925963686433132644/992731577199108166/my-hero-academia.webp',
+  image: 'https://cdn.statically.io/gh/Om1cr0n/cat_thumb/main/docs/thumbs/q8COq.jpg',
   intensity: 50,
   pvp: true,
   special: 'Gauntlet only, mutually exclusive with Fight For Your Right',
@@ -119,7 +123,7 @@ intensityPvP.push({
 intensityPvP.push({
   uid: 'axa7F',
   title: 'Fight For Your Right',
-  image: 'https://cdn.discordapp.com/attachments/925963686433132644/993436881964515368/Naruto-vs-Sasuke.webp',
+  image: 'https://cdn.statically.io/gh/Om1cr0n/cat_thumb/main/docs/thumbs/gcrkF.jpg',
   intensity: 0.2,
   pvp: true,
   special: 'Gauntlet only, mutually exclusive with One In Ten',
@@ -130,7 +134,7 @@ intensityPvP.push({
 intensityPvP.push({
   uid: 'yLrU0',
   title: 'Survivalism',
-  image: 'https://cdn.discordapp.com/attachments/925963686433132644/992731834255429792/1464552775-d30fe550483aaaf8986212dc7b261c70.jpeg',
+  image: 'https://cdn.statically.io/gh/Om1cr0n/cat_thumb/main/docs/thumbs/mptDc.jpeg',
   intensity: 0.2,
   pvp: true,
   whitelist: ['Fight For Your Right'],
@@ -140,7 +144,7 @@ intensityPvP.push({
 intensityPvP.push({
   uid: '0etBT',
   title: 'Marathon',
-  image: 'https://cdn.discordapp.com/attachments/925963686433132644/992730237211246602/38wvkKS.jpg',
+  image: 'https://cdn.statically.io/gh/Om1cr0n/cat_thumb/main/docs/thumbs/XFRm6.jpg',
   intensity: 0.4,
   pvp: true,
   whitelist: ['Survivalism'],
@@ -150,7 +154,7 @@ intensityPvP.push({
 intensityPvP.push({
   uid: 'tPoBA',
   title: 'Come At Me Bro',
-  image: 'https://cdn.discordapp.com/attachments/925963686433132644/992730332421963786/fantasy__portal_and_warrior__4x.webp',
+  image: 'https://cdn.statically.io/gh/Om1cr0n/cat_thumb/main/docs/thumbs/EpZ0x.jpg',
   intensity: 0.2,
   pvp: true,
   special: 'Mutually exclusive with Arena',
@@ -161,7 +165,7 @@ intensityPvP.push({
 intensityPvP.push({
   uid: 'B41Sr',
   title: 'Arena I',
-  image: 'https://cdn.discordapp.com/attachments/925963686433132644/992731180401184768/Top-10-Anime-like-Record-of-Ragnarok.webp',
+  image: 'https://cdn.statically.io/gh/Om1cr0n/cat_thumb/main/docs/thumbs/kNzF7.jpg',
   intensity: 0.2,
   pvp: true,
   special: 'Mutually exclusive with Come At Me Bro',
@@ -173,7 +177,7 @@ intensityPvP.push({
 intensityPvP.push({
   uid: '3oIyV',
   title: 'Arena II',
-  image: 'https://cdn.discordapp.com/attachments/925963686433132644/992732321025368144/image-asset.png',
+  image: 'https://cdn.statically.io/gh/Om1cr0n/cat_thumb/main/docs/thumbs/WAF1s.jpg',
   intensity: 0.2,
   pvp: true,
   whitelist: ['Arena I', 'Fight For Your Right'],
@@ -182,7 +186,7 @@ intensityPvP.push({
 intensityPvP.push({
   uid: 'hcJWu',
   title: 'Arena III',
-  image: 'https://cdn.discordapp.com/attachments/925963686433132644/992730114058100816/180614.webp',
+  image: 'https://cdn.statically.io/gh/Om1cr0n/cat_thumb/main/docs/thumbs/b3L0v.jpg',
   intensity: 0.2,
   pvp: true,
   whitelist: ['Arena II', 'Survivalism'],
@@ -191,7 +195,7 @@ intensityPvP.push({
 intensityPvP.push({
   uid: 'Q4Ux8',
   title: 'Arena IV',
-  image: 'https://cdn.discordapp.com/attachments/925963686433132644/992733546542289046/dragon-fantasy-anime-34-4k.jpg',
+  image: 'https://cdn.statically.io/gh/Om1cr0n/cat_thumb/main/docs/thumbs/SV6JC.jpg',
   intensity: 0.2,
   pvp: true,
   whitelist: ['Arena III'],
@@ -200,7 +204,7 @@ intensityPvP.push({
 intensityPvP.push({
   uid: 'xeVoO',
   title: 'Arena V',
-  image: 'https://cdn.discordapp.com/attachments/925963686433132644/992733060527292446/xivysfxd4kk51.webp',
+  image: 'https://cdn.statically.io/gh/Om1cr0n/cat_thumb/main/docs/thumbs/GOL4j.jpg',
   intensity: 0.2,
   pvp: true,
   whitelist: ['Arena IV', 'Marathon'],
@@ -209,7 +213,7 @@ intensityPvP.push({
 intensityPvP.push({
   uid: 'iY17R',
   title: 'Deathmatch',
-  image: 'https://cdn.discordapp.com/attachments/925963686433132644/992729922680389703/maxresdefault.jpg',
+  image: 'https://cdn.statically.io/gh/Om1cr0n/cat_thumb/main/docs/thumbs/RLEIb.jpg',
   intensity: 0.4,
   pvp: true,
   whitelist: ['Fight For Your Right'],
@@ -218,7 +222,7 @@ intensityPvP.push({
 intensityPvP.push({
   uid: 'JVOYA',
   title: 'No Future',
-  image: 'https://cdn.discordapp.com/attachments/925963686433132644/993436262008619058/942011.png',
+  image: 'https://cdn.statically.io/gh/Om1cr0n/cat_thumb/main/docs/thumbs/mOjkd.jpg',
   intensity: 0.4,
   pvp: true,
   whitelist: ['Deathmatch'],
@@ -227,7 +231,7 @@ intensityPvP.push({
 intensityPvP.push({
   uid: 'ktxBZ',
   title: 'Non - Stop Infinite Climax',
-  image: 'https://cdn.discordapp.com/attachments/925963686433132644/992730910522875914/0edf92692eb551f416a26789f71550c4.jpg',
+  image: 'https://cdn.statically.io/gh/Om1cr0n/cat_thumb/main/docs/thumbs/0uF96.jpg',
   intensity: 0.4,
   pvp: true,
   whitelist: ['Fight For Your Right'],

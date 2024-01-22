@@ -62,7 +62,7 @@ DLCgenericPerks.push({
   <p>Uses of this perk include: Reduce super senses. Turn off Shroud shifting due to unconscious desires. Limit yourself and a Saiyan sparring partner to T6 to not need to worry about the planet if you lose control. Turn off out of context abilities to play at being a local. Turn off the retinue's powers on board game night, and reduce card counters' memory to even the playing field.</p>
     `,
   needed: 1,
-  whitelist: ['HUD', 'First Augmentation'],
+  whitelist: ['HUD', 'First Augmentation', 'Basic Runes'],
 })
 
 DLCgenericPerks.push({
@@ -129,7 +129,7 @@ DLCgenericPerks.push({
   dlc: 'the_taken',
   category: 'Generic',
   title: 'Henshin Impact',
-  image: 'https://cdn.discordapp.com/attachments/925963686433132644/993467031489884201/5558331.webp',
+  image: 'https://cdn.statically.io/gh/Om1cr0n/cat_thumb/main/docs/thumbs/faHGw.jpg',
   requires: 'The companion must be a trained pilot of a vehicle that at its core is a scaled up version of themselves, even if only marginally. This is usually some form of mecha, even mass produced models.',
   complex: 'target',
   special: '',
@@ -167,7 +167,7 @@ DLCperks.push({
   category: 'Misc Perk',
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'Presentation',
-  image: 'https://cdn.discordapp.com/attachments/925963686433132644/1035675422098202744/Screenshot_1.jpg',
+  image: 'https://cdn.statically.io/gh/Om1cr0n/cat_thumb/main/docs/thumbs/V8x36.jpg',
   cost: 30,
   desc: `
   Through a mix of perception alteration and minor reality alteration, the world itself seems to aid you in presenting the bearing you intend. From making you seem supernaturally beautiful, always being seen or recorded from a flattering angle and lighting, your dramatic declarations echoing even on an open field, etc. At your discretion, this perk can also allow situational coincidences such as relevant music to start playing or lightning to strike dramatically behind you as you cackle.
@@ -261,7 +261,7 @@ DLCperks.push({
   category: 'Misc Perk',
   dlclink: 'https://docs.google.com/document/d/1j9emHb4IWvOTnp13RASTAuINAFuKDMSSQyQ-7ta9sjA/edit#',
   title: 'Gone And Forgotten',
-  image: 'https://cdn.discordapp.com/attachments/925963686433132644/1048205426077995088/Screenshot_2.jpg',
+  image: 'https://cdn.statically.io/gh/Om1cr0n/cat_thumb/main/docs/thumbs/kuwMo.jpg',
   cost: 10,
   desc: `When you sell a waifu to the Company all traces of them begin to vanish. Others will not notice the waifu's absence and, over the course of a year and a day, memories and physical evidence will change to match that the waifu had never existed at all.
   <p>At the moment of each sale may opt to have your memories, your other waifus memories, the sold waifu's name on the Company's list of purchasable waifus, and/or any evidence stored in your Sweet Home to be unaffected.</p>
@@ -371,7 +371,7 @@ DLCperks.push({
   dlc: 'Sleepy Fluffball™',
   category: 'Misc Perk',
   title: 'Designer Babies',
-  image: 'https://cdn.discordapp.com/attachments/925963686433132644/993465150302593175/maxresdefault_1.jpg',
+  image: 'https://cdn.statically.io/gh/Om1cr0n/cat_thumb/main/docs/thumbs/L6n7d.jpg',
   cost: 8,
   multiple: true,
   max: 3,
@@ -416,7 +416,7 @@ DLChomes.push({
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'A God Am I',
   category: 'Home',
-  image: 'https://cdn.discordapp.com/attachments/925963686433132644/1020819161846390944/Image.png',
+  image: 'https://cdn.statically.io/gh/Om1cr0n/cat_thumb/main/docs/thumbs/ascrT.jpg',
   cost: 0,
   costT: 2,
   desc: `From your control center, you can create life to populate your Demiplane. Binding creatures from your Demiplane does not provide credits.
@@ -597,7 +597,7 @@ DLClures.push({
   dlc: 'Trismegistus',
   title: 'Red Chains of Fate',
   category: 'Lure',
-  image: 'https://cdn.discordapp.com/attachments/925963686433132644/992740655958863912/Screenshot_2.jpg',
+  image: 'https://cdn.statically.io/gh/Om1cr0n/cat_thumb/main/docs/thumbs/bK9n2.jpg',
   cost: 5,
   costVariants: [5, 15],
   desc: `You have a sense for those who would be amenable to binding and the type of relationships you desire. This effect is overlaid on your other senses, making them "pop" out when you are aware of them in any way.
@@ -730,7 +730,7 @@ DLCotherControls.push({
   dlclink: 'https://docs.google.com/document/d/1HGcpJGpGbLCeA3VO8LFrQjxQqkYANdeoWbCKlCOnK0A/edit',
   title: 'Grail System',
   category: 'Other Controls',
-  image: 'https://cdn.discordapp.com/attachments/925963686433132644/1015233924701626419/maxresdefault_1.webp',
+  image: 'https://cdn.statically.io/gh/Om1cr0n/cat_thumb/main/docs/thumbs/OBRCL.jpg',
   cost: 50,
   desc: `You become the center of a Holy Grail system. This creates an additional binding between you and your entire retinue similar to that between Master and Servant in a Holy Grail War. This system allows for optional adjustments to the general binding granting the ability to lower compulsions up to half of their original strength. 
   <p>Those bound to your Grail can materialize and dematerialize one set of armor and weapons at will. This equipment must be provided, and does not come with this feature. The weapons and armor may be summoned as individual pieces, or as a set. Any worn outfit will immediately be dismissed when armor is summoned, and will return in its previous state when the armor is dismissed. A “Set” of armor and/or weapons can be created by being equipped whilst going through a short ritual with a duration of at least 60 seconds. Any changes to a set must be made via the same process. Consumables that are part of a “Set” are not renewed and are consumed as usual.</p>
@@ -988,7 +988,7 @@ DLCbindings.push({
   <p>These scripts allow you to automate any transformations the Chokers (bracelets, anklets) provide. Make a companion's breasts grow whenever she hears a specific phrase. Turn another into a bimbo whenever she chews a piece of gum. Or have one hulk out when they get angry. The choices are only limited by your existing transformation options.</p>
   <p>As well, for vocal commands, there is an option to set it to only work with a specific voice print. That way, you can choose who can and cannot trigger the change</p>
   `,
-  whitelist: ['Advanced Tempest Runes (Mind)'],
+  whitelist: ['Advanced Runes: Mind'],
 })
 
 // DLC Ride Perks

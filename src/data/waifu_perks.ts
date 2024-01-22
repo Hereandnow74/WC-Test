@@ -781,7 +781,7 @@ export const waifu_perks: WaifuPerk[] = [
       7449,
     ],
     tier: 12,
-    image: 'https://cdn.discordapp.com/attachments/925963686433132644/1083569974519537754/her_inflorescence_final_fantasy_and_3_more_drawn_by_aoin__sample-0ddda4644d31ebb7f5ea3bc5e85742f0.png',
+    image: 'https://cdn.statically.io/gh/Om1cr0n/cat_thumb/main/docs/thumbs/aeo53.jpg',
     cost: 0,
     costT: 5,
     discount: 200,
