@@ -10,7 +10,7 @@
           class="rounded absolute object-cover h-full w-full object-top border border-gray-400 rounded dark:border-gray-700"
           :data-src="image"
           :alt="charData.name"
-        >
+        />
         <div v-else class="h-16"></div>
         <div ref="likeHover" class="absolute top-7 right-0.5 cursor-pointer flex items-center gap-1 text-lg leading-none" @click="throttledLike">
           <span class="text-red-500 flex items-center gap-0.5 text-shadow-border">

@@ -1,5 +1,1863 @@
 [
-    {
+  
+  {
+    "reward": "1 credit per person disguised, per hour.",
+    "image": "https://i.imgur.com/2ZOiPqq.png",
+    "author": "Lesbean",
+    "rewardType": "Other",
+    "source": "",
+    "title": "To Be Hooman Or To Be Fresh",
+    "loca": "Splatoon",
+    "lewd": false,
+    "scope": "Quick",
+    "objectives": [
+      {
+        "reward": "5 random Inkling outfits for yourself and every retinue member. Continue to recieve these for everyone bought/recruited later.",
+        "type": "Other",
+        "value": "You or a retinue member are complimented on your outfit by a local by being called \"Fresh.\" This is an immense compliment in Inkling culture."
+      },
+      {
+        "reward": "A set of 6 spray paint cans in various, randomized colors. Or, 2 credits.",
+        "type": "Other",
+        "value": "Reach 6 hours without being discovered."
+      },
+      {
+        "reward": "A pet squid. This squid is fairly smart (for an animal) and completely immortal and impervious to harm. Or, 4 credits.",
+        "type": "Other",
+        "value": "Reach 12 hours without being discovered."
+      },
+      {
+        "reward": "A stylish backpack that can hold any amount of clothes; a bag of holding, essentially, but only for clothing. Or, 8 credits.",
+        "type": "Other",
+        "value": "Teach 24 hours without being discovered."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Using Tempest Jewelry to disguise yourselves, or a shape-shifting or illusion ability, will disqualify the person using it frombeing used in the rewards calculation."
+      },
+      {
+        "value": "Naturally, you cannot take this mission if you are actually natively an Inkling or Octarian."
+      }
+    ],
+    "budget": 0,
+    "desc": "In the world of Splatoon, \"hoomans\" are known to be an extinct species. Most mammalian life is extinct, in fact. But most contractors and most of their retinue are \"hooman,\" or at least hooman-passing. This could be an issue.\n\nTherefore, we need you and your retinue to disguise yourselves as the local indigenous species, either Inklings or Octarians.\n\nDisguise yourselves, and be rewarded for each person disguised and how long you manage to go without somebody catching onto the truth. This caps at 24 hours - we're here to help you get used to the idea of hiding your identity, not pay you for the entire duration of your stay. Unless, of course, it's a very short stay.\n\nOptional conditions exist for meeting certain minimums, and for making yourselves look good while conducting this mission. The mission ends after 24 hours, or after you're discovered for not being an Inkling/Octarian.",
+    "uid": "LXNND"
+  },
+  {
+    "reward": 2,
+    "image": "https://as2.ftcdn.net/v2/jpg/05/94/33/91/1000_F_594339155_FABapgsvq2fczFrCyEjtr9gGdlVHtUAa.jpg",
+    "author": "Pleb",
+    "rewardType": "IMG Tickets",
+    "source": "",
+    "title": "Ultimate Enemy: Abyssal Sovereign",
+    "loca": "My Hero Academia",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": 500,
+        "type": "Credits",
+        "value": "Kill the Abyssal Sovereign solo"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Kill the Abyssal Sovereign"
+      }
+    ],
+    "budget": 225,
+    "desc": "The Abyssal Sovereign is an ancient, otherworldly entity that has awakened from its millennia-long slumber deep within the Earth's core. With origins unknown to both heroes and villains, this formidable adversary possesses unimaginable power and a dark influence that corrupts everything in its vicinity. The Abyssal Sovereign's emergence threatens to plunge the world into chaos, testing the limits of both heroes and villains alike.\n\nThough we have managed to gather information on his powers and they are as followed.\n\nDark Energy Manipulation:\n\nThe Abyssal Sovereign can manipulate dark energy, granting it control over shadows, darkness, and negative emotions. This allows the entity to create powerful constructs, absorb energy, and cast devastating attacks.\n\nReality Warping:\n\nThe Abyssal Sovereign has the ability to warp reality within its immediate surroundings. It can create nightmarish landscapes, distort perceptions, and manipulate time and space to its advantage.\n\nCorruption Aura:\n\nAn aura surrounds the Abyssal Sovereign, corrupting everything in its path. Heroes and villains alike are susceptible to the dark influence, causing them to question their alliances and potentially turn against each other.\n\nImmortality:\n\nThe Abyssal Sovereign is effectively immortal, making it impervious to conventional attacks. Its physical form can be shattered, but it will reform, making defeating it a nearly impossible task.\n\nMind Domination:\n\nThe Abyssal Sovereign can invade and dominate the minds of individuals, turning them into mind-controlled minions. This power poses a significant threat to hero society as even the most powerful heroes can be turned against their own kind.\n\nWorldquake:\n\nThe Abyssal Sovereign can trigger seismic events, causing catastrophic earthquakes on a global scale. These earthquakes not only bring physical destruction but also open rifts between dimensions, allowing dark entities to spill into the world.\n\nAlthough he may seem invincible he does have a weakness, and that weakness is the reason he was resting in the earths core to begin with, basically his powers require immense amounts of energy to operate and his body doesn't naturally regenerate the energy he uses so the more you force him to use the less he will have to work with, due to this you must whittle him down till he is weak enough for you to finish him off. \n\nThough it is unlikely you can accomplish this alone, this is because The Abyssal Sovereign presents a challenge that transcends the hero-villain dynamic, requiring an unprecedented level of cooperation among the world's most powerful individuals. Heroes and villains must put aside their differences and work together to confront this cosmic threat, as failure to do so could lead to the irreversible corruption of the world. The fate of humanity rests on the shoulders of those brave enough to face the Abyssal Sovereign. Goodluck\n\n ",
+    "uid": "xLRQX"
+  },
+  {
+    "reward": "All of Sukuna Cursed Energy, Techniques, Masteries, Abilities, Talent etc.",
+    "image": "https://i.pinimg.com/564x/dd/b5/5c/ddb55cfc30416f736af4423ce83118db.jpg",
+    "author": "EvansKannon",
+    "rewardType": "Other",
+    "source": "",
+    "title": "True Sukuna Sucessor",
+    "loca": "Jujutsu Kaisen",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "100 Credits and the Ten Shadow Techniques",
+        "type": "Other",
+        "value": "Defeat Sukuna after you ate 15 fingers or equivalent"
+      },
+      {
+        "reward": "Your reserves of Cursed Energy will duplicate and a TS I of Chainsaw Devil/Pochita",
+        "type": "Other",
+        "value": "Defeat Sukuna after you ate all 20 fingers or equivalent"
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Defeat Gojo Satoru in a Duel"
+      },
+      {
+        "reward": "Uraume will not care that you are not the real Sukuna and will be totally loyal to you, and a TS I of Aokiji to Uraume",
+        "type": "Other",
+        "value": "Capture Uraume(Only Available after Defeating Sukuna)"
+      },
+      {
+        "reward": "Yorozu will not care that you are not the real Sukuna and a copy of the intact Inverted Spear of Heaven,",
+        "type": "Other",
+        "value": "Capture Yorozu(Only Available after Defeating Sukuna)"
+      },
+      {
+        "reward": "TheCursed Techniques of the Death Paintings",
+        "type": "Other",
+        "value": "Eat the Death Paintings Wombs or the Hybrids born from it(Only Available after Defeating Sukuna)"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Have the 2 levels of Possession Defense"
+      },
+      {
+        "value": "Eat at least 10 fingers of Ryomen Sukuna(or equivalent)"
+      },
+      {
+        "value": "Defeat Sukuna in a Ritual"
+      },
+      {
+        "value": "Sukuna is completelly immune to lures and can't be captured."
+      }
+    ],
+    "budget": 20,
+    "desc": "Sukuna, The King of Curses, is the embodiment of selfishness. He takes what he wants and does what he wants, only following his desires.\nNow Contractor, it's time to give him a taste of his own medicine and selfishly take everything that he owns. Be the next King of Curses, but nothing like receiving his inheritance of being his apprentice or shit like that.\nYou need to take it from him in his style. Selfishly. By force.\nThe mission is simple but you need some preparation beforehand.\nYou need to eat 10 of Sukuna's fingers or the people who ate the fingers.(It works the same if you eat only a part of the person where Sukuna concentrated his being using his technique learned from Kenjaku)\n*The condition of this mission is that you need to buy the two levels of Possession Defense.\nWith this, Sukuna can't take over your body, only if you allow it. You will be an even better vessel than Yuji Itadori. Not even feeding you the 20 fingers in a second will make you lose control of your body.\nNow the most tricky part:\n*Defeat Sukuna\nWhen you eat at least 10 fingers, you will be capable at any time of forcing Sukuna into a Ritual. A battle.\nYou two will fight in this mindscape and if you win he will die for real, while you will keep all the spoils.\n*Word Of Caution*\nBe warned that a 10-finger Sukuna is stronger than Jogo. So you need to be on the top of the verse to win, and if you lose Sukuna will have total control over your body and even become a contractor of the company. In the start of the ritual he will be warned of the conditions.\nAnd it would be for the best of you to start the ritual when you ate only 10 fingers for obvious reasons.\nAfter you get rid of Sukuna, you can eat the rest of the fingers without a problem. It will be like you're recovering your own strength.",
+    "uid": "eajlz"
+  },
+  {
+    "reward": "Free possession of the beast monarch",
+    "image": "https://w0.peakpx.com/wallpaper/574/381/HD-wallpaper-beast-monrach-sololeveling-animeedits-anime-wolves-manhwa-monarch-animexreality-manga.jpg",
+    "author": "Pleb",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Apex predator",
+    "loca": "My Hero Academia",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": 20,
+        "type": "Credits",
+        "value": "score first place on the entrance exam"
+      },
+      {
+        "reward": "Martial Talent",
+        "type": "Perks",
+        "value": "kill the USJ nomu before the hero's arrive"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "place first in all event's of the sports festival"
+      },
+      {
+        "reward": "Tsuchikawa Ryuko/Pixie-Bob",
+        "type": "Companions",
+        "value": "capture all villains at the training camp"
+      },
+      {
+        "reward": "Shiretoko Tomoko/Ragdoll",
+        "type": "Companions",
+        "value": "Save ragdoll before she is captured"
+      },
+      {
+        "reward": "Sosaki Shino/Mandalay",
+        "type": "Companions",
+        "value": "rescue kota from muscular and bring him to his aunt"
+      },
+      {
+        "reward": "Utsushimi Camie/Illus-o-Camie",
+        "type": "Companions",
+        "value": "get 100 points in your provisional licencing exam"
+      },
+      {
+        "reward": "Toga Himiko",
+        "type": "Companions",
+        "value": "convince toga to join the hero's side"
+      },
+      {
+        "reward": "Inexhaustible",
+        "type": "Perks",
+        "value": "rescue eri from overhaul"
+      },
+      {
+        "reward": 80,
+        "type": "Credits",
+        "value": "Kick the shit out of overhaul till he can't heal himself but is still alive"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "defeat all might while he is injured"
+      },
+      {
+        "reward": 80,
+        "type": "Credits",
+        "value": "Heal all might to his prime"
+      },
+      {
+        "reward": "Shimura Nana",
+        "type": "Companions",
+        "value": "Defeat all might in his prime"
+      },
+      {
+        "reward": "Template Stacking I & II All for one",
+        "type": "Perks",
+        "value": "Defeat All for one"
+      },
+      {
+        "reward": 40,
+        "type": "Credits",
+        "value": "Beat Flect Turn"
+      },
+      {
+        "reward": "Manami Aiba/La Brava",
+        "type": "Companions",
+        "value": "Beat gentle criminal"
+      },
+      {
+        "reward": "Kayama Nemuri/Midnight",
+        "type": "Companions",
+        "value": "become a pro hero"
+      },
+      {
+        "reward": "100 credits, Midoriya Inko and Bakugo Mitsuki",
+        "type": "Other",
+        "value": "Become number 1 before izuku or bakugo"
+      },
+      {
+        "reward": "Rumi Usagiyama/Mirko",
+        "type": "Companions",
+        "value": "Beat Mirko in a fight"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "possess the beast monarch"
+      },
+      {
+        "value": "become a hero"
+      }
+    ],
+    "budget": 225,
+    "desc": "This mission is a little different then normal but in a good way, you see we here at the company like to see how certain beings would react to different worlds but while it is good fun usually this is unprofitable to us so to help mitigate this we have had an idea.\n\nBasically what we are gonna do is offer you a free possession start of a character of our choice but you will be mentally fused with the character rather then completely replacing them at a ratio of about 65 percent you and 35 percent them, and the character we have chosen to mix you with is the Rakan also known as the beast monarch.\n\nOh, and p.s. we want to see you become a hero, so no blowing up city's and shit, Goodluck.  ",
+    "uid": "iUkoL"
+  },
+  {
+    "reward": 1,
+    "image": "https://64.media.tumblr.com/daf299db3b1de0757868a6c6d9542b5b/42c33d412f74f559-fb/s500x750/07f8f92b98456e3c4d4e62cceefd4412795e8cf5.png",
+    "author": "Pleb",
+    "rewardType": "IMG Tickets",
+    "source": "",
+    "title": "A new Morningstar is rising",
+    "loca": "Hazbin Hotel",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": 200,
+        "type": "Credits",
+        "value": "Reach tier 10 before age 15"
+      },
+      {
+        "reward": 350,
+        "type": "Credits",
+        "value": "Reach tier 10 before age 10"
+      },
+      {
+        "reward": "Inexhaustible and 200 credits",
+        "type": "Other",
+        "value": "Reach tier 10 before age 5"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Raise yourself to tier 10"
+      },
+      {
+        "value": "you can't leave the world till you complete the mission"
+      }
+    ],
+    "budget": 1500,
+    "desc": "Ok this one is simple, all you gotta do is pick this mission before entering your starting world and you will be reborn as a child of lucifer Morningstar and Lilith 18 years before the start of canon and all you have to do is raise your tier to match your dad's before canon. good luck\n\nOh and by the way due to the reincarnation process you will be regressed back to tier 6 and gain features to look more like your parents when born.",
+    "uid": "dzFvf"
+  },
+  {
+    "reward": 1000,
+    "image": "https://i.pinimg.com/564x/e0/a5/11/e0a511fcc2de76fd583076c6b9fba7bd.jpg",
+    "author": "Yeveiras",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "An Angel From The Skies",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": 30,
+        "type": "Credits",
+        "value": "Save 100 lifes with your actions."
+      },
+      {
+        "reward": "You can create divine beasts from the dead major demons, their tier will be the same as the dead demon, they are loyal to you.",
+        "type": "Other",
+        "value": "Kill a major demon, examples are archdemons, keeper of secrets, prices of hell."
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "The world choosen at Chargen has demons that can easly access the world of humans without restrictions to their powers. If there is currently a war against a large force of demons double the reward."
+      },
+      {
+        "reward": 30,
+        "type": "Credits",
+        "value": "Capture a target tagged \"Evil\" and make them \"Good\" or at least as Good as you."
+      },
+      {
+        "reward": 1,
+        "type": "IMG Tickets",
+        "value": "Kill a Demonic god, examples are the Chaos Gods(Warhammer), Lucifer (DC)."
+      },
+      {
+        "reward": "All your faithfull will be immune to possession, corruption and mind attacks that are not of your doing.",
+        "type": "Other",
+        "value": "Have 10 thousand being praying to you daily."
+      },
+      {
+        "reward": 1,
+        "type": "IMG Tickets",
+        "value": "Have an entire planet see you as their God."
+      },
+      {
+        "reward": "All your powers from simple physical power to your talents double in power every 100 demons killed by you or the host",
+        "type": "Other",
+        "value": "Defeat a Demonic army in combat."
+      },
+      {
+        "reward": "The might of your Heavenly Host is your own, the more power the other angels have the more you have.",
+        "type": "Other",
+        "value": "Your Heavenly Host has at least 100 members."
+      },
+      {
+        "reward": 150,
+        "type": "Credits",
+        "value": "Bring Peace to a world at war."
+      },
+      {
+        "reward": "You can now convert anyone willing in an angel, it will just require a drop of your golden blood, will also result in capture.",
+        "type": "Other",
+        "value": "Convert 10 being in angels through \"Baby Take My Hand\""
+      },
+      {
+        "reward": "Become immune to demon made weapons, and gain 10 credits for tier of thekilled demon.",
+        "type": "Other",
+        "value": "Kill The Champion of a Demonic God."
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Capture an angel not of your creation."
+      },
+      {
+        "reward": "You can now use any Demiplane law on planets under your controll, and you are one tier higher in said planets.",
+        "type": "Other",
+        "value": "Have the perks \"Evermore\", \"Laws of Reality\" and have one world under your total controll."
+      },
+      {
+        "reward": "While fighting Evil all your powers are boosted and you are 1 tier Higher.",
+        "type": "Other",
+        "value": "Bring war to their doorstep, enter an afterlife under Demonic control and kill 1000 demons."
+      },
+      {
+        "reward": "You are now the divine will around wich all revolves gain one tier, can use Demiplane law universe wide if you are the strongest",
+        "type": "Other",
+        "value": "Kill an Evil God/Goddess."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Become a revered figure in 5 different worlds."
+      },
+      {
+        "value": "Have 10 millions souls in your Heaven."
+      },
+      {
+        "value": "Build an Heavenly Host the size of at least 30 members."
+      },
+      {
+        "value": "Kill 1000 Demons."
+      },
+      {
+        "value": "Kill the main villain of 3 world you visited."
+      },
+      {
+        "value": "Have at least one world start a religion with you at it's center."
+      },
+      {
+        "value": "Being an evil edge lord isn't allowed"
+      },
+      {
+        "value": "You must treat the souls of your realm fairly"
+      },
+      {
+        "value": "If you are witnessing in person an evil act you must intervene, if doing so dosen't cost you your life"
+      },
+      {
+        "value": "You must take care of your retinue and eventual children, so no discarding them after some fun"
+      },
+      {
+        "value": "Can't sell retinue members, exept target tagged as \"Evil\""
+      }
+    ],
+    "budget": 300,
+    "desc": "There is plenty of evil out there contractor, well technically good and evil are just an ideological creation of the mortal minds, but still! There are plenty of messed up things out there, and of course there are many contractors that are completely uncaring of all this, what about you? want to have some fun and be a pillar of goodness (or well at least in appearance)? , an agent of divine will and judgement, that is what you shall become, an Angel ready to build his own Heavenly Host.\n\nNow Let's talk about requirements:\n|Only avaible at Chargen|\n|The only Patrons you may have are \"First Contractor\", \"Death\", \"Archangel of Benevolence\"|\n|You must have the heritage perk \"The Unquiet Grave\" or \"Baby Take My Hand\"|\n|You must have the heritage perk \"Harbinger of Deаth\"|\n|Must choose a world that has Demons at Chargen|\n\nAs for the objective of this mission, you must create an heaven and fill it with deserving souls, and build a mighty host of Angels to watch over your realm and spread your influence to multiple worlds.\n\nUpon accepting this mission you shall receive the following:\n\n-Divine will and power shall be bestown upon you, (take the apperance of an angel customization is up to you) making you a being that exists beyond the mortals and their realms, no being classifiable as \"Mortal\" may harm you or any of your Heavenly host, this of course also applies to their creations, but even the Divine has it's weaknesses, in your case Demons or related beings, they will be you greatest nemesis and will be capable of harming you normally and kill you, beware that even a powerfull God/Divine being may kill you, but at the same time no matter if they are Gods Demons or Mortals or their degree of immortallity, a fatal strike from you will bring them a final death.\n\n-You and any other Angel of your host will have the ability to hide your angelic appearance and appear as race of your choice, of course this won't grant you any of said race abilities.\n\n-If you had the perk \"The Unquiet Grave\" before accepting this mission, the range of any totem you will make will cover an entire planet, the afterlife that you may build with this perk must always appear as heavenly, basically it must look like a really nice place to spend eternity in, and of course no soul can be tortured there, while you are in this afterlife you will passively learn any usefull skill or information any soul may possess.\n\n-Only good souls may reside in your afterlife, it will stend to you to define what defines \"Good\", maybe you can stretch the definition a bit and allow somene like the punisher in, but never someone like the joker, so where do the Evil souls go?T his souls may reside in some corner of the realm in a state of torpor till you decide what exactly to do with them, but they may not reside in your afterlife for long or they will be erased.\n\n-If you had the perk \"Baby Take My Hand\" before accepting this mission, you will now have a sixth sense telling you when someone imortant usefull or with potential is dying, and give you the ability to appear at their side instantly from there the perk will continue to work as for standard procedure. Any being turned Psychopomp through this perk will always take an angelic appearance.\n\n-Gain the ability \"Evil Slayer\", now whenever you end the life or unlife of an Evil being all his power will be purified and added to yours, but this dosen't grant you mastery over any new ability you may gain, it won't be any weaker than the original but you must train in it's use if you want to use it as efficiently as it's previous user. In addition if the being you killed is also a demon or demonically corrupted, your gains will be doubled and you will become slightly more resistent to the same type of being you killed.\n\n-Gain the Lure \"Devout Faithfull\" all being that belive in a religion will look at you as a divine incarnation of their God/s, the longer the exposure to your presence the more their reverence and respect for you and your will, you will also be able to switch the effect of this lure to produce effect of love and infatuation for specific targets.\n\n-While you are in your \"Harbinger Form\" if you are fighting \"Evil\" beings you tier is rised by 1 till the end of the fight, additionally your \"Harbinger Weapons\" ignore any defense this evil beings may possess, upon first activation of this form receive a weapon of your choice.\n\n-When a member of the Heavenly host dies they will reappear in your Heaven they won't be able to leave, but will return to \"Life\" an be free to leave after a number of days equal to double their tier.\n\n-Lastly you now emit a Godly aura that scales in power and range with your tier, it can be toggled on and off, it's effects changes with your intention, want peoples groveling at your feets in adoration, or feel hopefull and at peace, you can do it.",
+    "uid": "GlzER"
+  },
+  {
+    "reward": "100 credits for each Mask collected and free access to the world of The Elder Scrolls: Skyrim",
+    "image": "https://static1.cbrimages.com/wordpress/wp-content/uploads/2020/08/Skyrim-Dragon-Priest-Masks-Featured.jpg",
+    "author": "ZeroSpearow",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Dragon Priest mask collection",
+    "loca": "The Elder Scrolls",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Travel to Solstheim, Kill Ahzidal and collect the mask."
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Travel to Solstheim, Kill Dukaan and collect the mask."
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Travel to Solstheim, Kill Zahkriisos and collect the mask."
+      },
+      {
+        "reward": "Free Template Stacking I and II of Miraak.",
+        "type": "Other",
+        "value": "Travel to Apocrypha, Kill Miraak and collect the mask."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Kill Hevnoraak and collect the mask."
+      },
+      {
+        "value": "Kill Krosis and collect the mask."
+      },
+      {
+        "value": "Kill Morokei and collect the mask."
+      },
+      {
+        "value": "Kill Nahkriin and collect the mask."
+      },
+      {
+        "value": "Kill Otar the Mad and collect the mask."
+      },
+      {
+        "value": "Kill Rahgot and collect the mask."
+      },
+      {
+        "value": "Kill Vokun and collect the mask."
+      },
+      {
+        "value": "Kill Volsung and collect the mask."
+      },
+      {
+        "value": "Present all 8 masks to the altar in Bromjunaar Sanctuary and collect the mask."
+      },
+      {
+        "value": "You have a time limit of 1 year to finish this mission."
+      }
+    ],
+    "budget": 0,
+    "desc": "You enter the world of Nirn, more specifically, you will visit the Nord Tombs located in Skyrim.\n8 Dragon Priests rest inside those sealed frozen tombs, undead insane abominations that used to rule the land with an iron fist.\n\nI want you to go there and retrieve all 8 masks, i also want you to get the 9th, secret mask of Konahrik, this last one requires all 8 masks to be brought inside Bromjunaar Sanctuary and be mounted in an altar, only then it will be manifested.\n\n\n",
+    "uid": "nBVVC"
+  },
+  {
+    "reward": 1,
+    "image": "https://i.pinimg.com/originals/a2/19/99/a219999ccb15ea0381293776e656a706.png",
+    "author": "Biomancy",
+    "rewardType": "IMG Tickets",
+    "source": "",
+    "title": "Helluva Redemption",
+    "loca": "Hazbin Hotel",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": 1,
+        "type": "IMG Tickets",
+        "value": "Save 10% of hell's population before the next Extermination Day. (Timer can be reset if failed)"
+      },
+      {
+        "reward": 10,
+        "type": "IMG Tickets",
+        "value": "Save 50% of Hell's population before the next Extermination Day. (Holy Shit, this guy's crazy!)"
+      },
+      {
+        "reward": 20,
+        "type": "IMG Tickets",
+        "value": "Save 100% of Hell. (Oh My God, ITS A MIRACLE!!!)"
+      },
+      {
+        "reward": 1,
+        "type": "IMG Tickets",
+        "value": "Save Charlie and get her to ascend. No time limit."
+      },
+      {
+        "reward": 20,
+        "type": "IMG Tickets",
+        "value": "Save Lucifer. No time limit. You'll need it."
+      },
+      {
+        "reward": 1500,
+        "type": "Credits",
+        "value": "Create some alternate place for the denizens of Hell to reside so that the angels have no excuse for murdering everyone."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Must make an honest effort to make at least one person seek redemption. This can happen before or after you find some other method to get a person to ascend."
+      },
+      {
+        "value": "If you cannot make a person ascend in under one year, you lose the starting IMG Ticket. You may still complete the additional objectives."
+      }
+    ],
+    "budget": 200,
+    "desc": "Let be honest dear Contractor, Adam had it right. Hell is forever. But what if he was wrong? What if, with enough time and effort, someone could cleanse their souls of sin and ascend up to the pearly gates? Your mission is to find out if that is possible. Whether through some method of forceful cleansing or honest redemption, it matters not, just find out if Lucifer's Daughter's dreams are impossible or not.",
+    "uid": "hfyEE"
+  },
+  {
+    "reward": "Elizabeth",
+    "image": "https://image.tensorartassets.com/cdn-cgi/image/q=85,w=500,f=avif/model_showcase/632220363062979446/d4db406b-4b0d-4a31-4942-7a3228c4e021.jpeg",
+    "author": "Pleb",
+    "rewardType": "Companions",
+    "source": "",
+    "title": "Waifu running for their laifu",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "1 tier 7 or below waifu",
+        "type": "Other",
+        "value": "Capture any other companions she has taken"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "capture her within a month of taking this mission"
+      }
+    ],
+    "budget": 200,
+    "desc": "We have a issue that needs fixing before it becomes a larger problem so lets get down to business, a clone of Elizabeth from the BioShock franchise has managed to escape after her contactor was killed and due to prier abuse from her contractor she is now on a mission to collect other abused companions before the company can repossess them, and we need you to capture her before she becomes a bigger issue. Goodluck ",
+    "uid": "sEyKc"
+  },
+  {
+    "reward": "Half of the targets debt in credits",
+    "image": "https://regfollower.com/wp-content/uploads/2022/12/IRS-USA.jpg",
+    "author": "Pleb",
+    "rewardType": "Other",
+    "source": "",
+    "title": "The interdimensional IRS (Repeatable)",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [],
+    "conditions": [
+      {
+        "value": "Either collect the debt or kill the contractor"
+      }
+    ],
+    "budget": 200,
+    "desc": "So, a lot of our contractors have been racking up credit debt's to the company and this is a problem and as for all problems we require a solution, and this is where you come in to play. \n\nWhat we are gonna do is give you a catalogue of all current contractors with a credit dept to the company and your job is to either get them to pay back their debt's plus interest in either credits or equally valuable assets such as item's or waifu's. although if they refuse to pay or can't afford to pay then you will need to kill them so we at the company can repossess their soul and make them work off their debt's in other ways.    ",
+    "uid": "oGDJM"
+  },
+  {
+    "reward": "300 credits and the unlocking of the Cypher template stacking.",
+    "image": "https://i.redd.it/x0pm3xswdvob1.jpg",
+    "author": "ErosArrow",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Ruining The Raider",
+    "loca": "Tomb Raider",
+    "lewd": true,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": 25,
+        "type": "Credits",
+        "value": "Correct her translation of an ancient inscription."
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Discover an ancient site before she can get there."
+      },
+      {
+        "reward": 75,
+        "type": "Credits",
+        "value": "Get the credit for at least two major archaeological finds and relegate her to the role of assistant."
+      },
+      {
+        "reward": 75,
+        "type": "Credits",
+        "value": "Be the idol of Sam Nishimura instead of Lara."
+      },
+      {
+        "reward": 35,
+        "type": "Credits",
+        "value": "Make her lose face during a press conference."
+      },
+      {
+        "reward": 75,
+        "type": "Credits",
+        "value": "Successfully start a rumor about how Lara is your jealous ex-girlfriend."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You will be a professor of archaeology at a rival university. Your credentials and backstory will be provided courtesy of the Company."
+      },
+      {
+        "value": "You will get a limited version of Template Stacking I for Cypher (Marvel). This gives you the ability to understand all Earth languages, past and present."
+      },
+      {
+        "value": "She must see you as a true competitor and equal, even if she doesn't consciously accept it."
+      },
+      {
+        "value": "You have to be seen as the top archaeologist instead of her."
+      },
+      {
+        "value": "Mission ends when she is knocked up and a housewife."
+      }
+    ],
+    "budget": 0,
+    "desc": "One of our clients never quite liked Laura Croft and the Tomb Raider games. However, after a terrible movie, they decided that Lara Croft needs to be taken out of the picture. It is your job to not only one up her at every turn, but make it so that you are truly her nemesis and rival. Once you have got that tension good and strong, you will seal the deal and take her out of the field. I mean, how is she going to explore when she has your kid on the way?",
+    "uid": "jAwpm"
+  },
+  {
+    "reward": 1000,
+    "image": "https://s1.zerochan.net/Goblin.Slayer.Gaiden.2:.Tsubanari.no.Daikatana.600.3174747.jpg",
+    "author": "DragonWaifuGo!",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "A TRUE Eminence in Shadow",
+    "loca": "The Eminence in Shadow",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": 300,
+        "type": "Credits",
+        "value": "Defeat all Knights of Rounds and Children of Diablos in the Diablos Cult without being caught."
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Purge organized crime in all 7 major cities without being caught. 100 credits per city."
+      },
+      {
+        "reward": 500,
+        "type": "Credits",
+        "value": "Keep the Black Rose event contained without being caught."
+      },
+      {
+        "reward": "Aurora",
+        "type": "Companions",
+        "value": "Convince Aurora, the demon Diablos, to join your side and give her proper vessel."
+      },
+      {
+        "reward": 2,
+        "type": "IMG Tickets",
+        "value": "Travel across dimensions during the Black Rose event, help out back in Japan, and then make your way back, all without being seen."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Must Substitute as Cid Kagenou/Shadow"
+      },
+      {
+        "value": "Your subordinates can be seen and interacted with, but you must never be seen by any officials of any faction or city."
+      },
+      {
+        "value": "The only enemies that are allowed to see you must never survive to tell another soul."
+      }
+    ],
+    "budget": 100,
+    "desc": "We all know that Cid Kagenou likes to show off, dear Contractor. But that seems to take away from his mission without him even caring. He wishes to be an Eminence in Shadow, a Shadow Ruler, someone who controls all the pieces on the board. While yes, he has accomplished some of that, he hasn't really hidden himself all that well. We want you to do better. Substitute into the world as Cid Kagenou and take out all of the series enemies without revealing yourself to anyone but your subordinates. You will be provided a way to find said subordinates if you choose to start from the very beginning.",
+    "uid": "TsVdd"
+  },
+  {
+    "reward": 100,
+    "image": "https://www.gamepressure.com/dragonsdogma/gfx/word/5401253.jpg",
+    "author": "irugaa0",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "A bitter Rest",
+    "loca": "Dragon's Dogma",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Defeat the Dark Bishop"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Defeat a Cursed Dragon"
+      },
+      {
+        "reward": "50 per Prisoner Gorecyclops",
+        "type": "Other",
+        "value": "Defeat a Prisoner Gorecyclops"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Defeat a Dire Wyvern"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Defeat a Dire Drake"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Defeat a Dire Wyrm"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Defeat a Gazer"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Defeat the Death"
+      },
+      {
+        "reward": "A perfect copy of the Bitterblack Isle on your Demiplane or 500 credits to be used in it.",
+        "type": "Other",
+        "value": "Complete all Additional Objectives."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "KILL Daimon"
+      },
+      {
+        "value": "Do NOT Capture the target."
+      }
+    ],
+    "budget": 200,
+    "desc": "On the mysterious land of the Bitterblack Isle where a labyrinth grows more dangerous the further one travels into it, the history and legends of hundreds of heroes ended on this accursed land. Ruling over this cursed land a former Arisen, turned into a foul creature called Daimon is bound to the land as punishment for evading his Fate. One of our clients took an interest and issued a mission to put that creature to rest.",
+    "uid": "ioNFy"
+  },
+  {
+    "reward": "Any children you have with a Devil will be accepted into their society and the appropriate clan, ignoring any and all political issues that might otherwise arise",
+    "image": "https://media.discordapp.net/attachments/1080237127603859537/1198657556789338223/image.png",
+    "author": "Dionesia",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Restarting the Bloodline",
+    "loca": "High School DxD",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "A Free TS of a Generic Demon God Pillar (Nasuverse) to be applied to one of your children with either Rias or Runeas",
+        "type": "Perks",
+        "value": "Arrange a Sexual Encounter involving at least Rias Gremory, Venelana Gremory and Runeas Gremory"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Impregnate Runeas Gremory and ensure she safely gives birth to at least one child"
+      }
+    ],
+    "budget": 50,
+    "desc": "Over time, the Bloodline trait of the Gremory Clan has become obscured and the most notable members of its recent history, those being Rias, Sirzechs and Millicas, all have the trait of the Bael instead...\nClearly, this is a problem that we are equipped to deal with, so why don't we?\n\nYour Mission, should you choose to accept it, is to restart the Gremory Bloodline from its conception. Of course, we do not require you to clear the board and actively discourage it. Sure, you'd be skipping a lot of generations, but multi-generational Oyakodon still applies, no?\nAh, but the Mission is still to fuck Runeas specifically, so don't get too distracted, okay?\n\nFor the purposes of this Mission, you will temporarily gain three privileges if you do not already possess means to accomplish the same on your own.\n>The First, the next time you call upon a Gremory, you will, beyond a chance of failure, summon Runeas Gremory\n>The Second, any children between you and a member of the Gremory Bloodline, be it Runeas or one of her descendants in the Gremory clan, will be born a Pure-Blooded Devil no matter what race you are. (Hybridization methods, such as those of Tempest Jewelry, can still be applied after birth, but politics are a drag, so just accept the help, okay?)\n>The Third, any child will inherit the Gremory trait even if the parent has a different active trait as is the case with Rias. If you possess Meta Shift or Incandescent Ascendancy Machine, you may choose to ignore this Boon and overwrite the Gremory trait as an additional, single (Entire Template Stacks  do not count but individual Talents do) ability of your choosing that you yourself already possess, after which that will become the Gremory Trait and the setting will adapt (You may only do this once)\n\n[On a meta perspective, you may choose a reasonable trait for the Gremory to possess as canon has not provided us with one. Greatly Increased Luck, Precognition, Finding Treasures, Invisibility, Increased Magic Manipulation... The choice is yours as an author!\nOf course, the second part of The Third still applies if you'd rather go about it that way]\n\nAfter completing the Main Conditions of this Mission, you have 72 Hours to accomplish the Additional Objective if you wish",
+    "uid": "VFNWr"
+  },
+  {
+    "reward": "100 Credits. Also gain a Unique Perk “Expanded Universe”. With it changes done through Metashift may now optionally affect any retinue member with Papertrail as if they were locals.",
+    "image": "https://i.imgur.com/GU8C8lK.jpg",
+    "author": "Heaven Canceler",
+    "rewardType": "Perks",
+    "source": "",
+    "title": "Time Stripper Homura",
+    "loca": "Madoka Magica",
+    "lewd": true,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "Paradox Defense or 40 Credits",
+        "type": "Perks",
+        "value": "Continue your work for at least 5 additional loops, you may reset changes between loops if desired."
+      },
+      {
+        "reward": "Faerie Feast and Master Chef or 16 Credits",
+        "type": "Perks",
+        "value": "Get Homura to eat cake and whipped cream from Mami’s naked chest during a tea party."
+      },
+      {
+        "reward": "Zenryoku Zenkai or 16 Credits",
+        "type": "Perks",
+        "value": "Get Sakura Kyouko to wear a sexy nun outfit and try to sexually exorcise\na enemy."
+      },
+      {
+        "reward": "Covert Talent and Performance Talent or 16 Credits.",
+        "type": "Perks",
+        "value": "Get Sayaka Miki to use sex toys when together with Homura and Madoka without being noticed."
+      },
+      {
+        "reward": "Tsundere Service or 16 Credits",
+        "type": "Perks",
+        "value": "Make Madoka engage in BDSM play with Homura on at least one occasion while wearing a full dominatrix costume."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You must inform Homura about your plans and your cover story while keeping the truth about the Company secret from her."
+      },
+      {
+        "value": "For the duration of the mission, Homura cannot be captured and the effects of Lures and third party mind control fade within 8 hours."
+      },
+      {
+        "value": "Meta Shift or some other form of reality modification is mandatory. Homura herself will remember the original timeline, but still be affected by any physical or metaphysical changes."
+      },
+      {
+        "value": "Changes can be made throughout a loop, but at least 10 separate changes involving fetishes and individuals must be implemented per loop."
+      },
+      {
+        "value": "The mission is completed after continuous world adjustments over at least 1 loop or 45 days, whichever is longer."
+      }
+    ],
+    "budget": 250,
+    "desc": "Akemi Homura loops through time to save her friend Madoka from becoming a Magical Girl. A tragic and epic tale of adventure, friendship and the value of kindness. We thought a somewhat lewder twist would be more fun. For the purpose of this mission we want you to take the “guise” of an agent of the “Time Correction Bureau”, an organization that supposedly corrects temporal instabilities. Essentially, you are to act as if Homura’s time-travel has destabilized the timeline through her repeated looping and you need to fix it by making corrective adjustments. With these fixes of course being on the lewd side of things. From making magical girl costumes more revealing, over making Witches lewd sex-beasts, to making a girl’s soul gem clear if she drinks enough cum. Feel free to get creative.",
+    "uid": "Cvwhu"
+  },
+  {
+    "reward": 50,
+    "image": "https://media.discordapp.net/attachments/1080237127603859537/1198607246637146222/1578283514-e933e8a3f86fbcdf79b5068444b389ab.png",
+    "author": "Dionesia",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "MILF Aunt of a Thousand Aras",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [],
+    "conditions": [
+      {
+        "value": "You have 7 Days (168 Hours) per the standard time in the World (rather than your subjective time) to get Chiyo to consensually have sex with you and subsequently, for you to impregnate her at least once"
+      },
+      {
+        "value": "For the duration of these seven days, Chiyo is immune to all Capture Methods, including Love Confession but she will be automatically Captured if you successfully impregnate her with a total of one thousand, or more, children during these seven days"
+      },
+      {
+        "value": "At the end of these seven days, she will be taken back if she has not been Captured as detailed above"
+      },
+      {
+        "value": "The same amount of Credits will be paid out regardless of if you give her one child, or nine hundred and ninety-nine"
+      },
+      {
+        "value": "Should you fail to impregnate her even once, you will be fined 50 Credits for being a disappointment"
+      },
+      {
+        "value": "If Chiyo gives birth, you may choose to keep the child, or have it repossessed as Company Property along with Chiyo"
+      },
+      {
+        "value": "If you keep the Child, a subsequently Captured or Purchased Chiyo will automatically recognize them as one of her own regardless of when they reunite"
+      },
+      {
+        "value": "This Mission may not be taken if you already possess a Chiyo. Go fuck that one instead for free!"
+      }
+    ],
+    "budget": 200,
+    "desc": "Some girls have to be kept happy, you know? Do you feel qualified to accomplish it?\n\nUpon taking this Mission, you will be lent a clone of Chiyo from Ane Naru Mono. Though, a closer definition though would be that she is but a facet of the whole, an avatar, but the exact definitions don't have to matter right now. The Original, so to say, is as involved with this Mission as you are, dear Contractor.\nThis clone will appear somewhere in your immediate vicinity and comes pre-loaded with a sufficient personality to give you a chance as long as you are not outright rude, abuse or otherwise attempt to make her suffer without consent and proper training, allowing you to take this Mission just about anywhere!",
+    "uid": "EaNNA"
+  },
+  {
+    "reward": "Fertility Calibration I and II",
+    "image": "https://media.discordapp.net/attachments/1080237127603859537/1198600373947076780/image.png",
+    "author": "Dionesia",
+    "rewardType": "Perks",
+    "source": "",
+    "title": "Love Your Mother",
+    "loca": "Nasuverse",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "Blessed Talent",
+        "type": "Perks",
+        "value": "Convince Chaldea that Tiamat has been taken care of, in the middle of fucking her"
+      },
+      {
+        "reward": "All Lures are now 50% more effective on MILFs",
+        "type": "Other",
+        "value": "Do not use Bindings or alternative Capture Methods; have Tiamat proclaim her love for you through sheer sexual prowess!"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Impregnate Beast II: Tiamat"
+      }
+    ],
+    "budget": 150,
+    "desc": "An offer, for those confident in their victory and subsequent chance to escape!\n\nImpregnate Beast II: Tiamat\n\nThat's it. We recommend you at least have Polymorph, Wyldscape and Corruption Defense to make sure you survive the Primordial Sea... But some might actually want to take a dip there anyway, joining their Mother and gaining the power that comes with being corrupted by the Sea. It doesn't matter much to us, as long as she gets pregnant one way or another.\n\nUpon taking this Mission, you will be transported to the Seventh Singularity, shortly after Tiamat had awoken and before she entered her Titan form, allowing you to make your way over to her and do the do, after which you will have the option of being automatically retrieved via provided teleportation, unless you choose otherwise. We will only wait for one or both of you to be well and truly finished before offering the teleportation, no matter how many hours, rounds, days or etc. you end up taking\n\nIf you already possess both instances of Fertility Calibration, then your Reward will instead be another level of Fertility Calibration. If you already have all eight levels, take 10 Credits for your efforts",
+    "uid": "kZLwo"
+  },
+  {
+    "reward": 2,
+    "image": "https://images.gamewatcherstatic.com/image/file/2/54/93062/Doom_Eternal_1.png",
+    "author": "Silver Call",
+    "rewardType": "IMG Tickets",
+    "source": "",
+    "title": "Demonic Horde Containment",
+    "uid": "mpteT",
+    "loca": "DOOM: Eternal",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Reach a personal kill count of 1,000 demons."
+      },
+      {
+        "reward": "Template Stacking of any Transhuman companion or a Transhuman Perk worth 100 or less credits",
+        "type": "Perks",
+        "value": "Develope a replicable method to empower a regular human sufficiently to face a demon."
+      },
+      {
+        "reward": "Performance Talent, Communication Talent & Administrative Talent",
+        "type": "Perks",
+        "value": "Have anarmy of your own kill 1 million demons."
+      },
+      {
+        "reward": "A stack of Stress Defence, Mind Defence & Corruption Defence for each template.",
+        "type": "Perks",
+        "value": "Have a Wrathful characters as templates. It may be a substituteor power swap."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Keep the Demons from becoming the major power on earth for 12 years."
+      }
+    ],
+    "budget": 500,
+    "desc": "The gates of hell opened after the UAC facility on Mars was destroyed. This led to the release of demons from hell into the earthly plane.\nFor some reason, the prophesied hero is nowhere to be found. And he won't be found for 12 years.\nYour mission, should you accept it, is to protect as much of humanity and the earth as you could until the return of the Doom Slayer.\nGood Luck"
+  },
+  {
+    "reward": 1000,
+    "image": "https://i.pinimg.com/564x/0e/f0/00/0ef000def5b773277de25461b2f61e0a.jpg",
+    "author": "Yeveiras",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "There's A New Ruler In Hell",
+    "uid": "QspHp",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Get summoned in a tier 9 or higher World."
+      },
+      {
+        "reward": "You can sense the presence and status of your cultists, bless them, punish them, claim their souls, change their race and body.",
+        "type": "Other",
+        "value": "Get your first Cult."
+      },
+      {
+        "reward": "Bound retinue members can be \"Adjusted\" as if you had \"Advanced Runes: Mind\" and \"Advanced Runes: Body\"",
+        "type": "Other",
+        "value": "Capture a good heroic target and turn them in your demonic champion."
+      },
+      {
+        "reward": "In each of the 7 planes appears a pit that spawns demons (sin related), you may cotumize their features, they are loyal to you",
+        "type": "Other",
+        "value": "Conquer a mundane world and corrupt it's population to indulge in the sin you represent."
+      },
+      {
+        "reward": "You can now choose a template for each race of demons in your hell, it's applied to all the current ones and at birth.",
+        "type": "Other",
+        "value": "Amass a large army of demons and invade and conquer a Tier 6 world."
+      },
+      {
+        "reward": "All souls from the conquered afterlife are tranfered to your hell.",
+        "type": "Other",
+        "value": "Invade another afterlife and conquer it (Repeatable)."
+      },
+      {
+        "reward": "100 credits and the defeated Demon/Devil powers.",
+        "type": "Other",
+        "value": "Defeat or Kill a Demon/Devil that rules over an Hell/Underworld (Repeatable)."
+      },
+      {
+        "reward": 1,
+        "type": "IMG Tickets",
+        "value": "Defeat or Kill \"Satan\" or so called Demon/Devil. (Can't be a weakling)"
+      },
+      {
+        "reward": "Can transform beings one or more tiers lower than you into demons related to the sin you rapresent.",
+        "type": "Other",
+        "value": "What about some nuns? In a world create a convent of nuns that worship you."
+      },
+      {
+        "reward": 150,
+        "type": "Credits",
+        "value": "Kill a good aligned God/Goddess."
+      },
+      {
+        "reward": 1,
+        "type": "IMG Tickets",
+        "value": "Destroy a pantheon of gods."
+      },
+      {
+        "reward": "The Mc credit value.",
+        "type": "Other",
+        "value": "Make a deal with the Mc of a world and ruin their future. (repeatable)"
+      },
+      {
+        "reward": "\"Additional Binding\"",
+        "type": "Perks",
+        "value": "Capture 20 Good aligned targets and turn them into demons."
+      },
+      {
+        "reward": "One binding upgrade of your choice.",
+        "type": "Other",
+        "value": "Capture 20 Evil aligned targets and turn them into demons."
+      },
+      {
+        "reward": 666,
+        "type": "Credits",
+        "value": "Bring apocalypse and destruction to a world (Must result in extinction of the main race)."
+      },
+      {
+        "reward": "You can create artificial souls and imprint your will on them, insert them in objects or demons they gain a part of your powers.",
+        "type": "Other",
+        "value": "Reach tier X."
+      },
+      {
+        "reward": "Each temple will  work as a focus for tantric energy granting any ritual you perform anywhere +1 Resonance.",
+        "type": "Other",
+        "value": "Build a great temple in your honor in the world you visit. (repeatable)"
+      },
+      {
+        "reward": "You can summon the building to you it will be indestructible, while it's in sight you are 1 tier higher and your enemies 1 lower",
+        "type": "Other",
+        "value": "Create a Magnum Opus of sin, a great building that is the culmination of your choosen sin, it must ooze with sin, a truly grand and magnificent construcion \"Consacrated\" multiple times with ritual rappresenting the sin."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Have the heritage perks \"Death Mask\" & \"Your Soul Is Mine\""
+      },
+      {
+        "value": "Have the Binding method \"Tantric Arts\" & \"Art of Summoning\""
+      },
+      {
+        "value": "Have the perks \"Signed and Sealed\" & \"Letter of the Law\""
+      },
+      {
+        "value": "You won't be able to buy companions from worlds you haven't already visited."
+      },
+      {
+        "value": "No means of travel will work to get out of \"Hell\" except for being summoned. You may still access demiplane and related perks but still won't be able to travel to other worlds from there."
+      },
+      {
+        "value": "Your captures can't be sold."
+      },
+      {
+        "value": "You can't return perks bought under Psychopomp section once bought."
+      }
+    ],
+    "budget": 275,
+    "desc": "Ever thought about being the literal Devil and ruling over hell and the souls of the damned? No? well whatever, now you have the chance to make it more than an intrusive thought, you're welcome!\n\nFirst of all to accept this mission you must satisfy the following conditions:\n|Have the heritage perks \"Death Mask\" & \"Your Soul Is Mine\"|\n|Have the Binding method \"Tantric Arts\" & \"Art of Summoning\"|\n|Have the perks \"Signed and Sealed\" & \"Letter of the Law\"|\n\nGot them all? Good! Then it's time for juicy details, you may be asking yourself what exactly this mission entails, well pretty simple, not really, anyway let's start:\n\n-Your Psychopomp appearance gained trough the perk \"Death Mask\" will become that of a demon, you may customize it as you wish but it must have at least 3 demonic features, like horns wings or a tail.\n\n-You shall receive the perk \"The Unquiet Grave\" for free, but things will be a bit different, you will start with a plane where you as the ruler of hell reside, under this plane there will be 7 more, one for each capital sin, the size of your plane will be the sum of the size of the other 7, the size of this 7 planes of sin will depend on the amount of souls they house, 1 soul equals 1 meter added to the plane radius, but they will all start at 10 square Km.\n\n-As \"The\" devil you can't just waltz in a world like any other day! you won't be able to leave your hell, unless you are summoned in a world from someone already on said world. If you accepted this mission at Chargen you won't start in your choosen world, and will have to access it trough \"Demonic Grimoire\" if you are able to, to compensate for the loss have a 20% increase to your Chargen budget.\n\n-How do you get summoned? You will be given the ability \"Demonic Grimoire\" you will be able once a day to create a Grimoire and send it to a world of you choice, this book will have a similar ability to \"Jewels of Discord\" as it will steadly increase the urge to be opened and used, it will subtly pull a target to it's first location, and with time induce them to try and summon \"something\", the target will rationalize it as \"It's fake anyway\", this will result of course in you being summoned. Targets 2 tiers above you will be immune to the Grimoire effects.\n\n-Got summoned what then? The target that has summoned you will be instantly bound and will work as an anchor for you to that world, if she dies in a permanent way she will directly appear in your hell, and you will be forced out of the world. As long as she remains alive you are able to roam the world freely. If you wish to leave a world and return at a later date, you can perform in said world a special tantric ritual that will cost 10 Resonance, you will be able to create a permanent portal between Hell and the world that you can toggle on and off whenever you want.\n-What about contracts? you'll gain the ability \"Deal With The Devil\" in basic words you are able to make verbal or written deals with anyone, but they will always be interpreted in the most advantageous way for you, plus this contracts have the power to alter reality itself to make the deal come true and dosen't depend on your power, basically a wish granting deal.\n\n-The souls empower you, the more souls in your hell the more powerfull you are, everything from talents lures templates and world acquired abilities are rendered more powerfull by the number of souls you possess. Starting from 10 souls your powers will be doubled then for each additional zero to the number of souls the multiplier will double. Every 7 million souls you will gain one tier.\n\n-You must choose one of the 7 sins as your own, you'll become a physical rappresentation of that sin, beings one Tier or more below yours, in your presence will easly and rapidly start to feel influenced by your sin, for example for Greed they may try to get their hands on anything of value in sight, or for Lust they'll become a dog in heat, you may choose to toggle this effect on and off. You can also direct this influence to someone in particular greatly enhancing it's effects and easly bendig them to you will. Lastly after choosing your sin you'll be able to create a custom power of your choice that embodies the choosen sin, for example for Greed it may be the ability to become stronger the more treasures you possess, or for gluttony the ability to eat energy based attacks, the only limit is that it must be easly connected to the sin, the Tier of this power will always be equal to your Tier.\n\nFun part is over! Now it's time to see what is required of you to complete the mission:\n|Accumulate a total of One Million souls in each of your 7 planes of sin|\n|Have at least 1 tier 8 being to oversee each of the 7 planes|\n|Connect Hell to 10 different world trough permanent portals|\n|Make 1000 deals trough \"Deal With The Devil\"|\n|Capture 10 good and 10 Evil Targets|\n|Have 10 cults in your name|"
+  },
+  {
+    "reward": "100 + Any perk or Rides up to 100 credits.",
+    "image": "https://64.media.tumblr.com/6954f43d46a2ae71bd69541c96e5cc68/4fb92ec1135ae7b6-77/s540x810/88e19c0d941b23542a349ead11e755ff539fc266.jpg",
+    "author": "irugaa0",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Somatology Laboratory - Experimentation Logs",
+    "loca": "Ragnarok",
+    "lewd": false,
+    "scope": "Quick",
+    "objectives": [
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Collect 10 exemplars of each equipment inside the lab."
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Collect 10 Specimen of EVERY monster inside the lab."
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Collect the original bodies inside the lab."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Due to constrains with that world timeline you can’t take any companion with you."
+      },
+      {
+        "value": "Due to constrains with that world timeline you are limited to Tier-6"
+      },
+      {
+        "value": "Capture the Chief Scientist Wolfchev."
+      },
+      {
+        "value": "Collect all experimentation logs inside the lab."
+      },
+      {
+        "value": "Collect one exemplar of each equipment inside the lab."
+      },
+      {
+        "value": "Collect one Specimen of EVERY monster inside the lab. (00/29)"
+      },
+      {
+        "value": "Each MVP’s and Ghost count as different specimen."
+      }
+    ],
+    "budget": 150,
+    "desc": "Deep inside the Republic of Schwartzvald in the City of Lighthalzen, some horrible experiments were performed in the Biolabs of the Rekenber Corporation. These experiments piqued the interest of some of the company clients, and he wants copies of EVERYTHING inside the lab.\n\nThis World is a mix between the Webtoon and the Online world.",
+    "uid": "wfxvR"
+  },
+  {
+    "reward": 500,
+    "image": "https://static1.cbrimages.com/wordpress/wp-content/uploads/2022/06/Hitogami-smiling-mischievously-in--Mushoku-Tensei-Jobless-Reincarnation.jpg",
+    "author": "MagicalROB",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Death of the Man God",
+    "loca": "Mushoku Tensei",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": 500,
+        "type": "Credits",
+        "value": "Defeat Hitogami before the story's original final battle."
+      },
+      {
+        "reward": 500,
+        "type": "Credits",
+        "value": "Defeat Hitogami before Rudeus Greyrat's death."
+      },
+      {
+        "reward": 1,
+        "type": "IMG Tickets",
+        "value": "Defeat Hitogami before the Mana Calamity."
+      },
+      {
+        "reward": 2,
+        "type": "IMG Tickets",
+        "value": "Capture Hitogami and sell him to the Company. We need more gods to sell."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Contractor must be the one to deliver the finishing blow to defeat Hitogami. Contractor also has the option to capture him."
+      }
+    ],
+    "budget": 100,
+    "desc": "You think you can take on a god, O' Contractor? You think you can defeat the one who has the minds of nearly all humans under his grasp for manipulation? The One who the Strongest this world has to offer couldn't defeat even after 20,000 years of reset after reset? He who has made Apostles out of some of the most powerful/influential people in this world? If you think you have what it takes, take him out.",
+    "uid": "FaMpk"
+  },
+  {
+    "reward": "Inexhaustible and prerequisite perks, 1 T8 ticket for any waifu that is Sun or Light themed.",
+    "image": "https://i.imgur.com/JwAkPx0.png",
+    "author": "Heaven Canceler",
+    "rewardType": "Perks",
+    "source": "",
+    "title": "Dyson Sphere Project",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "200 Credits Ride Discount or 80% Directly transferred to Credits. Also Counts for leftovers.",
+        "type": "Other",
+        "value": "Create a Dyson Swarm with an output of at least 50 Terawatts-hours of power"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "We need you to create a Dyson sphere that produces equivalent to at least 50% of the output of earth’s sun in terawatt."
+      },
+      {
+        "value": "Production must be finished within 70 years of time or less."
+      },
+      {
+        "value": "At the customer’s request, the production of the Dyson Sphere may not lead to destruction of civilizations or biospheres of planets with life on it."
+      },
+      {
+        "value": "During production and afterwards for 100 years, 99% of the energy produced will be transferred. You may use the rest for yourself."
+      },
+      {
+        "value": "You may take over an existing Dyson Sphere so long as the 3rd Condition still gets fulfilled."
+      }
+    ],
+    "budget": 450,
+    "desc": "We have gotten a big request for energy production from a certain interstellar civilization and are thus looking for someone that can create a proper power production facility. Unfortunately a few power plants aren’t enough, we need something really big. Thus for this mission, we need you to build a Dyson Sphere and collect a good bit of a sun’s energy output. For the purpose of this mission, we are willing to take care of the actual transfer of the energy to the customer so you don’t need to worry about that. Due to time-dilation between realities we are not in a huge rush but we would still ask you to do this within a reasonable time.",
+    "uid": "uUOVK"
+  },
+  {
+    "reward": "One waifu or husbando of choice (with a tier equal or lesser to the highest captured individual) with the Superhero tag.",
+    "image": "https://i.imgur.com/96hWw5Q.jpg",
+    "author": "cthulhu",
+    "rewardType": "Companions",
+    "source": "",
+    "title": "Power Girl vs Darksied",
+    "loca": "DC",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": 1,
+        "type": "Credits",
+        "value": "Capture an individual with the Superhero tag, above Tier 5 (Repeatable)"
+      },
+      {
+        "reward": "Corruption Defense or Polymorph Defense",
+        "type": "Perks",
+        "value": "Undo the bimbofication effect on at least one individual with only in-universe means"
+      },
+      {
+        "reward": "Automatic capture of the bimbofied Darksied",
+        "type": "Companions",
+        "value": "Cause Darksied to become infected by the Lust Equation and become a bimbo"
+      },
+      {
+        "reward": "One Justice League Watchtower (or equivalent) of your own, deployed in a world of your choosing",
+        "type": "Other",
+        "value": "Capture a Lantern, a Flash, a Kyrptonian, a Martian, an Amazon, an Atlantean, and a Bat family member"
+      },
+      {
+        "reward": 10,
+        "type": "Credits",
+        "value": "Arrange for a Hero/Villain to fuck their bimbofied main rival - ie, Luthor and Superman, Joker and Batman (Repeatable)"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Once Darksied returns to earth, the mission ends automatically, and any waifu not bound within 24 hours is lost"
+      },
+      {
+        "value": "You lose access to this earth upon mission end, but gain a mainline DC world of choice as compensation"
+      },
+      {
+        "value": "All captured individuals are treated as one tier less than their normal selves to represent Darksied intentionally crippling them."
+      }
+    ],
+    "budget": 0,
+    "desc": "You know how the story goes in comic worlds.  Big scary villain gets access to phenomenal cosmic power, and tries to use it to conquer earth.  Normally it would be weaponized depression thanks to Darksied's obsession with the Anti Life Equation, but this time he seems to have kicked in the door to Mt Olympus and stolen some things, because he appears to be using the River Lethe to weaponize horniness and Bimbofy the earth.  Now, strictly speaking, this is a heavy variant universe because Darksied generally doesn't appear to have a sex drive, but you ought to know we really don't care about that and are happy to take advantage of the earths abrupt lack of defenders, even if it does put us - or rather, you - on something of a timer.\n\nRegardless, the briefing.  Darksied has used his stolen power to drop the iq of every woman on earth by a significant number, and turned an unfortunate number of men into women - with lowered iq, naturally - as well.  Amongst others, this means the man of steel will not be available to help save the day. Now, as to the remaining men among the heroes, well, they've been infected with a fragment of lust altered Anti Life.  Lets just call it the Lust Equation for now.  As such, they're somewhere between wild beasts, and smaller Darksieds.  Darksied himself has retreated to Apokalips to refine Power Girl into one of his furies, and will be returning once the infected men dominate a significant portion of the empowered population.\n\nBy our estimation, this will take no more than a week, and will only take that long because the infected men are going to be more distracted by doing their utmost to ruin any woman within their grasp than they are with specifically seeking out more women to infect.  In the meantime, well, anyone not already claimed is effectively free real estate.  Go in, stamp as many people as you can, and get back out.  You're free to keep as many of these sluts as you want, but do be aware that the vast majority of them are now crippled as heroes.  Or villains, if that's your style.",
+    "uid": "GocuC"
+  },
+  {
+    "reward": 150,
+    "image": "https://i.redd.it/nl93le99w7wa1.jpg",
+    "author": "TombGuard",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Stealing the Assassin",
+    "loca": "Spy X Family",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Get Yuri to give you his blessing."
+      },
+      {
+        "reward": 40,
+        "type": "Credits",
+        "value": "Adopt Anya yourself."
+      },
+      {
+        "reward": 25,
+        "type": "Credits",
+        "value": "Beat Yor in hand to hand combat during a sparring match."
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Finish the mission in six months."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You enter the world of Spy X Family one year before canon begins."
+      },
+      {
+        "value": "Yor is immune to lures and mind control. The only poison or drug that she is vulnerable to is alcohol."
+      },
+      {
+        "value": "The two of you must be married and Yor must be pregnant within a year for the mission to complete."
+      }
+    ],
+    "budget": 0,
+    "desc": "Yor is one of a kind across many universes. It is absurdly rare to find that much sexy, innocence, and violence in the same curvy package. Since she is such a catch, one of our clients is financing an expedition for a lucky Contractor to catch one of these beauties for their own. It doesn't matter how you meet her or how you seduce her. It could be you survive an assassination attempt by her and sleep with her as a result. You could stumble into her on the street and begin a fairy tale romance. All that matters is that she has to have a ring on her finger and your bun in her oven before Twilight ever begins his fateful mission.",
+    "uid": "oThjp"
+  },
+  {
+    "reward": 2,
+    "image": "https://i.pinimg.com/564x/ee/62/53/ee6253b0b7ff7af806f767aa11b6e647.jpg",
+    "author": "Yeveiras",
+    "rewardType": "IMG Tickets",
+    "source": "",
+    "title": "Demonic Invasion",
+    "uid": "dBrOl",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": 30,
+        "type": "Credits",
+        "value": "Kill the ruler of a country/nation ecc."
+      },
+      {
+        "reward": 15,
+        "type": "Credits",
+        "value": "Kill a self proclaimed God or Demon (Repeatable)"
+      },
+      {
+        "reward": "Obtain the killed God divinity and domain/Obtain the killed Demon Mysthic powers.",
+        "type": "Other",
+        "value": "Kill a real God or Demon (Repeatable)"
+      },
+      {
+        "reward": "You may customize wich ability your minions obtain upon creation, may only give powers you possess or have seen in action.",
+        "type": "Other",
+        "value": "Conquer a Country/Kingdom.. and be recognized as a superior being (God/Demon) by the populace."
+      },
+      {
+        "reward": "Your Lures powers is multiplied by the number of Queen/Princess figure you have captured.",
+        "type": "Other",
+        "value": "Capture a Queen/Princess figure and make her descend into perversion."
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Build an Harem Palace."
+      },
+      {
+        "reward": "The resonance bonus given by preparation, number of additional casters and leght of the ritual are doubled.",
+        "type": "Other",
+        "value": "Build a great temple to use for your Tantric Arts."
+      },
+      {
+        "reward": "Receive a relic rapresenting the killed \"Hero\" it will give +2 resonance when used in a ritual.",
+        "type": "Other",
+        "value": "Kill the \"Hero\" of a world (Repeatable)."
+      },
+      {
+        "reward": "One weapon of your choice (has company protections) with one ability form a Demonic/Monster character of your choice.",
+        "type": "Other",
+        "value": "Cause the death of 10000 beings (Animals don't count). Repeatable, but the number increases by one 0 each time."
+      },
+      {
+        "reward": "Obtain the ability \"Kaiju Creation\" works like \"Demonic Minion Creation\" but with Kaijus instead.",
+        "type": "Other",
+        "value": "Kill a gigantic monster."
+      },
+      {
+        "reward": 1,
+        "type": "IMG Tickets",
+        "value": "Capture a Goddess."
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Build a Statue of yourself in 10 Nations/Kingdoms ecc.."
+      },
+      {
+        "reward": "Your talents power is multiplied by a number equal to the defeated strong and admired member of an enemy army.",
+        "type": "Other",
+        "value": "Defeat a strong and admired member of an enemy army."
+      },
+      {
+        "reward": "Your minions may consume a defeated enemy and gain his abilities.",
+        "type": "Other",
+        "value": "Kill one of the top 10 strongest of your world."
+      },
+      {
+        "reward": "10 to 100 credits.",
+        "type": "Other",
+        "value": "Humiliate your enemy, the greater the humiliation the greater the reword.(repeatable)"
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Conquer another world(repeatable)."
+      },
+      {
+        "reward": "The ability \"Vulture\" now let's you steal all the stats from the dead.",
+        "type": "Other",
+        "value": "Have killed more beings than any other in the world."
+      },
+      {
+        "reward": "Your retinue members may choose one of the 7 sins indulging in it will boost their stats permanently once a day by (7xYourTier)%",
+        "type": "Other",
+        "value": "Have at least 15 Retinue members, and all of your retinue are at least in part Demons."
+      },
+      {
+        "reward": "Any tantric ritual used inside of the \"Forbidden City\" has it's costs halved.",
+        "type": "Other",
+        "value": "Build a forbidden city for yours and your harem pleasure, it must contain a temple complex a gigantic garden, the biggest palace in the world the finest arts, and it must be under the effect of a permanent \"Art of Warding\" and \"Art of Domains\""
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You must be a Demon/Monster or have a template of one such character."
+      },
+      {
+        "value": "Wage war against any government in the world."
+      },
+      {
+        "value": "Destroy the current power that governs the world and establish yourself as the ruler of the world."
+      },
+      {
+        "value": "Capture at least 20% of the female targets of your world present in the catalog."
+      },
+      {
+        "value": "Make sure your power is both feared and revered by most."
+      },
+      {
+        "value": "Build a mighty capital and palace for yourself and rule for at least 10 years."
+      }
+    ],
+    "budget": 250,
+    "desc": "A Demon lord, fierce, powerfull, chaotic, invading worlds with his neverending armies, destroying peace and capturing beautifull women across the globe, who hasn't heard of such characters in stories, what if it was made a reality? Contractor one of our dearest clients wants this fantasy realized, will you accept the challenge?\n\nTo accept this mission you must be a Demon/Monster or have a template of one such character, anything that can be categorized as demonic or monster is valid (examples are Vampires, Devils, Cursed Spirits ecc...).\nAfter accepting this mission you will be subject to the following restrictions:\n-The only \"Template Stacking\" you will be able to buy are those from Demonic/Monster characters\n-All \"Template Stacking\" you had before accepting this mission that are not from Demonic/Monster\ncharacters will be sealed, and you won't be able to acces their powers untill mission completition\n-Only Demonic/Monster Retinue members may follow you in new worlds untill mission completition\nOther Retinue members may still reside in your demiplane but won't be able to access other worlds\n-You won't be able to buy any companions, but receiving them through mission rewards is still possible\n-You may not play the part of a Hero while this mission is active\n-The only Heritage perks avaible for purchase while this mission is active are those from Dragon, Outsider Psychopomp and Wendigo.\n-Upon accepting the mission you shall choose one world, you will be transported there and the mission will start(If taken at Chargen this does not apply)\n-You won't be able the leave the new world untill mission completition\n\nYour role to play in this mission, as stated before, will be that of a warmongering Demon lord with a desire for women and conquest, to be more specific to complete this mission you are expected to reach this objectives:\n-Wage war against any government in the world\n-Destroy the current power that governs the world (or all of them if there is more than one)\n-Establish yourself as the ruler of the world\n-Capture at least 20% of the female targets of your world present in the catalog\n-Make sure your power is both feared and revered by most\n-Build a mighty capital and palace for yourself\n-Rule for at least 10 years\n\nYou have been told what is expected of you and what restrictions you will suffer, now it's time to see what \"Tools\" you shall receive:\n-What is a Demon lord without his armies? Receive the ability \"Demonic Minion Creation\" you will be able to create monsters and demons that will be completely devout and loyal to you, they may range from monsters with the intelligence of a mere beast, to humanoid beings with real sentience and intellect, their power will be one tier below yours or even lower if you wish. Their creation will be near instantaneous and energy free but their numbers will be limited, you may create only 1 minion for square kilometer under your rule (demiplane, dungeons ecc.. don't count for this ability), dead minions may be brought back to life after a period of 24h from their death, at the start you may be able to do so only once a day, but the more you do so the more times in a day you may bring back a minion form death\n-Receive a new lure \"A Devil's Charm\" The more proof of your Lust, Greed, Pride ecc.. that a potential waifu witnesses the more attracted to you they will be, to a point where they will simply ignore your potentially evil attitude\n-Receive the ability \"Stats Progression\" now all your current capabilities will be quantified in numeric stats and their scale will be in base of the \"Stats\" of other being in the world you are currently on, you may see your stats and that of your enemies and retinue if you possess the perks \"HUD\" and \"Toggle\". This ability also applies to Demonic/Monster retinue members that possess \"HUD\" and \"Toggle\"\n-Receive the ability \"Vulture\" upon the death of a being caused by you/retinue member/minion, you will be presented with the stats of the dead and will be able to choose one of said stats (Example HP, mana, Haki ecc) that will be added to your own of the same type\n\nLastly here are some condition you may take under cosideration to make the story a bit more interesting for our client, of course you shall be greatly rewarded, with 50 credits for every option taken:\n-Take this mission during Chargen phase with Origin \"Drop-in\", and the starting world has a unique power system (example are haki, cursed energy ecc...)you may take one related ability\n-Demon lord is too mainstream it seems, what about Demon Queen? Be a woman or at least Futa\n-The choosen world has a main character that relies on the power of friendship or even sillier like the power of boobs, beat him one way or another, you shall be paid in advance but if you fail to acomplish this objective the payment will be detracted from your funds\n-The choosen world has a overlord or secret ruler, defeat them\n-Use Tantric Arts as your binding method"
+  },
+  {
+    "reward": 2,
+    "image": "https://i.pinimg.com/originals/f5/6e/ee/f56eee988191aaa91401318f862ebf3a.jpg",
+    "author": "Pleb",
+    "rewardType": "IMG Tickets",
+    "source": "",
+    "title": "My Zombie Academia",
+    "loca": "My Hero Academia",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": 25,
+        "type": "Credits",
+        "value": "Kill 50 pro-hero zombies"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Kill 100 pro-hero zombies"
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Kill a top 10 hero zombie"
+      },
+      {
+        "reward": 150,
+        "type": "Credits",
+        "value": "Kill zombie hawks"
+      },
+      {
+        "reward": 200,
+        "type": "Credits",
+        "value": "Kill zombie Endeavour"
+      },
+      {
+        "reward": 350,
+        "type": "Credits",
+        "value": "Kill zombie All Might"
+      },
+      {
+        "reward": 350,
+        "type": "Credits",
+        "value": "Kill zombie all for one"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Kill 100 zombie villains"
+      },
+      {
+        "reward": "Body Defense x 2",
+        "type": "Perks",
+        "value": "Create a human settlement with 10 people"
+      },
+      {
+        "reward": "Wild Defense x 2",
+        "type": "Perks",
+        "value": "Create a human settlement with 50 people"
+      },
+      {
+        "reward": 25,
+        "type": "Credits",
+        "value": "Create a human settlement with 100 people"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Create a human settlement with 500 people"
+      },
+      {
+        "reward": "Zombina",
+        "type": "Companions",
+        "value": "Create a human settlement with 1000 people"
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Create a human settlement with 5000 people"
+      },
+      {
+        "reward": "Template Stacking I & II (Panacea/Amy Dallon)",
+        "type": "Perks",
+        "value": "Create a human settlement with 10,000 people"
+      },
+      {
+        "reward": "Inexhaustible",
+        "type": "Perks",
+        "value": "Create a human settlement with 100,000 people"
+      },
+      {
+        "reward": "1 tier 7 or below waifu",
+        "type": "Other",
+        "value": "Create a zombie vaccine"
+      },
+      {
+        "reward": "One quirk from 1-A of your choice not including One for all",
+        "type": "Other",
+        "value": "Kill class 1-Z        (Kill all hero students in 1-A that have been turned)"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Kill all zombies"
+      },
+      {
+        "value": "Build a human settlement with over 100,000 people in it"
+      },
+      {
+        "value": "Create a Immunity shot for the zombie virus and give it to all people in your settlement"
+      },
+      {
+        "value": "You can not possess anyone above tier 6"
+      }
+    ],
+    "budget": 140,
+    "desc": "Ok so we have a big problem, You see sometimes we send random beings in to worlds to test our identify sentient entity kill and integration system or as we call it our Isekai system, but today we may have had a little mishap due to a new intern that has resulted in a fairly large group of walkers from a walking dead universe to be sent to a MHA universe and have been randomly scattered around the globe at the time of the USJ attack which has caused some unforeseen issue's.\n\nYeah see, the problem with biological super powers such as quirks is they will also be effected if the persons biology is radically changed by things such as crippling injury's, human experimentation and oh I don't know a VERY SUPER INFECTIOUS ZOMBIE VIRUS OUTBREAK, And due to said outbreak all quirk users have had a increase in their quirks power due to the human limits that kept them save form the backlash of their powers being removed and some even even experienced mutations in their quirks , But this also has the side effect of some stronger quirked zombies damaging themselves.\n\nOk enough messing around here is your mission. Kill all of the zombies, stop further infection and re-establish some form of society. Goodluck and BTW a few zombies landed in the USJ have fun.   ",
+    "uid": "mMipW"
+  },
+  {
+    "reward": "15% off of 1 Greek item from the Green Eye Orb market, and one of the summoned Servants is automatically captured with the command spells of their Master given to you. (the Servant/Master pair is randomly selected)",
+    "image": "https://images2.imgbox.com/3f/26/s44ZHtKa_o.jpg",
+    "author": "Randomas6413",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Made in Greece",
+    "loca": "Nasuverse",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "A ticket for a 20 minute audience with a Greek God of your choosing, can only choose one from worlds you've visited.",
+        "type": "Other",
+        "value": "Somehow manage to get one of the masters to summon a Divine Spirit of Greek mythology. (neither Medusa nor alternative versions of her count towards this goal)"
+      },
+      {
+        "reward": "Choose a retinue member, they now have an identical twin brother/sister. This twin will not give credits if captured or sold.",
+        "type": "Other",
+        "value": "Make sure at least two of the Heroic Spirits are related in some way by their myth/story. (being part of the Argonauts will not count, and neither will connections or feuds with the Greek pantheon)"
+      },
+      {
+        "reward": "Magical Glasses that allow its wearer to gradually increase cowardice in those two tiers below them in its visual range.",
+        "type": "Other",
+        "value": "Turn Matou Shinji into a Demi-Servant for Perseus, the main personality in charge is up to you. Shinji will be temporarily aged up to appropriate age during the possession for this goal until Perseus is removed."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You will arrive during the Fourth Holy Grail War 4 weeks before the first Servant is summoned."
+      },
+      {
+        "value": "Your mission is to make sure every Servant summoned by each of the Masters are of Greek descent."
+      },
+      {
+        "value": "If even ONE Servant is from anywhere but Greece then this mission will be considered failed and none of the rewards will be distributed."
+      },
+      {
+        "value": "Neither the Masters nor their Servants can be captured until the missions completion, however they may still be affected by Lures."
+      }
+    ],
+    "budget": 0,
+    "desc": "In most of the Holy Grail Wars you'll see there's usually at least one Heroic Spirit that hails from Greece. And not without reason, as many great heroes were produced in that country and a lot of mythology was there to make them extra famous too, not least of them the Greek gods themselves.\n\nSo one might wonder, what if EVERY Servant summoned happened to be a Greek hero? That's for us to witness and you to make happen, as we will send you to the time of the Fourth Holy Grail War situated in Fuyuki with the mission of making sure every Grail War summoned Servant hails from Greece, whether they be a famous hero of great myth or not.",
+    "uid": "lOUFs"
+  },
+  {
+    "reward": 2,
+    "image": "https://i.redd.it/rhaisgp192141.jpg",
+    "author": "ErosArrow",
+    "rewardType": "IMG Tickets",
+    "source": "",
+    "title": "Starting Up A School",
+    "loca": "Generic",
+    "lewd": true,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Hire 10 teachers."
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Hire 20 teachers"
+      },
+      {
+        "reward": "A duplicate is added to your demiplane.",
+        "type": "Other",
+        "value": "Build the campus into a wonder of architecture."
+      },
+      {
+        "reward": "You gain a photographic memory of everything you have ever read.",
+        "type": "Other",
+        "value": "Collect a library of magical and conventional subjects unlike anything your world has seen before."
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Enroll 50 students."
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Enroll 100 students."
+      },
+      {
+        "reward": 200,
+        "type": "Credits",
+        "value": "Make magic commonplace across the planet."
+      },
+      {
+        "reward": "Any attack on your school will be condemned by the entire planet.",
+        "type": "Other",
+        "value": "Get international support for your school."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You must start the school from scratch. You cannot just take over another school."
+      },
+      {
+        "value": "You must have at least 100 students in attendance at one time."
+      },
+      {
+        "value": "Your school must be running for at least long enough so that your first class to graduate from the school."
+      },
+      {
+        "value": "The school must be safe from threats both mundane and magical."
+      }
+    ],
+    "budget": 0,
+    "desc": "Hogwarts was always lauded as the greatest magic school in its universe. Despite its myriad of dangers (including but not limited to three-headed dogs in rooms, basilisks in the pipes, acromantulas in the forest, dementors on the grounds, minimal oversight on student learning, and shoddy teachers), it reached a level of respectability among learning centers for magic. You could probably do better and this is your opportunity. Start a school for magic and have it become the premier institute for magical education in whatever world you choose.",
+    "uid": "lXYGY"
+  },
+  {
+    "reward": 500,
+    "image": "https://i.postimg.cc/GtG3Sz4h/Algalon-the-Observer-1-JPG.webp",
+    "author": "SnappingTurt3ls",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Empowered Humanity",
+    "loca": "Mass Effect",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": 25,
+        "type": "Credits",
+        "value": "10% of humanity is empowered"
+      },
+      {
+        "reward": 25,
+        "type": "Credits",
+        "value": "25% of humanity is empowered"
+      },
+      {
+        "reward": 25,
+        "type": "Credits",
+        "value": "50% of humanity is empowered"
+      },
+      {
+        "reward": 25,
+        "type": "Credits",
+        "value": "100% of humanity is empowered"
+      },
+      {
+        "reward": "Science and Engineering Talents OR Psycic/Soul talent",
+        "type": "Perks",
+        "value": "Human technology is some form of magitech, psitech, or other form of technology that is only possible due to their abilities"
+      },
+      {
+        "reward": "All human created intelligences gain the ability to using humanities abilities and are considered human by the company",
+        "type": "Other",
+        "value": "Humanity creates and makes widespread usage of some form of AI"
+      },
+      {
+        "reward": "All humans get a lesser version of Psycic/Soul talent, whichever is more appropriate for the abilities they have.",
+        "type": "Other",
+        "value": "Humanity dominates the galactic scene when they make first contact"
+      },
+      {
+        "reward": "Everlasting Talent",
+        "type": "Perks",
+        "value": "Humanity solves aging"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Humanity must survive"
+      },
+      {
+        "value": "At least 5% of all humans born must have some sort of supernatural ability by the Eden Prime attack, or some equivalent event should it not occur"
+      },
+      {
+        "value": "Humanity must not be totally dependent on the mass relays for FTL travel"
+      },
+      {
+        "value": "All Reapers must be either destroyed or sold to the company"
+      },
+      {
+        "value": "The supernatural powers of humanity can be anything that, if seen by citadel scientists, would be considered physics breaking"
+      }
+    ],
+    "budget": 700,
+    "desc": "Here's an interesting mission, you will be sent to Earth five years before the Prothean ruins on Mars are found. This gives you 42 years until the Reapers attack, assuming nothing sets them off early and the Alpha Relay is destroyed. \n\nIn this time frame you will uplift humanity and prepare them for what is to come. Create a mass empowering event of some sorts to where a significant portion of humanity has some sort of supernatural powers, and are also technologically advanced enough to dominate on the galactic scene.\n\nJust be careful not to set off the reapers too early.",
+    "uid": "SBvRS"
+  },
+  {
+    "reward": "Weed that can pacify Tier 11-13 beings",
+    "image": "https://i.redd.it/2g2xbm774wg91.png",
+    "author": "Pleb",
+    "rewardType": "Other",
+    "source": "",
+    "title": "can't get much higher",
+    "loca": "One Piece",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": 20,
+        "type": "Credits",
+        "value": "Get luffy high"
+      },
+      {
+        "reward": 60,
+        "type": "Credits",
+        "value": "get the whole straw hat gang high"
+      },
+      {
+        "reward": 150,
+        "type": "Credits",
+        "value": "Get the 7 warlords of the sea high"
+      },
+      {
+        "reward": 250,
+        "type": "Credits",
+        "value": "Get the 4 yonkos high"
+      },
+      {
+        "reward": "Communication Talent, Inculcation Talent",
+        "type": "Perks",
+        "value": "Smoke a blunt with luffy and Blackbeard"
+      },
+      {
+        "reward": "Money Talent",
+        "type": "Perks",
+        "value": "Get nami to help sell your product"
+      },
+      {
+        "reward": 200,
+        "type": "Credits",
+        "value": "Get the 4 admirals high"
+      },
+      {
+        "reward": "Inexhaustible",
+        "type": "Perks",
+        "value": "Get the fleet admiral high"
+      },
+      {
+        "reward": "Template Stacking I & II (Whitebeard/Edward Newgate)",
+        "type": "Perks",
+        "value": "Get Whitebeard high"
+      },
+      {
+        "reward": "Mara Mara no Mi",
+        "type": "Other",
+        "value": "Get a celestial dragon high"
+      },
+      {
+        "reward": "You are no longer effected by sea water or sea stone",
+        "type": "Other",
+        "value": "Get all of the celestial dragon's high"
+      },
+      {
+        "reward": "Mara Mara no Mi (Awakened)",
+        "type": "Other",
+        "value": "Get all of the Gorosei high"
+      },
+      {
+        "reward": "World peace",
+        "type": "Other",
+        "value": "Get Imu high"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Drop the world crime rate by 50 percent"
+      },
+      {
+        "value": "sell 100,000 kg of weed"
+      }
+    ],
+    "budget": 400,
+    "desc": "Did you ever think that the world of one piece would be more peaceful if everyone just chilled out a bit, well we did so let's find out if it would work. \n\nFun fact did you know weed doesn't exist in the one piece universe, so let's change that. Your job is to produce copious amounts of high quality weed by using the seed's we provide you to get as many people high as you can and stop major conflict's by making people to high to fight.",
+    "uid": "XtLcB"
+  },
+  {
     "reward": "The Capture Credit value of the being you recruit times 1.5(Rounded up). Does not multiply TC tickets. If they are successfully hired you will be given a direct line to them via your Company device, perfect for calling in favors or doing office gossip with",
     "image": "https://media.discordapp.net/attachments/701634785570979912/1196314499481878579/fantasy_interview2.jpg",
     "author": "the 44'th ChoirBoy",
@@ -491,7 +2349,6 @@
     "desc": "Hello there contractor, today we have quite a mission for you, see in recent times some of our most estimed clients have taken interest in the world of Bleach and it's many possibilities for entertainment, and together they have collected quite the investment to make this mission possible.\nYou see for this mission multiple scenarios have been put together, each one with it's advantages and it's own completition requirements, you shall choose one between this scenarios and complete the necessary conditions and as such complete the mission, regardless of the scenario you may take if you accept this mission at Chargen you will receive a bonus of 15 credits for intensity level. Now let's procede to the hearth of this mission the scenarios.\n\nThe scenarios (of wich you must choose one) are the following:\n\n-The Tsunayashiro heir: You will take the Origin Extra (10) as the son/daughter of the current head of the Tsunayashiro noble house, one of the 5 great noble houses of the shinigami world, you shall appear on the day Kisuke Urahara, Tessai Tsukabishi and Shihouin Yoruichi make their escape to the human world. \n\nYour provided advantages for this scenario are as follow:\n|Soul Talent|\n|Administrative Talent|\n|Body Defense x2|\n|Fools Gold|\n|Easy mastery and creation of Kidō|\n|100 credits|\n\nYour objectives to comlete this scenario and the mission are as follow: \n|Become the head of the Tsunayashiro house|\n|Become a Captain of the Gotei 13|\n|Obtain the Hogyoku|\n|Save your house from the assassination planned by Tokinada Tsunayashiro|\n|Defeat at least one Elite Sternritter/Schutzstaffel during the TYBW|\n|Become the most influent noble in Seiretei|\n\n-The new Kenpachi: You will take the Origin Extra (10) as a resident of a district of the Rukongai, you will appear during the period in wich Kuruyashiki is the Kenpachi 10 years before his death at Azashiro's hands.\n\nYour provided advantages for this scenario are as follow:\n|Martial Talent|\n|Body Tune-Up|\n|Drain Defense x1|\n|Stud Service|\n|Easy mastery for weapons|\n|150 credits|\n\nYour objectives to comlete this scenario and the mission are as follow: \n|Become the Kenpachi|\n|Defeat Unohana Retsu|\n|Be recognized as the strongest shinigami|\n|Be recognized as a war potential by Yhwach|\n|Kill Royd Lloyd during the first invasion of the TYBW|\n\nNew genius at the academy: You will take the Origin Extra (10) as a student just enrolled in the Shin'ō Academy the same year as Rukia and Renji.\n\nYour provided advantages for this scenario are as follow:\n|Blessed Talent|\n|Template Stacking I of your choice|\n|Stress Defense x2|\n|Love Spot|\n|Talents are Thrice as effective|\n|180 credits|\n\nYour objectives to comlete this scenario and the mission are as follow: \n|Be recognized as the greatest genius of the last century|\n|Graduate early from the academy|\n|Instead of remaining in one division after at least 2 year pass to another division 3 times|\n|Obtain at least 3rd seat in any division you are part of|\n|Defeat One of the Espada|\n|Defeat at least one Sternritter during the TYBW|\n\nOnly human, almost: You will take the Origin Extra (1) as a Fullbringer in Karakura town one year before the start of canon.\n\nYour provided advantages for this scenario are as follow:\n|Martial Talent|\n|Soul Talent|\n|Trace Defense x1|\n|Information Defense x1|\n|Alluring Whisper|\n|Your Fullbringer abilities will grow exponentialy as your Reiryoku grows|\n|200 credits|\n\nYour objectives to comlete this scenario and the mission are as follow: \n|Be as strong as a captain when canon starts|\n|Help Ichigo and company to rescue Rukia and fight a captain|\n|Defeat Ulquiorra Cifer yourself|\n|Kugo Ginjo plans|\n|Defeat Yhwach|\n|Defeat at least one Sternritter during the TYBW|\n\nIf you fail one of the objectives from a scenarion, you must complete 2 of the additional objectives to complete the mission.",
     "uid": "dOhEh"
   },
-
   {
     "reward": 50,
     "image": "https://media.discordapp.net/attachments/1080237127603859537/1194659134918901872/latest.png",
@@ -16812,7 +18669,7 @@
     "desc": "The baseline Shroud binding (void of any elemental modification) is a piece of solid magic, but is often ignored in favour of elemental versions of it. However, with the baseline shroud alone, it is theoretically possible for a person to reach Tier 7 at the very least. The RD department is willing to pay handsomely for anyone willing to assist with risky testing of the shroud's limits.\nReach Tier 7 purely through proficiency of the baseline shroud."
   },
   {
-    "reward": "A Template Stacking of Otsutsuki Isshiki",
+    "reward": "A Template Stacking of Otsutsuki Kaguya",
     "image": "https://cdn.donmai.us/sample/1a/d5/__getou_suguru_mahito_getou_suguru_jogo_hanami_and_1_more_jujutsu_kaisen_drawn_by_nakano_2_mannaka__sample-1ad500d2d6da9545b4a407e84e7bff44.jpg",
     "author": "DU8NG",
     "rewardType": "Perks",
@@ -16831,7 +18688,7 @@
       {
         "reward": 100,
         "type": "Credits",
-        "value": "Defeat Sukuna in 1v1 to prove as the Strongest of All Times."
+        "value": "Defeat Sukuna in 1v1 to prove as the Strongest of History."
       },
       {
         "reward": "Any offspring of yours are guranteed to be blessed with great supernatural powers.",
@@ -16851,7 +18708,7 @@
     ],
     "conditions": [
       {
-        "value": "Prevent any of the Disaster Curses from dying before the Culling Game start."
+        "value": "Prevent Mahito from dying before the Culling Game starts."
       },
       {
         "value": "Gojo Satoru will not be affected by any Binding and gain a 60% resistance to Lures."

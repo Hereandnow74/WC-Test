@@ -164,12 +164,30 @@
               swp
             </div>
             <div
+              ref="newChangesButton"
               :class="{'bg-green-600': newChanges}"
-              class="border-l px-2 hover:bg-gray-700 text-gray-200 rounded-r"
-              title="New Changes"
+              class="relative border-l px-2 hover:bg-gray-700 text-gray-200 rounded-r"
               @click="newChanges = !newChanges"
             >
               new
+              <div ref="newChangesElement" class="flex flex-col gap-2">
+                <div
+                  :class="{'bg-green-600': newChangesTiers}"
+                  class="hover:bg-gray-700 text-gray-200 px-2 rounded"
+                  title="New Changes"
+                  @click="newChangesTiers = !newChangesTiers"
+                >
+                  Tiers
+                </div>
+                <div
+                  :class="{'bg-green-600': newChangesTags}"
+                  class="hover:bg-gray-700 text-gray-200 px-2 rounded"
+                  title="New Changes"
+                  @click="newChangesTags = !newChangesTags"
+                >
+                  Tags
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -256,6 +274,7 @@
 <script lang="ts" setup>
 import { every, intersection, some, shuffle, throttle } from 'lodash-es'
 import { DBCharacter } from 'global'
+import tippy from 'tippy.js'
 import { useStore } from '~/store/store'
 import CompanionCard from '~/components/cards/CompanionCard.vue'
 import CompanionSWPCard from '~/components/cards/CompanionSWPCard.vue'
@@ -288,6 +307,8 @@ const favorite = ref(0)
 const local = ref(0)
 const retinue = ref(0)
 const newChanges = ref(false)
+const newChangesTiers = ref(false)
+const newChangesTags = ref(false)
 const swp = ref(-1)
 
 const sortAlpha = ref(0)
@@ -311,6 +332,22 @@ const { directions } = useScroll(companionsList)
 const isTopVisible = ref(true)
 const topElement = ref<HTMLElement|null>(null)
 const { height: topHeight } = useElementSize(topElement)
+
+const newChangesElement = ref<HTMLElement|null>(null)
+const newChangesButton = ref<HTMLElement|null>(null)
+
+watch(newChangesElement, () => {
+  if (newChangesButton.value && newChangesElement.value) {
+    tippy(newChangesButton.value, {
+      content: newChangesElement.value,
+      allowHTML: true,
+      arrow: false,
+      interactive: true,
+      placement: 'bottom',
+      delay: [0, 500],
+    })
+  }
+})
 
 watch(directions, () => {
   if (directions.top)
@@ -359,6 +396,16 @@ const tagsInclude = computed(() => Object.keys(tagToggles.value).filter(key => t
 const tagsExclude = computed(() => Object.keys(tagToggles.value).filter(key => tagToggles.value[key] === -1) as tagKeys[])
 
 const blockedSet = computed(() => new Set(blockedWorlds.value))
+
+const onlyTierChanges = computed(() => {
+  return Object.values(changes.value).filter(x => x.tier)
+    .map(x => x.u)
+})
+
+const onlyTagChanges = computed(() => {
+  return Object.values(changes.value).filter(x => x.tags)
+    .map(x => x.u)
+})
 
 // watch([secondFilter, charArr], () => {
 //   fuse.setCollection(secondFilter.value)
@@ -422,6 +469,8 @@ const filteredCharacters = computed(() => {
   if (swp.value === -1) sopt.$and.push({ c: '=none' })
   // console.log(changes.value)
   if (newChanges.value) sopt.$and.push({ u: `=${Object.keys(changes.value).join('|=')}` })
+  if (newChangesTiers.value) sopt.$and.push({ u: `=${onlyTierChanges.value.join('|=')}` })
+  if (newChangesTags.value) sopt.$and.push({ u: `=${onlyTagChanges.value.join('|=')}` })
   if (imgur.value) sopt.$and.push({ i: '^https://i.imgur.com/' })
   if (retinue.value === 1) sopt.$and.push({ u: `=${Object.keys(companionsUIDs.value).join('|=')}` })
   if (retinue.value === -1) sopt.$and.push({ u: `!^${Object.keys(companionsUIDs.value).join(' !^')}` })

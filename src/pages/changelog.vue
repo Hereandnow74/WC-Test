@@ -6,6 +6,24 @@
       </h2>
       <div>
         <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          30 January 2024
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~70 new user submitted characters, new missions, new worlds</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          22 January 2024
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~90 new user submitted characters, new missions, new world</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
           15 January 2024
         </h3>
         <ul class="list-decimal list-inside">

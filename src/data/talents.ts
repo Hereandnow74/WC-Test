@@ -239,7 +239,7 @@ talents.push({
   uid: 'v4vTF',
   title: 'Inexhaustible',
   category: 'Talent',
-  image: 'https://i.ibb.co/qCMqtY5/Inexhaustible.jpg',
+  image: 'https://images2.imgbox.com/fa/e7/zYsq4729_o.jpeg',
   cost: 140,
   whitelist: ['Everlasting Talent', 'Drain Defense (2x)'],
   desc: 'You will never run out of inner mystical energies - vital, magical, psychic, or soul power - to fuel your abilities with. This perk does not help you use an ability that requires more energy than your reserve - that can be developed over time with training and Soul Talent - but any abilities below that threshold can be used freely. The benefits of this perk will automatically be shared with any of your subjects who are soul-bound to you, whether they’re connected by Conjunction, a familiar bond, or some other means. If you have Evolutionary Engine Array, the engines’ effective output and storage capacities will be doubled.',

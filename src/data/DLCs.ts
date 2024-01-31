@@ -544,7 +544,7 @@ DLCtalents.push({
   dlclink: 'https://docs.google.com/document/d/1j9emHb4IWvOTnp13RASTAuINAFuKDMSSQyQ-7ta9sjA/edit#',
   title: 'Inculcation Talent',
   category: 'Home',
-  image: 'https://i.ibb.co/5sHG1yX/Inculcation-Talent.jpg',
+  image: 'https://images2.imgbox.com/93/bd/m11s6S7X_o.jpeg',
   cost: 10,
   desc: `You remold. You can progressively change other people's habits, preferences, reflexes, and even more fundamental parts of who they are given time. You do so through social pressure and psychological tricks, even against their will or without their awareness, but supernatural power and the ability to blatantly reward or punish speeds your efforts tremendously. You could use this to help overcome addictions, remove bad habits, become a life coach, or simply be a world-class slave trainer.
   <p>

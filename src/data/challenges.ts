@@ -7,7 +7,7 @@ import { buyAnyCompanion, removeAnyCompanion } from '~/logic/waifuLogic'
 export const challengesDesc = `
 <p>Challenges should be picked after you pick the World but before you make any other purchases.
 Challenges are not a part of a canon Waifu Catalog so you have more freedom in interpreting them or proposing new ones though 'Propose Perk' button or on <a href="https://discord.gg/cZf4U5rmPV" class="text-amber-500 hover:underline">Interactive's Discord server</a>.</p>
-<p>You can pick a several challenges at the same time if they don't conflict with each other.</p>
+<p>You can pick several challenges at the same time if they don't conflict with each other.</p>
 `
 
 const { companions, baseBudget, startingWorld, defensePerks } = useStore()

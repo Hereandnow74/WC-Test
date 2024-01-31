@@ -833,7 +833,7 @@
       },
       {
         "rating": 6,
-        "name": "Frontier"
+        "name": "Digimon Frontier"
       }
     ],
     "image": "https://i.imgur.com/N9KY86cl.jpg",
@@ -3139,7 +3139,7 @@
     "condition": [
       {
         "rating": 2,
-        "name": "The Princess and the Frog "
+        "name": "The Princess and the Frog"
       },
       {
         "name": "Brave",
@@ -3155,7 +3155,7 @@
       },
       {
         "rating": 2,
-        "name": "Cinderalla"
+        "name": "Cinderella"
       },
       {
         "name": "Encanto",
@@ -3163,22 +3163,22 @@
       },
       {
         "rating": 2,
-        "name": "Wreck it Ralph"
+        "name": "Wreck-It Ralph"
       },
       {
         "rating": 3,
-        "name": "Sleeping Beauty "
+        "name": "Sleeping Beauty"
       },
       {
         "rating": 3,
-        "name": "Moana "
+        "name": "Moana"
       },
       {
         "rating": 3,
         "name": "Lilo and Stitch "
       },
       {
-        "name": "The Emperors New Groove",
+        "name": "The Emperor's New Groove",
         "rating": 3
       },
       {
@@ -3649,13 +3649,7 @@
     "uid": "n8om5m"
   },
   {
-    "worldName": "Dungeons & Dragons (cartoon)",
-    "rating": 5,
-    "image": "https://cdn.imgchest.com/files/l7lxcgwbbd7.png",
-    "uid": "R3yPDk"
-  },
-  {
-    "worldName": "Koihime†Musō",
+    "worldName": "Koihime (Series)",
     "rating": 5,
     "image": "https://cdn.donmai.us/sample/2a/ff/__kan_u_chouun_shokatsuryou_chouhi_bachou_and_1_more_koihime_musou_drawn_by_ooshima_miwa__sample-2aff615b5d8bcce1b72ed2ee09d75160.jpg",
     "uid": "50ZO95"
@@ -5438,7 +5432,7 @@
     "uid": "DnR6Bz"
   },
   {
-    "worldName": "Mobile Suit Gundam",
+    "worldName": "Gundam",
     "rating": 8,
     "image": "https://wallpaperaccess.com/full/1455346.jpg",
     "condition": [
@@ -6577,6 +6571,10 @@
     "image": "https://i.imgur.com/u6pxUgX.jpeg",
     "condition": [
       {
+        "name": "D&D Cartoon",
+        "rating": 5
+      },
+      {
         "name": "Dark Sun",
         "rating": 9
       },
@@ -6782,7 +6780,7 @@
   },
   {
     "uid": "qirJWI",
-    "worldName": "Age of Sigmar",
+    "worldName": "Warhammer: Age of Sigmar",
     "rating": 8,
     "image": "https://2.bp.blogspot.com/-JZp8EdsDfqc/VtVEKz0AZFI/AAAAAAAAAUo/woOxJa2GKtQ/s1600/qXKoK1tjM6k.jpg",
     "additional": "You may undo the side effects of reforging upon capturing Stormcast.",
@@ -7295,5 +7293,6 @@
   {"uid":"JrNmgE","worldName":"The World God Only Knows","rating":4,"image":"https://miro.medium.com/v2/resize:fit:1258/0*nyRAmSnXVAxkFXF8.jpg"},
   {"uid":"QPuzsT","worldName":"The Kingkiller Chronicle","rating":5,"image":"https://wallpapercave.com/wp/wp10645568.jpg"},
   {"uid":"bfnbNp","worldName":"Reverse: 1999","rating":5,"image":"https://cdn.donmai.us/sample/71/e8/__vertin_sonetto_schneider_regulus_apple_and_3_more_reverse_1999_drawn_by_hashibi_noyasakihashibi__sample-71e818569576f9089570917f2b99e41f.jpg"},
-  {"uid":"OXNgZF","worldName":"Inscryption","rating":5,"image":"https://cdn.donmai.us/sample/2a/35/__leshy_inscryption_drawn_by_carpet_crawler__sample-2a3580a9644b553450645b095d1f4d02.jpg"}
+  {"uid":"OXNgZF","worldName":"Inscryption","rating":5,"image":"https://cdn.donmai.us/sample/2a/35/__leshy_inscryption_drawn_by_carpet_crawler__sample-2a3580a9644b553450645b095d1f4d02.jpg"},
+  {"uid":"GOOhAT","worldName":"Palworld","rating":5,"image":"https://cdn.cloudflare.steamstatic.com/steam/apps/1623730/header.jpg?t=1657680791"}
 ]

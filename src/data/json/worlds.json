@@ -911,7 +911,7 @@
   {
     "rating": 4,
     "q": true,
-    "worldName": "Magi Series",
+    "worldName": "Magi: The Labyrinth of Magic",
     "additional": "All characters who have Household Vessels have the djinn inside their vessel as a familiar.",
     "image": "https://cdn.imgchest.com/files/my2pc9xw9l7.png",
     "uid": "E0yd3"
@@ -965,7 +965,7 @@
   {
     "rating": 4,
     "q": true,
-    "worldName": "King of Fighters",
+    "worldName": "(SNK) The King of Fighters",
     "additional": "Hotaru has Itokatsu as a familiar.",
     "image": "https://cdn.atomix.vg/wp-content/uploads/2019/10/king-.jpg",
     "uid": "b8778"
@@ -3044,7 +3044,7 @@
   },
   {
     "rating": 10,
-    "worldName": "Disgaea",
+    "worldName": "(NIS) Disgaea",
     "additional": "Visiting the setting or having any waifu from Disgaea will give you access to its leveling systems. Any system that relies on infrastructure will only be available once you have a home turf that it can be built into, whether that’s a local property, Ride, Demiplane, Dungeon, or Heritage-granted personal world. Note that good experience, by Disgaea standards, is extremely rare outside of Item Worlds or the Disgaea setting itself.",
     "condition": [
       {

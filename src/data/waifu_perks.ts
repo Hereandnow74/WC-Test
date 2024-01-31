@@ -990,11 +990,11 @@ export const waifu_perks: WaifuPerk[] = [
     uid: 'gC8zD',
     title: 'Herrscher of the Void',
     waifu: [
-      'Void Drifter',
+      'Ich Liebe Dich',
     ],
     from: 'Honkai Impact',
     waifuUID: [
-      'ojHDF',
+      'tiCHF',
     ],
     tier: 8,
     image: '/img/waifu_perks/compressed/image128.png',
@@ -1005,11 +1005,11 @@ export const waifu_perks: WaifuPerk[] = [
     uid: 'gC8zZ',
     title: 'Herrscher of the Void (K423)',
     waifu: [
-      'Ich Liebe Dich',
+      'Void Drifter',
     ],
     from: 'Honkai Impact',
     waifuUID: [
-      'tiCHF',
+      'ojHDF',
     ],
     tier: 8,
     image: '/img/waifu_perks/compressed/image128.png',
@@ -1037,7 +1037,7 @@ export const waifu_perks: WaifuPerk[] = [
     uid: 'w2qOJ',
     title: 'Revelation',
     waifu: [
-      'Kiana Kaslana (Herrscher of the Void)',
+      'Sirin (Herrscher of the Void)',
     ],
     from: 'Honkai Impact',
     waifuUID: [
@@ -1053,26 +1053,20 @@ export const waifu_perks: WaifuPerk[] = [
   },
   {
     uid: 'GllOd',
-    title: 'See You in the Next World',
+    title: 'Herrscher of Finality',
     waifu: [
-      'Revelation',
       'Herrscher of Flamescion',
     ],
     from: 'Honkai Impact',
     waifuUID: [
-      'w2qOJ',
       'oHFJy',
     ],
-    perkUID: [
-      'w2qOJ',
-      'oHFJy',
-    ],
-    tier: 12,
-    image: 'https://i.imgur.com/7B4S9kk.png?1',
+    tier: 11,
+    image: 'https://i.imgur.com/AgoOW0fl.png',
     cost: 0,
-    costT: 5,
-    discount: 500,
-    desc: 'Sirin Kaslana, or a Sirin with K423\'s body, has been given all the abilities she has displayed in Honkai Gakuen II: Guns Girl Z and its DLCs. In this case, she gets the abilities of God Kiana, an immensely powerful being empowered by the Honkai that destroyed and recreated the Guns Girl Z universe, before creating the Imaginary Tree and the Sea of Quanta - i.e. the Honkai, Genshin, and Bubble Universes. May or may not be the 14th Herrscher. You may only apply this perk to one of Kiana or Sirin at a time.',
+    costT: 2,
+    discount: 220,
+    desc: 'The Herrscher of Flamescion has reached the Cocoon of Finality and passed its test. This perk adds the Herrscher of Finality battlesuit to Kiana’s panoply, as well as ELF Kiana Kaslana as a familiar. Kiana (K423) will always have this perk if captured after her canonical ascension in chapter 35. This perk is unavailable to Sirin.',
   },
   {
     uid: 'jhiHF',

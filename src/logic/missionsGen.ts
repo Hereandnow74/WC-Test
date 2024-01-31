@@ -1,5 +1,5 @@
 import { DBCharacter } from 'global'
-import { groupBy, sample, shuffle } from 'lodash-es'
+import { sample, shuffle } from 'lodash-es'
 import { allWorldsNoCondition, useAllChars } from '../data/constants'
 
 const { allCharsComp } = useAllChars()
@@ -8,7 +8,7 @@ export class MissionGenerator {
   scope: 'Quick' | 'Standard' | 'Grand'
   title = 'Title'
   description = 'Description'
-  conditions: {value: string}[] = []
+  conditions: { value: string }[] = []
   reward = '0 credits'
   loca = 'Generic'
   allChars = ref<DBCharacter[]>([])
@@ -35,7 +35,6 @@ export class MissionGenerator {
 
     const targets = this.allChars.value.filter(x => x.t >= 5 || (x.b && x.b.length >= 4))
     const target = sample(targets)
-    this.title = 'Capture Someone'
     if (target) {
       this.title = `Capture: <i>${target.n}</i>`
       this.description = `Capture [b]${target.n}[/b](T${target.t}) from [b]${target.w}[/b], mission in and out, just a 20 minute adventure.`
@@ -60,7 +59,6 @@ export class MissionGenerator {
 
     const targets = this.allChars.value.filter(x => x.b && x.b.some(x => ['ev', 'vn'].includes(x)) && x.t >= 4)
     const target = sample(targets)
-    this.title = 'Kill Someone'
     if (target) {
       this.scope = 'Quick'
       this.title = `Eliminate: <i>${target.n}</i>`
@@ -68,6 +66,15 @@ export class MissionGenerator {
       this.conditions = [{ value: sample(conditions) as string }]
       this.loca = target.w
       this.reward = 'Half of the listed target cost'
+    }
+    // In case of no target generate a generic mission
+    else {
+      this.scope = 'Quick'
+      this.title = 'Eliminate: Someone'
+      this.description = 'Eliminate a target from your current world, their tier should be a one higher than highest in your retinue, they definitely deserve it, or not, who cares!'
+      this.conditions = [{ value: sample(conditions) as string }]
+      this.loca = 'Current world'
+      this.reward = 'A fully programmable android with their powerset and maleable AI'
     }
     return this
   }
@@ -139,6 +146,14 @@ export class MissionGenerator {
       this.loca = target.w
       this.reward = 'Sum of the target costs in credits'
     }
+    else {
+      this.scope = 'Quick'
+      this.title = 'Ship: Someone + Someone'
+      this.description = 'Ensure that 2 random people from your current world will enter into romantic relationship'
+      this.conditions = [{ value: sample(conditions) as string }]
+      this.loca = 'Current world'
+      this.reward = 'Sum of the target costs in credits'
+    }
     return this
   }
 
@@ -160,6 +175,15 @@ export class MissionGenerator {
       this.description = `Impregnate [b]${target.n}[/b](T${target.t}) from [b]${target.w}[/b], target need to be aware and willing but not bound.`
       this.conditions = [{ value: sample(conditions) as string }]
       this.loca = target.w
+      this.reward = 'Half of the listed target cost, optional speed up of pregnancy to a minimum of 72 hours'
+    }
+    // In case of no target generate a generic mission
+    else {
+      this.scope = 'Quick'
+      this.title = 'Impregnate: Someone'
+      this.description = 'Impregnate a target from your current world, target need to be aware and willing but not bound.'
+      this.conditions = [{ value: sample(conditions) as string }]
+      this.loca = 'Current world'
       this.reward = 'Half of the listed target cost, optional speed up of pregnancy to a minimum of 72 hours'
     }
     return this
@@ -207,6 +231,14 @@ export class MissionGenerator {
       this.description = `Become [b]${target.n}[/b](T${target.t}) from [b]${target.w}[/b] and stealthy replace them, no one should have any doubts that you are them.`
       this.conditions = [{ value: 'Can\'t capture or use mind-control on target family, friends and acquaintances' }, { value: sample(conditions) as string }]
       this.loca = target.w
+      this.reward = '1 free Power Swap of the maximum tier of the fooled person (T10 is max)'
+    }
+    else {
+      this.scope = 'Standard'
+      this.title = 'Replace someone'
+      this.description = 'Become a random person from your current world and stealthy replace them, no one should have any doubts that you are them.'
+      this.conditions = [{ value: sample(conditions) as string }]
+      this.loca = 'Current world'
       this.reward = '1 free Power Swap of the maximum tier of the fooled person (T10 is max)'
     }
     return this
