@@ -241,7 +241,7 @@
         </div>
       </div>
     </template>
-    <div class="flex flex-wrap gap-1 justify-between">
+    <div class="flex flex-wrap gap-1 justify-between mt-2">
       <CompanionCardMiniInfo
         v-for="cmp in filteredRetinue"
         :key="cmp.uid"

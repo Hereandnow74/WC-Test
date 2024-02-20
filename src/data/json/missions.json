@@ -1,6 +1,2369 @@
 [
   
   {
+    "reward": "Rita and Dash join your retinue and 45 Credit.",
+    "image": "",
+    "author": "Konami-kun",
+    "rewardType": "Other",
+    "source": "",
+    "title": "For the Uncrying",
+    "loca": "Counter:side",
+    "lewd": false,
+    "scope": "Quick",
+    "objectives": [
+      {
+        "reward": "Template Stacking I [Yoo Mina]",
+        "type": "Other",
+        "value": "Complete the mission in an hour or less."
+      },
+      {
+        "reward": 15,
+        "type": "Credits",
+        "value": "Find a way to get Rita and Dash out of Counter:Side. Take them to Normal: Side after saving them and within the mission time limit."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "A binding method provided by The Company."
+      },
+      {
+        "value": "You will start one hour before Rita becomes Minister or Mina kills Dash (Spira). The location will be random, but close enough to some of them so that you can find them on your own."
+      },
+      {
+        "value": "You must complete the mission in 3 hours or less."
+      }
+    ],
+    "budget": 120,
+    "desc": "The story of Rita and Dash did not have a happy ending. A woman who only sought happiness for a girl she considered her sister, and a naive but kind-hearted girl who only sought to help others and be happy with her family. Betrayed by the person they decided to help, both were involved in a situation impossible to solve by themselves that culminated with Rita transforming into a Demon-Type C.O. and dooming her “sister,” Dash, to the same fate with her own hands.\n\nIn the end, Fenrir Squad with the help of ALT Squad managed to end their lives. And thanks to the Administrator's help, Rita and Dash were able to meet one last time before saying goodbye forever.\n\nWell, it's time to change that ending.\n\nYour mission is to avoid the tragic fate of Rita and Dash. The moment you start the mission will be one hour before Rita turns into the Demon-Type C.O. known as Ministra for the first time. Or you can start in the first chapter of the story, an hour before Yoo Mina kills Dash who at that time had already been turned by Ministra into the Demon-Type C.O. known as Spira.\n\nKeep in mind that if Rita and Dash have already been converted into C.O.s then you will need to bind them to you by using one of the bindings provided by The Company, when the binding is completed they will both return to their human form. But without the necessary defenses or Eternium they can still be converted into C.Os. if they spend too much time in the Counter: Side. Also keep in mind that you will begin the mission inside the Counter:Side, without a Counter Template or the necessary defenses, if you spend a lot of time there or decide to venture deeper into the Counter: Side you may become a C.O.",
+    "uid": "XEqFd"
+  },
+  {
+    "reward": "Communication Talent or 8 Credits.",
+    "image": "https://i.imgur.com/voV3fDQ.jpg",
+    "author": "Heaven Canceler",
+    "rewardType": "Perks",
+    "source": "",
+    "title": "Sukeban Correction",
+    "loca": "Blue Archive",
+    "lewd": false,
+    "scope": "Quick",
+    "objectives": [
+      {
+        "reward": "Don’t Stand Close to Me or 12 Credits",
+        "type": "Perks",
+        "value": "Capture Komakaze Rabu and help her out in the same way as the other delinquents."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Bind at least 10 minor characters that are dropouts or delinquents."
+      },
+      {
+        "value": "Help them improve their housing situation so that they all have a nice place to live in comparable to a modern student dorm."
+      },
+      {
+        "value": "Assist them in getting any part-time jobs besides their mercenary gigs if they so desire."
+      },
+      {
+        "value": "Take them on a group date at an amusement park and seduce all of them into an orgy at a Love Hotel."
+      }
+    ],
+    "budget": 120,
+    "desc": "The city of Kivotos has a big problem when it comes to delinquents. There are a lot of them, all over the place. It doesn’t help that the delinquents also kind of double as something of a major mercenary force. Anyway, generally they get the short end of the stick. Often poor and with bad living situations, the punching bags of stronger organizations like the security forces of the various districts or the organization called SCHALE. So we want you to give them a bit of a break and maybe have a little fun together. And if you also get a bit fun out of it, well I don’t think anyone would hold that against you.",
+    "uid": "bzXyD"
+  },
+  {
+    "reward": "Vados",
+    "image": "https://i.ytimg.com/vi/7R3Lpq36WT8/maxresdefault.jpg",
+    "author": "Pleb",
+    "rewardType": "Companions",
+    "source": "",
+    "title": "Ah yo the pizza here",
+    "loca": "Dragonball",
+    "lewd": false,
+    "scope": "Quick",
+    "objectives": [
+      {
+        "reward": "Neco-Arc",
+        "type": "Companions",
+        "value": "Replace all food in beerus's home with cat food"
+      },
+      {
+        "reward": 200,
+        "type": "Credits",
+        "value": "convince Beerus to give you the pizza willingly"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Survive"
+      }
+    ],
+    "budget": 500,
+    "desc": "In this mission you gotta steal a pizza from Beerus and eat it in front of him and I know just what you are thinking \" isn't this mission a bit to easy\" but don't worry things are about to get fun because for this mission to count you must take the pizza directly from Beerus's hands.\n\nGoodluck",
+    "uid": "FwTmG"
+  },
+  {
+    "reward": "50 credits per successful student",
+    "image": "https://storage.googleapis.com/pai-images/dba7c638a0ed4b8aa5503f8b4b4afc6e.jpeg",
+    "author": "Pleb",
+    "rewardType": "Other",
+    "source": "",
+    "title": "The wise master",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "all student's gain access to martial and soul talent",
+        "type": "Other",
+        "value": "Gain your first student"
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Increase a students tier by 3 or higher"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "you can not capture any student unless done so by raising there tier's by 2"
+      },
+      {
+        "value": "no mind control"
+      },
+      {
+        "value": "no actively empowering students, they must train for there power"
+      }
+    ],
+    "budget": 150,
+    "desc": "Your mission here is to take on a minimum of 5 students and train them in your way of fighting and strengthen them enough to raise there tier by at least 2 stages to count them as a successful student, and any student you raise by 2 tier's will automatically be captured. \n\nGoodluck.",
+    "uid": "qxDiP"
+  },
+  {
+    "reward": "200 credits a tier 7 or below waifu from DBZ and whatever gains in strength during your training",
+    "image": "https://pm1.aminoapps.com/6982/36ed7e2adc01a7382c82b66b6b363eae8492b1c3r1-1920-1080v2_hq.jpg",
+    "author": "Pleb",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Learning the pecking order",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Raise your tier by 1"
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Raise your tier by 2"
+      },
+      {
+        "reward": "Inexhaustible",
+        "type": "Perks",
+        "value": "Raise your tier by 3"
+      },
+      {
+        "reward": 10,
+        "type": "IMG Tickets",
+        "value": "Beat (TFS) popo in a fight"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "SURVIVE"
+      },
+      {
+        "value": "Last a full year of training"
+      }
+    ],
+    "budget": 150,
+    "desc": "Before I hand you over to the client of this mission I just want to say good luck and may whatever god you believe in have mercy on your soul before you go, for they won't here your prayer's from where your going.\n\n---------------------------------------------------------------------------------------------------------------\n\nAlright maggot listen up cuz popo's about to teach you the pecking order and unlike the other filthy retch's I have had the displeasure of teaching were gonna do it the fun way, that way being before you get sent to whatever miserable world you are planning on infecting with your worthless presence you are gonna be spending 1 year with me on the lookout training.\n\nOh and you will not have access to any of your company purchases other then your talents so your only target for this mission is to survive and who knows maybe will but lets not get ahead of ourselves so lets start from the beginning.\n\nFirst rule of popo's training Do not Talk about Popo's Training   ",
+    "uid": "IaaBt"
+  },
+  {
+    "reward": "250",
+    "image": "",
+    "author": "gameboycolor",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Raid Reaper Tech",
+    "loca": "Mass Effect",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "500",
+        "type": "Credits",
+        "value": "Submit One piece of Reaper Tech that you have adjusted to produce LUST Waves to save use the trouble of researching it our self's."
+      },
+      {
+        "reward": 1,
+        "type": "IMG Tickets",
+        "value": "Engineer a Device that Produces Lust Waves not using Reaper tech that is replicable by Tier 5 or below Engineers or Scientist"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Submit 5 Pieces of Reaper tech that Produces the Indoctrination that are properly stored to prevent any issues."
+      }
+    ],
+    "budget": 600,
+    "desc": "Reaper Tech is able to influence and affect nearly any organic sentient that interacts with it without proper protection. *looking at you Cerberus*. But what if instead of influencing individuals into Reaper Control and or Worship lets see if we can lewdify them to Spread LUST in such a way that by the time some one realize there is an issue they have no desire to change it. ",
+    "uid": "ZnfoG"
+  },
+  {
+    "reward": "500 credits and Aphrodite ( Riordanverse )",
+    "image": "https://i.pinimg.com/originals/ef/ec/aa/efecaad9858d92625f6fa46fe443aaf5.jpg",
+    "author": "Pleb",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Poseidon's Wrath",
+    "loca": "One Piece",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "Administrative Talent, Communication Talent",
+        "type": "Perks",
+        "value": "Create a full crew along the way"
+      },
+      {
+        "reward": "Engineering Talent",
+        "type": "Perks",
+        "value": "build a ship capable of sailing the Grand line"
+      },
+      {
+        "reward": 20,
+        "type": "Credits",
+        "value": "Kill 10 monsters of the Deep"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Kill 50 monsters of the Deep"
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Kill 100 monsters of the Deep"
+      },
+      {
+        "reward": "Martial Talent, Soul Talent",
+        "type": "Perks",
+        "value": "Master the 3 forms of Haki from scratch"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Sail past the Grand line"
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "sail in to the new world"
+      },
+      {
+        "reward": "a ticket for a tier 8 companion and 80 credits",
+        "type": "Other",
+        "value": "Touch the Deepest part of the ocean and kill what is sleeping their"
+      },
+      {
+        "reward": "Hera ( Riordanverse )",
+        "type": "Companions",
+        "value": "Reach the highest point in the sky and kill what resides their"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Kill Poseidon"
+      },
+      {
+        "value": "Sail from the east blue to his castle on Laugh Tale"
+      }
+    ],
+    "budget": 225,
+    "desc": "No longer will the world of one piece be a place of merry adventures and mostly smooth sailing, due to the arrival of the god Poseidon and his decent in to madness from gaining control of the ocean's of the one piece world he has turned a one wonderous ocean world in to a Lovecraftian nightmare of the deep.\n\nYour objective is to transverse this now hellish world starting in the east blue all the way to Poseidon's castle that has been erected on the final island of the new world known as Laugh Tale and kill Poseidon to restore the world to how it was before, but that will be nowhere near easy thanks to a few certain factors.\n\nYou should know the version of Poseidon that was entering the world was originally a tier 10 being that had killed and stole the divinity of his brother Zeus, but due to the way Poseidon entered the world his tier has been reduced to a tier 9 that is the good news. The bad news is due to his abrupt enter he has scrambled the local space to make all forms of teleportation and space control useless also thanks to his storm divinity running wild the sky's have been turned in to a hellish gale shredding anything above a certain hight to a fine mist and his divinity of the sky is stopping any attempts of flight so the only way you will be able to get to him is by sailing their. \n\nGoodluck, oh and p.s. try not to go to deep in to the sea who knows what Abominations lurk in the Deep  ",
+    "uid": "KsgKi"
+  },
+  {
+    "reward": "Luxury Goods",
+    "image": "https://64.media.tumblr.com/94d8afc5c98c6cd88efdd5f0323a6c15/21e044af4a5a7fce-a9/s1280x1920/7ac3348c7473926b20ad9637ae1cd092cccbd7c2.png",
+    "author": "Silveod",
+    "rewardType": "Perks",
+    "source": "",
+    "title": "Matchmaking, find your Master",
+    "loca": "Star Wars",
+    "lewd": false,
+    "scope": "Quick",
+    "objectives": [],
+    "conditions": [
+      {
+        "value": "TimeLimit, soft: “You must complete before the end of the Naboo Crisis”"
+      },
+      {
+        "value": "Inside Context: Use only powers/technology native to the world with the exception of  equipment offered directly by the company such as the smart device or psychic paper."
+      },
+      {
+        "value": "Mission taker must be at least tier 3 and have some ability to use the Force"
+      }
+    ],
+    "budget": 5,
+    "desc": "Aquire a Master to teach you the ways of the Jedi, from the elegible knights and masters residing in the jedi temple.",
+    "uid": "TLSWg"
+  },
+  {
+    "reward": 500,
+    "image": "https://i.imgur.com/mAZprDl.jpg",
+    "author": "Drallall",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Prevent the timeline known as \"Old Man Logan\"",
+    "loca": "Marvel",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": 200,
+        "type": "Credits",
+        "value": "Kill all of the villains before they have the chance to begin their attack"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Prevent the X-men from being killed by Wolverine (He's under an illusion by Mysterio so don't try to reason with him)"
+      },
+      {
+        "value": "Prevent the Fantastic 4 from being killed"
+      },
+      {
+        "value": "Prevent the Avengers from being killed"
+      }
+    ],
+    "budget": 250,
+    "desc": "In the timeline known as \"Old Man Logan\", all of the villains team up and orchestrate the deaths of almost all of the heroes. After, they proceed to distribute territory between themselves. Your job contractor is to prevent this from happening. ",
+    "uid": "ahAKY"
+  },
+  {
+    "reward": 25,
+    "image": "https://www.belloflostsouls.net/wp-content/uploads/2020/04/dnd-sword-coast-hq-e1635729192482.jpg",
+    "author": "Potential",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Climbing the Ranks",
+    "loca": "Mushoku Tensei",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": 10,
+        "type": "Credits",
+        "value": "Become D Rank."
+      },
+      {
+        "reward": 25,
+        "type": "Credits",
+        "value": "Become C Rank."
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Become B Rank."
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Become A Rank."
+      },
+      {
+        "reward": 150,
+        "type": "Credits",
+        "value": "Become S Rank"
+      },
+      {
+        "reward": "One Companion a Tier 5 or lower.",
+        "type": "Companions",
+        "value": "Join a Party."
+      },
+      {
+        "reward": 1,
+        "type": "IMG Tickets",
+        "value": "Become 1 of the Seven Great Powers."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Simply Climb at least 1 rank before you retire. Thats all we ask for. If you can't do that much, then you are a failure."
+      }
+    ],
+    "budget": 100,
+    "desc": "The job is simple, dear Contractor. Those in a lower class often struggle to make ends meet, and when it comes to that, they sometimes resort to the Adventures Guild. If they get high enough in the rankings, they start to make more and more money until they could eventually live similarly to Nobles. So, you job it to join the Adventures Guild and climb the ranks until you retire.",
+    "uid": "PjXkm"
+  },
+  {
+    "reward": "Template of Klein Moretti(T10)",
+    "image": "https://static.wikia.nocookie.net/lord-of-the-mystery/images/f/f8/Qidian_Fool.jpg",
+    "author": "lucinziel66",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Recreation of the Fool's Journey",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "5 companions from hentai worlds for free",
+        "type": "Companions",
+        "value": "No Sex"
+      },
+      {
+        "reward": 1500,
+        "type": "Credits",
+        "value": "Have 3 people on your retinue be Tier 9"
+      },
+      {
+        "reward": 1200,
+        "type": "Credits",
+        "value": "Have 6 people on your retinue be Tier 8"
+      },
+      {
+        "reward": 3,
+        "type": "IMG Tickets",
+        "value": "Become a Tier: X"
+      },
+      {
+        "reward": 6,
+        "type": "IMG Tickets",
+        "value": "Become a Tier: Y"
+      },
+      {
+        "reward": 11,
+        "type": "IMG Tickets",
+        "value": "Become a Tier: Z"
+      },
+      {
+        "reward": "Your next Tier X companion will cost only 1 IMG",
+        "type": "Other",
+        "value": "Have a Tier X waifu/husbando on your retinue"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Must start at Tier 1"
+      },
+      {
+        "value": "Defenses are disabled"
+      },
+      {
+        "value": "Reach tier 10 within 3 years"
+      },
+      {
+        "value": "Martial Talent and Science Talent are Disabled"
+      }
+    ],
+    "budget": 0,
+    "desc": "A Long time ago, a man rose above fate, fighting against madness, and surpassed your run-of-the-mill gods. Can you recreate it? are you man enough to fight against enemies beyond your understanding and come out on top without your precious defenses? ",
+    "uid": "ODdVo"
+  },
+  {
+    "reward": "A moderate-grade ability to alter women's biology.",
+    "image": "https://i.redd.it/gk6mlnrvbbi81.gif",
+    "author": "ErosArrow",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Helping Hinata",
+    "loca": "Naruto",
+    "lewd": true,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "You gain the Hyuuga clan's eyes.",
+        "type": "Other",
+        "value": "Do Hanabi a solid and boost her growth as well."
+      },
+      {
+        "reward": "Her knowledge of medicine is copied to you.",
+        "type": "Other",
+        "value": "Help out Sakura to become as busty as her teacher."
+      },
+      {
+        "reward": "You gain her skill with weapons.",
+        "type": "Other",
+        "value": "Ten-Ten is given the assistance she needs to match her idol, Tsunade."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Hinata will not grow without your direct intervention."
+      },
+      {
+        "value": "You cannot leave until your work is guaranteed to be successful."
+      }
+    ],
+    "budget": 0,
+    "desc": "In one of the many worlds in the multiverse, Hinata was cursed to not have the massive mammaries that fans know and love. We need you to solve this heinous error. Go to this world and ensure that Hinata grows into the knockout we all know she can be. Use medical jutsu, potions, etc. Just get the job done.",
+    "uid": "lUsgh"
+  },
+  {
+    "reward": 150,
+    "image": "https://i.pinimg.com/originals/b8/c1/af/b8c1af3e578ac17ba82a7c94abb58782.jpg",
+    "author": "Jobel",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Pirate Queen's Pirate King",
+    "loca": "One Piece",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "TS 1 of Jonathan Joestar for Luffy",
+        "type": "Perks",
+        "value": "Love capture Luffy before the start of canon"
+      },
+      {
+        "reward": "Mind Defense or 20 credits",
+        "type": "Perks",
+        "value": "Have Luffy unlock basic Conqueror's haki before the start of canon"
+      },
+      {
+        "reward": "Instant capture of the crewmate and double their capture value",
+        "type": "Other",
+        "value": "Don't Bind any canon crew-mates before they join the crew officially (No Nami until after Arlong Park and no Robin until after Enies Lobby"
+      },
+      {
+        "reward": "double the capture value of each non canon crewmate per 'arc'",
+        "type": "Other",
+        "value": "Recruit more crew-mates"
+      },
+      {
+        "reward": "TS 1 of Gol D. Roger for Buggy and 10 credits",
+        "type": "Perks",
+        "value": "Have Buggy D. Clown join the crew"
+      },
+      {
+        "reward": "TS 1 of Sukuna for Buggy",
+        "type": "Perks",
+        "value": "Have Buggy D. Clown say \"Stand Proud. You're Strong.\" after he defeats a major opponent"
+      },
+      {
+        "reward": "Money Talent or 8 credits",
+        "type": "Perks",
+        "value": "Have Nami ask for help to get rid of Arlong before she betrays the crew"
+      },
+      {
+        "reward": "10 credits per crewmate that learn both before Sabaody",
+        "type": "Other",
+        "value": "Teach the entire crew armament and observation haki"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Triple Luffy's starting bounty"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Have your starting bounty match or surpass Luffy's"
+      },
+      {
+        "reward": "Under Jolly Roger or 50 credits",
+        "type": "Perks",
+        "value": "Be acknowledged as the co-captain of the straw hat pirates"
+      },
+      {
+        "reward": "And a Bottle of Rum or 40 credits",
+        "type": "Perks",
+        "value": "Win the drinking contest at whiskey peak"
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Find out if Crocodile is Luffy's mom"
+      },
+      {
+        "reward": 30,
+        "type": "Credits",
+        "value": "Put the fear of God in Bellamy without physically hurting him"
+      },
+      {
+        "reward": 25,
+        "type": "Credits",
+        "value": "Have Luffy say \"Nice try Jackass, next time give it your A-game!\" after she tanks Enel's lightning"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Alternatively do it yourself"
+      },
+      {
+        "reward": "Receive the Goro Goro no mi",
+        "type": "Other",
+        "value": "Kill Enel after making him go all out in a fight"
+      },
+      {
+        "reward": 10,
+        "type": "Credits",
+        "value": "Convince Usopp not to leave the crew in Water 7"
+      },
+      {
+        "reward": "Instant Capture of Funkfreed and 10 credits",
+        "type": "Other",
+        "value": "Kill Spandam"
+      },
+      {
+        "reward": 30,
+        "type": "Credits",
+        "value": "Play a game of catch the cannonball with Garp"
+      },
+      {
+        "reward": "Instant capture of Perona and you receive the Kage Kage no mi",
+        "type": "Other",
+        "value": "Kill Moria before he can steal Luffy's shadow"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Have either Luffy or yourself have the highest supernova bounty upon arrival of Sabaody"
+      },
+      {
+        "reward": "5 credits and an immense feeling of satisfaction",
+        "type": "Other",
+        "value": "Kick Charlos in the dick"
+      },
+      {
+        "reward": 30,
+        "type": "Credits",
+        "value": "Defeat a Pacifista in a 1 on 1 fight"
+      },
+      {
+        "reward": "Paradox defense or 40 credits",
+        "type": "Perks",
+        "value": "Allow Kuma to send the crew away from Sabaody"
+      },
+      {
+        "reward": "Kuja Pirates join the Straw Hat Grand Fleet and double her capture value",
+        "type": "Other",
+        "value": "Love Capture Boa Hancock"
+      },
+      {
+        "reward": "Instant Capture of Portgas D. Ace/Ann and the Remnents of the Whitebeard pirates join the Straw Hat Grand Fleet",
+        "type": "Other",
+        "value": "Save Portgas D. Ace/Ann from their execution at Marineford"
+      },
+      {
+        "reward": "Receive the Gura Gura no mi and the Yami Yami no mi and 100 credits",
+        "type": "Other",
+        "value": "Make sure Blackbeard and his crew don't leave Marineford alive"
+      },
+      {
+        "reward": 200,
+        "type": "Credits",
+        "value": "Fight an Admiral in an all out battle and win"
+      },
+      {
+        "reward": 250,
+        "type": "Credits",
+        "value": "Defeat Sengoku in an all out battle"
+      },
+      {
+        "reward": "Canon speed up (everyone will be where they would have post time skip for the most part)",
+        "type": "Other",
+        "value": "Convince Rayleigh that Luffy only needs a year or less of training"
+      },
+      {
+        "reward": 10,
+        "type": "Credits",
+        "value": "Check up on all the Straw Hats during their training"
+      },
+      {
+        "reward": "Instant capture of Kuzan and TS 1 of Regice for him",
+        "type": "Other",
+        "value": "Convince Kuzan to join the Straw Hat Pirates after his fight with Akainu"
+      },
+      {
+        "reward": "Presentation or 25 credits",
+        "type": "Perks",
+        "value": "Reunite the ASL trio"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Purchase or have Universal calibration"
+      },
+      {
+        "value": "Train Luffy to have basic Armament and observation haki Before she sets sail"
+      },
+      {
+        "value": "Have Luffy name you the Vice captain of the Strawhat Pirates without directly binding her"
+      },
+      {
+        "value": "Ensure Luffy survies for the duration of this mission"
+      }
+    ],
+    "budget": 10,
+    "desc": "Alright contractor, we got a special mission for you. One of our Top contractors got cursed and not only lost all his memories of One Piece, but also can no longer go to any One Piece world or even gaze upon the source material. That's where you come in, First you have to purchase or already have Universal Calibration, then we're gonna throw you into the world of One Piece 6 months before canon and train up the now female, Monkey D. Luffy. Make sure she has a basic understanding of both armament and observation haki before canon and finally convince her to make you the Vice Captain of her crew without just capturing her. Complete all the main objectives and you'll be rewarded just before the return to Sabaody arc. After the completion of his mission you'll receive part two. You can progress any way you want as long as you complete the objectives but multiple retired contractors have some bonus objectives for you to complete in exchange for extra Rewards.",
+    "uid": "hUuRe"
+  },
+  {
+    "reward": "Instant Capture of Jibril, regardless of the rules and bet you agreed on",
+    "image": "",
+    "author": "Dionesia",
+    "rewardType": "Other",
+    "source": "",
+    "title": "A Flügel, By The Book",
+    "loca": "No Game No Life",
+    "lewd": false,
+    "scope": "Quick",
+    "objectives": [],
+    "conditions": [
+      {
+        "value": "Beat Jibril in a game"
+      }
+    ],
+    "budget": 0,
+    "desc": "Some girls are just too smart and pretty to be stuck in a library for the rest of their foreseeable future...\nSo, why don't you pick her up and check her out?\n\nYour Mission, should you choose to accept it, is to beat Jibril in a game accordingly to the rules as set by Tet.\nThe actual nature and supposed stakes of the game are up to you and her to agree on, though if you win we will make sure she is your reward and properly infatuated. If you lose... Well, hope you didn't bet high?\nOur suggestion is Strip Poker, if you think you're up to it. Or Strip Jenga. Or Strip anything, really.\n\nOh and, do mind the potential aftermath of her finally being able to fight properly once she leaves Tet's range of authority; but that should go without saying, no?",
+    "uid": "HtCSt"
+  },
+  {
+    "reward": "750 credits",
+    "image": "https://i.imgur.com/QAzqHco.jpg",
+    "author": "Drallall",
+    "rewardType": "Other",
+    "source": "",
+    "title": "The Forerunners survive",
+    "loca": "Halo",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "1 IMG ticket or 750 credits",
+        "type": "Other",
+        "value": "Destroy The Flood entirely"
+      },
+      {
+        "reward": 1,
+        "type": "IMG Tickets",
+        "value": "The Forerunners come out relatively unscathed from the war with The Flood"
+      },
+      {
+        "reward": 500,
+        "type": "Credits",
+        "value": "The Halo Array's aren't activated"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "1 million Forerunners should be alive by the end of the war against The Flood"
+      },
+      {
+        "value": "You can't use TS more than once."
+      },
+      {
+        "value": "The Forerunners have to still be interplanetary after the war against The Flood"
+      }
+    ],
+    "budget": 500,
+    "desc": "Your mission is simple: Make sure the Forerunners survive their war against The Flood. You'll be inserted around the time the Forerunners were waging war against Ancient Humans. You'll be inserted as a Forerunner and have a background and everything so you don't have to worry about that.",
+    "uid": "otVvH"
+  },
+  {
+    "reward": "Alluring Whisper and Siren’s Song or 80 Credits.",
+    "image": "https://i.imgur.com/J8Rbk7X.gif",
+    "author": "Heaven Canceler",
+    "rewardType": "Perks",
+    "source": "",
+    "title": "Pied Piper of Perversion",
+    "loca": "Generic",
+    "lewd": true,
+    "scope": "Quick",
+    "objectives": [],
+    "conditions": [
+      {
+        "value": "You must finish this mission within 48 hours of taking it."
+      },
+      {
+        "value": "Any brainwashing powers may only be activated while you play music. The music itself does not have to be the catalyst for the power, it can just be for show."
+      },
+      {
+        "value": "The mayor of the village will be given a warning of your arrival  if you accept the mission and is likely to hire someone to stop you."
+      },
+      {
+        "value": "Nerf: All retinue members limited to Tier 6 while on the job."
+      }
+    ],
+    "budget": 160,
+    "desc": "It appears that a local has been ripped off by the government of a certain town. Simply speaking, in exchange for service they were offered a large reward only to be denied their prize and kicked out of town to the jeers of the population. We have been contracted by this individual to get them a bit of revenge. For the purpose of this mission, you are to essentially replicate the tale of the pied piper, except with a lewd twist. We want you to take all the ladies and/or lads that are to your taste. Then lead them on a lewd merry chase through the power of hypnotic music. You know, stripping naked, masturbating, making out and all that kind of stuff. At the end take them all into your demiplane or some other location as permanent servants for yourself or someone of your choice.",
+    "uid": "pUBpk"
+  },
+  {
+    "reward": "Copy of Avengers Tower for your demiplane.",
+    "image": "https://i.redd.it/627fcro63xe31.jpg",
+    "author": "ErosArrow",
+    "rewardType": "Other",
+    "source": "",
+    "title": "A Marvelous Predicament",
+    "loca": "Marvel",
+    "lewd": true,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "You get access to the superhero databanks that they have.",
+        "type": "Other",
+        "value": "Become a member of the Avengers."
+      },
+      {
+        "reward": "You get knowledge of the many secrets that they are hiding.",
+        "type": "Other",
+        "value": "Join Shield."
+      },
+      {
+        "reward": "Businesswomen and geniuses will be increasingly attracted to you.",
+        "type": "Other",
+        "value": "Become the CEO of Stark International."
+      },
+      {
+        "reward": "The island will be infused with an enchantment which lowers inhibitions.",
+        "type": "Other",
+        "value": "Create Krakoa as an island resort for mutants."
+      },
+      {
+        "reward": "Supernatural women will be increasingly drawn to you.",
+        "type": "Other",
+        "value": "Become trained in the mystic arts."
+      },
+      {
+        "reward": "You will be able to manipulate the fertility of mutants.",
+        "type": "Other",
+        "value": "Join the X-Men."
+      },
+      {
+        "reward": "Other humanoid species will lust after you despite any racial barriers.",
+        "type": "Other",
+        "value": "Journey to other worlds in the universe."
+      },
+      {
+        "reward": "You are chosen as their king and get a harem of Dorah Milaje.",
+        "type": "Other",
+        "value": "Discover Wakanda and bring it back into the world."
+      },
+      {
+        "reward": "Connection to the Web of Life and Destiny.",
+        "type": "Other",
+        "value": "Sleep with one of the Spider-women."
+      },
+      {
+        "reward": "You can absorb gamma radiation to boost strength and stamina.",
+        "type": "Other",
+        "value": "Have angry sex with She-Hulk."
+      },
+      {
+        "reward": "Gain the ability to transform into a were-tiger.",
+        "type": "Other",
+        "value": "Have a threesome with Tigra and White Tiger."
+      },
+      {
+        "reward": "The ability to absorb an expanded spectrum of energy and generate photon blasts.",
+        "type": "Other",
+        "value": "Have a marvelous threesome with Kamala Khan and Carol Danvers."
+      },
+      {
+        "reward": "Gain access to massive fortunes and major companies.",
+        "type": "Other",
+        "value": "Show Selene Gallio and Emma Frost who is boss and become Black King of the Hellfire Club."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "No mind control allowed. (Do you even need it?)"
+      },
+      {
+        "value": "Can only be selected as a starting world."
+      },
+      {
+        "value": "All women will be coming for you, whether you can handle them all or not."
+      }
+    ],
+    "budget": 0,
+    "desc": "A dimensional shift occurred in one of the Marvel universe variants. The change caused all women to become extremely horny for men while also shifting all men around the world to women simultaneously. Now, normally the Company would erase the world since they don't believe in making it to easy. However, it is instead getting offered to one lucky Contractor as their starting world. It will be set as a Danger Rating of 7 since you won't need to work as hard, but you will be hunted down as the only man. Good luck! You are going to need it.",
+    "uid": "IvBuN"
+  },
+  {
+    "reward": "Template Stacking I & II of Shao Kahn and Kotal Kahn",
+    "image": "https://i.redd.it/2qgz0bwlkaq41.jpg",
+    "author": "ErosArrow",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Outworld Princesses",
+    "loca": "Mortal Kombat",
+    "lewd": true,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "She will feel indebted to you for bringing her back to life.",
+        "type": "Other",
+        "value": "Revive Sindel and take her as well."
+      },
+      {
+        "reward": "A set of rings which grant immortality as long as at least one of the wearers is still alive.",
+        "type": "Other",
+        "value": "Marry at least one of them."
+      },
+      {
+        "reward": "Gain a random Template Stacking I from one of the male MK ninjas.",
+        "type": "Other",
+        "value": "Lure Tanya away from Mileena with a healthy dose of romance."
+      },
+      {
+        "reward": "Her biology is shifted to more human (bedroom activities will be completely normal).",
+        "type": "Other",
+        "value": "Make D'Vorah see you as her King."
+      },
+      {
+        "reward": "You can now transform into Four-Arms (Ben 10).",
+        "type": "Other",
+        "value": "Defeat Sheeva in a contest of strength."
+      },
+      {
+        "reward": "Your body will be able to keep up with your activities as long as your girls can handle.",
+        "type": "Other",
+        "value": "Have an orgy with all of your women."
+      },
+      {
+        "reward": "Men will automatically second guess pursuing any woman that you are actively interested in.",
+        "type": "Other",
+        "value": "Stop at least one suitor from stealing one of them away."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You cannot use mind control at any stage."
+      },
+      {
+        "value": "They must genuinely submit to you without force. You won't be able to blackmail them, etc."
+      },
+      {
+        "value": "You are stuck in Outworld until the mission is completed."
+      },
+      {
+        "value": "The mission is done when you have captured all four with love confessions and had fun with each at least once."
+      }
+    ],
+    "budget": 0,
+    "desc": "Outworld is a mysterious land filled with beautiful and dangerous things. This applied especially to its women. Your job is to travel to Outworld and brave the myriad of threats to be able to find, seduce, and claim the four colorfully sexy women that call the land their home: Skarlet, Kitana, Jade, and Mileena.",
+    "uid": "KBsvl"
+  },
+  {
+    "reward": "You gain the power so that once you capture a waifu, any female family members that she has will automatically become interested in you.",
+    "image": "https://i.redd.it/5k5qv1yfceo21.jpg",
+    "author": "ErosArrow",
+    "rewardType": "Other",
+    "source": "",
+    "title": "The Sister Scenario",
+    "loca": "Kaguya-sama: Love is War",
+    "lewd": true,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "You now have an eye for fashion. You can tell what items will go together and how to blend colors.",
+        "type": "Other",
+        "value": "Endure a date clothes shopping"
+      },
+      {
+        "reward": "You are now able to win any carnival game. It doesn't matter how fixed it is, your luck will find a way.",
+        "type": "Other",
+        "value": "Go to an amusement park."
+      },
+      {
+        "reward": "You gain the ability to breathe underwater.",
+        "type": "Other",
+        "value": "Spend the day at the beach."
+      },
+      {
+        "reward": "Women will instinctually cuddle with you during movies.",
+        "type": "Other",
+        "value": "Head to the movies."
+      },
+      {
+        "reward": "A free wedding is provided by the Company.",
+        "type": "Other",
+        "value": "Propose to at least one of them."
+      },
+      {
+        "reward": "The wedding is supersized and rings are provided at no additional cost.",
+        "type": "Other",
+        "value": "Propose to all of them."
+      },
+      {
+        "reward": "Women will instinctually want to forgive you as long as you tell them the truth.",
+        "type": "Other",
+        "value": "Have them learn about each other."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You cannot use mind control in any capacity."
+      },
+      {
+        "value": "Each of the girls must be romanced on their own."
+      },
+      {
+        "value": "They must fall in love with you of their own accord."
+      },
+      {
+        "value": "The mission ends when each of them are in love with you."
+      }
+    ],
+    "budget": 0,
+    "desc": "The Fujiwara sisters all easily qualify as knockouts. However, none of them have ever been in a serious relationship because people get off put by their quirks. This cannot be allowed to stand. Pop into the universe, find these three beauties, and show each of them the romance of a lifetime.",
+    "uid": "vxeUS"
+  },
+  {
+    "reward": "Copy of Shuchin Academy added to your demiplane.",
+    "image": "https://i.redd.it/7sdjpsztio251.jpg",
+    "author": "ErosArrow",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Presidential Party",
+    "loca": "Kaguya-sama: Love is War",
+    "lewd": true,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "You become a major investor in her family's company.",
+        "type": "Other",
+        "value": "Seduce Kaugya Shinomiya away from Shirogane and make her fall for you."
+      },
+      {
+        "reward": "You get a boost to your ability to teach others and play piano.",
+        "type": "Other",
+        "value": "Have Chika Fujiwara become your loving girlfriend."
+      },
+      {
+        "reward": "You gain a photographic memory about rules and the ability to find their loopholes.",
+        "type": "Other",
+        "value": "Get Miko Iino to loosen up and got out with you."
+      },
+      {
+        "reward": "You become a large investor in the Shinomiya family company. (Compounds to become the majority investor)",
+        "type": "Other",
+        "value": "Convince Maki Shijo to give up on her crush and move on with you."
+      },
+      {
+        "reward": "Have 100 credits for being such a stand up guy.",
+        "type": "Other",
+        "value": "Ask out Nagisa Kashiwagi before her canon boyfriend can so she won't end up as the next generation of pregnant high school girlfriend in his family."
+      },
+      {
+        "reward": "You gain heightened flexibility and a reflexive knowledge of gymnastics.",
+        "type": "Other",
+        "value": "Become the significant other of Tsubame Koyasu before Ishigami can manage to get off his ass."
+      },
+      {
+        "reward": "You gain a knowledge of astronomy and planetary physics that puts anything Miyuki could ever learn to shame.",
+        "type": "Other",
+        "value": "Have Kei Shirogane see you as her soulmate."
+      },
+      {
+        "reward": "You learn the skills of subterfuge to match Hayasaka's own.",
+        "type": "Other",
+        "value": "Help Ai Hayasaka live a happy life of her own. (With you as her devoted boyfriend, of course)"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "The school has a minimum age requirement of 18, so everyone is legal."
+      },
+      {
+        "value": "You cannot use mind control to become student council president or to capture the girls."
+      },
+      {
+        "value": "Capturing can only be done with love confessions."
+      },
+      {
+        "value": "Mission ends when you have captured a minimum of three girls."
+      }
+    ],
+    "budget": 0,
+    "desc": "Miyuki Shirogane never fully lived up to his potential in the show. He was surrounded by beautiful women, but he never had the balls to talk seriously with a single one. Let's see if you can do better. You will be enrolled into the school as a third-year. This means that the main cast is in your grade and Shirogane and Fujiwara's little sisters are first years. Get elected as student council president and use your position to manipulate events so that you have a chance to bag as many girls as you can. I mean, it's not like anyone else is!",
+    "uid": "feLgH"
+  },
+  {
+    "reward": 500,
+    "image": "https://s-media-cache-ak0.pinimg.com/736x/36/46/77/364677fe2210b40cc8b74e8b3e44ab04.jpg",
+    "author": "Man-God",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Changing Mythology",
+    "loca": "Riordanverse",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": 1,
+        "type": "IMG Tickets",
+        "value": "Capture and sell evil/corrupt gods. 1 IMG Ticket per God."
+      },
+      {
+        "reward": 5,
+        "type": "IMG Tickets",
+        "value": "By some Miracle, have a conversation with the Highest Authority; Khaos."
+      },
+      {
+        "reward": 500,
+        "type": "Credits",
+        "value": "Have sex with the virgin goddess(s). 500 credits per Olympian virgin."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Make sure the changes you make are documented. They can be found or made by humans, but the changes from the original Mythology must be there for people to find."
+      }
+    ],
+    "budget": 500,
+    "desc": "Contractor, we here at the Company have noticed a concerning lack of historical change when it comes to Contractors being in the ancient times. Oh, don't get us wrong, we notice how much change comes with the actions, but the puny humans don't seem to. So, for this mission you need to cause some big changes in a mythology and make sure they are documented properly by the humans. How you do this doesn't matter, the humans just have to know that bbig changes are happening and what it was like before they happened.",
+    "uid": "ElTCf"
+  },
+  {
+    "reward": "Soul Talent or 10 Credits",
+    "image": "https://static.wikia.nocookie.net/ccs/images/7/7b/CCS_Clow_Card.jpg",
+    "author": "Knotbeard",
+    "rewardType": "Other",
+    "source": "",
+    "title": "A Deck of Your Own",
+    "loca": "Cardcaptor Sakura",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Capture all 51 card native to the original Anime Series"
+      },
+      {
+        "reward": 1,
+        "type": "IMG Tickets",
+        "value": "Create a set of at least 19 lewd cards of your own design"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Capture the 19 card native to the Manga setting,"
+      }
+    ],
+    "budget": 0,
+    "desc": "The 'Clow Cards' created by Clow Reed are combination of Eastern and Western magic that form a new kind of magic that is very powerful and also very accessible. All you have to do is defeat  the card and bind it by signing your name at the bottom of the card. Capturing a full set of these cards could be a good way to deepen your magical abilities and understanding",
+    "uid": "zivVn"
+  },
+  {
+    "reward": 1200,
+    "image": "",
+    "author": "Dionesia",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Grand Theft Hope",
+    "loca": "Shinza Bansho - Avesta of Black & White",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "A Copy of the Divine Sword that is Conceptually Identical, but lacking the White Prayers and thus requiring to collect them anew",
+        "type": "Other",
+        "value": "Apply your Binding Method to the Divine Sword"
+      },
+      {
+        "reward": 1,
+        "type": "IMG Tickets",
+        "value": "Claim the Divine Sword by way of Victory in Combat (Honourable or Otherwise) against Varhrān"
+      },
+      {
+        "reward": 1,
+        "type": "IMG Tickets",
+        "value": "Fuck Nadare consensually and without the use of Bindings or the Attraction of Lures (Using Sticky Fingers to augment your bedroom skills while while already fucking her, does not count)"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Steal the Divine Sword"
+      },
+      {
+        "value": "Hold the Divine Sword for at least three uninterrupted seconds while out of combat"
+      }
+    ],
+    "budget": 0,
+    "desc": "The Divine Sword, also known as Ahura Mazda is a blade forged at the very birth of the universe of Ahura Mazda, a legendary blade that gathers the Prayers of those behind it and uses them to empower itself. It withstood many cycles, remaining forever Immutable throughout the ages.\nIt is the ultimate weapon of White, standing opposed to Nadare, the constant in Black. Where it collected all White Prayers since the birth of the universe, and thus holds unfathomable power, though not one user can pull upon all of it.\n\nWe want you to steal it.\nIt does not matter how exactly you come into possession of it, we simply want it for certain R&D purposes and are willing to pay a price deemed appropriate!\n\nThe exact time and place that you arrive at can be negotiated, but it is unlikely that you will be able to simply arrive without attracting all sorts of attention even under these circumstances and the forces that be may not take kindly to your presence, so do be prepared for all sorts of complications and do remember that we are not liable for any injuries or deaths you may incur!\n\nOnce you are in unchallenged, physical, possession of the Divine Sword for three seconds, it will be taken off your hands and placed in our own, so don't worry about delivering it yourself.",
+    "uid": "aAHNB"
+  },
+  {
+    "reward": "A version of Gehaburn that has been reforged to have its power scale with the Divinity of the enemy it is used against, and whose power permanently grows whenever it slays a Deity of any origin rather than exclusively CPUs",
+    "image": "",
+    "author": "Dionesia",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Stop Her Conquest",
+    "loca": "Hyperdimension Neptunia",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Destroy the local Gehaburn"
+      },
+      {
+        "reward": "Instant Capture of Nepgear",
+        "type": "Other",
+        "value": "Slay the Deity of Sin before any CPUs die"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Slay the Deity of Sin"
+      }
+    ],
+    "budget": 500,
+    "desc": "The Conquest Ending, otherwise known as the Genocide Ending. This one... This one is personal.\n\nYour Mission, should you accept it, is deceptively simple. Upon accepting, you will be send to the world of Gamindustri, one that has irreversibly been Calibrated to the Conquest Ending. A canon event, as some say, while others may call it a nexus event. That should hardly matter for us, though, should it?\n\nYou may start in any of the Four Nations, but be aware that the CPUs and Candidates are in the middle of arguing about the sword and what they should do even as you arrive. It is only a matter of moments before the party splits and they all prepare to make some of their final decisions, and one worst decision. \n\nChange it. Perish the Deity of Sin through your own methods so that Nepgear does not have to make the greatest mistake there is. You will be rewarded if you do",
+    "uid": "GpVCZ"
+  },
+  {
+    "reward": "The negative effects of your patron are forever nullified, now during your dreams you may create being and make them reality they will be an extension of you and will instinctively follow your will and wishes.",
+    "image": "https://i.pinimg.com/564x/73/b5/3b/73b53bced4e9688639d09892686a8198.jpg",
+    "author": "Yeveiras",
+    "rewardType": "Other",
+    "source": "",
+    "title": "They Are Watching",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "You can select a template, it will be applied to any member of your armies when they join.",
+        "type": "Other",
+        "value": "Create an army under your control, and let them win 3 battles without your direct intervention."
+      },
+      {
+        "reward": "10 credits for world tier.",
+        "type": "Other",
+        "value": "The highest authority of one of the major powers in the world, is under your controll."
+      },
+      {
+        "reward": 250,
+        "type": "Credits",
+        "value": "Unify all the nations/kingdoms of the world under one powerful figure/s that is/are your faithfull."
+      },
+      {
+        "reward": "Your followers now produce an imperceptible miasma of your essence, it will infect non believers slowly making them faithfull.",
+        "type": "Other",
+        "value": "Your religion/cult is the most extensive in the world."
+      },
+      {
+        "reward": "You are now able to create and shape your own divine realm beyond reality, only you and who you allow can enter it.",
+        "type": "Other",
+        "value": "Kill or Bind the strongest of the 10 outsiders."
+      },
+      {
+        "reward": "Sum the court members tiers and multiply the result by 10, the result is your reward in credits.",
+        "type": "Other",
+        "value": "Your \"Court\" has 10 members."
+      },
+      {
+        "reward": 1,
+        "type": "IMG Tickets",
+        "value": "Kill or Bind a God"
+      },
+      {
+        "reward": "You can now bend the laws of reality to your whims on a planet wide scale.",
+        "type": "Other",
+        "value": "Be tier 10."
+      },
+      {
+        "reward": "Not only can yo bend the laws of reality you can create new ones, your reach expands to the entire galaxy.",
+        "type": "Other",
+        "value": "Reach tier X."
+      },
+      {
+        "reward": 1,
+        "type": "IMG Tickets",
+        "value": "Control 3 planets, your religion must be the main one in every planet."
+      },
+      {
+        "reward": "Choose a template you will receive it at full power, the template tier can't surpass your own.",
+        "type": "Other",
+        "value": "Take an entire galaxy under your control."
+      },
+      {
+        "reward": "The reaches of your power extends to an universal scale, you can now alter rules that are outside of reality.",
+        "type": "Other",
+        "value": "All races in a universe have for their main religion yours."
+      },
+      {
+        "reward": 1000,
+        "type": "Credits",
+        "value": "Have at least 5 childrens, they must build their own religion and take control of entire worlds without your help."
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Enter a world where demons and gods openly exist."
+      },
+      {
+        "reward": "Technology is a second nature to you as effortless as a breath, your followers can build things at 1000x the speed.",
+        "type": "Other",
+        "value": "Have a fleet of space ships under your control."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Survive for 1 year after all 10 outsider have reached your world."
+      },
+      {
+        "value": "You may not go to another world till this mission is complete."
+      },
+      {
+        "value": "For the duration of this mission no heritage perks may be taken outside of the Outsider section."
+      },
+      {
+        "value": "Have 5 outsiders bound to you."
+      },
+      {
+        "value": "Have one or more cults in your name with a following of at least 1000 members."
+      },
+      {
+        "value": "Defeat, ally or bind at least 3 of the 10 outsiders that have come to your world."
+      },
+      {
+        "value": "Capture at least 10 targets through \"Eldritch Corruption\"."
+      }
+    ],
+    "budget": 250,
+    "desc": "Contractor some of our most Eldritch clients have concotted quite a mission, or well more like a challenge really, anyway! This challenge will be avaible only at Chargen, for reason that will soon be obvious, now let's dive in the juicy details!\n\nAfter taking on this Mission/Challenge you will have to follow the following steps:\n\n-Create a list of worlds of your choice and assign to each a number from 1 to 9, then roll a dice, the number of the dice will determine wich world you'll go to, you will receive a 15% bonus to the world budget.\n\n-Take the Great Old One as your patron, you won't be subject to the nightmares, and you won't attract outsiders, for the duration of the mission.\n\n-Take power Swap, the choosen character must be of the Outsider archetype, and it's tier can't be higher than the tier of your world, you will have a discount that will depend on your world tier and your intensity value, take the two values and subtract the lowest from the highest, the result will be the tier cost you will have to pay for the swap, for example with a tier 9 world and intensity 5, 9-5=4 you will pay the price of a tier 4 for the swap, the cost can't be lower than 10 credits.\n\n-Open the Gacha app, set the tag Outsider and activate \"ignore chances\" and set the cost to 0, now roll untill you have 10 outsiders, there must be at least one with the same tier as your world or higher by one, in case you have already 10 outsiders but none fullfils this this condition, eliminate the one with the lowest tier and reroll till the condition is fulfilled. This 10 Outsiders will come to your world one after the other on a span of 2 years, will they be enemies? allies? only one way to find out.\n\n-You won't be able to buy any companions neither during chargen nor while the mission is active, but you will receive a companion to help you start, how? You will be able to make a single roll in the gacha app you can set \"Ignore Chances\" active and you can set up to 3 tags, but the tier of the received companion can't surpass your world tier, in case it does, it's power will be restricted so that it's tier will be equal to your worlds, with training and time this restriction will weaken and disappear.\n\nAfter taking the above mentioned steps you'll be set to complete your build as you wish, but it should be mentioned that there will be some peculiarities you will be subject to, those being the following:\n\n-You won't be an outsider like most, you'll be something more, an eldritch God, of the likes of Cthulhu and Nyarlathotep to name a few(not in appearance of course), what does that mean? many things, only those necessary for this mission will be revealed, the rest is for you to discover.\n\n-Faith gives you power, the more prayers to you the greater the power you receive, build grand cults in your name, convert entire worlds, make your words their only reality, the choice is yours.\n\n-You possess the ability \"Eldritch Corruption\" you are able to bind beings to you through your power, you can \"Infect\" the mind of a being with your essence, this will cause them to be slowly corrupted, their mind bending to your will, and binding them to you, this will result in capture, the time needed for this corruption to be complete will depend on the target relative strength to yours, the default time is 10 days, this time is halved for targets with a tier below yours, the greater the difference in tier the more times the time will be halved, for example if you are 4 tiers ahead of the target the time will be halved 4 times, in case the target is of higher tier than the contractor, the time will instead double for each tier of difference.\n\n-Beware that now binding a target with one of the standard binding methods won't result in capture anymore, all other effects provided will still work as expected.\n\n-Bound \"Outsiders\" will form your \"Court\", you'll receive part of the faith they receive from their followers, this court will work as an anchor for your existence, as long as there is one member of your court alive, you may not die, the destruction of your body and soul will simply result in your respawn in a safe area under your controll.\n\nNow that is all contractor, are you ready?",
+    "uid": "agoNZ"
+  },
+  {
+    "reward": "You gain the ability to transform into a Hulk and retain your intelligence.",
+    "image": "https://i.redd.it/w25acz2vq0m31.jpg",
+    "author": "ErosArrow",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Seducing a She-Hulk",
+    "loca": "Marvel",
+    "lewd": true,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "You gain an intelligence boost to match his but without the head growth.",
+        "type": "Other",
+        "value": "Kill the Leader to prevent him interfering with you."
+      },
+      {
+        "reward": "You gain his knowledge of gamma radiation.",
+        "type": "Other",
+        "value": "Bruce Banner doesn't even know anything is happening."
+      },
+      {
+        "reward": "You can travel to the future timeline that she is from.",
+        "type": "Other",
+        "value": "Defeat Thundra in a fight."
+      },
+      {
+        "reward": "Lyra (Savage She-Hulk)",
+        "type": "Companions",
+        "value": "Defeat the warrior women of the future and create a harem."
+      },
+      {
+        "reward": "She gains her Red She-Hulk abilities.",
+        "type": "Other",
+        "value": "Make Betty Ross fall in love with you."
+      },
+      {
+        "reward": "You can now absorb and emit gamma radiation.",
+        "type": "Other",
+        "value": "Knock up Jennifer Walters."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You cannot use mind control."
+      },
+      {
+        "value": "You must be able to physically dominate her, even if she is just in a weakened state."
+      },
+      {
+        "value": "She must acknowledge that you are stronger than she is."
+      }
+    ],
+    "budget": 0,
+    "desc": "The She-Hulk of the Marvel universe is an undeniable bombshell. However, she is also quite the slut. Ever since getting her powers, she has hopped from guy to guy without a care. One of our clients has decided that you should put a stop to this. Your new duty is to travel to the Marvel universe shortly after she gains her powers and make sure that she never becomes the widespread hoe that she would otherwise turn into. How you might be asking? Show her that you are stronger and make her see you as the alpha she always wanted.",
+    "uid": "umMMF"
+  },
+  {
+    "reward": "You gain immortality as long as the elven race survives. This longevity can be imparted onto other elves as well through your blood. You have the additional power to alter the fertility of female elves to help maintain population numbers.",
+    "image": "https://i.redd.it/eei4u6lnes581.jpg",
+    "author": "ErosArrow",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Uncovering the Elves",
+    "loca": "Generic",
+    "lewd": true,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": 25,
+        "type": "Credits",
+        "value": "Survive your first encounter with the tribe."
+      },
+      {
+        "reward": "You gain the agility, longevity, and archery skill of an average elf.",
+        "type": "Other",
+        "value": "Have them accept you as a member of the group."
+      },
+      {
+        "reward": "You can control which gender your children will be as long as you decide it ahead of time.",
+        "type": "Other",
+        "value": "You successfully sire your first child."
+      },
+      {
+        "reward": "Your scent is calibrated to be delectable to female elves. Just a sniff and they won't be able to not want a taste.",
+        "type": "Other",
+        "value": "Be chosen as the leader of the group."
+      },
+      {
+        "reward": "You gain the lost botanical knowledge of the elves.",
+        "type": "Other",
+        "value": "Have the elven population rise above 500."
+      },
+      {
+        "reward": "You learn the forgotten techniques of elven blacksmiths.",
+        "type": "Other",
+        "value": "Have the elven population rise over 2,000."
+      },
+      {
+        "reward": "You are in tune with forests now. You can sense and control the plant and wildlife throughout the ecosystem.",
+        "type": "Other",
+        "value": "The elven population increases over 5,000."
+      },
+      {
+        "reward": "You can draw upon the magical energy of the elven people. This empowers you while only mildly exhausting them.",
+        "type": "Other",
+        "value": "The elven population increases over 10,000."
+      },
+      {
+        "reward": "The knowledge of wards is inscribed into your mind. You can conceal and protect your people from an atom bomb and weaker.",
+        "type": "Other",
+        "value": "The elven population increases over 20,000."
+      },
+      {
+        "reward": "The other nations of the world will be wary of you. They won't make an attacks as long as you don't seem to be a threat.",
+        "type": "Other",
+        "value": "Announce your and the elves presence to the world."
+      },
+      {
+        "reward": "You will be seen as the King of the Elves. This gives you an aura of regality that causes people to defer to you.",
+        "type": "Other",
+        "value": "Have the elves comprise at least 10% of the world's population."
+      },
+      {
+        "reward": "All other rulers acknowledge you as the strongest among them. They ensure that your people are protected in their domains.",
+        "type": "Other",
+        "value": "Elves are the majority race in the world."
+      },
+      {
+        "reward": "The forests of the world have regrown and flourished in strength. They generate and channel mana to you.",
+        "type": "Other",
+        "value": "Elves have taken control of the world."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Mind control is useless against the elves. They must accept you of their own free will."
+      },
+      {
+        "value": "Since this group has not seen a man in decades, they will be simultaneously distrusting and enticed by you."
+      },
+      {
+        "value": "Elven fertility is notoriously low to balance with their long lives. This means that every attempt has about a tenth of a percent chance of working."
+      },
+      {
+        "value": "Their population must grow to upwards of 20,000 for them to leave the range of endangered."
+      }
+    ],
+    "budget": 0,
+    "desc": "Elves used to roam across the planet with their skill with magic, archery, and lives that continue for centuries. However, in this world, they have decreased in number to the point where they are almost extinct. Your job is to journey into a deadly rainforest and make contact with the last tribe of elves. Due to their declining population, the group is comprised solely of women. That shouldn't be too much of a problem for you. Become their leader, pop some buns in those elven ovens, and help bring back a species.",
+    "uid": "dUzqc"
+  },
+  {
+    "reward": 500,
+    "image": "",
+    "author": "Dionesia",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "GAAAAAAAABLINS",
+    "loca": "Goblin Slayer",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": 1,
+        "type": "IMG Tickets",
+        "value": "Your Origin is the Goblin Slayer"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Kill All Goblins"
+      },
+      {
+        "value": "You may not simply destroy the whole planet"
+      },
+      {
+        "value": "You may not warp reality to automatically kill all Goblins"
+      },
+      {
+        "value": "Kill as many Goblins personally as possible"
+      }
+    ],
+    "budget": 130,
+    "desc": "Are you in the mood for some racial genocide?\nWell, here's your chance!\n\nYour Mission is \"simple\": Kill All Goblins\nWe want you to be the Goblin Slayer's wet dream, to reach Heaven through Violence and leave no Goblin alive!\n\nOf course, certain Conditions and Limits have to be set\nThe main limitation is that you and your party may not use outright reality warping to accomplish this Mission beyond a few exceptions. You may freely use any methods available to you and your party, on any number of Goblins within 10 Miles of your current position, but you and your party are limited to 5000 Goblins being able to be killed each week by using these sorts of methods outside of that range\nIn other words, you may not simply Snap your fingers and warp reality itself to make it so all the Goblins across the world die instantly. You must do it with the team you gather but otherwise yourself and by figurative hand\nIf someone outside of your direct control and influence does this, then it is not a mark against you\nUsing ranged weapons and traps that you, or a party member, set up beforehand that does not require your presence within the range is fine\netc.\nIn short, don't cut corners and slay the Goblins yourself as much as possible!\n\nWhen the total number of Goblins in the World is 5000 or Less, you will be given the option to auto-kill the rest ",
+    "uid": "efRYf"
+  },
+  {
+    "reward": 2,
+    "image": "https://i.kym-cdn.com/photos/images/newsfeed/002/735/149/749.jpeg",
+    "author": "Twiggy",
+    "rewardType": "IMG Tickets",
+    "source": "",
+    "title": "Who Speaks for Them?",
+    "loca": "Spellheart Series",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "Any Elf Companion of your choice (up to T10).",
+        "type": "Companions",
+        "value": "Fix the Elves (remove their inborn lewdness)"
+      },
+      {
+        "reward": "The World of Sanctuary and Serenity is added to your Pocket Space when you leave this world. (Pocket Star Recommended)",
+        "type": "Other",
+        "value": "Unite the World of Sanctuary and Serenity under your banner."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "For the duration of this mission, all purchased Companions must be Elves."
+      },
+      {
+        "value": "Any non Elven Companions are confined to your pocket space for the duration of this mission."
+      }
+    ],
+    "budget": 225,
+    "desc": "The 10,000 Worlds of the Spellheart series are a savage place, a place of cultivators, magic. demons, dragons, thirsting vampires, and enthralling orcs. It is a bitter place, where creatures from beyond reality invade, eating their victims and wearing their skin.\n\nAt the heart of all this are the Elves. Unlike everyone else, they have a different problem. I won't go into too much detail here, but let's just say that they have suffered more than most. You see, the Elves of the Spellheart Series have been forcibly altered on an essential level into becoming lewd, and what's worse - whenever it looks like they're going to overcome their limits, a cosmic force smacks them back down into the dirt.\n\nNaturally, in such a competitive environment, being lewd is hardly a good survival strategy. The one who issued this mission, contractor, wants one thing to make sure the Elves have someone standing up for them, to speak for them since they can't do it themselves. In this case, that someone should probably be you. At the same time, provide them with examples of what elves are supposed to be.",
+    "uid": "yoZYi"
+  },
+  {
+    "reward": 200,
+    "image": "https://static.wikia.nocookie.net/alicesoft/images/9/9f/Kuma-portrait.png",
+    "author": "WilfredoV",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Kuma must die",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "Tier 2 Bridgette from Total Drama Island",
+        "type": "Companions",
+        "value": "Defeat and steal Bridgette from him"
+      },
+      {
+        "reward": "Tier 2 Marinette Dupain Cheng",
+        "type": "Companions",
+        "value": "Defeat and steal Marinette from him"
+      },
+      {
+        "reward": "Belle from Disney's Beauty and the Beast",
+        "type": "Companions",
+        "value": "Rescue and heal the 25 civillian women that he has in his dungeon and return them home without capture."
+      },
+      {
+        "reward": "A treasure map to a hidden relic in your world",
+        "type": "Other",
+        "value": "Conquer and destroy his dungeon"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "If a 25% of your world is captured by Kuma, the Company will consider this mission failed."
+      },
+      {
+        "value": "Kuma must die and not be captured."
+      },
+      {
+        "value": "Everything goes in this fight"
+      }
+    ],
+    "budget": 400,
+    "desc": "The Archangel of Benevolence has been betrayed! A heartless contractor possesing Kuma from Dohna Dohna has turned evil and started using the lures given by the Archangel to cause pain and conquer worlds.  He never tried to heal a used companion, he never tried to do any good on first place.\nNow, this monster is heading to your world to steal your companions and degradate them while you are watching.\n\nHe is wearing an Ice Shroud making him a tier 7 enemy. He has two powerful companions: Marinette wearing the Light Shroud (tier 7) and Bridgette wearing the Sea Shroud (tier 7).\nHe has a dungeon full of hideous tentacle monsters. The gate to the dungeon will open to your world in 24 hours since the acceptance of this mission.\n\nKill the traitor and avenge the Angel!",
+    "uid": "SZBvK"
+  },
+  {
+    "reward": "20 credits for every new waifu created",
+    "image": "https://i.imgur.com/IDBiiaH.jpeg",
+    "author": "cthulhu",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Ships, Girls, and Shipgirls",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "Template Stack of any one member of that ships crew",
+        "type": "Perks",
+        "value": "Turn any Star Trek spaceship into a Kanmasu"
+      },
+      {
+        "reward": "The first Catch A Ride perk you don't already have",
+        "type": "Perks",
+        "value": "Turn the NCC-1701 Enterprise into a Kanmasu"
+      },
+      {
+        "reward": "Template Stack of any one member of that ships crew",
+        "type": "Perks",
+        "value": "Turn any Star Wars spaceship into a Kanmasu"
+      },
+      {
+        "reward": "The first Catch A Ride perk you don't already have",
+        "type": "Perks",
+        "value": "Turn the Death Star into a Kanmasu"
+      },
+      {
+        "reward": "Template Stack of any one member of that ships crew",
+        "type": "Perks",
+        "value": "Turn any StarGate ship into a Kanmasu"
+      },
+      {
+        "reward": "The first Catch A Ride perk you don't already have",
+        "type": "Perks",
+        "value": "Turn the city-ship Atlantis into a Kanmasu"
+      },
+      {
+        "reward": "One waifu of equal or lesser tier from the same series",
+        "type": "Companions",
+        "value": "Turn any land vehicle from Star Trek, Star Wars, or Stargate into a Metal Maiden"
+      },
+      {
+        "reward": "One waifu of equal or lesser tier from the same series",
+        "type": "Companions",
+        "value": "Give any weapon from Star Trek, Star Wars, or Stargate a Tactical Doll"
+      }
+    ],
+    "conditions": [],
+    "budget": 0,
+    "desc": "Humanity is a wonderful species.  So inventive!  Any time you're faced with a challenge, you bash your heads against it until you find a way to overcome it.  You're also complete degenerates who want to fuck absolutely everything.  Put these two traits together and you end up with things like Azur Lane and Kantai Collection, or like Girls Frontline and Metal Waltz.  Or even Cells at Work!  And I like all these things, I really do, but - is that all?  I understand that there are limitations, but - couldn't you have gone further?\n\nSo to that extent, I'd like you to do just that.  Take some of these concepts and go even further beyond.",
+    "uid": "wwuoy"
+  },
+  {
+    "reward": 400,
+    "image": "https://www.giantbomb.com/a/uploads/scale_medium/13/135472/1872310-25445.jpg",
+    "author": "Knotbeard",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Zul'Hyjal",
+    "loca": "Warcraft",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "A copy of Mt. Hyjal is added to your demiplane (or becomes your demiplane if you do not already have one)",
+        "type": "Other",
+        "value": "Dark Trolls take control of Mt. Hyjal"
+      },
+      {
+        "reward": 1,
+        "type": "IMG Tickets",
+        "value": "Dark trolls as a group are as powerful and influential in Azeroth as the Humans or Orcs"
+      },
+      {
+        "reward": 2,
+        "type": "IMG Tickets",
+        "value": "Politically unite the Troll empires (in an alliance if not under a single empire) to form a faction equal or more powerful then the Horde or Alliance"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Dark Trolls survive through the Cataclysm era and are atleast as powerful in the world as the Tauren or the Dwarves."
+      }
+    ],
+    "budget": 0,
+    "desc": "From Zul'Gurub to Zul'Aman to Zul'Farrak to Zul'Drak to the great Zuldazar, each lineage of trolls has had their day in the sun to form a mighty empire and build a great city. Except for the Dark Trolls. Living on the slopes of Mt. Hyjal they have always been too close to the Night Elves to amass any real power, and by the time of the Second invasion of the Burning Legion had been reduced to one singular tribe which would retreat into the caves of Mt. Hyjal after the battle only to be wiped out a few years latter by the Twilight's Hammer.\nYour mission is to change that fate. You are to enter the world as a Dark Troll sometime before the third war and help your people not only survive but thrive, taking their place on the world stage as an equal to any of the other races of Azeroth. ",
+    "uid": "XSZmn"
+  },
+  {
+    "reward": 500,
+    "image": "https://i.imgur.com/bf6ic1Y.jpeg",
+    "author": "PridedKnight",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Queen's Potential",
+    "loca": "Worm",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": 150,
+        "type": "Credits",
+        "value": "Arrange contact with Marquis (Amelia's biological father)"
+      },
+      {
+        "reward": "Communication Talent (HAH!)",
+        "type": "Perks",
+        "value": "Help Amelia with her love life (Yes, even if it's with you)"
+      },
+      {
+        "reward": "Let Them Know",
+        "type": "Perks",
+        "value": "Show Amelia what her future could've been."
+      },
+      {
+        "reward": "Trajectory. Agreement.",
+        "type": "Perks",
+        "value": "Let Amelia meet Amy Dallon (her Canon Counterpart)"
+      },
+      {
+        "reward": 200,
+        "type": "Credits",
+        "value": "Make Carol Dallon's (a counterpart with Amy Dallon as a child [adopted if possible]) life hell."
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Allow Amelia to help you make Carol Dallon's life hell"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Raise her to be stronger, smarter, and happier than her"
+      },
+      {
+        "value": "Keep her safe"
+      },
+      {
+        "value": "Cannot power swap Amelia"
+      },
+      {
+        "value": "She does not need to be raised in the same world as you got her"
+      }
+    ],
+    "budget": 400,
+    "desc": "So, another Contractor set up a mission to raise Asia Argento from DxD, but we all know how she'll be, no matter how you raise her. Despite her horrible past, she's one of the kindest people in the entire series, you'd have to be the absolute worst to raise her wrong.\n\nBut how about a different challenge, how about a more dangerous challenge?\n\nYou see, I want you to raise Amy Dallon. That's right, the Amy Dallon.\n\nThis is why I doubt people would take this.\n\nI want you to raise 6-year-old Amelia Claire Lavere (Amy Dallon).\n\nThere will be someone with Amelia at the orphanage/hospital waiting for you ro pick her up.\n\nYou will have until her age at the start of Canon to raise her, and make her stronger, smarter, and happier than her Canon counterpart.\n\nYou will be provided the option of a progress bar on your phone on how close and how far Amelia is from her Canon self.",
+    "uid": "qppYV"
+  },
+  {
+    "reward": 100,
+    "image": "https://media.discordapp.net/attachments/1080237127603859537/1203456132400812114/Bloodborne__Mergos_Wet_Nurse_Boss_Fight_1080p.jpeg",
+    "author": "Dionesia",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Never Wake Again",
+    "loca": "Bloodborne",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Kill an Optional Boss (Rewarded per Boss Killed)"
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Slay a Great One (Rewarded per Great One Killed)"
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Kill Every. Single. Beast. In the City"
+      },
+      {
+        "reward": 10,
+        "type": "Credits",
+        "value": "Save Someone (Rewarded per saved individual and does not count if you orchestrated or willingly allowed them to be put into danger just so you can save them. Only applies once per saved individual)"
+      },
+      {
+        "reward": 150,
+        "type": "Credits",
+        "value": "Revert the Plague and return all Beasts in Yharnam back to Human"
+      },
+      {
+        "reward": 150,
+        "type": "Credits",
+        "value": "Complete this Mission in the span of eight hours or less"
+      },
+      {
+        "reward": 200,
+        "type": "Credits",
+        "value": "Complete this Mission without having or applying any Template Stack"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Slay Mergo's Wet Nurse"
+      }
+    ],
+    "budget": 335,
+    "desc": "Greetings, Contractor! Are you ready for another Mission?\nWell, here goes!\n\nYour mission is to Slay Mergo’s Wet Nurse. \nQuite simple really, go into Yharnam and kill them as a Reward you get 100 Credits, no questions asked.\n\nWell, there is one tiny little problem: This Yharnam seems to have gotten affected by a Temporal Anomaly, for some reason. As such, time doesn’t quite work as you’d expect! A Night seems to go on far far longer then should reasonably last. \nOh and you’re stuck in Yharnam till you complete this mission. So, you know? Good luck! And of course, do keep in mind that the Company is not responsible for any Deaths even in this sort of situation, so we hope you're ready to make good on your R.I.P. choices if you're not otherwise prepared enough!",
+    "uid": "IupVz"
+  },
+  {
+    "reward": "Alluring Whisper, Tsundere Service, Potpourri and 1 T7 ticket for any canon Demi-Human waifu",
+    "image": "https://i.imgur.com/XNhAuxL.jpeg",
+    "author": "Heaven Canceler",
+    "rewardType": "Perks",
+    "source": "",
+    "title": "Collaring Satori",
+    "loca": "Touhou",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Get both Kaenbyou Rin and Reiuji Utsuho to accept you as their new owner and Satori as a fellow pet."
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Get Koishi to help you in Satori’s training by manipulating her subconscious desires to become your pet. Then get both of them to engage in pet play with you as their owner."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "For this mission, we will set things up so Satori will quickly want to make you her pet. We make no guarantee that this desire will remain if you mess up."
+      },
+      {
+        "value": "You must engage in pet-play with Satori in the role of the pet multiple times. She must at least be wearing fake animal ears and a tail. At least one occasion of pet-play must take place in a public area."
+      },
+      {
+        "value": "Your mission is considered complete if Satori has accepted her new position as your pet for at least 48 hours."
+      }
+    ],
+    "budget": 550,
+    "desc": "Komeiji Satori is well known for her habit of collecting pets. Animals of all kinds are among her collection and she does not really care whether the beings in question are ordinary animals or intelligent Youkai. Why, she has even on occasion shown interest in acquiring a human as one of her pets. Your goal in this mission is a bit of a turnaround with her. Essentially, you must make Satori your pet instead of the other way around, with all that entails. ",
+    "uid": "UjThZ"
+  },
+  {
+    "reward": "Warranty Plan",
+    "image": "https://i.ibb.co/Mp0vpwj/Warranty-Plan.jpg",
+    "author": "Silver",
+    "rewardType": "Perks",
+    "source": "",
+    "title": "Hero's Reward",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [],
+    "conditions": [
+      {
+        "value": "Mission is unknown to contractor, given to them by their Patron or the one managing their account."
+      },
+      {
+        "value": "Must be done selflessly, as in without any intent for personal gain. If they gain something but did not intend to, that's fine."
+      },
+      {
+        "value": "Must be at some genuine risk to themselves."
+      }
+    ],
+    "budget": 0,
+    "desc": "The Archangel of Benevolence has given a secret mission to you. The mission is unknown to the Contractor as knowledge of its existence violates its win condition. Selflessly (without intent of personal gain) and at risk to yourself, whether it risk to life (fighting a monster), risk to wealth (paying medical treatment), or your future (revealing powers in your 'civilian' identity). The risk must be genuine, no being god and stopping a mugging, or being rich while paying for a homeless mans food.",
+    "uid": "PITSd"
+  },
+  {
+    "reward": 1,
+    "image": "https://i.pinimg.com/736x/fc/aa/da/fcaada2c2b9cd56e4c84364311e6821d.jpg",
+    "author": "CosmicSoul",
+    "rewardType": "IMG Tickets",
+    "source": "",
+    "title": "Make Heaven Great Again",
+    "loca": "Hazbin Hotel",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "Charlie Morningstar and Vaggie",
+        "type": "Companions",
+        "value": "Stop Extermination Day."
+      },
+      {
+        "reward": "Sera the Seraphim and Emily",
+        "type": "Companions",
+        "value": "Fix all problems that Heaven may have with their system while streamlining it."
+      },
+      {
+        "reward": 500,
+        "type": "Credits",
+        "value": "Help Sinners in Hell find a method of redemption."
+      },
+      {
+        "reward": 2,
+        "type": "IMG Tickets",
+        "value": "Find out what happened to the Creator."
+      },
+      {
+        "reward": 5,
+        "type": "IMG Tickets",
+        "value": "Find a way to expand both Heaven AND Hell for more people."
+      },
+      {
+        "reward": 1000,
+        "type": "Credits",
+        "value": "Find and purge all corruption in Heaven."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Must Substitute or Possess an Angelic type character."
+      },
+      {
+        "value": "Find out the requirements to get into Heaven, and if necessary, revamp them."
+      }
+    ],
+    "budget": 300,
+    "desc": "Oh dear Contractor, it's horrible. The angels don't even know how their judgment system works! So many have fallen, and the angels don't even bother to know why and do the JOB, which is to help! This can no longer stand, so I propose a mission. Find out what the requirements of judgment are, and if necessary, find a way to fix them.",
+    "uid": "TflVH"
+  },
+  {
+    "reward": "A duplicate set of the Deathly Hallows.",
+    "image": "https://i.redd.it/9ajoxaanceib1.jpg",
+    "author": "ErosArrow",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Harem of Hogwarts",
+    "loca": "Harry Potter",
+    "lewd": true,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "You can sense the attraction that women have for you.",
+        "type": "Other",
+        "value": "Be the contributing cause of the creation of a new Hogwarts house, Eros, which is based on love, kindness, and passion."
+      },
+      {
+        "reward": "The experience gives you the strength of will to be able to withstand the allure of Veela.",
+        "type": "Other",
+        "value": "Be dosed with lust potion, but resist its effects until it runs its course."
+      },
+      {
+        "reward": "You gain the ability to see beneath the clothes of women.",
+        "type": "Other",
+        "value": "Have the female uniform for Hogwarts be distinctly on the naughtier side."
+      },
+      {
+        "reward": "You are able to access the female dormitories without triggering alarms.",
+        "type": "Other",
+        "value": "Make Hogwarts an all girls school."
+      },
+      {
+        "reward": "You can breathe underwater.",
+        "type": "Other",
+        "value": "Turn the merpeople in the lake into stunningly gorgeous mermaids."
+      },
+      {
+        "reward": "You gain the power of allure yourself.",
+        "type": "Other",
+        "value": "Become the alpha of a tribe of Veela."
+      },
+      {
+        "reward": "Parents will flock to send their daughters to Hogwarts.",
+        "type": "Other",
+        "value": "Have the average test scores for Hogwarts rise to O's in every subject."
+      },
+      {
+        "reward": "Werewolves will recognize you as their alpha.",
+        "type": "Other",
+        "value": "Create a serum which causes female werewolves to transform into wolf-girls in heat instead of mindless beasts."
+      },
+      {
+        "reward": "Gain the veela power over fire.",
+        "type": "Other",
+        "value": "Bed all three of the Delacour women: Appoline, Fleur, and an adult Gabrielle."
+      },
+      {
+        "reward": "You become Lord Black.",
+        "type": "Other",
+        "value": "Bed the Black sisters: Andromeda, Bellatrix, and Narcissa."
+      },
+      {
+        "reward": "Become a metamorphmagus.",
+        "type": "Other",
+        "value": "Seduce Nymphadora Tonks."
+      },
+      {
+        "reward": "Aurors will give you the benefit of the doubt whenever you do something suspicious.",
+        "type": "Other",
+        "value": "Romance Amelia Bones and Susan Bones."
+      },
+      {
+        "reward": "Lily Potter is resurrected and indebted to you.",
+        "type": "Other",
+        "value": "Give Petunia magic and train her up into a sexy servant."
+      },
+      {
+        "reward": "The school policies on inappropriate conduct become looser.",
+        "type": "Other",
+        "value": "Make the teaching staff all female."
+      },
+      {
+        "reward": "They will see you as their king.",
+        "type": "Other",
+        "value": "Perform a ritual which turns the house elves into sexy female forest elves."
+      },
+      {
+        "reward": "You are now a master at Quidditch.",
+        "type": "Other",
+        "value": "Bed the Flying Foxes of Gryffindor: Angelica, Alicia, and Katie."
+      },
+      {
+        "reward": "Your magical power is boosted for every daughter you sire.",
+        "type": "Other",
+        "value": "Help Molly and Ginny create a new generation of red headed Weasely daughters."
+      },
+      {
+        "reward": "She can now transform into a catgirl.",
+        "type": "Other",
+        "value": "Get Minerva McGonagall to let loose in the bedroom."
+      },
+      {
+        "reward": "The women inside of Hogwarts all adore you.",
+        "type": "Other",
+        "value": "Become headmaster of Hogwarts."
+      },
+      {
+        "reward": "All witches adore you.",
+        "type": "Other",
+        "value": "Become the Minister of Magic."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You cannot use mind control."
+      },
+      {
+        "value": "The mission begins the summer before Harry's first year at Hogwarts."
+      },
+      {
+        "value": "You must have legitimate reason to be at Hogwarts. Either a teacher, a student, etc."
+      },
+      {
+        "value": "No one outside of your harem can learn about it. If they do, you must stop the knowledge from spreading or the mission fails."
+      }
+    ],
+    "budget": 0,
+    "desc": "It is a commonly accepted fact that the more magic a witch has, the more beautiful that she is and the slower she ages. Why do you think that a weakling like Umbridge was as ugly as in canon? Despite this fact, the wizards of the world do not give them nearly enough attention. It is your job to not only help witches get stronger, and therefore more beautiful, but you must also form your very own harem of these magical bombshells. After all, the other guys don't deserve them!",
+    "uid": "VIJrE"
+  },
+  {
+    "reward": 400,
+    "image": "https://i.redd.it/zxc01stpaa471.jpg",
+    "author": "ErosArrow",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "A Force of Fertility",
+    "loca": "Star Wars",
+    "lewd": true,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": 75,
+        "type": "Credits",
+        "value": "Make a harem out of Padme's handmaidens."
+      },
+      {
+        "reward": 75,
+        "type": "Credits",
+        "value": "Recruit some female Mandalorians to be your slutty guards."
+      },
+      {
+        "reward": 150,
+        "type": "Credits",
+        "value": "Make the Jedi Order an all female organization under you."
+      },
+      {
+        "reward": 125,
+        "type": "Credits",
+        "value": "Turn the Sith away from hate and towards lust."
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Create a clone army from a curvy female template."
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Design sex bots which become popularized across the galaxy."
+      },
+      {
+        "reward": 200,
+        "type": "Credits",
+        "value": "Become the king of at least one planet."
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Have a harem of 50 women."
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Have a harem of 100 women."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You, along with any waifus you collect, will not age for the duration of the mission. You can still be killed though."
+      },
+      {
+        "value": "You cannot bring any waifus or outside technology with you. Anything you use and any retinue members you have must be acquired in world."
+      },
+      {
+        "value": "Any divergence from canon will not prevent established waifus from being born. It will just alter their backstory and their birth parents."
+      }
+    ],
+    "budget": 0,
+    "desc": "The Star Wars universe is one full of many of the finest women around. However, most never get the attention and loving that they deserve. It is hereby your job to change that. Drop into the Republic before the Separatists get into action and get to work. Journey forward through time and collect every waifu this dimension has to offer.",
+    "uid": "LNkej"
+  },
+  {
+    "reward": 50,
+    "image": "https://media.discordapp.net/attachments/1080237127603859537/1202525743607849031/proxy.png",
+    "author": "Dionesia",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Does ORT Have Puss Puss?",
+    "loca": "Nasuverse",
+    "lewd": false,
+    "scope": "Quick",
+    "objectives": [
+      {
+        "reward": "Instant Capture of ORT",
+        "type": "Other",
+        "value": "Impregnate, or be Impregnated by ORT"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Fuck ORT, the One Radiance Thing"
+      }
+    ],
+    "budget": 1000,
+    "desc": "Hey there, Contractor! Do you want to participate in the newest trial and experiment of the fundamental laws of reality? \n\nEveryone knows the 34th Rule and we would like to test the addition of another one:\nIf it exists, a Contractor will fuck it!\n\nIf you are not already in the presence of ORT, one will be spawned within a reasonable distance from you and given Company-based protections that prevent it from being eliminated, captured or damaged in any way except through Sexual Conquest\nOr, you can back out and we'll retrieve the Spider before charging you 15 Credits for Mission Failure\n\nRemember to have fun!",
+    "uid": "rZCFY"
+  },
+  {
+    "reward": 500,
+    "image": "https://s1.zerochan.net/Kishirika.Kishirisu.600.3712553.jpg",
+    "author": "Fighter#74972",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Cuck the Fighting God",
+    "loca": "Mushoku Tensei",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": 200,
+        "type": "Credits",
+        "value": "Help Kishirika Kishirisu regain her mature form."
+      },
+      {
+        "reward": "Fertility Calibration I&II",
+        "type": "Perks",
+        "value": "Give Kishirika Kishirisu a couple kids, you pervert."
+      },
+      {
+        "reward": "Inculcation Talent",
+        "type": "Perks",
+        "value": "Convince Kishirika Kishirisu to marry you through sex."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Get into a romantic and sexual relationship with Kishirika Kishirisu."
+      },
+      {
+        "value": "Defeat the Fighting God Badigadi"
+      }
+    ],
+    "budget": 300,
+    "desc": "Well dear Contractor, we have noticed that the Demon Queen Kishirika Kishirisu hasn't been treated with due respect for such a legendary figure, and that her husband doesn't seem to care for her overmuch. So, the clear solution is to cuck him! Get into a relationship with Kishirika with love and perhaps an overdose of pleasurable sex. Get ready to fight off an angry Fighting God though, Kishirika-sama wouldn't want a weakling.",
+    "uid": "ZiIKN"
+  },
+  {
+    "reward": "All retinue members receive their own Evolution System when bound.",
+    "image": "https://i.pinimg.com/564x/7f/9e/15/7f9e158ec637cf432e952b5ba0728cb5.jpg",
+    "author": "Yeveiras",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Monster Evolution System",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Your world is a fantasy setting full of monster-like creatures, that are usually hunted."
+      },
+      {
+        "reward": 30,
+        "type": "Credits",
+        "value": "Capture a target while you are still in your starting stage."
+      },
+      {
+        "reward": "Gain the ability \"Apex Predator\" whenever you kill a living being, you gain Half their stats and EXP.",
+        "type": "Other",
+        "value": "Become the strongest monster in a Forest/Cave Complex."
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Kill a monster that is greatly feared by the peoples of your world(Repeatable)."
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Kill a Hero/Adventurer that came to hunt you."
+      },
+      {
+        "reward": "Gain the ability \"Marked Territory\" the territory that is under your controll can be affected by your Demiplane Laws.",
+        "type": "Other",
+        "value": "Create a kingdom of monsters."
+      },
+      {
+        "reward": "You can choose one template every member of your armies gains a \"Template Stacking I\" of that template when they join the army.",
+        "type": "Other",
+        "value": "Create an army of monsters."
+      },
+      {
+        "reward": 1,
+        "type": "IMG Tickets",
+        "value": "Take over the world unde your rule or destroy every civilization apart from yours."
+      },
+      {
+        "reward": "Gain the ability \"King of Monsters\" you are able to emit an aura that will force anyone to their knees (not those above your ti)",
+        "type": "Other",
+        "value": "Kill the strongest living monster in your world."
+      },
+      {
+        "reward": 1,
+        "type": "IMG Tickets",
+        "value": "Become the strongest living creature in the world."
+      },
+      {
+        "reward": "All your powers and attributes are greatly empowered, gain one tier.",
+        "type": "Other",
+        "value": "Evolve till you reach a godlike stage."
+      },
+      {
+        "reward": "Gain the ability \"God Of Monsters\" you can now create any monster through your immagination and spawn them in reality.",
+        "type": "Other",
+        "value": "Reach tier x."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You won't be able to directly buy a companion (other mission rewards are an exception)."
+      },
+      {
+        "value": "Retinue members that you had before you accepted this mission, won't be able to follow you to the new world you choose, but they may still access the Sweet Home/ Demiplane."
+      },
+      {
+        "value": "Evolve 5 times"
+      },
+      {
+        "value": "Stay 1 year in the choosen world."
+      },
+      {
+        "value": "Have one child carrying your race."
+      },
+      {
+        "value": "Build or take over a Kingdom/Nation"
+      }
+    ],
+    "budget": 250,
+    "desc": "Have you ever read one of those novels where the mc gets reincarnated as a monster with a system that let's him level up and evolve? Well that's exactly what this mission is about contractor. \nAfter accepting this mission you'll be transfered to a world of your choice and be tranformed in a monster (All company Perks will still work as intended), what monster? One from the list you'll find below, each monster has his starting bonus, the more difficult is the starting point the greater the bonus. if you took this mission at chargen take a bonus of 15 credits for intensity level.\nYou will also become the host of a \"Monster Evolution System\" it's functions will be those you would expect from one such system, so EXP gathering, levelling, gaining abilities, ability merging, evolution ecc...\nThe system will also be able to provide you with quests that will be generated in real time, and they will be in line with what is happening around you, or just by reading your intentions, the rewards provided by this missions will never be company related so no Credits, IMG Ticket, Company Perks and so on, in general you can expect to receive EXP, new abilities, items, weapons ecc.\n\nThere will also be an unique function to this system, you won't be able to directly buy a companion (other mission rewards are an exception), instead every time you complete an \"Additional Objective\" from this or other missions you have active, you will be given a special ticket to Roll for a 10 gacha roll, but you will be allowed to keep only 2 out of the 10 pulled companions, as for the 8 you will discard keep count of their credit value, for every time the accumulated credit discard value reaches 150, you will be able to perform a 10 pull with a guaranteed tier 7. \n\nThe following are the monsters you may choose to start with, and their relative starting bonus:\n|Imp| (Size comparison: House-cat) (Bonus: EXP gain +700%/ Talents are 7x more effective/ Pocket Space/ Shroud of Power/ Target Tracker/ Bounty Tracker) (You must have Mapper to activate the last two bonuses).\n|Hellhound| (Size comparison:Wolf)  (Bonus: EXP gain +500%/ Talents are 5x more effective/ Elemental Shroud Volcanic/ Elemental Loom) (You must have Shroud of Power to activate the last two bonuses).\n|Cerberus| (Size comparison:Horse) (Bonus: EXP gain +350%/Talents are 3x more effective/ Inexhaustible) (You must have Drain Defense x2 and Everlasting Talent to activate the last bonus).\n|Centaur| (Size comparison: Horse+ ) (Bonus: EXP gain +250%/Talents are 2x more effective /Luxury Goods/ Shackles/ Designer Set) (You must have Tempest Jewelry to activate the last two bonuses).\n|DragonTaur| (Size comparison:Elephant) (Bonus: EXP gain +200%/ Talents are 2x more effective Stud Service/ Dragon Heart).\n|Basilisk| (Size comparison: Titanoboa) (Bonus: EXP gain +150%/Talents are 2x more effective /Body Defense x2/ Creature Defense x2).\n|Medusa| (Size comparison:) (Bonus: EXP gain +100%/ Love Spot/ Alluring Whisper).\n|Giant| (Size comparison: Giraffe) (Bonus: +50%/Wild Defense x2/ Zenryoku Zenkai).\n|Jotun| (Size comparison:) (Bonus: Template Stacking II of your choice).",
+    "uid": "YhlGX"
+  },
+  {
+    "reward": 300,
+    "image": "https://i.redd.it/peltb668r7m71.jpg",
+    "author": "ErosArrow",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "A Widow Wife",
+    "loca": "Marvel",
+    "lewd": true,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Make her to fall for you within a year."
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Romance her in six months."
+      },
+      {
+        "reward": 150,
+        "type": "Credits",
+        "value": "Become her soulmate in three months."
+      },
+      {
+        "reward": 200,
+        "type": "Credits",
+        "value": "Romance her by the end of your first meeting. (Impressive)"
+      },
+      {
+        "reward": 150,
+        "type": "Credits",
+        "value": "Make it a set and bag Yelena Belova too."
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Shut down the Red Room in the process."
+      },
+      {
+        "reward": "Do you seriously need more than the harem?",
+        "type": "Other",
+        "value": "Create a harem with all of the widows."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You cannot use mind control to skip the work."
+      },
+      {
+        "value": "Neither you nor Natasha can die during the duration of the mission."
+      },
+      {
+        "value": "You cannot leave the world during the mission."
+      },
+      {
+        "value": "Your demiplane is locked whenever she is trying to kill you. We don't want you hiding whenever there's danger."
+      }
+    ],
+    "budget": 0,
+    "desc": "Out of the many beautiful women that the Marvel universe has to offer, Natasha Romanoff stands at the top of the list. It is your job, dear contractor, to win her heart before she stops your heart. The Company will arrange for you to be her next target as soon as you enter the world. By our estimates, she should take her first try within your first 24 hours. Survive as long as it takes to somehow sweep this curvy killer off of her feet.",
+    "uid": "ijSaN"
+  },
+  {
     "reward": "1 credit per person disguised, per hour.",
     "image": "https://i.imgur.com/2ZOiPqq.png",
     "author": "Lesbean",
@@ -14080,6 +16443,7 @@
     "rewardType": "Other",
     "source": "",
     "title": "Sorry Daddy, I’ve Been Naughty",
+    "uid": "hMKge",
     "loca": "Generic",
     "lewd": true,
     "scope": "Quick",
@@ -14092,7 +16456,7 @@
     ],
     "conditions": [
       {
-        "value": "Capture all residents of the monastery and have them join your cause."
+        "value": "Capture all residents of a monastery or church and have them join your cause. The residence must have at least 20 residents."
       },
       {
         "value": "Any prayer sessions should involve masturbation, sex or the like for further corruption."
@@ -14102,8 +16466,7 @@
       }
     ],
     "budget": 125,
-    "desc": "Who doesn’t like sexy nuns? Well, the nuns in question and the greater church are often quite opposed to a proper exploration of sexual desire. But don’t let that stop you in spreading some self-love, or love of others. In fact, if you take this job, we insist that you find a place filled with such maidens sworn to worship and chastity and turn it into a den of depravity. We want a nice remodeling of the worship to something sexier and the like.",
-    "uid": "hMKge"
+    "desc": "Who doesn’t like sexy nuns? Well, the nuns in question and the greater church are often quite opposed to a proper exploration of sexual desire. But don’t let that stop you in spreading some self-love, or love of others. In fact, if you take this job, we insist that you find a place filled with such maidens sworn to worship and chastity and turn it into a den of depravity. We want a nice remodeling of the worship to something sexier and the like."
   },
   {
     "reward": "5 Credits per Session of “Correction” up to 25 Credits.",
@@ -14558,7 +16921,7 @@
         "value": "Your tier is capped at tier 7 for the quest's duration."
       },
       {
-        "value": "Power Swapping is disabled to create an authentic adventurer experience. However, Template Stacking I and II are permitted."
+        "value": "Power Swapping is disabled to create an authentic adventurer experience."
       },
       {
         "value": "Non-Danmachi deities are prohibited from joining you inside the Dungeon. Unless it is to serve as bait."
@@ -30828,7 +33191,7 @@
   },
   {
     "reward": 80,
-    "image": "https://cdn.donmai.us/original/f4/16/__fate_testarossa_takamachi_nanoha_raising_heart_bardiche_tome_of_the_night_sky_and_3_more_lyrical_nanoha_and_1_more_drawn_by_sen_astronomy__f4160c70d61477051e8f3abe783f0c79.jpg",
+    "image": "https://skdesu.com/wp-content/uploads/2023/07/mahou-shoujo-lyrical-nanoha-1074x1536.jpg",
     "author": "cthulhu",
     "rewardType": "Credits",
     "source": "",
@@ -39625,18 +41988,23 @@
     "uid": "TNzsj"
   },
   {
+    "reward": "Benjamin Tennyson [TX] & Gwendolyn Tennyson [TX], or one TX Ticket and 500 credits.",
+    "image": "https://i.imgur.com/SF0Qg1Vl.jpg",
+    "author": "Darkarma",
+    "rewardType": "Companions",
+    "source": "",
+    "title": "Abandoned Metaverse",
+    "uid": "llYHW",
+    "loca": "Ben 10",
+    "lewd": false,
     "scope": "Quick",
     "objectives": [
       {
+        "reward": "+1 Sweet Home Expansion or 40 Credits",
         "type": "Perks",
-        "value": "Destroy the Earth",
-        "reward": "+1 Sweet Home Expansion or 40 Credits"
+        "value": "Destroy the Earth"
       }
     ],
-    "source": "",
-    "reward": "Benjamin Tennyson [TX] & Gwendolyn Tennyson [TX], or one TX Ticket and 500 credits.",
-    "desc": "A bad Meta Shift has occurred, possibly the result of someone attempting to Jailbreak a universe from Company control. While we've managed to retain access, what's left of the world requires a finer touch, yours. Why? The Ben 10 and Gwen 10 universes have been merged into one. Unexpectedly this has resulted in a Flipped Morality. Anyone who was good is evil and vice versa. Why is that bad? Think about it, we now have a pair of evil ten-year-olds who both have access to the Omnimatrix. This is not a good thing.\n\nKill them and we'll reformat them into their originals, or Capture them if you want to keep the little evil shits. If possible get rid of the earth too before you skedaddle.",
-    "rewardType": "Companions",
     "conditions": [
       {
         "value": "Don't attract Vilgax's attention, he's a goody two-shoes who will try and stop you from carrying out your mission."
@@ -39646,11 +42014,7 @@
       }
     ],
     "budget": 100,
-    "author": "Darkarma",
-    "title": "Abandonned Metaverse",
-    "loca": "Ben 10",
-    "image": "https://i.imgur.com/SF0Qg1Vl.jpg",
-    "uid": "llYHW"
+    "desc": "A bad Meta Shift has occurred, possibly the result of someone attempting to Jailbreak a universe from Company control. While we've managed to retain access, what's left of the world requires a finer touch, yours. Why? The Ben 10 and Gwen 10 universes have been merged into one. Unexpectedly this has resulted in a Flipped Morality. Anyone who was good is evil and vice versa. Why is that bad? Think about it, we now have a pair of evil ten-year-olds who both have access to the Omnimatrix. This is not a good thing.\n\nKill them and we'll reformat them into their originals, or Capture them if you want to keep the little evil shits. If possible get rid of the earth too before you skedaddle."
   },
   {
     "conditions": [
@@ -42437,20 +44801,26 @@
     "uid": "ZEpgt"
   },
   {
-    "reward": "You gain one special “EX” template applicable to any Touhou waifu of your choice, vastly increasing their power and turning them into “EX” versions at T9, or T10 if they are already T9. These are based on their Touhoumon EX versions and could be alternative versions such as Advent Cirno, permanently unlocked super-modes such as EX-Keine or generic empowered types like EX Koishi.",
+    "reward": "An “EX” template. If added to a Touhou waifu, makes them T9. T10 if they are already T9. Changes are based on their Touhoumon EX versions. This may be generic or based on an existing Touhoumon evolution.",
+    "image": "https://images2.imgbox.com/d2/b3/EwCW3n5T_o.png",
+    "author": "Heaven Canceler",
+    "rewardType": "Other",
+    "source": "",
+    "title": "EX-Rumia Ascendant",
+    "uid": "KIcka",
+    "loca": "Touhou",
+    "lewd": false,
     "scope": "Grand",
-    "image": "https://i.imgur.com/AwflCvs.jpg",
-    "budget": 600,
     "objectives": [
       {
-        "type": "Perks",
         "reward": " Zenryoku Zenkai and Social Talent. You also gain the capture value of any returned waifu even without needing to capture them.",
+        "type": "Perks",
         "value": "Defeat or convince Lily White, Star Sapphire, Sunny Milk and Luna Child to surrender. Then return them to the client. Warning, they may have been empowered beyond their base abilities."
       },
       {
+        "reward": "You gain a free instant powerswap up to T7 usable only on retinue members that were originally T1 or T2 or 80 Credits.",
         "type": "Perks",
-        "value": "Find and retrieve Hiiragi Kagami, Hiiragi Tsukasa and Izumi Konata from Lucky Star without letting them die.",
-        "reward": "You gain a free instant powerswap up to T7 usable only on retinue members that were originally T1 or T2."
+        "value": "Find and retrieve Hiiragi Kagami, Hiiragi Tsukasa and Izumi Konata from Lucky Star without letting them die."
       },
       {
         "reward": "All Faerie Feast perks and a TS for both targets to be distributed among your retinue. Alternatively, 120 Credits.",
@@ -42458,9 +44828,6 @@
         "value": "The company would like to see a happy recovery for this client. Please if possible capture the local versions of Cirno and Daiyousei as replacements for the maddened Rumia."
       }
     ],
-    "rewardType": "Other",
-    "loca": "Touhou",
-    "source": "",
     "conditions": [
       {
         "value": "Defeat EX-Rumia (T10), without letting her damage Gensokyo beyond repair. Make sure that the client survives without permanent harm to body or mind."
@@ -42475,10 +44842,8 @@
         "value": "No killing the locals, stick to the Danmaku rules unless they break them first."
       }
     ],
-    "author": "Heaven Canceler",
-    "desc": "Erhh… hello? I am gonna be honest, I am kinda panicking badly here. I sort of started in a lower level slice of life setting and stuff and randomly ended up in Touhou by the power of RNG. Tried to keep a low profile of course. Fortunately I got faerie feast and stuff, so I managed to get a few of the local fairies to like me and stuff. A few careless confessions later and I was sure everything was going great.\n\nThen I got my hands on Rumia and things went to hell. I thought I needed someone who can do more than shoot magic bullets down the line, so I decided to give her a little power up. Saber Alter seemed fitting… I mean the aesthetics should fit with her darkness powers and all that. I thought that would be perfect.\n\nExcept it turns out the whole thing with Ex-Rumia wasn’t just a meme. Send help, she almost killed me when that damn ribbon came off. I think the power has driven her mad, but at least she hasn’t killed me. That said, she kinda chained me to the kitchen and is currently trying to burn down Gensokyo to stop anyone from stealing me, together with some other waifus of mine she has scared into submission. A few other girls got away and I think they may be trying to get help from the locals… I think she may have also affected some of them with the grail mud corruption from the Alter power-up... Please, if you get me out of here, you can have Rumia, hell feel free to catch any free waifu in this place. I just want to get out of this alive and whole.",
-    "title": "EX-Rumia Ascendant",
-    "uid": "KIcka"
+    "budget": 600,
+    "desc": "Erhh… hello? I am gonna be honest, I am kinda panicking badly here. I sort of started in a lower level slice of life setting and stuff and randomly ended up in Touhou by the power of RNG. Tried to keep a low profile of course. Fortunately I got faerie feast and stuff, so I managed to get a few of the local fairies to like me and stuff. A few careless confessions later and I was sure everything was going great.\n\nThen I got my hands on Rumia and things went to hell. I thought I needed someone who can do more than shoot magic bullets down the line, so I decided to give her a little power up. Saber Alter seemed fitting… I mean the aesthetics should fit with her darkness powers and all that. I thought that would be perfect.\n\nExcept it turns out the whole thing with Ex-Rumia wasn’t just a meme. Send help, she almost killed me when that damn ribbon came off. I think the power has driven her mad, but at least she hasn’t killed me. That said, she kinda chained me to the kitchen and is currently trying to burn down Gensokyo to stop anyone from stealing me, together with some other waifus of mine she has scared into submission. A few other girls got away and I think they may be trying to get help from the locals… I think she may have also affected some of them with the grail mud corruption from the Alter power-up... Please, if you get me out of here, you can have Rumia, hell feel free to catch any free waifu in this place. I just want to get out of this alive and whole."
   },
   {
     "image": "https://cdn.imgchest.com/files/84jdcwrqp54.png",

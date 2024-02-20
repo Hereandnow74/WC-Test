@@ -1,5 +1,34 @@
 <template>
   <div class="relative bg-[#f2eecb] dark:bg-[#1E1E5C] rounded p-2 shadow-lg flex flex-col gap-1">
+    <div v-if="mission.uid" class="flex gap-4">
+      <div class="hover:(text-red-400) text-lg cursor-pointer flex items-center gap-1" title="Add to Favorites" @click="missionFavoritesSet.has(mission.uid) ? missionFavorites.splice(missionFavorites.indexOf(mission.uid), 1) : missionFavorites.push(mission.uid)">
+        <span class="text-red-500">
+          <ci:heart-fill
+            v-if="missionFavoritesSet.has(mission.uid)"
+          />
+          <ci:heart-outline v-else />
+        </span>
+      </div>
+      <div class="flex gap-5 text-lg cursor-pointer flex items-center">
+        <span class="hover:text-green-200 flex gap-2 items-center" :title="missionLikes.likesUsers.join(', ')" @click="like">
+          <carbon:thumbs-up
+            v-if="!missionLikes.likesUsers.includes(user.name)"
+          />
+          <carbon:thumbs-up-filled v-else />
+          {{ missionLikes.likes }}
+        </span>
+        <span class="hover:text-red-200 flex gap-2 items-center" :title="missionLikes.dislikesUsers.join(', ')" @click="dislike">
+          <carbon:thumbs-down
+            v-if="!missionLikes.dislikesUsers.includes(user.name)"
+          />
+          <carbon:thumbs-down-filled v-else />
+          {{ missionLikes.dislikes }}
+        </span>
+      </div>
+      <div title="Edit Mission" class="ml-auto text-lg hover:text-orange-500 cursor-pointer flex items-center gap-1" @click="showEditCompanion">
+        <bx:bxs-edit />
+      </div>
+    </div>
     <h4 class="text-lg text-center py-1">
       <router-link :to="`/missions?q=${mission.uid}`" class="hover:underline">
         <span v-html="mission.title"></span>
@@ -8,17 +37,6 @@
     </h4>
     <div v-if="mission.temprorary" class="text-red-700 dark:text-red-400">
       This is the mission you just added, it shown just for your convenience, and will disappear if you press F5.
-    </div>
-    <div title="Edit Mission" class="text-lg hover:text-orange-500 cursor-pointer flex items-center gap-1 absolute top-1 right-1" @click="showEditCompanion">
-      <bx:bxs-edit />
-    </div>
-    <div class="hover:(text-red-400) text-lg cursor-pointer flex items-center gap-1 absolute top-1 left-1" title="Add to Favorites" @click="missionFavoritesSet.has(mission.uid) ? missionFavorites.splice(missionFavorites.indexOf(mission.uid), 1) : missionFavorites.push(mission.uid)">
-      <span class="text-red-500">
-        <ci:heart-fill
-          v-if="missionFavoritesSet.has(mission.uid)"
-        />
-        <ci:heart-outline v-else />
-      </span>
     </div>
     <div class="max-h-sm overflow-hidden relative flex justify-center">
       <img
@@ -146,6 +164,9 @@ import { XBBCODE } from '~/logic/bbtohtml'
 import { usePlayStore } from '~/store/play'
 import { useSaves } from '~/store/saves'
 import { useStore } from '~/store/store'
+import { likeOrDislikeMission } from '~/logic/server'
+import { useUser } from '~/store/user'
+import { customDialog } from '~/logic/dialog'
 
 const { settings } = useStore()
 const { missionRewards } = usePlayStore()
@@ -156,6 +177,10 @@ const props = defineProps({
     type: Object as PropType<Mission>,
     default: () => ({}),
   },
+  likes: {
+    type: Object as PropType<{ likes: number; dislikes: number; likesUsers: string[]; dislikesUsers: string[] }>,
+    default: () => ({ likes: 0, dislikes: 0, likesUsers: [], dislikesUsers: [] }),
+  },
 })
 
 const imageEl = ref(null)
@@ -164,6 +189,11 @@ const showEditMission = ref(false)
 
 const showImage = ref(!props.mission.lewd)
 const allObjectives = ref(false)
+const missionLikes = ref(props.likes)
+
+watch(() => props.likes, (val) => { missionLikes.value = val })
+
+const { user } = useUser()
 
 const missionFavoritesSet = computed(() => new Set(missionFavorites.value))
 
@@ -182,5 +212,21 @@ const convertedBBCode = computed(() => {
 })
 
 onMounted(() => useTooltips())
+
+async function like() {
+  const res = await likeOrDislikeMission({ uid: props.mission.uid, like: true, dislike: false, userId: user.value.id })
+  if (res && typeof res === 'object')
+    missionLikes.value = res
+  else
+    customDialog(res, ['Ok'])
+}
+
+async function dislike() {
+  const res = await likeOrDislikeMission({ uid: props.mission.uid, like: false, dislike: true, userId: user.value.id })
+  if (res && typeof res === 'object')
+    missionLikes.value = res
+  else
+    customDialog(res, ['Ok'])
+}
 
 </script>

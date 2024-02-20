@@ -94,10 +94,10 @@ export const bindings: PerkFull[] = [
     image: 'https://i.ibb.co/G2smr4v/Tempest-Jewelry.jpg',
     desc: `
     <p>These magitech jewels reward obedience through pleasure. You receive one new piece of jewelry each day, up to a limit of 5 unused pieces at a time. This limit increases by one for each member of your retinue, including yourself, currently wearing this jewelry. This binding will be applied to purchased companions before delivery.</p>
-    <p>When you purchase this binding, select one type of jewelry to give to your companions: choker, ring, (bracelet and anklet), (armlet and thighlet), (mask and veil), or (crown and tiara). The other options may be purchased with a later perk. Tempest bands may be leather, silk, or metal, depending on jewelry type. Aside from the mask, all Tempest items have a central mounted gem: ruby, orange topaz, citrine, emerald, sapphire, amethyst, alexandrite, and clear and black diamonds are all available. Masks are highly variable, but generally have your emblem on the front. Tempest Rings are designed to be worn on the fingers, not anywhere else.</p>
+    <p>When you purchase this binding, select one type of jewelry to give to your companions: choker, ring, (bracelet and anklet), (armlet and thighlet), (headpiece: crown, tiara, hood, etc.), or (facepiece: mask, veil, visor, etc.). The other options may be purchased with a later perk. Tempest bands may be leather, silk, or metal, depending on jewelry type. Aside from the facepiece, all Tempest items have a central mounted gem: ruby, orange topaz, citrine, emerald, sapphire, amethyst, alexandrite, and clear and black diamonds are all available. Facepieces are highly variable, but generally have your emblem on the front. Tempest Rings are designed to be worn on the fingers, not anywhere else.</p>
     <p>Wearers’ libido is highly enhanced, as is submissiveness to both their masters and any more dominant members of the same retinue. Several options are available for punishing disobedience, including induced emotional numbness or release denial for a set time. You are your own master and not subject to any unwanted side- effects of your own equipment.</p>
-    <p>When a Tempest item’s latch (if it has one) is first closed around a wearer, the latch disappears and manual removal becomes impossible as the jewelry automatically activates. Active jewelry is indestructible and may not otherwise be warped away. If a wearer dematerializes, swaps bodies, or otherwise transforms away from a standard humanoid height and build, the jewelry will disappear with, into, or otherwise follow the wearer for the duration.</p>
-    <p>Removal of a wearer's own Tempest item becomes unthinkable after one full week (168 hours), via a gradual process of rationalization, physical comfort, the automatic reward and punishment system, and, in extreme circumstances, short-term memory loss. Captures are finalized at this point if no other effort is spent. The process can be accelerated to as few as three days (72 hours), however, if the wearer loses all will to resist. Removing a jewelry from a subject before that point will stop their capture process, voiding all progress. Any punishment system you program for jewelry wearers will start working from the moment the latch is first closed, not just when the capture is finalized. If you (the contractor) wear a Tempest item, you may deactivate and remove it at any time.</p>
+    <p>When a Tempest item’s latch (if it has one) is first closed around a wearer, the latch disappears and manual removal becomes impossible as the jewelry automatically activates. If an active jewelry piece is ever broken, it will repair itself completely the next time it isn’t observed by anyone who isn’t in your retinue, and may not otherwise be warped away. If a wearer dematerializes, swaps bodies, or otherwise transforms away from a standard humanoid height and build, the jewelry will disappear with, into, or otherwise follow the wearer for the duration.</p>
+    <p>Intentional damage or removal of a wearer's own Tempest item becomes unthinkable after one full week (168 hours), via a gradual process of rationalization, physical comfort, the automatic reward and punishment system, and, in extreme circumstances, short-term memory loss. Captures are finalized at this point if no other effort is spent. The process can be accelerated to as few as three days (72 hours), however, if the wearer loses all will to resist. Removing a jewelry from a subject before that point will stop their capture process, voiding all progress. Any punishment system you program for jewelry wearers will start working from the moment the latch is first closed, not just when the capture is finalized. If you (the contractor) wear a Tempest item, you may deactivate and remove it at any time.</p>
     <p>You may deactivate any of your retinue's jewelry through the associated software, installed as an app on your smart device. The latch will reappear and may then be undone (and the jewelry removed) normally. Your retinue may use other app features added by expansion perks, but cannot perceive the deactivation option. (They may still use it if directly ordered.) This app will uninstall itself if you trade in the Jewelry for a more advanced Binding. This is company software and benefits from all such protections.</p>
 `,
   },
@@ -112,6 +112,23 @@ export const bindings: PerkFull[] = [
     max: 5,
     whitelist: ['Tempest Jewelry'],
     desc: 'Select an additional jewelry type for your Tempest items. This may be repurchased until every jewelry type is available to you. Additionally, you will receive an additional Tempest item each day with each purchase, with your reserve cap increasing by 5.',
+  },
+  {
+    uid: 'koHdq',
+    title: 'Designer Set',
+    cost: 35,
+    category: 'Binding',
+    type: 'Jewelry',
+    image: '',
+    whitelist: ['Luxury Goods'],
+    desc: `
+    <p>Each worn Tempest piece can now project invisible, semi-permeable barrier shields. These shields are accompanied by purely-aesthetic “armor” projections, matching the Tempest pieces they’re projected from: leather to leather, metal to metal, as well as the gemstone color. Within that determined color scheme, the projected armor can have any appearance. This can be changed manually in the app. As the actual protection comes from the shield, it remains just as effective regardless of how much skin is concealed. These projections are physical and can catch on thick or loose clothing. For best results, skintight undersuits or outright nudity (aside from the Tempest pieces) are recommended.</p>
+    <p>The shields from this perk do not benefit from any durability added to the Tempest pieces that project them. If a shield section takes too much damage too quickly, the shield will fail and the accompanying “armor” will shatter into light. A broken shield will only reactivate once it has a full charge.</p>
+    <p>Shields have three basic settings. At the weakest level, a shield will evenly cover the entire body, which can withstand direct fire from a high-caliber heavy machine gun for three seconds before failing. Without additional stress, a broken shield will recharge after ten seconds.</p>
+    <p>At the middle level, the shield will concentrate around a single body part that one of its components is projected from: headpiece and facepiece to the entire head, bracelets separately to each hand and forearm, necklace or waist chains (from Shackles) to the torso, etc. A full set will cover the entire body and allow the full use of this mode. Rings can assist with this mode if a non-ring piece is worn, but will not protect the hands individually. At this level, a shield can withstand a single direct hit from a modern battleship’s main cannon before failing. When this shield breaks, it will recharge after three hours.</p>
+    <p>The highest level is an emergency barrier that requires at least 6 worn Tempest pieces to activate. This barrier can take only a single strike before failing, but will always take that strike, no matter how powerful it is. The barrier will then linger around the user, providing 1 second of temporary invincibility before it fades completely. This barrier must be manually triggered or programmed with Expert Runes: Logic, and takes a full day (24 hours) to recharge.</p>
+    <p>On the lower two modes, each additional Tempest piece that an individual wears will add its base protection to the first, as well as a +5% modifier to the total shield protection. In these two modes, all active shields will break and recharge as one. The emergency barrier has a different form of durability: each additional shield is simply another hit that the wearer can take. Emergency shielding will fail as individual layers, with only a single layer recharging at a time. Individual shields that break in this mode will remain broken for the other two modes as well and not contribute to them until they’ve fully recharged.</p>
+    `,
   },
   {
     uid: 'ubLJy',
@@ -148,8 +165,7 @@ export const bindings: PerkFull[] = [
     type: 'Jewelry',
     image: 'https://i.ibb.co/kq0j8hk/Aggressive-Initiations-New.jpg',
     whitelist: ['Tempest Jewelry'],
-    desc: `The minimum time required to confirm a Tempest capture may now be reduced to zero, through the target’s sexual submission to yourself or more dominant members of your retinue. The more and stronger orgasms the subject experiences at their dominator’s hand, the faster the capture will progress. Otherwise, the capture will still take the normal amount of time.
-    <p>Transformations from Advanced Runes (Body) and (Mind) also benefit from this perk, regardless of the subject’s capture state.</p>`,
+    desc: 'The minimum time required to confirm a Tempest capture may now be reduced to zero, through the target’s sexual submission to yourself or more dominant members of your retinue. The more and stronger orgasms the subject experiences at their dominator’s hand, the faster the capture will progress. Otherwise, the capture will still take the normal amount of time.',
   },
   {
     uid: 'B2ow8',
@@ -163,6 +179,22 @@ export const bindings: PerkFull[] = [
     <p>Disobedience is no longer allowed. Captured jewelry wearers will perform any intentional, direct order you give them, within the realm of physical or mental possibility. Orders do not need to be consciously possible. Will-saves, intelligence-saves, or reinterpretations are not allowed. Even if a wearer wants to resist, their body or mind will perform as ordered regardless. Unlike other controls, this enforces your exact words, not your intent: “Do X” and “Make and follow a plan to do X” can have vastly different results.</p>`,
   },
   {
+    uid: 'B2ows',
+    title: 'Assuming Direct Control',
+    cost: 50,
+    category: 'Binding',
+    type: 'Jewelry',
+    image: '',
+    whitelist: ['Luxury Goods', 'Shackles', 'Designer Set', 'Absolute Order'],
+    freebies: { defensePerks: [{ title: 'Possession Defense', cost: 0, count: 1 }] },
+    desc: `
+    <p>You can now project your consciousness to bodyjack any of your subjects who wear a full set of Tempest pieces: at least one bracelet and armlet for each arm, at least one thighlet and anklet for each leg, one piece each on the head and face, and at least one each on the neck and torso. Rings are optional. Take one copy of Possession Defense for free.</p>
+    <p>This perk is limited by your mental multiprocessing ability: at baseline, you can only take over one subject at a time, leaving your own body idle. Multicore Neural Leyline and Distributed Intellectual Devotions are recommended for simultaneous control of multiple bodies.</p>
+    <p>Depending on the settings you choose in the Tempest app, any mental programming you’ve already performed on them, and what you actually use their bodies for, your actively-puppeted subjects may experience that time as a pleasant dream, a helpless locked-in nightmare, or remain unaware as they sleep right through. More cooperative and aware subjects are more likely to give feedback and advice through the link so your puppets can act more like their normal selves.</p>
+    <p>Active uses of this perk count as soul links for the purpose of Inexhaustible and allow you to use your own psychic techniques and magical abilities through the link. Additionally, the central gemstones in each Tempest piece that your puppet wears will visibly shine while this perk is active, as will any Stamp tattoos from Canvas.</p>
+    `,
+  },
+  {
     uid: '2HqiU',
     title: 'Jewels of Discord',
     cost: 25,
@@ -171,7 +203,7 @@ export const bindings: PerkFull[] = [
     image: 'https://i.ibb.co/GJNrt3F/Jewels-Of-Discord-New.jpg',
     whitelist: ['Tempest Jewelry'],
     desc: `
-    Tempest items can now adjust their styles to better match the rest of the wearer’s clothing, with no changes to their type. A ring will always be a ring. Anyone attempting to remove a Tempest item, other than you and subjects you order to do so, will fail, then miss the fact that it’s still there afterwards. This applies to both used and unused items.
+    Tempest items can now adjust their styles to better match the rest of the wearer’s clothing, with no changes to their type. A ring will always be a ring. Anyone attempting to remove a Tempest item will not notice their failure, nor the fact that the item is still there afterwards. This applies to both used and unused items.
     <p>With unused jewels only, you may reverse this effect and make the item (one item at a time) unusually interesting to potential targets. This applies to all potential targets who see it in person and may spark fights over the item. When a potential target touches the item, they will be overcome with an urge to wear it. This effect lasts 48 hours or until the item is worn, whichever comes first. The more selfish a target (the less control they have over their base desires), the stronger the pull becomes. Imaginary tier targets are not noticeably affected.</p>
     <p>Potential targets affected by this attractor, who fail to wear the specific jewelry piece themselves, will remain affected after it finds a wearer and transfer their desire to future jewelry (with this effect active) they see without any cognitive dissonance.</p>
     <p>This attractor fails at the appropriate stages for targets who lack a sense of sight or touch. Strong-willed targets can choose to resist the attractor, periodically negating its effect before it needs to be resisted again. A stronger will increases the duration of this resistance, to an initial cap of 24 hours. After the passive resistance expires, if a target actively resists the attractor again before the target sleeps or 24 more hours have passed, whichever comes first, the duration of their resistance will be doubled. Each of these doublings will stack until the streak ends and the duration cap resets back to 24 hours.</p>
@@ -204,10 +236,22 @@ export const bindings: PerkFull[] = [
     whitelist: ['Designer Set', 'Jewels of Discord'],
     freebies: { defensePerks: [{ title: 'Polymorph Defense', cost: 0, count: 1 }] },
     desc: `
-    <p>Any retinue member wearing at least one Tempest piece can be transformed into an inanimate object between 10% and 100% of the person’s normal height. This can be purely ornamental, such as a statue, body pillow, or figurine, or functional as a tool or weapon. For functional items, the function will always reflect the retinue member’s skills or abilities and scale according to their tier: someone with fire powers and is transformed into a sword would most likely become a flaming sword. Take Polymorph Defense for free.</p>
-    <p>The objectified retinue member will benefit from both the protections given to active jewelry and the lure effect of Jewels of Discord; the more pieces they were wearing before the transformation, the stronger the effect. Objectified subjects experience a flow state for the duration, aware of their surroundings but not affected by natural needs or boredom. Basic Runes is suggested for communication with your subjects and tactical use of this feature. Objectified retinue members’ thoughts, that they intend to transmit, will automatically be converted into comms, bypassing the need for physical speech.</p>
+    <p>Any retinue member wearing at least one Tempest piece can be transformed into an inanimate object between 10% and 100% of the person’s normal height. This can be purely ornamental, such as a statue, body pillow, or figurine, or functional as a tool or weapon. For functional items, the function will always reflect the retinue member’s skills or abilities and scale according to their tier: someone with fire powers and is transformed into a sword would most likely become a flaming sword. Take one copy of Polymorph Defense for free. You can transform your objectified subjects back to normal through the app. If you instead used this perk on yourself, you can return to normal at will.</p>
+    <p>Objectified subjects experience a flow state for the duration, aware of their surroundings but not affected by natural needs or boredom. Basic Runes is suggested for communication with your subjects and tactical use of this feature. Objectified retinue members’ thoughts, that they intend to transmit, will automatically be converted into comms, bypassing the need for physical speech. If a retinue member is pregnant when this perk is applied, the pregnancy will be put on hold until they return to living form. Fertility Calibration cannot affect objectified individuals.</p>
     <p>Finally, love confessions aimed toward your subjects will count as captures. The targets who do so will be marked with stamp tattoos, so you can give them Tempest pieces at a later time. These follow all of the same rules as confessions aimed toward yourself.</p>
     `,
+  },
+  {
+    uid: 'lg82f',
+    title: 'Backseat Driver',
+    cost: 30,
+    category: 'Binding',
+    type: 'Jewelry',
+    image: '',
+    whitelist: ['Golden Idol', 'Assuming Direct Control'],
+    desc: `
+    <p>Your objectified retinue members may now control their users. When worn or held, as appropriate to their form, they can exit their flow state to wear their user’s body as their own. Depending on the difference in willpower between the two, the user might have any of the same experiences while possessed as in Assuming Direct Control. Only one object may seize control of their user at a time. While in this state, if the host remains aware, the possessor can accelerate their capture using the methods of Aggressive Initiations, at reduced efficiency relative to both individuals having their own bodies. The possession by itself is not enough for this effect.</p>
+    <p>After the user is captured, you can shift which mind is in control at any point along sliders from one to the other. Gradients along this slider represent fusion states between the two subjects. With Body Runes and Mind Runes, you can also control which individual aspects of the two subjects are emphasized, with each perk enabling physical or mental fine-tuning, respectively.</p>`,
   },
   {
     uid: 'lg88f',
@@ -218,28 +262,33 @@ export const bindings: PerkFull[] = [
     image: 'https://i.imgur.com/PDC3mPsl.jpg',
     whitelist: ['Tempest Jewelry'],
     desc: `
-    <p>Tempest items now have a variety of mundane uses. The bracelets are now smart, with many electronic functions beyond a basic clock (digital or analog, depending on taste) and calculator. Automatic translation gives a wearer the ability to speak any language that you also speak, plus the standard and/or trade languages of any place they visit. This knowledge persists after they leave the area where the language is spoken. Any Tempest mask/veil in use by your retinue will now have a heads-up display with a variety of features and layouts that you can enable, disable, or modify as desired. As a contractor, your mask or veil may also wirelessly connect to your company smart device. If you have Designer Set, the heads-up display displayed from a Mask or Veil will also show the wearer’s current shield integrity and remaining recharge time. This may be disabled.</p>
-    <p>A communications and monitoring app allows you to track your subjects’ locations and vitals and speak with them (and them with each other) remotely from any distance, even between different multiverses. These comms are not telepathic and will not work without actual speech or third-party thought-to-comms devices, limiting their use with thighlets and anklets. Tempest masks/veils are highly recommended for this purpose.</p>
+    <p>Tempest items now have a variety of mundane uses. The bracelets are now smart, with many electronic functions beyond a basic clock (digital or analog, depending on taste) and calculator. Automatic translation gives a wearer the ability to speak any language that you also speak, plus the standard and/or trade languages of any place they visit. This knowledge persists after they leave the area where the language is spoken.</p>
+    <p>Any Tempest facepiece in use by your retinue will now have a heads-up display with a variety of features and layouts that you can enable, disable, or modify as desired. As a contractor, your own facepiece may also wirelessly connect to your company smart device. If you have Designer Set, the heads-up display displayed from a Tempest facepiece will also show the wearer’s current shield integrity and remaining recharge time. This may be disabled.</p>
+    <p>A communications and monitoring app allows you to track your subjects’ locations and vitals and speak with them (and them with each other) remotely from any distance, even between different multiverses. These comms are not telepathic and will not work without actual speech or third-party thought-to-comms devices, limiting their use with thighlets and anklets. Tempest facepieces are highly recommended for this purpose. If you have Assuming Direct Control, the comms will become quasi- telepathic, converting intended thoughts to comms, and vice versa, for any retinue member who wears at least a Tempest facepiece.</p>
     <p>A disguise app can temporarily shift the wearer’s apparent race (human, kitsune, vulcan, etc.) and phenotype to blend in better with the local populace. This app cannot emulate abilities that the wearer cannot perform normally. These disguises are not customizable and simply reflect what the wearer would look like if they were born as that race. You may only save one disguise at a time into each wearer’s profile.</p>`,
   },
   {
     uid: '206E2',
     title: 'Advanced Runes: Body',
-    cost: 20,
+    cost: 35,
     category: 'Binding',
     type: 'Jewelry',
     image: 'https://i.ibb.co/0c2NBNy/Advanced-Tempest-Runes-Body.jpg',
     whitelist: ['Basic Runes'],
-    freebies: { talentPerks: [{ title: 'Body Tune-Up', cost: 0, count: 1 }, { title: 'Athletic Talent', cost: 0, count: 1 }] },
+    freebies: {
+      talentPerks: [{ title: 'Body Tune-Up', cost: 0, count: 1 }, { title: 'Athletic Talent', cost: 0, count: 1 }, { title: 'Everlasting Talent', cost: 0, count: 1 }],
+      defensePerks: [{ title: 'Body Defense', cost: 0, count: 1 }],
+    },
     /* html */
     desc: `
-    <p>Tempest items may now apply direct physical transformations to your retinue. Take Body Tune-Up and Athletic Talent for free. Every valid physical parameter for a member of the wearer's race (human, kitsune, vulcan, etc.) may be altered, from age, height, and gender to muscle density and sexual characteristics. This also applies to you, if you wear a Tempest item, and wearers who are counted among your subjects. The disguises created using Basic Runes may now be customized.</p>
+    <p>Tempest items may now apply direct physical transformations to your retinue. Take Body Tune-Up, Everlasting Talent, Athletic Talent, and one copy of Body Defense for free. Every valid physical parameter for a member of the wearer's race (human, kitsune, vulcan, etc.) may be altered, from age, height, and gender to muscle density and sexual characteristics. This also applies to you, if you wear a Tempest item, and wearers who are counted among your subjects. The disguises created using Basic Runes may now be customized.</p>
     <p>A wearer's race may also be changed, on a deeper level than the disguises from this perk’s prerequisite, but only if you already have a natural example of the target race in your retinue. “Natural example” includes the results of Power Swap, but not examples created through Template Stacking or this feature. This perk cannot emulate the effects of party-wide Heritage perks such as Dragon Thrall.</p>
-    <p>The jewelry app now includes configuration pages for every wearer of active jewelry. Parameters may be adjusted here, mostly using sliders from 0% (typically the minimum value for a healthy human) to 100%. Transformation speed and duration are also parameters. A jewelry piece’s central gem will visibly glow while a transformation progresses, and more brightly if the transformation is faster or more intense.</p>
+    <p>The jewelry app now includes configuration pages for every wearer of active jewelry. Parameters may be adjusted here, mostly using sliders from 0% (typically the minimum value for a healthy human) to 100%. A jewelry piece’s central gem will visibly glow while a transformation progresses, and more brightly if the transformation is faster or more intense. Aggressive Initiations will hasten this perk’s effects on all targets, regardless of the subject’s capture state.</p>
     <p>For example, hair length uses a linear scale of 1% = 2 cm, while other assets scale exponentially: +100% = 20x the mass. For the average adult human female, a breast measurement of 0% is about 100 g for each breast, 50% is about 350 g, and 100% is about 1.5 kg; full charts for Tempest sizes are available elsewhere. Height instead uses a multiplier relative to 168cm, with an initial range for humans from 7/8x (147 cm) to 1.25x (210 cm).</p>
-    <p>You may save an unlimited number of presets for each wearer and switch between them at any time. If a wearer has a defined alternate form (not a generalized shapeshifter), all of their forms will automatically be saved as presets. Any number of disguises made by this perk’s prerequisite may now be saved as presets. "Exactly how the wearer appeared when the jewelry was first worn, even if the wearer’s original sizes were beyond this perk’s normal limits," is always available as a default preset. Any changes made to this preset will instead output an otherwise- identical copy as a new preset. Deactivating a Tempest item will restore the wearer to their original appearance, unless you desire otherwise.</p>
+    <p>You may save an unlimited number of presets for each wearer and switch between them at any time. If a wearer has a defined alternate form (not a generalized shapeshifter), all of their forms will automatically be saved as presets. Additionally, any number of disguises made by this perk’s prerequisite may now be saved as presets. "Exactly how the wearer appeared when the jewelry was first worn, even if the wearer’s original sizes were beyond this perk’s normal limits," is always available as a default preset. Any changes made to this preset will instead output an otherwise- identical copy as a new preset. Deactivating a Tempest item will restore the wearer to their original appearance, unless you desire otherwise.</p>
     <p>Any sufficiently-disabling transformation that is applied to you will have an automatic time limit of 48 hours so you don’t get stuck. If you reactivate that transformation within 10 minutes, the time limit will be doubled each time until your streak ends. You may set a shorter limit if you like.</p>
     <p>If you have Absolute Order, the limits of this perk’s body modification are vastly raised. The more often and determinedly any wearer resists your orders, the higher the upper limit for all wearers’ parameters will increase. This will also decrease the lower limits for certain parameters, such as height. This limit’s increase has no hard cap, only a soft cap from your capture targets’ ability to maintain resistance to your orders. These effects apply even if the wearer is not yet fully captured. Absolute Order also allows this perk’s regular transformations to apply to wearers who are not yet captured.</p>
+    <p>Absolute Order also makes racial hybridization viable, with no theoretical limit on how many races you can hybridize into one individual. However, the result having all of the strengths of both sides and none of their weaknesses is only guaranteed when there are only two donor races present. More complex combinations are increasingly unreliable. Party-wide Heritage perks such as Dragon Thrall will not count against the hybridization limit, nor will pseudo-races that already freely hybridize, such as most varieties of cyborg, demigod, vampire or lycanthrope. Fandom-specific pseudo-races are noted in the relevant Setting Specific Rules.</p>
     <p>Most measurements become physically unwieldy past 160% and very little testing was performed beyond 300%. Some form of weight reduction or strength boost, whether magical, technological, or otherwise, is highly recommended for such hyper sizes.</p>
     `,
   },
@@ -252,7 +301,7 @@ export const bindings: PerkFull[] = [
     image: 'https://i.ibb.co/Sn1gdqX/Advanced-Tempest-Runes-Mind.jpg',
     whitelist: ['Basic Runes'],
     freebies: { defensePerks: [{ title: 'Mind Defense', cost: 0, count: 1 }] },
-    desc: `Mental transformations for all retinue members are now unlocked in the jewelry app. In addition to libido and submissiveness, attention span and intelligence may also be altered, as well as hobbies, likes and dislikes, fetishes, personality traits, memories, fashion preferences, etc. This is extremely useful for anyone who wants to fine-tune their close harem or play around with individual members’ roles. Your retinue members cannot modify their own orders or apply mental transformations to your profile without express permission. These functions otherwise work the same as their physical counterparts.
+    desc: `Mental transformations for all retinue members are now unlocked in the jewelry app. In addition to libido and submissiveness, attention span and intelligence may also be altered, as well as hobbies, likes and dislikes, fetishes, personality traits, memories, fashion preferences, etc. This is extremely useful for anyone who wants to fine-tune their close harem or play around with individual members’ roles. Your retinue members cannot modify their own orders or apply mental transformations to your profile without express permission. These functions otherwise work the same as their physical counterparts. Aggressive Initiations will hasten this perk’s effects on retinue members.
     <p>Additionally, take Mind Defense for free.</p>
     `,
   },
@@ -282,6 +331,40 @@ export const bindings: PerkFull[] = [
     <p>Previous experience with programming is not required. The suite contains clear tutorials, tooltips on everything, and a simple and intuitive interface, and will walk you through debugging with exactly the right amount of detail to fit your skill level. Take Science Talent for free.</p>
     <p>If you have Advanced Runes: Mind, standing orders may also be edited, deleted, or copy-pasted to new subjects quickly, cleanly, and across any distance. This also applies to the issuing of new orders, but cannot be used on wearers who are not yet fully captured.</p>
     <p>If you have Designer Set, you can program changes to the “armor” projections in the app instead of just relying on manual edits. Shield Break status is additionally useful as a trigger for other effects, including the Tempest piece itself detaching from its wearer. If enabled, detachment can occur any number of times, until the wearer only has one piece left. If you also have Jewels of Discord, detached Tempest pieces will gain that perk’s lure effect, counting separately from the one-at-a-time limit for unused jewels. The lure effect will continue to apply to the detached jewelry until it is worn.</p>
+    `,
+  },
+  {
+    uid: 'IZswh',
+    title: 'Advanced Runes: Spark',
+    cost: 15,
+    category: 'Binding',
+    type: 'Jewelry',
+    image: '',
+    needed: 1,
+    whitelist: ['Basic Runes'],
+    desc: `
+    <p>Tempest pieces now accept enchantments. These effects can be outright magical in nature or simply the capabilities of “Sufficiently Advanced” technology, but must be transferred from existing third-party items that are meant to be worn or handheld. This will destroy the original. Each Tempest piece has a limit of one discrete enchantment at a time; “the entire capability of a single existing item” counts as one for this purpose.</p>
+    <p>If you have Jewels of Discord, you may also take the opposite route and merge a Tempest piece into an existing enchanted item, applying all Tempest properties to the latter at the cost of the former. As with Golden Idol, items that are meant to be worn will benefit from the same anti-loss features as regular Tempest items, while items that are meant to be handheld will benefit from the same anti-loss features as the Company Smart Device. This cannot be undone manually. If you switch away from the Tempest Jewelry system or no longer have the item and its primary user (most likely from a sale or to a Red Eye Orb invader), the item will lose its Tempest properties.</p>
+    `,
+  },
+  {
+    uid: 'IfSwh',
+    title: 'Expert Runes: Dream',
+    cost: 60,
+    category: 'Binding',
+    type: 'Jewelry',
+    image: '',
+    needed: 1,
+    whitelist: ['Designer Set', 'Advanced Runes: Spark'],
+    freebies: { talentPerks: [{ title: 'Soul Talent', cost: 0, count: 1 }, { title: 'Engineering Talent', cost: 0, count: 1 }] },
+    additionalDesc: `<b>Procs: Programmed Random Occurrences</b>
+    <p>Though Expert Runes: Logic, you can also define procs. A proc is any effect with a set chance of triggering from a particular kind of action, whether offensive, defensive, or support. Breathing and other natural requirements are not significant enough actions for a proc, but a single trigger pull and one second at full sprint both qualify. The stronger the effect compared to the enchanter and user, and the more common the base action, the lower the maximum proc rate. All proc rates from Tempest items are capped at 33%. Each tempest piece can have no more than one proc effect at a time.</p>`,
+    desc: `
+    <p>The Tempest enchantment suite is now fully open for use by your retinue’s enchanters and artificers. In general, the creation of stronger effects demands more skill and personal power from the enchanter, while their use requires more personal power from the wearer. A recipe library for all of your retinue’s known enchantments is also included. The native capabilities of every enchanter and artificer within your retinue will automatically be added to this library.</p>
+    <p>Each tempest piece can now have up to three discrete enchantments. As with Spark Runes, our systems count the capabilities of “Sufficiently Advanced” technology as enchantments, often multiple distinct ones on the same item. If “the entire capability of a single existing item” would be three or more discrete enchantments when rebuilt from scratch, it will instead take up the Tempest piece’s entire enchantment capacity.</p>
+    <p>Previous experience with enchanting is not required. The suite contains clear tutorials, tooltips on everything, and a simple and intuitive interface, and will walk you or your subject(s) through debugging with exactly the right amount of detail to fit your skill level. Take Soul Talent and Engineering Talent for free.</p>
+    <p>All enchantments that we’ve documented across the multiverse tend to fall into a few distinct categories: passive, automatic, toggles, and active abilities, as well as procs (see below). Dream Runes is compatible with all five. Most common passive effects are redundant with Body or Mind Runes or Designer Set. New options include, but are not limited to, elemental and status resistances. Common automatic effects include “Slow Fall” and “Reflect Projectiles;” these are inactive unless needed. Toggled and active abilities are generally direct spell-like effects. These can be defensive, such as “Bunker” or “Shell,” supportive, such as “Inspire” or “Scan,” or offensive, such as “Icicle Spear” or “Tornado.”</p>
+    <p>If you have Golden Idol, you can deconstruct an objectified subject of Tier 3 or higher into an enchantment recipe in your library. The subject-turned-recipe is neither alive nor dead, only data that can be freely copied into any number of Tempest pieces. Recipes cannot be sold, will not trigger Warranty Plan, and cannot be restored to a body while even one copy of their enchantment remains in place. Recipes are not aware of any time that passes while they remain in that state. If you have the relevant Talent Sharing, and restore a recipe to physical form, any use of a recipe will count as training for the original subject in the recipe’s associated ability.</p>
     `,
   },
   {
@@ -550,7 +633,7 @@ If you Possessed or Substituted a waifu or are otherwise female, you may act as 
     cost: 64,
     type: 'Shroud',
     category: 'Binding',
-    image: 'https://cdn.statically.io/gh/Om1cr0n/cat_thumb/main/docs/thumbs/EzbqZ.com_sung-jin-woo-8k-solo-leveling_1600x1200.jpg',
+    image: 'https://images2.imgbox.com/8b/99/RU3NKyNu_o.jpg',
     whitelist: ['Elemental Shroud'],
     // element: '',
     // complex: 'flavor',
@@ -566,7 +649,7 @@ If you Possessed or Substituted a waifu or are otherwise female, you may act as 
     complex: 'target',
     type: 'Shroud',
     category: 'Binding',
-    image: 'https://images2.imgbox.com/8b/99/RU3NKyNu_o.jpg',
+    image: 'https://images2.imgbox.com/e6/8b/qNQuW49m_o.jpeg',
     whitelist: ['Elemental Shroud'],
     max: 10,
     desc: `
@@ -741,7 +824,7 @@ If you Possessed or Substituted a waifu or are otherwise female, you may act as 
   },
   {
     uid: 'UFwYa',
-    title: 'Assuming Direct Control',
+    title: 'Physical Access is Total Access',
     type: 'Hypnosis App',
     image: 'https://i.imgur.com/mlp4aydl.jpg',
     category: 'Binding',

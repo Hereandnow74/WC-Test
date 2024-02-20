@@ -6,7 +6,7 @@
     </div>
 
     <Desc class="p-2 mx-auto mb-4 max-w-4xl bg-warm-gray-200 dark:bg-warm-gray-800" :desc="expansions" />
-    <div v-if="!legacyMode && !flags.noBindings" class="w-max mx-auto mb-2 flex gap-2">
+    <div v-if="!legacyMode && !noBindings" class="w-max mx-auto mb-2 flex gap-2">
       You currently have [<strong>{{ binding[0].title }}</strong>] <Button size="Small" bg-color="bg-red-600" label="Delete" @click="sellAllBindings" />
     </div>
     <div
@@ -28,7 +28,7 @@
         >
         <h3 class="text-center text-xl px-2 relative">
           <span>No Bindings</span>
-          <fa-solid:check v-if="flags.noBindings" class="text-green-500 absolute top-1 right-1" />
+          <fa-solid:check v-if="noBindings" class="text-green-500 absolute top-1 right-1" />
         </h3>
         <Desc
           desc="None of your companions or familiars will be affected by any of the effects common to all company bindings. This is your warning.
@@ -122,7 +122,7 @@ import { useStore } from '~/store/store'
 import { confirmDialog } from '~/logic/dialog'
 import { symbioteQueen, symbioteUnits, alternativeTheming, symbioteBinding, symBuildings, synUnits, expansions, symbioteStructures, creep, phasesDesc, phases } from '~/data/symbiote'
 
-const { binding, flags, settings, legacyMode } = useStore()
+const { binding, settings, legacyMode, noBindings } = useStore()
 
 onMounted(() => useTooltips())
 
@@ -133,10 +133,8 @@ const allBindings = computed(() => {
 })
 
 async function sellAllBindings() {
-  if (await confirmDialog('This action will return all currently purchased binding perks, proceed?', 'confirm')) {
+  if (await confirmDialog('This action will return all currently purchased binding perks, proceed?', 'confirm'))
     deletePerk(binding.value, () => false)
     // binding.value.splice(0)
-    flags.value.noBindings = true
-  }
 }
 </script>

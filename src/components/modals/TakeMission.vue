@@ -81,7 +81,7 @@ function applyMissionRewards() {
 function undoMissionRewards() {
   missionRewards.value[props.mission.uid].rewards.forEach((reward, i) => {
     if (reward.type === 'Perk')
-      removeAnyPerk(reward.value)
+      removeAnyPerk('', reward.value)
     if (reward.type === 'Companion')
       removeAnyCompanion(reward.value)
   })

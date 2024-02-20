@@ -1,4 +1,4 @@
-import { findIndex, find, remove, intersection, clamp } from 'lodash-es'
+import { findIndex, find, remove, intersection, clamp, some } from 'lodash-es'
 import { Perk } from 'global'
 import { CHAR_COSTS, CHAR_COSTS_FULL, CHAR_COSTS_IMG, CHAR_COSTS_TICKET, useAllChars, WORLD_RATINGS, WORLD_RATINGS_DF } from '../data/constants'
 import { defenseObject, talentsObject } from '../data/talents'
@@ -603,15 +603,16 @@ const yourTier = computed(() => {
     let tier = 1
     perks.forEach((perk) => {
       if (tier < 4 && ['Death Mask'].includes(perk.title)) tier = 4
-      if (tier < 5 && ['First Augmentation', 'Lurking On The Threshold', 'The First Bite', 'Your Soul Is Mine'].includes(perk.title)) tier = 5
-      if (tier < 6 && ['Corporeal Transcendence Engineering', 'Dragon Heart', 'Sacred Taboos', 'Harbinger of Deаth'].includes(perk.title)) tier = 6
+      if (tier < 5 && ['First Augmentation', 'The First Bite', 'Your Soul Is Mine'].includes(perk.title)) tier = 5
+      if (tier < 6 && ['Corporeal Transcendence Engineering', 'Dragon Heart', 'Harbinger of Deаth'].includes(perk.title)) tier = 6
       if (tier < 7 && ['Evolutionary Engine Array', 'Dragon Scale', 'Foul Darkness', 'None Can Excel'].includes(perk.title)) tier = 7
       if (tier < 8 && ['Incandescent Ascendancy Machine', 'Double Dragon', 'The Great Hunger'].includes(perk.title)) tier = 8
     })
     return tier
   }
-  const talentsTier4 = findIndex(talentPerks.value, x => ['Template Stacking I'].includes(x.title)) !== -1 ? 4 : 0
-  const talentsTier5 = findIndex(talentPerks.value, x => ['Template Stacking II'].includes(x.title)) !== -1 ? 5 : 0
+
+  const talentsTier4 = findIndex(talentPerks.value, x => ['Template Stacking I'].includes(x.title) && some(x.complex, target => target.target.includes('You'))) !== -1 ? 4 : 0
+  const talentsTier5 = findIndex(talentPerks.value, x => ['Template Stacking II'].includes(x.title) && some(x.complex, target => target.flavor.includes('You'))) !== -1 ? 5 : 0
   let shroudTier = findIndex(binding.value, { title: 'Shroud of Power' }) !== -1 ? 5 : 0
   shroudTier = Math.max(findIndex(binding.value, { title: 'Alterzelu Symbiote' }) !== -1 ? 4 : 0, shroudTier)
   const originTier = startingOrigin.value?.perk?.tier || startingOrigin.value.tier || 0
@@ -647,6 +648,8 @@ watch(() => intensities.value.length, () => {
 })
 
 const devotionPoints = computed(() => binding.value.reduce((a, x) => a += x.dCost ? x.dCost : 0, 0))
+
+const noBindings = computed(() => binding.value.length === 0)
 
 export function useStore() {
   return {
@@ -739,11 +742,13 @@ export function useStore() {
     originCost,
     heritageOptions,
     difficultyRating,
+    difficultyCost,
     legacyMode,
     difficultyAdjustedCapture,
     difficultyAdjustedCaptureT,
     difficultyAdjustedSell,
     difficultyAdjustedSellT,
     difficultyAdjustedBudgets,
+    noBindings,
   }
 }

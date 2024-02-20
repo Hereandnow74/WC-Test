@@ -569,30 +569,7 @@
       }
     ]
   },
-  {
-    "uid": "etSXL",
-    "worldName": "My Hero Academia",
-    "rating": 4,
-    "image": "https://cdn.donmai.us/sample/81/6b/__uraraka_ochako_asui_tsuyu_yaoyorozu_momo_ashido_mina_jirou_kyouka_and_1_more_boku_no_hero_academia_drawn_by_matsumotoshinnnosuke__sample-816ba9a2c61b8da5ee1f3e64c258b963.jpg",
-    "additional": "Eri has full control of her powers. Purchased versions of her are aged to adulthood. Toru can toggle her invisibility on and off at will, and it will include anything she’s wearing within the effect. While she’s invisible, the rest of your retinue will see a ghostly outline around her.",
-    "condition": [
-      {
-        "name": "Start of Canon",
-        "rating": 4,
-        "official": true
-      },
-      {
-        "name": "Post-Retirement",
-        "rating": 5,
-        "official": true
-      },
-      {
-        "name": "Pre-All Might",
-        "rating": 6,
-        "official": true
-      }
-    ]
-  },
+  {"uid":"ltiymP","worldName":"My Hero Academia","rating":4,"image":"https://img3.gelbooru.com//samples/81/6b/sample_816ba9a2c61b8da5ee1f3e64c258b963.jpg","additional":"Eri has full control of her powers. Purchased versions of her are aged to adulthood. Toru can toggle her invisibility on and off at will, and it will include anything she’s wearing within the effect. While she’s invisible, the rest of your retinue will see a ghostly outline around her.","condition":[{"name":"Start of Canon","rating":4,"official":true},{"name":"Post-Retirement","rating":5,"official":true},{"name":"Pre-All Might","rating":6,"official":true}]},
   {
     "rating": 4,
     "worldName": "Mass Effect",

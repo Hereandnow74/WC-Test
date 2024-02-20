@@ -73,7 +73,7 @@
           </span>
         </div>
         <div v-if="editMode">
-          <Input v-model="image" class="w-full" placeholder="Your image only from Imgur.com example: https://i.imgur.com/jm8eCCA.png" />
+          <Input v-model="image" class="w-full" placeholder="Direct image link" />
           <Input v-model="char.world" class="w-full mt-1" placeholder="Place your SO from" />
           <div class="flex gap-1 mt-1">
             <Select v-model="char.origin" :options="startingOrigin.title ==='Walk-In' ? ['Walk-In'] : ['Drop-In', 'Extra', 'Substitute', 'Possess']" placeholder="Origin" />
@@ -123,7 +123,7 @@ const props = defineProps({
 const { startingOrigin } = useStore()
 const { allCharsObject } = useAllChars()
 
-const image = ref('')
+const image = ref(props.char.image || '')
 
 const talentsList = computed(() => {
   return props.perks.talents || []
@@ -146,7 +146,8 @@ watch(() => props.char.uid, () => {
 })
 
 watch(image, () => {
-  if (image.value.startsWith('https://i.imgur.com/') || /.*\.imagebam\.com.*/.test(image.value))
+  // test if it's a valid image link
+  if (image.value.match(/(http(s?):)([/|.|\w|\s|-])*\.(?:jpg|gif|png|jpeg|webp)/g))
     props.char.image = image.value
 })
 

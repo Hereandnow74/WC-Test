@@ -4,6 +4,9 @@
       Spendings
     </h3>
     <div class="font-semibold flex justify-between mx-4 border-b border-gray-700">
+      Intensity Buyback: <span class="text-orange-500">{{ difficultyCost }}</span>
+    </div>
+    <div class="font-semibold flex justify-between mx-4 border-b border-gray-700">
       Origin: <span class="text-orange-500">{{ startingOrigin.cost }}</span>
     </div>
     <div class="font-semibold flex justify-between mx-4 border-b border-gray-700">
@@ -85,7 +88,7 @@ import { useStore } from '~/store/store'
 const {
   startingOrigin, heritageCost, bindingCost, ridePerksCost, homePerksCost, talentsCost, defensesCost,
   miscPerksCost, waifuPerksCost, genericWaifuPerksCost, luresCost, companionsCost, companionProfit,
-  companionProfitSold, totalCost, companions, otherCost, totalDiscount, loan, originCost,
+  companionProfitSold, totalCost, companions, otherCost, totalDiscount, loan, originCost, difficultyCost,
 } = useStore()
 
 const companionTotalCredits = computed(() => {

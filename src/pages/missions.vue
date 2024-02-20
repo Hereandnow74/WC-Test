@@ -61,7 +61,7 @@
       This section is in WIP stage, you can suggest simple missions/conditions/objectives for random mission generation on Discord
     </Note>
     <div ref="missionWrapper" class="w-full grid 2xl:grid-cols-[auto,auto,auto] lg:grid-cols-[auto,auto] gap-4 pb-8 justify-center overflow-y-auto scrollbar">
-      <MissionCard v-for="mission in displayedMissions" :key="mission.uid" class="max-w-[600px]" :mission="mission" />
+      <MissionCard v-for="mission in displayedMissions" :key="mission.uid" class="max-w-[600px]" :mission="mission" :likes="missionsLikes.find((ml) => ml.uid === mission.uid)" />
       <div v-if="!displayedMissions.length">
         No results matching your filter settings
       </div>
@@ -77,11 +77,12 @@ import { Mission } from 'global'
 import { find, groupBy, random, sample } from 'lodash-es'
 import { onBeforeRouteUpdate } from 'vue-router'
 
-import { toggleShowAddMission, showAddMission, useTooltips } from '~/logic'
+import { toggleShowAddMission, showAddMission } from '~/logic'
 import { MissionGenerator } from '~/logic/missionsGen'
 import { useChargenStore } from '~/store/chargen'
 import { usePlayStore } from '~/store/play'
 import { useSaves } from '~/store/saves'
+import { getMissionsLikes } from '~/logic/server'
 
 const { missionRewards } = usePlayStore()
 const { missionFavorites } = useSaves()
@@ -209,22 +210,53 @@ onBeforeRouteUpdate((to, from, next) => {
   setTimeout(next, 1)
 })
 
+const missionsLikes = ref([])
+
 const nineMissions = computed(() => {
   const res = []
   const generators = [() => sample(missions.value), () => gen2.generateRandom(currentWorld.value.worldName).getObject()]
   for (let I = 0; I < 9; I++)
     res.push(generators[random(0, 1)]())
+  const uids = res.filter(mission => !!mission?.uid).map(mission => mission.uid)
+  getMissionsLikes(uids).then((likes) => {
+    if (typeof likes === 'object')
+      missionsLikes.value.push(...likes)
+    else
+      console.error('Failed to get missions likes', likes)
+  })
   return res
 })
 
 const startingMissionsCount = 10
 const infiniteMissions = ref(filteredMissions.value.slice(0, startingMissionsCount))
-watch(filteredMissions, () => infiniteMissions.value = filteredMissions.value.slice(0, startingMissionsCount))
+
+watch(filteredMissions, () => {
+  infiniteMissions.value = filteredMissions.value.slice(0, startingMissionsCount)
+  const uids = infiniteMissions.value.map(mission => mission.uid)
+  if (uids.length) {
+    getMissionsLikes(uids).then((likes) => {
+      if (typeof likes === 'object')
+        missionsLikes.value = likes
+      else
+        console.error('Failed to get missions likes', likes)
+    })
+  }
+},
+)
 
 useInfiniteScroll(
   missionWrapper,
   () => {
-    infiniteMissions.value.push(...filteredMissions.value.slice(infiniteMissions.value.length, infiniteMissions.value.length + startingMissionsCount))
+    if (page.value) return
+    const newMissions = filteredMissions.value.slice(infiniteMissions.value.length, infiniteMissions.value.length + startingMissionsCount)
+    infiniteMissions.value.push(...newMissions)
+    const uids = newMissions.map(mission => mission.uid)
+    if (uids.length) {
+      getMissionsLikes(newMissions.map(mission => mission.uid)).then((likes) => {
+        if (typeof likes === 'object')
+          missionsLikes.value.push(...likes)
+      })
+    }
   },
   { distance: 10 },
 )

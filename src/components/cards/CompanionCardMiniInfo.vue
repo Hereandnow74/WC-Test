@@ -5,7 +5,7 @@
   >
     <div class="flex gap-2 w-full">
       <img
-        v-if="image && showImage"
+        v-if="(char.image || image) && showImage"
         :src="char.image || image"
         :alt="char.name"
         class="rounded w-[33%] max-h-[120px] object-cover object-top self-center"

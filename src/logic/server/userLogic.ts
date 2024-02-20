@@ -1,8 +1,6 @@
 import { _refreshTokens } from './authLogic'
 
-import { _getLikesByUid } from './charactersLogic'
 import { useUser } from '~/store/user'
-import { usePlayStore } from '~/store/play'
 
 const { user, tokens } = useUser()
 
@@ -21,7 +19,7 @@ export async function _updateUserLikes(SERVER_URL: string, API_VERSION: string, 
     if (!response.ok) {
       const errorText = await response.text()
       if (!tried)
-        _refreshTokens(SERVER_URL, API_VERSION).then(() => _updateUserInfo(SERVER_URL, API_VERSION, true, info))
+        _refreshTokens(SERVER_URL, API_VERSION).then(() => _updateUserLikes(SERVER_URL, API_VERSION, true, info))
       return JSON.parse(errorText).message
     }
     else {

@@ -975,21 +975,21 @@ DLCbindings.push({
   whitelist: ['Company Stamp', 'Tempest Jewelry', 'Ritual Circle', 'Alterzelu Symbiote', 'Shroud of Power', 'Hypnosis App', 'Tantric Arts'],
 })
 
-DLCbindings.push({
-  uid: 'iH67D',
-  dlc: 'Zenaku82',
-  title: 'Triggered',
-  category: 'Binding',
-  image: 'https://i.ibb.co/nsCCxBx/Triggered.jpg',
-  type: 'Jewelry',
-  cost: 5,
-  desc: `
-  Tempest Chokers (Bracelets, anklets) are now programmable! You can now set up scripts for each of your companions, for each transformation. Even copy them over between companions.
-  <p>These scripts allow you to automate any transformations the Chokers (bracelets, anklets) provide. Make a companion's breasts grow whenever she hears a specific phrase. Turn another into a bimbo whenever she chews a piece of gum. Or have one hulk out when they get angry. The choices are only limited by your existing transformation options.</p>
-  <p>As well, for vocal commands, there is an option to set it to only work with a specific voice print. That way, you can choose who can and cannot trigger the change</p>
-  `,
-  whitelist: ['Advanced Runes: Mind'],
-})
+// DLCbindings.push({
+//   uid: 'iH67D',
+//   dlc: 'Zenaku82',
+//   title: 'Triggered',
+//   category: 'Binding',
+//   image: 'https://i.ibb.co/nsCCxBx/Triggered.jpg',
+//   type: 'Jewelry',
+//   cost: 5,
+//   desc: `
+//   Tempest Chokers (Bracelets, anklets) are now programmable! You can now set up scripts for each of your companions, for each transformation. Even copy them over between companions.
+//   <p>These scripts allow you to automate any transformations the Chokers (bracelets, anklets) provide. Make a companion's breasts grow whenever she hears a specific phrase. Turn another into a bimbo whenever she chews a piece of gum. Or have one hulk out when they get angry. The choices are only limited by your existing transformation options.</p>
+//   <p>As well, for vocal commands, there is an option to set it to only work with a specific voice print. That way, you can choose who can and cannot trigger the change</p>
+//   `,
+//   whitelist: ['Advanced Runes: Mind'],
+// })
 
 // DLC Ride Perks
 

@@ -122,6 +122,6 @@ const costOrIntensity = (el: any) => {
 }
 
 function deletePerk(el: any) {
-  removeAnyPerk(el.title)
+  removeAnyPerk(el.uid, el.title, 999)
 }
 </script>

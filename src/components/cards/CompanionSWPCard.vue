@@ -183,7 +183,7 @@
           <div class="text-gray-600 dark:text-gray-400 whitespace-nowrap text-right">
             Cost: <span class="text-amber-600 dark:text-amber-300">{{ CHAR_COSTS[charData.tier] || `${CHAR_COSTS_TICKET[charData.tier]} IMG` }}</span>
             <span
-              v-if="flags.noBindings && legacyMode && (charData.tier) <= 10 && (charData.tier) !== 1"
+              v-if="noBindings && legacyMode && (charData.tier) <= 10 && (charData.tier) !== 1"
               title="Discount from No Binding"
             >({{ CHAR_COSTS[(charData.tier) - 1] }})</span>
           </div>
@@ -267,7 +267,7 @@ const props = defineProps({
 })
 
 const {
-  flags, settings, difficultyAdjustedCapture, difficultyAdjustedCaptureT, legacyMode,
+  flags, settings, difficultyAdjustedCapture, difficultyAdjustedCaptureT, legacyMode, noBindings,
 } = useStore()
 const { favoritesObject, favorites } = useGlobalSettings()
 const { likes, likesMessageSeen } = usePlayStore()

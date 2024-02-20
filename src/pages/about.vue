@@ -6,7 +6,7 @@
       </h3>
       <h6>
         <div class="text-shadow-md text-shadow font-semibold text-center  px-2">
-          ( Current online: <span class="text-blue-700 dark:text-blue-200">{{ currentOnline }}</span> )
+          ( Currently online: <span class="text-blue-700 dark:text-blue-200">{{ currentOnline }}</span> )
         </div>
       </h6>
       <div>

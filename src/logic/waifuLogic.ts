@@ -9,13 +9,13 @@ import { SavedChar } from '~/store/chargen'
 import { useGlobalSettings } from '~/store/settings'
 
 const {
-  companions, fullStartingBudget, csr, baseBudget, flags, companionsUIDs, localUserCharacters, legacyMode,
+  companions, fullStartingBudget, csr, baseBudget, noBindings, companionsUIDs, localUserCharacters, legacyMode,
 } = useStore()
 
 const { allCharsObject } = useAllChars()
 const { slightlyUsedTierDiscount } = useGlobalSettings()
 
-const priceTier = (t: number): number => flags.value.noBindings && legacyMode.value && t <= 10 && t !== 1 ? t - 1 : t
+const priceTier = (t: number): number => noBindings.value && legacyMode.value && t <= 10 && t !== 1 ? t - 1 : t
 
 export function buyAnyCompanion(uid: number, price = -1, method: SavedChar['method'] = 'buy', randomUid = false) {
   const { allEvents } = useEvents()

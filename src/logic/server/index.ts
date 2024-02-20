@@ -3,6 +3,7 @@ import { _loginToServer, _logoutFromServer, _postRegisterInfoToEndpoint, _refres
 import { _searchForCharacters, _recalculateLikesOnServer, _getLikesByUid, _getCharactersFromServer, _rebaseCharactersToServer, _getRandomCharacters } from './charactersLogic'
 import { _updateUserLikes, _updateUserInfo, _getUserFromServer } from './userLogic'
 import { _createBuildInDB, _getAllYourBuilds, _searchForBuilds } from './buildsLogic'
+import { _getMissions, _likeOrDislikeMission } from './missionsLogic'
 
 // const SERVER_URL = 'http://localhost:3000'
 const SERVER_URL = 'https://interactive-apps.net'
@@ -35,3 +36,7 @@ export const rebaseCharactersToServer = () => _rebaseCharactersToServer(SERVER_U
 export const createBuildInDB = (build: ServerBuild) => _createBuildInDB(SERVER_URL, API_VERSION, build)
 export const searchForBuilds = (request: SearchBuild) => _searchForBuilds(SERVER_URL, API_VERSION, request)
 export const getAllYourBuilds = () => _getAllYourBuilds(SERVER_URL, API_VERSION)
+
+// Missions
+export const likeOrDislikeMission = (info: {uid: string; like: boolean; dislike: boolean; userId: string}) => _likeOrDislikeMission(SERVER_URL, API_VERSION, false, info)
+export const getMissionsLikes = (uids: string[]) => _getMissions(SERVER_URL, API_VERSION, uids)

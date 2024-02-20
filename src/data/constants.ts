@@ -38,6 +38,7 @@ export const nicknames = [
   'Dragonace6489',
   'BenFang322',
   'Jason C.',
+  'Llamore',
   'Cole',
   'Just_A_Knight',
   'Kevin S.',

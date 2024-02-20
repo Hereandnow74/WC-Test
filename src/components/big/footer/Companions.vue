@@ -1,6 +1,6 @@
 <template>
   <div class="p-1 flex flex-col gap-1 min-h-0">
-    <div class="flex gap-2 justify-between text-sm">
+    <div class="flex gap-2 justify-between text-sm bg-gray-700 px-2 rounded-xl p-0.5">
       <Toggle v-model="isRetinueEdit" label="Edit Mode" />
       <div class="flex gap-2">
         <Toggle v-model="filters[0]" label="Bought" />
@@ -8,7 +8,7 @@
         <Toggle v-model="filters[2]" label="Sold" />
       </div>
     </div>
-    <div class="flex gap-2 select-none text-sm">
+    <div class="flex gap-2 select-none text-sm bg-gray-700 px-2 rounded-xl p-0.5 mb-1">
       <div class="flex gap-1">
         By name
         <div

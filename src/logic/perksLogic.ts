@@ -242,7 +242,6 @@ export function chooseBinding(bin: PerkFull, saveData: Perk, checkFunc = binding
       if (!flags.value.chargen && toDel.cost > 0) fee.value += Math.round(toDel.cost * 0.2) || 0
       allEffects.value.splice(allEffects.value.indexOf(toDel.title), 1)
       deletePerk(binding.value, checkFunc)
-      if (binding.value.length === 0) flags.value.noBindings = true
     }
   }
   else {
@@ -253,13 +252,12 @@ export function chooseBinding(bin: PerkFull, saveData: Perk, checkFunc = binding
     if (bin.type) saveData.type = bin.type
     if (saveData.freebies) addFreebies(saveData.freebies)
     binding.value.push(saveData)
-    flags.value.noBindings = false
   }
 }
 
 export function bindingAvailable(bin: PerkFull): boolean {
-  const { allEffects, flags, binding } = useStore()
-  if (flags.value.noBindings && !bin.whitelist) {
+  const { allEffects, binding, noBindings } = useStore()
+  if (noBindings.value && !bin.whitelist) {
     return true
   }
   else {
@@ -277,7 +275,7 @@ export function bindingAvailable(bin: PerkFull): boolean {
 
 // KYeJi wQZU5 qaVE7 8Q4UU
 export function symbioteAvailable(bin: PerkFull): boolean {
-  const { allEffects, flags, binding } = useStore()
+  const { allEffects, noBindings, binding } = useStore()
   const larvaCount = binding.value.filter(x => ['KYeJi', 'wQZU5', 'qaVE7', '8Q4UU'].includes(x.uid)).length
   const larvaAvailable = binding.value.filter(x => ['LjU3E', 'EG3MX', 'ys3bz'].includes(x.uid)).length + 1
   if (!bin.whitelist && findIndex(binding.value, { title: bin.title }) !== -1)
@@ -287,7 +285,7 @@ export function symbioteAvailable(bin: PerkFull): boolean {
     if (bin.type === 'Larva')
       return false
   }
-  if (flags.value.noBindings && bin.uid === 'grbul')
+  if (noBindings.value && bin.uid === 'grbul')
     return true
   if (!bin.whitelist && findIndex(binding.value, { uid: 'grbul' }) !== -1)
     return true
@@ -516,12 +514,12 @@ export function choosePerk(perk: PerkFull, saveData: Perk) {
 
 // Generic Waifu Perks
 export function genericAvailable(perk: PerkFull): boolean {
-  const { allEffects, flags } = useStore()
+  const { allEffects, noBindings } = useStore()
   if (!perk.whitelist) { return true }
   else {
     if (intersection(perk.whitelist, allEffects.value).length >= (perk.needed || perk.whitelist.length)) {
       if (perk.title === 'Canvas')
-        return !flags.value.noBindings
+        return !noBindings.value
       return true
     }
   }
@@ -586,22 +584,39 @@ export function buyAnyPerk(perkName: string, count = 1, cost = 0) {
   }
 }
 
-export function removeAnyPerk(perkName: string, count = 1) {
+// export function removeAnyPerk(uid: string, perkName: string, count = 1) {
+//   const { allEffects } = useStore()
+//   const fullPerk = ALL_PERK_TITLES.value[perkName]
+//   const saveStore = ALL_PERK_STORES.value[fullPerk.category as keyof typeof ALL_PERK_STORES]
+//   const { allEvents } = useEvents()
+//   if (saveStore) {
+//     const ind = findIndex(saveStore, { title: perkName })
+//     if (ind !== -1) {
+//       if (saveStore[ind].count && saveStore[ind].count >= count + 1) { saveStore[ind].count -= count }
+//       else {
+//         allEffects.value.splice(allEffects.value.indexOf(perkName), 1)
+//         remove(saveStore, { title: perkName })
+//         allEvents.emit({ id: Math.floor(Math.random() * 10000), time: Date.now(), message: `<b>${perkName}</b> got removed`, type: 'warn' })
+//       }
+//     }
+//   }
+// }
+
+export function removeAnyPerk(uid: string, perkName: string, count = 1) {
   const { allEffects } = useStore()
-  const fullPerk = ALL_PERK_TITLES.value[perkName]
-  const saveStore = ALL_PERK_STORES.value[fullPerk.category as keyof typeof ALL_PERK_STORES]
   const { allEvents } = useEvents()
-  if (saveStore) {
-    const ind = findIndex(saveStore, { title: perkName })
+  if (!uid) uid = ALL_PERK_TITLES.value[perkName].uid
+  Object.values(ALL_PERK_STORES.value).forEach((store) => {
+    const ind = findIndex(store, { uid })
     if (ind !== -1) {
-      if (saveStore[ind].count && saveStore[ind].count >= count + 1) { saveStore[ind].count -= count }
+      if (store[ind].count && store[ind].count >= count + 1) { store[ind].count -= count }
       else {
         allEffects.value.splice(allEffects.value.indexOf(perkName), 1)
-        remove(saveStore, { title: perkName })
+        remove(store, { uid })
         allEvents.emit({ id: Math.floor(Math.random() * 10000), time: Date.now(), message: `<b>${perkName}</b> got removed`, type: 'warn' })
       }
     }
-  }
+  })
 }
 
 export function clearAll() {

@@ -33,7 +33,7 @@
       </div>
     </div>
     <div class="grid 2xl:grid-cols-5 lg:grid-cols-3 md:grid-cols-2 gap-4 pb-8 justify-center">
-      <div v-for="fic in filteredFics" :key="fic.title" class="bg-amber-100 dark:bg-indigo-900 rounded p-2 relative">
+      <div v-for="fic in filteredFics" :key="fic.title" class="bg-amber-100 dark:bg-indigo-900 rounded p-2 relative flex flex-col">
         <a
           :href="fic.link"
           target="_blank"
@@ -51,17 +51,19 @@
             <div>Status: <span :class="fic.status ==='unknown' ? 'text-gray-500' : 'text-amber-800 dark:text-amber-300'">{{ fic.status }}</span></div>
           </div>
         </div>
-        <div v-if="fic.tags.length" class="flex gap-1 flex-wrap font-semibold mt-1 justify-center">
+        <div v-if="fic.tags.length" class="mt-2 flex gap-1 flex-wrap font-semibold justify-center">
           <div v-for="tag in fic.tags" :key="tag" class="bg-teal-300 border-teal-500 dark:(bg-teal-800 border-teal-600) rounded border-b-2 border-r-2  px-1 w-max cursor-pointer" @click="filteredTags.includes(tag) ? null : filteredTags.push(tag)">
             {{ tag }}
           </div>
         </div>
-        <div class="flex justify-between text-sm">
-          <div>
-            Starting World: <span class="hover:underline cursor-pointer" :class="fic.startingWorld === 'unknown' ? 'text-gray-500' :'font-semibold dark:text-orange-400'" @click="world = fic.startingWorld">{{ fic.startingWorld }}</span>
-          </div>
-          <div class="text-gray-700 dark:text-green-400">
-            Created on: <span>{{ fic.date }}</span>
+        <div class="mt-auto">
+          <div class="flex justify-between text-sm mt-2">
+            <div>
+              Starting World: <span class="hover:underline cursor-pointer" :class="fic.startingWorld === 'unknown' ? 'text-gray-500' :'font-semibold dark:text-orange-400'" @click="world = fic.startingWorld">{{ fic.startingWorld }}</span>
+            </div>
+            <div class="text-gray-700 dark:text-green-400">
+              Created on: <span>{{ fic.date }}</span>
+            </div>
           </div>
         </div>
         <bx:bxs-edit class="absolute top-1 right-1 cursor-pointer hover:text-yellow-600" @click.stop="editFic(fic)" />

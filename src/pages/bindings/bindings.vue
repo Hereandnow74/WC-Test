@@ -27,7 +27,7 @@
     </Note>
     <Desc v-if="activeType === 'Tantric Arts'" class="p-2 mb-4 max-w-4xl bg-warm-gray-200 dark:bg-warm-gray-800 mx-auto" :desc="tantricDesc" />
 
-    <div v-if="!legacyMode && !flags.noBindings && binding.length" class="w-max mx-auto mb-2 flex gap-2">
+    <div v-if="!legacyMode && !noBindings && binding.length" class="w-max mx-auto mb-2 flex gap-2">
       You currently have [<strong>{{ binding[0].title }}</strong>] <Button size="Small" bg-color="bg-red-600" label="Delete" @click="sellAllBindings" />
     </div>
 
@@ -50,7 +50,7 @@
         >
         <h3 class="text-center text-xl px-2 relative">
           <span>No Bindings</span>
-          <fa-solid:check v-if="flags.noBindings" class="text-green-500 absolute top-1 right-1" />
+          <fa-solid:check v-if="noBindings" class="text-green-500 absolute top-1 right-1" />
         </h3>
         <Desc
           desc="None of your companions or familiars will be affected by any of the effects common to all company bindings. This is your warning.
@@ -129,7 +129,7 @@ import GenericPerkCard from '~/components/cards/perkCards/GenericPerkCard.vue'
 import { useFullPerks } from '~/logic/localPerks'
 import { confirmDialog } from '~/logic/dialog'
 
-const { binding, flags, settings, legacyMode } = useStore()
+const { binding, settings, legacyMode, noBindings } = useStore()
 const [showElements] = useToggle()
 const [showRitual, toggleRitual] = useToggle()
 
@@ -194,10 +194,8 @@ function generateProps(perk: PerkFull) {
 }
 
 async function sellAllBindings() {
-  if (await confirmDialog('This action will return all currently purchased binding perks, proceed?', 'confirm')) {
+  if (await confirmDialog('This action will return all currently purchased binding perks, proceed?', 'confirm'))
     deletePerk(binding.value, () => false)
     // binding.value.splice(0)
-    flags.value.noBindings = true
-  }
 }
 </script>

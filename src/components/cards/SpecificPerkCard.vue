@@ -195,7 +195,7 @@ function pickWaifuPerk() {
               charUID: swpEntry.value?.u,
               title: props.waifuPerk.title,
               tier: props.waifuPerk.tier,
-              cost: CHAR_COSTS[props.waifuPerk.tier],
+              cost: CHAR_COSTS[props.waifuPerk.tier] + (props.waifuPerk.uid === 'oHFJy' ? 20 : 0),
               costT: CHAR_COSTS_TICKET[props.waifuPerk.tier],
               refund: CHAR_COSTS[tier],
             }
@@ -207,7 +207,7 @@ function pickWaifuPerk() {
             charUID: swpEntry.value?.u,
             title: props.waifuPerk.title,
             tier: props.waifuPerk.tier,
-            cost: CHAR_COSTS[props.waifuPerk.tier],
+            cost: CHAR_COSTS[props.waifuPerk.tier] + (props.waifuPerk.uid === 'oHFJy' ? 20 : 0),
             costT: CHAR_COSTS_TICKET[props.waifuPerk.tier],
             refund: CHAR_COSTS[tier],
           }

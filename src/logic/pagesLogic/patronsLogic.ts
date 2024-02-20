@@ -29,8 +29,8 @@ export const patronEffects = {
       buyAnyPerk('Red Eye Orb')
     },
     remove: () => {
-      removeAnyPerk('White Eye Orb')
-      removeAnyPerk('Red Eye Orb')
+      removeAnyPerk('', 'White Eye Orb')
+      removeAnyPerk('', 'Red Eye Orb')
     },
   },
   'Great Old One': {
@@ -39,8 +39,8 @@ export const patronEffects = {
       buyAnyPerk('Ancestral Diversity')
     },
     remove: () => {
-      removeAnyPerk('Lurking On The Threshold')
-      removeAnyPerk('Ancestral Diversity')
+      removeAnyPerk('', 'Lurking On The Threshold')
+      removeAnyPerk('', 'Ancestral Diversity')
     },
   },
   'The Merchant': {
@@ -49,8 +49,8 @@ export const patronEffects = {
       buyAnyPerk('Communication Talent')
     },
     remove: () => {
-      removeAnyPerk('Green Eye Orb')
-      removeAnyPerk('Communication Talent')
+      removeAnyPerk('', 'Green Eye Orb')
+      removeAnyPerk('', 'Communication Talent')
     },
   },
   'The Fallen Legion': {
@@ -59,8 +59,8 @@ export const patronEffects = {
       buyAnyPerk('Communication Talent')
     },
     remove: () => {
-      removeAnyPerk('Conjunction')
-      removeAnyPerk('Communication Talent')
+      removeAnyPerk('', 'Conjunction')
+      removeAnyPerk('', 'Communication Talent')
     },
   },
   'Truck-kun': {
@@ -68,7 +68,7 @@ export const patronEffects = {
       buyAnyPerk('Space Truckin’')
     },
     remove: () => {
-      removeAnyPerk('Space Truckin’')
+      removeAnyPerk('', 'Space Truckin’')
     },
   },
   'Archangel of Benevolence': {
