@@ -465,7 +465,7 @@ export const difficultyOptions = [
     title: 'Intact Weaknesses',
     image: 'https://i.imgur.com/bLrv5X8l.jpg',
     intensity: 1,
-    desc: 'Crippling Categorical Weaknesses, as described in the Purchases section of Basic Rules, are left as-is for your entire retinue. You may still find your own methods to mitigate these.',
+    desc: 'Crippling Categorical Weaknesses, as described in the Purchases section of Basic Rules, are left as-is for your entire retinue. Many qualifying weaknesses can be mitigated by an appropriate Talent or Defense. Using vampires as an example, Wild Defense protects them from the sun and running water, Body Defense protects against garlic and salt, Blessed Talent protects from holy symbols and locations, Stress Defense eliminates the need to obsessively count small objects, etc. You may still find your own methods to mitigate any such weaknesses that are not addressed by any Talent or Defense.',
     category: 'difficulty',
     type: 'other1',
   },
@@ -491,7 +491,7 @@ export const difficultyOptions = [
     uid: 'aYUr8',
     title: 'Cash Still Rules',
     image: 'https://i.imgur.com/YbsdhB9l.jpg',
-    intensity: 1,
+    intensity: 2,
     desc: `
     <p>Your signing bonus… isn’t. Whatever you spend from it will instead be a loan, subject to the rules in Loans and Credit Debt. Your starting world will not necessarily have enough available credits to pay back your loan or even the interest, but Missions and Invasion PvP can help cover that. Your baseline interest rate will also increase to 20%.</p>
     <p>Budgets below the starting loan limit for your intensity will experience an effective increase to that limit using the Loan rules. Budgets above that limit will be overcapped until you’ve paid enough of the principal to fall beneath the limit and/or visited enough new worlds to raise the limit above your principal. No additional loans may be taken while overcapped.

@@ -413,13 +413,16 @@ const onlyTagChanges = computed(() => {
 // })
 
 const filteredCharacters = computed(() => {
-  console.log('filteredCharacters')
-  const sr = search.value || '!^xxx'
+  const sr = search.value
   const sopt: any = {
     $and: [
-      { n: sr },
     ],
   }
+  if (!sr && !worldName.value)
+    sopt.$and.push({ n: '!^xxx' })
+  else if (sr)
+    sopt.$and.push({ n: sr })
+
   switch (true) {
     // Search by nickname
     case sr.startsWith('@'):
@@ -474,7 +477,7 @@ const filteredCharacters = computed(() => {
   if (imgur.value) sopt.$and.push({ i: '^https://i.imgur.com/' })
   if (retinue.value === 1) sopt.$and.push({ u: `=${Object.keys(companionsUIDs.value).join('|=')}` })
   if (retinue.value === -1) sopt.$and.push({ u: `!^${Object.keys(companionsUIDs.value).join(' !^')}` })
-  if (search.value.length === 0)
+  if (search.value.length === 0 && worldName.value.length === 0)
     return fuseNoSort.value.search(sopt)
   return fuse.value.search(sopt)
 })
@@ -522,7 +525,7 @@ const sortedResults = computed(() => {
 })
 
 const top100chars = ref<DBCharacter[]>([])
-watch(top100, () => top100.value ? searchForCharacters({ sortBy: 'likes:desc', limit: 100 }).then(x => top100chars.value = x.results.map(char => ({ u: char.uid, n: char.name, w: char.world, t: char.tier, b: char.tags, i: char.sfwImage, s: char.sfwImageSource, d: char.subWorld, in: char.nsfwImage }))) : null)
+watch(top100, () => top100.value ? searchForCharacters({ sortBy: 'likes:desc', limit: 100 }).then(x => top100chars.value = x.results.map(char => (console.log(char), { u: char.uid, n: char.name, w: char.world, t: char.tier, b: char.tags, i: char.image, s: char.sourceImage, d: char.subWorld, in: char.image_nsfw }))) : null)
 
 const slicedChars = computed(() => {
   return top100.value ? top100chars.value : sortedResults.value.slice(position.value, position.value + limit.value)

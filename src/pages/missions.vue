@@ -122,6 +122,7 @@ const authorOptions = computed(() => {
   return authors
 })
 const worldOptions = computed(() => Object.keys(groupBy(missions.value, 'loca')))
+const missionCountByAuthor = computed(() => Object.entries(groupBy(missions.value, 'author')).map(([author, missions]) => ({ author, count: missions.length })).sort((a, b) => b.count - a.count))
 const scopeOptions = ['Any', 'Quick', 'Standard', 'Grand']
 
 const author = ref('Any')
@@ -227,11 +228,11 @@ const nineMissions = computed(() => {
   return res
 })
 
-const startingMissionsCount = 10
-const infiniteMissions = ref(filteredMissions.value.slice(0, startingMissionsCount))
+const startingMissionsCount = computed(() => missionWrapper.value?.clientWidth < 1550 ? 6 : 9)
+const infiniteMissions = ref(filteredMissions.value.slice(0, startingMissionsCount.value))
 
 watch(filteredMissions, () => {
-  infiniteMissions.value = filteredMissions.value.slice(0, startingMissionsCount)
+  infiniteMissions.value = filteredMissions.value.slice(0, startingMissionsCount.value)
   const uids = infiniteMissions.value.map(mission => mission.uid)
   if (uids.length) {
     getMissionsLikes(uids).then((likes) => {
@@ -248,7 +249,7 @@ useInfiniteScroll(
   missionWrapper,
   () => {
     if (page.value) return
-    const newMissions = filteredMissions.value.slice(infiniteMissions.value.length, infiniteMissions.value.length + startingMissionsCount)
+    const newMissions = filteredMissions.value.slice(infiniteMissions.value.length, infiniteMissions.value.length + startingMissionsCount.value)
     infiniteMissions.value.push(...newMissions)
     const uids = newMissions.map(mission => mission.uid)
     if (uids.length) {

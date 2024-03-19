@@ -126,8 +126,6 @@ const changePassword = handleSubmit((values) => {
 
 function logout() {
   logoutFromServer(tokens.value.refresh.token)
-  user.value = {}
-  tokens.value = {}
 }
 
 function rebase() {

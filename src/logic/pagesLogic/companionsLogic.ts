@@ -8,7 +8,7 @@ const options = {
   useExtendedSearch: true,
   threshold: 0.4,
   ignoreLocation: true,
-  keys: [{ name: 'n', weight: 1.1 }, 'w', 'b', 'i', 'd', 'in', 'u', 'k', 'c'],
+  keys: [{ name: 'n', weight: 1.1 }, { name: 'w', weight: 1.5 }, 'b', 'i', 'd', 'in', 'u', 'k', 'c'],
 }
 
 const options2 = {

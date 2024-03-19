@@ -1,5 +1,5 @@
 <template>
-  <Modal label="Add New Character" :max-width="640">
+  <Modal label="Add New Character" :max-width="740">
     <div class="max-h-[90vh] flex relative min-h-0">
       <img ref="testImage" class="absolute h-[1px] w-[1px]" :src="image" alt="" @load="imageLoaded">
       <div class="flex flex-col p-2 gap-2 min-h-0 overflow-y-auto scrollbar">
@@ -77,6 +77,13 @@
             <Checkbox v-model="itsSWP" label="SWP Entry" title="If you don't know what it is, don't click it" />
             <Checkbox v-if="editMode" v-model="oldEntry" :label="`Keep old UID[${character.uid}]`" title="Keep UID so if there is a Waifu Perk for them, it will still work" />
           </div>
+          <Button
+            v-if="character.type === 'local'"
+            label="Update Local"
+            class="ml-auto"
+            bg-color="bg-orange-600"
+            @click="updateCharacter()"
+          />
           <Button
             :disabled="!!submitMessage || !!processing"
             label="Add character"
@@ -199,6 +206,21 @@ const companion = computed(() => {
   }
 })
 
+const updateCharacter = () => {
+  if (props.editMode) {
+    const char = localUserCharacters.value.find(x => x.uid === props.character.uid)
+    if (char) {
+      char.name = name.value
+      char.world = world.value
+      char.sub = sub.value
+      char.tier = tier.value
+      char.image = image.value
+      char.image_nsfw = image_nsfw.value
+      char.tags = tags.value
+    }
+  }
+}
+
 const addCharacter = handleSubmit((values) => {
   if (values.tier === 1 && !tierConfirm.value) {
     tierError.value = 'Are you sure that Tier=1, if yes click "Add" again'
@@ -237,7 +259,6 @@ const addCharacter = handleSubmit((values) => {
       const swpName = values.SWP.slice(0, values.SWP.indexOf('[') - 1)
       values.SWP = find(Object.values(waifuPerksObject), { title: swpName })?.uid
     }
-    console.log(values)
 
     processing.value = true
     userNickname.value = values.nickname

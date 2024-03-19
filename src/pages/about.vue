@@ -21,8 +21,8 @@
           href="https://discord.gg/cZf4U5rmPV"
           target="_blank"
           rel="noopener noreferrer"
-          class="text-blue-500 underline"
-        >Discord</a> nickname <span class="font-bold">om1cr0n42</span>
+          class="text-blue-500 underline text-xl"
+        >Discord</a> nickname <span class="font-bold">om1cr0n42</span>. List of all my projects is available on <a href="https://wormlewdmod.neocities.org/about" class="text-blue-500 underline text-xl" target="_blank" rel="noopener noreferrer">this page</a>.
       </div>
       <div>
         If you like the job I done so far and want to support my work on this project and any and all similar

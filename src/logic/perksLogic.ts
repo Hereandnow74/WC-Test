@@ -694,7 +694,7 @@ export function clearAll() {
   missionRewards.value = {}
 
   const { allEvents } = useEvents()
-  allEvents.emit({ id: Math.floor(Math.random() * 10000), time: Date.now(), message: 'All perks were removed. Added default binging - <b>Company Stamp</b>.', type: 'warn' })
+  allEvents.emit({ id: Math.floor(Math.random() * 10000), time: Date.now(), message: 'All perks were removed. Added default binding - <b>Company Stamp</b>.', type: 'warn' })
 }
 
 export function writeBuildValues(build: any) {

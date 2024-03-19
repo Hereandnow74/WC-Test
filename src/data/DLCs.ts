@@ -322,7 +322,7 @@ DLCperks.push({
   multiple: true,
   desc: `You will find that your new world has a number of previously bound waifus who for some reason or another have been left to their own devices; perhaps they were accidentally misplaced in transition, or maybe their contractor had a sudden case of extremely violent death, or maybe they were deliberately abandoned; either way, something somehow resulted in their arrival in your new world, and they are now your problem; they know that they were intended to be kept as slaves by a master, and will be especially distrustful of anyone who approaches them, so attempting to capture them will be difficult at best and dangerous at worst; while they will have arrived together, they may or may not stay together, and they also may seek out local assistance or proactively take measures to evade being captured.
   <p>Cost depends on number and tier of potential companions: T1-T4 [10]; T1-T7[100]; T1-T10[1000]</p>
-  <p>Total sum of the companion's cost's can't be less than double the amount payed.</p>
+  <p>Total sum of the companion's cost's can't be less than double the amount paid.</p>
   `,
 })
 

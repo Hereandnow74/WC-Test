@@ -114,23 +114,6 @@ export const bindings: PerkFull[] = [
     desc: 'Select an additional jewelry type for your Tempest items. This may be repurchased until every jewelry type is available to you. Additionally, you will receive an additional Tempest item each day with each purchase, with your reserve cap increasing by 5.',
   },
   {
-    uid: 'koHdq',
-    title: 'Designer Set',
-    cost: 35,
-    category: 'Binding',
-    type: 'Jewelry',
-    image: '',
-    whitelist: ['Luxury Goods'],
-    desc: `
-    <p>Each worn Tempest piece can now project invisible, semi-permeable barrier shields. These shields are accompanied by purely-aesthetic “armor” projections, matching the Tempest pieces they’re projected from: leather to leather, metal to metal, as well as the gemstone color. Within that determined color scheme, the projected armor can have any appearance. This can be changed manually in the app. As the actual protection comes from the shield, it remains just as effective regardless of how much skin is concealed. These projections are physical and can catch on thick or loose clothing. For best results, skintight undersuits or outright nudity (aside from the Tempest pieces) are recommended.</p>
-    <p>The shields from this perk do not benefit from any durability added to the Tempest pieces that project them. If a shield section takes too much damage too quickly, the shield will fail and the accompanying “armor” will shatter into light. A broken shield will only reactivate once it has a full charge.</p>
-    <p>Shields have three basic settings. At the weakest level, a shield will evenly cover the entire body, which can withstand direct fire from a high-caliber heavy machine gun for three seconds before failing. Without additional stress, a broken shield will recharge after ten seconds.</p>
-    <p>At the middle level, the shield will concentrate around a single body part that one of its components is projected from: headpiece and facepiece to the entire head, bracelets separately to each hand and forearm, necklace or waist chains (from Shackles) to the torso, etc. A full set will cover the entire body and allow the full use of this mode. Rings can assist with this mode if a non-ring piece is worn, but will not protect the hands individually. At this level, a shield can withstand a single direct hit from a modern battleship’s main cannon before failing. When this shield breaks, it will recharge after three hours.</p>
-    <p>The highest level is an emergency barrier that requires at least 6 worn Tempest pieces to activate. This barrier can take only a single strike before failing, but will always take that strike, no matter how powerful it is. The barrier will then linger around the user, providing 1 second of temporary invincibility before it fades completely. This barrier must be manually triggered or programmed with Expert Runes: Logic, and takes a full day (24 hours) to recharge.</p>
-    <p>On the lower two modes, each additional Tempest piece that an individual wears will add its base protection to the first, as well as a +5% modifier to the total shield protection. In these two modes, all active shields will break and recharge as one. The emergency barrier has a different form of durability: each additional shield is simply another hit that the wearer can take. Emergency shielding will fail as individual layers, with only a single layer recharging at a time. Individual shields that break in this mode will remain broken for the other two modes as well and not contribute to them until they’ve fully recharged.</p>
-    `,
-  },
-  {
     uid: 'ubLJy',
     title: 'Additional Stock',
     cost: 5,
@@ -148,13 +131,30 @@ export const bindings: PerkFull[] = [
     cost: 10,
     category: 'Binding',
     type: 'Jewelry',
-    image: '',
+    image: 'https://images2.imgbox.com/78/f5/2mmlgyAF_o.jpeg',
     whitelist: ['Luxury Goods'],
     desc: `
     <p>Chains are now available as a special jewelry type. These are usually worn as necklaces or around the waist, but can also link a pair of bracelets or anklets. We also offer special harnesses that are designed to be worn over the front of the torso. Depending on the wearer’s setup, these can attach to a necklace or choker, a belt or belly chain, nipple caps or piercings, or navel or genital piercings. Tempest chains are just as durable as any other jewelry piece.</p>
     <p>Additionally, any of your Tempest bracelets or anklets in use will now have a pseudo-magnetic lock, allowing you to quickly hobble and restrain any of your subjects or capture targets. If a chain already links a pair of bracelets or anklets when you enable the lock, it will simply retract at both ends.</p>
     <p>A chain that’s attached to a bracelet on only one end can have combat utility, whether the other end remains loose (as a whip) or is attached to a weapon. Either way, chains used as whips are just as retractable as the handcuffs-type use described above, with a maximum length of five times the wearer’s height. Chain-whips require a great deal of skill to use and Martial Talent is highly recommended.</p>
     <p>This perk also increases your daily Tempest stock by 1 and reserve limit by 5.</p>
+    `,
+  },
+  {
+    uid: 'koHdq',
+    title: 'Designer Set',
+    cost: 35,
+    category: 'Binding',
+    type: 'Jewelry',
+    image: 'https://images2.imgbox.com/96/de/Ag8GnVgl_o.jpeg',
+    whitelist: ['Luxury Goods'],
+    desc: `
+    <p>Each worn Tempest piece can now project invisible, semi-permeable barrier shields. These shields are accompanied by purely-aesthetic “armor” projections, matching the Tempest pieces they’re projected from: leather to leather, metal to metal, as well as the gemstone color. Within that determined color scheme, the projected armor can have any appearance. This can be changed manually in the app. As the actual protection comes from the shield, it remains just as effective regardless of how much skin is concealed. These projections are physical and can catch on thick or loose clothing. For best results, skintight undersuits or outright nudity (aside from the Tempest pieces) are recommended.</p>
+    <p>The shields from this perk do not benefit from any durability added to the Tempest pieces that project them. If a shield section takes too much damage too quickly, the shield will fail and the accompanying “armor” will shatter into light. A broken shield will only reactivate once it has a full charge.</p>
+    <p>Shields have three basic settings. At the weakest level, a shield will evenly cover the entire body, which can withstand direct fire from a high-caliber heavy machine gun for three seconds before failing. Without additional stress, a broken shield will recharge after ten seconds.</p>
+    <p>At the middle level, the shield will concentrate around a single body part that one of its components is projected from: headpiece and facepiece to the entire head, bracelets separately to each hand and forearm, necklace or waist chains (from Shackles) to the torso, etc. A full set will cover the entire body and allow the full use of this mode. Rings can assist with this mode if a non-ring piece is worn, but will not protect the hands individually. At this level, a shield can withstand a single direct hit from a modern battleship’s main cannon before failing. When this shield breaks, it will recharge after three hours.</p>
+    <p>The highest level is an emergency barrier that requires at least 6 worn Tempest pieces to activate. This barrier can take only a single strike before failing, but will always take that strike, no matter how powerful it is. The barrier will then linger around the user, providing 1 second of temporary invincibility before it fades completely. This barrier must be manually triggered or programmed with Expert Runes: Logic, and takes a full day (24 hours) to recharge.</p>
+    <p>On the lower two modes, each additional Tempest piece that an individual wears will add its base protection to the first, as well as a +5% modifier to the total shield protection. In these two modes, all active shields will break and recharge as one. The emergency barrier has a different form of durability: each additional shield is simply another hit that the wearer can take. Emergency shielding will fail as individual layers, with only a single layer recharging at a time. Individual shields that break in this mode will remain broken for the other two modes as well and not contribute to them until they’ve fully recharged.</p>
     `,
   },
   {
@@ -184,7 +184,7 @@ export const bindings: PerkFull[] = [
     cost: 50,
     category: 'Binding',
     type: 'Jewelry',
-    image: '',
+    image: 'https://images2.imgbox.com/44/7d/S3mEzL9K_o.jpeg',
     whitelist: ['Luxury Goods', 'Shackles', 'Designer Set', 'Absolute Order'],
     freebies: { defensePerks: [{ title: 'Possession Defense', cost: 0, count: 1 }] },
     desc: `
@@ -211,29 +211,12 @@ export const bindings: PerkFull[] = [
   },
   {
     uid: '2Hqia',
-    title: 'Designer Set',
-    cost: 35,
-    category: 'Binding',
-    type: 'Jewelry',
-    image: '',
-    whitelist: ['Luxury Goods'],
-    desc: `
-    <p>Each worn Tempest piece can now project invisible, semi-permeable barrier shields. These shields are accompanied by purely-aesthetic “armor” projections, matching the Tempest pieces they’re projected from: leather to leather, metal to metal, as well as the gemstone color. Within that determined color scheme, the projected armor can have any appearance. This can be changed manually in the app. As the actual protection comes from the shield, it remains just as effective regardless of how much skin is concealed. These projections are physical and can catch on thick or loose clothing. For best results, skintight undersuits or outright nudity (aside from the Tempest pieces) are recommended.</p>
-    <p>The shields from this perk do not benefit from the invulnerability of the Tempest pieces that project them. If a shield section takes too much damage too quickly, the shield will fail and the accompanying “armor” will shatter into light. A broken shield will only reactivate once it has a full charge.</p>
-    <p>Shields have three basic settings. At the weakest level, a shield will evenly cover the entire body, which can withstand direct fire from a high-caliber heavy machine gun for three seconds before failing. Without additional stress, a broken shield will recharge after ten seconds.</p>
-    <p>At the middle level, the shield will concentrate around a single body part that one of its components is projected from: mask/veil and crown/tiara to the entire head, bracelets separately to each hand and forearm, necklace or waist chains (from Shackles) to the torso, etc. A full set will cover the entire body and allow the full use of this mode. Rings can assist with this mode if a non-ring piece is worn, but will not protect the hands individually. At this level, a shield can withstand a single direct hit from a modern battleship’s main cannon before failing. When this shield breaks, it will recharge after three hours.</p>
-    <p>The highest level is an emergency barrier that requires at least 6 worn Tempest pieces to activate. This barrier can take only a single strike before failing, but will always take that strike, no matter how powerful it is. The barrier will then linger around the user, providing 1 second of temporary invincibility before it fades completely. This barrier must be manually triggered or programmed with Expert Runes: Logic, and takes a full day (24 hours) to recharge.</p>
-    <p>On the lower two modes, each additional Tempest piece that an individual wears will add its base protection to the first, as well as a +5% modifier to the total shield protection. In these two modes, all active shields will break and recharge as one. The emergency barrier has a different form of durability: each additional shield is simply another hit that the wearer can take. Emergency shielding will fail as individual layers, with only a single layer recharging at a time. Individual shields that break in this mode will remain broken for the other two modes as well and not contribute to them until they’ve fully recharged.</p>
-    `,
-  },
-  {
-    uid: '2Hqia',
     title: 'Golden Idol',
     cost: 65,
     category: 'Binding',
     type: 'Jewelry',
-    image: '',
-    whitelist: ['Designer Set', 'Jewels of Discord'],
+    image: 'https://images2.imgbox.com/20/2a/FdwReRco_o.jpeg',
+    whitelist: ['Jewels of Discord'],
     freebies: { defensePerks: [{ title: 'Polymorph Defense', cost: 0, count: 1 }] },
     desc: `
     <p>Any retinue member wearing at least one Tempest piece can be transformed into an inanimate object between 10% and 100% of the person’s normal height. This can be purely ornamental, such as a statue, body pillow, or figurine, or functional as a tool or weapon. For functional items, the function will always reflect the retinue member’s skills or abilities and scale according to their tier: someone with fire powers and is transformed into a sword would most likely become a flaming sword. Take one copy of Polymorph Defense for free. You can transform your objectified subjects back to normal through the app. If you instead used this perk on yourself, you can return to normal at will.</p>
@@ -247,7 +230,7 @@ export const bindings: PerkFull[] = [
     cost: 30,
     category: 'Binding',
     type: 'Jewelry',
-    image: '',
+    image: 'https://images2.imgbox.com/47/91/8Mp7NT9W_o.jpeg',
     whitelist: ['Golden Idol', 'Assuming Direct Control'],
     desc: `
     <p>Your objectified retinue members may now control their users. When worn or held, as appropriate to their form, they can exit their flow state to wear their user’s body as their own. Depending on the difference in willpower between the two, the user might have any of the same experiences while possessed as in Assuming Direct Control. Only one object may seize control of their user at a time. While in this state, if the host remains aware, the possessor can accelerate their capture using the methods of Aggressive Initiations, at reduced efficiency relative to both individuals having their own bodies. The possession by itself is not enough for this effect.</p>
@@ -307,21 +290,11 @@ export const bindings: PerkFull[] = [
   },
   {
     uid: 'IZswJ',
-    title: 'Expert Runes: Hybrid',
-    cost: 20,
-    category: 'Binding',
-    type: 'Jewelry',
-    image: 'https://i.ibb.co/F46qpPs/Advanced-Tempest-Runes-Hybrid.jpg',
-    whitelist: ['Advanced Runes: Body'],
-    desc: 'You can now alter the Tempest-wearing members of your retinue into hybrid races (human, kitsune, vulcan, etc.), limited by the natural examples of such races that you have in your retinue. There is no theoretical limit on how many races you can hybridize into one individual. However, the result having all of the strengths of both sides and none of their weaknesses is only guaranteed when there are only two donor races present. More complex combinations are increasingly unreliable. The effects of party-wide Heritage perks such as Dragon Thrall do not count against this limit.',
-  },
-  {
-    uid: 'IZswJ',
     title: 'Expert Runes: Logic',
     cost: 25,
     category: 'Binding',
     type: 'Jewelry',
-    image: '',
+    image: 'https://i.imgur.com/6ypzPdVl.jpg',
     needed: 1,
     whitelist: ['Advanced Runes: Body', 'Advanced Runes: Mind'],
     freebies: { talentPerks: [{ title: 'Science Talent', cost: 0, count: 1 }] },
@@ -339,7 +312,7 @@ export const bindings: PerkFull[] = [
     cost: 15,
     category: 'Binding',
     type: 'Jewelry',
-    image: '',
+    image: 'https://images2.imgbox.com/92/10/S4LYS3DL_o.jpeg',
     needed: 1,
     whitelist: ['Basic Runes'],
     desc: `
@@ -353,8 +326,7 @@ export const bindings: PerkFull[] = [
     cost: 60,
     category: 'Binding',
     type: 'Jewelry',
-    image: '',
-    needed: 1,
+    image: 'https://images2.imgbox.com/48/cc/Di9GEAer_o.jpg',
     whitelist: ['Designer Set', 'Advanced Runes: Spark'],
     freebies: { talentPerks: [{ title: 'Soul Talent', cost: 0, count: 1 }, { title: 'Engineering Talent', cost: 0, count: 1 }] },
     additionalDesc: `<b>Procs: Programmed Random Occurrences</b>
@@ -621,7 +593,7 @@ If you Possessed or Substituted a waifu or are otherwise female, you may act as 
       talentPerks: [{ title: 'Body Tune-Up', cost: 0, count: 1 }, { title: 'Athletic Talent', cost: 0, count: 1 }, { title: 'Soul Talent', cost: 0, count: 1 }],
     },
     desc: `
-<p>Congratulations! Your Shroud has been upgraded to the elemental manifestation type! Choose one element for your personal Shroud from the list in the Additional Rules section. (Your retinues’ cloaks are not affected.) No longer purely physical, the Shroud is an elemental manifestation of your will, granting you a noticeable buff to your affinity with that element, as well as allowing you to generate and control significant amounts of it. The cap on the effective tier of subjects you can successfully bind is raised by one.</p>
+<p>Congratulations! Your Shroud has been upgraded to the elemental manifestation type! Choose one element for your personal Shroud from the list in the Shroud Elements section. (Your retinues’ cloaks are not affected.) No longer purely physical, the Shroud is an elemental manifestation of your will, granting you a noticeable buff to your affinity with that element, as well as allowing you to generate and control significant amounts of it.</p>
 <p>Your Shroud’s manifestation is always intense and obvious, such as a black void for Fearful Shrouds, burning flames or magma for a Volcanic Shroud, or a seemingly star-filled cosmos for the Void Shroud. As an extension of your will, it will only harm that which you wish it to harm. You may take control of a natural manifestation of your element by mixing in some of your Shroud into it. Manifestations of the element with a will of their own must be infused with your will the same way a waifu must. However, a willing manifestation may allow you to manipulate them, such as using a Cyber Shroud to repair a willing gynoid. Willful manifestations must either be bound like any other capture or released when you have no further need of their substance.</p>
 <p>These elemental shapes and tendrils must be contiguous with you or each other. Portions of Shroud that lose contact begin to dissipate, generally within ten to thirty seconds. Your waifus, their Cloaks, and waifus in multiple bodies all count as “you” for the purposes of Shroud sustenance. As an example, you can create a ring with the Xeric Shroud that would quickly crumble into nothingness if it left your body, but it would not if one of your waifus wore it.</p>
 <p>Your Shroud can only be damaged by things which could feasibly harm the element itself, such as water affecting the Volcanic Shroud while physical strikes cannot, or gravitational effects damaging the Void Shroud. Even non-physical elements such as light and shadow are capable of becoming tangible, such as by becoming the physical cloak once more, though by doing so they can be damaged by physical forces.</p>

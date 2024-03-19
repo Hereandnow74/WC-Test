@@ -539,7 +539,7 @@ DLCRides.push({
   source: 'Guardians of the Galaxy',
   category: 'Space',
   size: 'Medium',
-  cost: 50,
+  cost: 100,
   desc: 'The M-Ships are a class of scout space vessels. Being exceptionally versatile, M-ships serve as capable dogfighters and transport ships, whilst also being very maneuverable, fast, and agile despite what their sizable profile would suggest.',
   addons: [['Unlimited Fuel', 5], ['Unlimited Ammo', 5]],
   variants: [['The Milano', 0], ['The Warbird', 0], ['The Benatar', 0], ['The Mandela', 0]],

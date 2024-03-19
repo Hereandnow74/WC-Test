@@ -311,6 +311,7 @@ const charData = computed(() => {
       tags: props.char.b || [],
       nickname: props.char.k,
       likes: props.char.likes,
+      type: props.char.type,
     }
     : props.char
   if (!res.uid) res.uid = random(10000000, 99999999)

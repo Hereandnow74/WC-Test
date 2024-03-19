@@ -10,7 +10,7 @@
       <Note type="info" title="Images">
         <div class="linkList">
           <span>If you want to add NSFW image there is a list of sites that were confirmed to work: </span>
-          <a href="https://danbooru.donmai.us/" target="_blank" rel="noopener noreferrer">Danbooru</a>
+          <!-- <a href="https://danbooru.donmai.us/" target="_blank" rel="noopener noreferrer">Danbooru</a> -->
           <a href="http://www.hentai-foundry.com/" target="_blank" rel="noopener noreferrer">HentaiFoundry</a>
           <a href="https://e621.net/" target="_blank" rel="noopener noreferrer">e621</a>
           <a href="https://safebooru.org/" target="_blank" rel="noopener noreferrer">Safebooru</a>

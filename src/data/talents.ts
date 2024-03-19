@@ -275,7 +275,7 @@ talents.push({
 <p>Sometimes you just want to copy a powerset, either a generic one or a specific character’s. This perk lets you do just that. Only Imaginary Tier abilities, abilities that originated in other CYOAs, and abilities found elsewhere in this catalog, including the loadouts of other contractors, are not eligible. The exact capabilities at the time of purchase will be scaled to Tier 4. This perk is not necessary for any abilities that your subjects might grant you via surgery, ritual, or other means. Templates for characters who are only purchasable in sets must be bought separately. Templates for alternative versions of the same character must also be bought separately, unless otherwise specified. Characters who are represented as Specific Waifu Perks may be purchased as templates for individuals who are not eligible for the actual perks, whether natively or with Power Swap, and follow any mutual exclusivity rules stated in the perk descriptions.</p>
 <p>All templates come with a skill framework, identical in principle to the ones that “early” captures receive to ensure they learn their missing abilities. This applies to technological abilities as well. Iconic equipment is included with this perk, but may see its parameters and functionality locked until you’re capable of using it safely or have trained enough with the more basic features.</p>
 <p>After the skill framework runs out and you’ve achieved the typical heights of the template, the appropriate Basic Talent will let you continue to train beyond that point, as described in the opening of that section. Any familiars that would normally come with a template (i.e. are included with a purchase or Power Swap) must be purchased, captured or otherwise spawned separately.</p>
-<p>Racial templates (Kryptonian, Metallic Dragon, Newtype, Saiyan, etc.) have additional rules that distinguish them from other kinds. Unlike Advanced Runes: Body, a living, natural example of that template is not required for your selection with this perk. Racial templates are limited to one per individual and will overwrite the individual’s original race for all purposes. The creation of hybrids requires Expert Runes: Hybrid or a geneticist, biomanipulator, or polymorpher.</p>
+<p>For racial templates (Kryptonian, Metallic Dragon, Newtype, Saiyan, etc.), unlike Advanced Runes: Body, a living, natural example of that template is not required for your selection with this perk. Racial templates otherwise follow the same rules as in that perk.</p>
 <p>Other powers that are only available to those who were born with them, such as hereditary magic systems, may be acquired through this perk at any time, just as with Added Potential.</p>
 <p>Abilities that are generic in their source but are expressed uniquely, such as Sacred Gears, Semblances, Academy City Esper powers, Quirks, or the results of the X-gene, can be unique to you or copied from a specific character. You may not use company means to acquire more than one of each type of ability at a time.</p>`,
 })
@@ -1094,6 +1094,21 @@ genericPerks.push({
   image: 'https://i.ibb.co/wJPQ4wt/Galactic-Presence.jpg',
   cost: 500,
   desc: 'Malleus and the year 40,000 are both Warhammer, but operate on vastly different scales. This perk pulls one of the Fantasy goddesses up to the same level as her galactic counterpart. It must be purchased separately for each one you have.',
+})
+
+genericPerks.push({
+  uid: '1rWq2',
+  title: 'Enemy Within',
+  category: 'Generic',
+  requires: 'Must have visited any Marvel world or have a subject from one.',
+  complex: 'target',
+  image: '',
+  cost: 100,
+  desc: `
+  <p>Your chosen retinue member is now the host to a Klyntar, the slime-like symbiont race of which Venom is the most famous member. This will raise any blue- or copper-star subject to T7 and a T7 to T8. It will also noticeably strengthen any host who started at T8 or higher, but not enough to increase their tier.</p>
+  <p>Klyntar hosts experience enhanced physical abilities, regeneration, and shapeshifting (just the Klyntar suit itself), as well as a limited ability to mimic any ability covered by Psychic Talent - provided the Klyntar keeps an appropriate biological sample. Klyntar tend to grow attached to specific biological samples and will maintain long-term possession of only one such sample at a time.</p>
+  <p>This perk may be used to purchase a specific Klyntar for the chosen retinue member or to spawn an original, generic member of that race for your retinue’s use. As this is a purchase, you will not receive capture credits for binding a Klyntar spawned by this perk.</p>
+  `,
 })
 
 genericPerks.push({

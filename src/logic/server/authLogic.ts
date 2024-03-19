@@ -93,7 +93,6 @@ export async function _loginToServer(SERVER_URL: string, API_VERSION: string, re
   // return 'Success'
 }
 
-// TODO: Logout when 401 is returned
 export async function _refreshTokens(SERVER_URL: string, API_VERSION: string): Promise<string> {
   if (tokens.value?.refresh?.token) {
     const apiUrl = `${SERVER_URL}/${API_VERSION}/auth/refresh-tokens`
@@ -106,6 +105,11 @@ export async function _refreshTokens(SERVER_URL: string, API_VERSION: string): P
     })
 
     if (!response.ok) {
+      if (response.status === 401) {
+        user.value = {}
+        tokens.value = {}
+        return 'Unauthorized'
+      }
       const errorText = await response.text()
       try {
         return JSON.parse(errorText).message
@@ -140,6 +144,8 @@ export async function _logoutFromServer(SERVER_URL: string, API_VERSION: string,
       return JSON.parse(errorText).message
     }
     else {
+      user.value = {}
+      tokens.value = {}
       return 'Success'
     }
   }
