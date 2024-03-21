@@ -24,7 +24,7 @@ const props = defineProps({
   },
 })
 
-const statuses = ['Companion', 'Familiar', 'Devotee', 'Offspring', 'Dead']
+const statuses = ['Companion', 'Familiar', 'Devotee', 'Offspring', 'Dead', 'Traded Away']
 const buffer = ref(props.modelValue || 'Companion')
 const list = computed(() => findIndex(activeChallenges.value, { title: 'Small Team' }) !== -1 ? [...statuses, 'Exile'] : statuses)
 

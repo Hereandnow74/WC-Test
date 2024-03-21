@@ -98,7 +98,7 @@ export const purchases = `<h3 class="font-bold text-xl pt-4 pb-2">Extending Your
 <p>No powers found in this catalog will directly impact a Contractor’s own mind without an explicit warning otherwise (such as in Memoria). The company is not responsible for any power’s indirect effects on a Contractor’s decision-making.</p>
 <p>For any member of your retinue whose powers come from an external, (semi-)sapient source, their connection will be severed at the moment of capture and those powers replicated as innate abilities.
 If they have powers that rely on a background magical field, the connection to you will act as an adapter in worlds with a different field. In worlds or regions that lack any such field, their powers will still be usable, but at a reduced capacity when outside of your presence.</p>
-<p>All retinue members whose power comes with a crippling, categorical weakness, such as Kryptonians, vampires, or Devil Fruit users, will be no more affected by that weakness than an ordinary human.</p>
+<p>Many retinue members have powers that come with a crippling categorical weakness. This is more than just an unwanted limitation or inconvenience; green Kryptonite’s effects on a Kryptonian clearly qualifies, while Baldr’s vulnerability to mistletoe was from the plant being the only known thing that he lacked immunity to and thus does not. Altered dietary needs, such as many forms of vampiric thirst, are also not weaknesses in this sense. These individuals will be no more affected by qualifying weaknesses than an ordinary human.</p>
 <p>All of these processes have already been applied to all purchased retinue members, regardless of whether or not they’re bound. The last will also apply to you, if you accept such a power.</p>
 `
 

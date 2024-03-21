@@ -45,7 +45,7 @@
           <fa-solid:sort-numeric-up v-else class="inline-block rounded" />
         </div>
       </div>
-      <Variants v-model="roleFilter" :list="['All', 'Companion', 'Familiar', 'Devotee', 'Offspring', 'Dead']" theme="dark" />
+      <Variants v-model="roleFilter" :list="['All', 'Companion', 'Familiar', 'Devotee', 'Offspring', 'Dead', 'Traded Away']" theme="dark" />
     </div>
     <div
       class="overflow-y-auto min-h-0 scrollbar"

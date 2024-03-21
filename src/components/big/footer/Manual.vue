@@ -37,16 +37,24 @@
         </div>
       </div>
     </div>
+    <Button label="Delete all local characters" bg-color="bg-true-gray-800" class="px-4 mx-auto" @click="deleteLocal" />
     <BuyAnyPerk v-if="showBuyAnyPerk" @click="showBuyAnyPerk = false" />
   </div>
 </template>
 
 <script lang="ts" setup>
+import { confirmDialog } from '~/logic/dialog'
 import { useStore } from '~/store/store'
 
 const showBuyAnyPerk = ref(false)
 
-const { budgetMods, specificMods, fee } = useStore()
+const { budgetMods, specificMods, fee, localUserCharacters } = useStore()
+
+async function deleteLocal() {
+  const confirm = await confirmDialog('Are you sure you want to delete all local characters?')
+  if (confirm)
+    localUserCharacters.value = []
+}
 
 watch([() => budgetMods.value.plus, () => budgetMods.value.minus], () => {
   if (budgetMods.value.plus === '')

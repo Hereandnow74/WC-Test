@@ -18,6 +18,7 @@ export const difficultyOptions = [
     image: 'https://i.imgur.com/uTx4YCOl.jpg',
     intensity: 0,
     desc: `Your capture/sale values are set to 60%/20% of the listed price and you get a standard budget, the same as on Intensity 1. <b>Ignore</b> the values displayed by the table above and the rest of this section.
+    <p>Legacy refers to previous versions of the Waifu Catalog. If you're unfamiliar with how they worked, either give them a read or skip using this option.</p>
     `,
     category: 'difficulty',
     type: 'legacy',

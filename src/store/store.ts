@@ -87,6 +87,8 @@ const baseBudgetAfter = computed(
   () => baseBudget.value + intensities.value.reduce((a, x) => x.intensity > 1 ? a + x.intensity : a, 0),
 )
 
+const companionsWithout = computed(() => companions.value.filter(c => c.role !== 'Exile' && c.role !== 'Traded Away'))
+
 function costCalc(a: number, x: any) {
   return a += x && x.cost ? x.cost : 0
 }
@@ -110,7 +112,7 @@ const difficultyCost = computed(() => difficulties.value.reduce(costCalc, 0))
 const specificModsCost = computed(() => specificMods.value.reduce((a, x) => a += x.mod, 0))
 
 const companionsCost = computed(() => {
-  return companions.value.reduce((a, x) => {
+  return companionsWithout.value.reduce((a, x) => {
     if (x.swap)
       a += x.swap.cost - x.swap.refund
     if (x.perk)
@@ -196,7 +198,7 @@ const difficultyAdjustedSellT = computed(() => {
 
 const companionProfit = computed(() => {
   return captureKoeff.value > 0
-    ? companions.value.reduce((a, x) => {
+    ? companionsWithout.value.reduce((a, x) => {
       if (x.method === 'capture') {
         if (x.price === undefined) {
           const captureCost = legacyMode.value ? Math.floor((CHAR_COSTS[x.priceTier] || 0) * captureKoeff.value) : difficultyAdjustedCapture.value[x.priceTier]
@@ -213,7 +215,7 @@ const companionProfit = computed(() => {
 // Note: Return waifus when u Have a Wage Slave rules are unclear
 const companionProfitSold = computed(() => {
   return sellKoeff.value > 0
-    ? companions.value.reduce((a, x) => {
+    ? companionsWithout.value.reduce((a, x) => {
       if (legacyMode.value && x.sold && x.tier <= 11 && ['capture'].includes(x.method)) {
         if (x.soldPrice === undefined) {
           if (legacyMode.value) {
@@ -236,7 +238,7 @@ const companionProfitSold = computed(() => {
     : 0
 })
 
-const companionsWithoutSold = computed(() => companions.value.filter(c => !c.sold && c.role !== 'Exile'))
+const companionsWithoutSold = computed(() => companions.value.filter(c => !c.sold && c.role !== 'Exile' && c.role !== 'Traded Away'))
 
 // Discounts
 const types = {
@@ -497,7 +499,7 @@ watch(csr, () => {
 })
 
 const companionTicketProfit = computed(() => {
-  return companions.value.reduce((a, x) => {
+  return companionsWithout.value.reduce((a, x) => {
     if (legacyMode.value) {
       if (x.method === 'capture' && x.priceTier >= 11) a += Math.floor(CHAR_COSTS_TICKET[x.priceTier] * captureKoeff.value)
       if (x.method === 'capture' && x.sold && x.tier >= 11) a += Math.floor(CHAR_COSTS_TICKET[x.tier] * sellKoeff.value)
@@ -531,7 +533,7 @@ const tier11tickets = computed(() => {
   const genericWaifuPerksCost = genericWaifuPerks.value.reduce(costCalcTX, 0)
   const luresCost = luresBought.value.reduce(costCalcTX, 0)
   let first = true
-  const companionsCost = companions.value.reduce((a, x, i) => {
+  const companionsCost = companionsWithout.value.reduce((a, x, i) => {
     if (flags.value.danger11Start && first && x.tier >= 11 && x.tier <= 12) {
       first = false
       return 0
