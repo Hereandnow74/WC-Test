@@ -384,6 +384,38 @@ export const LINKS = computed(() => {
   return links
 })
 
+const LINKSWITHOUTDLC = computed(() => {
+  const links = {} as Record<string, string>
+  const allCats = {
+    'intensity/difficulty': difficultyOptions,
+    'intensity/pvp': intensityPvP,
+    'intensity/orbs': invasionPvP,
+    'origin/origin': origin,
+    'bindings/bindings': bindings,
+    'bindings/lures': lures,
+    'bindings/controls': otherControls.filter(perk => perk.type !== 'space'),
+    'bindings/symbiote': symbioteBinding,
+    'heritage': heritages,
+    'talents/home': homes,
+    'talents/defense': defenses,
+    'talents/talent': talents,
+    'talents/perks': perks,
+    'talents/generic': genericPerks,
+  }
+  for (const category of Object.entries(allCats)) {
+    for (const entry of category[1])
+      links[entry.title] = category[0]
+  }
+  links['Directly in Companions'] = 'companions'
+  links.Offspring = ''
+  links.Missions = ''
+  links['Loans and Credit Debt'] = ''
+  links['Drain Defense (2x)'] = 'talents/defense'
+  links.familiar = ''
+  // links.familiars = ''
+  return links
+})
+
 // navigator.clipboard.writeText(JSON.stringify(names.value, null, 2))
 
 export const QUERIES = computed(() => {
@@ -618,7 +650,7 @@ export const allWorldsNoCondition = computed(() => {
 // const str = Object.keys(TOOLTIPS).map(x => `[^-]?(${x})`).sort((a, b) => b.length - a.length).join('|')
 // export const TOOLTIPS_REG = new RegExp(str, 'g')
 
-export const LINKS_REG = new RegExp([...Object.keys(LINKS.value), ...Object.keys(TOOLTIPS)]
+export const LINKS_REG = new RegExp([...Object.keys(LINKSWITHOUTDLC.value), ...Object.keys(TOOLTIPS)]
   .filter(x => !['Eternal', 'Resonance'].includes(x))
   .map((x) => { x = x.replace('(', '\\('); x = x.replace(')', '\\)'); return `(${x})` })
   .sort((a, b) => b.length - a.length)
