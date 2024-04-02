@@ -13,13 +13,13 @@
         />
         <div v-else class="h-16"></div>
         <div ref="likeHover" class="absolute top-7 right-0.5 cursor-pointer flex items-center gap-1 text-lg leading-none" @click="throttledLike">
-          <span class="text-red-500 flex items-center gap-0.5 text-shadow-border">
+          <span class="text-red-400 flex items-center gap-0.5" :style="{'text-shadow': '-1px 0 2px black, 0 1px 2px black, 1px 0 2px black, 0 -1px 2px black'}">
             <span v-if="charLikes || charData.likes" class="font-semibold">{{ charLikes || charData.likes }}</span>
             <ci:heart-fill
               v-if="(favoritesObject[charData.uid] !== undefined && !isLikeHovered) || (favoritesObject[charData.uid] === undefined && isLikeHovered)"
-              class="filter drop-shadow"
+              :style="{'filter': 'drop-shadow(black 1px 1px 1px) drop-shadow(black 0px 1px 1px)'}"
             />
-            <ci:heart-outline v-if="(!favoritesObject[charData.uid] && !isLikeHovered) || (favoritesObject[charData.uid] !== undefined && isLikeHovered)" class="filter drop-shadow" />
+            <ci:heart-outline v-if="(!favoritesObject[charData.uid] && !isLikeHovered) || (favoritesObject[charData.uid] !== undefined && isLikeHovered)" :style="{'filter': 'drop-shadow(black 1px 1px 1px) drop-shadow(black 0px 1px 1px)'}" />
           </span>
         </div>
         <icon-park-outline:full-screen-one
@@ -92,6 +92,12 @@
                   {{ waifuTags[tag]?.tag || tag }}
                 </div>
               </div>
+              <!-- <div v-if="difference(allCharsObject[charData.uid].b, charData.tags).length" class="flex flex-wrap gap-1 text-sm">
+                <strong>Difference with global:</strong>
+                <div v-for="tag in difference(allCharsObject[charData.uid].b, charData.tags)" :key="tag" class="bg-gray-700 rounded px-0.5" :class="[charData.tags.includes(tag) ? 'text-green-500' : 'text-red-500']" @click="charData.tags.includes(tag) ? char.b.splice((char.b.findIndex(tag) - 1), 1) : char.b.push(tag)">
+                  {{ waifuTags[tag]?.tag || tag }}
+                </div>
+              </div> -->
             </div>
             <div v-if="changes[charData.uid].nickname" class="">
               by {{ changes[charData.uid].nickname }}
@@ -152,6 +158,10 @@
                 <eva:external-link-fill />
                 Image source
               </a>
+              <div v-if="isUserChar" class="hover:(text-gray-300 bg-gray-600) cursor-pointer flex items-center gap-1" @click="deleteLocalCharacter(charData.uid)">
+                <fluent:delete-20-filled />
+                Delete
+              </div>
               <div class="hover:(text-gray-300 bg-gray-600) cursor-pointer flex items-center gap-1" @click="$emit('editCompanion', charData)">
                 <bx:bxs-edit />
                 Edit
@@ -159,10 +169,6 @@
               <div v-if="!isUserChar" class="hover:(text-gray-300 bg-gray-600) cursor-pointer flex items-center gap-1" @click="$emit('reportCompanion', charData)">
                 <ic:outline-report />
                 Report errors
-              </div>
-              <div v-if="isUserChar" class="hover:(text-gray-300 bg-gray-600) cursor-pointer flex items-center gap-1" @click="deleteLocalCharacter(charData.uid)">
-                <fluent:delete-20-filled />
-                Delete
               </div>
             </div>
           </div>
@@ -220,7 +226,7 @@
 <script lang='ts' setup>
 import type { PropType } from '@vue/runtime-core'
 import { Character, DBCharacter } from 'global'
-import { random, throttle } from 'lodash-es'
+import { random, throttle, difference } from 'lodash-es'
 import { CHAR_COSTS, defTags, PLACEHOLDER_NO_IMAGE, useAllChars, waifusThatHasPerk, waifuTags, nicknames, CHAR_COSTS_TICKET } from '~/data/constants'
 import { lazyLoadSingleImg, tagToggles, showDefenseTags, imageLink } from '~/logic'
 import { confirmDialog } from '~/logic/dialog'
@@ -271,7 +277,7 @@ const {
 } = useStore()
 const { canPurchase, favoritesObject, favorites } = useGlobalSettings()
 const { likes, likesMessageSeen } = usePlayStore()
-const { changes } = useAllChars()
+const { changes, allCharsObject } = useAllChars()
 const { user } = useUser()
 
 const infoIcon = ref<EventTarget | null>(null)

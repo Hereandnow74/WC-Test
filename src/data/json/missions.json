@@ -1,6 +1,733 @@
 [
   
   {
+    "reward": 100,
+    "image": "https://safebooru.org//images/1852/877bf603aa9b7cb78a9f42864749101a28bec17d.gif",
+    "author": "Avendark",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Enough Talk – Run Hands",
+    "loca": "Generic",
+    "lewd": true,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": 20,
+        "type": "Credits",
+        "value": "Defeat your first enemy contractor"
+      },
+      {
+        "reward": 25,
+        "type": "Credits",
+        "value": "Talk a negotiable enemy into a complete surrender (only available in gauntlet)"
+      },
+      {
+        "reward": "2x Grand Manor or 60 credits",
+        "type": "Perks",
+        "value": "Capture an enemy contractor’s entire retinue using PvP Capturing"
+      },
+      {
+        "reward": "Any T7 Companion",
+        "type": "Companions",
+        "value": "Defeat a defending contractor who has summoned three allied forces (only available in invasion)"
+      },
+      {
+        "reward": 1,
+        "type": "IMG Tickets",
+        "value": "Start in a tier 1 world and reach a tier 10 world (only available in gauntlet)"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Compete in one of the various modes of PvP we at the company have provided for you."
+      },
+      {
+        "value": "The mission ends when you have defeated 10 enemy contractors."
+      }
+    ],
+    "budget": 0,
+    "desc": "Contractor, this next mission is coming straight from the company itself; turns out, the number of PvP combatants are at an all-time low. You know, you’d think with how many power crazed warriors this place employs they’d be all up for beating the snot out of their co-workers, but apparently not. Well what’s say you then, up for throwing hands with the best and worse the company has to offer?\n\nNo? Alright fine! How about a limited time offer to sweeten the pot. You compete in any type of PvP (be that invasions, gauntlets or tournaments) and we’ll give you a bonus reward for mercilessly beating your first few foes. Plus some extra rewards for any additional objectives you complete.",
+    "uid": "bGSrQ"
+  },
+  {
+    "reward": 200,
+    "image": "https://us.rule34.xxx//images/6222/89a6ed3ec6c96359cb390e68e123fc62.jpeg",
+    "author": "Avendark",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Team Galactic, Accepting All Recruits!",
+    "loca": "Pokemon",
+    "lewd": true,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "Mind Defence or 25 credits.",
+        "type": "Perks",
+        "value": "Also recruit your region’s elite four and champion into your team."
+      },
+      {
+        "reward": "Template Stacking II [Mewtwo (Pokémon)] or 40 credits.",
+        "type": "Perks",
+        "value": "Recruit every gym leader, elite four and champion in the Pokémon world, completely securing your control over the Pokémon league."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Establish yourself as the leader of one of the villainous teams in the Pokémon universe."
+      },
+      {
+        "value": "Recruit every gym leader in a region to your team."
+      },
+      {
+        "value": "You must influence them to be genuinely devoted to your team and achieving it’s goals."
+      },
+      {
+        "value": "Do this without the public learning of your actions or your new recruits."
+      }
+    ],
+    "budget": 0,
+    "desc": "You know, Giovanni had a pretty good idea. Having both the prestige of being gym leader and the power of leading your own criminal organisation. After all, who doesn’t love a double life? Apparently, the Pokémon league. They always seem to know how keep an honest criminal down. If only they thought a little more like you. If only someone made them think like you.\n\nInfiltrate one of the many villainous teams in the Pokémon world and supplant yourself as its leader. Then use your combination of lures, bindings and your own irresistible charm to either recruit every gym leader in a region to your team or replace them with individuals who already are. They must be genuinely devoted to and believe in the goals of your organisation. Of course, the Pokémon league has a reputation to uphold, so don’t let the public learn about their gym leader's double life.",
+    "uid": "Qcycl"
+  },
+  {
+    "reward": "Instant Capture of Fiona Frost and Loid Forger (You may place them as Familiar to not interfere with their love or keep Companion and join in~)",
+    "image": "https://c.tenor.com/HOUvKIAQOisAAAAC/tenor.gif",
+    "author": "myfunvideos",
+    "rewardType": "Companions",
+    "source": "https://m.fanfiction.net/s/14094062/1/",
+    "title": "Operation Strix? I Wuv Him! Suki!",
+    "loca": "Spy X Family",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "Instant Capture of Yor Briar.",
+        "type": "Companions",
+        "value": "Remove Yor Briar from being selected as the wife for Operation Strix. (May use abilities with discretion and stealth to incapacitate her in any shape or form)"
+      },
+      {
+        "reward": "Instant Capture of Anya",
+        "type": "Companions",
+        "value": "Adopt Anya before Loid does (Best way to convince her to join you is to let her know you know she can read minds and appeal to her spy fascination)"
+      },
+      {
+        "reward": "5 Credits and complete Trust of you",
+        "type": "Other",
+        "value": "If deeply asleep, explore her body and successfully make her reach her climax without accidentally killing you through spinal reaction."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Do not get arrested by the Secret Police for suspicious activity."
+      },
+      {
+        "value": "Fiona must successfully suggest and become Loid's wife, regardless if he thinks that this is only for the mission or some insane joke from Nightfall."
+      },
+      {
+        "value": "Do not let Anya meet Yor in proximity while Loid is around or she will interfere!"
+      }
+    ],
+    "budget": 60,
+    "desc": "As you might know, Fiona Frost (aka Nightfall), was late in another mission for WISE and couldn't become Loid Forger's (aka Twilight) wife in his Mission for World Peace. She was doomed to fail the moment the moment she began to challenge Yor Briar (aka Thorn Princess) in things to make Loid marry her instead. But due to Yor being far superior in most motherly actions as well as strength and being an Assassin, Fiona could not make the cut, especially when Anya saw how strict Fiona thought she'd be if she was the mother in the household.\n\nContractor, there are some that find this unsatisfying because they can relate. Your job is...not simple, if we are being completely honest with you. In fact, it'll put you in the line of fire, in a manner of speaking.\n\nYour Mission, should you choose to accept it, is to get Fiona together with Loid, regardlessly of the possibility of success or failure in Operation Strix.\n\nBest way to make this possible is to take Yor out of the picture. Now, we don't necessarily mean kill Yor Briar, but simply get her out of the way for Fiona to lay claim of Loid.\n\nMake sure Nightfall get the time she wanted with her possible husband!\n\nDon't let her be the butt of a poor joke for Yor's benefit.",
+    "uid": "yGRrn"
+  },
+  {
+    "reward": 100,
+    "image": "https://i.imgur.com/46fxPVo.png",
+    "author": "Drallall",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Grab the Trans-Reality Comet",
+    "loca": "Voltron: Legendary Defenders",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "100",
+        "type": "Credits",
+        "value": "take the Trans-Reality Comet that was used to make the lions"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You must have the whole comet"
+      },
+      {
+        "value": "You must have the comet secured"
+      },
+      {
+        "value": "You can only TS once and buy the Engineering and Science talent for the duration of the mission"
+      },
+      {
+        "value": "The mission will be considered complete when you've held onto the comet for 5 months without interruption."
+      }
+    ],
+    "budget": 250,
+    "desc": "In the series Voltron: Legendary Defender, there exists a comet known as the Trans-Reality Comet. The Comet is made of ore so infused with Quintessence that it can pass through different alternate realities. Moreover, it doesn't require any power source as it acts as its own power source. Think of the Alternate Reality Drive from Stargate except anything you make with the ore can go to alternate universes without a power source. Your mission, should you accept, is to take the Trans-Reality Comet used to make the Sincline.",
+    "uid": "dzvyX"
+  },
+  {
+    "reward": "100 credits to before the mission start  and  200 credits+ 1 Perk of ANY kind + 1 Tier-7 or below companion + any rides up to 400 credits after the mission is concluded.",
+    "image": "https://images.freeimages.com/clg/images/37/372301/crown-castle-clip-art_f.jpg",
+    "author": "irugaa0",
+    "rewardType": "Other",
+    "source": "",
+    "title": "A Company's Global Lord",
+    "loca": "Any Global Lord World",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": 10,
+        "type": "Credits",
+        "value": "Reach and remain in the top 100 until the end of the mission."
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Reach and remain in the top 50 until the end of the mission."
+      },
+      {
+        "reward": "One perk of choice + Tier-5 Companion",
+        "type": "Other",
+        "value": "Reach and remain in the top 10 until the end of the mission."
+      },
+      {
+        "reward": "You castle and subordinates will be transported to you Demiplane and you gain permanent access to this world.",
+        "type": "Other",
+        "value": "Reach and remain in the top 3 until the end of the mission."
+      },
+      {
+        "reward": "one perk of choice + 1 Tier-6 or 2 tier-5 Companion",
+        "type": "Other",
+        "value": "Reach and remain in the top 1 until the end of the mission"
+      },
+      {
+        "reward": 10,
+        "type": "Credits",
+        "value": "Defeat and Conquer 3 other Lords."
+      },
+      {
+        "reward": 30,
+        "type": "Credits",
+        "value": "Defeat and Conquer 5 other Lords."
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Defeat and Conquer 10 other Lords."
+      },
+      {
+        "reward": "one perk of choice or 10 credits",
+        "type": "Other",
+        "value": "Have 1 Subordinate Lord under you"
+      },
+      {
+        "reward": "one perk of choice or 30 credits",
+        "type": "Other",
+        "value": "Have 3 Subordinate Lord under you."
+      },
+      {
+        "reward": "one perk of choice or 100 credits",
+        "type": "Other",
+        "value": "Have 10 Subordinate Lord under you -"
+      },
+      {
+        "reward": 10,
+        "type": "Credits",
+        "value": "Collect 10 Uncommon-grade recipes"
+      },
+      {
+        "reward": 30,
+        "type": "Credits",
+        "value": "Collect 10 Rare-grade recipes – 30 credits"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Collect 10 Very-rare-grade recipes"
+      },
+      {
+        "reward": "one Heritage perk",
+        "type": "Other",
+        "value": "Collect 10 Mythical-grade recipes"
+      },
+      {
+        "reward": 1,
+        "type": "IMG Tickets",
+        "value": "Collect 3 Legendary-grade recipes"
+      },
+      {
+        "reward": 500,
+        "type": "Credits",
+        "value": "Remain in this World for 5 years"
+      },
+      {
+        "reward": 1,
+        "type": "IMG Tickets",
+        "value": "Conquer most of the world"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Your Tier will be reduced to Tier-3 at the start of the mission and the maximum cap by company means is Tier-5."
+      },
+      {
+        "value": "You can select up to 3 templates or 5 power /skills to be of your use during this mission."
+      },
+      {
+        "value": "Only ONE of these templates or powers/skills can be trained to reach the max cap, all other powers /skill/templates will be capped at Tier-4."
+      },
+      {
+        "value": "This mission will take at least 2 years where the contractor will be unable to leave the world."
+      },
+      {
+        "value": "No Company Features besides Basic Bindings, Basic Lures, Talents and Defenses up to the first level will work during this time."
+      },
+      {
+        "value": "The Contractor Pocket Space/Demiplane/Dungeon will be inaccessible during the mission."
+      },
+      {
+        "value": "During the Duration of the mission the contractor will be unable to buy new companion, perks, defenses or use any of the catalog options."
+      },
+      {
+        "value": "The Contractor can select up to 3 members of his retinue to assist him during this mission. And these will be count in the maximum summoned units you can have."
+      },
+      {
+        "value": "The select members of the retinue will have their tier lowered to Tier-3 at the start of the mission."
+      },
+      {
+        "value": "The Contractor and the selected members of the retinue will be allowed to bring ONLY 1 of their signature or most trusted items, and their capabilities will also be reduced if needed."
+      },
+      {
+        "value": "Contractors with signature familiars, like pokemons/digimons or etc. will have none during this mission."
+      },
+      {
+        "value": "The contractor MUST upgrade at least 50% of the Building in his territory to Level – 5 and its Hut/House/Castle etc. to Level-10"
+      },
+      {
+        "value": "By the end of the mission, the contractor MUST be at LEAST in the Top-100 in the ranking for a minimum of 6 months."
+      },
+      {
+        "value": "If the contractor by any means purposely leave the world, or fail to reach and remain in the announced place in the ranking, this mission WILL FAIL, and no reward will be issued."
+      }
+    ],
+    "budget": 0,
+    "desc": "We in the company recently got partial access to a new kind of worlds. There hundreds of people are selected as LORDS and send to another world where they gain control and the power of summon certain creatures like, Angel, Beastmen, Dwarves, Elves, Fairies, Goblins, Humans, and etc. to collect resources, kill monsters, gather interest items and upgrade their hut into castles and create kingdoms, that will compete for resources.\n\nWe want you to infiltrate among these selected lords and collect all information you are capable for the Company futures endeavors in this world. For this mission to succeed you must stand out the other lords and reach top positions in their ranking system.  \n\nBE AWARE that due to the intrinsic laws is those worlds; there will be lots of restriction imposed in the Contractors that accepts this mission. ",
+    "uid": "uwSel"
+  },
+  {
+    "reward": "Take one heritage perk for free",
+    "image": "https://miro.medium.com/v2/resize:fit:1200/1*HqYmyIKPMF7AeDXKBEC7LA.jpeg",
+    "author": "JinxedKnight",
+    "rewardType": "Perks",
+    "source": "",
+    "title": "The Old Gods And New Gods",
+    "loca": "A Song of Ice and Fire",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "A copy of kingdom/empire as a demiplane",
+        "type": "Other",
+        "value": "Have a large kingdom/empire worship you"
+      },
+      {
+        "reward": "Take 1 copy of any first men companion",
+        "type": "Companions",
+        "value": "Be the only god the first men follow"
+      },
+      {
+        "reward": "Take a template stack of a character with a unquine power system",
+        "type": "Other",
+        "value": "Have your followers have some form of unquine power"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Be worshiped by one of the major groups"
+      },
+      {
+        "value": "Be their main god of worship"
+      }
+    ],
+    "budget": 75,
+    "desc": "Old Gods, New Gods, Drowned Gods and Storms God. \nBe the only God of your people and take them to hights not seen before.",
+    "uid": "dehpt"
+  },
+  {
+    "reward": "Added Potential for one ability from the chosen world. As a reminder, a single purchase only grants as much potential as an average character, not the protagonist. Rare abilities are still available.",
+    "image": "https://i.redd.it/5op4an9qiawa1.jpg",
+    "author": "Baron von Blankenbiller",
+    "rewardType": "Perks",
+    "source": "",
+    "title": "Bad End Aversion",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Quick",
+    "objectives": [
+      {
+        "reward": "Communication Talent or four credits.",
+        "type": "Perks",
+        "value": "Give an inspiring speech which genuinely spurs the Hero to greater heights."
+      },
+      {
+        "reward": 6,
+        "type": "Credits",
+        "value": "Fully heal the Hero and their party of all injuries."
+      },
+      {
+        "reward": 6,
+        "type": "Credits",
+        "value": "Fully restore the Hero and their party to full   Mana or equivalent internal energy."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Go to a world with a canon that either has at least one bad ending or a means to game over."
+      },
+      {
+        "value": "You will arrive with the minimum time required to avert this ending, depending on your tier and the situation you are averting. From the instant before a fatal sword stroke, to a few days before you could no longer talk people out of poor choices."
+      },
+      {
+        "value": "Do not disrupt the timeline beyond what it takes to stop the Bad Ending. So no leaving hyper tech ai to uplift the planet, but a manual on how to get the Good Ending is okay."
+      },
+      {
+        "value": "No Captures of people required for the Good Ending. Irrelevant side characters and dead people you want to revive are fine, but do not let on what you did."
+      },
+      {
+        "value": "Your time after you succeed is limited to the time you led in with. Thus, if you had three hours to turn the tide of a battle, you will have three hours to hang out after it."
+      }
+    ],
+    "budget": 250,
+    "desc": "Did you know? It’s only a conceit of the narrative that the Hero always triumphs, that the canon ending is the one where the villain died and the protagonist lived.\n\nOutside of Narrative Causality, most people die when repeatedly risking their lives in life or death situations.\n\nFix it, please?",
+    "uid": "lKuYK"
+  },
+  {
+    "reward": 1,
+    "image": "https://blenderartists.org/uploads/default/optimized/4X/8/5/b/85bfb8bd2a6dec766192948a3b0c310aae828163_2_846x750.jpeg",
+    "author": "madgamer",
+    "rewardType": "IMG Tickets",
+    "source": "",
+    "title": "Build a small world!",
+    "loca": "Skyblock Challenge",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "Sexual Calibration or 2 credits",
+        "type": "Perks",
+        "value": "\"Christen\" your new demiplane"
+      },
+      {
+        "reward": "Communication Talent or 10 credits",
+        "type": "Perks",
+        "value": "Capture and bring back your first \"citizen\""
+      },
+      {
+        "reward": "Normalcy DLC or 10 credits",
+        "type": "Perks",
+        "value": "Get your number of \"Citizens\" up to at least 10"
+      },
+      {
+        "reward": "Administrative Talent or 10 credits",
+        "type": "Perks",
+        "value": "Get your number of \"Citizens\" up to at least 50"
+      },
+      {
+        "reward": "Warranty Plan or 160 credits",
+        "type": "Perks",
+        "value": "Get your number of \"Citizens\" up to at least 100"
+      },
+      {
+        "reward": "Express Delivery or 640 credits",
+        "type": "Perks",
+        "value": "Get your number of \"Citizens\" up to at least 500"
+      },
+      {
+        "reward": "Minecraft creatures begin to spawn (toggleable)",
+        "type": "Other",
+        "value": "Grow your world to at least a 3x3 square"
+      },
+      {
+        "reward": "2 T4 companion tickets for anyone with Crafter tag",
+        "type": "Companions",
+        "value": "Buy 10 skyblocks"
+      },
+      {
+        "reward": "3 T5 companion tickets for anyone with Healer tag",
+        "type": "Companions",
+        "value": "Buy 50 skyblocks"
+      },
+      {
+        "reward": "4 T6 companion tickets for anyone with Ruler tag",
+        "type": "Companions",
+        "value": "Buy 100 skyblocks"
+      },
+      {
+        "reward": "5 T7 companion tickets for anyone with Deity tag",
+        "type": "Companions",
+        "value": "Buy 200 skyblocks"
+      },
+      {
+        "reward": "A new Skyblock or 10 credits",
+        "type": "Other",
+        "value": "Use ALL of a skyblock surface for ONE specific thing.(repeatable once per topic exp: farming, training, housing, storage, fishery, barn, coop, ect.)"
+      },
+      {
+        "reward": "Engineering Talent or 10 credits",
+        "type": "Perks",
+        "value": "Completely repurpose and reuse a skyblock including sandstone base."
+      },
+      {
+        "reward": "Land Talent or 30 credits",
+        "type": "Perks",
+        "value": "Grow 5+ non-standard plants on skyblock. (Freely given trees not included)"
+      },
+      {
+        "reward": "Wild Talent or 5 credits",
+        "type": "Perks",
+        "value": "Build a house capable of housing 5+ people"
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Build a house capable of housing 50+ people"
+      },
+      {
+        "reward": "Science Talent or 10 credits",
+        "type": "Perks",
+        "value": "Get your tech level up to Industrial revolution standard"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Only meant for Minecraft Skyblock Challenge by Shifty-Sword"
+      },
+      {
+        "value": "\"World\" only considered big enough after 100 Skyblocks"
+      },
+      {
+        "value": "Minimum number of citizens must exceed 50"
+      }
+    ],
+    "budget": 0,
+    "desc": "You have taken up the Skyblock Challenge And need some help getting going. Lets get started on the ultimate goal of skyblock BUILD a \"small\" WORLD where you and your family/waifu/citizen/familiars want for nothing.",
+    "uid": "sQdsU"
+  },
+  {
+    "reward": "\"Instant capture of the raised Alter-Egos, and each Alter-Ego retains their personality after their individual ascension",
+    "image": "https://i.imgur.com/hqIJ3kB.jpg",
+    "author": "A.O",
+    "rewardType": "Other",
+    "source": "",
+    "title": "The Return Of Amaterasu x9",
+    "loca": "Danmachi",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "TS I&II of the Deity variety or a T9 Deity Waifu",
+        "type": "Other",
+        "value": "Find and raise all nine of the Alter-Egos to Level 10"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Contractor must be T4 or lower, or their abilities will be lowered to Level 1 Adventure"
+      }
+    ],
+    "budget": 0,
+    "desc": "Contactor, we have discovered a worldline in which the Goddess Amaterasu was wounded in a battle in Tenkai and was divided into nine parts in her attempt to save herself, falling into the Mortal Realm in the form of the Renard species. This situation bears a striking resemblance to the fate we are familiar with within the timeline of the Fate multiverse. Locate as many of these fragments as possible and elevate them to Level 10 Adventures to restore their divinity and memories",
+    "uid": "fbfjV"
+  },
+  {
+    "reward": 250,
+    "image": "https://img3.gelbooru.com//samples/07/ff/sample_07ff6dc6d7531128cdd01916a16df534.jpg",
+    "author": "wowow2264",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "An Axe Wielding Maniac",
+    "loca": "Naruto",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Sakura was useful for something other than being a meat shield during the wave arc."
+      },
+      {
+        "reward": 25,
+        "type": "Credits",
+        "value": "Sakura makes it to the finals of the chunin exams on her own merits."
+      },
+      {
+        "reward": "10 Credits or a pair of custom axes on par with the likes of Samehada.",
+        "type": "Other",
+        "value": "Sakura uses dual axes as her main method of combat."
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Be Sakura Haruno yourself and do it yourself."
+      },
+      {
+        "reward": "1 IMG Ticket and the full power and skillset of the original Sakura Haruno and one other Naruto character of your choice.",
+        "type": "Other",
+        "value": "Be Sakura Haruno yourself and complete every optional objective without talents or templates and with only native companions. If certain events do not happen due to changes in canon and thus prevent completion of an optional objective then you are excused."
+      },
+      {
+        "reward": "25 Credits, double that if she prevents him from leaving in the first place.",
+        "type": "Other",
+        "value": "Sakura drags Sasuke's ass back during the retrieval mission herself, or better yet, stops him from leaving altogether."
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Have Sakura make a difference during the Konoha Crush. Examples being: Defeating at least three nameless enemy ninja or one named enemy ninja, defeating with an enemy summon, and so on."
+      },
+      {
+        "reward": "40 credits for beating either, 100 if she beats both in the same match.",
+        "type": "Other",
+        "value": "Have Sakura beat Naruto or Sasuke in a fight before the timeskip. Bonus points if she beats both at the same time. Can only be completed once."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Sakura Haruno must no longer be a damsel in distress and capable of winning against Sasuke or Naruto by the end of the timeskip as Naruto returns or the equivalent if such an event does not come to pass."
+      },
+      {
+        "value": "Sakura Haruno can only be trained in her native universe powers and techniques and any non native training her only count as T7 for the purpose of talents."
+      }
+    ],
+    "budget": 0,
+    "desc": "Did you know that originally Sakura Haruno was meant to be an axe wielding badass? For \"reasons\" this never came to be and we all suffered for it. Your mission, should you choose to accept it, is to make this a reality and make sure that she can go toe to toe with her teammates and isn't so useless that an Uchiha born from her needs glasses!\n\nAhem. Anyway, you may start up to a year prior to her graduation from ninja academy and your deadline is the end of the timeskip when Naruto returns to Konoha. Oh, and to prove that this is all her own strength, you cannot teach her anything from outside of the universe and for the purpose of talents, any non native she trains under will only qualify for a maximum of T7 for the purposes of talents. Wouldn't want someone like Goku or Saitama turning her into a planet buster in a single afternoon due to talent slingshotting now would we?",
+    "uid": "Sadyu"
+  },
+  {
+    "reward": "Dragon Heart",
+    "image": "https://cdn.imgchest.com/files/b49zcozl3vy.jpg",
+    "author": "HistoricalHijinks",
+    "rewardType": "Perks",
+    "source": "",
+    "title": "Dragonborn, Body and Soul",
+    "loca": "The Elder Scrolls",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "Dragon Scale",
+        "type": "Perks",
+        "value": "Capture Two Unique Named Dragons"
+      },
+      {
+        "reward": "Dragon Aura",
+        "type": "Perks",
+        "value": "Capture Three Unique Named Dragons"
+      },
+      {
+        "reward": "Dragon Thrall",
+        "type": "Perks",
+        "value": "Capture Four Unique Named Dragons"
+      },
+      {
+        "reward": "Dragon Blood",
+        "type": "Perks",
+        "value": "Capture Five Unique Named Dragons"
+      },
+      {
+        "reward": "Treasure Hoard",
+        "type": "Perks",
+        "value": "Capture Six Unique Named Dragons"
+      },
+      {
+        "reward": "Dragon Cabin",
+        "type": "Perks",
+        "value": "Capture Seven Unique Named Dragons"
+      },
+      {
+        "reward": "Dragon Bifurcation",
+        "type": "Perks",
+        "value": "Capture Eight Unique Named Dragons"
+      },
+      {
+        "reward": "Dragon Break",
+        "type": "Perks",
+        "value": "Capture Nine Unique Named Dragons"
+      },
+      {
+        "reward": "Double Dragon",
+        "type": "Perks",
+        "value": "Capture Eleven Unique Named Dragons"
+      },
+      {
+        "reward": "Elder Dragon",
+        "type": "Perks",
+        "value": "Capture Thirteen Unique Named Dragons"
+      },
+      {
+        "reward": "Template Stack of The Last Dragonborn or Miraak for all current and subsequent Retinue Members",
+        "type": "Perks",
+        "value": "Capture Alduin"
+      },
+      {
+        "reward": "A replica of The Throat of the World and High Hrothgar for your Sweet Home",
+        "type": "Other",
+        "value": "Spare Odahviing and Paarthurnax and have them join you willingly!"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You MUST have Deep Weave, or an ability with a similar effect."
+      },
+      {
+        "value": "You MUST have Possessed or Substituted either The Last Dragonborn or Miraak. Or, you must have a Template Stack of The Last Dragonborn or Miraak"
+      },
+      {
+        "value": "You MUST Capture and Deep Weave (or use an ability with a similar effect) the quest targets for them to count towards completion."
+      },
+      {
+        "value": "Generic Dragons DO NOT count. Only the dragons given proper names in the game of Skyrim itself count."
+      },
+      {
+        "value": "As with all Deep Weave targets, selling the dragons after this causes you to lose everything gained, including the Heritage Perks granted by this quest."
+      },
+      {
+        "value": "The capture MUST be completed with the standard Shroud Binding! Quick-Capture effects like Treasure Hoard are ineligeble!"
+      }
+    ],
+    "budget": 240,
+    "desc": "For much of history, being a Dragonborn conveyed a certain status. That you and your bloodline were chosen by, and had great favor with, Akatosh himself. No small thing, but nothing greater either.\nBut for a bare handful, to be Dragonborn means so much more. It means to have the soul of a dragon, to be a child of Akatosh clad in mortal flesh. A demigod, by every definition of the word.\nTo be a dragon is to conquer, to rule, to covet. To be a dragonborn is to take all that a dragon is for yourself and grow mightier for it.\nThe world of Skyrim holds many dragons, but only a few were unique. Only a few were named. Take their power for yourself, and rise from mortality to godhood.\nCapture One Unique Named Dragon",
+    "uid": "ZDJEW"
+  },
+  {
+    "reward": "All upgrades until the first purchas of Sweet Home",
+    "image": "https://thecinemaholic.com/wp-content/uploads/2018/08/boku-wa-tomodachi.jpg",
+    "author": "A.O",
+    "rewardType": "Perks",
+    "source": "",
+    "title": "Slice of life - Shortage",
+    "loca": "Generic",
+    "lewd": true,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "All Roads Lead to Home",
+        "type": "Perks",
+        "value": "Merge with a Tier 5+ World"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "The contractor must be new to the companny"
+      }
+    ],
+    "budget": 0,
+    "desc": "We at the company understand that contractors wish to make optimal choices in their builds but we still need to keep some \"sponsors\" entertained. As such we are willing to provide some incentives to have you start in a tier 1 or 2 world.\n\nFirst, we will give you Universal Calibration for free! Amazing right?! Now you can better plan your build potential.\n\nSecond, we will provide a progress bar similar to the ones specified in our Company perks. This progress bar will track the action in your world and how close you are to the end of the storyline. Once completed we will merge your next world choice with the present one. Expect some limitations and or changes once you make your choices.",
+    "uid": "GBldL"
+  },
+  {
     "reward": "200",
     "image": "https://cdn.imgchest.com/files/myd5clm6254.png",
     "author": "Dante Starkiller",
@@ -196,11 +923,12 @@
   },
   {
     "reward": "A choice between the Lure ‘Fairy feast’, the Talent ‘Aesthetic Talent’, or 5 points.",
-    "image": "https://cdn.donmai.us/sample/71/93/__rosa_and_hilda_pokemon_and_1_more_drawn_by_the_only_shoe__sample-7193d73fcc03810adf2665f4a62713e4.jpg",
+    "image": "https://cdn.imgchest.com/files/myd5clakdv4.jpg",
     "author": "One_Pun",
     "rewardType": "Other",
     "source": "",
     "title": "Stop to smell the roses.",
+    "uid": "xEaDo",
     "loca": "Generic",
     "lewd": false,
     "scope": "Quick",
@@ -234,8 +962,7 @@
       }
     ],
     "budget": 0,
-    "desc": "Hello Contractor, we have a rather unusual assignment for you today. \n\nI think it's time for you to take a break. I've seen the toll that your missions take on you. You need to decompress, to recharge your batteries. Otherwise, you'll burn out. While that's something the company can afford, having my entertai- I mean, having one of our top agents get worse because because you don’t take care of your own mental state, would be disappointing.\n\nYour mission, should you choose to accept it, is to embark on a journey of relaxation, connection, and  embrace the moments of respite that life offers.\nTake respite from the battlefield and embrace the tranquility that awaits. Whether it's a leisurely stroll through a natural preserve, visiting a famous landmark steeped in history, a cherished moment shared with a loved one, or even to lie down and allow yourself the opportunity to unwind under the shade of a tree.\nSeize the chance to revel in the simple joys of life, for it is in these moments that true fulfillment is found. Embrace the beauty of the moment. Let go of worries, indulge in relaxation, ignite romance, and create timeless memories. Step into the richness of the present and make every moment count.\n\nAfter all, even the most hardened agents deserve a little Rest and Recovery now and then.",
-    "uid": "xEaDo"
+    "desc": "Hello Contractor, we have a rather unusual assignment for you today. \n\nI think it's time for you to take a break. I've seen the toll that your missions take on you. You need to decompress, to recharge your batteries. Otherwise, you'll burn out. While that's something the company can afford, having my entertai- I mean, having one of our top agents get worse because you don’t take care of your own mental state, would be disappointing.\n\nYour mission, should you choose to accept it, is to embark on a journey of relaxation, connection, and  embrace the moments of respite that life offers.\nTake respite from the battlefield and embrace the tranquility that awaits. Whether it's a leisurely stroll through a natural preserve, visiting a famous landmark steeped in history, a cherished moment shared with a loved one, or even to lie down and allow yourself the opportunity to unwind under the shade of a tree.\nSeize the chance to revel in the simple joys of life, for it is in these moments that true fulfillment is found. Embrace the beauty of the moment. Let go of worries, indulge in relaxation, ignite romance, and create timeless memories. Step into the richness of the present and make every moment count.\n\nAfter all, even the most hardened agents deserve a little Rest and Recovery now and then."
   },
   {
     "reward": 150,
@@ -5305,9 +6032,10 @@
     "rewardType": "Credits",
     "source": "",
     "title": "An Angel From The Skies",
+    "uid": "GlzER",
     "loca": "Generic",
     "lewd": false,
-    "scope": "Standard",
+    "scope": "Grand",
     "objectives": [
       {
         "reward": 30,
@@ -5426,8 +6154,7 @@
       }
     ],
     "budget": 300,
-    "desc": "There is plenty of evil out there contractor, well technically good and evil are just an ideological creation of the mortal minds, but still! There are plenty of messed up things out there, and of course there are many contractors that are completely uncaring of all this, what about you? want to have some fun and be a pillar of goodness (or well at least in appearance)? , an agent of divine will and judgement, that is what you shall become, an Angel ready to build his own Heavenly Host.\n\nNow Let's talk about requirements:\n|Only avaible at Chargen|\n|The only Patrons you may have are \"First Contractor\", \"Death\", \"Archangel of Benevolence\"|\n|You must have the heritage perk \"The Unquiet Grave\" or \"Baby Take My Hand\"|\n|You must have the heritage perk \"Harbinger of Deаth\"|\n|Must choose a world that has Demons at Chargen|\n\nAs for the objective of this mission, you must create an heaven and fill it with deserving souls, and build a mighty host of Angels to watch over your realm and spread your influence to multiple worlds.\n\nUpon accepting this mission you shall receive the following:\n\n-Divine will and power shall be bestown upon you, (take the apperance of an angel customization is up to you) making you a being that exists beyond the mortals and their realms, no being classifiable as \"Mortal\" may harm you or any of your Heavenly host, this of course also applies to their creations, but even the Divine has it's weaknesses, in your case Demons or related beings, they will be you greatest nemesis and will be capable of harming you normally and kill you, beware that even a powerfull God/Divine being may kill you, but at the same time no matter if they are Gods Demons or Mortals or their degree of immortallity, a fatal strike from you will bring them a final death.\n\n-You and any other Angel of your host will have the ability to hide your angelic appearance and appear as race of your choice, of course this won't grant you any of said race abilities.\n\n-If you had the perk \"The Unquiet Grave\" before accepting this mission, the range of any totem you will make will cover an entire planet, the afterlife that you may build with this perk must always appear as heavenly, basically it must look like a really nice place to spend eternity in, and of course no soul can be tortured there, while you are in this afterlife you will passively learn any usefull skill or information any soul may possess.\n\n-Only good souls may reside in your afterlife, it will stend to you to define what defines \"Good\", maybe you can stretch the definition a bit and allow somene like the punisher in, but never someone like the joker, so where do the Evil souls go?T his souls may reside in some corner of the realm in a state of torpor till you decide what exactly to do with them, but they may not reside in your afterlife for long or they will be erased.\n\n-If you had the perk \"Baby Take My Hand\" before accepting this mission, you will now have a sixth sense telling you when someone imortant usefull or with potential is dying, and give you the ability to appear at their side instantly from there the perk will continue to work as for standard procedure. Any being turned Psychopomp through this perk will always take an angelic appearance.\n\n-Gain the ability \"Evil Slayer\", now whenever you end the life or unlife of an Evil being all his power will be purified and added to yours, but this dosen't grant you mastery over any new ability you may gain, it won't be any weaker than the original but you must train in it's use if you want to use it as efficiently as it's previous user. In addition if the being you killed is also a demon or demonically corrupted, your gains will be doubled and you will become slightly more resistent to the same type of being you killed.\n\n-Gain the Lure \"Devout Faithfull\" all being that belive in a religion will look at you as a divine incarnation of their God/s, the longer the exposure to your presence the more their reverence and respect for you and your will, you will also be able to switch the effect of this lure to produce effect of love and infatuation for specific targets.\n\n-While you are in your \"Harbinger Form\" if you are fighting \"Evil\" beings you tier is rised by 1 till the end of the fight, additionally your \"Harbinger Weapons\" ignore any defense this evil beings may possess, upon first activation of this form receive a weapon of your choice.\n\n-When a member of the Heavenly host dies they will reappear in your Heaven they won't be able to leave, but will return to \"Life\" an be free to leave after a number of days equal to double their tier.\n\n-Lastly you now emit a Godly aura that scales in power and range with your tier, it can be toggled on and off, it's effects changes with your intention, want peoples groveling at your feets in adoration, or feel hopefull and at peace, you can do it.",
-    "uid": "GlzER"
+    "desc": "There is plenty of evil out there contractor, well technically good and evil are just an ideological creation of the mortal minds, but still! There are plenty of messed up things out there, and of course there are many contractors that are completely uncaring of all this, what about you? want to have some fun and be a pillar of goodness (or well at least in appearance)? , an agent of divine will and judgement, that is what you shall become, an Angel ready to build his own Heavenly Host.\n\nNow Let's talk about requirements:\n|Only avaible at Chargen|\n|The only Patrons you may have are \"First Contractor\", \"Death\", \"Archangel of Benevolence\"|\n|You must have the heritage perk \"The Unquiet Grave\" or \"Baby Take My Hand\"|\n|You must have the heritage perk \"Harbinger of Deаth\"|\n|Must choose a world that has Demons at Chargen|\n\nAs for the objective of this mission, you must create an heaven and fill it with deserving souls, and build a mighty host of Angels to watch over your realm and spread your influence to multiple worlds.\n\nUpon accepting this mission you shall receive the following:\n\n-Divine will and power shall be bestown upon you, (take the apperance of an angel customization is up to you) making you a being that exists beyond the mortals and their realms, no being classifiable as \"Mortal\" may harm you or any of your Heavenly host, this of course also applies to their creations, but even the Divine has it's weaknesses, in your case Demons or related beings, they will be you greatest nemesis and will be capable of harming you normally and kill you, beware that even a powerfull God/Divine being may kill you, but at the same time no matter if they are Gods Demons or Mortals or their degree of immortallity, a fatal strike from you will bring them a final death.\n\n-You and any other Angel of your host will have the ability to hide your angelic appearance and appear as race of your choice, of course this won't grant you any of said race abilities.\n\n-If you had the perk \"The Unquiet Grave\" before accepting this mission, the range of any totem you will make will cover an entire planet, the afterlife that you may build with this perk must always appear as heavenly, basically it must look like a really nice place to spend eternity in, and of course no soul can be tortured there, while you are in this afterlife you will passively learn any usefull skill or information any soul may possess.\n\n-Only good souls may reside in your afterlife, it will stend to you to define what defines \"Good\", maybe you can stretch the definition a bit and allow somene like the punisher in, but never someone like the joker, so where do the Evil souls go?T his souls may reside in some corner of the realm in a state of torpor till you decide what exactly to do with them, but they may not reside in your afterlife for long or they will be erased.\n\n-If you had the perk \"Baby Take My Hand\" before accepting this mission, you will now have a sixth sense telling you when someone imortant usefull or with potential is dying, and give you the ability to appear at their side instantly from there the perk will continue to work as for standard procedure. Any being turned Psychopomp through this perk will always take an angelic appearance.\n\n-Gain the ability \"Evil Slayer\", now whenever you end the life or unlife of an Evil being all his power will be purified and added to yours, but this dosen't grant you mastery over any new ability you may gain, it won't be any weaker than the original but you must train in it's use if you want to use it as efficiently as it's previous user. In addition if the being you killed is also a demon or demonically corrupted, your gains will be doubled and you will become slightly more resistent to the same type of being you killed.\n\n-Gain the Lure \"Devout Faithfull\" all being that belive in a religion will look at you as a divine incarnation of their God/s, the longer the exposure to your presence the more their reverence and respect for you and your will, you will also be able to switch the effect of this lure to produce effect of love and infatuation for specific targets.\n\n-While you are in your \"Harbinger Form\" if you are fighting \"Evil\" beings you tier is rised by 1 till the end of the fight, additionally your \"Harbinger Weapons\" ignore any defense this evil beings may possess, upon first activation of this form receive a weapon of your choice.\n\n-When a member of the Heavenly host dies they will reappear in your Heaven they won't be able to leave, but will return to \"Life\" an be free to leave after a number of days equal to double their tier.\n\n-Lastly you now emit a Godly aura that scales in power and range with your tier, it can be toggled on and off, it's effects changes with your intention, want peoples groveling at your feets in adoration, or feel hopefull and at peace, you can do it."
   },
   {
     "reward": "100 credits for each Mask collected and free access to the world of The Elder Scrolls: Skyrim",
@@ -6340,7 +7067,7 @@
     "uid": "oThjp"
   },
   {
-    "reward": 2,
+    "reward": 1,
     "image": "https://i.pinimg.com/564x/ee/62/53/ee6253b0b7ff7af806f767aa11b6e647.jpg",
     "author": "Yeveiras",
     "rewardType": "IMG Tickets",
@@ -6349,12 +7076,12 @@
     "uid": "dBrOl",
     "loca": "Generic",
     "lewd": false,
-    "scope": "Standard",
+    "scope": "Grand",
     "objectives": [
       {
         "reward": 30,
         "type": "Credits",
-        "value": "Kill the ruler of a country/nation ecc."
+        "value": "Kill the ruler of a country/nation etc."
       },
       {
         "reward": 15,
@@ -6409,7 +7136,7 @@
       {
         "reward": 100,
         "type": "Credits",
-        "value": "Build a Statue of yourself in 10 Nations/Kingdoms ecc.."
+        "value": "Build a Statue of yourself in 10 Nations/Kingdoms etc.."
       },
       {
         "reward": "Your talents power is multiplied by a number equal to the defeated strong and admired member of an enemy army.",
@@ -6424,7 +7151,7 @@
       {
         "reward": "10 to 100 credits.",
         "type": "Other",
-        "value": "Humiliate your enemy, the greater the humiliation the greater the reword.(repeatable)"
+        "value": "Humiliate your enemy, the greater the humiliation the greater the reward.(repeatable)"
       },
       {
         "reward": 100,
@@ -6468,7 +7195,7 @@
       }
     ],
     "budget": 250,
-    "desc": "A Demon lord, fierce, powerfull, chaotic, invading worlds with his neverending armies, destroying peace and capturing beautifull women across the globe, who hasn't heard of such characters in stories, what if it was made a reality? Contractor one of our dearest clients wants this fantasy realized, will you accept the challenge?\n\nTo accept this mission you must be a Demon/Monster or have a template of one such character, anything that can be categorized as demonic or monster is valid (examples are Vampires, Devils, Cursed Spirits ecc...).\nAfter accepting this mission you will be subject to the following restrictions:\n-The only \"Template Stacking\" you will be able to buy are those from Demonic/Monster characters\n-All \"Template Stacking\" you had before accepting this mission that are not from Demonic/Monster\ncharacters will be sealed, and you won't be able to acces their powers untill mission completition\n-Only Demonic/Monster Retinue members may follow you in new worlds untill mission completition\nOther Retinue members may still reside in your demiplane but won't be able to access other worlds\n-You won't be able to buy any companions, but receiving them through mission rewards is still possible\n-You may not play the part of a Hero while this mission is active\n-The only Heritage perks avaible for purchase while this mission is active are those from Dragon, Outsider Psychopomp and Wendigo.\n-Upon accepting the mission you shall choose one world, you will be transported there and the mission will start(If taken at Chargen this does not apply)\n-You won't be able the leave the new world untill mission completition\n\nYour role to play in this mission, as stated before, will be that of a warmongering Demon lord with a desire for women and conquest, to be more specific to complete this mission you are expected to reach this objectives:\n-Wage war against any government in the world\n-Destroy the current power that governs the world (or all of them if there is more than one)\n-Establish yourself as the ruler of the world\n-Capture at least 20% of the female targets of your world present in the catalog\n-Make sure your power is both feared and revered by most\n-Build a mighty capital and palace for yourself\n-Rule for at least 10 years\n\nYou have been told what is expected of you and what restrictions you will suffer, now it's time to see what \"Tools\" you shall receive:\n-What is a Demon lord without his armies? Receive the ability \"Demonic Minion Creation\" you will be able to create monsters and demons that will be completely devout and loyal to you, they may range from monsters with the intelligence of a mere beast, to humanoid beings with real sentience and intellect, their power will be one tier below yours or even lower if you wish. Their creation will be near instantaneous and energy free but their numbers will be limited, you may create only 1 minion for square kilometer under your rule (demiplane, dungeons ecc.. don't count for this ability), dead minions may be brought back to life after a period of 24h from their death, at the start you may be able to do so only once a day, but the more you do so the more times in a day you may bring back a minion form death\n-Receive a new lure \"A Devil's Charm\" The more proof of your Lust, Greed, Pride ecc.. that a potential waifu witnesses the more attracted to you they will be, to a point where they will simply ignore your potentially evil attitude\n-Receive the ability \"Stats Progression\" now all your current capabilities will be quantified in numeric stats and their scale will be in base of the \"Stats\" of other being in the world you are currently on, you may see your stats and that of your enemies and retinue if you possess the perks \"HUD\" and \"Toggle\". This ability also applies to Demonic/Monster retinue members that possess \"HUD\" and \"Toggle\"\n-Receive the ability \"Vulture\" upon the death of a being caused by you/retinue member/minion, you will be presented with the stats of the dead and will be able to choose one of said stats (Example HP, mana, Haki ecc) that will be added to your own of the same type\n\nLastly here are some condition you may take under cosideration to make the story a bit more interesting for our client, of course you shall be greatly rewarded, with 50 credits for every option taken:\n-Take this mission during Chargen phase with Origin \"Drop-in\", and the starting world has a unique power system (example are haki, cursed energy ecc...)you may take one related ability\n-Demon lord is too mainstream it seems, what about Demon Queen? Be a woman or at least Futa\n-The choosen world has a main character that relies on the power of friendship or even sillier like the power of boobs, beat him one way or another, you shall be paid in advance but if you fail to acomplish this objective the payment will be detracted from your funds\n-The choosen world has a overlord or secret ruler, defeat them\n-Use Tantric Arts as your binding method"
+    "desc": "A Demon lord, fierce, powerfull, chaotic, invading worlds with his neverending armies, destroying peace and capturing beautifull women across the globe, who hasn't heard of such characters in stories, what if it was made a reality? Contractor one of our dearest clients wants this fantasy realized, will you accept the challenge?\n\nTo accept this mission you must be a Demon/Monster or have a template of one such character, anything that can be categorized as demonic or monster is valid (examples are Vampires, Devils, Cursed Spirits ecc...).\nAfter accepting this mission you will be subject to the following restrictions:\n-The only \"Template Stacking\" you will be able to buy are those from Demonic/Monster characters\n-All \"Template Stacking\" you had before accepting this mission that are not from Demonic/Monster\ncharacters will be sealed, and you won't be able to acces their powers untill mission completition\n-Only Demonic/Monster Retinue members may follow you in new worlds untill mission completition\nOther Retinue members may still reside in your demiplane but won't be able to access other worlds\n-You won't be able to buy any companions, but receiving them through mission rewards is still possible\n-You may not play the part of a Hero while this mission is active\n-The only Heritage perks avaible for purchase while this mission is active are those from Dragon, Outsider Psychopomp and Wendigo.\n-Upon accepting the mission you shall choose one world, you will be transported there and the mission will start(If taken at Chargen this does not apply)\n-You won't be able the leave the new world untill mission completition\n\nYour role to play in this mission, as stated before, will be that of a warmongering Demon lord with a desire for women and conquest, to be more specific to complete this mission you are expected to reach this objectives:\n-Wage war against any government in the world\n-Destroy the current power that governs the world (or all of them if there is more than one)\n-Establish yourself as the ruler of the world\n-Capture at least 20% of the female targets of your world present in the catalog\n-Make sure your power is both feared and revered by most\n-Build a mighty capital and palace for yourself\n-Rule for at least 10 years\n\nYou have been told what is expected of you and what restrictions you will suffer, now it's time to see what \"Tools\" you shall receive:\n-What is a Demon lord without his armies? Receive the ability \"Demonic Minion Creation\" you will be able to create monsters and demons that will be completely devout and loyal to you, they may range from monsters with the intelligence of a mere beast, to humanoid beings with real sentience and intellect, their power will be one tier below yours or even lower if you wish. Their creation will be near instantaneous and energy free but their numbers will be limited, you may create only 1 minion for square kilometer under your rule (demiplane, dungeons etc.. don't count for this ability), dead minions may be brought back to life after a period of 24h from their death, at the start you may be able to do so only once a day, but the more you do so the more times in a day you may bring back a minion form death\n-Receive a new lure \"A Devil's Charm\" The more proof of your Lust, Greed, Pride etc.. that a potential waifu witnesses the more attracted to you they will be, to a point where they will simply ignore your potentially evil attitude\n-Receive the ability \"Stats Progression\" now all your current capabilities will be quantified in numeric stats and their scale will be in base of the \"Stats\" of other being in the world you are currently on, you may see your stats and that of your enemies and retinue if you possess the perks \"HUD\" and \"Toggle\". This ability also applies to Demonic/Monster retinue members that possess \"HUD\" and \"Toggle\"\n-Receive the ability \"Vulture\" upon the death of a being caused by you/retinue member/minion, you will be presented with the stats of the dead and will be able to choose one of said stats (Example HP, mana, Haki etc) that will be added to your own of the same type\n\nLastly here are some condition you may take under cosideration to make the story a bit more interesting for our client, of course you shall be greatly rewarded, with 50 credits for every option taken:\n-Take this mission during Chargen phase with Origin \"Drop-in\", and the starting world has a unique power system (example are haki, cursed energy etc...)you may take one related ability\n-Demon lord is too mainstream it seems, what about Demon Queen? Be a woman or at least Futa\n-The choosen world has a main character that relies on the power of friendship or even sillier like the power of boobs, beat him one way or another, you shall be paid in advance but if you fail to acomplish this objective the payment will be detracted from your funds\n-The choosen world has a overlord or secret ruler, defeat them\n-Use Tantric Arts as your binding method"
   },
   {
     "reward": 2,
@@ -8008,9 +8735,10 @@
     "rewardType": "Other",
     "source": "",
     "title": "Endbringer Invasion Imminent",
+    "uid": "sWAHJ",
     "loca": "Generic",
     "lewd": false,
-    "scope": "Grand",
+    "scope": "Standard",
     "objectives": [
       {
         "reward": 100,
@@ -8034,8 +8762,7 @@
       }
     ],
     "budget": 600,
-    "desc": "Looking for some cheap credits, want an extra challenge in your world or Mabey you just want to see people suffer. Well have I got a proposition for you, you see the problem we have is with all the contractors that go to worm is when they catch and sell there version of the Endbringers no one is willing to buy them, so the company has seen fit to repurpose them in to a mission for our entertainment, and by this I mean we are going to give you 500 additional credits in exchange for having to suffer from a random Endbringer attack somewhere in your world every 3 months till the original 3 Endbringers (Behemoth, Leviathan and the Simurgh) are killed. \n\nOh and p.s. we will pay you 100 credits for each one you kill",
-    "uid": "sWAHJ"
+    "desc": "Looking for some cheap credits, want an extra challenge in your world or Mabey you just want to see people suffer. Well have I got a proposition for you, you see the problem we have is with all the contractors that go to worm is when they catch and sell there version of the Endbringers no one is willing to buy them, so the company has seen fit to repurpose them in to a mission for our entertainment, and by this I mean we are going to give you 500 additional credits in exchange for having to suffer from a random Endbringer attack somewhere in your world every 3 months till the original 3 Endbringers (Behemoth, Leviathan and the Simurgh) are killed. \n\nOh and p.s. we will pay you 100 credits for each one you kill"
   },
   {
     "reward": 80,
@@ -10036,15 +10763,16 @@
     "uid": "uExjd"
   },
   {
-    "reward": 2,
+    "reward": 1,
     "image": "https://i.pinimg.com/564x/54/f6/b6/54f6b6f2ae1a943856acc5d8479a1a9c.jpg",
     "author": "Yeveiras",
     "rewardType": "IMG Tickets",
     "source": "",
     "title": "One Hell Of A Chaotic World",
+    "uid": "UWbgj",
     "loca": "Generic",
     "lewd": false,
-    "scope": "Standard",
+    "scope": "Grand",
     "objectives": [
       {
         "reward": "The holy grail gets purified, and you obtain one True Magic of your choice.",
@@ -10179,8 +10907,7 @@
       }
     ],
     "budget": 1110,
-    "desc": "There are so many worlds out there with even more unique characteristics, the world you choose to start your grand adventure is very important contractor, but some of our clients want a more \"Chaotic\" start, one where many worlds are homogeneously combined to create a new and more entertaining expirience.\nIf you accept this mission Contracor your starting world will be a fusion between the following worlds:\n-Nasuverse\n-Bleach\n-High School DxD\n-DC Comics\n-Invincible\n-Jujutsu Kaisen\n-World Of Darkness\n\nThe main casts, unique cities and plotlines of each world will be present and adapted to circumstances if needed.\nTo give a reference for the adversities you may face, here are some plot point you should know:\n-The 5th grail war will happen in the near future.\n-Ichigo Kurosaki will unlock his Soul Reaper powers between 3 to 6 months after your arrival.\n-Hyoudou Issei will be reincarnated as a devil a month after your arrival.\n-The Justice League has just been formed after repelling Darkseid.\n-Mark Grayson will unlock his Viltrumite powers 2 months after your arrival.\n-Yuji Itadori has just started his training.\n-War between the Ikhwan al-Safa, the Judges, and the Knights of St.George will erupt in the Middle East one year after your arrival.\nThe times of events may change depending on the other missions you accept.\n\nDo keep in mind that some threats have been upscaled, for example the god from World of Darkness as you may know is a Tier Z being, but the god of the Bible from DxD is only Tier X and died by sealing Trihexa (666), as such for his sacrifice to make sense Trihexa is now a tier Z being, so do try and make sure it dosen't get unsealed or you might need to flee from the world ASAP.\n\nThe world ending scenarios in this chaotic world are many, to name a few:\n-Alien Invasions\n-Demonic Incursions\n-Trihexa Unsealing\n-The Rebirth of Angra Mainyu\n-The war between Quincy and Shinigami\n-The vampiric apocalypse Gehenna\n\nOf course we at the company won't throw you in such a dangerous world without the resources to navigate all of it's scenarios, your total budget for Chargen phase will be 1110 credits and to further help and encourage you your budget will be applied after intensity and as such won't be reduced no matter your level of intensity.\n\nAdditionally you will be allowed to take any mission you wish that belongs to any of the fused worlds, and you will also be able to accept and keep active one additional mission over the default allowed number.\n\nBe warned contractor that you will be able to move to another world only after having passed one year in this one. ",
-    "uid": "UWbgj"
+    "desc": "There are so many worlds out there with even more unique characteristics, the world you choose to start your grand adventure is very important contractor, but some of our clients want a more \"Chaotic\" start, one where many worlds are homogeneously combined to create a new and more entertaining expirience.\nIf you accept this mission Contracor your starting world will be a fusion between the following worlds:\n-Nasuverse\n-Bleach\n-High School DxD\n-DC Comics\n-Invincible\n-Jujutsu Kaisen\n-World Of Darkness\n\nThe main casts, unique cities and plotlines of each world will be present and adapted to circumstances if needed.\nTo give a reference for the adversities you may face, here are some plot point you should know:\n-The 5th grail war will happen in the near future.\n-Ichigo Kurosaki will unlock his Soul Reaper powers between 3 to 6 months after your arrival.\n-Hyoudou Issei will be reincarnated as a devil a month after your arrival.\n-The Justice League has just been formed after repelling Darkseid.\n-Mark Grayson will unlock his Viltrumite powers 2 months after your arrival.\n-Yuji Itadori has just started his training.\n-War between the Ikhwan al-Safa, the Judges, and the Knights of St.George will erupt in the Middle East one year after your arrival.\nThe times of events may change depending on the other missions you accept.\n\nDo keep in mind that some threats have been upscaled, for example the god from World of Darkness as you may know is a Tier Z being, but the god of the Bible from DxD is only Tier X and died by sealing Trihexa (666), as such for his sacrifice to make sense Trihexa is now a tier Z being, so do try and make sure it dosen't get unsealed or you might need to flee from the world ASAP.\n\nThe world ending scenarios in this chaotic world are many, to name a few:\n-Alien Invasions\n-Demonic Incursions\n-Trihexa Unsealing\n-The Rebirth of Angra Mainyu\n-The war between Quincy and Shinigami\n-The vampiric apocalypse Gehenna\n\nOf course we at the company won't throw you in such a dangerous world without the resources to navigate all of it's scenarios, your total budget for Chargen phase will be 1110 credits and to further help and encourage you your budget will be applied after intensity and as such won't be reduced no matter your level of intensity.\n\nAdditionally you will be allowed to take any mission you wish that belongs to any of the fused worlds, and you will also be able to accept and keep active one additional mission over the default allowed number.\n\nBe warned contractor that you will be able to move to another world only after having passed one year in this one. "
   },
   {
     "reward": "100 credits/world the ruse is maintained for",
@@ -52124,39 +52851,45 @@
     "reward": "Captured Eden and Scion, even if they have been killed."
   },
   {
+    "reward": "100 credits",
+    "image": "https://cdn.donmai.us/sample/28/10/__bayonetta_and_jeanne_bayonetta_and_1_more_drawn_by_shimazaki_mari__sample-28105425e5cc34f3f1e3411867e96061.jpg",
     "author": "bakami",
-    "budget": 400,
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Platinum Baddie",
+    "uid": "hlqAJ",
+    "loca": "Bayonetta",
+    "lewd": false,
+    "scope": "Quick",
+    "objectives": [
+      {
+        "reward": "Paradox Defense x 1",
+        "type": "Perks",
+        "value": "Either you or her activates witch time at least 10 times."
+      },
+      {
+        "reward": "50 credits for rides only",
+        "type": "Other",
+        "value": "Kill 10 foes while having sex "
+      },
+      {
+        "reward": "Template Stacking I/II: Bayonetta, Lure: Love Spot, Blessed talent, Aesthetic talent",
+        "type": "Other",
+        "value": "Kill a boss without getting hit while having sex "
+      },
+      {
+        "reward": "200 credits",
+        "type": "Credits",
+        "value": "Battle and fuck both Bayonetta Jeanne and without dodging a single attack and be the last one standing"
+      }
+    ],
     "conditions": [
       {
         "value": "During any sex involving the mission you must be dommed by Bayonetta"
       }
     ],
-    "desc": "Get Dommed by Bayonetta and get a platinum grade from her.",
-    "image": "https://cdn.donmai.us/sample/28/10/__bayonetta_and_jeanne_bayonetta_and_1_more_drawn_by_shimazaki_mari__sample-28105425e5cc34f3f1e3411867e96061.jpg",
-    "loca": "Bayonetta",
-    "objectives": [
-      {
-        "reward": "Paradox Defense x 1",
-        "value": "Either you or her activates witch time at least 10 times."
-      },
-      {
-        "reward": "50 credits for rides only",
-        "value": "Kill 10 foes while having sex "
-      },
-      {
-        "reward": "OC do not Steel Bayonetta, lure: love spot, Blessed talent, Aesthetic talent",
-        "value": "Kill a boss without getting hit while having sex "
-      },
-      {
-        "reward": "200 points",
-        "value": "Battle and fuck both Bayonetta Jeanne and without dodging a single attack and be the last one standing"
-      }
-    ],
-    "reward": "100 credits",
-    "scope": "Quick",
-    "source": "",
-    "title": "Platinum Baddie",
-    "uid": "hlqAJ"
+    "budget": 400,
+    "desc": "Get Dommed by Bayonetta and get a platinum grade from her."
   },
   {
     "author": "Ratcatcher",
@@ -55725,6 +56458,43 @@
     "reward": "Pocket Space, Pocket Apartment, Life's A Beach (by default this will appear as the painted world and may contain a Waifu)"
   },
   {
+    "reward": "40 credits + 1 talent of your choice.",
+    "image": "https://cdn.imgchest.com/files/my2pc9nqa87.png",
+    "author": "irugaa0",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Warfare",
+    "uid": "5gRzg",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "25 credits",
+        "type": "Credits",
+        "value": "Don't let the city be breached."
+      },
+      {
+        "reward": "30 credits + Pocket Space or one upgrade to your Pocket Dimension",
+        "type": "Other",
+        "value": "Guarantee that 90% of population is alive in 30 days time (4500/5000)"
+      },
+      {
+        "reward": "20 credits or a ride plus upgrades up to the same valor.",
+        "type": "Other",
+        "value": "Guarantee that 80% of population is alive  in 30 days time (4000/5000)"
+      },
+      {
+        "reward": "Tier-5 Companion of your choice.",
+        "type": "Companions",
+        "value": "Guarantee that 70% of population is alive  in 30 days time (3500/5000)"
+      },
+      {
+        "reward": "50 points + Any Talent, Defense or Perk of your choice.",
+        "type": "Other",
+        "value": "Completely defeat the invaders."
+      }
+    ],
     "conditions": [
       {
         "value": "Half of the city population must be alive in 30 days time (2500/5000)"
@@ -55733,44 +56503,8 @@
         "value": "Reinforcement arrives in 30 days. "
       }
     ],
-    "desc": "The company was commissioned to protect an important fortified city of 5000 inhabitants from an enemy attack. You alongside five other contractors will be responsible for protecting the city until reinforcement arrives. To succeed you must protect the city successfully till the reinforcement troops arrive at the city and guarantee that at least half or more of the city population is alive by that time.  The city has a total of 600 soldiers at your command.",
-    "image": "https://cdn.imgchest.com/files/my2pc9nqa87.png",
     "budget": 55,
-    "rewardType": "Other",
-    "source": "",
-    "author": "irugaa0",
-    "title": "Warfare",
-    "scope": "Standard",
-    "loca": "Generic",
-    "objectives": [
-      {
-        "value": "Don't let the city be breached.",
-        "reward": "25 credits",
-        "type": "Credits"
-      },
-      {
-        "value": "Guarantee that 90% of population is alive in 30 days time (4500/5000)",
-        "reward": "30 credits + Pocket Space or one upgrade to your home up to Grand Manor",
-        "type": "Other"
-      },
-      {
-        "value": "Guarantee that 80% of population is alive  in 30 days time (4000/5000)",
-        "type": "Other",
-        "reward": "20 credits or a ride plus upgrades up to the same valor."
-      },
-      {
-        "reward": "Tier-3 Companion of your choice.",
-        "value": "Guarantee that 70% of population is alive  in 30 days time (3500/5000)",
-        "type": "Companions"
-      },
-      {
-        "value": "Completely defeat the invaders.",
-        "type": "Other",
-        "reward": "50 points + Any Talent, Defense or Perk of your choice."
-      }
-    ],
-    "uid": "5gRzg",
-    "reward": "20 credits + 1 talent of your choice."
+    "desc": "The company was commissioned to protect an important fortified city of 5000 inhabitants from an enemy attack. You alongside five other contractors will be responsible for protecting the city until reinforcement arrives. To succeed you must protect the city successfully till the reinforcement troops arrive at the city and guarantee that at least half or more of the city population is alive by that time.  The city has a total of 600 soldiers at your command."
   },
   {
     "lewd": false,
@@ -56290,12 +57024,15 @@
     "source": "https://starwars.fandom.com/wiki/Invasion_of_Naboo"
   },
   {
-    "loca": "Danmachi",
-    "title": "Is it Wrong to Join a Family?",
-    "budget": 225,
-    "rewardType": "Credits",
+    "reward": "20 credits",
+    "image": "https://cdn.imgchest.com/files/6yxkcjdpjw7.png",
     "author": "irugaa0",
+    "rewardType": "Credits",
     "source": "",
+    "title": "Is it Wrong to Join a Family?",
+    "uid": "NQ6tW",
+    "loca": "Danmachi",
+    "lewd": true,
     "scope": "Standard",
     "objectives": [
       {
@@ -56305,24 +57042,22 @@
       },
       {
         "reward": "50 points",
-        "value": "Reach the 10th floor of the dungeon.",
-        "type": "Credits"
+        "type": "Credits",
+        "value": "Reach the 10th floor of the dungeon."
       },
       {
+        "reward": "Choose Body, Soul or Science Talent for free.",
         "type": "Perks",
-        "value": "Reach level 2",
-        "reward": "Choose Body, Soul or Science Talent for free."
+        "value": "Reach level 2"
       }
     ],
-    "reward": "20 credits",
     "conditions": [
       {
         "value": "Join a family and reach the 5th floor of the dungeon."
       }
     ],
-    "uid": "NQ6tW",
-    "desc": "Danmachi is a world full of wonders where many gods descended the heavens to form families of adventurers and defy the dungeon.\nJoin the Family and become defy the dungeon yourself.\n\n",
-    "image": "https://cdn.imgchest.com/files/6yxkcjdpjw7.png"
+    "budget": 225,
+    "desc": "Danmachi is a world full of wonders where many gods descended the heavens to form families of adventurers and defy the dungeon.\nJoin the Family and become defy the dungeon yourself.\n\n"
   },
   {
     "desc": "You are trapped in Hell. You must escape. Hell is defined as any appropriate hell dimension in the given setting. This includes Tartarus, Nifelheim, etc.",
