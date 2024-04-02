@@ -27,6 +27,14 @@
           @click="page = 2"
         />
         <Button
+          :class="page === 4 ? 'bg-blue-800': ''"
+          class="bg-purple-700 text-gray-100 rounded cursor-pointer hover:bg-purple-800 px-2"
+          label="Top 25"
+          size="Small"
+          icon="bi:patch-question-fill"
+          @click="page = 4"
+        />
+        <Button
           class="text-base"
           icon="fluent:book-question-mark-24-regular"
           label="Propose a Mission"
@@ -82,7 +90,7 @@ import { MissionGenerator } from '~/logic/missionsGen'
 import { useChargenStore } from '~/store/chargen'
 import { usePlayStore } from '~/store/play'
 import { useSaves } from '~/store/saves'
-import { getMissionsLikes } from '~/logic/server'
+import { getMissionsLikes, searchMissions } from '~/logic/server'
 
 const { missionRewards } = usePlayStore()
 const { missionFavorites } = useSaves()
@@ -231,6 +239,16 @@ const nineMissions = computed(() => {
 const startingMissionsCount = computed(() => missionWrapper.value?.clientWidth < 1550 ? 6 : 9)
 const infiniteMissions = ref(filteredMissions.value.slice(0, startingMissionsCount.value))
 
+const top25 = ref([])
+watch(page, async() => {
+  if (page.value !== 4) return
+  const opt = {}
+  opt.sortBy = 'likes:desc'
+  missionsLikes.value = await searchMissions({ page: 1, limit: 25, ...opt })
+  const uids = missionsLikes.value.map(ml => ml.uid)
+  top25.value = missions.value.filter(mission => uids.includes(mission.uid))
+})
+
 watch(filteredMissions, () => {
   infiniteMissions.value = filteredMissions.value.slice(0, startingMissionsCount.value)
   const uids = infiniteMissions.value.map(mission => mission.uid)
@@ -272,6 +290,8 @@ const displayedMissions = computed(() => {
       return nineMissions.value
     case 3:
       return singleMission.value
+    case 4:
+      return top25.value
   }
   return infiniteMissions.value
 })

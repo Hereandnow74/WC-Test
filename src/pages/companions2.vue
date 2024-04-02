@@ -345,7 +345,6 @@ const options = computed(() => {
     opt.sortBy = `likes:${sortLikes.value === 1 ? 'desc' : 'asc'}`
   if (nsfw.value)
     opt.hasNsfw = true
-  console.log(opt)
   return opt
 })
 

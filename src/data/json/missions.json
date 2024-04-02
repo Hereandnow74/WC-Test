@@ -1,14 +1,352 @@
 [
   
   {
+    "reward": "100 credits + a Tier-6 or Less companion",
+    "image": "https://static1.cbrimages.com/wordpress/wp-content/uploads/2019/10/Overhaul-My-Hero-Academia.jpg",
+    "author": "irugaa0",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Yakuza Hunting",
+    "loca": "My Hero Academia",
+    "lewd": false,
+    "scope": "Quick",
+    "objectives": [
+      {
+        "reward": "A Tier- 6 companion with Ninja or Stealth tag.",
+        "type": "Companions",
+        "value": "Like a Ninja – Kill all the targets without being noticed by police or heroes."
+      },
+      {
+        "reward": "A Tier- 6 companion with Combatant or Demigod tag.",
+        "type": "Companions",
+        "value": "Gladiator – Make a Spectacle and live stream the deaths of the targets."
+      },
+      {
+        "reward": "A Tier- 6 companion with Artist or Genius tag.",
+        "type": "Companions",
+        "value": "Phantom Killer – Announce the day and the name of your targets to everyone before killing them."
+      },
+      {
+        "reward": "A Tier- 6 companion with Healer or Clergy tag.",
+        "type": "Companions",
+        "value": "KKK-Rejects – Go an extra mile and destroy the Creature Rejection Clan."
+      },
+      {
+        "reward": "A Tier- 6 companion with Transhuman tag",
+        "type": "Companions",
+        "value": "Doomsday Theorists – Kill the main members of the cult Humarise."
+      },
+      {
+        "reward": 10,
+        "type": "Credits",
+        "value": "Kill 5 Independent Villains"
+      },
+      {
+        "reward": 20,
+        "type": "Credits",
+        "value": "Kill 10 Independent Villains"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Kill or Capture the Main members of each Group."
+      },
+      {
+        "value": "You will be left a year before the MHA: Vigilantes, Timeline."
+      },
+      {
+        "value": "You cannot interfere much with the All For One plans."
+      }
+    ],
+    "budget": 300,
+    "desc": "In a world of heroes some dark organization like villains, inevitably appear, some other are deep ingrained in society, tied by a long history of corruption, and violence, Among these 3 are highlighted, the Shie Hassaikai, Eight Bullets, and Abegawa Tenchu Kai. These Yakuza groups even despite losing power and influence still, command large group of members and dominate certain areas. \nYour mission is simple, ELIMINATE THEM.\n",
+    "uid": "kqZWQ"
+  },
+  {
+    "reward": 200,
+    "image": "https://img3.gelbooru.com//images/be/45/be450cd2debc0b5488d843be7ecfdca8.jpg",
+    "author": "wowow2264",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Growing Pleasures",
+    "loca": "(Square) Final Fantasy",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "Quadrupled materia growth while they are inside your and/or retinue members' lower hole(s).",
+        "type": "Other",
+        "value": "We are still a porn company so if you were to ensure that ALL materia in a set sold were matured inside your own or a retinue member's lower hole(s), we'd be willing to make it worth doing. This only pays out once.\n\nP.S. You'll want body defense for this."
+      },
+      {
+        "reward": "15 credits per armlet sold, 20 for Minerva Bands due to their high demand.",
+        "type": "Other",
+        "value": "If you are willing, we are also looking for armlets and the like to house the materia. Specifically, we'd like to acquire at least one of three: A Minerva Band, an Escort Guard, or a Mystile."
+      },
+      {
+        "reward": "10 credits per assessory sold.",
+        "type": "Other",
+        "value": "In addition to armlets, there are some accessories we'd like to acquire as well. Specifically: Ribbons, Tetra Elementals, Water Rings, Poison Rings, and Cat Bells."
+      },
+      {
+        "reward": 300,
+        "type": "Credits",
+        "value": "If you are in desperate need of credits, we are willing to pay quite well for a set that contains EVERY materia known to exist, from the White and Black materia to the huge materias to the goddess materia, if mention was made of it, we want it."
+      },
+      {
+        "reward": 1,
+        "type": "IMG Tickets",
+        "value": "Want to go real overboard and impress us? Create a system that automatically, quickly, and endlessly produces fully mastered materia of all kinds and sell it to us."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "One full set of fully mastered materia per payout"
+      },
+      {
+        "value": "Each set must include EVERY materia capable of maturing and thus producing an 'offspring'."
+      }
+    ],
+    "budget": 0,
+    "desc": "Materia, glowing orbs that allow anyone to cast magic and once fully matured, otherwise known as mastered, they produce a fresh one for you to \"master\" to keep infinitely producing more! The only flaw is that it takes quite a bit of active combat to get them to full maturity and there's quite a few of them. This is where you come in, you will gather every single known materia capable of maturing and grow them to full maturity before selling them to us.\n\nYou are free, encouraged even, to keep the 'offspring' of the fully matured materia as we will buy every complete set of materia you are willing to produce and turn over to us. You will, of course, have to acquire the starting materia yourself but we are willing to provide a portal over to the universe cluster where they originate from wherever you may be.\n\n(To be absolutely clear, you may complete this mission and its side objectives as many times as desired if it does not say otherwise.)",
+    "uid": "hivUy"
+  },
+  {
+    "reward": "Pandora added to demi plane",
+    "image": "https://www.slashfilm.com/img/gallery/the-real-forest-that-inspired-avatars-pandora/l-intro-1645034454.jpg",
+    "author": "JinxedKnight",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Nature Rules",
+    "loca": "Avatar (James Cameron)",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "A copy of your locial community added to demi plane",
+        "type": "Other",
+        "value": "Be a Na'vi"
+      },
+      {
+        "reward": "Template Stack of Rey Andino or Pamela Lillian Isley",
+        "type": "Other",
+        "value": "Remove humans from Pandora with out damage, Pandora badly"
+      },
+      {
+        "reward": "Take pocket star for free",
+        "type": "Other",
+        "value": "Destroy humanity completely"
+      },
+      {
+        "reward": "Take Heritage perks of Biomorph for free (No IMG perks)",
+        "type": "Other",
+        "value": "Uplift the Na'vi"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "No Technology"
+      },
+      {
+        "value": "Must be a locial being of Pandora"
+      }
+    ],
+    "budget": 100,
+    "desc": "With humanity ways they are on a crash course of self destruction, your job is to stop them destroying Pandora. Good luck",
+    "uid": "fWqMB"
+  },
+  {
+    "reward": 15,
+    "image": "https://i.ibb.co/ZNGmPh5/jedyize37iv51.webp",
+    "author": "darkxhadow",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Survive",
+    "loca": "The World Ends With You",
+    "lewd": false,
+    "scope": "Quick",
+    "objectives": [
+      {
+        "reward": 10,
+        "type": "Credits",
+        "value": "Actually do some work don't just hide like a coward, kill at least one noise boss. Repeatable with a max of 100 credits."
+      },
+      {
+        "reward": 20,
+        "type": "Credits",
+        "value": "Kill a reaper boss. Repeatable with a max of 100 credits."
+      },
+      {
+        "reward": 10,
+        "type": "Credits",
+        "value": "Change Rhyme's fate. Save her from erasure on day 4."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Survive the week."
+      },
+      {
+        "value": "Do not capture anyone besides Eri, we want to avoid more eyes on this."
+      },
+      {
+        "value": "This should not need to be mentioned but after the save at least 4 children mission and someone leaving more than 10 children to starvei in cages i will say it. Eri needs to survive."
+      }
+    ],
+    "budget": 0,
+    "desc": "I have no idea how this happened, how it is possible and for once i do not want to know.\nTruck-kun got drunk and managed to kill someone that actually should be alive, we managed to add her to the reaper's game but she will not last long alone.\nYour job is to clean up this mess, partner with her and survive the week Iwill make sure to get you both out of the game.\nDon't worry about needing to die to join the game i have that covered with Truck-kun's help.",
+    "uid": "CRwIT"
+  },
+  {
+    "reward": "Capture of Raynare with her own Booster Gear sacred gear (Tier 7)",
+    "image": "https://img3.gelbooru.com/images/71/da/71daa5ad7de8c7da7fe7e6602e201d1e.jpg",
+    "author": "myfunvideos",
+    "rewardType": "Companions",
+    "source": "",
+    "title": "Taihen da! Unexpected scenario - Ascended Raynare!",
+    "loca": "High School DxD",
+    "lewd": true,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "100 Credits and complete trust in you.",
+        "type": "Other",
+        "value": "Fight Raynare alone without your Retinue interfering, even by support buffs."
+      },
+      {
+        "reward": "Rias and Sona forcefully Captured along with their respective Peerages.",
+        "type": "Companions",
+        "value": "After fight and Capture of Raynare, continue her original rampage on the school with her at your side, incapacitating the two Kings in charge of Kouh Territory."
+      },
+      {
+        "reward": "Covert Talent for Free!",
+        "type": "Perks",
+        "value": "Azazel has not a clue of Raynare's insubordination. Keep it that way."
+      },
+      {
+        "reward": "Performance Talent for Free!",
+        "type": "Perks",
+        "value": "Have sex with Raynare using her full power and not getting dying via broken pelvis. Recommend buying Sticky Fingers beforehand."
+      },
+      {
+        "reward": "Induces Brainwashing of exposes Devils and will follow you with complete loyalty and with eyes rolled up, as if possessed.",
+        "type": "Other",
+        "value": "If Captured with Raynare, expose the Rias and Sona Peerages for all to see."
+      },
+      {
+        "reward": "Instant Capture of all three with each confession told. Their church clothing is induced with Dress Break with Capture.",
+        "type": "Companions",
+        "value": "Tell Asia, Xenovia, and Irina that God is Dead make them abandon hope and fall into despair~"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Do not Kill her, Maim her, Restrain her, Knock her out, or debilitate Raynare in any way. She needs to be intact to Capture or have her anger Quelled by exhaustion via lengthy combat"
+      },
+      {
+        "value": "If you were expecting to stall for Sirzechs or Serafall to help their sisters, you're gonna be disappointed as they are being prevented from intervening by a condition by the dude who bailed."
+      },
+      {
+        "value": "Must be ready to be attacked right out the gate"
+      }
+    ],
+    "budget": 65,
+    "desc": "Danger Will Robinson! Dang-! Ahem...apologies! Let's try that again!\n\nContractor, we have a situation on our hands! An Outside Gamer or another Contractor that obtained the power of The Gamer did the most irresponsible thing and raised Raynare to be a 12-winged Fallen Angel on the level of Azazel, Michael, and Serafall. Damn Party system!\n\nThat's not even the worst part. With the help of that unknown Gamer, she was given Issei's Booster Gear after it had been stolen from him.\n\nYour Mission is far from simple. In fact, I'd put it on level as a Critical Mode boss fight!\n\nGo into this world of High School DxD and clean up this mess that Gamer bailed out on because the plot is in danger of the main characters were to be killed.\n\nGood luck out there, Contractor! You might need it.",
+    "uid": "TemZD"
+  },
+  {
+    "reward": "Wild and Environmental Defense, or the equivalent in credits if you already have them. After a few days, a summary of our research notes on the meteor if you want them.",
+    "image": "https://cdn.imgchest.com/files/k739cmdvxa7.jpg",
+    "author": "Dartoria",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Alius Meteor Retrieval",
+    "loca": "Inazuma Eleven",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "Double the credit reward for selling this character.",
+        "type": "Other",
+        "value": "Capture and sell a character affected by the meteorite."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Secure the meteorite for retrieval. You need an uncontested claim on it for at least 25 minutes."
+      },
+      {
+        "value": "Do not damage the meteor in any way. You can still use Alius Academy's already broken fragments for yourself after the Company recovered the main rock if you want to."
+      }
+    ],
+    "budget": 5,
+    "desc": "The Alius Meteorite, a mysterious purple rock fallen from space and used by an orphanage director to turn his orphans into a terrorist organization to reckon with.\nIt has numerous effects, such as increased strength and endurance, physical deformation, and more importantly the brainwashing. Someone at the Company wants to study it, so you get to go get it for us.\n",
+    "uid": "Udgqa"
+  },
+  {
+    "reward": 200,
+    "image": " https://cdn.donmai.us/original/79/f8/__kugisaki_nobara_jujutsu_kaisen_drawn_by_tamausagi_m__79f895d2e93896c28abf205d61be7839.jpg",
+    "author": "Dante Starkiller",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "When All You Have Is A Hammer... Everything Starts To Seem Like A Nail",
+    "loca": "Jujutsu Kaisen",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "You gain a copy of Mjolnir from God of Highschool, it can produce lighting and can fuse with your body up its strength",
+        "type": "Other",
+        "value": "Capture Mai Zenin"
+      },
+      {
+        "reward": "You gain the Innate Technique: Nail Creation",
+        "type": "Other",
+        "value": "Capture Maki Zenin"
+      },
+      {
+        "reward": "Soul Immunity to any kind of manipulation or control",
+        "type": "Other",
+        "value": "Kill Mahito"
+      },
+      {
+        "reward": "Unlock the understanding of Revese Cursed Technique",
+        "type": "Other",
+        "value": "Capture Shoko Iori"
+      },
+      {
+        "reward": "You gain the Innate Technique: Reinforcement",
+        "type": "Other",
+        "value": "Capture Utahime Iori"
+      },
+      {
+        "reward": "Possession and Mind Defense x2, or its equal value in credits",
+        "type": "Perks",
+        "value": "Kill kenjaku"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You must take the aparece of Kugisaki Nobara"
+      },
+      {
+        "value": "You can only take Template Stacking pf characters and powers related to nails, hammers, voodoo dolls or pure body strength"
+      }
+    ],
+    "budget": 250,
+    "desc": "Well, here we are again, it seems that some contractors have taken exception to the fate of Kugisaki Nobara and want you to change it. But it wouldn't be a challenge if you simply apear with all your out of context powers and steamrolled everybody, so hare is the challenge:\n\nYou must take the aparece, powers and place in plot as Nobara at the start of the series, you will awaken the night before Yuuji eats Sukuna's finger.\n\nSo, at the start you will only have Nobara Innate Technique: Straw Doll Technique \n\nNowhere is stated which are the limits of the sizes of the nails nor the hammer needed for the technique activation. Get creative.",
+    "uid": "YVxNR"
+  },
+  {
     "reward": 100,
     "image": "https://safebooru.org//images/1852/877bf603aa9b7cb78a9f42864749101a28bec17d.gif",
     "author": "Avendark",
     "rewardType": "Credits",
     "source": "",
     "title": "Enough Talk – Run Hands",
+    "uid": "bGSrQ",
     "loca": "Generic",
-    "lewd": true,
+    "lewd": false,
     "scope": "Standard",
     "objectives": [
       {
@@ -45,9 +383,8 @@
         "value": "The mission ends when you have defeated 10 enemy contractors."
       }
     ],
-    "budget": 0,
-    "desc": "Contractor, this next mission is coming straight from the company itself; turns out, the number of PvP combatants are at an all-time low. You know, you’d think with how many power crazed warriors this place employs they’d be all up for beating the snot out of their co-workers, but apparently not. Well what’s say you then, up for throwing hands with the best and worse the company has to offer?\n\nNo? Alright fine! How about a limited time offer to sweeten the pot. You compete in any type of PvP (be that invasions, gauntlets or tournaments) and we’ll give you a bonus reward for mercilessly beating your first few foes. Plus some extra rewards for any additional objectives you complete.",
-    "uid": "bGSrQ"
+    "budget": 300,
+    "desc": "Contractor, this next mission is coming straight from the company itself; turns out, the number of PvP combatants are at an all-time low. You know, you’d think with how many power crazed warriors this place employs they’d be all up for beating the snot out of their co-workers, but apparently not. Well what’s say you then, up for throwing hands with the best and worse the company has to offer?\n\nNo? Alright fine! How about a limited time offer to sweeten the pot. You compete in any type of PvP (be that invasions, gauntlets or tournaments) and we’ll give you a bonus reward for mercilessly beating your first few foes. Plus some extra rewards for any additional objectives you complete."
   },
   {
     "reward": 200,
@@ -410,6 +747,7 @@
     "rewardType": "IMG Tickets",
     "source": "",
     "title": "Build a small world!",
+    "uid": "sQdsU",
     "loca": "Skyblock Challenge",
     "lewd": false,
     "scope": "Standard",
@@ -497,7 +835,7 @@
       {
         "reward": "Science Talent or 10 credits",
         "type": "Perks",
-        "value": "Get your tech level up to Industrial revolution standard"
+        "value": "Build something capable of generating power"
       }
     ],
     "conditions": [
@@ -508,12 +846,11 @@
         "value": "\"World\" only considered big enough after 100 Skyblocks"
       },
       {
-        "value": "Minimum number of citizens must exceed 50"
+        "value": "Minimum number of citizens must exceed 50 (Citizens only count if they can do SOMETHING to contribute IE children don't count below age 7)"
       }
     ],
     "budget": 0,
-    "desc": "You have taken up the Skyblock Challenge And need some help getting going. Lets get started on the ultimate goal of skyblock BUILD a \"small\" WORLD where you and your family/waifu/citizen/familiars want for nothing.",
-    "uid": "sQdsU"
+    "desc": "You have taken up the Skyblock Challenge And need some help getting going. Lets get started on the ultimate goal of skyblock BUILD a \"small\" WORLD where you and your family/waifu/citizen/familiars want for nothing."
   },
   {
     "reward": "\"Instant capture of the raised Alter-Egos, and each Alter-Ego retains their personality after their individual ascension",
@@ -734,6 +1071,7 @@
     "rewardType": "Other",
     "source": "",
     "title": "Be The Milf (Backshoots not Included)",
+    "uid": "wmNLX",
     "loca": "Jujutsu Kaisen",
     "lewd": false,
     "scope": "Grand",
@@ -781,16 +1119,16 @@
     ],
     "conditions": [
       {
-        "value": "For this mission you must take Itadori Kaori (Kenjaku) as template stack I& II or power swap"
+        "value": "For this mission you must take Itadori Kaori (Kenjaku) as template stack I & II or power swap"
       },
       {
-        "value": "You can select which 4 Innate techniques Itadori Kaori (Kenjaku) posses when you awaken"
+        "value": "You can select which 4 Innate techniques Itadori Kaori (Kenjaku) possesses when you awaken"
       },
       {
-        "value": "You cannot change your aparece once the mission start"
+        "value": "You cannot change your appearance once the mission starts"
       },
       {
-        "value": "You must have the aparece of Itadori Kaori (Kenjaku)"
+        "value": "You must have the appearance of Itadori Kaori (Kenjaku)"
       },
       {
         "value": "You must create a harem of at least 2 integrants"
@@ -800,8 +1138,7 @@
       }
     ],
     "budget": 200,
-    "desc": "It Seems like a mission has been requested by a dissatisfied contractor fan of Jujutsu Kaisen how thought that Sukuna has been overly hyped and wants to you to humiliate him in his final form, and what it's is a bigger humiliation that been beaten by a transgender woman and her harem of various insane sorceresses.\n\nTo accomplish this with greatest amount of disrespect the world has been altered to change the gender of certain characters and tweaked the mentality of others.\n\nYou apear in the year 2006, during the events of the Hidden Inventory / Premature Death Arc",
-    "uid": "wmNLX"
+    "desc": "It Seems like a mission has been requested by a dissatisfied contractor fan of Jujutsu Kaisen how thought that Sukuna has been overly hyped and wants to you to humiliate him in his final form, and what it's is a bigger humiliation that been beaten by a transgender woman and her harem of various insane sorceresses.\n\nTo accomplish this with greatest amount of disrespect the world has been altered to change the gender of certain characters and tweaked the mentality of others.\n\nYou apear in the year 2006, during the events of the Hidden Inventory / Premature Death Arc"
   },
   {
     "reward": "Itadori Kaori (Kenjaku)",
@@ -862,6 +1199,7 @@
     "rewardType": "Credits",
     "source": "",
     "title": "Become an Overlord",
+    "uid": "jkqlo",
     "loca": "Hazbin Hotel",
     "lewd": false,
     "scope": "Standard",
@@ -882,15 +1220,14 @@
         "value": "Anything goes, this is Hell after all. Nothing needs to be consensual."
       },
       {
-        "value": "Need at least 500 souls under your 'ownership' it have the necessary demonic power to be called an Overlord."
+        "value": "Need at least 500 souls under your 'ownership' to have the necessary demonic power to be called an Overlord."
       },
       {
         "value": "Souls under 'ownership' do not actually need to do anything for you, but they cannot be taken by others."
       }
     ],
     "budget": 200,
-    "desc": "Well now Contractor, it seems your stuck in Hell. Might as well make the most of it. Go out and make deals, kill sinners, whatever you need to do in order to have the necessary number of souls under your ownership. ",
-    "uid": "jkqlo"
+    "desc": "Well now Contractor, it seems you’re stuck in Hell. Might as well make the most of it. Go out and make deals, kill sinners, whatever you need to do in order to have the necessary number of souls under your ownership. "
   },
   {
     "reward": "A copy of the Jade Palace and Valley Of Peace in demiplane",
@@ -2197,6 +2534,7 @@
     "rewardType": "Credits",
     "source": "",
     "title": "And that one's still GREEN",
+    "uid": "klTJn",
     "loca": "Dragonball",
     "lewd": false,
     "scope": "Standard",
@@ -2209,7 +2547,7 @@
       {
         "reward": "Bonyu",
         "type": "Companions",
-        "value": "Paint a tile without getting caught from the announcement of the cell games to the start of the tournament without getting caught."
+        "value": "Paint a tile without getting caught from the announcement of the Cell Games to the start of the tournament without getting caught."
       }
     ],
     "conditions": [
@@ -2217,12 +2555,11 @@
         "value": "Don't be noticed by Cell at any time"
       },
       {
-        "value": "you can not mind control or bind cell during this mission"
+        "value": "you can not mind control or bind Cell during this mission"
       }
     ],
     "budget": 1000,
-    "desc": "OK so all you gotta do to complete this mission is sneak in to cell's arena and paint one tile on the arena floor green, without being caught by cell, and we will pay you an extra 40 credits for every day you can consecutively do this without being caught. Also their is a prize if you can do it from the time the cell games are announced to the day of the tournament without being caught. ",
-    "uid": "klTJn"
+    "desc": "OK so all you gotta do to complete this mission is sneak in to Cell's arena and paint one tile on the arena floor green, without being caught by Cell, and we will pay you an extra 40 credits for every day you can consecutively do this without being caught. Also there is a prize if you can do it from the time the Cell Games are announced to the day of the tournament without being caught. "
   },
   {
     "reward": "A free ship of any type that you can bring with you in other worlds should you wish so. Choose any Companion up to t5 to act as the spirit of the ship. If you don't already have one, get the Pirate Heritage for free.",
@@ -2678,7 +3015,8 @@
     "author": "Pleb",
     "rewardType": "Other",
     "source": "",
-    "title": "It's time to dual",
+    "title": "It's time to duel",
+    "uid": "kmUnY",
     "loca": "Yu-Gi-Oh!",
     "lewd": false,
     "scope": "Standard",
@@ -2686,20 +3024,19 @@
       {
         "reward": "Osiris/Slifer the Sky Dragon",
         "type": "Companions",
-        "value": "Collect the god cards by winning them in duals"
+        "value": "Collect the god cards by winning them in duels"
       }
     ],
     "conditions": [
       {
-        "value": "Beat yugi and kiba"
+        "value": "Beat Yugi and Kiba"
       },
       {
-        "value": "don't use your powers to cheat during the dual"
+        "value": "don't use your powers to cheat during the duel"
       }
     ],
     "budget": 60,
-    "desc": "Now during your time in the yu-gi-oh world you can only capture targets by beating them in a dual. but due to this we are increasing the credits you get by doing this by 50 percent to compensate for the rule.\n\nAnd to complete this mission you need to capture yugi and kiba without cheating with your powers",
-    "uid": "kmUnY"
+    "desc": "Now during your time in the Yu-Gi-Oh world you can only capture targets by beating them in a duel. but due to this we are increasing the credits you get by doing this by 50 percent to compensate for the rule.\n\nAnd to complete this mission you need to capture Yugi and Kiba without cheating with your powers"
   },
   {
     "reward": 150,
@@ -2708,6 +3045,7 @@
     "rewardType": "Credits",
     "source": "",
     "title": "[Beta test] - Yandere mode",
+    "uid": "ODmDf",
     "loca": "Generic",
     "lewd": false,
     "scope": "Grand",
@@ -2769,8 +3107,7 @@
       }
     ],
     "budget": 40,
-    "desc": "This mission is a testing ground for a new setting coming to bindings in which we will pay you for taking this mission and further pay you for a waifu of each tier caught under the new setting.\n\nThe new feature is basically a optional setting for when you catch a waifu to have here become a yandere towards you over binding period, this will be accompanied by a dial that lets you pick what level of yandere they will become from clingy to Yuno Gasai level of yandere.\n\nBut for the testing period the dial has been set to 75 percent, so about albedo level and you must capture at least 10 waifu's of varying tier's to help us evaluate this new setting and to find any bugs that may linger from early development.\n\nOh, and take 50 credits for taking this mission as a testing bonus.",
-    "uid": "ODmDf"
+    "desc": "This mission is a testing ground for a new setting coming to bindings in which we will pay you for taking this mission and further pay you for a waifu of each tier caught under the new setting.\n\nThe new feature is basically a optional setting for when you catch a waifu to have here become a yandere towards you over binding period, this will be accompanied by a dial that lets you pick what level of yandere they will become from clingy to Yuno Gasai level of yandere.\n\nBut for the testing period the dial has been set to 75 percent, so about Albedo level and you must capture at least 10 waifus of varying tier's to help us evaluate this new setting and to find any bugs that may linger from early development.\n\nOh, and take 50 credits for taking this mission as a testing bonus."
   },
   {
     "reward": "Instant capture of all SCP's and 2000 credits",
@@ -3206,6 +3543,7 @@
     "rewardType": "Other",
     "source": "",
     "title": "Lights out",
+    "uid": "SeahQ",
     "loca": "Generic",
     "lewd": false,
     "scope": "Grand",
@@ -3255,8 +3593,7 @@
       }
     ],
     "budget": 150,
-    "desc": "Ok, so when we were sending you off to your first world one of our newer employees may have clicked a few wrong button and made a minor issue, so bad news is that along with you we have sent 10 canisters of Blacklight.\n\nWhich for those that don't know is a extremely infectious virus that will turn you in to a living vessel for the virus giving the person infected with it super strength, speed and shapeshifting powers which means they are True infected  which only happens if they are lucky, if not you will be turned in to a horrible zombie like abomination.\n\nAnd due to how the system works they have been dispersed randomly across your starting world, but with how the virus works it won't take long to find out where they fell, anyway your missions is to destroy and form of blacklight infection and any remaining canisters that exist in your world.\n\nGoodluck",
-    "uid": "SeahQ"
+    "desc": "Ok, so when we were sending you off to your first world one of our newer employees may have clicked a few wrong buttons and made a minor issue, so bad news is that along with you we have sent 10 canisters of Blacklight.\n\nWhich for those that don't know is an extremely infectious virus that will turn you into a living vessel for the virus giving the person infected with it super strength, speed and shapeshifting powers which means they are True infected  which only happens if they are lucky, if not you will be turned into a horrible zombie-like abomination.\n\nAnd due to how the system works they have been dispersed randomly across your starting world, but with how the virus works it won't take long to find out where they fell, anyway your missions is to destroy any form of blacklight infection and any remaining canisters that exist in your world.\n\nGoodluck"
   },
   {
     "reward": 50,
@@ -3453,6 +3790,7 @@
     "rewardType": "Companions",
     "source": "",
     "title": "Ah yo the pizza here",
+    "uid": "FwTmG",
     "loca": "Dragonball",
     "lewd": false,
     "scope": "Quick",
@@ -3460,12 +3798,12 @@
       {
         "reward": "Neco-Arc",
         "type": "Companions",
-        "value": "Replace all food in beerus's home with cat food"
+        "value": "Replace all food in Beerus's home with cat food"
       },
       {
         "reward": 200,
         "type": "Credits",
-        "value": "convince Beerus to give you the pizza willingly"
+        "value": "Convince Beerus to give you the pizza willingly"
       }
     ],
     "conditions": [
@@ -3474,8 +3812,8 @@
       }
     ],
     "budget": 500,
-    "desc": "In this mission you gotta steal a pizza from Beerus and eat it in front of him and I know just what you are thinking \" isn't this mission a bit to easy\" but don't worry things are about to get fun because for this mission to count you must take the pizza directly from Beerus's hands.\n\nGoodluck",
-    "uid": "FwTmG"
+    "desc": "In this mission you gotta steal a pizza from Beerus and eat it in front of him and I know just what you are thinking \"isn't this mission a bit too easy\" but don't worry things are about to get fun because for this mission to count you must take the pizza directly from Beerus's hands.\n\nGood luck",
+    "skip": true
   },
   {
     "reward": "50 credits per successful student",
@@ -3484,43 +3822,44 @@
     "rewardType": "Other",
     "source": "",
     "title": "The wise master",
+    "uid": "qxDiP",
     "loca": "Generic",
     "lewd": false,
     "scope": "Standard",
     "objectives": [
       {
-        "reward": "all student's gain access to martial and soul talent",
+        "reward": "all students gain access to martial and soul talent",
         "type": "Other",
         "value": "Gain your first student"
       },
       {
         "reward": 100,
         "type": "Credits",
-        "value": "Increase a students tier by 3 or higher"
+        "value": "Increase a student’s tier by 3 or higher"
       }
     ],
     "conditions": [
       {
-        "value": "you can not capture any student unless done so by raising there tier's by 2"
+        "value": "you cannot capture any student unless done so by raising their tiers by 2"
       },
       {
         "value": "no mind control"
       },
       {
-        "value": "no actively empowering students, they must train for there power"
+        "value": "no actively empowering students, they must train for their power"
       }
     ],
     "budget": 150,
-    "desc": "Your mission here is to take on a minimum of 5 students and train them in your way of fighting and strengthen them enough to raise there tier by at least 2 stages to count them as a successful student, and any student you raise by 2 tier's will automatically be captured. \n\nGoodluck.",
-    "uid": "qxDiP"
+    "desc": "Your mission here is to take on a minimum of 5 students and train them in your way of fighting and strengthen them enough to raise their tier by at least 2 stages to count them as a successful student, and any student you raise by 2 tiers will automatically be captured. \n\nGood luck."
   },
   {
-    "reward": "200 credits a tier 7 or below waifu from DBZ and whatever gains in strength during your training",
+    "reward": "200 credits, a tier 7 or below waifu from DBZ and whatever gains in strength during your training",
     "image": "https://pm1.aminoapps.com/6982/36ed7e2adc01a7382c82b66b6b363eae8492b1c3r1-1920-1080v2_hq.jpg",
     "author": "Pleb",
     "rewardType": "Other",
     "source": "",
     "title": "Learning the pecking order",
+    "uid": "IaaBt",
     "loca": "Generic",
     "lewd": false,
     "scope": "Grand",
@@ -3543,7 +3882,7 @@
       {
         "reward": 10,
         "type": "IMG Tickets",
-        "value": "Beat (TFS) popo in a fight"
+        "value": "Beat (TFS) Popo in a fight"
       }
     ],
     "conditions": [
@@ -3555,8 +3894,7 @@
       }
     ],
     "budget": 150,
-    "desc": "Before I hand you over to the client of this mission I just want to say good luck and may whatever god you believe in have mercy on your soul before you go, for they won't here your prayer's from where your going.\n\n---------------------------------------------------------------------------------------------------------------\n\nAlright maggot listen up cuz popo's about to teach you the pecking order and unlike the other filthy retch's I have had the displeasure of teaching were gonna do it the fun way, that way being before you get sent to whatever miserable world you are planning on infecting with your worthless presence you are gonna be spending 1 year with me on the lookout training.\n\nOh and you will not have access to any of your company purchases other then your talents so your only target for this mission is to survive and who knows maybe will but lets not get ahead of ourselves so lets start from the beginning.\n\nFirst rule of popo's training Do not Talk about Popo's Training   ",
-    "uid": "IaaBt"
+    "desc": "Before I hand you over to the client of this mission I just want to say good luck and may whatever god you believe in have mercy on your soul before you go, for they won't hear your prayers from where you’re going.\n\n---------------------------------------------------------------------------------------------------------------\n\nAlright maggot listen up cuz Popo's about to teach you the pecking order and unlike the other filthy wretches I have had the displeasure of teaching we’re gonna do it the fun way, that way being before you get sent to whatever miserable world you are planning on infecting with your worthless presence you are gonna be spending 1 year with me on the lookout training.\n\nOh and you will not have access to any of your company purchases other then your talents so your only target for this mission is to survive and who knows maybe you will but let’s not get ahead of ourselves so let’s start from the beginning.\n\nFirst rule of Popo's training Do Not Talk about Popo's Training   "
   },
   {
     "reward": "250",
@@ -3596,6 +3934,7 @@
     "rewardType": "Other",
     "source": "",
     "title": "Poseidon's Wrath",
+    "uid": "KsgKi",
     "loca": "One Piece",
     "lewd": false,
     "scope": "Grand",
@@ -3608,7 +3947,7 @@
       {
         "reward": "Engineering Talent",
         "type": "Perks",
-        "value": "build a ship capable of sailing the Grand line"
+        "value": "build a ship capable of sailing the Grand Line"
       },
       {
         "reward": 20,
@@ -3633,7 +3972,7 @@
       {
         "reward": 50,
         "type": "Credits",
-        "value": "Sail past the Grand line"
+        "value": "Sail past the Grand Line"
       },
       {
         "reward": 100,
@@ -3643,12 +3982,12 @@
       {
         "reward": "a ticket for a tier 8 companion and 80 credits",
         "type": "Other",
-        "value": "Touch the Deepest part of the ocean and kill what is sleeping their"
+        "value": "Touch the deepest part of the ocean and kill what is sleeping there"
       },
       {
         "reward": "Hera ( Riordanverse )",
         "type": "Companions",
-        "value": "Reach the highest point in the sky and kill what resides their"
+        "value": "Reach the highest point in the sky and kill what resides there"
       }
     ],
     "conditions": [
@@ -3656,12 +3995,11 @@
         "value": "Kill Poseidon"
       },
       {
-        "value": "Sail from the east blue to his castle on Laugh Tale"
+        "value": "Sail from the East Blue to his castle on Laugh Tale"
       }
     ],
     "budget": 225,
-    "desc": "No longer will the world of one piece be a place of merry adventures and mostly smooth sailing, due to the arrival of the god Poseidon and his decent in to madness from gaining control of the ocean's of the one piece world he has turned a one wonderous ocean world in to a Lovecraftian nightmare of the deep.\n\nYour objective is to transverse this now hellish world starting in the east blue all the way to Poseidon's castle that has been erected on the final island of the new world known as Laugh Tale and kill Poseidon to restore the world to how it was before, but that will be nowhere near easy thanks to a few certain factors.\n\nYou should know the version of Poseidon that was entering the world was originally a tier 10 being that had killed and stole the divinity of his brother Zeus, but due to the way Poseidon entered the world his tier has been reduced to a tier 9 that is the good news. The bad news is due to his abrupt enter he has scrambled the local space to make all forms of teleportation and space control useless also thanks to his storm divinity running wild the sky's have been turned in to a hellish gale shredding anything above a certain hight to a fine mist and his divinity of the sky is stopping any attempts of flight so the only way you will be able to get to him is by sailing their. \n\nGoodluck, oh and p.s. try not to go to deep in to the sea who knows what Abominations lurk in the Deep  ",
-    "uid": "KsgKi"
+    "desc": "No longer will the world of One Piece be a place of merry adventures and mostly smooth sailing, due to the arrival of the god Poseidon and his descent in to madness from gaining control of the oceans of the One Piece world, he has turned a once wondrous ocean world in to a Lovecraftian nightmare of the deep.\n\nYour objective is to traverse this now hellish world starting in the East Blue all the way to Poseidon's castle that has been erected on the final island of the New World known as Laugh Tale and kill Poseidon to restore the world to how it was before, but that will be nowhere near easy thanks to a few certain factors.\n\nYou should know the version of Poseidon that was entering the world was originally a Tier 10 being that had killed, and stole the divinity of, his brother Zeus, but due to the way Poseidon entered the world his tier has been reduced to a Tier 9, that is the good news. The bad news is due to his abrupt entry he has scrambled the local space to make all forms of teleportation and space control useless; also thanks to his storm divinity running wild the skies have been turned into a hellish gale, shredding anything above a certain height to a fine mist and his divinity of the sky is stopping any attempts at flight, so the only way you will be able to get to him is by sailing there. \n\nGood luck, oh and p.s. try not to go too deep in to the sea, who knows what abominations lurk in the Deep  "
   },
   {
     "reward": "Luxury Goods",
@@ -4108,6 +4446,7 @@
     "rewardType": "Other",
     "source": "",
     "title": "The Forerunners survive",
+    "uid": "otVvH",
     "loca": "Halo",
     "lewd": false,
     "scope": "Grand",
@@ -4125,7 +4464,7 @@
       {
         "reward": 500,
         "type": "Credits",
-        "value": "The Halo Array's aren't activated"
+        "value": "The Halo Arrays aren't activated"
       }
     ],
     "conditions": [
@@ -4140,8 +4479,7 @@
       }
     ],
     "budget": 500,
-    "desc": "Your mission is simple: Make sure the Forerunners survive their war against The Flood. You'll be inserted around the time the Forerunners were waging war against Ancient Humans. You'll be inserted as a Forerunner and have a background and everything so you don't have to worry about that.",
-    "uid": "otVvH"
+    "desc": "Your mission is simple: Make sure the Forerunners survive their war against The Flood. You'll be inserted around the time the Forerunners were waging war against Ancient Humans. You'll be inserted as a Forerunner and have a background and everything so you don't have to worry about that."
   },
   {
     "reward": "Alluring Whisper and Siren’s Song or 80 Credits.",
@@ -4471,6 +4809,7 @@
     "rewardType": "Credits",
     "source": "",
     "title": "Changing Mythology",
+    "uid": "ElTCf",
     "loca": "Riordanverse",
     "lewd": false,
     "scope": "Grand",
@@ -4497,8 +4836,7 @@
       }
     ],
     "budget": 500,
-    "desc": "Contractor, we here at the Company have noticed a concerning lack of historical change when it comes to Contractors being in the ancient times. Oh, don't get us wrong, we notice how much change comes with the actions, but the puny humans don't seem to. So, for this mission you need to cause some big changes in a mythology and make sure they are documented properly by the humans. How you do this doesn't matter, the humans just have to know that bbig changes are happening and what it was like before they happened.",
-    "uid": "ElTCf"
+    "desc": "Contractor, we here at the Company have noticed a concerning lack of historical change when it comes to Contractors being in the ancient times. Oh, don't get us wrong, we notice how much change comes with the actions, but the puny humans don't seem to. So, for this mission you need to cause some big changes in a mythology and make sure they are documented properly by the humans. How you do this doesn't matter, the humans just have to know that big changes are happening and what it was like before they happened."
   },
   {
     "reward": "Soul Talent or 10 Credits",
@@ -4608,6 +4946,7 @@
     "rewardType": "Other",
     "source": "",
     "title": "They Are Watching",
+    "uid": "agoNZ",
     "loca": "Generic",
     "lewd": false,
     "scope": "Standard",
@@ -4618,14 +4957,14 @@
         "value": "Create an army under your control, and let them win 3 battles without your direct intervention."
       },
       {
-        "reward": "10 credits for world tier.",
+        "reward": "10 credits per world tier.",
         "type": "Other",
         "value": "The highest authority of one of the major powers in the world, is under your controll."
       },
       {
         "reward": 250,
         "type": "Credits",
-        "value": "Unify all the nations/kingdoms of the world under one powerful figure/s that is/are your faithfull."
+        "value": "Unify all the nations/kingdoms of the world under one powerful figure/s that is/are your faithful."
       },
       {
         "reward": "Your followers now produce an imperceptible miasma of your essence, it will infect non believers slowly making them faithfull.",
@@ -4635,7 +4974,7 @@
       {
         "reward": "You are now able to create and shape your own divine realm beyond reality, only you and who you allow can enter it.",
         "type": "Other",
-        "value": "Kill or Bind the strongest of the 10 outsiders."
+        "value": "Kill or Bind the strongest of the 10 Outsiders."
       },
       {
         "reward": "Sum the court members tiers and multiply the result by 10, the result is your reward in credits.",
@@ -4653,14 +4992,14 @@
         "value": "Be tier 10."
       },
       {
-        "reward": "Not only can yo bend the laws of reality you can create new ones, your reach expands to the entire galaxy.",
+        "reward": "Not only can you bend the laws of reality you can create new ones, your reach expands to the entire galaxy.",
         "type": "Other",
         "value": "Reach tier X."
       },
       {
         "reward": 1,
         "type": "IMG Tickets",
-        "value": "Control 3 planets, your religion must be the main one in every planet."
+        "value": "Control 3 planets, your religion must be the main one on every planet."
       },
       {
         "reward": "Choose a template you will receive it at full power, the template tier can't surpass your own.",
@@ -4670,12 +5009,12 @@
       {
         "reward": "The reaches of your power extends to an universal scale, you can now alter rules that are outside of reality.",
         "type": "Other",
-        "value": "All races in a universe have for their main religion yours."
+        "value": "All races in a universe have your religion for their main religion."
       },
       {
         "reward": 1000,
         "type": "Credits",
-        "value": "Have at least 5 childrens, they must build their own religion and take control of entire worlds without your help."
+        "value": "Have at least 5 children, they must build their own religion and take control of entire worlds without your help."
       },
       {
         "reward": 100,
@@ -4690,30 +5029,29 @@
     ],
     "conditions": [
       {
-        "value": "Survive for 1 year after all 10 outsider have reached your world."
+        "value": "Survive for 1 year after all 10 Outsiders have reached your world."
       },
       {
-        "value": "You may not go to another world till this mission is complete."
+        "value": "You may not go to another world until this mission is complete."
       },
       {
         "value": "For the duration of this mission no heritage perks may be taken outside of the Outsider section."
       },
       {
-        "value": "Have 5 outsiders bound to you."
+        "value": "Have 5 Outsiders bound to you."
       },
       {
         "value": "Have one or more cults in your name with a following of at least 1000 members."
       },
       {
-        "value": "Defeat, ally or bind at least 3 of the 10 outsiders that have come to your world."
+        "value": "Defeat, ally or bind at least 3 of the 10 Outsiders that have come to your world."
       },
       {
         "value": "Capture at least 10 targets through \"Eldritch Corruption\"."
       }
     ],
     "budget": 250,
-    "desc": "Contractor some of our most Eldritch clients have concotted quite a mission, or well more like a challenge really, anyway! This challenge will be avaible only at Chargen, for reason that will soon be obvious, now let's dive in the juicy details!\n\nAfter taking on this Mission/Challenge you will have to follow the following steps:\n\n-Create a list of worlds of your choice and assign to each a number from 1 to 9, then roll a dice, the number of the dice will determine wich world you'll go to, you will receive a 15% bonus to the world budget.\n\n-Take the Great Old One as your patron, you won't be subject to the nightmares, and you won't attract outsiders, for the duration of the mission.\n\n-Take power Swap, the choosen character must be of the Outsider archetype, and it's tier can't be higher than the tier of your world, you will have a discount that will depend on your world tier and your intensity value, take the two values and subtract the lowest from the highest, the result will be the tier cost you will have to pay for the swap, for example with a tier 9 world and intensity 5, 9-5=4 you will pay the price of a tier 4 for the swap, the cost can't be lower than 10 credits.\n\n-Open the Gacha app, set the tag Outsider and activate \"ignore chances\" and set the cost to 0, now roll untill you have 10 outsiders, there must be at least one with the same tier as your world or higher by one, in case you have already 10 outsiders but none fullfils this this condition, eliminate the one with the lowest tier and reroll till the condition is fulfilled. This 10 Outsiders will come to your world one after the other on a span of 2 years, will they be enemies? allies? only one way to find out.\n\n-You won't be able to buy any companions neither during chargen nor while the mission is active, but you will receive a companion to help you start, how? You will be able to make a single roll in the gacha app you can set \"Ignore Chances\" active and you can set up to 3 tags, but the tier of the received companion can't surpass your world tier, in case it does, it's power will be restricted so that it's tier will be equal to your worlds, with training and time this restriction will weaken and disappear.\n\nAfter taking the above mentioned steps you'll be set to complete your build as you wish, but it should be mentioned that there will be some peculiarities you will be subject to, those being the following:\n\n-You won't be an outsider like most, you'll be something more, an eldritch God, of the likes of Cthulhu and Nyarlathotep to name a few(not in appearance of course), what does that mean? many things, only those necessary for this mission will be revealed, the rest is for you to discover.\n\n-Faith gives you power, the more prayers to you the greater the power you receive, build grand cults in your name, convert entire worlds, make your words their only reality, the choice is yours.\n\n-You possess the ability \"Eldritch Corruption\" you are able to bind beings to you through your power, you can \"Infect\" the mind of a being with your essence, this will cause them to be slowly corrupted, their mind bending to your will, and binding them to you, this will result in capture, the time needed for this corruption to be complete will depend on the target relative strength to yours, the default time is 10 days, this time is halved for targets with a tier below yours, the greater the difference in tier the more times the time will be halved, for example if you are 4 tiers ahead of the target the time will be halved 4 times, in case the target is of higher tier than the contractor, the time will instead double for each tier of difference.\n\n-Beware that now binding a target with one of the standard binding methods won't result in capture anymore, all other effects provided will still work as expected.\n\n-Bound \"Outsiders\" will form your \"Court\", you'll receive part of the faith they receive from their followers, this court will work as an anchor for your existence, as long as there is one member of your court alive, you may not die, the destruction of your body and soul will simply result in your respawn in a safe area under your controll.\n\nNow that is all contractor, are you ready?",
-    "uid": "agoNZ"
+    "desc": "Contractor, some of our most Eldritch clients have concocted quite a mission, or well more like a challenge really, anyway! This challenge will be available only at Chargen, for reason that will soon be obvious, now let's dive into the juicy details!\n\nAfter taking on this Mission/Challenge you will have to follow the following steps:\n\n-Create a list of worlds of your choice and assign to each a number from 1 to 9, then roll a die, the number of the die will determine wich world you'll go to, you will receive a 15% bonus to the world budget.\n\n-Take the Great Old One as your patron, you won't be subject to the nightmares, and you won't attract outsiders, for the duration of the mission.\n\n-Take Power Swap, the chosen character must be of the Outsider archetype, and it's tier can't be higher than the tier of your world, you will have a discount that will depend on your world tier and your intensity value, take the two values and subtract the lowest from the highest, the result will be the tier cost you will have to pay for the swap, for example with a tier 9 world and intensity 5, 9-5=4 you will pay the price of a tier 4 for the swap, the cost can't be lower than 10 credits.\n\n-Open the Gacha app, set the tag Outsider and activate \"ignore chances\" and set the cost to 0, now roll untill you have 10 outsiders, there must be at least one with the same tier as your world or higher by one, in case you have already 10 Outsiders but none fulfills this this condition, eliminate the one with the lowest tier and reroll till the condition is fulfilled. These 10 Outsiders will come to your world one after the other within a span of 2 years, will they be enemies? allies? only one way to find out.\n\n-You won't be able to buy any companions during chargen or while the mission is active, but you will receive a companion to help you start, how? You will be able to make a single roll in the Gacha app you can set \"Ignore Chances\" active and you can set up to 3 tags, but the tier of the received companion can't surpass your world tier, in case it does, it's power will be restricted so that it's tier will be equal to your worlds, with training and time this restriction will weaken and disappear.\n\nAfter taking the above mentioned steps you'll be set to complete your build as you wish, but it should be mentioned that there will be some peculiarities you will be subject to, those being the following:\n\n-You won't be an Outsider like most, you'll be something more, an eldritch God, of the likes of Cthulhu and Nyarlathotep to name a few (not in appearance of course), what does that mean? Many things, only those necessary for this mission will be revealed, the rest is for you to discover.\n\n-Faith gives you power, the more prayers to you the greater the power you receive, build grand cults in your name, convert entire worlds, make your words their only reality, the choice is yours.\n\n-You possess the ability \"Eldritch Corruption\" you are able to bind beings to you through your power, you can \"Infect\" the mind of a being with your essence, this will cause them to be slowly corrupted, their mind bending to your will, and binding them to you, this will result in capture, the time needed for this corruption to be complete will depend on the target relative strength to yours, the default time is 10 days, this time is halved for targets with a tier below yours, the greater the difference in tier the more times the time will be halved, for example if you are 4 tiers ahead of the target the time will be halved 4 times, in case the target is of higher tier than the contractor, the time will instead double for each tier of difference.\n\n-Beware that binding a target with one of the standard binding methods won't result in capture anymore, all other effects provided will still work as expected.\n\n-Bound \"Outsiders\" will form your \"Court\", you'll receive part of the faith they receive from their followers, this court will work as an anchor for your existence, as long as there is one member of your court alive, you may not die, the destruction of your body and soul will simply result in your respawn in a safe area under your controll.\n\nNow that is all contractor, are you ready?"
   },
   {
     "reward": "You gain the ability to transform into a Hulk and retain your intelligence.",
@@ -5874,6 +6212,7 @@
     "rewardType": "Other",
     "source": "",
     "title": "Apex predator",
+    "uid": "iUkoL",
     "loca": "My Hero Academia",
     "lewd": false,
     "scope": "Grand",
@@ -5886,12 +6225,12 @@
       {
         "reward": "Martial Talent",
         "type": "Perks",
-        "value": "kill the USJ nomu before the hero's arrive"
+        "value": "kill the USJ nomu before the heroes arrive"
       },
       {
         "reward": 50,
         "type": "Credits",
-        "value": "place first in all event's of the sports festival"
+        "value": "place first in all events of the sports festival"
       },
       {
         "reward": "Tsuchikawa Ryuko/Pixie-Bob",
@@ -5901,52 +6240,52 @@
       {
         "reward": "Shiretoko Tomoko/Ragdoll",
         "type": "Companions",
-        "value": "Save ragdoll before she is captured"
+        "value": "Save Ragdoll before she is captured"
       },
       {
         "reward": "Sosaki Shino/Mandalay",
         "type": "Companions",
-        "value": "rescue kota from muscular and bring him to his aunt"
+        "value": "rescue Kota from Muscular and bring him to his aunt"
       },
       {
         "reward": "Utsushimi Camie/Illus-o-Camie",
         "type": "Companions",
-        "value": "get 100 points in your provisional licencing exam"
+        "value": "get 100 points in your provisional licensing exam"
       },
       {
         "reward": "Toga Himiko",
         "type": "Companions",
-        "value": "convince toga to join the hero's side"
+        "value": "convince Toga to join the hero's side"
       },
       {
         "reward": "Inexhaustible",
         "type": "Perks",
-        "value": "rescue eri from overhaul"
+        "value": "rescue Eri from overhaul"
       },
       {
         "reward": 80,
         "type": "Credits",
-        "value": "Kick the shit out of overhaul till he can't heal himself but is still alive"
+        "value": "Kick the shit out of Overhaul until he can't heal himself but is still alive"
       },
       {
         "reward": 50,
         "type": "Credits",
-        "value": "defeat all might while he is injured"
+        "value": "defeat All Might while he is injured"
       },
       {
         "reward": 80,
         "type": "Credits",
-        "value": "Heal all might to his prime"
+        "value": "Heal All Might to his prime"
       },
       {
         "reward": "Shimura Nana",
         "type": "Companions",
-        "value": "Defeat all might in his prime"
+        "value": "Defeat All Might in his prime"
       },
       {
         "reward": "Template Stacking I & II All for one",
         "type": "Perks",
-        "value": "Defeat All for one"
+        "value": "Defeat All For One"
       },
       {
         "reward": 40,
@@ -5956,7 +6295,7 @@
       {
         "reward": "Manami Aiba/La Brava",
         "type": "Companions",
-        "value": "Beat gentle criminal"
+        "value": "Beat Gentle Criminal"
       },
       {
         "reward": "Kayama Nemuri/Midnight",
@@ -5966,7 +6305,7 @@
       {
         "reward": "100 credits, Midoriya Inko and Bakugo Mitsuki",
         "type": "Other",
-        "value": "Become number 1 before izuku or bakugo"
+        "value": "Become number 1 before Izuku or Bakugo"
       },
       {
         "reward": "Rumi Usagiyama/Mirko",
@@ -5983,8 +6322,7 @@
       }
     ],
     "budget": 225,
-    "desc": "This mission is a little different then normal but in a good way, you see we here at the company like to see how certain beings would react to different worlds but while it is good fun usually this is unprofitable to us so to help mitigate this we have had an idea.\n\nBasically what we are gonna do is offer you a free possession start of a character of our choice but you will be mentally fused with the character rather then completely replacing them at a ratio of about 65 percent you and 35 percent them, and the character we have chosen to mix you with is the Rakan also known as the beast monarch.\n\nOh, and p.s. we want to see you become a hero, so no blowing up city's and shit, Goodluck.  ",
-    "uid": "iUkoL"
+    "desc": "This mission is a little different then normal but in a good way, you see we here at the company like to see how certain beings would react to different worlds but while it is good fun usually this is unprofitable to us so to help mitigate this we have had an idea.\n\nBasically what we are gonna do is offer you a free possession start of a character of our choice but you will be mentally fused with the character rather than completely replacing them at a ratio of about 65 percent you and 35 percent them, and the character we have chosen to mix you with is the Rakan also known as the beast monarch.\n\nOh, and p.s. we want to see you become a hero, so no blowing up cities and shit, good luck.  "
   },
   {
     "reward": 300,
@@ -6019,11 +6357,11 @@
         "value": "Raise yourself to tier 8"
       },
       {
-        "value": "you can't leave the world till you complete the mission"
+        "value": "you can't leave the world until you complete the mission"
       }
     ],
     "budget": 360,
-    "desc": "Ok this one is simple, all you gotta do is pick this mission before entering your starting world and you will be reborn as a child of lucifer Morningstar and Lilith 18 years before the start of canon and all you have to do is raise your tier to match your dad's before canon. good luck\n\nOh and by the way due to the reincarnation process you will be regressed back to tier 6 and gain features to look more like your parents when born."
+    "desc": "Ok this one is simple, all you gotta do is pick this mission before entering your starting world and you will be reborn as a child of Lucifer Morningstar and Lilith 18 years before the start of canon and all you have to do is raise your tier to match your dad's before canon. good luck\n\nOh and by the way due to the reincarnation process you will be regressed back to tier 6 and gain features to look more like your parents when born."
   },
   {
     "reward": 1000,
@@ -6285,6 +6623,7 @@
     "rewardType": "Companions",
     "source": "",
     "title": "Waifu running for their laifu",
+    "uid": "sEyKc",
     "loca": "Generic",
     "lewd": false,
     "scope": "Standard",
@@ -6301,8 +6640,8 @@
       }
     ],
     "budget": 200,
-    "desc": "We have a issue that needs fixing before it becomes a larger problem so lets get down to business, a clone of Elizabeth from the BioShock franchise has managed to escape after her contactor was killed and due to prier abuse from her contractor she is now on a mission to collect other abused companions before the company can repossess them, and we need you to capture her before she becomes a bigger issue. Goodluck ",
-    "uid": "sEyKc"
+    "desc": "We have a issue that needs fixing before it becomes a larger problem so let’s get down to business, a clone of Elizabeth from the BioShock franchise has managed to escape after her contractor was killed and due to prior abuse from her contractor she is now on a mission to collect other abused companions before the company can repossess them, and we need you to capture her before she becomes a bigger issue. Good luck ",
+    "skip": true
   },
   {
     "reward": "Half of the targets debt in credits",
@@ -6311,6 +6650,7 @@
     "rewardType": "Other",
     "source": "",
     "title": "The interdimensional IRS (Repeatable)",
+    "uid": "oGDJM",
     "loca": "Generic",
     "lewd": false,
     "scope": "Standard",
@@ -6321,8 +6661,8 @@
       }
     ],
     "budget": 200,
-    "desc": "So, a lot of our contractors have been racking up credit debt's to the company and this is a problem and as for all problems we require a solution, and this is where you come in to play. \n\nWhat we are gonna do is give you a catalogue of all current contractors with a credit dept to the company and your job is to either get them to pay back their debt's plus interest in either credits or equally valuable assets such as item's or waifu's. although if they refuse to pay or can't afford to pay then you will need to kill them so we at the company can repossess their soul and make them work off their debt's in other ways.    ",
-    "uid": "oGDJM"
+    "desc": "So, a lot of our contractors have been racking up credit debt's to the company and this is a problem and as for all problems we require a solution, and this is where you come in to play. \n\nWhat we are gonna do is give you a catalogue of all current contractors with a credit debt to the company and your job is to either get them to pay back their debts plus interest in either credits or equally valuable assets such as items os. although if they refuse to pay or can't afford to pay then you will need to kill them so we at the company can repossess their soul and make them work off their debts in other ways.    ",
+    "skip": true
   },
   {
     "reward": "300 credits and the unlocking of the Cypher template stacking.",
@@ -6730,10 +7070,10 @@
       {
         "reward": "Bound retinue members can be \"Adjusted\" as if you had \"Advanced Runes: Mind\" and \"Advanced Runes: Body\"",
         "type": "Other",
-        "value": "Capture a good heroic target and turn them in your demonic champion."
+        "value": "Capture a good heroic target and turn them into your demonic champion."
       },
       {
-        "reward": "In each of the 7 planes appears a pit that spawns demons (sin related), you may cotumize their features, they are loyal to you",
+        "reward": "In each of the 7 planes appears a pit that spawns demons (sin related), you may customize their features, they are loyal to you",
         "type": "Other",
         "value": "Conquer a mundane world and corrupt it's population to indulge in the sin you represent."
       },
@@ -6750,7 +7090,7 @@
       {
         "reward": "100 credits and the defeated Demon/Devil powers.",
         "type": "Other",
-        "value": "Defeat or Kill a Demon/Devil that rules over an Hell/Underworld (Repeatable)."
+        "value": "Defeat or Kill a Demon/Devil that rules over a Hell/Underworld (Repeatable)."
       },
       {
         "reward": 1,
@@ -6758,7 +7098,7 @@
         "value": "Defeat or Kill \"Satan\" or so called Demon/Devil. (Can't be a weakling)"
       },
       {
-        "reward": "Can transform beings one or more tiers lower than you into demons related to the sin you rapresent.",
+        "reward": "Can transform beings one or more tiers lower than you into demons related to the sin you represent.",
         "type": "Other",
         "value": "What about some nuns? In a world create a convent of nuns that worship you."
       },
@@ -6773,9 +7113,9 @@
         "value": "Destroy a pantheon of gods."
       },
       {
-        "reward": "The Mc credit value.",
+        "reward": "The MC credit value.",
         "type": "Other",
-        "value": "Make a deal with the Mc of a world and ruin their future. (repeatable)"
+        "value": "Make a deal with the MC of a world and ruin their future. (repeatable)"
       },
       {
         "reward": "\"Additional Binding\"",
@@ -6793,7 +7133,7 @@
         "value": "Bring apocalypse and destruction to a world (Must result in extinction of the main race)."
       },
       {
-        "reward": "You can create artificial souls and imprint your will on them, insert them in objects or demons they gain a part of your powers.",
+        "reward": "You can create artificial souls and imprint your will on them, insert them in objects/demons, they gain a part of your powers.",
         "type": "Other",
         "value": "Reach tier X."
       },
@@ -6805,7 +7145,7 @@
       {
         "reward": "You can summon the building to you it will be indestructible, while it's in sight you are 1 tier higher and your enemies 1 lower",
         "type": "Other",
-        "value": "Create a Magnum Opus of sin, a great building that is the culmination of your choosen sin, it must ooze with sin, a truly grand and magnificent construcion \"Consacrated\" multiple times with ritual rappresenting the sin."
+        "value": "Create a Magnum Opus of sin, a great building that is the culmination of your chosen sin, it must ooze with sin, a truly grand and magnificent construction \"Consecrated\" multiple times with rituals representing the sin."
       }
     ],
     "conditions": [
@@ -6832,7 +7172,7 @@
       }
     ],
     "budget": 275,
-    "desc": "Ever thought about being the literal Devil and ruling over hell and the souls of the damned? No? well whatever, now you have the chance to make it more than an intrusive thought, you're welcome!\n\nFirst of all to accept this mission you must satisfy the following conditions:\n|Have the heritage perks \"Death Mask\" & \"Your Soul Is Mine\"|\n|Have the Binding method \"Tantric Arts\" & \"Art of Summoning\"|\n|Have the perks \"Signed and Sealed\" & \"Letter of the Law\"|\n\nGot them all? Good! Then it's time for juicy details, you may be asking yourself what exactly this mission entails, well pretty simple, not really, anyway let's start:\n\n-Your Psychopomp appearance gained trough the perk \"Death Mask\" will become that of a demon, you may customize it as you wish but it must have at least 3 demonic features, like horns wings or a tail.\n\n-You shall receive the perk \"The Unquiet Grave\" for free, but things will be a bit different, you will start with a plane where you as the ruler of hell reside, under this plane there will be 7 more, one for each capital sin, the size of your plane will be the sum of the size of the other 7, the size of this 7 planes of sin will depend on the amount of souls they house, 1 soul equals 1 meter added to the plane radius, but they will all start at 10 square Km.\n\n-As \"The\" devil you can't just waltz in a world like any other day! you won't be able to leave your hell, unless you are summoned in a world from someone already on said world. If you accepted this mission at Chargen you won't start in your choosen world, and will have to access it trough \"Demonic Grimoire\" if you are able to, to compensate for the loss have a 20% increase to your Chargen budget.\n\n-How do you get summoned? You will be given the ability \"Demonic Grimoire\" you will be able once a day to create a Grimoire and send it to a world of you choice, this book will have a similar ability to \"Jewels of Discord\" as it will steadly increase the urge to be opened and used, it will subtly pull a target to it's first location, and with time induce them to try and summon \"something\", the target will rationalize it as \"It's fake anyway\", this will result of course in you being summoned. Targets 2 tiers above you will be immune to the Grimoire effects.\n\n-Got summoned what then? The target that has summoned you will be instantly bound and will work as an anchor for you to that world, if she dies in a permanent way she will directly appear in your hell, and you will be forced out of the world. As long as she remains alive you are able to roam the world freely. If you wish to leave a world and return at a later date, you can perform in said world a special tantric ritual that will cost 10 Resonance, you will be able to create a permanent portal between Hell and the world that you can toggle on and off whenever you want.\n-What about contracts? you'll gain the ability \"Deal With The Devil\" in basic words you are able to make verbal or written deals with anyone, but they will always be interpreted in the most advantageous way for you, plus this contracts have the power to alter reality itself to make the deal come true and dosen't depend on your power, basically a wish granting deal.\n\n-The souls empower you, the more souls in your hell the more powerfull you are, everything from talents lures templates and world acquired abilities are rendered more powerfull by the number of souls you possess. Starting from 10 souls your powers will be doubled then for each additional zero to the number of souls the multiplier will double. Every 7 million souls you will gain one tier.\n\n-You must choose one of the 7 sins as your own, you'll become a physical rappresentation of that sin, beings one Tier or more below yours, in your presence will easly and rapidly start to feel influenced by your sin, for example for Greed they may try to get their hands on anything of value in sight, or for Lust they'll become a dog in heat, you may choose to toggle this effect on and off. You can also direct this influence to someone in particular greatly enhancing it's effects and easly bendig them to you will. Lastly after choosing your sin you'll be able to create a custom power of your choice that embodies the choosen sin, for example for Greed it may be the ability to become stronger the more treasures you possess, or for gluttony the ability to eat energy based attacks, the only limit is that it must be easly connected to the sin, the Tier of this power will always be equal to your Tier.\n\nFun part is over! Now it's time to see what is required of you to complete the mission:\n|Accumulate a total of One Million souls in each of your 7 planes of sin|\n|Have at least 1 tier 8 being to oversee each of the 7 planes|\n|Connect Hell to 10 different world trough permanent portals|\n|Make 1000 deals trough \"Deal With The Devil\"|\n|Capture 10 good and 10 Evil Targets|\n|Have 10 cults in your name|"
+    "desc": "Ever thought about being the literal Devil and ruling over hell and the souls of the damned? No? well whatever, now you have the chance to make it more than an intrusive thought, you're welcome!\n\nFirst of all to accept this mission you must satisfy the following conditions:\n|Have the heritage perks \"Death Mask\" & \"Your Soul Is Mine\"|\n|Have the Binding method \"Tantric Arts\" & \"Art of Summoning\"|\n|Have the perks \"Signed and Sealed\" & \"Letter of the Law\"|\n\nGot them all? Good! Then it's time for juicy details, you may be asking yourself what exactly this mission entails, well pretty simple, not really, anyway let's start:\n\n-Your Psychopomp appearance gained through the perk \"Death Mask\" will become that of a demon, you may customize it as you wish but it must have at least 3 demonic features, like horns wings or a tail.\n\n-You shall receive the perk \"The Unquiet Grave\" for free, but things will be a bit different, you will start with a plane where you as the ruler of hell reside, under this plane there will be 7 more, one for each capital sin, the size of your plane will be the sum of the size of the other 7, the size of this 7 planes of sin will depend on the amount of souls they house, 1 soul equals 1 meter added to the plane radius, but they will all start at 10 square kilometers.\n\n-As \"The\" devil you can't just waltz in a world like any other day! you won't be able to leave your hell, unless you are summoned into a world from someone already on said world. If you accepted this mission at Chargen you won't start in your chosen world, and will have to access it through \"Demonic Grimoire\" if you are able to, to compensate for the loss have a 20% increase to your Chargen budget.\n\n-How do you get summoned? You will be given the ability \"Demonic Grimoire\" you will be able once a day to create a Grimoire and send it to a world of your choice, this book will have a similar ability to \"Jewels of Discord\" as it will steadly increase the urge to be opened and used, it will subtly pull a target to it’s first location, and with time induce them to try and summon \"something\", the target will rationalize it as \"It's fake anyway\", this will result of course in you being summoned. Targets 2 tiers above you will be immune to the Grimoire effects.\n\n-Got summoned what then? The target that has summoned you will be instantly bound and will work as an anchor for you to that world, if he/she dies in a permanent way he/she will directly appear in your hell, and you will be forced out of the world. As long as he/she remains alive you are able to roam the world freely. If you wish to leave a world and return at a later date, you can perform in said world a special tantric ritual that will cost 10 Resonance, you will be able to create a permanent portal between Hell and the world that you can toggle on and off whenever you want.\n-What about contracts? you'll gain the ability \"Deal With The Devil\" in basic words you are able to make verbal or written deals with anyone, but they will always be interpreted in the most advantageous way for you, plus these contracts have the power to alter reality itself to make the deal come true and dosen't depend on your power, basically a wish granting deal.\n\n-The souls empower you, the more souls in your hell the more powerful you are, everything from talents, lures, templates and world acquired abilities are rendered more powerful by the number of souls you possess. Starting from 10 souls your powers will be doubled then for each additional zero to the number of souls the multiplier will double. Every 7 million souls you will gain one tier.\n\n-You must choose one of the 7 sins as your own, you'll become a physical representation of that sin, beings one Tier or more below yours, in your presence will easly and rapidly start to feel influenced by your sin, for example for Greed they may try to get their hands on anything of value in sight, or for Lust they'll become a dog in heat, you may choose to toggle this effect on and off. You can also direct this influence to someone in particular greatly enhancing it's effects and easly bending them to you will. Lastly after choosing your sin you'll be able to create a custom power of your choice that embodies the choosen sin, for example for Greed it may be the ability to become stronger the more treasures you possess, or for gluttony the ability to eat energy based attacks, the only limit is that it must be easly connected to the sin, the Tier of this power will always be equal to your Tier.\n\nFun part is over! Now it's time to see what is required of you to complete the mission:\n|Accumulate a total of One Million souls in each of your 7 planes of sin|\n|Have at least 1 tier 8 being to oversee each of the 7 planes|\n|Connect Hell to 10 different world through permanent portals|\n|Make 1000 deals through \"Deal With The Devil\"|\n|Capture 10 good and 10 Evil Targets|\n|Have 10 cults in your name|"
   },
   {
     "reward": "100 + Any perk or Rides up to 100 credits.",
@@ -7204,6 +7544,7 @@
     "rewardType": "IMG Tickets",
     "source": "",
     "title": "My Zombie Academia",
+    "uid": "mMipW",
     "loca": "My Hero Academia",
     "lewd": false,
     "scope": "Grand",
@@ -7226,7 +7567,7 @@
       {
         "reward": 150,
         "type": "Credits",
-        "value": "Kill zombie hawks"
+        "value": "Kill zombie Hawks"
       },
       {
         "reward": 200,
@@ -7241,7 +7582,7 @@
       {
         "reward": 350,
         "type": "Credits",
-        "value": "Kill zombie all for one"
+        "value": "Kill zombie All For One"
       },
       {
         "reward": 50,
@@ -7294,7 +7635,7 @@
         "value": "Create a zombie vaccine"
       },
       {
-        "reward": "One quirk from 1-A of your choice not including One for all",
+        "reward": "One quirk from 1-A of your choice not including One For All",
         "type": "Other",
         "value": "Kill class 1-Z        (Kill all hero students in 1-A that have been turned)"
       }
@@ -7307,15 +7648,14 @@
         "value": "Build a human settlement with over 100,000 people in it"
       },
       {
-        "value": "Create a Immunity shot for the zombie virus and give it to all people in your settlement"
+        "value": "Create an Immunity shot for the zombie virus and give it to all people in your settlement"
       },
       {
-        "value": "You can not possess anyone above tier 6"
+        "value": "You cannot possess anyone above tier 6"
       }
     ],
     "budget": 140,
-    "desc": "Ok so we have a big problem, You see sometimes we send random beings in to worlds to test our identify sentient entity kill and integration system or as we call it our Isekai system, but today we may have had a little mishap due to a new intern that has resulted in a fairly large group of walkers from a walking dead universe to be sent to a MHA universe and have been randomly scattered around the globe at the time of the USJ attack which has caused some unforeseen issue's.\n\nYeah see, the problem with biological super powers such as quirks is they will also be effected if the persons biology is radically changed by things such as crippling injury's, human experimentation and oh I don't know a VERY SUPER INFECTIOUS ZOMBIE VIRUS OUTBREAK, And due to said outbreak all quirk users have had a increase in their quirks power due to the human limits that kept them save form the backlash of their powers being removed and some even even experienced mutations in their quirks , But this also has the side effect of some stronger quirked zombies damaging themselves.\n\nOk enough messing around here is your mission. Kill all of the zombies, stop further infection and re-establish some form of society. Goodluck and BTW a few zombies landed in the USJ have fun.   ",
-    "uid": "mMipW"
+    "desc": "Ok so we have a big problem. You see sometimes we send random beings in to worlds to test our identify sentient entity kill and integration system or as we call it our ISEKAI system, but today we may have had a little mishap due to a new intern that has resulted in a fairly large group of walkers from a walking dead universe to be sent to a MHA universe and have been randomly scattered around the globe at the time of the USJ attack which has caused some unforeseen issues.\n\nYeah see, the problem with biological super powers such as quirks is they will also be affected if the person’s biology is radically changed by things such as crippling injuries, human experimentation and oh I don't know a VERY SUPER INFECTIOUS ZOMBIE VIRUS OUTBREAK. And due to said outbreak all quirk users have had a increase in their quirks power due to the human limits that kept them safe from the backlash of their powers being removed and some even even experienced mutations in their quirks. But this also has the side effect of some stronger quirked zombies damaging themselves.\n\nOk enough messing around here is your mission. Kill all of the zombies, stop further infection and re-establish some form of society. Good luck and BTW a few zombies landed in the USJ have fun.   "
   },
   {
     "reward": "15% off of 1 Greek item from the Green Eye Orb market, and one of the summoned Servants is automatically captured with the command spells of their Master given to you. (the Servant/Master pair is randomly selected)",
@@ -7439,6 +7779,7 @@
     "rewardType": "Credits",
     "source": "",
     "title": "Empowered Humanity",
+    "uid": "SBvRS",
     "loca": "Mass Effect",
     "lewd": false,
     "scope": "Grand",
@@ -7464,17 +7805,17 @@
         "value": "100% of humanity is empowered"
       },
       {
-        "reward": "Science and Engineering Talents OR Psycic/Soul talent",
+        "reward": "Science and Engineering Talents OR Psychic/Soul talent",
         "type": "Perks",
         "value": "Human technology is some form of magitech, psitech, or other form of technology that is only possible due to their abilities"
       },
       {
-        "reward": "All human created intelligences gain the ability to using humanities abilities and are considered human by the company",
+        "reward": "All human created intelligences gain the ability to using humanity’s abilities and are considered human by the company",
         "type": "Other",
         "value": "Humanity creates and makes widespread usage of some form of AI"
       },
       {
-        "reward": "All humans get a lesser version of Psycic/Soul talent, whichever is more appropriate for the abilities they have.",
+        "reward": "All humans get a lesser version of Psychic/Soul talent, whichever is more appropriate for the abilities they have.",
         "type": "Other",
         "value": "Humanity dominates the galactic scene when they make first contact"
       },
@@ -7495,15 +7836,14 @@
         "value": "Humanity must not be totally dependent on the mass relays for FTL travel"
       },
       {
-        "value": "All Reapers must be either destroyed or sold to the company"
+        "value": "All Reapers must be either destroyed or sold to The Company"
       },
       {
-        "value": "The supernatural powers of humanity can be anything that, if seen by citadel scientists, would be considered physics breaking"
+        "value": "The supernatural powers of humanity can be anything that, if seen by Citadel scientists, would be considered physics breaking"
       }
     ],
     "budget": 700,
-    "desc": "Here's an interesting mission, you will be sent to Earth five years before the Prothean ruins on Mars are found. This gives you 42 years until the Reapers attack, assuming nothing sets them off early and the Alpha Relay is destroyed. \n\nIn this time frame you will uplift humanity and prepare them for what is to come. Create a mass empowering event of some sorts to where a significant portion of humanity has some sort of supernatural powers, and are also technologically advanced enough to dominate on the galactic scene.\n\nJust be careful not to set off the reapers too early.",
-    "uid": "SBvRS"
+    "desc": "Here's an interesting mission, you will be sent to Earth five years before the Prothean ruins on Mars are found. This gives you 42 years until the Reapers attack, assuming nothing sets them off early and the Alpha Relay is destroyed. \n\nIn this time frame you will uplift humanity and prepare them for what is to come. Create a mass empowering event of some sort to where a significant portion of humanity has some sort of supernatural powers, and are also technologically advanced enough to dominate on the galactic scene.\n\nJust be careful not to set off the Reapers too early."
   },
   {
     "reward": "Weed that can pacify Tier 11-13 beings",
@@ -8130,6 +8470,7 @@
     "rewardType": "Credits",
     "source": "",
     "title": "Pika Pika You ever been kicked at the speed of light",
+    "uid": "xAUdb",
     "loca": "Pokemon",
     "lewd": false,
     "scope": "Standard",
@@ -8137,29 +8478,28 @@
       {
         "reward": 50,
         "type": "Credits",
-        "value": "Kick jessie, James and meowth at the speed of light"
+        "value": "Kick Jessie, James and Meowth at the speed of light"
       }
     ],
     "conditions": [
       {
-        "value": "Get ash's other Pokémon to tier 6"
+        "value": "Get Ash's other Pokémon to tier 6"
       },
       {
-        "value": "Win the kanto league"
+        "value": "Win the Kanto League"
       },
       {
-        "value": "make ash study Pokémon for at least 1 month"
+        "value": "make Ash study Pokémon for at least 1 month"
       },
       {
         "value": "Possess a Pikachu"
       },
       {
-        "value": "Power swap with kizaru (the cost is covered by the compan)"
+        "value": "Power swap with Kizaru (the cost is covered by The Company)"
       }
     ],
     "budget": 140,
-    "desc": "K, this one is a little cursed not gonna lie but what you gotta do is possess a Pikachu but not just any Pikachu but ash's Pikachu in a bid to prove that he could have won his first league if he put in more effort training and had stronger Pokémon, so your job is to be his Pokémon and help him catch stronger Pokémon then canon and to do this we are providing a free power swap of our choice in exchange for taking on some physical characteristics of your swapping target, oh and that target is kizaru. Goodluck",
-    "uid": "xAUdb"
+    "desc": "K, this one is a little cursed not gonna lie but what you gotta do is possess a Pikachu but not just any Pikachu but Ash's Pikachu in a bid to prove that he could have won his first league if he put in more effort training and had stronger Pokémon, so your job is to be his Pokémon and help him catch stronger Pokémon than canon and to do this we are providing a free power swap of our choice in exchange for taking on some physical characteristics of your swapping target, oh and that target is Kizaru. Good luck."
   },
   {
     "reward": 500,
@@ -56082,8 +56422,38 @@
     "title": "Who dares protect The Emperor?"
   },
   {
+    "reward": "One tier 9 or lower Nasuverse companion of your choice and 200 credits",
+    "image": "https://cdn.imgchest.com/files/e4gdcv839e4.png",
     "author": "jim361",
-    "budget": 955,
+    "rewardType": "Other",
+    "source": "",
+    "title": "Grand order",
+    "uid": "lI5sO",
+    "loca": "Fate/Grand Order",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Pseudo Singularity I - Quarantined Territory of Malice: Shinjuku"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Pseudo Singularity II - Subterranean World of Folklore: Agartha"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Pseudo Singularity III (Parallel Singularity Subspecies) - The Stage of Carnage: Shimosa [Tournament of the Seven Heroic Spirit Swordmasters]"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Pseudo Singularity IV - The Forbidden Advent Garden: Salem"
+      }
+    ],
     "conditions": [
       {
         "value": "Singularity F - Flame Contaminated City: Fuyuki"
@@ -56113,32 +56483,9 @@
         "value": "Final Singularity - The Grand Temple of Time: Salomon [The Divine Zenith Meteor Shower]"
       }
     ],
+    "budget": 955,
     "desc": "Resolve the seven singularitys and restore the human order",
-    "image": "https://cdn.imgchest.com/files/e4gdcv839e4.png",
-    "loca": "Fate/Grand Order",
-    "objectives": [
-      {
-        "reward": "50 credits",
-        "value": "Pseudo Singularity I - Quarantined Territory of Malice: Shinjuku"
-      },
-      {
-        "reward": "50 credits",
-        "value": "Pseudo Singularity II - Subterranean World of Folklore: Agartha"
-      },
-      {
-        "reward": "50 credits",
-        "value": "Pseudo Singularity III (Parallel Singularity Subspecies) - The Stage of Carnage: Shimosa [Tournament of the Seven Heroic Spirit Swordmasters]"
-      },
-      {
-        "reward": "50 credits",
-        "value": "Pseudo Singularity IV - The Forbidden Advent Garden: Salem"
-      }
-    ],
-    "reward": "One tier 9 or lower Nasuverse companion of your choice and 200 credits",
-    "scope": "Grand",
-    "source": "",
-    "title": "Grand order",
-    "uid": "lI5sO"
+    "skip": true
   },
   {
     "author": "Zader40",
