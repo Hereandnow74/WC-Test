@@ -128,14 +128,12 @@
       </div>
       <div class="flex justify-center gap-2">
         <Button
-          :disabled="!buttonActive"
-          :label="mission ? 'Send Edited Mission': 'Send'"
-          size="small"
+          label="Preview"
           class="px-8"
           bg-color="bg-amber-600"
-          @click="buttonActive ? addPerk() : errorMessage = 'Wait 30s before submitting again.'"
+          @click="addPerk()"
         />
-        <Toggle v-model="temporary" class="cursor-help" label="Do not send to global" title="Mission will be added temporary to missions page, so you will be able to check it out." />
+        <!-- <Toggle v-model="temporary" class="cursor-help" label="Do not send to global" title="Mission will be added temporary to missions page, so you will be able to check it out." /> -->
       </div>
     </div>
     <Modal v-if="showRules" label="Rules for submitting a mission" @click="showRules = false">
@@ -183,17 +181,18 @@ import { toFormValidator } from '@vee-validate/zod'
 
 import type { Mission } from 'global'
 import type { PropType } from '@vue/runtime-core'
-import { proposeMission } from '~/logic'
+import { proposeMission, toggleShowAddMission, showAddMission } from '~/logic'
 import { useWorlds } from '~/data/constants'
 import { useSaves } from '~/store/saves'
 
 const props = defineProps({
   mission: {
     type: Object as PropType<Mission>,
+    default: () => ({}),
   },
-  missions: {
-    type: Array as PropType<Mission[]>,
-    default: () => ([]),
+  closeFunction: {
+    type: Function,
+    default: () => () => { },
   },
 })
 
@@ -207,7 +206,7 @@ const temporary = ref(false)
 const showRules = ref(false)
 
 const { allWorldNames } = useWorlds()
-const { userNickname } = useSaves()
+const { userNickname, localMissions } = useSaves()
 
 const schema = toFormValidator(
   zod.object({
@@ -271,12 +270,15 @@ const addPerk = handleSubmit((values) => {
   const proposal = { ...values, date: new Date().toString(), seed }
   if (props.mission?.uid)
     proposal.uid = props.mission.uid
-  if (!temporary.value)
-    proposeMission(proposal, () => successMessage.value = 'Mission was send successfully, await until I review and add it')
+  // if (!temporary.value)
+  //   proposeMission(proposal, () => successMessage.value = 'Mission was send successfully, await until I review and add it')
   userNickname.value = values.author
-  props.missions.unshift({ ...proposal, temprorary: true })
-  buttonActive.value = false
-  setTimeout(() => { buttonActive.value = true; successMessage.value = ''; errorMessage.value = '' }, 30 * 1000)
+  localMissions.value.unshift({ ...proposal, temprorary: true })
+  props.closeFunction()
+  // const router = useRoute()
+  // router.push({ name: 'missions' })
+  // buttonActive.value = false
+  // setTimeout(() => { buttonActive.value = true; successMessage.value = ''; errorMessage.value = '' }, 30 * 1000)
 })
 
 </script>

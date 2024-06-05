@@ -1115,7 +1115,7 @@ genericPerks.push({
   uid: 'Pqi8M',
   title: 'Four Seasons',
   category: 'Generic',
-  requires: 'Any female RWBY character of T6 or below',
+  requires: 'Any female user of RWBY Aura',
   complex: 'target_c',
   multiple: true,
   image: 'https://i.ibb.co/1QhZdpg/Four-Seasons.jpg',

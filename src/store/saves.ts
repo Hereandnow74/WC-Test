@@ -14,6 +14,7 @@ const buildList = ref([])
 const userNickname = useStorage('nickname', '')
 
 const missionFavorites = useStorage<string[]>('missionFavorites', [])
+const localMissions = useStorage('localMissions', [])
 
 export function useSaves() {
   return {
@@ -21,5 +22,6 @@ export function useSaves() {
     buildList,
     userNickname,
     missionFavorites,
+    localMissions,
   }
 }

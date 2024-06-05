@@ -46,10 +46,10 @@
       <div v-if="page === 0" class="flex gap-2 justify-center flex-wrap">
         <Input v-model="search" placeholder="Search" class="flex-grow" />
         <div class="max-w-60">
-          <Select v-model="author" :options="authorOptions" label="Author" />
+          <InputWithSearch v-model="author" idd="authorSearch" :list="authorOptions" placeholder="Author" />
         </div>
         <div>
-          <InputWithSearch v-model="world" :list="worldOptions" placeholder="World name" class="max-w-68" />
+          <InputWithSearch v-model="world" idd="worldSearchM" :list="worldOptions" placeholder="World name" class="max-w-68" />
         </div>
         <div>
           <Select v-model="scope" :options="scopeOptions" label="Scope" />
@@ -75,7 +75,7 @@
       </div>
     </div>
     <div class="h-8"></div>
-    <component :is="addMissionComponent" v-show="showAddMission" :missions="missions" @click="toggleShowAddMission()" />
+    <component :is="addMissionComponent" v-show="showAddMission" :close-func="() => showAddMission = false" @click="toggleShowAddMission()" />
   </div>
 </template>
 
@@ -93,7 +93,7 @@ import { useSaves } from '~/store/saves'
 import { getMissionsLikes, searchMissions } from '~/logic/server'
 
 const { missionRewards } = usePlayStore()
-const { missionFavorites } = useSaves()
+const { missionFavorites, localMissions } = useSaves()
 const { currentWorld } = useChargenStore()
 
 const addMissionComponent = computed(() => defineAsyncComponent(() => import('../components/modals/AddMission.vue')))
@@ -122,18 +122,19 @@ async function getMissions() {
   missions.value = (await import('~/data/json/missions.json')).default
 }
 
+const allMissions = computed(() => [...localMissions.value, ...missions.value])
+
 getMissions()
 
 const authorOptions = computed(() => {
-  const authors = Object.keys(groupBy(missions.value, 'author')).sort((a, b) => a.localeCompare(b))
-  authors.unshift('Any')
+  const authors = Object.keys(groupBy(allMissions.value, 'author')).sort((a, b) => a.localeCompare(b))
   return authors
 })
-const worldOptions = computed(() => Object.keys(groupBy(missions.value, 'loca')))
-const missionCountByAuthor = computed(() => Object.entries(groupBy(missions.value, 'author')).map(([author, missions]) => ({ author, count: missions.length })).sort((a, b) => b.count - a.count))
+const worldOptions = computed(() => Object.keys(groupBy(allMissions.value, 'loca')))
+const missionCountByAuthor = computed(() => Object.entries(groupBy(allMissions.value, 'author')).map(([author, allMissions]) => ({ author, count: allMissions.length })).sort((a, b) => b.count - a.count))
 const scopeOptions = ['Any', 'Quick', 'Standard', 'Grand']
 
-const author = ref('Any')
+const author = ref('')
 const world = ref('')
 const scope = ref('Any')
 
@@ -148,7 +149,7 @@ const options = reactive({
   shouldSort: false,
 })
 
-const fuse = computed(() => new Fuse(missions.value, options))
+const fuse = computed(() => new Fuse(allMissions.value, options))
 
 const searchedMissions = computed(() => {
   const sr = world.value || '!^xxx'
@@ -169,12 +170,12 @@ const searchedMissions = computed(() => {
     })
   }
   if (scope.value !== 'Any') sopt.$and.push({ scope: `=${scope.value}` })
-  if (author.value !== 'Any') sopt.$and.push({ author: `="${author.value}"` })
+  if (author.value !== '') sopt.$and.push({ author: `"${author.value}"` })
   return fuse.value.search(sopt)
 })
 
 watch([world, scope, author], () => {
-  if (world.value || (author.value && author.value !== 'Any') || (scope.value && scope.value !== 'Any'))
+  if (world.value || (author.value && author.value !== '') || (scope.value && scope.value !== 'Any'))
     options.shouldSort = true
   else
     options.shouldSort = false
@@ -201,7 +202,7 @@ if (params.q) {
 const singleMission = computed(() => {
   if (missionUID.value) {
     page.value = 3
-    const mission = find(missions.value, { uid: missionUID.value })
+    const mission = find(allMissions.value, { uid: missionUID.value })
     return mission ? [mission] : []
   }
   else {
@@ -223,7 +224,7 @@ const missionsLikes = ref([])
 
 const nineMissions = computed(() => {
   const res = []
-  const generators = [() => sample(missions.value), () => gen2.generateRandom(currentWorld.value.worldName).getObject()]
+  const generators = [() => sample(allMissions.value), () => gen2.generateRandom(currentWorld.value.worldName).getObject()]
   for (let I = 0; I < 9; I++)
     res.push(generators[random(0, 1)]())
   const uids = res.filter(mission => !!mission?.uid).map(mission => mission.uid)
@@ -244,9 +245,10 @@ watch(page, async() => {
   if (page.value !== 4) return
   const opt = {}
   opt.sortBy = 'likes:desc'
-  missionsLikes.value = await searchMissions({ page: 1, limit: 25, ...opt })
-  const uids = missionsLikes.value.map(ml => ml.uid)
-  top25.value = missions.value.filter(mission => uids.includes(mission.uid))
+  const tp25 = await searchMissions({ page: 1, limit: 25, ...opt })
+  missionsLikes.value.push(...tp25)
+  const uids = tp25.map(ml => ml.uid)
+  top25.value = allMissions.value.filter(mission => uids.includes(mission.uid)).sort((a, b) => uids.indexOf(a.uid) - uids.indexOf(b.uid))
 })
 
 watch(filteredMissions, () => {

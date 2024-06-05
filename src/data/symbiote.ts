@@ -490,7 +490,7 @@ export const symbioteBinding: PerkFull[] = [
     cost: 40,
     category: 'Binding',
     type: 'Expansion',
-    image: 'https://cdn.discordapp.com/attachments/925963686433132644/1024774391978004551/images_-_2022-09-29T023039.438.jpg',
+    image: 'https://images2.imgbox.com/04/46/Dz6JdcXb_o.jpg',
     freebies: {
       talentPerks: [{ title: 'take Everlasting Talent', cost: 0, count: 1 }],
     },

@@ -20,7 +20,7 @@
           <span class="text-gray-500 ml-auto whitespace-nowrap"> Tier: <span class="text-green-500"><TierDisplay :tier="Math.max(startingOrigin.tier || 1, yourTier)" /></span></span>
         </div>
         <Input v-if="editMode" v-model="startingOrigin.character" class="mt-1" placeholder="Your possess name" />
-        <span v-if="startingOrigin.w || char.w" class="text-gray-500">From: <span class="text-gray-400">{{ startingOrigin.w || char.w }}</span></span>
+        <span v-if="startingOrigin.w || char.w" class="text-gray-500">From: <span class="text-gray-400">{{ startingOrigin.w || char.w }} <span v-if="char.d">(<span class="text-gray-300">{{ char.d }}</span>)</span> </span></span>
         <div v-if="!infoMode" class="flex gap-2 mb-1 text-sm">
           <Tiers
             v-model="startingOrigin.tier"

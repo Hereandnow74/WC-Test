@@ -407,8 +407,8 @@
     "additional": "D.Va has her personal mech. Ashe has B.O.B. as a familiar. Mei has Snowball as a familiar.",
     "condition": [
       {
-        "name": "Omnic crisis",
-        "rating": 5
+        "name": "Omnic Crisis",
+        "rating": 6
       }
     ],
     "uid": "QxVgx"
@@ -1565,7 +1565,7 @@
     "rating": 6,
     "worldName": "Naruto",
     "image": "https://cdn.imgchest.com/files/84jdcwrd2l4.png",
-    "additional": "The various jinchuuriki have their Tailed Beasts as familiars. Chakra is a form of ki, affected by Soul Talent and Advanced Template Stacking (Enlightened), and usable by anyone. Clone techniques split the user’s internal energy pools evenly across the original body and all clones; Inexhaustible merely prevents these diminished pools from depleting. Stress Defense will protect against the drawbacks of mass clone-based training.",
+    "additional": "The various jinchuuriki have their Tailed Beasts as familiars. Chakra is a form of ki, affected by Soul Talent, and usable by anyone. Clone techniques split the user’s internal energy pools evenly across the original body and all clones; Inexhaustible merely prevents these diminished pools from depleting. Stress Defense will protect against the drawbacks of mass clone-based training.",
     "condition": [
       {
         "name": "Standard",
@@ -1871,7 +1871,7 @@
     ]
   },
   {
-    "rating": 7,
+    "rating": 8,
     "worldName": "World of Darkness",
     "condition": [
       {
@@ -2960,7 +2960,7 @@
         "official": true
       }
     ],
-    "image": "https://www.thatvideogameblog.com/wp-content/uploads/2017/08/disgaea-5-complete-set-to-sell-over-100k-in-the-west.jpg",
+    "image": "https://i.imgur.com/dG2SQ1A.jpeg",
     "uid": "iUPEQ"
   },
   {

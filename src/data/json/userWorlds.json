@@ -901,7 +901,6 @@
     "worldName": "Wheel of Time",
     "rating": 7,
     "image": "https://i.imgur.com/5TFJH2kl.jpg",
-    "additional": "Dark One's taint on Saidin halves effectiveness of Corruption, Mind, & Drain Defenses for all male Channelers until the taint is cleanse from the One Power. Only applies during the Third Age.\n\nUsers of the One Power are subjected to its gendered rules, Saidin channelers, the male half of the One Power being on average stronger than Saidar channelers, while a linked circle of 13 Saidar channelers can overpower the strongest Saidin channeler.",
     "condition": [
       {
         "name": "After Breaking",
@@ -1202,7 +1201,7 @@
   },
   {
     "worldName": "Supernatural",
-    "rating": 5,
+    "rating": 7,
     "image": "https://cdn.imgchest.com/files/j7kzceolka7.png",
     "uid": "ppfmxn"
   },
@@ -1956,7 +1955,7 @@
     "uid": "6VRLjV"
   },
   {
-    "worldName": "Inukami",
+    "worldName": "Inukami!",
     "rating": 5,
     "image": "https://blacknerdproblems.com/wp-content/uploads/2015/09/318519.jpg",
     "uid": "GyiYaK"
@@ -4993,7 +4992,7 @@
     "uid": "LQHitA"
   },
   {
-    "worldName": "Ar Tonelico",
+    "worldName": "Ar tonelico",
     "rating": 8,
     "image": "https://cdn.imgchest.com/files/wye3cpj5rr4.png",
     "uid": "9xc43H"
@@ -7206,12 +7205,23 @@
   {"uid":"GOOhAT","worldName":"Palworld","rating":5,"image":"https://cdn.cloudflare.steamstatic.com/steam/apps/1623730/header.jpg?t=1657680791"},
   {"uid":"rqOBVs","worldName":"Gushing over Magical Girls","rating":5,"image":"https://i.imgur.com/wZf5Dx0.jpg"},
   {"uid":"rctMlH","worldName":"Lethal Company","rating":5,"image":"https://cdn.akamai.steamstatic.com/steam/apps/1966720/capsule_616x353.jpg?t=1700231592"},
-  {"uid":"nAUUWg","worldName":"Helldivers II","rating":5,"image":"https://i.imgur.com/5xHND4X.jpg"},
+  {"uid":"nAUUWg","worldName":"Helldivers","rating":5,"image":"https://i.imgur.com/5xHND4X.jpg"},
   {"uid":"JyMsNu","worldName":"The Wrong Way to Use Healing Magic","rating":7,"image":"https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/6fe06a15f85835d629c5735292219961.jpe"},
   {"uid":"GETukL","worldName":"Kouya No Kotobuki Hikoutai","rating":3,"image":"https://img3.gelbooru.com/images/b5/6b/b56bd6ae9e52841dd91ea6e4fcb68019.jpg"},
   {"uid":"COcGEq","worldName":"Bible Black","rating":4,"image":"https://image.tmdb.org/t/p/original/wvLcwgl0t9VMpwcWiyOUYP2TrFZ.jpg"},
   {"uid":"jPCmLs","worldName":"Back to the Future","rating":2,"image":"https://www.nme.com/wp-content/uploads/2016/09/backtothefuture-1.png"},
   {"uid":"JyrMpY","worldName":"Stop!! Hibari-kun","rating":2,"image":"https://cdn.imgchest.com/files/my8xc8q9kb4.jpg"},
   {"uid":"NmUfmf","worldName":"Wings of Fire","rating":7,"image":"https://i.imgur.com/4pmri9Z.jpeg"},
-  {"uid":"KeHdJL","worldName":"Keijo","rating":1,"image":"https://wallpapercave.com/wp/wp3618832.png"}
+  {"uid":"KeHdJL","worldName":"Keijo","rating":1,"image":"https://wallpapercave.com/wp/wp3618832.png"},
+  {"uid":"DNDmbC","worldName":"The Coffin of Andy and Leyley","rating":4,"image":"https://i.imgur.com/AljlNM7.jpeg"},
+  {"uid":"ZLdoYC","worldName":"Shimoneta","rating":3,"image":"https://img.rgstatic.com/content/show/ae29981f-44fb-4fe4-915a-cea5cb1cf23d/backdrop-1920.jpg"},
+  {"uid":"TqNfaK","worldName":"Tis Time For \"Torture,\" Princess","rating":4,"image":"https://i.ibb.co/ZNbb7tc/image.png"},
+  {"uid":"novdPL","worldName":"Unicorn Overlord","rating":5,"image":"https://i.imgur.com/eMPjkCK.jpeg"},
+  {"uid":"NTvprN","worldName":"South Park","rating":5,"image":"https://images2.imgbox.com/7a/99/DNWeC6dd_o.jpg"},
+  {"uid":"KgiOvH","worldName":"BNA:Brand New Animal","rating":3,"image":"https://static.zerochan.net/Brand.New.Animal.full.3351655.jpg"},
+  {"uid":"PiTHLJ","worldName":"Andavaverse","rating":1,"image":"https://pbs.twimg.com/media/FQbkZQRXwAY2SKn?format=jpg&name=medium"},
+  {"uid":"OsUrpP","worldName":"Lore Olympus","rating":8,"image":"https://listium-res.cloudinary.com/image/upload/w_1200,h_1200,c_limit,q_auto,f_auto/dowerp5ptg5sdwswmvnp.jpg"},
+  {"uid":"CvCRvy","worldName":"Wuthering Waves","rating":7,"image":"https://i.imgur.com/p6yX8XO.jpg"},
+  {"uid":"IKmjDt","worldName":"Futoku no Guild","rating":4,"image":"https://animotaku.fr/wp-content/uploads/2022/03/anime-Guild-of-Depravity-visuel-2.jpeg"},
+  {"uid":"lKEHoJ","worldName":"District 9","rating":2,"image":"https://i.imgur.com/YAo2ulg.jpeg"}
 ]

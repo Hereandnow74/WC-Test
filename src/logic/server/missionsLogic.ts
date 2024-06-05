@@ -35,55 +35,49 @@ export async function _likeOrDislikeMission(SERVER_URL: string, API_VERSION: str
 }
 
 export async function _getMissions(SERVER_URL: string, API_VERSION: string, uids: string[]): Promise<{uid: string; likes: number; dislikes: number; likesUsers: string[]; dislikesUsers: string[]}[] | string> {
-  if (tokens.value?.access?.token) {
-    const apiUrl = `${SERVER_URL}/${API_VERSION}/missions/getMissions`
-    const response = await fetch(apiUrl, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(uids),
-    })
+  const apiUrl = `${SERVER_URL}/${API_VERSION}/missions/getMissions`
+  const response = await fetch(apiUrl, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(uids),
+  })
 
-    if (!response.ok) {
-      const errorText = await response.text()
-      return JSON.parse(errorText).message
-    }
-    else {
-      const payload = await response.text()
-      const jsonPayload = JSON.parse(payload)
-      if (jsonPayload.length)
-        return jsonPayload
-
-      return 'Empty response from server.'
-    }
+  if (!response.ok) {
+    const errorText = await response.text()
+    return JSON.parse(errorText).message
   }
-  return 'Don\'t have access, you need to login.'
+  else {
+    const payload = await response.text()
+    const jsonPayload = JSON.parse(payload)
+    if (jsonPayload.length)
+      return jsonPayload
+
+    return 'Empty response from server.'
+  }
 }
 
 export async function _searchMissions(SERVER_URL: string, API_VERSION: string, request: SearchRequest): Promise<Missions[] | string> {
-  if (tokens.value?.access?.token) {
-    const apiUrl = `${SERVER_URL}/${API_VERSION}/missions/searchMissions`
-    const response = await fetch(apiUrl, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(request),
-    })
+  const apiUrl = `${SERVER_URL}/${API_VERSION}/missions/searchMissions`
+  const response = await fetch(apiUrl, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(request),
+  })
 
-    if (!response.ok) {
-      const errorText = await response.text()
-      return JSON.parse(errorText).message
-    }
-    else {
-      const payload = await response.text()
-      const jsonPayload = JSON.parse(payload)
-      if (jsonPayload.length)
-        return jsonPayload
-
-      return 'Empty response from server.'
-    }
+  if (!response.ok) {
+    const errorText = await response.text()
+    return JSON.parse(errorText).message
   }
-  return 'Don\'t have access, you need to login.'
+  else {
+    const payload = await response.text()
+    const jsonPayload = JSON.parse(payload)
+    if (jsonPayload.length)
+      return jsonPayload
+
+    return 'Empty response from server.'
+  }
 }

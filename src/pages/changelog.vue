@@ -6,6 +6,88 @@
       </h2>
       <div>
         <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          05 June 2024
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>Preview for Missions that are saved locally on your device.</li>
+          <li>~66 new user submitted characters, new missions, new world</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          28 May 2024
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~60 new user submitted characters, new missions, new world</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          21 May 2024
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~70 new user submitted characters, new missions, new world</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          15 May 2024
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~40 new user submitted characters, new missions, new world</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          07 May 2024
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~50 new user submitted characters, new missions</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          30 April 2024
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~70 new user submitted characters, new missions, new worlds</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          23 April 2024
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~75 new user submitted characters, new missions, new worlds</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          16 April 2024
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~60 new user submitted characters, new missions, new worlds</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          09 April 2024
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~45 new user submitted characters, new missions, new worlds</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
           02 April 2024
         </h3>
         <ul class="list-decimal list-inside">
@@ -1253,7 +1335,7 @@
           <li>Transhuman rework added.</li>
           <li>Most of the rules updated to new stable version.</li>
           <li>Changed code for freebies distribution a bit, so now Talent Sharing freebies should work, but expect bugs (I think it should work fine as long as you don't have 2 copies of the same Talent Sharing).</li>
-          <li>Unnoficial trauma tiers for Slightly Used waifus are added with examples of traumas, provided by DepressedAlucard</li>
+          <li>Unofficial trauma tiers for Slightly Used waifus are added with examples of traumas, provided by DepressedAlucard</li>
           <li>Added DLC perks for Command Seals by <b>Skelethin</b></li>
           <li>Bugfixes & small changes</li>
         </ul>
@@ -1568,7 +1650,7 @@
           <li>~90 new user submitted characters, new missions</li>
           <li>16 new Worlds, some number of new conditions</li>
           <li>Separate setting for hiding world and companion images.</li>
-          <li>Official worlds now can have unnofficial conditions and they should be color marked the same as worlds (if you notice wrong colors assigned to worlds/conditions send me a bug-report on Discord)</li>
+          <li>Official worlds now can have unofficial conditions and they should be color marked the same as worlds (if you notice wrong colors assigned to worlds/conditions send me a bug-report on Discord)</li>
           <li>Bugfixes</li>
         </ul>
       </div>

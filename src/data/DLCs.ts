@@ -405,7 +405,7 @@ DLChomes.push({
   category: 'Home',
   image: 'https://i.ibb.co/9Y746Qf/Creature-Feature-I.jpg',
   cost: 500,
-  desc: `From your control center, you can select any wildlife you have encountered to populate your Demiplane. Binding wildlife from your Demiplane as a Familiar does not provide credits.
+  desc: `From your control center, you can select wildlife you have encountered to populate your Demiplane. The maximum tier of wildlife is equal to the highest tier member of the retinue, up to T10. This cannot produce IMG tier creatures. Binding wildlife from your Demiplane as a Familiar does not provide credits.
     `,
   whitelist: ['Laws of the Jungle'],
 })
@@ -419,7 +419,7 @@ DLChomes.push({
   image: 'https://cdn.statically.io/gh/Om1cr0n/cat_thumb/main/docs/thumbs/ascrT.jpg',
   cost: 0,
   costT: 2,
-  desc: `From your control center, you can create life to populate your Demiplane. Binding creatures from your Demiplane does not provide credits.
+  desc: `From your control center, you can create life to populate your Demiplane. The maximum tier of creations is equal to the highest tier member of the retinue, up to T10. This cannot create IMG tier beings. Binding life from your Demiplane does not provide credits.
   <p>If you aren’t already, you become a TX yourself.</p>
     `,
   whitelist: ['Creature Feature'],
@@ -479,7 +479,7 @@ DLChomes.push({
   dlc: 'GForce1000',
   title: 'Armory',
   category: 'Home',
-  image: 'https://i.ibb.co/HtCJ5bW/Armory2.jpg',
+  image: 'https://images2.imgbox.com/c2/a5/nR3RQHrf_o.jpeg',
   cost: 10,
   desc: 'A room-or pocket-dimensional space similar to the Pocket Space perk full of weapons, armor, and ammunition becomes available to you with this upgrade. It holds a wide variety of standard and specialized equipment from both your new world and your old one. This does include equipment that would normally only be available to special forces, but does not include custom-made or heavily customized variants on weapons. Weapons you or your companions acquire in the field can be sent to this armory with a few seconds of concentration, and each of you can choose up to ten pieces of equipment - such as a gun, a shield, or a full set of armor - to be able to equip or return at will. The armory will automatically repair and maintain weapons stored within it. This doesn\'t work for fully destroyed artifact items unless you help supply the magical oomph.',
   whitelist: ['Sweet Home'],
@@ -491,7 +491,7 @@ DLChomes.push({
   category: 'Home',
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'Home Security',
-  image: 'https://i.ibb.co/rtt8nK0/Security.jpg',
+  image: 'https://images2.imgbox.com/4e/57/WYn9s9nQ_o.jpeg',
   cost: 0,
   desc: 'The portals to access your Pocket Apartment, and any perks that follow from it, can not be perceived or entered by anything you do not allow, including creatures, contaminants, and remote viewing.',
   whitelist: ['Pocket Apartment'],

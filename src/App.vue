@@ -1,6 +1,6 @@
 <template>
   <main
-    class="inset-0 absolute flex flex-col"
+    class="inset-0 absolute flex flex-col "
     text="gray-700 dark:gray-200"
   >
     <div class="grid grid-cols-[1fr,auto] grid-rows-[auto,1fr] gap-1 min-h-0 justify-center justify-items-center max-h-screen">

@@ -129,6 +129,8 @@ export async function _refreshTokens(SERVER_URL: string, API_VERSION: string): P
 }
 
 export async function _logoutFromServer(SERVER_URL: string, API_VERSION: string, token: string): Promise<string> {
+  user.value = {}
+  tokens.value = {}
   if (token) {
     const apiUrl = `${SERVER_URL}/${API_VERSION}/auth/logout`
     const response = await fetch(apiUrl, {
@@ -144,8 +146,6 @@ export async function _logoutFromServer(SERVER_URL: string, API_VERSION: string,
       return JSON.parse(errorText).message
     }
     else {
-      user.value = {}
-      tokens.value = {}
       return 'Success'
     }
   }

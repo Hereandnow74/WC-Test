@@ -48,7 +48,7 @@
     </div>
     <div v-else class="min-h-0 overflow-y-auto scrollbar p-1">
       <div class="text-red-500 text-center">
-        These definitions are unnoficial and exist only to give you an idea on slightly used companions traumas.
+        These definitions are unofficial and exist only to give you an idea on slightly used companions traumas.
       </div>
       <div v-for="def,n in traumaDefinitions" :key="n" class="my-2 p-1 bg-gray-300 dark:bg-gray-700 rounded">
         <h3 class="text-lg text-green-700 dark:text-green-300">

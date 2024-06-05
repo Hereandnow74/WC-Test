@@ -55,7 +55,7 @@
       </p>
     </Foldable>
     <div v-if="build.tags.length" class="flex gap-1 flex-wrap mt-1 bg-blue-200 dark:bg-blue-900 p-1 rounded justify-center">
-      <div v-for="tag in build.tags" :key="tag" class="bg-teal-300 border-teal-500 dark:(bg-teal-800 border-teal-600) rounded border-b-2 border-r-2  px-1 w-max cursor-pointer whitespace-nowrap">
+      <div v-for="tag in build.tags" :key="tag" class="bg-teal-300 border-teal-500 dark:(bg-teal-800 border-teal-600) rounded border-b-2 border-r-2 px-1 w-max cursor-pointer whitespace-nowrap overflow-hidden overflow-ellipsis">
         {{ tag }}
       </div>
     </div>

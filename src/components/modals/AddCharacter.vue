@@ -111,7 +111,7 @@ import { toFormValidator } from '@vee-validate/zod'
 import { difference, find, random } from 'lodash-es'
 import { useStore } from '~/store/store'
 import { proposeCompanion, toggleShowAddCharacter, userCharactersShown } from '~/logic'
-import { useWorlds, waifuTagsByTag, defTags } from '~/data/constants'
+import { useWorlds, waifuTagsByTag, defTags, tagsRating } from '~/data/constants'
 import { useSaves } from '~/store/saves'
 import { waifuPerksObject } from '~/data/waifu_perks'
 
@@ -216,7 +216,7 @@ const updateCharacter = () => {
       char.tier = tier.value
       char.image = image.value
       char.image_nsfw = image_nsfw.value
-      char.tags = tags.value
+      char.tags = tags.value.sort((a, b) => tagsRating[a] - tagsRating[b])
     }
   }
 }
@@ -270,6 +270,7 @@ const addCharacter = handleSubmit((values) => {
     })
   }
 
+  values.tags = values.tags.sort((a, b) => tagsRating[a] - tagsRating[b])
   if (localSave.value) {
     localUserCharacters.value.push(values)
     userCharactersShown.value = true

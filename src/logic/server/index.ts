@@ -5,8 +5,8 @@ import { _updateUserLikes, _updateUserInfo, _getUserFromServer } from './userLog
 import { _createBuildInDB, _getAllYourBuilds, _searchForBuilds } from './buildsLogic'
 import { _getMissions, _likeOrDislikeMission, _searchMissions } from './missionsLogic'
 
-const SERVER_URL = 'http://localhost:3000'
-// const SERVER_URL = 'https://interactive-apps.net'
+// const SERVER_URL = 'http://localhost:3000'
+const SERVER_URL = 'https://interactive-apps.net'
 const API_VERSION = 'v1'
 
 // Auth

@@ -62,6 +62,7 @@ export const nicknames = [
   'DragonBoy.EXE',
   'Michael L.',
   'xydra22',
+  'Titus Landis',
 ]
 
 export const WORLD_COLORS = ['bg-green-600', 'bg-teal-600', 'bg-cyan-600',
@@ -148,6 +149,7 @@ export const rulesList = [
   { title: 'arrangedConditions', title2: 'Arranged Match Wagers, Victory Conditions, and Risk' },
   { title: 'arrangedTeam', title2: 'Arranged Team Matches and Prizes' },
   { title: 'arrangedSpecial', title2: 'Special Arranged Match Rules' },
+  { title: 'additional', title2: 'Additional Rules' },
   { title: 'NasuDLC', title2: 'Nasuverse DLC rules' },
   { title: 'specific', title2: 'Setting Specific Rules' },
 
@@ -293,6 +295,7 @@ export const waifuTags = {
 } as const
 
 export const tagCategories = uniqWith(Object.values(waifuTags), (tagA, tagB) => tagA.category === tagB.category).map(tag => tag.category)
+export const tagsRating = Object.values(waifuTags).reduce((a, x, i) => (a[x.short] = i + 1, a), {}) as Record<keyof typeof waifuTags, number>
 
 type Keys = keyof typeof waifuTags
 type Names = typeof waifuTags[Keys]['tag']
@@ -326,10 +329,12 @@ export const ALL_PERK_TITLES = computed(() => {
   return result
 })
 
-const { binding, luresBought, heritage, ridePerks, homePerks, talentPerks, defensePerks, otherPerks, miscPerks, waifuPerks, genericWaifuPerks, pvpPerks } = useChargenStore()
+const { binding, luresBought, heritage, ridePerks, homePerks, talentPerks, defensePerks, otherPerks, miscPerks, waifuPerks, genericWaifuPerks, pvpPerks, intensities, difficulties } = useChargenStore()
 
 export const ALL_PERK_STORES = computed(() => {
   return {
+    'Intensity': intensities.value,
+    'Difficulty': difficulties.value,
     'Binding': binding.value,
     'Lure': luresBought.value,
     'Heritage': heritage.value,

@@ -326,7 +326,7 @@ export const difficultyOptions = [
   {
     uid: 'u9Mwo',
     title: 'Standard',
-    image: 'https://i.imgur.com/i194Hhnl.jpg',
+    image: 'https://images2.imgbox.com/86/21/qGJL79AE_o.jpeg',
     intensity: 0,
     desc: 'Warranty Plan functions normally.',
     category: 'difficulty',
@@ -335,7 +335,7 @@ export const difficultyOptions = [
   {
     uid: 'OC4rk',
     title: 'À la carte',
-    image: '',
+    image: 'https://images2.imgbox.com/5b/36/GB02EL0R_o.jpeg',
     intensity: +1,
     desc: 'Warranty Plan must be purchased for each individual in your retinue. As compensation, the price for each warranty is only 40 credits. Express Delivery still applies to all copies of Warranty Plan.',
     category: 'difficulty',
@@ -344,7 +344,7 @@ export const difficultyOptions = [
   {
     uid: 'dsOHr',
     title: 'Expiry',
-    image: '',
+    image: 'https://images2.imgbox.com/63/04/PgJGHJhJ_o.jpeg',
     intensity: +2,
     desc: 'In addition to the effects of À la carte, each copy of the perk will only work once and will need to be purchased again afterward. As compensation, the price of each warranty is only 20 credits. Express Delivery still applies to all copies of Warranty Plan.',
     category: 'difficulty',
@@ -371,7 +371,7 @@ export const difficultyOptions = [
   {
     uid: 'z4MbC',
     title: 'Hustle',
-    image: '',
+    image: 'https://i.imgur.com/i194Hhnl.jpg',
     intensity: 1,
     desc: 'The time limit for R.I.P. is reduced to 1 day (24 hours).',
     category: 'difficulty',
@@ -434,7 +434,7 @@ export const difficultyOptions = [
   {
     uid: 'dsM0L',
     title: 'Item',
-    image: '',
+    image: 'https://images2.imgbox.com/f0/1d/FdWPzyv4_o.jpg',
     intensity: 0,
     desc: 'The local artifacts, treasures, and rarities of each world you visit are shuffled. This can include combat equipment, though mass-deployed gear will be shuffled as whole groups, not individually. Plot-relevant items will always remain in their home worlds, though they could be anywhere within those worlds. This shuffle obeys the star color system, so equipment that makes its user a Tier 4 may be swapped with a Tier 6, but not a Tier 3. Purchases are not affected.',
     category: 'difficulty',
@@ -528,5 +528,14 @@ export const difficultyOptions = [
     desc: 'Interest will be charged on your loan balance every month without fail, regardless of how much you pay toward the principal in that month.',
     category: 'difficulty',
     type: 'other8',
+  },
+  {
+    uid: 'Wkf27',
+    title: 'No Skill Framework',
+    image: '',
+    intensity: 2,
+    desc: 'The skill framework for Substitutes, Templates, and early captures, that normally helps them reach their baseline potential, is not available. Talents and appropriate trainers are highly recommended. If purchased templates are allowed under your contract’s terms, the initial prices of Template Stacking I and Template Stacking II are reduced by 50%, to 10 credits each.',
+    category: 'difficulty',
+    type: 'other9',
   },
 ]

@@ -25,7 +25,7 @@
               <div v-if="powers[startingOrigin.uid || 0]?.length && perk.title === 'Template Stacking I'" class="text-center" title="Total count and cost of Templates for a character">
                 [<span class="text-orange-800 dark:text-orange-400">{{ powers[startingOrigin.uid || 0].length }}</span>]
                 [<span class="text-green-800 dark:text-green-400">
-                  {{ 20 * ((Math.pow(2, powers[startingOrigin.uid || 0].length) - 1) / (2 - 1)) }}
+                  {{ (noSkill ? 10 : 20) * ((Math.pow(2, powers[startingOrigin.uid || 0].length) - 1) / (2 - 1)) }}
                 </span>]
               </div>
             </div>
@@ -84,7 +84,7 @@
                   {{ powers[companion.uid].length }}
                 </span>]
                 [<span class="text-green-800 dark:text-green-400">
-                  {{ 20 * ((Math.pow(2, powers[companion.uid].length) - 1) / (2 - 1)) }}
+                  {{ (noSkill ? 10 : 20) * ((Math.pow(2, powers[companion.uid].length) - 1) / (2 - 1)) }}
                 </span>]
               </div>
             </div>
@@ -140,7 +140,7 @@ import { lazyLoadImg, imageLink } from '~/logic'
 import { useSettings } from '~/logic/searchSettings'
 import { useStore } from '~/store/store'
 
-const { companionsWithoutSold, settings, startingOrigin } = useStore()
+const { companionsWithoutSold, settings, startingOrigin, difficulties } = useStore()
 const { newPrice } = useSettings()
 
 const props = defineProps({
@@ -185,8 +185,10 @@ const fullCount = computed(() => {
 
 const individualCount = computed(() => Object.values(powers).map(x => x.length))
 
+const noSkill = computed(() => !!difficulties.value.find(x => x.title === 'No Skill Framework'))
+
 const displayedCost = computed(() => {
-  return !newPrice.value && props.perk.title === 'Template Stacking I' ? individualCount.value.reduce((sum, count) => sum += 20 * ((Math.pow(2, count) - 1) / (2 - 1)), 0) : fullCount.value * props.perk.cost
+  return !newPrice.value && props.perk.title === 'Template Stacking I' ? individualCount.value.reduce((sum, count) => sum += (noSkill.value ? 10 : 20) * ((Math.pow(2, count) - 1) / (2 - 1)), 0) : fullCount.value * props.perk.cost
 })
 
 function sendPerk() {

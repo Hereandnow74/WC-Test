@@ -2,7 +2,7 @@
   <div class="relative bg-[#f2eecb] dark:bg-[#1E1E5C] rounded p-2 shadow-lg flex flex-col gap-1 h-full relative">
     <h3 class="text-lg leading-none ">
       {{ build.title || "No Title" }}
-      <span class="text-base dark:text-slate-300 text-slate-700">by {{ build.nickname || 'unknown' }}</span>
+      <span class="text-base dark:text-slate-400 text-slate-700">by {{ build.nickname || 'unknown' }}</span>
       <div v-if="isAuthenticated" class="absolute top-1 right-1 cursor-pointer hover:text-red-500" @click="deleteBuild">
         <fluent:delete-20-filled />
       </div>
@@ -11,10 +11,10 @@
     <div class="text-xs text-gray-600 dark:text-gray-400 leading-none flex justify-between">
       {{ new Date(build.date).toLocaleString() }}
     </div>
-    <p class="bg-gray-300 dark:bg-gray-800 mt-1 flex-grow">
-      {{ build.desc || "No Description" }}
+    <p v-if="build.desc.trim()" class="bg-gray-300 dark:bg-gray-800 mt-1 flex-grow p-1">
+      {{ build.desc }}
     </p>
-    <div class="flex gap-2 justify-between">
+    <div class="flex gap-2 justify-between mt-auto">
       <div>
         World:
         <span class="text-orange-500">{{ build.startingWorld.worldName }}</span>
@@ -29,8 +29,8 @@
       <div>Companions: <span class="text-orange-500">{{ build.companions.length }}</span></div>
     </div>
     <div class="flex gap-1 flex-wrap mt-1 bg-blue-200 dark:bg-blue-900 p-1 rounded justify-center">
-      <div v-for="tag in buildTags" :key="tag" class="bg-teal-300 border-teal-500 dark:(bg-teal-800 border-teal-600) rounded border-b-2 border-r-2  px-1 w-max cursor-pointer whitespace-nowrap">
-        {{ tag }}
+      <div v-for="tag in buildTags.sort((a,b) => a.length - b.length)" :key="tag" :title="tag" class="bg-teal-300 border-teal-500 dark:(bg-teal-800 border-teal-600) rounded border-b-2 border-r-2  px-1 w-max cursor-pointer whitespace-nowrap overflow-hidden overflow-ellipsis">
+        {{ tag.replace('You as ', '') }}
       </div>
     </div>
   </div>
@@ -72,6 +72,7 @@ const buildTags = computed(() => {
   if (props.build.companions.some(x => x.note)) tags.push('Retinue Notes')
   if (props.build.activeChallenges.length > 0) tags.push(props.build.activeChallenges[0].title)
   if (props.build.allEffects.some((x: string) => ALL_DLC_PERK_TITLES.value[x])) tags.push('Use DLC')
+  if (props.build.waifuPerks.length) tags.push('Use Waifu Perks')
   return tags
 })
 

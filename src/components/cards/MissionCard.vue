@@ -9,7 +9,7 @@
           <ci:heart-outline v-else />
         </span>
       </div>
-      <div class="flex gap-5 text-lg cursor-pointer flex items-center">
+      <div v-if="!mission.temprorary" class="flex gap-5 text-lg cursor-pointer flex items-center">
         <span class="hover:text-green-200 flex gap-2 items-center" :title="missionLikes.likesUsers.join(', ')" @click="like">
           <carbon:thumbs-up
             v-if="!missionLikes.likesUsers.includes(user.name)"
@@ -25,8 +25,13 @@
           {{ missionLikes.dislikes }}
         </span>
       </div>
-      <div title="Edit Mission" class="ml-auto text-lg hover:text-orange-500 cursor-pointer flex items-center gap-1" @click="showEditCompanion">
-        <bx:bxs-edit />
+      <div class="ml-auto flex gap-2">
+        <div v-if="mission.temprorary" title="Delete Mission" class="text-lg hover:text-red-500 cursor-pointer flex items-center gap-1" @click="deleteLocal">
+          <bx:bxs-trash />
+        </div>
+        <div title="Edit Mission" class="text-lg hover:text-orange-500 cursor-pointer flex items-center gap-1" @click="showEditCompanion">
+          <bx:bxs-edit />
+        </div>
       </div>
     </div>
     <h4 class="text-lg text-center py-1">
@@ -35,9 +40,6 @@
       </router-link>
       <span v-if="mission.author" class="text-sm text-gray-500 dark:text-gray-400"> by {{ mission.author }}</span>
     </h4>
-    <div v-if="mission.temprorary" class="text-red-700 dark:text-red-400">
-      This is the mission you just added, it shown just for your convenience, and will disappear if you press F5.
-    </div>
     <div class="max-h-sm overflow-hidden relative flex justify-center">
       <img
         v-if="mission.image && settings.perkImages"
@@ -145,21 +147,29 @@
       </div>
     </div>
     <Button
+      v-if="!mission.temprorary"
       class="text-gray-100 rounded cursor-pointer hover:bg-orange-500 px-2 mt-auto self-center"
       :label="missionRewards[mission.uid] ? 'Edit the rewards': 'Take the Mission'"
       :bg-color="!!missionRewards[mission.uid] ? 'bg-orange-600': 'bg-red-700'"
       icon="charm:swords"
       @click="showTakeMission = true"
     />
+    <Button
+      v-if="mission.temprorary"
+      label="Submit the Mission"
+      class="px-8"
+      bg-color="bg-amber-600 mt-4"
+      @click="sendMission()"
+    />
     <TakeMission v-if="showTakeMission" :mission="mission" @click="showTakeMission = false" />
-    <AddMission v-if="showEditMission" :mission="mission" @click="showEditMission = false" />
+    <AddMission v-if="showEditMission" :mission="mission" :close-function="() => showEditMission = false" @click="showEditMission = false" />
   </div>
 </template>
 
 <script lang="ts" setup>
 import { Mission } from 'global'
 import type { PropType } from 'vue'
-import { lazyLoadSingleImg, useTooltips } from '~/logic'
+import { lazyLoadSingleImg, useTooltips, proposeMission } from '~/logic'
 import { XBBCODE } from '~/logic/bbtohtml'
 import { usePlayStore } from '~/store/play'
 import { useSaves } from '~/store/saves'
@@ -170,7 +180,7 @@ import { customDialog } from '~/logic/dialog'
 
 const { settings } = useStore()
 const { missionRewards } = usePlayStore()
-const { missionFavorites } = useSaves()
+const { missionFavorites, localMissions } = useSaves()
 
 const props = defineProps({
   mission: {
@@ -227,6 +237,14 @@ async function dislike() {
     missionLikes.value = res
   else
     customDialog(res, ['Ok'])
+}
+
+function sendMission() {
+  proposeMission(props.mission, () => customDialog('Mission submitted', ['Ok']))
+}
+
+const deleteLocal = () => {
+  localMissions.value = localMissions.value.filter(x => x.uid !== props.mission.uid)
 }
 
 </script>
