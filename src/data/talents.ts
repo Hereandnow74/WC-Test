@@ -326,49 +326,6 @@ talents.push({
   desc: 'You or your subject’s template is upgraded to a version of the template rated at Tier 5. This is a flat increase to starting power, skill, and gear functionality.',
 })
 
-talents.push({
-  uid: 'LhG7H',
-  title: 'Advanced Template Stacking (Arcane)',
-  category: 'Talent',
-  legacy: true,
-  image: 'https://i.ibb.co/Htm5DvK/Advanced-Template-Stacking-Arcane.jpg',
-  cost: 100,
-  complex: 'target',
-  whitelist: ['Science Talent', 'Soul Talent'],
-  desc: `
-<p>The entire spectrum of scientific magic styles is now available to you without further restriction. You must still encounter such styles before you can use them, whether in the field, buying them with Template Stacking, or through the purchase of a retinue member who has one. Additionally, such styles are more effective when you use them and easier to control and develop.</p>
-<p>This perk consolidates all purchases of Added Potential that fall under its theme into a single item. Take a refund on all such purchases for the person this is applied to.</p>`,
-})
-
-talents.push({
-  uid: 'zHT96',
-  title: 'Advanced Template Stacking (Enlightened)',
-  category: 'Talent',
-  legacy: true,
-  image: 'https://i.ibb.co/gdHJ4n1/Advanced-Template-Stacking-Enlightened.jpg',
-  cost: 100,
-  complex: 'target',
-  whitelist: ['Psychic Talent', 'Body Tune-Up', 'Martial Talent', 'Soul Talent'],
-  needed: 2,
-  desc: `
-<p>The entire spectrum of ki arts and personal mystical powers are now available to you without further restriction. You must still encounter any such arts and styles before you can use them, whether in the field, buying them with Template Stacking, or through the purchase of a retinue member who has one. Additionally, such arts and styles are more effective and easier to control. This also applies to the inner powers gained from certain Heritages.</p>
-<p>This perk consolidates all purchases of Added Potential that fall under its theme into a single item. Take a refund on all such purchases for the person this is applied to.</p>`,
-})
-
-talents.push({
-  uid: 'yfzjc',
-  title: 'Advanced Template Stacking (Green)',
-  category: 'Talent',
-  legacy: true,
-  image: 'https://i.ibb.co/x5ykynX/Advanced-Template-Stacking-Green.jpg',
-  cost: 100,
-  complex: 'target',
-  whitelist: ['Wild Talent', 'Soul Talent'],
-  desc: `
-<p>The entire spectrum of magical styles that draw mystical power from one’s surroundings are now available to you without further restriction. This includes, but is not limited to, Warhammer’s Winds, a Planeswalker’s Lands, Geomancy, or anything powered by leylines or background magical fields. You must still encounter any such styles before you can use them, whether in the field, buying them with Template Stacking, or through the purchase of a retinue member who has one. Additionally, such arts and styles are more effective and easier to control.</p>
-<p>This perk consolidates all purchases of Added Potential that fall under its theme into a single item. Take a refund on all such purchases for the person this is applied to.</p>`,
-})
-
 export const additionalDefenseDesc = `
 <h3 class="text-lf font-semibold text-center">The Outer Shell</h3>
 <p>If you or a member of your retinue is a genius loci or otherwise large enough to hold people inside them, their passengers and cargo will be protected by Defense perks as well. This includes vehicles acquired via Waifu Perks or Catch-a-Ride, but does not protect against effects that originate from within the barrier.</p>
@@ -901,7 +858,7 @@ genericPerks.push({
   requires: 'any higher Binding- type control',
   multiple: true,
   max: 10,
-  whitelist: ['Tempest Jewelry', 'Shroud of Power', 'Ritual Circle', 'Alterzelu Symbiote', 'Hypnosis App', 'Tantric Arts'],
+  whitelist: ['Tempest Jewelry', 'Shroud of Power', 'Alterzelu Symbiote', 'Hypnosis App', 'Tantric Arts'],
   needed: 1,
   desc: 'The Stamp’s tattoos are now permanently visible, even after the purchase of higher bindings. This option is purely aesthetic. Once you’ve purchased this perk ten times, it will apply to every member of your retinue.',
 })

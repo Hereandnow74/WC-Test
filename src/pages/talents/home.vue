@@ -6,7 +6,7 @@
       :class="settings.columns !== 'auto' ? `column-count-${settings.columns}` : 'md:column-count-2 xl:column-count-3 4xl:column-count-4 5xl:column-count-5'"
     >
       <PerkCard
-        v-for="homePerk in homes.filter(perk => settings.hideLegacy ? !perk.legacy : true)"
+        v-for="homePerk in homes"
         :key="homePerk.title"
         :perk="homePerk"
         :bg="homeAvailable(homePerk) ? 'yellow-200 dark:emerald-900 hover:(yellow-100 dark:emerald-800)'

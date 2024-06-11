@@ -22,9 +22,6 @@
       </template>
     </div>
 
-    <Note v-if="activeType === 'Ritual'" class="max-w-4xl mx-auto mb-4" type="warning" title="Old version perks">
-      <div>Ritual Circle binding was replaced with Tantric Arts in new Waifu Catalog version. While it will not get removed from Interactive, use it only if you know what you are doing.</div>
-    </Note>
     <Desc v-if="activeType === 'Tantric Arts'" class="p-2 mb-4 max-w-4xl bg-warm-gray-200 dark:bg-warm-gray-800 mx-auto" :desc="tantricDesc" />
 
     <div v-if="!legacyMode && !noBindings && binding.length" class="w-max mx-auto mb-2 flex gap-2">
@@ -79,16 +76,8 @@
         <template v-if="['Elemental Shroud', 'Prismatic Shroud'].includes(bnd.title)" #title>
           <Button size="Small" label="element" class="mx-1" @click.stop="chooseElement(bnd)" />
         </template>
-        <template v-if="bnd.type === 'Ritual'" #rules>
-          <span class="mx-2" @click.stop="toggleRitual()">Rules: <span class="text-teal-500 hover:underline">Additional Notes</span></span>
-        </template>
       </component>
     </div>
-    <Desc
-      v-if="activeType === 'Symbiote Legacy'"
-      :desc="symbioteRules"
-      class="p-2 my-4 max-w-4xl bg-warm-gray-200 dark:bg-warm-gray-800 mx-auto"
-    />
     <template v-if="bindingsDLC.length">
       <h2 class="text-lg text-center">
         DLC Perks
@@ -110,7 +99,6 @@
       </PerkCard>
     </template>
     <ShroudElements v-if="showElements" :current-binding="currentBinding" @click="showElements = false" @close="showElements = false" />
-    <RitualCircle v-if="showRitual" @click="showRitual = false" />
     <div class="h-8"></div>
   </div>
 </template>
@@ -131,7 +119,6 @@ import { confirmDialog } from '~/logic/dialog'
 
 const { binding, settings, legacyMode, noBindings } = useStore()
 const [showElements] = useToggle()
-const [showRitual, toggleRitual] = useToggle()
 
 const currentBinding = ref<PerkFull|null>(null)
 
@@ -152,7 +139,6 @@ const bindingByType = computed(() => {
   const res = { } as Record<string, PerkFull[]>
 
   bindings.value
-    .filter(perk => settings.value.hideLegacy ? !perk.legacy : true)
     .forEach(x => x.type ? res[x.type] ? res[x.type].push(x) : res[x.type] = [x] : res.Other ? res.Other.push(x) : res.Other = [x])
   return res
 })

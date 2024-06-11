@@ -193,32 +193,6 @@ homes.push({
 })
 
 homes.push({
-  uid: '6WOvg',
-  dlc: 'Old Version',
-  dlclink: 'https://docs.google.com/document/d/1c4QaqLKxENFdzcBVe1-nvWJpZMK-UL0yQH_HCNd3Tes/edit?usp=sharing',
-  legacy: true,
-  title: 'Adjustment Field',
-  category: 'Home',
-  image: 'https://i.ibb.co/6JdPGjB/Adjustment-Field.jpg',
-  cost: 200,
-  requires: 'Need a sufficiently large Catch-a-Ride Replica',
-  whitelist: ['Grand Manor',
-    'Dragon Cabin',
-    'Incandescent Ascendancy Machine',
-    'Branded by Possibility',
-    'Heavenbuilt Proto',
-  ],
-  flag: 'hasARide',
-  needed: 1,
-  freebies: {
-    binding: [{ title: 'Advanced Tempest Runes', cost: 0, complex: [{ flavor: 'Body' }], count: 1 }],
-  },
-  desc: `
-<p>The central console for your mansion now includes the body-modification functions for everyone inside. If you have Basic Runes, take its expansion Advanced Runes: Body for free. If you already have Advanced Runes: Body when you buy Adjustment Field, take its expansion Advanced Runes: Mind for free. If you already have Advanced Runes: Mind when you buy Adjustment Field, you may claim a discount equal to the total value of all Tempest Runes you have already purchased. This perk may also apply to Heritage-granted inner worlds such as the Dragon Cabin, the Biomorph’s creep zone, or the Cybermorph’s digital world.</p>
-<p>The Adjustment Field’s modification suite is identical to that of Advanced Runes: Mind. You can apply separate sets of effects to inhabitants, visitors, and intruders, or more specific categories beyond that, and cycle between them as desired. The Adjustment Field is blocked by both Polymorph and Wyldscape Defense.</p>`,
-})
-
-homes.push({
   uid: '0QDNJ',
   title: 'Rainbow Bridge',
   category: 'Home',

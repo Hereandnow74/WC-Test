@@ -114,9 +114,9 @@ onKeyStroke(['c', 's', 'd', 'n', 'b'], (e) => {
   }
 })
 
-// const socket = io('https://interactive-apps.net')
-// socket.on('onlineUsers', online =>
-//   currentOnline.value = online)
+const socket = io('https://interactive-apps.net')
+socket.on('onlineUsers', online =>
+  currentOnline.value = online)
 
 // function someStats() {
 //   const uid = window.localStorage.getItem('userId')

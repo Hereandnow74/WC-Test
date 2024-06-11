@@ -64,7 +64,7 @@ const props = defineProps({
 })
 
 const statuses = ['Active', 'Completed', 'Hiatus', 'Dropped']
-const tagList = ['Harem', 'Transhuman', 'Dragon', 'Outsider', 'Shroud', 'Megapixel', 'Jewelry', 'Symbiote', 'Ritual Circle', 'Possess', 'Substitute', 'Walk-In']
+const tagList = ['Harem', 'Transhuman', 'Dragon', 'Outsider', 'Shroud', 'Megapixel', 'Jewelry', 'Symbiote', 'Possess', 'Substitute', 'Walk-In']
 
 const successMessage = ref('')
 const errorMessage = ref('')

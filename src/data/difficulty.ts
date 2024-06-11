@@ -13,19 +13,6 @@ export const difficultyRules = `<h3 class="font-bold text-xl">Negotiations (Diff
 
 export const difficultyOptions = [
   {
-    uid: '9VaF7',
-    title: 'Legacy Difficulty',
-    image: 'https://i.imgur.com/uTx4YCOl.jpg',
-    intensity: 0,
-    desc: `Your capture/sale values are set to 60%/20% of the listed price and you get a standard budget, the same as on Intensity 1. <b>Ignore</b> the values displayed by the table above and the rest of this section.
-    <p>Legacy refers to previous versions of the Waifu Catalog. If you're unfamiliar with how they worked, either give them a read or skip using this option.</p>
-    `,
-    category: 'difficulty',
-    type: 'legacy',
-    capture: 0.60,
-    sell: 0.20,
-  },
-  {
     uid: '9VaF9',
     title: 'Me and My Girlfriend(s) (PvE)',
     image: 'https://i.imgur.com/bo1EUtEl.jpg',
@@ -199,7 +186,7 @@ export const difficultyOptions = [
   },
   {
     uid: 'T7Ty3',
-    title: 'None',
+    title: 'Nonе',
     image: 'https://i.imgur.com/nrra2lhl.jpg',
     intensity: 2,
     desc: 'Template Stacking may not be purchased. Templates are still available as rewards for missions.',
@@ -226,7 +213,7 @@ export const difficultyOptions = [
   },
   {
     uid: 'nP6mc',
-    title: 'None',
+    title: 'Nonе',
     image: 'https://i.imgur.com/iZ4isdul.jpg',
     intensity: 2,
     desc: 'All Defense perks will not function. Defense perks may still be purchased, or obtained for free from Binding or Heritage perks, for use as prerequisites. Any resistance-level Defenses on your account will activate automatically if this modifier is removed.',

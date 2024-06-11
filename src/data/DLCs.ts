@@ -104,7 +104,7 @@ DLCgenericPerks.push({
   category: 'Generic',
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'Open Rolls',
-  image: 'https://i.ibb.co/Gt62FNJ/Open-Rolls.jpg',
+  image: 'https://images2.imgbox.com/f0/8c/IZoZHURm_o.png',
   cost: 5,
   desc: `When looking for a Slightly Used companion, the contractor can now see the Ability Rolls and Trauma Rolls for all candidates. However, candidates are now only a T10 on an Ability Roll of 36, not TX.
   `,
@@ -452,17 +452,6 @@ DLChomes.push({
 })
 
 DLChomes.push({
-  uid: 'BxyZw',
-  dlc: 'KatzSmile',
-  title: 'Stay in touch',
-  category: 'Home',
-  image: 'https://i.ibb.co/k5pzxb7/Stay-In-Touch.jpg',
-  cost: 5,
-  desc: 'High speed internet service covering any and all dimensions no matter the location, magic ward, or jamming technology. A modem-router and replacements are provided for free.',
-  whitelist: ['Pocket Apartment'],
-})
-
-DLChomes.push({
   uid: 'whxCA',
   dlc: 'KatzSmile',
   title: 'My House, My Rules!',
@@ -502,7 +491,7 @@ DLChomes.push({
   dlc: 'ProtagNeptune',
   category: 'Home',
   title: 'Homeworld in the Sea of Time',
-  image: 'https://i.imgur.com/TJHUNSFl.png',
+  image: 'https://nep.ovh/img/qJWv.jpg',
   cost: 600,
   desc: 'Your homeworld, the Planet Earth with the Moon, will be brought into your dimension immediately after purchase. We hope you won\'t mind the probable unrest of the human population on your homeworld when they inevitably realize that the stars in the sky have changed, with an unknown planet or ringworld of your personal realm.',
   whitelist: ['Pocket Star'],
@@ -693,22 +682,6 @@ DLCotherControls.push({
   desc: `The law is on your side. If a contract you draft using the Signed and Sealed perk is otherwise legal then the compulsive terms are seen as legal and her compliance expected if signed. If you have a binding other than No Bindings then your contracts can compel an individual when it is signed by a parent, spouse, or anyone who could enter a contract on their behalf.
   `,
   whitelist: ['Signed and Sealed'],
-})
-
-DLCotherControls.push({
-  uid: 'iCmw0',
-  dlc: 'Merior',
-  dlclink: 'https://docs.google.com/document/d/1j9emHb4IWvOTnp13RASTAuINAFuKDMSSQyQ-7ta9sjA/edit#',
-  title: 'Needful Things',
-  legacy: true,
-  category: 'Lure',
-  image: 'https://i.ibb.co/q0vxrBD/Needful-Things.jpg',
-  cost: 20,
-  needed: 1,
-  desc: `The items, good, and/or services provided by your business are simply better than they otherwise would be and certainly seem more appealing. This enhancement is inversely proportional to the original quality, turning poor goods into average ones but will improve top-of-the-line products only fractionally. It will always make what you offer at least appear to have an edge over products of similar quality from elsewhere.
-  <p>This enhanced appeal raises the likelihood that appropriate forms of theft (including defaulting on loans, shoplifting, or 'dining-and-dashing') takes place, but that can be a benefit. Anyone who commits such an act, and those who knowingly benefit from it such as consuming stolen food, are considered to have agreed to 'experience' the business per Hotel California and become similarly captured.</p>
-  `,
-  whitelist: ['Hotel California', 'Commerce Room: Hotel California'],
 })
 
 DLCotherControls.push({
@@ -972,7 +945,7 @@ DLCbindings.push({
   You are no longer limited to a single Binding. You may now purchase an additional Binding and expansions. You must still spend the credits as normal. This perk may be purchased multiple times. Its price will increase by 1 ticket each time. You are able to decide what purchased binding effects, including mental, are applied to any or all of your retinue. For example, you could Bind someone with the Shroud, then use Third-Generation Symbiote to share access to the Symbiote’s bio-armor as well. 
   `,
   needed: 1,
-  whitelist: ['Company Stamp', 'Tempest Jewelry', 'Ritual Circle', 'Alterzelu Symbiote', 'Shroud of Power', 'Hypnosis App', 'Tantric Arts'],
+  whitelist: ['Company Stamp', 'Tempest Jewelry', 'Alterzelu Symbiote', 'Shroud of Power', 'Hypnosis App', 'Tantric Arts'],
 })
 
 // DLCbindings.push({

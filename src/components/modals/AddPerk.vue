@@ -74,7 +74,7 @@ import { localPerks } from '~/logic/localPerks'
 const perkCats = ['Challenge', 'Origin', 'Intensity', 'Binding', 'Lure', 'Other control', 'Heritage', 'Demiplane & Dungeons', 'Talent', 'Defense', 'Other', 'Generic waifu perk', 'Specific waifu perk']
 const subTypes = {
   Heritage: ['Dragon', 'Transhuman', 'Outsider'],
-  Binding: ['Stamp', 'Jewelry', 'Ritual', 'Shroud', 'Symbiote'],
+  Binding: ['Stamp', 'Jewelry', 'Shroud', 'Symbiote'],
 }
 
 const successMessage = ref('')

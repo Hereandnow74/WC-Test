@@ -74,7 +74,7 @@ const talentsList = computed(() => {
   return intersection(allEffects.value, shareable).map(x => ({ flavor: x }))
 })
 
-const talentsFiltered = computed(() => talents.value.filter(perk => settings.value.hideLegacy ? !perk.legacy : true))
+const talentsFiltered = computed(() => talents.value)
 
 onMounted(() => useTooltips())
 

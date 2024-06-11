@@ -86,10 +86,6 @@
             <Toggle v-model="settings.hideDesc" />
           </div>
           <div class="flex justify-between gap-4 border-b border-gray-500 border-dotted">
-            <div>Hide <b>legacy perks</b>  by default</div>
-            <Toggle v-model="settings.hideLegacy" />
-          </div>
-          <div class="flex justify-between gap-4 border-b border-gray-500 border-dotted">
             <div>Turn on the ability to <b>free</b> retinue members (<b>Not Official</b>)</div>
             <Toggle v-model="settings.ableSell" />
           </div>

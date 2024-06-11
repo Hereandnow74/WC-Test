@@ -67,6 +67,7 @@ const buildTags = computed(() => {
   if (props.build.allEffects.includes('Cash Still Rules')) tags.push('Cash Still Rules')
   if (props.build.allEffects.includes('Wage Slave')) tags.push('Wage Slave')
   if (props.build.allEffects.includes('Black-mark')) tags.push('Black-mark')
+  if (props.build.allEffects.includes('Legacy Difficulty')) tags.push('Legacy')
   if (props.build.loan.owed > 0) tags.push('Under Loan')
   if (props.build.companions.some(x => x.image)) tags.push('Custom Images')
   if (props.build.companions.some(x => x.note)) tags.push('Retinue Notes')

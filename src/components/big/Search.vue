@@ -32,7 +32,7 @@
 import Fuse from 'fuse.js'
 import { heritages } from '~/data/heritage'
 import { bindings, lures, lureExpansions, otherControls } from '~/data/binding'
-import { intensity, intensityPvP } from '~/data/intensity'
+import { intensity, intensityPvP, invasionPvP } from '~/data/intensity'
 import { origin } from '~/data/origin'
 import { defenses, perks, ridePerksFull, genericPerks, talents } from '~/data/talents'
 import { DLCwaifu_perks, waifu_perks } from '~/data/waifu_perks'
@@ -67,7 +67,7 @@ const options = {
 
 const all = [...heritages, ...bindings, ...lures, ...lureExpansions, ...otherControls, ...intensity, ...origin,
   ...defenses, ...homes, ...perks, ...rides, ...genericPerks, ...talents, ...waifu_perks, ...ridePerksFull,
-  ...DLCbindings, ...DLChomes, ...DLCgenericPerks, ...DLCheritages, ...DLCintensity, ...DLClureExpansions, ...DLClures, ...DLCotherControls, ...DLCperks, ...DLCridePerks, ...DLCtalents, ...patrons, ...DLCRides, ...DLCwaifu_perks, ...dungeon, ...demiplane, ...symbioteBinding, ...symBuildings, ...synUnits, ...difficultyOptions, ...intensityPvP]
+  ...DLCbindings, ...DLChomes, ...DLCgenericPerks, ...DLCheritages, ...DLCintensity, ...DLClureExpansions, ...DLClures, ...DLCotherControls, ...DLCperks, ...DLCridePerks, ...DLCtalents, ...patrons, ...DLCRides, ...DLCwaifu_perks, ...dungeon, ...demiplane, ...symbioteBinding, ...symBuildings, ...synUnits, ...difficultyOptions, ...intensityPvP, ...invasionPvP]
 
 const fuse = new Fuse(all, options)
 

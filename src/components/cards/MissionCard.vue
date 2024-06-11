@@ -244,7 +244,7 @@ function sendMission() {
 }
 
 const deleteLocal = () => {
-  localMissions.value = localMissions.value.filter(x => x.uid !== props.mission.uid)
+  localMissions.value.splice(localMissions.value.findIndex((m) => m.uid === props.mission.uid), 1)
 }
 
 </script>

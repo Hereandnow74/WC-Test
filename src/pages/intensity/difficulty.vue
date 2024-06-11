@@ -133,6 +133,12 @@
         @pickPerk="(perk, obj) => pickSimplePerk(buybackIntensity, obj, difficultyAvailable, difficulties)"
       />
       <DifficultyCard
+        :perk="legacy"
+        :is-active="difficulties.findIndex((x) => x.uid === legacy.uid) !== -1"
+        :bg="difficultyAvailable(legacy) ? 'blue-100 dark:gray-700 hover:blue-200 dark:hover:gray-800' : 'gray-200 dark:gray-500'"
+        @pickPerk="chooseDifficulty(legacy)"
+      />
+      <DifficultyCard
         :perk="customIntensity"
         :is-active="difficulties.findIndex((x) => x.uid === customIntensity.uid) !== -1"
         :bg="difficultyAvailable(customIntensity) ? 'blue-100 dark:gray-700 hover:blue-200 dark:hover:gray-800' : 'gray-200 dark:gray-500'"
@@ -279,6 +285,20 @@ const drx = {
   desc: `Danger Rating 11 build's have special <a @click.stop href="/#danger11" class="text-cyan-500 hover:text-cyan-600 underline">rules</a>
   <p>This perk does not modify starting world in any way all the danger comes from mandatory TX or TY companion of your choice, while Company guarantee that they will not kill you outright, how obedient they are completely depends on chosen companion and your perks.</p>
   `,
+}
+
+const legacy = {
+  uid: '9VaF7',
+  title: 'Legacy Difficulty',
+  image: 'https://i.imgur.com/uTx4YCOl.jpg',
+  intensity: 0,
+  desc: `Your capture/sale values are set to 60%/20% of the listed price and you get a standard budget, the same as on Intensity 1. <b>Ignore</b> the values displayed by the table above and the rest of this section.
+    <p>Legacy refers to previous versions of the Waifu Catalog. If you're unfаmiliar with how they worked, either give them a read or skip using this option.</p>
+    `,
+  category: 'difficulty',
+  type: 'legacy',
+  capture: 0.60,
+  sell: 0.20,
 }
 
 const difficultySliders = computed(() => {

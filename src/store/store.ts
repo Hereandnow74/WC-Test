@@ -62,7 +62,6 @@ const settings = useStorage('settings', {
   hideDesc: false,
   textAlign: 'text-left',
   fontSize: 0,
-  hideLegacy: true,
   rebates: false,
   notification: false,
 })
