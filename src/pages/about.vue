@@ -10,30 +10,30 @@
         </div>
       </h6>
       <div>
-        Time I spent on Interactive Waifu Catalog so far -
+        Time I spent on the Interactive Waifu Catalog so far -
         <span class="text-amber-500">more than a 1000</span> hours in
         <span class="text-amber-500">more than two years</span>.
       </div>
       <div>
-        If you found some bugs, have any questions about Interactive, suggestions, collaborations or you want to hire me
-        for any similar project feel free to write me on
+        If you found some bugs, desire to collaborate, have any questions/suggestions about the Interactive, or want to hire me
+        for any similar projects, feel free to message me on
         <a
           href="https://discord.gg/cZf4U5rmPV"
           target="_blank"
           rel="noopener noreferrer"
           class="text-blue-500 underline text-xl"
-        >Discord</a> nickname <span class="font-bold">om1cr0n42</span>. List of all my projects is available on <a href="https://wormlewdmod.neocities.org/about" class="text-blue-500 underline text-xl" target="_blank" rel="noopener noreferrer">this page</a>.
+        >Discord</a> nickname <span class="font-bold">om1cr0n42</span>. A list of all my projects is available on <a href="https://wormlewdmod.neocities.org/about" class="text-blue-500 underline text-xl" target="_blank" rel="noopener noreferrer">this page</a>.
       </div>
       <div>
-        If you like the job I done so far and want to support my work on this project and any and all similar
-        projects that I can do in the future you can do so via
+        If you like the job I have done so far and want to support my work on this, as well as similar
+        projects that I can do in the future, you can do so via my
         <a
           href="https://www.patreon.com/interactiveapps"
           target="_blank"
           rel="noopener noreferrer"
           class="text-red-500 underline"
         >Patreon</a>.
-        Be aware that I'm only done the <b>Interactive</b>, so if You like the Catalog itself support it's author
+        Be aware that I'm only the creator of the <b>Interactive</b>, so if you like the Waifu Catalog itself, you can support it's author
         <a
           href="https://forum.questionablequesting.com/members/swiftrosenthal.1795/"
           target="_blank"
