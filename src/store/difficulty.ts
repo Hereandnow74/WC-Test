@@ -5,7 +5,7 @@ import { CHAR_COSTS, CHAR_COSTS_FULL, WORLD_RATINGS_DF } from '~/data/constants'
 const { difficultyRating, captureKoeff, sellKoeff } = useStore()
 
 const worldDifficultyRow = computed(() => {
-  const budgetRow = WORLD_RATINGS_DF.slice(1).map(w => Math.round(Math.round(w * (2.5 / (clamp(difficultyRating.value, 0, 10) + 1.5)) / 5) * 5))
+  const budgetRow = WORLD_RATINGS_DF.slice(1).map(w => Math.round(w * (2.5 / (clamp(difficultyRating.value, 0, 10) + 1.5)) / 5) * 5)
   return ['Budget', ...budgetRow]
 })
 

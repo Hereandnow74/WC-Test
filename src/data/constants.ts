@@ -87,8 +87,15 @@ export const WORLD_RATINGS = [
   { rating: 10, title: 'To Live is to Die', budget: 2500 },
   { rating: 11, title: 'One', budget: 0 },
 ]
+const temp: number[] = []
+for (let i = 0; i < 9; i++)
+  temp.push((temp[i - 1] || 2500) / ((Math.sqrt(5) + 1) / 2))
+temp.unshift(2500)
+temp.push(0)
+temp.reverse()
+export const WORLD_RATINGS_DF = temp
 
-export const WORLD_RATINGS_DF = [0, 33, 55, 86, 140, 225, 365, 590, 955, 1545, 2500]
+// export const WORLD_RATINGS_DF = [0, 33, 55, 86, 140, 225, 365, 590, 955, 1545, 2500]
 
 export const CHAR_COSTS = [0, 1, 2, 5, 10, 20, 50, 100, 200, 500, 1000, 0, 0, 0]
 export const CHAR_COSTS_FULL = [0, 1, 2, 5, 10, 20, 50, 100, 200, 500, 1000, 2000, 5000, 10000]

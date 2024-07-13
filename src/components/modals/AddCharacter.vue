@@ -164,7 +164,7 @@ const zodObject = zod.object({
 
 const zodGlobal = zodObject.extend({ nickname: zod.string().min(1, 'Nickname is required').max(32, 'Max length of nickname is 32 symbols') })
 
-const zodSWP = zodGlobal.extend({ SWP: zod.string().min(1, 'SWP title is required').max(64, { message: 'Maximum length is 64 chars' }) })
+const zodSWP = zodGlobal.extend({ SWP: zod.string().min(1, 'SWP title is required').max(128, { message: 'Maximum length is 128 symbols' }) })
 
 const schema = computed(() => serverSave.value ? (itsSWP.value ? toFormValidator(zodSWP) : toFormValidator(zodGlobal)) : toFormValidator(zodObject))
 

@@ -45,10 +45,13 @@
         <div class="lg:w-3/4">
           <div :class="[currentWidth]" class="flex flex-col gap-4">
             <h1 id="rules" class="text-xl md:text-2xl font-bold px-2">
-              Waifu Catalog 0.23.05 <span class="text-gray-600 dark:text-gray-400">(by SwiftRosenthal)</span> Interactive v{{ VERSION }} <span class="text-gray-600 dark:text-gray-400">(by Om1cr0n)</span>
+              Waifu Catalog 0.23.05 <span class="text-gray-600 dark:text-gray-400">(by SwiftRosenthal)</span> + DLC Interactive v{{ VERSION }} <span class="text-gray-600 dark:text-gray-400">(by Om1cr0n)</span>
             </h1>
-            <h3 class="px-2 text-xl md:text-xl hover:underline text-blue-700 dark:text-light-blue-400">
-              <a href="https://docs.google.com/document/d/1v14mjqC4tns0OhKkGE6e2LHXTq4GGQl__L8emB-YvGo/edit" target="_blank" rel="noopener noreferrer">Waifu Catalog Waifu Catalog 0.23.05 document</a>
+            <h3 class="px-2 text-lg md:text-xl hover:underline text-blue-700 dark:text-light-blue-400">
+              <a href="https://docs.google.com/document/d/1v14mjqC4tns0OhKkGE6e2LHXTq4GGQl__L8emB-YvGo/edit" target="_blank" rel="noopener noreferrer">Waifu Catalog 0.23.05 document</a>
+            </h3>
+            <h3 class="px-2 md:text-lg hover:underline text-blue-700 dark:text-light-blue-400">
+              <a href="https://docs.google.com/document/d/1ILzH_MYYTsS40Dx4YnnqbGiFaHiqVRZD-yJBEz4CnEg/edit" target="_blank" rel="noopener noreferrer">Waifu Catalog <b>Unstable</b> version document</a>
             </h3>
             <div class="flex w-full -my-3 items-center justify-end">
               <fluent:auto-fit-width-24-filled class="h-8 w-8 bg-gray-300 dark:bg-gray-800 rounded cursor-pointer hover:scale-105 transform" @click="changeWidth" />
@@ -89,7 +92,7 @@
                   href="https://docs.google.com/document/d/1kXgdEuvp30p0pSJYV4IboyhF0lH9rEgXAwc5F7EQ_uQ/edit"
                   target="_blank"
                   rel="noopener noreferrer"
-                >link</a>)
+                >link to source</a>)
               </h3>
               <ul class="list-disc list-inside">
                 <li>Beings are tiered based on what they can do, regardless of how.</li>

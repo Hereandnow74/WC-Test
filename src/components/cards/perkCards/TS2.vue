@@ -46,7 +46,7 @@ const props = defineProps({
 
 const emit = defineEmits(['pickPerk'])
 
-const { talentPerks } = useStore()
+const { talentPerks, difficulties } = useStore()
 
 const targetList = computed(() => talentPerks.value
   .filter(x => x.title === 'Template Stacking I')
@@ -60,8 +60,10 @@ const perkExist = computed(() => {
   return props.perk.complex ? findIndex(props.savedPerk.complex, filterObject(complex)) !== -1 : props.isActive
 })
 
+const noSkill = computed(() => !!difficulties.value.find(x => x.title === 'No Skill Framework'))
+
 const displayedCost = computed(() => {
-  return props.savedPerk.cost || props.perk.cost
+  return props.savedPerk.cost || (noSkill.value ? 10 : props.perk.cost)
 })
 
 watch(() => complex.flavor, () => sendPerk(props.perk, { title: props.perk.title, cost: props.perk.cost }))
@@ -79,7 +81,7 @@ function sendPerk(perk: any, perkToSave: any) {
   else
     obj.complex = [...props.savedPerk.complex || [], filComplex]
   obj.count = obj.complex.length || 0
-  obj.cost = obj.count * props.perk.cost
+  obj.cost = obj.count * (noSkill.value ? 10 : props.perk.cost)
 
   emit('pickPerk', perk, obj)
 }

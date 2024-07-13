@@ -253,7 +253,7 @@ watch(page, async() => {
 
 watch(filteredMissions, () => {
   infiniteMissions.value = filteredMissions.value.slice(0, startingMissionsCount.value)
-  const uids = infiniteMissions.value.map(mission => mission.uid)
+  const uids = infiniteMissions.value.filter(x => !x.temprorary).map(mission => mission.uid)
   if (uids.length) {
     getMissionsLikes(uids).then((likes) => {
       if (typeof likes === 'object')

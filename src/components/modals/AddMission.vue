@@ -181,9 +181,10 @@ import { toFormValidator } from '@vee-validate/zod'
 
 import type { Mission } from 'global'
 import type { PropType } from '@vue/runtime-core'
-import { proposeMission, toggleShowAddMission, showAddMission } from '~/logic'
+import { proposeMission, toggleShowAddMission, showAddMission, randomString } from '~/logic'
 import { useWorlds } from '~/data/constants'
 import { useSaves } from '~/store/saves'
+// import { randomString } from '~/misc'
 
 const props = defineProps({
   mission: {
@@ -270,6 +271,8 @@ const addPerk = handleSubmit((values) => {
   const proposal = { ...values, date: new Date().toString(), seed }
   if (props.mission?.uid)
     proposal.uid = props.mission.uid
+  else
+    proposal.uid = randomString(5)
   // if (!temporary.value)
   //   proposeMission(proposal, () => successMessage.value = 'Mission was send successfully, await until I review and add it')
   userNickname.value = values.author

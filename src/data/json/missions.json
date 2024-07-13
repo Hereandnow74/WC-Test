@@ -1,11 +1,2042 @@
 [
   {
+    "reward": 50,
+    "image": "",
+    "author": "Dionesia",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Hollow Hunt",
+    "uid": "VavaT",
+    "loca": "Bleach",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": 2,
+        "type": "Credits",
+        "value": "Kill an Adjuchas (Applies individually for every unique Adjuchas killed)"
+      },
+      {
+        "reward": 10,
+        "type": "Credits",
+        "value": "Kill a Vasto Lorde (Applies individually for every unique Vasto Lorde killed)"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Kill at least one thousand Hollows. Vasto Lorde and regular Hollows are all counted as +1 regardless of size, power and how many souls they contained"
+      },
+      {
+        "value": "You will not be provided with a weapon to harm Hollows, so we recommend you bring your own method of harming Souls"
+      },
+      {
+        "value": "For safety reasons, we also recommend Trace and Information Defense on at least the first level; while it is unlikely that Soul Society will send people into Hueco Mundo after you for \"releasing\" this many souls, they might still be cross with you"
+      }
+    ],
+    "budget": 80,
+    "desc": "Do you know how many souls are in a Hollow? Thousands, tens of thousands in the bigger and older ones and there's a whole forest of Menos out there!\nSoul Reapers don't regularly clear out those Hollows though... Shall we do them a favor and change that?\n\nOn taking this Mission, you will be transported directly into Hueco Mundo, the exact time and place up to you as you agree with the Help Desk. \nNote: The Goal of this Mission is not to fight Espada, so we recommend that you start in the Menos Forest rather than Las Noches while Ichigo and the gang are there. The choice of time and place is for the sake of avoiding, or spiting, Aizen as well as the possibility that you'd rather start on the surface than in the forest directly\n\nAs long as you do not consciously and willingly choose to specifically destroy, Capture, absorb or apply a similar method, the Hollows and the resulting souls, all Hollows you defeat will be counted as purified and return to the cycle of souls as if slain by a Soul Reaper's blade. This applies to all Retinue members you bring with you (Or Captured after arrival)\n\n--------\n\nAs various sorts take these Missions, finding a catch-all Reward is difficult, so you have a choice depending on your \"type\":\n>The most fundamental reward is a completely blank and obedient Asauchi that you can use yourself or give to one of your Retinue members for them to bond with and use\n>If you are already a Shinigami, you will instead gain a one-time privilege to rip the mask off a Hollow and put it on yourself, turning you into a Visored with all of the natural abilities of the Hollow you robbed\n>If you are a Hollow yourself, you may choose to instead gain the Potential to become both a Vasto Lorde and an Arrancar if you did not already possess one or both. You may immedately become an Arrancar on completing this Mission\n>If you are already an Arrancar, you can still take the Asauchi and unlock both Shikai and Bankai in addition to your existing abilities\n>If you are a Quincy, you may choose a T8 or lower Angel Template Stack to act as your Schrift (or as a bonus to your existing Schrift if you already have one)\n>If you are Ichigo Kurosaki, or otherwise a hybrid of Hollow, Quincy and Soul Reaper, you gain the ability to transform your Shikai and Bankai to fit your aesthetics, as well as a Talent (an experience modifier) to combine your hybrid powers\n>If none of it's an interest to you, you may take Soul Talent as your reward"
+  },
+  {
+    "reward": "Faerie Feast and Master Chef or 16 Credits",
+    "image": "https://i.imgur.com/ZHNlYem.png",
+    "author": "Heaven Canceler",
+    "rewardType": "Perks",
+    "source": "",
+    "title": "Feeding Rumia",
+    "uid": "gbOwH",
+    "loca": "Touhou",
+    "lewd": false,
+    "scope": "Quick",
+    "objectives": [
+      {
+        "reward": "Sticky Fingers or 3 Credits",
+        "type": "Perks",
+        "value": "Get Rumia addicted to your sexual fluids."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Make sure that Rumia does not go hungry for one week of 7 days"
+      },
+      {
+        "value": "Make sure that she does not attack any humans during that time."
+      }
+    ],
+    "budget": 150,
+    "desc": "Rumia is always on the hunt and hungry, always looking for something to stuff in her little mouth. Our favorite little monster is very much not a good hunter though, which is where you come into things. Basically, we want you to feed her and make sure she gets nice and full instead of always going hungry due to crashing into another tree instead of a tasty human. That said, while we don’t discriminate against culinary preferences, its probably better to not actually feed her living or dead humans. If only to avoid the attention of a certain pissed off Red-White Shrine Maiden.\n"
+  },
+  {
+    "reward": 2,
+    "image": "https://images.gamewatcherstatic.com/image/file/2/54/93062/Doom_Eternal_1.png",
+    "author": "Silver Call",
+    "rewardType": "IMG Tickets",
+    "source": "",
+    "title": "Demonic Horde Containment",
+    "uid": "pZfzL",
+    "loca": "DOOM: Eternal",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Reach a personal kill count of 1,000 demons."
+      },
+      {
+        "reward": "Template Stacking of any Transhuman companion or a Transhuman Perk worth 100 or less credits",
+        "type": "Perks",
+        "value": "Develope a replicable method to empower a regular human sufficiently to face a demon."
+      },
+      {
+        "reward": "Performance Talent, Communication Talent & Administrative Talent",
+        "type": "Perks",
+        "value": "Have anarmy of your own kill 1 million demons."
+      },
+      {
+        "reward": "A stack of Stress Defence, Mind Defence & Corruption Defence for each template.",
+        "type": "Perks",
+        "value": "Have a Wrathful characters as templates. It may be a substituteor power swap."
+      },
+      {
+        "reward": 500,
+        "type": "Credits",
+        "value": "kill the king of hell"
+      },
+      {
+        "reward": 2,
+        "type": "IMG Tickets",
+        "value": "uplift earth so that humanity is strong enough to push the demons completely off earth, for a generation. without your help any more."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Keep the Demons from becoming the major power on earth for 12 years."
+      }
+    ],
+    "budget": 500,
+    "desc": "The gates of hell opened after the UAC facility on Mars was destroyed. This led to the release of demons from hell into the earthly plane.\nFor some reason, the prophesied hero is nowhere to be found. And he won't be found for 12 years.\nYour mission, should you accept it, is to protect as much of humanity and the earth as you could until the return of the Doom Slayer.\nGood Luck"
+  },
+  {
+    "reward": "You become incapable of losing your senses, mortal or otherwise; even if your organs are crushed or your soul cut open, some other sense will somehow cover for it in some way.",
+    "image": "https://i.pinimg.com/originals/7f/9b/b1/7f9bb1edab7a69b9bab9bdbc844b9b88.png",
+    "author": "Th3140nly",
+    "rewardType": "Other",
+    "source": "",
+    "title": "What do you find so entertaining?",
+    "uid": "LpnEp",
+    "loca": "Dororo",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": 1,
+        "type": "IMG Tickets",
+        "value": "FIGHTER ORIGIN; incarnate as Hyakkimaru himself. You will start as a limbless, senseless, skinless thing, but will have immense willpower & supernatural ability to LIVE in spite of all that should kill you so long as you do not die instantly."
+      },
+      {
+        "reward": "You have an additional 6th sense for \"plot important\" items, events, people & locations, especially concerning friends & family.",
+        "type": "Other",
+        "value": "FAITH ORIGIN: incarnate as the blind old (or perhaps here young) Monk that canonically helps Hyakkimaru understand having senses, & Dororo how to work around what he still lacked."
+      },
+      {
+        "reward": "Hyakkimaru",
+        "type": "Companions",
+        "value": "THIEF ORIGIN: incarnate as Dororo, a fe/male child trickster and survival-sustenance bandit turned squire for Hyakkimaru in canon, as much moral support as source of entertainment."
+      },
+      {
+        "reward": "You can grant people something they desire, within reason(ably fan-wank) in exchange for something you desire of / dear to them.",
+        "type": "Other",
+        "value": "FEAR ORIGIN: become a Demon, either one of the canon 12 / 48 or an original character, able to change between humanoid and animalistic forms that depending on lack of / x-over may also be 1/2-spirit, weak to sunlight, Souls-grade bosses-in-the-making, etc."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Any supernatural abilities you may have are weakened to fit the setting; being able to throw a bit of electricity is fine, shooting instant-kill lightning is not."
+      },
+      {
+        "value": "In light of the above, the setting of Dororo 2019 / fused with other versions can be further fused with Sekiro with influence from other Fromsoftware franchises &-or Kimetsu no Yaiba per their similar themes / release dates / inter-fandom friendliness."
+      }
+    ],
+    "budget": 100,
+    "desc": "The Sengoku Jidai, also known as Japan's Warring States Period, was a time of tragedy and horror as humans did as humans all too often do, inflicting terrible fates upon each other for one reason or other.\n\nAdding demons to this mix rarely makes things better, save perhaps for those than benefit from making deals with the devil, and even the devils that nurture some at the price of others can inflict terrible tolls and toils on their supposed benificiaries.\n\nIn one of many such tales, a desperate lordly father sacrifices his son for the prosperity of his people in a more literal way than most ruling families, leaving the child with no limbs, senses or even skin. Abandoned by his sire yet adopted by a kindly though guilt-ridden prosthetics-maker, the boy becomes a man whose 6th sense substitutes for his lost eyes if nothing else, by which he spots and slays his first demon, one of 12 or 48 that hold his missing parts hostage, and so discovers part of his curse's origins, depending on the timeline, or perhaps both are combined and he must face a full 100 evil beings as befits his name; \"Hyakkimaru\", the '100-demon circle'.\n\nYour mission, if you accept, is to hinder or help his quest to kill these beings & become human; either the many evils and several innocents perish for the one, the most evils are killed and as many innocent deaths avoided as possible, or the minority is allowed to die for the peace of the majority.\n\nWhich path shall you take?"
+  },
+  {
+    "reward": "Yoriichi Tsugikuni",
+    "image": "",
+    "author": "Th3140nly",
+    "rewardType": "Companions",
+    "source": "",
+    "title": "What's so amusing about this?",
+    "uid": "wmNwx",
+    "loca": "Kimetsu no Yaiba/Demon Slayer",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "You become able to make the elemental effects of your Style real ala Kaigaku's lightning, & can teach other users how to do so.",
+        "type": "Other",
+        "value": "Learn a Breathing Style from a current or former Hashira (repeatable)"
+      },
+      {
+        "reward": "You become recognised as a Hashira, whose ranks are retroactively expanded to include original 5 + however many new 1s pop up.",
+        "type": "Other",
+        "value": "Create your own Breathing Style; must have at least 5 distinct techniques. (repeatable, but can only claim to specialise in 1; 2+ must be passed on & Mastered by others)."
+      },
+      {
+        "reward": "You can make your Nichirin Blade turn red & imbue the strength of Sun into any other weapon-style you know, inc. non-Yaiba 1s.",
+        "type": "Other",
+        "value": "Learn how to perform or somehow recreate Sun Breathing from the Kamado family / records left by Yoriichi, assuming you can find any, or reverse-engineer the original Style from it's many offshoots, chiefly the First 5 --- Wind, Stone, Fire, Thunder, Water."
+      },
+      {
+        "reward": "You gain Genya's ability to consume and copy Demon and other viral life-form's powers w/o turning into one of them yourself.",
+        "type": "Other",
+        "value": "Learn how to perform Moon Breathing either by finding whatever notes Michikatsu left or copying at least one of Kokushibo's moves by observe / fighting him somehow, w/o reverse-engineering the rest of them once you have come to understand core principle/s."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You are reborn into the Kimetsu no Yaiba world as a physically normal human by the franchise's standard; out-of-context supernatural abilities are not allowed, inc. Heritages / Captures / Lures / etc. Man VS Monster, \"magic\" being rather limited at best."
+      }
+    ],
+    "budget": 100,
+    "desc": "In the world of KnY, many Demons laugh in the face of Slayers in civilians alike, believing themselves untouchable by anything other than the sun.\n\nShow them the error of their ways; become a Hashira among Hashira, and cut down their arrogance, from the least of newly-turned all the way to the progenitor of demons until, slaying Muzan himself."
+  },
+  {
+    "reward": "Modified \"Muzanite / Muzanian / etc.\" Demon-hood; still burn to death in sunlight, but cannot be remote-controlled, commanded nor killed / spied on through your own eyes by Muzan. The rest is up to your choices here, and your actions once in the KnY world.",
+    "image": "https://m7.hentaiera.com/022/7p9wtv51j2/25.jpg",
+    "author": "Th3140nly",
+    "rewardType": "Other",
+    "source": "",
+    "title": "What do you take life for, exactly?",
+    "uid": "Lpuvp",
+    "loca": "Kimetsu no Yaiba/Demon Slayer",
+    "lewd": true,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "DeMonarch; weak only to sunlight, can regenerate from tiny scraps of flesh, full self-biokinesis, can create new Demons, etc.",
+        "type": "Other",
+        "value": "EASY MODE; you become a Demon via ingesting the Blue Spider Lily concotion same as Muzan. You still start weak, but do not need to eat to evolve, only survive a few years until your powers come in, then you will be able to do everything Muzan can, or more."
+      },
+      {
+        "reward": "Demon Prince/ss: you start off already to eat human food supplemented by a little blood, developing multiple Demon Arts quickly.",
+        "type": "Other",
+        "value": "AVERAGE MODE: you are 1 of / the only natural-born Demon, created by Muzan-Cells infecting you in the womb via your mother. The sun still kills you, but wisteria has little to no effect, & you need only sip human blood to live. Discover the rest yourself."
+      },
+      {
+        "reward": "Demonic Usurper: you start off with the ability to perfectly reproduce eaten Demon's blood arts & improve them via more M-cells.",
+        "type": "Other",
+        "value": "HARD MODE: you're now a 2nd Demon with the luck to be at Muzan's side when Yoriichi near-killed him, severing the control-bond as it did with Tamayo. You will need to hunt other Demons to get more Muzan-cells & Blood Art power, pos. equalling him in time."
+      },
+      {
+        "reward": "Demon's Bastard: you will be twice as powerful by the modern . Taisho era (c. 1912) than a normal Sengoku (c. 1450s) start.",
+        "type": "Other",
+        "value": "HAZY MODE: combine Hard & Average origins into a nat-born hybrid who was born or became free (again) after Muzan's near-death; PRO, you can become his equal with less effort, time & cannibalism paying off; CON, Yoriichi will not just let you go. Good luck!"
+      },
+      {
+        "reward": "Demon Dragon: find & feast on Gyokko to gain Template Stacking II of him / the potential to achieve all above Rewards.",
+        "type": "Other",
+        "value": "U DIED MODE: not only do you start as a human-level Demon due to drinking lit. watered-down demon-blood, said blood-water comes from Sekiro's Fountainhead Palace, the powerful demon Gyokko trapped and bled for immortality that slowly turns drinker to fish."
+      },
+      {
+        "reward": "\"Demon Queen\" Nezuko Kamado, at the height of her Blood Art power, her flames now exorcising Demon / Vampire / Werewolf / etc.",
+        "type": "Companions",
+        "value": "Conquer the Sun; either through eating a whole Blue Spider Lily, not eating humans until the M-Cells stabilize as Nezuko will do, or by capture / consuming Nezuko herself, become immune to being burned by the sun, cut by Nichirin tools & Wisteria-poisoned."
+      },
+      {
+        "reward": "You develop a new Blood Art that lets you generate both Nichirin / Sunlight (anti-magic) & Moonlight / ??? (anti-mortal) metals.",
+        "type": "Other",
+        "value": "In/directly slay Upper Rank 1, Kokushibo the Moon Breather, by your or another's hand, though in the latter case you must have helped them in some way be it team-up or training them somehow. You can still eat his remains afterward for power-up cannibalism."
+      },
+      {
+        "reward": "By accepting this Mission, you are able to sire / birth hybrids; success = power to absorb + Demonise any living matter / being.",
+        "type": "Other",
+        "value": "In/directly slay Upper Rank 2, Douma. Same rules for somebody else killing him apply as above."
+      },
+      {
+        "reward": "The more Demons you kill, create or infect with your own cells (choose 1), the stronger you become; stacks with other options.",
+        "type": "Other",
+        "value": "In/directly slay Upper Rank 3, Akaza. Same rules for somebody else killing him apply as above, however as one of the more sympathetic demons, you are also allowed to 'cure' him, e.g. via Nezuko's flames / Tamayo's canonical WIP \"cure\" for demonism / etc.."
+      },
+      {
+        "reward": "So long as a piece of your body equal in size to a human head remains intact, you grow replacement bodies from it upon death.",
+        "type": "Other",
+        "value": "In/directly slay Upper Rank 4, Hantengu. Same rules for somebody else killing him apply as above."
+      },
+      {
+        "reward": "Take whichever of the 2 rewards were not chosen from the Demon Dragon objective, or new 1; the Fountainhead Palace as a Domain.",
+        "type": "Other",
+        "value": "In/directly slay Upper Rank 5, Gyokko. NOTE, can be taken with U DIED start-mode, in which case indirect kill-assist can be as simple as handing somebody else a knife to finish him off with."
+      },
+      {
+        "reward": "You become able to create special M-Cells that, injected into non-Demons, regen physical damage then r overridden by host cells.",
+        "type": "Other",
+        "value": "In/directly slay Upper Rank 6, Daki & Gyutaro. Same rules apply to the siblings as going for Akaza."
+      },
+      {
+        "reward": "You become capable of overlaying reality with parts of your Domain & treating properties you \"claim\" somehow as external Domain.",
+        "type": "Other",
+        "value": "In/directly slay Nakime before or after she becomes a member of the 12 Kizuki. Alternatively, you can Capture her alive, but you must utterly cover her body or at least 12 rooms of the Infinite Castle in your own blood."
+      },
+      {
+        "reward": "You gain the ability to generate \"mook\"-level Demons from individual cells of your body en masse; they have no Blood Arts / etc.",
+        "type": "Other",
+        "value": "Face the Lower Ranks of the Twelve Kizuki, 1 to 6, individually or as a group and kill, capture / Capture or imprison them for at least 12 nights. Taking this Mission ensures they will all face you at some point with power comparable to FromSoft mini-boss."
+      },
+      {
+        "reward": "You become capable of turning physical meta-abilities into spiritual ones and vice-versa, e.g. Pyromancy to Pyrokinesis, & back.",
+        "type": "Other",
+        "value": "In/directly kill Kaigaku before or after he becomes a Demon. If you are the moral sort, you may wish to err on the side of 'before' to stop his mentor's shamed suicide. If more practical, you may want to do it 'after' / let his fellow student kill him."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You begin as a \"basic\" Demon irrespective of modifiers per Objectives; you are at least twice as strong / swift / tough / ~ as base men, possess heightened senses, & can only be killed by sunlight, decapitation by Nichirin tools, or large dose of wisteria."
+      },
+      {
+        "value": "You can evolve higher than this state, the method and time required to do so depending on which \"Starter Mode\" Objectives you take below and-or any Rewards that come from completing additional assignments, though feel free to experiment with other powers."
+      },
+      {
+        "value": "Said \"other powers\" are for the duration of this Mission limited to in-universe methods; any self-improvement, augmentation, healing etc. ability that does not derive from Demon Blood Arts or limited crossover* powers cannot be accessed by you or Retinues."
+      },
+      {
+        "value": "*Given the Kimetsu no Yaiba fandom's friendliness with \"Dororo\" and \"Sekiro\" fans per theme, setting and release-date similarities, elements of FromSoftware & Tezuka franchises are allowed in/to a fusion with this Mission/'s setting [see examples below]"
+      },
+      {
+        "value": "Examples of FS / TZK merging with the KnY setting may include Bloodborne's Western / Church themes coming in via the Nanban Trade / Kakure Christians of IRL Japanese history, or Astro Boy being a fantasy cyborg ala the Yoriichi Puppet of Yaiba canon."
+      },
+      {
+        "value": "Nonetheless, all examples of supernatural powers must be rooted in Yaiba themes; Bloodborne abilities are easy fits for Blood Demon Arts, whether in a fellow Demon or a human that can consume them for a temporary power-up ala Genya, but magic / spirit ..."
+      },
+      {
+        "value": "... arts / etc. from Souls to Elden Ring & Sekiro itself are a different matter; it could be that Yaiba's Breathing Arts actually generate 'pure' soul constructs while the like of Kaigaku's thunder is 'impure' physical attachment / corruption of the world."
+      },
+      {
+        "value": "However the above adaptations happen, if you desire it, follow the core rule; FANWANK RESPONSIBLY, avoid overpowered Demons / Slayers at least to start or it ruins the whole Mission. Other than that, do what you like."
+      },
+      {
+        "value": "Capture methods, Lures, Heritages etcetera likewise all become rooted in Blood Arts (e.g. Alterzelu, Wendigo, Love Spot, etc.) with the odd bit of magic (e.g. Death Heritage); Demons find it harder to use the latter, Slayers are resilient to the former."
+      }
+    ],
+    "budget": 100,
+    "desc": "The demons of Muzan --- a short-sighted and selfish, stagnant fool who slew his own doctor before the man could complete his miracle cure of a boy who frankly would've been better off dead for his own and the world's sake --- are creatures of flesh and blood, blood especially for that is the source of their transformation, their curse, and their supernatural arts.\n\nYet they are not creatures of the bone, for their origins lay with infectious, asexual reproduction, the unliving rather than the undead, both their hunger of human meat & the lethality of the sun keeping them from living a full life, perhaps even half a life, those awake in the evening their only company.\n\nNow you are one of them: whether you are the true first or the second-ever person to undergo the Blue Spider Lily Treatment & thus a 'brother' of the Demon King, a scion of Muzan like all the rest but who escaped his control after his only near-death-experience at the hands of his kind's foe, the Demon Slayers' own founder and unrivalled paragon, Yoriichi the Sun Breather, an actual child despite lack of canon support for such things --- as a Demon Prince/ss is likely the only such hybrid that could exist given Muzan's bio-mastery, though just as likely to be discarded should you fail to achieve his millenium-long obsession with \"conquering the sun\" --- or a lucky offshoot through such methods as drinking or having watered-down demon blood inserted into open wounds, the fact remains that you are now Something Else, a Demon no more bound by the Sire of most your kind than Lady Tamayo the Healer & her disciple Yushiro.\n\nWhether you seek to overthrow Muzan, fight to your heart's content against Demons and-or Slayers, or simply enjoy the ladies of the night and pleasures other than mortal food versus striving for those pleasures as Muzan seeks immunity to burning sunlight, you are a rarity blessed with choice; go forth, and show all what it is you take life for!"
+  },
+  {
+    "reward": "Tier 8 or lower Dragon Tag companion",
+    "image": "https://i.kym-cdn.com/entries/icons/facebook/000/050/345/969.jpg",
+    "author": "Sittingbear",
+    "rewardType": "Companions",
+    "source": "",
+    "title": "CURSE YOU BAYLE!",
+    "uid": "bVGUG",
+    "loca": "Elden Ring",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": 1,
+        "type": "IMG Tickets",
+        "value": "Let Igon get the Kill!"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Make sure Igon Lives mission fails if he dies"
+      },
+      {
+        "value": "Let Igon finish his Speech to Bayle"
+      }
+    ],
+    "budget": 0,
+    "desc": "Curse you, Bayle! Solid of scale you might be, foul dragon … But I will riddle with holes your rotten hide! With a hail of harpoons! With every last drop of my being! GRAAAAAARGHHH! \n\nSome people just need to go Captain Ahab on someone, Igon is our Ahab of Elden Ring. Be a true cooperator and help him while fighting said Whale. Or dragon in this case. You can be summoned to aid him should you accept the mission and bring along one companion to aid him. "
+  },
+  {
+    "reward": "A Copy Of All Your Favourite Magical Slaves",
+    "image": "",
+    "author": "JinxedKnight",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Dealing With Those Freaks",
+    "uid": "ukdXK",
+    "loca": "Harry Potter",
+    "lewd": true,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "Sex Slave Copy Of All Potter",
+        "type": "Other",
+        "value": "Turn Harry Into A Weapon Against Magicals"
+      },
+      {
+        "reward": "Sex Slave Version Of Hermione",
+        "type": "Other",
+        "value": "Turn Hermione Into A Informant Against Magicals"
+      },
+      {
+        "reward": "TS 1&2 Of Vult (Kuroinu)",
+        "type": "Other",
+        "value": "Turn A Majority Of witches Into Sex Slaves"
+      },
+      {
+        "reward": "TS 1&2 Of Shadow King (Marvel)",
+        "type": "Other",
+        "value": "Use A Majority Of Wizards For Manual labour"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Must Be Either A Squibs Or A Muggle"
+      },
+      {
+        "value": "Can't have Magic During This World"
+      }
+    ],
+    "budget": 225,
+    "desc": "About time someone dealt with those freaks.\n\nDeal with them anyway you can be genocide or mass slavery, just deal with for good.\nShow them their rightful place in the world, beneath us normal folk."
+  },
+  {
+    "reward": 500,
+    "image": "https://cdn.donmai.us/sample/55/d7/__heracles_fate_and_1_more_drawn_by_shin_ya_yukiura__sample-55d78e55486b5d9a6d05e408331cdcc5.jpg",
+    "author": "Shadey01",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "In The Name of Hera's Glory",
+    "loca": "Nasuverse",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "Marmyados from Fate",
+        "type": "Other",
+        "value": "Kill Alcides using Nines Lives."
+      },
+      {
+        "reward": "King's Order",
+        "type": "Perks",
+        "value": "Kill Alcides in 1v1 Combat"
+      },
+      {
+        "reward": "Reincarnation Pandora",
+        "type": "Other",
+        "value": "Kill Alcides without dying to him once"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You must have a Template Stacking of Berserker Heracles."
+      },
+      {
+        "value": "Body Defense will be limited to only it's first purchase. This is so you cannot circumvent God Hand's weakness in hydra poison."
+      },
+      {
+        "value": "You must be Tier 8 or below. If you are Tier 9 or above, you will limited to Tier during the mission."
+      },
+      {
+        "value": "You cannot kill Alcides by killing Bazdilot. No taking the easy way out"
+      }
+    ],
+    "budget": 200,
+    "desc": "The Demigod of Strength and Violent Passions, Heracles, has been a long time favorite among the original cast of FSN. His sheer strength, durability and surprising depth have endeared him to many. So many hoped to see the man in his full glory, uninhibited by the Berserker Class. And it seemed he did in the Snowfield Holy Grail War.\n\nExcept that kind, noble hero that persevered against all odds has been reduced to an edgy Alter that would kill even children.\n\nNeedless to say, this has angered at least one of Heracles' fans. An influential backer of ours, who wishes to see this imposter struck down. So, we want you, Contractor, to travel to this Grail War and with the true Heracles' might- Strike Alcides down.",
+    "uid": "mqYKg"
+  },
+  {
+    "reward": "You get to be the Darklord of your little hellhole. As such you are one of the few beings to be able to act as a patron for 'Divine'/Contract Magic here. Also 100 credits but only for Pocket Home/Demiplane purchases. After all, a Lord needs a Manor.",
+    "image": "https://elementalbeacon.com/wp-content/uploads/2020/05/map-of-barovia-with-travel-times-curse-of-strahd.jpg",
+    "author": "the 44'th ChoirBoy",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Domains of Dread",
+    "uid": "JDFKk",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Through your actions as a ruler, somehow make this demi-plane a better place to live before you shunted into the Shadowfell and took over. Rule over a generation who generally have it better than their parents."
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Establish yourself as a ruler in a way other than through violence."
+      },
+      {
+        "reward": "The Capture of any Capture targets you drag into your dimension via the ritual.",
+        "type": "Other",
+        "value": "Expand your Realm. After 100 years this ritual may be reproduced again, dragging another realm into yours. Note this time, no matter what, you will face a MUCH higher opposition, no matter how 'noble' you may be."
+      },
+      {
+        "reward": "Adventurers add their worlds to available worlds to draw from for the 'Added Potential' talent.",
+        "type": "Other",
+        "value": "Lure in enterprising adventurers into your lands. Throw them a grand but perilous experience. Make sure they have at least a fighting chance, meeting them at a level of power they can feasibly not instantly die to. A sporting, if not fair, chance."
+      },
+      {
+        "reward": "Template Stack I & II of Strahd von Zarovich + 20 credits",
+        "type": "Other",
+        "value": "Clown on The First Darklord Von Zarovich by actually getting to enjoy your time with your love(s). Raise a happy family and establish a proud royal line to rule long after you're gone."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Select your area. It should be between decent sized town and it's surrounding area up to something like a province of Middle Ages France"
+      },
+      {
+        "value": "Establish yourself as someone to be feared there. Part of the magical principle that allows us to do this realizes on someone's 'ownership' of an area. This 'ownership' doesn't have to be formal, more just that people there have to generally obey you"
+      },
+      {
+        "value": "Prepare the ritual & get ready. This ritual is not subtle or quick no matter how you try, so expect anything from some local murderhobos trying their luck to champions of the Gods looking to put you down. The more important the location, the more attention"
+      }
+    ],
+    "budget": 0,
+    "desc": "Good News Everyone.\nDue to some pulled favors and smiting a few timelines full of plucky murder-hobos, The Dark Powers have granted us some further pull on a parallel version of the Shadowfell. \nAfter quite the session of R&D, we've decided to use all that extra space to start making some custom Demi-planes. Demi-planes we want you to try out.\nHere are the details about your little new 'kingdom'.\nUnlike the normal ones these are alot more porous, expect unwelcomed guests to stumble their way in here, though it's alot harder to get out than it is in. You'd also have alot less control over the goings and doings inside here beyond what you can enforce with you own power or through your companions.\nThe scale is set to a specific 'region'. Wether this is a sprawling megacity, a county in a Kingdom, of if you prefer a more 'quaint' little place, even a place like Sunnyvale California(Yeah, THAT one).\nThis place, also being stuck within the Shadowfell, will start dealing with incoming monsters, undead, the awakening of magic and magical potential within much of the populous, occasional demon/devil/daemon invasions etc, common stuff really.\nMost forms of 'Divine'/Contract Magic(That which comes from devotion to a more powerful being: Clerics, Paladins, Warrior-Priests etc) are stifled, most 'Arcane' magic(That comes from manipulating some form of reality or external energy source: Wizards, Sorcerers etc) becomes more unstable, and 'Inner' powers(Stuff that comes from a person innately, whether spiritual or Psychic: Ki/Chi, Cursed Energy, Psionics etc.) finds itself getting muddled by all the Negative energy. Whatever general power/magic system you have(D&D Magic, Ki, ect) will begin to manifest in this plane, with residents having the potential to develop and hone them.(Essentially treat the common, uncaptured folk of your Domain as having 'Added Potential' for certain 'natural' power systems you possess.)\nAlso, if you already had a pocket apartment/home/mansion/world, it'll either be merged into this plane, though you can keep out the other effects of the Shadowfell from the area around your original home, thought this will only keep out the metaphysical effects, monsters and locals can wander in, so start investing in some home defenses and gates. \nWhile in General the realm will be dark, gloomy and dangerous, they generally follow 'themes'. You won't find mummies rising from the grave in your cyberpunk city nor are werewolf attacks going to be common in a flying city. The 'theme' can be influence by the environment itself, the people as well as the Darklord's Whims. Unless specified or modified via the Home's Control Center, your Home will shift to the 'theme' of your realm."
+  },
+  {
+    "reward": "Template Stacking I of Witching Hour Curse Magic and ownership of Mr. Cursey transferred to you and your Retinue.",
+    "image": "https://c.tenor.com/95e83IMrsZMAAAAC/tenor.gif",
+    "author": "myfunvideos",
+    "rewardType": "Other",
+    "source": "https://youtu.be/AQWg9sq5i2s?si=f2HcD3O432WX945T",
+    "title": "Thief the Voodoo Doll - Steal Mr. Cursey!",
+    "loca": "Fairy Tail",
+    "lewd": false,
+    "scope": "Quick",
+    "objectives": [
+      {
+        "reward": "Gain the ability to generate genetically real lock of hair of anyone you lay your eyes whenever you want.",
+        "type": "Other",
+        "value": "Steal Mr. Cursey by yourself, without any help. Don't forget, he's physically tough to fight."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Mission is Complete when you successfully take Mr. Cursey from Kain Hikaru and make sure he can never gets it back."
+      },
+      {
+        "value": "Kain Hikaru is a member of the Dark Guild known as Grimoire Heart. Find them or They'll find you based on your location, such as Tenrou Island."
+      },
+      {
+        "value": "Do not kill Kain Hikaru before the Mission is over and Mr. Cursey is in your ownership."
+      },
+      {
+        "value": "Destruction of Mr. Cursey doll results in an automatic failure."
+      }
+    ],
+    "budget": 150,
+    "desc": "As most of you might know, Voodoo Dolls are a staple in witchcraft and magic and have made it's way to many upon many sources of media and Worlds. When anyone wants to hurt someone without being right in front of them, they make these dolls to connect them.\n\nOne such World is in Fairy Tail, more specifically the Tenrou Island invasion. One user of this Lost Magic is known as Kain Hikaru, a member of Grimoire Heart and a Kin of the Seven Purgatory, making him quite strong in his own right. In his hands is an item he calls Mr. Cursey, a cursed Magic item that allows him to control the body movements of the one he has a hair of.\n\nOther benefits is that Magic used on the doll affects the hair's original owner in negative or especially beneficial ways. It even makes the victim stronger than their body should be based on the doll movements the doll is manipulated into. Who knows, maybe you'll be make better use of it than Kain will.\n\nAs such, your Mission is simple: Steal Mr. Cursey from his hands and reap the benefits for yourself.\n\nGood luck! You probably won't need it!",
+    "uid": "JaMpn"
+  },
+  {
+    "reward": "Instant Capture of Elma or, if already Captured via Love Confession, you get one Tier 7 Companion Ticket",
+    "image": "https://i.imghippo.com/files/tiTpt1719428328.jpg",
+    "author": "myfunvideos",
+    "rewardType": "Other",
+    "source": "https://youtu.be/J17dUCokthA?si=2GFIx82YMPZvb18v",
+    "title": "K-Kobayashi-san!?! Ch-Chigau! Chigaimasu~!",
+    "loca": "Miss Kobayashi's Dragon Maid",
+    "lewd": true,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "Instant Capture of Lucoa",
+        "type": "Companions",
+        "value": "After Capturing Tohru, get her to call Lucoa and tell her of other Worlds to explore. Get her into your Demiplane or Pocket Apartment and become interested."
+      },
+      {
+        "reward": "Instant Capture of Ilulu",
+        "type": "Companions",
+        "value": "As Ilulu had no qualms with attacking in a city full of civilians, have Tohru subdue Ilulu in an unpopulated area. Let her have her fun with Kobayashi, by influencing the human into sex with her~"
+      },
+      {
+        "reward": "Instant Capture of Kanna Kamui",
+        "type": "Companions",
+        "value": "Accept Kanna into your family when she comes looking for Tohru. Give her delicious snacks as well!"
+      },
+      {
+        "reward": "10% increase to Tohru seducing Elma.",
+        "type": "Other",
+        "value": "Wait a week before letting Tohru go back to the other World and then returning to attract Elma to their World via Tohru's portal on purpose."
+      },
+      {
+        "reward": "0.5% increase to Tohru's ability to seduce Elma. (Repeatable)",
+        "type": "Other",
+        "value": "Make Tohru climax inside of Kobayashi before her initial fun time with Elma."
+      },
+      {
+        "reward": 10,
+        "type": "Credits",
+        "value": "Have Kobayashi walk in the next morning after to find Tohru and Elma had sex on her bed in a \"It's not what it looks like!\" scenario."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Mission applicable after successfully Capturing Tohru."
+      },
+      {
+        "value": "As they are Dragons that are capable of Magic, mental influences will have a lesser effect. Humans like Kobayashi, on the other hand..."
+      },
+      {
+        "value": "Mission is complete when Tohru successfully seduces and has sex with Elma"
+      },
+      {
+        "value": "Mission fails when Tohru and Elma are cockblocked by someone else's actions (such as Ilulu or Kanna interrupting)"
+      },
+      {
+        "value": "Other elements such as other Dragons like Damocles will be unable to interfere before the Mission and Additional objectives are Complete"
+      }
+    ],
+    "budget": 370,
+    "desc": "A long time ago, in a fantasy world parallel to Earth, there existed Dragons. These Dragons ran amok and all manner of creatures we've heard in stories lived, even with humans that could fight on the level of Shonen Manga.\n\nHowever, that is besides the point. Soon afterwards, there existed a Dragon who had made a working 'friendship' with another Dragon of the opposing Faction.\n\nTohru and Elma. These two wonderfully powerful Dragons had a falling out and lost that friendship due to one's own desire to feast on the offering made to her.\n\nMany years had passed, but, on a deep level, Elma came to miss her former friend because the food tasted better when they were still around one another. It hurt even more when Tohru had acted cold to her and was serving the human known as Miss Kobayashi.\n\nMany things happened before they were able to reconcile their differences. But, what if we're able to change that and foster those feelings further?\n\nSo, Contractor, the Mission may sound simple, but these are Dragons we are talking about, who are naturally headstrong and stubborn, so we want you to do your best.\n\nThe Mission entails for you to get Tohru and Elma together... romantically speaking, of course. You can still have Tohru attracted to Kobayashi if you want, but ultimately the objective is for the two Dragons to have sex with one another.\n\nI mean, it's pretty obvious when you think about it. They both cared for one another in their own way and now it's time to make those feelings soar to new heights!\n\nAnother thing to note is that is Mission is best taken after you had already Captured Tohru. Good luck, Contractor. You're gonna need it!",
+    "uid": "kHqjT"
+  },
+  {
+    "reward": "A 2 gallon jug of water from Spring of Drowned Girl that refills once a week. When you purchase Sweet Home, you'll find a Spring of the Drowned Girl installed on the property",
+    "image": "https://cdn.donmai.us/original/45/78/__ranma_chan_and_saotome_ranma_ranma_1_2_drawn_by_machi_mctri__4578d3493d8ed96137cd4892b40b9ad7.png",
+    "author": "Skelethin",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Break in the Stallion",
+    "loca": "Ranma ½",
+    "lewd": false,
+    "scope": "Quick",
+    "objectives": [
+      {
+        "reward": 10,
+        "type": "Credits",
+        "value": "Ranma must directly, verbally affirm that (s)he is thankful for having submitted."
+      },
+      {
+        "reward": 15,
+        "type": "Credits",
+        "value": "Ranma must do so without prompting or reminder."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Make Ranma actually, and fully, submit to you in some way. Fully. And (s)he must not immediately, or for a while after, regret it afterwards."
+      },
+      {
+        "value": "Ranma must in some way show (s)he is actually thankful for it."
+      },
+      {
+        "value": "The use of bindings, a lure or third party mind control to directly control or command any specific action for the sake of this mission results in a failure. Their use to merely influence actions is allowed, and will not fail the mission."
+      }
+    ],
+    "budget": 0,
+    "desc": "Ranma has never actually understood the concept of surrender, or actually submitting to anyone(running away to come back to fight again later does not count). \n\nSo fix that. \n\nMake Ranma actually submit to you in some way. Fully. And (s)he must not immediately, or soon after, regret it afterwards. \n\nBy default he tends to be dominant, or at the very least a power bottom, so you must get (her)him to willingly submit, and in some way show (s)he is actually thankful for it.",
+    "uid": "duRyo"
+  },
+  {
+    "reward": 1,
+    "image": "https://i.imghippo.com/files/8Dfek1719174726.gif",
+    "author": "myfunvideos",
+    "rewardType": "IMG Tickets",
+    "source": "https://youtu.be/wD7cmhq-me0?si=Wp9lYvzmzABQRhNu",
+    "title": "Body, Take The Wheel! Why's My Hand Moving That Way?",
+    "loca": "Cells at Work!",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "10 Credits or 20 Credits if you prevent both Levels purchased. Each control and button will be labeled with a manual.",
+        "type": "Other",
+        "value": "Prevent the Contractor from purchasing both levels of Possession Defense. Them getting one level will be make it hard, but still possible to control their body."
+      },
+      {
+        "reward": "Other Contractor's internal Cells' Complete Trust in You",
+        "type": "Other",
+        "value": "Do not kill or cripple any Cells (apart from bad Germs or Cells) as you are being attacked until the Mission is over. Parrying, blocking, and evasion are fine."
+      },
+      {
+        "reward": "Leave worker clone of you at the console to continue controlling Contractor. Exit Stage Left will not take them from station.",
+        "type": "Other",
+        "value": "If other Contractor's body is damaged and bleeding, go over to the open wound and heal it before platelets seal wound."
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Do the main Mission without the help of your Retinue."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Will be in another Contractor's functioning body. If you've already met another Contractor, this is their body."
+      },
+      {
+        "value": "Will be attacked and stalled upon sight until Mission is Complete."
+      },
+      {
+        "value": "Irreparable damage to the Contractor's body results in an automatic fail. This includes passages and paths for Cells to move around from."
+      },
+      {
+        "value": "Mission is Complete when you place hands (or equivalent) on console that will allow for controlling Contractors motor and bodily functions."
+      },
+      {
+        "value": "Exit Stage Left will become unavailable upon accepting Mission. Functions will return when Mission is Complete."
+      }
+    ],
+    "budget": 200,
+    "desc": "Well, this is interesting! You've found yourself in a sentient human body with Red Blood Cells moving around and doing their job of delivering nutrients and oxygen throughout the body as well as the usual White Blood Cells crushing and killing bad bacteria and germs with the occasional T-Cell helping out.\n\nBut...what if this wasn't some random person's human body but another Contractor's body~?\n\nAh, see! That caught your attention, didn't it? Yeah! Really cool, huh? And, if you've already met this Contractor, then this presents an opportunity. In fact, boy, do we have a Mission for you!\n\nYou're Mission is simple. Go up to the brain and take control as there will be a console up there with various button and controls for moving the body. You'll basically be performing a Plankton controlling SpongeBob scenario.\n\nNaturally, you will be under attack by White Blood Cells, T-Cells, and stalled by other Cells as you make your way up there. You will be enemy number one as news of you will spread by the help of the Helper T-Cells.\n\nGood luck, Contractor! There's literally trillions of Cells in the average human body, so you've got your work cut out for you. You'll literally be swarmed, so do your best!",
+    "uid": "vuOjz"
+  },
+  {
+    "reward": "Your reward will be comparable to the degree of power the companion achieves(Tier 2 is two credits, Tier 5 is 20, Tier 10 1000, Tier X is 2 IMG Tickets etc).",
+    "image": "https://i.pinimg.com/474x/49/a4/4e/49a44e3da795c22189de5bc6f62b3396.jpg",
+    "author": "the 44'th ChoirBoy",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Make the Inside match the outside.",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": 15,
+        "type": "Credits",
+        "value": "Make your Companion so alike to the being they're imitating that even their loved ones get confused."
+      },
+      {
+        "reward": "A Purchase of Trace Defense or 50 credits.",
+        "type": "Other",
+        "value": "Make your Companion so alike to the being they're imitating that even the greater being of the 'verse get baffled by this."
+      },
+      {
+        "reward": "The Automatic Capture of the Imitated Target.",
+        "type": "Other",
+        "value": "Make the being your companion is imitated have a breakdown and start thinking They're the fake one after seeing their double."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Must have a companion that shares an uncanny resemblance to another, more powerful being."
+      },
+      {
+        "value": "Your companion can not have any direct connection to the being they're imitating. Being from the same 'verse is okay, but other than that, they're as good as true strangers"
+      }
+    ],
+    "budget": 0,
+    "desc": "Whether it's the same actor in a different role, an animator liking to use the same designs for different characters, or just some funny alternate universe shenanigans', throughout all of creation a lot of beings look the same. Most of the time there's no connections, baring an injoke or two if the role was prominent enough. \nWhat we want you to do contractor, is to gather a being as a companion who somewhere in the 'verse' that looks eerily similar to them yet has no actual connection to them and give them a powerset and level of ability comparable to whomever their doppler is.\nIf it wasn't obvious, no power swap allowed of the being you're trying to get your companion to imitate, same with Template stacks of that being. Anything else is AOK.",
+    "uid": "Kfwum"
+  },
+  {
+    "reward": "Special one-of-a-kind ticket for a companion of tier 10 or below for taking this mission. Companions above tier 5 start at tier 5 but can regain their full power over time.",
+    "image": "https://otakuusamagazine.com/wp-content/uploads/2020/04/industry-1536x845.jpg",
+    "author": "Traveler Who",
+    "rewardType": "Companions",
+    "source": "",
+    "title": "Reporting Progress",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Quick",
+    "objectives": [
+      {
+        "reward": "Extra companion ticket for a tier 6 or below companion.",
+        "type": "Companions",
+        "value": "Have companions contribute reports from their perspective occasionall"
+      },
+      {
+        "reward": 2,
+        "type": "Credits",
+        "value": "Do a daily report (repeatable for an in-universe year)"
+      },
+      {
+        "reward": 8,
+        "type": "Credits",
+        "value": "Do a weekly report (repeatable for 18 months in-universe)"
+      },
+      {
+        "reward": 12,
+        "type": "Credits",
+        "value": "Do a monthly report (repeatable for 24 months in-universe)"
+      },
+      {
+        "reward": 150,
+        "type": "Credits",
+        "value": "Do a yearly report (repeatable)"
+      },
+      {
+        "reward": 25,
+        "type": "Credits",
+        "value": "Do 10 reports (chapters) repeatable"
+      },
+      {
+        "reward": "sticky fingers for yourself with talent sharing (sticky fingers) for your retinue and sexual calibration.",
+        "type": "Perks",
+        "value": "Document you sexual adventures in full detail"
+      },
+      {
+        "reward": "Trace Defence or 15 credits",
+        "type": "Other",
+        "value": "Share your private thoughts in reports at least five times."
+      },
+      {
+        "reward": "Corruption Defence",
+        "type": "Perks",
+        "value": "Try to regular share your private thoughts in reports"
+      },
+      {
+        "reward": "Template Stacking 1 for yourself.",
+        "type": "Perks",
+        "value": "Document your life in this world at least five times"
+      },
+      {
+        "reward": "Contractor Interest for each time",
+        "type": "Perks",
+        "value": "Do 25 reports (repeatable up to four times)"
+      },
+      {
+        "reward": "Patron Income for each time.",
+        "type": "Perks",
+        "value": "Do 100 reports (repeatable for only 4 times)"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Submit at least a monthly (in-universe) report to maintain participation."
+      },
+      {
+        "value": "Daily credits are forfeited for missing a report."
+      },
+      {
+        "value": "Reports can vary in frequency (daily, weekly, monthly, yearly)."
+      }
+    ],
+    "budget": 0,
+    "desc": "We have been sending more and more contractors throughout the Omniverse and… we frankly are losing track of them all due to the sheer numbers and the fact we never hear from them or get any entertainment from their adventures if they don’t report in.\n\nSo to provide an incentive to get more stories and get in the know we decided to make this a special extra mission outside of the limit of missions you can take.\n\nWe just want reports (fanfictions) on what's going on in your world(s) nothing else, in fact, we going to juice up this offer by giving you 50 credits just for taking this mission, not bad right? Now please… entertain us.",
+    "uid": "myxaX"
+  },
+  {
+    "reward": 1000,
+    "image": "https://cdn.imgchest.com/files/l7lxcrvm6q7.jpg",
+    "author": "Norn",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Far Outside",
+    "loca": "Star Wars",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "Template Stack II - Palpatine",
+        "type": "Perks",
+        "value": "Become the ruler of the Galaxy"
+      },
+      {
+        "reward": "Template Stack II - Father",
+        "type": "Perks",
+        "value": "Destroy access to the World Between Worlds"
+      },
+      {
+        "reward": "Conjunction",
+        "type": "Perks",
+        "value": "Capture Zonama Sekot"
+      },
+      {
+        "reward": "500",
+        "type": "Credits",
+        "value": "Defeat the Yuuzhan Vong militarily without compromise."
+      },
+      {
+        "reward": "Talent Sharing",
+        "type": "Perks",
+        "value": "Establish a new order of Force Wielders"
+      },
+      {
+        "reward": "Template Stack II - Thrawn",
+        "type": "Perks",
+        "value": "Capture Thrawn"
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Win without Death Star"
+      },
+      {
+        "reward": "Fatality Defense II",
+        "type": "Perks",
+        "value": "Capture, Sell, or Kill Abeloth"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Enter timeline at 19 BBY (Most stable insertion)"
+      },
+      {
+        "value": "Defeat the Yuuzhan Vong"
+      },
+      {
+        "value": "Prevent spreading timeline distortions through the Vergence Scatter"
+      },
+      {
+        "value": "At least 1 level of Paradox Defense and Universal Calibration are required to temporarily control distortion"
+      }
+    ],
+    "budget": 500,
+    "desc": "Due to a Company Pathfinder forgetting to buy Universal Calibrate and stepping on a Rakatan Butterfly in the distant past, a variant of the Star Wars Universe has been created that is a strange mix of the EU and Disney canon.\n\nWhile normally not an issue, due to this blunder the Yuuzhan Vong will be arriving in the year 25 AE (After Empire) instead of 25 ABY. Our Loom Watchers predict that this will result in the destruction of the Galaxy, the loss of all potential waifu, and dont even get me started on the viewership drops.\n\nWorse still due to the conceptional introduction of the Vergence Scatter the timeline distortions will spread to the rest of the Star Wars Network.\n\nSo your mission is simple!\n\nDefeat the Yuuzhan Vong and prevent the distortion from spreading to adjacent universes!\n\n",
+    "uid": "UecMz"
+  },
+  {
+    "reward": 100,
+    "image": "https://cdn.imgchest.com/files/84apcdk83p4.png",
+    "author": "Deadman293",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Don't share them!",
+    "loca": "Kuroinu",
+    "lewd": true,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "Lures are twice more effective on elves.",
+        "type": "Other",
+        "value": "Capture Celestine Lucross"
+      },
+      {
+        "reward": "Annihilation Maker (DxD) for one Retinue member of your choice.",
+        "type": "Other",
+        "value": "Capture Olga Discordia"
+      },
+      {
+        "reward": "20 Credits for each.",
+        "type": "Other",
+        "value": "Capture the Seven Princess Knigths"
+      },
+      {
+        "reward": "Fertility Calibration II or 20 Credits.",
+        "type": "Perks",
+        "value": "Impregnate Claudia Levantine before her husband and father-in-law."
+      },
+      {
+        "reward": "Kuroinu II Companion of your choice.",
+        "type": "Companions",
+        "value": "Destroy the Black Dogs."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Capture every named character."
+      },
+      {
+        "value": "Don't share them with grunts or let them be ravaged by anything other than yourself."
+      }
+    ],
+    "budget": 0,
+    "desc": "Kuroinu, a classic. Everyone here knows it.\nRemember Chloe getting spitroasted, Olga getting gangbanged? Yeah, don't let that happen.\nYour mission Contractor is to capture every named character however you see convenient and do whatever you want with them, with the only EXCEPTION of not letting them be ravaged by any grunt that follows you, the Black Dogs, etc.",
+    "uid": "xKXbG"
+  },
+  {
+    "reward": "Five credits per month for the first year, increasing for every year after that, capping out at five years.",
+    "image": "https://img3.gelbooru.com//samples/6c/d9/sample_6cd977d72e02b4a089c9f2897c009a04.jpg",
+    "author": "Wowow2264",
+    "rewardType": "Other",
+    "source": "",
+    "title": "With Great Hair, Comes Great Powers.",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "Templates retroactively no longer have exponential scaling in cost.",
+        "type": "Other",
+        "value": "You can only have retinue members that canonically have your chosen hair color. Only a love confession acquired without the use of lures or use of any kind of mental effects bypasses this."
+      },
+      {
+        "reward": "A second hair color.",
+        "type": "Other",
+        "value": "In exchange for halving the credits you'll receive rounded down from this point on, we'll allow you to pick a second hair color. Can only be chosen in the first year. Be warned, there's no going back on this."
+      },
+      {
+        "reward": "Half off on any T6 or lower subsitute or possession with your chosen hair color.",
+        "type": "Other",
+        "value": "Chargen only. We'll pay half of the credits, rounded down of course, for any substitute or possession of your choice that has your chosen hair color that is T6 or below."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Pick a hair color and one hair color only. You cannot learn from, power swap to, or template anyone without that hair color."
+      },
+      {
+        "value": "Powers that do not qualify as learnable from before this mission will be disabled until you opt out of this mission."
+      },
+      {
+        "value": "Once opted out of, you no longer are able to take this mission."
+      }
+    ],
+    "budget": 0,
+    "desc": "Okay, this one is a little hair brained, pun intended. It's a rather silly challenge but the results should be rather interesting to witness if nothing else.\n\nWe want you to pick a hair color and then only use powers that characters with that hair color canonically have and nothing else until you call it quits. Oh, and your hair is now permanently that color, congratulations! We'll let you use characters that have power ups that change their hair color into your choice of color but it has to be more than a one off power up, they must use that power up at least three times and it must consistently change their hair color to the same color. Otherwise it doesn't count.\n\nSo Goku going super saiyan is fine but a anime character briefly having golden blonde hair for a single gag scene is not. Oh and, if they happen to have a split hair color, they count as any and all hair colors they might have. That means Neopolitan/Trivia Vanille can count as pink or brown and Rogue/Anna Marie can be white or brown. \n\nFor those with nonstandard hairs like Ahsoka Tano or an Asari, just use their hair \"tendrils\" color instead. If they are bald like The Ancient One or otherwise without a hair stand in such as any number of energy beings, then they are sadly not allowed. Shapeshifters follow the same rules as power up hair color changes meaning that if they regularly used a hair color, it's allowed. \n\nWe'll let you use basic things that you can learn even without talents like physical fitness and martial arts like MMA and sword fighting since those are just too basic to restrict without it getting too annoying but things like Chakra, Ki, Aura, Magic, and Super Tech? You cannot learn from, power swap to, or template off of someone who doesn't share your chosen color. Period. Oh, and if you already have powers that do not qualify, they'll be disabled until you opt out of this challenge.\n\nNow let's talk pay. You'll get five credits per month until you opt out, if you ever do, an immediate free personal template of or T6 and lower power swap to anyone with your chosen hair color, and the longer you last, the higher the credit payout. If you make it an entire year, it becomes ten credits a month, make it two years and it becomes five credits a week, make it four years and it becomes ten credits a week. It caps out at year five, making two credits every single day for the rest of your time in this challenge. ",
+    "uid": "LsjaV"
+  },
+  {
+    "reward": "You've got an immense source of power locked deep inside you. Shame you have no control over it. Treat it like a Free Template stack(Just a gimped one)",
+    "image": "https://cdnb.artstation.com/p/assets/images/images/051/388/617/large/momoiro-chan-yuji-and-sukuna-ver1.jpg",
+    "author": "the 44'th ChoirBoy",
+    "rewardType": "Other",
+    "source": "",
+    "title": "The Evil that's inside, it's Eating me Alive!",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": 77,
+        "type": "Credits",
+        "value": "Don't Tell ANYONE about your passenger. Leave everyone in the dark & actively lie about any actions they undertake. Can't let your waifu's know you have Space Satan inside you, might make sex awkward knowing they're watching."
+      },
+      {
+        "reward": "We'll guarantee your new owner won't just sell you for credits & satisfaction.",
+        "type": "Other",
+        "value": "Give in and accept your new Master. Hey, some people are into being ground underneath an abusive, powerful being's boot."
+      },
+      {
+        "reward": "Either the Full powerset of whoever was inside you or them as a 'loyal' Companion & with a template stacking of you on them.",
+        "type": "Other",
+        "value": "Come out on top: Either through getting them into a binding vow they can't weasel out of, trap them in a situation where they breaking out is objectively worse than being your bitch or outright beating them in a fight(One on one of course)"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Ugh, don't die I guess. Honestly we just want to see drama and suffering. Whether you win or lose, we profit"
+      }
+    ],
+    "budget": 140,
+    "desc": "Can only taken by Contractors who own tier is 5 or Below:\n\nWe all know it. Having a power be granted to or forced upon someone that comes with a hefty downside. That being whatever it is that grants this level of strength, is very much NOT it's user's friend. Whether it's a sentient being trapped inside, the power is innately corruptive and seeks to actively bring out the worst aspects of whoever uses, to it have terrible consequences for it's use that often lead to more problems than it solves You & I both know how this trope works. There's a reason we specify the powers we grant have much of it's innate weakness & drawbacks removed.\nWell me and some of the guys around the office wanted to have a laugh so we pitched in enough to have it some poor contractor gets to experience this whether they want it or not.\nTo the poor Contractor reading this: You'll be having a tier 7 to 10 Evil entity sealed inside you(Allowances can be made for Beings like Angra Mainyu due to their ability to scale with Power sources). This being is a [Company] creation and is promised Contractor status if they escape & if they do so, will be granted A Shroud of Power to capture YOU & all your Companions. You'll be granted the potential for whatever power system their universe has but Company talents will not aid you in any mastery, since this being will likely actively hinder your potential. The seals that keep them inside(Wether mystical, biological, coding or however) are strong enough to mostly contain them, but it is a manner of WHEN they start causing trouble not IF. Oh and don't think about getting some superpowered sugarmama to deal with this, this Entity has All [Company] Protections set to Immunity to everyone barring yourself.\nHave F.U.N.\n(꒪ᗢ꒪∗)",
+    "uid": "TYWNk"
+  },
+  {
+    "reward": 500,
+    "image": "https://www.blogs.unicamp.br/zero/wp-content/uploads/sites/187/2021/01/2021-01-27-172408_1366x768_scrot.png",
+    "author": "gameboycolor",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Inator vs Inator",
+    "loca": "Ratchet and Clank",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": 150,
+        "type": "Credits",
+        "value": "Get Lawrence to betray Dr. Nefarious and join your side of his own free will."
+      },
+      {
+        "reward": 500,
+        "type": "Credits",
+        "value": "Successfully use an Inator to conquer a planet and have them name you Ruler."
+      },
+      {
+        "reward": "3 Tickets for any Tier 5 or less Anthropomorphic Waifu  * ie. Rocket Raccoon, Perry The Platypus, Renamon*",
+        "type": "Other",
+        "value": "Have Ratchet and Clank join your Empire of Evil of there own Free Will."
+      },
+      {
+        "reward": "Perry wins his Bet with Ratchet.",
+        "type": "Other",
+        "value": "Have Dr. Nefarious Say \" Curse you Doofenshmirtz \""
+      },
+      {
+        "reward": 1,
+        "type": "IMG Tickets",
+        "value": "Conquer The Galaxy in the name of EVIL"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Show the Galaxy that you are a Harder, Better , Faster , Stronger , Villian than Dr. Nefarious"
+      },
+      {
+        "value": "Can not kill or Capture Named Characters from this world untill after you are Acknowledged as the better Villian"
+      }
+    ],
+    "budget": 700,
+    "desc": "Perry the Platypus and Ratchet met at a Multiversal Hero Conviction and made a bet between themselves on who's Villain is Better. Your mission Is to Posses Dr. Heinz Doofenshmirtz, Drop into Ratchet and Clank's world and show that everyone that Dr. Nefarious is no more than a 2-Bit Calculator.",
+    "uid": "xikDj"
+  },
+  {
+    "reward": "Roxanne Wolf And Loona",
+    "image": "https://i.pinimg.com/564x/20/7c/55/207c55b45a5bb63ad851f7088deab228.jpg",
+    "author": "SittingBear",
+    "rewardType": "Companions",
+    "source": "",
+    "title": "Adopting A couple of Dogs",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": 20,
+        "type": "Credits",
+        "value": "Walk both Loona and Roxanne on a leash where they don't try to escape (make them enjoy walkies)"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Feed them food from a dog Bowl (They act like dogs and eat on the floor with no utensils)"
+      },
+      {
+        "reward": 1,
+        "type": "Credits",
+        "value": "'Reward' Your Doggies for their good behavior"
+      },
+      {
+        "reward": 2,
+        "type": "Credits",
+        "value": "'Punish' your doggies for their Bad Behavior"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Train your dogs enough where they obey commands immediately when said."
+      },
+      {
+        "value": "Groom and Care for them like the dogs they are"
+      }
+    ],
+    "budget": 0,
+    "desc": "Alright contractors we have some extra 'Dogs' that need a good home so why not adopt them and train them enough to be good doggies. Make sure they don't become run away strays and enjoy being a dog owner.",
+    "uid": "bzAyT"
+  },
+  {
+    "reward": "Access to Worlds other Contractor has transported to, as if you visited them before. (Repeatable)",
+    "image": "https://i.imghippo.com/files/dTBh71718602202.gif",
+    "author": "myfunvideos",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Hey, Do I Know You? No? Well, That's A-Okay!",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "Sticky Fingers effectiveness is raised by 10%",
+        "type": "Other",
+        "value": "Get them to never purchase Addiction Defense and have sex with them to remind them where the best pleasures come from~ You."
+      },
+      {
+        "reward": "Get Exit Stage Left for Free!",
+        "type": "Perks",
+        "value": "Convince them to show you their Company Issued Device"
+      },
+      {
+        "reward": "Get Warranty Plan for Free!",
+        "type": "Perks",
+        "value": "Save them from severe injury and imminent Death! (This has to been from an enemy or accident)"
+      },
+      {
+        "reward": "Instant Capture of defeated foe. (Repeatable)",
+        "type": "Companions",
+        "value": "Work together to defeat an enemy that would normally be considered 'End Game Boss\"."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "The other Contractor must've used a Possess Origin."
+      },
+      {
+        "value": "Mission cannot be taken if PvP, as in they are in there like it's PvE."
+      },
+      {
+        "value": "Don't kill them. You can probably hurt them to scold them, push them out of the way of something, fight them for fun or spar, but no true killing intent and actually following through with it."
+      },
+      {
+        "value": "Other Contractor must never discover you are a Contractor or Mission will fail."
+      }
+    ],
+    "budget": 500,
+    "desc": "So...you found yourself in a World with another Contractor...and they don't know that you are also one as well. Keep it that way.\n\nIn fact, try to befriend them and act as some form of advisor as you obviously can't Capture them or their Retinue.\n\nSure, they'll find it weird that they don't know you from the Canon Material of the World you're both in, but where's the fun in something expected?\n\nOn top of this, help them complete their Progress Bar. I mean, you're in the same World, so you'll be completing yours, too!",
+    "uid": "Kyynl"
+  },
+  {
+    "reward": 10,
+    "image": "https://staticg.sportskeeda.com/editor/2024/03/8e32d-17101457293332-1920.jpg",
+    "author": "JManM",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Bully Obito",
+    "loca": "Naruto",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": 5,
+        "type": "Credits",
+        "value": "Put out a petty Bingo Book bounty on Obito (no requirement to actually name him) that ties back to the insults you shouted at him."
+      },
+      {
+        "reward": 25,
+        "type": "Credits",
+        "value": "Escalate to the deeply personal. Revive Rin Nohara and take her as your lover, giving her the kind of wonderful life a loser like Obito never could."
+      },
+      {
+        "reward": "Pain and humiliation inflicted upon Obito is it's own reward sometimes. You psychopath.",
+        "type": "Other",
+        "value": "Obito witnesses coitus between you and Rin Nohara."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Chant insults at a wild evil Obito Uchiha in your first encounter."
+      }
+    ],
+    "budget": 0,
+    "desc": "In your first encounter with Obito Uchiha after he has gone evil, instead of curb stomping him or Capturing him with out of context powers or Fanfiction level fuinjustu, relentlessly chant personal insults at him. Be really mean. \n\nFor bonus Points escalate the bullying post encounter. ",
+    "uid": "RpqOu"
+  },
+  {
+    "reward": 50,
+    "image": "https://criticalhits.com.br/wp-content/uploads/2024/06/Dungeon-Meshi-CAPA.jpg",
+    "author": "Irugaa0",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Is it Wrong to Have a Banquet In The Dungeon?",
+    "loca": "Delicious in Dungeon",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": 20,
+        "type": "Credits",
+        "value": "Dont take any companion above Tier-4 with you."
+      },
+      {
+        "reward": "Money Talent or 5 Credits.",
+        "type": "Perks",
+        "value": "Join Laios' Party"
+      },
+      {
+        "reward": "Covert Talent or 5 Credits.",
+        "type": "Perks",
+        "value": "Join Kabru's  Party"
+      },
+      {
+        "reward": "Wild Talent or 6 credits",
+        "type": "Perks",
+        "value": "Live for 10 or more Days straight inside the Dungeons"
+      },
+      {
+        "reward": "Blessed Talent or 30 credits",
+        "type": "Perks",
+        "value": "Live for 30 or more Days straight inside the Dungeons"
+      },
+      {
+        "reward": 20,
+        "type": "Credits",
+        "value": "\"Taste\"  OR Taste An Elf Woman/Man"
+      },
+      {
+        "reward": 10,
+        "type": "Credits",
+        "value": "\"Taste\"  OR Taste An Tall-man Woman/Man"
+      },
+      {
+        "reward": 30,
+        "type": "Credits",
+        "value": "\"Taste\"  OR Taste An Dwarf Woman/Man"
+      },
+      {
+        "reward": 20,
+        "type": "Credits",
+        "value": "\"Taste\"  OR Taste An Gnome Woman/Man"
+      },
+      {
+        "reward": 10,
+        "type": "Credits",
+        "value": "\"Taste\"  OR Taste An Beast-men Woman/Man"
+      },
+      {
+        "reward": 20,
+        "type": "Credits",
+        "value": "\"Taste\"  OR Taste An Ogre Woman/Man"
+      },
+      {
+        "reward": 10,
+        "type": "Credits",
+        "value": "\"Taste\"  OR Taste An Kobold Woman/Man"
+      },
+      {
+        "reward": 20,
+        "type": "Credits",
+        "value": "\"Taste\"  OR Taste An Monster Woman/Man"
+      },
+      {
+        "reward": "A Tier-5 or lower companion with the Ressurrection Tag",
+        "type": "Companions",
+        "value": "Rescue and Ressurect Falin Touden"
+      },
+      {
+        "reward": "A Tier-5 or lower companion with the Monster or Dragon Tag",
+        "type": "Companions",
+        "value": "Fight and Defeat the Transformed Falin Touden"
+      },
+      {
+        "reward": "A Tier-5 or lower companion with the Ressurrection Tag + 10 Credits",
+        "type": "Companions",
+        "value": "Rescue and Ressurect Dead Adventurers 20 times."
+      },
+      {
+        "reward": "A Tier-7 or lower companion with the Mage Tag + 20 Credits",
+        "type": "Companions",
+        "value": "Fight and Defeat the Lunatic Magician"
+      },
+      {
+        "reward": "A Copy of the Island and the Dungeon with all the contents appears inside your Demiplane",
+        "type": "Other",
+        "value": "Assume the Control of the dungeon"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Reach the bottom of the dungeon"
+      },
+      {
+        "value": "Collect and Eat at least 2 species of Fauna in each floor."
+      },
+      {
+        "value": "Collect and Eat at least 2 species of flora not present in regular worlds."
+      },
+      {
+        "value": "Kill at Least 1 species of Dragon."
+      },
+      {
+        "value": "Have an encounter with the Lunatic Magician. (You dont need to fight or win, just survive)"
+      },
+      {
+        "value": "WE STRONGLY ADVISE you to have Body Defence for this mission."
+      }
+    ],
+    "budget": 100,
+    "desc": "People think that dungeons are dark and perious place with danger lurking in every corner, well they not wrong, but dungeons are much more than that.  They a magical place filled with adventure and the most import, INGREDIENTS.  \n\nSo, not only we looking for people with an adventurer spirit but als a Gourmand, preferably one with a iron stomach.",
+    "uid": "mbreN"
+  },
+  {
+    "reward": "Supergirl/Laurel Kent and 50 credits",
+    "image": "https://i.pinimg.com/736x/99/53/87/9953875f381ca9544afeb2fbab102751.jpg",
+    "author": "Pleb",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Klepto-Quest Part 2",
+    "loca": "DC",
+    "lewd": false,
+    "scope": "Quick",
+    "objectives": [
+      {
+        "reward": "Batwoman/Katherine Rebecca Kane and 20 credits",
+        "type": "Other",
+        "value": "Steal the Batmobile"
+      },
+      {
+        "reward": "Batgirl/Barbara Joan Gordon",
+        "type": "Companions",
+        "value": "Steal the Bat-signal"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Steal the flash's costume ring"
+      },
+      {
+        "reward": "Hawkgirl/Shayera Hol",
+        "type": "Companions",
+        "value": "Steal Hawkman's mace"
+      },
+      {
+        "reward": "Wonder Girl/Yara Flor",
+        "type": "Companions",
+        "value": "Steal Wonder Woman's lasso"
+      },
+      {
+        "reward": "Wonder Girl/Cassandra Sandsmark",
+        "type": "Companions",
+        "value": "Steal Wonder Woman's underwear while she is wearing it"
+      },
+      {
+        "reward": "Peng Deilan/Wonder Woman",
+        "type": "Companions",
+        "value": "Steal Wonder Woman's tiara while she is wearing it"
+      },
+      {
+        "reward": "M'gann M'orzz/Miss Martian",
+        "type": "Companions",
+        "value": "Steal Martian manhunters cape"
+      },
+      {
+        "reward": "Green Lantern/Arisia Rrab",
+        "type": "Companions",
+        "value": "Steal Green lanterns ring"
+      },
+      {
+        "reward": "Aquawoman/Mera",
+        "type": "Companions",
+        "value": "Steal Aquaman's trident"
+      },
+      {
+        "reward": "Harley Quinn/Harleen Frances Quinzel",
+        "type": "Companions",
+        "value": "Steal the jokers suit"
+      },
+      {
+        "reward": "Mrs. Freeze/Nora Fries",
+        "type": "Companions",
+        "value": "Steal Mister Freeze's ice Gun"
+      },
+      {
+        "reward": "Raven/Rachel Roth and 150 credits",
+        "type": "Other",
+        "value": "Steal one of Trigons horns"
+      },
+      {
+        "reward": "Starfire/Koriand'r",
+        "type": "Companions",
+        "value": "Steal the crown from the king of Tamaran"
+      },
+      {
+        "reward": "Black Canary/Dinah Drake Lance",
+        "type": "Companions",
+        "value": "Steal Green Arrow's bow"
+      },
+      {
+        "reward": "Supergirl/Matrix",
+        "type": "Companions",
+        "value": "Steal Power Girl's bra and panties while she is wearing them"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Once you enter the DC universe you must remain their for a whole month"
+      },
+      {
+        "value": "You must take the cape from superman while he is wearing it"
+      },
+      {
+        "value": "You can not directly kill anyone during this mission"
+      }
+    ],
+    "budget": 700,
+    "desc": "OK, same premise as part one but this time I'm sending you to the DC universe for a month and the main item I want you to steal this time is a real doozy, I want you to steal the cape off of superman's back, and any other item from the bonus objective's I gave you.\n\nGoodluck.",
+    "uid": "YyiNT"
+  },
+  {
+    "reward": "10 Credits and a Thank-You card",
+    "image": "https://images2.imgbox.com/50/2e/Ba1FDqdf_o.png",
+    "author": "vhawkes",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Armsmeowster",
+    "loca": "Worm",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "Credit rewards from all other objectives (including alternative rewards) are multiplied by 5.",
+        "type": "Other",
+        "value": "Do not use any mind control or other supernatural manipulation to fulfil the mission's objectives."
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Armsmaster's and Mouse Protector's relationship endures into the canon era. (~2011-2013)"
+      },
+      {
+        "reward": "A Purchase Voucher, which waives the price of any single non-IMG, non-Companion purchase.",
+        "type": "Other",
+        "value": "Armsmaster's gear has a visible cat theme (ears, tail, etc.) and he becomes unofficially known as Armsmeowster (like 'Halbeard' or 'Beardmaster')."
+      },
+      {
+        "reward": "Noctis Template (grants eidetic memory and removes the need for sleep) for yourself or a member of your retinue, or 10 Credits.",
+        "type": "Perks",
+        "value": "Get Miss Militia to knowingly and willingly assist you."
+      },
+      {
+        "reward": "Power Sight Template for yourself or a member of your retinue, or 10 Credits.",
+        "type": "Perks",
+        "value": "Get Chevalier to knowingly and willingly assist you."
+      },
+      {
+        "reward": "Two of: Chevalier Template, Miss Militia Template, 30 Credits. Templates can be applied to yourself or a member of your retinue.",
+        "type": "Other",
+        "value": "Chevalier and Miss Militia's relationship endures into the canon era. (~2011-2013)"
+      },
+      {
+        "reward": "Two of: Performance Talent, Armsmaster's power expands to include Dragon's Power, MP's secondary powers are greatly enhanced.",
+        "type": "Other",
+        "value": "Armsmaster and Mouse Protector part-time as a duo of cape influencers, with a significant online following."
+      },
+      {
+        "reward": "Two of: Armsmaster Template, Mouse Protector Template, 50 Credits. Templates are from local versions.",
+        "type": "Other",
+        "value": "Armsmaster and Mouse Protector tag-team and defeat an Endbringer. Chasing it away counts."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Mouse Protector and Armsmaster need to start dating while they are both in the Wards, and stay in a relationship for at least a year."
+      },
+      {
+        "value": "How you make it happen will be up to you, though this will affect your Rewards."
+      },
+      {
+        "value": "Armsmaster will be a member of the Inaugural Wards Team. This trumps Universal Calibration and similar effects."
+      },
+      {
+        "value": "Armsmaster and Mouse Protector don't need to remain with the PRT, but they must remain heroes; officially, at least."
+      }
+    ],
+    "budget": 0,
+    "desc": "Many are frustrated with what kind of man Armsmaster is, for a number of different reasons, but few are annoyed with what he could have been.\n\nLuckily, you are here to fix that.",
+    "uid": "tIKoa"
+  },
+  {
+    "reward": "Either Arlo or Don't Stand So Close To Me, or 12 Credits",
+    "image": "https://i.postimg.cc/X7DgkntH/image.png",
+    "author": "Lesbean",
+    "rewardType": "Perks",
+    "source": "",
+    "title": "The Great Escape",
+    "loca": "The Promised Neverland",
+    "lewd": false,
+    "scope": "Quick",
+    "objectives": [
+      {
+        "reward": "Either Arlo or Don't Stand So Close To Me, or 12 Credits",
+        "type": "Perks",
+        "value": "Rescue all children from your chosen plantation, including the babies. (No babies under 1 year are kept in a normal Plantation.)"
+      },
+      {
+        "reward": "One T5 or lower Companion with the Teacher tag",
+        "type": "Companions",
+        "value": "Rescue all the children from another plantation. (Repeatable.)"
+      },
+      {
+        "reward": "A large dormitory for your personal world / demiplane (Requires at least Sweet Home, or the Skyblock Challenge,) or 20 Credits.",
+        "type": "Other",
+        "value": "Rescue all of the children from an entire farm."
+      },
+      {
+        "reward": "Trace Defense",
+        "type": "Perks",
+        "value": "Capture, kill, convert, or otherwise placate all Sisters, Mothers, the Grandmother, and any demons working in the farm."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "All children ages 4 and older must be rescued from your chosen plantation, with no casualties among them."
+      }
+    ],
+    "budget": 60,
+    "desc": "There are some situations that can even sway the hearts of those in the Company. A higher-up has placed this mission as a standard mission to be available to any Contractors who qualify.\n\nIn the world of The Promised Neverland, humans are raised on plantations, disguised as orphanages to those living there, in order to become food for the demons. Your mission is simple; rescue the children from at least one plantation.\n\nIt is assumed you will rescue the children from Plantation 3 in the Grace Field House, where Emma, Norman, and Ray reside in the beginning. If you arrive after their escape (and Plantation 3 has been burnt to the ground,) you may replace it with any other Plantation of your choice.",
+    "uid": "MlXqe"
+  },
+  {
+    "reward": 100,
+    "image": "https://s14354.pcdn.co/wp-content/uploads/2018/03/film-studio.png",
+    "author": "NexusStar",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "A Photographer's Lies",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": 20,
+        "type": "Credits",
+        "value": "Film 15 Gay Pornos"
+      },
+      {
+        "reward": 20,
+        "type": "Credits",
+        "value": "Film 15 Lesbian Pornos"
+      },
+      {
+        "reward": 20,
+        "type": "Credits",
+        "value": "Film 15 Orgies"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Get a building or use Hotel California to open a photography business/porn studio"
+      },
+      {
+        "value": "Shot 100 Pornos"
+      },
+      {
+        "value": "Have 15 porn actors on your payroll"
+      }
+    ],
+    "budget": 20,
+    "desc": "A Photographer's Lies is an adult text-based adventure game with real photos and video.\nWell we want you to do a live run of the game.\nTry to make it big as a photographer with a desire to enter the adult side of business. You start out as a freelance photographer. Manage finances and build your reputation in order to become the hottest porn studio.",
+    "uid": "tCscq"
+  },
+  {
+    "reward": "200 Credits and a Company Copy of each Holy Relic Sacred Gear, and the Shroud of Turin.",
+    "image": "https://i.imgur.com/w9sY63W.jpg",
+    "author": "Veldoran",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Release the Relics!",
+    "loca": "High School DxD",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Kill Issei too, to prevent the Boob Goddess of ExE from using him as a beacon."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Each Holy Relic SG wielder must die."
+      },
+      {
+        "value": "No capturing the wielders."
+      },
+      {
+        "value": "Mission Insertion will be at the start of Canon, so Issei is in high school, but not a devil yet."
+      }
+    ],
+    "budget": 200,
+    "desc": "It is a travesty that the Holy Relics are all in the hands of beings of darkness and evildoers. Kill their wielders, releasing them back into the System! An old contractor with a grudge has arranged this mission, and we at the company will ensure that the System spits them out so they cannot be used by humans anymore, so go out and kill things!",
+    "uid": "RNZqo"
+  },
+  {
+    "reward": "Tamamo-no-Mae",
+    "image": "https://pm1.aminoapps.com/6329/8841b3b9df129a8f807bd0ba302d2907683bddc4_hq.jpg",
+    "author": "Traveler Who",
+    "rewardType": "Companions",
+    "source": "",
+    "title": "Foxy Shrine Maiden",
+    "uid": "vARPZ",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": 20,
+        "type": "Credits",
+        "value": "Have Tamamo be accepted in the world you picked. (Meaning she must not be hated)"
+      },
+      {
+        "reward": 10,
+        "type": "Credits",
+        "value": "Gather hair from Tamamo tail using a brush and send to the company (we need it due to research and catalyst purposes.) Repeatable up to 20 times."
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Choose nasuverse as your starting world"
+      },
+      {
+        "reward": 40,
+        "type": "Credits",
+        "value": "Win a holy grail war"
+      },
+      {
+        "reward": 80,
+        "type": "Credits",
+        "value": "Win a holy grail war just using Tamamo no mae."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Must have a good enough soul for Tamamo no mae to pick you"
+      },
+      {
+        "value": "Touch Tamamo fluffy tail once"
+      }
+    ],
+    "budget": 20,
+    "desc": "We gotten a strange request, apparently there isn't enough \"Tamamo love\" so we going to set you up with a free Tamamo No Mae, if you can summon her that is.\n\nWe're provide you with a scroll embedded with a servant summoning ritual alongside a catalyst for Tamamo no mae.\n\nTake 30 credits if you refuse the catalyst."
+  },
+  {
+    "reward": 1,
+    "image": "https://i.redd.it/vems8udoaul71.jpg",
+    "author": "chill builder",
+    "rewardType": "IMG Tickets",
+    "source": "",
+    "title": "Destroy the Curve",
+    "loca": "Rick and Morty",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": 500,
+        "type": "Credits",
+        "value": "Do it without committing genocide on thousands of Ricks and Mortys."
+      },
+      {
+        "reward": "Science Perk, Engineering Perk, and 1000 Credits",
+        "type": "Perks",
+        "value": "Do it with technology from the Rick and Morty Multiverse."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You have to personally be the one to destroy the Curve."
+      }
+    ],
+    "budget": 500,
+    "desc": "Contractor, I'm sure you've heard of our little problem with Rick's Central Finite Curve correct? If not, it's basically that it makes getting in and out of the Rick and Morty Multiverse a bitch to do. What we at the Company want you to do is to break it, simple as that. it doesn't really matter to us how you do it as long as you personally destroy the Curve.",
+    "uid": "gyUxm"
+  },
+  {
+    "reward": "100 credits and a tier 6 or lower waifu with the monster tag",
+    "image": "https://i.pinimg.com/originals/82/02/16/82021676eea9fc36795dcdf9c4972d3f.jpg",
+    "author": "Pleb",
+    "rewardType": "Other",
+    "source": "",
+    "title": "A Real Pokémon Gym",
+    "loca": "Pokemon",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "10 credits for each team you build up to 9 teams",
+        "type": "Other",
+        "value": "Assemble 9 teams of Pokémon, one for each number of badge's and a team of your strongest Pokémon. ( Each badge team must be of the level of strength to match the number of badges it is for)"
+      },
+      {
+        "reward": 25,
+        "type": "Credits",
+        "value": "Complete a whole Gym circuit without losing a single battle"
+      },
+      {
+        "reward": "Inexhaustible",
+        "type": "Perks",
+        "value": "Win every battle of a season without using more then one Pokémon per battle"
+      },
+      {
+        "reward": 40,
+        "type": "Credits",
+        "value": "Become known as the strongest Gym leader in your region"
+      },
+      {
+        "reward": "A tier 7 Pokémon waifu or lower",
+        "type": "Other",
+        "value": "Become known as the strongest Gym leader in the world"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Build a Pokémon Gym"
+      },
+      {
+        "value": "Get it legally registered with the Pokémon league"
+      },
+      {
+        "value": "Pick a type to specialise in"
+      },
+      {
+        "value": "Complete one league circuit as a Gym leader"
+      },
+      {
+        "value": "No cheating in the battles in your Gym"
+      }
+    ],
+    "budget": 140,
+    "desc": "Ok this mission is simple to explain but will take some time and effort in practice, basically I want you to go to the Pokémon world and become a gym leader with your own Gym and type of Pokémon you specialise in, this can be any of the 18 types but in your Gym all your Pokémon must be at least partially of this type to count.\n\nHow you go about getting a Gym that is registered with the league  and the property to build one on is up to you, Goodluck.",
+    "uid": "JcNSv"
+  },
+  {
+    "reward": 50,
+    "image": "https://i.postimg.cc/yYL6qM9Q/asas.png",
+    "author": "Pleb",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Klepto-Quest Part 1",
+    "loca": "My Hero Academia",
+    "lewd": false,
+    "scope": "Quick",
+    "objectives": [
+      {
+        "reward": 60,
+        "type": "Credits",
+        "value": "Steal AFO's favourite suit"
+      },
+      {
+        "reward": 20,
+        "type": "Credits",
+        "value": "Steal Eraserhead's sleeping bag"
+      },
+      {
+        "reward": 10,
+        "type": "Credits",
+        "value": "Steal Sir Nighteye's rarest piece of All might merch"
+      },
+      {
+        "reward": 35,
+        "type": "Credits",
+        "value": "Steal all of the hands shigaraki's wears"
+      },
+      {
+        "reward": 15,
+        "type": "Credits",
+        "value": "Steal Twice's mask"
+      },
+      {
+        "reward": "Martial Talent",
+        "type": "Perks",
+        "value": "Steal stain's mask"
+      },
+      {
+        "reward": 15,
+        "type": "Credits",
+        "value": "Steal Nezu's favourite tea cup"
+      },
+      {
+        "reward": 13,
+        "type": "Credits",
+        "value": "Steal all of Deku's future hero notebook's"
+      },
+      {
+        "reward": 45,
+        "type": "Credits",
+        "value": "Steal overhaul's mask"
+      },
+      {
+        "reward": "Covert Talent and 3 credits for every objective complete",
+        "type": "Other",
+        "value": "Don't get caught at any point"
+      },
+      {
+        "reward": "Manami Aiba/La Brava and 50 credits",
+        "type": "Other",
+        "value": "Complete all option objective's"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Steal All Might's hero suit"
+      },
+      {
+        "value": "Don't kill anyone"
+      }
+    ],
+    "budget": 140,
+    "desc": "Fun fact, did you know curtain items from a bunch of worlds can sell for quite a lot of cash to collectors. And that us why your here today, you see we are gonna open a portal for you to MHA and you will have a month to Swipe the as many items of high value you can.\n\nBut the primary item I want you to grab in this mission is All Might's Hero costume, and do so without killing anyone. \n\nGoodluck ",
+    "uid": "ayrnJ"
+  },
+  {
+    "reward": 1,
+    "image": "https://m.media-amazon.com/images/M/MV5BMGU1NzE1Y2UtZmZkOC00ODQ4LTkwNDAtNmE4Yzk3NTA4MThlXkEyXkFqcGdeQXVyMzgxODM4NjM@._V1_FMjpg_UX1000_.jpg",
+    "author": "Traveler Who",
+    "rewardType": "IMG Tickets",
+    "source": "",
+    "title": "The Other Shadow Garden",
+    "loca": "The Eminence in Shadow",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "Ability to cure demonic possession.",
+        "type": "Other",
+        "value": "Rescue a girl from the cult who has demonic possession"
+      },
+      {
+        "reward": "Knowledge on how to make a Pseudo Shroud of Power out of slimes and other materials you can find in this world.",
+        "type": "Other",
+        "value": "Dramatically save a girl from the cult of diablos and have her join your organization."
+      },
+      {
+        "reward": "Tamamo-no-Mae (nasuverse)",
+        "type": "Companions",
+        "value": "Save Yukimi before Cid does."
+      },
+      {
+        "reward": "The ability to heal and regenerate any and all damage in people including yourself.",
+        "type": "Other",
+        "value": "Save Yukimi's village (a handful must survive at minimum)"
+      },
+      {
+        "reward": "Leonardo da Vinci (nasuverse)",
+        "type": "Companions",
+        "value": "Have a successful company that supports your organization."
+      },
+      {
+        "reward": "Atalanta (nasuverse) and automatic capture of the one you saved.",
+        "type": "Companions",
+        "value": "Save one of the original shadow garden members from the cult, cure them of demonic possessions and have them join your organization."
+      },
+      {
+        "reward": "Template stacking l for Zeta",
+        "type": "Perks",
+        "value": "Have Zeta act like a double agent in shadow garden for your organization."
+      },
+      {
+        "reward": 80,
+        "type": "Credits",
+        "value": "Rescue 100 girls from demonic possession (don't have anyone else do it for you)"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Cure at least 800 girls from demonic possession. (Help is allowed)"
+      },
+      {
+        "reward": "Trajectory. Agreement.",
+        "type": "Perks",
+        "value": "Take control of the black rose and establish a wormhole to travel to this world and Cid's original world."
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Establish a base and safe haven in Cid's original world."
+      },
+      {
+        "reward": "Template stacking l for youself for a tier 5 or lower character.",
+        "type": "Perks",
+        "value": "Have an alliance with Shadow Garden."
+      },
+      {
+        "reward": "Template stacking l of Cid for youself",
+        "type": "Perks",
+        "value": "Convince Cid that Shadow Garden and the cult of diablos is real."
+      },
+      {
+        "reward": 150,
+        "type": "Credits",
+        "value": "Save rose from becoming a criminal due to killing her father."
+      },
+      {
+        "reward": "Scáthach (nasuverse)",
+        "type": "Companions",
+        "value": "Have Rose join your organization."
+      },
+      {
+        "reward": "A vampire waifu at tier 8 or below.",
+        "type": "Companions",
+        "value": "Help Elisabeth overcome her thirst for blood and save her."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You must collect at least seven members to be your version of the seven shadows. This must mean they have to at least be as strong as them at minimum."
+      },
+      {
+        "value": "You can only have up to seven companions not native to this world. This does not count for companions from completed missions"
+      },
+      {
+        "value": "Your organization has to be 1000 members at least to have this mission be complete"
+      },
+      {
+        "value": "You must at least try to act mysterious, this does not mean you have to be an edge lord but you have to try to keep people guessing on what your next move is like Cid does"
+      },
+      {
+        "value": "You must not reveal your organization until you have a chance to make a dramatic entrance"
+      }
+    ],
+    "budget": 200,
+    "desc": "So you know about Shadow Garden right? Cid thinking he playing make up fantasy where he got a secret organization called shadow garden which is fighting the cult of diablos which is actually real and is he oblivious to the whole thing.\r\n\r\nWell we want you to enter the world and make another secret organization and show Cid what a true non oblivious edge lord leader of a super secret organization is.\r\n\r\nOf course we not so heartless as to leave you there without a map in your phone of the location of the seven shadows before they met cid or other noticeable characters like Elizabeth or Yukimi\r alongside a bag of gold to get you started, naturally this will take you back to when Cid was physically a little kid before shadow garden.\n\nAlso you get an extra 150 credits if you choose to become a child again at the same age where Cid was when he was with alpha.",
+    "uid": "IePsI"
+  },
+  {
+    "reward": 10,
+    "image": "https://i.pinimg.com/originals/40/77/20/40772047eb5ec8423a389e5a8609db2c.jpg",
+    "author": "Ahab",
+    "rewardType": "IMG Tickets",
+    "source": "",
+    "title": "Patience Running Short",
+    "loca": "Warhammer Fantasy",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": 1000,
+        "type": "Credits",
+        "value": "Eradicate his armies, erase his presence, and bring the head of Warlord Skarsnik"
+      },
+      {
+        "reward": "2000",
+        "type": "Credits",
+        "value": "Eradicate or force the elves to pay reparations for the War of the Beards. Tripled if you can have them have peace with each other like they used to."
+      },
+      {
+        "reward": "3000",
+        "type": "Credits",
+        "value": "Inform them of who was responsible with evidence for the earthquakes that the slaan and the lizardmen are responsible for messing with the tectonic plates destroying and killing many dwarves and dwarven holds"
+      },
+      {
+        "reward": "4000",
+        "type": "Credits",
+        "value": "Eradicate the orks"
+      },
+      {
+        "reward": "5000",
+        "type": "Credits",
+        "value": "Eradicate the chaos dwarves while completely wiping away all they touched and purifying all they corrupted"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Resolve and/or Absolve any and all grudges the Dwarves have by any means necessary"
+      }
+    ],
+    "budget": 2,
+    "desc": "The Dawi/Dwarves are an admirable race. With a persistence and willpower to match. Always holding true to their oaths, their beliefs, and in this case: their grudges. Dwarves in other fantasy realms are known to keep grudges quite well, for a long time for that matter and most of the time for good reason. Though the Dwarves of this universe take this a step to the absolute extreme. They do this by using their super ultra mega secret 'Bok of Grudges™'. This ranges from coming up a cent short in paying the dwarves their dues, losing an eye to a goblin with brittle teeth to which splinters after being punched in the face one too many times, wasting their time, insulting their version of liquors, and saying the word \"short\" or anything related to height one too many times in their presence. Yeah.... This one is going to be one for the books with how hard it is to 'not' offend them.\n\n(Ahab waz here)",
+    "uid": "xHwQm"
+  },
+  {
+    "reward": "Access to Monarch's domain (She is unaware of the change) and two IMG tickets.",
+    "image": "https://static.animecorner.me/2021/11/AmaLees-VTuber-Monarch-to-Debut-on-December-11-768x432.png",
+    "author": "myfunvideos",
+    "rewardType": "Other",
+    "source": "https://youtu.be/TZZNBKEjdK0?si=HeLGsERcwPQ9IfCp",
+    "title": "Monarch's Reach - Objective Survive!",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "Half Credits for each Clone in their individual Tier.",
+        "type": "Other",
+        "value": "Subdue or Kill an attacking Monarch clone. Reward calculated upon mission completion."
+      },
+      {
+        "reward": "Other half of Clone Credit reward.",
+        "type": "Other",
+        "value": "Complete Mission with alone and with no help whatsoever from your Retinue or any other allied element."
+      },
+      {
+        "reward": "10 percent increased chance of possibly calming her down.",
+        "type": "Other",
+        "value": "When Monarch appears, lose the intent to kill, drop your weapons (or put them away), and do not fight. Reason with her while she's still trying to end you."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "A Monarch clone will be found following the main protagonist. You cannot intentionally avoid her until Capture."
+      },
+      {
+        "value": "Capturing the Monarch clone will trigger Monarch's intervention. Don't die."
+      },
+      {
+        "value": "Exit Stage Left and other methods of escaping World will become unavailable upon Capture of Monarch clone until mission is completed"
+      },
+      {
+        "value": "Unless Captured, all other characters native to that world will be paused, ignoring forms of resistances they may in Canon."
+      },
+      {
+        "value": "Should you actually die or you quit and surrender, you will be forcefully pulled out of that World, losing whatever progress you made and the memories of this Mission."
+      },
+      {
+        "value": "Lures and Bindings will not work on Monarch herself. Her clones on the other hands are fair game, but are subdued and not Captured apart the first clone you originally had to Capture."
+      },
+      {
+        "value": "Once Monarch arrives, survive for an hour or calm her down to complete the Mission."
+      }
+    ],
+    "budget": 995,
+    "desc": "A long time ago, in a kingdom far removed from our confines of time and space, existed the Valkyries, who protected the Multiverse and the one who ruled them all, was Lee. Within the Valkyries, who swore to serve their Queen, was a girl by the name of Ama, sister to her Monarch. She devoted her entire being for her sun, her Monarch, and was her knight.\n\nHowever, it was not meant to be...for the Valkyries questioned Lee's actions in intervening in the Timelines and raised their swords toward their own Queen for they suffered each time they ventured and changed an outcome and lost many sisters along the way. They had forgotten their Oath.\n\nAnd so, a civil war began, with Ama in the thick of it. She tried oh so hard to reason with them and to no avail. She was forced to watch as her beloved Monarch was slain. In a vengeful wrath, she made they pay with their lives and killed them all herself. She spared none of her former sisters even a facet of her mercy and destroyed them, leading to a violent bloodshed. And so, utterly broken, she took Lee's place and became the Monarch herself.\n\nYears passed with her beginning becoming a distant memory. She became a shell of her former self and has watched the many Timelines. Unlike her late sister, who sought to intervene the Timelines for good, Monarch began to use them for her own ends, to protect the balance, for when there is good, there must be evil to rise up and she would become that stronger evil.\n\nAnd so, she produced clones of herself and bent the Timelines to her will and included versions of her in their story, to befriend the protagonists and learn their strengths and weaknesses.\n\nYour Mission will not be simply by any means. In fact, you may even die. You must Capture a clone Monarch has sent in and survive!\n\nEssentially, should you choose to accept, is to appear in a World where a \"reckless protagonist\" is present. This usually means Worlds that are deemed 'Shonen Jump', such as Naruto, Full Metal Alchemist, My Hero Academia, etc.\n\nGood news is that, since the version of Monarch you will be looking to Capture is close with the protagonist, they should be around the same \"Power Level\" based on the World you've selected to appear.\n\nBad news, is that, once you Capture the clone of Monarch and the clone disappears either to your Pocket Apartment or the World you came previously, swarms of versions of Monarch throughout the Multiverse will appear from the sky and down down. They will attack with the intent to kill. Survive!\n\nAnd if you thought that wasn't enough, Monarch herself will appear to erase you from existence for daring to take one of her with you when it looks like you are overwhelming her clones or you successfully managed took take down all of her clones, whether by subduing them or kill them.\n\nHer skill is unrivaled and, considering she's had centuries (assumably) of solidarity, you best prepare yourself to be beaten down with an inch of your life should you choose to fight her.\n\nYou're only option is to last an hour fighting and/or from her or quell her anger, and even that will be tough as she stewed in those emotions for a very, very long time.\n\nRecommend getting Trace Defense, Paradox Defense, Fatality Defense, and Destiny Defense at max level as she has mentioned to be able to literally reset a Timeline.\n\nGood luck. You're gonna need it.",
+    "uid": "zLRON"
+  },
+  {
     "reward": "330 credits a tier 7 companion of your choice",
     "image": "https://i.postimg.cc/C1Tx3qr4/image.jpg",
     "author": "Pleb",
     "rewardType": "Other",
     "source": "",
     "title": "The Puzzle Of The Millennium",
+    "uid": "LqRet",
     "loca": "Generic",
     "lewd": false,
     "scope": "Grand",
@@ -38,16 +2069,16 @@
       }
     ],
     "budget": 300,
-    "desc": "So to start off with we here at the company are baffled you are S̶t̶u̶p̶i̶d̶ BRAVE enough to take this mission, but hey I guess someone has to, Anyway this mission is more like a big easter egg hunt with a cool prize. The eggs being puzzle pieces and the prize being some really cool loot A̶n̶d̶ ̶n̶o̶ ̶g̶e̶t̶t̶i̶n̶g̶ ̶d̶i̶s̶a̶s̶s̶e̶m̶b̶l̶e̶d̶ ̶o̶n̶ ̶a̶n̶ ̶a̶t̶o̶m̶i̶c̶ ̶l̶e̶v̶e̶l̶., sounds fun right.\n\nOk lets cut the shit, basically a version of bill cypher managed to strike a deal with a member of higher management for a chance of being freed, and your mission is to prevent that, and you may be wondering how your meant to stop a tier x level being. Well don't worry cuz if your smart you won't have to, you 'see these are the rules.\n\nFrom the moment you arrive on your starting world 33 pieces of a replica millennium puzzle will be spread across it and all you have to do to stop bill is to collect all 33 pieces and reassemble to puzzle, but to make things more interesting all pieces will be sent to either dangerous places or well hidden area's and are equipped with one level of Trace Defence and two levels of Paradox Defence, which will make finding them hard but not impossible.\n\nOh and you have 3 years to find them all or he gets free, Goodluck.",
-    "uid": "LqRet"
+    "desc": "So to start off with we here at the company are baffled you are S̶t̶u̶p̶i̶d̶ BRAVE enough to take this mission, but hey I guess someone has to, Anyway this mission is more like a big easter egg hunt with a cool prize. The eggs being puzzle pieces and the prize being some really cool loot A̶n̶d̶ ̶n̶o̶ ̶g̶e̶t̶t̶i̶n̶g̶ ̶d̶i̶s̶a̶s̶s̶e̶m̶b̶l̶e̶d̶ ̶o̶n̶ ̶a̶n̶ ̶a̶t̶o̶m̶i̶c̶ ̶l̶e̶v̶e̶l̶., sounds fun right.\n\nOk lets cut the shit, basically a version of bill cypher managed to strike a deal with a member of higher management for a chance of being freed, and your mission is to prevent that, and you may be wondering how your meant to stop a tier x level being. Well don't worry cuz if your smart you won't have to, you 'see these are the rules.\n\nFrom the moment you arrive on your starting world 33 pieces of a replica millennium puzzle will be spread across it and all you have to do to stop bill is to collect all 33 pieces and reassemble the puzzle, but to make things more interesting all pieces will be sent to either dangerous places or well hidden area's and are equipped with one level of Trace Defence and two levels of Paradox Defence, which will make finding them hard but not impossible.\n\nOh and you have 3 years to find them all or he gets free, Goodluck."
   },
   {
     "reward": "Ticket for Tier 8 Waifu or 200 Credits",
-    "image": "https://cdn.donmai.us/original/68/a1/__aozaki_touko_mahou_tsukai_no_yoru_drawn_by_shintyoi2__68a10467f91b4b3564a22c573a73751e.jpg",
+    "image": "https://i.imgur.com/sKDniQi.jpg",
     "author": "myfunvideos",
     "rewardType": "Other",
     "source": "https://youtu.be/MV5qZQTDWFY?si=VNQ98sWB3xPAYSSk",
     "title": "Red? Who's That? All I See Is Blue!",
+    "uid": "nNnqV",
     "loca": "Nasuverse",
     "lewd": false,
     "scope": "Standard",
@@ -93,8 +2124,7 @@
       }
     ],
     "budget": 280,
-    "desc": "As most long time fans of the Nasuverse know, Contractors, Touko Aozaki was denied the Fifth Magic and was instead, left in the dust as Aoko Aozaki, her own sister, was given \"Magic Blue\" instead.\n\nAs there is a certain lack of wishing to rectify this outcome (aka, practically no what-if scenario fulfilled), we shall request your aid! Change this fate! (No pun intended)\n\nSimply put, make Touko take her originally assumed path and have her obtain that which her sister already had in Canon. After all, wouldn't it be so very frustrating to be promised something, only to have it denied and given away and be unable to do a single thing about it? I mean, it even brought her to tears and made her fester a deep-seated hatred for quite awhile.\n\nObviously, there two ways to go about this: Substitute as Touko herself and make that happen your own hands or come in and tell her honestly yourself.\n\nIt's recommended to obtain Fatality Defense, Trace Defense, and Paradox Defense as the path to the Root, no matter how prepared it may be, has a chance of erasing Touko from existence should she accidentally touch one of the obstacles towards the Root itself. As for Trace Defense, it is so the Red Shadow (assumed to be a Counter Guardian) does not perceive the first usage of True Magic and seek to eliminate her.\n\nGood luck, you're gonna need it~",
-    "uid": "nNnqV"
+    "desc": "As most long time fans of the Nasuverse know, Contractors, Touko Aozaki was denied the Fifth Magic and was instead, left in the dust as Aoko Aozaki, her own sister, was given \"Magic Blue\" instead.\n\nAs there is a certain lack of wishing to rectify this outcome (aka, practically no what-if scenario fulfilled), we shall request your aid! Change this fate! (No pun intended)\n\nSimply put, make Touko take her originally assumed path and have her obtain that which her sister already had in Canon. After all, wouldn't it be so very frustrating to be promised something, only to have it denied and given away and be unable to do a single thing about it? I mean, it even brought her to tears and made her fester a deep-seated hatred for quite awhile.\n\nObviously, there two ways to go about this: Substitute as Touko herself and make that happen your own hands or come in and tell her honestly yourself.\n\nIt's recommended to obtain Fatality Defense, Trace Defense, and Paradox Defense as the path to the Root, no matter how prepared it may be, has a chance of erasing Touko from existence should she accidentally touch one of the obstacles towards the Root itself. As for Trace Defense, it is so the Red Shadow (assumed to be a Counter Guardian) does not perceive the first usage of True Magic and seek to eliminate her.\n\nGood luck, you're gonna need it~"
   },
   {
     "reward": "X-70B Phantom-class (Unsellable) and 1 tier 6 or lower Alien waifu",
@@ -460,6 +2490,7 @@
     "rewardType": "Credits",
     "source": "",
     "title": "You're a Phantom",
+    "uid": "HdWys",
     "loca": "Danny Phantom",
     "lewd": false,
     "scope": "Grand",
@@ -498,12 +2529,11 @@
       }
     ],
     "budget": 100,
-    "desc": "He's a phantom\nDanny phantom\nHe's a phantom\nDanny phantom, phantom\nYo, Danny Fenton he was just 14\nWhen his parents built a very strange machine\nDesigned to view a world unseen\nHe's gonna catch 'em all 'cause he's Danny Phantom\nWhen it didn't quite work, his folks, they just quit\nThen Danny took a look inside of it\nThere was a great big flash, everything just changed\nHis molecules got all rearranged\n\nAnd his Soul was replaced with yours.",
-    "uid": "HdWys"
+    "desc": "He's a phantom\nDanny phantom\nHe's a phantom\nDanny phantom, phantom\nYo, Danny Fenton he was just 14\nWhen his parents built a very strange machine\nDesigned to view a world unseen\nHe's gonna catch 'em all 'cause he's Danny Phantom\nWhen it didn't quite work, his folks, they just quit\nThen Danny took a look inside of it\nThere was a great big flash, everything just changed\nHis molecules got all rearranged\n\nAnd his Soul was replaced with yours."
   },
   {
-    "reward": "Gain a free copy of the Biju.",
-    "image": "https://static.wikia.nocookie.net/naruto/images/3/31/Rin_and_Isobu.png",
+    "reward": "Gain a free copy of the Tailed Beast.",
+    "image": "https://static.zerochan.net/Jinchuuriki.full.4008054.jpg",
     "author": "Vinzzz001",
     "rewardType": "Companions",
     "source": "",
@@ -514,30 +2544,41 @@
     "scope": "Standard",
     "objectives": [
       {
-        "reward": "Inexhaustible",
-        "type": "Perks",
-        "value": "Beat jinchūriki Rin Nohara in a fight while she draws upon at least 1 tail worth of Biju power."
-      },
-      {
-        "reward": "Gain Template Stacking I&II for a Biju of equal or less tails.",
-        "type": "Perks",
-        "value": "Capture Rin Nohara while she is a jinchūriki of a Biju different from the Sanbi(Isobu). Rare VaRINants!"
-      },
-      {
-        "reward": "2x Tattoo-Sticker Biju containment seals.",
+        "reward": "1-Tail worth of Soul Power Reserves.",
         "type": "Other",
-        "value": "Remove/Prevent the Forbidden Individual Curse Tag before Capturing her."
+        "value": "Defeat jinchūriki Rin Nohara in combat while she draws upon at least 1-Tail worth of Tailed Beast chakra."
+      },
+      {
+        "reward": "Gain a free instance of Template Stacking I&II for a Tailed Beast of equal or less tails.",
+        "type": "Perks",
+        "value": "Capture Rin Nohara while she is a jinchūriki of a Tailed Beast different from the Three Tails(Sanbi/Isobu)."
+      },
+      {
+        "reward": "2x Tattoo-Sticker Tailed Beast containment seals.",
+        "type": "Other",
+        "value": "Remove the [Forbidden Individual Curse Tag] applied by Mandara as in canon. \nAlternatively; Prevent it from being applied."
+      },
+      {
+        "reward": "Rin gains an altered version of [Dragon Bifurcation], which works with her sealed Tailed Beast instead.",
+        "type": "Perks",
+        "value": "Capture Rin Nohara through a love confession."
+      },
+      {
+        "reward": "Gain an [Black Kāma] for your soul. Alternatively gain a [White Kāma] of an Ōtsutsuki of choice.",
+        "type": "Other",
+        "value": "Seal the Ten Tails(Jūbi).\nAfter completion, this mission now counts as a Grand-Scope mission."
       }
     ],
     "conditions": [
       {
         "value": "Capture Rin Nohara while she is a jinchūriki."
+      },
+      {
+        "value": "Rin's capture will end this mission, even if she isn't a jinchūriki."
       }
     ],
-    "temprorary": true,
-    "budget": 95,
-    "desc": "Rin Nohara was a compassionate kunoichi, serving as a key teammate alongside Kakashi Hatake and Obito Uchiha in Team Minato. Her life took a significant turn when she was kidnapped and forcefully made into the temporary jinchūriki of the Sanbi, also known as Isobu, the Three-Tailed Biju. Rin's tenure as a jinchūriki was short-lived and ended in a heart-tearing sacrifice. It's all quite sad, really.\n\nNow, the real issue here is the scarcity of variant Rin Noharas available who are also jinchūriki.   \nThis mission is to resolve this grievous (relative)lack of stock. Go in and help change that, one Rin at a time!",
-    "skip": true
+    "budget": 100,
+    "desc": "Rin Nohara was a compassionate kunoichi, serving as a key teammate alongside Kakashi Hatake and Obito Uchiha in Team Minato. Her life took a significant turn when she was kidnapped and forcefully made into the temporary jinchūriki of the Sanbi, also known as Isobu, the Three-Tailed Beast. Rin's tenure as a jinchūriki was short-lived and ended in a heart-tearing sacrifice. It's all quite sad, really.\n\nNow, the real issue here is the scarcity of variant Rin Noharas available who are also jinchūriki. This mission is to resolve this grievous (relative)lack of stock. Go in and help change that, one Rin at a time!"
   },
   {
     "reward": 200,
@@ -10736,7 +12777,7 @@
   },
   {
     "reward": 100,
-    "image": "https://media.discordapp.net/attachments/1080237127603859537/1203456132400812114/Bloodborne__Mergos_Wet_Nurse_Boss_Fight_1080p.jpeg",
+    "image": "",
     "author": "Dionesia",
     "rewardType": "Credits",
     "source": "",
@@ -11111,7 +13152,7 @@
   },
   {
     "reward": 50,
-    "image": "https://media.discordapp.net/attachments/1080237127603859537/1202525743607849031/proxy.png",
+    "image": "",
     "author": "Dionesia",
     "rewardType": "Credits",
     "source": "",
@@ -12110,7 +14151,7 @@
   },
   {
     "reward": "Any children you have with a Devil will be accepted into their society and the appropriate clan, ignoring any and all political issues that might otherwise arise",
-    "image": "https://media.discordapp.net/attachments/1080237127603859537/1198657556789338223/image.png",
+    "image": "",
     "author": "Dionesia",
     "rewardType": "Other",
     "source": "",
@@ -12194,7 +14235,7 @@
   },
   {
     "reward": 50,
-    "image": "https://media.discordapp.net/attachments/1080237127603859537/1198607246637146222/1578283514-e933e8a3f86fbcdf79b5068444b389ab.png",
+    "image": "",
     "author": "Dionesia",
     "rewardType": "Credits",
     "source": "",
@@ -12235,7 +14276,7 @@
   },
   {
     "reward": "Fertility Calibration I and II",
-    "image": "https://media.discordapp.net/attachments/1080237127603859537/1198600373947076780/image.png",
+    "image": "",
     "author": "Dionesia",
     "rewardType": "Perks",
     "source": "",
@@ -12274,7 +14315,7 @@
     "uid": "mpteT",
     "loca": "DOOM: Eternal",
     "lewd": false,
-    "scope": "Standard",
+    "scope": "Grand",
     "objectives": [
       {
         "reward": 100,
@@ -12295,6 +14336,16 @@
         "reward": "A stack of Stress Defence, Mind Defence & Corruption Defence for each template.",
         "type": "Perks",
         "value": "Have a Wrathful characters as templates. It may be a substituteor power swap."
+      },
+      {
+        "reward": 500,
+        "type": "Credits",
+        "value": "kill the king of hell"
+      },
+      {
+        "reward": 2,
+        "type": "IMG Tickets",
+        "value": "uplift earth so that humanity is strong enough to push the demons completely off earth, for a generation. without your help any more."
       }
     ],
     "conditions": [
@@ -13196,7 +15247,7 @@
   },
   {
     "reward": "The Capture Credit value of the being you recruit times 1.5(Rounded up). Does not multiply TC tickets. If they are successfully hired you will be given a direct line to them via your Company device, perfect for calling in favors or doing office gossip with",
-    "image": "https://media.discordapp.net/attachments/701634785570979912/1196314499481878579/fantasy_interview2.jpg",
+    "image": "",
     "author": "the 44'th ChoirBoy",
     "rewardType": "Other",
     "source": "",
@@ -13688,11 +15739,12 @@
   },
   {
     "reward": 50,
-    "image": "https://media.discordapp.net/attachments/1080237127603859537/1194659134918901872/latest.png",
+    "image": "",
     "author": "Dionesia",
     "rewardType": "Credits",
     "source": "",
     "title": "Hollow Hunt",
+    "uid": "IqCUF",
     "loca": "Bleach",
     "lewd": false,
     "scope": "Standard",
@@ -13705,7 +15757,7 @@
       {
         "reward": 10,
         "type": "Credits",
-        "value": "Kill a Vasto Lorde (Applies individually for every unique Adjuchas killed)"
+        "value": "Kill a Vasto Lorde (Applies individually for every unique Vasto Lorde killed)"
       }
     ],
     "conditions": [
@@ -13720,8 +15772,7 @@
       }
     ],
     "budget": 80,
-    "desc": "Do you know how many souls are in a Hollow? Thousands, tens of thousands in the bigger and older ones and there's a whole forest of Menos out there!\nSoul Reapers don't regularly clear out those Hollows though... Shall we do them a favor and change that?\n\nOn taking this Mission, you will be transported directly into Hueco Mundo, the exact time and place up to you as you agree with the Help Desk. \nNote: The Goal of this Mission is not to fight Espada, so we recommend that you start in the Menos Forest rather than Las Noches while Ichigo and the gang are there. The choice of time and place is for the sake of avoiding, or spiting, Aizen as well as the possibility that you'd rather start on the surface than in the forest directly\n\nAs long as you do not consciously and willingly choose to specifically destroy, Capture, absorb or apply a similar method, the Hollows and the resulting souls, all Hollows you defeat will be counted as purified and return to the cycle of souls as if slain by a Soul Reaper's blade. This applies to all Retinue members you bring with you (Or Captured after arrival)\n\n--------\n\nAs various sorts take these Missions, finding a catch-all Reward is difficult, so you have a choice depending on your \"type\":\n>The most fundamental reward is a completely blank and obedient Asauchi that you can use yourself or give to one of your Retinue members for them to bond with and use\n>If you are already a Shinigami, you will instead gain a one-time privilege to rip the mask off a Hollow and put it on yourself, turning you into a Visored with all of the natural abilities of the Hollow you robbed\n>If you are a Hollow yourself, you may choose to instead gain the Potential to become both a Vasto Lorde and an Arrancar if you did not already possess one or both. You may immedately become an Arrancar on completing this Mission\n>If you are already an Arrancar, you can still take the Asauchi and unlock both Shikai and Bankai in addition to your existing abilities\n>If you are a Quincy, you may choose a T8 or lower Angel Template Stack to act as your Schrift (or as a bonus to your existing Schrift if you already have one)\n>If you are Ichigo Kurosaki, or otherwise a hybrid of Hollow, Quincy and Soul Reaper, you gain the ability to transform your Shikai and Bankai to fit your aesthetics, as well as a Talent (an experience modifier) to combine your hybrid powers\n>If none of it's an interest to you, you may take Soul Talent as your reward",
-    "uid": "IqCUF"
+    "desc": "Do you know how many souls are in a Hollow? Thousands, tens of thousands in the bigger and older ones and there's a whole forest of Menos out there!\nSoul Reapers don't regularly clear out those Hollows though... Shall we do them a favor and change that?\n\nOn taking this Mission, you will be transported directly into Hueco Mundo, the exact time and place up to you as you agree with the Help Desk. \nNote: The Goal of this Mission is not to fight Espada, so we recommend that you start in the Menos Forest rather than Las Noches while Ichigo and the gang are there. The choice of time and place is for the sake of avoiding, or spiting, Aizen as well as the possibility that you'd rather start on the surface than in the forest directly\n\nAs long as you do not consciously and willingly choose to specifically destroy, Capture, absorb or apply a similar method, the Hollows and the resulting souls, all Hollows you defeat will be counted as purified and return to the cycle of souls as if slain by a Soul Reaper's blade. This applies to all Retinue members you bring with you (Or Captured after arrival)\n\n--------\n\nAs various sorts take these Missions, finding a catch-all Reward is difficult, so you have a choice depending on your \"type\":\n>The most fundamental reward is a completely blank and obedient Asauchi that you can use yourself or give to one of your Retinue members for them to bond with and use\n>If you are already a Shinigami, you will instead gain a one-time privilege to rip the mask off a Hollow and put it on yourself, turning you into a Visored with all of the natural abilities of the Hollow you robbed\n>If you are a Hollow yourself, you may choose to instead gain the Potential to become both a Vasto Lorde and an Arrancar if you did not already possess one or both. You may immedately become an Arrancar on completing this Mission\n>If you are already an Arrancar, you can still take the Asauchi and unlock both Shikai and Bankai in addition to your existing abilities\n>If you are a Quincy, you may choose a T8 or lower Angel Template Stack to act as your Schrift (or as a bonus to your existing Schrift if you already have one)\n>If you are Ichigo Kurosaki, or otherwise a hybrid of Hollow, Quincy and Soul Reaper, you gain the ability to transform your Shikai and Bankai to fit your aesthetics, as well as a Talent (an experience modifier) to combine your hybrid powers\n>If none of it's an interest to you, you may take Soul Talent as your reward"
   },
   {
     "reward": 300,
@@ -14526,7 +16577,7 @@
   },
   {
     "reward": "1 IMG Ticket and the Perk [Singularity (Biomorph)] or [Ascended Human] depending on your build",
-    "image": "https://media.discordapp.net/attachments/1080237127603859537/1192401625663418429/500.png",
+    "image": "",
     "author": "Dionesia",
     "rewardType": "Other",
     "source": "",
@@ -14567,7 +16618,7 @@
   },
   {
     "reward": "Artemis can now grant you and your Retinue members an augmented Falna",
-    "image": "https://media.discordapp.net/attachments/1080237127603859537/1192327423153410068/Screenshot_7.png",
+    "image": "",
     "author": "Dionesia",
     "rewardType": "Other",
     "source": "",
@@ -17422,6 +19473,7 @@
     "rewardType": "Credits",
     "source": "",
     "title": "Naked and Afraid: Sexy Edition",
+    "uid": "VPbor",
     "loca": "Generic",
     "lewd": true,
     "scope": "Quick",
@@ -17474,9 +19526,8 @@
         "value": "Life threatening injury or disease that is not treated quickly enough will resort in a Forced Tap out ending the mission"
       }
     ],
-    "budget": 0,
-    "desc": "Hello Contractor. As you are well aware we have an Entertainment Division that provides a very healthy proportion of our profits. Well, one of the Production has discovered the Primitive Survival Reality Show called Naked and Afraid. They decided that you and one of your retinue would make a good team for a segment. You’re going to spend 21 days in an isolated wilderness with nothing more than a Knife, Firestarter, Metal Pot, and two Sacks. Yep, that’s right you will have no clothes, no weapons, and no rides. You have to survive for twenty one days battling Mother Nature. Of course, since we are a porn company we want to see you doing it in the wild.\n\nOh, in case we forgot the wildlife will be scaled according to the higher Tier of the participants, and it might not always be out to kill you. Some of it will just want to breed. \n",
-    "uid": "VPbor"
+    "budget": 25,
+    "desc": "Hello Contractor. As you are well aware we have an Entertainment Division that provides a very healthy proportion of our profits. Well, one of the Production has discovered the Primitive Survival Reality Show called Naked and Afraid. They decided that you and one of your retinue would make a good team for a segment. You’re going to spend 21 days in an isolated wilderness with nothing more than a Knife, Firestarter, Metal Pot, and two Sacks. Yep, that’s right you will have no clothes, no weapons, and no rides. You have to survive for twenty one days battling Mother Nature. Of course, since we are a porn company we want to see you doing it in the wild.\n\nOh, in case we forgot the wildlife will be scaled according to the higher Tier of the participants, and it might not always be out to kill you. Some of it will just want to breed. \n"
   },
   {
     "reward": 200,
@@ -21574,7 +23625,7 @@
   },
   {
     "reward": 10,
-    "image": "https://cdn.discordapp.com/attachments/1011786031588192336/1175693314801020998/fishing.png",
+    "image": "",
     "author": "cthulhu",
     "rewardType": "Credits",
     "source": "",
@@ -23388,7 +25439,7 @@
   },
   {
     "reward": "150 credits and the ability to change the size your genitals and everyone else's.",
-    "image": "https://media.discordapp.net/attachments/1082963543286095902/1172255827416068166/29BFEF0A00000578-0-image-a-2_1434659625497.jpg",
+    "image": "",
     "author": "DoddyDope",
     "rewardType": "Other",
     "source": "",
@@ -24464,7 +26515,7 @@
   },
   {
     "reward": "Free T7 Companion and Capture of Freya.",
-    "image": "https://cdn.discordapp.com/attachments/1082963543286095902/1170208265305587733/sample_6fd0c992f3b3f3c633e84330c2a2ad25.jpg",
+    "image": "",
     "author": "Saccharine",
     "rewardType": "Other",
     "source": "",
@@ -26768,10 +28819,10 @@
   },
   {
     "reward": "Companion Ticket equal to the Tier of the world have found yourself in",
-    "image": "https://cdn.discordapp.com/attachments/701634785570979912/1160962619075739718/image.png",
+    "image": "",
     "author": "the 44'th ChoirBoy",
     "rewardType": "Other",
-    "source": "https://cdn.discordapp.com/attachments/701634785570979912/1160962619075739718/image.png",
+    "source": "",
     "title": "In trying times",
     "loca": "Generic",
     "lewd": false,
@@ -27244,7 +29295,7 @@
   },
   {
     "reward": 1,
-    "image": "https://media.discordapp.net/attachments/1049793126979620966/1158803446636499054/image.png",
+    "image": "",
     "author": "Z-Perv",
     "rewardType": "IMG Tickets",
     "source": "",
@@ -27304,11 +29355,12 @@
   },
   {
     "reward": "Automatic capture of any character who worships you, 50% increased capture reward for any character captured this way",
-    "image": "https://media.discordapp.net/attachments/1049793126979620966/1158750901046104074/iu.png",
+    "image": "",
     "author": "Z-Perv",
     "rewardType": "Other",
     "source": "",
     "title": "God Complex",
+    "uid": "igegM",
     "loca": "Dungeons & Dragons",
     "lewd": false,
     "scope": "Grand",
@@ -27344,8 +29396,7 @@
       }
     ],
     "budget": 0,
-    "desc": "The gods that Baldur's Gate 3 characters worship tend to be rather shitty. Shar? Vlaakith? Lolth? The Absolute? Knowing what you know about them, you'd rather just steer clear. Unfortunately, plenty of very sexy followers worship them. Why don't you show then who to REALLY worship?",
-    "uid": "igegM"
+    "desc": "The gods that Baldur's Gate 3 characters worship tend to be rather shitty. Shar? Vlaakith? Lolth? The Absolute? Knowing what you know about them, you'd rather just steer clear. Unfortunately, plenty of very sexy followers worship them. Why don't you show them who to REALLY worship?"
   },
   {
     "reward": "Instant Capture of Akemi Homura[T7] and Kaname Madoka[T6] or 500 Credits if both are Captured before the end of the Mission.",
@@ -27564,7 +29615,7 @@
   },
   {
     "reward": "300 credits, Instant capture of the Mane Six, an optional free switch to any different binding method",
-    "image": "https://media.discordapp.net/attachments/1049793126979620966/1158468534783971388/iu.png",
+    "image": "",
     "author": "Z-Perv",
     "rewardType": "Other",
     "source": "",
@@ -45546,7 +47597,7 @@
     "title": "They Are Coming...",
     "reward": "200 Credits",
     "rewardType": "Credits",
-    "source": "https://cdn.discordapp.com/attachments/869700348971982879/1064248316189220935/build.png",
+    "source": "",
     "author": "Zaralann"
   },
   {

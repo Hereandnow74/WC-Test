@@ -98,20 +98,20 @@
         />
       </template>
     </div>
-
     <div
       class="mt-4 column-gap"
       :class="settings.columns !== 'auto' ? `column-count-${settings.columns}` : 'md:column-count-2 xl:column-count-3 4xl:column-count-4 5xl:column-count-5'"
     >
       <div v-for="rule in difficultyOptions" :key="rule.uid" class="column-block">
-        <div class="text-lg text-center font-semibold leading-loose">
-          {{ displayTitle(rule) }}
+        <div v-if="ruleTitle[rule.uid]" class="text-xl text-center font-semibold leading-loose flex gap-4 justify-center items-center my-1 select-none" @click="hideOrShowCategory(rule.type)">
+          {{ ruleTitle[rule.uid] }} <span class="text-gray-700 dark:text-gray-500 iconify h-7 w-7 cursor-pointer hover:(text-orange-600 dark:text-orange-400)" :data-icon="!hiddenCategories.includes((rule.type.match(/\d+$/) ? rule.type.slice(0, -1) : rule.type)) ? 'mdi:arrow-collapse-up' : 'mdi:arrow-collapse-down'"></span>
         </div>
-        <div v-if="rule.type === 'random1'" class="dark:bg-gray-800 bg-blue-gray-300 rounded p-2 mb-2">
+        <div v-if="rule.type === 'random1' && !hiddenCategories.includes('random')" class="dark:bg-gray-800 bg-blue-gray-300 rounded p-2 mb-2">
           All randomizer options are mutually compatible. Randomizers that do not affect intensity have a 1% chance of applying to any new world visited (after a contractor’s starting world) even if they are not chosen. This applies separately for each randomizer.
         </div>
 
         <DifficultyCard
+          v-if="!hiddenCategories.includes((rule.type.match(/\d+$/) ? rule.type.slice(0, -1) : rule.type))"
           :id="rule.title"
           :perk="rule"
           :is-active="difficulties.findIndex((x) => x.uid === rule.uid) !== -1"
@@ -126,17 +126,17 @@
         :is-active="allEffects.includes(drx.title)"
         @chooseIntensity="chooseDifficulty"
       />
-      <PerkCard
-        :perk="buybackIntensity"
-        :is-active="difficulties.findIndex((x) => x.uid === buybackIntensity.uid) !== -1"
-        :bg="difficultyAvailable(buybackIntensity) ? 'blue-100 dark:gray-700 hover:blue-200 dark:hover:gray-800' : 'gray-200 dark:gray-500'"
-        @pickPerk="(perk, obj) => pickSimplePerk(buybackIntensity, obj, difficultyAvailable, difficulties)"
-      />
       <DifficultyCard
         :perk="legacy"
         :is-active="difficulties.findIndex((x) => x.uid === legacy.uid) !== -1"
         :bg="difficultyAvailable(legacy) ? 'blue-100 dark:gray-700 hover:blue-200 dark:hover:gray-800' : 'gray-200 dark:gray-500'"
         @pickPerk="chooseDifficulty(legacy)"
+      />
+      <PerkCard
+        :perk="buybackIntensity"
+        :is-active="difficulties.findIndex((x) => x.uid === buybackIntensity.uid) !== -1"
+        :bg="difficultyAvailable(buybackIntensity) ? 'blue-100 dark:gray-700 hover:blue-200 dark:hover:gray-800' : 'gray-200 dark:gray-500'"
+        @pickPerk="(perk, obj) => pickSimplePerk(buybackIntensity, obj, difficultyAvailable, difficulties)"
       />
       <DifficultyCard
         :perk="customIntensity"
@@ -196,6 +196,8 @@ const {
   combinedIMGCapture,
   combinedIMGSell,
 } = useDifficulty()
+
+const hiddenCategories = useStorage<String[]>('difficultyCategories', [])
 
 let savedType = ''
 const typeTitles = {
@@ -290,6 +292,7 @@ const drx = {
 const legacy = {
   uid: '9VaF7',
   title: 'Legacy Difficulty',
+  dlc: 'Om1cr0n',
   image: 'https://i.imgur.com/uTx4YCOl.jpg',
   intensity: 0,
   desc: `Your capture/sale values are set to 60%/20% of the listed price and you get a standard budget, the same as on Intensity 1. <b>Ignore</b> the values displayed by the table above and the rest of this section.
@@ -313,6 +316,13 @@ const difficultySliders = computed(() => {
   }, {} as Record<string, object>)
 })
 
+const ruleTitle = computed(() => {
+  return difficultyOptions.reduce((a, x) => {
+    a[x.uid] = displayTitle(x)
+    return a
+  }, {} as Record<string, string>)
+})
+
 function displayTitle(rule) {
   if (rule.type !== savedType && rule.type.slice(0, -1) !== savedType.slice(0, -1)) {
     savedType = rule.type
@@ -329,6 +339,13 @@ function chooseQuick(value, diff) {
   const difficulty = find(difficultyOptions, { uid: diff.uids[value] })
   if (difficulty)
     chooseDifficulty(difficulty)
+}
+
+function hideOrShowCategory(type: string) {
+  // If type ends on any number, remove it
+  if (type.match(/\d+$/)) type = type.slice(0, -1)
+  if (hiddenCategories.value.includes(type)) hiddenCategories.value = hiddenCategories.value.filter(x => x !== type)
+  else hiddenCategories.value.push(type)
 }
 
 </script>

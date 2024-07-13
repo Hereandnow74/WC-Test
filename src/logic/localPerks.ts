@@ -1,10 +1,12 @@
 
 import { PerkFull } from 'global'
+import { findIndex } from 'lodash-es'
 import { bindings, lures, otherControls } from '../data/binding'
 import { homes } from '../data/demdun'
 import { heritages } from '../data/heritage'
 import { defenses, genericPerks, perks, talents } from '../data/talents'
 import { waifu_perks } from '../data/waifu_perks'
+import { useStore } from '~/store/store'
 
 interface PerkStorage {
   'Challenge': PerkFull[]
@@ -31,7 +33,16 @@ const fullHeritages = computed(() => localPerks.value.Heritage ? heritages.conca
 const fullHomes = computed(() => localPerks.value['Demiplane & Dungeons'] ? homes.concat(localPerks.value['Demiplane & Dungeons']) : homes)
 const fullTalents = computed(() => localPerks.value.Talent ? talents.concat(localPerks.value.Talent) : talents)
 const fullDefenses = computed(() => localPerks.value.Defense ? defenses.concat(localPerks.value.Defense) : defenses)
-const fullOtherPerks = computed(() => localPerks.value.Other ? perks.concat(localPerks.value.Other) : perks)
+const fullOtherPerks = computed(() => {
+  // If À la carte difficulty is chosen, replace Warranty perk with other version
+  const { allEffects } = useStore()
+  const otherPerks = [...perks]
+  if (allEffects.value.includes('À la carte'))
+    otherPerks.splice(findIndex(otherPerks, { uid: '4qh4k' }), 1)
+  else
+    otherPerks.splice(findIndex(otherPerks, { uid: '4qh5k' }), 1)
+  return localPerks.value.Other ? otherPerks.concat(localPerks.value.Other) : otherPerks
+})
 const fullGeneric = computed(() => localPerks.value['Generic waifu perk'] ? genericPerks.concat(localPerks.value['Generic waifu perk']) : genericPerks)
 const fullSpecific = computed(() => localPerks.value['Specific waifu perk'] ? waifu_perks.concat(localPerks.value['Specific waifu perk']) : waifu_perks)
 

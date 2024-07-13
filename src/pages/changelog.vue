@@ -6,6 +6,54 @@
       </h2>
       <div>
         <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          08 July 2024
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~34 new user submitted characters, new missions, new world</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          03 July 2024
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~30 new user submitted characters, no new missions, new world</li>
+          <li>À la carte intensity support added</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          27 June 2024
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~80 new user submitted characters, new missions, new world</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          17 June 2024
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>~30 new user submitted characters, new missions, new world</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
+          11 June 2024
+        </h3>
+        <ul class="list-decimal list-inside">
+          <li>Collapsible Intensity Categories</li>
+          <li>Removal of legacy perks and Legacy Toggle in settings</li>
+          <li>~40 new user submitted characters, new missions, new world</li>
+          <li>Bugfixes & small changes</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold text-center py-2 text-orange-700 dark:text-orange-300">
           05 June 2024
         </h3>
         <ul class="list-decimal list-inside">

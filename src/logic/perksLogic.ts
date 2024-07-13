@@ -606,15 +606,25 @@ export function removeAnyPerk(uid: string, perkName: string, count = 1) {
   const { allEffects } = useStore()
   const { allEvents } = useEvents()
   if (!uid) uid = ALL_PERK_TITLES.value[perkName].uid
+  if (!uid) {
+    console.log('UID not found')
+    return
+  }
   Object.values(ALL_PERK_STORES.value).forEach((store) => {
     const ind = findIndex(store, { uid })
     if (ind !== -1) {
-      if (store[ind].count && store[ind].count >= count + 1) { store[ind].count -= count }
+      if (store[ind].count && store[ind].count >= count + 1) {
+        store[ind].count -= count
+        allEvents.emit({ id: Math.floor(Math.random() * 10000), time: Date.now(), message: `Subtracted ${count} from <b>${perkName}</b>`, type: 'warn' })
+      }
       else {
         allEffects.value.splice(allEffects.value.indexOf(perkName), 1)
         remove(store, { uid })
         allEvents.emit({ id: Math.floor(Math.random() * 10000), time: Date.now(), message: `<b>${perkName}</b> got removed`, type: 'warn' })
       }
+    }
+    else {
+      console.log('Perk not found')
     }
   })
 }

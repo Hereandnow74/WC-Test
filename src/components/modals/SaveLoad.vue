@@ -1,9 +1,19 @@
 <template>
   <Modal label="Save & Load" class="text-gray-800 dark:text-gray-200 z-40">
     <div class="dark:bg-black py-2 flex flex-col min-h-0 max-h-[85vh] md:h-3/4">
-      <div class="pb-2 px-4 flex gap-2">
-        <Input v-model="filter" placeholder="Filter by name of the save" />
-        <Button size="Small" label="Clear" bg-color="bg-red-500" @click="filter = ''" />
+      <div class="pb-2 px-4 flex gap-2 justify-between">
+        <div class="flex gap-2">
+          <Input v-model="filter" placeholder="Filter by name of the save" />
+          <Button size="Small" label="Clear" bg-color="bg-red-500" @click="filter = ''" />
+        </div>
+        <div class="flex gap-4">
+          <div title="Save All" class="text-lg">
+            <mdi:folder-zip class="hover:text-red-500 cursor-pointer" @click="saveAll()" />
+          </div>
+          <div title="Delete All" class="text-lg">
+            <fluent:delete-20-filled class="hover:text-red-500 cursor-pointer" @click="deleteAll()" />
+          </div>
+        </div>
       </div>
       <div class="flex flex-col gap-2 pb-4 md:px-2 overflow-y-auto scrollbar">
         <div
@@ -86,6 +96,7 @@
 import { useTimeAgo } from '@vueuse/core'
 import { findIndex, random, remove } from 'lodash-es'
 
+import JSZip from 'jszip'
 import Prism from 'prismjs'
 import Input from '../basic/Input.vue'
 import { useSaves } from '~/store/saves'
@@ -152,6 +163,27 @@ function loadBuild(uid: number) {
 function deleteSave(uid: number) {
   remove(savesList.value, { uid })
   delete saves.value[uid]
+}
+
+async function deleteAll() {
+  if (await confirmDialog('Are you sure you want to delete all saves?')) {
+    savesList.value = []
+    saves.value = {}
+  }
+}
+
+// Save all builds to a ZIP file
+function saveAll() {
+  const zip = new JSZip()
+  savesList.value.forEach((save) => {
+    zip.file(`${save.name}.json`, JSON.stringify(saves.value[save.uid]))
+  })
+  zip.generateAsync({ type: 'blob' }).then((content) => {
+    const a = document.createElement('a')
+    a.href = URL.createObjectURL(content)
+    a.download = 'all_saves.zip'
+    a.click()
+  })
 }
 
 function saveBuildFile() {

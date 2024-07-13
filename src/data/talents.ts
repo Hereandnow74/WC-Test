@@ -566,8 +566,26 @@ perks.push({
   image: 'https://i.imgur.com/EWG1gya.png',
   cost: 10,
   desc: `
-<p>Entering a new world, only to learn that the capture targets are out of your strike zone, can be… inconvenient. This perk will automatically adjust the ages, sexes, and sexualities of any canon characters, and the population’s average beauty level, to better suit your preferences. This will occur before you or anyone in your retinue enter each world for the first time, and even affect the portions of the population that you have no interest in.
-The locals of that world will not notice these changes - from their perspective, that’s just how things are. Any events of canon that would be affected by the alterations are adjusted as little as possible to keep the same general flow of events, keeping the scenario recognizable even though the participants are possibly decades older or younger. This perk cannot fundamentally shift a setting’s danger rating or make capturing individual targets any easier.​</p>`,
+<p>You now have limited access to our advanced targeting algorithm when you use perks that allow you to visit new worlds. This includes the selection of your starting world, the use of Exit Stage Left, and Heritage travel perks such as Dragon Break and “The Day You Almost Caught-”.​</p>
+<p>We take your personal preferences into account, allowing you to visit a specific timeline with local capture targets that are within your strike zone regarding age, sex, sexuality and attractiveness. Our system prioritizes capture targets, but many changes will necessarily filter out into the general population as well.</p>
+<p>The canon timeline will be preserved as much as possible, to maintain the same general flow of events and ensure that key events are recognizable, even though the participants are possibly decades older or younger. This perk cannot fundamentally shift a setting’s danger rating or make individual targets higher or lower tier.</p>
+`,
+})
+
+perks.push({
+  uid: 'ZVCao',
+  title: 'Universal Calibration II',
+  category: 'Misc',
+  image: '',
+  cost: 20,
+  whitelist: ['Universal Calibration'],
+  desc: `
+<p>You have greater access to our advanced targeting algorithms when using travel perks to visit new worlds. We take your personal preferences into account, even more than with the prerequisite to this perk!​</p>
+<p>You can now request a number of specific divergences equal to the highest tier subject in your retinue, to a maximum of 10. We honor every request to at least some degree, but certain requests might have unexpected side effects. The more audacious the request, the more inspired the result can be. Some requests can change the danger rating of the world, influencing your starting budget when used during chargen.​</p>
+<p>If you’re having trouble deciding, or are feeling lucky, you can instead allow your subconscious to fill in the details, with no strict limit on the number of changes. The results of this can be wildly unpredictable, but are unlikely to affect the danger rating of your starting world.​</p>
+<p>You can search for crossover worlds, combining the characters, locations, and events from each component world. The type of crossover world is hard to predict. It could result in a blended fusion world, with multiple characters of the same archetype from the component worlds merged together; different regions that each contained everything relevant in their entire worlds now existing separately in the same world; separate worlds connected by stable portals; or something else entirely.​</p>
+<p>Crossover worlds usually have a danger rating equal to the highest of all component worlds. Multiple local threats focusing on each other instead of the general populace can, rarely, result in a lower danger rating than the general rule, but never by more than one tick.​</p>
+`,
 })
 
 perks.push({
@@ -576,7 +594,7 @@ perks.push({
   category: 'Misc',
   image: 'https://i.ibb.co/vv1g4Sq/Meta-Shift.jpg',
   cost: 15,
-  whitelist: ['Universal Calibration'],
+  whitelist: ['Universal Calibration II'],
   desc: `
 <p>An unwitting anime protagonist once stumbled into a portal to the “Real World,” discovered an anime convention after being mistaken for a cosplayer, and brought back (hentai) doujins as proof of her experiences. The next time she opened one of the doujin volumes, however, she saw only blank pages, as her world mistook the stories within for anecdotes that hadn’t occurred yet and integrated them into its common sense. She remained the only one in her world who was aware that it wasn’t always as erotic as it quickly became.</p>
 <p>This perk allows you to do just that, via a special app in your company smart device. Any physical copy of merchandise or doujin material may be permanently sacrificed through this app, in an inherently destructive process. A material’s effectiveness scales with its artistic quality, with no requirement that it be purchased. Materials that anyone in your retinue created yourselves, even with Aesthetic or Communication Talents, work just fine. Materials sacrificed must have been created in other worlds, including your Demiplane or Dungeon. Multiple sacrifices may be applied to the same world, whether simultaneously or successively, but each sacrifice may only affect a single world. If you sacrifice material while anyone in your retinue is within the target world, the changes will proliferate over the course of the next week (168 hours). Otherwise, the changes will have already taken full effect the next time anyone in your retinue visits.</p>
@@ -791,6 +809,9 @@ perks.push({
 `,
 })
 
+const warranty2 = { ...(perks.find(p => p.uid === '4qh4k')), uid: '4qh5k', cost: 40, complex: 'target' }
+perks.push(warranty2)
+
 perks.push({
   uid: '4qh4k',
   title: 'Express Delivery',
@@ -839,7 +860,7 @@ genericPerks.push({
   uid: 'rUWf6',
   title: 'Slightly Used',
   category: 'Generic',
-  image: 'https://i.ibb.co/k5XPSRL/Slightly-Used.jpg',
+  image: 'https://images2.imgbox.com/72/42/QM0xwaAr_o.png',
   cost: 1,
   special: 'Use directly in companions.',
   whitelist: ['Directly in Companions'],
@@ -869,7 +890,7 @@ genericPerks.push({
   category: 'Generic',
   anything: 'Kid Name',
   complex: 'flavor',
-  image: 'https://i.ibb.co/P1SQhMn/Adoption.jpg',
+  image: 'https://images2.imgbox.com/bb/99/VjEw3SDu_o.png',
   cost: 1,
   desc: 'You may find yourself adopting a kid - and not just because you killed one parent and captured the other into your retinue. Under normal circumstances, that kid will forever be your familiar, never equal to your true-blooded offspring. This perk will tell our systems to treat them as your descendants and follow the relevant Offspring rules instead.',
 })
@@ -878,7 +899,7 @@ genericPerks.push({
   uid: 'FJABm',
   title: 'Paper Trail',
   category: 'Generic',
-  image: 'https://i.ibb.co/9WQ47rf/Paper-Trail.jpg',
+  image: 'https://images2.imgbox.com/91/f5/VRMMxZZx_o.png',
   cost: 1,
   target: 'Any',
   complex: 'target',
@@ -959,7 +980,7 @@ genericPerks.push({
   category: 'Generic',
   requires: 'Any Azur Lane shipgirl',
   complex: 'target',
-  image: 'https://i.ibb.co/zQ0GNfb/Space-Shipgirl.jpg',
+  image: 'https://images2.imgbox.com/f3/f6/o8rXjFvc_o.png',
   cost: 30,
   desc: `
 <p>Just as a group of humans once revived the mighty battleship Yamato as a spaceship in order to save humanity, so do the shipgirls under your command gain the ability to traverse the final frontier. The chosen shipgirl’s full-size hull is refurbished to be completely spaceworthy: the insides of the hull are sealed against the vacuum of space, all their armaments are perfectly capable of functioning in space, and even planes from carriers can fly just as well in the vacuum of space as they do in air. If you don’t want a naval-ships-in-space aesthetic, shipgirl hulls are also available in space counterpart culture varieties. For example, Star Trek’s Federation designs are suitable for Eagle Union and Royal Navy, while the Klingon look is appropriate for Sakura Empire and Romulans for Dragon Empery. Further upgrades may be installed if you have another source of space-era technology.</p>
@@ -1027,7 +1048,7 @@ genericPerks.push({
   requires: 'Any Pokémon trainer',
   complex: 'target',
   cost: 40,
-  image: 'https://i.ibb.co/rdn5hH5/Unison.jpg',
+  image: 'https://images2.imgbox.com/cf/ea/fSpLFBjA_o.png',
   desc: 'The enhanced spiritual bond between your Trainer waifu and her mons allows her to blend with one of them, take on its physical traits, and operate as one being, raising her tier at step 5 to the higher of her own or the blended mon’s. Any of her mons are eligible for this, but only one at a time. She will also receive her seventh most iconic or strongest mon from her canon appearances, if she has one, so she can have a full party of six alongside the one she’s blended with.',
 })
 
@@ -1059,7 +1080,7 @@ genericPerks.push({
   category: 'Generic',
   requires: 'Must have visited any Marvel world or have a subject from one.',
   complex: 'target',
-  image: '',
+  image: 'https://images2.imgbox.com/63/da/IBI2ZWJ8_o.jpg',
   cost: 100,
   desc: `
   <p>Your chosen retinue member is now the host to a Klyntar, the slime-like symbiont race of which Venom is the most famous member. This will raise any blue- or copper-star subject to T7 and a T7 to T8. It will also noticeably strengthen any host who started at T8 or higher, but not enough to increase their tier.</p>
@@ -1114,7 +1135,7 @@ genericPerks.push({
   category: 'Generic',
   requires: 'any Monster Girl Encyclopedia Lesser Succubus',
   complex: 'target',
-  image: 'https://cdn.statically.io/gh/Om1cr0n/cat_thumb/main/docs/thumbs/sgYRw.re_907602_sample_devil_horns_lilim_monster_girl_encyclopedia_monster_girl_encyclopedia_no_bra_pointy_ears_veralde_wings.jpg',
+  image: 'https://images2.imgbox.com/35/1d/aQquQKpJ_o.png',
   cost: 40,
   desc: `
 <p>Any Lesser Succubus will eventually mature into the full-blooded variant with enough time and sexual energy intake. This perk skips the natural maturation process, immediately converting the target into a full Succubus. All Lesser Succubi qualify for this perk, whether they’re naturally-born or converted from another race by natural means, Power Swap, or Template Stacking.</p>`,

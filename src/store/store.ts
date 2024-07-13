@@ -286,7 +286,7 @@ const talentsDiscount = computed(() => {
 
 const defensesDiscount = computed(() => {
   const cost = defensePerks.value.filter(x => x.count && x.count > 2)
-    .reduce((a, x) => a += (x.count - 2) * defenseObject[x.title].cost, 0)
+    .reduce((a, x) => a += (x.count - 2) * defenseObject[x.title]?.cost || 0, 0)
   return cost
 })
 
@@ -603,7 +603,7 @@ const yourTier = computed(() => {
   const calcTier = (perks: Perk[]) => {
     let tier = 1
     perks.forEach((perk) => {
-      if (tier < 4 && ['Death Mask'].includes(perk.title)) tier = 4
+      if (tier < 4 && ['Death Mask', 'Under Jolly Roger'].includes(perk.title)) tier = 4
       if (tier < 5 && ['First Augmentation', 'The First Bite', 'Your Soul Is Mine'].includes(perk.title)) tier = 5
       if (tier < 6 && ['Corporeal Transcendence Engineering', 'Dragon Heart', 'Harbinger of Deаth'].includes(perk.title)) tier = 6
       if (tier < 7 && ['Evolutionary Engine Array', 'Dragon Scale', 'Foul Darkness', 'None Can Excel'].includes(perk.title)) tier = 7

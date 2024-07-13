@@ -214,7 +214,7 @@ export const difficultyOptions = [
   {
     uid: 'nP6mc',
     title: 'Nonе',
-    image: 'https://i.imgur.com/iZ4isdul.jpg',
+    image: 'https://images2.imgbox.com/27/63/Vk3yRjFL_o.jpeg',
     intensity: 2,
     desc: 'All Defense perks will not function. Defense perks may still be purchased, or obtained for free from Binding or Heritage perks, for use as prerequisites. Any resistance-level Defenses on your account will activate automatically if this modifier is removed.',
     category: 'difficulty',
@@ -385,7 +385,7 @@ export const difficultyOptions = [
   {
     uid: 'fraqs',
     title: 'Alignment',
-    image: 'https://i.imgur.com/mY2Hu9dl.jpg',
+    image: 'https://images2.imgbox.com/93/27/hJ6QSsra_o.png',
     intensity: 0,
     desc: 'In each world visited, the people’s personal morality and factional membership is randomized on an individual level. Individuals in the same factions will tend to have similar morality, but their lineups and goals are likely to be wildly different from what you remember. Purchases are not affected.',
     category: 'difficulty',
@@ -519,7 +519,7 @@ export const difficultyOptions = [
   {
     uid: 'Wkf27',
     title: 'No Skill Framework',
-    image: '',
+    image: 'https://images2.imgbox.com/b0/e8/HXzlbDZh_o.png',
     intensity: 2,
     desc: 'The skill framework for Substitutes, Templates, and early captures, that normally helps them reach their baseline potential, is not available. Talents and appropriate trainers are highly recommended. If purchased templates are allowed under your contract’s terms, the initial prices of Template Stacking I and Template Stacking II are reduced by 50%, to 10 credits each.',
     category: 'difficulty',

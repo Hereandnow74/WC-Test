@@ -1303,7 +1303,27 @@
     "additional": "It is recommended that you purchase a madness nullifying or sanity protecting power/defense.",
     "uid": "rJ8ZPg"
   },
-  {"uid":"CJDrzl","worldName":"Hazbin Hotel","rating":6,"image":"https://cdn.imgchest.com/files/j7mmcwlx6r7.png","additional":"If you take Extra and choose Sinner as your species you will be unable to leave the Pride Ring unless summoned or you at least filled Exit Stage left. Choosing Hellborn does not have this limitation.","condition":[{"name":"Earth start","rating":4},{"name":"Helluva Boss","rating":6},{"name":"Extermination day","rating":6}]},
+  {
+    "uid": "CJDrzl",
+    "worldName": "Hazbin Hotel",
+    "rating": 6,
+    "image": "https://cdn.imgchest.com/files/j7mmcwlx6r7.png",
+    "additional": "If you take Extra and choose Sinner as your species you will be unable to leave the Pride Ring unless summoned or you at least filled Exit Stage left. Choosing Hellborn does not have this limitation.",
+    "condition": [
+      {
+        "name": "Earth start",
+        "rating": 4
+      },
+      {
+        "name": "Helluva Boss",
+        "rating": 6
+      },
+      {
+        "name": "Extermination day",
+        "rating": 6
+      }
+    ]
+  },
   {
     "worldName": "She-Ra and the Princesses of Power",
     "rating": 5,
@@ -3334,7 +3354,12 @@
     ],
     "uid": "CjE8H6"
   },
-  {"uid":"xIrWEc","worldName":"K-On!","rating":1,"image":"https://wallpapercave.com/wp/m5ls2zz.jpg"},
+  {
+    "uid": "xIrWEc",
+    "worldName": "K-On!",
+    "rating": 1,
+    "image": "https://wallpapercave.com/wp/m5ls2zz.jpg"
+  },
   {
     "worldName": "Kenja no Mago",
     "rating": 5,
@@ -3814,7 +3839,12 @@
     "image": "https://cdn.imgchest.com/files/3yrgckwddp4.png",
     "uid": "dgDYlY"
   },
-  {"uid":"shxieW","worldName":"Sakura Dungeon","rating":4,"image":"https://i.pinimg.com/736x/1f/dc/97/1fdc97df6c20f347b5591b90a0952044.jpg"},
+  {
+    "uid": "shxieW",
+    "worldName": "Sakura Dungeon",
+    "rating": 4,
+    "image": "https://i.pinimg.com/736x/1f/dc/97/1fdc97df6c20f347b5591b90a0952044.jpg"
+  },
   {
     "worldName": "Sunset Overdrive",
     "rating": 4,
@@ -5789,7 +5819,12 @@
     ],
     "uid": "5yTWnz"
   },
-  {"uid":"zkrepl","worldName":"Lollipop Chainsaw","rating":5,"image":"https://wallpapercave.com/wp/wp4407033.jpg"},
+  {
+    "uid": "zkrepl",
+    "worldName": "Lollipop Chainsaw",
+    "rating": 5,
+    "image": "https://wallpapercave.com/wp/wp4407033.jpg"
+  },
   {
     "worldName": "Reincarnated as a Sword",
     "rating": 7,
@@ -5835,7 +5870,12 @@
     "image": "https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/D8A6789735136D2B05E66924316712DC196F1CD82CF3B632C73E8D7EAB5E0C88/scale?width=1200&aspectRatio=1.78&format=jpeg",
     "uid": "aK2ShD"
   },
-  {"uid":"xeUBUY","worldName":"NIKKE: Goddess of Victory","rating":6,"image":"https://img3.gelbooru.com//samples/88/f9/sample_88f94ec43cc89382ae9a93a2f2119fa8.jpg"},
+  {
+    "uid": "xeUBUY",
+    "worldName": "NIKKE: Goddess of Victory",
+    "rating": 6,
+    "image": "https://img3.gelbooru.com//samples/88/f9/sample_88f94ec43cc89382ae9a93a2f2119fa8.jpg"
+  },
   {
     "worldName": "Hidan no Aria/Aria the Scarlet Ammo",
     "rating": 4,
@@ -5848,7 +5888,12 @@
     "image": "https://i0.wp.com/www.animegeek.com/wp-content/uploads/2022/08/Black-Summoner-Season-2-release-date-Kuro-no-Shoukanshi-Season-2-Anime.jpg?fit=1200%2C675&ssl=1",
     "uid": "r0lPUt"
   },
-  {"uid":"VrGCIr","worldName":"Destiny Child","rating":6,"image":"https://img3.gelbooru.com//samples/ec/0c/sample_ec0c3d040c47431701d687364c1dcca8.jpg"},
+  {
+    "uid": "VrGCIr",
+    "worldName": "Destiny Child",
+    "rating": 6,
+    "image": "https://img3.gelbooru.com//samples/ec/0c/sample_ec0c3d040c47431701d687364c1dcca8.jpg"
+  },
   {
     "worldName": "Samurai Jack",
     "rating": 6,
@@ -5961,14 +6006,24 @@
     "image": "https://m.media-amazon.com/images/I/81N+BRRRjRL._RI_.jpg",
     "uid": "s2uq13"
   },
-  {"uid":"nkJnoj","worldName":"Umbrella Academy","rating":5,"image":"https://cdnb.artstation.com/p/assets/images/images/023/650/799/large/nat-garbaciak-c37415cb-4f64-4a45-abda-c15aba0f9dc4.jpg"},
+  {
+    "uid": "nkJnoj",
+    "worldName": "Umbrella Academy",
+    "rating": 5,
+    "image": "https://cdnb.artstation.com/p/assets/images/images/023/650/799/large/nat-garbaciak-c37415cb-4f64-4a45-abda-c15aba0f9dc4.jpg"
+  },
   {
     "worldName": "Zenescope",
     "rating": 6,
     "image": "https://images.comicbooktreasury.com/wp-content/uploads/2021/12/Grimm-Fairy-Tales-Presents-Wonderland-Zenescope-Reading-Order.jpg",
     "uid": "oYZksD"
   },
-  {"uid":"kLMxRm","worldName":"Bastard!!","rating":10,"image":"https://wallpapercave.com/wp/wp12089892.jpg"},
+  {
+    "uid": "kLMxRm",
+    "worldName": "Bastard!!",
+    "rating": 10,
+    "image": "https://wallpapercave.com/wp/wp12089892.jpg"
+  },
   {
     "worldName": "Epic Seven",
     "rating": 7,
@@ -6043,7 +6098,12 @@
     ],
     "uid": "pCytOk"
   },
-  {"uid":"zZdMZH","worldName":"Eiyuu Senki: The World Conquest","rating":4,"image":"https://img3.gelbooru.com//samples/17/67/sample_17672ff76097b51e21a846a6b0e128ad.jpg"},
+  {
+    "uid": "zZdMZH",
+    "worldName": "Eiyuu Senki: The World Conquest",
+    "rating": 4,
+    "image": "https://img3.gelbooru.com//samples/17/67/sample_17672ff76097b51e21a846a6b0e128ad.jpg"
+  },
   {
     "worldName": "I Shall Seal the Heavens",
     "rating": 10,
@@ -6265,7 +6325,12 @@
     "image": "https://i.imgur.com/m39sLZU.jpg",
     "uid": "Oh5AVu"
   },
-  {"uid":"AYARoy","worldName":"Last Origin","rating":6,"image":"https://img3.gelbooru.com//samples/91/4f/sample_914ff9cfb1a216869661a699aaf98e9d.jpg"},
+  {
+    "uid": "AYARoy",
+    "worldName": "Last Origin",
+    "rating": 6,
+    "image": "https://img3.gelbooru.com//samples/91/4f/sample_914ff9cfb1a216869661a699aaf98e9d.jpg"
+  },
   {
     "worldName": "Manyuu Hikenchou",
     "rating": 5,
@@ -6316,7 +6381,12 @@
     "image": "https://rare-gallery.com/uploads/posts/1008233-anime-Gosick-Victorique-de-Blois-Kazuya-Kujou-clothing-snapshot-mangaka.jpg",
     "uid": "NIRnu5"
   },
-  {"uid":"sLfaMl","worldName":"Kung Fu Panda","rating":4,"image":"https://i.pinimg.com/736x/f9/ff/14/f9ff147d57943bc75f4e2049a07fc0ca.jpg"},
+  {
+    "uid": "sLfaMl",
+    "worldName": "Kung Fu Panda",
+    "rating": 4,
+    "image": "https://i.pinimg.com/736x/f9/ff/14/f9ff147d57943bc75f4e2049a07fc0ca.jpg"
+  },
   {
     "worldName": "Monster",
     "rating": 2,
@@ -6687,7 +6757,12 @@
     "rating": 2,
     "image": "https://cdn.donmai.us/original/bc/78/__ebisuzawa_kurumi_wakasa_yuuri_takeya_yuki_naoki_miki_and_wakasa_ruu_gakkou_gurashi_drawn_by_chiba_sadoru__bc789b01c0c5cafba811997f810911a7.jpg"
   },
-  {"uid":"wNifFO","worldName":"Vinland Saga","rating":3,"image":"https://img3.gelbooru.com//samples/bf/e0/sample_bfe024487aa6864e11067ac0f48ba437.jpg"},
+  {
+    "uid": "wNifFO",
+    "worldName": "Vinland Saga",
+    "rating": 3,
+    "image": "https://img3.gelbooru.com//samples/bf/e0/sample_bfe024487aa6864e11067ac0f48ba437.jpg"
+  },
   {
     "uid": "PdkRMq",
     "worldName": "Honkai: Star Rail",
@@ -6761,7 +6836,18 @@
       }
     ]
   },
-  {"uid":"oGHvAB","worldName":"Isekai Nonbiri Nouka","rating":5,"image":"https://img3.gelbooru.com//samples/fc/fe/sample_fcfea407b3b936dc2cb048e3f0c84ce4.jpg","condition":[{"name":"Canon","rating":5}]},
+  {
+    "uid": "oGHvAB",
+    "worldName": "Isekai Nonbiri Nouka",
+    "rating": 5,
+    "image": "https://img3.gelbooru.com//samples/fc/fe/sample_fcfea407b3b936dc2cb048e3f0c84ce4.jpg",
+    "condition": [
+      {
+        "name": "Canon",
+        "rating": 5
+      }
+    ]
+  },
   {
     "uid": "cZwlpb",
     "worldName": "Shigatsu wa Kimi no Uso",
@@ -6890,7 +6976,22 @@
     "rating": 5,
     "image": "https://theinfosphere.org/images/9/92/Promo_2ACV16_%282%29.png"
   },
-  {"uid":"jtUWMe","worldName":"07th Expansion","rating":4,"image":"https://img3.gelbooru.com//images/b1/d9/b1d94512156fa6add2725f8f34b5d5f7.jpg","condition":[{"name":"Higurashi When They Cry","rating":4},{"name":"Umineko no Naku Koro Ni","rating":10}]},
+  {
+    "uid": "jtUWMe",
+    "worldName": "07th Expansion",
+    "rating": 4,
+    "image": "https://img3.gelbooru.com//images/b1/d9/b1d94512156fa6add2725f8f34b5d5f7.jpg",
+    "condition": [
+      {
+        "name": "Higurashi When They Cry",
+        "rating": 4
+      },
+      {
+        "name": "Umineko no Naku Koro Ni",
+        "rating": 10
+      }
+    ]
+  },
   {
     "uid": "Dkenxc",
     "worldName": "Ayashimon",
@@ -7185,43 +7286,312 @@
     "rating": 1,
     "image": "https://images2.alphacoders.com/552/552512.jpg"
   },
-  {"uid":"lACwOL","worldName":"Watch Dogs","rating":3,"image":"https://i.imgur.com/Zkdwwde.jpg"},
-  {"uid":"tiWdeb","worldName":"Prisma Illya","rating":6,"image":"https://images2.imgbox.com/29/20/wqGYwuAr_o.png","condition":[{"name":"Illya's World","rating":6},{"name":"Miyu's World","rating":7}]},
-  {"uid":"UwmWcr","worldName":"Deep Rock Galactic","rating":4,"image":"https://wallpapercave.com/wp/wp9630945.jpg"},
-  {"uid":"TAXZWa","worldName":"The Amazing Digital Circus","rating":4,"image":"https://m.media-amazon.com/images/M/MV5BODA5ZDQ3NGMtY2E1Ny00MGViLWE2MzMtMjRmNTlmN2NlZmZjXkEyXkFqcGdeQXVyMTY5MDAwMTQw._V1_.jpg"},
-  {"uid":"EzKMpq","worldName":"Bocchi the Rock!","rating":1,"image":"https://static.animecorner.me/2022/11/bocchi-the-rock-anime-trailer-1024x576.jpg"},
-  {"uid":"RDnaTL","worldName":"Idolmaster","rating":1,"image":"https://c4.wallpaperflare.com/wallpaper/64/726/419/anime-the-idolmaster-cinderella-girls-starlight-stage-asuka-ninomiya-mika-jougasaki-wallpaper-preview.jpg"},
-  {"uid":"xGicRn","worldName":"Umamusume: Pretty Derby","rating":1,"image":"https://cdn.donmai.us/sample/23/35/__mejiro_mcqueen_daiwa_scarlet_gold_ship_tokai_teio_silence_suzuka_and_13_more_umamusume__sample-2335b52a074ba93540a37a7335743304.jpg"},
-  {"uid":"wyeEcK","worldName":"Vambrace: Cold Soul","rating":6,"image":"https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/en_US/games/switch/v/vambrace-cold-soul-switch/hero"},
-  {"uid":"OQCmLH","worldName":"Frieren: Beyond Journey's End","rating":5,"image":"https://a.storyblok.com/f/178900/800x567/730dda5714/0ad3b947fc2b6940e6a51f771f5314471669691552_main.png"},
-  {"uid":"qTnesf","worldName":"Risk of Rain","rating":6,"image":"https://cdn.imgchest.com/files/wye3cjx5n94.png","condition":[{"name":"Earth","rating":3,"official":false},{"name":"Petrichor V","rating":6}]},
-  {"uid":"gcTfAN","worldName":"ULTRAKILL","rating":8,"image":"https://www.prankster101.com/wp-content/uploads/2022/06/Ultrakill-banner.jpg","condition":[{"name":"Post-Humanity","rating":8}]},
-  {"uid":"YBIdLU","worldName":"Undead Unluck","rating":8,"image":"https://i.imgur.com/u4iPitt.jpg","condition":[{"name":"1st timeline","rating":9,"official":false}]},
-  {"uid":"SNVcCl","worldName":"Heroes","rating":7,"image":"https://i.imgur.com/wahh2X8.jpeg"},
-  {"uid":"JrNmgE","worldName":"The World God Only Knows","rating":4,"image":"https://miro.medium.com/v2/resize:fit:1258/0*nyRAmSnXVAxkFXF8.jpg"},
-  {"uid":"QPuzsT","worldName":"The Kingkiller Chronicle","rating":5,"image":"https://wallpapercave.com/wp/wp10645568.jpg"},
-  {"uid":"bfnbNp","worldName":"Reverse: 1999","rating":5,"image":"https://cdn.donmai.us/sample/71/e8/__vertin_sonetto_schneider_regulus_apple_and_3_more_reverse_1999_drawn_by_hashibi_noyasakihashibi__sample-71e818569576f9089570917f2b99e41f.jpg"},
-  {"uid":"OXNgZF","worldName":"Inscryption","rating":5,"image":"https://cdn.donmai.us/sample/2a/35/__leshy_inscryption_drawn_by_carpet_crawler__sample-2a3580a9644b553450645b095d1f4d02.jpg"},
-  {"uid":"GOOhAT","worldName":"Palworld","rating":5,"image":"https://cdn.cloudflare.steamstatic.com/steam/apps/1623730/header.jpg?t=1657680791"},
-  {"uid":"rqOBVs","worldName":"Gushing over Magical Girls","rating":5,"image":"https://i.imgur.com/wZf5Dx0.jpg"},
-  {"uid":"rctMlH","worldName":"Lethal Company","rating":5,"image":"https://cdn.akamai.steamstatic.com/steam/apps/1966720/capsule_616x353.jpg?t=1700231592"},
-  {"uid":"nAUUWg","worldName":"Helldivers","rating":5,"image":"https://i.imgur.com/5xHND4X.jpg"},
-  {"uid":"JyMsNu","worldName":"The Wrong Way to Use Healing Magic","rating":7,"image":"https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/6fe06a15f85835d629c5735292219961.jpe"},
-  {"uid":"GETukL","worldName":"Kouya No Kotobuki Hikoutai","rating":3,"image":"https://img3.gelbooru.com/images/b5/6b/b56bd6ae9e52841dd91ea6e4fcb68019.jpg"},
-  {"uid":"COcGEq","worldName":"Bible Black","rating":4,"image":"https://image.tmdb.org/t/p/original/wvLcwgl0t9VMpwcWiyOUYP2TrFZ.jpg"},
-  {"uid":"jPCmLs","worldName":"Back to the Future","rating":2,"image":"https://www.nme.com/wp-content/uploads/2016/09/backtothefuture-1.png"},
-  {"uid":"JyrMpY","worldName":"Stop!! Hibari-kun","rating":2,"image":"https://cdn.imgchest.com/files/my8xc8q9kb4.jpg"},
-  {"uid":"NmUfmf","worldName":"Wings of Fire","rating":7,"image":"https://i.imgur.com/4pmri9Z.jpeg"},
-  {"uid":"KeHdJL","worldName":"Keijo","rating":1,"image":"https://wallpapercave.com/wp/wp3618832.png"},
-  {"uid":"DNDmbC","worldName":"The Coffin of Andy and Leyley","rating":4,"image":"https://i.imgur.com/AljlNM7.jpeg"},
-  {"uid":"ZLdoYC","worldName":"Shimoneta","rating":3,"image":"https://img.rgstatic.com/content/show/ae29981f-44fb-4fe4-915a-cea5cb1cf23d/backdrop-1920.jpg"},
-  {"uid":"TqNfaK","worldName":"Tis Time For \"Torture,\" Princess","rating":4,"image":"https://i.ibb.co/ZNbb7tc/image.png"},
-  {"uid":"novdPL","worldName":"Unicorn Overlord","rating":5,"image":"https://i.imgur.com/eMPjkCK.jpeg"},
-  {"uid":"NTvprN","worldName":"South Park","rating":5,"image":"https://images2.imgbox.com/7a/99/DNWeC6dd_o.jpg"},
-  {"uid":"KgiOvH","worldName":"BNA:Brand New Animal","rating":3,"image":"https://static.zerochan.net/Brand.New.Animal.full.3351655.jpg"},
-  {"uid":"PiTHLJ","worldName":"Andavaverse","rating":1,"image":"https://pbs.twimg.com/media/FQbkZQRXwAY2SKn?format=jpg&name=medium"},
-  {"uid":"OsUrpP","worldName":"Lore Olympus","rating":8,"image":"https://listium-res.cloudinary.com/image/upload/w_1200,h_1200,c_limit,q_auto,f_auto/dowerp5ptg5sdwswmvnp.jpg"},
-  {"uid":"CvCRvy","worldName":"Wuthering Waves","rating":7,"image":"https://i.imgur.com/p6yX8XO.jpg"},
-  {"uid":"IKmjDt","worldName":"Futoku no Guild","rating":4,"image":"https://animotaku.fr/wp-content/uploads/2022/03/anime-Guild-of-Depravity-visuel-2.jpeg"},
-  {"uid":"lKEHoJ","worldName":"District 9","rating":2,"image":"https://i.imgur.com/YAo2ulg.jpeg"}
+  {
+    "uid": "lACwOL",
+    "worldName": "Watch Dogs",
+    "rating": 3,
+    "image": "https://i.imgur.com/Zkdwwde.jpg"
+  },
+  {
+    "uid": "tiWdeb",
+    "worldName": "Prisma Illya",
+    "rating": 6,
+    "image": "https://images2.imgbox.com/29/20/wqGYwuAr_o.png",
+    "condition": [
+      {
+        "name": "Illya's World",
+        "rating": 6
+      },
+      {
+        "name": "Miyu's World",
+        "rating": 7
+      }
+    ]
+  },
+  {
+    "uid": "UwmWcr",
+    "worldName": "Deep Rock Galactic",
+    "rating": 4,
+    "image": "https://wallpapercave.com/wp/wp9630945.jpg"
+  },
+  {
+    "uid": "TAXZWa",
+    "worldName": "The Amazing Digital Circus",
+    "rating": 4,
+    "image": "https://m.media-amazon.com/images/M/MV5BODA5ZDQ3NGMtY2E1Ny00MGViLWE2MzMtMjRmNTlmN2NlZmZjXkEyXkFqcGdeQXVyMTY5MDAwMTQw._V1_.jpg"
+  },
+  {
+    "uid": "EzKMpq",
+    "worldName": "Bocchi the Rock!",
+    "rating": 1,
+    "image": "https://static.animecorner.me/2022/11/bocchi-the-rock-anime-trailer-1024x576.jpg"
+  },
+  {
+    "uid": "RDnaTL",
+    "worldName": "Idolmaster",
+    "rating": 1,
+    "image": "https://c4.wallpaperflare.com/wallpaper/64/726/419/anime-the-idolmaster-cinderella-girls-starlight-stage-asuka-ninomiya-mika-jougasaki-wallpaper-preview.jpg"
+  },
+  {
+    "uid": "xGicRn",
+    "worldName": "Umamusume: Pretty Derby",
+    "rating": 1,
+    "image": "https://cdn.donmai.us/sample/23/35/__mejiro_mcqueen_daiwa_scarlet_gold_ship_tokai_teio_silence_suzuka_and_13_more_umamusume__sample-2335b52a074ba93540a37a7335743304.jpg"
+  },
+  {
+    "uid": "wyeEcK",
+    "worldName": "Vambrace: Cold Soul",
+    "rating": 6,
+    "image": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/en_US/games/switch/v/vambrace-cold-soul-switch/hero"
+  },
+  {
+    "uid": "OQCmLH",
+    "worldName": "Frieren: Beyond Journey's End",
+    "rating": 5,
+    "image": "https://a.storyblok.com/f/178900/800x567/730dda5714/0ad3b947fc2b6940e6a51f771f5314471669691552_main.png"
+  },
+  {
+    "uid": "qTnesf",
+    "worldName": "Risk of Rain",
+    "rating": 6,
+    "image": "https://cdn.imgchest.com/files/wye3cjx5n94.png",
+    "condition": [
+      {
+        "name": "Earth",
+        "rating": 3,
+        "official": false
+      },
+      {
+        "name": "Petrichor V",
+        "rating": 6
+      }
+    ]
+  },
+  {
+    "uid": "gcTfAN",
+    "worldName": "ULTRAKILL",
+    "rating": 8,
+    "image": "https://www.prankster101.com/wp-content/uploads/2022/06/Ultrakill-banner.jpg",
+    "condition": [
+      {
+        "name": "Post-Humanity",
+        "rating": 8
+      }
+    ]
+  },
+  {
+    "uid": "YBIdLU",
+    "worldName": "Undead Unluck",
+    "rating": 8,
+    "image": "https://i.imgur.com/u4iPitt.jpg",
+    "condition": [
+      {
+        "name": "1st timeline",
+        "rating": 9,
+        "official": false
+      }
+    ]
+  },
+  {
+    "uid": "SNVcCl",
+    "worldName": "Heroes",
+    "rating": 7,
+    "image": "https://i.imgur.com/wahh2X8.jpeg"
+  },
+  {
+    "uid": "JrNmgE",
+    "worldName": "The World God Only Knows",
+    "rating": 4,
+    "image": "https://miro.medium.com/v2/resize:fit:1258/0*nyRAmSnXVAxkFXF8.jpg"
+  },
+  {
+    "uid": "QPuzsT",
+    "worldName": "The Kingkiller Chronicle",
+    "rating": 5,
+    "image": "https://wallpapercave.com/wp/wp10645568.jpg"
+  },
+  {
+    "uid": "bfnbNp",
+    "worldName": "Reverse: 1999",
+    "rating": 5,
+    "image": "https://cdn.donmai.us/sample/71/e8/__vertin_sonetto_schneider_regulus_apple_and_3_more_reverse_1999_drawn_by_hashibi_noyasakihashibi__sample-71e818569576f9089570917f2b99e41f.jpg"
+  },
+  {
+    "uid": "OXNgZF",
+    "worldName": "Inscryption",
+    "rating": 5,
+    "image": "https://cdn.donmai.us/sample/2a/35/__leshy_inscryption_drawn_by_carpet_crawler__sample-2a3580a9644b553450645b095d1f4d02.jpg"
+  },
+  {
+    "uid": "GOOhAT",
+    "worldName": "Palworld",
+    "rating": 5,
+    "image": "https://cdn.cloudflare.steamstatic.com/steam/apps/1623730/header.jpg?t=1657680791"
+  },
+  {
+    "uid": "rqOBVs",
+    "worldName": "Gushing over Magical Girls",
+    "rating": 5,
+    "image": "https://i.imgur.com/wZf5Dx0.jpg"
+  },
+  {
+    "uid": "rctMlH",
+    "worldName": "Lethal Company",
+    "rating": 5,
+    "image": "https://cdn.akamai.steamstatic.com/steam/apps/1966720/capsule_616x353.jpg?t=1700231592"
+  },
+  {
+    "uid": "nAUUWg",
+    "worldName": "Helldivers",
+    "rating": 5,
+    "image": "https://i.imgur.com/5xHND4X.jpg"
+  },
+  {
+    "uid": "JyMsNu",
+    "worldName": "The Wrong Way to Use Healing Magic",
+    "rating": 7,
+    "image": "https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/6fe06a15f85835d629c5735292219961.jpe"
+  },
+  {
+    "uid": "GETukL",
+    "worldName": "Kouya No Kotobuki Hikoutai",
+    "rating": 3,
+    "image": "https://img3.gelbooru.com/images/b5/6b/b56bd6ae9e52841dd91ea6e4fcb68019.jpg"
+  },
+  {
+    "uid": "COcGEq",
+    "worldName": "Bible Black",
+    "rating": 4,
+    "image": "https://image.tmdb.org/t/p/original/wvLcwgl0t9VMpwcWiyOUYP2TrFZ.jpg"
+  },
+  {
+    "uid": "jPCmLs",
+    "worldName": "Back to the Future",
+    "rating": 2,
+    "image": "https://www.nme.com/wp-content/uploads/2016/09/backtothefuture-1.png"
+  },
+  {
+    "uid": "JyrMpY",
+    "worldName": "Stop!! Hibari-kun",
+    "rating": 2,
+    "image": "https://cdn.imgchest.com/files/my8xc8q9kb4.jpg"
+  },
+  {
+    "uid": "NmUfmf",
+    "worldName": "Wings of Fire",
+    "rating": 7,
+    "image": "https://i.imgur.com/4pmri9Z.jpeg"
+  },
+  {
+    "uid": "KeHdJL",
+    "worldName": "Keijo",
+    "rating": 1,
+    "image": "https://wallpapercave.com/wp/wp3618832.png"
+  },
+  {
+    "uid": "DNDmbC",
+    "worldName": "The Coffin of Andy and Leyley",
+    "rating": 4,
+    "image": "https://i.imgur.com/AljlNM7.jpeg"
+  },
+  {
+    "uid": "ZLdoYC",
+    "worldName": "Shimoneta",
+    "rating": 3,
+    "image": "https://img.rgstatic.com/content/show/ae29981f-44fb-4fe4-915a-cea5cb1cf23d/backdrop-1920.jpg"
+  },
+  {
+    "uid": "TqNfaK",
+    "worldName": "Tis Time For \"Torture,\" Princess",
+    "rating": 4,
+    "image": "https://i.ibb.co/ZNbb7tc/image.png"
+  },
+  {
+    "uid": "novdPL",
+    "worldName": "Unicorn Overlord",
+    "rating": 5,
+    "image": "https://i.imgur.com/eMPjkCK.jpeg"
+  },
+  {
+    "uid": "NTvprN",
+    "worldName": "South Park",
+    "rating": 5,
+    "image": "https://images2.imgbox.com/7a/99/DNWeC6dd_o.jpg"
+  },
+  {
+    "uid": "KgiOvH",
+    "worldName": "BNA:Brand New Animal",
+    "rating": 3,
+    "image": "https://static.zerochan.net/Brand.New.Animal.full.3351655.jpg"
+  },
+  {
+    "uid": "PiTHLJ",
+    "worldName": "Andavaverse",
+    "rating": 1,
+    "image": "https://pbs.twimg.com/media/FQbkZQRXwAY2SKn?format=jpg&name=medium"
+  },
+  {
+    "uid": "OsUrpP",
+    "worldName": "Lore Olympus",
+    "rating": 8,
+    "image": "https://listium-res.cloudinary.com/image/upload/w_1200,h_1200,c_limit,q_auto,f_auto/dowerp5ptg5sdwswmvnp.jpg"
+  },
+  {
+    "uid": "CvCRvy",
+    "worldName": "Wuthering Waves",
+    "rating": 7,
+    "image": "https://i.imgur.com/p6yX8XO.jpg"
+  },
+  {
+    "uid": "IKmjDt",
+    "worldName": "Futoku no Guild",
+    "rating": 4,
+    "image": "https://animotaku.fr/wp-content/uploads/2022/03/anime-Guild-of-Depravity-visuel-2.jpeg"
+  },
+  {
+    "uid": "lKEHoJ",
+    "worldName": "District 9",
+    "rating": 2,
+    "image": "https://i.imgur.com/YAo2ulg.jpeg"
+  },
+  {
+    "uid": "XkLIFz",
+    "worldName": "Cells at Work!",
+    "rating": 2,
+    "image": "https://static1.cbrimages.com/wordpress/wp-content/uploads/2019/10/Cells-at-Work.jpg"
+  },
+  {
+    "uid": "ZIDMTz",
+    "worldName": "Steins;Gate",
+    "rating": 3,
+    "image": "https://i.pinimg.com/originals/8a/1c/20/8a1c20db423f85de20c1269b348713b3.jpg"
+  },
+  {
+    "uid": "OljwxC",
+    "worldName": "100 Girlfriends",
+    "rating": 1,
+    "image": "https://images2.imgbox.com/55/62/DHqLTI05_o.png"
+  },
+  {
+    "uid": "xfxVCE",
+    "worldName": "Seven Mortal Sins",
+    "rating": 6,
+    "image": "https://ramenparados.com/wp-content/uploads/2016/09/sin-nanatus-937x600.jpg"
+  },
+  {
+    "uid": "NEnjZt",
+    "worldName": "Discworld",
+    "rating": 3,
+    "image": "https://i0.wp.com/terrypratchett.com/management/wp-content/uploads/2022/03/Great-ATuin-II.jpg?resize=1024%2C817&ssl=1"
+  },
+  {
+    "uid": "NFIrIs",
+    "worldName": "S.T.A.L.K.E.R.",
+    "rating": 3,
+    "image": "https://img0.reactor.cc/pics/post/full/STALKER-stalker-art-7001858.jpeg"
+  },
+  {"uid":"cppwFP", "worldName":"Chillin' in Another World with Level 2 Super Cheat Powers", "rating":6, "image":"https://www.animenewsnetwork.com/hotlink/thumbnails/crop1200x630gK7/cms/news.6/203457/lv2_kv1_with_logo_credit.jpg"},
+  {"uid":"GAdmqA", "worldName":"Ajin", "rating":2, "image":"https://images2.imgbox.com/54/d2/ftSlyu0P_o.png", "condition":[{"name":"Sato's Rampage", "rating":3}]},
+  {"uid":"HnnQLW", "worldName":"Restaurant to Another World", "rating":4, "image":"https://www.theouterhaven.net/wp-content/uploads/2020/06/1667002_Latvian_ShowMasterKeyArt_4219d4bf-0069-e711-8175-020165574d09-scaled.jpg"},
+  {"uid":"SgiViH", "worldName":"My Senpai is Annoying", "rating":1, "image":"https://i.imghippo.com/files/ZhxU91720385238.jpg"}
 ]

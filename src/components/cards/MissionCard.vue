@@ -1,6 +1,6 @@
 <template>
   <div class="relative bg-[#f2eecb] dark:bg-[#1E1E5C] rounded p-2 shadow-lg flex flex-col gap-1">
-    <div v-if="mission.uid" class="flex gap-4">
+    <div class="flex gap-4">
       <div class="hover:(text-red-400) text-lg cursor-pointer flex items-center gap-1" title="Add to Favorites" @click="missionFavoritesSet.has(mission.uid) ? missionFavorites.splice(missionFavorites.indexOf(mission.uid), 1) : missionFavorites.push(mission.uid)">
         <span class="text-red-500">
           <ci:heart-fill
@@ -244,7 +244,7 @@ function sendMission() {
 }
 
 const deleteLocal = () => {
-  localMissions.value.splice(localMissions.value.findIndex((m) => m.uid === props.mission.uid), 1)
+  localMissions.value.splice(localMissions.value.findIndex(m => m.uid === props.mission.uid), 1)
 }
 
 </script>

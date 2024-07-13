@@ -236,8 +236,10 @@ DLCperks.push({
   title: 'I Want Out',
   image: 'https://i.ibb.co/02cZWg7/IWantOut.jpg',
   cost: 20,
+  multiple: true,
   desc: `
   A portal opens to a new world of your choice. The portal is one-way only, and will last no more than two minutes or until you and all of your retinue have passed through, whichever is shorter. If any of your retinue stay behind, this perk will not help you retrieve them. 
+  <p>This Perk may be repurchased multiple times.</p>
   `,
 })
 
@@ -403,7 +405,7 @@ DLChomes.push({
   dlclink: 'https://docs.google.com/document/d/1-JLmjxufUDBH0uR4_DQOpyYEJ43pPWv37V9YD_wYoZ0/edit#',
   title: 'Creature Feature',
   category: 'Home',
-  image: 'https://i.ibb.co/9Y746Qf/Creature-Feature-I.jpg',
+  image: 'https://images2.imgbox.com/48/e0/P3Vnalm6_o.png',
   cost: 500,
   desc: `From your control center, you can select wildlife you have encountered to populate your Demiplane. The maximum tier of wildlife is equal to the highest tier member of the retinue, up to T10. This cannot produce IMG tier creatures. Binding wildlife from your Demiplane as a Familiar does not provide credits.
     `,
@@ -430,7 +432,7 @@ DLChomes.push({
   dlc: 'DaemonOrk',
   title: 'God of Time',
   category: 'Home',
-  image: 'https://i.ibb.co/TBmfsyQ/God-Of-Time.jpg',
+  image: 'https://images2.imgbox.com/d8/fd/8uFcvM02_o.png',
   cost: 0,
   costT: 1,
   desc: `You can already create life, but now you want to add some randomness to it. So long as neither you or your retinue members are inside, time can now be sped up within your demiplane up to 1 million times. Allowing things to evolve naturally.
