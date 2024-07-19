@@ -231,14 +231,14 @@
           :price-mode="true"
         />
       </div>
-      <div v-if="specificMods.length" class="flex gap-x-2 flex-wrap">
+      <div v-if="specificMods.length" class="">
         <div class="float-left mr-2" :style="{'color': imageSettings.categoryColor}">
           Specific Credit Modifiers:
         </div>
-        <div v-for="mod,i in specificMods" :key="mod.desc" :style="{'color': imageSettings.perkColor}">
+        <span v-for="mod,i in specificMods" :key="mod.desc" class="ml-2" :style="{'color': imageSettings.perkColor}">
           <span>{{ mod.desc }}</span>
           <span>[<span :style="{'color': imageSettings.numberColor}">{{ numberToSigned(mod.mod) }}</span>]<span v-if="i !== specificMods.length -1" class="text-orange-500">,</span></span>
-        </div>
+        </span>
       </div>
     </template>
     <div class="flex flex-wrap gap-1 justify-between mt-2">

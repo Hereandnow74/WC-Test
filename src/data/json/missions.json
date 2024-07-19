@@ -1,5 +1,1135 @@
 [
   {
+    "reward": "50 Credits + Palworld Technology Production (Craft) System.",
+    "image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1623730/capsule_616x353.jpg",
+    "author": "Irugaa0",
+    "rewardType": "Other",
+    "source": "",
+    "title": "It's a PAl's World",
+    "uid": "noRWo",
+    "loca": "Palworld",
+    "lewd": false,
+    "scope": "Quick",
+    "objectives": [
+      {
+        "reward": 20,
+        "type": "Credits",
+        "value": "Capture at least 10 differents Creatures."
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Capture at least 30 differents Creatures."
+      },
+      {
+        "reward": "Creature Defense + 10 credits",
+        "type": "Other",
+        "value": "Capture at least 10 Creatures of the same tipe."
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Capture at least 10 Creatures of the same tipe 10 times"
+      },
+      {
+        "reward": 30,
+        "type": "Credits",
+        "value": "Capture 10 Alpha Pals"
+      },
+      {
+        "reward": 30,
+        "type": "Credits",
+        "value": "Capture 10 Lucky Pals"
+      },
+      {
+        "reward": 20,
+        "type": "Credits",
+        "value": "Catch a Wandering Merchant"
+      },
+      {
+        "reward": 20,
+        "type": "Credits",
+        "value": "Catch a Pal Merchant"
+      },
+      {
+        "reward": "50 Credits plus two lures",
+        "type": "Other",
+        "value": "Catch a Black Marketeer"
+      },
+      {
+        "reward": 10,
+        "type": "Credits",
+        "value": "Acquire 10 Skill Fruits"
+      },
+      {
+        "reward": "20 credits plus one skill tree that anyone can eat from in your Demiplane/Dungeons",
+        "type": "Other",
+        "value": "Acquire 100 Skill Fruits"
+      },
+      {
+        "reward": "50 credits plus one upgrade in your binding or refund.",
+        "type": "Other",
+        "value": "Capture one of each of the 126 Pals available."
+      },
+      {
+        "reward": "100 credits plus two upgrade in your bindings or refund.",
+        "type": "Other",
+        "value": "Capture 10 of each of the 126 Pals available."
+      },
+      {
+        "reward": "One Lure of your choice",
+        "type": "Perks",
+        "value": "Breed 10 Pals"
+      },
+      {
+        "reward": "Two Lures and One Control of your choice",
+        "type": "Perks",
+        "value": "Breed 100 Pals"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Survive there for 30 days."
+      },
+      {
+        "value": "Capture at least 5 differents Creatures."
+      },
+      {
+        "value": "Reach at Least Level 25"
+      },
+      {
+        "value": "Set at least one Base."
+      },
+      {
+        "value": "Defeat One raid boss"
+      }
+    ],
+    "budget": 200,
+    "desc": "Palworld, one of ours more recent acquired worlds, were pokemon look-alike roams freely with miniguns and rocket-launchers. A survival based world where one has to work hard to collect resources  to create a safe base, tools and weapons to protect themselves from poachers, zealots, dangerous beasts and sex crazed pals.  \n\nGo there for a quick one month stay and write a report (Fanfic-Chapter) for us."
+  },
+  {
+    "reward": 50,
+    "image": "https://static.wikia.nocookie.net/dungeon-ni-deai-o-motomeru/images/1/10/Orario.png",
+    "author": "Irugaa0",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Is it Wrong to Have a Banquet In The Dungeon? Part2",
+    "uid": "ivscu",
+    "loca": "Danmachi",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": 40,
+        "type": "Credits",
+        "value": "Dont take any companion above Tier-4 with you"
+      },
+      {
+        "reward": 30,
+        "type": "Credits",
+        "value": "Join a Familia"
+      },
+      {
+        "reward": 30,
+        "type": "Credits",
+        "value": "Do NOT join a Familia"
+      },
+      {
+        "reward": "Drain Defense or 15 credits",
+        "type": "Perks",
+        "value": "Live for 10 or more Days straight inside the Dungeons"
+      },
+      {
+        "reward": "Land Talent or 30 credits",
+        "type": "Perks",
+        "value": "Live for 30 or more Days straight inside the Dungeons"
+      },
+      {
+        "reward": "30 credits per species.",
+        "type": "Other",
+        "value": "Taste\" OR Taste A Woman/Man of each species"
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Taste\" OR Taste A Female/Male GOD"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Reach the 62th Floor or lower"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Reach the Middle Floors"
+      },
+      {
+        "value": "Reach the Lower Floors"
+      },
+      {
+        "value": "Reach the Deep Floors"
+      },
+      {
+        "value": "Reach the Deep Floors"
+      },
+      {
+        "value": "Reach at least the 38th Floor."
+      },
+      {
+        "value": "Collect and Eat at least new 2 species of Fauna or Flora in each available floor."
+      },
+      {
+        "value": "Collect and Eat at least 2 species of flora not present in regular worlds."
+      },
+      {
+        "value": "Kill at Least 1 species of Dragon."
+      },
+      {
+        "value": "You MUST have Body Defence for this mission."
+      }
+    ],
+    "budget": 400,
+    "desc": "Well you already should be familiar with the drill here.  Dungeons are magical place filled with adventures, yada, yada and the most import, INGREDIENTS.\n\nSo, we looking for people with an Really adventurer spirit but also a Gourmand, SPECIALLY the ones with a iron stomach."
+  },
+  {
+    "reward": "1x (Limited) Hyperbolic Time Chamber Pocket Dimension",
+    "image": "",
+    "author": "imafuturecorpse",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Time Enough to Grow",
+    "uid": "JMycf",
+    "loca": "Dragonball",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "Mapper App now shows Dragonballs location.",
+        "type": "Other",
+        "value": "Convince Bulma to lend you a Dragon Radar."
+      },
+      {
+        "reward": "1x Bulma Briefs",
+        "type": "Companions",
+        "value": "Steal Dragon Radar"
+      },
+      {
+        "reward": "1x Added Potential (Dragonball Ki)",
+        "type": "Perks",
+        "value": "Convince Goku either to help you search for the Dragonballs or to lend you his Four Star Ball."
+      },
+      {
+        "reward": "1x Template Stacking I (Son Gohan, Son of Goku)",
+        "type": "Perks",
+        "value": "Steal Goku's Four Star Ball."
+      },
+      {
+        "reward": "10x Senzu Beans",
+        "type": "Other",
+        "value": "Climb Korin's Tower"
+      },
+      {
+        "reward": "1x Full Potential Unlock & 10x Senzu Bean Seeds",
+        "type": "Other",
+        "value": "Convince Korin to allow you to drink the Ultra Divine Water, and survive the experience."
+      },
+      {
+        "reward": "1x Full Potential Unlock & 10X Senzu Bean Seeds",
+        "type": "Other",
+        "value": "Steal the Ultra Divine Water, drink it, and survive the experience."
+      },
+      {
+        "reward": "1x Added Potential (Namekian Regeneration)",
+        "type": "Perks",
+        "value": "Convince Kami or Mr. Popo or Both to help you search for the Dragonballs."
+      },
+      {
+        "reward": "1x Wish (If it is within Shenron's Power to grant it)",
+        "type": "Other",
+        "value": "Make a wish on the Dragonballs"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Either by hook or by crook you must acquire the Dragonballs."
+      }
+    ],
+    "budget": 0,
+    "desc": "Do you find yourself struggling to find the time for a montage? Or maybe you've grown so strong that conventional methods of training fail to provide any results? If so, then THIS is the mission that you have been waiting for!\n\nShould you accept this mission you will be temporarily transported to Universe 7's Earth sometime between Age 756 and 761, or simply known as the time-skip between Dragonball and Dragonball Z. Earth is at peace, Piccolo has yet to be redeemed, Goku has just settled down with Chichi, and it will be years before the Saiyans arrive to threaten Earth.\n\nYour mission is therefore a simple one: Acquire Earth's Dragonballs through any means you deem fit. In return you will be awarded a copy of the famous Hyperbolic Time Chamber which functionally will act as a pocket dimension independent of any current or future pocket dimensions you may come to possess.\n\nOnce acquired, you will be able to summon the Hyperbolic Time Chamber from any flat surface you so desire. Functionally, the Chamber is an exact copy of the canon Hyperbolic Time Chamber, but limited to an omnilateral 10km^3 surrounding the entrance. At the core of the Chamber is housing with beds, baths and kitchenette that can accommodate two individuals at a time. Because of the potential danger to the contractor's life, the housing area has been made impervious to every kind of damage we at the company can conceivably foresee.\n\nUnlike its canon counterpart, your personal Hyperbolic Time Chamber is limited in its capacity to speed up your relative time. This is due to the sheer energy required to dilate a contractor's local time. By default the Chamber accelerates time by a factor of 2:1, and can maintain these levels for a total of 48 local hours before a mandatory rest period is enacted to allow the Chamber to recharge its reserve power. The total rest period is equal to double the time spent in training within the Chamber. Such that if the User spends the local equivalent of the full 48 hours inside the chamber, then outside the Chamber the User must wait an additional 48 hours of real world time waiting for the Chamber to recharge.\n\nShould the User wish to increase the Chamber's time dilation effect or the length spent in chamber an alternative power source must be provided. The Chamber was made with compatibility in mind, and any conceivable alternative power source is possible, be it a fusion reactor, a sun, an enemy, a retinue member or even from your own reserves. However, this is extremely taxing and the efficiency takes a sharp decline when using alternative power sources. If using an alternative power source, half of the energy used is wasted for each increase of the time dilation effect by a whole number unit, or by every 12 hours that the duration effect is lengthened.\n\nConversely, the gravitational effects are extremely efficient. You may increase the gravity up to 100Gs without any strain on the reserves. Every additional hundred Gs will reduce the duration the Chamber may be used by 10%. Alternative power sources can fuel the gravity effects with only 15% of energy used wasted.\n\nShould the Chamber run out of reserve power, and the alternative power source used lose 95% of their reserves then the User and any of their retinue sharing the Chamber will be ejected back into the real world safely. Note: the \"Real World\" is hereby classified as whichever world the User entered the Chamber from. User May not enter the Chamber from another pocket dimension.\n\nUpon completion of this mission you will be returned to your previous world."
+  },
+  {
+    "reward": "The targets Intensity aligned Capture OR Sell value (whichever is higher) + 15 extra credits, and a TS I of a randomized non-IMG tier \"Schemer\" archetype",
+    "image": "https://images2.imgbox.com/7a/5c/60eaeyxm_o.jpg",
+    "author": "Randomas6413",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Trust Issues",
+    "uid": "HqqEd",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "Covert Talent + Performance Talent, OR 20 credits",
+        "type": "Perks",
+        "value": "Expose the targets potential dirty laundry to the public and ruin their reputation in the process completely. In the case that they have none, or if the amount is negligible, you may fabricate some if they're convincing enough."
+      },
+      {
+        "reward": "A tier 1 clone of the traitor and TS I and II of their original self for a retinue member (can not be used on the clone)",
+        "type": "Other",
+        "value": "Let the chosen traitors demise be at the hands of the one they would canonically stab in the back."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "The chosen target of your mission cannot be changed once they've been chosen."
+      },
+      {
+        "value": "This mission will be considered failed if the target dies without suffering through complete humiliation."
+      },
+      {
+        "value": "The target you've chosen cannot be of any of the Imaginary tiers."
+      },
+      {
+        "value": "This mission can only be taken in worlds where a traitor/betrayer exists."
+      },
+      {
+        "value": "The targeted traitor character is immune to being captured during the course of this mission, but may still be affected by lures and other unique Binding effects for the purpose of the missions success."
+      }
+    ],
+    "budget": 0,
+    "desc": "We all have our own views on treacherous villains; people willing to achieve something at the expense of a friend or a loved one they've manipulated and usually serve as a Plot Twist Villain in their given medium. One of your fellow contractors happen to be one of those that dislike this trope, and has proposed a mission if you're interested.\n\nThe mission in question? Chose a \"traitor\" type character to target and make them suffer complete and utter humiliation before ending their life. This can take however much time you need as long as the end result has them go through something worse and more humiliating than they did in their original canon iteration."
+  },
+  {
+    "reward": "Every participants worth in Intensity aligned capture credits as well as their captures, and 50 credits extra.",
+    "image": "https://images2.imgbox.com/cc/61/tKRrlBQ0_o.jpg",
+    "author": "Randomas6413",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Elden Beach Episode",
+    "uid": "IzdoK",
+    "loca": "Elden Ring",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "Missions credit reward is raised by 75 credits, and the respect of Godfrey, Radahn and Morgott.",
+        "type": "Other",
+        "value": "Ensure Godfrey, the First Elden Lord, joins the beach party by besting him in open combat. (the latter reward for this objective is given at the moment of its completion)"
+      },
+      {
+        "reward": "Missions credit reward is raised by 100 credits, a Red Wolf of Radagon familiar and a bonsai tree styled after the Erdtree.",
+        "type": "Other",
+        "value": "Get Marika and Radagon to participate at the beach party as separate entities."
+      },
+      {
+        "reward": "Missions credit reward is raised by 200 credits, and a Mending Rune of a God of your choice (can be from your retinue) is made.",
+        "type": "Other",
+        "value": "Have the Fell God, the Formless Mother, the Frenzied Flame or other confirmed gods participate in the beach episode, somehow. (For this purpose empyreans like Malenia, inheritors like the Tarnished and followers like Mohg do not count towards this goal.)"
+      },
+      {
+        "reward": "Missions credit reward is raised by 75 credits and the credit requirement for the next Dragon Heritage perk is reduced by 25%.",
+        "type": "Other",
+        "value": "Make contact with Dragonlord Placidusax and have him and at least one of his children/dragon followers come to the beach party. (any four-legged dragon besides Placidusax counts towards this goal)"
+      },
+      {
+        "reward": "Missions credit reward is raised by 50, and the complete and utter devotion of Those Who Live In Death.",
+        "type": "Other",
+        "value": "Somehow bring back Godwyn the Golden and Lichdragon Fortissax from death and have them be a part of the beach party."
+      },
+      {
+        "reward": "TS 1 and 2 of a Soulsborne protagonist of your choice and an indestructible \"Git Gud\" t-shirt fit for you.",
+        "type": "Other",
+        "value": "Let The Tarnished come along and join you at the beach."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You will host a beach party in Elden Ring. This beach party can either be held on one of the beaches in Limgrave or in your Demiplane if it has one."
+      },
+      {
+        "value": "This mission ends the day after the beach party is held, which is also when you receive the rewards for said mission."
+      },
+      {
+        "value": "For the duration of this mission demigods, godlike entities and their equals cannot be captured through bindings or confessions, this condition does not extend to other inhabitants of the Lands Between."
+      },
+      {
+        "value": "Participants of the beach episode will have to be either bribed or willingly go, both personal and third party mind control for this purpose ends in an automatic failure of the mission."
+      },
+      {
+        "value": "This is a beach episode, therefore each and every participant will have to willingly abstain from attacking each other, regardless of loyalties and faction feuds. Sparring, playful brawling and other acts of non-lethal combat however is allowed."
+      },
+      {
+        "value": "Rewards from Additional objectives is given at the same time as the main reward."
+      },
+      {
+        "value": "For this missions completion, a total of 4 Shard Bearers will have to participate in this beach party."
+      },
+      {
+        "value": "The time of the beach party can be decided whenever, however once decided the time for it is set in place and a countdown will begin."
+      },
+      {
+        "value": "This mission cannot be taken, or will automatically fail, if less than 4 Shard Bearers are alive."
+      }
+    ],
+    "budget": 0,
+    "desc": "The \"beach episode\", usually only reserved for the slice-of-life genre of anime but sometimes include the strangest exceptions. It's a time during summer when all the protagonists, side characters and sometimes even the antagonistic villains partake in activities such as sunbathing, swimming in the sea, building sand castles or play beach volleyball, with the latter usually having teams that oppose each other character-wise.\n\nYou undoubtedly already know all of this, Contractor, so we'll just give you this mission already to not waste time: your mission, should you choose to accept it, will be to host a beach party in the world of Elden Ring and have at least 4 shard bearers partake in it. Whichever way you accomplish this feat does not matter, as long as you give us the Elden Ring Beach Episode we've always wanted!"
+  },
+  {
+    "reward": "700 credits, the full powered Template of the Tarnished (Lord of Frenzied Flame) and a copy of Leyndell and the burnt Erdtree appears in your Demiplane/Dungeon.",
+    "image": "https://images2.imgbox.com/a5/54/TLiOBvem_o.jpg",
+    "author": "Randomas6413",
+    "rewardType": "Other",
+    "source": "",
+    "title": "May Chaos Take the World!",
+    "uid": "KgWbW",
+    "loca": "Elden Ring",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "80 credits, and Maliketh is turned into a chibi-fied version of himself.",
+        "type": "Other",
+        "value": "Successfully take control of the Rune of Death from Maliketh without killing or maiming him."
+      },
+      {
+        "reward": "175 credits, and 10 copies of each version of Patches from throughout FromSoftwares games are spawned into the Lands Between.",
+        "type": "Other",
+        "value": "Mindbreak Marika and/or Radagon into sexual obedience and let Patches have a turn with them."
+      },
+      {
+        "reward": "60 credits, Fertility Calibration II x4 and a Gigantic Crayfish mount as a summonable familiar.",
+        "type": "Other",
+        "value": "Increase the Giant Crayfish population by eight times their original amount in each of their home regions, and ensure that this destabilizes their respective regions ecosystems as a consequence."
+      },
+      {
+        "reward": "130 credits, Mind Defense (or 25 additional credits) and 5 tons of Unalloyed Gold.",
+        "type": "Other",
+        "value": "Kill Miquella and destroy the Haligtree without casting blame on yourself."
+      },
+      {
+        "reward": "80 credits, and a retinue member of your choice gains Template Stacking I and II of Clownpiece (Touhou).",
+        "type": "Other",
+        "value": "Create an atomic bomb and successfully nuke Caelid with it before Malenia rots the region with Scarlet Aeonia."
+      },
+      {
+        "reward": "50 credits, and a copy of Solid Snakes infinite ammo bandana (works only on weapons that Solid Snake has wielded).",
+        "type": "Other",
+        "value": "Introduce guns into the Lands Between, and have them be widespread enough that they are seen as common weaponry among the natives."
+      },
+      {
+        "reward": "The mythical Jar of Dirt, capable of holding any amount of 'filth' put into it.",
+        "type": "Other",
+        "value": "Rehabilitate Dung Eater into an acceptable, working member of society."
+      },
+      {
+        "reward": "35 credits, and Severus Snapes copy of Advanced Potion Making, with the recipes replaced by ingredients of the Lands Between.",
+        "type": "Other",
+        "value": "Put Thops in charge of the Academy of Raya Lucaria and declare him king of Liurnia."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You will arrive during the Shattering, specifically at the start of the war that would break out as a result of Marika shattering the Elden Ring."
+      },
+      {
+        "value": "For the duration of this mission, whether you are qualified or not, you will be seen as the candidate for the position of Lord of Frenzied Flame in the eyes of the natives."
+      },
+      {
+        "value": "To succeed in this mission you need to gather all shards of the Elden Ring, create a Frenzied Flame inspired Mending Rune and begin an Age of Anarchy through it."
+      },
+      {
+        "value": "This Age of Anarchy must be one where law and order does not exist. One where the world is neither destroyed nor healed but instead filled with an eternally perpetual cycle of chaos."
+      },
+      {
+        "value": "Destruction of the world before it's transformation into a chaotic hellscape as per the original Frenzied Flame ending is not allowed, you're here to destabilize the world not completely annihilate it."
+      }
+    ],
+    "budget": 0,
+    "desc": "Successfully accomplished in the game but not a popular choice, the Frenzied Flame Ending is one that rarely gets chosen outside of either nihilism or completionism. And the state the world was in made it much too easy, at least according to one contractors opinion.\n\nAnd as such, a request was made, processed and handed to any who might pick it up, which is where you come in. Your mission is to venture into the Lands Between and achieve a True Age of Anarchy during the Shattering through the Frenzied Flame. Good luck Contractor, and may chaos take the world!"
+  },
+  {
+    "reward": "300 credits, Corruption defense x2 (or 80 credits) and a Mending Rune of Blood.",
+    "image": "https://images2.imgbox.com/e4/a8/96sRBTuY_o.jpg",
+    "author": "Randomas6413",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Legacy of the Fell Prince",
+    "uid": "MjJFe",
+    "loca": "Elden Ring",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "70 credits, five bars of Unalloyed Gold and in-depth lessons with each on their unique incantation based magics.",
+        "type": "Other",
+        "value": "Become the wing-man of incest, ensure Mohg and Miquella goes further than some mere political marriage, instead going out on dates, developing feelings of love and eventually willingly binding themselves to each other in holy matrimony."
+      },
+      {
+        "reward": "80 credits, Communication Talent and a \"How To-\" guide book on Waterfowl Dance and Scarlet Rot.",
+        "type": "Other",
+        "value": "Convince Malenia, Blade of Miquella that Mohg marrying her twin brother is a perfectly valid plan and not at all something that should be stopped. Oh, and also to not kill Mohg, maybe start with that."
+      },
+      {
+        "reward": "40 credits, an omen bairn that lets you summon the Fell Twins once a day and a cosmetic Erdtree replica for your Demiplane.",
+        "type": "Other",
+        "value": "Convince Morgott, the Omen King to acknowledge his brothers right to rule and attend his wedding as his best man."
+      },
+      {
+        "reward": "A normal ink stamp that tattoos the words \"Maidenless\" unto any surface in a language of your choosing (can be changed at will).",
+        "type": "Other",
+        "value": "Befriend your colleague, White-Mask Varré."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You will enter a fresh Lands Between at any chosen time after Miquellas kidnapping."
+      },
+      {
+        "value": "You will need to infiltrate Mohgwyn Palace and become Mohgs direct advisor. While he'll be more likely to hear you out than his canon counterpart, you're on your own in convincing him to hire you."
+      },
+      {
+        "value": "The Mohgwyn dynasty needs to be acknowledged by at least one major province and two shard bearers, neither Miquella nor Mohg count towards this condition."
+      },
+      {
+        "value": "Figure out a way to wake up Miquella from his eternal slumber."
+      },
+      {
+        "value": "Malenia will sense Miquellas awakening and wake up from her own beauty sleep when this happens, we personally wish you good luck."
+      },
+      {
+        "value": "Miquella doesn't need to enjoy it, but he at the very least needs to consent to Mohgs schemes. While Miquella needs to be conscious for this the nature of how his consent is given is up to you."
+      },
+      {
+        "value": "Mohg and Miquella are immune to all capture methods during the course of this mission including Love Confession, however they may still be affected by Lures."
+      },
+      {
+        "value": "This mission will finish the moment that the Mohgwyn dynasty has been fully established, with Miquellas consenting betrothal to Mohg, the Formless Mothers successful integration into the dynasty and the Lands Betweens acceptance of Mohgs right to rule."
+      },
+      {
+        "value": "This mission is rendered a failure if either Mohg or Miquella die and remain dead without a way to bring them back to life"
+      }
+    ],
+    "budget": 0,
+    "desc": "\"Dearest lambkin, as you may know, Luminary Mohg wishes to create his own dynasty, Mohgwyn, away from the apathetic Two Fingers and their Golden Order, with the Formless Mother as his patron goddess. However, the empyrean Miquella has yet to awaken and accept the Lord of Bloods affections, and the world actively spurns the lord for his omen heritage and...peculiar interests. As I am not the most eloquent when it comes to counselling, I ask you to help lord Mohg in this endeavor. Yours truly, Varré.\"\n\nA contractor once received this letter in his version of the Lands Between through a series of butterfly effects, and although he decided not to pursue it we believe it might serve as an entertaining quest.\n\nThe mission is relatively simple, you are to successfully infiltrate Mohgwyn Palace as a noble and help counsel Mohg himself in the creation of his dynasty of blood, separate of the Golden Order. It should have enough legitimacy to subvert the Greater Will but also be functionable enough to not immediately fall apart if you decide to leave. This includes making sure his and Miquellas relationship is not seen in a negative light, while also making sure that the empyrean consents.\n\nThese objectives can be achieved in a number of ways and you may take as much time as you need, but we expect the Moghwyn Dynasty to come out on top in the end with your direct involvement."
+  },
+  {
+    "reward": "Automatic capture of Wendy once she becomes the Herrscher of Finality.",
+    "image": "https://i.imgur.com/tPH0veM.png",
+    "author": "cthulhu",
+    "rewardType": "Companions",
+    "source": "",
+    "title": "Perfect Storm",
+    "uid": "ohOfF",
+    "loca": "Honkai Impact 3rd",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "Both ranks of Possession Defense and one rank of Stress Defense, or 20 Credits",
+        "type": "Perks",
+        "value": "Have the Herrscher of the Void claim Kiana's body as her own."
+      },
+      {
+        "reward": "One rank of Stress and Addiction Defense, or 12 Credits",
+        "type": "Perks",
+        "value": "Have the Herrscher of Thunder run rampant without Mei suppressing her"
+      },
+      {
+        "reward": "One rank of Drain Defense, or 20 Credits",
+        "type": "Perks",
+        "value": "Have Seele or Seele manifest as the Herrscher of Death and side against humanity"
+      },
+      {
+        "reward": "One rank of Wyldscape Defense, or 40 Credits",
+        "type": "Perks",
+        "value": "Have Ana and Chen to manifest fully as Ice and Earth respectively and run rampant."
+      },
+      {
+        "reward": "One rank of Destiny Defense, or 40 Credits",
+        "type": "Perks",
+        "value": "Prevent the defeats of the Herrschers of Corruption and Dominance"
+      },
+      {
+        "reward": "One rank of Destiny Defense, or 40 Credits",
+        "type": "Perks",
+        "value": "Allow the Herrscher of Binding to manifest at all, and have them side against humanity."
+      },
+      {
+        "reward": "One rank of Paradox Defense, or 40 Credits",
+        "type": "Perks",
+        "value": "Have at least five Herrschers willingly surrender their authority/core to Wendy in order to propel her to Finality."
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Wendy defeats Kevin, or bypasses him entirely"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You cannot capture Wendy prior to her becoming Herrscher of Finality, bar love confession"
+      },
+      {
+        "value": "Capturing Wendy via love confession forfeits the mission.  You'll have to do it again.  Hope you bought Blank Slate."
+      },
+      {
+        "value": "Because you cannot capture Wendy, you cant just TS or PS her upwards.  Train her manually."
+      }
+    ],
+    "budget": 0,
+    "desc": "Don't you just hate it when someone has the chance to be amazing, they get all hyped up as a massive threat, and then just.  Nothing?  They go down easy to show how awesome someone else is.  It's so damn disappointing.  That's what I feel like when I think of Wendy.  The first Herrscher?  Was never evil, his kid and replacement drops black holes on peoples asses.  Great guy, loves mecha.  The second Herrscher?  Murdered a nation and was fully sane as she did it, then flew to the moon so she could orbitally bombard the planet, amongst other things.  Third Herrscher?  Eh, bit wimpy.  Mutually abusive relationship with her girlfriend, but was never really presented as a villain so I'll let it pass.  The fourth?  Wendy?  Spent years getting gaslit by her boss so that she'd become the fourth Herrscher, and then went down like a chump.  Compared to her predecessors, she was weak as all get out.\n\nBut that isn't always true.  See, there was another version of this universe, called Gun Girls Z.  Or Honkai 2nd, if you prefer.  In that universe, Wendy had enough range to choke someone out by denying them her air from the far side of the planet.  She had time to power up and to flex.  I want you to do that to the local version of Wendy.  In fact, I want you to make her the most dangerous thing on the planet - the Herrscher of Finality.  Lets go all in with this one."
+  },
+  {
+    "reward": "Starscourge Radahn and Miquella",
+    "image": "https://cdnb.artstation.com/p/assets/images/images/050/062/071/large/thomas-siagian-radahn-fest2.jpg",
+    "author": "SittingBear",
+    "rewardType": "Companions",
+    "source": "",
+    "title": "Radahn Festival 2 Consort Boogaloo",
+    "uid": "amfwc",
+    "loca": "Elden Ring",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Gather More Participants to join the Second Radahn Festival (Minimum five extra people)"
+      },
+      {
+        "reward": 200,
+        "type": "Credits",
+        "value": "Somehow someway bring in Dark Souls characters to join the fun. (Minimum three characters)"
+      },
+      {
+        "reward": 1,
+        "type": "IMG Tickets",
+        "value": "Get Malenia Blade of Miquella to join the party but make sure she fights on your side and not just join Miquella"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "All festival Participants from first Festival must join. (If several participants bit the dust find a suitable replacement example Alexander Jar with a another jar warrior.)"
+      }
+    ],
+    "budget": 0,
+    "desc": "Demigod Starscourge Radahn is one of the best boss battles FromSoftware has ever made. Everything from the lore, difficulty, setting, cinematics, and spectacle work together to create a memorable encounter.\n\nThe Radahn Festival is one of the most epic funerals in gaming history. \n\nSadly Radahn isn't dead yet! Becoming the Consort of Miquella shocked the world. And angered a few as well. Your mission gather the crew from the first festival and make your way over to Consort Radahn and have an epic showdown between demigod vs festival participants. Make it a spectacle as big as the first one."
+  },
+  {
+    "reward": "A Full Copy Of The Village Will Be Added To Demiplane",
+    "image": "https://cdna.artstation.com/p/assets/images/images/044/947/582/large/noman-rahmani-hidden-city-under-shades.jpg",
+    "author": "JinxedKnight",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Hidden Village And Shinobi",
+    "uid": "nqpgC",
+    "loca": "Naruto",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": "A Copy Of Any Shinobi who Isn't Currently In Existence",
+        "type": "Other",
+        "value": "Make A Hidden Village"
+      },
+      {
+        "reward": "Covert Talent For Free",
+        "type": "Other",
+        "value": "Become The Most Feared Group In The World"
+      },
+      {
+        "reward": "Any T6 Or Lower Assassin/Ninja/Theif",
+        "type": "Companions",
+        "value": "Be True Shinobi"
+      },
+      {
+        "reward": "TS 1&2 Of 2 Different Power Systems",
+        "type": "Other",
+        "value": "Use Only In World Powers"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Village Must Not Be Found"
+      },
+      {
+        "value": "Identity Mustn't Be Known"
+      },
+      {
+        "value": "All Members Of The Village Can Not Be Discovered"
+      },
+      {
+        "value": "Must Enter Before The Founding Of Other Villages"
+      }
+    ],
+    "budget": 245,
+    "desc": "Sick and tired of these fake \"Shinobi\", I think it's about time they are shown true Ninja/Assassins/Shinobi.\n\nVillage's that anyone can find, they wouldn't know stealth if it smacked them in the face.\n\nBe true shadows, make them realise what they should be instead of brutes"
+  },
+  {
+    "reward": "40 credits once you accept this mission and 40 more credits once the war is ove IF your side wins the conflict.",
+    "image": "https://lieber.westpoint.edu/wp-content/uploads/2020/12/wagner-russian-PMCs.jpg",
+    "author": "Irugaa0",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Mercenary Work",
+    "uid": "pVJJc",
+    "loca": "Generic",
+    "lewd": false,
+    "scope": "Quick",
+    "objectives": [
+      {
+        "reward": 20,
+        "type": "Credits",
+        "value": "Kill the enemy leadership"
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Kill 50 or more enemies by yourself."
+      },
+      {
+        "reward": "A Perk of your choice.",
+        "type": "Perks",
+        "value": "Kill 100 or more enemies by yourself."
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Command and Lead the capture of an enemy city."
+      },
+      {
+        "reward": 50,
+        "type": "Credits",
+        "value": "Have the biggest overhall number of kills or militar merits."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Choose one side and fight for it until either your side wins or loses."
+      },
+      {
+        "value": "Any crimes commited in the duration of the mission will be pardoned."
+      },
+      {
+        "value": "You Can take up to 9 companions with the a maximum tier equal to the third most powerful companion tier in that setting, to a minimum of tier-3."
+      }
+    ],
+    "budget": 80,
+    "desc": "Mercenaries are soldiers willing to fight in any war or battlefield as long the payment are worth the risks. And it just happens that the world that you currently in is in need of them. two or more countries are in either in a open small scale war against each other or in the middle of a civil war, and they are hiring. \n\nJoin one the sides of the war and help it to archive victory by any neccessary means. "
+  },
+  {
+    "reward": "The crew of the International Space Station in the flesh, plus the spirits of all their descendants; now even those unaffected by the Mass Petrification can live out a new life with their loved ones in Stone World!",
+    "image": "",
+    "author": "Th3140nly",
+    "rewardType": "Companions",
+    "source": "",
+    "title": "Hard Work or Harem",
+    "uid": "lXHnd",
+    "loca": "Dr. Stone",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "You are now immune to boredom, able to dream up almost VR-like scenarios in your head to entertain 1-self, & do not need sleep.",
+        "type": "Other",
+        "value": "Man of Stone; rather than drop / inserting into the world, you will spend up to 3700 or 700 years petrified before either waking up on the Mainland or Treasure Island due to a lucky drip of anti-petrification formula ... so long as you can stay conscious!"
+      },
+      {
+        "reward": "'Murican Oil: places you raise a fort / town / etc. are abundant in nat. resources even if they weren't before / shouldn't be.",
+        "type": "Other",
+        "value": "Man of Iron: instead of arriving / waking up in Japan yourself or with the Kingdom of Science / Might's help, you instead find yourself in America with Dr. Xeno and his colleagues. Perhaps you can convince him not to try shooting the Japan team on arrival?"
+      },
+      {
+        "reward": "You know how to make De-Petri formula, but the process can only make so much at a time. Best use it to ensure genetic diversity.",
+        "type": "Other",
+        "value": "Man of Gold: you wake on the ISS as a robot created by fellow AI \"Rei\" at least a few decades after the human crew left in order to help her keep the ISS intact & operational as long as possible. You're also driven to ensure humans survive sans inbreeding."
+      },
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Life After People: the timeline is divided by 10; Mass Petrification occurred 370 years ago, the 2nd Petrification of Treasure Island occurs 70 years before 'present', etc. This means more {-}21st century signs of Mankind still exist when every-1 wakes."
+      },
+      {
+        "reward": "\"Ishigami\" Rei in her human body, with her intelligence spread out across multiple drone-forms, self-redesigned for repair work.",
+        "type": "Companions",
+        "value": "No Synthesis Ending: instead of \"Why-men\" seeking to tempt target species to build more of their kind, they're weapons used by \"space dragons\" like the 1 Rei found to remove life-forms that may interfere with world-colonising. They'll arrive in 300 years."
+      },
+      {
+        "reward": 1,
+        "type": "IMG Tickets",
+        "value": "Tokyo Souls: above 2 objectives are combined; not only do the giant aliens arrive as self-petrified meteors in 30 years, many humans wake 70 years pre-Senku by accident / ISS / descendants' effort, so the Why-men send attack-creatures to deal with you."
+      },
+      {
+        "reward": "You can become a living stone golem with potentially infinite potential for genetic re-/engineering; must discover own limit{s}.",
+        "type": "Other",
+        "value": "Greyscale: you ARE the aliens; a sapient viral cell-mass responsible for Mass-Petrify w/o being provoked by some country's military scientists ala 2/3 Senku-theories of the Mass-Petrification's origins, though the alien 1/s may still apply to your origins."
+      },
+      {
+        "reward": 1,
+        "type": "IMG Tickets",
+        "value": "Kingdom of All-Might: the world of Dr Stone is fused with My Hero Academia per Magma's SMASH moments; not only do Quirks add a huge variable & pos. explain i.e. how ISS descendants didn't inbreed to death, Magma's is somehow equal / related to One for All."
+      },
+      {
+        "reward": "Shin-Momotaro, a Ripple user whose Stand, \"3 Bears & 10k Rats\" (Michael Rocks), is made by 4 beasts of wind, fire, earth & water",
+        "type": "Companions",
+        "value": "Momo's North Star Adventure: turning various gags / references real, Dr Stone merges Jojo's Bizarre Adventure with the Petrification being linked to the Pillar Men somehow e.g. Kars returns; if Ob.4 / 6 is taken, it also merges with Fist of the North Star."
+      },
+      {
+        "reward": "1 IMG ticket, & Senku gains resources +/- knowledge to build a 2nd portal to find allies with help via Ace having a snail-phone.",
+        "type": "Other",
+        "value": "One Stone: at some point after finding a Why-Man, Senku un/intentionally makes a portal to the One Piece world that opens in the middle of Marineford during the Summit War; while this saves Ace from Akainu, the World Government can now invade Stone World."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "No technology more advanced than stone age / basic physics can be accessed or brought along; if you know how, you can build it, but no re-/buying things from the Catalogue!"
+      }
+    ],
+    "budget": 100,
+    "desc": "Dr. Stone claims to be about Science, but honestly it's closer to Salacious given the number of, ah, rather suggestive shots regarding the female characters, though in fairness it has plenty action / education scenes and parodies / leans on the 4th wall of Shounen tropes as much as it relies on them, such as the sheer speed and relative ease with which the main cast reaches Moon Landing tech-levels.\n\nYour job is to either join Team Hard Work and progress a plot that may be slightly altered per your Objective choices below, or join Team Harem and have fun messing about in a Stone World."
+  },
+  {
+    "reward": 50,
+    "image": "",
+    "author": "Dionesia",
+    "rewardType": "Credits",
+    "source": "",
+    "title": "Fishy Business",
+    "uid": "MJWDQ",
+    "loca": "Worm",
+    "lewd": false,
+    "scope": "Quick",
+    "objectives": [
+      {
+        "reward": "The child and or children born of this union will be given a free TS of Leviathan",
+        "type": "Other",
+        "value": "Impregnate, or be Impregnated by Leviathan"
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Fuck the Endbringer, Leviathan"
+      },
+      {
+        "value": "Do not use any form of Calibration to make Leviathan smaller and or more humanoid than it originally is"
+      },
+      {
+        "value": "Do not alter your own overall size or scale. If you were already one, it's fine, but no turning yourself into a Kaiju for this!"
+      }
+    ],
+    "budget": 100,
+    "desc": "Hey there, Contractor! We return with yet another trial and experiment of the fundamental laws of reality!\nIf it exists, will a Contractor fuck it?\n\nHere's the deal. Fuck Leviathan. If you are not already in the presence of the Endbringer, one will be spawned within a reasonable distance from you and given Company-based protections that prevent it from being eliminated, captured or damaged in any way except through Sexual Conquest\nOr, you can back out and we'll retrieve the thing before charging you 15 Credits for Mission Failure\n\nRemember to have fun!"
+  },
+  {
+    "reward": "Kid at Heart; no matter how many worlds you visit or how many eons pass you by, you retain an ability to enjoy the simple things in life, be amazed by the mundane, and make your own fun out of sticks and stones. The infinite multiverse can never be boring!",
+    "image": "https://i.kym-cdn.com/photos/images/newsfeed/001/832/815/e88.jpg",
+    "author": "Th3140nly",
+    "rewardType": "Other",
+    "source": "",
+    "title": "You are the Kid Next Door",
+    "uid": "kZanh",
+    "loca": "Codename: Kids Next Door",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "Devils Nephew; you may / have already attain/ed pyrokinesis & some shapeshifting ala Father, with blue / other fire if you wish.",
+        "type": "Other",
+        "value": "OC #1: you are not a fresh KND boot-camp graduate, but ex-Operative-turned-teenager Ray Uno, formerly \"Numbuh Null\", brother of Nigel Uno / Numbuh 1. Whether you get on badly as Numbuh 5 & her sister Cree or had Reasons for leaving KND is wholly up to you."
+      },
+      {
+        "reward": "Filling In; you have the narrative ability to insert yourself into any group w/o question unless you openly betray / etc. them.",
+        "type": "Other",
+        "value": "OC #2: you are already a KND operative ... sort of; you name is Stanley, your Numbuh is 6, and you are a skunk. Literally. Unlike the canon Stanley, you shall be more involved with Sector V's adventures as they actually remember to take you with them more."
+      },
+      {
+        "reward": "Rainbow Monkey; no matter how much you get ignored, laughed at, kicked round or shoved aside, peace-talks eventually can happen.",
+        "type": "Other",
+        "value": "OC #3: you are not KND nor do you wish to be; you are a free young spirit of boundless optimism who would much rather everyone put down their arms and got along, with a knack for being in the right places and times to try playing peacemaker for age-groups."
+      },
+      {
+        "reward": "Negative: every person you defeat, either in battle or something/s they enjoy doing, spawn a Negative doppelganger loyal to you.",
+        "type": "Other",
+        "value": "OC #4: you are not KND nor will you ever be; you are a tyrant youth who will crush Kid, Teen and Adult alike if they get in your way, either because they annoy you, you get bored, or you have a Plan of some type/s. Whatever it is, all 3 groups dislike you."
+      },
+      {
+        "reward": "Just a Villain for fun; gain the narrative power of Sat. Morning Villain; your schemes never really hurt any1, it's all in jest!",
+        "type": "Other",
+        "value": "OC #5: how dare the KND interrupt your peaceful walk with an exploding letter?! That's it, you're joining Adult Villains United as the dreaded ... Postman! Kids beware, for you will take their precious dogs & turn them into fighting monsters! Mwahahahaha!"
+      },
+      {
+        "reward": "Dragon Heritage - choose an Element; if you already have 1 / 2 / more, you can still take this & add to your 'natural' arsenal.",
+        "type": "Perks",
+        "value": "OC #0: you are part of the Uno family curse, a black blob-thing made by Grandfather to infect his wife & create Grandmother, making their sons extra-powerful. It only sorta worked, & you were discarded when she passed away. Now you're back ... & vengeful."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "As per the blurb on the letter you found one day while out walking after un/intentionally dropping into a fairly normal-looking 21st century world, you have been invited to the KND; you must be a pre-teen or able to pass as one to accept the invitation{s}."
+      },
+      {
+        "value": "If you are not or cannot somehow transform into a pre-teen, or if you can but enjoy a bit of Lore, you can instead have been Incarnated in one of our New Life choices in the Objectives below; you can add to our profiles, but do fan-wank responsibly please!"
+      }
+    ],
+    "budget": 100,
+    "desc": "Welcome, Agent, to the KND; as you know, our organization is dedicating to fighting Adult Tyranny, from the injustice of school-night curfews and homework, to the schemes of child-hating super-villains like Mr. Boss and Father, as well as Teenage Traitors and, admittedly, the odd antics of our own kind.\n\nIf you are reading this, you have been successfully chosen from amongst our new Street Training And Yardstick (S.T.A.Y.) program --- our apologies that the usual Arctic Treehouse training base was not available at the time, Professor XXXL made a right mess of things with his latest scheme against the Parent Teachers Association, for which he has been reprimanded --- and we eagerly await your arrival at the co-ordinates on the back of this message for transport to Moon Treehouse HQ to have you sworn in and select your Numbuh, the vaunted codename by which you shall be known to us.\n\nIf you are not one of our newly KND operatives, this message's Bio-Organic Organisational General Evaluation Recorder (B.O.O.G.E.R.) device will by the time you finish reading this explode, infiltrator! "
+  },
+  {
+    "reward": "A Door to the \"Western Restaurant Nekoya\" will appear in your Pocket Apartment/Demiplane, with the usual weekly appearance in Canon. You can move the door around as you wish while it's tangible.",
+    "image": "https://randomc.net/image/Isekai%20Shokudou/Isekai%20Shokudou%20-%2002%20-%20Large%2021.jpg",
+    "author": "myfunvideos",
+    "rewardType": "Other",
+    "source": "https://youtu.be/sDpZwBWkG-s?si=KDH05jRcyb2Ag4_o&t=732",
+    "title": "That Tasted Delicious! I Want Another Bowl! Umai!",
+    "uid": "LQFlX",
+    "loca": "Restaurant to Another World",
+    "lewd": false,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "Instant Capture of Kuro.",
+        "type": "Companions",
+        "value": "Challenge Kuro to a Chicken Curry eating contest and win! Remember, she's a Dragon God and genuinely loves eating this spicy dish. You will be hard-pressed to beat her in this game."
+      },
+      {
+        "reward": "Master's appreciation and Trust.",
+        "type": "Other",
+        "value": "Find a way to generate food ingredients for the Master besides the potatoes he gets from the Other World already. He will accept any applicable ingredients for the dishes and drinks he makes."
+      },
+      {
+        "reward": "Instant Capture of Red Queen",
+        "type": "Companions",
+        "value": "Generate more than a dozen large stock pots of Beef Stew to give to the Red Queen for three instances for Free! She's a Dragon God, so she won't mind the tribute, no matter how excessive the amount will be."
+      },
+      {
+        "reward": "Increases Lure effectiveness by 0.5% (Repeatable)",
+        "type": "Other",
+        "value": "Invite some of your Retinue to enjoy the food with you. Make it a date, whether romantic or simply hanging out."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Must have a Pocket Apartment/Demiplane before accepting the Mission."
+      },
+      {
+        "value": "Must not cause hostile trouble for other customers or you risk getting kicked out by the Master or Kuro, resulting in an immediate Failure."
+      },
+      {
+        "value": "You'll need to find the Door from the Other World. The Master's World doesn't count as that would be too easy."
+      },
+      {
+        "value": "Must actually eat and relax in restaurant to count it as one of the days for Mission's success."
+      }
+    ],
+    "budget": 150,
+    "desc": "As you know, the door to the \"Western Restaurant Nekoya\" goes to the Other World, where there is all manner of fantasy creatures and people. From Humans, Elves, Monsters, Fairies, Halflings, Mermaids, Sirens (not to be confused with Mermaids. They're basically harpies that also sing charmingly), Vampires, Dragons, and so much more.\n\nOne such gimmick of this setting is that the door, yes, the DOOR, knows where to place itself to get a customer into the Restaurant. It's not even one door, but multiple doors that just seem to appear out of thin air. It has even shot itself into space just to appear before Kuro, on that world's moon.\n\nAnd it only appears on the Day of Saturday (weirdly specific, but what can you do?) or, as they call it, the Day of Satur. When the customer leaves after having eaten, they are transported to the specific place they first came from, which is very useful, but can cause confusion if the wrong person were to open the door and the right person went through only to end up in the different door.\n\nWhy are we telling you this? Well, you're objective is simple and will allow you to relax from the assumed hardship you've had to endure during your time as a Contractor.\n\nEssentially, you must go into the \"Western Restaurant Nekoya\" from the Other World and be considered it's regular. Yes, that's right. You must go there, spend money, eat your fill, and enjoy yourself. Chat with the other customers and have a good time. Come hungry, leave happy, as the saying goes.\n\nTo be considered a regular, you must come to this Restaurant on seven Saturdays...in a row.\n\nGood luck, Contractor. Although, given your track record, you probably won't need it, will you?"
+  },
+  {
+    "reward": "Perfected Butcher Template (Bodyjack anyone within your galaxy or the equivalent upon being slain, favouring your killer, recent attacker and people physically nearby); Transport to a world of your choice.",
+    "image": "https://images2.imgbox.com/20/25/PB9Yts0g_o.png",
+    "author": "vhawkes",
+    "rewardType": "Other",
+    "source": "",
+    "title": "Butcher's Bet",
+    "uid": "RKmWa",
+    "loca": "Worm",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": 100,
+        "type": "Credits",
+        "value": "Butcher's mantle is inherited at least 100 times, of which at least 60 inheritors are Thinkers, Tinkers and Masters."
+      },
+      {
+        "reward": "Destiny Defense (x1); Double the reward received for Objective #1.",
+        "type": "Other",
+        "value": "Butcher's Mantle is inherited at least 50 times, but none of the inheritors is an 'immortal' cape, like Crawler or Alabaster."
+      },
+      {
+        "reward": "Pick 1: Clone of Citrine/Jeanne Wynn with Template Stacking 2 (Accord); Clone of Noelle Meinhardt/Echidna with her power fixed.",
+        "type": "Other",
+        "value": "Persuade Accord to assist you in this endeavour."
+      },
+      {
+        "reward": "Pick 1: A 50% Discount to your next 3 Heritage non-IMG purchases; a Voucher for Intensity Buyback x1.",
+        "type": "Other",
+        "value": "Persuade Cauldron to assist you in this endeavour."
+      },
+      {
+        "reward": 1,
+        "type": "IMG Tickets",
+        "value": "Persuade the Simurgh to assist you in this endeavour."
+      },
+      {
+        "reward": 1,
+        "type": "IMG Tickets",
+        "value": "Scion/Zion Inherits."
+      },
+      {
+        "reward": 1,
+        "type": "IMG Tickets",
+        "value": "Make Earth-Bet a better place as a direct result of completing this mission."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You will enter canon Worm (DR 7) at any point between the founding of Teeth and Butcher XV (Cherish) being ferried away from Brockton Bay. When exactly, or whether you're a native or not, is up to you."
+      },
+      {
+        "value": "Universal Calibration, Meta-Shift and similar world- and timeline-altering effects will be negated for the duration of this mission."
+      },
+      {
+        "value": "Capturing locals, introducing new power systems, or (permanently) becoming Butcher will result in mission failure."
+      },
+      {
+        "value": "Upon mission completion, you and your retinue will be removed from this specific iteration of Worm, your access to it barred permanently."
+      },
+      {
+        "value": "This mission is considered completed when you have either completed the Main Objective, any number of Additional Objectives, and (the original) date of Gold Morning arrives."
+      },
+      {
+        "value": "You can finish this mission prematurely if you have completed the Main Objective and at least two Additional Objectives."
+      },
+      {
+        "value": "Possession Defence will, at Resistance level, make you a lower priority for Butcher's bodyjacking than anyone else, even if you killed him yourself. At Immunity level, you will be skipped over entirely, much like Endbringers."
+      }
+    ],
+    "budget": 0,
+    "desc": "One of our more affluent clients has made a series of commissions for world alterations. Apparently, he wants it done the old-fashioned way, so Universal Calibration and similar are not an option. That's where you come in.\n\nFor this specific mission, it is required that the cape, Butcher, be elevated to the level of a society-shaping S-class threat, not unlike the Endbringers. The client plans on using this world in the future, so it is also requested that no captures be made or new power systems be introduced into the world."
+  },
+  {
+    "reward": 1,
+    "image": "https://media.tenor.com/images/e9d2e81bbfab46f31717efbd71021e38/tenor.gif",
+    "author": "chill builder",
+    "rewardType": "IMG Tickets",
+    "source": "",
+    "title": "The Strongest",
+    "uid": "OZZcT",
+    "loca": "High School DxD",
+    "lewd": false,
+    "scope": "Grand",
+    "objectives": [
+      {
+        "reward": 500,
+        "type": "Credits",
+        "value": "Let the entire (supernatural) world know you are the Strongest."
+      },
+      {
+        "reward": 2,
+        "type": "IMG Tickets",
+        "value": "Announce your Title by beating up Great Red and/or Ophis."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "Become the Strongest in the world of Highschool DxD."
+      },
+      {
+        "value": "You don't have to enter the world at 8th or 9th Tier, but you have to rise and become the Strongest without anyone realizing if you choose to do that."
+      }
+    ],
+    "budget": 500,
+    "desc": "'O Contractor, we here have noticed recently that there seems to be startingly few individuals who make it very far within the world were breasts defy reason. People seem to think that Tier 6 or 7 powers are enough to get by in this world and to be fair, it usually is.\n\nBut that's not really entertaining enough for our Company Directors.\n\nSo, we have decided to help out the brave few who want more than just the waifus and instead want the power. And Waifus. All We ask of you is to make it known you are the Strongest and have many entertaining fights."
+  },
+  {
+    "reward": 6,
+    "image": "",
+    "author": "Th3140nly",
+    "rewardType": "IMG Tickets",
+    "source": "",
+    "title": "War-Hammering",
+    "uid": "nueOn",
+    "loca": "Warhammer 40K",
+    "lewd": true,
+    "scope": "Standard",
+    "objectives": [
+      {
+        "reward": "Once 50% of the original human population is infected, your hybrids will discover an Escort-class ship with loyal cyber-crewmen.",
+        "type": "Other",
+        "value": "EASY MODE: start as a 4th-Generation human-born Stealer newly arrived on a pre-Industrial human world; sharing genes with the locals means you will be able to turn Gen-0s into Gen-1s and your Gen-2s will be able to mutate into / like Gen-3s & birth Gen-4s."
+      },
+      {
+        "reward": "Once 50% of the ship's population is part of your Cult, the vessel --- a Dauntless-class Light Cruiser --- becomes a Sweet Ride.",
+        "type": "Other",
+        "value": "HARD MODE; start as a Purestrain Ymgarl Genestealer on a derelict being explored by Imperial Navy personnel; your biology lets you/r descendants shapeshift & cuts out 1 or 2 gens ala Easy Mode, but you're ever-hungry & need to infiltrate the Imps to leave."
+      },
+      {
+        "reward": "All your offspring gain military training from birth via the cult psi-link; BONUS, psi-link convinces most G-3s are just Ab-men.",
+        "type": "Other",
+        "value": "Turn an entire Imperial Guard regiment into Infected / Gen-0s; BONUS, have Gen-2 / G-3s fight openly as \"Abhumans\" w/o discovery / attempted purging by Imperial authorities for 6 battles."
+      },
+      {
+        "reward": "One of your ships' logs reveals the location of a lost Ark Mechanicus specialising in bio-science, aiding your Cult's evolution.",
+        "type": "Other",
+        "value": "Take over a fleet consisting of 1 human Grand Cruiser, 2 Battle Cruisers, 4 Light Cruisers and 8 Escorts through Infection &-or Hybrids replacing the crew."
+      },
+      {
+        "reward": "Your Cult becomes capable of producing it's own gene-seed & can add new organs easily; men become supermen, women produce new GS",
+        "type": "Other",
+        "value": "Infect an entire Company of Space Marines and bend their wills to your psychic network, the \"Meld Mind\"; if 1 commits spiteful suicide, you must find a replacement until you have 100 Astartes pawns; Librarians are extra tricky, but worth it as Meld amps."
+      },
+      {
+        "reward": "[A] the more rivals you subdue, the more resistant you are to Xenos/Chaos mind-attack; [B] all Generations can swap sex at will.",
+        "type": "Other",
+        "value": "Absorb a rival Genestealer Cult into your own by  [A] slaying it's Patriarch & making it's descendants submit, or [B] somehow turning it into a Matriarch & 'adopting' their kids (repeatable)"
+      },
+      {
+        "reward": "Once 50% of the WAAAGH! has been Infected, Gen-1s onward become capable of spreading spores, turning targets to Gen-0s en masse.",
+        "type": "Other",
+        "value": "Absorb an Ork WAAAGH! / settlement big enough to threaten at least 1 non-Greenskin-occupied world into your family; you will need to keep Infected individuals away from Uninfected, as Orks can instinctively tell when one of their own becomes \"Un-Orky\"."
+      },
+      {
+        "reward": "[A] your Cult can hide their body / mind GS traits in 3rd DNA helix, [B] Gen-1+ spit hybridising fluid, [C] can make Wraithbone.",
+        "type": "Other",
+        "value": "Take over an Eldar Corsair outpost, Dark sub-port of Commorragh, Exodite \"primitive\" Maiden World, or high-tech Craftworld; need Psi-stealth expertise to avoid tipping off even psychic civilians / be good at hiding DNA to avoid tipping off a Haemonculus."
+      },
+      {
+        "reward": "Your Cult becomes capable of using the Warp more safely, from FTL to magic like Daemon-summons; Meld-Mind becomes a nascent God.",
+        "type": "Other",
+        "value": "Subvert at least 5 Chaos Cults; 1 worshipping Chaos Undivided, 1 worshipping Khorne, 1 worshipping Tzeentch, 1 worshipping Nurgle, and 1 Worshipping Slaanesh, into your family. Recommend a lot of rival Gene-stealers / mind-defences taken before attempting."
+      },
+      {
+        "reward": "Your Cult becomes resistant to effects of the Warp; Obj.9 = new Hybrids increase godliness; decillions = Daemon Prince-level.",
+        "type": "Other",
+        "value": "Absorb an entire temple's worth of Adeptus Sororitas / Sisters of Battle into your family; each member of the covenant must give birth to at least 1 hybrid before Mission is considered complete, mere Infection is not enough to prove these new Gen-0s faith."
+      }
+    ],
+    "conditions": [
+      {
+        "value": "You will be Inserted into a 'grunt' Gene-stealer, a creature capable of ripping open even Space Marine armour with it's bare claws & infecting fe/male & Other genders of justabout any species, even Orks, who in WH40K are made of and reproduce via fungus!"
+      },
+      {
+        "value": "You must use this \"inborn universal compatibility\" to start your own Gene-stealer Cult, a multi-generational hybrid cabal intended to infiltrate worlds slated for consumption by the wider Tyranid hive-fleets & act as psychic lighthouses to guide them in."
+      },
+      {
+        "value": "Unlike canon Gene-stealers, ALL Cults start with a Generation 0 of infected 'pure' target species, a Gen-1 that looks almost identical bar little things like baldness / sharp teeth & tough nails, a Gen-2 with more alien-ness ala extra arms / leg-joints ..."
+      },
+      {
+        "value": "... a Gen-3 with all the above plus sub-/supra-dermal chitin & outright talons on fingers & toes, & finally a 4th Generation which looks like a 'pure' gene-stealer but carries host genes & some morphological differences from Gen-0 ala Deacon VS Xenomorph."
+      },
+      {
+        "value": "The infected Zeroth Generation is naturally best for hiding in plain sight, however the higher a hybrid's generational number, the stronger they are physically and psionically; likewise, the more 'family members' the founding gene-stealer has, the more ..."
+      },
+      {
+        "value": "... powerful they become, growing in stature and psychic might, 100s or even just dozens of alien-blooded descendants --- a pair of Gen-1s making Gen-2s, who mate to get Gen-3s, who in turn make 4th Gen --- sizing them up large / faster than 1000 Gen-0s."
+      },
+      {
+        "value": "Furthermore, while the 1st generation must use wigs / teeth-flattening files / etc. to hide their 'odder' features, the 2nd-generation can un-digitigrade their legs and merge their arms together like Grievous to pass as host-species,& Gen-0 are hosts ..."
+      },
+      {
+        "value": "... with the only thing giving them away being their infected reproductive systems, something that can be hidden even from Eldar magi-science by having alien sperm / eggs / other go 'inert'; Gen-3 meanwhile can do the opposite, mutating into forms more ..."
+      },
+      {
+        "value": "... akin to the wider Tyranid species' many, varied and universally lethal combat forms, ala the canon Hybrid Metamorphs; by contrast, Genestealer Aberrants are no longer accidents but a type of MM, only Mutants / the Warp birthing Chaos Spawn-like THINGS."
+      }
+    ],
+    "budget": 1000,
+    "desc": "Let's be honest, the 41st Millennium is not exactly what most non-bloodthirsty Contractors would consider a \"good time\", what with the rampant wars, intolerance for anything and everything even slightly out of an oft-conflicting & hypocritical avalanche of different governing bodies definition of \"human\", the all-of-time-and-a-good-deal-of-space-spanning Chaos Gods driving people to do insane and stupid things ... well, more insane and stupid than what the \"gods of Order\" indoctrinate folks to do or which folks do on their own, anyway ... and the endless list of definitely-not-human creatures who alongside the above dark deities actually justify about 50% of said madness and idiocy; Slaanesh, the god/dess of Excess, is for instance at first a good initial choice for the average Contractor's definition of \"fun times\" ... until you realise the drugs are laced with warp-dust that will render your waifu horrific to look at, the party-girls are cross-dressing boys / vice-versa but always NOT the gender you want because Chaos, and as for the sex, well, eventually you're cursed to grow bored of it, and between you and me even we at the Company have a hard time getting the Mental & Soul defences up to snuff to avoid that and worse ... likewise, the Dark Eldar might seem attractive as a species of hedonistic space-elves who abhor anything Chaotic, but frankly treat matching or exceeding the agents of Excess and the consequences for doing so like a subconscious life's ambition, not to mention they consciously are aware if they don't, their souls will get nom'ed by said god/dess, which is another problem for our insurance policies.\n\nThankfully, there is a 3rd option; Tyranids, a species of world-munchers best described as \"Starship Troopers' Arachnids on crack\", except for a sub-faction / caste / whatever, the Gene-stealers, who are best compared to \"that one Xenomorph-Predator hybrid on coke\", except their phallus-esque secondary mouths may as well be actual phalluses and the babies are both genuine hybrids and are not designed to treat burst out their dad's chests or mom's belly bones / flesh-first, but instead go from one into / out of the other like a normal kid in a not-so-normal reproductive cult, since their 3rd, alien parent also mind-controls the 2 parents & all their other partners into 1 big happy family.\n\nInterested? Then welcome to PROJECT TYRANNY, a Company-sponsored initiative to take all the above and make it ours --- er, yours; we would of course merely be benefitting from a slightly less homicidal Warhammer galaxy --- because frankly, if you want to enjoy sexy-times with your new psuedo-alien harem, taking over at least one version of this version of the Milky Way is a must ... but at least you'll get a better deal than the other factions; the big bad Hive-Mind that would normally turn the founder of the 'family' on his less-alien spawn and help the swarm-fleets nom them after the rest of the world has been weakened by the cult is no match for Company Defences! ... just remember to purchase them BEFORE taking this mission, yeah? "
+  },
+  {
     "reward": 50,
     "image": "",
     "author": "Dionesia",
@@ -18062,11 +19192,12 @@
   },
   {
     "reward": "700 credits, the full powered Template of the Tarnished (Lord of Frenzied Flame) and a copy of Leyndell and the burnt Erdtree appears in your Demiplane/Dungeon.",
-    "image": "https://cdn.donmai.us/sample/6e/83/__tarnished_hyetta_lord_of_the_frenzied_flame_bloody_finger_hunter_yura_and_shabriri_elden_ring_drawn_by_boiled_egg27__sample-6e8359be95d2efd9335df1ed361714b9.jpg",
+    "image": "https://images2.imgbox.com/a5/54/TLiOBvem_o.jpg",
     "author": "Randomas6413",
     "rewardType": "Other",
     "source": "",
     "title": "May Chaos Take the World!",
+    "uid": "sWLlk",
     "loca": "Elden Ring",
     "lewd": false,
     "scope": "Grand",
@@ -18130,8 +19261,7 @@
       }
     ],
     "budget": 0,
-    "desc": "Successfully accomplished in the game but not a popular choice, the Frenzied Flame Ending is one that rarely gets chosen outside of either nihilism or completionism. And the state the world was in made it much too easy, at least according to one contractors opinion.\n\nAnd as such, a request was made, processed and handed to any who might pick it up, which is where you come in. Your mission is to venture into the Lands Between and achieve a True Age of Anarchy during the Shattering through the Frenzied Flame. Good luck Contractor, and may chaos take the world!",
-    "uid": "sWLlk"
+    "desc": "Successfully accomplished in the game but not a popular choice, the Frenzied Flame Ending is one that rarely gets chosen outside of either nihilism or completionism. And the state the world was in made it much too easy, at least according to one contractors opinion.\n\nAnd as such, a request was made, processed and handed to any who might pick it up, which is where you come in. Your mission is to venture into the Lands Between and achieve a True Age of Anarchy during the Shattering through the Frenzied Flame. Good luck Contractor, and may chaos take the world!"
   },
   {
     "reward": "A copy of Obelus, the magical sentient chain as your familiar.",
@@ -27529,11 +28659,12 @@
   },
   {
     "reward": "300 credits, Corruption defense x2 (or 80 credits) and a Mending Rune of Blood.",
-    "image": "https://cdn.donmai.us/original/e8/f8/__miquella_and_mohg_lord_of_blood_elden_ring_drawn_by_sunnycomplex__e8f82ac781e77e0c1c1720aa808acf8e.jpg",
+    "image": "https://images2.imgbox.com/e4/a8/96sRBTuY_o.jpg",
     "author": "Randomas6413",
     "rewardType": "Other",
     "source": "",
     "title": "Legacy of the Fell Prince",
+    "uid": "tVSlP",
     "loca": "Elden Ring",
     "lewd": false,
     "scope": "Grand",
@@ -27589,8 +28720,7 @@
       }
     ],
     "budget": 0,
-    "desc": "\"Dearest lambkin, as you may know, Luminary Mohg wishes to create his own dynasty, Mohgwyn, away from the apathetic Two Fingers and their Golden Order, with the Formless Mother as his patron goddess. However, the empyrean Miquella has yet to awaken and accept the Lord of Bloods affections, and the world actively spurns the lord for his omen heritage and...peculiar interests. As I am not the most eloquent when it comes to counselling, I ask you to help lord Mohg in this endeavor. Yours truly, Varré.\"\n\nA contractor once received this letter in his version of the Lands Between through a series of butterfly effects, and although he decided not to pursue it we believe it might serve as an entertaining quest.\n\nThe mission is relatively simple, you are to successfully infiltrate Mohgwyn Palace as a noble and help counsel Mohg himself in the creation of his dynasty of blood, separate of the Golden Order. It should have enough legitimacy to subvert the Greater Will but also be functionable enough to not immediately fall apart if you decide to leave. This includes making sure his and Miquellas relationship is not seen in a negative light, while also making sure that the empyrean consents.\n\nThese objectives can be achieved in a number of ways and you may take as much time as you need, but we expect the Moghwyn Dynasty to come out on top in the end with your direct involvement.",
-    "uid": "tVSlP"
+    "desc": "\"Dearest lambkin, as you may know, Luminary Mohg wishes to create his own dynasty, Mohgwyn, away from the apathetic Two Fingers and their Golden Order, with the Formless Mother as his patron goddess. However, the empyrean Miquella has yet to awaken and accept the Lord of Bloods affections, and the world actively spurns the lord for his omen heritage and...peculiar interests. As I am not the most eloquent when it comes to counselling, I ask you to help lord Mohg in this endeavor. Yours truly, Varré.\"\n\nA contractor once received this letter in his version of the Lands Between through a series of butterfly effects, and although he decided not to pursue it we believe it might serve as an entertaining quest.\n\nThe mission is relatively simple, you are to successfully infiltrate Mohgwyn Palace as a noble and help counsel Mohg himself in the creation of his dynasty of blood, separate of the Golden Order. It should have enough legitimacy to subvert the Greater Will but also be functionable enough to not immediately fall apart if you decide to leave. This includes making sure his and Miquellas relationship is not seen in a negative light, while also making sure that the empyrean consents.\n\nThese objectives can be achieved in a number of ways and you may take as much time as you need, but we expect the Moghwyn Dynasty to come out on top in the end with your direct involvement."
   },
   {
     "reward": 5,
@@ -30325,11 +31455,12 @@
   },
   {
     "reward": "The targets Intensity aligned Capture OR Sell value (whichever is higher) + 15 extra credits, and a TS I of a randomized non-IMG tier \"Schemer\" archetype",
-    "image": "https://cdn.donmai.us/sample/f2/10/__volo_magolor_and_dimentio_pokemon_and_7_more_drawn_by_samusan100__sample-f210c8eea29e9c103b280b8693ccd063.jpg",
+    "image": "https://images2.imgbox.com/7a/5c/60eaeyxm_o.jpg",
     "author": "Randomas6413",
     "rewardType": "Other",
     "source": "",
     "title": "Trust Issues",
+    "uid": "gNlRJ",
     "loca": "Generic",
     "lewd": false,
     "scope": "Standard",
@@ -30363,8 +31494,7 @@
       }
     ],
     "budget": 0,
-    "desc": "We all have our own views on treacherous villains; people willing to achieve something at the expense of a friend or a loved one they've manipulated and usually serve as a Plot Twist Villain in their given medium. One of your fellow contractors happen to be one of those that dislike this trope, and has proposed a mission if you're interested.\n\nThe mission in question? Chose a \"traitor\" type character to target and make them suffer complete and utter humiliation before ending their life. This can take however much time you need as long as the end result has them go through something worse and more humiliating than they did in their original canon iteration.",
-    "uid": "gNlRJ"
+    "desc": "We all have our own views on treacherous villains; people willing to achieve something at the expense of a friend or a loved one they've manipulated and usually serve as a Plot Twist Villain in their given medium. One of your fellow contractors happen to be one of those that dislike this trope, and has proposed a mission if you're interested.\n\nThe mission in question? Chose a \"traitor\" type character to target and make them suffer complete and utter humiliation before ending their life. This can take however much time you need as long as the end result has them go through something worse and more humiliating than they did in their original canon iteration."
   },
   {
     "reward": "You will gain Gol D. Roger Template at his Peak.",
@@ -30539,7 +31669,7 @@
     "rewardType": "Other",
     "source": "",
     "title": "The Ultimate Dragon Emperor",
-    "uid": "cyJCL",
+    "uid": "SyRPu",
     "loca": "High School DxD",
     "lewd": false,
     "scope": "Grand",
@@ -30553,16 +31683,6 @@
         "reward": "Improved Sacred Gear Extractor allows you to remove a Sacred Gear without killing the bearer.",
         "type": "Other",
         "value": "Save Asia Argento before her Sacred Gear can be stolen"
-      },
-      {
-        "reward": "Gain the ability to create Evil Piece Sets minus the pawns. Must complete one set before starting next.",
-        "type": "Other",
-        "value": "Convince Asia to become a Reincarnated Devil under a Pureblood King."
-      },
-      {
-        "reward": "Gain the ability to create Brave Saint Suits, must complete Suit before starting another.",
-        "type": "Perks",
-        "value": "Convince Asia to become a Brave Saint under a Seraph"
       },
       {
         "reward": "20 credits to be spent on Slightly Used versions of the deceased. May purchase any number of them.",
@@ -30580,9 +31700,9 @@
         "value": "Deflower Rias Gremory before Grayfia can interfere."
       },
       {
-        "reward": "Template Stacking (Pawn Promotion)",
-        "type": "Perks",
-        "value": "Fight alongside Rias as a Pawn in her Rating game again Riser without being made a Devil"
+        "reward": "Able to use Promotion power at will.",
+        "type": "Other",
+        "value": "Fight alongside Rias as a Pawn in her Rating game against Riser"
       },
       {
         "reward": "Instant Capture & Binding of Rias Gremory & Ravel Phenex or the equivalents in credits if they are already part of the retinue.",
@@ -30615,7 +31735,7 @@
         "value": "Defeat Kokabiel when he appears in Kuoh before Vali can get to him"
       },
       {
-        "reward": "Time-Savers for whole Retinue",
+        "reward": "Time-Savers for whole Retinue or 10 credits",
         "type": "Perks",
         "value": "Befriend Gasper and get him to start training"
       },
@@ -30662,7 +31782,7 @@
       {
         "reward": "Template Stacking (Illegal Move Triana)",
         "type": "Perks",
-        "value": "Fight as a Pawn for Rias Gremory in the tournament of Young Kings without becoming a Devil:"
+        "value": "Fight as a Pawn for Rias Gremory in the tournament of Young Kings"
       },
       {
         "reward": "Unlocks the ability to have Multiple sets of Wings to show your level of power.",
@@ -30688,11 +31808,16 @@
         "reward": "Elder Dragon (Hope)",
         "type": "Perks",
         "value": "Defeat or Befriend Great Red"
+      },
+      {
+        "reward": "Your set of Evil Pieces is all mutated.",
+        "type": "Other",
+        "value": "Become a High Class Devil"
       }
     ],
     "conditions": [
       {
-        "value": "Time Limit: 1 Year in the Starting universe and 3 Years of active Contractor Time Limit. Travel to other Worlds (not Pocket Dimensions or Demiplanes) creates a time differential where 1 day for the Contractor is 1 minute in his home universe."
+        "value": "Time Limit: 2 Yeara in the Starting universe and 6 Years of active Contractor Time Limit. Travel to other Worlds (not Pocket Dimensions or Demiplanes) creates a time differential where 1 day for the Contractor is 1 minute in his home universe."
       },
       {
         "value": "Time Travel in Starting Universe is not permitted."
@@ -30710,14 +31835,11 @@
         "value": "Bindings work only on the willing or on opponents beaten in a fair contest."
       },
       {
-        "value": "Issei cannot become a Devil, Angel, or Fallen Angel."
-      },
-      {
         "value": "All targets are 1-3 Tier levels higher than normal (to a maximum of 9), however once captured that bonus disappears."
       }
     ],
     "budget": 0,
-    "desc": "The Client is tired of seeing universes where Issei Hyoudou is cucked or marginalized. Your goal here is to reincarnate as Issei Hyoudou and become the Ultimate Red Dragon Emperor. The key to being the Red Dragon Emperor is remembering they are the Dragon of Domination. You cannot rise to greatness as someone else’s slave. You are bound to the credo of: 'The Dragon of Domination makes his mates submit, rules over his followers, conquers his enemies, and crushes those that would usurp him. How he does this is irrelevant: Power, Violence, Manipulation, Seduction, or Love. The only forbidden path is Cruelty.' The Client is very demanding, but also very generous supplying a healthy signing bonus despite the intensity he is demanding. \n\nPrimary Goals:\nBe Recognized as a High Class Being\nCreate a Harem (Minimum of 5) of satisfied Women who are not purchased Waifus.\nDefeat at least 5 High Class Beings (Kokabiel, Loki, Diodora, Sairaorg or the such) in solo combat. Yes fighting them after they have fought others is allowed as long as your fight is alone. \nDefeat either the White Dragon Emperor or the current Prison Dragon Wielder in single combat. \nCreate a Dragon Faction\n\nStart:\nStarting Universe: Variant Highschool DxD World. Danger Rating 10\nIntensity: Legacy Intensity, Me and my Girlfriends mode, with the modifiers of Limited World Travel, Intact Weaknesses, Live In Interesting times, Non-Exponential Template Stacking Cost, and Limitless Power Source.\nOrigin: Must take Substitute Issei Hyoudou (Tier 8) with Dragon Template. Issei will have just the Boosted Gear but it will be fully unlocked. \nBonus of one IMG Ticket to be spent on Ancestral Diversity. \nMust take the Dragon Heritage: Dragon Heart (Fire) and Dragon Scales (Fire), Dragon Aura, Dragon Thrall, Dragon Blood, Dragon Hoard, Dragon Cabin, Dragon Bifurcation, Dragon Break, and Double Dragon (Element of Choice). \nMust take the Transhuman Heritage: First Augmentation, Network Glamour Manipulation, Corporal Transcendence Engine, and Evolutionary Engine Array. Must purchase prerequisites as well\nPatron: The Embodiment of Domination. Grants a 50% rebate on all Bindings and Lures and a 1 Tier Reduction in purchasing Slightly Used Waifus. Contractor cannot purchase fresh Clones, sell Waifus/Husbandos, or be Submissive to their Retinue. Captures can only be attained only from Domination be it soft or hard. Mental and Physical Torture of Retinue and Followers is not allowed. \nStarting Date is Beginning of the Rias Gremorys Final year at Kuoh Academy. \n"
+    "desc": "The Client is tired of seeing universes where Issei Hyoudou is cucked or marginalized. Your goal here is to reincarnate as Issei Hyoudou and become the Ultimate Red Dragon Emperor. The key to being the Red Dragon Emperor is remembering they are the Dragon of Domination. You cannot rise to greatness as someone else’s slave. You are bound to the credo of: 'The Dragon of Domination makes his mates submit, rules over his followers, conquers his enemies, and crushes those that would usurp him. How he does this is irrelevant: Power, Violence, Manipulation, Seduction, or Love. The only forbidden path is Cruelty.' The Client is very demanding, but also very generous supplying a healthy signing bonus despite the intensity he is demanding. \n\nPrimary Goals:\nBe Recognized as a Satan Class Devil\nCreate a Harem (Minimum of 6) of satisfied Women who are not purchased Waifus.\nDefeat at least 6 High Class Beings (Kokabiel, Loki, Diodora, Sairaorg or the such) in solo combat. Yes fighting them after they have fought others is allowed as long as your fight is alone.\nMust gather 6 Longinus class Sacred Gears uses in your retinue (Issei does count) \nDefeat either the White Dragon Emperor or the current Prison Dragon Wielder in single combat. \nCreate a Dragon Faction\n\nStart:\nStarting Universe: Variant Highschool DxD World. Danger Rating 10\nIntensity: Legacy Intensity, Me and my Girlfriends mode, with the modifiers of Ancestral Diversity, Limited World Travel, Intact Weaknesses, Interest Due, Live In Interesting times, and Non-Exponential Template Stacking Cost.\nOrigin: Must take Substitute Issei Hyoudou (Tier 8) with Dragon Template. Issei will have just the Boosted Gear but it will be fully unlocked. \nBonus of 1000 credits to be spent on Ancestral Diversity. \nMust take the Dragon Heritage: Dragon Heart (Fire) and Dragon Scales (Fire), Dragon Aura, Dragon Thrall, Dragon Blood, Dragon Hoard, Dragon Cabin, Dragon Bifurcation, Dragon Break, and Double Dragon (Element of Choice). \nMust take the Transhuman Heritage: First Augmentation, Network Glamour Manipulation, Corporal Transcendence Engine, and Evolutionary Engine Array. Must purchase prerequisites as well\nStarting Date is Beginning of the Rias Gremorys Final year at Kuoh Academy. \n"
   },
   {
     "reward": 10,
@@ -34882,11 +36004,12 @@
   },
   {
     "reward": "Every participants worth in Intensity aligned capture credits as well as their captures, and 50 credits extra.",
-    "image": "https://cdn.donmai.us/sample/86/56/__ranni_the_witch_malenia_blade_of_miquella_miquella_queen_marika_the_eternal_starscourge_radahn_and_9_more_elden_ring_drawn_by_ekrea_jan__sample-8656395a47fee2f236cd88e8e6077f92.jpg",
+    "image": "https://images2.imgbox.com/cc/61/tKRrlBQ0_o.jpg",
     "author": "Randomas6413",
     "rewardType": "Other",
     "source": "",
     "title": "Elden Beach Episode",
+    "uid": "SMKrh",
     "loca": "Elden Ring",
     "lewd": false,
     "scope": "Standard",
@@ -34904,12 +36027,12 @@
       {
         "reward": "Missions credit reward is raised by 200 credits, and a Mending Rune of a God of your choice (can be from your retinue) is made.",
         "type": "Other",
-        "value": "Have the Fell God, the Formless Mother, the Frenzied Flame or other confirmed gods participate in the beach episode, somehow. (For this purpose empyreans like Malenia, inheritors like the Tarnished and followers of a god does not count towards this goal.)"
+        "value": "Have the Fell God, the Formless Mother, the Frenzied Flame or other confirmed gods participate in the beach episode, somehow. (For this purpose empyreans like Malenia, inheritors like the Tarnished and followers like Mohg do not count towards this goal.)"
       },
       {
         "reward": "Missions credit reward is raised by 75 credits and the credit requirement for the next Dragon Heritage perk is reduced by 25%.",
         "type": "Other",
-        "value": "Make contact Dragonlord Placidusax and have him and at least one of his children/dragon followers come to the beach party. (any four-legged dragon besides Placidusax counts towards this goal)"
+        "value": "Make contact with Dragonlord Placidusax and have him and at least one of his children/dragon followers come to the beach party. (any four-legged dragon besides Placidusax counts towards this goal)"
       },
       {
         "reward": "Missions credit reward is raised by 50, and the complete and utter devotion of Those Who Live In Death.",
@@ -34952,8 +36075,7 @@
       }
     ],
     "budget": 0,
-    "desc": "The \"beach episode\", usually only reserved for the slice-of-life genre of anime but sometimes include the strangest exceptions. It's a time during summer when all the protagonists, side characters and sometimes even the antagonistic villains partake in activities such as sunbathing, swimming in the sea, building sand castles or play beach volleyball, with the latter usually having teams that oppose each other character-wise.\n\nYou undoubtedly already know all of this, Contractor, so we'll just give you this mission already to not waste time: your mission, should you choose to accept it, will be to host a beach party in the world of Elden Ring and have at least 4 shard bearers partake in it. Whichever way you accomplish this feat does not matter, as long as you give us the Elden Ring Beach Episode we've always wanted!",
-    "uid": "SMKrh"
+    "desc": "The \"beach episode\", usually only reserved for the slice-of-life genre of anime but sometimes include the strangest exceptions. It's a time during summer when all the protagonists, side characters and sometimes even the antagonistic villains partake in activities such as sunbathing, swimming in the sea, building sand castles or play beach volleyball, with the latter usually having teams that oppose each other character-wise.\n\nYou undoubtedly already know all of this, Contractor, so we'll just give you this mission already to not waste time: your mission, should you choose to accept it, will be to host a beach party in the world of Elden Ring and have at least 4 shard bearers partake in it. Whichever way you accomplish this feat does not matter, as long as you give us the Elden Ring Beach Episode we've always wanted!"
   },
   {
     "reward": "The First Flame gains the Abyssal Trait.",

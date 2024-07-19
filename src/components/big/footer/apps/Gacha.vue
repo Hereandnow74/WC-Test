@@ -2,7 +2,7 @@
   <GachaSettings v-if="showSettings" @close="showSettings = false" />
   <div v-else class="p-1 flex flex-col gap-2 justify-between items-center h-full overflow-hidden">
     <div v-if="isTenPull" class="flex flex-col items-center h-full w-full overflow-y-auto scrollbar">
-      <TransitionGroup class="grid grid-cols-5 my-auto gap-0.5 w-full min-h-0 h-max" name="list" tag="div">
+      <TransitionGroup class="grid grid-cols-5 my-auto gap-0.5 w-full min-h-0 h-max overflow-hidden" name="list" tag="div">
         <GachaCard
           v-for="char in chars"
           :key="char.u"

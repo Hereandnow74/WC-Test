@@ -35,7 +35,6 @@
 </template>
 
 <script lang="ts" setup>
-import io from 'socket.io-client'
 import { VERSION } from './data/constants'
 import { getUserFromServer } from './logic/server'
 import { useUser } from './store/user'
@@ -114,9 +113,9 @@ onKeyStroke(['c', 's', 'd', 'n', 'b'], (e) => {
   }
 })
 
-const socket = io('https://interactive-apps.net')
-socket.on('onlineUsers', online =>
-  currentOnline.value = online)
+// const socket = io('https://interactive-apps.net')
+// socket.on('onlineUsers', online =>
+//   currentOnline.value = online)
 
 // function someStats() {
 //   const uid = window.localStorage.getItem('userId')

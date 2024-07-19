@@ -76,16 +76,7 @@
               <div class="text-xl text-center mb-2 text-teal-600 dark:text-teal-300">
                 This tier list is an approximation as an official tier list does not exist yet.
               </div>
-              <h3 v-if="tiersTab === 1" class="sm:text-lg text-center mb-2">
-                Pandora’s Alternate Tier Ranks (by
-                <a
-                  class="text-blue-500 hover:underline"
-                  href="https://forum.questionablequesting.com/threads/r34-economy-cyoa-thread.11289/page-63#post-3167059"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >Pandora12</a>)
-              </h3>
-              <h3 v-else class="sm:text-lg text-center mb-2">
+              <h3 class="sm:text-lg text-center mb-2">
                 Despin and Alucard’s Tier Chart
                 (<a
                   class="text-blue-500 hover:underline"
@@ -277,7 +268,6 @@ const widths = [
   'max-w-screen-sm',
 ]
 
-const tiersTab = ref(0)
 const width = useStorage('width', 1)
 
 const { worlds } = useWorlds()

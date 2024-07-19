@@ -131,25 +131,31 @@ export async function _refreshTokens(SERVER_URL: string, API_VERSION: string): P
 export async function _logoutFromServer(SERVER_URL: string, API_VERSION: string, token: string): Promise<string> {
   user.value = {}
   tokens.value = {}
-  if (token) {
-    const apiUrl = `${SERVER_URL}/${API_VERSION}/auth/logout`
-    const response = await fetch(apiUrl, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ refreshToken: tokens.value.refresh.token }),
-    })
+  try {
+    if (token) {
+      const apiUrl = `${SERVER_URL}/${API_VERSION}/auth/logout`
+      const response = await fetch(apiUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ refreshToken: tokens.value.refresh.token }),
+      })
 
-    if (!response.ok) {
-      const errorText = await response.text()
-      return JSON.parse(errorText).message
+      if (!response.ok) {
+        const errorText = await response.text()
+        return JSON.parse(errorText).message
+      }
+      else {
+        return 'Success'
+      }
     }
-    else {
-      return 'Success'
-    }
+    return 'No Token'
   }
-  return 'No Token'
+  catch (error) {
+    console.error(error)
+    return 'Error'
+  }
 }
 
 export async function _resetPassword(SERVER_URL: string, API_VERSION: string, password: string, token: string): Promise<string> {

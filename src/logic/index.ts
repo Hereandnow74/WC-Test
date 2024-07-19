@@ -7,7 +7,7 @@ export * from './toggles'
 export * from './misc'
 export * from './perksLogic'
 
-export const currentOnline = ref(0)
+// export const currentOnline = ref(0)
 
 const app = initializeApp({
   apiKey: 'AIzaSyDpZ7zOTs_IRFs1_OQLR9T45tGl2hOkt5Y',

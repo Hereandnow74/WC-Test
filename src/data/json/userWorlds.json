@@ -5133,12 +5133,7 @@
     ],
     "uid": "u3t0An"
   },
-  {
-    "worldName": "Scion",
-    "rating": 9,
-    "image": "https://ksr-ugc.imgix.net/assets/013/754/233/51583d239cba378607b3215741f36830_original.jpg?ixlib=rb-4.0.2&crop=faces&w=1552&h=873&fit=crop&v=1473978952&auto=format&frame=1&q=92&s=e8911b2f376ef03fde4b4e1dc374122b",
-    "uid": "ukToUc"
-  },
+  {"uid":"MkIRek", "worldName":"Scion", "rating":9, "image":"https://i.kickstarter.com/assets/013/754/233/51583d239cba378607b3215741f36830_original.jpg?anim=false&fit=cover&gravity=auto&height=873&origin=ugc&q=92&width=1552&sig=Pyj6jhO7t11ocHGCz05O4gO8B9El%2FQ0H0Iw1DdggRYc%3D"},
   {
     "worldName": "SSS-Class Gacha Hunter",
     "rating": 9,
@@ -7593,5 +7588,7 @@
   {"uid":"cppwFP", "worldName":"Chillin' in Another World with Level 2 Super Cheat Powers", "rating":6, "image":"https://www.animenewsnetwork.com/hotlink/thumbnails/crop1200x630gK7/cms/news.6/203457/lv2_kv1_with_logo_credit.jpg"},
   {"uid":"GAdmqA", "worldName":"Ajin", "rating":2, "image":"https://images2.imgbox.com/54/d2/ftSlyu0P_o.png", "condition":[{"name":"Sato's Rampage", "rating":3}]},
   {"uid":"HnnQLW", "worldName":"Restaurant to Another World", "rating":4, "image":"https://www.theouterhaven.net/wp-content/uploads/2020/06/1667002_Latvian_ShowMasterKeyArt_4219d4bf-0069-e711-8175-020165574d09-scaled.jpg"},
-  {"uid":"SgiViH", "worldName":"My Senpai is Annoying", "rating":1, "image":"https://i.imghippo.com/files/ZhxU91720385238.jpg"}
+  {"uid":"SgiViH", "worldName":"My Senpai is Annoying", "rating":1, "image":"https://i.imghippo.com/files/ZhxU91720385238.jpg"},
+  {"uid":"ycXwPa", "worldName":"Zenless Zone Zero", "rating":4, "image":"https://img3.gelbooru.com/images/84/c4/84c4c62f025e8c3f628da059a47e963d.jpg"},
+  {"uid":"vpCGly", "worldName":"Hardcore Leveling Warrior", "rating":7, "image":"https://i.imghippo.com/files/c0N8h1720645925.jpg", "condition":[{"name":"Lucid Adventure (Canon Start to Combat Tournament's End)", "rating":7}, {"name":"HCLW Gone (Post Time skip to Zero's Awakening)", "rating":9}, {"name":"Earth Game (Reset Timeline: Zero's Revival)", "rating":10}]}
 ]

@@ -8,6 +8,7 @@ import { useChargenStore } from '../store/chargen'
 import { useStore } from '../store/store'
 import { ALL_PERK_STORES, ALL_PERK_TITLES } from '../data/constants'
 import { useEvents } from './events'
+import { patronEffects } from '~/logic/pagesLogic/patronsLogic'
 
 // General functions
 export function deleteFreebies(freebies: object) {
@@ -702,6 +703,10 @@ export function clearAll() {
   specificMods.value = []
   patron.value = []
   missionRewards.value = {}
+
+  Object.values(patronEffects).forEach((effect) => {
+    effect.remove()
+  })
 
   const { allEvents } = useEvents()
   allEvents.emit({ id: Math.floor(Math.random() * 10000), time: Date.now(), message: 'All perks were removed. Added default binding - <b>Company Stamp</b>.', type: 'warn' })
