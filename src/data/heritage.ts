@@ -1067,3 +1067,228 @@ heritages.push({
 <p>You are capable of teaching the members of your retinue how to become Outsiders; they gain their own true forms, their own Omens, and their own Elemental affinities in the process, acting with all of your Outsider abilities except for Elder Sign and Endless Gospels Unspoken.</p>
 <p>As your Heralds, their teaching effects are extensions of your own authority, and draw their students towards you instead of them; likewise, you may treat your Heralds as if they were your own Omens, and they always count as a critical mass of your own Omen for purposes of summoning you into a world.</p> `,
 })
+
+// Infernal
+heritages.push({
+  uid: 'R8hzH',
+  title: 'The Pact is Sealed',
+  category: 'Heritage',
+  image: '',
+  tree: 'Infernal',
+  type: 'Root',
+  cost: 72,
+  freebies: {
+    talentPerks: [{ title: 'Everlasting Talent', cost: 0, count: 1 }, { title: 'Body Tune-Up', cost: 0, count: 1 }, { title: 'Soul Talent', cost: 0, count: 1 }, { title: 'Communication Talent', cost: 0, count: 1 }],
+  },
+  desc: `
+<p>You now have the ability to create magical bargains known as Pacts. In a Pact, the Infernal offers a favor, service, knowledge, or aid to a willing Petitioner. According to the principles of exchange, the Petitioner must offer the Infernal something of at least equal value in return. This often manifests as some sort of energy or lifeforce, such as semen, blood, or years of life, or mystical energies such mana, ki, or psionic power. If a Petitioner bargains their soul, the Pact’s completion will count as a capture. Any source of energy offered to the Infernal will count as a free Added Potential for that system of energy.</p>
+<p>Those sorts of energies are not the only valid method of payment. Material items of equal importance to the Petitioner are also acceptable, such as custody of a daughter, a life's savings, or even (in Pacts of lesser importance), the cost of a meal. Regardless of what is offered, a sacrifice must be made, and it must be made by the Petitioner. They cannot have someone else sacrifice on their behalf.</p>
+<p>The use of Pact Magic will manifest a Sigil, a design that matches the core of the Stamp. This manifestation may appear as a magic circle, a glowing tattoo on the Infernal’s hand to be shaken, on a contract to be signed, or other possibilities. Regardless of the Sigil’s form, the potential Petitioner must physically interact with the Sigil and agree to the Pact in order to confirm it as Sealed.</p>
+<p>The Infernal will feel compelled to see their sealed Pacts to their completion, and unable to break any of the clauses they agreed to. When the Infernal completes the pact, the Petitioner will then be compelled to uphold their end of the bargain.</p>
+<p>Additionally, as an Infernal, your body is now made for sin. Take Everlasting, Communication, and Soul Talents and Body Tune-Up for free. Concentrated infernal energies from your Pacts - Pact Energy - enhance the beauty and strength, speed, and durability of your body. The traits most enhanced are always related to the Infernal’s greatest talents. Those who look upon the Infernal are drawn to seek them out. The Infernal may now manifest demonic horns, wings, and tail whenever they wish. This perk immediately raises a contractor’s effective tier at step 1b to 5.</p>
+<p>If you possess Tantric Arts, each active Pact will count as an Arcane Link to the Target.</p> `,
+})
+
+heritages.push({
+  uid: 's99U7',
+  title: 'At the Crossroads',
+  category: 'Heritage',
+  image: '',
+  tree: 'Infernal',
+  type: 'Party',
+  cost: 70,
+  freebies: {
+    talentPerks: [{ title: 'Aesthetic Talent', cost: 0, count: 1 }, { title: 'Blessed Talent', cost: 0, count: 1 }],
+  },
+  whitelist: ['The Pact is Sealed'],
+  desc: `
+<p>The Infernal giveth, and the Infernal taketh away. The Infernal gains the ability to give Petitioners power and abilities the Infernal possesses. This power can be bargained away completely to the Petitioner, partially granted (allowing the Infernal to largely retain the power, while giving the Petitioner a path to walk upon), or simply loaned for a set duration - whether a fixed time limit or until a condition is met.</p>
+<p>All powers bargained away benefit from the Infernal's talents, as if the Infernal was still using it. If the power is reclaimed, the Infernal will benefit from any and all breakthroughs, discoveries, or skills the Petitioner made while using said power. If the Petitioner dies while still retaining an Infernal’s power, it will automatically revert to the Infernal.</p>
+<p>Take Aesthetic and Blessed Talents for free.</p> `,
+})
+
+heritages.push({
+  uid: 'LcHed',
+  title: 'Siphoned Strength',
+  category: 'Heritage',
+  image: '',
+  tree: 'Infernal',
+  type: 'Self',
+  cost: 70,
+  freebies: {
+    defensePerks: [{ title: 'Drain Defense', cost: 0, count: 2 }],
+  },
+  whitelist: ['The Pact is Sealed'],
+  desc: `
+<p>The Infernal's mastery over pact magic has expanded. Where only the Pact stood beforehand, now you can offer more; offer the strength your arms could've exerted for a fortnight in exchange of being able to topple a mountain, offer the memories of a lullaby in exchange of casting down your enemies through magic and might. You may accept anything as payment, as long as it belongs to the petitioner and has inherent value. You could bargain for their physical strength, sapping it away temporarily or permanently. You could arrange to call upon their strength once a week, borrowing it for a period of time before giving it back. You aren’t limited to physical capabilities. You can bargain for beauty, charisma, creativity, love, their mortal vessel for you to possess or control as you please, etc. As long as they have it, you can accept it as payment. Additionally, you may use previous payments as offerings in future bargains.</p>
+<p>When a pact is completed, the Infernal gains a small boost to abilities tied to the task performed and the payment given. A powerful wizard offering mana to the Infernal for aid in a magical ritual may give the Infernal knowledge of a spell or two of theirs. A scholar offering lifeforce, for assistance in opening the way to a forgotten tomb, may additionally transfer an ancient secret that the scholar had previously uncovered. A warrior offering his strength in return for aid in charming a fellow fighter, may also impart some of his skill with the sword. Perhaps the Infernal was tasked with cursing the beauty of a Petitioner’s hated rival, and in return the Infernal’s beauty blossoms into greater heights.</p>
+<p>These small boosts do not steal from the Petitioner. They are merely caused by the Infernal's increased affinity with their pact magic, not added costs of the Pacts themselves. If you use Power Swap on a retinue member who's powers you've siphoned, you lose those powers as well. Finally, take two copies of Drain Defense for free.</p> `,
+})
+
+heritages.push({
+  uid: 'fevKC',
+  title: 'Your Word, My Bond',
+  category: 'Heritage',
+  image: '',
+  tree: 'Infernal',
+  type: 'Self',
+  cost: 80,
+  freebies: {
+    talentPerks: [{ title: 'Covert Talent', cost: 0, count: 1 }],
+    defensePerks: [{ title: 'Paradox Defense', cost: 0, count: 1 }],
+  },
+  whitelist: ['Siphoned Strength'],
+  desc: `
+<p>A Petitioner must mind their tongue around the Infernal, lest it be used against them. The compulsion effect of the Pact will now go both ways. A Pact to improve the Petitioner’s strength might not only compel the Infernal to aid them, but also compel the Petitioner to work hard to attain said strength - regardless of what they may desire.</p>
+<p>Additionally, the Infernal is now able to weave pact magic into their very words. Informal agreement is now enough to confirm a Pact, no longer just explicit consent. Depending on the strength of the pact magic involved and the intent of the Infernal themselves, this could be a minor unnoticed drive to watching in horror as their body obeys someone else's will over their own. If you have Paper Trail, Pacts can even be buried in terms and conditions, license agreements, and other legal documents, ready to be sprung on anyone who skims through or thinks it’s just a joke.</p>
+<p>Finally, take Covert Talent and one copy of Paradox Defense for free.</p> `,
+})
+
+heritages.push({
+  uid: 'HYXqo',
+  title: 'The Lost and the Damned',
+  category: 'Heritage',
+  image: '',
+  tree: 'Infernal',
+  type: 'Other Control',
+  cost: 150,
+  freebies: {
+    defensePerks: [{ title: 'Possession Defense', cost: 0, count: 2 }, { title: 'Mind Defense', cost: 0, count: 1 }, { title: 'Fatality Defense', cost: 0, count: 1 }],
+  },
+  whitelist: ['Siphoned Strength', 'At the Crossroads'],
+  desc: `
+<p>The Infernal’s grasp of soul manipulation via pact magic has increased, allowing the choice to take fragments of the Petitioner’s soul instead of the normal power boost from completed Pacts. Gathering enough fragments can allow the Infernal to wrench the soul from the Petitioner’s body. While capturing a soul is normally enough to count as a Capture for accounting purposes, further steps will be required when a soul is wrenched in this manner - see below. If the Petitioner lacks a soul by traditional definitions, this ability will still work and create a soul for the Petitioner in the process.</p>
+<p>Once you have a Petitioner’s soul, you can choose to twist the soul into one of the Damned. When the soul is transformed into a Damned, the Infernal gains the majority of their original powers and abilities as long as they remain in that state. The Damned will retain their core abilities, albeit in a greatly diminished state. The physical appearance of an Infernal’s Damned is the Infernal’s choice and consistent across all of their Damned. They might resemble traditional red-skinned imps, explosive penguins, or any number of other (usually humiliating) forms.</p>
+<p>The newly Damned is then given a task which will allow them to regain their ransomed soul. At that time, a demi-tattoo will appear on the Damned if it is not already bound. The task must be theoretically completable; impossible tasks will not bind the Damned to a new form. If no task is given, the soul ceases to be one of the Damned, returning to its normal state. The Damned are unable to form or agree to any Pact as long as they remain Damned. Upon success or permanent failure of the task, a Damned will be Captured and the appropriate value transferred to your account.</p>
+<p>If a Damned succeeds, they will regain their body in full. Additionally, they are now able to manifest their Damned form as a henshin state or second body whenever they wish. If both bodies are active, the ex-Damned may struggle to maintain their focus or be overwhelmed by sensation without sufficient willpower and practice. If a Damned fails their task and the task is no longer possible, the Damned will instead devolve into a demonic form and lose their higher functions, becoming little more than a monster.</p>
+<p>While a Damned remains in that state, their original body is under the Infernal’s control. It might be possessed by the Infernal or a subject, or ordered like a puppet.</p>
+<p>The souls of anyone slain in the Infernal’s Demiplane, Stronghold, or Sanctuary automatically go to the Infernal. These “Lost” are mechanically identical to the Damned in all respects. If you possess Golden Idol, you may bind the Damned to a piece of tempest jewelry. However, the task given must be accomplishable by the Lost or Damned while trapped within the Tempest jewelry. Finally, take two copies of Possession Defense and one each of Mind and Fatality Defenses for free.</p> `,
+})
+
+heritages.push({
+  uid: 'Rog7s',
+  title: 'Serpent’s Kiss',
+  category: 'Heritage',
+  image: '',
+  tree: 'Infernal',
+  type: 'Self',
+  cost: 66,
+  complex: 'flavor',
+  anything: 'Sin',
+  freebies: {
+    defensePerks: [{ title: 'Stress Defense', cost: 0, count: 2 }, { title: 'Addiction Defense', cost: 0, count: 2 }],
+  },
+  whitelist: ['The Pact is Sealed'],
+  desc: `
+<p>The Infernal gains an affinity for one of the Seven Deadly Sins: Lust, Gluttony, Avarice, Sloth, Wrath, Envy, or Pride. This is an innate connection with the respective Sin. You can sense the desires of nearby individuals relating to your sin and have an intuitive understanding of what buttons you need to press to drive anyone towards it. In a manner similar to completing a pact, you can draw strength from your sin when others succumb to it. These abilities are greatly enhanced when used against particularly devout individuals.</p>
+<p>Acting in accordance with your Sin, regardless of the intended outcome, will greatly amplify your physical, mental, and metaphysical strength, as well as speed, resilience, and stamina, for the duration and a short time afterward. This is a use of pact magic.</p>
+<p>Finally, take two copies each of Stress and Addiction Defenses for free.</p> `,
+})
+
+heritages.push({
+  uid: 'lQnq9',
+  title: 'Fel Influence',
+  category: 'Heritage',
+  image: '',
+  tree: 'Infernal',
+  type: 'Lure',
+  cost: 127,
+  freebies: {
+    talentPerks: [{ title: 'Land Talent', cost: 0, count: 1 }],
+    defensePerks: [{ title: 'Wyldscape Defense', cost: 0, count: 1 }],
+  },
+  whitelist: ['Serpent’s Kiss'],
+  additionalDesc: `
+  <ul class="list-disc list-inside">
+    <li>0-25: Individuals related to your sin are drawn to these grounds and more likely to express their sin while present. Those with strong desires, filled with desperation, or simply those with idle hands are more susceptible, regardless of their sin.</li>
+    <li>26-50: Anyone near Influenced grounds are now drawn towards them. Those related to your sin feel the call more. Once inside they will have their desires inflamed. Those who indulge within gain the knowledge to summon the Infernal in Influenced grounds. This summoning can be a blood sacrifice, chanting a name or title associated with the Infernal, drawing their Sigil, or other methods of the Infernal’s design. The Infernal is the ultimate arbiter on whether or not they wish to accept this summoning.</li>
+    <li>51-75: Anyone in your Influenced ground will feel an active temptation toward their sin,  as well as a desire to return to areas under your influence.</li>
+    <li>76-99: You can now directly whisper to those whom you’ve completed Pacts with, whenever they are in Influenced grounds. Anyone in your Influenced grounds will gain the knowledge to summon the Infernal in Influenced areas.</li>
+    <li>100-665: The longer an individual is in Influenced grounds the more they are corrupted towards the Infernal’s sin. Influenced grounds count as Company provided space. You may treat it as either your Sanctuary or Home Stronghold.</li>
+    <li>666+: Influenced grounds may now be dragged into your Demiplane/Stronghold/Sanctuary . You may return them to their previous location at any time.</li>
+  </ul> `,
+  desc: `
+<p>Completed Pacts now leave a mark on the local environment. The more Pacts completed in a location, the greater the effect. Whenever you complete a Pact with a Petitioner, the petitioner’s tier is added onto your Influence of an area. This follows a linear scale during the regular tiers: Tier 2 gives 2 influence, Tier 5 gives 5, and Tier 10 gives 10. For imaginary tiers, this is doubled with each step: Tier X gives 20 influence and Tier Z gives 80. Pacts made within your retinue do not add any Influence. You may gain influence from the same petitioner no more than once per week.</p>
+<p>When your influence reaches certain benchmarks, the infused area will affect those present at the site. The benefits of Influence are cumulative and you retain any benefits from the lower Influence levels. Beings of sufficient virtue and willpower can resist these effects, for a time.</p>
+<p>Influence gathers at landmarks or points of interest and cannot exceed a radius of 1.6 km. For example, you may gather Influence over a burned clearing in a forest, but the number of landmarks needed to turn an entire forest into influenced grounds makes such a task near impossible Additionally Pacts made online or in cyberspace influence that area online. If it is done on an online server that server itself is influenced. Your Demiplane, Stronghold, or Sanctuary and other company spaces are always at Influence 100.</p>
+<p>Finally, take Land Talent and one copy of Wyldscape Defense for free.</p> `,
+})
+
+heritages.push({
+  uid: 'ERCbU',
+  title: 'Sinforged Visage',
+  category: 'Heritage',
+  image: '',
+  tree: 'Infernal',
+  type: 'Self',
+  cost: 125,
+  freebies: {
+    defensePerks: [{ title: 'Corruption Defense', cost: 0, count: 2 }],
+  },
+  whitelist: ['Fel Influence'],
+  desc: `
+<p>Your pact magic has fully infused your being. Your demonic powers have flowered into your Infernal Visage and you can also wield your Sin as a conceptual element. A visage is an Infernal’s warform that the Infernal can assume at any time. This form is always visibly inhuman, supernatural, and demonic, but cannot increase or decrease the Infernal’s overall size by more than a factor of 3.</p>
+<p>Take two copies of Corruption Defense for free. This perk immediately raises a contractor’s effective tier at step 1b to 7.</p>
+<p>A visage’s traits depend heavily on both the Sin and the Infernal’s own person. A Lust-aligned visage may be an amazonian succubus, with great wings and an entrancing gaze, or a writhing mass of tentacles on a humanoid form whose appearance shifts based on the observer in question. A Wrath-aligned visage may be a molten giant with curled horns and burning breath, while a Sloth-aligned visage may be a walking fogbank whose presence drives all nearby to slumber.</p>
+<p>Additionally, simply being nearby those indulging in that Sin, including areas under your Influence, empowers your physical, mental, and metaphysical strength, as well as speed, resilience, and stamina, just as it does when you channel them directly. This effect is doubled when you draw upon the Sins of current or former Petitioners.</p>
+<p>If you have a Love Spot, it now applies to your entire body at all times. (To avoid a need for total concealment with Your Wings Are Beautiful, that perk allows you to toggle this added effect on the rest of your body.) In addition to the normal effects of Love Spot, you may now induce infatuation or dread, or amplify your chosen sin within those who gaze upon you. The original Spot you picked is also twice as effective.</p> `,
+})
+
+heritages.push({
+  uid: 'uTAsB',
+  title: 'Multi-Leveled Malevolence',
+  category: 'Heritage',
+  image: '',
+  tree: 'Infernal',
+  type: 'Other Control, Party',
+  cost: 175,
+  freebies: {
+    talentPerks: [{ title: 'Administrative Talent', cost: 0, count: 1 }, { title: 'Talent Sharing', cost: 0, complex: [{ flavor: 'Communication', cost: 0 }], count: 1 }],
+    defensePerks: [{ title: 'Polymorph Defense', cost: 0, count: 1 }],
+  },
+  whitelist: ['Sinforged Visage', 'At the Crossroads'],
+  desc: `
+<p>The Infernal is now able to imbue individuals, Witches, with the ability to use pact magic on their own. These Witches are immediately captured if they are not already part of your retinue. Upon completing pacts, Witches will begin to store said pact energy within themselves, giving them access to the benefits from The Pact is Sealed and Serpent’s Kiss while also developing a nascent Sin, according to their personality. The greater a Witch’s store of pact energy, the more their body changes to reflect both the Sin and the Infernal's tastes and desires, and the more likely they will be overcome by their Sin in times of high emotion.</p>
+<p>Greater amounts of pact energy absorbed also determine how powerful and empowered the Witch will be when turned into an Infernal. Under an Infernal’s direct guidance, the Witch develops their Visage, taking elements and aesthetics of not only their Sin but also their master, similar to how a child takes features from their parents. Upon completion, the newly-minted Infernal joins their master’s Coven, unless it is already full, in which case they become an Acolyte instead.</p>
+<p>A Coven is a group of 13 subordinates tied in service to an Infernal. Once a Coven is filled, the commanding Infernal can no longer recruit more Infernals to their Coven, but may still act as a guide for future Witches. The Infernal at the head of a Coven gains access to the Sins of each member, as well as the ability to quickly learn the skills of their Coven. Treat this learning as an additional talent specifically for what the Coven knows.</p>
+<p>Guiding a Witch into Infernalhood is not the only way to add members to a Coven. Infernals can seduce and dominate other Infernals into their Coven through Pacts and other manipulations. If the new Coven member joins willingly, the hierarchy of Infernals below them will remain intact, so that the only difference is their master’s new master. There are no inherent effects to enforce the loyalty, affection, or other attitudes of a willingly-joined Coven member toward their master, nor can any Infernals directly above oneself be usurped in this way.</p>
+<p>Forcible subjugation, however, will disrupt the inducted Infernal’s command over their Coven, shattering the lower hierarchy. The released Infernals are now Acolytes of their former master’s master, free to form new Covens or ascend to the opening left behind by their former master. The same applies if an Infernal is slain. Forcible subjugation will also ensure the target’s loyalty to their new master for the next 666 days (15,984 hours) or about 95 weeks. No matter how vindictively their new master treats them, they will not even be able to consider rebellion until that time has passed. Unlike seduction, this method can be used to usurp one’s own master and directly ascend in an Infernal hierarchy.</p>
+<p>All Pacts made by a Witch or Infernal will count towards Influence for the master at the top of the retinue, not the individual subjects, and they all benefit from Influence in influenced grounds. Any Infernal who has subordinates will naturally siphon some pact energy Witches, more from Coven members, and less from Acolytes.</p>
+<p>As the contractor, your subject Infernals will benefit from any perk that expands what pact magic can achieve, such as Siphoned Strength or Your Word, My Bond.</p>
+<p>Finally, take Administrative Talent, one copy of Polymorph Defense, and Talent Sharing (Communication) for free.</p> `,
+})
+
+heritages.push({
+  uid: 'wN3Ic',
+  title: 'Speak of the Devil, and He Shall Appear',
+  category: 'Heritage',
+  image: '',
+  tree: 'Infernal',
+  type: 'Self, Party',
+  cost: 65,
+  freebies: {
+    defensePerks: [{ title: 'Wyldscape Defense', cost: 0, count: 1 }],
+  },
+  whitelist: ['Multi-Leveled Malevolence'],
+  desc: `
+<p>An Infernal’s grasp extends far past their vision. Areas sufficiently infused with pact energy are now able to link up with metaphysically resonant locations. For example, a pact-infused university may resonate with another university. Additionally, locations sufficiently tied and infused with your sin will function as if they were infused with your pact energy, giving all the same benefits - including resonate connections. These locations always start at 11 Influence. Any Infernal within your retinue can now teleport to grounds with at least 40 influence. Additionally, whenever an Infernal’s name within your retinue is spoken in influenced grounds, they may treat that as a summon for the purposes of teleporting there. This works in any ground of at least 10 influence.</p>
+<p>With this perk, you can extend your influence to any resonant location, or location associated with your sin, within your local multiverse and any previously-visited universes. Additionally, you can attempt to connect to new worlds outside of the local multiverse. The first connection to a new setting starts at 61 influence. However, you will not be able to travel there, nor will you know where it is until a potential Petitioner summons you or one of your retinue for a Pact.</p>
+<p>The Infernal gains a list of titles to bestow upon their coven. These titles, one per sin, greatly enhance that peerage member’s mastery and power over their sin, granting them immense power and mastery compared to their peers. If the coven member’s personal sin matches the title they hold, the effect of that title is maximized. If the two sins do not match, the title bearer will be able to treat the title’s sin as if it was their primary sin, but the power of the title will be split between the bearer and their own coven member with the same title. The available titles are listed with their sins.</p>
+<p>Finally, take one copy of Wyldscape Defense for free.</p> `,
+})
+
+heritages.push({
+  uid: 'zZ5k3',
+  title: 'Ave Satanas',
+  category: 'Heritage',
+  image: '',
+  tree: 'Infernal',
+  type: 'Self',
+  cost: 0,
+  costT: 1,
+  whitelist: ['Speak of the Devil, and He Shall Appear'],
+  desc: `
+<p>The Infernal’s influence can no longer be contained. Influenced grounds can now grow indefinitely. Whenever an individual sins in influenced grounds, the grounds expand slightly. The greater concentration of sinners indulging, the faster the influence spreads. An Infernal may treat any area in their local universe that’s suffused with their sin in the local universe as Influence 71, regardless of how much Influence is actually present.</p>
+<p>Whenever your name is spoken, you are aware of who spoke it and where they did it. You may also treat that as a summoning. It must be your name specifically that is spoken. The identical name of a stranger will not work, but a pseudonym or title that you chose for yourself will. These effects only trigger for speakers of Tier 10 or below.
+Finally, whenever you complete a pact with a petitioner, the resulting Influence gain is now 3x the petitioner’s tier.</p> `,
+})
