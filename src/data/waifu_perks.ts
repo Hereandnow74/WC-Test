@@ -2511,7 +2511,7 @@ export const DLCwaifu_perks: WaifuPerk[] = [
     ],
     tier: 8
     image: 'https://i.imgur.com/nrAgJav.jpg',
-    cost: 200,
+    cost: 100,
     desc: 'The Tarnished has accepted, embraced, and assimilated the full might of the Frenzied Flame into himself, now wielding the full might of the flames of chaos. All that stands in his path will be burnt to ash, as he wields unmatched control over the blaze. The spark has been lit, and a new age of fire and nothingness is beginning. The Tarnished will always have this perk if captured post the events of the Frenzied Flame ending. This perk does not change the Tarnished tier rating. ',
     whitelist: [],
   },
